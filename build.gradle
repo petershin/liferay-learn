@@ -1,9 +1,13 @@
 buildscript {
 	dependencies {
-		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.python", version: "latest.release"
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.python", version: "1.0.0"
 	}
 
 	repositories {
+		maven {
+			url file(".m2-tmp")
+		}
+
 		mavenLocal()
 
 		maven {

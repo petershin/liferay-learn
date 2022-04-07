@@ -26,8 +26,8 @@ Follow these steps to access the Backups page:
 
 From here, you can perform the following tasks:
 
-* **View Backup Info**: You can quickly view backup service information for the chosen environment. This includes the frequency of automated backups, the backup retention period, and timestamp information for the next scheduled backup, the latest created backup, and the oldest retained backup.
-* **View Backup History**: You can view the full list of retained backups in the chosen environment. Each entry lists the backup's name, size, and time of creation.
+* **View Backup Info**: You can quickly view Backup service information for the chosen environment. This includes the frequency of automated backups, the backup retention period, and timestamp information for the next scheduled backup, the latest created backup, and the oldest retained backup.
+* **View Backup History**: You can view the full list of retained backups in the chosen environment. Each entry lists the backup's name, size, type (`Auto`, `Manual`, or `Uploaded`), and time of creation. If a backup has failed, then the backup's icon appears red, and beside it is a "Backup failed" message and a link to contact Support.
 * **Create Manual Backups**: You can manually create a backup of the chosen environment. See [Creating a Manual Backup](#creating-a-manual-backup) for more information.
 
 ```{note}
@@ -36,17 +36,21 @@ Backup timestamps are displayed automatically based on your browser location, wh
 
 From the Backups page, environment administrators also have access to the Actions button (⋮) and can download retained backups or restore environments.
 
-For more information and instructions on how to perform these actions, see [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) and [Restoring Data from a Backup](./restoring-data-from-a-backup.md).
-
 ![Administrators can download backups or restore an environment from the Backups page.](./backup-service-overview/images/03.png)
+
+You can also filter the list of backups by their status (failed or successful), or switch to displaying the backups from the associated Disaster Recovery (`dr`) environment (if one is configured for the current environment), from the two dropdown menus near the top of the screen.
+
+![View Disaster Recovery backups or filter by backup status from the dropdown menus.](./backup-service-overview/images/04.png)
+
+For more information and instructions on how to perform these actions, see [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) and [Restoring Data from a Backup](./restoring-data-from-a-backup.md).
 
 ## Creating a Manual Backup
 
 To manually backup your environment from the Backups page, click on *Backup Now*. This process can take several minutes or hours depending on the size of your services.
 
-Once started, the backup service icon will indicate a backup is in progress, and a new backup will appear in the *Backup history*.
+Once started, the backup service icon indicates a backup is in progress, and a message appears at the top of the screen. The new backup also appears in the *Backup history*.
 
-![The backup service icon will indicate a backup is in progress, and a new backup will appear in the Backup history.](./backup-service-overview/images/04.png)
+![The backup service icon and a message at the top of the screen indicate a backup is in progress.](./backup-service-overview/images/05.png)
 
 ```{warning}
 Backups created while data is actively changing on your Liferay instance risk creating inconsistent data. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a manual backup.
@@ -78,7 +82,7 @@ Follow these steps to configure the backup service via the DXP Cloud Console:
 
 1. Click on the *Environment Variables* tab.
 
-   ![Navigate to the backup service's variables tab in your environment.](./backup-service-overview/images/05.png)
+   ![Navigate to the backup service's variables tab in your environment.](./backup-service-overview/images/06.png)
 
    You can also access the backup service's page by clicking on *Backup* in the environment's *Overview* page.
 

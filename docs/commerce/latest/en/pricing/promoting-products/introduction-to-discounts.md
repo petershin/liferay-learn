@@ -1,18 +1,18 @@
 # Introduction to Discounts
 
-Discounts are created in the _Discounts_ menu in the _Global Applications_ &rarr; _Commerce_. Users can create multiple types of discounts and incentives, such as:
+You can create a discount by opening the *Global Menu* and selecting  *Commerce* &rarr; *Discounts*. Users can create different types of discounts and incentives, such as:
 
 * Reducing the price of specific products
 * Offering free shipping
 * Tailoring a discount for specific [Account Groups](../../users-and-accounts/account-management/creating-a-new-account-group.md), or to a more narrowly defined group of customers
-* Schedule a promotion for a period of time
+* Scheduling a promotion for a period of time
 
 ```{tip}
-Discounts are not the same as a *Price List*. For more information on Pricing see [Introduction to Pricing](../introduction-to-pricing.md), [Creating a Price List](../creating-a-price-list.md), and [Using Price Tiers](../using-price-tiers.md).
+Discounts and *Price Lists* are not the same. For more information on Pricing see [Introduction to Pricing](../introduction-to-pricing.md), [Creating a Price List](../creating-a-price-list.md), and [Using Price Tiers](../using-price-tiers.md).
 ```
 
 ```{note}
-For Commerce 2.1 and below, navigate to the *Control Panel* then *Commerce*. Many Commerce settings in prior versions are located there or in *Site Administration*.
+For Commerce 2.1 and below, navigate to *Control Panel* &rarr; *Commerce*. Many Commerce settings in prior versions are present there or under *Site Administration*.
 ```
 
 ## Discount Types

@@ -1,51 +1,45 @@
-# ファイルとフォルダを無視する
+# ファイルやフォルダーを無視する
 
-DXP Cloudを使用すると、サブスクライバーは、サービスをデプロイする前に無視するファイルとフォルダーを決定できます。 これは、 `.lcpignore` ファイルを作成し、プロジェクトフォルダーの最上位レベル内に配置することで行われます（例： `/ etc/lfrlearn /` ここで、 `lfrlearn` はプロジェクト名です）。 ここにファイルを配置することで、 **ignore** ルールを他のユーザーと共有できます。
+DXP Cloudを使用すると、サブスクライバーは、サービスをデプロイする前に無視するファイルとフォルダーを決定できます。 これは、 `.lcpignore` ファイルを作成し、プロジェクトフォルダのトップレベル内に配置します（例: `/etc/lfrlearn/` ここで `lfrlearn` はプロジェクト名)です。 ここにファイルを置くことで、 **ignore** のルールを他のユーザーと共有することができます。
 
-<a name="using-the-lcpignore-file" />
+## `.lcpignore` ファイルを使用する。
 
-## `.lcpignore` ファイルの使用
-
-1. プロジェクトフォルダの場所に移動します。
+1. プロジェクトのフォルダの場所に移動します。
 1. `.lcpignore`というファイルを作成します。
-1. それに応じてファイルを変更します。
-1. ターミナルで `lcp deploy` を実行して、新しい `.lcpignore` ルールでサービスをデプロイします。
+1. 適宜、ファイルを修正してください。
+1. ターミナルで `lcp deploy` を実行して、新しい `.lcpignore` 規則でサービスをデプロイします。
 
-<a name="lcp-ignore-patterns" />
+## LCP無視パターン
 
-## LCP Ignoreパターン
+`.lcpignore` ファイルは、ファイル名に対するマッチングにグロビングパターンを使用します。 (これらは `.gitignore` ファイルで使われているパターンと同じです)。 管理者は、このようなパターンを様々なシンボルを使って構築することができる。
 
-`.lcpignore` ファイルは、グロビングパターンを使用してファイル名と照合します。 （これらは `.gitignore` ファイルで使用されるものと同じパターンです。） 管理者は、さまざまなシンボルを使用してそのようなパターンを構築できます。
+| パターン                                       | マッチング例                                                                                     | 説明*                                                                                                  |
+|:------------------------------------------ |:------------------------------------------------------------------------------------------ |:---------------------------------------------------------------------------------------------------- |
+| `**/service`                               | `service/file.txt`, or, `service/monday/foo.bar`, or `build/service/file.txt`              | パターンにアスタリスクを2つ付けると、リポジトリ内の任意の場所にあるフォルダーにマッチします。                                                      |
+| `**/service/file.txt`                      | `service/file.txt`; or `build/service/file.txt` but not `service/build/file.txt`           | ダブルアスタリスクを使用すると、ファイル名とその親フォルダーの名前に基づいてファイルが照合されます。                                                   |
+| `*.txt`                                    | `file.txt`, `foo.txt`, `.txt`, or, `service/file.txt`                                      | アスタリスクは、0個以上の文字にマッチするワイルドカードです。                                                                      |
+| `*.txt` or `!important.txt`                | `file.txt`, `trace.txt` but not `important.txt`, `service/important.txt`                   | パターンに感嘆符を付けると、そのパターンが否定されます。 あるファイルがパターンにマッチし、かつファイル内で後に定義された否定パターンにもマッチする場合、それは無視されない。              |
+| `*.txt` or `!important/*.txt` or `trace.*` | `file.txt` `important/trace.txt` but not `important/file.txt`                              | 否定するパターンの後に定義されたパターンは、それ以前に否定されたファイルを無視します。                                                          |
+| `/file.txt`                                | `file.txt`, but not `service/file.txt`                                                     | スラッシュを付けると、リポジトリルート内のファイルのみにマッチします。                                                                  |
+| `file.txt`                                 | `file.txt`, or `service/file.txt`                                                          | デフォルトでは、パターンは任意のフォルダーにあるファイルにマッチします。                                                                 |
+| `file?.txt`                                | `fileo.txt`, `files.txt` but not `file10.txt`                                              | クエスチョンマークを使用すると、正確に1文字にマッチします。                                                                       |
+| `file[0-9].txt`                            | `file0.txt`, `file1.txt`, but not `file10.txt`                                             | 角括弧を使用すると、指定した範囲内の1文字にマッチします。                                                                        |
+| `file[01].txt`                             | `file0.txt`, `file1.txt`, but not `file2.txt` nor `file01.txt`                             | 角括弧を使用すると、指定された集合から1つの文字にマッチします。                                                                     |
+| `file[!01].txt`                            | `file2.txt`, but not `file0.txt`, nor `file1.txt`, nor `file01.txt`                        | 感嘆符は、指定された文字セット以外の文字にマッチします。                                                                         |
+| `file[a-z].txt`                            | `filea.txt`, `fileb.txt`, but not `file1.txt`                                              | 範囲には、数値またはアルファベットを使用することができる。                                                                        |
+| `txts`                                     | `txts`, `txt/file.txt`, `txts/latest/foo.bar`, `build/txts`, `build/txts/file.txt`         | スラッシュが *で* でない場合、このパターンはその名前のファイルとフォルダの内容の両方にマッチすることになります。 左のマッチの例では、 `txts` というフォルダとファイルの両方が無視されます。 |
+| `txts/`                                    | `txts/file.txt`, `txts/latest/foo.bar`, `build/txts/foo.bar`, `build/txts/latest/file.txt` | スラッシュを付けると、パターンがフォルダーであることを示します。 その名前に一致するリポジトリ内のフォルダの内容全体（すべてのファイルとサブフォルダを含む）は無視されます。               |
+| `txts/**/file.txt`                         | `txts/file.txt`, `txts/monday/file.txt`, or `txts/monday/pm/file.txt`                      | ダブルアスタリスクは、0個以上のフォルダーにマッチします。                                                                        |
+| `txts/*day/file.txt`                       | `txts/monday/file.txt` or `txts/tuesday/file.txt`, but not `txts/latest/file.txt`          | ワイルドカードは、フォルダ名にも使用することができます。                                                                         |
+| `txts/file.txt`                            | `txts/file.txt`, but not `file.txt` `build/txts/file.txt`                                  | 特定のフォルダーにあるファイルを指定するパターンは、リポジトリルートからの相対パスです。 なお、スラッシュを前につけても効果はない。                                   |
 
-| パターン                                      | 一致の例                                                                                    | 説明*                                                                                                  |
-| ----------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `**/service`                              | `service/file.txt`、または `service/monday/foo.bar`、または `build/service/file.txt`            | パターンの前にダブルアスタリスクを付けると、リポジトリ内の任意の場所のフォルダに一致します。                                                       |
-| `**/service/file.txt`                     | `service/file.txt`; または `build/service/file.txt`であり、 `service/build/file.txt`ではない。      | ダブルアスタリスクを使用すると、ファイルの名前と親フォルダーの名前に基づいてファイルが照合されます。                                                   |
-| `*.txt`                                   | `file.txt`、 `foo.txt`、`.txt`または `service/file.txt`                                      | アスタリスクは、0個以上の文字に一致するワイルドカードです。                                                                       |
-| `* .txt` または `!important.txt`             | `file.txt`、`trace.txt`  。ただし`important.txt`、 `service/important.txt`は不可。                | パターンの前にエクスクラメーション・マークを付けると、パターンが無効になります。 ファイルがパターンに一致するが、ファイルで後で定義された否定パターンにも一致する場合、それは無視されません。      |
-| `*.txt`または `!important/*.txt`または`trace.*` | `file.txt`、 `important/trace.txt` 。ただし`important/file.txt`は不可。                          | 否定パターンの後に定義されたパターンは、以前に否定されたファイルを無視します。                                                              |
-| `/file.txt`                               | `file.txt`、ただし `service/file.txt`は不可。                                                   | 先頭にスラッシュを付けると、リポジトリルート内のファイルのみが一致します。                                                                |
-| `file.txt`                                | `file.txt`、または `service/file.txt`                                                       | デフォルトでは、パターンは任意のフォルダ内のファイルと一致します                                                                     |
-| `file?.txt`                               | `fileo.txt`、 `files.txt` なく `file10.txt`                                                | 疑問符を使用すると、正確に1文字と一致します。                                                                              |
-| `file[0-9].txt`                           | `file0.txt`、 `FILE1.TXT`。ただし `file10.txt`は不可。                                           | 角括弧を使用すると、指定した範囲の1文字と一致します。                                                                          |
-| `file[01].txt`                            | `file0.txt`、`file1.txt`。ただし `file2.txt` 、`file01.txt`は不可。                               | 角かっこを使用すると、指定したセットの1文字と一致します。                                                                        |
-| `file[!01].txt`                           | `FILE2.TXT`ではなく `file0.txt`、また `FILE1.TXT`、また `file01.txt`                              | エクスクラメーションマークを使用すると、指定したセットの文字以外のすべての文字に一致します。                                                       |
-| `file[a-z].txt`                           | `filea.txt`、`fileb.txt`。ただし `file1.txt`は不可。                                             | 範囲は数値またはアルファベットにすることができます。                                                                           |
-| `txts`                                    | `txts`、`txt/file.txt`、`txts/latest/foo.bar`、`build/txts`、`build/txts/file.txt`          | スラッシュがある場合は **not** 付加し、パターンがその名前のファイルとフォルダの内容の両方に一致します。 左の一致例では、 `txts` という名前のフォルダーとファイルの両方が無視されます。 |
-| `txts/`                                   | `txts/file.txt`、`txts/latest/foo.bar`、`build/txts/foo.bar`、`build/txts/latest/file.txt` | スラッシュを追加すると、パターンがフォルダーであることを示します。 その名前に一致するリポジトリ内のすべてのファイルとサブフォルダを含むフォルダの内容全体は無視されます。                |
-| `txts/**/file.txt`                        | `txts/file.txt`、`txts/monday/file.txt`または `txts/monday/pm/file.txt`                     | 二重アスタリスクは、0個以上のフォルダーと一致します。                                                                          |
-| `txts/*day/file.txt`                      | `txts/monday/file.txt` または `txts/tuesday/file.txt`。ただし `txts/latest/file.txt`は不可。       | ワイルドカードは、フォルダフォルダ名にも使用できます。                                                                          |
-| `txts/file.txt`                           | `txts/file.txt`。ただし `file.txt` 、`build/txts/file.txt`は不可                                | 特定のフォルダ内のファイルを指定するパターンは、リポジトリルートを基準にしています。 スラッシュを前に付けても効果がないことに注意してください。                             |
-
-ベストプラクティスとして、 `.lcpignore` ファイルをプロジェクトの最上位フォルダに保持します。 リポジトリに`.lcpignore` ファイル（非推奨）が複数ある場合は、DXP Cloudは、統一された文書としてそれらを読み込みます。
+ベストプラクティスとして、 `.lcpignore` ファイルをプロジェクトのトップレベルのフォルダーに保存してください。 リポジトリに複数の `.lcpignore` ファイルがある場合（推奨しません）、DXP Cloud はそれらを統一したドキュメントとして読み取ります。
 
 ```{note}
-   ファイルやフォルダがデプロイされていて、管理者が後で無視したい場合、後続のルールがそのファイルやフォルダをインクルードしようとしても、DXP Cloudはそのファイルを無視しません。 むしろ、そのファイルやフォルダは更新されません。
+ファイルやフォルダがデプロイされていて、管理者が後で無視したい場合、後続のルールがそのファイルやフォルダをインクルードしようとしても、DXP Cloudはそのファイルを無視しません。 むしろ、そのファイルやフォルダは更新されません。
 ```
-
-<a name="additional-information" />
 
 ## 追加情報
 
-* [Liferay DXPサービスの概要](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
-* [Liferay DXPサービスの構成](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Liferay DXPサービスの紹介](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
+* [Liferay DXPサービスの設定　](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)

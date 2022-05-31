@@ -1,33 +1,27 @@
 # データソースの接続
 
-環境やデータソースが誤って設定されていると、Liferay DXPのデータ・ソースへのアクセスを妨げたり、中断させたりすることがあります。 ここでは、DXPデータソースの問題をトラブルシューティングする方法をご紹介します。
-
-<a name="no-network-access-to-analytics-cloud" />
+環境やデータソースが誤って設定されていると、Liferay DXPのデータソースへのアクセスを妨げたり、中断させたりすることがあります。 ここでは、DXPデータソースの問題をトラブルシューティングする方法をご紹介します。
 
 ## Analytics Cloudへのネットワークアクセスがない
 
 次のURLを許可リストに追加して、DXPのインストールで弊社のAnalytics Cloudサーバーへのインターネットアクセスが可能であることを確認してください。
 
 * `https://analytics.liferay.com`
-* `https://osbasahpublisher-{weDeployKey}.lfr.cloud`
-* `https://osbasahbackend-{weDeployKey}.lfr.cloud`
+* `https://osbasahpublisher-{regionKey}.lfr.cloud`
+* `https://osbasahbackend-{regionKey}.lfr.cloud`
 * `https://analytics-js-cdn.liferay.com`
 
 ```{note}
-'{weDeployKey}`値を取得するには、help.liferay.com で Liferay Analytics Cloud サポートに連絡してください。
+注意： {regionKey} はワークスペース設定時の初期選択に基づいています（すなわち、ac-southamericaeast1、ac-europewest2、ac-europewest3、またはac-uswest1)。
 ```
 
 ```{important}
 企業のイントラネットの利用状況を分析するなど、いくつかのユースケースでは、訪問者のブラウザもファイアウォールの背後にあります。 このシナリオでは、企業のオフィスネットワークが上記のURLのアウトバウンドアクセスも許可していることを確認する必要があります。
 ```
 
-<a name="validating-the-connection-to-analytics-cloud" />
-
 ## Analytics Cloudへの接続を検証する
 
 データがAnalytics Cloudに送信されているかどうかを検証するのに役立つヒントをご紹介します。
-
-<a name="analytics-events" />
 
 ### アナリティクスのイベント
 
@@ -42,8 +36,6 @@
     ![Analytics Cloudへの接続を検証します。](connecting-data-sources/images/01.png)
 
     この要求が表示されている場合は、お客様のウェブサイトがアナリティクス データをAnalytics Cloudワークスペースに送信していることを意味します。 リクエストペイロードをチェックして、 `channelId`という変数があることを確認してください。
-
-<a name="contacts-data" />
 
 ### 連絡先データ
 
@@ -63,8 +55,6 @@ INFO  [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:164] D
 
 これらのサーバーログが表示されている場合は、連絡先データが正常にACに送信されていることを示しています。
 
-<a name="data-processing-time" />
-
 ## データ処理時間
 
 データが Analytics Cloud に到着すると、ワークスペース ダッシュボードに表示される前に、処理にさらに時間がかかります。
@@ -77,24 +67,22 @@ INFO  [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:164] D
 
 訪問者プロフィールは、処理に時間がかかり、時間の経過とともに利用可能になります。
 
-<a name="unsupported-version" />
-
 ## サポートされていないバージョン
 
-**エラーメッセージ** ： `サポートされていないバージョンです。 この接続方法は、データソースのLiferayバージョンをサポートしていません。 Liferay 7.0/7.1インスタンスに接続していることを確認するか、別の接続方法を試してみてください。`
+**エラーメッセージ**： `サポートされていないバージョンです。 この接続方法は、データソースのLiferayバージョンをサポートしていません。 Liferay 7.0/7.1インスタンスに接続していることを確認するか、別の接続方法を試してみてください。`
 
 ```{important}
 Liferay DXP のインストールは、以下のフィックスパックの最小要件を満たす必要があります：
      * 7.3 Fix Pack 1
      * 7.2 Fix Pack 11
-     * 7.1 Fix Pack 21
-     * 7.0 Fix Pack 97
+     * 7.1 Fix Pack 22
+     * 7.0 Fix Pack 98
 ```
 
-**解決策：**
+**解像度:**
 
 1. [Liferay DXP 7.0 または 7.1 インスタンスと接続] していることを確認してください。
 
 1. [Liferay DXPデータソースの追加](../getting-started/connecting-data-sources/connecting-liferay-dxp-using-oauth.md)の手順に従ってください。
 
-1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.1-latest/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [のportal-ext.propertiesファイル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
+1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.1-latest/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [のportal-ext.propertiesファイル](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)で設定）、設定を削除するか、プロパティ値をtrueにしてください。

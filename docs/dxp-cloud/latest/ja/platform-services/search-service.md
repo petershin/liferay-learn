@@ -2,11 +2,9 @@
 
 Elasticsearchサービスは、Liferay DXPアプリケーションのテキスト検索エンジンです。 これは、外部のインターネットではなく、アプリケーションの他のサービスとのみ通信するプライベートサービスです。
 
-![図1：Elasticsearchサービスは、DXP Cloudで利用可能なサービスの1つです。](./search-service/images/01.png)
+![図1：Elasticsearchサービスは、DXP Cloudで利用可能ないくつかのサービスのうちの1つです。](./search-service/images/01.png)
 
 詳細は、 [Search service limitations](../reference/platform-limitations.md#search-service) のセクションを参照してください。
-
-<a name="configurations" />
 
 ## 設定
 
@@ -29,12 +27,10 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、設定ファイルをどのフォルダに追加しなければならないかに影響を及ぼします。
 
-| **サービススタックバージョン** | **設定フォルダー** |
-| ----------------- | --------------------------------- |
-| **3.x.x** | `lcp/search/config /{ENV}/`       |
-| **4.x.x** | `search/configs /{ENV}/ config /` |
-
-<a name="scripts" />
+| **サービススタックバージョン** | **設定フォルダー**                    |
+|:----------------- |:------------------------------ |
+| **3.x.x**         | `lcp/search/config/{ENV}/`     |
+| **4.x.x**         | `search/configs/{ENV}/config/` |
 
 ## スクリプト
 
@@ -49,12 +45,10 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにスクリプトを追加しなければならないかに影響を及ぼします：
 
-| **サービススタックバージョン** | **スクリプトフォルダ** |
-| ----------------- | ---------------------------------- |
-| **3.x.x** | `lcp/search/script /{ENV}/`        |
-| **4.x.x** | `search/configs /{ENV}/ scripts /` |
-
-<a name="deploying-a-license-to-the-search-service" />
+| **サービススタックバージョン** | **スクリプトフォルダ**                   |
+|:----------------- |:------------------------------- |
+| **3.x.x**         | `lcp/search/script/{ENV}/`      |
+| **4.x.x**         | `search/configs/{ENV}/scripts/` |
 
 ## Search Serviceへのライセンスの展開
 
@@ -62,22 +56,18 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにライセンスファイルを追加しなければならないかに影響を及ぼします：
 
-| **サービススタックバージョン** | **ライセンスフォルダ** |
-| ----------------- | ---------------------------------- |
-| **3.x.x** | `lcp/search/license /{ENV}/`       |
-| **4.x.x** | `search/configs /{ENV}/ license /` |
-
-<a name="environment-variables-reference" />
+| **サービススタックバージョン** | **ライセンスフォルダ**                   |
+|:----------------- |:------------------------------- |
+| **3.x.x**         | `lcp/search/license/{ENV}/`     |
+| **4.x.x**         | `search/configs/{ENV}/license/` |
 
 ## 環境変数リファレンス
 
-Elastisearchのすべての環境変数とその他の設定形式は、 [［official Elastisearch documentation］](https://www.elastic.co/guide/index.html) にあります。 このような設定と環境変数は、それぞれ `［configs/{ENV}/config/］` ディレクトリと `［LCP.json］`で設定できます。 例は次のとおりです：
+Elastisearchのすべての環境変数とその他の設定形式は、 [［official Elastisearch documentation］](https://www.elastic.co/guide/index.html)にあります。 このような設定と環境変数は、それぞれ `［configs/{ENV}/config/］` ディレクトリと `［LCP.json］`で設定できます。 例は次のとおりです：
 
-| 名前             | Value           | 説明              |
-| -------------- | --------------- | --------------- |
+| 名称             | 値               | 説明              |
+|:-------------- |:--------------- |:--------------- |
 | `ES_JAVA_OPTS` | `-Xms4g -Xmx4g` | ESインスタンスのJava設定 |
-
-<a name="additional-information" />
 
 ## 追加情報
 

@@ -12,8 +12,6 @@ infrastructure-and-operations/networking.md
 infrastructure-and-operations/security.md
 ```
 
-<a name="networking" />
-
 ## ネットワーキング
 
 - [カスタムドメイン](./infrastructure-and-operations/networking/custom-domains.md)
@@ -23,11 +21,9 @@ infrastructure-and-operations/security.md
 - [VPNサーバーの設定](./infrastructure-and-operations/networking/configuring-a-vpn-server.md)
 - [DXP CloudへのVPNサーバーの接続](./infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md)
 
-<a name="security" />
-
 ## セキュリティ
 
-- [情報セキュリティとDXP Cloud](./infrastructure-and-operations/security/information-security-and-dxp-cloud.md)
+- [情報セキュリティとDXPクラウド](./infrastructure-and-operations/security/information-security-and-dxp-cloud.md)
 - [認証](./infrastructure-and-operations/security/authentication.md)
 - [DXP CloudでのSSOの使用](./infrastructure-and-operations/security/using-sso-with-dxp-cloud.md)
 - [Webアプリケーションファイアウォール](./infrastructure-and-operations/security/web-application-firewall.md)

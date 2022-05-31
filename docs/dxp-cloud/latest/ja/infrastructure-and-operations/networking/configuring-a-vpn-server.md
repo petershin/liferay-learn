@@ -1,14 +1,12 @@
 # VPNサーバーの設定
 
-以下のシナリオでは、IPsecまたはOpenVPNのVPNサーバーを設定する方法を説明します。 VPNサーバーを設定すると、DXP Cloudの内部ネットワークと本番環境の間に安全な接続を確立できます。 この例では、Ubuntu Server 18.0.4をコンセプトの証明として使用しています。 DXP CloudのClient-to-Site VPNs機能の概要については、 [VPNインテグレーションの概要](./vpn-integration-overview.md) の記事をご覧ください。
+以下のシナリオでは、IPsecまたはOpenVPNのVPNサーバーを設定する方法を説明します。 VPNサーバーを設定すると、DXP Cloudの内部ネットワークと本番環境の間に安全な接続を確立できます。 この例では、Ubuntu Server 18.0.4をコンセプトの証明として使用しています。 DXP CloudのClient-to-Site VPNs機能の概要については、 [VPN Integration Overview](./vpn-integration-overview.md) の記事をご覧ください。
 
 ```{warning}
-   設定コマンドや値は変更される場合がありますので、お客様の環境に合わせて設定してください。
+設定コマンドや値は変更される場合がありますので、お客様の環境に合わせて設定してください。
 ```
 
 `EAP-TLS` および `EAP-MSCHAPV2` の認証プロトコルは、いずれもVPN接続に対応しています。
-
-<a name="basic-setup-for-an-ipsec-server" />
 
 ## IPsecサーバーの基本設定
 
@@ -51,10 +49,10 @@ IPsecテストサーバーを設定するには
     rightauth=eap-mschapv2,eap-tls!
     ```
 
-1. サーバーで、 `SERVER_EXTERNAL_IP` をVPNサーバーの外部IPに置き換え、 `USERNAME/PASSWORD` を値に置き換えます。
+1. サーバー上で、 `SERVER_EXTERNAL_IP` をVPNサーバーの外部IP、 `USERNAME/PASSWORD` をあなたの値で置き換えてください。
 
     ```properties
-    SERVER **EXTERNAL** IP="18.188.145.101"
+    SERVER_EXTERNAL_IP="18.188.145.101"
     USERNAME="myuser"
     PASSWORD="mypassword"
     ```
@@ -84,7 +82,7 @@ IPsecテストサーバーを設定するには
     |   ipsec pki --issue --lifetime 1825 \
       --cacert ~/pki/cacerts/ca-cert.pem \
       --cakey ~/pki/private/ca-key.pem \
-      --dn "CN=$SERVER **EXTERNAL** IP" --san "$SERVER **EXTERNAL** IP" \
+      --dn "CN=$SERVER_EXTERNAL_IP" --san "$SERVER_EXTERNAL_IP" \
       --flag serverAuth --flag ikeIntermediate --outform pem \
     >  ~/pki/certs/server-cert.pem
 
@@ -149,10 +147,10 @@ IPsecテストサーバーを設定するには
 1. OSのカーネルを設定します。
 
     ```bash
-    sudo sed -i 's/#net\/ipv4\/ip **forward=1/net\/ipv4\/ip** forward=1/g' /etc/ufw/sysctl.conf
-    sudo sed -i 's/#net\/ipv4\/conf\/all\/accept **redirects/net\/ipv4\/conf\/all\/accept** redirects/g' /etc/ufw/sysctl.conf
+    sudo sed -i 's/#net\/ipv4\/ip_forward=1/net\/ipv4\/ip_forward=1/g' /etc/ufw/sysctl.conf
+    sudo sed -i 's/#net\/ipv4\/conf\/all\/accept_redirects/net\/ipv4\/conf\/all\/accept_redirects/g' /etc/ufw/sysctl.conf
     echo "net/ipv4/conf/all/send_redirects=0" | sudo tee -a /etc/ufw/sysctl.conf
-    echo "net/ipv4/ip **no** pmtu_disc=1" | sudo tee -a /etc/ufw/sysctl.conf
+    echo "net/ipv4/ip_no_pmtu_disc=1" | sudo tee -a /etc/ufw/sysctl.conf
     ```
 
 1. OSのファイアウォールを設定する。
@@ -184,8 +182,6 @@ IPsecテストサーバーを設定するには
     ```
 
 IPsec VPNサーバーの設定が完了しました。
-
-<a name="basic-setup-for-an-openvpn-server" />
 
 ## OpenVPNサーバの基本設定
 
@@ -294,7 +290,7 @@ OpenVPNサーバーを使用する場合は、以下の手順に従ってくだ�
 1. OSのカーネルを設定します。
 
     ```bash
-    sudo sed -i 's/#net.ipv4.ip **forward=1/net.ipv4.ip** forward=1/g' /etc/sysctl.conf
+    sudo sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
     sudo sysctl -p
     ```
 
@@ -303,7 +299,7 @@ OpenVPNサーバーを使用する場合は、以下の手順に従ってくだ�
     ```bash
     networkInterfaceName=$(ip link | awk -F: '$0 !~ "lo|vir|^[^0-9]"{print $2a;getline}' | head -1)
     echo -e "*nat\n:POSTROUTING ACCEPT [0:0]\n-A POSTROUTING -s 10.8.0.0/8 -o $networkInterfaceName -j MASQUERADE\nCOMMIT\n" | sudo tee -a /etc/ufw/before.rules
-    sudo sed -i 's/DEFAULT **FORWARD** POLICY="DROP"/DEFAULT **FORWARD** POLICY="ACCEPT"/g' /etc/default/ufw
+    sudo sed -i 's/DEFAULT_FORWARD_POLICY="DROP"/DEFAULT_FORWARD_POLICY="ACCEPT"/g' /etc/default/ufw
     sudo ufw allow 1194/udp
     sudo ufw allow OpenSSH
     sudo ufw disable
@@ -323,8 +319,6 @@ OpenVPNサーバーを使用する場合は、以下の手順に従ってくだ�
     ```
 
 OpenVPNサーバーの設定が完了しました。
-
-<a name="additional-information" />
 
 ## 追加情報
 

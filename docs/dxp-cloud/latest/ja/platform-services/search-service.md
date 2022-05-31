@@ -27,10 +27,10 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、設定ファイルをどのフォルダに追加しなければならないかに影響を及ぼします。
 
-| **サービススタックバージョン** | **設定フォルダー**                    |
+| **サービススタックバージョン** | **設定フォルダー** |
 |:----------------- |:------------------------------ |
-| **3.x.x**         | `lcp/search/config/{ENV}/`     |
-| **4.x.x**         | `search/configs/{ENV}/config/` |
+| **3.x.x** | `lcp/search/config/{ENV}/`     |
+| **4.x.x** | `search/configs/{ENV}/config/` |
 
 ## スクリプト
 
@@ -45,10 +45,10 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにスクリプトを追加しなければならないかに影響を及ぼします：
 
-| **サービススタックバージョン** | **スクリプトフォルダ**                   |
+| **サービススタックバージョン** | **スクリプトフォルダ** |
 |:----------------- |:------------------------------- |
-| **3.x.x**         | `lcp/search/script/{ENV}/`      |
-| **4.x.x**         | `search/configs/{ENV}/scripts/` |
+| **3.x.x** | `lcp/search/script/{ENV}/`      |
+| **4.x.x** | `search/configs/{ENV}/scripts/` |
 
 ## Search Serviceへのライセンスの展開
 
@@ -56,14 +56,14 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにライセンスファイルを追加しなければならないかに影響を及ぼします：
 
-| **サービススタックバージョン** | **ライセンスフォルダ**                   |
+| **サービススタックバージョン** | **ライセンスフォルダ** |
 |:----------------- |:------------------------------- |
-| **3.x.x**         | `lcp/search/license/{ENV}/`     |
-| **4.x.x**         | `search/configs/{ENV}/license/` |
+| **3.x.x** | `lcp/search/license/{ENV}/`     |
+| **4.x.x** | `search/configs/{ENV}/license/` |
 
 ## 環境変数リファレンス
 
-Elastisearchのすべての環境変数とその他の設定形式は、 [［official Elastisearch documentation］](https://www.elastic.co/guide/index.html)にあります。 このような設定と環境変数は、それぞれ `［configs/{ENV}/config/］` ディレクトリと `［LCP.json］`で設定できます。 例は次のとおりです：
+Elastisearchのすべての環境変数とその他の設定形式は、 [［official Elastisearch documentation］](https://www.elastic.co/guide/index.html) にあります。 このような設定と環境変数は、それぞれ `［configs/{ENV}/config/］` ディレクトリと `［LCP.json］`で設定できます。 例は次のとおりです：
 
 | 名称             | 値               | 説明              |
 |:-------------- |:--------------- |:--------------- |

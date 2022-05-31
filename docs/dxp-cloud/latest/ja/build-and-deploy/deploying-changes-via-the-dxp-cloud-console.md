@@ -69,9 +69,9 @@
 
 新しいビルドの準備ができたら、DXP Cloudコンソールからプロジェクトの `dev` 環境にデプロイします。
 
-1. DXP Cloudコンソールで、プロジェクトの *Builds* ページに移動します。 このページは、どのプロジェクト環境からでもアクセスできます。
+1. DXP Cloudコンソールで、プロジェクトの **Builds** ページに移動します。 このページは、どのプロジェクト環境からでもアクセスできます。
 
-1. デプロイしたいビルドの *［Actions］* ボタン（⋮）をクリックし、 *［Deploy Build To...］*を選択します。
+1. デプロイしたいビルドの ［**Actions**］ ボタン（⋮）をクリックし、 ［**Deploy Build To...**］ を選択します。
 
    ![ビルドページからビルドの表示とデプロイを行うことができます。](./deploying-changes-via-the-dxp-cloud-console/images/04.png)
 
@@ -79,7 +79,7 @@
 
    ![開発環境を選択し、［Deploy Build］をクリックします。](./deploying-changes-via-the-dxp-cloud-console/images/05.png)
 
-1. チェックボックスを使ってデプロイを確認し、 *［Deploy Build］*をクリックします。
+1. チェックボックスを使ってデプロイを確認し、 ［**Deploy Build**］ をクリックします。
 
    ![チェックボックスを使ってデプロイを確認し、［Deploy Build］をクリックします。](./deploying-changes-via-the-dxp-cloud-console/images/06.png)
 
@@ -87,17 +87,17 @@
    また、デプロイしたいビルドの*Build ID*をクリックすると、*Deploy Build to...*のページにアクセスできます。
    ```
 
-   デプロイメントのステータスは、 *デプロイメント* ページや、  `dev` 環境の*ログ* および *アクティビティ* ページから見ることができます。
+   デプロイメントのステータスは、 **デプロイメント** ページや、  `dev` 環境の **ログ** および **アクティビティ** ページから見ることができます。
 
    ![デプロイメントページからデプロイメントのステータスを確認する](./deploying-changes-via-the-dxp-cloud-console/images/07.png)
 
 ## サンプルデプロイメントの検証
 
-ビルドが正常にデプロイされ、 `dev` 環境のLiferayサービスが *Ready*になったら、以下の手順で変更内容を確認します。
+ビルドが正常にデプロイされ、 `dev` 環境のLiferayサービスが **Ready** になったら、以下の手順で変更内容を確認します。
 
 1. プロジェクトの `dev` の環境に移動します。
 
-1. *Web Server* サービスのページにアクセスし、その URL をクリックして、 `dev` 環境の DXP インスタンスにアクセスします：`https://webserver-<project-name>-dev.lfr.cloud/`。
+1. **Web Server** サービスのページにアクセスし、その URL をクリックして、 `dev` 環境の DXP インスタンスにアクセスします：`https://webserver-<project-name>-dev.lfr.cloud/`。
 
    ![開発環境のDXPインスタンスにアクセスするために、WebサーバのURLをクリックします。](./deploying-changes-via-the-dxp-cloud-console/images/08.png)
 

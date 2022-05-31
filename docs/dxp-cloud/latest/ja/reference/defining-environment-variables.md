@@ -20,30 +20,30 @@ DXP Cloudのコンソールからサービスに環境変数を追加するに�
 
 1. プロジェクト環境に移動します。
 
-1. 環境メニューの *サービス* をクリックします。
+1. 環境メニューの **サービス** をクリックします。
 
 1. 設定したいサービスをクリックします。
 
-1. *［環境変数］* タブをクリックします。
+1. ［**環境変数**］ タブをクリックします。
 
-   ![図1：サービスの[環境変数]タブに移動します。](./defining-environment-variables/images/01.png)
+   ![図1：サービスの [環境変数]タブに移動します。](./defining-environment-variables/images/01.png)
 
 1. 新しい環境変数をキーと値のペアで入力します。 次の例では、LiferayDXPサービスのクラスタリングを無効にします：
 
-    * **キー**： `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED`
-    * **値**： `false`
+    ***キー** ： `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED`
+    ***値** ： `false`
 
-1. *Save Changes* をクリックすると、新しい環境変数でサービスが再起動します。
+1. **Save Changes** をクリックすると、新しい環境変数でサービスが再起動します。
 
-環境変数をサービスに追加した後は、サービスの *［環境変数］* タブからいつでもその環境変数を削除したり値を変更したりできます。
+環境変数をサービスに追加した後は、サービスの ［**環境変数**］ タブからいつでもその環境変数を削除したり値を変更したりできます。
 
-変数を削除するには、 *［削除］* ボタン（⨉）をクリックします。
+変数を削除するには、 ［**削除**］ ボタン（⨉）をクリックします。
 
-変数の値を変更するには、 *［Show］* のアイコンをクリックして、新しい値を入力します。
+変数の値を変更するには、 ［**Show**］ のアイコンをクリックして、新しい値を入力します。
 
-変数の削除や変更が完了したら、 *［Save Changes］* をクリックして、環境変数が更新された状態でサービスを再起動します。
+変数の削除や変更が完了したら、 ［**Save Changes**］ をクリックして、環境変数が更新された状態でサービスを再起動します。
 
-![図2：[アイコンを表示]をクリックして、変数の値を表示および編集します。](./defining-environment-variables/images/02.png)
+![図2： [アイコンを表示]をクリックして、変数の値を表示および編集します。](./defining-environment-variables/images/02.png)
 
 ## LCP.jsonによる環境変数の定義
 
@@ -81,7 +81,7 @@ DXP Cloudのコンソールからサービスに環境変数を追加するに�
 
 通常の環境変数には、特別なセキュリティ対策はありません。 DXP Cloudプロジェクトにアクセスできるすべてのユーザーは、サービスの変数値も見ることができます。
 
-機密性の高い変数値（ログイン認証情報など）を保存するには、シークレットを使用することができます。 シークレットはバックエンドで暗号化され、 *管理者* 役割がないユーザーから非表示にすることができます。 また、通常の環境変数は値を確保するために[シークレットを参照](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#referencing-secrets-from-environment-variables)することができます。 詳しくは、 [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) をご覧ください。
+機密性の高い変数値（ログイン認証情報など）を保存するには、シークレットを使用することができます。 シークレットはバックエンドで暗号化され、 **管理者** 役割がないユーザーから非表示にすることができます。 また、通常の環境変数は値を確保するために [シークレットを参照](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#referencing-secrets-from-environment-variables) することができます。 詳しくは、 [シークレットで安全な環境変数を管理](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) をご覧ください。
 
 ## 追加情報
 

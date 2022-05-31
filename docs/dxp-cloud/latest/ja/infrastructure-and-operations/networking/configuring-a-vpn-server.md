@@ -1,6 +1,6 @@
 # VPNサーバーの設定
 
-以下のシナリオでは、IPsecまたはOpenVPNのVPNサーバーを設定する方法を説明します。 VPNサーバーを設定すると、DXP Cloudの内部ネットワークと本番環境の間に安全な接続を確立できます。 この例では、Ubuntu Server 18.0.4をコンセプトの証明として使用しています。 DXP CloudのClient-to-Site VPNs機能の概要については、 [VPN Integration Overview](./vpn-integration-overview.md) の記事をご覧ください。
+以下のシナリオでは、IPsecまたはOpenVPNのVPNサーバーを設定する方法を説明します。 VPNサーバーを設定すると、DXP Cloudの内部ネットワークと本番環境の間に安全な接続を確立できます。 この例では、Ubuntu Server 18.0.4をコンセプトの証明として使用しています。 DXP CloudのClient-to-Site VPNs機能の概要については、 [VPNインテグレーションの概要](./vpn-integration-overview.md) の記事をご覧ください。
 
 ```{warning}
 設定コマンドや値は変更される場合がありますので、お客様の環境に合わせて設定してください。

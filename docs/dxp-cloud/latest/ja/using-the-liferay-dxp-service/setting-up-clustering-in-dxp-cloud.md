@@ -13,11 +13,11 @@
 
 DXP Cloudコンソールで目的の環境から開始します。 次に、 `［Services］`から `［liferay］`に移動して、 `［環境変数］`をクリックします。 `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` 変数が `true`に設定されていることを確認します。 これは、イメージの起動プロセスに、クラスタリング設定をLiferay DXPに追加するように指示します。
 
-![LCP_PROJECT_LIFERAY_CLUSTER_ENABLEDの設定](./setting-up-clustering-in-dxp-cloud/images/01.png)
+![LCP **PROJECT** LIFERAY **CLUSTER** ENABLEDの設定](./setting-up-clustering-in-dxp-cloud/images/01.png)
 
 ## クラスタリングスケールの設定
 
-クラスタリング環境のノード数は、Liferayサービスの `LCP.json` ファイル内（`liferay/`フォルダ内）の `スケール` プロパティによって決定されます。 Liferayサービスを初めてデプロイする場合、または `スケール` プロパティが `LCP.json` ファイルでまだ設定されていない場合は、最初に値を `1` 設定し、[サービスをデプロイする](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md#deploy)必要があります。
+クラスタリング環境のノード数は、Liferayサービスの `LCP.json` ファイル内（`liferay/`フォルダ内）の `スケール` プロパティによって決定されます。 Liferayサービスを初めてデプロイする場合、または `スケール` プロパティが `LCP.json` ファイルでまだ設定されていない場合は、最初に値を `1` 設定し、 [サービスをデプロイする](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md#deploy) 必要があります。
 
 ```json
 {
@@ -52,7 +52,7 @@ Liferay DXPインスタンスのノード数を増やすと、プロジェクト
 
 ## デプロイと確認
 
-選択した環境に設定の変更をデプロイして、クラスタリングが有効になっていることを確認します。 詳細は、 [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)を参照してください。
+選択した環境に設定の変更をデプロイして、クラスタリングが有効になっていることを確認します。 詳細は、 [DXP Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) を参照してください。
 
 クラスタリングが正しく機能しているかどうかを確認するには、Liferay DXPインスタンスのログで、 `JGroupsReceiver` クラスからの `Accepted View` メッセージを確認します。
 

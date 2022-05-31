@@ -2,7 +2,7 @@
 
 他のサービスと同様に、カスタム追加のデプロイには、設定やファイルをGitリポジトリの適切な場所に追加する必要があります。 しかし、Liferayサービスのデプロイは、他のサービスのデプロイとは若干異なります。
 
-Liferayサービスは、Liferayワークスペース<!--Add link when available-->を利用して、 [デプロイ可能なファイル](#deploying-themes-portlets-and-osgi-modules)、 [ソースコード](#building-and-deploying-source-code)などを追加するためのオプションを提供します。 これらは [CI build](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)で簡単に組み込むことができますが、 [CLI tool](../reference/command-line-tool.md)を使う場合は、Liferayサービス専用の [追加ステップ](#cli-tool-deployment) が必要になってくるでしょう。
+Liferayサービスは、Liferayワークスペース <!--Add link when available--> を利用して、 [デプロイ可能なファイル](#deploying-themes-portlets-and-osgi-modules)、 [ソースコード](#building-and-deploying-source-code)などを追加するためのオプションを提供します。 これらは [CI build](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)で簡単に組み込むことができますが、 [CLI tool](../reference/command-line-tool.md)を使う場合は、Liferayサービス専用の [追加ステップ](#cli-tool-deployment) が必要になってくるでしょう。
 
 ## Liferay DXP Dockerイメージの定義
 
@@ -18,9 +18,9 @@ Liferayサービスの「LCP.json」ファイルの「image」プロパティで
 
 [CLIツール](../reference/command-line-tool.md) を使用してデプロイする場合、カスタマイズや設定を考慮してデプロイするために追加の手順が必要です。 これらは、デプロイする前に生成される特別な `Dockerfile` イメージに含まれている必要があります。
 
-[デプロイ可能なファイル](#deploying-themes-portlets-and-osgi-modules)、 [ビルドされたソースコード](#building-and-deploying-source-code)、 [ホットフィックス](#deploying-hotfixes)、および [ライセンス](#deploying-licenses) は、CLIツールを使用している場合、デプロイに含めるための追加手順が必要です。 これらの追加手順は、 [CIサービス](../platform-services/continuous-integration.md) を使用してリポジトリからビルドを生成する場合には必要ありません。
+[デプロイ可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ビルドされたソースコード](#building-and-deploying-source-code) 、 [ホットフィックス](#deploying-hotfixes) 、および [ライセンス](#deploying-licenses) は、CLIツールを使用している場合、デプロイに含めるための追加手順が必要です。 これらの追加手順は、 [CIサービス](../platform-services/continuous-integration.md) を使用してリポジトリからビルドを生成する場合には必要ありません。
 
-通常通りCLIでLiferayサービスをデプロイした場合（全てのサービスを一度にデプロイした場合や、 `liferay/` ディレクトリからデプロイした場合）、DXPイメージの **デフォルトバージョン** （ `LCP.json`で定義されているメジャーバージョンを使用）がデプロイされますが、その中にはお客様のカスタマイゼーションは含まれていません。 これは、カスタマイゼーションしたものをサービスに含めるためには、そのサービスを具体的に構築してデプロイする必要があるからです。
+通常通りCLIでLiferayサービスをデプロイした場合（全てのサービスを一度にデプロイした場合や、 `liferay/` ディレクトリからデプロイした場合）、DXPイメージの **デフォルトバージョン**（ `LCP.json`で定義されているメジャーバージョンを使用）がデプロイされますが、その中にはお客様のカスタマイゼーションは含まれていません。 これは、カスタマイゼーションしたものをサービスに含めるためには、そのサービスを具体的に構築してデプロイする必要があるからです。
 
 以下の手順で、カスタマイゼーションを含んだLiferayサービスをデプロイします：
 
@@ -64,7 +64,7 @@ liferay
 ```
 
 ```{note}
-リポジトリでバージョン 3.x.x のサービスを使用している場合、テーマ、ポートレット、OSGi モジュールは、代わりに適切な 「lcp/liferay/deploy/{ENV}」フォルダに属します。 バージョン確認の詳細については、[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+リポジトリでバージョン 3.x.x のサービスを使用している場合、テーマ、ポートレット、OSGi モジュールは、代わりに適切な 「lcp/liferay/deploy/{ENV}」フォルダに属します。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ## ソースコードのビルドとデプロイ
@@ -78,7 +78,7 @@ CIビルドは、これらのフォルダー内のソースコードをコンパ
 * デプロイされたWARの `liferay/wars` フォルダ
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合、これらのサブフォルダは、「liferay/」ディレクトリにではなく、リポジトリのルートに配置されます。 バージョン確認の詳細については、[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+バージョン3.x.xのサービスを使用している場合、これらのサブフォルダは、「liferay/」ディレクトリにではなく、リポジトリのルートに配置されます。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 デプロイしたら、デプロイ可能な `.jar` または `.war` ファイルはLiferayサービスのコンテナ内の`$LIFERAY_HOME/デプロイ/`フォルダにコピーされます。 これは、CIのビルドがコードをコンパイルする場合と、デプロイ前に利用可能な [Gradleコマンド](#cli-tool-deployment) を使用して自分でコードを生成する場合のどちらでも発生します。
@@ -88,7 +88,7 @@ CIビルドは、これらのフォルダー内のソースコードをコンパ
 ホットフィックスを適用するには、ホットフィックスのZIPファイルをLiferay DXPサービスディレクトリ内の `configs/{ENV}/patching/` フォルダに追加します。 この変更を展開すると、ホットフィックスがLiferay DXPインスタンスに適用されます。
 
 ```(note)
-[これらの指示](./updating-your-dxp-instance-to-a-new-minor-version.md)を参照して、代わりにLiferay DXPの新しいマイナーバージョンにアップデートしてください（新しい[サービスパック](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)など）。
+[これらの指示](./updating-your-dxp-instance-to-a-new-minor-version.md)を参照して、代わりにLiferay DXPの新しいマイナーバージョンにアップデートしてください（新しい[サービスパック](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)など）。
 ```
 
 たとえば、次のような構造を持つホットフィックスを開発環境にデプロイできます：
@@ -108,7 +108,7 @@ liferay
 サーバーが起動するたびにホットフィックスを再適用する必要があることに注意してください。 このため、 `LCP.json` ファイルでLiferay DXP Dockerイメージの最新のフィックスパックまたはサービスパックに更新することは、このフォルダーに多数のホットフィックスを長期間追加するよりも優れています。 このファイルの `image`環境変数を置き換えることにより、Dockerバージョンを更新できます（`liferay/`ディレクトリで）。
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合は、代わりにホットフィックスが「lcp/liferay/hotfix/」フォルダに追加されます。 この場合のDockerイメージのバージョンは、リポジトリの 「gradle.properties」ファイルにある 「liferay.workspace.lcp.liferay.image」プロパティで定義されます。 バージョン確認の詳細については、[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+バージョン3.x.xのサービスを使用している場合は、代わりにホットフィックスが「lcp/liferay/hotfix/」フォルダに追加されます。 この場合のDockerイメージのバージョンは、リポジトリの 「gradle.properties」ファイルにある 「liferay.workspace.lcp.liferay.image」プロパティで定義されます。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ### 環境変数によるパッチ適用
@@ -131,7 +131,7 @@ CIサービスがビルドプロセス中に自動的に適用することがで
 ```
 
 ```{note}
-この環境変数は、少なくともバージョン4.x.xのサービスにアップグレードしている場合にのみ利用できます。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+この環境変数は、少なくともバージョン4.x.xのサービスにアップグレードしている場合にのみ利用できます。 バージョンの確認方法については， [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ## ライセンスのデプロイ
@@ -156,7 +156,7 @@ liferay
 バックグラウンドで、XMLライセンスは `$LIFERAY_HOME/ deploy`にコピーされ、AATFライセンスは `$LIFERAY_HOME/ data`コピーされます。
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合、ライセンスはリポジトリの「lcp/liferay/license/{ENV}/」フォルダに置かれます。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+バージョン3.x.xのサービスを使用している場合、ライセンスはリポジトリの「lcp/liferay/license/{ENV}/」フォルダに置かれます。 バージョンの確認方法については， [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ## 追加情報

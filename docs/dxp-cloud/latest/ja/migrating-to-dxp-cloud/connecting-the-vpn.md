@@ -5,17 +5,17 @@
 以下のような場合、DXP Cloud環境をVPNに接続する必要がある場合があります。
 
 * 自社のプロジェクト要件でVPNを使用する場合
-* 自分の環境を [LDAPサーバー](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html?highlight=ldap)に接続したい。
+* 自分の環境を [LDAPサーバー](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html?highlight=ldap) に接続したい。
 * 別のディレクトリサーバーに環境を接続したい場合
 * 他のウェブサービスと相互作用するリモートアプリケーションを使用する必要があります
 
-VPNサーバーの設定が必要ない場合は、 [次のステップに進んでください](#next-steps).
+VPNサーバーの設定が必要ない場合は、 [次のステップに進んでください](#next-steps) .
 
 ## VPNサーバーの設定
 
 DXP Cloudと内部ネットワークとの間に安全な接続を確立できるように、VPNサーバーを設定する必要があります。
 
-VPN接続では、 `EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを使用するように設定することが可能です。 VPNサーバーの設定については、 [Configuring a VPN Server](../infrastructure-and-operations/networking/configuring-a-vpn-server.md) を参照してください。
+VPN接続では、 `EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを使用するように設定することが可能です。 VPNサーバーの設定については、 [VPNサーバーの設定](../infrastructure-and-operations/networking/configuring-a-vpn-server.md) を参照してください。
 
 ## VPN接続の作成と設定
 
@@ -23,19 +23,19 @@ VPN接続では、 `EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを�
 
 1. DXP Cloudコンソールで、プロジェクトの要件に応じて、VPNを接続したい環境（ `prd`など）に移動します。
 
-1. 画面左側の *Settings* をクリックします。
+1. 画面左側の **Settings** をクリックします。
 
     ![設定メニューに移動し、VPN構成設定にアクセスします。](./connecting-the-vpn/images/01.png)
 
-1. VPNセクションまでスクロールし、 *Create New VPN*をクリックします。
+1. VPNセクションまでスクロールし、 **Create New VPN** をクリックします。
 
     ![新規VPNの作成」をクリックして、VPN接続の設定を開始します。](./connecting-the-vpn/images/02.png)
 
 1. VPNサーバーの設定に合わせ、すべてのVPN設定を行います。
 
-    * **名前** (VPNを識別するために使用される)
-    * **説明**
-    * **プロトコル** （IPSec または OpenVPN）
+    ***名前**(VPNを識別するために使用される)
+    ***説明**
+    ***プロトコル**（IPSec または OpenVPN）
 
 1. DXP Cloud環境のポートと、プライベートネットワークのポートをマッピングします。
 
@@ -43,7 +43,7 @@ VPN接続では、 `EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを�
 
     ポートのマッピングは、DXPクラウド環境内のリクエストをプライベートネットワーク内の特定のサービスにリダイレクトするのに有効です。
 
-1. *Create and Connect VPN*をクリックします。
+1. **Create and Connect VPN** をクリックします。
 
 ボタンをクリックすると、VPN接続が確立されます。 VPNサーバーが正常に接続されるまで、多少時間がかかる場合があります。
 

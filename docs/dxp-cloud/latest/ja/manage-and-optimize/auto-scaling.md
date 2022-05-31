@@ -1,10 +1,10 @@
 # オートスケーリング
 
-Liferay DXP Cloudのオートスケーリング機能は、パフォーマンスを最適化するために必要に応じて、DXPサービスのインスタンスを自動的に作成および破棄します。 これは、サーバートラフィックの増加、メモリリーク、またはその他の急な変化に対処します。 デフォルトでは、すべてのDXP Cloudアカウントで、この機能は *無効* になっています。
+Liferay DXP Cloudのオートスケーリング機能は、パフォーマンスを最適化するために必要に応じて、DXPサービスのインスタンスを自動的に作成および破棄します。 これは、サーバートラフィックの増加、メモリリーク、またはその他の急な変化に対処します。 デフォルトでは、すべてのDXP Cloudアカウントで、この機能は **無効** になっています。
 
 この機能を使用して、サービスはLiferay DXPインスタンスの数を
 
-定義された最大10まで<0>自動的に増加（アップスケール）したり、[`LCP.json`](../reference/configuration-via-lcp-json.md)の`スケール`プロパティで指定された数まで減少（ダウンスケール）したりできます。 `scale` propertyは、実行するインスタンスの最小数を指定します。</p> 
+定義された最大10まで自動的に増加（アップスケール）したり、[`LCP.json`](../reference/configuration-via-lcp-json.md)の`スケール`プロパティで指定された数まで減少（ダウンスケール）したりできます。 `scale` propertyは、実行するインスタンスの最小数を指定します。
 
 
 
@@ -16,7 +16,7 @@ Liferay DXP Cloudのオートスケーリング機能は、パフォーマンス
 
 
 ```{note}
-オートスケーリングは、本番環境のLiferay DXPサービスでのみ利用可能です。 オートスケーリングを有効にすると、サービスのインスタンスが増えるごとに1時間ごとの料金が発生します。 オートスケーリングの充電方法については、[オートスケーリングの充電方法](https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged-)をご覧ください。
+オートスケーリングは、本番環境のLiferay DXPサービスでのみ利用可能です。 オートスケーリングを有効にすると、サービスのインスタンスが増えるごとに1時間ごとの料金が発生します。 オートスケーリングの充電方法については、 [オートスケーリングの充電方法](https://help.liferay.com/hc/ja/articles/360030843592-How-Auto-Scaling-is-charged-) をご覧ください。
 ```
 
 
@@ -37,7 +37,7 @@ Liferay DXP Cloudのオートスケーリング機能は、パフォーマンス
 
 推奨される設定は、 `-Xms` フラグを使用可能なメモリの25%を使用して設定し、 `-Xmx` フラグを使用可能なメモリの75%を使用して設定することです。 `Liferay` サービスで使用可能なさまざまなレベルのメモリについて、推奨値のリファレンスについては次の表を参照してください：
 
-| **使用可能なメモリ** | **推奨されるLIFERAY_JAVA_OPTS** |
+| **使用可能なメモリ** | **推奨されるLIFERAY** JAVA **OPTS** |
 |:------------ |:---------------------------- |
 | 8GB          | -Xms2048m -Xmx6144m          |
 | 16GB         | -Xms4096m -Xmx12288m         |
@@ -53,7 +53,7 @@ LIFERAY_JAVA_OPTS` 変数は、 `-Xms` や `-Xmx` だけでなく、他のフラ
 ```
 
 
-この環境変数を `Liferay` サービスに追加するためのヘルプについては [Defining Environment Variables](../reference/defining-environment-variables.md) を参照してください。
+この環境変数を `Liferay` サービスに追加するためのヘルプについては [環境変数の定義](../reference/defining-environment-variables.md) を参照してください。
 
 
 
@@ -62,8 +62,8 @@ LIFERAY_JAVA_OPTS` 変数は、 `-Xms` や `-Xmx` だけでなく、他のフラ
 次の手順に従って、DXP Cloudコンソールでオートスケーリングを有効または無効にします：
 
 1. 本番環境へ移動します。
-1. *［Services］* &rarr; *［Liferay］* &rarr; *［Scale］* に移動します。
-1. 自動スケーリングが無効になっている場合は、*［Enable Auto Scaling］* をクリックして有効にします。 オートスケーリングが既に有効になっている場合は、［ *無効にするAuto Scaling* ］をクリックして無効にします。
+1. ［**Services**］ &rarr; ［**Liferay**］ &rarr; ［**Scale**］ に移動します。
+1. 自動スケーリングが無効になっている場合は、 ［**Enable Auto Scaling**］ をクリックして有効にします。 オートスケーリングが既に有効になっている場合は、［**無効にするAuto Scaling**］をクリックして無効にします。
 
 オートスケーリングを有効にすると、DXP Cloudはサービスを監視し、事前定義されたしきい値に従って自動的にスケーリングします。
 
@@ -73,11 +73,11 @@ LIFERAY_JAVA_OPTS` 変数は、 `-Xms` や `-Xmx` だけでなく、他のフラ
 
 ## 目標平均稼働率の指定
 
-システム管理者は、 *目標平均使用率*を指定することができます。 この値は、Liferay DXPサービス全体のメモリおよびCPU使用率の平均です。 オートスケーリングが開始される前に、その値のしきい値を超えなければなりません。
+システム管理者は、 **目標平均使用率** を指定することができます。 この値は、Liferay DXPサービス全体のメモリおよびCPU使用率の平均です。 オートスケーリングが開始される前に、その値のしきい値を超えなければなりません。
 
 たとえば、3つのサービスインスタンスがそれぞれメモリの70％、90％、95％を使用する場合、平均メモリ使用率は85％です。 目標平均使用率が90に設定されている場合、アップスケーリングは必要ありません。 この状況でのアップスケーリングは、平均メモリ使用率がターゲットを超えた場合にのみ発生します。
 
-使用可能なメモリの合計は、 `LCP.json`の [Configuration via LCP.json](../reference/configuration-via-lcp-json.md)で参照される `メモリ` プロパティで指定されます。
+使用可能なメモリの合計は、 `LCP.json`の [LCP.jsonによるコンフィギュレーション](../reference/configuration-via-lcp-json.md) で参照される `メモリ` プロパティで指定されます。
 
 サービスの `LCP.json`の `autoscale` プロパティでターゲットの平均使用率を指定します：
 
@@ -101,7 +101,7 @@ LIFERAY_JAVA_OPTS` 変数は、 `-Xms` や `-Xmx` だけでなく、他のフラ
 
 1. [Web server service](../platform-services/web-server-service.md)の`LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [environment variable](../reference/defining-environment-variables.md)を必要な最高値に設定します。 `Liferay` サービスは、 `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` で定義されているインスタンスの最大数（デフォルトでは10）を超えて拡張することはできません。
 
-1. `Liferay`サービスの`LCP.json`ファイル内で、デフォルドの１０以上のインスタンスが必要な場合、希望の最大インスタンスを指定します。 `maxInstances` フィールドを [`autoscale` オブジェクト](#specifying-target-average-utilization)内に設定します。 
+1. `Liferay`サービスの`LCP.json`ファイル内で、デフォルドの１０以上のインスタンスが必要な場合、希望の最大インスタンスを指定します。 `maxInstances` フィールドを [`autoscale` オブジェクト](#specifying-target-average-utilization) 内に設定します。 
    
    
 

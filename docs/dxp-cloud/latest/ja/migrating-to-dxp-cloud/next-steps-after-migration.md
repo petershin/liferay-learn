@@ -18,13 +18,13 @@ Liferay DXPがDXP Cloud上で動作するようになったので、 [自動バ�
 
 DXP Cloudの管理者は、必要に応じて他のメンバーを招待し、プロジェクトのさまざまな領域へのアクセスを管理することができます。 [チームメンバーを招待し](../manage-and-optimize/environment-teams-and-roles.md#inviting-team-members) 、次に適切な [チームロール](../manage-and-optimize/environment-teams-and-roles.md#understanding-team-roles) を与えて、全員がDXPクラウドプロジェクトで必要なレベルのアクセス権を持っていることを確認します。
 
-詳しくは、 [Environment Teams and Roles](../manage-and-optimize/environment-teams-and-roles.md) を参照してください。
+詳しくは、 [環境のチームとロール](../manage-and-optimize/environment-teams-and-roles.md) を参照してください。
 
 ## SSOの設定
 
 シングルサインオンは、DXPクラウドインスタンスでLiferayのユーザーを認証するために、お好みのIDプロバイダーを使用することができます。 これにより、サインオン・エクスペリエンスがよりスムーズになり、プロジェクトの他の部分とより統合された印象を与えることができます。
 
-DXP Cloudは、SAML2.0に準拠したSignle Sign-On Identity Providerをサポートしています。 詳細は、 [Using SSO with DXP Cloud](../infrastructure-and-operations/security/using-sso-with-dxp-cloud.md)を参照してください。
+DXP Cloudは、SAML2.0に準拠したSignle Sign-On Identity Providerをサポートしています。 詳細は、 [DXP CloudでのSSOの使用](../infrastructure-and-operations/security/using-sso-with-dxp-cloud.md) を参照してください。
 
 ## カスタムドメインの追加
 
@@ -36,7 +36,7 @@ DXP Cloud上の環境では、必要に応じて独自のカスタムドメイ�
 
 デフォルトでは、DXPクラウドは、同じリージョン内で [自動ディザスタリカバリ](../troubleshooting/disaster-recovery-overview.md#automatic-disaster-recovery-strategy) を提供することにより、サービス停止によるダウンタイムを軽減します。 しかし、災害によってDXPクラウド環境のサービスエリアに障害が発生した場合、本番インスタンスのユーザーのダウンタイムを最小限に抑えるために、フォールバック環境（またはディザスターリカバリー環境）の使用も検討する必要があります。
 
-[計画外のダウンタイムから可能な限り最も堅牢な保護を維持するようにDiasterRecovery環境](../troubleshooting/configuring-cross-region-disaster-recovery.md) を構成します。 自動ディザスターリカバリー、クロスリージョンディザスターリカバリーについてはこちら [](../troubleshooting/disaster-recovery-overview.md).
+[計画外のダウンタイムから可能な限り最も堅牢な保護を維持するようにDiasterRecovery環境](../troubleshooting/configuring-cross-region-disaster-recovery.md) を構成します。 自動ディザスターリカバリー、クロスリージョンディザスターリカバリーについてはこちら [disaster-recovery-overview.md](../troubleshooting/disaster-recovery-overview.md).
 
 ```{important}
 ディザスターリカバリー環境を構築するためには、サブスクリプションの一部として、そのための環境を別途購入する必要があります。
@@ -48,7 +48,7 @@ DXP Cloud上の環境では、必要に応じて独自のカスタムドメイ�
 
 * [`backup` service](../platform-services/backup-service/backup-service-overview.md) は定期的に（または手動でトリガーしたときに）自動的にバックアップを作成し、いつでも環境にリストアすることができます。 まず、バックアップの [頻度と](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) 保持期間を設定することから始めるとよいでしょう。
 
-* [`search` service](../platform-services/search-service.md) は、 `サービスのElasticsearch実装を提供し`。 `.yml` 設定ファイルを `検索` サービスの `configs/common/config/` フォルダに配置すると [Elasticsearchの動作を設定](../platform-services/search-service.md#configurations)することが可能です。 詳しくは、 [Elasticsearch公式ドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html) をご覧ください。
+* [`search` service](../platform-services/search-service.md) は、 `サービスのElasticsearch実装を提供し`。 `.yml` 設定ファイルを `検索` サービスの `configs/common/config/` フォルダに配置すると [Elasticsearchの動作を設定](../platform-services/search-service.md#configurations) することが可能です。 詳しくは、 [Elasticsearch公式ドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html) をご覧ください。
 
 * [`Webサーバー` サービス](../platform-services/web-server-service.md) は、DXP Cloudサービスとインターネットの残りの部分との間のゲートウェイを提供します。 Liferayインスタンスがサービスするパフォーマンスやリクエストの種類によっては、期待通りにリクエストを処理するために [タイムアウトや再試行回数](../platform-services/web-server-service.md#environment-variables) を調整したい場合があるかもしれません。
 
@@ -58,13 +58,13 @@ DXP Cloud上の環境では、必要に応じて独自のカスタムドメイ�
 
 DXP CloudでLiferayを使い始めるにあたり、アプリケーションのパフォーマンスを監視・チューニングするための利用可能なツールに慣れ親しんでください。
 
-* **アラート** は、サービスがリソース制限の問題に直面したとき、インスタンス数を増減させたとき、その他の問題が発生したときにリアルタイムで通知することが可能です。 [これらのイベントを認識できるように、ステータスアラート](../manage-and-optimize/real-time-alerts.md) をニーズに合わせて設定します。
+***アラート** は、サービスがリソース制限の問題に直面したとき、インスタンス数を増減させたとき、その他の問題が発生したときにリアルタイムで通知することが可能です。 [これらのイベントを認識できるように、ステータスアラート](../manage-and-optimize/real-time-alerts.md) をニーズに合わせて設定します。
 
-* **オートスケーリング** Liferay DXPサービスのインスタンス数は、ユーザーのトラフィックに対応するために必要に応じて自動的に調節されます。 [この最適化を利用するために、](../manage-and-optimize/auto-scaling.md) 自動スケーリングを設定します。
+***オートスケーリング** Liferay DXPサービスのインスタンス数は、ユーザーのトラフィックに対応するために必要に応じて自動的に調節されます。 [この最適化を利用するために、](../manage-and-optimize/auto-scaling.md) 自動スケーリングを設定します。
 
-* [**サービスポップオーバー**](../manage-and-optimize/application-metrics.md#service-popover) および [**モニタリング画面**](../manage-and-optimize/application-metrics.md#extended-application-metrics) ではサービスの詳細やリソース使用量を確認することができます。 サービスのパフォーマンスの監視については、 [Application Metrics](../manage-and-optimize/application-metrics.md) を参照してください。
+* [**サービスポップオーバー**](../manage-and-optimize/application-metrics.md#service-popover) および [**モニタリング画面**](../manage-and-optimize/application-metrics.md#extended-application-metrics) ではサービスの詳細やリソース使用量を確認することができます。 サービスのパフォーマンスの監視については、 [アプリケーションメトリクス](../manage-and-optimize/application-metrics.md) を参照してください。
 
-* 本番環境では、 [Dynatrace integration](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) を使用して、より高度なパフォーマンスメトリクスを使用することもできます。 *これを使用するには、LiferayCloudサブスクリプションに特定のDynatraceアドオンが必要であることに注意してください。*
+* 本番環境では、 [Dynatrace integration](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) を使用して、より高度なパフォーマンスメトリクスを使用することもできます。 **これを使用するには、LiferayCloudサブスクリプションに特定のDynatraceアドオンが必要であることに注意してください。**
 
 DXP Cloud上のインスタンスは、オンプレミスインスタンスと同様に、お客様ご自身でパフォーマンステストと最適化を行う必要があります。 サービスデータ、メトリクス、 [ロギング](../troubleshooting/reading-dxp-cloud-service-logs.md) が利用できるので、テストに役立てることができます。
 
@@ -76,4 +76,4 @@ DXPクラウドコンソール</a>を介してサービス
 
 をデプロイすることに加えて、 [の自動デプロイメント](../build-and-deploy/automatically-deploying-ci-service-builds.md) を構成して、開発環境のプロセスを高速化することもできます。 また、 [CIサービスが利用するJenkinsパイプライン](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) を自分のニーズに合わせてカスタマイズすることも可能だ。</p> 
 
-DXP Cloudの導入ワークフローについて詳しくはこちら [](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
+DXP Cloudの導入ワークフローについて詳しくはこちら [overview-of-the-dxp-cloud-deployment-workflow.md](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).

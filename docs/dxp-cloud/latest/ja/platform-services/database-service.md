@@ -9,5 +9,5 @@ database-service/changing-your-database-password.md
 ```
 
 - [Database Service](./database-service/database-service.md)
-- [Changing Your Database Username](./database-service/changing-your-database-username.md)
-- [Changing Your Database Password](./database-service/changing-your-database-password.md)
+- [データベースのユーザー名の変更](./database-service/changing-your-database-username.md)
+- [データベースパスワードの変更](./database-service/changing-your-database-password.md)

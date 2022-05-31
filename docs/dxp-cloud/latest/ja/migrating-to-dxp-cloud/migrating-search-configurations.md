@@ -6,10 +6,10 @@ Webサーバーの構成がDXP Cloudに展開されたので、次の移行段�
 
 オンプレミス環境でElasticsearchを使用していない場合は、Elasticsearchに移行してから進めてください。
 
-Elasticsearchへの移行は、インストールしてからLiferayのインストールと接続することになります。 詳しくは、 [Elasticsearch入門](https://learn.liferay.com/dxp/latest/en/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.html) をご覧ください。
+Elasticsearchへの移行は、インストールしてからLiferayのインストールと接続することになります。 詳しくは、 [Elasticsearch入門](https://learn.liferay.com/dxp/latest/ja/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.html) をご覧ください。
 
 ```{tip}
-Elasticsearchへの移行についてお困りの方は、[DXPクラウドサポート](https://help.liferay.com/hc/en-us)までご連絡ください。
+Elasticsearchへの移行についてお困りの方は、 [DXPクラウドサポート](https://help.liferay.com/hc/en-us) までご連絡ください。
 ```
 
 ## 設定とシェルスクリプトを整理する
@@ -101,7 +101,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 1. DXP Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、[アクション]メニューから *Deploy build to*をクリックします。
+1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
 
     ![ビルドのActionsメニューでデプロイします。](./migrating-search-configurations/images/02.png)
 
@@ -111,7 +111,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
     ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./migrating-search-configurations/images/03.png)
 
-1. *Deploy Build*をクリックします。
+1. **Deploy Build** をクリックします。
 
 ビルドは選択した環境にデプロイされ、 `search` サービスが再起動すると、選択した環境にElasticsearchの設定、シェルスクリプト、プラグインが適用されます。
 

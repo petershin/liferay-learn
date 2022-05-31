@@ -23,7 +23,7 @@ LCP_CI_ARTIFACT_NUM_TO_KEEP` 変数で許可されている以上のビルドで
 
 以下の手順で、Jenkinsステージを再起動します。
 
-1. プロジェクトのCIサービスのページ（例： `ci-<project>-infra.lfr.cloud`）にアクセスし、 *Open Blue Ocean* プラグインをクリックして、プロジェクトのパイプラインを表示します。
+1. プロジェクトのCIサービスのページ（例： `ci-<project>-infra.lfr.cloud`）にアクセスし、 **Open Blue Ocean** プラグインをクリックして、プロジェクトのパイプラインを表示します。
 
    ```{note}
    パイプラインのステージは、Jenkinsの標準コンソールで再起動することができますが、Open Blue Oceanプラグインは、パイプラインのステージを表示または管理する際に、より明確で直感的なユーザーエクスペリエンスを提供します。
@@ -35,7 +35,7 @@ LCP_CI_ARTIFACT_NUM_TO_KEEP` 変数で許可されている以上のビルドで
 
    ![再開したいステージのあるビルドをクリックします。](./restarting-jenkins-stages/images/03.png)
 
-1. 目的のステージを選択し、 *再起動*をクリックします。
+1. 目的のステージを選択し、 **再起動** をクリックします。
 
    ![目的のステージを選択し、「Restart」をクリックします。](./restarting-jenkins-stages/images/04.png)
 

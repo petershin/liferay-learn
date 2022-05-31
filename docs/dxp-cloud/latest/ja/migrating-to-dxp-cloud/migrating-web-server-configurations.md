@@ -7,7 +7,7 @@ Liferayの設定とカスタマイズがDXP Cloudに展開されたので、次�
 DXPクラウドは、WebサーバーとしてNginxのみをサポートしています。 まだ Nginx を使用していない場合は、まず Web サーバと設定を Nginx に移行してください。 詳しくは、 [Nginxサイト](http://nginx.org/en/docs/beginners_guide.html) をご覧ください。
 
 ```{tip}
-Nginxへの移行についてお困りの方は、[DXPクラウドサポート](https://help.liferay.com/hc/en-us)までお問い合わせください。
+Nginxへの移行についてお困りの方は、 [DXPクラウドサポート](https://help.liferay.com/hc/en-us) までお問い合わせください。
 ```
 
 ## Nginxの設定を整理する
@@ -18,7 +18,7 @@ Nginxへの移行についてお困りの方は、[DXPクラウドサポート](
 特定のNginxの設定を整理する必要がない場合は、このステップをスキップしてください。
 ```
 
-先に [クローンしたプロジェクトリポジトリで](./matching-dxp-versions.md#clone-the-dxp-cloud-repository)、 `webserver/configs/{ENV}` フォルダ（DXP Cloud 環境に対応）に移動して、Nginx 設定ファイルをすべて、このパターンに従って該当環境フォルダに配置します。
+先に [クローンしたプロジェクトリポジトリで](./matching-dxp-versions.md#clone-the-dxp-cloud-repository) 、 `webserver/configs/{ENV}` フォルダ（DXP Cloud 環境に対応）に移動して、Nginx 設定ファイルをすべて、このパターンに従って該当環境フォルダに配置します。
 
 * Nginxの設定ファイル（`.conf`）を `webserver/configs/{ENV}/conf.d/`に配置する。
 * `var/www/html/` ディレクトリのオーバーライドを `webserver/configs/{ENV}/public/`に配置します。
@@ -80,7 +80,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 1. DXP Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、[アクション]メニューから *Deploy build to*をクリックします。
+1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
 
     ![ビルドのActionsメニューでデプロイします。](./migrating-web-server-configurations/images/01.png)
 
@@ -90,7 +90,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
     ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./migrating-web-server-configurations/images/02.png)
 
-1. *Deploy Build*をクリックします。
+1. **Deploy Build** をクリックします。
 
 ビルドは選択した環境にデプロイされ、 `Web サーバ` サービスが再起動すると、選択した環境に Nginx の設定やカスタマイズが適用されます。
 

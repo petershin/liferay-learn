@@ -3,7 +3,7 @@
 Liferay DXPのインストールを定期的に更新することは、DXP Cloud環境を維持するための重要な要素です。 [Liferay DXP Docker Hubページの](https://hub.docker.com/r/liferay/dxp/tags) にある利用可能なタグを使用して、サービスの更新とデプロイを行います。
 
 ```{note}
-新しいメジャーバージョン（Liferay DXP 7.3など）へのアップグレードは、小さいバージョンのアップデートとは異なる手順が必要です。 詳細は、[Upgrading Your Liferay DXP Instance](./upgrading-your-liferay-dxp-instance.md) を参照してください。
+新しいメジャーバージョン（Liferay DXP 7.3など）へのアップグレードは、小さいバージョンのアップデートとは異なる手順が必要です。 詳細は、 [Liferay DXPインスタンスのアップグレード](./upgrading-your-liferay-dxp-instance.md) を参照してください。
 ```
 
 ```{note}
@@ -16,7 +16,7 @@ Liferay DXPのインストールを定期的に更新することは、DXP Cloud
 
 1. DXPクラウドのコンソールで、目的の環境のLiferayサービスをクリックします。
 
-1. *［環境変数］* タブをクリックします。
+1. ［**環境変数**］ タブをクリックします。
 
 1. `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 変数の値を `true`にしてリストに追加します。
 
@@ -34,7 +34,7 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
 
 以下の手順で、プロジェクトリポジトリの変更点を更新およびデプロイします。
 
-1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags)で、アップデートするLiferayのバージョンのタグを見つけます。
+1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags) で、アップデートするLiferayのバージョンのタグを見つけます。
 
 1. リポジトリで、 `liferay.workspace.docker.image.liferay` のプロパティの値を、 [`liferay/gradle.properties`](./introduction-to-the-liferay-dxp-service.md#choosing-a-version) の新しいバージョンのタグに変更します：
 
@@ -50,14 +50,11 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
     }
     ```
 
-1. 目的の環境の`liferay`サービスに[変更をデプロイします](./deploying-to-the-liferay-service.md)。
+1. 目的の環境の`liferay`サービスに [変更をデプロイします](./deploying-to-the-liferay-service.md)。
 
-1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの「環境変数」ページで
-以前に追加した<1>`LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。</p></li> </ol> 
-   
-   変更をデプロイすると、 `liferay` サービスが再起動し、アップデートを完了するために必要なアップグレード手順を開始します。
-   
-   
+1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの環境変数ページに [以前に追加した](#enabling-module-upgrades-for-dxp) ` LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。
+
+変更をデプロイすると、 `liferay` サービスが再起動し、アップデートを完了するために必要なアップグレード手順を開始します。 
 
 ## クラスタリングが有効になっている新しいサービスパックへの更新
 
@@ -78,7 +75,7 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
 
 1. `liferay` サービスに[変更内容をデプロイします](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)。
 
-1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags)で、アップデートするLiferayのバージョンのタグを見つけます。
+1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags) で、アップデートするLiferayのバージョンのタグを見つけます。
 
 1. `liferay/gradle.properties`の`liferay.workspace.docker.image.liferay`のプロパティの値を、新しいバージョンのタグに変更します： 
    

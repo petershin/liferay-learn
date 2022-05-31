@@ -10,7 +10,7 @@
 
 これらの値を求めるには、パッチングツールを使用します。
 
-1. こちらの [の指示に従い、](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) パッチツールを移行したいインストール先にインストールします。
+1. こちらの [の指示に従い、](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) パッチツールを移行したいインストール先にインストールします。
 
 1. 任意のコマンドラインツールでパッチングツールフォルダーに移動します。
 
@@ -32,7 +32,7 @@
 
 ## DXPクラウドリポジトリのクローン
 
-DXPクラウドでは、プロジェクトと一緒に [GitHub](https://github.com/) にリポジトリを提供しています。 各サービスの [LCP.json ファイル](../reference/configuration-via-lcp-json.html)など、プロジェクト内のいくつかのファイルに設定を行うには、リポジトリのクローンをローカルに用意する必要があります。
+DXPクラウドでは、プロジェクトと一緒に [GitHub](https://github.com/) にリポジトリを提供しています。 各サービスの [LCP.json ファイル](../reference/configuration-via-lcp-json.html) など、プロジェクト内のいくつかのファイルに設定を行うには、リポジトリのクローンをローカルに用意する必要があります。
 
 まだリポジトリをクローンしていない場合は、 [Git がインストールされているターミナルで](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) ローカルにリポジトリをクローンしてください。
 
@@ -42,11 +42,11 @@ git clone https://github.com/dxpcloud/acme
 
 ## リポジトリ内の Liferay DXP イメージを更新する
 
-次に、以前 [クローンした](#clone-the-dxp-cloud-repository)リポジトリ内のLiferay DXPイメージを更新します。 このため、Liferayインストールのバージョン情報と互換性のあるDockerイメージを見つける必要があります。
+次に、以前 [クローンした](#clone-the-dxp-cloud-repository) リポジトリ内のLiferay DXPイメージを更新します。 このため、Liferayインストールのバージョン情報と互換性のあるDockerイメージを見つける必要があります。
 
 1. Docker Hub の [Liferay DXP images](https://hub.docker.com/r/liferay/dxp/tags) ページに移動します。
 
-1. *フィルタータグ* フィールドを使用して、以前に見つけたメジャーバージョンとフィックスパック番号 [を使用してイメージのリストをフィルター処理し](#find-liferay-version-information) （たとえば、フォーム `7.2.10-dxp-5`）。 このDockerイメージ名をコピーしてください。
+1. **フィルタータグ** フィールドを使用して、以前に見つけたメジャーバージョンとフィックスパック番号 [を使用してイメージのリストをフィルター処理し](#find-liferay-version-information) （たとえば、フォーム `7.2.10-dxp-5`）。 このDockerイメージ名をコピーしてください。
 
     ![Filter Tagsフィールドを使用して、Liferay DXPイメージのリストをお探しのメジャーバージョンに絞り込みます。](./matching-dxp-versions/images/02.png)
 
@@ -70,13 +70,13 @@ git clone https://github.com/dxpcloud/acme
 
 次に、リポジトリ内のLiferayサービスの `LCP.json` ファイルにあるLiferayサービスのイメージを更新します。 このため、Liferayのインストールバージョンと互換性のある最新のDockerイメージを見つける必要があります。
 
-1. DXP Cloudの [Services Changelog](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) のページに移動します。
+1. DXP Cloudの [Services Changelog](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) のページに移動します。
 
 1. リストの一番上にある最新のサービス更新をクリックします。
 
     ![最新のサービス更新のリンクをクリックし、環境が最新であることを確認します。](./matching-dxp-versions/images/03.png)
 
-1. ページに記載されている **Liferay** サービス画像を探します。 オンプレミスのLiferayインストールの *メジャーバージョン* に一致するイメージ名をコピーしてください。
+1. ページに記載されている **Liferay** サービス画像を探します。 オンプレミスのLiferayインストールの **メジャーバージョン** に一致するイメージ名をコピーしてください。
 
     ![表示された Liferay サービスイメージの中から、お使いの Liferay インストールのメジャーバージョンに合うものを選びます。](./matching-dxp-versions/images/04.png)
 
@@ -147,7 +147,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 1. DXP Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、[アクション]メニューから *Deploy build to*をクリックします。
+1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
 
     ![ビルドのActionsメニューでデプロイします。](./matching-dxp-versions/images/06.png)
 
@@ -157,7 +157,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
     ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./matching-dxp-versions/images/07.png)
 
-1. *Deploy Build*をクリックします。
+1. **Deploy Build** をクリックします。
 
 ビルドは選択した環境にデプロイされ、サービス起動時に正しいバージョンが適用されます。
 

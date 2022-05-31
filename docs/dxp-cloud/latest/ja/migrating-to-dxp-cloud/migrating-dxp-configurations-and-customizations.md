@@ -7,10 +7,10 @@
 まず、移行したいオンプレミスインストールのLiferayの設定ファイルを整理します。 これには、使用している [ポータルプロパティファイル](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) が含まれます。
 
 ```{tip}
-Liferay 固有のコードは `liferay` フォルダに属し、[Liferay DXP workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html) のように構成されています。
+Liferay 固有のコードは `liferay` フォルダに属し、 [Liferay DXP workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html) のように構成されています。
 ```
 
-[クローンしたDXP Cloudプロジェクトリポジトリで](./matching-dxp-versions.md#clone-the-dxp-cloud-repository)、 `liferay/configs/{ENV}/` フォルダ（DXP Cloud環境に相当）に移動してください。 そしてLiferayの [ポータルのプロパティ](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) ファイルを全て置きます（例.g., `portal-ext.properties`) をそれぞれの環境フォルダに入れます。
+[クローンしたDXP Cloudプロジェクトリポジトリで](./matching-dxp-versions.md#clone-the-dxp-cloud-repository) 、 `liferay/configs/{ENV}/` フォルダ（DXP Cloud環境に相当）に移動してください。 そしてLiferayの [ポータルのプロパティ](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) ファイルを全て置きます（例.g., `portal-ext.properties`) をそれぞれの環境フォルダに入れます。
 
 [OSGi 設定](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#osgi-configurations) ファイル (例: `.cfg` または `.config` files) を `osgi /`という適切な環境フォルダ内のサブフォルダに入れてください .
 
@@ -24,19 +24,19 @@ liferay/configs/common/` フォルダに置かれたファイルは、デプロ�
 
 ## OSGiモジュールの整理
 
-もし、オンプレミスのLiferayインストールに使用するカスタムOSGiモジュールがあるなら、すべての [OSGiモジュールのソースコード](https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/overriding-osgi-services.html) を適切な環境の `liferay/modules/{ENV}` フォルダー（同じワークスペースフォルダーの構造で）に置いてください。
+もし、オンプレミスのLiferayインストールに使用するカスタムOSGiモジュールがあるなら、すべての [OSGiモジュールのソースコード](https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/overriding-osgi-services.html) を適切な環境の `liferay/modules/{ENV}` フォルダー（同じワークスペースフォルダーの構造で）に置いてください。
 
 変更がデプロイされると、カスタムモジュールのコードは自動的にコンパイルされ、 `liferay` サービスコンテナの `$LIFERAY_HOME/deploy/` フォルダにデプロイされます。
 
 ## カスタムテーマの整理
 
-次に、すべての [カスタムテーマ](https://learn.liferay.com/dxp/latest/en/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html) のソースコードを適切な環境の `liferay/themes/{ENV}/` フォルダに配置します。
+次に、すべての [カスタムテーマ](https://learn.liferay.com/dxp/latest/ja/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html) のソースコードを適切な環境の `liferay/themes/{ENV}/` フォルダに配置します。
 
 変更がデプロイされると、カスタムテーマは自動的にビルドされ、 `liferay` サービスコンテナの `$LIFERAY_HOME/deploy/` フォルダにデプロイされます。
 
 ## WARファイルの整理
 
-次に、Liferay インストールの [WAR ファイル](https://learn.liferay.com/dxp/latest/en/building-applications/reference/deploying-wars-wab-generator.html) をすべて適切な環境の `liferay/wars/{ENV}/` フォルダに配置します。
+次に、Liferay インストールの [WAR ファイル](https://learn.liferay.com/dxp/latest/ja/building-applications/reference/deploying-wars-wab-generator.html) をすべて適切な環境の `liferay/wars/{ENV}/` フォルダに配置します。
 
 変更がデプロイされると、WARファイルは適切な環境の `サービスの` 内の$LIFERAY_HOME/ deploy/</code> フォルダーに自動的にデプロイされ `。</p>
 
@@ -78,7 +78,7 @@ liferay/configs/common/` フォルダに置かれたファイルは、デプロ�
 
 1. DXP Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、[アクション]メニューから *Deploy build to*をクリックします。
+1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
 
     ![ビルドのActionsメニューでデプロイします。](./creating-data-backup-files/images/01.png)
 
@@ -88,7 +88,7 @@ liferay/configs/common/` フォルダに置かれたファイルは、デプロ�
 
     ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./creating-data-backup-files/images/02.png)
 
-1. *Deploy Build*をクリックします。
+1. **Deploy Build** をクリックします。
 
 ビルドは選択した環境にデプロイされ、 `liferay` サービスが再起動すると、選択した環境にLiferayの設定やカスタマイズが適用されます。
 

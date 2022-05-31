@@ -36,7 +36,7 @@ DXP Cloudサブスクリプションのアップグレードの最初のステ�
 
 High Availabilityサブスクリプションには、 `liferay` サービスとのDynatrace統合を利用するためのアドオンも含まれています。 本番環境でこの機能を利用するには、 `liferay` サービスを設定するための追加の手順を踏む必要があります。
 
-Liferay Cloud チームは、サブスクリプションをアップグレードする際に、この設定に使用する `テナント` 値を提供します。 この `テナント` の値を使って、 [ここに記載されているステップを完了します](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#integrating-dynatrace-with-production-environments).
+Liferay Cloud チームは、サブスクリプションをアップグレードする際に、この設定に使用する `テナント` 値を提供します。 この `テナント` の値を使って、 [ここに記載されているステップを完了します](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#integrating-dynatrace-with-production-environments) .
 
 ## Webサーバーサービスの構成
 
@@ -109,7 +109,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 1. DXP Cloudコンソールで、Buildsページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、[アクション]メニューから *Deploy build to*をクリックします。
+1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
 
     ![ビルドのActionsメニューでデプロイします。](./upgrading-to-a-high-availability-subscription/images/03.png)
 
@@ -119,7 +119,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
     ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./upgrading-to-a-high-availability-subscription/images/04.png)
 
-1. *Deploy Build*をクリックします。
+1. **Deploy Build** をクリックします。
 
 ビルドが環境にデプロイされ、設定した追加インスタンスでサービスが再起動します。
 

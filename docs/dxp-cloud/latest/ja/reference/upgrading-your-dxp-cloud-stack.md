@@ -2,7 +2,7 @@
 
 DXP Cloudバージョン4の新しい構造を使用するようにリポジトリをアップグレードすると、リポジトリ内でLiferayワークスペースを活用し、サービスを最新の状態に保ち、さまざまな新機能や更新された機能を使用できます。
 
-新しいリポジトリ構造へのアップグレードには、 [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip)の使用が含まれます。
+新しいリポジトリ構造へのアップグレードには、 [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) の使用が含まれます。
 
 ## アップグレードの準備
 
@@ -35,7 +35,7 @@ repository
 liferay.workspace.lcp.liferay.image=liferaycloud/liferay-dxp:7.2.10-sp1-fp4-3.0.19
 ```
 
-Dockerイメージ名の末尾にある数字は、使用しているDXP Cloudスタックのバージョンを示しています。 イメージ名が `3.xx` （この例では、liferay-dxp：7.2.10-sp1-fp4-**3.0.19**）で終わっていることを確認します。
+Dockerイメージ名の末尾にある数字は、使用しているDXP Cloudスタックのバージョンを示しています。 イメージ名が `3.xx` （この例では、liferay-dxp：7.2.10-sp1-fp4- **3.0.19**）で終わっていることを確認します。
 
 次に、Gitリポジトリがクリーンなブランチ上にあることを確認します。 アップグレードスクリプトは、以前にコミットされていないファイルをコミットし、 `upgrade-workspace`と呼ばれる新しいブランチをチェックアウトします。
 
@@ -47,7 +47,7 @@ Dockerイメージ名の末尾にある数字は、使用しているDXP Cloud�
 
 アップグレードするには、次の手順を実行します：
 
-1. [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip)をダウンロードし、ローカルのDXP Cloudリポジトリのルートに抽出します：
+1. [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) をダウンロードし、ローカルのDXP Cloudリポジトリのルートに抽出します：
 
     ```bash
     curl -L https://github.com/LiferayCloud/stack-upgrade/archive/release.zip -O
@@ -136,11 +136,11 @@ Dockerイメージ名の末尾にある数字は、使用しているDXP Cloud�
 }
 ```
 
-詳しくは[GitHub](../getting-started/configuring-your-github-repository.md#setting-environment-variables)、 [Bitbucket](../getting-started/configuring-your-bitbucket-repository.md#connecting-bitbucket-to-your-jenkins-service)、 [GitLab](../getting-started/configuring-your-gitlab-repository.md#connecting-gitlab-to-your-jenkins-service) の統合を参照してください。
+詳しくは [GitHub](../getting-started/configuring-your-github-repository.md#setting-environment-variables) 、 [Bitbucket](../getting-started/configuring-your-bitbucket-repository.md#connecting-bitbucket-to-your-jenkins-service) 、 [GitLab](../getting-started/configuring-your-gitlab-repository.md#connecting-gitlab-to-your-jenkins-service) の統合を参照してください。
 
 ### Jenkinsfile設定変数の確認
 
-プロジェクトにデフォルトのJenkinsfileが[必要とされていない](./dxp-cloud-project-changes-in-version-4.md#ci-service-changes)ので、プロジェクトのルートのJenkinsfileもアップグレードした後に除去することができます。 プロジェクトにデフォルトのJenkinsfileを使用する場合は、 `ci` サービス環境変数がこれを反映していることを確認してください：
+プロジェクトにデフォルトのJenkinsfileが [必要とされていない](./dxp-cloud-project-changes-in-version-4.md#ci-service-changes) ので、プロジェクトのルートのJenkinsfileもアップグレードした後に除去することができます。 プロジェクトにデフォルトのJenkinsfileを使用する場合は、 `ci` サービス環境変数がこれを反映していることを確認してください：
 
 ```json
 {

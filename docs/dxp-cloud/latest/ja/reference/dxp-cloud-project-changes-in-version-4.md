@@ -43,7 +43,7 @@ DXP Cloud Stackバージョン4にアップグレードすると、すべての�
 | ライセンス                      | lcp/liferay/license/{ENV}/ です。 | lcp/configs/{ENV}/deploy/。          |
 
 ```{note}
-configs/{ENV}/` ディレクトリ内のファイルは、DXP Cloud の Liferay コンテナ内の `LIFERAY_HOME` ディレクトリにオーバーライドとしてコピーされます。
+`configs/{ENV}/` ディレクトリ内のファイルは、DXP Cloud の Liferay コンテナ内の `LIFERAY_HOME` ディレクトリにオーバーライドとしてコピーされます。
 ```
 
 ホットフィックスを直接リポジトリにコミットするのではなく、Liferayサービスのデプロイ時に自動的に追加される新しいCIサービス環境変数が用意されています。 詳細については、 [Installing Hotfixes with an Environment Variable](#installing-hotfixes-with-an-environment-variable) を参照してください。

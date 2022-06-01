@@ -16,7 +16,7 @@ DXPクラウドの顧客（ ［customer］ログインを使用）には、ビ�
 
 ## デフォルトのJenkinsfileの使用
 
-CIサービスのバージョン `［liferaycloud/jenkins:2.222.1-3.2.0］`からは、オーバーライドされていない場合、デフォルトのJenkinsfileが利用可能です。 デフォルトのJenkinsfileは、[［version 4.x.x servicesを使用］](../reference/understanding-service-stack-versions.md)しているプロジェクトで常に使うことができます。
+CIサービスのバージョン `［liferaycloud/jenkins:2.222.1-3.2.0］`からは、オーバーライドされていない場合、デフォルトのJenkinsfileが利用可能です。 デフォルトのJenkinsfileは、[サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md)しているプロジェクトで常に使うことができます。
 
 デフォルトのJenkinsfileは、それまでJenkinsfileに保存されていたすべてのロジックをカプセル化し、Jenkinsプラグインに移動させます。 つまり、CI構成を必要とせずに、すべてのバグ修正、セキュリティ修正、および改善を適用できます。
 
@@ -24,7 +24,7 @@ CIサービスのバージョン `［liferaycloud/jenkins:2.222.1-3.2.0］`か�
 
 ### デフォルトのJenkinsfileを有効にする
 
-プロジェクトが既に [［version 4.x.x］](../reference/understanding-service-stack-versions.md)にアップデートされている場合、この手順は既に完了しています。 そうでない場合は、以下の手順でデフォルトのJenkinsfileを有効にしてください：
+プロジェクトが既に [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md)にアップデートされている場合、この手順は既に完了しています。 そうでない場合は、以下の手順でデフォルトのJenkinsfileを有効にしてください：
 
 1. CIサービスを`［liferaycloud/jenkins:2.222.1-3.2.0］`.バージョンにアップデートします
 
@@ -117,8 +117,8 @@ util.sendSlackMessage("About to create DXP Cloud build...")
 | `LCP_CI_BUILD_DAYS_TO_KEEP`           | `14`     | ビルドが保存される日数                                                                                                                                                                                                                                                                     |
 | `LCP_CI_BUILD_NUM_TO_KEEP`            | `10`     | 保存されるビルドの数                                                                                                                                                                                                                                                                      |
 | `LCP_CI_BUILD_TIMEOUT_MINUTES`        | `30`     | パイプライン実行のタイムアウト期間を設定します。 その後、Jenkinsがパイプラインを中止します。                                                                                                                                                                                                                              |
-| `LCP_CI_DEPLOY_BRANCH`                |          | [［automatic deployment］](../build-and-deploy/automatically-deploying-ci-service-builds.md)に使用されるブランチ。 この変数が有効なブランチ名に設定されていない場合、自動デプロイは無効になります。                                                                                                                                  |
-| `LCP_CI_DEPLOY_TARGET`                |          | [［automatic deployment］](../build-and-deploy/automatically-deploying-ci-service-builds.md) がデプロイされる環境を設定します。 `［LCP_CI_DEPLOY_BRANCH］` が設定されている場合にのみ使用されます。                                                                                                                      |
+| `LCP_CI_DEPLOY_BRANCH`                |          | [CIサービスのビルドを自動的にデプロイする](../build-and-deploy/automatically-deploying-ci-service-builds.md)に使用されるブランチ。 この変数が有効なブランチ名に設定されていない場合、自動デプロイは無効になります。                                                                                                                                  |
+| `LCP_CI_DEPLOY_TARGET`                |          | [CIサービスのビルドを自動的にデプロイする］](../build-and-deploy/automatically-deploying-ci-service-builds.md) がデプロイされる環境を設定します。 `［LCP_CI_DEPLOY_BRANCH］` が設定されている場合にのみ使用されます。                                                                                                                      |
 | `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}`   |          | Liferayサービスをデプロイする際にCIが自動的に適用するHotfixをカンマ区切りで列挙します。 環境名を`［{ENV}］`（全て大文字で）、または`［COMMON］`に置き換えます。                                                                                                                                                                                 |
 | `LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20`     | **stashes** が保存される最近のビルドの数を設定します。 `LCP_CI_ARTIFACT_NUM_TO_KEEP` 変数で許可されているよりも多くのビルドでStashを保持することはできません。                                                                                                                                                                           |
 | `LCP_CI_SCM_MANAGE_HOOKS`             | `true`   | コードホスティングプラットフォーム（GitHubなど）の [［automatic web hook management］](../getting-started/configuring-your-github-repository.md#personal-access-token-usage) を有効または無効にするオプションです。                                                                                                        |

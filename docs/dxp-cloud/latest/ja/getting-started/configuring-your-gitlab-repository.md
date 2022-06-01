@@ -9,7 +9,7 @@ DXP Cloudオンボーディングメールを受信すると、 `［dxpcloud］`
 
 ## Jenkinsサービスの準備
 
-すでにDXP Cloudのインスタンスで [version 4.x.x services](../reference/understanding-service-stack-versions.md) を使用している場合は、JenkinsサービスはすでにGitLabと互換性があります。 アップグレードの詳細については、 [DXP Cloudスタックのアップグレード](../reference/upgrading-your-dxp-cloud-stack.md) を参照してください。
+すでにDXP Cloudのインスタンスで [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を使用している場合は、JenkinsサービスはすでにGitLabと互換性があります。 アップグレードの詳細については、 [DXP Cloudスタックのアップグレード](../reference/upgrading-your-dxp-cloud-stack.md) を参照してください。
 
 version 3.x.xのサービスを使用している場合は、 `［LCP.json］` で、 `［ci］` サービスを確認し、以下のJenkinsサービス以上のものを実行していることを確認してください：
 

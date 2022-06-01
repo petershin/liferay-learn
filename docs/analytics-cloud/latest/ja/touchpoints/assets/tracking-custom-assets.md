@@ -1,7 +1,7 @@
 # カスタムアセットのトラッキング
 
 ```{note}
-カスタムアセットを追跡するには、[event tracking](../events/tracking-events.md)の使用が推奨されます。
+カスタムアセットを追跡するには、[イベントの追跡](../events/tracking-events.md)の使用が推奨されます。
 ```
 
 Liferay Analytics Cloudは、フォーム、ブログ、ドキュメントとメディア、Webコンテンツなどの組み込みのLiferay DXPアセットを検出して分析することができます。 ただし、カスタムアプリのアセットを解析するには、Analytics Cloud JavaScript プラグインがアセットとユーザーの相互作用を検出して追跡できるように、アプリのHTMLにタグ付けする必要があります。

@@ -37,7 +37,7 @@
 ![図2：アクティビティページから拡張環境のアクティビティを表示。](./team-activities/images/02.png)
 
 ```{note}
-また、プロジェクト環境のすべてのビルドとデプロイメントのアクティビティは、［Builds］および［Deployments］ページで確認できます。 これらのページについては、【DXPクラウド導入ワークフローの概要】(../build-and-deploy/overview-of-dxp-cloud-deployment-workflow.md) を参照してください。
+また、プロジェクト環境のすべてのビルドとデプロイメントのアクティビティは、［Builds］および［Deployments］ページで確認できます。 これらのページについては、 [DXPクラウド導入ワークフローの概要](../build-and-deploy/overview-of-dxp-cloud-deployment-workflow.md) を参照してください。
 ```
 
 ## 追加情報

@@ -74,7 +74,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 ![PATが正常に使用できるように、正しい権限を確認してください。](./configuring-your-github-repository/images/05.png)
 
 ```{note}
-SAMLシングルサインオン認証で組織のアカウントを使用している場合は、アクセストークンを認証するために追加の手順を行う必要があります。 詳しくは [GitHub公式ドキュメント](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use with-saml-single-sign-on) _ をご覧ください。
+SAMLシングルサインオン認証で組織のアカウントを使用している場合は、アクセストークンを認証するために追加の手順を行う必要があります。 詳しくは [GitHub公式ドキュメント](https://docs.github.com/ja/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on) をご覧ください。
 ```
 
 これらの環境変数を更新した後、Jenkinsサービスが再起動します。 これで、新しいリポジトリでプッシュされたブランチとプルリクエストがビルドをトリガーします。
@@ -91,9 +91,9 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 パーソナルアクセストークンが個人のユーザーアカウントに属していて、そのユーザーが組織から削除されている場合、すべてのビルドが完了しません。 代わりに、組織専用のアカウントを使用してください。 詳しくは [GitHubの公式ドキュメント](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access) をご覧ください。
 ```
 
-デフォルトでは、GitHub組織の [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) は、CIサービスがデフォルトのWebフックを使用して正常に統合するために、 `admin:repo_hook` パーミッションも持つ必要がある。
+デフォルトでは、GitHub組織の [個人アクセストークンを使用する](https://docs.github.com/ja/github/authenticating-to-github/creating-a-personal-access-token) は、CIサービスがデフォルトのWebフックを使用して正常に統合するために、 `admin:repo_hook` パーミッションも持つ必要がある。
 
-しかし、[CI service](../platform-services/continuous-integration.md)の`LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md)を`false`に設定することをお勧めします。 これにより、ウェブフックの自動管理が無効になり（リポジトリとの統合設定が終了すると不要になります）、DXP Cloudが使用するパーソナルアクセストークンから（管理者レベルの） `admin:repo_hook` の権限を削除することができます。
+しかし、[CI service](../platform-services/continuous-integration.md)の`LCP_CLI_SCM_MANAGE_HOOKS` [環境変数の定義](../reference/defining-environment-variables.md)を `false` に設定することをお勧めします。 これにより、ウェブフックの自動管理が無効になり（リポジトリとの統合設定が終了すると不要になります）、DXP Cloudが使用するパーソナルアクセストークンから（管理者レベルの） `admin:repo_hook` の権限を削除することができます。
 
 ![ウェブフックの自動管理を無効にすると、個人用アクセストークンからadmin:repo_hookの権限を削除することができます。](./configuring-your-github-repository/images/06.png)
 

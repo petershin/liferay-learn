@@ -84,9 +84,10 @@ git clone https://github.com/dxpcloud/acme
 
 1. `image` フィールドの値を、以前コピーしたDockerイメージ名に設定します。
 
-    たとえば、Liferayサービスイメージ名が `liferaycloud / liferay-`：7.2-4.0.4</code>の場合、これを `に設定します。
-<pre><code>    "image": "liferaycloud/liferay-dxp:7.2-4.0.4"
-`</pre>
+    たとえば、Liferayサービスイメージ名が `liferaycloud/liferay-dxp：7.2-4.0.4` の場合、これをに設定します。  
+ ```
+ "image": "liferaycloud/liferay-dxp:7.2-4.0.4"
+ ```
 
 これにより、あなたのLiferayサービスは、あなたのLiferay DXPのバージョンと互換性のある最新のバージョンを使用することが保証されます。
 
@@ -94,12 +95,11 @@ git clone https://github.com/dxpcloud/acme
 
 また、オンプレミスでインストールした [パッチのホットフィックス情報](#find-liferay-version-information) をCIサービスの `LCP.json` ファイルへ追加する必要があります。
 
-1. インストールされているパッチのリストを確認するには、 `$LIFERAY_HOME/patching`</code> フォルダーから `コマンドを再度実行します。</p>
+1. ンストールされているパッチのリストを確認するには、 `$LIFERAY_HOME/patching-tool` フォルダーから `./patching-tool.sh info` コマンドを再度実行します。
+   
+    ![現在インストールされているパッチから最新のHotfixでLCP.jsonを更新する必要があります。](./matching-dxp-versions/images/05.png)
 
-<p spaces-before="4"><img src="./matching-dxp-versions/images/05.png" alt="現在インストールされているパッチの中から、最新のHotfixでLCP.jsonを更新する必要があります。" /></p>
-
-<p spaces-before="4">現在インストールされているHotfix（または「パッチ」）の名前をコピーしてください。 複数のHotfix名が表示された場合は、利用可能な最新のHotfixの名前をコピーします。</p></li>
-<li><p spaces-before="0">リポジトリで、 <code>ci/LCP.json` ファイルを開いてください。
+1. レポジトリで、`ci/LCP.json`ファイルを開いてください。
 
 1. 先にコピーしたHotfix名を新しい [環境変数として追加します](../reference/defining-environment-variables.md) 名前 `LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON`:
 

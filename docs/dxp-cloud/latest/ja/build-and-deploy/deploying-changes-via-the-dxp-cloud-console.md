@@ -5,7 +5,7 @@
 始めるためには、プロジェクトのCIサービスと統合されたコードホスティングサービスと、プロジェクトのリポジトリのローカルな作業コピーが必要です。
 
 ```{note}
-別のデプロイメントワークフローについては、[CLIツールによる変更のデプロイ](./deploying-changes-via-the-cli-tool.md)_を参照して、Liferay Cloud Platform CLIツールを使用してプロジェクト環境にローカルな変更をデプロイする方法について学んでください。
+別のデプロイメントワークフローについては、[CLIツールによる変更のデプロイ](./deploying-changes-via-the-cli-tool.md) を参照して、Liferay Cloud Platform CLIツールを使用してプロジェクト環境にローカルな変更をデプロイする方法について学んでください。
 ```
 
 * [Liferayサービスへのポータル・プロパティの追加](#adding-a-portal-property-to-the-liferay-service)
@@ -32,7 +32,7 @@
    ```
 
    ```{note}
-   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev`となります。 ディレクトリ構造の違いについては［DXP Cloud Project Changes in Version 4］(../reference/dxp-cloud-project-changes-in-version-4.md)_、サービスのバージョンの確認方法については［Understanding Service Stack Versions］（.../reference/Understanding-service-stack-versions.md）_をご参照ください。
+   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev`となります。 ディレクトリ構造の違いについては［バージョン4におけるDXP Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md)_、サービスのバージョンの確認方法については［サービススタックのバージョンについて](.../reference/Understanding-service-stack-versions.md）をご参照ください。
    ```
 
 1. 以下のコマンドで、 `portal-env.properties` ファイルに変更を追加し、コミットします。

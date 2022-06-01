@@ -79,7 +79,7 @@ DXP Cloudコンソールからカスタムドメインを追加すると、す�
 ```
 
 ```{important}
-追加したカスタムドメインごとに特定の環境を定義する必要があり、複数の環境で同じカスタムドメインを使用することはできません（異なる地域の[Disaster Recovery environments](../../troubleshooting/configuring-cross-region-disaster-recovery.md) は除きます）。 これは、DXP Cloudが適切に証明書を生成し、ユーザーを正しいドメインに導くために必要です。
+追加したカスタムドメインごとに特定の環境を定義する必要があり、複数の環境で同じカスタムドメインを使用することはできません（異なる地域の [クロスリージョンディザスタ リカバリの設定](../../troubleshooting/configuring-cross-region-disaster-recovery.md) は除きます）。 これは、DXP Cloudが適切に証明書を生成し、ユーザーを正しいドメインに導くために必要です。
 ```
 
 お客様のサービスにカスタムドメインが追加され、変更がデプロイされると、DXP Cloudがルーティングを行います。

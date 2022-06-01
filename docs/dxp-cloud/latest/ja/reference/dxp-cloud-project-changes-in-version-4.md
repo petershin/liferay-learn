@@ -63,7 +63,7 @@ configs/{ENV}/` ディレクトリ内のファイルは、DXP Cloud の Liferay 
 | Elasticsearchライセンス（.json）ファイル | lcp / search / license /{ENV}/ | search/configs/{ENV}/license/.                |
 
 ```{note}
-search/configs/{ENV}/` のファイルは、DXP Cloud の Search コンテナ内の `usr/shared/elasticsearch/` にオーバーライドとしてコピーされます。 例えば、`search/configs/{ENV}/config/` にある `elasticsearch.yml` などの設定は `usr/shared/elasticsearch/config/` にコピーされて、既存のデフォルトを上書きしてしまいます。
+`search/configs/{ENV}/` のファイルは、DXP Cloud の Search コンテナ内の `usr/shared/elasticsearch/` にオーバーライドとしてコピーされます。 例えば、`search/configs/{ENV}/config/` にある `elasticsearch.yml` などの設定は `usr/shared/elasticsearch/config/` にコピーされて、既存のデフォルトを上書きしてしまいます。
 ```
 
 ### Elasticsearchプラグイン
@@ -108,7 +108,7 @@ bin/elasticsearch-plugin list
 | 静的コンテンツ   | lcp/webserver/deploy/{ENV}/です。   | webserver/configs/{ENV}/public/  |
 
 ```{note}
-webserver/configs/{ENV}/` のファイルは、DXP Cloud の Web サーバコンテナ内の `/etc/nginx/` にオーバーライドとしてコピーされます。 webserver/configs/{ENV}/public/` にあるファイルは、オーバーライドとして `var/www/html/` にコピーされます。
+`webserver/configs/{ENV}/` のファイルは、DXP Cloud の Web サーバコンテナ内の `/etc/nginx/` にオーバーライドとしてコピーされます。 `webserver/configs/{ENV}/public/` にあるファイルは、オーバーライドとして `var/www/html/`  にコピーされます。
 ```
 
 ### Webサーバー設定の上書き

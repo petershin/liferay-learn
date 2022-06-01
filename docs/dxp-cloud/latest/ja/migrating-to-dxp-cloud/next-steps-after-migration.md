@@ -76,4 +76,4 @@ DXPクラウドコンソール</a>を介してサービス
 
 をデプロイすることに加えて、 [の自動デプロイメント](../build-and-deploy/automatically-deploying-ci-service-builds.md) を構成して、開発環境のプロセスを高速化することもできます。 また、 [CIサービスが利用するJenkinsパイプライン](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) を自分のニーズに合わせてカスタマイズすることも可能だ。</p> 
 
-DXP Cloudの導入ワークフローについて詳しくはこちら [overview-of-the-dxp-cloud-deployment-workflow.md](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
+DXP Cloudの導入ワークフローについて詳しくはこちら [DXP Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).

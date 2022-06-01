@@ -99,7 +99,7 @@ LIFERAY_JAVA_OPTS` 変数は、 `-Xms` や `-Xmx` だけでなく、他のフラ
 
 デフォルトでは、オートスケーリングにより、 `Liferay` サービスのインスタンス数を最大10まで増やすことができます。 しかし、必要に応じてこのデフォルトを上書きして、より多くのインスタンスを使用することができます。 サービスで10個以上のデフォルトのインスタンスを使用するには、2箇所でデフォルトを上書きする必要があります：
 
-1. [Web server service](../platform-services/web-server-service.md)の`LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [environment variable](../reference/defining-environment-variables.md)を必要な最高値に設定します。 `Liferay` サービスは、 `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` で定義されているインスタンスの最大数（デフォルトでは10）を超えて拡張することはできません。
+1. [ウェブサーバサービス（Nginx)](../platform-services/web-server-service.md)の `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [環境変数の定義](../reference/defining-environment-variables.md)をウェブサーバサービス（Nginx)必要な最高値に設定します。 `Liferay` サービスは、 `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` で定義されているインスタンスの最大数（デフォルトでは10）を超えて拡張することはできません。
 
 1. `Liferay`サービスの`LCP.json`ファイル内で、デフォルドの１０以上のインスタンスが必要な場合、希望の最大インスタンスを指定します。 `maxInstances` フィールドを [`autoscale` オブジェクト](#specifying-target-average-utilization) 内に設定します。 
    

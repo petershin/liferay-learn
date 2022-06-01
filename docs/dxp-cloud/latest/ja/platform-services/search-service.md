@@ -25,7 +25,7 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 検索サービスの［LCP.json］ファイルには、デフォルトで次の値が含まれています：［"podManagementPolicy":"Parallel"］ この値を［LCP.json］から削除すると、複数のクラスタインスタンスがある場合に検索サービスの起動に失敗することがあります。なぜなら、Elasticsearch のノードが相互に接続しないと正常に起動しないからです。
 ```
 
-環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、設定ファイルをどのフォルダに追加しなければならないかに影響を及ぼします。
+環境の [サービススタックのバージョンについて］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、設定ファイルをどのフォルダに追加しなければならないかに影響を及ぼします。
 
 | **サービススタックバージョン** | **設定フォルダー** |
 |:----------------- |:------------------------------ |
@@ -43,7 +43,7 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
     │           └── elasticsearch.yml
     └── LCP.json
 
-環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにスクリプトを追加しなければならないかに影響を及ぼします：
+環境の [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにスクリプトを追加しなければならないかに影響を及ぼします：
 
 | **サービススタックバージョン** | **スクリプトフォルダ** |
 |:----------------- |:------------------------------- |
@@ -54,7 +54,7 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 ライセンスを検索サービスにデプロイするには、パス `［search/configs/{ENV}/license/］` を作成し、そこにライセンスファイルを配置する必要があります。
 
-環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにライセンスファイルを追加しなければならないかに影響を及ぼします：
+環境の [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにライセンスファイルを追加しなければならないかに影響を及ぼします：
 
 | **サービススタックバージョン** | **ライセンスフォルダ** |
 |:----------------- |:------------------------------- |

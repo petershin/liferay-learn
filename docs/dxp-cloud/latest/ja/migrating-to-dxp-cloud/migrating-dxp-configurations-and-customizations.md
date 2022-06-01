@@ -38,7 +38,7 @@ liferay/configs/common/` フォルダに置かれたファイルは、デプロ�
 
 次に、Liferay インストールの [WAR ファイル](https://learn.liferay.com/dxp/latest/ja/building-applications/reference/deploying-wars-wab-generator.html) をすべて適切な環境の `liferay/wars/{ENV}/` フォルダに配置します。
 
-変更がデプロイされると、WARファイルは適切な環境の `サービスの` 内の$LIFERAY_HOME/ deploy/</code> フォルダーに自動的にデプロイされ `。</p>
+変更がデプロイされると、WARファイルは適切な環境の `サービスの` 内の `$LIFERAY_HOME/ deploy/` フォルダーに自動的にデプロイされ。
 
 <h2 spaces-before="0">ビルドの作成とデプロイ</h2>
 
@@ -53,22 +53,17 @@ liferay/configs/common/` フォルダに置かれたファイルは、デプロ�
 <pre><code class="bash">    git add .
 `</pre></li>
 
-1
-
-変更内容とメッセージを添えてコミットしてください。
+1. 変更内容とメッセージを添えてコミットしてください。
 
     ```bash
     git commit -m "DXP Cloud Migration Stage 4"
     ```
 
-1
-
-変更をGitHubにプッシュします。
+1. 変更をGitHubにプッシュします。
 
     ```bash
     git push origin master
     ```
-</ol>
 
 プロジェクトはGitHubのリポジトリにリンクされているため、変更をプッシュすると自動的にビルドが作成されます。 ビルドが完了するのを待ってから、次に進みます。
 

@@ -18,8 +18,8 @@ manage-and-optimize/team-activities.md
 
 ## 使用状況の管理
 
-- [real-time-alerts.md](./manage-and-optimize/real-time-alerts.md)
-- [quotas.md](./manage-and-optimize/quotas.md)
+- [リアルタイムアラート](./manage-and-optimize/real-time-alerts.md)
+- [割り当て](./manage-and-optimize/quotas.md)
 
 ## アカウントとチームマネジメント
 

@@ -25,7 +25,7 @@ Nginxへの移行についてお困りの方は、 [DXPクラウドサポート]
 * その他のオーバーライド（ `/etc/nginx/` ディレクトリ用）は `webserver/configs/{ENV}/`に入れてください。
 
 ```{tip}
-webserver/configs/common/` フォルダに置かれたファイルは、デプロイされるとすべての環境に適用されます。
+`webserver/configs/common/` フォルダに置かれたファイルは、デプロイされるとすべての環境に適用されます。
 ```
 
 詳しくは、 [Web Server Service Configurations](../platform-services/web-server-service.md#configurations) を参照してください。

@@ -19,7 +19,7 @@ DXPクラウドサポートに連絡せずに次のステップでアップロ�
 ## データベースダンプの作成
 
 ```{note}
-Windows（OS）をお使いの場合、圧縮ファイルのパック/アンパックのコマンドを実行するために、ファイル圧縮ソフトが必要です。 [7-zip]（https://www.7-zip.org/） などのファイル圧縮ソフトをインストールして行ってください。
+Windows（OS）をお使いの場合、圧縮ファイルのパック/アンパックのコマンドを実行するために、ファイル圧縮ソフトが必要です。 [7-zip](https://www.7-zip.org/） などのファイル圧縮ソフトをインストールして行ってください。
 ```
 
 データベースがMySQL形式になったので、データベースサーバーで次のコマンドを実行します。 `#` はそれぞれデータベースユーザーとパスワード、 `lportal` は必要ならデータベース名で置き換えてください。
@@ -47,14 +47,14 @@ mysqldump -u##### -p##### --databases --add-drop-database lportal > database.sql
 ドキュメントライブラリがファイルシステムストアではないファイル保存方法（Amazon S3StoreやDBStoreなど）を使用している場合、先にファイルシステムストアに移行する必要があります。 Simple File System StoreまたはAdvanced File System Storeのいずれかを使用することができます。
 
 ```{tip}
-Advanced File System Store](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/configuring-file-storage.html)では、より簡単に大規模なデータセットに拡張できるフォルダ構造を採用しています。 長期的には、ドキュメントライブラリのより多くのファイルを収容するために、アドバンストファイルシステムストアへの移行をお勧めします。
+[Advanced File System Store](https://learn.liferay.com/dxp/latest/ja/system-administration/file-storage/configuring-file-storage.html)では、より簡単に大規模なデータセットに拡張できるフォルダ構造を採用しています。 長期的には、ドキュメントライブラリのより多くのファイルを収容するために、アドバンストファイルシステムストアへの移行をお勧めします。
 ```
 
 文書ライブラリを移行する手順については、 [ファイルストア移行](https://learn.liferay.com/dxp/latest/ja/system-administration/file-storage/file-store-migration.html) を参照してください。
 
 ### 変更を伴うJenkinsビルドの作成
 
-Liferayのローカルインストールを移行した後、 `portal-ext.properties`に変更してDXP Cloud環境にもビルドを作成し、デプロイする必要があります。 ドキュメントライブラリストアの移行が必要ない場合は、環境に対する変更を展開する必要はありません。
+Liferayのローカルインストールを移行した後、 `portal-ext.properties` に変更してDXP Cloud環境にもビルドを作成し、デプロイする必要があります。 ドキュメントライブラリストアの移行が必要ない場合は、環境に対する変更を展開する必要はありません。
 
 Gitがインストールされている端末でGitコマンドを実行し、変更内容を送信します。
 
@@ -99,7 +99,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 ビルドは選択した環境にデプロイされ、 `portal-ext.properties` への変更は `liferay` サービス再始動の際に適用されます。
 
 ```{important}
-ある環境のバックアップを他の環境にリストアする場合、DXP Cloud上のすべての環境が同じドキュメントライブラリの実装を使用する必要があります(../platform-services/backup-service/restoring-data-from-a-backup.md)。 ビルドをすべての環境に配備して、すべての環境で移行したドキュメントライブラリストアが正しく使用されていることを確認する必要があります。
+[バックアップからデータをリストアする](../platform-services/backup-service/restoring-data-from-a-backup.md) 場合、ある環境のバックアップが動作するように、DXP Cloud上のすべての環境が同じドキュメントライブラリの実装を使用する必要があります。ビルドをすべての環境に配備して、すべての環境で移行したドキュメントライブラリストアが正しく使用されていることを確認する必要があります。
 ```
 
 ## ドキュメントライブラリの圧縮

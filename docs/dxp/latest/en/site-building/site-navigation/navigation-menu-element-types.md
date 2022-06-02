@@ -52,6 +52,12 @@ You can also add a Navigation Menu element with a custom URL, that does not need
 
 ![To add a URL menu element, enter the name and the URL to point to.](./navigation-menu-element-types/images/03.png)
 
+## Liferay Portal 7.4 GA4 and Older
+
+In earlier versions of Liferay Portal 7.4 than GA4, there is also a *Display Page* Navigation Menu element type, which is used for any Display Page added to the menu (for any type of content).
+
+In Liferay 7.4 GA5+ and U1+, the Display Page type is replaced with the content types that use Display Pages: [blogs entries](#blogs-entries), [web content articles](#web-content-articles), [documents](#documents), and [Categories](#categories).
+
 ## Additional Information
 
 * [Using the Navigation Menus Application](./using-the-navigation-menus-application.md)

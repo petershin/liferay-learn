@@ -9,12 +9,12 @@ developer-guide/managing-inventory.md
 developer-guide/order-management.md
 developer-guide/promotions.md
 developer-guide/sales.md
-参考資料 <https://app.swaggerhub.com/search?owner=liferayinc&query=%20commerce>
+Reference Materials <https://app.swaggerhub.com/search?owner=liferayinc&query=%20commerce>
 ```
 
-Welcome to the Liferay Commerce Developer Guide. Our tutorials are meant to quickly demonstrate working examples of custom modules that extend the features of Liferay Commerce. Each tutorial is comprised of the following elements: Building and deploying the sample, a review of the relevant implementation with code samples, and the final implementation of the sample itself. This will show you how to leverage various extension points to add to the base functionality however you see fit.
+Liferay Commerce開発者ガイドへようこそ。 このチュートリアルは、Liferay Commerceの機能を拡張するカスタムモジュールの実用例を迅速に実演することを目的としています。 各チュートリアルは、サンプルのビルドとデプロイ、コードサンプルによる関連実装のレビュー、そしてサンプル自体の最終的な実装の要素で構成されています。 ここでは、さまざまな拡張ポイントを活用して、基本機能に追加する方法を説明します。
 
-You will be able to quickly delve into deploying sample modules for each of the available extension points. You will then be able to walk through the steps to build it yourself with your own customizations.
+用意されている各拡張ポイントのサンプルモジュールをすぐに導入することができるようになります。 これで、独自のカスタマイズを使用して自分で構築する手順を実行できるようになります。
 
 ```{raw} html
 :file: landingpage_template.html

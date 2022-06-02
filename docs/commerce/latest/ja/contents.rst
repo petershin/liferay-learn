@@ -1,5 +1,5 @@
-コンテント
-============
+コンテンツ
+========
 
 .. toctree::
    :glob:
@@ -9,7 +9,7 @@
    installation-and-upgrades.md
    starting-a-store.md
    product-management.md
-   creating-store-content.md
+   creating-store-content.md   
    pricing.md
    users-and-accounts.md
    order-management.md
@@ -18,7 +18,6 @@
    add-ons-and-connectors.md
    developer-guide.md
    get-help.md
-
 
 索引と表
 ==================

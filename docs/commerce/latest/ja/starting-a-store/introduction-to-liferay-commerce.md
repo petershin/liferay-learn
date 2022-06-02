@@ -1,8 +1,6 @@
 # Liferay Commerceの概要
 
-Liferay Commerce へようこそ！  Liferay Commerceは、あらゆるB2B組織の困難で複雑なニーズを満たすためにゼロから構築されたデジタルコマースプラットフォームです。 Liferay DXPのエンタープライズ基盤を使用して、Liferay Commerceは、完全に統合されたWebコンテンツ管理と業界をリードするポータル機能の能力と柔軟性を備えています。 LiferayのDXPの詳細は、この [記事](https://help.liferay.com/hc/en-us/articles/360028818552-Introduction-to-The-Liferay-Distinction) を参照してください。
-
-<a name="overview" />
+Liferay Commerce へようこそ！  Liferay Commerceは、あらゆるB2B組織の困難で複雑なニーズを満たすためにゼロから構築されたデジタルコマースプラットフォームです。 Liferay DXPのエンタープライズ基盤を使用して、Liferay Commerceは、完全に統合されたWebコンテンツ管理と業界をリードするポータル機能の能力と柔軟性を備えています。 LiferayのDXPの詳細は、この [記事](https://help.liferay.com/hc/en-us/articles/360028818552-Introduction-to-The-Liferay-Distinction)を参照してください。
 
 ## 概要
 
@@ -14,35 +12,29 @@ Liferay Commerce へようこそ！  Liferay Commerceは、あらゆるB2B組織
 * [APIと統合](#apis-and-integrations)
 * [次のステップ](#next-steps)
 
-開始する準備は整いましたか？ [ Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md) してLiferay Commerce **を迅速に起動します** 。
-
-<a name="modern-storefront-pages-and-content-management" />
+開始する準備は整いましたか？ [ Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md) してLiferay Commerce _を迅速に起動します_。
 
 ## 最新のストアフロントページとコンテンツ管理
 
-Liferay Commerceには、ストアフロントをセットアップするための幅広いツールが含まれています。 たとえば、新しい検索ツールは商品カタログ専用に設計されていますが、カスタマイズ可能なウィジェットにより、チェックアウトやカートの表示などの一般的なUI要素をページに簡単に追加できます。 [ストアフロントの構築](../creating-store-content/creating-your-storefront.md)についての詳細はこちら。
+Liferay Commerceには、ストアフロントをセットアップするための幅広いツールが含まれています。 たとえば、新しい検索ツールは商品カタログ専用に設計されていますが、カスタマイズ可能なウィジェットを使用すると、CheckoutやView Cartなどの一般的なUI要素をページに簡単に追加できます。 詳しくは、[Building a Storefront](../creating-store-content/creating-your-storefront.md)をご覧ください。
 
 ![Liferay Commerceダッシュボード](./introduction-to-liferay-commerce/images/01.png)
 
-<a name="multi-channel-catalog-and-product-information-management" />
-
 ## マルチチャネルカタログと商品情報管理
 
-Liferay Commerceには、さまざまな 商品タイプ をサポートし、幅広い商品データを格納するカタログ管理システムが含まれています。 [商品オプション](../product-management/creating-and-managing-products/products/using-product-options.md)、 [価格](../pricing/introduction-to-pricing.md)、 [画像](../product-management/creating-and-managing-products/products/product-images.md)、及び [仕様](../product-management/creating-and-managing-products/products/specifications.md) がいくつかの例です。 その後、商品は選択した流通チャネルですぐに利用できます。
+Liferay Commerceには、さまざまな商品タイプをサポートし、さまざまな商品データを保存するカタログ管理システムが含まれています。 [商品オプション](../product-management/creating-and-managing-products/products/using-product-options.md)、 [価格](../pricing/introduction-to-pricing.md)、 [画像](../product-management/creating-and-managing-products/products/product-images.md)、及び [仕様](../product-management/creating-and-managing-products/products/specifications.md) がいくつかの例です。 商品は、選択した流通チャネルですぐに利用できます。
 
 ![商品カタログ](./introduction-to-liferay-commerce/images/02.png)
 
-[チャネル](../store-management/channels/introduction-to-channels.md) は、カタログおよび商品を、商品が販売される任意の場所に接続します。LiferayCommerceベースのストアフロント、サードパーティのマーケットプレイス、またはバックオフィスの電話販売です。
+[チャネル](../store-management/channels/introduction-to-channels.md) は、カタログおよび商品を、商品が販売される任意の場所に接続します。Liferay Commerceベースのストアフロント、サードパーティのマーケットプレイス、またはバックオフィスの電話販売です。
 
 ![商品に対して有効なチャネル](./introduction-to-liferay-commerce/images/03.png)
 
-[カテゴリー](../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md) および [商品の関係](../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md) 店舗のナビゲーションを簡素化し、収益を生み出す機会を増やします。
+[カテゴリー](../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)と[商品の関係](../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)により、店舗のナビゲーションが簡素化され、収益を生み出す機会が増えます。
 
 ![商品詳細と関連商品](./introduction-to-liferay-commerce/images/04.png)
 
 [価格表](../pricing/creating-a-price-list.md) と [段階的価格設定](../pricing/using-price-tiers.md) を使用することにより、商品の価格設定を柔軟に管理できます。これらはすべて、固有の顧客のニーズに合わせて調整できます。
-
-<a name="b2b-focused-account-management-and-purchasing-workflow" />
 
 ## B2Bに焦点を当てたアカウント管理と購入ワークフロー
 
@@ -50,31 +42,23 @@ Liferay Commerceは、B2Bニーズに対応するように設計された機能�
 
 ![ユーザーロールの選択](./introduction-to-liferay-commerce/images/05.png)
 
-<a name="order-management-and-sales" />
-
 ## 注文管理と販売
 
 Liferay Commerceは、買い手と売り手が注文の準備、発注、承認、送信、および実行を可能にする注文管理を提供します。
 
-注文の支払いは、初期設定から利用可能ないくつかの異なる [支払い方法](../store-management/configuring-payment-methods/managing-payment-methods.md)で完了できます。 追加のカスタマイズにより、より多くの決済処理業者との統合を実現できます。
+注文の支払いは、デフォルトで利用可能ないくつかの異なる [支払方法](../store-management/configuring-payment-methods/managing-payment-methods.md)で完了できます。 追加のカスタマイズにより、より多くの決済処理業者との統合を実現できます。
 
 ![支払方法ページ](./introduction-to-liferay-commerce/images/06.png)
 
-注文は、いくつかの異なる[配送方法](../store-management/configuring-shipping-methods/shipping-method-reference.md)を使用することができます： 売り手は [一律料金を課す](../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)ことができ、[配送方法の制限](../store-management/configuring-shipping-methods/applying-shipping-method-restrictions.md)を適用でき、また [フェデックスのような配送業者](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md)と統合することができます。
-
-<a name="ml-powered-recommendations-and-alerts" />
+注文は、いくつかの異なる[配送方法](../store-management/configuring-shipping-methods/shipping-method-reference.md)を使用することができます： 売り手は[一律料金を課す](../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)ことができ、[配送方法の制限](../store-management/configuring-shipping-methods/applying-shipping-method-restrictions.md)を適用でき、また[FedExのような配送業者](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md)と統合することができます。
 
 ## MLを利用した推奨事項とアラート
 
 Liferay Commerceは、機械学習と予測分析を適用して、提案された商品グループ、商品レベルまでの注文予測、スマートロイヤルティスコアアラート、パーソナライズされた商品推奨を可能にします。
 
-<a name="apis-and-integrations" />
-
 ## APIと統合
 
-Mulesoftコネクタ、Talendコンポーネント、またはSalesforce、SAP ERP（**Coming Soon**）、またはMS Dynamics NAV（**Coming Soon**）のビルド済みコネクタを使用して、他のビジネスシステムと統合します。
-
-<a name="next-steps" />
+Mulesoftコネクタ、Talendコンポーネント、またはSalesforce、SAP ERP（_Coming Soon_）、またはMS Dynamics NAV（_Coming Soon_）のビルド済みコネクタを使用して、他のビジネスシステムと統合します。
 
 ## 次のステップ
 

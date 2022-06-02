@@ -2,7 +2,6 @@
 
 ```{toctree}
 :maxdepth: 2
-
 starting-a-store/introduction-to-liferay-commerce.md
 starting-a-store/store-setup-overview.md
 starting-a-store/introduction-to-the-admin-account.md

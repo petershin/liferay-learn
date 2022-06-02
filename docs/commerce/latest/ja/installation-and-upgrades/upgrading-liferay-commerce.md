@@ -2,61 +2,55 @@
 
 Liferay Commerceのエクスペリエンスを向上させるために、Liferayはバグフィックスや新機能を含む定期的な商品アップグレードを提供しています。 ユーザーの皆様におかれましては、定期的に最新版へのアップデートをご検討ください。
 
-<a name="upgrading-to-commerce-40" />
-
 ## Commerce 4.0へのアップグレード
 
 Liferay Commerce 3.0より、CommerceはLiferay DXPにバンドルされています。 Commerce 4.0にアップグレードするには、まずベースとなるLiferay DXPのインストールをDXP 7.4にアップグレードし、検索のインデックスの再構築を行う必要があります。
 
 ```{warning}
-7.4にアップグレードした後は、Commerceの`LPKG`を再度デプロイしないでください。 Commerce 4.0のモジュールは7.4にバンドルされています。  'LPKG'をデプロイすると競合が発生します。
+7.4にアップグレードした後は、Commerceの`LPKG`を再度デプロイ*しない*でください。 Commerce 4.0のモジュールは7.4にバンドルされています。  'LPKG'をデプロイすると競合が発生します。
 ```
 
-DXPのアップグレードプロセスの詳細は、 [Upgrade Overview](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics/upgrade-overview.html) を参照してください。 DXPが7.4にアップグレードされたら、再インデックスを実行してください。
+DXPのアップグレード手順については、[Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html)を参照してください。 DXPが7.4にアップグレードされたら、インデックスの再構築を実行してください。
 
 ### Liferay Commerce 4.0にアップグレードするための前提条件
 
-`CommerceCountry`テーブルはLiferay Commerce 4.0では廃止予定であるため、`Country`テーブルに置き換えられています。 `CommerceCountry`テーブルでは、国名だけが必要でしたが、Countryテーブルでは、国名とアルファ2(a2)、アルファ3(a3)のコードが必要です。
+`CommerceCountry`テーブルはLiferay Commerce 4.0では廃止予定であるため、`Country`テーブルに置き換えられています。 `CommerceCountry`テーブルでは、国名だけが必要でしたが、Countryテーブルでは、国名と各国のアルファ2(a2)、アルファ3(a3)のコードが必要です。
 
-`CommerceCountry`テーブルは、Minium Acceleratorを使用している場合や、独自の値を使用している場合に入力されることがあります。 Minium Acceleratorを使用していない場合、このテーブルは空の状態で結構です。 Liferay DXP 7.4にアップグレードする前に、前提条件として、 `CommerceCountry`テーブル内の各国にISOコードがあらかじめ入力されていることを確認する必要があります。 詳細は、 [Country Codes](https://www.iso.org/obp/ui/#search/code) を参照してください。
+`CommerceCountry`テーブルは、Minium Acceleratorを使用している場合や、独自の値を使用している場合に入力されることがあります。 Minium Acceleratorを使用していない場合、このテーブルは空の状態です。 Liferay DXP 7.4にアップグレードする前の前提条件として、 `CommerceCountry`テーブル内の各国にISOコードがあらかじめ入力されていることを確認する必要があります。 詳細は、 [Country Codes](https://www.iso.org/obp/ui/#search/code)を参照してください。
 
 ![CommerceCountryテーブルは、Countryテーブルよりも多くのフィールドを持っています。](./upgrading-liferay-commerce/images/01.png)
 
 ### アップグレード後のインデックスの再構築の実行
 
-DXP 7.4にアップグレードした後、フルサーチの再インデックスを実行します。
+DXP 7.4にアップグレードした後、フルサーチのインデックスの再構築をを実行します。
 
-1. ［**グローバルメニュー**］を開き、［**コントロールパネル**］&rarr; ［**検索機能**］にいきます。
+1. _グローバルメニュー_を開き、_［Control Panel ］_&rarr; _［Search］_にいきます。
 
-   ![コントロールパネルタブの検索に進みます。](./upgrading-liferay-commerce/images/02.png)
+   ![［コントロールパネル］タブの［検索］に進みます。](./upgrading-liferay-commerce/images/02.png)
 
-1. ［**アクションをインデックスする**］タブで、［**すべてインデックスを再構築**］の［**実行**］をクリックします。
+1. _［アクションをインデックスする］_タブで、_［すべてインデックスを再構築］_の_［実行］_をクリックします。
 
-インデックスの再構築が完了したら、グローバルメニューの [**Commerce** &]rarr; [_Product_] に移動して、すべての商品が表示されていることを確認してください。
-
-<a name="upgrading-to-commerce-30-from-21-and-below" />
+インデックスの再構築が完了したら、グローバルメニューの _［コマース］_ &rarr; _［製品］_に移動して、すべての商品が表示されていることを確認してください。
 
 ## 2.1以下のバージョンからCommerce 3.0へのアップグレード
 
 Commerce 3.0にアップグレードするには、まずベースとなるLiferay DXPのインストールをDXP 7.3にアップグレードし、検索のインデックスの再構築を実行する必要があります。
 
 ```{warning}
-7.3にアップグレードした後は、Commerceの`LPKG`を再度デプロイしないでください。 Commerce 3.0のモジュールは7.3にバンドルされています。  'LPKG'をデプロイすると競合が発生します。
+7.3にアップグレードした後は、Commerceの`LPKG`を再度デプロイ*しない*でください。 Commerce 3.0のモジュールは7.3にバンドルされています。  'LPKG'をデプロイすると競合が発生します。
 ```
 
 ### アップグレード後のインデックスの再構築の実行
 
 DXP 7.3にアップグレードした後、フルサーチのインデックスの再構築を実行します。
 
-1. ［**グローバルメニュー**］を開き、［**コントロールパネル**］&rarr; ［**検索機能**］にいきます。
+1. _グローバルメニュー_を開き、_［Control Panel］_&rarr; _［Search］_にいきます。
 
-   ![コントロールパネルタブの検索に進みます。](./upgrading-liferay-commerce/images/02.png)
+   ![［コントロールパネル］タブの［検索］に進みます。](./upgrading-liferay-commerce/images/02.png)
 
-1. ［**アクションをインデックスする**］タブで、［**すべてインデックスを再構築**］の［**実行**］をクリックします。
+1. _［アクションをインデックスする］_タブで、_［すべてインデックスを再構築］_の_［実行］_をクリックします。
 
-インデックスの再構築が完了したら、グローバルメニューの [**Commerce** &]rarr; [_Product_] に移動して、すべての商品が表示されていることを確認してください。
-
-<a name="upgrading-to-commerce-21x" />
+インデックスの再構築が完了したら、グローバルメニューの _［Commerce］_ &rarr; _［Product］_に移動して、すべての商品が表示されていることを確認してください。
 
 ## Commerce 2.1.xへのアップグレード
 
@@ -66,15 +60,15 @@ Liferay Commerceでは、バージョン1.1.x、2.0.xのどちらからでも、
 1.1.xから2.1.xへのアップグレードでは、2.0.xへの増分アップグレードは**必要ありません**。
 ```
 
-Commerce 2.1.xにアップグレードする前に、まずLiferay DXP 7.2の最新のフィックスパックを実行している必要があります。 たとえば、Liferay Commerce Enterprise 2.0.6にアップグレードする場合は、Liferay DXPをフィックスパック14にアップグレードする必要があります。 DXP 7.2へのアップグレードについては、 [アップグレードの概要](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics/upgrade-overview.html) を参照してください。
+Commerce 2.1.xにアップグレードする前に、まずLiferay DXP 7.2の最新のフィックスパックを実行している必要があります。 たとえば、Liferay Commerce Enterprise 2.0.6にアップグレードする場合は、Liferay DXPをフィックスパック14にアップグレードする必要があります。 DXP 7.2へのアップグレードについては、[Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html)を参照してください。
 
 ### 最新のフィックスパックを適用する
 
-> 変更通知を受け取り（購読）が必要
+> サブスクリプションが必要です。
 
-Liferayは最新のフィックスパックリリースを [ヘルプセンター](https://customer.liferay.com/downloads) からダウンロードできるように提供しています。 ダウンロードが完了したら、 [Liferayパッチツール](https://help.liferay.com/hc/articles/360018176551-Using-the-Patching-Tool) を使ってフィックスパックを適用することができます。 詳細は、 [Installing Patches](https://help.liferay.com/hc/en-us/articles/360028810512-Installing-Patches) を参照してください。
+Liferayは最新のフィックスパックリリースを[ヘルプセンター](https://customer.liferay.com/downloads)からダウンロードできるように提供しています。 ダウンロードが完了したら、[Liferayパッチングツール](https://help.liferay.com/hc/articles/360018176551-Using-the-Patching-Tool)を使ってフィックスパックを適用することができます。 詳細は、[Installing Patches](https://help.liferay.com/hc/en-us/articles/360028810512-Installing-Patches)を参照してください。
 
-Liferay DXPを [手動でインストールした場合](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually-) （WebLogicなどで）は、 [Installing Patches on the Liferay DXP 7.1 WAR](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR) を参照してください。
+Liferay DXPを[手動でインストールした場合](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually-)（WebLogicなどで）は、[Installing Patches on the Liferay DXP 7.1 WAR](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR)を参照してください。
 
 その後、以下の手順に従ってフィックスパックが正常にインストールされたことを確認してください。
 
@@ -98,10 +92,10 @@ DXP 7.2の最新フィックスパックを実行したら、以下の手順に�
 
 1. 最新のLiferay Commerceをダウンロードしてください。
 
-    * Commerce Enterpriseは [ヘルプセンター](https://customer.liferay.com/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118190997& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) から入手できます。
-    * Commerce Communityは、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community) から入手できます。
+    * Commerce Enterpriseは [ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)から入手できます。
+    * Commerce Communityは、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community)から入手できます。
 
-1. `LPKG` を `${liferay.home}/ deploy` フォルダーに展開します。アプリケーションをLiferay DXPに展開する方法の詳細は、 [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps.html) 参照してください。
+1. `LPKG` を`${liferay.home}/ deploy`フォルダーにデプロイします。アプリケーションをLiferay DXPにデプロイする方法の詳細は、 [アプリのインストール](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)参照してください。
 
 1. 以下に示すようなメッセージがアプリケーションサーバーコンソールに表示されることを確認します。
 
@@ -121,21 +115,21 @@ DXP 7.2の最新フィックスパックを実行したら、以下の手順に�
 
 ### 古いデータを消去し、アップグレードプロセスを確認する
 
-1. `${liferay.home}/osgi/state`フォルダを削除します。 OSGiフォルダーの詳細は、 [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps.html) 参照してください。
+1. `${liferay.home}/osgi/state`フォルダを削除します。 OSGiフォルダーの詳細は、 [アプリのインストール](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)参照してください。
 1. アプリケーションサーバーを起動します。
 1. アプリケーションサーバーのコンソールログで次のようなメッセージを探して、アップグレードプロセスが開始されたことを確認します。
 
     ```
-    Upgrading com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupCommerceAccountRelUpgradeProcess
-    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupCommerceAccountRelUpgradeProcess in 24 ms
-    Upgrading com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupRelUpgradeProcess
-    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupRelUpgradeProcess in 8 ms
-    Upgrading com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupUpgradeProcess
-    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupUpgradeProcess in 12 ms
-    Upgrading com.liferay.commerce.account.internal.upgrade.v1 **3** 0.CommerceAccountNameUpgradeProcess
+    Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess
+    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess in 24 ms
+    Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess
+    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess in 8 ms
+    Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupUpgradeProcess
+    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupUpgradeProcess in 12 ms
+    Upgrading com.liferay.commerce.account.internal.upgrade.v1_3_0.CommerceAccountNameUpgradeProcess
     Starting com.liferay.portal.kernel.upgrade.UpgradeProcess#alter
     Completed com.liferay.portal.kernel.upgrade.UpgradeProcess#alter in 40 ms
-    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1 **3** 0.CommerceAccountNameUpgradeProcess in 60 ms
+    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_3_0.CommerceAccountNameUpgradeProcess in 60 ms
     Starting com.liferay.portal.upgrade.internal.index.updater.IndexUpdaterUtil#updateIndexes#Updating database indexes for com.liferay.commerce.account.service
     Dropping stale indexes
     Adding indexes
@@ -153,25 +147,23 @@ DXP 7.2の最新フィックスパックを実行したら、以下の手順に�
 
 Liferay Commerceインスタンスがアップグレードされました。
 
-### アップグレード後のインデックス再作成を実行する
+### アップグレード後のインデックスの再構築を実行する
 
 > Liferay Commerce 2.1以前
 
-最新バージョンにアップグレードした後、フルサーチの再インデックスを実行します。
+最新バージョンにアップグレードした後、フルサーチのインデックスの再構築を実行します。
 
-検索インデックスの再作成を実行するには：
+検索インデックスの再構築を実行するには：
 
-1. [**コントロールパネル**] → [**設定**] → [**検索機能**] に移動します。
-1. ［**全ての検索インデクスの再構築**］の隣にある［**実行**］をクリックします。
-1. インデックスの再作成が完了するまで待ちます。
-1. [**コントロールパネル**] → [_Commerce_] → [**商品**] に移動します。
+1. _［コントロールパネル］_ → _［設定］_ → _［検索機能］_に移動します。
+1. _［全ての検索インデクスの再構築］_の隣にある_［実行］_をクリックします。
+1. インデックスの再構築が完了するまで待ちます。
+1. _［コントロールパネル］_ → _［コマース］_ → _［商品］_に移動します。
 1. すべての商品が再び表示されることを確認します。
 
-インデックスの再作成が完了すると、アップグレードされたLiferay Commerceインスタンスを使用する準備が整います。
-
-<a name="additional-information" />
+インデックスの再構築が完了すると、アップグレードされたLiferay Commerceインスタンスを使用する準備が整います。
 
 ## 追加情報
 
-* [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps.html)
+* [アプリのインストール](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
 * [Liferay Commerce修正プログラム配信方法](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

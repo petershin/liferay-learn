@@ -8,6 +8,7 @@ toc:
 :maxdepth: 2
 
 add-ons-and-connectors/punchout2go.md
+add-ons-and-connectors/salesforce.md
 ```
 
 ```{raw} html

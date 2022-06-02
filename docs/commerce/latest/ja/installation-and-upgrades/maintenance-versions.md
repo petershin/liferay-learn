@@ -2,13 +2,11 @@
 
 フィックスパックは定期的にリリースされ、バグやセキュリティの修正が含まれています。 カスタムコードがデプロイされているインストールにFix Packをインストールする場合は、本番環境にインストールする前に、テスト環境にカスタムコード付きのFix Packをデプロイしてテストすることをお勧めします。
 
-様々なパッチのタイプについては、 [Patching Liferay](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/patching-liferay.html) と [Understanding Patch Types](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/understanding-patch-types.html) を参照してください。
+様々なパッチのタイプについては、[Patching Liferay](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html)と[Understanding Patch Types](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html)を参照してください。
 
-パッチを適用する方法については、 [パッチのインストール](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/installing-patches.html) を参照してください。
+パッチを適用する方法については、[パッチのインストール](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.html)を参照してください。
 
 Liferay Commerce 3.0（オープンソース）のユーザーは、Liferay Portal 7.3の新しいリリースを通じて、同じバグおよびセキュリティアップデートを利用できます。
-
-<a name="updating-liferay-commerce-21-and-below" />
 
 ## Liferay Commerce 2.1以下のアップデートについて
 
@@ -25,9 +23,9 @@ Liferayは、定期的に、オープンソースとエンタープライズの�
 ### ダウンロードとデプロイ
 
 1. 最新のLiferay Commerce `LPKG`をダウンロードします。
-    * エンタープライズの加入者は、最新の`LPKG`を [ヘルプセンター](https://customer.liferay.com/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118190997& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) からダウンロードできます。
-      * 加入者の方は、Liferay Commerceの注文番号またはアクティベーションキーも必要です。 [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391) を参照してください。
-    * 最新のオープンソース`LPKG`は、 [Liferay Commerceのコミュニティサイト](https://commerce.liferay.dev/download) から取得できます。
+    * エンタープライズサブスクライバーは、最新の`LPKG`を[ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)からダウンロードできます。
+      * サブスクライバーは、Liferay Commerceの注文番号またはアクティベーションキーも必要です。 [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)を参照してください。
+    * 最新のオープンソース`LPKG`は、[Liferay Commerceのコミュニティサイト](https://commerce.liferay.dev/download)から取得できます。
 
 1. `LPKG`を`${liferay.home}/deploy`フォルダにデプロイします。
 1. アプリケーションサーバーコンソールに次のメッセージが表示されることを確認します。
@@ -42,21 +40,21 @@ Liferayは、定期的に、オープンソースとエンタープライズの�
 
 ### 古いデータを消去してサーバーを再起動する
 
-1. `${liferay.home}/osgi/state`フォルダを削除します。 > OSGiフォルダの詳細は、 [Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps) を参照してください。
+1. `${liferay.home}/osgi/state`フォルダを削除します。 > OSGiフォルダの詳細は、[Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps)を参照してください。
 1. アプリケーションサーバーを起動します。
 1. アプリケーションサーバーのコンソールログで次のようなメッセージを探して、アップグレードプロセスが開始されたことを確認します。
 
     ```
-    2019-08-13 18:26:26.082 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupCommerceAccountRelUpgradeProcess
-    2019-08-13 18:26:26.106 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupCommerceAccountRelUpgradeProcess in 24 ms
-    2019-08-13 18:26:26.116 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupRelUpgradeProcess
-    2019-08-13 18:26:26.124 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupRelUpgradeProcess in 8 ms
-    2019-08-13 18:26:26.130 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupUpgradeProcess
-    2019-08-13 18:26:26.142 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1 **2** 0.CommerceAccountGroupUpgradeProcess in 12 ms
-    2019-08-13 18:26:26.148 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1 **3** 0.CommerceAccountNameUpgradeProcess
+    2019-08-13 18:26:26.082 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess
+    2019-08-13 18:26:26.106 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess in 24 ms
+    2019-08-13 18:26:26.116 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess
+    2019-08-13 18:26:26.124 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess in 8 ms
+    2019-08-13 18:26:26.130 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupUpgradeProcess
+    2019-08-13 18:26:26.142 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupUpgradeProcess in 12 ms
+    2019-08-13 18:26:26.148 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1_3_0.CommerceAccountNameUpgradeProcess
     2019-08-13 18:26:26.160 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.kernel.upgrade.UpgradeProcess#alter
     2019-08-13 18:26:26.200 INFO  [main][LoggingTimer:43] Completed com.liferay.portal.kernel.upgrade.UpgradeProcess#alter in 40 ms
-    2019-08-13 18:26:26.208 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1 **3** 0.CommerceAccountNameUpgradeProcess in 60 ms
+    2019-08-13 18:26:26.208 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_3_0.CommerceAccountNameUpgradeProcess in 60 ms
     2019-08-13 18:26:26.246 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.upgrade.internal.index.updater.IndexUpdaterUtil#updateIndexes#Updating database indexes for com.liferay.commerce.account.service
     2019-08-13 18:26:26.346 INFO  [main][BaseDB:812] Dropping stale indexes
     2019-08-13 18:26:26.400 INFO  [main][BaseDB:84] Adding indexes
@@ -73,8 +71,6 @@ Liferayは、定期的に、オープンソースとエンタープライズの�
     ```
 
 Liferay Commerceインスタンスが更新されました。 インデックスを再作成する必要はなく、すべてのデータは変更されません。
-
-<a name="additional-information" />
 
 ## 追加情報
 

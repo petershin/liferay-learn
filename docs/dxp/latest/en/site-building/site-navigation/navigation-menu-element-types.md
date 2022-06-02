@@ -20,7 +20,7 @@ You can add a [blog entry](../../content-authoring-and-management/blogs/adding-b
 
 ## Web Content Articles
 
-You can add a [web content article](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md) as an independent menu element that links to the article's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md).If a web content article without a Display Page is added to a Navigation Menu, then it does not have a link, so it is hidden from Users on the menu.
+You can add a [web content article](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md) as an independent menu element that links to the article's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). If a web content article without a Display Page is added to a Navigation Menu, then it does not have a link, so it is hidden from Users on the menu.
 
 ## Documents
 
@@ -28,10 +28,12 @@ You can add a [document](../../content-authoring-and-management/documents-and-me
 
 ## Categories
 
-You can add a [Category](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-categories) as a menu element that links to the Category's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md).
+You can add a [Category](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-categories) as a menu element that links to the Category's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). If a Category without a Display Page is added as a Navigation Menu element, then it does not have a link, so it is hidden from Users on the menu.
+
+From Liferay 7.4 versions U9+ and GA13+, adding a Category also adds all of its Subcategories with their current hierarchy.
 
 ```{note}
-From Liferay DXP 7.4 U9+ and GA13+, adding a Category also adds all of its subcategories in their current hierarchy. However, changes to the Category's subcategories do not automatically reflect in the Navigation Menu's hierarchy. If you want changes to the subcategories to automatically update the Navigation Menu, then you can use a dynamic [Vocabulary](#vocabularies) element instead.
+If a Category added as a Navigation Menu element contains Subcategories, changes to the Subcategories do not automatically reflect in the Navigation Menu's hierarchy. If you want changes to the Subcategories to automatically update the Navigation Menu, then you can use a dynamic [Vocabulary](#vocabularies) element instead.
 ```
 
 ## Vocabularies
@@ -44,7 +46,7 @@ By default, when you add a Vocabulary as a menu element, the menu replaces that 
 
 ![Check Display Name as First Level to make the Vocabulary appear as an element in the Navigation Menu.](./navigation-menu-element-types/images/02.png)
 
-Each top-level Category in the Vocabulary must have a configured Display Page for it to appear in the Navigation Menu. Vocabularies (and Categories with Display Pages) in the menu still display all Subcategories, with or without their own Display Pages. However, Subcategories without Display Pages do not have clickable links and they do not display any of their own Subcategories under them.
+Each top-level Category in the Vocabulary must have a configured Display Page for it to appear in the Navigation Menu. Categories shown in the menu still display all Subcategories, with or without their own Display Pages. However, Subcategories without Display Pages do not have clickable links and they do not display any of their own Subcategories under them.
 
 ## URLs
 

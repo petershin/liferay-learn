@@ -1,6 +1,6 @@
 # Commerce Roles Reference
 
-User roles group permissions necessary for accessing and using Liferay applications and resources. Each role can be scoped to an instance, Site, Organization, Asset Library, or Account. This scope determines which permissions can be assigned to the role. Each permission also has its own scope that determines which applications and resources can be accessed and used. See [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) for more details.
+User roles group permissions necessary for accessing and using Liferay applications and resources. You can scope each role to an instance, Site, Organization, Asset Library, or Account. The scope determines the permissions assigned to the role. Each permission also has its own scope that determines which applications and resources can be accessed and used. See [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) for more details.
 
 Commerce includes four [out-of-the-box roles](#out-of-the-box-roles): Account Administrator, Account Member, Buyer, and Order Manager.
 

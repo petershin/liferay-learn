@@ -111,6 +111,30 @@ public class Main {
 		_fileNames.add(fileName);
 	}
 
+	private Long _getDocumentFolderId(String fileName) throws Exception {
+		Long documentFolderId = 0L;
+
+		String[] parts = fileName.split(
+			Matcher.quoteReplacement(System.getProperty("file.separator")));
+
+		for (String part : parts) {
+			if (part.endsWith(".html") || part.endsWith(".md") ||
+				part.endsWith(".rst") || part.equalsIgnoreCase("..") ||
+				part.equalsIgnoreCase("docs") || part.equalsIgnoreCase("en") ||
+				part.equalsIgnoreCase("ja") || part.equalsIgnoreCase(".") ||
+				part.equalsIgnoreCase("latest")) {
+
+				continue;
+			}
+
+			String dirName = part;
+
+			documentFolderId = _getDocumentFolderId(dirName, documentFolderId);
+		}
+
+		return documentFolderId;
+	}
+
 	private Long _getDocumentFolderId(
 			String dirName, Long parentDocumentFolderId)
 		throws Exception {
@@ -170,6 +194,18 @@ public class Main {
 		_documentFolderIds.put(key, documentFolderId);
 
 		return documentFolderId;
+	}
+
+	private File _getImageFile(String fileName) {
+		File file = new File(fileName);
+
+		if (!file.exists()) {
+			fileName = fileName.replaceAll("/ja/", "/en/");
+
+			file = new File(fileName);
+		}
+
+		return file;
 	}
 
 	private Long _getStructuredContentFolderId(String fileName)
@@ -456,23 +492,25 @@ public class Main {
 		return structuredContent;
 	}
 
-	private void _visit(Image image) {
+	private void _visit(Image image) throws Exception {
+		String fileName =
+			FilenameUtils.getPath(_markdownFile.getPath()) +
+				_toString(image.getUrl());
+
+		File file = _getImageFile(fileName);
+
+		String filePath = file.getPath();
+
+		Long documentFolderId = _getDocumentFolderId(
+			FilenameUtils.getPath(
+				filePath.substring(filePath.indexOf("/"), filePath.length())));
+
 		try {
-			String fileName =
-				FilenameUtils.getPath(_markdownFile.getPath()) +
-					_toString(image.getUrl());
-
-			File file = new File(fileName);
-
 			Document document = _documentResource.postDocumentFolderDocument(
-				_getDocumentFolderId(
-					FilenameUtils.getPath(
-						fileName.substring(
-							fileName.indexOf("/"), fileName.length())),
-					0L),
+				documentFolderId,
 				new Document() {
 					{
-						title = fileName;
+						title = filePath;
 					}
 				},
 				new HashMap<>() {
@@ -484,7 +522,18 @@ public class Main {
 			image.setUrl(_toBasedSequence(document.getContentUrl()));
 		}
 		catch (Exception exception) {
-			throw new RuntimeException(exception);
+
+			// If ja markdown uses en image, above post fails 
+			// because image already exists. 
+
+			Page<Document> page =
+				_documentResource.getDocumentFolderDocumentsPage(
+					documentFolderId, null, null, null,
+					"title eq '" + filePath + "'", null, null);
+
+			Document document = page.fetchFirstItem();
+
+			image.setUrl(_toBasedSequence(document.getContentUrl()));
 		}
 
 		_nodeVisitor.visitChildren(image);
@@ -507,7 +556,17 @@ public class Main {
 
 				@Override
 				public void visit(Image image) {
-					_visit(image);
+					try {
+						_visit(image);
+					}
+					catch (Exception exception) {
+						System.out.println(
+							"Error visiting image: " + exception.getMessage());
+						System.out.println(
+							"Image: " +
+								image.getUrl(
+								).toStringOrNull());
+					}
 				}
 
 			}));

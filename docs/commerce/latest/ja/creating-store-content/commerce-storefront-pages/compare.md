@@ -9,4 +9,4 @@
 ## 追加情報
 
 * [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
-* [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
+* [Creating Pages](https://help.liferay.com/hc/ja/articles/360018171291-Creating-Pages)

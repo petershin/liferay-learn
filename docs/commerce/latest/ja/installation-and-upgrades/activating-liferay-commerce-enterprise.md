@@ -126,7 +126,7 @@ Liferay 7.3 SP1では、Commerceを有効にした後、ユーザーはインス
 
 #### DXP Bundlesへのデプロイ
 
-XMLファイルをDXPインスタンスの [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーしてください。 アクティベーションキーの処理中、Liferayはこのファイルを `${liferay.home}/osgi/modules`フォルダに移動させ、ライセンスファイル(`.li`）`${liferay.home}/data/license`フォルダに生成します。 詳細は、 [Activating Liferay DXP](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html) を参照してください。
+XMLファイルをDXPインスタンスの [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーしてください。 アクティベーションキーの処理中、Liferayはこのファイルを `${liferay.home}/osgi/modules`フォルダに移動させ、ライセンスファイル(`.li`）`${liferay.home}/data/license`フォルダに生成します。 詳細は、 [Liferay DXPのアクティブ化](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html) を参照してください。
 
 #### Dockerコンテナへのデプロイ
 
@@ -134,7 +134,7 @@ XMLファイルをコンテナの`/opt/liferay/deploy`フォルダにコピー�
 
 #### DXP Cloudへのデプロイ
 
-プロジェクトのセントラルGitリポジトリ内の [`liferay/configs/{ENV}/deploy/`](https://learn.liferay.com/dxp-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境のLiferayサービスへのファイルのデプロイに関する詳細は、 [Overview of DXP Cloud Deployment Workflow](https://learn.liferay.com/dxp-cloud/latest/ja/build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.html) を参照してください。
+プロジェクトのセントラルGitリポジトリ内の [`liferay/configs/{ENV}/deploy/`](https://learn.liferay.com/dxp-cloud/latest/ja/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境のLiferayサービスへのファイルのデプロイに関する詳細は、 [Overview of DXP Cloud Deployment Workflow](https://learn.liferay.com/dxp-cloud/latest/ja/build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.html) を参照してください。
 
 ```{important}
 DXPクラウド契約でCommerceを購入した場合、アクティベーションキーはDXPクラウドチームがクラウド基盤で管理しますので、ご自身でキーを管理する必要はありません。 ただし、既存のDXP CloudプロジェクトにCommerceを追加する場合は、自分でライセンスをデプロイする必要があります。
@@ -187,4 +187,4 @@ DXPクラウドチームがDXPとCommerceの両方のライセンスを管理し
 
 * [インストールの概要](./installation-overview.md)
 * [Liferay Commerceのアップグレード](./upgrading-liferay-commerce.md)
-* [プロキシサーバーを介したMarketplaceアプリのアクティブ化](https://help.liferay.com/hc/en-us/articles/360018427391)
+* [プロキシサーバーを介したMarketplaceアプリのアクティブ化](https://help.liferay.com/hc/ja/articles/360018427391)

@@ -5,7 +5,7 @@ Liferay Commerceの最新バージョンは、Dockerイメージとして利用�
 1. Liferay Commerceを入手します
 
     ```{tip}
-    Dockerをお持ちではありませんか？ まずは[Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/) | [Windows](https://docs.docker.com/docker-for-windows/install/) | [OSX](https://docs.docker.com/docker-for-mac/install/)に移動してください。
+    Dockerをお持ちではありませんか？ まずは [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/) | [Windows](https://docs.docker.com/docker-for-windows/install/) | [OSX](https://docs.docker.com/docker-for-mac/install/) に移動してください。
     ```
 
     ```bash
@@ -28,4 +28,4 @@ Liferay Commerceの最新バージョンは、Dockerイメージとして利用�
 
 状況をチェックする以上のことをしますか？ [インストールの概要](../installation-overview.md)で詳細をご覧ください。
 
-数分でストアを立ち上げて運営したいですか？ [Accelerators](../../starting-a-store/accelerators.md)を参照してください。
+数分でストアを立ち上げて運営したいですか？ [アクセラレータ](../../starting-a-store/accelerators.md) を参照してください。

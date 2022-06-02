@@ -6,18 +6,18 @@ Liferay Commerceは、Liferay DXP上に構築されたデジタルコマース�
 
 インストールをスムーズに行うために、事前に互換性マトリックスと関連するインストール資料を確認してください。
 
-* サポートされているテクノロジーのリストについては、[Liferay DXP 7.3 および Commerce 3.0 互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360049238151) をご覧ください。<!-- * See the \[Liferay DXP 7.3 Deployment Checklist\]() for information about Liferay DXP architecture and performance tuning guidelines. -->## Liferay Commerceから
+* サポートされているテクノロジーのリストについては、[Liferay DXP 7.3 および Commerce 3.0 互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360049238151) をご覧ください。 <!-- * See the \[Liferay DXP 7.3 Deployment Checklist\]() for information about Liferay DXP architecture and performance tuning guidelines. --> ## Liferay Commerceから
 
 Liferay Commerce 3.0は、Liferay Portal 7.3 CE GA6とLiferay DXP 7.3 GA1がバンドルされています。 コミュニティー版には、基本的なバージョンのCommerceがバンドルされており、エンタープライズ版には、フル機能のエンタープライズ Commerceがバンドルされています。 CE版、エンタープライズ版ともに、Dockerイメージやダウンロード可能なバンドルとして提供されています。
 
 | インストール方法                                                                                                                             | 目的                                                                                   |
 |:------------------------------------------------------------------------------------------------------------------------------------ |:------------------------------------------------------------------------------------ |
-| [Dockerイメージ](https://learn.liferay.com/dxp/latest/en/getting-started/starting-with-a-docker-image.html#get-started-with-liferay)     | Dockerイメージから始めるのが最も早くLiferay Commerceを使い始められる方法です。                                   |
-| [バンドル](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html) | Liferay Commerceには、アプリケーションサーバーがあらかじめバンドルされています。 Liferayインストールの実行を開始するための最も一般的な方法です。 |
+| [Dockerイメージ](https://learn.liferay.com/dxp/latest/ja/getting-started/starting-with-a-docker-image.html#get-started-with-liferay)     | Dockerイメージから始めるのが最も早くLiferay Commerceを使い始められる方法です。                                   |
+| [バンドル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html) | Liferay Commerceには、アプリケーションサーバーがあらかじめバンドルされています。 Liferayインストールの実行を開始するための最も一般的な方法です。 |
 
 Liferay Portalのバンドルとイメージには、コマース特有の追加のインストール手順は必要ありません。 コマースの基本機能はアクティベートされており、起動時にすぐに使用することができます。
 
-一方、DXPのインストールでは、基本的なCommerceとエンタープライズCommerceの両方のモジュールがデフォルトで無効化されているため、使用するためには有効にする必要があります。 DXPとCommerceの両方のライセンスがデプロイされ、検証されると、すべてのCommerceモジュールが開始され、すぐに利用できるようになります。よって、サーバーを再起動させる必要はありません。 詳しくは[Activating Liferay Commerce Enterprise](./activating-liferay-commerce-enterprise.md)を参照してください。
+一方、DXPのインストールでは、基本的なCommerceとエンタープライズCommerceの両方のモジュールがデフォルトで無効化されているため、使用するためには有効にする必要があります。 DXPとCommerceの両方のライセンスがデプロイされ、検証されると、すべてのCommerceモジュールが開始され、すぐに利用できるようになります。よって、サーバーを再起動させる必要はありません。 詳しくは [Liferay Commerce Enterpriseのアクティベーション](./activating-liferay-commerce-enterprise.md) を参照してください。
 
 ## Liferay Commerceのメンテナンス
 
@@ -44,7 +44,7 @@ Dockerを使用してLiferay Commerceをインストールします。 詳細は
 
 ### バンドルを使ったインストール
 
-[Liferay Community Downloads](https://commerce.liferay.dev/download) ページのバンドルを使用してLiferay Commerceをインストールします。 詳細は、[Using the Liferay Commerce Tomcat Bundle](./installing-commerce-2.1-and-below/using-the-liferay-commerce-tomcat-bundle.md)を参照してください。
+[Liferay Community Downloads](https://commerce.liferay.dev/download) ページのバンドルを使用してLiferay Commerceをインストールします。 詳細は、 [Liferay Commerce Tomcatバンドルの使用](./installing-commerce-2.1-and-below/using-the-liferay-commerce-tomcat-bundle.md) を参照してください。
 
 ### 既存のLiferay DXPインストールを利用したインストール
 
@@ -53,4 +53,4 @@ Dockerを使用してLiferay Commerceをインストールします。 詳細は
 ## 追加情報
 
 * [Liferay Digital Experience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
-* [プロキシサーバーを介したMarketplaceアプリのアクティブ化](https://help.liferay.com/hc/en-us/articles/360018427391)
+* [プロキシサーバーを介したMarketplaceアプリのアクティブ化](https://help.liferay.com/hc/ja/articles/360018427391)

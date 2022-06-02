@@ -56,4 +56,4 @@ Liferay DXP 7.3以前のバージョンでは、「チャネル設定」の「�
 
 ## 追加情報
 
-- [表示ページを使用したカテゴリー表示](https://learn.liferay.com/dxp/latest/en/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.html)
+- [表示ページを使用したカテゴリー表示](https://learn.liferay.com/dxp/latest/ja/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.html)

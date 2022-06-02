@@ -1,6 +1,6 @@
 # ミニカートウィジェットの使用
 
-Liferay Commerceには、現在のカートステータスの概要をすばやく提供する*ミニカート*ウィジェットが付属しています。
+Liferay Commerceには、現在のカートステータスの概要をすばやく提供する **ミニカート** ウィジェットが付属しています。
 
 ```{important}
 ミニカートウィジェットは、MiniumやSpeedwellなどのアクセラレータにあるカスタムミニカートコンポーネントとは異なります。
@@ -8,9 +8,9 @@ Liferay Commerceには、現在のカートステータスの概要をすばや�
 
 ## ミニカートウィジェットをページに追加する
 
-1. トップメニューから［*Add*］（![Add Widget](../../images/icon-add-widget.png)）ボタンをクリックします。
+1. トップメニューから［**Add**］（![Add Widget](../../images/icon-add-widget.png)）ボタンをクリックします。
 
-1. ［Widgets］セクションで、*ミニカート*ウィジェットを検索します。
+1. ［Widgets］セクションで、 **ミニカート** ウィジェットを検索します。
 
    ![［Widgets］セクションでミニカートウィジェットを検索します。](./using-the-mini-cart-widget/images/01.png)
 

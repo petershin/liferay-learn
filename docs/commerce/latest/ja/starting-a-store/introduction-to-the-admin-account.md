@@ -5,32 +5,32 @@
 ## 管理者ユーザーとしてLiferay Commerceにアクセスする
 
 1. ブラウザで`http://localhost:8080`を開きます。
-1. _［ログイン］_リンクをクリックします。
+1. ［**ログイン**］ リンクをクリックします。
 
     ![サインインリンク](./introduction-to-the-admin-account/images/07.png "サインインリンク")
 
-    > Liferay Commerceバンドルが使用されている場合は、[_セットアップウィザード_](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP-#using-the-setup-wizard)が表示されます 。 画面上の指示に従って、管理者ユーザーを設定します。
+    > Liferay Commerceバンドルが使用されている場合は、[**セットアップウィザード**](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP-#using-the-setup-wizard)が表示されます 。 画面上の指示に従って、管理者ユーザーを設定します。
 
 1. ログインするデフォルトの管理者資格情報を入力します。
 
-    > Liferay Commerceの新規インストールを開始するときに、デフォルトのログイン資格情報を更新することを**強く**推奨します。
+    > Liferay Commerceの新規インストールを開始するときに、デフォルトのログイン資格情報を更新することを **強く** 推奨します。
 
 ## 管理者ユーザーの設定
 
-1. _［ユーザー管理］_ メニューをクリックし、 _［アカウント設定］_に移動します。
+1. ［**ユーザー管理**］ メニューをクリックし、 ［**アカウント設定**］ に移動します。
 
     ![アカウント設定](./introduction-to-the-admin-account/images/06.png "アカウント設定")
 
 ### アカウント情報の変更
 
-1. _［Information］_タブで、必要に応じてユーザー情報を変更または追加します。
+1. ［**Information**］ タブで、必要に応じてユーザー情報を変更または追加します。
 
     ![アカウント情報](./introduction-to-the-admin-account/images/03.png "アカウント情報")
 
 ### ログインパスワードの変更
 
-1. 左側のナビゲーションメニューで_［Password］_ をクリックします。
-1. _［Current Password］_を入力し、_［New Password］_を指定します。
+1. 左側のナビゲーションメニューで ［**Password**］ をクリックします。
+1. ［**Current Password**］ を入力し、 ［**New Password**］ を指定します。
 
     ![パスワード設定](./introduction-to-the-admin-account/images/04.png "パスワード設定")
 
@@ -42,39 +42,39 @@
 
 アカウントからログアウトするには：
 
-1. _ーユーザー管理_ メニューをクリックし、 _［Sign Out］_をクリックします。
+1. **ーユーザー管理** メニューをクリックし、 ［**Sign Out**］ をクリックします。
 
     ![ログアウト](./introduction-to-the-admin-account/images/08.png "ログアウト")
 
 ## Commerce 2.1以前
 
 1. ブラウザで`http://localhost:8080`を開きます。
-1. _［Sign In］_リンクをクリックします。
+1. ［**Sign In**］ リンクをクリックします。
 
     ![サインインリンク](./introduction-to-the-admin-account/images/01.png "サインインリンク")
 
-    > Liferay Commerceバンドルが使用されている場合は、[_セットアップウィザード_](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP-#using-the-setup-wizard)が表示されます 。 画面上の指示に従って、管理者ユーザーを設定します。
+    > Liferay Commerceバンドルが使用されている場合は、[**セットアップウィザード**](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP-#using-the-setup-wizard)が表示されます 。 画面上の指示に従って、管理者ユーザーを設定します。
 
 1. ログインするデフォルトの管理者資格情報を入力します。
 
-    > Liferay Commerceの新規インストールを開始するときに、デフォルトのログイン資格情報を更新することを**強く**推奨します。
+    > Liferay Commerceの新規インストールを開始するときに、デフォルトのログイン資格情報を更新することを **強く** 推奨します。
 
 ### 管理者ユーザーの設定
 
-1. _プロダクトメニュー_を開き、_アカウントメニュー_ -> _［自分のアカウント］_ -> _［Account Settings］_に移動します。
+1. **プロダクトメニュー** を開き、 **アカウントメニュー** -> ［**自分のアカウント**］ -> ［**Account Settings**］ に移動します。
 
     ![アカウント設定](./introduction-to-the-admin-account/images/02.png "アカウント設定")
 
 #### アカウント情報の変更
 
-1. _［Information］_タブで、必要に応じてユーザー情報を変更または追加します。
+1. ［**Information**］ タブで、必要に応じてユーザー情報を変更または追加します。
 
     ![アカウント情報](./introduction-to-the-admin-account/images/03.png "アカウント情報")
 
 #### ログインパスワードの変更
 
-1. _プロダクトメニュー_を開き、_アカウントメニュー_ -> _［自分のアカウント］_ -> _［Account Settings］_ -> _［Password］_に移動します。
-1. _［Current Password］_を入力し、_［New Password］_を指定します。
+1. **プロダクトメニュー** を開き、 **アカウントメニュー** -> ［**自分のアカウント**］ -> ［**Account Settings**］ -> ［**Password**］ に移動します。
+1. ［**Current Password**］ を入力し、 ［**New Password**］ を指定します。
 
     ![パスワード設定](./introduction-to-the-admin-account/images/04.png "パスワード設定")
 
@@ -86,7 +86,7 @@
 
 アカウントからログアウトするには：
 
-1. _プロダクトメニュー_を開き、_アカウントメニュー_ -> _［Sign Out］_に移動します。
+1. **プロダクトメニュー** を開き、 **アカウントメニュー** -> ［**Sign Out**］ に移動します。
 
     ![ログアウト](./introduction-to-the-admin-account/images/05.png "ログアウト")
 

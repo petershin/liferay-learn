@@ -14,15 +14,15 @@ Order Engineは、各注文ステータスに対してチェックを実行し�
 
 ![注文は3つの代替ステータスに移行できます。](./implementing-a-custom-order-status/images/02.png)
 
-1. _On Hold_ - 注文が非最終注文ステータス（Pending、Processing、Shipped）のいずれかにある場合、注文を保留にすることができます。
+1. **On Hold** - 注文が非最終注文ステータス（Pending、Processing、Shipped）のいずれかにある場合、注文を保留にすることができます。
 
-1. _Cancelled_ - 注文が最終以外の注文ステータス（Pending、Processing、Shipped）のいずれかにある場合、注文をキャンセルできます。
+1. **Cancelled** - 注文が最終以外の注文ステータス（Pending、Processing、Shipped）のいずれかにある場合、注文をキャンセルできます。
 
-1. _Partially Shipped_ - 注文に複数のアイテムがあり、一部のアイテムが出荷されていない場合、_Partially Shipped_ステータスに移行します。
+1. **Partially Shipped** - 注文に複数のアイテムがあり、一部のアイテムが出荷されていない場合、 **Partially Shipped** ステータスに移行します。
 
 ![注文フローに新しい注文ステータスを追加できます。](./implementing-a-custom-order-status/images/03.png)
 
-カスタム注文ステータスを追加して、すぐに使用できる注文フローを変更できます。 以下では、*Scheduling* という注文ステータスを追加し、既存の*Pending*ステータスと*Processing*ステータスの間に配置します。 このカスタムステージは、注文が受け付けられる前にスケジュールされるのを待機している注文を表します。 注文のカスタムフィールドは、Schedulingステータスを追跡します。 各注文ステータスとその移行の詳細については、[Commerce Order Engine Overview](./commerce-order-engine-overview.md)を参照してください。
+カスタム注文ステータスを追加して、すぐに使用できる注文フローを変更できます。 以下では、 **Scheduling** という注文ステータスを追加し、既存の **Pending** ステータスと **Processing** ステータスの間に配置します。 このカスタムステージは、注文が受け付けられる前にスケジュールされるのを待機している注文を表します。 注文のカスタムフィールドは、Schedulingステータスを追跡します。 各注文ステータスとその移行の詳細については、 [コマース注文エンジンの概要 (近日公開！)](./commerce-order-engine-overview.md) を参照してください。
 
 ## 注文ステータスのデプロイ
 
@@ -56,27 +56,27 @@ Order Engineは、各注文ステータスに対してチェックを実行し�
     STARTED com.acme.m4v7.impl_1.0.0
     ```
 
-1. 注文のスケジュールを追跡するには、カスタムフィールドを作成する必要があります。 _アプリケーションメニュー_（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、_［コントロールパネル］_→_［カスタムフィールド］_に移動します。
+1. 注文のスケジュールを追跡するには、カスタムフィールドを作成する必要があります。 **アプリケーションメニュー**（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**コントロールパネル**］ → ［**カスタムフィールド**］ に移動します。
 
-1. アイテムの一覧から［コマース注文］を選択し、_追加_（![Add](../../images/icon-add.png)）ボタンをクリックして新しいフィールドを追加します。 使用可能なフィールドから_［ドロップダウン］_オプションを選択し、以下の情報を入力します。 完了したら、_［保存］_をクリックします。
+1. アイテムの一覧から［コマース注文］を選択し、 **追加**（![Add](../../images/icon-add.png)）ボタンをクリックして新しいフィールドを追加します。 使用可能なフィールドから ［**ドロップダウン**］ オプションを選択し、以下の情報を入力します。 完了したら、 ［**保存**］ をクリックします。
 
-   __項目名__：m4v7Scheduling
+**_** 項目名 **_** ：m4v7Scheduling
 
-   __データ型__: Text
+**_** データ型 **_** : Text
 
-   __Values__：Pending、Confirmed（2つの別々の行に）
+**_** Values **_** ：Pending、Confirmed（2つの別々の行に）
 
  ![注文のスケジュールを追跡するには、カスタムフィールドを追加します。](./implementing-a-custom-order-status/images/04.png)
 
 1. ブラウザを開いて`https://localhost:8080`にアクセスし、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）からサイトに移動して注文することにより、注文ステータスの例が追加されたことを確認します。
 
-1. もう一度アプリケーションメニューをクリックし、_［コマース］_ → _［注文］_に移動して、発注した注文を選択します。 新しいステータス_［Scheduling］_と、進行中の新しい注文フローを設定する［Scheduling］というボタンが注文ライフサイクルに表示されます。 新しいカスタムフィールドは、注文の_［カスタムフィールド］_セクションの下にあります。
+1. もう一度アプリケーションメニューをクリックし、 ［**コマース**］ → ［**注文**］ に移動して、発注した注文を選択します。 新しいステータス ［**Scheduling**］ と、進行中の新しい注文フローを設定する［Scheduling］というボタンが注文ライフサイクルに表示されます。 新しいカスタムフィールドは、注文の ［**カスタムフィールド**］ セクションの下にあります。
 
    ![進行中の新しい注文ステータス。](./implementing-a-custom-order-status/images/05.gif)
 
 ## カスタム注文ステータスの仕組み
 
-実装例は3つのステップで実装されます。 最初に、OSGi登録用にクラスに注釈を付ける必要があります。 次に、[`CommerceOrderStatus`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/status/CommerceOrderStatus.java)インターフェイスを確認します。 最後に、カスタムの`CommerceOrderStatus`の実装を終了します。
+実装例は3つのステップで実装されます。 最初に、OSGi登録用にクラスに注釈を付ける必要があります。 次に、 [`CommerceOrderStatus`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/status/CommerceOrderStatus.java) インターフェイスを確認します。 最後に、カスタムの`CommerceOrderStatus`の実装を終了します。
 
 * [OSGi登録用にクラスに注釈を付ける](#annotate-the-class-for-osgi-registration)
 * [`CommerceOrderStatus`インターフェイスを確認する](#review-the-commerceorderstatus-interface)
@@ -96,7 +96,7 @@ Order Engineは、各注文ステータスに対してチェックを実行し�
 Liferay Commerceが注文ステータスレジストリ内の他のステータスと新しいステータスを区別できるように、注文ステータスに個別のキーを提供することが重要です。 すでに使用されているキーを指定すると、既存の関連付けられているステータスが上書きされます。 注文ステータスの優先度によって、注文ライフサイクルでの注文が決まります。 この場合、Pendingステータスの優先度は30で、Processingステータスの優先度は50です。 2つの間にステータスを配置するには、優先度がこれら2つの数値の間にある必要があります（この場合は40）。
 
 ```{note}
-この実装例では、ランダムな整数がキーとして設定され、40が優先度として設定されていますが、コード内で読みやすくするために変数を使用できます。  [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java)の例を参照してください。
+この実装例では、ランダムな整数がキーとして設定され、40が優先度として設定されていますが、コード内で読みやすくするために変数を使用できます。  [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java) の例を参照してください。
 ```
 
 ### CommerceOrderStatusインターフェイスを確認する
@@ -107,7 +107,7 @@ Liferay Commerceが注文ステータスレジストリ内の他のステータ�
 public String getLabel(Locale locale);
 ```
 
-このメソッドは、注文ステータスの名前を返します。 この名前は、UIに表示される名前に対応する言語キーの場合があります。 この場合、文字列_Scheduling_が返されます。
+このメソッドは、注文ステータスの名前を返します。 この名前は、UIに表示される名前に対応する言語キーの場合があります。 この場合、文字列 **Scheduling** が返されます。
 
 ```java
 public int getKey();
@@ -148,7 +148,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
 * [`isTransitionCriteriaMet`メソッドを実装する](#implement-the-istransitioncriteriamet-method)
 * [`doTransition`メソッドを実装する](#implement-the-dotransition-method)
 * [`isComplete`メソッドを実装する](#implement-the-iscomplete-method)
-* [既存の_Processing_ステータスをオーバーライドする](#override-the-existing-processing-status)
+* [既存の **Processing** ステータスをオーバーライドする](#override-the-existing-processing-status)
 * [Processingステータスのビジネスロジックを微調整する](#tweak-the-processing-status-business-logic)
 
 #### isTransitionCriteriaMetメソッドを実装する
@@ -159,7 +159,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
     :lines: 64-75
 ```
 
-注文を_Scheduling_注文ステータスに移行するには、注文が_Pending_ステータスである必要があります。 これは、`commerceOrder`オブジェクトの`getOrderStatus()`メソッドを使用してチェックされます。  このメソッドは、注文が保留中の場合は`true`を返し、それ以外の場合は`false`を返します。
+注文を **Scheduling** 注文ステータスに移行するには、注文が **Pending** ステータスである必要があります。 これは、`commerceOrder`オブジェクトの`getOrderStatus()`メソッドを使用してチェックされます。  このメソッドは、注文が保留中の場合は`true`を返し、それ以外の場合は`false`を返します。
 
 #### doTransitionメソッドを実装する
 
@@ -169,7 +169,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
     :lines: 26-33
 ```
 
-注文の移行基準が満たされると、一意のキーを使用して注文ステータスが*Scheduling*として設定されます。 次に、`_commerceOrderService`から`updateCommerceOrder()`メソッドを呼び出し、`commerceOrder`オブジェクトを渡して新しいステータスを更新します。
+注文の移行基準が満たされると、一意のキーを使用して注文ステータスが **Scheduling** として設定されます。 次に、`_commerceOrderService`から`updateCommerceOrder()`メソッドを呼び出し、`commerceOrder`オブジェクトを渡して新しいステータスを更新します。
 
 #### isCompleteメソッドを実装する
 
@@ -179,7 +179,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
     :lines: 50-62
 ```
 
-Schedulingステージを完了するには、カスタムフィールドを_［Confirmed］_に設定する必要があります。 このカスタム属性は、キー`m4v7Scheduling`を使用して`ExpandoBridge`を介して取得されます。 これはドロップダウンであるため、戻り値はString配列内にあり、最初の値です。 値が_［Confirmed］_の場合、メソッドは`true`を返し、配列が空の場合は`false`を返します。
+Schedulingステージを完了するには、カスタムフィールドを ［**Confirmed**］ に設定する必要があります。 このカスタム属性は、キー`m4v7Scheduling`を使用して`ExpandoBridge`を介して取得されます。 これはドロップダウンであるため、戻り値はString配列内にあり、最初の値です。 値が ［**Confirmed**］ の場合、メソッドは`true`を返し、配列が空の場合は`false`を返します。
 
 #### 既存のProcessingステータスをオーバーライドする
 
@@ -206,4 +206,4 @@ Schedulingステージを完了するには、カスタムフィールドを_［
 
 ## 追加情報
 
-* [Commerce Order Engine Overview](./commerce-order-engine-overview.md)
+* [コマース注文エンジンの概要 (近日公開！)](./commerce-order-engine-overview.md)

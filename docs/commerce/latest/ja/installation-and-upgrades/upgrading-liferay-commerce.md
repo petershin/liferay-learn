@@ -24,13 +24,13 @@ DXPのアップグレード手順については、[Upgrade Basics](https://lear
 
 DXP 7.4にアップグレードした後、フルサーチのインデックスの再構築をを実行します。
 
-1. _グローバルメニュー_を開き、_［Control Panel ］_&rarr; _［Search］_にいきます。
+1. **グローバルメニュー** を開き、 ［**Control Panel**］ &rarr; ［**Search**］ にいきます。
 
    ![［コントロールパネル］タブの［検索］に進みます。](./upgrading-liferay-commerce/images/02.png)
 
-1. _［アクションをインデックスする］_タブで、_［すべてインデックスを再構築］_の_［実行］_をクリックします。
+1. ［**アクションをインデックスする**］ タブで、 ［**すべてインデックスを再構築**］ の ［**実行**］ をクリックします。
 
-インデックスの再構築が完了したら、グローバルメニューの _［コマース］_ &rarr; _［製品］_に移動して、すべての商品が表示されていることを確認してください。
+インデックスの再構築が完了したら、グローバルメニューの ［**コマース**］ &rarr; ［**製品**］ に移動して、すべての商品が表示されていることを確認してください。
 
 ## 2.1以下のバージョンからCommerce 3.0へのアップグレード
 
@@ -44,13 +44,13 @@ Commerce 3.0にアップグレードするには、まずベースとなるLifer
 
 DXP 7.3にアップグレードした後、フルサーチのインデックスの再構築を実行します。
 
-1. _グローバルメニュー_を開き、_［Control Panel］_&rarr; _［Search］_にいきます。
+1. **グローバルメニュー** を開き、 ［**Control Panel**］ &rarr; ［**Search**］ にいきます。
 
    ![［コントロールパネル］タブの［検索］に進みます。](./upgrading-liferay-commerce/images/02.png)
 
-1. _［アクションをインデックスする］_タブで、_［すべてインデックスを再構築］_の_［実行］_をクリックします。
+1. ［**アクションをインデックスする**］ タブで、 ［**すべてインデックスを再構築**］ の ［**実行**］ をクリックします。
 
-インデックスの再構築が完了したら、グローバルメニューの _［Commerce］_ &rarr; _［Product］_に移動して、すべての商品が表示されていることを確認してください。
+インデックスの再構築が完了したら、グローバルメニューの ［**Commerce**］ &rarr; ［**Product**］ に移動して、すべての商品が表示されていることを確認してください。
 
 ## Commerce 2.1.xへのアップグレード
 
@@ -92,7 +92,7 @@ DXP 7.2の最新フィックスパックを実行したら、以下の手順に�
 
 1. 最新のLiferay Commerceをダウンロードしてください。
 
-    * Commerce Enterpriseは [ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)から入手できます。
+    * Commerce Enterpriseは [ヘルプセンター](https://customer.liferay.com/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118190997& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)から入手できます。
     * Commerce Communityは、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community)から入手できます。
 
 1. `LPKG` を`${liferay.home}/ deploy`フォルダーにデプロイします。アプリケーションをLiferay DXPにデプロイする方法の詳細は、 [アプリのインストール](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)参照してください。
@@ -155,10 +155,10 @@ Liferay Commerceインスタンスがアップグレードされました。
 
 検索インデックスの再構築を実行するには：
 
-1. _［コントロールパネル］_ → _［設定］_ → _［検索機能］_に移動します。
-1. _［全ての検索インデクスの再構築］_の隣にある_［実行］_をクリックします。
+1. ［**コントロールパネル**］ → ［**設定**］ → ［**検索機能**］ に移動します。
+1. ［**全ての検索インデクスの再構築**］ の隣にある ［**実行**］ をクリックします。
 1. インデックスの再構築が完了するまで待ちます。
-1. _［コントロールパネル］_ → _［コマース］_ → _［商品］_に移動します。
+1. ［**コントロールパネル**］ → ［**コマース**］ → ［**商品**］ に移動します。
 1. すべての商品が再び表示されることを確認します。
 
 インデックスの再構築が完了すると、アップグレードされたLiferay Commerceインスタンスを使用する準備が整います。

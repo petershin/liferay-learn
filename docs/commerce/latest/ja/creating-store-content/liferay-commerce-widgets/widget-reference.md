@@ -38,5 +38,5 @@
 
 ## 追加情報
 
-* [Creating Your Storefront](../creating-your-storefront.md)
+* [ストアフロントの作成](../creating-your-storefront.md)
 * [カタログページの作成](../creating-a-catalog-page.md)

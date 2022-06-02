@@ -72,7 +72,7 @@ Liferay Commerceには、送料を計算するためのいくつかのオプシ�
 
 ### カタログに商品を追加する
 
-商品を追加するときは、**シンプル**、**グループ**、**仮想**の3つの商品タイプがあります。 詳細は、[商品タイプの概要](../product-management/creating-and-managing-products/product-types.md)を参照してください。
+商品を追加するときは、 **シンプル** 、 **グループ** 、 **仮想** の3つの商品タイプがあります。 詳細は、[商品タイプの概要](../product-management/creating-and-managing-products/product-types.md)を参照してください。
 
 #### 商品情報の追加
 

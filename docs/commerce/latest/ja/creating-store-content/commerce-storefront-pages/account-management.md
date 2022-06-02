@@ -2,15 +2,15 @@
 
 ［アカウント管理］ ページでは、ストア管理者とアカウントマネージャーがユーザーとアカウントを管理します。 ユーザーをストアに招待し、アカウント固有のロール（購入者、セールスマネージャー、アカウントマネージャー、セールスエージェント）を割り当てることができます。 このページでアカウントを作成することもできます。
 
-Minium Acceleratorを使用してサンプルデータを作成する場合、 _［アカウント管理］_ ウィジェットが配置されているサイトナビゲーションメニューがあります。
+Minium Acceleratorを使用してサンプルデータを作成する場合、 ［**アカウント管理**］ ウィジェットが配置されているサイトナビゲーションメニューがあります。
 
 ![Miniumサイトナビゲーション](./account-management/images/01.png)
 
 ```{important}
-DXP 7.4以降、アカウント管理ウィジェットはDXPの一部です。 詳細については、[Account Management Widget](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-management-widget.html)を参照してください。 
+DXP 7.4以降、アカウント管理ウィジェットはDXPの一部です。 詳細については、 [アカウント管理ウィジェット](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/accounts/account-management-widget.html) を参照してください。 
 ```
 
-ページにデプロイされると、 _［アカウント管理］_ ウィジェットにすべてのアカウントがリストされます。
+ページにデプロイされると、 ［**アカウント管理**］ ウィジェットにすべてのアカウントがリストされます。
 
 ![アカウント管理](./account-management/images/02.png)
 

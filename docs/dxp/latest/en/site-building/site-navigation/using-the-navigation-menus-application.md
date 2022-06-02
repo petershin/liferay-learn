@@ -60,7 +60,11 @@ While editing a Navigation Menu, follow these steps to add an element to the Nav
 
     ![Adding Elements to Navigation Menus](./using-the-navigation-menus-application/images/06.png)
 
-1. Optionally, define localized display names for each of your menu elements.
+1. Optionally, define custom display names for each of your menu elements. You can define custom names for page elements, or for any content type elements that use Display Pages (including blog entries, web content articles, documents, Vocabularies, and Categories).
+
+    ```{note}
+    You can only define custom display names for content type elements using Display Pages on Liferay 7.4 versions U9+ or GA13+.
+    ```
 
     To do this, select a menu element, check *Use Custom Name* in the side panel, enter a name, and click *Save*.  
 

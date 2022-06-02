@@ -72,11 +72,19 @@ While editing a Navigation Menu, follow these steps to add an element to the Nav
 
 All changes to the menu are saved.
 
+### Previewing Navigation Menus
+
+You can a preview a Navigation Menu while you are editing it to see how it looks when displayed on a page. Click the eye icon (![Eye icon](../../images/icon-view.png)) to open a popup window with a preview of the Navigation Menu.
+
+![Preview a Navigation Menu to see how it looks when displayed on a page.](./using-the-navigation-menus-application/images/08.png)
+
+You can also select different options from the drop-down menu to see different styles the menu can be displayed in, such as the *List* or *Tabs* styles.
+
 ## Using Menus During Page Creation
 
 When Users are creating Site Pages, they are shown a list of all existing Navigation Menus. You can modify this behavior by hiding specific menus from the list of available menus.
 
-![Select from Existing Navigation Menus](./using-the-navigation-menus-application/images/08.png)
+![Select from Existing Navigation Menus](./using-the-navigation-menus-application/images/09.png)
 
 Follow these steps to configure this behavior for a Navigation Menu:
 
@@ -88,7 +96,7 @@ Follow these steps to configure this behavior for a Navigation Menu:
 
 1. Uncheck/Check the setting.
 
-    ![You can select from existing Navigation Menus when creating Site Pages](./using-the-navigation-menus-application/images/09.png)
+    ![You can select from existing Navigation Menus when creating Site Pages](./using-the-navigation-menus-application/images/10.png)
 
 1. Click _Save_.
 
@@ -102,7 +110,7 @@ Follow these steps to configure the Navigation Menu's type:
 
 1. Select the desired navigation type: _Primary Navigation_, _Secondary Navigation_, or _Social Navigation_.
 
-    ![Select the desired navigation type.](./using-the-navigation-menus-application/images/10.png)
+    ![Select the desired navigation type.](./using-the-navigation-menus-application/images/11.png)
 
     Once selected, each menu's configuration appears in the _Marked As_ column.
 

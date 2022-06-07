@@ -81,6 +81,6 @@ Liferay Commerceでは、グローバルメニュー（![Global Menu](../../imag
 ## 追加情報
 
 * [チャネルについて](../../store-management/channels/introduction-to-channels.md)
-* [Managing Channels](../../store-management/channels/managing-channels.md)
+* [チャネル管理](../../store-management/channels/managing-channels.md)
 * [チャネルリファレンスガイド](../../store-management/channels/channels-reference-guide.md)
 * [通貨リファレンス](../../store-management/currencies/currencies-reference.md)

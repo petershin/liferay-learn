@@ -73,7 +73,7 @@ Liferay Commerce 2.1以前のバージョンでは、［*サイト管理*］ →
 )
 public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 ```
-> Liferay Commerceが [支払方法レジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java) で新しい支払方法を他の支払方法と区別できるように、支払方法に個別のキーを提供することが重要です。 すでに使用されているキーを再利用すると、既存の関連付けられている支払方法が上書きされます。
+> Liferay Commerceが [支払方法レジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java) で新しい支払方法を他の支払方法と区別できるように、支払方法に個別のキーを提供することが重要です。 すでに使用されているキーを再利用すると、既存の関連付けられている支払方法が上書きされます。
 
 ### `CommercePaymentMethod`インターフェイスを確認する
 
@@ -140,7 +140,7 @@ public CommercePaymentResult processPayment(
         Collections.emptyList(), true);
 }
 ```
-> このメソッドにカスタム支払ロジックを実装します。 `CommercePaymentResult`には、支払の処理に関連する情報を格納する必要があります。 詳細は、 [CommercePaymentResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java) を参照してください。
+> このメソッドにカスタム支払ロジックを実装します。 `CommercePaymentResult`には、支払の処理に関連する情報を格納する必要があります。 詳細は、 [CommercePaymentResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java) を参照してください。
 
 #### 支払完了ロジックを実装する
 
@@ -191,4 +191,4 @@ pay-via-b1c3-commerce-payment-method=Pay via B1C3 commerce payment method.
 
 ## 追加情報
 
-* [Localizing Your Application](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
+* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

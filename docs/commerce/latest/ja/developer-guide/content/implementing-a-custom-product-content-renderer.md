@@ -198,4 +198,4 @@ q4f7-commerce-product-content-renderer=Q4F7 Commerce Product Content Renderer
 
 ## 追加情報
 
-* [Localizing Your Application](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
+* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

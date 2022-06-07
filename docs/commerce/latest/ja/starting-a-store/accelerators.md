@@ -2,7 +2,7 @@
 
 Liferay Commerceのアクセラレータは、ストアの構築とLiferay Commerceの探索を迅速かつ簡単にします。
 
-> **注** ：ゼロからストアを構築するユーザーは、[Creating Your Storefront](../creating-store-content/creating-your-storefront.md)を順を追って確認することをお勧めします。
+> **注** ：ゼロからストアを構築するユーザーは、[ストアフロントの作成](../creating-store-content/creating-your-storefront.md)を順を追って確認することをお勧めします。
 
 Liferay Commerceのストアは、サイト、チャネル、カタログ、商品、ページ、ウィジェットなどの相互に関連するコンポーネントの階層で構成されています。 アクセラレータは、ストアコンポーネント、テーマ、プリセットストア構成、およびサンプルデータの階層を事前構成済みのサイトテンプレートに提供することで、機能的なストアを迅速かつ簡単にセットアップします。
 

@@ -2,7 +2,7 @@
 
 このチュートリアルでは、`CPDataSource`インターフェイスを実装して、新しい商品データソースを追加する方法を示します。
 
-商品データソースは、関連する商品を検索する独自の方法を提供します。 Liferay Commerceでは、 [商品の関係別](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) および [カテゴリ別に](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java) 検索するものなど、標準でいくつかの商品データソースを提供しています。
+商品データソースは、関連する商品を検索する独自の方法を提供します。 Liferay Commerceでは、 [商品の関係別](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) および [カテゴリ別に](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java) 検索するものなど、標準でいくつかの商品データソースを提供しています。
 
 ![標準の商品データソース](./adding-a-new-product-data-source-for-the-product-publisher-widget/images/01.png "標準の商品データソース")
 
@@ -161,5 +161,5 @@ products-ending-in-the-same-word=Products Ending in the Same Word
 
 ## 追加情報
 
-* [Localizing Your Application](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
+* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
 * [関連商品、アップセル、クロスセル](../../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)

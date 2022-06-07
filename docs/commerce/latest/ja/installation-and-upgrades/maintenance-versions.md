@@ -23,8 +23,8 @@ Liferayは、定期的に、オープンソースとエンタープライズの�
 ### ダウンロードとデプロイ
 
 1. 最新のLiferay Commerce `LPKG`をダウンロードします。
-    * エンタープライズサブスクライバーは、最新の`LPKG`を [ヘルプセンター](https://customer.liferay.com/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118190997& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) からダウンロードできます。
-      * サブスクライバーは、Liferay Commerceの注文番号またはアクティベーションキーも必要です。 [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/ja/articles/360018427391) を参照してください。
+    * エンタープライズサブスクライバーは、最新の`LPKG`を [ヘルプセンター](ttps://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) からダウンロードできます。
+      * サブスクライバーは、Liferay Commerceの注文番号またはアクティベーションキーも必要です。 [プロキシサーバーを介してマーケットプレイスアプリをアクティブにする](https://help.liferay.com/hc/ja/articles/360018427391) を参照してください。
     * 最新のオープンソース`LPKG`は、 [Liferay Commerceのコミュニティサイト](https://commerce.liferay.dev/download) から取得できます。
 
 1. `LPKG`を`${liferay.home}/deploy`フォルダにデプロイします。
@@ -40,7 +40,7 @@ Liferayは、定期的に、オープンソースとエンタープライズの�
 
 ### 古いデータを消去してサーバーを再起動する
 
-1. `${liferay.home}/osgi/state`フォルダを削除します。 > OSGiフォルダの詳細は、 [Installing Apps Manually](https://help.liferay.com/hc/ja/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps) を参照してください。
+1. `${liferay.home}/osgi/state`フォルダを削除します。 > OSGiフォルダの詳細は、 [アプリを手動でインストールする](https://help.liferay.com/hc/ja/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps) を参照してください。
 1. アプリケーションサーバーを起動します。
 1. アプリケーションサーバーのコンソールログで次のようなメッセージを探して、アップグレードプロセスが開始されたことを確認します。
 

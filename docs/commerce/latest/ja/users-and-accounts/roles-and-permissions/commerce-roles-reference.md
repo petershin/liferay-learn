@@ -1,6 +1,6 @@
 # Commerceロールのリファレンス
 
-ユーザーロールは、Liferayのアプリケーションやリソースにアクセスして使用するために必要な権限をグループ化します。 各ロールは、インスタンス、サイト、組織、アセットライブラリ、またはアカウントにスコープすることができます。 このスコープにより、どの権限をロールに割り当てることができるかが決まります。 また、各権限には、どのアプリケーションやリソースにアクセスして使用できるかを決定する独自のスコープがあります。 詳細は、 [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) を参照してください。
+ユーザーロールは、Liferayのアプリケーションやリソースにアクセスして使用するために必要な権限をグループ化します。 各ロールは、インスタンス、サイト、組織、アセットライブラリ、またはアカウントにスコープすることができます。 このスコープにより、どの権限をロールに割り当てることができるかが決まります。 また、各権限には、どのアプリケーションやリソースにアクセスして使用できるかを決定する独自のスコープがあります。 詳細は、 [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) を参照してください。
 
 Commerceには[すぐに使えるロール](#out-of-the-box-roles)が４つ含まれています：アカウント管理者、アカウントメンバー、バイヤー、そしてオーダーマネージャーです。
 
@@ -235,7 +235,7 @@ Sales AgentはLiferay Commerceの通常のロールであり、割り当てユ�
 
 ## 追加情報
 
-* [ロールと権限について](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [注文管理権限のリファレンス](./order-management-permissions.md)
 * [在庫管理権限のリファレンス](./inventory-management-permissions.md)
 * [価格設定権限のリファレンス](./pricing-permissions.md)

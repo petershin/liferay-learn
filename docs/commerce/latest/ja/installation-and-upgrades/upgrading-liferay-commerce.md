@@ -10,7 +10,7 @@ Liferay Commerce 3.0より、CommerceはLiferay DXPにバンドルされてい�
 7.4にアップグレードした後は、Commerceの`LPKG`を再度デプロイ*しない*でください。 Commerce 4.0のモジュールは7.4にバンドルされています。  'LPKG'をデプロイすると競合が発生します。
 ```
 
-DXPのアップグレード手順については、[Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html)を参照してください。 DXPが7.4にアップグレードされたら、インデックスの再構築を実行してください。
+DXPのアップグレード手順については、[アップグレードの基本](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html)を参照してください。 DXPが7.4にアップグレードされたら、インデックスの再構築を実行してください。
 
 ### Liferay Commerce 4.0にアップグレードするための前提条件
 
@@ -68,7 +68,7 @@ Commerce 2.1.xにアップグレードする前に、まずLiferay DXP 7.2の最
 
 Liferayは最新のフィックスパックリリースを[ヘルプセンター](https://customer.liferay.com/downloads)からダウンロードできるように提供しています。 ダウンロードが完了したら、[Liferayパッチングツール](https://help.liferay.com/hc/articles/360018176551-Using-the-Patching-Tool)を使ってフィックスパックを適用することができます。 詳細は、[Installing Patches](https://help.liferay.com/hc/en-us/articles/360028810512-Installing-Patches)を参照してください。
 
-Liferay DXPを[手動でインストールした場合](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually-)（WebLogicなどで）は、[Installing Patches on the Liferay DXP 7.1 WAR](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR)を参照してください。
+Liferay DXPを[手動でインストールした場合](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually-)（WebLogicなどで）は、[Liferay DXP 7.1 WARへのパッチのインストール](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR)を参照してください。
 
 その後、以下の手順に従ってフィックスパックが正常にインストールされたことを確認してください。
 
@@ -92,8 +92,8 @@ DXP 7.2の最新フィックスパックを実行したら、以下の手順に�
 
 1. 最新のLiferay Commerceをダウンロードしてください。
 
-    * Commerce Enterpriseは [ヘルプセンター](https://customer.liferay.com/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118190997& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)から入手できます。
-    * Commerce Communityは、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community)から入手できます。
+    * Commerce Enterpriseは [ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) から入手できます。
+    * Commerce Communityは、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community) から入手できます。
 
 1. `LPKG` を`${liferay.home}/ deploy`フォルダーにデプロイします。アプリケーションをLiferay DXPにデプロイする方法の詳細は、 [アプリのインストール](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)参照してください。
 

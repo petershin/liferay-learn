@@ -30,4 +30,4 @@ Liferay Commerceには、現在のカートステータスの概要をすばや�
 
 ## 追加情報
 
-* [Liferay Commerce Widget Reference List](./widget-reference.md)
+* [ウィジェットリファレンス](./widget-reference.md)

@@ -16,7 +16,7 @@ Liferay Commerce へようこそ！  Liferay Commerceは、あらゆるB2B組織
 
 ## 最新のストアフロントページとコンテンツ管理
 
-Liferay Commerceには、ストアフロントをセットアップするための幅広いツールが含まれています。 たとえば、新しい検索ツールは商品カタログ専用に設計されていますが、カスタマイズ可能なウィジェットを使用すると、CheckoutやView Cartなどの一般的なUI要素をページに簡単に追加できます。 詳しくは、[Building a Storefront](../creating-store-content/creating-your-storefront.md)をご覧ください。
+Liferay Commerceには、ストアフロントをセットアップするための幅広いツールが含まれています。 たとえば、新しい検索ツールは商品カタログ専用に設計されていますが、カスタマイズ可能なウィジェットを使用すると、CheckoutやView Cartなどの一般的なUI要素をページに簡単に追加できます。 詳しくは、[ストアフロントの作成](../creating-store-content/creating-your-storefront.md)をご覧ください。
 
 ![Liferay Commerceダッシュボード](./introduction-to-liferay-commerce/images/01.png)
 

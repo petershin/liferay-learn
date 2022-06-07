@@ -2,7 +2,7 @@
 
 このチュートリアルでは、 [CommerceOrderValidator](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java) インターフェイスを実装して、カスタムオーダーバリデーターを追加する方法を示します。
 
-注文バリデーターは、チェックアウトを行う際に顧客のカート内のアイテムを検証するクラスです。 Liferay Commerceでは、 [デフォルト](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) をはじめ、 [アイテムバージョン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) や [定期的なアイテム（サブスクリプション）](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java) を確認するバリデーターなど複数の注文バリデーターをすぐに使うことができます。
+注文バリデーターは、チェックアウトを行う際に顧客のカート内のアイテムを検証するクラスです。 Liferay Commerceでは、 [デフォルト](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) をはじめ、 [アイテムバージョン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) や [定期的なアイテム（サブスクリプション）](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java) を確認するバリデーターなど複数の注文バリデーターをすぐに使うことができます。
 
 ## 概要
 
@@ -177,7 +177,7 @@ public CommerceOrderValidatorResult validate(
 }
 ```
 
-> このメソッドは顧客のカート内のアイテムに対して呼び出されるため、同じ検証ロジックをこのメソッドに追加します。 この場合の主な違いは、`CommerceOrderItem`オブジェクトから情報を取得することです。`CommerceOrderItem`で使用できる他のメソッドについては、 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) および [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) を参照してください。
+> このメソッドは顧客のカート内のアイテムに対して呼び出されるため、同じ検証ロジックをこのメソッドに追加します。 この場合の主な違いは、`CommerceOrderItem`オブジェクトから情報を取得することです。`CommerceOrderItem`で使用できる他のメソッドについては、 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) および [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) を参照してください。
 
 #### 言語キーを`Language.properties`に追加する
 
@@ -197,4 +197,4 @@ this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximu
 ## 追加情報
 
 * [シンプル商品を作成する](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
-* [Localizing Your Application](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
+* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

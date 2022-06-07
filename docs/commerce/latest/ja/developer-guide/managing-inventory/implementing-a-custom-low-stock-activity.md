@@ -144,5 +144,5 @@ j1e4-commerce-low-stock-activity=J1E4 Commerce Low Stock Activity
 ## 追加情報
 
 * [シンプル商品を作成する](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
-* [Localizing Your Application](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
+* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
 * [在庫数低下時のアクション](../../product-management/managing-inventory/low-stock-action.md)

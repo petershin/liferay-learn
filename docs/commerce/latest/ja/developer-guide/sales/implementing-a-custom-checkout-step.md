@@ -179,4 +179,4 @@ n8n6-commerce-checkout-step=N8N6 Commerce Checkout Step
 ## 追加情報
 
 * [チェックアウト](../../creating-store-content/commerce-storefront-pages/checkout.md)
-* [Localizing Your Application](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
+* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

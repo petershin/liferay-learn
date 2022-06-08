@@ -41,7 +41,7 @@
     }
     ```
 
-1. `package.json` **devDependencies** から次のBabel依存関係を削除します。
+1. `package.json` *devDependencies*から次のBabel依存関係を削除します。
 
     ```json
     "babel-cli": "6.26.0",
@@ -49,8 +49,6 @@
     ```
 
 プロジェクトは、liferay-npm-bundler 2.xを使用するように移行されます。
-
-<a name="related-information" />
 
 ## 関連情報
 

@@ -36,17 +36,17 @@ reference/troubleshooting-upgrades.md
 reference/upgrade-reports.md
 ```
 
-* [データのクリーンアップ](./reference/data-cleanup.md)
+* [データ初期化](./reference/data-cleanup.md)
 * [データ削除](./reference/data-removal.md)
-* [Database Upgrade Options](./reference/database-upgrade-options.md)
+* [データベースアップグレードオプション](./reference/database-upgrade-options.md)
 * [データベースアップグレードツールのリファレンス](./reference/database-upgrade-tool-reference.md)
 * [7.4でのデフォルト設定の変更](./reference/default-setting-changes-in-7-4.md)
 * [7.3でのデフォルト設定の変更](./reference/default-setting-changes-in-7-3.md)
 * [7.2でのデフォルト設定の変更](./reference/default-setting-changes-in-7-2.md)
-* [File Store Updates](./reference/file-store-updates.md)
+* [ファイルストアの更新](./reference/file-store-updates.md)
 * [7.4のメンテナンスモードと非推奨](./reference/maintenance-mode-and-deprecations-in-7-4.md)
 * [7.3のメンテナンスモードと非推奨](./reference/maintenance-mode-and-deprecations-in-7-3.md)
 * [7.2のメンテナンスモードと非推奨](./reference/maintenance-mode-and-deprecations-in-7-2.md)
 * [言語キーの名称変更](./reference/renamed-language-keys.md)
-* [アップグレードのトラブルシューティング](./reference/troubleshooting-upgrades.md)
+* [Troubleshooting Upgrades](./reference/troubleshooting-upgrades.md)
 * [アップグレードのレポート](./reference/upgrade-reports.md)

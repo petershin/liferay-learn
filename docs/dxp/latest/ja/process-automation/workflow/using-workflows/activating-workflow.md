@@ -1,127 +1,121 @@
-# ワークフローのアクティブ化
+# ワークフローの有効化
 
-DXPインスタンス全体または特定のサイトのみで、アセットタイプのワークフロープロセスをアクティブ化できます。 ワークフロープロセスが **Wikiページ** などの特定のアセットタイプのインスタンス全体でアクティブ化されると、 **Wikiページ** が作成されたサイトに関係なく、公開するために送信されたすべての **Wikiページ** はレビュープロセスを通過する必要があります。
+DXPインスタンス全体または特定のサイトのみで、アセットタイプのワークフロープロセスを有効化できます。 ワークフロープロセスが_Wikiページ_などの特定のアセットタイプのインスタンス全体で有効化されると、_Wikiページ_が作成されたサイトに関係なく、公開するために送信されたすべての_Wikiページ_はレビュープロセスを通過する必要があります。
 
 または、個々のサイトでワークフローを有効または無効にすることを選択できます。 デフォルトでは、ワークフローはサイトで無効になっています。
 
-<a name="activating-workflow-across-a-dxp-instance" />
+## DXPインスタンス全体でワークフローを有効化する
 
-## DXPインスタンス全体でワークフローをアクティブ化する
-
-1. **プロダクトメニュー**（![Product Menu](../../../images/icon-product-menu.png)）を開き、 ［**コントロールパネル**］ をクリックします。
-1. ［**ワークフローワークフロー**］ 、 ［**プロセスビルダー**］ の順にクリックします。
-1. ［**設定**］ タブをクリックします。
+1. _プロダクトメニュー_（![Product Menu](../../../images/icon-product-menu.png)）を開き、_［Control Panel］_をクリックします。
+1. _［Workflow］_、_［Process Builder］_の順にクリックします。
+1. _［設定］_ タブをクリックします。
 
     ![インスタンス全体の設定は［Configurations］タブにあります](./activating-workflow/images/02.png)
 
-1. ワークフロープロセスを実行するアセットタイプ（**ナレッジベースの記事** など）の横にある ［**Edit**］ をクリックします。
+1. ワークフロープロセスを実行するアセットタイプ（_ナレッジベースの記事_など）の横にある_［Edit］_をクリックします。
 
-    ![ナレッジベースの記事のインスタンス全体でワークフローをアクティブ化する](./activating-workflow/images/03.png)
+    ![ナレッジベースの記事のインスタンス全体でワークフローを有効化する](./activating-workflow/images/03.png)
 
-1. このアセットタイプに必要なワークフローを選択します（［**Single Approver**］ は追加設定なしで使用できます）。
-1. ［**保存**］ をクリックします。
+1. このアセットタイプに必要なワークフローを選択します（_［Single Approver］_は追加設定なしで使用できます）。
+1. _［Save］_ をクリックします。
 1. ワークフローを必要とする他のすべてのアセットタイプについて繰り返します。
 
-<a name="activating-workflow-on-a-site" />
-
-## サイトでのワークフローのアクティブ化
+## サイトでのワークフローの有効化
 
 ワークフロープロセスがサイトで有効になっている場合、同じインスタンス上の他のサイトは無効のままになります。 サイトごとに各アセットタイプのワークフロープロセスを有効にするには：
 
-1. **プロダクトメニュー**（![Product Menu](../../../images/icon-product-menu.png)）を開き、 **サイト管理** メニューのコンパスアイコン（![Compass](../../../images/icon-compass.png)）をクリックします。
-1. フォームを作成するサイトを選択します（例： **Community Site**）。
-1. ［**サイト管理**］ メニューで&rarr; ［**設定**］ &rarr; ［**ワークフロー**］ をクリックします。
-1. ワークフロープロセスを実行するアセットタイプの横にある ［**Edit**］ をクリックします。
+1. _プロダクトメニュー_（![Product Menu](../../../images/icon-product-menu.png)）を開き、_［サイト管理］_メニューのコンパスアイコン（![Compass](../../../images/icon-compass.png)）をクリックします。
+1. フォームを作成するサイトを選択します（例：_Community Site_ ）。
+1. _［サイト管理］_メニューで&rarr;_［設定］_&rarr;_［ワークフロー］_をクリックします。
+1. ワークフロープロセスを実行するアセットタイプの横にある_［Edit］_をクリックします。
 1. このアセットタイプに必要なワークフローを選択します。
 
-    ![コミュニティサイトでブログエントリをアクティブ化する](./activating-workflow/images/01.png)
+    ![コミュニティサイトでブログエントリを有効化する](./activating-workflow/images/01.png)
 
-1. ［**保存**］ をクリックします。
+1. _［Save］_ をクリックします。
 1. ワークフローを必要とする他のすべてのアセットタイプについて繰り返します。
 
-有効にすると、選択したアセットタイプは、このサイトで公開する前に必ずレビュープロセスが必要になります。 特定のアセットタイプに対して以前にワークフローをアクティブにしたことがある場合、それらの設定がここに反映されます。
+有効にすると、選択したアセットタイプは、このサイトで公開する前に必ずレビュープロセスが必要になります。 特定のアセットタイプに対して以前にワークフローを有効にしたことがある場合、それらの設定がここに反映されます。
 
-```tip::
-   インスタンス全体で有効になっている場合でも、サイト上のアセットタイプのワークフローはいつでも無効にできます。
+```{tip}
+インスタンス全体で有効になっている場合でも、サイト上のアセットタイプのワークフローはいつでも無効にできます。
 ```
 
-<a name="activating-workflow-for-specific-applications" />
-
-## 特定のアプリケーションのワークフローをアクティブにする
+## 特定のアプリケーションのワークフローを有効にする
 
 それぞれのアプリケーションでワークフローが有効になっているアセットタイプがいくつかあります。
 
 ### Webコンテンツフォルダー
 
-**Webコンテンツフォルダー** のワークフローをアクティブ化するには：
+_Webコンテンツフォルダー_のワークフローを有効化するには：
 
-1. サイトの **サイト管理** メニューに移動します。
-1. ［**コンテンツ&データ**］ &rarr; ［**Webコンテンツ**］ をクリックします。
-1. （![Actions](../../../images/icon-actions.png)）をクリックし、目的のフォルダの横にある ［**Edit**］ をクリックします。
+1. サイトの_［サイト管理］_メニューに移動します。
+1. _［Content & Data］_&rarr;_［Web Content］_をクリックします。
+1. （![Actions](../../../images/icon-actions.png)）をクリックし、目的のフォルダの横にある_［Edit］_をクリックします。
 
-    ![フォルダの編集画面からWebコンテンツフォルダーのワークフローをアクティブ化する。](./activating-workflow/images/04.png)
+    ![フォルダの編集画面からWebコンテンツフォルダーのワークフローを有効化する。](./activating-workflow/images/04.png)
 
-1. ［**ストラクチャー制約と、ワークフロー**］ メニューを展開します。
-1. ［**デフォルトワークフロー（Lunar Resort Holiday Getaway Content**）］ のラジオボタンをクリックします。
+1. _［Structure Restrictions and Workflow］_メニューを展開します。
+1. _［Default Workflow for This Folder (Lunar Resort Holiday Getaway Content)］_のラジオボタンをクリックします。
 
     ![Webコンテンツフォルダーのワークフローを選択。](./activating-workflow/images/05.png)
 
-1. ワークフロー定義を選択します（例： **Single Approver**）。
-1. ［**保存**］ ボタンをクリックします。
+1. ワークフローの定義を選択します（例：_唯一の承認者_ ）。
+1. _［Save］_ボタンをクリックします。
 
-### ドキュメントとメディアフォルダ
+### ドキュメントとメディアフォルダー
 
-ワークフローは、 **ルート** フォルダ内の **ドキュメントとメディア** アプリケーション全体または個々のフォルダに対して有効にできます。
+ワークフローは、  _ルート_フォルダー内の_ドキュメントとメディア_ アプリケーション全体または個々のフォルダーに対して有効にできます。
 
-**ドキュメントとメディアフォルダ** のワークフローをアクティブ化するには：
+_ドキュメントとメディアフォルダ_のワークフローを有効化するには：
 
-1. サイトの **サイト管理** メニューに移動します。
-1. ［**Content & Data**］ &rarr; ［**ドキュメントとメディア**］ の順にクリックします。
-1. （![Actions](../../../images/icon-actions.png)）をクリックし、目的のフォルダの横にある ［**Edit**］ をクリックします。
+1. サイトの_［サイト管理］_メニューに移動します。
+1. _［Content & Data］_ &rarr; _［Documents and Media］_の順にクリックします。
+1. （![Actions](../../../images/icon-actions.png)）をクリックし、目的のフォルダの横にある_［Edit］_をクリックします。
 
     ![DMフォルダのワークフローを選択。](./activating-workflow/images/06.png)
 
-1. ［**ドキュメントタイプ制限およびワークフロー**］ メニューを展開します。
-1. ［**このフォルダのデフォルトワークフロー(DM Folder 1**)］ のラジオボタンをクリックします。
+1. _［Document Type Restrictions and Workflow］_メニューを展開します。
+1. _［Default Workflow for This Folder (DM Folder 1)］_のラジオボタンをクリックします。
 
     ![DMフォルダのワークフローを選択。](./activating-workflow/images/07.png)
 
-1. ワークフロー定義を選択します（例： **Single Approver**）。
-1. ［**保存**］ ボタンをクリックします。
+1. ワークフロー定義を選択します（例：_Single Approver_ ）。
+1. _［保存］_ボタンをクリックします。
 
 ### 動的データリスト
 
-**DDLフォーム** のワークフローをアクティブ化するには：
+_DDLフォーム_のワークフローを有効化するには：
 
-1. サイトの **サイト管理** メニューに移動します。
-1. ［**Content & Data**］ &rarr; ［**動的データリスト(DDL**)］ の順にクリックします。
-1. （![Add](../../../images/icon-add.png)）をクリックして新しいフォームを追加します。
+1. サイトの_サイト管理_メニューに移動します。
+1. _［コンテンツ & データ］_ &rarr; _［動的データリスト］_の順にクリックします。
+1. （![Add](../../../images/icon-add.png)）をクリックして新規フォームを追加します。
 1. DDLフォームの名前を入力します。
-1. ［**Select**］ をクリックして、このフォームに関連付けられているデータ定義を選択します。
-1. ［Data Definition］を選択します（**Contacts**）。
-1. ［**Workflow**］ で、目的のワークフロー（**Single Approver**）を選択します。
+1. _［Select］_をクリックして、このフォームに関連付けられているデータ定義を選択します。
+1. ［Data Definition］を選択します（_Contacts_）。
+1. _［Workflow］_で、目的のワークフロー（_Single Approver_）を選択します。
 
-    ![個々の動的データリストごとにワークフローをアクティブ化します。](./activating-workflow/images/08.png)
+    ![個々の動的データリストごとにワークフローを有効化します。](./activating-workflow/images/08.png)
 
-1. ［**保存**］ をクリックします。
+1. _［Save］_ をクリックします。
 
 この特定のDDLフォームが送信プロセスを通過するようになりました。
 
 ### フォーム
 
-個々のフォームのエントリごとにワークフローをアクティブ化するには
+個々のフォームのエントリごとにワークフローを有効化するには
 
-1. サイトの **サイト管理** メニューに移動します。
-1. ［**コンテンツ & データ**］ &rarr; ［**フォーム**］ をクリックします。
-1. **フォームビルダー** ビューで（新しいフォームの場合も既存のフォームの場合も同様）、 **オプション**(![Options](../../../images/icon-actions.png))、 ［**Settings**］ の順にクリックします。
+1. サイトの_［サイト管理］_メニューに移動します。
+1. _［コンテンツ & データ］_ &rarr; _ ［Form］_をクリックします。
+1. _フォームビルダー_ビューで（新しいフォームの場合も既存のフォームの場合も同様）、_オプション_ (![Options](../../../images/icon-actions.png))、_［Settings］_の順にクリックします。
 
     ![フォームの設定に移動](./activating-workflow/images/09.png)
 
-1. ［**ワークフローを選択**］ で、目的のワークフロー（**Single Approver**）を選択します。
+1. _［Select a workflow］_で、目的のワークフロー（_Single Approver_）を選択します。
 
-    ![フォームの設定ウィンドウから各フォームのエントリでワークフローをアクティブにします。](./activating-workflow/images/10.png)
+    ![フォームの設定ウィンドウから各フォームのエントリでワークフローを有効にします。](./activating-workflow/images/10.png)
 
-1. ［**完了**］ をクリックして、ダイアログウィンドウを閉じます。
+1. _［Done］_をクリックして、ダイアログウィンドウを閉じます。
 
 情報を送信する前に、フォームの承認が必要になりました。
 
@@ -129,32 +123,30 @@ DXPインスタンス全体または特定のサイトのみで、アセット�
 <!-- Leaving this commented out until Staging materials are pushed up.
 ## Page Variations
 
-In a [staged environment](https://help.liferay.com/hc/en-us/articles/360029041851-Staging-Content), you can activate workflow for **Page Variations** .
+In a [staged environment](https://help.liferay.com/hc/en-us/articles/360029041851-Staging-Content), you can activate workflow for _Page Variations_.
 
-As a prerequisite, [Staging](https://help.liferay.com/hc/articles/360029041811-Enabling-Staging)**and**[Page Versioning](https://help.liferay.com/hc/articles/360028721532-Enabling-Page-Versioning-and-Staged-Content) have been enabled.
+As a prerequisite, [Staging](https://help.liferay.com/hc/articles/360029041811-Enabling-Staging) **and** [Page Versioning](https://help.liferay.com/hc/articles/360028721532-Enabling-Page-Versioning-and-Staged-Content) have been enabled.
 
-When a Page Variation or Site Page Variation is created, its creator must click **Submit for Publication** at the top of the page, and the variation must be approved in the workflow before it can be published to the live Site.
+When a Page Variation or Site Page Variation is created, its creator must click _Submit for Publication_ at the top of the page, and the variation must be approved in the workflow before it can be published to the live Site.
 
 To enable a workflow for Page Variations:
 
-1. Navigate to the **Site Administration** menu for your site.
+1. Navigate to the _Site Administration_ menu for your site.
 1. Verify that the Staging has been enabled for this site.
 
     ![Verify that the site is now staged.](./activating-workflow/images/11.png)
 
-1. Click **Configuration** &rarr; **Workflow** .
-1. Select the workflow desired for **Page Revision** .
+1. Click _Configuration_ &rarr; _Workflow_.
+1. Select the workflow desired for _Page Revision_.
 
     ![Verify that the site is now staged.](./activating-workflow/images/12.png)
 
-1. Click **Save** .
+1. Click _Save_.
 
 Page revisions now have to go through the workflow process.
 
 ![With workflow enabled on Page Revisions, the Site administrator must submit their page variation for publication before it can go live.](./activating-workflow/images/13.png)
 -->
-
-<a name="whats-next" />
 
 ## 次のステップ
 

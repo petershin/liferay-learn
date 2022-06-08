@@ -7,20 +7,18 @@
 ![クラスター横断レプリケーションを使用すると、異なるデータセンターがLiferay DXPインデックスを使用して同期されたElasticsearchクラスターを保持できます。](./configuring-an-example-ccr-installation-replicating-between-data-centers/images/01.png)
 
 ```{important}
-   Liferay DXP 7.1、7.2、7.3の間の設定や手順の違いは、この説明書の中でインラインで記載されています。
+Liferay DXP 7.1、7.2、7.3の間の設定や手順の違いは、この説明書の中でインラインで記載されています。
 ```
 
 `localhost`で2つのシングルノードElasticsearchクラスターを使用し、それぞれに同じインデックスのコピーを設定します。 これは、クラスター横断レプリケーションのデータの局所性とディザスタリカバリのメリットを享受するために構成できる最も単純なシナリオです。
 
-バニラのLiferay DXPインストールには、 [クラスター横断レプリケーション](./cross-cluster-replication.md#liferay-dxp-decide-which-indexes-to-replicate-from-the-remote-cluster) で提示されるインデックスが含まれています。 Liferay DXPで使用されるすべてのElasticsearchクラスター（この例では2つのクラスター）には、これらのインデックスが必要です。
+バニラのLiferay DXPインストールには、[クラスター横断レプリケーション](./cross-cluster-replication.md#liferay-dxp-decide-which-indexes-to-replicate-from-the-remote-cluster)で提示されるインデックスが含まれています。 Liferay DXPで使用されるすべてのElasticsearchクラスター（この例では2つのクラスター）には、これらのインデックスが必要です。
 
 ここで提供されるElasticsearch API呼び出しは、Kibanaの開発ツールコンソールにコピーして貼り付けることができ、別のKibanaインストールまたは[LES モニタリングウィジェット](../monitoring-elasticsearch.md)からアクセスできます。
 
 ```{note}
-   Kibanaを使うには、複数のElasticsearchクラスタ（この例では2つのシングルノードクラスタ）が稼働していることを思い出してください。 Kibanaの ``kibana.yml`` ファイル内の ``elasticsearch.hosts:[ "http://localhost:<port>" ]Kibanaの ``kibana.yml`` ファイルの `` 設定は、リーダーとフォロワーのクラスタが混在しないように、後述のインデックスやその他の設定を管理する際に、正しいポートを指し示す必要があります。 ここでは、リーダーとなるElasticserachクラスタノードが9200番台のポートを使用し、フォロワーが9202番台のポートを使用していることを想定しています。 
+Kibanaを使うには、複数のElasticsearchクラスタ（この例では2つのシングルノードクラスタ）が稼働していることを思い出してください。 The `elasticsearch.hosts: [ "http://localhost:<port>" ]` setting in Kibana's `kibana.yml` file must point to the correct port when managing the indexes and other configurations described below to avoid mixing the leader and the follower clusters. Here, it's assumed that your leader Elasticsearch cluster node uses port `9200` and the follower uses port `9202`. 
 ```
-
-<a name="cluster-liferay-dxp" />
 
 ## クラスターLiferay DXP
 
@@ -32,18 +30,14 @@ cluster.link.enabled=true
 
 これは単純なクラスタリング構成です。 完全な構成については、[クラスタリング](../../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md)を参照してください。
 
-<a name="install-required-elasticsearch-plugins" />
-
 ## 必要なElasticsearchプラグインのインストール
 
-必要なElasticsearch [プラグイン](../../installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md#install-elasticsearch) を必ずインストールしてください。
+必要なElasticsearch[プラグイン](../../installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md#install-elasticsearch)を必ずインストールしてください。
 
 - `analysis-icu`
 - `analysis-stempel`
 - `analysis-kuromoji`
 - `analysis-smartcn`
-
-<a name="prerequisite-for-security-configure-authentication-and-encryption" />
 
 ## セキュリティの前提条件：認証と暗号化を設定する
 
@@ -52,7 +46,7 @@ cluster.link.enabled=true
 1. ElasticsearchクラスターでX-Pack Securityを構成します。 ノード証明書が同じCAによって署名されており、リーダークラスターとフォロワークラスターのセキュリティ設定が一致していることを確認してください。
 
    ```{note}
-      後続のElasticsearchクラスタノードのHTTPおよびTransportレイヤでTLS/SSLが有効になっている必要があります。 Liferay DXPはHTTP経由でフォロアクラスタに接続し、フルリインデックスが実行された後、企業インデックスを再フォローします。
+   後続のElasticsearchクラスタノードのHTTPおよびTransportレイヤでTLS/SSLが有効になっている必要があります。 Liferay DXPはHTTP経由でフォロアクラスタに接続し、フルリインデックスが実行された後、企業インデックスを再フォローします。
    ```
 
 1. DXPノードを設定します。
@@ -62,20 +56,18 @@ cluster.link.enabled=true
 
    Liferay DXP 7.1および7.2の場合、 `ElasticsearchConfiguration.config` でリモート接続を、 `ElasticsearchConnectionConfiguration-ccr.config` でリードオンリー接続を設定します。
 
-   各接続にセキュリティ設定を含めます。 詳細は、 [Elasticsearchの保護](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md) を参照してください。 [ローカルフォロワーデータセンターでのCCRの構成](./configuring-ccr-in-a-local-follower-data-center.md) では、ローカルDXPノードからの読み取り専用CCR接続に対するセキュリティの設定について説明しています。
+   各接続にセキュリティ設定を含めます。 詳細は、[Elasticsearchの保護](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)を参照してください。 [Configuring CCR in a Local Follower Data Center](./configuring-ccr-in-a-local-follower-data-center.md)では、ローカルDXPノードからの読み取り専用CCR接続に対するセキュリティの設定について説明しています。
 
 完全な構成例は、[こちら](./ccr-basic-use-case-config-reference.md)で提供しています。
 
-<a name="install-the-cross-cluster-replication-module" />
-
 ## クラスター横断レプリケーションモジュールのインストール
 
-1. [LESダウンロードページ](https://customer.liferay.com/downloads) から、Elasticsearch LPKGのLiferay DXPクラスター横断レプリケーションをダウンロードします。
+1. [LESダウンロードページ](https://customer.liferay.com/downloads)から、Elasticsearch LPKGのLiferay DXPクラスター横断レプリケーションをダウンロードします。
 
-1. すべてのDXPノードに[LPKGをインストール](../../../system-administration/installing-and-managing-apps/installing-apps/installing-apps.md)します。
+1. すべてのDXPノードに[LPKGをインストール](../../../system-administration/installing-and-managing-apps/installing-apps.md)します。
 
 ```{tip}
-   クラスター横断レプリケーションを使用するLiferayDXP 7.1および7.2では複数のElasticsearch接続のみを使用するため、つながりUIは、クロスクラスターの場合、レプリケーションLPKGがデプロイされている場合、
+クラスター横断レプリケーションを使用するLiferayDXP 7.1および7.2では複数のElasticsearch接続のみを使用するため、つながりUIは、クロスクラスターの場合、レプリケーションLPKGがデプロイされている場合、
 検索管理パネル（［コントロールパネル］> ［構成］> ［検索］ --- ［つながり］タブの下）にのみ表示されます。 Liferay DXP 7.3では、つながりUIが常に表示されています。
 ```
 

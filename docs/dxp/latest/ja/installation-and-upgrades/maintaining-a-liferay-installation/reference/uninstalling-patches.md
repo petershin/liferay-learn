@@ -5,25 +5,21 @@
 パッチをインストールした後に、インストールを以前のパッチレベルに戻すことができます。 ここでは、以下の方法を学びます。
 
 * パッチをアンインストールする
-* すべてのパッチを一度に元に戻します（アンインストールします）。
-
-<a name="uninstalling-a-patch" />
+* すべてのパッチを一度に元に戻す（アンインストール）
 
 ## パッチのアンインストール
 
-パッチをアンインストールして、インストールを希望のパッチレベルに復元できます。
+パッチをアンインストールして、インストールを目的のパッチレベルに復元できます。
 
-1. `パッチ` フォルダーから不要なパッチを削除します。
+1. `patches`フォルダから不要なパッチを削除します。
 
-1. `./patching-tool.sh install` コマンドを実行して、残りの `patch` フォルダー内の残りのパッチが定義するパッチレベルにインストールを復元します。
+1. `./patching-tool.sh install` コマンドを実行して、残りの `patches` フォルダ内の残りのパッチが定義するパッチレベルにインストールを復元します。
 
 これで、DXPインストールには、パッチで指定されているパッチレベルが適用されます。
 
-<a name="reverting-all-patches" />
-
 ## すべてのパッチを元に戻す
 
-パッチのすべてまたはほとんどを削除する場合は、パッチツールの `revert` コマンドを使用する方が簡単な場合があります。 `revert` コマンドは、DXPインストールからすべてのパッチを削除し、元のインストールバージョン（GA1など）に戻します。
+パッチのすべてまたはほとんどを削除する場合は、パッチングツールの `revert` コマンドを使用する方が簡単な場合があります。 `revert` コマンドは、DXPインストールからすべてのパッチを削除し、元のインストールしたバージョン（GA1など）に戻します。
 
 1. すべてのパッチを削除します。
 
@@ -31,17 +27,13 @@
     ./patching-tool.sh revert
     ```
 
-    すべてのパッチが `パッチ` フォルダーから削除されます。
+    すべてのパッチが `patches` フォルダから削除されます。
 
-1. [適用可能なパッチをインストールする](./installing-patches.md)ことで、インストールを希望のパッチレベルまで戻します。
-
-<!-- end list -->
+1. [適用可能なパッチをインストールする](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)ことで、インストールを目的のパッチレベルまで戻します。
 
 ```{tip}
-It's helpful to store your patches in a convenient location in case you want to restore your installation to a particular patch level. You can always download fix packs again from the [Customer Portal](https://customer.liferay.com/downloads) .
+インストールを特定のパッチレベルに復元する場合に備えて、パッチを便利な場所に保存すると便利です。 フィックスパックは、[カスタマーポータル](https://customer.liferay.com/downloads)からいつでも再度ダウンロードできます。
 ```
-
-<a name="reverting-a-hotfix" />
 
 ## ホットフィックスを元に戻す
 
@@ -55,9 +47,7 @@ It's helpful to store your patches in a convenient location in case you want to 
 
 これで、パッチをアンインストールして元に戻すことにより、DXPインストールを復元する方法がわかりました。
 
-<a name="additional-information" />
-
 ## 追加情報
 
-* [パッチのインストール](./installing-patches.md)
-* [パッチタイプについて](./understanding-patch-types.md)
+* [Installing Patches](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
+* [パッチタイプについて](../patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md)

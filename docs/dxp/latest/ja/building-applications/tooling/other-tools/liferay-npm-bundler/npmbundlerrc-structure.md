@@ -4,11 +4,9 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 
 デフォルトプリセットがliferay-npm-bundlerを構成する方法については、 [default preset reference](./how-the-default-preset-configures-the-liferay-npm-bundler.md) を参照してください。 Liferay JS Generatorと一緒にliferay-npm-bundlerを使用してJavaScriptウィジェットを作成する方法については、[Creating JavaScript Widgets with JavaScript Tooling](../liferay-js-generator.md)を参照してください。
 
-<a name="the-structure" />
-
 ## 構造
 
-`.npmbundlerrc` ファイルには、4つの可能なフェーズ定義があります： **copy-process** 、 **pre-process** 、 **post-process** 、そして **babel** です。 これらのフェーズの定義について、以下で詳しく説明します。
+`.npmbundlerrc` ファイルには、4つの可能なフェーズ定義があります：*copy-process*、*pre-process*、 *post-process*、そして*babel*です。 これらのフェーズの定義について、以下で詳しく説明します。
 
 **コピープロセス：** `コピープラグイン` プロパティで定義されます（依存パッケージでのみ使用可能）。 特定の各パッケージからコピーまたは除外するファイルを指定します。
 
@@ -20,7 +18,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 このフェーズでは、Babelはパッケージファイルを変換します（たとえば、必要に応じてそれらをAMD形式に変換します）が、それらをトランスパイルしません。 理論的には、適切なプラグインを設定することでそれらをトランスパイルすることもできます。 関係のない両方のプロセスが混在しないように、バンドルを実行する前にトランスパイルすることをお勧めします。
 ```
 
-**ポストプロセス：** `ポストプラグイン` プロパティで定義されます。 **プリプロセス** フェーズを使用する代わりに、これはバベルフェーズの完了後に実行するプラグインを指定します。
+**ポストプロセス：** `ポストプラグイン` プロパティで定義されます。 *プリプロセス* フェーズを使用する代わりに、これはバベルフェーズの完了後に実行するプラグインを指定します。
 
 以下は、 `.npmbundlerrc` 構成の例です：
 
@@ -109,8 +107,6 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 上記のすべての定義形式（「*」、「some-package-name」、「some-package-name @ version」）が必要なわけではありません。 ほとんどの場合、ワイルドカード定義（ 「* 」）で十分です。 ワイルドカード以外の形式（「some-package-name」と「some-package-name @ version」）は、ワイルドカード定義が提供するよりも具体的な構成を必要とするパッケージのまれな例外です。
 ```
 
-<a name="standard-configuration-options" />
-
 ### 標準構成オプション
 
 以下は、 `.npmbundlerrc` ファイルの標準構成オプションです。
@@ -139,15 +135,13 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 
 `verbose:` ツールが実行していることに関する詳細情報をコンソールに出力するかどうかを設定します。 デフォルト値は `false`です。
 
-<a name="package-processing-options" />
-
 ### パッケージ処理オプション
 
 `"/"`：プロジェクトのパッケージのプラグインの構成。
 
 `"\"`：依存パッケージのプラグインの設定。
 
-（**アスタリスク**） ：すべてのnpmパッケージのデフォルトのプラグイン構成を定義します。 対応するキーで識別される4つの値が含まれます。 キー `コピープラグイン`、 `プラグイン` 及び `ポストプラグイン`はコピー、プリ、ポストの各工程で適用する`liferay-npm-bundler`プラグインの配列を示します。 キー `.babelrc` は、Babelステップで使用する構成を指定するオブジェクトを識別し、標準の `.babelrc` ファイルと同じ構造を持っています。
+*（アスタリスク）*：すべてのnpmパッケージのデフォルトのプラグイン構成を定義します。 対応するキーで識別される4つの値が含まれます。 キー `コピープラグイン`、 `プラグイン` 及び `ポストプラグイン`はコピー、プリ、ポストの各工程で適用する`liferay-npm-bundler`プラグインの配列を示します。 キー `.babelrc` は、Babelステップで使用する構成を指定するオブジェクトを識別し、標準の `.babelrc` ファイルと同じ構造を持っています。
 
 `exclude：` すべてまたは特定のパッケージからのバンドルから除外するファイルのglob式を定義します。 各リストは、 `*` （任意のパッケージ）、 `{package name}`（任意のバージョンのパッケージ）、または `{package name}@{version}`（特定のバージョンのパッケージ）のいずれかのキーで識別される配列です。 以下は設定例です：
 
@@ -175,7 +169,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 
 `max-parallel-files：` EMFILEエラーを回避するために並列処理するファイルの最大数を定義します（特にWindowsの場合）。 デフォルト値は `128`です。
 
-`process-serially:` **注** ：v 2.7.0から削除されました。 `max-parallel-files`に置き換えられました。
+`process-serially:` **注**：v 2.7.0から削除されました。 `max-parallel-files`に置き換えられました。
 
 `rules:` ローダーでプロジェクトソースファイルに適用するルールを定義します。 ルールには、使用するローダーを定義する `use` 配列プロパティが必要です。これは、パッケージ名または `ローダー` と `オプション` プロパティ（該当する場合）を持つオブジェクトを使用して指定でき、以下の1つ以上のプロパティがあります。
 
@@ -222,13 +216,11 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-<a name="osgi-bundle-creation-options" />
-
 ### OSGiバンドル作成オプション
 
 バージョン2.2.0以降、liferay-npm-bundlerはウィジェットOSGiバンドルを作成できます。 詳しい手順については、[Creating and Bundling JavaScript Widgets with JavaScript Tooling](../liferay-js-generator.md)を参照してください。 OSGiバンドル作成の構成オプションは次のとおりです：
 
-***create-jar** ：真の値に設定すると、OSGiバンドルが作成されます。 `true`に設定すると、すべてのサブオプションはデフォルト値を取ります。 オブジェクトが渡されると、各サブオプションを個別に構成できます。 これをビルドフラグとして渡すこともできます： `$ liferay-npm-bundler --create-` または `$ liferay-npm-bundler -j`。 デフォルト値は `false`です。
+* **create-jar**：真の値に設定すると、OSGiバンドルが作成されます。 `true`に設定すると、すべてのサブオプションはデフォルト値を取ります。 オブジェクトが渡されると、各サブオプションを個別に構成できます。 これをビルドフラグとして渡すこともできます： `$ liferay-npm-bundler --create-` または `$ liferay-npm-bundler -j`。 デフォルト値は `false`です。
 
 ```json
 {
@@ -236,9 +228,9 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.auto-deploy-portlet** ：このオプションは非推奨です。 代わりに `create-jar.features.js-extender` オプションを使用してください。
+* **create-jar.auto-deploy-portlet**：このオプションは非推奨です。 代わりに `create-jar.features.js-extender` オプションを使用してください。
 
-***create-jar.features.configuration** ：使用するシステム（OSGi）およびウィジェットインスタンス（ポートレット仕様で定義されているウィジェット設定）の構成を記述したファイルを指定します。 （必要な設定構成の詳細については、[Configuring System Settings and Instance Settings for Your JavaScript Widgets](../liferay-js-generator.md)を参照してください）。 そのファイルが存在する場合、デフォルト値は `features/configuration.json` です。それ以外の場合、デフォルトは `undefined`です。
+* **create-jar.features.configuration**：使用するシステム（OSGi）およびウィジェットインスタンス（ポートレット仕様で定義されているウィジェット設定）の構成を記述したファイルを指定します。 （必要な設定構成の詳細については、[Configuring System Settings and Instance Settings for Your JavaScript Widgets](../liferay-js-generator.md)を参照してください）。 そのファイルが存在する場合、デフォルト値は `features/configuration.json` です。それ以外の場合、デフォルトは `undefined`です。
 
 ```json
 {
@@ -250,7 +242,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.output-dir：** 最終的なJARを配置する場所を指定します。
+* **create-jar.output-dir：** 最終的なJARを配置する場所を指定します。
 
 ```json
 {
@@ -260,7 +252,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.features.js-extender：** OSGiバンドルをJS Portlet Extenderで処理するかどうかを制御します。 バンドルに使用するエクステンダーの最低限必要なバージョンを指定することもできます。 これは、バンドルで高度な機能を使用したいが、Extenderの古いバージョンで展開可能にしたい場合に役立ちます。 ストリング `"any"` を渡して、バンドルをエクステンダーの任意のバージョンにデプロイできるようにします。 `true`の場合、liferay-npm-bundlerは、バンドルで使用される機能に必要なエクステンダーの最小バージョンを自動的に決定します。 デフォルト値は `true`です。 以下は構成例です：
+* **create-jar.features.js-extender：** OSGiバンドルをJS Portlet Extenderで処理するかどうかを制御します。 バンドルに使用するエクステンダーの最低限必要なバージョンを指定することもできます。 これは、バンドルで高度な機能を使用したいが、Extenderの古いバージョンで展開可能にしたい場合に役立ちます。 ストリング `"any"` を渡して、バンドルをエクステンダーの任意のバージョンにデプロイできるようにします。 `true`の場合、liferay-npm-bundlerは、バンドルで使用される機能に必要なエクステンダーの最小バージョンを自動的に決定します。 デフォルト値は `true`です。 以下は構成例です：
 
 ```json
 {
@@ -272,7 +264,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.features.web-context：** バンドルの静的リソースの公開に使用するコンテキストパスを指定します。 デフォルト値は `/{project name}-{project version}`です。
+* **create-jar.features.web-context：** バンドルの静的リソースの公開に使用するコンテキストパスを指定します。 デフォルト値は `/{project name}-{project version}`です。
 
 ```json
 {
@@ -284,7 +276,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.features.localization：** バンドルに使用するL10Nファイルを指定します。ウィジェットでのローカリゼーションの使用の詳細については、[Providing Localization in Your JavaScript Widgets](../liferay-js-generator.md)を参照してください。 デフォルト値は、そのベース名を持つプロパティファイルが存在する場合、 `features/localization/Language` です。それ以外の場合、デフォルトは `undefined`です。
+* **create-jar.features.localization：** バンドルに使用するL10Nファイルを指定します。ウィジェットでのローカリゼーションの使用の詳細については、[Providing Localization in Your JavaScript Widgets](../liferay-js-generator.md)を参照してください。 デフォルト値は、そのベース名を持つプロパティファイルが存在する場合、 `features/localization/Language` です。それ以外の場合、デフォルトは `undefined`です。
 
 ```json
 {
@@ -296,10 +288,10 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.features.settings：** このオプションは非推奨です。 代わりに `create-jar.features.configuration` オプションを使用してください。
+* **create-jar.features.settings：** このオプションは非推奨です。 代わりに `create-jar.features.configuration` オプションを使用してください。
 
 ```{note}
-プラグインの設定では、可能なすべてのフェーズでプラグインを設定するためのオプションと、バベルを実行する際に使用する`.babelrc`ファイルを指定します（このファイルフォーマットの詳細については、 [Babel's documentation](https://babeljs.io/docs/usage/babelrc/) を参照してください）。
+プラグインの設定では、可能なすべてのフェーズでプラグインを設定するためのオプションと、バベルを実行する際に使用する`.babelrc`ファイルを指定します（このファイルフォーマットの詳細については、[Babel's documentation](https://babeljs.io/docs/usage/babelrc/)を参照してください）。
 ```
 
 ```{note}

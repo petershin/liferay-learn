@@ -17,8 +17,6 @@ developer-guide/apis.md
 - モデルエンティティのインデックス作成
 - 検索クエリとフィルター
 
-<a name="apis" />
+## API
 
-## APIs
-
-- [Search APIs](./developer-guide/apis.md)
+- [検索API](./developer-guide/apis.md)

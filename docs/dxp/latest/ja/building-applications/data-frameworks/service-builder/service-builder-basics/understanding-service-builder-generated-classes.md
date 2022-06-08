@@ -5,7 +5,7 @@
 サンプルプロジェクトをダウンロードして解凍することから始めます。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
+curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
 ```
 
 ```bash
@@ -21,8 +21,6 @@ unzip liferay-w9b7.zip
 `package-path="com.acme.w9b7"`の設定は、クラスが`-api`モジュールおよび`-service`モジュールの`com/acme/w9b7`パッケージパスに生成されることを指定します。 唯一のエンティティは`W9B7Entry`と呼ばれます。 ローカルサービス（DXP/Portalと同じJVMからアクセス可能なサービス）はありますが、リモートサービスはありません。
 
 生成されたクラスを確認してください。
-
-<a name="generated-classes-listing" />
 
 ## 生成されたクラスのリスト
 
@@ -74,13 +72,11 @@ w9b7-service/src/main/java/com/acme/w9b7
 
 APIクラスから順に、すべてのクラスについて説明します。
 
-<a name="api-classes" />
-
 ## APIクラス
 
 APIクラスは、パブリックインターフェイス、ユーティリティー、および定数を定義します。
 
-| APIクラス                         | 説明                                                                                                                                                                                                                                            |
+| APIクラス                         | Description                                                                                                                                                                                                                                   |
 |:------------------------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `W9B7Entry`                    | `W9B7Entry`モデルインターフェイス。 `W9B7EntryModel`を拡張します。                                                                                                                                                                                               |
 | `W9B7EntryModel`               | ベースモデルインターフェイス。 このインターフェイスとその`W9B7EntryModelImpl`実装は、サービスビルダーが生成するデフォルトのプロパティアクセサーのコンテナとしてのみ機能します。 すべてのヘルパーメソッドとすべてのアプリケーションロジックを`W9B7EntryImpl`に追加する必要があります。                                                                                 |
@@ -93,26 +89,22 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
 | `W9B7EntryLocalServiceUtil`    | `W9B7EntryLocalServiceImpl`をラップするローカルサービスユーティリティクラス。                                                                                                                                                                                          |
 | `W9B7EntryLocalServiceWrapper` | `W9B7EntryLocalService`を実装するローカルサービスラッパー。 このクラスを拡張して、[エンティティのローカルサービスをカスタマイズ](../../../liferay-internals/extending-liferay/creating-service-wrappers.md)することができます。                                                                            |
 
-<a name="implementation-classes" />
-
 ## 実装クラス
 
 これらのクラスは、モデルレイヤー、永続性レイヤー、およびサービスレイヤーを実装します。
 
-| 実装クラス                                        | 説明                                                                                                                                                                                            |
-|:-------------------------------------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `W9B7EntryBaseImpl`                          | `W9B7EntryModelImpl`を拡張して、`W9B7_W9B7Entry` データベーステーブルの行を表します。各列は`W9B7EntryModel`プロパティにマップされます。                                                                                                |
-| `W9B7EntryCacheModel`                        | キャッシュ内の`W9B7Entry`エンティティを表します。                                                                                                                                                                |
-| `W9B7EntryImpl` (**MODIFIABLE**)             | モデルの実装。 このクラスを使用して、ヘルパーメソッドとアプリケーションロジックをモデルに追加できます。 ヘルパーメソッドまたはアプリケーションロジックを追加しない場合、自動生成されたフィールドゲッターとセッターのみが使用可能です。 このクラスでメソッドを追加または変更するたびに、サービスビルダーは、次回の実行時にその変更を`W9B7Entry`インターフェイスに伝播します。 |
-| `W9B7EntryLocalServiceBaseImpl`              | ローカルサービスベースの実装。 これは抽象クラスです。 サービスビルダーは、さまざまなサービスクラスと永続性クラスのインスタンスをこのクラスに挿入します。                                                                                                                 |
-| `W9B7EntryLocalServiceImpl` (**MODIFIABLE**) | ローカルサービスの実装。 これは、ローカルサービスで変更する必要がある唯一のクラスです。 ここにビジネスロジックを追加します。 サービスビルダーは、ここで追加または変更されたメソッドについて、次回の実行時にその変更を`W9B7EntryLocalService`インターフェイスに伝播します。                                            |
-| `W9B7EntryModelArgumentsResolver`            | エンティティ値を取得するためのパラメーターを処理します。                                                                                                                                                                  |
-| `W9B7EntryModelImpl`                         | ベースモデルの実装。                                                                                                                                                                                    |
-| `W9B7EntryPersistenceImpl`                   | `W9B7EntryPersistence`を実装する永続性実装クラス。                                                                                                                                                          |
+| 実装クラス                                  | 説明                                                                                                                                                                                                |
+|:-------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `W9B7EntryBaseImpl`                    | `W9B7EntryModelImpl`を拡張して、`W9B7_W9B7Entry` データベーステーブルの行を表します。各列は`W9B7EntryModel`プロパティにマッピングされます。                                                                                                  |
+| `W9B7EntryCacheModel`                  | キャッシュ内の`W9B7Entry`エンティティを表します。                                                                                                                                                                    |
+| `W9B7EntryImpl` (**変更可能**)             | モデルの実装。 このクラスを使用して、ヘルパーメソッドとアプリケーションロジックをモデルに追加できます。 ヘルパーメソッドまたはアプリケーションロジックを追加しない場合、自動生成されたフィールドゲッターとセッターのみが使用可能です。 このクラスでメソッドを追加または変更するたびに、サービスビルダーは、次回の実行時にその変更を`W9B7Entry`インターフェイスにプロパゲートします。 |
+| `W9B7EntryLocalServiceBaseImpl`        | ローカルサービスベースの実装。 これは抽象クラスです。 サービスビルダーは、さまざまなサービスクラスと永続性クラスのインスタンスをこのクラスに挿入します。                                                                                                                     |
+| `W9B7EntryLocalServiceImpl` (**変更可能**) | ローカルサービスの実装。 これは、ローカルサービスで変更する必要がある唯一のクラスです。 ここにビジネスロジックを追加します。 サービスビルダーは、ここで追加または変更されたメソッドについて、次回の実行時にその変更を`W9B7EntryLocalService`インターフェイスにプロパゲートします。                                            |
+| `W9B7EntryModelArgumentsResolver`      | エンティティ値を取得するためのパラメーターを処理します。                                                                                                                                                                      |
+| `W9B7EntryModelImpl`                   | ベースモデルの実装。                                                                                                                                                                                        |
+| `W9B7EntryPersistenceImpl`             | `W9B7EntryPersistence`を実装する永続性実装クラス。                                                                                                                                                              |
 
 `*BaseImpl`抽象クラスは実装に富んでいます。 `W9B7EntryImpl`クラスと`W9B7EntryLocalServiceImpl`クラスはそれらを拡張し、機能を追加する方法を提供します。
-
-<a name="adding-a-local-service-method" />
 
 ## ローカルサービスメソッドの追加
 
@@ -173,14 +165,15 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
 
 新しいメソッドは、モジュールで公開できます。
 
-<a name="testing-the-new-service-method" />
-
 ## 新しいサービスメソッドのテスト
 
-```{include} /_snippets/run-liferay-portal.md
-```
-
 次に、モジュールをデプロイして、新しいサービスをテストします。
+
+1. [Liferay Dockerコンテナ](../../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
+
+   ```bash
+   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+   ```
 
 1. サンプルをビルドしてデプロイします。
 
@@ -198,6 +191,14 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
     STARTED com.acme.w9b7.api_1.0.0
     STARTED com.acme.w9b7.service_1.0.0
     ```
+
+1. ブラウザで`http://localhost:8080`を開きます。
+
+1. デフォルトの認証情報を使用してサインインします。
+
+    **ユーザー名**: `test@liferay.com`
+
+    **パスワード：** `test`
 
 1. ［コントロールパネル］→［サーバー管理］→［スクリプト］でスクリプトコンソールに移動します。
 
@@ -225,8 +226,6 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
 
 　 これで、新しいサービスメソッドが正常に追加されました。
 
-<a name="whats-next" />
-
 ## 次のステップ
 
-サービスビルダーで生成されたクラスについてと、ローカルサービスメソッドを追加する方法を理解したので、ポートレットからサービスを呼び出す</a>方法を学習できます。
+サービスビルダーで生成されたクラスについてと、ローカルサービスメソッドを追加する方法を理解したので、[ポートレットからサービスを呼び出す](./invoking-a-service-locally.md)方法を学習できます。

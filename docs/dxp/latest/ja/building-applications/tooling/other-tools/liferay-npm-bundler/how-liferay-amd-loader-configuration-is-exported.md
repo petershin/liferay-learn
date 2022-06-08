@@ -6,14 +6,16 @@ Liferay AMD Loader の仕組みがわからない場合は、まず [Liferay AMD
 
 [重複除外](./how-portal-publishes-npm-packages.md#package-de-duplication) されている場合、JavaScriptモジュールは、 `/o/js_loader_modules` URLによって返される構成を通じてLiferay AMD Loaderで使用できるようになります。
 
-以下に示すOSGiバンドルは、この記事の参照用に使用されています。 <!-- TODO: Update the following bullets into an actual dir structure diagram akin to: https://learn.liferay.com/dxp-cloud/latest/en/reference/upgrading-your-dxp-cloud-stack.html#preparing-to-upgrade --> * `my-bundle/`
+以下に示すOSGiバンドルは、この記事の参照用に使用されています。<!-- TODO: Update the following bullets into an actual dir structure diagram akin to: https://learn.liferay.com/dxp-cloud/latest/en/reference/upgrading-your-dxp-cloud-stack.html#preparing-to-upgrade -->
+
+* `my-bundle/`
     * `META-INF/`
         * `リソース/`
             * `package.json`
                 * name: my-bundle-package
                 * バージョン：1.0.0
                 * main: lib/index
-                * 依存関係：
+                * 依存関係:
                     * isarray：2.0.0
                     * isobject: 2.1.0
                 * ...
@@ -40,7 +42,7 @@ Liferay AMD Loader の仕組みがわからない場合は、まず [Liferay AMD
                 * `isarray@2.0.0/`
                     * `package.json`
                         * name: isarray
-                        * バージョン: 2.0.0
+                        * バージョン：2.0.0
                         * ...
                     * ...
 

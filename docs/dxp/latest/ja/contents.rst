@@ -6,8 +6,7 @@
    :includehidden:
    :maxdepth: 6
 
-   getting_started
-   building_solutions_on_dxp
+   getting_started.md
    site_building
    content-authoring-and-management
    process_automation

@@ -18,12 +18,12 @@ installing-liferay-on-an-application-server/installing-on-weblogic.md
 installing-liferay-on-an-application-server/installing-on-websphere.md
 ```
 
-You can install Liferay DXP or Liferay Portal on any [supported application server](https://help.liferay.com/hc/ja/articles/360049238151) . This is typically the most practical installation type to use in DevOps and high availability environments.
+Liferay DXPまたはLiferay Portalは、 [対応されているアプリケーションサーバー](https://help.liferay.com/hc/en-us/articles/360049238151)にインストールすることが可能です。 これは通常、DevOpsおよび高可用性環境で使用する最も実用的なインストールタイプです。
 
-To get started,
+開始するには、
 
-1. Choose a supported application server from the [compatibility matrix](https://help.liferay.com/hc/ja/articles/360049238151) .
-1. Follow the instructions for installing DXP/Portal one of the application servers:
+1. [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360049238151)からサポートされているアプリケーションサーバーを選択します。
+1. DXP/Portal oneのアプリケーションサーバーのインストール方法に従ってください。
 
     * [Tomcat](./installing-liferay-on-an-application-server/installing-on-tomcat.md)
     * [WildFly](./installing-liferay-on-an-application-server/installing-on-wildfly.md)

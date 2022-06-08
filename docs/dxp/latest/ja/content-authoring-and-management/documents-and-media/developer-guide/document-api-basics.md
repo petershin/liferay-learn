@@ -4,21 +4,28 @@ LiferayのHeadless Deliveryアプリケーションは、[ドキュメントと�
 
 サンプルのcURLコマンドとJavaクラスを使用してドキュメントをアップロードすることから始めます。
 
-<a name="post-a-document" />
-
 ## ドキュメントを投稿する
 
-```{include} /_snippets/run-liferay-portal.md
-```
-
-次に、以下の手順を実行します。
-
-1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 このIDは、いくつかのサービス呼び出しで使用します。
-
-1. [サンプルのプロジェクト](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip) をダウンロードして解凍します。
+1.  Liferay Dockerイメージを起動します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
+
+1. Liferayの初期化後、ブラウザで`http://localhost:8080`にアクセスします。
+
+1. デフォルトの認証情報を使用してサインインします。
+
+    **ユーザー名**: `test@liferay.com`
+
+    **パスワード：** `test`
+
+1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 このIDは、いくつかのサービス呼び出しで使用します。
+
+1. [サンプルのプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip)をダウンロードして解凍します。
+
+    ```bash
+    curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
     ```
 
     ```bash
@@ -36,10 +43,14 @@ cURLスクリプトを使用して、ファイルを[ドキュメントとメデ
 1. サイトIDをパラメーターとして使用して`Document_POST_ToSite.sh`スクリプトを実行し、ファイルをアップロードします。 例:
 
     ```bash
-    ./Document **POST** ToSite.sh 1234
+    ./Document_POST_ToSite.sh 1234
     ```
 
-スクリプトは、それ自体をサイトのドキュメントとメディアにアップロードします。
+    ```{note}
+    もし、ユーザーとパスワードがそれぞれ `test@liferay.com` と `test` でない場合は、 `Document_POST_ToSite.sh` スクリプトを実行する前に、これらの値を置き換えてください。
+    ```
+
+スクリプトは、それ自体をサイトの Documents and Mediaにアップロードします。
 
 ![ドキュメントとメディアにアップロードされたファイル。](./document-api-basics/images/01.png)
 
@@ -67,24 +78,26 @@ cURLスクリプトを使用して、ファイルを[ドキュメントとメデ
     ```
 
     ```bash
-    javac -classpath .: *** .java
+    javac -classpath .:* *.java
     ```
 
 1. 以下の`Document_POST_ToSite`クラスを実行し、`siteId`システムプロパティ値をサイトのIDに置き換えて、ファイルをドキュメントとメディアにアップロードします。
 
     ```bash
-    java -classpath .: **-DsiteId=1234 Document****POST** ToSite
+    java -classpath .:* -DsiteId=1234 Document_POST_ToSite
     ```
 
-クラスは、ソースファイル`Document_POST_ToSite.java`をドキュメントとメディアにアップロードします。
+    ```{note}
+    もし、ユーザーとパスワードがそれぞれ `test@liferay.com` と `test` でない場合は、 `Document_POST_ToSite.java` ファイルでそれらの値を置き換え、実行する前にクラスを再コンパイルしてください。
+    ```
+
+クラスは、ソースファイル`Document_POST_ToSite.java`を Documents and Mediaにアップロードします。
 
 ![JavaクラスはJavaソースファイルをアップロードしました。](./document-api-basics/images/02.png)
 
 cURLコマンドとJavaクラスの仕組みをご覧ください。
 
-<a name="examine-the-curl-command" />
-
-## cURLコマンドを調べる
+## cURLコマンドの検証
 
 `Document_POST_ToSite.sh`スクリプトは、cURLを使用して`headless-delivery`アプリケーションのRESTサービスを呼び出すことにより、ファイルをアップロードします。
 
@@ -94,23 +107,21 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 コマンドの引数は次のとおりです。
 
-| 引数                                                                      | 説明                                                                   |
+| 引数                                                                      | Description                                                          |
 |:----------------------------------------------------------------------- |:-------------------------------------------------------------------- |
 | `-F "file=@Document_POST_ToSite.sh"`                                    | 投稿するファイル。                                                            |
-| `-H "Content-Type: multipart/form-data"`                                | 投稿されているメディアタイプ（ [MIME 種別](https://en.wikipedia.org/wiki/Media_type) ）。 |
+| `-H "Content-Type: multipart/form-data"`                                | 投稿されているメディアタイプ（[MIME 種別](https://en.wikipedia.org/wiki/Media_type)）。 |
 | `-X POST`                                                               | 指定されたエンドポイントで呼び出すHTTPメソッド。                                           |
 | `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | RESTサービスエンドポイント。 サイトIDのパラメーターが`${1}`に置き換わります。                        |
 | `-u "test@liferay.com:test"`                                            | 基本認証の資格情報。                                                           |
 
 ```{note}
-   ここでは、デモンストレーションの目的で基本認証を使用しています。 本番環境の場合は、 [OAuth 2.0](../../../headless-delivery/using-oauth2/using-oauth2.md) 経由でユーザーを認証する必要があります。
+ここでは、デモンストレーションの目的で基本認証を使用しています。 本番環境では、[OAuth 2.0](./../../headless-delivery/using-oauth2/using-oauth2.md) を使ってユーザーを認証する必要があります。
 ```
 
 `Document`および`DocumentFolder` RESTサービスの他のcURLコマンドは、同様の引数を使用します。
 
 次に、Javaの呼び出しがいかに似ているかを見てみましょう。
-
-<a name="examine-the-java-class" />
 
 ## Javaクラスを調べる
 
@@ -130,25 +141,25 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | `DocumentResource documentResource = builder.authentication(...).build();` | 基本認証を指定し、`DocumentResource`サービスインスタンスを生成します。                                                                                                                                            |
 | `Document document = documentResource.postSiteDocument(...);`              | `DocumentResource.postSiteDocument`メソッドを呼び出し、サイトID、アップロードされたファイルを表す`Document`オブジェクト、およびアップロードするファイルを指定するハッシュマップを渡します。  ファイルは任意です。この例では、便宜上、ローカルファイル`Document_POST_ToSite.java`を使用しています。 |
 
+プロジェクトには、依存関係として`com.liferay.headless.delivery.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
+
 ```{note}
-   `` main``メソッドのコメントは、クラスの実行を示しています。
+main`メソッドのコメントでは、クラスの実行を実演しています。
 ```
 
 他の例のJavaクラスはこれと類似していますが、異なる`DocumentResource`メソッドを呼び出します。
 
 ```{important}
-   サービスの詳細は、 [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) を参照してください。
+サービスの詳細は [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) を参照ください。
 ```
 
 以下は、cURLとJavaを使って、他の`Document` RESTサービスを呼び出す例です。
-
-<a name="get-site-documents" />
 
 ## サイトドキュメントを取得する
 
 次のcURLまたはJavaコマンドを実行すると、サイトのドキュメントを一覧表示できます。 上記のように、`1234`をサイトのIDに置き換えてください。
 
-### Documents **GET** FromSite.sh
+### Documents_GET_FromSite.sh
 
 コマンド:
 
@@ -156,13 +167,13 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 ./Documents_GET_FromSite.sh 1234
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_GET_FromSite.sh
    :language: bash
 ```
 
-### Documents **GET** FromSite.java
+### Documents_GET_FromSite.java
 
 コマンド:
 
@@ -170,7 +181,7 @@ Code:
 java -classpath .:* -DsiteId=1234 Documents_GET_FromSite
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Documents_GET_FromSite.java
    :dedent: 1
@@ -180,17 +191,15 @@ Code:
 
 サイトの`Document`オブジェクトがJSONに一覧表示されます。
 
-<a name="get-a-document" />
-
 ## ドキュメントを取得する
 
 次のcURLまたはJavaコマンドを実行すると、`Document`のフィールドを取得できます。 `1234`を`Document`のIDに置き換えてください。
 
-```{tip} 
-   ``Documents_GET_FromSite.[java|sh]``を使用して、サイトの``Document`` IDを取得します。
+```{tip}
+サイトの `Document` ID を取得するには、 `Documents_GET_FromSite.[java|sh]` を使用してください。
 ```
 
-### Document **GET** ById.sh
+### Document_GET_ById.sh
 
 コマンド:
 
@@ -198,13 +207,13 @@ Code:
 ./Document_GET_ById.sh 1234
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_GET_ById.sh
    :language: bash
 ```
 
-### Document **GET** ById.java
+### Document_GET_ById.java
 
 コマンド:
 
@@ -212,7 +221,7 @@ Code:
 java -classpath .:* -DdocumentId=1234 Document_GET_ById
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_GET_ById.java
    :dedent: 1
@@ -222,13 +231,11 @@ Code:
 
 `Document`フィールドがJSONに一覧表示されます。
 
-<a name="get-document-content" />
-
 ## ドキュメントの内容を取得する
 
 `Document`コンテンツはBase64でエンコードされ、`Document`の`nestedFields`に埋め込まれます。 次のcURLまたはJavaコマンドを実行すると、コンテンツを取得できます。 `1234`を`Document`のIDに置き換えてください。
 
-### Document **GET** ById_ContentValue.sh
+### Document_GET_ById_ContentValue.sh
 
 コマンド:
 
@@ -236,7 +243,7 @@ Code:
 ./Document_GET_ById_ContentValue.sh 1234
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_GET_ById_ContentValue.sh
    :language: bash
@@ -256,7 +263,7 @@ Code:
    :language: bash
 ```
 
-### Document **GET** ById_ContentValue.java
+### Document_GET_ById_ContentValue.java
 
 `Document`コンテンツを取得してデコードするJavaコードは、前のcURLコマンドよりも簡単です。
 
@@ -266,7 +273,7 @@ Code:
 java -classpath .:* -DdocumentId=1234 Document_GET_ById_ContentValue
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_GET_ById_ContentValue.java
    :dedent: 1
@@ -288,13 +295,11 @@ IDで`Document`を取得した後、`Base64.Decoder`は`Document`のコンテン
 Base64.Decoder decoder = Base64.getDecoder();
 ```
 
-<a name="patch-a-document" />
-
 ## ドキュメントにパッチを適用する
 
 `Document`のPATCHサービスは、`Document`とそのフィールドを更新します。 次のcURLまたはJavaコマンドを実行して、`Document`を更新できます。 `1234`を`Document`のIDに置き換えてください。
 
-### Document **PATCH** ById.sh
+### Document_PATCH_ById.sh
 
 コマンド:
 
@@ -302,7 +307,7 @@ Base64.Decoder decoder = Base64.getDecoder();
 ./Document_PATCH_ById.sh 1234
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_PATCH_ById.sh
    :language: bash
@@ -310,15 +315,15 @@ Code:
 
 最初のフォームデータ部分（-Fに続く）は、`Document`の`description`フィールドに新しい値を指定します。 2番目のフォームデータ部分は、アップロードする更新されたファイルを指定します。
 
-### Document **PATCH** ById.java
+### Document_PATCH_ById.java
 
-コマンド:
+コマンド：
 
 ```bash 
 java -classpath .:* -DdocumentId=1234 Document_PATCH_ById
 ```
 
-Code:
+コード：
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_PATCH_ById.java
    :dedent: 1
@@ -332,13 +337,11 @@ Code:
 
 ![cURLコマンドは、ドキュメントの説明を変更しました。](./document-api-basics/images/03.png)
 
-<a name="put-a-document" />
-
 ## ドキュメントを置き換える
 
 `Document`のPUTサービスは、`Document`とそのフィールドを完全に置き換えます。 次のcURLまたはJavaコマンドを実行して、`Document`を置き換えることができます。 `1234`を`Document`のIDに置き換えてください。
 
-### Document **PUT** ById.sh
+### Document_PUT_ById.sh
 
 コマンド:
 
@@ -346,7 +349,7 @@ Code:
 ./Document_PUT_ById.sh 1234
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_PUT_ById.sh
    :language: bash
@@ -354,7 +357,7 @@ Code:
 
 最初のフォームデータ部分は、新しい`description`と`title`フィールドの値を設定します。 2番目のフォームデータ部分は、アップロードする置換ファイルを指定します。
 
-### Document **PUT** ById.java
+### Document_PUT_ById.java
 
 コマンド:
 
@@ -362,7 +365,7 @@ Code:
 java -classpath .:* -DdocumentId=1234 Document_PUT_ById
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_PUT_ById.java
    :dedent: 1
@@ -372,21 +375,19 @@ Code:
 
 上記のJavaコードは、`DocumentResource`の`putDocument`メソッドを呼び出し、`Document`のID、`Document`の`description`フィールドと`title`フィールドの値を含む`Document`オブジェクト、およびアップロードする置換ファイルを渡します。
 
-上記のcURLコマンドとJavaクラスは、`Document`インスタンスを、それぞれ新しいタイトル"Document **PUT** ById.sh"と"Document **PUT** ById.java"を持ち、説明が"Goo"である完全に新しいインスタンスに置き換えます。
+上記のcURLコマンドとJavaクラスは、`Document`インスタンスを、それぞれ新しいタイトル"Document_PUT_ById.sh"と"Document_PUT_ById.java"を持ち、説明が"Goo"である完全に新しいインスタンスに置き換えます。
 
 ```{warning}
-   現在の``Document``のタイトルを使用する場合を除いて、置換する``Document``に使用する ``title``の値を必ず指定してください。
+現在の `Document` のタイトルを使用する場合を除いて、代わりの `Document` に使用する`title` の値を必ず指定してください。
 ```
 
 ![cURLコマンドがドキュメントを置き換えました。](./document-api-basics/images/04.png)
-
-<a name="delete-a-document" />
 
 ## ドキュメントを削除する
 
 次のcURLまたはJavaコマンドを実行して、`Document`を削除できます。 `1234`を`Document`のIDに置き換えてください。
 
-### Document **DELETE** ById.sh
+### Document_DELETE_ById.sh
 
 コマンド:
 
@@ -394,13 +395,13 @@ Code:
 ./Document_DELETE_ById.sh 1234
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_DELETE_ById.sh
    :language: bash
 ```
 
-### Document **DELETE** ById.java
+### Document_DELETE_ById.java
 
 コマンド
 
@@ -408,7 +409,7 @@ Code:
 java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_DELETE_ById.java
    :dedent: 1
@@ -417,8 +418,6 @@ Code:
 ```
 
 `Document`は、ドキュメントとメディアから削除されます。
-
-<a name="more-document-and-document-folder-services" />
 
 ## その他のドキュメントおよびドキュメントフォルダサービス
 
@@ -433,15 +432,13 @@ Code:
 | `DocumentFolder_PUT_ById.[java|sh]`        | フォルダとそのフィールドを完全に置き換えます。 |
 | `DocumentFolders_GET_FromSite.[java|sh]`   | サイトのフォルダを一覧表示します。       |
 
-[API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`Document`および`DocumentFolder`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェイスがあります。
+[API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`Document`および`DocumentFolder`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 
-[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1 **0/DocumentResource.java) および [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY** LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) のJavaインターフェイスも参照してください。
-
-<a name="additional-information" />
+[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java)および[DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java)のJavaインターフェースも参照してください。
 
 ## 追加情報
 
-* [「ドキュメントとメディア」の概要](../documents-and-media-overview.md)
+* [ドキュメントとメディアの概要](../documents-and-media-overview.md)
 * [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
 * [APIヘッダーリファレンス](../../../headless-delivery/consuming-apis/api-headers-reference.md)
 * [GraphQL APIの使用](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md)

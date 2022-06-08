@@ -2,7 +2,7 @@
 
 > LESサブスクライバー
 
-Liferay Enterprise Search（LES）の [サブスクリプション](https://www.liferay.com/products/dxp/enterprise-search) をお持ちの場合は、Elasticの [KibanaモニタリングUI](https://www.elastic.co/guide/en/kibana/7.x/introduction.html) をLiferay DXPと統合できるため、Liferay自体の中でモニタリングアクティビティを実行できます。
+Liferay Enterprise Search（LES）の[サブスクリプション](https://www.liferay.com/products/dxp/enterprise-search)をお持ちの場合は、Elasticの[KibanaモニタリングUI](https://www.elastic.co/guide/en/kibana/7.x/introduction.html)をLiferay DXPと統合できるため、Liferay自体の中でモニタリングアクティビティを実行できます。
 
 ![LES Monitoringを使用すると、LiferayのUIからLiferayのインデックスをモニタリングできます。](./monitoring-elasticsearch/images/01.png)
 
@@ -18,8 +18,6 @@ Liferayのデータがインデックス化されている[セキュリティで
 
 1. Elasticsearchと通信するようにLESモニタリングアプリを設定します。
 
-<a name="enable-data-collection" />
-
 ## データ収集を有効にする
 
 Elasticsearchではデフォルトでモニタリングが有効になっていますが、データ収集は有効になっていません。 この行を`elasticsearch.yml`に追加して、データ収集を有効にします。
@@ -30,17 +28,15 @@ xpack.monitoring.collection.enabled: true
 
 Elasticsearchを再起動してから、Kibanaをインストールします。
 
-<a name="install-kibana" />
-
 ## Kibanaをインストールする
 
-KibanaのバージョンがElasticsearchのバージョンと一致していることを確認してください。 詳細は、 [Liferay Enterprise Search互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
+KibanaのバージョンがElasticsearchのバージョンと一致していることを確認してください。 詳細は、[Liferay Enterprise Search互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360016511651)を参照してください。
 
-```{note} 
-   Elasticsearch 6.x は [end of life](https://www.elastic.co/support/eol#elasticsearch) に達しました。 Liferay 7.2システムでElasticsearch 6.xを使用している場合、Elasticsearch 7.xにアップグレードする必要があります。 詳細は [Upgrading to Elasticsearch 7](./.installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)  をご参照ください。
+```{note}
+Elasticsearch 6.x が、[サポート終了] (https://www.elastic.co/support/eol#elasticsearch) になりました。 Liferay 7.2システムでElasticsearch 6.xを使用している場合、Elasticsearch 7.xにアップグレードする必要があります。 詳細は、[Elasticsearch 7へのアップグレード](./../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md) を参照ください。
 ```
 
-1. [Kibanaをダウンロード](https://www.elastic.co/downloads/kibana) して、解凍します。 ルートフォルダは **Kibanaホーム** と呼ばれます。
+1. [Kibanaをダウンロード](https://www.elastic.co/downloads/kibana)して、解凍します。 ルートフォルダは*Kibanaホーム*と呼ばれます。
 
 1. `kibana.yml`でElasticsearchのURLを設定して、モニタリングデータの送信先をKibanaに指示します。
 
@@ -59,11 +55,11 @@ KibanaのバージョンがElasticsearchのバージョンと一致している�
    elasticsearch.password: "liferay"
    ```
 
-   [セキュリティ設定](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)の`kibana_system`ユーザーパスワードを使用します。 Kibanaをインストールすると、 ［**Management**］ ユーザーインターフェイスから組み込みのユーザーパスワードを変更できます。
+   [セキュリティ設定](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)の`kibana_system`ユーザーパスワードを使用します。 Kibanaをインストールすると、*［Management］*ユーザーインターフェイスから組み込みのユーザーパスワードを変更できます。
 
-1. 証明書ファイルを提供して、暗号化の設定を開始します。 詳しくは [Elastic社のガイド](https://www.elastic.co/guide/en/kibana/7.x/using-kibana-with-security.html#using-kibana-with-security) を参照してください。
+1. 証明書ファイルを提供して、暗号化の設定を開始します。 詳しくは[Elastic社のガイド](https://www.elastic.co/guide/en/kibana/7.x/using-kibana-with-security.html#using-kibana-with-security)を参照してください。
 
-   [Elasticsearch自体用に作成された](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md#generate-node-certificates) ファイルを再利用するには、`［Elasticsearch Home］/config/certs`フォルダを`［Kibana Home］/config/`フォルダにコピーします。
+   [Elasticsearch自体用に作成された](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md#generate-node-certificates)ファイルを再利用するには、`［Elasticsearch Home］/config/certs`フォルダを`［Kibana Home］/config/`フォルダにコピーします。
 
    Kibanaインスタンス用に個別の証明書を生成する場合は、Elasticsearchノード証明書と同じCAによって署名されていることを確認してください。
 
@@ -103,8 +99,6 @@ KibanaのバージョンがElasticsearchのバージョンと一致している�
 
 続行する前にKibanaを停止してください。
 
-<a name="install-and-configure-the-les-monitoring-app" />
-
 ## LESモニタリングアプリをインストールして設定する
 
 LESモニタリングアプリをダウンロードし、LPKGファイルを`［Liferay Home］/deploy`フォルダにコピーしてインストールします。 Liferay DXPが実行されている場合、サーバーを再起動するように求められる場合があります。 または、Liferayを実行していない状態で、LPKGファイルを`［Liferay Home］/marketplace`フォルダに配置することもできます。
@@ -129,7 +123,7 @@ LESモニタリングアプリをダウンロードし、LPKGファイルを`［
 
    正確な構成値は、Kibanaの構成によって異なります。 たとえば、TLSを有効にしていない場合は、`kibanaURL="http://localhost:5601"`などのURLを使用します。
 
-   または、 [システム設定](../../system-administration/configuring-liferay/system-settings.md) からモニタリングアダプターを設定します。 グローバルメニューで、 ［**コントロールパネル**］ → ［**設定**］ → ［**システム設定**］ に移動し、［検索］カテゴリでElasticsearch Monitoringエントリを見つけます。 モニタリングコネクタのすべての設定オプションがそこに表示されます。
+   または、[システム設定](../../system-administration/configuring-liferay/system-settings.md)からモニタリングアダプターを設定します。 グローバルメニューで、*［コントロールパネル］* → *［設定］* → *［システム設定］*に移動し、［検索］カテゴリでElasticsearch Monitoringエントリを見つけます。 モニタリングコネクタのすべての設定オプションがそこに表示されます。
 
 1. 構成ファイルを`Liferay Home/osgi/configs`にデプロイすると、実行中のインスタンスが設定を適用します。
 
@@ -163,19 +157,15 @@ LESモニタリングアプリをダウンロードし、LPKGファイルを`［
 
 LiferayとKibanaを再起動します。
 
-<a name="monitoring-in-liferay" />
-
 ## Liferayでのモニタリング
 
 KibanaとLES Monitoringがインストールされ、構成され、すべての サーバーが稼働したら、Elasticsearch Monitoringウィジェットをページに追加します。
 
-1. コンテンツページの ［**フラグメントとウィジェット**］ メニュー、またはウィジェットページの［Add Widgets］メニューを開きます。
+1. コンテンツページの*［フラグメントとウィジェット］*メニュー、またはウィジェットページの［Add Widgets］メニューを開きます。
 
-1. ウィジェット検索バーを使用して **モニタリング** を検索し、 **Elasticsearch Monitoring** ウィジェットを［検索］カテゴリからページにドラッグします。 Liferay DXP 7.2の場合、ウィジェットは **X-Pack Monitoring** と呼ばれます。
+1. ウィジェット検索バーを使用して*モニタリング*を検索し、*Elasticsearch Monitoring*ウィジェットを［検索］カテゴリからページにドラッグします。 Liferay DXP 7.2の場合、ウィジェットは*X-Pack Monitoring*と呼ばれます。
 
-> 詳細については、関連するElasticsearchのドキュメントを参照してください。 [**クラスタを監視する](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/es-monitoring.html**) [X-Packを設定する--クラスタ環境での監視とセキュリティのベストプラクティス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html) </a>
-
-<a name="example-kibana-configuration" />
+> 詳細については、関連するElasticsearchのドキュメントを参照してください。 * [クラスタを監視する](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/es-monitoring.html) * [X-Packを設定する--クラスタ環境での監視とセキュリティのベストプラクティス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html)</a>
 
 ## Kibana構成の例
 
@@ -223,8 +213,6 @@ server.basePath: "/o/portal-search-elasticsearch-monitoring/monitoring-proxy"
 #server.ssl.key: config/certs/elastic-nodes.key
 ```
 
-<a name="troubleshooting-the-monitoring-setup" />
-
 ## モニタリング設定のトラブルシューティング
 
 Liferay DXPがJDKバージョン11を使用し、Kibanaバージョン7.11と通信するように構成されている場合、次のようなエラーが発生することがあります。
@@ -237,9 +225,7 @@ SSLException: No PSK available. Unable to resume
 
 1. Tomcatのアウトバウンド接続でTLS 1.3を無効にする。 Tomcatの `setenv.bat/sh`(`CATALINA_OPTS`に追加) 内の`-Dhttps.protocols=TLSv1.1,TLSv1.2` を設定します。
 1. KibanaでTLS 1.3を無効にするには、 `--tls-max-v1.2` を `KIBANA_HOME/config/node.options`に追加します。
-1. 根本的な問題（ [JDK-8213202](https://bugs.openjdk.java.net/browse/JDK-8213202) ）がすでに修正されている [互換性のあるJDKバージョン](https://help.liferay.com/hc/ja/articles/360016511651) に切り替えてください。
-
-<a name="related-topics" />
+1. 根本的な問題（[JDK-8213202](https://bugs.openjdk.java.net/browse/JDK-8213202)）がすでに修正されている [互換性のあるJDKバージョン](https://help.liferay.com/hc/en-us/articles/360016511651) に切り替えてください。
 
 ## 関連トピック
 

@@ -1,48 +1,47 @@
-# RESTビルダーを使用した新しいAPIの実装
+# RESTビルダーを使用したAPIの作成と実装
 
-RESTビルダーを使用すると、構築するAPIを定義でき、RESTビルダーはフレームワークとエンドポイントを提供します。 <!-- Add link to the REST Builder overview article once available. -->
-
-<a name="deploy-an-example-rest-api" />
+RESTビルダーを使用すると、構築したいAPIを定義でき、RESTビルダーはフレームワークとエンドポイントを提供します。
 
 ## サンプルのREST APIをデプロイする
 
 RESTビルダーの動作を確認するために、カタログ内のIDによってダミー製品を取得するサンプルAPIをデプロイできます。 この簡単な例がどのように機能するかを理解したら、独自のアプリケーション用のAPIを作成できます。
 
-```{include} /_snippets/run-liferay-portal.md
-```
-
-次に、以下の手順を実行します。
-
-1. [Acme Foo API](./producing-apis-with-rest-builder/liferay-r3b2.zip) を含む`.zip`アーカイブをダウンロードして解凍します。
+1. Liferay DXP Dockerイメージを起動します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/producing-apis-with-rest-builder/liferay-r3b2.zip -O
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
+
+2. [Acme Foo API](./liferay-r3b2.zip)を含む`.zip`アーカイブをダウンロードして解凍します。
+
+    ```bash
+    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O
     ```
 
     ```bash
     unzip liferay-r3b2.zip
     ```
 
-1. サンプルをビルドしてデプロイします。
+3. サンプルをビルドしてデプロイします。
 
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```note::
-       このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
+    ```{note}
+    このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
     ```
 
-1. `api`バンドルと`impl`バンドルの両方のDockerコンテナコンソールでのデプロイを確認します
+4. `api`バンドルと`impl`バンドルの両方のDockerコンテナコンソールでのデプロイを確認します。
 
     ```
     STARTED com.acme.headless.r3b2.api_1.0.0 
     STARTED com.acme.headless.r3b2.impl_1.0.0
     ```
 
-1. DXPインスタンスにログインし、 **グローバルメニュー**（![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; ［**コントロールパネル**］ &rarr; ［**Gogo シェル**］ に移動します。
+5. DXPインスタンスにログインし、_グローバルメニュー_（![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; _［コントロールパネル］_ &rarr; _［Gogoシェル］_に移動します。
 
-1. Gogo シェルプロンプトで、次のコマンドを入力します。
+6. Gogoシェルプロンプトで、次のコマンドを入力します。
 
     ```
     jaxrs:check
@@ -50,12 +49,12 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
 
     このページには、新しくデプロイされたAPIである`Liferay.Headless.R3B2`を含む、インストールされているすべてのJAX-RSバンドルが一覧表示されます。 これでAPIがデプロイされ、呼び出す準備が整いました。
 
-    ![新しくデプロイされたAPI（Liferay.Headless.R3B2という名前）は、コマンドの結果として一覧表示され、使用できるようになります。](./implementing-a-new-api-with-rest-builder/images/01.png)
+    ![新しくデプロイされたAPI（Liferay.Headless.R3B2という名前）は、コマンドの結果として一覧表示され、使用できるようになります。](./producing-and-implementing-apis-with-rest-builder/images/01.png)
 
-1. ターミナルから次のコマンドを実行し、`{fooId}`を1〜3の数字に置き換えて、APIをテストします。
+7. ターミナルから次のコマンドを実行し、`{fooId}`を1〜3の数字に置き換えて、APIをテストします。
 
     ```bash
-    curl -u 'test@liferay.com:learn' "http://localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}"
+    curl -u 'test@liferay.com:test' "http://localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}"
     ```
 
     クエリは、JSONオブジェクトでラップされた対応する製品のID、名前、および説明を返します。
@@ -72,11 +71,9 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
 
 RESTビルダーで生成されたAPIを確認したので、次はそれがどのように機能するかを理解します。
 
-<a name="initial-setup" />
-
 ## 初期設定
 
-Liferayワークスペースプロジェクトで`impl`および`api`モジュールを作成することから始めます。  `impl`モジュールの`build.gradle`ファイルは、RESTビルダーをプラグインとしてインストールして適用する必要があります。
+Liferay Workspaceプロジェクトで`impl`および`api`モジュールを作成することから始めます。  `impl`モジュールの`build.gradle`ファイルは、RESTビルダーをプラグインとしてインストールして適用する必要があります。
 
 ```
 buildscript {
@@ -100,8 +97,6 @@ dependencies {
 ```
 
 両方のモジュールの`build.gradle`ファイルも、ポータルリリースへの依存関係を宣言する必要があります。
-
-<a name="yaml-configuration" />
 
 ## YAML構成
 
@@ -153,13 +148,13 @@ info:
 openapi: 3.0.1
 ```
 
-```important::
-   ここで定義された `` version``フィールドは、APIパスがLiferayインスタンス内で公開されるときにURLの一部になります。
+```{important}
+ここで定義された `version`フィールドは、APIパスがLiferayインスタンス内で公開されるときにURLの一部になります。
 ```
 
 ### 必要なスキーマを定義する
 
-次に、`components`ブロックで、エンティティのスキーマを定義します。 RESTビルダーは、ここで定義したものを使用して、これらのエンティティを表す対応するJava Beanを作成します。 <!-- Add reference to overview article elaborating a bit more on how REST Builder represents Java Objects with schemas. -->
+次に、`components`ブロックで、エンティティのスキーマを定義します。 RESTビルダーは、ここで定義したものを使用して、これらのエンティティを表す対応するJavaBeansを作成します。 <!-- Add reference to overview article elaborating a bit more on how REST Builder represents Java Objects with schemas. -->
 
 表現するエンティティごとに`schema`ブロックを定義します。
 
@@ -190,7 +185,7 @@ components:
                     type: string
 ```
 
-この例では、`Foo`というスキーマが、このAPIを使用するための重要なデータを表しています。 `Goo`エンティティは、`fooId`を使用して`Foo`にリンクされています。  スキーマでサポートされているデータタイプのリストについては、 [OpenAPIの仕様](https://swagger.io/docs/specification/data-models/data-types/) を参照してください。
+この例では、`Foo`というスキーマが、このAPIを使用するための重要なデータを表しています。 `Goo`エンティティは、`fooId`を使用して`Foo`にリンクされています。  スキーマでサポートされているデータタイプのリストについては、[OpenAPIの仕様](https://swagger.io/docs/specification/data-models/data-types/)を参照してください。
 
 スキーマ定義によって、RESTビルダーが生成するクラスの名前が決まります。これには、リソースファイル内のビルディングブロックとテンプレートが含まれます。 上記のスキーマは`Foo`および`Bar`と呼ばれるため、実装ロジックは`FooResourceImpl`クラスと`GooResourceImpl`クラスに属します。
 
@@ -236,8 +231,8 @@ paths:
             # Place operations on other entities as needed.
 ```
 
-```tip::
-   `` get``、 `` post``、 `` put``、 `` patch``、 `` delete``など、さまざまな種類のリクエストのパスを追加できます。
+```{tip}
+`get`、 `post`、 `put`、 `patch`、 `delete`など、さまざまな種類のリクエストのパスを追加できます。
 ```
 
 このパス（`foo/{fooId}`）は、URLの末尾にパス文字列を追加することでこのAPI（`getFoo`）に到達できることを指定します（これには、`rest-config.yaml`ファイルの`baseURI`と`version`の値も含まれます）。 たとえば、このサンプルAPIには、完全なURL：`localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}`を介してアクセスします。
@@ -258,9 +253,7 @@ tags: ["Foo"]
 
 完全なリファレンスについては、以前にダウンロードした`rest-openapi.yaml`ファイルを参照してください。
 
-関係をどのように行うかを示す`Goo`オブジェクトもあります。Gooは、`fooId`に関連付けられているという意味でFooに関連付けられています。
-
-<a name="run-rest-builder" />
+関連をどのように行うかを示す`Goo`オブジェクトもあります。Gooは、`fooId`に関連付けられているという意味でFooに関連付けられています。
 
 ## RESTビルダーを実行する
 
@@ -272,14 +265,14 @@ tags: ["Foo"]
 
 RESTビルダーはこの構成を使用して、`api`クラスと`impl`クラスの両方にビルディングブロックコードと、実装ロジックを追加できるJavaクラスを取り込みます。
 
-<a name="add-your-implementation-logic" />
+GraphQLエンドポイントコードは `graphql` 、JAX-RSアプリケーションコードは `jaxrs`パッケージで、それぞれ生成されています。 独自のAPI実装は、`resource`パッケージの適切な`*ResourceImpl`クラスに追加されます。
 
 ## 実装ロジックを追加する
 
 最後のステップは、定義した各APIのロジックを定義することです。 `impl`モジュール内で、`rest-openapi.yaml`で定義したスキーマ名（この例では、`FooResourceImpl.java`と`GooResourceImpl.java`）に基づいて、実装が配置されるJavaリソースクラスを見つけます。
 
-```tip::
-   実装のクラスの場所は、`` rest-config.yaml``ファイルで `` apiPackagePath``に定義した値によって異なります。 そのパスをたどり、その中の``internal/resource/<version>/``に移動します。 この例と同じパスを使用した場合、ファイルは``src/main/java/com/acme/headless/r3b2/internal/resource/v1_0/``内にあります。
+```{tip}
+実装のクラスの場所は、`rest-config.yaml`ファイルで`apiPackagePath`に定義した値によって異なります。 そのパスをたどり、その中の`internal/resource/<version>/`に移動します。 この例と同じパスを使用した場合、ファイルは`src/main/java/com/acme/headless/r3b2/internal/resource/v1_0/`内にあります。
 ```
 
 実装クラス（`[SchemaName]ResourceImpl`）は、基本クラス（`Base[SchemaName]ResourceImpl`）の横にあります。 実装クラスを開きます。 これは単なる例であるため、この実装では事前に入力された`HashTable`を使用し、`getFoo`メソッドは一致する`fooId`を持つ`HashTable`から製品を返します。 完全な実装については、プロジェクト内の`FooResourceImpl.java`を参照してください。
@@ -321,8 +314,6 @@ RESTビルダーはこの構成を使用して、`api`クラスと`impl`クラ�
         return Page.of(goos);
     }
 ```
-
-<a name="conclusion" />
 
 ## まとめ
 

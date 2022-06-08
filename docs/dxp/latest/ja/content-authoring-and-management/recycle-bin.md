@@ -1,12 +1,4 @@
----
-toc:
-- ./recycle-bin/recycle-bin-overview.md
-- ./recycle-bin/configuring-the-recycle-bin.md
-- ./recycle-bin/using-the-recycle-bin.md
-- ./recycle-bin/developer-guide.md
-- ./recycle-bin/recycle-bin-api.md
----
-# Recycle Bin
+# ゴミ箱
 
 ```{toctree}
 :maxdepth: 3
@@ -19,19 +11,15 @@ recycle-bin/recycle-bin-api.md
 ```
 
 * [ゴミ箱の概要](./recycle-bin/recycle-bin-overview.md)
-* [ごみ箱の設定](./recycle-bin/configuring-the-recycle-bin.md)
-* [ごみ箱の使用](./recycle-bin/using-the-recycle-bin.md)
-* [Developer Guide](./recycle-bin/developer-guide.md)
-* [Recycle Bin API](./recycle-bin/recycle-bin-api.md)
+* [ゴミ箱の設定](./recycle-bin/configuring-the-recycle-bin.md)
+* [ゴミ箱の使用](./recycle-bin/using-the-recycle-bin.md)
+* [開発者ガイド](./recycle-bin/developer-guide.md)
+* [ゴミ箱API](./recycle-bin/recycle-bin-api.md)
 
-<a name="developer-guide" />
+## 開発者ガイド
 
-## Developer Guide
+近日公開！
 
-Coming soon!
+## API
 
-<a name="apis" />
-
-## APIs
-
-Coming soon!
+近日公開！

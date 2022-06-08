@@ -30,8 +30,6 @@ Liferayコンテナは、提供されたファイルを使用して、次のユ�
 
 バインドマウントは、ファイルを提供するためのボリュームよりも単純であるため、ここでの例で使用されています。 コンテナにマウントするためのファイルを準備するときは、管理しやすい方法でファイルを整理すると便利です。 ここでは、Liferayコンテナへのバインドマウント、ファイルの整理、および `docker cp`の使用について説明します。
 
-<a name="bind-mount-format" />
-
 ## バインドマウント形式
 
 `docker run` コマンドにバインドマウントをいくつでも指定できます。 各バインドマウントは次の形式に従います。
@@ -41,8 +39,6 @@ Liferayコンテナは、提供されたファイルを使用して、次のユ�
 ```
 
 バインドマウントソースは、ホスト内の任意のフォルダパスまたはファイルパスにすることができます。 バインドマウント先は、コンテナ内の任意のフォルダパスまたはファイルパスにすることができます。
-
-<a name="scanned-container-folders" />
 
 ## スキャンされたコンテナフォルダ
 
@@ -58,8 +54,6 @@ Liferayコンテナは、提供されたファイルを使用して、次のユ�
 
 各フォルダに関連付けられているアクションと使用例については、 [API](./container-lifecycle-and-api.md#api) を参照してください。
 
-<a name="organizing-files-for-bind-mounting" />
-
 ## バインドマウント用のファイルの整理
 
 Liferayコンテナのバインドマウントは、いくつかの方法で整理できます。
@@ -70,26 +64,22 @@ Liferayコンテナのバインドマウントは、いくつかの方法で整�
 
 次の表に、バインドマウントメソッドの例をいくつか示し、それらの長所と短所を説明します。
 
-<a name="example-bind-mounts" />
-
 ### バインドマウントの例
 
-| 方式                             | 例                                                                                                                                                               | 長所                                    | 短所                                                                                               |
+| メソッド                           | 例                                                                                                                                                               | 長所                                    | 短所                                                                                               |
 |:------------------------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------- |:------------------------------------- |:------------------------------------------------------------------------------------------------ |
-| `/mnt/liferay`にマウント            | `-v［host-path］:/mnt/liferay`                                                                                                                                    | 入力ファイルを一元化します。                        | 入力ファイルは、コンテナが予期するサブフォルダーに編成する必要があります（ ロケーションがリストされている [上記](#scanned-container-folders) を参照してください）。 |
+| `/mnt/liferay`にマウント            | `-v［host-path］:/mnt/liferay`                                                                                                                                    | 入力ファイルを一元化します。                        | 入力ファイルは、コンテナが予期するサブフォルダーに編成する必要があります（ ロケーションがリストされている[上記](#scanned-container-folders)を参照してください）。 |
 | `/mnt/liferay` サブフォルダーに個別にマウント | `-v ［host-path］/［folder-1］:/mnt/liferay/deploy -v ［host-path］/［folder-2］:/mnt/liferay/files`<br><br><br>注: `［host-path］` は同じパスまたは異なるパスでも可能です。 | ホスト上のさまざまな場所で入力ファイルグループを使用する柔軟性。      | 管理するホストファイルの場所が増えました。                                                                            |
 | 個々のファイルにマウント                   | `-v ［host path］/setenv.sh:/mnt/liferay/files/tomcat/bin/setenv.sh`                                                                                              | 入力ファイルは、 `docker run` コマンドで明確に表示されます。 | 長いdocker実行コマンド。 管理するホストファイルのロケーションがさらに増えます。                                                      |
 
 コンテナの [構成フェーズ](./container-lifecycle-and-api.md#lifecycle) ファイルを提供する最も一般的な方法は、ホストフォルダーをコンテナの `/mnt/liferay` フォルダーにバインドマウントすることです。
-
-<a name="bind-mounting-a-host-folder-to-mntliferay" />
 
 ## ホストフォルダを `/mnt/liferay`にバインドマウントする
 
 Liferayへの構成、パッチ適用、およびデプロイのためのファイルを集中管理する場合は、ホストフォルダをコンテナの `/mnt/liferay` フォルダにバインドマウントすることを検討してください。
 
 ```{note}
-   ユースケース記事のほとんどの例では、このバインドマウント戦略を使用しています。
+ユースケース記事のほとんどの例では、このバインドマウント戦略を使用しています。
 ```
 
 手順は次のとおりです。
@@ -136,13 +126,11 @@ Liferayへの構成、パッチ適用、およびデプロイのためのファ�
     docker run -v [host folder path]:/mnt/liferay ...
     ```
 
-[コンテナライフサイクル](./container-lifecycle-and-api.md#liferay-phases) に従って、新しいコンテナはマウントされたホストフォルダ内のファイル（およびネストされたフォルダ）に作用し、Tomcatを起動します
-
-<a name="using-docker-cp" />
+[コンテナライフサイクル](./container-lifecycle-and-api.md#liferay-phases)に従って、新しいコンテナはマウントされたホストフォルダ内のファイル（およびネストされたフォルダ）に作用し、Tomcatを起動します
 
 ## `docker cp`を使用する
 
-[`docker cp`](https://docs.docker.com/engine/reference/commandline/cp/) コマンドは、アプリケーション、モジュール、および構成をDockerコンテナにデプロイするための便利な代替手段です。
+[`docker cp`](https://docs.docker.com/engine/reference/commandline/cp/)コマンドは、アプリケーション、モジュール、および構成をDockerコンテナにデプロイするための便利な代替手段です。
 
 ```bash
 docker cp ［file］ ［container］:［folder path］
@@ -177,8 +165,6 @@ macOSで `docker cp` を使用するとuser/group `liferay`に変更するので
     ```bash
     chown -R liferay:liferay /usr/local/liferay/scripts/pre-startup/command.sh
     ```
-
-<a name="conclusion" />
 
 ## まとめ
 

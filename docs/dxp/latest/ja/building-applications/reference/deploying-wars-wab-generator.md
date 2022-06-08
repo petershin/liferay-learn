@@ -2,11 +2,9 @@
 
 アプリケーションは、Java EEスタイルのWebアプリケーションARchive（WAR）アーティファクトまたはJava ARchive（JAR）OSGiバンドルアーティファクトとして作成できます。 Beanポートレット、PortletMVC4Springポートレット、およびJSFポートレットは、フレームワークがWARレイアウトを想定し、`WEB-INF/web.xml`記述子などのJava EEリソースを必要とするため、WARとしてパッケージ化する必要があります
 
-Liferayは、これらのWARスタイルのプラグインをLiferayのOSGiランタイムによってOSGiモジュールのようにデプロイおよび処理する方法を提供します。 それらは **WAB** に変換できます。
+Liferayは、これらのWARスタイルのプラグインをLiferayのOSGiランタイムによってOSGiモジュールのようにデプロイおよび処理する方法を提供します。 それらは*WAB*に変換できます。
 
 Liferay DXPは、Java EEスタイルWARの展開のためのOSGi Web Application Bundle（WAB）標準をサポートしています。 WABは、WARレイアウトを持ち、`Bundle-SymbolicName` OSGiディレクティブを含む`META-INF/MANIFEST.MF`ファイルを含むアーカイブです。 WABはOSGiバンドルです。 プロジェクトソースにはWARレイアウトがありますが、アーティファクトファイル名は拡張子`.jar`または`.war`で終わる場合があります。
-
-<a name="how-the-wab-generator-transforms-wars" />
 
 ## WABジェネレータがWARを変換する方法
 
@@ -20,8 +18,6 @@ WABジェネレータは、プラグインWARのJSP、記述子ファイル、�
 * カスタムまたは認識されない記述子要素または属性
 * リフレクションコード
 * クラスローダーコード
-
-<a name="war-versus-wab-structure" />
 
 ## WARとWABのストラクチャー比較
 
@@ -66,18 +62,12 @@ WARスタイルのポートレットがLiferayにデプロイされ、WABジェ�
 主な違いは、`META-INF/MANIFEST.MF`ファイルの追加です。 WABジェネレータは、OSGi対応のマニフェストファイルを自動的に生成します。 マニフェストファイルの内容に影響を与えるようにしたい場合は、プラグインの`liferay-plugin-package.properties`ファイルにBndディレクティブとOSGiヘッダを直接配置することができます。
 
 ```{note}
-   生成されたWABは、手動で追加された`` bnd.bnd``ファイルまたはビルド時プラグイン（例：`` bnd-maven-plugin``）を使用できません。
+生成されたWABは、手動で追加された` bnd.bnd`ファイルまたはビルド時プラグイン（例：` bnd-maven-plugin`）を使用できません。
 ```
-
-<a name="deploying-a-war" />
 
 ## WARのデプロイ
 
-WARプラグインに基づいてWABをデプロイするには、WARプラグインを`[Liferay Home]`内のLiferayインスタンスの `deploy/` フォルダにコピーします。
-
-<a name="saving-a-copy-of-the-wab" />
-
-<a name="saving-a-copy-of-the-wab" />
+WARプラグインに基づいてWABをデプロイするには、WARプラグインを`[Liferay Home]`内のLiferayインスタンスの<0>deploy/</0>フォルダにコピーします。
 
 ## WABのコピーを保存する
 
@@ -88,14 +78,12 @@ module.framework.web.generator.generated.wabs.store=true
 module.framework.web.generator.generated.wabs.store.dir=${module.framework.base.dir}/wabs
 ```
 
-これらのプロパティは、WABジェネレータに生成されたWABをインストールの`osgi/wabs/`フォルダに保存するように指示します。 生成されたWABは、上記のWABストラクチャーの例と同じ構造になっています。 [Module Framework Web Application Bundles](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Module%20Framework%20Web%20Application%20Bundles) のプロパティセクションで詳細を説明しています。
+これらのプロパティは、WABジェネレータに生成されたWABをインストールの`osgi/wabs/`フォルダに保存するように指示します。 生成されたWABは、上記のWABストラクチャーの例と同じ構造になっています。 [Module Framework Web Application Bundles](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Module%20Framework%20Web%20Application%20Bundles)のプロパティセクションで詳細を説明しています。
 
 WARプラグインをWABとしてデプロイでき、WABのコピーを保存して調べる方法が分かりました。
 
-<a name="additional-information" />
-
 ## 追加情報
 
-* [WABから除外されたJAR](./jars-excluded-from-wabs.md)
-* [サードパーティライブラリパッケージの依存関係の解決](../../liferay-internals/fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)
+* [JARs Excluded from WABs](./jars-excluded-from-wabs.md)
+* [Resolving Third Party Library Package Dependencies](../../liferay-internals/fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)
 * [モジュールのライフサイクル](../../liferay-internals/architecture/module-lifecycle.md)

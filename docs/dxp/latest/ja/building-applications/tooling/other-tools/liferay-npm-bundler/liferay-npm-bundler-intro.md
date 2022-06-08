@@ -1,18 +1,16 @@
-# Liferay npmバンドラー
+# Liferay npm Bundler
 
-liferay-npm-bundlerは、Liferayポータルをプラットフォームとして対象とし、（通常のWebアプリケーションではなく）ウィジェットからnpmパッケージを使用していることを前提とするバンドラー（ [Webpack](https://webpack.github.io/) または [Browserify](http://browserify.org/) ）です。
+liferay-npm-bundlerは、Liferayポータルをプラットフォームとして対象とし、（通常のWebアプリケーションではなく）ウィジェットからnpmパッケージを使用していることを前提とするバンドラー（ [Webpack](https://webpack.github.io/) または [Browserify](http://browserify.org/)）です。
 
-ウィジェット内でnpmパッケージを実行するためのワークフローは、標準のバンドラーとは少し異なります。 JavaScriptを単一のファイルにバンドルする代わりに、完全なWebページが組み立てられたときに、ブラウザーですべてのパッケージを **リンク** する必要があります。 ウィジェットは、それぞれが独自のコピーをロードするのではなく、モジュールの共通バージョンを共有できます。 liferay-npm-bundlerがこれを処理します。
+ウィジェット内でnpmパッケージを実行するためのワークフローは、標準のバンドラーとは少し異なります。 JavaScriptを単一のファイルにバンドルする代わりに、完全なWebページが組み立てられたときに、ブラウザーですべてのパッケージを *リンク* する必要があります。 ウィジェットは、それぞれが独自のコピーをロードするのではなく、モジュールの共通バージョンを共有できます。 liferay-npm-bundlerがこれを処理します。
 
 ```{note}
 また、 [project's Wiki] (https://github.com/liferay/liferay-npm-build-tools/wiki)にもliferay-npm-bundlerの情報があります。
 ```
 
-<a name="how-the-liferay-npm-bundler-works-internally" />
-
 ## Liferay npmバンドラーが内部でどのように機能するか
 
-liferay-npm-bundlerはウィジェットプロジェクトを取得し、そのファイル（npmパッケージを含む）をビルドフォルダーに出力するため、標準のウィジェットビルド（Gradle）でOSGiバンドルを生成できます。 ビルドフォルダーの構造の詳細については、 [OSGiバンドルとnpmパッケージ構造](./the-structure-of-osgi-bundles-containing-npm-packages.md) を参照してください。
+liferay-npm-bundlerはウィジェットプロジェクトを取得し、そのファイル（npmパッケージを含む）をビルドフォルダーに出力するため、標準のウィジェットビルド（Gradle）でOSGiバンドルを生成できます。 ビルドフォルダーの構造の詳細については、 [OSGi Bundles and npm Package Structure](./the-structure-of-osgi-bundles-containing-npm-packages.md)を参照してください。
 
 liferay-npm-bundlerは、以下のプロセスを使用してOSGiバンドルを作成します。
 
@@ -30,7 +28,7 @@ liferay-npm-bundlerは、以下のプロセスを使用してOSGiバンドルを
 
 1. npmパッケージの依存関係ごとに、
 
-    a. npmパッケージを出力フォルダーにコピーし、バンドル名の前に付けます。 バンドルは、標準のnode_modulesツリー形式ではなく、プレーン **バンドル名$package** @ **バージョン** 形式でパッケージを保存することに注意してください。 何がコピーされるかを判別するために、バンドラーはプラグインを呼び出してパッケージファイルリストをフィルタリングします。
+    a. npmパッケージを出力フォルダーにコピーし、バンドル名の前に付けます。 バンドルは、標準のnode_modulesツリー形式ではなく、プレーン *バンドル名$package*@*バージョン* 形式でパッケージを保存することに注意してください。 何がコピーされるかを判別するために、バンドラーはプラグインを呼び出してパッケージファイルリストをフィルタリングします。
 
     b. パッケージファイルに対してルールを実行します。
 

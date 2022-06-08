@@ -20,9 +20,9 @@ reference/portal-properties.md
 reference/system-properties.md
 ```
 
--  [Liferay Home](/installation-and-upgrades/reference/liferay-home.md)
--  [ポータルプロパティ](/installation-and-upgrades/reference/portal-properties.md)
--  [システムプロパティ](/installation-and-upgrades/reference/system-properties.md)
--  [データベーステンプレート](/installation-and-upgrades/reference/database-templates.md)
--  [データベース設定](/installation-and-upgrades/reference/database-configurations.md)
--  [JVM設定](/installation-and-upgrades/reference/jvm-configuration.md)
+* [データベース設定](./reference/database-configurations.md)
+* [データベーステンプレート](./reference/database-templates.md)
+* [JVM設定](./reference/jvm-configuration.md)
+* [Liferay Home](./reference/liferay-home.md)
+* [ポータルプロパティ](./reference/portal-properties.md)
+* [システムプロパティ](./reference/system-properties.md)

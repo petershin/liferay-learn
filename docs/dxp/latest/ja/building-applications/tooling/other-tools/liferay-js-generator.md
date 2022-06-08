@@ -1,3 +1,3 @@
 # Liferay JS Generator
 
-Coming soon!
+近日公開！

@@ -1,4 +1,3 @@
-Liferay Sync
-============
+# Liferay Sync
 
-Coming soon!
+近日公開！

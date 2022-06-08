@@ -2,15 +2,11 @@
 
 データベースをアップグレードした後、本番環境用にLiferayを再度構成し、Liferayインスタンスに影響を与える可能性のある機能の変更を確認する必要があります。
 
-<a name="re-enable-production-settings" />
-
 ## 本番環境設定を再度有効にする
 
 データベースのアップグレードが完了したら、本番環境設定を再度有効にします。
 
-<a name="search-indexing" />
-
-### サーチインデックス
+### 検索インデクス
 
 7.2にアップグレードするために検索インデックスを無効にした場合は、無効にした`.config`ファイルを削除するか、`.config`ファイルに`indexReadOnly="false"`を設定して、検索インデックスを再度有効にします。 例:
 
@@ -20,9 +16,9 @@ rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfig
 
 ほとんどのアップグレードでは検索インデックスの再インデックス化が必要ですが、通常、同じLiferayバージョン内でサービスパックを適用したり、新しいGA（ローリングリリース）にアップグレードしたりする場合は必要ありません。 インデックスを再構築する方法は次のとおりです。
 
-1. **グローバルメニュー**（![Global Menu icon](./post-upgrade-considerations/images/01.png)）をクリックし、 [**コントロールパネル**] タブを選択します。 コントロールパネルが表示されます。
+1. *グローバルメニュー* （![Global Menu icon](./post-upgrade-considerations/images/01.png)）をクリックし、*［コントロールパネル］*タブを選択します。 コントロールパネルが表示されます。
 
-2.  [設定]セクションで [**検索機能**] をクリックし、 [**アクションをインデックスする**] タブを選択し、 [**Reindex all search indexes**] に対し [**実行**] をクリックします。インデックスの再構築が実行され、完了すると成功メッセージが表示されます。
+1. ［設定］セクションで*［検索機能］*をクリックし、*［アクションをインデックスする］*タブを選択し、*［Reindex all search indexes］*に対し*［実行］*をクリックします。インデックスの再構築が実行され、完了すると成功メッセージが表示されます。
 
 ![コントロールパネルでサーチインデックスのインデックスを再作成できます。](./post-upgrade-considerations/images/02.png)
 
@@ -30,47 +26,35 @@ rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfig
 古いバージョン（7.1以下）からアップグレードした場合は、検索インデックスを処理するために[Elasticsearchのインストール](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)を検討してください。
 ```
 
-<a name="database-configurations" />
-
 ### データベース設定
 
-データベースをアップグレードする前に、アップグレード用にデータベースを調整している場合があります（ [アップグレードのためのデータベース調整](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) を参照）。 アップグレードが完了したので、本番環境データベースの設定を復元します。
+データベースをアップグレードする前に、アップグレード用にデータベースを調整している場合があります（[アップグレードのためのデータベース調整](../upgrade-stability-and-performance/database-tuning-for-upgrades.md)を参照）。 アップグレードが完了したので、本番環境データベースの設定を復元します。
 
 ```{note}
-データのアップグレード中にシャード化された環境から移行した場合、仮想インスタンスへの移行を完了するには、構成をさらに調整する必要があります。 詳細は、 [Upgrade and Update Properties](../other-upgrade-scenarios/upgrading-a-sharded-environment.md#Upgrade-and-Update-Properties) のセクションを参照してください。
+データのアップグレード中にシャード化された環境から移行した場合、仮想インスタンスへの移行を完了するには、構成をさらに調整する必要があります。 詳細は、[Upgrade and Update Properties](../other-upgrade-scenarios/upgrading-a-sharded-environment.md#Upgrade-and-Update-Properties)のセクションを参照してください。
 ```
-
-<a name="installing-the-latest-marketplace-apps" />
 
 ## 最新のマーケットプレイスアプリのインストール
 
-以前のLiferayバージョンのマーケットプレイスアプリを使用していた場合は、 **新しい** DXPバージョンと互換性のある各アプリのバージョンを使用する必要があります。 各[マーケットプレイスアプリ](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md)の互換性のある最新バージョンをダウンロードしてインストールします。
-
-<a name="accounting-for-feature-changes" />
-
-<a name="accounting-for-feature-changes" />
+新しいLiferayバージョンの[マーケットプレイスアプリ](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md)の最新バージョンをまだインストールしていない場合は、それらをインストールし、[Gogoシェルコマンド](../upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md)を使用して、必要なデータベースのアップグレードを確認して実行します。
 
 ## 機能変更の考慮
 
 新しいLiferayバージョンでは、機能と動作が変わります。 以下の変更点を確認してください。
 
-<a name="enable-web-content-view-permissions" />
-
 ### Webコンテンツの表示権限を有効にする
 
 7.1より前は、すべてのユーザーがデフォルトでWebコンテンツの記事を表示できました。 現在は、表示権限がデフォルトでオンになっています。 表示権限を開くための主なオプションは次のとおりです。
 
-**オプション1：**[**コントロールパネル**] → [**設定**] → [**システム設定**] → [**Webコンテンツ**] → [**仮想インスタンススコープ**] → [**Webコンテンツ**] に移動し、 [**Article view permissions check enabled**] の選択を解除して、すべてのWebコンテンツの記事の表示権限を開きます。
+**オプション1：**_［コントロールパネル］_ → _［設定］_ → _［System Settings］_ → _［Web Content］_ → _［Virtual Instance Scope］_ → _［Web Content］_に移動し、_［Article view permissions check enabled］_の選択を解除して、すべてのWebコンテンツの記事の表示権限を開きます。
 
-![[システム設定]の [Webコンテンツ]メニューを下にスクロールして、Webコンテンツを表示するための権限チェックを無効にします。](./post-upgrade-considerations/images/03.png)
+![［システム設定］の［Webコンテンツ］メニューを下にスクロールして、Webコンテンツを表示するための権限チェックを無効にします。](./post-upgrade-considerations/images/03.png)
 
 **オプション2：** Webコンテンツの記事が少ない場合は、ロールに基づきWebコンテンツの記事ごとに表示権限を編集します。
 
-<a name="check-web-content-images" />
+### Webコンテンツの画像チェック
 
-### Webコンテンツの画像を確認する
-
-7.2にアップグレードすると、Webコンテンツの画像は[ファイル ストア](../../../system-administration/file-storage/configuring-file-storage.md)（ドキュメントライブラリともいう）に移動し、以前のテーブル`JournalArticleImage`は削除されます。 画像を移行できない場合、Liferayは失敗を報告します。
+7.2にアップグレードすると、Webコンテンツの画像は[ファイル ストア](../../../system-administration/file-storage.md)（ドキュメントライブラリともいう）に移動し、以前のテーブル`JournalArticleImage`は削除されます。 画像を移行できない場合、Liferayは失敗を報告します。
 
 ```
 Unable to add the journal article image {filename} into the file repository
@@ -78,15 +62,9 @@ Unable to add the journal article image {filename} into the file repository
 
 そのようなメッセージがない場合は、すべての画像がファイルストアにあるはずです。 Webコンテンツの記事をプレビューして、画像を確認できます。
 
-<a name="account-for-deprecations-and-features-in-maintenance-mode" />
-
-### メンテナンスモードでの非推奨項目と機能の考慮
+## メンテナンスモードでの非推奨項目と機能の考慮
 
 [メンテナンスモードでの非推奨項目と機能](../reference/maintenance-mode-and-deprecations-in-7-3.md)を確認し、Liferayインスタンスへの影響に対応するための計画を立ててください（まだ行ってない場合）。
-
-<a name="remove-obsolete-data" />
-
-### 廃止されたデータを削除する
 
 ## 廃止されたデータを削除する
 
@@ -94,11 +72,7 @@ Unable to add the journal article image {filename} into the file repository
 
 * 廃止されたLiferayアプリまたはモジュールからのデータ。 [データクリーンアップ](../reference/data-cleanup.md)ツールを使用して削除します。
 
-* 利用可能なLiferayアプリおよびモジュールからの廃止されたデータ。 [データ削除](../reference/data-removal.md) ツールを使用して削除します。
-
-<a name="conclusion" />
-
-<a name="conclusion" />
+* 利用可能なLiferayアプリおよびモジュールからの廃止されたデータ。 [データ削除](../reference/data-removal.md)ツールを使用して削除します。
 
 ## まとめ
 

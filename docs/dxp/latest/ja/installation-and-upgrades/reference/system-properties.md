@@ -1,6 +1,6 @@
 # システムプロパティ
 
-DXPは、アプリケーションサーバーのJVMで実行されます。 システムプロパティは、`-D［name1］=［value1］`形式で`java`に引数としてJVMに直接渡すことも、DXPシステムプロパティファイルを使用してロードすることもできます。 システムプロパティは、アプリケーションサーバーとそのすべてのアプリケーションで使用できるため、 [ポータルプロパティ](./portal-properties.md) とは異なります。
+Liferay DXP/Portalは、アプリケーションサーバーのJVMで実行されます。 システムプロパティは、`-D［name1］=［value1］`形式で`java`に引数としてJVMに直接渡すことも、DXPシステムプロパティファイルを使用してロードすることもできます。 システムプロパティは、アプリケーションサーバーとそのすべてのアプリケーションで使用できるため、 [ポータルプロパティ](./portal-properties.md) とは異なります。
 
 アプリケーションサーバーの規定のスクリプトは、システムプロパティを追加/変更するための最も安全な場所です。 システムプロパティを集中化するために使用できます。 すべてのプロパティをJVM引数として渡すと、アプリケーションサーバーの起動時にすべてのプロパティが設定されるため、タイミングの問題がなくなります。 アプリケーションサーバー、DXP、およびその他すべてのWebアプリケーションは、プロパティをすぐに使用できます。
 
@@ -14,22 +14,20 @@ DXPは、アプリケーションサーバーのJVMで実行されます。 シ�
 
 DXPは、次の方法でシステムプロパティファイルを使用します。
 
-* DXP **は、システムプロパティ `system.properties.set` が `false`でない限り、 `system.properties` （および `system-ext.properties`）の新しいプロパティを使用して** プロパティを拡張します
-* DXP **は、システムプロパティ `system.properties.set.override` が `false`でない限り、 `system.properties` （および `system-ext.properties`）の新しい値を使用して** プロパティをオーバーライドします。
+* DXP _は、システムプロパティ `system.properties.set` が `false`でない限り、 `system.properties` （および `system-ext.properties`）の新しいプロパティを使用して_ プロパティを拡張します
+* DXP _は、システムプロパティ `system.properties.set.override` が `false`でない限り、 `system.properties` （および `system-ext.properties`）の新しい値を使用して_ プロパティをオーバーライドします。
 
 ```{warning}
-   アプリケーションサーバーの起動後のシステムプロパティの設定またはリセットにはリスクがあります
+アプリケーションサーバーの起動後のシステムプロパティの設定またはリセットにはリスクがあります
 
-   *アプリケーションサーバーで権限が有効になっている場合、システム値の変更が禁止される場合があります。
-   *システムプロパティは不変として扱われます。 アプリケーションサーバー上の別のプロセスは、DXPが値をリセットする前に、初期プロパティ値をキャッシュすることが考えられます。 このような場合、システムは同じプロパティに対して異なる値で動作しようとします。
+*アプリケーションサーバーで権限が有効になっている場合、システム値の変更が禁止される場合があります。
+*システムプロパティは不変として扱われます。 アプリケーションサーバー上の別のプロセスは、DXPが値をリセットする前に、初期プロパティ値をキャッシュすることが考えられます。 このような場合、システムは同じプロパティに対して異なる値で動作しようとします。
 ```
 
 ここでは、システムプロパティを指定する両方の方法を示します。
 
 * [システムプロパティを直接設定する](#setting-system-properties-directly)
-* [`system-ext.properties` ファイルの使用](#using-a-system-ext-properties-file)
-
-<a name="setting-system-properties-directly" />
+* [`system-ext.properties` ファイルを使用する](#using-a-system-ext-properties-file)
 
 ## システムプロパティを直接設定する
 
@@ -53,9 +51,7 @@ DXPは、次の方法でシステムプロパティファイルを使用しま�
 
 アプリケーションサーバーとDXPは新しいシステムプロパティを使用しています。
 
-<a name="using-a-system-extproperties-file" />
-
-## `system-ext.properties` ファイルの使用
+## `system-ext.properties` ファイルを使用する
 
 DXPの `system.properties` ファイルを使用し、システムプロパティを拡張/上書きする場合は、 `system-ext.properties` ファイルを使用します。 手順は次のとおりです。
 
@@ -71,11 +67,9 @@ DXPの `system.properties` ファイルを使用し、システムプロパテ�
 
 1. アプリケーションサーバーを起動します。
 
-1. DXP Webアプリケーションを展開します。 詳細は、するための手順を参照してください [アプリケーションサーバーへのインストールを](../installing-liferay/installing_liferay_on_an_application_server.html) 。
+1. DXP Webアプリケーションをデプロイします。 詳細は、するための手順を参照してください [アプリケーションサーバーへのインストールを](../installing-liferay/installing-liferay-on-an-application-server.md)。
 
 Liferay DXPはシステムプロパティを柔軟に処理するので、システムを自由に構成できます。
-
-<a name="additional-information" />
 
 ## 追加情報
 

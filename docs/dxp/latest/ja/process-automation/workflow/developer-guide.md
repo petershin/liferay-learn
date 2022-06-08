@@ -32,7 +32,7 @@ developer-guide/apis.md
 
 - [ワークフローの実装](./developer-guide/implementing-workflow.md)
 - [カスタムSLAカレンダーの実装](./developer-guide/implementing-a-custom-sla-calendar.md)
-- [Using The Script Engine in Workflow](./developer-guide/using-the-script-engine-in-workflow.md)
+- [ワークフローでのスクリプトエンジンの使用](./developer-guide/using-the-script-engine-in-workflow.md)
 - [XMLワークフロー定義の作成](./developer-guide/crafting-xml-workflow-definitions.md)
 - [ワークフロー定義ノードリファレンス](./developer-guide/workflow-definition-node-reference.md)
 - [ワークフロー通知テンプレート変数](./developer-guide/workflow-notification-template-variables.md)
@@ -41,7 +41,6 @@ developer-guide/apis.md
 - [アクションエグゼキュータの作成](./developer-guide/creating-an-action-executor.md)
 - [ワークフローコンテクストの利用](./developer-guide/working-with-workflow-context.md)
 
-API
-----
+## API
 
 近日公開！

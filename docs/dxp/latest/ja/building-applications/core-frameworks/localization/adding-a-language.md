@@ -1,8 +1,6 @@
 # 言語の追加
 
-Liferayは現在、約50の言語をサポートしています。 これらの言語の多くは [翻訳](https://translate.liferay.com/) が完了していますが、一部はまだ翻訳中です。 各言語には、その言語のキーを含む [言語プロパティファイル](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-language/portal-language-lang/src/main/resources/content) があります。 しかし、世界には [6000](https://www.linguisticsociety.org/content/how-many-languages-are-there-world) 以上のの言語があります。 どうしても言語を追加したい場合は、以下の方法があります。
-
-<a name="adding-a-new-language" />
+Liferayは現在、約50の言語をサポートしています。 これらの言語の多くは[翻訳](https://translate.liferay.com/)が完了していますが、一部はまだ翻訳中です。 各言語には、その言語のキーを含む [言語プロパティファイル](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-language/portal-language-lang/src/main/resources/content) があります。 しかし、世界には[6000](https://www.linguisticsociety.org/content/how-many-languages-are-there-world)以上のの言語があります。 どうしても言語を追加したい場合は、以下の方法があります。
 
 ## 新しい言語の追加
 
@@ -53,17 +51,17 @@ Liferayは現在、約50の言語をサポートしています。 これらの�
 
 1. 作成した `language.properties` ファイルで言語モジュールを作成し、モジュールをLiferayのインストールにデプロイします。 このモジュールを作成するためのサンプルプロジェクトと具体的な手順については、 [Overriding Global Language Translations](../../../../liferay-internals/extending-liferay/overriding-global-language-translations.md) を参照してください。
 
-1. インストールした[Liferay Home](../../../../installation-and-upgrades/reference/liferay-home.md)フォルダに`portal-ext.properties` ファイルを作成または変更します。 なお、このファイルは、 `portal.properties` ファイルで定義された有効なデフォルトロケールを上書きします。 そのため、 `portal-ext.properties` ファイルに使用する予定の言語をすべて列挙します。 `locales`と`locales.enabled`の両方を定義します。 たとえば、
+1. インストールした[Liferay Home](../../../../installation-and-upgrades/reference/liferay-home.md)フォルダに`portal-ext.properties` ファイルを作成または変更します。 なお、このファイルは、 `portal.properties` ファイルで定義された有効なデフォルトロケールを上書きします。 そのため、 `portal-ext.properties` ファイルに使用する予定の言語をすべて列挙します。 `locales`と`locales.enabled`の両方を定義します。 例:
 
     ```properties
     locales=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
     locales.enabled=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
     ```
 
-1. モジュールがデプロイされたら、 ［**コントロールパネル**］ &rarr; ［**インスタンス設定**］ &rarr; ［**Localization**］ に移動します。 検証し、新しい言語を［current ］言語に移動させます。 ［**Save**］ をクリックします。
+1. モジュールがデプロイされたら、 *［コントロールパネル］* &rarr; *［インスタンス設定］* &rarr; *［Localization］*に移動します。 検証し、新しい言語を［current ］言語に移動させます。 *［Save］* をクリックします。
 
-   ![Save your new language to the list of current languages.](./adding-a-language/images/01.png)
+   ![新しい言語を現在の言語のリストに保存します。](./adding-a-language/images/01.png)
 
-3. デフォルトの言語を新しい言語に変更し、 ［**Save**］ をクリックします。 新しい言語がLiferayインスタンスで使用されるようになりました。
+3. デフォルトの言語を新しい言語に変更し、 *［Save］*をクリックします。 新しい言語がLiferayインスタンスで使用されるようになりました。
 
-   ![Select and use the new language for your Liferay instance.](./adding-a-language/images/02.png)
+   ![Liferayインスタンスの新しい言語を選択して使用します。](./adding-a-language/images/02.png)

@@ -3,10 +3,8 @@
 DXPは、アダプティブメディアを使用して、ドキュメントとメディア内の画像のサムネイルを自動的に生成します。 この機能は、DXP7.1以降でデフォルトでインストールされています。 ただし、アダプティブメディアをサポートしていないレガシーバージョンを使用していて、最新のDXPバージョンにアップグレード済みで、アダプティブメディアを使用してドキュメントとメディアのサムネイルを管理する場合は、移行プロセスを確認してください。
 
 ```{note}
-   ここで説明するアクションを実行するには、ポータル管理者である必要があります。
+ここで説明するアクションを実行するには、ポータル管理者である必要があります。
 ```
-
-<a name="adding-the-replacement-image-resolutions" />
 
 ## 置換用画像解像度の追加
 
@@ -21,11 +19,7 @@ DXPは、アダプティブメディアを使用して、ドキュメントと�
 
 これらのプロパティの一部は有効になっていない可能性があります。 アダプティブメディアでは、有効になっているプロパティの画像解像度のみを作成する必要があります。
 
-新しい画像解像度を作成するには、 [画像解像度の追加](./adding-image-resolutions.md) を参照してください。
-
-<a name="creating-the-adaptive-media-images" />
-
-<a name="creating-the-adaptive-media-images" />
+新しい画像解像度を作成するには、[画像解像度の追加](./adding-image-resolutions.md)を参照してください。
 
 ## アダプティブメディア画像の作成
 
@@ -33,47 +27,35 @@ DXPは、アダプティブメディアを使用して、ドキュメントと�
 
 ドキュメントとメディアのサムネイルをアダプティブメディアに移行するには、次の2つの方法があります。
 
-  - サムネイルの画像解像度に合わせて画像を調整する：これにより、既存のサムネイルがアダプティブメディアの画像解像度の値にスケーリングされます。これには、画像の数によっては時間がかかる場合があります。 これは、画像の数が少ない場合、または画像を最初から生成する場合にのみお勧めします。 このアプローチについては、 [Generating Missing Adapted Images](./managing-image-resolutions.md#generating-missing-adapted-images) で詳しく説明しています。
+* サムネイルの画像解像度に合わせて画像を調整する：これにより、既存のサムネイルがアダプティブメディアの画像解像度の値にスケーリングされます。これには、画像の数によっては時間がかかる場合があります。 これは、画像の数が少ない場合、または画像を最初から生成する場合にのみお勧めします。 このアプローチについては、[Generating Missing Adapted Images](./managing-image-resolutions.md#generating-missing-adapted-images)で詳しく説明しています。
 
 * 既存のサムネイルを再利用する移行プロセスを実行する：既存のサムネイルがアダプティブメディアにコピーされます。これにより、計算コストの高いスケーリング操作が回避されるため、パフォーマンスが向上します。
-
-<a name="running-the-migration-process" />
 
 ### 移行プロセスの実行
 
 移行プロセスは、[Gogoコンソールコマンド](../../../../liferay-internals/fundamentals/using-the-gogo-shell/gogo-shell-commands.md)のセットです。
 
-1. [**グローバルメニュー**] → [**コントロールパネル**] → [**Gogo シェル**] に移動します。
+1. _［グローバルメニュー］_ &rarr; _［コントロールパネル］_ &rarr; _［Gogo シェル］_に移動します。
 
    ![Gogo シェルに移動します。](./migrating-documents-and-media-thumbnails/images/01.png)
 
 1. `thumbnails:check`コマンドを実行します。 インスタンスごとに、移行が保留されているサムネイルの数が一覧表示されます。
 1. `thumbnails:migrate`コマンドを実行します。 これにより、移行プロセスが実行されます。画像の数によっては、完了するまでに時間がかかる場合があります。
-1. `thumbnails:cleanUp`コマンドを実行します。 これにより、オリジナルのドキュメントとメディアのサムネイルがすべて削除され、`thumbnails:check`で返される数が更新されます。 したがって、`thumbnails:cleanUp`は、migrateコマンドを実行し、移行が正常に実行され、移行が保留されている画像がないことを確認した後で **のみ** 実行する必要があります。
-
-3.  `thumbnails:migrate`コマンドを実行します。 これにより、移行プロセスが実行されます。画像の数によっては、完了するまでに時間がかかる場合があります。
-
-4.  `thumbnails:cleanUp`コマンドを実行します。 これにより、オリジナルのドキュメントとメディアのサムネイルがすべて削除され、`thumbnails:check`で返される数が更新されます。 したがって、`thumbnails:cleanUp`は、migrateコマンドを実行し、移行が正常に実行され、移行が保留されている画像がないことを確認した後で **のみ** 実行する必要があります。
-
-<a name="troubleshooting" />
+1. `thumbnails:cleanUp`コマンドを実行します。 これにより、オリジナルのドキュメントとメディアのサムネイルがすべて削除され、`thumbnails:check`で返される数が更新されます。 したがって、`thumbnails:cleanUp`は、migrateコマンドを実行し、移行が正常に実行され、移行が保留されている画像がないことを確認した後で**のみ**実行する必要があります。
 
 ## トラブルシューティング
 
 移行プロセスの実行後のある時点でアダプティブメディアをアンデプロイする場合は、ドキュメントとメディアのサムネイルを再生成する必要があります。
 
-1. [**グローバルメニュー**] → [**コントロールパネル**] → [**サーバ管理**] に移動します。
+1. _［グローバルメニュー］_ &rarr; _［コントロールパネル］_ &rarr; _［サーバ管理］_に移動します。
 
    ![サーバ管理に移動します。](./migrating-documents-and-media-thumbnails/images/03.png)
 
-2. [**Reset preview and thumbnail files for Documents and Media**] の横にある [**実行**] をクリックします。
+1. _［Reset preview and thumbnail files for Documents and Media］_の横にある_［実行］_をクリックします。
 
    ![Gogo シェルに移動します。](./migrating-documents-and-media-thumbnails/images/02.png)
 
-<a name="additional-information" />
-
-<a name="additional-information" />
-
 ## 追加情報
 
-  - [画像解像度の管理](./managing-image-resolutions.md)
-  - [アダプティブメディア構成リファレンス](./adaptive-media-configuration-reference.md)
+* [Managing Image Resolutions](./managing-image-resolutions.md)
+* [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)

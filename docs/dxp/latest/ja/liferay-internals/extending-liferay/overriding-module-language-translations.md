@@ -1,16 +1,14 @@
-# 以前のバージョンでのモジュール言語キーのオーバーライドをする
+# 以前のバージョンでのモジュール言語ファイルのオーバーライドをする
 
 ```{important}
-Liferay DXP/Portal 7.4以降を使用している場合は、[Overriding Global Language Keys](./overriding-global-language-keys.md)の手順に従ってください。
+Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA8以降では、[Language Override tool](../../system-administration/configuring-liferay/changing-language-tranlations.md)を使用することが推奨されます。 Liferay DXP/Portal 7.4以降を使用している場合は、[標準言語ファイルの上書き](./overriding-global-language-translations.md)の手順に従ってください。
 ```
 
-以前のバージョンでLiferayアプリケーション固有の言語キーをオーバーライドすることは、以前のバージョンでのグローバル言語キーのオーバーライドと似ていますが、追加の手順があります。
+以前のバージョンでLiferayアプリケーション固有の言語ファイルをオーバーライドすることは、以前のバージョンでの標準言語ファイルのオーバーライドと似ていますが、追加の手順があります。
 
-<a name="モジュール言語キーを調べる" />
+## モジュール言語ファイルの検証
 
-## モジュール言語キーを調べる
-
-モジュールの言語キーを上書きするには、最初に[Gogoシェル](../fundamentals/using-the-gogo-shell.md)でモジュールに関する情報を収集する必要があります。 たとえば、ブログモジュールの言語キーをオーバーライドする場合は、`grep`でキーワード「blogs」を検索します。 Gogoコマンドと出力は次のようになります。
+モジュールの言語ファイルを上書きするには、最初に[Gogoシェル](../fundamentals/using-the-gogo-shell.md)でモジュールに関する情報を収集する必要があります。 たとえば、ブログモジュールの言語ファイルをオーバーライドする場合は、`grep`でキーワード"blogs"を使用します。 Gogoコマンドと出力は次のようになります。
 
  ```
  g! lb | grep Blogs
@@ -52,9 +50,9 @@ Liferay DXP/Portal 7.4以降を使用している場合は、[Overriding Global 
  Web-ContextPath = /blogs-web
  ```
 
-`Bundle-SymbolicName`、`Bundle-Version`、および`Web-ContextPath`に注目してください。 `/`に続く`Web-ContextPath`値は、モジュールのコンテキスト名です。
+`Bundle-SymbolicName`、`Bundle-Version`、および`Web-ContextPath`に注目してください。 `/`に続く`Web-ContextPath`値は、モジュールのコンテクスト名です。
 
-バンドルのシンボリック名またはコンテキスト名を使用して、モジュールに固有の言語キーを検索します。 モジュールのJARファイルを見つけて、その言語キーを調べます。 Liferayは、このモジュールのJARファイルの命名規則に従います。
+バンドルのシンボリック名またはコンテクスト名を使用して、モジュール固有の言語ファイルを検索します。 モジュールのJARファイルを見つけて、その言語ファイルを調べます。 Liferayは、このモジュールのJARファイルの命名規則に従います。
 
 ```
 [bundle symbolic name]-[version].jar
@@ -64,25 +62,26 @@ Liferay DXP/Portal 7.4以降を使用している場合は、[Overriding Global 
 
 モジュールの場所は次のとおりです。
 
-* Liferayの [Nexusリポジトリ](https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/)
+* Liferayの[Nexusリポジトリ](https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/)
 * `[Liferay Home]/osgi/modules`
-* [`liferay- [dxp|portal]/modules/apps`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps) にあるソースコード
+* [`liferay-[dxp|portal]/modules/apps`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps)にあるソースコード
 
-言語プロパティファイルは、モジュールの`src/main/resources/content`フォルダにあります `Language[xx_XX].properties`ファイルでオーバーライドする言語キーを特定します。
+言語プロパティファイルは、モジュールの`src/main/resources/content`フォルダにあります `Language[xx_XX].properties`ファイルでオーバーライドする言語ファイルを特定します。
 
-さまざまな言語とロケールの言語キーは、ファイル名の末尾で識別できます。 たとえば、`Language_ja.properties`は日本語用です。
+さまざまな言語とロケールの言語ファイルは、ファイル名の末尾で識別できます。 たとえば、`Language_ja.properties`は日本語用です。
 
-この例では、デフォルトの`Add Blog Entry`言語キーをカスタムキーに変更します。 今度はそれをデプロイします。
+この例では、デフォルトの`Add Blog Entry`言語ファイルをカスタム言語ファイルに変更します。 今度はそれをデプロイします。
 
-```{include} /_snippets/run-liferay-portal.md
-```
+1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
 
-次に、以下の手順を実行します。
+    ```bash
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
 
 1. `liferay-e6u7.zip`をダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/liferay-e6u7.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O
     ```
 
     ```bash
@@ -109,35 +108,39 @@ Liferay DXP/Portal 7.4以降を使用している場合は、[Overriding Global 
     STARTED com.acme.e6u7.impl_1.0.0 [1650]
     ```
 
-1. ［**Content & Data**］ &rarr; ［**Blogs**］ に移動します。 カーソルを追加アイコン（![Add](../../images/icon-add.png)）に合わせます。 メッセージにカスタム言語キーが表示されます。
+1. ブラウザで`https://localhost:8080`を開きます。
 
-    ![カスタム言語キーが使用されるようになりました。](./overriding-module-language-keys/images/01.png)
+1. デフォルトの認証情報を使用してサインインします。
 
-1. チュートリアルコードには、他のロケールの例も含まれています。 たとえば、言語セレクターを使用してブラジルポルトガル語または日本語を選択すると、カスタム言語キーが表示されます。 モジュールは、モジュールに含める各ロケールの言語キーをオーバーライドします。
+    **ユーザー名**: `test@liferay.com`
 
-    ![カスタム言語キーは、ポルトガル語と日本語にも使用されます。](./overriding-module-language-keys/images/02.png)
+    **パスワード：** `test`
+
+1. *［Content & Data］* &rarr; *［Blogs］*に移動します。 カーソルを追加アイコン（![Add](../../images/icon-add.png)）に合わせます。 メッセージにカスタム言語ファイルが表示されます。
+
+    ![カスタム言語ファイルが使用されるようになりました。](./overriding-module-language-translations/images/01.png)
+
+1. チュートリアルコードには、他のロケールの例も含まれています。 たとえば、言語セレクターを使用してブラジルのポルトガル語または日本語を選択すると、カスタム言語ファイルが表示されます。 モジュールは、モジュールに含める各ロケールの言語ファイルをオーバーライドします。
+
+    ![カスタム言語ファイルは、ポルトガル語と日本語にも使用されます。](./overriding-module-language-translations/images/02.png)
 
 次に、コードがどのように機能するかを確認します。
 
-<a name="言語プロパティファイルを作成する" />
-
 ## 言語プロパティファイルを作成する
 
-まず、オーバーライドするキーを選択します。 たとえば、このチュートリアルコードは、`Add Blog Entry`言語キーをオーバーライドします。
+オーバーライドする翻訳ファイルを選択します。 たとえば、このチュートリアルコードは、`Add Blog Entry`言語ファイルをオーバーライドします。
 
-オーバーライドするキーを決定したら、モジュールの`src/main/resources/content`フォルダに言語プロパティファイルを作成します。  ファイルでキーを定義します。 ファイル名がオーバーライドするロケールと一致していることを確認してください。 たとえば、日本語の場合は、`Language_ja.properties`を使用します。
+オーバーライドする言語ファイルを決定したら、モジュールの`src/main/resources/content`フォルダに言語プロパティファイルを作成します。  ファイルで言語ファイルを定義します。 ファイル名がオーバーライドするロケールと一致していることを確認してください。 たとえば、日本語の場合は、`Language_ja.properties`を使用します。
 
-```{literalinclude} ./overriding-module-language-keys/resources/liferay-e6u7.zip/e6u7-impl/src/main/resources/content/Language_ja.properties
+```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/src/main/resources/content/Language_ja.properties
 :language: properties
 ```
-
-<a name="言語リソースバンドルを作成する" />
 
 ## 言語リソースバンドルを作成する
 
 モジュールで、オーバーライドするロケールの`java.util.ResourceBundle`を拡張するクラスを作成します。 `en_US`ロケールのリソースバンドルクラスの例を次に示します。
 
-```{literalinclude} ./overriding-module-language-keys/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7EnglishResourceBundle.java
+```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7EnglishResourceBundle.java
 :language: java
 :lines: 10-26
 ```
@@ -146,43 +149,41 @@ Liferay DXP/Portal 7.4以降を使用している場合は、[Overriding Global 
 
 クラスの`@Component`アノテーションは、それをOSGi `ResourceBundle` サービスコンポーネントとして宣言します。 その`language.id`プロパティは、`en_US`ロケール用にそれを指定します。
 
-```{literalinclude} ./overriding-module-language-keys/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7EnglishResourceBundle.java
+```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7EnglishResourceBundle.java
 :language: java
 :lines: 10
 ```
 
 クラスは次のメソッドをオーバーライドします。
 
-**`handleGetObject`：** モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）でキーを検索し、キーの値を`Object`として返します。
+**`handleGetObject`：**モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）で言語ファイルを検索し、キーの値を`Object`として返します。
 
-**`getKeys`：** リソースバンドルのキーの`Enumeration`を返します。
+**`getKeys`：**リソースバンドルのキーの`Enumeration`を返します。
 
-リソースバンドルサービスコンポーネントは、デフォルトの言語キーをモジュールの言語キーオーバーライドにリダイレクトします。
+リソースバンドルサービスコンポーネントは、デフォルトの言語ファイルをモジュールの言語ファイルオーバーライドにリダイレクトします。
 
-**注：** 複数のロケールのモジュール言語キーをオーバーライドするには、ロケールごとに個別のリソースバンドルクラスが必要です。 たとえば、このチュートリアルコードには、英語、日本語、ポルトガル語用のクラスがあります。 各リソースバンドルは、`language.id`コンポーネントのプロパティ定義と言語ファイルの修飾名パラメーターでロケールを指定する必要があります。  たとえば、日本語ロケールでは次のようになります。
+**注：**複数のロケールのモジュール言語ファイルをオーバーライドするには、ロケールごとに個別のリソースバンドルクラスが必要です。 たとえば、このチュートリアルコードには、英語、日本語、ポルトガル語用があります。 各リソースバンドルは、`language.id`コンポーネントのプロパティ定義と言語ファイルの修飾名パラメーターでロケールを指定する必要があります。  たとえば、日本語ロケールでは次のようになります。
 
 コンポーネント定義：
 
-```{literalinclude} ./overriding-module-language-keys/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7JapaneseResourceBundle.java
+```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7JapaneseResourceBundle.java
 :language: java
 :lines: 10
 ```
 
 リソースバンドルの割り当て：
 
-```{literalinclude} ./overriding-module-language-keys/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7JapaneseResourceBundle.java
+```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7JapaneseResourceBundle.java
 :dedent: 1
 :language: java
 :lines: 23-24
 ```
 
-<a name="モジュールのリソースバンドルに優先順位を付ける" />
-
 ## モジュールのリソースバンドルに優先順位を付ける
 
-ターゲットモジュールがカスタム言語キーを使用するには、OSGIマニフェストヘッダーでリソースバンドルを指定する必要があります。 目的のモジュールを最初に一覧表示することで、ターゲットモジュールのリソースバンドルよりもそのリソースバンドルを優先させます。 これにより、2つのリソースが集約されます。 チュートリアルモジュール`com.acme.e6u7.impl`の例を次に示します。この例では、ターゲットモジュール`com.liferay.blogs.web`のリソースバンドルよりもリソースバンドルを優先しています。
+ターゲットモジュールがカスタム言語ファイルを使用するには、OSGIマニフェストヘッダーでリソースバンドルを指定する必要があります。 最初にモジュールを一覧表示することで、ターゲットモジュールのリソースバンドルよりもそのリソースバンドルを優先させます。 これにより、2つのリソースが集約されます。 チュートリアルモジュール`com.acme.e6u7.impl`の例では、ターゲットモジュール`com.liferay.blogs.web`のリソースバンドルよりもリソースバンドルを優先しています。
 
-```{literalinclude} ./overriding-module-language-keys/resources/liferay-e6u7.zip/e6u7-impl/bnd.bnd
+```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/bnd.bnd
 :language: properties
 :lines: 4-12
 ```
@@ -205,13 +206,12 @@ Liferay DXP/Portal 7.4以降を使用している場合は、[Overriding Global 
 ```
 
 ```{note}
-言語キー名が同じ場合は、DXP7.4以降で言語キーオーバーライドを引き続き使用できます---  [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) ファイルを確認してください。 オプションとして、`ResourceBundle`クラスを削除し、`bnd.bnd`ファイルの`Provide-Capability`ヘッダーを [Overriding Global Language Keys](./overriding-global-language-keys.md#declare-the-oOverride-in-the-bnd-file) で示されているヘッダーに置き換えることで、モジュールを簡素化することができます。
+言語キー名が同じ場合は、DXP7.4以降で言語ファイルオーバーライドを引き続き使用できます---  [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)ファイルを確認してください。 オプションとして、`ResourceBundle`クラスを削除し、`bnd.bnd`ファイルの`Provide-Capability`ヘッダーを[標準言語ファイルの上書き](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file)で示されているヘッダーに置き換えることで、モジュールを簡素化することができます。
 ```
 
 結果を検索して、ランキングが高いリソースバンドル集約サービスを探します。
 
-<a name="関連情報" />
-
 ## 関連情報
 
-* [グローバル言語キーのオーバーライド](./overriding-global-language-keys.md)
+* [標準言語ファイルの上書き方法](./overriding-global-language-translations.md)
+* [翻訳ファイルの変更](../../system-administration/configuring-liferay/changing-language-translations.md)

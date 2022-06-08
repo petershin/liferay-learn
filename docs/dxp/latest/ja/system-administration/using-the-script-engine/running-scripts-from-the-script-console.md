@@ -7,20 +7,18 @@
 * [スクリプトコンソールでスクリプトを実行するためのヒント](#tips)
 
 ```{important}
-   スクリプトコンソールは、システムの操作とメンテナンス用です。エンドユーザー用ではありません。 スクリプトコンソールへのアクセスをポータル管理者に制限してください。
+スクリプトコンソールは、システムの操作とメンテナンス用です。エンドユーザー用ではありません。 スクリプトコンソールへのアクセスをポータル管理者に制限してください。
 ```
 
 まず、スクリプトコンソールのサンプルスクリプトを実行します。
-
-<a name="running-a-sample-script-in-the-script-console" />
 
 ## スクリプトコンソールでサンプルスクリプトを実行する
 
 スクリプトコンソールでサンプルスクリプトを実行する方法は次のとおりです。
 
 1. 管理者としてログインします。
-1. プロダクトメニューから、 ［**コントロールパネル**］ へ行き、 ［**設定**］ &rarr; ［**サーバ管理**］ を選択します。
-1. ［**Script**］ をクリックします。 これがスクリプトコンソールです。 デフォルトのサンプルスクリプトは、ユーザー数をコンソール出力に出力します。
+1. プロダクトメニューから、*［コントロールパネル］ * へ行き、*［設定］* &rarr; *［サーバ管理］ *を選択します。
+1. *［スクリプト］*をクリックします。 これがスクリプトコンソールです。 デフォルトのサンプルスクリプトは、ユーザー数をコンソール出力に出力します。
 
     ```groovy
     // ### Groovy Sample ###
@@ -30,17 +28,15 @@
     out.println(number);
     ```
 
-1. ［**Execute**］ をクリックし、スクリプトコンソールの **出力** でユーザー数を確認します。
+1. *［Execute］*をクリックし、スクリプトコンソールの*出力*でユーザー数を確認します。
 
     ![スクリプトコンソールのサンプルのGroovyスクリプトは、ユーザー数をスクリプトコンソールの出力に出力します。](./running-scripts-from-the-script-console/images/01.png)
 
-Groovyのサンプルは、Liferayサービスユーティリティ [`UserLocalServiceUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) を呼び出して、ユーザー数を取得します。 次に、`out`（組み込みの`PrintWriter`）を使用して、スクリプトコンソールに数を書き込みます。
+Groovyのサンプルは、Liferayサービスユーティリティ[`UserLocalServiceUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html)を呼び出して、ユーザー数を取得します。 次に、`out`（組み込みの`PrintWriter`）を使用して、スクリプトコンソールに数を書き込みます。
 
 ```{note}
-   *out.println*ではなく*System.out.println*を使用すると、出力はスクリプトコンソールではなくLiferayのログファイルに出力されます。
+*out.println*ではなく*System.out.println*を使用すると、出力はスクリプトコンソールではなくLiferayのログファイルに出力されます。
 ```
-
-<a name="predefined-script-console-variables" />
 
 ## 定義済みのスクリプトコンソール変数
 
@@ -53,7 +49,7 @@ Groovyのサンプルは、Liferayサービスユーティリティ [`UserLocalS
 | `actionResponse` | `javax.portlet.ActionReponse`         |
 | `portletConfig`  | `javax.portlet.PortletConfig`         |
 | `portletContext` | `javax.portlet.PortletContext`        |
-| `preferences`    | `javax.portlet.PortletPreferences`    |
+| `表示設定`           | `javax.portlet.PortletPreferences`    |
 | `userInfo`       | `java.util.Map<String, String>` |
 
 ### 変数の使用
@@ -74,8 +70,6 @@ userInfo.each {
 
 ![以下は、事前定義されているout、actionRequest、およびuserInfo変数を使用して、会社とユーザーに関する情報を出力するGroovyスクリプトを呼び出す例です。](./running-scripts-from-the-script-console/images/02.png)
 
-<a name="tips" />
-
 ## ヒント
 
 スクリプトコンソールを使用するときは、次の点に注意してください。
@@ -89,10 +83,8 @@ userInfo.each {
 
 スクリプトエンジンは、Kaleoワークフローなど、スクリプトコンソールの外部で使用できます。 ワークフローでスクリプトエンジンを使用する方法は次回学びます。
 
-<a name="additional-information" />
-
 ## 追加情報
 
-* [Liferayサービスの呼び出し](./invoking-liferay-services-from-scripts.md)
+* [スクリプトからのLiferayサービスの呼び出し](./invoking-liferay-services-from-scripts.md)
 * [ワークフローでのスクリプトエンジンの使用](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)
 * [スクリプトの例](./script-examples.md)

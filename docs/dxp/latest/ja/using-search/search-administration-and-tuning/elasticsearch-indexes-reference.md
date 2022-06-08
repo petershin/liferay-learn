@@ -1,9 +1,9 @@
 # Elasticsearch インデックスのリファレンス
 
-インストールされているデフォルトのLiferay DXP 7.3インデックスは、以下のリストに近似しています（変更される可能性があります）。 デフォルトのグローバル **インデックス名接頭辞** は`liferay-`です。これはElasticsearch 7コネクタ設定で変更できます。 `20101`は、データベース内の特定の会社の生成された`companyId`です。  UIにインスタンスIDとして表示され、[仮想インスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)を表します。
+インストールされているデフォルトのLiferay DXP 7.3インデックスは、以下のリストに近似しています（変更される可能性があります）。 デフォルトのグローバル*インデックス名接頭辞*は`liferay-`です。これはElasticsearch 7コネクタ設定で変更できます。 `20101`は、データベース内の特定の会社の生成された`companyId`です。  UIにインスタンスIDとして表示され、[仮想インスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)を表します。
 
 | インデックスID                                            | インデックスタイプ  | インデックスの目的                                     |
-| --------------------------------------------------- | ---------- | --------------------------------------------- |
+|:--------------------------------------------------- |:---------- |:--------------------------------------------- |
 | liferay-0                                           | システムインデックス | システム設定アプリケーションでの検索                            |
 | liferay-20101                                       | 会社インデックス   | Liferay DXP仮想インスタンスのインデックス付きアセットの検索           |
 | liferay-20101-search-tuning-rankings                | アプリインデックス  | 結果ランキングアプリケーションのプライマリデータストレージ                 |
@@ -17,22 +17,20 @@
 | liferay-20101-workflow-metrics-transitions          | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロートランジションに関するデータを保存する  |
 
 ```{important}
-   Liferay 7.2のインデックス名は、パッチによってインデックスの命名パターンに変更が加えられたため、より複雑になっています。 詳しくは、 [Multi-Tenant Index Names](../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names) をご覧ください。
+Liferay 7.2のインデックス名は、パッチによってインデックスの命名パターンに変更が加えられたため、より複雑になっています。 See [Multi-Tenant Index Names](../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names) for more information.
 ```
 
 ```{note}
-   Liferay DXPは、カスタムElasticsearchインデックスを作成、使用（書き込み、読み込み）するためのAPIを提供します。 これらのAPIの使用方法については、  [Developer Guide](../developer-guide.html) をご参照ください。
+Liferay DXPは、カスタムElasticsearchインデックスを作成、使用（書き込み、読み込み）するためのAPIを提供します。 See the [Developer Guide](../developer-guide.html) for information on using these APIs.
 ```
 
 もし、 [Liferay Commerce](https://www.liferay.com/products/commerce) のサブスクリプションを持っていて、それがインストールで有効になっている場合、これらのインデックスも持っています。
 
 | インデックスID                                                     | インデックスタイプ | インデックスの目的     |
-| ------------------------------------------------------------ | --------- | ------------- |
+|:------------------------------------------------------------ |:--------- |:------------- |
 | liferay-20101-commerce-ml-forecast                           | アプリインデックス | 機械学習機能        |
 | liferay-20101-product-content-commerce-ml-recommendation     | アプリインデックス | レコメンデーションサービス |
 | liferay-20101-product-interaction-commerce-ml-recommendation | アプリインデックス | レコメンデーションサービス |
-
-<a name="related-information" />
 
 ## 関連情報
 

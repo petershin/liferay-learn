@@ -1,10 +1,8 @@
 # スクリプトからLiferayサービスを呼び出す
 
-多くのスクリプトシナリオでは、Liferayサービスを呼び出す必要があります。 [Liferay `*ServiceUtil`クラス](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/) は、[スクリプトコンソール](./running-scripts-from-the-script-console.md)でLiferayサービスを呼び出す最も速くて便利な方法です。 Javaを使用するのと同じ方法でGroovyを使用してLiferayサービスを呼び出します。 Groovyの構文では、簡潔で洗練されたスクリプトを容易に作成できます。
+多くのスクリプトシナリオでは、Liferayサービスを呼び出す必要があります。 [Liferay `*ServiceUtil`クラス](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/)は、[スクリプトコンソール](./running-scripts-from-the-script-console.md)でLiferayサービスを呼び出す最も速くて便利な方法です。 Javaを使用するのと同じ方法でGroovyを使用してLiferayサービスを呼び出します。 Groovyの構文では、簡潔で洗練されたスクリプトを容易に作成できます。
 
 ユーザーのリストを取得し、その名前をLiferayのログに出力する方法を、Javaコードの場合と`UserLocalServiceUtil`を使用するGroovyコードの場合を比較して説明します。
-
-<a name="java" />
 
 ## Java
 
@@ -27,8 +25,6 @@ for (User user:users) {
 ...
 ```
 
-<a name="groovy" />
-
 ## Groovy
 
 または、スクリプトコンソールでGroovyコードを使用することもできます。
@@ -47,10 +43,8 @@ for (user in users){
 スクリプトコンソールで使用できるため、`com.liferay.portal.kernel.model.User`と`java.util.List`をインポートする必要はありません。 また、Groovy構文はJava構文よりも単純です。
 
 ```{note}
-   サービスに `` * ServiceUtil``クラスがない場合は、 サービスにアクセスするために、次を使用します。 [Service Tracker](../../liferay-internals/dependency-injection/using-a-service-tracker.md) to access the service
+サービスに `* ServiceUtil`クラスがない場合は、 サービスにアクセスするために、[Service Tracker](../../building-applications/core-frameworks/dependency-injection.md)を使用します。
 ```
-
-<a name="next-steps" />
 
 ## 次のステップ
 

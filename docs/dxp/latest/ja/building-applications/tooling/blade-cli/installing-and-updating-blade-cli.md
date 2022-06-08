@@ -2,13 +2,9 @@
 
 Blade CLIは、コマンドラインインターフェイスまたはグラフィカルインストーラーを使用してインストールできます。 プロキシの背後にいる場合は、インストールすると、プロキシを介して動作するように構成できます。 Blade CLIは、新しいバージョンがリリースされたときに通知し、CLIからいつでもアップグレードできます。
 
-<a name="installing-blade-cli" />
-
 ## CLIのインストール
 
 Blade CLIのインストール方法に関係なく、Java JDKの実装が最初にインストールされていることを確認してください。
-
-<a name="installing-from-the-cli" />
 
 ### CLIからインストールする
 
@@ -18,19 +14,17 @@ LinuxおよびMacオペレーティングシステム用のBlade CLIのインス
 curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/installers/local | sh
 ```
 
-インストールが完了すると、`Bladeが正常にインストールされました`というメッセージが表示されます。 新しいコマンドラインを開き、`blade`と入力します。 エラーが見つからないコマンドがある場合は、 [パス](./troubleshooting-blade-cli.md#the-blade-command-is-not-available-in-my-cli) に`blade`コマンドを追加</0>する必要があります。
-
-<a name="installing-from-the-graphical-installer" />
+インストールが完了すると、`Bladeが正常にインストールされました`というメッセージが表示されます。 新しいコマンドラインを開き、`blade`と入力します。 エラーが見つからないコマンドがある場合は、[パス](./troubleshooting-blade-cli.md#the-blade-command-is-not-available-in-my-cli)に`blade`コマンドを追加</0>する必要があります。
 
 ### グラフィカルインストーラーからインストールする
 
-インストーラーに慣れている場合は、最新の [Liferay Project SDKインストーラー](https://sourceforge.net/projects/lportal/files/Liferay%20IDE/) をダウンロードして実行してください。
+インストーラの方が使いやすいという方は、最新の[Liferay Project SDK Installer](https://github.com/liferay/liferay-ide/releases/)をダウンロードし、実行してみてください。
 
 1. Javaランタイムを選択します。 これは自動検出されます。
 
    ![Liferay Workspaceインストーラーは、インストールされているJDKを自動検出します。](./installing-and-updating-blade-cli/images/01.png)
 
-1. イントロダクションの後、 ［**Next**］ をクリックします。
+1. イントロダクションの後、 *［Next］*をクリックします。
 
 1. インストール中に [Liferay Workspace](../liferay-workspace/what-is-liferay-workspace.md) 初期化できます。 Liferay Workspaceは、Liferayプロジェクトを管理するシステム上の環境（一連のフォルダー）です。 今すぐ初期化する場合は、その場所を設定します。
 
@@ -40,13 +34,11 @@ curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/i
 
    ![インストーラーのデフォルトはCommunity Editionですが、DXPを選択できます。](./installing-and-updating-blade-cli/images/03.png)
 
-   製品タイプを選択し、 ［**Next**］ をクリックします。
+   製品タイプを選択し、*［Next］*をクリックします。
 
-1. ［**Next**］ をクリックして、Blade CLIをインストールします。
+1. *［Next］*をクリックして、Blade CLIをインストールします。
 
 Windows環境では、`blade` コマンドがパスに自動的に追加されます（Windowsの場合、またはMacおよびLinuxで `bash` または `zsh` を使用している場合）。 詳細は、 [Blade CLI](./troubleshooting-blade-cli.md) トラブルシューティングを参照してください。
-
-<a name="configuring-a-proxy" />
 
 ## プロキシの構成
 
@@ -57,8 +49,6 @@ jpm command --jvmargs "-Dhttp(s).proxyHost=[your proxy host] -Dhttp(s).proxyPort
 ```
 
 これで、BladeはインターネットからLiferayサンプルおよびテンプレートにアクセスするときにプロキシサーバーを使用できます。
-
-<a name="updating-blade-cli" />
 
 ## Blade CLIの更新
 
@@ -83,14 +73,12 @@ blade update -s
 
 スナップショットのバージョンは不安定になる可能性があるため、自己責任で使用してください。
 
-<a name="blade-commands" />
-
 ## Bladeコマンド
 
 以下は、使用可能なBladeコマンドの概要です。 `blade help [command]`と入力すると、CLIでヘルプを利用できます。
 
-| コマンド                  | 説明                                                                                                                                                                                                                                                                                                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| コマンド                  | Description                                                                                                                                                                                                                                                                                                                                                        |
+|:--------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `変換`                  | Plugins SDKプラグインプロジェクトをGradleワークスペースプロジェクトに変換します。                                                                                                                                                                                                                                                                                                                  |
 | `作成`                  | 利用可能なテンプレートから新しいLiferayプロジェクトを作成します。                                                                                                                                                                                                                                                                                                                               |
 | `デプロイする`              | プロジェクトをビルドしてLiferayにデプロイします。                                                                                                                                                                                                                                                                                                                                       |

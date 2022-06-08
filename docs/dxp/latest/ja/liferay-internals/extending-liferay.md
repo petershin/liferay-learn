@@ -27,3 +27,5 @@ extending-liferay/overriding-mvc-commands.md
 extending-liferay/overriding-osgi-services.md
 extending-liferay/portlet-filters.md
 ```
+
+Liferay DXP/Portalは高度なカスタマイズが可能です。 モジュール式のアーキテクチャには、APIを使って動的に拡張したりオーバーライドしたりできるコンポーネントが含まれています。

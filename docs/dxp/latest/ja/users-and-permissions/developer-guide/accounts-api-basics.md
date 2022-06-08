@@ -1,20 +1,21 @@
-# Accounts APIの基本
+# アカウントAPIの基本
+
+> 対応可能：Liferay DXP/Portal 7.4以降
 
 アプリケーションメニューから [アカウント](../accounts.md) を管理することができますが、LiferayのREST APIを利用することもできます。 これらのサービスを呼び出して、アカウントの作成や管理を行います。
 
-<a name="adding-an-account" />
-
 ## アカウントの追加
 
-```{include} /_snippets/run-liferay-dxp.md
-```
-
-次に、以下の手順を実行します。
-
-1. ダウンロードして解凍する [Accounts API Basics](./liferay-t5p9.zip) 。
+1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
+   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
+   ```
+
+1. ダウンロードして解凍する [Accounts API Basics](./liferay-t5p9.zip)。
+
+   ```bash
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
    ```
 
    ```bash
@@ -24,7 +25,7 @@
 2. cURLスクリプトを使用して、インスタンスに新しいAccountを追加します。 コマンドラインで、 `curl` フォルダに移動します。 `Account_POST_ToInstance.sh` スクリプトを実行します。
 
     ```bash
-    ./Account **POST** ToInstance.sh
+    ./Account_POST_ToInstance.sh
     ```
 
     JSONレスポンスでは、新しいAccountが追加されたことを示しています。
@@ -43,23 +44,21 @@
 
     ```
 
-3. ［**グローバルメニュー**］ &rarr; ［**アプリケーション**］ &rarr; ［**アカウント**］ に移動します。 新しいアカウントが追加されたことを確認してください。
+3. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 新しいアカウントが追加されたことを確認してください。
 
    ![新しいアカウントが追加されたことを確認します。](./accounts-api-basics/images/01.png)
 
 4. RESTサービスは、Javaクライアントを使って呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 以下のコマンドでソースファイルをコンパイルします。
 
     ```bash
-    javac -classpath .: *** .java
+    javac -classpath .:* *.java
     ```
 
 5. `Account_POST_ToInstance.java` クラスを以下のコマンドで実行します。
 
     ```bash
-    java -classpath .: **Account***POST** ToInstance
+    java -classpath .:* Account_POST_ToInstance
     ```
-
-<a name="examine-the-curl-command" />
 
 ## cURLコマンドの検証
 
@@ -71,21 +70,19 @@
 
 ここでは、コマンドの引数を紹介します。
 
-| 引数                                                            | 説明                            |
-| ------------------------------------------------------------- | ----------------------------- |
-| `-H "Content-Type: application/json"`                         | リクエストボディのフォーマットがJSONであることを示す。 |
-| `-X POST`                                                     | 指定されたエンドポイントで起動するHTTPメソッド     |
-| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts"` | RESTサービスのエンドポイント              |
-| `-d "{\"description\": \"Foo\", \"name\": \"Able\"}"` | 投稿をリクエストしているデータ               |
-| `-u "test@liferay.com:learn"`                                  | 基本的な認証情報                      |
+| 引数                                                            | Description                     |
+|:------------------------------------------------------------- |:------------------------------- |
+| `-H "Content-Type: application/json"`                         | リクエストボディのフォーマットがJSONであることを示します。 |
+| `-X POST`                                                     | 指定されたエンドポイントで起動するHTTPメソッド       |
+| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts"` | RESTサービスのエンドポイント                |
+| `-d "{\"description\": \"Foo\", \"name\": \"Able\"}"` | お客様が掲載を希望するデータ                  |
+| `-u "test@liferay.com:test"`                                  | 基本的な認証情報                        |
 
 ```{note}
 ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](./../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/introduction-to-using-oauth2.md)でユーザーを認証する必要があります。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
-
-<a name="examine-the-java-class" />
 
 ## Javaクラスを調べる
 
@@ -105,39 +102,39 @@
 | `AccountResource accountResource = builder.authentication(...).build();` | ベーシック認証を指定し、 `AccountResource` サービスインスタンスを生成します。       |
 | `Account account = accountResource.postAccount(...);`                    | `accountResource.postAccount` メソッドを呼び出し、データをpostに渡します。 |
 
+プロジェクトには、依存関係として`com.liferay.headless.admin.user.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
+
 ```{note}
-main`メソッドのコメントでは、クラスの実行を実演しています。
+`main`メソッドのコメントでは、クラスの実行を実演しています。
 ```
 
 他のJavaクラスの例はこれと似ていますが、異なる `AccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
+サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の `Account` RESTサービスを呼び出す例です。
-
-<a name="get-accounts-from-instance" />
 
 ## インスタンスからアカウントを取得
 
 以下のcURLまたはJavaコマンドを実行することで、アカウントを一覧表示することができます。
 
-### Accounts **GET** FromInstance.sh
+### Accounts_GET_FromInstance.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Accounts_GET_FromInstance.sh
 ```
 
-Code:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/Accounts_GET_FromInstance.sh
    :language: bash
 ```
 
-### Accounts **GET** FromInstance.java
+### Accounts_GET_FromInstance.java
 
 コマンド:
 
@@ -145,7 +142,7 @@ Code:
 java -classpath .:* Accounts_GET_FromInstance
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Accounts_GET_FromInstance.java
    :dedent: 1
@@ -155,8 +152,6 @@ Code:
 
 インスタンスの `アカウント` オブジェクトがJSONで表示されます。
 
-<a name="get-an-account" />
-
 ## アカウントの取得
 
 以下のcURLまたはJavaコマンドで特定のアカウントを取得します。
@@ -165,7 +160,7 @@ Code:
 インスタンスのアカウントIDを取得するには、Accounts_GET_FromInstance.[java|sh]を使用します。
 ```
 
-### Account **GET** ById.sh
+### Account_GET_ById.sh
 
 コマンド:
 
@@ -173,21 +168,21 @@ Code:
 ./Account_GET_ById.sh 1234
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/Account_GET_ById.sh
    :language: bash
 ```
 
-### Account **GET** ById.java
+### Account_GET_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DaccountId=1234 Account_GET_ById
 ```
 
-Code:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Account_GET_ById.java
    :dedent: 1
@@ -195,15 +190,13 @@ Code:
    :lines: 9-20
 ```
 
-`アカウント` フィールドはJSONで表示されます。
-
-<a name="patch-an-account" />
+`Account` フィールドはJSONで表示されます。
 
 ## アカウントへのパッチ適用
 
 以下のcURLおよびJavaコマンドで、既存のAccountの部分編集を行います。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account **PATCH** ById.sh
+### Account_PATCH_ById.sh
 
 コマンド:
 
@@ -211,21 +204,21 @@ Code:
 ./Account_PATCH_ById.sh 1234
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/Account_PATCH_ById.sh
    :language: bash
 ```
 
-### Account **PATCH** ById.java
+### Account_PATCH_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DaccountId=1234 Account_PATCH_ById
 ```
 
-Code:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Account_PATCH_ById.java
    :dedent: 1
@@ -233,13 +226,11 @@ Code:
    :lines: 9-25
 ```
 
-<a name="put-an-account" />
-
 ## アカウントの作成
 
 以下のcURLとJavaコマンドで、既存のAccountを完全に上書きします。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account **PUT** ById.sh
+### Account_PUT_ById.sh
 
 コマンド:
 
@@ -247,13 +238,13 @@ Code:
 ./Account_PUT_ById.sh 1234
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/Account_PUT_ById.sh
    :language: bash
 ```
 
-### Account **PUT** ById.java
+### Account_PUT_ById.java
 
 コマンド:
 
@@ -261,7 +252,7 @@ Code:
 java -classpath .:* -DaccountId=1234 Account_PUT_ById
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Account_PUT_ById.java
    :dedent: 1
@@ -269,27 +260,25 @@ Code:
    :lines: 9-25
 ```
 
-<a name="delete-an-account" />
-
 ## アカウントの削除
 
 以下のcURLおよびJavaコマンドで既存のAccountを削除します。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account **DELETE** ById.sh
+### Account_DELETE_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Account_DELETE_ById.sh 1234
 ```
 
-Code:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/Account_DELETE_ById.sh
    :language: bash
 ```
 
-### Account **DELETE** ById.java
+### Account_DELETE_ById.java
 
 コマンド
 
@@ -297,7 +286,7 @@ Code:
 java -classpath .:* -DaccountId=1234 Account_DELETE_ById
 ```
 
-Code:
+コード:
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Account_DELETE_ById.java
    :dedent: 1
@@ -305,4 +294,4 @@ Code:
    :lines: 8-17
 ```
 
-[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェイスがあります。
+[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。

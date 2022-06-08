@@ -1,11 +1,9 @@
 # 構成UIを非表示にする
 
-Liferayは、 [構成インターフェイスがデプロイ](./setting-and-accessing-configurations.html#creating-the-configuration-interface) された後、構成UIを自動的に生成します。 ただし、UIを非表示にしたい特定のユースケースがある場合があります。 たとえば、管理者に特定の構成へのアクセスを許可したくない場合や、特定の基準に基づいて構成を非表示にしたい場合です。 構成UIを非表示にするには、2つの異なるオプションがあります。
+Liferayは、[構成インターフェイスがデプロイ](./setting-and-accessing-configurations.html#creating-the-configuration-interface)された後、構成UIを自動的に生成します。 ただし、UIを非表示にしたい特定のユースケースがある場合があります。 たとえば、管理者に特定の構成へのアクセスを許可したくない場合や、特定の基準に基づいて構成を非表示にしたい場合です。 構成UIを非表示にするには、2つの異なるオプションがあります。
 
 * `generateUI`アノテーションプロパティを使用する
 * 構成の可視性インターフェイスを使用する
-
-<a name="using-generateui" />
 
 ## `generateUI`を使用する
 
@@ -15,25 +13,22 @@ Liferayは、 [構成インターフェイスがデプロイ](./setting-and-acce
 @ExtendedObjectClassDefinition(generateUI=false)
 ```
 
-<a name="using-the-configuration-visibility-interface" />
-
 ## 構成の可視性インターフェイスを使用する
 
 構成UIを選択的に非表示にする場合は、`ConfigurationVisibilityController`インターフェイスを使用します。
 
-<a name="see-an-example-implementation" />
-
 ### 実装例を参照してください
 
-```{include} /_snippets/run-liferay-portal.md
-```
-
-次に、以下の手順を実行します。
-
-1. [構成UIの非表示](./liferay-g8v3.zip) をダウンロードして解凍します。
+1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-g8v3.zip -O
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
+
+1. [構成UIの非表示](./liferay-g8v3.zip)をダウンロードして解凍します。
+
+    ```bash
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-g8v3.zip -O
     ```
 
     ```bash
@@ -56,13 +51,11 @@ Liferayは、 [構成インターフェイスがデプロイ](./setting-and-acce
     STARTED com.acme.g8v3.impl_1.0.0 [1650]
     ```
 
-1. ブラウザで`https://localhost:8080` を開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**システム設定**］ に移動します。 ［プラットフォーム］で ［**サードパーティー**］ をクリックします。 左側の ［**G8V3 Able Configuration**］ をクリックします 。 ［Enable G8V3 Baker Configuration］のチェックボックスをオンにします。 [**アップデート**] ボタンをクリックします。
+1. ブラウザで`https://localhost:8080` を開き、*［コントロールパネル］* &rarr; *［設定］* &rarr; *［システム設定］*に移動します。 ［プラットフォーム］で*［サードパーティー］*をクリックします。 左側の*［G8V3 Able Configuration］*をクリックします 。 ［Enable G8V3 Baker Configuration］のチェックボックスをオンにします。 *[アップデート]*ボタンをクリックします。
 
     ![チェックボックスをクリックすると、他の構成UIが表示されます](./hiding-the-configuration-ui/images/01.png)
 
 1. このチェックボックスが有効になっていない場合、G8V3 Baker構成は非表示になっていることに注意してください。
-
-<a name="implement-the-interface" />
 
 ### インターフェイスを実装する
 

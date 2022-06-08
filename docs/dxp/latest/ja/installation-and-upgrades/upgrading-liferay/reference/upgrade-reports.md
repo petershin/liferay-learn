@@ -7,7 +7,7 @@
 * データベースのベンダーとバージョン
 * アップグレード関連のポータルプロパティ設定
 * ドキュメントライブラリストアと`rootDir`の構成設定
-* ドキュメントライブラリのサイズ（[ファイルシステムストア](../../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)および[高度なファイルシステムストア](../../../system-administration/file-storage/configuring-file-storage.md)の場合）
+* ドキュメントライブラリのサイズ（[ファイルシステムストア](../../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)および[高度なファイルシステムストア](../../../system-administration/file-storage.md)の場合）
 * 最も長く実行されている20のアップグレードプロセス
 * エラーと各タイプの頻度
 * 警告と各タイプの頻度
@@ -18,7 +18,7 @@
 アップグレードレポートは、Liferay DXP/Portal 7.4以降で利用できます。
 ```
 
-アップグレードレポートを有効にするには、`tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties`ファイルで`upgrade.report.enabled=true` [ポータルプロパティ](../../reference/portal-properties.md) を設定します。 例:
+アップグレードレポートを有効にするには、`tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties`ファイルで`upgrade.report.enabled=true`[ポータルプロパティ](../../reference/portal-properties.md)を設定します。 例:
 
 ```bash
 cd liferay-home
@@ -30,14 +30,12 @@ echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/p
 
 [データベースアップグレードツール](../upgrade-basics/using-the-database-upgrade-tool.md)は、次回の実行時にアップグレードレポートを生成します。
 
-<a name="additional-information" />
-
 ## 追加情報
 
-* [アップグレードの概要](../upgrade-basics/upgrade-overview.md)
+* [アップグレードの基本](../upgrade-basics.md)
 
 * [Running the Database Upgrade Tool](../upgrade-basics/using-the-database-upgrade-tool.md)
 
 * [データベースアップグレードツールのリファレンス](../reference/database-upgrade-tool-reference.md#manual-configuration)
 
-* [アップグレードのトラブルシューティング](../reference/troubleshooting-upgrades.md)
+* [Troubleshooting Upgrades](../reference/troubleshooting-upgrades.md)

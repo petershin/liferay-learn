@@ -1,10 +1,10 @@
 # CDIポートレットの事前定義されたBean
 
-Liferay DXPは、 [JSR 362](https://jcp.org/en/jsr/detail?id=362) で指定されているように、ポートレットの事前定義されたBeanと呼ばれるCDI用の注入可能なポートレットアーティファクトを提供します。  事前定義されたBeanには次の2つのタイプがあります。
+Liferay DXPは、[JSR 362](https://jcp.org/en/jsr/detail?id=362)で指定されているように、ポートレットの事前定義されたBeanと呼ばれるCDI用の注入可能なポートレットアーティファクトを提供します。  事前定義されたBeanには次の2つのタイプがあります。
 
-* ポートレットリクエストスコープのBean（ [`@PortletRequestScoped`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/annotations/PortletRequestScoped.html)
+* ポートレットリクエストスコープのBean（[`@PortletRequestScoped`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/annotations/PortletRequestScoped.html)
 
-* 依存スコープのBean（ [`@Dependent` scoped](https://docs.oracle.com/javaee/7/api/javax/enterprise/context/Dependent.html) ）
+* 依存スコープのBean（[`@Dependent` scoped](https://docs.oracle.com/javaee/7/api/javax/enterprise/context/Dependent.html)）
 
 次の表は、各Beanのこれらの属性を示しています。
 
@@ -12,11 +12,9 @@ Liferay DXPは、 [JSR 362](https://jcp.org/en/jsr/detail?id=362) で指定さ�
 
 **Bean EL名：** JSPまたはJSFページでBeanにアクセスするための式言語（EL）名。
 
-**修飾子：** Bean実装を定義および選択するためにBeanに適用されるアノテーション。
+**修飾子：**Bean実装を定義および選択するためにBeanに適用されるアノテーション。
 
-**有効なフェーズ：** Beanが有効な[ポートレットフェーズ](../../reference/portlets.md)。
-
-<a name="portlet-request-scoped-beans" />
+**有効なフェーズ：**Beanが有効な[ポートレットフェーズ](../../reference/portlets.md)。
 
 ## ポートレットリクエストスコープのBean
 
@@ -25,7 +23,7 @@ Liferay DXPは、 [JSR 362](https://jcp.org/en/jsr/detail?id=362) で指定さ�
 表1：ポートレットリクエストスコープのBean[^1]
 
 | アーティファクト                      | Bean EL名              | 修飾子 | 有効期間           |
-| ----------------------------- | --------------------- | --- | -------------- |
+|:----------------------------- |:--------------------- |:--- |:-------------- |
 | `PortletConfig`               | `portletConfig`       | -   | すべて            |
 | `PortletRequest`              | `portletRequest`      | -   | すべて            |
 | `PortletResponse`             | `portletResponse`     | -   | すべて            |
@@ -54,8 +52,6 @@ Liferay DXPは、 [JSR 362](https://jcp.org/en/jsr/detail?id=362) で指定さ�
 | `PortletSession`              | `portletSession`      | -   | すべて            |
 | `Locales(List<Locale>)` | `locales`             | -   | すべて            |
 
-<a name="dependent-scoped-beans" />
-
 ## 依存スコープのBean
 
 これらのBeanは`@Dependent`スコープを使用します。 それらは`java.lang.String`型で、 `final`です。 これにより、プロキシされなくなります。  元のスコープよりも広いスコープで依存スコープのBeanを使用しないようにするには、それらを`@PortletRequestScoped` Beanにのみ注入する必要があります。
@@ -63,13 +59,11 @@ Liferay DXPは、 [JSR 362](https://jcp.org/en/jsr/detail?id=362) で指定さ�
 表2：依存スコープのBean[^2]
 
 | アーティファクト                | Bean EL名      | 修飾子            | 有効期間 |
-| ----------------------- | ------------- | -------------- | ---- |
+|:----------------------- |:------------- |:-------------- |:---- |
 | `Namespace` (String)    | `namespace`   | `@Namespace`   | すべて  |
 | `ContextPath` (String)  | `contextPath` | `@ContextPath` | すべて  |
 | `WindowID` (String)     | `windowId`    | `@WindowId`    | すべて  |
 | `Portlet name` (String) | `portletName` | `@PortletName` | すべて  |
-
-<a name="additional-information" />
 
 ## 追加情報
 

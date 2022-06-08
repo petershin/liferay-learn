@@ -1,14 +1,12 @@
 # フォームストレージアダプターの書き込み
 
-> 利用可能： [LPS-97208](https://issues.liferay.com/browse/LPS-97208) の修正（Liferay DXP 7.2 SP3で計画）を含むLiferay DXP 7.3およびLiferay DXP 7.2バージョン。
+> 利用可能：[LPS-97208](https://issues.liferay.com/browse/LPS-97208)の修正（Liferay DXP 7.2 SP3で計画）を含むLiferay DXP 7.3およびLiferay DXP 7.2バージョン。
 
 デフォルトでは、フォームはLiferay DXPのデータベースにJSONとして保存されます。 この例では、フォームレコードの永続化イベントにカスタムロジックを挿入するために、新しいストレージアダプターを実装する方法を紹介します。
 
 ![DDMストレージアダプターを使用して、フォームアプリケーションにストレージタイプを追加します。](./writing-a-form-storage-adapter/images/01.png)
 
-最初に、 [デフォルトのストレージアダプター](https://github.com/liferay/liferay-portal/blob/［$LIFERAY **LEARN** PORTAL **GIT** TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/JSONDDMStorageAdapter.java) がフォームレコードをLiferay DXPのデータベースにJSONコンテンツとして保存する方法を確認します。 そして、各フォームレコードをファイルシステムに保存するロジックを追加します。
-
-<a name="examine-a-running-ddm-storage-adapter" />
+最初に、[デフォルトのストレージアダプター](https://github.com/liferay/liferay-portal/blob/［$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/JSONDDMStorageAdapter.java)がフォームレコードをLiferay DXPのデータベースにJSONコンテンツとして保存する方法を確認します。 そして、各フォームレコードをファイルシステムに保存するロジックを追加します。
 
 ## 実行中のDDMストレージアダプターを調べる
 
@@ -16,15 +14,22 @@
 
 ### サンプルをデプロイする
 
-```{include} /_snippets/run-liferay-portal.md
-```
-
-次に、以下の手順を実行します。
-
-1. [DDMストレージアダプターのプロジェクト](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) をダウンロードして解凍します。
+1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-r2f1.zip -O
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
+
+    すでにDockerコンテナを持っている場合は、以下を使用します。
+
+    ```bash
+    docker start -i [container_name]
+    ```
+
+1. [DDMストレージアダプターのプロジェクト](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip)をダウンロードして解凍します。
+
+    ```bash
+    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
     ```
 
     ```bash
@@ -37,8 +42,8 @@
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```tip::
-       このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
+    ```{tip}
+    このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
     ```
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
@@ -51,19 +56,19 @@
 
 1. ブラウザで<http://localhost:8080>を開きます。
 
-1. **サイトメニュー** &rarr; **コンテンツ & データ** &rarr; **フォーム** のフォームアプリケーションに移動します。
+1. _サイトメニュー_ &rarr; _コンテンツ & データ_ &rarr; _フォーム_のフォームアプリケーションに移動します。
 
-1. **追加** ボタン（![Add](./../../../images/icon-add.png)）をクリックして、フォームビルダーを開きます。
+1. *追加* ボタン（![Add](./../../../images/icon-add.png)）をクリックして、フォームビルダーを開きます。
 
-1. ［フォームビルダー］ビューで、 **オプション** ボタン（![Options](./../../../images/icon-options.png)）をクリックし、 ［**Settings**］ ウィンドウを開きます。
+1. ［フォームビルダー］ビューで、*オプション* ボタン（![Options](./../../../images/icon-options.png)）をクリックし、*［Settings］*ウィンドウを開きます。
 
-1. ［**ストレージの種類を選択する**］ で、 ［**R2F1 Dynamic Data Mapping Storage Adapter**］ タイプを選択し、 ［**Done**］ をクリックします。
+1. *［ストレージの種類を選択する］*で、*［R2F1 Dynamic Data Mapping Storage Adapter］*タイプを選択し、_［Done］_をクリックします。
 
 1. フォームに[テキストフィールド](../creating-and-managing-forms/creating-forms.md)を追加し、フォームを公開して、何度か送信します。
 
 1. フォームデータが保持されていることを確認するには、フォームのレコードに移動します。
 
-［**サイトメニュー**］ → ［**コンテンツ**］ → ［**フォーム**］ から、フォームの **アクション** ボタン(![Actions](./../../../images/icon-actions.png))をクリックして、 ［**エントリの参照**］ をクリックします。
+   _［サイトメニュー］_ → _［コンテンツ］_ → _［フォーム］_から、フォームの *アクション* ボタン(![Actions](./../../../images/icon-actions.png))をクリックして、_［エントリの参照］_をクリックします。
 
    ![フォームエントリーが追加されたことを確認します。](./writing-a-form-storage-adapter/images/02.png)
 
@@ -72,8 +77,6 @@
    ```bash
    WARN  [http-nio-8080-exec-5][R2F1DDMStorageAdapter:82] Acme storage adapter's save method was invoked
    ```
-
-<a name="understand-the-extension-point" />
 
 ## 拡張ポイントを理解する
 
@@ -92,7 +95,7 @@ public class R2F1DDMStorageAdapter implements DDMStorageAdapter {
 ```
 
 ```{note}
-   ``r2f1-ddm-storage-adapter``キーは、``src/main/resources/content/Language.properties``ファイルと、``bnd.bnd``ファイル内の``Provide-Capability``ヘッダーによって、`R2F1 Dynamic Data Mapping Storage Adapter`という値にローカライズされます。
+`r2f1-ddm-storage-adapter` キーは、`src/main/resources/content/Language.properties`ファイルと`bnd.bnd`内の`Provide-Capability`ヘッダーによって、`R2F1 Dynamic Data Mapping Storage Adapter`という値にローカライズされます。
 ```
 
 `service`コンポーネントプロパティは、実装を`DDMStorageAdapter`サービスとして登録します。
@@ -126,11 +129,9 @@ public DDMStorageAdapterSaveResponse save(
     throws StorageException;
 ```
 
-各メソッドは、 **DDMStorageAdapter[ [保存](https://github.com/liferay/liferay-portal/blob/[$LIFERAY** LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java) / [取得](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java) / [削除](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java) ]レスポンス_ オブジェクトを返さなければなりません。静的なインナー `Builder` クラスの `newBuilder` メソッドを使用して構築されます。
+各メソッドは、 _DDMStorageAdapter[[保存](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java)/[取得](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java)/[削除](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java)]レスポンス_ オブジェクトを返さなければなりません。静的なインナー `Builder` クラスの `newBuilder` メソッドを使用して構築されます。
 
 すべてのメソッドに`DDMStorageAdapter［Save/Delete/Get］Request`が渡されます。 リクエストオブジェクトには、有用なコンテキスト情報を返すgetterメソッドが含まれています。
-
-<a name="implement-file-system-storage" />
 
 ## ファイルシステムストレージを実装する
 
@@ -290,8 +291,6 @@ private static final Log _log = LogFactoryUtil.getLog(
 
    `_jsonStorageAdapter.save`の呼び出しが最初に行われ、新しいフォームエントリー用にプライマリーキーが作成されます。 このプライマリーキーは、`fielId`を作成するために`Response`オブジェクトから取得されます。
 
-<a name="deploy-and-test-the-storage-adapter" />
-
 ## ストレージアダプターをデプロイしてテストする
 
 先ほどと同じ`deploy`コマンドを使用してストレージアダプターをデプロイします。 モジュールルートから、以下を実行します。
@@ -302,13 +301,13 @@ private static final Log _log = LogFactoryUtil.getLog(
 
 以下のように動作を確認します。
 
-1. **サイトメニュー** &rarr; **コンテンツ** &rarr; **フォーム** にあるフォームアプリケーションにアクセスします。
+1. _サイトメニュー_ &rarr; _コンテンツ_ &rarr; _フォーム_にあるフォームアプリケーションにアクセスします。
 
-1. **追加** ボタン![Add](./../../../images/icon-add.png)をクリックして、フォームビルダーを開きます。
+1. *追加* ボタン![Add](./../../../images/icon-add.png)をクリックして、フォームビルダーを開きます。
 
-1. ［フォームビルダー］ビューで、 **オプション** ボタン（![Options](./../../../images/icon-options.png)）をクリックし、 ［**Settings**］ ウィンドウを開きます。
+1. ［フォームビルダー］ビューで、*オプション* ボタン（![Options](./../../../images/icon-options.png)）をクリックし、*［Settings］*ウィンドウを開きます。
 
-1. リストを選択フィールド ［**ストレージの種類を選択する**］ から、 ［**R2F1 Dynamic Data Mapping Storage Adapter**］ タイプを選択し、 ［**完了**］ をクリックします。
+1. リストを選択フィールド*［ストレージの種類を選択する］*から、*［R2F1 Dynamic Data Mapping Storage Adapter］*タイプを選択し、_［完了］_をクリックします。
 
 1. フォームに[テキストフィールド](../creating-and-managing-forms/creating-forms.md)を追加し、フォームを公開して、何度か送信します。
 
@@ -318,10 +317,8 @@ private static final Log _log = LogFactoryUtil.getLog(
    WARN  [http-nio-8080-exec-5][R2F1DDMStorageAdapter:82] Acme storage adapter's save method was invoked
    WARN  [http-nio-8080-exec-5][R2F1DDMStorageAdapter:134] Saved a file with the ID42088
    WARN  [http-nio-8080-exec-5][R2F1DDMStorageAdapter:61] Acme storage adapter's get method was invoked
-   WARN  [http-nio-8080-exec-5][R2F1DDMStorageAdapter:112] Reading the file with the ID 42088: {"availableLanguageIds":["en **US"],"defaultLanguageId":"en** US","fieldValues":[{"instanceId":"EJ5UglA1","name":"Field51665758","value":{"en_US":"Stretched limousine"}}]}
+   WARN  [http-nio-8080-exec-5][R2F1DDMStorageAdapter:112] Reading the file with the ID 42088: {"availableLanguageIds":["en_US"],"defaultLanguageId":"en_US","fieldValues":[{"instanceId":"EJ5UglA1","name":"Field51665758","value":{"en_US":"Stretched limousine"}}]}
    ```
-
-<a name="conclusion" />
 
 ## まとめ
 

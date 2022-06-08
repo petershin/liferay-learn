@@ -9,7 +9,7 @@ toc:
 # アプリの管理
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 
 managing-apps/using-the-app-manager.md
 managing-apps/configuring-portlets-themes-and-layout-templates.md

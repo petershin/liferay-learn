@@ -1,6 +1,6 @@
 # DXP
 
-Welcome to the official documentation for the latest versions (7.3 and 7.4+) of Liferay DXP and Liferay Portal! Liferay DXP is the commercially supported and enterprise ready platform used around the world, built on the foundation of Liferay Portal. If this is your first time learning about Liferay DXP, get started quickly with our [Dockerイメージから始める](./getting-started/starting-with-a-docker-image.md) article. Unless otherwise noted, content on this site is applicable to both Liferay DXP and Liferay Portal.
+本ページでは、Liferay DXPとLiferay Portalの最新バージョン（7.3と7.4）についてのドキュメントをご紹介しています。 Liferay DXPは、世界中で使用されている商用サポート済みのエンタープライズ対応プラットフォームであり、Liferay Portalの基盤の上に構築されています。 Liferay DXPについて初めて学ぶ方は、 [Dockerイメージから始める](./getting-started/starting-with-a-docker-image.md) の記事からすぐに始められます。 特に明記されていない限り、本サイトのコンテンツは、Liferay DXPとLiferay Portalの両方に適用されます。
 
 ```{raw} html
 :file: landingpage_template.html

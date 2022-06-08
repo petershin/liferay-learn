@@ -3,18 +3,14 @@
 オンプレミスでElasticsearchをインストール、設定、起動する方法は次のとおりです。
 
 ```{important}
-   Liferay 7.3にバンドルされているSidecar Elasticsearchサーバは、Elasticsearch OSSディストリビューションを使用しています。 OSS版を本番用にインストールしないでください。 LiferayをElasticsearchで安全に運用するためには、最低でもElasticsearchのBasicレベルをインストールする必要があります。 詳しくは [Elasticのサブスクリプションページ](https://www.elastic.co/subscriptions) をご覧ください。
+Liferay 7.3 および Liferay 7.4 の初期バージョン（Liferay DXP 7.4 U16/Liferay Portal 7.4 GA16 まで）にバンドルされている Sidecar Elasticsearch サーバは、Elasticsearch OSS ディストリビューションを使用しています。 OSS版を本番用にインストールしないでください。 LiferayをElasticsearchで安全に運用するためには、最低でもElasticsearchのBasicレベルをインストールする必要があります。 詳細は、[Elasticのサブスクリプションページ](https://www.elastic.co/subscriptions) をご覧ください。
 ```
 
 ```{note}
-   一次データの保存（データベースにバックアップされていないデータの保存）に使用されているElasticsearchインデックスがある場合は、[snapshot and restore approach](./upgrading-elasticsearch/backing-up-elasticsearch.md) . Liferay独自の検索の調整インデックス(結果ランキングとSynyonyms用)は、プライマリーストレージのインデックスです。
+Elasticsearchのインデックスをプライマリデータストレージとして使用している場合（データベースによってバックアップされていないデータを保存）、[Elasticsearchのバックアップ](./upgrading-elasticsearch/backing-up-elasticsearch.md) を使用してそのデータを新しいElasticsearchクラスタに取り込むことが可能です。 Liferay独自の検索の調整インデックス(結果ランキングとSynyonyms用)は、Liferay DXP7.2と7.3のプライマリーストレージのインデックスです。
 ```
 
-<a name="environment-setup-for-production-like-installation" />
-
 ## 本番環境のようなインストールのための環境設定
-
-<a name="adding-hosts" />
 
 ### ホストの追加
 
@@ -29,27 +25,23 @@ localhostまたはDockerコンテナを使用してテスト環境をセット�
 
 ループバックアドレス`127.0.0.1`ではなく、システムの実際のIPアドレスを使用してください。
 
-<a name="adjusting-mmap" />
-
 ### mmapの調整
 
-Elasticsearchは、ほとんどのオペレーティングシステムのデフォルトよりも多くの **mmapカウント** を必要とします（インデックスを保持するディレクトリをメモリにマッピングするため）。 Linuxでは、rootユーザーとして、次のように実行します。
+Elasticsearchは、ほとんどのオペレーティングシステムのデフォルトよりも多くの_mmapカウント_を必要とします（インデックスを保持するディレクトリをメモリにマッピングするため）。 Linuxでは、rootユーザーとして、次のように実行します。
 
 ```bash
 sysctl -w vm.max_map_count=262144
 ```
 
-<a name="install-elasticsearch" />
-
 ## Elasticsearchのインストール
 
-1. [ElasticのWebサイト](https://www.elastic.co) からElasticsearchアーカイブ（OSSバージョンではない）をダウンロードします。
+1. [ElasticのWebサイト](https://www.elastic.co)からElasticsearchアーカイブ（OSSバージョンではない）をダウンロードします。
 
     ```{important}
-       [お使いのLiferayのバージョンと互換性のある](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors) 最新のElasticsearchアーカイブをダウンロードしてください.
+    [お使いのLiferayのバージョンと互換性のある](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors)最新のElasticsearchアーカイブをダウンロードしてください。
     ```
 
-1. Elasticsearchを実行するローカルフォルダにアーカイブの内容を展開します。 このフォルダが **Elasticsearchホーム** です。
+1. Elasticsearchを実行するローカルフォルダにアーカイブの内容を展開します。 このフォルダが*Elasticsearchホーム*です。
 
 1. `［Elasticsearch Home］/bin`フォルダで次のコマンドを実行して、必要なElasticsearchプラグインをインストールします。
 
@@ -69,17 +61,13 @@ sysctl -w vm.max_map_count=262144
    ./elasticsearch-plugin install analysis-stempel
    ```
 
-<a name="configure-elasticsearch" />
-
 ## Elasticsearchの設定
 
 各Elasticsearchサーバは、`［Elasticsearch Home］/config/elasticsearch.yml`ファイルによって設定されます。
 
 シングルノードおよびマルチノードのElasticsearchクラスター構成の例を次に示します。
 
-Elasticsearch サーバーとの通信の認証と暗号化については、 [Elasticsearchの保護](./securing-elasticsearch.md) を参照してください。
-
-<a name="example-single-node-production-elasticsearch-cluster" />
+Elasticsearch サーバーとの通信の認証と暗号化については、[Securing Elasticsearch](./securing-elasticsearch.md)を参照してください。
 
 ### 例：シングルノードの本番環境Elasticsearchクラスター
 
@@ -102,10 +90,8 @@ transport.port: 9300
 `LiferayElasticsearchCluster`と呼ばれるこのクラスターには、`es-node1`と呼ばれるノードが1つあります。
 
 ```{tip}
-   プロダクションモードのセットアップでホストを設定しない場合は、ホストの値として `localhost` を使用してください。 Elasticsearchは、HTTPとTransportの通信のためにループバックアドレスにバインドすることができます。 シングルノードの発見とともに、これはElasticsearchサーバーが「開発モード」で動作していることを意味します。
+プロダクションモードのセットアップでホストを設定しない場合は、ホストの値として`localhost`を使用してください。 Elasticsearchは、HTTPとTransportの通信のためにループバックアドレスにバインドすることができます。 シングルノードの発見とともに、これはElasticsearchサーバーが「開発モード」で動作していることを意味します。
 ```
-
-<a name="example-multi-node-production-elasticsearch-cluster" />
 
 ### 例：マルチノード本番環境Elasticsearchクラスター
 
@@ -132,42 +118,38 @@ transport.port: 9302
 ```
 
 ```{tip}
-   プロダクションモードのセットアップでホストを設定しない場合は、ホストの値として `localhost` を使用してください。 Elasticsearchは、HTTPとTransportの通信のためにループバックアドレスにバインドすることができます。 これは「開発モード」と呼ばれています。
+プロダクションモードのセットアップでホストを設定しない場合は、ホストの値として`localhost`を使用してください。 Elasticsearchは、HTTPとTransportの通信のためにループバックアドレスにバインドすることができます。 これは「開発モード」と呼ばれています。
 
-   関連するElasticsearchのドキュメントです。
+関連するElasticsearchのドキュメントです。
 
-   - [Important Elasticsearch configuration](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/important-settings.html) 
+- [Elasticsearchの重要な設定](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/important-settings.html)
 
-   - [Security settings in Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html) 
+- [Elasticsearchのセキュリティ設定](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html)
 
-   - [Bootstrap Checks, Development vs. production mode](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html) 
+- [ブートストラップチェック、開発モードと本番モード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html)
 ```
 
 ```{important}
-   各Elasticsearchノードの `elasticsearch.yml` ファイルは、以下のプロパティに固有の値を使用する必要があります。
+各Elasticsearchノードの`elasticsearch.yml`ファイルは、以下のプロパティに固有の値を使用する必要があります。
 
-   - `node.name`
+- `node.name`
 
-   - `http.port`
+- `http.port`
 
-   - `network.host`
+- `network.host`
 
-   - `transport.port`
+- `transport.port`
 ```
-
-<a name="enforce-bootstrap-checks-for-single-server-in-production-mode" />
 
 ### 本番環境モードで単一サーバーのブートストラップチェックを実施する
 
-Elasticsearch [ブートストラップチェック](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html) では、起動時に構成を検査し、構成が欠落しているか疑わしい場合は警告をログに記録します。 本番環境では、構成ミスの際に起動を停止するようにブートストラップチェックを設定する必要があります。
+Elasticsearch[ブートストラップチェック](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html)では、起動時に構成を検査し、構成が欠落しているか疑わしい場合は警告をログに記録します。 本番環境では、構成ミスの際に起動を停止するようにブートストラップチェックを設定する必要があります。
 
 シングルノードクラスターでブートストラップチェックを実施するには、次のプロパティをノードの`［Elasticsearch Home］/config/jvm.options`ファイルの最後に追加します。
 
 ```properties
 -Des.enforce.bootstrap.checks=true
 ```
-
-<a name="start-elasticsearch" />
 
 ## Elasticsearchの起動
 
@@ -189,12 +171,10 @@ Elasticsearchは[Liferayからの接続](./connecting-to-elasticsearch.md)の準
 
 本番環境で実行している場合は、[LiferayとElasticsearch間の通信を保護します](./securing-elasticsearch.md)。
 
-<a name="additional-topics" />
-
 ## 追加のトピック
 
 * [Elasticsearchの保護](./securing-elasticsearch.md)
-* [Liferay Enterprise Search](../../liferay_enterprise_search.md)
+* [Liferay Enterprise Search](../../liferay-enterprise-search.md)
 * [ページの検索](../../search-pages-and-widgets/working-with-search-pages/search-pages.md)
-* [検索の管理と調整](../../search_administration_and_tuning.md)
+* [検索の管理と調整](../../search-administration-and-tuning.md)
 * [Elasticsearchコネクタの設定](./elasticsearch-connector-configuration-reference.md)

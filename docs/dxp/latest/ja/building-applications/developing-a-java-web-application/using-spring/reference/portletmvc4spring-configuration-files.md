@@ -12,8 +12,6 @@ PortletMVC4Springアプリケーションの`WEB-INF`フォルダには、次の
 
 各ファイルの例が提供され、ポートレット固有のコンテンツがハイライト表示されています。
 
-<a name="webxml" />
-
 ## web.xml
 
 サーブレットコンテナは`web.xml`を処理します。 このファイルは、ポートレットをレンダリングするサーブレットと、ポートレットアプリケーションのコンテキスト、サーブレット、フィルタ、リスナーなどを指定します。 `web.xml`の例を次に示します。
@@ -74,7 +72,7 @@ PortletMVC4Springアプリケーションの`WEB-INF`フォルダには、次の
 </servlet-mapping>
 ```
 
-[`ViewRendererServlet`](https://liferay.github.io/portletmvc4spring/apidocs/com/liferay/portletmvc4spring/ViewRendererServlet.html) は、  ポートレットリクエストをサーブレットリクエストに変換し、Spring Web MVCインフラストラクチャと、JSP、Thymeleaf、Velocityなどのインフラストラクチャのレンダラーを使用してビューをレンダリングできるようにします。
+[`ViewRendererServlet`](https://liferay.github.io/portletmvc4spring/apidocs/com/liferay/portletmvc4spring/ViewRendererServlet.html)は、  ポートレットリクエストをサーブレットリクエストに変換し、Spring Web MVCインフラストラクチャと、JSP、Thymeleaf、Velocityなどのインフラストラクチャのレンダラーを使用してビューをレンダリングできるようにします。
 
 フィルタとフィルタマッピングは転送するように設定されており、必要に応じてサーブレットビューが含まれます。
 
@@ -100,8 +98,6 @@ PortletMVC4Springアプリケーションの`WEB-INF`フォルダには、次の
 ```
 
 Liferayのプロジェクトアーキタイプは、このすべての定型コードを生成します。
-
-<a name="portletxml" />
 
 ## portlet.xml
 
@@ -167,7 +163,7 @@ Liferayのプロジェクトアーキタイプは、このすべての定型コ�
 
 `<portlet-name/>`は内部であり、`<display-name/>`はユーザーに表示されます。 `<portlet-class/>`は、ポートレットのJavaクラスを指定します。
 
-**重要：** すべてのPortletMVC4Springポートレットは、`<portlet-class>com.liferay.portletmvc4spring.DispatcherPortlet</portlet-class>`を指定する必要があります。
+**重要：**すべてのPortletMVC4Springポートレットは、`<portlet-class>com.liferay.portletmvc4spring.DispatcherPortlet</portlet-class>`を指定する必要があります。
 
 `<supports/>` 要素は、ポートレットテンプレートが使用するMIME 種別を宣言する必要があります。
 
@@ -181,7 +177,7 @@ Liferayのプロジェクトアーキタイプは、このすべての定型コ�
 
 `<security-role-ref/>` 要素は、ポートレットを構成するデフォルトのユーザーロールを宣言します。
 
-最後に、 [`SpringSecurityPortletFilter`](https://liferay.github.io/portletmvc4spring/apidocs/index.html) という名前の `<filter/>`は、クロスサイトリクエストフォージェリ（CSRF）を回避します。
+最後に、[`SpringSecurityPortletFilter`](https://liferay.github.io/portletmvc4spring/apidocs/index.html)という名前の `<filter/>`は、クロスサイトリクエストフォージェリ（CSRF）を回避します。
 
 ```xml
 <filter>
@@ -197,9 +193,7 @@ Liferayのプロジェクトアーキタイプは、このすべての定型コ�
 </filter-mapping>
 ```
 
-[`portlet XSD`](https://docs.liferay.com/portlet-api/3.0/portlet-app_3_0.xsd) は`portlet.xml`を定義します。 次に、Liferay固有のポートレット記述子について説明します。
-
-<a name="liferay-portletxml" />
+[`portlet XSD`](https://docs.liferay.com/portlet-api/3.0/portlet-app_3_0.xsd)は`portlet.xml`を定義します。 次に、Liferay固有のポートレット記述子について説明します。
 
 ## liferay-portlet.xml
 
@@ -238,9 +232,7 @@ Liferayのプロジェクトアーキタイプは、このすべての定型コ�
 
 `<role-mapper/>`要素は、ポートレットをデフォルトのLiferay DXPユーザーロールに関連付けます。
 
-[`liferay-portlet-app- [version].dtd`ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) は、`liferay-portlet.xml`ファイルを定義します。
-
-<a name="liferay-displayxml" />
+[`liferay-portlet-app-[version].dtd`ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html)は、`liferay-portlet.xml`ファイルを定義します。
 
 ## liferay-display.xml
 
@@ -257,11 +249,9 @@ Liferayのプロジェクトアーキタイプは、このすべての定型コ�
 </display>
 ```
 
-詳細については、[`liferay-display- [version].dtd`ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) を参照してください。
+詳細については、[`liferay-display-[version].dtd`ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html)を参照してください。
 
 次に、アプリケーションコンテキストを見てみましょう。
-
-<a name="portlet-application-context" />
 
 ## ポートレットアプリケーションコンテキスト
 
@@ -326,8 +316,6 @@ Liferayのプロジェクトアーキタイプは、このすべての定型コ�
 
 アプリケーションの各ポートレットのコンテキストを指定することもできます。
 
-<a name="portlet-contexts" />
-
 ## ポートレットコンテキスト
 
 ポートレットに固有のBeanは、ポートレットのコンテキストに入ります。 アノテーションはPortletMVC4Springポートレットを開発する最も簡単な方法であるため、ポートレットコンテキストでMVCアノテーションスキャンを指定する必要があります。
@@ -360,13 +348,11 @@ Liferayのプロジェクトアーキタイプは、このすべての定型コ�
 
 最後にアプリケーションパッケージについて説明します。
 
-<a name="liferay-plugin-packageproperties" />
-
 ## liferay-plugin-package.properties
 
 このファイルは、アプリケーションの名前、バージョン、Javaパッケージのインポート/エクスポート、およびOSGiメタデータを指定します。 パッケージプロパティファイルの例を次に示します。
 
-```{properties} 
+```properties
 author=N/A
 change-log=
 licenses=N/A
@@ -384,18 +370,16 @@ Import-Package: com.liferay.portal.webserver,com.liferay.portal.kernel.servlet.f
 
 次のOSGiメタデータヘッダーを使用して、[必要なJavaパッケージをインポート](../../../..//liferay-internals/fundamentals/importing-packages.md)します。
 
-```{properties}
+```properties
 Import-Package: com.liferay.portal.webserver,\
 com.liferay.portal.kernel.servlet.filters.invoker
 ```
 
 ポートレットアプリケーションのWARファイルをデプロイすると、[WABジェネレータ](../../../reference/deploying-wars-wab-generator.md)は指定されたOSGiメタデータを、Liferayのランタイムフレームワークにデプロイされた結果として生じるWebアプリケーションバンドル（WAB）に追加します。
 
-[`liferay-plugin-package- [version].dtd`ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) は、`liferay-plugin-package.properties`ファイルを記述します。
-
-<a name="additional-information" />
+[`liferay-plugin-package-[version].dtd`ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html)は、`liferay-plugin-package.properties`ファイルを記述します。
 
 ## 追加情報
 
-* [PortletMVC4Springアノテーション](./portletmvc4spring-annotations.md)
-* [Migrating to PortletMVC4Spring \(Help Center\)](https://help.liferay.com/hc/ja/articles/360030614052-Migrating-to-PortletMVC4Spring)
+* [PortletMVC4Spring Annotations](./portletmvc4spring-annotations.md)
+* [Migrating to PortletMVC4Spring \(Help Center\)](https://help.liferay.com/hc/en-us/articles/360030614052-Migrating-to-PortletMVC4Spring)

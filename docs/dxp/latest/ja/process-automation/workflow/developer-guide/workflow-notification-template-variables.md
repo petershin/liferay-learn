@@ -18,8 +18,6 @@ ${variableName}
 
 これらの変数を使用するには、ワークフローの通知コンテキストで利用可能な変数を知っておく必要があります。 利用できる変数は、ワークフロー定義の詳細やワークフロー内のアセットに応じて変化します。 ここで紹介する方法は、特定のコンテキストに合わせて変数のリストを取得する方法を示していますので、推測で行う必要はありません。
 
-<a name="discovering-the-workflow-notification-template-variables" />
-
 ## ワークフロー通知テンプレート変数の確認
 
 DEBUGレベルの [ロギング](./../../../system-administration/using-the-server-administration-panel/configuring-logging.md) を `TemplentNotificationMessageGenerator` クラスで有効にして、ワークフローの通知コンテキストで利用可能な変数を表示します。
@@ -30,8 +28,8 @@ DEBUGレベルの [ロギング](./../../../system-administration/using-the-serv
 
 1. この設定でLog Levelを追加します。
 
-   - **ロガー名** ： `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
-   - **ログレベル** ：`DEBUG`
+   - *ロガー名*： `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
+   - *ログレベル*：`DEBUG`
 
 1. [アセット（Blogs Entryなど）に対して、ワークフロー定義](./../using-workflows/activating-workflow.md) （唯一の承認者定義など）をアクティブにすることができます。
 
@@ -60,7 +58,7 @@ DEBUGレベルの [ロギング](./../../../system-administration/using-the-serv
 
 1. **値** 変数は、単一の値を提供します。 変数が単一の値を提供する場合、その値を通知に表示するために使用することができます。また、通知メッセージに表示される他の有用な情報を取得する操作のパラメータとして渡すこともできます。
 
-**例：** 唯一の承認者の定義では、FreeMarkerのテンプレートでこの通知を提供しています。
+   _例：_ 唯一の承認者の定義では、FreeMarkerのテンプレートでこの通知を提供しています。
 
    ```markup
    ${userName} sent you a ${entryType} for review in the workflow.
@@ -68,7 +66,7 @@ DEBUGレベルの [ロギング](./../../../system-administration/using-the-serv
 
    `userName` と `entryType` が値を提供しているので、通知は次のように表示されます。
 
-**Joe Bloggsさんから、ワークフローで確認するためのブログのエントリが送られてきました。**
+   _Joe Bloggsさんから、ワークフローで確認するためのブログのエントリが送られてきました。_
 
 
    また、値型変数の内容を確認することもできます。 唯一の承認者の定義には、この通知テンプレートも含まれています。
@@ -79,17 +77,15 @@ DEBUGレベルの [ロギング](./../../../system-administration/using-the-serv
 
    レビュアがタスクコメントを提供した場合は、そのコメントが表示されます。 そうでない場合は、通知の送付先は
 
-**あなたの提出物はレビューされました**
+   _あなたの提出物はレビューされました_
 
 1. **オペレーション** 変数はLiferay DXPのJavaクラスを公開しているので、通知テンプレートでその操作にアクセスすることができます。 これらの変数については、クラスの [Javadoc](https://learn.liferay.com/reference/latest/en/dxp/javadocs/) を熟知するか、 [ソースコード](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]) を見て、その動作を理解する必要があります。
 
-**例：** このFreeMarkerは、デフォルトのロケールを使用して、特定のパターン（**月/日/年、時間：分**）で現在の日付を取得します。
+   _例：_ このFreeMarkerは、デフォルトのロケールを使用して、特定のパターン（_月/日/年、時間：分_）で現在の日付を取得します。
 
    ```markup
    ${dateUtil.getCurrentDate("MM/dd/yyyy, HH:mm",  localeUtil.getDefault())}`
    ```
-
-<a name="understanding-the-workflow-notification-template-variables" />
 
 ## ワークフロー通知テンプレートの変数について
 

@@ -2,13 +2,9 @@
 
 Liferay Workspaceは、Liferay開発プロジェクトを作成および管理するための開発者向けツールです。
 
-<a name="creating-projects" />
-
 ## プロジェクトの作成
 
 [Blade CLI](../blade-cli/installing-and-updating-blade-cli.md)を使用すると、事前に作成されたプロジェクトテンプレートを提供することで、Liferay Workspaceでプロジェクトを簡単に作成できます。 または、プロジェクトを手動で作成することもできます。
-
-<a name="creating-a-project-using-blade-cli" />
 
 ### Blade CLIを使用したプロジェクトの作成
 
@@ -25,8 +21,6 @@ Liferay Workspaceは、Liferay開発プロジェクトを作成および管理�
    ```
 
    これにより、MVCポートレットテンプレート（`-t mvc-portlet`）を使用してプロジェクトが作成され、指定したJavaパッケージにポートレットクラスが生成され（`-p com.acme.z3x1.portlet`）、ポートレットクラスの名前が指定され（`-c MyPortlet`）、プロジェクトに`myproject-web`という名前が付けられます。
-
-<a name="creating-projects-manually" />
 
 ### 手動でプロジェクトを作成する
 
@@ -49,8 +43,6 @@ Liferay Workspaceは、Liferay開発プロジェクトを作成および管理�
 1. プロジェクトのフォルダ構造を作成します。
 
 Liferay DXPで実行するコードを作成するには、それをデプロイするLiferayランタイムが必要です。 したがって、Liferay Workspaceをインストールした後の最初のタスクは、Liferayバンドルをワークスペースに追加することです。
-
-<a name="using-the-themes-generator-with-liferay-workspace" />
 
 ## Liferay WorkspaceでThemes Generatorを使用する
 
@@ -86,17 +78,15 @@ Workspaceがプロジェクトを認識していることを確認するには�
 ./gradlew projects
 ```
 
-<a name="adding-a-liferay-bundle-to-workspace" />
-
 ## Liferayバンドルをワークスペースに追加する
 
 ワークスペースは、コードのランタイムのダウンロードとセットアップを自動化します。 サーバーでコードを実行する準備ができたら、ほんの数ステップでダウンロードできます。
 
 1. 対象となるLiferayリリースを見つけます。
 
-   **DXP：** [［Liferay Workspace Target Versions］](https://help.liferay.com/hc/ja/articles/360041818312) ページに移動し、バンドルURLをクリップボードにコピーします。
+   **DXP：**[［Liferay Workspace Target Versions］](https://help.liferay.com/hc/en-us/articles/360041818312)ページに移動し、バンドルURLをクリップボードにコピーします。
 
-   **CE：** [releases-cdn.liferay.com/portal](https://releases-cdn.liferay.com/portal) を閲覧し、必要なバンドルを見つけて、そのURLをクリップボードにコピーします。
+   **CE：**[releases-cdn.liferay.com/portal](https://releases-cdn.liferay.com/portal)を閲覧し、必要なバンドルを見つけて、そのURLをクリップボードにコピーします。
 
 1. ワークスペースのルートフォルダから`gradle.properties`を開き、バンドルURLプロパティを設定します。
 
@@ -128,13 +118,9 @@ Workspaceがプロジェクトを認識していることを確認するには�
 
 DXPの場合、セキュリティ上の理由から、バンドルのダウンロード後にプロパティファイルからパスワードを削除する必要があります。
 
-<a name="deploying-code-via-liferay-workspace" />
-
 ## Liferay Workspaceを介したコードのデプロイ
 
 上記の手順で追加したLiferayバンドル、またはLiferayを実行しているDockerコンテナにコードをデプロイできます。
-
-<a name="deploying-code-to-a-liferay-bundle" />
 
 ### Liferayバンドルへのコードのデプロイ
 
@@ -146,8 +132,6 @@ Liferay Workspaceに追加されたバンドルにコードをデプロイする
 
 これにより、WorkspaceルートフォルダのGradleラッパースクリプトが呼び出され、ワークスペースに追加されたLiferayバンドルにプロジェクトがデプロイされます。
 
-<a name="deploying-code-to-a-liferay-docker-container" />
-
 ### Liferay Dockerコンテナへのコードのデプロイ
 
 すでに[Liferay Dockerコンテナを作成](./configuring-a-liferay-docker-container.md)している場合は、ローカルバンドルにデプロイするのと同じくらい簡単にデプロイできます。 同じGradleタスクを実行します。
@@ -156,9 +140,7 @@ Liferay Workspaceに追加されたバンドルにコードをデプロイする
 ../gradlew deploy
 ```
 
-<a name="related-topics" />
-
 ## 関連トピック
 
-* [LiferayのDockerコンテナの設定](./configuring-a-liferay-docker-container.md)
-* [Blade CLIを使用したプロジェクトの生成](../blade-cli/generating-projects-with-blade-cli.md)
+* [Configuring a Liferay Docker Container](./configuring-a-liferay-docker-container.md)
+* [Generating Projects with Blade CLI](../blade-cli/generating-projects-with-blade-cli.md)

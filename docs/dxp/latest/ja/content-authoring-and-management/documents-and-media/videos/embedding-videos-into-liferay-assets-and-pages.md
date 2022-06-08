@@ -1,51 +1,54 @@
-# Liferayアセットとページへのビデオの埋め込み
+# Liferayアセットとページへの動画の埋め込み
 
-With Liferay, you can use URLs and [video shortcuts](./creating-external-video-shortcuts.md) to embed videos into Web Content, Knowledge Base articles, Forms, Blog entries, and Site Pages.
+Liferayでは、URLと[動画ショートカット](./creating-external-video-shortcuts.md)を使って、Webコンテンツ、ナレッジベースの記事、フォーム、ブログエントリー、サイトページなどにビデオを埋め込むことができます。
 
-<a name="embedding-videos-into-assets" />
+## アセットへの動画の埋め込み
 
-## アセットへのビデオの埋め込み
+1. 目的のアセットに移動し、*動画*ボタン（![Video Button](../../../images/icon-video.png)）をクリックします。
 
-1. 目的のアセットに移動し、 ［**ビデオ**］ ボタン（![Video Button](../../../images/icon-video.png)）をクリックします。
+   Webコンテンツ、ナレッジベース、およびフォームの場合、このボタンはツールバーにあります。
 
-   Webコンテンツ、ナレッジ・ベース、およびフォームの場合、このボタンはツールバーにあります。
+   ![ツールバーの動画ボタンをクリックします。](./embedding-videos-into-liferay-assets-and-pages/images/01.png)
 
-   ![ツールバーの［ビデオ］ボタンをクリックします。](./embedding-videos-into-liferay-assets-and-pages/images/01.png)
+   ブログの場合は、コンテンツ項目の*追加*ボタン（![Add Button](../../../images/icon-plus.png)）をクリックして、動画ボタンにアクセスします。
 
-   ブログの場合は、コンテンツ項目の **追加** ボタン（![Add Button](../../../images/icon-plus.png)）をクリックして、［ビデオ］ボタンにアクセスします。
+   ![追加ボタンをクリックして、動画ボタンにアクセスします。](./embedding-videos-into-liferay-assets-and-pages/images/02.png)
 
-   ![追加ボタンをクリックして、［ビデオ］ボタンにアクセスします。](./embedding-videos-into-liferay-assets-and-pages/images/02.png)
+   ドキュメントとメディアで動画URLを入力したり、動画ファイルと外部動画ショートカットを選択したりするためのウィンドウが開きます。
 
-   ドキュメントとメディアでビデオURLを入力したり、ビデオファイルと外部ビデオショートカットを選択したりするためのウィンドウが開きます。
+1. （［動画URL］タブ）URLを使用して動画を埋め込むには、*［動画URL］*タブをクリックし、YouTube、Vimeo、Facebook、またはTwitchのリンクを入力して、*［追加］*をクリックします。
 
-1. （［(Video URL］タブ）URLを使用してビデオを埋め込むには、 ［(**Video URL**］ タブをクリックし、YouTube、Vimeo、Facebook、またはTwitchのリンクを入力して、 ［**Add**］ をクリックします。
+   外部動画ショートカットとは異なり、この方法で埋め込まれた動画はドキュメントとメディアに保存されず、後で使用することはできません。
 
-   外部ビデオショートカットとは異なり、この方法で埋め込まれたビデオはドキュメントとメディアに保存されず、後で使用することはできません。
+1. （［ドキュメントとメディア］タブ）外部動画ショートカットを使用して動画を埋め込むには、*［ドキュメントとメディア］*タブをクリックして、目的の動画ファイルまたは外部動画ショートカットを選択します。
 
-1. （［ドキュメントとメディア］タブ）外部ビデオショートカットを使用してビデオを埋め込むには、 ［**ドキュメントとメディア**］ タブをクリックして、目的のビデオファイルまたは外部ビデオショートカットを選択します。
+1. 完了したら、*［公開］*をクリックします。
 
-1. 完了したら、 ［**公開**］ をクリックします。
+## ページへの動画の埋め込み
 
-<a name="embedding-videos-into-pages" />
+Liferayは、特に動画をページに埋め込むための2つのすぐに使えるフラグメントを提供しています。
 
-## ページへのビデオの埋め込み
+### 動画URL
 
-Liferayは、特にビデオをページに埋め込むための2つのすぐに使えるフラグメントを提供しています。
+動画URLフラグメントを使用して、内部動画ファイルまたは外部のYouTube動画を表示します。 URLがフラグメントに追加されると、次の設定を構成できます。
 
-**Video URL** ：ビデオURLフラグメントを使用して、内部ビデオファイルまたは外部のYouTubeビデオを表示します。 URLがフラグメントに追加されると、次の設定を構成できます。
+   * **Autoplay：** ページが読み込まれたときに動画を自動的に再生するかどうかを決定します。
 
-   ***Autoplay：** ページが読み込まれたときにビデオを自動的に再生するかどうかを決定します。
+   * **ループ：** 終了後に動画を再スタートするかどうかを決定します。
 
-   ***ループ：** 終了後にビデオを再スタートするかどうかを決定します。
+   * **Mute：** ビデオをデフォルトでミュートするかどうかを決定します。
 
-   ***Mute：** ビデオをデフォルトでミュートするかどうかを決定します。
+   * **Hide Video Controls：**ユーザーがビデオコントロールにアクセスできるかどうかを決定します。
 
-   ***Hide Video Controls：** ユーザーがビデオコントロールにアクセスできるかどうかを決定します。
+### 外部動画
 
-**External Video** ：無期限のビデオショートカットを使用して、YouTube、Vimeo、Facebook、およびTwitchのビデオをページに埋め込みます。 ビデオを追加すると、ビデオURLを入力したり、ドキュメントとメディアでビデオと外部ビデオショートカットを選択したりするためのウィンドウが開きます。
+外部動画フラグメントを使用して、YouTube、Vimeo、Facebook、およびTwitchの動画をページに埋め込みます。 動画は、URLから追加するか、ドキュメントとメディアの中の動画と[外部動画ショートカット](creating-external-video-shortcuts.md)から選択して追加することができます。
 
-<a name="additional-information" />
+```{note}
+外部動画フラグメントは、自動再生、ループ、ミュートのビデオコントロールに対応していません。 これらのコントロールが必要な場合は、動画URLフラグメントを使用してください。
+```
 
 ## 追加情報
 
-* [Creating External Video Shortcuts](./creating-external-video-shortcuts.md) <!-- * \[Creating Custom Video Shortcut Providers\](./creating-custom-video-shortcut-providers.md) -->
+* [外部動画ショートカットの作成](./creating-external-video-shortcuts.md)
+* [動画ショートカットプロバイダーの作成](../developer-guide/creating-video-shortcut-providers.md)

@@ -2,14 +2,12 @@
 
 Liferayフォームアプリケーションには、フォームに追加する多くの項目タイプと要素が含まれています。 利用可能な要素を発見するために
 
-1. **プロダクトメニュー**（![Product Menu](../../../images/icon-product-menu.png)）を開き、サイト管理メニューのコンパスアイコン（![Compass](../../../images/icon-compass.png)）をクリックします。 フォームを作成するサイトを選択します。
-1. <0コンテンツ> & データ</em> &rarr; **フォーム** をクリックします。
-1. **追加** ボタン（![Add](../../../images/icon-add.png)）をクリックします。 フォームビルダービューが表示されます。
-1. **追加** ボタン（![Add](../../../images/icon-add.png)）をもう一度クリックして、 ［**要素を追加**］ サイドバーを表示します（まだ開いていない場合）。
+1. _プロダクトメニュー_（![Product Menu](../../../images/icon-product-menu.png)）を開き、サイト管理メニューのコンパスアイコン（![Compass](../../../images/icon-compass.png)）をクリックします。 フォームを作成するサイトを選択します。
+1. _［コンテンツ & データ］_ &rarr; _ ［Form］_をクリックします。
+1. _追加_ボタン（![Add](../../../images/icon-add.png)）をクリックします。 フォームビルダービューが表示されます。
+1. _追加_ボタン（![Add](../../../images/icon-add.png)）をもう一度クリックして、_［要素を追加］_サイドバーを表示します（まだ開いていない場合）。
 
 ![多くの便利なフォーム要素があります。](./forms-field-types-reference/images/01.png)
-
-<a name="field-configuration-overview" />
 
 ## フィールド設定の概要
 
@@ -29,7 +27,7 @@ Liferayフォームアプリケーションには、フォームに追加する�
 
 ### フィールド確認
 
-フィールド確認は、バージョン7.4以降のLiferayフォームでサポートされています。 確認フィールドは、フォームビルダーでフォーム本体に直接追加するフィールドではなく、1行のテキストまたは数値フィールドを ［**確認が必要**］ に設定した場合にのみフォームに表示されます（フィールドの詳細設定セクションを使用）。 このフィールドでは、重要なデータを持つフィールドが正しく入力されるようにします（例えば、メールアドレスのフィールドなど）。
+フィールド確認は、バージョン7.4以降のLiferayフォームでサポートされています。 確認フィールドは、フォームビルダーでフォーム本体に直接追加するフィールドではなく、1行のテキストまたは数値フィールドを _［確認が必要］_ に設定した場合にのみフォームに表示されます（フィールドの詳細設定セクションを使用）。 このフィールドでは、重要なデータを持つフィールドが正しく入力されるようにします（例えば、メールアドレスのフィールドなど）。
 
 ![確認フィールドは、ユーザーが正しい情報を入力していることを確認するのに役立ちます。](./forms-field-types-reference/images/21.png)
 
@@ -37,21 +35,19 @@ Liferayフォームアプリケーションには、フォームに追加する�
 
 **方向：** 垂直（デフォルト）または水平を選択して、確認フィールドを元のフィールドの下に表示するか、横に表示するかを決定します。
 
-**ラベル：** 元のフィールドラベルのプレフィックスを選択します。 デフォルト値はConfirmなので、Email Addressというフィールドの確認フィールドのラベルは、 **Confirm Email Address** となります。
+**ラベル：** 元のフィールドラベルのプレフィックスを選択します。 デフォルト値はConfirmなので、Email Addressというフィールドの確認フィールドのラベルは、 _Confirm Email Address_となります。
 
 **エラーメッセージ：** 確認するフィールドに応じて、より具体的なエラーメッセージを提供することができます。
 
 ![確認フィールドは構成可能です。](./forms-field-types-reference/images/22.png)
 
-ユーザーが有効な形式で情報を入力できるようにするための情報は、 [Validating Text and Numeric Field Entries](validating-text-and-numeric-field-entries.md) を参照してください。
+ユーザーが有効な形式で情報を入力できるようにするための情報は、 [テキストおよび数値フィールドエントリの検証](validating-text-and-numeric-field-entries.md) を参照してください。
 
 ### フィールド名、フィールドID、およびフィールドの参照
 
-Liferay 7.3の最初のリリースでは、編集可能な構成のField Nameが削除され、読み取り専用のField IDが各フィールドのAdvancedタブに含まれるようになりました。 しかし、Liferay 7.3では、編集可能な代替品であるField Referenceが利用できるようになりました。 プログラムでフィールドを参照する場合は、7.2のフィールド名の値と7.3以降のフィールド参照を使用します。
+Liferay 7.3の最初のリリースでは、編集可能な構成のフィールド名が削除され、読み取り専用のフィールド IDが各フィールドの［アドバンス］タブに含まれるようになりました。 しかし、Liferay 7.3では、編集可能な代替品であるフィールド参照が利用できるようになりました。 プログラムでフィールドを参照する場合は、7.2のフィールド名の値と7.3以降のフィールド参照を使用します。
 
 ![フィールド参照の設定では、フォームビルダーがフィールドの人間が読めるシステム名を設定することができます。](./forms-field-types-reference/images/20.png)
-
-<a name="form-fields-and-elements" />
 
 ## フォームのフィールドと要素
 
@@ -61,7 +57,7 @@ Liferay 7.3の最初のリリースでは、編集可能な構成のField Name�
 
 ![段落フィールドを使用して、フォーマットされたテキストのより長いブロックを提供できます。](./forms-field-types-reference/images/18.png)
 
-パラグラフフィールドは単なるテキストではありません。 埋め込み式のコンテンツエディターを使って、リッチコンテンツを作成します。
+説明文フィールドは単なるプレーンテキストではありません。 埋め込み式のコンテンツエディターを使って、リッチコンテンツを作成します。
 
 ![コンテンツエディタを使用して、段落フィールドにリッチコンテンツを作成します。](./forms-field-types-reference/images/19.png)
 
@@ -95,17 +91,17 @@ Liferay 7.3の最初のリリースでは、編集可能な構成のField Name�
 
 ![日付ピッカーは、日付を選択するための便利な方法を提供します。](./forms-field-types-reference/images/06.png)
 
-Liferay 7.4では、日付フィールドの詳細設定に入力値の検証が含まれています。
+Liferay 7.4では、日付フィールドの詳細設定に入力値の検証が含まれています。 [フィールドの詳細設定の検証オプション](./validating-text-and-numeric-field-entries.md)を使用して、ユーザーが入力できる日付（1〜10の数字、電子メールアドレスなど）を制限できます。
 
 ![日付フィールドの検証ルールを入力します。](./forms-field-types-reference/images/26.png)
 
-入力値の検証のオプションは以下の通りです。
+### 日時
 
-**受け入れられた日付：** 選択された日付が、未来の日付、過去の日付、または指定された範囲であることを要求します。
+Liferay 7.4で追加された、ユーザーが日付と時刻の両方を1つのフィールドに入力する機能です。
 
-**開始日と終了日** 未来の日付の場合は、デイトピッカーの開始日の日付を定義します。 過去の日付については、終了日を定義します。 日付ピッカーが応答日（ユーザーがフォームに入力する日付）を使用するか、この値のカスタム日付を使用するかを構成します。 日付範囲の検証には、開始日と終了日の両方が設定されている必要があります。
+![日時フィールドは、有効な日付と時間帯を組み合わせたものです。](./forms-field-types-reference/images/28.png)
 
-**エラーメッセージ：** エラーメッセージは、特定の検証ルールに合わせてカスタマイズできます。
+日時フィールドは、 `DD/MM/YYYY HH:MM [AM/PM]`のフォーマットで入力します。 例えば、 `01/06/1981 12:15 PM` は1981年1月6日、午後12時15分です。 日時のピッカーを使用するか、ユーザーがフィールドに直接日付を入力することができます。
 
 ### 複数選択
 
@@ -128,18 +124,23 @@ Liferay 7.4では、日付フィールドの詳細設定に入力値の検証が
 数値フィールドには、興味深い詳細なフィールド設定があります。
 
 - [**確認要求**](#field-confirmation) ユーザがデータを正しく入る性を保証します。
-- [**入力値の検証](./validating-text-and-numeric-field-entries.md**) ユーザーの入力を事前に設定された要件に制限します。 ![数値入力を検証します。](./forms-field-types-reference/images/25.png)
-- **入力マスク** では、ユーザーが数値データを入力する際に、正しいフォーマットを表示することができます。 整数フィールドと10進数フィールドでは、コンフィギュレーションの動作が異なります。
-   - 整数フィールドのマスク：フォーマットを設定します。 2番目のエントリである文字オプションは、フォーマットを定義するために使用される文字の動作に関する追加のガイダンスを提供する読み取り専用のフィールド設定です。 ![整数フィールドの入力マスクを作成します。](./forms-field-types-reference/images/24.png)
-   - 10進数フィールドのマスク：千値セパレーター、少数セパレーター、プレフィックスまたはサフィックスの設定を行います。 1000区切りセパレータースタイルは、 `None`、`1,000`、`1.000`または`1 000`に設定できます。 少数セパレーターのスタイルは、`0.00` または `0,00`に設定できます。 接頭辞または接尾辞。 接頭辞または接尾辞は通常、10進数の単位を定義するために使用されます。 例えば、ユーザーがドルを入力することを前提としたフィールドには、 `$` をプレフィックスとして使用します。 ![10進数フィールドの入力マスクを作成します。](./forms-field-types-reference/images/23.png)
+- **[入力値の検証](./validating-text-and-numeric-field-entries.md)** ユーザーの入力を事前に設定された要件に制限します。 ![数値入力を検証します。](./forms-field-types-reference/images/25.png)
+- **
+
+入力マスク<1></strong> では、ユーザーが数値データを入力する際に、正しいフォーマットを表示することができます。</p></li> </ul> 
+  
+  
 
 ### アップロード
 
 アップロードフィールドを使用すると、ユーザーはローカルファイルシステムからファイルをアップロードできます。 ログインしているユーザーは、以前にアップロードしたファイルから選択するか、新しいファイルをアップロードできます。
 
+
+
 ```{note}
 7.2でログインすると、ユーザーはドキュメントとメディアライブラリから既存のファイルを選択するか、ローカルファイルシステムからファイルをアップロードすることを選択できます。
 ```
+
 
 ![アップロードフィールドでは、ユーザーがファイルをアップロードしたり、既存のドキュメントとメディアのエントリーから選択することができます。](./forms-field-types-reference/images/10.png)
 
@@ -147,41 +148,62 @@ Liferay 7.3 (DXP FP1およびCE GA7 )以降、認証されていないゲスト�
 
 ![ゲストにファイルのアップロードを許可するかどうかを選択できます。](./forms-field-types-reference/images/16.png)
 
-アップロードされたドキュメントは、 [ドキュメントとメディアリポジトリ](./../../../system-administration/file-storage/configuring-file-storage.md)非表示フォルダに保存されます。 ［ドキュメントとメディア］アプリケーションで表示するには、 [ポータルプロパティ](../../../installation-and-upgrades/reference/portal-properties.md) を `portal-ext.properties` ファイルに設定します。
+アップロードされたドキュメントは、 [ドキュメントとメディアリポジトリ](./../../../system-administration/file-storage.md)非表示フォルダに保存されます。 ドキュメントとメディアアプリケーションで表示するには、以下の[ポータルプロパティ](../../../installation-and-upgrades/reference/portal-properties.md)を `portal-ext.properties` ファイルに設定します。
+
+
 
 ```properties
 dl.show.hidden.mount.folders=true
 ```
 
-コントロールパネル：［システム設定］→ ［フォーム（コンテンツとデータ）］ → ［フォーム］で、または、`com.liferay.dynamic.data.mapping.form.web.internal.configuration.DDMFormWebConfiguration.config`という名前の[設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を作成して、ゲストのアップロード動作を設定します。
+
+コントロールパネル：［システム設定］&rarr; ［フォーム（コンテンツとデータ）］ &rarr; ［フォーム］で、または、`com.liferay.dynamic.data.mapping.form.web.internal.configuration.DDMFormWebConfiguration.config`という名前の[設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を作成して、ゲストのアップロード動作を設定します。
+
+
 
 ```{tip}
-インスタンススコープ../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions`__でフォームアプリケーションを設定するには、[Instance Settings]のフォームエントリーを使用します。
+[インスタンススコープ](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions)でフォームアプリケーションを設定するには、Instance Settingsのフォームエントリーを使用します。
 ```
+
 
 **Guest Upload File Extensions（`guestUploadFileExtensions`）：** 受け入れられるファイル拡張子のコンマ区切りリストを入力します。  デフォルトでは以下のリストがサポートされています：`doc`、`docx`、`jpeg`、`jpg`、`pdf`、`png`、`ppt`、`pptx`、`tiff`、`txt`、`xls`、および`xlsx`。
 
-**Guest Upload Maximum file Size（`guestUploadMaximumFileSize`）：** ゲストユーザがアップロードフィールドからアップロードできるファイルの最大サイズを設定します。 これは、ドキュメントとメディアアプリケーションの設定で、認証されたユーザーに対して設定され、システム全体の制限は、アップロードサーブレットリクエストシステム設定エントリーの［合計最大アップロードリクエストサイズ］というフィールドで定義されます。 デフォルトでは25MBに設定されています。
+**Guest Upload Maximum file Size（`guestUploadMaximumFileSize`）：**ゲストユーザがアップロードフィールドからアップロードできるファイルの最大サイズを設定します。 これは、ドキュメントとメディアアプリケーションの設定で、認証されたユーザーに対して設定され、システム全体の制限は、アップロードサーブレットリクエストシステム設定エントリーの「合計最大アップロードリクエストサイズ」というフィールドで定義されます。 デフォルトでは25MBに設定されています。
 
-**Maximum Repetitions for Upload Fields（`maximumRepetitionsForUploadFields`）：** フィールドが繰り返し可能に設定されている場合、ユーザーがフィールドをフォームに追加できる最大回数を設定します (ゲスト ユーザーとログインしたユーザーに同じように適用されます)。 デフォルトでは5に設定されています。
+**Maximum Repetitions for Upload Fields（`maximumRepetitionsForUploadFields`）：**フィールドが繰り返し可能に設定されている場合、ユーザーがフィールドをフォームに追加できる最大回数を設定します (ゲスト ユーザーとログインしたユーザーに同じように適用されます)。 デフォルトでは5に設定されています。
 
-**Maximum Submissions for Guest Upload Fields（`maximumSubmissionsForGuestUploadFields`）：** ゲストが使用可能なアップロード フィールドを含むフォームを、ゲスト ユーザーが送信できる最大回数を設定します。 ゲストユーザーのIPアドレスは、送信数の記録のために使用されます。 デフォルトでは5に設定されています。
+**Maximum Submissions for Guest Upload Fields（`maximumSubmissionsForGuestUploadFields`）：**ゲストが使用可能なアップロード フィールドを含むフォームを、ゲスト ユーザーが送信できる最大回数を設定します。 ゲストユーザーのIPアドレスは、送信数の記録のために使用されます。 デフォルトでは5に設定されています。
 
-### Image
 
-ユーザーは、Webコンテンツ画像、ドキュメントとメディアライブラリから画像ファイル（`.gif`、`.jpeg`、`.jpg`、`.png`）を選択したり、ローカルファイルシステムから画像ファイルをアップロードしたりすることができます。
+
+### 画像
+
+ユーザーは、［Web Content Images］、［Documents and Media］ライブラリから画像ファイル（`.gif`、`.jpeg`、`.jpg`、`.png`）を選択したり、ローカルファイルシステムから画像ファイルをアップロードしたりすることができます。
 
 ![画像フィールドでは、ユーザーが画像をアップロードしたり、ドキュメントとメディア内にある画像やWebコンテンツ画像から選択することができます。](./forms-field-types-reference/images/11.png)
+
+
 
 ```{important}
 ゲストユーザーは、画像へのアクセスやアップロードができません。 認証されたユーザーのみがフォームにアクセスできる場合を除き、このフィールドは使用しないでください。
 ```
 
-### Color
+
+画像を追加した後、ユーザーは画像の追加フィールドである _説明_を記入することができます。 画像フィールドがオプションの場合、使い方は簡単で、画像もその説明も必要ありません。 ただし、他のフォームフィールドと同様に、画像フィールドは必須とマークすることができます。 Liferay 7.4では、画像フィールドが必須の場合、フォームビルダーは説明を必須とするか任意とするかを選択することができます。
+
+![必須画像フィールドの説明フィールドは、必須または任意とすることができます。](./forms-field-types-reference/images/27.png)
+
+Liferay 7.2 と 7.3 では、画像フィールドが必須である場合、説明は必須です。
+
+
+
+### 色
 
 ユーザーは、カラーピッカーから色を選択するか、コードを直接入力することで、色の16進コードを入力することができます。
 
 ![色フィールドでは、カラーピッカーで色フォームを選択すると、その色の16進数を入力することができます。](./forms-field-types-reference/images/13.png)
+
+
 
 ### リッチテキスト
 
@@ -189,16 +211,18 @@ dl.show.hidden.mount.folders=true
 
 ![リッチテキストフィールドでは、ユーザーは画像を埋め込んだフォーマット済みのテキストをフォームに書き込むことができます。 ](./forms-field-types-reference/images/12.png)
 
+
+
 ### 位置を検索
 
 Liferay 7.4以降の［ロケーションの検索］フィールドを使用して、フォームユーザーから有効なアドレスを簡単に収集します。
 
-![［検索場所］フィールドには、Google PlacesAPIキーが必要です。](./forms-field-types-reference/images/23.png)
+![［ロケーションの検索］フィールドには、Google PlacesAPIキーが必要です。](./forms-field-types-reference/images/23.png)
 
-詳細については、 [検索場所フィールドを使う](using-the-search-location-field.md) を参照してください。
+詳細については、 [検索場所フィールドを使う](using-the-search-location-field.md)を参照してください。
 
-<a name="additional-information" />
+
 
 ## 追加情報
 
-- [フォームの作成](./creating-forms.md)
+- [Creating Forms](./creating-forms.md)

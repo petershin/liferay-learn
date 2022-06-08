@@ -1,189 +1,143 @@
 # Liferayのアップデート
 
-常に最新の情報を得ることで、最高のセキュリティと品質を得ることができます。
+{bdg-secondary}`Liferay DXP 7.3 SP3以降および7.4 GA1以降で利用可能`
 
-***セキュリティアップデート** は、最新のセキュリティ問題に即座に対応するためのリリースです。
-
-***アップデート** は、最新のセキュリティアップデート、確認されたバグの修正、新機能の追加などを行ったリリースです。 これらの機能はデフォルトでは無効になっていますが、必要に応じてUIでオプトインすることができます。
-
-ここでは、新しいLiferay Dockerイメージへのアップデート、新しいLiferay Tomcat Bundleへのアップデート、アプリケーションサーバーのLiferayインストールのアップデートの方法をご紹介します。
+バンドルリリースでLiferayインストールを更新します。 最新の機能、セキュリティリリース、およびライブラリの更新はすべて1つのバンドルにまとめて提供されます。 Liferayより前のバージョンについては、[Updating Previous Versions of Liferay](./updating-previous-versions-of-liferay.md)を参照してください。
 
 ```{warning}
 Liferay DXP/Portalをアップデートする前に、**必ず** データベースとインストールを[バックアップ](./backing-up.md)してください。
 ```
 
-```{important}
-Liferay DXP 7.3 SP3以前のバージョンでは、代わりにパッチモデルを使用しています。 Liferay DXP 7.3 SP3以前のバージョンをお使いの方は、[Patching DXP](./patching-dxp-7-3-and-earlier.md)をご覧ください。
+新しいアップデートの準備として、Liferayインストールの重要な依存関係を確認します。 これには、データベース、ドキュメントライブラリ、カスタムモジュールなどが含まれます。 ポータルプロパティ、OSGi構成、Tomcatファイル、データベースjarなどの他のファイルも重要です。 [考慮すべき重要なファイル](#important-files-to-consider)を参照してください。
+
+デフォルトでは、Liferay Homeディレクトリはバンドル内にあります。 更新を簡単にするために、Liferay Homeディレクトリをバンドルの外に移動して、新しいバンドルリリースのファイルを誤って上書きしないようにします。
+
+1. 環境変数を別のディレクトリに設定します。
+
+   `export LIFERAY_HOME="/your/liferay/directory"`
+
+1. `portal-ext.properties`ファイルで次のディレクトリパスを指定します。
+
+   `liferay.home=/your/liferay/directory`
+
+1. 上記のパスを設定すると、LiferayのOSGiフォルダパスも依存関係に設定されます。 マーケットプレイスが機能するには、再びバンドルを指している必要があります。
+
+   `module.framework.marketplace.dir=/new_liferay_bundle/osgi/marketplace`
+
+1. `portal-ext.properties` ファイルを保存します。
+
+## 構成管理
+
+新しいバンドルリリースに更新する前に、重要な依存関係とファイルを保存してください。 シェルスクリプトまたはLiferayワークスペースを使用して保存できます。
+
+### シェルスクリプトの使用
+
+以下のような単純なシェルスクリプトを使用して、依存するすべてのLiferay構成ファイルとライブラリをバックアップできます。 この例では、配列を使用して、新しいバンドルリリースに移行するときに必要なファイルを一覧表示しています。
+
+```bash
+   #!/bin/bash
+
+   # Liferay and Tomcat locations
+   LIFERAY_HOME="./liferay"
+   CATALINA_HOME="$LIFERAY_HOME/tomcat-9.0.56"
+
+   declare -a persistent_files=(
+   "$LIFERAY_HOME/portal-ext.properties"
+   "$LIFERAY_HOME/portal-setup-wizard.properties"
+   "$LIFERAY_HOME/osgi/configs/com.liferay.portal.search.elasticsearch.configuration.ElasticsearchConfiguration.cfg"
+   "$LIFERAY_HOME/osgi/configs/com.liferay.portal.store.file.system.configuration.AdvancedFileSystemStoreConfiguration.cfg"
+   "$LIFERAY_HOME/osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.cfg"
+   "$CATALINA_HOME/conf/server.xml"
+   "$CATALINA_HOME/conf/web.xml"
+   "$CATALINA_HOME/bin/setenv.sh"
+   "$CATALINA_HOME/webapps/ROOT/WEB-INF/classes/ehcache-config/"
+   "$CATALINA_HOME/lib/ojdbc8.jar"
+   "$LIFERAY_HOME/patching-tool/default.properties"
+   "$LIFERAY_HOME/osgi/marketplace/override/"
+   "$CATALINA_HOME/conf/Catalina/localhost/"
+   "$CATALINA_HOME/webapps/ROOT/WEB-INF/classes/META-INF/portal-log4j-ext.xml"
+   )
+
+   echo "Backing up the following files"
+   tar cvfz ./persisted_bundle_configs-`date +%Y%m%d.%H%M`.tgz --files-from <(printf "%s\n" "${persistent_files[@]}")
 ```
 
-```{note}
-Liferay DXP/Portal の General Availability (GA) リリースは、ソースコードからビルドされます。 アップデートとセキュリティアップデートはGAに沿って行われ、またソースコードから構築されます。
+上記のスクリプトは、新しくダウンロードされたバンドルのフォルダストラクチャーの上に解凍できる圧縮された`tar`ファイルを生成します。
+
+### Liferay Workspaceの使用
+
+Liferay Workspaceは、`configs`フォルダ内の環境サブフォルダを使用して構成管理を提供します。 さらに、すべての環境で使用されるすべてのファイルに`共通の`フォルダがあります。 いずれかの環境フォルダ内に配置された構成ファイルのパスは、バンドルリリースにあるパスと一致する必要があることに注意してください。 以下に例を示します。
+
+      ../configs/dev/tomcat-9.0.56/conf/server.xml
+
+詳細については、[Creating Deployment Environments](../../building-applications/tooling/liferay-workspace/configuring-liferay-workspace.html#creating-deployment-environments)を参照してください。
+
+環境がセットアップされたら、Gradleタスクを使用してバンドルを生成できます。 `distBundleZip`または`distBundleTar`を使用して、定義された環境用の特定のバンドルを生成します。 以下に例を示します。
+
+```bash
+./gradlew distBundleZip -Pliferay.workspace.environment=dev
 ```
 
-<a name="updating-to-a-new-docker-image" />
+Gradleタスクは、適切な構成ファイルを階層化し、モジュールとテーマをコンパイルする前に、新しいバンドルをダウンロードします。
 
-## 新しいDocker Imageへのアップデート
+結果のバンドルは、LiferayWorkspaceの`build`フォルダにあります。  使用中のLiferay DXPのバージョンは、`gradle.properties`ファイル内の`liferay.workspace.product`プロパティによって定義されます。
 
-1. 現在のDockerコンテナをシャットダウンします。
+1つのタスクですべての環境のバンドルを生成するには、`distBundleZipAll`または`distBundleTarAll`を使用します。 以下に例を示します。
 
-1. Liferayのキャッシュを削除します。
+```bash
+./gradlew distBundleTarAll -Pliferay.workspace.bundle.dist.include.metadata=true
+```
 
-    `[Liferay Home]/osgi/state` フォルダーを削除します。
+結果として得られるZipまたはTarの各ファイル名には、構成環境の名前とタイムスタンプが含まれます。 このGradleタスクは、Liferay Workspace 3.4.32以降で使用できます。
 
-    ```bash
-    cd [Liferay Home]
-    rm -rf osgi/state
-    ```
+## 考慮すべき重要なファイル
 
-    `[Liferay Home]/work` フォルダーを空にします。
+以下は、新しいバンドルリリースに移行するときにバックアップを検討する一般的なファイルのリストです。 このリストは完全なものではなく、インストールには、言及されていない追加のファイルやライブラリが含まれている場合があります。 さらに、Apache Tomcat以外のアプリケーションサーバーについては説明していませんが、原則はどのアプリケーションサーバーを保守する場合でも同じです。 [Installing Liferay on an Application Server](../installing-liferay/installing-liferay-on-an-application-server.md)を参照してください。
 
-    ```bash
-    rm -rf work/*
-    ```
+### Liferayのプロパティ（/LIFERAY/）
 
-    アプリケーションサーバーのキャッシュを削除します。 キャッシュの場所については、アプリケーションサーバーのベンダーのドキュメントを参照してください。
+* `portal-ext.properties`
+* `portal-setup-wizard.properties`
 
-    ```{note}
-    モジュールの変更が内部のみである場合、変更はOSGiフレームワークからは見えず、モジュールはインストールされたままであり、モジュールの状態は保持されます。 次回のサーバー起動前にOSGiバンドルの状態情報をクリアすることで、そのようなモジュールが適切な状態で再インストールされるようになります。
-    ```
+### Liferay OSGIの構成（/LIFERAY/osgi/configs/）
 
-1. Docker HubでLiferayのDockerイメージとタグ情報を検索します。
+OSGI Configディレクトリには、複数の構成ファイルが含まれている可能性があります。 以下は、考慮すべき一般的なOSGi構成ファイルの一部です。
 
-   * [Liferay DXPイメージ](https://hub.docker.com/r/liferay/dxp)
-   * [Liferay Portalイメージ](https://hub.docker.com/r/liferay/portal)
+* `com.liferay.portal.store.file.system.configuration.AdvancedFileSystemStoreConfiguration.config`
+* `com.liferay.portal.search.elasticsearch[6|7].configuration.ElasticsearchConfiguration.config`
+* `com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config`
 
-1. データベースの変更やインデックスの変更については、リリースノートを確認してください。
+### Liferayクラスタリング（LIFERAY/TOMCAT/）：
 
-    データベースに変更があった場合は、 `docker run` コマンドでこの環境設定を使用して、データベースのアップグレードが自動的に実行できるようにします。
+jgroupsまたはehcache構成ファイルのバックアップに加えて、JNDIプール設定でJDBC Pingを使用することを検討してください。 これにより、ehcache構成ファイルを抽象化および簡素化できます。 IPとデータベース固有の設定の両方が定義されなくなり、ファイルをほぼ汎用的にすることができます。
 
-    ```bash
-    -e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true
-    ```
+* `webapps/ROOT/WEB-INF/classes/ehcache-config/tcp.xml`
 
-    インデックスの変更がある場合は、 `docker run` コマンドで、この環境設定を使用してインデックスの更新を有効にします。
+### Liferayの永続ログ設定（LIFERAY/TOMCAT/）
 
-    ```bash
-    -e LIFERAY_DATABASE_PERIOD_INDEXES_PERIOD_UPDATE_PERIOD_ON_PERIOD_STARTUP=true
-    ```
+* `webapps/ROOT/WEB-INF/classes/META-INF/portal-log4j-ext.xml`
 
-1. 新しいDockerイメージを、現在の環境とパラメータ、および必要なデータベース/インデックス環境の設定（前のステップから）で実行します。 例えば、新しいイメージに`liferay`というローカルフォルダを[バインドマウント](../installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md)するイメージを実行するコマンドは次のとおりです。
+## Tomcat/アプリケーションサーバー（LIFERAY/TOMCAT/）
 
-    ```bash
-    docker run -it -m 8g -p 8080:8080 \
-     -v $(pwd)/liferay:/mnt/liferay \
-     liferay/[place image name here]:[place tag here]
-    ```
+* `conf/server.xml`
+* `conf/web.xml`
+* `bin/setenv.sh`
 
-1. `docker run` コマンドでデータベースのアップグレードやインデックスの更新を有効にした場合、コンソールやログにアップグレードの失敗やエラー、追加でアップグレードすべきオプションモジュールなどがすべて報告されます。 [Gogo Shellのコマンド](../upgrading-liferay/upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) を使ってアドレスを指定することができます。 アップグレードが正常に完了したら、Dockerコンテナを停止して新しいコンテナを作成し、 `docker run` コマンドを で実行し、データベースのアップグレードやインデックスの更新の環境設定を **行わない** ようにします。
+### データベースライブラリ（LIFERAY/TOMCAT/）
 
-新しいLiferayアップデートDockerイメージで動作しています。
+Liferayデータベースへの接続には、HikariによるJNDIを使用することをお勧めします。 したがって、Hikari、MySQL、Oracle、またはその他のデータベースドライバなどのJNDI接続を設定するために必要なライブラリをバックアップする必要があります。
 
-<a name="updating-to-a-new-liferay-tomcat-bundle" />
+7.4では、これらのドライバーはLIFERAY/TOMCAT/libフォルダにあります。 以前のバージョンでは、これらのライブラリはLIFERAY/TOMCAT/lib/extにありました。 以下に例を示します。
 
-## 新しいLiferay Tomcatバンドルへの更新
+* Oracleの場合は`lib/ojdbc8.jar`
+* MySQLの場合は`lib/mysql.jar`
+* Hikari DB Poolの場合は`lib/hikaricp.jar`
 
-1. 修正したシステム設定（ [ファイルストレージ](../../system-administration/file-storage/configuring-file-storage.md) と [Elasticsearch](../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch.md) の設定を含む）を [`.config ` ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) にエクスポートし、 `[Liferay Home]/osgi/configs/` フォルダにコピーします。
+JNDIを使用していない場合は、バックアップが必要になる可能性のあるデータベースドライバーについて、7.4の`LIFERAY/TOMCAT/webapps/ROOT/WEB-INF/shielded-container-lib`または以前のバージョンの`LIFERAY/TOMCAT/lib/ext`を参照してください。
 
-    例えば、 [高度なファイルシステムストア](../../system-administration/file-storage/configuring-file-storage.md) または [簡易ファイルシステムストア](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)を使用している場合、ファイルストアの設定を [`.config` ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) にエクスポートし、それを `[Liferay Home]/osgi/configs/` フォルダにコピーします。 以下に例を示します。 `com.liferay.portal.store.file.system.configuration.AdvancedFileSystemStoreConfiguration.config` ファイルに必要な `rootDir` パラメータ。
+### その他のファイルまたはライブラリ
 
-    ```properties
-    rootDir="data/document_library"
-    ```
+他のライブラリまたはファイルをバックアップすることをお勧めします。
 
-1. [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) を使用していて、リリースノートにCommerceのデータベースのアップグレードが記載されている場合は、アップグレードの準備をしてください。 詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
-
-1. アプリケーションサーバーをシャットダウンします。
-
-    理由:
-
-    * Unixスタイルのシステムでは、通常、実行中のファイルを置き換えることができますが、古いファイルはメモリに常駐します。
-    * Windowsシステムでは、使用中のファイルはロックされており、パッチを適用できません。
-
-1. インストールを[バックアップ](./backing-up.md)してください。
-
-1. [ヘルプセンター](https://help.liferay.com/hc) (サブスクライバー) または [コミュニティダウロード](https://www.liferay.com/downloads-community) から、ご希望のLiferay DXP/Portal Tomcatバンドルのアップデートをダウンロードしてください。
-
-1. バンドルを任意の場所に解凍します。
-
-1. 新しいバンドルの `[Liferay Home]/data` フォルダを、 [バックアップの](./backing-up.md)の `[Liferay Home]/data` フォルダに置き換えます。
-
-1. これらのファイルを[バックアップ](./backing-up.md)から新しいインストールにコピーします。
-
-    * 設定ファイル（`.config` ファイル）。
-    * DXPアクティベーションキー（サブスクライバー）
-    * [ポータルプロパティ](../reference/portal-properties.md) (例： `portal-ext.properties`)
-
-    詳細は、[構成とプロパティの移行](../upgrading-liferay/migrating-configurations-and-properties.md)を参照してください。
-
-1. Tomcatのカスタマイズ内容（ `[tomcat version]/conf` フォルダのコンテンツや追加したライブラリなど）を、 [バックアップ](./backing-up.md) から新しいインストールに複製します。
-
-1. カスタムウィジェットとモジュールを新しいインストールにコピーします。
-
-1. リリースノートにデータベースの変更が記載されている場合は、互換性のある [database upgrade option](../upgrading-liferay/reference/database-upgrade-options.md) を使用して、すべての必要な変更と必要なオプションの変更を適用します。
-
-1. アプリケーションサーバーを起動します。
-
-LiferayアップデートTomcatバンドルで動作しています。
-
-<a name="updating-an-application-server-installation" />
-
-## アプリケーションサーバのインストールのアップデート
-
-1. アップデートの `.war` ファイルとOSG依存関係のZIPファイルをダウンロードします。
-
-    * DXP:ヘルプセンター [ダウンロード](https://customer.liferay.com/downloads) 。
-    * ポータル:Liferay コミュニティ [ダウンロード](https://www.liferay.com/downloads-community) 。
-
-1. アプリケーションサーバーをシャットダウンします。
-
-    理由:
-
-    * Unixスタイルのシステムでは、通常、実行中のファイルを置き換えることができますが、古いファイルはメモリに常駐します。
-    * Windowsシステムでは、使用中のファイルはロックされており、パッチを適用できません。
-
-1. アプリケーションサーバーのインストールで、既存のLiferay Webアプリケーションの上に`.war` ファイルのコンテンツを展開します。
-
-    サポートされているアプリケーションサーバーへのLiferayのインストールに関する詳細な情報へのリンクです。
-
-    * [Tomcat](../installing-liferay/installing-liferay-on-an-application-server/installing-on-tomcat.md)
-    * [WildFly](../installing-liferay/installing-liferay-on-an-application-server/installing-on-wildfly.md)
-    * [JBoss EAP](../installing-liferay/installing-liferay-on-an-application-server/installing-on-jboss-eap.md)
-    * [WebLogic](../installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md)
-    * [WebSphere](../installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md)
-
-1. OSGi依存関係のZIPファイルのコンテンツを、 `[Liferay Home]/osgi` フォルダにマージします。
-
-1. Liferayのキャッシュを削除します。
-
-    `[Liferay Home]/osgi/state` フォルダーを削除します。
-
-    ```bash
-    cd [Liferay Home]
-    rm -rf osgi/state
-    ```
-
-    `[Liferay Home]/work` フォルダーを空にします。
-
-    ```bash
-    rm -rf work/*
-    ```
-
-    アプリケーションサーバーのキャッシュを削除します。 キャッシュの場所については、アプリケーションサーバーのベンダーのドキュメントを参照してください。
-
-    ```{note}
-    モジュールの変更が内部のみである場合、変更はOSGiフレームワークからは見えず、モジュールはインストールされたままであり、モジュールの状態は保持されます。 次回のサーバー起動前にOSGiバンドルの状態情報をクリアすることで、そのようなモジュールが適切な状態で再インストールされるようになります。
-    ```
-
-1. リリースノートにデータベースの変更が記載されている場合は、互換性のある [database upgrade option](../upgrading-liferay/reference/database-upgrade-options.md) を使用して、すべての必要な変更と必要なオプションの変更を適用します。
-
-1. アプリケーションサーバーを再度起動します。
-
-　 Liferayインスタンスがアップデートされ、実行されています。
-
-<a name="additional-information" />
-
-## 追加情報
-
-* [バックアップ](./backing-up.md)
-* [ホットフィックスの適用](./applying-a-hotfix.md)
-* [データベースアップグレードオプション](../upgrading-liferay/reference/database-upgrade-options.md)
+* `lib/xuggler.jar`（`LIFERAY/TOMCAT/webapps/ROOT/WEB-INF/lib/`）（7.3で廃止予定）
+* SAMLキーストア（`LIFERAY/data/keystore.jks`）

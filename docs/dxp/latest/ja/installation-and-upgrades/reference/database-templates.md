@@ -1,10 +1,6 @@
 # データベーステンプレート
 
-以下は、Liferay DXPの組み込みデータソースとしてさまざまなデータベースを構成するためのテンプレート（ [ポータルプロパティ](./portal-properties.md) と [Docker環境変数](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) の例）です。
-
-<a name="mariadb" />
-
-<a name="mariadb" />
+以下は、Liferay DXPの組み込みデータソースとしてさまざまなデータベースを構成するためのテンプレート（[ポータルプロパティ](./portal-properties.md)と[Docker環境変数](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)の例）です。
 
 ## MariaDB
 
@@ -17,12 +13,19 @@ jdbc.default.username=
 jdbc.default.password=
 ```
 
-<a name="mysql" />
+### Docker変数
+
+```bash
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_DRIVER_UPPERCASEC_LASS_UPPERCASEN_AME=org.mariadb.jdbc.Driver \
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_URL="jdbc:mariadb://hostname:3306/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false" \
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME= \
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD= \
+```
 
 ## MySQL
 
 ```{important}
-   MySQLコネクタ/J 8.0は、MySQL Server 8.0および5.7で使用することを強くお勧めします。
+MySQLコネクタ/J 8.0は、MySQL Server 8.0および5.7で使用することを強くお勧めします。
 ```
 
 ### ポータルプロパティ
@@ -34,7 +37,14 @@ jdbc.default.username=
 jdbc.default.password=
 ```
 
-<a name="postgresql" />
+### Docker変数
+
+```bash
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_DRIVER_UPPERCASEC_LASS_UPPERCASEN_AME=com.mysql.cj.jdbc.Driver \
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_URL="jdbc:mysql://hostname:3306/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false" \
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME= \
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD= \
+```
 
 ## PostgreSQL
 
@@ -47,4 +57,13 @@ jdbc.default.username=
 jdbc.default.password=
 ```
 
-その他のデータベーステンプレートについては、 [デフォルトのポータルプロパティ](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) を参照してください。
+### Docker変数
+
+```bash
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_DRIVER_UPPERCASEC_LASS_UPPERCASEN_AME=org.postgresql.Driver \
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_URL="jdbc:postgresql://hostname:3306/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false" \
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME= \
+-e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD= \
+```
+
+その他のデータベーステンプレートについては、[デフォルトのポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)を参照してください。

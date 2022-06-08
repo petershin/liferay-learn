@@ -1,29 +1,27 @@
 # サイトの外観を変更する
 
-サイトのロゴ、ファビコン、テーマの変更は、変更したい最初のルックアンドフィールの一部です。 テーマは、サイトの全体的なルックアンドフィールを設定するために使用されます。 サイトのページは、DXPインスタンスに展開されているテーマを使用するように構成できます。
+サイトのロゴ、ファビコン、テーマの変更は、最初に変更したいルックアンドフィールの一部です。 テーマは、サイトの全体的なルックアンドフィールを設定するために使用されます。 サイトのページは、DXPインスタンスに展開されているテーマを使用するように設定できます。
 
-DXP Dockerイメージには **クラシック** デフォルトで利用可能なテーマ。 この例では、新しいシンプルなテーマをデプロイしてから、テーマを切り替える方法を示します。
-
-<a name="changing-your-sites-theme" />
+DXP Docker イメージでは、 _Classic_ テーマがデフォルトで利用可能です。 この例では、新しいシンプルなテーマをデプロイしてから、テーマを切り替える方法を示します。
 
 ## サイトのテーマを変更する
 
-<a name="deploy-a-new-theme" />
-
 ### 新しいテーマをデプロイする
 
-```{include} /_snippets/run-liferay-portal.md
-```
+1. Liferay DXP Dockerイメージを起動します。
 
-次に、以下の手順を実行します。
+    ```bash
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
 
-1.  [ Acmeサンプルブルーテーマ](./liferay-5b2v-theme.war) を含むWARをダウンロードする ：
+1. [Acme Sample Blue Theme](./liferay-5b2v-theme.war)を含むWARをダウンロードします。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/getting-started/changing-your-sites-appearance/liferay-5b2v-theme.war -O
     ```
 
 1. テーマを含むWARをデプロイします。
+
 
     <!-- ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq) -->
 
@@ -37,25 +35,23 @@ DXP Dockerイメージには **クラシック** デフォルトで利用可能�
 2020-03-11 17:06:35.601 INFO  [fileinstall-/opt/liferay/osgi/war][BundleStartStopLogger:39] STARTED liferay-5b2v-theme_1.0.0 [1112]
 ```
 
-<a name="change-your-sites-theme" />
-
 ### サイトのテーマを変更する
 
-デプロイされたテーマを使用するようにサイトのページを構成します。
+デプロイされたテーマを使用するようにサイトのページを設定します。
 
 1. ブラウザで` https:// localhost:8080にアクセスし、` [管理者としてログイン](./introduction-to-the-admin-account.md) します。
 
-2. [**Site Administration**] → [**Site Builder**] → [**Pages**] に移動します。
+1. 画面の左側には_サイトメニュー_で、_［サイトビルダー］_ → _［Pages］_に移動します。
 
-3. **公開ページ** の横にある歯車アイコンをクリックしますそれらを設定するには：
+1. 設定する_［ Public Page ］_の横にある歯車アイコンをクリックします。
 
-    ![ページ画面を開いて、公開ページを構成します。](./changing-your-sites-appearance/images/01.png)
+    ![公開ページを設定するために、ページ画面を開きます。](./changing-your-sites-appearance/images/01.png)
 
-4.  下にスクロールして、 **現在のテーマを変更をクリックします** ボタン：
+1. スクロールダウンして、 _［Change Current Theme］_ ボタンをクリックします。
 
-    ![ [現在のテーマを変更]をクリックして、パブリックページの新しいテーマを選択します。](./changing-your-sites-appearance/images/02.png)
+    ![［現在のテーマを変更］をクリックして、パブリックページの新しいテーマを選択します。](./changing-your-sites-appearance/images/02.png)
 
-5.  デプロイされたサンプルテーマ **Acme Sample Blue Themeを選択します。**
+1. デプロイされたサンプルテーマ、 _Acme Sample Blue Theme_を選択します。
 
 1. サイトのホームページに戻り、テーマが変更されたことを確認します。 サイトのコンテンツセクションの背景が青色になりました。
 
@@ -63,15 +59,14 @@ DXP Dockerイメージには **クラシック** デフォルトで利用可能�
 
 サイトのテーマが更新されました。
 
-<a name="whats-next" />
-
-### テーマリソース
+### 次のステップ
 
 サイトの外観を管理する方法の全容については、[Managing Your Site's Appearance](../site-building/site-appearance/site-appearance.md)を参照してください。
 
-[ Liferay Marketplaceで利用可能な多くのテーマがあります](../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md)プロフェッショナルなルックアンドフィールをすばやく実現するために使用できます。
+[Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md) には、プロフェッショナルなルックアンドフィールを素早く実現するためのテーマが多数用意されています。
 
-[独自のテーマを作成する方法を学ぶこともできます](../site-building/site-appearance/themes/introduction-to-themes.md) 。
+また、 [独自のテーマを作成する方法](../site-building/site-appearance/themes/introduction-to-themes.md)も紹介されています。
+
 
 <!-- ## Changing Your Site's Logo
 

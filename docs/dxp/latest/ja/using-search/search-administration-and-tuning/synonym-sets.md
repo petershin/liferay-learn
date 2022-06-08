@@ -4,19 +4,15 @@
 
 同義語セットとは、同じ意味を持つ単語やフレーズを集めたものです。 管理者であるユーザーが同義語セットを作成し、検索ページのエンドユーザーがキーワードやフレーズを検索すると、セット内の同義語も検索されます。
 
-たとえば、ユーザーが「US」という単語を検索するとします。 ほとんどの場合、ユーザーは **America** 、 **U.S.A** 、 **United States** などの同義語も含む検索結果を求めています。 同義語セットを作成することで、ユーザーが検索を最大限に活用できるようになります。
-
-<a name="requirements-and-limitations" />
+たとえば、ユーザーが「US」という単語を検索するとします。 ほとんどの場合、ユーザーは*America*、*U.S.A*、*United States*などの同義語も含む検索結果を求めています。 同義語セットを作成することで、ユーザーが検索を最大限に活用できるようになります。
 
 ## 要求事項と制限事項
 
-同義語セットは、Elasticsearchを検索エンジンとして使用している場合にのみサポートされます。 Elasticsearchのインストールについては、 [Elasticsearchを開始する](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md) を参照してください。
+同義語セットは、Elasticsearchを検索エンジンとして使用している場合にのみサポートされます。 Elasticsearchのインストールについては、[Elasticsearchを開始する](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md)を参照してください。
 
 同義語セットは現在、すぐに使用可能なロケール（英語またはスペイン語）のいずれかでインデックス付けされたフィールドで機能します。 これら2つの言語のいずれかでローカライズ可能なフィールドを持つLiferayアセットは、同義語セットで機能します。
 
-Elasticsearchでサポートされている [`=>`形式](https://www.elastic.co/guide/en/elasticsearch/guide/current/synonyms.html) は同義語セットUIではサポートされていません。
-
-<a name="creating-and-managing-synonym-sets" />
+Elasticsearchでサポートされている[`=>`形式](https://www.elastic.co/guide/en/elasticsearch/guide/current/synonyms.html)は同義語セットUIではサポートされていません。
 
 ## 同義語セットの作成と管理
 
@@ -24,25 +20,23 @@ Elasticsearchでサポートされている [`=>`形式](https://www.elastic.co/
 
 新しい同義語セットを作成するには、
 
-1. グローバルメニュー（![Global Menu](../../images/icon-applications-menu.png)）から、 ［**アプリケーション**］ → ［**検索の調整**］ → ［**同義語**］ に移動します。
+1. グローバルメニュー（![Global Menu](../../images/icon-applications-menu.png)）から、 *［アプリケーション］* → *［検索の調整］* → *［同義語］*に移動します。
 
    ![グローバルメニューの［同義語］セクションに移動します](synonym-sets/images/01.png)
 
-1. **追加** アイコン（![Click on the add icon](../../images/icon-add.png)）をクリックして、新規同義語セットを追加します。
+1. _追加_アイコン（![Click on the add icon](../../images/icon-add.png)）をクリックして、新規同義語セットを追加します。
 
-1. セット内の同義語のリストを入力します。 同義語の入力は、 **Enter** をクリックするか、カンマを入力することで行います。
+1. セット内の同義語のリストを入力します。 同義語の入力は、*Enter*をクリックするか、カンマを入力することで行います。
 
    ![異なる同義語をセットに入力します。](synonym-sets/images/02.png)
 
-1. 同義語の横にある ［**X**］ をクリックすると、同義語を削除できます。 セットが終わったら、 ［**公開**］ をクリックします。
+1. 同義語の横にある*［X］*をクリックすると、同義語を削除できます。 セットが終わったら、*［公開］*をクリックします。
 
-1. セットを編集または削除するには、 **オプション** アイコン（![Click on the options icon.](../../images/icon-options.png)）をクリックし、 ［**Edit**］ または ［**Delete**］ をクリックします。
+1. セットを編集または削除するには、_オプション_アイコン（![Click on the options icon.](../../images/icon-options.png)）をクリックし、*［Edit］*または*［Delete］*をクリックします。
 
    ![編集または削除をクリックして変更を加えます。](synonym-sets/images/03.png)
 
    同義語セットが公開されると、使用できるようになります。
-
-<a name="using-synonym-sets" />
 
 ## 同義語セットの使用
 
@@ -52,25 +46,21 @@ Elasticsearchでサポートされている [`=>`形式](https://www.elastic.co/
 
 上記の例では、月面車に関するこのブログ記事には「LRV」という単語は含まれていませんが、検索結果の一致として返されるようになりました。 同義語が強調表示されていることにも注目してください。
 
-<a name="creating-new-synonym-language-filters" />
-
 ## 新しいシノニム言語フィルタの作成
 
 > **入手方法Liferay DXP 7.3 FP2およびLiferay DXP 7.2 FP13**
 
-Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-limitations) の同義語をサポートします。 他の言語に対応するためには、以下のような設定が必要です。
+Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-limitations)の同義語をサポートします。 他の言語に対応するためには、以下のような設定が必要です。
 
-- [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) アナライザーに必要な変更（Synonym graph token filter内のパイプラインを含む）
+- [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer)アナライザーに必要な変更（Synonym graph token filter内のパイプラインを含む）
 
-を加え、デフォルトの再実装をすることで [カスタムアナライザー](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) を作成します。</li> 
+を加え、デフォルトの再実装をすることで[カスタムアナライザー](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html)を作成します。</li> 
   
   - コネクタ構成の追加インデックス設定を使用して、カスタム・アナライザー定義をインデックス設定に追加します。
 - コネクタ構成の［タイプマッピングを上書き］設定を使用して、Liferay DXPのデフォルトのタイプマッピングをオーバーライドして、目的のフィールドにカスタム・アナライザーを適用します。
 - 新しい設定を適用するためにインデックスを再作成します。</ul> 
 
 
-
-<a name="prerequisite-obtain-the-default-mappings" />
 
 ### 前提条件デフォルトマッピングの取得
 
@@ -84,7 +74,7 @@ Liferay DXP バンドルからマッピングを取得するには。
 1. 解凍したJARファイルをアーカイブマネージャーで開き、 `META-INF/mappings`に移動します。
 1. `liferay-type-mappings.json` というファイルが必要なリソースになります。 お使いのファイルシステムに解凍してください。
 
-ソースコードからマッピングを取得するには、 [Liferay DXP ソースコードアクセス](https://help.liferay.com/hc/ja/articles/360045389291) ,
+ソースコードからマッピングを取得するには、 [Liferay DXP ソースコードアクセス](https://help.liferay.com/hc/en-us/articles/360045389291),
 
 1. ソースコードのリポジトリにアクセスできたら、上記の記事の手順に従って、修正パックレベルのタグを探します。
 1. `modules/apps/portal-search-elasticsearch(6 or 7)/portal-search-elasticsearch(6 or 7)-impl/src/main/resources/META-INF/mappings`に移動します。
@@ -93,13 +83,11 @@ Liferay DXP バンドルからマッピングを取得するには。
 
 
 ```{warning}
-   インデックスのマッピングや設定は、バージョン間で変更されることがあり、場合によっては（Fix PackやService Packによって）マイナーバージョンの中でも変更されることがあります。 マッピングや設定のカスタマイズは、アップグレードや新しいパッチレベルへの移行時に見直し、必要に応じて対応する必要があります。 さらに、Liferayのサーチチームは、将来のバージョンでは、より多くの言語をサポートすることを計画しており、カスタマイズが不要になります。
+インデックスのマッピングや設定は、バージョン間で変更されることがあり、場合によっては（Fix PackやService Packによって）マイナーバージョンの中でも変更されることがあります。 マッピングや設定のカスタマイズは、アップグレードや新しいパッチレベルへの移行時に見直し、必要に応じて対応する必要があります。 さらに、Liferayのサーチチームは、将来のバージョンでは、より多くの言語をサポートすることを計画しており、カスタマイズが不要になります。
 ```
 
 
 
-
-<a name="adding-a-language" />
 
 ### 言語の追加
 
@@ -115,7 +103,7 @@ Liferay DXP バンドルからマッピングを取得するには。
    {
        "analysis": {
            "analyzer": {
-               "custom **liferay** analyzer_fr": {
+               "custom_liferay_analyzer_fr": {
                    "filter": [
                        "french_elision",
                        "lowercase",
@@ -134,7 +122,7 @@ Liferay DXP バンドルからマッピングを取得するには。
                },
                "french_stop":{
                    "type":"stop",
-                   "stopwords":" **french** "
+                   "stopwords":"_french_"
                },
                "french_stemmer":{
                    "type":"stemmer",
@@ -162,7 +150,7 @@ Liferay DXP バンドルからマッピングを取得するには。
    
 
    ```{important}
-      この例は、簡潔にするために切り取られています。 Override Type Mappingsは、Liferayのデフォルトの型マッピングを完全にオーバーライドして無視しますので、オーバーライドされた部分だけでなく、完全なマッピングファイルを提供する必要があります。   
+   この例は、簡潔にするために切り取られています。 Override Type Mappingsは、Liferayのデフォルトの型マッピングを完全にオーバーライドして無視しますので、オーバーライドされた部分だけでなく、完全なマッピングファイルを提供する必要があります。   
    ```
 
 
@@ -177,13 +165,13 @@ Liferay DXP バンドルからマッピングを取得するには。
             {
                 "template_fr": {
                     "mapping": {
-                        "analyzer": "custom **liferay** analyzer_fr",
+                        "analyzer": "custom_liferay_analyzer_fr",
                         "store": true,
-                        "term **vector": "with** positions_offsets",
+                        "term_vector": "with_positions_offsets",
                         "type": "text"
                     },
-                    "match": "\\w+ **fr\\b|\\w+** fr_[A-Z]{2}\\b",
-                    "match **mapping** type": "string",
+                    "match": "\\w+_fr\\b|\\w+_fr_[A-Z]{2}\\b",
+                    "match_mapping_type": "string",
                     "match_pattern": "regex"
                 }
             },
@@ -198,7 +186,7 @@ Liferay DXP バンドルからマッピングを取得するには。
    
 
    ```{tip}
-      Sidecar Elasticsearch サーバーを使用している場合、コンソールにエラーが表示されることがあります。 Liferay DXPを再起動すると問題が解決します。
+   Sidecar Elasticsearch サーバーを使用している場合、コンソールにエラーが表示されることがあります。 Liferay DXPを再起動すると問題が解決します。
    ```
 
 
@@ -206,7 +194,7 @@ Liferay DXP バンドルからマッピングを取得するには。
 
 1. カスタムフィルター名（例： `custom-synonym-filter-fr`）をフィルター名の設定に追加し、設定を保存します。
 
-1. 完全な再インデックスを実行します。コントロールパネルの &rarr; 検索 &rarr; インデックスアクションで、 **すべての検索インデックスの再インデックスをクリックします。** をクリックします。
+1. 完全な再インデックスを実行します。コントロールパネルの &rarr; 検索 &rarr; インデックスアクションで、 _すべての検索インデックスの再インデックスをクリックします。_をクリックします。
    
    カスタムマッピングが正常に適用されたことを確認するには、「フィールドマッピング」タブに移動し、インデックスを選択し（例えば、 `liferay-20101`）、右パネルで `template_fr` を探します。
    
@@ -214,13 +202,13 @@ Liferay DXP バンドルからマッピングを取得するには。
 
 新しいフィルターが動作していることを確認するため。 
 
-1. Synonymsアプリケーションに移動します。グローバルメニューのアプリケーションタブから、 **Synonyms**（「検索チューニング」の下）をクリックします。
+1. Synonymsアプリケーションに移動します。グローバルメニューのアプリケーションタブから、 _Synonyms_ （「検索チューニング」の下）をクリックします。
 
 1. 新しいシノニムセットを作成します。 `maison, logement`.
 
-1. 英語とフランス語の翻訳付きのウェブコンテンツ記事を作成します。 フランス語のタイトルに **maison** を追加します。
+1. 英語とフランス語の翻訳付きのウェブコンテンツ記事を作成します。 フランス語のタイトルに _maison_ を追加します。
 
-1. 英語とフランス語の翻訳付きで、別のWebコンテンツ記事を作成します。 フランス語のタイトルに **logement** を追加します。
+1. 英語とフランス語の翻訳付きで、別のWebコンテンツ記事を作成します。 フランス語のタイトルに _logement_ を追加します。
 
-1. フランス語のロケールに切り替えて、 **maison** を検索します。 両方の記事が返されます。
+1. フランス語のロケールに切り替えて、 _maison_を検索します。 両方の記事が返されます。
 

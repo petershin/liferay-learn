@@ -2,19 +2,20 @@
 
 アプリケーションで作業するときに、複数のモジュールがあり、それぞれに独自の言語キーが設定されている場合があります。 さまざまな言語プロパティファイルをさまざまな場所に保持するのではなく、それらを1つの場所に統合します。 このサンプルプロジェクトでは、言語キーを異なるモジュール間で共有する方法について示しています。
 
-<a name="run-the-tutorial-code" />
-
 ## チュートリアルコードを実行する
 
-```{include} /_snippets/run-liferay-portal.md
-```
+1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
 
-次に、以下の手順を実行します。
+    ```bash
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
+
+    別のLiferay PortalバージョンまたはLiferay DXPを実行している場合は、上記のコマンドを適宜調整してください。
 
 1. サンプルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
     ```
 
     ```bash
@@ -52,8 +53,6 @@
 
 次に、どのように機能するかを見ていきましょう。
 
-<a name="create-the-language-properties-file" />
-
 ## 言語プロパティファイルを作成する
 
 すべての共有言語キーを保持するための個別のプロジェクトモジュールを作成します。 サンプルプロジェクトでは、共有キーは`Acme U8T2 Impl`モジュールにあります。
@@ -73,11 +72,9 @@ yellow=Yellow
 
 他のロケールの言語プロパティファイルもフォルダに含めることができます。 たとえば、日本語の言語キーを含めるには、`Language_ja.properties`ファイルをフォルダに追加します。
 
-<a name="add-the-bnd-instruction" />
-
 ## bnd命令を追加する
 
-言語キーを共有するモジュールごとに、bndヘッダヘッダでリソースを指定する必要があります。
+言語キーを共有するモジュールごとに、bndヘッダでリソースを指定する必要があります。
 
 ```properties
 Bundle-Name: Acme U8T2 Web
@@ -93,8 +90,6 @@ Bundle-Version: 1.0.0
 ```
 
 個々のモジュールにいくつかの言語キーを配置できることに注意してください。 たとえば、サンプルプロジェクトのウェルカムメッセージは、`Acme U8T2 Impl`の共有キーではなく、`Acme U8T2 Web`モジュールの言語キーから送信されます。  個々のモジュールの言語キーは、`-liferay-aggregate-resource-bundles`で指定された共有キーよりも優先されます。
-
-<a name="related-topics" />
 
 ## 関連トピック
 

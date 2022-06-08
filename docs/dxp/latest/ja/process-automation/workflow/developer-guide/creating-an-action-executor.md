@@ -25,19 +25,18 @@ Groovyアクションロジックをワークフロー定義の `<script>` 要�
 
 まず、 `ActionExecutor`をデプロイし、動作を確認します。
 
-<a name="deploy-an-action-executor" />
-
 ## アクション・エクゼキュータの配置
 
-```{include} /_snippets/run-liferay-dxp.md
-```
+1. Liferayを起動します。
 
-次に、以下の手順を実行します。
+   ```bash
+   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
+   ```
 
 1. Acme E5C9 Implementationプロジェクトをダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/process-automation/workflow/developer-guide/liferay-e5c9.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/process-automation/workflow/developer-guide/liferay-e5c9.zip -O
    ```
 
    ```bash
@@ -50,8 +49,8 @@ Groovyアクションロジックをワークフロー定義の `<script>` 要�
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```tip::
-      このコマンドは、デプロイされたjarをDockerコンテナの ``/opt/liferay/osgi/modules``にコピーするのと同じです。
+   ```{tip}
+   このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
    ```
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
@@ -61,10 +60,8 @@ Groovyアクションロジックをワークフロー定義の `<script>` 要�
    ```
 
 ```{note}
-   利便性のために、 ``ActionExecutor`` の ``activate`` メソッドは、 E5C9 唯一の承認者 のワークフローの定義をオートロードしました。 このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 `アップロード新しいワークフロー定義を参照してください <../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition>` __。
+For convenience, the `activate` method of the `ActionExecutor` autoloaded a E5C9 Single Approver workflow definition. このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 [新しいワークフロー定義のアップロード](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition)を参照してください。
 ```
-
-<a name="test-the-action-executor" />
 
 ## アクションエグゼキュータをテストする
 
@@ -74,29 +71,27 @@ Acme E5C9 Action Executorを使用するには、ワークフロー定義をブ�
 
 1. 設定タブで、［E5C9 唯一の承認者］の定義を［ブログのエントリのアセットタイプ］に割り当てる。
 
-1. ［**保存**］ をクリックします。
+1. _［Save]_ をクリックします。
 
-1. デフォルトの管理者であるUser Test Testを使って、サイトメニューの &rarr; コンテンツ& データ&rarr; ブログを開きます。
+1. デフォルトの管理者であるUser Test Testを使って、サイトメニューの &rarr; Content & Data &rarr; Blogsを開きます。
 
-1. **追加** ボタン（![Add](../../../images/icon-add.png)）をクリックします。
+1. _追加_ボタン（![Add](../../../images/icon-add.png)）をクリックします。
 
-1. タイトルとコンテンツの欄に何かを入力し、 **公開申請** をクリックします。
+1. タイトルとコンテンツの欄に何かを入力し、 _公開申請_をクリックします。
 
-1. メインのBlogsビューに戻り、エントリーが表示され、ステータスが **返答待ち** と表示されていることを確認します。
+1. メインのBlogsビューに戻り、エントリーが表示され、ステータスが _返答待ち_と表示されていることを確認します。
 
    ワークフローフレームワークでは、ステータスを［保留］に設定しています。 これ以降、ステータスの更新はアクションエクゼキュータのロジックを使って行われます。
 
-1. [ワークフロー内のブログエントリーを承認する](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task) .
+1. [ワークフロー内のブログエントリーを承認する](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task).
 
    ![この承認または拒否は、E5C9アクションエグゼキューターによって行われます。](./creating-an-action-executor/images/01.png)
 
 唯一の承認者ワークフローをブログエントリに割り当てると、［E5C9 唯一の承認者］と同じように動作することがわかります。
 
-<a name="understanding-the-e5c9-action-executor" />
-
 ## E5C9アクションエグゼキュータを理解する
 
-Acme E5C9実装プロジェクトでは、唯一の承認者定義のワークフロースクリプトのステータス設定ロジックを、`E5C9ActionExecutor` <p という1つのJavaクラスに抽出します。</p>
+Acme E5C9実装プロジェクトでは、唯一の承認者定義のワークフロースクリプトのステータス設定ロジックを、`E5C9ActionExecutor<0>という1つのJavaクラスに抽出します。</p>
 
 <p spaces-before="0">このプロジェクトでは、アクションエクゼキュータに加えて、E5C9 唯一の承認者と呼ばれるワークフロー定義が含まれ、オートロードされます。このワークフロー定義は、デフォルトの唯一の承認者と同じロジックを持ちますが、ワークフロー定義に直接Groovyスクリプトを使用する代わりに、アクションエクゼキュータクラスのロジックを使用します。</p>
 

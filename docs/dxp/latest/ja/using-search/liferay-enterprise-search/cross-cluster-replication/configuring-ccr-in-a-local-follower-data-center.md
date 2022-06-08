@@ -6,14 +6,12 @@
 
 完全な構成例は、[CCR設定リファレンスガイド](./ccr-basic-use-case-config-reference.md)にも記載しています。
 
-<a name="configure-the-follower-elasticsearch-cluster" />
-
 ## フォロワーElasticsearchクラスターの構成
 
 ローカルElasticsearchクラスターはフォロワー（レプリケート済み、読み取り専用）インデックスを保持する必要があり、同じ場所にあるLiferay DXPノードが読み取ることができるローカル検索エンジンとして機能します。
 
 ```{important}
-   **CCRインストールのセキュリティ：** [前述のとおり](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption)  Elasticsearchクラスタは同じCAで署名されたノード証明書を使用し、各クラスタのセキュリティ設定は一致している必要があります。 その他のアプローチや詳細については、 [Elastic社のドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cross-cluster-configuring.html)  を参照してください。
+**CCRインストールのセキュリティ:** [前述](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication and-encryption) したように、Elasticsearchクラスタは同じCAによって署名されたノード証明書と各クラスターのセキュリティ設定が一致する必要があります。 その他のアプローチや詳細については、[Elasticのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cross-cluster-configuring.html)を参照してください。
 ```
 
 1. `elasticsearch.yml`を構成します。
@@ -59,23 +57,21 @@
 1. 試用段階で、まだ適切なライセンスを持っていない場合は、Elasticsearchのトライアルを開始してください。
 
    ```
-   POST / **license/start** trial?acknowledge=true
+   POST /_license/start_trial?acknowledge=true
    ```
-
-<a name="configure-the-local-liferay-dxp-cluster-node" />
 
 ## ローカルLiferay DXPクラスターノードの構成
 
 ```{tip}
-   ローカルでテストする場合は、TomcatがリモートのDXPノードと異なるポートを使用するように設定します。 この設定例では、HTTPポートとして`9080`、リダイレクトポートとして`9443`、シャットダウンポートとして`9005`を使用しています（サーバーのポートは、`[Liferay Home]/tomcat-[version]/conf/server.xml`で変更してください）。
+ローカルでテストする場合は、TomcatがリモートのDXPノードと異なるポートを使用するように設定します。 この設定例では、HTTPポートとして`9080`、リダイレクトポートとして`9443`、シャットダウンポートとして`9005`を使用しています（サーバーのポートは、`[Liferay Home]/tomcat-[version]/conf/server.xml`で変更してください）。
 ```
 
-1. [Elasticsearch接続構成ファイル](./configuring-ccr-in-a-remote-leader-data-center.md#configure-the-remote-liferay-dxp-cluster-node) をリモートDXPクラスターノードの`osgi/configs`フォルダからローカルDXPクラスターノードの対応するフォルダにコピーします。
+1. [Elasticsearch接続構成ファイル](./configuring-ccr-in-a-remote-leader-data-center.md#configure-the-remote-liferay-dxp-cluster-node)をリモートDXPクラスターノードの`osgi/configs`フォルダからローカルDXPクラスターノードの対応するフォルダにコピーします。
 
    Liferay DXP 7.3の場合、これには`*ElasticsearchConnectionConfiguration-remote.config` と`*ElasticsearchConfiguration.config`が含まれています。
 
    ```{important}
-      また、icsearchConnectionConfiguration.config`の中の`remoteClusterConnectionId`の値は、`ElasticsearchConnectionConfiguration-remote.config`ファイルの中の`connectionId`と一致しなければなりません。 
+   ElasticsearchConfiguration.config` の `remoteClusterConnectionId` の値は、 `ElasticsearchConnectionConfiguration-remote.config` ファイルの `connectionId` と一致する必要があります。 
    ```
 
    Liferay DXP 7.1および7.2では、 `*ElasticsearchConfiguration.config` および `*XPackSecurityConfiguration.config`が含まれています。
@@ -104,7 +100,7 @@
    Liferay DXP 7.1および7.2の場合、`com.liferay.portal.search.elasticsearch.cross.cluster.replication.internal.configuration.ElasticsearchConnectionConfiguration-ccr.config`という名前の構成ファイルを`Liferay Home/osgi/configs`に提供します。
 
    ```{warning}
-      Liferay 7.2では、CCR接続用の設定ファイル（例：`ElasticaldConnectionConfiguration-ccr.config`）をLESクラスター横断レプリケーションLPKGの初期デプロイと同時にデプロイしないでください。 モジュールが完全に起動する前に設定ファイルがデプロイされると、Liferayの検索機能が壊れるという既知のバグ( [LPS-127821](https://issues.liferay.com/browse/LPS-127821) )**があります。 この問題が発生した場合は、 [Troubleshooting Cross-Cluster Replication](./troubleshooting-cross-cluster-replication.md#liferay-7-2-after-deploying-theccr-lpkg-and-theelasticsearchconnectionconfiguration-file-search-is-broken) ** を参照してください。
+   Liferay 7.2 では、CCR 接続の設定ファイル (例: `ElasticsearchConnectionConfiguration-ccr.config`) を LES クラスター横断レプリケーションLPKGの初期デプロイと同時に展開しないようにしてください。 モジュールが完全に起動する前に設定ファイルがデプロイされると、Liferayの検索機能が壊れるという既知のバグ([LPS-127821](https://issues.liferay.com/browse/LPS-127821)) があります。 もし、既にこの現象が発生している場合は、[クラスター横断レプリケーションのトラブルシューティング](./troubleshooting-cross-cluster-replication.md#liferay-7-2-after-deploying-the-ccr-lpkg and-the-elasticsearchconfiguration-file-search-is-broken) で対処できますので、ご参照ください。
    ```
 
    ```properties
@@ -133,35 +129,33 @@
 
 あとは、CCR自体を有効にして構成するだけです。
 
-<a name="configure-the-cross-cluster-replication-module" />
-
 ## クラスター横断レプリケーションモジュールの設定
 
-LESクラスター横断レプリケーションモジュールは、リーダークラスターの後続、およびリーダークラスターからフォロワークラスターへのすべてのインデックスの初期レプリケーションをトリガーします。 フォローとレプリケーションをトリガーするには、構成ファイル（`.config`）ではなく、システム設定のUIでCCR機能を有効にする必要があります。 いずれかのデータセンターのLiferay DXPノードからCCRを構成します。
+LESクラスター横断レプリケーションモジュールは、リーダークラスターの後続、およびリーダークラスターからフォロワークラスターへのすべてのインデックスの初期レプリケーションをトリガーします。 フォローとレプリケーションをトリガーするには、構成ファイル（`.config`）を介してではなく、システム設定のUIでCCR機能を有効にする必要があります。 いずれかのデータセンターのLiferay DXPノードからCCRを構成します。
 
-1. グローバルメニューを開き **コントロールパネル** &rarr; **システム設定** に来ます。 ［**検索機能**］ カテゴリを開きます。
+1. グローバルメニューを開き _コントロールパネル_ &rarr; _システム設定_に来ます。 _［検索機能］_カテゴリを開きます。
 
-1. ［**クラスター横断レプリケーション**］ を開きます。
+1. _［クラスター横断レプリケーション］_を開きます。
 
-1. ［**ローカルクラスターからの読み取り**］ のボックスをオンにします。
+1. _［ローカルクラスターからの読み取り］_のボックスをオンにします。
 
-1. ［**ローカルクラスター設定**］ に値を1つ設定します （`localhost:9080,ccr`）。
+1. _［ローカルクラスター設定］_に値を1つ設定します （`localhost:9080,ccr`）。
 
    ```{important}
-      ここでは決してリモートデータセンターに値を設定しないでください（例では、`localhost:8080,remote`となります）。 これを設定すると、同じ名前のリーダーインデックスがすでに存在するリモートクラスタにフォロワーインデックスが作成されます。
+   ここでは、決してリモートデータセンターに値を設定しないでください（例では、`localhost:8080,remote`となります）。 これを設定すると、同じ名前のリーダーインデックスがすでに存在するリモートクラスタにフォロワーインデックスが作成されます。
    ```
 
    これは、読み取り専用とする接続を定義するものです。 人間の言語で言うと、ここの各エントリは「このアドレス（`localhost:9080`）のLiferayサーバーはこの名前（この例では`ccr`）のElasticsearch接続から読み取りを行う」ということを示しています。
 
-1. **アップデート** をクリックします。
+1. _アップデート_をクリックします。
 
 本番環境のセットアップでは、リモートのElasticsearchクラスターに別のトランスポートアドレスを設定したり（この例ではデフォルトを使用）、フォロワーのElasticsearchクラスターへのレプリケートから一部のインデックスを除外したりすることができます。 これらの目的のための設定フィールドがあります。
 
-**リモートクラスター内シードノードのトランスポートアドレス** ：リモートクラスターとローカルクラスター間の接続を確立するために使用される、リモートクラスター内のノードのトランスポートアドレス。 デフォルトは`localhost:9300`です。
+**リモートクラスター内シードノードのトランスポートアドレス**：リモートクラスターとローカルクラスター間の接続を確立するために使用される、リモートクラスター内のノードのトランスポートアドレス。 デフォルトは`localhost:9300`です。
 
-**除外するインデックス** ：クラスター横断レプリケーションから除外するインデックス名を入力します。 ピリオド（.）で始まるインデックスは常に除外されます。 デフォルトでは、リモートクラスター内のすべてのインデックスがローカルクラスターにレプリケートされます。 自動レプリケーションが有効になっていない場合、この設定は無視されます。
+**除外するインデックス**：クラスター横断レプリケーションから除外するインデックス名を入力します。 ピリオド（.）で始まるインデックスは常に除外されます。 デフォルトでは、リモートクラスター内のすべてのインデックスがローカルクラスターにレプリケートされます。 自動レプリケーションが有効になっていない場合、この設定は無視されます。
 
-**自動レプリケーションが有効** ：ローカルクラスターからの読み取りが有効になっている場合、ローカルElasticsearchクラスターでのフォロワーインデックスの自動作成を有効または無効にします。 Elasticsearchを介してレプリケーションを手動で管理する場合は、この設定を無効にします。 デフォルトは ［**有効**］ です。
+**自動レプリケーションが有効**：ローカルクラスターからの読み取りが有効になっている場合、ローカルElasticsearchクラスターでのフォロワーインデックスの自動作成を有効または無効にします。 Elasticsearchを介してレプリケーションを手動で管理する場合は、この設定を無効にします。 デフォルトは _［有効］_です。
 
 ![システム設定でCCRを構成します。](./configuring-ccr-in-a-local-follower-data-center/images/02.png)
 
@@ -174,11 +168,9 @@ LESクラスター横断レプリケーションモジュールは、リーダ�
 
 接続が構成され、インデックスがレプリケートされたら、システムが正しく機能していることを確認します。
 
-<a name="verify-the-setup" />
-
 ## セットアップの確認
 
-フォロワーのDXPクラスタノードで、「コントロールパネル」 &rarr; 「構成」 &rarr; 「検索」に移動します。 Liferay DXP 7.2では、 ［**Connections**］ タブもクリックする必要があります。 接続は次のようになります。
+フォロワーのDXPクラスタノードで、「コントロールパネル」 &rarr; 「構成」 &rarr; 「検索」に移動します。 Liferay DXP 7.2では、_［Connections］_タブもクリックする必要があります。 接続は次のようになります。
 
 ![検索管理パネルでElasticsearch 7の接続を確認します。](./configuring-ccr-in-a-local-follower-data-center/images/01.png)
 

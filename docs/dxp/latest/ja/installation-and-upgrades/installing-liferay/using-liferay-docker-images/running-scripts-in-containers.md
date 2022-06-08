@@ -2,7 +2,7 @@
 
 TomcatおよびLiferayファイルの設定、アーティファクトのデプロイ、およびパッチの適用以外に、Liferayコンテナで実行したいことが他にもある場合は、スクリプトを使用できます。 コンテナは、 [ライフサイクル](./container-lifecycle-and-api.md)のいくつかの時点で特定のフォルダー内のスクリプトをスキャンします。 次の表に、スクリプトの挿入ポイントを示します。
 
-| ライフサイクルフェーズ | 説明                                 | ターゲットコンテナフォルダー                             |
+| ライフサイクルフェーズ | Description                        | ターゲットコンテナフォルダー                             |
 |:----------- |:---------------------------------- |:------------------------------------------ |
 | 事前構成        | 構成フェーズの前にスクリプトを実行する                | `/usr/local/liferay/scripts/pre-configure` |
 | 設定          | ファイルを `［Liferay Home］`にコピーしてから実行する | `/mnt/liferay/scripts`                     |
@@ -11,11 +11,9 @@ TomcatおよびLiferayファイルの設定、アーティファクトのデプ�
 
 次のセクションでは、上記のフェーズでのスクリプトの作成と実行について説明します。
 
-<a name="running-scripts-during-the-configure-phase" />
-
 ## 構成フェーズでのスクリプトの実行
 
-TomcatとLiferayを構成する方法が、構成フェーズが提供する方法以外にもある場合は、それらを構成フェーズスクリプトに実装します。 構成フェーズの詳細は、 [コンテナのライフサイクルとAPI](./container-lifecycle-and-api.md#lifecycle) を参照してください。
+TomcatとLiferayを構成する方法が、構成フェーズが提供する方法以外にもある場合は、それらを構成フェーズスクリプトに実装します。 構成フェーズの詳細は、[コンテナのライフサイクルとAPI](./container-lifecycle-and-api.md#lifecycle)を参照してください。
 
 ここでは、バインドマウントを使用して構成フェーズスクリプトを設定する手順を示します。
 
@@ -26,7 +24,7 @@ TomcatとLiferayを構成する方法が、構成フェーズが提供する方�
     ```
 
     ```{tip}
-    [コンテナの /mnt/liferay フォルダをマウント](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) を既に計画している場合は、構成フェーズスクリプトをローカルのマウントフォルダ内の`scripts`というフォルダに入れてConfigure Phaseに含めることができます。 [local-folder]/scripts` フォルダは、コンテナの `/mnt/liferay/scripts` フォルダにマッピングされます。
+    [コンテナの /mnt/liferay フォルダをマウント](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay)を既に計画している場合は、構成フェーズスクリプトをローカルのマウントフォルダ内の`scripts`というフォルダに入れてConfigure Phaseに含めることができます。 [local-folder]/scripts` フォルダは、コンテナの `/mnt/liferay/scripts` フォルダにマッピングされます。
     ```
 
 1. 事前に設定したアクションを実行するためのスクリプトを作成します。
@@ -49,8 +47,6 @@ TomcatとLiferayを構成する方法が、構成フェーズが提供する方�
 ［LIFERAY］ Executing configure-phase-script.sh.
 in configure-phase-script.sh
 ```
-
-<a name="running-scripts-in-other-phases" />
 
 ## 他のフェーズでのスクリプトの実行
 
@@ -128,16 +124,12 @@ in configure-phase-script.sh
 inside some-pre-configure-script.sh
 ```
 
-<a name="conclusion" />
-
 ## まとめ
 
 これで、コンテナのライフサイクルのすべての部分でスクリプトを実行する方法がわかりました。
 
-<a name="additional-information" />
-
 ## 追加情報
 
-* [Docker Container Basics](./docker-container-basics.md)
+* [Liferay Dockerイメージの使用](../using-liferay-docker-images.md)
 * [コンテナのライフサイクルとAPI](./container-lifecycle-and-api.md)
 * [コンテナへのファイルの提供](./providing-files-to-the-container.md)

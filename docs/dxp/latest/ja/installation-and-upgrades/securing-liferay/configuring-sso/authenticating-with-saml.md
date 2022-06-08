@@ -15,7 +15,7 @@ authenticating-with-saml/saml-authentication-process-overview.md
 authenticating-with-saml/configuring-saml-at-the-system-level.md
 authenticating-with-saml/saml-admin.md
 authenticating-with-saml/configuring-saml-at-the-instance-level.md
-authenticating-with-saml/saml-configuration-reference.md
+authenticating-with-saml/saml-settings.md
 ```
 
 SAML（Security Assertion Markup Language）アダプターは、シングルサインオン（SSO）とシングルログオフ（SLO）をデプロイ環境に提供します。 SAMLは、アイデンティティプロバイダー（IdP）とサービスプロバイダー（SP）を使用して機能します。
@@ -36,4 +36,4 @@ SAMLの構成に直接移動するか、SAMLがどのように機能するかを
 * [Configuring SAML at the System Level](./authenticating-with-saml/configuring-saml-at-the-system-level.md)
 * [SAML管理](./authenticating-with-saml/saml-admin.md)
 * [Configuring SAML at the Instance Level](./authenticating-with-saml/configuring-saml-at-the-instance-level.md)
-* [SAML Configuration Reference](./authenticating-with-saml/saml-configuration-reference.md)
+* [SAML Configuration Reference](./authenticating-with-saml/saml-settings.md)

@@ -5,7 +5,7 @@
 **コラボレーション**
 
 | ポートレット                | ID (Automatic Copy)                                                      |
-| --------------------- | ------------------------------------------------------------------------ |
+|:--------------------- |:------------------------------------------------------------------------ |
 | ブログ                   | `com_liferay_blogs_web_portlet_BlogsPortlet`                             |
 | ブログの集約（アグリゲーター）       | `com_liferay_blogs_web_portlet_BlogsAgreggatorPortlet`                   |
 | カレンダー                 | `com_liferay_calendar_web_portlet_CalendarPortlet`                       |
@@ -18,7 +18,7 @@
 **コミュニティ**
 
 | ポートレット  | ID (Automatic Copy)                                                 |
-| ------- | ------------------------------------------------------------------- |
+|:------- |:------------------------------------------------------------------- |
 | マイサイト   | `com_liferay_site_my_sites_web_portlet_MySitesPortlet`              |
 | ページコメント | `com_liferay_comment_page_comments_web_portlet_PageCommentsPortlet` |
 | 不正の報告   | `com_liferay_flags_web_portlet_PageFlagsPortlet`                    |
@@ -27,7 +27,7 @@
 **コンテンツ管理**
 
 | ポートレット            | ID (Automatic Copy)                                                                    |
-| ----------------- | -------------------------------------------------------------------------------------- |
+|:----------------- |:-------------------------------------------------------------------------------------- |
 | アセットバプリッシャー       | `com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet`                        |
 | パンくずリスト           | `com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet`   |
 | カテゴリーナビゲーション      | `com_liferay_asset_categories_navigation_web_portlet_AssetCategoriesNavigationPortlet` |
@@ -52,7 +52,7 @@
 **ニュース**
 
 | ポートレット         | ID (Automatic Copy)                                            |
-| -------------- | -------------------------------------------------------------- |
+|:-------------- |:-------------------------------------------------------------- |
 | 警告             | `com_liferay_announcements_web_portlet_AlertsPortlet`          |
 | お知らせ           | `com_liferay_announcements_web_portlet_AnnouncementsPortlet`   |
 | 最近のコンテンツポートレット | `com_liferay_asset_publisher_web_portlet_RecentContentPortlet` |
@@ -60,14 +60,14 @@
 **サンプル**
 
 | ポートレット      | ID (Automatic Copy)                                     |
-| ----------- | ------------------------------------------------------- |
+|:----------- |:------------------------------------------------------- |
 | Hello World | `com_liferay_hello_world_web_portlet_HelloWorldPortlet` |
 | IFrame      | `com_liferay_iframe_web_portlet_IFramePortlet`          |
 
-**Search (Automatic Copy**)
+**Search (Automatic Copy)**
 
 | ポートレット      | ID (Automatic Copy)                                                           |
-| ----------- | ----------------------------------------------------------------------------- |
+|:----------- |:----------------------------------------------------------------------------- |
 | カテゴリファセット設定 | `com_liferay_portal_search_web_category_facet_portlet_CategoryFacetPortlet`   |
 | カスタムファセット設定 | `com_liferay_portal_search_web_custom_facet_portlet_CustomFacetPortlet`       |
 | フォルダファセット   | `com_liferay_portal_search_web_folder_facet_portlet_FolderFacetPortlet`       |
@@ -85,7 +85,7 @@
 **ソーシャル**
 
 | ポートレット    | ID (Automatic Copy)                                                 |
-| --------- | ------------------------------------------------------------------- |
+|:--------- |:------------------------------------------------------------------- |
 | アクティビティ   | `com_liferay_social_activities_web_portlet_SocialActivitiesPortlet` |
 | コンタクトセンター | `com_liferay_contacts_web_portlet_ContactsCenterPortlet`            |
 | メンバ      | `com_liferay_social_networking_web_members_portlet_MembersPortlet`  |
@@ -95,7 +95,7 @@
 **ツール**
 
 | ポートレット                  | ID (Automatic Copy)                                                              |
-| ----------------------- | -------------------------------------------------------------------------------- |
+|:----------------------- |:-------------------------------------------------------------------------------- |
 | 言語選択                    | `com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet` |
 | Search (Automatic Copy) | `com_liferay_portal_search_web_portlet_SearchPortlet`                            |
 | ログイン                    | `com_liferay_login_web_portlet_LoginPortlet`                                     |
@@ -103,7 +103,7 @@
 **Wikiノード**
 
 | ポートレット  | ID (Automatic Copy)                                                     |
-| ------- | ----------------------------------------------------------------------- |
+|:------- |:----------------------------------------------------------------------- |
 | ページメニュー | `com_liferay_wiki_navigation_web_portlet_WikiNavigationPageMenuPortlet` |
 | ツリーメニュー | `com_liferay_wiki_navigation_web_portlet_WikiNavigationTreeMenuPortlet` |
 | Wikiノード | `com_liferay_wiki_web_portlet_WikiPortlet`                              |

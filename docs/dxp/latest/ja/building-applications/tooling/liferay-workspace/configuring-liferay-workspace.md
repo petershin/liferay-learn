@@ -1,6 +1,8 @@
 # Liferay Workspaceの設定
 
-Liferay Workspaceは使い方が簡単で、[最初から](./what-is-liferay-workspace.md)基本を学ぶことができます。 [プロジェクトを作成](./creating-code-with-liferay-workspace.md)したり、 [コードをデプロイ](./creating-code-with-liferay-workspace.md#deploying-code-via-liferay-workspace) したり、[Dockerコンテナを使用](./configuring-a-liferay-docker-container.md)したりしている場合は、ここにある情報は必要ないかもしれません。 ただし、もっと掘り下げて、ワークスペースで実行できるすべてのことについて学びたい場合は、このサイトが有益となるでしょう。
+```{warning}
+Liferay Workspaceは使い方が簡単で、[最初から](./what-is-liferay-workspace.md)始めることで、基本を学ぶことができます。 もしあなたが喜んで [プロジェクトの作成](./creating-code-with-liferay-workspace.md) や [コードのデプロイ](./creating-code-with-liferay-workspace.md #deploying-code-via-liferay-workspace) 、あるいは [Docker コンテナを使用] (./configuring-a-liferay-docker-container.md)しているなら、ここの情報は必要ないかもしれません。 ただし、もっと掘り下げて、ワークスペースで実行できるすべてのことについて学びたい場合は、このサイトが有益となるでしょう。 
+```
 
 取り上げるトピックは次のとおりです。
 
@@ -8,13 +10,11 @@ Liferay Workspaceは使い方が簡単で、[最初から](./what-is-liferay-wor
 - 開発、UAT、および本番環境の使用
 - ターゲットプラットフォームの管理
 
-<a name="updating-liferay-workspace-and-bundled-plugins" />
-
 ## Liferay Workspaceとバンドルされたプラグインの更新
 
 Liferay Workspaceは、開発者の生産性を高めるために常に更新されており、ワークスペースを最新の状態にするのは簡単なプロセスです。
 
-1. Liferayのリポジトリにある [ワークスペースのリリースに移動](https://repository-cdn.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/com.liferay.gradle.plugins.workspace) します。 バージョンがリストに表示されます。必要なバージョン番号をメモしてください。
+1. Liferayのリポジトリにある[ワークスペースのリリースに移動](https://repository-cdn.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/com.liferay.gradle.plugins.workspace)します。 バージョンがリストに表示されます。必要なバージョン番号をメモしてください。
 1. ワークスペースのルートフォルダにある`settings.gradle`ファイルを開きます。
 1. `依存関係`ブロックで、リポジトリで見つけたバージョンでバージョンを更新します。 最新のリリースを維持したい場合は、バージョン番号の代わりにテキスト`latest.release`を指定してください。
 
@@ -32,8 +32,6 @@ Liferay Workspaceは、開発者の生産性を高めるために常に更新さ
 
 　 これで、ワークスペースがアップグレードされました。
 
-<a name="updating-your-liferay-version" />
-
 ## Liferayバージョンの更新
 
 ワークスペースがコンパイルするLiferayのバージョンを更新することをお勧めします。 これは、単一のプロパティによって処理されます。
@@ -43,8 +41,6 @@ liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 ```
 
 プロパティの値を、コードを開発しているLiferayのバージョンに更新します。 その後、ワークスペースの依存関係が自動的に新しいバージョンに更新されます。
-
-<a name="using-jdk-11" />
 
 ## JDK11の使用
 
@@ -78,8 +74,6 @@ maven {
 ```
 これで、LiferayプロジェクトでJDK11を使用する準備が整いました。 既存のプロジェクトがある場合は、追加で必要な手順があります。
 
-<a name="service-builder-projects" />
-
 ### サービスビルダープロジェクト
 
 古いワークスペースをサービスビルダープロジェクトでアップグレードした場合は、この構成をサービスビルダーの`-service`モジュールの`build.gradle`ファイルに追加します。
@@ -93,9 +87,6 @@ tasks.withType(JavaCompile) {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 ```
-
-<a name="jax-ws-projects" />
-
 ### JAX-WSプロジェクト
 
 JAX-WSプロジェクトがある場合は、JDK 11から削除された`javax.xml.soap`のクラスが必要です。 次に、それらを依存関係として手動で指定する必要があります。
@@ -105,8 +96,6 @@ JAX-WSプロジェクトがある場合は、JDK 11から削除された`javax.x
 compile 'com.sun.xml.ws:jaxws-ri:2.3.2'
 ```
 
-<a name="creating-deployment-environments" />
-
 ## デプロイメント環境の構築
 
 コードを誰かと共有するときが来ます。 そのためには、環境を構築する必要があります。 企業の世界では、通常3つの環境があります。
@@ -115,7 +104,7 @@ compile 'com.sun.xml.ws:jaxws-ri:2.3.2'
 * ユーザー受け入れテスト（UAT）：本番環境の構成をより厳密に反映する環境。 アプリケーションがほぼ完成したら、通常、より多くのユーザーをここでテストするように招待します。
 * 本番環境：本番環境のサイトが存在する環境。 デプロイメントは厳密に制御され、他の2つの環境でテストされたコードのみがデプロイされます。
 
-Liferay Workspaceを使用すると、コンテナーベースであろうと従来型であろうと、デプロイメント環境を簡単に生成できます。 構成を提供し、Gradleタスクを実行すると、配布可能なDockerコンテナまたはサーバーアーカイブを生成して、インストールすることができます。 ワークスペースには、アクションが発生するオプションの`configs`フォルダが含まれています。
+Liferay Workspaceを使用すると、コンテナーベースであろうと従来型であろうと、デプロイ環境を簡単に生成できます。 構成を提供し、Gradleタスクを実行すると、配布可能なDockerコンテナまたはサーバーアーカイブを生成して、インストールすることができます。 ワークスペースには、アクションが発生するオプションの`configs`フォルダが含まれています。
 
 [Blade CLI](../blade-cli/generating-projects-with-blade-cli.md)を使用してワークスペースを作成した場合、`configs`フォルダは既に存在しています。 ワークスペースを[手動で](./creating-a-liferay-workspace.md)作成した場合は、ワークスペースディレクトリに次のフォルダ構造を作成します。
 
@@ -132,8 +121,6 @@ Liferay Workspaceを使用すると、コンテナーベースであろうと従
    ```
 
 まだファイルには何も入れないでください。
-
-<a name="how-deployment-environments-work" />
 
 ### デプロイメント環境の仕組み
 
@@ -152,8 +139,6 @@ Liferay Workspaceを使用すると、コンテナーベースであろうと従
 `uat`：ユーザー受け入れテスト環境の構成が含まれています。
 
 構成ファイルを特定のフォルダに配置すると、その環境の構成が定義されます。 `common`の場合、その構成は、環境が構築されるときに他の構成とマージされます。 これで、いくつかの環境を構築する準備が整いました。
-
-<a name="building-deployment-environments" />
 
 ### デプロイメント環境の構築
 
@@ -211,8 +196,6 @@ Liferay Workspaceを使用すると、コンテナーベースであろうと従
 
 これで、環境を生成して配布する準備が整いました。
 
-<a name="generating-deployment-environments" />
-
 ### デプロイメント環境の生成
 
 これで、ローカルで実行したり、サーバーに配布したりする環境を生成できます。 これは、`initBundle`または`distBundle` Gradleタスクのいずれかを使用して実行されます。
@@ -238,8 +221,6 @@ Liferay Workspaceを使用すると、コンテナーベースであろうと従
 
 上記の手順に従って、各環境をテストおよび構築します。
 
-<a name="managing-the-target-platform" />
-
 ## ターゲットプラットフォームの管理
 
 通常、Gradleの依存関係を定義するときは、次のようにそれらの依存関係のバージョンを提供する必要があります。
@@ -251,7 +232,7 @@ dependencies {
 }
 ```
 
-Liferayのプラットフォームで作成されたアプリケーションはすべてそのプラットフォームを対象としているため、Liferayでは、Liferayのバージョンを宣言し、Liferayから他の依存関係を継承することで、すべての依存関係を1回で簡単に指定できます。 そうすれば、上記のような混乱はありません。
+Liferayのプラットフォームで作成されたアプリケーションはそのプラットフォームを対象としているため、Liferayでは、Liferayのバージョンを宣言し、Liferayから他の依存関係を継承することで、すべての依存関係を1回で簡単に指定できます。 そうすれば、上記のような混乱はありません。
 
 ターゲットプラットフォームはデフォルトで有効になっています。使用するために特別なことをする必要はありません。 現在、ほとんどの依存関係は次のようになっています。
 
@@ -261,7 +242,7 @@ dependencies {
 }
 ```
 
-これにより、Liferayに付属するすべての依存関係がもたらされます。 何らかの理由で特定の依存関係を指定する必要がある場合でも、引き続き可能です。
+これにより、Liferayに付属するすべての依存関係がもたらされます。 何らかの理由で特定の依存関係を指定する必要がある場合でも、次の事ができます。
 
 ```groovy
 dependencies {

@@ -1,57 +1,68 @@
-# 工場構成の使用
+# Factory設定の使用
 
-ほとんどのLiferay DXPシステム設定では、1つのエントリに1つの設定セットしか許可されていません。 構成を変更するには、単一の構成フォームを更新します。これは、[影響を受ける構成全体](../understanding-configuration-scope.md)に適用されます。 あまり一般的ではあり **が、構成は同時に共存する複数のエントリをサポートします。これらは** ファクトリ構成*と呼ばれます。 工場構成の場合、各構成セットは固有の構成を提供します。 一般的な使用法は、サードパーティサーバー（LDAPやElasticsearchなど）へのシステムスコープの接続の構成です。 これらのサーバーへの接続ごとに固有の構成値が必要であるため、工場出荷時の構成を使用してそれを可能にします。</p>
+ほとんどのLiferay DXPシステム設定では、1つのエントリに1つの設定セットしか許可されていません。 設定を変更するには、単一の設定フォームを更新します。これは、[影響を受ける設定全体](../understanding-configuration-scope.md)に適用されます。 あまり一般的ではあり *が、設定は同時に共存する複数のエントリをサポートします。これらは*Factory設定*と呼ばれます。 Factory設定の場合、各設定セットは固有の設定を提供します。 一般的な使用法は、サードパーティサーバー（LDAPやElasticsearchなど）へのシステムスコープの接続の設定です。 これらのサーバーへの接続ごとに固有の設定値が必要であるため、Factory設定を使用してそれを可能にします。</p>
 
 ```{tip}
-Factory Configuration Example: [Adding Organization types](../../../users-and-permissions/organizations/adding-a-new-organization-type.md) is supported, and is useful if you need to model real-life hierarchies or enforce hierarchical rules. In Liferay DXP, each Organization type is created via a factory configuration entry in System Settings.
+Factory設定例：[組織タイプの追加] (../../../users-and-permissions/organizations/adding-a-new-organization-type.md) がサポートされており、現実の階層をモデル化したり、階層ルールを適用する必要がある場合に便利です。 Liferay DXPでは、各組織タイプはシステム設定のFactory設定エントリーで作成されます。
 ```
 
-<a name="identifying-factory-configurations" />
+## Factory設定の特定
 
-## 工場構成の特定
+サービスがFactory設定をサポートしている場合、そのシステム設定エントリーには追加ボタンがあります。
 
-サービスが出荷時の構成をサポートしている場合、そのシステム設定エントリには[追加]ボタンがあります。
+![システム設定エントリーに追加ボタンがある場合、Factory設定をサポートしています。](./using-configuration-files/images/01.png)
 
-![システム設定エントリに [追加]ボタンがある場合、工場出荷時の構成をサポートしています。](./using-configuration-files/images/01.png)
+追加ボタン ![Add](../../../images/icon-add.png) をクリックして、設定値の新しいセットを追加します。
 
-追加ボタン ![Add](../../../images/icon-add.png) をクリックして、構成値の新しいセットを追加します。
+## Factory設定ファイル
 
-<a name="factory-configuration-files" />
+単一インスタンス設定と同様に、システム設定インターフェイス（上記の追加ボタンを使用）または [設定ファイル](./using-configuration-files.md)介してFactory設定を設定できます。 標準の単一インスタンス設定ファイルは、設定オブジェクトの完全修飾クラス名に `.config`追加したものを使用します。
 
-## ファクトリー構成ファイル
-
-単一インスタンス構成と同様に、システム設定インターフェイス（上記の[追加]ボタンを使用）または [構成ファイル](./using-configuration-files.md)介して工場構成を設定できます。 標準の単一インスタンス構成ファイルは、構成オブジェクトの完全修飾クラス名に `.config`追加したものを使用します。
-
-``` bash
+```bash
 my.service.ServiceConfiguration.config
 ```
 
-サービスが工場出荷時の構成をサポートしている場合は、構成の最初のインスタンス `-default.config`を呼び出す規則を使用します。 デフォルトの組織タイプの名前は次のようになっています。
+サービスがFactory設定をサポートしている場合は、設定の最初のインスタンス `-default.config`を呼び出す規則を使用します。 デフォルトの組織タイプの名前は次のようになっています。
 
-``` bash
-com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-default.config
+```bash
+com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration~default.config
 ```
 
-次のインスタンスには、一意の **サブネーム**（**以外のデフォルト**）が含まれています。 このインスタンスを使用する必要があるときにわかりやすい名前を使用することをお勧めします。 [新しい組織タイプの追加](../../../users-and-permissions/organizations/adding-a-new-organization-type.md) の例に続いて、次の名前の設定ファイルで **リーグ** タイプを追加できます。
+```{note}
 
-``` bash
-com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-league.config
+Liferay DXP/Portal バージョン 7.0-7.3 では、チルダ (`~`) を使ってFactory設定ファイルの名前とサブネームを分ける代わりに、ブラウザとOSに応じたダッシュ (`-`) またはアンダースコア (`_`) を使ってください。 例えば、
+
+ダッシュ：
+
+`com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-default.config`
+
+アンダースコア：
+
+`com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration_default.config`
+
+チルダは好ましい区切り文字ですが、ダッシュとアンダースコアもまだサポートされています。
+```
+
+次のインスタンスには、一意の *サブネーム* （ *デフォルト*以外のもの）が含まれています。 このインスタンスを使用する必要があるときにわかりやすい名前を使用することをお勧めします。 [新しい組織タイプの追加](../../../users-and-permissions/organizations/adding-a-new-organization-type.md)の例に続いて、次の名前の設定ファイルで_リーグ_タイプを追加できます。
+
+```bash
+com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration~league.config
 ```
 
 ```{warning}
-Providing a configuration file with a subname forces a factory configuration scenario, even if the service isn't designed to accept multiple configuration entries. Use the System Settings UI as described above to determine if using factory configurations is supported for a configuration entry. 
+サブネーム付きの設定ファイルを提供すると、たとえサービスが複数の設定項目を受け入れるように設計されていなくても、Factory設定のシナリオが強制されます。 上記のようにシステム設定UIを使用して、設定項目でFactory設定を使用することがサポートされているかどうかを確認します。 
 ```
 
-工場出荷時の構成をサポートする一部のシステム設定エントリには、デフォルトインスタンスの構成ファイルが付属していません（例：匿名ユーザーエントリ）。 工場構成ファイルをエクスポートして `.config` ファイルを取得する場合、 `-default.config` 命名規則は使用されません。 代わりに、それが最初の出現か追加の出現かに関係なく、そのサブネームには保証された一意の識別子が与えられます。
+Factory設定をサポートする一部のシステム設定エントリには、デフォルトインスタンスの設定ファイルが付属していません（例：匿名ユーザーエントリー）。 Factory設定ファイルをエクスポートして `.config` ファイルを取得する場合、 `-default.config` 命名規則は使用されません。 代わりに、それが最初の出現か追加の出現かに関係なく、そのサブネームには保証された一意の識別情報が与えられます。
 
-``` bash
-com.liferay.user.associated.data.web.internal.configuration.AnonymousUserConfiguration-6befcd73-7c8b-4597-b396-a18f64f8c308.config
+```bash
+com.liferay.user.associated.data.web.internal.configuration.AnonymousUserConfiguration~6befcd73-7c8b-4597-b396-a18f64f8c308.config
 ```
 
-あなたが別のシステムに展開するための設定ファイルをエクスポートしている場合は、最初の後、エクスポートファイル名の一部の名前を変更することができます `-` より記述サブネームを使用します。 注意：ファイルの名前を変更して、エクスポート元と同じシステムにデプロイすると、新しいサブネームにより、完全に新しい構成としてマークされます。 この場合、名前が変更されたインスタンスだけでなく、追加の構成インスタンスが作成されます。
+あなたが別のシステムにデプロイするための設定ファイルをエクスポートしている場合は、最初の`～`の後、エクスポートファイル名の一部の名前を変更して、より分かりやすいサブネームを使用できます。 注意：ファイルの名前を変更して、エクスポート元と同じシステムにデプロイすると、新しいサブネームにより、完全に新しい設定としてマークされます。 この場合、名前が変更されたインスタンスだけでなく、追加の設定インスタンスが作成されます。
 
 ```{warning}
-For configuration entries supporting factory configurations, omitting the subname from a `.config` file's name causes System Settings to disallow adding new entries for the configuration entry targeted by this `.config` file. This is caused by a known bug. See [LPS-76352](https://issues.liferay.com/browse/LPS-76352) for more information. Once an improperly named configuration file is deployed, you can't add any entries for the configuration in question from its System Settings entry.
+Factory設定をサポートする設定エントリーでは、 `.config` ファイル名からサブネームを省略すると、システム設定はこの `.config` ファイルが対象とする設定エントリーの新しいエントリを追加しないようにします。 これは、既知のバグが原因です。 詳しくは [LPS-76352](https://issues.liferay.com/browse/LPS-76352)を参照してください。 不適切な名前の設定ファイルがデプロイされると、そのシステム設定エントリーから問題の設定に関するエントリーを追加することができなくなります。
 
-Deploying an erroneous (lacking a subname) `.config` file doesn't disable anything permanently. Rename the file using the proper convention described above or remove it entirely and start over.
+誤った（サブネームがない）`.config`ファイルをデプロイしても、何も永久に無効化されることはありません。 上記の適切な規則に従ってファイル名を変更するか、完全に削除して最初からやり直します。
 ```

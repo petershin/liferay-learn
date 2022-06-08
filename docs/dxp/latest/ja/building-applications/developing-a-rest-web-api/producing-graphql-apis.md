@@ -1,3 +1,3 @@
 # GraphQL APIの作成
 
-Coming soon!
+近日公開！

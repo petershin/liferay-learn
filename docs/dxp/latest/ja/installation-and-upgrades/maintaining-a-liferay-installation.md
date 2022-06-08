@@ -14,18 +14,19 @@ toc:
 
 maintaining-a-liferay-installation/backing-up.md
 maintaining-a-liferay-installation/updating-liferay.md
+maintaining-a-liferay-installation/updating-previous-versions-of-liferay.md
 maintaining-a-liferay-installation/applying-a-hotfix.md
 maintaining-a-liferay-installation/maintaining-clustered-installations.md
 maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md
 maintaining-a-liferay-installation/reference.md
 ```
 
-Liferayがバグを修正したり、機能を追加するので、それらについていく必要があります。 Liferay DXP 7.3 SPは、 **ローリングリリース** を行っています。 つまり、DXPのソースコードには継続的に修正や目立たない機能が追加され、アップデートリリース（Update）でエンタープライズサブスクライバーに提供されます。 サブスクライバーは、DXPで確認されたミッションクリティカルな問題に対して [Hot Fixes](./maintaining-a-liferay-installation/applying-a-hotfix.md) をリクエストすることができます。
+Liferay DXP 7.3 SP3以降および7.4 GA1以降、Liferayはアップデートと修正プログラムを提供するための新しいリリースモデルを採用しました。 この新しいアプローチはバンドルリリースと呼ばれ、フィックスパックおよびサービスパックの形式で部分的な更新を提供する以前のモデルに置き換わるものです。 これにより、Liferay DXPの最新の更新だけでなく、各リリースの最新バージョンのTomcatやその他のライブラリもお客様に提供することで、セキュリティを向上します。
+
+インストールを維持するために不可欠なのは、バックアップです。 定期的に保存するシステムコンポーネントの詳細については、 [Backing Up](./maintaining-a-liferay-installation/backing-up.md) を参照してください。
+
+Liferayはバグ修正や機能の追加を行っていくため、最新情報を把握しておく必要があります。 詳細については、[Updating Liferay](./maintaining-a-liferay-installation/updating-liferay.md)を参照してください。 サブスクライバーは、DXPで確認されたミッションクリティカルな問題に対して[ホットフィックス](./maintaining-a-liferay-installation/applying-a-hotfix.md)をリクエストすることができます。
 
 ```{important}
-Liferay DXP 7.3 SP3以前のバージョンでは、代わりにパッチモデルを使用しています。 Liferay DXP 7.3 SP3以前のバージョンをお使いの方は、[Patching DXP](./maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)をご覧ください。
+以前のバージョンのLiferayについては、[Updating Previous Versions of Liferay](./maintaining-a-liferay-installation/updating-previous-versions-of-liferay.md)または[Patching Earlier DXP Versions](./maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)を参照してください。
 ```
-
-インストールを維持するために不可欠なのは、バックアップです。 定期的に保存するシステムコンポーネントの詳細については、 [バックアップ](./maintaining-a-liferay-installation/backing-up.md) を参照してください。
-
-[apply the latest updates](./maintaining-a-liferay-installation/updating-liferay.md) を随時適用することができます。

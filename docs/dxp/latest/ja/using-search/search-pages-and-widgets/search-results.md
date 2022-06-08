@@ -11,7 +11,7 @@ search-results/enabling-search-suggestions.md
 search-results/search-results-behavior.md
 search-results/understanding-low-level-search-options.md
 search-results/custom-filter-examples.md
-
+```
 
 - [検索結果](search-results/search-results.md)
 - [検索結果ウィジェットの構成](search-results/configuring-the-search-results-widget.md)

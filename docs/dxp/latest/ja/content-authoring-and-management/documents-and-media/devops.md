@@ -26,24 +26,20 @@ devops/google-drive-integration.md
 devops/sharepoint-integration.md
 ```
 
-- [ドキュメントプレビューの構成](./devops/configuring-documents-and-media-previews.md)
+- [ドキュメントとメディアプレビューの設定](./devops/configuring-documents-and-media-previews.md)
 - [アップロードされたファイルのウイルス対策スキャンを有効にする](../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md)
-- [Setting Storage Quotas for Documents and Media](./devops/setting-storage-quotas-for-documents-and-media.md)
+- [ドキュメントとメディアのストレージクォータを設定する](./devops/setting-storage-quotas-for-documents-and-media.md)
 - [アニメーションGIFの最適化を有効にする](./devops/enabling-optimization-of-animated-gifs.md)
-- [Enabling FFmpeg For Audio and Video Previews](./devops/enabling-ffmpeg-for-audio-and-video-previews.md)
-- [OpenOffice / LibreOffice統合の有効化 (近日公開！)](./devops/enabling-openoffice-libreoffice-integration.md)
+- [音声とビデオのプレビュー用にFFmpegを有効にする](./devops/enabling-ffmpeg-for-audio-and-video-previews.md)
+- [OpenOffice / LibreOffice統合の有効化](./devops/enabling-openoffice-libreoffice-integration.md)
 - [Microsoft Office 365でドキュメントの作成と編集を有効にする](./devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
 
-<a name="google-drive-integration" />
-
-## Google Drive Integration
+## Googleドライブ との連携
 
 - [Googleドライブドキュメントへのリンクを有効にする](./devops/google-drive-integration/enabling-links-to-google-drive-documents.md)
 - [Googleドライブでドキュメントの作成と編集を有効にする](./devops/google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md)
 
-<a name="sharepoint-integration" />
+## SharePointとの連携
 
-## SharePoint Integration
-
-- [Enabling Liferay's REST Connector to SharePoint](./devops/sharepoint-integration/enabling-liferays-rest-connector-to-sharepoint.md)
-- [Creating SharePoint Repositories in Documents and Media](./devops/sharepoint-integration/creating-sharepoint-repositories-in-documents-and-media.md)
+- [SharePointへのLiferayのRESTコネクタの有効化](./devops/sharepoint-integration/enabling-liferays-rest-connector-to-sharepoint.md)
+- [ドキュメントとメディアでのSharePointリポジトリの作成](./devops/sharepoint-integration/creating-sharepoint-repositories-in-documents-and-media.md)

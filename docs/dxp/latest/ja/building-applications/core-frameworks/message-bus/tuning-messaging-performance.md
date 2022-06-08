@@ -26,25 +26,24 @@
 |:-------- |:---------- |:--------------- |:----------- |
 | **パラレル** | はい         | はい              | いいえ         |
 | **シリアル** | はい         | はい              | いいえ         |
-| **同期** | いいえ        | いいえ             | はい          |
+| **同期**   | いいえ        | いいえ             | はい          |
 
 ここでは、サンプルプロジェクトのメッセージングパフォーマンスを調べることから始めます。 次に、APIを使用して宛先統計を取得し、宛先を設定します。 最後に、サンプルの宛先設定を再構成し、サンプルを再実行して、統計を調べます。
-
-<a name="monitor-messaging-in-an-example-project" />
 
 ## サンプルプロジェクトでメッセージングを監視する
 
 サンプルプロジェクトは、宛先を作成し、メッセージリスナーを登録し、Gogoシェルコマンドを介して宛先統計を一覧表示します。
 
-```{include} /_snippets/run-liferay-portal.md
-```
+1. [Liferay Dockerコンテナ](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
 
-次に、以下の手順を実行します。
+    ```bash
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
 
 1. サンプルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O
     ```
 
     ```bash
@@ -131,7 +130,7 @@
    :lines: 20-37
 ```
 
-`w3r2-charlie-impl`モジュールの`W3R2CharlieOSGiCommands`は、それが提供する`w3r2:listDestinationStats` Gogoシェルコマンドを使用して宛先統計をログに記録します。 `W3R2CharlieOSGiCommands`の`listDestinationStats()`メソッドが宛先統計を取得する方法を調べます。
+`w3r2-charlie-impl`モジュールの`W3R2CharlieOSGiCommands`は、それが提供する`w3r2:listDestinationStats`Gogoシェルコマンドを使用して宛先統計をログに記録します。 `W3R2CharlieOSGiCommands`の`listDestinationStats()`メソッドが宛先統計を取得する方法を調べます。
 
 ```{literalinclude} ./tuning-messaging-performance/resources/liferay-w3r2.zip/w3r2-charlie-impl/src/main/java/com/acme/w3r2/charlie/internal/osgi/commands/W3R2CharlieOSGiCommands.java
    :language: java
@@ -151,11 +150,9 @@
 
 これと同じAPIを使用してメッセージの宛先を監視できます。
 
-<a name="monitoring-messaging" />
-
 ## メッセージングの監視
 
-メッセージングAPIでは、宛先でのメッセージングパフォーマンスをその設定に応じて監視することができます。 次の表に、宛先設定とメッセージング統計にアクセスするためのAPIメソッドを示します。
+メッセージングAPIは、宛先の設定に応じたメッセージングパフォーマンスの監視を容易にします。 次の表に、宛先設定とメッセージング統計にアクセスするためのAPIメソッドを示します。
 
 **宛先設定：**
 
@@ -181,20 +178,16 @@
 
 宛先統計を調べた後、宛先を再構成することでパフォーマンスの向上を試みることができます。
 
-<a name="changing-destination-type" />
-
 ## 宛先タイプの変更
 
 シリアル宛先を使用していて、メッセージが一部のメッセージリスナーに十分な速度で到達しない場合は、最大スレッドプールサイズを増やすか（以下で説明します）、パラレル宛先タイプに切り替えてみてください。 メッセージバスは、スレッドプールのスレッドを使用して、パラレル宛先メッセージリスナーを同時に処理します。
 
-現在の [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) を必要なタイプの1つに置き換えることで、宛先タイプを切り替えることができます。 該当する`DestinationConfiguration`メソッドを使用して、新しいパラレルまたはシリアルの`DestinationConfiguration`を作成します。
+現在の[`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java)を必要なタイプの1つに置き換えることで、宛先タイプを切り替えることができます。 該当する`DestinationConfiguration`メソッドを使用して、新しいパラレルまたはシリアルの`DestinationConfiguration`を作成します。
 
 * `createParallelDestinationConfiguration(String)`
 * `createSerialDestinationConfiguration(String)`
 
-詳細については、 [Reconfigure the Example Destination](#reconfigure-the-example-destination) を参照してください。
-
-<a name="configuring-the-message-queue-and-thread-pool" />
+詳細については、[Reconfigure the Example Destination](#reconfigure-the-example-destination)を参照してください。
 
 ## メッセージキューとスレッドプールの構成
 
@@ -204,7 +197,7 @@
 
 メッセージバスは、宛先のスレッドプールからメッセージリスナー処理スレッドを引き出します。 プールには、開始サイズと最大サイズがあります。
 
-次の [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) メソッドを使用して、メッセージキューの最大サイズ、拒否された実行ハンドラー、スレッドプールの開始サイズ（コアサイズ）、およびスレッドプールの最大サイズを変更できます。
+次の[`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java)メソッドを使用して、メッセージキューの最大サイズ、拒否された実行ハンドラー、スレッドプールの開始サイズ（コアサイズ）、およびスレッドプールの最大サイズを変更できます。
 
 * `setMaximumQueueSize(int maximumQueueSize)`
 * `setRejectedExecutionHandler(RejectedExecutionHandler rejectedExecutionHandler)`
@@ -212,8 +205,6 @@
 * `setWorkersMaxSize(int workersMaxSize)`
 
 次に、サンプルの宛先を再構成します。
-
-<a name="reconfigure-the-example-destination" />
 
 ## サンプルの宛先を再構成します
 
@@ -320,8 +311,6 @@ pending message count 0, sent message count 2
 ```
 
 これで、宛先でメッセージングを監視し、宛先設定を調整する方法がわかりました。 さまざまな設定をテストして、パフォーマンスを最適化できます。
-
-<a name="additional-information" />
 
 ## 追加情報
 

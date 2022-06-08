@@ -23,7 +23,7 @@ sharing-forms-and-managing-submissions/redirecting-users-on-form-submission.md
 ```
 
 - [フォームの共有](./sharing-forms-and-managing-submissions/sharing-forms.md)
-- [フォームエントリーの管理](./sharing-forms-and-managing-submissions/managing-form-entries.md)
+- [フォームエントリの管理](./sharing-forms-and-managing-submissions/managing-form-entries.md)
 - [フォームレポート](./sharing-forms-and-managing-submissions/form-reports.md)
 - [フォーム通知の設定](./sharing-forms-and-managing-submissions/configuring-form-notifications.md)
 - [ワークフローでのフォームの使用](./sharing-forms-and-managing-submissions/using-forms-with-a-workflow.md)

@@ -2,19 +2,15 @@
 
 CCR構成プロセスを支援するために、ここでは本ガイドの段階的な手順に従った設定例を示します。 これらの構成は可能な限り一般的なものになっていますが、環境に合わせてパスやポートなどを調整する必要があります。 さらに、インストールを完了するには特定の手順を手動で実行する必要があるため、これらの手順は段階的な手順に代わるものではありません。
 
-以下の構成は、インストールでX-Pack Securityを介した暗号化通信（TLS/SSL）とユーザー認証を有効にすることを前提としています。 詳しくは、 [Elasticsearchの保護](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md) を参照してください。
+以下の構成は、インストールでX-Pack Securityを介した暗号化通信（TLS/SSL）とユーザー認証を有効にすることを前提としています。 詳しくは、[Securing Elasticsearch](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)を参照してください。
 
 ```{tip}
-   '<../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md>`_ は、ファイルが1つのノードにデプロイされると同時に、DXPクラスタ全体に伝播されます。 しかし、各クラスタノードには同一の構成を用意することが最善の方法です。 
+[.configファイルで提供される設定値](../../../system-administration/configuring-liferay/configuration-files and-factories/using-configuration-files.md) は、ファイルが単一のノードにデプロイされるとすぐにDXPクラスタ全体にプロパゲートされます。 しかし、各クラスタノードには同一の構成を用意することが最善の方法です。 
 ```
-
-<a name="remote-dxp-cluster-node-configurations" />
 
 ## リモートDXPクラスターノードの設定
 
 これらの構成ファイルは`［Remote Liferay Home］/osgi/configs`にデプロイされます。
-
-<a name="elasticsearch-configuration" />
 
 ### Elasticsearch の構成
 
@@ -60,10 +56,8 @@ transportSSLEnabled=B"true"
 ```
 
 ```{tip}
-   Liferay DXP 7.3では、X-Packセキュリティ設定ファイルは必要ありません。 セキュリティの設定は、各コネクションの.configファイルで行います。 この値は、すべてのLiferayノードで同一でなければなりません。
+Liferay DXP 7.3では、X-Packセキュリティ設定ファイルは必要ありません。 セキュリティの設定は、各コネクションの`.config`ファイルで行います。 この値は、すべてのLiferayノードで同一でなければなりません。
 ```
-
-<a name="elasticsearch-connection-configuration" />
 
 ### Elasticsearch接続設定
 
@@ -85,7 +79,7 @@ truststoreType="pkcs12"
 ```
 
 ```{tip}
-   Liferay DXP 7.1/7.2の場合、リモート接続を設定するために ``ElasticsearchConfiguration.config`` と ``XPackSecurityConfiguration.config`` ファイルを使用しました。
+Liferay DXP 7.1/7.2 の場合、リモート接続を設定するために `ElasticsearchConfiguration.config` と `XPackSecurityConfiguration.config` ファイルを使用しました。
 ```
 
 [DXP 7.3 only] 読み取り専用の接続ファイル名です。 `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConnectionConfiguration-ccr.config`となります。
@@ -124,16 +118,11 @@ certificateFormat="pkcs12"
 sslKeystorePassword="liferay"
 sslKeystorePath="/PATH/TO/elastic-nodes.p12"
 ```
-
-<a name="local-dxp-cluster-node-configurations" />
-
 ## ローカルDXPクラスターノードの構成
 
 これらの構成ファイルは`［Local Liferay Home］/osgi/configs`にデプロイされます。
 
 リモートDXPノードに提供したローカルDXPノードに同一のElasticsearch 7構成（接続構成ファイルを含む）を提供します。
-
-<a name="local-dxp-cluster-node-ccr-module-configurations" />
 
 ### ローカルDXPクラスターノードCCRモジュールの構成
 
@@ -141,16 +130,14 @@ sslKeystorePath="/PATH/TO/elastic-nodes.p12"
 
 次の値を設定します。
 
-［***Read from Local Clusters**］ チェックボックスをオンにする
-［***Local Cluster Configurations**］ プロパティに値 **localhost:9080,ccr** を設定する
+* _［Read from Local Clusters］_チェックボックスをオンにする
+* _［Local Cluster Configurations］_プロパティに値_localhost:9080,ccr_を設定する
 
 ![システム設定からCCRを設定します。](./ccr-basic-use-case-config-reference/images/01.png)
 
 ```{important}
-   ここでは決してリモートデータセンターに値を設定しないでください（例では、``localhost:8080,remote``となります）。 これを設定すると、同じ名前のリーダーインデックスがすでに存在するリモートクラスタにフォロワーインデックスが作成されます。
+ここでは、決してリモートデータセンターに値を設定しないでください（例では、`localhost:8080,remote`となります）。 これを設定すると、同じ名前のリーダーインデックスがすでに存在するリモートクラスタにフォロワーインデックスが作成されます。
 ```
-
-<a name="leader-elasticsearch-cluster-node-configurations" />
 
 ## リーダーElasticsearchクラスターノードの構成
 
@@ -186,8 +173,6 @@ xpack.security.http.ssl.truststore.password: liferay
 # For Kibana
 xpack.monitoring.collection.enabled: true
 ```
-
-<a name="follower-elasticsearch-cluster-node-configurations" />
 
 ## フォロワーElasticsearchクラスターノードの構成
 

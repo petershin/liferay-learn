@@ -1,3 +1,3 @@
 # Angularの使用
 
-Coming soon!
+近日公開！

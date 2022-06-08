@@ -1,12 +1,13 @@
-## 開発者ガイド
+# 開発者ガイド
 
 ```{toctree}
 :maxdepth: 3
 ```
-Coming Soon!
 
-* Enabling Recycle Bin in Service Builder
-* Restoring Entries
-* Implementing Undo
-* Moving and Restoring Parent Entities
-* Resolving Recycling Conflicts
+近日公開!
+
+* Service Builderでゴミ箱を有効にする
+* エントリーの復元
+* ［Undo］の実装
+* 親エンティティの移動と復元
+* リサイクル競合の解決

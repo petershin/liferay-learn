@@ -3,10 +3,8 @@
 Liferay DXP 7.0以降、Liferayはデータベースベンダーがネイティブに提供する機能を優先して、独自の物理パーティショニング実装（シャーディングとも呼ばれる）を削除しました。 シャード化されたインストールをDXP 7.0以降にアップグレードするには、シャードと同じ数のシャード化されていないLiferay DXPインストール（サーバー）に移行する必要があります。 これらの手順では、以前にシャード化されたデータを使用するように新しいLiferay DXPサーバーを構成する方法を説明します。
 
 ```{note}
-   Liferay continues to support its logical partitioning capabilities (also known as virtual instances).
+Liferayは、論理パーティション機能（仮想インスタンスとも呼ばれます）を引き続きサポートします。
 ```
-
-<a name="add-configurations-before-the-data-upgrade" />
 
 ## データのアップグレードの前に構成を追加する
 
@@ -33,7 +31,7 @@ Liferay DXP 7.0以降、Liferayはデータベースベンダーがネイティ�
     jdbc.two.password=[the password]
     ```
 
-2.  各サーバーの`portal-upgrade-database.properties`でJDBCの **デフォルトの** 接続プロパティを設定して、関連するシャードを指定します。
+1. 各サーバーの`portal-upgrade-database.properties`でJDBCの_デフォルトの_接続プロパティを設定して、関連するシャードを指定します。
 
     * デフォルト以外の各シャードデータベースに元のJDBCプロパティを追加します。 たとえば、シャード`1`の元のプロパティが`jdbc.one`から始まっているとします。
 
@@ -53,17 +51,15 @@ Liferay DXP 7.0以降、Liferayはデータベースベンダーがネイティ�
     jdbc.default.password=[the password]
     ```
 
-<a name="upgrade-and-update-properties" />
-
 ## プロパティのアップグレードと更新
 
-データベースのアップグレードを実行するときは、デフォルトのシャードを最初にアップグレードしてから、デフォルト以外の各シャードをアップグレードします。 データベースアップグレードの実行の詳細は、 [データベースアップグレードツールの使用](../upgrade-basics/using-the-database-upgrade-tool.md) を参照してください。
+データベースのアップグレードを実行するときは、デフォルトのシャードを最初にアップグレードしてから、デフォルト以外の各シャードをアップグレードします。 データベースアップグレードの実行の詳細については、[データベースアップグレードツールの使用](../upgrade-basics/using-the-database-upgrade-tool.md)を参照してください。
 
 データベースのアップグレードが完了したら、アプリケーションサーバーの構成を次のように変更します。
 
-1.  各サーバーの`portal-ext.properties`で、`portal-upgrade-database.properties`で指定したJDBCの **デフォルトの** プロパティを使用します（上記の **デフォルトの** プロパティを参照）。
+1. 各サーバーの`portal-ext.properties`で、`portal-upgrade-database.properties`で指定したJDBCの_デフォルトの_プロパティを使用します（上記の_デフォルトの_プロパティを参照）。
 
-1. デフォルトのシャードデータベースの`jdbc.default`プロパティのみを残して、デフォルト以外のシャードJDBCのプロパティをデフォルトのシャードサーバーの`portal-ext.properties`ファイルから削除します。 例:
+1. デフォルトのシャードデータベースの`jdbc.default`プロパティのみを残して、デフォルト以外のシャードJDBCのプロパティをデフォルトのシャードサーバーの`portal-ext.properties`ファイルから削除します。 たとえば、
 
     古いJDBCプロパティ：
 
@@ -95,4 +91,4 @@ Liferay DXP 7.0以降、Liferayはデータベースベンダーがネイティ�
 
 これらのすべての手順を完了すると、DXPのアップグレードとともに、シャード化された環境から別のLiferay DXPサーバー上の仮想インスタンスに移行されます。
 
-アップグレードを完了するためのガイダンスについては、 [アップグレードの基本](../upgrade-basics.md) を参照してください。
+アップグレードを完了するためのガイダンスについては、[Upgrade Basics](../upgrade-basics.md)を参照してください。

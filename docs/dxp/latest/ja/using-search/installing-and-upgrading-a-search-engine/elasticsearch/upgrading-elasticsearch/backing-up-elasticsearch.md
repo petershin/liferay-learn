@@ -1,47 +1,53 @@
 # Elasticsearchのバックアップ
 
-[Elasticsearchレプリカ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html#index-modules-settings) は 、ノードがダウンするのを防ぎますが、壊滅的な障害が発生した場合には役立ちません。 その時に役立つのは、適切なバックアップ習慣だけです。
+[Elasticsearchレプリカ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html#index-modules-settings)は 、ノードがダウンするのを防ぎますが、壊滅的な障害が発生した場合には役立ちません。 その時に役立つのは、適切なバックアップ習慣だけです。
 
-Elasticsearchインデックスをバックアップして復元のテストを行う適切な機会は、[アップグレード](./upgrading-search-for-liferay-73.md)前です。 実際、 [検索の調整インデックス](#backing-up-and-restoring-search-tuning-indexes) のスナップショットを使用して、新しいElasticsearchサーバーをセットアップするときに、以前の同義語セットと結果ランキングのインデックスを再作成できます。 このアプローチを試みる前に、 [スナップショットとバージョンの復元の互換性](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html#snapshot-restore-version-compatibility) に関するElasticsearchのドキュメントを読んでください。
+## アップグレード前のインデックスのバックアップ
+
+たとえインデックスされたデータがLiferayのデータベースから再インデックスすることで復元できるとしても、すべてのアップグレードシナリオでインデックスのバックアップを取るのがベストプラクティスです。 アプリ固有のインデックスの [スナップショットを取ること](#backing-up-and-restoring-indexes-used-for-primary-storage) （Liferay DXP 7.2と7.3のLiferayの検索の調整インデックスのように）は、データが検索インデックスにのみ保存されている場合に必須となります。 スナップショットは、新しいElasticsearchサーバをセットアップする際に、以前のデータ（同義語セットや結果ランキングなど）を復元するために使用することができます。 このアプローチを試みる前に、[スナップショットとバージョンの復元の互換性](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html#snapshot-restore-version-compatibility)に関するElasticsearchのドキュメントを読んでください。
+
+ここでは、代表的なアップグレードシナリオを紹介します。
+
+* Liferayとは無関係にElasticsearchクラスタをアップグレードする場合：すべてのインデックスのバックアップを推奨します。 スナップショットからのデータの復元は、すべてのインデックスがシステムに残っているため、必要ありません。
+* Liferayをアップグレードし、同じElasticsearchクラスタに接続する場合：すべてのインデックスのバックアップを行うことを推奨します。 スナップショットからのデータの復元は、すべてのインデックスがシステムに残っているため、必要ありません。
+* Liferayをアップグレードし、別のElasticsearchクラスタに接続する場合：すべてのインデックスのバックアップを推奨します。 スナップショットからのリストアは、すべてのプライマリストレージインデックスに必要です。 Liferayの検索の調整機能（結果ランキングと同義語セット）のいずれかを使用している場合、Liferay DXP 7.4へのアップグレード後に、 [Liferayデータベースにインデックスデータをインポートする](upgrading-search-infrastructure.md#importing-the-search-tuning-indexes-in-7-4) ことも必要です。
+
+## Elasticsearchクラスタのバックアップを作成する
 
 ```{tip}
-It's convenient to create and manage snapshots via the [Kibana 7.x UI](https://www.elastic.co/guide/en/kibana/7.x/snapshot-repositories.html) _.
+[Kibana 7.x UI](https://www.elastic.co/guide/en/kibana/7.x/snapshot-repositories.html)からスナップショットを作成・管理できるのは便利です。
 ```
 
 次の3つの手順でElasticsearchクラスターをバックアップし、バックアップの復元をテストします。
 
-1.  リポジトリを作成します
+1. リポジトリを作成します
 
-2.  Elasticsearchクラスターのスナップショットを作成します
+1. Elasticsearchクラスターのスナップショットを作成します
 
-3.  スナップショットから復元します
-
-<!-- end list -->
+1. スナップショットから復元します
 
 ```{note}
-For more detailed information, refer to Elastic's [Elasticsearch administration guide](https://www.elastic.co/guide/en/elasticsearch/guide/master/administration.html) , and in particular to the [Snapshot and Restore module](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) .
+より詳細な情報は、Elastic社の[Elasticsearch管理ガイド](https://www.elastic.co/guide/en/elasticsearch/guide/master/administration.html)、特に[Snapshot and Restoreモジュール](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html)を参照してください。
 ```
 
-<a name="backing-up-indexes-before-upgrading" />
+### リポジトリの作成
 
-## リポジトリの作成
+まず、スナップショットを保存する[リポジトリを作成](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html)します。 サポートされているリポジトリタイプは次のとおりです。
 
-まず、スナップショットを保存する [リポジトリを作成](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html) します。 サポートされているリポジトリタイプは次のとおりです。
+* ネットワークファイルシステムやNASなどの共有ファイルシステム
+* Amazon S3
+* HDFS（Hadoop Distributed File System）
+* Azureクラウド
 
-  - ネットワークファイルシステムやNASなどの共有ファイルシステム
-  - Amazon S3
-  - HDFS（Hadoop Distributed File System）
-  - Azureクラウド
+スナップショットを共有ファイルシステムに保存する場合は、最初に、[`path.repo`設定](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html#snapshots-filesystem-repository)を使用して、各ノードの`elasticsearch.yml`に共有ファイルシステムへのパスを登録します。 例:
 
-スナップショットを共有ファイルシステムに保存する場合は、最初に、 [`path.repo`設定](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html#snapshots-filesystem-repository) を使用して、各ノードの`elasticsearch.yml`に共有ファイルシステムへのパスを登録します。 例:
-
-``` yaml
+```yaml
 path.repo: ["path/to/shared/file/system/"]
 ```
 
 リポジトリをホストするフォルダへのパスを登録した後（フォルダが存在していることを確認してください）、`PUT`コマンドでリポジトリを作成します。 例:
 
-``` bash
+```bash
 PUT /_snapshot/test_backup
 {
   "type": "fs",
@@ -55,44 +61,42 @@ PUT /_snapshot/test_backup
 
 リポジトリが正しく作成されていれば、コマンドは次のような結果を返します。
 
-``` json
+```json
 {"acknowledged":true}
 ```
 
 リポジトリが存在しているので、スナップショットを作成します。
 
-<a name="creating-elasticsearch-cluster-backups" />
+### クラスターのスナップショットを取得する
 
-## クラスターのスナップショットを取得する
+最も簡単なスナップショットのアプローチは、[クラスター内のすべてのインデックスのスナップショット](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-take-snapshot.html)を作成することです。 例:
 
-最も簡単なスナップショットのアプローチは、 [クラスター内のすべてのインデックスのスナップショット](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-take-snapshot.html) を作成することです。 例:
-
-``` bash
+```bash
 PUT /_snapshot/test_backup/snapshot_1
 ```
 
 スナップショットコマンドが成功すると、次の結果が返されます。
 
-``` json
+```json
 {"accepted":true}
 ```
 
-スナップショットを特定のインデックスに制限することもできます。 たとえば、Liferay Enterprise Search Monitoringを使用しているが、スナップショットからモニタリングインデックスを除外したい場合があります。 スナップショットに含めるインデックスを明示的に宣言できます。 例:
+スナップショットを特定のインデックスに制限することもできます。 たとえば、Liferay Enterprise Searchモニタリングを使用しているが、スナップショットからモニタリングインデックスを除外したい場合があります。 スナップショットに含めるインデックスを明示的に宣言できます。 例:
 
-``` bash
+```bash
 PUT /_snapshot/test_backup/snapshot_2
 { "indices": "liferay-0,liferay-20116" }
 ```
 
 すべてのインデックスとインデックスメトリクスを一覧表示するには、次のコマンドを実行します。
 
-``` bash
+```bash
 GET /_cat/indices?v
 ```
 
 インデックスメトリクスの例：
 
-``` bash
+```bash
 health status index                                              uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 green  open   liferay-20101-search-tuning-rankings               ykbNqPjkRkq7aCYnc7G20w   1   0          7            0      7.7kb          7.7kb
 green  open   liferay-20101-workflow-metrics-tokens              DF-1vq8IRDmFAqUy4MHHPQ   1   0          4            0       26kb           26kb
@@ -107,18 +111,18 @@ green  open   liferay-20101-search-tuning-synonyms               pAUN8st1RmaV1Nx
 ```
 
 ```{note}
-Elasticsearch uses a *smart snapshots* approach. To understand what that means, consider a single index. The first snapshot includes a copy of the entire index, while subsequent snapshots only include the delta between the first, complete index snapshot and the current state of the index.
+Elasticsearchは、*スマートスナップショット*アプローチを採用しています。 その意味を理解するために、1つのインデックスを考えてみましょう。 最初のスナップショットにはインデックス全体のコピーが含まれ、それ以降のスナップショットには、最初の完全なインデックススナップショットと現在のインデックスの状態との差分のみが含まれます。
 ```
 
 最終的には、リポジトリに多数のスナップショットが作成されることになります。スナップショットに名前を付けたとしても、スナップショットに含まれているものを忘れてしまう可能性があります。 Elasticsearch APIを使用して説明を取得できます。 例:
 
-``` bash
+```bash
 GET /_snapshot/test_backup/snapshot_1
 ```
 
 以下が返されます
 
-``` json
+```json
 {"snapshots":[
     {"snapshot":"snapshot_1",
     "uuid":"WlSjvJwHRh-xlAny7zeW3w",
@@ -146,25 +150,23 @@ GET /_snapshot/test_backup/snapshot_1
 
 スナップショットを破棄したい場合は、`DELETE`コマンドを使用します。
 
-``` bash
+```bash
 DELETE /_snapshot/test_backup/snapshot_1
 ```
 
 スナップショットにすべてのインデックスを含めると、多くの時間とストレージを消費する可能性があります。 誤ってスナップショットの作成を開始した場合（例えば、特定のインデックスにフィルターをかけようとしたが、すべてのインデックスを含めてしまったなど）、`DELETE`コマンドを使用してスナップショットの処理をキャンセルすることができます。 名前でスナップショットを削除すると、スナップショットプロセスが終了し、部分的なスナップショットがリポジトリから削除されます。
 
-<a name="test-restoring-from-the-snapshot" />
-
 ## スナップショットからの復元のテスト
 
-壊滅的な障害が発生した場合、スナップショットから [検索インデックスを復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-restore-snapshot.html) することができなければ、スナップショットは何の役にも立ちません。 `_restore` APIを使用して、すべてのスナップショットのインデックスを復元します。
+壊滅的な障害が発生した場合、スナップショットから[検索インデックスを復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-restore-snapshot.html)することができなければ、スナップショットは何の役にも立ちません。 `_restore` APIを使用して、すべてのスナップショットのインデックスを復元します。
 
-``` bash
+```bash
 POST /_snapshot/test_backup/snapshot_1/_restore
 ```
 
 スナップショットインデックスから既存のインデックスにデータを復元する必要がある場合は、別の名前でインデックスを復元してから、データを既存のインデックスに再インデックスします。 復元コマンドを特定のインデックスに制限するには、`indices` オプションを使用します。 `rename_pattern` および `rename_replacement` オプションを使用して、復元されたインデックスの名前を変更します。
 
-``` bash
+```bash
 POST /_snapshot/test_backup/snapshot_1/_restore
 {
     "indices": "liferay-20116",
@@ -175,7 +177,7 @@ POST /_snapshot/test_backup/snapshot_1/_restore
 
 これにより、スナップショットから`liferay-20116`という名前のインデックスのみが復元され、名前が`restored_liferay-20116`に変更されます。 クラスターに復元すると、バックアップされたデータを既存の`liferay-20116`インデックスに復元する`_reindex` API呼び出しを実行するために使用できます。
 
-``` bash
+```bash
 POST _reindex/
 {
     "dest": {
@@ -189,81 +191,79 @@ POST _reindex/
 
 スナップショットプロセスのキャンセルと同様に、`DELETE` コマンドを使用して、誤った復元プロセスをキャンセルすることができます。
 
-``` bash
+```bash
 DELETE /restored_liferay-20116index_3
 ```
 
-本番環境システムでの壊滅的な障害は誰もが望みませんが、スナップショットを取得してインデックスを復元するためのElasticsearchのAPIを使用すれば、障害が発生した場合に検索クラスターを復元できるので安心です。 詳細とオプションについては、Elasticの [スナップショットと復元のドキュメンテーション](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) を参照してください。
+本番環境システムでの壊滅的な障害は誰もが望みませんが、スナップショットを取得してインデックスを復元するためのElasticsearchのAPIを使用すれば、障害が発生した場合に検索クラスターを復元できるので安心です。 詳細とオプションについては、Elasticの[スナップショットと復元のドキュメンテーション](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html)を参照してください。
 
-<a name="backing-up-and-restoring-indexes-used-for-primary-storage" />
+## プライマリストレージに使用するインデックスのバックアップと復元
 
-## 検索の調整インデックスのバックアップと復元
+Elasticsearchインデックスのスナップショットを作成することを強くお勧めします。プライマリストレージ形式として機能するインデックス（Liferay DXP 7.2および7.3の[同義語セット](../../../search-administration-and-tuning/synonym-sets.md)や[結果ランキング](../../../search-administration-and-tuning/result-rankings.md)など）の場合は特にお勧めします。 データベースには、これらのアプリケーションのレコードはありません。
 
-Elasticsearchインデックスのスナップショットを作成することを強くお勧めします。プライマリストレージ形式として機能するインデックス（ [同義語セット](../../../search-administration-and-tuning/synonym-sets.md) や [結果ランキング](../../../search-administration-and-tuning/result-rankings.md) など）の場合は特にお勧めします。 データベースには、これらのアプリケーションのレコードはありません。
+Elasticsearchの[スナップショットおよび復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html)機能を使用して、検索の調整インデックスをバックアップおよび復元できます。
 
-Elasticsearchの [スナップショットおよび復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) 機能を使用して、検索の調整インデックスをバックアップおよび復元できます。
+1. システムのどこかに`elasticsearch_local_backup`というフォルダを作成します。 Elasticsearchがフォルダへの読み取りおよび書き込みアクセス権を持っていることを確認します（例： `/path/to/elasticsearch_local_backup`）。
 
-1.  システムのどこかに`elasticsearch_local_backup`というフォルダを作成します。 Elasticsearchがフォルダへの読み取りおよび書き込みアクセス権を持っていることを確認します（例： `/path/to/elasticsearch_local_backup`）。
+1. 以下を
 
-2.  以下を
-
-    ``` yaml
-    path.repo: [ "/path/to/elasticsearch **local** backup" ]
+    ```yaml
+    path.repo: [ "/path/to/elasticsearch_local_backup" ]
     ```
 
-    Elasticsearchクラスター内の [すべてのマスターノードとデータノード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html#snapshots-filesystem-repository) の`elasticsearch.yml`に追加します。 Elasticsearchをアップグレードする場合は、スナップショットリポジトリへのパスがアップグレード前とアップグレード後のElasticsearch構成で同じであることを確認してください。
+   Elasticsearchクラスター内の[すべてのマスターノードとデータノード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html#snapshots-filesystem-repository)の`elasticsearch.yml`に追加します。 Elasticsearchをアップグレードする場合は、スナップショットリポジトリへのパスがアップグレード前とアップグレード後のElasticsearch構成で同じであることを確認してください。
 
-3.  すべてのElasticsearchノードを再起動します。
+1. すべてのElasticsearchノードを再起動します。
 
-4.  [スナップショットリポジトリを登録します](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html) 。 次の`snapshot` APIリクエストを実行できます（たとえば、Kibanaの開発ツールコンソールから）。
+1. [スナップショットリポジトリを登録します](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html)。 次の`snapshot` APIリクエストを実行できます（たとえば、Kibanaの開発ツールコンソールから）。
 
-    ``` json
-    PUT / **snapshot/elasticsearch** local_backup
+    ```json
+    PUT /_snapshot/elasticsearch_local_backup
     {
       "type": "fs",
       "settings": {
-        "location": "/path/to/elasticsearch **local** backup"
+        "location": "/path/to/elasticsearch_local_backup"
       }
     }
 
     ```
 
-    新しいElasticsearchバージョンにアップグレードする場合は、アップグレード後のElasticsearchでこれと同じコマンドを使用して、スナップショットリポジトリを登録できます。
+   新しいElasticsearchバージョンにアップグレードする場合は、アップグレード後のElasticsearchでこれと同じコマンドを使用して、スナップショットリポジトリを登録できます。
 
-5.  [スナップショットを作成します](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-take-snapshot.html) ：
+1. [スナップショットを作成します](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-take-snapshot.html)：
 
-    ``` json
-    PUT / **snapshot/elasticsearch** local **backup/snapshot1?wait** for_completion=true
+    ```json
+    PUT /_snapshot/elasticsearch_local_backup/snapshot1?wait_for_completion=true
     {
       "indices": "liferay-20101-search-tuning*",
       "ignore_unavailable": true,
-      "include **global** state": false
+      "include_global_state": false
     }
     ```
 
-    すべてのLiferayインデックスのスナップショットを作成する場合は、代わりに`"indices": "liferay*,workflow-metrics*"`を使用できます。 アップグレードシナリオを使用している場合は、同義語セットインデックスや結果ランキングインデックスなど、データベースから再作成できないインデックスのみのスナップショットを作成するほうが合理的な場合があります。
+   すべてのLiferayインデックスのスナップショットを作成する場合は、代わりに`"indices": "liferay*,workflow-metrics*"`を使用できます。 アップグレードシナリオを使用している場合は、Liferay DXP 7.2および7.3の同義語セットインデックスや結果ランキングインデックスなど、データベースから再作成できないインデックスのみのスナップショットを作成するほうが合理的な場合があります。
 
-6.  別の名前を使用してスナップショットから特定のインデックスを [復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-restore-snapshot.html) するには、次のような`restore` API呼び出しを実行します。
+1. 別の名前を使用してスナップショットから特定のインデックスを[復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-restore-snapshot.html)するには、次のような`restore` API呼び出しを実行します。
 
-    ``` json
-    POST / **snapshot/elasticsearch** local **backup/snapshot1/** restore
+    ```json
+    POST /_snapshot/elasticsearch_local_backup/snapshot1/_restore
     {
       "indices": "liferay-20101-search-tuning-synonyms,liferay-20101-search-tuning-rankings",
       "ignore_unavailable": true,
-      "include **global** state": false,
+      "include_global_state": false,
       "rename_pattern": "(.+)",
-      "rename **replacement": "restored** $1",
+      "rename_replacement": "restored_$1",
       "include_aliases": false
     }
     ```
 
-    ここで、`indices`には、復元元のスナップショットされているインデックス名を設定します。 上記の呼び出しによるインデックスは、`rename_pattern` および `rename_replacement` 正規表現に従って、`restored_liferay-20101-search-tuning-rankings` および `restored_liferay-20101-search-tuning-synonyms` として復元されます。
+   ここで、`indices`には、復元元のスナップショットされているインデックス名を設定します。 上記の呼び出しによるインデックスは、`rename_pattern` および `rename_replacement` 正規表現に従って、`restored_liferay-20101-search-tuning-rankings` および `restored_liferay-20101-search-tuning-synonyms` として復元されます。
 
 Sidecar/Embeddedモードで実行中に同義語セットまたは結果ランキングを追加した場合、Elasticsearch 7へのリモートモード接続を構成して完全なインデックス再作成を実行すると、これらの検索の調整が消えます。
 
-既存の **検索の調整** インデックスドキュメントを復元するには、以下のようにElasticsearchの [インデックスの再構築 API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex) を使用できます。
+既存の_検索の調整_インデックスドキュメントを復元するには、以下のようにElasticsearchの[インデックスの再構築 API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex)を使用できます。
 
-``` json
+```json
 POST _reindex/
 {
  "dest": {
@@ -281,22 +281,18 @@ POST _reindex/
 
 すぐに使用できる検索の調整インデックス名は、Liferayのバージョンとパッチレベルによって異なります。
 
-| Liferayのバージョンとパッチ         | 検索の調整インデックス                                                                                                      |
-| :--- | :--- |
-| Liferay DXP 7.2 SP2/FP5以下 | `liferay-search-tuning-rankings`<br />`liferay-search-tuning-synonyms-liferay-<companyId>`           |
-| Liferay DXP 7.2 SP3/FP8以降 | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
-| Liferay DXP 7.3、すべてのパッチ   | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
+| Liferayのバージョンとパッチ                | 検索の調整インデックス                                                                                                      |
+|:-------------------------------- |:---------------------------------------------------------------------------------------------------------------- |
+| Liferay DXP 7.2 SP2/FP5以下        | `liferay-search-tuning-rankings`<br />`liferay-search-tuning-synonyms-liferay-<companyId>`           |
+| Liferay DXP 7.2 SP3/FP8以降        | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
+| Liferay DXP 7.3 GA1+ および7.4 GA1+ | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
 
-`<companyId>`（例えば`20101`）は、データベース内の指定された`Company`レコードに属しています。 UIでは **インスタンスID** として表示され、[仮想インスタンス](../../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)を表します。
-
-<a name="whats-next" />
+`<companyId>`（例えば`20101`）は、データベース内の指定された`Company`レコードに属しています。 UIでは_インスタンスID_として表示され、[仮想インスタンス](../../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)を表します。
 
 ## 次のステップ
 
 [Elasticsearchをアップグレード](./upgrading-to-elasticsearch-7.md)する場合は、今すぐアップグレードできます。
 
-<a name="additional-information" />
-
 ## 追加情報
 
-[Search Administration and Tuning](../../../search_administration_and_tuning.rst)
+[検索管理と調整](../../../search-administration-and-tuning.md)

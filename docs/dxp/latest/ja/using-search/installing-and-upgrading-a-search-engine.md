@@ -6,11 +6,9 @@
 installing-and-upgrading-a-search-engine/installing-a-search-engine.md
 installing-and-upgrading-a-search-engine/elasticsearch.md
 installing-and-upgrading-a-search-engine/solr.md
-
+```
 - [検索エンジンのインストール](./installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
-- [None](./installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md)
-
-<a name="elasticsearch" />
+- [Elasticsearchのアップグレード](./installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md)
 
 ## Elasticsearch
 
@@ -24,9 +22,9 @@ installing-and-upgrading-a-search-engine/solr.md
 - [Elasticsearchコネクターの設定リファレンス](installing-and-upgrading-a-search-engine/elasticsearch/elasticsearch-connector-configuration-reference.md)
 - [Liferay Elasticsearch コネクタの高度な設定](installing-and-upgrading-a-search-engine/elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md)
 
-<a name="solr" />
-
 ## Solr
+
+Solr は Liferay 7.3 で非推奨となり、7.4 で削除されました。
 
 - [Solrの制限事項](installing-and-upgrading-a-search-engine/solr/solr-limitations.md)
 - [Solrのインストール](installing-and-upgrading-a-search-engine/solr/installing-solr.md)

@@ -1,6 +1,6 @@
 # OSGiバンドルとnpmパッケージ構造
 
-JavaScriptモジュールをデプロイするには、プロジェクトの `node_modules` フォルダーから抽出されたnpm依存関係でOSGiバンドルを作成し、それらを [Liferay AMD Loader](https://github.com/liferay/liferay-amd-loader) 動作するように変更する必要があります。 liferay-npm-bundlerはこのプロセスを自動化し、以下のようなバンドルを作成します。
+JavaScriptモジュールをデプロイするには、プロジェクトの `node_modules` フォルダーから抽出されたnpm依存関係でOSGiバンドルを作成し、それらを [Liferay AMD Loader](https://github.com/liferay/liferay-amd-loader)動作するように変更する必要があります。 liferay-npm-bundlerはこのプロセスを自動化し、以下のようなバンドルを作成します。
 
 - `my-bundle/`
     - `META-INF/`
@@ -43,8 +43,6 @@ JavaScriptモジュールをデプロイするには、プロジェクトの `no
 `node_modules` 内のパッケージはnpmツールと同じ形式で、標準の `node_modules` フォルダーから（AMDへの変換などの処理後に）コピーできます。 `node_modules` フォルダーは、任意の数のnpmパッケージ（同じパッケージの異なるバージョンであっても）を保持するか、npmパッケージをまったく保持できません。
 
 これでnpmパッケージを含むOSGiバンドルの構造がわかったと思うので、津次はliferay-npm-bundlerがインラインJavaScriptパッケージを処理する方法について説明します。
-
-<a name="inline-javascript-packages" />
 
 ## インラインJavaScriptパッケージ
 

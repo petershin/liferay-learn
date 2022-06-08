@@ -2,13 +2,11 @@
 
 JBoss EAPにインストールするには、DXP WARのインストール、依存関係のインストール、JBossの設定、およびJBossへのDXPのデプロイが必要です。 データベースとメールサーバーの接続も設定する必要があります。
 
-<a name="prerequisites" />
-
 ## 前提条件
 
-Liferay DXPにはJava JDK 8または11が必要です。 詳細は、 [互換性マトリクス](https://help.liferay.com/hc/ja/articles/360049238151) を参照してください。
+Liferay DXPにはJava JDK 8または11が必要です。 詳細は、[互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360049238151)を参照してください。
 
-これらのファイルを [ヘルプセンター](https://customer.liferay.com/downloads) （サブスクリプション）または [Liferayコミュニティダウンロード](https://www.liferay.com/downloads-community) からダウンロードします。
+これらのファイルを [ヘルプセンター](https://customer.liferay.com/downloads) （サブスクリプション）または [Liferayコミュニティダウンロード](https://www.liferay.com/downloads-community)からダウンロードします。
 
 * DXP WARファイル
 * OSGi依存関係のZIPファイル
@@ -20,27 +18,21 @@ Liferay DXPにはJava JDK 8または11が必要です。 詳細は、 [互換性
 
 `$JBOSS_HOME`：JBossサーバーフォルダー。 通常、`jboss-eap-[version]`という名前です。
 
-<a name="installing-the-dxp-war" />
-
 ## DXP WARのインストール
 
 1. クリーンなJBossインストールを開始していて、`$JBOSS_HOME/standalone/deployments/ROOT.war`フォルダが存在する場合は、そのすべてのサブフォルダとファイルを削除します。
 1. DXP WARファイルを`$JBOSS_HOME/standalone/deployments/ROOT.war`フォルダに解凍します（このフォルダが存在しない場合は作成します）。
 
-<a name="installing-dependencies" />
-
 ## 依存関係のインストール
 
-1. OSGi Dependencies ZIPファイルを `［Liferay Home]/osgi` フォルダーに解凍します（このフォルダーが存在しない場合は作成します）。 LiferayのOSGiランタイムは、これらのモジュールに依存しています。
+1. OSGi Dependencies ZIPファイルを `［Liferay Home］/osgi` フォルダーに解凍します（このフォルダーが存在しない場合は作成します）。 LiferayのOSGiランタイムは、これらのモジュールに依存しています。
 1. DXP 7.4+ WARファイルには、MariaDBおよびPostgreSQLのドライバーが含まれています。 以前のWARにはそれらがありません。 7.4以降のWARに、使用中のサポートされているデータベースのドライバーがない場合は、データベースベンダーのJDBC JARファイルをダウンロードして、`$JBOSS_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib`フォルダーに配置します。
 
-    サポートされているデータベースの一覧については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/360049238151) を参照してください。
+    サポートされているデータベースの一覧については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360049238151) を参照してください。
 
 ```{note}
 DXPには、テスト目的に役立つHypersonicデータベースが含まれています。 本番環境インスタンスにはHSQLを**使用しないでください**。
 ```
-
-<a name="install-dependencies-for-earlier-versions" />
 
 ### 以前のバージョンの依存関係をインストールする
 
@@ -76,11 +68,9 @@ DXP 7.3以前の場合は、次の追加手順に従います。
     <resource-root path="com.liferay.petra.concurrent.jar" />
     ```
 
-<a name="running-dxp-on-jboss-eap-in-standalone-mode-vs-domain-mode" />
-
 ## スタンドアロンモードとドメインモードのJBoss EAPでのDXPの実行
 
-JBoss EAPは、 **スタンドアロン** モードまたは **ドメイン** モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 **ドメイン** と呼ばれます。 スタンドアロンモードとドメインモードの詳細については、 [JBoss EAP Product Documentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes) のこのトピックに関するセクションを参照してください。
+JBoss EAPは、 *スタンドアロン* モードまたは *ドメイン* モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 *ドメイン*と呼ばれます。 スタンドアロンモードとドメインモードの詳細については、 [JBoss EAP Product Documentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes)のこのトピックに関するセクションを参照してください。
 
 DXPは、スタンドアロンモードで実行する場合はJBoss EAPをサポートしますが、ドメインモードで実行する場合はサポートしません。 JBossはファイル（展開または非展開）をコピーして管理対象デプロイメントのコンテンツを管理するため、DXPの自動展開は管理対象デプロイメントでは機能しません。 これにより、JSPフックとExtプラグインが意図したとおりに機能しなくなります。 たとえば、DXPのJSPオーバーライドメカニズムはアプリケーションサーバーに依存しているため、JSPフックは管理対象ドメインモードで実行されているJBoss EAPでは機能しません。 ただし、JSPフックとExtプラグインは非推奨であるため、使用していない可能性があります。
 
@@ -89,8 +79,6 @@ DXPは、スタンドアロンモードで実行する場合はJBoss EAPをサ�
 ```{note}
 これにより、DXPが複数のJBossサーバー上のクラスター環境で実行されるのを防ぐことはできません。 スタンドアロンモードで実行されているJBoss EAPサーバーで実行されているDXPインスタンスのクラスターを設定できます。 詳細については、[クラスタリングの記事](../../setting-up-liferay/clustering-for-high-availability.md) を参照してください。
 ```
-
-<a name="configuring-jboss" />
 
 ## JBossの構成
 
@@ -113,7 +101,7 @@ JBossの構成手順は次のとおりです。
     ```xml
     <system-properties>
         <property name="org.apache.catalina.connector.URI_ENCODING" value="UTF-8" />
-        <property name="org.apache.catalina.connector.USE **BODY** ENCODING **FOR** QUERY_STRING" value="true" />
+        <property name="org.apache.catalina.connector.USE_BODY_ENCODING_FOR_QUERY_STRING" value="true" />
     </system-properties>
     ```
 
@@ -167,9 +155,9 @@ JBossの構成手順は次のとおりです。
 
 `$JBOSS_HOME/ bin /` フォルダーで、スタンドアロンドメインの構成スクリプトファイル `standalone.conf` を変更します。
 
-* ファイルのエンコーディングを `UTF-8`に設定します
-* ユーザーのタイムゾーンを `GMT`に設定します
-* 優先プロトコルスタックを設定します
+* ファイルのエンコーディングを `UTF-8`に設定します。
+* ユーザーのタイムゾーンを `GMT`に設定します。
+* 優先プロトコルスタックを設定します。
 * 利用可能なデフォルトのメモリ容量を増やします。
 
 ```{important}
@@ -221,10 +209,8 @@ Javaオプションとメモリ引数について以下に説明します。
 | `-XX:SurvivorRatio`    | 新しいスペースとSurvivor領域の比率。 Survivor領域は、古い世代の領域に昇格する前に、若い世代のオブジェクトを保持します。   |
 
 ```{note}
-DXPのインストール後、これらの構成（これらのJVMオプションを含む）をさらに調整して、パフォーマンスを向上させることができます。 詳細については、 [Liferayの調整](../../setting-up-liferay/tuning-liferay.md) および [JVMの調整](../../setting-up-liferay/tuning-your-jvm.md) を参照してください。
+DXPのインストール後、これらの構成（これらのJVMオプションを含む）をさらに調整して、パフォーマンスを向上させることができます。 詳細については、[Tuning Liferay](../../setting-up-liferay/tuning-liferay.md)および[Tuning Your JVM](../../setting-up-liferay/tuning-your-jvm.md)を参照してください。
 ```
-
-<a name="using-the-ibm-jdk" />
 
 ### IBM JDKの使用
 
@@ -243,8 +229,6 @@ JBossサーバーでIBM JDKを使用する場合は、以下の追加手順を�
 `</pre>
 
 追加されたパスは、ポータルのデプロイメントの例外と画像のアップロードの問題を解決します。
-
-<a name="connect-to-a-database" />
 
 ## データベースに接続する
 
@@ -270,7 +254,7 @@ JBossを使用してデータソースを管理する場合は、次の手順に
     データベースのURL、ユーザー名、パスワードを適切な値に置き換えてください。
 
     ```{note}
-    データソース`jndi-name`を変更する必要がある場合は、 `<default-bindings>` タグ内の`datasource`要素を編集してください。
+    データソース`jndi-name`を変更する必要がある場合は、`<default-bindings>`タグ内の`datasource`要素を編集してください。
     ```
 
 1. `<datasources>` 要素内にもある `standalone.xml` ファイルの `<drivers>` 要素にドライバーを追加します。
@@ -311,8 +295,6 @@ JBossを使用してデータソースを管理する場合は、次の手順に
 
 これで、データソースが構成され、データベースに接続する準備ができました。
 
-<a name="connect-to-a-mail-server" />
-
 ## メールサーバーに接続する
 
 データベース構成と同様に、構成するのが最も簡単なメールセッションはDXPです。 DXPの組み込みのメールセッションを使用する場合は、このセクションをスキップして、コントロールパネルの[メールサーバーに接続](../../setting-up-liferay/configuring-mail.md)してください。
@@ -344,8 +326,6 @@ JBossでメールセッションを設定する場合は、以下の手順に従
     mail.session.jndi.name=java:jboss/mail/MailSession
     ```
 
-<a name="deploying-dxp" />
-
 ## DXPのデプロイ
 
 1. `ROOT.war`デプロイメントをトリガーするには、 `$JBOSS_HOME/ standalone/deployments /` フォルダーに `ROOT.war.dodeploy` という名前の空のファイルを作成します。
@@ -363,18 +343,16 @@ INFO: pass supports: [ES3 keywords as identifiers, getters, reserved words as pr
 current AST contains: [ES3 keywords as identifiers, getters, reserved words as properties, setters, string continuation, trailing comma, array pattern rest, arrow function, binary literal, block-scoped function declaration, class, computed property, const declaration, default parameter, destructuring, extended object literal, for-of loop, generator, let declaration, member declaration, new.target, octal literal, RegExp flag 'u', RegExp flag 'y', rest parameter, spread expression, super, template literal, exponent operator (**), async function, trailing comma in param list, object literals with spread, object pattern rest]
 ```
 
-Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 詳細は、 [Liferay DXPのアクティブ化](../../setting-up-liferay/activating-liferay-dxp.md) を参照してください。
+Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 詳細は、[Activating Liferay DXP](../../setting-up-liferay/activating-liferay-dxp.md)を参照してください。
 
 　 DXPはJBoss EAPで実行されています。
 
-<a name="next-steps" />
-
 ## 次のステップ
 
-[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、\ [DXPでのソリューションの構築\](../../../building_solutions_on_dxp.html) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
+[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、\[DXPでのソリューションの構築\](../../../building_solutions_on_dxp.html)を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
 
 * [マーケットプレイスプラグインのインストール](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [試用期間中のプラグインへのアクセス](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
 * [検索エンジンのインストール](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 * [Liferay DXPの保護](../../securing-liferay.md)
-* [高可用性のためのクラスタリング](../../setting-up-liferay/clustering-for-high-availability.md)
+* [高可用性のクラスタリング](../../setting-up-liferay/clustering-for-high-availability.md)

@@ -4,7 +4,9 @@ Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーション�
 
 LESはデフォルトで有効になっており、追加のインストール手順は必要ありません。 ただし、Liferayの公式サポートや追加特典を受けるためには、LESのアドオン・サブスクリプションを購入する必要があります。 LESアプリケーションのメンテナンスとアップデートは、Fix PackとService Packのリリースを通じて行われます。 LESのサブスクリプションをお持ちでない方は、以下の手順でアクセスを完全に無効にすることができます。
 
-<a name="local-bundle-deactivating-les" />
+```{note}
+[LES Search Experiences](./search-experiences.md) は、Liferay DXP 7.4 Update 5でDXP バンドルに追加されました。 Search Experiencesは、Liferay DXP 7.3において、アドオンアプリケーションとしてカスタマーポータル経由で利用できるようになる予定です。
+```
 
 ## ローカルバンドルLESの無効化
 
@@ -13,8 +15,6 @@ LESアプリケーションは、すべてのLiferay DXP 7.4バンドルでデ�
 ```properties
 enterprise.product.enterprise.search.enabled=false
 ```
-
-<a name="docker-deactivating-les" />
 
 ## Dockerの場合LESの無効化
 
@@ -29,7 +29,7 @@ LESアプリケーションは、すべてのLiferay DXP 7.4のDockerイメー�
 1. 代わりに環境変数でポータル・プロパティを上書きするには、次のように設定します。
 
     ```properties
-    LIFERAY **ENTERPRISE** PERIOD **PRODUCT** PERIOD **ENTEPRISE** PERIOD **SEARCH** PERIOD_ENABLED=false
+    LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_ENTEPRISE_PERIOD_SEARCH_PERIOD_ENABLED=false
     ```
 
 詳しくは、 [コンテナーの設定](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md) を参照してください。

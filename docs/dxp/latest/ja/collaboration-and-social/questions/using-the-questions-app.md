@@ -1,12 +1,12 @@
 # 質問アプリの使用
 
+> 対応可能：Liferay DXP/Portal 7.3以降
+
 質問アプリは、掲示板アプリケーションの新しいUIであり、質問と回答の形式を提示することに重点を置いています。 質問アプリでは、以下の作成が可能です。
 
 **トピック:** 質問が分類されるテーマ **質問:** アプリ内の質問 **回答:** 特定の質問への回答
 
 質問が作成されると、タグを使って他の人が関連するコンテンツを見つけやすくすることもできます。
-
-<a name="adding-a-questions-app-to-a-site" />
 
 ## 質問アプリをサイトに追加する
 
@@ -27,25 +27,21 @@
 Note that only users with the requisite permissions have the ability to create topics.
 -->
 
-<a name="creating-topics" />
-
 ## トピックの作成
 
-1. ［**New Topic**］ ボタンをクリックします。
+1. *［New Topic］*ボタンをクリックします。
 
    ![新しいトピックボタンをクリックして、新しいトピックを作成します。](using-the-questions-app/images/01.png)
 
-1. 新しいトピックにタイトルと説明を付けて、 ［**Create**］ ボタンをクリックします。
+1. 新しいトピックにタイトルと説明を付けて、*［Create］*ボタンをクリックします。
 
    ![この新しいトピックのタイトルと説明を入力します。](using-the-questions-app/images/02.png)
 
    トピックは何種類でも作ることができます。
 
-<a name="asking-questions" />
-
 ## 質問をする
 
-1. トピックを作成したら、質問を始めることができます。 ［**Ask Question**］ ボタンをクリックして、新しい質問を作成します。
+1. トピックを作成したら、質問を始めることができます。 *［Ask Question］* ボタンをクリックして、新しい質問を作成します。
 
    ![［質問する］ ボタンをクリックして、新しい質問を作成します。](using-the-questions-app/images/03.png)
 
@@ -53,15 +49,13 @@ Note that only users with the requisite permissions have the ability to create t
 
    ![フォームにタイトルと本文を記入します。](using-the-questions-app/images/04.png)
 
-   最後に、 ［**Post Your Question**］ ボタンをクリックします。
-
-<a name="answering-questions" />
+   最後に、*［Post Your Question］*ボタンをクリックします。
 
 ## 質問に答える
 
 1. ユーザーは既存の質問を表示して返信することができます。 回答するには、既存の質問をクリックします。
 
-1. ［Your Answer］ボックスに回答を入力し、 ［**Post Answer**］ ボタンをクリックします。
+1. ［Your Answer］ボックスに回答を入力し、*［Post Answer］*ボタンをクリックします。
 
     ![回答を入力して、［回答を投稿］ボタンをクリックします](using-the-questions-app/images/05.png)
 
@@ -87,8 +81,6 @@ Note that only users with the requisite permissions have the ability to create t
 
 **編集する:** ユーザーは自分の回答を編集できます。
 
-<a name="searching-questions" />
-
 ## 質問を探す
 
 質問を検索するには、いくつかの方法があります。
@@ -99,17 +91,15 @@ Note that only users with the requisite permissions have the ability to create t
 
 **検索:** 検索バーにキーワードを入力して、さまざまな質問を検索します。
 
-**タグ:** タグに基づいて質問を絞り込みます。 ［**Tags**］ タブをクリックすると、使用可能なタグとそれに関連する質問が表示されます。
+**タグ:** タグに基づいて質問を絞り込みます。 *［Tags］*タブをクリックすると、使用可能なタグとそれに関連する質問が表示されます。
 
 ![［タグ］タブをクリックすると、すべてのタグが表示されます。](using-the-questions-app/images/09.png)
-
-<a name="subscriptions-to-topics-and-questions" />
 
 ## トピックと質問のサブスクリプション
 
 トピックと質問の両方を購読して、更新に関するインサイト通知と電子メール通知を受け取ることができます。
 
-トピックを購読するには、トピックのタイトルバーの下にある ［**Subscribe**］ をクリックします。
+トピックを購読するには、トピックのタイトルバーの下にある*［Subscribe］*をクリックします。
 
 ![トピックを購読するには、［変更通知を受け取る（購読する）］ボタンをクリックします。](using-the-questions-app/images/10.png)
 
@@ -117,22 +107,18 @@ Note that only users with the requisite permissions have the ability to create t
 
 ![質問を購読するには、サブスクライブベルボタンをクリックします](using-the-questions-app/images/11.png)
 
-自分の購読リストを表示するには、 ［**My Subscriptions**］ タブをクリックします。 購読しているすべてのトピックと質問の一覧が表示されます。
+自分の購読リストを表示するには、*［My Subscriptions］*タブをクリックします。 購読しているすべてのトピックと質問の一覧が表示されます。
 
 ![［通知スレッド］タブをクリックすると、購読しているすべての内容が表示されます。](using-the-questions-app/images/12.png)
 
-<a name="my-activity" />
-
 ## My Activity
 
-［**My Activity**］ タブをクリックすると、質問アプリの使用状況を追跡できます。
+*［My Activity］*タブをクリックすると、質問アプリの使用状況を追跡できます。
 
 ![［マイアクティビティ］タブをクリックして、質問アプリの使用状況を追跡します。](using-the-questions-app/images/13.png)
 
 ここには、あなたの順位、投稿された質問の数、各質問の一覧が表示されます。
 
-<a name="whats-next" />
-
 ## 次のステップ
 
-* [質問アプリの設定](./configuring-the-questions-app.md)
+* [Configuring the Questions App](./configuring-the-questions-app.md)

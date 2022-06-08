@@ -1,58 +1,60 @@
 # 翻訳のエクスポートとインポート
 
-WebコンテンツをXLIFF形式にエクスポートすることで、Liferayでの手動翻訳の代わりになります。 XLIFF（1.2または2.0）は、専用の翻訳ソフトウェアに使用される主要な交換フォーマットです。 エクスポートされた翻訳は、プロの翻訳者に送信してインポートし、コンテンツの翻訳を提供できます。
+> 対応可能：Liferay DXP/Portal 7.3以降
 
-```{note}
-翻訳用にWebコンテンツをエクスポートしたり、コンテンツの翻訳をインポートしたりするには、選択したコンテンツの*表示*および*更新*権限が必要です。 [Managing Permissions for Translation](./manually-translating-web-content.md#managing-permissions-for-translation) を参照してください。
+Liferayでは、翻訳用のWebコンテンツを `.xliff` または `.xlf` ファイルとしてエクスポートすることが可能です。 これらのファイルは、翻訳者に送られ、お客様のコンテンツの翻訳を作成することができます。 翻訳後は、 `.zip` ファイルとしてまとめてインポートしたり、 `.xliff` または `.xlf` ファイルとして個別に取り込んだりすることができます。
+
+```{important}
+Liferay は XLIFF 1.2 と 2.0 の両方のファイルをサポートしています。 ただし、これらのフォーマットが提供するすべての機能・性能をサポートしているわけではありません。
 ```
 
-<a name="exporting-content-for-translation" />
+コンテンツを翻訳用にエクスポートしたり、翻訳をインポートするには、選択したコンテンツに対して *表示* および *更新* する権限が必要です。 [Managing Permissions for Translation](./manually-translating-web-content.md#managing-permissions-for-translation)を参照してください。
 
 ## 翻訳用のコンテンツのエクスポート
 
-1.  プロダクトメニューを開き、 [**Content & Data**] → [**Webコンテンツ**] に移動します。
+以下の手順で、Webコンテンツを翻訳用にエクスポートします。
 
-2.  翻訳するWebコンテンツの **アクション** メニュー（![Actions button](../../../images/icon-actions.png)）をクリックし、 [**翻訳用にエクスポート**] を選択します。 エクスポートの設定に使用できるモーダルウィンドウが開きます。
+1. *［サイトメニュー］* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［コンテンツ］ & ［データ］* &rarr; *［Webコンテンツ］*に移動します。
 
-    ![翻訳するWebコンテンツのアクションメニューをクリックし、 [翻訳用にエクスポート]を選択します。](./exporting-and-importing-translations/images/01.png)
+1. 翻訳するWebコンテンツの*アクション*メニュー（![Actions button](../../../images/icon-actions.png)）をクリックし、*［翻訳用にエクスポート］*を選択します。 エクスポートの設定に使用できるモーダルウィンドウが開きます。
 
-3.  エクスポート形式（XLIFF1.2またはXLIFF2.0）を選択します
+   ![翻訳するWebコンテンツのアクションメニューをクリックし、［翻訳用にエクスポート］を選択します。](./exporting-and-importing-translations/images/01.png)
 
-4.  Webコンテンツの元の言語を指定します。 これは、翻訳の参照として使用されます。
+1. エクスポート形式を選択します： *XLIFF 1.2* または *XLIFF 2.0*。
 
-5.  チェックボックスを使用して、翻訳する言語を選択します。
+1. Webコンテンツの元の言語を指定します。 これは、翻訳の参照として使用されます。
 
-    ![Webコンテンツを翻訳する言語を選択します。](./exporting-and-importing-translations/images/02.png)
+1. チェックボックスを使って、コンテンツを翻訳したい言語を選択します。
 
-6.  完了したら、 [**エクスポート**] をクリックして、翻訳用にエクスポートを開始します。
+   ![Webコンテンツを翻訳する言語を選択します。](./exporting-and-importing-translations/images/02.png)
+
+1. 完了したら、 *[エクスポート]*をクリックして、翻訳用にエクスポートを開始します。
 
 Liferayは、翻訳用に選択した言語と同じ数のXLIFFファイルを含むダウンロード用のZipアーカイブを生成します。 これらのファイルを互換性のある翻訳ソフトウェアで使用して、Webコンテンツを翻訳できます。
-
-<a name="importing-content-translations" />
 
 ## コンテンツ翻訳のインポート
 
 翻訳の準備ができたら、次の手順に従ってWebコンテンツにインポートします。
 
-1.  プロダクトメニューを開き、 [**Content & Data**] → [**Webコンテンツ**] に移動します。
+1. プロダクトメニューを開き、*［コンテンツ & データ］* &rarr; *［Webコンテンツ］*に移動します。
 
-2.  翻訳されたWebコンテンツの **アクション** メニュー（![Actions button](../../../images/icon-actions.png)）をクリックし、 [**翻訳のインポート**] を選択します。
+1. 翻訳されたWebコンテンツの*［アクション］*メニュー（![Actions button](../../../images/icon-actions.png)）をクリックし、*［翻訳のインポート］*を選択します。
 
-    ![翻訳されたWebコンテンツのアクションメニューをクリックし、 [翻訳のインポート]を選択します。](./exporting-and-importing-translations/images/03.png)
+   ![翻訳されたWebコンテンツのアクションメニューをクリックし、［翻訳のインポート］を選択します。](./exporting-and-importing-translations/images/03.png)
 
-3.  インポートする翻訳ファイルを選択してから、変更を公開します。
+1. インポートしたい `.xliff` または `.xlf` ファイルを選択するか、複数の翻訳ファイルを `.zip` ファイルとしてインポートしてください。
 
-    ![インポートする翻訳ファイルを選択します。](./exporting-and-importing-translations/images/04.png)
+   ![インポートする翻訳ファイルを選択します。](./exporting-and-importing-translations/images/04.png)
 
-インポートが完了すると、XLIFFファイルに含まれているすべての変更内容でWebコンテンツが更新されます。 ワークフローが有効になっている場合、この変更は他のコンテンツの更新と同様に承認が必要になります。
+   ```{important}
+   Liferayは*翻訳用にエクスポート*アクションを使用して作成されたXLIFFファイルのインポートをサポートしていますが、他の方法で生成されたファイルの正常なインポートは保証できません。
+   ```
 
-```{note}
-LiferayはXLIFF1.2と2.0の両方をサポートしていますが、これらのフォーマットが提供するすべての機能をサポートしているわけではありません。 また、Liferayは*翻訳用にエクスポート*アクションを使用して作成されたXLIFFファイルのインポートをサポートしていますが、他の方法で生成されたファイルの正常なインポートは保証できません。
-```
+1. *［公開］*をクリックします。
 
-<a name="additional-information" />
+インポートが完了すると、翻訳ファイルに含まれているすべての変更内容でWebコンテンツが更新されます。 ワークフローが有効になっている場合、この変更は他のコンテンツの更新と同様に承認が必要になります。
 
 ## 追加情報
 
-  - [Webコンテンツの手動翻訳](./manually-translating-web-content.md)
-  - [基本的なWebコンテンツの記事の追加](../web-content-articles/adding-a-basic-web-content-article.md)
+* [Manually Translating Web Content](./manually-translating-web-content.md)
+* [基本的なWebコンテンツの記事の追加](../web-content-articles/adding-a-basic-web-content-article.md)

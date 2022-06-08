@@ -1,3 +1,3 @@
 # Developer Studio
 
-Coming soon!
+近日公開！

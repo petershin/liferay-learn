@@ -4,18 +4,10 @@
 
 `［LIFERAY_HOME］/tools/portal-tools-db-upgrade-client`フォルダ（Windowsでは`db_upgrade.bat`）にある`db_upgrade.sh`スクリプトを使用して、アップグレードツールを起動します。
 
-<a name="overview" />
-
-<a name="overview" />
-
 ## 概要
 
 * [アップグレードツールの使用](#database-upgrade-tool-usage)
 * [アップグレードツールの設定](#configuring-the-upgrade-tool)
-
-<a name="database-upgrade-tool-usage" />
-
-<a name="database-upgrade-tool-usage" />
 
 ## データベースアップグレードツールの使用
 
@@ -27,15 +19,13 @@ db_upgrade.sh --help
 
 次に、アップグレードツールのすべてのコマンドラインオプションを示します。
 
-**--help** または **-h** ：ツールのヘルプメッセージを出力します。
+**--help**または**-h**：ツールのヘルプメッセージを出力します。
 
-**--jvm-opts** または **-j** + **\[arg\**] ：アップグレードプロセスのJVMオプションを設定します。
+**--jvm-opts** or **-j** + **[arg]**：アップグレードプロセスのJVMオプションを設定します。
 
-**--log-file** または **-l** + **\[arg\**] ：ツールのログファイル名を指定します。デフォルト名は`upgrade.log`です。
+**--log-file** or **-l** + **[arg]**：ツールのログファイル名を指定します。デフォルト名は`upgrade.log`です。
 
-**--shell** または **-s** ：アップグレード作業終了後、[Gogoシェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)に自動的に接続します。
-
-<a name="logging-output" />
+**--shell** または **-s**：アップグレード作業終了後、[Gogoシェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)に自動的に接続します。
 
 ### ログ出力
 
@@ -45,19 +35,17 @@ db_upgrade.sh --help
 db_upgrade.sh -l "output.log"
 ```
 
-<a name="recommended-jvm-options" />
-
 ### 推奨されるJVMオプション
 
-必ずファイルエンコーディングを`UTF-8`に、タイムゾーンを`GMT`に設定してください。 データベースアップグレードツールはDXPデータベース上で動作するため、DXPアプリケーションサーバーで使用するものと同じJVMオプションを使用してアップグレードツールを構成する必要もあります。 国と言語のJVMオプションを使用した場合は、それらをアップグレードツールに指定してください。
+必ずファイルエンコーディングを`UTF-8`に、標準時を`GMT`に設定してください。 データベースアップグレードツールはDXPデータベース上で動作するため、DXPアプリケーションサーバーで使用するものと同じJVMオプションを使用してアップグレードツールを構成する必要もあります。 国と言語のJVMオプションを使用した場合は、それらをアップグレードツールに指定してください。
 
-また、アップグレードツール用の初期メモリ(`-Xmx value`)も割り当てます。 少なくとも2 GBを使用してください。 DXPデータベースに10 GBを超えるデータがある場合は、初期メモリを増やしてください。
+また、アップグレードツール用の初期メモリ(`-Xmx value`)も割り当てます。 少なくとも2GBを使用してください。 DXPデータベースに10GBを超えるデータがある場合は、初期メモリを増やしてください。
 
 3.2 GBのデータベースと15 GBのドキュメントライブラリを使用したテストシナリオでは、次のJavaプロセス設定が最適でした。
 
 * Xmx 8 GBのRAM
 * ファイルエンコーディングUTF-8
-* ユーザーのタイムゾーンGMT
+* ユーザーの標準時GMT
 
 これらの設定に対応する`db_upgrade.sh`コマンドは次のとおりです。
 
@@ -65,11 +53,9 @@ db_upgrade.sh -l "output.log"
 db_upgrade.sh -j "-Xmx8000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
 ```
 
-<a name="configuring-the-upgrade-tool" />
-
 ## アップグレードツールの設定
 
-コアのアップグレードには設定が必要です。 最も簡単な方法は、アップグレードツールを使用して構成ファイルをオンザフライで作成することです。 次に、アップグレードツールのコマンドラインインターフェイスとの対話の例を示します。
+コアのアップグレードには設定が必要です。 最も簡単な方法は、アップグレードツールを使用して構成ファイルをオンザフライで作成することです。 次に、アップグレードツールのコマンドラインインターフェースとの対話の例を示します。
 
 ```
 Please enter your application server (tomcat):
@@ -93,25 +79,23 @@ Please enter your database host (localhost):
 ```
 
 ```{note}
-   省略された値は、括弧内に表示されているデフォルトを使用します。
+省略された値は、括弧内に表示されているデフォルトを使用します。
 ```
-
-<a name="manual-configuration" />
 
 ### 手動設定
 
 また、アップグレードツールを事前設定して、ツールが生成するよりも多くの値を設定することもできます。 `［LIFERAY_HOME］/tools/portal-tools-db-upgrade-client/`にある次のファイルを使用して、コアアップグレードを手動で設定します。
 
-  - `app-server.properties`：サーバーの場所とライブラリを指定します。
-  - `portal-upgrade-database.properties`：データベース接続を構成します。
-  - `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず [現在のDXPバージョンに合わせて更新してください](./preparing-a-new-application-server.md#migrate-your-portal-properties) 。
+* `app-server.properties`：サーバーの場所とライブラリを指定します。
+* `portal-upgrade-database.properties`：データベース接続を設定します。
+* `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず[現在のDXPバージョンに合わせて更新してください](./preparing-a-new-application-server.md#migrate-your-portal-properties)。
 
-#### app-server.propertiesの構成
+#### app-server.propertiesの設定
 
 DXPのアプリケーションサーバーを設定するには、次の情報を指定します。
 
 | プロパティ名                      | 意味                                           | メモ                                                                            |
-| :--- | :--- | :--- |
+|:--------------------------- |:-------------------------------------------- |:----------------------------------------------------------------------------- |
 | `dir`                       | アプリケーションサーバーフォルダの絶対パス。                       |                                                                               |
 | `extra.lib.dirs`            | クラスパスに追加するバイナリまたはリソースを含む追加のディレクトリのカンマ区切りリスト。 | `dir`に関連するパスを使用します。                                                           |
 | `global.lib.dir`            | アプリケーションサーバーのグローバルライブラリディレクトリ。               | `dir`に関連するパスを使用します。                                                           |
@@ -140,18 +124,18 @@ server.detector.server.id=tomcat
 
 #### portal-upgrade-database.propertiesの構成
 
-次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する [JDBCポータルプロパティ](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#JDBC) に対応することに注意してください。
+次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する[JDBCポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)に対応することに注意してください。
 
 * `jdbc.default.driverClassName`
 * `jdbc.default.url`
 * `jdbc.default.username`
 * `jdbc.default.password`
 
-これらの値のリファレンスについては、最新の [ポータルプロパティリファレンス](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) を参照してください。
+これらの値のリファレンスについては、最新の[ポータルプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)を参照してください。
 
 #### portal-upgrade-ext.propertiesの構成
 
-[バックアップ](../../maintaining-a-liferay-dxp-installation/backing-up.md)から、`portal-ext.properties`ファイルプロパティなどのすべての [ポータルプロパティ](../../reference/portal-properties.md) を追加します。 次のプロパティは、アップグレードを構成するために特に重要です。
+[バックアップ](../../maintaining-a-liferay-installation/backing-up.md)から、`portal-ext.properties`ファイルプロパティなどのすべての[ポータルプロパティ](../../reference/portal-properties.md)を追加します。 次のプロパティは、アップグレードを設定するために特に重要です。
 
 * `liferay.home`：[LIFERAY_HOMEフォルダ](../../reference/liferay-home.md)
 
@@ -164,7 +148,7 @@ server.detector.server.id=tomcat
     dl.store.impl=com.liferay.portal.store.s3.S3Store
     ```
 
-  - `hibernate.jdbc.batch_size`：パフォーマンスを向上させるために使用されるJDBCバッチサイズ（デフォルトでは **250** に設定）。 **このプロパティを使用するとアップグレードのパフォーマンスが向上しますが、必須ではありません。**
+* `hibernate.jdbc.batch_size`：パフォーマンスを向上させるために使用されるJDBCバッチサイズ（デフォルトでは_250_に設定）。 _このプロパティを使用するとアップグレードのパフォーマンスが向上しますが、必須ではありません。_
 
 #### アップグレード構成の例
 

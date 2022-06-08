@@ -1,9 +1,9 @@
 # 外部サービスの構成
 
-Liferayは、ファイルの変換やファイルのプレビューを生成するための外部サービスとの統合を提供します。 これらのうち3つのサービスは、サーバー管理の設定で有効にすることができます。 [ImageMagick](https://www.imagemagick.org/script/index.php) 、 [Ghostscript](https://www.ghostscript.com/) 、および [Xuggler](http://www.xuggle.com/xuggler/) です。
+Liferayは、ファイルの変換やファイルのプレビューを生成するための外部サービスとの統合を提供します。 これらのうち3つのサービスは、サーバー管理の設定で有効にすることができます。 [ImageMagick](https://www.imagemagick.org/script/index.php)、 [Ghostscript](https://www.ghostscript.com/)、および [Xuggler](http://www.xuggle.com/xuggler/)です。
 
 ```{important}
-Liferay 7.3.xでは、Xugglerの統合は非推奨となっています。 ユーザーはLiferayのFFmpegインテグレーションを代替として使用することをお勧めします。 詳しくは [FFmpeg for Audio and Video Previewsを有効にする](../../content-authoring-and-management/documents-and-media/devops/enabling-ffmpeg-for-audio-and-video-previews.md) をご覧ください。
+Liferay 7.3.xでは、Xugglerの統合は非推奨となっています。 ユーザーはLiferayのFFmpegインテグレーションを代替として使用することをお勧めします。 詳しくは[ドキュメントとメディアのプレビューの構成](../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)をご覧ください。
 ```
 
 ![［外部サービス］タブからImageMagick、Ghostscript、およびXugglerを有効にします。](./configuring-external-services/images/01.png)
@@ -13,10 +13,8 @@ Liferay 7.3.xでは、Xugglerの統合は非推奨となっています。 ユ�
 これらのサービスをインストールしたら、コントロールパネルの［サーバー管理］ページでLiferayインスタンスがこれらのサービスを使用するように設定します。
 
 ```{note}
-Liferay 7.1では、OpenOffice/LibreOfficeは、サーバー管理やポータルのプロパティではなく、OSGi Configuration Adminで設定されます。 詳しくは [OpenOffice/LibreOfficeの統合を可能にする](./../content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration.md) をご覧ください。
+Liferay 7.1では、OpenOffice/LibreOfficeは、サーバー管理やポータルのプロパティではなく、OSGi Configuration Adminで設定されます。 詳しくは[OpenOffice/LibreOfficeの統合を可能にする](./../content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration.md)をご覧ください。
 ```
-
-<a name="enabling-imagemagick-and-ghostscript" />
 
 ## ImageMagickとGhostscriptを有効にする
 
@@ -28,19 +26,17 @@ Liferay 7.1では、OpenOffice/LibreOfficeは、サーバー管理やポータ�
 
 ImageMagickとGhostscriptの両方がサーバーにインストールされたら、以下の手順でLiferayインスタンスのこれらのサービスを有効にします。
 
-1. **グローバルメニュー**（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; **コンフィギュ** &rarr; ［**サーバの管理**］ へ行きます。
+1. *グローバルメニュー* （![Global Menu](../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］* &rarr; *［設定］* &rarr; *［サーバの管理］*へ行きます。
 
-1. ［**外部サービス**］ タブをクリックします。
+1. *［外部サービス］* タブをクリックします。
 
-1. ImageMagickとGhostscriptの **有効** をチェックします。
+1. ImageMagickとGhostscriptの *有効* をチェックします。
 
 1. ImageMagickおよびGhostscript実行可能ファイルへのパスが正しいことを確認します。
 
 1. リソース制限を構成します。
 
-1. 完了したら、 ［**保存**］ をクリックします。
-
-<a name="enabling-xuggler" />
+1. 完了したら、*［保存］*をクリックします。
 
 ## Xugglerを有効にする
 
@@ -52,21 +48,19 @@ Xugglerは、Linuxではglibcバージョン2.6以降が必要です。
 
 以下の手順で、LiferayインスタンスにXugglerをインストールして有効にします。
 
-1. ［**グローバルメニュー**］（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**サーバの管理**］ へ行きます。
+1. *［グローバルメニュー］* （![Global Menu](../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］* &rarr; *［設定］* &rarr; *［サーバの管理］*へ行きます。
 
-1. ［**外部サービス**］ タブをクリックします。
+1. *［外部サービス］* タブをクリックします。
 
 1. Xugglerの*有効化をチェックします。</p>
 
-   Xugglerがまだインストールされていない場合は、インストールするように促されます。 OSに適したJARを選択し、 ［**インストール**］ をクリックします。 その後、サーバーを再起動すると変更が反映されます。 インストールが完了したら、 ［**外部サービス**］ タブに戻り、Xugglerを有効にすることができます。
+   Xugglerがまだインストールされていない場合は、インストールするように促されます。 OSに適したJARを選択し、*［インストール］*をクリックします。 その後、サーバーを再起動すると変更が反映されます。 インストールが完了したら、 *［外部サービス］* タブに戻り、Xugglerを有効にすることができます。
 
    ![Xugglerがインストールされていない場合は、インストールするように促されます。](./configuring-external-services/images/02.png)</li>
 
 1
 
-［**保存**］ をクリックします。</ol>
-
-<a name="using-a-portal-extproperties-file-to-enable-external-services" />
+*［保存］*をクリックします。</ol>
 
 ## `portal-ext.properties` ファイルを使用して外部サービスを有効にする。
 
@@ -93,9 +87,7 @@ xuggler.enabled=true
 
 アプリケーションサーバーを再起動して、Xugglerの有効化を完了します。
 
-<a name="additional-information" />
-
 ## 追加情報
 
-* [ドキュメントとメディアプレビューの設定](../../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)
-* [音声とビデオのプレビュー用にFFmpegを有効にする](../../../content-authoring-and-management/documents-and-media/devops/enabling-ffmpeg-for-audio-and-video-previews.md)
+- [ドキュメントとメディアプレビューの設定](../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)
+- [音声とビデオのプレビュー用にFFmpegを有効にする](../../content-authoring-and-management/documents-and-media/devops/enabling-ffmpeg-for-audio-and-video-previews.md)

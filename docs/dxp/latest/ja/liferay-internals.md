@@ -12,6 +12,7 @@ toc:
 :maxdepth: 4
 
 liferay-internals/fundamentals.md
+liferay-internals/architecture.md
 liferay-internals/extending-liferay.md
 liferay-internals/customizing-web-apis.md
 liferay-internals/contributing-to-liferay-development.md

@@ -1,10 +1,8 @@
 # Solrの制限事項
 
 ```{important}
-   LiferayのSolrサポートは非推奨です。  `Elasticsearch<../elasticsearch/getting-started-with-elasticsearch.md>_` に移行することを検討してください。
+LiferayのSolrサポートは非推奨です。 [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) への移行を検討してください。
 ```
-
-<a name="end-user-feature-limitations" />
 
 ## エンドユーザー機能の制限
 
@@ -15,8 +13,6 @@ LiferayのSolr統合には、Liferay Commerceおよび以下の機能の使用�
 * 低レベル検索オプションウィジェット
 * 検索のチューニング：検索結果のカスタマイズ
 * 検索チューニング：同義語
-
-<a name="developer-feature-limitations" />
 
 ## 開発者機能の制限
 
@@ -51,5 +47,5 @@ LiferayのSolr統合には、Liferay Commerceおよび以下の機能の使用�
   * `com.liferay.portal.search.engine.adapter.snapshot.*`
 
 ```{note}
-   Liferay Commerceでは、Elasticsearchコネクタでのみ利用可能な ``TermsSetFilter`` の実装が必要です。
+Liferay Commerceは、Elasticsearchコネクタでのみ利用可能な `TermsSetFilter` の実装を必要とします。
 ```

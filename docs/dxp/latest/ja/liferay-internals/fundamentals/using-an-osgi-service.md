@@ -1,21 +1,21 @@
 # OSGiサービスの使用
 
-Liferay APIは、OSGiサービスとしてすぐに利用できます。 次のように、そのサービスタイプのフィールドを作成し、そのフィールドに [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) アノテーションを付けることで、サービスにアクセスできます。
+Liferay APIは、OSGiサービスとしてすぐに利用できます。 次のように、そのサービスタイプのフィールドを作成し、そのフィールドに[`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html)アノテーションを付けることで、サービスにアクセスできます。
 
 ```java
 @Reference
 BlogsEntryService _blogsEntryService;
 ```
 
-上記の`_blogsEntryService`フィールドは、 [`BlogsEntryService`](https://docs.liferay.com/ce/apps/blogs/latest/javadocs/com/liferay/blogs/service/BlogsEntryService.html) OSGiサービスにアクセスします。
+上記の`_blogsEntryService`フィールドは、[`BlogsEntryService`](https://docs.liferay.com/ce/apps/blogs/latest/javadocs/com/liferay/blogs/service/BlogsEntryService.html) OSGiサービスにアクセスします。
 
-すべてのDeclarative Servicesコンポーネント（ [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) でアノテーションが付けられたクラス）は、この方法でOSGiサービスにアクセスできます。  ランタイムフレームワークは、コンポーネントの`@Reference`のアノテーションが付いたフィールドにサービスタイプを挿入します。
+すべてのDeclarative Servicesコンポーネント（[`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)でアノテーションが付けられたクラス）は、この方法でOSGiサービスにアクセスできます。  ランタイムフレームワークは、コンポーネントの`@Reference`のアノテーションが付いたフィールドにサービスタイプを挿入します。
 
-次の例は、`Greeter`と呼ばれるOSGiサービスの使用を示しています。 3つのモジュールは、OSGiサービスで使用される **API-Provider-Consumer** パターンを示しています。
+次の例は、`Greeter`と呼ばれるOSGiサービスの使用を示しています。 3つのモジュールは、OSGiサービスで使用される*API-Provider-Consumer*パターンを示しています。
 
-***API** モジュールは、`Greeter`サービスタイプを定義します。
-* 実装モジュールは`Greeter`サービスを **提供** します。
-* サンプルモジュールは`Greeter`サービスを **消費** します。
+* **API**モジュールは、`Greeter`サービスタイプを定義します。
+* 実装モジュールは`Greeter`サービスを**提供**します。
+* サンプルモジュールは`Greeter`サービスを**消費**します。
 
 サンプルモジュールクラスは、`Greeter`サービスを使用してパーソナライズされた挨拶を返すGogo シェルコマンドを作成します。 この例をOSGiサービスの「Hello World」と考えてください。
 
@@ -23,25 +23,26 @@ BlogsEntryService _blogsEntryService;
 
 OSGiサービスは任意のJavaクラスで使用できます。
 
-LiferayサービスのJavadocは [こちら](https://learn.liferay.com/reference/latest/en/dxp.html) から入手できます。
+LiferayサービスのJavadocは[こちら](https://learn.liferay.com/reference/latest/en/dxp.html)から入手できます。
 
 ```{note}
-OSGiサービスの作成方法については、 [OSGiサービスとしてのAPI](./apis-as-osgi-services.md) を参照してください。
+OSGiサービスの作成方法については、[APIs as OSGi Services](./apis-as-osgi-services.md)を参照してください。
 ```
-
-<a name="gogo-シェルコマンドの例をデプロイする" />
 
 ## Gogo シェルコマンドの例をデプロイする
 
-```{include} /_snippets/run-liferay-portal.md
-```
+サンプルの使用を開始します。
 
-次に、以下の手順を実行します。
+1. [Liferay Dockerコンテナ](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
+
+    ```bash
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
 
 1. `liferay-j1h1.zip`をダウンロードして解凍します。
 
     ```bash
-    curl hhttps://learn.liferay.com/dxp/latest/ja/liferay-internals/fundamentals/liferay-j1h1.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-j1h1.zip -O
     ```
 
     ```bash
@@ -51,7 +52,7 @@ OSGiサービスの作成方法については、 [OSGiサービスとしてのA
 1. サンプルモジュールをデプロイします。
 
     ```bash
-    cd liferay-j1h1.zip
+    cd liferay-j1h1
     ```
 
     ```bash
@@ -81,8 +82,6 @@ OSGiサービスの作成方法については、 [OSGiサービスとしてのA
     ```
 
 この例のモジュールは、APIおよび実装モジュールを利用して、`j1h1:greet` Gogo シェルコマンドから返されるコンテンツを生成します。
-
-<a name="osgiサービスの使用方法" />
 
 ## OSGiサービスの使用方法
 
@@ -114,7 +113,7 @@ OSGiサービスの作成方法については、 [OSGiサービスとしてのA
 
 ### 外部サービスリファレンスの注釈
 
-レジストリからOSGiサービスを取得するには、そのサービスタイプのフィールドに [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) アノテーションを追加する必要があります。 `@Reference`をサービスフィールドに追加します。
+レジストリからOSGiサービスを取得するには、そのサービスタイプのフィールドに[`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html)アノテーションを追加する必要があります。 `@Reference`をサービスフィールドに追加します。
 
 ```{literalinclude} ./using-an-osgi-service/resources/liferay-j1h1.zip/j1h1-osgi-commands/src/main/java/com/acme/j1h1/internal/osgi/commands/J1H1OSGiCommands.java
 :dedent: 1
@@ -147,15 +146,11 @@ OSGiサービスの作成方法については、 [OSGiサービスとしてのA
 
 ローカルプロジェクト`j1h1-api`は`Greeter`サービスを提供するため、`j1h1-osgi-commands`はアーティファクトではなくプロジェクトとしてそのサービスに依存できます。 外部アーティファクトに[依存関係を指定する](./configuring-dependencies/specifying-dependencies.md)ことも簡単です。
 
-<a name="まとめ" />
-
 ## まとめ
 
 APIモジュールとImplモジュールは、それぞれ`Greeter`サービスを定義および提供しました。 例の`j1h1-osgi-commands`モジュールは、サービスを使用して単純なGogo シェルコマンドを作成します。 API-Provider-Consumer契約によって疎結合が促進され、ソフトウェアの管理、拡張、およびサポートが容易になります。
 
-隣接するプロジェクトからOSGiサービスを使用することに慣れてきたので、外部アーティファクトからOSGiサービスを使用することを検討してみましょう。 [依存関係の構成](./configuring-dependencies.md) では、モジュールを見つけて依存関係として構成する方法を示しています。
-
-<a name="追加情報" />
+隣接するプロジェクトからOSGiサービスを使用することに慣れてきたので、外部アーティファクトからOSGiサービスを使用することを検討してみましょう。 [Configuring Dependencies](./configuring-dependencies.md)では、モジュールを見つけて依存関係として構成する方法を示しています。
 
 ## 追加情報
 

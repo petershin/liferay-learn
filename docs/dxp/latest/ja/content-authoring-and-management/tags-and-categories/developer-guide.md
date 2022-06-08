@@ -12,5 +12,5 @@ developer-guide/categories-and-vocabulary-api-basics.md
 developer-guide/tags-api-basics.md
 ```
 
-* [Categories and Vocabulary API Basics](./developer-guide/categories-and-vocabulary-api-basics.md)
-* [Tags API Basics](./developer-guide/tags-api-basics.md)
+* [カテゴリーとボキャブラリAPIの基本](./developer-guide/categories-and-vocabulary-api-basics.md)
+* [タグAPIの基本](./developer-guide/tags-api-basics.md)

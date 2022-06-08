@@ -1,12 +1,10 @@
 # ワークフロー定義ノードリファレンス
 
-**ノード** 要素とそのサブ要素は、ワークフロー定義を構成する基本的な構成要素です。 多くの場合、ノードはレビュープロセスの実際の段階を反映しています。 このガイドでは、さまざまなタイプのノードとその使用方法について説明します。
+_ノード_要素とそのサブ要素は、ワークフロー定義を構成する基本的な構成要素です。 多くの場合、ノードはレビュープロセスの実際の段階を反映しています。 このガイドでは、さまざまなタイプのノードとその使用方法について説明します。
 
 * [ステータスノード](#state-nodes)
 * [条件ノード](#conditions)
 * [フォークと結合](#forks-and-joins)
-
-<a name="state-nodes" />
 
 ## ステータスノード
 
@@ -45,13 +43,11 @@
 </actions>
 ```
 
-<a name="conditions" />
-
 ## 条件
 
-**条件ノード** は、条件が満たされているかどうかを判別し、満たされている場合は、ワークフローを適切なノードに移行します。 たとえば、提出されたドキュメントが契約書である場合、それは法務チームに送られる必要があります。それ以外の場合は、マーケティングチームに送られます。
+_条件ノード_は、条件が満たされているかどうかを判別し、満たされている場合は、ワークフローを適切なノードに移行します。 たとえば、提出されたドキュメントが契約書である場合、それは法務チームに送られる必要があります。それ以外の場合は、マーケティングチームに送られます。
 
-以下は、 [Category Specific Approval](../designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/category-specific-definition.xml) ワークフロー定義の`determine-branch`条件を示しています。
+以下は、[Category Specific Approval](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-definition.xml)ワークフロー定義の`determine-branch`条件を示しています。
 
 ```xml
 <condition>
@@ -113,11 +109,9 @@
 </condition>
 ```
 
-この例では、アセットカテゴリをチェックして、 **法務レビュー** タスクに移行するか、または **コンテンツレビュー** タスクに移行するかを選択します。
+この例では、アセットカテゴリをチェックして、_法務レビュー_タスクに移行するか、または_コンテンツレビュー_タスクに移行するかを選択します。
 
-`returnValue`変数は、条件からトランジションを指し、その値は有効なトランジション名と一致する必要があります。 このスクリプトでは、対象となるアセットを調べ、そのアセットカテゴリーを取得し、初期値として`returnValue`を設定します。 その後、そのアセットが **legal** カテゴリでマークされているかどうかを確認します。 マークされていない場合は、 **コンテンツレビュー**（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、 **法務レビュー**（ワークフローのlegal-reviewタスク）を通過します。
-
-<a name="forks-and-joins" />
+`returnValue`変数は、条件からトランジションを指し、その値は有効なトランジション名と一致する必要があります。 このスクリプトでは、対象となるアセットを調べ、そのアセットカテゴリーを取得し、初期値として`returnValue`を設定します。 その後、そのアセットが_legal_カテゴリでマークされているかどうかを確認します。 マークされていない場合は、_コンテンツレビュー_（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、_法務レビュー_（ワークフローのlegal-reviewタスク）を通過します。
 
 ## フォークと結合
 
@@ -167,8 +161,6 @@ XOR 結合は、1つの重要な点で結合とは異なります。それは、
     </transitions>
 </join-xor>
 ```
-
-<a name="task-nodes" />
 
 ## タスクノード
 
@@ -231,9 +223,7 @@ XOR 結合は、1つの重要な点で結合とは異なります。それは、
 </task>
 ```
 
-<a name="additional-information" />
-
 ## 追加情報
 
 * [XMLワークフロー定義の作成](./crafting-xml-workflow-definitions.md)
-* [ワークフロータスクノードリファレンス](./workflow-task-node-reference.md)
+* [Workflow Task Node Reference](./workflow-task-node-reference.md)

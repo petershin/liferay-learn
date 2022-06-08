@@ -2,25 +2,25 @@
 
 DBStoreは、ファイルをBLOBとしてDXPデータベースに保存します。 DBStoreには、ファイルベースのストアタイプ（Simple、Advanced、S3）が持つトランザクションロールバックの脆弱性はありません。
 
-DBStoreのファイルサイズ制限は1ギガバイトです。 1ギガバイトを超えるファイルを保存するには、 [Simple File System Store](./simple-file-system-store.md) または [Advanced File System Store](../file-storage.md#configuring-advanced-file-system-store) を使用します。
+DBStoreのファイルサイズ制限は1ギガバイトです。 1ギガバイトを超えるファイルを保存するには、[簡易ファイルシステムストア](./simple-file-system-store.md)または[高度なファイルシステムストア](../file-storage.md#configuring-advanced-file-system-store)を使用します。
 
-<a name="configuring-the-store" />
+## ストアの設定
 
-## ストアの構成
+1. 次のプロパティを使用して[`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md)を設定します。
 
-1.  次のプロパティを使用して[`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md)を設定します。
-
-    ``` properties
+    ```properties
     dl.store.impl=com.liferay.portal.store.db.DBStore
     ```
 
-2.  DXPを再起動します。
+1. DXPを再起動します。
 
 DXPがファイルをDBStoreに保存するようになりました。
 
-<a name="additional-information" />
+```{important}
+[アップロードされたファイルの自動アンチウイルススキャンを有効にする](../enabling-antivirus-scanning-for-uploaded-files.md)を検討します。
+```
 
 ## 追加情報
 
-  - [ファイル ストレージ](../../file-storage.md)
-  - [ファイルストアの移行](../file-store-migration.md)
+* [ファイルストレージ](../../file-storage.md)
+* [ファイルストアの移行](../file-store-migration.md)

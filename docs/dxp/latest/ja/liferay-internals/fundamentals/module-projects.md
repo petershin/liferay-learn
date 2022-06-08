@@ -1,12 +1,12 @@
 # モジュールプロジェクト
 
-Liferayのアプリケーションやカスタマイズは、 [OSGi モジュール](https://www.osgi.org/resources/what-is-osgi/) : `.jar`ファイルで、Javaコードと、APIを公開・消費するための追加設定が含まれています。
+Liferayのアプリケーションやカスタマイズは、[OSGi モジュール](https://www.osgi.org/resources/what-is-osgi/): `.jar`ファイルで、Javaコードと、APIを公開・消費するための追加設定が含まれています。
 
 モジュールプロジェクトは、次の3つから構成されています。
 
-1. **コード：** Javaクラスと、画像、テンプレート、追加の記述子などのリソース。 Javaパッケージはデフォルトではプライベートですが、他のモジュールが使用できるように[エクスポート](./exporting-packages.md)することができます。
+1. **コード：**Javaクラスと、画像、テンプレート、追加の記述子などのリソース。 Javaパッケージはデフォルトではプライベートですが、他のモジュールが使用できるように[エクスポート](./exporting-packages.md)することができます。
 
-1. **ビルドスクリプト：** モジュールをビルドしてデプロイするための [Gradle](https://gradle.org/) ファイル。
+1. **ビルドスクリプト：** モジュールをビルドしてデプロイするための[Gradle](https://gradle.org/)ファイル。
 
 1. **メタデータ：** [Bnd](https://bnd.bndtools.org/) ファイルは、モジュールのアーティファクトを定義し、モジュールが提供するまたは必要とするパッケージや機能を指定します。
 
@@ -40,9 +40,9 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 
 1. **API** モジュールはインターフェイスを定義します。
 
-1. **実装** モジュールは、インターフェイスを実装する具象クラスを提供します。
+1. **実装**モジュールは、インターフェイスを実装する具象クラスを提供します。
 
-1. **クライアント** モジュールはAPIを消費します。
+1. **クライアント**モジュールはAPIを消費します。
 
 [Gogo シェル](./using-the-gogo-shell.md)でユーザーが名前を入力したときにあいさつ文を表示する簡単なコマンドを開発することで、それぞれを作成する方法を学習します。
 
@@ -52,21 +52,14 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 
 まず、サンプルのAPIモジュールプロジェクトをデプロイします。
 
-<a name="シンプルなモジュールのデプロイ" />
-
 ## シンプルなモジュールのデプロイ
 
 サンプルモジュールでは、あいさつ文を生成するためのAPIを定義します。
 
-```{include} /_snippets/run-liferay-portal.md
-```
-
-次に、以下の手順を実行します。
-
 1. サンプルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/fundamentals/liferay-k8s2.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-k8s2.zip -O
     ```
 
     ```bash
@@ -90,6 +83,12 @@ Liferayでは、一般的に3種類のモジュールを使用します。
     k8s2-api/build/libs/com.acme.k8s2.api-1.0.0.jar
     ```
 
+1. [Liferay Dockerコンテナ](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
+
+    ```bash
+    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    ```
+
 1. モジュールのJARをデプロイします。
 
     ```bash
@@ -104,6 +103,10 @@ Liferayでは、一般的に3種類のモジュールを使用します。
     ```
 
     `STARTED` のメッセージには、モジュールのID `1152`が含まれています。
+
+1. `http://localhost:8080` にアクセスし、デフォルトの認証情報を使用してサインインします。
+
+   **ユーザ名：** `test@liferay.com` **パスワード：** `test`
 
 1. [Gogo シェル](./using-the-gogo-shell.md)を開きます。
 
@@ -145,8 +148,6 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 
 モジュールのインストールとアクティベーションが完了したので、その機能について見ていきます。
 
-<a name="モジュールの設定方法" />
-
 ## モジュールの設定方法
 
 * [ビルドインフラストラクチャーの構築](#set-up-the-build-infrastructure)
@@ -158,14 +159,14 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 
 Liferayのモジュールは、Gradleのビルドインフラストラクチャーで開発されています。 プロジェクトのルートフォルダには、以下のGradleファイルが入っています。
 
-| ファイル                | 説明                                                                                        |
-|:------------------- |:----------------------------------------------------------------------------------------- |
-| `gradle/`           | Gradleのラッパーが含まれています。                                                                      |
-| `gradlew［.bat］`     | タスクを実行するためにGradleラッパーを呼び出します                                                              |
-| `gradle.properties` | Liferayの製品バージョンを指定します                                                                     |
-| `settings.gradle`   | [Liferay Workspace](../../developing-applications/tooling.md) のプラグインを含むGradleプラグインを適用します。 |
+| ファイル                | Description                                                                             |
+|:------------------- |:--------------------------------------------------------------------------------------- |
+| `gradle/`           | Gradleのラッパーが含まれています。                                                                    |
+| `gradlew［.bat］`     | タスクを実行するためにGradleラッパーを呼び出します                                                            |
+| `gradle.properties` | Liferayの製品バージョンを指定します                                                                   |
+| `settings.gradle`   | [Liferay Workspace](../../building-applications/tooling.md) のプラグインを含むGradleプラグインを適用します。 |
 
-サンプルプロジェクトの `k8s2-api` フォルダのように、新しいサブフォルダにモジュールを追加したり、新しい [Liferay Workspace](../../developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.md) にモジュールを作成することができます。
+サンプルプロジェクトの `k8s2-api` フォルダのように、新しいサブフォルダにモジュールを追加したり、新しい [Liferay Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md) にモジュールを作成することができます。
 
 以下は、`k8s2-api` モジュールの構造を、プロジェクトルートのコンテキストで示したものです。
 
@@ -194,7 +195,7 @@ Liferayのモジュールは、Gradleのビルドインフラストラクチャ�
 :lines: 5-10
 ```
 
-[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) アノテーションは、そのインターフェイスを実装しているものがそれを提供することをサービスレジストリに伝えます（すなわち`Greeter`）。 インターフェイスの `greet` という1つのメソッドは、 `String` を要求し、何も返しません。
+[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html)アノテーションは、そのインターフェイスを実装しているものがそれを提供することをサービスレジストリに伝えます（すなわち`Greeter`）。 インターフェイスの `greet` という1つのメソッドは、 `String` を要求し、何も返しません。
 
 モジュールの `src/main/java` フォルダと `src/main/resources` フォルダに、それぞれ独自のJavaコードとリソースを追加します。
 
@@ -211,13 +212,13 @@ Liferayのモジュールは、Gradleのビルドインフラストラクチャ�
 `［project root］/gradle.properties` ファイルでは、 `liferay.workspace.product` プロパティで製品のリリースを指定しています。
 
 ```properties
-liferay.workspace.product=portal-7.3-ga3
+liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 ```
 
 最後に、依存性のあるバージョンはありません。 これは、ワークスペースがリリースに関連するLiferay製品のAPIバージョンを適用するためです。
 
 ```{note}
-詳細については、[依存関係の構成](./configuring-dependencies.md)を参照してください。
+詳細については、[Configuring Dependencies](./configuring-dependencies.md)を参照してください。
 ```
 
 ### メタデータの指定
@@ -230,7 +231,7 @@ liferay.workspace.product=portal-7.3-ga3
 ```{literalinclude} ./module-projects/resources/liferay-k8s2.zip/k8s2-api/bnd.bnd
 ```
 
-The module's name is **Acme K8S2 API** . Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [**exports**](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
+The module's name is *Acme K8S2 API*. Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [*exports*](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
 
 #### Generated Metadata
 
@@ -256,21 +257,17 @@ Tool: Bnd-4.3.0.201909301554
 
 Bndは`bnd.bnd`ファイルからすべてのヘッダーをプロパゲートし、さらにヘッダーと詳細を追加しました。 例えば、エクスポートされた`com.acme.k8s2`パッケージには、デフォルトのパッケージバージョン`1.0.0`があります。
 
-<a name="まとめ" />
-
 ## まとめ
 
 これで完了です。 ご覧の通り、モジュールプロジェクトは他のJavaプロジェクトと同じですが、いくつかの設定が追加されています。
 
 これで、モジュールプロジェクトがどのようなものか、ビルドしてデプロイする方法、そしてランタイム時にモジュールを検査する方法をマスターしました。
 
-モジュールは、`Greeter` APIのようなAPIを介して、互いの機能を活用します。 LiferayはOSGiサービスを使用して、APISを定義、実装、消費します。 次に、[依存関係の構成](./apis-as-osgi-services.md)で、OSGiサービスを使用した`Greeter` APIの **実装** について説明します。
+モジュールは、`Greeter` APIのようなAPIを介して、互いの機能を活用します。 LiferayはOSGiサービスを使用して、APISを定義、実装、消費します。 次に、[APIs as OSGi Services](./apis-as-osgi-services.md)で、OSGiサービスを使用した`Greeter` APIの*実装*について説明します。
 
 ```{note}
 モジュールのライフサイクルの詳細については、[モジュールのライフサイクル](../architecture/module-lifecycle.md)を参照してください。
 ```
-
-<a name="追加情報" />
 
 ## 追加情報
 

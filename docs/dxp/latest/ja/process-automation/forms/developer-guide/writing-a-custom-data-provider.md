@@ -1,26 +1,26 @@
 # カスタムデータプロバイダーの作成
 
-Liferay Formsのフィールドは、 [データプロバイダー](../data-providers/data-providers-overview.md)を使用して入力することができます。 初期設定のRESTデータプロバイダーは、ほとんどのRESTエンドポイントからデータを消費するための柔軟な方法を提供します。 詳細は、 [RESTデータプロバイダーを使用したフォームオプションの入力](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) を参照してください。
+Liferay Formsのフィールドは、 [データプロバイダー](../data-providers/data-providers-overview.md)を使用して入力することができます。 初期設定のRESTデータプロバイダーは、ほとんどのRESTエンドポイントからデータを消費するための柔軟な方法を提供します。 詳細は、、 [RESTデータプロバイダーを使用したフォームオプションの入力](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) を参照してください。
 
 RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvider`拡張ポイントを使用して、独自のデータプロバイダーを作成します。
 
 ```{note}
-このデータプロバイダーの例では、 [GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search) から XML データを消費します。 このサンプルには、Liferay社員のAPIキーがハードコードされています。 サンプルを使いすぎないようにしてください。 本番環境では絶対に使用しないでください。
+このデータプロバイダーの例では、[GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search)からXMLデータを消費します。 このサンプルには、Liferay社員のAPIキーがハードコードされています。
+サンプルを使いすぎないようにしてください。 本番環境では絶対に使用しないでください。
 ```
-
-<a name="deploy-a-custom-data-provider" />
 
 ## カスタムデータプロバイダーをデプロイする
 
-```{include} /_snippets/run-liferay-portal.md
-```
+1. Liferayを起動します。
 
-次に、以下の手順を実行します。
+   ```bash
+   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+   ```
 
 1. Acme XML Data Providerをダウンロードし、解凍する。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-b4d8.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-b4d8.zip -O
    ```
 
    ```bash
@@ -33,7 +33,7 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```tip::
+   ```{tip}
    このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
    ```
 
@@ -43,8 +43,6 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
    STARTED com.acme.n4g6.impl_1.0.0
    ```
 
-<a name="test-the-data-provider" />
-
 ## データプロバイダをテストする
 
 フォームでデータプロバイダーを使用するには
@@ -53,7 +51,7 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
    1. サイトメニューの［コンテンツとデータ］&rarr; ［フォーム］を選択します。
 
-   1. ［データプロバイダー］タブを開き、 **追加** ボタンをクリックします。
+   1. ［データプロバイダー］タブを開き、_追加_ボタンをクリックします。
 
       ![カスタムデータプロバイダがLiferay Formsで使用できるようになりました。](./writing-a-custom-data-provider/images/01.png)
 
@@ -67,7 +65,7 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
       ![カスタムデータプロバイダーを設定し、その出力を指定します。](./writing-a-custom-data-provider/images/02.png)
 
-   1. ［**保存**］ をクリックします。
+   1. *［保存］* をクリックします。
 
 1. Diamond Bar付近のデータプロバイダーを使用するフォームを追加します。
 
@@ -90,8 +88,6 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
    ![データプロバイダは、Liferayから20km以内の都市のリストを返します。](./writing-a-custom-data-provider/images/03.png)
 
 これは良い例ですが、データプロバイダーのURLをハードコードしています。 URLを設定できるようにしておけば、この同じデータプロバイダーを他の都市や、XMLを提供する他のURLでも使用することができます。
-
-<a name="understanding-the-b4d8-ddm-data-provider" />
 
 ## B4D8 DDMデータプロバイダーについて
 
@@ -164,8 +160,8 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
       :lines: 26-28
    ```
 
-   ```{note} 
-      `outputParameters` フィールドに加えて、 `inputParameters` フィールドも [DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java) で提供されます。 
+   ```{note}
+   `outputParameters` フィールドに加えて、 `inputParameters` フィールドも[DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java)で提供されます。
    ```
 
 ![データプロバイダー設定フォームは、作業の準備ができています。](./writing-a-custom-data-provider/images/05.png)
@@ -183,8 +179,6 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
    :language: java
    :lines: 67-70,158-160
 ```
-
-<a name="add-data-provider-settings" />
 
 ## データプロバイダー設定を追加する
 
@@ -281,8 +275,6 @@ import com.liferay.portal.kernel.util.Http;
 
 これで、アップデートデータプロバイダをテストする準備が整いました。
 
-<a name="deploy-and-test-the-updated-data-provider" />
-
 ## 更新されたデータプロバイダのデプロイとテスト
 
 更新されたデータプロバイダーをフォームで使用するには
@@ -296,7 +288,7 @@ import com.liferay.portal.kernel.util.Http;
 1. データプロバイダーのインスタンスを追加します。
       - **名前：** Cites Near Recife, Pernambuco (Brazil)
       - **説明：** GeoDataSource Location Search--Liferayのブラジルオフィスから20km以内の都市を取得します。
-      - **URL:**
+      - **URL：**
         ```
         https://api.geodatasource.com/cities?key=LAOOBDZVQ5Z9HHYC4OCXHTGZGQLENMNA&format=xml&lat=-8.0342896&lng=-34.9239708
         ```

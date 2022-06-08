@@ -6,8 +6,6 @@
 
 ここに示す例は、単一のLiferay DXPノードと単一のElasticsearchノードで構成されています。 構成例は、セキュリティ構成の設定を含む[CCR設定リファレンス](./ccr-basic-use-case-config-reference.md)にも記載されています。
 
-<a name="configure-the-remote-leader-elasticsearch-cluster" />
-
 ## リモートリーダーElasticsearchクラスターの構成
 
 このセットアップ例では、最初に設定するElasticsearchクラスターは、CCR固有の設定がない本番環境モードのクラスターです。ローカルのLiferay DXPノードからの読み取りと書き込み、および別のデータセンタにあるLiferay DXPノードからの書き込み要求を受け入れます。
@@ -44,7 +42,7 @@
    xpack.monitoring.collection.enabled: true
    ```
 
-   セキュリティ設定（`xpack.security...`）を使用するには、パスワードを設定し、ノード証明書を取得する必要があります。 詳しくは、 [Elasticsearchの保護](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md) を参照してください。
+   セキュリティ設定（`xpack.security...`）を使用するには、パスワードを設定し、ノード証明書を取得する必要があります。 詳しくは、[Securing Elasticsearch](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)を参照してください。
 
 1. サーバーを起動します。 サーバーディレクトリのルートにいる場合は、以下を実行します。
 
@@ -52,10 +50,10 @@
       ./bin/elasticssearch
       ```
 
-1. 試用段階で、まだ適切なライセンスを持っていない場合は、 [Elasticsearchのトライアルライセンス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/start-trial.html) を開始してください。
+1. 試用段階で、まだ適切なライセンスを持っていない場合は、[Elasticsearchのトライアルライセンス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/start-trial.html)を開始してください。
 
    ```
-   POST / **license/start** trial?acknowledge=true
+   POST /_license/start_trial?acknowledge=true
    ```
 
    正常にインストールされると、ログに`- valid`メッセージが表示されます。
@@ -63,8 +61,6 @@
    ```bash
    [2020-02-26T10:19:36,420][INFO ][o.e.l.LicenseService     ] [es-leader-node-1] license [lf263a315-8da3-41f7-8622-lfd7cc14cae29] mode [trial] - valid
    ```
-
-<a name="configure-the-remote-liferay-dxp-cluster-node" />
 
 ### リモートLiferay DXPクラスターノードの構成
 
@@ -97,7 +93,7 @@
    ```
 
    ```{tip}
-      開発やテストの際には、設定ファイルで ``logExceptionsOnly="false"`` を設定しておくと便利です。 
+   During development and testing, it's useful to set `logExceptionsOnly="false"` in the configuration files. 
    ```
 
 1. リモート接続を設定します。
@@ -118,7 +114,7 @@
    ```
 
    ```{important}
-      また、``ElasticsearchConnectionConfiguration.config``の中の``remoteClusterConnectionId``の値は、``ElasticsearchConnectionConfiguration-remote.config``ファイルの中の``connectionId``と一致しなければなりません。 
+   The `remoteClusterConnectionId` value in the `ElasticsearchConfiguration.config` must match the `connectionId` in the `ElasticsearchConnectionConfiguration-remote.config` file. 
    ```
 
    Liferay DXP 7.2の場合、 `com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config` という名前の設定ファイルに以下の内容を記述して、接続を保護します。
@@ -141,7 +137,7 @@
 1. Liferay DXPサーバーを起動します。
 
    ```{important}
-      DXPを新規にインストールして設定する場合、コントロールパネルの > 設定 > 検索 の **Index Actions** タブで、スペルチェックのインデックスを再作成するようにしてください。
+   DXPを新規にインストールして設定する場合、コントロールパネルの > 設定 > 検索 の *Index Actions* タブで、スペルチェックのインデックスを再作成するようにしてください。
    ```
 
 Kibanaがリモート/リーダーのElasticsearchクラスタに接続されている場合、Management &rarr; Index Managementにナビゲートして、利用可能なLiferayインデックスを確認します。

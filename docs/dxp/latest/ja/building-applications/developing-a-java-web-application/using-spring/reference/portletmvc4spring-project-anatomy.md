@@ -2,13 +2,9 @@
 
 PortletMVC4Springポートレットは、WARにパッケージ化されています。 Liferayは、JSP/JSPXおよびThymeleafテンプレートを使用するように構成されたプロジェクトを作成するためのMavenアーキタイプを提供します。 それらのコマンドを以下に示します。 PortletMVC4Springプロジェクトストラクチャーは、そのコマンドに従います。
 
-<a name="maven-commands-for-generating-portletmvc4spring-projects" />
-
 ## PortletMVC4Springプロジェクトを生成するためのMavenコマンド
 
-JSPXおよび [Thymeleaf](https://www.thymeleaf.org) ビューテンプレートを使用するPortletMVC4Springポートレットプロジェクトを生成するためのMavenコマンドは次のとおりです。
-
-<a name="spjspx-form-portlet" />
+JSPXおよび[Thymeleaf](https://www.thymeleaf.org)ビューテンプレートを使用するPortletMVC4Springポートレットプロジェクトを生成するためのMavenコマンドは次のとおりです。
 
 ### SP/JSPXフォームポートレット
 
@@ -21,8 +17,6 @@ mvn archetype:generate \
 * DartifactId=com.mycompany.my.form.jsp.portlet
 ```
 
-<a name="thymeleaf-form-portlet" />
-
 ### Thymeleafフォームポートレット
 
 ```bash
@@ -33,8 +27,6 @@ mvn archetype:generate \
 * DgroupId=com.mycompany \
 * DartifactId=com.mycompany.my.form.thymeleaf.portlet
 ```
-
-<a name="project-structure" />
 
 ## プロジェクトストラクチャー
 

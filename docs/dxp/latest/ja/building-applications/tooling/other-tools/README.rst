@@ -1,4 +1,4 @@
-Other Tools
+その他のツール
 ===========
 
 -  :doc:`/building-applications/tooling/other-tools/fragments-cli`
@@ -26,7 +26,7 @@ Liferay npm Bundler
 -  :doc:`/building-applications/tooling/other-tools/liferay-npm-bundler/npmbundlerrc-structure`
 -  :doc:`/building-applications/tooling/other-tools/liferay-npm-bundler/the-structure-of-osgi-bundles-containing-npm-packages`
 
-Bundler Migration Guide
+バンドラー移行ガイド
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 -  :doc:`/building-applications/tooling/other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-bundler-projects-intro`

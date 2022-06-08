@@ -2,20 +2,18 @@
 
 <!-- Really missing an introductory statement here -->
 
-<a name="blog-entry-permissions" />
-
 ## ブログエントリの権限
 
-[**Blogs**] ウィジェットに移動します。 ブログエントリの横にある **アクション**（![Actions](../../images/icon-actions.png)）をクリックし、次に [**Permissions**] をクリックします。
+_［ブログ］_ウィジェットに移動します。 ブログエントリーの横にある_アクション_（![Actions](../../images/icon-actions.png)）をクリックし、次に_［Permissions］_をクリックします。
 
-![ブログエントリの権限](./blog-permissions-reference/images/01.png)
+![ブログエントリーの権限](./blog-permissions-reference/images/01.png)
 
-| 権限                | 説明                                                            |
-| :--- | :--- |
-| Update Discussion | ブログエントリに対する他のユーザーのコメントを編集します。                                 |
-| Delete            | ブログエントリを[ゴミ箱](../recycle-bin/recycle-bin-overview.md)に移動します 。 |
-| Permissions       | ブログエントリの権限を表示および変更します。                                        |
-| Delete Discussion | ブログエントリのコメントを削除します。                                           |
-| Update            | ブログエントリを編集および変更します。                                           |
-| View              | ブログエントリを表示します。                                                |
-| ディスカッションを追加       | ブログエントリにコメントします。                                              |
+| 権限        | Description                                                    |
+|:--------- |:-------------------------------------------------------------- |
+| コメントを更新する | ブログエントリーに対する他のユーザーのコメントを編集します。                                 |
+| 削除        | ブログエントリーを[ゴミ箱](../recycle-bin/recycle-bin-overview.md)に移動します 。 |
+| 権限の設定     | ブログエントリーの権限を表示および変更します。                                        |
+| コメントを削除する | ブログエントリーのコメントを削除します。                                           |
+| 更新        | ブログエントリーを編集および変更します。                                           |
+| 表示        | ブログエントリーを表示します。                                                |
+| コメントを追加する | ブログエントリーにコメントします。                                              |

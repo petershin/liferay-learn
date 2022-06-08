@@ -5,7 +5,7 @@
 ![アイコンヘルプタグの例です。](./liferay-ui-icon-help/images/01.png)
 
 ```{note}
-カスタムテーマをインストールした場合は、``liferay-ui:icon-help`` タグを動作させるために``view.jsp``に次のインポートを追加する必要がある場合があります。
+カスタムテーマをインストールした場合は、iferay-ui:icon-help` タグを動作させるために`view.jsp`に次のインポートを追加する必要がある場合があります。
 
 <%@ taglib uri="http://liferay.com/tld/theme" prefix="liferay-theme"%> <liferay-theme:defineObjects />
 ```
@@ -21,10 +21,10 @@
 
 ![ヘルプアイコンは、コントロールパネル全体で使用されています。](./liferay-ui-icon-help/images/02.png)
 
-メッセージは[言語キー](https://help.liferay.com/hc/en-us/articles/360028746692-Localizing-Your-Application)を介して提供されることに注意してください。 テスト目的ではツールチップのメッセージに文字列を使用できますが、言語キーはベストプラクティスと見なされており、本番環境で使用する必要があります。
+メッセージは [言語キー](https://help.liferay.com/hc/ja/articles/360028746692-Localizing-Your-Application) を介して提供されることに注意してください。 テスト目的ではツールチップのメッセージに文字列を使用できますが、言語キーはベストプラクティスと見なされており、本番環境で使用する必要があります。
 
 ## 関連トピック
 
-* [Clay Badges](../clay-tag-library/clay-badges.md)
-* [Clay Stickers](../clay-tag-library/clay-stickers.md)
-* [Liferay UI Icon Menus](./liferay-ui-icon-menus.md)
+* [Clayバッジ](../clay-tag-library/clay-badges.md)
+* [Clayステッカー](../clay-tag-library/clay-stickers.md)
+* [Liferay UIアイコンメニュー](./liferay-ui-icon-menus.md)

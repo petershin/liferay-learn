@@ -17,7 +17,7 @@ clay-tag-library/clay-progress-bars.md
 clay-tag-library/clay-stickers.md
 ```
 
-Liferay Clayタグライブラリは、アプリで[Clay](https://clayui.com/) UIコンポーネントを作成するためのタグのセットを提供します。
+Liferay Clayタグライブラリは、アプリで [Clay](https://clayui.com/) UIコンポーネントを作成するためのタグのセットを提供します。
 
 ```{note}
 AUI taglibは、@product-ver@で廃止予定になりました。 将来の互換性の問題を回避するために、Clay taglibを使用することをお勧めします。

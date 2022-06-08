@@ -22,4 +22,4 @@ JSPの中に `<liferay-portlet:defineObjects>` というタグがあることに
 | `PortletSession portletSession`                                                                                                                                                           | 複数のリクエストにまたがってユーザーを識別する方法と、ユーザーに関する一時的な情報を保存する方法を提供します。 `portletSession`は、各ユーザークライアントに対して作成されます。 `portletSession`は、それが含まれるリクエスト処理フェーズにかかわらず、常にポートレットJSPで利用可能です。 `portletSession`は、セッションが存在しない場合は`null`です。 |
 | `Map<String, Object> portletSessionScope`                                                                                                                                           | `PortletSession.getAtrributeMap()`呼び出しと同等のマップ、またはセッション属性が存在しない場合は、空のマップを提供します。                                                                                                                            |
 
-詳しくは、[Portlet 3.0 API Javadoc](https://learn.liferay.com/reference/latest/en/portlet-api/index.html)をご覧ください。
+詳しくは、 [Portlet 3.0 API Javadoc](https://learn.liferay.com/reference/latest/en/portlet-api/index.html) をご覧ください。

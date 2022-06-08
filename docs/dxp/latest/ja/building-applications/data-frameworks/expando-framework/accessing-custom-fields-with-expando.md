@@ -1,6 +1,6 @@
 # Expandosでカスタムフィールドにアクセスする
 
-アプリケーションに追加のフィールドが必要な場合は、いつでも[サービスモデル定義](../service-builder/service-builder-basics/generating-model-persistence-and-service-code.html#examine-the-service-model-definition)に追加して、サービスビルダーを再実行することができます。 これにより、データベースのテーブルに新しいカラムが追加されます。 これは機能しますが、面倒です。ユーザーを新しいスキーマに移行するためのアップグレードプロセスを書かなければならなくなります。 しかし、LiferayのExpando機能を使えば、データベースを修正することなく、フィールドを追加することができます。 Expandosは、Javaでオブジェクトに追加のプロパティを追加することで機能します。 サンプルプロジェクトでは、ユーザーがカスタムフィールドにアクセスするデモを行っています。
+アプリケーションに追加のフィールドが必要な場合は、いつでも [サービスモデル定義](../service-builder/service-builder-basics/generating-model-persistence-and-service-code.html#examine-the-service-model-definition) に追加して、サービスビルダーを再実行することができます。 これにより、データベースのテーブルに新しいカラムが追加されます。 これは機能しますが、面倒です。ユーザーを新しいスキーマに移行するためのアップグレードプロセスを書かなければならなくなります。 しかし、LiferayのExpando機能を使えば、データベースを修正することなく、フィールドを追加することができます。 Expandosは、Javaでオブジェクトに追加のプロパティを追加することで機能します。 サンプルプロジェクトでは、ユーザーがカスタムフィールドにアクセスするデモを行っています。
 
 ## サンプルプロジェクトを参照する
 
@@ -12,9 +12,9 @@
 
    別のLiferay PortalバージョンまたはLiferay DXPを実行している場合は、上記のコマンドを適宜調整してください。
 
-1. *［コントロールパネル］* &rarr; *［ユーザーと組織］*へ移動します。 管理者ユーザーのオプションアイコン（![Options icon](../../../images/icon-actions.png)）をクリックし、 *［編集］*をクリックします。 ［一般］タブで［カスタムフィールド］までスクロールします。 *[Add]*ボタンをクリックします。
+1. ［**コントロールパネル**］ &rarr; ［**ユーザーと組織**］ へ移動します。 管理者ユーザーのオプションアイコン（![Options icon](../../../images/icon-actions.png)）をクリックし、 ［**編集**］ をクリックします。 ［一般］タブで［カスタムフィールド］までスクロールします。 [**Add**] ボタンをクリックします。
 
-1. 項目タイプとして、*［Input Field］*を選択します。 項目名として `［f5a3Text］` を入力します。 `［test］`のように、［starting value］を入力します。 *［Save］* をクリックします。
+1. 項目タイプとして、 ［**Input Field**］ を選択します。 項目名として `［f5a3Text］` を入力します。 `［test］`のように、［starting value］を入力します。 ［**Save**］ をクリックします。
 
    ![ユーザーに［f5a3Text］というカスタムフィールドを作成します。](./accessing-custom-fields-with-expando/images/01.png)
 
@@ -23,7 +23,7 @@
    
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/expando-framework/liferay-f5a3.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/expando-framework/liferay-f5a3.zip -O
    ```
 </p></li> </ol> 
 
@@ -78,7 +78,7 @@
 
 ## JSPファイルを調べる
 
-`<liferay-theme:defineObjects>`タグは、Liferay`User`オブジェクトにアクセスするためにJSPに含まれています。 多くのLiferayオブジェクトと同様に、`User`オブジェクトは`ExpandoBridge`サービスを継承しており、カスタムフィールドの値を作成(つまり`addAttribute()`)、設定(つまり`setAttribute()`)、取得(つまり`getAttribute()`)する方法が含まれています。 すべてのインターフェースのメソッドを見るには、[ExpandoBridge javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/expando/kernel/model/ExpandoBridge.html)をご覧ください。 
+`<liferay-theme:defineObjects>`タグは、Liferay`User`オブジェクトにアクセスするためにJSPに含まれています。 多くのLiferayオブジェクトと同様に、`User`オブジェクトは`ExpandoBridge`サービスを継承しており、カスタムフィールドの値を作成(つまり`addAttribute()`)、設定(つまり`setAttribute()`)、取得(つまり`getAttribute()`)する方法が含まれています。 すべてのインターフェースのメソッドを見るには、 [ExpandoBridge javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/expando/kernel/model/ExpandoBridge.html) をご覧ください。 
 
 
 

@@ -1,6 +1,6 @@
 # ジオマップグラフ
 
-ジオマップグラフを使用すると、指定された色範囲を指定して、地理に基づいてデータを視覚化できます。通常、明るい色は低いランクを表し、暗い色は高いランクを表します。 デフォルトの構成は、Clayグラフのジオマップコンポーネントから取得されます<!--\[geomap component\](https://github.com/liferay/clay/blob/develop/packages/clay-charts/src/Geomap.js#L233-L276)-->: 水色（#b1d4ff）から濃い青（#0065e4）の範囲で、場所の`pop_est`値（ジオマップのJSONファイルで指定）に基づいて地理をランク付けします。
+ジオマップグラフを使用すると、指定された色範囲を指定して、地理に基づいてデータを視覚化できます。通常、明るい色は低いランクを表し、暗い色は高いランクを表します。 デフォルトの構成は、Clayグラフのジオマップコンポーネントから取得されます <!--\[geomap component\](https://github.com/liferay/clay/blob/develop/packages/clay-charts/src/Geomap.js#L233-L276)--> : 水色（#b1d4ff）から濃い青（#0065e4）の範囲で、場所の`pop_est`値（ジオマップのJSONファイルで指定）に基づいて地理をランク付けします。
 
 ![ジオマップグラフには、データを表すヒートマップが表示されます。](./geomap-chart/images/01.png)
 
@@ -86,6 +86,6 @@
 
 ## 関連トピック
 
-* [Bar Charts](./bar-chart.md)
-* [Gauge Charts](./gauge-chart.md)
-* [Geomap Charts](./geomap-chart.md)
+* [棒グラフ](./bar-chart.md)
+* [ゲージグラフ](./gauge-chart.md)
+* [ジオマップグラフ](./geomap-chart.md)

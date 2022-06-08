@@ -1,6 +1,6 @@
 # ドーナツグラフ
 
-ドーナツグラフはパーセンテージベースです。 ドーナツグラフは円グラフに似ていますが、中央に穴があります。 各データセットは、[`SingleValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/SingleValueColumn.html)の新しいインスタンスとして定義する必要があります。 次の手順に従って、ドーナツグラフを使用するようにポートレットを構成します。
+ドーナツグラフはパーセンテージベースです。 ドーナツグラフは円グラフに似ていますが、中央に穴があります。 各データセットは、 [`SingleValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/SingleValueColumn.html) の新しいインスタンスとして定義する必要があります。 次の手順に従って、ドーナツグラフを使用するようにポートレットを構成します。
 
 1. Chart taglibを`DonutChartConfig`クラスと`SingleValueColumn`クラスとともにバンドルの`init.jsp`ファイルにインポートします。
 
@@ -38,6 +38,6 @@
 
 ## 関連トピック
 
-* [Donut Charts](./donut-chart.md)
+* [ドーナツグラフ](./donut-chart.md)
 * [Gauge Charts](./line-chart.md)
 * [Pie Charts](./scatter-chart.md)

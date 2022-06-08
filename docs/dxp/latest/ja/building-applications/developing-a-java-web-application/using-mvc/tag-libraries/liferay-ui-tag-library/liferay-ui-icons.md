@@ -2,7 +2,7 @@
 
 Liferay UI taglibは、アプリに含めることができるいくつかのアイコンを提供します。 アプリにアイコンを追加するには、`liferay-ui:icon`タグを使用し、`icon`、`iconCssClass`、または`image`属性のいずれかでアイコンを指定します。 各ユースケースの例を以下に示します。
 
-`image`属性は、使用する[Liferay UIアイコン](https://github.com/liferay/liferay-portal/tree/7.2.x/modules/apps/frontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/images)を指定します（スタイルなしテーマの`images/common`フォルダで定義されています）。 JSPの構成例を次に示します。
+`image`属性は、使用する [Liferay UIアイコン](https://github.com/liferay/liferay-portal/tree/7.2.x/modules/apps/frontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/images) を指定します（スタイルなしテーマの`images/common`フォルダで定義されています）。 JSPの構成例を次に示します。
 
 ```jsp
 <div class="col-md-3">
@@ -28,7 +28,7 @@ Liferay UI taglibは、言語フラグアイコンも公開します。 言語�
 />
 ```
 
-使用可能な [`init.ftl` 変数](https://github.com/liferay/liferay-portal/blob/7.2.x/modules/appsfrontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/templates/init.ftl)と[Liferay DXPマクロ](https://help.liferay.com/hc/en-us/articles/360029145851-FreeMarker-Taglib-Macros)を使用する次のコードで、FreeMarkerで同じ結果を得ることができます。
+使用可能な [`init.ftl` 変数](https://github.com/liferay/liferay-portal/blob/7.2.x/modules/appsfrontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/templates/init.ftl) と [Liferay DXPマクロ](https://help.liferay.com/hc/ja/articles/360029145851-FreeMarker-Taglib-Macros) を使用する次のコードで、FreeMarkerで同じ結果を得ることができます。
 
 ```
 <#assign flag_message>
@@ -50,7 +50,7 @@ Liferay UI taglibは、言語フラグアイコンも公開します。 言語�
 
 ![Liferay UIアイコンは、言語に基づいて構成できます。](./liferay-ui-icons/images/03.png)
 
-`icon`属性は、使用する[Font Awesomeアイコン](https://fontawesome.com/v3.2.1/icons/)を指定します。
+`icon`属性は、使用する [Font Awesomeアイコン](https://fontawesome.com/v3.2.1/icons/) を指定します。
 
 ```jsp
 <liferay-ui:icon icon="angle-down" />
@@ -58,7 +58,7 @@ Liferay UI taglibは、言語フラグアイコンも公開します。 言語�
 
 ![icon属性を使用して、アプリにFont Awesomeアイコンを含めることができます。](./liferay-ui-icons/images/04.png)
 
-`iconCssClass`属性は、使用する[glyphicon](http://marcoceppi.github.io/bootstrap-glyphicons/)を指定します。
+`iconCssClass`属性は、使用する [glyphicon](http://marcoceppi.github.io/bootstrap-glyphicons/) を指定します。
 
 ```jsp
 <liferay-ui:icon
@@ -71,10 +71,10 @@ Liferay UI taglibは、言語フラグアイコンも公開します。 言語�
 
 ![アプリでFont Awesomeアイコンを使用できます。](./liferay-ui-icons/images/05.png)
 
-上記の例では、アイコンの使用可能な属性のいくつかを使用しています。 完全なリストについては、[Icon taglibdocs](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon.html)を参照してください。
+上記の例では、アイコンの使用可能な属性のいくつかを使用しています。 完全なリストについては、 [Icon taglibdocs](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon.html) を参照してください。
 
 ## 関連トピック
 
-* [Clay Icons](../clay-tag-library/clay-icons.md)
-* [Liferay UI Icon Lists](./liferay-ui-icon-lists.md)
-* [Liferay UI Icon Menus](./liferay-ui-icon-menus.md)
+* [Clayアイコン](../clay-tag-library/clay-icons.md)
+* [Liferay UIアイコンリスト](./liferay-ui-icon-lists.md)
+* [Liferay UIアイコンメニュー](./liferay-ui-icon-menus.md)

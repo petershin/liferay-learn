@@ -30,7 +30,7 @@ container
 
 `frontend-js-react-web`モジュールには、コードを複製することなく、コンポーネントに便利な動作を取り入れるために使用できる一連の共通フックも含まれています。
 
-[`usePrevious`フック](https://reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state)は、現在の値と以前の値（状態、プロップ、または任意の値）を比較するために使用できます。
+[`usePrevious`フック](https://reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state) は、現在の値と以前の値（状態、プロップ、または任意の値）を比較するために使用できます。
 
 `useIsMounted`フックは、コンポーネントがまだマウントされているかどうかを判別するために使用できます。 例を以下に示します。
 
@@ -77,4 +77,4 @@ function OverlayContainer({root, allowEdit}) {
 />
 ```
 
-これは、[上記](#frontend-js-react-web-module)に示す`frontend-js-react-web`モジュールの`render()`関数をラップしています。 ここで渡された`data`は`renderData`として渡され、`module`が`renderable`（[上記](#frontend-js-react-web-module)に示すコンポーネント機能またはReact要素）をエクスポートします。
+これは、 [上記](#frontend-js-react-web-module) に示す`frontend-js-react-web`モジュールの`render()`関数をラップしています。 ここで渡された`data`は`renderData`として渡され、`module`が`renderable`（ [上記](#frontend-js-react-web-module) に示すコンポーネント機能またはReact要素）をエクスポートします。

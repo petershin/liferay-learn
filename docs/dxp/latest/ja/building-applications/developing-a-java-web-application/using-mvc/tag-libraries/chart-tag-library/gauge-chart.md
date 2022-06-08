@@ -1,6 +1,6 @@
 # ゲージグラフ
 
-ゲージグラフはパーセンテージベースです。 ゲージグラフは、パーセンテージベースのデータが特定の範囲内でどの位置にあるかを示します。 各データセットは、[`SingleValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/SingleValueColumn.html)の新しいインスタンスとして定義する必要があります。 次の手順に従って、ゲージグラフを使用するようにポートレットを構成します。
+ゲージグラフはパーセンテージベースです。 ゲージグラフは、パーセンテージベースのデータが特定の範囲内でどの位置にあるかを示します。 各データセットは、 [`SingleValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/SingleValueColumn.html) の新しいインスタンスとして定義する必要があります。 次の手順に従って、ゲージグラフを使用するようにポートレットを構成します。
 
 1. Chart taglibを`GaugeChartConfig`クラスと`SingleValueColumn`クラスとともにバンドルの`init.jsp`ファイルにインポートします。
 
@@ -37,6 +37,6 @@
 
 ## 関連トピック
 
-* [Gauge Charts](./gauge-chart.md)
-* [Geomap Charts](./geomap-chart.md)
-* [Pie Charts](./pie-chart.md)
+* [ゲージグラフ](./gauge-chart.md)
+* [ジオマップグラフ](./geomap-chart.md)
+* [円グラフ](./pie-chart.md)

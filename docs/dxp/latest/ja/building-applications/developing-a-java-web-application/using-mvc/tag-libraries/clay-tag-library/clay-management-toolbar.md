@@ -16,7 +16,7 @@
 />
 ```
 
-[Filtering and Sorting Items with the Management Toolbar](https://help.liferay.com/hc/en-us/articles/360029526932-Filtering-and-Sorting-Items-with-the-Management-Toolbar)で、表示コンテキストの使用例を確認できます。 管理ツールバーの構成には、表示コンテキストは必要ありません。 表示コンテキストを介して、管理ツールバーの構成オプションを必要なだけ指定できます。
+[Filtering and Sorting Items with the Management Toolbar](https://help.liferay.com/hc/ja/articles/360029526932-Filtering-and-Sorting-Items-with-the-Management-Toolbar) で、表示コンテキストの使用例を確認できます。 管理ツールバーの構成には、表示コンテキストは必要ありません。 表示コンテキストを介して、管理ツールバーの構成オプションを必要なだけ指定できます。
 
 ## チェックボックスとアクション
 
@@ -223,7 +223,7 @@ filterLabelItems="<%=
 
 ![管理ツールバーのリスト表示タイプは、コンテンツの詳細な説明を提供します。](./clay-management-toolbar/images/09.png)
 
-**テーブル：**デフォルトビュー。 検索結果の列を左から右に一覧表示します。
+**テーブル：** デフォルトビュー。 検索結果の列を左から右に一覧表示します。
 
 ![管理ツールバーのテーブル表示タイプには、コンテンツの情報が個々の列に一覧表示されます。](./clay-management-toolbar/images/10.png)
 
@@ -253,7 +253,7 @@ viewTypes="<%=
 %>"
 ```
 
-上記の例は、JSPで表示タイプを設定する方法を示していますが、[各表示タイプをいつ使用するかも指定する](https://help.liferay.com/hc/en-us/articles/360029848351-Implementing-the-View-Types)必要があります。
+上記の例は、JSPで表示タイプを設定する方法を示していますが、 [各表示タイプをいつ使用するかも指定する](https://help.liferay.com/hc/ja/articles/360029848351-Implementing-the-View-Types) 必要があります。
 
 ![管理ツールバーには、3つの表示タイプオプションがあります。](./clay-management-toolbar/images/11.png)
 
@@ -301,6 +301,6 @@ creationMenu="<%=
 
 ## 関連トピック
 
-* [Clay Dropdown Menus and Action Menus](./clay-dropdown-and-action-menus.md)
-* [Clay Icons](./clay-icons.md)
-* [Clay Navigation Bars](./clay-navigation-bars.md)
+* [Clayドロップダウンメニューとアクションメニュー](./clay-dropdown-and-action-menus.md)
+* [Clayアイコン](./clay-icons.md)
+* [Clayナビゲーションバー](./clay-navigation-bars.md)

@@ -18,6 +18,6 @@ Liferay Clay taglibは、アプリで使用できる言語フラグアイコン�
 
 ## 関連トピック
 
-* [Clay Badges](./clay-badges.md)
-* [Clay Stickers](./clay-stickers.md)
-* [Using Clay Icons in a Theme](https://help.liferay.com/hc/en-us/articles/360034474532-Using-Clay-Icons-in-a-Theme)
+* [Clayバッジ](./clay-badges.md)
+* [Clayステッカー](./clay-stickers.md)
+* [Using Clay Icons in a Theme](https://help.liferay.com/hc/ja/articles/360034474532-Using-Clay-Icons-in-a-Theme)

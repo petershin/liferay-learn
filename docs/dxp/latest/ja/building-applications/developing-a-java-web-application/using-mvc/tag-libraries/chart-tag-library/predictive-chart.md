@@ -14,7 +14,7 @@
     <%@ page import="com.liferay.frontend.taglib.chart.model.MixedDataColumn" %>
     ```
 
-1. 次のJavaスクリプトレットを`view.jsp`の先頭に追加します。 データ系列ごとに、[`MixedDataColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MixedDataColumn.html)（単一の数値と3つの数値の配列の両方に対応する列）を追加します。 単一の数値は既存のデータを定義します。 数値の配列は予測/予想データとして使用され、最小値、推定値、最大値の3つの数値が含まれます。 推定値は塗りつぶされ、最小値と最大値で指定された境界線で強調表示された領域で囲まれます。 これにより、推定値を視覚化すると同時に、可能な値の範囲を把握できます。 `addDataColumn()`メソッドを使用して、各データ系列を追加します。
+1. 次のJavaスクリプトレットを`view.jsp`の先頭に追加します。 データ系列ごとに、 [`MixedDataColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MixedDataColumn.html) （単一の数値と3つの数値の配列の両方に対応する列）を追加します。 単一の数値は既存のデータを定義します。 数値の配列は予測/予想データとして使用され、最小値、推定値、最大値の3つの数値が含まれます。 推定値は塗りつぶされ、最小値と最大値で指定された境界線で強調表示された領域で囲まれます。 これにより、推定値を視覚化すると同時に、可能な値の範囲を把握できます。 `addDataColumn()`メソッドを使用して、各データ系列を追加します。
 
     ```java
     <%
@@ -63,11 +63,11 @@
 
     予測グラフには、次のプロパティがあります。
 
-    **axisXTickFormat：**X軸の時間フォーマットを指定するオプションの文字列。 指定できる形式の詳細については、[d3's time format README](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format)を参照してください。 この値は、`setAxisXTickFormat()`メソッドを使用して設定されます。
+    **axisXTickFormat：** X軸の時間フォーマットを指定するオプションの文字列。 指定できる形式の詳細については、 [d3's time format README](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format) を参照してください。 この値は、`setAxisXTickFormat()`メソッドを使用して設定されます。
 
     **予測日：** 予想/予測が表示されるタイムライン内の時点を表す文字列としての日付。 この値はJavaScriptでDateオブジェクトとして解析され、`setPredictionDate()`メソッドを使用して設定されます。
 
-    **時系列：**グラフのX軸に表示されるデータのタイムライン。 この値は、日付の配列として設定されます（例：`2018-01-01` ）。
+    **時系列：** グラフのX軸に表示されるデータのタイムライン。 この値は、日付の配列として設定されます（例：`2018-01-01` ）。
 
 1. `<chart>` taglibを`view.jsp`に追加し、`config`属性の値として`_predictiveChartConfig`を渡します。
 
@@ -85,6 +85,6 @@
 
 ## 関連トピック
 
-* [Combination Charts](./combination-chart.md)
-* [Geomap Charts](./geomap-chart.md)
-* [Scatter Charts](./scatter-chart.md)
+* [組み合わせグラフ](./combination-chart.md)
+* [ジオマップグラフ](./geomap-chart.md)
+* [散布図](./scatter-chart.md)

@@ -1,6 +1,6 @@
 # Reactチャートでのオブジェクトデータの使用
 
-ここでは、[オブジェクト](../../objects.md)、[ヘッドレスAPI](../understanding-object-integrations/headless-framework-integration.md)、[リモートアプリケーション](../../remote-apps.md)を使って、データダッシュボード用の動的なグラフを作成する方法を説明します。 まず、オブジェクトAPI 呼び出し用に[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)を有効にして、新しいDXP インスタンスをセットアップします。 次に、データの受信と保存を行うためのオブジェクトを作成します。 REST APIを使ってオブジェクトにデータを追加したら、提供されているReact [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)アプリケーションをダウンロードし、ビルドしてください。 コードがコンパイルされたら、生成された`.js`ファイルをLiferayドキュメントライブラリーでホストし、そのWebDAV URLをコピーします。 最後に、このURLを使ってReactチャートのリモートアプリケーションを作成し、ページウィジェットとしてデプロイします。
+ここでは、[オブジェクト](../../objects.md)、[ヘッドレスAPI](../understanding-object-integrations/headless-framework-integration.md)、[リモートアプリケーション](../../remote-apps.md)を使って、データダッシュボード用の動的なグラフを作成する方法を説明します。 まず、オブジェクトAPI 呼び出し用に [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) を有効にして、新しいDXP インスタンスをセットアップします。 次に、データの受信と保存を行うためのオブジェクトを作成します。 REST APIを使ってオブジェクトにデータを追加したら、提供されているReact [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) アプリケーションをダウンロードし、ビルドしてください。 コードがコンパイルされたら、生成された`.js`ファイルをLiferayドキュメントライブラリーでホストし、そのWebDAV URLをコピーします。 最後に、このURLを使ってReactチャートのリモートアプリケーションを作成し、ページウィジェットとしてデプロイします。
 
 チャートは5秒ごとにヘッドレスAPI経由でオブジェクトを呼び出し、オブジェクトのデータを返してチャートを動的に更新するように構成されています。
 
@@ -21,15 +21,15 @@ docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
 <li><p spaces-before="0"><em x-id="3">［Portal Cross-Origin Resource Sharing (CORS)］</em>タブで、 <em x-id="3">［Default Portal CORS Configuration］</em>をクリックしてください。</p>
 
 <p spaces-before="3"><img src="./using-object-data-with-react-charts/images/02.png" alt="［Default Portal CORS Configuration］をクリックします。" /></p></li>
-<li><p spaces-before="0"><em x-id="3">［URL Pattern］</em> に <code>/o/c/*` の値を追加して*［保存］*をクリックしてください。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
+<li><p spaces-before="0"><em x-id="3">［URL Pattern］</em> に <code>/o/c/ **` の値を追加して**［保存］*をクリックしてください。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
 
    ![オブジェクトAPI用の /o/c/* URL パターンを追加します。](./using-object-data-with-react-charts/images/03.png)</li> </ol>
 
 ## React チャート用のオブジェクトを作成する
 
-1. *グローバルメニュー* （![Global Menu](../../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］ * タブをクリックして、 *［オブジェクト］ *に進みます。
+1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**オブジェクト**］ に進みます。
 
-1. *追加*ボタン (![Add Button](../../../images/icon-add.png)) をクリックし、これらの値を入力します。
+1. **追加** ボタン (![Add Button](../../../images/icon-add.png)) をクリックし、これらの値を入力します。
 
    | Field   | 値            |
    |:------- |:------------ |
@@ -41,20 +41,20 @@ docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
    提供されたReactアプリは、この値を使用しています。
    ```
 
-1. 新しい*オブジェクト*ドラフトを選択し、 *［フィールド］* タブをクリックして、これらの*フィールド*を追加します。
+1. 新しい **オブジェクト** ドラフトを選択し、 ［**フィールド**］ タブをクリックして、これらの **フィールド** を追加します。
 
    | ラベル | 項目名 | タイプ      | 必須       |
    |:--- |:--- |:-------- |:-------- |
    | ラベル | ラベル | テキストボックス | &#10004; |
    | 値   | 値   | 整数       | &#10004; |
 
-1. *［詳細］*タブをクリックし、 *［公開］*をクリックします。
+1. ［**詳細**］ タブをクリックし、 ［**公開**］ をクリックします。
 
-[オブジェクトの公開](../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 Liferay UIやヘッドレスAPIでアクセスできるようになりました。
+[オブジェクトの公開](../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 Liferay UIやヘッドレスAPIでアクセスできるようになりました。
 
 ## ヘッドレスAPIを使ったオブジェクトへのデータ追加
 
-1. Liferayの*［APIエクスプローラー］*（すなわち `localhost:8080/o/api`）を開き、 *［RESTアプリケーション］*ドロップダウンメニューをクリックして、 *［c/x3j8objects］*をクリックしてください。
+1. Liferayの ［**APIエクスプローラー**］（すなわち `localhost:8080/o/api`）を開き、 ［**RESTアプリケーション**］ ドロップダウンメニューをクリックして、 ［**c/x3j8objects**］ をクリックしてください。
 
 1. このデータをバッチ`POST`APIのリクエストボディに入力してください。
 
@@ -83,7 +83,7 @@ docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
    ]
    ```
 
-1. *［実行］* をクリックして、データエントリーをオブジェクトに追加します。
+1. ［**実行**］ をクリックして、データエントリーをオブジェクトに追加します。
 
 データの追加が終わったら、提供されたReactサーバーを設定します。 これには、X3J8-ObjectにAPI呼び出しを行い、そのデータを表示するFusionChartの実装が含まれます。
 
@@ -91,10 +91,10 @@ docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
 
 以下の手順で、Reactアプリケーションをダウンロードし、ビルドします。
 
-1. [Reactプロジェクト](./liferay-x3j8.zip)をダウンロードし、解凍してください。
+1. [Reactプロジェクト](./liferay-x3j8.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/liferay-x3j8.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/objects/objects-tutorials/liferay-x3j8.zip -O
    ```
 
    ```bash
@@ -153,15 +153,15 @@ docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
 
 ## アプリケーションの`.js`ファイルをホストする
 
-1. *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［コンテンツ & データ］*と展開して *［Documents and Media］*とクリックします。
+1. **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**コンテンツ & データ**］ と展開して ［**Documents and Media**］ とクリックします。
 
 1. `.js`ファイルをアップロードエリアにドラッグ＆ドロップしてください。
 
    ドキュメントライブラリにアップロードされると、そのファイルには固有のWebDAV URLが割り当てられ、それを使ってリモートアプリケーションを作成することになります。
 
-1. *Info*アイコン (![Info Icon](../../../images/icon-information.png)) をクリックし、*アップロードしたファイル*を選択します。
+1. **Info** アイコン (![Info Icon](../../../images/icon-information.png)) をクリックし、 **アップロードしたファイル** を選択します。
 
-1. ファイルの*［WebDAV URL］*をコピーし、次のステップで使用するために保存してください。
+1. ファイルの ［**WebDAV URL**］ をコピーし、次のステップで使用するために保存してください。
 
    例えば、 `http://localhost:8080/webdav/guest/document_library/main.5a6819d5.js`です。
 
@@ -169,9 +169,9 @@ docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
 
 ## Reactチャートのリモートアプリケーションを作成する
 
-1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、*［アプリケーション］*タブをクリックし、*［Remote Apps］*を選択します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**Remote Apps**］ を選択します。
 
-1. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
+1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
 
 1. 次の値を入力します。
 
@@ -183,14 +183,14 @@ docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
    | URL          | `.js`ファイルのWebDAV URL |
    | ポートレットのカテゴリ名 | リモートアプリケーション         |
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
-保存されると、Liferayはリモートアプリケーションのウィジェットを作成し、サイトページにデプロイすることができます。 このウィジェットは、アプリケーションのポートレットカテゴリ名（つまり、このチュートリアルでは、*リモートアプリケーション* ）の下に表示されます。
+保存されると、Liferayはリモートアプリケーションのウィジェットを作成し、サイトページにデプロイすることができます。 このウィジェットは、アプリケーションのポートレットカテゴリ名（つまり、このチュートリアルでは、 **リモートアプリケーション**）の下に表示されます。
 
 ![リモートアプリケーションウィジェットをサイトページにデプロイすることができます。](./using-object-data-with-react-charts/images/06.png)
 
 ## 追加情報
 
-* [Objects Overview](../../objects.md)
+* [オブジェクト](../../objects.md)
 * [ヘッドレスフレームワークの統合](../understanding-object-integrations/headless-framework-integration.md)
 * [CORSの設定](../../../installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors.md)

@@ -1,6 +1,6 @@
 # Liferay Util Body Bottomの使用
 
-body bottomタグは自己終了タグではありません。 このタグを使用することで、`body`タグの下部に追加のHTMLまたはスクリプトを追加できます。 このタグの開始と終了の間に配置されたコンテンツは[body_bottom.jsp](https://github.com/liferay/liferay-portal/blob/7.2.x/portal-web/docroot/html/common/themes/body_bottom.jsp#L26-L31)に渡され、 このJSPで出力されます。
+body bottomタグは自己終了タグではありません。 このタグを使用することで、`body`タグの下部に追加のHTMLまたはスクリプトを追加できます。 このタグの開始と終了の間に配置されたコンテンツは [body_bottom.jsp](https://github.com/liferay/liferay-portal/blob/7.2.x/portal-web/docroot/html/common/themes/body_bottom.jsp#L26-L31) に渡され、 このJSPで出力されます。
 
 このタグにはオプションの`outputKey`属性もあります。 ページ上の複数のポートレットにこのタグを持つ同じリソースが含まれている場合は、各タグに同じ`outputKey`値を指定して、リソースが一度だけロードされるようにすることができます。
 

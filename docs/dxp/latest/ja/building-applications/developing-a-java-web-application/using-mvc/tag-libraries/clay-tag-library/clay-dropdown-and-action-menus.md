@@ -132,6 +132,6 @@ Clay taglibを使用すると、アプリにドロップダウンメニューと
 
 ## 関連トピック
 
-* [Clay Form Elements](./clay-form-elements.md)
-* [Clay Navigation Bars](./clay-navigation-bars.md)
-* [Clay Progress Bars](./clay-progress-bars.md)
+* [Clayフォーム要素](./clay-form-elements.md)
+* [Clayナビゲーションバー](./clay-navigation-bars.md)
+* [Clay進捗バー](./clay-progress-bars.md)

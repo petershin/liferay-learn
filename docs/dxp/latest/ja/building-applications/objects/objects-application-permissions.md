@@ -2,15 +2,15 @@
 
 > 対応可能：Liferay DXP/Portal 7.4以降
 
-他のLiferayアプリケーションと同様に、オブジェクトポートレットは権限フレームワークと統合されています。 これは、[アプリケーション](#application-permissions)と[リソース](#resource-permissions)の権限をユーザーロールに割り当てて、オブジェクトポートレットとそのデータにアクセスできるユーザーを決定できることを意味します。
+他のLiferayアプリケーションと同様に、オブジェクトポートレットは権限フレームワークと統合されています。 これは、 [アプリケーション](#application-permissions) と [リソース](#resource-permissions) の権限をユーザーロールに割り当てて、オブジェクトポートレットとそのデータにアクセスできるユーザーを決定できることを意味します。
 
 ![ロール権限を定義するときにオブジェクト権限を割り当てます。](./objects-application-permissions/images/01.png)
 
-ユーザーロールへの権限の割り当ての詳細については、[Defining Role Permissions](../../users-and-permissions/roles-and-permissions/defining-role-permissions.md)を参照してください。
+ユーザーロールへの権限の割り当ての詳細については、 [ロール権限の定義](../../users-and-permissions/roles-and-permissions/defining-role-permissions.md) を参照してください。
 
 ## アプリケーションの権限
 
-アプリケーションの権限は、一般的なアプリケーション関連の操作を実行する権限を付与し、[リソース関連の権限](#resource-permissions)は含まれません。
+アプリケーションの権限は、一般的なアプリケーション関連の操作を実行する権限を付与し、 [リソース関連の権限](#resource-permissions) は含まれません。
 
 オブジェクトは、以下のアプリケーション権限を持ちます。
 
@@ -24,7 +24,7 @@
 
 ## リソース権限
 
-リソース権限は、アプリケーションリソースに特定の権限を付与します。 これらの権限の一部は、[データベースのエンティティに対して操作](#actions-on-database-entities)（＝モデルリソース）を実行できるようにします。 また、アプリケーションコンテキストで[リソース関連の操作](#resource-related-actions)を実行する権限を付与するものもあります（例えば、新しいリソースエンティティの作成など）。
+リソース権限は、アプリケーションリソースに特定の権限を付与します。 これらの権限の一部は、 [データベースのエンティティに対して操作](#actions-on-database-entities) （＝モデルリソース）を実行できるようにします。 また、アプリケーションコンテキストで [リソース関連の操作](#resource-related-actions) を実行する権限を付与するものもあります（例えば、新しいリソースエンティティの作成など）。
 
 オブジェクトは、以下のリソース権限を持ちます。
 
@@ -52,13 +52,13 @@
 
 以下の手順に従って、個々のオブジェクト定義の権限を管理します。
 
-1. *［オブジェクト］*アプリケーションを *グローバルメニュー* (![Global Menu](../../images/icon-applications-menu.png))で開きます。
+1. ［**オブジェクト**］ アプリケーションを **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png))で開きます。
 
-1. 目的のオブジェクト定義の *アクション* ボタン(![Actions Button](../../images/icon-actions.png))をクリックし、 *［Permissions］*を選択します。
+1. 目的のオブジェクト定義の **アクション** ボタン(![Actions Button](../../images/icon-actions.png))をクリックし、 ［**Permissions**］ を選択します。
 
    ![目的のオブジェクト定義のアクションボタンをクリックし、［権限］を選択します。](./objects-application-permissions/images/02.png)
 
-1. チェックボックスを使用して、[オブジェクト定義](#actions-on-database-entities)権限を必要なロールに付与します。
+1. チェックボックスを使用して、 [オブジェクト定義](#actions-on-database-entities) 権限を必要なロールに付与します。
 
    ```{note}
    ロールの管理者レベルで定義された権限は、個人レベルで定義された権限をオーバーライドします。
@@ -66,10 +66,10 @@
 
    ![チェックボックスを使用して、必要なロールに権限を割り当てることができます。](./objects-application-permissions/images/03.png)
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 ## 追加情報
 
 * [Objects Overview](../objects.md)
-* [Creating Objects](./creating-and-managing-objects/creating-objects.md)
-* [Managing Objects](./creating-and-managing-objects/managing-objects.md)
+* [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)
+* [オブジェクトの管理](./creating-and-managing-objects/managing-objects.md)

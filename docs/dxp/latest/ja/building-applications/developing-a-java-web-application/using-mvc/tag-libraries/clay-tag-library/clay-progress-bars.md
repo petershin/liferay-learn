@@ -41,6 +41,6 @@ Clay taglibを使用すると、アプリの進行状況を簡単に追跡でき
 
 ## 関連トピック
 
-* [Clay Dropdown Menus and Action Menus](./clay-dropdown-and-action-menus.md)
-* [Clay Icons](./clay-icons.md)
-* [Clay Navigation Bars](./clay-navigation-bars.md)
+* [Clayドロップダウンメニューとアクションメニュー](./clay-dropdown-and-action-menus.md)
+* [Clayアイコン](./clay-icons.md)
+* [Clayナビゲーションバー](./clay-navigation-bars.md)

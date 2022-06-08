@@ -1,6 +1,6 @@
 # Liferay Util HTML Topの使用
 
-HTML topタグは自己終了タグではありません。 このタグの開始と終了の間に配置されたコンテンツは、`<head>`タグに移動されます。 このtaglibを使用して渡されたコンテンツがあると、[top_head.jsp](https://github.com/liferay/liferay-portal/blob/master/portal-web/docroot/html/common/themes/top_head.jsp#L147-L153)がマークアップに渡され、このJSPで出力されます。
+HTML topタグは自己終了タグではありません。 このタグの開始と終了の間に配置されたコンテンツは、`<head>`タグに移動されます。 このtaglibを使用して渡されたコンテンツがあると、 [top_head.jsp](https://github.com/liferay/liferay-portal/blob/master/portal-web/docroot/html/common/themes/top_head.jsp#L147-L153) がマークアップに渡され、このJSPで出力されます。
 
 このタグにはオプションの`outputKey`属性もあります。 ページ上の複数のポートレットにこのタグを持つ同じリソースが含まれている場合は、各タグに同じ`outputKey`値を指定して、リソースが一度だけロードされるようにすることができます。
 

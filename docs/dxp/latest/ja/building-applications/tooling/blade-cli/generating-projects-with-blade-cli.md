@@ -32,11 +32,11 @@ Liferay Workspaceは、プロジェクトとDevOps構成を保存するマシン
 blade create -t mvc-portlet -p com.acme.z3x1.portlet -c GuestbookPortlet guestbook
 ```
 
-これにより、MVCポートレットテンプレート、`com.acme.z3x1.portlet`と呼ばれるデフォルトのパッケージ、`GuestbookPortlet`と呼ばれるポートレットクラス（Liferay 7.4では*ゲストブック*と呼ばれる）を使用してプロジェクトが作成されます。 これで、ワークスペースをIDEにインポートできます。 Liferay IntelliJプラグインまたはLiferay Developer StudioのEclipseプラグインは、拡張サポートを提供します。 Bladeを使用してプロジェクトに新しいワークスペースを作成する場合は、IDEでGradleプロジェクトを更新する必要があることに注意してください。
+これにより、MVCポートレットテンプレート、`com.acme.z3x1.portlet`と呼ばれるデフォルトのパッケージ、`GuestbookPortlet`と呼ばれるポートレットクラス（Liferay 7.4では **ゲストブック** と呼ばれる）を使用してプロジェクトが作成されます。 これで、ワークスペースをIDEにインポートできます。 Liferay IntelliJプラグインまたはLiferay Developer StudioのEclipseプラグインは、拡張サポートを提供します。 Bladeを使用してプロジェクトに新しいワークスペースを作成する場合は、IDEでGradleプロジェクトを更新する必要があることに注意してください。
 
 ## サンプルプロジェクトの作成
 
-Liferayは、 [サンプルプロジェクト](https://github.com/liferay/liferay-blade-samples/tree/7.4)のGitHubリポジトリを維持しています。 これらは、プロジェクトの開始点として使用できるさまざまなLiferayテクノロジーの完全に実装されたサンプルです。 ただし、リポジトリにクローンを作成してアクセスするのではなく、Blade CLIを使用してローカルに作成できます。
+Liferayは、 [サンプルプロジェクト](https://github.com/liferay/liferay-blade-samples/tree/7.4) のGitHubリポジトリを維持しています。 これらは、プロジェクトの開始点として使用できるさまざまなLiferayテクノロジーの完全に実装されたサンプルです。 ただし、リポジトリにクローンを作成してアクセスするのではなく、Blade CLIを使用してローカルに作成できます。
 
 1. 必要なサンプルプロジェクトを見つけます。
 

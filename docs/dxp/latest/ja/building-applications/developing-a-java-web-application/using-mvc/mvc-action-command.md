@@ -17,7 +17,7 @@ MVCアクションコマンドを使用するサンプルポートレットを�
 1. サンプルをダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-l6y9.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-l6y9.zip -O
    ```
 
    ```bash
@@ -48,23 +48,23 @@ MVCアクションコマンドを使用するサンプルポートレットを�
 
 1. デフォルトの認証情報を使用してサインインします。
 
-    **ユーザー名**: `test@liferay.com`
+    **ユーザー名** : `test@liferay.com`
 
     **パスワード：** `test`
 
-1. *［L6Y9 ポートレット］*ウィジェットを*［サンプル］*カテゴリからウィジェットページに追加します。 L6Y9ポートレットが表示されます。
+1. ［**L6Y9 ポートレット**］ ウィジェットを ［**サンプル**］ カテゴリからウィジェットページに追加します。 L6Y9ポートレットが表示されます。
 
    ![L6Y9ポートレットをページに追加しました。](./mvc-action-command/images/01.png)
 
    リンクは、さまざまな`MVCActionCommand`クラスのメソッドを呼び出します。 学習の目的で、メソッドは自分自身を識別するメッセージをログに記録します。
 
-1. *［Do L6Y9 Able］* をクリックします。 `DoL6Y9AbleMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
+1. ［**Do L6Y9 Able**］ をクリックします。 `DoL6Y9AbleMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
 
     ```bash
     [DoL6Y9AbleMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
     ```
 
-1. *［Do L6Y9 Baker］* をクリックします。 `DoL6Y9BakerMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
+1. ［**Do L6Y9 Baker**］ をクリックします。 `DoL6Y9BakerMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
 
     ```bash
     [DoL6Y9BakerMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
@@ -74,7 +74,7 @@ MVCアクションコマンドの動作を見てきました。 次に、それ�
 
 ## ポートレットを調べる
 
-`L6Y9Portlet`は最小の[`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java)です。
+`L6Y9Portlet`は最小の [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java) です。
 
 ```{literalinclude} ./mvc-action-command/resources/liferay-l6y9.zip/l6y9-web/src/main/java/com/acme/l6y9/web/internal/portlet/L6Y9Portlet.java
 :language: java
@@ -115,18 +115,18 @@ MVCアクションコマンドの動作を見てきました。 次に、それ�
 |:--------------------------------------------------- |:------------------------------------------ |
 | `<portlet:actionURL name="/do_l6y9_baker" />` | `mvc.command.name=/l6y9/do_l6y9_baker`     |
 
-たとえば、*［Do L6Y9 Able］*リンクをクリックすると、`DoL6Y9AbleMVCActionCommand`の`doProcessAction`メソッドが呼び出されます。
+たとえば、 ［**Do L6Y9 Able**］ リンクをクリックすると、`DoL6Y9AbleMVCActionCommand`の`doProcessAction`メソッドが呼び出されます。
 
 ## MVCActionCommandクラスを調べる
 
-MVCアクションコマンドクラスは、[`MVCActionCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCActionCommand.java)を直接実装することも、[`BaseMVCActionCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCActionCommand.java)を拡張することによって実装することもできます。 `DoL6Y9AbleMVCActionCommand`は`BaseMVCActionCommand`を拡張します。
+MVCアクションコマンドクラスは、 [`MVCActionCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCActionCommand.java) を直接実装することも、 [`BaseMVCActionCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCActionCommand.java) を拡張することによって実装することもできます。 `DoL6Y9AbleMVCActionCommand`は`BaseMVCActionCommand`を拡張します。
 
 ```{literalinclude} ./mvc-action-command/resources/liferay-l6y9.zip/l6y9-web/src/main/java/com/acme/l6y9/web/internal/portlet/action/DoL6Y9AbleMVCActionCommand.java
 :language: java
 :lines: 13-34
 ```
 
-`DoL6Y9AbleMVCActionCommand`は、`MVCActionCommand`サービスを提供する[`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)です。 `DoL6Y9AbleMVCActionCommand`のコンポーネントプロパティは、プロパティ`javax.portlet.name=com_acme_l6y9_web_internal_portlet_L6Y9Portlet`を持つポートレットにコンポーネントを適用し、コンポーネントを`/do_l6y9_able`という名前のMVCコマンドにマップします。 ユーザーがそのコマンド名にバインドされたアクションをトリガーすると、`DoL6Y9AbleMVCActionCommand`の`doProcessAction`メソッドが実行されます。 デモンストレーションの目的で、上記の`doProcessAction`メソッドは、それ自体を識別するメッセージをログに記録します。
+`DoL6Y9AbleMVCActionCommand`は、`MVCActionCommand`サービスを提供する [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) です。 `DoL6Y9AbleMVCActionCommand`のコンポーネントプロパティは、プロパティ`javax.portlet.name=com_acme_l6y9_web_internal_portlet_L6Y9Portlet`を持つポートレットにコンポーネントを適用し、コンポーネントを`/do_l6y9_able`という名前のMVCコマンドにマップします。 ユーザーがそのコマンド名にバインドされたアクションをトリガーすると、`DoL6Y9AbleMVCActionCommand`の`doProcessAction`メソッドが実行されます。 デモンストレーションの目的で、上記の`doProcessAction`メソッドは、それ自体を識別するメッセージをログに記録します。
 
 ```{note}
 ポートレットごとに個別の `javax.portlet.name`プロパティを宣言することにより、`MVCActionCommand`コンポーネントを複数のポートレットに関連付けることができます。 
@@ -148,7 +148,7 @@ MVCアクションコマンドクラスは、[`MVCActionCommand`](https://github
 
 ## 次のステップ
 
-MVCアクションコマンドの使用方法がわかったので、[MVC Render Commands](./mvc-render-command.md)と[MVC Resource Commands](./mvc-resource-command.md)を確認することをお勧めします。 アプリのコンテンツのローカライズを開始する場合は、[Using Localized Messages](./using-localized-messages-in-an-mvc-portlet.md)を参照してください。 モデルレイヤー、永続レイヤー、およびサービスレイヤーの開発を開始する準備ができている場合は、[Service Builder](../../data-frameworks/service-builder.md)をご覧ください。
+MVCアクションコマンドの使用方法がわかったので、[MVC Render Commands](./mvc-render-command.md)と[MVC Resource Commands](./mvc-resource-command.md)を確認することをお勧めします。 アプリのコンテンツのローカライズを開始する場合は、[Using Localized Messages](./using-localized-messages-in-an-mvc-portlet.md)を参照してください。 モデルレイヤー、永続レイヤー、およびサービスレイヤーの開発を開始する準備ができている場合は、 [サービスビルダー](../../data-frameworks/service-builder.md) をご覧ください。
 
 ## 追加情報
 

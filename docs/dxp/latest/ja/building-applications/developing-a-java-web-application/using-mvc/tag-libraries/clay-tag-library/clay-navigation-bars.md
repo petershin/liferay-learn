@@ -25,6 +25,6 @@
 
 ## 関連トピック
 
-* [Clay Dropdown Menus and Action Menus](./clay-dropdown-and-action-menus.md)
-* [Clay Form Elements](./clay-form-elements.md)
-* [Clay Progress Bars](./clay-progress-bars.md)
+* [Clayドロップダウンメニューとアクションメニュー](./clay-dropdown-and-action-menus.md)
+* [Clayフォーム要素](./clay-form-elements.md)
+* [Clay進捗バー](./clay-progress-bars.md)

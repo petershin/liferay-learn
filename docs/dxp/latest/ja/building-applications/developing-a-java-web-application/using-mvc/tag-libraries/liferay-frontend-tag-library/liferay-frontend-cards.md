@@ -148,6 +148,6 @@ HTML縦向きカードを使用すると、縦向きカードのヘッダにカ�
 
 ## 関連トピック
 
-* [Liferay Front-end Add Menu](./liferay-frontend-add-menu.md)
-* [Liferay Front-end Info Bar](./liferay-frontend-info-bar.md)
-* [Liferay Front-end Management Bar](./liferay-frontend-management-bar.md)
+* [Liferayフロントエンドの［メニューを追加］](./liferay-frontend-add-menu.md)
+* [Liferayフロントエンド情報バー](./liferay-frontend-info-bar.md)
+* [Liferayフロントエンド管理バー](./liferay-frontend-management-bar.md)

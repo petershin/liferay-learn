@@ -15,7 +15,7 @@
 1. サンプルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
     ```
 
     ```bash
@@ -93,4 +93,4 @@ Bundle-Version: 1.0.0
 
 ## 関連トピック
 
-* [Aggregating Resource Bundles](../../core-frameworks/localization/reference/aggregating-resource-bundles.md)
+* [リソースバンドルの集約](../../core-frameworks/localization/reference/aggregating-resource-bundles.md)

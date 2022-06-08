@@ -1,6 +1,6 @@
 # AUIタグを使ったフォームの構築
 
-[AUIタグライブラリ](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-frame.html)は、アプリケーションのフォームを構築するために必要なすべてのコンポーネントを提供します。 AUIタグは、標準的なフォーム要素に、カスタムネームスペーシング、ローカライゼーション、さらには入力値の検証などの多くの利点を提供します。 複数の属性が用意されており、ユーザーが望む体験を実現することができます。
+[AUIタグライブラリ](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-frame.html) は、アプリケーションのフォームを構築するために必要なすべてのコンポーネントを提供します。 AUIタグは、標準的なフォーム要素に、カスタムネームスペーシング、ローカライゼーション、さらには入力値の検証などの多くの利点を提供します。 複数の属性が用意されており、ユーザーが望む体験を実現することができます。
 
 以下の手順で、AUIタグを使用してフォームを構築します。
 
@@ -107,4 +107,4 @@
 
 * [Chart Tag library](../chart-tag-library.md)
 * [Frontend Tag Library](../liferay-frontend-tag-library.md)
-* [Clay Tag Library](../clay-tag-library.md)
+* [Clayタグライブラリ](../clay-tag-library.md)

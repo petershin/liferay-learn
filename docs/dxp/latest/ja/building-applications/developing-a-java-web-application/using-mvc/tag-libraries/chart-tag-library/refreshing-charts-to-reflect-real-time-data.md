@@ -30,6 +30,6 @@
 
 ## 関連トピック
 
-* [Combination Charts](./combination-chart.md)
-* [Geomap Charts](./geomap-chart.md)
-* [Scatter Charts](./scatter-chart.md)
+* [組み合わせグラフ](./combination-chart.md)
+* [ジオマップグラフ](./geomap-chart.md)
+* [散布図](./scatter-chart.md)

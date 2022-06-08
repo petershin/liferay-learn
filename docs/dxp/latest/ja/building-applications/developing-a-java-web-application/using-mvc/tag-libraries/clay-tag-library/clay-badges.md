@@ -82,6 +82,6 @@
 
 ## 関連トピック
 
-* [Clay Labels and Links](./clay-links-and-labels.md)
-* [Clay Cards](./clay-cards.md)
-* [Clay Stickers](./clay-stickers.md)
+* [Clayラベルとリンク](./clay-links-and-labels.md)
+* [Clayカード](./clay-cards.md)
+* [Clayステッカー](./clay-stickers.md)

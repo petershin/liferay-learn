@@ -9,8 +9,8 @@ localization/reference.md
 ```
 
 - [言語の追加](./localization/adding-a-language.md)
-- [Automatically Generating Translations](./localization/automatically-generating-translations.md)
+- [翻訳を自動的に生成する](./localization/automatically-generating-translations.md)
 
 ## 参照
 
-- [Aggregating Resource Bundles](./localization/reference/aggregating-resource-bundles.md)
+- [リソースバンドルの集約](./localization/reference/aggregating-resource-bundles.md)

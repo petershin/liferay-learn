@@ -29,10 +29,10 @@ JSP構成の例：
 </liferay-ui:icon-menu>
 ```
 
-アイコンを正しくレンダリングするには、`url`属性が必要であることに注意してください。 属性の完全なリストについては、[Icon Menu taglibdocs](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon-menu.html)を参照してください。
+アイコンを正しくレンダリングするには、`url`属性が必要であることに注意してください。 属性の完全なリストについては、 [Icon Menu taglibdocs](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon-menu.html) を参照してください。
 
 ## 関連トピック
 
-* [Clay Icons](../clay-tag-library/clay-icons.md)
-* [Liferay UI Icon Lists](./liferay-ui-icon-lists.md)
-* [Liferay UI Icons](./liferay-ui-icons.md)
+* [Clayアイコン](../clay-tag-library/clay-icons.md)
+* [Liferay UIアイコンリスト](./liferay-ui-icon-lists.md)
+* [Liferay UIアイコン](./liferay-ui-icons.md)

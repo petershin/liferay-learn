@@ -45,5 +45,5 @@
 
 ## 関連トピック
 
-* [Disabling All or Portions of the Management Bar](./disabling-the-management-bar.md)
-* [Clay Management Toolbar](../clay-tag-library/clay-management-toolbar.md)
+* [管理バーのすべてまたは一部を無効にする](./disabling-the-management-bar.md)
+* [Clay管理ツールバー](../clay-tag-library/clay-management-toolbar.md)

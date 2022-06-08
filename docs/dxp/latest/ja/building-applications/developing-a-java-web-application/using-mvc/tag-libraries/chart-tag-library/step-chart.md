@@ -1,6 +1,6 @@
 # ステップグラフ
 
-ステップグラフには、複数のデータセットが含まれています。 ステップグラフでは、データのポイント間に段差があり、階段に似ています。 各データ系列（`addColumns()`メソッドで作成）は、IDと値のセットを受け取る[`MultiValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html)の新しいインスタンスで定義されます。 次の手順に従って、ステップグラフを使用するようにポートレットを構成します。
+ステップグラフには、複数のデータセットが含まれています。 ステップグラフでは、データのポイント間に段差があり、階段に似ています。 各データ系列（`addColumns()`メソッドで作成）は、IDと値のセットを受け取る [`MultiValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html) の新しいインスタンスで定義されます。 次の手順に従って、ステップグラフを使用するようにポートレットを構成します。
 
 1. Chart taglibを`StepChartConfig`クラスと`MultiValueColumn`クラスとともにバンドルの`init.jsp`ファイルにインポートします。
 
@@ -47,6 +47,6 @@
 
 ## 関連トピック
 
-* [Line Charts](./line-chart.md)
-* [Scatter Charts](./scatter-chart.md)
-* [Spline Charts](./spline-chart.md)
+* [折れ線グラフ](./line-chart.md)
+* [散布図](./scatter-chart.md)
+* [スプライングラフ](./spline-chart.md)

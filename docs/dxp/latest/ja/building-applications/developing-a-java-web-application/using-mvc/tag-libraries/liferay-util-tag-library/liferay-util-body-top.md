@@ -1,6 +1,6 @@
 # Liferay Util Body Topの使用
 
-body topタグは自己終了タグではありません。 このタグの開始と終了の間に配置されたコンテンツは、`body`タグの上部に移動されます。 このtaglibを使用して渡されたコンテンツがあると、[body_top.jsp](https://github.com/liferay/liferay-portal/blob/7.2.x/portal-web/docroot/html/common/themes/body_top.jsp#L25-L31)がマークアップに渡され、このJSPで出力されます。
+body topタグは自己終了タグではありません。 このタグの開始と終了の間に配置されたコンテンツは、`body`タグの上部に移動されます。 このtaglibを使用して渡されたコンテンツがあると、 [body_top.jsp](https://github.com/liferay/liferay-portal/blob/7.2.x/portal-web/docroot/html/common/themes/body_top.jsp#L25-L31) がマークアップに渡され、このJSPで出力されます。
 
 このタグにはオプションの`outputKey`属性もあります。 ページ上の複数のポートレットにこのタグを持つ同じリソースが含まれている場合は、各タグに同じ`outputKey`値を指定して、リソースが一度だけロードされるようにすることができます。
 

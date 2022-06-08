@@ -14,10 +14,10 @@
 
     別のLiferay PortalバージョンまたはLiferay DXPを実行している場合は、上記のコマンドを適宜調整してください。
 
-1. [マルチスレッド処理](./liferay-j7z3.zip)をダウンロードして解凍します。
+1. [マルチスレッド処理](./liferay-j7z3.zip) をダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
     ```
 
     ```bash
@@ -47,7 +47,7 @@
 
 ## アプリにエントリーを追加する
 
-1. *［コントロールパネル］* &rarr; *［サーバ管理］* &rarr; *［スクリプト］*でスクリプトコンソールに移動します。
+1. ［**コントロールパネル**］ &rarr; ［**サーバ管理**］ &rarr; ［**スクリプト**］ でスクリプトコンソールに移動します。
 
 1. 以下のスクリプトを実行して、いくつかのエントリーを追加してください。
 
@@ -86,7 +86,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. *［コントロールパネル］* &rarr; *［Gogo シェル］*でGogoシェルコンソールに移動します。
+1. ［**コントロールパネル**］ &rarr; ［**Gogo シェル**］ でGogoシェルコンソールに移動します。
 
 1. `upgrade:list com.acme.j7z3.service`というコマンドを入力し、1.0.1へのアップグレードが可能であることを確認します。 1.0.1バージョンは、出力ウィンドウに登録されたアップグレードプロセスとして表示されます。
 
@@ -146,4 +146,4 @@
 
 1. 例外は、 `null`に設定されます。
 
-`processConcurrently()`メソッドは2つの異なるシグネチャを持っていることに注意しましょう。 このチュートリアルの例に見られるように、1つのシグネチャはSQLクエリをソースとして渡します。 もう一つのシグネチャはソースとして配列を渡します。 詳細は、[BaseDBProcess javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-)を参照してください。
+`processConcurrently()`メソッドは2つの異なるシグネチャを持っていることに注意しましょう。 このチュートリアルの例に見られるように、1つのシグネチャはSQLクエリをソースとして渡します。 もう一つのシグネチャはソースとして配列を渡します。 詳細は、 [BaseDBProcess javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-) を参照してください。

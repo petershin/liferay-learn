@@ -51,6 +51,6 @@
 
 ## 関連トピック
 
-* [Bar Charts](./bar-chart.md)
-* [Donut Charts](./donut-chart.md)
-* [Pie Charts](./pie-chart.md)
+* [棒グラフ](./bar-chart.md)
+* [ドーナツグラフ](./donut-chart.md)
+* [円グラフ](./pie-chart.md)

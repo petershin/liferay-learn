@@ -27,5 +27,5 @@
 
 ## 関連トピック
 
-* [Including Actions in the Management Bar](./including-actions-in-the-management-bar.md)
-* [Clay Management Toolbar](../clay-tag-library/clay-management-toolbar.md)
+* [管理バーにアクションを含める](./including-actions-in-the-management-bar.md)
+* [Clay管理ツールバー](../clay-tag-library/clay-management-toolbar.md)

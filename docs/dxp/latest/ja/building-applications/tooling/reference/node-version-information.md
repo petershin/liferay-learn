@@ -1,8 +1,8 @@
 # ノードのバージョン情報
 
-Liferay DXPは、多くの異なるフロントエンドコンポーネントに[Node](https://nodejs.org/en/)(と [NPM](https://www.npmjs.com/)) を使用します。 具体的には、[Liferayテーマジェネレーター](../../../site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md)とLiferayの[JavaScript アプリケーションツール](../../developing-a-javascript-application.md)は、ビルドとデプロイに NPM コマンドを使用する必要があります。
+Liferay DXPは、多くの異なるフロントエンドコンポーネントに [Node](https://nodejs.org/en/) (と [NPM](https://www.npmjs.com/) ) を使用します。 具体的には、[Liferayテーマジェネレーター](../../../site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md)とLiferayの[JavaScript アプリケーションツール](../../developing-a-javascript-application.md)は、ビルドとデプロイに NPM コマンドを使用する必要があります。
 
-これらの依存関係は、NodeとNPMの特定のバージョンを使用するように設計されています。 [Nodeバージョン互換性マトリックス](#version-compatibility-matrix)を確認し、テーマやJavaScriptアプリケーションを開発する際に正しいバージョンがインストールされていることを確認してください。
+これらの依存関係は、NodeとNPMの特定のバージョンを使用するように設計されています。 [Nodeバージョン互換性マトリックス](#version-compatibility-matrix) を確認し、テーマやJavaScriptアプリケーションを開発する際に正しいバージョンがインストールされていることを確認してください。
 
 ## Nodeのバージョンを更新する
 
@@ -20,7 +20,7 @@ Liferay DXPは、多くの異なるフロントエンドコンポーネントに
     sudo apt-get update
     ```
 
-1. Nodeの希望する*メジャーバージョン*を取得します。 [バージョン互換性マトリックス](#version-compatibility-matrix)で、お使いのLiferay DXPのバージョンに必要なNodeのメジャーバージョンを確認してください。
+1. Nodeの希望する **メジャーバージョン** を取得します。 [バージョン互換性マトリックス](#version-compatibility-matrix) で、お使いのLiferay DXPのバージョンに必要なNodeのメジャーバージョンを確認してください。
 
     ```bash
     curl -sL deb.nodesource.com/setup_##.x | sudo -E bash -

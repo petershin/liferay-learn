@@ -29,5 +29,5 @@ get URLタグは、`url`属性によって提供されるURLを取得します�
 ## 関連トピック
 
 * [Using the Liferay Util Param Tag](./liferay-util-param.md)
-* [Using the Liferay Util Include Tag](https://help.liferay.com/hc/en-us/articles/360029145351-Using-Liferay-Util-Include)
-* [Using the AUI Taglib](https://help.liferay.com/hc/en-us/articles/360028832812-Using-AUI-Taglibs)
+* [Using the Liferay Util Include Tag](https://help.liferay.com/hc/ja/articles/360029145351-Using-Liferay-Util-Include)
+* [Using the AUI Taglib](https://help.liferay.com/hc/ja/articles/360028832812-Using-AUI-Taglibs)

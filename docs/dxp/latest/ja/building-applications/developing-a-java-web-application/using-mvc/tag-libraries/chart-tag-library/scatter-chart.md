@@ -1,6 +1,6 @@
 # 散布図
 
-散布図には、複数のデータセットが含まれています。 散布図は、データを個々のポイントとしてモデル化します。 各データ系列（`addColumns()`メソッドで作成）は、IDと値のセットを受け取る[`MultiValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html)の新しいインスタンスで定義されます。 次の手順に従って、散布図を使用するようにポートレットを構成します。
+散布図には、複数のデータセットが含まれています。 散布図は、データを個々のポイントとしてモデル化します。 各データ系列（`addColumns()`メソッドで作成）は、IDと値のセットを受け取る [`MultiValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html) の新しいインスタンスで定義されます。 次の手順に従って、散布図を使用するようにポートレットを構成します。
 
 1. Chart taglibを`ScatterChartConfig`クラスと`MultiValueColumn`クラスとともにバンドルの`init.jsp`ファイルにインポートします。
 
@@ -37,6 +37,6 @@
 
 ## 関連トピック
 
-* [Step Charts](./step-chart.md)
-* [Line Charts](./line-chart.md)
-* [Spline Charts](./spline-chart.md)
+* [ステップグラフ](./step-chart.md)
+* [折れ線グラフ](./line-chart.md)
+* [スプライングラフ](./spline-chart.md)

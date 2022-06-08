@@ -38,10 +38,10 @@
 
 ![情報バータグは、追加情報を表示するサイドバーパネルのトグルを作成します。](./liferay-frontend-info-bar-intro/images/02.png)
 
-上記の例では、使用可能な属性のいくつかを使用しています。 タグで使用可能な属性の完全なリストについては、 [情報バー](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar.html)、[情報バーボタン](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar-buttons.html)、[情報バーサイドナビゲーショントグルボタン](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar-sidenav-toggler-button.html)、および[サイドバーパネル](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/sidebar-panel.html)のtaglibdocを参照してください。
+上記の例では、使用可能な属性のいくつかを使用しています。 タグで使用可能な属性の完全なリストについては、 [情報バー](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar.html) 、 [情報バーボタン](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar-buttons.html) 、 [情報バーサイドナビゲーショントグルボタン](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar-sidenav-toggler-button.html) 、および [サイドバーパネル](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/sidebar-panel.html) のtaglibdocを参照してください。
 
 ## 関連トピック
 
-* [Liferay Front-end Add Menu](./liferay-frontend-add-menu.md)
-* [Liferay Front-end Cards](./liferay-frontend-cards.md)
-* [Liferay Front-end Management Bar](./liferay-frontend-management-bar.md)
+* [Liferayフロントエンドの［メニューを追加］](./liferay-frontend-add-menu.md)
+* [Liferayフロントエンドカード](./liferay-frontend-cards.md)
+* [Liferayフロントエンド管理バー](./liferay-frontend-management-bar.md)

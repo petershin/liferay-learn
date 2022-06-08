@@ -24,7 +24,7 @@ Liferayフロントエンド管理バーは@product-ver@で廃止予定になり
 
 ![<code>management-bar-filters</code>タグには、コンテンツフィルタリングオプションが含まれています。](./liferay-frontend-management-bar/images/04.png)
 
-最後に、[`<liferay-frontend:management-bar-action-buttons>`タグ](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/management-bar-action-buttons.html)は、選択したアイテムに対して実行できるアクションをラップします。 ページ間で複数の項目を選択できます。 管理バーには、選択された項目の数が記録されます。
+最後に、 [`<liferay-frontend:management-bar-action-buttons>`タグ](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/management-bar-action-buttons.html) は、選択したアイテムに対して実行できるアクションをラップします。 ページ間で複数の項目を選択できます。 管理バーには、選択された項目の数が記録されます。
 
 ![管理バーには、選択された項目が記録され、それらに対して実行するアクションが表示されます。](./liferay-frontend-management-bar/images/05.png)
 

@@ -160,7 +160,6 @@ function generate_sphinx_input {
 		sed -i "s/${LIFERAY_LEARN_PORTAL_DOCKER_IMAGE_TOKEN}/${LIFERAY_LEARN_PORTAL_DOCKER_IMAGE_VALUE}/g" "${md_file_name}"
 		sed -i "s/${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN}/${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/g" "${md_file_name}"
 		sed -i "s/${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN}/${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN_VALUE}/g" "${md_file_name}"
-		sed -i "s/\(${LIFERAY_LEARN_YOUTUBE_URL_TOKEN}\=\)\(\https:\/\/www.youtube.com\/embed\/.*\)/${LIFERAY_LEARN_YOUTUBE_BEGIN_HTML}\2${LIFERAY_LEARN_YOUTUBE_END_HTML}/" "${md_file_name}"
 	done
 }
 
@@ -189,20 +188,6 @@ function generate_static_html {
 			sed -i 's/.md#/.html#/g' ${html_file_name}
 			sed -i 's/README.html"/index.html"/g' ${html_file_name}
 			sed -i 's/README.html#/index.html#/g' ${html_file_name}
-		done
-
-		#
-		# Include MP4 files in the output.
-		#
-
-		for images_dir in $(find build/input/"${product_version_language_dir_name}" -name images -prune -type d)
-		do
-			if [[ -n $(find "${images_dir}" -name "*.mp4" -type f) ]]
-			then
-				mkdir -p "${images_dir/input/output}"
-
-				find "${images_dir}" -name "*.mp4" -type f -exec cp {} "${images_dir/input/output}" \;
-			fi
 		done
 
 		#

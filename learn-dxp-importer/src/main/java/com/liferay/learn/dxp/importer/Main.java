@@ -407,21 +407,6 @@ public class Main {
 		return _renderer.render(document);
 	}
 
-	private String _toString(BasedSequence basedSequence) {
-
-		// TODO Perhaps BasedSequence#toString already does this
-
-		char[] array = new char[basedSequence.length()];
-
-		for (int i = 0; i < basedSequence.length(); i++) {
-			char c = basedSequence.charAt(i);
-
-			array[i] = c;
-		}
-
-		return new String(array);
-	}
-
 	private StructuredContent _toStructuredContent(String fileName)
 		throws Exception {
 
@@ -495,7 +480,8 @@ public class Main {
 	private void _visit(Image image) throws Exception {
 		String fileName =
 			FilenameUtils.getPath(_markdownFile.getPath()) +
-				_toString(image.getUrl());
+				image.getUrl(
+				).toStringOrNull();
 
 		File file = _getImageFile(fileName);
 
@@ -505,7 +491,9 @@ public class Main {
 			FilenameUtils.getPath(
 				filePath.substring(filePath.indexOf("/"), filePath.length())));
 
-		try {
+		String imageUrl = _imageUrls.get(filePath);
+
+		if (imageUrl == null) {
 			Document document = _documentResource.postDocumentFolderDocument(
 				documentFolderId,
 				new Document() {
@@ -519,22 +507,12 @@ public class Main {
 					}
 				});
 
-			image.setUrl(_toBasedSequence(document.getContentUrl()));
+			imageUrl = document.getContentUrl();
 		}
-		catch (Exception exception) {
 
-			// If ja markdown uses en image, above post fails 
-			// because image already exists. 
+		_imageUrls.put(filePath, imageUrl);
 
-			Page<Document> page =
-				_documentResource.getDocumentFolderDocumentsPage(
-					documentFolderId, null, null, null,
-					"title eq '" + filePath + "'", null, null);
-
-			Document document = page.fetchFirstItem();
-
-			image.setUrl(_toBasedSequence(document.getContentUrl()));
-		}
+		image.setUrl(_toBasedSequence(imageUrl));
 
 		_nodeVisitor.visitChildren(image);
 	}
@@ -547,6 +525,7 @@ public class Main {
 	private DocumentFolderResource _documentFolderResource;
 	private DocumentResource _documentResource;
 	private Set<String> _fileNames = new TreeSet<>();
+	private Map<String, String> _imageUrls = new HashMap<>();
 	private File _markdownFile;
 
 	private NodeVisitor _nodeVisitor = new NodeVisitor(

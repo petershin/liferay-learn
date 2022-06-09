@@ -1,6 +1,6 @@
 # Navigation Menu Element Types
 
-Navigation Menus have a variety of types of elements that you can add and arrange in your desired hierarchy with their own links. These types include [specific pages](#pages), [Vocabularies](#vocabularies), Display Pages for specific content types, or custom [placeholders](#submenus) or [URLs](#urls). See [here](./using-the-navigation-menus-application.md) for more information on adding Navigation Menus with these elements.
+Navigation Menus have a variety of element types that you can add and arrange in your desired hierarchy. These types include [specific pages](#pages), [Vocabularies](#vocabularies), Display Pages for specific content types, or custom [placeholders](#submenus) or [URLs](#urls). See [here](./using-the-navigation-menus-application.md) for more information on adding Navigation Menus with these elements.
 
 ## Pages
 

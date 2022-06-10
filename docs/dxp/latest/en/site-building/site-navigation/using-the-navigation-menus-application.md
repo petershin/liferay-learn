@@ -72,11 +72,19 @@ While editing a Navigation Menu, follow these steps to add an element to the Nav
 
 All changes to the menu are saved.
 
+### Using Dynamic Vocabulary Elements
+
+[Vocabulary Navigation Menu elements](./navigation-menu-element-types.md#vocabularies) are dynamic: when one is displayed on a page, it adds all of the Categories and Subcategories in its current hierarchy instead of a single element. Any changes to the Vocabulary's contents are automatically reflected in the menu.
+
+Dynamic Vocabulary elements allow you to quickly and easily update your Navigation Menus when you have changing hierarchies of items. For example, you can use Categories to represent types of products in a [Catalog](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html), and then let any updates to your Categories automatically update any menus using the Vocabulary. Then, depending on the [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) used for those Categories, any changes to the categorization may automatically reflect in the pages and the Navigation Menu.
+
+![Dynamic Vocabulary elements automatically update to reflect their hierarchy of Categories in your Navigation Menus.](./using-the-navigation-menus-application/images/08.png)
+
 ### Previewing Navigation Menus
 
 You can a preview a Navigation Menu while you are editing it to see how it looks when displayed on a page. Click the eye icon (![Eye icon](../../images/icon-view.png)) to open a popup window with a preview of the Navigation Menu.
 
-![Preview a Navigation Menu to see how it looks when displayed on a page.](./using-the-navigation-menus-application/images/08.png)
+![Preview a Navigation Menu to see how it looks when displayed on a page.](./using-the-navigation-menus-application/images/09.png)
 
 You can also select different options from the drop-down menu to see different styles the menu can be displayed in, such as the *List* or *Tabs* styles.
 
@@ -84,7 +92,7 @@ You can also select different options from the drop-down menu to see different s
 
 When Users are creating Site Pages, they are shown a list of all existing Navigation Menus. You can modify this behavior by hiding specific menus from the list of available menus.
 
-![Select from Existing Navigation Menus](./using-the-navigation-menus-application/images/09.png)
+![Select from Existing Navigation Menus](./using-the-navigation-menus-application/images/10.png)
 
 Follow these steps to configure this behavior for a Navigation Menu:
 
@@ -96,7 +104,7 @@ Follow these steps to configure this behavior for a Navigation Menu:
 
 1. Uncheck/Check the setting.
 
-    ![You can select from existing Navigation Menus when creating Site Pages](./using-the-navigation-menus-application/images/10.png)
+    ![You can select from existing Navigation Menus when creating Site Pages](./using-the-navigation-menus-application/images/11.png)
 
 1. Click _Save_.
 
@@ -110,7 +118,7 @@ Follow these steps to configure the Navigation Menu's type:
 
 1. Select the desired navigation type: _Primary Navigation_, _Secondary Navigation_, or _Social Navigation_.
 
-    ![Select the desired navigation type.](./using-the-navigation-menus-application/images/11.png)
+    ![Select the desired navigation type.](./using-the-navigation-menus-application/images/12.png)
 
     Once selected, each menu's configuration appears in the _Marked As_ column.
 
@@ -130,4 +138,5 @@ The Navigation Menu has been deleted.
 ## Additional Information
 
 * [Managing Site Navigation](./managing-site-navigation.md)
+* [Navigation Menu Element Types](./navigation-menu-element-types.md)
 * [Configuring Menu Displays](./configuring-menu-displays.md)

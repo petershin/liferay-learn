@@ -16,7 +16,7 @@ LiferayのHeadless Deliveryアプリケーションは、[Wiki](../getting-start
 docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
 ```
 
-開始したら、Site IDを取得します。 サイトIDを見つけるには、*サイトメニュー*（![Site Menu](../../../images/icon-menu.png)）を開き、*［Configuration］*&rarr; *［Site Settings］*&rarr; *［Site Configuration］*に移動します。
+開始したら、Site IDを取得します。 サイトIDを見つけるには、 **サイトメニュー**（![Site Menu](../../../images/icon-menu.png)）を開き、 ［**Configuration**］ &rarr; ［**Site Settings**］ &rarr; ［**Site Configuration**］ に移動します。
 
 ![サイトの構成設定でサイトIDを見つけます。](./wiki-api-basics/images/01.png)
 
@@ -24,10 +24,10 @@ docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
 
 このチュートリアルでは、Headless APIを示すサンプルコードを提供します。 このコードには、チュートリアル全体で使用するためのサンプルのcURLファイルとJavaファイルの両方が含まれています。
 
-次のコマンドを実行して、[サンプルコード](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip)をダウンロードして解凍します。
+次のコマンドを実行して、 [サンプルコード](https://learn.liferay.com/dxp/latest/ja/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip) をダウンロードして解凍します。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip -O
+curl https://learn.liferay.com/dxp/latest/ja/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip -O
 ```
 
 ```bash

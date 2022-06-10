@@ -6,24 +6,22 @@
 
 ![Liferay ObjectsとReactチャートを使って、データダッシュボードの動的なビジュアルを作成します。](./using-object-data-with-react-charts/images/01.gif)
 
-## Liferay DXPのセットアップ
+## Liferay DXPの実行
 
-作業を進める前に、新しい Liferay DXP 7.4以降のコンテナを起動します。
-
-```docker
-docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
+```{include} /_snippets/run-liferay-dxp.md
 ```
 
-開始したら、以下の手順に従って、`/o/c/*<0> URLパターンを<em x-id="3">［Default Portal CORS Configuration］</em>に追加してください。</p>
+実行したら、以下の手順に従って、`/o/c/*`URLパターンを*デフォルトのポータルCORS設定*に追加してください：
 
-<ol start="1">
-<li><p spaces-before="0"><em x-id="3">グローバルメニュー</em> （<img src="../../../images/icon-applications-menu.png" alt="Global Menu" />）を開き、<em x-id="3">［コントロールパネル］</em>タブをクリックして、<em x-id="3">［システム設定］</em> <em x-id="3">［Security Tools］</em> &rarr; に移動します。</p></li>
-<li><p spaces-before="0"><em x-id="3">［Portal Cross-Origin Resource Sharing (CORS)］</em>タブで、 <em x-id="3">［Default Portal CORS Configuration］</em>をクリックしてください。</p>
+1. *グローバルメニュー* (![グローバルメニュー](../../../images/icon-applications-menu.png)), を開き、*［コントロールパネル］*タブをクリックします。*［システム設定］* &rarr; *［セキュリティツール］*に移動します。
 
-<p spaces-before="3"><img src="./using-object-data-with-react-charts/images/02.png" alt="［Default Portal CORS Configuration］をクリックします。" /></p></li>
-<li><p spaces-before="0"><em x-id="3">［URL Pattern］</em> に <code>/o/c/ **` の値を追加して**［保存］*をクリックしてください。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
+1. *［ポータルのクロスオリジンリソース共有（CORS）］*タブに移動し、*［Default Portal CORS Configuration］*をクリックします。
 
-   ![オブジェクトAPI用の /o/c/* URL パターンを追加します。](./using-object-data-with-react-charts/images/03.png)</li> </ol>
+   ![Default Portal CORS Configurationをクリック](./using-object-data-with-react-charts/images/02.png)
+
+1. *［URLパターン］*に`/o/c/*`の値を追加して*［保存］*をクリックします。 これにより、すべてのオブジェクトAPIに CORSが有効になります。
+
+  ![オブジェクトAPIの/o/c/* URLパターンを追加します。](./using-object-data-with-react-charts/images/03.png)
 
 ## React チャート用のオブジェクトを作成する
 

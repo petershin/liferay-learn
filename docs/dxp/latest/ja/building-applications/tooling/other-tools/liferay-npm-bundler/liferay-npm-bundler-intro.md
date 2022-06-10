@@ -5,7 +5,7 @@ liferay-npm-bundlerは、Liferayポータルをプラットフォームとして
 ウィジェット内でnpmパッケージを実行するためのワークフローは、標準のバンドラーとは少し異なります。 JavaScriptを単一のファイルにバンドルする代わりに、完全なWebページが組み立てられたときに、ブラウザーですべてのパッケージを **リンク** する必要があります。 ウィジェットは、それぞれが独自のコピーをロードするのではなく、モジュールの共通バージョンを共有できます。 liferay-npm-bundlerがこれを処理します。
 
 ```{note}
-また、 [project's Wiki] (https://github.com/liferay/liferay-npm-build-tools/wiki)にもliferay-npm-bundlerの情報があります。
+また、 [project's Wiki](https://github.com/liferay/liferay-npm-build-tools/wiki) にもliferay-npm-bundlerの情報があります。
 ```
 
 ## Liferay npmバンドラーが内部でどのように機能するか
@@ -41,7 +41,7 @@ liferay-npm-bundlerは、以下のプロセスを使用してOSGiバンドルを
 前処理ステップと後処理ステップの間の唯一の違いは、それらがいつ実行されるかだけです（それぞれ、Babelが実行される前か後か）。 このワークフローの実行中、liferay-npm-bundlerは構成されたすべてのプラグインを呼び出し、npmパッケージで変換を実行できるようにします（たとえば、 `package.json` ファイルの変更またはファイルの削除や移動）。
 
 ```{note}
-プレ、ポスト、バベルの各フェーズは、古い動作モード用に設計され、（[Migrating Your Project to Use the New Mode](./bundler-migration-guide/migrating-to-the-new-mode.mdを参照してください）新しいモードのルールに徐々に置き換えられます。
+プレ、ポスト、バベルの各フェーズは、古い動作モード用に設計され、([Migrating Your Project to Use the New Mode](./bundler-migration-guide/migrating-to-the-new-mode.md) を参照してください）新しいモードのルールに徐々に置き換えられます。
 ```
 
 このリファレンスでは、liferay-npm-bundlerの構成、デフォルトのプリセット、形式などについて説明しています。

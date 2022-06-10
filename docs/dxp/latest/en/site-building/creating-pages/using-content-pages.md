@@ -7,7 +7,6 @@ using-content-pages/adding-elements-to-content-pages.md
 using-content-pages/managing-content-in-content-pages.md
 using-content-pages/using-widgets-on-a-content-page.md
 using-content-pages/using-page-comments.md
-using-content-pages/manually-translating-content-pages.md
 using-content-pages/content-page-editor-ui-reference.md
 ```
 
@@ -51,10 +50,6 @@ See [Adding Elements to Content Pages](./using-content-pages/adding-elements-to-
 
 :::{grid-item-card} Using Page Comments
 :link: ./using-content-pages/using-page-comments.md
-:::
-
-:::{grid-item-card} Manually Translating Content Pages
-:link: ./using-content-pages/manually-translating-content-pages.md
 :::
 
 :::{grid-item-card} Content Page Editor UI Reference

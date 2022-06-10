@@ -84,13 +84,13 @@ In 7.3 we've added a new configuration to vocabularies in order to [set visibili
 
 ### Dedicated translation experience for web content
 
-A [new translation UI](../content-authoring-and-management/web-content/translating-web-content/manually-translating-web-content.md) makes it easy to translate content in a side-by-side UI that optimizes the process. Translators can translate only into languages for which they have permission, and our workflow processes make reviewing those translations a snap. 
+A [new translation UI](../content-authoring-and-management/translating-pages-and-content/translating-web-content.md#manually-translating-web-content) makes it easy to translate content in a side-by-side UI that optimizes the process. Translators can translate only into languages for which they have permission, and our workflow processes make reviewing those translations a snap.
 
 ![The new translation UI makes the entire translation process painless.](./whats-new-73/images/10.png)
 
 ### Import/Export of web content for translations
 
-If you use an external agency or freelancers for your translations, you can now select the content to be translated and [export the needed languages in the standard format for translations](../content-authoring-and-management/web-content/translating-web-content/exporting-and-importing-translations.md) (XLIFF, either in 1.2 or 2.0 versions) and send them to the translation agency. When the translations are finished, you can import the translations to have them with the original content.
+If you use an external agency or freelancers for your translations, you can now select the content to be translated and [export the needed languages in the standard format for translations](../content-authoring-and-management/translating-pages-and-content/translating-web-content.md#exporting-and-importing-translations) (XLIFF, either in 1.2 or 2.0 versions) and send them to the translation agency. When the translations are finished, you can import the translations to have them with the original content.
 
 ![Translations can now be exported for translation and imported when finished.](./whats-new-73/images/11.gif)
 

@@ -147,7 +147,7 @@ You can now use [adaptive media in Content Page images](../site-building/creatin
 
 ### Automatic Translation for Web Content
 
-This feature helps accelerate the process of [translating web content articles](../content-authoring-and-management/web-content/translating-web-content/automatically-translating-web-content.md). This continues the efforts made in 7.3 to help streamline the translation process of content. With this feature, translators can focus on polishing a translation instead of starting from scratch.
+This feature helps accelerate the process of [translating web content articles](../content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation.md). This continues the efforts made in 7.3 to help streamline the translation process of content. With this feature, translators can focus on polishing a translation instead of starting from scratch.
 
 ### Expiration Dates for Documents
 

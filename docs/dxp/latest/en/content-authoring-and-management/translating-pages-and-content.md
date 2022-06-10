@@ -1,0 +1,41 @@
+# Translating Pages and Content
+
+```{toctree}
+:maxdepth: 3
+
+translating-pages-and-content/translating-content-pages.md
+translating-pages-and-content/translating-web-content.md
+translating-pages-and-content/using-third-party-services.md
+translating-pages-and-content/enabling-workflows-for-translations.md
+translating-pages-and-content/managing-translation-permissions.md
+```
+
+Liferay provides integrated tools for translating both Web Content and Content Page experiences. With these tools you can manually translate text in a side-by-side editor, automatically generate translations using third party services, or export/import XLIFF files. You can also enable custom workflows to direct the review and publishing process for all translations.
+
+Available languages for translation are determined by your instance's localization settings. See [Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
+```
+<!-- file:///home/me/projects/liferay-learn/site/build/output/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/localization.html -->
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card} Translating Content Pages
+:link: ./translating-pages-and-content/translating-content-pages.md
+:::
+
+:::{grid-item-card} Translating Web Content
+:link: ./translating-pages-and-content/translating-web-content.md
+:::
+
+:::{grid-item-card} Using Third Party Services
+:link: ./translating-pages-and-content/using-third-party-services.md
+:::
+
+:::{grid-item-card} Enabling Workflows for Translations
+:link: ./translating-pages-and-content/enabling-workflows-for-translations.md
+:::
+
+:::{grid-item-card} Managing Translation Permissions
+:link: ./translating-pages-and-content/managing-translation-permissions.md
+:::
+::::
+

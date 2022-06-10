@@ -67,4 +67,4 @@ By default, individual Site settings are inherited from [Site Scope instance set
 ## Additional Information
 
 * [Site Localization](./site-localization.md)
-* [Exporting and Importing Translations](../../content-authoring-and-management/web-content/translating-web-content/exporting-and-importing-translations.md)
+* [Exporting and Importing Translations](../../content-authoring-and-management/translating-pages-and-content.md)

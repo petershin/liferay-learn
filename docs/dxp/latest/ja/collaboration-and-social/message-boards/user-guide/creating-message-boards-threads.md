@@ -92,6 +92,9 @@
 
 ## 追加情報
 
-* [掲示板カテゴリの作成](./creating-message-boards-categories.md) <!-- Is there a placeholder for an article on "Enabling User Mentions for Collaboration Applications"? This should be link to a placeholder.
+* [掲示板カテゴリの作成](./creating-message-boards-categories.md)
+
+<!-- Is there a placeholder for an article on "Enabling User Mentions for Collaboration Applications"? This should be link to a placeholder.
 * User can [mention other users](https://help.liferay.com/hc/en-us/articles/360028720892-Mentioning-Users) by entering the `@` character and their user name.
---> * [メッセージボード設定リファレンス](./message-boards-configuration-reference.md)
+-->
+* [掲示板設定リファレンス](./message-boards-configuration-reference.md)

@@ -27,7 +27,7 @@
 ## ナレッジベースセクションウィジェット
 
 ```{note}
-ナレッジベース 3.0.0 では、ナレッジベースセクションウィジェットは非推奨となり、 [categories](../../content-authoring and-management/tags-and-categories/organizing-content-with-categories-and-tags.md) に置き換えられました。
+ナレッジベース 3.0.0 では、ナレッジベースセクションウィジェットは非推奨となり、 [categories](../../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md) に置き換えられました。
 ```
 
 ナレッジベースセクションウィジェットは、特定のトピック（セクション）に関連する記事を公開できます。 たとえば、夏季オリンピックに関するサイトには、Team Sports、Water Sports、Martial Artsなどのセクションが考えられます。
@@ -48,11 +48,9 @@
 
     ![この設定ウィンドウでウィジェットをカスタマイズします。](./other-knowledge-base-widgets/images/04.png)
 
-1. ［**Setup**］ &rarr; ［**General**］ タブで、使用する1つまたは複数のセクションを選択し、*［Save］</ 0>をクリックします。</p></li>
+1. ［**Setup**］ &rarr; ［**General**］ タブで、使用する1つまたは複数のセクションを選択し、[**Save**］をクリックします。
 
-1
-
-［設定］ウィンドウを閉じて、更新を確認します。</ol>
+1. ［設定］ウィンドウを閉じて、更新を確認します。
 
 一致する記事がアプリのセクション見出しの下に表示されます。
 

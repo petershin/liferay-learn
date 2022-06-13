@@ -111,4 +111,4 @@
 ## 追加情報
 
 * [ドキュメントとメディアの概要](./documents-and-media-overview.md)
-* [Importing/Exporting Sites and Contents](../../site-building/building-sites/importing-exporting-pages-and-content.md)
+* [サイトとコンテンツのインポート/エクスポート](../../site-building/building-sites/importing-exporting-pages-and-content.md)

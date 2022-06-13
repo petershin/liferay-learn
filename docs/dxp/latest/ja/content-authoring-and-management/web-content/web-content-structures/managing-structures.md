@@ -37,7 +37,7 @@
 1. ［**保存**］ をクリックして変更を適用します。
 
 ```{tip}
-ストラクチャー項目の*初期値*設定を使用して、デフォルト値を設定することもできます。 詳細は、Editing and [Configuring Structures' Content](./configuring-structure-fields.md))を参照してください。
+ストラクチャー項目の*初期値*設定を使用して、デフォルト値を設定することもできます。 詳細は、Editing and [Configuring Structures' Content](./configuring-structure-fields.md)) を参照してください。
 ```
 
 ## 既存のストラクチャーをコピーする

@@ -13,7 +13,7 @@ Googleドライブ用のLiferayプラグインは、Liferay CEポータルとLif
 Liferayプラグインを有効にするには、GoogleドライブAPIとGoogle Picker APIの両方が有効になっているアクティブなGoogleプロジェクトが必要です。 GoogleドライブAPIを使用すると、ユーザーはネイティブエディタでGoogleファイル（ドキュメント、シート、スライドなど）を表示および編集できます。 Picker APIを使用すると、ユーザーは、ドキュメントとメディアにファイルをアップロードするときに、Googleドライブに保存されているデジタルアセット（写真、ビデオ、ドキュメントなど）を表示して選択できます。 プロジェクトをまだ作成していない場合は、 [Creating a Google Project](https://support.google.com/googleapi/answer/6251787?hl=en&ref_topic=7014522) を参照してください。 それ以外の場合は、 [Enabling APIs](https://support.google.com/googleapi/answer/6158841) を参照して、プロジェクトでPicker APIを有効にする方法を確認してください。
 
 ```{note}
-必要に応じて、Googleドライブ用のLiferayプラグインとは別に、ドキュメントとメディアを介してGoogleドキュメントの作成と編集を有効にすることができます。 詳細は、［Googleドライブでドキュメントの作成と編集を有効にする］(./enabling-document-creation-and-editing-with-google-drive.md)を参照してください。
+必要に応じて、Googleドライブ用のLiferayプラグインとは別に、ドキュメントとメディアを介してGoogleドキュメントの作成と編集を有効にすることができます。 詳細は、［Googleドライブでドキュメントの作成と編集を有効にする](./enabling-document-creation-and-editing-with-google-drive.md)を参照してください。
 ```
 
 プロジェクトでGoogle Picker APIを有効にした後、Picker APIの [APIキーを生成](https://support.google.com/googleapi/answer/6158862) し、 [OAuth 2を設定](https://support.google.com/cloud/answer/6158849) します。 OAuth 2の設定には、OAuth同意画面の設定、OAuth 2認証情報の生成、および承認されたJavaScriptオリジンのリストへのLiferayリクエストURIの追加が含まれます。 OAuth 2の認証情報を生成する際には、アプリケーションの種類として、 **Webアプリケーション** を選択していることを確認してください。

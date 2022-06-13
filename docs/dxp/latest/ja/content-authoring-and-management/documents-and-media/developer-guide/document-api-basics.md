@@ -150,7 +150,7 @@ main`メソッドのコメントでは、クラスの実行を実演していま
 他の例のJavaクラスはこれと類似していますが、異なる`DocumentResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) を参照ください。
+サービスの詳細は [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) を参照ください。
 ```
 
 以下は、cURLとJavaを使って、他の`Document` RESTサービスを呼び出す例です。

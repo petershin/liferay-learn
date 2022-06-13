@@ -25,7 +25,7 @@
 
 このツールは、［コンテンツダッシュボード］ページの上部にあるグラフィカル領域です。 このグラフは、選択したグローバルボキャブラリのカテゴリの組み合わせに対するアセットの総数を表しています。 この表は以下を考慮に入れています：
 
-- 全てのサイトとアセットライブラリにわたる[Webコンテンツの記事](../web-content/web-content-articles/adding-a-basic-web-content-article.md)と[ドキュメントとメディア](../documents-and-media/documents-and-media-overview.md)。
+- 全てのサイトとアセットライブラリにわたる [Webコンテンツの記事](../web-content/web-content-articles/adding-a-basic-web-content-article.md) と [ドキュメントとメディア](../documents-and-media/documents-and-media-overview.md)。
 
     ```{note}
     ドキュメントとメディアは、Liferay DXP 7.4+からコンテンツダッシュボードで利用できるようになりました。
@@ -38,7 +38,7 @@
 ![コンテンツダッシュボードのコンテンツ監査ツールの概要](./content-dashboard-interface/images/10.png)
 
 ```{tip}
-コンテンツ監査ツールに期待される表が表示されない場合は、グローバルボキャブラリの［カテゴリを確認］（../tags-and-categories/defining-categories-and-vocabularies-for-content.md）し、［コンテンツが分類されている］ことを確認（../tags-and-categories/organizing-content-with-categories-and-tags.md）してください。 
+コンテンツ監査ツールに期待される表が表示されない場合は、グローバルボキャブラリの［カテゴリを確認](../tags-and-categories/defining-categories-and-vocabularies-for-content.md）し、［コンテンツが分類されている］（../tags-and-categories/organizing-content-with-categories-and-tags.md）ことを確認してください。 
 ```
 
 次のビデオは、コンテンツ監査ツールの概要を示しています。

@@ -703,7 +703,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 
 
 ```{important}
-REST APIを使用してWebコンテンツフォルダーを削除すると、フォルダとそのコンテンツは [Liferay DXPゴミ箱] (../../content-authoring and-management/recycle-bin/recycle-bin-overview.md) を使わずに永久に削除されます。
+REST APIを使用してWebコンテンツフォルダーを削除すると、フォルダとそのコンテンツは [Liferay DXPゴミ箱](../../content-authoring and-management/recycle-bin/recycle-bin-overview.md) を使わずに永久に削除されます。
 ```
 
 

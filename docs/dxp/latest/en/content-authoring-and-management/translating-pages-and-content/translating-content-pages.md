@@ -10,6 +10,10 @@ When translating a Content Page, users can only translate a Page's name and inli
 
 If desired, you can [enable a custom workflow](./enabling-workflows-for-translations.md) to direct the review and publishing process for translations.
 
+```{note}
+The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
+```
+
 ## Manually Translating Content Pages
 
 ```{note}
@@ -96,7 +100,7 @@ Follow theses steps:
 
    ![Select Import Translation.](./translating-content-pages/images/05.png)
 
-1. Select the `.xliff` or `.xlf` files you want to import, or import multiple files as a `.zip` file.
+1. Select the `.xliff`, `.xlf`, and `.zip` files you want to import.
 
    ![Select the translation files you want to import.](./translating-content-pages/images/06.png)
 
@@ -108,11 +112,11 @@ Follow theses steps:
 
    If import is successful, Liferay displays a success message with the imported files. The translations are applied to the Content Page and the Page is saved as a draft. If workflow is enabled, the translations must be approved before they're applied to the Page.
 
-   ![]()
+   ![If import is successful, Liferay displays a success message with the imported files.](./translating-content-pages/images/07.png)
 
-   However, if errors occur during import, you can download the CSV error report for analysis or replace the files that failed.
+   However, if errors occur during import, Liferay notifies you of the failing files and provides a downloadable CSV error report.
 
-   ![]()
+   ![If errors occur during import, Liferay notifies you of the failing files and provides a downloadable CSV error report.](./translating-content-pages/images/08.png)
 
 ## Translating Content Pages Using Third Party Services
 

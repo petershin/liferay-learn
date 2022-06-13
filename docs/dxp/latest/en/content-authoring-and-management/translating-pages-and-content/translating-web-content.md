@@ -6,6 +6,10 @@ Liferay provides integrated tools for translating Web Content articles, so you c
 
 If desired, you can [enable a custom workflow](./enabling-workflows-for-translations.md) to direct the review and publishing process for translations.
 
+```{note}
+The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
+```
+
 ## Manually Translating Content
 
 ```{note}
@@ -92,7 +96,7 @@ Follow theses steps:
 
    ![Upload translations for multiple articles.](./translating-web-content/images/07.png)
 
-1. Select the `.xliff` or `.xlf` files you want to import, or import multiple files as a `.zip` file.
+1. Select the `.xliff`, `.xlf`, and `.zip` files you want to import.
 
    ![Select the translation files you want to import.](./translating-web-content/images/08.png)
 

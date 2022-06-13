@@ -80,6 +80,12 @@ Follow these steps to automatically translate fields:
 
    ![Open the Web Content translation interface.](./using-third-parties-for-translation/images/04.png)
 
+1. Use the language flags to select the *languages* you want to translate.
+
+   ```{note}
+   The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
+   ```
+
 1. Click the *Auto Translate* button to translate all Web Content fields into the selected language.
 
    ![Click the top left Auto Translate button to translate all Web Content fields.](./using-third-parties-for-translation/images/05.png)

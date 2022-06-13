@@ -14,7 +14,7 @@ Webコンテンツストラクチャーは、Webコンテンツ記事の構成�
 
 ストラクチャーを使用することで、雑誌の編集者はすべての記事を特定の形式に更新するために時間を費やす必要がなくなり、ライターはコンテンツのフォーマットにかかる時間を節約できます。
 
-テキストフィールド、テキストボックス、チェックボックス、セレクトボックス、または複数選択リストなどの要素を追加して、ストラクチャーを作成します。 また、画像アップローダ、ドキュメントコントロール、メディアコントロールなど、特殊なアプリケーション項目をストラクチャーに追加することもできます。 要素をストラクチャーにドラッグアンドドロップし、ビジネスニーズに合った要素と順序を選択できます。 さらに、要素を繰り返し可能なブロックにグループ化できます。 表示ページの制作者は、これらのフィールドを[編集可能なページフラグメント](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)に[マップ](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)して、カスタムスタイルとフォーマットを使用できます。
+テキストフィールド、テキストボックス、チェックボックス、セレクトボックス、または複数選択リストなどの要素を追加して、ストラクチャーを作成します。 また、画像アップローダ、ドキュメントコントロール、メディアコントロールなど、特殊なアプリケーション項目をストラクチャーに追加することもできます。 要素をストラクチャーにドラッグアンドドロップし、ビジネスニーズに合った要素と順序を選択できます。 さらに、要素を繰り返し可能なブロックにグループ化できます。 表示ページの制作者は、これらのフィールドを[編集可能なページフラグメント](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)に [マップ](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) して、カスタムスタイルとフォーマットを使用できます。
 
 ## 関連情報
 

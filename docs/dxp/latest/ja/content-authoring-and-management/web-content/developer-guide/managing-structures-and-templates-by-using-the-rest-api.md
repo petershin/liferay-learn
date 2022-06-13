@@ -6,7 +6,7 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
 |:------------------------- |:------------------------- |
 | <ul><li>ストラクチャーとテンプレートの情報収集</li><li>ストラクチャー権限の置換</li></ul> | <ul><li>ストラクチャーやテンプレートの作成</li><li>ストラクチャーやテンプレートの削除</li></ul> |
 
-ここでは、いくつかの [cURL](https://curl.haxx.se/)コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、構造化コンテンツの管理方法について学習していきます。 以下のトピックについて学習することができます。
+ここでは、いくつかの [cURL](https://curl.haxx.se/) コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、構造化コンテンツの管理方法について学習していきます。 以下のトピックについて学習することができます。
 
 - [環境のセットアップ](#setting-up-your-environment)
 - [使用するサービスの特定](#identifying-the-service-to-consume)
@@ -36,7 +36,7 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
    これらのスクリプトは基本認証を使用し、テスト用に設計されています。 本番のLiferay DXP環境では、基本認証を使用しないでください。
    ```
 
-1. [サンプルのプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip)をダウンロードして解凍します。
+1. [サンプルのプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip) をダウンロードして解凍します。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip -O
@@ -54,8 +54,8 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
 
 ### サイトIDの特定
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、*［Configuration］* &rarr; *［Site Settings］*に移動します。
-1. ［プラットフォーム］セクションで、*［Site Configuration］*をクリックします。
+1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**Configuration**］ &rarr; ［**Site Settings**］ に移動します。
+1. ［プラットフォーム］セクションで、 ［**Site Configuration**］ をクリックします。
 1. ［サイトID］の下でサイト識別子を見つけます。
 
    ![［サイト設定］と［Site Configuration］オプションでサイトIDを特定します。](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
@@ -72,8 +72,8 @@ REST APIを使用してプログラム的にストラクチャーとテンプレ
 
 ### サンプルストラクチャーとテンプレートの特定
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 *［Content & Data］* &rarr; *［Web Content］*に移動します。
-1. *［ストラクチャー］*タブをクリックします。
+1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**Content & Data**］ &rarr; ［**Web Content**］ に移動します。
+1. ［**ストラクチャー**］ タブをクリックします。
 1. IDの欄で、ストラクチャーのIDを特定します。
 
    ![［ストラクチャー］タブで、ID欄の下にあるストラクチャーの IDを確認します。](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)

@@ -10,17 +10,17 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
    ```
 
-1. [タグAPIの基本](./liferay-r7u9.zip)をダウンロードして解凍します。
+1. [タグAPIの基本](./liferay-r7u9.zip) をダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
    ```
 
    ```bash
    unzip liferay-r7u9.zip
    ```
 
-2. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
+2. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 3. cURLスクリプトを使用して、サイトに新しいタグを追加します。 コマンドラインで、 `curl` フォルダに移動します。 サイトIDをパラメーターとして使用して、`Keyword_POST_ToSite.sh`スクリプトを実行します。
 
@@ -48,7 +48,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
    "siteId" : 20125
     ```
 
-4. *［Administration Menu］* &rarr; *［カテゴリー設定］* &rarr; *［Tags］*に移動して、タグアプリケーションに移動します。 新しいタグが追加されたことを確認してください。
+4. ［**Administration Menu**］ &rarr; ［**カテゴリー設定**］ &rarr; ［**Tags**］ に移動して、タグアプリケーションに移動します。 新しいタグが追加されたことを確認してください。
 
     ![新しいタグが追加されたことを確認してください。](./tags-api-basics/images/01.png)
 
@@ -115,7 +115,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 他の例のJavaクラスはこれと類似していますが、異なる`KeywordResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、[KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java)を参照してください。
+サービスの詳細は、 [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`Keyword` RESTサービスを呼び出す例です。
@@ -124,7 +124,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 次のcURLまたはJavaコマンドを実行すると、サイトのタグを一覧表示できます。 上記のように、`1234`をサイトのIDに置き換えてください。
 
-### Keywords_GET_FromSite.sh
+### Keywords **GET** FromSite.sh
 
 コマンド:
 
@@ -138,7 +138,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
    :language: bash
 ```
 
-### Keywords_GET_FromSite.java
+### Keywords **GET** FromSite.java
 
 コマンド:
 
@@ -161,10 +161,10 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 次のcURLまたはJavaコマンドを使用して、特定のタグを取得します。 `1234`をタグのIDに置き換えてください。
 
 ```{tip}
-``Keywords_GET_FromSite.[java|sh]``を使用して、サイトの``Keyword`` IDを取得します。
+eywords_GET_FromSite.[java|sh]`を使用して、サイトの`Keyword` IDを取得します。
 ```
 
-### Keyword_GET_ById.sh
+### Keyword **GET** ById.sh
 
 コマンド:
 
@@ -178,7 +178,7 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
    :language: bash
 ```
 
-### Keyword_GET_ById.java
+### Keyword **GET** ById.java
 
 コマンド：
 
@@ -200,7 +200,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のタグを完全に上書きします。 注： `1234`をタグのIDに置き換えてください。
 
-### Keyword_PUT_ById.sh
+### Keyword **PUT** ById.sh
 
 コマンド:
 
@@ -214,7 +214,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
    :language: bash
 ```
 
-### Keyword_PUT_ById.java
+### Keyword **PUT** ById.java
 
 コマンド：
 
@@ -234,7 +234,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のタグを削除します。 注： `1234`をタグのIDに置き換えてください。
 
-### Keyword_DELETE_ById.sh
+### Keyword **DELETE** ById.sh
 
 コマンド:
 
@@ -248,7 +248,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
    :language: bash
 ```
 
-### Keyword_DELETE_ById.java
+### Keyword **DELETE** ById.java
 
 コマンド
 

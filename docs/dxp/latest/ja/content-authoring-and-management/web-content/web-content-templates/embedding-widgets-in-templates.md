@@ -8,15 +8,15 @@
 
 Webコンテンツテンプレートへのウィジェットの埋め込みを開始するには、次の手順に従います。
 
-1. サイト（この例ではデフォルトのDXPサイト）の_サイト管理_に移動します。
-1. _［コンテンツ&データ］_&rarr;_［Webコンテンツ］_をクリックします。
-1. _［テンプレート］_ タブをクリックします。
+1. サイト（この例ではデフォルトのDXPサイト）の **サイト管理** に移動します。
+1. ［**コンテンツ&データ**］ &rarr; ［**Webコンテンツ**］ をクリックします。
+1. ［**テンプレート**］ タブをクリックします。
 
-    ![[テンプレート]タブには、サイトのテンプレートが表示されます。](./embedding-widgets-in-templates/images/01.png)
+    ![ [テンプレート]タブには、サイトのテンプレートが表示されます。](./embedding-widgets-in-templates/images/01.png)
 
 1. 追加（![Add Icon](../../../images/icon-add.png)）アイコンをクリックします。
-1. テンプレートの名前を入力します（たとえば、_テンプレート1_）
-1. _［Properties］_セクションから_［選択］_をクリックして、ストラクチャーを選択します（たとえば、_ストラクチャー1_）。
+1. テンプレートの名前を入力します（たとえば、 **テンプレート1**）
+1. ［**Properties**］ セクションから ［**選択**］ をクリックして、ストラクチャーを選択します（たとえば、 **ストラクチャー1**）。
 
     ![ストラクチャーを選択します。](./embedding-widgets-in-templates/images/02.png)
 
@@ -24,10 +24,10 @@ Webコンテンツテンプレートへのウィジェットの埋め込みを�
 
     ![ポートレットマクロを入力します。](./embedding-widgets-in-templates/images/03.png)
 
-1. 完了したら、_［保存］_をクリックします。
+1. 完了したら、 ［**保存**］ をクリックします。
 
 ```{important}
-FreeMarker のコンテキストに `theme` 変数が注入されなくなりました。 DXP 7.0 でテーマ変数が削除された理由と、コードの更新に関する提案については、[Taglibs Are No Longer Accessible via theme Variable in FreeMarker](https://help.liferay.com/hc/articles/360017892092-Introduction-to-Breaking-Changes-#taglibs-are-no-longer-accessible-via-the-theme-variable-in-freemarker) breaking change エントリをご覧ください。
+FreeMarker のコンテキストに `theme` 変数が注入されなくなりました。 DXP 7.0 でテーマ変数が削除された理由と、コードの更新に関する提案については、 [Taglibs Are No Longer Accessible via theme Variable in FreeMarker](https://help.liferay.com/hc/articles/360017892092-Introduction-to-Breaking-Changes-#taglibs-are-no-longer-accessible-via-the-theme-variable-in-freemarker) breaking change エントリをご覧ください。
 ```
 
 ## 他のテンプレートの埋め込み
@@ -40,7 +40,7 @@ FreeMarker のコンテキストに `theme` 変数が注入されなくなりま
 <#include "${templatesPath}/[template-key]" />
 ```
 
-以前に公開されたテンプレートを編集するときに、*テンプレートキー*を確認できます。
+以前に公開されたテンプレートを編集するときに、 **テンプレートキー** を確認できます。
 
 ![テンプレートの編集ページを表示すると、テンプレートキーを確認できます。](./embedding-widgets-in-templates/images/04.png)
 

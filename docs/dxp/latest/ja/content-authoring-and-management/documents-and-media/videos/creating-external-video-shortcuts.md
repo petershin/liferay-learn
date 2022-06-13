@@ -2,15 +2,15 @@
 
 > Liferay 7.4以降で利用可能
 
-Liferayのドキュメントとメディアアプリケーションを使用すると、外部プラットフォームでホストされているビデオへの参照を保存できます。 これらの参照を使用して、Liferayアセットまたはサイトページに[ビデオを埋め込む](./embedding-videos-into-liferay-assets-and-pages.md)ことができます。 YouTube、Facebook、Vimeo、Twitchは初めからサポートされていますが、この機能を拡張してカスタムビデオソースをサポートすることもできます。<!--TASK: link to dev article once merged, "\[support custom video sources\](./creating-custom-video-shortcut-providers.md)"-->次の手順に従って、外部ビデオショートカットを作成します。
+Liferayのドキュメントとメディアアプリケーションを使用すると、外部プラットフォームでホストされているビデオへの参照を保存できます。 これらの参照を使用して、Liferayアセットまたはサイトページに[ビデオを埋め込む](./embedding-videos-into-liferay-assets-and-pages.md)ことができます。 YouTube、Facebook、Vimeo、Twitchは初めからサポートされていますが、この機能を拡張してカスタムビデオソースをサポートすることもできます。 <!--TASK: link to dev article once merged, "\[support custom video sources\](./creating-custom-video-shortcut-providers.md)"--> 次の手順に従って、外部ビデオショートカットを作成します。
 
 1. サイトまたはアセットライブラリでドキュメントとメディアアプリケーションに移動します。
 
    ```{note}
-   サイトで作成されたショートカットはそのサイトにスコープされますが、アセットライブラリで作成されたショートカットは複数のサイト間で共有できます。 詳しくは、[Asset Libraries Overview](../../asset-libraries/asset-libraries-overview.md)をご覧ください。
+   サイトで作成されたショートカットはそのサイトにスコープされますが、アセットライブラリで作成されたショートカットは複数のサイト間で共有できます。 詳しくは、 [アセットライブラリの概要](../../asset-libraries/asset-libraries-overview.md) をご覧ください。
    ```
 
-1. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックして、*［External Video Shortcut］*を選択します。
+1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックして、 ［**External Video Shortcut**］ を選択します。
 
    ![新しい外部ビデオショートカットを追加します。](./creating-external-video-shortcuts/images/01.png)
 
@@ -36,7 +36,7 @@ Liferayのドキュメントとメディアアプリケーションを使用す�
 
 1. （オプション）ビデオショートカットの権限を構成します。
 
-1. 完了したら、*［Publish］*をクリックします。
+1. 完了したら、 ［**Publish**］ をクリックします。
 
    他のドキュメントとメディアアセットと同様に、外部のビデオショートカットを表示および管理できます。
 

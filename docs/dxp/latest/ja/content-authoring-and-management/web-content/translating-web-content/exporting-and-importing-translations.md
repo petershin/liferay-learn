@@ -8,19 +8,19 @@ Liferayでは、翻訳用のWebコンテンツを `.xliff` または `.xlf` フ�
 Liferay は XLIFF 1.2 と 2.0 の両方のファイルをサポートしています。 ただし、これらのフォーマットが提供するすべての機能・性能をサポートしているわけではありません。
 ```
 
-コンテンツを翻訳用にエクスポートしたり、翻訳をインポートするには、選択したコンテンツに対して *表示* および *更新* する権限が必要です。 [Managing Permissions for Translation](./manually-translating-web-content.md#managing-permissions-for-translation)を参照してください。
+コンテンツを翻訳用にエクスポートしたり、翻訳をインポートするには、選択したコンテンツに対して **表示** および **更新** する権限が必要です。 [Managing Permissions for Translation](./manually-translating-web-content.md#managing-permissions-for-translation) を参照してください。
 
 ## 翻訳用のコンテンツのエクスポート
 
 以下の手順で、Webコンテンツを翻訳用にエクスポートします。
 
-1. *［サイトメニュー］* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［コンテンツ］ & ［データ］* &rarr; *［Webコンテンツ］*に移動します。
+1. ［**サイトメニュー**］(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**コンテンツ］ & ［データ**］ &rarr; ［**Webコンテンツ**］ に移動します。
 
-1. 翻訳するWebコンテンツの*アクション*メニュー（![Actions button](../../../images/icon-actions.png)）をクリックし、*［翻訳用にエクスポート］*を選択します。 エクスポートの設定に使用できるモーダルウィンドウが開きます。
+1. 翻訳するWebコンテンツの **アクション** メニュー（![Actions button](../../../images/icon-actions.png)）をクリックし、 ［**翻訳用にエクスポート**］ を選択します。 エクスポートの設定に使用できるモーダルウィンドウが開きます。
 
    ![翻訳するWebコンテンツのアクションメニューをクリックし、［翻訳用にエクスポート］を選択します。](./exporting-and-importing-translations/images/01.png)
 
-1. エクスポート形式を選択します： *XLIFF 1.2* または *XLIFF 2.0*。
+1. エクスポート形式を選択します： **XLIFF 1.2** または **XLIFF 2.0** 。
 
 1. Webコンテンツの元の言語を指定します。 これは、翻訳の参照として使用されます。
 
@@ -28,7 +28,7 @@ Liferay は XLIFF 1.2 と 2.0 の両方のファイルをサポートしてい�
 
    ![Webコンテンツを翻訳する言語を選択します。](./exporting-and-importing-translations/images/02.png)
 
-1. 完了したら、 *[エクスポート]*をクリックして、翻訳用にエクスポートを開始します。
+1. 完了したら、 [**エクスポート**] をクリックして、翻訳用にエクスポートを開始します。
 
 Liferayは、翻訳用に選択した言語と同じ数のXLIFFファイルを含むダウンロード用のZipアーカイブを生成します。 これらのファイルを互換性のある翻訳ソフトウェアで使用して、Webコンテンツを翻訳できます。
 
@@ -36,9 +36,9 @@ Liferayは、翻訳用に選択した言語と同じ数のXLIFFファイルを�
 
 翻訳の準備ができたら、次の手順に従ってWebコンテンツにインポートします。
 
-1. プロダクトメニューを開き、*［コンテンツ & データ］* &rarr; *［Webコンテンツ］*に移動します。
+1. プロダクトメニューを開き、 ［**コンテンツ & データ**］ &rarr; ［**Webコンテンツ**］ に移動します。
 
-1. 翻訳されたWebコンテンツの*［アクション］*メニュー（![Actions button](../../../images/icon-actions.png)）をクリックし、*［翻訳のインポート］*を選択します。
+1. 翻訳されたWebコンテンツの ［**アクション**］ メニュー（![Actions button](../../../images/icon-actions.png)）をクリックし、 ［**翻訳のインポート**］ を選択します。
 
    ![翻訳されたWebコンテンツのアクションメニューをクリックし、［翻訳のインポート］を選択します。](./exporting-and-importing-translations/images/03.png)
 
@@ -50,11 +50,11 @@ Liferayは、翻訳用に選択した言語と同じ数のXLIFFファイルを�
    Liferayは*翻訳用にエクスポート*アクションを使用して作成されたXLIFFファイルのインポートをサポートしていますが、他の方法で生成されたファイルの正常なインポートは保証できません。
    ```
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
 インポートが完了すると、翻訳ファイルに含まれているすべての変更内容でWebコンテンツが更新されます。 ワークフローが有効になっている場合、この変更は他のコンテンツの更新と同様に承認が必要になります。
 
 ## 追加情報
 
-* [Manually Translating Web Content](./manually-translating-web-content.md)
+* [Webコンテンツの手動翻訳](./manually-translating-web-content.md)
 * [基本的なWebコンテンツの記事の追加](../web-content-articles/adding-a-basic-web-content-article.md)

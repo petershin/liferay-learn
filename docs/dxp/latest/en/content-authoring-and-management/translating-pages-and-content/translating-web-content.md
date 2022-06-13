@@ -47,7 +47,7 @@ Follow these steps to manually translate Web Content:
 ## Exporting and Importing Translations
 
 ```{note}
-To export content for translation or import XLIFF translations, you must have *View* and *Update* permissions for the selected content. See [Managing Permissions for Translation](./manually-translating-web-content.md#managing-permissions-for-translation) for more information.
+To manually translate Content Page experiences, users must have either *View* and *Update* permissions for Content Pages or Translation permissions for one or more languages. See [Managing Translation Permissions](./managing-translation-permissions.md) for more information.
 ```
 
 With Liferay, you can export Web Content for translation as `.xliff` or `.xlf` files. You can send these files to translators and then import the translations together as a `.zip` file or individually as `.xliff` or `.xlf` files.

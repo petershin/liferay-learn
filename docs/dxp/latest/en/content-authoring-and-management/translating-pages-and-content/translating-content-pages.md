@@ -17,7 +17,7 @@ The languages available for translation are determined by your instance's locali
 ## Manually Translating Content Pages
 
 ```{note}
-To manually translate Content Page experiences, users must have either *View* and *Update* permissions for Content Pages or Translation permissions for one or more languages. See [Managing Permissions for Translation](./manually-translating-web-content.md#managing-permissions-for-translation) for more information.
+To manually translate Content Page experiences, users must have either *View* and *Update* permissions for Content Pages or Translation permissions for one or more languages. See [Managing Translation Permissions](./managing-translation-permissions.md) for more information.
 ```
 
 Follow these steps to manually translate Content Page experiences:

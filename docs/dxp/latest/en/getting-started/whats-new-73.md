@@ -84,7 +84,7 @@ In 7.3 we've added a new configuration to vocabularies in order to [set visibili
 
 ### Dedicated translation experience for web content
 
-A [new translation UI](../content-authoring-and-management/translating-pages-and-content/translating-web-content.md#manually-translating-web-content) makes it easy to translate content in a side-by-side UI that optimizes the process. Translators can translate only into languages for which they have permission, and our workflow processes make reviewing those translations a snap.
+A [new translation UI](../content-authoring-and-management/translating-pages-and-content/translating-web-content.md#manually-translating-content) makes it easy to translate content in a side-by-side UI that optimizes the process. Translators can translate only into languages for which they have permission, and our workflow processes make reviewing those translations a snap.
 
 ![The new translation UI makes the entire translation process painless.](./whats-new-73/images/10.png)
 

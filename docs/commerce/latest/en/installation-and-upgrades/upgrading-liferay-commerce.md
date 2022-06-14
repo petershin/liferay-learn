@@ -60,7 +60,7 @@ To upgrade Liferay Commerce to 2.1.x/2.2.x, you must apply the appropriate DXP f
 Upgrading from 1.1.x to 2.1.x does **not** require an incremental upgrade to 2.0.x.
 ```
 
-For instance, if upgrading to Liferay Commerce 2.0.7 - upgrading Liferay DXP 7.1 to fix pack 16 or above. If you are using Liferay DXP 7.2, you must apply fix pack 2 or 3. To learn about upgrading DXP, see [Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html). See the table below to understand the upgrade paths. 
+For instance, if upgrading to Liferay Commerce 2.0.7 - upgrade Liferay DXP 7.1 to fix pack 16 or above. If you are using Liferay DXP 7.2, you must apply fix pack 2 or 3. To learn about upgrading DXP, see [Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html). See the table below to understand the upgrade paths. 
 
 | Upgrading to           | Required Fix Pack Version             |
 | :--------------------- | :------------------------------------ |
@@ -80,9 +80,9 @@ The appropriate fix packs for Liferay are available to download at the [Help Cen
 
 If Liferay DXP was [installed manually](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually) (for example, on WebLogic), see [Installing Patches on the Liferay DXP 7.1 WAR](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR).
 
-Then, follow these steps to verify the fix pack was successfully installed:
+Then follow these steps to verify the fix pack was successfully installed:
 
-1. Navigate to the `${liferay.home}/patching-tool` folder.
+1. Navigate to the `[Liferay Home]/patching-tool` folder.
 
 1. Verify that the fix pack has been applied by executing the following:
     * Linux/Unix: `./patching-tool.sh info`
@@ -94,7 +94,7 @@ Then, follow these steps to verify the fix pack was successfully installed:
        [*I] dxp-14-7110 :: Installed; Will be installed. :: Built for LIFERAY
     ```
 
-Fix Packs are cumulative in nature and include all the fix packs previously released. After patching, remove Liferay DXP's cache of deployed code by deleting the contents of the `${liferay.home}/work` folder. See the next section on how to remove other stale data.
+Fix Packs are cumulative in nature and include all the fix packs previously released. After patching, remove Liferay DXP's cache of deployed code by deleting the contents of the `[Liferay Home]/work` folder. See below for how to remove other stale data.
 
 ### Downloading and Deploying
 
@@ -105,7 +105,7 @@ Once you're running the appropriate fix pack of DXP 7.1/7.2, follow these steps 
     * Commerce Enterprise is available from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
     * Commerce Community is available from the [Liferay Commerce Community Download Page](https://www.liferay.com/downloads-community)
 
-1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder. To learn more about deploying applications to Liferay DXP, see [Installing Apps](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html).
+1. Deploy the `LPKG` to the `[Liferay Home]/deploy` folder. To learn more about deploying applications to Liferay DXP, see [Installing Apps](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html).
 
 1. Verify that the messages similar to those shown below appear in the application server console:
 
@@ -125,7 +125,7 @@ Once you're running the appropriate fix pack of DXP 7.1/7.2, follow these steps 
 
 ### Clearing Stale Data and Verifying the Upgrade Process
 
-1. Delete the `${liferay.home}/osgi/state` folder. To learn more about OSGi folders, see [Installing Apps](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html).
+1. Delete the `[Liferay Home]/osgi/state` folder. To learn more about OSGi folders, see [Installing Apps](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html).
 
 1. Start the application server.
 
@@ -163,9 +163,7 @@ The Liferay Commerce instance has been upgraded.
 
 > Liferay Commerce 2.1 and Below
 
-After upgrading from to the latest version, execute a full search reindex.
-
-To execute a search reindex:
+After upgrading from to the latest version, execute a full search reindex:
 
 1. Navigate to _Control Panel_ &rarr; _Configuration_ &rarr; _Search_.
 1. Click _Execute_ next to _Reindex all search indexes_. and wait for it to finish.

@@ -1,6 +1,6 @@
 # Asset Library Content
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available for Liferay DXP/Portal 7.3+`
 
 Asset Libraries provide a convenient way to share content across Liferay Sites while streamlining content collaboration and reducing the risk of data duplication. To add, view, and manage an Asset Library's content, first navigate to the Library's menu page.
 
@@ -8,17 +8,9 @@ Asset Libraries provide a convenient way to share content across Liferay Sites w
 
 1. Click on the *name* of the desired Asset Library.
 
-This leads to the Library's menu page. From here, you can access the Library's active applications to create and manage content. You can also enable Staging, implement custom workflows, categorize content using Tags and Categories, create Collections, and more. <!--TASK: document Collections and Workflow for Asset Libraries-->
+From here, you can access the Library's active applications to create and manage content. You can also enable Staging, implement custom workflows, categorize content using Tags and Categories, create Collections, and more. <!--TASK: document Collections and Workflow for Asset Libraries-->
 
-![Click on the desired Asset Library's name to access its dashboard.](./asset-library-content/images/01.png)
-
-  - [Creating Content](#creating-content)
-  - [Using Content in Sites](#using-content-in-sites)
-  - [Staging Content](#staging-content)
-  - [Categorizing Content](#categorizing-content)
-  - [Exporting and Importing Content](#exporting-and-importing-content)
-  - [Removing Content](#removing-content)
-  - [Additional Information](#additional-information)
+![Click on the desired Asset Library's name to access its menu page.](./asset-library-content/images/01.png)
 
 ## Creating Content
 
@@ -32,25 +24,33 @@ Only active applications appear on a Library's menu page. To activate or deactiv
 
 ## Using Content in Sites
 
-Once you've created content in an Asset Library, you can access and display it in [connected Sites](./creating-and-managing-asset-libraries.md#sites) using Display Page Templates, Fragments, Widgets, and more. Using Asset Library content in your Site is essentially the same as using Site content.
+Once you've added content to an Asset Library, you can access it from [connected Sites](./creating-and-managing-asset-libraries.md#sites) and display it using Display Page Templates, Fragments, Widgets, and more.
 
-Unlike Sites, Display Page Templates cannot be defined in an Asset Library. Instead, Asset Library content is displayed in connected Sites using each Site's default Display Page template for the respective content type.
+```{note}
+For Liferay 7.4 U21+ and GA21+, you can use the item selector to browse Web Content, Documents and Media, and Blogs in an Asset Library.
+```
 
-Also, if you want to select Asset Library content in a Site (e.g., when mapping Page fragment fields, or configuring the Asset Publisher), you must set the modal window to include Asset Library content.
+When using the item selector in a Site, you can browse content in connected Asset Libraries. To do this, open the item selector window and use the breadcrumb to navigate to *Sites and Libraries*.
 
-For example, when mapping content to a Page fragment, you can use content from an Asset Library by setting the window to include content from *Everywhere*. You can then search and select the desired asset.
+![Use the breadcrumb to navigate to Sites and Libraries](./asset-library-content/images/02.png)
 
-![Filter content in the Item Selector to include content from Everywhere.](./asset-library-content/images/02.png)
+From here, you can click the *Asset Library* tab and select a connected Asset Library. Once selected, you can browse its content and select the desired asset.
 
-Alternatively, you can use the breadcrumb in the Select modal window to navigate to *Sites and Libraries*. From here, you can click on the *Asset Library* tab, select the desired Library, and click on the content you want to use.
+![Click to the Asset Library tab and select a connected library.](./asset-library-content/images/03.png)
 
-![Navigate to Sites and Libraries in the modal window, and click on the Asset Library tab.](./asset-library-content/images/03.png)
+Alternatively, you can filter the item selector window to include content from *Everywhere*. This displays both Site and available Asset Library content.
 
-Similarly, when publishing content using the Asset Publisher widget, you must set its scope to include content from a specific Asset Library. Then select the content you want to use.
+![Filter content in the Item Selector to include content from Everywhere.](./asset-library-content/images/04.png)
 
-![Set the Asset Publisher's scope to include content from a specific Asset Library.](./asset-library-content/images/04.png)
+When publishing content using the Asset Publisher widget, you must set its scope to include content from a specific Asset Library. Then select the content you want to use.
+
+![Set the Asset Publisher's scope to include content from a specific Asset Library.](./asset-library-content/images/05.png)
 
 See [Displaying Content](../../site-building/displaying_content.html) documentation for more information about using content in your Sites.
+
+```{note}
+Unlike Sites, Display Page Templates cannot be defined in an Asset Library. Instead, Asset Library content is displayed using each Site's default Display Page template for the respective content type.
+```
 
 ## Staging Content
 
@@ -80,7 +80,7 @@ Asset Libraries support the [Recycle Bin](../recycle-bin/configuring-the-recycle
 
 Alternatively, you can then manually delete recycled content or restore it to your Asset Library via the asset's *Actions* button ( ![Actions button](../../images/icon-actions.png) ).
 
-![Manually delete recycled content or restore it to your Asset Library.](./asset-library-content/images/05.png)
+![Manually delete recycled content or restore it to your Asset Library.](./asset-library-content/images/06.png)
 
 See [Recycle Bin Overview](../recycle-bin/recycle-bin-overview.md) for more information.
 

@@ -5,6 +5,7 @@
 
 devops/configuring-documents-and-media-previews.md
 ../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+devops/configuring-cache-control-for-documents-and-media.md
 devops/setting-storage-quotas-for-documents-and-media.md
 devops/enabling-optimization-of-animated-gifs.md
 devops/enabling-ffmpeg-for-audio-and-video-previews.md
@@ -16,6 +17,7 @@ devops/sharepoint-integration.md
 
 - [Configuring Documents and Media Previews](./devops/configuring-documents-and-media-previews.md)
 - [Enabling Antivirus Scanning for Uploaded Files](../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md)
+- [Configuring Cache Control for Documents and Media](./devops/configuring-cache-control-for-documents-and-media.md)
 - [Setting Storage Quotas for Documents and Media](./devops/setting-storage-quotas-for-documents-and-media.md)
 - [Enabling Optimization of Animated GIFs](./devops/enabling-optimization-of-animated-gifs.md)
 - [Enabling FFmpeg For Audio and Video Previews](./devops/enabling-ffmpeg-for-audio-and-video-previews.md)

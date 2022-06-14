@@ -60,7 +60,15 @@ To upgrade Liferay Commerce to 2.1.x/2.2.x, you must apply the appropriate DXP f
 Upgrading from 1.1.x to 2.1.x does **not** require an incremental upgrade to 2.0.x.
 ```
 
-For instance, if upgrading to Liferay Commerce 2.0.7 - upgrading Liferay DXP 7.1 to fix pack 16 or above. If you are using Liferay DXP 7.2, you must apply fix pack 2 or 3. To learn about upgrading DXP, see [Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html).
+For instance, if upgrading to Liferay Commerce 2.0.7 - upgrading Liferay DXP 7.1 to fix pack 16 or above. If you are using Liferay DXP 7.2, you must apply fix pack 2 or 3. To learn about upgrading DXP, see [Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html). See the table below to understand the upgrade paths. 
+
+| Upgrading to           | Required Fix Pack Version             |
+| :--------------------- | :------------------------------------ |
+| Liferay Commerce 2.0.7 | Liferay DXP 7.1 FP 16+/DXP 7.2 FP 2-3 |
+| Liferay Commerce 2.1.0 | Liferay DXP 7.1 FP 17+/DXP 7.2 FP 5   |
+| Liferay Commerce 2.1.3 | Liferay DXP 7.1 FP 24+                |
+| Liferay Commerce 2.2.0 | Liferay DXP 7.2 FP 13                 |
+| Liferay Commerce 2.2.1 | Liferay DXP 7.2 FP 15                 |
 
 ### Applying the Appropriate Fix Pack
 

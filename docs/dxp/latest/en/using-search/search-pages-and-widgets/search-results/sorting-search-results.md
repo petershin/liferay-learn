@@ -25,21 +25,33 @@ To get started with the Sort widget,
 
 ## Configuring the Sort Widget
 
+```{note}
+The Sort widget's configuration screen was changed in 7.4 Update/GA 6. For a period of time you can choose to use the older configuration screen by clicking the link _Switch to Classic View_.
+
+![Toggle between the classic Sort configuration and the newer, more intuitive configuration screen.](./sorting-search-results/images/03.png)
+
+The option to use the classic configuration view will be removed in a future Update/GA.
+```
+
 From the Sort widget's Configuration screen, you can
 
+- Disable the default Relevance sort option.
 - Edit existing Sort options
 - Delete options
 - Add new options
 
-![Users can re-order search results with the Sort widget.](./sorting-search-results/images/01.png)
+![Users can re-order search results with the Sort widget.](./sorting-search-results/images/04.gif)
 
 To access the widget configuration screen, open the widget Options menu (![Options](../../../images/icon-app-options.png)) and click _Configuration_.
 
-Each Sort option has two settings: _Label_ and _Field_.
+Each Sort option has three settings: _Indexed Field Name_, _Display Label_, and _Order_.
 
-**Label:** Set the displayed label for the type of sort being configured.
 
-**Field:** Enter the `fieldName` of the indexed field to sort. Most of the time this is a [keyword](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) field. Other acceptable options are `date` and any [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html). There's even a way to coerce `text` fields into behaving with the Sort widget (see below). 
+**Indexed Field Name:** Enter the `fieldName` of the indexed field to sort. Most of the time this is a [keyword](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) field. Other acceptable options are `date` and any [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html). There's even a way to coerce `text` fields into behaving with the Sort widget (see below). 
+
+**Display Label:** Set the displayed label for the type of sort being configured.
+
+**Order:** Choose to sort in ascending or descending order. In the classic configuration, 
 
 ![From the Sort widget's configuration, add, edit, or remove Sort options.](./sorting-search-results/images/02.png)
 
@@ -92,7 +104,11 @@ All the text fields listed here have a `fieldName_sortable` counterpart created 
 
 ## Adding New Sort Options
 
-To sort by the new field or an existing field of the proper type, use the plus symbol below any existing option's _Field_ configuration make sure to use the `fieldName_sortable` version of the field in the widget configuration. 
+To sort by the new field or an existing field of the proper type, click the _Add Option_ button. 
+
+```{tip}
+Make sure to use the `fieldName_sortable` version of a text field in the widget configuration. 
+```
 
 To add a new sort option that's already of the proper data type, use the plus symbol below any option's _Field_ configuration and fill in the fields. The order of options here in the configuration screen matches the order in the select list when configuring the widget for search.
 
@@ -100,11 +116,11 @@ To add a new sort option that's already of the proper data type, use the plus sy
 
 To edit an existing option, edit the text in its configuration section.
 
-To delete an existing option, use the minus symbol below its _Field_ configuration.
+To delete an existing option, use the trash icon.
 
-## Controlling the Sort Order
+## Controlling the Sort Order in the Classic Configuration
 
-To control the order for the sort option, add a plus or minus symbol after the `fieldName`. Look how it's done for the existing sort options labeled _Created_ and _Created (oldest first)_ to understand how it works:
+To control the order for the sort option in the Classic configuration, add a plus or minus symbol after the `fieldName`. Look how it's done for the existing sort options labeled _Created_ and _Created (oldest first)_ to understand how it works:
 
 **Label:** _Created_
 **Field:** `createDate-`

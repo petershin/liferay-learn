@@ -20,7 +20,7 @@ Liferay DXPの最新リリースには、多くの重要な新機能と改善が
 
 ![コレクション表示フラグメントでは、ドラッグアンドドロップのインターフェイスを使用してアセットを公開します。](./whats-new-73/images/02.gif)
 
-[コレクション表示](../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page)フラグメントでは、ドラッグアンドドロップ編集で一連のアセットを表示します。 フラグメントがページに追加されたら、コレクションにリンク付けします。 その後、コレクション内の各アセットのスペースを定義します。 スペースの調整は、残りのスペースにも反映されます。 編集可能なフィールドをコレクションの共通フィールドにマッピングすることができます。 例えば、見出しフラグメントが追加されると、Webコンテンツストラクチャーのタイトルフィールドにマッピングされます。このマッピングは各項目にプロパゲートします。
+[コレクション表示](../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) フラグメントでは、ドラッグアンドドロップ編集で一連のアセットを表示します。 フラグメントがページに追加されたら、コレクションにリンク付けします。 その後、コレクション内の各アセットのスペースを定義します。 スペースの調整は、残りのスペースにも反映されます。 編集可能なフィールドをコレクションの共通フィールドにマッピングすることができます。 例えば、見出しフラグメントが追加されると、Webコンテンツストラクチャーのタイトルフィールドにマッピングされます。このマッピングは各項目にプロパゲートします。
 
 ### ビジュアル・レスポンシブ・レイアウト・エディター
 
@@ -68,13 +68,13 @@ Liferay DXP 7.3でReactを使用するためにページエディターを全面
 
 ### コンテンツ監査ツール
 
-この新しいコンテンツダッシュボードには、[種類別にコンテンツを簡単に監査](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md#content-audit-tool)できるツールが含まれています。 ボキャブラリーを選択し、コンテンツ監査のグラフで、ボキャブラリーの各カテゴリにおける既存のアセット数を計算します。 カテゴリ、タグ、作成者、アセットのサブタイプ、サイトなどでフィルタリングし、グラフに表示されるアセットを調整することができます。
+この新しいコンテンツダッシュボードには、 [種類別にコンテンツを簡単に監査](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md#content-audit-tool) できるツールが含まれています。 ボキャブラリーを選択し、コンテンツ監査のグラフで、ボキャブラリーの各カテゴリにおける既存のアセット数を計算します。 カテゴリ、タグ、作成者、アセットのサブタイプ、サイトなどでフィルタリングし、グラフに表示されるアセットを調整することができます。
 
 ![コンテンツ監査ツールにより、コンテンツの種類を確認できます。](./whats-new-73/images/08.gif)
 
 ### カテゴリー設定の拡張機能
 
-Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとするか一般公開とするか](../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md#vocabulary-visibility)設定できるよう、ボキャブラリーに新しい設定を追加しました。 すぐに利用可能なオーディエンス、ステージ、およびトピックのグローバルボキャブラリーを使えば、サイト全体で体系的な分類がしやすくなります。
+Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとするか一般公開とするか](../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md#vocabulary-visibility) 設定できるよう、ボキャブラリーに新しい設定を追加しました。 すぐに利用可能なオーディエンス、ステージ、およびトピックのグローバルボキャブラリーを使えば、サイト全体で体系的な分類がしやすくなります。
 
 ## 公開管理
 
@@ -116,7 +116,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 ![フレンドリURLの履歴には、あらゆるページにおけるこれまでに使用されたすべてのURLが表示されます。](./whats-new-73/images/15.png)
 
-この履歴により、[あらゆるページで使用されているフレンドリURL](../site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md#managing-a-page-s-url-history)をすべて、言語ごとに</0>簡単に確認でき、視覚的に管理できます。 URLを覚える必要はなく、他のページで再利用したり、古いフレンドリURLを復元したりすることができます。
+この履歴により、 [あらゆるページで使用されているフレンドリURL](../site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md#managing-a-page-s-url-history) をすべて、言語ごとに簡単に確認でき、視覚的に管理できます。 URLを覚える必要はなく、他のページで再利用したり、古いフレンドリURLを復元したりすることができます。
 
 ## コンテンツパフォーマンス
 
@@ -154,7 +154,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 > 変更通知を受け取り（購読）が必要
 
-アプリビルダーには、[承認のためのワークフロープロセス](../building-applications/app-builder/creating-a-workflow-powered-application.md)が含まれています。 プロセスの段階を定義し、アプリケーションの各段階でどの情報を要求、表示させるべきか指定します。 アプリのプロセスのパフォーマンスと健全性を把握できるよう、[ワークフロー統計情報](#workflow-metrics-improvements) を活用することもできます。
+アプリビルダーには、[承認のためのワークフロープロセス](../building-applications/app-builder/creating-a-workflow-powered-application.md)が含まれています。 プロセスの段階を定義し、アプリケーションの各段階でどの情報を要求、表示させるべきか指定します。 アプリのプロセスのパフォーマンスと健全性を把握できるよう、 [ワークフロー統計情報](#workflow-metrics-improvements) を活用することもできます。
 
 ![プロセス主導型アプリ](./whats-new-73/images/22.png)
 
@@ -234,7 +234,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 ## グローバルメニュー
 
-新しいアプリケーションドロワーには、ワークフロー、フォーム、および [コマース](https://learn.liferay.com/commerce/latest/en/index.html)などのクロスサイトアプリケーションが格納されています。
+新しいアプリケーションドロワーには、ワークフロー、フォーム、および [コマース](https://learn.liferay.com/commerce/latest/ja/index.html) などのクロスサイトアプリケーションが格納されています。
 
 ![グローバルメニューにより、クロスサイトアプリケーションが利用しやすくなります。](./whats-new-73/images/29.png)
 
@@ -244,13 +244,13 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 > 変更通知を受け取り（購読）が必要
 
-[多要素認証](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA) では、ユーザーに複数の方法、または _要素_で本人確認を求めることで、より優れたセキュリティを実現します。 基本的なユーザー名とパスワードの組み合わせは、1つまたは複数のカスタマイズ可能な要素で強化されます。 これには、デフォルトのワンタイムパスワード（OTP）とカスタマイズ可能なIPアドレス、時間ベースのOTPが含まれています。また、システムに拡張性があるため、ユーザーが書きたい要素も使用できます。
+[多要素認証](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA) では、ユーザーに複数の方法、または **要素** で本人確認を求めることで、より優れたセキュリティを実現します。 基本的なユーザー名とパスワードの組み合わせは、1つまたは複数のカスタマイズ可能な要素で強化されます。 これには、デフォルトのワンタイムパスワード（OTP）とカスタマイズ可能なIPアドレス、時間ベースのOTPが含まれています。また、システムに拡張性があるため、ユーザーが書きたい要素も使用できます。
 
 ### インスタンスレベルでのSAMLの設定
 
 今回の変更により、証明書の取り扱いを含むインスタンスレベルで[SAML](../installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml.md)を設定できるようになりました。
 
-新しいSAMLプロパティ、*「不明なユーザーはゲストです」*が導入されました。  このプロパティにより、エンドユーザーがゲストである場合のSAML IdP接続の動作が決まります。 このプロパティは、ポータルデータベースに既に存在しないユーザーをゲストとして分類するかどうかを定義します。 分類後、ポータルインスタンスの既存のゲスト処理ポリシーにより、IdPのSAMLアサーションから得られる情報を使用して、ユーザーを自動的にプロビジョニングするかどうかを決定します。
+新しいSAMLプロパティ、 「**不明なユーザーはゲストです**」 が導入されました。  このプロパティにより、エンドユーザーがゲストである場合のSAML IdP接続の動作が決まります。 このプロパティは、ポータルデータベースに既に存在しないユーザーをゲストとして分類するかどうかを定義します。 分類後、ポータルインスタンスの既存のゲスト処理ポリシーにより、IdPのSAMLアサーションから得られる情報を使用して、ユーザーを自動的にプロビジョニングするかどうかを決定します。
 
 ### インスタンスレベルでのOAuth 2の設定
 
@@ -342,9 +342,9 @@ APIを通してコンテンツテンプレートを取得すれば、必要に�
 
 Liferayでは、内部UIの大部分をReactに移行することを開始しています。 この移行の副次的な影響として、新しいユーティリティが追加され、以下のことが可能になりました。
 
-**ReactRenderer：**Reactコンポーネントをレンダリングするための低レベルなJavaのプリミティブ型です。ReactコンポーネントのBootstrapを簡素化し、必要なJavaScriptコードを生成して、初期化を行います。
+**ReactRenderer：** Reactコンポーネントをレンダリングするための低レベルなJavaのプリミティブ型です。ReactコンポーネントのBootstrapを簡素化し、必要なJavaScriptコードを生成して、初期化を行います。
 
-**React:component：**高レベルのJSPタグ。従来の`MVCPortlet`アプローチと組み合わせて、従来のJSPから複雑なReactアプリケーションをレンダリングして初期化することができます。 これにより、複雑なJSアプリケーションをスムーズに移行し、より近代的なフロントエンドのワークフローを適用できます。
+**React:component：** 高レベルのJSPタグ。従来の`MVCPortlet`アプローチと組み合わせて、従来のJSPから複雑なReactアプリケーションをレンダリングして初期化することができます。 これにより、複雑なJSアプリケーションをスムーズに移行し、より近代的なフロントエンドのワークフローを適用できます。
 
 ### アップグレードの向上
 

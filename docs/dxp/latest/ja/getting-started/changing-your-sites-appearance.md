@@ -2,7 +2,7 @@
 
 サイトのロゴ、ファビコン、テーマの変更は、最初に変更したいルックアンドフィールの一部です。 テーマは、サイトの全体的なルックアンドフィールを設定するために使用されます。 サイトのページは、DXPインスタンスに展開されているテーマを使用するように設定できます。
 
-DXP Docker イメージでは、 _Classic_ テーマがデフォルトで利用可能です。 この例では、新しいシンプルなテーマをデプロイしてから、テーマを切り替える方法を示します。
+DXP Docker イメージでは、 **Classic** テーマがデフォルトで利用可能です。 この例では、新しいシンプルなテーマをデプロイしてから、テーマを切り替える方法を示します。
 
 ## サイトのテーマを変更する
 
@@ -14,7 +14,7 @@ DXP Docker イメージでは、 _Classic_ テーマがデフォルトで利用�
     docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
     ```
 
-1. [Acme Sample Blue Theme](./liferay-5b2v-theme.war)を含むWARをダウンロードします。
+1. [Acme Sample Blue Theme](./liferay-5b2v-theme.war) を含むWARをダウンロードします。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/getting-started/changing-your-sites-appearance/liferay-5b2v-theme.war -O
@@ -41,17 +41,17 @@ DXP Docker イメージでは、 _Classic_ テーマがデフォルトで利用�
 
 1. ブラウザで` https:// localhost:8080にアクセスし、` [管理者としてログイン](./introduction-to-the-admin-account.md) します。
 
-1. 画面の左側には_サイトメニュー_で、_［サイトビルダー］_ → _［Pages］_に移動します。
+1. 画面の左側には **サイトメニュー** で、 ［**サイトビルダー**］ → ［**Pages**］ に移動します。
 
-1. 設定する_［ Public Page ］_の横にある歯車アイコンをクリックします。
+1. 設定する ［**Public Page**］ の横にある歯車アイコンをクリックします。
 
     ![公開ページを設定するために、ページ画面を開きます。](./changing-your-sites-appearance/images/01.png)
 
-1. スクロールダウンして、 _［Change Current Theme］_ ボタンをクリックします。
+1. スクロールダウンして、 ［**Change Current Theme**］ ボタンをクリックします。
 
     ![［現在のテーマを変更］をクリックして、パブリックページの新しいテーマを選択します。](./changing-your-sites-appearance/images/02.png)
 
-1. デプロイされたサンプルテーマ、 _Acme Sample Blue Theme_を選択します。
+1. デプロイされたサンプルテーマ、 **Acme Sample Blue Theme** を選択します。
 
 1. サイトのホームページに戻り、テーマが変更されたことを確認します。 サイトのコンテンツセクションの背景が青色になりました。
 

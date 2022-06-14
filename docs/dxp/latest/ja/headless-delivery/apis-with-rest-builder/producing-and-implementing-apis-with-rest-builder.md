@@ -12,10 +12,10 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
     docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
     ```
 
-2. [Acme Foo API](./liferay-r3b2.zip)を含む`.zip`アーカイブをダウンロードして解凍します。
+2. [Acme Foo API](./liferay-r3b2.zip) を含む`.zip`アーカイブをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O
     ```
 
     ```bash
@@ -39,7 +39,7 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
     STARTED com.acme.headless.r3b2.impl_1.0.0
     ```
 
-5. DXPインスタンスにログインし、_グローバルメニュー_（![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; _［コントロールパネル］_ &rarr; _［Gogoシェル］_に移動します。
+5. DXPインスタンスにログインし、 **グローバルメニュー**（![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; ［**コントロールパネル**］ &rarr; ［**Gogoシェル**］ に移動します。
 
 6. Gogoシェルプロンプトで、次のコマンドを入力します。
 
@@ -185,7 +185,7 @@ components:
                     type: string
 ```
 
-この例では、`Foo`というスキーマが、このAPIを使用するための重要なデータを表しています。 `Goo`エンティティは、`fooId`を使用して`Foo`にリンクされています。  スキーマでサポートされているデータタイプのリストについては、[OpenAPIの仕様](https://swagger.io/docs/specification/data-models/data-types/)を参照してください。
+この例では、`Foo`というスキーマが、このAPIを使用するための重要なデータを表しています。 `Goo`エンティティは、`fooId`を使用して`Foo`にリンクされています。  スキーマでサポートされているデータタイプのリストについては、 [OpenAPIの仕様](https://swagger.io/docs/specification/data-models/data-types/) を参照してください。
 
 スキーマ定義によって、RESTビルダーが生成するクラスの名前が決まります。これには、リソースファイル内のビルディングブロックとテンプレートが含まれます。 上記のスキーマは`Foo`および`Bar`と呼ばれるため、実装ロジックは`FooResourceImpl`クラスと`GooResourceImpl`クラスに属します。
 

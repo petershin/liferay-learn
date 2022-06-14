@@ -8,7 +8,7 @@ apis-with-rest-builder/query-design.md
 apis-with-rest-builder/reference.md
 ```
 
-RESTビルダーとは、ローカルAPIをWeb上で利用しやすくするためのコード生成ツールです。 [OpenAPI仕様](https://www.openapis.org/)を使用し、RESTと[GraphQL](https://graphql.org/)APIを生成します。
+RESTビルダーとは、ローカルAPIをWeb上で利用しやすくするためのコード生成ツールです。 [OpenAPI仕様](https://www.openapis.org/) を使用し、RESTと [GraphQL](https://graphql.org/) APIを生成します。
 
 RESTビルダーは、 `rest-config.yaml`ファイルおよび`rest-openapi.yaml`ファイルで定義した設定を用いて、お客様のAPIの動作に必要なコードのほとんどを一度に生成します。 クラス名やコードの置き場所を設定すると、RESTビルダーが必要なファイルをすべて生成します。 その後、実装ロジックを追加します。
 

@@ -1,5 +1,7 @@
 # Search Experiences
 
+{bdg-link-secondary}`Available Liferay DXP 7.4 Update 5+; 7.3 Update 6+ <#getting-liferay-search-experiences>`
+
 ```{toctree}
 :maxdepth: 1
 
@@ -36,8 +38,15 @@ Search Blueprints is the first feature in the Search Experiences application. To
 
 Liferay Search Experiences is available to Liferay DXP customers with a [Liferay Enterprise Search](../liferay-enterprise-search.md) subscription in Liferay DXP 7.3, and [bundled with Liferay DXP in  Liferay 7.4](./activating-liferay-enterprise-search.md). Check the [LES Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651#DXP-7.3-LES) for details:
 
-* **7.4:** Starting with Liferay DXP 7.4 Update 5 (see more about updates [here](../../../installation-and-upgrades/maintaining-a-liferay-installation/updating-liferay.md)), Search Experiences is a bundled application, like all the LES apps. See [Activating Liferay Enterprise Search](./activating-liferay-enterprise-search.md) for more information.
-* **7.3:** Search Experiences is available as an add-on application from the [Customer Portal](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3). You must be running Liferay DXP 7.3 Update 6+.
+| Version Availability | Installation Method | Fix Delivery Method |
+| :---- | :---- | :---- |
+| DXP 7.4 Update 5+ | [Bundled and Activated](activating-liferay-enterprise-search.md) | [DXP Updates](../../../installation-and-upgrades/maintaining-a-liferay-installation/updating-liferay.md) |
+| DXP 7.3 Update 6+ | [Downloaded](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3) and Installed (steps below) | App Releases |
+
+
+In Liferay DXP 7.3, Search Experiences is available as an add-on application to LES subscribers:
+1. Download the app from the [Customer Portal](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3).
+1. Install the application into Liferay DXP
    * If running a Liferay bundle, copy the LPKG into the `[Liferay Home]/deploy` folder. If Liferay isn't running you can copy it directly to `[Liferay Home]/osgi/marketplace` before starting Liferay.
    * If running a Liferay Docker container, [install the LPKG in one of the supported ways](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md).
 

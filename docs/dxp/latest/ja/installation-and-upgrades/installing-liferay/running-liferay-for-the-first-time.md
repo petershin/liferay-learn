@@ -1,6 +1,6 @@
 # Liferayを初めて実行する
 
-[Liferay DXP/Portalをインストール](./installing-a-liferay-tomcat-bundle.md#installing)して[データベースを構成](./configuring-a-database.md)すると、実行する準備が整います。
+[Liferay DXP/Portalをインストール](./installing-a-liferay-tomcat-bundle.md#installing) して[データベースを構成](./configuring-a-database.md)すると、実行する準備が整います。
 
 ## サーバーを起動する
 
@@ -19,11 +19,11 @@
     
     ![On completing startup, DXP launches a web browser that displays the Basic Configuration page.](./running-liferay-for-the-first-time/images/01.png)
 
-1. ポータルの*［Name］*、*［Default Language］*および*［Time Zone］*を設定します。
+1. ポータルの ［**Name**］ 、 ［**Default Language**］ および ［**Time Zone**］ を設定します。
 
-1. *［Administrator User ］*の名、姓、メールアドレスを設定します。
+1. ［**Administrator User**］ の名、姓、メールアドレスを設定します。
 
-1. *［Database］*セクションで、*［Change］*をクリックしてデータベースフォームを表示します。
+1. ［**Database**］ セクションで、 ［**Change**］ をクリックしてデータベースフォームを表示します。
 
     ```{warning}
     本番環境グレードのLiferay DXPインスタンスではHSQLを使用しないでください。
@@ -35,18 +35,18 @@
 
 | Field             | Description                       |
 |:----------------- |:--------------------------------- |
-| *［Database Type］* | 接続するデータベースの種類を選択します               |
-| *［JDBC URL］*      | Liferay DXP用に作成したデータベースへのパスを更新します |
-| *［User Name］*     | データベースのユーザ名                       |
-| *パスワード*           | データベースのユーザーパスワード                  |
+| ［**Database Type**］ | 接続するデータベースの種類を選択します               |
+| ［**JDBC URL**］ | Liferay DXP用に作成したデータベースへのパスを更新します |
+| ［**User Name**］ | データベースのユーザ名                       |
+| **パスワード** | データベースのユーザーパスワード                  |
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6\. *サンプルデータ*について：本番環境グレードのDXPインスタンスを作成している場合、またはデータが不要な場合は、サンプルデータフィールドを選択しないでください。 サンプルデータには、デモンストレーション用のユーザー、サイト、組織が含まれています。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6\. **サンプルデータ** について：本番環境グレードのDXPインスタンスを作成している場合、またはデータが不要な場合は、サンプルデータフィールドを選択しないでください。 サンプルデータには、デモンストレーション用のユーザー、サイト、組織が含まれています。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7\. *［Finish Configuration］*をクリックします。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7\. ［**Finish Configuration**］ をクリックします。
 
-セットアップウィザードは、設定値を[Liferay Home](../reference/liferay-home.md)の`portal-setup-wizard.properties`ファイルに保存します。
+セットアップウィザードは、設定値を [Liferay Home](../reference/liferay-home.md) の`portal-setup-wizard.properties`ファイルに保存します。
 
-Liferay DXPエンタープライズサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 [Activating Liferay DXP](../setting-up-liferay/activating-liferay-dxp.md)を参照してください。
+Liferay DXPエンタープライズサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 [Liferay DXPのアクティブ化](../setting-up-liferay/activating-liferay-dxp.md) を参照してください。
 
 最後に、サーバーを再起動するようプロンプト表示されます。
 

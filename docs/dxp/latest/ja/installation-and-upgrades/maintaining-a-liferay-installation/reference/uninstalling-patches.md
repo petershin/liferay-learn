@@ -32,7 +32,7 @@
 1. [適用可能なパッチをインストールする](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)ことで、インストールを目的のパッチレベルまで戻します。
 
 ```{tip}
-インストールを特定のパッチレベルに復元する場合に備えて、パッチを便利な場所に保存すると便利です。 フィックスパックは、[カスタマーポータル](https://customer.liferay.com/downloads)からいつでも再度ダウンロードできます。
+インストールを特定のパッチレベルに復元する場合に備えて、パッチを便利な場所に保存すると便利です。 フィックスパックは、 [カスタマーポータル](https://customer.liferay.com/downloads) からいつでも再度ダウンロードできます。
 ```
 
 ## ホットフィックスを元に戻す
@@ -49,5 +49,5 @@
 
 ## 追加情報
 
-* [Installing Patches](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
+* [パッチのインストール](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
 * [パッチタイプについて](../patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md)

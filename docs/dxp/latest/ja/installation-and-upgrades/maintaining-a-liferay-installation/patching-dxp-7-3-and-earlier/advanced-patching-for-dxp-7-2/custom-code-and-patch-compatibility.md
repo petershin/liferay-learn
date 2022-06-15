@@ -65,6 +65,6 @@ DXP 7.2をカスタマイズまたはパッチするコードを展開する場�
 
 ## 追加情報
 
-* [Installing Patches](../installing-patches-for-dxp-7-3-and-earlier.md)
-* [Installing the Patching Tool](../../reference/installing-the-patching-tool.md)
-* [Configuring the Patching Tool](../../reference/configuring-the-patching-tool.md)
+* [パッチのインストール](../installing-patches-for-dxp-7-3-and-earlier.md)
+* [パッチングツールのインストール](../../reference/installing-the-patching-tool.md)
+* [パッチングツールの構成](../../reference/configuring-the-patching-tool.md)

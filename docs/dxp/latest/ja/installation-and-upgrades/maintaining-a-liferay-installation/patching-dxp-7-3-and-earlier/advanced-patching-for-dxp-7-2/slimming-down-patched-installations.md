@@ -59,5 +59,5 @@ DXPのインストールが不要なスペースを占有しないように、�
 
 * [パッチのインストール](../installing-patches-for-dxp-7-3-and-earlier.md)
 * [パッチングツールのインストール](../../reference/installing-the-patching-tool.md)
-* [Configuring the Patching Tool](../../reference/configuring-the-patching-tool.md)
+* [パッチングツールの構成](../../reference/configuring-the-patching-tool.md)
 * [スリムバンドルの使用](./using-slim-bundles.md)

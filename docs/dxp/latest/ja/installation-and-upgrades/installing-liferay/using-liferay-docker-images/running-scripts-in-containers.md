@@ -13,7 +13,7 @@ TomcatおよびLiferayファイルの設定、アーティファクトのデプ�
 
 ## 構成フェーズでのスクリプトの実行
 
-TomcatとLiferayを構成する方法が、構成フェーズが提供する方法以外にもある場合は、それらを構成フェーズスクリプトに実装します。 構成フェーズの詳細は、[コンテナのライフサイクルとAPI](./container-lifecycle-and-api.md#lifecycle)を参照してください。
+TomcatとLiferayを構成する方法が、構成フェーズが提供する方法以外にもある場合は、それらを構成フェーズスクリプトに実装します。 構成フェーズの詳細は、 [コンテナのライフサイクルとAPI](./container-lifecycle-and-api.md#lifecycle) を参照してください。
 
 ここでは、バインドマウントを使用して構成フェーズスクリプトを設定する手順を示します。
 
@@ -24,7 +24,7 @@ TomcatとLiferayを構成する方法が、構成フェーズが提供する方�
     ```
 
     ```{tip}
-    [コンテナの /mnt/liferay フォルダをマウント](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay)を既に計画している場合は、構成フェーズスクリプトをローカルのマウントフォルダ内の`scripts`というフォルダに入れてConfigure Phaseに含めることができます。 [local-folder]/scripts` フォルダは、コンテナの `/mnt/liferay/scripts` フォルダにマッピングされます。
+    [コンテナの /mnt/liferay フォルダをマウント](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) を既に計画している場合は、構成フェーズスクリプトをローカルのマウントフォルダ内の`scripts`というフォルダに入れてConfigure Phaseに含めることができます。 [local-folder]/scripts` フォルダは、コンテナの `/mnt/liferay/scripts` フォルダにマッピングされます。
     ```
 
 1. 事前に設定したアクションを実行するためのスクリプトを作成します。

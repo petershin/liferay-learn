@@ -38,4 +38,4 @@ echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/p
 
 * [データベースアップグレードツールのリファレンス](../reference/database-upgrade-tool-reference.md#manual-configuration)
 
-* [Troubleshooting Upgrades](../reference/troubleshooting-upgrades.md)
+* [アップグレードのトラブルシューティング](../reference/troubleshooting-upgrades.md)

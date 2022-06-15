@@ -29,7 +29,7 @@ Docker Hubは、Linux上のTomcatにバンドルされた [Liferay DXP](https://
 * [Liferay DXPイメージ](https://hub.docker.com/r/liferay/dxp)
 * [Liferay Portalイメージ](https://hub.docker.com/r/liferay/portal)
 
-これらのコンテナは、標準のDockerコンテナであり、そのまま起動および停止できます。 次の例では、 [Docker CLI（`docker`）](https://docs.docker.com/engine/reference/commandline/docker/)を使用していますが、任意のDockerコンテナツールを使用できます。
+これらのコンテナは、標準のDockerコンテナであり、そのまま起動および停止できます。 次の例では、 [Docker CLI（`docker`）](https://docs.docker.com/engine/reference/commandline/docker/) を使用していますが、任意のDockerコンテナツールを使用できます。
 
 ## コンテナを初めて起動する
 
@@ -48,7 +48,7 @@ Docker Hubは、Linux上のTomcatにバンドルされた [Liferay DXP](https://
     ```
 
     ```{note}
-    メモリ、CPU、およびその他のDockerコンテナリソースは構成可能です。 上記の `-m 8g`コマンド引数は、コンテナのメモリ制限を8ギガバイトに設定します。 詳細については、[Dockerランタイムオプション](https://docs.docker.com/config/containers/resource_constraints/)を参照してください。
+    メモリ、CPU、およびその他のDockerコンテナリソースは構成可能です。 上記の `-m 8g`コマンド引数は、コンテナのメモリ制限を8ギガバイトに設定します。 詳細については、 [Dockerランタイムオプション](https://docs.docker.com/config/containers/resource_constraints/) を参照してください。
     ```
 
 1. Liferay UIを`https://localhost:8080` でブラウザで開きます。
@@ -101,7 +101,7 @@ docker start [container]
 ```
 
 ```{warning}
-コンテナが再起動すると、そのエントリーポイントが再度実行されます[Container Lifecycle and API](./using-liferay-docker-images/container-lifecycle-and-api.md#lifecycle)を参照してください）。 エントリーポイントを介して[実行しているスクリプト](./using-liferay-docker-images/running-scripts-in-containers.md)が安全に再実行できることを確認してください。
+コンテナが再起動すると、そのエントリーポイントが再度実行されます [Container Lifecycle and API](./using-liferay-docker-images/container-lifecycle-and-api.md#lifecycle) を参照してください）。 エントリーポイントを介して[実行しているスクリプト](./using-liferay-docker-images/running-scripts-in-containers.md)が安全に再実行できることを確認してください。
 ```
 
 ```{tip}
@@ -112,7 +112,7 @@ docker start [container]
 
 ## 次のステップ
 
-コンテナのエントリーポイントが何をするのか知りたい、コンテナのAPIを知りたい場合は、[Container Lifecycle and API](./using-liferay-docker-images/container-lifecycle-and-api.md)を参照してください。 コンテナの使用を開始する場合は、次のいずれかの使用例を実行してください。
+コンテナのエントリーポイントが何をするのか知りたい、コンテナのAPIを知りたい場合は、 [コンテナのライフサイクルとAPI](./using-liferay-docker-images/container-lifecycle-and-api.md) を参照してください。 コンテナの使用を開始する場合は、次のいずれかの使用例を実行してください。
 
 * [コンテナの設定](./using-liferay-docker-images/configuring-containers.md)
 * [コンテナへのアプリやその他のアーティファクトのインストール](./using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md)

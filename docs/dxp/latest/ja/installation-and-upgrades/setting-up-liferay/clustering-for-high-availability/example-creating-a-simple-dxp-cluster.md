@@ -1,6 +1,6 @@
 # 例：シンプルなDXPクラスターの作成
 
-DXPクラスタリングを学習する簡単な方法は、 [Dockerコンテナ](https://docs.docker.com/get-started/overview/)を使用して、単一のマシンに2ノードのDXPクラスタ環境をセットアップすることです。 ここでは、データベース、検索エンジン、およびファイルストア用のサーバーコンテナとともに、2つのDXPサーバーコンテナを作成します。
+DXPクラスタリングを学習する簡単な方法は、 [Dockerコンテナ](https://docs.docker.com/get-started/overview/) を使用して、単一のマシンに2ノードのDXPクラスタ環境をセットアップすることです。 ここでは、データベース、検索エンジン、およびファイルストア用のサーバーコンテナとともに、2つのDXPサーバーコンテナを作成します。
 
 作成するサーバーコンテナは次のとおりです。
 
@@ -13,7 +13,7 @@ DXPクラスタリングを学習する簡単な方法は、 [Dockerコンテナ
 | DXPサーバー | Tomcat        | `dxp-2`         |
 
 ```{warning}
-この例は学習を目的としたものであり、本番環境のユースケースには適していません。 本番環境では、DXPサーバーへのリクエストの負荷分散用にHTTPサーバーを含め、読み取り専用操作と読み取り/書き込み操作に別々のデータベースサーバーを使用し、データベースサーバー、ファイルストアサーバー、および検索エンジンサーバーのクラスタリングと負荷分散を検討する必要があります。 詳細は、[Clustering for High Availability](../clustering-for-high-availability.md)のすべての記事をお読みください。
+この例は学習を目的としたものであり、本番環境のユースケースには適していません。 本番環境では、DXPサーバーへのリクエストの負荷分散用にHTTPサーバーを含め、読み取り専用操作と読み取り/書き込み操作に別々のデータベースサーバーを使用し、データベースサーバー、ファイルストアサーバー、および検索エンジンサーバーのクラスタリングと負荷分散を検討する必要があります。 詳細は、 [高可用性のクラスタリング](../clustering-for-high-availability.md) のすべての記事をお読みください。
 ```
 
 
@@ -32,7 +32,7 @@ Should we remove this diagram since it includes a load balancer? -->
 
 ## データベースサーバーを起動する
 
-DXPクラスターには、すべてのDXPクラスターノードからアクセスできるデータソースが必要です。 データソースは、JNDIデータソースにするか、データベースサーバーまたはデータベースサーバークラスターへの直接接続にすることができます。 DXPバージョンがサポートするデータベースサーバーについては、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360049238151)を参照してください。 詳細は、[クラスタノードのデータベース構成](./database-configuration-for-cluster-nodes.md)を参照してください。
+DXPクラスターには、すべてのDXPクラスターノードからアクセスできるデータソースが必要です。 データソースは、JNDIデータソースにするか、データベースサーバーまたはデータベースサーバークラスターへの直接接続にすることができます。 DXPバージョンがサポートするデータベースサーバーについては、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/360049238151) を参照してください。 詳細は、[クラスタノードのデータベース構成](./database-configuration-for-cluster-nodes.md)を参照してください。
 
 データベースサーバーとDXPデータベースを作成します。
 
@@ -155,7 +155,7 @@ DXPクラスターノードコンテナには、次の固有の設定があり�
 
 DXPコンテナを起動します。
 
-1. [`docker network inspect bridge`](https://docs.docker.com/engine/reference/commandline/network_inspect/)コマンドを実行して、`elasticsearch`および`some-mariadb`コンテナのコンテナIPアドレスを取得します。 `bridge`ネットワークがデフォルトネットワークです。
+1. [`docker network inspect bridge`](https://docs.docker.com/engine/reference/commandline/network_inspect/) コマンドを実行して、`elasticsearch`および`some-mariadb`コンテナのコンテナIPアドレスを取得します。 `bridge`ネットワークがデフォルトネットワークです。
 
     ```{important}
     次の`docker run`コマンドでは、`[IP address]`を`elasticsearch`および`some-mariadb`コンテナのIPアドレスに置き換えます。
@@ -227,7 +227,7 @@ DXPコンテナを起動します。
     docker run -it --add-host elasticsearch:[IP address] --add-host some-mariadb:[IP address] -e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_JNDI_PERIOD_NAME="" -e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_DRIVER_UPPERCASEC_LASS_UPPERCASEN_AME=org.mariadb.jdbc.Driver -e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_URL="jdbc:mariadb://some-mariadb:3306/dxp_db?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false" -e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME=root -e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD=my-secret-pw -e LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_ENABLED=true -e LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_CHANNEL_PERIOD_LOGIC_PERIOD_NAME_PERIOD_CONTROL=control-channel-logic-name-2 -e LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_CHANNEL_PERIOD_LOGIC_PERIOD_NAME_PERIOD_TRANSPORT_PERIOD_NUMBER0=transport-channel-logic-name-2 -e LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_AUTODETECT_PERIOD_ADDRESS=some-mariadb:3306 -e LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=true -e LIFERAY_DL_PERIOD_STORE_PERIOD_IMPL=com.liferay.portal.store.db.DBStore --name dxp-2 -p 11312:11311 -p 9009:8009 -p 9080:8080 -v $(pwd)/dxp-2:/mnt/liferay [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
     ```
 
-`--add-host ［domain］:［IP address］`オプションは、ドメイン名をマップする`/etc/hosts`[ファイルエントリ](https://docs.docker.com/engine/reference/run/#managing-etchosts)をIPアドレスに追加します。 これにより、設定（環境変数、ポータルプロパティ、 `.config`ファイルなど）がドメイン名でサーバーを参照できるようになります。
+`--add-host ［domain］:［IP address］`オプションは、ドメイン名をマップする`/etc/hosts` [ファイルエントリ](https://docs.docker.com/engine/reference/run/#managing-etchosts) をIPアドレスに追加します。 これにより、設定（環境変数、ポータルプロパティ、 `.config`ファイルなど）がドメイン名でサーバーを参照できるようになります。
 
 `-e ［variable］=［value］`オプションは、DXPコンテナ環境変数を設定します。 詳細は、 [付録A：環境設定](#appendix-a-environment-settings) を参照してください。
 
@@ -242,20 +242,20 @@ DXPクラスターノードは、次のURLで入手できます。
 
 ![DXPクラスターノード。](./example-creating-a-simple-dxp-cluster/images/02.png)
 
-各ノードのコンテナIDとポート（`ノード：  ［id］:［port］`）は、各ページの下部に表示されます。 `LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=true`環境設定により、この表示機能が有効になりました。 [`docker container ls`](https://docs.docker.com/engine/reference/commandline/container_ls/)コマンドを使用してコンテナのIDを見つけることができます。
+各ノードのコンテナIDとポート（`ノード：  ［id］:［port］`）は、各ページの下部に表示されます。 `LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=true`環境設定により、この表示機能が有効になりました。 [`docker container ls`](https://docs.docker.com/engine/reference/commandline/container_ls/) コマンドを使用してコンテナのIDを見つけることができます。
 
 ### コンテンツを検索エンジンにインデックス付けする
 
 DXPコンテンツのインデックス作成を開始します。
 
-1. *［コントロールパネル］ &rarr; ［設定］ &rarr; ［検索機能］*に移動します。
+1. ［**コントロールパネル］ &rarr; ［設定］ &rarr; ［検索機能**］ に移動します。
 
 1. ［アクションをインデックスする］タブで、次のオプションをクリックします。
 
-    * *Reindex all search indexes*
-    * *Reindex all spell check indexes*
+    ****Reindex all search indexes**
+    ****Reindex all spell check indexes**
 
-コンテンツは検索エンジンにインデックス付けされます。 詳細は、 [Search Overview](../../../using-search/getting-started/search-overview.md)を参照してください。
+コンテンツは検索エンジンにインデックス付けされます。 詳細は、 [検索機能の概要](../../../using-search/getting-started/search-overview.md) を参照してください。
 
 ## DXPクラスターをテストする
 
@@ -263,7 +263,7 @@ DXPコンテンツのインデックス作成を開始します。
 
 1. クラスタノードの1つにコンテンツを追加します。
 
-    たとえば、_New Stuff_という名前の新しいウィジェットページを追加し、それに言語セレクタウィジェットを追加します。
+    たとえば、 **New Stuff** という名前の新しいウィジェットページを追加し、それに言語セレクタウィジェットを追加します。
 
 1. 他のクラスターノードのUIを更新します。
 
@@ -283,19 +283,19 @@ DXPクラスター用に[データベース](./database-configuration-for-cluste
 
 | 設定                                                                                                                                                                              | 説明                                |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:--------------------------------- |
-| LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_JNDI_PERIOD_NAME=                                                                                                                      | データソースJNDI名                       |
-| LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_DRIVER_UPPERCASEC_LASS\\<br>_UPPERCASEN_AME=\\<br>org.mariadb.jdbc.Driver                                            | データベースドライバークラス                    |
-| LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_URL=\\<br>jdbc:mariadb://some-mariadb:3306/dxp_db?\\<br>useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false | データソースURL                         |
-| LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME=\\<br>root                                                                                                              | データベース管理者のユーザー名                   |
-| LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD=\\<br>my-secret-pw                                                                                                      | データベース管理者ユーザーのパスワード               |
-| LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_ENABLED=\\<br>true                                                                                                               | クラスタリンクを有効にする                     |
-| LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_CHANNEL_PERIOD_LOGIC_PERIOD_NAME\\<br>_PERIOD_CONTROL=\\<br>control-channel-logic-name-2                           | クラスターノードの一意のコントロールチャネル名           |
-| LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_CHANNEL_PERIOD_LOGIC_PERIOD_NAME\\<br>_PERIOD_TRANSPORT_PERIOD_NUMBER0=\\<br>transport-channel-logic-name-2      | クラスターノードの一意のトランスポートチャネル名          |
-| LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_AUTODETECT_PERIOD_ADDRESS=\\<br>some-mariadb:3306                                                                              | クラスターノードアドレスを取得するためにpingする既知のアドレス |
-| LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=\\<br>true                                                                                                   | サーバーアドレスとウェブサーバーポートを表示します         |
-| LIFERAY_DL_PERIOD_STORE_PERIOD_IMPL=\\<br>com.liferay.portal.store.db.DBStore                                                                                       | ファイルストア（ドキュメントライブラリストア）クラス        |
+| LIFERAY **JDBC** PERIOD **DEFAULT** PERIOD **JNDI** PERIOD_NAME=                                                                                                                      | データソースJNDI名                       |
+| LIFERAY **JDBC** PERIOD **DEFAULT** PERIOD **DRIVER** UPPERCASEC **LASS\\<br>** UPPERCASEN_AME=\\<br>org.mariadb.jdbc.Driver                                            | データベースドライバークラス                    |
+| LIFERAY **JDBC** PERIOD **DEFAULT** PERIOD **URL=\\<br>jdbc:mariadb://some-mariadb:3306/dxp** db?\\<br>useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false | データソースURL                         |
+| LIFERAY **JDBC** PERIOD **DEFAULT** PERIOD_USERNAME=\\<br>root                                                                                                              | データベース管理者のユーザー名                   |
+| LIFERAY **JDBC** PERIOD **DEFAULT** PERIOD_PASSWORD=\\<br>my-secret-pw                                                                                                      | データベース管理者ユーザーのパスワード               |
+| LIFERAY **CLUSTER** PERIOD **LINK** PERIOD_ENABLED=\\<br>true                                                                                                               | クラスタリンクを有効にする                     |
+| LIFERAY **CLUSTER** PERIOD **LINK** PERIOD **CHANNEL** PERIOD **LOGIC** PERIOD **NAME\\<br>** PERIOD_CONTROL=\\<br>control-channel-logic-name-2                           | クラスターノードの一意のコントロールチャネル名           |
+| LIFERAY **CLUSTER** PERIOD **LINK** PERIOD **CHANNEL** PERIOD **LOGIC** PERIOD **NAME\\<br>** PERIOD **TRANSPORT** PERIOD_NUMBER0=\\<br>transport-channel-logic-name-2      | クラスターノードの一意のトランスポートチャネル名          |
+| LIFERAY **CLUSTER** PERIOD **LINK** PERIOD **AUTODETECT** PERIOD_ADDRESS=\\<br>some-mariadb:3306                                                                              | クラスターノードアドレスを取得するためにpingする既知のアドレス |
+| LIFERAY **WEB** PERIOD **SERVER** PERIOD **DISPLAY** PERIOD_NODE=\\<br>true                                                                                                   | サーバーアドレスとウェブサーバーポートを表示します         |
+| LIFERAY **DL** PERIOD **STORE** PERIOD_IMPL=\\<br>com.liferay.portal.store.db.DBStore                                                                                       | ファイルストア（ドキュメントライブラリストア）クラス        |
 
-詳細は、Env/[Portal Property](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)の定義を参照してください。
+詳細は、Env/ [Portal Property](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) の定義を参照してください。
 
 ## 追加情報
 

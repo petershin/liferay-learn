@@ -25,7 +25,7 @@ Incompatible setting for: company.security.auth.type
 
 ## トークンベースの認証の構成
 
-トークンベースの認証はデフォルトで無効になっています。 トークンベースのSSO認証を管理するには、［Control Panel］ &rarr; *［System Settings］* &rarr; *［セキュリティ］* &rarr; *［SSO］*に移動します。
+トークンベースの認証はデフォルトで無効になっています。 トークンベースのSSO認証を管理するには、［Control Panel］ &rarr; ［**System Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動します。
 
 ![SSO設定は、システム設定のセキュリティセクションにあります。](token-based-authentication/images/01.png)
 
@@ -33,14 +33,14 @@ Incompatible setting for: company.security.auth.type
 
 | 設定                  | Description                                                            |
 |:------------------- |:---------------------------------------------------------------------- |
-| **有効**              | トークンベースのSSO認証を有効にするには、このボックスをオンにします。                                   |
-| **LDAPからインポート**     | ユーザーが存在しない場合にLDAPから自動的にインポートするには、このボックスをオンにします。                        |
-| **ユーザー トークン名**      | トークンの名前と同じに設定します。 これは、指定された場所から取得されます。 （例：`SM_USER`）                   |
-| **トークンの場所**         | ユーザートークンのタイプ（HTTPリクエストパラメーター、HTTPリクエストヘッダー、HTTP Cookie、セッション属性）に設定します。 |
-| **認証クッキー**          | ログアウト後に削除する必要があるCookie名に設定します。 （例：`SMIDENTITY`、`SMSESSION`）            |
+| **有効** | トークンベースのSSO認証を有効にするには、このボックスをオンにします。                                   |
+| **LDAPからインポート** | ユーザーが存在しない場合にLDAPから自動的にインポートするには、このボックスをオンにします。                        |
+| **ユーザー トークン名** | トークンの名前と同じに設定します。 これは、指定された場所から取得されます。 （例：`SM_USER`）                   |
+| **トークンの場所** | ユーザートークンのタイプ（HTTPリクエストパラメーター、HTTPリクエストヘッダー、HTTP Cookie、セッション属性）に設定します。 |
+| **認証クッキー** | ログアウト後に削除する必要があるCookie名に設定します。 （例：`SMIDENTITY`、`SMSESSION`）            |
 | **ログアウトリダイレクト URL** | ユーザーがLiferay Portalからログアウトすると、ユーザーはこのURLにリダイレクトされます。                   |
 
-*［保存］*をクリックして、トークンベースのSSOをアクティブにしてください。
+［**保存**］ をクリックして、トークンベースのSSOをアクティブにしてください。
 
 ## 必要なSiteMinder設定
 
@@ -50,7 +50,7 @@ SiteMinderを使用する場合は、Liferay PortalのURLにチルダ文字が�
 BadUrlChars       //,./,/.,/*,*.,\,%00-%1f,%7f-%ff,%25
 ```
 
-上記の設定は、`~`文字を除いてデフォルトと同じです。 SiteMinderを再起動して、設定のアップデートを有効にします。 詳細は、SiteMinderの[ドキュメント](https://techdocs.broadcom.com/us/product-content/recommended-reading/technical-document-index/ca-siteminder-informational-documentation-index.html)を参照してください。
+上記の設定は、`~`文字を除いてデフォルトと同じです。 SiteMinderを再起動して、設定のアップデートを有効にします。 詳細は、SiteMinderの [ドキュメント](https://techdocs.broadcom.com/us/product-content/recommended-reading/technical-document-index/ca-siteminder-informational-documentation-index.html) を参照してください。
 
 ## 概要
 

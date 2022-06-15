@@ -14,8 +14,8 @@ Liferay DXP/Portalは、アプリケーションサーバーのJVMで実行さ�
 
 DXPは、次の方法でシステムプロパティファイルを使用します。
 
-* DXP _は、システムプロパティ `system.properties.set` が `false`でない限り、 `system.properties` （および `system-ext.properties`）の新しいプロパティを使用して_ プロパティを拡張します
-* DXP _は、システムプロパティ `system.properties.set.override` が `false`でない限り、 `system.properties` （および `system-ext.properties`）の新しい値を使用して_ プロパティをオーバーライドします。
+* DXP **は、システムプロパティ `system.properties.set` が `false`でない限り、 `system.properties` （および `system-ext.properties`）の新しいプロパティを使用して** プロパティを拡張します
+* DXP **は、システムプロパティ `system.properties.set.override` が `false`でない限り、 `system.properties` （および `system-ext.properties`）の新しい値を使用して** プロパティをオーバーライドします。
 
 ```{warning}
 アプリケーションサーバーの起動後のシステムプロパティの設定またはリセットにはリスクがあります

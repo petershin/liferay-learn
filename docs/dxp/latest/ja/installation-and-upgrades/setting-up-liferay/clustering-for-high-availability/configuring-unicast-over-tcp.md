@@ -1,6 +1,6 @@
 # TCPを介したユニキャストの構成
 
-ネットワーク構成またはクラスターノード間の地理的距離により、 [UDPマルチキャストクラスタリング](./configuring-cluster-link.md#using-multicast-over-udp)を使用できない場合は、TCPユニキャストを構成できます。 ファイアウォールがノードを分離している場合、またはノードが地理的に異なる場所にある場合は、これを使用する必要があります。
+ネットワーク構成またはクラスターノード間の地理的距離により、 [UDPマルチキャストクラスタリング](./configuring-cluster-link.md#using-multicast-over-udp) を使用できない場合は、TCPユニキャストを構成できます。 ファイアウォールがノードを分離している場合、またはノードが地理的に異なる場所にある場合は、これを使用する必要があります。
 
 ## ユニキャスト構成
 
@@ -24,9 +24,11 @@
     どれを選択すればよいかわからない場合は、TCPPingを使用してください。 これらの残りのステップでは、TCPPingを使用します。 他の詳細は、 [Alternative Discovery Protocols](#alternative-discovery-protocols) を参照してください。
 <!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. jrhoun -->
 
-1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com.liferay.Portal.cluster.multiple-［version］.jar/lib/jgroups-［version］.Final.jar/tcp.xml`から`tcp.xml`ファイルをDXPにアクセスできる場所に展開します。 jar/lib/jgroups-［version］.Final.jar/tcp.xml</code>を、DXPウェブアプリケーションの`WEB-INF/classes`フォルダ内の`jgroups</0>というフォルダなど、DXPでアクセス可能な場所に移動します。
-<pre><code>    WEB-INF/classes/jgroups/tcp.xml
-`</pre>
+1.  `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com.liferay.Portal.cluster.multiple-［version］.jar/lib/jgroups-［version］.Final.jar/tcp.xml`から`tcp.xml`ファイルをDXPにアクセスできる場所に展開します。 jar/lib/jgroups-［version］.Final.jar/tcp.xml` を、DXPウェブアプリケーションの`WEB-INF/classes`フォルダ内の `jgroups` というフォルダなど、DXPでアクセス可能な場所に移動します。
+
+    ```
+    WEB-INF/classes/jgroups/tcp.xml
+    ```
 
 1. `tcp.xml` ファイルで、TCPバインドポートをノードの未使用ポートに設定します。 以下に例を示します。
 
@@ -61,7 +63,7 @@
         port_range="0"/>
     ```
 
-1. 各ノードの[`portal-ext.properties`ファイル](../../reference/portal-properties.md)の[クラスターリンクプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link)を変更して、クラスターリンクを有効にし、各クラスターリンクチャネルのTCP XMLファイルをポイントします。
+1. 各ノードの[`portal-ext.properties`ファイル](../../reference/portal-properties.md)の [クラスターリンクプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) を変更して、クラスターリンクを有効にし、各クラスターリンクチャネルのTCP XMLファイルをポイントします。
 
     ```properties
     cluster.link.enabled=true
@@ -69,7 +71,7 @@
     cluster.link.channel.properties.transport.0=/jgroups/tcp.xml
     ```
 
-上記のJGroups構成は、通常、Unicast over TCPに必要なすべての構成です。 しかし、非常に特殊なケースとして、 *(そしてその場合のみ)* クラスタノードが複数のネットワークに渡って配置されている場合、各ホストの `external_addr` TCP transport parameter にファイアーウォールの外部 (public IP) アドレスを設定しなければなりません。 この種の構成は通常、ノードが地理的に離れている場合にのみ必要です。 これを設定することにより、別々のネットワークにデプロイされたクラスター化されたノード（たとえば、異なるファイアウォールによって分離されたノード）は互いに通信できます。 この構成は、システムのセキュリティ監査でフラグが立てられる場合があります。 詳細は、 [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols)を参照してください。
+上記のJGroups構成は、通常、Unicast over TCPに必要なすべての構成です。 しかし、非常に特殊なケースとして、 (**そしてその場合のみ**) クラスタノードが複数のネットワークに渡って配置されている場合、各ホストの `external_addr` TCP transport parameter にファイアーウォールの外部 (public IP) アドレスを設定しなければなりません。 この種の構成は通常、ノードが地理的に離れている場合にのみ必要です。 これを設定することにより、別々のネットワークにデプロイされたクラスター化されたノード（たとえば、異なるファイアウォールによって分離されたノード）は互いに通信できます。 この構成は、システムのセキュリティ監査でフラグが立てられる場合があります。 詳細は、 [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols) を参照してください。
 
 ```{note}
 `singleton_name`TCP属性はJGroups v4.0.0で非推奨になったため、JGroups v4.1.1-Finalを使用するLiferay DXP 7.2 SP1およびLiferay Portal GA2以降では削除されました。
@@ -93,7 +95,7 @@ TCP Pingを使用してクラスターメンバーを検出する代わりに、
     connection_driver="［place your driver name here］"/>
 ```
 
-JDBC接続値の例については、[Database Templates](../../reference/database-templates.md)を参照してください。 JDBC Pingの詳細は、 [JGroups Documentation](http://www.jgroups.org/manual4/index.html#DiscoveryProtocols)を参照してください。
+JDBC接続値の例については、 [データベーステンプレート](../../reference/database-templates.md) を参照してください。 JDBC Pingの詳細は、 [JGroups Documentation](http://www.jgroups.org/manual4/index.html#DiscoveryProtocols) を参照してください。
 
 ### S3 ping
 
@@ -108,7 +110,7 @@ S3 Pingを構成するには、 [ユニキャスト構成](#unicast-configuratio
     location="ControlBucket"/>
 ```
 
-上記のパラメーターの値としてAmazonキーを指定します。 S3 Pingの詳細は、 [JGroups Documentation](http://www.jgroups.org/manual4/index.html#_s3_ping)を参照してください。
+上記のパラメーターの値としてAmazonキーを指定します。 S3 Pingの詳細は、 [JGroups Documentation](http://www.jgroups.org/manual4/index.html#_s3_ping) を参照してください。
 
 ### その他のping
 
@@ -126,13 +128,14 @@ JGroupsは、Rackspace Ping、BPing、File Pingなど、クラスターメンバ
     -Djgroups.bind_addr=[node_ip_address]
     ```
 
-1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com.liferay.Portal.cluster.multiple-［version］.jar/lib/jgroups-［version］.Final.jar/tcp.xml`から`tcp.xml`ファイルをDXPにアクセスできる場所に展開します。 jar/lib/jgroups-［version］.Final.jar/tcp.xml</code>を、DXPウェブアプリケーションの`WEB-INF/classes`フォルダ内の`jgroups</0>というフォルダなど、DXPでアクセス可能な場所に移動します。</p></li>
-<li><p spaces-before="0">同じ場所に <code>tcp.xml`のコピーを作成し、両方のファイルの名前を変更して、1つを制御チャネル用に、もう1つをトランスポートチャネル用に指定します。 たとえば、次のファイル名を使用できます。
+1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml`から`tcp.xml`ファイルをDXP Webアプリケーションの`WEB-INF/classes`フォルダ内の`jgroupsというフォルダなど、DXPにアクセスできる場所に展開します。
+
+1. 同じ場所に`tcp.xml`のコピーを作成し、両方のファイルの名前を変更して、1つを制御チャネル用に、もう1つをトランスポートチャネル用に指定します。 たとえば、次のファイル名を使用できます。
 
     * `tcp-control.xml`
     * `tcp-transport.xml`
 
-1. ノードの[`portal-ext.properties`ファイル](../../reference/portal-properties.md)の[クラスターリンクプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link)を変更して、クラスターリンクを有効にし、各クラスターリンクチャネルのTCP XMLファイルをポイントします。
+1. ノードの[`portal-ext.properties`ファイル](../../reference/portal-properties.md)の [クラスターリンクプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) を変更して、クラスターリンクを有効にし、各クラスターリンクチャネルのTCP XMLファイルをポイントします。
 
     ```properties
     cluster.link.enabled=true
@@ -191,7 +194,7 @@ JGroupsは、Rackspace Ping、BPing、File Pingなど、クラスターメンバ
     port_range="0"/>
 ```
 
-キャッシュできるエンティティを追加した場合、またはシステムのキャッシュ構成を調整したい場合は、モジュールを使用して行うことができます。  キャッシュの構成については、[Cache Configuration](https://help.liferay.com/hc/en-us/articles/360035581451-Introduction-to-Cache-Configuration)を参照してください。
+キャッシュできるエンティティを追加した場合、またはシステムのキャッシュ構成を調整したい場合は、モジュールを使用して行うことができます。  キャッシュの構成については、 [Cache Configuration](https://help.liferay.com/hc/ja/articles/360035581451-Introduction-to-Cache-Configuration) を参照してください。
 
 ## 追加情報
 

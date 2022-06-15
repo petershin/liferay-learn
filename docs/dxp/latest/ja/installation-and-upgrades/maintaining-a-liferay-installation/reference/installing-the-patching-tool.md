@@ -6,10 +6,10 @@
 
 ## インストール
 
-1. [カスタマーポータル](https://customer.liferay.com/downloads)からパッチツールをダウンロードします。
+1. [カスタマーポータル](https://customer.liferay.com/downloads) からパッチツールをダウンロードします。
 
-    * **DXP 7.3以降の場合、** 最新のパッチツールをダウンロードします。
-    * **DXP 7.2の場合、** 最新バージョンのパッチツール2.xをダウンロードします。
+    ***DXP 7.3以降の場合、** 最新のパッチツールをダウンロードします。
+    ***DXP 7.2の場合、** 最新バージョンのパッチツール2.xをダウンロードします。
 
 1. パッチングツールを [Liferay Home](../../reference/liferay-home.md) フォルダ（推奨）または別のフォルダに解凍します。
 
@@ -26,10 +26,10 @@ cd patching-tool
 
 パッチングツールは、インストールするパッチに新しいパッチングツールバージョンが必要な場合に報告します。 パッチングツールを更新する方法は次のとおりです。
 
-1. [カスタマーポータル](https://customer.liferay.com/downloads)からパッチツールをダウンロードします。
+1. [カスタマーポータル](https://customer.liferay.com/downloads) からパッチツールをダウンロードします。
 
-    * **DXP 7.3以降の場合、** 最新のパッチツールをダウンロードします。
-    * **DXP 7.2の場合、** パッチツールの最新の2.xバージョンをダウンロードします。
+    ***DXP 7.3以降の場合、** 最新のパッチツールをダウンロードします。
+    ***DXP 7.2の場合、** パッチツールの最新の2.xバージョンをダウンロードします。
 
 1. 既存のパッチングツールの `.properties` ファイルをバックアップします。
 
@@ -39,6 +39,6 @@ cd patching-tool
 
 ## 追加情報
 
-* [Configuring the Patching Tool](./configuring-the-patching-tool.md)
-* [Installing Patches](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
+* [パッチングツールの構成](./configuring-the-patching-tool.md)
+* [パッチのインストール](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
 * [カスタムコードとパッチの互換性](../patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2/custom-code-and-patch-compatibility.md)

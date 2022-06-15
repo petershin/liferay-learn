@@ -12,11 +12,11 @@ Tomcatバンドルには、Liferay DXP/Portalが事前にデプロイされたAp
 
 ## 前提条件
 
-Java JDK 8または11が必要です。 JDKを選択するには、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360049238151) を参照してください。 推奨される設定については、[JVM Configuration](../reference/jvm-configuration.md)を参照してください。
+Java JDK 8または11が必要です。 JDKを選択するには、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/360049238151) を参照してください。 推奨される設定については、 [JVM設定](../reference/jvm-configuration.md) を参照してください。
 
 ## ダウンロード
 
-1. [［ヘルプセンター］](https://help.liferay.com/hc)（サブスクリプション）または[［コミュニティダウンロード］](https://www.liferay.com/downloads-community)にアクセスします。
+1. [［ヘルプセンター］](https://help.liferay.com/hc) （サブスクリプション）または [［コミュニティダウンロード］](https://www.liferay.com/downloads-community) にアクセスします。
 
 1. ご希望の Liferay DXP/Portal のバージョンに移動します。
 
@@ -29,7 +29,7 @@ Java JDK 8または11が必要です。 JDKを選択するには、 [互換性�
 
 ## インストール
 
-バンドルをホスト上に展開します。 この場所は、[Liferay Home](../reference/liferay-home.md)と呼ばれます。
+バンドルをホスト上に展開します。 この場所は、 [Liferay Home](../reference/liferay-home.md) と呼ばれます。
 
 　 これでLiferayをインストールできました。 次にデータベースを設定します。
 

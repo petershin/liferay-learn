@@ -27,7 +27,7 @@
 
 次の手順に従って `portal-ext.properties` ファイルを編集し、 [JDBC](../../installing-liferay/configuring-a-database.md)を使用して個別の読み取りおよび書き込みデータソースに直接接続します。
 
-1. デフォルトの接続プールプロバイダーを設定します。 プロバイダー情報については、 [JDBCプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)を参照してください。 デフォルト設定では、プールプロバイダーとして [HikariCP](https://github.com/brettwooldridge/HikariCP)が指定されています。 
+1. デフォルトの接続プールプロバイダーを設定します。 プロバイダー情報については、 [JDBCプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) を参照してください。 デフォルト設定では、プールプロバイダーとして [HikariCP](https://github.com/brettwooldridge/HikariCP) が指定されています。 
    
    
 
@@ -53,9 +53,9 @@
     ```
 
 
-JDBC接続値の例については、[Database Templates](../../reference/database-templates.md)を参照してください。
+JDBC接続値の例については、 [データベーステンプレート](../../reference/database-templates.md) を参照してください。
 
-1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して[カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter)データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
+1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して [カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
    
    
 
@@ -88,7 +88,7 @@ JDBC接続値の例については、[Database Templates](../../reference/databa
     ```
 
 
-詳細は、 [Spring構成のポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring)参照してください。
+詳細は、 [Spring構成のポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 参照してください。
 
 
 
@@ -113,7 +113,7 @@ JDBC接続値の例については、[Database Templates](../../reference/databa
     ```
 
 
-1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して[カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter)データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
+1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して [カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
    
    
 
@@ -146,7 +146,7 @@ JDBC接続値の例については、[Database Templates](../../reference/databa
     ```
 
 
-詳細は、 [Spring configuration Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring)参照してください。
+詳細は、 [Spring configuration Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 参照してください。
 
 DXPは、次回の起動時に、読み取りデータソース、書き込みデータソース、およびカウンターデータソースを使用します。
 
@@ -154,10 +154,10 @@ DXPは、次回の起動時に、読み取りデータソース、書き込み�
 
 ## データベースの複製
 
-データベースクラスタを使用すると、フォールトトレランスとDXPのパフォーマンスが向上します。 データベースクラスタインスタンスは常に同期している必要があります。 レプリケーションは、変更されたデータと変更されたスキーマを1つのデータベースインスタンスから別のデータベースインスタンスにコピーするプロセスです。 サポートされるすべての [データベース](https://help.liferay.com/hc/en-us/articles/360049238151) はレプリケーションをサポートします。 データベースクラスターを使用している場合は、データベースベンダーの指示に従って、データベースをレプリケーション用に設定します。
+データベースクラスタを使用すると、フォールトトレランスとDXPのパフォーマンスが向上します。 データベースクラスタインスタンスは常に同期している必要があります。 レプリケーションは、変更されたデータと変更されたスキーマを1つのデータベースインスタンスから別のデータベースインスタンスにコピーするプロセスです。 サポートされるすべての [データベース](https://help.liferay.com/hc/ja/articles/360049238151) はレプリケーションをサポートします。 データベースクラスターを使用している場合は、データベースベンダーの指示に従って、データベースをレプリケーション用に設定します。
 
 
 
 ## 次のステップ
 
-クラスター用のデータベースを設定したので、 [DXP クラスタリングの要件](./clustering-for-high-availability.md#clustering-requirements)に引き続き対処することができます。 次の要件は、すべてのノードが [ファイルストア](../../../system-administration/file-storage.md)にアクセスできるようにし、そのファイルストアで各ノードを構成することです。
+クラスター用のデータベースを設定したので、 [DXP クラスタリングの要件](./clustering-for-high-availability.md#clustering-requirements) に引き続き対処することができます。 次の要件は、すべてのノードが [ファイルストア](../../../system-administration/file-storage.md)にアクセスできるようにし、そのファイルストアで各ノードを構成することです。

@@ -34,7 +34,7 @@ Liferayのツールや説明書は、DXPやポータル環境を安全かつ迅�
 
 ## 準備と計画
 
-準備と計画は、小規模でカジュアルなインストールではあまり重要でない場合がありますが、大規模なエンタープライズレベルのインストールでは*必須*です。
+準備と計画は、小規模でカジュアルなインストールではあまり重要でない場合がありますが、大規模なエンタープライズレベルのインストールでは **必須** です。
 
 ### 利用可能なアップグレードパスの確認
 
@@ -46,12 +46,12 @@ Liferayのツールや説明書は、DXPやポータル環境を安全かつ迅�
 | Liferay Portal 6.1.x &rarr; DXP/Portal 7.1 &rarr; DXP 7.4                   | Liferay Portal 6.1のサポート期間は終了しました                |
 | Liferay Portal 5.xおよび6.0.x &rarr; Liferay Portal 6.2 &rarr; Liferay DXP 7.4 | Liferay Portal 5.0、5.1、5.2、および6.0のサポート期間は終了しました |
 
-Liferay Portalを同じマイナーバージョンの新しいGAにアップグレードする場合（たとえば、7.3 GA1からGA2にアップグレードする場合）、データスキーマに変更がない場合は、新しいGAの使用をすぐに開始できます。 スキーマが変更された場合、起動メッセージには、[データベースをアップグレード](#executing-the-database-upgrade)する必要がある新しいデータスキーマバージョンが報告されます。[Dockerイメージ](./upgrade-basics/upgrading-via-docker.md)を使用してアップグレードを呼び出すのが最も簡単です。
+Liferay Portalを同じマイナーバージョンの新しいGAにアップグレードする場合（たとえば、7.3 GA1からGA2にアップグレードする場合）、データスキーマに変更がない場合は、新しいGAの使用をすぐに開始できます。 スキーマが変更された場合、起動メッセージには、 [データベースをアップグレード](#executing-the-database-upgrade) する必要がある新しいデータスキーマバージョンが報告されます。[Dockerイメージ](./upgrade-basics/upgrading-via-docker.md)を使用してアップグレードを呼び出すのが最も簡単です。
 
-パスにLiferay Portal 6.2へのアップグレードが含まれている場合は、最初に[Liferay Portal 6.2のアップグレード手順](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay)に従ってください。
+パスにLiferay Portal 6.2へのアップグレードが含まれている場合は、最初に [Liferay Portal 6.2のアップグレード手順](https://help.liferay.com/hc/ja/articles/360017903232-Upgrading-Liferay) に従ってください。
 
 ```{note}
-一部の新しいLiferayバージョンでは、テーブル列の名前が変更されています。 これらの列に関連付けられている[仮想列](https://en.wikipedia.org/wiki/Virtual_column)はデータベースのアップグレードを妨げるため、アップグレードの前に削除する必要があります。 アップグレード後、同等の仮想列を追加できます。 詳細については、[Troubleshooting Upgrades](./reference/troubleshooting-upgrades.md)を参照してください。
+一部の新しいLiferayバージョンでは、テーブル列の名前が変更されています。 これらの列に関連付けられている [仮想列](https://en.wikipedia.org/wiki/Virtual_column) はデータベースのアップグレードを妨げるため、アップグレードの前に削除する必要があります。 アップグレード後、同等の仮想列を追加できます。 詳細については、 [アップグレードのトラブルシューティング](./reference/troubleshooting-upgrades.md) を参照してください。
 ```
 
 ### 非推奨項目およびデフォルト設定の変更点を確認する
@@ -65,11 +65,11 @@ Liferayの新しいバージョンでは、機能と構成のデフォルトが�
 
 > サブスクリプション
 
-Liferay DXPサブスクリプションをお持ちの場合は、最新のフィックスパックにアップデートするか、データベースのアップグレードの準備をするためのアップグレードパッチをリクエストしてください。 このプロセスを開始するには、[ヘルプセンター](https://help.liferay.com/hc/requests/new)でチケットを提出してください。
+Liferay DXPサブスクリプションをお持ちの場合は、最新のフィックスパックにアップデートするか、データベースのアップグレードの準備をするためのアップグレードパッチをリクエストしてください。 このプロセスを開始するには、 [ヘルプセンター](https://help.liferay.com/hc/requests/new) でチケットを提出してください。
 
 ### コマースのアップグレードの準備
 
-[コマース](https://learn.liferay.com/commerce/latest/en/index.html)を使用している場合は、Liferayデータベースをアップグレードする前にコマースをアップグレードする準備をしてください。  詳細については、[Upgrading Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/upgrading-liferay-commerce.html)を参照してください。
+[コマース](https://learn.liferay.com/commerce/latest/ja/index.html) を使用している場合は、Liferayデータベースをアップグレードする前にコマースをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
 
 ### マーケットプレイスアプリの更新
 
@@ -79,15 +79,15 @@ Liferayデータベースをアップグレードする前に、現在使用し�
 データベースをアップグレードする前に、現在のインストールでこれを行ってください。
 ```
 
-新しいLiferayバージョンに対応したアプリの最新バージョンでは、データのアップグレードが必要なデータベーススキーマの変更が行われている可能性があります。 Liferayデータベースのアップグレード*中*またはアップグレード*後*にアプリデータをアップグレードできます。
+新しいLiferayバージョンに対応したアプリの最新バージョンでは、データのアップグレードが必要なデータベーススキーマの変更が行われている可能性があります。 Liferayデータベースのアップグレード **中** またはアップグレード **後** にアプリデータをアップグレードできます。
 
-**オプション1：**データベースをアップグレードする*前*に最新のアプリをインストールし、データベースのアップグレードの一環としてアプリのデータを自動的にアップグレードします。 各データベースのアップグレードパスには、アプリのセットアップの詳細が記述されます。
+**オプション1：** データベースをアップグレードする **前** に最新のアプリをインストールし、データベースのアップグレードの一環としてアプリのデータを自動的にアップグレードします。 各データベースのアップグレードパスには、アプリのセットアップの詳細が記述されます。
 
-**オプション2：**データベースのアップグレード*後*に最新のアプリをインストールし、[Gogoシェルコマンド](./upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md)を使用してアプリデータをアップグレードします。  [Post Upgrade Considerations](./upgrade-basics/post-upgrade-considerations.md)で、アプリのセットアップの詳細について説明しています。
+**オプション2：** データベースのアップグレード **後** に最新のアプリをインストールし、[Gogoシェルコマンド](./upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md)を使用してアプリデータをアップグレードします。  [Post Upgrade Considerations](./upgrade-basics/post-upgrade-considerations.md)で、アプリのセットアップの詳細について説明しています。
 
 ## カスタム開発のアップグレード
 
-開発したプラグイン（テーマ、アプリ、カスタマイゼーションなど）は、新しいLiferayバージョンに適合させる必要があります。 これは、依存関係の更新と同じくらい簡単な場合もあれば、APIの変更に合わせたコードの更新が必要な場合もあります。 カスタムプラグインの更新をしないと、新しいLiferayバージョンで無効になる場合があります。 [Upgrading Custom Development](./upgrading-custom-development.md)では、コードのアップグレードのプロセスを説明しています。
+開発したプラグイン（テーマ、アプリ、カスタマイゼーションなど）は、新しいLiferayバージョンに適合させる必要があります。 これは、依存関係の更新と同じくらい簡単な場合もあれば、APIの変更に合わせたコードの更新が必要な場合もあります。 カスタムプラグインの更新をしないと、新しいLiferayバージョンで無効になる場合があります。 [カスタム開発のアップグレード](./upgrading-custom-development.md) では、コードのアップグレードのプロセスを説明しています。
 
 ## 構成とインフラストラクチャの移行と更新
 
@@ -133,7 +133,7 @@ Liferayデータベースをアップグレードするには、2つの方法が
 
 アップグレードコンポーネントについて理解したので、Liferayインスタンスをアップグレードできます。 データベースをアップグレードする前に、現在のインストールで準備作業を必ず行ってください。 カスタムプラグインコードのアップグレードとデータベースのアップグレードを並行して実行するのが一般的です。 データベースのアップグレードは最初に開始する一般的なタスクであるため、以下に2つの方法へのリンクを示します。
 
-* [Upgrading Via Docker](./upgrade-basics/upgrading-via-docker.md)
+* [Docker経由のアップグレード](./upgrade-basics/upgrading-via-docker.md)
 * [データベースアップグレードツールの使用](./upgrade-basics/using-the-database-upgrade-tool.md)
 
 さらに、アップグレードに関連する以下のアップグレードシナリオを参照してください。

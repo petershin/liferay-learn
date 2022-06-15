@@ -1,6 +1,6 @@
 # データベーステンプレート
 
-以下は、Liferay DXPの組み込みデータソースとしてさまざまなデータベースを構成するためのテンプレート（[ポータルプロパティ](./portal-properties.md)と[Docker環境変数](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)の例）です。
+以下は、Liferay DXPの組み込みデータソースとしてさまざまなデータベースを構成するためのテンプレート（[ポータルプロパティ](./portal-properties.md)と [Docker環境変数](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) の例）です。
 
 ## MariaDB
 
@@ -66,4 +66,4 @@ jdbc.default.password=
 -e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD= \
 ```
 
-その他のデータベーステンプレートについては、[デフォルトのポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)を参照してください。
+その他のデータベーステンプレートについては、 [デフォルトのポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) を参照してください。

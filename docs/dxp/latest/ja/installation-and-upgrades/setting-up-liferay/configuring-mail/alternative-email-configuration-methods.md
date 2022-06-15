@@ -27,7 +27,7 @@
 
 1. デフォルトのメールセッション値を独自の値に置き換えます。
 
-1. `portal-ext.properties`ファイルを[Liferay Home](../../reference/liferay-home.md)に配置します。
+1. `portal-ext.properties`ファイルを [Liferay Home](../../reference/liferay-home.md) に配置します。
 
 DXPは次回の起動時にメールセッションに接続します。
 
@@ -37,13 +37,13 @@ DXPは次回の起動時にメールセッションに接続します。
 
 1. アプリケーションサーバーでメールセッションを作成します。アプリケーションサーバーのドキュメントを参照してください。
 
-1. _コントロールパネル_を使用している場合は、_［コントロールパネル］ &rarr; ［設定］ &rarr; ［サーバ管理］ &rarr; ［Mail］_に移動します。
+1. **コントロールパネル** を使用している場合は、 ［**コントロールパネル］ &rarr; ［設定］ &rarr; ［サーバ管理］ &rarr; ［Mail**］ に移動します。
 
-1. _［JavaMail Properties］_フィールドに値を入力します。
+1. ［**JavaMail Properties**］ フィールドに値を入力します。
 
     ![JavaMail](./alternative-email-configuration-methods/images/01.png)
 
-1. _［保存］_ をクリックします。 DXPがアプリケーションサーバー上のメールセッションを指すようになります。
+1. ［**保存**］ をクリックします。 DXPがアプリケーションサーバー上のメールセッションを指すようになります。
 
 メールサーバーがDXPに接続され、通知を送信する準備ができました。
 

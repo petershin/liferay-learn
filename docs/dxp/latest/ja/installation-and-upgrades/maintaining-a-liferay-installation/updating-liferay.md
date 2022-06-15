@@ -8,7 +8,7 @@
 Liferay DXP/Portalをアップデートする前に、**必ず** データベースとインストールを[バックアップ](./backing-up.md)してください。
 ```
 
-新しいアップデートの準備として、Liferayインストールの重要な依存関係を確認します。 これには、データベース、ドキュメントライブラリ、カスタムモジュールなどが含まれます。 ポータルプロパティ、OSGi構成、Tomcatファイル、データベースjarなどの他のファイルも重要です。 [考慮すべき重要なファイル](#important-files-to-consider)を参照してください。
+新しいアップデートの準備として、Liferayインストールの重要な依存関係を確認します。 これには、データベース、ドキュメントライブラリ、カスタムモジュールなどが含まれます。 ポータルプロパティ、OSGi構成、Tomcatファイル、データベースjarなどの他のファイルも重要です。 [考慮すべき重要なファイル](#important-files-to-consider) を参照してください。
 
 デフォルトでは、Liferay Homeディレクトリはバンドル内にあります。 更新を簡単にするために、Liferay Homeディレクトリをバンドルの外に移動して、新しいバンドルリリースのファイルを誤って上書きしないようにします。
 
@@ -70,7 +70,7 @@ Liferay Workspaceは、`configs`フォルダ内の環境サブフォルダを使
 
       ../configs/dev/tomcat-9.0.56/conf/server.xml
 
-詳細については、[Creating Deployment Environments](../../building-applications/tooling/liferay-workspace/configuring-liferay-workspace.html#creating-deployment-environments)を参照してください。
+詳細については、 [Creating Deployment Environments](../../building-applications/tooling/liferay-workspace/configuring-liferay-workspace.html#creating-deployment-environments) を参照してください。
 
 環境がセットアップされたら、Gradleタスクを使用してバンドルを生成できます。 `distBundleZip`または`distBundleTar`を使用して、定義された環境用の特定のバンドルを生成します。 以下に例を示します。
 
@@ -92,7 +92,7 @@ Gradleタスクは、適切な構成ファイルを階層化し、モジュー�
 
 ## 考慮すべき重要なファイル
 
-以下は、新しいバンドルリリースに移行するときにバックアップを検討する一般的なファイルのリストです。 このリストは完全なものではなく、インストールには、言及されていない追加のファイルやライブラリが含まれている場合があります。 さらに、Apache Tomcat以外のアプリケーションサーバーについては説明していませんが、原則はどのアプリケーションサーバーを保守する場合でも同じです。 [Installing Liferay on an Application Server](../installing-liferay/installing-liferay-on-an-application-server.md)を参照してください。
+以下は、新しいバンドルリリースに移行するときにバックアップを検討する一般的なファイルのリストです。 このリストは完全なものではなく、インストールには、言及されていない追加のファイルやライブラリが含まれている場合があります。 さらに、Apache Tomcat以外のアプリケーションサーバーについては説明していませんが、原則はどのアプリケーションサーバーを保守する場合でも同じです。 [アプリケーションサーバーへのLiferayのインストール](../installing-liferay/installing-liferay-on-an-application-server.md) を参照してください。
 
 ### Liferayのプロパティ（/LIFERAY/）
 

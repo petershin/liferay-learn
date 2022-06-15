@@ -31,7 +31,7 @@ Liferayは、論理パーティション機能（仮想インスタンスとも�
     jdbc.two.password=[the password]
     ```
 
-1. 各サーバーの`portal-upgrade-database.properties`でJDBCの_デフォルトの_接続プロパティを設定して、関連するシャードを指定します。
+1. 各サーバーの`portal-upgrade-database.properties`でJDBCの **デフォルトの** 接続プロパティを設定して、関連するシャードを指定します。
 
     * デフォルト以外の各シャードデータベースに元のJDBCプロパティを追加します。 たとえば、シャード`1`の元のプロパティが`jdbc.one`から始まっているとします。
 
@@ -57,7 +57,7 @@ Liferayは、論理パーティション機能（仮想インスタンスとも�
 
 データベースのアップグレードが完了したら、アプリケーションサーバーの構成を次のように変更します。
 
-1. 各サーバーの`portal-ext.properties`で、`portal-upgrade-database.properties`で指定したJDBCの_デフォルトの_プロパティを使用します（上記の_デフォルトの_プロパティを参照）。
+1. 各サーバーの`portal-ext.properties`で、`portal-upgrade-database.properties`で指定したJDBCの **デフォルトの** プロパティを使用します（上記の **デフォルトの** プロパティを参照）。
 
 1. デフォルトのシャードデータベースの`jdbc.default`プロパティのみを残して、デフォルト以外のシャードJDBCのプロパティをデフォルトのシャードサーバーの`portal-ext.properties`ファイルから削除します。 たとえば、
 
@@ -91,4 +91,4 @@ Liferayは、論理パーティション機能（仮想インスタンスとも�
 
 これらのすべての手順を完了すると、DXPのアップグレードとともに、シャード化された環境から別のLiferay DXPサーバー上の仮想インスタンスに移行されます。
 
-アップグレードを完了するためのガイダンスについては、[Upgrade Basics](../upgrade-basics.md)を参照してください。
+アップグレードを完了するためのガイダンスについては、 [アップグレードの基本](../upgrade-basics.md) を参照してください。

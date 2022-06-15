@@ -23,15 +23,15 @@ upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md
 
 ## 不要なデータの削除
 
-DXPサイトを積極的に更新する場合、不要になったデータがある可能性があります。 これには、使用を停止したサイト、ロール、組織や、不要になったコンテンツの改訂が含まれます。 不要なエンティティとそれに関連するデータを削除すると、アップグレードの処理時間を節約できます。 詳細は、[Database Pruning for Faster Upgrades](./upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md)を参照してください。 また、[例\：ジャーナル記事の中間バージョンの削除](./upgrade-stability-and-performance/example-removing-intermediate-journal-article-versions.md)も確認してください。
+DXPサイトを積極的に更新する場合、不要になったデータがある可能性があります。 これには、使用を停止したサイト、ロール、組織や、不要になったコンテンツの改訂が含まれます。 不要なエンティティとそれに関連するデータを削除すると、アップグレードの処理時間を節約できます。 詳細は、 [より高速なアップグレードのためのデータベースのプルーニング](./upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md) を参照してください。 また、[例\：ジャーナル記事の中間バージョンの削除](./upgrade-stability-and-performance/example-removing-intermediate-journal-article-versions.md)も確認してください。
 
 ## アップグレードのためのデータベースの調整
 
-DXPアップグレードプロセスでは、本番環境で通常行われるよりも多くのデータがデータベースに書き込まれます。 データベースを書き込み操作用に最適化できます。 詳細は、[Database Tuning for Upgrades](./upgrade-stability-and-performance/database-tuning-for-upgrades.md)を参照してください。
+DXPアップグレードプロセスでは、本番環境で通常行われるよりも多くのデータがデータベースに書き込まれます。 データベースを書き込み操作用に最適化できます。 詳細は、 [アップグレードのためのデータベース調整](./upgrade-stability-and-performance/database-tuning-for-upgrades.md) を参照してください。
 
 ## アップグレードと問題のトラブルシューティング
 
-テストデータベースを整理および調整した後、[データベースアップグレードツール](./upgrade-basics/using-the-database-upgrade-tool.md)を使用してアップグレードします。 未解決の依存関係などの問題が発生した場合は、ログを調べ、Gogoシェルコマンドを使用して問題のトラブルシューティングを行うことでアップグレードを完了できます。 方法については、[Upgrading Modules Using Gogo Shell](./upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md)を参照してください。
+テストデータベースを整理および調整した後、[データベースアップグレードツール](./upgrade-basics/using-the-database-upgrade-tool.md)を使用してアップグレードします。 未解決の依存関係などの問題が発生した場合は、ログを調べ、Gogoシェルコマンドを使用して問題のトラブルシューティングを行うことでアップグレードを完了できます。 方法については、 [Gogoシェルを使用したモジュールのアップグレード](./upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) を参照してください。
 
 ## アップグレードされたデータベースのテスト
 

@@ -11,22 +11,22 @@ Liferay DXPのバックアップ計画を検討するときは、次の領域を
 * [ソースコード](#source-code)
 
 ```{note}
-DXP Cloudは、ドキュメントライブラリとLiferay DXPデータベースのバックアップを作成および管理するプロセスを自動化および簡素化します。 DXP CloudはGitベースのDevOpsパイプラインを使用するため、Liferayのすべての構成も自動的にバックアップされます。 詳細については、[DXP Cloud Backup Service](https://learn.liferay.com/dxp-cloud/latest/en/platform-services/backup-service/backup-service-overview.html)を参照してください。
+DXP Cloudは、ドキュメントライブラリとLiferay DXPデータベースのバックアップを作成および管理するプロセスを自動化および簡素化します。 DXP CloudはGitベースのDevOpsパイプラインを使用するため、Liferayのすべての構成も自動的にバックアップされます。 詳細については、 [DXP Cloud Backup Service](https://learn.liferay.com/dxp-cloud/latest/ja/platform-services/backup-service/backup-service-overview.html) を参照してください。
 ```
 
 ## Liferay Home
 
 Liferay Homeフォルダーには次のファイルが含まれているため、バックアップすることが重要です。
 
-* **ポータルのプロパティとシステムのプロパティ:**Liferay Homeフォルダには、DXP[ポータルのプロパティファイル](../reference/portal-properties.md)(例:`portal-ext.properties`、`portal-setup-wizard.properties`など)とDXP[システムのプロパティファイル](../reference/system-properties.md)が格納されています(例:`system-ext.properties`)。
+***ポータルのプロパティとシステムのプロパティ:** Liferay Homeフォルダには、DXP[ポータルのプロパティファイル](../reference/portal-properties.md)(例:`portal-ext.properties`、`portal-setup-wizard.properties`など)とDXP[システムのプロパティファイル](../reference/system-properties.md)が格納されています(例:`system-ext.properties`)。
 
-* **`/データ`フォルダ:**DXPは、Liferay Homeの`/データ`フォルダに設定ファイル、検索インデックス、キャッシュ情報を保存します。 `/ data / document_library` フォルダは、 [簡易ファイルシステムストア](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)のデフォルトのストレージ構成場所であることに注意してください。 [高度なファイルシステムストア](../../system-administration/file-storage.md)では、保存場所を明示的に設定する必要があります。
+***`/データ`フォルダ:** DXPは、Liferay Homeの`/データ`フォルダに設定ファイル、検索インデックス、キャッシュ情報を保存します。 `/ data / document_library` フォルダは、 [簡易ファイルシステムストア](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)のデフォルトのストレージ構成場所であることに注意してください。 [高度なファイルシステムストア](../../system-administration/file-storage.md)では、保存場所を明示的に設定する必要があります。
 
-* **`/ライセンス`フォルダ(サブスクリプション):**Liferayエンタープライズサブスクリプションのアクティベーションキーを保持します。
+***`/ライセンス`フォルダ(サブスクリプション):** Liferayエンタープライズサブスクリプションのアクティベーションキーを保持します。
 
-* **`/osgi`フォルダ:**DXPのOSGiランタイムを構成するファイルは、Liferay Homeの`/osgi`フォルダに保存されます。 DXPにデプロイされたすべてのアプリとモジュールのJARファイルが含まれています。 `/osgi`フォルダには、他の必要なJARファイル、[設定ファイル](https://help.liferay.com/hc/en-us/articles/360029131651-Understanding-System-Configuration-Files)、およびログファイルも含まれています。
+***`/osgi`フォルダ:** DXPのOSGiランタイムを構成するファイルは、Liferay Homeの`/osgi`フォルダに保存されます。 DXPにデプロイされたすべてのアプリとモジュールのJARファイルが含まれています。 `/osgi`フォルダには、他の必要なJARファイル、 [設定ファイル](https://help.liferay.com/hc/ja/articles/360029131651-Understanding-System-Configuration-Files) 、およびログファイルも含まれています。
 
-* **`/logs`フォルダ:**DXPのログファイルが含まれています。 DXPで問題が発生した場合、ログファイルは、問題の原因を特定するための情報を提供します。
+***`/logs`フォルダ:** DXPのログファイルが含まれています。 DXPで問題が発生した場合、ログファイルは、問題の原因を特定するための情報を提供します。
 
 ```{note}
 Liferay Dockerイメージを使用していて、バインドマウントを介してカスタムLiferayおよびアプリケーションサーバーの構成ファイルを使用している場合は、それらのファイル（たとえば、 `[host folder]/files`フォルダ内のファイル）をバックアップします。
@@ -60,9 +60,9 @@ mysqldump --databases my-liferay-database > my-liferay-database-backup.sql
 
 ## 検索インデクス
 
-[検索インデクス](./../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md)は常にバックアップしてください。 ほとんどのLiferayデータは、完全なインデックスの再作成によってデータベースから復元できますが、[一部のアプリケーションではプライマリストレージ](../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage)として検索インデクスが使用されます。 インデックスのバックアップに失敗すると、これらのアプリケーションのデータが完全に失われる可能性があります。
+[検索インデクス](./../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md)は常にバックアップしてください。 ほとんどのLiferayデータは、完全なインデックスの再作成によってデータベースから復元できますが、 [一部のアプリケーションではプライマリストレージ](../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) として検索インデクスが使用されます。 インデックスのバックアップに失敗すると、これらのアプリケーションのデータが完全に失われる可能性があります。
 
-さらに、データセットが大きいユーザーは、バックアップから復元するときに、すべてのコンテンツとアセットのインデックスを再作成することを回避できます。 検索インデクスを保存する別の[ElasticsearchまたはSolr](../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)環境がある場合は、検索データのバックアップが最も簡単です。 詳細については、検索エンジンのバックアップ/復元のドキュメンテーションに従ってください（たとえば、Elasticsearchの[スナップショットと復元のドキュメンテーション](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html)を参照してください）。
+さらに、データセットが大きいユーザーは、バックアップから復元するときに、すべてのコンテンツとアセットのインデックスを再作成することを回避できます。 検索インデクスを保存する別の[ElasticsearchまたはSolr](../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)環境がある場合は、検索データのバックアップが最も簡単です。 詳細については、検索エンジンのバックアップ/復元のドキュメンテーションに従ってください（たとえば、Elasticsearchの [スナップショットと復元のドキュメンテーション](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) を参照してください）。
 
 ## ソースコード
 

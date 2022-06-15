@@ -80,7 +80,7 @@ Product information:
 
 ## 手動設定
 
-パッチングツールのプロパティファイルを編集します。 `auto-discovery` コマンドは、デフォルトで `default.properties` ファイルを作成するか、指定されたファイル（例：[Patching Profile](#using-patching-profiles)）を作成します。
+パッチングツールのプロパティファイルを編集します。 `auto-discovery` コマンドは、デフォルトで `default.properties` ファイルを作成するか、指定されたファイル（例： [Patching Profile](#using-patching-profiles) ）を作成します。
 
 ### 一般的なプロパティ
 
@@ -94,8 +94,8 @@ Product information:
 | `module.framework.portal.path`      | DXPの `osgi/portal` フォルダへのパス。                                                                                                                                           |
 | `module.framework.static.path`      | DXPの `osgi/static` フォルダへのパス。                                                                                                                                           |
 | `patches.folder`                    | パッチを保存する場所を指定します。 デフォルトの場所は `./patches`です。                                                                                                                             |
-| `patching.mode` **（DXP 2.0のみ）**     | パッチには、更新されたバイナリファイルとソースファイルが含まれています。 モードは、適用するファイルタイプを決定します。<br><br>* `binary`（デフォルト）：DXPインストールの更新用。<br>* `source`：DXPを拡張するソースツリーの更新用。               |
-| `source.path` **（DXP 2.0のみ）**       | DXPソースツリーの場所を指定します。 `source.path`は、`patching-mod`eが`source`の場合にのみ使用されます。                                                                                               |
+| `patching.mode` （**DXP 2.0のみ**） | パッチには、更新されたバイナリファイルとソースファイルが含まれています。 モードは、適用するファイルタイプを決定します。<br><br> **`binary`（デフォルト）：DXPインストールの更新用。<br>** `source`：DXPを拡張するソースツリーの更新用。               |
+| `source.path` （**DXP 2.0のみ**） | DXPソースツリーの場所を指定します。 `source.path`は、`patching-mod`eが`source`の場合にのみ使用されます。                                                                                               |
 | `war.path`                          | DXP Webアプリケーションへのパス（展開されたフォルダ構造または `.war` ファイルへのパス）を指定します。                                                                                                             |
 
 ### プロキシ設定

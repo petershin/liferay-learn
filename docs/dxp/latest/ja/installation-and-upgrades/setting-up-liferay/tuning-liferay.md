@@ -15,7 +15,7 @@ Liferayのパフォーマンスを調整する方法はいくつかあります�
 
 ### ポータル開発者プロパティ
 
-Liferayの[ポータルプロパティ](../reference/portal-properties.md)は、開発を容易にするいくつかのプロパティが含まれています。 Liferayのインストールに含まれている[`portal-developer.properties`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$］/portal-impl/src/portal-developer.properties)は、すべてのプロパティを宣言するものですが、デフォルトでは無効になっています。 このファイルは、次の設定を使って、`portal-ext.properties`ファイルで参照した場合のみ有効になります。
+Liferayの[ポータルプロパティ](../reference/portal-properties.md)は、開発を容易にするいくつかのプロパティが含まれています。 Liferayのインストールに含まれている [`portal-developer.properties`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/portal-impl/src/portal-developer.properties) は、すべてのプロパティを宣言するものですが、デフォルトでは無効になっています。 このファイルは、次の設定を使って、`portal-ext.properties`ファイルで参照した場合のみ有効になります。
 
 ```properties 
 include-and-override=portal-developer.properties
@@ -68,7 +68,7 @@ Liferayの`portal-developer.properties`ファイルを含めた場合、また�
 
 初期スレッドプール設定（50スレッド）を使用してから、アプリケーションサーバーの監視コンソール内で監視します。 平均ページ時間が2〜3秒の範囲にある場合は、より大きな数値（250など）を使用することをお勧めします。 スレッドプール内のスレッドが少なすぎると、過剰なリクエストがキューに入れられる可能性があります。スレッドが多すぎると、過度のコンテキスト切り替えが発生する可能性があります。
 
-Tomcatでは、スレッドプールは`$CATALINA_HOME/conf/server.xml`ファイルの`コネクタ`要素で設定します。 [Apache Tomcatのドキュメンテーション](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html)に詳細が記載されています。 スレッドプール設定の例を次に示します。
+Tomcatでは、スレッドプールは`$CATALINA_HOME/conf/server.xml`ファイルの`コネクタ`要素で設定します。 [Apache Tomcatのドキュメンテーション](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html) に詳細が記載されています。 スレッドプール設定の例を次に示します。
 
 ```xml
 <Connector
@@ -99,9 +99,9 @@ CPUベースの負荷をテストする場合、またはCPU容量が心配な�
 スレッドプールサイズが大きい場合、接続プールを同じサイズにしてもパフォーマンスは向上しません。
 ```
 
-接続数がデータベース接続制限に違反している場合は、カウンターデータソースのプールサイズを縮小してください。 カウンターデータベースのトランザクション数は少なく、高速で、ネストされることはないため、カウンター接続プールは削減に適した候補となります。 カウンターデータソースの詳細は、[Database Configuration for Cluster Nodes](./clustering-for-high-availability/database-configuration-for-cluster-nodes.md)を参照してください。
+接続数がデータベース接続制限に違反している場合は、カウンターデータソースのプールサイズを縮小してください。 カウンターデータベースのトランザクション数は少なく、高速で、ネストされることはないため、カウンター接続プールは削減に適した候補となります。 カウンターデータソースの詳細は、 [クラスタノードのデータベース構成](./clustering-for-high-availability/database-configuration-for-cluster-nodes.md) を参照してください。
 
-Liferayは、接続プールにC3PO、DBCP、HikariCP、またはTomcatを使用できます。 接続プールプロバイダーは、[`jdbc.default.liferay.pool.provider`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)[ポータルプロパティ](../reference/portal-properties.md)を使用して設定します。 HikariCPがデフォルトです。
+Liferayは、接続プールにC3PO、DBCP、HikariCP、またはTomcatを使用できます。 接続プールプロバイダーは、 [`jdbc.default.liferay.pool.provider`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) [ポータルプロパティ](../reference/portal-properties.md)を使用して設定します。 HikariCPがデフォルトです。
 
 ```properties
 jdbc.default.liferay.pool.provider=hikaricp
@@ -109,10 +109,10 @@ jdbc.default.maximumPoolSize=85
 jdbc.default.minimumIdle=10
 ```
 
-サポートされているすべての接続プールに対して、[JDBC接続プールポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)があります。 設定の詳細は、接続プールベンダーの情報を参照してください。
+サポートされているすべての接続プールに対して、 [JDBC接続プールポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) があります。 設定の詳細は、接続プールベンダーの情報を参照してください。
 
 スレッドプールと同様に、接続プールを監視し、パフォーマンステストに基づいて調整します。
 
 ## Java仮想マシンの設定
 
-アプリケーションサーバーはJava仮想マシン（JVM）で実行されます。 メモリ管理とガベージコレクションは、Liferayがユーザーリクエストに応答する速度に影響します。 手順については、次の[Tuning Your JVM](./tuning-your-jvm.md)を参照してください。
+アプリケーションサーバーはJava仮想マシン（JVM）で実行されます。 メモリ管理とガベージコレクションは、Liferayがユーザーリクエストに応答する速度に影響します。 手順については、次の [JVMの調整](./tuning-your-jvm.md) を参照してください。

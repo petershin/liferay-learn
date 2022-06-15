@@ -48,5 +48,5 @@ reference/upgrade-reports.md
 * [7.3のメンテナンスモードと非推奨](./reference/maintenance-mode-and-deprecations-in-7-3.md)
 * [7.2のメンテナンスモードと非推奨](./reference/maintenance-mode-and-deprecations-in-7-2.md)
 * [言語キーの名称変更](./reference/renamed-language-keys.md)
-* [Troubleshooting Upgrades](./reference/troubleshooting-upgrades.md)
+* [アップグレードのトラブルシューティング](./reference/troubleshooting-upgrades.md)
 * [アップグレードのレポート](./reference/upgrade-reports.md)

@@ -1,6 +1,6 @@
 # ポータルプロパティ
 
-構成オプションは、サーバーの起動時に*ポータルプロパティ*、プロパティファイルから読み取られた名前と値のペアのセット、およびDocker環境変数を使用して指定されます。 [デフォルト値](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)は`portal-impl.jar/portal.properties`ファイルで指定されています。
+構成オプションは、サーバーの起動時に **ポータルプロパティ** 、プロパティファイルから読み取られた名前と値のペアのセット、およびDocker環境変数を使用して指定されます。 [デフォルト値](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) は`portal-impl.jar/portal.properties`ファイルで指定されています。
 
 一部のプロパティはユーザーインターフェイス（UI）を介して変更できますが、その他のプロパティはプロパティファイルまたはDocker環境変数でのみ変更できます。 これには、データベースへの接続、 [Liferay Home](./liferay-home.md) フォルダの場所の宣言、 [ユーザー認証方法の変更](../securing-liferay/authentication-basics.md#configuring-authentication-type-using-properties) （メールアドレスではなくスクリーンネームで）などがあります。
 
@@ -16,7 +16,7 @@ Liferayのインストールでは、プロパティファイルを使用しま�
 * 構成をバージョン管理システムに保存して、構成管理を簡素化できます。
 * 最初の起動前にファイルにプロパティを設定することは、Liferayを構成する最も簡単な方法です。
 
-ポータルプロパティは、環境変数（Env変数）とプロパティファイルとともにLiferay Dockerコンテナに適用されます。 ポータルプロパティを使用してDockerコンテナを構成するには、[Configuring Containers](../installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables)を参照してください。
+ポータルプロパティは、環境変数（Env変数）とプロパティファイルとともにLiferay Dockerコンテナに適用されます。 ポータルプロパティを使用してDockerコンテナを構成するには、 [Configuring Containers](../installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables) を参照してください。
 
 **内容：**
 
@@ -49,12 +49,12 @@ jdbc.default.username=joe.bloggs
 jdbc.default.password=123456
 ```
 
-データベース構成の詳細は、[Database Configurations](./database-configurations.md)および[Database Templates](./database-templates.md)を参照してください 。
+データベース構成の詳細は、[Database Configurations](./database-configurations.md)および [データベーステンプレート](./database-templates.md) を参照してください 。
 
 ### Liferay Homeの場所の設定
 
 一部のアプリケーションサーバー(WebLogicなど)では、DXP WARファイルをデプロイする前に
-Liferay Homeの場所をカスタマイズする必要があります。  [`liferay.home`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Liferay%20Home)プロパティは場所を設定します。</p> 
+Liferay Homeの場所をカスタマイズする必要があります。  [`liferay.home`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Liferay%20Home) プロパティは場所を設定します。</p> 
 
 
 
@@ -100,7 +100,7 @@ company.security.auth.type=userId
 * 拡張プロパティファイル（例： `portal-ext.properties`）
 * [環境変数](../installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables)
 
-特定のプロパティでは、最後に読み取られた値が優先されます。 プロパティソースは、`include-and-override`と呼ばれるプロパティを介して構成可能な[決定論的な順序](#configuration-processing)で読み取られます。 
+特定のプロパティでは、最後に読み取られた値が優先されます。 プロパティソースは、`include-and-override`と呼ばれるプロパティを介して構成可能な [決定論的な順序](#configuration-processing) で読み取られます。 
 
 
 
@@ -233,7 +233,7 @@ mail.session.jndi.name=mail/DevMailSession
 
 DXPデータベースに格納されているプロパティは、ポータルプロパティファイルで設定されているプロパティよりも優先されます。
 
-*［設定］* &rarr; *［システム設定］*の*［コントロールパネル］*に移動して、［システム設定］を見つけます。 システム設定は`.config`ファイルとしてエクスポートし、ソースコントロールに保存し、分散DXPインストールで使用できます。 システム設定を介して設定されたポータルプロパティと構成ファイルは、データベースに保存されます。 すぐに適用されるプロパティもあれば、サーバーの再起動が必要なプロパティもあります。
+［**設定**］ &rarr; ［**システム設定**］ の ［**コントロールパネル**］ に移動して、［システム設定］を見つけます。 システム設定は`.config`ファイルとしてエクスポートし、ソースコントロールに保存し、分散DXPインストールで使用できます。 システム設定を介して設定されたポータルプロパティと構成ファイルは、データベースに保存されます。 すぐに適用されるプロパティもあれば、サーバーの再起動が必要なプロパティもあります。
 
 
 

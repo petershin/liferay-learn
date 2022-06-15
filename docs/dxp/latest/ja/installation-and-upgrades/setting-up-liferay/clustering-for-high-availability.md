@@ -36,7 +36,7 @@ Liferay DXPは、複数のマシンのクラスター（水平クラスター）
 
 1. [すべてのノード間で通信とキャッシュレプリケーションを有効にするように構成されたクラスターリンク](./clustering-for-high-availability/configuring-cluster-link.md)
 
-DXPクラスターを構成したら、それにアプリケーションをデプロイし、ユーザーエクスペリエンスを引き続き改善できます。 詳細は、[Maintaining Clustered Installations](../maintaining-a-liferay-installation/maintaining-clustered-installations.md)を参照してください。
+DXPクラスターを構成したら、それにアプリケーションをデプロイし、ユーザーエクスペリエンスを引き続き改善できます。 詳細は、 [クラスター化されたインストールの維持](../maintaining-a-liferay-installation/maintaining-clustered-installations.md) を参照してください。
 
 ## 次のステップ
 

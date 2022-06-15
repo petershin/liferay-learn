@@ -19,8 +19,8 @@ public class Country_PUT_ById {
 				{
 					a2 = "AB";
 					a3 = "ABL";
-					name = "Foo";
-					number = "Goo";
+					name = "Goo";
+					number = 1234;
 				}
 			});
 

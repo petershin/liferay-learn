@@ -56,9 +56,9 @@ import java.io.File;
 import java.nio.charset.StandardCharsets;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -465,8 +465,7 @@ public class Main {
 
 	private void _visit(Image image) throws Exception {
 		String fileName =
-			FilenameUtils.getPath(_markdownFile.getPath()) +
-				image.getUrl();
+			FilenameUtils.getPath(_markdownFile.getPath()) + image.getUrl();
 
 		File file = new File(fileName);
 
@@ -484,7 +483,9 @@ public class Main {
 			Document document = _documentResource.postDocumentFolderDocument(
 				_getDocumentFolderId(
 					FilenameUtils.getPath(
-						filePathString.substring(filePathString.indexOf("/"), filePathString.length()))),
+						filePathString.substring(
+							filePathString.indexOf("/"),
+							filePathString.length()))),
 				new Document() {
 					{
 						title = filePathString;
@@ -530,10 +531,7 @@ public class Main {
 					catch (Exception exception) {
 						System.out.println(
 							"Error visiting image: " + exception.getMessage());
-						System.out.println(
-							"Image: " +
-								image.getUrl(
-								).toStringOrNull());
+						System.out.println("Image: " + image.getUrl());
 					}
 				}
 

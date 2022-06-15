@@ -498,9 +498,9 @@ public class Main {
 				});
 
 			imageURL = document.getContentUrl();
-		}
 
-		_imageURLs.put(filePathString, imageURL);
+			_imageURLs.put(filePathString, imageURL);
+		}
 
 		image.setUrl(_toBasedSequence(imageURL));
 

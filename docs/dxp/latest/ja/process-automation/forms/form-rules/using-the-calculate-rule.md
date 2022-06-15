@@ -8,9 +8,9 @@
 
 次の例では、3つの数値フィールドを持つフォームがあります。
 
-* _Number of attendees_: 数値フィールド。
-* _Registration Fee_: 150が[定義済みの値](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)として設定されている数値フィールド。
-* _Total_: 合計が表示される数値フィールド。
+***Number of attendees** : 数値フィールド。
+***Registration Fee** : 150が[定義済みの値](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)として設定されている数値フィールド。
+***Total** : 合計が表示される数値フィールド。
 
 ## 計算ルールの設定
 
@@ -18,17 +18,17 @@
 
 以下の手順に従ってください。
 
-1. _［Rules］_タブをクリックします。
+1. ［**Rules**］ タブをクリックします。
 1. 追加（![Add](../../../images/icon-add.png)）ボタンをクリックします。
-1. _［If］_ドロップダウンメニューから_［Number of attendees］_を選択します。
-1. 条件の作成：_［Is greater than］_ &rarr; _［Value］_ &rarr; _0_.
-1. _［Do］_ドロップダウンメニューから_［Calculate］_を選択します。
-1. _［Choose a Field to Show the Result］_ドロップダウンメニューから_［Total］_を選択します。
-1. 組み込みの電卓を使って、 **(NumberofAttendees*RegistrationFee)**と入力してください。
+1. ［**If**］ ドロップダウンメニューから ［**Number of attendees**］ を選択します。
+1. 条件の作成： ［**Is greater than**］ &rarr; ［**Value**］ &rarr; **0** .
+1. ［**Do**］ ドロップダウンメニューから ［**Calculate**］ を選択します。
+1. ［**Choose a Field to Show the Result**］ ドロップダウンメニューから ［**Total**］ を選択します。
+1. 組み込みの電卓を使って、 (**NumberofAttendees*RegistrationFee**) と入力してください。
 
     ![2つのフィールドを掛け合わせて、総登録料を計算します。](./using-the-calculate-rule/images/01.png)
 
-1. 完了したら、_［Save］_をクリックします。
+1. 完了したら、 ［**Save**］ をクリックします。
 
 計算ルールが作成されました。
 

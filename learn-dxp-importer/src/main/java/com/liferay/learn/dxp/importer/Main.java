@@ -55,6 +55,8 @@ import java.io.File;
 
 import java.nio.charset.StandardCharsets;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -111,8 +113,8 @@ public class Main {
 		_fileNames.add(fileName);
 	}
 
-	private Long _getDocumentFolderId(String fileName) throws Exception {
-		Long documentFolderId = 0L;
+	private String[] _getDirNames(String fileName) throws Exception {
+		List<String> dirNames = new ArrayList<>();
 
 		String[] parts = fileName.split(
 			Matcher.quoteReplacement(System.getProperty("file.separator")));
@@ -129,6 +131,16 @@ public class Main {
 
 			String dirName = part;
 
+			dirNames.add(dirName);
+		}
+
+		return dirNames.toArray(new String[0]);
+	}
+
+	private Long _getDocumentFolderId(String fileName) throws Exception {
+		Long documentFolderId = 0L;
+
+		for (String dirName : _getDirNames(fileName)) {
 			documentFolderId = _getDocumentFolderId(dirName, documentFolderId);
 		}
 
@@ -213,21 +225,7 @@ public class Main {
 
 		Long structuredContentFolderId = 0L;
 
-		String[] parts = fileName.split(
-			Matcher.quoteReplacement(System.getProperty("file.separator")));
-
-		for (String part : parts) {
-			if (part.endsWith(".html") || part.endsWith(".md") ||
-				part.endsWith(".rst") || part.equalsIgnoreCase("..") ||
-				part.equalsIgnoreCase("docs") || part.equalsIgnoreCase("en") ||
-				part.equalsIgnoreCase("ja") ||
-				part.equalsIgnoreCase("latest")) {
-
-				continue;
-			}
-
-			String dirName = part;
-
+		for (String dirName : _getDirNames(fileName)) {
 			structuredContentFolderId = _getStructuredContentFolderId(
 				dirName, structuredContentFolderId);
 		}

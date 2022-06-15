@@ -16,7 +16,7 @@ public class Countries_GET_FromInstance {
 		).build();
 
 		Page<Country> page = countryResource.getCountriesPage(
-			 null, null, Pagination.of(1, 2), null);
+			null, null, Pagination.of(1, 2), null);
 
 		System.out.println(page);
 	}

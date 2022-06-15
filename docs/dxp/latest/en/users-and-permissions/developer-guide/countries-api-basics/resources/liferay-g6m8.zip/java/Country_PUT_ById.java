@@ -1,28 +1,30 @@
-import com.liferay.headless.admin.address.client.dto.v1_0.Region;
-import com.liferay.headless.admin.address.client.resource.v1_0.RegionResource;
+import com.liferay.headless.admin.address.client.dto.v1_0.Country;
+import com.liferay.headless.admin.address.client.resource.v1_0.CountryResource;
 
-public class Region_PUT_ById {
+public class Country_PUT_ById {
 
 	/**
-	 * java -classpath .:* -DregionId=1234 Region_PUT_ById
+	 * java -classpath .:* -DcountryId=1234 Country_PUT_ById
 	 */
 	public static void main(String[] args) throws Exception {
-		RegionResource.Builder builder = RegionResource.builder();
+		CountryResource.Builder builder = CountryResource.builder();
 
-		RegionResource regionResource = builder.authentication(
+		CountryResource countryResource = builder.authentication(
 			"test@liferay.com", "learn"
 		).build();
 
-		Region region = regionResource.putRegion(
-			Long.valueOf(System.getProperty("regionId")),
-			new Region() {
+		Country country = countryResource.putCountry(
+			Long.valueOf(System.getProperty("countryId")),
+			new Country() {
 				{
+					a2 = "AB";
+					a3 = "ABL";
 					name = "Foo";
-					regionCode = "ABL";
+					number = "Goo";
 				}
 			});
 
-		System.out.println(region);
+		System.out.println(country);
 	}
 
 }

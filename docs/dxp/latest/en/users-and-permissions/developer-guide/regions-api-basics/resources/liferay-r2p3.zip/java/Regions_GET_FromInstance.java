@@ -16,7 +16,7 @@ public class Regions_GET_FromInstance {
 		).build();
 
 		Page<Region> page = regionResource.getRegionsPage(
-			 null, null, Pagination.of(1, 2), null);
+			null, null, Pagination.of(1, 2), null);
 
 		System.out.println(page);
 	}

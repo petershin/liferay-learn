@@ -1,6 +1,6 @@
 # エクスポートされたサードパーティパッケージ
 
-Liferayでは、100以上のサードパーティのJavaパッケージを実行時に提供しています。 `com.liferay.portal.bootstrap`モジュールは、個々のパッケージを明示的に指定したり、 globを使ってパッケージのグループを指定することで、パッケージをエクスポートします。 例えば、[7.3.4-ga5](https://github.com/liferay/liferay-portal/blob/7.3.4-ga5/modules/core/portal-bootstrap/system.packages.extra.bnd)の`Export-Package` 宣言からの抜粋を以下に示します。
+Liferayでは、100以上のサードパーティのJavaパッケージを実行時に提供しています。 `com.liferay.portal.bootstrap`モジュールは、個々のパッケージを明示的に指定したり、 globを使ってパッケージのグループを指定することで、パッケージをエクスポートします。 例えば、 [7.3.4-ga5](https://github.com/liferay/liferay-portal/blob/7.3.4-ga5/modules/core/portal-bootstrap/system.packages.extra.bnd) の`Export-Package` 宣言からの抜粋を以下に示します。
 
 ```groovy
 Export-Package:\
@@ -44,7 +44,7 @@ Export-Package:\
 
 1. プロジェクトが必要とするパッケージが、`com.liferay.portal.bootstrap`モジュールのエクスポートマニフェストにリストされているかどうかを確認します。 確認方法は2つあります。
 
-    **Bndソースファイル：**Liferayソースコードのコピーがある場合は、`modules/core/portal-bootstrap/system.packages.extra.bnd`ファイルの`Export-Package`宣言を調べます。 エクスポートされたパッケージは、上記のように分かりやすい形式で表示されています。 Liferayは、この`.bnd`ファイルに基づいて`com.liferay.portal.bootstrap`モジュールの`META-INF/system.packages.extra.mf`ファイルを生成します。
+    **Bndソースファイル：** Liferayソースコードのコピーがある場合は、`modules/core/portal-bootstrap/system.packages.extra.bnd`ファイルの`Export-Package`宣言を調べます。 エクスポートされたパッケージは、上記のように分かりやすい形式で表示されています。 Liferayは、この`.bnd`ファイルに基づいて`com.liferay.portal.bootstrap`モジュールの`META-INF/system.packages.extra.mf`ファイルを生成します。
 
     **JARマニフェスト：** `［Liferay Home］/osgi/core/com.liferay.portal.bootstrap.jar`の`META-INF/system.packages.extra.mf`ファイルは、エクスポートされたパッケージを宣言します。 JARはLiferayのインストールに含まれているので便利ですが、マニフェストファイルの `Export-Package`宣言の形式はあまり分かりやすいものではありません。
 

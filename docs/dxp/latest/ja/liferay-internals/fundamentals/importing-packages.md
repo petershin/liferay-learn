@@ -17,13 +17,13 @@ Import-Package: javax.portlet,com.liferay.portal.kernel.util
 
 ## パッケージの自動インポート
 
-チュートリアル例（[モジュールプロジェクト](./module-projects.md)を参照）の[ワークスペース](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)ベースのプロジェクト、または[Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)または[Liferay Developer Studio](../../building-applications/tooling/developer-studio.md)を使用して作成されたプロジェクトは[Bnd](http://bnd.bndtools.org/)を使用します。 GradleプラグインはBndを呼び出し、BndはGradleの依存関係を読み取り、インポートを解決できます。 プロジェクトのJARをビルドすると、Bndはモジュールが使用するパッケージを検出し、`META-INF/MANIFEST.MF`ファイルを生成し、パッケージを`Import-Package`ヘッダに割り当てます。 その意味で、パッケージのインポートは自動的に行われます。なぜなら、依存関係を定義する必要があるのは、1か所（ビルドスクリプト）だけだからです。
+チュートリアル例（[モジュールプロジェクト](./module-projects.md)を参照）の[ワークスペース](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)ベースのプロジェクト、または[Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)または[Liferay Developer Studio](../../building-applications/tooling/developer-studio.md)を使用して作成されたプロジェクトは [Bnd](http://bnd.bndtools.org/) を使用します。 GradleプラグインはBndを呼び出し、BndはGradleの依存関係を読み取り、インポートを解決できます。 プロジェクトのJARをビルドすると、Bndはモジュールが使用するパッケージを検出し、`META-INF/MANIFEST.MF`ファイルを生成し、パッケージを`Import-Package`ヘッダに割り当てます。 その意味で、パッケージのインポートは自動的に行われます。なぜなら、依存関係を定義する必要があるのは、1か所（ビルドスクリプト）だけだからです。
 
 ```{note}
-Liferayのプロジェクトテンプレートは、[サードパーティのGradleプラグイン](https://github.com/TomDmitriev/gradle-bundle-plugin)を使用してBndを呼び出します。
+Liferayのプロジェクトテンプレートは、 [サードパーティのGradleプラグイン](https://github.com/TomDmitriev/gradle-bundle-plugin) を使用してBndを呼び出します。
 ```
 
-たとえば、[Gogoコマンドサンプル](https://github.com/liferay/liferay-blade-samples/tree/7.3/liferay-workspace/extensions/gogo)の`build.gradle`は、`com.liferay.portal.kernel`および`org.osgi.service.component.annotations`のパッケージを使用します。 サンプルの`build.gradle`ファイルは次のとおりです。
+たとえば、 [Gogoコマンドサンプル](https://github.com/liferay/liferay-blade-samples/tree/7.3/liferay-workspace/extensions/gogo) の`build.gradle`は、`com.liferay.portal.kernel`および`org.osgi.service.component.annotations`のパッケージを使用します。 サンプルの`build.gradle`ファイルは次のとおりです。
 
 ```groovy
 dependencies {
@@ -71,7 +71,7 @@ Import-Package: [... existing package list,][add the package here]
 
 ### Java APIパッケージ
 
-JavaポートレットなどのJava APIのパッケージは、[セマンティックにバージョン管理](./semantic-versioning.md)されていませんが、[ポータブルJavaコントラクト](https://www.osgi.org/portable-java-contract-definitions/)があります。 各APIのコントラクトは、それが満たすJSRを指定します。 これらのAPIを使用するモジュールは、APIコントラクトの要件を指定する必要があります。 コントラクト要件は、インポートされたAPIパッケージとのモジュールの関係を定義します。 実行しているシステムが正確なコントラクトを提供*しない*場合、モジュールは解決されません。 欠落しているパッケージを解決するほうが、実行中の非互換性の失敗を処理するよりもましです。
+JavaポートレットなどのJava APIのパッケージは、[セマンティックにバージョン管理](./semantic-versioning.md)されていませんが、 [ポータブルJavaコントラクト](https://www.osgi.org/portable-java-contract-definitions/) があります。 各APIのコントラクトは、それが満たすJSRを指定します。 これらのAPIを使用するモジュールは、APIコントラクトの要件を指定する必要があります。 コントラクト要件は、インポートされたAPIパッケージとのモジュールの関係を定義します。 実行しているシステムが正確なコントラクトを提供 **しない** 場合、モジュールは解決されません。 欠落しているパッケージを解決するほうが、実行中の非互換性の失敗を処理するよりもましです。
 
 [ワークスペース](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)ベースのプロジェクトは、ポータブルJavaコントラクトを自動的に指定します。 たとえば、モジュールがJavaポートレットAPIを使用し、Javaポートレット2.0アーティファクトに対してコンパイルする場合、パッケージのコントラクト要件がモジュールのマニフェストに追加されます。
 

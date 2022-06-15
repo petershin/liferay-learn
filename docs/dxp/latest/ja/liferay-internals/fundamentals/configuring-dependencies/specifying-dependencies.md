@@ -6,7 +6,7 @@
 
 1. `build.Gradle`ファイルを開きます。
 
-1. [`dependencies`セットがまだ存在しない場合は、それを宣言](https://docs.gradle.org/current/userguide/declaring_dependencies.html)します。
+1. [`dependencies`セットがまだ存在しない場合は、それを宣言](https://docs.gradle.org/current/userguide/declaring_dependencies.html) します。
 
     ```groovy
     dependencies {
@@ -34,9 +34,9 @@
 
 1. 満たされていない依存関係がある場合は、次のように解決します。
 
-    **モジュールの依存関係の場合は**、必要なモジュールをデプロイします。 詳細は、[アプリのインストールと管理](../../../system-administration/installing-and-managing-apps/installing-apps.md)を参照してください。
+    **モジュールの依存関係の場合は** 、必要なモジュールをデプロイします。 詳細は、[アプリのインストールと管理](../../../system-administration/installing-and-managing-apps/installing-apps.md)を参照してください。
 
-    **ライブラリの依存関係の場合は**、[Resolving Third Party Library Dependencies](./resolving-third-party-library-package-dependencies.md)の手順に従ってください。
+    **ライブラリの依存関係の場合は** 、[Resolving Third Party Library Dependencies](./resolving-third-party-library-package-dependencies.md)の手順に従ってください。
 
 依存関係の指定は、信頼できるスキルです。
 

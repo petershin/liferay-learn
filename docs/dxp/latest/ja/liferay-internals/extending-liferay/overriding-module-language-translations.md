@@ -62,9 +62,9 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 
 モジュールの場所は次のとおりです。
 
-* Liferayの[Nexusリポジトリ](https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/)
+* Liferayの [Nexusリポジトリ](https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/)
 * `[Liferay Home]/osgi/modules`
-* [`liferay-[dxp|portal]/modules/apps`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps)にあるソースコード
+* [`liferay- [dxp|portal]/modules/apps`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps) にあるソースコード
 
 言語プロパティファイルは、モジュールの`src/main/resources/content`フォルダにあります `Language[xx_XX].properties`ファイルでオーバーライドする言語ファイルを特定します。
 
@@ -81,7 +81,7 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 1. `liferay-e6u7.zip`をダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/liferay-e6u7.zip -O
     ```
 
     ```bash
@@ -112,11 +112,11 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 
 1. デフォルトの認証情報を使用してサインインします。
 
-    **ユーザー名**: `test@liferay.com`
+    **ユーザー名** : `test@liferay.com`
 
     **パスワード：** `test`
 
-1. *［Content & Data］* &rarr; *［Blogs］*に移動します。 カーソルを追加アイコン（![Add](../../images/icon-add.png)）に合わせます。 メッセージにカスタム言語ファイルが表示されます。
+1. ［**Content & Data**］ &rarr; ［**Blogs**］ に移動します。 カーソルを追加アイコン（![Add](../../images/icon-add.png)）に合わせます。 メッセージにカスタム言語ファイルが表示されます。
 
     ![カスタム言語ファイルが使用されるようになりました。](./overriding-module-language-translations/images/01.png)
 
@@ -156,13 +156,13 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 
 クラスは次のメソッドをオーバーライドします。
 
-**`handleGetObject`：**モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）で言語ファイルを検索し、キーの値を`Object`として返します。
+**`handleGetObject`：** モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）で言語ファイルを検索し、キーの値を`Object`として返します。
 
-**`getKeys`：**リソースバンドルのキーの`Enumeration`を返します。
+**`getKeys`：** リソースバンドルのキーの`Enumeration`を返します。
 
 リソースバンドルサービスコンポーネントは、デフォルトの言語ファイルをモジュールの言語ファイルオーバーライドにリダイレクトします。
 
-**注：**複数のロケールのモジュール言語ファイルをオーバーライドするには、ロケールごとに個別のリソースバンドルクラスが必要です。 たとえば、このチュートリアルコードには、英語、日本語、ポルトガル語用があります。 各リソースバンドルは、`language.id`コンポーネントのプロパティ定義と言語ファイルの修飾名パラメーターでロケールを指定する必要があります。  たとえば、日本語ロケールでは次のようになります。
+**注：** 複数のロケールのモジュール言語ファイルをオーバーライドするには、ロケールごとに個別のリソースバンドルクラスが必要です。 たとえば、このチュートリアルコードには、英語、日本語、ポルトガル語用があります。 各リソースバンドルは、`language.id`コンポーネントのプロパティ定義と言語ファイルの修飾名パラメーターでロケールを指定する必要があります。  たとえば、日本語ロケールでは次のようになります。
 
 コンポーネント定義：
 
@@ -206,7 +206,7 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 ```
 
 ```{note}
-言語キー名が同じ場合は、DXP7.4以降で言語ファイルオーバーライドを引き続き使用できます---  [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)ファイルを確認してください。 オプションとして、`ResourceBundle`クラスを削除し、`bnd.bnd`ファイルの`Provide-Capability`ヘッダーを[標準言語ファイルの上書き](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file)で示されているヘッダーに置き換えることで、モジュールを簡素化することができます。
+言語キー名が同じ場合は、DXP7.4以降で言語ファイルオーバーライドを引き続き使用できます---  [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) ファイルを確認してください。 オプションとして、`ResourceBundle`クラスを削除し、`bnd.bnd`ファイルの`Provide-Capability`ヘッダーを [標準言語ファイルの上書き](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file) で示されているヘッダーに置き換えることで、モジュールを簡素化することができます。
 ```
 
 結果を検索して、ランキングが高いリソースバンドル集約サービスを探します。

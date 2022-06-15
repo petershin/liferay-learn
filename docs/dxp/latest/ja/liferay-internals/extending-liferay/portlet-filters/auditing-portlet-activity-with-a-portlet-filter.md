@@ -1,24 +1,24 @@
 # ポートレットフィルタを使用したポートレットアクティビティの監査
 
-ポートレットフィルターは、各[ポートレットリクエスト処理フェーズ](../../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases)の開始時にリクエストと応答をインターセプトするため、そこに機能を追加できます。 これにより、レンダリング、アクション、イベント、およびリソース提供の各フェーズでのポートレットアクティビティの監査に役立ちます。
+ポートレットフィルターは、各 [ポートレットリクエスト処理フェーズ](../../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) の開始時にリクエストと応答をインターセプトするため、そこに機能を追加できます。 これにより、レンダリング、アクション、イベント、およびリソース提供の各フェーズでのポートレットアクティビティの監査に役立ちます。
 
 次の手順に従って、ポートレットアクティビティを監査するためのポートレットフィルターを作成します。
 
 1. フルネーム（`com_liferay_blogs_web_portlet_BlogsPortlet`など）でターゲットポートレットを識別します。
 
-1. 監査するポートレットフェーズを決定し、[`javax.portlet.filter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/package-summary.html)パッケージから対応するポートレットフィルターインターフェースを実装します。
+1. 監査するポートレットフェーズを決定し、 [`javax.portlet.filter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/package-summary.html) パッケージから対応するポートレットフィルターインターフェースを実装します。
 
    * アクションフェイズ - [`ActionFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ActionFilter.html)
    * イベントフェーズ - [`EventFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/EventFilter.html)
    * レンダリングフェーズ - [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html)
    * リソース提供フェーズ - [`ResourceFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ResourceFilter.html)
 
-   各ポートレットフェーズの詳細については、[Portlets](../../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases)を参照してください。
+   各ポートレットフェーズの詳細については、 [Portlets](../../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) を参照してください。
 
 1. `@Component`アノテーションを使用して、OSGiフレームワーク内のコンポーネントをポートレットフィルターとして宣言し、それを`PortletFilter.class`サービスとして識別します。
 
    ```{note}
-   ポートレットフィルターは、[OSGi Declarative Service (DS)コンポーネント](https://enroute.osgi.org/FAQ/300-declarative-services.html)です。 フィルターは、`portlet.xml`記述子または `@PortletLifecycleFilter`アノテーションを使用して、ポートレットに適用することもできます。 詳細については、ポートレット3.0仕様を参照してください。
+   ポートレットフィルターは、 [OSGi Declarative Service (DS)コンポーネント](https://enroute.osgi.org/FAQ/300-declarative-services.html) です。 フィルターは、`portlet.xml`記述子または `@PortletLifecycleFilter`アノテーションを使用して、ポートレットに適用することもできます。 詳細については、ポートレット3.0仕様を参照してください。
    ```
 
 1. `@Component`宣言に次のプロパティを入力します。
@@ -43,7 +43,7 @@
 1. サンプルモジュールをダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/portlet-filters/liferay-b4k8.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/portlet-filters/liferay-b4k8.zip -O
    ```
 
    ```bash
@@ -139,7 +139,7 @@ public class B4K8PortletFilter implements RenderFilter {
 
 このコードでは、フィルターは最初にOSGi DSコンポーネントとして宣言され、`PortletFilter.class`サービスとして識別されます。  この宣言の一部として、2つのプロパティも設定します。最初のプロパティは`BlogsPortlet`を対象とし、2番目のプロパティは重要度を`100`に設定します。
 
-ポートレットフィルターは次に[`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html)インターフェースを実装し、[`PortletFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/PortletFilter.html)インターフェースを拡張します。 このインターフェースには3つのメソッド（つまり、`init`、`destroy`、`doFilter`）が含まれており、ブログポートレットへの描画リクエストとその応答の両方でフィルタリングタスクを実行します。
+ポートレットフィルターは次に [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html) インターフェースを実装し、 [`PortletFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/PortletFilter.html) インターフェースを拡張します。 このインターフェースには3つのメソッド（つまり、`init`、`destroy`、`doFilter`）が含まれており、ブログポートレットへの描画リクエストとその応答の両方でフィルタリングタスクを実行します。
 
 * `init`：ポートレットフィルターが最初にLiferayにデプロイされ、ポートレットコンテナ内で初期化されたときに呼び出されます。
 
@@ -198,5 +198,5 @@ public class B4K8PortletFilter implements RenderFilter {
 
 ## 追加情報
 
-* [Portlets](../../../building-applications/developing-a-java-web-application/reference/portlets.md)
+* [ポートレット](../../../building-applications/developing-a-java-web-application/reference/portlets.md)
 <!--TASK: Add link to Using Portlet Filters article when finished -->

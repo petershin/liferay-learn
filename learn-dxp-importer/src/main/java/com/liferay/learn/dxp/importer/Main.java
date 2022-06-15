@@ -478,15 +478,13 @@ public class Main {
 
 		String filePath = file.getPath();
 
-		Long documentFolderId = _getDocumentFolderId(
-			FilenameUtils.getPath(
-				filePath.substring(filePath.indexOf("/"), filePath.length())));
-
 		String imageUrl = _imageUrls.get(filePath);
 
 		if (imageUrl == null) {
 			Document document = _documentResource.postDocumentFolderDocument(
-				documentFolderId,
+				_getDocumentFolderId(
+					FilenameUtils.getPath(
+						filePath.substring(filePath.indexOf("/"), filePath.length()))),
 				new Document() {
 					{
 						title = filePath;

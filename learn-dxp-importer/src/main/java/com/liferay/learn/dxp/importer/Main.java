@@ -473,6 +473,12 @@ public class Main {
 			file = new File(fileName.replaceAll("/ja/", "/en/"));
 		}
 
+		if (!file.exists()) {
+			System.out.println("Missing image file " + file);
+
+			return;
+		}
+
 		File finalFile = file;
 
 		String filePathString = file.getPath();
@@ -529,9 +535,7 @@ public class Main {
 						_visit(image);
 					}
 					catch (Exception exception) {
-						System.out.println(
-							"Error visiting image: " + exception.getMessage());
-						System.out.println("Image: " + image.getUrl());
+						exception.printStackTrace();
 					}
 				}
 

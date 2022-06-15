@@ -24,7 +24,7 @@ Follow these steps to configure caching for your Liferay system or instance:
 
 1. Set the *Max Age* for cached documents. This value determines the number of seconds a response is considered fresh. After the set time, the cached document version expires and requires refreshing. Leaving the value at `0` is equivalent to not specifying a value.
 
-1. (Optional) Enter a list of MIME types to exclude from caching (e.g., `.pdf`, `.docx`, `.jpg`).
+1. (Optional) Enter a list of MIME types to exclude from caching (e.g., `application/pdf`, `image/jpeg`, `video/mp4`).
 
    ```{tip}
    If you have MIME types that are frequently updated, you can disable caching for that type to ensure the latest version of the file is displayed to users.

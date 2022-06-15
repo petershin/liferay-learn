@@ -10,10 +10,10 @@
    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
    ```
 
-1. [アカウントAPIの基本](./liferay-t5p9.zip)をダウンロードして解凍します。
+1. [アカウントAPIの基本](./liferay-t5p9.zip) をダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
    ```
 
    ```bash
@@ -79,7 +79,7 @@
         }     
     ```
 
-1. *グローバルメニュー* &rarr; *アプリケーション* &rarr; *アカウント*に移動します。 ユーザーを作成したアカウントをクリックします。 *［Users］* タブをクリックすると、作成された新しいユーザーが表示されます。
+1. **グローバルメニュー** &rarr; **アプリケーション** &rarr; **アカウント** に移動します。 ユーザーを作成したアカウントをクリックします。 ［**Users**］ タブをクリックすると、作成された新しいユーザーが表示されます。
 
   ![新しいアカウントユーザーが追加されたことを確認します。](./account-users-and-roles-apis/images/01.png)
 
@@ -146,7 +146,7 @@ Note that the project includes the `com.liferay.headless.admin.user.client.jar` 
 他のJavaクラスの例は、このクラスと似ていますが、異なるメソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
+サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、関連する他のRESTサービスを呼び出す例です。
@@ -155,7 +155,7 @@ Note that the project includes the `com.liferay.headless.admin.user.client.jar` 
 
 以下のcURLまたはJavaコマンドを実行すると、アカウントのユーザーを一覧表示できます。 上記と同様に、 `1234` をアカウントのIDに置き換えてください。
 
-### AccountUsers_GET_FromAccount.sh
+### AccountUsers **GET** FromAccount.sh
 
 コマンド：
 
@@ -169,7 +169,7 @@ Note that the project includes the `com.liferay.headless.admin.user.client.jar` 
    :language: bash
 ```
 
-### AccountUsers_GET_FromAccount.java
+### AccountUsers **GET** FromAccount.java
 
 コマンド:
 
@@ -191,7 +191,7 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
 
 特定のアカウントに対して新しいアカウントロールを作成します。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### AccountRole_POST_ToAccount.sh
+### AccountRole **POST** ToAccount.sh
 
 コマンド:
 
@@ -205,7 +205,7 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
    :language: bash
 ```
 
-### AccountRole_POST_ToAccount.java
+### AccountRole **POST** ToAccount.java
 
 コマンド：
 
@@ -225,7 +225,7 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
 
 ユーザーを特定のアカウントロールに関連付けることができます。 `1234` をアカウントのIDに置き換えてください。 お使いのアカウントのロールのIDを`5678` に置き換えます。 `9012` は、アカウントユーザーのIDに置き換えてください。
 
-### AccountRole_POST_UserAssociation.sh
+### AccountRole **POST** UserAssociation.sh
 
 コマンド:
 
@@ -239,7 +239,7 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
    :language: bash
 ```
 
-### AccountRole_POST_UserAssociation.java
+### AccountRole **POST** UserAssociation.java
 
 コマンド:
 
@@ -259,7 +259,7 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
 
 以下のcURLまたはJavaコマンドを実行することで、アカウントのアカウントロールを一覧表示することができます。 `1234` をアカウントのIDに置き換えてください。
 
-### AccountRoles_GET_FromAccount.sh
+### AccountRoles **GET** FromAccount.sh
 
 コマンド：
 
@@ -273,7 +273,7 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
    :language: bash
 ```
 
-### AccountRoles_GET_FromAccount.java
+### AccountRoles **GET** FromAccount.java
 
 コマンド:
 
@@ -295,7 +295,7 @@ java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
 
 特定のアカウントユーザーからアカウントロールの関連付けを削除します。 `1234` をアカウントのIDに置き換えてください。 お使いのアカウントのロールのIDを`5678` に置き換えます。 `9012` は、アカウントユーザーのIDに置き換えてください。
 
-### AccountRole_DELETE_UserAssociation.sh
+### AccountRole **DELETE** UserAssociation.sh
 
 コマンド：
 
@@ -309,7 +309,7 @@ java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
    :language: bash
 ```
 
-### AccountRole_DELETE_UserAssociation.java
+### AccountRole **DELETE** UserAssociation.java
 
 コマンド
 

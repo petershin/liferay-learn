@@ -1,10 +1,10 @@
 # ユーザーのロールへの割り当て
 
-ロールの割り当てのUIの場所は、[ロールのスコープ](./understanding-roles-and-permissions.md#roles-and-scope)に対応しています。
+ロールの割り当てのUIの場所は、 [ロールのスコープ](./understanding-roles-and-permissions.md#roles-and-scope) に対応しています。
 
 ## 標準ロール
 
-グローバルスコープの通常のロールは、DXP [コントロールパネル](../../getting-started/navigating-dxp.md#control-panel)で構成できます。
+グローバルスコープの通常のロールは、DXP [コントロールパネル](../../getting-started/navigating-dxp.md#control-panel) で構成できます。
 
 | 許可範囲              | 利用可能な割り当て                                                                    |
 |:----------------- |:---------------------------------------------------------------------------- |
@@ -18,7 +18,7 @@
 
 1. 追加ボタン ![Add](../../images/icon-add.png)をクリックします。
 
-1. 担当者を選択し、*［追加］*をクリックします。
+1. 担当者を選択し、 ［**追加**］ をクリックします。
 
    グループを割り当てる場合、そのグループに割り当てられたすべてのユーザーはロールを継承します。
 
@@ -38,7 +38,7 @@
 
 1. アクションボタンをクリック ![Add](../../images/icon-actions.png)し、&rarr; ［Assign Roles］に移動します。
 
-1. 割り当てるロールを選択し、 *［完了］*をクリックします。
+1. 割り当てるロールを選択し、 ［**完了**］ をクリックします。
 
    グループを割り当てる場合、そのグループに割り当てられたすべてのユーザーはロールを継承します。
 
@@ -56,15 +56,15 @@ Liferay CE 7.3.1 GA2 および Liferay DXP 7.2 SP3+ の時点で、サイトロ�
 |:----- |:--------- |
 | 単一の組織 | 個人ユーザー    |
 
-1. ［コントロールパネル］ &rarr; ［ユーザー］ &rarr; ［Users and Organizations］に移動し、 _［Organizations］_ タブをクリックします。
+1. ［コントロールパネル］ &rarr; ［ユーザー］ &rarr; ［Users and Organizations］に移動し、 ［**Organizations**］ タブをクリックします。
 
-1. 組織のアクションボタン ![Add](../../images/icon-actions.png) をクリックし、 _［組織ロールの割当て］_を選択します。
+1. 組織のアクションボタン ![Add](../../images/icon-actions.png) をクリックし、 ［**組織ロールの割当て**］ を選択します。
 
 1. 割り当てるロールを選択すると、現在の担当者が一覧表示されます。
 
-1. 新しい担当者を追加するには、_［Available］_タブをクリックして、ロールに割り当てることができる組織メンバーを表示します。
+1. 新しい担当者を追加するには、 ［**Available**］ タブをクリックして、ロールに割り当てることができる組織メンバーを表示します。
 
-1. 担当者を選択し、［ _Update Associations_］をクリックします。
+1. 担当者を選択し、［**Update Associations**］をクリックします。
 
 ![コントロールパネルの［組織］セクションで組織ロールを割り当てます。](./assigning-users-to-roles/images/02.png)
 
@@ -82,7 +82,7 @@ Liferay CE 7.3.1 GA2 および Liferay DXP 7.2 SP3+ の時点で、サイトロ�
 
 1. アクションボタン![Add](../../images/icon-actions.png) &rarr; ［Assign Roles］をクリックします。
 
-1. 割り当てるロールを選択し、*［完了］*をクリックします。
+1. 割り当てるロールを選択し、 ［**完了**］ をクリックします。
 
    グループを割り当てる場合、そのグループに割り当てられたすべてのユーザーはロールを継承します。
 
@@ -104,9 +104,9 @@ You can assign Users to an Account Role in the Accounts Control Panel section.
 
 1. Choose the Role to assign and you see the current assignees listed.
 
-1. To add new assignees, click the _Available_ tab to see the Account members that can be assigned to the Role.
+1. To add new assignees, click the **Available** tab to see the Account members that can be assigned to the Role.
 
-1. Choose the assignees, then click _Update Associations_.
+1. Choose the assignees, then click **Update Associations** .
 
 ![Assign an Account Role within the Accounts section of the Control Panel.](./assigning-users-to-roles/images/04.png)
 -->
@@ -123,7 +123,7 @@ You can assign Users to an Account Role in the Accounts Control Panel section.
 
 1. ［プラットフォーム］セクションの［ユーザー］カテゴリを選択します。
 
-1. 左側のメニューから［ _Default User Associations_ ］をクリックします。
+1. 左側のメニューから［**Default User Associations**］をクリックします。
 
 1. 通常のロールの設定フィールドを使用して、すべての新しいユーザーが継承する必要がある通常のロールのコンマ区切りのリストを入力します。
 

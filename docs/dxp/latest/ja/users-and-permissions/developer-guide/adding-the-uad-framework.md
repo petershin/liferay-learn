@@ -14,10 +14,10 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
     別のLiferay PortalバージョンまたはLiferay DXPを実行している場合は、上記のコマンドを適宜調整してください。
 
-1. [UADフレームワーク](./liferay-h6d2.zip)をダウンロードして解凍します。
+1. [UADフレームワーク](./liferay-h6d2.zip) をダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-h6d2.zip -O
     ```
 
     ```bash
@@ -53,9 +53,9 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 1. 新規ユーザーとしてログインし、H6D2ポートレットにコンテンツを追加してください。
 
-1. 管理者としてログインし直し、 *［コントロールパネル］* &rarr; *［ユーザー］* &rarr; *［ユーザーと組織］*に移動してください。
+1. 管理者としてログインし直し、 ［**コントロールパネル**］ &rarr; ［**ユーザー**］ &rarr; ［**ユーザーと組織**］ に移動してください。
 
-1. 新しいユーザーの *アクション* アイコン (![Action](../../images/icon-actions.png)) &rarr; *［個人データの削除］*をクリックしてください。 *［OK］* をクリックして、ユーザーの無効化を確認します。
+1. 新しいユーザーの **アクション** アイコン (![Action](../../images/icon-actions.png)) &rarr; ［**個人データの削除**］ をクリックしてください。 ［**OK**］ をクリックして、ユーザーの無効化を確認します。
 
 1. UAD管理ツールが表示されます。 H6D2ポートレットでは、新規ユーザーが追加したデータの表示、匿名化、削除を行うことができます。
 

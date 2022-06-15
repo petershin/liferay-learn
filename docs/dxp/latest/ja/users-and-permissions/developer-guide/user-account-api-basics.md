@@ -12,10 +12,10 @@
    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
    ```
 
-1. [User Account API Basics](./liferay-y6q4.zip)をダウンロードし解答します。
+1. [User Account API Basics](./liferay-y6q4.zip) をダウンロードし解答します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6q4.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-y6q4.zip -O
    ```
 
    ```bash
@@ -146,7 +146,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 他のJavaクラスの例はこれと似ていますが、異なる `UserAccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
+サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他のUser RESTサービスを呼び出す例です。
@@ -155,7 +155,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 以下のcURLとJavaのコマンドで全ユーザーのリストを取得します。
 
-### Users_GET_FromInstance.sh
+### Users **GET** FromInstance.sh
 
 コマンド:
 
@@ -169,7 +169,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
    :language: bash
 ```
 
-### Users_GET_FromInstance.java
+### Users **GET** FromInstance.java
 
 コマンド：
 
@@ -191,7 +191,7 @@ JSON レスポンスには、そのインスタンスのすべての Users が�
 
 以下のcURLとJavaコマンドで特定のUserを取得します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User_GET_ById.sh
+### User **GET** ById.sh
 
 コマンド：
 
@@ -205,7 +205,7 @@ JSON レスポンスには、そのインスタンスのすべての Users が�
    :language: bash
 ```
 
-### User_GET_ById.java
+### User **GET** ById.java
 
 コマンド：
 
@@ -227,7 +227,7 @@ User は JSON レスポンスで返されます。
 
 以下のcURLとJavaコマンドで、既存のUserの部分編集を行います。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User_PATCH_ById.sh
+### User **PATCH** ById.sh
 
 コマンド：
 
@@ -241,7 +241,7 @@ User は JSON レスポンスで返されます。
    :language: bash
 ```
 
-### User_PATCH_ById.java
+### User **PATCH** ById.java
 
 コマンド：
 
@@ -263,7 +263,7 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存のUserを完全に上書きします。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User_PUT_ById.sh
+### User **PUT** ById.sh
 
 コマンド:
 
@@ -277,7 +277,7 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
    :language: bash
 ```
 
-### User_PUT_ById.java
+### User **PUT** ById.java
 
 コマンド：
 
@@ -301,7 +301,7 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
 
 以下のcURLおよびJavaコマンドで既存のUserを削除します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User_DELETE_ById.sh
+### User **DELETE** ById.sh
 
 コマンド：
 
@@ -315,7 +315,7 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
    :language: bash
 ```
 
-### User_DELETE_ById.java
+### User **DELETE** ById.java
 
 コマンド：
 

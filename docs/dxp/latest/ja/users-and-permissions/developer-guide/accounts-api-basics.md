@@ -12,10 +12,10 @@
    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
    ```
 
-1. ダウンロードして解凍する [Accounts API Basics](./liferay-t5p9.zip)。
+1. ダウンロードして解凍する [Accounts API Basics](./liferay-t5p9.zip) 。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
    ```
 
    ```bash
@@ -44,7 +44,7 @@
 
     ```
 
-3. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 新しいアカウントが追加されたことを確認してください。
+3. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 新しいアカウントが追加されたことを確認してください。
 
    ![新しいアカウントが追加されたことを確認します。](./accounts-api-basics/images/01.png)
 
@@ -111,7 +111,7 @@
 他のJavaクラスの例はこれと似ていますが、異なる `AccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
+サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の `Account` RESTサービスを呼び出す例です。
@@ -120,7 +120,7 @@
 
 以下のcURLまたはJavaコマンドを実行することで、アカウントを一覧表示することができます。
 
-### Accounts_GET_FromInstance.sh
+### Accounts **GET** FromInstance.sh
 
 コマンド：
 
@@ -134,7 +134,7 @@
    :language: bash
 ```
 
-### Accounts_GET_FromInstance.java
+### Accounts **GET** FromInstance.java
 
 コマンド:
 
@@ -160,7 +160,7 @@ java -classpath .:* Accounts_GET_FromInstance
 インスタンスのアカウントIDを取得するには、Accounts_GET_FromInstance.[java|sh]を使用します。
 ```
 
-### Account_GET_ById.sh
+### Account **GET** ById.sh
 
 コマンド:
 
@@ -174,7 +174,7 @@ java -classpath .:* Accounts_GET_FromInstance
    :language: bash
 ```
 
-### Account_GET_ById.java
+### Account **GET** ById.java
 
 コマンド：
 
@@ -196,7 +196,7 @@ java -classpath .:* -DaccountId=1234 Account_GET_ById
 
 以下のcURLおよびJavaコマンドで、既存のAccountの部分編集を行います。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account_PATCH_ById.sh
+### Account **PATCH** ById.sh
 
 コマンド:
 
@@ -210,7 +210,7 @@ java -classpath .:* -DaccountId=1234 Account_GET_ById
    :language: bash
 ```
 
-### Account_PATCH_ById.java
+### Account **PATCH** ById.java
 
 コマンド：
 
@@ -230,7 +230,7 @@ java -classpath .:* -DaccountId=1234 Account_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存のAccountを完全に上書きします。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account_PUT_ById.sh
+### Account **PUT** ById.sh
 
 コマンド:
 
@@ -244,7 +244,7 @@ java -classpath .:* -DaccountId=1234 Account_PATCH_ById
    :language: bash
 ```
 
-### Account_PUT_ById.java
+### Account **PUT** ById.java
 
 コマンド:
 
@@ -264,7 +264,7 @@ java -classpath .:* -DaccountId=1234 Account_PUT_ById
 
 以下のcURLおよびJavaコマンドで既存のAccountを削除します。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account_DELETE_ById.sh
+### Account **DELETE** ById.sh
 
 コマンド：
 
@@ -278,7 +278,7 @@ java -classpath .:* -DaccountId=1234 Account_PUT_ById
    :language: bash
 ```
 
-### Account_DELETE_ById.java
+### Account **DELETE** ById.java
 
 コマンド
 

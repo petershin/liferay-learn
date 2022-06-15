@@ -208,18 +208,6 @@ public class Main {
 		return documentFolderId;
 	}
 
-	private File _getImageFile(String fileName) {
-		File file = new File(fileName);
-
-		if (!file.exists()) {
-			fileName = fileName.replaceAll("/ja/", "/en/");
-
-			file = new File(fileName);
-		}
-
-		return file;
-	}
-
 	private Long _getStructuredContentFolderId(String fileName)
 		throws Exception {
 
@@ -481,7 +469,13 @@ public class Main {
 				image.getUrl(
 				).toStringOrNull();
 
-		File file = _getImageFile(fileName);
+		File file = new File(fileName);
+
+		if (!file.exists()) {
+			file = new File(fileName.replaceAll("/ja/", "/en/"));
+		}
+
+		File finalFile = file;
 
 		String filePath = file.getPath();
 
@@ -501,7 +495,7 @@ public class Main {
 				},
 				new HashMap<>() {
 					{
-						put("file", file);
+						put("file", finalFile);
 					}
 				});
 

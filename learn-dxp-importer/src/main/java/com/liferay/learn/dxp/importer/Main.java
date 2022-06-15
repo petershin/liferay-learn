@@ -466,8 +466,7 @@ public class Main {
 	private void _visit(Image image) throws Exception {
 		String fileName =
 			FilenameUtils.getPath(_markdownFile.getPath()) +
-				image.getUrl(
-				).toStringOrNull();
+				image.getUrl();
 
 		File file = new File(fileName);
 

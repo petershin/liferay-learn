@@ -47,7 +47,7 @@
 
 ### 最終的な権限の確認
 
-結果をUIで発表する前に、最終的な許可の確認を行います。 例えば、ユーザーが _liferay_を検索すると、検索エンジンは関連するすべてのフォーラムの投稿を返します。 検索結果は、関連するフォーラムの投稿のリストを繰り返し表示する際に、最後に投稿の権限チェックを行い、ユーザーが投稿とそのカテゴリを表示できることを確認します。 一致するフォーラムの投稿が、ユーザーに閲覧権限のないカテゴリーに存在する場合は、検索結果のリストから除外されます。
+結果をUIで発表する前に、最終的な許可の確認を行います。 例えば、ユーザーが **liferay** を検索すると、検索エンジンは関連するすべてのフォーラムの投稿を返します。 検索結果は、関連するフォーラムの投稿のリストを繰り返し表示する際に、最後に投稿の権限チェックを行い、ユーザーが投稿とそのカテゴリを表示できることを確認します。 一致するフォーラムの投稿が、ユーザーに閲覧権限のないカテゴリーに存在する場合は、検索結果のリストから除外されます。
 
 この最終的な権限チェックは、［コントロールパネル］ &rarr　［ 設定］ &rarr; ［システム設定］ &rarr; ［検索］&rarr; ［デフォルトの検索結果の権限フィルター］ で設定できます。 次の2つの設定が含まれます。
 
@@ -85,17 +85,17 @@
 
 1. 概要に含めるアセット固有のフィールドは、 `ModelSummaryContributor` Javaクラス（Liferay独自のクラスおよびサードパーティの開発者によってデプロイされたクラス）で定義されます。 このロジックの古い実装は、 `Indexer.getSummary`で提供されていました。
 
-1. 検索結果のサマリーで表示可能なフィールドは、検索結果の表示ロジック（[`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/builder/SearchResultSummaryDisplayBuilder.java) および [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java)）によって定義されます。
+1. 検索結果のサマリーで表示可能なフィールドは、検索結果の表示ロジック（ [`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/builder/SearchResultSummaryDisplayBuilder.java) および [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java) ）によって定義されます。
 
-1. [ウィジェットテンプレート](./../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) は、 [検索結果](./configuring-the-search-results-widget.md) ウィジェット（デフォルトでは_List_ ）で使用されており、利用可能なフィールドのどれがサマリーに含まれるかなど、検索結果の表示に関するすべての事柄について最終的な決定権を持っています。
+1. [ウィジェットテンプレート](./../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) は、 [検索結果](./configuring-the-search-results-widget.md) ウィジェット（デフォルトでは **List**）で使用されており、利用可能なフィールドのどれがサマリーに含まれるかなど、検索結果の表示に関するすべての事柄について最終的な決定権を持っています。
 
 ## ハイライト
 
-概要に表示される検索用語はデフォルトで<mark>ハイライト表示</mark>されています。 望ましくない場合は、 [ウィジェット設定画面](./configuring-the-search-results-widget.md#displaying-search-results)で無効にしてください。
+概要に表示される検索用語はデフォルトで<mark>ハイライト表示</mark>されています。 望ましくない場合は、 [ウィジェット設定画面](./configuring-the-search-results-widget.md#displaying-search-results) で無効にしてください。
 
 ![検索キーワードは、検索結果の一覧でハイライト表示されます。](./search-results-behavior/images/05.png)
 
-ハイライトは、なぜその結果が返されたのかを示唆する視覚的な手がかりとして役立ちますが、注意が必要です。 ヒットした商品のスコアが高く、結果的に検索結果の上位に表示されても、サマリーにハイライトが表示されないことがあります。 これは、すべてのインデックス付きフィールドが要約に表示されるわけではないためです。 Arthur C. Clarkeという名前のユーザーについて考えてみましょう。 彼は、 *acc@authors.org*の電子メールアドレスを持っており、検索可能です。 ユーザーの結果サマリーには、ユーザーのフルネームしか含まれていないため、クラークさんをメールアドレスで検索すると、ユーザーが表示されますが、用語はハイライトされません。
+ハイライトは、なぜその結果が返されたのかを示唆する視覚的な手がかりとして役立ちますが、注意が必要です。 ヒットした商品のスコアが高く、結果的に検索結果の上位に表示されても、サマリーにハイライトが表示されないことがあります。 これは、すべてのインデックス付きフィールドが要約に表示されるわけではないためです。 Arthur C. Clarkeという名前のユーザーについて考えてみましょう。 彼は、 **acc@authors.org** の電子メールアドレスを持っており、検索可能です。 ユーザーの結果サマリーには、ユーザーのフルネームしか含まれていないため、クラークさんをメールアドレスで検索すると、ユーザーが表示されますが、用語はハイライトされません。
 
 ![検索結果の中には、必ずしもハイライトされた用語がないものもあります。](./search-results-behavior/images/06.png)
 
@@ -111,12 +111,12 @@ Liferay 7.2以降では、公開コンテンツページの [ページコンテ�
 
 ![公開・非公開ページのタイトルを検索することができます。](./search-results-behavior/images/11.png)
 
-コンテンツページのインデックスに登録されているフィールドを確認するには、［検索結果］ウィジェットの _［ドキュメントフォームに結果を表示］_ の設定を有効にします。 詳しくは、 [検索エンジンのドキュメントを検査する](./configuring-the-search-results-widget.md#inspecting-search-engine-documents) をご覧ください。
+コンテンツページのインデックスに登録されているフィールドを確認するには、［検索結果］ウィジェットの ［**ドキュメントフォームに結果を表示**］ の設定を有効にします。 詳しくは、 [検索エンジンのドキュメントを検査する](./configuring-the-search-results-widget.md#inspecting-search-engine-documents) をご覧ください。
 
 ![コンテンツページのドキュメントビューを検査して、どのフィールドがインデックスされているかを確認します。](./search-results-behavior/images/12.png)
 
 ## 検索結果でオブジェクトを返す
 
-Liferay 7.4 には [Liferay Objects](../../building-applications/objects.md)という、GUI主導型アプリケーション構築のフレームワークが含まれています。 各オブジェクトの定義のフィールドは検索可能と宣言できます。オブジェクトエントリ（アプリケーションのユーザが送信したレコード）は、[クエリを実行でき](../../getting-started/searching-for-content.md#searching-for-liferay-objects)、検索結果ウィジェットに返すことが可能です。
+Liferay 7.4 には [Liferay Objects](../../building-applications/objects.md)という、GUI主導型アプリケーション構築のフレームワークが含まれています。 各オブジェクトの定義のフィールドは検索可能と宣言できます。オブジェクトエントリ（アプリケーションのユーザが送信したレコード）は、 [クエリを実行でき](../../getting-started/searching-for-content.md#searching-for-liferay-objects) 、検索結果ウィジェットに返すことが可能です。
 
 ![オブジェクトエントリには、タイトルとコンテンツの概要が表示されます。](./search-results-behavior/images/13.png)

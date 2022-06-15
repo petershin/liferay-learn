@@ -2,7 +2,7 @@
 
 CCR構成プロセスを支援するために、ここでは本ガイドの段階的な手順に従った設定例を示します。 これらの構成は可能な限り一般的なものになっていますが、環境に合わせてパスやポートなどを調整する必要があります。 さらに、インストールを完了するには特定の手順を手動で実行する必要があるため、これらの手順は段階的な手順に代わるものではありません。
 
-以下の構成は、インストールでX-Pack Securityを介した暗号化通信（TLS/SSL）とユーザー認証を有効にすることを前提としています。 詳しくは、[Securing Elasticsearch](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)を参照してください。
+以下の構成は、インストールでX-Pack Securityを介した暗号化通信（TLS/SSL）とユーザー認証を有効にすることを前提としています。 詳しくは、 [Elasticsearchの保護](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md) を参照してください。
 
 ```{tip}
 [.configファイルで提供される設定値](../../../system-administration/configuring-liferay/configuration-files and-factories/using-configuration-files.md) は、ファイルが単一のノードにデプロイされるとすぐにDXPクラスタ全体にプロパゲートされます。 しかし、各クラスタノードには同一の構成を用意することが最善の方法です。 
@@ -130,8 +130,8 @@ sslKeystorePath="/PATH/TO/elastic-nodes.p12"
 
 次の値を設定します。
 
-* _［Read from Local Clusters］_チェックボックスをオンにする
-* _［Local Cluster Configurations］_プロパティに値_localhost:9080,ccr_を設定する
+［***Read from Local Clusters**］ チェックボックスをオンにする
+［***Local Cluster Configurations**］ プロパティに値 **localhost:9080,ccr** を設定する
 
 ![システム設定からCCRを設定します。](./ccr-basic-use-case-config-reference/images/01.png)
 

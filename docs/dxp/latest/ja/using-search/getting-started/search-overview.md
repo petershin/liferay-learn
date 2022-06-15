@@ -21,7 +21,7 @@
 
 ![検索ページテンプレートは便利です。](./search-overview/images/05.png)
 
-検索ウィジェットをページに追加するには、ページの［追加］ボタンをクリックし、［ _ウィジェット_］を選択して、［検索］カテゴリを開きます。
+検索ウィジェットをページに追加するには、ページの［追加］ボタンをクリックし、［**ウィジェット**］を選択して、［検索］カテゴリを開きます。
 
 ![検索ウィジェットはたくさんあります。](./search-overview/images/07.png)
 
@@ -31,11 +31,11 @@
 
 コントロールパネルでは、検索機能の設定、接続とフィールドのマッピングの表示、検索インデックスアクションの実行が可能です。
 
-検索の設定は、コントロールパネルのシステムスコープで行うことができます。 設定のカテゴリでは、 *システム設定* &rarr; *検索*を選択してください。 検索設定画面が表示されます。
+検索の設定は、コントロールパネルのシステムスコープで行うことができます。 設定のカテゴリでは、 **システム設定** &rarr; **検索** を選択してください。 検索設定画面が表示されます。
 
 ![検索は高度な設定が可能です。](./search-overview/images/06.png)
 
-検索の管理画面では、検索の接続やフィールドのマッピングを調べたり、インデックスを実行したりすることができます。 コントロールパネルの「設定」カテゴリにある *「検索」* を選択して、これらを表示します。
+検索の管理画面では、検索の接続やフィールドのマッピングを調べたり、インデックスを実行したりすることができます。 コントロールパネルの「設定」カテゴリにある 「**検索**」 を選択して、これらを表示します。
 
 ![検索管理画面は有益で便利です。](./search-overview/images/08.png)
 
@@ -51,9 +51,9 @@
 
 検索機能は、サービス・プロバイダー・インターフェースとAPIを使って、それぞれ拡張したり呼び出したりすることができます。
 
-* サービス・プロバイダー・インターフェイス（SPI）は実装することを目的としています。 ソースコードでは、 `-spi` で終わるモジュールに含まれています（例えば、 [`portal-search-spi` module](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-spi)など）。
+* サービス・プロバイダー・インターフェイス（SPI）は実装することを目的としています。 ソースコードでは、 `-spi` で終わるモジュールに含まれています（例えば、 [`portal-search-spi` module](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-spi) など）。
 
-* APIには、独自のコードで呼び出すことができるメソッドが含まれています。 ソースコードでは、 `-api` で終わるモジュールの中にあります（例えば、 [`portal-search-api` モジュール](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-api)など）。
+* APIには、独自のコードで呼び出すことができるメソッドが含まれています。 ソースコードでは、 `-api` で終わるモジュールの中にあります（例えば、 [`portal-search-api` モジュール](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-api) など）。
 
 詳しくは、 [開発者ガイド](../developer-guide.md) をご覧ください。
 

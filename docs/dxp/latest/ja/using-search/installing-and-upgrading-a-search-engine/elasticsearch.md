@@ -31,7 +31,7 @@ elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
 Elasticsearchは、Liferayがデフォルトで使用する、拡張性の高いフルテキスト検索エンジンです。 ElasticsearchはLiferayにバンドルされており、本番環境以外の目的で使用されます。 本番環境では、Liferayは別のリモートサーバーで動作するElasticsearchを必要とします。
 
 ```{important}
-Liferayのバージョンと互換性のあるElasticsearchのバージョンとサーバー構成は、常に[互換性マトリックス](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix)で確認してください。
+Liferayのバージョンと互換性のあるElasticsearchのバージョンとサーバー構成は、常に [互換性マトリックス](https://help.liferay.com/hc/ja/sections/360002103292-Compatibility-Matrix) で確認してください。
 ```
 
 ```{important}
@@ -47,7 +47,7 @@ Liferay 7.2および7.3では、Elasticsearch 7をサポートし、認証およ
 - [Elasticsearchインストールのトラブルシューティング](elasticsearch/troubleshooting-elasticsearch-installation.md)
 - [サイドカーまたはEmbedded モードのElasticsearchの使用](elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md)
 
-- _[Liferayのクラスタリング]_ [Liferayクラスターに検索エンジンを追加する](../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md#start-a-search-engine-server)
+- [**Liferayのクラスタリング**] [Liferayクラスターに検索エンジンを追加する](../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md#start-a-search-engine-server)
 
 ## アップグレード
 

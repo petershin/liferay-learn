@@ -6,7 +6,7 @@ Elasticsearchのような検索エンジンには、一般的な検索目的に�
 
 LES Learning to Rankは、機械学習を利用して検索結果のランキングを向上させます。 データサイエンティストの専門知識と機械学習を組み合わせて、検索クエリに適用されるよりスマートなスコアリング関数を生成します。
 
-LES Learning to Rankには、Liferay Enterprise Searchのサブスクリプションが必要です。 [Elasticsearch Learning to Rankのプラグイン](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/index.html)はElasticによって作成されたものではなく、LiferayでサポートされているすべてのElasticsearchバージョンに対応したビルド済みのプラグインはないことを理解することが重要です。 詳細は、[LES互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-Enterprise-Search)を参照してください。
+LES Learning to Rankには、Liferay Enterprise Searchのサブスクリプションが必要です。 [Elasticsearch Learning to Rankのプラグイン](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/index.html) はElasticによって作成されたものではなく、LiferayでサポートされているすべてのElasticsearchバージョンに対応したビルド済みのプラグインはないことを理解することが重要です。 詳細は、 [LES互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651#Liferay-Enterprise-Search) を参照してください。
 
 ## 検索ページでのLearning to Rankを無効にする
 
@@ -18,7 +18,7 @@ LES Learning to Rankがデプロイされているが、（おそらくはソー
 
 1. クリックしてウィジェットの設定画面を開きます
 
-   _このページでは、低レベル検索オプションを設定します。_
+**このページでは、低レベル検索オプションを設定します。**
 
 1. ［除外する貢献者］フィールドに、次のように入力します
 
@@ -30,17 +30,17 @@ LES Learning to Rankがデプロイされているが、（おそらくはソー
 
 Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエリを再スコアリングするには、いくつかの前提条件があります。
 
-- Learning to Rankには、[Liferay Enterprise Search](https://www.liferay.com/products/dxp/enterprise-search)（LES）サブスクリプションが必要です。 サブスクリプションを取得したら、[Liferay Enterprise Search Learning to Rank](https://customer.liferay.com/en/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191013&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKGファイルをダウンロードして[インストールします](../../system-administration/installing-and-managing-apps/installing-apps.md)。
+- Learning to Rankには、 [Liferay Enterprise Search](https://www.liferay.com/products/dxp/enterprise-search) （LES）サブスクリプションが必要です。 サブスクリプションを取得したら、 [Liferay Enterprise Search Learning to Rank](https://customer.liferay.com/en/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118191013& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKGファイルをダウンロードして[インストールします](../../system-administration/installing-and-managing-apps/installing-apps.md)。
 
 - データがインデックス化されているリモートのElasticsearchサーバー。
 
-- [Elasticsearch Learning to Rank](https://github.com/o19s/elasticsearch-learning-to-rank)プラグインの対応するバージョンがElasticsearchにインストールされている。
+- [Elasticsearch Learning to Rank](https://github.com/o19s/elasticsearch-learning-to-rank) プラグインの対応するバージョンがElasticsearchにインストールされている。
 
-- [トレーニング済みモデル](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/training-models.html)がLearning to Rankプラグインにアップロードされている。
+- [トレーニング済みモデル](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/training-models.html) がLearning to Rankプラグインにアップロードされている。
 
 ## 技術概要
 
-通常の検索では、ユーザーはLiferay DXPの[検索バー](../getting-started/searching-for-content.md)を介して検索エンジンにクエリを送信します。 返される結果の順序は、検索エンジンの[関連性スコアリングアルゴリズム](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-similarity.html#bm25)によって決定されます。
+通常の検索では、ユーザーはLiferay DXPの[検索バー](../getting-started/searching-for-content.md)を介して検索エンジンにクエリを送信します。 返される結果の順序は、検索エンジンの [関連性スコアリングアルゴリズム](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-similarity.html#bm25) によって決定されます。
 
 ここで、Learning to Rankが介入し、そのプロセスが変わります。
 
@@ -48,30 +48,30 @@ Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエ�
 
 1. LiferayはクエリをElasticsearchに送信し、検索エンジンの関連性アルゴリズムを使用して、通常どおり最初の1000件の結果を取得します。
 
-1. 上位1000件の結果は検索ヒットとして返されませんが、Elasticsearchはそれらの結果を使用して、[再スコアリング機能](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html#rescore-top-n-with-sltr)を介して[再スコアリング](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-request-body.html#request-body-search-rescore)を行います。
+1. 上位1000件の結果は検索ヒットとして返されませんが、Elasticsearchはそれらの結果を使用して、 [再スコアリング機能](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html#rescore-top-n-with-sltr) を介して [再スコアリング](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-request-body.html#request-body-search-rescore) を行います。
 
-1. 結果は、再スコアリングに使用するキーワードとトレーニング済みモデルを含む[SLTRクエリ](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html)によって再スコアリングされます。
+1. 結果は、再スコアリングに使用するキーワードとトレーニング済みモデルを含む [SLTRクエリ](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html) によって再スコアリングされます。
 
 1. トレーニング済みのモデルが結果を再ランク付けすると、Liferayの[検索結果](../search-pages-and-widgets/search-results/search-results.md)に新しい順序で返されます。
 
-これは上に挙げたソート済みリストの中の小さな点にすぎませんが、このパラダイムでの作業の多くは、トレーニングされたモデルを作成して磨きをかけることです。 それは本セクションの範囲外ですが、Liferayのクエリで機械学習の魅力を調和させるために、すべての要素を適切に整えるのに役立つ情報を以下に示します。 以下は、_モデルのトレーニング_を構成する内容の概要です。
+これは上に挙げたソート済みリストの中の小さな点にすぎませんが、このパラダイムでの作業の多くは、トレーニングされたモデルを作成して磨きをかけることです。 それは本セクションの範囲外ですが、Liferayのクエリで機械学習の魅力を調和させるために、すべての要素を適切に整えるのに役立つ情報を以下に示します。 以下は、 **モデルのトレーニング** を構成する内容の概要です。
 
 ## モデルトレーニング
 
 優れた判断リストと優れた機能セットがLearning to Rankアルゴリズムに供給されると、有用なトレーニング済みモデルが生成されます（これはパズルの機械学習の部分です）。 したがって、以下のものを組み立てる必要があります。
 
-- トレーニングモデルの作成に使用するLearning to Rankアルゴリズム。 このデモンストレーションでは、[RankLib](https://sourceforge.net/p/lemur/wiki/RankLib/)を使用します。
+- トレーニングモデルの作成に使用するLearning to Rankアルゴリズム。 このデモンストレーションでは、 [RankLib](https://sourceforge.net/p/lemur/wiki/RankLib/) を使用します。
 
-- 検索結果の等級付けされたリストを含む_判断リスト_。 アルゴリズムは、判断リストの順序に従ったモデルを生成します。
+- 検索結果の等級付けされたリストを含む **判断リスト** 。 アルゴリズムは、判断リストの順序に従ったモデルを生成します。
 
-- Learning to Rankアルゴリズムに渡すすべての_機能_を含む機能セット。判断リストと組み合わせて使用し、信頼できるモデルを作成します。 この例では、Liferayの機能セットの例を示します。
+- Learning to Rankアルゴリズムに渡すすべての **機能** を含む機能セット。判断リストと組み合わせて使用し、信頼できるモデルを作成します。 この例では、Liferayの機能セットの例を示します。
 
 
-[判断リスト](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#judgments-expression-of-the-ideal-ordering)は、等級付けされた検索結果のリストです。
+[判断リスト](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#judgments-expression-of-the-ideal-ordering) は、等級付けされた検索結果のリストです。
 
-[機能](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#features-the-raw-material-of-relevance)は、アルゴリズムが結果をよりスマートな方法でスコアリングできる関数を作成するために使用する変数です。 関連する機能を十分に、あるいは正しく与えなければ、モデルは結果を改善するのに十分な「賢さ」を持ちません。
+[機能](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#features-the-raw-material-of-relevance) は、アルゴリズムが結果をよりスマートな方法でスコアリングできる関数を作成するために使用する変数です。 関連する機能を十分に、あるいは正しく与えなければ、モデルは結果を改善するのに十分な「賢さ」を持ちません。
 
-始める前に、Liferayと通信するリモート[Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch.html)クラスターが必要です。 詳細は、[検索エンジンの互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360016511651)を参照してください。
+始める前に、Liferayと通信するリモート [Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch.html) クラスターが必要です。 詳細は、 [検索エンジンの互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
 
 ```{tip}
 [Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md) を使用して、最も一般的なクエリを発見します（これはLearning to Rankモデルを作成するクエリを決定する一つの方法となりえます）。
@@ -79,7 +79,7 @@ Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエ�
 
 ## ステップ1：ElasticsearchにLearning to Rankプラグインをインストールする
 
-Learning to Rankプラグインのインストールについては、[Elasticsearch Learning to Rankプラグインのドキュメント](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/#installing)を参照してください。
+Learning to Rankプラグインのインストールについては、 [Elasticsearch Learning to Rankプラグインのドキュメント](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/#installing) を参照してください。
 
 インストールするプラグインのバージョンに応じて、次のようなコマンドを実行します。
 
@@ -87,11 +87,11 @@ Learning to Rankプラグインのインストールについては、[Elasticse
 ./bin/elasticsearch-plugin install https://github.com/o19s/elasticsearch-learning-to-rank/releases/download/v1.5.7-es7.13.4/ltr-plugin-v1.5.7-es7.13.4.zip
 ```
 
-[ElasticsearchクラスターでX-Pack Security](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)を使用している場合は、[追加の手順が必要になる場合があります。](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/x-pack.html)
+[ElasticsearchクラスターでX-Pack Security](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)を使用している場合は、 [追加の手順が必要になる場合があります。](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/x-pack.html)
 
 ## ステップ2：モデルのトレーニングとアップロード
 
-モデルのトレーニングに関する詳細な手順は、このガイドの範囲外です。 トレーニングには、適切なツールとモデルを推奨できるデータサイエンティストの介入が必要です。 自分に合ったものを使用してください。 そうすることで、選択したトレーニングツールで使用できる[判断リスト](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#judgments-expression-of-the-ideal-ordering)と[機能セット](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/building-features.html)をコンパイルして、ほぼ確実に適切な検索結果を生成するモデルを生成できます。 モデルを作成したら、それをLearning to Rankプラグインにアップロードします。
+モデルのトレーニングに関する詳細な手順は、このガイドの範囲外です。 トレーニングには、適切なツールとモデルを推奨できるデータサイエンティストの介入が必要です。 自分に合ったものを使用してください。 そうすることで、選択したトレーニングツールで使用できる [判断リスト](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#judgments-expression-of-the-ideal-ordering) と [機能セット](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/building-features.html) をコンパイルして、ほぼ確実に適切な検索結果を生成するモデルを生成できます。 モデルを作成したら、それをLearning to Rankプラグインにアップロードします。
 
 ## ステップ3：モデルをLearning to Rankプラグインにアップロードする
 
@@ -170,7 +170,7 @@ Learning to Rankプラグインのインストールについては、[Elasticse
    }
     ```
 
-Liferay自体で行うことはあまりないため、この一連の指示は非常に高レベルです。 必要なものについての詳細は、[Learning to Rankプラグインのドキュメント](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/index.html)を参照してください。
+Liferay自体で行うことはあまりないため、この一連の指示は非常に高レベルです。 必要なものについての詳細は、 [Learning to Rankプラグインのドキュメント](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/index.html) を参照してください。
 
 ```{tip}
 判定リストを作り直してください。

@@ -1,6 +1,6 @@
 # 検索ブループリント要素のリファレンス
 
-要素は、[検索ブループリント](understanding-search-blueprints.md#what-is-a-blueprint)の基本的な構成要素の 1 つです。 利用可能なすべての要素を調べるには、グローバルメニュー (![Global](../../../images/icon-applications-menu.png)) &rarr; ［アプリケーション］ &rarr; ［ブループリント］ に移動してください。 ［要素］タブを開き、目的の要素を見つけ、それをクリックします。 要素の完全なJSON表現が表示されます。
+要素は、 [検索ブループリント](understanding-search-blueprints.md#what-is-a-blueprint) の基本的な構成要素の 1 つです。 利用可能なすべての要素を調べるには、グローバルメニュー (![Global](../../../images/icon-applications-menu.png)) &rarr; ［アプリケーション］ &rarr; ［ブループリント］ に移動してください。 ［要素］タブを開き、目的の要素を見つけ、それをクリックします。 要素の完全なJSON表現が表示されます。
 
 要素をブループリントに追加するには、[ブループリントを作成](./creating-and-managing-search-blueprints.md)し、その［クエリビルダー］ &rarr; ［クエリ要素サイドバー］で要素を検索して追加する方法を使用します。
 
@@ -10,26 +10,26 @@
 
 各要素は、ブループリントのタイトルバーにあるトグルスイッチを使用して、ブループリントで無効または有効にすることができます。 ブループリントの要素を効率的に表示するには、要素のタイトルバーにある下矢印アイコン（![Down Arrow Icon](../../../images/icon-angle-down.png)）を使用して要素のコンテンツを折りたたむことができます。
 
-各要素には設定オプションがあり、その多くはElasticsearch[Query DSL documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl.html)で定義されているクエリの属性に直接対応しています。 特定のクエリタイプへのリンクは、適宜、以下に記載されています。
+各要素には設定オプションがあり、その多くはElasticsearch [Query DSL documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl.html) で定義されているクエリの属性に直接対応しています。 特定のクエリタイプへのリンクは、適宜、以下に記載されています。
 
 ## いくつかの結果をブーストする
 
-`boost`を[Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html#term-field-params)クエリに設定すると、一致する結果の関連性スコアを調整します。 1.0を超えるとスコアが増加し、0から1.0の間の値ではスコアが減少します。
+`boost`を [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html#term-field-params) クエリに設定すると、一致する結果の関連性スコアを調整します。 1.0を超えるとスコアが増加し、0から1.0の間の値ではスコアが減少します。
 
-特定の結果をブーストする場合、ブースト値を調整する必要があります。 [プレビューサイドバー](creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar)を使用して、ドキュメントがどのようにスコアリングされているかを検査し、ブースト値を微調整します。
+特定の結果をブーストする場合、ブースト値を調整する必要があります。 [プレビューサイドバー](creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) を使用して、ドキュメントがどのようにスコアリングされているかを検査し、ブースト値を微調整します。
 
 ### ［Boost All Keywords Match］
 
-複数の一致するクエリを使用すると、検索キーワードが指定されたフィールドに一致する場合、検索結果をブーストします。 要素の複数の一致するクエリ句を全体としてブーストすることも、個々のフィールドへの一致をブーストすることも可能です。 _［Text to Match］_設定フィールドはオプションです。空白のままだと、検索ユーザーのキーワードがクエリに渡されます。
+複数の一致するクエリを使用すると、検索キーワードが指定されたフィールドに一致する場合、検索結果をブーストします。 要素の複数の一致するクエリ句を全体としてブーストすることも、個々のフィールドへの一致をブーストすることも可能です。 ［**Text to Match**］ 設定フィールドはオプションです。空白のままだと、検索ユーザーのキーワードがクエリに渡されます。
 
 ![複数の一致するクエリの一致を柔軟にブーストすることができます。](./search-blueprints-elements-reference/images/01.png)
 
 - ［Field］：検索するフィールドと、それらを個別にブーストするかどうかを選択します。
-- ［Match Type］：Elasticsearchが内部で処理するクエリの方法を指定します。 _Most Fields_ は、指定したフィールドごとにMatchクエリを作成し、スコアを結合するというもので、おそらく最も基本的なものでしょう。
+- ［Match Type］：Elasticsearchが内部で処理するクエリの方法を指定します。 **Most Fields** は、指定したフィールドごとにMatchクエリを作成し、スコアを結合するというもので、おそらく最も基本的なものでしょう。
 - 「Boost］：一致する結果の関連性スコアを調整します。 デフォルト値は1.0なので、1.0を超えるとスコアが上がり、0〜1.0だとスコアが下がります。
 - ［Text to Match］：ハードコードされたキーワードに一致させるか、空白のままユーザーの検索キーワードに一致させるかを選択します。
 
-_外部参照_: Elasticsearch[Multi-match](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html)クエリのドキュメントを参照してください。
+**外部参照** : Elasticsearch [Multi-match](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) クエリのドキュメントを参照してください。
 
 ### アセットタイプのブースト
 
@@ -43,7 +43,7 @@ _外部参照_: Elasticsearch[Multi-match](https://www.elastic.co/guide/en/elast
 
 ユーザーの検索キーワードが設定したキーワードのいずれかを含む場合、カテゴリ内のコンテンツをブーストします。 ［キーワード］と［アセットカテゴリーID］は必須項目です。
 
-Elasticsearchのインデックスをクエリして（例えば Kibana を使って）アセットカテゴリーの検索ドキュメントを見つけることができ、それには `assetCategoryId`が含まれます。 この場合、検索されるカテゴリーのタイトルは_ビジネス_です。
+Elasticsearchのインデックスをクエリして（例えば Kibana を使って）アセットカテゴリーの検索ドキュメントを見つけることができ、それには `assetCategoryId`が含まれます。 この場合、検索されるカテゴリーのタイトルは **ビジネス** です。
 
 ```json
 GET /_search
@@ -122,13 +122,13 @@ GET /_search
 - 修飾子：フィールドの値に適用する修飾子を使用します。デフォルトは平方根です。 その他、None、log、log1p、log2p、ln、ln1p、ln2p、正方形、逆数があります。
 - ブースト：ブーストの初期値を設定します。デフォルトは10です。 ブースト値と関数スコアを掛けて、最終的なスコア調整値を取得します。
 
-_例：_あるドキュメントのバージョン数が`8`で、要素にデフォルト値が使用されていた場合、そのドキュメントのスコアは以下のように計算されます。
+**例：** あるドキュメントのバージョン数が`8`で、要素にデフォルト値が使用されていた場合、そのドキュメントのスコアは以下のように計算されます。
 
 `10 * (sqrt (1.2 * 8))`
 
 したがって、この要素のために、このドキュメントには、約`30`のスコアが追加されることになります。
 
-_外部参照：_ Elasticsearch [Function score query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html)のドキュメントを参照してください。
+**外部参照：** Elasticsearch [Function score query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) のドキュメントを参照してください。
 
 ### ［Boost Freshness］
 
@@ -143,7 +143,7 @@ _外部参照：_ Elasticsearch [Function score query](https://www.elastic.co/gu
 - スケールは、オフセットに追加され、結果の関連性が減衰パラメータに等しくなる今から（過去の）日数を決定します。
 - ブーストは、定義されたスケール内の結果をブーストするための開始値です。
 
-_外部参照：_ 詳細はElasticsearchの [Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) のドキュメントを参照してください。
+**外部参照：** 詳細はElasticsearchの [Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) のドキュメントを参照してください。
 
 ### ［Boost Longer Contents］
 
@@ -159,7 +159,7 @@ _外部参照：_ 詳細はElasticsearchの [Function Score Query](https://www.e
 - 係数は、フィールドの値に乗算する値です。
 - 修飾子は、フィールドの値を変更する際に使用する関数を定義します。
 
-_外部参照：_ 詳細はElasticsearchの [Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) のドキュメントを参照してください。
+**外部参照：** 詳細はElasticsearchの [Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) のドキュメントを参照してください。
 
 ### 近接性のブースト
 
@@ -173,7 +173,7 @@ _外部参照：_ 詳細はElasticsearchの [Function Score Query](https://www.e
 
 タグに完全一致するキーワードでコンテンツをブーストします。 検索ユーザーのキーワードと`assetTagNames.raw`フィールドのコンテンツを比較し（これは`assetTagNames`テキストフィールドからキーワードフィールドを作る）、ドキュメント内で用語クエリーが一致すれば、そのスコアを設定した値でブーストします。
 
-_外部参照：_ Elasticsearch [Term query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html)のドキュメントを参照してください。
+**外部参照：** Elasticsearch [Term query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html) のドキュメントを参照してください。
 
 ### キーワードの一致でWebコンテンツをブーストする
 
@@ -181,7 +181,7 @@ _外部参照：_ Elasticsearch [Term query](https://www.elastic.co/guide/en/ela
 
 ## 結果のフィルタリング
 
-検索結果をフィルタリングする場合、ドキュメントのフィールドがクエリに一致するかというイエスかノーかの質問をすることになります。 この場合、関連性（＝どの程度マッチしているか）は気にしないようにします。 検索結果に表示される範囲を絞り込むために、いくつかのフィルタリング要素が提供されています。 これらはすべて、メインの[検索リクエスト](./understanding-search-blueprints.md#understanding-the-search-request)の`フィルタ`ブロックにクエリを提供します。
+検索結果をフィルタリングする場合、ドキュメントのフィールドがクエリに一致するかというイエスかノーかの質問をすることになります。 この場合、関連性（＝どの程度マッチしているか）は気にしないようにします。 検索結果に表示される範囲を絞り込むために、いくつかのフィルタリング要素が提供されています。 これらはすべて、メインの [検索リクエスト](./understanding-search-blueprints.md#understanding-the-search-request) の`フィルタ`ブロックにクエリを提供します。
 
 ### 用語の完全一致による絞り込み
 
@@ -189,13 +189,13 @@ _外部参照：_ Elasticsearch [Term query](https://www.elastic.co/guide/en/ela
 
 ![指定されたフィールドに完全に一致する結果をフィルタリングします。](./search-blueprints-elements-reference/images/09.png)
 
-_外部参照：_ [Elasticsearch Terms query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-terms-query.html)のドキュメントを参照してください。
+**外部参照：** [Elasticsearch Terms query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-terms-query.html) のドキュメントを参照してください。
 
 ### 一定期間内に作成されたコンテンツに限定して検索する
 
 Rangeクエリで結果をフィルタリングします。 時間範囲を設定します。
 
-_外部参照：_ [Elasticsearch Range query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-range-query.html) のドキュメントを参照してください。
+**外部参照：** [Elasticsearch Range query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-range-query.html) のドキュメントを参照してください。
 
 ### HEADバージョンに限定して検索する
 
@@ -217,13 +217,13 @@ PDFファイルに限定して検索します。 この要素は、`mimeType`フ
 
 公開されているコンテンツに限定して検索します。 この要素は、Liferay検索フレームワークのクエリ句の機能を複製したもので、高度なユースケースで最も有用です。 例えば、Liferayの検索フレームワークがデフォルトの検索句を提供しないようにした場合、この要素を使用して失われた機能の一部を復元することが可能です。
 
-この要素は、`status`フィールドの用語クエリを使用して結果をフィルタリングし、その値を[Liferayのワークフローシステム](../../../process-automation/workflow/introduction-to-workflow.md#understanding-workflow-status)における公開コンテンツを示す`0`というハードコード値に一致させます。
+この要素は、`status`フィールドの用語クエリを使用して結果をフィルタリングし、その値を [Liferayのワークフローシステム](../../../process-automation/workflow/introduction-to-workflow.md#understanding-workflow-status) における公開コンテンツを示す`0`というハードコード値に一致させます。
 
 ### 現在のサイトに限定して検索する
 
 現在のサイトに限定して検索します。 この要素は、`scopeGroupId`フィールドの用語クエリを使用して結果をフィルタリングし、その値をコンテキストパラメータ`context.scope_groupId`と一致させます。
 
-この要素の機能は、[検索バー](../../getting-started/searching-for-content.md#configuring-the-search-bar)のスコープ設定オプションと重複しています。
+この要素の機能は、 [検索バー](../../getting-started/searching-for-content.md#configuring-the-search-bar) のスコープ設定オプションと重複しています。
 
 ### ［Limit Search to These Sites］
 
@@ -233,13 +233,13 @@ PDFファイルに限定して検索します。 この要素は、`mimeType`フ
 
 サイトのIDは、その［サイト設定］ &rarr; ［サイト設定］画面に表示されます。
 
-この要素の機能は、[検索バー](../../getting-started/searching-for-content.md#configuring-the-search-bar)のスコープ設定オプションと重複しています。 この要素が動作するためには、検索バーのスコープを_［すべて］_に設定する必要があります。
+この要素の機能は、 [検索バー](../../getting-started/searching-for-content.md#configuring-the-search-bar) のスコープ設定オプションと重複しています。 この要素が動作するためには、検索バーのスコープを ［**すべて**］ に設定する必要があります。
 
 ## 一部の結果を隠す
 
 クエリをMust Not occurrence句を含むブールクエリで折り返すことで、クエリにマッチした場合に結果を非表示にすることができます。
 
-_外部参照：_ [Elasticsearch Boolean query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html)のドキュメントを参照してください。
+**外部参照：** [Elasticsearch Boolean query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html) のドキュメントを参照してください。
 
 ### ［Hide by Exact Term Match］
 
@@ -279,7 +279,7 @@ Elasticsearch DSLのクエリ本体をそのまま要素に貼り付けます。
 
 ![Elasticsearchのクエリ本体を要素に貼り付けます。](./search-blueprints-elements-reference/images/12.png)
 
-_外部参照：_  [Elasticsearch Wrapper query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-wrapper-query.html) のドキュメントをご参照ください。
+**外部参照：** [Elasticsearch Wrapper query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-wrapper-query.html) のドキュメントをご参照ください。
 
 ### スケジューリングアウェア
 
@@ -289,7 +289,7 @@ _外部参照：_  [Elasticsearch Wrapper query](https://www.elastic.co/guide/en
 
 1つまたは複数のフィールドにマッチさせるには、検索文字列のクエリ構文を使用します。 検索キーワードがすべて一致しなければならない（AND）か、1つだけ一致しなければならない（OR）かを決定する際に使用するデフォルトのブール演算子（ORまたはAND）を指定します。 この要素では、ブール演算子やワイルドカードなどを使って、より高度な検索キーワードを入力することができます。
 
-_外部参照：_ [Elasticsearch Query String query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html#query-string-syntax) のドキュメントをご覧ください。
+**外部参照：** [Elasticsearch Query String query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html#query-string-syntax) のドキュメントをご覧ください。
 
 ### ステージングアウェア
 
@@ -297,18 +297,18 @@ _外部参照：_ [Elasticsearch Query String query](https://www.elastic.co/guid
 
 ### 複数フィールドのテキストマッチ
 
-複数のテキストフィールドでテキストマッチを検索します。 検索ユーザーのキーワードか、要素設定で設定したText to Matchのどちらかに一致させます。 これは、複数のフィールドに対して高度に設定可能なフルテキストクエリを追加するもので、要素の[マルチツール](https://en.wikipedia.org/wiki/Swiss_Army_knife#Cultural_impact)です。
+複数のテキストフィールドでテキストマッチを検索します。 検索ユーザーのキーワードか、要素設定で設定したText to Matchのどちらかに一致させます。 これは、複数のフィールドに対して高度に設定可能なフルテキストクエリを追加するもので、要素の [マルチツール](https://en.wikipedia.org/wiki/Swiss_Army_knife#Cultural_impact) です。
 
 - 検索するフィールドを選択するには、フィールド設定を使用します。 分析済みのテキストフィールドのみを選択する。
 - 演算子は、分析したすべての検索キーワードを各フィールドに表示するか(AND)、1つだけを各フィールドに表示するか(OR)を決定します。 正確な動作は、マッチタイプの影響を受けます。
-- マッチタイプは、Elasticsearchが内部的にクエリを処理する方法を決定します。 _Most Fields_はおそらく最も基本的なもので、指定したフィールドごとにMatchクエリを作成し、そのスコアを結合するものです。
-- あいまいさは、不正確な一致に関する動作を設定します。 0, 1, 2を設定すると、クエリが一致を返すことができる[レーベンシュタイン編集距離](https://en.wikipedia.org/wiki/Levenshtein_distance)を直接指定することができます。 AUTOは、検索される用語の長さに基づいて編集距離を生成します。 詳しくは、[Elasticsearch fuzziness documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/common-options.html#fuzziness)をご覧ください。
-- 最低必須一致は、検索で返されるドキュメントのために、一致しなければならない最小の句の数を設定します。 詳しくは、[Elasticsearchのminimum_should_match](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-minimum-should-match.html)のドキュメントをご覧ください。
+- マッチタイプは、Elasticsearchが内部的にクエリを処理する方法を決定します。 **Most Fields** はおそらく最も基本的なもので、指定したフィールドごとにMatchクエリを作成し、そのスコアを結合するものです。
+- あいまいさは、不正確な一致に関する動作を設定します。 0, 1, 2を設定すると、クエリが一致を返すことができる [レーベンシュタイン編集距離](https://en.wikipedia.org/wiki/Levenshtein_distance) を直接指定することができます。 AUTOは、検索される用語の長さに基づいて編集距離を生成します。 詳しくは、 [Elasticsearch fuzziness documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/common-options.html#fuzziness) をご覧ください。
+- 最低必須一致は、検索で返されるドキュメントのために、一致しなければならない最小の句の数を設定します。 詳しくは、 [Elasticsearchのminimum **should** match](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-minimum-should-match.html) のドキュメントをご覧ください。
 - スロープは、語句および語句プリフィックスマッチタイプで使用されます。 語句がずれても一致する単語数を指定することで、不正確なフレーズの一致が可能になります。 例えば、語句タイプでスロープが1の場合、「liferayブログ」を検索しても、「Liferay DXPブログ」を含むフィールドに一致する可能性があります。
 - この要素が提供する句に一致するドキュメントをブーストするようブーストを設定します。
 - クエリ句を一致させる値をハードコードしたい場合は、Text to Matchを設定します。 ユーザーのキーワードで検索したいだけの場合は、空欄にしてください。
 
-_外部参照：_ [Elasticsearch Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html)のドキュメントをご覧ください。
+**外部参照：** [Elasticsearch Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) のドキュメントをご覧ください。
 
 ## 追加情報
 

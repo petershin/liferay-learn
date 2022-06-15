@@ -3,7 +3,7 @@
 オンプレミスでElasticsearchをインストール、設定、起動する方法は次のとおりです。
 
 ```{important}
-Liferay 7.3 および Liferay 7.4 の初期バージョン（Liferay DXP 7.4 U16/Liferay Portal 7.4 GA16 まで）にバンドルされている Sidecar Elasticsearch サーバは、Elasticsearch OSS ディストリビューションを使用しています。 OSS版を本番用にインストールしないでください。 LiferayをElasticsearchで安全に運用するためには、最低でもElasticsearchのBasicレベルをインストールする必要があります。 詳細は、[Elasticのサブスクリプションページ](https://www.elastic.co/subscriptions) をご覧ください。
+Liferay 7.3 および Liferay 7.4 の初期バージョン（Liferay DXP 7.4 U16/Liferay Portal 7.4 GA16 まで）にバンドルされている Sidecar Elasticsearch サーバは、Elasticsearch OSS ディストリビューションを使用しています。 OSS版を本番用にインストールしないでください。 LiferayをElasticsearchで安全に運用するためには、最低でもElasticsearchのBasicレベルをインストールする必要があります。 詳細は、 [Elasticのサブスクリプションページ](https://www.elastic.co/subscriptions) をご覧ください。
 ```
 
 ```{note}
@@ -27,7 +27,7 @@ localhostまたはDockerコンテナを使用してテスト環境をセット�
 
 ### mmapの調整
 
-Elasticsearchは、ほとんどのオペレーティングシステムのデフォルトよりも多くの_mmapカウント_を必要とします（インデックスを保持するディレクトリをメモリにマッピングするため）。 Linuxでは、rootユーザーとして、次のように実行します。
+Elasticsearchは、ほとんどのオペレーティングシステムのデフォルトよりも多くの **mmapカウント** を必要とします（インデックスを保持するディレクトリをメモリにマッピングするため）。 Linuxでは、rootユーザーとして、次のように実行します。
 
 ```bash
 sysctl -w vm.max_map_count=262144
@@ -35,13 +35,13 @@ sysctl -w vm.max_map_count=262144
 
 ## Elasticsearchのインストール
 
-1. [ElasticのWebサイト](https://www.elastic.co)からElasticsearchアーカイブ（OSSバージョンではない）をダウンロードします。
+1. [ElasticのWebサイト](https://www.elastic.co) からElasticsearchアーカイブ（OSSバージョンではない）をダウンロードします。
 
     ```{important}
-    [お使いのLiferayのバージョンと互換性のある](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors)最新のElasticsearchアーカイブをダウンロードしてください。
+    [お使いのLiferayのバージョンと互換性のある](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors) 最新のElasticsearchアーカイブをダウンロードしてください。
     ```
 
-1. Elasticsearchを実行するローカルフォルダにアーカイブの内容を展開します。 このフォルダが*Elasticsearchホーム*です。
+1. Elasticsearchを実行するローカルフォルダにアーカイブの内容を展開します。 このフォルダが **Elasticsearchホーム** です。
 
 1. `［Elasticsearch Home］/bin`フォルダで次のコマンドを実行して、必要なElasticsearchプラグインをインストールします。
 
@@ -67,7 +67,7 @@ sysctl -w vm.max_map_count=262144
 
 シングルノードおよびマルチノードのElasticsearchクラスター構成の例を次に示します。
 
-Elasticsearch サーバーとの通信の認証と暗号化については、[Securing Elasticsearch](./securing-elasticsearch.md)を参照してください。
+Elasticsearch サーバーとの通信の認証と暗号化については、 [Elasticsearchの保護](./securing-elasticsearch.md) を参照してください。
 
 ### 例：シングルノードの本番環境Elasticsearchクラスター
 
@@ -143,7 +143,7 @@ transport.port: 9302
 
 ### 本番環境モードで単一サーバーのブートストラップチェックを実施する
 
-Elasticsearch[ブートストラップチェック](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html)では、起動時に構成を検査し、構成が欠落しているか疑わしい場合は警告をログに記録します。 本番環境では、構成ミスの際に起動を停止するようにブートストラップチェックを設定する必要があります。
+Elasticsearch [ブートストラップチェック](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html) では、起動時に構成を検査し、構成が欠落しているか疑わしい場合は警告をログに記録します。 本番環境では、構成ミスの際に起動を停止するようにブートストラップチェックを設定する必要があります。
 
 シングルノードクラスターでブートストラップチェックを実施するには、次のプロパティをノードの`［Elasticsearch Home］/config/jvm.options`ファイルの最後に追加します。
 

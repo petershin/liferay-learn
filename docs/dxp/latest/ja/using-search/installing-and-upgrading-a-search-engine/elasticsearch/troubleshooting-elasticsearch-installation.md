@@ -10,7 +10,7 @@
 
 Elasticsearchコネクター設定の`transportAddresses`プロパティの値には、Elasticsearchノードが実行されている有効なホストとポートが少なくとも1つ含まれている必要があります。 Liferayを組み込みモードで実行していて、スタンドアロンのElasticsearchノードまたはクラスターを起動すると、ポート`9300`が占有されていることが検出され、ポート`9301`に切り替わります。 その後、LiferayのElasticsearchコネクターをリモートモードに設定すると、引き続きデフォルトのポート（`9300`）でElasticsearchを検索します。 クラスターのマスターノードとデータノードのアドレスがすべて記載されていることを確認してください。
 
-[Connecting to Elasticsearch](./connecting-to-elasticsearch.md)では、コネクター設定オプションについて詳しく説明しています。
+[Elasticsearchへの接続](./connecting-to-elasticsearch.md) では、コネクター設定オプションについて詳しく説明しています。
 
 ## ネットワークホストアドレス
 
@@ -18,7 +18,7 @@ Liferay 7.3+では、バンドルされているElasticsearchサーバー（サ�
 
 ## クラスタースニッフィング（追加設定）
 
-Elasticsearchクラスターは複数のノード [タイプ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node)を持つことができます。  Elasticsearchコネクターでデフォルトで有効になっている[クラスタースニッフィング](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html)は、`transportAddresses`プロパティで設定された`data`ノードを検索します。 使用可能なものがない場合、コネクターはコンソールログに`NoNodeAvailableException`をスローする可能性があります。 クラスタースニッフィングを有効のままにする場合は、少なくとも1つの`data`ノードのトランスポートアドレスを常に「スニッフィング可能」に設定して、このエラーを回避します。
+Elasticsearchクラスターは複数のノード [タイプ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node) を持つことができます。  Elasticsearchコネクターでデフォルトで有効になっている [クラスタースニッフィング](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html) は、`transportAddresses`プロパティで設定された`data`ノードを検索します。 使用可能なものがない場合、コネクターはコンソールログに`NoNodeAvailableException`をスローする可能性があります。 クラスタースニッフィングを有効のままにする場合は、少なくとも1つの`data`ノードのトランスポートアドレスを常に「スニッフィング可能」に設定して、このエラーを回避します。
 
 クラスタースニッフィングを無効にするには、`clientTransportSniff=false`を`.config`ファイルに追加するか、［システム設定］の［クライアント・トランスポート・スニフ］プロパティの選択を解除します。
 
@@ -60,4 +60,4 @@ ode_name]SSL configuration [xpack.security.transport.ssl.] relies upon fallback 
 1. 07-16T14:47:05,779][WARN ][o.e.d.c.j.Joda           ] [
 ```
 
-これらの警告は機能上の問題を示すものではなく、無効にすることができます（方法については、[Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/logging.html#deprecation-logging)を参照してください）。
+これらの警告は機能上の問題を示すものではなく、無効にすることができます（方法については、 [Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/logging.html#deprecation-logging) を参照してください）。

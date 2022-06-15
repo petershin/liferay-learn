@@ -4,21 +4,21 @@
 
 ## カスタムファセットの設定
 
-1. ページ上部の_追加_アイコン（![Add icon](../../../images/icon-add-app.png)）をクリックします。
+1. ページ上部の **追加** アイコン（![Add icon](../../../images/icon-add-app.png)）をクリックします。
 
 1. カスタムファセットを見つけて、左側のファセットのコレクションにドラッグします。 カスタムファセットは、ウィジェットの［検索機能］セクションにあります。
 
    ![検索ウィジェットの下でカスタムファセットを見つけます。](custom-facet/images/01.png)
 
-1. ファセットの_オプション_アイコン（![Options icon](../../../images/icon-app-options.png)）をクリックし、*［設定］*をクリックします。
+1. ファセットの **オプション** アイコン（![Options icon](../../../images/icon-app-options.png)）をクリックし、 ［**設定**］ をクリックします。
 
    ![［設定］オプションをクリックします。](custom-facet/images/02.png)
 
    カスタムファセットには、以下で説明するいくつかの設定オプションがあります。
 
-1. オプションの設定が終了したら、*［保存］*ボタンをクリックします。
+1. オプションの設定が終了したら、 ［**保存**］ ボタンをクリックします。
 
-**ディスプレイの設定：** *デフォルト*、 *コンパクトレイアウト*、 *ラベルレイアウト*の中から選択します。 デフォルトのレイアウトでは、各用語の横にチェックボックスが表示されますが、コンパクトレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。
+**ディスプレイの設定：****デフォルト** 、 **コンパクトレイアウト** 、 **ラベルレイアウト** の中から選択します。 デフォルトのレイアウトでは、各用語の横にチェックボックスが表示されますが、コンパクトレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。
 
 詳細設定には、追加のオプションが含まれています。
 
@@ -26,13 +26,13 @@
 
 **カスタム見出し：** このファセットに表示する見出しを入力します。 設定されていない場合、集約されたフィールド名が表示されます。
 
-**カスタムパラメータ名：**選択した値のURLパラメーター名を指定します。 設定されていない場合、集約されたフィールド名が使用されます。
+**カスタムパラメータ名：** 選択した値のURLパラメーター名を指定します。 設定されていない場合、集約されたフィールド名が使用されます。
 
-**最大ターム数：**ファセットに一致する用語がいくつ見つかったかに関係なく、表示するファセット用語の最大数を設定します。
+**最大ターム数：** ファセットに一致する用語がいくつ見つかったかに関係なく、表示するファセット用語の最大数を設定します。
 
-**頻度の閾値：**用語がファセット用語のリストに表示されるために必要な最小頻度を設定します。 たとえば、ファセットの頻度の閾値が3に設定されている場合、一致する結果が2つの用語は用語結果リストに表示されません。
+**頻度の閾値：** 用語がファセット用語のリストに表示されるために必要な最小頻度を設定します。 たとえば、ファセットの頻度の閾値が3に設定されている場合、一致する結果が2つの用語は用語結果リストに表示されません。
 
-**表示頻度：**用語頻度を表示するかどうかを選択します。
+**表示頻度：** 用語頻度を表示するかどうかを選択します。
 
 **統合検索キー：** このウィジェットが参加している代替検索のキーを入力します。 設定されていない場合、このウィジェットはデフォルトの検索に参加します。 この値は通常、アプリケーション定義のインデックスの名前です。
 
@@ -45,9 +45,9 @@
 Elasticsearchは複数の方法でフィールドのインデックス化をサポートしています。 いくつかのテキストフィールドは、マッピングの中で `raw` [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/multi-fields.html) とネストされている場合や、そのフィールドが `fieldName_sortable` として (`keyword` として) 別のフィールドマッピングで追加マッピングされている場合にキーワードフィールドとして使用することができます。 以下の例では、カスタムフィールドのファセットを作成し、Elasticsearchのマルチフィールドのコンセプトを活用しています。
 ```
 
-使用可能なフィールドのリスト全体を参照するには、［*コントロールパネル*］→［*構成*］→［*検索*］（［*フィールドマッピング*］タブをクリック）からフィールドマッピングを調べます。 ここでは、数多くのインデックスを見ることができます。 興味のあるLiferayアセットは、 [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)にインデックスされており、 `liferay-20101` のような名前になっています（`20101` はカンパニーID）。
+使用可能なフィールドのリスト全体を参照するには、［**コントロールパネル**］→［**構成**］→［**検索**］（［**フィールドマッピング**］タブをクリック）からフィールドマッピングを調べます。 ここでは、数多くのインデックスを見ることができます。 興味のあるLiferayアセットは、 [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)にインデックスされており、 `liferay-20101` のような名前になっています（`20101` はカンパニーID）。
 
-あるいは、検索エンジンのAPIを使ってマッピングを閲覧することもできます。 Elasticsearchでは、端末からcURLを使ってフィールドマッピングにアクセスし、 [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-get-mapping.html)を呼び出すことができます。
+あるいは、検索エンジンのAPIを使ってマッピングを閲覧することもできます。 Elasticsearchでは、端末からcURLを使ってフィールドマッピングにアクセスし、 [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-get-mapping.html) を呼び出すことができます。
 
 ```{tip}
  [Kibanaの](../../liferay-enterprise-search/monitoring-elasticsearch.md) 開発ツールコンソールは、Elasticsearch APIの呼び出しを行うのに、cURL よりも便利です。
@@ -57,7 +57,7 @@ Elasticsearchは複数の方法でフィールドのインデックス化をサ�
 curl -X GET "localhost:9200/_mapping/LiferayDocumentType"?pretty
  ```
 
-Solrは[ListFields API](https://lucene.apache.org/solr/guide/6_6/schema-api.html#SchemaAPI-ListFields)を使用します。
+Solrは [ListFields API](https://lucene.apache.org/solr/guide/6_6/schema-api.html#SchemaAPI-ListFields) を使用します。
 
 ```bash
 curl http://localhost:8983/solr/liferay/schema/
@@ -91,9 +91,9 @@ curl http://localhost:8983/solr/liferay/schema/
 
 ## カスタムフィールドへのアクセス
 
-[カスタムフィールド](./../../../system-administration/configuring-liferay/adding-custom-fields.md) を作成し、 _キーワードとして検索可能_ という設定を有効にすると、カスタムフィールドはバックアセット（Blogs Entriesなど）と一緒にインデックス化されます。 再インデックス化後は、既存のエントリーにも適用されます。 フィールド自体はテキストフィールドで、`expando__keyword__custom_fields__Enabled`のような名前ですが（カスタムフィールドUIで_Enabled_というフィールド名をつけた場合）、別の`raw`のキーワードフィールドを作成するためのネストしたフィールドマッピングが含まれています。
+[カスタムフィールド](./../../../system-administration/configuring-liferay/adding-custom-fields.md) を作成し、 **キーワードとして検索可能** という設定を有効にすると、カスタムフィールドはバックアセット（Blogs Entriesなど）と一緒にインデックス化されます。 再インデックス化後は、既存のエントリーにも適用されます。 フィールド自体はテキストフィールドで、`expando__keyword__custom_fields__Enabled`のような名前ですが（カスタムフィールドUIで **Enabled** というフィールド名をつけた場合）、別の`raw`のキーワードフィールドを作成するためのネストしたフィールドマッピングが含まれています。
 
-カスタム・ファセットで生のフィールドを使用するには、 `.raw` を、 _集約フィールド_.raw のカスタム・フィールド名に追加します。
+カスタム・ファセットで生のフィールドを使用するには、 `.raw` を、 **集約フィールド** .raw のカスタム・フィールド名に追加します。
 
 `expando__keyword__custom_fields__Enabled.raw`
 
@@ -139,7 +139,7 @@ GET /liferay-20097/_mapping/field/*.raw
 
 ## DDMのネストされたフィールドへのアクセス
 
-[7.3 Breaking Changes ドキュメント](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document)で説明されているように、Liferay Dynamic Data Mapping フレームワークがいくつかのフィールドをインデックスする方法が変更されました。 以前は検索エンジンのドキュメントのルートにありましたが、現在はネストされたフィールドになっています。  この変更は、Liferay 7.3 と Liferay 7.2 SP3/FP8+ に影響します（ただし、システム設定 &rarr; Dynamic Data Mapping Indexer で _Enable Legacy Dynamic Data Mapping Index Fields_ 設定が無効になっている場合のみです）。 最新のFix PackとGAリリースの7.3では、この変更はLiferayのSearch APIで説明されており、設定の更新は必要ありません。 したがって、Elasticsearch ドキュメントのルートにあった `ddm__text__*` または `ddm__keyword__*` という名前のフィールドに依存している Custom Facet ウィジェットがある場合、これらのフィールドは通常どおり Custom Facet の _Aggregation Field_ 設定で使用し続けます。これらのフィールドがドキュメントのルートにない場合でも、Custom Facet の _ Aggregation Field _ 設定でこれらのフィールドを通常通り使用し続けます。
+[7.3 Breaking Changes ドキュメント](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) で説明されているように、Liferay Dynamic Data Mapping フレームワークがいくつかのフィールドをインデックスする方法が変更されました。 以前は検索エンジンのドキュメントのルートにありましたが、現在はネストされたフィールドになっています。  この変更は、Liferay 7.3 と Liferay 7.2 SP3/FP8+ に影響します（ただし、システム設定 &rarr; Dynamic Data Mapping Indexer で **Enable Legacy Dynamic Data Mapping Index Fields** 設定が無効になっている場合のみです）。 最新のFix PackとGAリリースの7.3では、この変更はLiferayのSearch APIで説明されており、設定の更新は必要ありません。 したがって、Elasticsearch ドキュメントのルートにあった `ddm__text__*` または `ddm__keyword__*` という名前のフィールドに依存している Custom Facet ウィジェットがある場合、これらのフィールドは通常どおり Custom Facet の **Aggregation Field** 設定で使用し続けます。これらのフィールドがドキュメントのルートにない場合でも、Custom Facet の **Aggregation Field** 設定でこれらのフィールドを通常通り使用し続けます。
 
 既存のドキュメントのDDMフィールドをインデックスで探すには
 
@@ -184,4 +184,4 @@ GET liferay-20097/_search
   ],
 ```
 
-これらのフィールドの1つをカスタムファセットで使用するには、カスタムファセット構成の `ddmFieldName` の値（例えば、 `ddm__keyword__40806__Testb5mx_en_US`）を _集約フィールド_ に入力します。
+これらのフィールドの1つをカスタムファセットで使用するには、カスタムファセット構成の `ddmFieldName` の値（例えば、 `ddm__keyword__40806__Testb5mx_en_US`）を **集約フィールド** に入力します。

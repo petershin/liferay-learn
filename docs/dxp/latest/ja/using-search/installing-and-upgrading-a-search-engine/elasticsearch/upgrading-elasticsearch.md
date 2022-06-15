@@ -14,7 +14,7 @@ upgrading-elasticsearch/upgrading-to-elasticsearch-7.md
 upgrading-elasticsearch/backing-up-elasticsearch.md
 ```
 
-LiferayはElasticsearch 7に対応しています。 [互換性マトリックス ](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix)では、最新のサポートの詳細を提供しています。
+LiferayはElasticsearch 7に対応しています。 [互換性マトリックス ](https://help.liferay.com/hc/ja/sections/360002103292-Compatibility-Matrix) では、最新のサポートの詳細を提供しています。
 
 ```{important}
 Solrの統合はLiferay 7.3で廃止予定となり、7.4で削除され、Elasticsearchの統合に置き換えられました。 Elasticsearchに移行するには、[Elasticsearchのセットアップ](./getting-started-with-elasticsearch.md)、そして[Liferayの接続 ](./connecting-to-elasticsearch.md)が必要です。

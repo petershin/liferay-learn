@@ -18,12 +18,12 @@ liferay-enterprise-search/monitoring-elasticsearch.md
 liferay-enterprise-search/search-experiences.md
 ```
 
-Liferay Enterprise Search (LES) のサブスクリプションでは、Liferay DXPのサブスクリプションで利用できる検索機能以外の追加機能にアクセスできます。 お使いのLiferay DXPのバージョンでLESに含まれるサービスや機能の詳細については、[Liferay DXPコンポーネントリソース](https://help.liferay.com/hc/en-us/articles/360014400932)のLESの公式説明を参照してください。 LESはすぐにインストールできますが、その機能を使うにはライセンスが必要です。 有効化の記事に詳細があります。
+Liferay Enterprise Search (LES) のサブスクリプションでは、Liferay DXPのサブスクリプションで利用できる検索機能以外の追加機能にアクセスできます。 お使いのLiferay DXPのバージョンでLESに含まれるサービスや機能の詳細については、 [Liferay DXPコンポーネントリソース](https://help.liferay.com/hc/ja/articles/360014400932) のLESの公式説明を参照してください。 LESはすぐにインストールできますが、その機能を使うにはライセンスが必要です。 有効化の記事に詳細があります。
 
 - [Liferay Enterprise Searchを有効にする](liferay-enterprise-search/activating-liferay-enterprise-search.md)
 
 ```{note}
-LESをご利用のお客様には、Liferayより[プラチナElasticsearchライセンス](https://www.elastic.co/subscriptions)が提供されます。 サブスクリプションからライセンス受領まで時間がかかる場合がありますが、その間に[30日間トライアル](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/start-trial.html)を有効にして作業することが可能です。  
+LESをご利用のお客様には、Liferayより [プラチナElasticsearchライセンス](https://www.elastic.co/subscriptions) が提供されます。 サブスクリプションからライセンス受領まで時間がかかる場合がありますが、その間に [30日間トライアル](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/start-trial.html) を有効にして作業することが可能です。  
 ```
 
 以下のようなLESの各機能について、詳細なインストール方法と使用方法が記事に掲載されています。
@@ -35,7 +35,7 @@ LESをご利用のお客様には、Liferayより[プラチナElasticsearchラ�
 - [Elasticsearchの保護](installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md) [Elasticsearch 7を使用したLiferay CEとDXPのLESなしで無料]
 
 ```{important}
-互換性については、必ず[LES互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-Enterprise-Search)をご確認ください。
+互換性については、必ず [LES互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651#Liferay-Enterprise-Search) をご確認ください。
 ```
 
 ## クラスター横断レプリケーション

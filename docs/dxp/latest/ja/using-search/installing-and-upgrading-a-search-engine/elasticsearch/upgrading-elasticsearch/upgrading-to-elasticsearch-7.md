@@ -1,8 +1,8 @@
 # Elasticsearch 7へのアップグレード
 
-Elasticsearch 7は、最新のLiferay 7.2、7.3、7.4バージョンに標準でサポートされています。 特定のバージョンの互換性の詳細については、[Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651)を参照してください。
+Elasticsearch 7は、最新のLiferay 7.2、7.3、7.4バージョンに標準でサポートされています。 特定のバージョンの互換性の詳細については、 [Search Engine Compatibility Matrix](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
 
-Liferay 7.2では、Elasticsearch 7は[Liferay Connector to Elasticsearch 7](https://web.liferay.com/marketplace/-/mp/application/170390307)  (バージョン`3.x`) を介してサポートされています。 Liferay 7.3以降へのアップグレード、または既存の7.2検索エンジンをElasticsearch 7に移行する場合、Elasticsearchサーバーをアップグレードする必要があります。 新しいLiferay7.2システムをセットアップするには、Elasticsearch 7をインストールし、[インストールガイド](../getting-started-with-elasticsearch.md)に従います。
+Liferay 7.2では、Elasticsearch 7は [Liferay Connector to Elasticsearch 7](https://web.liferay.com/marketplace/-/mp/application/170390307)  (バージョン`3.x`) を介してサポートされています。 Liferay 7.3以降へのアップグレード、または既存の7.2検索エンジンをElasticsearch 7に移行する場合、Elasticsearchサーバーをアップグレードする必要があります。 新しいLiferay7.2システムをセットアップするには、Elasticsearch 7をインストールし、[インストールガイド](../getting-started-with-elasticsearch.md)に従います。
 
 ```{important}
 Elasticsearchをアップグレードする前に、既存のデータをバックアップしてください。 アップグレード中またはアップグレード後に何か問題が発生した場合は、破損していないインデックスのスナップショットを使用して以前のバージョンにロールバックしてください。 [Elasticsearchのバックアップ](./backing-up-elasticsearch.md)の手順に従います。
@@ -12,7 +12,7 @@ Elasticsearchをアップグレードする前に、既存のデータをバッ�
 
 1. [Liferay Companyとシステムインデックスをバックアップします](./backing-up-elasticsearch.md)。
 
-1. [検索の調整のアプリケーション固有のインデックスをバックアップします](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage)（同義語セットと結果ランキング）。
+1. [検索の調整のアプリケーション固有のインデックスをバックアップします](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) （同義語セットと結果ランキング）。
 
 1. [Elasticsearchをインストールして設定します](../installing-elasticsearch.md)。
 
@@ -24,9 +24,9 @@ Elasticsearchをアップグレードする前に、既存のデータをバッ�
    xpack.security.enabled: true
    ```
 
-   セキュリティ設定の範囲の詳細については、[Securing Elasticsearch](../securing-elasticsearch.md)を参照してください。
+   セキュリティ設定の範囲の詳細については、 [Elasticsearchの保護](../securing-elasticsearch.md) を参照してください。
 
-1. \ [7.2のみ\] [バンドルされているLiferay Connector to Elasticsearch 6をブラックリストに登録し](#blacklisting-elasticsearch-6)、Connector to Elasticsearch 7を[インストール](../connecting-to-elasticsearch.md#install-the-elasticsearch-7-connector)します。
+1. \ [7.2のみ\] [バンドルされているLiferay Connector to Elasticsearch 6をブラックリストに登録し](#blacklisting-elasticsearch-6) 、Connector to Elasticsearch 7を [インストール](../connecting-to-elasticsearch.md#install-the-elasticsearch-7-connector) します。
 
 1. Connector to Elasticsearch 7を設定してElasticsearchに接続します。
 
@@ -38,9 +38,9 @@ Elasticsearchをアップグレードする前に、既存のデータをバッ�
 
 ## Elasticsearchのアップグレード
 
-ローリングリスタート対象バージョン（`6.8.x`）を使用している場合は、[ローリングアップグレード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html)を実行してElasticsearchクラスターをアップグレードすることをお勧めします。 それ以外の場合は、[フルクラスター再起動アップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/restart-upgrade.html)ガイドに従ってください。
+ローリングリスタート対象バージョン（`6.8.x`）を使用している場合は、 [ローリングアップグレード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) を実行してElasticsearchクラスターをアップグレードすることをお勧めします。 それ以外の場合は、 [フルクラスター再起動アップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/restart-upgrade.html) ガイドに従ってください。
 
-新しいElasticsearchサーバーをインストールし、アップグレード前のデータにインデックスしたい場合、Liferay[データベースがアップグレード](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md)されると、UIから[再インデックス](#restart-liferay-and-re-index)をトリガーすることで、ほとんどのLiferayインデックスを復元できます。 ただし、検索の調整（結果ランキングと同義語）インデックス、およびデータベースストレージにバックアップされていないカスタムインデックスは、[アップグレード前のインデックスのスナップショット](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage)から復元する必要があります。
+新しいElasticsearchサーバーをインストールし、アップグレード前のデータにインデックスしたい場合、Liferay[データベースがアップグレード](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md)されると、UIから [再インデックス](#restart-liferay-and-re-index) をトリガーすることで、ほとんどのLiferayインデックスを復元できます。 ただし、検索の調整（結果ランキングと同義語）インデックス、およびデータベースストレージにバックアップされていないカスタムインデックスは、 [アップグレード前のインデックスのスナップショット](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) から復元する必要があります。
 
 ## Elasticsearch 6のブラックリストへの登録
 
@@ -73,11 +73,11 @@ LiferayがElasticsearchクラスターに接続されたら、Liferayを再起�
 
 1. Liferayを再起動します。
 
-1. 会社、システム、およびスペルチェックのインデックスを再作成します。 グローバルメニュー（![Global Menu](../../../../images/icon-applications-menu.png)）から、*［コントロールパネル］* &rarr; *［設定］* &rarr; *［検索機能］*に移動します。 *[Reindex all search indexes]*エントリの*[実行]*をクリックします。
+1. 会社、システム、およびスペルチェックのインデックスを再作成します。 グローバルメニュー（![Global Menu](../../../../images/icon-applications-menu.png)）から、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索機能**］ に移動します。 [**Reindex all search indexes**] エントリの [**実行**] をクリックします。
 
-1. [ワークフロー統計情報インデックス](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics)を再作成します。グローバルメニュー（![Global Menu](../../../../images/icon-applications-menu.png)）から、*［アプリケーション］* &rarr; *［ワークフローメトリクス］*に移動します。 設定メニュー（![Options](../../../../images/icon-options.png)）を開き、*［すべてインデックスを再構築］*をクリックします。 各仮想インスタンスについて、この作業を繰り返します。
+1. [ワークフロー統計情報インデックス](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) を再作成します。グローバルメニュー（![Global Menu](../../../../images/icon-applications-menu.png)）から、 ［**アプリケーション**］ &rarr; ［**ワークフローメトリクス**］ に移動します。 設定メニュー（![Options](../../../../images/icon-options.png)）を開き、 ［**すべてインデックスを再構築**］ をクリックします。 各仮想インスタンスについて、この作業を繰り返します。
 
-これにより、Liferayデータベースに保存されているデータから作成されたインデックスが復元されます。 プライマリストレージとして使用されるインデックスを復元するには、[Backing Up Elasticsearch](./backing-up-elasticsearch.md)を参照してください。
+これにより、Liferayデータベースに保存されているデータから作成されたインデックスが復元されます。 プライマリストレージとして使用されるインデックスを復元するには、 [Elasticsearchのバックアップ](./backing-up-elasticsearch.md) を参照してください。
 
 ## Liferay 7.2：Elasticsearch 6への復帰
 
@@ -93,4 +93,4 @@ Elasticsearch 6と7は現在2つの別個のインストールであるため、
 
 1.  Elasticsearchサーバーを起動してから、Liferay Connector to Elasticsearch 6を再起動します。
 
-アップグレードが完了したら、[Liferayのバージョンで利用できる 新しい検索機能](../../../getting-started.html)をご覧ください。 
+アップグレードが完了したら、 [Liferayのバージョンで利用できる 新しい検索機能](../../../getting-started.html) をご覧ください。 

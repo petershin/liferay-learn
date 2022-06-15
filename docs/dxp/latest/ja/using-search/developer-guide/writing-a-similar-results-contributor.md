@@ -2,7 +2,7 @@
 
 > **サブスクライバー**
 
-> **可用性：** この機能は、Liferay DXP 7.3+にバンドルされているサービス・プロバイダー・インターフェース（SPI）に依存しています。 Liferay DX 7.2で、Fix Pack 5+から、[Liferay マーケットプレイス](https://web.liferay.com/marketplace/-/mp/application/172465398)から同様の結果ウィジェットをインストールして入手できます。
+> **可用性：** この機能は、Liferay DXP 7.3+にバンドルされているサービス・プロバイダー・インターフェース（SPI）に依存しています。 Liferay DX 7.2で、Fix Pack 5+から、 [Liferay マーケットプレイス](https://web.liferay.com/marketplace/-/mp/application/172465398) から同様の結果ウィジェットをインストールして入手できます。
 
 `SimilarResultsContributor`実装することにより、 [類似結果ウィジェット](../search-pages-and-widgets/similar-results.md) アプリケーションのカスタムコンテンツを表示できます。 コントリビューターが機能するには、類似結果ウィジェットがコンテンツをページのメインアセットとして検出できる必要があります。 つまり、サポートされているLiferay DXPアセット（ブログエントリやWikiページなど）のように、「表示ウィジェット」のURLを介して表示できる必要があります。 類似結果ウィジェットは、カスタムコントリビューターを必要とせずに、Lifery DXPのアセットパブリッシャーに表示されるコンテンツですでに使用できることに注意してください。
 <!-- I'd like to see the image highlight what someone should be noticing in this image because it is not immediately obvious. --> ![ブログ表示ウィジェットは、そのコントリビューターがいるため、類似結果で機能します。](./writing-a-similar-results-contributor/images/01.png "ブログの類似結果")
@@ -27,10 +27,10 @@ Liferay DXPのインスタンスでサンプル `SimilarResultsContributor` を�
 
     異なるLiferay PortalのバージョンやLiferay DXPを使用している場合は、上記のコマンドを適宜調整してください。
 
-1. [Acme Similar Results Contributor](./liferay-r1s1.zip)をダウンロードして解凍します。
+1. [Acme Similar Results Contributor](./liferay-r1s1.zip) をダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-r1s1.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/using-search/developer-guide/liferay-r1s1.zip -O
     ```
 
     ```bash
@@ -55,25 +55,25 @@ Liferay DXPのインスタンスでサンプル `SimilarResultsContributor` を�
 
 1. サンプルのコントリビューターが機能していることを確認します。 まず、ブラウザで`https://localhost:8080`を開きます。
 
-1. _サイトメニュー_ &rarr; _コンテンツ_ &rarr; _ナレッジベース_にKB記事を追加します。
+1. **サイトメニュー** &rarr; **コンテンツ** &rarr; **ナレッジベース** にKB記事を追加します。
 
-    同様の_［タイトル］_と_［コンテンツ］_フィールドがあることを確認してください。 これらの文字列を使用して、3つの記事を作成できます（タイトルとコンテンツに同じ文字列を使用します）。
+    同様の ［**タイトル**］ と ［**コンテンツ**］ フィールドがあることを確認してください。 これらの文字列を使用して、3つの記事を作成できます（タイトルとコンテンツに同じ文字列を使用します）。
 
-    _KB記事1をテストする_
+**KB記事1をテストする**
 
-    _KB記事2をテストする_
+**KB記事2をテストする**
 
-    _KB記事3をテストする_
+**KB記事3をテストする**
 
 1. ナレッジベース表示ウィジェットをページに追加し、続いて類似結果ウィジェットを追加します。
 
-1. 類似結果ウィジェットのウィジェット構成を開き、これらの設定に必ず _1_ 値を設定してください。
+1. 類似結果ウィジェットのウィジェット構成を開き、これらの設定に必ず **1** 値を設定してください。
 
     最小期間頻度：1最小ドキュメント頻度：1
 
 1. KB記事の1つをクリックして、表示するメインアセットとして選択します。
 
-    ［類似結果］ウィジェットに、他の関連するKB記事が表示されるようになりました。<!-- This image could be a bit larger and also have some sort of highlighting to indicate the element that we want to draw the readers attention towards. --> ![類似結果ウィジェットは、KB記事を表示できます。](./writing-a-similar-results-contributor/images/02.png "KBの類似結果")
+    ［類似結果］ウィジェットに、他の関連するKB記事が表示されるようになりました。 <!-- This image could be a bit larger and also have some sort of highlighting to indicate the element that we want to draw the readers attention towards. --> ![類似結果ウィジェットは、KB記事を表示できます。](./writing-a-similar-results-contributor/images/02.png "KBの類似結果")
 
 例が適切に動作することを確認したので、それがどのように機能するかを学びます。
 
@@ -247,10 +247,10 @@ private KBArticleLocalService _kbArticleLocalService;
 
 アプリケーションのカスタムコンテンツを類似結果ウィジェットに提供するために必要な作業の多くは、表示URLを使用することです。 Liferay独自のアセットが表示URLを作成する方法を学ぶには、エンティティの `* AssetRenderer` クラスの `getURLView` メソッドを調べます。
 
-* [`JournalArticleAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/journal/journal-web/src/main/java/com/liferay/journal/web/internal/asset/model/JournalArticleAssetRenderer.java#L352-L383)、Liferay DXP 7.3.2 GA3
-* [`WikiPageAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/wiki/wiki-web/src/main/java/com/liferay/wiki/web/internal/asset/model/WikiPageAssetRenderer.java#L232-L249)、Liferay DXP 7.3.2 GA3
-* [`BlogsEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/blogs/blogs-web/src/main/java/com/liferay/blogs/web/internal/asset/model/BlogsEntryAssetRenderer.java#L202-L218)、Liferay DXP 7.3.2 GA3
-* [`DLFileEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/asset/model/DLFileEntryAssetRenderer.java#L280-L297)、Liferay DXP 7.3.2 GA3
+* [`JournalArticleAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/journal/journal-web/src/main/java/com/liferay/journal/web/internal/asset/model/JournalArticleAssetRenderer.java#L352-L383) 、Liferay DXP 7.3.2 GA3
+* [`WikiPageAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/wiki/wiki-web/src/main/java/com/liferay/wiki/web/internal/asset/model/WikiPageAssetRenderer.java#L232-L249) 、Liferay DXP 7.3.2 GA3
+* [`BlogsEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/blogs/blogs-web/src/main/java/com/liferay/blogs/web/internal/asset/model/BlogsEntryAssetRenderer.java#L202-L218) 、Liferay DXP 7.3.2 GA3
+* [`DLFileEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/asset/model/DLFileEntryAssetRenderer.java#L280-L297) 、Liferay DXP 7.3.2 GA3
 
 前述のとおり、このサンプルでは、アプリケーションのルートフォルダーにあるKB記事で機能する `SimilarResultsModelDocumentContributor` を作成する方法を示しています。 KBフォルダーのサポートを追加することは可能であり、やる気のある読者にとって興味深い演習です。 [`DocumentLibrarySimilarResultsContributor`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor/document/library/DocumentLibrarySimilarResultsContributor.java) のソースコードを見て、インスピレーションを得てください。
 

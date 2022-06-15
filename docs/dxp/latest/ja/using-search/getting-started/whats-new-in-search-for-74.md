@@ -4,7 +4,7 @@
 
 ## Elasticsearch7の統合
 
-Elasticsearch 7はLiferay 7.4でサポートされています。 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360016511651) で、対応する最小バージョン、クライアントバージョン、対応する最新のElasticsearchバージョンなど、最新情報を確認してください。
+Elasticsearch 7はLiferay 7.4でサポートされています。 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/ja/articles/360016511651) で、対応する最小バージョン、クライアントバージョン、対応する最新のElasticsearchバージョンなど、最新情報を確認してください。
 
 ![Elasticsearch 7.15 は Liferay DXP 7.4 GA1 で動作するようサポートされています。](./whats-new-in-search-for-74/images/03.png)
 
@@ -40,7 +40,7 @@ Liferay 7.4 以降、サーバー管理者は再インデックスアクショ�
 
 <!-- * If configured in the Object, a display page can be shown when the Object Entry is clicked in Search Results. -->
 
-Liferay Objectsと検索について詳しく知りたい方は、 [Liferay Objectsの検索](./searching-for-content.md#searching-for-liferay-objects)をご覧ください。
+Liferay Objectsと検索について詳しく知りたい方は、 [Liferay Objectsの検索](./searching-for-content.md#searching-for-liferay-objects) をご覧ください。
 
 ## 検索の調整
 
@@ -56,7 +56,7 @@ DXP Liferay 7.4からは、結果ランキングと同義語セットのデー�
 
 ## Liferay Enterprise Search（LES）
 
-> **[LESサブスクライバー](https://www.liferay.com/products/dxp/enterprise-search)**
+> [**LESサブスクライバー](https://www.liferay.com/products/dxp/enterprise-search**)
 
 ### LESのインストールを簡素化
 

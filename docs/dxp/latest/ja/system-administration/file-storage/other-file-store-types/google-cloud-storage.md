@@ -12,7 +12,7 @@ Liferay DXPは、Google's Cloud Storage (GCS)サービスと統合できます�
 
 ## GCS前提条件
 
-LiferayのGCS統合を有効にするには、アクティブなGCSアカウントとプロジェクトが必要です。 サーバー間、アプリレベルの認証を有効にするには、このプロジェクトに [ストレージバケット](https://cloud.google.com/storage/docs/creating-buckets) と [サービスアカウント](https://cloud.google.com/iam/docs/creating-managing-service-accounts) が必要です。 また、サービスアカウントのJSON [セキュリティキー](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) を作成する必要があります。 詳しくは、[Google Cloud Storage](https://cloud.google.com/storage/docs) の公式ドキュメントをご覧ください。
+LiferayのGCS統合を有効にするには、アクティブなGCSアカウントとプロジェクトが必要です。 サーバー間、アプリレベルの認証を有効にするには、このプロジェクトに [ストレージバケット](https://cloud.google.com/storage/docs/creating-buckets) と [サービスアカウント](https://cloud.google.com/iam/docs/creating-managing-service-accounts) が必要です。 また、サービスアカウントのJSON [セキュリティキー](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) を作成する必要があります。 詳しくは、 [Google Cloud Storage](https://cloud.google.com/storage/docs) の公式ドキュメントをご覧ください。
 
 ```{important}
 サービスアカウントのセキュリティキーは、JSONキータイプを使用する必要があります。
@@ -22,9 +22,9 @@ LiferayのGCS統合を有効にするには、アクティブなGCSアカウン�
 
 次の手順に従って、GCS Storeを設定します。
 
-1. *グローバルメニュー*（![Global Menu](../../../images/icon-applications-menu.png)）を開き、*［コントロールパネル］*タブをクリックして、*［設定］* &rarr; *［System Settings］*に移動します。
+1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**設定**］ &rarr; ［**System Settings**］ に移動します。
 
-1. *［File Storage］*をクリックします。
+1. ［**File Storage**］ をクリックします。
 
    ![［システム設定］の［ファイルストレージ］をクリックします。](./google-cloud-storage/images/01.png)
 
@@ -32,9 +32,9 @@ LiferayのGCS統合を有効にするには、アクティブなGCSアカウン�
 
 1. （必須）以下の情報を入力してください。
 
-   * *［Service Account Key］*: GCSプロジェクトのサービスアカウントに安全にアクセスするために使用されるプライベートJSONキーです。
+   ［****Service Account Key**］ : GCSプロジェクトのサービスアカウントに安全にアクセスするために使用されるプライベートJSONキーです。
 
-   * *［Bucket Name］*: ファイルの保存に使用するGCSバケット名です。
+   ［****Bucket Name**］ : ファイルの保存に使用するGCSバケット名です。
 
    ![サービスアカウントキーとバケット名を入力します。](./google-cloud-storage/images/02.png)
 
@@ -42,11 +42,11 @@ LiferayのGCS統合を有効にするには、アクティブなGCSアカウン�
 
    ![GCS へのLiferay呼び出しの試行を設定します。](./google-cloud-storage/images/03.png)
 
-1. (オプション) セキュリティを強化するために、 *AES-256 暗号化キー* を入力します。
+1. (オプション) セキュリティを強化するために、 **AES-256 暗号化キー** を入力します。
 
    ![AES-256 暗号化キーを入力します。](./google-cloud-storage/images/04.png)
 
-1. 完了したら、*［保存］*をクリックします。
+1. 完了したら、 ［**保存**］ をクリックします。
 
 GCS Storeの設定が完了したら、GCSをデフォルトのファイルストレージシステムとして設定することができます。
 

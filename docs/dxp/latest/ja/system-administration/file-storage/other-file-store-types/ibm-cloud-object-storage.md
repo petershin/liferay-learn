@@ -1,24 +1,24 @@
 # IBM Cloud Object Storage
 
-Liferay DXPは、IBMの[Cloud Object Storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)ストアをS3互換性レイヤーとともに実装しているため、AWS S3 Storeと同じ設定を使用します。 IBMアカウントを設定してバケットを作成したら、インスタンスのS3 Storeを設定する準備が整います。
+Liferay DXPは、IBMの [Cloud Object Storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) ストアをS3互換性レイヤーとともに実装しているため、AWS S3 Storeと同じ設定を使用します。 IBMアカウントを設定してバケットを作成したら、インスタンスのS3 Storeを設定する準備が整います。
 
 ## ストアの設定
 
-1. グローバルメニューの*［コントロールパネル］*タブを開き、*［システム設定］* &rarr; *［ファイルストレージ］* &rarr; *［S3 Store］*に移動します。
+1. グローバルメニューの ［**コントロールパネル**］ タブを開き、 ［**システム設定**］ &rarr; ［**ファイルストレージ**］ &rarr; ［**S3 Store**］ に移動します。
 
 1. 少なくとも、次の設定値を入力してください。
 
-   * **バケット名**：S3がファイルを保存するために使用するバケット名を設定します。
-   * **アクセスキー**：アカウントアクセスキーを設定します。
-   * **シークレットキー**：アカウントのシークレットキーを設定します。
-   * **S3エンドポイント**：S3への接続に使用するデフォルトのエンドポイントを設定します。
-   * **S3リージョン**：S3リージョンを設定します。これは、S3がユーザーが作成したバケットを格納する地理的リージョンを表します。
+   ***バケット名** ：S3がファイルを保存するために使用するバケット名を設定します。
+   ***アクセスキー** ：アカウントアクセスキーを設定します。
+   ***シークレットキー** ：アカウントのシークレットキーを設定します。
+   ***S3エンドポイント** ：S3への接続に使用するデフォルトのエンドポイントを設定します。
+   ***S3リージョン** ：S3リージョンを設定します。これは、S3がユーザーが作成したバケットを格納する地理的リージョンを表します。
 
    ```{important}
-   現在、ストアは*HMAC認証情報*のみサポートしています。 詳しくは、公式の[IBM Cloud Object Storageドキュメント](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main)をご覧ください。
+   現在、ストアは*HMAC認証情報*のみサポートしています。 詳しくは、公式の [IBM Cloud Object Storageドキュメント](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main) をご覧ください。
    ```
 
-1. 完了したら、*［保存］*をクリックします。
+1. 完了したら、 ［**保存**］ をクリックします。
 
 システム設定の構成を行ったら、IBM Cloud Object Storageのストアをデフォルトとして設定する必要があります。 これを行うには、次のプロパティを`portal-ext.properties`ファイルに設定します。
 

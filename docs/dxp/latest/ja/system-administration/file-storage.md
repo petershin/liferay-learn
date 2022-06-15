@@ -34,13 +34,13 @@ Liferay DXPにアップロードされた全てのファイルは、インスタ
 
 1. Liferayを再起動します。
 
-1. ［コントロールパネル］から、_ ［設定］_ &rarr; _［System Settings］ _ &rarr; _［File Storage］_へ行きます。
+1. ［コントロールパネル］から、 ［**設定**］ &rarr; ［**System Settings**］ &rarr; ［**File Storage**］ へ行きます。
 
-1. _［Advanced File System Store］_画面で、_［Root Directory］_を[Liferay Home](../installation-and-upgrades/reference/liferay-home.md)パス（絶対または相対）に設定します。
+1. ［**Advanced File System Store**］ 画面で、 ［**Root Directory**］ を [Liferay Home](../installation-and-upgrades/reference/liferay-home.md) パス（絶対または相対）に設定します。
 
     ![高度なファイルシステムストア画面](./file-storage/images/02.png)
 
-1. _［保存］_ をクリックします。
+1. ［**保存**］ をクリックします。
 
 Liferayは、高度なファイルシステムストアを使用してファイルを保存するようになりました。
 
@@ -58,14 +58,14 @@ Liferayは、高度なファイルシステムストアを使用してファイ�
 
 利用可能な他の組み込みのファイル保存方法があります。
 
-* [簡易ファイルシステムストア](./file-storage/other-file-store-types/simple-file-system-store.md)は、ファイルシステム（ローカルまたはマウントされた共有）を使用してファイルを格納します。 これは*デフォルト*のファイルストアです。
+* [簡易ファイルシステムストア](./file-storage/other-file-store-types/simple-file-system-store.md)は、ファイルシステム（ローカルまたはマウントされた共有）を使用してファイルを格納します。 これは **デフォルト** のファイルストアです。
 
 * [S3 Store（Amazon Simple Storage Service）](./file-storage/other-file-store-types/amazon-s3-store.md)は、Amazonのクラウドベースのストレージを使用しています。
 
 * [DBStore（データベースストレージ）](./file-storage/other-file-store-types/dbstore.md)は、ファイルを`BLOB`としてDXPデータベースに保存します。 DBStoreのファイルサイズ制限は1ギガバイトです。 1ギガバイトを超えるファイルを保存するには、簡易ファイルシステムストアまたは高度なファイルシステムストアを使用します。
 
 ```{warning}
-ファイルシステムベースのストア（Simple、Advanced、S3）には、トランザクションロールバック機能がありません。 ドキュメントライブラリでデータベーストランザクションのロールバックが発生した場合、トランザクションのファイルシステムの変更は元に戻されません。 ドキュメントライブラリファイルとファイルシステムストア内のファイルとの間に不整合が発生する可能性があり、手動での同期が必要になる場合があります。 [DBStore](./file-storage/other-file-store-types/dbstore.md)以外のすべてのストアは、この制限に対して脆弱です。
+ファイルシステムベースのストア（Simple、Advanced、S3）には、トランザクションロールバック機能がありません。 ドキュメントライブラリでデータベーストランザクションのロールバックが発生した場合、トランザクションのファイルシステムの変更は元に戻されません。 ドキュメントライブラリファイルとファイルシステムストア内のファイルとの間に不整合が発生する可能性があり、手動での同期が必要になる場合があります。 [DBStore](./file-storage/other-file-store-types/dbstore.md) 以外のすべてのストアは、この制限に対して脆弱です。
 ```
 
 ### ファイルストア間でのファイルの移行

@@ -16,7 +16,7 @@ Liferayは、 [ClamAV Daemon](https://www.clamav.net/documents/scanning#clamd) (
 
 ここでは、ウイルス対策スキャンを有効にする方法を説明します。
 
-1. 別のサーバーで、[Clamdを設定・起動します](https://www.clamav.net/documents/scanning#clamd)。
+1. 別のサーバーで、 [Clamdを設定・起動します](https://www.clamav.net/documents/scanning#clamd) 。
 
     ```{important}
     Clamdを起動する前にClamAVデータベースを読み込みます。
@@ -38,15 +38,15 @@ Liferayは、 [ClamAV Daemon](https://www.clamav.net/documents/scanning#clamd) (
 
 1. Liferayサーバーを起動します。
 
-1. *［コントロールパネル］* &rarr;*［システム設定］*に移動し、セキュリティカテゴリで*［Antivirus］*を選択します。
+1. ［**コントロールパネル**］ &rarr; ［**システム設定**］ に移動し、セキュリティカテゴリで ［**Antivirus**］ を選択します。
 
-1. メニューで*［Antivirus Clamd Scanner］*を選択します。
+1. メニューで ［**Antivirus Clamd Scanner**］ を選択します。
 
     ![Antivirus Clamd Scannerの設定](./enabling-antivirus-scanning-for-uploaded-files/images/02.png)
 
 1. Clamdサーバーのホスト名またはIPアドレス、ポート、および接続タイムアウト時間（ミリ秒）を入力します。
 
-1. *［保存］*をクリックします。
+1. ［**保存**］ をクリックします。
 
 これで、Liferayアプリケーションへのアップロード時にファイルがスキャンされます。 アップロードするファイルでウイルスが検出された場合、スキャナーによって感染したファイルが報告されるので、ファイルの保存を却下する必要があります。
 

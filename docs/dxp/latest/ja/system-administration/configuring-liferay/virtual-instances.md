@@ -28,13 +28,13 @@ virtual-instances/infrastructure.md
 virtual-instances/third-party.md
 ```
 
-* [Understanding Virtual Instances](./virtual-instances/understanding-virtual-instances.md)
-* [Adding a Virtual Instance](./virtual-instances/adding-a-virtual-instance.md)
-* [Instance Configuration](./virtual-instances/instance-configuration.md)
-* [Users](./virtual-instances/users.md)
-* [User Authentication](./virtual-instances/user-authentication.md)
-* [Email Settings](./virtual-instances/email-settings.md)
-* [Analytics](./virtual-instances/analytics.md)
-* [Localization](./virtual-instances/localization.md)
-* [Infrastructure](./virtual-instances/infrastructure.md)
-* [Third Party](./virtual-instances/third-party.md)
+* [仮想インスタンスを理解する](./virtual-instances/understanding-virtual-instances.md)
+* [仮想インスタンスの追加](./virtual-instances/adding-a-virtual-instance.md)
+* [インスタンス設定](./virtual-instances/instance-configuration.md)
+* [ユーザー](./virtual-instances/users.md)
+* [ユーザー認証](./virtual-instances/user-authentication.md)
+* [メール設定](./virtual-instances/email-settings.md)
+* [アナリティクス](./virtual-instances/analytics.md)
+* [ローカライズ](./virtual-instances/localization.md)
+* [インフラストラクチャー](./virtual-instances/infrastructure.md)
+* [サードパーティー](./virtual-instances/third-party.md)

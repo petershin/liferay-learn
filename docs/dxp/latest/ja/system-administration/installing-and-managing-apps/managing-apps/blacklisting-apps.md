@@ -28,9 +28,9 @@ LPKGをブラックリストに登録すると、その内部モジュールが�
 
 次の手順に従って、アプリ、モジュール、プラグインをブラックリストに登録します。
 
-1. ［コントロールパネル］から、_ ［設定］_ &rarr; _［System Settings］ _ &rarr; _［Module Container］_へ行きます。 ［Bundle Blacklist］画面が表示されます。
+1. ［コントロールパネル］から、 ［**設定**］ &rarr; ［**System Settings**］ &rarr; ［**Module Container**］ へ行きます。 ［Bundle Blacklist］画面が表示されます。
 
-1. ［Bundle Blacklist］画面で、アンインストールするLPKGファイル、[モジュール](https://help.liferay.com/hc/articles/360035467532-OSGi-and-Modularity#modules)JAR、またはWARのバンドルシンボリック名を追加します。 各項目について、追加ボタン（![Add](../../../images/icon-add.png)）をクリックし、項目のバンドルシンボル名（ [下の表](#blacklist-bundle-symbolic-names)を参照）を入力します。 完了したら、_［保存］_ボタンをクリックします。 DXPはブラックリストに登録された項目をすぐにアンインストールします。
+1. ［Bundle Blacklist］画面で、アンインストールするLPKGファイル、 [モジュール](https://help.liferay.com/hc/articles/360035467532-OSGi-and-Modularity#modules) JAR、またはWARのバンドルシンボリック名を追加します。 各項目について、追加ボタン（![Add](../../../images/icon-add.png)）をクリックし、項目のバンドルシンボル名（ [下の表](#blacklist-bundle-symbolic-names) を参照）を入力します。 完了したら、 ［**保存**］ ボタンをクリックします。 DXPはブラックリストに登録された項目をすぐにアンインストールします。
    
    ![このブラックリストは、classic-theme プラグイン WAR、Liferayコラボレーション - Liferay Blogs - API モジュール、および com.acme.greeter モジュールをアンインストールするものです。](./blacklisting-apps/images/02.png)
 
@@ -45,7 +45,7 @@ LPKGをブラックリストに登録すると、その内部モジュールが�
 
 次の手順に従って、構成ファイルを使用してブラックリストに登録します。
 
-1. 現在使用中のブラックリストをエクスポートするには、そのアクションボタン（![操作](./blacklisting-apps/images/03.png)）から_［エクスポート］_ をクリックします。 ブラックリスト構成ファイルがダウンロードされます（`com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config`）。 次に、サンプルのブラックリストをエクスポートしたときのファイルの内容を示します。 
+1. 現在使用中のブラックリストをエクスポートするには、そのアクションボタン（![操作](./blacklisting-apps/images/03.png)）から ［**エクスポート**］ をクリックします。 ブラックリスト構成ファイルがダウンロードされます（`com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config`）。 次に、サンプルのブラックリストをエクスポートしたときのファイルの内容を示します。 
    
    
 
@@ -67,7 +67,7 @@ LPKGをブラックリストに登録すると、その内部モジュールが�
     ```
 
 
-1. 構成ファイルをデプロイするには、フォルダ`[Liferay Home]/osgi/configs`にコピーします。 [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md)フォルダは通常、アプリケーションサーバーの親フォルダです。
+1. 構成ファイルをデプロイするには、フォルダ`[Liferay Home]/osgi/configs`にコピーします。 [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) フォルダは通常、アプリケーションサーバーの親フォルダです。
 
 
 
@@ -91,7 +91,7 @@ LPKGをブラックリストに登録すると、その内部モジュールが�
 
 1. LPKG、モジュールJAR、またはWARのシンボリック名を`blacklistBundleSymbolicNames`リストから削除し、ファイルを保存します。
 
-ブラックリスト登録されている_すべての_アイテムを再インストールするには、次のいずれかのオプションを実行します。
+ブラックリスト登録されている **すべての** アイテムを再インストールするには、次のいずれかのオプションを実行します。
 
 * 構成ファイルを削除します。
 * [アプリケーションマネージャー](./using-the-app-manager.md)または[Felix Gogo シェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)を使用して、モジュール`com.liferay.portal.bundle.blacklist`をアンインストールします。
@@ -99,7 +99,7 @@ LPKGをブラックリストに登録すると、その内部モジュールが�
 
 
 ```{tip}
-ブラックリストに登録されているアイテムを一時的に再インストールするには、[*システム設定*]のバンドルブラックリストモジュールからそのシンボリック名を削除し、[*アップデート*]ボタンをクリックします。 ブラックリストの構成ファイル（``[Liferay Home]/osgi/configs``フォルダ内）を使用していて、その後のサーバー起動時にアイテムをインストールする場合は、アイテムのシンボリック名をファイルから忘れずに削除してください。
+ブラックリストに登録されているアイテムを一時的に再インストールするには、[*システム設定*]のバンドルブラックリストモジュールからそのシンボリック名を削除し、[*アップデート*]ボタンをクリックします。 ブラックリストの構成ファイル（`[Liferay Home]/osgi/configs`フォルダ内）を使用していて、その後のサーバー起動時にアイテムをインストールする場合は、アイテムのシンボリック名をファイルから忘れずに削除してください。
 ```
 
 

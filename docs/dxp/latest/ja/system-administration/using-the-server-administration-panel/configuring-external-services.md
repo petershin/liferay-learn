@@ -1,6 +1,6 @@
 # 外部サービスの構成
 
-Liferayは、ファイルの変換やファイルのプレビューを生成するための外部サービスとの統合を提供します。 これらのうち3つのサービスは、サーバー管理の設定で有効にすることができます。 [ImageMagick](https://www.imagemagick.org/script/index.php)、 [Ghostscript](https://www.ghostscript.com/)、および [Xuggler](http://www.xuggle.com/xuggler/)です。
+Liferayは、ファイルの変換やファイルのプレビューを生成するための外部サービスとの統合を提供します。 これらのうち3つのサービスは、サーバー管理の設定で有効にすることができます。 [ImageMagick](https://www.imagemagick.org/script/index.php) 、 [Ghostscript](https://www.ghostscript.com/) 、および [Xuggler](http://www.xuggle.com/xuggler/) です。
 
 ```{important}
 Liferay 7.3.xでは、Xugglerの統合は非推奨となっています。 ユーザーはLiferayのFFmpegインテグレーションを代替として使用することをお勧めします。 詳しくは[ドキュメントとメディアのプレビューの構成](../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)をご覧ください。
@@ -26,17 +26,17 @@ Liferay 7.1では、OpenOffice/LibreOfficeは、サーバー管理やポータ�
 
 ImageMagickとGhostscriptの両方がサーバーにインストールされたら、以下の手順でLiferayインスタンスのこれらのサービスを有効にします。
 
-1. *グローバルメニュー* （![Global Menu](../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］* &rarr; *［設定］* &rarr; *［サーバの管理］*へ行きます。
+1. **グローバルメニュー**（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**サーバの管理**］ へ行きます。
 
-1. *［外部サービス］* タブをクリックします。
+1. ［**外部サービス**］ タブをクリックします。
 
-1. ImageMagickとGhostscriptの *有効* をチェックします。
+1. ImageMagickとGhostscriptの **有効** をチェックします。
 
 1. ImageMagickおよびGhostscript実行可能ファイルへのパスが正しいことを確認します。
 
 1. リソース制限を構成します。
 
-1. 完了したら、*［保存］*をクリックします。
+1. 完了したら、 ［**保存**］ をクリックします。
 
 ## Xugglerを有効にする
 
@@ -48,19 +48,19 @@ Xugglerは、Linuxではglibcバージョン2.6以降が必要です。
 
 以下の手順で、LiferayインスタンスにXugglerをインストールして有効にします。
 
-1. *［グローバルメニュー］* （![Global Menu](../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］* &rarr; *［設定］* &rarr; *［サーバの管理］*へ行きます。
+1. ［**グローバルメニュー**］（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**サーバの管理**］ へ行きます。
 
-1. *［外部サービス］* タブをクリックします。
+1. ［**外部サービス**］ タブをクリックします。
 
 1. Xugglerの*有効化をチェックします。</p>
 
-   Xugglerがまだインストールされていない場合は、インストールするように促されます。 OSに適したJARを選択し、*［インストール］*をクリックします。 その後、サーバーを再起動すると変更が反映されます。 インストールが完了したら、 *［外部サービス］* タブに戻り、Xugglerを有効にすることができます。
+   Xugglerがまだインストールされていない場合は、インストールするように促されます。 OSに適したJARを選択し、 ［**インストール**］ をクリックします。 その後、サーバーを再起動すると変更が反映されます。 インストールが完了したら、 ［**外部サービス**］ タブに戻り、Xugglerを有効にすることができます。
 
    ![Xugglerがインストールされていない場合は、インストールするように促されます。](./configuring-external-services/images/02.png)</li>
 
 1
 
-*［保存］*をクリックします。</ol>
+［**保存**］ をクリックします。</ol>
 
 ## `portal-ext.properties` ファイルを使用して外部サービスを有効にする。
 

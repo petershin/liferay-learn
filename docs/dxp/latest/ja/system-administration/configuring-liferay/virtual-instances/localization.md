@@ -8,7 +8,7 @@
 | 標準時              | インスタンスの標準時を設定します                                         |
 | 言語選択（ウィジェットスコープ） | 言語選択ウィジェットのインスタンススコープのデフォルトを設定します。 ウィジェット自体でこの設定を上書きします。 |
 
-ローカライズ設定にアクセスするには、コントロールパネルを開き、*［設定］* &rarr; *［インスタンス設定］*に移動し、*［プラットフォーム］*セクション下の*［ローカライズ］*カテゴリを選択します。
+ローカライズ設定にアクセスするには、コントロールパネルを開き、 ［**設定**］ &rarr; ［**インスタンス設定**］ に移動し、 ［**プラットフォーム**］ セクション下の ［**ローカライズ**］ カテゴリを選択します。
 
 ![インスタンススコープのデフォルトの言語と標準時を設定します。](./localization/images/01.png)
 
@@ -16,4 +16,4 @@
 
 ## 追加情報
 
-* [Initial Instance Localization](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md)
+* [初期インスタンスのローカリゼーション](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md)

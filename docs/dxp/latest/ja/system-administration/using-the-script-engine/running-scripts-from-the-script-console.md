@@ -17,8 +17,8 @@
 スクリプトコンソールでサンプルスクリプトを実行する方法は次のとおりです。
 
 1. 管理者としてログインします。
-1. プロダクトメニューから、*［コントロールパネル］ * へ行き、*［設定］* &rarr; *［サーバ管理］ *を選択します。
-1. *［スクリプト］*をクリックします。 これがスクリプトコンソールです。 デフォルトのサンプルスクリプトは、ユーザー数をコンソール出力に出力します。
+1. プロダクトメニューから、 ［**コントロールパネル**］ へ行き、 ［**設定**］ &rarr; ［**サーバ管理**］ を選択します。
+1. ［**スクリプト**］ をクリックします。 これがスクリプトコンソールです。 デフォルトのサンプルスクリプトは、ユーザー数をコンソール出力に出力します。
 
     ```groovy
     // ### Groovy Sample ###
@@ -28,11 +28,11 @@
     out.println(number);
     ```
 
-1. *［Execute］*をクリックし、スクリプトコンソールの*出力*でユーザー数を確認します。
+1. ［**Execute**］ をクリックし、スクリプトコンソールの **出力** でユーザー数を確認します。
 
     ![スクリプトコンソールのサンプルのGroovyスクリプトは、ユーザー数をスクリプトコンソールの出力に出力します。](./running-scripts-from-the-script-console/images/01.png)
 
-Groovyのサンプルは、Liferayサービスユーティリティ[`UserLocalServiceUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html)を呼び出して、ユーザー数を取得します。 次に、`out`（組み込みの`PrintWriter`）を使用して、スクリプトコンソールに数を書き込みます。
+Groovyのサンプルは、Liferayサービスユーティリティ [`UserLocalServiceUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) を呼び出して、ユーザー数を取得します。 次に、`out`（組み込みの`PrintWriter`）を使用して、スクリプトコンソールに数を書き込みます。
 
 ```{note}
 *out.println*ではなく*System.out.println*を使用すると、出力はスクリプトコンソールではなくLiferayのログファイルに出力されます。

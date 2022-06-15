@@ -1,10 +1,10 @@
 # Amazon Simple Storage Service
 
-Amazon Simple Storage Service（S3）は、DXPのS3ストアがファイルをクラウドにシームレスに保存するために使用するクラウドベースのストレージソリューションです。 AWSアカウントを取得し、S3_バケット_を作成したら、S3ストアを設定できます。
+Amazon Simple Storage Service（S3）は、DXPのS3ストアがファイルをクラウドにシームレスに保存するために使用するクラウドベースのストレージソリューションです。 AWSアカウントを取得し、S3 **バケット** を作成したら、S3ストアを設定できます。
 
-[AWSアカウント](https://aws.amazon.com/s3/)を作成すると、Amazonから自分のアカウントにリンクする[一意のキー](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/)が割り当てられます。 これらのキーを使用して、次のセクションでS3ストアを設定します。
+[AWSアカウント](https://aws.amazon.com/s3/) を作成すると、Amazonから自分のアカウントにリンクする [一意のキー](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/) が割り当てられます。 これらのキーを使用して、次のセクションでS3ストアを設定します。
 
-S3はファイルストレージに_バケット_の概念を使用しています。 AmazonのUIで、DXPファイルの[バケット](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html)を作成します。 バケットは、DXPサーバーホストにできるだけ近い[地理的地域](https://docs.aws.amazon.com/general/latest/gr/s3.html)に設定してください。
+S3はファイルストレージに **バケット** の概念を使用しています。 AmazonのUIで、DXPファイルの [バケット](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) を作成します。 バケットは、DXPサーバーホストにできるだけ近い [地理的地域](https://docs.aws.amazon.com/general/latest/gr/s3.html) に設定してください。
 
 ```{note}
 AWS署名バージョン4リクエストの承認をサポートするためのアクションは必要ありません。
@@ -14,7 +14,7 @@ AWS署名バージョン4リクエストの承認をサポートするための�
 
 次の手順に従ってストアを設定します。
 
-1. Amazon S3にはSAXParserが必要です。 アプリケーションサーバーにSAXParserがまだない場合は、[Xerces SAXParser](https://xerces.apache.org/mirrors.cgi)をアプリケーションサーバーのグローバルライブラリフォルダ（Tomcatの場合は`/lib/ext`、JBoss EAPやWildFlyの場合は`/module`など）にダウンロードできます。
+1. Amazon S3にはSAXParserが必要です。 アプリケーションサーバーにSAXParserがまだない場合は、 [Xerces SAXParser](https://xerces.apache.org/mirrors.cgi) をアプリケーションサーバーのグローバルライブラリフォルダ（Tomcatの場合は`/lib/ext`、JBoss EAPやWildFlyの場合は`/module`など）にダウンロードできます。
 
 1. 次のプロパティを使用して、[`system-ext.properties`](../../../installation-and-upgrades/reference/system-properties.md)ファイルでSAXParserを指定します。
 
@@ -31,18 +31,18 @@ AWS署名バージョン4リクエストの承認をサポートするための�
     ```
 
 1. DXPを再起動します。
-1. ［コントロールパネル］から、* ［設定］* &rarr; *［System Settings］ * &rarr; *［File Storage］*へ行きます。
-1. *[S3 Store]*画面で、ストアを設定します。
+1. ［コントロールパネル］から、 ［**設定**］ &rarr; ［**System Settings**］ &rarr; ［**File Storage**］ へ行きます。
+1. [**S3 Store**] 画面で、ストアを設定します。
 
-    * **［Bucket Name］**：バケットの名前。
-    * **［Access Key］**：AWSアクセスキー。
-    * **［Secret Key］**：シークレットキー。
-    * **S3 Region**：[地理的地域](https://docs.aws.amazon.com/general/latest/gr/s3.html)。デフォルトは`us-east-1`です。
+    ***［Bucket Name**］ ：バケットの名前。
+    ***［Access Key**］ ：AWSアクセスキー。
+    ***［Secret Key**］ ：シークレットキー。
+    ***S3 Region** ： [地理的地域](https://docs.aws.amazon.com/general/latest/gr/s3.html) 。デフォルトは`us-east-1`です。
 
     ![Amazon S3ストアの設定](./amazon-s3-store/images/01.png)
 
 1. 他のフィールドはデフォルト設定のままにします。
-1. _［保存］_ をクリックします。
+1. ［**保存**］ をクリックします。
 
 DXPインスタンスがAmazon S3ストアを使用するようになりました。
 
@@ -54,7 +54,7 @@ DXPインスタンスがAmazon S3ストアを使用するようになりまし�
 
 クラスター環境でS3ストアを使用するには、以下の手順に従います。
 
-1. アプリケーションサーバーにまだSAXParserがない場合は、[Xerces SAXParser](https://xerces.apache.org/mirrors.cgi)を各ノードのアプリケーションサーバーのグローバルライブラリフォルダにコピーします。
+1. アプリケーションサーバーにまだSAXParserがない場合は、 [Xerces SAXParser](https://xerces.apache.org/mirrors.cgi) を各ノードのアプリケーションサーバーのグローバルライブラリフォルダにコピーします。
 
 1. `system-ext.properties`ファイルをDXPアプリケーションの`/WEB-INF/classes/`フォルダにコピーします。
 

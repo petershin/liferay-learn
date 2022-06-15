@@ -476,18 +476,18 @@ public class Main {
 
 		File finalFile = file;
 
-		String filePath = file.getPath();
+		String filePathString = file.getPath();
 
-		String imageUrl = _imageUrls.get(filePath);
+		String imageURL = _imageURLs.get(filePathString);
 
-		if (imageUrl == null) {
+		if (imageURL == null) {
 			Document document = _documentResource.postDocumentFolderDocument(
 				_getDocumentFolderId(
 					FilenameUtils.getPath(
-						filePath.substring(filePath.indexOf("/"), filePath.length()))),
+						filePathString.substring(filePathString.indexOf("/"), filePathString.length()))),
 				new Document() {
 					{
-						title = filePath;
+						title = filePathString;
 					}
 				},
 				new HashMap<>() {
@@ -496,12 +496,12 @@ public class Main {
 					}
 				});
 
-			imageUrl = document.getContentUrl();
+			imageURL = document.getContentUrl();
 		}
 
-		_imageUrls.put(filePath, imageUrl);
+		_imageURLs.put(filePathString, imageURL);
 
-		image.setUrl(_toBasedSequence(imageUrl));
+		image.setUrl(_toBasedSequence(imageURL));
 
 		_nodeVisitor.visitChildren(image);
 	}
@@ -514,7 +514,7 @@ public class Main {
 	private DocumentFolderResource _documentFolderResource;
 	private DocumentResource _documentResource;
 	private Set<String> _fileNames = new TreeSet<>();
-	private Map<String, String> _imageUrls = new HashMap<>();
+	private Map<String, String> _imageURLs = new HashMap<>();
 	private File _markdownFile;
 
 	private NodeVisitor _nodeVisitor = new NodeVisitor(

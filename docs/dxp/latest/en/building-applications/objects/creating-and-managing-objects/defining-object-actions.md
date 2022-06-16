@@ -1,12 +1,14 @@
 # Defining Object Actions
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.4+`
+{bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`
 
-With Liferay Objects, you can define actions that are triggered under specified conditions. When an action is active, Liferay listens for when an Object's data is added, deleted, or updated and then performs the set action.
+With Liferay Objects, you can define actions that are triggered under specified conditions. While an action is active, Liferay listens for when an Object's data is added, deleted, or updated and then performs the set action.
 
-```{important}
-Currently, Actions only supports triggering *webhooks* that deliver a payload to an external source to sync and process data.
-```
+Currently, Liferay supports two action types:
+
+* *Webhook* actions deliver a payload to an URL.
+
+* *Groovy Script* actions execute custom Groovy code.
 
 Follow these steps to define actions for an Object:
 
@@ -20,9 +22,15 @@ Follow these steps to define actions for an Object:
 
 1. While viewing the Object, select the *Actions* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
-1. Enter a *name*.
+1. In the *Basic Info* tab, enter a *name* and *description* for the action.
 
-1. For When, determine the action's trigger.
+   ![Enter an action name and description in the Basic Info tab.](./defining-object-actions/images/01.png)
+
+1. Go to the the *Action Builder* tab to define a custom trigger, conditions, and action.
+
+   ![Go to the Action Builder tab to define a custom trigger, conditions, and action.](./defining-object-actions/images/02.png)
+
+1. For Trigger, determine *when* the action is performed.
 
    | Trigger | Description |
    | :--- | :--- |
@@ -30,27 +38,31 @@ Follow these steps to define actions for an Object:
    | On After Delete | When an Object entry is deleted |
    | On After Update | When an Object entry is updated |
 
-1. For Then, select *Webhook*. This determines the type of action performed.
+   ![Determine when the action is performed.](./defining-object-actions/images/03.png)
 
-1. Enter a *URL* for the webhook.
+   <!--1. (Optional) After selecting a trigger, you can use expressions to set additional conditions for the trigger.-->
 
-1. (Optional) Enter a *secret* for the webhook.
+   <!--![Use expressions to set additional conditions for the trigger.](./defining-object-actions/images/04.png)-->
 
-   ![Enter a name, trigger, action type, and URL.](./defining-object-actions/images/01.png)
+1. For Action, select *Webhook* or *Groovy Script* to determine the type of action performed.
+
+   If you've selected *Webhook*, enter a *URL* and *secret* (if applicable).
+
+   ![Enter a webhook URL and secret.](./defining-object-actions/images/05.png)
+
+   If you've selected *Groovy Script*, enter your custom script into the provided code window.
+
+   ![Enter a custom Groovy Script.](./defining-object-actions/images/06.png)
 
 1. Click *Save*.
 
-   ```{note}
-   After saving an action, you cannot change its trigger (i.e. When field) or action type (i.e. Then field).
-   ```
-
 Once created, the action is active and is triggered according to your configuration.
 
-![The action is activated after saving.](./defining-object-actions/images/02.png)
+![The action is activated after saving.](./defining-object-actions/images/07.png)
 
-If desired, you can deactivate an action at any time. Select the action, toggle the switch to *Inactive*, and click *Save*.
+If desired, you can deactivate an action at any time. To do this, go to the action's *Basic Info* tab, toggle the *Active* switch, and click *Save*.
 
-![Actions can be deactivated at any time.](./defining-object-actions/images/03.png)
+![Toggle the Active switch to deactivate the action.](./defining-object-actions/images/08.png)
 
 ## Additional Information
 

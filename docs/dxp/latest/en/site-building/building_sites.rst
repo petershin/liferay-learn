@@ -7,6 +7,7 @@ Building Sites
    building-sites/adding-a-site.md
    building-sites/building-sites-with-site-templates.md
    building-sites/merging-site-template-changes.md
+   building-sites/configuring-site-template-propagation.md
    building-sites/sharing-site-templates.md
    building-sites/site-hierarchies.md
    building-sites/managing-personal-sites.md
@@ -16,6 +17,7 @@ Building Sites
 -  :doc:`/site-building/building-sites/adding-a-site`
 -  :doc:`/site-building/building-sites/building-sites-with-site-templates`
 -  :doc:`/site-building/building-sites/merging-site-template-changes`
+-  :doc:`/site-building/building-sites/configuring-site-template-propagation`
 -  :doc:`/site-building/building-sites/sharing-site-templates`
 -  :doc:`/site-building/building-sites/site-hierarchies`
 -  :doc:`/site-building/building-sites/managing-personal-sites`

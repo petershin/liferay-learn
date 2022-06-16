@@ -14,6 +14,10 @@ Three Site Templates are provided out-of-the-box:
 
 - **Intranet Site:** Creates a preconfigured Site for an intranet. The Home page displays the Site members' activities, a language selector, and a list of the recent content created in the intranet on the home page. It also provides two additional pages for Documents and Media and external News obtained through public feeds.
 
+```{tip}
+Site Templates are best for designing and maintaining Pages for multiple Sites. If you need to create and maintain Web Content and other assets across Sites, use [Asset Libraries](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md).
+```
+
 ## Creating a Site from a Site Template
 
 To create a Site using a Site Template, follow these steps:

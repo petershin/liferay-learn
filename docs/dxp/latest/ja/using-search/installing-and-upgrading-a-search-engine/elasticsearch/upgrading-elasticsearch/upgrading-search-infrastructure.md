@@ -14,7 +14,7 @@ Liferayをアップグレードする際に、Elasticsearchを使用した場合
 [Elasticsearchのバックアップ](./backing-up-elasticsearch.md)を行ってから、この手順を進めてください。
 ```
 
-1. Elasticsearch 7の最低限サポートされているバージョンであることを確認してください。 そうでない場合は、 [サポートされている最新のElasticsearch](https://help.liferay.com/hc/ja/articles/360016511651) に[アップグレード](upgrading-to-elasticsearch-7.md)してください。 新しいElasticsearchクラスタをインストールし、アップグレードしたLiferayに接続することは可能ですが、ElasticsearchクラスタにLiferay DXP 7.2や7.3の検索の調整機能用のインデックスのようにプライマリストレージとして使用するインデックスがあった場合、一部のデータが失われる可能性があります。 [プライマリストレージに使用するインデックスのバックアップと復元](backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) および 7.4 の検索の調整インデックスのインポートを参照してください。
+1. Elasticsearch 7の最低限サポートされているバージョンであることを確認してください。 そうでない場合は、[サポートされている最新のElasticsearch](https://help.liferay.com/hc/en-us/articles/360016511651)に[アップグレード](upgrading-to-elasticsearch-7.md)してください。新しいElasticsearchクラスタをインストールし、アップグレードしたLiferayに接続することは可能ですが、ElasticsearchクラスタにLiferay DXP 7.2や7.3の検索の調整機能用のインデックスのようにプライマリストレージとして使用するインデックスがあった場合、一部のデータが失われる可能性があります。[プライマリストレージに使用するインデックスのバックアップと復元](backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) および[7.4の検索の調整インデックスのインポート]を参照してください。
    
 1 [LiferayとElasticsearch を接続](../connecting-to-elasticsearch.md)し、[セキュリティ](../securing-elasticsearch.md)を設定します。
 

@@ -1,0 +1,36 @@
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'テーマの概要',
+					sectionURL: 'themes/introduction-to-themes.html',
+					showAll: false,
+				},
+				{
+					sectionName: 'テーマのアップグレード',
+					sectionURL: 'themes/upgrading-a-theme.html',
+					showAll: false,
+				},
+        {
+					sectionName: 'テーマ開発',
+					sectionURL: 'themes/theme_development.html',
+					showAll: false,
+					subsections: [
+						{
+							name: '環境の設定とテーマの作成 (近日公開！)',
+							url: 'themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html'
+						},
+						{
+							name: 'サムネイルプレビューをテーマにバンドルする',
+							url: 'themes/theme-development/bundling-resources/bundling-a-thumbnail-preview-into-your-theme.html'
+						},
+					]
+				},
+      ]
+		}
+	})
+</script>

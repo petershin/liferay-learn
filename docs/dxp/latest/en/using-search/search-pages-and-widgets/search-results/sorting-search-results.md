@@ -43,7 +43,7 @@ From the Sort widget's Configuration screen, you can
 ![Users can re-order search results with the Sort widget.](./sorting-search-results/images/04.gif)
 
 ```{note}
-Relevance can be turne don or off, but not removed completely. This is because <!-- Quesiton for SME: why is relevance different form the other options? We just need a brief statement -->
+Relevance can be turned on or off, but not removed completely. When relevance is enabled, the default search engine behavior is used: results are sorted in descending order of relevance (highest scores first).
 ```
 
 To access the widget configuration screen, open the widget Options menu (![Options](../../../images/icon-app-options.png)) and click _Configuration_.

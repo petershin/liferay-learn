@@ -42,6 +42,10 @@ From the Sort widget's Configuration screen, you can
 
 ![Users can re-order search results with the Sort widget.](./sorting-search-results/images/04.gif)
 
+```{note}
+Relevance can be turne don or off, but not removed completely. This is because <!-- Quesiton for SME: why is relevance different form the other options? We just need a brief statement -->
+```
+
 To access the widget configuration screen, open the widget Options menu (![Options](../../../images/icon-app-options.png)) and click _Configuration_.
 
 Each Sort option has three settings: _Indexed Field Name_, _Display Label_, and _Order_.
@@ -51,7 +55,7 @@ Each Sort option has three settings: _Indexed Field Name_, _Display Label_, and 
 
 **Display Label:** Set the displayed label for the type of sort being configured.
 
-**Order:** Choose to sort in ascending or descending order. In the classic configuration, 
+**Order:** Choose to sort in ascending or descending order. See [Controlling the Sort Order in the Classic Configuration](#controlling-the-sort-order-in-the-classic-configuration) if you're using the classic view or if you're on an earlier Liferay verison that does not contain the updated configuration UI.
 
 ![From the Sort widget's configuration, add, edit, or remove Sort options.](./sorting-search-results/images/02.png)
 
@@ -134,7 +138,7 @@ The `+` sign following the field name indicates that the order is _ascending_.  
 
 ## Sorting by Nested Fields
 
-> Availability: 7.2 FP12+, 7.3 FP2+
+{bdg-secondary}`Available 7.2 FP12+, 7.3 FP2+, 7.4 (all updates)`
 
 As described in [Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-ddm-fields), DDM Fields became [nested fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) as of Liferay 7.2 SP3+/FP8+ (and on all Liferay 7.3 versions). On the latest Fix Pack and GA release of 7.2 and 7.3, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for these nested fields.
 

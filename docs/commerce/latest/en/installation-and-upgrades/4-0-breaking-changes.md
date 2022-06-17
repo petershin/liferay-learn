@@ -1,4 +1,4 @@
-# What are the Breaking Changes for Liferay Commerce 4.0?
+# 4.0 Breaking Changes
 
 This document presents a chronological list of changes that break existing functionality, APIs, or contracts with third party Liferay Commerce developers or users in Commerce 4.0. We try our best to minimize these disruptions, but sometimes they are unavoidable.
 
@@ -46,11 +46,11 @@ Anyone who references or uses these destinations.
 
 ### How should I update my code?
 
-Update any explicit reference to commerce destinations with the new names.
+Update any explicit reference to Commerce destinations with the new names.
 
 ### Why was this change made?
 
-This change was introduced to follow the Liferay naming pattern.
+This change introduces Liferay's naming pattern for the Commerce destinations.
 
 ## Destination Names Changed
 
@@ -60,7 +60,7 @@ This change was introduced to follow the Liferay naming pattern.
 
 ### What changed?
 
-Methods that reference `externalReferenceCode` have been rearranged.
+Rearrangement of methods that reference the `externalReferenceCode`.
 
 Classes with updated methods:
 
@@ -157,12 +157,12 @@ This change was introduced to follow Liferay source formatting.
 ### What changed?
 
 * The `MiniCart` Tag and FE React Component have been extended to support partial and total replacement of its component views and labels and have some of its features configurable, either via standard Tag attribute, or via direct import of the JS implementation.
- 
- * The exposed `MiniCartTag` attributes changed.
- 
- * The `commerce-frontend-js` module is now exposed with a proper interface to allow a controlled access and exposure of its content (and in particular, of the `MiniCartContext` which is needed for `MiniCart` integration).
- 
- * Usability and extensibility of the MiniCart component is documented [here](https://issues.liferay.com/browse/LRDOCS-9462).
+
+  * The exposed `MiniCartTag` attributes changed.
+  
+  * The `commerce-frontend-js` module is now exposed with a proper interface to allow a controlled access and exposure of its content (and in particular, of the `MiniCartContext` which is needed for `MiniCart` integration).
+  
+  * Usability and extensibility of the MiniCart component is documented [here](https://issues.liferay.com/browse/LRDOCS-9462).
 
 ### Who is affected?
 
@@ -188,25 +188,25 @@ Alignment with Liferay DXP standards to support component extensibility.
 
 * Foreign keys that references `CommerceCountry` and `CommerceRegion` have been renamed from `commerceCountryId` and `commerceRegionId` to `countryId` and `regionId` respectively. Tables that have columns that were updated are:
 
- * `CommerceAddress`
-
- * `CommerceAddressRestriction`
- 
- * `CommerceShippingFixedOptionRel`
- 
- * `CommerceTaxFixedRateAddressRel`
-
-* `com.liferay.commerce.country.CommerceCountryManager` is added for retrieving commerce-specific countries. Available methods are:
-
- * `getBillingCountries`
-
- * `getBillingCountriesByChannelId`
-
- * `getShippingCountries`
- 
- * `getShippingCountriesByChannelId`
-
- * `getWarehouseCountries`
+  * `CommerceAddress`
+  
+  * `CommerceAddressRestriction`
+  
+  * `CommerceShippingFixedOptionRel`
+  
+  * `CommerceTaxFixedRateAddressRel`
+  
+  * `com.liferay.commerce.country.CommerceCountryManager` is added for retrieving Commerce-specific countries. Available methods are:
+  
+  * `getBillingCountries`
+  
+  * `getBillingCountriesByChannelId`
+  
+  * `getShippingCountries`
+  
+  * `getShippingCountriesByChannelId`
+  
+  * `getWarehouseCountries`
 
 ### Who is affected?
 
@@ -321,15 +321,15 @@ Due to Soy/MetalJS deprecation, alignment with Liferay DXP to support Liferay Cl
 
 ### What changed?
 
-Any methods in commerce `*ServiceImpl` classes with name `upsert*` are now renamed to `addOrUpdate*`.
+Any methods in Commerce `*ServiceImpl` classes with name `upsert*` are now renamed to `addOrUpdate*`.
 
 ### Who is affected?
 
-Developers who are using any `*ServiceImpl` `upsert*` methods will now need to use the new corresponding methods `addOrUpdate*`.
+Developers who are using any `*ServiceImpl` `upsert*` methods must use the corresponding methods `addOrUpdate*`.
 
 ### Why was this change made?
 
-This change was introduced to follow Liferay source formatting.
+This change introduces Liferay's source formatting to the above methods.
 
 ## BOM Feature Is Replaced by Shop by Diagram Feature
 
@@ -339,7 +339,7 @@ This change was introduced to follow Liferay source formatting.
 
 ### What changed?
 
-BOM feature is replaced by Shop by Diagram feature. This means that the enties Folder and BOM entry do not exist and there is a new Product Type called Diagram.
+Shop by Diagram replaces the BOM feature. This means that the entries Folder and BOM entry do not exist and there is a new Product Type called Diagram.
 
 ### Who is affected?
 
@@ -347,7 +347,7 @@ Product specialists that need to create diagrams for their store will not need t
 
 ### Why was this change made?
 
-This change was introduced to fix BOM issues and to better fullfill spare parts use cases.
+This change fixes BOM issues and better fulfills spare parts use cases.
 
 ## Remove the Accounts widget so it is no longer a module in Liferay Commerce
 
@@ -357,7 +357,7 @@ This change was introduced to fix BOM issues and to better fullfill spare parts 
 
 ### What changed?
 
-Commerce Account widget is replaced by Account widget. All instances on a previously running system are updated.
+The Account widget replaces the Commerce Account widget. All instances on a an existing running system have been updated.
 
 ### Who is affected?
 
@@ -367,7 +367,7 @@ Commerce Account widget is replaced by Account widget. All instances on a previo
 
 ### Why was this change made?
 
-This change was introduced to be compliant with Commerce Account migration to Account.
+This change was necessary to conform with the migration of Commerce Account to Account.
 
 ## Refactor CommerceOrderLocalServiceImpl
 
@@ -377,15 +377,15 @@ This change was introduced to be compliant with Commerce Account migration to Ac
 
 ### What changed?
 
-* The method `updateCommerceOrder` has been reduced down from 4 methods to 3.
+* There are now only three instances of the `updateCommerceOrder` method, instead of four.
 
-* The method `updateCustomFields` has been removed.
+* Removed the `updateCustomFields` method.
 
-* The method `updateOrderStatus` has been removed.
+* Removed the `updateOrderStatus` method.
 
-* The method `updateTransactionId` has been removed.
+* Removed the `updateTransactionId` method.
 
-* The method `updateUser` has been removed.
+* Removed the `updateUser` method.
 
 ### Who is affected?
 
@@ -415,13 +415,13 @@ This change was introduced to clean up the class `CommerceOrderLocalServiceImpl`
 
 ### What changed?
 
-* The method `addCommerceOrder` in `CommerceOrderLocalService` and `CommerceOrderService` have parameters that have been rearranged.
+* Rearrangement of parameters for the `addCommerceOrder` method in `CommerceOrderLocalService` and `CommerceOrderService`.
 
-* The method `addOrUpdateCommerceOrder` in `CommerceOrderLocalService` and `CommerceOrderService` have parameters that have been rearranged.
+* Rearrangement of parameters for the `addOrUpdateCommerceOrder` method in `CommerceOrderLocalService` and `CommerceOrderService`.
 
-* The method `updateCommerceOrder`  in `CommerceOrderLocalService` and `CommerceOrderService` have parameters that have been rearranged.
+* Rearrangement of parameters for the `updateCommerceOrder` method in `CommerceOrderLocalService` and `CommerceOrderService`.
 
-* The method `updateCommerceOrderPrices` in `CommerceOrderLocalService` and `CommerceOrderService` have parameters that have been rearranged.
+* Rearrangement of parameters for the `updateCommerceOrderPrices` method in `CommerceOrderLocalService` and `CommerceOrderService`.
 
 ### Who is affected?
 

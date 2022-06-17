@@ -15,7 +15,7 @@ Users with *Update* permissions for Pages and Web Content can manually translate
 Translate permissions are language specific and grant access to the *Translate* action for Content Pages and Web Content. Users with Translate permissions can only use languages they've been assigned. Once granted, these permissions cannot be restricted by individual assets.
 
 ```{note}
-The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
+The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
 ```
 
 Follow these steps to assign Translate permissions for specific languages:

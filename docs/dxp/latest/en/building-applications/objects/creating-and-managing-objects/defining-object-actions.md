@@ -40,7 +40,7 @@ Follow these steps to define actions for an Object:
 
    ![Determine when the action is performed.](./defining-object-actions/images/03.png)
 
-   <!--1. (Optional) After selecting a trigger, you can use expressions to set additional conditions for the trigger.-->
+   <!--1. (Optional) After selecting a trigger, you can use expressions to set additional conditions for the trigger. Click the ![Code](../../../images/icon-code.png) button to view available expressions.-->
 
    <!--![Use expressions to set additional conditions for the trigger.](./defining-object-actions/images/04.png)-->
 

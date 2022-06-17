@@ -26,7 +26,7 @@ To get started with the Sort widget,
 ## Configuring the Sort Widget
 
 ```{note}
-The Sort widget's configuration screen was changed in 7.4 Update/GA 6. For a period of time you can choose to use the older configuration screen by clicking the link _Switch to Classic View_.
+The Sort widget's configuration screen is updated in Liferay 7.4 DXP Update 29+/CE GA 29+. For a period of time you can choose to use the older configuration screen by clicking the link _Switch to Classic View_.
 
 ![Toggle between the classic Sort configuration and the newer, more intuitive configuration screen.](./sorting-search-results/images/03.png)
 

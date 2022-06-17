@@ -1,12 +1,11 @@
-# Configuring Propagation of Site Template Changes
+# Configuring Site Template Propagation
 
-{bdg-secondary}`Available for Liferay 7.4 U_+ and GA_+`
-<!--CONFIRM VERSION-->
+{bdg-secondary}`Available for Liferay 7.4 U23+ and GA23+`
 
-With Site Templates, you can configure the trigger for Site Template propagation. By default, Liferay triggers propagation for each Site individually when it is first visited by a user after changes are published. However, you can configure your system to trigger propagation to all connected Sites immediately after publishing.
+With Site Templates, you can configure the trigger for Site Template propagation. By default, Liferay triggers propagation for each Site individually when it is first visited by a user after changes are published. However, you can configure your system to also trigger propagation to connected Sites simultaneously whenever automatic propagation is enabled for the template.
 
 ```{note}
-Keep in mind that triggering propagation immediately after publishing can be resource intensive, since all Sites using the template are updated simultaneously.
+Keep in mind that automatic propagation can be resource intensive, depending the scope of changes made to a template.
 ```
 
 Follow these steps:
@@ -15,13 +14,17 @@ Follow these steps:
 
 1. Go to *Infrastructure* settings and click *Site Templates* in the side menu.
 
-1. Check *Trigger Propagation* to trigger propagation to all connected Sites immediately after publishing.
+1. Check *Trigger Propagation*.
+
+   If unchecked, changes are propagated to sites individually when they’re first visited by a user.
+
+   If checked, enabling automatic propagation in a template also triggers propagation for all connected sites simultaneously.
 
    ![Check Trigger Propagation.](./configuring-site-template-propagation/images/01.png)
 
 1. Click *Save*.
 
-If propagation is enabled for a Site Template, publishing changes to it immediately begins propagating the changes to connected Sites in the background. <!--ALT: If propagation is enabled for a Site Template, Liferay immediately beings to propagate those changes to connected Sites in the background.-->
+If propagation is disabled for a Site Template, enabling propagation immediately begins propagating changes to connected Sites simultaneously. While propagation remains enabled for the template, subsequent changes are propagated to sites individually when they’re first visited by a user.
 
 ## Additional Information
 

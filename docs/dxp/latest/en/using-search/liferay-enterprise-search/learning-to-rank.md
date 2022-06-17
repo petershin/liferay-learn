@@ -85,6 +85,10 @@ Use [Suggestions](../search-pages-and-widgets/search-results/enabling-search-sug
 
 See [the Elasticsearch Learning to Rank plugin documentation](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/#installing) to learn about installing the Learning to Rank plugin.
 
+```{warning}
+If you're running Liferay DXP 7.2 with Elasticsearch 7.14+, the plugin must be compiled with JDK8 or JDK11 (whichever your Liferay installation is using) before installing it. Refer to [this article](https://help.liferay.com/hc/en-us/articles/5194953858701) for the required steps and additional background information.
+```
+
 You'll be running a command like this one, depending on the plugin version you're installing:
 
 ```bash

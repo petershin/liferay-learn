@@ -1,6 +1,6 @@
 # ポータル開発者プロパティ
 
-開発を促進する[ポータルプロパティ](../../installation-and-upgrades/reference/portal-properties.md)があります。 Liferayの [`portal-developer.properties`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/portal-impl/src/portal-developer.properties) ファイルには、それらすべてが含まれています。 `portal-developer.properties`ファイルは、この設定を`portal-ext.properties`ファイルの先頭に追加することで有効になります。
+開発を促進する [ポータルプロパティ](../../installation-and-upgrades/reference/portal-properties.md) があります。 Liferayの [`portal-developer.properties`](hhttps://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-impl/src/portal-developer.properties) ファイルには、それらすべてが含まれています。 `portal-developer.properties`ファイルは、この設定を`portal-ext.properties`ファイルの先頭に追加することで有効になります。
 
 ```properties
 include-and-override=portal-developer.properties

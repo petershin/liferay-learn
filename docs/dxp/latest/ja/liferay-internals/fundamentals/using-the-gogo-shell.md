@@ -44,7 +44,7 @@ Gogoシェルは、モジュールフレームワークと対話するための�
     ![［出力］セクションには、コマンドの結果が表示されます。](./using-the-gogo-shell/images/03.png)
 
 ```{warning}
-Gogoシェルは非常に強力で、プラットフォームのコア機能を操作することができます。 Gogoシェルへのアクセスは、信頼できる管理者にのみ許可してください。 詳細については、[Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)を参照してください。
+Gogoシェルは非常に強力で、プラットフォームのコア機能を操作することができます。 Gogoシェルへのアクセスは、信頼できる管理者にのみ許可してください。 詳細については、[ロールと権限について](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)を参照してください。
 ```
 
 <a name="まとめ" />

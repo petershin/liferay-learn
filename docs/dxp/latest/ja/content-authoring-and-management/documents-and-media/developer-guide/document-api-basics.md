@@ -434,7 +434,7 @@ java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 
 [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`Document`および`DocumentFolder`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 
-[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1 **0/DocumentResource.java) および [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY** LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) のJavaインターフェースも参照してください。
+[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) および [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) のJavaインターフェースも参照してください。
 
 ## 追加情報
 

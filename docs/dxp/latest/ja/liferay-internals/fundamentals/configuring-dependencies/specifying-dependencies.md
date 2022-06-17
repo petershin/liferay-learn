@@ -36,7 +36,7 @@
 
     **モジュールの依存関係の場合は** 、必要なモジュールをデプロイします。 詳細は、[アプリのインストールと管理](../../../system-administration/installing-and-managing-apps/installing-apps.md)を参照してください。
 
-    **ライブラリの依存関係の場合は** 、[Resolving Third Party Library Dependencies](./resolving-third-party-library-package-dependencies.md)の手順に従ってください。
+    **ライブラリの依存関係の場合は** 、[サードパーティライブラリパッケージの依存関係の解決](./resolving-third-party-library-package-dependencies.md)の手順に従ってください。
 
 依存関係の指定は、信頼できるスキルです。
 

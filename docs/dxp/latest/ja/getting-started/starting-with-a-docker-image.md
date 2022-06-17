@@ -23,7 +23,7 @@ Liferay Portalは、説得力のある柔軟なWebエクスペリエンスを構
     ```
 
     ```{tip}
-    起動の完了を示す「org.apache.catalina.startup.Catalina.start Server startup in ［x］ milliseconds」が表示されるまで待ちます。
+    起動の完了を示す `org.apache.catalina.startup.Catalina.start Server startup in ［x］ milliseconds` が表示されるまで待ちます。
     ```
 
 1. ブラウザで`https://localhost:8080`を開きます。
@@ -52,6 +52,6 @@ Liferay DXPは、世界中で使用されている商用サポート済みのエ
 
 引き続きスタートガイドを進め、[管理者アカウント](./introduction-to-the-admin-account.md)を使用して初めてログインする方法を学習します。
 
-状況をチェックする以上のことをしますか？ 詳細は、[Installing a Liferay DXP Tomcat Bundle](../installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.md)を参照してください。
+状況をチェックする以上のことをしますか？ 詳細は、[Liferay-Tomcatバンドルのインストール](../installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.md)を参照してください。
 
 [Dockerイメージの使用](../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)に関する詳細をご覧ください。

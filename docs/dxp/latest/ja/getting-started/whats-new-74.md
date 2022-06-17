@@ -8,31 +8,31 @@ Liferay DXP 7.4は、強化された機能と大幅な改良が施されおり�
 
 これで、 [ページ上の任意の要素でA/Bテストを実行できるようになりました](../site-building/optimizing-sites/ab-testing/creating-ab-tests.md)。 Liferay DXP 7.4以前は、［Click Goal］としてボタンやリンクしか選択できませんでした。 Liferay DXP 7.4では、任意のページ要素をその［Element ID］を含めることで選択できるようになりました。
 
-![ページ上のどの要素でもA/Bテストを実行できるようになりました。](./whats-new-74/images/image4.png)
+![ページ上のどの要素でもA/Bテストを実行できるようになりました。](./whats-new-74/images/04.png)
 
 ### よりインサイトのあるコンテンツ監査ツール
 
-コンテンツダッシュボードの [コンテンツ監査ツール](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md)では、バーをクリックして結果を拡大できるようになり、1つのボキャブラリカテゴリにのみ割り当てられたコンテンツがグラフに表示されるようになりました。 今回の機能強化により、マーケティング担当者は誤って分類されたコンテンツを簡単に発見できるようになりました。
+コンテンツダッシュボードの [コンテンツ監査ツール](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md)では、バーをクリックして結果を拡大できるようになり、1つのボキャブラリカテゴリにのみ割り当てられたコンテンツがグラフに表示されるようになりました。 今回の機能強化により、マーケティング担当者は誤って分類されたコンテンツを簡単に発見できるようになりました。./whats-new-74/images/03.png
 
-![コンテンツ監査の結果を拡大表示します。](./whats-new-74/images/image3.png)
+![コンテンツ監査の結果を拡大表示します。](./whats-new-74/images/03.png)
 
 ### コンテンツ監査ツールのUXの改善
 
 また、コンテンツダッシュボードの [コンテンツ監査ツール](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md)の使い勝手もいくつか改善されています。 例えば、監査の対象とするボキャブラリの選択がより簡単になり、棒グラフの軸をワンクリックで反転させることができるようになりました。
 
-![ボキャブラリーを選択し、バーチャートの軸を反転させます。](./whats-new-74/images/image10.png)
+![ボキャブラリーを選択し、バーチャートの軸を反転させます。](./whats-new-74/images/10.png)
 
 ### コンテンツパフォーマンスツールでのトラフィック獲得チャネル
 
-[Content Performance Tool](../content-authoring-and-management/content-performance-panel/analyze-content-metrics-using-content-performance-panel.md) のトラフィック獲得チャネルは、<0>Analytics Cloud</0> のデータを使用しており、オーガニック検索、有料検索、ソーシャル・トラフィック、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
+[Content Performance Tool](../content-authoring-and-management/content-performance-panel/analyze-content-metrics-using-content-performance-panel.md) のトラフィック獲得チャネルは、[Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) のデータを使用しており、オーガニック検索、有料検索、ソーシャル・トラフィック、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
 
-![トラフィック獲得チャネルには、検索、ソーシャル、リファラルデータなどがあります。](./whats-new-74/images/image9.png)
+![トラフィック獲得チャネルには、検索、ソーシャル、リファラルデータなどがあります。](./whats-new-74/images/09.png)
 
 ### あらゆるタイプのページのコンテンツパフォーマンス解析
 
 コンテンツパフォーマンスパネルは、すべてのページで利用できるようになりました。すべてのアセット、コンテンツ、およびウィジェットページのページテンプレートを表示します。 Liferay DXP 7.4以前では、コンテンツパフォーマンスツールは、ディスプレイページテンプレートを介してレンダリングされたWebコンテンツでのみ利用可能でした。
 
-![コンテンツパフォーマンスパネルは、すべてのページタイプに使用できます。](./whats-new-74/images/image6.png)
+![コンテンツパフォーマンスパネルは、すべてのページタイプに使用できます。](./whats-new-74/images/06.png)
 
 ## 優れたDXの構築
 
@@ -40,19 +40,19 @@ Liferay DXP 7.4は、強化された機能と大幅な改良が施されおり�
 
 Liferay DXP 7.4からは、ページのSEOやアクセシビリティを監査するために、 [ページ監査ツール](../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md) を使用することができます。 ページ監査ツールは [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights) サービスを使用して、Liferay DXPに特定の推奨事項を提供します。  新しいページ監査ツールでは、ページが最高のパフォーマンス、アクセシビリティ、検索エンジンのメタデータ、およびSEOのプラクティスに準拠しているかどうかをチェックできます。
 
-![Google PageSpeed Insightsの統合により、推奨事項を提供します。](./whats-new-74/images/image2.png)
+![Google PageSpeed Insightsの統合により、推奨事項を提供します。](./whats-new-74/images/02.png)
 
 ### エクスペリエンスの複製や下書きがより柔軟に
 
 [Liferay DXP Experiences](../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md)を下書きや複製して、デフォルトのエクスペリエンスを別のものに置き換えることができます。 これらの機能強化により、エクスペリエンスの作成と管理がより柔軟に行えるようになりました。
 
-![エクスペリエンスを簡単に再現し、ドラフトすることができます。](./whats-new-74/images/image7.png)
+![エクスペリエンスを簡単に再現し、ドラフトすることができます。](./whats-new-74/images/07.png)
 
 ### コンテンツダッシュボードで新たにドキュメントの表示
 
 ドキュメントは [コンテンツダッシュボード](../content-authoring-and-management/content-dashboard/about-the-content-dashboard.md)に表示されるようになり、アセットタイプやMIMEタイプに基づいた新しいフィルタが追加されました。 これらのフィルターは、コンテンツダッシュボードのフィルターと並び替えドロップダウンメニューからアクセスできます。
 
-![コンテンツダッシュボードに新しいフィルターが追加されました。](./whats-new-74/images/image1.png)
+![コンテンツダッシュボードに新しいフィルターが追加されました。](./whats-new-74/images/01.png)
 
 ### アカウント管理ウィジェット
 
@@ -104,7 +104,7 @@ Liferay Objectsは、アセット、ワークフロー、権限など、既存�
 
 コレクション表示フラグメントでコレクションアイテムをページ分割できるようになりました。 この新機能は、多数のアイテムを含むコレクションに特に有効です。 大規模なコレクションがより読みやすくなり、ユーザビリティと全体的なエクスペリエンスが向上します。
 
-![コレクション表示フラグメントでコレクションをページ分割できるようになりました。](./whats-new-74/images/image11.png)
+![コレクション表示フラグメントでコレクションをページ分割できるようになりました。](./whats-new-74/images/11.png)
 
 ### コレクション表示のフラグメントの検索とフィルタリング
 
@@ -112,19 +112,19 @@ Liferay DXP 7.4には2つの新しいフラグメントが含まれています�
 
 これらのフィルターをコレクション表示フラグメントとともにページで使用すると、さまざまな基準に基づいてコレクションをフィルタリングし、コレクションにどのようなフィルターが適用されたかを表示することができます。
 
-![新しいフィルターは、ユーザーがコレクション内のデータを見つけるのに役立ちます。](./whats-new-74/images/image5.png)
+![新しいフィルターは、ユーザーがコレクション内のデータを見つけるのに役立ちます。](./whats-new-74/images/05.png)
 
 ### 関連アイテムコレクションで、ある特定のアイテムに関連するアイテムを表示
 
 コレクション表示フラグメントを使用する際に、新しい［Related Items Collection Providers ］タブを使用して、関連するコレクションからアイテムを選択して表示できるようになりました。
 
-![これで、関連アイテムの選択が容易になりました。](./whats-new-74/images/image14.png)
+![これで、関連アイテムの選択が容易になりました。](./whats-new-74/images/14.png)
 
 ### コレクションプロバイダのプレフィルタリングオプションの定義
 
 開発者は、特定の構成フィールドを使用してコレクションプロバイダーをカスタマイズできるようになりました。 これにより、ユーザーはコレクションプロバイダーを事前にフィルタリングし、コレクション表示フラグメントのアイテムをより柔軟に選択できます。 ユーザーは、コレクション表示フラグメントの［Actions］メニューからフィルターにアクセスできます。
 
-![コレクションプロバイダーを事前にフィルタリングできるようになりました。](./whats-new-74/images/image12.png)
+![コレクションプロバイダーを事前にフィルタリングできるようになりました。](./whats-new-74/images/12.png)
 
 ### マッピング要素としてコレクションプロバイダーのサブタイプフィールドの指定
 
@@ -134,13 +134,13 @@ Infoフレームワークでコレクションプロバイダーを構築する�
 
 あるビューポートではフラグメントを非表示にし、別のビューポートでは表示したままにすることができます。 この新機能により、特定のユーザープラットフォーム向けにコンテンツの応答性をさらにカスタマイズすることができます。
 
-![あるビューポートではフラグメントを非表示にし、別のビューポートでは表示したままにすることができます。](./whats-new-74/images/image8.png)
+![あるビューポートではフラグメントを非表示にし、別のビューポートでは表示したままにすることができます。](./whats-new-74/images/08.png)
 
 ### コンテンツページおよび表示ページテンプレートのアダプティブメディアのネイティブサポート
 
 [コンテントページの画像にアダプティブメディア](../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings) を使用し、ターゲットの画面サイズに基づいて画像の解像度を動的に調整することが可能になりました。 [アダプティブメディアに画像解像度を追加](../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/adding-image-resolutions.md)した後、コンテントページの画像の［Resolution］のドロップダウンメニューに解像度が表示されます。
 
-![アダプティブメディアでは、画面サイズに応じて画像の解像度を動的に調整できるようになりました。](./whats-new-74/images/image13.gif)
+![アダプティブメディアでは、画面サイズに応じて画像の解像度を動的に調整できるようになりました。](./whats-new-74/images/13.gif)
 
 ## デジタルエクスペリエンスの立ち上げと維持のためのコストと労力の削減
 

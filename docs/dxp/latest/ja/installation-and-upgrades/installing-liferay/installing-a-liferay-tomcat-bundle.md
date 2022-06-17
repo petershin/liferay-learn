@@ -3,7 +3,7 @@
 Tomcatバンドルには、Liferay DXP/Portalが事前にデプロイされたApache Tomcatアプリケーションサーバーが含まれています。 これは、Liferayをオンプレミスにインストールする最も簡単で最速の方法です。
 
 ```{note}
-すでに以下のアプリケーションサーバーを使用している場合は、使用しているサーバーの名前をクリックすると、そのサーバーにLiferayを配備する手順が表示されます。 [Tomcat](./installing-liferay-on-an-application-server/installing-on-tomcat.md)、[WildFly](./installing-liferay-on-an-application-server/installing-on-wildfly.md)、[JBoss EAP] (./notr index='0' /> (./installing-liferay-n-application-server/installing-on-wildfly.md)、 [JBoss EAP](./installing-liferay-on-an-application-server/installing-on-jboss-eap.md)、[WebLogic](./installing-liferay-on-an-application-server/installing-on-weblogic.md)、または [WebSphere](./installing-liferay-on-an-application-server/installing-on-websphere.md) 
+すでに以下のアプリケーションサーバーを使用している場合は、使用しているサーバーの名前をクリックすると、そのサーバーにLiferayを配備する手順が表示されます。 [Tomcat](./installing-liferay-on-an-application-server/installing-on-tomcat.md)、[WildFly](./installing-liferay-on-an-application-server/installing-on-wildfly.md)、[JBoss EAP](./installing-liferay-on-an-application-server/installing-on-jboss-eap.md)、[WebLogic](./installing-liferay-on-an-application-server/installing-on-weblogic.md)、または [WebSphere](./installing-liferay-on-an-application-server/installing-on-websphere.md) 
 ```
 
 ```{note}

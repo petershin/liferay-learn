@@ -152,16 +152,6 @@ This entry contains only one property:
 
 **`indexingBatchSizes`**: Set the number of documents (the default value is 1000) indexed per batch for model types that support batch indexing. For models with large documents, decreasing this value may improve stability when executing a full re-index.
 
-### Reindexer
-
-**Configuration File:** `com.liferay.portal.search.configuration.ReindexerConfiguration.config`
-
-These properties configure the Reindexer service in the Search framework. They are experimental and only useful when troubleshooting certain specific scenarios under the direction of Liferay's support personnel. Never use these configurations in production systems. 
-
-**`nonbulkIndexingOverride`**: Set this to true to force modified entities to be re-indexed one by one rather than in batches. For performance reasons, this setting must not be enabled in production systems.
-
-**`synchronousExecutionOverride`**: Set this to true to force re-indexing of modified entities to block other portal processes until completed. For performance reasons, this setting must not be enabled in production systems.
-
 ### Engine Helper
 
 **Configuration File:** `com.liferay.portal.search.configuration.SearchEngineHelperConfiguration.config`

@@ -2,6 +2,10 @@
 
 > **Subscribers**
 
+```{note}
+This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+```
+
 Result Rankings are for changing the list of returned results for specific keywords.
 
 With Results Rankings you can

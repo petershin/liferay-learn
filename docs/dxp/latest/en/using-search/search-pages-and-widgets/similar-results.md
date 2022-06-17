@@ -4,6 +4,10 @@
 
 {bdg-link-secondary}`Bundled with DXP 7.3 and 7.4; Liferay Marketplace for DXP 7.2 SP2+/FP5+ <https://web.liferay.com/marketplace/-/mp/application/172465398>`
 
+```{note}
+This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+```
+
 The Similar Results widget shows search results similar to the _main asset_ that's selected on the page.
 
 The concept of the main asset is important. Certain widgets in DXP display lists of assets: Asset Publisher, Blogs, Wiki, and more. If a user clicks one of the displayed assets and the widget shows its full content on the page, it's now the page's _main asset_. The Similar Results widget, if placed on the same page, shows a list of assets that are similar enough to be returned by a [_More Like This_ query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html). The concept of a main asset is synonymous with Elasticsearch's [_input document_](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_how_it_works).

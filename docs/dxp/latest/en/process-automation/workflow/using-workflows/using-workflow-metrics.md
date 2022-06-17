@@ -2,6 +2,10 @@
 
 > Subscription
 
+```{warning}
+This feature works [only with Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+```
+
 _Workflow Metrics_ gives insight into the time spent to complete certain workflow events. To use it, set up deadlines on a workflow process's events. These deadline configurations are referred to as SLAs (Service Level Agreements). Once defined, Workflow Reports measure compliance with the SLAs. They're like a contract between the workflow participants and Users submitting workflow items. _Workflow Reports_ shows data for all processes with SLAs, including each workflow item's SLA status: on time or overdue.
 
 ```{important}

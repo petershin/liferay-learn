@@ -1,5 +1,9 @@
 # Filtering Search Results
 
+```{note}
+This feature works [only with Elasticsearch](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+```
+
 With Custom Filters, you can contribute queries to the main search query, filtering search results to exert control over what's returned in the Search Results widget. You can make the filter widgets visible or invisible and decide if they're changeable or immutable.
 
 ![Apply a custom filter to weed out certain search results.](./filtering-search-results/images/03.png)

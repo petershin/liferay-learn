@@ -2,6 +2,10 @@
 
 > **Subscribers**
 
+```{note}
+This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+```
+
 A Synonym Set is a group of words or phrases with the same meaning. An administrative User creates the Synonym Set; when a search page end user searches for a keyword or phrase, the synonymous terms in the set are also searched. 
 
 For example, a user might search for the word "US". Most likely, the user would want search results that also included synonyms such as *America*, *U.S.A*, *United States*, etc. By creating Synonym Sets, you can ensure your users get the most out of their searches.

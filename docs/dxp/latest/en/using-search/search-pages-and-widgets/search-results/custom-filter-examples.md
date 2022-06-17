@@ -1,5 +1,8 @@
 # Custom Filter Examples
 
+```{note}
+This feature works [only with Elasticsearch](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+```
 
 The Custom Filter widget is a powerful aid to your search tuning efforts. Without deploying custom code, you can exert control over the query sent to the search engine. Some common use cases are presented here to help you understand how to approach the Custom Filter widget:
 

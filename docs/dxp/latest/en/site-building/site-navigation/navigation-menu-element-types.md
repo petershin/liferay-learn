@@ -8,27 +8,27 @@ Specific pages are some of the most common elements used for Navigation Menus. Y
 
 ## Submenus
 
-Submenus are placeholder elements you can add to Navigation Menus to group more menu elements under them without, needing a specific page or content for it. When used on a page, submenu elements do not have clickable links, but expand to show their child elements when Users hover over them.
+Submenus are placeholder elements you can add to Navigation Menus to group additional menu elements under them without, needing a specific page or content for it. When used on a page, submenu elements do not have clickable links, but expand to show their child elements when users hover over them.
 
 ![Submenu elements in the Navigation Menu are not clickable, but their contained child elements are.](./navigation-menu-element-types/images/01.png)
 
-Using the default Application Display Template for Navigation Menus, if a submenu has no other elements organized under it, then it does not appear in the Navigation Menu for User.
+Using the default Application Display Template for Navigation Menus, if a submenu has no other elements organized under it, then it does not appear in the Navigation Menu for user.
 
 ## Blogs Entries
 
-You can add a [blog entry](../../content-authoring-and-management/blogs/adding-blog-entries.md) as an independent menu element that links to the entry's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a blog entry without a Display Page is added, then it does not have a link, so it is hidden from Users on the menu. This behavior can change if you use a different Application Display Template.
+You can add a [blog entry](../../content-authoring-and-management/blogs/adding-blog-entries.md) as an independent menu element that links to the entry's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a blog entry without a Display Page is added, then it does not have a link, so it is hidden from users on the menu. This behavior can change if you use a different Application Display Template.
 
 ## Web Content Articles
 
-You can add a [web content article](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md) as an independent menu element that links to the article's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a web content article without a Display Page is added, then it does not have a link, so it is hidden from Users on the menu. This behavior can change if you use a different Application Display Template.
+You can add a [web content article](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md) as an independent menu element that links to the article's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a web content article without a Display Page is added, then it does not have a link, so it is hidden from users on the menu. This behavior can change if you use a different Application Display Template.
 
 ## Documents
 
-You can add a [document](../../content-authoring-and-management/documents-and-media/documents-and-media-overview.md) as an independent menu element that links to the document's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a document without a Display Page is added, then it does not have a link, so it is hidden from Users on the menu. This behavior can change if you use a different Application Display Template.
+You can add a [document](../../content-authoring-and-management/documents-and-media/documents-and-media-overview.md) as an independent menu element that links to the document's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a document without a Display Page is added, then it does not have a link, so it is hidden from users on the menu. This behavior can change if you use a different Application Display Template.
 
 ## Categories
 
-You can add a [Category](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-categories) as a menu element that links to the Category's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a category without a Display Page is added, then it does not have a link, so it is hidden from Users on the menu. This behavior can change if you use a different Application Display Template.
+You can add a [Category](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-categories) as a menu element that links to the Category's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a category without a Display Page is added, then it does not have a link, so it is hidden from users on the menu. This behavior can change if you use a different Application Display Template.
 
 From Liferay 7.4 versions U9+ and GA13+, you can select multiple Categories at once. Adding a Category together with Subcategories under it places them in the Navigation Menu in the correct hierarchy.
 
@@ -50,7 +50,7 @@ Using the default Application Display Template for Navigation Menus (which can c
 
 ## URLs
 
-You can also add a Navigation Menu element with a custom URL, that does not need to be tied to any specific content. When you add a URL element to a Navigation Menu, you must input the display name of the menu element and the URL that the element points to on click. Check the *Open in a new tab* checkbox if you want the URL to open in a separate tab in the User's browser.
+You can also add a Navigation Menu element with a custom URL, that does not need to be tied to any specific content. When you add a URL element to a Navigation Menu, you must input the display name of the menu element and the URL that the element points to on click. Check the *Open in a new tab* checkbox if you want the URL to open in a separate tab in the user's browser.
 
 ![To add a URL menu element, enter the name and the URL to point to.](./navigation-menu-element-types/images/03.png)
 

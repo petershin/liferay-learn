@@ -74,7 +74,7 @@ All changes to the menu are saved.
 
 ### Using Dynamic Vocabulary Elements
 
-[Vocabulary Navigation Menu elements](./navigation-menu-element-types.md#vocabularies) are dynamic: when one is displayed on a page, it adds all of the Categories and Subcategories in its current hierarchy instead of a single element. Any changes to the Vocabulary's contents are automatically reflected in the menu.
+[Vocabulary Navigation Menu elements](./navigation-menu-element-types.md#vocabularies) are dynamic; when one is displayed on a page, it adds all of the Categories and Subcategories in its current hierarchy instead of a single element. Any changes to the Vocabulary's contents are automatically reflected in the menu.
 
 Dynamic Vocabulary elements allow you to quickly and easily update your Navigation Menus when you have changing hierarchies of items. For example, you can use Categories to represent types of products in a [Catalog](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html), and then let any updates to your Categories automatically update any menus using the Vocabulary. Then, depending on the [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) used for those Categories, any changes to the categorization may automatically reflect in the pages and the Navigation Menu.
 

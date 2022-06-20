@@ -944,7 +944,7 @@ This change was made so that a collection's variations can be retrieved when usi
 ### Removed
 
 - abdera.jar, axiom-api.jar and axiom-impl.jar - [LPS-142131](https://issues.liferay.com/browse/LPS-142131)
-- xuggle-xuggler-noarch.jar - [LPS-143939](https://issues.liferay.com/browse/LPS-143939)
+- xuggle-xuggler-noarch.jar - [LPS-143939](https://issues.liferay.com/browse/LPS-143939) Note, FFmpeg replaced Xuggler. See [Enabling FFmpeg for Audio and View Previews](../../content-authoring-and-management/documents-and-media/devops/enabling-ffmpeg-for-audio-and-video-previews.md) to learn more.
 - bcmail.jar and bcprov.jar - [LPS-143945](https://issues.liferay.com/browse/LPS-143945)
 - ant.jar - [LPS-143953](https://issues.liferay.com/browse/LPS-143953)
 - aspectj-rt.jar and aspectj-weaver.jar - [LPS-143999](https://issues.liferay.com/browse/LPS-143999)

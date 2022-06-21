@@ -72,7 +72,7 @@ Tomcat以外のアプリケーションサーバーのバンドルをダウン�
 [WebSphere](../../../installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md)および[Weblogic](../../../installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md)アプリケーションサーバーへの Liferayのインストール手順には、サイドカーサーバーを初期化するために必要な Elasticsearchアーカイブを手動で提供する手順が含まれています。
 
 ```{important}
-バンドルされているElasticsearchサーバは、開発およびテスト目的に有用であり、本番環境では使用しないでください。 See [Installing Elasticsearch](./getting-started-with-elasticsearch.md) to learn about installing a remote search engine.
+バンドルされているElasticsearchサーバは、開発およびテスト目的に有用であり、本番環境では使用しないでください。 リモート検索エンジンのインストールについては、[Elasticsearchのインストール](./getting-started-with-elasticsearch.md)をご参照ください。
 ```
 
 ## Embeddedとサイドカーの比較

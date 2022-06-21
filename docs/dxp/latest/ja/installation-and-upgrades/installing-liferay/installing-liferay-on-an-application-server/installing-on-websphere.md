@@ -211,10 +211,10 @@ Liferay DXPは、DXPに組み込まれているデータソースを使用する
 WebSphereを使用してデータベース接続を管理する場合は、以下の手順に従ってください。 それ以外の場合、DXPの組み込みデータソースを使用する場合は、このセクションをスキップしてください。
 
 ```{warning}
-Liferayは、デモ目的でデフォルトでHSQLを使用しています。 HSQLは、Liferay DXPの本番環境インスタンスでは使用*しない*でください。
+Liferayは、デモ目的でデフォルトでHSQLを使用しています。 HSQLは、Liferay DXPの本番環境インスタンスでは使用 *しない* でください。
 ```
 
-![図3：WebSphere JDBCプロバイダー](./installing-on-websphere/images/03.png)
+![Figure 3: WebSphere JDBC providers](./installing-on-websphere/images/03.png)
 
 1. DXP WAR（7.4以降）またはデータベースベンダーからJDBC JARを入手し、`[インストール場所]/WebSphere/AppServer/lib/ext`フォルダにコピーします。
 1. WebSphereを起動します。

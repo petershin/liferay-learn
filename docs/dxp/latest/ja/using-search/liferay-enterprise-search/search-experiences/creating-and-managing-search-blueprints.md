@@ -15,13 +15,7 @@
 1. [ブループリントの計画](./planning-a-blueprint.md)に応じて、次にこれらのメニューを使用して [ブループリント](./understanding-search-blueprints.md#what-is-a-blueprint) の構築を継続することになります。
 
    - [クエリビルダー](#using-the-query-builder) : クエリ要素セクションで、ブループリントの要素を選択または作成して、検索に新しいクエリー条件を追加します。 クエリ設定セクションで、クエリの追加設定（検索するアセットタイプやオブジェクトタイプなど）を行います。
-
-        ```{note}
-        ブループリントの作成に必要な要素をすぐに利用することができます。 しかし、Search Experiencesアプリケーションを既存のLiferayインストールにインストールした場合、ブループリントUIに要素を表示するために`SXPElement`エンティティのインデックスを再作成する必要があります。 ［コントロールパネル］ &rarr; ［検索］ &rarr; ［Index Actions］ に移動し、 `com.liferay.search.experiences.model.SXPElement` エントリーを見つけ、［_Execute_ ］をクリックします。
-
-        ![SXPElementモデルのインデックスを再作成し、すぐに使用できるすべてのの要素を表示します](./creating and-managing-search-blueprints/images/09.png)
-        ```
-
+   
    - [設定](#adding-configurations) : 検索における詳細設定（ソートや集計など）を行います。
 
 1. ブループリントを構築し、構成しながらテストします。 ［**Preview**］ をクリックし、検索キーワードを入力してください。
@@ -118,7 +112,7 @@ CRUDオプションに加えて、検索ブループリントは [インポー�
 
 * 内部的な制限により、Liferayの `Indexer`s をすべて有効にするか無効にするかを選択する必要があります。 他の条件コントリビューターは、より柔軟に管理できます。すべてのコントリビューターを含めるか、まったく含めないか、または希望するコントリビューターのサブセットを選択します。
 
-![特定の句のコントリビューターまたはすべてのインデクサが検索クエリに句を貢献することを無効にします。](./creating and-managing-search-blueprints/images/07.png)
+![特定の句のコントリビューターまたはすべてのインデクサが検索クエリに句を貢献することを無効にします。](./creating-and-managing-search-blueprints/images/07.png)
 ```
 
 

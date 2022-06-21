@@ -1,6 +1,6 @@
 # Amazon Simple Storage Service
 
-Amazon Simple Storage Service（S3）は、DXPのS3ストアがファイルをクラウドにシームレスに保存するために使用するクラウドベースのストレージソリューションです。 AWSアカウントを取得し、S3 **バケット** を作成したら、S3ストアを設定できます。
+Amazon Simple Storage Service は、DXPのS3ストアがファイルをクラウドにシームレスに保存するために使用するクラウドベースのストレージソリューションです。 AWSアカウントを取得し、S3 **バケット** を作成したら、S3ストアを設定できます。
 
 [AWSアカウント](https://aws.amazon.com/s3/) を作成すると、Amazonから自分のアカウントにリンクする [一意のキー](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/) が割り当てられます。 これらのキーを使用して、次のセクションでS3ストアを設定します。
 

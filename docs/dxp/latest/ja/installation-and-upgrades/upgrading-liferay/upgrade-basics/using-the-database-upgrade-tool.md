@@ -108,12 +108,9 @@ Liferayインスタンスから切り離された状態でデータベースを�
     ```
 
 
-    上記のコマンドは、アプリケーションサーバーで推奨されているのと同じJVMオプションでアップグレードツールを実行します。 File encoding (`UTF-8`), time zone (`GMT`), country, language, and memory settings (`-Xmx value`) should all match your application server's settings. For databases with over 10 GB of data, allocate additional memory using the `-Xmx` option.
+    上記のコマンドは、アプリケーションサーバーで推奨されているのと同じJVMオプションでアップグレードツールを実行します。 ファイルのエンコーディング（`UTF-8`）、タイムゾーン（`GMT`）、国、言語、メモリ設定（`-Xmx値`）は、すべてアプリケーションサーバーの設定と一致させる必要があります。10GB 以上のデータを持つデータベースの場合、`-Xmx` オプションを使用して追加のメモリを割り当てます。
     
-    If you haven't configured the upgrade using the [upgrade properties files](../reference/database-upgrade-tool-reference.md#manual-configuration) , the upgrade tool prompts you for configuration values and shows default values in parentheses. 次に対話の例を示します。
-    
-
-
+    ファイルのエンコーディング（UTF-8）、タイムゾーン（GMT）、国、言語、メモリ設定（-Xmx値）は、すべてアプリケーションサーバーの設定と一致させる必要があります。10GB 以上のデータを持つデータベースの場合、-Xmxオプションを使用して追加のメモリを割り当てます。[アップグレードのプロパティファイル](../reference/database-upgrade-tool-reference.md#manual-configuration) を使ってアップグレードの設定をしていない場合、アップグレードツールは設定値の入力を促し、デフォルト値を括弧で囲んで表示します。
 
     ```
     Please enter your application server (tomcat):
@@ -136,11 +133,9 @@ Liferayインスタンスから切り離された状態でデータベースを�
     (etc.)
     ```
 
-
     プロンプトに表示されるデフォルト値を使用する場合は、Enterキーを押します。
     
-    After configuration completes, the upgrade starts. The tool logs each upgrade process start and completion.
-    
+    設定が完了すると、アップグレードが開始されます。このツールは、アップグレード処理の開始と完了をそれぞれ記録します。
 
 1. アップグレードが完了したら、データベースのアップグレードの失敗、エラー、または警告がないか、[アップグレードレポート](../reference/upgrade-reports.md)を確認してください。 [Gogo Shellコマンド](../upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md)を使用して、それらの問題をトラブルシューティングし、アップグレードを完了できます。
 
@@ -176,7 +171,6 @@ Liferayインスタンスから切り離された状態でデータベースを�
 これが試用版のアップグレードで、アップグレード時間を短縮したい場合は、データベースをアップグレード用に調整し（まだ行っていない場合）、データベースから[不要なデータを削除](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md)してください。 必要に応じてこの記事の手順を繰り返してください。
 
 問題が発生した場合は、[アップグレードレポート](../reference/upgrade-reports.md)を確認し、 [アップグレードのトラブルシューティング](../reference/troubleshooting-upgrades.md) を参照してください。
-
 
 
 ## 次のステップ

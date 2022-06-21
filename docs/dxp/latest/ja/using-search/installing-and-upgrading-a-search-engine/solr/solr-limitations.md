@@ -10,9 +10,9 @@ LiferayのSolr統合には、Liferay Commerceおよび以下の機能の使用�
 
 * [ワークフロー統計情報](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
 * [カスタムフィルター検索ウィジェット](../../search-pages-and-widgets/search-results/filtering-search-results.md)
-* 低レベル検索オプションウィジェット
-* 検索のチューニング：検索結果のカスタマイズ
-* 検索チューニング：同義語
+* [低レベル検索オプションウィジェット](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md)
+* [検索のチューニング：検索結果のカスタマイズ](../../search-administration-and-tuning/result-rankings.md)
+* [検索チューニング：同義語](../../search-administration-and-tuning/synonym-sets.md)
 
 ## 開発者機能の制限
 

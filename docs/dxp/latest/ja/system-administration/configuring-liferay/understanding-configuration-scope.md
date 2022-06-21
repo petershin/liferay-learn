@@ -3,7 +3,8 @@
 Liferay DXPのサービスとアプリケーションの設定は、4つのレベルのいずれか、または **スコープ**（システム、仮想インスタンス、サイト、またはウィジェット）で適用されます。 システム設定で行われた設定は、システムスコープレベルで設定されます。 システム以外のラベルが付いたスコープの場合、システム設定値がデフォルトとして機能します。 つまり、システム全体の設定がオーバーライドされる場所を特定します。 真のシステムスコープの設定（カテゴリの **システムスコープ** 見出しの下にあるもの）は、どこでもオーバーライドされません。
 
 
-<!-- Ideally, I think it would be more helpful for the below image to be a diagram that represents the relationship scopes have to one another. --> ![一部のシステム設定カテゴリは、複数のスコープのエントリを保持します。](./understanding-configuration-scope/images/02.png)
+<!-- Ideally, I think it would be more helpful for the below image to be a diagram that represents the relationship scopes have to one another. --> 
+![一部のシステム設定カテゴリは、複数のスコープのエントリを保持します。](./understanding-configuration-scope/images/02.png)
 
 ## スコープ定義
 

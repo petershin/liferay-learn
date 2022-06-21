@@ -17,7 +17,7 @@ Liferay DXP 7.1、7.2、7.3の間の設定や手順の違いは、この説明�
 ここで提供されるElasticsearch API呼び出しは、Kibanaの開発ツールコンソールにコピーして貼り付けることができ、別のKibanaインストールまたは[LES モニタリングウィジェット](../monitoring-elasticsearch.md)からアクセスできます。
 
 ```{note}
-Kibanaを使うには、複数のElasticsearchクラスタ（この例では2つのシングルノードクラスタ）が稼働していることを思い出してください。 The `elasticsearch.hosts: [ "http://localhost:<port>" ]` setting in Kibana's `kibana.yml` file must point to the correct port when managing the indexes and other configurations described below to avoid mixing the leader and the follower clusters. Here, it's assumed that your leader Elasticsearch cluster node uses port `9200` and the follower uses port `9202`. 
+Kibanaを使うには、複数のElasticsearchクラスタ（この例では2つのシングルノードクラスタ）が稼働していることを思い出してください。Kibanaの `kibana.yml` ファイルにある `elasticsearch.hosts: [ "http://localhost:<port>" ]` 設定は、リーダークラスタとフォロワークラスタが混在しないよう、後述のインデックス管理等の設定を行う際に正しいポートを指す必要があります。ここでは、リーダーのElasticsearchクラスタノードがポート `9200` を使用し、フォロワーがポート `9202` を使用することを想定しています。
 ```
 
 ## クラスターLiferay DXP

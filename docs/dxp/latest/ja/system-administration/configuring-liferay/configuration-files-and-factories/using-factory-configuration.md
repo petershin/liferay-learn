@@ -3,7 +3,7 @@
 ほとんどのLiferay DXPシステム設定では、1つのエントリに1つの設定セットしか許可されていません。 設定を変更するには、単一の設定フォームを更新します。これは、[影響を受ける設定全体](../understanding-configuration-scope.md)に適用されます。 あまり一般的ではあり **が、設定は同時に共存する複数のエントリをサポートします。これらは** Factory設定*と呼ばれます。 Factory設定の場合、各設定セットは固有の設定を提供します。 一般的な使用法は、サードパーティサーバー（LDAPやElasticsearchなど）へのシステムスコープの接続の設定です。 これらのサーバーへの接続ごとに固有の設定値が必要であるため、Factory設定を使用してそれを可能にします。</p>
 
 ```{tip}
-Factory設定例：[組織タイプの追加] (../../../users-and-permissions/organizations/adding-a-new-organization-type.md) がサポートされており、現実の階層をモデル化したり、階層ルールを適用する必要がある場合に便利です。 Liferay DXPでは、各組織タイプはシステム設定のFactory設定エントリーで作成されます。
+Factory設定例：[組織タイプの追加](../../../users-and-permissions/organizations/adding-a-new-organization-type.md) がサポートされており、現実の階層をモデル化したり、階層ルールを適用する必要がある場合に便利です。 Liferay DXPでは、各組織タイプはシステム設定のFactory設定エントリーで作成されます。
 ```
 
 ## Factory設定の特定

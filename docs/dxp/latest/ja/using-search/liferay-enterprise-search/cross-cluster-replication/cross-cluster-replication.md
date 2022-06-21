@@ -46,12 +46,12 @@ Liferay DXPは、ワイドエリアネットワーク（WAN）プロトコルを
 | liferay-20101-workflow-metrics-transitions          | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロートランジションに関するデータを保存する  |
 
 ```{important}
-Liferay 7.2のインデックス名は、パッチによってインデックスの命名パターンに変更が加えられたため、より複雑になっています。 See [Multi-Tenant Index Names](../../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names) for more information.
+Liferay 7.2のインデックス名は、パッチによってインデックスの命名パターンに変更が加えられたため、より複雑になっています。 詳しくは、[マルチテナントインデックス名](../../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names) をご覧ください。
 Liferay 7.1のインストールには、会社とシステムのインデックスだけが含まれています。
 ```
 
 ```{note}
-Liferay DXPは、カスタムElasticsearchインデックスを作成、使用（書き込み、読み込み）するためのAPIを提供します。 See the [Developer Guide](../../developer-guide.html) for information on using these APIs.
+Liferay DXPは、カスタムElasticsearchインデックスを作成、使用（書き込み、読み込み）するためのAPIを提供します。このAPIの使用については、[開発者ガイド](../../developer-guide.html)を参照してください。
 ```
 
 [Liferay Commerce](https://www.liferay.com/products/commerce) サブスクリプションがあり、インストールでアクティブ化されている場合は、次のようなインデックスもあります。
@@ -74,8 +74,8 @@ CCRにはElasticsearchプラチナレベルのライセンスが必要ですが�
 
 ## Liferay DXPをElasticsearchに接続する
 
-```{important}
-最初にLiferay Clusteringの動作を設定します。 チュートリアルの例では、テスト用にいくつかの設定を行っています。 See the [clustering documentation](../../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md) for more information on setting up a production cluster.
+````{important}
+最初にLiferay Clusteringの動作を設定します。チュートリアルの例では、テスト用にいくつかの設定を行っています。本番クラスタの設定については、[高可用性のクラスタリング](../../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md) をご参照ください。
 ```
 
 すべてのLiferay DXPノードには、2つのElasticsearch構成が必要です。本番モードを有効にし、リモートElasticsearch接続を宣言します。 これに対応するために、リモートElasticsearch接続をElasticsearch接続で設定する必要があります。 フォロワーのElasticsearchクラスターから読み取りを行うノードにも、追加の接続を定義する必要があります。 （`.config`ファイルまたはシステム設定で）適切な構成値を指定してから、DXPノードを起動（または再起動）します。 リーダーインデックスの読み取りと書き込みを行うノードが正しく機能していることを確認します。

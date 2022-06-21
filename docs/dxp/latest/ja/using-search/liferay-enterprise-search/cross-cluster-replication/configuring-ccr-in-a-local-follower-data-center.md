@@ -11,7 +11,7 @@
 ローカルElasticsearchクラスターはフォロワー（レプリケート済み、読み取り専用）インデックスを保持する必要があり、同じ場所にあるLiferay DXPノードが読み取ることができるローカル検索エンジンとして機能します。
 
 ```{important}
-**CCRインストールのセキュリティ:** [前述](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication and-encryption) したように、Elasticsearchクラスタは同じCAによって署名されたノード証明書と各クラスターのセキュリティ設定が一致する必要があります。 その他のアプローチや詳細については、 [Elasticのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cross-cluster-configuring.html) を参照してください。
+**CCRインストールのセキュリティ:** [前述](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption) したように、Elasticsearchクラスタは同じCAによって署名されたノード証明書と各クラスターのセキュリティ設定が一致する必要があります。 その他のアプローチや詳細については、 [Elasticのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cross-cluster-configuring.html) を参照してください。
 ```
 
 1. `elasticsearch.yml`を構成します。
@@ -71,7 +71,7 @@
    Liferay DXP 7.3の場合、これには`*ElasticsearchConnectionConfiguration-remote.config` と`*ElasticsearchConfiguration.config`が含まれています。
 
    ```{important}
-   ElasticsearchConfiguration.config` の `remoteClusterConnectionId` の値は、 `ElasticsearchConnectionConfiguration-remote.config` ファイルの `connectionId` と一致する必要があります。 
+   `ElasticsearchConfiguration.config` の `remoteClusterConnectionId` の値は、 `ElasticsearchConnectionConfiguration-remote.config` ファイルの `connectionId` と一致する必要があります。 
    ```
 
    Liferay DXP 7.1および7.2では、 `*ElasticsearchConfiguration.config` および `*XPackSecurityConfiguration.config`が含まれています。
@@ -100,7 +100,7 @@
    Liferay DXP 7.1および7.2の場合、`com.liferay.portal.search.elasticsearch.cross.cluster.replication.internal.configuration.ElasticsearchConnectionConfiguration-ccr.config`という名前の構成ファイルを`Liferay Home/osgi/configs`に提供します。
 
    ```{warning}
-   Liferay 7.2 では、CCR 接続の設定ファイル (例: `ElasticsearchConnectionConfiguration-ccr.config`) を LES クラスター横断レプリケーションLPKGの初期デプロイと同時に展開しないようにしてください。 モジュールが完全に起動する前に設定ファイルがデプロイされると、Liferayの検索機能が壊れるという既知のバグ( [LPS-127821](https://issues.liferay.com/browse/LPS-127821) ) があります。 もし、既にこの現象が発生している場合は、 [クラスター横断レプリケーションのトラブルシューティング](./troubleshooting-cross-cluster-replication.md#liferay-7-2-after-deploying-the-ccr-lpkg and-the-elasticsearchconfiguration-file-search-is-broken) で対処できますので、ご参照ください。
+   Liferay 7.2 では、CCR 接続の設定ファイル (例: `ElasticsearchConnectionConfiguration-ccr.config`) を LES クラスター横断レプリケーションLPKGの初期デプロイと同時に展開しないようにしてください。 モジュールが完全に起動する前に設定ファイルがデプロイされると、Liferayの検索機能が壊れるという既知のバグ( [LPS-127821](https://issues.liferay.com/browse/LPS-127821) ) があります。 もし、既にこの現象が発生している場合は、 [クラスター横断レプリケーションのトラブルシューティング](./troubleshooting-cross-cluster-replication.md#liferay-7-2-after-deploying-the-ccr-lpkg-and-the-elasticsearchconnectionconfiguration-file-search-is-broken) で対処できますので、ご参照ください。
    ```
 
    ```properties

@@ -157,7 +157,7 @@ java -classpath .:* Accounts_GET_FromInstance
 以下のcURLまたはJavaコマンドで特定のアカウントを取得します。
 
 ```{tip}
-インスタンスのアカウントIDを取得するには、Accounts_GET_FromInstance.[java|sh]を使用します。
+インスタンスのアカウントIDを取得するには、``Accounts_GET_FromInstance.[java|s h]`` を使用します。
 ```
 
 ### Account **GET** ById.sh

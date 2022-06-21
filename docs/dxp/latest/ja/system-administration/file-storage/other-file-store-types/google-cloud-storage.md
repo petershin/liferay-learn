@@ -32,9 +32,9 @@ LiferayのGCS統合を有効にするには、アクティブなGCSアカウン�
 
 1. （必須）以下の情報を入力してください。
 
-   ［****Service Account Key**］ : GCSプロジェクトのサービスアカウントに安全にアクセスするために使用されるプライベートJSONキーです。
+   * *Service Account Key*: GCSプロジェクトのサービスアカウントに安全にアクセスするために使用されるプライベートJSONキーです。
 
-   ［****Bucket Name**］ : ファイルの保存に使用するGCSバケット名です。
+   * *Bucket Name*: ファイルの保存に使用するGCSバケット名です。
 
    ![サービスアカウントキーとバケット名を入力します。](./google-cloud-storage/images/02.png)
 

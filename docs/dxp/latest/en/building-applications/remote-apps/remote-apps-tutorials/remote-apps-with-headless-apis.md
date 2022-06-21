@@ -49,7 +49,7 @@ Then, follow these steps to add the `/o/c/*` URL pattern to the *Default Portal 
 1. Download and unzip the [CRUD app](./liferay-j4x7.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/remote-apps/liferay-j4x7.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/remote-apps/remote-apps-tutorials/liferay-j4x7.zip -O
    ```
 
    ```bash

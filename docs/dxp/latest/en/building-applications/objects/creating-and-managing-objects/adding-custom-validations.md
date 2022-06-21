@@ -56,7 +56,7 @@ Once activated, the validation is run for all new Object entries.
 
 ## Using Groovy Validations
 
-The Groovy validation type supports all standard Groovy Script capabilities. However, when defining Groovy conditions, you must use the `invalidFields` variable. This variable should return `true` for invalid field values and `false` for valid field values. The error message only appears when `invalidFields` returns `true`.
+The Groovy validation type supports all standard Groovy Script capabilities. However, when defining Groovy conditions, you must use the `invalidFields` variable. This variable should return `true` for invalid field values and `false` for valid field values. The error message only appears when `invalidFields` returns `true`. <!--Q: What about this one?-->
 
 ```{note}
 The Groovy type does not currently have a check syntax validation.
@@ -66,7 +66,7 @@ The Groovy type does not currently have a check syntax validation.
 
 ## Using Expression Builder Validations
 
-The Expression Builder type provides predefined fields, operators, and functions that you can access in the Conditions side panel. Clicking an element adds it to the conditions editor. These functions return a Boolean value. For some, `true` indicates an valid entry, while for others `true` indicates an invalid entry. See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for a complete list of provided operators and functions.
+The Expression Builder type provides predefined fields, operators, and functions that you can access in the Conditions side panel. Clicking an element adds it to the conditions editor. These functions return a Boolean value. See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for a complete list of provided operators and functions.
 
 ```{important}
 Expression Builder validations can only be used with text, numeric, date, and boolean field types.
@@ -78,7 +78,7 @@ Expression Builder validations can only be used with text, numeric, date, and bo
 
 When constructing conditions, you can use any of the Object's custom or metadata fields. You can also select from relationship fields on the 'one' side of a relationship.
 
-The following chart lists all default metadata fields included in custom Objects:
+The following table lists all default metadata fields included in custom Objects:
 
 | Field | Description |
 | :--- | :--- |
@@ -109,9 +109,49 @@ Besides custom fields, the following metadata fields are listed in the editing s
 * Created Date (`createDate`)
 * ID (`objectEntryId`)
 * Modified Date (`lastPublishDate`)
-* User Email (`userEmailAddress`)
 * Workflow status (`status`)
 ```
+
+## Expression Builder Operators
+
+The following table lists available operators for Expression Builder validations:
+
+| Operator | Description |
+| :--- | :--- |
+| And ( `AND` ) | Coordinating conjunction used to indicate a dependent relationship |
+| Divided By ( `/` ) | Mathematical operator for division |
+| Minus ( `-` ) | Mathematical operator for subtraction |
+| Or ( `OR` ) | Coordinating conjunction used to indicate an independent relationship |
+| Plus ( `+` ) | Mathematical operator for addition |
+| Times ( `*` ) | Mathematical operator for multiplication |
+
+## Expression Builder Functions
+
+The following table lists available Expression Builder functions with their compatible field types.
+
+| Operator | Text Fields | Numeric Fields | Date Fields |
+| :--- | :--- | :--- | :--- |
+| Compare Dates |  |  | &#10004; |
+| Concat | &#10004; |  |  |
+| <!--Condition--> | <!--?--> | <!--?--> | <!--?--> |
+| Contains | &#10004; | &#10004; |  |
+| Does Not Contain | &#10004; | &#10004; |  |
+| Future Dates |  |  | &#10004; |
+| Is a URL | &#10004; |  |  |
+| Is an Email | &#10004; |  |  |
+| Is Decimal |  | &#10004; |  |
+| Is Empty | &#10004; |  |  |
+| Is Equal To | &#10004; | &#10004; |  |
+| Is Greater Than |  | &#10004; |  |
+| Is Greater Than or Equal To |  | &#10004; |  |
+| Is Integer |  | &#10004; |  |
+| Is Less Than |  | &#10004; |  |
+| Is Less Than or Equal To |  | &#10004; |  |
+| Is Not Equal To | &#10004; | &#10004; |  |
+| Match | &#10004; |  |  |
+| Past Dates |  |  | &#10004; |
+| Range |  |  | &#10004; |
+| Sum |  | &#10004; |  |
 
 ## Additional Information
 

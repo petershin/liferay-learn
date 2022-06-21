@@ -5,7 +5,7 @@ Liferayの[パッチ](../../maintaining-a-liferay-installation/patching-dxp-7-3-
 > エンタープライズサブスクリプション
 
 ```{important}
-パッチを適用する前に、**必ず** データベースとインストールを［バックアップ](../../maintaining-a-liferay-installation/backing-up.md) してください。
+パッチを適用する前に、**必ず** データベースとインストールを [バックアップ](../../maintaining-a-liferay-installation/backing-up.md) してください。
 ```
 
 ## フィックスパック、セキュリティフィックスパック、およびサービスパックイメージの使用

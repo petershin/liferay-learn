@@ -4,7 +4,7 @@
 
 With Site Templates, you can configure the trigger for Site Template propagation. By default, Liferay triggers propagation for each Site individually when it is first visited by a user after changes are published. However, you can configure your system to also trigger propagation to connected Sites simultaneously whenever automatic propagation is enabled for the template.
 
-```{note}
+```{tip}
 Keep in mind that automatic propagation can be resource intensive, depending the scope of changes made to a template.
 ```
 

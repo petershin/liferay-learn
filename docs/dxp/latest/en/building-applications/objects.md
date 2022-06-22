@@ -46,7 +46,7 @@ Once entries are created, you can leverage Liferay's Info framework to create dy
 
 All Objects are integrated with Liferay's [Permissions framework](./objects/understanding-object-integrations/permissions-framework-integration.md), so you can assign application and resource permissions to manage access to Objects and their entries. Together with scoping, role-based access control can help you secure your data and ensure it can only be accessed by the appropriate users.
 
-With Objects, you can also extend and configure system services registered with the Objects framework. This includes adding custom fields and actions.
+With Objects, you can also extend and configure [system services](./objects/creating-and-managing-objects/extending-system-objects.md) registered with the Objects framework. This includes adding custom fields, relationships, and actions.
 
 See [Creating Objects](./objects/creating-and-managing-objects/creating-objects.md) to get started building custom applications or [Understanding Object Integrations](./objects/understanding-object-integrations.md) to learn more about how Objects leverages Liferay's core frameworks.
 

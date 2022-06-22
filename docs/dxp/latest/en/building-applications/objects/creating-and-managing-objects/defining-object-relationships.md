@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.4+`
 
-Relationships are connections between Objects that link their entities. You can add relationships to any published or unpublished custom Object.<!--TASK: Include system Objects once supported; "You can add relationships to any published or unpublished Object, including both system and custom Objects."-->
+Relationships are connections between Object definitions that you can use to link their entities. You can add relationships to any published or unpublished Object, including both system and custom Objects.
 
 ## Relationship Types
 
@@ -15,7 +15,7 @@ Objects provides two types of relationships:
 **Many to Many**: You can relate multiple entities from the current Object to multiple entities in another Object. When selected, a new database table is created for both sides of the relationship. This table can be added to a [Relationships Tab](./designing-object-layouts.md#adding-relationships-tabs) in either Object's custom layout and is used to list all related entities. <!--REFINE-->
 
 ```{important}
-You must create a custom layout to display relationships for Object entries. See [Designing Object Layouts](./designing-object-layouts.md) for more information. 
+Displaying relationship tables requires a custom layout. However, custom layouts are not supported for system Objects. See [Designing Object Layouts](./designing-object-layouts.md) for more information. 
 ```
 
 ## Adding New Relationships
@@ -50,10 +50,6 @@ Follow these steps to add relationships to an Object:
 
 Once saved, the new relationship can be [added to custom layouts](./designing-object-layouts.md) for the related Objects. You can then use the relationship fields and tables to relate Object entries to one another.
 
-```{important}
-While the Object is a draft, you can edit and remove relationships from the parent side. Once an Object is published, however, any existing or newly added relationships cannot be removed. Users can only configure a relationship's label and [deletion type](#configuring-deletion-type).
-```
-
 ## Configuring Deletion Type
 
 After a relationship is saved, you can configure its deletion type. This setting determines how entry deletion is handled when the entry is related to another entry, and it is only available after a relationship is created.
@@ -86,7 +82,7 @@ Follow these steps to remove relationships from a published Object definitions.
 
 1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired relationship and select *Delete*.
 
-1. In the dialog window, enter the name of the relationship and click *Done* to confirm.
+1. In the dialog window, enter the name of the relationship and click *Delete* to confirm.
 
    ![Enter the name of the relationship and click Done.](./defining-object-relationships/images/04.png)
 

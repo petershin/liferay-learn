@@ -20,6 +20,14 @@ Combine multiple strings or text fields and return a single string that can be u
 concat(text_field_id, "<string>")
 ```
 
+### Condition (with Text)
+
+Determine conditions that return different values based on whether it evaluates to `true` or `false`.
+
+```
+condition(condition, "<string>")
+```
+
 ### Contains (with Text)
 
 Check if a text field contains a specific string value and return a Boolean. If the field *does not* contain the value, it returns `false`.
@@ -89,6 +97,14 @@ match(text_field_id, "<regex>")
 ## Numeric Fields
 
 Liferay provides the following operators and functions for Integer, Long Integer, Decimal, and Precision Decimal fields. You can use any of these fields as arguments. With some elements, you can also add numeric values to compare with the field's value (e.g., `123`, `3.1415`).
+
+### Condition (with Numeric)
+
+Determine conditions that return different values based on whether it evaluates to `true` or `false`.
+
+```
+condition(condition, <number>)
+```
 
 ### Contains (with Numeric)
 
@@ -182,6 +198,22 @@ sum(firstNumeric_field_id, secondNumeric_field_id)
 
 Liferay provides the following operators and functions for Date fields. You can use any Date field as an argument. You can also set date values for comparing with your date field (e.g., `2020-03-19`).
 
+### Compare Dates
+
+Check is a date field's value is the same as a set value. If the field does not match the date, it returns false.
+
+```
+compareDates(date_field_id, <yyyy-MM-dd>)
+```
+
+### Condition (with Date)
+
+Determine conditions that return different values based on whether it evaluates to `true` or `false`.
+
+```
+condition(condition, <yyyy-MM-dd>)
+```
+
 ### Future Dates
 
 Check if a date field's value is in the future and return a Boolean. If the field *is not* a future date, it returns `false`.
@@ -236,7 +268,7 @@ Divide one numeric field by another to create an expression.
 firstNumeric_field_id / secondNumeric_field_id,
 ```
 
-### Times/Multiply ( `*` )
+### Multiply ( `*` )
 
 Multiply numeric fields to create an expression.
 
@@ -282,7 +314,7 @@ match(lastName_field_id, "[A-Za-z][0-9]{1,50}")
 
 ### Password (with Text)
 
-This validation checks for valid passwords. It includes the following restrictions:
+This validation checks if entries meet the following password criteria:
 
 * At least 8 characters
 * At least 5 unique characters
@@ -296,7 +328,7 @@ match(password_field_id, "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&
 
 ### Cell Phone Number (with Numeric)
 
-This validation checks for a valid phone number. It restricts entries to numeric characters, limits the number of characters, and sets a standard phone number pattern.
+This validation checks if entries match a phone number pattern. It restricts entries to numeric characters, limits the number of characters, and sets a standard phone number pattern.
 
 ```
 match(cellphoneNumber_field_id, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
@@ -304,7 +336,7 @@ match(cellphoneNumber_field_id, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$"
 
 ### Postal Code (with Numeric)
 
-This validation checks for a valid postal code. It restricts entries to numeric characters, limits the number of characters, and sets a standard postal code pattern.
+This validation checks if entries match a postal code pattern. It restricts entries to numeric characters, limits the number of characters, and sets a standard postal code pattern.
 
 ```
 match(postal_field_id, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
@@ -312,7 +344,7 @@ match(postal_field_id, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 
 ### Specify Age Range (Date)
 
-This validation checks for valid age entries. Valid entries must be between 18-65 years old.
+This validation checks if entries are between 18-65.
 
 ```
 pastDates(date_field_id, startsFrom, responseDate, years, -120, endsOn, responseDate, years, -18)

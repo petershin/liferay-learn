@@ -56,7 +56,7 @@ Once activated, the validation is run for all new Object entries.
 
 ## Using Groovy Validations
 
-The Groovy validation type supports all standard Groovy Script capabilities. However, when defining Groovy conditions, you must use the `invalidFields` variable. This variable should return `true` for invalid field values and `false` for valid field values. The error message only appears when `invalidFields` returns `true`. <!--Q: What about this one?-->
+The Groovy validation type supports all standard Groovy Script capabilities. However, when defining Groovy conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
 
 ```{note}
 The Groovy type does not currently have a check syntax validation.
@@ -123,7 +123,7 @@ The following table lists available operators for Expression Builder validations
 | Minus ( `-` ) | Mathematical operator for subtraction |
 | Or ( `OR` ) | Coordinating conjunction used to indicate an independent relationship |
 | Plus ( `+` ) | Mathematical operator for addition |
-| Times ( `*` ) | Mathematical operator for multiplication |
+| Multiply ( `*` ) | Mathematical operator for multiplication |
 
 ## Expression Builder Functions
 
@@ -133,7 +133,7 @@ The following table lists available Expression Builder functions with their comp
 | :--- | :--- | :--- | :--- |
 | Compare Dates |  |  | &#10004; |
 | Concat | &#10004; |  |  |
-| <!--Condition--> | <!--?--> | <!--?--> | <!--?--> |
+| Condition | &#10004; | &#10004; | &#10004; |
 | Contains | &#10004; | &#10004; |  |
 | Does Not Contain | &#10004; | &#10004; |  |
 | Future Dates |  |  | &#10004; |

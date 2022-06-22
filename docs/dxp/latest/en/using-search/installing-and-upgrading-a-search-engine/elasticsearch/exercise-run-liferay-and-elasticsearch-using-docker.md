@@ -19,22 +19,22 @@ The `cd test-es-install` command at the end puts you in the `test-es-install` fo
 ```
 ## Install Elasticsearch
 
-1. Configure and start an Elasticsearch `7.15.1` container named `elasticsearch715`:
+1. Configure and start an Elasticsearch `7.17.4` container named `elasticsearch717`:
 
    ```bash
-   docker run -it --name elasticsearch715 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "node.name=es-node1" -v $(pwd)/elasticsearch:/usr/share/elasticsearch/data docker.elastic.co/elasticsearch/elasticsearch:7.15.1
+   docker run -it --name elasticsearch717 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "node.name=es-node1" -v $(pwd)/elasticsearch:/usr/share/elasticsearch/data docker.elastic.co/elasticsearch/elasticsearch:7.15.1
    ```
 
 1. Install the required Elasticsearch plugins. Use `docker exec -it` to access an interactive bash shell:
 
    ```bash
-   docker exec -it elasticsearch715 bash -c '/usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-kuromoji && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-smartcn && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-stempel'
+   docker exec -it elasticsearch717 bash -c '/usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-kuromoji && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-smartcn && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-stempel'
    ```
 
 1. Restart the Elasticsearch container to register the plugins. CTRL+C stops the container, then start it again by running 
 
    ```bash
-   docker start -i elasticsearch715
+   docker start -i elasticsearch717
    ```
 
 1. Get the IPv4 address of the running Elasticsearch container:
@@ -43,12 +43,12 @@ The `cd test-es-install` command at the end puts you in the `test-es-install` fo
    docker network inspect bridge
    ```
 
-   In this example it's `172.17.0.2`. If your system provides a different IP address, you must use it in the `docker run --add-host elasticsearch715:[IP]...` command when running Liferay DXP.
+   In this example it's `172.17.0.2`. If your system provides a different IP address, you must use it in the `docker run --add-host elasticsearch717:[IP]...` command when running Liferay DXP.
 
    ```bash
    "Containers": {
                "2d4614fdcce2159322fa7922bfc5f866b79bd7f609a65cc888f9a260f80731f4": {
-                   "Name": "elasticsearch715",
+                   "Name": "elasticsearch717",
                    "EndpointID": "e89c3d0a87cc528753470eb359cee3b85fea9f9a5df3b249d54d203741a650a8",
                    "MacAddress": "02:42:ac:11:00:02",
                    "IPv4Address": "172.17.0.2/16",
@@ -68,14 +68,14 @@ Specify the properties Liferay DXP needs to connect with Elasticsearch, then run
    
    operationMode="REMOTE"
    productionModeEnabled=B"true"
-   networkHostAddresses="http://elasticsearch715:9200"
+   networkHostAddresses="http://elasticsearch717:9200"
    EOT
    ```
 
 1. Once the configuration files are in place, start the DXP container with 
 
    ```bash
-   docker run -it --name dxp74  --add-host elasticsearch715:172.17.0.2 -p 8080:8080 -v $(pwd)/dxp:/mnt/liferay [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+   docker run -it --name dxp74  --add-host elasticsearch717:172.17.0.2 -p 8080:8080 -v $(pwd)/dxp:/mnt/liferay [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
    ```
 
 1. **Checkpoint:** Verify that the Elasticsearch connection is active in Control Panel &rarr; Configuration &rarr; Search.

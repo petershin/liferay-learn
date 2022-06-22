@@ -78,7 +78,7 @@ To change the default sort option,
 ## Finding Sortable Fields
 
 To find the fields available for use in the Sort widget, Users with the proper permissions can navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*.  From there, open the Field Mappings tab and browse the mappings for each index.  Scroll to the `properties` section of the mapping and find any `keyword` field, `date` field, or a field with a numeric data type. The `type` field is instructive:
- 
+
     "type" : "keyword"
 
     "type" : "date"

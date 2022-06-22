@@ -446,3 +446,27 @@ Developers who are calling any of these methods in their code.
 ### Why was this change made?
 
 This change cleans up the entity `CommerceOrder` in `commerce-service` `service.xml`.
+
+## Refactor CPContentHelper and CPContentHelperImpl
+
+* **Date:** 2021-Dec-16
+
+* **JIRA Ticket:** [COMMERCE-7830](https://issues.liferay.com/browse/COMMERCE-7830)
+
+### What changed?
+
+* Change in signature of method in `CPContentHelper.java` and `CPContentHelperImpl.java`: 
+  * `getReplacementCommerceProductFriendlyURL(long cProductId, String cpIntanceUuid, ThemeDisplay themeDisplay)` to `getReplacementCommerceProductFriendlyURL(CPSku cpSku, ThemeDisplay themeDisplay)`
+* Renamed the `getCPAttachmentFileEntries()` method in `CPContentHelper.java` and `CPContentHelperImpl.java` to `getCPMedias()`
+
+### Who is affected?
+
+This affects any developers referencing or using these methods in their code.
+
+### How should I update my code?
+
+Replace any references and usages of the above methods with the new ones.
+
+### Why was this change made?
+
+The methods were refactored for better readability, consistency and maintainability.

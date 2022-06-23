@@ -61,9 +61,9 @@ A Channel can have multiple payment methods, and you can associate Payment Terms
 
 ### Enabling Payment Terms Checkout Step
 
-If there are multiple Payment Terms linked to a payment method, the one with the highest priority takes precedence over the others. To allow the user to select Payment Terms during checkout, it must be enabled in the Channel settings. If the user does not have permission to alter the default Payment Terms, the additional step does not appear during checkout.
+If there are multiple Payment Terms linked to a payment method, the one with the highest priority takes precedence over the others. If the user does not have permission to alter the default Payment Terms, the additional step does not appear during checkout.
 
-![Use the toggle to enable the Payment Terms step during checkout.](./payment-and-delivery-terms/images/05.png)
+![You must have the permission to manage Payment Terms to be able to view and change them during checkout.](./payment-and-delivery-terms/images/05.png)
 
 ## Delivery Terms
 
@@ -120,9 +120,9 @@ A Channel can have multiple shipping methods, and you can associate Delivery Ter
 
 ### Enabling Delivery Terms Checkout Step
 
-If there are multiple Delivery Terms linked to a shipping method, the one with the highest priority takes precedence over the others. For users to select a Delivery Term during checkout, it must be enabled in the Channel settings. If users don't have permission to alter the default Delivery Terms, the additional step does not appear during checkout.
+If there are multiple Delivery Terms linked to a shipping method, the one with the highest priority takes precedence over the others. If users don't have permission to alter the default Delivery Terms, the additional step does not appear during checkout.
 
-![Use the toggle to enable the Delivery Terms step during checkout.](./payment-and-delivery-terms/images/09.png)
+![You must have the permission to manage Delivery Terms to be able to view and change them during checkout.](./payment-and-delivery-terms/images/09.png)
 
 ## Terms and Conditions Eligibility
 

@@ -1,6 +1,8 @@
 # Creating Separate Catalog Pages for Individual Product Catalogs
 
-You may have products from multiple catalogs in your storefront and want them displayed on separate Catalog Pages. For instance, one catalog may have products on sale while the other may have consumables. By default, the Catalog Page displays all the products from all catalogs. To separate them, you need to use a Custom Filter.
+You may have products from multiple catalogs in your storefront. Liferay stores Products in Catalogs and displays them in your storefront using a *Catalog Page*. See [Creating a Catalog Page](./creating-a-catalog-page.md) for more information. Since different catalogs can contain different kinds of products, you can differentiate them using multiple Catalog Pages.
+
+To do this, you must first have two or more Catalogs, and at least one Catalog page. Then, duplicate the existing Catalog Page and add the [Custom Filter](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) widget on both pages to filter products by the catalog ID.
 
 ## Copying an Existing Catalog Page
 
@@ -43,7 +45,7 @@ Go back to the Catalog Page and follow these instructions.
 
    **Filter Field:** commerceCatalogId
 
-   **Filter Value:** 43345 (Type the catalog ID you copied)
+   **Filter Value:** 43445 (Type the catalog ID you copied)
 
    **Filter Type:** Match
 
@@ -56,5 +58,10 @@ Go back to the Catalog Page and follow these instructions.
 You should see products from only one catalog on the page. Repeat the above steps with a different catalog on the other catalog page.
 
 ```{note}
-You can also disable the Custom Filter, make it immutable and invisible using the checkboxes inside the *Configuration* menu. You can use the Custom Filter for a wide range of use cases. See Custom Filter Examples for more information.
+You can also disable the Custom Filter, make it immutable and invisible using the checkboxes inside the *Configuration* menu. You can use the Custom Filter for a wide range of use cases. See [Custom Filter Examples](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) for more information.
 ```
+
+## Additional Information
+
+* [Creating a Catalog Page](./creating-a-catalog-page.md)
+* [Custom Filter Examples](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html)

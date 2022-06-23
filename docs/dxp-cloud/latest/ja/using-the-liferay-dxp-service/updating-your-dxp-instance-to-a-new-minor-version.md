@@ -7,7 +7,8 @@ Liferay DXPのインストールを定期的に更新することは、DXP Cloud
 ```
 
 ```{note}
-[hotfix](../../../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes) をインストールしたい場合は、代わりに以下の手順[./deploying-to-the-liferay-service.md #deploying-hotfixes) を実行してください。
+[hotfix](../../../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes) をインストールしたい場合は、
+[代わりに以下の手順](./deploying-to-the-liferay-service.md#deploying-hotfixes) を実行してください。
 ```
 
 ## DXP 7.3+のモジュールアップグレードの有効化
@@ -29,7 +30,7 @@ Liferay DXPのインストールを定期的に更新することは、DXP Cloud
 Liferay DXPのマイナーバージョンのアップデートには、プロジェクトのリポジトリの変更も必要です。
 
 ```{important}
-クラスタリングサービス](./setting-up-clustering-in-dxp-cloud.md)を使用していて、Liferayデータベーススキーマを変更するバージョン（[サービスパック](./../../...など）に更新する場合、Liferayデータベーススキーマを変更します。/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)) にアップデートし、[この手順](#uPDATTO-NEWS-PACKWITH-CLUSTING-ENABLE)に従い、アップデートしてください。
+[クラスタリングサービス](./setting-up-clustering-in-dxp-cloud.md)を使用していて、Liferayデータベーススキーマを変更するバージョン（[サービスパック](./../../...など）に更新する場合、Liferayデータベーススキーマを変更します。/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)) にアップデートし、[この手順](#uPDATTO-NEWS-PACKWITH-CLUSTING-ENABLE)に従い、アップデートしてください。
 ```
 
 以下の手順で、プロジェクトリポジトリの変更点を更新およびデプロイします。
@@ -108,8 +109,8 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
 
 1. もう一度[変更内容をデプロイします](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)。
 
-1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの「環境変数」ページで以前に追加した `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。 
-   
+1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの「環境変数」[ページで以前に追加した](#enabling-module-upgrades-for-dxp) `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。
+
 更新された `liferay` サービスは、最終的なデプロイメントの後、希望する数のノードで再起動します。
 
 ## 追加情報

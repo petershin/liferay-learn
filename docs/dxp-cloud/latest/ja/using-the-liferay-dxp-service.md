@@ -17,7 +17,7 @@ Liferay DXPサービスは、あらゆるプロジェクトの心臓部です。
 
 DXP CloudのLiferay DXPサービスは、Liferay DXPのオンプレミスインスタンスと同じように多くの方法で使用できます。 ただし、DXP Cloudでインスタンスを操作する場合、設定と開発のワークフローにもいくつかの違いがあります。
 
-詳しくは、 [Liferay service limitations](../reference/platform-limitations.md#liferay-service) を参照してください。
+詳しくは、 [Liferay service limitations](./reference/platform-limitations.md#liferay-service) を参照してください。
 
 * [バージョンの選択](#choosing-a-version)
 * [デプロイメント（カスタマイズ、パッチ適用、ライセンス）](#deployment-customization-patching-and-licensing)

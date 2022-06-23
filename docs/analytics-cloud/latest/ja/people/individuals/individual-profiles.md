@@ -13,8 +13,6 @@
     * 興味のあるテーマ
     * セグメント別会員数
 
-![個人向けの［概要］タブ。](individual-profiles/images/01.png)
-
 各訪問者プロフィールには、以下のタブがあります。
 
 * 概要
@@ -32,7 +30,7 @@
 
 各セッションには、Analytics Cloudによって追跡される [個々のイベント](../../touchpoints/events.md) がリストアップされ、 [デフォルトイベント](../../workspace-data/definitions/definitions-for-events.md#default-events) と [カスタムイベント](../../workspace-data/definitions/definitions-for-events.md#custom-events) が含まれます。 イベントをクリックすると、そのイベントの詳細（ページタイルやURLなど）が表示されます。
 
-![アクティビティストリームに表示されるイベントを見る。](individual-profiles/images/02.png)
+![個人向けの［概要］タブ。](individual-profiles/images/01.png)
 
 また、［概要］ タブでは、その人のプロフィールデータ、関心のあるトピック、および関連する視聴者セグメントを垣間見ることができます。 詳細、興味関心、またはセグメントのサマリーの **すべての** を表示 ...リンクをクリックすると、それぞれのタブが開きます。
 

@@ -5,7 +5,8 @@ DXP Cloudは、堅牢で信頼性が高く、管理しやすいLiferay DXPの実
 ![DXP Cloudに統合されている主要なサービスやコンポーネントはすべて、ここにその接続先が示されています。](./dxp-cloud-infrastructure/images/01.png)
 
 ```{note}
-プライベートクラスターサブスクリプションには、ビルトインの[Webアプリケーションファイアウォール](../infrastructure and-operations/security/web-application-firewall.md) も含まれています。 ただし、これは [共有クラスタでは利用できない](./platform-limitations.md#security) です。
+プライベートクラスターサブスクリプションには、ビルトインの 
+[Webアプリケーションファイアウォール](../infrastructure-and-operations/security/web-application-firewall.md) も含まれています。 ただし、これは [共有クラスタでは利用できない](./platform-limitations.md#security) です。
 ```
 
 各コンポーネントの説明は以下のリストを参照してください。

@@ -44,13 +44,13 @@ DXPは、ログインユーザーの連絡先情報を個別のプロファイ�
 連絡先データが送信されていることを確認するには、DXPサーバーのログに以下のようなメッセージがないか確認してください。
 
 ```
-INFO  [liferay/analytics_messages_processor-1][AddAnalyticsMessagesMessageListener:70] Added 500 analytics messages
+INFO [liferay/analytics_messages_processor-1][AddAnalyticsMessagesMessageListener:70] Added 500 analytics messages
 
-INFO  [liferay/analytics_messages_processor-1][AddAnalyticsMessagesMessageListener:70] Added 500 analytics messages
+INFO [liferay/analytics_messages_processor-1][AddAnalyticsMessagesMessageListener.Add AnalyticsMessages_Processor:70] AddAnalysisMessagesMessageListener.追加。70] 500件の解析メッセージを追加
 
-INFO  [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:149] Sent 100 analytics messages
+INFO [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:149] 100件の解析メッセージを送信
 
-INFO  [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:164] Deleted 100 analytics messages
+INFO [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:164] 100件の解析メッセージの削除
 ```
 
 これらのサーバーログが表示されている場合は、連絡先データが正常にACに送信されていることを示しています。
@@ -69,14 +69,16 @@ INFO  [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:164] D
 
 ## サポートされていないバージョン
 
-**エラーメッセージ** ： `サポートされていないバージョンです。 この接続方法は、データソースのLiferayバージョンをサポートしていません。 Liferay 7.0/7.1インスタンスに接続していることを確認するか、別の接続方法を試してみてください。`
+**エラーメッセージ**： `サポートされていないバージョンです。 この接続方法は、データソースのLiferayバージョンをサポートしていません。 Liferay 7.0/7.1インスタンスに接続していることを確認するか、別の接続方法を試してみてください。`
 
 ```{important}
-Liferay DXP のインストールは、以下のフィックスパックの最小要件を満たす必要があります：
-     * 7.3 Fix Pack 1
-     * 7.2 Fix Pack 11
-     * 7.1 Fix Pack 22
-     * 7.0 Fix Pack 98
+Liferay DXP のインストールは、以下のフィックスパックの最小要件を満たしている必要があります。
+
+  * 7.4
+  * 7.3 Fix Pack 1
+  * 7.2 Fix Pack 11
+  * 7.1 Fix Pack 22
+  * 7.0 Fix Pack 98
 ```
 
 **解像度:**
@@ -85,4 +87,4 @@ Liferay DXP のインストールは、以下のフィックスパックの最�
 
 1. [Liferay DXPデータソースの追加](../getting-started/connecting-data-sources/connecting-liferay-dxp-using-oauth.md)の手順に従ってください。
 
-1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.1-latest/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [のportal-ext.propertiesファイル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
+1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.1-latest/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [のportal-ext.propertiesファイル](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)で設定）、設定を削除するか、プロパティ値をtrueにしてください。

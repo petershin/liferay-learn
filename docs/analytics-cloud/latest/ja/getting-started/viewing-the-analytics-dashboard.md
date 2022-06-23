@@ -4,23 +4,17 @@
 
 ![アナリティクス ダッシュボードでは、サイトのアナリティクス データの概要を紹介しています。](viewing-the-analytics-dashboard/images/01.png)
 
-ダッシュボードは、さまざまなワークスペース管理や設定作業の出発点でもあります。
-
-<a name="connecting-a-dxp-site-to-analytics-cloud" />
+ダッシュボードは、さまざまなワークスペース管理や設定作業の出発点でもあります。 [オンボーディングプロセス](accessing-your-workspace.md#onboarding-process)の間にワークスペースを接続しなかった場合は、以下の手順を参照してください。
 
 ## DXPサイトをAnalytics Cloudに接続する
 
 新しいワークスペースの最初のタスクは、ワークスペースをデータ ソースに接続することです。 Analytics Cloudは、Liferay DXP Sitesをキーデータソースとして利用するために構築されています。 詳細は、 [Liferay DXPサイトをAnalytics Cloudに接続する](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md) を参照してください。 また、 [CSVファイル](../connecting-data-sources/adding-a-csv-data-source.md) や [のSalesforce](../connecting-data-sources/adding-a-salesforce-data-source.md) からデータを持ち込んで、既存のユーザーデータを補完することもできます。
-
-<a name="inviting-others-to-your-workspace" />
 
 ## 自分のワークスペースにユーザーを招待する
 
 ワークスペースの所有者または管理者として、同僚をワークスペースに招待することができます。 招待されたユーザーは、データソースのセットアップと設定、セグメントの作成、または単に分析レポートを表示するための手助けをするように設定することができます。
 
 ワークスペースにユーザーを追加する方法の詳細は、 [ユーザーの管理](../../workspace-settings/managing-users.md) を参照してください。
-
-<a name="configure-settings-for-your-workspace" />
 
 ## ワークスペースの設定を行う
 
@@ -32,4 +26,14 @@
 * ワークスペース使用状況の監視
 * ワークスペースの設定
 
-ワークスペースが接続されると、分析データが表示されるようになります。 例えば、 [サイト ダッシュボード](../../touchpoints/sites-dashboard.md)でサイト別のアナリティクスを表示します。 ワークスペース設定の詳細は、 [Managing Workspaces](../../workspace-settings/managing-workspaces.md)を参照してください。 
+ワークスペースが接続されると、分析データが表示されるようになります。 例えば、 [サイト ダッシュボード](../../touchpoints/sites-dashboard.md)でサイト別のアナリティクスを表示します。 ワークスペース設定の詳細は、 [Managing Workspaces](../../workspace-settings/managing-workspaces.md)を参照してください。
+
+## 言語メニューオプション
+
+Analytics CloudのUIは、現在、英語、日本語、ポルトガル語、スペイン語に対応しています。 言語設定を変更する場合。
+
+1. ダッシュボードの下部にあるユーザー名をクリックします。 次に、 *言語*をクリックします。
+
+   ![ユーザー名をクリックし、「言語」をクリックします。](./viewing-the-analytics-dashboard/images/02.png)
+
+2. 言語を選択します. ページを更新してください。 ダッシュボードとメニューが選択した言語で表示されるようになりました。

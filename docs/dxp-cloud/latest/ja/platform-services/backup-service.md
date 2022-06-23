@@ -10,4 +10,4 @@ backup-service/restoring-data-from-a-backup.md
 
 - [バックアップサービスの概要](./backup-service/backup-service-overview.md)
 - [バックアップのダウンロードとアップロード](./backup-service/downloading-and-uploading-backups.md)
-- [バックアップページからのデータの復元](./backup-service/restoring-data-from-a-backup.md)
+- [バックアップからのデータの復元](./backup-service/restoring-data-from-a-backup.md)

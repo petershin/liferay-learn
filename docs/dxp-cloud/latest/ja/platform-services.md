@@ -5,17 +5,20 @@
 
 platform-services/continuous-integration.md
 platform-services/search-service.md
-platform-services/web-server-service.md
+platform-services/web-server-service.md 
+ プラットフォームサービス/カスタムサービス.md 
+
+ プラットフォームサービス/バックアップサービス.md #2
 platform-services/using-a-custom-service.md
 
-platform-services/backup-service.rst
+platform-services/backup-service.md
 
-platform-services/database_service.rst
+platform-services/database-service.md
 ```
 
 - [継続的インテグレーション](./platform-services/continuous-integration.md)
 - [検索サービス](./platform-services/search-service.md)
-- [Webサーバーサービス](./platform-services/web-server-service.md)
+- [Webサーバサービス](./platform-services/web-server-service.md)
 - [カスタムサービスの使用](./platform-services/using-a-custom-service.md)
 
 ## バックアップサービス

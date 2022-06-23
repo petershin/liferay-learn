@@ -5,7 +5,7 @@ DXP Cloudは、堅牢で信頼性が高く、管理しやすいLiferay DXPの実
 ![DXP Cloudに統合されている主要なサービスやコンポーネントはすべて、ここにその接続先が示されています。](./dxp-cloud-infrastructure/images/01.png)
 
 ```{note}
-プライベートクラスターサブスクリプションには、ビルトインの[Webアプリケーションファイアウォール](../infrastructure and-operations/security/web-application-firewall.md) も含まれています。 ただし、これは[共有クラスタでは利用できない](./platform-limitations.md#security)です。
+プライベートクラスターサブスクリプションには、ビルトインの[Webアプリケーションファイアウォール](../infrastructure and-operations/security/web-application-firewall.md) も含まれています。 ただし、これは [共有クラスタでは利用できない](./platform-limitations.md#security) です。
 ```
 
 各コンポーネントの説明は以下のリストを参照してください。
@@ -30,7 +30,7 @@ DXP Cloudでは、サービスイメージやバージョン（タグとして�
 
 ## DDoSプロテクション
 
-DXP Cloudは、分散型サービス妨害（DDoS）攻撃からの保護を内蔵しています。 また、[GCP POPネットワーク](https://peering.google.com/#/infrastructure) を使用して、受信トラフィックが殺到しないように環境を保護し、世界中のエンドユーザーにコンテンツを安全かつ安定的に配信しています。
+DXP Cloudは、分散型サービス妨害（DDoS）攻撃からの保護を内蔵しています。 また、 [GCP POPネットワーク](https://peering.google.com/#/infrastructure) を使用して、受信トラフィックが殺到しないように環境を保護し、世界中のエンドユーザーにコンテンツを安全かつ安定的に配信しています。
 
 ## HTTP(S) ロードバランサー
 
@@ -40,13 +40,13 @@ DXP Cloudは、HTTP(S)のトラフィックを複数のインスタンスに分�
 
 すべてのDXP Cloud環境では、他のサービスへのゲートウェイとして [Nginx](https://www.nginx.com/) Webサーバーが使用されています。 これには、レイヤー7攻撃防御、IP保護、監査ログを提供する内蔵ファイアウォールが含まれます。
 
-このサーバーは、DXP Cloudの主要サービスの一つとして設定可能です。 詳しくは [Web Server Service](https://learn.liferay.com/dxp-cloud/latest/en/platform-services/web-server-service.html) を参照してください。
+このサーバーは、DXP Cloudの主要サービスの一つとして設定可能です。 詳しくは [Web Server Service](https://learn.liferay.com/dxp-cloud/latest/ja/platform-services/web-server-service.html) を参照してください。
 
 ## Liferay DXP
 
 [Liferay DXP](https://www.liferay.com/products/dxp) は、さまざまなアプリケーションからのデータやサービスを、1つの中央ユーザー・インターフェース・プラットフォームに接続し、編成し、統合しています。 DXP Cloudは、クラウド上のDXPインスタンスのための迅速かつ信頼性の高い実装を提供します。 [Webサーバーサービス](#web-server) は、DXPへのすべてのHTTP(S)トラフィックのエントリーポイントとゲートウェイを提供します。
 
-設定とカスタムモジュールを[独自のプロジェクトリポジトリ](#repository-integration)に追加することにより、DXPサービスは通常のDXPインストールと同じように高度にカスタマイズできます。 詳しくは [Liferay DXPサービスの概要](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md) を参照してください。
+設定とカスタムモジュールを [独自のプロジェクトリポジトリ](#repository-integration) に追加することにより、DXPサービスは通常のDXPインストールと同じように高度にカスタマイズできます。 詳しくは [Liferay DXPサービスの概要](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md) を参照してください。
 
 ## Search (Automatic Copy)
 
@@ -74,7 +74,7 @@ DXP Cloudは、Liferay DXPのDatabaseサービスとボリュームのコピー�
 
 ## CIサーバー
 
-DXP Cloudは、開発中のお客様のプロジェクトのビルドとデプロイメントのプロセスを自動化します。 プロジェクトが [顧客のリポジトリ](#repository-integration)に結びついている状態で、Jenkinsをウェブフックで使用し、新しいコミットやプルリクエストを自動的にあらゆる環境にデプロイ可能なビルドに変換します。 このサービスは、特別な独立した `インフラ` 環境の中に存在しており、通常のユーザーはアクセスできません。 またDXP Cloudでは、Jenkinsのビルドの詳細を確認できるダッシュボードをクラウドコンソールでお客様に提供しています。
+DXP Cloudは、開発中のお客様のプロジェクトのビルドとデプロイメントのプロセスを自動化します。 プロジェクトが [顧客のリポジトリ](#repository-integration) に結びついている状態で、Jenkinsをウェブフックで使用し、新しいコミットやプルリクエストを自動的にあらゆる環境にデプロイ可能なビルドに変換します。 このサービスは、特別な独立した `インフラ` 環境の中に存在しており、通常のユーザーはアクセスできません。 またDXP Cloudでは、Jenkinsのビルドの詳細を確認できるダッシュボードをクラウドコンソールでお客様に提供しています。
 
 Jenkinsビルドに使用するCIサービスは、DXP Cloudの主要サービスの一つとして提供されており、お客様はこのサービスを設定し、必要に応じてJenkinsのパイプラインをカスタマイズすることもできます。 詳しくは [継続的インテグレーション](../platform-services/continuous-integration.md) を参照してください。
 
@@ -84,8 +84,8 @@ DXP Cloudでは、CLIツールを使って、環境やサービスに対して�
 
 ## アンチウイルス
 
-DXP Cloudは、トロイの木馬、ウイルス、マルウェア、その他の悪意のある脅威を、 [ClamAV](https://www.clamav.net/)を使って自動的に検出します。 このエンジンは、クラウド内のバックグラウンドサービスとして動作しており、ユーザーや他のサービスからはアクセスできないようになっています。 DXP Cloudの各クラスターには、アンチウイルスのインスタンスが1つずつ稼働しています。
+DXP Cloudは、トロイの木馬、ウイルス、マルウェア、その他の悪意のある脅威を、 [ClamAV](https://www.clamav.net/) を使って自動的に検出します。 このエンジンは、クラウド内のバックグラウンドサービスとして動作しており、ユーザーや他のサービスからはアクセスできないようになっています。 DXP Cloudの各クラスターには、アンチウイルスのインスタンスが1つずつ稼働しています。
 
 ## 侵入検知システム
 
-DXP Cloudは、 [Threat Stack](https://www.threatstack.com/cloud-security-platform/intrusion-detection)を使用して、コンポーネント内の侵入を自動的に検出します。 このシステムも内蔵の [ウイルス対策ソフト](#antivirus)と同様にバックグラウンドサービスとして動作しており、ユーザーや他のサービスからはアクセスできないようになっています。 DXP Cloudの各クラスターには1つのインスタンスがあります。
+DXP Cloudは、 [Threat Stack](https://www.threatstack.com/cloud-security-platform/intrusion-detection) を使用して、コンポーネント内の侵入を自動的に検出します。 このシステムも内蔵の [ウイルス対策ソフト](#antivirus) と同様にバックグラウンドサービスとして動作しており、ユーザーや他のサービスからはアクセスできないようになっています。 DXP Cloudの各クラスターには1つのインスタンスがあります。

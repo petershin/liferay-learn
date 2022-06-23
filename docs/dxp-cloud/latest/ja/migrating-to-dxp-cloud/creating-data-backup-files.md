@@ -14,7 +14,7 @@ DXPクラウドサポートに連絡せずに次のステップでアップロ�
 
 データベースがMySQL 5.7と互換性があることを確認してください。 [DBeaver](https://dbeaver.io/) のようなツールを使用して、他のデータベース形式をMySQLに変換することができます。
 
-データの整合性を確保するために、変換の前後にデータベース管理者と調整します。 変換したデータベースを [ローカルのLiferayインストールに接続してテストします](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/configuring-a-database.html) 次に進む前に、変換したデータベースをテストします。
+データの整合性を確保するために、変換の前後にデータベース管理者と調整します。 変換したデータベースを [ローカルのLiferayインストールに接続してテストします](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/configuring-a-database.html) 次に進む前に、変換したデータベースをテストします。
 
 ## データベースダンプの作成
 
@@ -24,13 +24,13 @@ Windows（OS）をお使いの場合、圧縮ファイルのパック/アンパ�
 
 データベースがMySQL形式になったので、データベースサーバーで次のコマンドを実行します。 `#` はそれぞれデータベースユーザーとパスワード、 `lportal` は必要ならデータベース名で置き換えてください。
 
-**Linux、MacOSの場合** (1コマンド):
+**Linux、MacOSの場合**(1コマンド):
 
 ```bash
 mysqldump -u### -p### --databases --add-drop-database lportal | gzip -c | cat > database.gz
 ```
 
-**Windowsの場合** (2コマンド)。
+**Windowsの場合**(2コマンド)。
 
 ```
 mysqldump -u### -p##### --databases --add-drop-database lportal > database.sql
@@ -50,7 +50,7 @@ mysqldump -u### -p##### --databases --add-drop-database lportal > database.sql
 Advanced File System Store](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/configuring-file-storage.html)では、より簡単に大規模なデータセットに拡張できるフォルダ構造を採用しています。 アドバンストファイルシステムストアへの移行は、長期的にドキュメントライブラリのより多くのファイルを収容するために推奨されており、あらゆる実稼働環境において**必須**です。
 ```
 
-文書ライブラリを移行する手順については、 [ファイルストア移行](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/file-store-migration.html) を参照してください。
+文書ライブラリを移行する手順については、 [ファイルストア移行](https://learn.liferay.com/dxp/latest/ja/system-administration/file-storage/file-store-migration.html) を参照してください。
 
 ### 変更を伴うJenkinsビルドの作成
 
@@ -84,7 +84,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 1. DXP Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、[アクション]メニューから *Deploy build to*をクリックします。
+1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
 
     ![ビルドのActionsメニューでデプロイします。](./creating-data-backup-files/images/01.png)
 
@@ -94,7 +94,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
     ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./creating-data-backup-files/images/02.png)
 
-1. *Deploy Build*をクリックします。
+1. **Deploy Build** をクリックします。
 
 ビルドは選択した環境にデプロイされ、 `portal-ext.properties` への変更は `liferay` サービス再始動の際に適用されます。
 
@@ -106,7 +106,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 文書ライブラリのあるサーバーで、以下のコマンドを実行し、アップロード用に文書ライブラリを圧縮します。
 
-**Linux、MacOSの場合** (2コマンド)。
+**Linux、MacOSの場合**(2コマンド)。
 
 ```bash
 cd $LIFERAY_HOME/data
@@ -116,7 +116,7 @@ cd $LIFERAY_HOME/data
 tar -czvf volume.tgz document_library
 ```
 
-**Windowsの場合** (3コマンド)。
+**Windowsの場合**(3コマンド)。
 
 ```
 cd $LIFERAY_HOME\data

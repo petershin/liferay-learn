@@ -7,16 +7,16 @@ DXP Cloudは、組み込みのWebアプリケーションファイアウォー�
 ![図1：Webアプリケーションファイアウォールは、一般的な攻撃から保護します。](./web-application-firewall/images/01.png)
 
 ```{note}
-カスタムファイアウォールルールは、[共有クラスタサブスクリプション](../../reference/platform-limitations.md#security)では使用できません。
+カスタムファイアウォールルールは、 [共有クラスタサブスクリプション](../../reference/platform-limitations.md#security) では使用できません。
 ```
 
 ## プライベートネットワーク
 
-DXP Cloudのサービスはインターネットに公開されていません。 DXP Cloudのすべての環境には独自のプライベートネットワークがあり、同じ環境のサービスが、パブリックインターネットとやり取りすることなく、安全な通信プロトコルを介して通信できます。 このプライベートネットワークの設定については、[Private Network](../networking/private-network.md)を参照してください。
+DXP Cloudのサービスはインターネットに公開されていません。 DXP Cloudのすべての環境には独自のプライベートネットワークがあり、同じ環境のサービスが、パブリックインターネットとやり取りすることなく、安全な通信プロトコルを介して通信できます。 このプライベートネットワークの設定については、 [プライベートネットワーク](../networking/private-network.md) を参照してください。
 
 ## パブリックロードバランサー
 
-DXP Cloud Public Load Balancer（[［Layer 7］](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)）は、TLS（1.0〜1.2）プロトコルを使用したプロキシされたHTTP（S）接続を介して環境のサービスへのインターネットアクセスを提供します。 各ロードバランサーには、カスタムドメインの設定に使用できる静的IPがあります。 HTTP（S）負荷分散は、IPスプーフィングと大規模なSYNフラッド攻撃を吸収して保護できます。 この機能はDXP Cloudに組み込まれており、ユーザー設定は必要ありません。
+DXP Cloud Public Load Balancer（ [［Layer 7］](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) ）は、TLS（1.0〜1.2）プロトコルを使用したプロキシされたHTTP（S）接続を介して環境のサービスへのインターネットアクセスを提供します。 各ロードバランサーには、カスタムドメインの設定に使用できる静的IPがあります。 HTTP（S）負荷分散は、IPスプーフィングと大規模なSYNフラッド攻撃を吸収して保護できます。 この機能はDXP Cloudに組み込まれており、ユーザー設定は必要ありません。
 
 ## CDNオフロード
 

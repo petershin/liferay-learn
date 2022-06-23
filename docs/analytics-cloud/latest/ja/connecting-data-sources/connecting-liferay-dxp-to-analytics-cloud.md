@@ -12,13 +12,13 @@ Analytics Cloudはアクセストークンを使用してLiferay DXPと接続し
 
 ## データソースの追加
 
-1. *［設定］* > *［データソース］* > *［データソースの追加］*に移動してデータソースを作成します。 このアクションを実行するには、管理者ロールが必要です。
+1. ［**設定**］ > ［**データソース**］ > ［**データソースの追加**］ に移動してデータソースを作成します。 このアクションを実行するには、管理者ロールが必要です。
 
 1. データソースタイプとしてLiferay DXPを選択します。 コピーするトークンを提供する画面が表示されます。
 
       ![Analytics Cloudは、コピーするためのトークンを提供します。](connecting-liferay-dxp-to-analytics-cloud/images/01.png)
 
-1. トークンをコピーして、Liferay DXPインスタンスに移動します。 *［コントロールパネル］*にある*［設定］*>*［Instance Setting］*、および*［プラットフォーム］*セクションの*［Analytics Cloud］*をクリックします。 以下の画像のように、［Analytics Cloud Token］フィールドにアクセストークンを貼り付け、 *［Connect］*をクリックします。
+1. トークンをコピーして、Liferay DXPインスタンスに移動します。 ［**コントロールパネル**］ にある ［**設定**］ > ［**Instance Setting**］ 、および ［**プラットフォーム**］ セクションの ［**Analytics Cloud**］ をクリックします。 以下の画像のように、［Analytics Cloud Token］フィールドにアクセストークンを貼り付け、 ［**Connect**］ をクリックします。
 
       ![AnalyticsCloudトークンをLiferayDXPインストールのインスタンス設定構成に追加します。](connecting-liferay-dxp-to-analytics-cloud/images/02.png)
 
@@ -29,7 +29,7 @@ Liferay DXP 7.0の場合、Analytics Cloud Adminは、*Configuration* > *Analyti
 接続が成功すると、 `Your DXP instance is connected to Analytics Cloud`というメッセージが表示されます。
 
 ```{note}
-解析データの抑制については、[Do Not Track Feature](../workspace-data/data-control-and-privacy.md#do-not-track-feature)を参照してください。
+解析データの抑制については、 [Do Not Track Feature](../workspace-data/data-control-and-privacy.md#do-not-track-feature) を参照してください。
 ```
 
 ![DXPとAnalytics Cloudの接続が正しく設定されたことを示す成功メッセージが表示されます。](connecting-liferay-dxp-to-analytics-cloud/images/03.png)

@@ -30,11 +30,11 @@
 
 アクティビティストリームは、セッションごとに区切られた過去のアクティビティを表示します。 各セッションは、タイムスタンプの左側に青い点で表示されます。 セッションをクリックすると、セッションの詳細（デバイスやブラウザの情報など）が表示されます。
 
-各セッションには、Analytics Cloudによって追跡される [個々のイベント](../../touchpoints/events.md) がリストアップされ、 [デフォルトイベント](../../workspace-data/definitions/definitions-for-events.md#default-events) と [カスタムイベント](../../workspace-data/definitions/definitions-for-events.md#custom-events)が含まれます。 イベントをクリックすると、そのイベントの詳細（ページタイルやURLなど）が表示されます。
+各セッションには、Analytics Cloudによって追跡される [個々のイベント](../../touchpoints/events.md) がリストアップされ、 [デフォルトイベント](../../workspace-data/definitions/definitions-for-events.md#default-events) と [カスタムイベント](../../workspace-data/definitions/definitions-for-events.md#custom-events) が含まれます。 イベントをクリックすると、そのイベントの詳細（ページタイルやURLなど）が表示されます。
 
 ![アクティビティストリームに表示されるイベントを見る。](individual-profiles/images/02.png)
 
-また、［概要］ タブでは、その人のプロフィールデータ、関心のあるトピック、および関連する視聴者セグメントを垣間見ることができます。 詳細、興味関心、またはセグメントのサマリーの *すべての* を表示 ...リンクをクリックすると、それぞれのタブが開きます。
+また、［概要］ タブでは、その人のプロフィールデータ、関心のあるトピック、および関連する視聴者セグメントを垣間見ることができます。 詳細、興味関心、またはセグメントのサマリーの **すべての** を表示 ...リンクをクリックすると、それぞれのタブが開きます。
 
 ［詳細］タブをクリックすると、個人の詳細が表示されます。
 
@@ -46,7 +46,7 @@
 
 ［Interest］タブをクリックします。
 
-ユーザーがやり取りするウェブページやアセットに応じて、Analytics Cloudは高度なアルゴリズムを使用して、個人の興味がブランドにどのようなものであるかを見つけ出します。 個人との会話の準備や、興味関心に応じたキャンペーンの作成に役立ちます。 詳しくは、 [興味のあるトピックを理解する](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests)をご覧ください。
+ユーザーがやり取りするウェブページやアセットに応じて、Analytics Cloudは高度なアルゴリズムを使用して、個人の興味がブランドにどのようなものであるかを見つけ出します。 個人との会話の準備や、興味関心に応じたキャンペーンの作成に役立ちます。 詳しくは、 [興味のあるトピックを理解する](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests) をご覧ください。
 
 ## セグメント
 

@@ -63,7 +63,7 @@ CIビルドプロセスのステップの基本的な概要は次のとおりで
 1. 存在する場合は、 `［ci/Jenkinsfile-post-always］`をロードします。 これは、ビルドが失敗したときと成功したときの両方で実行されます。
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合、Jenkinsfileのこれらの拡張は、［lcp/ci/］フォルダーにあります。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+バージョン3.x.xのサービスを使用している場合、Jenkinsfileのこれらの拡張は、［lcp/ci/］フォルダーにあります。 バージョンの確認方法については， [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 Jenkinsサービスの起動ログを監視して、デフォルトのパイプラインでこれらがどのように使用されるかを確認することができます。 完全なデフォルトのJenkinsfileが起動ログに出力されます。
@@ -79,7 +79,7 @@ Jenkinsサービスの起動ログを監視して、デフォルトのパイプ�
 ```
 
 ```{note}
-もし、バージョン 3.x.x のサービスを使用していて、独自の ［Jenkinsfile］を定義している場合は、代わりにリポジトリのルートに定義する必要があります。 バージョン確認の詳細については、[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+もし、バージョン 3.x.x のサービスを使用していて、独自の ［Jenkinsfile］を定義している場合は、代わりにリポジトリのルートに定義する必要があります。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ## 異なる拡張ポイント間でのコードの再利用
@@ -103,24 +103,24 @@ util.sendSlackMessage("DXPクラウドビルドを作成しようとしていま
 ```
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合、これらのファイルはリポジトリ内の［lcp/ci/］ディレクトリにあります。 バージョン確認の詳細については、[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+バージョン3.x.xのサービスを使用している場合、これらのファイルはリポジトリ内の［lcp/ci/］ディレクトリにあります。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ## 環境変数リファレンス
 
-次の環境変数は、デフォルトのJenkinsファイルでのみ使用されます。 これらが何をするのかは、 [パイプラインオプションに関するJenkinsのドキュメント](https://jenkins.io/doc/book/pipeline/syntax/#options)を参照してください。
+次の環境変数は、デフォルトのJenkinsファイルでのみ使用されます。 これらが何をするのかは、 [パイプラインオプションに関するJenkinsのドキュメント](https://jenkins.io/doc/book/pipeline/syntax/#options) を参照してください。
 
 | 名前                                    | デフォルト値   | 説明                                                                                                                                                                                                                                                                              |
 |:------------------------------------- |:-------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `lcp_ci_artifact_days_to_keep`        | `-1`     | 保存されるアーティファクトの日数                                                                                                                                                                                                                                                                |
-| `lcp_ci_artifact_num_to_keep`         | `1`      | *アーティファクト* と *スタッシュ* を保存する最近のビルドの数を設定します。                                                                                                                                                                                                                                       |
+| `lcp_ci_artifact_num_to_keep`         | `1`      | **アーティファクト** と **スタッシュ** を保存する最近のビルドの数を設定します。                                                                                                                                                                                                                                       |
 | `lcp_ci_build_days_to_keep`           | `14`     | ビルドが保存される日数                                                                                                                                                                                                                                                                     |
 | `lcp_ci_build_num_to_keep`            | `10`     | 保存されるビルドの数                                                                                                                                                                                                                                                                      |
 | `lcp_ci_build_timeout_minutes`        | `30`     | パイプライン実行のタイムアウト期間を設定します。 その後、Jenkinsがパイプラインを中止します。                                                                                                                                                                                                                              |
 | `lcp_ci_deploy_branch`                |          | [［automatic deployment］](../build-and-deploy/automatically-deploying-ci-service-builds.md)に使用されるブランチ。 この変数が有効なブランチ名に設定されていない場合、自動デプロイは無効になります。                                                                                                                                  |
 | `lcp_ci_deploy_target`                |          | [［automatic deployment］](../build-and-deploy/automatically-deploying-ci-service-builds.md) がデプロイされる環境を設定します。 `［LCP_CI_DEPLOY_BRANCH］` が設定されている場合にのみ使用されます。                                                                                                                      |
 | `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}`   |          | Liferayサービスをデプロイする際にCIが自動的に適用するHotfixをカンマ区切りで列挙します。 環境名を`［{ENV}］`（全て大文字で）、または`［COMMON］`に置き換えます。                                                                                                                                                                                 |
-| `lcp_ci_preserve_stashes_build_count` | `20`     | *stashes* が保存される最近のビルドの数を設定します。 `LCP_CI_ARTIFACT_NUM_TO_KEEP` 変数で許可されているよりも多くのビルドでStashを保持することはできません。                                                                                                                                                                           |
+| `lcp_ci_preserve_stashes_build_count` | `20`     | **stashes** が保存される最近のビルドの数を設定します。 `LCP_CI_ARTIFACT_NUM_TO_KEEP` 変数で許可されているよりも多くのビルドでStashを保持することはできません。                                                                                                                                                                           |
 | `lcp_ci_scm_manage_hooks`             | `true`   | コードホスティングプラットフォーム（GitHubなど）の [［automatic web hook management］](../getting-started/configuring-your-github-repository.md#personal-access-token-usage) を有効または無効にするオプションです。                                                                                                        |
 | `lcp_ci_scm_provider`                 | `github` | ビルドの取得に使用するソースコントロール管理サービスを設定します。 許容されているのは [`［bitbucket］`](../getting-started/configuring-your-bitbucket-repository.md)、 [`［github］`](../getting-started/configuring-your-github-repository.md)、及び [`［gitlab］`](../getting-started/configuring-your-gitlab-repository.md)の値です。 |
 | `lcp_ci_scm_repository_name`          |          | ビルドを取得する際に使用するリポジトリ名を設定します (GitHub、Bitbucket あるいは GitLab から)。                                                                                                                                                                                                                   |

@@ -21,19 +21,19 @@ DXP Cloud Stackバージョン4にアップグレードすると、すべての�
 
 ## プロジェクト組織の変更
 
-リポジトリの最大の変更点は、各サービスのファイル（ `LCP.json` ファイルを含む）がリポジトリのルートのフォルダ（例： `liferay/` または `webserver/`）に移動したことです。 これらのサービスは、再配置されたサービスフォルダに移動し、 [CLI ツール](./command-line-tool.md)を使用して個別に配置することができます。 `lcp` フォルダーが削除され、これらのサービスのパスに含まれなくなりました。 これらのフォルダ自体は、 [Liferayワークスペース構造](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html)に類似するように再編成されています。
+リポジトリの最大の変更点は、各サービスのファイル（ `LCP.json` ファイルを含む）がリポジトリのルートのフォルダ（例： `liferay/` または `webserver/`）に移動したことです。 これらのサービスは、再配置されたサービスフォルダに移動し、 [CLI ツール](./command-line-tool.md)を使用して個別に配置することができます。 `lcp` フォルダーが削除され、これらのサービスのパスに含まれなくなりました。 これらのフォルダ自体は、 [Liferayワークスペース構造](https://learn.liferay.com/dxp/latest/ja/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) に類似するように再編成されています。
 
 リポジトリのルートにあった他のいくつかのファイル（ `gradle.properties`、 `build.gradle`、 `settings.gradle`を含む）も、 `liferay` サービスに移動されました。
 
 ## Liferayサービスの変更
 
-`liferay` サービスフォルダは、 [Liferay Workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html)の機能構造に従っていることに注意してください。
+`liferay` サービスフォルダは、 [Liferay Workspace](https://learn.liferay.com/dxp/latest/ja/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) の機能構造に従っていることに注意してください。
 
 `liferay` サービス内のすべての設定は、プロジェクトの DXP Cloud 環境に対応する環境固有の `configs` ディレクトリに所属するようになりました。 さらに、 `ライセンス` フォルダーが削除されました。 代わりに、 `デプロイ` フォルダーにライセンスを追加してください。
 
 次の表は、 `liferay` サービス設定の新しい設定をまとめたものです。
 
-| **ファイル**                   | **3.xでの場所**                    | **4.xでの場所**                         |
+| **ファイル** | **3.xでの場所** | **4.xでの場所** |
 |:-------------------------- |:------------------------------ |:----------------------------------- |
 | デプロイするファイル                 | lcp/liferay/deploy/{ENV}/です。   | liferay/configs/{ENV}/deploy/       |
 | OSGi設定ファイル（.cfgまたは.config） | lcp/liferay/config/{ENV}/です。   | liferay/configs/{ENV}/osgi/configs/ |
@@ -56,7 +56,7 @@ configs/{ENV}/` ディレクトリ内のファイルは、DXP Cloud の Liferay 
 
 `search` サービス内のすべての設定は、環境固有の `configs` ディレクトリに属します。 `search` サービス設定の新しい設定については、次の表を参照してください：
 
-| **ファイル**                      | **3.xでの場所**                    | **4.xでの場所**                                   |
+| **ファイル** | **3.xでの場所** | **4.xでの場所** |
 |:----------------------------- |:------------------------------ |:--------------------------------------------- |
 | Elasticsearch の設定             | lcp / search / config /{ENV}/  | search/configs/{ENV}/config/ [サーチ/コンフィグ/コンフィグ |
 | カスタムシェルスクリプト                  | lcp/search/script/{ENV}/です。    | search/configs/{ENV}/scripts/。                |
@@ -101,7 +101,7 @@ bin/elasticsearch-pluginリスト
 
 `webserver` サービス設定の新しい設定については、次の表を参照してください：
 
-| **ファイル**  | **3.xでの場所**                      | **4.xでの場所**                      |
+| **ファイル** | **3.xでの場所** | **4.xでの場所** |
 |:--------- |:-------------------------------- |:-------------------------------- |
 | ウェブサーバー設定 | lcp / webserver / config /{ENV}/ | ウェブサーバ/コンフィグ/{ENV}/conf.d/       |
 | カスタムスクリプト | lcp/webserver/script/{ENV}/です。   | webserver/configs/{ENV}/scripts/ |
@@ -139,7 +139,7 @@ location /static/ {
 
 `バックアップ` サービス内のすべての設定は、環境固有の `コンフィグ` ディレクトリに属するようになりました。 これは主にカスタムSQLスクリプトに関係しています：
 
-| **ファイル**     | **3.xでの場所**                   | **4.xでの場所**                    |
+| **ファイル** | **3.xでの場所** | **4.xでの場所** |
 |:------------ |:----------------------------- |:------------------------------ |
 | カスタムSQLスクリプト | lcp / backup / script /{ENV}/ | backup/configs/{ENV}/scripts/。 |
 

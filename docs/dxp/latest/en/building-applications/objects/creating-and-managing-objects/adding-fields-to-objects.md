@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.4+`
 
-Fields are data definitions that represent database columns. They store different [types of values](#field-types-ui-reference) for Liferay Objects. You can add fields to any published or unpublished Object, including both system and custom Objects.
+Fields are data definitions that represent database columns. They store different [types of values](#field-types-ui-reference) for Liferay Objects. You can add fields to any published or unpublished custom Object. <!--TASK: swap last sentence once system Objects are supported. "You can add fields to any published or unpublished Object, including both system and custom Objects."-->
 
 When an Object is [published](./creating-objects.md#publishing-object-drafts), an initial database table is created with the draft's data definitions. This table includes all Object fields and relationships that exist at the time of publishing. Fields and relationships added to an Object after publishing are added to a side table (i.e., `[Initial_Table_Name]_x`).
 

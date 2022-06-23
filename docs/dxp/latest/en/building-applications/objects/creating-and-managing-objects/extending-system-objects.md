@@ -1,7 +1,6 @@
 # Extending System Objects
 
-{bdg-secondary}`Available Liferay 7.4 U_+ and GA_+`
-<!--Confirm release version for many to many relationships-->
+{bdg-secondary}`Available Liferay 7.4 U30+ and GA30+`
 
 With Liferay Objects, you can extend supported system services. Currently, only the following services are integrated with the Objects framework: Commerce Order, Account, and User.
 
@@ -11,16 +10,17 @@ When extending system Objects, you can add [fields](#adding-fields), [relationsh
 
 | Feature | System Objects | Custom Objects |
 | :--- | :--- | :--- |
-| Fields | &#10004; | &#10004; |
+| Fields | <!--TASK: Uncomment once supported: &#10004;--> | &#10004; |
 | Relationships | &#10004; | &#10004; |
 | Layouts |  | &#10004; |
 | Actions | &#10004; | &#10004; |
 | Views |  | &#10004; |
 | Validations |  | &#10004; |
 
+<!--TASK: Uncomment once supported.
 ## Adding Fields
 
-You can add custom fields to system Objects to define additional database columns. These fields are added to a separate database table that uses the service's original table name with `_x` appended to it (e.g., `AccountEntry_x`). System Objects support all available [field types](./adding-fields-to-objects.md#field-types-ui-reference). See [Adding Fields to Objects](./adding-fields-to-objects.md) for more information.
+You can add custom fields to system Objects to define additional database columns. These fields are added to a separate database table that uses the service's original table name with `_x` appended to it (e.g., `AccountEntry_x`). System Objects support all available [field types](./adding-fields-to-objects.md#field-types-ui-reference). See [Adding Fields to Objects](./adding-fields-to-objects.md) for more information. -->
 
 ## Adding Relationships
 
@@ -34,6 +34,7 @@ Since system Objects don't support [custom layouts](./designing-object-layouts.m
 
 You can add custom actions to system Objects that are triggered when entries are added, updated, or removed. This includes both Webhook and Groovy Script actions. See [Defining Object Actions](./defining-object-actions.md) for more information.
 
+<!--TASK: Uncomment once supported.
 ## Additional Configuration Options
 
 When editing a system Object, you can also configure the following settings in the *Details* tab.
@@ -41,7 +42,7 @@ When editing a system Object, you can also configure the following settings in t
 | Field | Description |
 | :--- | :--- |
 | Title Field | Determine the field used as the title for Object entries. |
-| Widget | Determine whether the Object's Page widget is available in Sites.|
+| Widget | Determine whether the Object's Page widget is available in Sites.| -->
 
 ## Additional Information
 

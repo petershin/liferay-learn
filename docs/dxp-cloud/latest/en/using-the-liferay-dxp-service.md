@@ -97,6 +97,7 @@ Liferay DXP has many powerful features to build, manage, and deploy content to t
 * [Logging Into Your DXP Cloud Services](getting-started/logging-into-your-dxp-cloud-services.md)
 * [Configuring the Liferay DXP Service](./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
 * [Deploying Changes via the DCP Cloud Console](build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)
+
 ```{toctree}
 :maxdepth: 1
 

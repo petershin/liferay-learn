@@ -1,73 +1,73 @@
-# Dispatch UI Reference
+# Job Scheduler UI Reference
 
-## Dispatch Triggers
+## Job Scheduler Triggers
 
-![View, create, and manage Dispatch Tasks.](./dispatch-ui-reference/images/01.png)
+![View, create, and manage Job Scheduler Tasks.](./dispatch-ui-reference/images/01.png)
 
-The Dispatch Triggers tab lists all Dispatch Tasks added to the Liferay instance.
+The Job Scheduler Triggers tab lists all tasks added to the Liferay instance.
 
-Click *Add* (![Add Button](../../../images/icon-add.png)) to create a Dispatch Task using a Dispatch Task Executor template.
+Click *Add* (![Add Button](../../../images/icon-add.png)) to create a Job Scheduler Task using a Job Scheduler Task Executor template.
 
-Once created, the following fields are displayed for each Dispatch Task:
+Once created, the following fields are displayed for each Job Scheduler Task:
 
 | Field | Description |
 | :--- | :--- |
-| Name | The name of the Dispatch Task |
-| Task Executor Type | The Dispatch Task Executor template used to create the Dispatch Task |
+| Name | The name of the Job Scheduler task |
+| Task Executor Type | The Job Scheduler Task Executor template used to create the task |
 | System | Indicates whether it is a system task |
-| Create Date | When the Dispatch Task was created |
-| Next Run Date | The next time the Dispatch Task is scheduled to run |
-| Status | The Status of the Dispatch Task's most recent execution (e.g., *Successful*, *Failed*) |
-| Run Now | Button for manually executing the Dispatch Task |
+| Create Date | Creation date of the Job Scheduler task |
+| Next Run Date | The next time the Job Scheduler task is scheduled to run |
+| Status | The Status of the Job Scheduler task's most recent execution (e.g., *Successful*, *Failed*) |
+| Run Now | Button for manually executing the Job Scheduler task |
 
-From here, click a Dispatch task to access the following details and configuration options.
+From here, click a Job Scheduler task to access the following details and configuration options.
 
 ### Details Tab
 
-![View and edit general details for Dispatch Tasks](./dispatch-ui-reference/images/02.png)
+![View and edit general details for Job Scheduler tasks](./dispatch-ui-reference/images/02.png)
 
 | Field | Description |
 | :--- | :--- |
-| Name | View/Edit the Dispatch Task's name |
-| Settings Editor | Code editor for defining properties that are injected into the Dispatch Task at runtime |
+| Name | View/Edit the Job Scheduler task's name |
+| Settings Editor | Code editor for defining properties that are injected into the Job Scheduler task at runtime |
 
-### Talend Tab (For Talend Dispatch Tasks Only)
+### Talend Tab (For Talend Job Scheduler Tasks Only)
 
 ![Upload Talend Job Archive files.](./dispatch-ui-reference/images/03.png)
 
-Upload a Talend *Job Archive* `.zip` file to your Dispatch Task.
+Upload a Talend *Job Archive* `.zip` file to your Job Scheduler task.
 
 ### Logs Tab
 
-![View and remove Logs for the selected Dispatch Task.](./dispatch-ui-reference/images/04.png)
+![View and remove Logs for the selected Job Scheduler task.](./dispatch-ui-reference/images/04.png)
 
-View and remove *Logs* for the Dispatch Task.
+View and remove *Logs* for the Job Scheduler task.
 Includes *Start Date*, *Runtime*, *Trigger*, and *Status*.
 
 | Field | Description |
 | :--- | :--- |
 | Start Date | Timestamp for when the execution started |
 | Runtime | The duration of the execution |
-| Trigger | The name of the Dispatch Task that was executed |
+| Trigger | The name of the Job Scheduler task that was executed |
 | Status | The status of the execution (e.g., *Successful*, *Failed*) |
 
 Click on a Log entry to also see any errors and output from the execution.
 
-### Dispatch Trigger Tab
+### Job Scheduler Trigger Tab
 
-![Configure the Dispatch Trigger to schedule Dispatch Task executions.](./dispatch-ui-reference/images/05.png)
+![Configure the Job Scheduler Trigger to schedule task executions.](./dispatch-ui-reference/images/05.png)
 
-Configure the Dispatch Trigger to schedule Dispatch Task executions.
+Configure the Job Scheduler Trigger to schedule task executions.
 
 | Field | Description |
 | :--- | :--- |
 | Active | Determines whether the configured schedule for execution is active or inactive |
-| Task Execution Cluster Mode | Determines whether the Dispatch Tasks is executed on a *Single Node* or *All Nodes* in a clustered environment |
-| Overlap Allowed | Determines whether concurrent execution of Dispatch Tasks is allowed |
-| Cron Expression | Defines time intervals for automatically executing the Dispatch Task |
-| Start Date | Defines when the Dispatch Task begins to be executed according to the cron schedule; set to current date and time by default |
-| Never End | Determines whether the Dispatch Task's automatic execution ever ends; checked by default |
-| End Date | Defines when the Dispatch Task is no longer automatically executed; disabled if *Never End* is checked |
+| Task Execution Cluster Mode | Determines whether the Job Scheduler task is executed on a *Single Node* or *All Nodes* in a clustered environment |
+| Overlap Allowed | Determines whether concurrent execution of Job Scheduler Tasks are allowed |
+| Cron Expression | Defines time intervals for automatically executing Job Scheduler tasks |
+| Start Date | Defines when the Job Scheduler task begins to be executed according to the cron schedule; set to current date and time by default |
+| Never End | Determines whether the Job Scheduler task's automatic execution ever ends; checked by default |
+| End Date | Defines when the Job Scheduler task is no longer automatically executed; disabled if *Never End* is checked |
 
 ## Scheduled Jobs
 
@@ -86,5 +86,5 @@ This page compiles a list of all jobs scheduled across the Liferay instance usin
 
 ## Additional Information
 
-* [Using Dispatch](./using-dispatch.md)
-* [Understanding the Dispatch Framework](./understanding-the-dispatch-framework.md)
+* [Using Job Scheduler](./using-dispatch.md)
+* [Understanding the Job Scheduler Framework](./understanding-the-dispatch-framework.md)

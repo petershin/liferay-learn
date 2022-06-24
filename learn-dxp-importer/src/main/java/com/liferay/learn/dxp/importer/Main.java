@@ -50,8 +50,10 @@ import com.vladsch.flexmark.util.ast.Visitor;
 import com.vladsch.flexmark.util.data.MutableDataSet;
 import com.vladsch.flexmark.util.sequence.BasedSequence;
 import com.vladsch.flexmark.util.sequence.CharSubSequence;
+import java.io.BufferedReader;
 
 import java.io.File;
+import java.io.StringReader;
 
 import java.nio.charset.StandardCharsets;
 
@@ -366,6 +368,39 @@ public class Main {
 			).build();
 	}
 
+	private String _preprocessMarkdown (String markdown) throws Exception {
+		BufferedReader bufReader = new BufferedReader(new StringReader(markdown));
+
+		String line = null;
+
+		String processedMarkdown = "";
+
+		Boolean startAdmonitionBlock = false; 
+
+		while ((line=bufReader.readLine()) != null) {
+
+			if (line.trim().startsWith("```{")) {
+				startAdmonitionBlock = true;
+				String qualifier = line.substring(line.indexOf("{") + 1);
+				qualifier = qualifier.substring (0, qualifier.indexOf("}"));
+				line = "!!! " + qualifier;
+			}
+
+			if (line.trim().startsWith("```")) {
+				if (startAdmonitionBlock) {
+					line = "";
+
+					startAdmonitionBlock = false;
+				}
+			}
+
+			processedMarkdown = processedMarkdown + line;
+
+		}
+		
+		return processedMarkdown;
+	}
+
 	private BasedSequence _toBasedSequence(String string) {
 		return CharSubSequence.of(string.toCharArray(), 0, string.length());
 	}
@@ -403,6 +438,8 @@ public class Main {
 		String englishText = FileUtils.readFileToString(
 			englishFile, StandardCharsets.UTF_8);
 
+		// Pre-process text here
+
 		ContentFieldValue englishContentFieldValue = new ContentFieldValue() {
 			{
 				data = _toHTML(englishFile, englishText);
@@ -416,6 +453,8 @@ public class Main {
 		if (japaneseFile.exists()) {
 			String japaneseText = FileUtils.readFileToString(
 				japaneseFile, StandardCharsets.UTF_8);
+
+			// Pre-process text here
 
 			structuredContent.setContentFields(
 				new ContentField[] {

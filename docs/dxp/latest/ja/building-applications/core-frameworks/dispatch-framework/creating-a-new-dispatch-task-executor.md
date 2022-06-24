@@ -54,7 +54,7 @@
 1. サンプルモジュールをダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/docs/dxp/latest/en/building-applications/core-frameworks/dispatch-framework/liferay-s7a3.zip -O
+   curl https://learn.liferay.com/docs/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/liferay-s7a3.zip -O
    ```
 
    ```bash

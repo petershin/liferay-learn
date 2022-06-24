@@ -52,7 +52,7 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
 1. Download and unzip the example module.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/dispatch-framework/liferay-s7a3.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/liferay-s7a3.zip -O
    ```
 
    ```bash

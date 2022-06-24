@@ -13,7 +13,7 @@ The Job Scheduler framework consists of six essential parts:
 
 ## Base `DispatchTaskExecutor`
 
-Implementations of the base [`DispatchTaskExecutor`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) interface create templates for Job Scheduler Tasks in a Liferay instance. Each implementation of `DispatchTaskExecutor` is registered as an OSGi component and contains the logic executed by the Job Scheduler task. All Job Scheduler tasks are instances of Java classes that implement the `DispatchTaskExecutor` interface and have the `dispatch.task.executor.name` and `dispatch.task.executor.type` OSGi component properties. See [Creating a New Job Scheduler Task Executor](./creating-a-new-dispatch-task-executor.md) to learn more.
+Implementations of the base [`DispatchTaskExecutor`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) interface create templates for Job Scheduler Tasks in a Liferay instance. Each implementation of `DispatchTaskExecutor` is registered as an OSGi component and contains the logic executed by the Job Scheduler task. All Job Scheduler tasks are instances of Java classes that implement the `DispatchTaskExecutor` interface and have the `dispatch.task.executor.name` and `dispatch.task.executor.type` OSGi component properties. See [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md) to learn more.
 
 ## `DispatchTrigger`
 
@@ -37,6 +37,6 @@ The [`DispatchConfigurator`](https://github.com/liferay/liferay-portal/blob/mast
 
 ## Additional Information
 
-* [Using Job Scheduler](./using-dispatch.md)
-* [Job Scheduler UI Reference](./dispatch-ui-reference.md)
-* [Creating a New Job Scheduler Executor](./creating-a-new-dispatch-task-executor.md)
+* [Using Job Scheduler](./using-job-scheduler.md)
+* [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)
+* [Creating a New Job Scheduler Executor](./creating-a-new-job-scheduler-task-executor.md)

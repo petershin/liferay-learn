@@ -78,13 +78,13 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
    STARTED com.acme.s7a3.impl-1.0.0 [1656]
    ```
 
-1. Verify the module is working by using it to [add a new Job Scheduler Task](./using-dispatch.md#adding-a-new-job-scheduler-task) to your Liferay instance.
+1. Verify the module is working by using it to [add a new Job Scheduler Task](./using-job-scheduler.md#adding-a-new-job-scheduler-task) to your Liferay instance.
 
-   ![Add a new Job Scheduler Task using the new template.](./creating-a-new-dispatch-task-executor/images/01.png)
+   ![Add a new Job Scheduler Task using the new template.](./creating-a-new-job-scheduler-task-executor/images/01.png)
 
    Once you've created the task, click on *Run Now*.
 
-   ![Click Run Now for your new Job Scheduler Task.](./creating-a-new-dispatch-task-executor/images/02.png)
+   ![Click Run Now for your new Job Scheduler Task.](./creating-a-new-job-scheduler-task-executor/images/02.png)
 
    If successful, it should print the following message to the console when executed.
 
@@ -94,7 +94,7 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
 
    You can also click the task and go to the *Logs* tab to see a list of all previous runs.
 
-   ![View and manage logs for your Job Scheduler Task.](./creating-a-new-dispatch-task-executor/images/03.png)
+   ![View and manage logs for your Job Scheduler Task.](./creating-a-new-job-scheduler-task-executor/images/03.png)
 
 ## Code for the Sample Job Scheduler Task Executor
 
@@ -109,6 +109,6 @@ Following the `@Component` annotation, the module extends the `BaseDispatchTaskE
 
 ## Additional Information
 
-* [Understanding the Job Scheduler Framework](./understanding-the-dispatch-framework.md)
-* [Using Job Scheduler](./using-dispatch.md)
-* [Job Scheduler UI Reference](./dispatch-ui-reference.md)
+* [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)
+* [Using Job Scheduler](./using-job-scheduler.md)
+* [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)

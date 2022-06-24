@@ -2,7 +2,7 @@
 
 ## Job Scheduler Triggers
 
-![View, create, and manage Job Scheduler Tasks.](./dispatch-ui-reference/images/01.png)
+![View, create, and manage Job Scheduler Tasks.](./job-scheduler-ui-reference/images/01.png)
 
 The Job Scheduler Triggers tab lists all tasks added to the Liferay instance.
 
@@ -24,7 +24,7 @@ From here, click a Job Scheduler task to access the following details and config
 
 ### Details Tab
 
-![View and edit general details for Job Scheduler tasks](./dispatch-ui-reference/images/02.png)
+![View and edit general details for Job Scheduler tasks](./job-scheduler-ui-reference/images/02.png)
 
 | Field | Description |
 | :--- | :--- |
@@ -33,13 +33,13 @@ From here, click a Job Scheduler task to access the following details and config
 
 ### Talend Tab (For Talend Job Scheduler Tasks Only)
 
-![Upload Talend Job Archive files.](./dispatch-ui-reference/images/03.png)
+![Upload Talend Job Archive files.](./job-scheduler-ui-reference/images/03.png)
 
 Upload a Talend *Job Archive* `.zip` file to your Job Scheduler task.
 
 ### Logs Tab
 
-![View and remove Logs for the selected Job Scheduler task.](./dispatch-ui-reference/images/04.png)
+![View and remove Logs for the selected Job Scheduler task.](./job-scheduler-ui-reference/images/04.png)
 
 View and remove *Logs* for the Job Scheduler task.
 Includes *Start Date*, *Runtime*, *Trigger*, and *Status*.
@@ -55,7 +55,7 @@ Click on a Log entry to also see any errors and output from the execution.
 
 ### Job Scheduler Trigger Tab
 
-![Configure the Job Scheduler Trigger to schedule task executions.](./dispatch-ui-reference/images/05.png)
+![Configure the Job Scheduler Trigger to schedule task executions.](./job-scheduler-ui-reference/images/05.png)
 
 Configure the Job Scheduler Trigger to schedule task executions.
 
@@ -71,7 +71,7 @@ Configure the Job Scheduler Trigger to schedule task executions.
 
 ## Scheduled Jobs
 
-![View all jobs scheduled using the MessageListener interface.](./dispatch-ui-reference/images/06.png)
+![View all jobs scheduled using the MessageListener interface.](./job-scheduler-ui-reference/images/06.png)
 
 This page compiles a list of all jobs scheduled across the Liferay instance using the `MessageListener` interface.
 
@@ -86,5 +86,5 @@ This page compiles a list of all jobs scheduled across the Liferay instance usin
 
 ## Additional Information
 
-* [Using Job Scheduler](./using-dispatch.md)
-* [Understanding the Job Scheduler Framework](./understanding-the-dispatch-framework.md)
+* [Using Job Scheduler](./using-job-scheduler.md)
+* [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)

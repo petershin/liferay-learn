@@ -2,7 +2,7 @@
 
 [Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a flexible framework built on top of Liferay's scheduler engine that you can use to run and schedule any type of logic. This framework uses the `DispatchTaskExecutor` interface to define templates with custom logic that you can use to [create tasks](#adding-a-new-dispatch-task) via the Control Panel. Once a Job Scheduler task is created, you can configure its behavior and execution [schedule](#scheduling-the-dispatch-task).
 
-![Add and manage Job Scheduler tasks via the Job Scheduler page.](./using-dispatch/images/01.png)
+![Add and manage Job Scheduler tasks via the Job Scheduler page.](./using-job-scheduler/images/01.png)
 
 Job Scheduler provides a convenient UI for viewing and managing all instance [jobs scheduled using the `MessageListener` interface](#viewing-and-managing-scheduled-jobs).
 
@@ -18,15 +18,15 @@ The Job Scheduler UI also provides a more complete overview of each Job Schedule
 
 1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) and select the desired template for your Job Scheduler Task. The selected template defines the Task's essential logic.
 
-   Each template is an implementation of the `DispatchTaskExecutor` interface, and each Job Scheduler task is an instance of the selected template. See [Understanding the Job Scheduler Framework](./understanding-the-dispatch-framework.md) for more information about how it works.
+   Each template is an implementation of the `DispatchTaskExecutor` interface, and each Job Scheduler task is an instance of the selected template. See [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md) for more information about how it works.
 
    ```{note}
    Liferay DXP provides a variety of Job Scheduler task templates, while Liferay Portal only includes the Talend Job Scheduler Task Executor.
 
-   You can also create your own templates. See [Creating a New Job Scheduler Task Executor](./creating-a-new-dispatch-task-executor.md) to learn how.
+   You can also create your own templates. See [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md) to learn how.
    ```
 
-   ![Click the Add button and select a Job Scheduler Task Executor template for your task.](./using-dispatch/images/02.png)
+   ![Click the Add button and select a Job Scheduler Task Executor template for your task.](./using-job-scheduler/images/02.png)
 
 1. Enter a name for the Job Scheduler task.
 
@@ -42,11 +42,11 @@ The Job Scheduler UI also provides a more complete overview of each Job Schedule
 
 1. Click *Save* to create a new Job Scheduler task for the selected template.
 
-   ![Enter a name and optionally use the settings editor to define properties for the Job Scheduler task.](./using-dispatch/images/03.png)
+   ![Enter a name and optionally use the settings editor to define properties for the Job Scheduler task.](./using-job-scheduler/images/03.png)
 
 All Job Scheduler tasks added to an instance appear on the Job Scheduler page. From here, you can click the task to edit its settings or configure its Job Scheduler Trigger to schedule when it runs. You can also click *Run Now* to execute the task manually. The Logs tab shows a record of all executions for the selected Job Scheduler task.
 
-![View, manage, and configure all instance Job Scheduler tasks from the Job Scheduler page.](./using-dispatch/images/04.png)
+![View, manage, and configure all instance Job Scheduler tasks from the Job Scheduler page.](./using-job-scheduler/images/04.png)
 
 ## Scheduling the Job Scheduler Task
 
@@ -58,7 +58,7 @@ By default, all Job Scheduler task triggers are deactivated at creation. Follow 
 
 1. Click *Save*.
 
-   ![Schedule when the Job Scheduler task runs.](./using-dispatch/images/05.png)
+   ![Schedule when the Job Scheduler task runs.](./using-job-scheduler/images/05.png)
 
 **Active**: Activate or deactivate the Job Scheduler Trigger. To activate the trigger, you must enter a valid cron expression. When active, the Job Scheduler task executes according to the set schedule. Deactivating it prevents the Trigger from running.
 
@@ -86,7 +86,7 @@ Follow these steps to upload a Talend *Job Archive* to a Job Scheduler task:
 
 1. Click the *Talend* tab.
 
-   ![Click the Talend tab, and upload your Talend Job Archive](./using-dispatch/images/06.png)
+   ![Click the Talend tab, and upload your Talend Job Archive](./using-job-scheduler/images/06.png)
 
 1. Upload the ZIP file for your Talend *Job Archive*.
 
@@ -96,10 +96,10 @@ Follow these steps to upload a Talend *Job Archive* to a Job Scheduler task:
 
 The Job Scheduler Page's *Scheduled Jobs* tab also lists all jobs scheduled on the Liferay instance using the `MessageListener` interface. Here you can view general details for each job (e.g., name, status), as well as manually initiate runs or pause/resume jobs individually.
 
-![View all jobs scheduled using the MessageListener interface.](./using-dispatch/images/07.png)
+![View all jobs scheduled using the MessageListener interface.](./using-job-scheduler/images/07.png)
 
 ## Additional Information
 
-* [Job Scheduler UI Reference](./dispatch-ui-reference.md)
-* [Understanding the Job Scheduler Framework](./understanding-the-dispatch-framework.md)
-* [Creating a New Job Scheduler Task Executor](./creating-a-new-dispatch-task-executor.md)
+* [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)
+* [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)
+* [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md)

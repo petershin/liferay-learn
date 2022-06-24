@@ -98,7 +98,7 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
 
 ## Code for the Sample Job Scheduler Task Executor
 
-```{literalinclude} creating-a-new-dispatch-task-executor/resources/liferay-s7a3.zip/s7a3-impl/src/main/java/com/acme/s7a3/internal/dispatch/executor/S7A3DispatchTaskExecutor.java
+```{literalinclude} creating-a-new-job-scheduler-task-executor/resources/liferay-s7a3.zip/s7a3-impl/src/main/java/com/acme/s7a3/internal/dispatch/executor/S7A3DispatchTaskExecutor.java
    :language: java
    :lines: 15-44
 ```

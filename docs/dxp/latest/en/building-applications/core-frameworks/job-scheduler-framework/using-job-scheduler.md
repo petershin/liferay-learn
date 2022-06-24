@@ -1,6 +1,6 @@
 # Using Job Scheduler
 
-[Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a flexible framework built on top of Liferay's scheduler engine that you can use to run and schedule any type of logic. This framework uses the `DispatchTaskExecutor` interface to define templates with custom logic that you can use to [create tasks](#adding-a-new-dispatch-task) via the Control Panel. Once a Job Scheduler task is created, you can configure its behavior and execution [schedule](#scheduling-the-dispatch-task).
+[Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a flexible framework built on top of Liferay's scheduler engine that you can use to run and schedule any type of logic. This framework uses the `DispatchTaskExecutor` interface to define templates with custom logic that you can use to [create tasks](#adding-a-new-job-scheduler-task) via the Control Panel. Once a Job Scheduler task is created, you can configure its behavior and execution [schedule](#scheduling-the-job-scheduler-task).
 
 ![Add and manage Job Scheduler tasks via the Job Scheduler page.](./using-job-scheduler/images/01.png)
 
@@ -80,7 +80,7 @@ Talend is open source data integration software for defining custom data integra
 
 Follow these steps to upload a Talend *Job Archive* to a Job Scheduler task:
 
-1. Add a new Job Scheduler task to your instance using the Talend executor template. See [Adding a New Job Scheduler Task](#adding-a-new-dispatch-task) for detailed instructions.
+1. Add a new Job Scheduler task to your instance using the Talend executor template. See [Adding a New Job Scheduler Task](#adding-a-new-job-scheduler-task) for detailed instructions.
 
 1. Go to the *Job Scheduler Triggers* tab in the Job Scheduler page, and click on the desired task.
 

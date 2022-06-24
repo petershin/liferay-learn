@@ -41,7 +41,7 @@ liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-sp2-202005120922
 ```
 
 ```{note}
-DXP Cloud スタックがまだ 4.x.x にアップデートされていない場合、デフォルトでは、このバージョンはリポジトリのルートにある `gradle.properties` ファイル内に配置されるようになっています。 この場合、`liferay.workspace.lcp.liferay.image`プロパティでバージョンを定義します（メジャーバージョンとは別に定義する必要はありません）。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_を参照してください。
+DXP Cloud スタックがまだ 4.x.x にアップデートされていない場合、デフォルトでは、このバージョンはリポジトリのルートにある `gradle.properties` ファイル内に配置されるようになっています。 この場合、`liferay.workspace.lcp.liferay.image`プロパティでバージョンを定義します（メジャーバージョンとは別に定義する必要はありません）。 バージョンの確認方法については，[Uサービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 DXP Cloudの [Services Changelog](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) をチェックして、新しいリリースごとのリファレンスを確認できます。 新しい各サービスアップデートには、インスタンスに使用できるDockerイメージが含まれています。 また、 [Docker HubのDXPタグ](https://hub.docker.com/r/liferay/dxp/tags?page=1) を直接確認して、使用するDockerイメージ名を探すこともできます。
@@ -87,15 +87,13 @@ liferay
     └── dev
         ├── deploy
         ├── osgi
-        ├── patch
-        └── LCP.         ├─ osgi 
- ├─ patching 
- └─ scripts
-            └─ remove- - log-files.ログファイルを削除します。sh
+        ├── patching
+        └── scripts
+            └── remove-log-files.sh
 ```
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合、スクリプトは代わりにリポジトリの `lcp/liferay/script/` フォルダに入ります。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_を参照してください。
+バージョン3.x.xのサービスを使用している場合、スクリプトは代わりにリポジトリの `lcp/liferay/script/` フォルダに入ります。 バージョンの確認方法については，[サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ## 制限事項
@@ -116,12 +114,8 @@ Liferay DXPには、コンテンツを構築、管理、Webにデプロイする
 using-the-liferay-dxp-service/deploying-to-the-liferay-service.md
 using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version.md
 using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
-using the-liferay-Dxp-Service-liferay-service.md 
-
- using the-liferay-service-deploying-to-the-liferay-service.md </notrmd 
- using-the-liferay-dxp-service/liferay-service-environment-variables.md
-using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md 
- using-the-liferay-dxp-service/setting-up-liferay-service-environment-variables.mdmd
+using-the-liferay-dxp-service/liferay-service-environment-variables.md
+using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md
 using-the-liferay-dxp-service/using-the-mysql-client.md
 using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
 ```

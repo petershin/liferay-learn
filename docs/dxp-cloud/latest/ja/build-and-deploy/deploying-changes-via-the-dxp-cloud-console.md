@@ -32,7 +32,7 @@
    ```
 
    ```{note}
-   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev`となります。 ディレクトリ構造の違いについては［バージョン4におけるDXP Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md)_、サービスのバージョンの確認方法については［サービススタックのバージョンについて](.../reference/Understanding-service-stack-versions.md）をご参照ください。
+   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev` となります。 ディレクトリ構造の違いについては [バージョン4におけるDXP Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md) サービスのバージョンの確認方法については [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) をご参照ください。
    ```
 
 1. 以下のコマンドで、 `portal-env.properties` ファイルに変更を追加し、コミットします。

@@ -46,13 +46,13 @@ Also, the first tab in a layout cannot contain relationships, and a Relationship
 
    ![The Layout tab contains the controls for creating a layout.](./designing-object-layouts/images/02.png)
 
-1. Click on *Add Tab*, enter a *Label*, select the *Fields* type, and click on *Save*.
+1. Click *Add Tab*, enter a *Label*, select the *Fields* type, and click *Save*.
 
    The Label value determines the tab's display name in the Liferay UI.
 
-   ![Click on Add Tab, enter a Label, select the Fields type, and click on Save.](./designing-object-layouts/images/03.png)
+   ![Click Add Tab, enter a Label, select the Fields type, and click Save.](./designing-object-layouts/images/03.png)
 
-1. Click on *Add Block*, enter a *Label*, and click on *Save*.
+1. Click *Add Block*, enter a *Label*, and click *Save*.
 
    This creates a tab subsection that you can add fields to. The Label value determines the block's display name in the Liferay UI.
 
@@ -60,15 +60,15 @@ Also, the first tab in a layout cannot contain relationships, and a Relationship
    Fields cannot be added directly to a tab; they must be organized into blocks.
    ```
 
-   ![Click on Add Block, enter a Label, and click on Save.](./designing-object-layouts/images/04.png)
+   ![Click Add Block, enter a Label, and click Save.](./designing-object-layouts/images/04.png)
 
-1. Click on *Add Field*, select the desired field, determine whether the field is displayed in one, two, or three columns, and click on *Save*.
+1. Click *Add Field*, select the desired field, determine whether the field is displayed in one, two, or three columns, and click *Save*.
 
    ```{note}
    A field can only be used once in a layout.
    ```
 
-   ![Click on Add Field, choose a field, select the number of columns the field is displayed in, and click on Save.](./designing-object-layouts/images/05.png)
+   ![Click Add Field, choose a field, select the number of columns the field is displayed in, and click Save.](./designing-object-layouts/images/05.png)
 
 1. Click *Add Field* to add more fields to the block, or click *Add Block* to add a new block to the tab for additional fields.
 
@@ -82,11 +82,13 @@ Also, the first tab in a layout cannot contain relationships, and a Relationship
 
 1. Select the desired layout and go to the *Layout* tab.
 
-   ![Click on the desired layout, and go to the Layout tab.](./designing-object-layouts/images/07.png)
+   ![Click the desired layout, and go to the Layout tab.](./designing-object-layouts/images/07.png)
 
-1. Click on *Add Tab*, enter a *Label*. This value determines the tab's display name in the Liferay UI.
+1. Click *Add Tab* and enter a *Label*. This value determines the tab's display name in the Liferay UI.
 
-1. For tab type, click on *Relationships* and then select from available *One to Many* or *Many to Many* relationships. This determines the relationship table displayed in the tab.
+1. For tab type, select *Relationships*.
+
+1. Select the relationship you want to display in the tab. Only one relationship can be displayed per tab.
 
    ```{note}
    You can only select the Relationships type if the layout has at least one Fields tab. A Relationships tab cannot be the first tab in an Object layout, because relationships cannot be set at entry creation. An entry must first exist before it can be related to another Object entity.
@@ -95,6 +97,36 @@ Also, the first tab in a layout cannot contain relationships, and a Relationship
    ![For tab type, select Relationships, and then choose either One to Many or Many to Many to determine the relationship table.](./designing-object-layouts/images/08.png)
 
 1. Click *Save*.
+
+## Adding Categorization
+
+{bdg-secondary}`Available Liferay 7.4 U31+ and GA31+`
+
+If desired, you can add a *Categorization* block to [*Fields* tabs](#fields-tabs). This provides end users with access to tags and categories they can apply to Object entries.
+
+```{note}
+Visibility and permissions can affect how the Categorization block is displayed.
+```
+
+Follow these steps to add Categorization blocks to Fields tabs:
+
+1. Select the desired layout and go to the *Layout* tab.
+
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired [*Fields* tab](#fields-tabs) and select *Add Categorization*.
+
+   ![Click the Actions button and select Add Categorization.](./designing-object-layouts/images/09.png)
+
+   This adds a new block to the tab for accessing categorization tools.
+
+   ![This adds a new block to the tab.](./designing-object-layouts/images/10.png)
+
+1. Determine whether the block is *collapsible*.
+
+1. Click *Save*.
+
+Now when creating or editing the Object's entries, users can access and apply tags and categories.
+
+![Access and apply tags and categories to the Object's entries.](./designing-object-layouts/images/11.png)
 
 ## Selecting a Default Layout
 
@@ -106,13 +138,13 @@ In order to select a custom layout as default, all required Object fields must b
 
 Follow these steps to select a default layout for an Object:
 
-1. Click on the desired layout.
+1. Select the desired layout.
 
-1. In the Basic Details tab, check the *Default* box.
+1. In the Basic Details tab, check *Mark as Default*.
 
-   ![Check the Default box and click on Save.](./designing-object-layouts/images/09.png)
+   ![Check Mark as Default and click Save.](./designing-object-layouts/images/12.png)
 
-1. Click on *Save*.
+1. Click *Save*.
 
 The layout is now used when creating and editing the Object's entries.
 

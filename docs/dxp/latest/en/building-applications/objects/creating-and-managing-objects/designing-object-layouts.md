@@ -108,7 +108,7 @@ If desired, you can add a *Categorization* block to [*Fields* tabs](#fields-tabs
 Visibility and permissions can affect how the Categorization block is displayed.
 ```
 
-Follow these steps to add Categorization blocks to Fields tabs:
+Follow these steps to add a Categorization block to a Fields tabs:
 
 1. Select the desired layout and go to the *Layout* tab.
 
@@ -118,9 +118,13 @@ Follow these steps to add Categorization blocks to Fields tabs:
 
    This adds a new block to the tab for accessing categorization tools.
 
-   ![This adds a new block to the tab.](./designing-object-layouts/images/10.png)
+   ```{important}
+   You can only add the Categorization block to one tab per layout.
+   ```
 
 1. Determine whether the block is *collapsible*.
+
+   ![Determine whether the Categorization block is collapsible.](./designing-object-layouts/images/10.png)
 
 1. Click *Save*.
 

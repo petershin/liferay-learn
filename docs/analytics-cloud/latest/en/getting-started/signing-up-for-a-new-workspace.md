@@ -1,6 +1,6 @@
 # Signing Up for a New Workspace
 
-To start using Liferay Analytics Cloud, visit [analytics.liferay.com](https://analytics.liferay.com) and sign in with your [liferay.com](https://www.liferay.com) account email address. If you do not have a Liferay account, you can go to this link: [Create an account](https://login.liferay.com/signin/register). Or click the Create Account button from the login page.
+To start using Liferay Analytics Cloud, visit [analytics.liferay.com](https://analytics.liferay.com) and sign in with your [liferay.com](https://www.liferay.com) account email address. If you do not have a Liferay account, you can go to this link: [Create an account](https://login.liferay.com/signin/register). Or click the *Create Account* button from the login page.
 
 ![Create account from the login page](./signing-up-for-a-new-workspace/images/01.png)
 

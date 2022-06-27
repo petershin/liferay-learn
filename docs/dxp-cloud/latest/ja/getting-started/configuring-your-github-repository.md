@@ -69,7 +69,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 `LCP_CI_SCM_TOKEN` の値には、GitHub組織用に作成した個人用アクセストークンを使用します。 このトークンの作成とアクセスの手順については、 [GitHub's documentation](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) を参照してください。
 
-作成されたパーソナルアクセストークンは、 **repo** と **admin:repo****hook***以下のすべてのスコープ権限にチェックが入っている必要があります。***admin:repo***hook** scope permissions specifically は、リポジトリが DXP Cloud と正常に統合された後に [自動 Web フック管理](#personal-access-token-usage) を無効にすれば後で削除することが可能です。
+作成されたパーソナルアクセストークンは、 **repo** と **admin:repo_hook**以下のすべてのスコープ権限にチェックが入っている必要があります。**admin:repo_hook** scope permissions specifically は、リポジトリが DXP Cloud と正常に統合された後に [自動 Web フック管理](#personal-access-token-usage) を無効にすれば後で削除することが可能です。
 
 ![PATが正常に使用できるように、正しい権限を確認してください。](./configuring-your-github-repository/images/05.png)
 
@@ -110,7 +110,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 1. リポジトリに変更を加え（ファイルの追加など）、ブランチにコミットします：
 
     ```bash
-    git commit -m "Add file to test builds" （テストビルドにファイルを追加する）。
+    git commit -m "Add file to test builds" 
     ```
 
 1. ブランチをGitHubにプッシュします：

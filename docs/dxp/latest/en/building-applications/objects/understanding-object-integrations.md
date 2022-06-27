@@ -14,6 +14,22 @@ understanding-object-integrations/headless-framework-integration.md
 understanding-object-integrations/assets-framework-integration.md
 ```
 
+Published custom Objects are integrated with Liferay's core frameworks, so you can leverage Liferay's features to build unified experiences across the platform. This chart provides an overview of how Objects leverages these integrations.
+
+| Framework | Description |
+| :--- | :--- |
+| Asset | Use the [Attachment field](../objects/understanding-object-field-types.md#attachment) to upload files to your instance's document library. |
+| Audit | Use the [Audit application](./creating-and-managing-objects/auditing-object-definition-events.md) to review Object events with their user and resource info. |
+| Categorization | Add categorization tools to custom Object layouts so users can add [tags and categories](./creating-and-managing-objects/designing-object-layouts.md#adding-categorization) to entries. |
+| Headless | Liferay generates a [headless endpoint](./understanding-object-integrations/headless-framework-integration.md) for each published Object, so you can make REST calls and run GraphQL queries. |
+| Info Framework | Use Object data with [Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md), [Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), [Navigation Menus](../../site-building/site-navigation/using-the-navigation-menus-application.md). Liferay also creates a [Collection Provider](../../content-authoring-and-management/collections-and-collection-pages.md) for displaying its entries. |
+| Job Scheduler | Use the [Job Scheduler](../core-frameworks/dispatch-framework/using-job-scheduler.md) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |
+| Localization | Localize fields for Object definitions to better serve your global users. |
+| Permissions | Manage application and resource  permissions to control access to Object definitions and their data. |
+| Workflow | Enable custom workflows for Objects to direct the creation, review, and publishing of Object entries. |
+
+<!-- TASK: Add Publications when ready -->
+
 ```{raw} html
 :file: ../../landingpage_template.html
 ```

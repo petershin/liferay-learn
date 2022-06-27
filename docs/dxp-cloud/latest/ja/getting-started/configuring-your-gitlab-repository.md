@@ -28,7 +28,7 @@ liferaycloud/jenkins:2.222.1-3.2.0
 1. Jenkinsサービスをデプロイします。
 
 ```{note}
-Jenkinsfileをカスタマイズしている場合は、こちらのガイドに従って [Default Jenkinsfileの拡張](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) _ を行ってください。
+Jenkinsfileをカスタマイズしている場合は、こちらのガイドに従って [Default Jenkinsfileの拡張](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) を行ってください。
 ```
 
 ## GitLabリポジトリの作成

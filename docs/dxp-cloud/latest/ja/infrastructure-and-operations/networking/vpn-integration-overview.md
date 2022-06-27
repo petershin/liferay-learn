@@ -22,7 +22,7 @@ VPN接続が設定されると、環境のログページで、ドロップダ�
 サブスクライバーは、プロトコル（IPSecまたはOpenVPN）のいずれかを選択して、目的の環境のDXP Cloudコンソール設定ページから接続を実行できます。 コンソールUIでは、接続に任意の数の転送ポートを設定できます。
 
 ```{note}
-IPsecサーバで `IKEv2` プロトコルを使用すると、`MSCHAPv2` または `TLS` 認証プロトコルを使用することができます。 詳しくは、「IPsecサーバーの基本設定」(./configuring-a-vpn-server.md#basic-setup-for-an-ipsec-server)_をご覧ください。
+IPsecサーバで `IKEv2` プロトコルを使用すると、`MSCHAPv2` または `TLS` 認証プロトコルを使用することができます。 詳しくは、[IPsecサーバーの基本設定](./configuring-a-vpn-server.md#basic-setup-for-an-ipsec-server) をご覧ください。
 ```
 
 詳しくは [DXP CloudへのVPNサーバーの接続](./connecting-a-vpn-server-to-dxp-cloud.md) をご覧ください。

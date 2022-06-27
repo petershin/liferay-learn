@@ -7,8 +7,7 @@ Liferay DXPのインストールを定期的に更新することは、DXP Cloud
 ```
 
 ```{note}
-[hotfix](../../../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes) をインストールしたい場合は、
-[代わりに以下の手順](./deploying-to-the-liferay-service.md#deploying-hotfixes) を実行してください。
+[ホットフィックス](../../../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes)をインストールしたい場合は、代わりに[この手順](./deploying-to-the-liferay-service.md#deploying-hotfixes)を実行してください。
 ```
 
 ## DXP 7.3+のモジュールアップグレードの有効化
@@ -53,9 +52,7 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
 
 1. 目的の環境の`liferay`サービスに [変更をデプロイします](./deploying-to-the-liferay-service.md)。
 
-1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの環境変数ページに [以前に追加した](#enabling-module-upgrades-for-dxp) ` LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。
-
-変更をデプロイすると、 `liferay` サービスが再起動し、アップデートを完了するために必要なアップグレード手順を開始します。 
+1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの環境変数ページで[以前に追加した](#enabling-module-upgrades-for-dxp) `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。
 
 ## クラスタリングが有効になっている新しいサービスパックへの更新
 

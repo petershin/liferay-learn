@@ -67,14 +67,14 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 | `lcp_ci_scm_repository_name`  | [repo_name]    |
 | `lcp_ci_scm_token`            | [access_token] |
 
-`LCP_CI_SCM_TOKEN` の値には、GitHub組織用に作成した個人用アクセストークンを使用します。 このトークンの作成とアクセスの手順については、 [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line) を参照してください。
+`LCP_CI_SCM_TOKEN` の値には、GitHub組織用に作成した個人用アクセストークンを使用します。 このトークンの作成とアクセスの手順については、 [GitHub's documentation](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) を参照してください。
 
 作成されたパーソナルアクセストークンは、 **repo** と **admin:repo****hook***以下のすべてのスコープ権限にチェックが入っている必要があります。***admin:repo***hook** scope permissions specifically は、リポジトリが DXP Cloud と正常に統合された後に [自動 Web フック管理](#personal-access-token-usage) を無効にすれば後で削除することが可能です。
 
 ![PATが正常に使用できるように、正しい権限を確認してください。](./configuring-your-github-repository/images/05.png)
 
 ```{note}
-SAMLシングルサインオン認証で組織のアカウントを使用している場合は、アクセストークンを認証するために追加の手順を行う必要があります。 詳しくは [GitHub公式ドキュメント](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use with-saml-single-sign-on) を参照ください。
+SAMLシングルサインオン認証で組織のアカウントを使用している場合は、アクセストークンを認証するために追加の手順を行う必要があります。 詳しくは [GitHub公式ドキュメント](https://docs.github.com/ja/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on) を参照ください。
 ```
 
 これらの環境変数を更新した後、Jenkinsサービスが再起動します。 これで、新しいリポジトリでプッシュされたブランチとプルリクエストがビルドをトリガーします。

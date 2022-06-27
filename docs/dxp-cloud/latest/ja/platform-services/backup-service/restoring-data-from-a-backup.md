@@ -68,7 +68,7 @@ SQLスクリプトでサポートされているフォーマットは以下の�
 SQLスクリプトを適切な、環境固有の `backup/configs/{ENV}/scripts/` フォルダに入れます。
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合は、SQLスクリプトは適切な`lcp/backup/script/{ENV}/`フォルダに置かれます。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../../reference/understanding-service-stack-versions.md) _を参照してください。
+バージョン3.x.xのサービスを使用している場合は、SQLスクリプトは適切な`lcp/backup/script/{ENV}/`フォルダに置かれます。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ### データの復元の実行

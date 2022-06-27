@@ -1,6 +1,10 @@
 # Signing Up for a New Workspace
 
-To start using Liferay Analytics Cloud, visit [analytics.liferay.com](https://analytics.liferay.com) and sign in with your [liferay.com](https://www.liferay.com) account email address. If you do not have a [liferay.com](https://www.liferay.com) account, you can also sign up for one from the login page. If you have not already set up multi-factor authentication for your account you are prompted to. See [Multi-Factor Authentication for more information](./multi-factor-authentication.md).
+To start using Liferay Analytics Cloud, visit [analytics.liferay.com](https://analytics.liferay.com) and sign in with your [liferay.com](https://www.liferay.com) account email address. If you do not have a Liferay account, you can go to this link: [Create an account](https://login.liferay.com/signin/register). Or click the Create Account button from the login page.
+
+![Create account from the login page](./signing-up-for-a-new-workspace/images/01.png)
+
+If you have not already set up multi-factor authentication for your account you are prompted to. See [Multi-Factor Authentication for more information](./multi-factor-authentication.md).
 
 ```{important}
 Your Liferay DXP installation must meet the following fix pack minimum requirements:
@@ -13,7 +17,7 @@ Your Liferay DXP installation must meet the following fix pack minimum requireme
 
 Once logged in, you can either sign up for a **free trial** workspace or purchase a **paid tier** workspace by contacting sales. If you already have a workspace, you will also see your workspace listed after login.
 
-![Sign up with a Business or Enterprise plan or begin with a Free Trial.](signing-up-for-a-new-workspace/images/01.png)
+![Sign up with a Business or Enterprise plan or begin with a Free Trial.](signing-up-for-a-new-workspace/images/02.png)
 
 ## Creating a Free Trial Workspace
 
@@ -23,7 +27,7 @@ Free trials are limited to a single workspace per valid email address registered
 
 Clicking on the the Start Free Trial button from the home screen will take your to the workspace configuration screen.
 
-![The workspace configuration screen gets you started.](signing-up-for-a-new-workspace/images/02.png)
+![The workspace configuration screen gets you started.](signing-up-for-a-new-workspace/images/03.png)
 
 **Workspace Name:** Give your new analytics workspace a name.
 
@@ -44,7 +48,7 @@ Finally, accept the terms and conditions and privacy policy before finishing.
 
 Once you click the Create Workspace button, Analytics Cloud will take some time to finalize the workspace creation in the background. You will be presented with the following screen:
 
-![Creating a new workspace can take up to an hour to complete.](signing-up-for-a-new-workspace/images/03.png)
+![Creating a new workspace can take up to an hour to complete.](signing-up-for-a-new-workspace/images/04.png)
 
 This process may take from 30 minutes to 1 hour to complete. An email will be sent once your workspace is ready.
 
@@ -56,7 +60,7 @@ To purchase a Business or Enterprise tier workspace, click on the Contact Sales 
 
 Fill out the form, and a sales representative will contact you shortly.
 
-![The Contact Sales is the first step to signing up for a Business or Enterprise tier workspace.](signing-up-for-a-new-workspace/images/04.png)
+![The Contact Sales is the first step to signing up for a Business or Enterprise tier workspace.](signing-up-for-a-new-workspace/images/05.png)
 
 Once you've successfully purchased your Analytic Cloud workspace, our team will provision a workspace for your account. Make sure you provide the email of the workspace owner, and your desired data center location to your sales representative to make this process as smooth as possible.
 

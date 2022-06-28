@@ -8,8 +8,10 @@ Liferay's Staging application is a publishing tool for managing changes on DXP. 
 
 From here, you can enable [Local Live](./configuring-local-live-staging.md) or [Remote Live](./configuring-remote-live-staging.md) Staging for individual Asset Libraries following the same process as you would for a Site. The only difference is that staged content options are limited to the applications enabled for the Asset Library.
 
-```{important}
-Asset Libraries with Staging enabled can only be linked with Sites that also have Staging enabled. When Staging is enabled for an Asset Library, existing Site connections are automatically removed if the Site doesn't also have Staging enabled. 
+```{warning}
+Asset Libraries with Staging enabled can only be connected to Sites that also have Staging enabled. When Staging is enabled for an Asset Library, existing Site connections are automatically removed if the Site doesn't also have Staging enabled.
+
+Sites with Staging enabled can be connected to Asset Libraries without Staging enabled. However, this is **not** recommended, since it can cause duplicate Site links and prevent the removal of Asset Library connections if Staging is ever enabled for the Asset Library. For this reason, you should only connect staged Sites with staged Asset Libraries.
 ```
 
 Once Staging is enabled for an Asset Library, you can toggle between Live and Staging environments via the Staging bar at the top of the page. While in the Staging environment, you can also access *Publish to Live* to initiate a new publishing process.

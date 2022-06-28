@@ -2,11 +2,11 @@
 
 > Available: Liferay DXP/Portal 7.4+
 
-When you publish an Object, Liferay automatically generates both REST and [GraphQL](https://graphql.org) APIs for it. This provides headless access to custom Objects, so you can perform CRUD operations. The APIs generated for an Object depend on its scope (i.e., company or Site).
+When you publish an Object, Liferay automatically generates REST APIs for it. This provides headless access to custom Objects, so you can perform CRUD operations. The APIs generated for an Object depend on its scope (i.e., company or Site). <!--TASK: replace first sentence when GraphQL APIs are supported, "When you publish an Object, Liferay automatically generates both REST and [GraphQL](https://graphql.org) APIs for it."-->
 
 All Objects use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/timeoffrequests`). Each Object entry schema includes all of the Object's fields and relationships.
 
-You can view and test an Object's APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). REST APIs are listed under *REST Applications*. Click on *GraphQL* to access Liferay's [Graph*i*QL](https://github.com/graphql/graphiql) browser.
+You can view and test an Object's APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). REST APIs are listed under *REST Applications*. <!--TASK: uncomment when GraphQL APIs are supported, "Click on *GraphQL* to access Liferay's [Graph*i*QL](https://github.com/graphql/graphiql) browser."-->
 
 See [Using APIs](../objects-tutorials/using-apis.md) for related Object tutorials.
 
@@ -61,6 +61,7 @@ The following REST APIs are available for all Site scoped Objects.
 For the API's `scopesKey` parameter, use the proper identifier for the desired data scope (e.g., Site ID, user role).
 ```
 
+<!--TASK: uncomment when GraphQL APIs are supported, 
 ## Object GraphQL APIs
 
 With the GraphQL APIs, you can both query and mutate Object data. All APIs for custom Objects are listed under `c` in Liferay's GraphQL schema. You can use Liferay's integrated Graph*i*QL IDE to search Object schemas, draft queries, run requests, and more. To access it, go to Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) and click *GraphQL*.
@@ -68,9 +69,10 @@ With the GraphQL APIs, you can both query and mutate Object data. All APIs for c
 ![Use Liferay's GraphiQL explorer to search Object schemas and run your requests.](./headless-framework-integration/images/02.png)
 
 See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) for more information.
+-->
 
 ## Additional Information
 
 * [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-* [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md)
 * [Using APIs](../objects-tutorials/using-apis.md)
+<!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

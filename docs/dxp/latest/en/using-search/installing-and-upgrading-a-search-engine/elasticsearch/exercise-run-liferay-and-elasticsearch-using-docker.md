@@ -22,7 +22,7 @@ The `cd test-es-install` command at the end puts you in the `test-es-install` fo
 1. Configure and start an Elasticsearch `7.17.4` container named `elasticsearch717`:
 
    ```bash
-   docker run -it --name elasticsearch717 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "node.name=es-node1" -v $(pwd)/elasticsearch:/usr/share/elasticsearch/data docker.elastic.co/elasticsearch/elasticsearch:7.15.1
+   docker run -it --name elasticsearch717 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "node.name=es-node1" -v $(pwd)/elasticsearch:/usr/share/elasticsearch/data docker.elastic.co/elasticsearch/elasticsearch:7.17.4
    ```
 
 1. Install the required Elasticsearch plugins. Use `docker exec -it` to access an interactive bash shell:

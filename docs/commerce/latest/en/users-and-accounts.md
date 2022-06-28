@@ -1,3 +1,8 @@
+---
+toc:
+- ./users-and-accounts/roles-and-permissions.md
+- ./users-and-accounts/account-management.md
+---
 # Users and Accounts
 
 ```{toctree}

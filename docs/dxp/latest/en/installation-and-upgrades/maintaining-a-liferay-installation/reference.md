@@ -1,3 +1,11 @@
+---
+toc:
+- ./reference/installing-the-patching-tool.md
+- ./reference/configuring-the-patching-tool.md
+- ./reference/getting-patch-information.md
+- ./reference/uninstalling-patches.md
+- ./reference/accessing-dxp-patch-code.md
+---
  # Reference
 
 ```{toctree}

@@ -1,3 +1,9 @@
+---
+toc:
+- ./configuring-mail/connecting-to-a-mail-server.md
+- ./configuring-mail/configuring-default-email-senders.md
+- ./configuring-mail/alternative-email-configuration-methods.md
+---
 # メールの構成
 
 ```{toctree}

@@ -1,3 +1,11 @@
+---
+toc:
+- ./liferay-ui-tag-library/liferay-ui-icons.md
+- ./liferay-ui-tag-library/liferay-ui-icon-lists.md
+- ./liferay-ui-tag-library/liferay-ui-icon-menus.md
+- ./liferay-ui-tag-library/liferay-ui-tabs.md
+- ./liferay-ui-tag-library/liferay-ui-icon-help.md
+---
 # Liferay UI Tag Library
 
 ```{toctree}

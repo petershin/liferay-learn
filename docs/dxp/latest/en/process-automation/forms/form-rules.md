@@ -1,3 +1,14 @@
+---
+toc:
+- ./form-rules/form-rules-overview.md
+- ./form-rules/using-the-autofill-rule.md
+- ./form-rules/using-the-calculate-rule.md
+- ./form-rules/using-the-enable-disable-rule.md
+- ./form-rules/using-the-jump-to-page-rule.md
+- ./form-rules/using-the-require-rule.md
+- ./form-rules/using-the-show-hide-rule.md
+- ./form-rules/example-using-hidden-fields-with-form-rules.md
+---
 # Form Rules
 
 ```{toctree}

@@ -1,3 +1,9 @@
+---
+toc:
+- ./poshi-test-automation/poshi-basics.md
+- ./poshi-test-automation/getting-started.md
+- ./poshi-test-automation/poshi-resources.md
+---
 # Poshi Test Automation
 
 ```{toctree}

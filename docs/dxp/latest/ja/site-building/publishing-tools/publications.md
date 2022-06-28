@@ -1,3 +1,12 @@
+---
+toc:
+- ./publications/enabling-publications.md
+- ./publications/creating-and-managing-publications.md
+- ./publications/making-and-publishing-changes.md
+- ./publications/collaborating-on-publications.md
+- ./publications/resolving-conflicts.md
+- ./publications/reverting-changes.md
+---
 # パブリケーション
 
 ```{toctree}

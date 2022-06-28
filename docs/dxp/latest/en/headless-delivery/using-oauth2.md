@@ -1,3 +1,9 @@
+---
+toc:
+- ./using-oauth2/creating-oauth2-applications.md
+- ./using-oauth2/authorizing-account-access-with-oauth2.md
+- ./using-oauth2/oauth2-scopes.md
+---
 # Using OAuth 2.0
 
 ```{toctree}

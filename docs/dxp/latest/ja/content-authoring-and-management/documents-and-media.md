@@ -1,3 +1,12 @@
+---
+toc:
+- ./documents-and-media/documents-and-media.md
+- ./documents-and-media/uploading-and-managing.md
+- ./documents-and-media/publishing-and-sharing.md
+- ./documents-and-media/videos.md
+- ./documents-and-media/developer-guide.md
+- ./documents-and-media/devops.md
+---
 # Documents and Media
 
 ```{toctree}

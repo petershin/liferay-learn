@@ -1,3 +1,9 @@
+---
+toc:
+- ./people/individuals.md
+- ./people/accounts.md
+- ./people/segments.md
+---
 # 連絡先
 
 ```{toctree}

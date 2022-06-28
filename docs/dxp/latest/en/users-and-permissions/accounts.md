@@ -1,3 +1,10 @@
+---
+toc:
+- ./accounts/account-users.md
+- ./accounts/account-groups.md
+- ./accounts/account-roles.md
+- ./accounts/account-management-widget.md
+---
 # Accounts
 
 ```{toctree}

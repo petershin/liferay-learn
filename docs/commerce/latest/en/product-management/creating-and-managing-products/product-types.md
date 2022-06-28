@@ -1,3 +1,12 @@
+---
+toc:
+- ./product-types/introduction-to-product-types.md
+- ./product-types/creating-a-simple-product.md
+- ./product-types/creating-a-grouped-product.md
+- ./product-types/creating-a-virtual-product.md
+- ./product-types/virtual-product-reference.md
+- ./product-types/shop-by-diagram.md
+---
 # Product Types
 
 ```{toctree}

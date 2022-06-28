@@ -1,3 +1,21 @@
+---
+toc:
+- ./setting-up-liferay/activating-liferay-dxp.md
+- ./../system-administration/configuring-liferay/virtual-instances/instance-configuration.md
+- ./setting-up-liferay/initial-instance-localization.md
+- ./setting-up-liferay/configuring-mail.md
+- ./../system-administration/configuring-liferay/virtual-instances/users.md
+- ./../system-administration/file_storage.rst
+- ./../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+- ./../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md
+- ./securing_liferay.rst
+- ./maintaining-a-liferay-dxp-installation/backing-up.md
+- ./../system-administration/installing_and_managing_apps.rst
+- ./setting-up-liferay/using-a-cdn.md
+- ./setting-up-liferay/clustering-for-high-availability.md
+- ./setting-up-liferay/tuning-liferay.md
+- ./setting-up-liferay/tuning-your-jvm.md
+---
 # Liferayのセットアップ
 
 ```{toctree}

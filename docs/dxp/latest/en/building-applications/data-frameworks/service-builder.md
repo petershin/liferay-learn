@@ -1,3 +1,11 @@
+---
+toc:
+- ./service-builder/service-builder-basics.md
+- ./service-builder/defining-entities.md
+- ./service-builder/business-logic-with-service-builder.md
+- ./service-builder/advanced-queries.md
+- ./service-builder/reference.md
+---
 # Service Builder
 
 ```{toctree}

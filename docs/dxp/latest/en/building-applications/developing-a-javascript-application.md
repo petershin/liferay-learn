@@ -1,3 +1,9 @@
+---
+toc:
+- ./developing-a-javascript-application/using-react.md
+- ./developing-a-javascript-application/using-angular.md
+- ./developing-a-javascript-application/using-vuejs.md
+---
 # Developing a JavaScript Application
 
 ```{toctree}

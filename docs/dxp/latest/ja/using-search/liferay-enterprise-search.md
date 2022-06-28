@@ -1,3 +1,11 @@
+---
+toc:
+- ./liferay-enterprise-search/activating-liferay-enterprise-search.md
+- ./liferay-enterprise-search/cross-cluster-replication.md
+- ./liferay-enterprise-search/learning-to-rank.md
+- ./liferay-enterprise-search/monitoring-elasticsearch.md
+- ./liferay-enterprise-search/search-experiences.md
+---
 # Liferay Enterprise Search
 
 

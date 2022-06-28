@@ -1,3 +1,9 @@
+---
+toc:
+- ./upgrade-basics/upgrading-via-docker.md
+- ./upgrade-basics/using-the-database-upgrade-tool.md
+- ./upgrade-basics/post-upgrade-considerations.md
+---
 # Upgrade Basics
 
 ```{toctree}

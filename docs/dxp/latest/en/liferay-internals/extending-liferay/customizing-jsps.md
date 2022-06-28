@@ -1,3 +1,7 @@
+---
+toc:
+- ./customizing-jsps/customizing-jsps-with-dynamic-includes.md
+---
 # Customizing JSPs
 
 ```{toctree}

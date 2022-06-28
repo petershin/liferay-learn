@@ -1,3 +1,10 @@
+---
+toc:
+- ./using-apis/object-api-basics.md
+- ./using-apis/using-batch-apis.md
+- ./using-apis/using-nested-fields-with-rest-apis.md
+- ./using-apis/using-aggregation-terms-with-rest-apis.md
+---
 # Using APIs
 
 ```{toctree}

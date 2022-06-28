@@ -1,3 +1,9 @@
+---
+toc:
+- ./optimization/a-b-testing.md
+- ./optimization/content-recommendation-api.md
+- ./optimization/personalizing-content-with-segments.md
+---
 # 最適化
 
 ```{toctree}

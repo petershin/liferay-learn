@@ -1,3 +1,9 @@
+---
+toc:
+- ./installing-and-managing-apps/using-marketplace.md
+- ./installing-and-managing-apps/installing-apps.md
+- ./installing-and-managing-apps/managing-apps.md
+---
 # Installing and Managing Apps
 
 ```{toctree}

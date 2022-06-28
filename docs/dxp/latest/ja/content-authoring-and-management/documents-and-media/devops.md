@@ -1,3 +1,15 @@
+---
+toc:
+- ./devops/configuring-documents-and-media-previews.md
+- ./../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+- ./devops/setting-storage-quotas-for-documents-and-media.md
+- ./devops/enabling-optimization-of-animated-gifs.md
+- ./devops/enabling-ffmpeg-for-audio-and-video-previews.md
+- ./devops/enabling-openoffice-libreoffice-integration.md
+- ./devops/enabling-document-creation-and-editing-with-microsoft-office-365.md
+- ./devops/google-drive-integration.md
+- ./devops/sharepoint-integration.md
+---
 # DevOps
 
 ```{toctree}

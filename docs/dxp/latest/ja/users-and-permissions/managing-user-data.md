@@ -1,3 +1,9 @@
+---
+toc:
+- ./managing-user-data/exporting-user-data.md
+- ./managing-user-data/sanitizing-user-data.md
+- ./managing-user-data/configuring-the-anonymous-user.md
+---
 # ユーザーデータの管理（GDPR）
 
 ```{toctree}

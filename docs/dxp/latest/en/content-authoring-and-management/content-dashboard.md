@@ -1,3 +1,9 @@
+---
+toc:
+- ./content-dashboard/about-the-content-dashboard.md
+- ./content-dashboard/content-dashboard-interface.md
+- ./content-dashboard/exporting-the-assets-list-to-a-spreadsheet.md
+---
 # Content Dashboard
 
 ```{toctree}

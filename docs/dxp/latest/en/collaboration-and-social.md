@@ -1,3 +1,15 @@
+---
+toc:
+- ./collaboration-and-social/collaboration-and-social-overview.md
+- ./collaboration-and-social/message-boards.md
+- ./collaboration-and-social/notifications-and-requests.md
+- ./collaboration-and-social/social-tools.md
+- ./collaboration-and-social/wiki.md
+- ./collaboration-and-social/questions.md
+- ./collaboration-and-social/alerts-and-announcements.md
+- ./../site-building/building-sites/site-membership/inviting-members-to-your-site.md
+- ./collaboration-and-social/knowledge-base.md
+---
 # Collaboration and Social
 
 ```{toctree}

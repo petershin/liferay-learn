@@ -1,3 +1,12 @@
+---
+toc:
+- ./architecture/liferay-classloader-hierarchy.md
+- ./architecture/the-benefits-of-modularity.md
+- ./architecture/osgi-and-modularity.md
+- ./architecture/module-lifecycle.md
+- ./architecture/bundle-classloading-flow.md
+- ./architecture/ui-architecture.md
+---
 # アーキテクチャー
 
 ```{toctree}

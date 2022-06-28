@@ -1,3 +1,7 @@
+---
+toc:
+- ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
+---
 # Integrating Objects with Third Party Services
 
 ```{toctree}

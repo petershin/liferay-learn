@@ -1,3 +1,9 @@
+---
+toc:
+- ./understanding-object-integrations/permissions-framework-integration.md
+- ./understanding-object-integrations/headless-framework-integration.md
+- ./understanding-object-integrations/assets-framework-integration.md
+---
 # オブジェクト統合を理解する
 
 ```{toctree}

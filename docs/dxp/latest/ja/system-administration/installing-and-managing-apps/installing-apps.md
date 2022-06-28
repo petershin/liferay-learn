@@ -1,3 +1,8 @@
+---
+toc:
+- ./installing-apps/downloading-apps.md
+- ./installing-apps/accessing-ee-plugins-during-a-trial-period.md
+---
 # アプリのインストール
 
 ```{toctree}

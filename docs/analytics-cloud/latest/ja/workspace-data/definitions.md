@@ -1,3 +1,11 @@
+---
+toc:
+- ./definitions/definitions-for-individuals.md
+- ./definitions/definitions-for-events.md
+- ./definitions/definitions-for-event-attributes.md
+- ./definitions/setting-a-search-query.md
+- ./definitions/managing-interest-topics.md
+---
 # 定義
 
 ```{toctree}

@@ -1,3 +1,9 @@
+---
+toc:
+- ./file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+- ./file-storage/file-store-migration.md
+- ./file-storage/other-file-store-types.md
+---
 # File Storage
 
 ```{toctree}

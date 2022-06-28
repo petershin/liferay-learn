@@ -1,3 +1,16 @@
+---
+toc:
+- ./using-mvc/using-a-jsp-and-mvc-portlet.md
+- ./using-mvc/rendering-views-with-mvc-portlet.md
+- ./using-mvc/invoking-actions-with-mvc-portlet.md
+- ./using-mvc/mvc-action-command.md
+- ./using-mvc/mvc-render-command.md
+- ./using-mvc/mvc-resource-command.md
+- ./using-mvc/portlet-preferences.md
+- ./using-mvc/using-localized-messages-in-an-mvc-portlet.md
+- ./using-mvc/sharing-localized-messages.md
+- ./using-mvc/tag-libraries.md
+---
 # Using MVC
 
 ```{toctree}

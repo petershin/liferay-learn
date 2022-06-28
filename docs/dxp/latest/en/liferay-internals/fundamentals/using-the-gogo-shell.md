@@ -1,3 +1,8 @@
+---
+toc:
+- ./using-the-gogo-shell/command-line-gogo-shell.md
+- ./using-the-gogo-shell/gogo-shell-commands.md
+---
 # Using the Gogo Shell
 
 ```{toctree}

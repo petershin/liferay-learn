@@ -1,3 +1,9 @@
+---
+toc:
+- ./upgrading-elasticsearch/upgrading-search-infrastructure.md
+- ./upgrading-elasticsearch/upgrading-to-elasticsearch-7.md
+- ./upgrading-elasticsearch/backing-up-elasticsearch.md
+---
 # Elasticsearchのアップグレード
 
 ```{toctree}

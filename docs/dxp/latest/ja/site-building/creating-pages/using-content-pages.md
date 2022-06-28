@@ -1,3 +1,12 @@
+---
+toc:
+- ./using-content-pages/adding-elements-to-content-pages.md
+- ./using-content-pages/managing-content-in-content-pages.md
+- ./using-content-pages/using-widgets-on-a-content-page.md
+- ./using-content-pages/using-page-comments.md
+- ./using-content-pages/manually-translating-content-pages.md
+- ./using-content-pages/content-page-editor-ui-reference.md
+---
 # コンテントページの使用
 
 ```{toctree}

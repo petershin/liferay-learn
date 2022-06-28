@@ -1,3 +1,7 @@
+---
+toc:
+- ./reference/localization.md
+---
 # リファレンス
 
 ```{toctree}

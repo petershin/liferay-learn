@@ -1,3 +1,9 @@
+---
+toc:
+- ./managing-user-data/exporting-user-data.md
+- ./managing-user-data/sanitizing-user-data.md
+- ./managing-user-data/configuring-the-anonymous-user.md
+---
 # Managing User Data (GDPR)
 
 ```{toctree}

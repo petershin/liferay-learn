@@ -1,3 +1,10 @@
+---
+toc:
+- ./getting-started/search-overview.md
+- ./getting-started/searching-for-content.md
+- ./getting-started/whats-new-in-search-for-74.md
+- ./getting-started/whats-new-in-search-for-73.md
+---
 # Getting Started
 
 ```{toctree}

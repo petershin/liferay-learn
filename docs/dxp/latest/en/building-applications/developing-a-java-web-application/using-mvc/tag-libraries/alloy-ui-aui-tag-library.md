@@ -1,3 +1,7 @@
+---
+toc:
+- ./alloy-ui-aui-tag-library/building-forms-with-aui-tags.md
+---
 # Alloy UI (AUI) Tag Library 
 
 ```{toctree}

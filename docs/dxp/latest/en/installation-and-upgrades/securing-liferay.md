@@ -1,3 +1,11 @@
+---
+toc:
+- ./securing-liferay/authentication-basics.md
+- ./securing-liferay/configuring-sso.md
+- ./securing-liferay/multi-factor-authentication.md
+- ./securing-liferay/using-antisamy.md
+- ./securing-liferay/securing-web-services.md
+---
 # Securing Liferay
 
 ```{toctree}

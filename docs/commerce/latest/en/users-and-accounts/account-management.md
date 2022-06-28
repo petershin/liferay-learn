@@ -1,3 +1,13 @@
+---
+toc:
+- ./account-management/creating-a-new-account.md
+- ./account-management/inviting-users-to-an-account.md
+- ./account-management/adding-addresses-to-an-account.md
+- ./account-management/account-roles.md
+- ./account-management/creating-a-new-account-group.md
+- ./account-management/using-organizations-to-create-a-sales-network.md
+- ./account-management/adding-organizations-to-accounts.md
+---
 # Account Management
 
 ```{toctree}

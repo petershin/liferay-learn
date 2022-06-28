@@ -1,3 +1,8 @@
+---
+toc:
+- ./configuration-files-and-factories/using-configuration-files.md
+- ./configuration-files-and-factories/using-factory-configuration.md
+---
 # Configuration Files and Factories
 
 ```{toctree}

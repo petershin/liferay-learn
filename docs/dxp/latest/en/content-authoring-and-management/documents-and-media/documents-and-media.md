@@ -1,3 +1,8 @@
+---
+toc:
+- ./documents-and-media-overview.md
+- ./documents-and-media-ui-reference.md
+---
 # Documents and Media
 
 ```{toctree}

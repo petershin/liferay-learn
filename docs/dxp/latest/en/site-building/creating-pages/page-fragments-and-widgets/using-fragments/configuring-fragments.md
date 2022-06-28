@@ -1,3 +1,11 @@
+---
+toc:
+- ./configuring-fragments/general-settings-reference.md
+- ./configuring-fragments/styles-reference.md
+- ./configuring-fragments/advanced-settings-reference.md
+- ./configuring-fragments/fragment-sub-elements-reference.md
+- ./configuring-fragments/localizing-fragment-configuration-fields.md
+---
 # Configuring Fragments
 
 ```{toctree}

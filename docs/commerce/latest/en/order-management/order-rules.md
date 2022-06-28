@@ -1,3 +1,6 @@
+---
+toc:
+---
 # Order Rules
 
 ```{toctree}

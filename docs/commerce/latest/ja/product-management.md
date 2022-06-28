@@ -1,3 +1,8 @@
+---
+toc:
+- ./product-management/catalogs.md
+- ./product-management/creating-and-managing-products.md
+---
 # 製品管理
 
 ```{toctree}

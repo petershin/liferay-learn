@@ -1,3 +1,7 @@
+---
+toc:
+- ./add-ons-and-connectors/punchout2go.md
+---
 # アドオンとコネクター
 
 ```{toctree}

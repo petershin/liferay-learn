@@ -1,3 +1,10 @@
+---
+toc:
+- ./workspace-settings/managing-users.md
+- ./workspace-settings/managing-properties.md
+- ./workspace-settings/tracking-usage.md
+- ./workspace-settings/managing-workspaces.md
+---
 # Workspace Settings
 
 ```{toctree}

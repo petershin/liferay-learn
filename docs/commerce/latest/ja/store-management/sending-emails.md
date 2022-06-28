@@ -1,3 +1,10 @@
+---
+toc:
+- ./sending-emails/store-emails.md
+- ./sending-emails/using-notification-templates.md
+- ./sending-emails/configuring-the-commerce-notification-queue.md
+- ./sending-emails/notification-template-variables-reference-guide.md
+---
 # メールを送信する
 
 ```{toctree}

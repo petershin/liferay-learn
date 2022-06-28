@@ -1,3 +1,7 @@
+---
+toc:
+- ./customizing-widgets/styling-widgets-with-widget-templates.md
+---
 # ウィジェットのカスタマイズ
 
 ```{toctree}

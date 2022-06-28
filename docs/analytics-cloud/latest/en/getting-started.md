@@ -1,3 +1,10 @@
+---
+toc:
+- ./getting-started/signing-up-for-a-new-workspace.md
+- ./getting-started/multi-factor-authentication.md
+- ./getting-started/accessing-your-workspace.md
+- ./getting-started/viewing-the-analytics-dashboard.md
+---
 # Getting Started
 
 ```{toctree}

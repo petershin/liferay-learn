@@ -1,3 +1,9 @@
+---
+toc:
+- ./user-groups/creating-and-managing-user-groups.md
+- ./user-groups/managing-site-membership-and-permissions-with-user-groups.md
+- ./user-groups/user-group-sites.md
+---
 # ユーザーグループ
 
 ```{toctree}

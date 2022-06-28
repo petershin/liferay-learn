@@ -1,3 +1,8 @@
+---
+toc:
+- ./using-objects-in-sites/creating-forms-for-objects.md
+- ./using-objects-in-sites/displaying-object-entries.md
+---
 # サイトでオブジェクトを使用する
 
 ```{toctree}

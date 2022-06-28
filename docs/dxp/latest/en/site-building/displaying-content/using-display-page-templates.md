@@ -1,3 +1,11 @@
+---
+toc:
+- ./using-display-page-templates/about-display-page-templates-and-display-pages.md
+- ./using-display-page-templates/creating-and-managing-display-page-templates.md
+- ./using-display-page-templates/publishing-content-with-display-pages.md
+- ./using-display-page-templates/displaying-categories-using-display-pages.md
+- ./using-display-page-templates/configuring-seo-and-open-graph.md
+---
 # Using Display Page Templates
 
 ```{toctree}

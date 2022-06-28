@@ -1,3 +1,9 @@
+---
+toc:
+- ./installing-and-upgrading-a-search-engine/installing-a-search-engine.md
+- ./installing-and-upgrading-a-search-engine/elasticsearch.md
+- ./installing-and-upgrading-a-search-engine/solr.md
+---
 # Installing and Upgrading a Search Engine
 
 ```{toctree}

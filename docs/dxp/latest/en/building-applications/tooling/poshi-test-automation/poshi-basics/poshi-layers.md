@@ -1,4 +1,10 @@
 ---
+toc:
+- ./poshi-layers/functions.md
+- ./poshi-layers/paths.md
+- ./poshi-layers/macros.md
+- ./poshi-layers/testcases.md
+- ./poshi-layers/variables.md
 html_meta:
   "documentation-type": "user-guide"
 ---

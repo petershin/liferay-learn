@@ -1,3 +1,10 @@
+---
+toc:
+- ./search-administration-and-tuning/synonym-sets.md
+- ./search-administration-and-tuning/result-rankings.md
+- ./search-administration-and-tuning/elasticsearch-indexes-reference.md
+- ./search-administration-and-tuning/search-administration.md
+---
 # 検索管理とチューニング
 
 ```{toctree}

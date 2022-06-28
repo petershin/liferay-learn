@@ -1,4 +1,8 @@
-# Developer Guide
+---
+toc:
+- ./developer-guide/apis.md
+---
+- ./# Developer Guide
 
 ```{toctree}
 :maxdepth: 2

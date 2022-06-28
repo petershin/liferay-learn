@@ -1,3 +1,8 @@
+---
+toc:
+- ./maintaining-clustered-installations/rolling-restarts.md
+- ./maintaining-clustered-installations/blue-green-deployments.md
+---
 # Maintaining Clustered Installations
 
 ```{toctree}

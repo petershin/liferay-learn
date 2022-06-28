@@ -1,3 +1,8 @@
+---
+toc:
+- ./troubleshooting/connecting-data-sources.md
+- ./troubleshooting/activation.md
+---
 # トラブルシューティング
 
 ```{toctree}

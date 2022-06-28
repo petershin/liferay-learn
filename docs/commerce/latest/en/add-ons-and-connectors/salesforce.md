@@ -1,3 +1,7 @@
+---
+toc:
+- ./salesforce/liferay-commerce-connector-to-salesforce.md
+---
 # Salesforce
 
 ```{toctree}

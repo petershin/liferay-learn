@@ -1,4 +1,7 @@
 ---
+toc:
+- ./poshi-basics/poshi-advantages.md
+- ./poshi-basics/poshi-layers.md
 html_meta:
   "documentation-type": "user-guide"
 ---

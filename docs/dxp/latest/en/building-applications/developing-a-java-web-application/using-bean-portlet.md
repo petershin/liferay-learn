@@ -1,3 +1,7 @@
+---
+toc:
+- ./using-bean-portlet/reference.md
+---
 # Using Bean Portlet
 
 ```{toctree}

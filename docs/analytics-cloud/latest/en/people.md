@@ -1,3 +1,9 @@
+---
+toc:
+- ./people/individuals.md
+- ./people/accounts.md
+- ./people/segments.md
+---
 # People
 
 ```{toctree}

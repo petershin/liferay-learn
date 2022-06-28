@@ -1,3 +1,7 @@
+---
+toc:
+- ./developer-guide/blog-api-basics.md
+---
 # Developer Guide
 
 ```{toctree}

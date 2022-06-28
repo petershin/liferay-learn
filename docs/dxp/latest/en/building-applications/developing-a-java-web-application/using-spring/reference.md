@@ -1,3 +1,9 @@
+---
+toc:
+- ./reference/portletmvc4spring-project-anatomy.md
+- ./reference/portletmvc4spring-annotations.md
+- ./reference/portletmvc4spring-configuration-files.md
+---
 # Reference
 
 ```{toctree}

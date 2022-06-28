@@ -1,3 +1,10 @@
+---
+toc:
+- ./using-workflows/activating-workflow.md
+- ./using-workflows/reviewing-assets.md
+- ./using-workflows/using-workflow-metrics.md
+- ./using-workflows/workflow-metrics-reports.md
+---
 # ワークフローの使用
 
 ```{toctree}

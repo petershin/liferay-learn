@@ -1,3 +1,8 @@
+---
+toc:
+- ./promoting-products/introduction-to-discounts.md
+- ./promoting-products/creating-a-discount.md
+---
 # 商品のプロモーション
 
 ```{toctree}

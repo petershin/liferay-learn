@@ -1,3 +1,9 @@
+---
+toc:
+- ./currencies/adding-a-new-currency.md
+- ./currencies/currencies-reference.md
+- ./currencies/managing-exchange-rates.md
+---
 # 通貨
 
 ```{toctree}

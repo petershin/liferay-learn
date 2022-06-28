@@ -1,3 +1,9 @@
+---
+toc:
+- ./page-performance-and-accessibility/about-the-content-performance-tool.md
+- ./page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
+- ./page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
+---
 # Page Performance and Accessibility
 
 ```{toctree}

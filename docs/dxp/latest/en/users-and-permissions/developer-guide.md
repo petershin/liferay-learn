@@ -1,3 +1,12 @@
+---
+toc:
+- ./developer-guide/adding-the-uad-framework.md
+- ./developer-guide/accounts-api-basics.md
+- ./developer-guide/account-users-and-roles-apis.md
+- ./developer-guide/user-account-api-basics.md
+- ./developer-guide/organizations-api-basics.md
+- ./developer-guide/roles-api-basics.md
+---
 # Developer Guide
 
 ```{toctree}

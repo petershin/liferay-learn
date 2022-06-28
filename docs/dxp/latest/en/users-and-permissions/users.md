@@ -1,3 +1,10 @@
+---
+toc:
+- ./users/understanding-users.md
+- ./users/adding-and-managing-users.md
+- ./users/updating-user-profile-pictures.md
+- ./users/adding-custom-fields-to-users.md
+---
 # Users
 
 ```{toctree}

@@ -1,3 +1,9 @@
+---
+toc:
+- ./translating-web-content/manually-translating-web-content.md
+- ./translating-web-content/exporting-and-importing-translations.md
+- ./translating-web-content/automatically-translating-web-content.md
+---
 # Translating Web Content
 
 ```{toctree}

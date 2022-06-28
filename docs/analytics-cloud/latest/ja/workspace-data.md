@@ -1,3 +1,10 @@
+---
+toc:
+- ./workspace-data/managing-api-access.md
+- ./workspace-data/data-control-and-privacy.md
+- ./workspace-data/managing-data-sources.md
+- ./workspace-data/definitions.md
+---
 # ワークスペース データ
 
 ```{toctree}

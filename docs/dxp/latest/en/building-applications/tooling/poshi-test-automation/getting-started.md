@@ -1,4 +1,12 @@
 ---
+toc:
+- ./getting-started/setup.md
+- ./getting-started/creating-a-path-file.md
+- ./getting-started/creating-a-macro-file.md
+- ./getting-started/creating-a-testcase-file.md
+- ./getting-started/syntax-validation.md
+- ./getting-started/running-a-test.md
+- ./getting-started/understanding-test-results-and-debugging-tests.md
 html_meta:
   "documentation-type": "user-guide"
 ---

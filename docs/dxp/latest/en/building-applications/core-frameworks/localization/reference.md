@@ -1,3 +1,7 @@
+---
+toc:
+- ./reference/aggregating-resource-bundles.md
+---
 # Reference
 
 ```{toctree}

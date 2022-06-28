@@ -1,3 +1,8 @@
+---
+toc:
+- ./content-dashboard/about-the-content-dashboard.md
+- ./content-dashboard/content-dashboard-interface.md
+---
 # コンテンツダッシュボード
 
 ```{toctree}

@@ -1,3 +1,8 @@
+---
+toc:
+- ./product-recommendations/using-product-recommendations.md
+- ./product-recommendations/understanding-recommendation-types.md
+---
 # Product Recommendations
 
 {bdg-primary}`Subscription`

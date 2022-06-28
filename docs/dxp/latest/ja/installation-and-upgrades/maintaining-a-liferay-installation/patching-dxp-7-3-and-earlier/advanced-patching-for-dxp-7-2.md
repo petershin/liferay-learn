@@ -1,3 +1,9 @@
+---
+toc:
+- ./advanced-patching-for-dxp-7-2/using-slim-bundles.md
+- ./advanced-patching-for-dxp-7-2/slimming-down-patched-installations.md
+- ./advanced-patching-for-dxp-7-2/custom-code-and-patch-compatibility.md
+---
 # DXP 7.2の高度なパッチ適用
 
 ```{toctree}

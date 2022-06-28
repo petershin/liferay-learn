@@ -1,3 +1,7 @@
+---
+toc:
+- ./page-fragments-and-widgets/using-fragments/.md
+---
 # Page Fragments and Widgets
 
 ```{toctree}

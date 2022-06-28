@@ -1,3 +1,7 @@
+---
+toc:
+- ./using-spring/reference.md
+---
 # Using Spring
 
 ```{toctree}

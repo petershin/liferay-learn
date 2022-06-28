@@ -1,3 +1,12 @@
+---
+toc:
+- ./reference/database-configurations.md
+- ./reference/database-templates.md
+- ./reference/jvm-configuration.md
+- ./reference/liferay-home.md
+- ./reference/portal-properties.md
+- ./reference/system-properties.md
+---
 # Reference
 
 ```{toctree}

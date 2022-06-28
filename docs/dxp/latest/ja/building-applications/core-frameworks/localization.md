@@ -1,3 +1,7 @@
+---
+toc:
+- ./localization/adding-a-language.md
+---
 # Localization
 
 ```{toctree}

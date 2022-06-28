@@ -1,3 +1,8 @@
+---
+toc:
+- ./pages/pages.md
+- ./pages/paths.md
+---
 # ページ
 
 ```{toctree}

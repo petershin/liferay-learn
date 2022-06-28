@@ -1,3 +1,7 @@
+---
+toc:
+- ./terms-and-conditions/payment-and-delivery-terms.md
+---
 # Terms and Conditions
 
 ```{toctree}

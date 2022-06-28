@@ -1,3 +1,9 @@
+---
+toc:
+- ./using-fragments/using-page-fragments.md
+- ./using-fragments/managing-page-fragments.md
+- ./using-fragments/propagating-page-fragment-changes.md
+---
 # フラグメントの使用
 
 ```{toctree}

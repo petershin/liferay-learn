@@ -1,3 +1,9 @@
+---
+toc:
+- ./developer-guide/understanding-form-storage-adapters.md
+- ./developer-guide/writing-a-custom-data-provider.md
+- ./developer-guide/writing-a-form-storage-adapter.md
+---
 # 開発者ガイド
 
 ```{toctree}

@@ -1,3 +1,18 @@
+---
+toc:
+- ./knowledge-base/using-the-knowledge-base.md
+- ./knowledge-base/creating-knowledge-base-articles.md
+- ./knowledge-base/managing-the-knowledge-base.md
+- ./knowledge-base/knowledge-base-templates.md
+- ./knowledge-base/responding-to-knowledge-base-feedback.md
+- ./knowledge-base/knowledge-base-display-widget.md
+- ./knowledge-base/other-knowledge-base-widgets.md
+- ./knowledge-base/importing-knowledge-base-articles.md
+- ./knowledge-base/knowledge-base-zip-file-requirements.md
+- ./knowledge-base/knowledge-base-importer-faq.md
+- ./knowledge-base/knowledge-base-system-settings.md
+- ./knowledge-base/developer-guide.md
+---
 # Knowledge Base
 
 ```{toctree}

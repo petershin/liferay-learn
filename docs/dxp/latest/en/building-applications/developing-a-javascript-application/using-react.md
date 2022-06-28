@@ -1,3 +1,10 @@
+---
+toc:
+- ./../remote-apps/remote-apps-tutorials/creating-a-basic-remote-app.md
+- ./../remote-apps/remote-apps-tutorials/using-routes-with-a-basic-remote-app.md
+- ./../remote-apps/remote-apps-tutorials/remote-apps-with-headless-apis.md
+- ./using-react/react-component-utilities-reference.md
+---
 # Using React
 
 ```{toctree}

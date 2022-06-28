@@ -1,3 +1,14 @@
+---
+toc:
+- ./using-liferay-docker-images/container-lifecycle-and-api.md
+- ./using-liferay-docker-images/configuring-containers.md
+- ./using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md
+- ./using-liferay-docker-images/licensing-dxp-in-docker.md
+- ./using-liferay-docker-images/patching-dxp-in-docker.md
+- ./using-liferay-docker-images/running-scripts-in-containers.md
+- ./using-liferay-docker-images/providing-files-to-the-container.md
+- ./using-liferay-docker-images/upgrading-to-a-new-docker-image.md
+---
 # Using Liferay Docker Images
 
 ```{toctree}

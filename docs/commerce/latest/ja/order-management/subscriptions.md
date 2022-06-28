@@ -1,3 +1,8 @@
+---
+toc:
+- ./subscriptions/managing-subscriptions.md
+- ./subscriptions/subscription-administration-reference-guide.md
+---
 # サブスクリプション契約
 
 ```{toctree}

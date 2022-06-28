@@ -1,3 +1,9 @@
+---
+toc:
+- ./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
+- ./apis-with-rest-builder/query-design.md
+- ./apis-with-rest-builder/reference.md
+---
 # RESTビルダーを使用したAPIの作成
 
 ```{toctree}

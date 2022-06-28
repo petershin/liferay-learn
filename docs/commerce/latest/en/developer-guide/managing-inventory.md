@@ -1,3 +1,7 @@
+---
+toc:
+- ./managing-inventory/implementing-a-custom-low-stock-activity.md
+---
 # Managing Inventory
 
 ```{toctree}

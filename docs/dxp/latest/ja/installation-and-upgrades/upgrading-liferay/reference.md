@@ -1,3 +1,20 @@
+---
+toc:
+- ./reference/data-cleanup.md
+- ./reference/data-removal.md
+- ./reference/database-upgrade-options.md
+- ./reference/database-upgrade-tool-reference.md
+- ./reference/default-setting-changes-in-7-4.md
+- ./reference/default-setting-changes-in-7-3.md
+- ./reference/default-setting-changes-in-7-2.md
+- ./reference/file-store-updates.md
+- ./reference/maintenance-mode-and-deprecations-in-7-4.md
+- ./reference/maintenance-mode-and-deprecations-in-7-3.md
+- ./reference/maintenance-mode-and-deprecations-in-7-2.md
+- ./reference/renamed-language-keys.md
+- ./reference/troubleshooting-upgrades.md
+- ./reference/upgrade-reports.md
+---
 # リファレンス
 
 ```{toctree}

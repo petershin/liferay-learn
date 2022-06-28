@@ -1,3 +1,9 @@
+---
+toc:
+- ./auto-tagging/configuring-asset-auto-tagging.md
+- ./auto-tagging/auto-tagging-assets.md
+- ./auto-tagging/auto-tagging-images.md
+---
 # 自動タグ付け
 
 ```{toctree}

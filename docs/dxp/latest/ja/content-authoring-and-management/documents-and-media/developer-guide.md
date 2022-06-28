@@ -1,3 +1,7 @@
+---
+toc:
+- ./developer-guide/adaptive-media-modules-reference.md
+---
 # Developer Guide
 
 ```{toctree}

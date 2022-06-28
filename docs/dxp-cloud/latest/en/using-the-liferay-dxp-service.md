@@ -1,3 +1,13 @@
+---
+toc:
+- ./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md
+- ./using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version.md
+- ./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
+- ./using-the-liferay-dxp-service/liferay-service-environment-variables.md
+- ./using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md
+- ./using-the-liferay-dxp-service/using-the-mysql-client.md
+- ./using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
+---
 # Using the Liferay DXP Service
 
 The Liferay DXP service is the heartbeat of any project. It runs the application's Liferay DXP instance and interacts with other services like the web server, Elasticsearch, and MySQL database.

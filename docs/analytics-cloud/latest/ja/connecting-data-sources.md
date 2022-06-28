@@ -1,3 +1,11 @@
+---
+toc:
+- ./connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md
+- ./connecting-data-sources/syncing-contact-data-from-dxp.md
+- ./connecting-data-sources/scoping-sites-and-individuals-using-properties.md
+- ./connecting-data-sources/adding-a-salesforce-data-source.md
+- ./connecting-data-sources/adding-a-csv-data-source.md
+---
 # データソースの接続
 
 ```{toctree}

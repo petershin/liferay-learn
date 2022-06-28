@@ -1,3 +1,10 @@
+---
+toc:
+- ./apis/authentication.md
+- ./apis/querying-data.md
+- ./apis/exporting-data.md
+- ./apis/resource-types-and-structure.md
+---
 # API
 
 ```{toctree}

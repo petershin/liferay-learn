@@ -1,3 +1,8 @@
+---
+toc:
+- ./events/tracking-events.md
+- ./events/events-analysis.md
+---
 # Events
 
 ```{toctree}

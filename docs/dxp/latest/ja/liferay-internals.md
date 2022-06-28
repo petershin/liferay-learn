@@ -1,3 +1,11 @@
+---
+toc:
+- ./liferay-internals/fundamentals.md
+- ./liferay-internals/extending-liferay.md
+- ./liferay-internals/customizing-web-apis.md
+- ./liferay-internals/contributing-to-liferay-development.md
+- ./liferay-internals/reference.md
+---
 # Liferayの内部
 
 ```{toctree}

@@ -1,3 +1,8 @@
+---
+toc:
+- ./creating-and-managing-products/product-types.md
+- ./creating-and-managing-products/products.md
+---
 # Creating and Managing Products
 
 ```{toctree}

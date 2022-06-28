@@ -1,3 +1,12 @@
+---
+toc:
+- ./publishing-and-sharing/publishing-documents.md
+- ./publishing-and-sharing/serving-device-and-screen-optimized-media.md
+- ./publishing-and-sharing/managing-document-access.md
+- ./publishing-and-sharing/liferay-sync.md
+- ./publishing-and-sharing/using-workflow-with-documents-and-media.md
+- ./publishing-and-sharing/accessing-documents-with-webdav.md
+---
 # Publishing and Sharing
 
 ```{toctree}

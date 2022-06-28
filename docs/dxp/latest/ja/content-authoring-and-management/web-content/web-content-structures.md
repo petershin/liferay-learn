@@ -1,3 +1,11 @@
+---
+toc:
+- ./web-content-structures/understanding-web-content-structures.md
+- ./web-content-structures/creating-structures.md
+- ./web-content-structures/configuring-structure-fields.md
+- ./web-content-structures/managing-structures.md
+- ./web-content-structures/assigning-permissions-to-structures-and-templates.md
+---
 # Web Content Structures
 
 ```{toctree}

@@ -1,3 +1,11 @@
+---
+toc:
+- ./additional-content-display-options/using-the-web-content-display-widget.md
+- ./additional-content-display-options/displaying-collections.md
+- ./additional-content-display-options/filtering-collections-on-a-page.md
+- ./additional-content-display-options/styling-widgets-with-widget-templates.md
+- ./additional-content-display-options/using-the-iframe-widget.md
+---
 # Additional Content Display Options
 
 ```{toctree}

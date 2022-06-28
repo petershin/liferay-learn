@@ -1,3 +1,8 @@
+---
+toc:
+- ./individuals/individuals-dashboard.md
+- ./individuals/individual-profiles.md
+---
 # 訪問者
 
 ```{toctree}

@@ -1,3 +1,11 @@
+---
+toc:
+- ./translating-pages-and-content/translating-content-pages.md
+- ./translating-pages-and-content/translating-web-content.md
+- ./translating-pages-and-content/using-third-parties-for-translation.md
+- ./translating-pages-and-content/enabling-workflows-for-translations.md
+- ./translating-pages-and-content/managing-translation-permissions.md
+---
 # Translating Pages and Content
 
 ```{toctree}

@@ -1,3 +1,10 @@
+---
+toc:
+- ./dispatch-framework/using-dispatch.md
+- ./dispatch-framework/understanding-the-dispatch-framework.md
+- ./dispatch-framework/creating-a-new-dispatch-task-executor.md
+- ./dispatch-framework/dispatch-ui-reference.md
+---
 # Dispatch Framework
 
 ```{toctree}

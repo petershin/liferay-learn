@@ -1,3 +1,12 @@
+---
+toc:
+- ./configuring-sso/token-based-authentication.md
+- ./configuring-sso/authenticating-with-saml.md
+- ./configuring-sso/using-openam.md
+- ./configuring-sso/using-openid-connect.md
+- ./configuring-sso/authenticating-with-cas.md
+- ./configuring-sso/authenticating-with-kerberos.md
+---
 # シングルサインオンの設定
 
 ```{toctree}

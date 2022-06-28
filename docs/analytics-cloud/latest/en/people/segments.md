@@ -1,3 +1,8 @@
+---
+toc:
+- ./segments/segments.md
+- ./segments/creating-segments.md
+---
 # Segments
 
 ```{toctree}

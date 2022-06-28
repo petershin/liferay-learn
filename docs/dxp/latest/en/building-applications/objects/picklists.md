@@ -1,3 +1,8 @@
+---
+toc:
+- ./picklists/using-picklists.md
+- ./picklists/managing-picklist-permissions.md
+---
 # Picklists
 
 ```{toctree}

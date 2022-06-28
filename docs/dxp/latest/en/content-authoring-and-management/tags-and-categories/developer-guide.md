@@ -1,3 +1,8 @@
+---
+toc:
+- ./developer-guide/categories-and-vocabulary-api-basics.md
+- ./developer-guide/tags-api-basics.md
+---
 # Developer Guide
 
 ```{toctree}

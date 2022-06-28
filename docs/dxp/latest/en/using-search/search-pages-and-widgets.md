@@ -1,3 +1,11 @@
+---
+toc:
+- ./search-pages-and-widgets/working-with-search-pages.md
+- ./search-pages-and-widgets/search-results.md
+- ./search-pages-and-widgets/search-facets.md
+- ./search-pages-and-widgets/similar-results.md
+- ./search-pages-and-widgets/search-insights.md
+---
 # Search Pages and Widgets
 
 Liferay's default search page is at <localhost:8080/web/guest/search>. You can create your own page from scratch or reuse the existing page, adding or removing Search widgets as you like.

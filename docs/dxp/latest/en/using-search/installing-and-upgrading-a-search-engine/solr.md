@@ -1,3 +1,8 @@
+---
+toc:
+- ./solr/solr-limitations.md
+- ./solr/installing-solr.md
+---
 # Solr
 
 ```{toctree}

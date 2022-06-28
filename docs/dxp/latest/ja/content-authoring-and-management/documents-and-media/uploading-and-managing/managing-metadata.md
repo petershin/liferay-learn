@@ -1,3 +1,8 @@
+---
+toc:
+- ./managing-metadata/defining-document-types.md
+- ./managing-metadata/defining-metadata-sets.md
+---
 # メタデータの管理
 
 ```{toctree}

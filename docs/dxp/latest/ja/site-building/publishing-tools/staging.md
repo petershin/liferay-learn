@@ -1,3 +1,16 @@
+---
+toc:
+- ./staging/understanding-the-publishing-process.md
+- ./staging/configuring-local-live-staging.md
+- ./staging/configuring-remote-live-staging.md
+- ./staging/managing-data-and-content-types-in-staging.md
+- ./staging/page-versioning.md
+- ./staging/publishing-single-assets-and-widgets.md
+- ./staging/configuring-automatic-publishing-of-displayed-content.md
+- ./staging/managing-staging-permissions.md
+- ./staging/using-staging-in-asset-libraries.md
+- ./staging/site-staging-ui-reference.md
+---
 # ステージングの概要
 
 ```{toctree}

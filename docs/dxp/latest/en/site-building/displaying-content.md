@@ -1,3 +1,11 @@
+---
+toc:
+- ./displaying-content/displaying-content-intro.md
+- ./displaying-content/using-the-asset-publisher-widget.md
+- ./displaying-content/using-display-page-templates.md
+- ./displaying-content/additional-content-display-options.md
+- ./displaying-content/using-information-templates.md
+---
 # Displaying Content
 
 ```{toctree}

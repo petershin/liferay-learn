@@ -1,3 +1,17 @@
+---
+toc:
+- ./objects/creating-and-managing-objects.md
+- ./objects/objects-tutorials.md
+- ./objects/using-forms-with-objects.md
+- ./objects/deploying-object-widgets-to-sites.md
+- ./objects/displaying-object-entries.md
+- ./objects/enabling-workflows-for-objects.md
+- ./objects/picklists.md
+- ./objects/understanding-object-field-types.md
+- ./objects/understanding-object-integrations.md
+- ./objects/objects-application-permissions.md
+- ./objects/integrating-objects-with-third-party-services.md
+---
 # Objects
 
 ```{toctree}

@@ -1,3 +1,8 @@
+---
+toc:
+- ./infrastructure-and-operations/networking.md
+- ./infrastructure-and-operations/security.md
+---
 # インフラストラクチャと運用
 
 ```{toctree}

@@ -1,3 +1,8 @@
+---
+toc:
+- ./developer-guide/writing-a-similar-results-contributor.md
+- ./developer-guide/apis.md
+---
 # Developer Guide
 
 ```{toctree}

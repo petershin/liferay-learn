@@ -1,3 +1,7 @@
+---
+toc:
+- ./../file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+---
 # Security Settings
 
 ```{toctree}

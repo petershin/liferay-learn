@@ -1,3 +1,7 @@
+---
+toc:
+- ./using-jsf/reference.md
+---
 # Using JSF
 
 ```{toctree}

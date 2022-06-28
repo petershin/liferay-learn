@@ -1,3 +1,8 @@
+---
+toc:
+- ./add-ons-and-connectors/punchout2go.md
+- ./add-ons-and-connectors/salesforce.md
+---
 # Add-ons and Connectors
 
 ```{toctree}

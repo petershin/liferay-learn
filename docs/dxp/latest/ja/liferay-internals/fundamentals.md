@@ -1,3 +1,14 @@
+---
+toc:
+- ./fundamentals/module-projects.md
+- ./fundamentals/apis-as-osgi-services.md
+- ./fundamentals/using-an-osgi-service.md
+- ./fundamentals/importing-packages.md
+- ./fundamentals/exporting-packages.md
+- ./fundamentals/semantic-versioning.md
+- ./fundamentals/configuring-dependencies.md
+- ./fundamentals/using-the-gogo-shell.md
+---
 # 基礎
 
 ```{toctree}

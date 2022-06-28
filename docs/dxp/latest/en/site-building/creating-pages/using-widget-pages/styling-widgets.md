@@ -1,3 +1,10 @@
+---
+toc:
+- ./styling-widgets/configuring-widget-look-and-feel.md
+- ./styling-widgets/creating-a-widget-template.md
+- ./styling-widgets/using-a-widget-template-example.md
+- ./styling-widgets/setting-a-default-widget-template.md
+---
 # Styling Widgets
 
 ```{toctree}

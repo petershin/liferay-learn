@@ -1,3 +1,6 @@
+---
+toc:
+---
 # Developer Guide
 
 ```{toctree}

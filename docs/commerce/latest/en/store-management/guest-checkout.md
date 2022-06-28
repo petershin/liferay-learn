@@ -1,3 +1,8 @@
+---
+toc:
+- ./guest-checkout/guest-checkout-overview.md
+- ./guest-checkout/enabling-guest-checkout.md
+---
 # Guest Checkout
 
 ```{toctree}

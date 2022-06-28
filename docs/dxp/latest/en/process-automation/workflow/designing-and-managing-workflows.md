@@ -1,3 +1,9 @@
+---
+toc:
+- ./designing-and-managing-workflows/building-workflows.md
+- ./designing-and-managing-workflows/managing-workflows.md
+- ./designing-and-managing-workflows/workflow-designer.md
+---
 # Designing and Managing Workflows
 
 ```{toctree}

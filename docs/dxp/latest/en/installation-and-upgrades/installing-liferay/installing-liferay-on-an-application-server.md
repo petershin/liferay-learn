@@ -1,3 +1,12 @@
+---
+toc:
+- ./installing-liferay-on-an-application-server/installing-on-tomcat.md
+- ./installing-liferay-on-an-application-server/installing-on-wildfly.md
+- ./installing-liferay-on-an-application-server/installing-on-jboss-eap.md
+- ./installing-liferay-on-an-application-server/installing-on-weblogic.md
+- ./installing-liferay-on-an-application-server/installing-on-websphere.md
+- ./installing-liferay-on-an-application-server/setting-up-jndi-on-tomcat.md
+---
 # Installing Liferay on an Application Server
 
 ```{toctree}

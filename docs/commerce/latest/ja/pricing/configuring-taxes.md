@@ -1,3 +1,9 @@
+---
+toc:
+- ./configuring-taxes/creating-tax-categories.md
+- ./configuring-taxes/setting-tax-rate-by-address.md
+- ./configuring-taxes/setting-tax-rate-by-fixed-rate.md
+---
 # 税率の設定
 
 ```{toctree}

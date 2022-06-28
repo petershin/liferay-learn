@@ -1,3 +1,9 @@
+---
+toc:
+- ./multi-factor-authentication/using-multi-factor-authentication.md
+- ./multi-factor-authentication/multi-factor-authentication-checkers.md
+- ./multi-factor-authentication/fast-identity-online-2.md
+---
 # Multi-Factor Authentication
 
 ```{toctree}

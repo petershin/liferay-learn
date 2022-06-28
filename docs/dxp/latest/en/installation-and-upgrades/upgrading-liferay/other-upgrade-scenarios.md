@@ -1,3 +1,8 @@
+---
+toc:
+- ./../maintaining-a-liferay-installation/maintaining-clustered-installations.md
+- ./other-upgrade-scenarios/upgrading-a-sharded-environment.md
+---
 # Other Upgrade Scenarios
 
 ```{toctree}

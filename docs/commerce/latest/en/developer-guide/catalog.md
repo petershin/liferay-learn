@@ -1,3 +1,7 @@
+---
+toc:
+- ./catalog/adding-a-new-product-type.md
+---
 # Catalog
 
 ```{toctree}

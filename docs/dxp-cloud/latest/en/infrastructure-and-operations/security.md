@@ -1,3 +1,11 @@
+---
+toc:
+- ./security/information-security-and-dxp-cloud.md
+- ./security/authentication.md
+- ./security/using-sso-with-dxp-cloud.md
+- ./security/web-application-firewall.md
+- ./security/managing-secure-environment-variables-with-secrets.md
+---
 # Security
 
 ```{toctree}

@@ -23,8 +23,8 @@ Liferay Commerce does not support Staging. During the publishing process, entiti
 
 When setting up Staging, determine whether to host your Site or Asset Library locally (i.e., on the same server) or remotely (i.e., on separate servers connected by a network). Then customize which application data is staged. For Sites, you can also enable Page versioning for Widget Pages and Content Pages.
 
-```{note}
-Staging is supported for Asset Libraries since Liferay DXP 7.4 and 7.3.10 FP1.
+```{important}
+Staging is supported for Asset Libraries since Liferay DXP 7.4 and 7.3.10 FP1. However, you should only connect staged Sites with staged Asset Libraries, and vice versa. See [Using Staging in Asset Libraries](./staging/using-staging-in-asset-libraries.md) for more information.
 ```
 
 ## Configuration Options

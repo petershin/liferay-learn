@@ -4,7 +4,7 @@ To start using Liferay Analytics Cloud, visit [analytics.liferay.com](https://an
 
 ![Create account from the login page](./signing-up-for-a-new-workspace/images/01.png)
 
-If you have not already set up multi-factor authentication for your account you are prompted to. See [Multi-Factor Authentication for more information](./multi-factor-authentication.md).
+If you have not already set up multi-factor authentication for your account, you are prompted to. See [Multi-Factor Authentication for more information](./multi-factor-authentication.md).
 
 ```{important}
 Your Liferay DXP installation must meet the following fix pack minimum requirements:
@@ -66,4 +66,4 @@ Once you've successfully purchased your Analytic Cloud workspace, our team will 
 
 Your workspace owner will receive an invitation email once the workspace is provisioned. The owner can then login to [analytics.liferay.com](https://analytics.liferay.com) and finish configuring the workspace.
 
-See the next section on how to [access your workspace](./accessing-your-workspace.md). 
+See the next section on how to [access your workspace](./accessing-your-workspace.md).

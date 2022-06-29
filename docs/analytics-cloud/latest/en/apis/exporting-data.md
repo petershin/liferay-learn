@@ -1,29 +1,41 @@
 # Exporting Data
 
-As mentioned before, every APIs call only returns a subset of the data, the scope is controlled by the page query parameter. Fortunately there's a way to export the entire data set to a JSON file. An initial request is made to prepare the data file and after the export is done the same endpoint can be fetched to stream the data results.
-
-The user can request data export for the four mentioned resource types (account, individual, segment, and page).
+Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals/individuals-dashboard.md). Analytics data can also be fetched and exported with the use of Analytics Cloud's APIs. Specifically, you can fetch account data, individual data, segment data, or page data.
 
 ## Requesting a Data Export
 
-```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/export/{type}
-```
+1. Take note of your workspace's access token. See [Authentication](authentication.md) to generate or get an access token.
 
-As mentioned, the type defines the data type. Possible values are: **account**, **individual**, **page**, and **segment**.  So, if you are interested in the segments data export, you would send the following request:
+1. The data request takes the following type of format:
 
-```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/export/segment
-```
+   ```
+   curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/export/{type}?fromDate={ISO 8601 date and time}&toDate={ISO 8601 date and time}
+   ```
 
-The following response is returned:
+   Replace `{token}` with your specific access token. Replace `{type}` with either **account**, **individual**, **page**, or **segment**. Give a start date and time by replacing `{ISO 8601 date and time}` after `fromDate=`. Give an end date and time by replacing `{ISO 8601 date and time}` after `toDate=`. Make sure to use the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date and time format. Note that the start date and time and end date and time are required in the request.
 
-```json
-{"message":"The data export file is being created. Please come back later."}
-```
+   For example, a request for page data might look like this:
 
-The same data export file is returned for a period of 30 minutes from the date the first request was made. After that, a new data export file is generated upon new requests. Once the export job is completed you can download the file with the following command:
+   ```
+   curl -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z'
+   ```
 
-```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/export/segment > segment-data.json
-```
+1. Upon requesting the data, you will see a message like this:
+
+   ```json
+   {"fromDate":"2022-01-01T00:00:01.000Z","createdDate":"2022-06-29T17:50:46.824Z","toDate":"2022-01-05T23:59:59.000Z","message":"A new data export file for this date range and type will be created. Please come back later.","type":"PAGE","status":"PENDING"}%   
+   ```
+
+   It may take some time (i.e. a few minutes to a few hours) for the request to finish processing depending on the size of the data being fetched.
+
+1. Run the same command again and the data will be returned in your terminal window. Note, that if the request is still processing, you will see a message with `"status":"RUNNING"` and to check again later. 
+
+   If you wish to download the data as a JSON file, add `>> {filename.json}` to the end of the request. For example:
+
+   ```
+   curl -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z' >> page-data.json
+   ```
+
+   Requests are handled one at a time. If a second request is made while the first request is still running, you will see a message `"status":"PENDING"` until the first request has finished processing.
+
+   The requested data will be available to download for 24 hours. After that time, if the same request is made, it will be processed as a new request.

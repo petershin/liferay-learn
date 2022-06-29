@@ -203,12 +203,16 @@ The Advanced Configuration adds [source includes and excludes](https://www.elast
 
 ```json
 {
-	"excludes":[
-      "<fieldName1>","<fieldName2>"
-	],
-	"fetchSource":true,
-	"includes":[
-      "<fieldName3>","<fieldName4>"
-	]
+    "source":{
+        "excludes":[
+            "<fieldName1>",
+            "<fieldName2>"
+        ],
+        "fetchSource":true,
+        "includes":[
+            "<fieldName3>",
+            "<fieldName4>"
+        ]
+    }
 }
 ```

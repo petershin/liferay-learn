@@ -86,8 +86,8 @@
 
 イベントフローは次のとおりです。
 
-1. `m4q7:sendMessage</0Gogoシェルコマンドを呼び出して、メッセージを渡します。</li>
-<li><code>M4Q7BakerOSGiCommands`の`sendMessage(String)`メソッドは、Gogoシェルコマンドでトリガーし、メッセージ内のコマンド引数を`acme/m4q7_able`宛先に送信します。
+1. `M4Q7BakerOSGiCommands` Gogoシェルコマンドを呼び出して、メッセージを渡します。
+1. `M4Q7BakerOSGiCommands` の `sendMessage(String)`メソッドは、Gogoシェルコマンドでトリガーし、メッセージ内のコマンド引数を `acme/m4q7_able` 宛先に送信します。
 1. メッセージバススレッドは、メッセージを`M4Q7CharlieMessageListener`に配信します。
 1. `M4Q7CharlieMessageListener`は、メッセージペイロードをログに記録し、応答メッセージ内の独自のクラス名を元のメッセージの応答先`acme/m4q7_baker`に送信します。
 1. `M4Q7BakerMessageListener`は応答メッセージを受信し、そのペイロードをログに記録します。

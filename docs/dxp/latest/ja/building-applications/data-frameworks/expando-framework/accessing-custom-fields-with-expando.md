@@ -18,36 +18,25 @@
 
    ![ユーザーに［f5a3Text］というカスタムフィールドを作成します。](./accessing-custom-fields-with-expando/images/01.png)
 
-1. Accessing Expando/0>をダウンロードして解凍します。 
-   
-   
+1. [Accessing Expando](./liferay-f5a3.zip) をダウンロードして解凍します。 
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/expando-framework/liferay-f5a3.zip -O
    ```
-</p></li> </ol> 
-
-
 
    ```bash
    unzip liferay-f5a3.zip
    ```
 
-
 1. モジュールのルートから、ビルドおよびデプロイします。 
-   
 
    ```bash
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-
-
-
    ```{note}
    このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
    ```
-
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。 
    
@@ -67,7 +56,6 @@
    ポートレットには、先ほど作成したユーザーのカスタムフィールドが表示されます。
 
 
-
 ## ポートレットを調べる
 
 サンプルプロジェクトでは、シンプルなMVCポートレットを使用して、カスタムフィールドを表示するJSPファイルをレンダリングしています。 ポートレットには、デフォルトのJSPファイルを表示するだけなので、コードはありません。 
@@ -75,16 +63,13 @@
 詳しくは、 [MVCの使用](../../developing-a-java-web-application/using-mvc.md)をご覧ください。
 
 
-
 ## JSPファイルを調べる
 
 `<liferay-theme:defineObjects>`タグは、Liferay`User`オブジェクトにアクセスするためにJSPに含まれています。 多くのLiferayオブジェクトと同様に、`User`オブジェクトは`ExpandoBridge`サービスを継承しており、カスタムフィールドの値を作成(つまり`addAttribute()`)、設定(つまり`setAttribute()`)、取得(つまり`getAttribute()`)する方法が含まれています。 すべてのインターフェースのメソッドを見るには、 [ExpandoBridge javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/expando/kernel/model/ExpandoBridge.html) をご覧ください。 
 
 
-
 ```{literalinclude} ./accessing-custom-fields-with-expando/resources/liferay-f5a3.zip/f5a3-web/src/main/resources/META-INF/resources/view.jsp
 :language: jsp
 ```
-
 
 サンプルプロジェクトでは、ユーザーの`f5a3Text`カスタムフィールドに関連する値を取得する簡単な例を示しています。 アプリケーションでは、カスタムフィールドを作成、設定、取得するための独自のコードを記述してください。

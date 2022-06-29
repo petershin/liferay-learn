@@ -26,6 +26,16 @@ com.liferay.journal.configuration.JournalServiceConfiguration.config
 
 The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization never takes effect. The only exception is for [Factory Configuration](./using-factory-configuration.md), where a unique subname can be provided in some cases.
 
+### Enabling Password Export
+
+By default, passwords are excluded when exporting configuration files (e.g. Elasticsearch password, Salesforce password, etc.). To include them in exports, add the following property to your `portal-ext.properties` file:
+
+```properties
+module.framework.export.password.attributes=true
+```
+
+Restart your Liferay instance for the change to take place.
+
 ## Key/Value Syntax
 
 The syntax for all keys and values in a `.config` file is the same:
@@ -150,13 +160,3 @@ Property configurations are applied on server restart. Property configurations t
 ```{note}
 Read-only [factory configuration values](./using-factory-configuration.md) are not supported.
 ```
-
-## Enabling Password Export
-
-By default, passwords are excluded when exporting configuration files (e.g. Elasticsearch password, Salesforce password, etc.). To include them in exports, add the following property to your `portal-ext.properties` file:
-
-```properties
-module.framework.export.password.attributes=true
-```
-
-Restart your Liferay instance for the change to take place.

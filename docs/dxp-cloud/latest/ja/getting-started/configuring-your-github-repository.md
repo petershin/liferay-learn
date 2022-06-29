@@ -69,7 +69,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 `LCP_CI_SCM_TOKEN` の値には、GitHub組織用に作成した個人用アクセストークンを使用します。 このトークンの作成とアクセスの手順については、 [GitHub's documentation](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) を参照してください。
 
-作成されたパーソナルアクセストークンは、 **repo** と **admin:repo_hook**以下のすべてのスコープ権限にチェックが入っている必要があります。**admin:repo_hook** scope permissions specifically は、リポジトリが DXP Cloud と正常に統合された後に [自動 Web フック管理](#personal-access-token-usage) を無効にすれば後で削除することが可能です。
+作成されたパーソナルアクセストークンは、*repo*と*admin:repo_hook*以下のすべてのスコープ権限にチェックが入っている必要があります。リポジトリがDXP Cloudと正常に統合された後、[自動Webフック管理を無効](#personal-access-token-usage)にすれば、具体的には、*admin:repo_hook*スコープ権限を後で削除できます。
 
 ![PATが正常に使用できるように、正しい権限を確認してください。](./configuring-your-github-repository/images/05.png)
 

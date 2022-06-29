@@ -29,6 +29,7 @@ import com.liferay.petra.string.StringPool;
 import com.liferay.portal.kernel.util.HashMapBuilder;
 
 import com.vladsch.flexmark.ast.Image;
+import com.vladsch.flexmark.ext.admonition.AdmonitionExtension;
 import com.vladsch.flexmark.ext.anchorlink.AnchorLinkExtension;
 import com.vladsch.flexmark.ext.aside.AsideExtension;
 import com.vladsch.flexmark.ext.attributes.AttributesExtension;
@@ -50,8 +51,8 @@ import com.vladsch.flexmark.util.ast.Visitor;
 import com.vladsch.flexmark.util.data.MutableDataSet;
 import com.vladsch.flexmark.util.sequence.BasedSequence;
 import com.vladsch.flexmark.util.sequence.CharSubSequence;
-import java.io.BufferedReader;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.StringReader;
 
@@ -317,12 +318,12 @@ public class Main {
 		).set(
 			Parser.EXTENSIONS,
 			Arrays.asList(
-				AnchorLinkExtension.create(), AsideExtension.create(),
-				AttributesExtension.create(), DefinitionExtension.create(),
-				FootnoteExtension.create(), MediaTagsExtension.create(),
-				StrikethroughExtension.create(), SuperscriptExtension.create(),
-				TablesExtension.create(), TocExtension.create(),
-				TypographicExtension.create(),
+				AnchorLinkExtension.create(), AdmonitionExtension.create(),
+				AsideExtension.create(), AttributesExtension.create(),
+				DefinitionExtension.create(), FootnoteExtension.create(),
+				MediaTagsExtension.create(), StrikethroughExtension.create(),
+				SuperscriptExtension.create(), TablesExtension.create(),
+				TocExtension.create(), TypographicExtension.create(),
 				YamlFrontMatterExtension.create())
 		);
 
@@ -368,37 +369,73 @@ public class Main {
 			).build();
 	}
 
-	private String _preprocessMarkdown (String markdown) throws Exception {
-		BufferedReader bufReader = new BufferedReader(new StringReader(markdown));
+	private String _preprocessMarkdown(String markdown) throws Exception {
+		BufferedReader bufReader = new BufferedReader(
+			new StringReader(markdown));
 
 		String line = null;
 
-		String processedMarkdown = "";
+		StringBuilder processedMarkdown = new StringBuilder();
 
-		Boolean startAdmonitionBlock = false; 
+		Boolean startAdmonitionBlock = false;
 
-		while ((line=bufReader.readLine()) != null) {
+		while ((line = bufReader.readLine()) != null) {
+			int leadingSpaceCount = line.indexOf(line.trim());
 
-			if (line.trim().startsWith("```{")) {
-				startAdmonitionBlock = true;
-				String qualifier = line.substring(line.indexOf("{") + 1);
-				qualifier = qualifier.substring (0, qualifier.indexOf("}"));
-				line = "!!! " + qualifier;
+			StringBuilder leadingSpaces = new StringBuilder();
+
+			for (int i = 0; i < leadingSpaceCount; i++) {
+				leadingSpaces.append(" ");
 			}
 
-			if (line.trim().startsWith("```")) {
-				if (startAdmonitionBlock) {
-					line = "";
+			StringBuilder admonitionLine = new StringBuilder();
 
-					startAdmonitionBlock = false;
+			if (line.trim(
+				).startsWith(
+					"```"
+				) && startAdmonitionBlock) {
+
+				line = "";
+
+				startAdmonitionBlock = false;
+			}
+
+			if (startAdmonitionBlock) {
+				admonitionLine.append("    ");
+				admonitionLine.append(line);
+			}
+
+			if (line.trim(
+				).startsWith(
+					"```{"
+				)) {
+
+				String qualifier = line.substring(line.indexOf("{") + 1);
+
+				qualifier = qualifier.substring(0, qualifier.indexOf("}"));
+
+				if (!qualifier.equals("toctree")) {
+					admonitionLine.append(
+						leadingSpaces + "!!! " + qualifier + " \"\" ");
+
+					startAdmonitionBlock = true;
 				}
 			}
 
-			processedMarkdown = processedMarkdown + line;
+			if (!admonitionLine.toString(
+				).equals(
+					""
+				)) {
 
+				line = admonitionLine.toString();
+			}
+
+			line = line + "\n";
+
+			processedMarkdown.append(line);
 		}
-		
-		return processedMarkdown;
+
+		return processedMarkdown.toString();
 	}
 
 	private BasedSequence _toBasedSequence(String string) {
@@ -435,10 +472,8 @@ public class Main {
 
 		File englishFile = new File(fileName);
 
-		String englishText = FileUtils.readFileToString(
-			englishFile, StandardCharsets.UTF_8);
-
-		// Pre-process text here
+		String englishText = _preprocessMarkdown(
+			FileUtils.readFileToString(englishFile, StandardCharsets.UTF_8));
 
 		ContentFieldValue englishContentFieldValue = new ContentFieldValue() {
 			{

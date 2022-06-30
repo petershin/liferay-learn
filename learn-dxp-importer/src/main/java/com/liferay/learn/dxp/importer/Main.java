@@ -374,9 +374,7 @@ public class Main {
 
 		BufferedReader bufferedReader = new BufferedReader(
 			new StringReader(markdown));
-
 		String line = null;
-
 		boolean startAdmonitionBlock = false;
 
 		while ((line = bufferedReader.readLine()) != null) {

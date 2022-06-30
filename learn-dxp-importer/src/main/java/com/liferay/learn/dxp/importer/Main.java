@@ -489,8 +489,6 @@ public class Main {
 			String japaneseText = FileUtils.readFileToString(
 				japaneseFile, StandardCharsets.UTF_8);
 
-			// Pre-process text here
-
 			structuredContent.setContentFields(
 				new ContentField[] {
 					new ContentField() {

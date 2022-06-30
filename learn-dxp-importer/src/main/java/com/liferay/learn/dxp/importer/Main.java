@@ -370,7 +370,7 @@ public class Main {
 	}
 
 	private String _processMarkdown(String markdown) throws Exception {
-		StringBuilder stringBuilder = new StringBuilder();
+		StringBuilder sb = new StringBuilder();
 
 		BufferedReader bufferedReader = new BufferedReader(
 			new StringReader(markdown));
@@ -380,10 +380,10 @@ public class Main {
 		while ((line = bufferedReader.readLine()) != null) {
 			int leadingSpaceCount = line.indexOf(line.trim());
 
-			StringBuilder leadingSpaces = new StringBuilder();
+			StringBuilder leadingSpacesSB = new StringBuilder();
 
 			for (int i = 0; i < leadingSpaceCount; i++) {
-				leadingSpaces.append(" ");
+				leadingSpacesSB.append(" ");
 			}
 
 			StringBuilder admonitionLine = new StringBuilder();
@@ -414,7 +414,7 @@ public class Main {
 
 				if (!qualifier.equals("toctree")) {
 					admonitionLine.append(
-						leadingSpaces + "!!! " + qualifier + " \"\" ");
+						leadingSpacesSB + "!!! " + qualifier + " \"\" ");
 
 					startAdmonitionBlock = true;
 				}
@@ -430,10 +430,10 @@ public class Main {
 
 			line = line + "\n";
 
-			stringBuilder.append(line);
+			sb.append(line);
 		}
 
-		return stringBuilder.toString();
+		return sb.toString();
 	}
 
 	private BasedSequence _toBasedSequence(String string) {

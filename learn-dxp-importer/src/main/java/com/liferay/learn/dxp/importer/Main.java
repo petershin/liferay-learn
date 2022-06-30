@@ -377,7 +377,7 @@ public class Main {
 
 		String line = null;
 
-		Boolean startAdmonitionBlock = false;
+		boolean startAdmonitionBlock = false;
 
 		while ((line = bufferedReader.readLine()) != null) {
 			int leadingSpaceCount = line.indexOf(line.trim());

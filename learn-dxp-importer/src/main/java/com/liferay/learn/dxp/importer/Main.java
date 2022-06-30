@@ -370,12 +370,12 @@ public class Main {
 	}
 
 	private String _processMarkdown(String markdown) throws Exception {
+		StringBuilder stringBuilder = new StringBuilder();
+
 		BufferedReader bufferedReader = new BufferedReader(
 			new StringReader(markdown));
 
 		String line = null;
-
-		StringBuilder processedMarkdown = new StringBuilder();
 
 		Boolean startAdmonitionBlock = false;
 
@@ -432,10 +432,10 @@ public class Main {
 
 			line = line + "\n";
 
-			processedMarkdown.append(line);
+			stringBuilder.append(line);
 		}
 
-		return processedMarkdown.toString();
+		return stringBuilder.toString();
 	}
 
 	private BasedSequence _toBasedSequence(String string) {

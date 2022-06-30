@@ -370,7 +370,7 @@ public class Main {
 	}
 
 	private String _processMarkdown(String markdown) throws Exception {
-		BufferedReader bufReader = new BufferedReader(
+		BufferedReader bufferedReader = new BufferedReader(
 			new StringReader(markdown));
 
 		String line = null;
@@ -379,7 +379,7 @@ public class Main {
 
 		Boolean startAdmonitionBlock = false;
 
-		while ((line = bufReader.readLine()) != null) {
+		while ((line = bufferedReader.readLine()) != null) {
 			int leadingSpaceCount = line.indexOf(line.trim());
 
 			StringBuilder leadingSpaces = new StringBuilder();

@@ -369,7 +369,7 @@ public class Main {
 			).build();
 	}
 
-	private String _preprocessMarkdown(String markdown) throws Exception {
+	private String _processMarkdown(String markdown) throws Exception {
 		BufferedReader bufReader = new BufferedReader(
 			new StringReader(markdown));
 
@@ -472,7 +472,7 @@ public class Main {
 
 		File englishFile = new File(fileName);
 
-		String englishText = _preprocessMarkdown(
+		String englishText = _processMarkdown(
 			FileUtils.readFileToString(englishFile, StandardCharsets.UTF_8));
 
 		ContentFieldValue englishContentFieldValue = new ContentFieldValue() {

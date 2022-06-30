@@ -378,15 +378,13 @@ public class Main {
 		boolean startAdmonitionBlock = false;
 
 		while ((line = bufferedReader.readLine()) != null) {
-			int leadingSpaceCount = line.indexOf(line.trim());
-
 			StringBuilder leadingSpacesSB = new StringBuilder();
 
-			for (int i = 0; i < leadingSpaceCount; i++) {
+			for (int i = 0; i < line.indexOf(line.trim()); i++) {
 				leadingSpacesSB.append(" ");
 			}
 
-			StringBuilder admonitionLine = new StringBuilder();
+			StringBuilder admonitionLineSB = new StringBuilder();
 
 			if (line.trim(
 				).startsWith(
@@ -399,8 +397,8 @@ public class Main {
 			}
 
 			if (startAdmonitionBlock) {
-				admonitionLine.append("    ");
-				admonitionLine.append(line);
+				admonitionLineSB.append("    ");
+				admonitionLineSB.append(line);
 			}
 
 			if (line.trim(
@@ -413,19 +411,19 @@ public class Main {
 				qualifier = qualifier.substring(0, qualifier.indexOf("}"));
 
 				if (!qualifier.equals("toctree")) {
-					admonitionLine.append(
+					admonitionLineSB.append(
 						leadingSpacesSB + "!!! " + qualifier + " \"\" ");
 
 					startAdmonitionBlock = true;
 				}
 			}
 
-			if (!admonitionLine.toString(
+			if (!admonitionLineSB.toString(
 				).equals(
 					""
 				)) {
 
-				line = admonitionLine.toString();
+				line = admonitionLineSB.toString();
 			}
 
 			line = line + "\n";

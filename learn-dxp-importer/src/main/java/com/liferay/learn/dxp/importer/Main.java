@@ -318,7 +318,7 @@ public class Main {
 		).set(
 			Parser.EXTENSIONS,
 			Arrays.asList(
-				AnchorLinkExtension.create(), AdmonitionExtension.create(),
+				AdmonitionExtension.create(), AnchorLinkExtension.create(),
 				AsideExtension.create(), AttributesExtension.create(),
 				DefinitionExtension.create(), FootnoteExtension.create(),
 				MediaTagsExtension.create(), StrikethroughExtension.create(),

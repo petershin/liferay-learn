@@ -380,17 +380,15 @@ public class Main {
 		while ((line = bufferedReader.readLine()) != null) {
 			StringBuilder leadingSpacesSB = new StringBuilder();
 
-			for (int i = 0; i < line.indexOf(line.trim()); i++) {
+			String trimmedLine = line.trim();
+
+			for (int i = 0; i < line.indexOf(trimmedLine); i++) {
 				leadingSpacesSB.append(" ");
 			}
 
 			StringBuilder admonitionLineSB = new StringBuilder();
 
-			if (line.trim(
-				).startsWith(
-					"```"
-				) && startAdmonitionBlock) {
-
+			if (trimmedLine.startsWith("```") && startAdmonitionBlock) {
 				line = "";
 
 				startAdmonitionBlock = false;
@@ -401,11 +399,7 @@ public class Main {
 				admonitionLineSB.append(line);
 			}
 
-			if (line.trim(
-				).startsWith(
-					"```{"
-				)) {
-
+			if (trimmedLine.startsWith("```{")) {
 				String qualifier = line.substring(line.indexOf("{") + 1);
 
 				qualifier = qualifier.substring(0, qualifier.indexOf("}"));

@@ -20,6 +20,18 @@ In addition to full text search, advanced search syntax is supported. The underl
 
 ![Search for text in a specific field using Elasticsearch's Query String syntax.](./searching-for-content/images/02.png)
 
+### Search Bar Suggestions: Search as the User Types
+
+{bdg-secondary}`Available 7.4 Update/GA X+`
+
+Out of the box on the most recent Liferay 7.4, the Search bar provides search suggestions as the search user is typing their search phrase:
+
+GIF
+
+For the details on how it works, see [Search Bar Suggestions](./search-bar-suggestions.md)
+
+
+
 ### Matching Exact Phrases: Quoted Search
 
 What if users want their search terms (for example, _agile frameworks_) to produce only results with the exact phrase, as typed? In a regular full text search, searching _agile frameworks_ returns search results containing just the terms _agile_ and _frameworks_, and hits containing both terms but separated by other text, as well as results with the exact phrase match. To ensure that only hits with the exact phrase are returned, enclose it in quotes: _"agile frameworks"_.

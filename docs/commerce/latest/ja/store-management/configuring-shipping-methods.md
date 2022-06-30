@@ -20,24 +20,38 @@ configuring-shipping-methods/measurement-units.md
 configuring-shipping-methods/shipping-method-reference.md
 ```
 
-Liferay Commerceは、いくつかの配送方法と運送業者をサポートしています。 配送方法を選択する前に、ストアが使用する [測定単位](./measurement-units.md) を確認してください。
+Liferay Commerceは、いくつかの配送方法と配送業者をサポートしています。 配送方法を選択する前に、ストアが使用する[計量単位](./configuring-shipping-methods/measurement-units.md)を確認してください。
 
 以下のようないくつかの配送方法があります。
 
-* [可変レート](./using-the-variable-rate-shipping-method.md)
-* [均一料金](./using-the-flat-rate-shipping-method.md)
-* [FedEx](./using-the-fedex-shipping-method.md) （加入者）
+* [可変レート](./configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
+* [一律料金](./configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
+* [FedEx](./configuring-shipping-methods/using-the-fedex-shipping-method.md) （契約者）
 
-他の配送方法やキャリアを追加することに関心のあるユーザーは、以下を参照してください [の実装の新送料エンジン](../../developer-guide/implementing-a-new-shipping-engine.md)。
+他の配送方法や配送業者を追加することに関心のあるユーザーは、
 
-配送方法は、国または地域によって制限される場合があります。 詳細は、[配送方法の制限の適用](./applying-shipping-method-restrictions.md)を参照してください。
+新しい出荷エンジンの実装/0>を参照してください。</p> 
 
-<a name="additional-information" />
+配送方法は、国または地域によって制限される場合があります。 詳細は、[配送方法の制限の適用](./configuring-shipping-methods/applying-shipping-method-restrictions.md)を参照してください。
+
+
 
 ```{raw} html
 :file: ../landingpage_template.html
 ```
 
+
+
+
 ```{raw} html
 :file: configuring-shipping-methods/landing.html
 ```
+
+
+<br></br>
+
+
+
+## 追加情報
+
+* [出荷の概要](../order-management/shipments/introduction-to-shipments.md)

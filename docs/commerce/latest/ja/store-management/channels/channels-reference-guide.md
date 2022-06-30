@@ -1,137 +1,105 @@
 # チャネルリファレンスガイド
 
-> Commerce 2.1+
+> コマース2.1以降
 
-この記事では、チャネル管理インターフェースの概要について説明します。 チャネルを作成するには、 [チャネルの管理](./managing-channels.md)参照してください。
-
-<a name="general" />
+この記事では、チャネル管理インターフェースの概要について説明します。 チャネルを作成するには、[チャネルの管理](./managing-channels.md)参照してください。
 
 ## 一般
 
-**General** タブには、通貨、注文ワークフロー、支払い、配送、税金など、多くの重要なチャネル設定があります。
+_General_ タブには、通貨、注文ワークフロー、支払い、配送、税金など、多くの重要なチャネル設定があります。
 
-### Details
+### 詳細
 
-**詳細** セクションでは、チャネルの名前、通貨、および [コマースサイトタイプ](../../starting-a-store/sites-and-site-types.md) が設定されます。
+_詳細_セクションでは、チャネルの名前、通貨、および [コマースサイトの種類](../../starting-a-store/sites-and-site-types.md) が設定されます。
 
 ![［詳細］タブでは、名前、通貨、サイトタイプを設定します。](./channels-reference-guide/images/01.png)
 
 ### ［注文］
 
-ユーザーは、買い手 [と売り手](../../order-management/order-workflows/introduction-to-order-workflows.md)ワークフローを有効にできます。 ユーザーは、ゲストチェックアウトを有効または無効にしたり、注文番号が表示されるかどうか（該当する場合）もできます。
+ユーザーは、[買い手と売り手](../../order-management/order-workflows/introduction-to-order-workflows.md)のワークフローを有効にできます。 ユーザーは、ゲストチェックアウトを有効または無効にしたり、発注書番号が表示されるかどうか（該当する場合）もできます。
 
 ![［注文］タブでは、ワークフローが有効になります。](./channels-reference-guide/images/02.png)
 
 ### 価格
 
-ユーザーは [配送税カテゴリー](../../pricing/configuring-taxes/creating-tax-categories.md)、価格タイプ、および割引目標価格タイプを設定できます。
+ユーザーは [出荷税のカテゴリー](../../pricing/configuring-taxes/creating-tax-categories.md)、価格の種類、および割引目標価格の種類を設定できます。
 
-**価格タイプ** 場合、ユーザーは商品価格を税込み（総額）または税抜き（正味価格）のどちらで表示するかを決定できます。
+_価格タイプ_場合、ユーザーは商品価格を税込み（総額）または税抜き（正味価格）のどちらで表示するかを決定できます。
 
-**割引ターゲット** 場合、ユーザーは、適用される割引が商品の総額または正味価格に基づいて計算されるかどうかを決定できます。
+_割引ターゲット_場合、ユーザーは、適用される割引が商品の総額または正味価格に基づいて計算されるかどうかを決定できます。
 
 ![［価格］タブでは、税のカテゴリと価格を設定します。](./channels-reference-guide/images/03.png)
 
-### 健康診断
+### ヘルスチェック
 
 ヘルスチェックにより、ユーザーは、ストアが機能するために必要なウィジェットの不足など、ストアサイトに関する一般的なセットアップの問題をすばやく修正できます。
 
 ![ヘルスチェックを使用すると、コマースポートレットをすばやく追加したり、手動でサイトを構築した場合は問題を修正したりできます。](./channels-reference-guide/images/04.png)
 
-### 支払い方法
+### 支払方法
 
-ユーザーは、チャネルに使用する [支払方法](../../store-management/configuring-payment-methods/managing-payment-methods.md) を構成できます。 さらに、ユーザーは [カスタム支払いエンジン](../../developer-guide/sales/implementing-a-new-payment-method.md)使用できます。
+ユーザーは、チャネルに使用する[支払方法](../../store-management/configuring-payment-methods/managing-payment-methods.md)を構成できます。 さらに、ユーザーは [カスタム支払いエンジン](../../developer-guide/sales/implementing-a-new-payment-method.md)使用できます。
 
 ![［お支払い方法］セクションでは、使用するお支払い方法を選択できます。](./channels-reference-guide/images/05.png)
 
 ### 配送方法
 
-ユーザーはチャネルの配送方法を設定できます。 デフォルトでは、 [フラットレート](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) が有効になっています。 ユーザーは [可変レート](../../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md) 配送方法を有効にすることもできます。 加入者は [FedEx](../../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md)有効にすることもでき
- 。</p> 
+ユーザーはチャネルの配送方法を設定できます。 デフォルトでは、 [一律料金](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) が有効になっています。 ユーザーは、[可変レート](../../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)配送方法を有効にすることもできます。 サブスクライバーは、 [FedEx](../../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md)を有効にすることもできます。
 
 最後に、ユーザーは [カスタム配送エンジン](../../developer-guide/sales/implementing-a-new-shipping-engine.md)使用できます。
 
 ![［配送方法］セクションでは、使用する配送方法を選択できます。](./channels-reference-guide/images/06.png)
 
-
-
-### 税計算
+### 税の計算
 
 ユーザーはチャネルの税計算を構成できます。 税率の設定の詳細は、 [税の計算のための税率設定](../../pricing/configuring-taxes/setting-rates-for-tax-calculations.md)を参照してください。
 
 ![ユーザーはチャネルの税計算を構成できます。](./channels-reference-guide/images/07.png)
 
-
-
-<a name="type" />
-
-## タイプ
+## 種類
 
 チャネルはDXPサイトに接続できます。 または、チャネルは、Amazonマーケットプレイスなどの非DXPサイトに接続できます。 ここで、ユーザーはチャネルを関連付けるDXPサイトを選択できます。
 
 ![チャネルに関連付けられているサイトを選択します。](./channels-reference-guide/images/10.png)
 
-
-
-<a name="notification-queue" />
-
 ## 通知キュー
 
-Liferay Commerceは、さまざまなイベントによってトリガーされる電子メール通知を送信するように構成できます。 イベントによって通知がトリガーされると（注文など）、通知はチャネルの［**通知キュー**］タブに記録されます。 デフォルトでは、Liferay Commerceインスタンスは、通知が15分ごとに送信されたかどうかを確認し、43200分（30日）後に未送信の通知を削除します。
+Liferay Commerceは、さまざまなイベントによってトリガーされるメール通知設定を送信するように構成できます。 イベントによって通知がトリガーされると（注文など）、通知はチャネルの［ _通知キュー_ ］タブに記録されます。 デフォルトでは、Liferay Commerceインスタンスは、通知が15分ごとに送信されたかどうかを確認し、43200分（30日）後に未送信の通知を削除します。
 
-詳細は、 [コマース通知キュー](../../store-management/sending-emails/configuring-the-commerce-notification-queue.md) 設定の記事を参照してください。
-
-
-
-<a name="notification-templates" />
+詳細は、 [コマース通知キューの設定](../../store-management/sending-emails/configuring-the-commerce-notification-queue.md)の記事を参照してください。
 
 ## 通知テンプレート
 
-通知テンプレートを使用すると、ユーザーはメール通知をカスタマイズして、トリガーイベントを定義できます。
+通知テンプレートを使用すると、ユーザーはメール通知設定をカスタマイズして、トリガーイベントを定義できます。
 
-メール通知の送信について詳しくは、 [ストアメール](../../store-management/sending-emails/store-emails.md)ご覧ください。
+メール通知設定の送信について詳しくは、[ストアメール](../../store-management/sending-emails/store-emails.md)を参照してください。
 
-通知テンプレートの作成と使用の詳細は、 [通知テンプレートの使用](../../store-management/sending-emails/using-notification-templates.md)を参照してください。
+通知テンプレートの作成と使用の詳細は、[通知テンプレートの使用](../../store-management/sending-emails/using-notification-templates.md)を参照してください。
 
 ![通知テンプレートを作成します。](./channels-reference-guide/images/11.png)
 
-
-
-<a name="category-display-pages" />
-
 ## カテゴリ表示ページ
 
-［カテゴリ表示ページ］タブには、ストアサイトで作成されたすべてのカテゴリ表示ページのリストが表示されます。 **カテゴリー表示ページ** 使用すると、ユーザーは、特定のカテゴリーでタグ付けされたすべての商品を表示する特定のDXPサイトページを置き換えることができます。 ユーザーは最初に [商品カテゴリ](../../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)を作成し、それらを目的の商品に関連付けてから、ページを作成する必要があります。
+［カテゴリ表示ページ］タブには、ストアサイトで作成されたすべてのカテゴリ表示ページのリストが表示されます。 _カテゴリー表示ページ_ 使用すると、ユーザーは、特定のカテゴリーでタグ付けされたすべての商品を表示する特定のDXPサイトページを置き換えることができます。 ユーザーは最初に [商品カテゴリ](../../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)を作成し、それらを目的の商品に関連付けてから、ページを作成する必要があります。
 
-DXPサイトページの作成の詳細は、 [ページの作成](https://learn.liferay.com/dxp/latest/ja/site-building/creating_pages.html) を参照してください。 タグとカテゴリの作成の詳細は、 [タグとカテゴリ](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags_and_categories.html) を参照してください。
-
-
-
-<a name="product-display-pages" />
+DXPサイトページの作成の詳細は、 [ページの作成](https://learn.liferay.com/dxp/latest/en/site-building/creating_pages.html)を参照してください。 タグとカテゴリの作成の詳細は、[タグとカテゴリ](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories.html)を参照してください。
 
 ## 商品表示ページ
 
-商品表示ページは、カテゴリ表示ページと同様の前提で動作します。ユーザーは特定のサイトページを作成して、デフォルトのカタログページの代わりに特定の商品を強調表示できます。 **商品表示ページ** タブで、ユーザーはサイトで作成されたすべての商品表示ページのリストを表示できます。 詳細は、[商品表示ページの作成](../../creating-store-content/creating-product-display-pages.md)を参照してください。
-
-
-
-<a name="payment-restrictions" />
+商品表示ページは、カテゴリ表示ページと同様の前提で動作します。ユーザーは特定のサイトページを作成して、デフォルトのカタログページの代わりに特定の商品をハイライト表示できます。 _商品表示ページ_ タブで、ユーザーはサイトで作成されたすべての商品表示ページのリストを表示できます。 詳細は、[商品表示ページの作成](../../creating-store-content/creating-product-display-pages.md)を参照してください。
 
 ## 支払い制限
 
-ユーザーは、 購入者の国に対して、 **制限された** 支払方法を設定することができます。 （請求先住所がリストされていない場合、チャネルは配送先住所を確認します。） 少なくとも一つ、これを行うには [支払方法](../../store-management/configuring-payment-methods/managing-payment-methods.md) を有効にする必要があります。 各国のチェックボックスをオンにして、その国のアカウントがその支払い方法を使用できないようにします。
+ユーザーは、 購入者の国に対して、_制限された_支払方法を設定することができます。 （請求先住所がリストされていない場合、チャネルは配送先住所を確認します。） これを行うには、少なくとも一つの[支払方法](../../store-management/configuring-payment-methods/managing-payment-methods.md)を有効にする必要があります。 各国のチェックボックスをオンにして、その国のアカウントがその支払方法を使用できないようにします。
 
 ![支払い制限](./channels-reference-guide/images/08.png)
 
+## 出荷制限
 
+ユーザーは、購入者の国で出荷方法を _制限する_ ように構成できます。
 
-<a name="shipping-restrictions" />
+![出荷制限](./channels-reference-guide/images/09.png)
 
-## 配送制限
-
-ユーザーは、購入者の国で出荷方法を **制限する** ように構成できます。
-
-![発送制限](./channels-reference-guide/images/09.png)
 
 <!--
 ## Punch Out
@@ -140,11 +108,7 @@ Users can manage their Punch Out procurement systems from here. Purchasing the a
 
 -->
 
-
-
-<a name="additional-information" />
-
 ## 追加情報
 
 * [チャネルを使用した商品の可視性の構成](./configuring-product-visibility-using-channels.md)
-* [注文ワークフローの有効化または無効化](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md)
+* [注文ワークフローの有効化・無効化](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md)

@@ -12,11 +12,11 @@ Liferay Commerce へようこそ！  Liferay Commerceは、あらゆるB2B組織
 * [APIと統合](#apis-and-integrations)
 * [次のステップ](#next-steps)
 
-開始する準備は整いましたか？ [ Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md) してLiferay Commerce **を迅速に起動します** 。
+開始する準備は整いましたか？ [ Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md) してLiferay Commerce _を迅速に起動します_。
 
 ## 最新のストアフロントページとコンテンツ管理
 
-Liferay Commerceには、ストアフロントをセットアップするための幅広いツールが含まれています。 たとえば、新しい検索ツールは商品カタログ専用に設計されていますが、カスタマイズ可能なウィジェットを使用すると、CheckoutやView Cartなどの一般的なUI要素をページに簡単に追加できます。 詳しくは、[ストアフロントの作成](../creating-store-content/creating-your-storefront.md)をご覧ください。
+Liferay Commerceには、ストアフロントをセットアップするための幅広いツールが含まれています。 たとえば、新しい検索ツールは商品カタログ専用に設計されていますが、カスタマイズ可能なウィジェットを使用すると、CheckoutやView Cartなどの一般的なUI要素をページに簡単に追加できます。 詳しくは、[Building a Storefront](../creating-store-content/creating-your-storefront.md)をご覧ください。
 
 ![Liferay Commerceダッシュボード](./introduction-to-liferay-commerce/images/01.png)
 
@@ -58,7 +58,7 @@ Liferay Commerceは、機械学習と予測分析を適用して、提案され�
 
 ## APIと統合
 
-Mulesoftコネクタ、Talendコンポーネント、またはSalesforce、SAP ERP（**Coming Soon**）、またはMS Dynamics NAV（**Coming Soon**）のビルド済みコネクタを使用して、他のビジネスシステムと統合します。
+Mulesoftコネクタ、Talendコンポーネント、またはSalesforce、SAP ERP（_Coming Soon_）、またはMS Dynamics NAV（_Coming Soon_）のビルド済みコネクタを使用して、他のビジネスシステムと統合します。
 
 ## 次のステップ
 

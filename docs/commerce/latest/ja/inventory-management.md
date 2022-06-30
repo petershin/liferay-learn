@@ -17,7 +17,7 @@ toc:
 :maxdepth: 1
 
 inventory-management/introduction-to-managing-inventory.md
-inventory-management/adding-a-new-warehouse.md
+inventory-management/setting-up-commerce-warehouses.md
 inventory-management/setting-inventory-by-warehouse.md
 inventory-management/low-stock-action.md
 inventory-management/availability-estimates.md

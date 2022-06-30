@@ -1,10 +1,8 @@
 # 注文ライフサイクル
 
-注文には、見込みのある取引または過去の取引に関するデータが保存されます。 この記事では、オープンカートから [フルフィルメント注文](../shipments/introduction-to-shipments.md)までの注文ライフサイクルの概要を説明します。
+注文には、見込みのある取引または過去の取引に関するデータが保存されます。 この記事では、オープンカートから [フ処理済み注文](../shipments/introduction-to-shipments.md)までの注文ライフサイクルの概要を説明します。
 
 ![これは、最新の注文ライフサイクルのインフォグラフィックです。](./order-life-cycle/images/01.png)
-
-<a name="liferay-commerce-20" />
 
 ## Liferay Commerce 2.0
 
@@ -18,7 +16,7 @@
 
 ### ステップ2：発注
 
-売り手に情報を提供し、注文の概要を確認した後、買い手は注文を出します。 注文ワークフローが有効になっている場合、送信前に注文が確認されます。 注文が処理されている間、バイヤーは注文のステータスを追跡する [通知](../../store-management/sending-emails/store-emails.md) を受け取ることができます。
+売り手に情報を提供し、注文の概要を確認した後、買い手は注文を出します。 注文ワークフローが有効になっている場合、送信前に注文が確認されます。 注文が処理されている間、バイヤーは注文のステータスを追跡する[通知](../../store-management/sending-emails/store-emails.md)を受け取ることができます。
 
 ### ステップ3：注文の送信
 
@@ -28,12 +26,10 @@
 
 販売者は残りの手順を完了して、注文された商品を購入者に配送します。 注文ステータスの更新、出荷情報、到着予定時刻などの追加情報を注文書に追加できます。 購入者と販売者は、注文が完了したことを通知されます。
 
-<a name="additional-information" />
-
 ## 追加情報
 
 * [注文ワークフローの概要](../order-workflows/introduction-to-order-workflows.md)
 * [注文の処理](./processing-an-order.md)
-* [注文メニュー](./orders-menu-reference-guide.md)
+* [注文メニューリファレンスガイド](./orders-menu-reference-guide.md)
 * [出荷の概要](../shipments/introduction-to-shipments.md)
 * [メールを保存](../../store-management/sending-emails/store-emails.md)

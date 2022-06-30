@@ -1,10 +1,10 @@
 # ダウンロードしたコンテンツウィジェットを利用する
 
-Liferay Commerceには、 **ダウンロードしたコンテンツ** ウィジェットがあり、[仮想商品](../../product-management/creating-and-managing-products/product-types/creating-a-virtual-product.md)として購入したデジタル資産にアクセスしダウンロードできるようになっています。
+Liferay Commerceには、*ダウンロードしたコンテンツ*ウィジェットがあり、[仮想商品](../../product-management/creating-and-managing-products/product-types/creating-a-virtual-product.md)として購入したデジタル資産にアクセスしダウンロードできるようになっています。
 
 ダウンロードしたコンテンツウィジェットを使用するには、以下の手順に従います。
 
-1. 上部メニューの **追加** ボタン(![Add](../../images/icon-add-widget.png))をクリックします。
+1. 上部メニューの*追加*ボタン(![Add](../../images/icon-add-widget.png))をクリックします。
 
 1. ウィジェットセクションで、［Product Downloads］ウィジェットを検索してください。
 
@@ -14,7 +14,7 @@ Liferay Commerceには、 **ダウンロードしたコンテンツ** ウィジ�
 
    ![ダウンロードしたコンテンツウィジェットが有効になり、使用できるようになりました。](./using-the-product-downloads-widget/images/02.png)
 
-これにより、自動的にウィジェットが有効になります。 仮想商品を購入すると、 **アライセンス認証ステータス** に基づいて、ここにアセットが表示されます。
+これにより、自動的にウィジェットが有効になります。 仮想商品を購入すると、 *アライセンス認証ステータス*に基づいて、ここにアセットが表示されます。
 
 | 設定           | 視認性への影響                                  |
 |:------------ |:---------------------------------------- |

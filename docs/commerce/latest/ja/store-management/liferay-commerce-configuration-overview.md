@@ -1,12 +1,12 @@
 # Liferay Commerce設定の概要
 
-Liferay Commerce 3.0の設定は、 ［**グローバルアプリケーション**］ メニューから行えます。
+Liferay Commerce 3.0の設定は、 _［グローバルアプリケーション］_ メニューから行えます。
 
 ![グローバルアプリケーションメニューからCommerce 3.0にアクセスします。](./liferay-commerce-configuration-overview/images/06.png)
 
-［**グローバルアプリケーション**］ メニュー &rarr; ［**コマース**］ に移動します。 管理者は以下を構成できます：
+_［グローバルアプリケーション］_ メニュー &rarr; _［コマース］_に移動します。 管理者は以下を構成できます：
 
-* [チャネル](../store-management/channels/managing-channels.md)
+* [チャンネル](./channels/managing-channels.md)
 * [価格表](../pricing/creating-a-price-list.md)
 * [割引](../pricing/promoting-products/introduction-to-discounts.md)
 * プロモーション
@@ -18,24 +18,22 @@ Liferay Commerce 3.0の設定は、 ［**グローバルアプリケーション
 * [出荷](../order-management/shipments/introduction-to-shipments.md)
 * [素材リスト](../product-management/creating-and-managing-products/products/managing-boms.md)
 * [サブスクリプション](../order-management/subscriptions/managing-subscriptions.md)
-* [通貨](../store-management/currencies/adding-a-new-currency.md)
+* [通貨](./currencies/adding-a-new-currency.md)
 * [在庫](../inventory-management/introduction-to-managing-inventory.md)
 * [倉庫](../inventory-management/warehouse-reference-guide.md)
 * [在庫数の見積もり](../inventory-management/availability-estimates.md)
 
-<a name="liferay-commerce-21-and-below" />
-
 ## Liferay Commerce 2.1以前
 
-Liferay Commerce 2.1の設定は、Liferay ［**商品メニュー**］ のいくつかの場所に分かれています。 Commerceの ［**コントロールパネル**］ ドロップダウンには、Liferay Commerceのインストールに **グローバル** に適用される構成と設定が含まれています。 Commerceの ［**サイトメニュー**］ ドロップダウンには、特定のストアサイトを対象とする構成と設定が含まれています。
+Liferay Commerce 2.1の設定は、Liferay_［商品メニュー］_のいくつかの場所に分かれています。 Commerceの_［コントロールパネル］_ドロップダウンには、Liferay Commerceのインストールに_グローバル_に適用される構成と設定が含まれています。 Commerceの_［サイトメニュー］_ドロップダウンには、特定のストアサイトを対象とする構成と設定が含まれています。
 
 ### Commerceのコントロールパネル
 
-［**コントロールパネル**］ → ［**コマース**］ に移動します。 以下の設定のいずれかに変更を加えると、ストアサイト全体に適用されます。
+_［コントロールパネル］_ → _［コマース］_に移動します。 以下の設定のいずれかに変更を加えると、ストアサイト全体に適用されます。
 
 ![グローバルCommerce設定](./liferay-commerce-configuration-overview/images/01.png)
 
-* [チャネル](../store-management/channels/managing-channels.md)
+* [チャネル](./channels/managing-channels.md)
 * [価格表](../pricing/creating-a-price-list.md)
 * [注文](../order-management/orders/orders-menu-reference-guide.md)
 
@@ -44,9 +42,9 @@ Liferay Commerce 2.1の設定は、Liferay ［**商品メニュー**］ のい�
 ![Commerceのグローバル設定タブ](./liferay-commerce-configuration-overview/images/02.png)
 
 * [在庫数の見積もり](../inventory-management/availability-estimates.md)
-* [新しい通貨を追加する為替レート](../store-management/currencies/adding-a-new-currency.md)
-* [計量単位](../store-management/configuring-shipping-methods/measurement-units.md)
-* [地域](../store-management/adding-regions.md)
+* [新しい通貨の追加](./currencies/adding-a-new-currency.md)
+* [計量単位](./configuring-shipping-methods/measurement-units.md)
+* [地域](./adding-regions.md)
 * [倉庫](../inventory-management/warehouse-reference-guide.md)
 
 ### Commerceのサイト設定
@@ -55,7 +53,7 @@ Liferay Commerce 2.1の設定は、Liferay ［**商品メニュー**］ のい�
 
 次の設定は、選択したストアサイトに限定されます。 ここで行った変更は、同じLiferay Commerceインスタンスでホストされている他のストアには適用されません。
 
-［**コントロールパネル**］ → ［**Store Site**］ → ［**コマース**］ に移動します。
+_［コントロールパネル］_ → _［Store Site］_ → _［コマース］_に移動します。
 
 ![サイトの最小フル設定](./liferay-commerce-configuration-overview/images/03.png)
 
@@ -63,7 +61,7 @@ Liferay Commerce 2.1の設定は、Liferay ［**商品メニュー**］ のい�
 
 * [お知らせ](./sending-emails/using-notification-templates.md)
 * [注文ワークフローの概要](../order-management/order-workflows/introduction-to-order-workflows.md)
-* [支払方法](../store-management/configuring-payment-methods.md)
-* 商品表示ページ
-* [配送方法](../store-management/configuring-shipping-methods/shipping-method-reference.md)
+* [支払方法](./configuring-payment-methods.md)
+* [商品表示ページ](../creating-store-content/creating-product-display-pages.md)
+* [配送方法](./configuring-shipping-methods/shipping-method-reference.md)
 * [サイトのタイプ](../starting-a-store/sites-and-site-types.md)

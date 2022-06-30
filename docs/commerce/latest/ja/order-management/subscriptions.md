@@ -1,9 +1,4 @@
----
-toc:
-- ./subscriptions/managing-subscriptions.md
-- ./subscriptions/subscription-administration-reference-guide.md
----
-# サブスクリプション契約
+# 購読リスト
 
 ```{toctree}
 :maxdepth: 1

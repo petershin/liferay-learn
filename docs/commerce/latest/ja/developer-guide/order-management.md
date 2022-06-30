@@ -4,7 +4,8 @@
 :maxdepth: 1
 
 order-management/commerce-order-engine-overview.md
-order-management/implementing-a-custom-order-status.md
+order-management/implementing a-custom-order-status.md
+order-management/implementing a-custom-notification-type.md
 ```
 
 ```{raw} html

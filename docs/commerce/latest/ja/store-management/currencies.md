@@ -9,9 +9,10 @@ toc:
 ```{toctree}
 :maxdepth: 1
 
+currencies/understanding-the-currency-hierarchy.md
 currencies/adding-a-new-currency.md
-currencies/currencies-reference.md
 currencies/managing-exchange-rates.md
+currencies/currencies-reference.md
 ```
 
 ```{raw} html

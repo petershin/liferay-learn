@@ -1,20 +1,22 @@
 # カート
 
-［Cart］ ページは、ユーザーがカートの内容を管理できるようにする必須ページです。 関連する3つのウィジェット、［**Cart**］、［**コマース・カートコンテンツ合計**］、［**Mini Cart**］ があります。
+カートページでは、カートの中身を管理することができます。 関連する3つのウィジェット、_［カート］_、_［コマース・カートコンテンツ合計］_、_［ミニカーと］_ があります。
 
-［**Cart**］ には、カートの内容が表示されます。 このウィジェットには、数量を変更するための ［**Update**］ ボタンと、カートからアイテムを削除するための ［**削除**］ ボタンが含まれています。
+**［カート］** には、カートの内容が表示されます。 このウィジェットには、数量を変更するための_［アップデート］_ボタンと、カートからアイテムを削除するための_［削除］_ボタンが含まれています。
 
-［**Cart Summary**］ には、カートの小計、適用される税金、合計金額、 ［**チェックアウト**］ ボタンが表示されます。
+**［コマース・カートコンテンツ合計］** には、カートの小計、適用される税金、合計金額、 _［チェックアウト］_ ボタンが表示されます。
 
-![カートの中身](./cart/images/01.png)
+![［コマース・カートコンテンツ合計］ウィジェットには、カートの小計、適用される税金、合計金額、 ［チェックアウト］ ボタンが表示されます。](./cart/images/01.png)
 
-［**Mini Cart**］ には、カートの内容と、Commerceの ［**Cart**］ ウィジェットにリンクしている ［**Edit Cart**］ ボタンが表示されます。 ［**Mini Cart**］ ウィジェットは、 ［**Cart**］ ウィジェットと同じページにデプロイする必要があります。
+**［ミニカート］** には、カートの内容と、Commerceの _［カート］_ ウィジェットにリンクしている _［カートを編集］_ ボタンが表示されます。
 
-![ミニカート](./cart/images/02.png)
+![［ミニカート］ ウィジェットには、カートの内容と、Commerceの ［カート］ ウィジェットにリンクしている ［カートを編集］ ボタンが表示されます。](./cart/images/02.png)
 
-<a name="additional-information" />
+```{note}
+*ミニカート*ウィジェットは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、[Serving Device and Screen Optimized Media](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html)を参照してください。
+```
 
 ## 追加情報
 
-* [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
-* [Creating Pages](https://help.liferay.com/hc/ja/articles/360018171291-Creating-Pages)
+* [ウィジェットリファレンス](../liferay-commerce-widgets/widget-reference.md)
+* [ページの作成](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)

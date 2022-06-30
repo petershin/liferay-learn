@@ -2,9 +2,9 @@
 
 フィックスパックは定期的にリリースされ、バグやセキュリティの修正が含まれています。 カスタムコードがデプロイされているインストールにFix Packをインストールする場合は、本番環境にインストールする前に、テスト環境にカスタムコード付きのFix Packをデプロイしてテストすることをお勧めします。
 
-様々なパッチのタイプについては、 [Patching Liferay](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) と [パッチタイプについて](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html) を参照してください。
+様々なパッチのタイプについては、[Patching Liferay](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html)と[Understanding Patch Types](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html)を参照してください。
 
-パッチを適用する方法については、 [パッチのインストール](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.html) を参照してください。
+パッチを適用する方法については、[パッチのインストール](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.html)を参照してください。
 
 Liferay Commerce 3.0（オープンソース）のユーザーは、Liferay Portal 7.3の新しいリリースを通じて、同じバグおよびセキュリティアップデートを利用できます。
 
@@ -23,24 +23,24 @@ Liferayは、定期的に、オープンソースとエンタープライズの�
 ### ダウンロードとデプロイ
 
 1. 最新のLiferay Commerce `LPKG`をダウンロードします。
-    * エンタープライズサブスクライバーは、最新の`LPKG`を [ヘルプセンター](ttps://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) からダウンロードできます。
-      * サブスクライバーは、Liferay Commerceの注文番号またはアクティベーションキーも必要です。 [プロキシサーバーを介してマーケットプレイスアプリをアクティブにする](https://help.liferay.com/hc/ja/articles/360018427391) を参照してください。
-    * 最新のオープンソース`LPKG`は、 [Liferay Commerceのコミュニティサイト](https://commerce.liferay.dev/download) から取得できます。
+    * エンタープライズサブスクライバーは、最新の`LPKG`を[ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)からダウンロードできます。
+      * サブスクライバーは、Liferay Commerceの注文番号またはアクティベーションキーも必要です。 [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)を参照してください。
+    * 最新のオープンソース`LPKG`は、[Liferay Commerceのコミュニティサイト](https://commerce.liferay.dev/download)から取得できます。
 
 1. `LPKG`を`${liferay.home}/deploy`フォルダにデプロイします。
 1. アプリケーションサーバーコンソールに次のメッセージが表示されることを確認します。
 
     ```
     2019-08-12 21:53:43.847 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:261] Processing Liferay Commerce Enterprise 2.0.5.lpkg
-    2019-08-13 18:12:56.713 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg
-    2019-08-13 18:12:56.715 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg
+    2019-08-13 18:12:56.713 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] /../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg ファイルのインストールを完了するために、ポータルインスタンスの再起動が必要です。
+    2019-08-13 18:12:56.715 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] /../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg ファイルのインストールを完了するために、ポータルインスタンスの再起動が必要です。
     ```
 
 1. アプリケーションサーバーをシャットダウンします。
 
 ### 古いデータを消去してサーバーを再起動する
 
-1. `${liferay.home}/osgi/state`フォルダを削除します。 > OSGiフォルダの詳細は、 [アプリを手動でインストールする](https://help.liferay.com/hc/ja/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps) を参照してください。
+1. `${liferay.home}/osgi/state`フォルダを削除します。 > OSGiフォルダの詳細は、[Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps)を参照してください。
 1. アプリケーションサーバーを起動します。
 1. アプリケーションサーバーのコンソールログで次のようなメッセージを探して、アップグレードプロセスが開始されたことを確認します。
 
@@ -58,6 +58,7 @@ Liferayは、定期的に、オープンソースとエンタープライズの�
     2019-08-13 18:26:26.246 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.upgrade.internal.index.updater.IndexUpdaterUtil#updateIndexes#Updating database indexes for com.liferay.commerce.account.service
     2019-08-13 18:26:26.346 INFO  [main][BaseDB:812] Dropping stale indexes
     2019-08-13 18:26:26.400 INFO  [main][BaseDB:84] Adding indexes
+
     ```
 
     ```
@@ -78,4 +79,4 @@ Liferay Commerceは、Liferay Digital Experience Platform上に構築されて�
 
 * [Liferay Commerce修正プログラム配信方法](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
 * [Liferay Commerceのアップグレード](./upgrading-liferay-commerce.md)
-* [サポート終了](https://www.liferay.com/subscription-services/end-of-life/commerce)
+* [コマース](https://www.liferay.com/subscription-services/end-of-life/commerce)

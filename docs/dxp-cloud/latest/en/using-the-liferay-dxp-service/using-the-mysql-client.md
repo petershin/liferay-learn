@@ -48,10 +48,10 @@ The default user can only perform read queries on the database, and cannot manip
 However, if it is *critical* to be able to manipulate data in the database, you can login using the database credentials by typing this command into the shell (instead of only typing `mysql`):
 
 ```bash
-mysql -u <user_name> -p <database_name>
+mysql -u ${LCP_SECRET_DATABASE_USER} -p${LCP_SECRET_DATABASE_PASSWORD}
 ```
 
-You can find the database name, user name, and password on your `portal.properties` file.
+You can find the database name, user name, and password in your `database` service's [secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.html?highlight=secrets#viewing-and-modifying-an-existing-secret).
 
 ### Changing the Read-Only Database Password
 

@@ -1,6 +1,6 @@
 # 割引について
 
-割引は_［グローバルアプリケーション］_ &rarr; _［コマース］_の_［割引］_メニューで作成されます。 ユーザーは、次のような複数の割引タイプとインセンティブを作成できます。
+割引は ［**グローバルアプリケーション**］ &rarr; ［**コマース**］ の ［**割引**］ メニューで作成されます。 ユーザーは、次のような複数の割引タイプとインセンティブを作成できます。
 
 * 特定の商品の価格を下げる
 * 送料無料を提供
@@ -8,7 +8,7 @@
 * 一定期間プロモーションをスケジュールする
 
 ```{tip}
-割引は*価格表*とは異なります。 価格の詳細については、[Introduction to Pricing](../introduction-to-pricing.md)、 [Creating a Price List](../creating-a-price-list.md)、[Using Price Tiers](../using-price-tier.md)をご覧ください。
+割引は*価格表*とは異なります。 価格の詳細については、 [価格の概要](../introduction-to-pricing.md) 、 [価格表の作成](../creating-a-price-list.md) 、[Using Price Tiers](../using-price-tier.md)をご覧ください。
 ```
 
 ```{note}
@@ -36,7 +36,7 @@ Commerce 2.1以前の場合は、［*コントロールパネル*］から［*Co
 
 ![クーポンコード機能をアクティブにし、この割引種類のクーポンコードを入力します。](./introduction-to-discounts/images/02.png)
 
-クーポンコードを受け入れるには、_コマース・クーポンコード_ウィジェットをストアの[チェックアウト](../../creating-store-content/commerce-storefront-pages/checkout.md)ページにデプロイする必要があります。 （ストアサイトを構築するために [Minium accelerator](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) を使用した場合、チェックアウトページは自動的に作成されます。） この例では、顧客が注文を確認しながらクーポンコードを入力できるように、 _コマース・クーポンコード_ウィジェットがページに配置されています。
+クーポンコードを受け入れるには、 **コマース・クーポンコード** ウィジェットをストアの[チェックアウト](../../creating-store-content/commerce-storefront-pages/checkout.md)ページにデプロイする必要があります。 （ストアサイトを構築するために [Minium accelerator](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) を使用した場合、チェックアウトページは自動的に作成されます。） この例では、顧客が注文を確認しながらクーポンコードを入力できるように、 **コマース・クーポンコード** ウィジェットがページに配置されています。
 
 ![コマース・クーポンコードウィジェットをチェックアウトページに配置します。](./introduction-to-discounts/images/07.png)
 
@@ -66,11 +66,11 @@ Commerce 2.1以前の場合は、［*コントロールパネル*］から［*Co
 | これらの製品をすべて所有   | 割引を受けるには、注文に特定のすべての商品が含まれている必要があります。                  |
 | これらの製品のいずれかを所有 | 注文には、割引を受けるために、指定された商品のリストから少なくとも1つの商品が含まれている必要があります。 |
 
-割引ルールは、_［ ルール］_タブに追加されます。 また、開発者は可能 [新しい割引ルール実装](../../developer-guide/promotions/adding-a-new-discount-rule-type.md)することも可能です。
+割引ルールは、 ［**ルール**］ タブに追加されます。 また、開発者は可能 [新しい割引ルール実装](../../developer-guide/promotions/adding-a-new-discount-rule-type.md)することも可能です。
 
 ![割引ルールを追加します。](./introduction-to-discounts/images/04.png)
 
-_［Has all of these products］_または_［Has one of these products］_割引ルールを使用する場合は、カタログ内のどの商品が割引の対象となるかを選択します。
+［**Has all of these products**］ または ［**Has one of these products**］ 割引ルールを使用する場合は、カタログ内のどの商品が割引の対象となるかを選択します。
 
 ![割引ルールタイプのドロップダウン](./introduction-to-discounts/images/05.png)
 

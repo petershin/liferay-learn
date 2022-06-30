@@ -1,20 +1,20 @@
 # ミニカートウィジェットの使用
 
-Liferay Commerceには、現在のカートステータスの概要をすばやく提供する*ミニカート*ウィジェットが付属しています。
+Liferay Commerceには、現在のカートステータスの概要をすばやく提供する **ミニカート** ウィジェットが付属しています。
 
 ```{important}
 ミニカートウィジェットは、MiniumやSpeedwellなどのアクセラレータにあるカスタムミニカートコンポーネントとは異なります。
 ```
 
 ```{note}
-*ミニカート*ウィジェットとカスタムミニカートコンポーネントは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、[Serving Device and Screen Optimized Media](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html)を参照してください。
+*ミニカート*ウィジェットとカスタムミニカートコンポーネントは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、 [Serving Device and Screen Optimized Media](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) を参照してください。
 ```
 
 ## ミニカートウィジェットをページに追加する
 
-1. トップメニューから［*Add*］（![Add Widget](../../images/icon-add-widget.png)）ボタンをクリックします。
+1. トップメニューから［**Add**］（![Add Widget](../../images/icon-add-widget.png)）ボタンをクリックします。
 
-1. ［Widgets］セクションで、*ミニカート*ウィジェットを検索します。
+1. ［Widgets］セクションで、 **ミニカート** ウィジェットを検索します。
 
    ![［Widgets］セクションでミニカートウィジェットを検索します。](./using-the-mini-cart-widget/images/01.png)
 

@@ -4,21 +4,21 @@
 
 新しいカタログを作成するには：
 
-1. _グローバルメニュー_（![Applications Menu icon](../../images/icon-applications-menu.png)）ボタンをクリックし、_［Commerce］_をクリックします。
-1. _［Catalogs］_をクリックします。
+1. **グローバルメニュー**（![Applications Menu icon](../../images/icon-applications-menu.png)）ボタンをクリックし、 ［**Commerce**］ をクリックします。
+1. ［**Catalogs**］ をクリックします。
 
     ![Commerceセクションの「カタログ」に移動します。](./creating-a-new-catalog/images/03.png)
 
 1. 追加（![Add icon](../../images/icon-add.png)）ボタンをクリックして、新しいカタログを追加します。
 1. 次のように入力します：
 
-    * **Name**：医療用品
-    * **Default カタログ Language**：（ご使用の言語）（たとえば、_English (United States)_）
-    * **Currency**：（ストアの通貨）（_US Dollar_）
+    ***Name** ：医療用品
+    ***Default カタログ Language** ：（ご使用の言語）（たとえば、 **English (United States**)）
+    ***Currency** ：（ストアの通貨）（**US Dollar**）
 
     ![空白のカタログを新規に追加します。](./creating-a-new-catalog/images/04.png)
 
-1. 完了したら、_［Submit］_をクリックします。
+1. 完了したら、 ［**Submit**］ をクリックします。
 
 新しいカタログが作成されました。
 
@@ -26,17 +26,17 @@
 
 新しいカタログを作成するには：
 
-1. _［コントロールパネル］_ → _［コマース］_ → _［カタログ］_に移動します。
+1. ［**コントロールパネル**］ → ［**コマース**］ → ［**カタログ**］ に移動します。
 1. 追加（![Add icon](../../images/icon-add.png)）ボタンをクリックして、新しいカタログを追加します。
 1. 次のように入力します：
 
-    * **Name**：医療用品
-    * **Default Catalog Language**：（ご使用の言語）（たとえば、_English (United States)_）
-    * **Currency**：（ストアの通貨）（_US Dollar_）
+    ***Name** ：医療用品
+    ***Default Catalog Language** ：（ご使用の言語）（たとえば、 **English (United States**)）
+    ***Currency** ：（ストアの通貨）（**US Dollar**）
 
     ![新しいカタログ](./creating-a-new-catalog/images/01.png)
 
-1. _［保存］_ をクリックします。
+1. ［**保存**］ をクリックします。
 
 新しいカタログが作成され、新しい商品を追加するときに選択できるようになります。
 

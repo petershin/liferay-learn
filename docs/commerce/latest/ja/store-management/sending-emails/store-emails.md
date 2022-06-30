@@ -3,12 +3,12 @@
 Liferay Commerceは、ストアの様々なイベントトリガーに対してメール通知を送信するように設定することができます。 テンプレートはカスタマイズ可能で、メールの内容を定義します。 OOTBワイルドカードを使用したり、送信先のメールアドレスを指定することで、1つのイベントを異なるターゲットにメールを送信するよう設定することができます。 それぞれについて、通知テンプレートを使用する必要があります。
 
 ```{note}
-Liferay Commerceの通知機能を使用するには、最初にLiferay Digital Experience Platform（DXP）のメール設定を構成します。 詳しくは、[Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)をご覧ください。
+Liferay Commerceの通知機能を使用するには、最初にLiferay Digital Experience Platform（DXP）のメール設定を構成します。 詳しくは、 [メールの構成](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/setting-up-liferay/configuring-mail.html) をご覧ください。
 ```
 
 ## ストアメール通知設定の構成
 
-Liferay Commerceのメール設定が構成されたら、 _［コントロールパネル］_ &rarr; _［コマース］_ &rarr; _［チャネル］_ に移動して、ストアのメール通知設定を作成します。 メール通知設定は[チャネル](../../store-management/channels/introduction-to-channels.md)ごとに構成されます。 [アクセラレータ](../../starting-a-store/accelerators.md)を使用すると、最初にストア、カタログ、およびチャネルが作成されます。
+Liferay Commerceのメール設定が構成されたら、 ［**コントロールパネル**］ &rarr; ［**コマース**］ &rarr; ［**チャネル**］ に移動して、ストアのメール通知設定を作成します。 メール通知設定は[チャネル](../../store-management/channels/introduction-to-channels.md)ごとに構成されます。 [アクセラレータ](../../starting-a-store/accelerators.md)を使用すると、最初にストア、カタログ、およびチャネルが作成されます。
 
 ![すぐに使える通知テンプレート。](./store-emails/images/02.png)
 
@@ -33,7 +33,7 @@ Liferay Commerceのメール設定が構成されたら、 _［コントロー�
 
 ## 通知キューの表示
 
-チャネルの_［Notification Queue］_ですべてのメール通知を表示できます。 ここでは、イベントによってトリガーされたメールのステータスを確認できます。
+チャネルの ［**Notification Queue**］ ですべてのメール通知を表示できます。 ここでは、イベントによってトリガーされたメールのステータスを確認できます。
 
 ![通知キューには、トリガーされた通知のリストが含まれています。](./store-emails/images/03.png)
 
@@ -41,9 +41,9 @@ Liferay Commerceのメール設定が構成されたら、 _［コントロー�
 
 ## メール通知テンプレートのカスタマイズ
 
-_メール設定_と_本文_フィールドのキー値に置き換えられる独自のテキストとワイルドカード値で通知テンプレートをカスタマイズすることが可能です。 ワイルドカードには、お客様の名前、注文ID、配送先住所、請求先住所、オーダー内の商品リストが含まれます。
+**メール設定** と **本文** フィールドのキー値に置き換えられる独自のテキストとワイルドカード値で通知テンプレートをカスタマイズすることが可能です。 ワイルドカードには、お客様の名前、注文ID、配送先住所、請求先住所、オーダー内の商品リストが含まれます。
 
-たとえば、_［メールの本文］_フィールドには次のものが含まれます。
+たとえば、 ［**メールの本文**］ フィールドには次のものが含まれます。
 
 ```
 [%ORDER_CREATOR%]様、
@@ -57,7 +57,7 @@ _メール設定_と_本文_フィールドのキー値に置き換えられる�
 
 ## 注文通信履歴の表示
 
-注文に関連するメール通知は追跡され、注文の*［メール］*タブで確認することができます。 _［コントロールパネル］_ → _［コマース］_ → _［注文］_に移動します。 注文IDをクリックし、次に_［Email］_タブをクリックします。 詳細は、[注文情報](../../order-management/orders/order-information.md)を参照してください。
+注文に関連するメール通知は追跡され、注文の ［**メール**］ タブで確認することができます。 ［**コントロールパネル**］ → ［**コマース**］ → ［**注文**］ に移動します。 注文IDをクリックし、次に ［**Email**］ タブをクリックします。 詳細は、[注文情報](../../order-management/orders/order-information.md)を参照してください。
 
 ![トリガーされた通知は、注文の［メール］タブで確認することができます。](./store-emails/images/04.png)
 

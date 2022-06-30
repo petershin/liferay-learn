@@ -1,6 +1,6 @@
 # Liferay Commerceの概要
 
-Liferay Commerce へようこそ！  Liferay Commerceは、あらゆるB2B組織の困難で複雑なニーズを満たすためにゼロから構築されたデジタルコマースプラットフォームです。 Liferay DXPのエンタープライズ基盤を使用して、Liferay Commerceは、完全に統合されたWebコンテンツ管理と業界をリードするポータル機能の能力と柔軟性を備えています。 LiferayのDXPの詳細は、この [記事](https://help.liferay.com/hc/en-us/articles/360028818552-Introduction-to-The-Liferay-Distinction)を参照してください。
+Liferay Commerce へようこそ！  Liferay Commerceは、あらゆるB2B組織の困難で複雑なニーズを満たすためにゼロから構築されたデジタルコマースプラットフォームです。 Liferay DXPのエンタープライズ基盤を使用して、Liferay Commerceは、完全に統合されたWebコンテンツ管理と業界をリードするポータル機能の能力と柔軟性を備えています。 LiferayのDXPの詳細は、この [記事](https://help.liferay.com/hc/ja/articles/360028818552-Introduction-to-The-Liferay-Distinction) を参照してください。
 
 ## 概要
 
@@ -12,7 +12,7 @@ Liferay Commerce へようこそ！  Liferay Commerceは、あらゆるB2B組織
 * [APIと統合](#apis-and-integrations)
 * [次のステップ](#next-steps)
 
-開始する準備は整いましたか？ [ Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md) してLiferay Commerce _を迅速に起動します_。
+開始する準備は整いましたか？ [ Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md) してLiferay Commerce **を迅速に起動します** 。
 
 ## 最新のストアフロントページとコンテンツ管理
 
@@ -58,7 +58,7 @@ Liferay Commerceは、機械学習と予測分析を適用して、提案され�
 
 ## APIと統合
 
-Mulesoftコネクタ、Talendコンポーネント、またはSalesforce、SAP ERP（_Coming Soon_）、またはMS Dynamics NAV（_Coming Soon_）のビルド済みコネクタを使用して、他のビジネスシステムと統合します。
+Mulesoftコネクタ、Talendコンポーネント、またはSalesforce、SAP ERP（**Coming Soon**）、またはMS Dynamics NAV（**Coming Soon**）のビルド済みコネクタを使用して、他のビジネスシステムと統合します。
 
 ## 次のステップ
 

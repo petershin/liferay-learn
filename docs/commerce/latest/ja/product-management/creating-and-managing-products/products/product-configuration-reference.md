@@ -49,12 +49,12 @@
 |:-------- |:----------------------------------------- |
 | 公開済み     | カタログ上での商品の表示と販売を有効にする                     |
 | 公開開始日時   | 商品がカタログで最初に販売可能になった日付                     |
-| 有効期限     | *[Never Expire]*がオフになっている場合、商品の販売終了日を決定する |
+| 有効期限     | [**Never Expire**] がオフになっている場合、商品の販売終了日を決定する |
 | 期限を設定しない | 商品の有効期限をスケジュールできるかどうかを決定する                |
 
 ## オプション
 
-商品オプションは、商品にカスタムフィールドを追加する便利な方法です。 オプションを利用して、属性（サイズ、数量、色、素材など）やバンドルなどに基づいた商品バリアントを作成することができます。 詳細は、[Using Product Options](./using-product-options.md)を参照してください。
+商品オプションは、商品にカスタムフィールドを追加する便利な方法です。 オプションを利用して、属性（サイズ、数量、色、素材など）やバンドルなどに基づいた商品バリアントを作成することができます。 詳細は、 [商品オプションの使用](./using-product-options.md) を参照してください。
 
 ![商品オプションを作成します。](./product-configuration-reference/images/02.png)
 
@@ -65,9 +65,9 @@
 
 ## SKU
 
-SKUは、商品のバリアントを表します。 詳しくは、 [Creating SKUs for Product Variants](./creating-skus-for-product-variants.md)を参照してください。
+SKUは、商品のバリアントを表します。 詳しくは、 [商品バリアントのSKU作成](./creating-skus-for-product-variants.md) を参照してください。
 
-デフォルトでは、商品のSKUは親商品の仕様と構成を継承します。 しかし、これらの設定の一部は、個別に上書きすることができます。 詳細は、[Overriding Product Level Information](./overriding-product-level-information.md)を参照してください。
+デフォルトでは、商品のSKUは親商品の仕様と構成を継承します。 しかし、これらの設定の一部は、個別に上書きすることができます。 詳細は、 [商品レベルの情報を上書きする](./overriding-product-level-information.md) を参照してください。
 
 ![商品バリアントに対して複数のSKUを生成します。](./product-configuration-reference/images/03.png)
 
@@ -95,7 +95,7 @@ SKUは、商品のバリアントを表します。 詳しくは、 [Creating SK
 
 ## 閲覧可能か
 
-デフォルトでは、商品はすべてのチャネルとカタログに表示されますが、特定のチャネルやアカウントグループに表示を制限することもできます。 詳細は、[Configuring Product Visibility Using Channels](../../../store-management/channels/configuring-product-visibility-using-channels.md)および[Configuring Product Visibility Using Account Groups](./configuring-product-visibility-using-account-groups.md)を参照してください。
+デフォルトでは、商品はすべてのチャネルとカタログに表示されますが、特定のチャネルやアカウントグループに表示を制限することもできます。 詳細は、 [チャネルを使用した商品の可視性の構成](../../../store-management/channels/configuring-product-visibility-using-channels.md) および [アカウントグループを使用した商品の可視性の構成](./configuring-product-visibility-using-account-groups.md) を参照してください。
 
 ![商品の可視性の管理](./product-configuration-reference/images/08.png)
 

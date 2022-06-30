@@ -28,7 +28,7 @@ For example, a B2B company can give everyone in their sales network access to th
 
 ![すぐに使用できるいくつかの組織の役割があります。](./using-organizations-to-create-a-sales-network/images/02.png)
 
-アクセス許可のコレクションを各役割に割り当てると、Liferay Commerce内でのその役割のアクセスが定義されます（その後、ユーザーに適用できます）。 権限の例には次のものが含まれます。サブ組織（地域など）、アカウントデータ、注文履歴の表示。注文を管理し、役割を割り当てます。 権限の詳細は、 [ロールの権限の定義](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions) 参照してください。
+アクセス許可のコレクションを各役割に割り当てると、Liferay Commerce内でのその役割のアクセスが定義されます（その後、ユーザーに適用できます）。 権限の例には次のものが含まれます。サブ組織（地域など）、アカウントデータ、注文履歴の表示。注文を管理し、役割を割り当てます。 権限の詳細は、 [ロールの権限の定義](https://help.liferay.com/hc/ja/articles/360018174391-Defining-Role-Permissions) 参照してください。
 
 ![各役割には、その役割に定義された権限を持たせることができます。](./using-organizations-to-create-a-sales-network/images/03.png)
 
@@ -51,6 +51,6 @@ For example, a B2B company can give everyone in their sales network access to th
 
 * [組織の作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/creating-and-managing-organizations.html)
 * [新しい組織タイプの追加](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/adding-a-new-organization-type.html)
-* [役割の管理](https://help.liferay.com/hc/en-us/articles/360018174371-Managing-Roles)
-* [ロール権限の定義](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions)
+* [役割の管理](https://help.liferay.com/hc/ja/articles/360018174371-Managing-Roles)
+* [ロール権限の定義](https://help.liferay.com/hc/ja/articles/360018174391-Defining-Role-Permissions)
 * [アカウントへの組織の追加](./adding-organizations-to-accounts.md)

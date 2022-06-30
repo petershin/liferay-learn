@@ -1,8 +1,8 @@
 # 新しい支払い方法の実装
 
-このチュートリアルでは、[CommercePaymentMethod](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java)インターフェイスを実装して、新しい支払い方法を追加する方法を示します。
+このチュートリアルでは、 [CommercePaymentMethod](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java) インターフェイスを実装して、新しい支払い方法を追加する方法を示します。
 
-支払方法とは、顧客が注文に対して支払う様々な方法を表します。 Liferay Commerceは、 [Authorize.Net](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java)、[Mercanet](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java)、[Money Order](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java)、[PayPal](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java)などのいくつかのすぐに使える支払い手段を提供します。
+支払方法とは、顧客が注文に対して支払う様々な方法を表します。 Liferay Commerceは、 [Authorize.Net](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java) 、 [Mercanet](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java) 、 [Money Order](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java) 、 [PayPal](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java) などのいくつかのすぐに使える支払い手段を提供します。
 
 ![すぐに使える支払方法](./implementing-a-new-payment-method/images/01.png "すぐに使える支払方法")
 
@@ -20,10 +20,10 @@
 
 次に、以下の手順に従います。
 
-1. [Acme Commerce Payment Method](./liferay-b1c3.zip)をダウンロードし、解凍してください。
+1. [Acme Commerce Payment Method](./liferay-b1c3.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-b1c3.zip -O
+    curl https://learn.liferay.com/commerce/latest/ja/developer-guide/sales/liferay-b1c3.zip -O
     ```
 
     ```bash
@@ -46,7 +46,7 @@
     STARTED com.acme.b1c3.impl_1.0.0
     ```
 
-1. サンプルの支払方法が追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次にアプリケーションメニュー (![Applications Menu](../../images/icon-applications-menu.png))をクリックし、_［コマース］_ → _［Channels］_に移動します。その後、_［Payment Methods］_セクションまでスクロールします。
+1. サンプルの支払方法が追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次にアプリケーションメニュー (![Applications Menu](../../images/icon-applications-menu.png))をクリックし、 ［**コマース**］ → ［**Channels**］ に移動します。その後、 ［**Payment Methods**］ セクションまでスクロールします。
 
 ```{note}
 Liferay Commerce 2.1以前のバージョンでは、［*サイト管理*］ → ［*コマース*］ → ［*設定*］ → ［*支払方法*］に移動します。
@@ -71,7 +71,7 @@ Liferay Commerce 2.1以前のバージョンでは、［*サイト管理*］ →
 )
 public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 ```
-> Liferay Commerceが[支払方法レジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$］/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java)で新しい支払方法を他の支払方法と区別できるように、支払方法に個別のキーを提供することが重要です。 すでに使用されているキーを再利用すると、既存の関連付けられている支払方法が上書きされます。
+> Liferay Commerceが [支払方法レジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java) で新しい支払方法を他の支払方法と区別できるように、支払方法に個別のキーを提供することが重要です。 すでに使用されているキーを再利用すると、既存の関連付けられている支払方法が上書きされます。
 
 ### `CommercePaymentMethod`インターフェイスを確認する
 
@@ -81,7 +81,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
     public String getDescription(Locale locale);
 ```
 
-> これにより、_［支払い方法］_管理ページの「説明」列にデータが入力されます。 言語キーで説明を取得する際のリファレンスについては、[B1C3CommercePaymentMethod.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-new-payment-method/resources/liferay-b1c3.zip/b1c3-impl/src/main/java/com/acme/b1c3/internal/commerce/payment/method/B1C3CommercePaymentMethod.java)の実装を参照してください。
+> これにより、 ［**支払い方法**］ 管理ページの「説明」列にデータが入力されます。 言語キーで説明を取得する際のリファレンスについては、 [B1C3CommercePaymentMethod.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-new-payment-method/resources/liferay-b1c3.zip/b1c3-impl/src/main/java/com/acme/b1c3/internal/commerce/payment/method/B1C3CommercePaymentMethod.java) の実装を参照してください。
 
 ```java
     public String getKey();
@@ -92,7 +92,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
     public String getName(Locale locale);
 ```
 
-> これにより、_［支払い方法］_管理ページの「Name」列にデータが入力されます。 このメソッドは、`getDescription`メソッドと同様に動作します。
+> これにより、 ［**支払い方法**］ 管理ページの「Name」列にデータが入力されます。 このメソッドは、`getDescription`メソッドと同様に動作します。
 
 ```java
     public int getPaymentType();
@@ -138,7 +138,7 @@ public CommercePaymentResult processPayment(
         Collections.emptyList(), true);
 }
 ```
-> このメソッドにカスタム支払ロジックを実装します。 `CommercePaymentResult`には、支払の処理に関連する情報を格納する必要があります。 詳細は、[CommercePaymentResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java)を参照してください。
+> このメソッドにカスタム支払ロジックを実装します。 `CommercePaymentResult`には、支払の処理に関連する情報を格納する必要があります。 詳細は、 [CommercePaymentResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java) を参照してください。
 
 #### 支払完了ロジックを実装する
 
@@ -162,26 +162,26 @@ public CommercePaymentResult completePayment(
         Collections.emptyList(), true);
 }
 ```
-> このメソッドにカスタム支払完了ロジックを実装します。  `CommercePaymentResult`は、支払いプロセスの完了に関連する情報を格納するコンテナです。 詳細は、[CommercePaymentResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java)を参照してください。
+> このメソッドにカスタム支払完了ロジックを実装します。  `CommercePaymentResult`は、支払いプロセスの完了に関連する情報を格納するコンテナです。 詳細は、 [CommercePaymentResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java) を参照してください。
 
 #### オプションのメソッドを実装する
 
-購読、定期的な支払、払い戻しなど、追加の機能を提供するために実装できる追加のメソッドがあります。 これらは、[CommercePaymentMethod.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java)で確認することができます。 これらのメソッドはペアで提供されます。1つは有効にするメソッドで、もう1つは特定の機能を実装するメソッドです。
+購読、定期的な支払、払い戻しなど、追加の機能を提供するために実装できる追加のメソッドがあります。 これらは、 [CommercePaymentMethod.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java) で確認することができます。 これらのメソッドはペアで提供されます。1つは有効にするメソッドで、もう1つは特定の機能を実装するメソッドです。
 
-これらのメソッドの多くは、オンラインAPIを使用した支払方法にとって重要です。 オンライン決済方法の例として、[PayPalCommercePaymentMethod](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java)を参照してください。
+これらのメソッドの多くは、オンラインAPIを使用した支払方法にとって重要です。 オンライン決済方法の例として、 [PayPalCommercePaymentMethod](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java) を参照してください。
 
 この例では、これらのオプションのメソッドをオーバーライドしていません。
 
 #### 言語キーを`Language.properties`に追加する
 
-モジュール内の[Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-new-payment-method/resources/liferay-b1c3.zip/b1c3-impl/src/main/resources/content/Language.properties)ファイルに言語キーとその値を追加します。
+モジュール内の [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-new-payment-method/resources/liferay-b1c3.zip/b1c3-impl/src/main/resources/content/Language.properties) ファイルに言語キーとその値を追加します。
 
 ```properties
 b1c3-commerce-payment-method=B1C3 Commerce Payment Method
 pay-via-b1c3-commerce-payment-method=Pay via B1C3 commerce payment method.
 ```
 
-> 詳細は、[アプリケーションのローカライズ](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)を参照してください。
+> 詳細は、 [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application) を参照してください。
 
 ## まとめ
 
@@ -189,4 +189,4 @@ pay-via-b1c3-commerce-payment-method=Pay via B1C3 commerce payment method.
 
 ## 追加情報
 
-* [アプリケーションのローカライズ](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

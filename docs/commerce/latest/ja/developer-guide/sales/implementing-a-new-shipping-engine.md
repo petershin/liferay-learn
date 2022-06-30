@@ -1,8 +1,8 @@
 # 新しい出荷エンジンの実装
 
-このチュートリアルでは、[CommerceShippingEngine](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceShippingEngine.java)インターフェイスを実装して、カスタムの出荷エンジンを追加する方法を示します。
+このチュートリアルでは、 [CommerceShippingEngine](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceShippingEngine.java) インターフェイスを実装して、カスタムの出荷エンジンを追加する方法を示します。
 
-出荷エンジンは配送オプションを処理して、ユーザーに表示されるオプション（価格など）を決定します。 Liferay Commerceは、[一律料金エンジン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java)、[可変レートエンジン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/ByWeightCommerceShippingEngine.java)、[FedExエンジン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-shipping-engine-fedex/src/main/java/com/liferay/commerce/shipping/engine/fedex/internal/FedExCommerceShippingEngine.java)の3つの出荷エンジンをすぐに利用できるようにしました。
+出荷エンジンは配送オプションを処理して、ユーザーに表示されるオプション（価格など）を決定します。 Liferay Commerceは、 [一律料金エンジン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java) 、 [可変レートエンジン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/ByWeightCommerceShippingEngine.java) 、 [FedExエンジン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-shipping-engine-fedex/src/main/java/com/liferay/commerce/shipping/engine/fedex/internal/FedExCommerceShippingEngine.java) の3つの出荷エンジンをすぐに利用できるようにしました。
 > FedEx配送エンジンは、Commerce Enterpriseの加入者のみが利用できます。
 
 ![すぐに使える配送方法](./implementing-a-new-shipping-engine/images/01.png "すぐに使える配送方法")
@@ -50,7 +50,7 @@
 1. サンプルの出荷エンジンが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次に、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、_［コマース］_→_［Channels］_に移動します。 配送方法のセクションには、出荷エンジンを代表する新しい配送方法（「割引レート」）が表示されます。
 
 ```{note}
-Commerce 2.1以前のバージョンでは、［*サイト管理* ］→［*コマース*］→［*設定*］→［*配送方法*］に移動して配送方法を見つけます。
+Commerce 2.1以前のバージョンでは、［**サイト管理**］→［**コマース**］→［**設定**］→［**配送方法**］に移動して配送方法を見つけます。
 ```
 
 ![新しい配送方法](./implementing-a-new-shipping-engine/images/02.png "新しい配送方法")
@@ -135,7 +135,7 @@ public List<CommerceShippingOption> getCommerceShippingOptions(
             _commerceShippingFixedOptionLocalService.
                 getCommerceShippingFixedOptions(
                     commerceShippingMethod.getCommerceShippingMethodId(),
-                    QueryUtil.ALL_POS, QueryUtil.ALL_POS);
+                    QueryUtil.ALL **POS, QueryUtil.ALL** POS);
 
         for (CommerceShippingFixedOption commerceShippingFixedOption :
                 commerceShippingFixedOptions) {
@@ -194,7 +194,7 @@ List<CommerceShippingFixedOption> commerceShippingFixedOptions =
     _commerceShippingFixedOptionLocalService.
         getCommerceShippingFixedOptions(
             commerceShippingMethod.getCommerceShippingMethodId(),
-            QueryUtil.ALL_POS, QueryUtil.ALL_POS);
+            QueryUtil.ALL **POS, QueryUtil.ALL** POS);
 
 for (CommerceShippingFixedOption commerceShippingFixedOption :
         commerceShippingFixedOptions) {

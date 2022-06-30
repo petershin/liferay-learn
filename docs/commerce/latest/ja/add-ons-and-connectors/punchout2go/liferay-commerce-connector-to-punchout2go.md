@@ -2,7 +2,7 @@
 
 > サブスクリプションが必要です。
 
-Liferayは、ユーザーの既存のPunchOut2GoインフラとCommerceを統合できるPunchOut2Goコネクターを備えています。 このコネクターは、LPKGファイルとして [Liferayヘルプセンタ](http://customer.liferay.com/downloads)からダウンロードできます。<!--!\[Punch Out Flow Diagram\](./liferay-commerce-connector-to-punchout2go/images/01.png) -->```{important}
+Liferayは、ユーザーの既存のPunchOut2GoインフラとCommerceを統合できるPunchOut2Goコネクターを備えています。 このコネクターは、LPKGファイルとして [Liferayヘルプセンタ](http://customer.liferay.com/downloads)からダウンロードできます。 <!--!\[Punch Out Flow Diagram\](./liferay-commerce-connector-to-punchout2go/images/01.png) --> ```{important}
 PunchOut2Goコネクターを使用するには、Liferay Commerce 2.1.2およびLiferay DXP 7.1 FP18、または7.2 FP6が必要です。
 ```
 
@@ -21,12 +21,12 @@ PunchOut2Goコネクターを使用するには、Liferay Commerce 2.1.2およ�
     2020-07-24 22:10:01.926 INFO [fileinstall-../../liferay-portal-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:209] ファイルのインストールを完了するには、ポータルインスタンスを再起動しなければなりません。/../../liferay-portal-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20Connector%20to%20PunchOut2Go%20-%20Impl.lpkg`
     ```
 
-1. アプリケーションサーバーを再起動します。<!-- 1. Verify that the following message displays in the application server console:
+1. アプリケーションサーバーを再起動します。 <!-- 1. Verify that the following message displays in the application server console:
 
     ```
      [Success message]
     ```
--->サーバーの再起動が完了すると、コネクターがアクティブになり、設定できるようになります。
+--> サーバーの再起動が完了すると、コネクターがアクティブになり、設定できるようになります。
 
 ## コネクターの設定
 

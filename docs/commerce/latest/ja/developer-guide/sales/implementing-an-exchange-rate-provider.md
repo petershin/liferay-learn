@@ -1,8 +1,8 @@
 # カスタム為替レートプロバイダーの実装
 
-このチュートリアルでは、 [ExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/util/ExchangeRateProvider.java)インターフェイスを実装して、カスタム為替レートプロバイダーを追加する方法を示します。
+このチュートリアルでは、 [ExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/util/ExchangeRateProvider.java) インターフェイスを実装して、カスタム為替レートプロバイダーを追加する方法を示します。
 
-為替レートプロバイダーは、データソースを使用して通貨間の為替計算を実行します。 Liferay Commerceでは、すぐに使える為替レートプロバイダー、[ECBExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java)を提供しています。
+為替レートプロバイダーは、データソースを使用して通貨間の為替計算を実行します。 Liferay Commerceでは、すぐに使える為替レートプロバイダー、 [ECBExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java) を提供しています。
 
 ![すぐに使える為替レートプロバイダー](./implementing-an-exchange-rate-provider/images/01.png "すぐに使える為替レートプロバイダー")
 
@@ -20,10 +20,10 @@
 
 次に、以下の手順に従います。
 
-1. [Acme Commerce Exchange Rate Provider](./liferay-f2y1.zip)をダウンロードし、解凍してください。
+1. [Acme Commerce Exchange Rate Provider](./liferay-f2y1.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-f2y1.zip -O
+    curl https://learn.liferay.com/commerce/latest/ja/developer-guide/sales/liferay-f2y1.zip -O
     ```
 
     ```bash
@@ -52,7 +52,7 @@
     STARTED com.acme.f2y1.impl_1.0.0
     ```
 
-1. サンプルの為替レートプロバイダーが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次に、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、_［コマース］_→_［Currencies］_に移動します。 新しい為替レートプロバイダー（［f2y1］）が、_［Exchange Rate Provide］_ドロップダウンの下に表示されます。
+1. サンプルの為替レートプロバイダーが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次に、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**コマース**］ → ［**Currencies**］ に移動します。 新しい為替レートプロバイダー（［f2y1］）が、 ［**Exchange Rate Provide**］ ドロップダウンの下に表示されます。
 
 ```{note}
 Liferay Commerce 2.1以前のバージョンでは、［*コントロールパネル*］ → ［*コマース*］ → ［*設定*］ → ［*Currencies*］ → ［*Exchange Rate*］に移動して為替レートを検索します。 新しい為替レートプロバイダー（［f2y1］）が、［*Exchange Rate Provider*］ドロップダウンの下に表示されます。
@@ -78,7 +78,7 @@ Liferay Commerce 2.1以前のバージョンでは、［*コントロールパ�
 public class F2Y1ExchangeRateProvider implements ExchangeRateProvider {
 ```
 
-> Liferay Commerceが[為替レートプロバイダーレジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java)で新しい為替レートプロバイダーを他のプロバイダーと区別できるように、為替レートプロバイダーに個別のキーを提供することが重要です。 すでに使用されているキーを再利用すると、既存の関連付けられている為替レートプロバイダーが上書きされます。
+> Liferay Commerceが [為替レートプロバイダーレジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java) で新しい為替レートプロバイダーを他のプロバイダーと区別できるように、為替レートプロバイダーに個別のキーを提供することが重要です。 すでに使用されているキーを再利用すると、既存の関連付けられている為替レートプロバイダーが上書きされます。
 
 ### `ExchangeRateProvider`インターフェイスを確認する
 
@@ -156,9 +156,9 @@ private Map<String, Double> _exchangeRates = new HashMap<String, Double>() {
 };
 ```
 
-> この例では、為替レートのマップを使用しています。 より実用的な使用事例については、[ECBExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java)を参照してください。 [F2Y1ExchangeRateProvider.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-an-exchange-rate-provider/resources/liferay-f2y1.zip/f2y1-impl/src/main/java/com/acme/f2y1/internal/commerce/currency/util/F2Y1ExchangeRateProvider.java)にアクセスして、`_getStaticExchangeRates`および`_getRateForCode`を参照してください。
+> この例では、為替レートのマップを使用しています。 より実用的な使用事例については、 [ECBExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java) を参照してください。 [F2Y1ExchangeRateProvider.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-an-exchange-rate-provider/resources/liferay-f2y1.zip/f2y1-impl/src/main/java/com/acme/f2y1/internal/commerce/currency/util/F2Y1ExchangeRateProvider.java) にアクセスして、`_getStaticExchangeRates`および`_getRateForCode`を参照してください。
 > 
-> 2つの通貨に対し`CommerceCurrency`オブジェクトを使用して、通貨コードなどの必要な情報を取得します。  `CommerceCurrency`オブジェクトで使用できる他のメソッドについては、[CommerceCurrency.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$］/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrency.java)と[CommerceCurrencyModel.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$］/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrencyModel.java)を参照してください。
+> 2つの通貨に対し`CommerceCurrency`オブジェクトを使用して、通貨コードなどの必要な情報を取得します。  `CommerceCurrency`オブジェクトで使用できる他のメソッドについては、 [CommerceCurrency.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrency.java) と [CommerceCurrencyModel.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrencyModel.java) を参照してください。
 
 ## まとめ
 

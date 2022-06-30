@@ -14,32 +14,32 @@
 
 図はLiferay Commerceの他の商品タイプ（[シンプル](./creating-a-simple-product.md), [グループ](./creating-a-grouped-product.md), [仮想](./creating-a-virtual-product.md)）と似ていますがいくつかの重要な違いがあります。 図単体では出荷できず、在庫、価格、税金を持たず、購読や [商品オプション](../products/using-product-options.md)を許可しません。 しかし、その作成手順は他の商品タイプと同じです。
 
-1. *グローバルメニュー*を開き、 *［コマース］* &rarr; *［Products］*をクリックしてください。
-1. *追加* (![Add](../../../images/icon-add.png)) ボタンをクリックし、 *図*を選択してください。
+1. **グローバルメニュー** を開き、 ［**コマース**］ &rarr; ［**Products**］ をクリックしてください。
+1. **追加**(![Add](../../../images/icon-add.png)) ボタンをクリックし、 **図** を選択してください。
 
    ![オプションのリストから図を選択します。](./shop-by-diagram/images/01.png)
 
 1. 以下の情報を入力してください。
 
-   **［Name］：** エンジン図
+   ［**Name］：** エンジン図
 
-   **［Catalog］:**Minium
+   ［**Catalog］:** Minium
 
-1. ［*送信*］をクリックします 。
+1. ［**送信**］をクリックします 。
 
 ## 図商品の構成
 
 これにより、新しい図商品が作成され、構成ビューが公開されます。 ここで、商品の分解図が描かれた画像をアップロードする必要があります。 カタログのSKUや他の図を画像内の構成パーツにマッピングすることができます。
 
-1. *［Diagram］*タブをクリックします。
+1. ［**Diagram**］ タブをクリックします。
 
    ![［図］タブをクリックして、図をアップロードし、設定します。](./shop-by-diagram/images/03.png)
 
-1. *［Diagram Settings］*で、SVG画像をアップロードする場合*SVG*を選択し、それ以外は *［Default］*に設定してください。
-1. *［Diagram File］*では、画像をドラッグ＆ドロップするか、好きな画像をアップロードすることができます。
-1. *［Select File］* をクリックし、画像をアップロードします。
+1. ［**Diagram Settings**］ で、SVG画像をアップロードする場合 **SVG** を選択し、それ以外は ［**Default**］ に設定してください。
+1. ［**Diagram File**］ では、画像をドラッグ＆ドロップするか、好きな画像をアップロードすることができます。
+1. ［**Select File**］ をクリックし、画像をアップロードします。
 
-*［Diagram Mapping］*セクションは、アップロードが完了した後にアクティブになります。
+［**Diagram Mapping**］ セクションは、アップロードが完了した後にアクティブになります。
 
 ![アップロードが完了すると、図マッピングセクションが有効になります。](./shop-by-diagram/images/04.gif)
 
@@ -47,10 +47,10 @@
 |:------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **項目** | <div style="width:400px"><b>目的</b>                                                                                                                          |
 | 位置     | ピンに付与されたラベルを表します。 数字でも文字でもかまいません。 非展開図の場合、ピンをラベルとして使用することができます。 同じ位置の部品が複数存在することもあります。 例えば、機器は異なるエリアで同じギアを使うかもしれません。 図では、すべてのギアが同じ位置にあることで、同じ部品でありながら機器内の異なる場所にあることを表しています。 |
-| タイプ    | *SKUとリンク*、 *図とリンク* 、 *カタログとリンクしない*を選択してください。<ul><li>SKUにリンク - 図上のピンをカタログのSKUにリンクします。</li><li>図にリンク - 図のピンをカタログの別の図にリンクします。</li><li>カタログとリンクしない - 図上のピンをラベルにリンクします。 売り手は、情報提供の目的で、オンラインカタログで販売していない部品やコンポーネントの名称を図に表示したい場合があります。 これらの商品はラベルを使用します。</li></ul>                                                                                                       |
-| SKU    | タイプが*SKUとリンク*の場合、有効になります。 検索バーにSKUを入力し、適切なものを選択することができます。                                                                                                                   |
-| 図      | タイプが*図とリンク*の場合、有効になります。 検索バーで図を検索し、該当する図を選択することができます。                                                                                                                       |
-| ラベル    | タイプが*カタログとリンクしない*の場合、有効になります。 ラベルは、販売者が情報提供の目的で、オンラインカタログで販売していない図の部品やコンポーネントの名称を表示したい場合に使用されます。                                                                            |
+| タイプ    | **SKUとリンク** 、 **図とリンク** 、 **カタログとリンクしない** を選択してください。<ul><li>SKUにリンク - 図上のピンをカタログのSKUにリンクします。</li><li>図にリンク - 図のピンをカタログの別の図にリンクします。</li><li>カタログとリンクしない - 図上のピンをラベルにリンクします。 売り手は、情報提供の目的で、オンラインカタログで販売していない部品やコンポーネントの名称を図に表示したい場合があります。 これらの商品はラベルを使用します。</li></ul>                                                                                                       |
+| SKU    | タイプが **SKUとリンク** の場合、有効になります。 検索バーにSKUを入力し、適切なものを選択することができます。                                                                                                                   |
+| 図      | タイプが **図とリンク** の場合、有効になります。 検索バーで図を検索し、該当する図を選択することができます。                                                                                                                       |
+| ラベル    | タイプが **カタログとリンクしない** の場合、有効になります。 ラベルは、販売者が情報提供の目的で、オンラインカタログで販売していない図の部品やコンポーネントの名称を表示したい場合に使用されます。                                                                            |
 | 数量     | 機器を完成させるために必要な部品の数量を示します。                                                                                                                                                   |
 
 ## 図にSKUをマッピングする
@@ -59,11 +59,11 @@
 
 1. 図内で、SKU または別の図にマッピングする必要のあるパーツをクリックします。
 1. 検索バーでSKUや図を検索し、その数量を設定し、ダイアログボックスで位置を割り当てます。
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
     ![検索バーでSKUまたは図を検索します。](./shop-by-diagram/images/05.gif)
 
-1. 完了したら、*［公開］*をクリックします。
+1. 完了したら、 ［**公開**］ をクリックします。
 
 右側には、SKUの位置と数量が表示されます。 公開後、ストアフロントで商品を確認することができます。
 
@@ -74,7 +74,7 @@
 ```
 
 ```{note}
-画像："[Bultaco engine exploded view](https://flickr.com/photos/tom-margie/1253798184/in/photolist-4XXvtu-2mn7DP8-NmN3U5-aq4SCB-H8ZMN9-dzT17o-pZgiwZ-2kLJEjC-bRALa6-9xjArz-aNgnMn-pjF6jp-NNVRDe-2jCWou9-niHeTv-2UN3w5-2mD79VN-bz84rF-7HSLu4-yQe2wr-9ptWiW-CY6AP-bzmZP9-9jRWia-chdwUu-Mp16Ah-8pHHKM-2mwEAZi-2kUCwFf-u4fJFj-aQS5mv-2iWwYAU-2iQKbJz-kHQyfH-2jE3t4n-3BBRmw-deC9th-25aFqYT-imHEdi-imH7SU-imH5gS-imGVyn-imGT5W-imHzii-imGNMX-imHxLR-UepKvn-4V5F4T-a48scN-4V5Fjp)" by [Tom Margie](https://flickr.com/photos/tom-margie/) / [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+画像：" [Bultaco engine exploded view](https://flickr.com/photos/tom-margie/1253798184/in/photolist-4XXvtu-2mn7DP8-NmN3U5-aq4SCB-H8ZMN9-dzT17o-pZgiwZ-2kLJEjC-bRALa6-9xjArz-aNgnMn-pjF6jp-NNVRDe-2jCWou9-niHeTv-2UN3w5-2mD79VN-bz84rF-7HSLu4-yQe2wr-9ptWiW-CY6AP-bzmZP9-9jRWia-chdwUu-Mp16Ah-8pHHKM-2mwEAZi-2kUCwFf-u4fJFj-aQS5mv-2iWwYAU-2iQKbJz-kHQyfH-2jE3t4n-3BBRmw-deC9th-25aFqYT-imHEdi-imH7SU-imH5gS-imGVyn-imGT5W-imHzii-imGNMX-imHxLR-UepKvn-4V5F4T-a48scN-4V5Fjp) " by [Tom Margie](https://flickr.com/photos/tom-margie/) / [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 ```
 
 ## 追加情報

@@ -2,11 +2,11 @@
 
 > 利用可能：Commerce 2.1以降
 
-Liferay Commerceの_在庫管理_システムは、ユーザーがLiferay Commerceのインスタンス全体の在庫を管理するための単一の場所です。
+Liferay Commerceの **在庫管理** システムは、ユーザーがLiferay Commerceのインスタンス全体の在庫を管理するための単一の場所です。
 
 ユーザーは、在庫商品の追加、特定のアイテム（SKU）の注文一覧の表示、予備在庫の指定、商品の変更履歴の表示などができます。 また、在庫管理は倉庫と連動しており、ここから各倉庫にある在庫を確認することもできます。
 
-在庫を管理するには、 _グローバルアプリケーション_ メニュー&rarr; _［コマース］_ &rarr; _［在庫］_に移動します。
+在庫を管理するには、 **グローバルアプリケーション** メニュー&rarr; ［**コマース**］ &rarr; ［**在庫**］ に移動します。
 
 ```{note}
 在庫管理は、Commerce 2.0または2.1を使用している場合、*コントロールパネル*にあります。
@@ -14,21 +14,21 @@ Liferay Commerceの_在庫管理_システムは、ユーザーがLiferay Commer
 
 ## 在庫商品の追加
 
-各在庫商品は、SKUによって追跡されます。 ユーザーは、_在庫管理_に複数のSKUを追加し、各SKUに十分な数量があることを確認することができます。
+各在庫商品は、SKUによって追跡されます。 ユーザーは、 **在庫管理** に複数のSKUを追加し、各SKUに十分な数量があることを確認することができます。
 
 在庫商品を追加する：
 
-1. _［コントロールパネル］_ &rarr; _［コマース］_ &rarr; _［在庫］_に移動します。
+1. ［**コントロールパネル**］ &rarr; ［**コマース**］ &rarr; ［**在庫**］ に移動します。
 1. （![Add Icon](../images/icon-add.png)）アイコンをクリックします。
 1. 次のように入力します：
 
-    * **［SKU］**: CHINAWARE-GRAY
-    * **［Warehouse］**: United States - Southwest
-    * **［Quantity］**：120
+    ***［SKU**］ : CHINAWARE-GRAY
+    ***［Warehouse**］ : United States - Southwest
+    ***［Quantity**］ ：120
 
     ![新しい在庫商品を追加します。](./using-the-inventory-management-system/images/01.png)
 
-1. 完了したら、_［Submit］_をクリックします。
+1. 完了したら、 ［**Submit**］ をクリックします。
 
 新しい在庫商品が追加されました。
 
@@ -43,25 +43,25 @@ Liferay Commerceの_在庫管理_システムは、ユーザーがLiferay Commer
 安全在庫量を設定する：
 
 1. SKU（12 PACKMOCHA）をクリックします。
-1. 3点アイコン（![Actions](../images/icon-actions.png)）をクリックし&rarr;倉庫の横にある_［編集］_をクリックします。
+1. 3点アイコン（![Actions](../images/icon-actions.png)）をクリックし&rarr;倉庫の横にある ［**編集**］ をクリックします。
 1. 次のように入力します：
 
-   * **［Quantity on Hand］**: 40 (修正しない)
-   * **［Safety Stock Quantity］**: 5
+   ***［Quantity on Hand**］ : 40 (修正しない)
+   ***［Safety Stock Quantity**］ : 5
 
     ![安全在庫量を設定します。](./using-the-inventory-management-system/images/02.png)
 
-1. 完了したら、_［Save］_をクリックします。
+1. 完了したら、 ［**Save**］ をクリックします。
 1. ウィンドウを閉じます。
 
-安全在庫量が設定されると、 _［Available］_ の欄にある数が減少します。
+安全在庫量が設定されると、 ［**Available**］ の欄にある数が減少します。
 
 ![安全在庫量を設定することで、その倉庫の利用可能な在庫を減らすことができます。](./using-the-inventory-management-system/images/03.png)
 
 ## 受注オーダーを確認する
 
 1. SKU (_MIN55681_)をクリックします。
-1. _［On Order］_ タブをクリックします。
+1. ［**On Order**］ タブをクリックします。
 
     ![安全在庫量を設定することで、その倉庫の利用可能な在庫を減らすことができます。](./using-the-inventory-management-system/images/06.png)
 
@@ -72,19 +72,19 @@ Liferay Commerceの_在庫管理_システムは、ユーザーがLiferay Commer
 ストアマネージャーは入荷量や配達予定日を入力することができます。
 
 1. SKUをクリックします。
-1. _［入荷］_タブをクリックします。
+1. ［**入荷**］ タブをクリックします。
 1. （![Add Icon](../images/icon-add.png)）アイコンをクリックします。
 1. 次のように入力します：
 
-    * **［Quantity］**：20
-    * **［Destination］**：倉庫を選択します（米国北東部）
-    * **［Expected Delivery Date］**: 将来の日付を選択します (2020年7月1日)。
+    ***［Quantity**］ ：20
+    ***［Destination**］ ：倉庫を選択します（米国北東部）
+    ***［Expected Delivery Date**］ : 将来の日付を選択します (2020年7月1日)。
 
     ![入荷在庫を追加します。](./using-the-inventory-management-system/images/04.png)
 
-1. 完了したら、_［Submit］_をクリックします。
+1. 完了したら、 ［**Submit**］ をクリックします。
 
-入荷量が追加されると、 _［概要］_ タブで更新されます。
+入荷量が追加されると、 ［**概要**］ タブで更新されます。
 
 ![入荷量は、SKUの［概要］タブで更新されます。](./using-the-inventory-management-system/images/05.png)
 

@@ -406,8 +406,10 @@ public class Main {
 				qualifier = qualifier.substring(0, qualifier.indexOf("}"));
 
 				if (!qualifier.equals("toctree")) {
-					admonitionLineSB.append(
-						leadingSpacesSB + "!!! " + qualifier + " \"\" ");
+					admonitionLineSB.append(leadingSpacesSB);
+					admonitionLineSB.append("!!! ");
+					admonitionLineSB.append(qualifier);
+					admonitionLineSB.append(" \"\" ");
 
 					startAdmonitionBlock = true;
 				}

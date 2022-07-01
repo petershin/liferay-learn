@@ -1053,3 +1053,32 @@ This change was made so that administrators can set separate redirect URL config
 This change was made to address vulnerabilities of outdated libraries that are no longer maintained.
 
 ---------------------------------------
+
+## Elasticsearch Sortable Type Mappings Were Changed from keyword to icu_collation_keyword
+
+- **Date:** 2022-May-12
+- **JIRA Ticket:** [LPS-152937](https://issues.liferay.com/browse/LPS-152937)
+
+### What changed?
+
+The Elasticsearch type mapping of localized sortable `*_<languageId>_sortable` and nested `ddmFieldArray.ddmFieldValueText_<languageId>_String_sortable` fields were changed from `keyword` to `icu_collation_keyword`
+
+The indexed information of these fields is now stored in an encoded format. For example, the `entity title` text is now stored as `MkRQOlBaBFA6UEAyARABEAA=`
+
+This new `icu_collation_keyword` type allows sorting using the correct collation rules of each language. For more information see <https://www.elastic.co/guide/en/elasticsearch/plugins/7.17/analysis-icu-collation-keyword-field.html>.
+
+If you update an existing Liferay installation, the new mappings take effect when a full reindex is executed and Elasticsearch mappings are recreated.
+
+### Who is affected?
+
+If you are using the `*_<languageId>_sortable` and `ddmFieldArray.ddmFieldValueText_<languageId>_String_sortable` fields in your custom Elasticsearch queries:
+   - **When observing sorted results**, you will find that results are now sorted using the correct collation rules of each language.
+   - **When retrieving information from the Elasticsearch index**, you will find that the information is now returned in an encoded format.
+
+### How should I update my code?
+
+If you want to maintain the old sort behavior, you must customize the Elasticsearch mappings, removing the `icu_collation_keyword`. For more information about how to configure mappings, see: https://learn.liferay.com/dxp/latest/en/using-search/installing-and-upgrading-a-search-engine/elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.html
+
+To retrieve data from these fields, you can get the same information from the `_source` field of Elasticsearch: <https://www.elastic.co/guide/en/elasticsearch/reference/7.17/mapping-source-field.html>. Alternatively, remove the `icu_collation_keyword` as explained in the previous paragraph.
+
+---------------------------------------

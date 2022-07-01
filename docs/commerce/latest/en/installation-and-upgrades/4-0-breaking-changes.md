@@ -14,7 +14,7 @@ Here are some of the types of changes documented in this file:
 
 * Configuration changes: Changes in configuration files, like `com.liferay.commerce.*.cfg` etc.
 
-* Execution requirements: Java version, J2EE Version, browser versions, etc.
+* Execution requirements: Java version, JEE Version, browser versions, etc.
 
 * Deprecations or end of support: For example, warning that a certain feature or API will be dropped in an upcoming version.
 
@@ -159,14 +159,14 @@ This change was introduced to follow Liferay source formatting.
 * The `MiniCart` Tag and FE React Component have been extended to support partial and total replacement of its component views and labels and have some of its features configurable, either via standard Tag attribute, or via direct import of the JS implementation.
 
   * The exposed `MiniCartTag` attributes changed.
-  
+
   * The `commerce-frontend-js` module is now exposed with a proper interface to allow a controlled access and exposure of its content (and in particular, of the `MiniCartContext` which is needed for `MiniCart` integration).
-  
+
   * Usability and extensibility of the MiniCart component is documented [here](https://issues.liferay.com/browse/LRDOCS-9462).
 
 ### Who is affected?
 
-Developers relying or extending the the old `MiniCartTag`.
+Developers relying or extending the old `MiniCartTag`.
 
 ### Why was this change made?
 
@@ -184,28 +184,28 @@ Alignment with Liferay DXP standards to support component extensibility.
 
 * Service and persistence classes for `CommerceCountry` and `CommerceRegion` have been removed.
 
-* Rerences to `com.liferay.commerce.model.CommerceCountry` and `com.liferay.commerce.model.CommerceRegion` have been replaced by `com.liferay.portal.kernel.model.Country` and `com.liferay.portal.kernel.model.Region`.
+* References to `com.liferay.commerce.model.CommerceCountry` and `com.liferay.commerce.model.CommerceRegion` have been replaced by `com.liferay.portal.kernel.model.Country` and `com.liferay.portal.kernel.model.Region`.
 
-* Foreign keys that references `CommerceCountry` and `CommerceRegion` have been renamed from `commerceCountryId` and `commerceRegionId` to `countryId` and `regionId` respectively. Tables that have columns that were updated are:
+* Foreign keys that references `CommerceCountry` and `CommerceRegion` have been renamed from `commerceCountryId` and `commerceRegionId` to `countryId` and `regionId` respectively. Tables that have columns that were updated are
 
   * `CommerceAddress`
-  
+
   * `CommerceAddressRestriction`
-  
+
   * `CommerceShippingFixedOptionRel`
-  
+
   * `CommerceTaxFixedRateAddressRel`
-  
+
   * `com.liferay.commerce.country.CommerceCountryManager` is added for retrieving Commerce-specific countries. Available methods are:
-  
+
   * `getBillingCountries`
-  
+
   * `getBillingCountriesByChannelId`
-  
+
   * `getShippingCountries`
-  
+
   * `getShippingCountriesByChannelId`
-  
+
   * `getWarehouseCountries`
 
 ### Who is affected?
@@ -218,7 +218,7 @@ Update any explicit reference to `CommerceCountry` and/or `CommerceRegion` with 
 
 ### Why was this change made?
 
-This change removes duplicate models and services in Liferay portal.
+This change removes duplicate models and services in Liferay Portal.
 
 ## Mini Compare Widget + Mini Compare Component
 
@@ -228,7 +228,7 @@ This change removes duplicate models and services in Liferay portal.
 
 ### What changed?
 
-* Migration of the `MiniCompare` FE implementation from JSP/vanilla JS to React (in `commerce-frontend-js`). It's loaded directly from the same JSP source in `commerce-product-content-web`.
+* Migration of the `MiniCompare` FE implementation from JSP/vanilla JavaScript to React (in `commerce-frontend-js`). It's loaded directly from the same JSP source in `commerce-product-content-web`.
 
 * CP Definition ID's are now stored in and eventually read from a cookie, instead of using the session.
 
@@ -238,7 +238,7 @@ This change removes duplicate models and services in Liferay portal.
 
 ### Who is affected?
 
-Developers relying or extending the the old implementation of the MiniCompare component/widget.
+Developers relying or extending the old implementation of the MiniCompare component/widget.
 
 ### Why was this change made?
 
@@ -254,9 +254,9 @@ Developers relying or extending the the old implementation of the MiniCompare co
 
 ### What changed?
 
-* Refactored the `AccountSelectorTag` to render via JSP and extend it from the `IncludeTag`. The JSP hydrates and renders the AccountSelector` React component migrated from Soy/MetalJS.
+* Refactored the `AccountSelectorTag` to render via JSP and extend it from the `IncludeTag`. The JSP hydrates and renders the `AccountSelector` React component migrated from Soy/MetalJS.
 
-* Renamed the event names to notify other components about Account/Order changes communicated during the runtime lifecycle via the Commerce Headless API.
+* Renamed the event names to notify other components about Account/Order changes communicated during the runtime life cycle via the Commerce Headless API.
 
 ### Who is affected?
 
@@ -276,7 +276,7 @@ Developers who rely or extend the old Soy/MetalJS component with its related Tag
 
 ### What changed?
 
-* The Product Card component is now ported to a JSP template to display product information. It hydrates and renders via CPContentListRenderer &rarr; CPContentListEntryRenderer.
+* The Product Card component is now ported to a JSP template to display product information. It hydrates and renders via `CPContentListRenderer` &rarr; `CPContentListEntryRenderer`.
 
   * The Product Publisher, Search Results, Compare widgets now use these rendering strategies.
 
@@ -349,7 +349,7 @@ Shop by Diagram replaces the BOM feature. This means that the entries Folder and
 
 ### Who is affected?
 
-Product specialists that need to create diagrams for their store will not need to create products with the Diagram product type.
+Product specialists who must create diagrams for their store don't need to create products with the Diagram product type.
 
 ### Why was this change made?
 
@@ -363,7 +363,7 @@ This change fixes BOM issues and better fulfills spare parts use cases.
 
 ### What changed?
 
-The Account widget replaces the Commerce Account widget. All instances on a an existing running system have been updated.
+The Account widget replaces the Commerce Account widget. All instances on an existing running system have been updated.
 
 ### Who is affected?
 

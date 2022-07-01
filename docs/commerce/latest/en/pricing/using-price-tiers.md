@@ -44,11 +44,27 @@ You can configure both price tier options in the same way, but they apply prices
 
 Product A has a base price of $50, with two price tiers for Bulk Pricing. If the quantity is 5 or more, the price is $45 and if the quantity is 10 or more, the price if $40.
 
+| You Buy  | Total Price | Unit Price Calculation |
+| :------- | :---------- | :--------------------- |
+| 4 units  | $200        | {math}`$50`            |
+| 5 units  | $225        | {math}`$45`            |
+| 9 units  | $405        | {math}`$45`            |
+| 10 units | $400        | {math}`$40`            |
+| 11 units | $440        | {math}`$40`            |
+
 ### Tiered Pricing
 
 ![Configure Tiered Pricing for a Product.](./using-price-tiers/images/05.png)
 
 Product B has a base price of $60, with two price tiers for Tiered Pricing. If the quantity is 5 or more, the price is $50 starting from the fifth item. There is another tier with a unit price of $40 starting from the tenth item.
+
+| You Buy  | Total Price | Unit Price Calculation                              |
+| :------- | :---------- | :-------------------------------------------------- |
+| 4 units  | $240        | {math}`$60`                                         |
+| 5 units  | $290        | {math}`(($60 * 4)+($50 * 1))/5 = $58`               |
+| 9 units  | $490        | {math}`(($60 * 4)+($50 * 5))/9 = $54.44`            |
+| 10 units | $530        | {math}`(($60 * 4)+($50 * 5)+($40 * 1))/10 = $53`    |
+| 11 units | $570        | {math}`(($60 * 4)+($50 * 5)+($40 * 2))/11 = $51.82` |
 
 ## Commerce 2.1 and Below
 

@@ -22,11 +22,11 @@ Follow these steps to define actions for an Object:
 
 1. While viewing the Object, select the *Actions* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
-1. In the *Basic Info* tab, enter a *name* and *description* for the action.
+1. In the Basic Info tab, enter a *name* and *description* for the action.
 
    ![Enter an action name and description in the Basic Info tab.](./defining-object-actions/images/01.png)
 
-1. Go to the the *Action Builder* tab to define a custom trigger, conditions, and action.
+1. Go to the *Action Builder* tab to define a custom trigger, conditions, and action.
 
    ![Go to the Action Builder tab to define a custom trigger, conditions, and action.](./defining-object-actions/images/02.png)
 

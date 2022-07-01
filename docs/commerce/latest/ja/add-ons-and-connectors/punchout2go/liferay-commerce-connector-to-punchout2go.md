@@ -21,11 +21,13 @@ PunchOut2Goコネクターを使用するには、Liferay Commerce 2.1.2およ�
 1. アプリケーションサーバーコンソールに次のメッセージが表示されることを確認します。
 
     ```
-    2020-07-24 22:10:01.924 INFO [fileinstall-/../../liferay-portal-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:209] ファイルのインストールを完了するには、ポータルインスタンスを再起動させなければなりません。:/../../liferay-portal-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20Connector%20to%20PunchOut2Go%20-%20API.lpkg
-    2020-07-24 22:10:01.926 INFO [fileinstall-../../liferay-portal-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:209] ファイルのインストールを完了するには、ポータルインスタンスを再起動しなければなりません。/../../liferay-portal-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20Connector%20to%20PunchOut2Go%20-%20Impl.lpkg`
+    2020-07-24 22:10:01.924 INFO  [fileinstall-/../../liferay-portal-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:209] The portal instance needs to be restarted to complete the installation of file:/../../liferay-portal-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20Connector%20to%20PunchOut2Go%20-%20API.lpkg
+    2020-07-24 22:10:01.926 INFO  [fileinstall-../../liferay-portal-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:209] The portal instance needs to be restarted to complete the installation of file:/../../liferay-portal-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20Connector%20to%20PunchOut2Go%20-%20Impl.lpkg`
     ```
 
-1. アプリケーションサーバーを再起動します。 <!-- 1. Verify that the following message displays in the application server console:
+1. アプリケーションサーバーを再起動します。 
+
+<!-- 1. Verify that the following message displays in the application server console:
 
     ```
      [Success message]

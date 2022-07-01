@@ -12,10 +12,6 @@ Follow these steps to add tiered pricing to an existing Price List:
 
 1. Use the radio button in the *Price Tiers* section to select either *Bulk Pricing* or *Tiered Pricing*.
 
-   ```{note}
-   While both price tier options are configured in the same way, they apply prices differently. *Bulk Pricing* applies the same tier price to all items in qualifying bulk orders, while *Tiered Pricing* applies different prices to order items according to defined pricing tiers.      
-   ```
-
 1. Click the *Add* button (![Add icon](../images/icon-add.png)).
 
 1. Enter a *Quantity* to determine the minimum quantity for receiving the bulk price.
@@ -37,6 +33,22 @@ Follow these steps to add tiered pricing to an existing Price List:
    ![Add a tiered pricing entry.](./using-price-tiers/images/03.png)
 
 When finished, click on *Publish* for the selected Price List to make your changes live, or click on *Save as Draft* to publish them at a later time.
+
+## Bulk Pricing vs Tier Pricing
+
+You can configure both price tier options in the same way, but they apply prices differently. *Bulk Pricing* applies the same tier price to all items in qualifying bulk orders, while *Tiered Pricing* applies different prices to order items according to defined price tiers.
+
+### Bulk Pricing
+
+![Configure Bulk Pricing for a Product.](./using-price-tiers/images/04.png)
+
+Product A has a base price of $50, with two price tiers for Bulk Pricing. If the quantity is 5 or more, the price is $45 and if the quantity is 10 or more, the price if $40.
+
+### Tiered Pricing
+
+![Configure Tiered Pricing for a Product.](./using-price-tiers/images/05.png)
+
+Product B has a base price of $60, with two price tiers for Tiered Pricing. If the quantity is 5 or more, the price is $50 starting from the fifth item. There is another tier with a unit price of $40 starting from the tenth item.
 
 ## Commerce 2.1 and Below
 

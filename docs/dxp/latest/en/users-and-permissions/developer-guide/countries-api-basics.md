@@ -47,13 +47,13 @@ Then, follow these steps:
 
    ```
 
-1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files like this:
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `Country_POST_ToInstance.java` class with the following command.
+1. Run the `Country_POST_ToInstance.java` class:
 
    ```bash
    java -classpath .:* Country_POST_ToInstance

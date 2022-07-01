@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4 U24+ and GA24+`
 
-Use Liferay's Rest APIs to create and manage regions.
+Use Liferay's REST APIs to create and manage regions.
 
 ## Adding a Region
 
@@ -42,13 +42,13 @@ Then, follow these steps:
 
    ```
 
-1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `Region_POST_ToCountry.java` class with the following command.
+1. Run the `Region_POST_ToCountry.java` class: 
 
    ```bash
    java -classpath .:* -DcountryId=1234 Region_POST_ToCountry

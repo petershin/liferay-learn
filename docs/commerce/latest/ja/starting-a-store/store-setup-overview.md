@@ -2,7 +2,7 @@
 
 ## 紹介
 
-この記事は、Liferay Commerceでストアを構築するのが初めてのユーザー向けにサンプルを提供することを目的としています。 Liferay Commerce（およびLiferay DXP）が適切にインストールされ、設定されていることを前提としています。 インストールの詳細は、[インストールの概要](../installation-and-upgrades/installation-overview.md)を参照してください。
+この記事は、Liferay Commerceでストアを構築するのが初めてのユーザー向けにサンプルを提供することを目的としています。 Liferay Commerce（およびLiferay DXP）が適切にインストールされ、設定されていることを前提としています。 インストールの詳細は、[インストールの概要](../installation-and-upgrades/installation-overview.md) を参照してください。
 
 ## ロードマップ
 
@@ -14,7 +14,7 @@
 ## ストア設定
 
 ```{note}
-[Accelerator](../starting-a-store/accelerators.md) は、ストアサイトの作成に使用することができます。 アクセラレータを使用して店舗サイトを作成すると、このセクションで述べた多くの設定が行われます。詳細は、[Using the Minium Accelerator to Jump Start Your B2B Store] (../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) を参照してください。
+[アクセラレータs](../starting-a-store/accelerators.md) は、ストアサイトの作成に使用することができます。 アクセラレータを使用して店舗サイトを作成すると、このセクションで述べた多くの設定が行われます。詳細は、[Minium Acceleratorを使用してB2Bストアをすぐに開始する](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) を参照してください。
 ```
 
 最初のストア設定は、[管理者アカウント](./introduction-to-the-admin-account.md)を使用して行います 。 Liferay Commerceの設定レイアウトと使用可能なオプションについては、[Liferay Commerceの設定の概要](../store-management/liferay-commerce-configuration-overview.md)をご覧ください。

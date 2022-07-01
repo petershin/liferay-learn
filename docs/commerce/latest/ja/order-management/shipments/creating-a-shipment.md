@@ -89,8 +89,8 @@ Liferay Commerceの以前のバージョンで出荷を作成するには：
 
 ## 追加情報
 
-* [Commerce倉庫のセットアップ](../../product-management/managing-inventory/setting-up-commerce-warehouses.md)
-* [倉庫ごとの在庫設定](../../product-management/managing-inventory/setting-inventory-by-warehouse.md)
+* [Commerce倉庫のセットアップ](../../inventory-management/setting-up-commerce-warehouses.md)
+* [倉庫ごとの在庫設定](../../inventory-management/setting-inventory-by-warehouse.md)
 * [注文情報](../orders/order-information.md)
 * [注文の処理](../orders/processing-an-order.md)
-* [倉庫リファレンスガイド](../../product-management/managing-inventory/warehouse-reference-guide.md)
+* [倉庫リファレンスガイド](../../inventory-management/warehouse-reference-guide.md)

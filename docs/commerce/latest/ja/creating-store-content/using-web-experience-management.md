@@ -15,7 +15,7 @@ toc:
 フラグメントの使用<https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/building-and-managing-content-pages/using-fragments.html>
 ナビゲーションメニュー<https://learn.liferay.com/dxp/latest/en/site-building/site_navigation.html>
 ウィジェットテンプレートでスタイル調整<https://learn.liferay.com/dxp/latest/en/site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.html>
-使用方法---。web-experience-management/enabling-commerce-products-as-related-assets.md
+using-web-experience-management/enabling-commerce-products-as-related-assets.md
 ```
 
 ```{raw} html

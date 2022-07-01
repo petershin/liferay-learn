@@ -12,7 +12,10 @@ Liferay Commerceでは、カタログ、価格表、およびチャネルで異�
 
 ```{note}
 利用可能な通貨は、*グローバルメニュー*の*［コマース］*タブにある*［通貨］*ページで確認できます。 ここで、通貨の編集、優先順位付け、追加/削除、有効化/無効化を行うことができます。 詳しくは、 [通貨リファレンス](./currencies-reference.md) と [新しい通貨の追加](./adding-a-new-currency.md) をご覧ください。
-``` <!-- Update article once \[COMMERCE-5171\](https://issues.liferay.com/browse/COMMERCE-5171) is implemented. It removes Catalog Currency and uses the Base Price List currency alone as currency basis. --> ## 追加情報
+``` 
+<!-- Update article once \[COMMERCE-5171\](https://issues.liferay.com/browse/COMMERCE-5171) is implemented. It removes Catalog Currency and uses the Base Price List currency alone as currency basis. --> 
+
+## 追加情報
 
 * [新しい通貨の追加](./adding-a-new-currency.md)
 * [為替レートの管理](./managing-exchange-rates.md)

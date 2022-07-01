@@ -20,10 +20,10 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 
 1. Acme Commerce Notification Typeをダウンロードして解凍します。
 
-    ``bash
+    ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip
-
-　liferay-g2f3.zipを解凍します。
+    
+    unzip liferay-g2f3.zip
     ```
 
 1. サンプルをビルドしてデプロイします。
@@ -33,7 +33,7 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
     ```
 
     ```{note}
-    このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
+    このコマンドは、デプロイされたjarをDockerコンテナの `/opt/liferay/osgi/modules` にコピーするのと同じです。
     ```
 
 1. Dockerコンテナコンソールでデプロイを確認します。
@@ -97,9 +97,9 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 
 10. 受信通知を受信トレイで確認してください。
 
-``{important}
-MockMock (https://github.com/tweakers/MockMock) などの偽のSMTPサーバを使って、ローカル開発環境下でこれらの通知をテストすることができます。 `Portal-ext.properties` ファイルに以下の行を追加します。`mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. `java -jar MockMock.jar`でjarを実行し、受信したメールを `localhost:8282` でチェックします。
-```
+```{important}
+[MockMock](https://github.com/tweakers/MockMock) などの偽のSMTPサーバを使って、ローカル開発環境下でこれらの通知をテストすることができます。 `Portal-ext.properties` ファイルに以下の行を追加します。`mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. `java -jar MockMock.jar` でjarを実行し、受信したメールを `localhost:8282` でチェックします。
+``` 
 
 ## カスタム通知タイプの仕組み
 

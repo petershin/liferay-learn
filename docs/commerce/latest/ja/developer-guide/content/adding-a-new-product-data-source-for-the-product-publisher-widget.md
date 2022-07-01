@@ -2,7 +2,7 @@
 
 このチュートリアルでは、`CPDataSource`インターフェイスを実装して、新しい商品データソースを追加する方法を示します。
 
-商品データソースは、関連する商品を検索する独自の方法を提供します。 Liferay Commerceでは、 [商品の関係別](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) および [カテゴリ別に](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java) 検索するものなど、標準でいくつかの商品データソースを提供しています。
+商品データソースは、関連する商品を検索する独自の方法を提供します。 Liferay Commerceでは、 [商品の関係別](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) および [カテゴリ別に](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java) 検索するものなど、標準でいくつかの商品データソースを提供しています。
 
 ![標準の商品データソース](./adding-a-new-product-data-source-for-the-product-publisher-widget/images/01.png "標準の商品データソース")
 
@@ -15,6 +15,7 @@
 ## サンプルをデプロイする
 
 このセクションでは、商品データソースをLiferay Commerceのインスタンスで実行する例を示します。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
@@ -27,7 +28,7 @@
     ```
 
     ```bash
-    liferay-m5x7.zipを解凍してください。
+    unzip liferay-m5x7.zip
     ```
 
 1. サンプルをビルドしてデプロイします。
@@ -94,7 +95,7 @@ public CPDataSourceResult getResult(
 
 > ここで、関連商品の検索を実行するビジネスロジックを追加します。 `HttpServletRequest`には、結果を何らかの方法で関連付ける必要がある特定の商品への参照が含まれています。
 > 
-> この方法では、検索結果の一覧を含む`CPDataSourceResult`を返します。実装については [CPDataSourceResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/data/source/CPDataSourceResult.java) を参照してください。
+> この方法では、検索結果の一覧を含む`CPDataSourceResult`を返します。実装については [CPDataSourceResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/data/source/CPDataSourceResult.javas) を参照してください。
 
 ### 商品データソースを完成させる
 
@@ -139,7 +140,7 @@ public CPDataSourceResult getResult(
 }
 ```
 
-> [CPDefinitionHelper](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/util/CPDefinitionHelperImpl.java) を使用して、検索を実行します。 `CPDefinitionHelper`は、商品定義に固有のロジックと`BaseIndexer`の検索機能を組み合わせたものです。詳細は、 [BaseIndexer.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/portal-kernel/src/com/liferay/portal/kernel/search/BaseIndexer.java) を参照してください。
+> [CPDefinitionHelper](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/util/CPDefinitionHelperImpl.java) を使用して、検索を実行します。 `CPDefinitionHelper`は、商品定義に固有のロジックと`BaseIndexer`の検索機能を組み合わせたものです。詳細は、 [BaseIndexer.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/search/BaseIndexer.java) を参照してください。
 > 
 > `"excludedCPDefinitionId"`属性の値として商品定義のIDを`SearchContext`に追加します。 これにより、結果から元の商品が除外されます。 この例では、検索する商品名の最後の単語も指定しています。 詳細は、この例では、`M5X7CPDataSource.java` ファイルの`_getLastWordOfName`メソッドの検索ロジックの実行を参照してください。
 

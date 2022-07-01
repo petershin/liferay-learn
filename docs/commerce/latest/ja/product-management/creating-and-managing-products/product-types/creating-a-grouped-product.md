@@ -5,7 +5,7 @@ Liferay Commerceでは、グループ商品は、顧客の利便性や特別価�
 はじめに、グループ商品を [作成](#create-a-grouped-product) し、そこに新しい商品のエントリーを [追加](#adding-product-entries) します。 次に、グループ商品とSKUを設定します。
 
 ```{note}
-グループ商品に加えて、Liferay Commerceは[商品オプション]（.../products/using-product-options.md）を使用した商品バンドルの作成をサポートしています。 オプションでは、現在の商品と他のSKUをリンクさせて一緒に購入するための値を定義することができます。 最終的な価格は、オプションの設定に基づいて計算されます。 詳細は、[Creating Product Bundles]（../ products / creating-product-bundles.md）および[Product Options]（../ products / using-product-options.md）を参照してください。
+グループ商品に加えて、Liferay Commerceは [商品オプション](../products/using-product-options.md) を使用した商品バンドルの作成をサポートしています。 オプションでは、現在の商品と他のSKUをリンクさせて一緒に購入するための値を定義することができます。 最終的な価格は、オプションの設定に基づいて計算されます。 詳細は、[商品バンドルの作成](../products/creating-product-bundles.md) および [商品オプション](../products/using-product-options.md) を参照してください。
 ```
 
 ## 前提条件
@@ -88,9 +88,9 @@ Liferay Commerceでは、グループ商品は、顧客の利便性や特別価�
 1. **3ドット** アイコンをクリックして、 **default** の隣にある ［**編集**］ をクリックします。 （この時点で、SKUの名前を「**詳細** メニューの「**ブレーキセットコンボキット** わかりやすい名前に変更できます。）
 1. 左側のメニューで ［**Pricing**］ をクリックします。
 1. 次のように入力します：
-    ***Price** : 89.99
-    ***Promo Price** : 0.00
-    ***Cost** : 0.00
+    * **Price** : 89.99
+    * **Promo Price** : 0.00
+    * **Cost** : 0.00
 
         ![グループ商品の価格を設定します。](./creating-a-grouped-product/images/08.png)
 

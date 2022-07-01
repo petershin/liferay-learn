@@ -27,7 +27,7 @@
     ```
 
     ```bash
-    liferay-j1e4.zipを解凍してください。
+    unzip liferay-j1e4.zip
     ```
 
 1. サンプルをビルドしてデプロイします。
@@ -51,7 +51,7 @@
    そこから、 ［**設定**］ に移動します。 新しいアクティビティ（「ログ警告メッセージ」）が ［**Low Stock Action**］ ドロップダウンの下に表示されます。
 
 ```{note}
-Liferay Commerce 2.1以前のバージョンでは、*［コントロールパネル］* → *［コマース］* → *［商品］*に移動して商品ページを検索します。
+Liferay Commerce 2.1以前のバージョンでは、*［コントロールパネル］* → *［コマース］* → *［商品］* に移動して商品ページを検索します。
 ```
 
 ![新しい在庫数低下アクティビティ](./implementing-a-custom-low-stock-activity/images/02.png "新しい在庫数低下アクティビティ")
@@ -130,7 +130,7 @@ public void execute(CPInstance cpInstance) throws PortalException {
 モジュール内の [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/managing-inventory/implementing-a-custom-low-stock-activity/resources/liferay-j1e4.zip/j1e4-impl/src/main/resources/content/Language.properties) ファイルに言語キーとその値を追加します。
 
 ```properties
-j1e4-commerce-low-stock-activity=J1E4 コマース在庫数低下アクティビティ
+j1e4-commerce-low-stock-activity=J1E4 Commerce Low Stock Activity
 ```
 
 > 詳細は、 [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application) を参照してください。
@@ -143,4 +143,4 @@ j1e4-commerce-low-stock-activity=J1E4 コマース在庫数低下アクティビ
 
 * [シンプル商品を作成する](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
 * [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
-* [在庫数低下時のアクション](../../product-management/managing-inventory/low-stock-action.md)
+* [在庫数低下時のアクション](../../inventory-management/low-stock-action.md)

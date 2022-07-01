@@ -2,7 +2,7 @@
 
 このチュートリアルでは、 [CommerceOrderValidator](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java) インターフェイスを実装して、カスタムオーダーバリデーターを追加する方法を示します。
 
-注文バリデーターは、チェックアウトを行う際に顧客のカート内のアイテムを検証するクラスです。 Liferay Commerceでは、 [デフォルト](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) をはじめ、 [アイテムバージョン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) や [定期的なアイテム（サブスクリプション）](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java) を確認するバリデーターなど複数の注文バリデーターをすぐに使うことができます。
+注文バリデーターは、チェックアウトを行う際に顧客のカート内のアイテムを検証するクラスです。 Liferay Commerceでは、 [デフォルト](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) をはじめ、 [アイテムバージョン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) や [定期的なアイテム（サブスクリプション）](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java) を確認するバリデーターなど複数の注文バリデーターをすぐに使うことができます。
 
 ## 概要
 
@@ -25,7 +25,7 @@
     ```
 
     ```bash
-    liferay-n9b2.zipを解凍してください。
+    unzip liferay-n9b2.zip
     ```
 
 1. サンプルをビルドしてデプロイします。
@@ -35,7 +35,7 @@
     ```
 
     ```{note}
-    このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
+    このコマンドは、デプロイされたjarをDockerコンテナの `/opt/liferay/osgi/modules` にコピーするのと同じです。
     ```
 
 1. Dockerコンテナコンソールでデプロイを確認します。
@@ -71,9 +71,9 @@
 public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
 ```
 
-> Liferay Commerceが、 [注文バリデーターレジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java) で新しい注文バリデーターを他のバリデーターと区別できるように、注文バリデーターに個別のキーを提供することが重要です。 すでに使用されているキーを再利用すると、既存の関連付けられているバリデーターが上書きされます。
+> Liferay Commerceが、 [注文バリデーターレジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java) で新しい注文バリデーターを他のバリデーターと区別できるように、注文バリデーターに個別のキーを提供することが重要です。 すでに使用されているキーを再利用すると、既存の関連付けられているバリデーターが上書きされます。
 > 
-> `commerce.order.validator.priority`値は、他のバリデーターとの順序において、この注文バリデーターがいつ検証を実行するかを示します。 たとえば、 [デフォルトの注文バリデーター](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) の値は10です。 この注文バリデータに9の値を指定すると、デフォルトのバリデーターの直前に検証が実行されます。
+> `commerce.order.validator.priority`値は、他のバリデーターとの順序において、この注文バリデーターがいつ検証を実行するかを示します。 たとえば、 [デフォルトの注文バリデーター](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) の値は10です。 この注文バリデータに9の値を指定すると、デフォルトのバリデーターの直前に検証が実行されます。
 
 ### `CommerceOrderValidator`インターフェイスを確認する
 
@@ -89,7 +89,7 @@ public String getKey();
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity) throws PortalException;
 ```
 
-> これは、カスタム検証ロジックを追加する2つの検証メソッドの1つです。 このメソッドは、顧客がカートにアイテムを追加するたびに呼び出されます。 これは`CommerceOrderValidatorResult`を返し、booleanを使用して結果が検証に合格したかどうかを示します。 [CommerceOrderValidatorResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java) を参照してください。
+> これは、カスタム検証ロジックを追加する2つの検証メソッドの1つです。 このメソッドは、顧客がカートにアイテムを追加するたびに呼び出されます。 これは`CommerceOrderValidatorResult`を返し、booleanを使用して結果が検証に合格したかどうかを示します。 [CommerceOrderValidatorResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java) を参照してください。
 
 ```java
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem) throws PortalException;
@@ -143,7 +143,7 @@ private static final double _MAX_ITEM_PRICE = 100.0;
 private static final int _MAX_ITEM_QUANTITY = 10;
 ```
 
-> この例の主な検証チェックは、価格（`BigDecimal`として保存されている）が100ドルを超えていて、数量が10を超えているかどうかをチェックすることです。 `CPInstance`から価格情報を取得します。これには、顧客が追加した注文に関する情報が含まれています。 `CPInstance`で使用できる他のメソッドについては、 [CPInstance](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) と [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) を参照してください。
+> この例の主な検証チェックは、価格（`BigDecimal`として保存されている）が100ドルを超えていて、数量が10を超えているかどうかをチェックすることです。 `CPInstance`から価格情報を取得します。これには、顧客が追加した注文に関する情報が含まれています。 `CPInstance`で使用できる他のメソッドについては、 [CPInstance](hhttps://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) と [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) を参照してください。
 > 
 > メインの検証チェックで検証が失敗した理由を説明するローカライズされたメッセージを含めることをお勧めします。
 
@@ -175,7 +175,7 @@ public CommerceOrderValidatorResult validate(
 }
 ```
 
-> このメソッドは顧客のカート内のアイテムに対して呼び出されるため、同じ検証ロジックをこのメソッドに追加します。 この場合の主な違いは、`CommerceOrderItem`オブジェクトから情報を取得することです。`CommerceOrderItem`で使用できる他のメソッドについては、 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) および [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) を参照してください。
+> このメソッドは顧客のカート内のアイテムに対して呼び出されるため、同じ検証ロジックをこのメソッドに追加します。 この場合の主な違いは、`CommerceOrderItem`オブジェクトから情報を取得することです。`CommerceOrderItem`で使用できる他のメソッドについては、 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) および [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) を参照してください。
 
 #### 言語キーを`Language.properties`に追加する
 

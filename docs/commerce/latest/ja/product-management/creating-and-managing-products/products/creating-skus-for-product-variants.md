@@ -9,7 +9,7 @@ Liferay Commerceでは、複数のSKUを商品に追加して商品バリアン�
 ```
 
 ```{tip}
-商品オプションの値は、SKUの作成に使用する前に確定することを強くお勧めします。 詳しくは、`Using Product Options <./using-product-options.md`>_ を参照してください。
+商品オプションの値は、SKUの作成に使用する前に確することを強くお勧めします。 詳しくは、[商品オプションの使用](./using-product-options.md) を参照してください。
 ```
 
 ## 複数のSKUを自動的に生成

@@ -4,7 +4,7 @@
 
 ## 自動通貨変換を有効にする
 
-デフォルトでは、Liferay Commerceは外国為替レートについてヨーロッパ中央銀行に依存しています。 ECBは約24時間ごとに為替レートを更新します。 代替の為替レートプロバイダを実装する方法については、[Implementing an Exchange Rate Provider](../../developer-guide/sales/implementing-an-exchange-rate-provider.md)を参照してください。
+デフォルトでは、Liferay Commerceは外国為替レートについてヨーロッパ中央銀行に依存しています。 ECBは約24時間ごとに為替レートを更新します。 代替の為替レートプロバイダを実装する方法については、[カスタム為替レートプロバイダーの実装](../../developer-guide/sales/implementing-an-exchange-rate-provider.md) を参照してください。
 
 自動為替レート更新を有効にするには：
 

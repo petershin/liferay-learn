@@ -10,7 +10,7 @@ Liferay Commerceは、単一の店舗と倉庫を持つユーザーから、複�
 
 在庫管理システムでは、ユーザーはすべての在庫を一箇所で追跡することができます。 在庫管理では、SKUごとに在庫を追跡します。同じSKUを持つすべてのアイテムは、商品カタログでどのように作成されたかにかかわらず、同じ在庫を共有します。
 
-詳細は、[Using Inventory Management](./using-the-inventory-management-system.md)を参照してください。
+詳細は、[在庫管理システムの活用](./using-the-inventory-management-system.md) を参照してください。
 
 ```{important}
 在庫の各商品は、少なくとも1つのSKUに関連付けられている必要があります。
@@ -22,7 +22,7 @@ Liferay Commerceは、単一の店舗と倉庫を持つユーザーから、複�
 
 在庫管理についての詳細は、 [コマース倉庫のセットアップ](./setting-up-commerce-warehouses.md) と [倉庫リファレンスガイド](./warehouse-reference-guide.md) を参照してください。
 
-ストアが商品の注文を受け付けるには、関連するチャネルに関連付けられた倉庫が必要です。 チャネルの仕組みについては、記事[「Introduction to Channels」](../store-management/channels/introduction-to-channels.md)を参照してください。
+ストアが商品の注文を受け付けるには、関連するチャネルに関連付けられた倉庫が必要です。 チャネルの仕組みについては、記事 [チャネルについて](../store-management/channels/introduction-to-channels.md) を参照してください。
 
 ## 在庫数の見積もり
 

@@ -42,5 +42,5 @@
 
 * [ウィジェットリファレンス](../liferay-commerce-widgets/widget-reference.md)
 * [ページの作成](https://help.liferay.com/hc/ja/articles/360018171291-Creating-Pages)
-* [カスタム清算ステップの実装](../../developer-guide/implementing-a-custom-checkout-step.md)
-* [定額配送方法の使用](../../store-managemen/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
+* [カスタム清算ステップの実装](../../developer-guide/sales/implementing-a-custom-checkout-step.md)
+* [定額配送方法の使用](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)

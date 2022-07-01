@@ -7,15 +7,15 @@
 ![Miniumで利用できる商品詳細ページのサンプルです。](./product-details/images/01.png)
 
 ```{note}
-*［Product Comparison Bar］*ウィジェットは、1つ以上の製品を選択した場合にのみ有効になります。
+*［Product Comparison Bar］* ウィジェットは、1つ以上の製品を選択した場合にのみ有効になります。
 ```
 
-上の画像では、 ［**Product Publisher**］ ウィジェットが、同じカテゴリーとタグを持つ類似のアイテムを表示するように設定されています。 ストア管理者は、このウィジェットのコンテンツを変更して、他のタイプの関連商品を表示できます。 詳しくは、 [Related Products, Upsells, and Cross-Sells](../../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)をご覧ください。
+上の画像では、 ［**Product Publisher**］ ウィジェットが、同じカテゴリーとタグを持つ類似のアイテムを表示するように設定されています。 ストア管理者は、このウィジェットのコンテンツを変更して、他のタイプの関連商品を表示できます。 詳しくは、 [関連商品、アップセル、クロスセル](../../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)をご覧ください。
 
 ![［Product Publisher］ウィジェットの設定です。](./product-details/images/02.png)
 
 ```{note}
-*［Product Details］* ウィジェットおよび*［Product Publisher］* ウィジェットは、Liferay のアダプティブメディアをすぐにサポートします。 詳しくは、 [Serving Device and Screen Optimized Media](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) を参照してください。
+*［Product Details］* ウィジェットおよび *［Product Publisher］* ウィジェットは、Liferay のアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) を参照してください。
 ```
 
 ## 追加情報

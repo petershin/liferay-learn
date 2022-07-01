@@ -14,12 +14,12 @@ Liferay Commerceには、寸法と重量の2つの計量単位が定義されて
 1. ［**計量単位**］ をクリックします。
 1. （+）ボタンをクリックして、新しい寸法を追加します。
 1. 次のように入力します：
-    ***［Name**］ : ［centimeters］
-    ***［Key**］ ：［cm］
-    ***［Primary**］ ： ［**No**］
-    ***［Ratio to inches**］ ：［2.54］
-    ***［Priority**］ ：［4.0］
-
+    * **Name**: centimeters
+    * **Key**: cm
+    * **Primary**: _No_
+    * **Ratio to inches**: 2.54
+    * **Priority**: 4.0
+    
     ![計量単位の追加](./measurement-units/images/01.png)
 
 1. ［**Save**］ をクリックします。

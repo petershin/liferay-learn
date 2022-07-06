@@ -27,7 +27,7 @@ Open your terminal, and run the following command:
 curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 ```
 
-If you get a permissions error, try running the same command with `sudo`.
+If you get a permissions error, try running the command again and replacing `bash` with `sudo bash`.
 
 ### Windows Systems
 

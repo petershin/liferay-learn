@@ -1,3 +1,10 @@
+---
+toc:
+- ./database-service/database-service.md
+- ./database-service/changing-your-database-username.md
+- ./database-service/changing-your-database-password.md
+---
+
 # データベースサービス
 
 ```{toctree}

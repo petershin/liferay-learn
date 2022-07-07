@@ -1,3 +1,12 @@
+---
+toc:
+- ./platform-services/continuous-integration.md
+- ./platform-services/search-service.md
+- ./platform-services/web-server-service.md 
+- ./platform-services/using-a-custom-service.md
+- ./platform-services/backup-service.md
+- ./platform-services/database-service.md
+---
 # プラットフォームサービス
 
 ```{toctree}
@@ -6,13 +15,8 @@
 platform-services/continuous-integration.md
 platform-services/search-service.md
 platform-services/web-server-service.md 
- プラットフォームサービス/カスタムサービス.md 
-
- プラットフォームサービス/バックアップサービス.md #2
 platform-services/using-a-custom-service.md
-
 platform-services/backup-service.md
-
 platform-services/database-service.md
 ```
 

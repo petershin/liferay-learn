@@ -9,19 +9,15 @@ Liferay DXPは、標準で50の言語をサポートしています。 各ロケ
 ```
 
 ## サンプルプロジェクトを参照する
+```{include} /_snippets/run-liferay-dxp.md
+```
 
-1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
+次に、以下の手順に従います。
 
-   ```bash
-   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
-   ```
-
-   別のLiferay PortalバージョンまたはLiferay DXPを実行している場合は、上記のコマンドを適宜調整してください。
-
-1. [Automatically Generating Translations](./liferay-m7d6.zip) をダウンロードして解凍します。
+1. [翻訳を自動的に生成する](./liferay-m7d6.zip)をダウンロードして、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/localization/liferay-m7d6.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/localization/liferay-m7d6.zip -O
    ```
 
    ```bash
@@ -34,7 +30,7 @@ Liferay DXPは、標準で50の言語をサポートしています。 各ロケ
    microsoft.translator.subscription.key={your unique key}
    ```
 
-   Language Builderが機能するためには、独自の [Microsoft Translator購読キー](https://www.microsoft.com/en-us/translator/business/translator-api/) を取得する必要があります。
+   Language Builderが機能するためには、独自の[Microsoft Translator購読キー](https://www.microsoft.com/en-us/translator/business/translator-api/)を取得する必要があります。
 
 1. モジュールルートから、Language Builderを実行します。
 
@@ -44,7 +40,7 @@ Liferay DXPは、標準で50の言語をサポートしています。 各ロケ
 
    ターミナルウィンドウで、Language Builderはさまざまな言語プロパティファイルを生成します。 `「Translation is disabled because credentials are not specified」`というエラーが表示された場合は、購読キーが正しいことを再確認してください。
 
-2. モジュールの`src/main/resources/content`フォルダに移動して、翻訳されたプロパティファイルを表示します。
+1. モジュールの`src/main/resources/content`フォルダに移動して、翻訳されたプロパティファイルを表示します。
 
   ![プロパティファイルは、src/main/resources/contentフォルダにあります。](./automatically-generating-translations/images/01.png)
 
@@ -52,7 +48,7 @@ Liferay DXPは、標準で50の言語をサポートしています。 各ロケ
 
 サンプルプロジェクトでは、`Language.properties`ファイルに1つの言語キーがあります。  アプリケーションに必要な数の言語キーを追加してから、Language Builderを実行します。
 
-言語キーをLiferayにデプロイするには、[標準言語ファイルの上書き方法](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)を参照してください。 既存のキーをオーバーライドする場合でも、新しいキーを追加する場合でも、手順は同じです。
+言語キーをLiferayにデプロイするには、[グローバル言語キーのオーバーライド](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)を参照してください。 既存のキーをオーバーライドする場合でも、新しいキーを追加する場合でも、手順は同じです。
 
 一部の言語を自動的に翻訳されないようにする場合は、プロジェクトの`build.gradle`ファイルで`excludedLanguageIds`プロパティを使用します。  たとえば、フランス語を含める場合は以下のようにします。
 
@@ -62,4 +58,4 @@ buildLang {
 }
 ```
 
-Language Builderツールと追加の構成の詳細については、 [Lang Builder Gradle Plugin](https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-lang-builder) を参照してください。
+Language Builderツールと追加の構成の詳細については、[Lang Builder Gradle Plugin](https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-lang-builder)を参照してください。

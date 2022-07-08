@@ -2,32 +2,28 @@
 
 メッセージバスの非同期オプションは、「ファイア・アンド・フォーゲット」動作を提供します。メッセージを送信し、応答を待たずに処理を続行します。
 
-非同期メッセージは、 **シリアル** または **パラレル** 宛先に送信されます。
+非同期メッセージは、*シリアル*または*パラレル*宛先に送信されます。
 
-****シリアル** 宛先の場合、メッセージバスはメッセージをキューに入れ、メッセージごとに1つのワーカースレッドを委任します。 スレッドはメッセージリスナーを順番に処理します。
+* *シリアル*宛先の場合、メッセージバスはメッセージをキューに入れ、メッセージごとに1つのワーカースレッドを委任します。 スレッドはメッセージリスナーを順番に処理します。
 
-****パラレル** 宛先の場合、メッセージバスはメッセージをキューに入れ、1つのメッセージリスナーにつきメッセージごとに1つのワーカースレッドを委任します。 スレッドはメッセージリスナーを同時に処理します。
+* *パラレル*宛先の場合、メッセージバスはメッセージをキューに入れ、1つのメッセージリスナーにつきメッセージごとに1つのワーカースレッドを委任します。 スレッドはメッセージリスナーを同時に処理します。
 
 別のクラス（メッセージリスナー）がリッスンしているシリアル宛先にメッセージを送信することから始めます。
 
 ## メッセージを送る
+```{include} /_snippets/run-liferay-portal.md
+```
 
 サンプルプロジェクトでメッセージを送信することから始めます。
 
 1. サンプルをダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/message-bus/liferay-n8k5.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-n8k5.zip -O
    ```
 
    ```bash
    unzip liferay-n8k5.zip
-   ```
-
-1. [Liferay Dockerコンテナ](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
-
-   ```bash
-   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
    ```
 
 1. 宛先モジュール`n8k5-able-impl`をビルドしてデプロイします。
@@ -45,7 +41,7 @@
     ```
 
 
-    The Docker container console shows that the module started.
+    Dockerコンテナコンソールに、モジュールが起動されたことが示されます。
 
     ```bash
     STARTED com.acme.n8k5.able.impl_1.0.0
@@ -62,7 +58,7 @@
     ```
 
 
-    The Docker container console shows that the module started.
+    Dockerコンテナコンソールに、モジュールが起動されたことが示されます。
 
     ```bash
     STARTED com.acme.n8k5.charlie.impl_1.0.0
@@ -79,7 +75,7 @@
     ```
 
 
-    In the Docker container console, confirm `N8K5Baker` sent a message, `N8K5CharlieMessageListener` received a message, and the `n8k5-baker-impl` module started.
+    Dockerコンテナコンソールで、`N8K5Baker` がメッセージを送信し、`N8K5CharlieMessageListener` がメッセージを受信し、`n8k5-baker-impl` モジュールが起動したことを確認してください。
 
    ```bash
    INFO  [pipe-start 2025][N8K5Baker:24] Sent message to acme/n8k5_able
@@ -95,7 +91,7 @@
 
 クラスの例：
 
-| クラス                                              | Description                                      |
+| クラス                                              | 説明                                               |
 |:------------------------------------------------ |:------------------------------------------------ |
 | n8k5-able-impl の `N8K5AbleMessagingConfigurator` | `acme/n8k5_able`という名前のメッセージ宛先を作成し、メッセージバスに登録します。 |
 | n8k5-baker-impl の `N8K5Baker`                    | `acme/n8k5_able`宛先にメッセージを送信します。                  |
@@ -107,7 +103,7 @@
 1. メッセージバスがメッセージを`N8K5CharlieMessageListener`に送信します。
 1. `N8K5CharlieMessageListener`がメッセージを受信します。
 
-宛先構成と送信者クラスを調べます。 リスナークラス`N8K5CharlieMessageListener`は、 [メッセージを聞く](./listening-for-messages.md) に示す方法と同じ方法で登録します。
+宛先構成と送信者クラスを調べます。 リスナークラス`N8K5CharlieMessageListener`は、[Listening for Messages](./listening-for-messages.md)に示す方法と同じ方法で登録します。
 
 ## 宛先構成を調べる
 
@@ -118,9 +114,9 @@
 :lines: 15-42
 ```
 
-どのクラスでも宛先を作成および構成できますが、 [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) には`DestinationFactory`のように依存関係を挿入できます。 `_destinationFactory`フィールドの [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) アノテーションは、LiferayのOSGiフレームワークに`DestinationFactory`インスタンスを挿入するようにシグナルを送信します。
+どのクラスでも宛先を作成および構成できますが、[`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)には`DestinationFactory`のように依存関係を挿入できます。 `_destinationFactory`フィールドの[`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html)アノテーションは、LiferayのOSGiフレームワークに`DestinationFactory`インスタンスを挿入するようにシグナルを送信します。
 
-`_activate`メソッドでは、`N8K5AbleMessagingConfigurator`は [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) と [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) を使用して、`acme/n8k5_able`という名前の **シリアル** 宛先を作成します。 次に、OSGiフレームワーク`BundleContext`を使用して、`Destination`に対するサービスを登録します。 `N8K5AbleMessagingConfigurator`が無効化されると、`_deactivate`メソッドはサービスの登録を解除します。
+`_activate`メソッドでは、`N8K5AbleMessagingConfigurator`は[`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java)と[`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java)を使用して、`acme/n8k5_able`という名前の*シリアル*宛先を作成します。 次に、OSGiフレームワーク`BundleContext`を使用して、`Destination`に対するサービスを登録します。 `N8K5AbleMessagingConfigurator`が無効化されると、`_deactivate`メソッドはサービスの登録を解除します。
 
 ## 送信者を調べる
 
@@ -133,7 +129,7 @@
 
 コンポーネントとして、`N8K5Baker`は`@Reference`アノテーションを使用して`MessageBus`インスタンスを挿入します。
 
-コンポーネントのアクティブ化時に、`N8K5Baker`は、アクティブ化メソッド`_activate()`を介してメッセージを作成して送信します。 [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) インスタンスを構築し、それにペイロードを追加します。 ペイロードは、`Message`に入力できるもののうちの1つです。
+コンポーネントのアクティブ化時に、`N8K5Baker`は、アクティブ化メソッド`_activate()`を介してメッセージを作成して送信します。 [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java)インスタンスを構築し、それにペイロードを追加します。 ペイロードは、`Message`に入力できるもののうちの1つです。
 
 主なメッセージ入力方法は次のとおりです。
 
@@ -143,10 +139,10 @@
 | `setResponseDestinationName(String)`  | 応答を受信するための`Destination`を参照します。 |
 | `setValues(Map<String,Object>)` | `Map`から追加データを提供します。            |
 
-`N8K5Baker`は、 [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java) の`sendMessage(String, Message)`メソッドを呼び出して、`acme/n8k5_able`という名前の [`宛先`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) にメッセージを送信します。 `MessageBus`は新しいスレッドを開始し、`acme/n8k5_able` `宛先`に登録されている [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) インスタンスに`メッセージ`を送信します。 `N8K5Baker`のスレッドが継続します。
+`N8K5Baker`は、[`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java)の`sendMessage(String, Message)`メソッドを呼び出して、`acme/n8k5_able`という名前の[`宛先`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)にメッセージを送信します。 `MessageBus`は新しいスレッドを開始し、`acme/n8k5_able` `宛先`に登録されている[`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)インスタンスに`メッセージ`を送信します。 `N8K5Baker`のスレッドが継続します。
 
 ```{note}
-`Message`への応答を受信したい場合は、` Message`に応答先を設定し、 `N8K5Baker`などのクラスを` MessageListener`としてその宛先に登録します。 詳細については、 [メッセージを聞く](./listening-for-messages.md) を参照してください。
+`Message`への応答を受信したい場合は、` Message`に応答先を設定し、 `N8K5Baker`などのクラスを` MessageListener`としてその宛先に登録します。 詳細については、[メッセージのリッスン](./listening-for-messages.md)を参照してください。
 ```
 
 ## 応答処理の追加
@@ -199,7 +195,7 @@ private ServiceRegistration<Destination> _serviceRegistration;
 送信者`N8K5Baker`の変更点は次のとおりです。
 
 1. `@Component`アノテーションを更新し、`N8K5Baker`を`MessageListener.class`タイプのサービスとして宣言し、プロパティ`"destination.name=acme/n8k5_baker"`を介して`N8K5Baker`を応答先にマッピングします。
-1. [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) インターフェイスを実装します。
+1. [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)インターフェイスを実装します。
 1. `receive(Message)`メソッドをメッセージ処理ロジックでオーバーライドします。
 
 送信者の変更は次のようになります。
@@ -293,11 +289,11 @@ INFO  [acme/n8k5_baker-2][N8K5Baker:30] Received message payload N8K5CharlieMess
 `N8K5CharlieMessageListener`は、`N8K5Baker`のメッセージを受信してから、応答メッセージを応答先に送信します。 `N8K5Baker`は応答メッセージを受信し、メッセージペイロードを出力します。
 
 ```{note}
-クラスでメッセージを再度交換する場合は、[Gogo シェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)でモジュール（OSGiバンドル）を再起動できます。  バンドルを一覧表示して（`lb`）バンドルIDを取得し、バンドルを停止して（ [stop](id) ）、バンドルを再起動します（ [start](id) ）。
+クラスでメッセージを再度交換する場合は、[Gogo シェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)でモジュール（OSGiバンドル）を再起動できます。  バンドルを一覧表示して（`lb`）バンドルIDを取得し、バンドルを停止して（`stop <id>`）、バンドルを再起動します（`start <id>`）。
 ```
 
 ```{note}
-OSGiコンポーネントではないクラスでは、 [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusUtil.java) と、`Destination`、`DestinationConfiguration`、`Message`、および`MessageListener`インスタンスを使用してメッセージを送信できます。
+OSGiコンポーネントではないクラスでは、[MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusUtil.java)と、`Destination`、`DestinationConfiguration`、`Message`、および`MessageListener`インスタンスを使用してメッセージを送信できます。
 
 示されているように`Destination`サービスを登録できますが、`BundleContext`を別の方法で取得する必要があります（たとえば、`Bundle bundle = FrameworkUtil.getBundle(YourClass.class); BundleContext bundleContext = bundle.getBundleContext()`を呼び出しを行うことによって）。
 ```
@@ -306,9 +302,9 @@ OSGiコンポーネントではないクラスでは、 [MessageBusUtil](https:/
 
 ## 次のステップ
 
-非同期メッセージングに慣れてきたので、最適なパフォーマンスになるように調整できます。 [メッセージングパフォーマンスのチューニング](./tuning-messaging-performance.md) でその方法を学びましょう。
+非同期メッセージングに慣れてきたので、最適なパフォーマンスになるように調整できます。 [Tuning Messaging Performance](./tuning-messaging-performance.md)でその方法を学びましょう。
 
-**デフォルト** モードと **ダイレクト** モードを使用した同期メッセージングを検討する場合は、詳細について [ダイレクト同期メッセージングの使用](./using-direct-synchronous-messaging.md) および [デフォルトの同期メッセージングの使用](./using-default-synchronous-messaging.md) を参照してください。
+*デフォルト*モードと*ダイレクト*モードを使用した同期メッセージングを検討する場合は、詳細について[Using Direct Synchronous Messaging](./using-direct-synchronous-messaging.md)および[Using Default Synchronous Messaging](./using-default-synchronous-messaging.md)を参照してください。
 
 ## 追加情報
 

@@ -5,7 +5,7 @@
 サンプルプロジェクトをダウンロードして解凍することから始めます。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
+curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
 ```
 
 ```bash
@@ -76,18 +76,18 @@ APIクラスから順に、すべてのクラスについて説明します。
 
 APIクラスは、パブリックインターフェイス、ユーティリティー、および定数を定義します。
 
-| APIクラス                         | Description                                                                                                                                                                                                                                   |
-|:------------------------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `W9B7Entry`                    | `W9B7Entry`モデルインターフェイス。 `W9B7EntryModel`を拡張します。                                                                                                                                                                                               |
-| `W9B7EntryModel`               | ベースモデルインターフェイス。 このインターフェイスとその`W9B7EntryModelImpl`実装は、サービスビルダーが生成するデフォルトのプロパティアクセサーのコンテナとしてのみ機能します。 すべてのヘルパーメソッドとすべてのアプリケーションロジックを`W9B7EntryImpl`に追加する必要があります。                                                                                 |
-| `W9B7EntrySoap`                | `W9B7EntryModelImpl`に似たSOAPモデル。 `W9B7EntrySoap`はシリアル化可能です。 `W9B7Entry`は実装されていません。                                                                                                                                                             |
-| `W9B7EntryTable`               | エンティティのテーブルを表します。                                                                                                                                                                                                                             |
-| `W9B7EntryWrapper`             | `W9B7Entry`をラップするラッパー。 このクラスを拡張して、[エンティティをカスタマイズ](../../../liferay-internals/extending-liferay/creating-service-wrappers.md)することができます。                                                                                                        |
-| `W9B7EntryPersistence`         | `create`、`remove`、`countAll`、`find`、`findAll`などのエンティティのCRUDメソッドを定義する永続性インターフェイス。                                                                                                                                                              |
-| `W9B7EntryUtil`                | `W9B7EntryPersistenceImpl`をラップし、CRUD操作のためにデータベースへの直接アクセスを提供する永続性ユーティリティクラス。 このユーティリティは、サービスレイヤーでのみ使用する必要があります。ポートレットクラスでは、`W9B7Entry`クラスを[`@Reference`アノテーション](../../../liferay-internals/fundamentals/using-an-osgi-service.md)付きで挿入して使用します。 |
-| `W9B7EntryLocalService`        | ローカルサービスインターフェイス。                                                                                                                                                                                                                             |
-| `W9B7EntryLocalServiceUtil`    | `W9B7EntryLocalServiceImpl`をラップするローカルサービスユーティリティクラス。                                                                                                                                                                                          |
-| `W9B7EntryLocalServiceWrapper` | `W9B7EntryLocalService`を実装するローカルサービスラッパー。 このクラスを拡張して、[エンティティのローカルサービスをカスタマイズ](../../../liferay-internals/extending-liferay/creating-service-wrappers.md)することができます。                                                                            |
+| APIクラス                         | 説明                                                                                                                                                                                                                                               |
+|:------------------------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `W9B7Entry`                    | `W9B7Entry`モデルインターフェイス。 `W9B7EntryModel`を拡張します。                                                                                                                                                                                                  |
+| `W9B7EntryModel`               | ベースモデルインターフェイス。 このインターフェイスとその`W9B7EntryModelImpl`実装は、サービスビルダーが生成するデフォルトのプロパティアクセサーのコンテナとしてのみ機能します。 すべてのヘルパーメソッドとすべてのアプリケーションロジックを`W9B7EntryImpl`に追加する必要があります。                                                                                    |
+| `W9B7EntrySoap`                | `W9B7EntryModelImpl`に似たSOAPモデル。 `W9B7EntrySoap`はシリアル化可能です。 `W9B7Entry`は実装されていません。                                                                                                                                                                |
+| `W9B7EntryTable`               | エンティティのテーブルを表します。                                                                                                                                                                                                                                |
+| `W9B7EntryWrapper`             | `W9B7Entry`をラップするラッパー。 このクラスを拡張して、[エンティティをカスタマイズ](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)することができます。                                                                                                        |
+| `W9B7EntryPersistence`         | `create`、`remove`、`countAll`、`find`、`findAll`などのエンティティのCRUDメソッドを定義する永続性インターフェイス。                                                                                                                                                                 |
+| `W9B7EntryUtil`                | `W9B7EntryPersistenceImpl`をラップし、CRUD操作のためにデータベースへの直接アクセスを提供する永続性ユーティリティクラス。 このユーティリティは、サービスレイヤーでのみ使用する必要があります。ポートレットクラスでは、`W9B7Entry`クラスを[`@Reference`アノテーション](../../../../liferay-internals/fundamentals/using-an-osgi-service.md)付きで挿入して使用します。 |
+| `W9B7EntryLocalService`        | ローカルサービスインターフェイス。                                                                                                                                                                                                                                |
+| `W9B7EntryLocalServiceUtil`    | `W9B7EntryLocalServiceImpl`をラップするローカルサービスユーティリティクラス。                                                                                                                                                                                             |
+| `W9B7EntryLocalServiceWrapper` | `W9B7EntryLocalService`を実装するローカルサービスラッパー。 このクラスを拡張して、[エンティティのローカルサービスをカスタマイズ](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)することができます。                                                                            |
 
 ## 実装クラス
 
@@ -168,12 +168,10 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
 ## 新しいサービスメソッドのテスト
 
 次に、モジュールをデプロイして、新しいサービスをテストします。
+```{include} /_snippets/run-liferay-portal.md
+```
 
-1. [Liferay Dockerコンテナ](../../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
-
-   ```bash
-   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-   ```
+次に、以下の手順に従います。
 
 1. サンプルをビルドしてデプロイします。
 
@@ -191,14 +189,6 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
     STARTED com.acme.w9b7.api_1.0.0
     STARTED com.acme.w9b7.service_1.0.0
     ```
-
-1. ブラウザで`http://localhost:8080`を開きます。
-
-1. デフォルトの認証情報を使用してサインインします。
-
-    **ユーザー名** : `test@liferay.com`
-
-    **パスワード：** `test`
 
 1. ［コントロールパネル］→［サーバー管理］→［スクリプト］でスクリプトコンソールに移動します。
 

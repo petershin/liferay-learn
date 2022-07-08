@@ -2,7 +2,7 @@
 
 ほとんどのアプリケーションでは、データベースエンティティまたはJavaオブジェクト間の関連が必要です。 例として、Liferayの掲示板アプリケーションを取り上げます。 各掲示板のメッセージは、特定の掲示板スレッドに属しています。 掲示板スレッドは、特定の掲示板カテゴリに属している場合もあります。
 
-アプリケーションの [`service.xml`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/message-boards/message-boards-service/service.xml) ファイルで関連がどのように定義されているかを確認できます。
+アプリケーションの[`service.xml`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/message-boards/message-boards-service/service.xml)ファイルで関連がどのように定義されているかを確認できます。
 
 ```xml
 <entity external-reference-code="group" human-name="message-boards message" local-service="true" name="MBMessage" remote-service="true" trash-enabled="true" uuid="true">

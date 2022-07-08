@@ -1,21 +1,17 @@
 # Configuration Form Renderer
 
-[構成インターフェイスを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface) すると、構成UIが自動的に生成されます。  ただし、UIのルックアンドフィールをカスタマイズしたい場合もあります。 たとえば、会社のデザインの美的感覚に一致するようにUIを変更するとします。 ` ConfigurationFormRenderer`の実装でこれを行う方法は次のとおりです。
+[構成インターフェイスを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface)すると、構成UIが自動的に生成されます。  ただし、UIのルックアンドフィールをカスタマイズしたい場合もあります。 たとえば、会社のデザインの美的感覚に一致するようにUIを変更するとします。 ` ConfigurationFormRenderer`の実装でこれを行う方法は次のとおりです。
 
 ## サンプルプロジェクトを参照する
+```{include} /_snippets/run-liferay-dxp.md
+```
 
-1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
+次に、以下の手順に従います。
 
-   ```bash
-   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
-   ```
-
-   別のLiferay PortalバージョンまたはLiferay DXPを実行している場合は、上記のコマンドを適宜調整してください。
-
-1. [Configuration Form Renderer](./liferay-b7r2.zip) をダウンロードして解凍します。
+1. [Configuration Form Renderer](./liferay-b7r2.zip)をダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
    ```
 
    ```bash
@@ -40,13 +36,13 @@
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
-1. ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**システム設定**］ &rarr; ［**サードパーティー**］ に移動します。 ［**B7R2 Configuration**］ をクリックします。
+1. *［コントロールパネル］* &rarr; *［設定］* &rarr; *［System Settings］* &rarr; *［Third Party］*に移動します。 *［B7R2 Configuration］*をクリックします。
 
    ![システム設定でU2G5構成に移動します。](./configuration-form-renderer/images/01.png)
 
    このビューはカスタムJSPファイルによって提供されることに注意してください。
 
-## 構成インターフェイスを作成する
+## 構成インターフェースを作成する
 
 構成インターフェイスで構成可能な属性を定義します。 サンプルプロジェクトには、`b7r2Color`という1つの構成可能な属性があります。
 
@@ -82,7 +78,7 @@
    :lines: 26-29
    ```
 
-1. `getRequestParameters()`メソッドをオーバーライドします。 このメソッドでは、カスタムUIによって送信されたパラメーターを読み取り、それらをマップに配置します。ここで、キーは構成インターフェイスにあるフィールドと一致します。
+1. `getRequestParameters()`メソッドをオーバーライドします。 このメソッドでは、カスタムUIによって送信されたパラメーターを読み取り、それらをマップに配置します。ここで、キーは構成インターフェースにあるフィールドと一致します。
 
    ```{literalinclude} ./configuration-form-renderer/resources/liferay-b7r2.zip/b7r2-web/src/main/java/com/acme/b7r2/web/internal/configuration/admin/display/B7R2ConfigurationFormRenderer.java
    :dedent: 1

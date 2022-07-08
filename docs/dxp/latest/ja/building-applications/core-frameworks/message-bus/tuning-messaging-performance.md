@@ -26,24 +26,22 @@
 |:-------- |:---------- |:--------------- |:----------- |
 | **パラレル** | はい         | はい              | いいえ         |
 | **シリアル** | はい         | はい              | いいえ         |
-| **同期** | いいえ        | いいえ             | はい          |
+| **同期**   | いいえ        | いいえ             | はい          |
 
 ここでは、サンプルプロジェクトのメッセージングパフォーマンスを調べることから始めます。 次に、APIを使用して宛先統計を取得し、宛先を設定します。 最後に、サンプルの宛先設定を再構成し、サンプルを再実行して、統計を調べます。
 
 ## サンプルプロジェクトでメッセージングを監視する
 
 サンプルプロジェクトは、宛先を作成し、メッセージリスナーを登録し、Gogoシェルコマンドを介して宛先統計を一覧表示します。
+```{include} /_snippets/run-liferay-portal.md
+```
 
-1. [Liferay Dockerコンテナ](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
-
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-    ```
+次に、以下の手順に従います。
 
 1. サンプルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O
     ```
 
     ```bash
@@ -159,8 +157,8 @@
 | 宛先設定         | APIメソッド                                                                                           |
 |:------------ |:------------------------------------------------------------------------------------------------- |
 | 宛先タイプ        | `Destination#getDestinationType()`                                                                |
-| 最大スレッドプールサイズ | `DestinationConfiguration#getWorkersMaxSize()` and `DestinationStatistic#getMaxThreadPoolSize()`  |
-| 最小スレッドプールサイズ | `DestinationConfiguration#getWorkersCoreSize()` and `DestinationStatistic#getMinThreadPoolSize()` |
+| 最大スレッドプールサイズ | `DestinationConfiguration#getWorkersMaxSize()` および `DestinationStatistic#getMaxThreadPoolSize()`  |
+| 最小スレッドプールサイズ | `DestinationConfiguration#getWorkersCoreSize()` および `DestinationStatistic#getMinThreadPoolSize()` |
 | メッセージキューのサイズ | `DestinationConfiguration#getMaximumQueueSize()`                                                  |
 
 **宛先統計：**
@@ -182,12 +180,12 @@
 
 シリアル宛先を使用していて、メッセージが一部のメッセージリスナーに十分な速度で到達しない場合は、最大スレッドプールサイズを増やすか（以下で説明します）、パラレル宛先タイプに切り替えてみてください。 メッセージバスは、スレッドプールのスレッドを使用して、パラレル宛先メッセージリスナーを同時に処理します。
 
-現在の [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) を必要なタイプの1つに置き換えることで、宛先タイプを切り替えることができます。 該当する`DestinationConfiguration`メソッドを使用して、新しいパラレルまたはシリアルの`DestinationConfiguration`を作成します。
+現在の[`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java)を必要なタイプの1つに置き換えることで、宛先タイプを切り替えることができます。 該当する`DestinationConfiguration`メソッドを使用して、新しいパラレルまたはシリアルの`DestinationConfiguration`を作成します。
 
 * `createParallelDestinationConfiguration(String)`
 * `createSerialDestinationConfiguration(String)`
 
-詳細については、 [Reconfigure the Example Destination](#reconfigure-the-example-destination) を参照してください。
+詳細については、[サンプルの宛先を再構成する](#reconfigure-the-example-destination)を参照してください。
 
 ## メッセージキューとスレッドプールの構成
 
@@ -197,7 +195,7 @@
 
 メッセージバスは、宛先のスレッドプールからメッセージリスナー処理スレッドを引き出します。 プールには、開始サイズと最大サイズがあります。
 
-次の [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) メソッドを使用して、メッセージキューの最大サイズ、拒否された実行ハンドラー、スレッドプールの開始サイズ（コアサイズ）、およびスレッドプールの最大サイズを変更できます。
+次の[`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java)メソッドを使用して、メッセージキューの最大サイズ、拒否された実行ハンドラー、スレッドプールの開始サイズ（コアサイズ）、およびスレッドプールの最大サイズを変更できます。
 
 * `setMaximumQueueSize(int maximumQueueSize)`
 * `setRejectedExecutionHandler(RejectedExecutionHandler rejectedExecutionHandler)`
@@ -206,7 +204,7 @@
 
 次に、サンプルの宛先を再構成します。
 
-## サンプルの宛先を再構成します
+## サンプルの宛先の再構成
 
 ここでは、次の設定を使用して、サンプルの`acme/w3r2_able`宛先を再構成します。
 

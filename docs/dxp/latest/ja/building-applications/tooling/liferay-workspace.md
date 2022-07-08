@@ -10,26 +10,24 @@ liferay-workspace/configuring-a-liferay-docker-container.md
 liferay-workspace/configuring-liferay-workspace.md
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
+::::{grid} 2 :gutter: 3 3 3 3
 
-:::{grid-item-card} What is Liferay Workspace
+:::{grid-item-card} Liferay Workspaceの概要
 :link: ./liferay-workspace/what-is-liferay-workspace.md
 :::
 
-:::{grid-item-card} Creating a Liferay Workspace
+:::{grid-item-card} Liferay Workspaceの作成
 :link: ./liferay-workspace/creating-a-liferay-workspace.md
 :::
 
-:::{grid-item-card} Creating Code With Liferay Workspace
+:::{grid-item-card} Liferay Workspaceでのコード作成
 :link: ./liferay-workspace/creating-code-with-liferay-workspace.md
 :::
 
-:::{grid-item-card} Configuring a Liferay Docker Container
+:::{grid-item-card} LiferayのDockerコンテナの設定
 :link: ./liferay-workspace/configuring-a-liferay-docker-container.md
 :::
 
-:::{grid-item-card} Configuring Liferay Workspace
+:::{grid-item-card} Liferay Workspaceの設定
 :link: ./liferay-workspace/configuring-liferay-workspace.md
-:::
-::::
+::: ::::

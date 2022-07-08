@@ -12,17 +12,15 @@
 ## サンプルでイベントをトリガーする
 
 これらは、宛先の登録リスナー、メッセージリスナーの登録リスナー、そしてそれらがリッスンするイベントをトリガーするクラスをデプロイします。
+```{include} /_snippets/run-liferay-portal.md
+```
 
-1. [Liferay Dockerコンテナ](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
-
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-    ```
+次に、以下の手順に従います。
 
 1. サンプルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/message-bus/liferay-s3z9.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-s3z9.zip -O
     ```
 
     ```bash
@@ -87,21 +85,21 @@
 
 モジュールの概要は次のとおりです。
 
-1. `s3z9-able-impl`の [`MessageBusEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java) 実装は、宛先の追加と削除をリッスンします。
+1. `s3z9-able-impl`の[`MessageBusEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java)実装は、宛先の追加と削除をリッスンします。
 1. `s3z9-baker-impl`のメッセージングコンフィギュレータクラスは宛先を追加します。`s3z9-able-impl`の`MessageBusEventListener`実装は、追加された宛先通知を受信し、イベントをログに記録します。
-1. `s3z9-charlie-impl`の [`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java) 実装は、宛先に登録するメッセージリスナー、または宛先から登録解除するメッセージリスナーをリッスンします。
-1. `s3z9-dog-impl`の [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 実装は宛先に登録されます。 `s3z9-charlie-impl`の`DestinationEventListener`実装は、メッセージリスナー登録通知を受信し、イベントをログに記録します。
+1. `s3z9-charlie-impl`の[`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java)実装は、宛先に登録するメッセージリスナー、または宛先から登録解除するメッセージリスナーをリッスンします。
+1. `s3z9-dog-impl`の[`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)実装は宛先に登録されます。 `s3z9-charlie-impl`の`DestinationEventListener`実装は、メッセージリスナー登録通知を受信し、イベントをログに記録します。
 
 ## `MessageBusEventListener`を調べる
 
-[`宛先`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) が追加または削除されると、メッセージバスは [`MessageBusEventListeners`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java) に通知します。 以下に、`MessageBusEventListener`の実装例を示します。
+[`宛先`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)が追加または削除されると、メッセージバスは[`MessageBusEventListeners`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java)に通知します。 以下に、`MessageBusEventListener`の実装例を示します。
 
 ```{literalinclude} ./listening-for-registration-events/resources/liferay-s3z9.zip/s3z9-able-impl/src/main/java/com/acme/s3z9/able/internal/messaging/S3Z9AbleMessageBusEventListener.java
 :language: java
 :lines: 10-31
 ```
 
-[`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) アノテーションとその`service = MessageBusEventListener.class` 属性は、`S3Z9AbleMessageBusEventListener`を`MessageBusEventListener`として登録するようにランタイムフレームワークにシグナルを送信します。 実装は、`MessageBusEventListener`の次の2つのメソッドをオーバーライドします。
+[`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)アノテーションとその`service = MessageBusEventListener.class` 属性は、`S3Z9AbleMessageBusEventListener`を`MessageBusEventListener`として登録するようにランタイムフレームワークにシグナルを送信します。 実装は、`MessageBusEventListener`の次の2つのメソッドをオーバーライドします。
 
 * `destinationAdded(Destination destination)`は、新しく追加された`Destination`に応答します。
 * `destinationRemoved(Destination destination)`は、新しく削除された`宛先`に応答します。
@@ -110,7 +108,7 @@
 
 ## `DestinationEventListener`を調べる
 
-メッセージバスは、`DestinationEventListener`の指定した宛先に [`MessageListen`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) が登録されたり、登録解除されたりすると、 [`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java) に通知します。 以下に、`DestinationEventListener`の実装例を示します。
+メッセージバスは、`DestinationEventListener`の指定した宛先に[`MessageListen`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)が登録されたり、登録解除されたりすると、[`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java)に通知します。 以下に、`DestinationEventListener`の実装例を示します。
 
 ```{literalinclude} ./listening-for-registration-events/resources/liferay-s3z9.zip/s3z9-charlie-impl/src/main/java/com/acme/s3z9/charlie/internal/messaging/S3Z9CharlieDestinationEventListener.java
 :language: java

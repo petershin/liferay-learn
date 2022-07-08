@@ -3,17 +3,15 @@
 Liferayのローカライズフレームワークは、MVCポートレットでローカライズされたメッセージを作成するためのものです。
 
 ## サンプルコードをデプロイする
+```{include} /_snippets/run-liferay-portal.md
+```
 
-1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
-
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-    ```
+次に、以下の手順に従います。
 
 1. サンプルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-b6f5.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-b6f5.zip -O
     ```
 
     ```bash
@@ -78,7 +76,7 @@ JSPファイルを作成し、モジュールの`/src/main/resources/META-INF/re
 
 これは、`Language.properties`ファイルにそのようなキーが見つからない場合、代わりにラベルが表示されることを示しています。
 
-タグライブラリの詳細については、 [Liferay Tag Library Reference](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/index.html) をご覧ください。 各タグライブラリには、タグに渡すことができる属性のリストがあります。
+タグライブラリの詳細については、[Liferay Tag Library Reference](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/index.html)をご覧ください。 各タグライブラリには、タグに渡すことができる属性のリストがあります。
 
 ## コンポーネント定義を追加する
 

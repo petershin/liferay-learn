@@ -1,21 +1,17 @@
 # 完全なカスタム構成
 
-[インターフェイスを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface) すると、構成UIが自動的に生成されます。 ただし、構成に完全にカスタムのUIが必要な場合もあります。 たとえば、Liferayの構成管理を使用する代わりに、プログラムで構成を処理するよう計画している場合などです。 または、完全にカスタムのUIを作成する柔軟性が必要な場合もあります。 その方法は以下の通りです。
+[構成インターフェースを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface)すると、構成UIが自動的に生成されます。 ただし、構成に完全にカスタムのUIが必要な場合もあります。 たとえば、Liferayの構成管理を使用する代わりに、プログラムで構成を処理するよう計画している場合などです。 または、完全にカスタムのUIを作成する柔軟性が必要な場合もあります。 その方法は以下の通りです。
 
 ## サンプルプロジェクトを参照する
+```{include} /_snippets/run-liferay-dxp.md
+```
 
-1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
+次に、以下の手順に従います。
 
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
-    ```
-
-    別のLiferay PortalバージョンまたはLiferay DXPを実行している場合は、上記のコマンドを適宜調整してください。
-
-1. [完全なカスタム構成](./liferay-u2g5.zip) をダウンロードして解凍します。
+1. [完全カスタム設定](./liferay-u2g5.zip)をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
     ```
 
     ```bash
@@ -40,13 +36,13 @@
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
-1. ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**システム設定**］ &rarr; ［**サードパーティー**］ に移動します。 ［**U2G5 Configuration**］ をクリックします。
+1. *［コントロールパネル］* &rarr; *［設定］* &rarr; *［System Settings］* &rarr; *［Third Party］*に移動します。 *［U2G5 Configuration］*をクリックします。
 
    ![システム設定でU2G5構成に移動します。](./completely-custom-configuration/images/01.png)
 
    このビューはカスタムJSPファイルによって提供されることに注意してください。
 
-## 構成インターフェイスを作成する
+## 構成インターフェースを作成する
 
 構成インターフェイスで構成可能な属性を定義します。 サンプルプロジェクトには、`fontColor`、`fontFamily`、および`fontSize`の3つの構成可能な属性があります。
 
@@ -82,7 +78,7 @@
     :lines: 24-40
     ```
 
-1. この例では、構成スコープは `system`に設定されています。 詳細については、 [スコープ設定](./scoping-configurations.md) を参照してください。
+1. この例では、構成スコープは `system`に設定されています。 詳細については、[スコープ設定](./scoping-configurations.md)を参照してください。
 
     ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/admin/display/U2G5ConfigurationScreen.java
     :dedent: 1

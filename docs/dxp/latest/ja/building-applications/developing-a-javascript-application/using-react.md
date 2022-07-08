@@ -9,10 +9,9 @@
 using-react/react-component-utilities-reference.md
 ```
 
-Build your own solutions using Liferay and React.
+LiferayとReactを使用して独自のソリューションを構築します。
 
-::::{grid} 2
-:gutter: 3 3 3 3
+::::{grid} 2 :gutter: 3 3 3 3
 
 :::{grid-item-card} Creating a Basic Remote App
 :link: ../remote-apps/remote-apps-tutorials/creating-a-basic-remote-app.md

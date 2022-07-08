@@ -7,7 +7,7 @@
 サンプルプロジェクトをダウンロードして解凍します。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-y7g4.zip -O
+curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-y7g4.zip -O
 ```
 
 ```bash
@@ -35,9 +35,9 @@ y7g4-api
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-api/bnd.bnd
 ```
 
-The `Bundle-` headers describe the module artifact. The `Export-Package` header specifies the API packages to publish. See [モジュールプロジェクト](../../../../liferay-internals/fundamentals/module-projects.md) for details on bnd metadata and how it's used.
+`Bundle-`ヘッダーはモジュールアーティファクトを説明します。 `Export-Package`ヘッダーは公開するAPIパッケージを指定します。 bndメタデータの詳細とその使用方法については [モジュールプロジェクト](../../../liferay-internals/fundamentals/module-projects.md) を参照してください。
 
-The `build.gradle` file declares the module's dependency on DXP/Portal.
+`build.gradle`ファイルは、モジュールのDXP/Portalへの依存を宣言します。
 
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-api/build.gradle
 :language: groovy
@@ -58,15 +58,15 @@ y7g4-service
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-service/bnd.bnd
 ```
 
-Once again, the `Bundle-` headers describe the module artifact. Service metadata and a directive follow.
+繰り返しになりますが、`Bundle-`ヘッダーはモジュールアーティファクトを説明します。 サービスメタデータとディレクティブが続きます。
 
-| Metadata | Description |
+| メタデータ | 説明 |
 | :------- | :---------- |
-| `Liferay-Require-SchemaVersion: 1.0.0` | Your application's data schema version. When you release application versions that have database schema changes, you'll increment the version. |
-| `Liferay-Service: true` | The module provides a Liferay Service. |
-| `-dsannotations-options: inherit` | OSGi service component classes inherit [OSGi Declarative Services](../../../../liferay-internals/fundamentals/apis-as-osgi-services.md) annotations from their class hierarchy. For example, extension classes can access all the services that ancestor fields reference via the `@Reference` annotation. |
+| `Liferay-Require-SchemaVersion: 1.0.0` | アプリケーションのデータスキーマバージョン。 データベーススキーマの変更を伴うアプリケーションのバージョンをリリースする場合、バージョンをインクリメントすることになります。 |
+| `Liferay-Service: true` | このモジュールはLiferay Serviceを提供します。 |
+| `-dsannotations-options: inherit` | OSGiサービスコンポーネントクラスは、クラス階層から [OSGi宣言型サービス](../../../liferay-internals/fundamentals/apis-as-osgi-services.md)のアノテーションを継承しています。 例えば、拡張クラスは `@Reference` アノテーションを介して、祖先のフィールドが参照するすべてのサービスにアクセスすることができます。 |
 
-Here's the `build.gradle` file:
+`build.gradle`ファイルはこちら：
 
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-service/build.gradle
 :language: groovy
@@ -82,46 +82,46 @@ Here's the `build.gradle` file:
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-service/service.xml
 ```
 
-This file defines a `Y7G4Entry` model that has an ID (the primary key), name, and description.
+このファイルでは、ID（主キー）、名前、説明を持つ `Y7G4Entry` というモデルを定義します。
 
-### `service-builder` Element
+### `service-builder` 要素
 
-The `service-builder` element attributes affect all model entities in the `service.xml` file.
+`service-builder` 要素の属性は `service.xml` ファイル内のすべてのモデルエンティティに影響します。
 
-| `service-builder` attribute | Description |
+| `service-builder` 属性 | 説明 |
 | :-------------------------- | :---------- |
-| `dependency-injector` | Declares the dependency injector type. Declarative Services (`ds`) is the default. |
-| `package-path` | Declares the leading package path for the generated classes. |
-| `short-no-such-exception-enabled` | If set to `true`, use a truncated version of the entity name in `NoSuchY7G4EntryException` messages; otherwise use the complete entity name. |
+| `dependency-injector` | 依存性インジェクターの種類を宣言します。 宣言型サービス (`ds`) がデフォルトです。 |
+| `package-path` | 生成されるクラスの先頭のパッケージパスを宣言します。 |
+| `short-no-such-exception-enabled` | `true` に設定すると、 `NoSuchY7G4EntryException` メッセージでエンティティ名の短縮版を使用し、それ以外の場合は完全なエンティティ名を使用します。 |
 
-### `namespace` Element
+### `namespace` 要素
 
-The global `namespace` element specifies the prefix for all the model entity database tables.
+グローバルな`namespace`要素は、すべてのモデルエンティティデータベーステーブルの接頭辞を指定します。
 
-### `entity` Element
+### `entity` 要素
 
-`entity` elements define model database tables and service types.
+`entity`要素は、モデルデータベースのテーブルとサービスタイプを定義します。
 
-| `entity` attributes | Description |
+| `entity`属性 | 説明 |
 | :------------------ | :---------- |
-| `name` | The entity's name. Service Builder generates an entity table using the naming format `[namespace]_[name]` (for example, `Y7G4_Y7G4Entry`). |
-| `local-service` | If `true`, generate service classes to call from within the JVM. |
-| `remote-service` | If `true`, generate service classes, including web services classes, to call from outside of the JVM. |
+| `name` | エンティティの名前。 サービスビルダーは、`[namespace]_[name]`という命名形式（例えば、`Y7G4_Y7G4Entry`など）でエンティティテーブルを生成します。 |
+| `local-service` | `true`の場合、JVM内から呼び出すサービスクラスを生成します。 |
+｜ `remote-service`｜ `true`の場合、Webサービスクラスを含むサービスクラスを生成し、JVMの外から呼び出せるようにします。 |
 
-### `column` Elements
-Each `column` element defines a column in the entity's table. Here are the `Y7G4Entry` entity column elements:
+### `column` 要素
+各 `column` 要素は、エンティティのテーブル内のカラムを定義します。 以下は `Y7G4Entry` のエンティティ列の要素です。
 
-| Column | Description |
+| 列 | 説明 |
 | :----- | :---------- |
-| `y7g4EntryId` | the model instance's ID (long integer) and primary key. |
-| `name` | the instance's name (string). |
-| `description` | the instance's description (string). |
+| `y7g4EntryId` ｜モデルインスタンスのID (長整数) とプライマリーキーです。 |
+| `name` | インスタンスの名前（文字列）です。 |
+| `description` | インスタンスの説明 (文字列) です。 |
 
-For more information on `service.xml` elements, see the [Liferay Service Builder DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html) .
+`service.xml` 要素の詳細については、[Liferayサービスビルダー DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html)を参照してください。
 
-## Generate the Persistence Code
+## 永続化コードの生成
 
-Invoke Service Builder to generate persistence code and database scripts.
+サービスビルダーを起動し、永続化コードとデータベーススクリプトを生成します。
 
 ```bash
 cd liferay-y7g4
@@ -221,7 +221,7 @@ SQLスクリプトと永続性構成が`resources/META-INF`フォルダに生成
 </hibernate-mapping>
 ```
 
-`module-hbm.xml`ファイルは、`Y7G4EntryImpl`オブジェクトを`Y7G4_Y7G4Entry`テーブルにマップします。 Hibernateでのマッピングの詳細については、 [Hibernate](https://hibernate.org) をご覧ください。
+`module-hbm.xml`ファイルは、`Y7G4EntryImpl`オブジェクトを`Y7G4_Y7G4Entry`テーブルにマップします。 Hibernateでのマッピングの詳細については、[Hibernate](https://hibernate.org)をご覧ください。
 
 `tables.sql`スクリプトは、`Y7G4_Y7G4Entry`テーブルを指定します。
 
@@ -392,11 +392,11 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
 1. デフォルトの認証情報を使用してサインインします。
 
-    **ユーザー名** : `test@liferay.com`
+    **ユーザー名**: `test@liferay.com`
 
     **パスワード：** `test`
 
-1. ［**コントロールパネル**］ &rarr; ［**サーバ管理**］ &rarr; ［**スクリプト**］ でスクリプトコンソールに移動します。
+1. *［コントロールパネル］* &rarr; *［サーバ管理］* &rarr; *［スクリプト］*でスクリプトコンソールに移動します。
 
 1. 次のスクリプトを実行して、エントリーを追加します。
 
@@ -437,9 +437,9 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
 ## 次のステップ
 
-モデルを定義し、その永続コードとサービスコードを生成する方法がわかったので、生成されたサービスクラスを調べる必要があります。 [生成されたクラスの理解と拡張](./understanding-service-builder-generated-classes.md) に進んでください。
+モデルを定義し、その永続コードとサービスコードを生成する方法がわかったので、生成されたサービスクラスを調べる必要があります。 [生成されたクラスの理解と拡張](./understanding-service-builder-generated-classes.md)に進んでください。
 
 ## 追加情報
 
 * [ローカルでサービスを呼び出す](./invoking-a-service-locally.md)
-* [What is Liferay Workspace](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)
+* [Liferay Workspaceの概要](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)

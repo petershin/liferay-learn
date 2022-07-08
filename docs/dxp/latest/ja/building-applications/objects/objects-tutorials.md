@@ -1,9 +1,3 @@
----
-toc:
-- .objects-tutorials/building-a-time-off-requester.md
-- .objects-tutorials/using-object-data-with-react-charts.md
-- .objects-tutorials/using-apis.md	
----	
 # オブジェクトのチュートリアル
 
 ```{toctree}
@@ -11,7 +5,8 @@ toc:
 
 objects-tutorials/building-a-time-off-requester.md
 objects-tutorials/using-object-data-with-react-charts.md
-objects-tutorials/using-objects-to-create-kanban-boards.md
+objects-tutorials/using-apis.md
+
 ```
 
 ```{raw} html

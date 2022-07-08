@@ -59,7 +59,7 @@ Changes for Content Pages **are not automatically propagated** when created usin
 
 ### Sharing Page Templates With Other Sites
 
-You can share your Page Templates with other sites using the same process as you would for pages. Follow the instructions in [Exporting Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md) to learn how.
+You can share your Page Templates with other sites using the same process as you would for pages. Follow the instructions in [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md) to learn how.
 
 ### Staging and Page Templates
 

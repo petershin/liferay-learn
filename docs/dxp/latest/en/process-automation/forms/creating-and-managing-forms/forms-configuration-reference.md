@@ -8,7 +8,7 @@ You can export and import forms between Sites. To access the _Export / Import_ m
 
 ![You can export or import forms.](./forms-configuration-reference/images/01.png)
 
-See [Exporting and Importing Forms](./exporting-and-importing-forms.md) and [Exporting Importing Site Pages and Content](../../../site-building/sites/exporting-importing-site-pages-and-content.md) to learn more.
+See [Exporting and Importing Forms](./exporting-and-importing-forms.md) and [Exporting/Importing Site Pages and Content](../../../site-building/sites/exporting-importing-site-pages-and-content.md) to learn more.
 
 ## Form Settings
 

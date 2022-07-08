@@ -65,7 +65,7 @@ Liferay Sites are used with [Channels](https://learn.liferay.com/commerce/latest
 :link: ./sites/personal-sites.md
 :::
 
-:::{grid-item-card} Exporting Importing Site Pages and Content
+:::{grid-item-card} Exporting/Importing Site Pages and Content
 :link: ./sites/exporting-importing-site-pages-and-content.md
 :::
 

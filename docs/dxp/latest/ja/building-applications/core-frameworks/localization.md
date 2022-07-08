@@ -1,3 +1,9 @@
+---
+toc:
+- ./localization/adding-a-language.md
+- ./localization/automatically-generating-translations.md
+- ./localization/reference.md
+---
 # ローカライズ
 
 ```{toctree}

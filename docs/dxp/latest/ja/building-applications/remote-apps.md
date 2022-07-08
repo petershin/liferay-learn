@@ -1,3 +1,9 @@
+---
+toc:
+- ./remote-apps/understanding-remote-app-types.md
+- ./remote-apps/remote-apps-tutorials.md
+- ./remote-apps/remote-apps-ui-reference.md
+---
 # リモートアプリケーション
 
 ```{toctree}

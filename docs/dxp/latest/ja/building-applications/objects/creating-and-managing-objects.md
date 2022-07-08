@@ -1,13 +1,3 @@
----
-toc:
-- ./creating-and-managing-objects/creating-objects.md
-- ./creating-and-managing-objects/managing-objects.md
-- ./creating-and-managing-objects/adding-fields-to-objects.md
-- ./creating-and-managing-objects/defining-object-relationships.md
-- ./creating-and-managing-objects/defining-object-actions.md
-- ./creating-and-managing-objects/designing-object-layouts.md
-- ./creating-and-managing-objects/exporting-and-importing-object-structures.md
----
 # オブジェクトの作成と管理
 
 ```{toctree}

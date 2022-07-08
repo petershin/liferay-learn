@@ -1,3 +1,7 @@
+---
+toc:
+- ./developing-a-rest-web-api/producing-graphql-apis.md
+---
 # REST Web APIの開発
 
 ```{toctree}

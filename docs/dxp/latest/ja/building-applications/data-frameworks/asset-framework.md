@@ -1,3 +1,8 @@
+---
+toc:
+- ./asset-framework/enabling-assets.md
+- ./asset-framework/enhancing-assets.md
+---
 # アセットフレームワーク
 
 ```{toctree}

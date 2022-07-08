@@ -1,15 +1,3 @@
----
-toc:
-- ./defining-entities/configuring-global-service-options.md
-- ./defining-entities/using-multitenancy-and-audit-fields.md
-- ./defining-entities/defining-entity-columns.md
-- ./defining-entities/modifying-database-fields-in-development.md
-- ./defining-entities/defining-entity-relationships.md
-- ./defining-entities/sorting-entity-instances.md
-- ./defining-entities/defining-entity-finder-methods.md
-- ./defining-entities/using-localized-entities.md
-- ./defining-entities/adding-model-hints.md
----
 # エンティティの定義
 
 ```{toctree}
@@ -27,9 +15,9 @@ defining-entities/adding-model-hints.md
 
 エンティティはサービスの最も重要な部分です。 エンティティは、Javaのモデルオブジェクトとデータベースフィールドおよびテーブルの間のマップを表します。 [サービスビルダー](../service-builder.md) は、Javaモデルを定義したエンティティに自動的にマップし、Javaオブジェクトを永続化する機能を提供します。 [Generating Model, Persistence, and Service Code](../service-builder-basics/generating-model-persistence-and-service-code.md)にあるY7G4サンプルプロジェクトについて検討します。 エンティティの概要は次のとおりです。
 
-***名前** : `Y7G4Entry`
-***ローカルサービス：****yes**
-***リモートサービス：****no**
+* **名前** : `Y7G4Entry`
+* **ローカルサービス：****yes**
+* **リモートサービス：****no**
 
 エンティティを定義する方法は次のとおりです。
 

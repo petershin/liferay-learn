@@ -84,7 +84,7 @@ Manage permissions for the Documents and Media *Home folder*. To learn more abou
 
 ### Export/Import
 
-Initiate [Export or Import](../../site-building/building-sites/importing-exporting-pages-and-content.md) operations for Documents and Media content. Content is exported as an `LAR` (Liferay Archive) file. You can also view current and previous exports.
+Initiate [Export or Import](../../site-building/sites/exporting-importing-site-pages-and-content.md) operations for Documents and Media content. Content is exported as an `LAR` (Liferay Archive) file. You can also view current and previous exports.
 
 ![Initiate Export or Import operations for Documents and Media.](./documents-and-media-ui-reference/images/13.png)
 
@@ -111,4 +111,4 @@ Using email notifications requires a connected mail server. See `Configuring Mai
 ## Additional Information
 
 * [Documents and Media Overview](./documents-and-media-overview.md)
-* [Importing/Exporting Sites and Contents](../../site-building/building-sites/importing-exporting-pages-and-content.md)
+* [Exporting/Importing Site Pages and Contents](../../site-building/sites/exporting-importing-site-pages-and-content.md)

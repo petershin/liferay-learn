@@ -33,4 +33,4 @@ The default Site Roles and Teams you configure do not affect existing Site membe
 - [Changing Site Membership Type](./changing-site-membership-type.md)
 - [Site Settings UI Reference](../site-settings-ui-reference.md)
 - [Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
-- [Creating Teams for Advanced Site Membership Management](../../building-sites/site-membership/creating-teams-for-sites.md)
+- [Creating Teams for Advanced Site Membership Management](../../sites/site-membership/creating-teams-for-sites.md)

@@ -5,7 +5,7 @@ Site Building
    :maxdepth: 4
 
    site-building/introduction-to-site-building.md
-   site-building/building_sites.rst
+   site-building/sites.md
    site-building/creating_pages.rst
    site-building/displaying-content.md
    site-building/site_appearance.rst

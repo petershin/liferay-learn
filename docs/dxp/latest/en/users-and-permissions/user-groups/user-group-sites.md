@@ -1,6 +1,6 @@
 # User Group Sites
 
-With User Group Sites, you can create pages that are added automatically to each member’s [personal Site](../../site-building/building-sites/managing-personal-sites.md). These pages are organized into two [page sets](../../site-building/creating-pages/understanding-pages/understanding-pages.md#page-sets), *My Profile* (public) and *My Dashboard* (private), just like personal Sites. If users belong to multiple User Groups, all pages from those groups are also added to their Sites.
+With User Group Sites, you can create pages that are added automatically to each member’s [personal Site](../../site-building/sites/personal-sites.md). These pages are organized into two [page sets](../../site-building/creating-pages/understanding-pages/understanding-pages.md#page-sets), *My Profile* (public) and *My Dashboard* (private), just like personal Sites. If users belong to multiple User Groups, all pages from those groups are also added to their Sites.
 
 ![Create profile and dashboard pages that are added to each member's personal Site.](./user-group-sites/images/01.png)
 
@@ -34,7 +34,7 @@ Once pages are added to a User Group Site, you can view them via the the *User G
 
 ## Using Site Templates
 
-Follow these steps to populate a User Group Site with profile and dashboard pages using [Site Templates](../../site-building/building-sites/building-sites-with-site-templates.md):
+Follow these steps to populate a User Group Site with profile and dashboard pages using [Site Templates](../../site-building/sites/site-templates.md):
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *User Groups*.
 

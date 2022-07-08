@@ -68,7 +68,7 @@ By default, Site Configuration includes the Details and Site URL sections.
 | :--- | :--- |
 | Site ID | A unique number automatically generated for a Site at its creation. This ID is permanent and cannot be changed. |
 | Description | Use the this field to explain a Site's purpose.|
-| Parent Site | Designate a Site as a child Site by selecting its parent Site. See [Site Hierarchies](../building-sites/site-hierarchies.md) for more information. |
+| Parent Site | Designate a Site as a child Site by selecting its parent Site. See [Site Hierarchies](../sites/site-hierarchies.md) for more information. |
 | Membership Type | Determines how restrictive a Site's membership is. See [Changing Site Membership Types](../site-settings/site-users/changing-site-membership-type.md) for more information.|
 | Allow Manual Membership Management | Determine whether to allow members to be manually added or removed from a Site. See [Changing Site Membership Type](../site-settings/site-users/changing-site-membership-type.md) for more information. |
 
@@ -165,7 +165,7 @@ Using this option, you can enable automatic moderation of user messages on Messa
 | :--- | :--- |
 | Google PageSpeed Insights (Liferay DXP 7.4+) | Enable the Google PageSpeed Insight integration in Liferay DXP. Using this option, you can audit your pages for accessibility issues and check suggestions for fixing them. See [Analyzing SEO and Accessibility on Pages](../../content-authoring-and-management/content-performance-tool/analyzing-seo-and-accessibility-on-pages.md) for more information. |
 | Open Graph | These tags define page metadata to create engaging representations of your Site's content when shared in applications that support the Open Graph protocol, such as Facebook, Slack, and Twitter. When enabled Open Graph `<meta>` tags are embedded in the `head` of the Site's pages. For more information, read [Configuring Open Graph](./configuring-open-graph.md). |
-| Pages | View the Site's pages. On this section, you can also configure the propagation of changes from a Site template, if one exists. For more information, read [Building Sites with Site Templates](../../../en/site-building/building-sites/building-sites-with-site-templates.md). |
+| Pages | View the Site's pages. On this section, you can also configure the propagation of changes from a Site template, if one exists. See [Site Templates](../sites/site-templates.md) and [Propagating Template Changes](../sites/site-templates/propagating-template-changes.md) for more information. |
 
 ### Recycle Bin
 
@@ -225,7 +225,7 @@ General settings range from core configuration, like a Site's Membership Type, t
 
 **Allow Manual Membership Management**: Determine whether to allow members to be manually added or removed from a Site. If your Site's membership is handled automatically by a membership policy, you can disable this setting. See [Managing Membership Policies for Sites](./site-users/changing-site-membership-type.md) for more information.
 
-**Parent Site**: Designate a Site as a child Site by selecting its parent Site. See [Site Hierarchies](../building-sites/site-hierarchies.md) for more information.
+**Parent Site**: Designate a Site as a child Site by selecting its parent Site. See [Site Hierarchies](../sites/site-hierarchies.md) for more information.
 
 **Limit Membership to Parent Site Members**: Determine whether a child Site's membership is limited to members of its parent Site. This option only appears for child Sites.
 
@@ -257,7 +257,7 @@ Determine whether to enable Directory Indexing for a Site. When enabled, a User 
 
 #### Site Template
 
-If you created your Site using a *Site Template*, it's displayed here, along with whether the template allows Users to modify pages that inherit it. See [Building Sites from Templates](../building-sites/building-sites-with-site-templates.md) for more information about Site templates and how to create your own.
+If you created your Site using a *Site Template*, it's displayed here, along with whether the template allows Users to modify pages that inherit it. See [Site Templates](../sites/site-templates.md) for more information.
 
 ![View your page's selected template.](./site-settings-ui-reference/images/07.png)
 

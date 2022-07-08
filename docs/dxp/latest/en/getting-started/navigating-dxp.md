@@ -14,7 +14,7 @@ The following common site building and management activities can be done in the 
 
 * [Adding Pages](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
 * [Creating Content](../content-authoring-and-management.md)
-* [Managing Site Memberships](../site-building/building-sites/site-membership/adding-members-to-sites.md)
+* [Managing Site Memberships](../site-building/sites/site-membership/adding-members-to-sites.md)
 * [Configuring and Optimizing Site Behavior and Functionality](../site_building.html)
 * And more...
 
@@ -59,7 +59,7 @@ The Personal Menu is the hub for information and activities for a User that is l
 Users can use the personal menu to:
 
 * [Change account information](./introduction-to-the-admin-account.md#changing-account-information) (Name, Password, etc.)
-* [See what sites they are members of](../site-building/building-sites/site-membership/adding-members-to-sites.md)
+* [See what sites they are members of](../site-building/sites/site-membership/adding-members-to-sites.md)
 * [Review site notifications](../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
 * [Sign out](./introduction-to-the-admin-account.md#signing-out)
 * And more...
@@ -112,7 +112,7 @@ The following common administrative activities can be done in the Control Panel:
 
 * [Manage Users, Permissions, and Roles](../users-and-permissions/users/adding-and-managing-users.md)
 * [Change how users login](../installation-and-upgrades/securing-liferay/authentication-basics.md)
-* [Create new Sites](../site-building/building-sites/adding-a-site.md)
+* [Create new Sites](../site-building/sites/adding-a-site.md)
 * Add new Custom Fields to applications on the site
 * And more...
 

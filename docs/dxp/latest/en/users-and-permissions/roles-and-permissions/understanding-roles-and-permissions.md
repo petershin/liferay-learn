@@ -11,7 +11,7 @@ To skip straight to creating Roles and assigning Users, see
 * [Assigning Users to Roles](./assigning-users-to-roles.md)
 
 ```{note}
-[Site Teams](./../../site-building/building-sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management User Interface.
+[Site Teams](./../../site-building/sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management User Interface.
 ```
 
 ## Roles and Scope
@@ -52,7 +52,7 @@ Several User collections can be assigned to Regular Roles:
 
 * [Organizations](./../organizations/understanding-organizations.md) hold Users of a shared hierarchical level.
 * [User Groups](./../user-groups/creating-and-managing-user-groups.md) hold Users that only share the need to perform the same function.
-* [Sites](./../../site-building/building-sites/site-membership/adding-members-to-sites.md) hold Users (as Site Members) that might need to perform a certain action.
+* [Sites](./../../site-building/sites/site-membership/adding-members-to-sites.md) hold Users (as Site Members) that might need to perform a certain action.
 * [Segments](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) hold Users of a Site that match certain conditions.
 
 ### Organization Roles

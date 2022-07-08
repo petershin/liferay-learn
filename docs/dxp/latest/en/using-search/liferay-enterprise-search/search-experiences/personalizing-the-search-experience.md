@@ -30,7 +30,7 @@ There are several Elements that are especially useful for personalization effort
 
 *Limit Search to My Contents* is an Element that only returns search results if the document's `userId` field matches the search User.
 
-*Limit Search to My Sites* is an Element that only returns search results scoped to a [Site that the User is a member of](../../../site-building/building-sites/site-membership/adding-members-to-sites.md).
+*Limit Search to My Sites* is an Element that only returns search results scoped to a [Site that the User is a member of](../../../site-building/sites/site-membership/adding-members-to-sites.md).
 
 *Boost Contents on My Sites* is an Element that boosts search results if the search User is a member of the Site the results are scoped to.
 

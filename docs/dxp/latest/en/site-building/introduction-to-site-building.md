@@ -8,11 +8,11 @@ When you first start and configure your Liferay DXP instance, a default Site is 
 
 ## Creating Sites
 
-Liferay DXP includes all the tools you need to [build your Site](./building-sites/adding-a-site.md) and [create pages](./creating-pages/adding-pages/adding-a-page-to-a-site.md). You can create a Site from an existing [Site Template](./building-sites/building-sites-with-site-templates.md), which includes a predefined set of pages with applications, or you can create a blank Site and build it from the ground up.
+Liferay DXP includes all the tools you need to [build your Site](./sites/adding-a-site.md) and [create pages](./creating-pages/adding-pages/adding-a-page-to-a-site.md). You can create a Site from an existing [Site Template](./sites/site-templates.md), which includes a predefined set of pages with applications, or you can create a blank Site and build it from the ground up.
 
 Pages are just as flexible. There are multiple page types. Create a page from an existing [page type](./creating-pages/understanding-pages/understanding-pages.md) or create one from one of the default [page templates](./creating-pages/adding-pages/creating-a-page-template.md), or a page template you've created yourself. 
 
-Sites and pages can be organized hierarchically. You can add as many nested pages (child pages) and [nested sites](./building-sites/site-hierarchies.md) (child sites) as you like for the parent Site or page. It is possible to have multiple sites across your Liferay DXP instance for various Organizations, employees, etc. You can also share content and pages between sites with the [import and export options](./building-sites/importing-exporting-pages-and-content.md).
+Sites and pages can be organized hierarchically. You can add as many nested pages (child pages) and [nested sites](./sites/site-hierarchies.md) (child sites) as you like for the parent Site or page. It is possible to have multiple sites across your Liferay DXP instance for various Organizations, employees, etc. You can also share content and pages between sites with the [import and export options](./sites/exporting-importing-site-pages-and-content.md).
 
 Configuring Pages and Site [Navigation](./site-navigation/using-the-navigation-menus-application.md) behavior is intuitive and flexible. Pages can be automatically added to a navigation menu when they're created. You can hide pages if you prefer, or configure Page permissions restrict user access.
 
@@ -40,7 +40,7 @@ Liferay DXP's [Personalization and Segmentation](./personalizing-site-experience
 
 There are many [settings](./site-settings/site-settings-ui-reference.md) available to modify the look, behavior, and functionality for your Site. [Sites and their Content can be easily localized](./site-settings/site-localization.md) to multiple languages as needed.
 
-The look and feel of your site can be [changed by using different themes](../getting-started/changing-your-sites-appearance.md). Themes can be downloaded and deployed from [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md), or you can [create a theme yourself](../setting-up-the-site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md). Themes determine the overall look and feel for a Site and define the CSS, JavaScript, and HTML for the page (via FreeMarker templates).  FreeMarker combines standard HTML elements and provides the added benefit of variables, conditional statements, looping, and more. See [Developing Themes](./developer_guide.md) for more information.
+The look and feel of your site can be [changed by using different themes](../getting-started/changing-your-sites-appearance.md). Themes can be downloaded and deployed from [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md), or you can [create a theme yourself](./site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md). Themes determine the overall look and feel for a Site and define the CSS, JavaScript, and HTML for the page (via FreeMarker templates).  FreeMarker combines standard HTML elements and provides the added benefit of variables, conditional statements, looping, and more. See [Developing Themes](./developer_guide.md) for more information.
 
 ## Optimizing Sites
 

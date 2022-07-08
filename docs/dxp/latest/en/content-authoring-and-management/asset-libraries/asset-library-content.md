@@ -72,7 +72,7 @@ See [Tags and Categories](../tags_and_categories.html) documentation for more in
 
 You can export and import Asset Library content as LAR files. To initiate a new export/import process for a Library, go to its dashboard, and click on *Export* or *Import* at the bottom of the page. Then click the *Add* button (![Add button](../../images/icon-add.png)) to initiate a new process.
 
-Exporting and importing Library content follows the same process as Site assets. You can also create and use custom export templates by clicking on the *Actions* button ( ![Actions button](../../images/icon-actions.png) ) in the Applications bar and selecting *Export Templates*. See [Importing/Exporting Sites and Content](../../site-building/building-sites/importing-exporting-pages-and-content.md) for more information.
+Exporting and importing Library content follows the same process as Site assets. You can also create and use custom export templates by clicking on the *Actions* button ( ![Actions button](../../images/icon-actions.png) ) in the Application Bar and selecting *Export Templates*. See [Exporting/Importing Site Pages and Content](../../site-building/sites/exporting-importing-site-pages-and-content.md) for more information.
 
 ## Removing Content
 

@@ -1,8 +1,8 @@
 # Exporting and Importing Page Templates
 
-Sometimes it's easier to edit templates in a code editor. Once you've [created a Page Template](./creating-a-page-template.md), you can [export](../../building-sites/importing-exporting-pages-and-content.md) it, edit it locally in the editor of your choice, and then import the template back into Liferay. You can import the template into any Site on the system.
+Sometimes it's easier to edit templates in a code editor. Once you've [created a Page Template](./creating-a-page-template.md), you can [export](../../sites/exporting-importing-site-pages-and-content.md) it, edit it locally in the editor of your choice, and then import the template back into Liferay. You can import the template into any Site on the system.
 
-For more general information about the Export/Import Framework, see [Importing/ Exporting Sites and Content](../../building-sites/importing-exporting-pages-and-content.md).
+For more general information about the Export/Import Framework, see [Importing/ Exporting Sites and Content](../../sites/exporting-importing-site-pages-and-content.md).
 
 ```{note}
 For Liferay DXP 7.4+, Page Template Collections are called Page Template Sets in the Liferay UI.
@@ -64,5 +64,5 @@ The Page Template has been imported into the Site.
 ## Additional Information
 
 * [Creating a Page Template](./creating-a-page-template.md)
-* [Importing/ Exporting Sites and Content](../../building-sites/importing-exporting-pages-and-content.md)
+* [Importing/ Exporting Sites and Content](../../sites/exporting-importing-site-pages-and-content.md)
 * [Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)

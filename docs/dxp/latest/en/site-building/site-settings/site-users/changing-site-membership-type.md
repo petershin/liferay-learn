@@ -35,5 +35,5 @@ To change your Site's membership type, follow these steps:
 ## Related Information
 
 - [Managing Site Membership and Permissions With User Groups](../../../users-and-permissions/user-groups/managing-site-membership-and-permissions-with-user-groups)
-- [Understanding Site Membership](../../building-sites/site-membership/understanding-site-membership.md)
+- [Site Membership](../../sites/site-membership.md)
 - [Site Settings UI Reference](../site-settings-ui-reference.md)

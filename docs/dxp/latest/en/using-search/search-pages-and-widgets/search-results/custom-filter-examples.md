@@ -113,7 +113,7 @@ If a document matching the query is tagged, it contains a `assetTagNames` field.
 
 ## Filtering by Site ID
 
-There's no configuration for searching multiple Sites on one Search Page without searching all of them. To include results from the current Site and all [child Sites](../../../site-building/building-sites/site-hierarchies.md) you must configure the Search Bar's Scope, setting it to _Everything_. After that, you'll use one parent Custom Filter with a Bool query that can collect child query clauses, each of which is contributed by a Custom Filter widget with a term query for matching the `groupId` of a Site to include in the search results. The Site's ID is the `groupId` field in the search document.
+There's no configuration for searching multiple Sites on one Search Page without searching all of them. To include results from the current Site and all [child Sites](../../../site-building/sites/site-hierarchies.md) you must configure the Search Bar's Scope, setting it to _Everything_. After that, you'll use one parent Custom Filter with a Bool query that can collect child query clauses, each of which is contributed by a Custom Filter widget with a term query for matching the `groupId` of a Site to include in the search results. The Site's ID is the `groupId` field in the search document.
 
 1. Create 3 Sites:
    - Create at least one parent Site with a child Site.

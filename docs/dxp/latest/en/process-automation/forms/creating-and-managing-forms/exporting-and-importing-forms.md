@@ -2,7 +2,7 @@
 
 You can export all your forms as a `LAR` file and then import them into a different Site for reuse.
 
-See [Importing and Exporting Pages and Content](../../../site-building/building-sites/importing-exporting-pages-and-content.md) to learn about the Import/Export process.
+See [Exporting Importing Site Pages and Content](../../../site-building/sites/exporting-importing-site-pages-and-content.md) to learn about the Import/Export process.
 
 ## Exporting Forms as a LAR File
 
@@ -49,4 +49,4 @@ The Forms from the Guest Site are imported into this Site.
 
 * [Creating Forms](./creating-forms.md)
 * [Forms Configuration Reference](./forms-configuration-reference.md)
-* [Importing and Exporting Pages and Content](../../../site-building/building-sites/importing-exporting-pages-and-content.md)
+* [Exporting Importing Site Pages and Content](../../../site-building/sites/exporting-importing-site-pages-and-content.md)

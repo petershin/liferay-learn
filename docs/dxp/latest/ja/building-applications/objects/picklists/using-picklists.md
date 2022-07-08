@@ -18,7 +18,7 @@
 
 1. 新しい［選択リスト］ をクリックして編集します。
 
-1. ［Items］の下にある、*［追加］ *ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
+1. ［Items］の下にある、*［追加］* ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
 
    ![追加ボタンをクリックして、新しいアイテムを選択リストに追加します。](./using-picklists/images/02.png)
 

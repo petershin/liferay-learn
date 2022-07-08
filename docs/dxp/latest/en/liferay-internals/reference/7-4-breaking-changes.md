@@ -937,6 +937,28 @@ This change was made so that a collection's variations can be retrieved when usi
 
 ---------------------------------------
 
+## Redirect URLs removed from Portal Properties
+- **Date:** 2022-May-24
+- **JIRA Ticket:** [LPS-128837](https://issues.liferay.com/browse/LPS-128837)
+
+### What changed?
+
+Redirect URL configuration is no longer configurable via portal properties. It can be configured in the UI, under [Redirect URLs](../../system-administration/configuring-liferay/virtual-instances/redirect-urls.md) in Instance Settings.
+
+### Who is affected?
+
+This affects anyone using portal properties to configure redirect URLs.
+
+### How should I update my code?
+
+Set your necessary configurations in the UI, under [Redirect URLs](../../system-administration/configuring-liferay/virtual-instances/redirect-urls.md) in Instance Settings.
+
+### Why was this change made?
+
+This change was made so that administrators can set separate redirect URL configurations for each Liferay instance.
+
+---------------------------------------
+
 ## Portal Libs Cleanup
 - **Date** 2022-May-26
 - **JIRA Ticket** [LPS-142130](https://issues.liferay.com/browse/LPS-142130)

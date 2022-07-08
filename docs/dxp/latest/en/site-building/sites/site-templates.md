@@ -1,3 +1,11 @@
+---
+toc:
+- ./sites-templates/creating-site-templates.md
+- ./sites-templates/propagating-template-changes.md
+- ./sites-templates/configuring-site-template-propagation.md
+- ./sites-templates/exporting-importing-site-templates.md
+---
+
 # Site Templates
 
 ```{toctree}

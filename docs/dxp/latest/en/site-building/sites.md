@@ -1,3 +1,14 @@
+---
+toc:
+- ./sites/adding-a-site.md
+- ./sites/site-templates.md
+- ./sites/site-hierarchies.md
+- ./sites/site-membership.md
+- ./sites/personal-sites.md
+- ./sites/exporting-importing-site-pages-and-content.md
+- ./sites/default-site-applications.md
+---
+
 # Sites
 
 ```{toctree}

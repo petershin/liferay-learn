@@ -10,6 +10,7 @@ toc:
 - ./virtual-instances/localization.md
 - ./virtual-instances/infrastructure.md
 - ./virtual-instances/third-party.md
+- ./virtual-instances/redirect-urls.md
 ---
 # Virtual Instances
 
@@ -26,6 +27,7 @@ virtual-instances/analytics.md
 virtual-instances/localization.md
 virtual-instances/infrastructure.md
 virtual-instances/third-party.md
+virtual-instances/redirect-urls.md
 ```
 
 * [Understanding Virtual Instances](./virtual-instances/understanding-virtual-instances.md)
@@ -38,3 +40,4 @@ virtual-instances/third-party.md
 * [Localization](./virtual-instances/localization.md)
 * [Infrastructure](./virtual-instances/infrastructure.md)
 * [Third-party](./virtual-instances/third-party.md)
+* [Redirect URLs](./virtual-instances/redirect-urls.md)

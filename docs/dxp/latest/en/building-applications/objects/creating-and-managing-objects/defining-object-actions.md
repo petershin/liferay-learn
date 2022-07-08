@@ -1,6 +1,6 @@
 # Defining Object Actions
 
-{bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`
+{bdg-secondary}`Available Liferay 7.4 U30+ and GA30+`
 
 With Liferay Objects, you can define actions that are triggered under specified conditions. While an action is active, Liferay listens for when an Object's data is added, deleted, or updated and then performs the set action.
 
@@ -40,9 +40,9 @@ Follow these steps to define actions for an Object:
 
    ![Determine when the action is performed.](./defining-object-actions/images/03.png)
 
-   <!--1. (Optional) After selecting a trigger, you can use expressions to set additional conditions for the trigger. Click the ![Code](../../../images/icon-code.png) button to view available expressions.-->
+   1. (Optional) After selecting a trigger, you can use expressions to set additional conditions for the trigger. Click the ![Code](../../../images/icon-code.png) button to view available expressions.
 
-   <!--![Use expressions to set additional conditions for the trigger.](./defining-object-actions/images/04.png)-->
+   ![Use expressions to set additional conditions for the trigger.](./defining-object-actions/images/04.png)
 
 1. For Action, select *Webhook* or *Groovy Script* to determine the type of action performed.
 

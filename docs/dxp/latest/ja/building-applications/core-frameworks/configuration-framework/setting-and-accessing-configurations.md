@@ -8,10 +8,10 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
 次に、以下の手順に従います。
 
-1. [構成の設定とアクセス](./liferay-n2f3.zip)をダウンロードして、解凍します。
+1. [構成の設定とアクセス](./liferay-n2f3.zip) をダウンロードして、解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
     ```
 
     ```bash
@@ -42,11 +42,11 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
     UIには、フォントの色、フォントファミリー、フォントサイズの3つの設定可能な属性とともにウェルカムメッセージが表示されます。
 
-1. 構成を変更するには、*［コントロールパネル］* &rarr; *［設定］*&rarr; *［System Settings］*に移動します。 ［Other］の下の*category.n2f3*をクリックします。
+1. 構成を変更するには、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**System Settings**］ に移動します。 ［Other］の下の **category.n2f3** をクリックします。
 
     ![［Other］カテゴリーの下にあるcategory.n2f3をクリックします。](./setting-and-accessing-configurations/images/02.png)
 
-    別のフォントの色、フォントファミリー、およびフォントサイズを入力してみてください。 *［アップデート］*ボタンをクリックして、公開されたウィジェットのあるページに戻ります。 属性が変更されたことを確認します。
+    別のフォントの色、フォントファミリー、およびフォントサイズを入力してみてください。 ［**アップデート**］ ボタンをクリックして、公開されたウィジェットのあるページに戻ります。 属性が変更されたことを確認します。
 
 構成フレームワークの仕組みは次のとおりです。
 
@@ -71,7 +71,7 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 IDには、構成インターフェイスの完全修飾クラス名（FQCN）を指定する必要があることに注意してください。
 ```
 
-`Meta.AD`は、デフォルト値や属性が必須項目であるかどうかなど、属性に関する[オプションのメタデータ](http://bnd.bndtools.org/chapters/210-metatype.html)を指定します。 属性値が必要であるがデフォルトが設定されていない場合、管理者はアプリケーションが正しく機能するように設定で値を設定する必要があることに注意してください。
+`Meta.AD`は、デフォルト値や属性が必須項目であるかどうかなど、属性に関する [オプションのメタデータ](http://bnd.bndtools.org/chapters/210-metatype.html) を指定します。 属性値が必要であるがデフォルトが設定されていない場合、管理者はアプリケーションが正しく機能するように設定で値を設定する必要があることに注意してください。
 
 次に、MVCポートレットによって構成がどのように読み取られるかを確認します。
 

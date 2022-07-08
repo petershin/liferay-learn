@@ -83,17 +83,17 @@ Liferayリモートアプリケーションは、アプリケーションの構�
    121 B     build/static/css/main.9877909d.css
    ```
 
-1. メールアドレス（*test@liferay.com*）とパスワード（*test*）を使って、`<http://localhost:8080>`でLiferayにサインインします。 プロンプトが表示されたら、パスワードを *learn*に変更します。
+1. メールアドレス（**test@liferay.com**）とパスワード（**test**）を使って、`<http://localhost:8080>`でLiferayにサインインします。 プロンプトが表示されたら、パスワードを **learn** に変更します。
 
-1. *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［コンテンツ & データ］*を展開して、 *［ドキュメントとメディア］*へ移動してください。
+1. **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**コンテンツ & データ**］ を展開して、 ［**ドキュメントとメディア**］ へ移動してください。
 
-1. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックし、*［複数ファイルのアップロード］*を選択します。
+1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックし、 ［**複数ファイルのアップロード**］ を選択します。
 
 1. `.js</0と<code>.css`ファイルをアップロードエリアにドラッグ＆ドロップしてください。
 
    ![.js と .css ファイルを Liferayドキュメントライブラリにアップロードします。](./using-routes-with-a-basic-remote-app/images/02.png)
 
-1. *［Publish］*をクリックします。
+1. ［**Publish**］ をクリックします。
 
 これは Liferayドキュメントライブラリにファイルを追加し、固有の WebDAV URL を割り当て、リモートアプリケーションを作成するために使用します。
 
@@ -101,7 +101,7 @@ Liferayリモートアプリケーションは、アプリケーションの構�
 このチュートリアルでは、アプリケーションの静的リソースをデモ用にLiferayのドキュメントライブラリにホスティングします。 本番環境では、静的リソースをホストするために最適化されたサーバーでアプリケーションのファイルをホストする必要があります。
 ```
 
-各ファイルのURLを表示するには、*Info* icon (![Info Icon](../../../images/icon-information.png))をクリックし、ファイルを一つずつ選択してください。 各ファイルの*WebDAV URL*をコピーし、次のステップで使用するために保存してください。
+各ファイルのURLを表示するには、 **Info** icon (![Info Icon](../../../images/icon-information.png))をクリックし、ファイルを一つずつ選択してください。 各ファイルの **WebDAV URL** をコピーし、次のステップで使用するために保存してください。
 
 ![各ファイルのWebDAV URLをコピーします。](./using-routes-with-a-basic-remote-app/images/03.png)
 
@@ -112,9 +112,9 @@ Liferayリモートアプリケーションは、アプリケーションの構�
 
 ## リモートアプリケーションの登録とデプロイ
 
-1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、*［アプリケーション］*タブをクリックし、*［リモートアプリケーション］*へ移動します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**リモートアプリケーション**］ へ移動します。
 
-1. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
+1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
 
 1. 次の値を入力します。
 
@@ -128,7 +128,7 @@ Liferayリモートアプリケーションは、アプリケーションの構�
    | インスタンス化可能             | &#10004;              |
    | ポートレットのカテゴリ名          | リモートアプリケーション          |
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 保存すると、LiferayはJ1V3-Remote-Appという名前のウィジェットを作成し、他のページウィジェットのようにサイトページにデプロイすることができるようになります。 選択したポートレットカテゴリ名の下に表示されます。
 
@@ -142,9 +142,9 @@ J1V3-Remote-Appはインスタンス化可能なので、1つのページに多�
 
 ### リモートアプリケーションでルートプロパティを定義する
 
-1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、*［アプリケーション］*タブをクリックし、*［リモートアプリケーション］*へ移動します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**リモートアプリケーション**］ へ移動します。
 
-1. *J1V3-Remote-App*を選択します。
+1. **J1V3-Remote-App** を選択します。
 
    ![J1V3-Remote-Appを選択します。](./using-routes-with-a-basic-remote-app/images/05.png)
 
@@ -152,7 +152,7 @@ J1V3-Remote-Appはインスタンス化可能なので、1つのページに多�
 
    ![プロパティフィールドにroute=hello-fooと入力します。](./using-routes-with-a-basic-remote-app/images/06.png)
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
 1. デプロイされた両方のウィジェットが`HelloFoo`ルートを使用することを確認します。
 
@@ -162,7 +162,7 @@ J1V3-Remote-Appはインスタンス化可能なので、1つのページに多�
 
 1. J1V3-Remote-Appウィジェットが含まれるページを編集します。
 
-1. ウィジェットの1つの*オプション* ボタン (![Options Button](../../../images/icon-actions.png)) をクリックし、*［設定］*を選択します。
+1. ウィジェットの1つの **オプション** ボタン (![Options Button](../../../images/icon-actions.png)) をクリックし、 ［**設定**］ を選択します。
 
    ![オプションボタンをクリックし、［設定］を選択します。](./using-routes-with-a-basic-remote-app/images/08.png)
 
@@ -170,7 +170,7 @@ J1V3-Remote-Appはインスタンス化可能なので、1つのページに多�
 
    ![プロパティフィールドにroute=hello-barと入力します。](./using-routes-with-a-basic-remote-app/images/09.png)
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 1. 設定されたウィジェットが`hello-bar`ルートを使用し、もう一方のウィジェットが`hello-foo`ルートを使用したままであることを確認します。
 

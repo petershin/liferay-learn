@@ -18,51 +18,51 @@ Liferay Objectでは、既存のDXPフレームワークを使用して、オブ
 
 オブジェクトを公開した後、以下の手順でコレクション表示フラグメントを使用してオブジェクトのエントリーを表示します。
 
-1. 新しい [コンテンツページ](../../site-building/creating-pages/using-content-pages.md) または [表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)を作成します。 または、既存のページを*編集*（![編集ボタン](../../images/icon-edit-pencil.png)）することから開始します。
+1. 新しい [コンテンツページ](../../site-building/creating-pages/using-content-pages.md) または [表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)を作成します。 または、既存のページを **編集**（![編集ボタン](../../images/icon-edit-pencil.png)）することから開始します。
 
    ```{note}
    また、コレクションプロバイダーを使ってコレクションページを作成することもできます。 詳しくは、[コレクションとコレクションページについて](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)をご覧ください。
    ```
 
-1. *コレクション表示*フラグメントを*［Fragments and Widgets］*（![Fragments and Widgets](../../images/icon-plus.png)）サイドバーからページまたはテンプレートにドラッグアンドドロップします。
+1. **コレクション表示** フラグメントを ［**Fragments and Widgets**］（![Fragments and Widgets](../../images/icon-plus.png)）サイドバーからページまたはテンプレートにドラッグアンドドロップします。
 
    ![コレクション表示フラグメントをページまたはテンプレートにドラッグアンドドロップします。](./displaying-object-entries/images/01.png)
 
-1. ［*コレクション表示フラグメント*］ を選択して設定オプションにアクセスし、［General］タブの ［*Select Collection* ］をクリックします。
+1. ［**コレクション表示フラグメント**］ を選択して設定オプションにアクセスし、［General］タブの ［**Select Collection**］をクリックします。
 
    ![フラグメントを選択し、［コレクションを選択］をクリックします。](../objects/displaying-object-entries/images/02.png)
 
-1. モーダルウィンドウで、 *［Collection Providers］*タブをクリックし、*オブジェクトのプロバイダー*を選択します。
+1. モーダルウィンドウで、 ［**Collection Providers**］ タブをクリックし、 **オブジェクトのプロバイダー** を選択します。
 
    ![［Collection Providers］タブで、オブジェクトのプロバイダーを選択します。](./displaying-object-entries/images/03.png)
 
 1. (オプション) どのオブジェクトエントリーを表示するかフィルタリングします。 オブジェクト内の任意のピックリストまたはブール値フィールドでフィルタリングすることができます。
 
-   これを行うには、 *［Collection Options］*ボタン(![Collection Options Button](../../images/icon-actions.png))をクリックし、 *［Filter Collection］*を選択します。
+   これを行うには、 ［**Collection Options**］ ボタン(![Collection Options Button](../../images/icon-actions.png))をクリックし、 ［**Filter Collection**］ を選択します。
 
    ![［Collection Options］ボタンをクリックして、［Filter Collection］を選択します。](./displaying-object-entries/images/04.png)
 
-   次に、 目的の*フィルター*を選択し、 *［Apply］*をクリックします。
+   次に、 目的の **フィルター** を選択し、 ［**Apply**］ をクリックします。
 
    ![適用するフィルターを選択します。](./displaying-object-entries/images/05.png)
 
-目的のプロバイダを選択した後、追加のフラグメントオプションを使用して、オブジェクトエントリーの表示方法を決定します。これには、［ *List Style*］ および［ *Pagination*］が含まれます。
+目的のプロバイダを選択した後、追加のフラグメントオプションを使用して、オブジェクトエントリーの表示方法を決定します。これには、［**List Style**］ および［**Pagination**］が含まれます。
 
 ![フラグメントオプションを使用して、オブジェクトエントリーの表示方法を決定します。](./displaying-object-entries/images/06.png)
 
 ## オブジェクトの表示ページテンプレートの作成
 
-1. *サイトメニュー*（![Site Menu](../../images/icon-menu.png)）を開きます。 *［デザイン］* &rarr; *［ページテンプレート］*に移動し、*［表示ページテンプレート］*タブをクリックします。
+1. **サイトメニュー**（![Site Menu](../../images/icon-menu.png)）を開きます。 ［**デザイン**］ &rarr; ［**ページテンプレート**］ に移動し、 ［**表示ページテンプレート**］ タブをクリックします。
 
-1. *追加*ボタン（![Add Button](../../images/icon-add.png)）をクリックし、*空白* のテンプレートを選択します。
+1. **追加** ボタン（![Add Button](../../images/icon-add.png)）をクリックし、 **空白** のテンプレートを選択します。
 
    これにより、モーダルウィンドウが開きます。
 
-1. *名前*を入力し、コンテンツの種類に目的の*オブジェクト*を選択します。
+1. **名前** を入力し、コンテンツの種類に目的の **オブジェクト** を選択します。
 
    ![名前を入力し、コンテンツの種類に目的のオブジェクトを選択します](./displaying-object-entries/images/07.png)
 
-1. *［保存］*をクリックします。
+1. ［**保存**］ をクリックします。
 
 保存されると、選択されたオブジェクトがテンプレートのマッピングソースとして設定され、テンプレートの編集画面にリダイレクトされます。 ここでは、オブジェクトフィールドにマッピングするフラグメントを使って、個々のオブジェクトエントリーのページ表示を柔軟にデザインすることができます。 詳しくは、 [表示ページテンプレートの使用](../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md) をご覧ください。
 
@@ -70,23 +70,23 @@ Liferay Objectでは、既存のDXPフレームワークを使用して、オブ
 
 ## オブジェクトの情報テンプレートの作成
 
-1. *サイトメニュー*（![Site Menu](../../images/icon-product-menu.png)）を開き、*［デザイン］* &rarr; *［Templates］* &rarr; *［Information Templates］*に移動します。
+1. **サイトメニュー**（![Site Menu](../../images/icon-product-menu.png)）を開き、 ［**デザイン**］ &rarr; ［**Templates**］ &rarr; ［**Information Templates**］ に移動します。
 
-1. *追加*ボタン（![Add Button](../../images/icon-add.png)）をクリックします。
+1. **追加** ボタン（![Add Button](../../images/icon-add.png)）をクリックします。
 
-1. *名前*を入力し、目的の*オブジェクト*を選択します。
+1. **名前** を入力し、目的の **オブジェクト** を選択します。
 
    ![名前を入力し、目的のオブジェクトを選択します。](./displaying-object-entries/images/09.png)
 
-1. *［保存］* をクリックします。 これにより、テンプレートデザインページにリダイレクトされます。
+1. ［**保存**］ をクリックします。 これにより、テンプレートデザインページにリダイレクトされます。
 
-1. （オプション）アプリケーションバーのアクションボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、*［Import Script］*を選択して、インポートする`.ftl`ファイルを選択します。 これにより、現在のテンプレートがファイルのFreeMarkerスクリプトに置き換えられます。
+1. （オプション）アプリケーションバーのアクションボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 ［**Import Script**］ を選択して、インポートする`.ftl`ファイルを選択します。 これにより、現在のテンプレートがファイルのFreeMarkerスクリプトに置き換えられます。
 
    ![.ftlファイルからスクリプトをインポートします。](./displaying-object-entries/images/10.png)
 
 1. [FreeMarker](https://freemarker.apache.org)を使用してテンプレートをデザインします。
 
-   *［Elements］*サイドパネル（![Elements](../../images/icon-list-ul.png)）で、選択したオブジェクトの構造から使用可能なフィールドにアクセスできます。
+   ［**Elements**］ サイドパネル（![Elements](../../images/icon-list-ul.png)）で、選択したオブジェクトの構造から使用可能なフィールドにアクセスできます。
 
    ![オブジェクトの構造で使用可能なフィールドから選択します。](./displaying-object-entries/images/11.png)
 
@@ -94,7 +94,7 @@ Liferay Objectでは、既存のDXPフレームワークを使用して、オブ
 
    ![［Properties］パネルに説明または画像を追加します。](./displaying-object-entries/images/12.png)
 
-1. 完了したら、*［Save］*をクリックします。
+1. 完了したら、 ［**Save**］ をクリックします。
 
 オブジェクトエントリーをフラグメントフィールドにマッピングするときに、テンプレートから選択できるようになりました。
 

@@ -30,7 +30,7 @@
 
 ![カスタムオブジェクトのレイアウトを追加、編集、および削除します。](./managing-objects/images/04.png)
 
-カスタムオブジェクトのレイアウトは、いつでも追加、編集、削除することができます。 カスタムレイアウトをオブジェクトのデフォルトレイアウトとして設定するには、オブジェクトのすべての必須フィールドを含める必要があります。 詳細については、[オブジェクトレイアウトの設計](./designing-object-layouts.md)を参照してください。<!--TASK: Replace with following text once system Objects are supported, "You can add, edit, and remove layouts for both system and custom Objects at any time. Custom layouts must include all of an Object's required fields in order to be set as the Object's default layout. See \[Designing Object Layouts\](./designing-object-layouts.md) for more information."-->### アクション
+カスタムオブジェクトのレイアウトは、いつでも追加、編集、削除することができます。 カスタムレイアウトをオブジェクトのデフォルトレイアウトとして設定するには、オブジェクトのすべての必須フィールドを含める必要があります。 詳細については、[オブジェクトレイアウトの設計](./designing-object-layouts.md)を参照してください。 <!--TASK: Replace with following text once system Objects are supported, "You can add, edit, and remove layouts for both system and custom Objects at any time. Custom layouts must include all of an Object's required fields in order to be set as the Object's default layout. See \[Designing Object Layouts\](./designing-object-layouts.md) for more information."--> ### アクション
 
 ![カスタムオブジェクトのアクションを追加、編集、および削除します。](./managing-objects/images/05.png)
 
@@ -50,7 +50,7 @@
 
 ## オブジェクトの有効化と無効化
 
-デフォルトでは、カスタムオブジェクトは、最初に[公開](./creating-objects.md#publishing-object-drafts)された時に、 *有効化*されます。 これにより、アプリケーションが作成されるとすぐに使用できるようになります。 アクティブになっている間は、LiferayのUIやHeadless APIコールを介して、オブジェクトとそのエントリーにアクセスできます。 ただし、カスタムオブジェクトはいつでも無効にすることができます。
+デフォルトでは、カスタムオブジェクトは、最初に[公開](./creating-objects.md#publishing-object-drafts)された時に、 **有効化** されます。 これにより、アプリケーションが作成されるとすぐに使用できるようになります。 アクティブになっている間は、LiferayのUIやHeadless APIコールを介して、オブジェクトとそのエントリーにアクセスできます。 ただし、カスタムオブジェクトはいつでも無効にすることができます。
 
 オブジェクトを無効にすると、そのオブジェクトは、パネルカテゴリー、統合されたフレームワーク、および関連するオブジェクトから削除されます。 非アクティブな状態のオブジェクトは、 [編集と拡張](#editing-and-extending-objects)のみ、オブジェクト ポートレットで行うことができます。 オブジェクトのエントリが無効化された時点でサイトや関連オブジェクトに表示されていた場合、それらのエントリは空白となり、関連のオブジェクトレイアウトにフィールドは表示されなくなります。
 
@@ -62,17 +62,17 @@
 
 以下の手順で、カスタムオブジェクトを無効化または有効化します。
 
-1. *オブジェクト*ポートレットから、目的の*オブジェクト*をクリックします。
+1. **オブジェクト** ポートレットから、目的の **オブジェクト** をクリックします。
 
    ```{note}
    システムオブジェクトを無効にすることはできません。
    ```
 
-1. ［Details］タブで、トグルスイッチを*［Active］*または*［Inactive］*のいずれかに設定します。
+1. ［Details］タブで、トグルスイッチを ［**Active**］ または ［**Inactive**］ のいずれかに設定します。
 
     ![オブジェクトを有効または無効に切り替えます。 ](./managing-objects/images/08.png)
 
-1. *［保存］*をクリックします。
+1. ［**保存**］ をクリックします。
 
 ## オブジェクト定義の削除
 
@@ -90,15 +90,15 @@ Liferay 7.4 U26/GA26 以前のバージョンでは、 [公開されたオブジ
 
 準備ができたら、以下の手順で定義を削除してください。
 
-1. *グローバルメニュー* （![Global Menu](../../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］*タブに移動して、*［オブジェクト］*をクリックします。
+1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**オブジェクト**］ をクリックします。
 
-1. 目的の定義の*アクション*ボタン (![Actions Button](../../../images/icon-actions.png))をクリックし、 *［削除］*を選択します。
+1. 目的の定義の **アクション** ボタン (![Actions Button](../../../images/icon-actions.png))をクリックし、 ［**削除**］ を選択します。
 
-1. ダイアログウィンドウで、定義の*名前*を入力し、 *［Done］* をクリックして確定します。
+1. ダイアログウィンドウで、定義の **名前** を入力し、 ［**Done**］ をクリックして確定します。
 
    ![オブジェクト定義の名前を入力し、［Done］をクリックします。](./managing-objects/images/10.png)
 
 ## 追加情報
 
 * [Objects](../../objects.md)
-* [Creating Objects](./creating-objects.md)<!--TASK: Add once article is finished * \[Objects UI Reference\](../objects-ui-reference.md) -->
+* [Creating Objects](./creating-objects.md) <!--TASK: Add once article is finished * \[Objects UI Reference\](../objects-ui-reference.md) -->

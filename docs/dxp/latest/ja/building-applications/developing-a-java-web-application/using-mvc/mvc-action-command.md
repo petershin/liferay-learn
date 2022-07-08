@@ -42,19 +42,19 @@ MVCアクションコマンドを使用するサンプルポートレットを�
     STARTED com.acme.l6y9.web_1.0.0
     ```
 
-1. *［L6Y9 ポートレット］*ウィジェットを*［サンプル］*カテゴリからウィジェットページに追加します。 L6Y9ポートレットが表示されます。
+1. ［**L6Y9 ポートレット**］ ウィジェットを ［**サンプル**］ カテゴリからウィジェットページに追加します。 L6Y9ポートレットが表示されます。
 
    ![L6Y9ポートレットをページに追加しました。](./mvc-action-command/images/01.png)
 
    リンクは、さまざまな`MVCActionCommand`クラスのメソッドを呼び出します。 学習の目的で、メソッドは自分自身を識別するメッセージをログに記録します。
 
-1. *［Do L6Y9 Able］* をクリックします。 `DoL6Y9AbleMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
+1. ［**Do L6Y9 Able**］ をクリックします。 `DoL6Y9AbleMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
 
     ```bash
     [DoL6Y9AbleMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
     ```
 
-1. *［Do L6Y9 Baker］* をクリックします。 `DoL6Y9BakerMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
+1. ［**Do L6Y9 Baker**］ をクリックします。 `DoL6Y9BakerMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
 
     ```bash
     [DoL6Y9BakerMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
@@ -105,7 +105,7 @@ MVCアクションコマンドの動作を見てきました。 次に、それ�
 |:--------------------------------------------------- |:------------------------------------------ |
 | `<portlet:actionURL name="/do_l6y9_baker" />` | `mvc.command.name=/l6y9/do_l6y9_baker`     |
 
-たとえば、*［Do L6Y9 Able］*リンクをクリックすると、`DoL6Y9AbleMVCActionCommand`の`doProcessAction`メソッドが呼び出されます。
+たとえば、 ［**Do L6Y9 Able**］ リンクをクリックすると、`DoL6Y9AbleMVCActionCommand`の`doProcessAction`メソッドが呼び出されます。
 
 ## MVCActionCommandクラスを調べる
 

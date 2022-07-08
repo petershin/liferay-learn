@@ -13,7 +13,7 @@ Service Builderを使用してモデルエンティティを定義したら、�
 Liferayはフォーム項目をレンダリングするときに、構成に基づいてフォームの入力フィールドをカスタマイズします。
 
 ```{note}
-依存性注入としてSpringを選択した場合、Service Builderは、サービスモジュールの``src/main/resources/META-INF``フォルダに多数のXML構成ファイルを生成します。 Service Builderは、これらのファイルのほとんどを使用して、SpringおよびHibernateの構成を管理します。 SpringまたはHibernateの構成ファイルは変更しないでください。それらへの変更は、Service Builderの実行時に上書きされます。 ただし、``portlet-model-hints.xml``ファイルは安全に編集できます。
+依存性注入としてSpringを選択した場合、Service Builderは、サービスモジュールのrc/main/resources/META-INF`フォルダに多数のXML構成ファイルを生成します。 Service Builderは、これらのファイルのほとんどを使用して、SpringおよびHibernateの構成を管理します。 SpringまたはHibernateの構成ファイルは変更しないでください。それらへの変更は、Service Builderの実行時に上書きされます。 ただし、`portlet-model-hints.xml`ファイルは安全に編集できます。
 ```
 
 例として、[ブログアプリサービスモジュールの](https://github.com/liferay/liferay-portal/blob/master/modules/apps/blogs/blogs-service/src/main/resources/META-INF/portlet-model-hints.xml)モデルヒントファイルを考えてみましょう。

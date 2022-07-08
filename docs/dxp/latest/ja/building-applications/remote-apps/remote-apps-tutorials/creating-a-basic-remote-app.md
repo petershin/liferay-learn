@@ -6,7 +6,7 @@
 
 このチュートリアルでは、Liferayの[`create_remote_app.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_remote_app.sh)スクリプトを使って、基本のアプリケーションを作成します。 アプリケーションが生成されたら、そのコードをコンパイルし、`.js`と`.css`ファイルをホストします。 ホストされたら、各ファイルのURLをコピーして、それを使ってLiferayリモートアプリケーションを作成します。 最後に、アプリケーションをウィジェットとしてサイトページにデプロイします。
 
-![create_remote_app.shスクリプトを使用して、簡単なReactアプリケーションを作成します。](./creating-a-basic-remote-app/images/01.png)
+![create **remote** app.shスクリプトを使用して、簡単なReactアプリケーションを作成します。](./creating-a-basic-remote-app/images/01.png)
 
 ```{note}
 Liferayリモートアプリケーションは、アプリケーションの構築、パッケージ化、ホスティングの方法にとらわれません。 このチュートリアルでは、リモートアプリケーションのサンプルを作成するための便利な方法のみを紹介します。
@@ -71,7 +71,7 @@ h5v7-remote-app
 生成された`index.js`ファイルには、Liferayリモートアプリケーションとしてアプリケーションを使用するために必要な2つのカスタマイゼーションが含まれています。
 
 * WebComponent：21行目で、アプリケーションは`WebComponent`と宣言され、リモートアプリケーションに接続できるようになっています。
-* ELEMENT_ID：30行目で、`ELEMENT_ID`に、従来の`<div id="root" />`ではなく、 `h5v7-remote-app`がセットされました。 これは、リモートアプリケーションのHTML要素名がアプリケーションの `ELEMENT_ID`と一致しなければならず、`<div id="root" />`ではこの目的では機能しないためです。
+* ELEMENT **ID：30行目で、`ELEMENT** ID`に、従来の`<div id="root" />`ではなく、 `h5v7-remote-app`がセットされました。 これは、リモートアプリケーションのHTML要素名がアプリケーションの `ELEMENT_ID`と一致しなければならず、`<div id="root" />`ではこの目的では機能しないためです。
 
 ### Reactルーティングを理解する
 
@@ -116,21 +116,21 @@ gzip後のファイルサイズ：
 
 次に、以下の手順に従います。
 
-1. *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［コンテンツ & データ］*と展開して、 *［ドキュメントとメディア］*へ移動してください。
+1. **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**コンテンツ & データ**］ と展開して、 ［**ドキュメントとメディア**］ へ移動してください。
 
-1. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックし、*［複数ファイルのアップロード］*を選択します。
+1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックし、 ［**複数ファイルのアップロード**］ を選択します。
 
 1. `.js</0と<code>.css`ファイルをアップロードエリアにドラッグ＆ドロップしてください。
 
-   または、*［Select Files］*を使用してアップロードしてください。
+   または、 ［**Select Files**］ を使用してアップロードしてください。
 
    ![.js と .css ファイルを Liferayドキュメントライブラリにアップロードします。](./creating-a-basic-remote-app/images/02.png)
 
-1. *［Publish］*をクリックします。
+1. ［**Publish**］ をクリックします。
 
 これにより、ファイルがドキュメントライブラリに追加され、リモートアプリケーションを作成するために使用する固有のURLが割り当てられます。
 
-各ファイルのURLを表示するには、*Info*アイコン (![Info Icon](../../../images/icon-information.png)) をクリックし、ファイルを選択してください。 各ファイルの*WebDAV URL*をコピーし、次のステップで使用するために保存してください。
+各ファイルのURLを表示するには、 **Info** アイコン (![Info Icon](../../../images/icon-information.png)) をクリックし、ファイルを選択してください。 各ファイルの **WebDAV URL** をコピーし、次のステップで使用するために保存してください。
 
 ![各ファイルのWebDAV URLをコピーします。](./creating-a-basic-remote-app/images/03.png)
 
@@ -141,9 +141,9 @@ gzip後のファイルサイズ：
 
 ## リモートアプリケーションにアプリケーションを登録する
 
-1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、*［アプリケーション］*タブをクリックし、*［Remote Apps］*へ移動します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**Remote Apps**］ へ移動します。
 
-1. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
+1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
 
 1. 次の値を入力します。
 
@@ -156,7 +156,7 @@ gzip後のファイルサイズ：
    | CSS の URL    | `.css`ファイルのWebDAV URL |
    | ポートレットのカテゴリ名 | リモートアプリケーション          |
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 保存すると、LiferayはH5V7-Remote-Appという名前のウィジェットを作成し、他のページウィジェットのようにサイトページにデプロイすることができるようになります。 選択したポートレットカテゴリ名の下に表示されるウィジェットです。
 

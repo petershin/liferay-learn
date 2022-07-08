@@ -14,10 +14,10 @@ Liferay DXPは、標準で50の言語をサポートしています。 各ロケ
 
 次に、以下の手順に従います。
 
-1. [翻訳を自動的に生成する](./liferay-m7d6.zip)をダウンロードして、解凍します。
+1. [翻訳を自動的に生成する](./liferay-m7d6.zip) をダウンロードして、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/localization/liferay-m7d6.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/localization/liferay-m7d6.zip -O
    ```
 
    ```bash
@@ -30,7 +30,7 @@ Liferay DXPは、標準で50の言語をサポートしています。 各ロケ
    microsoft.translator.subscription.key={your unique key}
    ```
 
-   Language Builderが機能するためには、独自の[Microsoft Translator購読キー](https://www.microsoft.com/en-us/translator/business/translator-api/)を取得する必要があります。
+   Language Builderが機能するためには、独自の [Microsoft Translator購読キー](https://www.microsoft.com/en-us/translator/business/translator-api/) を取得する必要があります。
 
 1. モジュールルートから、Language Builderを実行します。
 
@@ -58,4 +58,4 @@ buildLang {
 }
 ```
 
-Language Builderツールと追加の構成の詳細については、[Lang Builder Gradle Plugin](https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-lang-builder)を参照してください。
+Language Builderツールと追加の構成の詳細については、 [Lang Builder Gradle Plugin](https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-lang-builder) を参照してください。

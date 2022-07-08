@@ -48,9 +48,9 @@
 
 以下の手順に従って、個々の選択リストの権限を管理します。
 
-1. *［Picklists］*アプリケーションを *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png))から開きます。
+1. ［**Picklists**］ アプリケーションを **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png))から開きます。
 
-1. 目的のエンティティの *アクション* ボタン（![Actions Button](../../../images/icon-actions.png)）をクリックし、 *［Permissions］*を選択してください。
+1. 目的のエンティティの **アクション** ボタン（![Actions Button](../../../images/icon-actions.png)）をクリックし、 ［**Permissions**］ を選択してください。
 
    ![目的の選択リストのアクションボタンをクリックし、［権限］を選択します。](./managing-picklist-permissions/images/02.png)
 
@@ -62,7 +62,7 @@
 
    ![チェックボックスを使用して、必要なロールに権限を割り当てることができます。](./managing-picklist-permissions/images/03.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 ## 追加情報
 

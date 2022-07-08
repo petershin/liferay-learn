@@ -8,11 +8,11 @@
 
 以下の手順で、オブジェクトデータをGoogle シートに同期させます。
 
-1. [Zapier](https://zapier.com/)にログインし、 *［Create Zap］*をクリックします。
+1. [Zapier](https://zapier.com/)にログインし、 ［**Create Zap**］ をクリックします。
 
    ![Zapを作成します。](./using-zapier-to-sync-object-data-with-google-sheets/images/01.png)
 
-1. *［Trigger］* のステップをクリックし、 *［Webhooks by Zapier］*を選択します。
+1. ［**Trigger**］ のステップをクリックし、 ［**Webhooks by Zapier**］ を選択します。
 
    ![［Trigger］をクリックし、Zapierによる［webhooks」を選択します。](./using-zapier-to-sync-object-data-with-google-sheets/images/02.png)
 
@@ -20,11 +20,11 @@
    WebhookはZapierのプレミアム機能です。
    ```
 
-1. *［Trigger Event］*ドロップダウンメニューをクリックし、*［Catch Hook］*を選択して、*［Continue］*をクリックします。
+1. ［**Trigger Event**］ ドロップダウンメニューをクリックし、 ［**Catch Hook**］ を選択して、 ［**Continue**］ をクリックします。
 
    ![トリガーイベントの［Catch Hook］を選択します。](./using-zapier-to-sync-object-data-with-google-sheets/images/03.png)
 
-1. 生成された *Webhook URL*をコピーします。
+1. 生成された **Webhook URL** をコピーします。
 
    ![生成されたWebhookのURLをコピーしてください。](./using-zapier-to-sync-object-data-with-google-sheets/images/04.png)
 
@@ -36,27 +36,27 @@
 
    これにより、Webhookモジュールがオブジェクトのデータ構造を自動的に決定することができます。
 
-1. *［Test Trigger］*ボタンをクリックします。
+1. ［**Test Trigger**］ ボタンをクリックします。
 
    ![［Test Trigger］ボタンをクリックします。](./using-zapier-to-sync-object-data-with-google-sheets/images/06.png)
 
-1. テストが成功したことを確認し、 *［Continue］*をクリックします。
+1. テストが成功したことを確認し、 ［**Continue**］ をクリックします。
 
    ![テストが正常に行われたことを確認します。](./using-zapier-to-sync-object-data-with-google-sheets/images/07.png)
 
-1. *Action* 手順をクリックし、 *［Google Sheets］* アプリを選択してください。
+1. **Action** 手順をクリックし、 ［**Google Sheets**］ アプリを選択してください。
 
    ![Google シートを選択します。](./using-zapier-to-sync-object-data-with-google-sheets/images/08.png)
 
-1. *［Action Event］* ドロップダウンメニューをクリックし、 *［Create Spreadsheet Row］*を選択します。
+1. ［**Action Event**］ ドロップダウンメニューをクリックし、 ［**Create Spreadsheet Row**］ を選択します。
 
    ![［Create Spreadsheet Row］を選択します。](./using-zapier-to-sync-object-data-with-google-sheets/images/09.png)
 
-1. Google SheetsアプリをGoogleアカウントに接続し、 *［Continue］*をクリックします。
+1. Google SheetsアプリをGoogleアカウントに接続し、 ［**Continue**］ をクリックします。
 
    ![Google シートアプリをGoogleアカウントに接続します。](./using-zapier-to-sync-object-data-with-google-sheets/images/10.png)
 
-1. オブジェクトと同期させたい*［Spreadsheet］*と*［Worksheet］*を選択します。
+1. オブジェクトと同期させたい ［**Spreadsheet**］ と ［**Worksheet**］ を選択します。
 
    ![目的のスプレッドシートとワークシートを選択します。](./using-zapier-to-sync-object-data-with-google-sheets/images/11.png)
 
@@ -64,11 +64,11 @@
    ［Create Spreadsheet Row］アクションを使用する場合、最初の列のヘッダーにテキストが含まれている必要があります。 そうしないと、Zapはデータをシートの下部ではなく上部に送ります。
    ```
 
-1. シートの列をオブジェクトの構造のデータフィールドにマッピングし、 *［Continue］*をクリックします。
+1. シートの列をオブジェクトの構造のデータフィールドにマッピングし、 ［**Continue**］ をクリックします。
 
    ![シートの列をオブジェクトのフィールドにマッピングします。](./using-zapier-to-sync-object-data-with-google-sheets/images/12.png)
 
-1. *［Test Action］* ボタンをクリックし、テストが正常に行われたことを確認します。
+1. ［**Test Action**］ ボタンをクリックし、テストが正常に行われたことを確認します。
 
    ![［Test Action］ ボタンをクリックし、テストが正常に行われたことを確認します。](./using-zapier-to-sync-object-data-with-google-sheets/images/13.png)
 

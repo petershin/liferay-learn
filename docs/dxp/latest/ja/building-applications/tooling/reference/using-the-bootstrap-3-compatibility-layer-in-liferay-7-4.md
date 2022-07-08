@@ -42,7 +42,7 @@ atlasテーマの変数が必要な場合は、これをプロジェクトの `s
 @import '@liferay/bs3-bs4-compat/scss/components';
 ```
 
-atlasテーマ変数を必要**としない**場合は、代わりに以下をプロジェクトの`src/css/clay.scss`ファイルに追加してください。
+atlasテーマ変数を必要 **としない** 場合は、代わりに以下をプロジェクトの`src/css/clay.scss`ファイルに追加してください。
 
 ```css
 @import 'clay/base';

@@ -8,11 +8,11 @@
 
 以下の手順で、オブジェクトデータをGoogle シートに同期させます。
 
-1. [Automate.io](https://automate.io/) にサインインし、 *［Create a Bot］*をクリックします。
+1. [Automate.io](https://automate.io/) にサインインし、 ［**Create a Bot**］ をクリックします。
 
    ![Automate.ioを開き、Create a Botをクリックします。](./using-automate-io-to-sync-object-data-with-google-sheets/images/01.png)
 
-1. *Trigger* 手順では、 *［Webhooks］* アプリを選択してください。
+1. **Trigger** 手順では、 ［**Webhooks**］ アプリを選択してください。
 
    ![Webhooksを選択します。](./using-automate-io-to-sync-object-data-with-google-sheets/images/02.png)
 
@@ -20,11 +20,11 @@
    Webhooksは、Automate.ioのプレミアム機能です。
    ```
 
-1. *［Trigger Event］*については、 *［Incoming Hook］*を選択してください。
+1. ［**Trigger Event**］ については、 ［**Incoming Hook**］ を選択してください。
 
    ![Incoming Hookを選択します。](./using-automate-io-to-sync-object-data-with-google-sheets/images/03.png)
 
-1. 生成された *Webhook URL*をコピーします。
+1. 生成された **Webhook URL** をコピーします。
 
    ![WebhooksのURLをコピーします。](./using-automate-io-to-sync-object-data-with-google-sheets/images/04.png)
 
@@ -36,23 +36,23 @@
 
    これにより、Automate.ioボットのWebhooksアプリがオブジェクトデータ構造を自動的に決定することができます。
 
-1. *Action* 手順では、 *［Google Sheets］* アプリを選択してください。
+1. **Action** 手順では、 ［**Google Sheets**］ アプリを選択してください。
 
    ![Google シートを選択します。](./using-automate-io-to-sync-object-data-with-google-sheets/images/06.png)
 
-1. *［Authorize］*をクリックして、Googleアカウントとアプリを連携させます。
+1. ［**Authorize**］ をクリックして、Googleアカウントとアプリを連携させます。
 
    ![接続するGoogleアカウントを選択します。](./using-automate-io-to-sync-object-data-with-google-sheets/images/07.png)
 
-1. アクションフィールドでは、 *［Add Row］*を選択します。
+1. アクションフィールドでは、 ［**Add Row**］ を選択します。
 
    ![［行を追加する］を選択します。](./using-automate-io-to-sync-object-data-with-google-sheets/images/08.png)
 
-1. オブジェクトと同期させたい*スプレッドシート*と*ワークシート*を選択し、*［保存］*をクリックします。
+1. オブジェクトと同期させたい **スプレッドシート** と **ワークシート** を選択し、 ［**保存**］ をクリックします。
 
    ![目的のスプレッドシートとワークシートを選択します。](./using-automate-io-to-sync-object-data-with-google-sheets/images/09.png)
 
-1. ボットを*オンにします*。
+1. ボットを **オンにします** 。
 
    ![ボットをオンにします。](./using-automate-io-to-sync-object-data-with-google-sheets/images/10.png)
 

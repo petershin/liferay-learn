@@ -17,7 +17,7 @@ getting-started/running-a-test.md
 getting-started/understanding-test-results-and-debugging-tests.md
 ```
 
-これまでPoshiのテストは、 [Liferayのソース コード](https://github.com/liferay/liferay-portal/)内にテストファイルをダウンロードし、作成することでしか実行できませんでした。 _Poshi Standalone_ gradleプロジェクトを使えば、Liferay Portalのgithubリポジトリ全体を取得することなく、好きなディレクトリでPoshiを使用することができます。
+これまでPoshiのテストは、 [Liferayのソース コード](https://github.com/liferay/liferay-portal/)内にテストファイルをダウンロードし、作成することでしか実行できませんでした。 **Poshi Standalone** gradleプロジェクトを使えば、Liferay Portalのgithubリポジトリ全体を取得することなく、好きなディレクトリでPoshiを使用することができます。
 
 ::::{grid} 1 :gutter: 3 3 3 3
 

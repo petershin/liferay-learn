@@ -8,23 +8,23 @@
 
 以下の手順で、オブジェクトデータをGoogle シートに同期させます。
 
-1. [Integrately](https://integrately.com/) にサインインし、 *［New Automation］*をクリックします。
+1. [Integrately](https://integrately.com/) にサインインし、 ［**New Automation**］ をクリックします。
 
    ![［New Automation］をクリックします。](./using-integrately-to-sync-object-data-with-google-sheets/images/01.png)
 
-1. *［Webhook/API Integration］* アプリをオートメーションに追加します。
+1. ［**Webhook/API Integration**］ アプリをオートメーションに追加します。
 
    ![Webhook/API Integrationを検索し、選択します。](./using-integrately-to-sync-object-data-with-google-sheets/images/02.png)
 
-1. *［Google Sheets］* アプリをオートメーションに追加します。
+1. ［**Google Sheets**］ アプリをオートメーションに追加します。
 
    ![Google シートを検索して選択します。](./using-integrately-to-sync-object-data-with-google-sheets/images/03.png)
 
-1. オートメーションのトリガーとアクションを定義し、 *［Go］*をクリックします。
+1. オートメーションのトリガーとアクションを定義し、 ［**Go**］ をクリックします。
 
    ![フローを定義し、［*Go］をクリックします。](./using-integrately-to-sync-object-data-with-google-sheets/images/04.png)
 
-1. 生成された *Webhook URL*をコピーします。
+1. 生成された **Webhook URL** をコピーします。
 
    ![生成されたWebhookのURLをコピーしてください。](./using-integrately-to-sync-object-data-with-google-sheets/images/05.png)
 
@@ -36,13 +36,13 @@
 
    これにより、Webhookアプリがオブジェクトのデータ構造を自動的に決定することができます。
 
-1. Integratelyでは、 *［I have set this URL in Webhook/API Integration］*をクリックします。
+1. Integratelyでは、 ［**I have set this URL in Webhook/API Integration**］ をクリックします。
 
-1. *［Done, Check if received］*をクリックします。
+1. ［**Done, Check if received**］ をクリックします。
 
    ![［Done, Check if received］をクリックします。](./using-integrately-to-sync-object-data-with-google-sheets/images/07.png)
 
-1. テストが成功したことを確認し、 *［Continue］*をクリックします。
+1. テストが成功したことを確認し、 ［**Continue**］ をクリックします。
 
    ![テストが正常に行われたことを確認し、［続行］をクリックします。](./using-integrately-to-sync-object-data-with-google-sheets/images/08.png)
 
@@ -50,7 +50,7 @@
 
    ![Google シートアプリをGoogleアカウントに接続します。](./using-integrately-to-sync-object-data-with-google-sheets/images/09.png)
 
-1. オブジェクトと同期させたい*［Spreadsheet］*と*［Worksheet］*を選択します。
+1. オブジェクトと同期させたい ［**Spreadsheet**］ と ［**Worksheet**］ を選択します。
 
    ![目的のスプレッドシートとワークシートを選択します。](./using-integrately-to-sync-object-data-with-google-sheets/images/10.png)
 
@@ -58,7 +58,7 @@
 
    ![シートの列をオブジェクトのフィールドにマッピングします。](./using-integrately-to-sync-object-data-with-google-sheets/images/11.png)
 
-1. *［My Automations］* ページに移動し、 *Power* ボタンをクリックし、接続をオンにします。
+1. ［**My Automations**］ ページに移動し、 **Power** ボタンをクリックし、接続をオンにします。
 
    ![接続をオンにします。](./using-integrately-to-sync-object-data-with-google-sheets/images/12.png)
 

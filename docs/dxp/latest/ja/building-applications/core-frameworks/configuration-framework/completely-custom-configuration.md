@@ -1,6 +1,6 @@
 # 完全なカスタム構成
 
-[構成インターフェースを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface)すると、構成UIが自動的に生成されます。 ただし、構成に完全にカスタムのUIが必要な場合もあります。 たとえば、Liferayの構成管理を使用する代わりに、プログラムで構成を処理するよう計画している場合などです。 または、完全にカスタムのUIを作成する柔軟性が必要な場合もあります。 その方法は以下の通りです。
+[構成インターフェースを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface) すると、構成UIが自動的に生成されます。 ただし、構成に完全にカスタムのUIが必要な場合もあります。 たとえば、Liferayの構成管理を使用する代わりに、プログラムで構成を処理するよう計画している場合などです。 または、完全にカスタムのUIを作成する柔軟性が必要な場合もあります。 その方法は以下の通りです。
 
 ## サンプルプロジェクトを参照する
 ```{include} /_snippets/run-liferay-dxp.md
@@ -8,10 +8,10 @@
 
 次に、以下の手順に従います。
 
-1. [完全カスタム設定](./liferay-u2g5.zip)をダウンロードし、解凍してください。
+1. [完全カスタム設定](./liferay-u2g5.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
     ```
 
     ```bash
@@ -36,7 +36,7 @@
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
-1. *［コントロールパネル］* &rarr; *［設定］* &rarr; *［System Settings］* &rarr; *［Third Party］*に移動します。 *［U2G5 Configuration］*をクリックします。
+1. ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**System Settings**］ &rarr; ［**Third Party**］ に移動します。 ［**U2G5 Configuration**］ をクリックします。
 
    ![システム設定でU2G5構成に移動します。](./completely-custom-configuration/images/01.png)
 

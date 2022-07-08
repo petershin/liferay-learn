@@ -12,13 +12,13 @@ Liferay DXP 7.4 U5およびPortal 7.4 GA9では、オブジェクトはリレー
 
 次の手順に従って、オブジェクト構造をエクスポートします。
 
-1. *［グローバルメニュー］* （![Global Menu](../../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］*タブに移動して、*［Objects］*をクリックします。
+1. ［**グローバルメニュー**］（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**Objects**］ をクリックします。
 
-1. 目的のオブジェクトの *アクション* ボタン（![Action Button](../../../images/icon-actions.png)）をクリックし、 *［Export as JSON］*を選択します。
+1. 目的のオブジェクトの **アクション** ボタン（![Action Button](../../../images/icon-actions.png)）をクリックし、 ［**Export as JSON**］ を選択します。
 
    ![目的のオブジェクトのアクションボタンをクリックし、［Export as JSON］を選択します。](./exporting-and-importing-object-structures/images/01.png)
 
-1. ダイアログウィンドウの *［保存］* をクリックすると、オブジェクトの定義をJSONファイルとしてダウンロードを開始します。
+1. ダイアログウィンドウの ［**保存**］ をクリックすると、オブジェクトの定義をJSONファイルとしてダウンロードを開始します。
 
 このファイルには、オブジェクトのフィールド、レイアウト、アクション、および一般的な設定の詳細（ラベル、スコープなど）が含まれます。 エクスポートされたオブジェクトにリレーションシップがある場合、それらはJSONファイルに含まれません。
 
@@ -28,13 +28,13 @@ Liferay DXP 7.4 U5およびPortal 7.4 GA9では、オブジェクトはリレー
 
 次の手順に従って、オブジェクト構造をインポートします。
 
-1. *［グローバルメニュー］ * （![Global Menu](../../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］ * タブをクリックして、 *［Objects］ *に進みます。
+1. ［**グローバルメニュー**］（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**Objects**］ に進みます。
 
-1. アプリケーションバーの*アクション*ボタン（![Actions Button](../../../images/icon-actions.png)）をクリックし、*［Import Object］*を選択します。
+1. アプリケーションバーの **アクション** ボタン（![Actions Button](../../../images/icon-actions.png)）をクリックし、 ［**Import Object**］ を選択します。
 
    ![アプリケーションバーのアクションボタンをクリックして、［Import Object］を選択します。](./exporting-and-importing-object-structures/images/02.png)
 
-1. 新しいオブジェクトに*名前*を入力し、インポートしたい*［JSON file］* を選択します。
+1. 新しいオブジェクトに **名前** を入力し、インポートしたい ［**JSON file**］ を選択します。
 
    ```{important}
    オブジェクト名はユニークで、パスカルケースを使用する必要があります。
@@ -42,7 +42,7 @@ Liferay DXP 7.4 U5およびPortal 7.4 GA9では、オブジェクトはリレー
 
    ![名前を入力し、目的のJSONファイルを選択します。](./exporting-and-importing-object-structures/images/03.png)
 
-1. *［Import］*をクリックします。
+1. ［**Import**］ をクリックします。
 
 オブジェクト構造のインポートはバックグラウンドで実行され、数分程度かかる場合があります。
 

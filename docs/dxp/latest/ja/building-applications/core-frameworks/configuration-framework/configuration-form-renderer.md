@@ -1,6 +1,6 @@
 # Configuration Form Renderer
 
-[構成インターフェイスを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface)すると、構成UIが自動的に生成されます。  ただし、UIのルックアンドフィールをカスタマイズしたい場合もあります。 たとえば、会社のデザインの美的感覚に一致するようにUIを変更するとします。 ` ConfigurationFormRenderer`の実装でこれを行う方法は次のとおりです。
+[構成インターフェイスを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface) すると、構成UIが自動的に生成されます。  ただし、UIのルックアンドフィールをカスタマイズしたい場合もあります。 たとえば、会社のデザインの美的感覚に一致するようにUIを変更するとします。 ` ConfigurationFormRenderer`の実装でこれを行う方法は次のとおりです。
 
 ## サンプルプロジェクトを参照する
 ```{include} /_snippets/run-liferay-dxp.md
@@ -8,10 +8,10 @@
 
 次に、以下の手順に従います。
 
-1. [Configuration Form Renderer](./liferay-b7r2.zip)をダウンロードし、解凍します。
+1. [Configuration Form Renderer](./liferay-b7r2.zip) をダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
    ```
 
    ```bash
@@ -36,7 +36,7 @@
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
-1. *［コントロールパネル］* &rarr; *［設定］* &rarr; *［System Settings］* &rarr; *［Third Party］*に移動します。 *［B7R2 Configuration］*をクリックします。
+1. ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**System Settings**］ &rarr; ［**Third Party**］ に移動します。 ［**B7R2 Configuration**］ をクリックします。
 
    ![システム設定でU2G5構成に移動します。](./configuration-form-renderer/images/01.png)
 

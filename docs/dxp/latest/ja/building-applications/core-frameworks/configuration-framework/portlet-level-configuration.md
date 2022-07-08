@@ -12,10 +12,10 @@
 
 次に、以下の手順に従います。
 
-1. [ローカライズされたメッセージの共有](./liferay-x7y2.zip)をダウンロードして、解凍します。
+1. [ローカライズされたメッセージの共有](./liferay-x7y2.zip) をダウンロードして、解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-x7y2.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-x7y2.zip -O
     ```
 
     ```bash
@@ -42,13 +42,13 @@
 
 1. X7Y2ポートレットをページにデプロイします。 サンプルポートレットは、サンプルウィジェットの下にあります。 デフォルトの色が緑に設定されていることに注意してください。
 
-1. *［コントロールパネル］* &rarr; *［設定］* &rarr; *［System Settings］*に移動します。 ［Other］セクションの下部にあるX7Y2構成をクリックします。
+1. ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**System Settings**］ に移動します。 ［Other］セクションの下部にあるX7Y2構成をクリックします。
 
     ![システム設定でアプリケーションの構成に移動します。](./portlet-level-configuration/images/01.png)
 
     別のデフォルトの色を選択して保存します。 ウィジェットがデプロイされているページに戻ります。 色変数が更新されました。
 
-1. ポートレットのオプションアイコン（![options icon](../../../images/icon-options.png)）をクリックし、*［Configuration］*をクリックします。 ポートレットの設定ウィンドウが開きます。
+1. ポートレットのオプションアイコン（![options icon](../../../images/icon-options.png)）をクリックし、 ［**Configuration**］ をクリックします。 ポートレットの設定ウィンドウが開きます。
 
     ![構成をクリックして、ポートレットの設定を開きます](./portlet-level-configuration/images/02.png)
 
@@ -69,15 +69,15 @@
 
 この例は、より高いレベルに設定されたスコープでも機能することに注意してください（つまり、 サイト、インスタンス、システムスコープ）。 ベストプラクティスは、ポートレット設定で使用する予定のアプリケーションをポートレットスコープとしてマークすることです。
 
-詳細については、[構成インターフェースを作成する](./setting-and-accessing-configurations.html#Creating-the-Configuration-Interface)を参照してください。
+詳細については、 [構成インターフェースを作成する](./setting-and-accessing-configurations.html#Creating-the-Configuration-Interface) を参照してください。
 
 ## 構成Bean宣言を追加する
 
-`ConfigurationProvider`と同様に、`PortletDisplay`は、構成クラスを登録するために構成Bean宣言ファイルを必要とします。 詳細については、[構成Bean宣言](./setting-and-accessing-configurations.html#Create-a-Configuration-Bean-Declaration)を参照してください。
+`ConfigurationProvider`と同様に、`PortletDisplay`は、構成クラスを登録するために構成Bean宣言ファイルを必要とします。 詳細については、 [構成Bean宣言](./setting-and-accessing-configurations.html#Create-a-Configuration-Bean-Declaration) を参照してください。
 
 ## PortletDisplayで構成を読み取る
 
-[構成プロバイダーAPIから構成値を読み取る](./setting-and-accessing-configurations.html#Reading-the-Configuration-from-the-Application)のと同様に、ポートレット表示APIを使用してアプリケーションの構成値にアクセスできます。
+[構成プロバイダーAPIから構成値を読み取る](./setting-and-accessing-configurations.html#Reading-the-Configuration-from-the-Application) のと同様に、ポートレット表示APIを使用してアプリケーションの構成値にアクセスできます。
 
 ```{literalinclude} ./portlet-level-configuration/resources/liferay-x7y2.zip/x7y2-web/src/main/java/com/acme/x7y2/web/internal/portlet/X7Y2Portlet.java
 :language: java

@@ -10,23 +10,23 @@ Liferay Objectをデータ統合ツールと併用することで、Objectのデ
 
 以下の手順で、オブジェクトデータをGoogle シートに同期させます。
 
-1. [Elastic.io](https://www.elastic.io/)にサインインし、*［Integrate］*ページに移動し、*［Flows］*をクリックします。
+1. [Elastic.io](https://www.elastic.io/)にサインインし、 ［**Integrate**］ ページに移動し、 ［**Flows**］ をクリックします。
 
    ![統合ページに移動し、［フロー］をクリックします。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/01.png)
 
-1. *［Add New Flow］*をクリックします。
+1. ［**Add New Flow**］ をクリックします。
 
    ![新しいフローを追加します。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/02.png)
 
-1. *［Add the Initial Trigger］*をクリックします。
+1. ［**Add the Initial Trigger**］ をクリックします。
 
    ![初期トリガーを追加します。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/03.png)
 
-1. *Trigger*については、 *Webhook*コンポーネントを選択してください。
+1. **Trigger** については、 **Webhook** コンポーネントを選択してください。
 
    ![Webhookを検索して選択します。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/04.png)
 
-1. 生成された*Webhook URL*をコピーします。
+1. 生成された **Webhook URL** をコピーします。
 
    ![生成されたWebhookのURLをコピーしてください。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/05.png)
 
@@ -38,7 +38,7 @@ Liferay Objectをデータ統合ツールと併用することで、Objectのデ
 
    これにより、Webhookコンポーネントがオブジェクトのデータ構造を自動的に決定することができます。
 
-1. *［Send Sample Request］*ボタンをクリックします。
+1. ［**Send Sample Request**］ ボタンをクリックします。
 
    ![［Send Sample Request］ボタンをクリックします。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/07.png)
 
@@ -46,19 +46,19 @@ Liferay Objectをデータ統合ツールと併用することで、Objectのデ
 
    ![テストが正常に行われたことを確認します。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/08.png)
 
-1. *［Add New Action］*をクリックします。
+1. ［**Add New Action**］ をクリックします。
 
    ![新しいアクションを追加します。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/09.png)
 
-1. *Action* 手順では、 *［Google シート］* アプリを選択してください。
+1. **Action** 手順では、 ［**Google シート**］ アプリを選択してください。
 
    ![Google シートのコンポーネントを選択します。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/10.png)
 
-1. *［ Add Spreadsheet Row］* 機能を選択します。
+1. ［**Add Spreadsheet Row**］ 機能を選択します。
 
    ![［Add Spreadsheet Row］ 機能を選択します。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/11.png)
 
-1. オブジェクトと同期させたい*［Spreadsheet］*と*［Worksheet］*を選択します。
+1. オブジェクトと同期させたい ［**Spreadsheet**］ と ［**Worksheet**］ を選択します。
 
    ![オブジェクトと同期させたいスプレッドシートとシートを選択します。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/12.png)
 
@@ -70,7 +70,7 @@ Liferay Objectをデータ統合ツールと併用することで、Objectのデ
 
    ![シートの列をオブジェクトのフィールドにマッピングします。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/14.png)
 
-1. *［Retrieve Sample from Google Spreadsheet］* ボタンをクリックします。
+1. ［**Retrieve Sample from Google Spreadsheet**］ ボタンをクリックします。
 
    ![［Retrieve Sample from Google Spreadsheet］ ボタンをクリックします。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/15.png)
 
@@ -78,11 +78,11 @@ Liferay Objectをデータ統合ツールと併用することで、Objectのデ
 
    ![テストが正常に行われたことを確認します。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/16.png)
 
-1. *［Publish Draft］*をクリックします。
+1. ［**Publish Draft**］ をクリックします。
 
    ![［Publish Draft］をクリックします。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/17.png)
 
-1. *［Start Flow］* をクリックし、新しいフローを有効にします。
+1. ［**Start Flow**］ をクリックし、新しいフローを有効にします。
 
    ![［Start Flow］をクリックします。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/18.png)
 

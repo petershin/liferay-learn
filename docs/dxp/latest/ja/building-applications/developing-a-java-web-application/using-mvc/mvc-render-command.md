@@ -40,11 +40,11 @@ MVCレンダーコマンドは、レンダリングするページを処理す�
     STARTED com.acme.a4p1.web_1.0.0
     ```
 
-1. *［A4P1ポートレット］*ウィジェットを*［サンプル］*カテゴリからウィジェットページに追加します。 A4P1ポートレットが表示されます。
+1. ［**A4P1ポートレット**］ ウィジェットを ［**サンプル**］ カテゴリからウィジェットページに追加します。 A4P1ポートレットが表示されます。
 
     ![A4P1ポートレットをページに追加しました。](./mvc-render-command/images/01.png)
 
-1. MVCレンダーコマンドを呼び出して、*［Go to Baker］*をクリックしてBakerビューにアクセスします。 `A4P1BakerMVCRenderCommand`は、その`render`メソッドの呼び出しをログに記録し、Bakerビューをレンダリングします。
+1. MVCレンダーコマンドを呼び出して、 ［**Go to Baker**］ をクリックしてBakerビューにアクセスします。 `A4P1BakerMVCRenderCommand`は、その`render`メソッドの呼び出しをログに記録し、Bakerビューをレンダリングします。
 
     ```bash
     [A4P1BakerMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
@@ -52,7 +52,7 @@ MVCレンダーコマンドは、レンダリングするページを処理す�
 
     ![Bakerビューをレンダリングしています。](./mvc-render-command/images/02.png)
 
-1. 他のMVCレンダーコマンドを呼び出し、*［Go to Able］*をクリックしてAbleビューに再度アクセスします。 `A4P1AbleMVCRenderCommand`は、その`render`メソッドの呼び出しをログに記録し、Ableビューを再度レンダリングします。
+1. 他のMVCレンダーコマンドを呼び出し、 ［**Go to Able**］ をクリックしてAbleビューに再度アクセスします。 `A4P1AbleMVCRenderCommand`は、その`render`メソッドの呼び出しをログに記録し、Ableビューを再度レンダリングします。
 
     ```bash
     [A4P1AbleMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)

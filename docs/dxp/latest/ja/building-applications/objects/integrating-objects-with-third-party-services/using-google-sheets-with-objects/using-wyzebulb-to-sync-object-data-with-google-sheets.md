@@ -10,19 +10,19 @@
 
 1. [Wyzebulb](https://www.wyzebulb.com/) にログインし、Flowを作成します。
 
-1. ［Trigger］では、 *［Webhook］* アプリを選択してください。
+1. ［Trigger］では、 ［**Webhook**］ アプリを選択してください。
 
     ![トリガーのアプリを選択します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/01.png)
 
     ![Webhooksを選択します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/02.png)
 
-1. *［Catch Hook］* トリガーを選択し、 *［Save + Continue］*をクリックします。
+1. ［**Catch Hook**］ トリガーを選択し、 ［**Save + Continue**］ をクリックします。
 
     ![Catch Hookトリガーを選択します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/03.png)
 
     ![［Save and Continue］をクリックします。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/04.png)
 
-1. *Webhooks URL* をクリックし、生成されたURLをコピーします。
+1. **Webhooks URL** をクリックし、生成されたURLをコピーします。
 
     ![WebhooksのURLを選択します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/05.png)
 
@@ -36,17 +36,17 @@
 
    これにより、Webhookモジュールがオブジェクトのデータ構造を自動的に決定することができます。
 
-1. テストが成功したことを確認し、 *［Save + Continue］*をクリックします。
+1. テストが成功したことを確認し、 ［**Save + Continue**］ をクリックします。
 
     ![テストに成功しました。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/08.png)
 
-1. *［Action］* では、 *［Google Sheets］* アプリを選択してください。
+1. ［**Action**］ では、 ［**Google Sheets**］ アプリを選択してください。
 
     ![［App］をクリックして、アプリを選択します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/09.png)
 
     ![Google シートを選択します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/10.png)
 
-1. *［Create a new row in Google Sheets］* アクションを選択し、 *［Save + Continue］*をクリックします。
+1. ［**Create a new row in Google Sheets**］ アクションを選択し、 ［**Save + Continue**］ をクリックします。
 
     ![［Action］をクリックして、アクションを選択します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/11.png)
 
@@ -56,7 +56,7 @@
 
     ![Google シートアプリをGoogleアカウントに接続します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/13.png)
 
-1. 目的の*［Spreadsheet］*と*［Worksheet］*を選択します。
+1. 目的の ［**Spreadsheet**］ と ［**Worksheet**］ を選択します。
 
     ![目的のスプレッドシートとワークシートを選択します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/14.png)
 
@@ -64,11 +64,11 @@
 
     ![シートの列をオブジェクトのフィールドにマッピングします。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/15.png)
 
-1. *［Test Action］* ボタンをクリックし、テストが正常に行われたことを確認します。
+1. ［**Test Action**］ ボタンをクリックし、テストが正常に行われたことを確認します。
 
     ![テストに成功しました。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/16.png)
 
-1. *［My Flows］* ページに移動し、フローが実行されていることを確認します。
+1. ［**My Flows**］ ページに移動し、フローが実行されていることを確認します。
 
     ![フローが実行されていることを確認します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/17.png)
 

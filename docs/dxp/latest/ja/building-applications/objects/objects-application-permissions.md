@@ -52,9 +52,9 @@
 
 以下の手順に従って、個々のオブジェクト定義の権限を管理します。
 
-1. *［Objects］*アプリケーションを *グローバルメニュー* (![Global Menu](../../images/icon-applications-menu.png))で開きます。
+1. ［**Objects**］ アプリケーションを **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png))で開きます。
 
-1. 目的のオブジェクト定義の *アクション* ボタン(![Actions Button](../../images/icon-actions.png))をクリックし、 *［Permissions］*を選択します。
+1. 目的のオブジェクト定義の **アクション** ボタン(![Actions Button](../../images/icon-actions.png))をクリックし、 ［**Permissions**］ を選択します。
 
    ![目的のオブジェクト定義のアクションボタンをクリックし、［権限］を選択します。](./objects-application-permissions/images/02.png)
 
@@ -66,7 +66,7 @@
 
    ![チェックボックスを使用して、必要なロールに権限を割り当てることができます。](./objects-application-permissions/images/03.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 ## 追加情報
 

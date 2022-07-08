@@ -54,6 +54,7 @@ Another way to ensure users see results is through [search suggestions](../searc
 
 The Search Bar's behavior can be configured via its portlet configuration screen.
 
+<!--replace with updated screenshot--search suggestions configs -->
 ![Configure the search bar behavior in its configuration screen.](./searching-for-content/images/05.png)
 
 ```{note}
@@ -95,6 +96,8 @@ http://localhost:8080/web/guest/search?q=data&target=this-site
 **Use Advanced Search Syntax:** If using Elasticsearch, enabling this allows users to enter [Query String Syntax](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) into the Search Bar. If using Solr, consult its documentation for the [proper syntax](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html).
 
 **Show Results from Staged Sites:** Content from [Staging environments](../../site-building/publishing-tools/staging.md) is [not searchable](../search-pages-and-widgets/search-results/search-results-behavior.md#search-and-staging) on live sites, regardless of this setting. This setting enables searching for content from other local staging sites when the Everything scope is configured in a site with local staging enabled.
+
+<!-- add the search suggestions settings or link to the search suggestions configuration article -->
 
 ## Searching for Liferay Objects
 

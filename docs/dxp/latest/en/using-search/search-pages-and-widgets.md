@@ -5,6 +5,7 @@ toc:
 - ./search-pages-and-widgets/search-facets.md
 - ./search-pages-and-widgets/similar-results.md
 - ./search-pages-and-widgets/search-insights.md
+- ./search-pages-and-widgets/search-bar-suggestions.md
 ---
 # Search Pages and Widgets
 
@@ -17,6 +18,7 @@ search-pages-and-widgets/search-results.md
 search-pages-and-widgets/search-facets.md
 search-pages-and-widgets/similar-results.md
 search-pages-and-widgets/search-insights.md
+search-pages-and-widgets/search-bar-suggestions.md
 ```
 ```{raw} html
 :file: ./search-pages-and-widgets/landing.html

@@ -84,14 +84,14 @@ Multiple `Jenkinsfile` extension points are now available in the `ci` folder to 
 
 ### Installing Hotfixes with an Environment Variable
 
-Instead of directly committing large hotfixes to your Git repository, a new environment variable has been added that allows you to install hotfixes through the CI build process. Add a comma-delimited list of hotfixes (with the `.zip` extensions omitted) to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the DXP Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply them during the build process.
+Instead of directly committing large hotfixes to your Git repository, a new environment variable has been added that allows you to install a hotfix through the CI build process. Add the hotfix's name (with the `.zip` extension omitted) to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the DXP Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply them during the build process.
 
 The following example defines hotfixes using the `LCP.json` file:
 
 ```
 "env": {
-    "LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON": "liferay-hotfix-10-7210,liferay-hotfix-17-7210",
-    "LCP_CI_LIFERAY_DXP_HOTFIXES_DEV": "liferay-hotfix-15-7210,liferay-hotfix-33-7210",
+    "LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON": "liferay-hotfix-17-7210",
+    "LCP_CI_LIFERAY_DXP_HOTFIXES_DEV": "liferay-hotfix-33-7210",
 }
 ```
 

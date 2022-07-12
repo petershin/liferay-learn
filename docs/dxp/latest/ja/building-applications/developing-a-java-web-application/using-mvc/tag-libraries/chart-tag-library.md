@@ -1,3 +1,18 @@
+---
+toc:
+- ./chart-tag-library/bar-chart.md
+- ./chart-tag-library/combination-chart.md
+- ./chart-tag-library/donut-chart.md
+- ./chart-tag-library/geomap-chart.md
+- ./chart-tag-library/gauge-chart.md
+- ./chart-tag-library/line-chart.md
+- ./chart-tag-library/pie-chart.md
+- ./chart-tag-library/predictive-chart.md
+- ./chart-tag-library/scatter-chart.md
+- ./chart-tag-library/spline-chart.md
+- ./chart-tag-library/step-chart.md
+- ./chart-tag-library/refreshing-charts-to-reflect-real-time-data.md
+---
 # チャートタグライブラリ
 
 ```{toctree}

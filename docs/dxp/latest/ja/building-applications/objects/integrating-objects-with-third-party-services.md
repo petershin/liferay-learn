@@ -1,3 +1,7 @@
+---
+toc:
+- ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
+---
 # オブジェクトとサードパーティーのサービスとの連携
 
 ```{toctree}
@@ -12,4 +16,5 @@ Liferay Objectを一般的なデータ統合ツールと併用することで、
 
 :::{grid-item-card} Using Google Sheets with Objects
 :link: ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
-::: ::::
+:::
+::::

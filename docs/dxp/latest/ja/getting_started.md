@@ -1,4 +1,12 @@
 ---
+toc:
+- ./getting-started/whats-new-74.md
+- ./getting-started/starting-with-a-docker-image.md
+- ./getting-started/introduction-to-the-admin-account.md
+- ./getting-started/navigating-dxp.md
+- ./getting-started/creating-your-first-site.md
+- ./getting-started/changing-your-sites-appearance.md
+- ./getting-started/whats-new-73.md
 html_meta:
   "documentation-type": "user-guide"
 ---

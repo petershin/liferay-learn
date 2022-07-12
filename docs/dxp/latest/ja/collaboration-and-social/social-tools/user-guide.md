@@ -1,3 +1,9 @@
+---
+toc:
+- ./user-guide/using-the-activities-widget.md
+- ./user-guide/using-the-contacts-center-widget.md
+- ./user-guide/using-the-ratings-system.md
+---
 # ユーザーガイド
 
 ```{toctree}

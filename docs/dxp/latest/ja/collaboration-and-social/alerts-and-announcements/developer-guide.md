@@ -1,3 +1,7 @@
+---
+toc:
+- ./developer-guide/apis.md
+---
 # 開発者ガイド
 
 ```{toctree}

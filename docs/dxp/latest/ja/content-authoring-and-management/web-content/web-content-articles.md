@@ -1,7 +1,3 @@
----
-toc:
-- ./web-content-articles/adding-a-basic-web-content-article.md
----
 # Webコンテンツの記事
 
 ```{toctree}

@@ -1,3 +1,13 @@
+---
+toc:
+- ./search-experiences/understanding-search-blueprints.md
+- ./search-experiences/creating-and-managing-search-blueprints.md
+- ./search-experiences/using-a-search-blueprint-on-a-search-page.md
+- ./search-experiences/personalizing-the-search-experience.md
+- ./search-experiences/search-blueprints-elements-reference.md
+- ./search-experiences/search-blueprints-configuration-reference.md
+- ./search-experiences/creating-and-managing-elements.md
+---
 # Search Experiences
 
 ```{toctree}

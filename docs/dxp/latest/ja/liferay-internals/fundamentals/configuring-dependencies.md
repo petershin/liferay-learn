@@ -1,10 +1,3 @@
----
-toc:
-- ./configuring-dependencies/finding-artifacts.md
-- ./configuring-dependencies/specifying-dependencies.md
-- ./configuring-dependencies/resolving-third-party-library-package-dependencies.md
-- ./../../developing-applications/reference/jars-excluded-from-wabs.md
----
 # 依存関係の構成
 
 ```{toctree}

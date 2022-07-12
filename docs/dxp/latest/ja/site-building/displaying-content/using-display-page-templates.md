@@ -1,12 +1,3 @@
----
-toc:
-- ./using-display-page-tempaltes/about-display-page-templates-and-display-pages.md
-- ./using-display-page-templates/displaying-content-with-display-page-templates.md
-- ./using-display-page-templates/creating-and-managing-display-page-templates.md
-- ./using-display-page-templates/publishing-content-with-display-pages.md
-- ./using-display-page-templates/displaying-categories-using-display-pages.md
-- ./using-display-page-templates/configuring-seo-and-open-graph.md
----
 # 表示ページテンプレートの使用
 
 ```{toctree}

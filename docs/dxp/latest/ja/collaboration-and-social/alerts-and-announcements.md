@@ -1,3 +1,8 @@
+---
+toc:
+- ./alerts-and-announcements/sending-alerts-and-announcements.md
+- ./alerts-and-announcements/developer-guide.md
+---
 # アラートとお知らせ
 
 ```{toctree}

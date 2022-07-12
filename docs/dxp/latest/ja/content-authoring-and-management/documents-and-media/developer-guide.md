@@ -1,3 +1,9 @@
+---
+toc:
+- ./developer-guide/document-api-basics.md
+- ./developer-guide/adaptive-media-modules-reference.md
+- ./developer-guide/creating-video-shortcut-providers.md
+---
 # 開発者ガイド
 
 ```{toctree}

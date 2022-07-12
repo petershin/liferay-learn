@@ -1,3 +1,9 @@
+---
+toc:
+- ./social-tools/user-guide.md
+- ./social-tools/developer-guide.md
+- ./social-tools/apis.md
+---
 # ソーシャルツール
 
 ```{toctree}

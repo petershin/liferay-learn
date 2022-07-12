@@ -1,3 +1,11 @@
+---
+toc:
+- ./search-pages-and-widgets/working-with-search-pages.md
+- ./search-pages-and-widgets/search-results.md
+- ./search-pages-and-widgets/search-facets.md
+- ./search-pages-and-widgets/similar-results.md
+- ./search-pages-and-widgets/search-insights.md
+---
 # 検索ページとウィジェット
 
 ```{toctree}

@@ -258,7 +258,7 @@ private KBArticleLocalService _kbArticleLocalService;
 
 `uid` は、Liferay DXP 7.3以降の標準的な方法で構築されます。 `com.liferay.portal.search.internal.model.uid.UIDFactoryImpl` クラスは、Liferayのインデックスアーキテクチャによって制御されているすべてのドキュメントに `uid` を設定する責任があります。 現在は標準化されているので、推測をする必要はありません。
 
-同様に、バージョン7.2および7.1では、エンティティにComposite Indexer APIでインデックスが付けられている（つまり、ModelDocumentContributor</code> クラスが `）場合、 <code>uid` はLiferayの実装によって設定され、標準化されます。
+同様に、バージョン7.2および7.1では、エンティティにComposite Indexer APIでインデックスが付けられている（つまり、`ModelDocumentContributor` クラスが `）場合、 <code>uid` はLiferayの実装によって設定され、標準化されます。
 
 ただし、レガシーインデクサーAPIでインデックス付けされたエンティティ（つまり、エンティティにはLiferayの `BaseIndexer`を拡張する `*インデクサー` クラスがある）は、 `uid`を設定するロジックをオーバーライドしている可能性があるため、エンティティのインデックス付けの実装を調べる価値があります。
 

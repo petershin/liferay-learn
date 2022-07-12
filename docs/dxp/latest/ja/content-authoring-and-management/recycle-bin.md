@@ -1,3 +1,11 @@
+---
+toc:
+- ./recycle-bin/recycle-bin-overview.md
+- ./recycle-bin/configuring-the-recycle-bin.md
+- ./recycle-bin/using-the-recycle-bin.md
+- ./recycle-bin/developer-guide.md
+- ./recycle-bin/recycle-bin-api.md
+---
 # ゴミ箱
 
 ```{toctree}

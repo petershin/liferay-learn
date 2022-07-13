@@ -22,9 +22,9 @@ Liferay Commerceの **在庫管理** システムは、ユーザーがLiferay Co
 1. （![Add Icon](../images/icon-add.png)）アイコンをクリックします。
 1. 次のように入力します：
 
-    ***［SKU**］ : CHINAWARE-GRAY
-    ***［Warehouse**］ : United States - Southwest
-    ***［Quantity**］ ：120
+    * ［**SKU**］ : CHINAWARE-GRAY
+    * ［**Warehouse**］ : United States - Southwest
+    * ［**Quantity**］ ：120
 
     ![新しい在庫商品を追加します。](./using-the-inventory-management-system/images/01.png)
 
@@ -46,8 +46,8 @@ Liferay Commerceの **在庫管理** システムは、ユーザーがLiferay Co
 1. 3点アイコン（![Actions](../images/icon-actions.png)）をクリックし&rarr;倉庫の横にある ［**編集**］ をクリックします。
 1. 次のように入力します：
 
-   ***［Quantity on Hand**］ : 40 (修正しない)
-   ***［Safety Stock Quantity**］ : 5
+   * [**Quantity on Hand**]: 40 (修正しない)
+   * [**Safety Stock Quantity**]: 5
 
     ![安全在庫量を設定します。](./using-the-inventory-management-system/images/02.png)
 
@@ -76,9 +76,9 @@ Liferay Commerceの **在庫管理** システムは、ユーザーがLiferay Co
 1. （![Add Icon](../images/icon-add.png)）アイコンをクリックします。
 1. 次のように入力します：
 
-    ***［Quantity**］ ：20
-    ***［Destination**］ ：倉庫を選択します（米国北東部）
-    ***［Expected Delivery Date**］ : 将来の日付を選択します (2020年7月1日)。
+    * ［**Quantity**］ ：20
+    * ［**Destination**］ ：倉庫を選択します（米国北東部）
+    * ［**Expected Delivery Date**］ : 将来の日付を選択します (2020年7月1日)。
 
     ![入荷在庫を追加します。](./using-the-inventory-management-system/images/04.png)
 

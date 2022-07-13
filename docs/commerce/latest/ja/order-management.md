@@ -1,10 +1,3 @@
----
-toc:
-- ./order-management/orders.md
-- ./order-management/order-workflows.md
-- ./order-management/subscriptions.md
-- ./order-management/shipments.md
----
 # 注文管理
 
 ```{toctree}

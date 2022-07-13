@@ -1,8 +1,3 @@
----
-toc:
-- ./promoting-products/introduction-to-discounts.md
-- ./promoting-products/creating-a-discount.md
----
 # 商品のプロモーション
 
 ```{toctree}
@@ -19,7 +14,8 @@ promoting-products/replacement-products.md
 promoting-products/product-recommendations.md
 ```
 
-::::{grid} 2 :gutter: 3 3 3 3
+::::{grid} 2
+:gutter: 3 3 3 3
 
 :::{grid-item-card}  Introduction to Discounts
 :link: ./promoting-products/introduction-to-discounts.md
@@ -55,4 +51,5 @@ promoting-products/product-recommendations.md
 
 :::{grid-item-card}  Product Recommendations
 :link: ./promoting-products/product-recommendations.md
-::: ::::
+:::
+::::

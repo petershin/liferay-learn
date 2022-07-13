@@ -44,11 +44,11 @@
 
 1. **追加**(![Add](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
 
-**_**［Name］**_** : ［Example Product Group Discount］
+［**Name**］: ［Example Product Group Discount］
 
-**_**［Type］**_** : ［Percentage］
+［**Type**］: ［Percentage］
 
-**_**［Apply To］**_** : ［Product Groups］
+［**Apply To**］: ［Product Groups］
 
     ![割引の詳細を入力します。](./introduction-to-product-groups/images/03.png)
 
@@ -84,11 +84,11 @@
 
 1. ［価格修飾子］セクションの **Add**（![Add](../../images/icon-add.png)）をクリックして、以下の情報を入力してください。
 
-**_**［Name］**_** : ［Wheels Modifier］
+［**Name**］ : ［Wheels Modifier］
 
-**_**［Target］**_** : ［Product Groups］
+［**Target**］ : ［Product Groups］
 
-**_**［Modifier］**_** : パーセント/置換/固定金額
+［**Modifier**］ : パーセント/置換/固定金額
 
     ![価格修飾子を設定します。](./introduction-to-product-groups/images/07.png)
 

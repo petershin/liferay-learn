@@ -13,7 +13,7 @@ Service Builderを使用してモデルエンティティを定義したら、�
 Liferayはフォーム項目をレンダリングするときに、構成に基づいてフォームの入力フィールドをカスタマイズします。
 
 ```{note}
-依存性注入としてSpringを選択した場合、Service Builderは、サービスモジュールのrc/main/resources/META-INF`フォルダに多数のXML構成ファイルを生成します。 Service Builderは、これらのファイルのほとんどを使用して、SpringおよびHibernateの構成を管理します。 SpringまたはHibernateの構成ファイルは変更しないでください。それらへの変更は、Service Builderの実行時に上書きされます。 ただし、`portlet-model-hints.xml`ファイルは安全に編集できます。
+依存性注入としてSpringを選択した場合、Service Builderは、サービスモジュールの ``src/main/resources/META-INF``フォルダに多数のXML構成ファイルを生成します。 Service Builderは、これらのファイルのほとんどを使用して、SpringおよびHibernateの構成を管理します。 SpringまたはHibernateの構成ファイルは変更しないでください。それらへの変更は、Service Builderの実行時に上書きされます。 ただし、``portlet-model-hints.xml`` ファイルは安全に編集できます。
 ```
 
 例として、[ブログアプリサービスモジュールの](https://github.com/liferay/liferay-portal/blob/master/modules/apps/blogs/blogs-service/src/main/resources/META-INF/portlet-model-hints.xml)モデルヒントファイルを考えてみましょう。
@@ -87,13 +87,9 @@ Liferayはフォーム項目をレンダリングするときに、構成に基�
 
 フィールドにヒントを追加するには、`hint`子要素を追加します。 たとえば、`display-width hint`を追加して、フィールドの表示に使用するピクセル幅を指定できます。 デフォルトのピクセル幅は`350`です。 50ピクセルの`String`フィールドを表示するには、`display-width`という名前の`hint`要素をネストして値`50`を指定します。
 
-フィールドに対するヒントの効果を確認するには、[Service Builderを再度実行](../service-builder-basics/generating-model-persistence-and-service-code.md#generate-the-persistence-code)して、
-
-モジュールを再デプロイします。 `display-width`を変更しても、ユーザーが`name`フィールドに入力できる文字数は制限されないことに注意してください。入力フォームのフィールドの幅のみが制御されます。</p> 
+フィールドに対するヒントの効果を確認するには、[サービスビルダーを再度実行](../service-builder-basics/generating-model-persistence-and-service-code.md#generate-the-persistence-code)して、[モジュールを再デプロイ](../../../../liferay-internals/fundamentals/module-projects.md#deploy-a-simple-module)します。`display-width`を変更しても、ユーザーが`name`フィールドに入力できる文字数は制限されないことに注意してください。入力フォームのフィールドの幅のみが制御されます。
 
 モデルフィールドのデータベース列の最大サイズ（つまり、フィールドに保存できる最大文字数）を構成するには、`max-length`ヒントを使用します。 デフォルトの`max-length`値は、`75`文字です。 `name`フィールドを最大100文字まで保持する場合は、そのフィールドに`max-length`ヒントを追加します。
-
-
 
 ```xml
 <field name="name" type="String">
@@ -102,10 +98,7 @@ Liferayはフォーム項目をレンダリングするときに、構成に基�
 </field>
 ```
 
-
 `portlet-model-hints.xml`ファイルを更新した後にService Builderを実行してプロジェクトを再デプロイすることを忘れないでください。
-
-
 
 ## モデルヒントのタイプ
 
@@ -132,30 +125,19 @@ Liferayはフォーム項目をレンダリングするときに、構成に基�
 | `year-range-future` | ブール値  | 将来の日付を含めるかどうかを設定します                                    | true       |
 | `year-range-past`   | ブール値  | 過去の日付を含めるかどうかを設定します                                    | true       |
 
-
-
-
 ```{note}
 aui taglibは完全にサポートされており、廃止予定のAlloyUI（JavaScriptライブラリ）とは関係ありません。
 ```
-
-
-
 
 ```{note}
 1つのフォームでClayタグとauiタグを組み合わせて使用できます。 ただし、モデルヒントはauiタグにのみ影響します。
 ```
 
-
 LiferayDXP/Portalには独自のモデルヒントのファイル[`portal-model-hints.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-model-hints.xml)があることに注意してください。 これは、`portal-impl.jar`の`META-INF`フォルダにあります。 このファイルには多くのヒントの例が含まれているため、`portlet-model-hints.xml`ファイルを作成するときに参照できます。
-
-
 
 ## デフォルトのヒント
 
 `default-hints`要素を使用して、モデルのすべてのフィールドに適用するヒントのリストを定義できます。 たとえば、モデル要素内に次の要素を追加すると、各フィールドに300ピクセルの`display-width`が適用されます。
-
-
 
 ```xml
 <default-hints>
@@ -163,14 +145,9 @@ LiferayDXP/Portalには独自のモデルヒントのファイル[`portal-model-
 </default-hints>
 ```
 
-
-
-
 ## ヒントコレクション
 
 `model-hints`のルートレベル要素内に`hint-collection`要素を定義して、一緒に適用するヒントのリストを定義できます。 ヒントコレクションには名前が必要です。 たとえば、Liferayの`portal-model-hints.xml`は、次のヒントコレクションを定義しています。
-
-
 
 ```xml
 <hint-collection name="CLOB">
@@ -202,10 +179,7 @@ LiferayDXP/Portalには独自のモデルヒントのファイル[`portal-model-
 </hint-collection>
 ```
 
-
 ヒントコレクションの名前を参照することにより、モデルフィールドにヒントコレクションを適用できます。 たとえば、`model-hints`要素で上記のような`SEARCHABLE-DATE`コレクションを定義する場合、コレクションをその名前で参照する`hint-collection`要素を使用して、モデルの日付フィールドに適用できます。
-
-
 
 ```xml
 <field name="date" type="Date">
@@ -213,12 +187,9 @@ LiferayDXP/Portalには独自のモデルヒントのファイル[`portal-model-
 </field>
 ```
 
-
 プロジェクトでいくつかのモデルヒントを使用するとします。 まずは、コメントフィールドに入力するためのエディターをユーザーに提供することから始めます。 同じヒントを複数のエンティティに適用するには、それをヒントコレクションとして定義します。 次に、各エンティティのヒントコレクションを参照します。
 
 ヒントコレクションを定義するには、`portlet-model-hints.xml`ファイルの`model-hints`ルート要素内に`hint-collection`要素を追加します。 以下に例を示します。
-
-
 
 ```xml
 <hint-collection name="COMMENT-TEXTAREA">
@@ -228,17 +199,13 @@ LiferayDXP/Portalには独自のモデルヒントのファイル[`portal-model-
 </hint-collection>
 ```
 
-
 特定のフィールドのヒントコレクションを参照するには、フィールドの`field`要素内に`hint-collection`要素を追加します。
-
-
 
 ```xml
 <field name="comment" type="String">
     <hint-collection name="COMMENT-TEXTAREA" />
 </field>
 ```
-
 
 ヒントコレクションを定義し、ヒントコレクションの参照を追加したら、サービスを再構築し、プロジェクトを再デプロイして、ヒントコレクションで定義されたヒントが有効になっていることを確認します。
 

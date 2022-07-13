@@ -12,4 +12,4 @@
 
 [アップグレードのプロセス](../../../data-frameworks/upgrade-processes.md)
 
-[Gradle Plugin](../../../tooling/other-tools/gradle-plugins.md)
+[Gradleプラグイン](../../../tooling/other-tools/gradle-plugins.md)

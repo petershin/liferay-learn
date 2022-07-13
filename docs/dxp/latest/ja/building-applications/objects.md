@@ -1,3 +1,17 @@
+---
+toc:
+- ./objects/creating-and-managing-objects.md
+- ./objects/objects-tutorials.md
+- ./objects/using-forms-with-objects.md
+- ./objects/deploying-object-widgets-to-sites.md
+- ./objects/displaying-object-entries.md
+- ./objects/enabling-workflows-for-objects.md
+- ./objects/picklists.md
+- ./objects/understanding-object-field-types.md
+- ./objects/understanding-object-integrations.md
+- ./objects/objects-application-permissions.md
+- ./objects/integrating-objects-with-third-party-services.md
+---
 # オブジェクト
 
 ```{toctree}
@@ -34,7 +48,7 @@ Liferay Objectを使用すると、コードを記述したりモジュールを
 
 オブジェクトを使用すると、オブジェクトフレームワークに登録されたシステムサービスを拡張し、設定することも可能です。 これには、カスタムフィールドやアクションの追加も含まれます。
 
-カスタムアプリケーションの構築を開始するには[Creating Objects](./objects/creating-and-managing-objects/creating-objects.md)を参照し、オブジェクトがLiferayのコアフレームワークをどのように活用するかについて確認するには[Understanding Object Integrations](./objects/understanding-object-integrations.md)を参照してください。
+カスタムアプリケーションの構築を開始するには[オブジェクトの作成](./objects/creating-and-managing-objects/creating-objects.md)を参照し、オブジェクトがLiferayのコアフレームワークをどのように活用するかについて確認するには[オブジェクト統合を理解する](./objects/understanding-object-integrations.md)を参照してください。
 
 ```{raw} html
 :file: ../landingpage_template.html

@@ -1,4 +1,4 @@
-# Configuration Form Renderer
+# 構成フォームレンダラー
 
 [構成インターフェイスを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface) すると、構成UIが自動的に生成されます。  ただし、UIのルックアンドフィールをカスタマイズしたい場合もあります。 たとえば、会社のデザインの美的感覚に一致するようにUIを変更するとします。 ` ConfigurationFormRenderer`の実装でこれを行う方法は次のとおりです。
 

@@ -2,9 +2,10 @@
 
 管理者とユーザーに、ポートレットのルック&フィールを使用してポートレットをカスタマイズする方法を提供できます。 ポートレットのルック&フィールを任意のMVCポートレットに追加して、ユーザーがプリファレンスにアクセスして設定するためのUIを提供できます。
 
-ポートレットのルック&フィールは、アプリケーションの構成とは別に保存されるプロパティであることに注意してください。 詳細については、[Portlet Level Configuration](../../core-frameworks/configuration-framework/portlet-level-configuration.md)を参照してください。
+ポートレットのルック&フィールは、アプリケーションの構成とは別に保存されるプロパティであることに注意してください。 詳細については、[ポートレットレベルの設定s](../../core-frameworks/configuration-framework/portlet-level-configuration.md)を参照してください。
 
 ## サンプル実装を参照する
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 

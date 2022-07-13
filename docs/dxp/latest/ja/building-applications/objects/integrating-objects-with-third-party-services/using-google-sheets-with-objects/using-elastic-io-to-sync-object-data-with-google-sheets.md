@@ -88,6 +88,6 @@ Liferay Objectをデータ統合ツールと併用することで、Objectのデ
 
 ## 追加情報
 
-* [Objects](../../../objects.md)
+* [オブジェクト](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
 * [オブジェクト統合を理解する](../../understanding-object-integrations.md)

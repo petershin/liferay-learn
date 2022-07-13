@@ -28,7 +28,7 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
    | :--- | :--- | :--- | :--- |
    | 名前 | 名前 | テキスト | &#10004; |
 
-1. ［**詳細**］ タブで[**公開**](../../creating and-managing-objects/creating-objects.md#publishing-object-drafts) をクリックします。
+1. ［**詳細**］ タブで[**公開**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) をクリックします。
 
    ```{important}
    このチュートリアルでは、下記の値を使用する必要があります。

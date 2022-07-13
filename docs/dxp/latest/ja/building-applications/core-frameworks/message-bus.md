@@ -59,7 +59,7 @@ message-bus/tuning-messaging-performance.md
 
 * [デフォルトの同期メッセージングの使用](./message-bus/using-default-synchronous-messaging.md) は、1つのリスナーがメッセージに応答するまで、 **または** リスナーが応答しない場合はメッセージがタイムアウトするまで、メッセージ送信者がブロックする方法を示しています。
 
-* [Using Direct Synchronous Messaging](./message-bus/using-default-synchronous-messaging.md)は、 **すべての** リスナーがメッセージを受信するまでメッセージ送信者がメッセージの送信をブロックする方法を示しています。
+* [デフォルトの同期メッセージングの使用](./message-bus/using-default-synchronous-messaging.md)は、 **すべての** リスナーがメッセージを受信するまでメッセージ送信者がメッセージの送信をブロックする方法を示しています。
 
 ## パフォーマンスの調整
 

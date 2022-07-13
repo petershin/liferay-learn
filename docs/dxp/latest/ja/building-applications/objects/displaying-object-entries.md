@@ -9,7 +9,7 @@ Liferay Objectでは、既存のDXPフレームワークを使用して、オブ
 さらに、FreeMarkerを使用して、[オブジェクトの情報テンプレート](#creating-information-templates-for-objects)を作成できます。 作成したら、フラグメントフィールドをテンプレートにマップして、コンテンツページと表示ページでエントリーがどのようにレンダリングされるかを決定できます。
 
 ```{note}
-情報テンプレートは、コンテンツ表示フラグメントおよびオブジェクトにマップできる[sub-elements](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md)を持つその他のフラグメント（テキスト、リッチテキストなど）で使用できます。
+情報テンプレートは、コンテンツ表示フラグメントおよびオブジェクトにマップできる[フラグメントサブ要素リファレンス](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md)を持つその他のフラグメント（テキスト、リッチテキストなど）で使用できます。
 ```
 
 これらの統合により、パーソナライズされたユーザーエクスペリエンスを提供しながら、ユーザーはLiferayのWYSIWYGページ構築機能を活用できます。

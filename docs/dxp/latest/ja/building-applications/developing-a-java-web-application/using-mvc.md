@@ -21,7 +21,7 @@ using-mvc/tag-libraries.md
 * コードとの同期を維持する必要のある特別な構成ファイルはありません。
 * これは [`GenericPortlet`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/GenericPortlet.html) の拡張です。
 * LiferayのMVCポートレットフレームワークは、`init()`メソッドが呼び出されたときにいくつかの事前定義されたパラメーターのみを検索するため、大量の定型コードの記述を回避できます。
-* コントローラーは、MVCコマンドクラスに分類できます。各クラスは、特定のポートレットポートレットフェーズ</a>（レンダリング、アクション、およびリソース提供フェーズ）のコントローラーコードを処理します。
+* コントローラーは、MVCコマンドクラスに分類できます。各クラスは、特定の[ポートレットフェーズ](./reference/portlets.md)（レンダリング、アクション、およびリソース提供フェーズ）のコントローラーコードを処理します。s
 * MVCコマンドクラスは複数のポートレットにサービスを提供できます。
 * Liferayのポートレットはそれを使用します。 つまり、Liferayアプリケーションを設計またはトラブルシューティングする必要がある場合に参照する堅牢な実装がたくさんあります。
 
@@ -80,7 +80,7 @@ public class HelloWorldPortlet extends MVCPortlet {
 `javax.portlet.name`プロパティは必須です。 MVCコマンドを使用する場合、`javax.portlet.name`プロパティ値は、特定のポートレットURL /コマンドの組み合わせを正しいポートレットにリンクします。
 
 ```{important}
-[Liferay DXPがその名前を使用して[ポートレットのID]を作成する方法(./reference/portlet-descriptor-to-osgi-service-property-map.md#ten)を考慮して、ポートレット名を一意にします。
+[Liferay DXPがその名前を使用して[ポートレットのID](./reference/portlet-descriptor-to-osgi-service-property-map.md#ten)を作成する方法を考慮して、ポートレット名を一意にします。
 ```
 
 コンポーネントを使用して公開している `Portlet.class` 実装の種類について、混乱が生じる可能性があります。 サービスレジストリは、これが [`javax.portlet.Portlet`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/Portlet.html) インターフェイスであると想定しています。 たとえば、 `com.liferay.portal.kernel.model.Portlet`ではなく、それをインポートします。
@@ -102,7 +102,6 @@ public class HelloWorldPortlet extends MVCPortlet {
 
 <a href="<%= view2URL %>">Go to View 2</a>
 ```
-
 ユーザーがリンクをクリックすると、ポートレットは`mvcPath`リクエストパラメータを受け取り、その`render`メソッドで制御ロジックを処理します。 詳細については、 [MVCポートレットを使用したビューのレンダリング](./using-mvc/rendering-views-with-mvc-portlet.md) を参照してください。
 
 ## 次のステップ

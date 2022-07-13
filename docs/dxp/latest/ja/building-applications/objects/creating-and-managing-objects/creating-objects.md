@@ -142,7 +142,7 @@ Liferay 7.4 U25/GA25およびそれ以前のバージョンでは、ユーザー
 
 ## 追加情報
 
-* [Objects](../../objects.md)
+* [オブジェクト](../../objects.md)
 * [オブジェクトへのフィールドの追加](./adding-fields-to-objects.md)
 * [オブジェクトリレーションの定義](./defining-object-relationships.md)
 * [オブジェクトレイアウトの設計](./designing-object-layouts.md)

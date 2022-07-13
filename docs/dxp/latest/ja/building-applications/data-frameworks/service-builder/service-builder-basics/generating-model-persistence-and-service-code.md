@@ -199,7 +199,7 @@ liferay-y7g4
             └── service.properties // Tracks the service build version
 ```
 
-モデル、永続性、およびサービス実装クラスは、Javaパッケージパス`com.acme.y7g4`に対して生成されました。 クラスについては、[Understanding Service Builder Generated Classes](./understanding-service-builder-generated-classes.md)をご覧ください。
+モデル、永続性、およびサービス実装クラスは、Javaパッケージパス`com.acme.y7g4`に対して生成されました。 クラスについては、[生成されたクラスの理解と拡張](./understanding-service-builder-generated-classes.md)をご覧ください。
 
 SQLスクリプトと永続性構成が`resources/META-INF`フォルダに生成されました。
 

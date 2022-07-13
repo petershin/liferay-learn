@@ -123,11 +123,11 @@ MVCリソースコマンドクラスは、[`MVCResourceCommand`](https://github.
 |:-------------------------------------------------------------------------------------- |:-------------------------------------------- |
 | `<a href="<portlet:resourceURL id="/p8v5/download" />">Download</a>` | `mvc.command.name=/p8v5/download`            |
 
-ビューの*［ダウンロード<］/0>リンクをクリックすると、`P8V5DownloadMVCResourceCommand`の`serveResource`メソッドが呼び出されます。</p>
+ビューの*［ダウンロード<］* リンクをクリックすると、`P8V5DownloadMVCResourceCommand`の`serveResource`メソッドが呼び出されます。
 
 ## 次のステップ
 
-これで、MVCリソースコマンドの使用方法がわかりました。 ポートレットのコンテンツをローカライズする場合は、[Using Localized Messages](./using-localized-messages-in-an-mvc-portlet.md)を参照してください。 モデルレイヤー、永続レイヤー、およびサービスレイヤーを開発する準備ができている場合は、[Service Builder](../../data-frameworks/service-builder.md)をご覧ください。
+これで、MVCリソースコマンドの使用方法がわかりました。 ポートレットのコンテンツをローカライズする場合は、[MVCポートレットでのローカライズされたメッセージの使用](./using-localized-messages-in-an-mvc-portlet.md)を参照してください。 モデルレイヤー、永続レイヤー、およびサービスレイヤーを開発する準備ができている場合は、[サービスビルダー](../../data-frameworks/service-builder.md)をご覧ください。
 
 ## 追加情報
 

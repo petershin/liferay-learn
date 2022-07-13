@@ -7,7 +7,7 @@
 ![オブジェクトポートレットを使用して、システムオブジェクトとカスタムオブジェクトの両方を表示および管理します。](./managing-objects/images/01.png)
 
 ```{note}
-これらの管理操作を行うために必要なパーミッションについては、［Objects Application Permissions］(../objects-application-permissions.md)を参照してください。
+これらの管理操作を行うために必要なパーミッションについては、[オブジェクトアプリケーションの権限](../objects-application-permissions.md)を参照してください。
 ```
 
 ## オブジェクトの編集と拡張
@@ -81,7 +81,7 @@
 ドラフトおよび公開されたオブジェクト定義は、いつでも削除できます。 定義を削除すると、関連するデータが削除されます。これには、公開された定義の保存されたエントリーが含まれます。
 
 ```{important}
-Liferay 7.4 U26/GA26 以前のバージョンでは、 [公開されたオブジェクト定義]](./creating-objects.md#publishing-object-drafts)をユーザーが削除できないようになっています。
+Liferay 7.4 U26/GA26 以前のバージョンでは、 [公開されたオブジェクト定義](./creating-objects.md#publishing-object-drafts)をユーザーが削除できないようになっています。
 ```
 
 定義に有効なリレーションシップがある場合、定義を削除する前にそれらを削除する必要があります。 詳細については、[リレーションシップの削除](./defining-object-relationships.md#removing-relationships)を参照してください。
@@ -100,5 +100,6 @@ Liferay 7.4 U26/GA26 以前のバージョンでは、 [公開されたオブジ
 
 ## 追加情報
 
-* [Objects](../../objects.md)
-* [Creating Objects](./creating-objects.md) <!--TASK: Add once article is finished * \[Objects UI Reference\](../objects-ui-reference.md) -->
+* [オブジェクト](../../objects.md)
+* [オブジェクトの作成](./creating-objects.md) 
+<!--TASK: Add once article is finished * \[Objects UI Reference\](../objects-ui-reference.md) -->

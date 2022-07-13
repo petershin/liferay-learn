@@ -7,6 +7,7 @@
 ## アクションを処理するMVCポートレットをデプロイする
 
 サンプルのMVCポートレットには、個別のポートレットメソッドにマッピングする3つのポートレットアクションURLがあります。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
@@ -48,9 +49,9 @@
 
    ポートレットには3つのリンクがあります。
 
-   ［****Do Something**］
-   ［****Do Something Else**］
-   ［****Do Something More**］
+   * *Do Something*
+   * *Do Something Else*
+   * *Do Something More*
 
     各リンクをクリックすると、異なるアクション処理メソッドが呼び出されます。 学習の目的で、各メソッドはそれ自体を識別するメッセージをログに記録します。
 
@@ -83,7 +84,7 @@
 :lines: 14-53
 ```
 
-[`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html)アノテーションは、クラスを、[`Portlet`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html)サービスを提供するOSGi宣言型サービスコンポーネントとしてマークします。 プロパティにより、ポートレットは ［**サンプル**］ ウィジェットカテゴリで使用可能になり、ポートレットに*U8T2ポートレットという名前が付けられ、ポートレットのデフォルトのビューテンプレートが`/view.jsp`に設定されます。</p>
+[`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html)アノテーションは、クラスを、[`Portlet`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html)サービスを提供するOSGi宣言型サービスコンポーネントとしてマークします。 プロパティにより、ポートレットは ［**サンプル**］ ウィジェットカテゴリで使用可能になり、ポートレットに *U8T2ポート* レットという名前が付けられ、ポートレットのデフォルトのビューテンプレートが `/view.jsp` に設定されます。
 
 各メソッドは、[`ActionRequest`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionRequest.html)および[`ActionResponse`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionResponse.html)パラメーターを取ります。 `ActionRequest`はメソッド情報を提供し、`ActionResponse`はメソッドが情報を渡すための手段を提供します。 各サンプルメソッドは、ログメッセージで自身を識別します。
 
@@ -155,10 +156,10 @@ JSPアクションURL：
 ## 次のステップ
 
 アクションURLの使用方法がわかったので、アクションメソッドの作成に集中できます。 または、[MVCActionCommandクラス](./mvc-action-command.md)を使用して調査することもできます。 または、他のポートレットフェーズの処理を検討する準備ができている場合は、[MVCRenderCommand](./mvc-render-command.md)クラスと[MVCResourceCommand](./mvc-resource-command.md)クラスの使用を検討してください。
-
+MVCレンダーコマンド
 ## 追加情報
 
-* [MVC Action Command](./mvc-action-command.md)
-* [MVC Render Command](./mvc-render-command.md)
-* [MVC Resource Command](./mvc-resource-command.md)
+* [MVCActionCommand](./mvc-action-command.md)
+* [MVCRenderCommand](./mvc-render-command.md)
+* [MVCResourceCommand](./mvc-resource-command.md)
 * [MVCポートレットでのローカライズされたメッセージの使用](./using-localized-messages-in-an-mvc-portlet.md)

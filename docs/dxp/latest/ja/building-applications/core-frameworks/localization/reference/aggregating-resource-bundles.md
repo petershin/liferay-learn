@@ -51,7 +51,9 @@ service.ranking=1,;servlet.context.name="com.acme.web"
 
 1. `liferay.resource.bundle;resource.bundle.aggregate=...`ディレクティブは、リソースバンドルが集約されるバンドルのリスト、ターゲットバンドル、ターゲットバンドルのリソースバンドル名、およびこのサービスのランキングを指定します。
 
-    * `"(bundle.symbolic.name=com.acme.web),(bundle.symbolic.name=com.acme.able.impl),(bundle.symbolic.name=com.acme.baker.impl)"`：このサービスは、バンドル`bundle.symbolic.name=com.acme.web`（現在のモジュール）からのリソースバンドルを`bundle.symbolic.name=com.acme.able.impl`および`bundle.symbolic.name=com.acme.baker.impl`で集約します。
+    * `"(bundle.symbolic.name=com.acme.web),(bundle.symbolic.name=com.acme.able.impl),(bundle.symbolic.name=com.acme.baker.impl)"`：このサービスは、バンドル`bundle.symbolic.name=com.acme.web`（現在のモジュール）からのリソースバンドルを
+    `bundle.symbolic.name=com.acme.able.impl` および 
+    `bundle.symbolic.name=com.acme.baker.impl` で集約します。
 
     必要な数のバンドルを集約します。 リストされたバンドルは降順で優先されます。
 

@@ -78,4 +78,4 @@ If needed, follow these steps to perform bulk export/import operations for Site 
 
 * [Site Templates](../site-templates.md)
 * [Creating Site Templates](./creating-site-templates.md)
-* [Exporting and Importing Sites](../exporting-and-importing-sites.md)
+* [Exporting and Importing Site Pages and Content](../exporting-importing-site-pages-and-content.md)

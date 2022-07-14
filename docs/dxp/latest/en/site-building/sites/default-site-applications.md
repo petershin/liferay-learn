@@ -3,7 +3,7 @@
 All Sites include the following core applications for building personalized digital experiences. You can access them via the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)). The *Site Menu* can also include custom applications created with Objects. See [Creating Objects](../../building-applications/objects/creating-and-managing-objects/creating-objects.md) for more information.
 
 ```{tip}
-When you use an application in a Site, the application's data is restricted to the Site and cannot be shared with other Sites. However, you can use Asset Libraries to make some kinds of assets available to multiple Sites. See [Asset Libraries](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) for more information.
+When you use an application in a Site, the application's data is restricted to the Site and cannot be shared with other Sites. However, you can use Asset Libraries to make some asset types available to multiple Sites. See [Asset Libraries](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) for more information.
 ```
 
 ## Design

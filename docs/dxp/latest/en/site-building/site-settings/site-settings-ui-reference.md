@@ -1,8 +1,10 @@
 # Site Settings UI Reference
 
-> The Site Settings application changes significantly in Liferay DXP 7.4+. See [Site Settings UI Reference in Liferay DXP 7.2 and 7.3](#site-setting-ui-reference-in-liferay-dxp-7-2-and-7-3) below for information on previous versions.
-
 Starting with Liferay DXP 7.4, the Site Settings application layout is consistent with other configuration areas, such as Instance Settings or System Settings.
+
+```{note}
+The Site Settings application changes significantly in Liferay DXP 7.4+. See [Site Settings UI Reference in Liferay DXP 7.2 and 7.3](#site-setting-ui-reference-in-liferay-dxp-7-2-and-7-3) below for information on previous versions.
+```
 
 ## Accessing the Site Settings Application
 

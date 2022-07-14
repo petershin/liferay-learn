@@ -102,7 +102,7 @@ Also, the first tab in a layout cannot contain relationships, and a Relationship
 
 {bdg-secondary}`Available Liferay 7.4 U31+ and GA31+`
 
-If desired, you can add a *Categorization* block to [*Fields* tabs](#fields-tabs). This provides end users with access to tags and categories they can apply to Object entries.
+If desired, you can add a *Categorization* block to [*Fields* tabs](#fields-tabs). End users then have access to tags and categories they can apply to Object entries.
 
 ```{note}
 Visibility and permissions can affect how the Categorization block is displayed.

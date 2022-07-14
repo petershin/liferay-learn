@@ -3,7 +3,7 @@
 Commerce Products can be connected to other assets in Liferay Commerce by using the [Related Assets](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships) relationship.
 
 ```{note}
-Performing a search reindex may be necessary for Commerce Products to appear as a Related Asset option when editing content.
+Liferay DXP 7.4+ does not support Commerce Products as Related Assets. 
 ```
 
 ## Configure the Asset Browser to Search the Database
@@ -15,6 +15,10 @@ Performing a search reindex may be necessary for Commerce Products to appear as 
 1. Set `search.with.database=true` and update the jar.
 1. Restart the application server.
 
+```{note}
+Performing a search reindex may be necessary for Commerce Products to appear as a Related Asset option when editing content.
+```
+
 ## Execute a Reindex
 
 Execute a reindex to ensure that the Related Assets are populated in the filter.
@@ -24,7 +28,7 @@ Execute a reindex to ensure that the Related Assets are populated in the filter.
 
 ## Verify the Availability of Commerce Products
 
-Because Commerce Products are stored globally (that is, available on all Liferay DXP sites), users must change the Filter to _Global_.
+Commerce Products are available on all Liferay DXP sites by default. So, you must change the Filter to _Global_.
 
 1. Click on _Site Administration_ &rarr; _Content_ &rarr; _Web Content_.
 1. Click the (![Add icon](../../images/icon-add.png)) icon then _Basic Web Content_.

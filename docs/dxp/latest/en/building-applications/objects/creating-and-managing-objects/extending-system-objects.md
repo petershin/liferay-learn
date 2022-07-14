@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4 U30+ and GA30+`
 
-With Liferay Objects, you can extend supported system services. Currently, only the following services are integrated with the Objects framework: Commerce Order, Account, and User.
+With Liferay Objects, you can extend supported system services. Currently, these services are integrated with the Objects framework: Commerce Order, Account, and User.
 
 ![Extend system services integrated with the Objects Framework.](./extending-system-objects/images/01.png)
 
@@ -21,6 +21,8 @@ When extending system Objects, you can add [fields](#adding-fields), [relationsh
 ## Adding Fields
 
 You can add custom fields to system Objects to define additional database columns. These fields are added to a separate database table that uses the service's original table name with `_x` appended to it (e.g., `AccountEntry_x`). System Objects support all available [field types](./adding-fields-to-objects.md#field-types-ui-reference). See [Adding Fields to Objects](./adding-fields-to-objects.md) for more information. -->
+
+<!-- When you uncomment the above text, please be sure to discuss the reasons why you'd do it this way rather than add custom fields the way you've been able to add them for many releases (i.e., as Expandos). --Rich -->
 
 ## Adding Relationships
 

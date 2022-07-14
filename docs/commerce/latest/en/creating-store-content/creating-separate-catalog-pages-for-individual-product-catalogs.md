@@ -1,12 +1,12 @@
 # Creating Separate Catalog Pages for Individual Product Catalogs
 
-You may have products from multiple catalogs in your storefront. Liferay stores Products in Catalogs and displays them in your storefront using a *Catalog Page*. See [Creating a Catalog Page](./creating-a-catalog-page.md) for more information. Since different catalogs can contain different kinds of products, you can differentiate them using multiple Catalog Pages.
+Your storefront can contain products from multiple catalogs. Liferay stores Products in Catalogs and displays them in your storefront using a *Catalog Page*. See [Creating a Catalog Page](./creating-a-catalog-page.md) for more information. Since different catalogs can contain different kinds of products, you can differentiate them using multiple Catalog Pages.
 
 To do this, you must first have two or more Catalogs, and at least one Catalog page. Then, duplicate the existing Catalog Page and add the [Custom Filter](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) widget on both pages to filter products by the catalog ID.
 
 ## Copying an Existing Catalog Page
 
-Assuming you have the Minium site running, to copy a Catalog Page, you must first enable Private Pages for your instance. This is only applicable for Liferay DXP 7.4 U22+ and GA22+. See Enabling Private Pages for more information. If you are on an earlier version, you can follow the steps below directly.
+In Liferay DXP 7.4 U22+ and GA22+, to copy a Catalog Page in the Minium site, you must first [enable Private Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages/understanding-pages.html#enabling-private-pages) for your instance. If you are on an earlier version, this step isn't necessary. 
 
 1. Once the Private Pages are active, open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)) and go to *Site Builder* &rarr; *Pages*.
 
@@ -20,11 +20,11 @@ The new page appears in your storefront displaying the same contents as in the e
 
 ## Adding the Custom Filter
 
-Before adding the custom filter, you must first retrieve the IDs of the catalogs you want to filter. To do this, open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Catalogs*. Click on the catalog, and copy the ID present next to its name.
+Before adding the custom filter, you must first retrieve the IDs of the catalogs you want to filter. To do this, open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Catalogs*. Click on the catalog and copy the ID present next to its name.
 
 ![Copy the Catalog ID to filter products in the Catalog Page.](./creating-separate-catalog-pages-for-individual-product-catalogs/images/01.png)
 
-Go back to the Catalog Page and follow these instructions.
+Go back to the Catalog Page: 
 
 1. Click the *Add* button from the top menu.
 
@@ -43,9 +43,9 @@ Go back to the Catalog Page and follow these instructions.
 
 1. Enter the following information and click *Save*.
 
-   **Filter Field:** commerceCatalogId
+   **Filter Field:** `commerceCatalogId`
 
-   **Filter Value:** 43445 (Type the catalog ID you copied)
+   **Filter Value:** `43445` (Type the catalog ID you copied)
 
    **Filter Type:** Match
 
@@ -58,7 +58,7 @@ Go back to the Catalog Page and follow these instructions.
 You should see products from only one catalog on the page. Repeat the above steps with a different catalog on the other catalog page.
 
 ```{note}
-You can also disable the Custom Filter, make it immutable and invisible using the checkboxes inside the *Configuration* menu. You can use the Custom Filter for a wide range of use cases. See [Custom Filter Examples](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) for more information.
+You can also disable the Custom Filter and make it immutable and invisible using the checkboxes inside the *Configuration* menu. You can use the Custom Filter for a wide range of use cases. See [Custom Filter Examples](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) for more information.
 ```
 
 ## Additional Information

@@ -43,7 +43,7 @@ The following roles are automatically added to your DXP instance during Commerce
 
 Account Administrators are super users of their account. They can approve or reject orders when there is a [Buyer Order Approval](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md#enabling-workflow) workflow enabled and oversee the Order Managers and Buyers of their Account. They can modify their Account, invite or add users to it, and assign roles to other Account members. Account Administrators cannot create or delete Accounts. This permission is reserved for instance administrators.
 
-The following Account permissions pertain to the Account Administrator's ability to modify accounts in a B2B setting, while the Open Carts permissions pertain to the administrator's ability to modify orders regardless of the store type.
+The following Account permissions affect the Account Administrator's ability to modify accounts in a B2B setting, while the Open Carts permissions affect the administrator's ability to modify orders regardless of the store type.
 
 | Permissions                                                          | Description                                                                                                |
 | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |

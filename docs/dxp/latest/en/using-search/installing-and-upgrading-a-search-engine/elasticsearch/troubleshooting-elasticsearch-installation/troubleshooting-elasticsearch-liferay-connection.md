@@ -357,3 +357,52 @@ Related resources,
 * https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8202837
 * https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8267837
 * https://liferay.slack.com/archives/CKY6GP7BL/p1634911737006400
+
+## CA Certificate Used to Sign Node Certificate is Not Trusted
+
+During the SSL handshake both in inter node communication between Elasticsearch nodes or between Liferay and the Elasticsearch nodes, the CA's certificate used to sign the nodes' certificates must be trusted, thus, be present in the `truststore` or `keystore` of the nodes. Otherwise the connection will fail. This is usually a problem when using Self-Signed Certificates.
+
+In a multi-node Elasticsearch cluster, the node which receives the request (the "server) from another node (the "client") may throw the following WARN message,
+
+```
+[2022-07-15T11:49:39,361][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/127.0.0.1:44198, profile=default}
+```
+
+and the on client side (the other node) it manifests in a `SunCertPathBuilderException`:
+
+```
+[2022-07-15T11:49:39,354][WARN ][o.e.t.OutboundHandler    ] [es-node2] send message failed [channel: Netty4TcpChannel{localAddress=/127.0.0.1:44198, remoteAddress=es-node1/127.0.0.1:9300, profile=default}]
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alert.createSSLException(Alert.java:131) ~[?:?]
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:368) ~[?:?]
+```
+
+To test if this is really the root cause, you can set temporarily `xpack.security.transport.ssl.verification_mode: none` in the `elasticsearch.yml` of each node to see if they are able to connect.
+
+Note the following from [Elasticsearch's docs](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-settings.html#transport-tls-ssl-settings),
+
+> `none`, which performs no verification of the server’s certificate. This mode disables many of the security benefits of SSL/TLS and should only be used after very careful consideration. **It is primarily intended as a temporary diagnostic mechanism when attempting to resolve TLS errors; its use on production clusters is strongly discouraged.**
+> 
+> The default value is `full`.
+
+Similarly, Liferay won't be able to establish the connection with the Elasticsearch nodes either and will throw an error like this if the Elasticsearch nodes certificates were signed by a non-trusted CA (for example when using Self-Signed Certificates),
+
+```2022-07-15 10:15:54.287 ERROR [main][ElasticsearchSearchEngine:47] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.48 (335)[com.liferay.portal.search.elasticsearch7.internal.ElasticsearchSearchEngine(925)] : The activate method has thrown an exception
+java.lang.RuntimeException: org.elasticsearch.ElasticsearchException: ElasticsearchException[java.util.concurrent.ExecutionException: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target];
+```
+
+The solution is to make sure that the CA's certificate that signed the (Elasticsearch) nodes certificates is present (thus, trusted) in the truststore configured in Liferay: the trustore that is used for the Elasticsearch connections in Liferay is set through the `truststorePath` property in case of `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config` (Elasticsearch 7 connector) or `sslTruststorePath` in `com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config` (LES Security app). 
+
+If it's not present, you need to add it using Java's `keytool` or other tools like `openssl`, depending on the format of the CA's and your nodes certificates (PKCS#12 or PEM).
+
+For example, if you have your CA's certificate (public key) and private key are stored in `ca.p12` and your node certificate is `elastic-nodes.p12`, you can do the following,
+
+1. Export the Public Key of the CA (aka. the certificate) without the Private Key:
+
+	`openssl pkcs12 -in ca.p12 -out ca.crt -nokeys`
+
+1. Provide the password of `ca.p12` when prompted. This produces a file called `ca.crt`.
+
+1. Import the CA's certificate into `elastic-nodes.p12`:
+
+	`keytool -importcert -keystore elastic-nodes.p12 -trustcacerts -storepass liferay -file ca.crt`

@@ -28,7 +28,7 @@ Execute a reindex to ensure that the Related Assets are populated in the filter.
 
 ## Verify the Availability of Commerce Products
 
-Commerce Products are available on all Liferay DXP sites by default. So, you must change the Filter to _Global_.
+Commerce Products are available on all Liferay DXP sites by default, so you must change the Filter to _Global_.
 
 1. Click on _Site Administration_ &rarr; _Content_ &rarr; _Web Content_.
 1. Click the (![Add icon](../../images/icon-add.png)) icon then _Basic Web Content_.

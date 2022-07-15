@@ -6,6 +6,9 @@ toc:
 - ./developer-guide/user-account-api-basics.md
 - ./developer-guide/organizations-api-basics.md
 - ./developer-guide/roles-api-basics.md
+- ./developer-guide/user-groups-api-basics.md
+- ./developer-guide/countries-api-basics.md
+- ./developer-guide/regions-api-basics.md
 ---
 # Developer Guide
 
@@ -18,6 +21,7 @@ developer-guide/account-users-and-roles-apis.md
 developer-guide/user-account-api-basics.md
 developer-guide/organizations-api-basics.md
 developer-guide/roles-api-basics.md
+developer-guide/user-groups-api-basics.md
 developer-guide/countries-api-basics.md
 developer-guide/regions-api-basics.md
 ```
@@ -27,5 +31,7 @@ developer-guide/regions-api-basics.md
 - [Account Users and Roles APIs](./developer-guide/account-users-and-roles-apis.md)
 - [User Account API Basics](./developer-guide/user-account-api-basics.md)
 - [Organizations API Basics](./developer-guide/organizations-api-basics.md)
+- [Roles API Basics](./developer-guide/roles-api-basics.md)
+- [User Groups API Basics](./developer-guide/user-groups-api-basics.md)
 - [Countries API Basics](./developer-guide/countries-api-basics.md)
 - [Regions API Basics](./developer-guide/regions-api-basics.md)

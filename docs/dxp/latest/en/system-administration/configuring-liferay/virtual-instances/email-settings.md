@@ -8,11 +8,12 @@ The Email configuration is where you configure email notifications at the Virtua
 | Email Sender | Set the *From* name and address for the email templates |
 | Email Verification Notification | Create the template that asks Users to verify their email address |
 | Mail Host Names | Enter mail hosts associated with the instance |
+| Mail Setting | Set up a mail server for the instance |
 | Password Changed Notification | Notify Users when their password has been changed |
 | Password Reset Notification | Notify Users when a request to reset their password is received |
 
 ```{note}
-Your installation must have a [configured connection to a mail server](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) in order to send email notifications.
+Your installation must have a [configured connection to a mail server](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) in order to send email notifications. Mail server configurations set at the instance scope override server level configurations. 
 ```
 
 ## Account Created Notification
@@ -50,3 +51,8 @@ The Password Changed Notification entry defines the email template for the messa
 The Password Reset Notification entry defines the email template for the message sent to notify Users when a request has been made to reset their password. Use the template variables listed at the bottom of the configuration under the "Definition of Terms" heading to help build your email template. 
 
 ![Notify Users when a password reset has been requested.](./email-settings/images/06.png)
+
+## Additional Information
+
+* [Configuring Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
+* [Notifications](../../../process-automation/notifications.md)

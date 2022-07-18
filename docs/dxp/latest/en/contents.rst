@@ -9,7 +9,7 @@ Contents
    getting_started.md
    site_building
    content-authoring-and-management
-   process_automation
+   process-automation
    using-search
    collaboration-and-social
    users-and-permissions

@@ -80,7 +80,7 @@ Selecting a Collection Display Fragment divides it into sections for each asset 
 Publish the page when you're ready for the assets in the Collection to be displayed as configured.
 
 ```{tip}
-In Liferay versions 7.4 GA23+ or U23+, if you have chosen the Grid style for a Collection Display Fragment, then you can configure the Layout setting individually for each type of device. Click the device viewport buttons at the top of the screen to set this setting for each device. The tablet setting defaults to the same as the desktop's setting, and the portrait and landscape phone settings default to 1 column.
+In Liferay versions 7.4 GA23+ or U23+, if you have chosen the Grid style for a Collection Display Fragment, you can configure the Layout setting individually for each type of device. Click the device viewport buttons at the top of the screen to set this setting for each device. The tablet setting defaults to the same as the desktop's setting, and the portrait and landscape phone settings default to 1 column.
 ```
 
 <!-- Add reference to developer tutorials to add more options for the List styles/List item styles when available -->
@@ -145,13 +145,13 @@ To paginate the display items in the Collection Display,
 1. In the General Settings, choose the pagination options:
 
     * **Pagination**: None (no pagination), Numeric, or Simple (Previous/Next controls).
-    * **Display All Pages**: Whether to display the numbers or controls for every page in the pagination menu. If no pagination type is selected, then this option becomes *Display All Collection Items* instead.
+    * **Display All Pages**: Whether to display the numbers or controls for every page in the pagination menu. If no pagination type is selected, this option becomes *Display All Collection Items* instead.
     * **Maximum Number of Pages to Display**: The maximum number of pages shown in the pagination menu. This option only appears if the Display All Pages checkbox is not selected.
-    * **Maximum Number of Items per Page**: The maximum number of items from the Collection to display per page, if pagination is enabled. If no pagination type is selected, then this option becomes *Maximum Number of Items to Display* instead.
+    * **Maximum Number of Items per Page**: The maximum number of items from the Collection to display per page, if pagination is enabled. If no pagination type is selected, this option becomes *Maximum Number of Items to Display* instead.
 
     ![Choose the pagination options for the Collection Display items.](./displaying-collections/images/12.png)
 
-If you enable pagination, then the total number of pages available depends on both the total number of items in the Collection and the setting for Maximum Number of Items per Page.
+If you enable pagination, the total number of pages available depends on both the total number of items in the Collection and the setting for Maximum Number of Items per Page.
 
 ```{note}
 By default, the Collection Display Fragment displays up to 20 items at a time in Edit mode. You can change this limit by navigating to Control Panel &rarr; Instance Settings &rarr; Pages &rarr; Page Editor, and changing the number in the *Maximum Number of Items in Edit mode* field. Displaying more than 20 items at once in Edit mode, may negatively impact performance. This setting does not affect what Users see on the page in View mode.

@@ -1,12 +1,12 @@
 # Extending System Objects
 
-{bdg-secondary}`Available Liferay 7.4 U30+ and GA30+`
+{bdg-secondary}`Available Liferay 7.4 U34+ and GA34+`
 
-With Liferay Objects, you can extend supported system services. Currently, these services are integrated with the Objects framework: Commerce Order, Account, and User.
+With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, and User.
 
 ![Extend system services integrated with the Objects Framework.](./extending-system-objects/images/01.png)
 
-When extending system Objects, you can add [fields](#adding-fields), [relationships](#adding-relationships), and [actions](#adding-actions) to them. You can also access limited [configuration options](#additional-configuration-options).
+When extending system Objects, you can add [relationships](#adding-relationships) and [actions](#adding-actions) to them. <!--TASK: You can also access limited [configuration options](#additional-configuration-options).-->
 
 | Feature | System Objects | Custom Objects |
 | :--- | :--- | :--- |

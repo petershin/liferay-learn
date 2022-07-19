@@ -12,7 +12,7 @@
    curl -H "Authorization:Bearer {token}" -L https://analytics.liferay.com/api/reports/export/{type}?fromDate={ISO 8601 date and time}&toDate={ISO 8601 date and time}
    ```
 
-   `{token}` を特定のアクセストークンに置き換えてください。 `{type}` を **アカウント**, **個人**, **ページ**, または **セグメント**のいずれかに置き換えてください。 `fromDate=`の後に `{ISO 8601 date and time}` を置き換えることで、開始日時を指定します。 `の後の <code>{ISO 8601 date and time}` を toDate=</code>に置き換えて、終了日時を指定します。 [必ず、ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) の日付と時刻のフォーマットを使用してください。 なお、リクエストには開始日時、終了日時が必要です。
+   `{token}` を特定のアクセストークンに置き換えてください。 `{type}` を **アカウント** , **個人** , **ページ** , または **セグメント** のいずれかに置き換えてください。 `fromDate=`の後に `{ISO 8601 date and time}` を置き換えることで、開始日時を指定します。 `の後の <code>{ISO 8601 date and time}` を toDate=</code>に置き換えて、終了日時を指定します。 [必ず、ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) の日付と時刻のフォーマットを使用してください。 なお、リクエストには開始日時、終了日時が必要です。
 
    例えば、ページデータのリクエストは次のようなものです。
 

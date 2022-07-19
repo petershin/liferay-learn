@@ -29,17 +29,17 @@ function copy_template {
 
 			pushd ${zip_dir_name}
 
-			if [ -e ./${1}-impl/rest-config.yaml ]
+			if [[ $(find . -name rest-config.yaml) ]]
 			then
 				./gradlew buildRest
 			fi
 
-			if [ -e ./${1}-service/service.xml ]
+			if [[ $(find . -name service.xml) ]]
 			then
 				./gradlew buildService
 			fi
 
-				./gradlew classes formatSource
+			./gradlew classes formatSource
 
 			if [ "${1}" == "prod" ]
 			then

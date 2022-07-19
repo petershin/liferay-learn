@@ -26,11 +26,9 @@ workspace-settings/managing-workspaces.md
 
 [ワークスペース設定の表示と変更](./workspace-settings/managing-workspaces.md)。
 
-<a name="next-steps" />
-
 ## 次のステップ
 
-- [ユーザーの管理](./workspace-settings/managing-users.md)
+- [ユーザーを管理する](./workspace-settings/managing-users.md)
 - [プロパティの管理](./workspace-settings/managing-properties.md)
 - [使用量の追跡](./workspace-settings/tracking-usage.md)
 - [ワークスペースの管理](./workspace-settings/managing-workspaces.md)

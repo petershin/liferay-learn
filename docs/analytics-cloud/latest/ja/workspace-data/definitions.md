@@ -11,7 +11,7 @@ toc:
 ```{toctree}
 :maxdepth: 3
 
-definitions/definitions-for-individuals.md
+definitions/definitions-for-individual.md
 definitions/definitions-for-events.md
 definitions/definitions-for-event-attributes.md
 definitions/setting-a-search-query.md

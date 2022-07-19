@@ -17,7 +17,7 @@ assets/web-content.md
 assets/blogs.md
 assets/forms.md
 assets/documents-and-media.md
-assets/tracking-custom-assets.md
+assets/tracking-custom-assets.md。
 ```
 
 - [アセット](./assets/assets.md)

@@ -7,7 +7,6 @@ toc:
 - ./manage-and-optimize/environment-teams-and-roles.md
 - ./manage-and-optimize/team-activities.md
 ---
-
 # 管理・最適化
 
 ```{toctree}
@@ -18,7 +17,7 @@ manage-and-optimize/application-metrics.md
 manage-and-optimize/real-time-alerts.md
 manage-and-optimize/quotas.md
 manage-and-optimize/environment-teams-and-roles.md
-manage-and-optimize/team-activities.md
+manage-and-optimize/team-activities.md。
 ```
 
 ## パフォーマンスとモニタリング
@@ -28,8 +27,8 @@ manage-and-optimize/team-activities.md
 
 ## 使用状況の管理
 
-- [リアルタイムアラート](./manage-and-optimize/real-time-alerts.md)
-- [割り当て](./manage-and-optimize/quotas.md)
+- [](./manage-and-optimize/real-time-alerts.md)
+- [](./manage-and-optimize/quotas.md)
 
 ## アカウントとチームマネジメント
 

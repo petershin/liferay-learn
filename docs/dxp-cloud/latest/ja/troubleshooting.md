@@ -18,7 +18,7 @@ toc:
 
 troubleshooting/troubleshooting-tools-and-resources.md
 troubleshooting/reading-dxp-cloud-service-logs.md
-troubleshooting/shell-access.md
+troubleshooting/sheal-access.md
 troubleshooting/troubleshooting-services.md
 troubleshooting/disaster-recovery-overview.md
 troubleshooting/configuring-cross-region-disaster-recovery.md

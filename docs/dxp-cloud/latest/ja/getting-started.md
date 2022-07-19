@@ -16,7 +16,7 @@ toc:
 getting-started/initial-setup-overview.md
 getting-started/development-requirements.md
 getting-started/configuring-your-github-repository.md
-getting-started/configuring-your-bitbucket-repository.md
+getting-started/configuring-your-bitbucket-repository.
 getting-started/configuring-your-gitlab-repository.md
 getting-started/logging-into-your-dxp-cloud-services.md
 getting-started/understanding-dxp-cloud-environments.md
@@ -70,7 +70,7 @@ DXP Cloudはセキュリティを考慮して設計されています。 **ISO 2
 
 ## CI/CDの組み込みによる開発の加速化
 
-すぐに使えるCI/CD戦略で、アプリケーションをより速く提供します。 [GithubとJenkins](./platform-services/continuous-integration.md) 統合により、それぞれの新しいコミットまたはプル要求ごとに、 [本番環境または非本番環境](./getting-started/understanding-dxp-cloud-environments.md)にデプロイできるビルドをトリガーできます。
+すぐに使えるCI/CD戦略により、アプリケーションをより速く提供できます。 [GithubとJenkins](./platform-services/continuous-integration.md) 統合により、それぞれの新しいコミットまたはプル要求ごとに、 [本番環境または非本番環境](./getting-started/understanding-dxp-cloud-environments.md)にデプロイできるビルドをトリガーできます。
 
 これらの堅牢なシステムにより、フォールトトレラントプロセスの作成が可能になり、組織固有のニーズを満たし、一般的なサーバーの問題が発生したときにそれを検出して修復します。 これにより、小さなプログラミングエラーが蓄積してサーバーがクラッシュするのを防ぐことができます。
 
@@ -93,4 +93,4 @@ DXP Cloudは [アプリケーションメトリクスス](./manage-and-optimize/
 * [開発要件](./getting-started/development-requirements.md)
 * [Github リポジトリの設定](./getting-started/configuring-your-github-repository.md)
 * [DXP Cloud デプロイメントワークフローの概要](./build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [DXP Cloudコンソールによる変更の展開](./build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)
+* [DXP Cloudコンソールによる変更のデプロイ](./build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)

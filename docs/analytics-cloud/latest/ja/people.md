@@ -4,7 +4,7 @@ toc:
 - ./people/accounts.md
 - ./people/segments.md
 ---
-# 連絡先
+# メンバー
 
 ```{toctree}
 :maxdepth: 3
@@ -24,24 +24,16 @@ people/segments.md
 
 堅牢な個人プロファイルと柔軟なセグメント構築を組み合わせることで、Analytics Cloudはユーザーに素晴らしい体験を提供することができます。
 
-<a name="next-steps" />
-
 ## 次のステップ
-
-<a name="individuals" />
 
 ### 個人
 
 - [個人ダッシュボード](./people/individuals/individuals-dashboard.md)
 - [訪問者プロフィール](./people/individuals/individual-profiles.md)
 
-<a name="accounts" />
-
 ### アカウント
 
 - [アカウント](./people/accounts.md)
-
-<a name="segments" />
 
 ### セグメント
 

@@ -19,7 +19,7 @@ CLIツールを使用して、DXP Cloudサービスを表示および管理で�
 
 ## CLIツールのインストール
 
-### \*୧⃛(๑⃙⃘◡̈๑⃙⃘)
+### \*nixシステム
 
 ターミナルを開き、以下のコマンドを実行します：
 
@@ -68,19 +68,19 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 CLIツールでDXP Cloudのサービスにアクセスするには、DXP CloudのリモートURLを指すように設定する必要があります：`liferay.cloud`。 CLIのリモートを一覧表示するには、以下のコマンドを実行します：
 
 ```shell
-エルシーピーリモート
+lcp remote
 ```
 
 次のコマンドを使用して、CLIツールに新しいリモートを追加できます：
 
 ```shell
-lcp リモートセット <remote-alias> <remote-url>
+lcp remote set <remote-alias> <remote-url>
 ```
 
 必要に応じて、デフォルトのリモートを変更できます：
 
 ```shell
-lcp リモートデフォルト <remote-alias>
+lcp remote default <remote-alias>
 ```
 
 または、リモートインラインを指定することもできます：
@@ -162,7 +162,7 @@ lcp scale --url <service>-<project>-<environment>.lfr.cloud <instances>
 自分が所有または関わっているプロジェクト、サービス、インスタンスの全リストを表示します：
 
 ```shell
-ラップリスト
+lcp list
 ```
 
 環境に応じたサービスのイメージとステータスを表示します：
@@ -190,7 +190,7 @@ lcp list --url <service>-<project>-<environment>.lfr.cloud
 すべてのプロジェクトの環境とサービスを表示して、再起動する環境サービスを選択します：
 
 ```shell
-lcpリスタート
+lcp restarts
 ```
 
 プロジェクトの特定のサービスを再起動します：
@@ -210,7 +210,7 @@ lcp restart --url <serviceID>-<projectID>.lfr.cloud
 `lcp deploy` コマンドを使用して、特定のサービスまたはすべてのサービスをいずれかの環境にデプロイします：
 
 ```shell
-lcpデプロイ
+lcp deploy
 ```
 
 リポジトリのルートディレクトリから `lcp deploy` を実行すると、適用可能なすべてのサービスが選択した環境にデプロイされます。 1つのサービスのフォルダ（サービスの`LCP.json` ファイルがあるフォルダ）からコマンドを実行して、そのサービスを環境にデプロイします。
@@ -228,7 +228,7 @@ lcp deploy -r <remote-id>
 サービスコンテナのシェルにアクセスするには、次のコマンドを実行します：
 
 ```shell
-さくら貝
+lcp shell
 ```
 
 これにより、コンテナ内のすべてのサービスがリストアップされ、どのサービスにアクセスするかを選択するよう促されます。

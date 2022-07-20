@@ -142,7 +142,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 1. DXPインスタンスにログインします（カスタムドメインはまだDR環境を指していないため、IPアドレスを使用します）。
 
-1. [**グローバルメニュー**](![Applications Menu icon](./configuring-cross-region-disaster-recovery/images/06.png) ) &rarr; [**コントロールパネル**]**&rarr;**[検索]* に移動します。
+1. **グローバルメニュー**( (![Applications Menu icon](./configuring-cross-region-disaster-recovery/images/06.png) ) &rarr; [**コントロールパネル**] &rarr; [**検索**] に移動します。
 
 1. ［**すべてインデックスを再構築**］ をクリックします。
 

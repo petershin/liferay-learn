@@ -4,7 +4,7 @@
 
 With Liferay Objects, you can define custom actions that are triggered under specified conditions. While an action is active, Liferay listens for when an Object's data is added, deleted, or updated and then performs the set action.
 
-Currently, Liferay Objects support four types of actions:
+Currently, Liferay supports four action types:
 
 * [Webhook actions](#webhook-actions) deliver a payload to a URL.
 
@@ -48,11 +48,11 @@ Follow these steps to define actions for an Object:
 
    ![Use expressions to set additional conditions for the trigger.](./defining-object-actions/images/04.png)
 
-1. For Action, select the type of action performed and fill out each type's specific fields. See [Understanding Action Types](#understanding-action-types) for more information about each type's additional fields.
+1. For Action, select the *type* of action performed and fill out all additional fields. See [Understanding Action Types](#understanding-action-types) for more information.
 
 1. Click *Save*.
 
-Once created, the action is active and is triggered according to your configuration.
+Once created, the action is active and triggered according to your configuration.
 
 If desired, you can deactivate an action by going to its *Basic Info* tab, toggling the *Active* switch, and clicking *Save*.
 

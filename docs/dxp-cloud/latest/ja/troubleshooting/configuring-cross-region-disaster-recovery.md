@@ -28,15 +28,15 @@ DXP Cloudシステム管理者は、DR環境と本番環境の両方に対する
 
 1. VPNセクションで、以下の情報を入力します：
 
-    ***VPNタイプ** ：OpenVPN
-    ***サーバーアドレス** ：サーバーアドレス。
-    ***アカウント名** ：管理者のメールアドレスです。
-    ***Password** ：管理者のパスワードです。
-    ***証明書** : 証明書のコードです。
-    ***転送IP** ：転送IPアドレス。
-    ***転送ポート** ：転送ポート番号。
-    ***ローカルホスト名** ：VPNのホスト名。
-    ***ローカルポート** ：ローカルポート番号。
+    * **VPNタイプ** ：OpenVPN
+    * **サーバーアドレス** ：サーバーアドレス。
+    * **アカウント名** ：管理者のメールアドレスです。
+    * **Password** ：管理者のパスワードです。
+    * **証明書** : 証明書のコードです。
+    * **転送IP** ：転送IPアドレス。
+    * **転送ポート** ：転送ポート番号。
+    * **ローカルホスト名** ：VPNのホスト名。
+    * **ローカルポート** ：ローカルポート番号。
 
 1. ［**Connect VPN**］をクリックします。
 
@@ -66,13 +66,13 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 本番環境のマスタートークンを取得したら、DR環境で [環境変数](../reference/defining-environment-variables.md)を設定します。
 
-***LCP** EXTERNAL **PROJECT_ID** ：本番環境のプロジェクトID（たとえば、 `acme-prd`）
+* **LCP** EXTERNAL **PROJECT_ID** ：本番環境のプロジェクトID（たとえば、 `acme-prd`）
 
-***LCP** BACKUP **RESTORE_SCHEDULE** : 自動バックアップの頻度を定義する [cronスケジュール](https://crontab.guru/) の値。 詳細については、 [Scheduling Automated Backups and Cleanups](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) を参照してください。
+* **LCP** BACKUP **RESTORE_SCHEDULE** : 自動バックアップの頻度を定義する [cronスケジュール](https://crontab.guru/) の値。 詳細については、 [Scheduling Automated Backups and Cleanups](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) を参照してください。
 
 この値をDR環境の [secret](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) として設定します。
 
-***LCP** EXTERNAL **PROJECT** MASTER **TOKEN** ：本番環境のマスタートークン
+* **LCP** EXTERNAL **PROJECT** MASTER **TOKEN** ：本番環境のマスタートークン
 
 ```{warning}
 これらの環境変数は、本番環境ではなく、ディザスターリカバリー環境で設定してください。 これらの変数を本番環境で設定すると、バックアップが予期せず本番環境にリストアされることがあります。

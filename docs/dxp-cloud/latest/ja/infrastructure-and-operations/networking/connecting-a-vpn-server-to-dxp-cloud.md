@@ -26,25 +26,25 @@ DXP CloudのVPN機能を使って、DXP Cloudのサービスをプライベー�
 
 1. VPNの必須項目を入力してください。
 
-    ***サーバー** ：サーバーのIPアドレス。
+    * **サーバー** ：サーバーのIPアドレス。
 
-    ***Port** ：VPNのローカルポート番号です。
+    * **Port** ：VPNのローカルポート番号です。
 
-    ***Account name** ：管理者のメールアドレスです。
+    * **Account name** ：管理者のメールアドレスです。
 
-    ***Password** ：管理者のパスワードです。
+    * **Password** ：管理者のパスワードです。
 
-    ***IKE Version** ：VPNのインターネット鍵交換のバージョンです。 このフィールドは、プロトコルとして **IPSec** を選択した場合にのみ表示されます。 **IKEv2** のみサポートしています。
+    * **IKE Version** ：VPNのインターネット鍵交換のバージョンです。 このフィールドは、プロトコルとして **IPSec** を選択した場合にのみ表示されます。 **IKEv2** のみサポートしています。
 
-    ***Certificate** : 証明書のコードです。
+    * **Certificate** : 証明書のコードです。
 
 1. VPN接続のための1つまたは複数のポートフォワーディングルートを入力します。 各ルートの必須項目に入力します。
 
-    ***Forwarded Port** ：転送するDXP Cloud環境内のポート番号です。
+    * **Forwarded Port** ：転送するDXP Cloud環境内のポート番号です。
 
-    ***Destination IP** ：VPNとインターフェイスするカスタマーネットワークのIPアドレスです。
+    * **Destination IP** ：VPNとインターフェイスするカスタマーネットワークのIPアドレスです。
 
-    ***Destination Port** ：VPNに接続するお客様のネットワークのポートです。
+    * **Destination Port** ：VPNに接続するお客様のネットワークのポートです。
 
     ![VPN接続を行う前に、1つ以上のポートフォワーディングルートを追加してください。](./connecting-a-vpn-server-to-dxp-cloud/images/03.png)
 

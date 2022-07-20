@@ -21,19 +21,19 @@ DXP Cloud Stackバージョン4にアップグレードすると、すべての�
 
 ## プロジェクト組織の変更
 
-リポジトリの最大の変更点は、各サービスのファイル（ `LCP.json` ファイルを含む）がリポジトリのルートにあるフォルダ（例： `liferay/` や `webserver/`）に移動されたことです。 これらのサービスは、再配置されたサービスフォルダーに移動し、 [CLI ツール](./command-line-tool.md)を使用して、個別にデプロイすることができます。 `lcp` フォルダーが削除され、これらのサービスのパスに含まれなくなりました。 これらのフォルダ自体は、 [Liferayワークスペースの構造](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html)に似せて再編成されています。
+リポジトリの最大の変更点は、各サービスのファイル（ `LCP.json` ファイルを含む）がリポジトリのルートにあるフォルダ（例： `liferay/` や `webserver/`）に移動されたことです。 これらのサービスは、再配置されたサービスフォルダーに移動し、 [CLI ツール](./command-line-tool.md)を使用して、個別にデプロイすることができます。 `lcp` フォルダーが削除され、これらのサービスのパスに含まれなくなりました。 これらのフォルダ自体は、 [Liferayワークスペースの構造](https://learn.liferay.com/dxp/latest/ja/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) に似せて再編成されています。
 
 リポジトリのルートにあった他のいくつかのファイル（ `gradle.properties`、 `build.gradle`、 `settings.gradle`を含む）も、 `liferay` サービスに移動されました。
 
 ## Liferayサービスの変更
 
-`liferay` サービスフォルダは [Liferay Workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html)の機能構造に従っています。
+`liferay` サービスフォルダは [Liferay Workspace](https://learn.liferay.com/dxp/latest/ja/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) の機能構造に従っています。
 
 `liferay` サービス内のすべての構成は、プロジェクトの DXP Cloud 環境に対応する環境固有の `configs` ディレクトリに属するようになりました。 さらに、 `ライセンス` フォルダーが削除されました。 代わりに、 `デプロイ` フォルダーにライセンスを追加してください。
 
 次の表は、 `liferay` サービス設定の新しい設定をまとめたものです。
 
-| **ファイル**                   | **3.xでの場所**                | **4.xでの場所**                         |
+| **ファイル** | **3.xでの場所** | **4.xでの場所** |
 |:-------------------------- |:-------------------------- |:----------------------------------- |
 | デプロイするファイル                 | lcp/liferay/deploy/{ENV}/。 | liferay/configs/{ENV}/deploy/       |
 | OSGi設定ファイル（.cfgまたは.config） | lcp/liferay/config/{ENV}/。 | liferay/configs/{ENV}/osgi/configs/ |
@@ -43,7 +43,7 @@ DXP Cloud Stackバージョン4にアップグレードすると、すべての�
 | ライセンス                      | lcp/liferay/license/{ENV}/ | lcp/configs/{ENV}/deploy/           |
 
 ```{note}
-configs/{ENV}/` ディレクトリ内のファイルは、DXP Cloud の Liferay コンテナ内の `LIFERAY_HOME` ディレクトリにオーバーライドとしてコピーされます。
+`configs/{ENV}/` ディレクトリ内のファイルは、DXP Cloud の Liferay コンテナ内の `LIFERAY_HOME` ディレクトリにオーバーライドとしてコピーされます。
 ```
 
 ホットフィックスを直接リポジトリにコミットするのではなく、Liferayサービスのデプロイ時に自動的に追加される新しいCIサービス環境変数が用意されています。 詳細については、 [Installing Hotfixes with an Environment Variable](#installing-hotfixes-with-an-environment-variable) を参照してください。
@@ -56,14 +56,14 @@ configs/{ENV}/` ディレクトリ内のファイルは、DXP Cloud の Liferay 
 
 `search` サービス内のすべての設定は、環境固有の `configs` ディレクトリに属します。 `search` サービス設定の新しい設定については、次の表を参照してください：
 
-| **ファイル**                      | **3.xでの場所**                   | **4.xでの場所**                   |
+| **ファイル** | **3.xでの場所** | **4.xでの場所** |
 |:----------------------------- |:----------------------------- |:----------------------------- |
 | Elasticsearch の設定             | lcp/search/config/{ENV}/ です。  | search/configs/{ENV}/config/  |
 | カスタムシェルスクリプト                  | lcp/search/script/{ENV}/      | search/configs/{ENV}/scripts/ |
 | Elasticsearchライセンス（.json）ファイル | lcp/search/license/{ENV}/ です。 | search/configs/{ENV}/license/ |
 
 ```{note}
-search/configs/{ENV}/` にあるファイルは、DXP Cloud の Search コンテナ内の `usr/shared/elasticsearch/` にオーバーライドとしてコピーされます。 例えば、`search/configs/{ENV}/config/` にある `elasticsearch.yml` などの設定は `usr/shared/elasticsearch/config/` にコピーされ、既存のデフォルトをオーバーライドします。
+`search/configs/{ENV}/` にあるファイルは、DXP Cloud の Search コンテナ内の `usr/shared/elasticsearch/` にオーバーライドとしてコピーされます。 例えば、`search/configs/{ENV}/config/` にある `elasticsearch.yml` などの設定は `usr/shared/elasticsearch/config/` にコピーされ、既存のデフォルトをオーバーライドします。
 ```
 
 ### Elasticsearchプラグイン
@@ -101,14 +101,14 @@ bin/elasticsearch-pluginリスト
 
 `webserver` サービス設定の新しい設定については、次の表を参照してください：
 
-| **ファイル**  | **3.xでの場所**                  | **4.xでの場所**                      |
+| **ファイル** | **3.xでの場所** | **4.xでの場所** |
 |:--------- |:---------------------------- |:-------------------------------- |
 | ウェブサーバー設定 | lcp/webserver/config/{ENV}/。 | webserver/configs/{ENV}/conf.d/  |
 | カスタムスクリプト | lcp/webserver/script/{ENV}/。 | webserver/configs/{ENV}/scripts/ |
 | 静的コンテンツ   | lcp/webserver/deploy/{ENV}/。 | webserver/configs/{ENV}/public/  |
 
 ```{note}
-webserver/configs/{ENV}/` にあるファイルは、DXP Cloud の Web サーバコンテナ内の `/etc/nginx/` にオーバーライドとしてコピーされます。 wbserver/configs/{ENV}/public/` にあるファイルは、オーバーライドとして `var/www/html/` にコピーされます。
+`webserver/configs/{ENV}/` にあるファイルは、DXP Cloud の Web サーバコンテナ内の `/etc/nginx/` にオーバーライドとしてコピーされます。 `wbserver/configs/{ENV}/public/` にあるファイルは、オーバーライドとして `var/www/html/` にコピーされます。
 ```
 
 ### Webサーバー設定の上書き
@@ -139,7 +139,7 @@ location /static/ {
 
 `バックアップ` サービス内のすべての設定は、環境固有の `コンフィグ` ディレクトリに属するようになりました。 これは主にカスタムSQLスクリプトに関係しています：
 
-| **ファイル**     | **3.xでの場所**               | **4.xでの場所**                   |
+| **ファイル** | **3.xでの場所** | **4.xでの場所** |
 |:------------ |:------------------------- |:----------------------------- |
 | カスタムSQLスクリプト | lcp/backup/script/{ENV}/。 | backup/configs/{ENV}/scripts/ |
 

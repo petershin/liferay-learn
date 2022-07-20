@@ -47,7 +47,7 @@ mysqldump -u### -p##### --databases --add-drop-database lportal > database.sql
 ドキュメントライブラリがファイルシステムストアではないファイル保存方法（Amazon S3StoreやDBStoreなど）を使用している場合、先にファイルシステムストアに移行する必要があります。 Simple File System StoreまたはAdvanced File System Storeのいずれかを使用することができます。
 
 ```{important}
-[Advanced File System Store](https://learn.liferay.com/dxp/latest/ja/system-administration/file-storage/configuring-file-storage.html)では、より簡単に大規模なデータセットに拡張できるフォルダ構造を採用しています。 アドバンストファイルシステムストアへの移行は、長期的にドキュメントライブラリのより多くのファイルを収容するために推奨されており、あらゆる実稼働環境において**必須**です。
+[Advanced File System Store](https://learn.liferay.com/dxp/latest/ja/system-administration/file-storage/configuring-file-storage.html) では、より簡単に大規模なデータセットに拡張できるフォルダ構造を採用しています。 アドバンストファイルシステムストアへの移行は、長期的にドキュメントライブラリのより多くのファイルを収容するために推奨されており、あらゆる実稼働環境において**必須**です。
 ```
 
 文書ライブラリを移行する手順については、 [ファイルストア移行](https://learn.liferay.com/dxp/latest/ja/system-administration/file-storage/file-store-migration.html) を参照してください。

@@ -30,8 +30,8 @@ DXP Cloudのコンソールからサービスに環境変数を追加するに�
 
 1. 新しい環境変数をキーと値のペアで入力します。 次の例では、LiferayDXPサービスのクラスタリングを無効にします：
 
-    ***キー** ： `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED`
-    ***値** ： `false`
+    * **キー** ： `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED`
+    * **値** ： `false`
 
 1. **Save Changes** をクリックすると、新しい環境変数でサービスが再起動します。
 

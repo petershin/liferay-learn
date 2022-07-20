@@ -14,11 +14,11 @@ DXP Cloudでは、プロジェクトのGitリポジトリ（例： [GitHub](../g
 
 1. CIサービスに以下の変数を追加します。
 
-   ***Key** : `LCP_CI_DEPLOY_BRANCH`
+   * **Key** : `LCP_CI_DEPLOY_BRANCH`
 
       **Value** : 任意のブランチ名を入力します（例： `useracceptance`）。
 
-   ***Key** : `LCP_CI_DEPLOY_TARGET`
+   * **Key** : `LCP_CI_DEPLOY_TARGET`
 
       **Value** ：任意の環境名を入力します（例： `uat`）。
 

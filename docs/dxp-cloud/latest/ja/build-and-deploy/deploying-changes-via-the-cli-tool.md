@@ -8,7 +8,7 @@ CLIツールを使用すると、Jenkinsのビルドをトリガーしたり、D
 CLIツールは、プロジェクトへの変更を迅速にデプロイする方法を提供しますが、大部分のデプロイにはCIサービスとDXP Cloudコンソールを使用することがベストプラクティスです。 方法については、 [DXP Cloudコンソールによる変更の展開](./deploying-changes-via-the-dxp-cloud-console.md) を参照してください。
 ```
 
-プロジェクトでバージョン`3.x.x`サービスを使用している場合は、CLIツールを使用して変更をデプロイする前に、まず`LCP.json`ファイルを [準備](#preparing-lcpjson-files-in-project-version-3)する必要があります。
+プロジェクトでバージョン`3.x.x`サービスを使用している場合は、CLIツールを使用して変更をデプロイする前に、まず`LCP.json`ファイルを [準備](#preparing-lcpjson-files-in-project-version-3) する必要があります。
 
 そうでなければ、このステップをスキップして、デプロイメントプロセスを開始することができます。
 
@@ -103,7 +103,7 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
    もし、プロジェクトでバージョン `3.x.x` のサービスを使用している場合、代わりに `lcp/liferay` ディレクトリから `./gradlew distLiferayCloud` を実行する必要があります。
    ```
 
-`lcp deploy` コマンドを実行する前に、まずLiferayサービスのGradleビルドを作成する必要があります。 その他のサービスについては、ローカルでのビルドプロセスが不要なため、バックアップ、CI、データベース、検索、Webサーバーなどのサービスを直接導入することができます。
+   `lcp deploy` コマンドを実行する前に、まずLiferayサービスのGradleビルドを作成する必要があります。 その他のサービスについては、ローカルでのビルドプロセスが不要なため、バックアップ、CI、データベース、検索、Webサーバーなどのサービスを直接導入することができます。
 
 1. ビルドをデプロイする前に、`LCP.json`ファイルをDockerディレクトリにコピーします。 
 
@@ -115,7 +115,7 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
    cd build/docker
    ```
 
-サービスをデプロイする際に、サービスの`LCP.json`ファイルがあるディレクトリから`lcp deploy`コマンドを実行する必要があるため、`LCP.json`ファイルをDockerディレクトリにコピーする必要があります。
+   サービスをデプロイする際に、サービスの`LCP.json`ファイルがあるディレクトリから`lcp deploy`コマンドを実行する必要があるため、`LCP.json`ファイルをDockerディレクトリにコピーする必要があります。
 
 1. 以下のコマンドを実行して、ビルドを `dev` の環境にデプロイします。   
 

@@ -58,9 +58,9 @@ DXP Cloud上の環境では、必要に応じて独自のカスタムドメイ�
 
 DXP CloudでLiferayを使い始めるにあたり、アプリケーションのパフォーマンスを監視・チューニングするための利用可能なツールに慣れ親しんでください。
 
-***アラート** は、サービスがリソース制限の問題に直面したとき、インスタンス数を増減させたとき、その他の問題が発生したときにリアルタイムで通知することが可能です。 [これらのイベントを認識できるように、ステータスアラート](../manage-and-optimize/real-time-alerts.md) をニーズに合わせて設定します。
+* **アラート** は、サービスがリソース制限の問題に直面したとき、インスタンス数を増減させたとき、その他の問題が発生したときにリアルタイムで通知することが可能です。 [これらのイベントを認識できるように、ステータスアラート](../manage-and-optimize/real-time-alerts.md) をニーズに合わせて設定します。
 
-***オートスケーリング** Liferay DXPサービスのインスタンス数は、ユーザーのトラフィックに対応するために必要に応じて自動的に調節されます。 [この最適化を利用するために、](../manage-and-optimize/auto-scaling.md) 自動スケーリングを設定します。
+* **オートスケーリング** Liferay DXPサービスのインスタンス数は、ユーザーのトラフィックに対応するために必要に応じて自動的に調節されます。 [この最適化を利用するために、](../manage-and-optimize/auto-scaling.md) 自動スケーリングを設定します。
 
 * [**サービスポップオーバー**](../manage-and-optimize/application-metrics.md#service-popover) および [**モニタリング画面**](../manage-and-optimize/application-metrics.md#extended-application-metrics) ではサービスの詳細やリソース使用量を確認することができます。 サービスのパフォーマンスの監視については、 [アプリケーションメトリクス](../manage-and-optimize/application-metrics.md) を参照してください。
 
@@ -72,8 +72,4 @@ DXP Cloud上のインスタンスは、オンプレミスインスタンスと�
 
 DXP Cloud への移行が完了し、 [カスタマイズを](./migrating-dxp-configurations-and-customizations.md)配置したので、変更をクラウド環境に配備して開発を継続することができます。 もしまだなら、 [コマンドラインツール](../reference/command-line-tool.md) に慣れることは、開発作業を行う上で助けになります。
 
-DXPクラウドコンソール</a>を介してサービス
-
-をデプロイすることに加えて、 [の自動デプロイメント](../build-and-deploy/automatically-deploying-ci-service-builds.md) を構成して、開発環境のプロセスを高速化することもできます。 また、 [CIサービスが利用するJenkinsパイプライン](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) を自分のニーズに合わせてカスタマイズすることも可能だ。</p> 
-
-DXP Cloudの導入ワークフローについて詳しくはこちら [DXP Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
+[DXPクラウドコンソール](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)を介して、サービスをデプロイすることに加えて、 [自動デプロイ](../build-and-deploy/automatically-deploying-ci-service-builds.md)を構成して、開発環境のプロセスを高速化することもできます。また、CIサービスが利用する[Jenkinsパイプラインをカスタマイズして](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)、自分のニーズに合わせることもできます。DXP Cloudのデプロイワークフローについて、詳しくは[こちら](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)をご参照ください。

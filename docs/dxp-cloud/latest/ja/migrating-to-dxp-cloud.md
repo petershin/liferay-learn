@@ -57,25 +57,25 @@ DXP Cloud に移行することで、 [高可用性と拡張性](./getting-start
 
 また、移行ステップに必要なツールをローカルシステム上に用意しておく必要があります。
 
-* [Git](https://git-scm.com/): 移行期間中、DXP Cloudに変更をコミットしプッシュするためにGitを使用できるよう、Gitをインストールする必要があります。
-* リポジトリホスティングサービスアカウント。DXP Cloudビルドのために変更をプッシュして送信するには、これらのウェブサイトのいずれかにアカウントを持つ必要があります。 [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), または [GitLab](https://about.gitlab.com/)のアカウントを使用することができます。
-* [Liferay Patching Tool](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html): 移行の第一段階として、パッチやホットフィックス情報を確認するためにPatching Toolが必要です。
-* ファイル圧縮ソフト：ローカルシステムのOSとしてWindowsを使用している場合、圧縮ファイルをパック/アンパックするためのファイル圧縮ソフト（例えば、 [7-Zip](https://www.7-zip.org/)）も必要です。
+* [Git](https://git-scm.com/) : 移行期間中、DXP Cloudに変更をコミットしプッシュするためにGitを使用できるよう、Gitをインストールする必要があります。
+* リポジトリホスティングサービスアカウント。DXP Cloudビルドのために変更をプッシュして送信するには、これらのウェブサイトのいずれかにアカウントを持つ必要があります。 [GitHub](https://github.com/) , [Bitbucket](https://bitbucket.org/) , または [GitLab](https://about.gitlab.com/) のアカウントを使用することができます。
+* [Liferay Patching Tool](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) : 移行の第一段階として、パッチやホットフィックス情報を確認するためにPatching Toolが必要です。
+* ファイル圧縮ソフト：ローカルシステムのOSとしてWindowsを使用している場合、圧縮ファイルをパック/アンパックするためのファイル圧縮ソフト（例えば、 [7-Zip](https://www.7-zip.org/) ）も必要です。
 
 これらのツールをインストールした後は、時間をかけて慣れていくのがよいでしょう。
 
 例えば、もしあなたがGitの初心者なら、 [公式Git資料](https://git-scm.com/doc) (リファレンスドキュメント、コマンドチートシートなどを含む)を見たり、移行に適用する前に独自に使い方を練習したりするとよいでしょう。 Gitは、この移行ガイドで使用されているもの以上の機能を持つ、強力なバージョン管理ツールです。
 
-DXP Cloudへの移行には、独自のカスタムコード、モジュール、テーマをプロジェクト専用のLiferay Workspaceに移動することも必要です。 もしLiferay Workspaceを初めて使うのであれば、効果的な使い方を学ぶこともできます [こちら](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html).
+DXP Cloudへの移行には、独自のカスタムコード、モジュール、テーマをプロジェクト専用のLiferay Workspaceに移動することも必要です。 もしLiferay Workspaceを初めて使うのであれば、効果的な使い方を学ぶこともできます [こちら](https://learn.liferay.com/dxp/latest/ja/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) .
 
 ### 環境を整える
 
 移行作業をスムーズに開始するために、事前に移行用の環境を準備します。
 
-まだの場合は、 [Initial Setup Overview](./getting-started/initial-setup-overview.md) にあるタスクを完了し、DXP Cloud 環境が期待通りに稼働していることを確認します。 移行中に問題が発生した場合、 [サポートアクセスを有効にする](./troubleshooting/support-access.md); サポートアクセスを有効にすると、Liferay DXP Cloud サポートスタッフがプロジェクトのコンソールやログなどにアクセスできるようになり、必要に応じてより多くの支援ができるようになります。
+まだの場合は、 [初期設定の概要](./getting-started/initial-setup-overview.md) にあるタスクを完了し、DXP Cloud 環境が期待通りに稼働していることを確認します。 移行中に問題が発生した場合、 [サポートアクセスを有効にする](./troubleshooting/support-access.md); サポートアクセスを有効にすると、Liferay DXP Cloud サポートスタッフがプロジェクトのコンソールやログなどにアクセスできるようになり、必要に応じてより多くの支援ができるようになります。
 
 リポジトリの設定（ [GitHub](./getting-started/configuring-your-github-repository.md), [Bitbucket](./getting-started/configuring-your-bitbucket-repository.md), または [GitLab](./getting-started/configuring-your-gitlab-repository.md)を使用）をして、デプロイができることを確認する。 移行では、プロセスを通じて複数の変更を展開する必要があるため、移行を進めるためには展開が可能であることが必要です。
 
 ## 移行はどのように行うのですか？
 
-ローカルの Liferay DXP インスタンスにアクセスできることを確認し、 [リポジトリ](#prepare-the-environment) を移行に使用します。 そして、準備ができたら、 [Stage 1: Matching DXP Versions](./migrating-to-dxp-cloud/matching-dxp-versions.md)から始めてください。
+ローカルの Liferay DXP インスタンスにアクセスできることを確認し、 [リポジトリ](#prepare-the-environment) を移行に使用します。 そして、準備ができたら、 [ステージ1：DXPバージョンのマッチング](./migrating-to-dxp-cloud/matching-dxp-versions.md) から始めてください。

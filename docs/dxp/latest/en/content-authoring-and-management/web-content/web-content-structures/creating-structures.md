@@ -22,7 +22,7 @@ Due to import/export operations, it's possible to have both a global and a Site-
 ```
 
 ```{tip}
-To discover additional configuration options for Web Content and Structures (e.g., [enable setting a custom Structure Key](./whats-new-with-web-content-structures-in-7-4.md#setting-the-structure-key), look in System Settings &rarr; Content and Data &rarr; Web Content &rarr; Administration.
+To discover additional configuration options for Web Content and Structures (e.g., [enable setting a custom Structure Key](./whats-new-with-web-content-structures-in-7-4.md#setting-the-structure-key)), look in System Settings &rarr; Content and Data &rarr; Web Content &rarr; Administration.
 ```
 
 ## Structure Fields

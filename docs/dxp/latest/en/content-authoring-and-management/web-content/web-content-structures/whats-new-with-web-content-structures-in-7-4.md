@@ -86,12 +86,12 @@ In addition to columns, use Field Groups to lock a subset of the Structure's fie
 
 ## Setting the Structure Key
 
-To set your own custom Web Content Structure Key,
+To set a custom Web Content Structure Key,
 
 1. Go to System Settings &rarr; Web Content (under Content and Data) &rarr; Administration. Uncheck _Autogenerate Structure Key_.
 1. Go to the Site menu &rarr; Content & Data &rarr; Web Content. Open the Structures tab and add a new Structure.
 1. Add a field and name the Structure. To Manually set the Structure Key, open the Properties sidebar by clicking the configuration icon (![Configuration](../../../images/icon-cog3.png)).
-1. Edit the _Structure Key_ field, adding your custom value (e.g., *MY_STRUCTURE_KEY*).
+1. Edit the _Structure Key_ field, adding your custom value (e.g., `MY_STRUCTURE_KEY`).
 1. Save the Structure.
 
 With the new Data Engine backed Structures, the export process strips the Structure Key out of the JSON. This means that importing the definition (for example, into a new Site) will not preserve the Structure Key. If you wish to keep the Structure Key across an export-import process or perhaps provide a new custom key, you must edit the exported JSON.

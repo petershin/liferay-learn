@@ -48,7 +48,7 @@ The following field types are available when creating a Data Definition:
 | Color | Specifies a color |
 | Date | Enter a date. A valid date format is required for the date field, but you don't have to enter a date manually. When you select the date field a mini-calendar pops up which you can use to select a date. |
 | Decimal | Enter a decimal number. The value is persisted as a `double` |
-| Documents and Media | Select a file from a Documents and Media library |
+| Documents and Media | Select a file from a Documents and Media library[^1] |
 | Geolocation | Associate a location with the User's form entry. |
 | HTML | An area that uses a WYSIWYG editor to write and display HTML content |
 | Integer | Enter an integer. The value is persisted as an `int`. |
@@ -59,6 +59,8 @@ The following field types are available when creating a Data Definition:
 | Text | Enter a single line of text |
 | Text Box | This is just like the text field except you can enter multiple lines of text or separate paragraphs |
 | Web Content | Select web content |
+
+[^1]: Documents added in a DDL do not inherit the permissions of the DDL. Instead, the permissions are defined by the Documents and Media configuration for the uploaded Document. This means that Documents uploaded in a tightly restricted DDL can be more accessible than the DDL records.
 
 ## Field Properties Reference
 

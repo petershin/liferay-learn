@@ -22,7 +22,7 @@ To create a data list:
 
 ## Creating List Records
 
-By default, only administrators have permission to add records to a data list. To give other users this permission,
+By default, only administrators have permission to add records to a data list[^1]. To give other users this permission,
 
 1. Navigate to *Content & Data* &rarr; *Dynamic Data Lists*.
 
@@ -31,6 +31,8 @@ By default, only administrators have permission to add records to a data list. T
     ![Click permissions on the list you want to manage.](./creating-data-lists/images/02.png)
 
 1. Select *Add Record* for the Roles that need permissions.  To give unauthenticated Users permission to add records select *Add Record* for Guest. Click *Save* to finish.
+
+[^1]: Documents added in a DDL with the Documents and Media field type do not inherit the permissions of the DDL. Instead, the permissions are defined by the Documents and Media configuration for the uploaded Document. This means that Documents uploaded in a tightly restricted DDL can be more accessible than the DDL records.
 
 New records can be added to a list from Site Administration or from a page that has the Dynamic Data Lists Display widget. See the section below for configuring this widget.
 

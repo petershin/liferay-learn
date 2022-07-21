@@ -1,6 +1,6 @@
 # Configuring Search Bar Suggestions
 
-{bdg-secondary}`Available DXP 7.4 Update X+`
+{bdg-secondary}`Available Liferay Portal 7.4 GAX+/DXP 7.4 UX+`
 
 Search Bar Suggestions adds _search as you type_ functionality to Liferay's Search Bar widget. 
 

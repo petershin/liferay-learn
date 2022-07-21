@@ -21,6 +21,10 @@ Follow these steps to create a Structure:
 Due to import/export operations, it's possible to have both a global and a Site-scoped Structure with the same `structureKey`. If this happens, the Site-scoped Structure takes precedence, and you can't access the global Structure from that Site.
 ```
 
+```{tip}
+To discover additional configuration options for Web Content and Structures (e.g., [enable setting a custom Structure Key](./whats-new-with-web-content-structures-in-7-4.md#setting-the-structure-key), look in System Settings &rarr; Content and Data &rarr; Web Content &rarr; Administration.
+```
+
 ## Structure Fields
 
 You can place these fields on a Structure: 

@@ -63,9 +63,10 @@ By default, only the creator of the Page Template can use it.
 To give other users access to a newly created page template follow these steps:
 
 1. Select *Permissions* from the Page Template's Actions menu.
-1. Check the *View* permission for the Roles that you want to have access to the Page Template. If you want any user who can create a page to be able to use the Page Template, check the *View* permission for the *User* Role.
 
     ![Configuring permissions for a page template to allow other users access.](./creating-a-page-template/images/05.png)
+
+1. Check the *View* permission for the Roles that you want to have access to the Page Template. If you want any user who can create a page to be able to use the Page Template, check the *View* permission for the *User* Role.
 
 1. Click *Save*.
 

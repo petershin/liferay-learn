@@ -3,14 +3,9 @@
 ウィジェットセクションは、ウィジェットページ</a>の
 **追加** メニューと同じように機能します。 使用可能なウィジェットの完全なリストが表示され、それらをページに追加できます。 主な違いは、コンテンツページではウィジェットの主な設定オプションしか使用できないことです。</p> 
 
-
-
 ```{note}
-ウィジェットページでは、ウィジェットは [render-weight]（https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight） に従ってレンダリングされますが、コンテントページではその限りではありません。 その代わり、ページ上に表示される順番（左から右、上から下）にレンダリングされます。
+ウィジェットページでは、ウィジェットは [render-weight](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight）に従ってレンダリングされますが、コンテントページではその限りではありません。 その代わり、ページ上に表示される順番（左から右、上から下）にレンダリングされます。
 ```
-
-
-
 
 <a name="adding-widgets-on-content-pages" />
 
@@ -38,14 +33,9 @@
 
 1. ［**保存**］ をクリックして変更を適用します。
 
-
-
 ```{note}
 Liferay Portal 7.3 GA2以降では、ウィジェットのオプションメニューから*権限*を選択して、ウィジェットの権限を設定することも可能です。
 ```
-
-
-
 
 <a name="configuring-widget-permissions-on-content-pages" />
 
@@ -61,14 +51,9 @@ Liferay Portal 7.3 GA2以降、コンテンツページからウィジェット�
 ![コンテンツページのウィジェットの権限は、オプションメニューから設定できます。](./using-widgets-on-a-content-page/images/02.png)
 
 
-
 ```{note}
  [ページテンプレート] (../adding-pages/creating-a-page-template.md) に基づいてページを作成すると、権限もコピーされます。 マスターページの権限は、ページではなく、[マスターページ](../defining-headers and footers/managing-master-page-templates.md) で設定されます。
 ```
-
-
-
-
 <a name="content-page-limitations-for-widgets" />
 
 ## ウィジェットのコンテンツページの制限
@@ -79,8 +64,6 @@ Liferay Portal 7.3 GA2以降、コンテンツページからウィジェット�
 ****ウィジェットルック & フィール** ：ウィジェットページでは、ウィジェットの設定メニューからルック＆フィールメニューにアクセスでき、CSSをきめ細かくコントロールできます。 コンテンツのルックアンドフィールはテーマまたはフラグメントを使用して定義されているため、コンテンツページのウィジェットでは使用できません。
 ****設定用テンプレート** ：ウィジェットの構成設定をテンプレートに保存する設定用テンプレートは、ウィジェットページでのみ使用できます。
 ****エクスポート/インポート** ：ウィジェットページのウィジェットのアプリケーションデータのみをエクスポート/インポートできます。
-
-
 
 <a name="additional-information" />
 

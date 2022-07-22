@@ -6,7 +6,7 @@
 
    creating-pages/understanding_pages.rst
    creating-pages/adding_pages.rst
-   creating-pages/building_and_managing_content_pages.rst
+   creating-pages/using-content-pages.md
    creating-pages/defining_headers_and_footers.rst
    creating-pages/using_widget_pages.rst
    creating-pages/page_settings.rst

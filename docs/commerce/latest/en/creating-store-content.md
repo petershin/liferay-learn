@@ -2,6 +2,7 @@
 toc:
 - ./creating-store-content/creating-your-storefront.md
 - ./creating-store-content/creating-a-catalog-page.md
+- ./creating-store-content/creating-store-content/creating-separate-catalog-pages-for-individual-product-catalogs.md
 - ./creating-store-content/creating-product-display-pages.md
 - ./creating-store-content/creating-category-display-pages.md
 - ./creating-store-content/using-wish-lists.md
@@ -14,9 +15,9 @@ toc:
 
 ```{toctree}
 :maxdepth: 2
-
 creating-store-content/creating-your-storefront.md
 creating-store-content/creating-a-catalog-page.md
+creating-store-content/creating-separate-catalog-pages-for-individual-product-catalogs.md
 creating-store-content/creating-product-display-pages.md
 creating-store-content/creating-category-display-pages.md
 creating-store-content/using-wish-lists.md

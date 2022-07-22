@@ -28,6 +28,4 @@ When you select the Blueprint Suggestions Contributor, new configuration fields 
 
 **Include Asset Summary:** Enable this to return the [summary](../search-results/search-results-behavior.md#result-summaries) of the result with the response. Disable this to return a more concise list of results, excluding the summary built by the search framework.
 
-**Fields:** Define additional indexed fields to also return with the response.
-<!--What would this be used for? -->
-<!-- Is this enough or should we include a use case example? -->
+**Fields:** Define additional indexed fields to also return with the response. This is used when creating a custom [widget template](../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md#creating-a-widget-template) that requires the use of certain index fields and their values.

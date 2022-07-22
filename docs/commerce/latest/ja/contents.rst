@@ -6,18 +6,18 @@
    :includehidden:
    :maxdepth: 4
 
-   インストールとアップグレード
-   ストアの開始
-   製品管理
-   ストアコンテンツの作成   
-   価格
-   ユーザーとアカウント
-   注文管理
-   在庫管理
-   店舗管理
-   アドオンとコネクター
-   開発者ガイド
-   ヘルプ
+   installation-and-upgrades.md
+   starting-a-store.md
+   product-management.md
+   creating-store-content.md
+   pricing.md
+   users-and-accounts.md
+   order-management.md
+   inventory-management.md
+   store-management.md
+   add-ons-and-connectors.md
+   developer-guide.md
+   get-help.md
 
 索引と表
 ==================

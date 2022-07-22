@@ -1,7 +1,7 @@
 # Search Bar Suggestions Blueprints
 
 {bdg-primary}`Subscription`
-{bdg-secondary}`Available Liferay Portal 7.4 GAX+/DXP 7.4 UX+`
+{bdg-secondary}`7.4 Ux+ and GAX+`
 
 Search Bar Suggestions uses the regular [search bar query](../search-insights.md) by default. [Liferay Enterprise Search users](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) can influence or override the query using [Search Blueprints](../../liferay-enterprise-search/search-experiences/understanding-search-blueprints.md).
 

@@ -1,9 +1,10 @@
 ---
 toc:
-- ./social-tools/user-guide.md
-- ./social-tools/developer-guide.md
-- ./social-tools/apis.md
+  - ./social-tools/user-guide.md
+  - ./social-tools/developer-guide.md
+  - ./social-tools/apis.md
 ---
+
 # ソーシャルツール
 
 ```{toctree}
@@ -27,6 +28,6 @@ social-tools/apis.md
 ---------------
 近日公開！
 
-APIs
+API
 ----
 近日公開！

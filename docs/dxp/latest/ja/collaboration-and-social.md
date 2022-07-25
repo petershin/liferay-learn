@@ -22,11 +22,10 @@ collaboration-and-social/social-tools.md
 collaboration-and-social/wiki.md
 collaboration-and-social/questions.md
 collaboration-and-social/alerts-and-announcements.md
-../site-building/building-sites/site-membership/inviting-members-to-your-site.md
 collaboration-and-social/knowledge-base.md
 ```
 
-Liferay DXPには、コラボレーションとコミュニケーションを促進するサイトやコミュニティを構築するために使用できる柔軟なアプリケーションの幅広いスイートが付属しています。 これらの機能の概要については、「 `コラボレーションとソーシャルの概要 <./ collaboration-and-social/collaboration-and-social-overview.md>` 」を参照してください。
+Liferay DXPには、コラボレーションとコミュニケーションを促進するサイトやコミュニティを構築するために使用できる柔軟なアプリケーションの幅広いスイートが付属しています。 これらの機能の概要については、 [コラボレーションとソーシャル概要](./collaboration-and-social/collaboration-and-social-overview.md)  を参照してください。
 
 ```{raw} html
 :file: landingpage_template.html

@@ -1,6 +1,7 @@
 ---
 toc:
 ---
+
 # 開発者ガイド
 
 ```{toctree}
@@ -9,8 +10,6 @@ developer-guide/wiki-api-basics.md
 ```
 
 近日公開!
-
-<a name="wiki-apis" />
 
 ## Wiki API
 

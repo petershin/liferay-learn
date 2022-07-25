@@ -1,9 +1,10 @@
 ---
 toc:
-- ./notifications-and-requests/user-guide.md
-- ./notifications-and-requests/developer-guide.md
-- ./notifications-and-requests/apis.md
+  - ./notifications-and-requests/user-guide.md
+  - ./notifications-and-requests/developer-guide.md
+  - ./notifications-and-requests/apis.md
 ---
+
 # 通知とリクエスト
 
 ```{toctree}
@@ -17,7 +18,7 @@ notifications-and-requests/apis.md
 ユーザーガイド
 ----------
 
-Notifications and Requests
+通知とリクエスト
 
 
 * [ユーザーにメンションする](./notifications-and-requests/user-guide/mentioning-users.md)
@@ -28,6 +29,6 @@ Notifications and Requests
 
 近日公開！
 
-## APIs
+## API
 
 近日公開！

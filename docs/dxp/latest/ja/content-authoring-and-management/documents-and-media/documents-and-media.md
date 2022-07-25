@@ -1,8 +1,9 @@
 ---
 toc:
-- ./documents-and-media-overview.md
-- ./documents-and-media-ui-reference.md
+  - ./documents-and-media-overview.md
+  - ./documents-and-media-ui-reference.md
 ---
+
 # ドキュメントとメディア
 
 ```{toctree}

@@ -1,3 +1,17 @@
+---
+toc:
+  - ./devops/configuring-documents-and-media-previews.md
+  - ./../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+  - ./devops/configuring-cache-control-for-documents-and-media.md
+  - ./devops/setting-storage-quotas-for-documents-and-media.md
+  - ./devops/enabling-optimization-of-animated-gifs.md
+  - ./devops/enabling-ffmpeg-for-audio-and-video-previews.md
+  - ./devops/enabling-openoffice-libreoffice-integration.md
+  - ./devops/enabling-document-creation-and-editing-with-microsoft-office-365.md
+  - ./devops/google-drive-integration.md
+  - ./devops/sharepoint-integration.md
+---
+
 # DevOps
 
 ```{toctree}
@@ -5,6 +19,7 @@
 
 devops/configuring-documents-and-media-previews.md
 ../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+devops/configuring-cache-control-for-documents-and-media.md
 devops/setting-storage-quotas-for-documents-and-media.md
 devops/enabling-optimization-of-animated-gifs.md
 devops/enabling-ffmpeg-for-audio-and-video-previews.md
@@ -16,6 +31,7 @@ devops/sharepoint-integration.md
 
 - [ドキュメントとメディアプレビューの設定](./devops/configuring-documents-and-media-previews.md)
 - [アップロードされたファイルのウイルス対策スキャンを有効にする](../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md)
+- [ドキュメントとメディアのキャッシュ制御を設定する](./devops/configuring-cache-control-for-documents-and-media.md)
 - [ドキュメントとメディアのストレージクォータを設定する](./devops/setting-storage-quotas-for-documents-and-media.md)
 - [アニメーションGIFの最適化を有効にする](./devops/enabling-optimization-of-animated-gifs.md)
 - [音声とビデオのプレビュー用にFFmpegを有効にする](./devops/enabling-ffmpeg-for-audio-and-video-previews.md)

@@ -1,9 +1,10 @@
 ---
 toc:
-- ./asset-libraries/asset-libraries-overview.md
-- ./asset-libraries/creating-and-managing-asset-libraries.md
-- ./asset-libraries/asset-library-content.md
+  - ./asset-libraries/asset-libraries-overview.md
+  - ./asset-libraries/creating-and-managing-asset-libraries.md
+  - ./asset-libraries/asset-library-content.md
 ---
+
 # アセットライブラリ
 
 ```{toctree}

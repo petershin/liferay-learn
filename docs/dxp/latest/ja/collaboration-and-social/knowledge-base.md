@@ -1,18 +1,19 @@
 ---
 toc:
-- ./knowledge-base/using-the-knowledge-base.md
-- ./knowledge-base/creating-knowledge-base-articles.md
-- ./knowledge-base/managing-the-knowledge-base.md
-- ./knowledge-base/knowledge-base-templates.md
-- ./knowledge-base/responding-to-knowledge-base-feedback.md
-- ./knowledge-base/knowledge-base-display-widget.md
-- ./knowledge-base/other-knowledge-base-widgets.md
-- ./knowledge-base/importing-knowledge-base-articles.md
-- ./knowledge-base/knowledge-base-zip-file-requirements.md
-- ./knowledge-base/knowledge-base-importer-faq.md
-- ./knowledge-base/knowledge-base-system-settings.md
-- ./knowledge-base/developer-guide.md
+  - ./knowledge-base/using-the-knowledge-base.md
+  - ./knowledge-base/creating-knowledge-base-articles.md
+  - ./knowledge-base/managing-the-knowledge-base.md
+  - ./knowledge-base/knowledge-base-templates.md
+  - ./knowledge-base/responding-to-knowledge-base-feedback.md
+  - ./knowledge-base/knowledge-base-display-widget.md
+  - ./knowledge-base/other-knowledge-base-widgets.md
+  - ./knowledge-base/importing-knowledge-base-articles.md
+  - ./knowledge-base/knowledge-base-zip-file-requirements.md
+  - ./knowledge-base/knowledge-base-importer-faq.md
+  - ./knowledge-base/knowledge-base-system-settings.md
+  - ./knowledge-base/developer-guide.md
 ---
+
 # ナレッジベース
 
 ```{toctree}
@@ -40,8 +41,8 @@ knowledge-base/developer-guide.md
 * [ナレッジベース表示ウィジェット](./knowledge-base/knowledge-base-display-widget.md)
 * [その他のナレッジベースウィジェット](./knowledge-base/other-knowledge-base-widgets.md)
 * [ナレッジベース記事のインポート](./knowledge-base/importing-knowledge-base-articles.md)
-* [Knowledge Base Zip File Requirements](./knowledge-base/knowledge-base-zip-file-requirements.md)
-* [Knowledge Base Importer Faq](./knowledge-base/knowledge-base-importer-faq.md)
+* [ナレッジベースのZIPファイルの要件](./knowledge-base/knowledge-base-zip-file-requirements.md)
+* [ナレッジベースインポーターに関するFAQ](./knowledge-base/knowledge-base-importer-faq.md)
 * [ナレッジベースシステム設定](./knowledge-base/knowledge-base-system-settings.md)
 
 開発者ガイド

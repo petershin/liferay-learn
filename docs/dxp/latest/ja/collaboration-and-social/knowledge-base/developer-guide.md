@@ -1,8 +1,9 @@
 ---
 toc:
-- ./developer-guide/apis.md
+  - ./developer-guide/apis.md
 ---
-# 開発者ガイド
+
+- ./# デベロッパーガイド
 
 ```{toctree}
 :maxdepth: 2
@@ -10,6 +11,7 @@ toc:
 developer-guide/apis.md
 ```
 
-## API
+API
+----
 
 近日公開！

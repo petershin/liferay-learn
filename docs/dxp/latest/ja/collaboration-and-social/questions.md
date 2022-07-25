@@ -1,11 +1,12 @@
 ---
 toc:
-- ./questions/using-the-questions-app.md
-- ./questions/configuring-the-questions-app.md
-- ./questions/developer-guide.md
-- ./questions/apis.md
+  - ./questions/using-the-questions-app.md
+  - ./questions/configuring-the-questions-app.md
+  - ./questions/developer-guide.md
+  - ./questions/apis.md
 ---
-# 質問アプリ
+
+# 質問
 
 ```{toctree}
 :maxdepth: 2
@@ -23,6 +24,6 @@ questions/apis.md
 
 近日公開！
 
-## APIs
+## API
 
 近日公開！

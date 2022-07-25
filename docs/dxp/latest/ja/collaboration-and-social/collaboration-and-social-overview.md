@@ -1,64 +1,56 @@
-# コラボレーションとソーシャルの概要
+# コラボレーションと社会の概要
 
-Liferay DXPは、ユーザーが柔軟で社会的で拡張可能なコラボレーションアプリケーションを使用して堅牢なコミュニティを構築できるようにします。
+Liferay DXPにより、ユーザーは、柔軟かつソーシャルで、拡張可能なコラボレーションアプリケーションを使用して、堅牢なコミュニティを構築できるようになります。
 
-すぐに使える機能は次のとおりです。
+標準機能は次のとおりです。
 
-  - [メッセージボード](#message-boards)
-  - [Wiki](#wiki)
-  - [ソーシャルツール](#social-tools)
-  - [招待](#invitations)
-  - [ナレッジベース](#knowledge-base)
+* [掲示板](#message-boards)
+* [Wikiノード](#wiki)
+* [ソーシャルツール](#social-tools)
+* [ゲスト](#invitations)
+* [ナレッジベース](#knowledge-base)
 
-<a name="message-boards" />
+## 掲示板
 
-## メッセージボード
+掲示板アプリは、コンテンツが豊富なディスカッションのためのプラットフォームであり、モデレーション、サブスクリプション、およびスレッド管理のためのツールを提供します。
 
-メッセージボードアプリは、コンテンツが豊富なディスカッションのためのプラットフォームであり、モデレート、サブスクリプション、およびスレッド管理のためのツールを提供します。
+![図1：掲示板アプリは、ディスカッションを促進するのに最適です。](./collaboration-and-social-overview/images/01.png)
 
-![図1：メッセージボードアプリは、ディスカッションを促進するのに最適です。](./collaboration-and-social-overview/images/01.png)
+掲示板アプリを使用してフォーラムを構築するには、[掲示板ガイド](./message-boards/user-guide/getting-started-with-message-boards.md)を参照してください。
 
-メッセージボードアプリを使用してフォーラムを構築するには、[メッセージボード入門](./message-boards/user-guide/getting-started-with-message-boards.md)を参照してください。
+## Wikiノード
 
-<a name="wiki" />
+DXPは、リッチな書き込み環境、記事のバージョン管理、複数のWikiノードのサポートを提供する、フル機能のWikiアプリケーションを搭載しています。 DXPのWikiは、ポータルの [ユーザー管理](https://help.liferay.com/hc/articles/360029131931-Introduction-to-Managing-Users)、 [タギング](https://help.liferay.com/hc/articles/360028820472-Tagging-Content)、 [セキュリティ](https://help.liferay.com/hc/articles/360028711192-Introduction-to-Securing-Liferay-DXP) 機能と完全に統合されています。
 
-## Wiki
+![図2：Wikiウィジェットは、サイトページ上にWikiを表示します。](./collaboration-and-social-overview/images/02.png)
 
-DXPには、豊富なライティング環境、記事のバージョン管理、および複数のwikiノードのサポートを提供するフル機能のWikiアプリケーションが含まれています。 DXPのWikiは、ポータルの [ユーザー管理](https://help.liferay.com/hc/articles/360029131931-Introduction-to-Managing-Users) 、 [タグ付け](https://help.liferay.com/hc/articles/360028820472-Tagging-Content) 、 [セキュリティ](https://help.liferay.com/hc/articles/360028711192-Introduction-to-Securing-Liferay-DXP) 機能と完全に統合されています。
-
-![図2：Wikiウィジェットは、サイトページにWikiを表示します。](./collaboration-and-social-overview/images/02.png)
-
-Wikiの作成を開始するには、[ Wiki入門](./wiki/user-guide/getting-started-with-wikis.md)を参照してください。
-
-<a name="social-tools" />
+Wikiの作成を始めるには、 [Getting Started with Wikis](./wiki/getting-started-with-wikis.md) の記事を参照してください。
 
 ## ソーシャルツール
 
-次のソーシャルアプリケーションがLiferay DXPに含まれています。
+Liferay DXPには、以下のソーシャルアプリケーションが含まれています。
 
-  - [アクテビティ](./social-tools/user-guide/using-the-activities-widget.md)
-  - [コンタクトセンター](./social-tools/user-guide/using-the-contacts-center-widget.md)
+* [アクティビティ](./social-tools/user-guide/using-the-activities-widget.md)
+* [コンタクトセンター](./social-tools/user-guide/using-the-contacts-center-widget.md)
 
-これらのツールは、ユーザーのための統合されたソーシャルエクスペリエンスを構築するためのビルディングブロックです。 アクティビティは、ユーザーがサイトで実行するアクションの構成可能なフィードを提供します。 コンタクトセンターを使用すると、ユーザーは他のユーザーとの社会的関係を検索、表示、および確立できます。
+これらのツールは、ユーザーにとって統合されたソーシャルな体験を構築するためのビルディングブロックです。 アクティビティは、ユーザーがサイト上で行ったアクションを設定可能なフィードとして提供します。 Contacts Centerでは、他のユーザーの検索、閲覧、ソーシャルリレーションシップの確立が可能です。
 
-![図3：アクティビティウィジェットはユーザーアクティビティを追跡します。](./collaboration-and-social-overview/images/03.png)
+![図3：アクティビティウィジェットは、ユーザーのアクティビティを追跡します。](./collaboration-and-social-overview/images/03.png)
 
-<a name="invitations" />
+## ゲスト
 
-## 招待
+_メンバーの招待<1>ウィジェット</a>を使用すると、サイト管理者はサイトに参加するための招待状を送信できます。 ユーザーは、このような招待を確認すると、サイト管理者が定義したロールに割り当てられたサイトメンバーとなります。 クリックすると、 [サイトメンバーシップ](../site-building/sites/site-membership/adding-members-to-sites.md)について詳しく知ることができます。</p> 
 
-**メンバーを招待** ウィジェットを使用すると、サイト管理者はサイトに参加するための招待状を送信できます。 ユーザーはこのような招待を確認すると、サイト管理者が定義したロールに割り当てられたサイトメンバーになります。 クリックして[サイトメンバーシップ](../site-building/building-sites/adding-members-to-sites.md)の詳細をご覧ください。
+![図4：メンバーの招待画面](./collaboration-and-social-overview/images/04.png)
 
-![図4：メンバーをサイトに招待する。](./collaboration-and-social-overview/images/04.png)
+招待されたユーザーは、招待を確認したり、無視したりすることができます。
 
-ユーザーが招待されると、要求を確認または無視できます。
+![図5：サイト参加リクエストの確認](./collaboration-and-social-overview/images/05.png)
 
-![図5：サイトへの参加リクエストの確認](./collaboration-and-social-overview/images/05.png)
 
-<a name="knowledge-base" />
 
 ## ナレッジベース
 
-**ナレッジベース** アプリを使用して、専門的な製品ドキュメントを表示したり、完全な本やガイドを作成したりできます。 コンテンツ作成者は、マークダウンを含む複数のフォーマットを使用できます。 さらに、ナレッジベースは [ワークフローエンジン](https://help.liferay.com/hc/articles/360028721732-Introduction-to-Workflow) と統合されているため、コンテンツエディターは公開前に記事をレビューおよび承認できます。
+_ナレッジベース_ アプリは、専門的な製品ドキュメントを表示したり、完全な書籍やガイドを形成するために使用することができます。 コンテンツライターは、マークダウンを含む複数のフォーマットを使用することができます。 さらに、ナレッジベースは [ワークフローエンジン](https://help.liferay.com/hc/articles/360028721732-Introduction-to-Workflow) と統合されており、コンテンツエディターは公開前に記事を確認し、承認することができます。
 
-![図6：ナレッジベースウィジェットは、記事の公開にも使用できます。](./collaboration-and-social-overview/images/06.png)
+![図6：Knowledge Baseウィジェットは、記事の公開にも利用できる。](./collaboration-and-social-overview/images/06.png)

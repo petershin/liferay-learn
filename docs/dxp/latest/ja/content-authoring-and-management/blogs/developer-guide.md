@@ -1,7 +1,8 @@
 ---
 toc:
-- ./developer-guide/blog-api-basics.md
+  - ./developer-guide/blog-api-basics.md
 ---
+
 # 開発者ガイド
 
 ```{toctree}

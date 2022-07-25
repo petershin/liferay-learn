@@ -1,3 +1,9 @@
+---
+toc:
+- ./notifications/configuring-personal-notifications.md
+- ./notifications/creating-notification-templates.md
+- ./notifications/using-notification-queue.md
+---
 # Notifications
 
 ```{toctree}
@@ -5,6 +11,7 @@
 
 notifications/configuring-personal-notifications.md
 notifications/creating-notification-templates.md
+notifications/using-notification-queue.md
 ```
 
 Liferay provides integrated notification tools, so you can ensure users are alerted to platform events. For Liferay DXP, this includes email, website, and mobile notifications for the following default applications:
@@ -39,5 +46,9 @@ In the Commerce context, notifications are supported for Channel events. See [St
 
 :::{grid-item-card} Creating Notification Templates
 :link: ./notifications/creating-notification-templates.md
+:::
+
+:::{grid-item-card} Using the Notification Queue
+:link: ./notifications/using-the-notification-queue.md
 :::
 ::::

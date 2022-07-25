@@ -1,10 +1,9 @@
 ---
 toc:
-  - ./social-tools/user-guide.md
-  - ./social-tools/developer-guide.md
-  - ./social-tools/apis.md
+- ./social-tools/user-guide.md
+- ./social-tools/developer-guide.md
+- ./social-tools/apis.md
 ---
-
 # ソーシャルツール
 
 ```{toctree}
@@ -16,7 +15,7 @@ social-tools/apis.md
 ```
 
 ユーザーガイド
-----------
+-------------
 
 ソーシャルツール
 

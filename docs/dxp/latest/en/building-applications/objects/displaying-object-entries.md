@@ -102,7 +102,7 @@ You can now select from the template when mapping Object entries to fragment fie
 
 ## Adding Entries to Navigation Menus
 
-Since published Objects are integrated with the info framework, you can add Object entries to navigation menus to provide quick access. See [Using the Navigation Menus Application](../../site-building/site-navigation/using-the-navigation-menus-application.md) for more information.
+Since Objects are integrated with the info framework, you can add Object entries to navigation menus to provide quick access. All published Objects are automatically listed as available sources for menu elements. See [Using the Navigation Menus Application](../../site-building/site-navigation/using-the-navigation-menus-application.md) for more information.
 
 ## Additional Information
 

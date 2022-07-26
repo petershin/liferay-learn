@@ -150,6 +150,39 @@ Add all [portal properties](../../reference/portal-properties.md), such as `port
 
 * `hibernate.jdbc.batch_size`: The JDBC batch size used to improve performance (set to _250_ by default). _This property may improve upgrade performance, but it is not required._
 
+* `upgrade.log.context.enabled`: Set to `true` to see upgrade related log lines that are tagged with an identifier.
+
+* `upgrade.log.context.name`: When utilizing `upgrade.log.context.enabled`, set a name for the identifier. For example, `upgrade.log.context.name=foo`.
+
+Note, `upgrade.log.contex.enabled` works for both the upgrade tool as well as upgrades upon startup. To use this feature, you must also copy the [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) file into `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` and rename the file to `portal-log4j-ext.xml`. Then find the appender definition:
+
+```
+<Appender name="CONSOLE" type="Console">
+	<Layout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m%n" type="PatternLayout" />
+</Appender>
+```
+
+Change the definition to the following. Note the added `%X` which tells Log4j to print the thread context information.
+
+```
+<Appender name="CONSOLE" type="Console">
+	<Layout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m %X%n" type="PatternLayout" />
+</Appender>
+```
+
+Here are some example log lines that include a tag for upgrade related lines:
+
+```
+...
+2022-07-26 20:56:15.966 INFO  [main][PortalUpgradeProcess:174] Upgrading com.liferay.portal.upgrade.PortalUpgradeProcess {foo=foo}
+2022-07-26 20:56:15.969 INFO  [main][UpgradeProcess:98] Upgrading com.liferay.portal.upgrade.v7_4_x.UpgradeAddress {foo=foo}
+2022-07-26 20:56:18.765 INFO  [main][UpgradeProcess:113] Completed upgrade process com.liferay.portal.upgrade.v7_4_x.UpgradeAddress in 2797 ms {foo=foo}
+...
+2022-07-26 20:56:38.611 INFO  [main][BaseDB:716] Dropping stale indexes {foo=foo}
+2022-07-26 20:56:38.615 INFO  [main][BaseDB:786] drop index IX_60C8634C on Repository {foo=foo}
+...
+```
+
 #### Example Upgrade Configurations
 
 Here are example upgrade configuration files that you can customize and copy into `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client/`:

@@ -20,7 +20,7 @@ To import an Order from a CSV file:
 
 1. Create a new Order and click on the 3-dot icon (![3-dot icon](../../images/icon-actions.png)) at the bottom right and select *Import from CSV*.
 
-   ![Click on Import from CSV to import Orders from a CSV file.](./using-order-importer/images/02.png)
+   ![You can use the Import from CSV option to import Orders from a CSV file.](./using-order-importer/images/02.png)
 
 1. Click *Select File* and choose the CSV file you want to import. You can also download a template file by clicking on *Download Template*.
 
@@ -38,7 +38,7 @@ You can have Products in your wishlist that you want to add to an Order quickly.
 
 1. Select *Import from Wish Lists* and select the desired wishlist.
 
-   ![Click on Import from Wish Lists to import Orders from a wishlist.](./using-order-importer/images/05.png)
+   ![You can use the Import from Wish Lists option to import Orders from a wishlist.](./using-order-importer/images/05.png)
 
 1. Click *Select* to preview the items in your Order and click *Import* to add them to your Order.
 
@@ -52,7 +52,7 @@ You can also import an Order from your past Orders.
 
 1. Select *Import from Past Orders* and select the appropriate Order.
 
-   ![Click on Import from Past Orders to import Orders from a past Order.](./using-order-importer/images/06.png)
+   ![You can use the Import from Past Orders option to import Orders from a past Order.](./using-order-importer/images/06.png)
 
 1. Click *Select* to preview the items in your Order and click *Import* to add them to your Order.
 
@@ -64,8 +64,8 @@ You can change the default CSV separator and the requested delivery date format 
 
 **Default CSV Separator:** Open the Global Menu (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *System Settings*. Click on *Orders* and select *Order Importer Types*. Change the value under *CSV Separator* and click *Save*.
 
-![Use the Default CSV Separator configuration to change the default CSV separator.](./using-order-importer/images/09.png)
+![Use the Default CSV Separator option to change the default CSV separator.](./using-order-importer/images/09.png)
 
 **Requested Delivery Date Format:** Open the Global Menu (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings*. Click on *Orders* and select *Order Importer Date Format Configuration*. Change it to the desired format and click *Save*.
 
-![Use the Requested Delivery Date Format configuration to change the default Requested Delivery Date format.](./using-order-importer/images/10.png)
+![Use the Requested Delivery Date Format option to change the default Requested Delivery Date format.](./using-order-importer/images/10.png)

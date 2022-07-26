@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4 U34+ and GA34+`
 
-With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, and User.
+With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, and User. Liferay also provides the Postal Address Object for storing address information and relating it to other Objects.
 
 ![Extend system services integrated with the Objects Framework.](./extending-system-objects/images/01.png)
 

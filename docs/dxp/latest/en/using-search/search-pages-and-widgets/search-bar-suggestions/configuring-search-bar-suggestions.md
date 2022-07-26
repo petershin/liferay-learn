@@ -12,6 +12,8 @@ The user types search keywords into the Search Bar as usual. The keywords are in
 
 If Search Bar Suggestions is enabled in [System or Instance Settings](#search-bar-suggestions-configuration-scope), you can configure Search Suggestions at the Widget [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md).
 
+The primary way to configure Search Bar Suggestions is using the Search Bar Widget's configuration.
+
 ![Use the Suggestions Configuration of the Search Bar widget's configuration screen.](./configuring-search-bar-suggestions/images/02.png)
 
 **Enable Suggestions:** Suggestions are enabled by default. Uncheck the checkbox to turn off suggestions.
@@ -32,10 +34,6 @@ LES Blueprints users can choose to use a Blueprint to control the Search Bar Sug
 
 ## Configuring Search Bar Suggestions in the Control Panel
 
-/`contributorName`
-/`displayGroupName`
-/`size`
-
 There are three Control Panel configuration entries that can affect Search Bar Suggestions:
 
 1. Service Access Policies
@@ -44,20 +42,40 @@ There are three Control Panel configuration entries that can affect Search Bar S
 
 ### Configuring the Suggestions Service Access Policy
 
-If you disable the SAP, guests will not see suggestions
+[Service Access Policies](../../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md#understanding-service-access-policies) control access to Liferay's services. The policy for search bar suggestions is enabled by default, allowing unauthenticated users to access the REST service endpoint that returns the suggestions. In short, it enables search bar suggestions for guest users as they type in the search bar.
+
+To configure the Service Access Policy,
+
+1. Open the Global Menu &rarr; Control Panel &rarr; Service Access Policy (in the Security section).
+
+1. Click the _SEARCH_SUGGESTIONS_ entry.
+
+If you disable the policy, guests will not see suggestions, even if suggestions is enabled in the widget configuration.
 
 ### Configuring the Suggestions REST Endpoint 
 
+The ability to call the REST endpoint that provides the Search Bar Suggestions functionality can be disabled if necessary, using System or Instance Settings.
+
+To configure the Search Suggestions endpoint,
+
+1. Go to System or Instance Settings in the Global Menu &rarr; Control Panel &rarr; Configuration section.
+
+1. In the Platform &rarr; Search category, open the Search Suggestions entry.
+
+1. There's just one setting: Enabled.
+
+When disabled, no calls to the required endpoint can be made: thus, none of the other configurations for Search Bar Suggestions are taken into consideration. In fact, the Search Bar Widget configuration will not display the Search Bar Suggestions settings. The feature is entirely disabled throughout the system or instance.
+
 ### Configuring Suggestions with the Search Bar
 
-You can configure Search Bar Suggestions defaults at the System and Instance [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md).
+Most configuration of Search Bar Suggestions will occur at the widget scope. In addition to the Search Bar widget's configuration, you can configure the Search Bar Suggestions defaults at the System and Instance [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md).
 
 ![Configure Search Bar Suggestions at the Instance or System scope.](./configuring-search-bar-suggestions/images/03.png)
 
-Enable or disable Search Bar Suggestions at the System, Instance, or Widget [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md):
+It's important to understand what happens when you enable or disable Search Bar Suggestions at the System, Instance, or Widget [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md):
 
 * If Search Bar Suggestions is disabled in System Settings, the default for all Instances is _disabled_. 
 * If Search Bar Suggestions is disabled in Instance Settings, the Suggestions settings don't appear in the Search Bar widget configuration.
 * If Search Bar Suggestions is enabled in Instance Settings, it can still be disabled in the Search Bar widget configuration.
 
-The other settings work according to Liferay's [configuration scope paradigm](../../../system-administration/configuring-liferay/understanding-configuration-scope.md): settings at higher scopes like System and Instance set the defaults, whereas the more granular scope overrides those defaults (like the Widget scope).
+The other settings work according to Liferay's [configuration scope paradigm](../../../system-administration/configuring-liferay/understanding-configuration-scope.md): settings at higher scopes like System and Instance set the defaults, whereas the more granular Widget scope can override those defaults.

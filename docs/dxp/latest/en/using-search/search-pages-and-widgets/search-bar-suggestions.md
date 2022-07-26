@@ -18,11 +18,7 @@ Liferay's Search Bar Suggestions provides a functionality also sometimes known a
 
 ![As you type, search results appear in a drop-down list.](./search-bar-suggestions/images/01.png)
 
-To learn how to use and configure Search Bar Suggestions, read 
+To learn how to use and configure Search Bar Suggestions, read [Configuring Search Bar Suggestions](./search-bar-suggestions/configuring-search-bar-suggestions.md)
 
-- [Configuring Search Bar Suggestions](./search-bar-suggestions/configuring-search-bar-suggestions.md)
-
-To use [Search Blueprints](../liferay-enterprise-search/search-experiences.md) to control the query used in Search Bar Suggestions, read
-
-- [Search Bar Suggestions Blueprints](./search-bar-suggestions/search-bar-suggestions-blueprints.md)
+To use [Search Blueprints](../liferay-enterprise-search/search-experiences.md) to control the query used in Search Bar Suggestions, read [Search Bar Suggestions Blueprints](./search-bar-suggestions/search-bar-suggestions-blueprints.md)
 

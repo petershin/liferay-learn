@@ -20,6 +20,7 @@ order-management/shipments.md
 order-management/order-types.md
 order-management/order-rules.md
 order-management/terms-and-conditions.md
+order-management/order-importer.md
 ```
 
 ```{raw} html

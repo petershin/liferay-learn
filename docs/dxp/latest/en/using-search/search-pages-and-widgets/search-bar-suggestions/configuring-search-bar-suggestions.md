@@ -6,13 +6,13 @@ Search Bar Suggestions adds _search as you type_ functionality to Liferay's Sear
 
 ![Select a result from the drop-down list or execute a search as usual.](./configuring-search-bar-suggestions/images/01.gif)
 
-The user types search keywords into the Search Bar as usual. The keywords are ingested by Liferay and sent to the search engine; results are returned in a drop-down list. Continuing to type causes additional queries to be sent. You can click one of the results from the list or execute the search as usual, clicking the magnifying glass icon or the Enter key to execute the search and view the results in the Search Results Widget.
+The user types search keywords into the Search Bar as usual. The keywords are ingested by Liferay and sent to the search engine; results are returned in a drop-down list. Continuing to type causes additional queries to be sent. You can click one of the results from the list or execute the search as usual, clicking the magnifying glass icon or the Enter key to execute the search and view the results in the Search Results widget.
 
 ## Configuration Options
 
-If Search Bar Suggestions is enabled in [System or Instance Settings](#search-bar-suggestions-configuration-scope), you can configure Search Suggestions at the Widget [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md).
+If Search Bar Suggestions is enabled in [Instance Settings](#search-bar-suggestions-configuration-scope), you can configure Search Suggestions at the widget [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md).
 
-The primary way to configure Search Bar Suggestions is using the Search Bar Widget's configuration.
+The primary way to configure Search Bar Suggestions is using the Search Bar widget's configuration.
 
 ![Use the Suggestions Configuration of the Search Bar widget's configuration screen.](./configuring-search-bar-suggestions/images/02.png)
 
@@ -64,13 +64,13 @@ To configure the Search Suggestions endpoint,
 
 1. There's just one setting: Enabled.
 
-When disabled, no calls to the required endpoint can be made: thus, none of the other configurations for Search Bar Suggestions are taken into consideration. In fact, the Search Bar Widget configuration will not display the Search Bar Suggestions settings. The feature is entirely disabled throughout the system or instance.
+When disabled, no calls to the required endpoint can be made: thus, none of the other configurations for Search Bar Suggestions are taken into consideration. In fact, the Search Bar widget configuration will not display the Search Bar Suggestions settings. The feature is entirely disabled throughout the system or instance.
 
 ### Configuring Suggestions with the Search Bar
 
-Most configuration of Search Bar Suggestions will occur at the widget scope. In addition to the Search Bar widget's configuration, you can configure the Search Bar Suggestions defaults at the System and Instance [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md).
+Most configuration of Search Bar Suggestions will occur at the widget scope. In addition to the Search Bar widget's configuration, you can configure the Search Bar Suggestions defaults at the system and instance [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md).
 
-![Configure Search Bar Suggestions at the Instance or System scope.](./configuring-search-bar-suggestions/images/03.png)
+![Configure Search Bar Suggestions at the instance or system scope.](./configuring-search-bar-suggestions/images/03.png)
 
 It's important to understand what happens when you enable or disable Search Bar Suggestions at the system, instance, or widget [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md):
 

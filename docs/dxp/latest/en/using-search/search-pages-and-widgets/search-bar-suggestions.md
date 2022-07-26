@@ -14,7 +14,7 @@ search-bar-suggestions/search-bar-suggestions-blueprints.md
 
 {bdg-secondary}`7.4 U36+ and GA36+`
 
-Liferay's Search Bar Suggestions provides a functionality also sometimes known as _search as you type_. As you type search keywords into the Search Bar widget, the query is processed by the search engine and results are returned in a drop-down list. You can either click one of the results from the list or execute the search as usual, clicking the magnifying glass icon or the Enter key to execute the search and view the results in the Search Results Widget.
+Liferay's Search Bar Suggestions provides a functionality also sometimes known as _search as you type_. As you type search keywords into the Search Bar widget, the query is processed by the search engine and results are returned in a drop-down list. You can either click one of the results from the list or execute the search as usual, clicking the magnifying glass icon or the Enter key to execute the search and view the results in the Search Results widget.
 
 ![As you type, search results appear in a drop-down list.](./search-bar-suggestions/images/01.png)
 

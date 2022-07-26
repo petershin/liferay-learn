@@ -72,6 +72,10 @@ For instance, if upgrading to Liferay Commerce 2.0.7 - upgrade Liferay DXP 7.1 t
 
 When upgrading from Commerce 2.0.7 to 2.1.3, 2.2.0 or 2.2.1, you must first upgrade to Commerce 2.1.0. Commerce versions 2.1.3+ only support Liferay DXP 7.1.x and Commerce versions 2.2.0+ only support Liferay DXP 7.2.x.
 
+```{note}
+Once you upgrade to Liferay DXP 7.1 FP 17+/Commerce 2.1.0 or Liferay DXP 7.2 FP5/Commerce 2.1.0, you can upgrade to other target versions including Liferay DXP 7.4 that comes bundles with Commerce 4.0.
+```
+
 ### Applying the Appropriate Fix Pack
 
 {bdg-primary}`Subscription`

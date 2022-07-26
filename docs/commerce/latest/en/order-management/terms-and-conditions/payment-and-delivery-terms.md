@@ -1,6 +1,6 @@
 # Payment and Delivery Terms
 
-{bdg-secondary}`Available DXP 7.4 U16+/GA16+`
+{bdg-secondary}`Available Liferay DXP 7.4 U16+/GA16+`
 
 ## Payment Terms
 

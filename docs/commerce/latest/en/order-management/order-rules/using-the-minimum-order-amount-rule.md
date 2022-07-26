@@ -1,6 +1,6 @@
 # Using the Minimum Order Amount Rule
 
-{bdg-secondary}`Available DXP 7.4 U1+/GA5+`
+{bdg-secondary}`Available Liferay DXP 7.4 U1+/GA5+`
 
 Because of the cost to fulfill an order, you may want to accept only orders above a certain amount. You can do this through Order Rules by setting a minimum order amount below which customer checkout is prevented. 
 

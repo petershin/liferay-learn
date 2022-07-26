@@ -1,5 +1,7 @@
 # Using Order Types
 
+{bdg-secondary}`Available Liferay DXP 7.4 U4+/GA8+`
+
 To support the example scenario of stock and urgent orders, you can create two Order Types. Stock orders have regular pricing, and urgent orders incur a surcharge.
 
 ```{important}

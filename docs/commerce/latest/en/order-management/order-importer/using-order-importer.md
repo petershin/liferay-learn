@@ -1,5 +1,7 @@
 # Using Order Importer
 
+{bdg-secondary}`Available Liferay DXP 7.4 U1+/GA5+`
+
 You can create a new Order on a Minium site by clicking on the Account Selector from the top right and selecting *Create New Order*. You can also do this by going to the *Pending Orders* screen and clicking on *Add Order*.
 
 ![Create a new Order by clicking on the Create New Order button or the Add Order button.](./using-order-importer/images/01.png)

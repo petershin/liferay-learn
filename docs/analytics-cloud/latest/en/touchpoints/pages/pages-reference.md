@@ -1,8 +1,9 @@
 # Pages Reference
 
-The data displayed for [Page Analytics](./pages.md) is based on [Default Events](../../workspace-data/definitions/definitions-for-events.md#default-events) and [Event Attributes](../../workspace-data/definitions/definitions-for-event-attributes.md). The following are the specific events and event attributes related to pages:
+The data displayed for [Page Analytics](./pages.md) is based on [Default Events](../../workspace-data/definitions/definitions-for-events.md#default-events) and [Event Attributes](../../workspace-data/definitions/definitions-for-event-attributes.md). The following events and event attributes are related to pages:
 
 ## Page Events
+
 * `pageDepthReached` (relevant event attribute - `depth`)
   * Event fires when a user scrolls the content
   * Used to estimate the level of interest or coverage of content by how far the user scrolls
@@ -17,7 +18,7 @@ The data displayed for [Page Analytics](./pages.md) is based on [Default Events]
   * Used to indicate that a page was read
 * `pageViewed` (relevant event attribute - `page`): 
   * Event fires when a page is visited (i.e. a page has loaded and the user stays to view the page)
-  * Used to indicated that a page was viewed
+  * Used to indicate that a page was viewed
 * `ctaClicked` (relevant event attribute - `elementId`): 
   * Event fires when a user clicks on the target element
   * Used to track if a call-to-action element was clicked

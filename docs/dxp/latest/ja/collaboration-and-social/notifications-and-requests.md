@@ -1,10 +1,9 @@
 ---
 toc:
-  - ./notifications-and-requests/user-guide.md
-  - ./notifications-and-requests/developer-guide.md
-  - ./notifications-and-requests/apis.md
+- ./notifications-and-requests/user-guide.md
+- ./notifications-and-requests/developer-guide.md
+- ./notifications-and-requests/apis.md
 ---
-
 # 通知とリクエスト
 
 ```{toctree}
@@ -16,7 +15,7 @@ notifications-and-requests/apis.md
 ```
 
 ユーザーガイド
-----------
+--------------
 
 通知とリクエスト
 

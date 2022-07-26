@@ -21,10 +21,10 @@
 1. ［**Filter and Order**］ ドロップダウンメニューをクリックします。
 1. 以下から選択します。
 
-    ***All** ：デフォルトのオプション。 既読と未読の両方の通知を表示します。
-    ***Unread** ：既読としてマークされていない通知を表示します。 未読の通知は、通知の左側にある青い境界線で示されます。
-    ***Read** ：既読としてマークされた通知を表示します。
-    ***Date** ：通知を日付順に並べ替えます。
+    * **All** ：デフォルトのオプション。 既読と未読の両方の通知を表示します。
+    * **Unread** ：既読としてマークされていない通知を表示します。 未読の通知は、通知の左側にある青い境界線で示されます。
+    * **Read** ：既読としてマークされた通知を表示します。
+    * **Date** ：通知を日付順に並べ替えます。
 
       ![［Filter and Order］メニュー](./managing-notifications-and-requests/images/03.png)
 
@@ -45,9 +45,9 @@
 
 1. ［**Filter and Order**］ ドロップダウンメニューの横にあるチェックボックスを選択します。 これにより、すべての通知メッセージが選択されます。
 1. いくつかのアイコンが表示されます：
-    ***既読としてマーク**（![Open Envelope](./managing-notifications-and-requests/images/icon-envelope-open.png)）
-    ***未読としてマーク**（![Closed Envelope](./managing-notifications-and-requests/images/icon-envelope-closed.png)）
-    ***削除**（![Delete Button](./managing-notifications-and-requests/images/icon-delete.png)）
+    * **既読としてマーク**（![Open Envelope](./managing-notifications-and-requests/images/icon-envelope-open.png)）
+    * **未読としてマーク**（![Closed Envelope](./managing-notifications-and-requests/images/icon-envelope-closed.png)）
+    * **削除**（![Delete Button](./managing-notifications-and-requests/images/icon-delete.png)）
 
     ![複数の通知ステータスの管理](./managing-notifications-and-requests/images/05.png)
 

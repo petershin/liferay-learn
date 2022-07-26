@@ -1,10 +1,9 @@
 ---
 toc:
-  - ./user-guide/mentioning-users.md
-  - ./user-guide/managing-notifications-and-requests.md
-  - ./user-guide/configuring-mentions.md
+- ./user-guide/mentioning-users.md
+- ./user-guide/managing-notifications-and-requests.md
+- ./user-guide/configuring-mentions.md
 ---
-
 # ユーザーガイド
 
 ```{toctree}

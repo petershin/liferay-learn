@@ -13,8 +13,8 @@
 1. ［**Content & Data**］ &rarr; ［**Wiki**］ の順にクリックします。
 1. **Wikiの追加**（![Add](../../images/icon-add.png)）ボタンをクリックします。
 1. 次のように入力します：
-    ***Name** ：New Node
-    ***Description** ：これはDXPゲストのwikiサイトの新しいノードです。
+    **Name** ：New Node
+    **Description** ：これはDXPゲストのwikiサイトの新しいノードです。
 1. ［**保存**］ をクリックします。
 
 新しいノードが作成されました。 同じサイトに複数のノードを作成できます。

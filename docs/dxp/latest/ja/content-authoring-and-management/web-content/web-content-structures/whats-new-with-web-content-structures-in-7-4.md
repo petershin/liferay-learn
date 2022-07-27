@@ -12,7 +12,7 @@ Data Engineへの移行に伴い、フィールドタイプの追加と改良が
 
 - リストから選択」フィールドのオプションをアルファベット順に並べることができます（「リストから選択」フィールドの詳細設定を使用します）。
 - Numeric フィールドを整数または10進数のフィールドとして設定する。
-- グリッドフィールドは、「Webコンテンツ」と「ドキュメントとメディア」の新しいフィールドタイプです。 [Forms Field Type Reference](../../../process-automation/forms/creating-and-managing-forms/forms-field-types-reference.md)を参照してください。
+- グリッドフィールドは、「Webコンテンツ」と「ドキュメントとメディア」の新しいフィールドタイプです。 [フォーム項目タイプのリファレンス](../../../process-automation/forms/creating-and-managing-forms/forms-field-types-reference.md)を参照してください。
 - HTMLフィールドは、便利なツールバーを備えたリッチテキストフィールドに変更されました。
 
 ```{warning}
@@ -54,7 +54,7 @@ StructureのJSONをエクスポートします。
 1. サイトメニュー &rarr; コンテンツとデータ &rarr; Webコンテンツにアクセスします。
 1. _［ストラクチャー］_タブをクリックします。
 1. 既存の構造体がない場合は、構造体を作成し、保存します。
-1. メインストラクチャのリストビューで、Actions メニューを開き、 _Export as JSON_をクリックします。
+1. メインストラクチャのリストビューで、Actions メニューを開き、 _Export_ as JSON_をクリックします。
 
 既存のStructureにStructure JSONをインポートする（つまり、既存のStructure JSONを上書きする）。
 
@@ -70,7 +70,7 @@ StructureのJSONをエクスポートします。
 1. サイトメニュー &rarr; コンテンツとデータ &rarr; Webコンテンツにアクセスします。
 1. _［ストラクチャー］_タブをクリックします。
 1. 画面右上の「Webコンテンツ」のオプションメニューを開く。
-1. _構造体のインポート_をクリックします。
+1. _構造体のインポート_ をクリックします。
 
    ![JSON構造体ファイルをインポートする。](./whats-new-with-web-content-structures-in-7-4/images/02.png)
 

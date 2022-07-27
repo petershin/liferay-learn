@@ -2,7 +2,7 @@
 toc:
 - ./developer-guide/apis.md
 ---
-- ./# デベロッパーガイド
+## デベロッパーガイド
 
 ```{toctree}
 :maxdepth: 2

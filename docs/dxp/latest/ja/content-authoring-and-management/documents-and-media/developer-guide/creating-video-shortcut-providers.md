@@ -2,15 +2,15 @@
 
 > Liferay DXP 7.4以降で利用可能
 
-デフォルトでは、Liferayの外部ビデオショートカットは、[YouTube](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/YouTubeDLVideoExternalShortcutProvider.java)、[Vimeo](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/VimeoDLVideoExternalShortcutProvider.java)、[Facebook](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/FacebookDLVideoExternalShortcutProvider.java)、および[Twitch](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/TwitchDLVideoExternalShortcutProvider.java)をサポートしています。 ただし、この機能を拡張して、他のビデオソースをサポートすることができます。
+デフォルトでは、Liferayの外部ビデオショートカットは、 [YouTube](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/YouTubeDLVideoExternalShortcutProvider.java) 、 [Vimeo](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/VimeoDLVideoExternalShortcutProvider.java) 、 [Facebook](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/FacebookDLVideoExternalShortcutProvider.java) 、および [Twitch](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/TwitchDLVideoExternalShortcutProvider.java) をサポートしています。 ただし、この機能を拡張して、他のビデオソースをサポートすることができます。
 
 次の手順に従って、独自のビデオショートカットプロバイダーを作成します。
 
 1. **OSGIコンポーネントアノテーション**：`@Component`アノテーションを使用して、OSGiフレームワーク内でプロバイダーを`DLVideoExternalShortcutProvider.class`サービスとして宣言します。
 
-1. [**`DLVideoExternalShortcutProvider`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/provider/DLVideoExternalShortcutProvider.java)：`DLVideoExternalShortcutProvider`インターフェースを実装します。
+1. [**`DLVideoExternalShortcutProvider`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/provider/DLVideoExternalShortcutProvider.java) ：`DLVideoExternalShortcutProvider`インターフェースを実装します。
 
-1. **インターフェイスメソッドのオーバーライド**：インターフェイスの`getDLVideoExternalShortcut()`メソッドをオーバーライドします。 このメソッドは、[`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java)インターフェイスのインスタンスを作成し、URL文字列を受け取ります。 実装において次のことが実行されるか確認してください。
+1. **インターフェイスメソッドのオーバーライド**：インターフェイスの`getDLVideoExternalShortcut()`メソッドをオーバーライドします。 このメソッドは、 [`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java) インターフェイスのインスタンスを作成し、URL文字列を受け取ります。 実装において次のことが実行されるか確認してください。
 
    * 受信したURLが定義済みのURLパターンと一致するかどうかを確認します。
    * URLがパターンに一致しない場合、プログラムは`null`を返す必要があります。 Liferayは、一致するものを探して他の利用可能なプロバイダーをチェックします。
@@ -27,7 +27,7 @@
    * `getThumbnailURL()`：このメソッドを使用して、ビデオのサムネイルを取得します。デフォルト値は`null`です。
    * `getTitle()`：このメソッドを使用して、元のビデオのタイトルを取得します。デフォルト値は`null`です。
 
-以下は、[外部のビデオショートカットプロバイダーのサンプル](liferay-g9b6.zip)で、独自に実装するための最低限の要件を示しています。 より複雑な例については、[既存のプロバイダー](https://github.com/liferay/liferay-portal/tree/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider)を参照してください。
+以下は、 [外部のビデオショートカットプロバイダーのサンプル](liferay-g9b6.zip) で、独自に実装するための最低限の要件を示しています。 より複雑な例については、 [既存のプロバイダー](https://github.com/liferay/liferay-portal/tree/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider) を参照してください。
 
 ## サンプルビデオプロバイダーのデプロイ
 ```{include} /_snippets/run-liferay-portal.md

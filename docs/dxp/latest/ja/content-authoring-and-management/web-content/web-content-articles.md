@@ -1,9 +1,8 @@
 ---
 toc:
-  - ./web-content-articles/adding-a-basic-web-content-article.md
-  - ./web-content-articles/filtering-and-sorting-web-content-articles.md
+- ./web-content-articles/adding-a-basic-web-content-article.md
+- ./web-content-articles/filtering-and-sorting-web-content-articles.md
 ---
-
 # Webコンテンツの記事
 
 ```{toctree}

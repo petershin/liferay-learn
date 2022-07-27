@@ -1,9 +1,8 @@
 ---
 toc:
-  - ./videos/creating-external-video-shortcuts.md
-  - ./videos/embedding-videos-into-liferay-assets-and-pages.md
+- ./videos/creating-external-video-shortcuts.md
+- ./videos/embedding-videos-into-liferay-assets-and-pages.md
 ---
-
 # ビデオ
 
 ```{toctree}

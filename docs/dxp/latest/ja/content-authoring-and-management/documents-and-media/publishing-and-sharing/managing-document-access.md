@@ -1,12 +1,11 @@
 ---
 toc:
-  - ./managing-document-access/sharing-documents-with-other-users.md
-  - ./managing-document-access/enabling-and-configuring-sharing.md
-  - ./managing-document-access/managing-document-changes-with-checkout.md
-  - ./managing-document-access/permissions-and-documents.md
-  - ./managing-document-access/documents-and-media-permissions-reference.md
+- ./managing-document-access/sharing-documents-with-other-users.md
+- ./managing-document-access/enabling-and-configuring-sharing.md
+- ./managing-document-access/managing-document-changes-with-checkout.md
+- ./managing-document-access/permissions-and-documents.md
+- ./managing-document-access/documents-and-media-permissions-reference.md
 ---
-
 # ドキュメントアクセスの管理
 
 ```{toctree}

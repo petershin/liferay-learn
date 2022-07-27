@@ -4,26 +4,18 @@
 
 Liferayは、Webコンテンツの記事を翻訳するための統合ツールを提供しており、世界中のユーザーのために魅力的でローカライズされたコンテンツを作成することができます。 これらのツールを使って、Webコンテンツを手動で翻訳したり、翻訳をXLIFFファイルとしてインポートしたりすることができます。
 
-</a> 必要であれば、カスタムワークフロー
-を有効にして、翻訳のレビューと公開プロセスを指示することができます。</p> 
-
-
+必要であれば、[カスタムワークフロー
+を有効](./enabling-workflows-for-translations.md)にして、翻訳のレビューと公開プロセスを指示することができます。 
 
 ```{note}
 翻訳可能な言語は、インスタンスのローカライズ設定により決定されます。 詳しくは、[Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) と [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) を参照してください。
 ```
 
-
-
-
 ## 手動でコンテンツを翻訳する
-
-
 
 ```{note}
 手動でWebコンテンツを翻訳するには、ユーザーが資産のいずれかの*ビュー*と*更新*のアクセス権を持っている必要がありますまたは1つ以上の言語のための翻訳アクセス権。 詳しくは、[翻訳に関する権限の管理](./managing-permissions-for-translation.md)をご覧ください。
 ```
-
 
 Webコンテンツを手動で翻訳するには、次の手順に従います。
 
@@ -38,15 +30,12 @@ Webコンテンツを手動で翻訳するには、次の手順に従います�
    ![translateを選択すると、翻訳インターフェースにリダイレクトされます。](./translating-web-content/images/01.png)
 
 1. 翻訳したい言語（ *）* を選択します。 
-   
-   
 
    ```{important}
    コンテンツの更新権限を持つユーザーは、元のテキストを任意の言語に翻訳できます。
 
    翻訳権限を持つユーザーは、元のテキストを権限が割り当てられている言語にのみ翻訳できます。
    ```
-
 
 ![翻訳したい言語を選択します。](./translating-web-content/images/02.png)
 
@@ -57,26 +46,18 @@ Webコンテンツを手動で翻訳するには、次の手順に従います�
    または、*[下書きとして保存]*をクリックして、翻訳を保存して後で公開することもできます。
 
 
-
 ## 翻訳のエクスポートとインポート
-
-
 
 ```{note}
 コンテンツページの体験を手動で翻訳するには、ユーザーはコンテンツページの*表示*および*更新*権限、または1つ以上の言語に対する翻訳権限のいずれかを持っている必要があります。 詳しくは、[翻訳権限の管理](./managing-translation-permissions.md)をご覧ください。
 ```
 
-
 Liferayでは、翻訳用のWebコンテンツを `.xliff` または `.xlf` ファイルとしてエクスポートすることが可能です。 これらのファイルを翻訳者に送り、翻訳を一緒に `.zip` ファイルとして、または個別に `.xliff` または `.xlf` ファイルとしてインポートすることができます。
-
 
 
 ```{important}
 Liferay は XLIFF 1.2 と 2.0 の両方のファイルをサポートしています。 ただし、これらのフォーマットが提供するすべての機能・性能をサポートしているわけではありません。
 ```
-
-
-
 
 ### 翻訳用のコンテンツのエクスポート
 
@@ -104,8 +85,6 @@ Liferay は XLIFF 1.2 と 2.0 の両方のファイルをサポートしてい�
 
 Liferay は、選択された各言語の XLIFF ファイルを含む ZIP アーカイブを生成します。 これらのファイルは、対応する翻訳ソフトウェアで使用することができます。
 
-
-
 ### コンテンツ翻訳のインポート
 
 以下の手順で行ってください。
@@ -124,12 +103,10 @@ Liferay は、選択された各言語の XLIFF ファイルを含む ZIP アー
    
    ![インポートしたい翻訳ファイルを選択します。](./translating-web-content/images/08.png) 
    
-   
 
    ```{important}
-   Liferayは[Export for Translation](#exporting-content-for-translation) アクションで作成したXLIFFファイルのインポートをサポートしていますが、他の手段で作成したファイルのインポートが成功することは保証できません。
+   Liferayは [Export for Translation](#exporting-content-for-translation) アクションで作成したXLIFFファイルのインポートをサポートしていますが、他の手段で作成したファイルのインポートが成功することは保証できません。
    ```
-
 
 1. *［Publish］*をクリックします。
    
@@ -142,11 +119,9 @@ Liferay は、選択された各言語の XLIFF ファイルを含む ZIP アー
    ![インポート中にエラーが発生した場合、Liferayは失敗したファイルを通知し、ダウンロード可能なCSVエラーレポートを提供します。](./translating-web-content/images/10.png)
 
 
-
 ## サードパーティーのサービスを利用したウェブコンテンツの翻訳
 
-[Google Cloud Translation](https://cloud.google.com/translate/docs/setup), [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html), または [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/)とLiferayの統合を有効にした場合、それらを使用してWebコンテンツを自動的に翻訳することが可能です。 詳しくは、 [Using Third Parties for Translation](./using-third-parties-for-translation.md) をご覧ください。
-
+[Google Cloud Translation](https://cloud.google.com/translate/docs/setup) , [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) , または [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/) とLiferayの統合を有効にした場合、それらを使用してWebコンテンツを自動的に翻訳することが可能です。 詳しくは、 [翻訳のための第三者機関の利用](./using-third-parties-for-translation.md) をご覧ください。
 
 
 ## 追加情報

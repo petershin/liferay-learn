@@ -1,6 +1,6 @@
 # ページのSEOとアクセシビリティを分析する
 
-Liferay DXP 7.4以降、ページ監査ツールを使用して、ページのSEOとアクセシビリティを調べることができます。 ページ監査ツールは[Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)サービスを使用して、Liferay DXPに特定の推奨事項を提供します。  このツールを使用すると、コンテンツ作成者は次のことができます。
+Liferay DXP 7.4以降、ページ監査ツールを使用して、ページのSEOとアクセシビリティを調べることができます。 ページ監査ツールは [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) サービスを使用して、Liferay DXPに特定の推奨事項を提供します。  このツールを使用すると、コンテンツ作成者は次のことができます。
 
 - ページが検索エンジンのインデックス作成と可視性のために最適化されていることを確認します。これにより、ページは検索結果で上位にランク付けされ、適切なオーディエンスにリーチできます。
 - ページがアクセシビリティのベストプラクティスに準拠しているかどうかを確認し、すべての個人の使いやすさと全体的なエクスペリエンスを向上させます。
@@ -33,7 +33,7 @@ SEOの問題：
 - 欠落している`img-alt`属性
 - 欠落している`input-alt`属性
 
-ページ監査を実行した後、問題を修正するための実用的な情報とともに、各問題の説明を確認できます。 これらの各要素の詳細については、[Google Lighthouseのドキュメンテーション](https://web.dev/learn/#lighthouse)を参照してください。
+ページ監査を実行した後、問題を修正するための実用的な情報とともに、各問題の説明を確認できます。 これらの各要素の詳細については、 [Google Lighthouseのドキュメンテーション](https://web.dev/learn/#lighthouse) を参照してください。
 
 ## ページ監査ツールの構成
 
@@ -43,12 +43,12 @@ SEOの問題：
 
 ページ監査ツールはデフォルトで有効になっていますが、ページ監査を実行する前にツールの構成を完了する必要があります。 この構成には以下が必要です。
 
-- PageSpeed Insights APIキー。 Googleでは、PageSpeed Insightsを自動化された方法で使用し、1秒あたり複数のクエリを実行するために、このキーが必要です。 このAPIキーを作成するには、Googleドキュメンテーションの[Get Started with the PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started)を参照してください。
+- PageSpeed Insights APIキー。 Googleでは、PageSpeed Insightsを自動化された方法で使用し、1秒あたり複数のクエリを実行するために、このキーが必要です。 このAPIキーを作成するには、Googleドキュメンテーションの [Get Started with the PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started) を参照してください。
 - ページ監査の優先戦略。 デフォルトでは、ページ監査ツールはモバイル戦略を使用しますが、ページを分析するためにデスクトップ戦略を構成することもできます。 モバイル戦略には、小さな画面でコンテンツを監査するための追加のルールが含まれています。 選択した戦略はすべてのページ監査に適用されるため、ページのモバイルバージョンとデスクトップバージョンを監査する場合は、各監査戦略を個別に実行する必要があります。
 
 ![ページ監査ツールのAPIキーと監査戦略を構成します](./analyze-seo-and-accessibility-on-pages/images/01.png)
 
-ページ監査ツールを構成するには、Liferay DXPでGoogle PageSpeed Insights設定を構成します。 Liferay DXPの他の設定と同様に、さまざまなスコープでページ監査ツールを有効または無効にできます。 これらの構成設定にアクセスするには、管理者権限が必要です。 詳細は、 [Understanding Configuration Scope](../../system-administration/configuring-liferay/understanding-configuration-scope.md)を参照してください。
+ページ監査ツールを構成するには、Liferay DXPでGoogle PageSpeed Insights設定を構成します。 Liferay DXPの他の設定と同様に、さまざまなスコープでページ監査ツールを有効または無効にできます。 これらの構成設定にアクセスするには、管理者権限が必要です。 詳細は、 [設定スコープについて](../../system-administration/configuring-liferay/understanding-configuration-scope.md) を参照してください。
 
 ### 現在のサイトにページ監査ツールを構成する
 
@@ -88,7 +88,7 @@ SEOの問題：
    ![［ページ監査］ボタンをクリックして、新しいページ監査を開始します。](./analyze-seo-and-accessibility-on-pages/images/05.png)
 
    ```{note}
-   ページ監査をまだ構成していない場合は、［ページ監査］パネルで構成を完了するように求められます。 この場合は、*構成*をクリックして[構成を完了](#configuring-the-page-audit-tool)してください。
+   ページ監査をまだ構成していない場合は、［ページ監査］パネルで構成を完了するように求められます。 この場合は、*構成*をクリックして [構成を完了](#configuring-the-page-audit-tool) してください。
    ```
 
 1. ［ページ監査］パネルには、［ページ監査の開始］ボタンが表示されます。
@@ -123,13 +123,13 @@ SEOの問題：
 
 ## ページ監査パネルエラーのトラブルシューティング
 
-ページを監査する際のエラーを回避するには、有効な[Google PageSpeed Insights APIキーを構成](#configuring-the-page-audit-tool)し、監査するページにインターネットからアクセスできることを確認してください。
+ページを監査する際のエラーを回避するには、有効な [Google PageSpeed Insights APIキーを構成](#configuring-the-page-audit-tool) し、監査するページにインターネットからアクセスできることを確認してください。
 
 ### 一般的なエラー
 
 | エラー             | 説明                                                                                                                                                                                                                                                 |
 |:--------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| このAPIキーは無効です    | Google PageSpeed Insights APIキーが無効です。 エラーメッセージの*［APIキーを設定］*ボタンをクリックして、有効なAPIキーを構成します。 </br>APIキーを取得するには、Googleドキュメンテーションの[Get Started with the PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started)を参照してください。 |
+| このAPIキーは無効です    | Google PageSpeed Insights APIキーが無効です。 エラーメッセージの*［APIキーを設定］*ボタンをクリックして、有効なAPIキーを構成します。 </br>APIキーを取得するには、Googleドキュメンテーションの [Get Started with the PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started) を参照してください。 |
 | このページは監査できません   | 監査しようとしているページは、一般に公開されていません。                                                                                                                                                                                                                       |
 | 予期しないエラーが発生しました | これは一般的なエラーです。 ページ監査ツールが正しく構成されていること、および監査するページにインターネットからアクセスできることを確認してください。                                                                                                                                                                        |
 

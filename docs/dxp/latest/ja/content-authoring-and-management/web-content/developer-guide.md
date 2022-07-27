@@ -1,10 +1,9 @@
 ---
 toc:
-  - ./developer-guide/web-content-api-basics.md
-  - ./developer-guide/advanced-web-content-api.md
-  - ./developer-guide/managing-structures-and-templates-by-using-the-rest-api.md
+- ./developer-guide/web-content-api-basics.md
+- ./developer-guide/advanced-web-content-api.md
+- ./developer-guide/managing-structures-and-templates-by-using-the-rest-api.md
 ---
-
 # 開発者ガイド
 
 ```{toctree}

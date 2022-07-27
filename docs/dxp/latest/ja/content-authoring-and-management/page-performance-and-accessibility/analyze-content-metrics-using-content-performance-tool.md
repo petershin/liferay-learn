@@ -10,7 +10,7 @@
 コンテンツパフォーマンスメトリクスは、[デフォルトのエクスペリエンス](../../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md)でのみ使用できます。
 ```
 
-コンテンツの*［統計情報を表示］*（![View Metrics](../../images/icon-analytics.png)）オプションを使用して、コンテンツパフォーマンスツールにアクセスします。 このオプションは、[アプリケーションツールバー](../../getting-started/navigating-dxp.md#applications-bar)と[コンテンツダッシュボード](../content-dashboard/about-the-content-dashboard.md)にあります。 詳しくは、[コンテンツパフォーマンスツールの説明](./about-the-content-performance-tool.md)を参照してください。
+コンテンツの*［統計情報を表示］*（![View Metrics](../../images/icon-analytics.png)）オプションを使用して、コンテンツパフォーマンスツールにアクセスします。 このオプションは、 [アプリケーションツールバー](../../getting-started/navigating-dxp.md#applications-bar) と[コンテンツダッシュボード](../content-dashboard/about-the-content-dashboard.md)にあります。 詳しくは、[コンテンツパフォーマンスツールの説明](./about-the-content-performance-tool.md)を参照してください。
 
 コンテンツパフォーマンスツールには、次の3つの異なる領域があります。
 
@@ -30,7 +30,7 @@
 | 期間セレクター | 期間（過去7日間/過去30日間）を選択すると、グラフに選択した期間のデータが表示されます。                                          |
 | 公開日     | 公開日を表示します。 アセットをアセットの公開日よりも新しい表示ページテンプレートにリンクする場合、公開日は表示ページテンプレートの作成日に対応することに注意してください。 |
 
-コンテンツパフォーマンスツールの[エンゲージメント](#analyzing-content-engagement)領域および[トラフィックチャネル](#analyzing-traffic-channels)領域には、言語アイコンセレクターで選択された言語の統計が表示されます。 コンテンツが異なる言語にローカライズされている場合、各言語の統計情報を表示できます。
+コンテンツパフォーマンスツールの [エンゲージメント](#analyzing-content-engagement) 領域および [トラフィックチャネル](#analyzing-traffic-channels) 領域には、言語アイコンセレクターで選択された言語の統計が表示されます。 コンテンツが異なる言語にローカライズされている場合、各言語の統計情報を表示できます。
 
 ```{note}
 コンテンツが特定の言語に翻訳されていない場合でも、ユーザーがその言語のURLを使用してコンテンツにアクセスすると、その言語の統計を確認できます。

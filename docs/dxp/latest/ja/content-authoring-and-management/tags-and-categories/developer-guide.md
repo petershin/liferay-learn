@@ -1,9 +1,8 @@
 ---
 toc:
-  - ./developer-guide/categories-and-vocabulary-api-basics.md
-  - ./developer-guide/tags-api-basics.md
+- ./developer-guide/categories-and-vocabulary-api-basics.md
+- ./developer-guide/tags-api-basics.md
 ---
-
 # 開発者ガイド
 
 ```{toctree}

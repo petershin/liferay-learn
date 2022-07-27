@@ -105,7 +105,7 @@ Liferayは、選択された各エクスペリエンスのXLIFFファイルを�
    ![インポートしたい翻訳ファイルを選択します。](./translating-content-pages/images/06.png)
 
    ```{important}
-   Liferayは[Export for Translation](#exporting-pages-for-translation) アクションで作成したXLIFFファイルのインポートをサポートしていますが、他の手段で作成したファイルのインポートが成功することは保証できません。
+   Liferayは [Export for Translation](#exporting-pages-for-translation) アクションで作成したXLIFFファイルのインポートをサポートしていますが、他の手段で作成したファイルのインポートが成功することは保証できません。
    ```
 
 1. *［Publish］*をクリックします。
@@ -120,7 +120,7 @@ Liferayは、選択された各エクスペリエンスのXLIFFファイルを�
 
 ## サードパーティーサービスを利用したコンテンツページの翻訳
 
-[Google Cloud Translation](./using-third-parties-for-translation.md#enabling-google-cloud-translation), [Amazon Translate](./using-third-parties-for-translation.md#enabling-amazon-translate), または [Microsoft Translator](./using-third-parties-for-translation.md#enabling-microsoft-translator)とLiferayの統合を有効にした場合、それらを使用してWebコンテンツを自動的に翻訳することが可能です。 詳しくは、 [Using Third Parties for Translation](./using-third-parties-for-translation.md) をご覧ください。
+[Google Cloud Translation](./using-third-parties-for-translation.md#enabling-google-cloud-translation) , [Amazon Translate](./using-third-parties-for-translation.md#enabling-amazon-translate) , または [Microsoft Translator](./using-third-parties-for-translation.md#enabling-microsoft-translator) とLiferayの統合を有効にした場合、それらを使用してWebコンテンツを自動的に翻訳することが可能です。 詳しくは、 [翻訳のための第三者機関の利用](./using-third-parties-for-translation.md) をご覧ください。
 
 ## 追加情報
 

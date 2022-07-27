@@ -8,17 +8,17 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 次に、以下の手順に従います。
 
-1. [タグAPIの基本](./liferay-r7u9.zip)をダウンロードし、解凍します。
+1. [タグAPIの基本](./liferay-r7u9.zip) をダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
    ```
 
    ```bash
    unzip liferay-r7u9.zip
    ```
 
-1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
+1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 1. cURLスクリプトを使用して、サイトに新しいタグを追加します。 コマンドラインで、 `curl` フォルダに移動します。 サイトIDをパラメーターとして使用して、`Keyword_POST_ToSite.sh`スクリプトを実行します。
 
@@ -113,7 +113,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 他の例のJavaクラスはこれと類似していますが、異なる`KeywordResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、[KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java)を参照してください。
+サービスの詳細は、 [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`Keyword` RESTサービスを呼び出す例です。
@@ -159,7 +159,7 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 次のcURLまたはJavaコマンドを使用して、特定のタグを取得します。 `1234`をタグのIDに置き換えてください。
 
 ```{tip}
-``Keywords_GET_FromSite.[java|sh]``を使用して、サイトの``Keyword`` IDを取得します。
+`eywords_GET_FromSite.[java|sh]`を使用して、サイトの`Keyword` IDを取得します。
 ```
 
 ### Keyword_GET_ById.sh

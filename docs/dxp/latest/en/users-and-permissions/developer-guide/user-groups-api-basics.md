@@ -7,7 +7,7 @@ You can [Create and Manage User Groups](../user-groups/creating-and-managing-use
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+Then follow these steps:
 
 1. Download and unzip [User Groups API Basics](./liferay-y6f2.zip).
 
@@ -19,13 +19,13 @@ Then, follow these steps:
    unzip liferay-y6f2.zip
    ```
 
-1. Use the cURL script to add a new User Group to your instance. On the command line, navigate to the `curl` folder. Execute the `UserGroup_POST_ToInstance.sh` script.
+1. Use the cURL script to add a new user group to your instance. On the command line, navigate to the `curl` folder. Execute the `UserGroup_POST_ToInstance.sh` script.
 
    ```bash
    ./UserGroup_POST_ToInstance.sh
    ```
 
-   The JSON response shows a new User Group has been added:
+   The JSON response shows a new user group has been added:
 
    ```bash
    "description" : "",
@@ -36,9 +36,9 @@ Then, follow these steps:
 
    ```
 
-2. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *User Groups*. See that a new User Group has been added.
+2. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *User Groups*. See that a new user group has been added.
 
-   ![See that a new User Group has been added.](./user-groups-api-basics/images/01.png)
+   ![See that a new user group has been added.](./user-groups-api-basics/images/01.png)
 
 3. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
@@ -78,7 +78,7 @@ The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `UserGroup_POST_ToInstance.java` class adds a user group by calling the UserGroup-related service.
+The `UserGroup_POST_ToInstance.java` class adds a user group by calling the user-group-related service.
 
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/java/UserGroup_POST_ToInstance.java
    :dedent: 1
@@ -146,7 +146,7 @@ The Instance's `UserGroup` objects appear in JSON.
 
 ## Get a User Group
 
-Get a specific User Group with the following cURL or Java command.
+Get a specific user group with the following cURL or Java command.
 
 ```{tip}
 Use ``UserGroups_GET_FromInstance.[java|sh]`` to get instance ``User Group`` IDs.
@@ -186,7 +186,7 @@ The `UserGroup` fields appear in JSON.
 
 ## Patch a User Group
 
-Do a partial edit of an existing User Group with the following cURL and Java commands. Replace `1234` with your User Group's ID.
+Do a partial edit of an existing user group with the following cURL and Java commands. Replace `1234` with your User Group's ID.
 
 ### UserGroup_PATCH_ById.sh
 
@@ -220,7 +220,7 @@ Code:
 
 ## Put a User Group
 
-Completely overwrite an existing User Group with the following cURL and Java commands. Replace `1234` with your User Group's ID.
+Completely overwrite an existing user group with the following cURL and Java commands. Replace `1234` with your user group's ID.
 
 ### UserGroup_PUT_ById.sh
 

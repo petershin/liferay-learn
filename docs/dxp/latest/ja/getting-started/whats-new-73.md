@@ -84,13 +84,13 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 ### Webコンテンツに特化した翻訳エクスペリエンス
 
-[新しい翻訳UI](../content-authoring-and-management/web-content/translating-web-content/manually-translating-web-content.md)では、並べて表示するUIでプロセスを最適化し、コンテンツの翻訳がしやすくなります。 翻訳者は、許可された言語にのみ翻訳し、Liferayのワークフロープロセスにより、その翻訳を簡単にレビューすることができます。
+[新しい翻訳UI](../content-authoring-and-management/translating-pages-and-content/translating-web-content.md#manually-translating-content) では、並べて表示するUIでプロセスを最適化し、コンテンツの翻訳がしやすくなります。 翻訳者は、許可された言語にのみ翻訳し、Liferayのワークフロープロセスにより、その翻訳を簡単にレビューすることができます。
 
 ![新しい翻訳UIにより、翻訳プロセス全体が簡略化されています。](./whats-new-73/images/10.png)
 
 ### 翻訳対象のWebコンテンツのインポート/エクスポート
 
-翻訳会社やフリーランスの翻訳者を利用している場合は、翻訳するコンテンツを選択し、[翻訳の標準フォーマット](../content-authoring-and-management/web-content/translating-web-content/exporting-and-importing-translations.md)（XLIFF 1.2または2.0バージョンのいずれか）で必要な言語をエクスポートし、翻訳会社に送信することができます。 翻訳が終了したら、翻訳内容をインポートして、原文と共に保持できます。
+翻訳会社やフリーランスの翻訳者を利用している場合は、翻訳するコンテンツを選択し、 [翻訳の標準フォーマット](../content-authoring-and-management/translating-pages-and-content/translating-web-content.md#exporting-and-importing-translations) （XLIFF 1.2または2.0バージョンのいずれか）で必要な言語をエクスポートし、翻訳会社に送信することができます。 翻訳が終了したら、翻訳内容をインポートして、原文と共に保持できます。
 
 ![翻訳のエクスポートとインポートができます。](./whats-new-73/images/11.gif)
 
@@ -120,7 +120,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 ## コンテンツパフォーマンス
 
-> サブスクリプションが必要です。
+> 変更通知を受け取り（購読）が必要
 
 ここでは、何人の訪問者がコンテンツをすべて読んでいるかがわかります。 [コンテンツパフォーマンス解析](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md#content-performance-sidebar) は、コンテンツ作成者やマーケティング担当者が成功するコンテンツ戦略を立て、評価できるよう、関連するコンテンツを考慮して表示されます。
 
@@ -244,13 +244,13 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 > 変更通知を受け取り（購読）が必要
 
-[多要素認証](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA) では、ユーザーに複数の方法、または **要素** で本人確認を求めることで、より優れたセキュリティを実現します。 基本的なユーザー名とパスワードの組み合わせは、1つまたは複数のカスタマイズ可能な要素で強化されます。 これには、デフォルトのワンタイムパスワード（OTP）とカスタマイズ可能なIPアドレス、時間ベースのOTPが含まれています。また、システムに拡張性があるため、ユーザーが書きたい要素も使用できます。
+[多要素認証](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA) では、ユーザーに複数の方法、または _要素_ で本人確認を求めることで、より優れたセキュリティを実現します。 基本的なユーザー名とパスワードの組み合わせは、1つまたは複数のカスタマイズ可能な要素で強化されます。 これには、デフォルトのワンタイムパスワード（OTP）とカスタマイズ可能なIPアドレス、時間ベースのOTPが含まれています。また、システムに拡張性があるため、ユーザーが書きたい要素も使用できます。
 
 ### インスタンスレベルでのSAMLの設定
 
 今回の変更により、証明書の取り扱いを含むインスタンスレベルで[SAML](../installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml.md)を設定できるようになりました。
 
-新しいSAMLプロパティ、 「**不明なユーザーはゲストです**」 が導入されました。  このプロパティにより、エンドユーザーがゲストである場合のSAML IdP接続の動作が決まります。 このプロパティは、ポータルデータベースに既に存在しないユーザーをゲストとして分類するかどうかを定義します。 分類後、ポータルインスタンスの既存のゲスト処理ポリシーにより、IdPのSAMLアサーションから得られる情報を使用して、ユーザーを自動的にプロビジョニングするかどうかを決定します。
+新しいSAMLプロパティ、*「不明なユーザーはゲストです」*が導入されました。  このプロパティにより、エンドユーザーがゲストである場合のSAML IdP接続の動作が決まります。 このプロパティは、ポータルデータベースに既に存在しないユーザーをゲストとして分類するかどうかを定義します。 分類後、ポータルインスタンスの既存のゲスト処理ポリシーにより、IdPのSAMLアサーションから得られる情報を使用して、ユーザーを自動的にプロビジョニングするかどうかを決定します。
 
 ### インスタンスレベルでのOAuth 2の設定
 

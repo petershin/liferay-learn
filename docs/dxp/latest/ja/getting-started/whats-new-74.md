@@ -12,7 +12,7 @@ Liferay DXP 7.4は、強化された機能と大幅な改良が施されおり�
 
 ### よりインサイトのあるコンテンツ監査ツール
 
-コンテンツダッシュボードの [コンテンツ監査ツール](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md)では、バーをクリックして結果を拡大できるようになり、1つのボキャブラリカテゴリにのみ割り当てられたコンテンツがグラフに表示されるようになりました。 今回の機能強化により、マーケティング担当者は誤って分類されたコンテンツを簡単に発見できるようになりました。./whats-new-74/images/03.png
+コンテンツダッシュボードの [コンテンツ監査ツール](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md)では、バーをクリックして結果を拡大できるようになり、1つのボキャブラリカテゴリにのみ割り当てられたコンテンツがグラフに表示されるようになりました。 今回の機能強化により、マーケティング担当者は誤って分類されたコンテンツを簡単に発見できるようになりました。
 
 ![コンテンツ監査の結果を拡大表示します。](./whats-new-74/images/03.png)
 
@@ -24,7 +24,7 @@ Liferay DXP 7.4は、強化された機能と大幅な改良が施されおり�
 
 ### コンテンツパフォーマンスツールでのトラフィック獲得チャネル
 
-[Content Performance Tool](../content-authoring-and-management/content-performance-panel/analyze-content-metrics-using-content-performance-panel.md) のトラフィック獲得チャネルは、[Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) のデータを使用しており、オーガニック検索、有料検索、ソーシャル・トラフィック、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
+[Content Performance Tool](../content-authoring-and-management/content-performance-panel/analyze-content-metrics-using-content-performance-panel.md) のトラフィック獲得チャネルは、 [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) のデータを使用しており、オーガニック検索、有料検索、ソーシャル・トラフィック、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
 
 ![トラフィック獲得チャネルには、検索、ソーシャル、リファラルデータなどがあります。](./whats-new-74/images/09.png)
 
@@ -146,7 +146,7 @@ Infoフレームワークでコレクションプロバイダーを構築する�
 
 ### Webコンテンツの自動翻訳
 
-この機能は、 [Webコンテンツの記事を翻訳する](../content-authoring-and-management/web-content/translating-web-content/automatically-translating-web-content.md)プロセスを加速するのに役立ちます。 これは、7.3で行われたコンテンツの翻訳プロセスを効率化するための取り組みを引き継いだものです。 この機能があれば、翻訳者は最初から翻訳を始めるのではなく、翻訳の質の向上に集中できます。
+この機能は、 [Webコンテンツの記事を翻訳する](../content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation.md)プロセスを加速するのに役立ちます。 これは、7.3で行われたコンテンツの翻訳プロセスを効率化するための取り組みを引き継いだものです。 この機能があれば、翻訳者は最初から翻訳を始めるのではなく、翻訳の質の向上に集中できます。
 
 ### ドキュメントの有効期限
 

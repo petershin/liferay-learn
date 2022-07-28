@@ -377,7 +377,7 @@ public class Main {
 			new StringReader(markdown));
 		String line = null;
 		boolean startAdmonitionBlock = false;
-		boolean toctreeFound = false;
+		boolean toctree = false;
 
 		while ((line = bufferedReader.readLine()) != null) {
 			StringBuilder leadingSpacesSB = new StringBuilder();
@@ -391,12 +391,12 @@ public class Main {
 			StringBuilder admonitionLineSB = new StringBuilder();
 
 			if (trimmedLine.startsWith("```") &&
-				(startAdmonitionBlock || toctreeFound)) {
+				(startAdmonitionBlock || toctree)) {
 
 				line = "";
 
 				startAdmonitionBlock = false;
-				toctreeFound = false;
+				toctree = false;
 			}
 
 			if (startAdmonitionBlock) {
@@ -418,7 +418,7 @@ public class Main {
 					startAdmonitionBlock = true;
 				}
 				else {
-					toctreeFound = true;
+					toctree = true;
 				}
 			}
 
@@ -428,7 +428,7 @@ public class Main {
 
 			line = line + "\n";
 
-			if (!toctreeFound) {
+			if (!toctree) {
 				sb.append(line);
 			}
 		}

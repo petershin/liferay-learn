@@ -22,7 +22,7 @@ Personalizing search results increases the chance that the User will find what's
 
 There are several Elements that are especially useful for personalization efforts:
 
-*Boost Proximity* is an Element that uses the [Ipstack](https://ipstack.com) service to boost search results closer to a User's location, as marked by a [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) field in the document. The [example below](#building-a-blueprint-to-personalize-search-results) shows you how to set up the service and use the Boost Proximity Element.
+*Boost Proximity* is an Element that uses the [ipstack](https://ipstack.com) service to boost search results closer to a User's location, as marked by a [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) field in the document. The [example below](#building-a-blueprint-to-personalize-search-results) shows you how to set up the service and use the Boost Proximity Element.
 
 *Boost Contents for the Current Language* is an Element that boosts search results with a `defaultLanguageId` field matching the current session's language.
 
@@ -52,7 +52,7 @@ To demonstrate this use case, multiple configuration exercises must be completed
 
 ### Configure the Ipstack Service
 
-Before configuring the Blueprint, you must obtain an [ipstack key](https://ipstack.com/) and enable the Ipstack service in Liferay.
+Before configuring the Blueprint, you must obtain an [ipstack key](https://ipstack.com/) and enable the ipstack service in Liferay.
 
 1. Go to <https://ipstack.com> and obtain an API key.
 1. In Liferay, go to System Settings &rarr; Platform &rarr; Search Experiences &rarr; Ipstack.
@@ -60,11 +60,11 @@ Before configuring the Blueprint, you must obtain an [ipstack key](https://ipsta
 1. Enter the API Key.
 1. Click _Save_.
 
-![Configure the Ipstack service in System Settings.](./personalizing-the-search-experience/images/01.png)
+![Configure the ipstack service in System Settings.](./personalizing-the-search-experience/images/01.png)
 
 ### Configure a Geolocated Asset
 
-A search document must have a [geopoint field](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) to work with the Ipstack service and the Boost Proximity Element. Liferay includes compatible Geolocation fields that you can add as a Custom Field to existing assets:
+A search document must have a [geopoint field](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) to work with the ipstack service and the Boost Proximity Element. Liferay includes compatible Geolocation fields that you can add as a Custom Field to existing assets:
 
 1. Go to Control Panel &rarr; Custom Fields.
 1. Add a new Custom Field on the Blogs Entry:
@@ -91,7 +91,7 @@ If you search for the word _blog_ on the search page, the Blogs Entry with the s
 
 ### Configure a Geolocation-Aware Blueprint
 
-Now that you have the Ipstack service configured and search documents with geopoint data, you're ready to configure a Blueprint that boosts certain results by their proximity to the search User:
+Now that you have the ipstack service configured and search documents with geopoint data, you're ready to configure a Blueprint that boosts certain results by their proximity to the search User:
 
 1. Open the Blueprints application by clicking _Blueprints_ from Global Menu &rarr; Applications (Search Experiences).
 

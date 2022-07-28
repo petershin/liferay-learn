@@ -216,3 +216,31 @@ The Advanced Configuration adds [source includes and excludes](https://www.elast
     }
 }
 ```
+
+## Configuring Search Blueprints in the Control Panel
+
+Most configurations for Search Blueprints are found directly in the Blueprints application and in the search page itself. However, there are two system/instance configurations that enable services that support geolocation capabilities in Search Blueprints.
+
+Both configuration entries can be found in the Search Experiences category of Control Panel &rarr; System/Instance Settings.
+
+![Configure the ipstack and OpenWeatherMap services to enable geolocation capabilities in Search Blueprints.](./search-blueprints-configuration-reference/images/02.png)
+
+[Ipstack](https://ipstack.com/) is used to provide geolocation information based on the user's IP address.
+
+| Ipstack Configuration | Default Value | Description | 
+| :-------------------- | :------------ | :---------  |
+| Enabled               | False         | Check the box to enable the ipstack service.  |
+| API Key               | None          | You must obtain an API key from ipstack.com to enable the service.  |
+| API URL               | http://api.ipstack.com | Provide the URL to the service. |
+| Cache Timeout         | 604800        | Set the time (ms) until the cached data expires and the API is re-invoked. |
+
+[OpenWeatherMap](https://openweathermap.org) is used in conjunction with ipstack to provide weather information based on the user's location. To use this in Search Blueprints you must also enable ipstack.
+
+| Ipstack Configuration | Default Value | Description | 
+| :-------------------- | :------------ | :---------  |
+| Enabled               | False         | Check the box to enable the OpenWeatherMap service.  |
+| API Key               | None          | You must obtain an API key from openweathermap.org to enable the service.  |
+| API URL               | http://api.openweathermap.org/data/2.5/weather | Provide the URL to the service. |
+| Cache Timeout         | 604800        | Set the time (ms) until the cached data expires and the API is re-invoked. |
+| Units                 | Metric        | Set the system for the weather data units: choose Imperial, Metric, or Standard. |
+

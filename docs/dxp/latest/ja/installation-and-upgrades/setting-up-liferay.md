@@ -1,3 +1,21 @@
+---
+toc:
+- ./setting-up-liferay/activating-liferay-dxp.md
+- ./../system-administration/configuring-liferay/virtual-instances/instance-configuration.md
+- ./setting-up-liferay/initial-instance-localization.md
+- ./setting-up-liferay/configuring-mail.md
+- ./../system-administration/configuring-liferay/virtual-instances/users.md
+- ./../system-administration/file-storage.md
+- ./../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+- ./../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md
+- ./maintaining-a-liferay-installation/backing-up.md
+- ./../system-administration/installing-and-managing-apps.md
+- ./setting-up-liferay/using-a-cdn.md
+- ./setting-up-liferay/clustering-for-high-availability.md
+- ./setting-up-liferay/tuning-liferay.md
+- ./setting-up-liferay/tuning-your-jvm.md
+---
+
 # Liferayのセットアップ
 
 ```{toctree}
@@ -43,12 +61,13 @@ setting-up-liferay/tuning-your-jvm.md
 * [CDNの設定](#configure-a-cdn)
 * [高可用性の設定](#configure-high-availability)
 * [Liferayの調整](#tune-liferay)
+* [JNDIのセットアップ](#setting-up-jndi)
 
-上記の各タスクは、以下の説明にリンクしており、該当する記事への参照も含まれています。 最初のタスクは、本番用のLiferayインスタンスには不可欠です。 お使いのシステムにも適用される **その他のセットアップタスク** を調べてください。 タスクを完了するときは、必ず上記のチェックリストを見直すようにしてください。
+上記の各タスクは、以下の説明にリンクしており、該当する記事への参照も含まれています。 最初のタスクは、本番用のLiferayインスタンスには不可欠です。 お使いのシステムにも適用される*その他のセットアップタスク*を調べてください。 タスクを完了するときは、必ず上記のチェックリストを見直すようにしてください。
 
-## Liferayの有効化
+## Liferayの起動
 
-`サブスクライバー`
+`Subscribers`
 
 Liferay DXPを使用している場合は、[アクティベーションキーを適用](./setting-up-liferay/activating-liferay-dxp.md)します。
 

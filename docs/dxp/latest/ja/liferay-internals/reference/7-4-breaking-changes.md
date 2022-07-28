@@ -5,7 +5,7 @@
 このファイルに記載されている変更の種類の一部を次に示します。
 
 * 削除または置換される機能
-* APIの非互換性：パブリックJavaまたはJavaScript APIの変更
+* 旧バージョンと非互換の変更：パブリックJavaまたはJavaScript APIの変更
 * テンプレートで利用可能なコンテキスト変数の変更
 * Liferayテーマおよびポートレットで利用可能なCSSクラスの変更
 * 設定の変更：`portal.properties`、`system.properties`などの設定ファイルの変更
@@ -13,7 +13,7 @@
 * 非推奨またはサポート終了：たとえば、次のバージョンで特定の機能またはAPIが停止されると警告している
 
 ## liferay-ui:flashタグを削除
-- **日付：** 2020年10月13日
+- **日付：**2020年10月13日
 - **JIRAチケット：** [LPS-121732](https://issues.liferay.com/browse/LPS-121732)
 
 ### 変更点
@@ -35,7 +35,7 @@
 ---------------------------------------
 
 ## /portal/flashパスの削除
-- **日付：** 2020年10月13日
+- **日付：**2020年10月13日
 - **JIRAチケット：** [LPS-121733](https://issues.liferay.com/browse/LPS-121733)
 
 ### 変更点
@@ -59,7 +59,7 @@
 ---------------------------------------
 
 ## swfobject AUIモジュールの削除
-- **日付：** 2020年10月13日
+- **日付：**2020年10月13日
 - **JIRAチケット：** [LPS-121736](https://issues.liferay.com/browse/LPS-121736)
 
 ### 変更点
@@ -81,7 +81,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## AssetEntries_AssetCategoriesテーブルと対応するコードを削除
-- **日付：** 2020年10月16日
+- **日付：**2020年10月16日
 - **JIRAチケット：** [LPS-89065](https://issues.liferay.com/browse/LPS-89065)
 
 ### 変更点
@@ -105,7 +105,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## AntivirusScannerのサポートとClamdの統合をリファクタリング
-- **日付：** 2020年10月21日
+- **日付：**2020年10月21日
 - **JIRAチケット：** [LPS-122280](https://issues.liferay.com/browse/LPS-122280)
 
 ### 変更点
@@ -129,7 +129,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## エンティティ表示ページ登録追跡ロジックを変更
-- **日付：** 2020年10月27日
+- **日付：**2020年10月27日
 - **JIRAチケット：** [LPS-122275](https://issues.liferay.com/browse/LPS-122275)
 
 ### 変更点
@@ -148,7 +148,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 
 ### コードの更新方法
 
-表示ページを持つカスタムエンティティがある場合は、`BaseUpgradeAssetDisplayPageEntries`アップグレードプロセスをアプリケーションに追加して、表示ページロジックを切り替えます。 プロセスは、テーブル、プライマリーキー列名、およびクラス名を受け取ります。
+表示ページを持つカスタムエンティティがある場合、 `BaseUpgradeAssetDisplayPageEntry` アップグレード処理をアプリケーションに追加して、表示ページロジックを入れ替えましょう。 プロセスは、テーブル、プライマリーキー列名、およびクラス名を受け取ります。
 
 ### 変更が行われた理由
 
@@ -157,7 +157,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## 廃止予定および未使用のJSPタグを削除
-- **日付：** 2020年11月24日
+- **日付：**2020年11月24日
 - **JIRAチケット：** [LPS-112476](https://issues.liferay.com/browse/LPS-112476)
 
 ### 変更点
@@ -192,7 +192,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## .container-fluid-1280 CSSクラスを置き換え
-- **日付：** 2020年11月24日
+- **日付：**2020年11月24日
 - **JIRAチケット：** [LPS-123894](https://issues.liferay.com/browse/LPS-123894)
 
 ### 変更点
@@ -214,7 +214,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## CSSおよびJavaScriptリソースのランタイム縮小化をデフォルトで無効化
-- **日付：** 2020年11月27日
+- **日付：**2020年11月27日
 - **JIRAチケット：** [LPS-123550](https://issues.liferay.com/browse/LPS-123550)
 
 ### 変更点
@@ -236,7 +236,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## SoyPortletクラスを削除
-- **日付：** 2020年12月9日
+- **日付：**2020年12月9日
 - **JIRAチケット：** [LPS-122955](https://issues.liferay.com/browse/LPS-122955)
 
 ### 変更点
@@ -262,7 +262,7 @@ JSPを使用する`MVCPortlet`などの確立されたアーキテクチャ、�
 ---------------------------------------
 
 ## サーバー側のClosure Templates（Soy）のサポートを削除
-- **日付：** 2020年12月14日
+- **日付：**2020年12月14日
 - **JIRAチケット：** [LPS-122956](https://issues.liferay.com/browse/LPS-122956)
 
 ### 変更点
@@ -299,7 +299,7 @@ JSPを使用する`MVCPortlet`などの確立されたアーキテクチャ、�
 ---------------------------------------
 
 ## com.liferay.portal.kernel.model.PortletPreferencesメソッド、getPreferencesおよびsetPreferencesを削除
-- **日付：** 2020年12月20日
+- **日付：**2020年12月20日
 - **JIRAチケット：** [LPS-122562](https://issues.liferay.com/browse/LPS-122562)
 
 ### 変更点
@@ -321,7 +321,7 @@ JSPを使用する`MVCPortlet`などの確立されたアーキテクチャ、�
 ---------------------------------------
 
 ## CSS互換性レイヤーを削除
-- **日付：** 2021年1月02日
+- **日付：**2021年1月02日
 - **JIRAチケット：** [LPS-123359](https://issues.liferay.com/browse/LPS-123359)
 
 ### 変更点
@@ -343,7 +343,7 @@ Clayマークアップを使用している場合は、最新の [Clayコンポ�
 ---------------------------------------
 
 ## Log4j XML定義ファイルからspi.idプロパティを削除
-- **日付：** 2021年1月19日
+- **日付：**2021年1月19日
 - **JIRAチケット：** [LPS-125998](https://issues.liferay.com/browse/LPS-125998)
 
 ### 変更点
@@ -365,7 +365,7 @@ SPIが [LPS-110758](https://issues.liferay.com/browse/LPS-110758) によって�
 ---------------------------------------
 
 ## frontend-taglib-clayタグから廃止予定の属性を削除
-- **日付：** 2021年1月26日
+- **日付：**2021年1月26日
 - **JIRAチケット：** [LPS-125256](https://issues.liferay.com/browse/LPS-125256)
 
 ### 変更点
@@ -383,7 +383,7 @@ SPIが [LPS-110758](https://issues.liferay.com/browse/LPS-110758) によって�
 ---------------------------------------
 
 ## HTMLタグのブール属性の処理を変更
-- **日付：** 2021年2月18日
+- **日付：**2021年2月18日
 - **JIRAチケット：** [LPS-127832](https://issues.liferay.com/browse/LPS-127832)
 
 ### 変更点
@@ -433,7 +433,7 @@ DOMに存在させたいブール属性に`true`値を渡すようにしてく�
 ---------------------------------------
 
 ## com.liferay.portal.kernel.model.PortalPreferencesメソッド、getPreferencesおよびsetPreferencesを削除
-- **日付：** 2020年3月31日
+- **日付：**2020年3月31日
 - **JIRAチケット：** [LPS-124338](https://issues.liferay.com/browse/LPS-124338)
 
 ### 変更点
@@ -455,7 +455,7 @@ DOMに存在させたいブール属性に`true`値を渡すようにしてく�
 ---------------------------------------
 
 ## item-selector-taglibはcoverImage関連のイベントを起動しなくなりました
-- **日付：** 2021年4月15日
+- **日付：**2021年4月15日
 - **JIRAチケット：** [LPS-130359](https://issues.liferay.com/browse/LPS-130359)
 
 ### 変更点
@@ -524,12 +524,12 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 ---------------------------------------
 
 ## com.liferay.portal.kernel.util.StringBundlerをcom.liferay.petra.string.StringBundlerに置き換え
-- **日付：** 2021年6月25日
+- **日付：**2021年6月25日
 - **JIRAチケット：** [LPS-133200](https://issues.liferay.com/browse/LPS-133200)
 
 ### 変更点
 
-`com.liferay.petra.string.StringBundler`クラスは廃止予定になりました。  `com.liferay.portal.kernel.util.StringBundler`クラスに置き換えられました 。
+`com.liferay.portal.kernel.util.StringBundler`クラスは廃止予定になりました。  `com.liferay.petra.string.StringBundler`クラスに置き換えられました 。
 
 `com.liferay.portal.kernel.util.StringBundler`の代わりに`com.liferay.petra.string.StringBundler`を返すようになったメソッドの一部を以下に示します。
 
@@ -560,12 +560,12 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 
 ### 変更が行われた理由
 
-`com.liferay.petra.string.StringBundler`クラスは廃止予定になりました。
+`com.liferay.portal.kernel.util.StringBundler`クラスは廃止予定になりました。
 
 ---------------------------------------
 
 ## UserLocalService関連のクラスがパブリックAPIを変更しました
-- **日付：** 2021年7月7日
+- **日付：**2021年7月7日
 - **JIRAチケット：** [LPS-134096](https://issues.liferay.com/browse/LPS-134096)
 
 ### 変更点
@@ -600,7 +600,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 ---------------------------------------
 
 ## frontend-css-web CSSモジュールを削除
-- **日付：** 2021年8月2日
+- **日付：**2021年8月2日
 - **JIRAチケット：** [LPS-127085](https://issues.liferay.com/browse/LPS-127085)
 
 ### 変更点
@@ -651,8 +651,8 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 
 ---------------------------------------
 
-## 一部のSanitizedServletResponse静的メソッド、HttpHeaders X **XSS** PROTECTION定数、およびhttp.header.secure.x.xss.protectionポータルプロパティを削除
-- **日付：** 2021年8月5日
+## 一部のSanitizedServletResponse静的メソッド、HttpHeaders X_XSS_PROTECTION定数、およびhttp.header.secure.x.xss.protectionポータルプロパティを削除
+- **日付：**2021年8月5日
 - **JIRAチケット：** [LPS-134188](https://issues.liferay.com/browse/LPS-134188)
 
 ### 変更点
@@ -822,8 +822,8 @@ CAS SSOモジュールは、`portal-security-sso`プロジェクトから`portal
 ---------------------------------------
 
 ## ドキュメントタイプにおけるWebコンテンツのサポートが削除されました
-- **日付:** 2021年9月30日
-- **JIRAチケット：** [LPS-139710](https://issues.liferay.com/browse/LPS-139710)
+- ** 日付:** 2021年9月30日
+- ** JIRAチケット：** [LPS-139710](https://issues.liferay.com/browse/LPS-139710)
 
 ### 変更点
 
@@ -868,7 +868,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 
 ## サービスXMLファイルを持つサービスモジュールフォルダにサービスビルダータスクを制限しました。
 
-- **日付：** 2021年11月02日
+- **日付：**2021年11月02日
 - **JIRAチケット：** [LPS-129696](https://issues.liferay.com/browse/LPS-129696)
 
 ### 変更点
@@ -891,7 +891,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 
 ## FragmentEntryLocalServiceとFragmentEntryServiceのaddFragmentEntryメソッドを更新しました。
 
-- **日付：** 2021年12月16日
+- **日付：**2021年12月16日
 - **JIRAチケット：** [LPS-125034](https://issues.liferay.com/browse/LPS-125034)
 
 ### 変更点
@@ -913,7 +913,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 ---------------------------------------
 
 ## FragmentEntryProcessorContext、DefaultFragmentEntryProcessorContext、FragmentRendererContext、DefaultFragmentRendererContextのgetSegmentsExperienceIdsメソッドが削除されました。
-- **日付：** 2021年12月17日
+- **日付：**2021年12月17日
 - **JIRAチケット：** [LPS-141471](https://issues.liferay.com/browse/LPS-141471)
 
 ### 変更点
@@ -931,5 +931,122 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 ### 変更が行われた理由
 
 この変更は、フラグメント内でコレクションを使用する際に、コレクションのバリエーションを取得できるようにするために行われました。
+
+---------------------------------------
+
+## ポータルのプロパティからリダイレクトURLが削除されました。
+- **日付：**2022年5月24日
+- **JIRAチケット：** [LPS-128837](https://issues.liferay.com/browse/LPS-128837)
+
+### 変更点
+
+リダイレクトURLの設定は、ポータルのプロパティから設定できなくなりました。 UIの「インスタンス設定」の「 [Redirect URLs](../../system-administration/configuring-liferay/virtual-instances/redirect-urls.md) 」で設定することができます。
+
+### 影響を受ける人
+
+この問題は、ポータルのプロパティを使用してリダイレクトURLを設定している人に影響します。
+
+### コードを更新するにはどうすればよいですか？
+
+UIの「インスタンス設定」の「 [Redirect URLs](../../system-administration/configuring-liferay/virtual-instances/redirect-urls.md) 」で必要な設定を行ってください。
+
+### なぜこの変更が行われたのですか？
+
+この変更は、管理者がLiferayインスタンスごとにリダイレクトURLの設定を個別に行えるようにするために行われました。
+
+---------------------------------------
+
+## ポータルLibsクリーンアップ
+- **日付** 2022-May-26
+- **JIRA チケット** [LPS-142130](https://issues.liferay.com/browse/LPS-142130)
+
+### 削除しました
+
+- abdera.jar, axiom-api.jar, axiom-impl.jar - [LPS-142131](https://issues.liferay.com/browse/LPS-142131)
+- xuggle-xuggler-noarch.jar - [LPS-143939](https://issues.liferay.com/browse/LPS-143939) 注：FFmpegがXugglerを置き換えた。 詳しくは、 [Enabling FFmpeg for Audio and View Previews](../../content-authoring-and-management/documents-and-media/devops/enabling-ffmpeg-for-audio-and-video-previews.md) をご覧ください。
+- bcmail.jar と bcprov.jar - [LPS-143945](https://issues.liferay.com/browse/LPS-143945)
+- ant.jar - [LPS-143953](https://issues.liferay.com/browse/LPS-143953)
+- aspectj-rt.jar と aspectj-weaver.jar - [LPS-143999](https://issues.liferay.com/browse/LPS-143999)
+- jfreechart.jar と jcommon.jar - [LPS-144001](https://issues.liferay.com/browse/LPS-144001)
+- boilerpipe.jar - [LPS-144005](https://issues.liferay.com/browse/LPS-144005)
+- ecs.jar - [LPS-144081](https://issues.liferay.com/browse/LPS-144081)
+- chardet.jar - [LPS-144084](https://issues.liferay.com/browse/LPS-144084)
+- ical4j.jar - [LPS-144119](https://issues.liferay.com/browse/LPS-144119)
+- jrcs-diff.jar - [LPS-144476](https://issues.liferay.com/browse/LPS-144476)
+- curvesapi.jar - [LPS-144549](https://issues.liferay.com/browse/LPS-144549)
+- concurrent.jar - [LPS-144640](https://issues.liferay.com/browse/LPS-144640)
+- gif89.jar - [LPS-144861](https://issues.liferay.com/browse/LPS-144861)
+- antlr2.jar と antlr3.jar - [LPS-144863](https://issues.liferay.com/browse/LPS-144863)
+- bsf.jar - [LPS-145153](https://issues.liferay.com/browse/LPS-145153)
+- commons-chain.jar - [LPS-145154](https://issues.liferay.com/browse/LPS-145154)
+- freshcookies-security.jar - [LPS-145155](https://issues.liferay.com/browse/LPS-145155)
+- htmlparser.jar - [LPS-145367](https://issues.liferay.com/browse/LPS-145367)
+- jakarta-regexp.jar - [LPS-145500](https://issues.liferay.com/browse/LPS-145500)
+- xmpcore.jar - [LPS-145541](https://issues.liferay.com/browse/LPS-145541)
+- jcifs.jar - [LPS-145556](https://issues.liferay.com/browse/LPS-145556)
+- juh.jar, jurt.jar, ridl.jar and unoil.jar - [LPS-145918](https://issues.liferay.com/browse/LPS-145918) 。
+- xalan.jar - [LPS-145946](https://issues.liferay.com/browse/LPS-145946)
+- wsdl4j.jar - [LPS-145991](https://issues.liferay.com/browse/LPS-145991)
+- jsr107cache.jar - [LPS-146007](https://issues.liferay.com/browse/LPS-146007)
+- xstream.jar - [LPS-146069](https://issues.liferay.com/browse/LPS-146069)
+- liferay-icu.jar - [LPS-146089](https://issues.liferay.com/browse/LPS-146089)
+- stringtemplate.jar - [LPS-146169](https://issues.liferay.com/browse/LPS-146169)
+- rhino.jar - [LPS-146440](https://issues.liferay.com/browse/LPS-146440)
+- odmg.jar - [LPS-146547](https://issues.liferay.com/browse/LPS-146547)
+- closure-compiler.jar - [LPS-147006](https://issues.liferay.com/browse/LPS-147006)
+- nekohtml.jar - [LPS-147042](https://issues.liferay.com/browse/LPS-147042)
+- hessian.jar - [LPS-147424](https://issues.liferay.com/browse/LPS-147424)
+- jericho-html.jar - [LPS-147656](https://issues.liferay.com/browse/LPS-147656)
+- rmi-api.jar - [LPS-148863](https://issues.liferay.com/browse/LPS-148863)
+- commons-beanutils.jar - [LPS-149082](https://issues.liferay.com/browse/LPS-149082)
+- soap.jar - [LPS-149611](https://issues.liferay.com/browse/LPS-149611)
+- serializer.jar - [LPS-150261](https://issues.liferay.com/browse/LPS-150261)
+- jaxws-rt.jar - [LPS-150410](https://issues.liferay.com/browse/LPS-150410)
+- xbean-spring.jar - [LPS-150448](https://issues.liferay.com/browse/LPS-150448)
+- commons-math.jar - [LPS-150548](https://issues.liferay.com/browse/LPS-150548)
+- streambuffer.jar, mimepull.jar, saaj-api.jar, saaj-impl.jar - [LPS-150781](https://issues.liferay.com/browse/LPS-150781)
+- DBCP、c3p0、Tomcat プール - [LPS-151028](https://issues.liferay.com/browse/LPS-151028)
+- stax.jar - [LPS-151308](https://issues.liferay.com/browse/LPS-151308)
+
+### モジュールに移動しました
+- im4java.jar と monte-cc.jar - [LPS-144170](https://issues.liferay.com/browse/LPS-144170)
+- java-diff.jar, daisydiff.jar and eclipse-core-runtime.jar - [LPS-144201](https://issues.liferay.com/browse/LPS-144201)
+- urlrewritefilter.jar - [LPS-145186](https://issues.liferay.com/browse/LPS-145186)
+- jai_core.jar と jai-codec.jar - [LPS-145778](https://issues.liferay.com/browse/LPS-145778)
+- ccpp.jar, ccpp-ri.jar, jena.jar, oro.jar and reffilter.jar - [LPS-145917](https://issues.liferay.com/browse/LPS-145917)
+- netty-buffer.jar, netty-codec.jar, netty-common.jar, netty-handler.jar, netty-resolver.jar および netty-transport.jar - [LPS-146451](https://issues.liferay.com/browse/LPS-146451)
+- jazzy.jar - [LPS-146894](https://issues.liferay.com/browse/LPS-146894)
+- commons-discovery.jar - [LPS-147205](https://issues.liferay.com/browse/LPS-147205)
+- scribe.jar - [LPS-147542](https://issues.liferay.com/browse/LPS-147542)
+- tika-core.jar, tika-parsers.jar, vorbis-java-core.jar and vorbis-java-tika.jar - [LPS-147938](https://issues.liferay.com/browse/LPS-147938)
+- commons-lang3.jar - [LPS-148100](https://issues.liferay.com/browse/LPS-148100)
+- commons-digester.jar と commons-validator.jar - [LPS-148191](https://issues.liferay.com/browse/LPS-148191)
+- jmatio.jar - [LPS-148218](https://issues.liferay.com/browse/LPS-148218)
+- mime4j.jar - [LPS-148287](https://issues.liferay.com/browse/LPS-148287)
+- poi.jar - [LPS-148302](https://issues.liferay.com/browse/LPS-148302)
+- metadata-extractor.jar と xmpcore.jar - [LPS-148460](https://issues.liferay.com/browse/LPS-148460)
+- commons-compress.jar - [LPS-148461](https://issues.liferay.com/browse/LPS-148461)
+- tagsoup.jar - [LPS-148497](https://issues.liferay.com/browse/LPS-148497)
+- java-libpstjar - [LPS-148577](https://issues.liferay.com/browse/LPS-148577)
+- mp4parser.jar - [LPS-148582](https://issues.liferay.com/browse/LPS-148582)
+- juniversalchardet.jar - [LPS-148666](https://issues.liferay.com/browse/LPS-148666)
+- jhighlight.jar - [LPS-148670](https://issues.liferay.com/browse/LPS-148670)
+- jna.jar - [LPS-148671](https://issues.liferay.com/browse/LPS-148671)
+- sparse-bit-set.jar - [LPS-148757](https://issues.liferay.com/browse/LPS-148757)
+- netcdf.jar - [LPS-148925](https://issues.liferay.com/browse/LPS-148925)
+- jaxb-runtime.jar と istack-commons-runtime.jar - [LPS-148926](https://issues.liferay.com/browse/LPS-148926)
+- commons-exec.jar - [LPS-149097](https://issues.liferay.com/browse/LPS-149097)
+- commons-collections4.jar - [LPS-149099](https://issues.liferay.com/browse/LPS-149099)
+- commons-math3.jar - [LPS-149151](https://issues.liferay.com/browse/LPS-149151)
+- pdfbox.jar - [LPS-149426](https://issues.liferay.com/browse/LPS-149426)
+- rometools.jar - [LPS-150149](https://issues.liferay.com/browse/LPS-150149)
+- passwordencryptor.jar - [LPS-150150](https://issues.liferay.com/browse/LPS-150150)
+- jdom2.jar - [LPS-150423](https://issues.liferay.com/browse/LPS-150423)
+- xbean.jar - [LPS-150447](https://issues.liferay.com/browse/LPS-150447)
+- asm.jar - [LPS-151419](https://issues.liferay.com/browse/LPS-151419)
+
+### なぜ、このような変更を行ったのですか？
+
+この変更は、メンテナンスが終了した古いライブラリの脆弱性に対応するために行われたものです。
 
 ---------------------------------------

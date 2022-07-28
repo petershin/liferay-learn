@@ -11,11 +11,11 @@ BlogsEntryService _blogsEntryService;
 
 すべてのDeclarative Servicesコンポーネント（ [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) でアノテーションが付けられたクラス）は、この方法でOSGiサービスにアクセスできます。  ランタイムフレームワークは、コンポーネントの`@Reference`のアノテーションが付いたフィールドにサービスタイプを挿入します。
 
-次の例は、`Greeter`と呼ばれるOSGiサービスの使用を示しています。 3つのモジュールは、OSGiサービスで使用される **API-Provider-Consumer** パターンを示しています。
+次の例は、`Greeter`と呼ばれるOSGiサービスの使用を示しています。 3つのモジュールは、OSGiサービスで使用される*API-Provider-Consumer*パターンを示しています。
 
-***API** モジュールは、`Greeter`サービスタイプを定義します。
-* 実装モジュールは`Greeter`サービスを **提供** します。
-* サンプルモジュールは`Greeter`サービスを **消費** します。
+* **API**モジュールは、`Greeter`サービスタイプを定義します。
+* 実装モジュールは`Greeter`サービスを**提供**します。
+* サンプルモジュールは`Greeter`サービスを**消費**します。
 
 サンプルモジュールクラスは、`Greeter`サービスを使用してパーソナライズされた挨拶を返すGogo シェルコマンドを作成します。 この例をOSGiサービスの「Hello World」と考えてください。
 
@@ -30,16 +30,12 @@ OSGiサービスの作成方法については、 [OSGiサービスとしてのA
 ```
 
 ## Gogo シェルコマンドの例をデプロイする
+```{include} /_snippets/run-liferay-portal.md
+```
 
-サンプルの使用を開始します。
+次に、以下の手順に従います。
 
-1. [Liferay Dockerコンテナ](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
-
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-    ```
-
-1. `liferay-j1h1.zip`をダウンロードして解凍します。
+1. Download and unzip `liferay-j1h1.zip`.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/fundamentals/liferay-j1h1.zip -O

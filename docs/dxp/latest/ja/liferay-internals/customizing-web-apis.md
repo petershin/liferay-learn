@@ -3,6 +3,7 @@ toc:
 - ./customizing-web-apis/customizing-graphql-apis.md
 - ./customizing-web-apis/customizing-rest-apis.md
 ---
+
 # Web APIのカスタマイズ
 
 ```{toctree}
@@ -12,5 +13,5 @@ customizing-web-apis/customizing-graphql-apis.md
 customizing-web-apis/customizing-rest-apis.md
 ```
 
-* [Customizing GraphQL APIs](./customizing-web-apis/customizing-graphql-apis.md)  （近日公開）
-* [Customizing REST APIs](./customizing-web-apis/customizing-rest-apis.md)  （近日公開）
+* [GraphQL Apisのカスタマイズ](./customizing-web-apis/customizing-graphql-apis.md)  （近日公開）
+* [REST Apisのカスタマイズ](./customizing-web-apis/customizing-rest-apis.md)  （近日公開）

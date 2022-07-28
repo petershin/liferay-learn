@@ -1,33 +1,32 @@
 # OSGiサービスとしてのAPI
 
-[モジュール](./module-projects.md)とは何か、モジュールをデプロイする方法を学習したら、モジュールを使用してAPIを定義し、それらを実装できます。Liferay APIは [OSGiサービス](https://enroute.osgi.org/) であり、Javaインターフェースによって定義され、具体的なJavaクラスによって実装されます。
+[モジュール](./module-projects.md)とは何か、モジュールをデプロイする方法を学習したら、モジュールを使用してAPIを定義し、それらを実装できます。 Liferay APIは [OSGiサービス](https://enroute.osgi.org/) であり、Javaインターフェースによって定義され、具体的なJavaクラスによって実装されます。
 
-Liferayは、API、実装、およびクライアントをコンポーネントとして公開します。[OSGi Declarative Service](https://enroute.osgi.org/FAQ/300-declarative-services.html) （DS）アノテーションは、コンポーネントとそれらの関係を定義します。
+Liferayは、API、実装、およびクライアントをコンポーネントとして公開します。 [OSGi Declarative Service](https://enroute.osgi.org/FAQ/300-declarative-services.html) （DS）アノテーションは、コンポーネントとそれらの関係を定義します。
 
 * [`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) は、コンポーネントが提供（実装）または消費できるインターフェースを定義します。
 * [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) は、クラスをコンポーネントとして宣言し、特定の機能を提供します。
-* [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 
-は、別のコンポーネントをクラスメンバー（通常はフィールド）に関連付けます。
+* [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) は、別のコンポーネントをクラスメンバー（通常はフィールド）に関連付けます。
 
 APIと実装に関する懸念事項を異なるモジュールに分離することができます。
 
-* **API**モジュールは、Javaインターフェースを使用して機能を*定義*します。モジュールはインターフェースパッケージをエクスポートします。
+* **API**モジュールは、Javaインターフェースを使用して機能を*定義*します。 モジュールはインターフェースパッケージをエクスポートします。
 * **実装**モジュールは、具体的なJavaクラスを使用して機能を*提供*します。
 
-ここでは、単純なgreeter OSGiサービスを作成するAPIと実装モジュールをデプロイします。また、実装モジュールとそのJARを調べて、実装することでgreeterサービス機能がどのように提供されるかを学習します。 次のチュートリアルでは、クライアント--- UIで呼び出せる部分を作成します。
+ここでは、単純なgreeter OSGiサービスを作成するAPIと実装モジュールをデプロイします。 また、実装モジュールとそのJARを調べて、実装することでgreeterサービス機能がどのように提供されるかを学習します。 次のチュートリアルでは、クライアント--- UIで呼び出せる部分を作成します。
 
 ## シンプルなAPIと実装をデプロイする
-
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順でサンプルモジュールを起動します。
+Then, follow these steps to start the example modules:
 
-1. `liferay-p9g2.zip`をダウンロードして、解凍します。
+1. Download and unzip `liferay-p9g2.zip`.
 
-   ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-p9g2.zip -O
+    ```bash
+    curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/fundamentals/liferay-p9g2.zip -O
     ```
+
     ```bash
     unzip liferay-p9g2.zip
     ```
@@ -37,12 +36,13 @@ APIと実装に関する懸念事項を異なるモジュールに分離する�
     ```bash
     cd liferay-p9g2
     ```
+
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
 1. Dockerコンテナコンソールでモジュールの起動を確認します。
- 
+
     ```
     STARTED com.acme.p9g2.api_1.0.0
     STARTED com.acme.p9g2.impl_1.0.0
@@ -59,6 +59,7 @@ APIと実装に関する懸念事項を異なるモジュールに分離する�
     ```
 
     出力:
+
     ```
     1150|Active     |   15|Acme P9G2 API (1.0.0)|1.0.0
     1151|Active     |   15|Acme P9G2 Implementation (1.0.0)|1.0.0
@@ -71,6 +72,7 @@ APIと実装に関する懸念事項を異なるモジュールに分離する�
     ```
 
     出力:
+
     ```
     com.acme.p9g2.impl_1.0.0 [1151] provides:
     -----------------------------------------
@@ -82,10 +84,11 @@ APIと実装に関する懸念事項を異なるモジュールに分離する�
        component.id = 8462
     ```
 
-Acme P9G2実装モジュールは、`com.acme.p9g2.Greeter`という1つのサービスを提供します。`component.name`プロパティは、モジュールの`com.acme.p9g2.internal.P9G2Greeter`コンポーネントがサービスを実装していることを示しています。
+Acme P9G2実装モジュールは、`com.acme.p9g2.Greeter`という1つのサービスを提供します。 `component.name`プロパティは、モジュールの`com.acme.p9g2.internal.P9G2Greeter`コンポーネントがサービスを実装していることを示しています。
 
 `P9G2Greeter`コンポーネントが`Greeter`サービスを提供していることを確認しました。
-次に、APIモジュールがどのようにgreeter機能を定義し、実装モジュールがどのようにgreeter機能をOSGiサービスとして提供するかを学習します。まずはAPIの作成から始めます。
+
+次に、APIモジュールがどのようにgreeter機能を定義し、実装モジュールがどのようにgreeter機能をOSGiサービスとして提供するかを学習します。 まずはAPIの作成から始めます。
 
 ## APIを作成する
 
@@ -116,27 +119,27 @@ APIは、次の2つのステップで作成します。
 `Greeter`機能が定義されています。
 
 ### インターフェースパッケージをエクスポートする
-APIモジュールの`bnd.bnd`ファイルは、モジュールを記述し、`com.acme.p9g2`インターフェースパッケージをエクスポートします。
 
+APIモジュールの`bnd.bnd`ファイルは、モジュールを記述し、`com.acme.p9g2`インターフェースパッケージをエクスポートします。
 ```{literalinclude} ./apis-as-osgi-services/resources/liferay-p9g2.zip/p9g2-api/bnd.bnd
 ```
 
-[パッケージエクスポート](./exporting-packages.md) は `Greeter`インターフェイスを他のモジュールと共有します。
+The [package export](./exporting-packages.md) shares the `Greeter` interface with other modules.
 
-`Greeter`のサービスタイプを実装して利用することができます。
+The `Greeter` service type is available to implement and use.
 
-## 実装を作成する
+## Create the Implementation
 
-サンプルの実装モジュールは`Greeter`の機能を提供する具体的なJavaクラスを含みます。以下は、実装の手順です。
+The example implementation module contains a concrete Java class that provides the `Greeter` capability. Here are the implementation steps.
 
-* [コンポーネントアノテーションクラスの追加](#add-the-component-annotation)
-* [インターフェースの実装](#implement-the-interface)
-* [APIへの依存関係の追加](#add-a-dependency-on-the-api)
-* [モジュールJARを調べる](#examine-the-module-jar)
+* [Add the Component Annotion Class](#add-the-component-annotation)
+* [Implement the Interface](#implement-the-interface)
+* [Add a Dependency on the API](#add-a-dependency-on-the-api)
+* [Examine the Module JAR](#examine-the-module-jar)
 
-### コンポーネントアノテーションの追加
+### Add the Component Annotation
 
-`P9G2Greeter` クラスは `Greeter` インターフェースを実装しています。
+The `P9G2Greeter` class implements the `Greeter` interface:
 
 ```{literalinclude} ./apis-as-osgi-services/resources/liferay-p9g2.zip/p9g2-impl/src/main/java/com/acme/p9g2/internal/P9G2Greeter.java
 :language: java
@@ -192,12 +195,11 @@ Service-Component: OSGI-INF/com.acme.p9g2.internal.P9G2Greeter.xml
 
 `Service-Component`ヘッダには、モジュールの各サービスコンポーネントの構成ファイル（`.xml`）が一覧表示されます。
 
-モジュールをデプロイしたとき、サービスコンポーネントランタイムは`P9G2Greeter`
-サービスコンポーネントを`Greeter`サービスを提供するものとして登録しました。
+モジュールをデプロイしたとき、サービスコンポーネントランタイムは`P9G2Greeter`サービスコンポーネントを`Greeter`サービスを提供するものとして登録しました。
 
 ## まとめ
 
-`Greeter`というサービス機能を*定義*し、`P9G2Greeter`というサービスコンポーネントで*提供*しました。`Greeter`サービスが配置されました。クライアントはどのようにサービスにアクセスして使用するのでしょうか。これについては、 [OSGiサービスの使用](./using-an-osgi-service.md) で説明しています。
+`Greeter`というサービス機能を*定義*し、`P9G2Greeter`というサービスコンポーネントで提供しました。 `Greeter`サービスが配置されました。 クライアントはどのようにサービスにアクセスして使用するのでしょうか。 これについては、 [OSGiサービスの使用](./using-an-osgi-service.md) で説明しています。
 
 ## 追加情報
 

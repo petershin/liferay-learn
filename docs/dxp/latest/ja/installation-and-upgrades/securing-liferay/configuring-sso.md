@@ -7,6 +7,7 @@ toc:
 - ./configuring-sso/authenticating-with-cas.md
 - ./configuring-sso/authenticating-with-kerberos.md
 ---
+
 # シングルサインオンの設定
 
 ```{toctree}

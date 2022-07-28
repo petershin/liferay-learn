@@ -3,16 +3,12 @@
 [`liferay-util:dynamic-include`タグ](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html) は、コンテンツを挿入できるプレースホルダーです（JavaScriptコード、HTMLなど）。 サンプルプロジェクトでは、dynamic includeでコンテンツを挿入する方法を示しています。
 
 ## サンプルプロジェクトをデプロイする
+```{include} /_snippets/run-liferay-dxp.md
+```
 
-1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
+次に、以下の手順に従います。
 
-   ```bash
-   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
-   ```
-
-   別のLiferay PortalバージョンまたはLiferay DXPを実行している場合は、上記のコマンドを適宜調整してください。
-
-1. [Dynamic Includesを用いたJSPのカスタマイズ](./liferay-n3q3.zip) をダウンロードして解凍します。
+1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q3.zip) .
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q3.zip -O
@@ -41,7 +37,7 @@
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
-1. ［サイトページ］に移動し、編集アイコンをクリックします（![Edit icon](../../../images/icon-edit.png)）。 N3Q3 Bakerポートレットをページに追加します。 ウィジェットは、サンプルウィジェットの下にあります。
+1. サイトページに移動し、編集アイコン(![Edit icon](../../../images/icon-edit.png))をクリックします。 N3Q3 Bakerポートレットをページに追加します。 ウィジェットは、サンプルウィジェットの下にあります。
 
    ![N3Q3 Bakerポートレットをサイトページに追加します。](./customizing-jsps-with-dynamic-includes/images/01.png)
 

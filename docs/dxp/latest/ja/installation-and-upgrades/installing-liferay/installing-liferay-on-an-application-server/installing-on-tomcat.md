@@ -24,7 +24,7 @@ Java JDK 8または11が必要です。
 サポートされているJDK、データベース、および環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/360049238151) を参照してください。  推奨されるJVM設定については、[JVM設定](../../reference/jvm-configuration.md)を参照してください。
 ```
 
-Tomcatサーバーの親フォルダは[**Liferay Home**](../../reference/liferay-home.md)です。 `$TOMCAT_HOME`はTomcatサーバーフォルダを参照します。 通常は、`tomcat-[version]`または`apache-tomcat-[version]`という名前です。
+Tomcatサーバーの親フォルダは[*Liferay Home*](../../reference/liferay-home.md)です。 `$TOMCAT_HOME`はTomcatサーバーフォルダを参照します。 通常は、`tomcat-[version]`または`apache-tomcat-[version]`という名前です。
 
 ## DXP WARのインストール
 
@@ -33,7 +33,7 @@ Tomcatサーバーの親フォルダは[**Liferay Home**](../../reference/lifera
 
 ## 依存関係のインストール
 
-DXPは、Liferay-Tomcatバンドルに含まれている多くのJARに依存しています。 バンドル内のJARの中には必須ではないファイルもありますが、有用なJARもあります。 Tomcatバンドルを使用していない場合は、ダウンロードした **OSGi依存関係** アーカイブと、以下で説明するサードパーティのJAR依存関係を使用します。
+DXPは、Liferay-Tomcatバンドルに含まれている多くのJARに依存しています。 バンドル内のJARの中には必須ではないファイルもありますが、有用なJARもあります。 Tomcatバンドルを使用していない場合は、ダウンロードした*OSGi依存関係*アーカイブと、以下で説明するサードパーティのJAR依存関係を使用します。
 
 1. OSGi依存関係のZIPファイルの内容を `[Liferay Home]/osgi` フォルダーに解凍します（このフォルダーが存在しない場合は作成します）。 LiferayのOSGiランタイムは、これらのモジュールに依存しています。
 1. DXP 7.4+ WARファイルには、MariaDBおよびPostgreSQLのドライバーが含まれています。 以前のWARにはそれらがありません。 7.4以降のWARに、使用中のサポートされているデータベースのドライバーがない場合は、データベースベンダーのJDBC JARファイルをダウンロードして、`$CATALINA_BASE/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib`フォルダーに配置します。
@@ -118,7 +118,11 @@ DXPのインストール後、これらの構成（これらのJVMオプショ�
 
      `crossContext="true"`を設定すると、複数のWebアプリケーションで同じクラスローダーを使用できます。 この構成には、JAAS領域を構成するためのコメント付きの指示とタグが含まれています。
 
-1. 必ずUTF-8 URIエンコードを使用してください。 `$CATALINA_BASE/conf/server.xml`ファイルをTomcatバンドルからサーバーにコピーします。 それ以外の場合は、`$CATALINA_BASE/conf/server.xml`ファイルを開き、属性`URIEncoding="UTF-8"`をHTTPおよび`redirectPort=8443`を使用するAJPコネクタに追加します。 以下は例です:
+```{important}
+デフォルトのLiferay PortalのWebコンテキストは、XMLファイル名を変更することで（例えば `localhost:8080/` から `localhost:8080/myportal` ）変更できますが、これは推奨されません。
+```
+
+2. 必ずUTF-8 URIエンコードを使用してください。 `$CATALINA_BASE/conf/server.xml`ファイルをTomcatバンドルからサーバーにコピーします。 それ以外の場合は、`$CATALINA_BASE/conf/server.xml`ファイルを開き、属性`URIEncoding="UTF-8"`をHTTPおよび`redirectPort=8443`を使用するAJPコネクタに追加します。 以下は例です:
 
     旧:
 
@@ -144,7 +148,7 @@ DXPのインストール後、これらの構成（これらのJVMオプショ�
     <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" URIEncoding="UTF-8" />
     ```
 
-1. `$CATALINA_BASE/conf/server.xml`内のアクセスログの`Valve`要素をコメントアウトして、アクセスログの書き込みを控えます（オプション）。 以下ではコメントアウトされています。
+3. `$CATALINA_BASE/conf/server.xml`内のアクセスログの`Valve`要素をコメントアウトして、アクセスログの書き込みを控えます（オプション）。 以下ではコメントアウトされています。
 
     ```xml
     <!-- <Valve className="org.apache.catalina.valves.AccessLogValve"
@@ -153,7 +157,7 @@ DXPのインストール後、これらの構成（これらのJVMオプショ�
            pattern="%h %l %u %t &quot;%r&quot; %s %b" /> -->
     ```
 
-1. 必要に応じて、`$CATALINA_HOME/conf/logging.properties`ファイルで次のログレベルを設定します。
+4. 必要に応じて、`$CATALINA_HOME/conf/logging.properties`ファイルで次のログレベルを設定します。
 
     ```properties
     org.apache.catalina.startup.Catalina.level=INFO
@@ -162,7 +166,7 @@ DXPのインストール後、これらの構成（これらのJVMオプショ�
     org.apache.level=WARNING
     ```
 
-1. DXP 7.3以前の場合、`$CATALINA_HOME/conf/web.xml`ファイルを開いてJSPコンパイラをJava 8に設定し、DXPの`TagHandlerPool`クラスを設定して、`jsp`サーブレット要素の`<load-on-startup>`要素の上に次の要素を追加してJSPタグプールを管理します。
+5. DXP 7.3以前の場合、`$CATALINA_HOME/conf/web.xml`ファイルを開いてJSPコンパイラをJava 8に設定し、DXPの`TagHandlerPool`クラスを設定して、`jsp`サーブレット要素の`<load-on-startup>`要素の上に次の要素を追加してJSPタグプールを管理します。
 
     ```xml
     <init-param>
@@ -179,9 +183,9 @@ DXPのインストール後、これらの構成（これらのJVMオプショ�
     </init-param>
     ```
 
-1. `$CATALINA_HOME/conf/web.xml`で、アプリケーションサーバーがアプリケーションのJARやクラスの注釈などの追加のメタデータを検索するかどうかを指定します。 `web-app`要素の属性`metadata-complete="true"`を設定すると、追加のメタデータはないことがアプリケーションサーバーに通知されます。 この設定を使用すると、アプリケーションサーバーの起動が速くなります。 デフォルトでは、追加のメタデータをチェックします。
+6. `$CATALINA_HOME/conf/web.xml`で、アプリケーションサーバーがアプリケーションのJARやクラスの注釈などの追加のメタデータを検索するかどうかを指定します。 `web-app`要素の属性`metadata-complete="true"`を設定すると、追加のメタデータはないことがアプリケーションサーバーに通知されます。 この設定を使用すると、アプリケーションサーバーの起動が速くなります。 デフォルトでは、追加のメタデータをチェックします。
 
-1. Unix、Linux、またはMac OSを使用している場合は、各フォルダで次のコマンドを実行して、`$CATALINA_HOME/bin`および`$CATALINA_BASE/bin`フォルダのシェルスクリプトを実行可能にします。
+7. Unix、Linux、またはMac OSを使用している場合は、各フォルダで次のコマンドを実行して、`$CATALINA_HOME/bin`および`$CATALINA_BASE/bin`フォルダのシェルスクリプトを実行可能にします。
 
     ```bash
     chmod a+x *.sh
@@ -205,10 +209,10 @@ DXP 7.3以前の場合、`common.loader`プロパティの値リストの先頭�
 1. デフォルトの使用可能メモリとメタスペース制限が設定されている。
 1. `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml`はWebアプリケーションコンテキストを宣言している。
 1. `$CATALINA_BASE/conf/server.xml`は、UTF-8エンコーディングを設定している。
-1. `$CATALINA_BASE/conf/server.xml`は、ホストアクセスログを書き込むための値を宣言していない。 (**オプション**)
+1. `$CATALINA_BASE/conf/server.xml`は、ホストアクセスログを書き込むための値を宣言していない。 *(オプション)*
 1. `$CATALINA_HOME/conf/logging.properties`は、必要なログレベルを設定している。
 1. `$CATALINA_HOME/conf/web.xml`は、タグハンドラープールを設定し、Java 8をJSPコンパイラとして設定している。
-1. `$CATALINA_HOME/conf/web.xml`は、アプリケーションサーバーが追加のメタデータを検索しないように指定している。 (**オプション**)
+1. `$CATALINA_HOME/conf/web.xml`は、アプリケーションサーバーが追加のメタデータを検索しないように指定している。 *(オプション)*
 1. Tomcatの`bin`フォルダ内のスクリプトは実行可能である。
 1. `$CATALINA_BASE/conf/catalina.properties`の`common.loader`プロパティは、Catalinaに必要なJARへのアクセスを許可している。
 
@@ -216,7 +220,7 @@ DXP 7.3以前の場合、`common.loader`プロパティの値リストの先頭�
 
 ## データベース設定
 
-DXPには組み込みのHypersonicデータベースが含まれています。これはデモンストレーション目的には最適ですが、 **本番環境では使用しないでください** 。 本番環境では、フル機能のサポートされているRDBMSを使用してください。 データベースのセットアップについては、[データベースの設定](../configuring-a-database.md)を参照してください。
+DXPには組み込みのHypersonicデータベースが含まれています。これはデモンストレーション目的には最適ですが、**本番環境では使用しないでください**。 本番環境では、フル機能のサポートされているRDBMSを使用してください。 データベースのセットアップについては、[データベースの設定](../configuring-a-database.md)を参照してください。
 
 Liferay DXPは、DXPに組み込まれているデータソースを使用する（推奨）か、アプリケーションサーバー上に作成したデータソースを使用してデータベースに接続できます。
 
@@ -253,13 +257,15 @@ Liferay DXPは、DXPに組み込まれているデータソースを使用する
 
     データベースのURL、ユーザー名、パスワードを適切な値に置き換えてください。 なお、Liferayでは、データベース接続プールにデフォルトで [Hikari CP](https://liferay.dev/blogs/-/blogs/tomcat-hikaricp) を使用します。
 
-1. [**Liferay_Home**] の`portal-ext.properties`ファイルで、データソースを指定します。 例:
+1. **[Liferay_Home]**の`portal-ext.properties`ファイルで、データソースを指定します。 例:
 
     ```properties
     jdbc.default.jndi.name=jdbc/LiferayPool
     ```
 
 データソースが設定されました。
+
+JNDI接続を使用する場合は、 [TomcatでJNDIを設定する](./setting-up-jndi-on-tomcat.md)を参照してください。
 
 ## メール設定
 
@@ -305,7 +311,7 @@ Tomcatを使用してメールセッションを管理する場合は、次の�
 
 `$CATALINA_HOME/bin`に移動して`./startup.sh`を実行し、Tomcatを起動します。 または、`./catalina.sh run`を実行して、DXPのログファイルを追跡します。 ログは起動アクティビティを監査し、デプロイのデバッグに役立ちます。
 
-Liferay DXPエンタープライズサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 詳細は、 [Liferay DXPのアクティブ化](../../setting-up-liferay/activating-liferay-dxp.md) を参照してください。
+Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 詳細は、 [Liferay DXPのアクティブ化](../../setting-up-liferay/activating-liferay-dxp.md) を参照してください。
 
 　 DXPはTomcatで実行されています。
 

@@ -7,6 +7,7 @@ toc:
 - ./upgrading-liferay/upgrading-custom-development.md
 - ./upgrading-liferay/reference.md
 ---
+
 # Liferayのアップグレード
 
 ```{toctree}

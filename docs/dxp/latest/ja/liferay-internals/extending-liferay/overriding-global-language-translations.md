@@ -3,7 +3,7 @@
 Liferay DXP/Portalでは、言語ファイルを使用して、デフォルトロケールと他の多くのロケールの見出し、ラベル、およびメッセージを実装します。 モジュール内の新しい言語ファイル値を使用して、任意のロケールのこれらの翻訳をオーバーライドできます。
 
 ```{note}
-言語翻訳をオーバーライドするには、[Language Override tool](../../system-administration/configuring-liferay/changing-language-translations.md)を使用することをお勧めします。 このツールは、Liferay DXP 7.4 U4 (アップデート 4)以上、またはLiferay Portal 7.4 GA8以上で使用できます。 以前の方法を続けて読んでください。
+言語翻訳をオーバーライドするには、[Language Override tool](../../system-administration/configuring-liferay/changing-language-translations.md)を使用することをお勧めします。 このツールは、Liferay DXP 7.4 U4 (Update 4)以上、またはLiferay Portal 7.4 GA8以上で使用できます。 以前の方法を続けて読んでください。
 ```
 
 ## 標準言語ファイルの検証
@@ -56,18 +56,12 @@ Liferay DXP/Portal 7.4+では、メタデータを使用してオーバーライ
 ```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
 :language:件のプロパティ
 ```
+```{include} /_snippets/run-liferay-portal.md
+```
 
-サンプルをデプロイする方法は次のとおりです。
+次に、以下の手順でサンプルをデプロイします。
 
-1. Liferay DXP/Portalを起動します。 まだDockerコンテナがない場合は、以下を使用します。
-
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-    ```
-
-    別のDXP/Portalバージョンを実行している場合は、上記のコマンドを適宜調整してください。
-
-1. `liferay-i2f4.zip` サンプルプロジェクトをダウンロードし、解凍します。
+1. Download and unzip the `liferay-i2f4.zip` example project.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/liferay-i2f4.zip -O
@@ -138,7 +132,7 @@ Language[_xx_XX].properties
 ```
 
 ```{note}
-この例では、サービスのランキングを省略しており、OSGiのデフォルトのランキング `0`を使用しています。これは、デフォルトのグローバルリソースのバンドルサービスのランキング` -1`よりも高くなっています。
+この例では、サービスのランキングを省略しており、OSGiのデフォルトのランキング `0`を使用しています。これは、デフォルトのグローバルリソースバンドルサービスのランキング` -1`よりも高くなっています。
 ```
 
 標準言語ファイルのオーバーライドは、同じモジュール内にあるほうが管理が簡単です。
@@ -200,13 +194,7 @@ Provide-Capability:\
     STARTED com.acme.x8f3.impl_1.0.0 [3209]
     ```
 
-1. ブラウザで`https://localhost:8080`を開きます。
-
-1. デフォルトの認証情報を使用してサインインします。
-
-    **ユーザー名** : `test@liferay.com`
-
-    **パスワード：** `test`
+1. ブラウザで `https://localhost:8080` を開き、サインインしてください。
 
 1. サイトページに移動し、編集アイコンをクリックします（![Edit](../../images/icon-edit.png)）。 公開ボタンに、カスタム言語ファイルが表示されます。
 
@@ -238,9 +226,9 @@ Provide-Capability:\
 
 クラスは次のメソッドをオーバーライドします。
 
-**`handleGetObject`：** モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）で言語ファイルを検索し、キーの値を`Object`として返します。
+**`handleGetObject`：**モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）で言語ファイルを検索し、キーの値を`Object`として返します。
 
-**`getKeys`：** リソースバンドルのキーの`Enumeration`を返します。
+**`getKeys`：**リソースバンドルのキーの`Enumeration`を返します。
 
 リソースバンドルサービスコンポーネントは、デフォルトの言語ファイルをモジュールの言語ファイルオーバーライドにリダイレクトします。
 

@@ -4,6 +4,7 @@ toc:
 - ./securing-web-services/using-authentication-verifiers.md
 - ./securing-web-services/setting-up-cors.md
 ---
+
 # Webサービスの保護
 
 ```{toctree}
@@ -16,27 +17,23 @@ securing-web-services/setting-up-cors.md
 
 Liferay DXPは、Webサービスに4つのセキュリティレイヤーを提供しています。
 
-**IPアクセス許可レイヤー：** Webサービス呼び出し要求の発信元のIPアドレスは、ポータルプロパティファイルでホワイトリストに登録されている必要があります。 ホワイトリストに登録されていないIPアドレスからのWebサービスの呼び出しは自動的に失敗します。
+**IP許可レイヤー。** Webサービス呼び出し要求の発信元IPアドレスは、ポータルのプロパティファイルでホワイトリスト化する必要があります。 ホワイトリストに登録されていないIPアドレスからのWebサービス呼び出しは、自動的に失敗します。
 
-**サービスアクセスポリシーレイヤー：** Webサービス呼び出し要求に対応するメソッドは、有効になっている各サービスアクセスポリシーによってホワイトリストに登録されている必要があります。 ワイルドカードを使用して、明示的にホワイトリストに登録する必要があるサービスクラスとメソッドの数を減らすことができます。
+**サービスアクセスポリシー層。** Webサービスの呼び出し要求に対応するメソッドは、有効な各サービスアクセスポリシーによってホワイトリスト化される必要があります。 ワイルドカードを使用すると、明示的にホワイトリストに登録する必要のあるサービスクラスやメソッドの数を減らすことができます。
 
-**認証/検証レイヤー（ブラウザーのみ）：** Webサービス呼び出し要求がブラウザから送信される場合、その要求には認証トークンが含まれている必要があります。 この認証トークンは、`p_auth` URLパラメータの値です。 トークンは@product@によって生成され、ブラウザセッションに関連付けられます。 JSON WebサービスのAPIページまたは`Liferay.Service(...)`を使用したJavaScriptを介して@product@ Webサービスを呼び出すと、`p_auth`パラメータが自動的に提供されます。 @product@が呼び出し元の認証トークンをユーザーに関連付けることができない場合、Webサービス呼び出し要求は失敗します。
+**認証/検証レイヤー（ブラウザのみ）。** Webサービス呼び出しのリクエストがブラウザから来る場合、リクエストには認証トークンが含まれていなければなりません。 この認証トークンは、 `p_auth` URL パラメータの値です。 トークンはLiferay DXPによって生成され、ブラウザセッションに関連付けられます。 JSON WebサービスのAPIページまたは`Liferay.Service(...)`を使用したJavaScriptを介してLiferay DXP Webサービスを呼び出すと、`p_auth`パラメータが自動的に提供されます。 Liferay DXPが呼び出し元の認証トークンをユーザーに関連付けることができない場合、Webサービス呼び出し要求は失敗します。
 
-**ユーザーアクセス許可レイヤー：** 適切に実装されたWebサービスには、アクセス許可チェックがあります。 Webサービスを呼び出すユーザーには、サービスを呼び出す権限が必要です。
-
-<a name="authorization" />
-
-<a name="authorization" />
+**ユーザーパーミッション層。** 適切に実装されたWebサービスには、パーミッションチェックがあります。 ウェブサービスを呼び出すユーザーは、サービスを呼び出すための権限を持っている必要があります。
 
 ## 承認
 
-Liferay DXPには、いくつかの調整可能な承認レイヤーが含まれています。
+Liferay DXP には、いくつかの調整可能な認証レイヤーがあります。
 
 * Liferay DXPのJavaサーブレットへのアクセスを制限するためのリモートIPおよびHTTPSトランスポートチェック
-* ポータルサービス関連の承認チェックを実行するための拡張可能なアクセスコントロールポリシーレイヤー
-* Liferayアセット用の拡張可能な[ロールベースの権限フレームワーク](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)（データベースまたは他の場所に保存されています）
-* ポートレットアクセスを制御するポートレットコンテナのセキュリティチェック
-* リモートAPI認証方法のリモートIPチェック
-* リモートAPIへのアクセスを制御する[サービスアクセスポリシー](./securing-web-services/setting-service-access-policies.md)
-* 提供された資格情報を検証する[Authentication Verifier](./securing-web-services/using-authentication-verifiers.md)。
-* [クロスオリジンリソース共有](./securing-web-services/setting-up-cors.md)設定では、信頼できるソースからのみリソースを取得できます。
+* ポータルサービス関連の認可チェックを行うExtensible Access Control Policies層
+* Extensible [ロールベースのパーミッションフレームワーク](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for Liferay assets (stored in the database or elsewhere.)
+* ポートレットへのアクセスを制御するポートレットコンテナセキュリティチェック
+* リモートAPI認証方式におけるリモートIPチェック
+* [Service Access Policies](./securing-web-services/setting-service-access-policies.md) リモートAPIへのアクセスを制御する。
+* [Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) 提供されたクレデンシャルを検証するもの。
+* [Cross-Origin Resource Sharing](./securing-web-services/setting-up-cors.md) 信頼できるソースのみからリソースを取得できるように設定することができます。

@@ -1,3 +1,11 @@
+---
+toc:
+- ./configuring-dependencies/finding-artifacts.md
+- ./configuring-dependencies/specifying-dependencies.md
+- ./configuring-dependencies/resolving-third-party-library-package-dependencies.md
+- ./../../building-applications/reference/jars-excluded-from-wabs.md
+---
+
 # 依存関係の構成
 
 ```{toctree}
@@ -15,6 +23,6 @@ Liferayは、モジュールがJavaパッケージを介して機能を公開お
 
 * [依存関係の指定](./configuring-dependencies/specifying-dependencies.md) では、Liferay Workspace内のモジュールプロジェクトでアーティファクトを参照する方法を示しています。 Liferayがすでにアーティファクトからパッケージをエクスポートしているかどうかを判断する方法と、そのようなアーティファクトをコンパイル時の依存関係として構成する方法を学習します。
 
-* [サードパーティライブラリパッケージの依存関係の解決](./configuring-dependencies/resolving-third-party-library-package-dependencies.md)では、従来のライブラリJAR（OSGiモジュールではないJAR）でのみ使用可能なパッケージを使用するためのワークフローについて説明しています。 推移的な依存関係が最小限に抑えられるため、依存関係をより迅速に解決し、不要なJARでプロジェクトが肥大化するのを防ぐことができます。
+* [Resolving Third-Party Library Package Dependencies](./configuring-dependencies/resolving-third-party-library-package-dependencies.md)では、従来のライブラリJAR（OSGiモジュールではないJAR）でのみ使用可能なパッケージを使用するためのワークフローについて説明しています。 推移的な依存関係が最小限に抑えられるため、依存関係をより迅速に解決し、不要なJARでプロジェクトが肥大化するのを防ぐことができます。
 
 最初のステップは、必要なアーティファクトを見つけることです。

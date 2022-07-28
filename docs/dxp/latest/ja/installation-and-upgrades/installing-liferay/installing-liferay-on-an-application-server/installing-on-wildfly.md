@@ -76,7 +76,7 @@ DXP 7.3以前の場合は、次の追加手順に従います。
 
 ## WildFlyでのスタンドアロンモードとドメインモードのDXPの実行
 
-WildFlyは、 **スタンドアロン** モードまたは **ドメイン** モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 **ドメイン** と呼ばれます。 スタンドアロンモードとドメインモードの詳細は、 [WildFly管理ガイド](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes) このトピックに関するセクションを参照してください。 DXPは、スタンドアロンモードではWildFlyを完全にサポートしますが、ドメインモードではサポートしません。
+WildFlyは、 *スタンドアロン* モードまたは *ドメイン* モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 *ドメイン*と呼ばれます。 スタンドアロンモードとドメインモードの詳細は、 [WildFly管理ガイド](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes) このトピックに関するセクションを参照してください。 DXPは、スタンドアロンモードではWildFlyを完全にサポートしますが、ドメインモードではサポートしません。
 
 DXPは、スタンドアロンモードで実行する場合はWildFlyをサポートしますが、ドメインモードで実行する場合はサポートしません。 WildFlyはファイル（展開または非展開）をコピーして管理対象デプロイメントのコンテンツを管理するため、DXPの自動展開は管理対象デプロイメントでは機能しません。 これにより、JSPフックとExtプラグインが意図したとおりに機能しなくなります。 たとえば、DXPのJSPオーバーライドメカニズムはアプリケーションサーバーに依存しているため、JSPフックは管理対象ドメインモードで実行されているWildFlyでは機能しません。 ただし、JSPフックとExtプラグインは非推奨であるため、使用していない可能性があります。
 
@@ -218,9 +218,18 @@ Javaオプションとメモリ引数について以下に説明します。
 DXPのインストール後、これらの構成（これらのJVMオプションを含む）をさらに調整して、パフォーマンスを向上させることができます。 詳細については、 [Liferayの調整](../../setting-up-liferay/tuning-liferay.md) および [JVMの調整](../../setting-up-liferay/tuning-your-jvm.md) を参照してください。
 ```
 
+**チェックポイント:**
+
+1. ファイルエンコーディング、ユーザータイムゾーン、優先プロトコルスタックは、 `standalone.conf.sh` スクリプトの `JAVA_OPTS` に設定されています。
+1. 利用可能なメモリのデフォルト量が増加しました。
+
+これで、WildFlyにDXPをインストールするための規定のスクリプト変更が完了しました。
+
+### IBM JDKの使用
+
 WildFlyサーバーでIBM JDKを使用する場合は、以下の追加手順を実行します。
 
-1. `$WILDFLY_HOME/modules/com/liferay/portal/main/module.xml` ファイルに移動し、 `<dependencies>` 要素内に次の依存関係を挿入します。
+1. DXP 7.3 以前の場合、 `$WILDFLY_HOME/modules/com/liferay/portal/main/module.xml` ファイルに移動し、この依存関係を `<dependencies>` 要素内に挿入してください。
 
     `<module name="ibm.jdk" />`
 
@@ -236,20 +245,38 @@ WildFlyサーバーでIBM JDKを使用する場合は、以下の追加手順を
 
 追加されたパスは、デプロイメントの例外およびイメージのアップロードの問題に関する問題を解決します。
 
-**チェックポイント:**
+## Liferayにおけるデータソースの構成
 
-1. ファイルのエンコーディング、ユーザーのタイムゾーン、優先プロトコルスタックは、 `standalone.conf.sh`スクリプトの`JAVA_OPTS`に設定されています。
-1. 利用可能なメモリのデフォルト量が増加しました。
+DXPには組み込みのHypersonicデータベースが含まれています。これはデモンストレーション目的には最適ですが、**本番環境では使用しないでください**。 本番環境では、フル機能のサポートされているRDBMSを使用してください。 データベースのセットアップについては、[データベースの設定](../configuring-a-database.md)を参照してください。
 
-これで、WildFlyにDXPをインストールするための規定のスクリプト変更が完了しました。
+Liferay DXPは、DXPに組み込まれているデータソースを使用する（推奨）か、アプリケーションサーバー上に作成したデータソースを使用してデータベースに接続できます。
 
-## データベースに接続する
+[セットアップウィザード](../running-liferay-for-the-first-time.md)を使用して、DXPを初めて実行するときに、データベースを使用してDXPの組み込みデータソースを構成できます。 または、データベースの [データベーステンプレート](../../reference/database-templates.md)に 基づいて、データソースを [`portal-ext.properties` ファイル](../../reference/portal-properties.md)で構成できます。
 
-データベース構成を処理する最も簡単な方法は、DXPにデータソースを管理させることです。 [セットアップウィザード](../running-liferay-for-the-first-time.md)を使用して、DXPの組み込みデータソースを構成します。 組み込みのデータソースを使用する場合は、このセクションをスキップしてください。
+## Wildflyのデータソース設定
 
 WildFlyを使用してデータソースを管理する場合は、次の手順に従います。
 
 1. DXP WAR（7.4以降）またはデータベースベンダーからJDBC JARを取得し、`$WILDFLY_HOME/modules/com/liferay/portal/main`フォルダにコピーします。
+
+1. `$WILDFLY_HOME/modules/com/liferay/portal/main`フォルダに`module.xml`というファイルを作成します。 ファイル内で、portalモジュールとJDBC JARを宣言します。
+
+    ```xml
+    <?xml version="1.0"?>
+
+    <module xmlns="urn:jboss:module:1.0" name="com.liferay.portal">
+        <resources>
+            <resource-root path="[place your database vendor's JAR file name here]" />
+        </resources>
+        <dependencies>
+            <module name="javax.api" />
+            <module name="javax.mail.api" />
+            <module name="javax.servlet.api" />
+            <module name="javax.servlet.jsp.api" />
+            <module name="javax.transaction.api" />
+        </dependencies>
+    </module>
+    ```
 
 1. `$WILDFLY_HOME/standalone/configuration/standalone.xml` ファイルの `<datasources>` 要素内にデータソースを追加します。
 
@@ -267,8 +294,7 @@ WildFlyを使用してデータソースを管理する場合は、次の手順�
     データベースのURL、ユーザー名、パスワードを適切な値に置き換えてください。
 
     ```{note}
-    データソース`jndi-name`を変更する必要がある場合は、`<default-bindings>` 
-    タグ内の`datasource`要素を編集してください。
+    データソース`jndi-name`を変更する必要がある場合は、`<default-bindings>`タグ内の`datasource`要素を編集してください。
     ```
 
 1. `<datasources>` 要素内にもある `standalone.xml` ファイルの `<drivers>` 要素にドライバークラス名を追加します。
@@ -363,7 +389,7 @@ Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPは�
 
 ## 次のステップ
 
-[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、[DXPでのソリューションの構築](../../../building_solutions_on_dxp.md) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
+[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、\ [DXPでのソリューションの構築\](../../../building_solutions_on_dxp.html) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
 
 * [マーケットプレイスプラグインのインストール](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [試用期間中のプラグインへのアクセス](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)

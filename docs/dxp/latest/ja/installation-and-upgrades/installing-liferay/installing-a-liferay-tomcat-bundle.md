@@ -7,7 +7,7 @@ Tomcatバンドルには、Liferay DXP/Portalが事前にデプロイされたAp
 ```
 
 ```{note}
-ツアーやデモンストレーションの目的でLiferay DXPインスタンスをすばやく起動するには、[Starting With a Docker Image](../../getting-started/starting-with-a-docker-image.md)を参照してください。
+ツアーやデモンストレーションの目的でLiferay DXPインスタンスをすばやく起動するには、 [Dockerイメージから始める](../../getting-started/starting-with-a-docker-image.md) を参照してください。
 ```
 
 ## 前提条件

@@ -15,7 +15,7 @@
 ## 旧バージョンと非互換の変更リスト
 
 ### Liferay FontAwesomeはデフォルトで含まれなくなりました。
-- **日付：** 2019年8月21日
+- **日付：**2019年8月21日
 - **JIRAチケット：** [LPS-100021](https://issues.liferay.com/browse/LPS-100021)
 
 #### 変更点
@@ -55,7 +55,7 @@ JSPでアイコンを直接使用している開発者は、上記で説明し�
 ---------------------------------------
 
 ### liferay.frontend.ProgressBarを削除
-- **日付：** 2019年8月28日
+- **日付：**2019年8月28日
 - **JIRAチケット：** [LPS-100122](https://issues.liferay.com/browse/LPS-100122)
 
 #### 変更点
@@ -77,7 +77,7 @@ JSPでアイコンを直接使用している開発者は、上記で説明し�
 ---------------------------------------
 
 ### AssetCategoryのツリーパスが左右のカテゴリーIDに置き換わりました
-- **日付：** 2019年10月08日
+- **日付：**2019年10月08日
 - **JIRAチケット：** [LPS-102671](https://issues.liferay.com/browse/LPS-102671)
 
 #### 変更点
@@ -141,7 +141,7 @@ else {
 - 既存のコードを再評価する
 - 既存のサービスAPIが同じ目標を達成できるかどうかを検討する
 
-##### G **P** N_Vを含むFinderメソッドの場合
+##### G_P_N_Vを含むFinderメソッドの場合
 
 `G_P_N_V`で終わる`AssetCategory` Finderメソッドを使用する場合は、代わりに`P_N_V`で終わるメソッドを使用してください。
 
@@ -152,7 +152,7 @@ else {
 ---------------------------------------
 
 ### liferay.frontend.Sliderを削除
-- **日付：** 2019年10月10日
+- **日付：**2019年10月10日
 - **JIRAチケット：** [LPS-100124](https://issues.liferay.com/browse/LPS-100124)
 
 #### 変更点
@@ -174,7 +174,7 @@ else {
 ---------------------------------------
 
 ### com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTagを削除
-- **日付：** 2019年10月15日
+- **日付：**2019年10月15日
 - **JIRAチケット：** [LPS-100144](https://issues.liferay.com/browse/LPS-100144)
 
 #### 変更点
@@ -196,7 +196,7 @@ Javaクラス`com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag`�
 ---------------------------------------
 
 ### 削除されたポータルプロパティuser.groups.copy.layouts.to.user.personal.site
-- **日付：** 2019年12月26日
+- **日付：**2019年12月26日
 - **JIRAチケット：** [LPS-106339](https://issues.liferay.com/browse/LPS-106339)
 
 #### 変更点
@@ -218,7 +218,7 @@ Javaクラス`com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag`�
 ---------------------------------------
 
 ### EXTプラグインの自動デプロイのサポートを削除
-- **日付：** 2019年12月31日
+- **日付：**2019年12月31日
 - **JIRAチケット：** [LPS-106008](https://issues.liferay.com/browse/LPS-106008)
 
 #### 変更点
@@ -240,7 +240,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 ---------------------------------------
 
 ### OSGi構成プロパティautoUpgradeを置換
-- **日付：** 2020年1月3日
+- **日付：**2020年1月3日
 - **JIRAチケット：** [LPS-102842](https://issues.liferay.com/browse/LPS-102842)
 
 #### 変更点
@@ -267,8 +267,29 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 
 ---------------------------------------
 
+### SingleVMPoolUtilとMultiVMPoolUtilのクラスを削除しました。
+- **日付：**2020年1月7日
+- **JIRAチケット：** [LPS-106315](https://issues.liferay.com/browse/LPS-106315)
+
+#### 変更点
+
+`SingleVMPoolUtil` および `MultiVMPoolUtil` クラスは削除されました。
+
+#### 影響を受ける人
+
+これは、これらの削除されたクラスを使用している人に影響します。
+
+#### コードの更新方法
+
+`PortalCacheHelperUtil` の代わりに、 `SingleVMPoolUtil` または `MultiVMPoolUtil`を使用します。 例えば、 [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal-ee/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116) をご覧ください。
+
+#### 変更が行われた理由
+
+`SingleVMPoolUtil` と `MultiVMPoolUtil` クラスは、もともと [LPS-84138](https://issues.liferay.com/browse/LPS-84138) で非推奨とされていたものです。 クラスは廃止されました。
+
+---------------------------------------
 ### キャッシュブートストラップ機能を削除
-- **日付：** 2020年1月8日
+- **日付：**2020年1月8日
 - **JIRAチケット：** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
 
 #### 変更点
@@ -294,7 +315,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 ---------------------------------------
 
 ### liferay-frontend:cards-treeviewタグを削除
-- **日付：** 2020年1月10日
+- **日付：**2020年1月10日
 - **JIRAチケット：** [LPS-106899](https://issues.liferay.com/browse/LPS-106899)
 
 #### 変更点
@@ -316,7 +337,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 ---------------------------------------
 
 ### liferay-frontend:contextual-sidebarタグを削除
-- **日付：** 2020年1月10日
+- **日付：**2020年1月10日
 - **JIRAチケット：** [LPS-100146](https://issues.liferay.com/browse/LPS-100146)
 
 #### 変更点
@@ -338,7 +359,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 ---------------------------------------
 
 ### Portal Vulcan APIのアクションの追加メソッドを削除
-- **日付：** 2020年1月22日
+- **日付：**2020年1月22日
 - **JIRAチケット：** [LPS-98387](https://issues.liferay.com/browse/LPS-98387)
 
 #### 変更点
@@ -360,7 +381,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 ---------------------------------------
 
 ### 変更されたコントロールメニューとプロダクトメニューの配置
-- **日付：** 2020年2月4日
+- **日付：**2020年2月4日
 - **JIRAチケット：** [LPS-107487](https://issues.liferay.com/browse/LPS-107487)
 
 #### 変更点
@@ -423,7 +444,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 ---------------------------------------
 
 ### jQueryはデフォルトで含まれなくなりました
-- **日付：** 2020年2月4日
+- **日付：**2020年2月4日
 - **JIRAチケット：** [LPS-95726](https://issues.liferay.com/browse/LPS-95726)
 
 #### 変更点
@@ -438,7 +459,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 
 コードで使用する独自のバージョンのJQueryを提供するサードパーティライブラリを追加するための戦略のいずれかを使用します。
 
-さらに、一時的な対策として、 ［**システム設定**］ &rarr; ［**サードパーティー**］ &rarr; ［**jQuery**］ の`［JQueryを有効にする］`プロパティを`［true］`に設定することで、以前の動作に戻すことができます。
+さらに、一時的な対策として、*［システム設定］* &rarr; *［サードパーティー］* &rarr; *［jQuery］*の`［JQueryを有効にする］`プロパティを`［true］`に設定することで、以前の動作に戻すことができます。
 
 #### 変更が行われた理由
 
@@ -447,7 +468,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 ---------------------------------------
 
 ### サーバー側の並列レンダリングはサポートされなくなりました
-- **日付：** 2020年3月16日
+- **日付：**2020年3月16日
 - **JIRAチケット：** [LPS-110359](https://issues.liferay.com/browse/LPS-110359)
 
 #### 変更点
@@ -469,7 +490,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 ---------------------------------------
 
 ### ContentField値のプロパティ名をcontentFieldValueに変更
-- **日付：** 2020年3月18日
+- **日付：**2020年3月18日
 - **JIRAチケット：** [LPS-106886](https://issues.liferay.com/browse/LPS-106886)
 
 #### 変更点
@@ -480,7 +501,7 @@ Headless Delivery APIで、ContentFieldスキーマ内のプロパティ名の`v
 
 これは、ContentField `value`プロパティ名に応じてRESTクライアントに影響します。
 
-#### コードの更新方法
+#### コードを更新するにはどうすればよいですか？
 
 RESTクライアントでプロパティ名を`contentFieldValue`に変更します。
 
@@ -491,7 +512,7 @@ RESTクライアントでプロパティ名を`contentFieldValue`に変更しま
 ---------------------------------------
 
 ### liferay-editor-image-uploaderプラグインを削除しました
-- **日付：** 2020年3月27日
+- **日付：**2020年3月27日
 - **JIRAチケット：** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
 
 ### 変更点
@@ -502,18 +523,18 @@ RESTクライアントでプロパティ名を`contentFieldValue`に変更しま
 
 これは、プラグインを直接使用するカスタムソリューションに影響します。
 
-### コードの更新方法
+### コードを更新するにはどうすればよいですか？
 
 `liferay-editor-image-uploader`プラグインに直接置き換わるものはありません。 それに依存するコンポーネントがある場合は、古い実装のコピーを同じ場所に配置して、モジュール内でローカルに使用できます。
 
-#### 変更が行われた理由
+#### なぜこの変更が行われたのですか？
 
 この変更により、CKEditorでの画像のドラッグアンドドロップ処理が可能になり、Alloy EditorとCKEditorの両方に共通の画像アップローダが提供されます。
 
 ---------------------------------------
 
 ### TinyMCEエディターはデフォルトでバンドルされなくなりました
-- **日付：** 2020年3月27日
+- **日付：**2020年3月27日
 - **JIRAチケット：** [LPS-110733](https://issues.liferay.com/browse/LPS-110733)
 
 ### 変更点
@@ -524,7 +545,7 @@ RESTクライアントでプロパティ名を`contentFieldValue`に変更しま
 
 これはTinyMCEを使用するすべてのユーザーに影響します。
 
-### コードの更新方法
+### コードを更新するにはどうすればよいですか？
 
 TinyMCEを使用するようにLiferayポータルを構成している場合は、これらの構成を削除できます。 それでもTinyMCEを使用したい場合は、次の手順を実行する必要があります。
 
@@ -534,14 +555,14 @@ TinyMCEを使用するようにLiferayポータルを構成している場合は
 - `com.liferay.frontend.editor.tinymce.web` モジュールの.jarファイルをダウンロードします。
 - ダウンロードした.jarファイルをliferay-portalインスタレーションにデプロイします。
 
-#### 変更が行われた理由
+#### なぜこの変更が行われたのですか？
 
 この変更は、1つのエディターを中心にリッチテキストコンテンツを作成するためのすべてのUXを統合して、よりまとまりのある包括的なエクスペリエンスを提供するために行われました。
 
 ---------------------------------------
 
 ### Simple Editorはデフォルトでバンドルされなくなりました
-- **日付：** 2020年3月27日
+- **日付：**2020年3月27日
 - **JIRAチケット：** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
 
 ### 変更点
@@ -552,7 +573,7 @@ TinyMCEを使用するようにLiferayポータルを構成している場合は
 
 これは、LiferayフロントエンドエディターのシンプルなWebモジュールを使用するすべてのユーザーに影響します。
 
-### コードの更新方法
+### コードを更新するにはどうすればよいですか？
 
 Simple Editorを使用するようにLiferay Portalを構成している場合は、これらの構成を削除できます。 Simple Editorを引き続き使用する場合は、次の手順を実行する必要があります。
 
@@ -562,14 +583,14 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 - `com.liferay.frontend.editor.simple.web` モジュールの.jarファイルをダウンロードします。
 - ダウンロードした.jarファイルをliferay-portalインストールにデプロイします。
 
-#### 変更が行われた理由
+#### なぜこの変更が行われたのですか？
 
 この変更は、1つのエディターを中心にリッチテキストコンテンツを作成するためのすべてのUXを統合して、よりまとまりのある包括的なエクスペリエンスを提供するために行われました。
 
 ---------------------------------------
 
 ### asset.vocabulary.defaultが言語キーを保持するようになりました
-- **日付：** 2020年4月28日
+- **日付：**2020年4月28日
 - **JIRAチケット：** [LPS-112334](https://issues.liferay.com/browse/LPS-112334)
 
 ### 変更点
@@ -580,7 +601,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 
 これは、プロパティを上書きするすべてのユーザーに影響します。
 
-### コードの更新方法
+### コードを更新するにはどうすればよいですか？
 
 プロパティが上書きされない場合は、コードを変更する必要はありません。 プロパティが上書きされ、指定されたキーが見つからない場合、提供されたテキストはデフォルトの語彙の名前として使用されます。
 
@@ -591,7 +612,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 ---------------------------------------
 
 ### Liferay.Pollerがデフォルトで初期化されなくなりました
-- **日付：** 2020年5月19日
+- **日付：**2020年5月19日
 - **JIRAチケット：** [LPS-112942](https://issues.liferay.com/browse/LPS-112942)
 
 #### 変更点
@@ -629,7 +650,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 ---------------------------------------
 
 ### ContentTransformerListenerはデフォルト設定で無効になっています
-- **日付：** 2020年5月25日
+- **日付：**2020年5月25日
 - **JIRAチケット：** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
 
 #### 変更点
@@ -642,7 +663,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 
 #### コードの更新方法
 
-コードを更新する必要はありません。 それでも `ContentTransformerListener` を使用したい場合は、システム設定で ［**Content & Data**］ &rarr; ［**Webコンテンツ**］ &rarr; ［**仮想インスタンススコープ**］ &rarr; ［**Webコンテンツ**］ の ［**Enable ContentTransformerListener**］ プロパティを使用して有効にすることができます。
+コードを更新する必要はありません。 それでも `ContentTransformerListener` を使用したい場合は、システム設定で *［Content & Data］* &rarr; *［Webコンテンツ］* &rarr; *［仮想インスタンススコープ］* &rarr; *［Webコンテンツ］*の*［Enable ContentTransformerListener］*プロパティを使用して有効にすることができます。
 
 #### 変更が行われた理由
 
@@ -651,7 +672,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 ---------------------------------------
 
 ### Liferay.BrowserSelectors.runが呼び出されなくなりました
-- **日付：** 2020年5月26日
+- **日付：**2020年5月26日
 - **JIRAチケット：** [LPS-112983](https://issues.liferay.com/browse/LPS-112983)
 
 #### 変更点
@@ -678,7 +699,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 - `opera`
 - `presto`
 - `safari`
-- `secure`
+- `保護`
 - `touch`
 - `trident`
 - `webkit`
@@ -710,7 +731,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 ---------------------------------------
 
 ### ブロッキングキャッシュのサポートを削除
-- **日付：** 2020年6月17日
+- **日付：**2020年6月17日
 - **JIRAチケット：** [LPS-115687](https://issues.liferay.com/browse/LPS-115687)
 
 #### 変更点
@@ -736,7 +757,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 ---------------------------------------
 
 ### 各エンティティモデルのキャッシュプロパティ設定のサポートを削除
-- **日付：** 2020年6月24日
+- **日付：**2020年6月24日
 - **JIRAチケット：** [LPS-116049](https://issues.liferay.com/browse/LPS-116049)
 
 #### 変更点
@@ -767,8 +788,8 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 
 ---------------------------------------
 
-### ポータルプロパティの名前を"module.framework.properties.felix.fileinstall.\ **"から"module.framework.properties.file.install.\** "に変更
-- **日付：** 2020年7月13日
+### ポータルプロパティの名前を"module.framework.properties.felix.fileinstall.\*"から"module.framework.properties.file.install.\*"に変更
+- **日付：**2020年7月13日
 - **JIRAチケット：** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
 
 #### 変更点
@@ -790,7 +811,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 ---------------------------------------
 
 ### Elasticsearchの動的データマッピングフィールドをネストされたドキュメントに変更
-- **日付：** 2020年7月27日
+- **日付：**2020年7月27日
 - **JIRAチケット：** [LPS-103224](https://issues.liferay.com/browse/LPS-103224)
 
 #### 変更点
@@ -809,7 +830,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 
 これは、`ddm__keyword__*`および`ddm__text__*`フィールドを使用してElasticsearchインデックスでクエリを実行するカスタム開発を行っているすべてのユーザーに影響します。
 
-#### コードの更新方法
+#### コードを更新するにはどうすればよいですか？
 
 Elasticsearchクエリで新しいネストされたドキュメント`ddmFieldArray`を使用する必要があります。
 
@@ -817,18 +838,18 @@ Liferayコードにはいくつかの例があります。 たとえば、 [DDMI
 
 システム設定からレガシー動作を復元し、`ddm__keyword__*`および`ddm__text__*`フィールドを引き続き使用することもできます。
 
-1. ［**システム設定**］ &rarr; ［**動的データマッピング**］ &rarr; ［**動的データマッピング Web インデクサー**］ に移動します。
-1. ［**旧形式の動的データマッピングインデックスフィールドを有効にする**］ を選択します。
+1. *［システム設定］* &rarr; *［動的データマッピング］* &rarr; *［動的データマッピング Web インデクサー］*に移動します。
+1. *［旧形式の動的データマッピングインデックスフィールドを有効にする］*を選択します。
 1. 完全なインデックスの再構築を実行します。
 
-#### 変更が行われた理由
+#### なぜこの変更が行われたのですか？
 
-この変更は、動的データマッピング・ストラクチャーの数が多すぎる場合に発生するElasticsearchエラーで **合計フィールド数の制限を超えない** ようにするために行われました。
+この変更は、動的データマッピング・ストラクチャーの数が多すぎる場合に発生するElasticsearchエラーで*合計フィールド数の制限を超えない*ようにするために行われました。
 
 ---------------------------------------
 
 ### Lexiconアイコンパスの移動
-- **日付：** 2020年8月17日
+- **日付：**2020年8月17日
 - **JIRAチケット：** [LPS-115812](https://issues.liferay.com/browse/LPS-115812)
 
 ### 変更点
@@ -839,18 +860,18 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 これは、Lexiconアイコンパスを直接使用するカスタムソリューションに影響します。 `lexicon`パスにアイコンを作成するためのGradleタスクは削除されます。
 
-### コードの更新方法
+### コードを更新するにはどうすればよいですか？
 
 `lexicon`の代わりに`clay`を参照するようにパスを更新します
 
-#### 変更が行われた理由
+#### なぜこの変更が行われたのですか？
 
 この変更は、アイコンスプライトマップへの参照を統合するために行われました。
 
 ---------------------------------------
 
 ### DDM永続性クラスからclassNameId関連のメソッドを削除
-- **日付：** 2020年8月18日
+- **日付：**2020年8月18日
 - **JIRAチケット：** [LPS-108525](https://issues.liferay.com/browse/LPS-108525)
 
 ### 変更点
@@ -868,18 +889,18 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 これは、これらのメソッドのいずれかを使用するすべてのユーザーに影響します。
 
-### コードの更新方法
+### コードを更新するにはどうすればよいですか？
 
 他のファインダーとカウンターのメソッドを使用できます。
 
-#### 変更が行われた理由
+#### なぜこの変更が行われたのですか？
 
 これらのメソッドは、 [LPS-108525](https://issues.liferay.com/browse/LPS-108525) のソリューションの一部として削除されました。
 
 ---------------------------------------
 
 ### com.liferay.dynamic.data.mapping.util.BaseDDMDisplayメソッドを削除
-- **日付：** 2020年8月18日
+- **日付：**2020年8月18日
 - **JIRAチケット：** [LPS-103549](https://issues.liferay.com/browse/LPS-103549)
 
 ### 変更点
@@ -890,7 +911,7 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 これは、このメソッドを使用するすべてのユーザーに影響します。
 
-### コードの更新方法
+### コードを更新するにはどうすればよいですか？
 
 このメソッドの代わりに`isShowAddButton(Group scopeGroup)`メソッドを使用できます。
 
@@ -901,12 +922,12 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 ---------------------------------------
 
 ### ポータルプロパティview.count.enabledおよびbuffered.increment.enabledを置き換え
-- **日付：** 2020年10月1日
+- **日付：**2020年10月1日
 - **JIRAチケット：** [LPS-120626](https://issues.liferay.com/browse/LPS-120626) および [LPS-121145](https://issues.liferay.com/browse/LPS-121145)
 
 #### 変更点
 
-ビューカウントをグローバルに、またはエンティティ専用に有効にしたり無効にしたりする機能は、ポータルプロパティから削除され、システム設定として構成されるようになりました。 ビューカウントは、UIの ［**システム設定**］ &rarr; ［**Infrastructure**］ &rarr; ［**View Count**］ で構成するか、`com.liferay.view.count.configuration.ViewCountConfiguration.config`という名前の構成ファイルを使用して構成できます。
+ビューカウントをグローバルに、またはエンティティ専用に有効にしたり無効にしたりする機能は、ポータルプロパティから削除され、システム設定として構成されるようになりました。 ビューカウントは、UIの*［システム設定］* &rarr; *［Infrastructure］* &rarr; *［View Count］*で構成するか、`com.liferay.view.count.configuration.ViewCountConfiguration.config`という名前の構成ファイルを使用して構成できます。
 
 ポータルプロパティの変更は次のとおりです。
 
@@ -926,7 +947,7 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 システム設定または構成ファイルを使用して、ビューカウントの動作を構成します。
 
-［**システム設定**］ &rarr; ［**Infrastructure**］ &rarr; ［**View Count**］ で、`enabled`を`false`に設定してグローバルにビューカウントを無効にするか、`enabled`を`true`に設定してグローバルにビューカウントを有効にし、エンティティクラス名を`Disabled Class Name`値リストに追加して特定のエンティティのビューカウントを無効にします。
+*［システム設定］* &rarr; *［Infrastructure］* &rarr; *［View Count］*で、`enabled`を`false`に設定してグローバルにビューカウントを無効にするか、`enabled`を`true`に設定してグローバルにビューカウントを有効にし、エンティティクラス名を`Disabled Class Name`値リストに追加して特定のエンティティのビューカウントを無効にします。
 
 構成ファイルを使用するには、システム設定でビューカウントを構成し、設定を保存して、`com.liferay.view.count.configuration.ViewCountConfiguration.config`ファイルにエクスポートします。  次に、ファイルを`[Liferay Home]/osgi/configs`フォルダに配置して、構成をデプロイします。
 
@@ -937,7 +958,7 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 ---------------------------------------
 
 ### ポータルプロパティ"module.framework.properties.file.install.optionalImportRefreshScope"を削除
-- **日付：** 2020年10月11日
+- **日付：**2020年10月11日
 - **JIRAチケット：** [LPS-122008](https://issues.liferay.com/browse/LPS-122008)
 
 #### 変更点
@@ -948,11 +969,11 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 これは、ポータルプロパティ`module.framework.properties.file.install.optionalImportRefreshScope`を設定しているすべてのユーザーに影響します。
 
-#### コードの更新方法
+#### コードを更新するにはどうすればよいですか？
 
 `module.framework.properties.file.install.optionalImportRefreshScope`プロパティを削除します。 他の動作を使用するようにファイルのインストールを構成することはできません。
 
-#### 変更が行われた理由
+#### なぜこの変更が行われたのですか？
 
 代替動作が望まれるケースはほとんどありません。 ファイルのインストールは、バンドルをLiferayにインストールする主な方法であるため、バンドル管理のデフォルトになりました。 古い機能とその分岐ロジックを削除すると、コードの保守性と可読性が向上します。
 

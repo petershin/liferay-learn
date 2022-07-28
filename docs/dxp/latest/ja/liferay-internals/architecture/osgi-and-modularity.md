@@ -18,9 +18,9 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 
 1. **API** モジュールはインターフェイスを定義します。
 
-1. **実装** モジュールは、インターフェイスを実装する具象クラスを提供します。
+1. **実装**モジュールは、インターフェイスを実装する具象クラスを提供します。
 
-1. **クライアント** モジュールはAPIを消費します。
+1. **クライアント**モジュールはAPIを消費します。
 
 [Gogo シェル](../fundamentals/using-the-gogo-shell.md)でユーザーが名前を入力したときにあいさつ文を表示する簡単なコマンドを開発することで、それぞれを作成する方法を学習します。
 
@@ -29,16 +29,12 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 モジュールプロジェクトがどのように見えるかを確認し、Liferayのモジュール開発機能が実際に動作しているのを見てみましょう。
 
 ## Gogo シェルコマンドの例をデプロイする
+```{include} /_snippets/run-liferay-portal.md
+```
 
-サンプルの使用を開始します。
+次に、以下の手順でサンプルをデプロイします。
 
-1. [Liferay Dockerコンテナ](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)を起動します。
-
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-    ```
-
-1. `liferay-r9u2.zip`をダウンロードして解凍します。
+1. Download and unzip `liferay-r9u2.zip`.
 
     ```bash
     curl hhttps://learn.liferay.com/dxp/latest/ja/liferay-internals/architecture/liferay-r9u2.zip -O
@@ -114,7 +110,7 @@ The `build.gradle` file specifies the module's dependencies.
 
 これは、LiferayリリースのAPI JARという1つのアーティファクトに依存しています。 これは、Liferay製品のリリースに関連するLiferay、Bnd、OSGiのアーティファクトを詰め込んだ大きなJARです。
 
-モジュールの名前は **Acme R9U2 API** です。 そのシンボリック名（一意性を確保するための名前）は `com.acme.r9u2.api` です。 次にそのセマンティックバージョンが宣言され、そのパッケージが **エクスポート** されます。つまり、他のモジュールで使用できるようになります。 このモジュールのパッケージは、他のモジュールが実装できるAPIに過ぎません。
+モジュールの名前は *Acme R9U2 API* です。 そのシンボリック名（一意性を確保するための名前）は `com.acme.r9u2.api` です。 次にそのセマンティックバージョンが宣言され、そのパッケージが*エクスポート*されます。つまり、他のモジュールで使用できるようになります。 このモジュールのパッケージは、他のモジュールが実装できるAPIに過ぎません。
 
 最後に、Javaクラスがあります。この場合はインターフェイスです。
 

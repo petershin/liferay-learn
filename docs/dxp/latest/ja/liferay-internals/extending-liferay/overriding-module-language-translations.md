@@ -71,14 +71,12 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 さまざまな言語とロケールの言語ファイルは、ファイル名の末尾で識別できます。 たとえば、`Language_ja.properties`は日本語用です。
 
 この例では、デフォルトの`Add Blog Entry`言語ファイルをカスタム言語ファイルに変更します。 今度はそれをデプロイします。
+```{include} /_snippets/run-liferay-portal.md
+```
 
-1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
+次に、以下の手順に従います。
 
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-    ```
-
-1. `liferay-e6u7.zip`をダウンロードして解凍します。
+1. Download and unzip `liferay-e6u7.zip`.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/liferay-e6u7.zip -O
@@ -108,15 +106,7 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
     STARTED com.acme.e6u7.impl_1.0.0 [1650]
     ```
 
-1. ブラウザで`https://localhost:8080`を開きます。
-
-1. デフォルトの認証情報を使用してサインインします。
-
-    **ユーザー名** : `test@liferay.com`
-
-    **パスワード：** `test`
-
-1. ［**Content & Data**］ &rarr; ［**Blogs**］ に移動します。 カーソルを追加アイコン（![Add](../../images/icon-add.png)）に合わせます。 メッセージにカスタム言語ファイルが表示されます。
+1. *［Content & Data］* &rarr; *［Blogs］*に移動します。 カーソルを追加アイコン（![Add](../../images/icon-add.png)）に合わせます。 メッセージにカスタム言語ファイルが表示されます。
 
     ![カスタム言語ファイルが使用されるようになりました。](./overriding-module-language-translations/images/01.png)
 
@@ -156,13 +146,13 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 
 クラスは次のメソッドをオーバーライドします。
 
-**`handleGetObject`：** モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）で言語ファイルを検索し、キーの値を`Object`として返します。
+**`handleGetObject`：**モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）で言語ファイルを検索し、キーの値を`Object`として返します。
 
-**`getKeys`：** リソースバンドルのキーの`Enumeration`を返します。
+**`getKeys`：**リソースバンドルのキーの`Enumeration`を返します。
 
 リソースバンドルサービスコンポーネントは、デフォルトの言語ファイルをモジュールの言語ファイルオーバーライドにリダイレクトします。
 
-**注：** 複数のロケールのモジュール言語ファイルをオーバーライドするには、ロケールごとに個別のリソースバンドルクラスが必要です。 たとえば、このチュートリアルコードには、英語、日本語、ポルトガル語用があります。 各リソースバンドルは、`language.id`コンポーネントのプロパティ定義と言語ファイルの修飾名パラメーターでロケールを指定する必要があります。  たとえば、日本語ロケールでは次のようになります。
+**注：**複数のロケールのモジュール言語ファイルをオーバーライドするには、ロケールごとに個別のリソースバンドルクラスが必要です。 たとえば、このチュートリアルコードには、英語、日本語、ポルトガル語用があります。 各リソースバンドルは、`language.id`コンポーネントのプロパティ定義と言語ファイルの修飾名パラメーターでロケールを指定する必要があります。  たとえば、日本語ロケールでは次のようになります。
 
 コンポーネント定義：
 
@@ -188,7 +178,7 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 :lines: 4-12
 ```
 
-サンプルの`Provide-Capability`ヘッダーには、次の2つの部分があります。
+サンプルの`Provide-Capability`ヘッダには、次の2つの部分があります。
 
 1.  `liferay.resource.bundle;resource.bundle.base.name="content.Language"`は、モジュールがベース名`content.Language`のリソースバンドルを提供することを宣言します。
 

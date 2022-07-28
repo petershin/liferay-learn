@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay DXP 7.3 SP3以降および7.4 GA1以降で利用可能`
 
-バンドルリリースでLiferayインストールを更新します。 最新の機能、セキュリティリリース、およびライブラリの更新はすべて1つのバンドルにまとめて提供されます。 Liferayより前のバージョンについては、[Updating Previous Versions of Liferay](./updating-previous-versions-of-liferay.md)を参照してください。
+バンドルリリースでLiferayインストールを更新します。 最新の機能、セキュリティリリース、およびライブラリの更新はすべて1つのバンドルにまとめて提供されます。 Liferayより前のバージョンについては、 [Liferayの旧バージョンをアップデートする](./updating-previous-versions-of-liferay.md) を参照してください。
 
 ```{warning}
 Liferay DXP/Portalをアップデートする前に、**必ず** データベースとインストールを[バックアップ](./backing-up.md)してください。

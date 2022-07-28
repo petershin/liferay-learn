@@ -10,7 +10,7 @@ Liferayデータベースアップグレードツールは、Liferay DXPデー�
 6.2以前からアップグレードする場合は、ファイルストアの構成を更新します。 詳細については、[Updating the File Store](../reference/file-store-updates.md) を参照してください。
 ```
 
-Liferayインスタンスから切り離された状態でデータベースを変更すると、[データベースをアップグレード操作用に調整](../upgrade-stability-and-performance/database-tuning-for-upgrades.md)し、[不要なデータ（Webコンテンツ、ドキュメントなどの不要なバージョンなど）を削除](../upgrade-stability-and-performance/database-tuning-for-upgrades.md)して、アップグレードのパフォーマンスを向上させ、アップグレードの問題を解決できます。  これらのアクティビティは、DXPをはじめとする大規模で重要なポータル環境を安全かつ迅速にアップグレードするために特に重要です。 データベースの調整と削除を考慮し、[Upgrade Basics ](../upgrade-basics.md)で説明されている関連タスクを完了すると、新しいインストールをセットアップし、アップグレードツールを使用してデータベースをアップグレードする準備が整います。
+Liferayインスタンスから切り離された状態でデータベースを変更すると、[データベースをアップグレード操作用に調整](../upgrade-stability-and-performance/database-tuning-for-upgrades.md)し、[不要なデータ（Webコンテンツ、ドキュメントなどの不要なバージョンなど）を削除](../upgrade-stability-and-performance/database-tuning-for-upgrades.md)して、アップグレードのパフォーマンスを向上させ、アップグレードの問題を解決できます。  これらのアクティビティは、DXPをはじめとする大規模で重要なポータル環境を安全かつ迅速にアップグレードするために特に重要です。 データベースの調整と削除を考慮し、 [アップグレードの基本](../upgrade-basics.md) で説明されている関連タスクを完了すると、新しいインストールをセットアップし、アップグレードツールを使用してデータベースをアップグレードする準備が整います。
 
 [新しいLiferay Dockerイメージにアップグレード](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md)していて、アップグレードツールを使用する場合は、新しいLiferayバージョンの[Liferay Tomcat Bundle](../../installing-liferay/installing-a-liferay-tomcat-bundle.md)からそのツールを使用します。 このツールは、バンドルの`tools/portal-tools-db-upgrade-client`フォルダにあります。
 
@@ -110,7 +110,7 @@ Liferayインスタンスから切り離された状態でデータベースを�
 
     上記のコマンドは、アプリケーションサーバーで推奨されているのと同じJVMオプションでアップグレードツールを実行します。 ファイルのエンコーディング（`UTF-8`）、タイムゾーン（`GMT`）、国、言語、メモリ設定（`-Xmx値`）は、すべてアプリケーションサーバーの設定と一致させる必要があります。10GB 以上のデータを持つデータベースの場合、`-Xmx` オプションを使用して追加のメモリを割り当てます。
     
-    ファイルのエンコーディング（UTF-8）、タイムゾーン（GMT）、国、言語、メモリ設定（-Xmx値）は、すべてアプリケーションサーバーの設定と一致させる必要があります。10GB 以上のデータを持つデータベースの場合、-Xmxオプションを使用して追加のメモリを割り当てます。[アップグレードのプロパティファイル](../reference/database-upgrade-tool-reference.md#manual-configuration) を使ってアップグレードの設定をしていない場合、アップグレードツールは設定値の入力を促し、デフォルト値を括弧で囲んで表示します。
+    ファイルのエンコーディング（UTF-8）、タイムゾーン（GMT）、国、言語、メモリ設定（-Xmx値）は、すべてアプリケーションサーバーの設定と一致させる必要があります。10GB 以上のデータを持つデータベースの場合、-Xmxオプションを使用して追加のメモリを割り当てます。 [アップグレードのプロパティファイル](../reference/database-upgrade-tool-reference.md#manual-configuration) を使ってアップグレードの設定をしていない場合、アップグレードツールは設定値の入力を促し、デフォルト値を括弧で囲んで表示します。
 
     ```
     Please enter your application server (tomcat):

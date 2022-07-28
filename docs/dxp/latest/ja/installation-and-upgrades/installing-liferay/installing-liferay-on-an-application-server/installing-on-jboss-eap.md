@@ -23,6 +23,10 @@ Liferay DXPにはJava JDK 8または11が必要です。 詳細は、 [互換性
 1. クリーンなJBossインストールを開始していて、`$JBOSS_HOME/standalone/deployments/ROOT.war`フォルダが存在する場合は、そのすべてのサブフォルダとファイルを削除します。
 1. DXP WARファイルを`$JBOSS_HOME/standalone/deployments/ROOT.war`フォルダに解凍します（このフォルダが存在しない場合は作成します）。
 
+```{important}
+WARファイル名を変更することで、デフォルトのLiferay PortalのWebコンテキストを変更することができます（例： `localhost:8080/` から `localhost:8080/myportal` ）が、これは推奨されません。
+```
+
 ## 依存関係のインストール
 
 1. OSGi Dependencies ZIPファイルを `［Liferay Home］/osgi` フォルダーに解凍します（このフォルダーが存在しない場合は作成します）。 LiferayのOSGiランタイムは、これらのモジュールに依存しています。
@@ -70,7 +74,7 @@ DXP 7.3以前の場合は、次の追加手順に従います。
 
 ## スタンドアロンモードとドメインモードのJBoss EAPでのDXPの実行
 
-JBoss EAPは、 **スタンドアロン** モードまたは **ドメイン** モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 **ドメイン** と呼ばれます。 スタンドアロンモードとドメインモードの詳細については、 [JBoss EAP Product Documentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes) のこのトピックに関するセクションを参照してください。
+JBoss EAPは、 *スタンドアロン* モードまたは *ドメイン* モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 *ドメイン*と呼ばれます。 スタンドアロンモードとドメインモードの詳細については、 [JBoss EAP Product Documentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes) のこのトピックに関するセクションを参照してください。
 
 DXPは、スタンドアロンモードで実行する場合はJBoss EAPをサポートしますが、ドメインモードで実行する場合はサポートしません。 JBossはファイル（展開または非展開）をコピーして管理対象デプロイメントのコンテンツを管理するため、DXPの自動展開は管理対象デプロイメントでは機能しません。 これにより、JSPフックとExtプラグインが意図したとおりに機能しなくなります。 たとえば、DXPのJSPオーバーライドメカニズムはアプリケーションサーバーに依存しているため、JSPフックは管理対象ドメインモードで実行されているJBoss EAPでは機能しません。 ただし、JSPフックとExtプラグインは非推奨であるため、使用していない可能性があります。
 
@@ -127,7 +131,7 @@ JBossの構成手順は次のとおりです。
     </security-domain>
     ```
 
-1. `<subsystem xmlns="urn:jboss:domain:undertow:12.0" ...>` 要素からウェルカムコンテンツ要素をコメントアウトします。 例えば、
+1. `<subsystem xmlns="urn:jboss:domain:undertow:12.0" ...>` 要素からウェルカムコンテンツ要素をコメントアウトします。 例:
 
     ```xml
     <!--<location name="/" handler="welcome-content"/>-->
@@ -145,7 +149,7 @@ JBossの構成手順は次のとおりです。
 
 続行する前に、次のプロパティが `standalone.xml` ファイルに設定されていることを確認してください。
 
-1. 新しい `<system-property>` が追加されていること。
+1. 新しい `<system-property>` が追加されます。
 1. 新しい `<filter-spec>` が追加されていること。
 1. `<deployment-timeout>`が`600`に設定されていること。
 1. 新しい `<security-domain>` が作成されていること。
@@ -166,7 +170,7 @@ DXPでは、アプリケーションサーバーのJVMが `GMT`タイムゾー�
 
 `standalone.conf`スクリプトを次のように編集します。
 
-1. `if [ "x$JAVA_OPTS" = "x" ];` ステートメントの下で、 `JAVA_OPTS` の割り当てからJVMサイジングオプションを削除します。 たとえば、以下のものを
+1. `if [ "x$JAVA_OPTS" = "x" ];` ステートメントの下で、 `JAVA_OPTS` の割り当てからJVMサイジングオプションを削除します。 例えば、以下のものを
 
     ```bash
     JAVA_OPTS="-Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=2560m -Djava.net.preferIPv4Stack=true"
@@ -209,36 +213,59 @@ Javaオプションとメモリ引数について以下に説明します。
 | `-XX:SurvivorRatio`    | 新しいスペースとSurvivor領域の比率。 Survivor領域は、古い世代の領域に昇格する前に、若い世代のオブジェクトを保持します。   |
 
 ```{note}
-DXPのインストール後、これらの構成（これらのJVMオプションを含む）をさらに調整して、パフォーマンスを向上させることができます。 詳細については、 [Liferayの調整](../../setting-up-liferay/tuning-liferay.md) および [JVMの調整](../../setting-up-liferay/tuning-your-jvm.md) を参照してください。
+DXPのインストール後、これらの構成（これらのJVMオプションを含む）をさらに調整して、パフォーマンスを向上させることができます。 詳細については、[Liferayの調整](../../setting-up-liferay/tuning-liferay.md)および[JVMの調整](../../setting-up-liferay/tuning-your-jvm.md)を参照してください。
 ```
 
 ### IBM JDKの使用
 
 JBossサーバーでIBM JDKを使用する場合は、以下の追加手順を実行します。
 
-1. `$JBOSS_HOME/modules/com/liferay/portal/main/module.xml` ファイルに移動し、この依存関係を `<dependencies>` 要素の中に挿入します。
+1. DXP 7.3 以前の場合、 `$JBOSS_HOME/modules/com/liferay/portal/main/module.xml` ファイルに移動し、この依存関係を `<dependencies>` 要素内に挿入してください。
 
     `<module name="ibm.jdk" />`
 
-1. `$JBOSS_HOME/modules/system/layers/base/sun/jdk/main/module.xml` ファイルに移動し、以下のパスを `<paths>...</paths>` の中に挿入します。
-
-    ```xml
-    <path name="com/sun/crypto" />
+1. `$JBOSS_HOME/modules/system/layers/base/sun/jdk/main/module.xml` ファイルに移動し、以下のパスを `&lt;paths&gt;... の中に挿入します。
+<pre><code class="xml">    <path name="com/sun/crypto" />
     <path name="com/sun/crypto/provider" />
     <path name="com/sun/image/codec/jpeg" />
     <path name="com/sun/org/apache/xml/internal/resolver" />
     <path name="com/sun/org/apache/xml/internal/resolver/tools" />
-    ```
+`</pre>
 
 追加されたパスは、ポータルのデプロイメントの例外と画像のアップロードの問題を解決します。
 
-## データベースに接続する
+## Liferayにおけるデータソースの構成
 
-データベース構成を処理する最も簡単な方法は、DXPにデータソースを管理させることです。 [セットアップウィザード](../running-liferay-for-the-first-time.md)を使用して、DXPの組み込みデータソースを構成できます。 組み込みのデータソースを使用する場合は、このセクションをスキップしてください。
+DXPには組み込みのHypersonicデータベースが含まれています。これはデモンストレーション目的には最適ですが、**本番環境では使用しないでください**。 本番環境では、フル機能のサポートされているRDBMSを使用してください。 データベースのセットアップについては、[データベースの設定](../configuring-a-database.md)を参照してください。
+
+Liferay DXPは、DXPに組み込まれているデータソースを使用する（推奨）か、アプリケーションサーバー上に作成したデータソースを使用してデータベースに接続できます。
+
+[セットアップウィザード](../running-liferay-for-the-first-time.md)を使用して、DXPを初めて実行するときに、データベースを使用してDXPの組み込みデータソースを構成できます。 または、データベースの [データベーステンプレート](../../reference/database-templates.md)に 基づいて、データソースを [`portal-ext.properties` ファイル](../../reference/portal-properties.md)で構成できます。
+
+## JBoss EAPのデータソース設定
 
 JBossを使用してデータソースを管理する場合は、次の手順に従います。
 
 1. DXP WAR（7.4以降）またはデータベースベンダーからJDBC JARを取得し、`$JBOSS_HOME/modules/com/liferay/portal/main`フォルダにコピーします。
+
+1. `$JBOSS_HOME/modules/com/liferay/portal/main`フォルダに`module.xml`というファイルを作成します。 ファイル内で、portalモジュールとJDBC JARを宣言します。
+
+    ```xml
+    <?xml version="1.0"?>
+
+    <module xmlns="urn:jboss:module:1.0" name="com.liferay.portal">
+        <resources>
+            <resource-root path="[place your database vendor's JAR file name here]" />
+        </resources>
+        <dependencies>
+            <module name="javax.api" />
+            <module name="javax.mail.api" />
+            <module name="javax.servlet.api" />
+            <module name="javax.servlet.jsp.api" />
+            <module name="javax.transaction.api" />
+        </dependencies>
+    </module>
+    ```
 
 1. `$JBOSS_HOME/standalone/configuration/standalone.xml` ファイルの `<datasources>` 要素の中にデータソースを追加します。
 
@@ -256,7 +283,7 @@ JBossを使用してデータソースを管理する場合は、次の手順に
     データベースのURL、ユーザー名、パスワードを適切な値に置き換えてください。
 
     ```{note}
-    データソース`jndi-name`を変更する必要がある場合は、`<default-bindings>` タグ内の`datasource`要素を編集してください。
+    データソース`jndi-name`を変更する必要がある場合は、`<default-bindings>`タグ内の`datasource`要素を編集してください。
     ```
 
 1. `<datasources>` 要素内にもある `standalone.xml` ファイルの `<drivers>` 要素にドライバーを追加します。
@@ -282,9 +309,11 @@ JBossを使用してデータソースを管理する場合は、次の手順に
                     <password>root</password>
                 </security>
             </datasource>
-            <driver name="mysql" module="com.liferay.portal">
-                <driver-class>com.mysql.cj.jdbc.Driver</driver-class>
-            </driver>
+            <drivers>
+                <driver name="mysql" module="com.liferay.portal">
+                    <driver-class>com.mysql.cj.jdbc.Driver</driver-class>
+                </driver>
+            </drivers>
         </datasources>
     </subsystem>
     ```
@@ -333,7 +362,7 @@ JBossでメールセッションを設定する場合は、以下の手順に従
 1. `ROOT.war`デプロイメントをトリガーするには、 `$JBOSS_HOME/ standalone/deployments /` フォルダーに `ROOT.war.dodeploy` という名前の空のファイルを作成します。
 1. `$JBOSS_HOME/bin` に移動し、 `standalone.sh`を実行して JBoss アプリケーションサーバーを起動します。 JBoss は `ROOT.war.dodeploy` ファイルを検出し、ファイルの接頭辞に一致する Web アプリケーションをデプロイします (つまり、 `ROOT.war`)。
 
-DXPのデプロイ後に、 `PhaseOptimizer`を含む以下のような過剰な警告やログメッセージが表示される場合があります。 これらは良性なので無視することができます。 これらのメッセージは、アプリサーバーのログレベルまたはログフィルターを調整することでオフにできます。
+DXPのデプロイ後に、 `PhaseOptimizer`を含む以下のような過剰な警告やログメッセージが表示される場合があります。 これらは良性なので、無視しても構いません。 これらのメッセージは、アプリサーバーのログレベルまたはログフィルターを調整することでオフにできます。
 
 ```
 May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
@@ -351,7 +380,7 @@ Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPは�
 
 ## 次のステップ
 
-[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md) して、[DXPでのソリューションの構築](../../../building_solutions_on_dxp.html) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
+[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、\ [DXPでのソリューションの構築\](../../../building_solutions_on_dxp.html) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
 
 * [マーケットプレイスプラグインのインストール](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [試用期間中のプラグインへのアクセス](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)

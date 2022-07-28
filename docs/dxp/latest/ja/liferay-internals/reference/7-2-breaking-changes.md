@@ -5,7 +5,7 @@
 このファイルに記載されている変更の種類の一部を次に示します。
 
 * 削除または置換される機能
-* APIの非互換性：パブリックJavaまたはJavaScript APIの変更
+* 旧バージョンと非互換の変更：パブリックJavaまたはJavaScript APIの変更
 * テンプレートで利用可能なコンテキスト変数の変更
 * Liferayテーマおよびポートレットで利用可能なCSSクラスの変更
 * 設定の変更：`portal.properties`、`system.properties`などの設定ファイルの変更
@@ -13,236 +13,234 @@
 * 非推奨またはサポート終了：たとえば、次のバージョンで特定の機能またはAPIが停止されると警告している
 * 推奨事項：たとえば、後方互換性のためにLiferay Portalに古いAPIが保持されているにもかかわらず、古いAPIに代わる、新しく導入されたAPIを使用することを推奨している
 
-<a name="破壊的変更の一覧" />
+## 旧バージョンと非互換の変更リスト
 
-## 破壊的変更の一覧
-
-### テーマでのJSPテンプレートのサポートの削除
-- **日付：** 2018-Nov-14
+### テーマにおけるJSPテンプレートのサポートを削除しました。
+- **日付：**2018年11月14日
 - **JIRAチケット：** [LPS-87064](https://issues.liferay.com/browse/LPS-87064)
 
-#### 何が変わりましたか？
+#### 変更点
 
-テーマはJSPテンプレートを利用できなくなりました。 また、関連するロジックは、パブリックAPI `com.liferay.portal.kernel.util.ThemeHelper`および`com.liferay.taglib.util.ThemeUtil`から削除されました。
+テーマがJSPテンプレートを利用できなくなりました。 また、関連するロジックは、パブリックAPI `com.liferay.portal.kernel.util.ThemeHelper`および`com.liferay.taglib.util.ThemeUtil`から削除されました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、JSPテンプレートを使用するテーマを持っているか、削除されたメソッドを使用している人に影響します。
+これは、JSP テンプレートを使用したテーマや、削除されたメソッドを使用している人に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-JSPテンプレートを使用するテーマがある場合は、FreeMarkerへの移行を検討してください。
+JSP テンプレートを利用したテーマをお持ちの方は、FreeMarker への移行をご検討ください。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-JSPは実際のテンプレートエンジンではなく、めったに使用されません。 FreeMarkerは、今後推奨されるテンプレートエンジンです。
+JSPは本当の意味でのテンプレートエンジンではないので、ほとんど使われることはありません。 今後、テンプレートエンジンはFreeMarkerを推奨します。
 
-JSPテンプレートが削除されたことで、既存および新規のテンプレートエンジンにさらに焦点を合わせることができます。
+JSPテンプレートの削除により、既存および新規のテンプレートエンジンに焦点を当てることができるようになりました。
 
 ---------------------------------------
 
-### Lodashはデフォルトで含まれなくなりました
-- **日付：** 2018-Nov-27
+### Lodashはデフォルトでは含まれなくなりました。
+- **日付：**2018年11月27日
 - **JIRAチケット：** [LPS-87677](https://issues.liferay.com/browse/LPS-87677)
 
-#### 何が変わりましたか？
+#### 変更点
 
-以前は、Lodashはデフォルトですべてのページに含まれ、グローバル `window._` およびスコープ `AUI._` 変数を介して利用可能になりました。 Lodashはデフォルトでは含まれなくなり、これらの変数は未定義になります。
+以前は、Lodash はデフォルトですべてのページに含まれており、グローバルな `window._` とスコープ付きの `AUI._` 変数を通じて利用できるようになっていました。 Lodashはデフォルトで含まれなくなり、これらの変数は未定義になりました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、カスタムスクリプトで `AUI._` または `window._` 変数を使用した開発者に影響します。
+この問題は、カスタムスクリプトで `AUI._` または `window._` 変数を使用していたすべての開発者に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-カスタム開発用に独自のLodashバージョンを提供して、サードパーティのライブラリを追加するための可能な戦略のいずれかを使用する必要があります。
+サードパーティライブラリを追加する方法として、独自のLodashバージョンを提供し、カスタム開発で使用する必要があります。
 
-一時的な対策として、Liferayポータルのコントロールパネルの ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**システム設定**］ &rarr; ［**サードパーティー**］ &rarr; ［**Lodash**］ で ［**Lodashを有効にする**］ プロパティを`true`に設定することで、以前の動作に戻すことができます。
+一時的な対策として、Liferayポータルのコントロールパネルの*［コントロールパネル］* &rarr; *［設定］* &rarr; *［システム設定］* &rarr; *［サードパーティー］* &rarr; *［Lodash］*で*［Lodashを有効にする］*プロパティを`true`に設定することで、以前の動作に戻すことができます。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 この変更は、ほとんどの場合未使用で冗長なすべてのページに追加のライブラリコードをバンドルして提供することを回避するために行われました。
 
 ---------------------------------------
 
 ### 2つのステージングポータルプロパティをOSGi構成に移動
-- **日付：** 2018-Dec-12
+- **日付：**2018年12月12日
 - **JIRAチケット：** [LPS-88018](https://issues.liferay.com/browse/LPS-88018)
 
-#### 何が変わりましたか？
+#### 変更点
 
-2つのステージングプロパティが `portal.properties` から `export-import-service` モジュールの `ExportImportServiceConfiguration.java` という名前のOSGi構成に移動されました。
+2つのStagingプロパティが、 `portal.properties` から、 `export-import-service` モジュール内の `ExportImportServiceConfiguration.java` というOSGi設定に移動されました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、次のポータルプロパティを使用しているすべてのユーザーに影響します。
+この問題は、以下のポータルサイトのプロパティを使用している人に影響します。
 
 - `staging.delete.temp.lar.on.failure`
 - `staging.delete.temp.lar.on.success`
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-`portal.properties` ファイルを上書きする代わりに、ポータルの構成管理者からプロパティを管理できます。 これにアクセスするには、Liferayポータルの ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**システム設定**］ &rarr; ［**Infrastructure**］ &rarr; ［**エクスポート / インポート**］ に移動し、そこで設定を編集します。
+`portal.properties` ファイルを上書きする代わりに、Portalの設定管理者からプロパティを管理することができます。 これにアクセスするには、Liferayポータルの*［コントロールパネル］* &rarr; *［設定］* &rarr; *［システム設定］* &rarr; *［Infrastructure］* &rarr; *［エクスポート / インポート］*に移動し、そこで設定を編集します。
 
-アプリケーションに新しい構成を含める場合は、 [の手順に従って、アプリケーションを構成可能にします](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-1/making-applications-configurable) 。
+新しいコンフィギュレーションをアプリケーションに組み込みたい場合は、 [making applications configurable](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-1/making-applications-configurable) の手順に従ってください。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-この変更は、ポータル構成の変更を容易にするためのモジュール化の取り組みの一環として行われました。
+この変更は、ポータルの構成変更を容易にするためのモジュール化の一環として行われたものです。
 
 ---------------------------------------
 
 ### ページの機能へのリンクアプリケーションURLを削除
-- **日付：** 2018-Dec-14
+- **日付：**2018年12月14日
 - **JIRAチケット：** [LPS-85948](https://issues.liferay.com/browse/LPS-85948)
 
-#### 何が変わりましたか？
+#### 変更点
 
-ルックアンドフィールポートレットの **Link Portlet URLs to Page** オプションは、Liferay Portal 7.1で非推奨としてマークされ、ユーザーは構成プロパティを介してオプションを表示および非表示にできます。 Liferay Portal 7.2では、これは削除され、構成できなくなりました。
+*Link Portlet URLs to Page* ポートレットの Look and Feel のオプションは、Liferay Portal 7.1 で非推奨とされ、ユーザーは設定プロパティでオプションを表示、非表示することができるようになりました。 Liferay Portal 7.2 では、これは削除され、設定することができなくなりました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、UIのオプションを使用した管理者と、ポートレットのオプションを利用した開発者に影響します。
+この問題は、UIでオプションを使用した管理者とポートレットでオプションを使用した開発者に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-プロパティへの事前設定された参照はポータルでは無視されるため、この機能を活用するすべてのポートレットを更新する必要があります。
+この機能を利用しているポートレットは、ポータルでプロパティへの事前構成された参照が無視されるため、更新する必要があります。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-限られた数のポートレットがこのプロパティを使用します。同じ結果を達成するためのより良い方法があります。
+このプロパティを使用するポートレットは限られており、同じ結果を得るにはもっと良い方法があります。
 
 ---------------------------------------
 
-### TermsOfUseContentProviderをkernel.utilから移動
-- **日付：** 2019-Jan-07
+### TermsOfUseContentProviderをkernel.utilから移動しました。
+- **日付：**2019年1月07日
 - **JIRAチケット：** [LPS-88869](https://issues.liferay.com/browse/LPS-88869)
 
-#### 何が変わりましたか？
+#### 変更点
 
-`TermsOfUseContentProvider` インターフェースのパッケージが変更されました：
+`TermsOfUseContentProvider` インターフェイスのパッケージが変更されました。
 
 `com.liferay.portal.kernel.util` &rarr; `com.liferay.portal.kernel.term.of.use`
 
-`TermsOfUseContentProviderRegistryUtil` クラスの名前とパッケージが変更されました：
+`TermsOfUseContentProviderRegistryUtil` クラスの名前とパッケージが変更されました。
 
 `TermsOfUseContentProviderRegistryUtil` &rarr; `TermsOfUseContentProviderUtil`
 
-そして
+および
 
 `com.liferay.portal.kernel.util` &rarr; `com.liferay.portal.internal.terms.of.use`
 
-`TermsOfUseContentProvider` を取得するロジックも変更されました。 登録されたサービスの順序に依存するランダムな最初のサービスを常に返すのではなく、 `TermsOfUseContentProvider` サービスが追跡され、 `com.liferay.portal.kernel.util.ServiceProxyFactory`で更新されます。 その結果、 `TermsOfUseContentProvider` はサービスランキングを尊重するようになりました。
+`TermsOfUseContentProvider` を取得するロジックも変更されました。 登録されたサービスの順序に依存するランダムな最初のサービスを常に返すのではなく、 `TermsOfUseContentProvider` サービスが追跡され、 `com.liferay.portal.kernel.util.ServiceProxyFactory`で更新されます。 その結果、 `TermsOfUseContentProvider` は、サービスランキングを尊重するようになりました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、`com.liferay.portal.kernel.util.TermsOfUseContentProviderRegistryUtil`を使用して`com.liferay.portal.kernel.util.TermsOfUseContentProvider`サービスを検索していたすべての人に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 `com.liferay.portal.kernel.util.TermsOfUseContentProvider`を使用する場合は、インポートパッケージ名を更新してください。 `portal-web`で何か使用している場合は、`com.liferay.portal.kernel.util.TermsOfUseContentProviderRegistryUtil`を`com.liferay.portal.kernel.term.of.use.TermsOfUseContentProviderUtil`に更新してください。 モジュール内の`com.liferay.portal.kernel.util.TermsOfUseContentProviderRegistryUtil`の使用を削除し、代わりに`@Reference`アノテーションを使用して`com.liferay.portal.kernel.term.of.use.TermsOfUseContentProvider`サービスをフェッチします。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-これは、カーネルプロバイダーインターフェイスをクリーンアップして、パッケージバージョンのロックダウンの可能性を減らすためのいくつかの手順の1つです。
+これは、パッケージのバージョンがロックダウンする可能性を減らすために、カーネルプロバイダインターフェースをクリーンアップするためのいくつかのステップのうちの1つです。
 
 ---------------------------------------
 
-### HibernateConfigurationConverterおよびConverterを削除
-- **日付：** 2019-Jan-07
+### HibernateConfigurationConverterとConverterを削除しました。
+- **日付：**2019年1月07日
 - **JIRAチケット：** [LPS-88870](https://issues.liferay.com/browse/LPS-88870)
 
-#### 何が変わりましたか？
+#### 変更点
 
 インターフェイス`com.liferay.portal.kernel.util.Converter`とその実装`com.liferay.portal.spring.hibernate.HibernateConfigurationConverter`が削除されました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これにより、 `HibernateConfigurationConverter`によって実装されたカスタマイズされた `portlet-hbm.xml` ファイルの生成のサポートが削除されます。 詳細は、 [LPS-5363](https://issues.liferay.com/browse/LPS-5363) を参照してください。
+これにより、 `HibernateConfigurationConverter`で実装されているカスタマイズされた `portlet-hbm.xml` ファイルを生成するサポートが削除されました。 詳細は、 [LPS-5363](https://issues.liferay.com/browse/LPS-5363) を参照してください。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-`HibernateConfigurationConverter`使用を削除する必要があります。 生成された `portlet-hbm.xml` が正確であることを確認してください。
+`HibernateConfigurationConverter`の使用は削除する必要があります。 生成された `portlet-hbm.xml` が正確であることを確認します。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-これは、カーネルプロバイダーインターフェイスをクリーンアップして、パッケージバージョンのロックダウンの可能性を減らすためのいくつかの手順の1つです。
+これは、パッケージのバージョンがロックダウンする可能性を減らすために、カーネルプロバイダインターフェースをクリーンアップするためのいくつかのステップのうちの1つです。
 
 ---------------------------------------
 
-### JDK関数とサプライヤーを使用するように切り替え
-- **日付：** 2019-Jan-08
+### JDKの関数とサプライヤーを使用するように切り替えました。
+- **日付：**2019年1月08日
 - **JIRAチケット：** [LPS-88911](https://issues.liferay.com/browse/LPS-88911)
 
-#### 何が変わりましたか？
+#### 変更点
 
-パッケージ `com.liferay.portal.kernel.util` の `Function` および `Supplier` インターフェイスが削除されました。 それらの使用は、`java.util.function.Function`および`java.util.function.Supplier`に置き換えられました。
+パッケージ `com.liferay.portal.kernel.util` の `Function` と `Supplier` のインターフェイスは削除されました。 それらの使用は、`java.util.function.Function`および`java.util.function.Supplier`に置き換えられました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、パッケージ `com.liferay.portal.kernel.util``Function` および `Supplier` インターフェースを実装したすべてのユーザーに影響します。
+パッケージ `com.liferay.portal.kernel.util`の `Function` と `Supplier` インターフェイスを実装している人に影響があります。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 `com.liferay.portal.kernel.util.Function`と`com.liferay.portal.kernel.util.Supplier`の使用を、それぞれ`java.util.function.Function`と`java.util.function.Supplier`に置き換える必要があります。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-これは、カーネルプロバイダーインターフェイスをクリーンアップして、パッケージバージョンのロックダウンの可能性を減らすためのいくつかの手順の1つです。
+これは、パッケージのバージョンがロックダウンする可能性を減らすために、カーネルプロバイダインターフェースをクリーンアップするためのいくつかのステップのうちの1つです。
 
 ---------------------------------------
 
 ### com.liferay.portal.service.InvokableServiceインターフェイスを廃止
-- **日付：** 2019-Jan-08
+- **日付：**2019年1月08日
 - **JIRAチケット：** [LPS-88912](https://issues.liferay.com/browse/LPS-88912)
 
-#### 何が変わりましたか？
+#### 変更点
 
-パッケージ `com.liferay.portal.kernel.service` の `InvokableService` および `InvokableLocalService` インターフェースが削除されました。
+パッケージ `com.liferay.portal.kernel.service` の `InvokableService` と `InvokableLocalService` インターフェイスは削除されました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、パッケージ `com.liferay.portal.kernel.service`で `InvokableService` および `InvokableLocalService` を使用したすべてのユーザーに影響します。
+パッケージ `com.liferay.portal.kernel.service`で `InvokableService` と `InvokableLocalService` を使用していた人に影響があります。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-`InvokableService` および `InvokableLocalService`使用を削除する必要があります。 削除後にコンパイルエラーが発生した場合に備えて、最新バージョンのService Builderを使用してサービスの実装を生成してください。
+`InvokableService` と `InvokableLocalService`の使用は削除する必要があります。 削除後にコンパイルエラーが発生した場合、サービスの実装を生成するために、必ず最新版のサービスビルダーを使用してください。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-これは、カーネルプロバイダーインターフェイスをクリーンアップして、パッケージバージョンのロックダウンの可能性を減らすためのいくつかの手順の1つです。
+これは、パッケージのバージョンがロックダウンする可能性を減らすために、カーネルプロバイダインターフェースをクリーンアップするためのいくつかのステップのうちの1つです。
 
 ---------------------------------------
 
-### ServiceLoaderConditionのサポートを終了
-- **日付：** 2019-Jan-08
+### ServiceLoaderConditionのサポートを終了しました。
+- **日付：**2019年1月08日
 - **JIRAチケット：** [LPS-88913](https://issues.liferay.com/browse/LPS-88913)
 
-#### 何が変わりましたか？
+#### 変更点
 
-インターフェース `ServiceLoaderCondition` とその実装 `DefaultServiceLoaderCondition` （パッケージ `com.liferay.portal.kernel.util` は削除されました。
+パッケージ `com.liferay.portal.kernel.util` のインターフェース `ServiceLoaderCondition` とその実装 `DefaultServiceLoaderCondition` は削除されました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、使用して誰に影響 `ServiceLoaderCondition` 及び `DefaultServiceLoaderCondition`。
+この問題は、 `ServiceLoaderCondition` と `DefaultServiceLoaderCondition`を使用している人に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-`ServiceLoaderCondition`使用を削除する必要があります。 更新されたメソッドシグネチャに従って、`com.liferay.portal.kernel.util.ServiceLoader`の`load`メソッドの使用を更新します。
+`ServiceLoaderCondition`の使用は削除する必要があります。 更新されたメソッドシグネチャに従って、`com.liferay.portal.kernel.util.ServiceLoader`の`load`メソッドの使用を更新します。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-これは、カーネルプロバイダーインターフェイスをクリーンアップして、パッケージバージョンのロックダウンの可能性を減らすためのいくつかの手順の1つです。
+これは、パッケージのバージョンがロックダウンする可能性を減らすために、カーネルプロバイダインターフェースをクリーンアップするためのいくつかのステップのうちの1つです。
 
 ---------------------------------------
 
-### JDK述語を使用するように切り替え
-- **日付：** 2019-Jan-14
+### JDK述語を使用するように変更しました。
+- **日付：**2019年1月14日
 - **JIRAチケット：** [LPS-89139](https://issues.liferay.com/browse/LPS-89139)
 
-#### 何が変わりましたか？
+#### 変更点
 
-インターフェイス`com.liferay.portal.kernel.util.PredicateFilter`が削除され、`java.util.function.Predicate`に置き換えられました。 その結果、次の実装が削除されました。
+インターフェイス`com.liferay.portal.kernel.util.PredicateFilter`が削除され、`java.util.function.Predicate`に置き換えられました。 その結果、以下の実装が削除されました。
 
 - `com.liferay.portal.kernel.util.AggregatePredicateFilter`
 - `com.liferay.portal.kernel.util.PrefixPredicateFilter`
@@ -251,140 +249,167 @@ JSPテンプレートが削除されたことで、既存および新規のテ�
 
 `com.liferay.portal.kernel.util.ArrayUtil_IW` クラスが再生成されました。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、使用誰影響 `PredicateFilter`、 `AggregatePredicateFilter`、 `PrefixPredicateFilter`、 `JavaScriptPortletResourcePredicateFilter`、及び `DDMFormFieldValuePredicateFilter`。
+`PredicateFilter`, `AggregatePredicateFilter`, `PrefixPredicateFilter`, `JavaScriptPortletResourcePredicateFilter`, そして `DDMFormFieldValuePredicateFilter`を使用していた方に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-`com.liferay.portal.kernel.util.PredicateFilter`の使用を`java.util.function.Predicate`に置き換える必要があります。 さらに、用途の除去 `AggregatePredicateFilter`、 `PrefixPredicateFilter`、 `JavaScriptPortletResourcePredicateFilter`、及び `DDMFormFieldValuePredicateFilter`。
+`com.liferay.portal.kernel.util.PredicateFilter`の使用を`java.util.function.Predicate`に置き換える必要があります。 さらに、 `AggregatePredicateFilter`, `PrefixPredicateFilter`, `JavaScriptPortletResourcePredicateFilter`, `DDMFormFieldValuePredicateFilter`の使用を削除してください。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-これは、カーネルプロバイダーインターフェイスをクリーンアップして、パッケージバージョンのロックダウンの可能性を減らすためのいくつかの手順の1つです。
+これは、パッケージのバージョンがロックダウンする可能性を減らすために、カーネルプロバイダインターフェースをクリーンアップするためのいくつかのステップのうちの1つです。
 
 ---------------------------------------
 
 ### com.liferay.portal.kernel.utilパッケージから安全でない機能インターフェイスを削除しました
-- **日付：** 2019-Jan-15
+- **日付：**2019年1月15日
 - **JIRAチケット：** [LPS-89223](https://issues.liferay.com/browse/LPS-89223)
 
-#### 何が変わりましたか？
+#### 変更点
 
-`com.liferay.portal.osgi.util.test.OSGiServiceUtil` クラスが削除されました。 また、次のインターフェースが `com.liferay.portal.kernel.util` パッケージから削除されました`</p>
+`com.liferay.portal.osgi.util.test.OSGiServiceUtil` クラスは削除されました。 また、以下のインターフェースは `com.liferay.portal.kernel.util` パッケージから削除されました。
 
-<ul>
-<li><code>UnsafeConsumer`</li>
+- `UnsafeConsumer`
 - `UnsafeFunction`
-- `UnsafeRunnable`</ul>
+- `UnsafeRunnable`
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、上記のクラス/インターフェースを使用するすべてのユーザーに影響します。
+これは、上記のクラス/インターフェイスを使用している人に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-`com.liferay.portal.osgi.util.test.OSGiServiceUtil` クラスは、Liferay Portal 7.1以降廃止されました。 このクラスの使用法がまだ存在する場合は、直接の置き換えで置き換えます： `com.liferay.osgi.util.service.OSGiServiceUtil`。 用途交換 `UnsafeConsumer`、 `UnsafeFunction` 及び `UnsafeRunnable` パッケージの対応するインターフェイスと `com.liferay.petra.function`。
+`com.liferay.portal.osgi.util.test.OSGiServiceUtil` クラスは、Liferay Portal 7.1 から非推奨になりました。 `com.liferay.osgi.util.service.OSGiServiceUtil`. `UnsafeConsumer`, `UnsafeFunction` and `UnsafeRunnable` の使用を、パッケージ `com.liferay.petra.function`の対応するインターフェースに置き換えます。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-これは、カーネルプロバイダーインターフェイスをクリーンアップして、パッケージバージョンのロックダウンの可能性を減らすためのいくつかの手順の1つです。
+これは、パッケージのバージョンがロックダウンする可能性を減らすために、カーネルプロバイダインターフェースをクリーンアップするためのいくつかのステップのうちの1つです。
 
 ---------------------------------------
 
-### ポータル配布での非推奨のNTLM
-- **日付：** 2019-Jan-21
+### ポータル配信における非推奨のNTLMについて
+- **日付：**2019年1月21日
 - **JIRAチケット：** [LPS-88300](https://issues.liferay.com/browse/LPS-88300)
 
-#### 何が変わりましたか？
+#### 変更点
 
-NTLMモジュールは、 `portal-security-sso` プロジェクトから `portal-security-sso-ntlm`という名前の新しいプロジェクトに移動されました。 この新しいプロジェクトは廃止され、Liferay Marketplaceからダウンロードできます。
+NTLM モジュールは `portal-security-sso` プロジェクトから `portal-security-sso-ntlm`という名前の新しいプロジェクトに移動されました。 この新しいプロジェクトは非推奨で、Liferay Marketplaceからダウンロードすることができます。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、NTLMを認証システムとして使用しているすべてのユーザーに影響します。
+これは、NTLMを認証システムとして使用している人に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-NTLMを認証システムとして引き続き使用する場合は、Liferay Marketplaceから対応するモジュールをダウンロードする必要があります。 または、Kerberosに移行することもできます（推奨）。これは、変更の必要がなく、Liferay Portal 7.0以降と互換性があります。
+NTLMを認証システムとして使い続けたい場合は、Liferay Marketplaceから対応モジュールをダウンロードする必要があります。 あるいは、Kerberosに移行することもできます（推奨）。これは、変更の必要がなく、Liferay Portal 7.0+と互換性があります。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-この変更は、古い専用ソリューション（NTLM）の使用を回避するために行われました。 現在、Kerberosが推奨されています。これは、標準プロトコルであり、NTLMと比較してより安全な認証方法です。
+この変更は、古い独自のソリューション（NTLM）を使用しないようにするために行われました。 標準的なプロトコルであり、NTLMと比較してより安全な認証方法であるKerberosが推奨されるようになりました。
 
 ---------------------------------------
 
-### ポータル配布での非推奨のOpenID
-- **日付：** 2019-Jan-21
+### ポータル配信における非推奨のOpenID
+- **日付：**2019年1月21日
 - **JIRAチケット：** [LPS-88906](https://issues.liferay.com/browse/LPS-88906)
 
-#### 何が変わりましたか？
+#### 変更点
 
-OpenIDモジュールは、 `portal-security-sso-openid`という名前の新しいプロジェクトに移動されました。 この新しいプロジェクトは廃止され、Liferay Marketplaceからダウンロードできます。
+OpenID モジュールは、 `portal-security-sso-openid`という名前の新しいプロジェクトに移動されました。 この新しいプロジェクトは非推奨で、Liferay Marketplaceからダウンロードすることができます。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、OpenIDを認証システムとして使用するすべてのユーザーに影響します。
+これは、OpenIDを認証システムとして使っている人に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-OpenIDを認証システムとして引き続き使用する場合は、Liferay Marketplaceから対応するモジュールをダウンロードする必要があります。 または、Liferayポータル配布で入手できるOpenID Connectに移行する必要があります。
+OpenIDを認証システムとして使い続けたい場合は、Liferay Marketplaceから該当モジュールをダウンロードする必要があります。 または、Liferay Portal Distributionで利用可能なOpenID Connectに移行する必要があります。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-この変更は、非推奨のソリューション（OpenID）の使用を回避するために行われました。 OpenID Connectが推奨されます。これは、OAuthの上で実行されるため、より安全な認証方法です。
+この変更は、非推奨のソリューション（OpenID）を使用しないために行われました。 OAuthの上で動作するため、より安全な認証方法であるOpenID Connectが推奨されるようになりました。
 
 ---------------------------------------
 
-### ポータル配布での非推奨のGoogle SSO
-- **日付：** 2019-Jan-21
+### ポータル配信における非推奨のGoogle SSOについて
+- **日付：**2019年1月21日
 - **JIRAチケット：** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
 
-#### 何が変わりましたか？
+#### 変更点
 
-Google SSOモジュールは、 `portal-security-sso` プロジェクトから `portal-security-sso-google`という名前の新しいプロジェクトに移動されました。 この新しいプロジェクトは廃止され、Liferay Marketplaceからダウンロードできます。
+Google SSO モジュールは `portal-security-sso` プロジェクトから `portal-security-sso-google`という名前の新しいプロジェクトに移動されました。 この新しいプロジェクトは非推奨で、Liferay Marketplaceからダウンロードすることができます。
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、認証システムとしてGoogle SSOを使用しているすべてのユーザーに影響します。
+これは、Google SSOを認証システムとして使用している人に影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-認証システムとしてGoogle SSOを引き続き使用する場合は、Liferay Marketplaceから対応するモジュールをダウンロードする必要があります。 または、OpenID Connectを使用することもできます。
+Google SSOを認証システムとして使い続けたい場合は、Liferay Marketplaceから対応するモジュールをダウンロードする必要があります。 または、OpenID Connectを使用することもできます。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-この変更は、認証（Google SSO）に古いソリューションを使用しないようにするために行われました。 OpenID Connectは、認証にGoogle実装を使用するための推奨仕様です。
+この変更は、認証に古いソリューション（Google SSO）を使用しないようにするために行われました。 OpenID Connectは、認証にGoogleの実装を使用することが推奨されている仕様です。
 
 ---------------------------------------
 
-### 更新されたAlloyEditor v2.0には、Reactの新しいメジャーバージョンが含まれています
-- **日付：** 2019-Feb-04
+### liferay-amd-loader から Liferay.Loader.addModules を削除しました。
+- **日付：**2019年2月01日
+- **JIRAチケット：** [LPS-83949](https://issues.liferay.com/browse/LPS-83949)
+
+#### 変更点
+
+liferay-amd-loader version 4.x 以降では、addModules 関数が削除されました。
+
+#### 影響を受ける人
+
+これは、liferay-amd-loaderを直接使ってモジュールを定義している人に影響します。
+
+#### コードの更新方法
+
+Liferay.Loader.addModules を直接置き換えるものはありません。
+
+モジュールを公開するためにJS Toolkitプロジェクトを作成するのも一つの方法です： https://github.com/liferay/liferay-frontend-projects/tree/master/maintenance/projects/js-toolkit/docs
+
+#### 変更が行われた理由
+
+すべてのモジュール解決をサーバー側で行うことで、スピードとネットワークパフォーマンスを向上させます。
+
+---------------------------------------
+
+### AlloyEditor v2.0は、Reactの新しいメジャーバージョンを含むように更新されました。
+- **日付：**2019年2月4日
 - **JIRAチケット：** [LPS-90079](https://issues.liferay.com/browse/LPS-90079)
 
-#### 何が変わりましたか？
+#### 変更点
 
-AlloyEditorがバージョン2.0.0にアップグレードされました。これには、React v15からv16へのメジャーアップグレードが含まれています。
+AlloyEditorがバージョン2.0.0になり、React v15からv16へのメジャーアップグレードが行われました。
 
-React.createClass</code> の `は、React v15.5.0</a> （2017年4月）で <a href="https://reactjs.org/blog/2017/04/07/react-v15.5.0.html">廃止され、 <a href="https://reactjs.org/blog/2017/09/26/react-v16.0.html">がReact v16.0.0</a> （2017年9月）で削除されました。 AlloyEditorにバンドルされているすべてのボタンが更新され、 <code>React.createClass`ではなくES6クラス構文を使用するようになりました。
+`React.createClass` は、React v15.5.0</a> （2017年4月）で [非推奨、React v16.0.0](https://reactjs.org/blog/2017/04/07/react-v15.5.0.html) （2017年9月）でが廃止されました。 AlloyEditor にバンドルされているすべてのボタンは、 `React.createClass`の代わりに ES6 クラス構文を使用するように更新されました。</p> 
 
-#### 誰が影響を受けますか？
 
-これは、 `React.createClass`を使用して独自のボタンを作成したすべてのユーザーに影響します。 `createClass` 関数は使用できなくなり、実行時にアクセスしようとするとエラーが発生します。
 
-#### コードを更新するにはどうすればよいですか？
+#### 影響を受ける人
 
-次の2つの方法のいずれかでコードを更新する必要があります。
+この問題は、 `React.createClass`を使って独自のボタンを作成した人に影響します。 `createClass` 関数は使用できなくなり、実行時にアクセスしようとするとエラーが発生します。
 
-- ポートカスタムボタン `React.createClass` APIはES6使用する `クラス` で説明したように、APIを [ドキュメント反応させ、](https://reactjs.org/docs/react-component.html) 。 たとえば、以前の `createClass`ベースの実装</a>からから [ES6クラスベースのボタン](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx) に移動したときに加えられた変更を確認してください。</p></li> 
+
+
+#### コードの更新方法
+
+コードの更新は、2つの方法のいずれかで行う必要があります。
+
+- `</a>React.createClass API から、ES6 class API を使用するようにカスタムボタンを移植します。React のドキュメント で説明されています。` ``  [例えば、 [ES6 クラスベースのボタン](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx) を、以前の `createClass`-based implementation](https://github.com/liferay/alloy-editor/blob/2826ab9ceabe17c6ba0d38985baf8a787c23db43/src/ui/react/src/components/buttons/button-ol.jsx) から移行する際の変更点をご覧ください。</p></li> 
   
-  - 互換性アダプタを提供します。 [create-react-classパッケージ](https://www.npmjs.com/package/create-react-class) （ここでは [について説明](https://reactjs.org/docs/react-without-es6.html) ）をページに挿入して、 `createClass` APIを復元できます。</ul> 
+  - 互換性のあるアダプターを用意する。 [create-react-class パッケージ](https://www.npmjs.com/package/create-react-class) ( [の説明はこちら](https://reactjs.org/docs/react-without-es6.html) ) をページに注入することで、 `createClass` の API を復元することができます。</ul> 
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-この変更は、Reactの新しいメジャーバージョンを使用するために行われました。これにより、パフォーマンスと互換性が向上し、廃止されたAPIが削除されてバンドルサイズが削減されます。
+この変更は、より新しいメジャーバージョンのReactを使用するために行われ、パフォーマンスと互換性の改善をもたらし、非推奨のAPIを削除することでバンドルサイズを縮小しています。
 
 
 
@@ -394,32 +419,32 @@ React.createClass</code> の `は、React v15.5.0</a> （2017年4月）で <a hr
 
 ### dl.tabs.visibleポータルプロパティは非推奨になりました
 
-- **日付：** 2019-Apr-10
+- **日付：**2019年4月10日
 - **JIRAチケット：** [LPS-93948](https://issues.liferay.com/browse/LPS-93948)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
-`dl.tabs.visible` プロパティを使用すると、ユーザーはウィジェットページに配置されたときに、ドキュメントとメディアウィジェットのナビゲーションタブの表示を切り替えることができます。 この構成オプションは削除されたため、ナビゲーションページがウィジェットページに表示されることはありません。
+`dl.tabs.visible` プロパティを使用すると、ウィジェットページに配置したときに、Documents and Media ウィジェットのナビゲーションタブの表示/非表示を切り替えられるようになります。 この設定オプションは削除されたため、ウィジェットページにナビゲーションタブが表示されることはありません。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
-これは、 `dl.tabs.visible` プロパティを `true`に設定したすべてのユーザーに影響します。
+`dl.tabs.visible` プロパティを `true`に設定した人に影響します。
 
 
 
 #### コードを更新するにはどうすればよいですか？
 
-コードを変更する必要はありません。
+コードの変更は必要ありません。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-Documents & MediaはUXの観点から見直され、ウィジェットページのナビゲーションタブの削除はUIクリーンアッププロセスの一部でした。
+ドキュメント & メディアはUXの観点から見直され、ウィジェットページのナビゲーションタブの削除はUIクリーンアップの一環として行われました。
 
 
 
@@ -429,30 +454,30 @@ Documents & MediaはUXの観点から見直され、ウィジェットページ�
 
 ### ユーザーメニューを製品メニューから移動
 
-- **日付：** 2019年4月19日
+- **日付：**2019年4月19日
 - **JIRAチケット：** [LPS-87868](https://issues.liferay.com/browse/LPS-87868)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 ユーザーメニューはプロダクトメニューから削除され、ユーザーメニューエントリは、ユーザーのアバターによってトリガーされるドロップダウンメニューである新しいパーソナルメニューに移動されました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、プロダクトメニューのユーザーメニューセクションをカスタマイズしたすべてのユーザーに影響します。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
-カスタムユーザーメニューエントリを保持し、それらをパーソナルメニューで使用できるようにするには、 `PersonalMenuEntry` インターフェイスを実装する必要があります。 全てのパネルは、で登録アプリ `PanelCategoryKeys.USER`、 `PanelCategoryKeys.USER_MY_ACCOUNT`、及び `PanelCategoryKeys.USER_SIGN_OUT` パネルカテゴリキーはに変換されなければならない `PersonalMenuEntry`。
+カスタムユーザーメニューエントリーを保持し、パーソナルメニューで利用できるようにしたい場合は、 `PersonalMenuEntry` インターフェイスを実装する必要があります。 `PanelCategoryKeys.USER`、 `PanelCategoryKeys.USER_MY_ACCOUNT`、 `PanelCategoryKeys.USER_SIGN_OUT` のパネルカテゴリキーで登録されているすべてのパネルアプリは、 `PersonalMenuEntry`に変換しておく必要があります。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 製品ナビゲーションはUXの観点から見直されており、プロダクトメニューからユーザーメニューを削除し、メニューを独自のメニューに分割することで、ユーザーエクスペリエンスが向上します。
 
@@ -462,34 +487,34 @@ Documents & MediaはUXの観点から見直され、ウィジェットページ�
 
 
 
-### 国のリストから香港とマカオを削除
+### 国別一覧から香港・マカオを削除しました。
 
-- **日付：** 2019-Apr-26
+- **日付：**2019年4月26日
 - **JIRAチケット：** [LPS-82203](https://issues.liferay.com/browse/LPS-82203)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
-香港とマカオは国のリストから削除され、中国の地域としてそれぞれXianggang（地域コード：CN-91）およびAomen（地域コード：CN-92）としてリストされています。
-
-
-
-#### 誰が影響を受けますか？
-
-これは、住所で香港またはマカオを使用したすべての人に影響します。
+香港とマカオは国名から削除され、それぞれ湘江（リージョンコード：CN-91）、澳門（リージョンコード：CN-92）として中国の地域名として記載されています。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### 影響を受ける人
 
-コードを変更する必要はありません。 ただし、コードに香港とマカオの `countryId` をハードコーディングしている場合は、中国の `countryId`更新する必要があります。 香港とマカオへの参照は、対応する `regionId`で行う必要があります。
+これは、住所に香港やマカオを使用していた人に影響します。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### コードの更新方法
 
-1997年に香港が、1999年にマカオが引き渡された後、香港とマカオは現在、中国の特別行政区です。
+コードの変更は必要ありません。 ただし、香港とマカオの `countryId` をコードにハードコードしている場合は、中国の `countryId`に更新する必要があります。 香港とマカオへの言及は、対応する `regionId`で行う必要があります。
+
+
+
+#### 変更が行われた理由
+
+1997年の香港返還、1999年のマカオ返還を経て、現在、香港とマカオは中国の特別行政区となっています。
 
 
 
@@ -497,34 +522,34 @@ Documents & MediaはUXの観点から見直され、ウィジェットページ�
 
 
 
-### JGroupsが3.6.16から4.1.1にアップグレードされました
+### JGroups が 3.6.16 から 4.1.1 にアップグレードされました。
 
-- **日付：** 2019-Aug-15
+- **日付：**2019年8月15日
 - **JIRAチケット：** [LPS-97897](https://issues.liferay.com/browse/LPS-97897)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
-JGroupsがバージョン3.6.16から4.1.1にアップグレードされました。
-
-
-
-#### 誰が影響を受けますか？
-
-これは、クラスターリンクを使用しているすべてのユーザーに影響します。
+JGroups をバージョン 3.6.16 からバージョン 4.1.1 に更新しました。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### 影響を受ける人
 
-`portal.properties` の `cluster.link.channel.properties。*` プロパティは、接続文字列を値として受け入れなくなりました。現在は、構成XMLファイルへのファイルパスが必要です。 3.6.16の一部のプロトコルプロパティは削除され、4.1.1では解析されなくなりました。それに応じてプロトコルのプロパティを更新する必要があります。
+クラスターリンクをご利用の方に影響します。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### コードの更新方法
 
-このアップグレードは、セキュリティの問題を修正するために行われました。
+`portal.properties` の `cluster.link.channel.properties.*` プロパティは、値として接続文字列を受け付けなくなり、構成 XML ファイルへのファイルパスが必要になりました。 3.6.16 のプロトコルプロパティのいくつかは削除され、4.1.1 では解析されなくなりました。
+
+
+
+#### 変更が行われた理由
+
+今回のバージョンアップは、セキュリティ上の問題を修正するために行われました。
 
 
 
@@ -534,35 +559,35 @@ JGroupsがバージョン3.6.16から4.1.1にアップグレードされまし�
 
 ### Liferay AssetEntries_AssetCategories は使用されなくなりました
 
-- **日付：** 2019-Sep-11
-- **JIRAのチケット：** [LPS-99973](https://issues.liferay.com/browse/LPS-99973) 、 [LPS-76488](https://issues.liferay.com/browse/LPS-76488)
+- **日付：** 2019年9月11日
+- **JIRAのチケットです。** [LPS-99973](https://issues.liferay.com/browse/LPS-99973) , [LPS-76488](https://issues.liferay.com/browse/LPS-76488)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
-以前は、Liferayは、 `AssetEntryLocalService` と `AssetCategoryLocalService``AssetEntry` と `AssetCategory` 間の関係にマッピングテーブルと対応するインターフェイスを使用していました。 このマッピングテーブルと対応するインターフェイスは、テーブル `AssetEntryAssetCategoryRel` とサービス `AssetEntryAssetCategoryRelLocalService`置き換えられました。
-
-
-
-#### 誰が影響を受けますか？
-
-これは、 `AssetEntryLocalService` および `AssetCategoryLocalService`を通じて、 `AssetEntries_AssetCategories` 関係の古いインターフェースの呼び出しに依存するコンテンツまたはコードに影響します。
+以前は、Liferay は `AssetEntry` と `AssetCategory` の間の関係で、 `AssetEntryLocalService` と `AssetCategoryLocalService`にマッピングテーブルと対応するインターフェイスを使用しました。 このマッピングテーブルと対応するインタフェースは、テーブル `AssetEntryAssetCategoryRel` とサービス `AssetEntryAssetCategoryRelLocalService`に置き換わった。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### 影響を受ける人
 
-`AssetEntryAssetCategoryRelLocalService` 新しいメソッドを使用して、以前と同じデータを取得します。 メソッドのシグネチャは変更されていません。彼らはちょうど別のサービスに移転されました。
+これは、 `AssetEntries_AssetCategories` の関係で、 `AssetEntryLocalService` と `AssetCategoryLocalService`を通じて古いインターフェースの呼び出しに依存するすべてのコンテンツやコードに影響 します。
+
+
+
+#### コードの更新方法
+
+`AssetEntryAssetCategoryRelLocalService` の新しいメソッドを使用すると、従来と同じデータを取得できます。 メソッドのシグネチャは変更されておらず、別のサービスに移されただけです。
 
 **例**
 
-古い方法：
+昔のやり方。
 
 
 
 ```java
-List<AssetEntry> entries =
+リスト<AssetEntry> entries =
 AssetEntryLocalServiceUtil.getAssetCategoryAssetEntries(categoryId);
 
 for (AssetEntry entry: entries) {
@@ -571,7 +596,7 @@ for (AssetEntry entry: entries) {
 ```
 
 
-新しい方法：
+新しい方法です。
 
 
 
@@ -587,18 +612,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 ...
 
 @Reference
-プライベートAssetEntryAssetCategoryRelLocalService _assetEntryAssetCategoryRelLocalService;
+private AssetEntryAssetCategoryRelLocalService _assetEntryAssetCategoryRelLocalService;
 
-@参照
-プライベートAssetEntryLocalService _assetEntryLocalService;
+@Reference
+private AssetEntryLocalService _assetEntryLocalService;
 ```
 
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
-この変更は、 [LPS-76488](https://issues.liferay.com/browse/LPS-76488) に起因する変更が原因で行われました。これにより、開発者は特定のカテゴリのアセットのリストの順序を制御できます。
+この変更は、 [LPS-76488](https://issues.liferay.com/browse/LPS-76488) の結果、開発者が与えられたカテゴリのアセットリストの順序を制御できるようになったことに起因しています。
 
 
 
@@ -606,34 +631,34 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-### 自動タグ付けは手動で再構成する必要があります
+### 自動タグ付けは手動で再設定する必要があります。
 
-- **日付：** 2019年02月10日
+- **日付：**2019年10月02日
 - **JIRAチケット：** [LPS-97123](https://issues.liferay.com/browse/LPS-97123)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
-自動タグ設定の名前が変更され、再編成されました。 自動アップグレードプロセスはなくなったため、自動タグ付けを手動で再設定する必要があります。
-
-
-
-#### 誰が影響を受けますか？
-
-これは、SP1にアップグレードされ、自動タグ付けが構成および有効化されているDXP 7.2インストールに影響します。
+自動タグ付け設定の名称を変更し、再編成しました。 自動アップグレードプロセスはなくなりましたので、手動でAuto Taggingを再設定する必要があります。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### 影響を受ける人
 
-システム設定で自動タグ付けを再設定する必要があります（詳細は、 [公式ドキュメント](https://help.liferay.com/hc/ja/articles/360029041551-Configuring-Asset-Auto-Tagging) を参照してください）。 古い構成インターフェースを参照するコードは、新しいものを使用するように更新する必要があります。
+この問題は、SP1にアップグレードされたDXP 7.2のインストールで、自動タグ付けが設定され、有効になっている場合に発生します。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### コードの更新方法
 
-この変更により、以前に分割された構成インターフェースが統合され、ユーザーエクスペリエンスが向上します。
+システム設定で自動タグ付けを再設定する必要があります（詳細は、 [公式ドキュメント](https://help.liferay.com/hc/ja/articles/360029041551-Configuring-Asset-Auto-Tagging) を参照してください）。 古い設定インタフェースを参照しているコードは、新しいインタフェースを使用するように更新する必要があります。
+
+
+
+#### 変更が行われた理由
+
+この変更により、これまで分割されていた設定インターフェースが統一され、ユーザーエクスペリエンスが向上しました。
 
 
 
@@ -643,32 +668,32 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### ブログ画像ポータルプロパティをシステム設定に移動
 
-- **日付：** 2019年02月10日
+- **日付：**2019年10月02日
 - **JIRAチケット：** [LPS-95298](https://issues.liferay.com/browse/LPS-95298)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
-ブログの画像構成が `portal.properties` からシステム設定に移動されました。 自動アップグレードプロセスがないため、カスタムのブログ画像のプロパティを手動で再設定する必要があります。
-
-
-
-#### 誰が影響を受けますか？
-
-これは、SP1にアップグレードされ、 `blogs.image.max.size` および `blogs.image.extensions` プロパティのカスタム値を持つDXP 7.2インストールに影響します。
+ブログ画像の設定を `portal.properties` から System Settings に移動しました。 自動アップグレードプロセスがないため、カスタムBlogsイメージのプロパティは手動で再設定する必要があります。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### 影響を受ける人
 
-カスタムブログ画像のプロパティ値を保持する場合は、 ［**設定**］ &rarr; ［**ブログ**］ &rarr; ［**ファイルアップロード**］ の［システム設定］で再構成する必要があります。 新しいプロパティを使用するには、古いプロパティを参照するコードを更新する必要があります。
+この問題は、SP1にアップグレードしたDXP 7.2のインストールで、 `blogs.image.max.size` と `blogs.image.extensions` のプロパティにカスタム値を持っている場合に発生します。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### コードの更新方法
 
-この変更は、再起動せずにブログの画像プロパティを設定できるように行われたものです。
+カスタムブログ画像のプロパティ値を保持する場合は、*［設定］* &rarr; *［ブログ］* &rarr; *［ファイルアップロード］*の［システム設定］で再構成する必要があります。 古いプロパティを参照しているコードは、新しいコンフィギュレーション・インターフェースを使用するように更新する必要があります。
+
+
+
+#### 変更が行われた理由
+
+この変更は、ブログ画像のプロパティを再起動せずに設定できるようにするために行われました。
 
 
 
@@ -678,32 +703,32 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### キャッシュブートストラップ機能を削除
 
-- **日付：** 2020-Jan-08
+- **日付：**2020年1月08日
 - **JIRAチケット：** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 キャッシュブートストラップ機能は削除されました。 これらのプロパティは、キャッシュブートストラップを有効化/構成するために使用できなくなりました。
 
-`ehcache.bootstrap.cache.loader.enabled`、 `ehcache.bootstrap.cache.loader.properties.default`、 `ehcache.bootstrap.cache.loader.properties。${specific.cache.name}`。
+`ehcache.bootstrap.cache.loader.enabled`, `ehcache.bootstrap.cache.loader.properties.default`, `ehcache.bootstrap.cache.loader.properties.${specific.cache.name}`.
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、上記のプロパティを使用するすべてのユーザーに影響します。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 削除された機能を直接置き換えるものはありません。 それに依存するコードがある場合は、自分で実装する必要があります。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 この変更は、セキュリティの問題を回避するために行われました。
 
@@ -715,18 +740,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### ContentTransformerListenerをデフォルトで無効化
 
-- **日付：** 2020年5月25日
+- **日付：**2020年5月25日
 - **JIRAチケット：** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
-`ContentTransformerListener` はデフォルトで無効になりました。
+`ContentTransformerListener` はデフォルト設定で無効になりました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、`ContentTransformerListener`によって提供されるレガシーなWebコンテンツ機能を使用したLiferay Portalのインストールに影響します。例えば、別のWebコンテンツ内にWebコンテンツを埋め込む、レガシーなエディット・イン・プレース・インフラストラクチャ、トークンの置換(`@article_group_id@`、`@articleId;elementName@`)などです。
 
@@ -750,18 +775,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMDataProviderのメソッドを置き換え
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 `com.liferay.dynamic.data.mapping.data.provider.DataProvider`の`getData`メソッドの`ddmDataProviderContext`パラメーター（`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderContext`型）が、`ddmDataProviderRequest`（`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderRequest`型）に置き換えられました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、置き換えられたメソッドを使用するすべてのユーザーに影響します。
 
@@ -785,18 +810,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMDataProviderRequestのコンストラクターを削除
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 コンストラクターメソッドが`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderRequest`から削除されました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、削除されたコンストラクターを使用するすべてのユーザーに影響します。
 
@@ -820,12 +845,12 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMDataProviderRequestのメソッドを削除
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 次のメソッドが`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderRequest`から削除されました。
 
@@ -837,7 +862,7 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、削除されたメソッドを使用していたすべてのユーザーに影響します。
 
@@ -865,18 +890,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMDataProviderRequestのメソッドを置き換え
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderRequest`の`getDDMDataProviderInstanceId`メソッドが`getDDMDataProviderId`に置き換えられました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、置き換えられたメソッドを使用していたすべてのユーザーに影響します。
 
@@ -900,18 +925,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMDataProviderResponseのメソッドを削除
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 メソッド`error`、`of`、および`getDataMap`がクラス`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponse`から削除されました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、削除されたメソッドを使用していたすべてのユーザーに影響します。
 
@@ -941,18 +966,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMDataProviderResponseのメソッドを置き換え
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponse`の`get`メソッドが`getOutputOptional`に置き換えられました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、置き換えられたメソッドを使用していたすべてのユーザーに影響します。
 
@@ -976,18 +1001,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMDataProviderResponseのEnumを置き換え
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 ローカルenum `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponse.Status`が、`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponse`から`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponseStatus`に移動されました その結果、`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponse`からの`getStatus`のデータ型が、`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponse.Status`から`com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponseStatus`に変更されました。 
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、置き換えられたenumを使用していたすべてのユーザーに影響します。
 
@@ -1011,18 +1036,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMDataProviderResponseOutputを削除
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponseOutput`が削除されました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、削除されたクラスを使用していたすべてのユーザーに影響します。
 
@@ -1046,18 +1071,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMDataProviderTrackerのメソッドを削除
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderTracker`の`getDDMDataProviderContextContributors`メソッドが削除されました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、削除されたメソッドを使用していたすべてのユーザーに影響します。
 
@@ -1081,12 +1106,12 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMFormInstanceRecordLocalServiceのメソッドを置き換え
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-81564](https://issues.liferay.com/browse/LPS-81564)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 この変更は、`com.liferay.dynamic.data.mapping.service.DDMFormInstanceRecordLocalService`、`com.liferay.dynamic.data.mapping.service.DDMFormInstanceRecordLocalServiceUtil`、および`com.liferay.dynamic.data.mapping.service.DDMFormInstanceRecordLocalServiceWrapper`に対して行われました。
 
@@ -1094,7 +1119,7 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、置き換えられたメソッドを使用していたすべてのユーザーに影響します。
 
@@ -1118,12 +1143,12 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### DDMStructureServiceのメソッドを削除
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 以下にリストされているメソッドが、`com.liferay.dynamic.data.mapping.service.DDMStructureService`、`com.liferay.dynamic.data.mapping.service.DDMStructureServiceUtil`、および`com.liferay.dynamic.data.mapping.service.DDMStructureServiceWrapper`クラスから削除されました。
 
@@ -1143,19 +1168,19 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、削除されたメソッドを使用していたすべてのユーザーに影響します。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 削除されたメソッドを、残りの`addStructure`メソッドと`updateStructure`メソッドのいずれかに置き換えます。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 これらのメソッドは、Liferay Portal 7.0で廃止されました。
 
@@ -1167,12 +1192,12 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### 動的データマッピング永続性クラスのメソッドを削除
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 メソッド`fetchByPrimaryKeys`および`getBadColumnNames`が次のクラスから削除されました。
 
@@ -1194,19 +1219,19 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、削除されたメソッドを使用していたすべてのユーザーに影響します。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 削除されたメソッドを、基本クラス`com.liferay.portal.kernel.service.persistence.impl.BasePersistenceImpl`で提供されている対応するメソッドに置き換えます。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 基本クラス`com.liferay.portal.kernel.service.persistence.impl.BasePersistenceImpl`で提供されるデフォルトの実装があるため、`fetchByPrimaryKeys`のカスタム実装は必要ありません。
 
@@ -1220,12 +1245,12 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### 動的データマッピングユーティリティクラスのメソッドを削除
 
-- **日付：** 2020年7月14日
+- **日付：**2020年7月14日
 - **JIRAチケット：** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 メソッド`getBadColumnNames`が次のクラスから削除されました。
 
@@ -1242,19 +1267,19 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、削除されたメソッドを使用していたすべてのユーザーに影響します。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 削除されたメソッドを、基本クラス`com.liferay.portal.kernel.service.persistence.impl.BasePersistenceImpl`で提供されている対応するメソッドに置き換えます。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 `getBadColumnNames`は、永続性ユーティリティ（`com.liferay.dynamic.data.mapping.service.persistence.DDMContentUtil`など）から自動的に削除され、クラスがService Builderによって生成されたときに永続性の実装（`com.liferay.dynamic.data.mapping.service.persistence.impl.DDMContentPersistenceImpl`など）に保持されました。  
 
@@ -1264,32 +1289,32 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-### module.framework.properties.felix.fileinstall.\ **ポータルプロパティの名前をmodule.framework.properties.file.install.\** に変更
+### module.framework.properties.felix.fileinstall.\*ポータルプロパティの名前をmodule.framework.properties.file.install.\*に変更
 
-- **日付：** 2020年8月8日
+- **日付：**2020年8月8日
 - **JIRAチケット：** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 `module.framework.properties.felix.fileinstall.`で始まるポータルプロパティの名前が `module.framework.properties.file.install.`で始まるように変更されました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、`module.framework.properties.felix.fileinstall.`で始まるポータルプロパティを持っているすべてのユーザーに影響します。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 `module.framework.properties.felix.fileinstall.`で始まるポータルプロパティの名前を`module.framework.properties.file.install.`で始まる名前に変更します。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 この変更は、Apache Felix Fileinstallのインライン化を反映しています。 Liferayがこの機能を管理および維持するようになったため、プロパティの名前が適切に変更されました。
 
@@ -1301,12 +1326,12 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### buffered.increment.enabledポータルプロパティの置き換え
 
-- **日付：** 2020年10月21日
+- **日付：**2020年10月21日
 - **JIRAチケット：** [LPS-122159](https://issues.liferay.com/browse/LPS-122159)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 `buffered.increment.enabled`ポータルプロパティを使用したビューカウント管理の有効化と無効化は、`view.count.enabled`ポータルプロパティを使用するように置き換えられました。
 
@@ -1316,7 +1341,7 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、`buffered.increment.enabled=false`ポータルプロパティ設定を持っているすべてのユーザーに影響します。
 
@@ -1324,7 +1349,7 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 `buffered.increment.enabled=false`を`view.count.enabled=false`に置き換えます。
 
@@ -1332,7 +1357,7 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 これにより、ビューカウント動作の管理が容易になります。
 
@@ -1344,30 +1369,30 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### module.framework.properties.file.install.optionalImportRefreshScopeポータルプロパティの削除
 
-- **日付：** 2021年2月3日
+- **日付：**2021年2月3日
 - **JIRAチケット：** [LPS-122008](https://issues.liferay.com/browse/LPS-122008)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 `module.framework.properties.file.install.optionalImportRefreshScope`ポータルプロパティが削除されました。 ファイルのインストールでは、更新が必要なオプションのパッケージを含むバンドルをスキャンするときに、常に管理対象バンドルのみがチェックされるようになりました。
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、`module.framework.properties.file.install.optionalImportRefreshScope`ポータルプロパティを指定しているすべてのユーザーに影響します。
 
 
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 `module.framework.properties.file.install.optionalImportRefreshScope`プロパティを削除します。 他の動作を使用するようにファイルのインストールを構成することはできません。
 
 
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 代替動作が望まれるケースはほとんどありませんでした。 ファイルのインストールはバンドルをLiferayにインストールする主な方法であるため、すべてのバンドルはデフォルトでLiferayによって管理されます。 この機能をサポートする分岐ロジックを削除すると、コードの保守性と可読性が向上します。
 
@@ -1379,18 +1404,18 @@ _assetEntryAssetCategoryRelLocalService.getAssetEntryPrimaryKeys（assetCategory
 
 ### .cfgファイルに.cfg形式を使用
 
-- **日付：** 2021年2月21日
+- **日付：**2021年2月21日
 - **JIRAチケット：** [LPS-128031](https://issues.liferay.com/browse/LPS-128031)
 
 
 
-#### 何が変わりましたか？
+#### 変更点
 
 この変更の前は、`.cfg`ファイルは`.cfg`または`.config`形式を使用できました。 現在、`.cfg`構成ファイルは [ここ](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#property-files-cfg) で定義されている`.cfg`形式を使用する必要があります。 
 
 
 
-#### 誰が影響を受けますか？
+#### 影響を受ける人
 
 これは、`.config`形式を使用している`.cfg`ファイルを持っているすべてのユーザーに影響します。
 

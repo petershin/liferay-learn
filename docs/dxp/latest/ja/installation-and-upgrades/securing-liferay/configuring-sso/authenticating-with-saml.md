@@ -1,3 +1,12 @@
+---
+toc:
+- ./authenticating-with-saml/saml-authentication-process-overview.md
+- ./authenticating-with-saml/configuring-saml-at-the-system-level.md
+- ./authenticating-with-saml/saml-admin.md
+- ./authenticating-with-saml/configuring-saml-at-the-instance-level.md
+- ./authenticating-with-saml/saml-settings.md
+---
+
 # SAMLによる認証
 
 ```{toctree}

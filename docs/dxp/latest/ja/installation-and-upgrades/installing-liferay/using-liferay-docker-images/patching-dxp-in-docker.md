@@ -140,7 +140,7 @@ DXPは、アーティファクトとファイルを使用して新しいコン�
 
 ここでは、新しい[パッチツール](../../maintaining-a-liferay-installation/reference/installing-the-patching-tool.md)のバージョンをインストールする方法を説明します。
 
-1. [カスタマーポータル](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191019&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191066). から最新のパッチツールをダウンロードします。
+1. [カスタマーポータル](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191019&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191066) . から最新のパッチツールをダウンロードします。
 
 1. パッチツールのZIPファイル名の形式が`patching-tool-x.y.z.zip`でない場合は、その形式を使用するよう名前を変更します。 例:
 

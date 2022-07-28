@@ -1,3 +1,14 @@
+---
+toc:
+- ./maintaining-a-liferay-installation/backing-up.md
+- ./maintaining-a-liferay-installation/updating-liferay.md
+- ./maintaining-a-liferay-installation/updating-previous-versions-of-liferay.md
+- ./maintaining-a-liferay-installation/applying-a-hotfix.md
+- ./maintaining-a-liferay-installation/maintaining-clustered-installations.md
+- ./maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md
+- ./maintaining-a-liferay-installation/reference.md
+---
+
 # Liferay DXPインストールの管理
 
 ```{toctree}
@@ -19,5 +30,5 @@ Liferay DXP 7.3 SP3以降および7.4 GA1以降、Liferayはアップデート�
 Liferayはバグ修正や機能の追加を行っていくため、最新情報を把握しておく必要があります。 詳細については、 [Liferayのアップデート](./maintaining-a-liferay-installation/updating-liferay.md) を参照してください。 サブスクライバーは、DXPで確認されたミッションクリティカルな問題に対して[ホットフィックス](./maintaining-a-liferay-installation/applying-a-hotfix.md)をリクエストすることができます。
 
 ```{important}
-以前のバージョンのLiferayについては、[Updating Previous Versions of Liferay](./maintaining-a-liferay-installation/updating-previous-versions-of-liferay.md)または [以前のDXPバージョンにパッチを適用](./maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md) を参照してください。
+以前のバージョンのLiferayについては、 [Liferayの旧バージョンをアップデートする](./maintaining-a-liferay-installation/updating-previous-versions-of-liferay.md) または [以前のDXPバージョンにパッチを適用](./maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md) を参照してください。
 ```

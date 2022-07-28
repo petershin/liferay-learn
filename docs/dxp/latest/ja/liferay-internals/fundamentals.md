@@ -9,7 +9,8 @@ toc:
 - ./fundamentals/configuring-dependencies.md
 - ./fundamentals/using-the-gogo-shell.md
 ---
-# 基礎
+
+# Fundamentals
 
 ```{toctree}
 :maxdepth: 3
@@ -24,20 +25,20 @@ fundamentals/configuring-dependencies.md
 fundamentals/using-the-gogo-shell.md
 ```
 
-Liferay開発プロジェクトは、主に単純な.jarファイルで構成されています。 これらには、OSGiモジュールにするいくつかの追加の構成ファイルが含まれていますが、Javaを知っている人なら誰でも簡単に理解できます。
+Liferayの開発プロジェクトは、主に単純な.jarファイルから構成されています。 これらはOSGiモジュールにするためにいくつかの余分な設定ファイルを含んでいますが、Javaを知っている人なら簡単に理解できるものです。
 
-OSGiの強力な機能の1つは、DXPのAPIにアクセスするプロジェクトを構築し、さまざまな機能を拡張およびオーバーライドしたり、新しいソフトウェアを展開用にパッケージ化したりするための単一の一貫した方法があることです。 これらのプロジェクトまたはモジュールは、機能性を相互に依存し、実行時に操作できるエコシステムを形成します。
+OSGiのパワーの1つは、DXPのAPIにアクセスするプロジェクトを構築し、さまざまな機能を拡張・上書きしたり、新しいソフトウェアをデプロイ用にパッケージ化するための、一貫した単一の方法を持つことです。 これらのプロジェクト（モジュール）は、互いに機能を依存し合い、実行時に操作できるエコシステムを形成しています。
 
 これらは、Liferay DXPのエコシステムの基本です。
 
-* [**モジュールプロジェクト**](./fundamentals/module-projects.md) では、OSGiモジュールとは何か、そのプロジェクト構造、およびLiferayのOSGiフレームワークでの使用方法について説明します。
+* ** [モジュールプロジェクト](./fundamentals/module-projects.md) ** OSGi モジュールとは何か、そのプロジェクト構造、そして Liferay の OSGi フレームワークでどのように使用されるかを説明します。
 
-* [**依存関係の構成**](./fundamentals/configuring-dependencies.md) は、プロジェクトでJavaパッケージを使用するためにLiferayアーティファクトとサードパーティのアーティファクトを識別および構成する方法を示しています。
+* ** [依存関係の構成](./fundamentals/configuring-dependencies.md) ** は、Liferayのアーティファクトとサードパーティのアーティファクトを特定し、それらのJavaパッケージをプロジェクトで使用するように設定する方法を示しています。
 
-* [**インポート**](./fundamentals/importing-packages.md) および [パッケージのエクスポート](./fundamentals/exporting-packages.md) は、他のモジュールの機能を使用し、他のモジュールが使用できるように機能を公開する方法を示しています。 Liferayのツールは、パッケージの使用を検出し、パッケージのインポートを自動的に指定します。
+* **[Importing](./fundamentals/importing-packages.md) and [パッケージのエクスポート](./fundamentals/exporting-packages.md) ** では、他のモジュールの機能を利用する方法と、他のモジュールが利用できるように自分の機能を公開する方法を紹介します。 Liferayのツールは、パッケージの使用を検出し、パッケージのインポートを自動的に指定します。
 
-* [**セマンティックバージョニング**](./fundamentals/semantic-versioning.md) は、Liferayが新しいバージョンに進化するときにコードへの依存関係を管理する方法を説明します。これにより、同じメカニズムを使用してバージョンを管理し、コードの破損を回避できます。
+* ** [セマンティックバージョニング](./fundamentals/semantic-versioning.md) ** は、Liferayが新しいバージョンに進化する際に、どのようにコードの依存関係を管理するかについて説明しています。
 
-* [**Gogo Shell**](./fundamentals/using-the-gogo-shell.md) は、シェルにコマンドを発行することにより、コンポーネントの調査、問題のデバッグ、および実行時のデプロイメントの管理方法を示しています。
+* **[Gogo Shell](./fundamentals/using-the-gogo-shell.md)** では、シェルにコマンドを発行することにより、実行時にコンポーネントを調べたり、問題をデバッグしたり、デプロイメントを管理する方法を示しています。
 
-最初に、 [モジュールプロジェクトについて学習します](./fundamentals/module-projects.md)。
+まず、 [モジュールプロジェクト](./fundamentals/module-projects.md)について学ぶことができます。

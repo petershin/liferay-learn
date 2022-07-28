@@ -1,16 +1,13 @@
 ---
 toc:
-- ./developer-guide/apis.md
+- ./developer-guide/knowledge-base-api-basics.md
 ---
-- ./# Developer Guide
+# Developer Guide
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 
-developer-guide/apis.md
+developer-guide/knowledge-base-api-basics.md
 ```
 
-APIs
-----
-
-Coming soon!
+* [Knowledge Base API Basics](./developer-guide/knowledge-base-api-basics.md)

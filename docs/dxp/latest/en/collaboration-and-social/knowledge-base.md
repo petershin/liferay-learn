@@ -44,6 +44,6 @@ knowledge-base/developer-guide.md
 * [Knowledge Base Importer Faq](./knowledge-base/knowledge-base-importer-faq.md)
 * [Knowledge Base System Settings](./knowledge-base/knowledge-base-system-settings.md)
 
-Developer Guide
+## Developer Guide
 
-Coming soon!
+* [Knowledge Base API Basics](./knowledge-base/developer-guide/knowledge-base-api-basics.md)

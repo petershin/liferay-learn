@@ -163,7 +163,13 @@ _External Reference:_ See the Elasticsearch [Function Score Query](https://www.e
 
 ### Boost Proximity
 
-Boost contents in closer proximity to the search user with a Gaussian function. Additional setup is required. See [Personalizing the Search Experience](./personalizing-the-search-experience.md) for details.
+Boost contents in closer proximity to the search user with a Gaussian function.
+
+The Boost Proximity element uses the [Ipstack](https://ipstack.com) service to boost search results closer to a user's location, as marked by a [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) field in the document.
+
+A search document must have a [geopoint field](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) to work with the Ipstack service and the Boost Proximity Element. Liferay includes compatible Geolocation fields that you can add as a Custom Field to existing assets.
+
+See [Personalizing the Search Experience](./personalizing-the-search-experience.md) for details on setting up the IPStack service, using a custom geolocation field, and adding the Boost Proximity element to a Blueprint.
 
 ### Boost Tagged Contents
 

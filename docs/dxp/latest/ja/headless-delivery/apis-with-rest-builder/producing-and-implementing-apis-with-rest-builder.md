@@ -5,14 +5,12 @@ RESTビルダーを使用すると、構築したいAPIを定義でき、RESTビ
 ## サンプルのREST APIをデプロイする
 
 RESTビルダーの動作を確認するために、カタログ内のIDによってダミー製品を取得するサンプルAPIをデプロイできます。 この簡単な例がどのように機能するかを理解したら、独自のアプリケーション用のAPIを作成できます。
+```{include} /_snippets/run-liferay-portal.md
+```
 
-1. Liferay DXP Dockerイメージを起動します。
+次に、以下の手順に従います。
 
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-    ```
-
-2. [Acme Foo API](./liferay-r3b2.zip) を含む`.zip`アーカイブをダウンロードして解凍します。
+1. Download and unzip the `.zip` archive containing the [Acme Foo API](./liferay-r3b2.zip) :
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O
@@ -22,7 +20,7 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
     unzip liferay-r3b2.zip
     ```
 
-3. サンプルをビルドしてデプロイします。
+1. サンプルをビルドしてデプロイします。
 
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
@@ -32,16 +30,16 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
     このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
     ```
 
-4. `api`バンドルと`impl`バンドルの両方のDockerコンテナコンソールでのデプロイを確認します。
+1. `api`バンドルと`impl`バンドルの両方のDockerコンテナコンソールでのデプロイを確認します。
 
     ```
     STARTED com.acme.headless.r3b2.api_1.0.0 
     STARTED com.acme.headless.r3b2.impl_1.0.0
     ```
 
-5. DXPインスタンスにログインし、 **グローバルメニュー**（![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; ［**コントロールパネル**］ &rarr; ［**Gogoシェル**］ に移動します。
+1. DXPインスタンスにログインし、_グローバルメニュー_（![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; _［コントロールパネル］_ &rarr; _［Gogoシェル］_ に移動します。
 
-6. Gogoシェルプロンプトで、次のコマンドを入力します。
+1. Gogoシェルプロンプトで、次のコマンドを入力します。
 
     ```
     jaxrs:check
@@ -51,10 +49,10 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
 
     ![新しくデプロイされたAPI（Liferay.Headless.R3B2という名前）は、コマンドの結果として一覧表示され、使用できるようになります。](./producing-and-implementing-apis-with-rest-builder/images/01.png)
 
-7. ターミナルから次のコマンドを実行し、`{fooId}`を1〜3の数字に置き換えて、APIをテストします。
+1. ターミナルから次のコマンドを実行し、`{fooId}`を1〜3の数字に置き換えて、APIをテストします。
 
     ```bash
-    curl -u 'test@liferay.com:test' "http://localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}"
+    curl -u 'test@liferay.com:learn' "http://localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}"
     ```
 
     クエリは、JSONオブジェクトでラップされた対応する製品のID、名前、および説明を返します。

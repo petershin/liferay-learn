@@ -1,79 +1,64 @@
 # RESTサービスの使用
 
-Liferay DXPには、ほとんどのアプリケーションに対応しているRESTサービスが含まれています。 これらのサービスは完全に [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery) に準拠しています。 ここでは、それらを使用する方法を学びます。 必要なステップはわずか3つです。
+Liferay DXP は、そのアプリケーションのほとんどに REST サービスを含んでいます。 これらのサービスは、 [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery) に完全に準拠しています。 ここでは、それらを使用する方法を紹介します。 必要なステップはわずか3つです。
 
-1. 使用するサービスを特定します。
+1. 利用したいサービスを特定する。
 1. 必要なデータを含むサイトを特定します。
-1. データにアクセスできる資格情報を使用してサービス呼び出しを行います。
+1. データにアクセスできるクレデンシャルを使用して、サービスコールを行う。
 
-この例では、Liferay DXPの新規インストールでDockerイメージを使用しています。
-
-<a name="identify-the-service-to-consume" />
+この例では、Liferay DXP を新規にインストールした Docker イメージを使用しています。
 
 ## 使用するサービスを特定する
 
-RESTサービスを呼び出すには、実行中のLiferay DXPが必要です。
-
+そのRESTサービスを呼び出すには、Liferay DXPが動作している必要があります。
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Liferay DXPのRESTサービスは、次のURLで公開されています。
+Liferay DXP's REST services are published at this URL:
 
 ```
 http［s］://［hostname］:［port］/o/api
 ```
 
-Dockerインスタンスでは、次の場所にあります。
+On your Docker instance, you can find them here:
 
 ```
 http://localhost:8080/o/api
 ```
 
-APIはいくつかのカテゴリに分類されます。 この例では、`BlogPosting`サービスを使用して［Blogs］ウィジェットからブログ投稿を取得していますが、この手順は公開されているどのサービスでも使用できます。
+APIs are divided into several categories. This example uses the `BlogPosting` service to retrieve blog posts from the Blogs widget, but you can use this procedure with any of the published services. 
 
-1. **Headless Delivery** カテゴリを選択します。 このカテゴリには `Blog Posting` サービスが含まれています。 フィルターを使用してサービスを検索できます。
+1. Select the *Headless Delivery* category. This category contains the `BlogPosting` service. You can use the filter to search for services. 
 
-2.  [**スキーマ表示**]ボタンをクリックすると、画面の右側に、このカテゴリのすべてのスキーマのリストが表示されます。
+1. Click the *Show Schemas* button, and on the right side of the screen a list of all the schemas in this category appears. 
 
-1. ブラウザーのタブをスキーマブラウザーに開いたままにします。 `Blog Posting`をPUTする場合は、そのスキーマが必要です。
+1. Keep a browser tab open to the schema browser; when you want to PUT a `BlogPosting`, you'll need its schema. 
 
-![スキーマブラウザを使用すると、必要なサービスを見つけて呼び出すことができます。 ](./consuming-rest-services/images/01.png)
+![The schema browser makes it convenient to find and call the service you want. ](./consuming-rest-services/images/01.png)
 
-<a name="identify-the-site-containing-the-data" />
+## Identify the Site Containing the Data
 
-## データを含むサイトを特定する
+Now you must find the default Site ID:
 
-ここで、デフォルトのサイトIDを見つける必要があります。
+1. Open the Site menu (![Site menu](../../images/icon-menu.png)) and go to *Configuration* &rarr; *Site Settings*.
+1. Under the Platform section, click *Site Configuration*. For Liferay DXP versions 7.3 and earlier, click the *General* tab.
+1. サイトIDの下でサイト識別子を見つけます。
 
-1. ブラウザで`http://localhost:8080`にアクセスします。
+   ![Identify the Site Id under the Site Settings and Site Configuration option.](./consuming-rest-services/images/03.png)
 
-1.  [Control Panel] → [Sites] → [Sites]に移動します。
+## Make the Service Call Using Credentials with Access to the Data
 
-1.  [アクション]ボタンをクリックし、 [**Go to Site Settings**] を選択します。
+Now you have everything you need to make the call. すべてのWebサービスには、要求しているデータにアクセスできる資格情報を使用してアクセスする必要があります。 最も簡単な方法は、URLで資格情報データを渡す基本認証を使用することです。 これは安全ではないため、この方法は開発時にのみ使用すべきです。 For production, your application should authorize users via [OAuth2](../using-oauth2/using-oauth2.md).
 
-   ![［サイト設定］と［Site Configuration］オプションでサイトIDを特定します。](./consuming-rest-services/images/03.png)
+The examples below use [cURL](https://curl.haxx.se) .
 
-<a name="make-the-service-call-using-credentials-with-access-to-the-data" />
+### Calling a Service Using Basic Auth (During Development Only)
 
-<a name="make-the-service-call-using-credentials-with-access-to-the-data" />
-
-## データにアクセスできる認証情報を使用してサービス呼び出しを行う
-
-これで、呼び出しを行うために必要なものがすべて揃いました。 すべてのWebサービスには、要求しているデータにアクセスできる資格情報を使用してアクセスする必要があります。 最も簡単な方法は、URLで資格情報データを渡す基本認証を使用することです。 これは安全ではないため、この方法は開発時にのみ使用すべきです。 本番環境では、アプリケーションは[OAuth2](../using-oauth2/using-oauth2.md)を介してユーザーを承認する必要があります。
-
-以下の例では [ curl](https://curl.haxx.se) を使用しています。
-
-<a name="calling-a-service-using-basic-auth-during-development-only" />
-
-### 基本認証を使用したサービスの呼び出し（開発中のみ）
-
-基本認証を使用してサービスを呼び出すには、URLに資格情報を指定します。
+To call a service using Basic Auth, provide the credentials in the URL:
 
 ```bash
 curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/" -u 'test@liferay.com:learn'
 ```
-
-<a name="calling-a-service-using-oauth2" />
 
 ### OAuth2を使用してサービスを呼び出す
 
@@ -82,8 +67,6 @@ curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/"
 ```bash
 curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings
 ```
-
-<a name="getting-and-posting-data" />
 
 ## データの取得と投稿
 
@@ -113,22 +96,20 @@ curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://l
 }
 ```
 
-まず、ブログエントリを投稿します。
-
-<a name="posting-a-blog-entry" />
+まず、ブログの記事を投稿します。
 
 ### ブログエントリの投稿
 
-スキーマブラウザーを使用して、ブログエントリを投稿する方法を学ぶことができます。
+スキーマブラウザを使って、ブログエントリーの投稿方法を学ぶことができます。
 
-![サービスのスキーマは、Liferay DXPインスタンスで公開されます。](./consuming-rest-services/images/02.png)
+![任意のサービスのスキーマは、Liferay DXP インスタンスで公開されます。](./consuming-rest-services/images/02.png)
 
-1. スキーマブラウザを含むブラウザタブに戻ります。 右側にある `BlogPosting` エントリをクリックして、そのスキーマを表示します（上記を参照）。 これは `BlogPosting`データ構造全体を示していますが、必須フィールドは2つだけです。
+1. スキーマブラウザを含むブラウザタブに戻ります。 右側で、 `BlogPosting` のエントリーをクリックして、そのスキーマを表示します（上図参照）。 これは、 `BlogPosting`のデータ構造全体を示しているが、必須フィールドは2つだけである。
 
     * `articleBody`
     * `headline`
 
-2. ブログエントリを投稿する単純なJSONドキュメントを作成します。
+2. ブログのエントリーを投稿するための簡単なJSONドキュメントを構築します。
 
     ```json
     {
@@ -143,7 +124,7 @@ curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://l
     curl --header "Content-Type: application/json" --request POST --data '{ "headline": "Test Blog Entry from REST Services", "articleBody": "This article was posted via REST services provided by Liferay DXP." }' http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings -u test@liferay.com:learn
     ```
 
-Liferay DXPは、ブログエントリの完全なJSON表現を返します。
+Liferay DXP は、ブログエントリーの完全な JSON 表現を返します。
 
 ```json
 {
@@ -193,8 +174,6 @@ Liferay DXPは、ブログエントリの完全なJSON表現を返します。
 }
 ```
 
-<a name="getting-all-blog-entries" />
-
 ### すべてのブログエントリを取得する
 
 ここで、最初のクエリを繰り返して、投稿したブログエントリが表示されることを確認できます。
@@ -203,7 +182,7 @@ Liferay DXPは、ブログエントリの完全なJSON表現を返します。
 curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/" -u 'test@liferay.com:learn'
 ```
 
-ブログエントリのリストが返されます。 追加したエントリは、リスト内の唯一のエントリです。
+ブログのエントリーの一覧を返します。 追加されたエントリーは、リストの中の唯一のものです。
 
 ```json
 {
@@ -273,35 +252,31 @@ curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/"
 }
 ```
 
-<a name="getting-a-single-blog-entry" />
-
 ### 単一のブログエントリを取得する
 
-リクエストを行うたびに、Liferay DXPは他の考えられるエンドポイントを返します。 そのうちの1つは、IDによって単一のブログエントリを取得することです。 エントリのIDがわかっている場合は、それを取得できます。
+あなたがリクエストをするたびに、Liferay DXP は他の可能なエンドポイントを返してきました。 そのひとつが、ひとつのブログのエントリーをIDで取得することです。 エントリーのIDがわかっていれば、取得することができます。
 
 ```bash
 curl "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215" -u test@liferay.com:learn
 ```
 
-同じブログエントリが返されます。
-
-<a name="deleting-a-blog-entry" />
+これは、同じブログエントリーを返します。
 
 ### ブログエントリの削除
 
-IDがわかっている場合は、ブログエントリを削除することもできます。
+そのIDが分かれば、ブログのエントリーを削除することも可能です。
 
 ```bash
 curl -X DELETE "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215" -u test@liferay.com:learn
 ```
 
-この場合、何も返されませんが、上記のようにリクエストすることで、エントリが削除されたことを確認できます。
+この場合、何も返されませんが、上記のようにリクエストすることで、エントリーが消えていることを確認することができます。
 
 ```bash
 curl "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215" -u test@liferay.com:learn
 ```
 
-次に、Liferay DXPは、応答として次のJSONドキュメントを返します。
+そして、Liferay DXP はこの JSON ドキュメントをレスポンスとして返します。
 
 ```json
 {
@@ -309,4 +284,5 @@ curl "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215" -u tes
   "title" : "No BlogsEntry exists with the primary key 35215"
 }
 ```
-　 Liferay DXPのRESTサービスを呼び出す方法を学びました。 上記の例では基本認証を使用していることに注意してください。本番環境では、OAuth2を使用して安全な方法でサービスを呼び出します。
+
+　 これで、Liferay DXP の REST サービスを呼び出す方法を学びました。 上記の例では基本認証を使用していることに注意してください。本番環境では、OAuth2を使用して安全な方法でサービスを呼び出します。

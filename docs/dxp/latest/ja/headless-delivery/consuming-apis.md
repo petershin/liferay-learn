@@ -17,6 +17,6 @@ consuming-apis/api-headers-reference.md
 ```
 
 * [RESTサービスの使用](./consuming-apis/consuming-rest-services.md)
-* [GraphQL APIの使用](./consuming-apis/consuming-graphql-apis.md)
-* [認証されていないリクエストを行う](./consuming-apis/making-unauthenticated-requests.md)
+* [GraphqlのApisを消費する](./consuming-apis/consuming-graphql-apis.md)
+* [非認証要求](./consuming-apis/making-unauthenticated-requests.md)
 * [APIヘッダーリファレンス](./consuming-apis/api-headers-reference.md)

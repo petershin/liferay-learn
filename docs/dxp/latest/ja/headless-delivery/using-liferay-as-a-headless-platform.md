@@ -53,5 +53,5 @@ LiferayのWebインターフェイスと同様に、ヘッドレスAPIを介し�
 
 ## 関連情報
 
-- [Consuming Rest Services](../headless-delivery/consuming-apis/consuming-rest-services.md)
+- [RESTサービスの使用](../headless-delivery/consuming-apis/consuming-rest-services.md)
 - [GraphQL APIの使用](../headless-delivery/consuming-apis/consuming-graphql-apis.md)

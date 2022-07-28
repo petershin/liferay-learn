@@ -42,7 +42,10 @@ Search Blueprints is the first feature in the Search Experiences application. To
 - [Personalizing the Search Experience](./search-experiences/personalizing-the-search-experience.md)
 - [Search blueprints Elements Reference](./search-experiences/search-blueprints-elements-reference.md)
 - [Search Blueprints Configuration Reference](./search-experiences/search-blueprints-configuration-reference.md)
-- [Creating Elements](./search-experiences/creating-and-managing-elements.md)
+- [Creating and Managing Elements](./search-experiences/creating-and-managing-elements.md)
+  - [Creating Elements](./search-experiences/creating-and-managing-elements/creating-elements.md)
+  - [Managing Elements](./search-experiences/creating-and-managing-elements/managing-elements.md)
+  - [Predefined Element Variables Reference](./search-experiences/creating-and-managing-elements/predefined-element-variables-reference.md)
 
 ## Getting Liferay Search Experiences
 

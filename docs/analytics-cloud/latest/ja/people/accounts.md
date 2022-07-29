@@ -1,4 +1,4 @@
-# アカウント
+<!--- # アカウント
 
 [Salesforceデータソース](../connecting-data-sources/adding-a-salesforce-data-source.md)をお持ちの場合、Analytics CloudはSalesforceのアカウントデータをインポートして分析することができます。 Analytics Cloud は、Salesforce のアカウントデータと他のソースからのデータを組み合わせることで、アカウントとその中にいる人の全体像を提示します。
 
@@ -74,3 +74,5 @@
 * **データ・ソース：** プロパティの値が発生したデータソース。
 * **最終更新日：** プロパティの値が最も最近変更された日付。
 ![詳細］ タブには、アカウントのプロパティとその値を示す検索可能なテーブルが含まれています。](accounts/images/04.png)
+
+--->

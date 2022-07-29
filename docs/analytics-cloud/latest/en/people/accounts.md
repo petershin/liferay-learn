@@ -1,4 +1,4 @@
-# Accounts
+<!--- # Accounts
 
 If you have a [Salesforce data source](../connecting-data-sources/adding-a-salesforce-data-source.md), Analytics Cloud can import and analyze Salesforce account data. By combining Salesforce account data with data from other sources, Analytics Cloud presents a holistic view of the account and those in it.
 
@@ -63,3 +63,5 @@ The Details tab shows information about the account’s properties. The properti
 * **Last Modified:** The date the property’s value was most recently changed.
 
 ![The Details tab contains a searchable table that shows the account’s properties and their values.](accounts/images/04.png)
+
+--->

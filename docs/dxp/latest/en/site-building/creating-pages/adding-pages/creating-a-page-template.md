@@ -48,9 +48,9 @@ Follow these steps to make a Page Template from a page:
 
 1. In the modal that appears on the screen, enter a name for the new Page Template.
 
-    ![This modal allows you to set the basic information for your new Page Template.](./creating-a-page-template/images/04.png)
+    ![Here, you can set the basic information for your new Page Template.](./creating-a-page-template/images/04.png)
 
-1. Select the Page Template Set to add the new Page Template to.
+1. Select the Page Template Set where you're adding the new Page Template.
 
 1. Click Create.
 

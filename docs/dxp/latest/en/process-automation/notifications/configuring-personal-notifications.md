@@ -1,6 +1,6 @@
 # Configuring Personal Notifications
 
-Liferay provides integrated notification tools, so you can ensure users are alerted to platform events. Each user can customize which notifications they receive by enabling email, website, or mobile notifications for the desired applications. These settings are global in scope and determine the user's personal notifications for all Sites.
+Liferay provides integrated notification tools, so you can ensure users are alerted to platform events. Users can customize which notifications they receive by enabling email, website, or mobile notifications for the desired applications. These settings are global in scope and determine the user's personal notifications for all Sites.
 
 Follow these steps to customize individual notifications:
 
@@ -12,7 +12,7 @@ Follow these steps to customize individual notifications:
 
    ![Click the Actions button in the Application Bar and select Configuration.](./configuring-personal-notifications/images/02.png)
 
-   Alternatively, you can access these settings wherever the Notifications widget is deployed. Just click the widget's *Options* button (![Options Button](../../images/icon-widget-options.png)) and select *Configuration*.
+   Alternatively, you can access these settings wherever the Notifications widget is deployed. Click the widget's *Options* button (![Options Button](../../images/icon-widget-options.png)) and select *Configuration*.
 
    ![Click the Options button for the Notifications widget and select Configuration.](./configuring-personal-notifications/images/03.png)
 

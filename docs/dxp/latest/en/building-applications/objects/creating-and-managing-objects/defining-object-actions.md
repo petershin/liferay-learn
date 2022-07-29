@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4 U33+ and GA33+`
 
-With Liferay Objects, you can define custom actions that are triggered under specified conditions. While an action is active, Liferay listens for when an Object's data is added, deleted, or updated and then performs the set action.
+With Liferay Objects, you can define actions that are triggered under specified conditions. While an action is active, Liferay listens for when an Object's data is added, deleted, or updated and then performs the set action.
 
 Currently, Liferay supports four action types:
 
@@ -26,7 +26,7 @@ Follow these steps to define actions for an Object:
 
 1. While viewing the Object, select the *Actions* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
-1. In the *Basic Info* tab, enter a *name* and *description* for the action.
+1. In the Basic Info tab, enter a *name* and *description* for the action.
 
    ![Enter an action name and description in the Basic Info tab.](./defining-object-actions/images/01.png)
 
@@ -48,7 +48,7 @@ Follow these steps to define actions for an Object:
 
    ![Use expressions to set additional conditions for the trigger.](./defining-object-actions/images/04.png)
 
-1. For Action, select the *type* of action performed and fill out all additional fields. See [Understanding Action Types](#understanding-action-types) for more information.
+1. For Action, select the type of action performed and fill out all additional fields. See [Understanding Action Types](#understanding-action-types) for more information.
 
 1. Click *Save*.
 
@@ -72,9 +72,9 @@ If desired, you can deactivate an action by going to its *Basic Info* tab, toggl
 
 {bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`
 
-*Groovy Script* actions execute custom Groovy scripts. When you select this action type, enter your custom script into the provided code window.
+*Groovy Script* actions execute custom Groovy scripts. When you select this action type, enter your script into the provided code window.
 
-![Enter your custom Groovy script.](./defining-object-actions/images/07.png)
+![Enter your Groovy script.](./defining-object-actions/images/07.png)
 
 ### Notification Actions
 

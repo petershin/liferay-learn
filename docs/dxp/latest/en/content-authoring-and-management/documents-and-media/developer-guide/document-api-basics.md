@@ -416,12 +416,12 @@ The following cURL commands and Java classes demonstrate more `Document` service
 
 | Files | Description |
 | :---- | :---------- |
-| `Document_POST_ToDocumentFolder.[java|sh]` | Posts a document to a folder. |
-| `DocumentFolder_GET_ById.[java|sh]` | Lists a folder's fields. |
-| `DocumentFolder_PATCH_ById.[java|sh]` | Updates a folder and its fields. |
-| `DocumentFolder_POST_ToSite.[java|sh]` | Posts a document folder to a site. |
-| `DocumentFolder_PUT_ById.[java|sh]` | Replaces a folder and its fields entirely. |
-| `DocumentFolders_GET_FromSite.[java|sh]` | Lists a site's folders. |
+| `Document_POST_ToDocumentFolder.[java\|sh]` | Posts a document to a folder. |
+| `DocumentFolder_GET_ById.[java\|sh]` | Lists a folder's fields. |
+| `DocumentFolder_PATCH_ById.[java\|sh]` | Updates a folder and its fields. |
+| `DocumentFolder_POST_ToSite.[java\|sh]` | Posts a document folder to a site. |
+| `DocumentFolder_PUT_ById.[java\|sh]` | Replaces a folder and its fields entirely. |
+| `DocumentFolders_GET_FromSite.[java\|sh]` | Lists a site's folders. |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) lists all of the `Document` and `DocumentFolder` services and schemas, and has an interface to try out each service.
 

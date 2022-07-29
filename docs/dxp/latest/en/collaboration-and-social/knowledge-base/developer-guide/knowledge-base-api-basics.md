@@ -317,11 +317,11 @@ The cURL commands and Java classes for Knowledge Base folders works in the same 
 
 | Files | Description |
 | :---- | :---------- |
-| `KnowledgeBaseFolder_DELETE_ById.[java|sh]` | Deletes a Knowledge Base folder by ID. |
-| `KnowledgeBaseFolder_GET_ById.[java|sh]` | Get a specific Knowledge Base folder by ID. |
-| `KnowledgeBaseFolder_PATCH_ById.[java|sh]` | Patch a Knowledge Base folder by ID. |
-| `KnowledgeBaseFolder_POST_ToSite.[java|sh]` | Post a Knowledge Base folder to a site. |
-| `KnowledgeBaseFolder_PUT_ToSite.[java|sh]` | Put a Knowledge Base folder by ID. |
-| `KnowledgeBaseFolders_GET_FromSite.[java|sh]` | Get a list of Knowledge Base folders from a site. |
+| `KnowledgeBaseFolder_DELETE_ById.[java\|sh]` | Deletes a Knowledge Base folder by ID. |
+| `KnowledgeBaseFolder_GET_ById.[java\|sh]` | Get a specific Knowledge Base folder by ID. |
+| `KnowledgeBaseFolder_PATCH_ById.[java\|sh]` | Patch a Knowledge Base folder by ID. |
+| `KnowledgeBaseFolder_POST_ToSite.[java\|sh]` | Post a Knowledge Base folder to a site. |
+| `KnowledgeBaseFolder_PUT_ToSite.[java\|sh]` | Put a Knowledge Base folder by ID. |
+| `KnowledgeBaseFolders_GET_FromSite.[java\|sh]` | Get a list of Knowledge Base folders from a site. |
 
 The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `KnowledgeBaseArticle` and `KnowledgeBaseFolder` services and schemas and has an interface to try out each service.

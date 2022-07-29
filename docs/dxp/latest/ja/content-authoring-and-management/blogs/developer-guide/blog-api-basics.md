@@ -317,9 +317,9 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_DELETE_ById
 
 | ファイル                                       | 説明                      |
 |:------------------------------------------ |:----------------------- |
-| `BlogPostingImage_DELETE_ById.[java|sh]`   | ID別にブログ投稿画像を削除します。      |
-| `BlogPostingImage_GET_ById.[java|sh]`      | ID別に特定のブログ投稿画像を取得します。   |
-| `BlogPostingImage_POST_ToSite.[java|sh]`   | ブログ投稿画像をサイトに投稿します。      |
-| `BlogPostingImages_GET_FromSite.[java|sh]` | サイトからブログ投稿画像のリストを取得します。 |
+| `BlogPostingImage_DELETE_ById.[java\|sh]`   | ID別にブログ投稿画像を削除します。      |
+| `BlogPostingImage_GET_ById.[java\|sh]`      | ID別に特定のブログ投稿画像を取得します。   |
+| `BlogPostingImage_POST_ToSite.[java\|sh]`   | ブログ投稿画像をサイトに投稿します。      |
+| `BlogPostingImages_GET_FromSite.[java\|sh]` | サイトからブログ投稿画像のリストを取得します。 |
 
 [APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`BlogPosting`および`BlogPostingImage`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。

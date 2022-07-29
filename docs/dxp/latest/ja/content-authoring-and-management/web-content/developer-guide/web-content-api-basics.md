@@ -691,13 +691,13 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 
 | ファイル                                                         | 説明                              |
 |:------------------------------------------------------------ |:------------------------------- |
-| `StructuredContentFolder_GET_ById.[java|sh]`                 | Webコンテンツフォルダーのフィールドを一覧表示します。    |
-| `StructuredContentFolders_GET_FromSite.[java|sh]`            | サイト内のすべてのWebコンテンツフォルダーを一覧表示します。 |
-| `StructuredContentFolder_POST_ToSite.[java|sh]`              | Webコンテンツフォルダーをサイトに投稿します。        |
-| `StructuredContentFolder_PATCH_ById.[java|sh]`               | Webコンテンツフォルダーを更新します。            |
-| `StructuredContentFolder_PUT_ById.[java|sh]`                 | Webコンテンツフォルダーを置き換えます。           |
-| `StructuredContentFolder_DELETE_ById.[java|sh]`              | Webコンテンツフォルダーを削除します。            |
-| `StructuredContent_POST_ToStructuredContentFolder.[java|sh]` | Webコンテンツ記事をフォルダーに投稿します。         |
+| `StructuredContentFolder_GET_ById.[java\|sh]`                 | Webコンテンツフォルダーのフィールドを一覧表示します。    |
+| `StructuredContentFolders_GET_FromSite.[java\|sh]`            | サイト内のすべてのWebコンテンツフォルダーを一覧表示します。 |
+| `StructuredContentFolder_POST_ToSite.[java\|sh]`              | Webコンテンツフォルダーをサイトに投稿します。        |
+| `StructuredContentFolder_PATCH_ById.[java\|sh]`               | Webコンテンツフォルダーを更新します。            |
+| `StructuredContentFolder_PUT_ById.[java\|sh]`                 | Webコンテンツフォルダーを置き換えます。           |
+| `StructuredContentFolder_DELETE_ById.[java\|sh]`              | Webコンテンツフォルダーを削除します。            |
+| `StructuredContent_POST_ToStructuredContentFolder.[java\|sh]` | Webコンテンツ記事をフォルダーに投稿します。         |
 
 
 

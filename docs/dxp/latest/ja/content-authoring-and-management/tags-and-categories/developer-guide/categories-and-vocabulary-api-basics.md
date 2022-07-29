@@ -308,11 +308,11 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_DELETE_ById
 
 | ファイル                                                      | 説明                      |
 |:--------------------------------------------------------- |:----------------------- |
-| `TaxonomyCategories_GET_FromTaxonomyVocabulary.[java|sh]` | ボキャブラリからカテゴリーの一覧を取得します。 |
-| `TaxonomyCategory_DELETE_ById.[java|sh]`                  | カテゴリーを削除します。            |
-| `TaxonomyCategory_GET_ById[java|sh]`                      | IDで特定のカテゴリーを取得します。      |
-| `TaxonomyCategory_PATCH_ById.[java|sh]`                   | カテゴリーにパッチを適用します。        |
-| `TaxonomyCategory_POST_ToTaxonomyVocabulary.[java|sh]`    | カテゴリーをボキャブラリに投稿します。     |
-| `TaxonomyCategory_PUT_ById.[java|sh]`                     | カテゴリーを配置します。            |
+| `TaxonomyCategories_GET_FromTaxonomyVocabulary.[java\|sh]` | ボキャブラリからカテゴリーの一覧を取得します。 |
+| `TaxonomyCategory_DELETE_ById.[java\|sh]`                  | カテゴリーを削除します。            |
+| `TaxonomyCategory_GET_ById[java\|sh]`                      | IDで特定のカテゴリーを取得します。      |
+| `TaxonomyCategory_PATCH_ById.[java\|sh]`                   | カテゴリーにパッチを適用します。        |
+| `TaxonomyCategory_POST_ToTaxonomyVocabulary.[java\|sh]`    | カテゴリーをボキャブラリに投稿します。     |
+| `TaxonomyCategory_PUT_ById.[java\|sh]`                     | カテゴリーを配置します。            |
 
 [APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`TaxonomyVocabulary`および`TaxonomyCategory`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェイスがあります。

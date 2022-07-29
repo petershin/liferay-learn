@@ -543,13 +543,13 @@ The other cURL commands and Java classes demonstrate more `StructuredContent` an
 
 | File | Description |
 | :--- | :--- |
-| `StructuredContentFolder_GET_ById.[java|sh]` | Lists a Web Content folder's fields. |
-| `StructuredContentFolders_GET_FromSite.[java|sh]` | Lists all Web Content folders in the Site. |
-| `StructuredContentFolder_POST_ToSite.[java|sh]` | Posts a Web Content folder to a Site. |
-| `StructuredContentFolder_PATCH_ById.[java|sh]` | Updates a Web Content Folder. |
-| `StructuredContentFolder_PUT_ById.[java|sh]` | Replaces a Web Content Folder. |
-| `StructuredContentFolder_DELETE_ById.[java|sh]` | Deletes a Web Content Folder. |
-| `StructuredContent_POST_ToStructuredContentFolder.[java|sh]` | Posts a Web Content Article to a folder. |
+| `StructuredContentFolder_GET_ById.[java\|sh]` | Lists a Web Content folder's fields. |
+| `StructuredContentFolders_GET_FromSite.[java\|sh]` | Lists all Web Content folders in the Site. |
+| `StructuredContentFolder_POST_ToSite.[java\|sh]` | Posts a Web Content folder to a Site. |
+| `StructuredContentFolder_PATCH_ById.[java\|sh]` | Updates a Web Content Folder. |
+| `StructuredContentFolder_PUT_ById.[java\|sh]` | Replaces a Web Content Folder. |
+| `StructuredContentFolder_DELETE_ById.[java\|sh]` | Deletes a Web Content Folder. |
+| `StructuredContent_POST_ToStructuredContentFolder.[java\|sh]` | Posts a Web Content Article to a folder. |
 
 ```{important}
 When you delete a Web Content Folder using the REST API, the folder and its content are deleted permanently, without using the [Liferay DXP Recycle Bin](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md).

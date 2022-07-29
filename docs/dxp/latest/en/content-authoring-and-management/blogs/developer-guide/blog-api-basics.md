@@ -316,9 +316,9 @@ The cURL commands and Java classes for blog images works in the same way as blog
 
 | Files | Description |
 | :---- | :---------- |
-| `BlogPostingImage_DELETE_ById.[java|sh]` | Deletes a blog post image by ID. |
-| `BlogPostingImage_GET_ById.[java|sh]` | Get a specific blog post image by ID. |
-| `BlogPostingImage_POST_ToSite.[java|sh]` | Post a blog post image to a site. |
-| `BlogPostingImages_GET_FromSite.[java|sh]` | Get a list of blog post images from a site. |
+| `BlogPostingImage_DELETE_ById.[java\|sh]` | Deletes a blog post image by ID. |
+| `BlogPostingImage_GET_ById.[java\|sh]` | Get a specific blog post image by ID. |
+| `BlogPostingImage_POST_ToSite.[java\|sh]` | Post a blog post image to a site. |
+| `BlogPostingImages_GET_FromSite.[java\|sh]` | Get a list of blog post images from a site. |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) lists all of the `BlogPosting` and `BlogPostingImage` services and schemas, and has an interface to try out each service.

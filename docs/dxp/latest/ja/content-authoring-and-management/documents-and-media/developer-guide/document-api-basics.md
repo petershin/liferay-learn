@@ -425,12 +425,12 @@ java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 
 | ファイル                                       | 説明                      |
 |:------------------------------------------ |:----------------------- |
-| `Document_POST_ToDocumentFolder.[java|sh]` | ドキュメントをフォルダに投稿します。      |
-| `DocumentFolder_GET_ById.[java|sh]`        | フォルダのフィールドを一覧表示します。     |
-| `DocumentFolder_PATCH_ById.[java|sh]`      | フォルダとそのフィールドを更新します。     |
-| `DocumentFolder_POST_ToSite.[java|sh]`     | ドキュメントフォルダをサイトに投稿します。   |
-| `DocumentFolder_PUT_ById.[java|sh]`        | フォルダとそのフィールドを完全に置き換えます。 |
-| `DocumentFolders_GET_FromSite.[java|sh]`   | サイトのフォルダを一覧表示します。       |
+| `Document_POST_ToDocumentFolder.[java\|sh]` | ドキュメントをフォルダに投稿します。      |
+| `DocumentFolder_GET_ById.[java\|sh]`        | フォルダのフィールドを一覧表示します。     |
+| `DocumentFolder_PATCH_ById.[java\|sh]`      | フォルダとそのフィールドを更新します。     |
+| `DocumentFolder_POST_ToSite.[java\|sh]`     | ドキュメントフォルダをサイトに投稿します。   |
+| `DocumentFolder_PUT_ById.[java\|sh]`        | フォルダとそのフィールドを完全に置き換えます。 |
+| `DocumentFolders_GET_FromSite.[java\|sh]`   | サイトのフォルダを一覧表示します。       |
 
 [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`Document`および`DocumentFolder`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 

@@ -307,11 +307,11 @@ The cURL commands and Java classes for taxonomy categories work similarly to tax
 
 | Files | Description |
 | :---- | :---------- |
-| `TaxonomyCategories_GET_FromTaxonomyVocabulary.[java|sh]` | Get a list of categories from a vocabulary. |
-| `TaxonomyCategory_DELETE_ById.[java|sh]` | Delete a category. |
-| `TaxonomyCategory_GET_ById[java|sh]` | Get a specific category by ID. |
-| `TaxonomyCategory_PATCH_ById.[java|sh]` | Patch a category. |
-| `TaxonomyCategory_POST_ToTaxonomyVocabulary.[java|sh]` | Post a category to a vocabulary.  |
-| `TaxonomyCategory_PUT_ById.[java|sh]` | Put a category. |
+| `TaxonomyCategories_GET_FromTaxonomyVocabulary.[java\|sh]` | Get a list of categories from a vocabulary. |
+| `TaxonomyCategory_DELETE_ById.[java\|sh]` | Delete a category. |
+| `TaxonomyCategory_GET_ById[java\|sh]` | Get a specific category by ID. |
+| `TaxonomyCategory_PATCH_ById.[java\|sh]` | Patch a category. |
+| `TaxonomyCategory_POST_ToTaxonomyVocabulary.[java\|sh]` | Post a category to a vocabulary.  |
+| `TaxonomyCategory_PUT_ById.[java\|sh]` | Put a category. |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) lists all of the `TaxonomyVocabulary` and `TaxonomyCategory` services and schemas and has an interface to try out each service.

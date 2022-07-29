@@ -14,7 +14,6 @@
 
     * **Web Behaviors:** Actions taken by a person (e.g., submitted a form, viewed a blog, etc.).
     * **Individual Attributes:** Attributes that belong to a person (e.g., age, country, industry, etc.). Note that DXP custom fields can also be selected under Individual Attributes. Learn more about [adding custom fields to Users in DXP](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-custom-fields-to-users.html).
-    * **Account Attributes:** Attributes that belong to a Salesforce Account (e.g., account name, industry, website, etc.).
     * **Interests:** Topics and content types that interest the person. For more information on interests in Analytics Cloud, see Customer Insights.
     * **Session Attributes:** Attributes that belong to a person's web session (e.g., browser, geo-location, etc.).
     * **Organization Attributes:** Attributes that belong to an organization (e.g. name, hierarchy, type, etc.).
@@ -22,7 +21,7 @@
     ![By default anonymous users are not included in Segments.](creating-segments/images/02.png)
 
     ```{note}
-    Anonymous users are excluded from Segments by default. To include them, enable the Include Anonymous toggle. Note, however, that criteria with individual and/or account attributes excludes anonymous users regardless of your setting here. Such attributes only apply to known users.
+    Anonymous users are excluded from Segments by default. To include them, enable the Include Anonymous toggle. Note, however, that criteria with individual attributes excludes anonymous users regardless of your setting here. Such attributes only apply to known users.
 
     ```
 

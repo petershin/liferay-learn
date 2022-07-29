@@ -75,7 +75,7 @@ The Membership tab displays the same chart as the Segment Membership panel. It a
 
 ![The Membership tab shows a list of known individuals.](./segments/images/07.png)
 
-The name, email address, account name, and first seen date is given for known individuals. Use the search bar to search for specific individuals. 
+The name, email address, and first seen date is given for known individuals. Use the search bar to search for specific individuals. 
 
 ## Interests Tab
 

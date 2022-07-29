@@ -68,10 +68,10 @@ Whether you added a Collection Display Fragment manually or via a Collection Pag
 
 Selecting a Collection Display Fragment divides it into sections for each asset in the Collection. New options appear under the fragment's General configuration after you've selected a Collection:
 
-* **Style Display**: the style used to format the assets in the list (e.g., Grid or Bulleted List styles). (In earlier versions than 7.4 GA23 or U23, this configuration is called *List Style* instead.)
+* **Style Display**: The style used to format the assets in the list (e.g., Grid or Bulleted List styles). (In versions earlier than 7.4 GA23 or U23, this configuration is called *List Style*.)
 * **Layout**: the number of columns the assets appear in
-* **Show Gutter**: whether or not to show the gutter (spacing) between columns. This option only appears when the Grid style is chosen with a column layout (in versions 7.4 GA23+ or U23+).
-* **Vertical Alignment**: whether to align the items in the collection to the top, middle, or bottom of each row. This option only appears when the Grid style is chosen (in versions 7.4 GA23+ or U23+).
+* **Show Gutter**: Whether to show the gutter (spacing) between columns. This option only appears when the Grid style is chosen with a column layout (in versions 7.4 GA23+ or U23+).
+* **Vertical Alignment**: Whether to align the items in the collection to the top, middle, or bottom of each row. This option only appears when the Grid style is chosen (in versions 7.4 GA23+ or U23+).
 * **List item style**: the style used to format each individual asset. This option may not appear depending on the chosen List style.
 * **Max number of items**: the maximum number of assets the fragment can display at a time
 
@@ -80,7 +80,7 @@ Selecting a Collection Display Fragment divides it into sections for each asset 
 Publish the page when you're ready for the assets in the Collection to be displayed as configured.
 
 ```{tip}
-In Liferay versions 7.4 GA23+ or U23+, if you have chosen the Grid style for a Collection Display Fragment, you can configure the Layout setting individually for each type of device. Click the device viewport buttons at the top of the screen to set this setting for each device. The tablet setting defaults to the same as the desktop's setting, and the portrait and landscape phone settings default to 1 column.
+In Liferay 7.4 GA23+ or U23+, if you have chosen the Grid style for a Collection Display Fragment, you can configure the Layout setting individually for each type of device. Click the device viewport buttons at the top of the screen to set this setting for each device. The tablet setting defaults to the same as the desktop's setting, and the portrait and landscape phone settings default to 1 column.
 ```
 
 <!-- Add reference to developer tutorials to add more options for the List styles/List item styles when available -->

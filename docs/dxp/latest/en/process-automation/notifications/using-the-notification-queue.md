@@ -16,6 +16,6 @@ The application lists the following details for each notification:
 | To | The notification's recipients, which is set in the notification's [template](./creating-notification-templates.md). |
 | Status | Indicates the status of the notification, whether it was sent (*Sent*) or is in the process of sending (*Unsent*). |
 
-Click the *Actions* button (![Actions Button]()) for an entry to *delete* it or *resend* the notification. 
+Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for an entry to *delete* it or *resend* the notification.
 
 ![Delete entries or resend notifications.](./using-the-notification-queue/images/02.png)

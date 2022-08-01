@@ -128,34 +128,32 @@ Backups created while data is actively changing on your Liferay instance risk cr
 
 There are two ways to configure an automated backup schedule:
 
-* [Configuring the schedule via the console](#configuring-the-schedule-via-the-console)
-* [Configuring the schedule using environment variables](#configuring-the-schedule-using-environment-variables)
+* [Via the console](#configuring-the-schedule-via-the-console)
+* [Using environment variables](#configuring-the-schedule-using-environment-variables)
 
 ### Configuring the Schedule via the Console
 
-Follow these steps to configure the automated backup schedule via the DXP Cloud console:
-
 1. From the chosen environment, navigate to the Backup service and click the *Configuration* tab.
 
-   ![Click on the Configuration tab to access the backup schedule configuration.](./backup-service-overview/images/07.png)
+   ![Click the Configuration tab to access the backup schedule configuration.](./backup-service-overview/images/07.png)
 
    ```{note}
-   If no backups have been created in this environment yet, then clicking the *Set up a regular backup* link on the Backup service page also takes you to the Configuration tab.
+   If this environment has no backups, clicking the *Set up a regular backup* link on the Backup service page also takes you to the Configuration tab.
    ```
 
-1. Choose the desired backup frequency from available options in the *Create backups* dropdown menu. You can choose any of these frequency options when configuring the backup schedule via the DXP Cloud console:
+1. Choose the desired backup frequency from available options in the *Create backups* dropdown menu. You have these options: 
 
-   * **Daily**: a backup is created every day; you are given an input to set the time it is created (in the UTC±00 time zone).
+   * **Daily**: A backup is created every day; you can set the time it is created (in the UTC±00 time zone).
 
-   * **Weekly**: a backup is created every week; you are given inputs to set the day of the week and what time it is created (in the UTC±00 time zone).
+   * **Weekly**: A backup is created every week; you can set the day of the week and what time it is created (in the UTC±00 time zone).
 
-   * **Advanced**: you are given an input to set a [cron scheduling](https://crontab.guru/) value for a more complex frequency.
+   * **Advanced**: You can set a [cron schedule](https://crontab.guru/) value for a more complex frequency.
 
-   * **Manually** no automatic backups are created at all. You must create all backups manually.
+   * **Manually** No automatic backups are created. You must create all backups manually.
 
-   ![If you choose to create a weekly schedule, then the inputs for the day of the week and time appear.](./backup-service-overview/images/08.png)
+   ![If you choose to create a weekly schedule, you can then select the day of the week and time.](./backup-service-overview/images/08.png)
 
-1. Choose the desired retention period from the *Remove backups older than* dropdown menu.
+1. Choose the desired retention period from the *Remove backups older than* selector.
 
 1. Click *Save changes*.
 
@@ -173,10 +171,10 @@ Use the following variables per environment to customize when backups are create
 Both standard and non-standard [cron scheduling syntax](https://crontab.guru/) are based on the UTC±00 time zone. When using non-standard cron syntax, automated backups and cleanups run at the start of the specified value. For example, `@daily` runs backups every day at 00:00 UTC.
 ```
 
-You can use these environment variables either by [setting them via the DXP Cloud console](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-dxp-cloud-console) (in the Backup service), or by [setting them in your project repository's `backup/LCP.json` file](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp-json) and deploying the Backup service to your environment.
+You can use these environment variables by [setting them via the DXP Cloud console](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-dxp-cloud-console) (in the Backup service), or by [setting them in your project repository's `backup/LCP.json` file](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp-json) and deploying the Backup service to your environment.
 
 ```{warning}
-If you set the environment variables via the DXP Cloud console but later deploy the Backup service from your repository with a different configuration in `backup/LCP.json`, then the configuration from your repository overwrites the environment variables set in the console.
+If you set the environment variables via the DXP Cloud console but later deploy the Backup service from your repository with a different configuration in `backup/LCP.json`, the configuration from your repository overwrites the environment variables set in the console.
 ```
 
 The following `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 12:00 UTC) and performs monthly cleanups that remove backups over 30 days old:

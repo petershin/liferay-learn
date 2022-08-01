@@ -26,8 +26,8 @@ Follow these steps to access the Backups page:
 
 From here, you can perform the following tasks:
 
-* **View Backup Info**: You can quickly view Backup service information for the chosen environment. This includes the frequency of automated backups, the backup retention period, and timestamp information for the next scheduled backup, the latest created backup, and the oldest retained backup.
-* **View Backup History**: You can view the full list of retained backups in the chosen environment. Each entry lists the backup's name, size, type (`Auto`, `Manual`, or `Uploaded`), and time of creation. If a backup has failed, then the backup's icon appears red, and beside it is a "Backup failed" message and a link to contact Support.
+* **View Backup Info**: You can quickly view backup service information for the chosen environment. This includes the frequency of automated backups, the backup retention period, and time stamp information for the next scheduled backup, the latest created backup, and the oldest retained backup.
+* **View Backup History**: You can view the full list of retained backups in the chosen environment. Each entry shows the backup's name, size, type (`Auto`, `Manual`, or `Uploaded`), and time of creation. A red backup icon indicates a backup has failed. Beside it is a _Backup failed_ message and a link to contact Support.
 * **Create Manual Backups**: You can manually create a backup of the chosen environment. See [Creating a Manual Backup](#creating-a-manual-backup) for more information.
 
 ```{note}
@@ -38,7 +38,7 @@ From the Backups page, environment administrators also have access to the Action
 
 ![Administrators can download backups or restore an environment from the Backups page.](./backup-service-overview/images/03.png)
 
-You can also filter the list of backups by their status (failed or successful), or switch to displaying the backups from the associated Disaster Recovery (`dr`) environment (if one is configured for the current environment), from the two dropdown menus near the top of the screen.
+You can also filter the list of backups by their status (failed or successful), or display the backups from the associated Disaster Recovery (`dr`) environment (if one is configured for the current environment), from the two selectors near the top of the screen.
 
 ![View Disaster Recovery backups or filter by backup status from the dropdown menus.](./backup-service-overview/images/04.png)
 
@@ -48,7 +48,7 @@ For more information and instructions on how to perform these actions, see [Down
 
 To manually backup your environment from the Backups page, click on *Backup Now*. This process can take several minutes or hours depending on the size of your services.
 
-Once started, the backup service icon indicates a backup is in progress, and a message appears at the top of the screen. The new backup also appears in the *Backup history*.
+Once started, the backup service icon indicates a backup is in progress, and a message appears at the top of the screen. The new backup also appears in the Backup history.
 
 ![The backup service icon and a message at the top of the screen indicate a backup is in progress.](./backup-service-overview/images/05.png)
 

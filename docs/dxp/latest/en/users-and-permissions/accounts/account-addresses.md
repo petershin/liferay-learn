@@ -1,3 +1,4 @@
 # Account Addresses
 
-Coming soon!
+{bdg-secondary}`Available 7.4+`
+

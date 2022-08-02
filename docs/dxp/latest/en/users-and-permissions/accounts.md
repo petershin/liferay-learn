@@ -18,6 +18,8 @@ accounts/account-roles.md
 accounts/account-management-widget.md
 ```
 
+{bdg-secondary}`Available 7.4+`
+
 Accounts provide administrators with a way to organize and manage users for various commerce or business needs. Unlike [organizations](./organizations.md) or [user groups](./user-groups.md), accounts help facilitate interactions that might take place in business situations such as the purchasing of goods and services or managing existing customers.
 
 There are three different account types, *Business*, *Person*, and *Guest* types. Business accounts all you to associate multiple users to an account. Person type accounts can only have one account associated with them. Guest-type accounts provide a way for unregistered users to interact with your business or site.

@@ -1,6 +1,7 @@
 ---
 toc:
 - ./accounts/account-users.md
+- ./accounts/account-addresses.md
 - ./accounts/account-groups.md
 - ./accounts/account-roles.md
 - ./accounts/account-management-widget.md
@@ -11,6 +12,7 @@ toc:
 :maxdepth: 3
 
 accounts/account-users.md
+accounts/account-addresses.md
 accounts/account-groups.md
 accounts/account-roles.md
 accounts/account-management-widget.md
@@ -49,6 +51,8 @@ The Details tab displays the main information about the account such as the acco
 The Addresses tab displays the different addresses associated with the account. To add a new address click the Add icon (![Add icon](../images/icon-add.png)). Fill out the address information and click the *Save* button.
 
 ![Fill out the address information and click Save.](./accounts/images/03.png)
+
+See [Account Addresses](./accounts/account-addresses.md) to learn more.
 
 ### Users Tab
 
@@ -116,6 +120,7 @@ See [Account Roles](./accounts/account-roles.md) to learn more.
 ## Related Information
 
 * [Account Users](./accounts/account-users.md)
+* [Account Addresses](./accounts/account-addresses.md)
 * [Account Groups](./accounts/account-groups.md)
 * [Account Roles](./accounts/account-roles.md)
 * [Account Management Widget](./accounts/account-management-widget.md)

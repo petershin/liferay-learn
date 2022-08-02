@@ -22,15 +22,13 @@ In addition to full text search, advanced search syntax is supported. The underl
 
 ### Search Bar Suggestions: Search as the User Types
 
-{bdg-secondary}`Available 7.4 Update/GA X+`
+{bdg-secondary}`7.4 U36+ and GA36+`
 
 Out of the box on the most recent Liferay 7.4, the Search bar provides search suggestions as the search user is typing their search phrase:
 
-GIF
+![Search Bar Suggestions returns preliminary results as the user types a search phrase into the Search Bar.](./searching-for-content/images/11.png)
 
-For the details on how it works, see [Search Bar Suggestions](./search-bar-suggestions.md)
-
-
+For the details on how it works, see [Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions.md)
 
 ### Matching Exact Phrases: Quoted Search
 
@@ -52,16 +50,15 @@ Another way to ensure users see results is through [search suggestions](../searc
 
 ### Configuring the Search Bar
 
-The Search Bar's behavior can be configured via its portlet configuration screen.
+The Search Bar's configuration behavior can be configured via its portlet configuration screen. Configuration options are categorized as Display Settings, Suggestions Configuration, or Advanced Configuration.
 
-<!--replace with updated screenshot--search suggestions configs -->
 ![Configure the search bar behavior in its configuration screen.](./searching-for-content/images/05.png)
 
 ```{note}
 When you configure the globally embedded Search Bar widget at the top of one page, it configures the page-top Search Bar widget on all pages in the site. It also overrides the [destination Search Page's](../search-pages-and-widgets/working-with-search-pages/search-pages.md) Search Bar portlet, if they're configured differently. However, it does not override Search Bar widgets manually placed on other pages.
 ```
 
-There are several options:
+#### Display Settings
 
 **Keywords Parameter Name:** Edit the parameter name for the keywords entered in the search. For example, the default URL when searching for the keyword term _data_ looks like this:
 
@@ -93,11 +90,15 @@ http://localhost:8080/web/guest/search?q=data&target=this-site
 
 **Destination Page:** Provide a friendly URL to the [search page](../search-pages-and-widgets/working-with-search-pages/search-pages.md). If not configured or if it points to a page that doesn't exist, a message appears for administrators that the search bar must be configured for it to appear to users.
 
+#### Suggestions Configuration
+
+If [Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions.md) is available and enabled, additional configurations appear in the Search Bar widget configuration. See [Configuring Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions/configuring-search-bar-suggestions.md) to understand these configuration options.
+
+#### Advanced Configuration
+
 **Use Advanced Search Syntax:** If using Elasticsearch, enabling this allows users to enter [Query String Syntax](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) into the Search Bar. If using Solr, consult its documentation for the [proper syntax](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html).
 
 **Show Results from Staged Sites:** Content from [Staging environments](../../site-building/publishing-tools/staging.md) is [not searchable](../search-pages-and-widgets/search-results/search-results-behavior.md#search-and-staging) on live sites, regardless of this setting. This setting enables searching for content from other local staging sites when the Everything scope is configured in a site with local staging enabled.
-
-<!-- add the search suggestions settings or link to the search suggestions configuration article -->
 
 ## Searching for Liferay Objects
 

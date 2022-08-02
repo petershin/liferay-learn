@@ -10,7 +10,7 @@ toc:
 ```{toctree}
 :maxdepth: 1
 
-troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-connection.md
+troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-liferay-connection.md
 troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-logging.md
 troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-sidecar-embedded.md
 ```

@@ -1,12 +1,6 @@
-# Troubleshooting Common Issues
+# Troubleshooting Elasticsearch: Common Issues
 
-## Common Issues
-
-Below this page you can find some of the most common issues. If you have not found a problem listed here, consult with these specific troubleshooting articles,
-
-- [Troubleshooting Elasticsearch Liferay Connection](troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-connection.md)
-- [Troubleshooting Elasticsearch Liferay Logging](troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-logging.md)
-- [Troubleshooting Elasticsearch Sidecar and Embedded](troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-sidecar-embedded.md)
+These are some of the most common issues. If your problem isn't listed here, consult [Troubleshooting the Elasticsearch Connection](troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-connection.md)
 
 ### Cluster Name
 

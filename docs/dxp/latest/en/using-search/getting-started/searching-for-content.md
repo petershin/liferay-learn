@@ -24,7 +24,7 @@ In addition to full text search, advanced search syntax is supported. The underl
 
 {bdg-secondary}`7.4 U36+ and GA36+`
 
-Out of the box on the most recent Liferay 7.4, the Search bar provides search suggestions as the search user is typing their search phrase:
+Out of the box on the most recent Liferay 7.4, the Search bar provides search suggestions as users type their search phrases:
 
 ![Search Bar Suggestions returns preliminary results as the user types a search phrase into the Search Bar.](./searching-for-content/images/11.png)
 
@@ -50,7 +50,7 @@ Another way to ensure users see results is through [search suggestions](../searc
 
 ### Configuring the Search Bar
 
-The Search Bar's configuration behavior can be configured via its portlet configuration screen. Configuration options are categorized as Display Settings, Suggestions Configuration, or Advanced Configuration.
+The Search Bar's behavior can be configured via its portlet configuration screen. Configuration options are categorized as Display Settings, Suggestions Configuration, or Advanced Configuration.
 
 ![Configure the search bar behavior in its configuration screen.](./searching-for-content/images/05.png)
 

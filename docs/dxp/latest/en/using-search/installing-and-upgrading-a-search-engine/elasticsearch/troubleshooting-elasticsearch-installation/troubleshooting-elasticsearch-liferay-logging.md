@@ -1,4 +1,5 @@
 # Troubleshooting Elasticsearch Liferay Logging
+<!-- This isn't about troubleshooting logging, but about troubleshooting using logging. Feels like it's better in a Troubleshooting Techniques article, or maybe just the intro article. -->
 
 ## Getting the Elasticsearch Query of Search Bar Widget Searches
 

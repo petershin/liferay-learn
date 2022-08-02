@@ -1,4 +1,4 @@
-# Troubleshooting Elasticsearch Liferay Connection
+# Troubleshooting the Elasticsearch Connection
 
 ## Network Host Addresses / Transport Addresses Configuration and Elasticsearch Nodes' Hosts Mismatch
 
@@ -387,7 +387,8 @@ Note the following from [Elasticsearch's docs](https://www.elastic.co/guide/en/e
 
 Similarly, Liferay won't be able to establish the connection with the Elasticsearch nodes either and will throw an error like this if the Elasticsearch nodes certificates were signed by a non-trusted CA (for example when using Self-Signed Certificates),
 
-```2022-07-15 10:15:54.287 ERROR [main][ElasticsearchSearchEngine:47] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.48 (335)[com.liferay.portal.search.elasticsearch7.internal.ElasticsearchSearchEngine(925)] : The activate method has thrown an exception
+```
+2022-07-15 10:15:54.287 ERROR [main][ElasticsearchSearchEngine:47] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.48 (335)[com.liferay.portal.search.elasticsearch7.internal.ElasticsearchSearchEngine(925)] : The activate method has thrown an exception
 java.lang.RuntimeException: org.elasticsearch.ElasticsearchException: ElasticsearchException[java.util.concurrent.ExecutionException: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target];
 ```
 

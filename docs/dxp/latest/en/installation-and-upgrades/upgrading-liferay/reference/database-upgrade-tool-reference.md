@@ -1,6 +1,6 @@
 # Database Upgrade Tool Reference
 
-This article provides an overview of the upgrade tool within your application server.
+Here's an overview of Liferay's upgrade tool. 
 
 Start the upgrade tool using the `db_upgrade.sh` script in the `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client` folder (`db_upgrade.bat` on Windows).
 
@@ -150,11 +150,11 @@ Add all [portal properties](../../reference/portal-properties.md), such as `port
 
 * `hibernate.jdbc.batch_size`: The JDBC batch size used to improve performance (set to _250_ by default). _This property may improve upgrade performance, but it is not required._
 
-* `upgrade.log.context.enabled`: Set to `true` to see upgrade related log lines that are tagged with an identifier.
+* `upgrade.log.context.enabled`: Set to `true` to see upgrade-related log lines that are tagged with an identifier.
 
-* `upgrade.log.context.name`: When utilizing `upgrade.log.context.enabled`, set a name for the identifier. For example, `upgrade.log.context.name=foo`.
+* `upgrade.log.context.name`: When using `upgrade.log.context.enabled`, set a name for the identifier. For example, `upgrade.log.context.name=foo`.
 
-Note, `upgrade.log.contex.enabled` works for both the upgrade tool as well as upgrades upon startup. To use this feature, you must also copy the [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) file into `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` and rename the file to `portal-log4j-ext.xml`. Then find the appender definition:
+Note, `upgrade.log.context.enabled` works for both the upgrade tool as well as upgrades upon startup. To use this feature, you must also copy the [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) file into `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` and rename the file to `portal-log4j-ext.xml`. Then find the appender definition:
 
 ```
 <Appender name="CONSOLE" type="Console">
@@ -162,7 +162,7 @@ Note, `upgrade.log.contex.enabled` works for both the upgrade tool as well as up
 </Appender>
 ```
 
-Change the definition to the following. Note the added `%X` which tells Log4j to print the thread context information.
+Change the definition to include `%X`, which tells Log4j to print the thread context information:
 
 ```
 <Appender name="CONSOLE" type="Console">
@@ -170,7 +170,7 @@ Change the definition to the following. Note the added `%X` which tells Log4j to
 </Appender>
 ```
 
-Here are some example log lines that include a tag for upgrade related lines:
+Here are some example log lines that include a tag for upgrade related-lines:
 
 ```
 ...

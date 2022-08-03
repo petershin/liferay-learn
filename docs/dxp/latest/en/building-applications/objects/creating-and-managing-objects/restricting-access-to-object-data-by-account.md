@@ -2,11 +2,11 @@
 
 {bdg-secondary}`Available Liferay 7.4 U34+ and GA34+`
 
-In scenarios with multiple business [Accounts](../../../users-and-permissions/accounts.md), you may want to restrict access to custom Object entries by Account. To do this, your custom Object must have a [relationship](./defining-object-relationships.md) with the Account system Object, and you must configure the custom Object to use this relationship for restricting entry data. Once set up, anyone adding entries to the custom Object must also select an Account. This Account becomes the entry's owner, so only Account members can access the entry.
+In scenarios with multiple business [Accounts](../../../users-and-permissions/accounts.md), you may want to restrict access to Object entries by Account. To do this, your custom Object must have an active [relationship](./defining-object-relationships.md) with the Account system Object, and you must configure the custom Object to use this relationship for restricting entry data. Once set up, anyone adding entries to the custom Object must select an Account. This Account becomes the entry's owner, so only Account members can access it.
 
 ![Restrict access to custom Object entries by Account.](./restricting-access-to-object-data-by-account/images/01.png)
 
-Follow these steps to use Accounts to restrict access to custom Object data:
+Follow these steps to use Accounts to restrict access to custom Object entries:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 

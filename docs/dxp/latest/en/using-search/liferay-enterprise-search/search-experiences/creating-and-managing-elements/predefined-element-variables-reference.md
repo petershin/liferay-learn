@@ -63,7 +63,7 @@ To add a Predefined Variable to the Element in the Element Source editor, place 
 
 **\*** [Activate Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/activating-liferay-commerce-enterprise.html) to access the Commerce-specific variables.
 
-**\*** Access ipstack and OpenWeatherMap variables by first enabling each service. Visit System or Instance Settings &rarr; Platform &rarr; Search Experiences. Click the Enabled checkbox and Save the configuration for the service you're configuring. Note that the OpenWeatherMap service depends on the ipstack service being enabled. See [Personalizing the Search Experience](../personalizing-the-search-experience.md) for an example using the ipstack service.
+**\*** Access ipstack and OpenWeatherMap variables by first enabling each service. Visit System or Instance Settings &rarr; Platform &rarr; Search Experiences. Click the Enabled checkbox and save the configuration for the service you're configuring. Note that the OpenWeatherMap service depends on the ipstack service being enabled. See [Personalizing the Search Experience](../personalizing-the-search-experience.md) for an example using the ipstack service.
 
 **\*\*** In addition to these out-of-the-box variables, [Custom Fields](../../../../system-administration/configuring-liferay/adding-custom-fields.md) on the User entity can also be referenced as variables in the Element. For example, a User Custom Field with the name _Employee_ is referenced in an Element with `user.custom.field.employee`.
 

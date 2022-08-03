@@ -219,7 +219,7 @@ The Advanced Configuration adds [source includes and excludes](https://www.elast
 
 ## Configuring Search Blueprints in the Control Panel
 
-Most configurations for Search Blueprints are found directly in the Blueprints application and in the search page itself. However, there are two system/instance configurations that enable services that support geolocation capabilities in Search Blueprints.
+Most configurations for Search Blueprints are found directly in the Blueprints application and in the search page itself. However, there are two system/instance configurations that enable services supporting geolocation capabilities in Search Blueprints.
 
 Both configuration entries can be found in the Search Experiences category of Control Panel &rarr; System/Instance Settings.
 

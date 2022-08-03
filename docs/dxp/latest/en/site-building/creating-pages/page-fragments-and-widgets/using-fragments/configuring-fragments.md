@@ -41,7 +41,7 @@ The General tab includes both standard configuration options (e.g., visibility a
 
 The Styles tab includes standard options for configuring a Fragment's style. This includes a Fragment's dimensions, background, borders, and more. See [Configuring Fragment Styles](./configuring-fragments/styles-reference.md) for more information on the available style configurations.
 
-Custom Fragments with more complex structures may require a specific HTML change for style changes to be applied appropriately. See [Applying Styles to Fragments](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information on how that configuration works.
+Custom Fragments with more complex structures may require a specific HTML change for style changes to be applied appropriately. See [Applying Styles to Fragments](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information.
 
 ### Advanced
 

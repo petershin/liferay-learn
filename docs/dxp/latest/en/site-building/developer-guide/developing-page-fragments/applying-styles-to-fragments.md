@@ -8,11 +8,11 @@ By default, all styles (including color, spacing, etc.) are applied to the entir
 
 ## Changing How Styles are Applied
 
-{bdg-seconary}`Available Liferay 7.4 U31+ and GA31+`
+{bdg-secondary}`Available Liferay 7.4 U31+ and GA31+`
 
-You must change the Fragment's HTML configuration to change how styles apply to a Page Fragment. Add the `data-lfr-styles` attribute to an element contained in the Fragment to make any styles applied to them on a page instead apply to those inner elements. *Only one `data-lfr-styles` attribute is allowed per Fragment.*
+You must change the Fragment's HTML configuration to change how styles apply to it. Add the `data-lfr-styles` attribute to an element contained in the Fragment to make any styles applied to them instead apply to that specific element. *Only one `data-lfr-styles` attribute is allowed per Fragment.*
 
-For example, if you configure a custom Fragment with this HTML and change the background color to green, it applies to the Fragment's outermost `<div>`, and it may not correctly change the appearance the UI:
+For example, if you configure a custom Fragment with this HTML and change the background color to green, it applies to the Fragment's outermost `<div>`, and it may not correctly change the appearance in the UI:
 
 ```html
 <div class="marketing-card-fragment-01">
@@ -29,18 +29,20 @@ For example, if you configure a custom Fragment with this HTML and change the ba
 </div>
 ```
 
-However, if you add the `data-lfr-styles` attribute to one of the inner elements within the Fragment, then you can an element that makes sense to apply the styles to. For example, you can add the attribute to the button element in this example HTML:
+However, if you add the `data-lfr-styles` attribute to one of the inner elements within the Fragment, then you can make any changes to the style apply to that element. You can use this to choose an element that makes more sense for those changes to apply to.
+
+For example, you can add the attribute to the button element in the above example's HTML:
 
 ```html
 <a class="btn btn-nm btn-primary" data-lfr-styles data-lfr-editable-id="link" data-lfr-editable-type="link">
 ```
 
-This makes any changes to the style apply to that part of the Fragment. Now if you change the background color to green, then it changes the color of that element (in this example, the button):
+This makes any changes to the style apply to that part of the Fragment. Now if you change the background color to green, it changes the color of the chosen element (in this example, the button):
 
 ![The data-lfr-styles attribute in this example applies the background color specifically to the button in the Fragment.](./applying-styles-to-fragments/images/02.png)
 
 ```{note}
-If you have already added a Fragment to a page before you added the `data-lfr-styles` attribute, then you may need to remove and re-add the Fragment for the change to affect how styles are applied to it.
+If you have already added a Fragment to a page before you added the `data-lfr-styles` attribute, then you may need to remove and re-add the Fragment to the page for the change to affect how styles are applied to it.
 ```
 
 ```{warning}
@@ -54,7 +56,7 @@ You can add the `data-lfr-styles` attribute using your preferred method for edit
 
 ## Additional Information
 
-* [Developing Fragments](./developing-fragments.md)
+* [Developing Fragments](./developing-fragments-intro.md)
 * [Using the Fragments Editor](./using-the-fragments-editor.md)
 * [Using the Fragments Toolkit](./using-the-fragments-toolkit.md)
 * [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)

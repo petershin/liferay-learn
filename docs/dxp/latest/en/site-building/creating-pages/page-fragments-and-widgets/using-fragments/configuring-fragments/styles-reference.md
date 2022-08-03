@@ -20,6 +20,10 @@ Follow these steps to access a Fragment's *Styles* menu:
 
 Many styles have defined tokens supported by Style Books. See [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) and [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) for more information.
 
+```{note}
+In Liferay 7.4 versions U31+ and GA31+, all styles can be independently configured per type of device (using the device buttons at the top of the screen). In earlier versions, only text and spacing style configurations can be configured differently per device.
+```
+
 ## Spacing
 
 ```{note}

@@ -22,7 +22,7 @@ Account Addresses are different billing or shipping addresses that are associate
 
 To edit an existing address, 
 
-1. Under the _Addresses_ tab, click the the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the address and click _Edit_.
+1. Under the _Addresses_ tab, click the the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the address and click _Edit_. Use the filter tool to filter addresses by billing addresses or shipping addresses. Use the search bar to quickly locate a specific address.
 
    ![Click the Options icon of the address and click edit.](./account-addresses/images/02.png)
 

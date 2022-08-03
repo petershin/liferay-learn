@@ -105,7 +105,7 @@ public void detectRoute(RouteBuilder routeBuilder, RouteHelper routeHelper);
 Implement `detectRoute` to provide a distinctive portion of your entity's URL pattern, so that the Similar Results widget can detect if your contributor should be invoked. The URL pattern is added as an attribute of the `RouteBuilder` object. The `RouteHelper` is useful for retrieving the whole URL String for parsing.
 
 ```{note}
-Only one `SimilarResultsContributor` is supported for each display portlet.
+Only one `SimilarResultsContributor` is supported for each display widget.
 ```
 
 ```java

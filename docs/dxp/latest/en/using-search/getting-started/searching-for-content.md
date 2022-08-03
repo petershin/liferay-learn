@@ -50,12 +50,12 @@ Another way to ensure users see results is through [search suggestions](../searc
 
 ### Configuring the Search Bar
 
-The Search Bar's behavior can be configured via its portlet configuration screen. Configuration options are categorized as Display Settings, Suggestions Configuration, or Advanced Configuration.
+The Search Bar's behavior can be configured via its widget configuration screen. Configuration options are categorized as Display Settings, Suggestions Configuration, or Advanced Configuration.
 
 ![Configure the search bar behavior in its configuration screen.](./searching-for-content/images/05.png)
 
 ```{note}
-When you configure the globally embedded Search Bar widget at the top of one page, it configures the page-top Search Bar widget on all pages in the site. It also overrides the [destination Search Page's](../search-pages-and-widgets/working-with-search-pages/search-pages.md) Search Bar portlet, if they're configured differently. However, it does not override Search Bar widgets manually placed on other pages.
+When you configure the globally embedded Search Bar widget at the top of one page, it configures the page-top Search Bar widget on all pages in the site. It also overrides the [destination Search Page's](../search-pages-and-widgets/working-with-search-pages/search-pages.md) Search Bar widget, if they're configured differently. However, it does not override Search Bar widgets manually placed on other pages.
 ```
 
 #### Display Settings

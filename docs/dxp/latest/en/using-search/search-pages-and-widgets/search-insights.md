@@ -23,7 +23,7 @@ To see the Search Insights widget in action, navigate to a Search Page in your t
 
 ![The Search Insights widget is helpful during testing and development.](./search-insights/images/01.png)
 
-Once you search for keywords that return Search Results, the Search Insights portlet displays the returned query string in all its glory. 
+Once you search for keywords that return Search Results, the Search Insights widget displays the returned query string in all its glory. 
 
 ![The full query string isn't for the faint of heart. This example is clipped to spare the reader.](./search-insights/images/02.png)
 

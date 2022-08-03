@@ -131,7 +131,7 @@ Download the LES Monitoring app and install the LPKG file by copying it into the
 
 1. Deploy the configuration file to `Liferay Home/osgi/configs`, and your running instance applies the settings.
 
-1. Add two more settings to Kibana itself. The first forbids Kibana from rewriting requests prefixed with `server.basePath`. The second sets Kibana's base path for the Monitoring portlet to act as a proxy for Kibana's monitoring UI. Add this to `kibana.yml`:
+1. Add two more settings to Kibana itself. The first forbids Kibana from rewriting requests prefixed with `server.basePath`. The second sets Kibana's base path for the Monitoring widget to act as a proxy for Kibana's monitoring UI. Add this to `kibana.yml`:
 
    [Liferay DXP 7.3]
    ```yaml
@@ -145,11 +145,11 @@ Download the LES Monitoring app and install the LPKG file by copying it into the
    server.basePath: "/o/portal-search-elasticsearch-xpack-monitoring/xpack-monitoring-proxy"
    ```
 
-   Once you set the `server.basePath`, you cannot access the Kibana UI through Kibana's URL (e.g., `https://localhost:5601`). All access to the Kibana UI is through the Monitoring portlet, which is only accessible to signed in Liferay users. Navigate directly to the portlet using the URL
+   Once you set the `server.basePath`, you cannot access the Kibana UI through Kibana's URL (e.g., `https://localhost:5601`). All access to the Kibana UI is through the Monitoring widget, which is only accessible to signed in Liferay users. Navigate directly to the widget using the URL
 
    [http://localhost:8080/o/portal-search-elasticsearch-monitoring/monitoring-proxy/app/monitoring](http://localhost:8080/o/portal-search-elasticsearch-monitoring/monitoring-proxy/app/monitoring)
 
-1. Because you're using the Monitoring portlet in Liferay as a proxy to Kibana's UI and you are using a self-signed certificate, you must configure the application server's startup JVM parameters to trust Kibana's certificate.
+1. Because you're using the Monitoring widget in Liferay as a proxy to Kibana's UI and you are using a self-signed certificate, you must configure the application server's startup JVM parameters to trust Kibana's certificate.
 
    One approach is to add the truststore path, password and type to your application server's startup JVM parameters. Here are example truststore and path parameters for appending to a Tomcat server's `CATALINA_OPTS`:
 

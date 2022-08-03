@@ -72,12 +72,12 @@ Most configuration of Search Bar Suggestions occur at the widget scope. In addit
 
 ![Configure Search Bar Suggestions at the instance or system scope.](./configuring-search-bar-suggestions/images/03.png)
 
-<!-- Modify the bullets below into a comparison table (https://github.com/liferay/liferay-learn/blob/master/readme/WRITING_GUIDELINES.md#comparing-features). -Rich -->
-
 Here's what happens when you enable or disable Search Bar Suggestions at the system, instance, or widget [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md):
 
-* If Search Bar Suggestions is disabled in System Settings, the default for all instances is _disabled_. 
-* If Search Bar Suggestions is disabled in Instance Settings, the Suggestions settings don't appear in the Search Bar widget configuration of the given instance.
-* If Search Bar Suggestions is enabled in Instance Settings, it can still be disabled in the Search Bar widget configuration.
+| Configuration Scope | Enabled? | Search Bar widget result |
+| :------------------- | :-------- | :------------------------ |
+| System Settings     | &#10008; | Sets the default for all instances as disabled. Suggestions settings do not appear in the widget configuration. |
+| Instance Settings   | &#10008; | Suggestions settings do not appear in the widget configuration. |
+| Instance Settings   | &#10004; | Suggestions are enabled, and settings appear in the widget configuration. Suggestions can be disabled in the widget configuration.
 
 The other settings work according to Liferay's [configuration scope paradigm](../../../system-administration/configuring-liferay/understanding-configuration-scope.md): settings at higher scopes like system and instance set the defaults, whereas the more granular widget scope can override those defaults.

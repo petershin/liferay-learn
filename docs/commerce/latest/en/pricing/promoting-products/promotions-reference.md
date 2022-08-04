@@ -15,7 +15,7 @@
 | :-------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Name      | Name of the price modifier                                                                                                                                                                 |
 | Target    | Target for applying the modifier (*Catalog*/*Categories*/*Product Groups*/*Products*)                                                                                                      |
-| Modifier  | Type of modifier (*Percentage*/*Replace*/*Fixed* Amount)                                                                                                                                   |
+| Modifier  | Type of modifier (*Percentage*/*Replace*/*Fixed Amount*)                                                                                                                                   |
 | Amount    | Amount by which to modify                                                                                                                                                                  |
 | Priority  | Priority that decides which modifier has precedence when there are multiple modifiers present. The higher the priority value, the higher the precedence (2 greater than 1 greater than 0). |
 

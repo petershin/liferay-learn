@@ -10,7 +10,7 @@ You can define a promotional price for all customers or a specific set of custom
 
 ## Entries
 
-You can use the *Entries* tab to define Promotions for specific SKUs. Click the *Entries* tab, search for an SKU and click Select. Once selected, click on the SKU from the *Entries* section and add a Promotion Price. See [Adding Entries](./using-the-promotion-base-list.md) for more information.
+You can use the *Entries* tab to define Promotions for specific SKUs. Click the *Entries* tab, search for an SKU and click Select. Once selected, click on the SKU from the *Entries* section and add a Promotion Price. See [Adding Entries](./using-the-promotion-base-list.md#adding-entries) for more information.
 
 ## Price Modifiers
 

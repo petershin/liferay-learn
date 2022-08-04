@@ -26,7 +26,7 @@ Promotions are similar to Price Lists in functionality but they are used togethe
 
 ![Calculation of a product's active price.](./introduction-to-promotions/images/03.png)
 
-Once the active price of a Product is determined, Discounts are then applied on the active price. See Introduction to Discounts for more information.
+Once the active price of a Product is determined, Discounts are then applied on the active price. See [Introduction to Discounts](./introduction-to-discounts.md) for more information.
 
 If you want to offer special pricing to a customer that is lower than the usual price for other customers, you can use both Price Lists and Promotions but a Price List does not show the reduction in price. See the image below.
 

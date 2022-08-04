@@ -5,7 +5,7 @@ toc:
 - ./promoting-products/introduction-to-promotions.md
 - ./promoting-products/using-the-promotion-base-list.md
 - ./promoting-products/creating-a-promotion.md
-- ./promoting-products/promotion-base-list-reference.md
+- ./promoting-products/promotions-reference.md
 - ./promoting-products/introduction-to-product-groups.md
 - ./promoting-products/replacement-products.md
 - ./promoting-products/product-recommendations.md
@@ -20,7 +20,7 @@ promoting-products/creating-a-discount.md
 promoting-products/introduction-to-promotions.md
 promoting-products/using-the-promotion-base-list.md
 promoting-products/creating-a-promotion.md
-promoting-products/promotion-base-list-reference.md
+promoting-products/promotions-reference.md
 promoting-products/introduction-to-product-groups.md
 promoting-products/replacement-products.md
 promoting-products/product-recommendations.md
@@ -49,8 +49,8 @@ promoting-products/product-recommendations.md
 :link: ./promoting-products/creating-a-promotion.md
 :::
 
-:::{grid-item-card}  Promotion Base List Reference
-:link: ./promoting-products/promotion-base-list-reference.md
+:::{grid-item-card}  Promotions Reference
+:link: ./promoting-products/promotions-reference.md
 :::
 
 :::{grid-item-card}  Introduction to Product Groups

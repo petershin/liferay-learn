@@ -60,7 +60,7 @@ The Groovy validation type supports all standard Groovy Script capabilities. How
 
 ![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/05.png)
 
-For Liferay 7.4 U33+ and GA33+, Liferay uses [this library](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay displays an error message.
+For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay displays an error message.
 
 ## Using Expression Builder Validations
 

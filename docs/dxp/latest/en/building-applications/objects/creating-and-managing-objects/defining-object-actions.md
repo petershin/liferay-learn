@@ -48,6 +48,8 @@ Follow these steps to define actions for an Object:
 
    ![Use expressions to set additional conditions for the trigger.](./defining-object-actions/images/04.png)
 
+   For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax when you click *Done*. If the expression is invalid, Liferay displays an error message.
+
 1. For Action, select the type of action performed and fill out all additional fields. See [Understanding Action Types](#understanding-action-types) for more information.
 
 1. Click *Save*.
@@ -72,7 +74,7 @@ If desired, you can deactivate an action by going to its *Basic Info* tab, toggl
 
 {bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`
 
-*Groovy Script* actions execute custom Groovy scripts. When you select this action type, enter your script into the provided code window.
+*Groovy Script* actions execute custom Groovy scripts. When you select this action type, enter your script into the provided code window. For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay displays an error message.
 
 ![Enter your Groovy script.](./defining-object-actions/images/07.png)
 

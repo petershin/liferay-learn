@@ -4,13 +4,15 @@ Path Analytics identify where visitors to your site most commonly originate. Kno
 
 ## Viewing Page Path Analytics
 
-A Page’s Path Analytics are reported in the Path tab of a Page’s screen. The diagram reports the most common pages from which visitors accessed this Page.
+A Page’s Path Analytics are reported in the Path tab of a Page’s screen. The diagram reports the most common traffic sources for the page. The top three sources are listed followed by all other sources that are aggregated with the label Others.
 
 ![The Path Diagram identifies traffic organizes and presents traffic sources to particular pages and assets.](paths/images/01.png)
 
-After the top three paths to the Page, the remaining paths are aggregated to show how many views came from Other pages.
+The number value shown over each path indicates the total number of views that came from that traffic source. The different paths converge to a total number shown on the right side of the chart. 
 
 If a Page in one of your Liferay DXP sites is also a Path to the current Page, clicking the path URL brings you to its Overview screen. If it’s not a page that’s loaded from the data source, nothing happens.
+
+Note, the number displayed in the green box shows the number of views that came from direct traffic. Additionally, the top assets visitors interacted with on the page are also listed.
 
 ## Location and Device Type
 

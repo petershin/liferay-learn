@@ -22,7 +22,7 @@ This creates a new Promotion on the selected Catalog. Notice how there is a *Bas
 
 ![You can change the name of the promotion, assign a priority, select the *Parent Price List*, and the *Price Type*.](./creating-a-promotion/images/03.png)
 
-In the *Details* section, you can change the name of the promotion, assign a priority, select the *Parent Price List*, and the *Price Type*. Since the Promotion is for the 4th of July, you can set a schedule by selecting a *Publish Date* and *Expiration Date* from the *Schedule* section. Click *Publish* to activate the Promotion. If there are multiple Promotions applicable for an Account, the Promotion with higher priority has precedence over the others.
+In the *Details* section, you can change the name of the promotion, assign a priority, select the *Parent Price List*, and the *Price Type*. Since the Promotion is for the 4th of July, you can set a schedule by selecting a *Publish Date* and *Expiration Date* from the *Schedule* section. Click *Publish* to activate the Promotion. If there are multiple Promotions applicable for an Account, the Promotion with higher priority has precedence over the others. See [Promotions Reference](./promotions-reference.md) for more information on specific fields.
 
 ## Adding a Price Modifier
 
@@ -50,7 +50,7 @@ You need not set an expiration date for the price modifier if you have already s
 
 ![Configure the price modifier and activate it.](./creating-a-promotion/images/05.png)
 
-This creates the new price modifier but you must configure it. Click on the entry from the list and enter the percentage amount as -20. Then, activate it using the *Active* toggle. After that, click *Save* and click *Publish*.
+This creates the new price modifier but you must configure it. Click on the entry from the list and enter the percentage amount as -20. Then, activate it using the *Active* toggle. After that, click *Save* and click *Publish*. See [Price Modifiers Reference](./promotions-reference.md#price-modifiers-reference) for more information.
 
 ![The prices of all products in the catalog are reduced by 20% on the scheduled date](./creating-a-promotion/images/06.png)
 

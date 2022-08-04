@@ -63,13 +63,13 @@ Then follow these steps:
 
    ![See that a new Knowledge Base article has been added.](./knowledge-base-api-basics/images/01.png)
 
-1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `KnowledgeBaseArticle_POST_ToSite.java` class with the following command. Replace the `siteId` system property value with your site's ID.
+1. Run the `KnowledgeBaseArticle_POST_ToSite.java` class. Replace the `siteId` system property value with your site's ID.
 
    ```bash
    java -classpath .:* -DsiteId=1234 KnowledgeBaseArticle_POST_ToSite
@@ -96,7 +96,7 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"` | Basic authentication credentials |
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md).
+Basic authentication is used for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md).
 ```
 
 The other cURL commands use similar JSON arguments.
@@ -135,7 +135,7 @@ Below are examples of calling other `KnowledgeBaseArticle` REST services using c
 
 ## Get Knowledge Base Articles from Site
 
-You can list Knowledge Base articles by executing the following cURL or Java command. Replace `1234` with your site's ID.
+You can retrieve Knowledge Base articles from any site by executing the following cURL or Java command. Replace `1234` with your site's ID.
 
 ### KnowledgeBaseArticles_GET_FromSite.sh
 
@@ -171,7 +171,7 @@ The Instance's `KnowledgeBaseArticles` objects appear in JSON.
 
 ## Get a Knowledge Base Article
 
-Get a specific Knowledge Base article with the following cURL or Java command.
+Get a specific Knowledge Base article by its ID with the following cURL or Java command.
 
 ```{tip}
 Use ``KnowledgeBaseArticles_GET_FromSite.[java|sh]`` to get instance ``Knowledge Base Article`` IDs.
@@ -211,7 +211,7 @@ The `KnowledgeBaseArticle` fields appear in JSON.
 
 ## Patch a Knowledge Base Article
 
-Do a partial edit of an existing Knowledge Base article with the following cURL and Java commands. Replace `1234` with your Knowledge Base article's ID.
+Do a partial edit of an existing Knowledge Base article with the following cURL and Java commands. Replace `1234` with your Knowledge Base article's ID. Specify the field you want to modify and its new value. 
 
 ### KnowledgeBaseArticle_PATCH_ById.sh
 
@@ -223,7 +223,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/java/KnowledgeBaseArticle_PATCH_ById.sh
+```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/curl/KnowledgeBaseArticle_PATCH_ById.sh
    :language: bash
 ```
 

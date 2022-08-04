@@ -56,23 +56,23 @@ Once activated, the validation is run for all new Object entries.
 
 ## Using Groovy Validations
 
-The Groovy validation type supports all standard Groovy Script capabilities. However, when defining Groovy conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`. For Liferay 7.4 U33+ and GA33+, Liferay uses [this library](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax while editing.
+The Groovy validation type supports all standard Groovy Script capabilities. However, when defining Groovy conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
 
 ![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/05.png)
 
+For Liferay 7.4 U33+ and GA33+, Liferay uses [this library](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay displays an error message.
+
 ## Using Expression Builder Validations
 
-The Expression Builder type provides predefined fields, operators, and functions that you can access in the Conditions side panel. Clicking an element adds it to the conditions editor. These functions return a Boolean value. See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for a complete list of provided operators and functions. For Liferay 7.4 U33+ and GA33+, Liferay checks your expressions for valid syntax while editing.
-
-<!-- ALT:
-For Liferay 7.4 U33+ and GA33+, Liferay checks if your expression uses the correct syntax and if it uses symbols and reserved words correctly.
--->
+The Expression Builder type provides predefined fields, operators, and functions that you can access in the Elements side panel. Clicking an element adds it to the conditions editor. These functions return a Boolean value. See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for a complete list of provided operators and functions.
 
 ```{important}
 Expression Builder validations can only be used with text, numeric, date, and boolean field types.
 ```
 
 ![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/06.png)
+
+For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax when you click *Save*. If the expression is invalid, Liferay displays an error message.
 
 ## Available Fields Reference
 

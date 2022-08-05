@@ -12,10 +12,10 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 Then, follow these steps to import an example Fragment Set to see how Fragment resources work:
 
-1. Download and unzip the [example resources Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip):
+1. Download and unzip the [example resources Fragment Set](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip) :
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O
     ```
 
     ```bash

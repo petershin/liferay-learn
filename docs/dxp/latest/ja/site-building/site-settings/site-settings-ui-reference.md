@@ -29,7 +29,7 @@ Liferay DXP 7.4では、サイト設定アプリケーションが大幅に変�
 - 支払
 - 出荷先
 
-ここでは、サイトスコープでのCommerce設定を行うことができます。 コマースの設定の詳細は、 [のLiferay Commerce設定の概要](https://learn.liferay.com/commerce/latest/en/store-management/liferay-commerce-configuration-overview.html)を参照してください。
+ここでは、サイトスコープでのCommerce設定を行うことができます。 コマースの設定の詳細は、 [のLiferay Commerce設定の概要](https://learn.liferay.com/commerce/latest/ja/store-management/liferay-commerce-configuration-overview.html) を参照してください。
 
 ![コマースのデフォルトサイト設定](./site-settings-ui-reference/images/21.png)
 
@@ -52,7 +52,7 @@ Liferay DXP 7.4では、サイト設定アプリケーションが大幅に変�
 Piwikの設定では、スクリプトの開始タグと終了タグを含む完全なスクリプトコードを入力します。
 ```
 
-別のアナリティクスサービスが必要な場合は、追加できます。 異なるアナリティクスサービスのための追加フィールドを追加する方法については、[Adding a New Analytics Service](./adding-a-new-analytics-service.md)を参照してください。
+別のアナリティクスサービスが必要な場合は、追加できます。 異なるアナリティクスサービスのための追加フィールドを追加する方法については、 [新しいアナリティクスサービスの追加](./adding-a-new-analytics-service.md) を参照してください。
 
 ### ローカライズ
 
@@ -70,7 +70,7 @@ Piwikの設定では、スクリプトの開始タグと終了タグを含む完
 |:---------------- |:--------------------------------------------------------------------------------------------------------------------------------------- |
 | サイトID            | サイトの作成時に自動的に生成される固有の番号。 このIDは永続的であり、変更できません。                                                                                            |
 | 説明               | このフィールドは、サイトの目的を説明するために使用します。                                                                                                           |
-| 親サイト             | 親サイトを選択して、子サイトとして指定する。 詳細については、[Site Hierarchies](../sites/site-hierarchies.md)を参照してください。                                               |
+| 親サイト             | 親サイトを選択して、子サイトとして指定する。 詳細については、 [サイト階層](../sites/site-hierarchies.md) を参照してください。                                               |
 | メンバーシップタイプ       | サイトのメンバーシップをどの程度制限するかを決定します。 詳細は、[サイトのメンバーシップタイプを変更する](../site-settings/site-users/changing-site-membership-type.md)を参照してください。          |
 | 手動メンバーシップ管理を許可する | メンバーを手動でサイトに追加・削除することを許可するかどうかを決定します。 詳細は、[サイトのメンバーシップタイプを変更する](../site-settings/site-users/changing-site-membership-type.md)を参照してください。 |
 
@@ -83,7 +83,7 @@ Piwikの設定では、スクリプトの開始タグと終了タグを含む完
 
 ### サードパーティー
 
-Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、[Liferay Commerce Connector to PunchOut2Goのリファレンスのガイド](https://learn.liferay.com/commerce/latest/en/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide.html)を参照してください。
+Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、 [Liferay Commerce Connector to PunchOut2Goのリファレンスのガイド](https://learn.liferay.com/commerce/latest/en/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide.html) を参照してください。
 
 ### サードパーティアプリケーション
 
@@ -199,8 +199,8 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 | セクション             | 説明                                                                                                                                                                       |
 |:----------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | その他               | お客様がサイトに定義したカスタムサイト設定があれば、それも含みます。 詳細は、[設定へのアクセス](../../building-applications/core-frameworks/configuration-framework/setting-and-accessing-configurations.md)を参照してください。 |
-| 税金                | Liferay Commerceの「Remote Commerce Tax Configuration」の設定を行います。 詳細は、 [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html) のドキュメントを参照してください。         |
-| category.tax-rate | Liferay Commerce Avalara統合の設定を行います。 詳細は、 [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html) のドキュメントを参照してください。                                   |
+| 税金                | Liferay Commerceの「Remote Commerce Tax Configuration」の設定を行います。 詳細は、 [Liferay Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) のドキュメントを参照してください。         |
+| category.tax-rate | Liferay Commerce Avalara統合の設定を行います。 詳細は、 [Liferay Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) のドキュメントを参照してください。                                   |
 
 
 
@@ -219,7 +219,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 
 ```{note}
-これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 詳しくは、[Introduction to Localization](https://help.liferay.com/hc/en-us/articles/360028746672-Introduction-to-Localization) および [Modifying Localizable Site Fields](./site-localization.md#modifying-localizable-site-fields)をご覧ください。
+これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 詳しくは、 [Introduction to Localization](https://help.liferay.com/hc/ja/articles/360028746672-Introduction-to-Localization) および [Modifying Localizable Site Fields](./site-localization.md#modifying-localizable-site-fields) をご覧ください。
 ```
 
 
@@ -245,7 +245,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 **手動メンバーシップ管理を許可する**：メンバーをサイトに手動で追加したりサイトから削除することを許可するかどうかを決定します。 サイトのメンバーシップがメンバーシップポリシーによって自動的に処理される場合は、この設定を無効にすることができます。 詳細は、[サイトのメンバーシップポリシーの管理](./site-users/changing-site-membership-type.md)を参照してください。
 
-**親サイト**：親サイトを選択して、サイトをサブサイトとして指定します。 詳細については、[Site Hierarchies](../sites/site-hierarchies.md)を参照してください。
+**親サイト**：親サイトを選択して、サイトをサブサイトとして指定します。 詳細については、 [サイト階層](../sites/site-hierarchies.md) を参照してください。
 
 **Limit Membership to Parent Site Members**：サブサイトのメンバーシップをその親サイトのメンバーに制限するかどうかを決定します。 このオプションは、サブサイトにのみ表示されます。
 
@@ -297,7 +297,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 #### Open Graph
 
-**Open Graphを有効にする**：サイトのページの`<head>`に[Open Graph](https://ogp.me/) `<meta>`タグを埋め込むかどうかを決定します。 これらのタグは、ページのメタデータを定義し、Facebook、Slack、TwitterなどのOpen Graphプロトコルをサポートするアプリケーションで共有する際に、サイトのコンテンツを魅力的に表現します。
+**Open Graphを有効にする**：サイトのページの`<head>`に [Open Graph](https://ogp.me/) `<meta>`タグを埋め込むかどうかを決定します。 これらのタグは、ページのメタデータを定義し、Facebook、Slack、TwitterなどのOpen Graphプロトコルをサポートするアプリケーションで共有する際に、サイトのコンテンツを魅力的に表現します。
 
 **Image**：［Image］フィールドを使用して、ページの次のOpen Graph `<meta>`プロパティを定義します。 
 
@@ -314,7 +314,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 **画像の別の説明**：［画像の別の説明］フィールドを使用して、ページの`og:image:alt`プロパティを定義します。 *［言語フラグ］*ボタンを使用して画像の別の説明をローカライズすることもできます。
 
-詳しくは、[Configuring Open Graph](./configuring-open-graph.md)を参照してください。
+詳しくは、 [Open Graphの設定](./configuring-open-graph.md) を参照してください。
 
 ![Open Graphを有効または無効にしたり、画像のメタタグを定義したり、画像プレビューを表示したりできます。](./site-settings-ui-reference/images/08.png)
 
@@ -322,7 +322,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 #### 共有
 
-サイトユーザー間でドキュメント共有を有効にするかどうかを決定します。 有効にすると、ユーザー同士でアイテムを共有することができます。 詳細は、[Sharing Documents with Other Users](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md)を参照してください。 
+サイトユーザー間でドキュメント共有を有効にするかどうかを決定します。 有効にすると、ユーザー同士でアイテムを共有することができます。 詳細は、 [他のユーザーとのドキュメントの共有](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md) を参照してください。 
 
 
 
@@ -368,7 +368,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 #### デフォルトの関連付け
 
-新しいサイトメンバーにデフォルトで割り当てられるロールとチームを選択します。 詳細は、[Configuring Role and Team Defaults for Site Members](./site-users/configuring-role-and-team-defaults-for-site-members.md)を参照してください。
+新しいサイトメンバーにデフォルトで割り当てられるロールとチームを選択します。 詳細は、 [サイトメンバーのロールとチームのデフォルトの設定](./site-users/configuring-role-and-team-defaults-for-site-members.md) を参照してください。
 
 ![新しいサイトメンバーにデフォルトで割り当てられるロールとチームを選択できます。](./site-settings-ui-reference/images/14.png)
 
@@ -378,7 +378,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 提供されたフィールドを使用して、サイトのGoogle アナリティクスIDを設定し、追加のGoogleアナリティクスオプションを設定します。 スクリプトの開始タグと終了タグを含む完全なスクリプトコードを入力して、サイトのPiwikアナリティクス追跡コードを設定することもできます。
 
-別のアナリティクスサービスが必要な場合は、追加できます。 異なるアナリティクスサービスのための追加フィールドを追加する方法については、[Adding a New Analytics Service](./adding-a-new-analytics-service.md)を参照してください。
+別のアナリティクスサービスが必要な場合は、追加できます。 異なるアナリティクスサービスのための追加フィールドを追加する方法については、 [新しいアナリティクスサービスの追加](./adding-a-new-analytics-service.md) を参照してください。
 
 ![［アナリティクス］セクションでは、サイトのアナリティクスサービスを設定できます。](./site-settings-ui-reference/images/15.png)
 

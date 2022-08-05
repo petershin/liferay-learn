@@ -41,4 +41,4 @@ FragmentのAdvanced Settingsメニューは以下の手順で表示されます�
 * [一般設定リファレンス](./general-settings-reference.md)
 * [フラグメントの使用](../../using-fragments.md)
 * [新しいスタイルブックの作成](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)
-* [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)
+* [スタイルブックトークンの定義](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)

@@ -11,7 +11,7 @@
 例えば、Webコンテンツの記事ごとに表示ページテンプレートを作成し、それぞれ同じレイアウトで独自のフレンドリURLを持つ異なる表示ページにコンテンツを表示することができます。 さらに、 [SEO設定](./configuring-seo-and-open-graph.md) を定義することで、ページの検索順位を向上させることも可能です。 表示ページは、ビジネスケーススタディ、製品・サービスオプション、アパート・マンション、求人情報など、さまざまな要素のカタログを一貫した方法で表示する場合に最適です。
 
 ```{note}
-Liferay DXP でコンテンツを表示するさまざまな方法についての詳細は、[Displaying Content](../displaying-content-intro.md) を参照してください。
+Liferay DXP でコンテンツを表示するさまざまな方法についての詳細は、 [コンテンツの表示](../displaying-content-intro.md) を参照してください。
 ```
 
 ## 表示ページテンプレートと表示ページについて
@@ -32,7 +32,7 @@ Liferay DXP でコンテンツを表示するさまざまな方法について�
 表示ページテンプレートを作成および管理するときは、次の項目を考慮してください。
 
 - 表示ページテンプレートは、同じコンテンツタイプに対して複数作成することができますが、デフォルトでは1つしか設定できません。
-- デフォルトの表示ページテンプレートまたは特定の表示ページテンプレートを使用してコンテンツを公開できます（詳細については、 [Publishing Content With Display Pages](./publishing-content-with-display-pages.md) を参照してください）。
+- デフォルトの表示ページテンプレートまたは特定の表示ページテンプレートを使用してコンテンツを公開できます（詳細については、 [表示ページによるコンテンツの公開](./publishing-content-with-display-pages.md) を参照してください）。
 - 表示ページでは、ユニークな [フレンドリURL](../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)を使用してコンテンツをレンダリングします。
 - 表示ページのレイアウトとマッピングを更新するには、［サイト管理］ &rarr; *［Design］* &rarr; *［Page Templates］*で表示ページテンプレートを更新してください。
 
@@ -59,5 +59,5 @@ Liferay DXP でコンテンツを表示するさまざまな方法について�
 ## 関連情報
 
 - [表示ページテンプレートの作成と管理](./creating-and-managing-display-page-templates.md)
-- [Publishing Content With Display Pages](./publishing-content-with-display-pages.md)
+- [表示ページによるコンテンツの公開](./publishing-content-with-display-pages.md)
 - [コンテンツの表示](../displaying-content-intro.md)

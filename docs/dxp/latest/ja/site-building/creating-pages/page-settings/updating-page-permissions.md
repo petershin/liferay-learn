@@ -23,5 +23,5 @@
 ## 追加情報
 
 * [ロールと権限について](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
-* [Assigning Users to Roles](../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md)
+* [ユーザーのロールへの割り当て](../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md)
 * [ページセットの設定](./configuring-page-sets.md)

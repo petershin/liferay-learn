@@ -20,7 +20,7 @@ Click To Chatを有効にするには、*［Instance Settings］*に移動しま
 
     ![スイッチをオンに切り替えてClick to Chatを有効にします。](./enabling-automated-live-chat-systems/images/04.png)
 
-1. 有効にしたら、[サイト設定](../../site_settings.html)戦略を選択する必要があります。 サイト設定戦略は、特定の[Liferayインスタンス](../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)に存在するサイト間でClick to Chatを有効にする方法を決定します。
+1. 有効にしたら、 [サイト設定](../../site_settings.html) 戦略を選択する必要があります。 サイト設定戦略は、特定の[Liferayインスタンス](../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)に存在するサイト間でClick to Chatを有効にする方法を決定します。
 
     ![サイト設定戦略オプションを選択します。](./enabling-automated-live-chat-systems/images/05.png)
 
@@ -30,7 +30,7 @@ Click To Chatを有効にするには、*［Instance Settings］*に移動しま
 
    **Inherit or Override**：サイトのサイト設定で他に構成されていない限り、サイトはインスタンス設定から構成を継承します。
 
-1. チャットプロバイダーを選択し、チャットプロバイダーから提供された[アカウントIDまたはトークン](#getting-the-chat-provider-account-id-or-token)を入力します。
+1. チャットプロバイダーを選択し、チャットプロバイダーから提供された [アカウントIDまたはトークン](#getting-the-chat-provider-account-id-or-token) を入力します。
 
     ![使用するチャットプロバイダーを選択します。 ](./enabling-automated-live-chat-systems/images/06.png)
 
@@ -47,7 +47,7 @@ Click To Chatとライブチャットプロバイダーとの統合が構成さ�
 * [Chatwoot](./getting-a-chat-provider-account-id/chatwoot.md)
 * [Crisp](./getting-a-chat-provider-account-id/crisp.md)
 * [Hubspot](./getting-a-chat-provider-account-id/hubspot.md)
-* [Jivochat](./getting-a-chat-provider-account-id/jivochat.md)
+* [JivoChat](./getting-a-chat-provider-account-id/jivochat.md)
 * [LiveChat](./getting-a-chat-provider-account-id/livechat.md)
 * [Liveperson](./getting-a-chat-provider-account-id/liveperson.md)
 * [Smartsupp](./getting-a-chat-provider-account-id/smartsupp.md)

@@ -14,7 +14,7 @@
 
 ## コレクションディスプレイの断片
 
-Collection Display Fragment は、アセット（ [Collection](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) ）を1つだけ表示します。 このフラグメントは、手動または動的に（1つまたは複数のアセットタイプの）アセットを含めることができる、コレクションの柔軟性をすべて提供します。 詳しくは、 [Displaying Collections](./additional-content-display-options/displaying-collections.md) をご覧ください。
+Collection Display Fragment は、アセット（ [Collection](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) ）を1つだけ表示します。 このフラグメントは、手動または動的に（1つまたは複数のアセットタイプの）アセットを含めることができる、コレクションの柔軟性をすべて提供します。 詳しくは、 [コレクションの表示](./additional-content-display-options/displaying-collections.md) をご覧ください。
 
 ## Webコンテンツの表示ウィジェット
 

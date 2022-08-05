@@ -35,11 +35,11 @@ using-fragments/propagating-fragment-changes.md
 
 ![フラグメントを使用してコンテンツページとテンプレートを作成します。](./using-fragments/images/01.png)
 
-Liferayは、すぐに使用できるさまざまなフラグメントを提供しています。 ただし、[ページフラグメントエディタ](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md)または[フラグメントツールキット](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md)を使用してカスタムフラグメントを開発することもできます。 さらに、[Liferayウィジェットをフラグメントに埋め込んだり](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#including-widgets-within-a-fragment)、編集可能なフィールドを追加したりできます。 詳細については、[Developing Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)を参照してください。
+Liferayは、すぐに使用できるさまざまなフラグメントを提供しています。 ただし、[ページフラグメントエディタ](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md)または[フラグメントツールキット](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md)を使用してカスタムフラグメントを開発することもできます。 さらに、 [Liferayウィジェットをフラグメントに埋め込んだり](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#including-widgets-within-a-fragment) 、編集可能なフィールドを追加したりできます。 詳細については、[Developing Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)を参照してください。
 
 すべてのページフラグメントはセットに編成され、管理と使用を容易にするために関連するフラグメントをグループ化します。 各フラグメントセットには、フラグメントのコードで直接参照できるリソースを含めることもできます。 詳細については、[Including Default Resources in Page Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md)を参照してください。
 
-ページまたはテンプレートにフラグメントを追加した後、フラグメントとそのサブ要素を構成したりカスタマイズしたりできます。 これらのオプションは異なる場合がありますが、一部はすべてに共通です。 使用可能なオプションの詳細については、[Configuring Fragments](./using-fragments/configuring-fragments.md)を参照してください。
+ページまたはテンプレートにフラグメントを追加した後、フラグメントとそのサブ要素を構成したりカスタマイズしたりできます。 これらのオプションは異なる場合がありますが、一部はすべてに共通です。 使用可能なオプションの詳細については、 [フラグメントの設定](./using-fragments/configuring-fragments.md) を参照してください。
 
 ::::{grid} 2 :gutter: 3 3 3 3
 
@@ -55,7 +55,7 @@ Liferayは、すぐに使用できるさまざまなフラグメントを提供�
 
 * [一般設定リファレンス](using-fragments/configuring-fragments/general-settings-reference.md)
 * [スタイルリファレンス](using-fragments/configuring-fragments/styles-reference.md)
-* [Fragment Sub-Elements Reference](using-fragments/configuring-fragments/fragment-sub-elements-reference.md) :::
+* [フラグメントサブ要素リファレンス](using-fragments/configuring-fragments/fragment-sub-elements-reference.md) :::
 
 :::{grid-item-card} フラグメント要素のマッピングとリンク
 :link: ./using-fragments/mapping-and-link-fragment-elements.md

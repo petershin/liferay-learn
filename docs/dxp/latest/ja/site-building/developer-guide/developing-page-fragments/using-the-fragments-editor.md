@@ -99,11 +99,11 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     JSONの `fields` オブジェクトと一緒に）どのフィールドセットにも `configurationRole` 値を追加して、関連するフィールドがどのタブに表示されるかを指定することができます。 値を `styles` に設定すると、フィールドが Styles タブに表示され、`advanced` に設定すると Advanced タブに表示されます (*Liferay DXP バージョン U23+ または GA23+* のみ)。 もし `configurationRole` が設定されていない場合は、デフォルトで General タブに表示されます。
     ```
 
-1. *［Publish］* をクリックして、[コンテントページ](../../creating-pages/understanding-pages/understanding-pages.md#content-pages)で使用できるようにします。
+1. *［Publish］* をクリックして、 [コンテントページ](../../creating-pages/understanding-pages/understanding-pages.md#content-pages) で使用できるようにします。
 
     ![フラグメントはコンテンツ ページで使用できます。](./using-the-fragments-editor/images/07.png)
 
-フラグメントの作成中、変更内容はフラグメントが公開されるまで自動的にドラフトとして保存されます。 セットに追加すると、フラグメントエディターでいつでもフラグメントをコピー、エクスポート、編集、および削除できます。 ページ フラグメントで使用可能なアクションの詳細は、[Managing Fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md)を参照してください。
+フラグメントの作成中、変更内容はフラグメントが公開されるまで自動的にドラフトとして保存されます。 セットに追加すると、フラグメントエディターでいつでもフラグメントをコピー、エクスポート、編集、および削除できます。 ページ フラグメントで使用可能なアクションの詳細は、 [フラグメントの管理](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) を参照してください。
 
 ```{note}
 Liferay DXP 7.2 SP1以降および Liferay Portal 7.2 GA2以降では、*グローバル* サイトでページ フラグメントを作成して、すべてのサイトで利用できるようにすることができます。 これらのバージョンの初期リリースでこの機能を公開するには、 `com.liferay.fragment.web.internal.configuration.FragmentGlobalPanelAppConfiguration.config` という名前の `.config` ファイルを作成し、 `enabled=B "true"` というプロパティを追加する必要があります。 そして、Liferay DXPインスタンスの `osgi/configs` フォルダにコピーしてください。 グローバル ページ フラグメントは子サイトに継承され、グローバル サイトからのみ編集できます。 グローバル ページ フラグメントがグローバル サイトから参照するすべてのリソースは、ページ フラグメントを利用するサイトにコピーされます。

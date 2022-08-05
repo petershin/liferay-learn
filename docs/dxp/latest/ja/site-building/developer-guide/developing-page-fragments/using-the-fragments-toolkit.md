@@ -24,7 +24,7 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
 1. サンプルの JavaScript プロジェクトの ZIP ファイルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
     ```
 
     ```bash
@@ -175,7 +175,7 @@ Then, follow these steps to import the sample Fragment Set to Liferay:
 
 * `[fragment-name]/`: フラグメントのすべてのファイルを含むフォルダ。
 
-    * `configuration.json`(オプション): フラグメントの構成を定義する JSON ファイル。 詳細は、[Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)を参照してください。
+    * `configuration.json`(オプション): フラグメントの構成を定義する JSON ファイル。 詳細は、 [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md) を参照してください。
 
     * `fragment.json`: フラグメントを説明するテキスト ファイル。
 
@@ -198,7 +198,7 @@ Then, follow these steps to import the sample Fragment Set to Liferay:
 
     * `styles.css`: フラグメントの CSS ソース。
 
-* `resources/` (オプション): フラグメントが必要とする追加の画像またはファイルを含むフォルダ。 詳細は、[Including Default Resources in Fragments](./including-default-resources-with-fragments.md)を参照してください。
+* `resources/` (オプション): フラグメントが必要とする追加の画像またはファイルを含むフォルダ。 詳細は、 [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md) を参照してください。
 
 フラグメントツールキットを使用して、このストラクチャーを持つプロジェクトをすばやく作成できます。
 
@@ -306,7 +306,7 @@ Then, follow these steps to import the sample Fragment Set to Liferay:
 * JavaScript (`main.js`)
 * [構成オプション](./adding-configuration-options-to-fragments.md) (`configuration.json`)
 
-たとえば、上記の HTML から構築し、[Clay](https://clayui.com/) の [Bootstrap](https://getbootstrap.com/) ベースのコンポーネントを使用して、次の `index.html` に示すように、注目を集める見出しと説明を持つフラグメントを作成できます。
+たとえば、上記の HTML から構築し、 [Clay](https://clayui.com/) の [Bootstrap](https://getbootstrap.com/) ベースのコンポーネントを使用して、次の `index.html` に示すように、注目を集める見出しと説明を持つフラグメントを作成できます。
 
 ```html
 <div class="component-my-jumbotron">
@@ -365,7 +365,7 @@ Liferay 7.2以下を使用している場合は、[Fragment-Specific Tags](../re
 * `<hr/>` 要素と次の `<p ...` 要素は、それぞれ水平方向の罫線と別の編集可能な段落を生成します。
 * `<a class="btn btn-primary btn-lg" ...` は変更可能なリンクを指定します。 `btn-primary` クラスはそれをメイン ボタンとしてスタイル設定し、`btn-lg` はそれを拡大します。 `href="#"` 属性は、リンクをクリックしたときにユーザーをページの上部に移動します。 `data-lfr-editable-type="link"` 属性は、リンクを[編集可能](../reference/fragments/fragment-specific-tags-reference.md)にします。
 
-フラグメントにリソースを含めることもできます。 詳細は、[Including Default Resources in Fragments](./including-default-resources-with-fragments.md)を参照してください。
+フラグメントにリソースを含めることもできます。 詳細は、 [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md) を参照してください。
 
 ```{note}
 フラグメントと設定オブジェクトは JavaScript の引数として渡され、それぞれ `fragmentElement` と `configuration`パラメーターとして利用できます。
@@ -385,7 +385,7 @@ Liferay 7.2以下を使用している場合は、[Fragment-Specific Tags](../re
 
 ![セットが利用可能です。](./using-the-fragments-toolkit/images/03.png)
 
-これで、フラグメント ツールキットを使用してフラグメントを作成および管理する方法がわかりました。 ツールキット コマンドの詳細は、[Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md) を参照してください。
+これで、フラグメント ツールキットを使用してフラグメントを作成および管理する方法がわかりました。 ツールキット コマンドの詳細は、 [フラグメントツールキットコマンドリファレンス](../reference/fragments/fragments-toolkit-command-reference.md) を参照してください。
 
 ## 関連情報
 

@@ -66,7 +66,7 @@ LARにはこのようなプロパティと要件があります。
 
 1. 希望のLARファイルを追加して、 *Continue*をクリックします。
 
-   ![LARファイルを追加し、[続ける]をクリックします。](./exporting-importing-site-pages-and-content/images/03.png)
+   ![LARファイルを追加し、 [続ける]をクリックします。](./exporting-importing-site-pages-and-content/images/03.png)
 
 1. インポートプロセスを確認し、設定する。
 
@@ -90,7 +90,7 @@ LARにはこのようなプロパティと要件があります。
 
 1. *［保存］*をクリックします。
 
-[新しいエクスポートプロセスを作成する際に、テンプレートを選択できるようになりました](#exporting-site-pages-and-content)。
+[新しいエクスポートプロセスを作成する際に、テンプレートを選択できるようになりました](#exporting-site-pages-and-content) 。
 
 ## 追加情報
 

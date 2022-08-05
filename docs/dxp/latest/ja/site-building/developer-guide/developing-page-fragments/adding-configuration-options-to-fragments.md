@@ -21,10 +21,10 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 Then, follow these steps to deploy an example to see how Fragment configuration options work:
 
-1. Download and unzip the [example Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip):
+1. Download and unzip the [example Fragment Set](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip) :
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip -O
     ```
 
     ```bash
@@ -72,7 +72,7 @@ Then, follow these steps to deploy an example to see how Fragment configuration 
 
 1. コンテントページに移動し、*編集*アイコン（![Edit icon](../../../images/icon-edit-pencil.png)）をクリックして編集を開始します。
 
-1. [フラグメントとウィジェットパネル](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md#fragments-and-widgets)の*C7F8セット*見出しを展開し、*C7F8カード*フラグメントをページにドラッグします。
+1. [フラグメントとウィジェットパネル](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md#fragments-and-widgets) の*C7F8セット*見出しを展開し、*C7F8カード*フラグメントをページにドラッグします。
 
 1. ページで*C7F8カード*を選択して、フラグメント設定メニューを開きます。 *［一般］*タブで、コンポーネントのテキスト スタイルを「暗い」または「明るい」に設定します。
 
@@ -192,7 +192,7 @@ Then, follow these steps to deploy an example to see how Fragment configuration 
 
 悪意のあるコードがテキストフィールドに挿入され、他のフラグメントユーザーに大損害を与える可能性があります。 クロスサイトスクリプティング（XSS）攻撃から保護するには、フラグメントテキスト値をエスケープする必要があります。
 
-一般的なケースでは、HTML `escape()`メソッドを使用できます。 詳細は、[`HtmlUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html)クラスを参照してください。
+一般的なケースでは、HTML `escape()`メソッドを使用できます。 詳細は、 [`HtmlUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) クラスを参照してください。
 
 ```html
 <div class="fragment_38816">

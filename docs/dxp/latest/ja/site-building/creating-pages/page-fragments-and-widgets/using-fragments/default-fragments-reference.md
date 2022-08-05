@@ -14,7 +14,7 @@ Liferayには、すぐに使用できるさまざまなフラグメントが用�
 * [メニュー表示](#menu-display)
 
 ```{note}
-使用可能な構成オプションは、フラグメントおよびフラグメントのサブ要素によって異なります。 詳細については、[Configuring Fragments](./configuring-fragments.md)を参照してください。
+使用可能な構成オプションは、フラグメントおよびフラグメントのサブ要素によって異なります。 詳細については、 [フラグメントの設定](./configuring-fragments.md) を参照してください。
 ```
 
 ## レイアウト要素
@@ -62,7 +62,7 @@ Liferayには、すぐに使用できるさまざまなフラグメントが用�
 | コンテンツの評価                | コンテンツ項目を評価するための要素を追加します。                                                                                                                                                                                                                                            |
 | コレクションフィルター（7.4以降で利用可能） | ボキャブラリまたはカテゴリを使用してコレクション表示をフィルタリングするための要素を追加します。                                                                                                                                                                                                                    |
 | 適用されたフィルター（7.4以降で利用可能）  | コレクション表示に適用されるフィルターを表示および管理するための要素を追加します。                                                                                                                                                                                                                           |
-| コレクション表示                | 手動および動的に定義されたコレクションと、コレクションプロバイダーによって定義されたコレクションを表示します。 コレクションを*グリッド*で表示するか、リスト*テンプレート*（境界付き、記号付き、インライン、番号付き、スタイルなし）で表示するかを構成できます。 詳細は、[Displaying Collections](../../../displaying-content/additional-content-display-options/displaying-collections.md)を参照してください。 |
+| コレクション表示                | 手動および動的に定義されたコレクションと、コレクションプロバイダーによって定義されたコレクションを表示します。 コレクションを*グリッド*で表示するか、リスト*テンプレート*（境界付き、記号付き、インライン、番号付き、スタイルなし）で表示するかを構成できます。 詳細は、 [コレクションの表示](../../../displaying-content/additional-content-display-options/displaying-collections.md) を参照してください。 |
 
 ## Cookieバナー
 
@@ -124,7 +124,7 @@ Liferay DXP/Portal 7.3の場合、各フラグメントの*情報*アイコン(!
 
 ## 追加情報
 
-* [Using Content Pages](../../using-content-pages.md)
-* [Content Page Editor UI Reference](../../using-content-pages/content-page-editor-ui-reference.md)
+* [コンテントページの使用](../../using-content-pages.md)
+* [コンテントページエディタUIリファレンス](../../using-content-pages/content-page-editor-ui-reference.md)
 * [フラグメントの使用](../using-fragments.md)
 * [サイトナビゲーションの管理](../../../site-navigation/managing-site-navigation.md)

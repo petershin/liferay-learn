@@ -1,10 +1,10 @@
 # ページセットの設定
 
 ```{important}
-Liferay 7.4 U22+ と GA22+ では、新規インストール時にプライベートページは無効になっています。 ただし、必要に応じて有効にすることができます。 詳しくは、[プライベートページを有効にする](../understanding-pages/understanding-pages.md#enabling-private-pages)をご覧ください。
+Liferay 7.4 U22+ と GA22+ では、新規インストール時にプライベートページは無効になっています。 ただし、必要に応じて有効にすることができます。 詳しくは、 [プライベートページを有効にする](../understanding-pages/understanding-pages.md#enabling-private-pages) をご覧ください。
 ```
 
-Private Pagesを有効にすると，サイトページが公開と非公開に分けられます [Page Sets](../understanding-pages/understanding-pages.md#page-sets). これらのセットは、ページをグループ化し、各タイプのページに一括して設定を適用できるようにしたものです。 ページ・セットで設定された設定は、グループ化されたすべてのページに適用され、サイト・レベルの設定より優先されます。 ページセットの設定は、 [個々のページへのカスタマイズによって上書きされます。](./configuring-individual-pages.md).
+Private Pagesを有効にすると，サイトページが公開と非公開に分けられます [Page Sets](../understanding-pages/understanding-pages.md#page-sets) . これらのセットは、ページをグループ化し、各タイプのページに一括して設定を適用できるようにしたものです。 ページ・セットで設定された設定は、グループ化されたすべてのページに適用され、サイト・レベルの設定より優先されます。 ページセットの設定は、 [個々のページへのカスタマイズによって上書きされます。](./configuring-individual-pages.md).
 
 あなたのLiferayシステムでプライベートページが無効になっている場合、以下の手順でページの一括設定オプションにアクセスします。
 
@@ -42,7 +42,7 @@ _ルック＆フィール_ タブでは、ページセットのテーマとロ�
 
 1. _［保存］_ をクリックすると、新しいテーマがページセットに適用されます。
 
-_［CSS］_ セクションにカスタムCSSを入力し、テーマを変更することができます。 テーマは、サイト全体（ここで説明）または個々のページ（ [ページの設定](./configuring-individual-pages.md#look-and-feel)で説明）に適用することができます。
+_［CSS］_ セクションにカスタムCSSを入力し、テーマを変更することができます。 テーマは、サイト全体（ここで説明）または個々のページ（ [ページの設定](./configuring-individual-pages.md#look-and-feel) で説明）に適用することができます。
 
 ### ロゴ
 

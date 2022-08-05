@@ -28,7 +28,7 @@ sites/default-site-applications.md
 ```{note}
 サイトレベルで作成されたページ、コンテンツ、およびその他のアプリケーションデータは、そのサイトにスコープされ、通常、サイト間で共有することはできません。 ただし、一部のデータは[階層化されたサイト](./sites/site-hierarchies.md)間で共有することが可能です。 
 
-また、サイトレベルの設定は、システムレベルおよびインスタンスレベルの設定より優先されます。 詳しくは、[Understanding Configuration Scope](../system-administration/configuring-liferay/understanding-configuration-scope.md) を参照してください。
+また、サイトレベルの設定は、システムレベルおよびインスタンスレベルの設定より優先されます。 詳しくは、 [設定スコープについて](../system-administration/configuring-liferay/understanding-configuration-scope.md) を参照してください。
 ```
 
 

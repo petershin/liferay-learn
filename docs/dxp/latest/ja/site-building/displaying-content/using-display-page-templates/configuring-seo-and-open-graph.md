@@ -8,7 +8,7 @@
 
 1. *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［Design］* &rarr; *［Page Templates］*、 *［Display Page Templates］* タブをクリックします。
 
-   ![[表示ページテンプレート]タブに移動します。](./configuring-seo-and-open-graph/images/01.png)
+   ![ [表示ページテンプレート]タブに移動します。](./configuring-seo-and-open-graph/images/01.png)
 
 1. 目的のテンプレートの *アクション* ボタン (![Actions Button](./../../../images/icon-actions.png))をクリックし、 *［構成］*を選択します。
 
@@ -16,7 +16,7 @@
 
 1. [［SEO］](#seo-settings-reference) または [［Open Graph］](#open-graph-settings-reference) タブに移動し、目的の設定を入力してください。
 
-   ![[SEO]タブと[Open Graph]タブに目的の構成を入力します。](./configuring-seo-and-open-graph/images/02.png)
+   ![[SEO]タブと [Open Graph]タブに目的の構成を入力します。](./configuring-seo-and-open-graph/images/02.png)
 
 1. *［保存］* をクリックします。
 
@@ -70,7 +70,7 @@ SEOとOpenGraphの説明を一緒に更新することをお勧めします。
 
 *言語フラグ*を使用して、このフィールドをローカライズすることもできます。
 
-![[ロボット] フィールドは、表示ページの robots.txt ルールを構成します。](./configuring-seo-and-open-graph/images/05.png)
+![ [ロボット] フィールドは、表示ページの robots.txt ルールを構成します。](./configuring-seo-and-open-graph/images/05.png)
 
 ### サイトマップ
 
@@ -82,7 +82,7 @@ SEOとOpenGraphの説明を一緒に更新することをお勧めします。
 
 > 対応可能：Liferay DXP/Portal 7.3以降
 
-[Open Graph](https://ogp.me/) は、Facebook、Slack、Twitterなどのアプリケーションコンテキストで共有する際に、サイトコンテンツのプレビューを標準化するインターネットプロトコルです。 これは、 `<meta>` タグとしてページヘッダーに構造化データを埋め込むことで、 [RDFa](https://en.wikipedia.org/wiki/RDFa)と同じように実現します。
+[Open Graph](https://ogp.me/) は、Facebook、Slack、Twitterなどのアプリケーションコンテキストで共有する際に、サイトコンテンツのプレビューを標準化するインターネットプロトコルです。 これは、 `<meta>` タグとしてページヘッダーに構造化データを埋め込むことで、 [RDFa](https://en.wikipedia.org/wiki/RDFa) と同じように実現します。
 
 Liferay DXP を使用すると、ページの Open Graph `<meta>` タグを動的に構成する表示ページ テンプレートを作成できます。 ここで定義された値は、[サイト](../../site-settings/configuring-open-graph.md)レベルで定義されたデフォルト値をオーバーライドします。
 
@@ -124,7 +124,7 @@ SEOとOpenGraphの説明を一緒に更新することをお勧めします。
 
 デフォルトでは、このフィールドは表示ページ テンプレートにマップされていません。 つまり、別の画像フィールドを選択しない限り、テンプレートはデフォルトでサイト レベルで設定された画像になります。
 
-![[画像] フィールドは、表示ページの og:image プロパティを定義します。](./configuring-seo-and-open-graph/images/09.png)
+![ [画像] フィールドは、表示ページの og:image プロパティを定義します。](./configuring-seo-and-open-graph/images/09.png)
 
 ### 画像の別の説明
 
@@ -136,7 +136,7 @@ SEOとOpenGraphの説明を一緒に更新することをお勧めします。
 
 デフォルトでは、このフィールドは表示ページ テンプレートにマップされていません。 つまり、別のテキスト フィールドを選択しない限り、テンプレートはデフォルトでサイト レベルで設定された代替テキストになります。
 
-![[画像の別の説明] フィールドは、表示ページの og:image:alt プロパティを定義します](./configuring-seo-and-open-graph/images/10.png)
+![ [画像の別の説明] フィールドは、表示ページの og:image:alt プロパティを定義します](./configuring-seo-and-open-graph/images/10.png)
 
 ## 追加情報
 

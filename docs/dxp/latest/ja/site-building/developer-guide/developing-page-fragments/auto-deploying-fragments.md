@@ -2,7 +2,7 @@
 
 > 利用可能: Liferay Portal 7.3 GA1以降および Liferay DXP 7.3以降
 
-[独自のツールを使用してページフラグメントを開発している](./using-the-fragments-toolkit.md#fragment-set-structure)場合は、Liferay UI を介してインポートできるように、それらを ZIP ファイルにパッケージ化することでデプロイできます。 ただし、UI の使用に限定されません。 コマンドラインからフラグメント ZIP ファイルをデプロイすることもできます。 ここでは、フラグメントプロジェクトを操作し、Liferay の自動デプロイメカニズムを使用してコマンドラインからフラグメントを必要なサイトにインポートする方法を学びます。
+[独自のツールを使用してページフラグメントを開発している](./using-the-fragments-toolkit.md#fragment-set-structure) 場合は、Liferay UI を介してインポートできるように、それらを ZIP ファイルにパッケージ化することでデプロイできます。 ただし、UI の使用に限定されません。 コマンドラインからフラグメント ZIP ファイルをデプロイすることもできます。 ここでは、フラグメントプロジェクトを操作し、Liferay の自動デプロイメカニズムを使用してコマンドラインからフラグメントを必要なサイトにインポートする方法を学びます。
 
 ```{note}
 Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay UIではフラグメントセットと呼ばれます。
@@ -14,10 +14,10 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 Then, follow these steps to auto-deploy an example Fragment Set:
 
-1. Download and unzip the [example auto-deployable Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip):
+1. Download and unzip the [example auto-deployable Fragment Set](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip) :
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O
     ```
 
     ```bash

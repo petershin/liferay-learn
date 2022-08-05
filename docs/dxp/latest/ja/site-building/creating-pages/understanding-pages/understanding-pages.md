@@ -54,7 +54,7 @@ Liferay 7.4 U22+ と GA22+ では、新規インストール時にプライベ�
 * [A/Bテスト](../../optimizing-sites/ab-testing/ab-testing.md)
 * 親しみやすいコンテンツとサイト構築のエクスペリエンス
 
-コンテントページの詳細については、[Using Content Pages](../using-content-pages.md)を参照してください。 すぐにでも作成したい場合は、 [コンテンツページに要素を追加する](../using-content-pages/adding-elements-to-content-pages.md)を参照してください。
+コンテントページの詳細については、 [コンテントページの使用](../using-content-pages.md) を参照してください。 すぐにでも作成したい場合は、 [コンテンツページに要素を追加する](../using-content-pages/adding-elements-to-content-pages.md)を参照してください。
 
 
 
@@ -152,5 +152,5 @@ Liferay 7.4 U22+ と GA22+ では、新規インストール時にプライベ�
 ## 関連情報
 
 * [Adding a Page](../adding-pages/adding-a-page-to-a-site.md)
-* [Configuring Individual Pages](../page-settings/configuring-individual-pages.md)
+* [ページ単位での設定](../page-settings/configuring-individual-pages.md)
 * [ウィジェットページのユーザーパーソナライズの有効化](../using-widget-pages/enabling-user-personalization-of-widget-pages.md)

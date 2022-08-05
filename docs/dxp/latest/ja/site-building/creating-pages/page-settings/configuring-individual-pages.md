@@ -25,7 +25,7 @@
 
 ### 名前とフレンドリURL
 
-［Name］フィールドを使用して、ブラウザのタイトルバーに表示される、サイトナビゲーションのページタイトルを設定します。 また、［Friendly URL］フィールドを使用してページの新しいURLを設定するか、 *復元*アイコン ( ![Friendly URL Restore icon](./../../../images/icon-restore.png) ) をクリックして、以前に使用したURLを表示して復元します。 詳細については、[Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md)を参照してください。
+［Name］フィールドを使用して、ブラウザのタイトルバーに表示される、サイトナビゲーションのページタイトルを設定します。 また、［Friendly URL］フィールドを使用してページの新しいURLを設定するか、 *復元*アイコン ( ![Friendly URL Restore icon](./../../../images/icon-restore.png) ) をクリックして、以前に使用したURLを表示して復元します。 詳細については、 [ページのフレンドリURLの設定](./configuring-your-pages-friendly-url.md) を参照してください。
 
 ![ページのタイトルを設定するには、［名前］フィールドを使用します。](./configuring-individual-pages/images/02.png) ![フレンドリURLフィールドを使用して、ページのカスタムURLを設定します。](./configuring-individual-pages/images/03.png)
 
@@ -45,7 +45,7 @@
 
 ### カテゴリ設定
 
-*トピック*と*タグ*を使ってページのコンテンツを分類し、ユーザーがより簡単にコンテンツを探せるようにします。 タグとカテゴリの使用の詳細については、[カテゴリとタグを使用したコンテンツの整理](../../../content-authoring-and-management/tags_and_categories.html)を参照してください。
+*トピック*と*タグ*を使ってページのコンテンツを分類し、ユーザーがより簡単にコンテンツを探せるようにします。 タグとカテゴリの使用の詳細については、 [カテゴリとタグを使用したコンテンツの整理](../../../content-authoring-and-management/tags_and_categories.html) を参照してください。
 
 ### ルック&フィール
 
@@ -99,7 +99,7 @@
 
 ### HTMLタイトル
 
-HTMLタイトルフィールドを使用して、ページの `<title>` タグを定義してください。 このタイトルは、検索エンジンがあなたのページをランク付けするために使用され、検索エンジンの結果でページの見出しとして機能しますが、ページの [名前](#name-and-friendly-url)を置き換えることはありません。 HTMLタイトルの推奨される長さは 60 文字未満です。
+HTMLタイトルフィールドを使用して、ページの `<title>` タグを定義してください。 このタイトルは、検索エンジンがあなたのページをランク付けするために使用され、検索エンジンの結果でページの見出しとして機能しますが、ページの [名前](#name-and-friendly-url) を置き換えることはありません。 HTMLタイトルの推奨される長さは 60 文字未満です。
 
 ### 説明
 
@@ -143,7 +143,7 @@ HTMLタイトル、説明文、カスタムURLの設定に基づき、検索エ�
 
 > 対応可能：Liferay DXP/Portal 7.3以降
 
-[Open Graph](https://ogp.me/) は、Facebook、Slack、Twitterなどのアプリケーションコンテキストで共有する際に、サイトコンテンツのプレビューを標準化するインターネットプロトコルです。 これは、 `<meta>` タグとしてページヘッダーに構造化データを埋め込むことで、 [RDFa](https://en.wikipedia.org/wiki/RDFa)と同じように実現します。
+[Open Graph](https://ogp.me/) は、Facebook、Slack、Twitterなどのアプリケーションコンテキストで共有する際に、サイトコンテンツのプレビューを標準化するインターネットプロトコルです。 これは、 `<meta>` タグとしてページヘッダーに構造化データを埋め込むことで、 [RDFa](https://en.wikipedia.org/wiki/RDFa) と同じように実現します。
 
 *［Open Graph］*タブでは、Open Graph `<meta>` タグを使ってページのメタデータを定義し、コンテンツの魅力を表現することが可能です。 ここで定義された値は、[サイト](../../site-settings/configuring-open-graph.md)レベルで定義されたデフォルト値をオーバーライドします。
 
@@ -186,5 +186,5 @@ Open Graph `<meta>` タグは、未認証のユーザーに対してのみペー
 ## 追加情報
 
 * [サイトにページを追加する](./../adding-pages/adding-a-page-to-a-site.md)
-* [Using Content Pages](../using-content-pages.md)
+* [コンテントページの使用](../using-content-pages.md)
 * [ページセットの構成](./configuring-page-sets.md)

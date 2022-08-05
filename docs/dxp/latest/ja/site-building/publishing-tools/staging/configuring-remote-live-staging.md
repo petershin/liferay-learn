@@ -78,7 +78,7 @@ Liferayサーバーの準備ができたら、次の手順に従ってサイト�
 
 1. *［Remote Live］*を選択します。 追加の設定フィールドが表示されます。
 
-   ![[リモート本番環境ステージング]を選択します。](./configuring-remote-live-staging/images/02.png)
+   ![ [リモート本番環境ステージング]を選択します。](./configuring-remote-live-staging/images/02.png)
 
 1. 次のリモート本番環境接続の詳細を入力します。
 
@@ -93,7 +93,7 @@ Liferayサーバーの準備ができたら、次の手順に従ってサイト�
    ```{note}
    IPv6アドレスを構成する場合は、*リモートホスト/IP*フィールドに入力するときに角かっこを含める必要があります（例：[0:0:0:0:0:0:0:1]）。
 
-   リモートサーバーがクラスターの場合は、リモートホスト/IPをクラスターの負荷分散されたIPアドレスに設定して、公開設定プロセスの可用性を高めることができます。 詳細については、[Configuring Remote Staging in a Clustered Environment](https://help.liferay.com/hc/en-us/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment)を参照してください。
+   リモートサーバーがクラスターの場合は、リモートホスト/IPをクラスターの負荷分散されたIPアドレスに設定して、公開設定プロセスの可用性を高めることができます。 詳細については、 [Configuring Remote Staging in a Clustered Environment](https://help.liferay.com/hc/ja/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment) を参照してください。
    ```
 
 1. ステージングから本番環境にページを公開するために安全なネットワーク接続（つまりHTTPS）を使用するかどうかを決定します。
@@ -113,7 +113,7 @@ Liferayサーバーの準備ができたら、次の手順に従ってサイト�
    ![ステージングするデータとコンテンツのタイプを選択します。](./configuring-remote-live-staging/images/04.png)
 
    ```{warning}
-   アプリケーションをチェックすると、そのデータがコピーされ、本番環境のサイトで直接編集できない場合があります。 アプリケーションのチェックを外す場合は、ステージングでの変更が失われる可能性があるため、まずステージングでの変更が公開されていることを確認してください。 詳細については、[Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md)を参照してください。
+   アプリケーションをチェックすると、そのデータがコピーされ、本番環境のサイトで直接編集できない場合があります。 アプリケーションのチェックを外す場合は、ステージングでの変更が失われる可能性があるため、まずステージングでの変更が公開されていることを確認してください。 詳細については、 [ステージングでのデータとコンテンツタイプの管理](./managing-data-and-content-types-in-staging.md) を参照してください。
    ```
 
 1. *［保存］*をクリックして、ステージングプロセスを開始します。 このプロセスの時間は、サイトまたはアセットライブラリのサイズによって異なります。
@@ -122,7 +122,7 @@ Liferayサーバーの準備ができたら、次の手順に従ってサイト�
    リモート本番環境のステージングを有効にしようとして失敗した場合は、サーバーが適切に準備されていることを確認してください。
    ```
 
-プロセスが完了すると、リモート本番環境ステージングを使用する準備が整います。 ステージング環境の公開機能のナビゲートについては、[Site Staging UI Reference](./site-staging-ui-reference.md)を参照してください。
+プロセスが完了すると、リモート本番環境ステージングを使用する準備が整います。 ステージング環境の公開機能のナビゲートについては、 [サイトステージングUIリファレンス](./site-staging-ui-reference.md) を参照してください。
 
 ## リモート本番環境ステージングの権限設定
 
@@ -130,7 +130,7 @@ Liferayサーバーの準備ができたら、次の手順に従ってサイト�
 
 ローカルユーザーにステージングから本番環境への変更を公開する権限を与えるには、リモートサーバー上のユーザーに対して同一の権限を持つ同一のユーザーアカウントを作成します。
 
-このプロセスを簡素化するために、LDAPを使用して、選択したユーザーアカウントをローカルサーバーからリモートサーバーにコピーできます。 詳細は、[Connecting to an LDAP Directory](../../../users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)を参照してください。
+このプロセスを簡素化するために、LDAPを使用して、選択したユーザーアカウントをローカルサーバーからリモートサーバーにコピーできます。 詳細は、 [LDAPディレクトリへの接続](../../../users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) を参照してください。
 
 ## リモートステージングのバッファサイズの設定
 

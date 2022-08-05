@@ -30,7 +30,7 @@ Liferay DXP 7.4以降の場合、ページテンプレートコレクション�
 
 1. *［Save］* をクリックします。
 
-1. 新しいページテンプレートに自動的に移動します。 [ウィジェットページ](../understanding-pages/understanding-pages.md#widget-pages)の指示に従って、ウィジェットページテンプレートを作成します。 同様に、コンテントページテンプレートを構成するには、[Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) を参照してください。
+1. 新しいページテンプレートに自動的に移動します。 [ウィジェットページ](../understanding-pages/understanding-pages.md#widget-pages) の指示に従って、ウィジェットページテンプレートを作成します。 同様に、コンテントページテンプレートを構成するには、[Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) を参照してください。
 
 ## 新規のページテンプレートの共有
 
@@ -51,11 +51,11 @@ Liferay DXP 7.4以降の場合、ページテンプレートコレクション�
 
 ### ウィジェットページの変更の伝播
 
-ウィジェットページテンプレートからページを作成すると、変更はデフォルトでページテンプレートから継承されるため、今後の変更は *自動的*にページテンプレートを使用するページに伝播されます。 サイト管理者は、[個々のページ設定](../page-settings/configuring-individual-pages.md#general)を通じてこの動作を無効にすることができます。
+ウィジェットページテンプレートからページを作成すると、変更はデフォルトでページテンプレートから継承されるため、今後の変更は *自動的*にページテンプレートを使用するページに伝播されます。 サイト管理者は、 [個々のページ設定](../page-settings/configuring-individual-pages.md#general) を通じてこの動作を無効にすることができます。
 
 ### コンテントページの変更の伝播
 
-コンテントページテンプレートを使用して作成した場合、コンテントページの **変更は自動的に伝播されません**。 ただし、コンテントページで使用されるフラグメントへの変更は伝播できます。 詳細については、[Propagating Fragment Changes](../page-fragments-and-widgets/using-fragments/propagating-fragment-changes.md)を参照してください。
+コンテントページテンプレートを使用して作成した場合、コンテントページの **変更は自動的に伝播されません**。 ただし、コンテントページで使用されるフラグメントへの変更は伝播できます。 詳細については、 [フラグメントの変更のプロパゲート](../page-fragments-and-widgets/using-fragments/propagating-fragment-changes.md) を参照してください。
 
 ### 他のサイトとのページテンプレートの共有
 

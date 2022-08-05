@@ -2,13 +2,13 @@
 
 お客様のサイトでコレクションを閲覧するユーザーの体験を向上させるために、ページフラグメントを追加して、コレクション内のコンテンツをフィルタリングすることができます。 例えば、表示されたCollectionsのコンテンツをキーワードで検索し、フィルタリングするために使用するFragmentを追加することができます。
 
-表示されたコレクションのコンテンツをユーザーがフィルタリングするために、ページに追加できるページフラグメントは、 [Collection Filter Fragment](#using-the-collection-filter-fragment) と [Applied Filters Fragment](#using-the-applied-filters-fragment)の2種類です。
+表示されたコレクションのコンテンツをユーザーがフィルタリングするために、ページに追加できるページフラグメントは、 [Collection Filter Fragment](#using-the-collection-filter-fragment) と [Applied Filters Fragment](#using-the-applied-filters-fragment) の2種類です。
 
 ## コレクションフィルタフラグメントの使用
 
 コレクションフィルタフラグメントは、選択されたコレクションに表示されるコンテンツをページ上でフィルタリングするために使用されます。 キーワード検索やカテゴリ選択により、フラグメントに関連するコレクションをフィルタリングすることができます。
 
-以下の手順に従って、コレクションフィルターフラグメントをページ（ [コレクション表示フラグメント](./displaying-collections.md#configuring-a-collection-display-fragment)で既にコレクションを表示している）に追加し、設定します。
+以下の手順に従って、コレクションフィルターフラグメントをページ（ [コレクション表示フラグメント](./displaying-collections.md#configuring-a-collection-display-fragment) で既にコレクションを表示している）に追加し、設定します。
 
 1. ページを編集しながら、ページの任意の場所にコレクションフィルタフラグメントを追加します。
 
@@ -21,7 +21,7 @@
 1. Filter メニューで、Fragment のフィルタの種類を、 *Keywords* または *Category*から選択します。
 
     ```{note}
-    カスタムコレクションフィルターを追加するモジュールがデプロイされている場合（[`FragmentCollectionFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-collection-filter-api/src/main/java/com/liferay/fragment/collection/filter/FragmentCollectionFilter.java) と [`InfoFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/info/info-api/src/main/java/com/liferay/info/filter/InfoFilter.java) インターフェースを実装することで）、これらのフィルターもリストから選択することが可能です。
+    カスタムコレクションフィルターを追加するモジュールがデプロイされている場合（ [`FragmentCollectionFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-collection-filter-api/src/main/java/com/liferay/fragment/collection/filter/FragmentCollectionFilter.java) と [`InfoFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/info/info-api/src/main/java/com/liferay/info/filter/InfoFilter.java) インターフェースを実装することで）、これらのフィルターもリストから選択することが可能です。
     ```
 
     *キーワード* フィルタタイプを選択した場合、ユーザーはコレクションをフィルタリングするための任意のキーワードを検索することができます。 *Category* フィルタタイプを選択した場合、 *Source* 入力フィールドが表示され、ユーザーが選択できるカテゴリの選択を設定することができます。
@@ -46,13 +46,13 @@
 
 ## アプライドフィルタフラグメントの使用
 
-Applied Filters Fragment は、 [Collection Filter Fragment](#using-the-collection-filter-fragment)で適用したフィルタの一覧を表示するために使用します。
+Applied Filters Fragment は、 [Collection Filter Fragment](#using-the-collection-filter-fragment) で適用したフィルタの一覧を表示するために使用します。
 
 以下の手順で、（すでにコレクションフィルタフラグメントが設定されている）ページに、アプライドフィルタフラグメントを追加します。
 
 1. ページを編集しながら、ページ上の任意の場所にApplied Filter Fragmentを追加します。
 
-1. Applied Filter Fragment の *General* 設定で、目的のコレクションを選択します。 同じコレクションをページに表示し、 [コレクションフィルタフラグメント](#using-the-collection-filter-fragment)で構成する必要があります。
+1. Applied Filter Fragment の *General* 設定で、目的のコレクションを選択します。 同じコレクションをページに表示し、 [コレクションフィルタフラグメント](#using-the-collection-filter-fragment) で構成する必要があります。
 
 1. ページを公開する。
 

@@ -2,10 +2,10 @@
 
 {bdg-secondary}`7.4以降で利用可能`
 
-情報テンプレートを使用すると、 [FreeMarker](https://freemarker.apache.org/) のテンプレートを、 [Info Framework](../../building-applications/data-frameworks/info-framework.md)を実装する任意のアイテムタイプ用に作成することができます。 対応するアイテムの種類は、Webコンテンツ、ドキュメント、アセット、ブログ、カテゴリー、オブジェクトです。 フラグメントフィールドを作成すると、テンプレートにマッピングして、コンテンツページと表示ページで項目がどのようにレンダリングされるかを決定することができます。 これにより、サイトに一貫したスタイルを導入することができます。
+情報テンプレートを使用すると、 [FreeMarker](https://freemarker.apache.org/) のテンプレートを、 [Infoフレームワーク (近日公開！)](../../building-applications/data-frameworks/info-framework.md) を実装する任意のアイテムタイプ用に作成することができます。 対応するアイテムの種類は、Webコンテンツ、ドキュメント、アセット、ブログ、カテゴリー、オブジェクトです。 フラグメントフィールドを作成すると、テンプレートにマッピングして、コンテンツページと表示ページで項目がどのようにレンダリングされるかを決定することができます。 これにより、サイトに一貫したスタイルを導入することができます。
 
 ```{important}
-情報テンプレートはフラグメントでのみ利用可能で、ウィジェットでは利用できません。 ウィジェットで表示されるWebコンテンツのFreeMarkerテンプレートをデザインしたい場合は、「Webコンテンツテンプレート」(../../content-authoring and-management/web-content/web-content-templates/creating-web-content-templates.md) を使用してください。
+情報テンプレートはフラグメントでのみ利用可能で、ウィジェットでは利用できません。 ウィジェットで表示されるWebコンテンツのFreeMarkerテンプレートをデザインしたい場合は、[Webコンテンツテンプレート](../../content-authoring and-management/web-content/web-content-templates/creating-web-content-templates.md) を使用してください。
 ```
 
 ## 情報テンプレートの作成
@@ -16,13 +16,13 @@
 
 1. *追加*ボタン（![Add Button](../../images/icon-add.png)）をクリックします。
 
-1. *名前*を入力し、 *アイテムタイプ*を選択し、（該当する場合） *アイテムサブタイプ*を選択します。
+1. *名前*を入力し、 *アイテムタイプ* を選択し、（該当する場合） *アイテムサブタイプ*を選択します。
 
    ![名称を入力し、アイテムタイプとアイテムサブタイプを選択します。](./using-information-templates/images/01.png)
 
 1. *［保存］* をクリックします。 これにより、テンプレートデザインページにリダイレクトされます。
 
-1. (オプション) [](#importing-and-exporting-scripts) 既存の FreeMarker スクリプトを `.ftl` ファイルからインポートします。
+1. (オプション) [Import](#importing-and-exporting-scripts) 既存の FreeMarker スクリプトを `.ftl` ファイルからインポートします。
 
 1. FreeMarkerを使用してテンプレートをデザインします。
 
@@ -75,9 +75,9 @@
 | 削除   | テンプレートを削除する。                    |
 
 
-![管理オプションにアクセスするには、[アクション]ボタンをクリックします。](./using-information-templates/images/04.png)
+![管理オプションにアクセスするには、 [アクション]ボタンをクリックします。](./using-information-templates/images/04.png)
 
-また、 [](#exporting-templates) をエクスポート、 [](#importing-templates) Info Templates を LAR ファイルとしてインポートし、サイト間や環境間で共有することができます。 これを行うには、アプリケーションバーの *アクション* ボタンをクリックし、 *エクスポート/インポート*を選択します。
+また、 [export](#exporting-templates) をエクスポート、 [import](#importing-templates) Info Templates を LAR ファイルとしてインポートし、サイト間や環境間で共有することができます。 これを行うには、アプリケーションバーの *アクション* ボタンをクリックし、 *エクスポート/インポート*を選択します。
 
 ![テンプレートをLARファイルとしてエクスポート、インポートすることができます。](./using-information-templates/images/05.png)
 

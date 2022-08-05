@@ -2,7 +2,7 @@
 
 テーマコントリビューターは、CSSおよびJavaScriptリソースを含み、それらを各ページに適用するモジュールです。 これらは特定のテーマから独立しており、テーマの特定のスタイルをオーバーライドしたり、互いにオーバーライドするように設定できます ページに個別のUIリソースを含め、それらを特定のテーマに含める場合は、代わりに[テーマレット](./bundling-and-installing-resources-into-your-theme-via-themelets.md)を使用してください。
 
-Liferay Portal/DXPの多くのメニューは、[サイトメニュー](../../../../../getting-started/navigating-dxp.md#site-menu)などのテーマコントリビューターとしてパッケージ化されています。
+Liferay Portal/DXPの多くのメニューは、 [サイトメニュー](../../../../../getting-started/navigating-dxp.md#site-menu) などのテーマコントリビューターとしてパッケージ化されています。
 
 ![サイトメニューは、テーマコントリビューターモジュールとして実装されています。](./bundling-independent-ui-resources-via-theme-contributors/images/01.png)
 

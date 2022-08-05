@@ -8,7 +8,7 @@
 
 
 ```{important}
-Liferay 7.4 U22+ と GA22+ では、新規にインストールした Liferay には、ダッシュボードページを含むプライベートページの作成を無効にするリリース機能フラグが含まれています。 個人サイトのカスタムダッシュボードページを手動で作成するには、LiferayシステムでPrivate Pagesを有効にする必要があります。 詳しくは、[プライベートページの有効化](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages)をご覧ください。
+Liferay 7.4 U22+ と GA22+ では、新規にインストールした Liferay には、ダッシュボードページを含むプライベートページの作成を無効にするリリース機能フラグが含まれています。 個人サイトのカスタムダッシュボードページを手動で作成するには、LiferayシステムでPrivate Pagesを有効にする必要があります。 詳しくは、 [プライベートページの有効化](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) をご覧ください。
 ```
 
 
@@ -54,13 +54,13 @@ Liferay 7.4 U22+ と GA22+ では、新規にインストールした Liferay �
 個人用サイトの権限とロールは、以下に示す動作に従います。
 
 - 管理者は、ロールから権限を削除することにより、Liferay Portalの権限システムを介して個人サイトの変更可能な部分をカスタマイズできます（ユーザーロールから関連する権限を削除することにより、すべてのユーザーが何も変更できないようにします）。
-- ユーザーは、[パワーユーザーロール](../../users-and-permissions/roles-and-permissions/default-roles-reference.md#regular-roles)のメンバーである場合、個人のサイトを管理し、ページとアプリケーションを変更できます。
+- ユーザーは、 [パワーユーザーロール](../../users-and-permissions/roles-and-permissions/default-roles-reference.md#regular-roles) のメンバーである場合、個人のサイトを管理し、ページとアプリケーションを変更できます。
 
 
 
 ## ポータルプロパティを使用した個人サイトのカスタマイズ
 
-個人サイトのデフォルトページをカスタマイズするために、[`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md)に追加できるポータルプロパティがいくつかあります。 ページの名前、ページに表示されるアプリケーション、ページのテーマとレイアウトテンプレートなどをカスタマイズできます。 詳細については、`portal.properties`ファイルの[デフォルトユーザーの公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Public%20Layouts)セクションと[デフォルトユーザーの非公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Private%20Layouts)セクションを参照してください。 これらのプロパティの一部を以下の表に示します。
+個人サイトのデフォルトページをカスタマイズするために、[`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md)に追加できるポータルプロパティがいくつかあります。 ページの名前、ページに表示されるアプリケーション、ページのテーマとレイアウトテンプレートなどをカスタマイズできます。 詳細については、`portal.properties`ファイルの [デフォルトユーザーの公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Public%20Layouts) セクションと [デフォルトユーザーの非公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Private%20Layouts) セクションを参照してください。 これらのプロパティの一部を以下の表に示します。
 
 | 機能                          | プロパティ                                           |
 |:--------------------------- |:----------------------------------------------- |

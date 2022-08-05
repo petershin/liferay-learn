@@ -165,5 +165,5 @@ body {
 
 ## 追加情報
 
-* [Using a Style Book to Standardize Site Appearance](../using-a-style-book-to-standardize-site-appearance.md)
+* [スタイルブックを使用してサイトの外観を標準化する](../using-a-style-book-to-standardize-site-appearance.md)
 <!-- Add link to token definition tutorial when available -->

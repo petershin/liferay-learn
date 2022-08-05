@@ -34,7 +34,7 @@
 
 1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *コントロールパネル*を開き、 *サイトテンプレート*をクリックします。
 
-1. [](./creating-site-templates.md) サイトテンプレートを作成します。
+1. [Create](./creating-site-templates.md) サイトテンプレートを作成します。
 
 1. 新しい「サイトテンプレート」をクリックします。
 
@@ -44,7 +44,7 @@
 
 1. 希望のLARファイルを追加して、 *Continue*をクリックします。
 
-   ![LARファイルを追加し、[続ける]をクリックします。](./exporting-importing-site-templates/images/03.png)
+   ![LARファイルを追加し、 [続ける]をクリックします。](./exporting-importing-site-templates/images/03.png)
 
 1. インポートプロセスを確認し、設定する。
 
@@ -66,11 +66,11 @@
 
 1. *エクスポート* または *インポート* のタブに移動し、目的の処理を開始します。
 
-   一括エクスポートの設定オプションは、 [個々のサイトテンプレートをエクスポートする場合とほとんど同じです。](#exporting-individual-site-templates). ただし、各テンプレートに含まれるページやコンテンツは設定できません。 また、個別のエクスポートとは異なり、ページテンプレートがエクスポートに含まれるかどうかを決定することができます。
+   一括エクスポートの設定オプションは、 [個々のサイトテンプレートをエクスポートする場合とほとんど同じです。](#exporting-individual-site-templates) . ただし、各テンプレートに含まれるページやコンテンツは設定できません。 また、個別のエクスポートとは異なり、ページテンプレートがエクスポートに含まれるかどうかを決定することができます。
 
    ![エクスポート]タブに移動して、インスタンス内のすべてのサイトテンプレートをエクスポートします。](./exporting-importing-site-templates/images/06.png)
 
-   バルクインポートの設定オプションは、 [個別のサイトテンプレートをインポートする場合とほぼ同じです。](#importing-individual-site-templates). ただし、LARファイルに含まれるPage TemplatesがSite Templatesと一緒にインポートされるかどうかを判断することは可能です。
+   バルクインポートの設定オプションは、 [個別のサイトテンプレートをインポートする場合とほぼ同じです。](#importing-individual-site-templates) . ただし、LARファイルに含まれるPage TemplatesがSite Templatesと一緒にインポートされるかどうかを判断することは可能です。
 
    ![複数のサイトテンプレートを含むLARファイルをインポートするには、「インポート」タブをクリックします。](./exporting-importing-site-templates/images/07.png)
 

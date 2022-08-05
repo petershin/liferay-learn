@@ -20,7 +20,7 @@ Stagingが有効なサイトは、Stagingが有効でないAsset Librariesに接
 
 多くの編集オプションは、ステージング環境でのみアクセスできます。 これは、明確な開発プロセスを維持し、本番環境での編集によるデータの競合を回避するためです。
 
-ステージング環境で変更が行われると、それらは一度にすべて、または一度に1つずつ公開できます。 [サイト](./site-staging-ui-reference.md#publish-to-live)と同様に、[シンプル](./site-staging-ui-reference.md#simple-publishing)または[高度な](./site-staging-ui-reference.md#advanced-publishing)公開設定オプションを使用できます。
+ステージング環境で変更が行われると、それらは一度にすべて、または一度に1つずつ公開できます。 [サイト](./site-staging-ui-reference.md#publish-to-live) と同様に、 [シンプル](./site-staging-ui-reference.md#simple-publishing) または [高度な](./site-staging-ui-reference.md#advanced-publishing) 公開設定オプションを使用できます。
 
 ## 追加情報
 

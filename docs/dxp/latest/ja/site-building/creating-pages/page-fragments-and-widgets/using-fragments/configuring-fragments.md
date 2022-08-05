@@ -36,7 +36,7 @@ DXPのレスポンシブレイアウトエディターを使用すると、さ�
 
 ### 共通
 
-［一般］タブには、標準の構成オプション（閲覧性やフレームなど）と、各フラグメントに固有のオプションの両方が含まれています。 詳しくは、[General Settings Reference](./configuring-fragments/general-settings-reference.md)を参照してください。
+［一般］タブには、標準の構成オプション（閲覧性やフレームなど）と、各フラグメントに固有のオプションの両方が含まれています。 詳しくは、 [一般設定リファレンス](./configuring-fragments/general-settings-reference.md) を参照してください。
 
 ### スタイル
 
@@ -48,7 +48,7 @@ Advancedタブには、より高度な設定や技術的な設定が含まれて
 
 ## フラグメントサブ要素設定
 
-多くのフラグメントには、独自の構成オプションを持つサブ要素が含まれています。 使用可能なオプションは、サブ要素のタイプによって異なり、［マッピング］、［画像ソース］、および［リンク］のタブに編成されています。 詳しくは、[Fragment Sub-Elements Reference](./configuring-fragments/fragment-sub-elements-reference.md)を参照してください。
+多くのフラグメントには、独自の構成オプションを持つサブ要素が含まれています。 使用可能なオプションは、サブ要素のタイプによって異なり、［マッピング］、［画像ソース］、および［リンク］のタブに編成されています。 詳しくは、 [フラグメントサブ要素リファレンス](./configuring-fragments/fragment-sub-elements-reference.md) を参照してください。
 
 ### マッピング
 

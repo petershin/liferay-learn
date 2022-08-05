@@ -1,6 +1,6 @@
 # スタイルリファレンス
 
-Liferayのページフラグメントには便利なスタイル設定が含まれているため、Liferay UIを介してルックアンドフィールを構成できます。 これらのオプションの多くはCSSクラスに対応しており、スタイルブックでサポートされるトークンが定義されています。 追加のフラグメント設定オプションについては、[General Settings Reference](./general-settings-reference.md)および[Fragment Sub-Elements Reference](./fragment-sub-elements-reference.md)を参照してください。
+Liferayのページフラグメントには便利なスタイル設定が含まれているため、Liferay UIを介してルックアンドフィールを構成できます。 これらのオプションの多くはCSSクラスに対応しており、スタイルブックでサポートされるトークンが定義されています。 追加のフラグメント設定オプションについては、 [一般設定リファレンス](./general-settings-reference.md) および [フラグメントサブ要素リファレンス](./fragment-sub-elements-reference.md) を参照してください。
 
 次の手順に従って、フラグメントの*スタイル*メニューにアクセスします。
 
@@ -18,19 +18,19 @@ Liferayのページフラグメントには便利なスタイル設定が含ま�
 
 ![編集サイドバーメニューのブラウザパネルでフラグメントのスタイル設定にアクセスします。](./styles-reference/images/01.png)
 
-多くのスタイルには、スタイルブックでサポートされるトークンが定義されています。 詳細については、[Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)および[Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)を参照してください。
+多くのスタイルには、スタイルブックでサポートされるトークンが定義されています。 詳細については、[Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)および [スタイルブックトークンの定義](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) を参照してください。
 
 ## 間隔
 
 ```{note}
-この機能を使用するには、Liferay DXP 7.4 U21+またはGA21+が必要です。 古いバージョンを使っている場合は、代わりに[このセクション](#liferay-7-4-u20-and-older)を参照してください。
+この機能を使用するには、Liferay DXP 7.4 U21+またはGA21+が必要です。 古いバージョンを使っている場合は、代わりに [このセクション](#liferay-7-4-u20-and-older) を参照してください。
 ```
 
 Spacingセクションで矩形を囲む領域をクリックし、Fragmentの周囲の間隔を設定します。 外側のボタンをクリックすると、Fragment のフレームとその周囲のコンテキストの端との間のスペース（ *margin* size）を設定します。これは、Fragment のフレームとページの端との間のスペースや、Fragment のコンテナなどのマージンに影響します。 内側のボタンをクリックすると、Fragment のフレームとコンテンツの間のスペース（ *padding* size）を設定することができます。
 
 ![Spacingセクションの矩形の周囲をクリックして、Fragmentのマージンやパディングの間隔を設定します。](./styles-reference/images/02.png)
 
-これらの領域の一つをクリックすると、選択したスペーシングサイズを何ピクセルに設定するか、あらかじめ定義されたオプションのリストが表示されます。 これらのサイズは、スタイルブック [を作成または編集する際に、Spacing カテゴリにある番号付きの *Spacer* フィールドから取得されます](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing)。
+これらの領域の一つをクリックすると、選択したスペーシングサイズを何ピクセルに設定するか、あらかじめ定義されたオプションのリストが表示されます。 これらのサイズは、スタイルブック [を作成または編集する際に、Spacing カテゴリにある番号付きの *Spacer* フィールドから取得されます](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) 。
 
 ```{note}
 スタイルブックのスペーシングオプションがピクセル以外の単位（`rem`など）で定義されている場合、フラグメントのスタイル設定でそれらを選択すると、ピクセル数に相当する値に変換されます。
@@ -47,7 +47,7 @@ Spacingセクションで矩形を囲む領域をクリックし、Fragmentの�
 | フォントファミリー | 要素のフォントを指定します。                                                                                                                                                                                   |
 | フォントの太さ   | テキスト内の太字または細字の表示方法を設定します。                                                                                                                                                                        |
 | フォントサイズ   | フォントのサイズを設定します。                                                                                                                                                                                  |
-| テキストの色    | テキストの色を選択します。 使用可能なカラーパレットは、フラグメント開発者が設定できます。 詳しくは、[Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md)を参照してください。 |
+| テキストの色    | テキストの色を選択します。 使用可能なカラーパレットは、フラグメント開発者が設定できます。 詳しくは、 [フラグメント設定タイプのリファレンス](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) を参照してください。 |
 | テキストの配置   | 要素内のテキストの水平方向の配置を指定します。 *[左]*、 *[右]*、 *[中央揃え]*、または*[両端揃え]*から選択します 。                                                                                                                              |
 
 ## 背景
@@ -56,7 +56,7 @@ Spacingセクションで矩形を囲む領域をクリックし、Fragmentの�
 
 | 項目             | 説明                                                                                                                                                                                                  |
 |:-------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 背景色            | パレットから背景色を選択します。 使用可能なカラーパレットは、フラグメント開発者が設定できます。 詳しくは、[Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md)を参照してください。 |
+| 背景色            | パレットから背景色を選択します。 使用可能なカラーパレットは、フラグメント開発者が設定できます。 詳しくは、 [フラグメント設定タイプのリファレンス](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) を参照してください。 |
 | 画像ソース          | *［Direct］*に設定すると、ユーザーは背景画像をアップロードできます。 *［マッピング］*に設定すると、ユーザーはドキュメントとメディア、Webコンテンツ、ブログ、またはカテゴリから選択できます。                                                                                               |
 | 背景画像（*Direct*） | ライブラリから画像を選択するか、画像URLを入力します。                                                                                                                                                                        |
 | 項目（*マッピング*）    | ドキュメントとメディア、Webコンテンツ、ブログ、またはカテゴリから特定の項目に背景をマップします。 選択したら、アクションボタン（![Actions button](../../../../../images/icon-actions.png)）をクリックして、項目とその権限を編集するか、その使用法を表示します。                                      |
@@ -74,7 +74,7 @@ Spacingセクションで矩形を囲む領域をクリックし、Fragmentの�
 |:----- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 枠線の幅  | 要素の4つの枠線の幅を設定します。                                                                                                                                                                                    |
 | 枠線の角丸 | 要素の角の半径を定義し、丸みを帯びた角を追加できます。                                                                                                                                                                          |
-| 枠線の色  | 要素の4つの枠線の色を設定します。 使用可能なカラーパレットは、フラグメント開発者が設定できます。 詳しくは、[Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md)を参照してください。 |
+| 枠線の色  | 要素の4つの枠線の色を設定します。 使用可能なカラーパレットは、フラグメント開発者が設定できます。 詳しくは、 [フラグメント設定タイプのリファレンス](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) を参照してください。 |
 
 ## 効果
 
@@ -113,7 +113,7 @@ Liferay DXP 7.4 U21 または GA21 より前のバージョンでは、Spacing �
 
 ## 追加情報
 
-* [Using Content Pages](../../../using-content-pages.md)
+* [コンテントページの使用](../../../using-content-pages.md)
 * [フラグメントの使用](../../using-fragments.md)
 * [新しいスタイルブックの作成](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)
-* [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)
+* [スタイルブックトークンの定義](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)

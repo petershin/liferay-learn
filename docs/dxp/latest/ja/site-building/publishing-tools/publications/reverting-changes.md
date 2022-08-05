@@ -12,7 +12,7 @@ Liferayのバージョンをアップグレードした後、アップグレー�
 
 1. *［Publications］*概要ページに移動して、*［History］*タブをクリックします。
 
-   ![[Publications]概要ページに移動し、[履歴]をクリックします。](./reverting-changes/images/01.png)
+   ![[Publications]概要ページに移動し、 [履歴]をクリックします。](./reverting-changes/images/01.png)
 
 1. 目的の出版物の *Revert* をクリックします。
 

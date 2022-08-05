@@ -2,9 +2,9 @@
 
 > 対応可能：Liferay DXP/Portal 7.3以降
 
-[Open Graph](https://ogp.me/) は、Facebook、Slack、Twitterなどのアプリケーションコンテキストで共有する際に、サイトコンテンツのプレビューを標準化するインターネットプロトコルです。 これは、 `<meta>` タグとしてページヘッダーに構造化データを埋め込むことで、 [RDFa](https://en.wikipedia.org/wiki/RDFa)と同じように実現します。
+[Open Graph](https://ogp.me/) は、Facebook、Slack、Twitterなどのアプリケーションコンテキストで共有する際に、サイトコンテンツのプレビューを標準化するインターネットプロトコルです。 これは、 `<meta>` タグとしてページヘッダーに構造化データを埋め込むことで、 [RDFa](https://en.wikipedia.org/wiki/RDFa) と同じように実現します。
 
-デフォルトでは、Open Graph `<meta>`タグはすべてのLiferay公開ページに埋め込まれていますが、必要に応じてサイトレベルでこの動作を無効にすることができます。 サイト設定では、デフォルトの`og:image`プロパティを設定することもできます。 これらの値は、[ページ](../creating-pages/page-settings/configuring-individual-pages.md#open-graph)または[表示ページ](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)レベルで上書きされない限り、すべてのページに使用されます。
+デフォルトでは、Open Graph `<meta>`タグはすべてのLiferay公開ページに埋め込まれていますが、必要に応じてサイトレベルでこの動作を無効にすることができます。 サイト設定では、デフォルトの`og:image`プロパティを設定することもできます。 これらの値は、 [ページ](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) または[表示ページ](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)レベルで上書きされない限り、すべてのページに使用されます。
 
 ```{note}
 Open Graph `<meta>` タグは、未認証のユーザーに対してのみページヘッダーに含まれます。 ユーザーがログインしているときは含まれません。
@@ -22,7 +22,7 @@ Open Graph `<meta>` タグは、未認証のユーザーに対してのみペー
 
 1. （オプション）*［Image］*フィールドと*［画像の別の説明］*フィールドを使用して、サイトのページのデフォルトの`og:image`プロパティを設定します。
 
-   これらの値は、[ページ](../creating-pages/page-settings/configuring-individual-pages.md#open-graph)および[表示ページ](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)の構成によって上書きされます。
+   これらの値は、 [ページ](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) および[表示ページ](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)の構成によって上書きされます。
 
    ![サイトで使用されるデフォルトのog:imageおよびog:image:altプロパティを定義します。](./configuring-open-graph/images/02.png)
 

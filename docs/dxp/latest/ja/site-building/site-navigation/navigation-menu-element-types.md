@@ -1,6 +1,6 @@
 # ナビゲーションメニューの要素の種類
 
-ナビゲーションメニューには、さまざまな種類の要素があり、お好みの階層に追加して配置することができます。 これらのタイプには、 [特定のページ](#pages)、 [ボキャブラリー](#vocabularies)、特定のコンテンツタイプの表示ページ、またはカスタム [プレースホルダー](#submenus) または [URL](#urls)が含まれます。 これらの要素を使ったナビゲーションメニューの追加については、こちら [](./using-the-navigation-menus-application.md) を参照してください。
+ナビゲーションメニューには、さまざまな種類の要素があり、お好みの階層に追加して配置することができます。 これらのタイプには、 [特定のページ](#pages) 、 [ボキャブラリー](#vocabularies) 、特定のコンテンツタイプの表示ページ、またはカスタム [プレースホルダー](#submenus) または [URL](#urls) が含まれます。 これらの要素を使ったナビゲーションメニューの追加については、こちら [here](./using-the-navigation-menus-application.md) を参照してください。
 
 ## ページ
 
@@ -16,11 +16,11 @@
 
 ## ブログエントリー
 
-ブログエントリー [](../../content-authoring-and-management/blogs/adding-blog-entries.md) を独立したメニュー要素として追加し、そのエントリーの [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)にリンクさせることができます。 ナビゲーションメニューのデフォルトのアプリケーション表示テンプレートを使用すると、表示ページのないブログエントリーが追加された場合、リンクがないため、メニュー上でユーザーから隠されます。 この動作は、別のアプリケーション表示テンプレートを使用した場合に変更されることがあります。
+ブログエントリー [blog entry](../../content-authoring-and-management/blogs/adding-blog-entries.md) を独立したメニュー要素として追加し、そのエントリーの [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)にリンクさせることができます。 ナビゲーションメニューのデフォルトのアプリケーション表示テンプレートを使用すると、表示ページのないブログエントリーが追加された場合、リンクがないため、メニュー上でユーザーから隠されます。 この動作は、別のアプリケーション表示テンプレートを使用した場合に変更されることがあります。
 
 ## Webコンテンツの記事
 
-ウェブコンテンツの記事 [](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md) を独立したメニュー要素として追加し、記事の [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)にリンクさせることができます。 ナビゲーションメニューのデフォルトのアプリケーション表示テンプレートを使用すると、表示ページのないウェブコンテンツ記事が追加された場合、その記事はリンクを持たないため、メニュー上でユーザーから隠されます。 この動作は、別のアプリケーション表示テンプレートを使用した場合に変更されることがあります。
+ウェブコンテンツの記事 [web content article](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md) を独立したメニュー要素として追加し、記事の [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)にリンクさせることができます。 ナビゲーションメニューのデフォルトのアプリケーション表示テンプレートを使用すると、表示ページのないウェブコンテンツ記事が追加された場合、その記事はリンクを持たないため、メニュー上でユーザーから隠されます。 この動作は、別のアプリケーション表示テンプレートを使用した場合に変更されることがあります。
 
 ## ドキュメント
 
@@ -58,9 +58,9 @@ Liferay 7.4 バージョン U9+ および GA13+ からは、複数のカテゴ�
 
 Liferay Portal 7.4 の GA4 より前のバージョンでは、 *Display Page* Navigation Menu という要素タイプもあり、これはメニューに追加された表示ページ（コンテンツの種類を問わない）に使用されます。
 
-Liferay 7.4 GA5+ と U1+ では、Display Page タイプは Display Pages を使用するコンテンツタイプに置き換えられます： [blog entries](#blogs-entries), [web content articles](#web-content-articles), [documents](#documents), and [Categories](#categories).
+Liferay 7.4 GA5+ と U1+ では、Display Page タイプは Display Pages を使用するコンテンツタイプに置き換えられます： [blog entries](#blogs-entries) , [web content articles](#web-content-articles) , [documents](#documents) , and [Categories](#categories) .
 
 ## 追加情報
 
 * [ナビゲーションメニューのアプリケーションを使う](./using-the-navigation-menus-application.md)
-* [Publishing Content with Display Pages](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)
+* [表示ページによるコンテンツの公開](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)

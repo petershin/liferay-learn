@@ -31,7 +31,7 @@
 | [Webコンテンツ](../../content-authoring-and-management/web-content.md)                         | 本サイトのウェブコンテンツの記事、構成およびテンプレートの作成と管理。              |
 | [ブログ](../../content-authoring-and-management/blogs.md)                                    | 本サイトのブログエントリおよび画像の作成および管理。                       |
 | [ドキュメントとメディア](../../content-authoring-and-management/documents-and-media.md)              | 本サイトの文書およびその他のメディア資産をアップロードし、管理すること。             |
-| [Dynamic Data Lists](../../process-automation/forms/dynamic-data-lists.md) (*Deprecated*) | 定義されたフィールドセットを使用してフォームを作成し、表示する。                 |
+| [動的データリスト](../../process-automation/forms/dynamic-data-lists.md) (*Deprecated*) | 定義されたフィールドセットを使用してフォームを作成し、表示する。                 |
 | [フォーム](../../process-automation/forms.md)                                                 | ユーザーデータを収集するためのサイトフォームの作成と管理（例：フィードバック、求人応募）。    |
 | [ナレッジベース](../../collaboration-and-social/knowledge-base.md)                               | サイトの公式ドキュメントを作成し、表示する。                           |
 | [掲示板](../../collaboration-and-social/message-boards.md)                                   | コミュニケーションとコラボレーションを促進するために、サイトのメッセージボードを作成・管理する。 |

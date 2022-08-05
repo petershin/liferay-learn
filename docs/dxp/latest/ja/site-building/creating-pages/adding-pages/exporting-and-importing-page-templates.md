@@ -20,7 +20,7 @@ Liferay DXP 7.4以降の場合、ページテンプレートコレクション�
 
 1. 目的のページテンプレートの*アクション*ボタン (![Actions Button](../../../images/icon-actions.png))をクリックし、 *［Export］*を選択します。
 
-   ![[エクスポート]をクリックして、ページテンプレートをZipとしてエクスポートします。](./exporting-and-importing-page-templates/images/01.png)
+   ![ [エクスポート]をクリックして、ページテンプレートをZipとしてエクスポートします。](./exporting-and-importing-page-templates/images/01.png)
 
 1. 確認ウィンドウで*［OK］*をクリックします。
 
@@ -65,4 +65,4 @@ ZIPファイルには、 `display-page-template.json`, `master-page.json`, `page
 
 * [ページテンプレートの作成](./creating-a-page-template.md)
 * [サイトページとコンテンツのエクスポート/インポート](../../sites/exporting-importing-site-pages-and-content.md)
-* [Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
+* [コレクションの作成](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)

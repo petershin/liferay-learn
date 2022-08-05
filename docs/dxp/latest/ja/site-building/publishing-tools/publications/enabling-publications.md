@@ -5,7 +5,7 @@
 パブリケーションは、あなたとあなたのチームがDXPインスタンスへの変更を開発、追跡、および公開するための便利で柔軟な方法を提供します。 有効にすると、パブリケーションはグローバルにアクティブ化され、どこからでもアクセスしてサポートされているエンティティを編集できます。
 
 ```{important}
-ステージングとパブリケーションを同時に有効にすることはできません。 いずれかのサイトでステージングが有効になっている場合は、パブリケーションを有効にする前に、まずステージングを無効にする必要があります。 詳細については、[Disabling Local Live Staging](../staging/configuring-local-live-staging.md#disabling-local-live-staging)および[Disabling Remote Live Staging](../staging/configuring-remote-live-staging.md#disabling-remote-live-staging)を参照してください。
+ステージングとパブリケーションを同時に有効にすることはできません。 いずれかのサイトでステージングが有効になっている場合は、パブリケーションを有効にする前に、まずステージングを無効にする必要があります。 詳細については、 [Disabling Local Live Staging](../staging/configuring-local-live-staging.md#disabling-local-live-staging) および [Disabling Remote Live Staging](../staging/configuring-remote-live-staging.md#disabling-remote-live-staging) を参照してください。
 
 [Workflow](../../../process-automation/workflow/introduction-to-workflow.md) は Publications と共に使用することはできません。
 ```
@@ -52,7 +52,7 @@
 
 1. *グローバルメニュー*（![Global Menu](../../../images/icon-applications-menu.png)）を開き、［Applications］タブをクリックし、*［Publications］*の下にある *［Settings］*をクリックします。
 
-   ![グローバルメニューで、[Publications]の下の[設定]をクリックします。](./enabling-publications/images/04.png)
+   ![グローバルメニューで、[Publications]の下の [設定]をクリックします。](./enabling-publications/images/04.png)
 
 1. スイッチを*［Yes］*に切り替えます。
 

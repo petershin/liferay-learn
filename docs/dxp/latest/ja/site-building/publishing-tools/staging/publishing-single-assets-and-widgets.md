@@ -10,7 +10,7 @@
 
 1. 公開するアセットの*アクション*ボタン（![Actions button](../../../images/icon-actions.png)）をクリックし、*［Publish to Live］*を選択します。
 
-   ![公開するアセットのアクションボタンをクリックし、[本番環境に公開]を選択します。](./publishing-single-assets-and-widgets/images/01.png)
+   ![公開するアセットのアクションボタンをクリックし、 [本番環境に公開]を選択します。](./publishing-single-assets-and-widgets/images/01.png)
 
 確認すると、公開ステータスを確認できるプロセスページに移動します。
 
@@ -28,7 +28,7 @@
 
 ウィジェットを変更した後、ウィジェットの *アクション* ボタン（ ![Actions button](../../../images/icon-actions.png)）をクリックして*［Staging］*を選択することにより、ウィジェットを公開できます。
 
-![ウィジェットのアクションボタンをクリックして、[ステージング]を選択します。](./publishing-single-assets-and-widgets/images/04.png)
+![ウィジェットのアクションボタンをクリックして、 [ステージング]を選択します。](./publishing-single-assets-and-widgets/images/04.png)
 
 ## 追加情報
 

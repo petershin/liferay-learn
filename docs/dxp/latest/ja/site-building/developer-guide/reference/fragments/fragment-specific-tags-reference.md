@@ -114,7 +114,7 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 </div>
 ```
 
-コンテンツ マッピングは、フラグメント内の編集可能なフィールドを、Web コンテンツやブログなどのアセット タイプのフィールドに接続します。 たとえば、画像フィールドをマップして、Webコンテンツ記事のプレビュー画像を表示できます。 マッピングフィールドの詳細については、[Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)を参照してください。
+コンテンツ マッピングは、フラグメント内の編集可能なフィールドを、Web コンテンツやブログなどのアセット タイプのフィールドに接続します。 たとえば、画像フィールドをマップして、Webコンテンツ記事のプレビュー画像を表示できます。 マッピングフィールドの詳細については、 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) を参照してください。
 
 ## 編集可能なリンクの作成
 
@@ -143,7 +143,7 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 
 ![リンクの外観と動作を定義するためのオプションがいくつかあります。](./fragment-specific-tags-reference/images/03.png)
 
-編集可能なリンクの詳細は、[Editable Links](../../../creating-pages/page-fragments-and-widgets/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を参照してください。
+編集可能なリンクの詳細は、 [Editable Links](../../../creating-pages/page-fragments-and-widgets/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を参照してください。
 
 ## 編集可能な HTML の作成
 
@@ -211,7 +211,7 @@ com.liferay.fragment.entry.processor.portlet.alias=app-name
 ```
 
 ```{note}
-W3C HTML 標準によると、カスタム要素は自己終了できません。 したがって、開始と終了 `<lfr-widget...>`のタグの間に何かを追加することはできませんが、タグに自己終了表記を使用することはできません。
+W3C HTML 標準によると、カスタム要素は自己終了できません。 したがって、開始と終了 `<lfr-widget...>` のタグの間に何かを追加することはできませんが、タグに自己終了表記を使用することはできません。
 ```
 
 ## フラグメント設定のローカライズ

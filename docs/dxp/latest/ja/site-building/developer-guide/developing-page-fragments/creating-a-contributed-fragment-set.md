@@ -1,6 +1,6 @@
 # 提供されたフラグメントセットの作成
 
-提供されたフラグメントセットは、ページフラグメントを含むデプロイ可能なモジュールです。 提供されたセットのフラグメントは、通常のフラグメントと同じように使用できますが、データベースには含まれておらず、UI から直接変更することはできません。 Liferay 7.3以降を実行している場合は、圧縮された ZIP セットで作成された[自動デプロイ済みフラグメント](./auto-deploying-fragments.md)を使用することをお勧めします。 これらは[独自のツール](./using-the-fragments-toolkit.md#fragment-set-structure)または[Liferayフラグメントツールキット](./using-the-fragments-toolkit.md)で作成でき、UI から変更して画像リソースを含めることができます。
+提供されたフラグメントセットは、ページフラグメントを含むデプロイ可能なモジュールです。 提供されたセットのフラグメントは、通常のフラグメントと同じように使用できますが、データベースには含まれておらず、UI から直接変更することはできません。 Liferay 7.3以降を実行している場合は、圧縮された ZIP セットで作成された[自動デプロイ済みフラグメント](./auto-deploying-fragments.md)を使用することをお勧めします。 これらは [独自のツール](./using-the-fragments-toolkit.md#fragment-set-structure) または[Liferayフラグメントツールキット](./using-the-fragments-toolkit.md)で作成でき、UI から変更して画像リソースを含めることができます。
 
 次の例は、Liferay 7.3以降で動作します。
 
@@ -8,7 +8,7 @@
 提供されたフラグメントセットを通じて追加されたすべてのフラグメントは、すべてのサイトでグローバルに使用できます。
 ```
 
-提供されたフラグメントセットを追加するには、それ自体が[`FragmentCollectionContributor`インターフェイス](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/FragmentCollectionContributor.html)を実装している[`BaseFragmentCollectionContributor`クラス](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/BaseFragmentCollectionContributor.html)を展開します。
+提供されたフラグメントセットを追加するには、それ自体が [`FragmentCollectionContributor`インターフェイス](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/FragmentCollectionContributor.html) を実装している [`BaseFragmentCollectionContributor`クラス](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/BaseFragmentCollectionContributor.html) を展開します。
 
 ここでは、フラグメントセットを提供する方法を学びます。
 
@@ -27,10 +27,10 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 Then, follow these steps to deploy an example to see what a contributed Fragment Set looks like:
 
-1. Download and unzip the [example](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip):
+1. Download and unzip the [example](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip) :
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip -O
     ```
 
     ```bash
@@ -63,7 +63,7 @@ Then, follow these steps to deploy an example to see what a contributed Fragment
 
 提供されたフラグメントセットを正常にデプロイしました。
 
-ご覧のとおり、提供されたフラグメントセットはデフォルトのフラグメントセットとともに表示され、フラグメントは UI から変更できません。 セットを変更する唯一の方法は、元のモジュールを更新するか、[フラグメントを別のセットにコピー](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments)してフラグメントのコピーを変更することです。
+ご覧のとおり、提供されたフラグメントセットはデフォルトのフラグメントセットとともに表示され、フラグメントは UI から変更できません。 セットを変更する唯一の方法は、元のモジュールを更新するか、 [フラグメントを別のセットにコピー](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments) してフラグメントのコピーを変更することです。
 
 ## 提供されたフラグメントセットのロジックとメタデータ
 
@@ -102,7 +102,7 @@ private ServletContext _servletContext;
 * `Web-ContextPath` ヘッダはセットを含むモジュールフォルダを示すので、`ServletContext` が正しく生成されます。
 * `-dsannotations-options` は、コンポーネントクラスのクラス階層にある宣言型サービスのアノテーションを有効にします。
 
-これらの値の参照については、サンプルプロジェクトの [`bnd.bnd`](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip) を参照してください。
+これらの値の参照については、サンプルプロジェクトの [`bnd.bnd`](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip) を参照してください。
 
 次に、プロジェクトを変更して、提供されたセットに別のフラグメントを含めます。
 
@@ -148,5 +148,5 @@ private ServletContext _servletContext;
 
 ## 関連情報
 
-* [Using the Fragments Toolkit](./using-the-fragments-toolkit.md)
+* [フラグメントツールキットの使用](./using-the-fragments-toolkit.md)
 * [フラグメントエディターの使用](./using-the-fragments-editor.md)

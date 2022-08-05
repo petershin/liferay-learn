@@ -29,13 +29,13 @@ Liferay DXP/Portalは、メールサーバーを使用して、ユーザー登�
 
     * **［Incoming POP Server］:** pop.gmail.com
     * **Incoming Port：** 110
-    * **Use a Secure Network Connection：**Flagged
-    * **User Name：**joe.bloggs
+    * **Use a Secure Network Connection：** Flagged
+    * **User Name：** joe.bloggs
     * **［Password］：** *****
     * **［Outgoing SMTP Server］：** smtp.gmail.com
-    * **Outgoing Port：**465
-    * **Use a Secure Network Connection：**Flagged
-    * **User Name：**joe.bloggs
+    * **Outgoing Port：** 465
+    * **Use a Secure Network Connection：** Flagged
+    * **User Name：** joe.bloggs
     * **［Password］：** *****
     * **［Manually specify additional JavaMail properties to override the above configuration］：** 指定する必要のある追加のプロパティがある場合は、ここで指定します。
 

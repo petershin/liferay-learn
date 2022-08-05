@@ -13,7 +13,7 @@
 * 非推奨またはサポート終了：たとえば、次のバージョンで特定の機能またはAPIが停止されると警告している
 
 ## liferay-ui:flashタグを削除
-- **日付：**2020年10月13日
+- **日付：** 2020年10月13日
 - **JIRAチケット：** [LPS-121732](https://issues.liferay.com/browse/LPS-121732)
 
 ### 変更点
@@ -35,7 +35,7 @@
 ---------------------------------------
 
 ## /portal/flashパスの削除
-- **日付：**2020年10月13日
+- **日付：** 2020年10月13日
 - **JIRAチケット：** [LPS-121733](https://issues.liferay.com/browse/LPS-121733)
 
 ### 変更点
@@ -59,7 +59,7 @@
 ---------------------------------------
 
 ## swfobject AUIモジュールの削除
-- **日付：**2020年10月13日
+- **日付：** 2020年10月13日
 - **JIRAチケット：** [LPS-121736](https://issues.liferay.com/browse/LPS-121736)
 
 ### 変更点
@@ -81,7 +81,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## AssetEntries_AssetCategoriesテーブルと対応するコードを削除
-- **日付：**2020年10月16日
+- **日付：** 2020年10月16日
 - **JIRAチケット：** [LPS-89065](https://issues.liferay.com/browse/LPS-89065)
 
 ### 変更点
@@ -105,7 +105,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## AntivirusScannerのサポートとClamdの統合をリファクタリング
-- **日付：**2020年10月21日
+- **日付：** 2020年10月21日
 - **JIRAチケット：** [LPS-122280](https://issues.liferay.com/browse/LPS-122280)
 
 ### 変更点
@@ -129,7 +129,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## エンティティ表示ページ登録追跡ロジックを変更
-- **日付：**2020年10月27日
+- **日付：** 2020年10月27日
 - **JIRAチケット：** [LPS-122275](https://issues.liferay.com/browse/LPS-122275)
 
 ### 変更点
@@ -157,7 +157,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## 廃止予定および未使用のJSPタグを削除
-- **日付：**2020年11月24日
+- **日付：** 2020年11月24日
 - **JIRAチケット：** [LPS-112476](https://issues.liferay.com/browse/LPS-112476)
 
 ### 変更点
@@ -192,7 +192,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## .container-fluid-1280 CSSクラスを置き換え
-- **日付：**2020年11月24日
+- **日付：** 2020年11月24日
 - **JIRAチケット：** [LPS-123894](https://issues.liferay.com/browse/LPS-123894)
 
 ### 変更点
@@ -214,7 +214,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## CSSおよびJavaScriptリソースのランタイム縮小化をデフォルトで無効化
-- **日付：**2020年11月27日
+- **日付：** 2020年11月27日
 - **JIRAチケット：** [LPS-123550](https://issues.liferay.com/browse/LPS-123550)
 
 ### 変更点
@@ -236,7 +236,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 ---------------------------------------
 
 ## SoyPortletクラスを削除
-- **日付：**2020年12月9日
+- **日付：** 2020年12月9日
 - **JIRAチケット：** [LPS-122955](https://issues.liferay.com/browse/LPS-122955)
 
 ### 変更点
@@ -262,7 +262,7 @@ JSPを使用する`MVCPortlet`などの確立されたアーキテクチャ、�
 ---------------------------------------
 
 ## サーバー側のClosure Templates（Soy）のサポートを削除
-- **日付：**2020年12月14日
+- **日付：** 2020年12月14日
 - **JIRAチケット：** [LPS-122956](https://issues.liferay.com/browse/LPS-122956)
 
 ### 変更点
@@ -299,7 +299,7 @@ JSPを使用する`MVCPortlet`などの確立されたアーキテクチャ、�
 ---------------------------------------
 
 ## com.liferay.portal.kernel.model.PortletPreferencesメソッド、getPreferencesおよびsetPreferencesを削除
-- **日付：**2020年12月20日
+- **日付：** 2020年12月20日
 - **JIRAチケット：** [LPS-122562](https://issues.liferay.com/browse/LPS-122562)
 
 ### 変更点
@@ -321,7 +321,7 @@ JSPを使用する`MVCPortlet`などの確立されたアーキテクチャ、�
 ---------------------------------------
 
 ## CSS互換性レイヤーを削除
-- **日付：**2021年1月02日
+- **日付：** 2021年1月02日
 - **JIRAチケット：** [LPS-123359](https://issues.liferay.com/browse/LPS-123359)
 
 ### 変更点
@@ -343,7 +343,7 @@ Clayマークアップを使用している場合は、最新の [Clayコンポ�
 ---------------------------------------
 
 ## Log4j XML定義ファイルからspi.idプロパティを削除
-- **日付：**2021年1月19日
+- **日付：** 2021年1月19日
 - **JIRAチケット：** [LPS-125998](https://issues.liferay.com/browse/LPS-125998)
 
 ### 変更点
@@ -365,7 +365,7 @@ SPIが [LPS-110758](https://issues.liferay.com/browse/LPS-110758) によって�
 ---------------------------------------
 
 ## frontend-taglib-clayタグから廃止予定の属性を削除
-- **日付：**2021年1月26日
+- **日付：** 2021年1月26日
 - **JIRAチケット：** [LPS-125256](https://issues.liferay.com/browse/LPS-125256)
 
 ### 変更点
@@ -383,7 +383,7 @@ SPIが [LPS-110758](https://issues.liferay.com/browse/LPS-110758) によって�
 ---------------------------------------
 
 ## HTMLタグのブール属性の処理を変更
-- **日付：**2021年2月18日
+- **日付：** 2021年2月18日
 - **JIRAチケット：** [LPS-127832](https://issues.liferay.com/browse/LPS-127832)
 
 ### 変更点
@@ -433,7 +433,7 @@ DOMに存在させたいブール属性に`true`値を渡すようにしてく�
 ---------------------------------------
 
 ## com.liferay.portal.kernel.model.PortalPreferencesメソッド、getPreferencesおよびsetPreferencesを削除
-- **日付：**2020年3月31日
+- **日付：** 2020年3月31日
 - **JIRAチケット：** [LPS-124338](https://issues.liferay.com/browse/LPS-124338)
 
 ### 変更点
@@ -455,7 +455,7 @@ DOMに存在させたいブール属性に`true`値を渡すようにしてく�
 ---------------------------------------
 
 ## item-selector-taglibはcoverImage関連のイベントを起動しなくなりました
-- **日付：**2021年4月15日
+- **日付：** 2021年4月15日
 - **JIRAチケット：** [LPS-130359](https://issues.liferay.com/browse/LPS-130359)
 
 ### 変更点
@@ -524,7 +524,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 ---------------------------------------
 
 ## com.liferay.portal.kernel.util.StringBundlerをcom.liferay.petra.string.StringBundlerに置き換え
-- **日付：**2021年6月25日
+- **日付：** 2021年6月25日
 - **JIRAチケット：** [LPS-133200](https://issues.liferay.com/browse/LPS-133200)
 
 ### 変更点
@@ -565,7 +565,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 ---------------------------------------
 
 ## UserLocalService関連のクラスがパブリックAPIを変更しました
-- **日付：**2021年7月7日
+- **日付：** 2021年7月7日
 - **JIRAチケット：** [LPS-134096](https://issues.liferay.com/browse/LPS-134096)
 
 ### 変更点
@@ -600,7 +600,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 ---------------------------------------
 
 ## frontend-css-web CSSモジュールを削除
-- **日付：**2021年8月2日
+- **日付：** 2021年8月2日
 - **JIRAチケット：** [LPS-127085](https://issues.liferay.com/browse/LPS-127085)
 
 ### 変更点
@@ -652,7 +652,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 ---------------------------------------
 
 ## 一部のSanitizedServletResponse静的メソッド、HttpHeaders X_XSS_PROTECTION定数、およびhttp.header.secure.x.xss.protectionポータルプロパティを削除
-- **日付：**2021年8月5日
+- **日付：** 2021年8月5日
 - **JIRAチケット：** [LPS-134188](https://issues.liferay.com/browse/LPS-134188)
 
 ### 変更点
@@ -868,7 +868,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 
 ## サービスXMLファイルを持つサービスモジュールフォルダにサービスビルダータスクを制限しました。
 
-- **日付：**2021年11月02日
+- **日付：** 2021年11月02日
 - **JIRAチケット：** [LPS-129696](https://issues.liferay.com/browse/LPS-129696)
 
 ### 変更点
@@ -891,7 +891,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 
 ## FragmentEntryLocalServiceとFragmentEntryServiceのaddFragmentEntryメソッドを更新しました。
 
-- **日付：**2021年12月16日
+- **日付：** 2021年12月16日
 - **JIRAチケット：** [LPS-125034](https://issues.liferay.com/browse/LPS-125034)
 
 ### 変更点
@@ -913,7 +913,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 ---------------------------------------
 
 ## FragmentEntryProcessorContext、DefaultFragmentEntryProcessorContext、FragmentRendererContext、DefaultFragmentRendererContextのgetSegmentsExperienceIdsメソッドが削除されました。
-- **日付：**2021年12月17日
+- **日付：** 2021年12月17日
 - **JIRAチケット：** [LPS-141471](https://issues.liferay.com/browse/LPS-141471)
 
 ### 変更点
@@ -935,7 +935,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 ---------------------------------------
 
 ## ポータルのプロパティからリダイレクトURLが削除されました。
-- **日付：**2022年5月24日
+- **日付：** 2022年5月24日
 - **JIRAチケット：** [LPS-128837](https://issues.liferay.com/browse/LPS-128837)
 
 ### 変更点

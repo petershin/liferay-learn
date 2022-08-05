@@ -23,11 +23,11 @@ architecture/ui-architecture.md
 
 Liferay DXP/Portalのアーキテクチャには、次の3つの部分があります。
 
-1. **コア：**DXPとその[フレームワーク](../building-applications/core-frameworks.md)をブートストラップします。 コアは、サービス、UIコンポーネント、およびカスタマイゼーションを管理するためのランタイム環境を提供します。
+1. **コア：** DXPとその[フレームワーク](../building-applications/core-frameworks.md)をブートストラップします。 コアは、サービス、UIコンポーネント、およびカスタマイゼーションを管理するためのランタイム環境を提供します。
 
-1. **サービス：**Java APIおよびWeb APIを介してDXP機能とカスタム機能を公開します。
+1. **サービス：** Java APIおよびWeb APIを介してDXP機能とカスタム機能を公開します。
 
-1. **UI：**ポータル、サイト、ページ、ウィジェット、およびコンテンツを追加するためのオプションのWebアプリケーションUI。
+1. **UI：** ポータル、サイト、ページ、ウィジェット、およびコンテンツを追加するためのオプションのWebアプリケーションUI。
 
 UIとサービスを一緒に使用することも、[REST API](../headless-delivery/consuming-apis/consuming-rest-services.md)もしくは[GraphQL API](../headless-delivery/consuming-apis/consuming-graphql-apis.md)を介したサービスの利用のみに集中することもできます。
 
@@ -87,9 +87,9 @@ DXPは、アプリケーションサーバー上で実行されるWebアプリ�
 
 ランタイム環境は、コンポーネントのオンザフライでの追加、置換、およびカスタマイズをサポートしています。 これにより、次のシナリオが可能になります。
 
-**置換：**`ServiceC Impl 2`コンポーネントのランクが既存のコンポーネント`ServiceC Impl 1`よりも高い場合、`ServiceC Impl 2`が使用されます。
+**置換：** `ServiceC Impl 2`コンポーネントのランクが既存のコンポーネント`ServiceC Impl 1`よりも高い場合、`ServiceC Impl 2`が使用されます。
 
-**カスタマイゼーション：**`PortletAフィルター`は、`PortletA`で行われる要求と応答をインターセプトして変更し、`PortletA`が表示するコンテンツに影響を与えます。
+**カスタマイゼーション：** `PortletAフィルター`は、`PortletA`で行われる要求と応答をインターセプトして変更し、`PortletA`が表示するコンテンツに影響を与えます。
 
 コンポーネントWARおよび[モジュールJARプロジェクト](./fundamentals/module-projects.md)は、 [OSGiバンドル](https://www.osgi.org/) (モジュール)としてインストールされます。 LiferayのOSGiフレームワークは、モジュールのライフサイクルを定義し、依存関係を適用し、クラスの読み込み構造を定義し、モジュールとコンポーネントを管理するためのAPIとCLI（[Felix Gogo シェル](./fundamentals/using-an-osgi-service.md)）を提供します。 コアは、[ポータルプロパティファイル](../installation-and-upgrades/reference/portal-properties.md)と[システム設定](../system-administration/configuring-liferay/system-settings.md)を介して構成されます。
 

@@ -50,8 +50,8 @@ Liferay DXPにはJava JDK 8または11が必要です。 JDKを選択するに�
 1. 証明書が生成されたら、キーストアのパスワードを設定します。 *［Next］*をクリックします。
 1. このサーバープロファイルが使用するポートをカスタマイズできます。 マシンで開いているポートを選択してください。 ポートを選択すると、ウィザードは既存のWebSphereインストールを自動的に検出し、アクティビティが見つかると、ポートを1つ増やします。
 1. マシンの起動時にこのプロファイルを開始するかどうかを選択します。 *［Next］*をクリックします。
-1. WebSphereにはIBM HTTP Serverが付属しています。 このJVMがHTTPサーバーから転送された要求を受信できるように、Webサーバー定義が必要かどうかを選択します。 詳細は、WebSphereのドキュメントを参照してください。 完了したら、* ［Next］*をクリックします。
-1. ウィザードに選択された内容の概要が表示され、選択内容を保持したり、前の画面に戻って内容を変更したりできます。 完了したら、* ［Next］*をクリックします。
+1. WebSphereにはIBM HTTP Serverが付属しています。 このJVMがHTTPサーバーから転送された要求を受信できるように、Webサーバー定義が必要かどうかを選択します。 詳細は、WebSphereのドキュメントを参照してください。 完了したら、*［Next］*をクリックします。
+1. ウィザードに選択された内容の概要が表示され、選択内容を保持したり、前の画面に戻って内容を変更したりできます。 完了したら、*［Next］* をクリックします。
 
 WebSphereはプロファイルを作成し、プロファイルが正常に作成されたことを示すメッセージで終了します。
 
@@ -368,7 +368,7 @@ Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPは�
 
 ## 次のステップ
 
-[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、\ [DXPでのソリューションの構築\](../../../building_solutions_on_dxp.html) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
+[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、[DXPでのソリューションの構築](../../../building_solutions_on_dxp.md) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
 
 * [マーケットプレイスプラグインのインストール](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [試用期間中のプラグインへのアクセス](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)

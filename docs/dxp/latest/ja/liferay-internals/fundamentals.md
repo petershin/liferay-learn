@@ -31,13 +31,13 @@ OSGiのパワーの1つは、DXPのAPIにアクセスするプロジェクトを
 
 これらは、Liferay DXPのエコシステムの基本です。
 
-* ** [モジュールプロジェクト](./fundamentals/module-projects.md) ** OSGi モジュールとは何か、そのプロジェクト構造、そして Liferay の OSGi フレームワークでどのように使用されるかを説明します。
+* **[モジュールプロジェクト](./fundamentals/module-projects.md)** OSGi モジュールとは何か、そのプロジェクト構造、そして Liferay の OSGi フレームワークでどのように使用されるかを説明します。
 
-* ** [依存関係の構成](./fundamentals/configuring-dependencies.md) ** は、Liferayのアーティファクトとサードパーティのアーティファクトを特定し、それらのJavaパッケージをプロジェクトで使用するように設定する方法を示しています。
+* **[依存関係の構成](./fundamentals/configuring-dependencies.md)** は、Liferayのアーティファクトとサードパーティのアーティファクトを特定し、それらのJavaパッケージをプロジェクトで使用するように設定する方法を示しています。
 
-* **[Importing](./fundamentals/importing-packages.md) and [パッケージのエクスポート](./fundamentals/exporting-packages.md) ** では、他のモジュールの機能を利用する方法と、他のモジュールが利用できるように自分の機能を公開する方法を紹介します。 Liferayのツールは、パッケージの使用を検出し、パッケージのインポートを自動的に指定します。
+* **[Importing](./fundamentals/importing-packages.md) and [パッケージのエクスポート](./fundamentals/exporting-packages.md)** では、他のモジュールの機能を利用する方法と、他のモジュールが利用できるように自分の機能を公開する方法を紹介します。 Liferayのツールは、パッケージの使用を検出し、パッケージのインポートを自動的に指定します。
 
-* ** [セマンティックバージョニング](./fundamentals/semantic-versioning.md) ** は、Liferayが新しいバージョンに進化する際に、どのようにコードの依存関係を管理するかについて説明しています。
+* **[セマンティックバージョニング](./fundamentals/semantic-versioning.md)** は、Liferayが新しいバージョンに進化する際に、どのようにコードの依存関係を管理するかについて説明しています。
 
 * **[Gogo Shell](./fundamentals/using-the-gogo-shell.md)** では、シェルにコマンドを発行することにより、実行時にコンポーネントを調べたり、問題をデバッグしたり、デプロイメントを管理する方法を示しています。
 

@@ -6,7 +6,7 @@
 
 廃止されたデータを削除する方法は次のとおりです。
 
-1. *コントロールパネル*で、*［システム設定］* &rarr; *［Upgrades］*（*［プラットフォーム］*カテゴリ内） &rarr; *［Data Removal］*に移動します。 ［Data Removal］画面が表示されます。
+1. *コントロールパネル* で、*［システム設定］* &rarr; *［Upgrades］*（*［プラットフォーム］* カテゴリ内） &rarr; *［Data Removal］* に移動します。 ［Data Removal］画面が表示されます。
 
     ![これが［Data Removal］画面です。](./data-removal/images/01.png)
 

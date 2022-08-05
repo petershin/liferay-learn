@@ -224,13 +224,15 @@ JBossサーバーでIBM JDKを使用する場合は、以下の追加手順を�
 
     `<module name="ibm.jdk" />`
 
-1. `$JBOSS_HOME/modules/system/layers/base/sun/jdk/main/module.xml` ファイルに移動し、以下のパスを `&lt;paths&gt;... の中に挿入します。
-<pre><code class="xml">    <path name="com/sun/crypto" />
+1. `$JBOSS_HOME/modules/system/layers/base/sun/jdk/main/module.xml` ファイルに移動し、以下のパスを `<paths>...</paths>` の中に挿入します。
+
+    ```xml
+    <path name="com/sun/crypto" />
     <path name="com/sun/crypto/provider" />
     <path name="com/sun/image/codec/jpeg" />
     <path name="com/sun/org/apache/xml/internal/resolver" />
     <path name="com/sun/org/apache/xml/internal/resolver/tools" />
-`</pre>
+    ```
 
 追加されたパスは、ポータルのデプロイメントの例外と画像のアップロードの問題を解決します。
 
@@ -380,7 +382,7 @@ Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPは�
 
 ## 次のステップ
 
-[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、\ [DXPでのソリューションの構築\](../../../building_solutions_on_dxp.html) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
+[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、[DXPでのソリューションの構築](../../../building_solutions_on_dxp.md) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
 
 * [マーケットプレイスプラグインのインストール](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [試用期間中のプラグインへのアクセス](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)

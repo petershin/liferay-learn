@@ -481,11 +481,24 @@ public class Main {
 
 		String englishTitle = _getTitle(englishText);
 
+		String englishFriendlyUrlText = fileName.substring(
+			fileName.indexOf("/"));
+
+		englishFriendlyUrlText = FilenameUtils.removeExtension(
+			englishFriendlyUrlText);
+
 		File japaneseFile = new File(fileName.replace("/en/", "/ja/"));
 
 		if (japaneseFile.exists()) {
 			String japaneseText = FileUtils.readFileToString(
 				japaneseFile, StandardCharsets.UTF_8);
+
+			String japaneseFriendlyUrlText = japaneseFile.getPath();
+
+			japaneseFriendlyUrlText = japaneseFriendlyUrlText.substring(
+				japaneseFriendlyUrlText.indexOf("/"));
+
+			FilenameUtils.removeExtension(japaneseFriendlyUrlText);
 
 			structuredContent.setContentFields(
 				new ContentField[] {
@@ -514,6 +527,13 @@ public class Main {
 				).put(
 					"ja-JP", _getTitle(japaneseText)
 				).build());
+
+			structuredContent.setFriendlyUrlPath_i18n(
+				HashMapBuilder.put(
+					"en-US", englishFriendlyUrlText
+				).put(
+					"ja-JP", japaneseFriendlyUrlText
+				).build());
 		}
 		else {
 			structuredContent.setContentFields(
@@ -529,6 +549,7 @@ public class Main {
 
 		structuredContent.setContentStructureId(_CONTENT_STRUCTURE_ID);
 		structuredContent.setTitle(englishTitle);
+		structuredContent.setFriendlyUrlPath(englishFriendlyUrlText);
 
 		return structuredContent;
 	}

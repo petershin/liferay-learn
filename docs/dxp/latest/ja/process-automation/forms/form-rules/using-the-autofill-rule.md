@@ -11,7 +11,7 @@ _自動入力_ルールは、事前に設定された条件に基づいて、フ
 
     * _［Cash］_または*［All expenses paid trip］*の2つのオプションがある*［Rewards］*という単一選択フィールド
     * _［Region］_という名前のテキストフィールド
-    * [restcountries.eu](https://restcountries.eu)データプロバイダーを使用する_［Choose a Destination Country］_という名前の［リストから選択］フィールド
+    * [restcountries.eu](https://restcountries.eu) データプロバイダーを使用する_［Choose a Destination Country］_という名前の［リストから選択］フィールド
 
 ## 自動入力ルールの設定
 
@@ -49,6 +49,6 @@ _自動入力_ルールは、事前に設定された条件に基づいて、フ
 
 ## 追加情報
 
-* [Creating Forms](../creating-and-managing-forms/creating-forms.md)
+* [フォームの作成](../creating-and-managing-forms/creating-forms.md)
 * [データプロバイダーの概要](../data-providers/data-providers-overview.md)
 * [RESTデータプロバイダーを使用してフォームオプションを入力する](../data-providers/using-the-rest-data-provider-to-populate-form-options.md)

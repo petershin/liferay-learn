@@ -47,7 +47,7 @@
 | 送信先アドレス    | 受信者のメールアドレス（例：`test@example.com`)                              |
 | 件名         | 有益な件名にすることで、受信者はメールの内容を把握しやすくなります。                             |
 
-詳しくは、[Configuring Form Notifications](../sharing-forms-and-managing-submissions/configuring-form-notifications.md)を参照してください。
+詳しくは、 [フォーム通知の設定](../sharing-forms-and-managing-submissions/configuring-form-notifications.md) を参照してください。
 
 ## フォームウィジェットの設定
 
@@ -75,7 +75,7 @@
 
 インスタンス設定の Forms 設定エントリは、システム設定の Forms エントリと同じです (下記参照)。 詳細については、 [設定スコープ](../../../system-administration/configuring-liferay/understanding-configuration-scope.md) についてを参照してください。
 
-各構成プロパティの説明については、 [システム設定](#system-settings)を参照してください。
+各構成プロパティの説明については、 [システム設定](#system-settings) を参照してください。
 
 ## システム設定
 

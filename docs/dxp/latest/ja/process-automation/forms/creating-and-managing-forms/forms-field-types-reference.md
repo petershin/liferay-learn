@@ -125,7 +125,7 @@ Liferay 7.4で追加された、ユーザーが日付と時刻の両方を1つ�
 
 - [**確認要求**](#field-confirmation) ユーザがデータを正しく入る性を保証します。
 - [**入力値の検証](./validating-text-and-numeric-field-entries.md**) ユーザーの入力を事前に設定された要件に制限します。 ![数値入力を検証します。](./forms-field-types-reference/images/25.png)
-- **[入力マスク](./validating-text-and-numeric-field-entries.md#masking-numeric-fields)**では、ユーザーが数値データを入力する際に、正しいフォーマットを表示することができます。
+- ** [入力マスク](./validating-text-and-numeric-field-entries.md#masking-numeric-fields) **では、ユーザーが数値データを入力する際に、正しいフォーマットを表示することができます。
 
 ### アップロード
 

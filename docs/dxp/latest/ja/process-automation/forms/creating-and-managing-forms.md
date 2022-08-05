@@ -41,7 +41,7 @@ creating-and-managing-forms/validation-conditions-reference.md
 creating-and-managing-forms/forms-permissions-reference.md
 ```
 
-- [Creating Forms](./creating-and-managing-forms/creating-forms.md)
+- [フォームの作成](./creating-and-managing-forms/creating-forms.md)
 - [フォームレイアウトのカスタマイズ](./creating-and-managing-forms/customizing-form-layouts.md)
 - [フォーム要素のセットを再利用する](./creating-and-managing-forms/reusing-sets-of-form-elements.md)
 - [ヘルプテキストと定義済みの値の提供](./creating-and-managing-forms/providing-help-text-and-predefined-values.md)
@@ -52,7 +52,7 @@ creating-and-managing-forms/forms-permissions-reference.md
 - [自動保存動作のカスタマイズ](./creating-and-managing-forms/customizing-auto-save-behavior.md)
 - [フォームのエクスポートとインポート](./creating-and-managing-forms/exporting-and-importing-forms.md)
 - [ストレージアダプターの使用](./creating-and-managing-forms/using-storage-adapters.md)
-- [Customizing the Submit Button](./creating-and-managing-forms/customizing-the-submit-button.md)
+- [送信ボタンのカスタマイズ](./creating-and-managing-forms/customizing-the-submit-button.md)
 
 ## リファレンス
 

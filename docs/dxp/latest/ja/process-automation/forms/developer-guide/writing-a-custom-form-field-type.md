@@ -11,7 +11,7 @@ Forms アプリケーションには、高度に設定可能な [フィールド
 ```{note}
 - ドキュメントとメディア（メタデータセット）、Webコンテンツ（構造体）、およびFormsアプリケーションで作成されたフォームは、すべて同じフォームフィールドを消費することができます。 デフォルトでは、カスタムフォームフィールドは、Formsアプリケーションでのみ使用されます。 どのアプリケーションがフォームフィールドタイプを有効にするかを明示的に指定するために、コンポーネントプロパティを追加します。
 
-    ``properties
+    ```properties
     "ddm.form.field.type.scope=document-library,forms,journal""
     ```
 
@@ -31,10 +31,10 @@ To see how custom form fields work, deploy an example and then add some form dat
 
 次に、以下の手順を実行します。
 
-1. [Custom Form Field Type プロジェクト](./writing-a-custom-form-field-type/resources/liferay-c2p9.zip)をダウンロードし、解凍してください。
+1. [Custom Form Field Type プロジェクト](./writing-a-custom-form-field-type/resources/liferay-c2p9.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-c2p9.zip -O
     ```
 
     ```bash
@@ -67,7 +67,7 @@ To see how custom form fields work, deploy an example and then add some form dat
 
 1. ブラウザで<http://localhost:8080>を開きます。
 
-1. _サイトメニュー_ &rarr; _コンテンツ & データ_ &rarr; _フォーム_のフォームアプリケーションに移動します。
+1. _サイトメニュー_ &rarr; _ コンテンツ & データ_ &rarr; _フォーム_ のフォームアプリケーションに移動します。
 
 1. *追加* ボタン（![Add](./../../../images/icon-add.png)）をクリックして、フォームビルダーを開きます。
 
@@ -93,7 +93,7 @@ To see how custom form fields work, deploy an example and then add some form dat
 
 `ddm.form.field.type.display.order`: フォームビルダーのサイドバーのどこにフィールドが表示されるかを、整数値または浮動小数点数で設定します。 同じ値を持つフィールドはランダムに並べられる。
 
-`ddm.form.field.type.icon`: フィールドに使用するアイコンタイプを決定します。 [Clay Icon](https://clayui.com/docs/components/icon.html)いずれかを選択。
+`ddm.form.field.type.icon`: フィールドに使用するアイコンタイプを決定します。 [Clay Icon](https://clayui.com/docs/components/icon.html) いずれかを選択。
 
 `ddm.form.field.type.label`: ラベルテキストに言語キーを指定します。 翻訳された値が `Language.properties` ファイルに定義されていることを確認してください。
 
@@ -142,9 +142,9 @@ To see how custom form fields work, deploy an example and then add some form dat
    :lines: 5-17
 ```
 
-これらのパラメータの値と、その他のいくつかのパラメータによって、フォームフィールドのHTML `<input>` タグが定義されます。 重要なのは、ユーザーが選択できる `max` と `min` の値は、現在ハードコードされていることです。 [後で変更します](#add-custom-settings-to-the-form-field). </code> フィールドの値 `は三項演算子を用いて定義される。値が入力されていれば、それを使用する。 それ以外の場合は、あらかじめ設定されている値を使用します。</p>
+これらのパラメータの値と、その他のいくつかのパラメータによって、フォームフィールドのHTML `<input>` タグが定義されます。 重要なのは、ユーザーが選択できる `max` と `min` の値は、現在ハードコードされていることです。 [後で変更します](#add-custom-settings-to-the-form-field) . `フィールドの値`は三項演算子を用いて定義される。値が入力されていれば、それを使用する。 それ以外の場合は、あらかじめ設定されている値を使用します。
 
-<p spaces-before="0"><code>Main` コンポーネントはファイルの最後にエクスポートされ、インポートされた `FieldBase`の子要素として `Slider` を含んでいます。 `onChange` 関数は、イベントが検出されるたびに（スライダーが新しい値までドラッグされるたびに）スライダーの位置/値を取得します。
+`Main` コンポーネントはファイルの最後にエクスポートされ、インポートされた `FieldBase`の子要素として `Slider` を含んでいます。 `onChange` 関数は、イベントが検出されるたびに（スライダーが新しい値までドラッグされるたびに）スライダーの位置/値を取得します。
 
 ```{literalinclude} ./writing-a-custom-form-field-type/resources/liferay-c2p9.zip/c2p9-impl/src/main/resources/META-INF/resources/C2P9/Slider.es.js
    :dedent: 0

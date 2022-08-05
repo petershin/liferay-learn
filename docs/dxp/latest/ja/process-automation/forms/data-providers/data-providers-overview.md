@@ -9,7 +9,7 @@
 
 ## 登録済みのJSON Webサービス
 
-データソースの中には、 [restcountries.com](https://restcountries.com)データプロバイダーのようなサードパーティーのソースから取得するものもあります。 また、Liferay DXPには独自に登録されたWebサービスがあります。 ローカルサーバーを実行している場合は、[http://localhost:8080/api/jsonws](http://localhost:8080/api/jsonws)でリストを参照してください。 国のリストを入力する場合、2つの`get-countries` JSON Web サービスがありますが、どちらでも動作します。 _［Invoke］_をクリックすると、結果が生成されます。
+データソースの中には、 [restcountries.com](https://restcountries.com) データプロバイダーのようなサードパーティーのソースから取得するものもあります。 また、Liferay DXPには独自に登録されたWebサービスがあります。 ローカルサーバーを実行している場合は、 [http://localhost:8080/api/jsonws](http://localhost:8080/api/jsonws) でリストを参照してください。 国のリストを入力する場合、2つの`get-countries` JSON Web サービスがありますが、どちらでも動作します。 _［Invoke］_をクリックすると、結果が生成されます。
 
 ```{warning}
 ローカルテスト環境でLiferayのWebサービスとデータプロバイダを使ってテストするには、ローカルネットワークアクセスを有効にする必要があります。 [ローカルネットワーク上のデータへのアクセスの有効化]を参照してください（./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network` __）。
@@ -84,7 +84,7 @@ RESTサービスからのパスパラメーターまたはクエリパラメー�
 
 複数の入力を追加することができます。 入力値を指定する方法を提供するには、 [自動入力ルール](../form-rules/using-the-autofill-rule.md)を使用します。 ユーザーが1つのフィールドに入力すると、その入力内容がRESTサービスに送信されます。 RESTサービスの応答データは、入力パラメータによってフィルタリングされます。
 
-出力パスフィールドは[JsonPath構文](https://github.com/json-path/JsonPath)で指定されるため、必ず`$`で始まる必要があります。 パスが返すデータのタイプは、［Type］フィールドで選択したタイプと一致する必要があります。 `restcountries.com` サービスを使用して、[パス]フィールドに`$..name`と入力することで、`name`フィールドを出力として指定します。 より複雑なJsonPath式を構築する必要がある場合（たとえば、人口1億人以上のすべての国の名前が必要な場合 --- `restcountries.com`サービスを使用した `$..[?(@.population>100000000)].name`）は、[こちら](http://jsonpath.herokuapp.com/)や[こちら](https://jsonpath.com/)のように`JsonPath`エバリュエーターを使用することを検討してください。
+出力パスフィールドは [JsonPath構文](https://github.com/json-path/JsonPath) で指定されるため、必ず`$`で始まる必要があります。 パスが返すデータのタイプは、［Type］フィールドで選択したタイプと一致する必要があります。 `restcountries.com` サービスを使用して、[パス]フィールドに`$..name`と入力することで、`name`フィールドを出力として指定します。 より複雑なJsonPath式を構築する必要がある場合（たとえば、人口1億人以上のすべての国の名前が必要な場合 --- `restcountries.com`サービスを使用した `$..[?(@.population>100000000)].name`）は、 [こちら](http://jsonpath.herokuapp.com/) や [こちら](https://jsonpath.com/) のように`JsonPath`エバリュエーターを使用することを検討してください。
 
 ```{tip}
 ある値を表示し、別の値をデータベースに保存するには、[Paths]フィールドにセミコロンで区切って両方を入力します（`$..name;$..numericCode`）。

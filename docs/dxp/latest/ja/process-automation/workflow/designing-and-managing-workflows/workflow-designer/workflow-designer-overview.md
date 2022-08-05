@@ -2,12 +2,12 @@
 
 {bdg-primary}`サブスクリプション`
 
-ワークフローのワークフローデザイナーは、ワークフローのプロセス定義を作成するためのグラフィカルなインターフェイスです。 便利なドラッグアンドドロップのインターフェースにより、 [XML定義を手作業で書く](../../developer-guide/crafting-xml-workflow-definitions)よりも簡単にワークフローのデザインができます</0>。 ［コントロールパネル］&rarr; ［ワークフロー］&rarr;［ワークフロー］からアクセスできます。
+ワークフローのワークフローデザイナーは、ワークフローのプロセス定義を作成するためのグラフィカルなインターフェイスです。 便利なドラッグアンドドロップのインターフェースにより、 [XML定義を手作業で書く](../../developer-guide/crafting-xml-workflow-definitions) よりも簡単にワークフローのデザインができます。 ［コントロールパネル］&rarr; ［ワークフロー］&rarr;［ワークフロー］からアクセスできます。
 
 ![デザイナーのキャンバスにノードをドラッグアンドドロップします。](./workflow-designer-overview/images/01.png)
 
 ```{tip}
-また、［ワークフロー］の［ソース］ビューからXML定義を書き込んだり、アップロードしたりすることもできます。 [新規ワークフロー定義のアップロード](../managing-workflows.md#uploading-a-new-workflow-definition)をご参照ください。
+また、［ワークフロー］の［ソース］ビューからXML定義を書き込んだり、アップロードしたりすることもできます。 [新規ワークフロー定義のアップロード](../managing-workflows.md#uploading-a-new-workflow-definition) をご参照ください。
 ```
 
 ワークフローデザイナーは、すべての[ワークフローノード](./workflow-nodes.md)タイプをサポートしています。
@@ -65,7 +65,7 @@ Liferay 7.4 U20では、UIに表示されるワークフローのテキストは
 
 ## 追加情報
 
-* [Managing Workflows](../managing-workflows.md)
+* [ワークフローの管理](../managing-workflows.md)
 * [ワークフローノード](./workflow-nodes.md)
 * [フォークと結合の使用](./using-forks-and-joins.md)
 * [条件ノードの使用](./using-condition-nodes.md)

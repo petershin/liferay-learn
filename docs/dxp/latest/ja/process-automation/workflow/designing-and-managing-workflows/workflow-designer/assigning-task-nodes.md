@@ -2,7 +2,7 @@
 
 {bdg-primary}`サブスクリプション`
 
-タスクノードでは、人によるインタラクションが必要です。 タスクを適切な人に通知したり、関連付けるには、それぞれ［[通知](./configuring-workflow-actions-and-notifications.md#adding-notifications)］と［割り当て］を使用します。 タスクノードは、以下のように割り当てることができます。
+タスクノードでは、人によるインタラクションが必要です。 タスクを適切な人に通知したり、関連付けるには、それぞれ［ [通知](./configuring-workflow-actions-and-notifications.md#adding-notifications) ］と［割り当て］を使用します。 タスクノードは、以下のように割り当てることができます。
 
 - 特定のロール
 - [ロール種類](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)の複数のロール（組織、サイト、アセットライブラリ、アカウント、標準ロールの種類）
@@ -10,7 +10,7 @@
 - リソースアクション
 - 特定のユーザー
 
-さらに、 [スクリプト](../../developer-guide/using-the-script-engine-in-workflow.md) を書いて、割り当てを定義することができます ( [スクリプトでの割り当て](#scripted-assignments)参照)。
+さらに、 [スクリプト](../../developer-guide/using-the-script-engine-in-workflow.md) を書いて、割り当てを定義することができます ( [スクリプトでの割り当て](#scripted-assignments) 参照)。
 
 ![タスクノードに割り当てを追加することができます。](./assigning-task-nodes/images/01.png)
 

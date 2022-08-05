@@ -6,10 +6,10 @@ Reactベースのカスタムフォームフィールドは、Liferay 7.3およ�
 
 Liferay 7.2 では、カスタムフォームフィールドに別のフロントエンドフレームワークを使用していました。 Acme C2P9 SliderフィールドをLiferay 7.2上で動作させるために調整すること。
 
-1. [Custom Forms Field Type プロジェクト](./writing-a-custom-form-field-type/resources/liferay-c2p9.zip)をダウンロードし、解凍してください。
+1. [Custom Forms Field Type プロジェクト](./writing-a-custom-form-field-type/resources/liferay-c2p9.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-c2p9.zip -O
     ```
 
     ```bash

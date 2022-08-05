@@ -47,6 +47,6 @@
 
 ## 追加情報
 
-* [Creating Forms](./creating-forms.md)
+* [フォームの作成](./creating-forms.md)
 * [フォーム構成リファレンス](./forms-configuration-reference.md)
 * [サイトページとコンテンツのエクスポート/インポート](../../../site-building/sites/exporting-importing-site-pages-and-content.md)

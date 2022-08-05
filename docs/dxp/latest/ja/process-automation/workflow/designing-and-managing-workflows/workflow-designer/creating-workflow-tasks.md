@@ -2,7 +2,7 @@
 
 {bdg-primary}`サブスクリプション`
 
-デフォルトの[唯一の承認者の定義](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/single-approver-definition.xml)では、ワークフローのタスクを簡単に紹介しています。 タスクノードはレビューとアップデートの2つしかありません。 コンテンツ制作者がアセットをレビューのために提出すると、ワークフローはレビューノードに入ります。 レビューでは、アセットを承認または拒否できます。 拒否された場合、プロセスはタスクの更新に移行します。 その後、送信者はアセットを修正し、レビューのために再送信することができます。
+デフォルトの [唯一の承認者の定義](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/single-approver-definition.xml) では、ワークフローのタスクを簡単に紹介しています。 タスクノードはレビューとアップデートの2つしかありません。 コンテンツ制作者がアセットをレビューのために提出すると、ワークフローはレビューノードに入ります。 レビューでは、アセットを承認または拒否できます。 拒否された場合、プロセスはタスクの更新に移行します。 その後、送信者はアセットを修正し、レビューのために再送信することができます。
 
 ![唯一の承認者の定義には、2つのタスクノードがあります。](./creating-workflow-tasks/images/01.png)
 

@@ -52,7 +52,7 @@ DXPを使用しているサブスクライバーは、[グラフィカルデザ�
 
 ## 開始ノードと終了ノード
 
-各ワークフローの定義は、_ステータスノード_で開始および終了します。 [唯一の承認者](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition.xml)から次のような_開始_ノードを作成します。
+各ワークフローの定義は、_ステータスノード_で開始および終了します。 [唯一の承認者](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition.xml) から次のような_開始_ノードを作成します。
 
 ```xml
 <state>
@@ -259,7 +259,7 @@ _レビュー_タスクノードが追加され、設定されました。   あ
 
 ## 追加情報
 
-* [Workflow Definition Node Reference](./workflow-definition-node-reference.md)
+* [ワークフロー定義ノードリファレンス](./workflow-definition-node-reference.md)
 * [ワークフロータスクノードリファレンス](./workflow-task-node-reference.md)
 * [ワークフローでのスクリプトエンジンの使用](./using-the-script-engine-in-workflow.md)
 * [ワークフローの管理](../designing-and-managing-workflows/managing-workflows.md)

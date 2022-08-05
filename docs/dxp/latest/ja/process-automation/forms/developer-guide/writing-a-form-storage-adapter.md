@@ -1,12 +1,12 @@
 # フォームストレージアダプターの書き込み
 
-> 利用可能：[LPS-97208](https://issues.liferay.com/browse/LPS-97208)の修正（Liferay DXP 7.2 SP3で計画）を含むLiferay DXP 7.3およびLiferay DXP 7.2バージョン。
+> 利用可能： [LPS-97208](https://issues.liferay.com/browse/LPS-97208) の修正（Liferay DXP 7.2 SP3で計画）を含むLiferay DXP 7.3およびLiferay DXP 7.2バージョン。
 
 デフォルトでは、フォームはLiferay DXPのデータベースにJSONとして保存されます。 この例では、フォームレコードの永続化イベントにカスタムロジックを挿入するために、新しいストレージアダプターを実装する方法を紹介します。
 
 ![DDMストレージアダプターを使用して、フォームアプリケーションにストレージタイプを追加します。](./writing-a-form-storage-adapter/images/01.png)
 
-最初に、[デフォルトのストレージアダプター](https://github.com/liferay/liferay-portal/blob/［$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/JSONDDMStorageAdapter.java)がフォームレコードをLiferay DXPのデータベースにJSONコンテンツとして保存する方法を確認します。 そして、各フォームレコードをファイルシステムに保存するロジックを追加します。
+最初に、 [デフォルトのストレージアダプター](https://github.com/liferay/liferay-portal/blob/［$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/JSONDDMStorageAdapter.java) がフォームレコードをLiferay DXPのデータベースにJSONコンテンツとして保存する方法を確認します。 そして、各フォームレコードをファイルシステムに保存するロジックを追加します。
 
 ## 実行中のDDMストレージアダプターを調べる
 
@@ -18,10 +18,10 @@
 
 次に、以下の手順に従います。
 
-1. Download and unzip [the DDM Storage Adapter project](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip).
+1. Download and unzip [the DDM Storage Adapter project](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) .
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-r2f1.zip -O
     ```
 
     ```bash
@@ -121,7 +121,7 @@ public DDMStorageAdapterSaveResponse save(
     throws StorageException;
 ```
 
-各メソッドは、 _DDMStorageAdapter[[保存](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java)/[取得](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java)/[削除](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java)]レスポンス_ オブジェクトを返さなければなりません。静的なインナー `Builder` クラスの `newBuilder` メソッドを使用して構築されます。
+各メソッドは、 _DDMStorageAdapter[ [保存](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java) / [取得](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java) / [削除](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java) ]レスポンス_ オブジェクトを返さなければなりません。静的なインナー `Builder` クラスの `newBuilder` メソッドを使用して構築されます。
 
 すべてのメソッドに`DDMStorageAdapter［Save/Delete/Get］Request`が渡されます。 リクエストオブジェクトには、有用なコンテキスト情報を返すgetterメソッドが含まれています。
 

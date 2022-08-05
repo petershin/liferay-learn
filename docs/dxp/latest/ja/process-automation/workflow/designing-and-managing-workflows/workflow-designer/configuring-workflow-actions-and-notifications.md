@@ -56,7 +56,7 @@ Single Approver のワークフロー定義を作成する場合、 _Update_ Tas
 
 1. Updateノードのプロパティサイドバーで、既存の通知をクリックするか、まだ何も定義されていない場合は、 _New_ をクリックします。
 
- ![通知は[プロパティ]タブにあります。](./configuring-workflow-actions-and-notifications/images/03.png)
+ ![通知は [プロパティ]タブにあります。](./configuring-workflow-actions-and-notifications/images/03.png)
 
 1. 次のように入力します：
     * **名前:** 作成者への修正通知
@@ -82,7 +82,7 @@ Single Approver のワークフロー定義を作成する場合、 _Update_ Tas
 
 ## 追加情報
 
-* [Creating Workflow Tasks](./creating-workflow-tasks.md)
-* [Using Forks and Joins](./using-forks-and-joins.md)
-* [Using Condition Nodes](./using-condition-nodes.md)
+* [ワークフロータスクの作成](./creating-workflow-tasks.md)
+* [フォークと結合の使用](./using-forks-and-joins.md)
+* [条件ノードの使用](./using-condition-nodes.md)
 * [Workflow Nodes](./assigning-task-nodes.md)

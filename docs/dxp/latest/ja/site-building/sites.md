@@ -54,7 +54,8 @@ By default, Liferay generates a personal Site for every User. Each User is the s
 Liferay Sites are used with [Channels](https://learn.liferay.com/commerce/latest/en/store-management/channels.html) to create e-commerce storefronts. The Channel's Site Type (i.e., B2B, B2C, or B2X) determines how the Site works with Accounts. See [Commerce Site Types](https://learn.liferay.com/commerce/latest/en/starting-a-store/sites-and-site-types.html) for more information.
 -->
 
-::::{grid} 2 :gutter: 3 3 3 3
+::::{grid} 2
+:gutter: 3 3 3 3
 
 :::{grid-item-card} サイトの追加
 :link: ./sites/adding-a-site.md
@@ -82,4 +83,5 @@ Liferay Sites are used with [Channels](https://learn.liferay.com/commerce/latest
 
 :::{grid-item-card} デフォルトサイトアプリケーション
 :link: ./sites/default-site-applications.md
-::: ::::
+:::
+::::

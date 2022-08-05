@@ -15,44 +15,9 @@ Your Liferay DXP installation must meet the following fix pack minimum requireme
 * 7.0 Fix Pack 98
 ```
 
-Once logged in, you can either sign up for a **free trial** workspace or purchase a **paid tier** workspace by contacting sales. If you already have a workspace, you will also see your workspace listed after login.
+Once logged in, you can purchase a **paid tier** workspace by contacting sales. If you already have a workspace, you will also see your workspace listed after login.
 
-![Sign up with a Business or Enterprise plan or begin with a Free Trial.](signing-up-for-a-new-workspace/images/02.png)
-
-## Creating a Free Trial Workspace
-
-Free trial workspaces allow you to test Analytics Cloud for 3 months for free, as long as you have a valid Liferay DXP instance to connect with Analytics Cloud.
-
-Free trials are limited to a single workspace per valid email address registered with [liferay.com](https://www.liferay.com). If you are a Liferay partner and wish to have more than one free trial account, please [contact Sales](mailto:sales@liferay.com).
-
-Clicking on the the Start Free Trial button from the home screen will take your to the workspace configuration screen.
-
-![The workspace configuration screen gets you started.](signing-up-for-a-new-workspace/images/03.png)
-
-**Workspace Name:** Give your new analytics workspace a name.
-
-**Data Center Location:** Select a server location to store all of your analytics and website visitors data. Currently, Liferay Analytics Cloud offers four data center locations:
-
-* North America - Oregon, USA
-* South America - São Paulo, Brazil
-* Europe - London, United Kingdom
-* Europe - Frankfurt, Germany
-
-**Timezone:** Select a timezone for your workspace. Analytics data presented in your workspace is based on this timezone. 
-
-**Friendly URL:** Set a friendly URL so you can easily share your workspace with other collaborators.
-
-**Allowable Email Domain:** Allow other users with the same email domain to find and access this workspace. For example, if you set @mycompany.com for this configuration, other users with the same email domain can see and request to join this workspace after logging in to Analytics Cloud.
-
-Finally, accept the terms and conditions and privacy policy before finishing.
-
-Once you click the Create Workspace button, Analytics Cloud will take some time to finalize the workspace creation in the background. You will be presented with the following screen:
-
-![Creating a new workspace can take up to an hour to complete.](signing-up-for-a-new-workspace/images/04.png)
-
-This process may take from 30 minutes to 1 hour to complete. An email will be sent once your workspace is ready.
-
-See the next section on how to [access your workspace](./accessing-your-workspace.md).
+<!-- Requires new screenshot ![Sign up with a Business or Enterprise plan or begin with a Free Trial.](signing-up-for-a-new-workspace/images/02.png) -->
 
 ## Buying Analytics Cloud workspace
 

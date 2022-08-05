@@ -1,53 +1,66 @@
 # 個人サイトの管理
 
-デフォルトでは、Liferay DXPで作成されたすべてのユーザーには、公開（プロフィール）ページと非公開（ダッシュボード）ページで構成される、自分だけがメンバーである個人サイトが生成されます。 この動作が望ましくない場合、このユーザーごとの個人サイトは [簡単に無効](#customizing-personal-sites-with-portal-properties) にできます。
+デフォルトでは、Liferayは全てのユーザーに対して個人サイトを生成します。 </a>各サイトには、2つのページセット
+: マイプロフィール（公開）とマイダッシュボード（非公開）があります。 各ユーザーは、自分の個人サイトの唯一のメンバーであり、自分のコンテンツを表示および管理することができます。</p> 
 
-<a name="profile-pages-and-dashboard-pages" />
+</a> 必要に応じて、ポータルのプロパティを使用して、 個人用サイトを無効化またはカスタマイズすることができます。</p> 
+
+
+
+```{important}
+Liferay 7.4 U22+ と GA22+ では、新規にインストールした Liferay には、ダッシュボードページを含むプライベートページの作成を無効にするリリース機能フラグが含まれています。 個人サイトのカスタムダッシュボードページを手動で作成するには、LiferayシステムでPrivate Pagesを有効にする必要があります。 詳しくは、[プライベートページの有効化](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages)をご覧ください。
+```
+
+
+
+
+```{tip}
+ユーザーグループサイトでは、グループメンバー全員の個人サイトに動的にページを追加することができます。 詳しくは、[ユーザーグループサイト](../../users-and-permissions/user-groups/user-group-sites.md)を参照してください。
+```
+
+
+
 
 ## プロフィールページとダッシュボードページ
 
-ユーザーの個人サイトの公開ページ（プロフィール）は、ブログ（ブログエントリウィジェットを介して）やアクティビティ（アクティビティウィジェットを介して）など、ユーザーが公開したいものに使用できるため、他のユーザーが自分の近況を確認できます。 デフォルトでは、ユーザーに関する基本情報が表示され、ユーザーの連絡先情報をダウンロードするためのvCard（仮想名刺）へのリンクが提供されます。
+プロフィールページでは、ユーザーがコンテンツ（ブログ、アクティビティなど）を公開することができます。 デフォルトでは、各プロフィールページにはユーザーの基本情報が表示され、ユーザーのvCard（バーチャル名刺）へのダウンロードリンクが提供されます。
 
-![プロフィールページには、連絡先情報など、他のユーザーが閲覧できる公開情報が表示されます。](./managing-personal-sites/images/01.png)
+![プロフィールページでは、他のユーザーが閲覧できるように公開情報を表示します。](./managing-personal-sites/images/01.png)
 
-ユーザーの個人サイトの公開ページ（ダッシュボード）を使用して、プライベートファイルリポジトリ（ドキュメントとメディアウィジェットから）やパーソナライズされたRSSフィード（RSSリーダーウィジェットから）などの個人情報を表示したり、所属するサイト（マイサイトウィジェットから）や管理している組織などの項目を管理したりできます。
+ダッシュボードページでは、個人用ファイルへのアクセス、個人用RSSフィードの作成、サイトメンバーシップの管理などを行うことができます。 デフォルトでは、各ダッシュボードページには「マイサイト」ウィジェットが含まれています。
 
-![［ダッシュボード］ページには、所属するサイトなど、自分にだけ表示される個人情報が表示されます。](./managing-personal-sites/images/02.png)
+![ダッシュボードページには、あなただけが見ることができるプライベートな情報が表示されます。](./managing-personal-sites/images/02.png)
 
-<a name="managing-personal-site-pages" />
+
 
 ## 個人サイトページの管理
 
 個人サイトのページにアクセスするには、次の手順に従います。
 
-1. 個人用メニューアイコンを開き、 ［**My Profile**］ または ［**My Dashboard**］ を選択します。
+1. 個人用メニューアイコンを開き、*［My Profile］*または *［My Dashboard］*を選択します。
+   
+   ![個人用メニューから個人サイトページにアクセスします。](./managing-personal-sites/images/03.png)
 
-    ![個人用メニューから個人サイトページにアクセスします。](./managing-personal-sites/images/03.png)
+1. *サイトメニュー* (![Site Menu](../../images/icon-product-menu.png)) を開き、 *サイトビルダー*を展開し、 *ページ*をクリックします。
 
-1. プロダクトメニューを開き、サイトメニューから ［**サイトビルダー**］ → ［**ページ**］ に移動します。
-
-1. 他の\ [Widget Page\](.../creating-pages/using-widget-pages/adding-widgets-to-a-pag) と同じようにページを管理することができます。
-
-    ```{tip}
-    ページというページからダッシュボードとプロフィールページを切り替えるには、公開ページと非公開ページのメニューを切り替え、ページのアクションメニューから*表示*オプションを選択します。
-    ```
+1. 他のサイトページと同じように管理する [サイトページ](../creating-pages/understanding-pages/understanding-pages.md).
 
 ユーザーグループを介して、ユーザーの個人サイトのページを追加および定義することもできます。 詳細は、[ユーザーグループサイト](../../users-and-permissions/user-groups/user-group-sites.md)を参照してください。
 
-<a name="personal-site-permissions-and-roles" />
+
 
 ## 個人サイトの権限とロール
 
 個人用サイトの権限とロールは、以下に示す動作に従います。
 
 - 管理者は、ロールから権限を削除することにより、Liferay Portalの権限システムを介して個人サイトの変更可能な部分をカスタマイズできます（ユーザーロールから関連する権限を削除することにより、すべてのユーザーが何も変更できないようにします）。
-- ユーザーは、 [パワーユーザーロール](../../users-and-permissions/roles-and-permissions/default-roles-reference.md#regular-roles) のメンバーである場合、個人のサイトを管理し、ページとアプリケーションを変更できます。
+- ユーザーは、[パワーユーザーロール](../../users-and-permissions/roles-and-permissions/default-roles-reference.md#regular-roles)のメンバーである場合、個人のサイトを管理し、ページとアプリケーションを変更できます。
 
-<a name="customizing-personal-sites-with-portal-properties" />
+
 
 ## ポータルプロパティを使用した個人サイトのカスタマイズ
 
-個人サイトのデフォルトページをカスタマイズするために、[`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md)に追加できるポータルプロパティがいくつかあります。 ページの名前、ページに表示されるアプリケーション、ページのテーマとレイアウトテンプレートなどをカスタマイズできます。 詳細については、`portal.properties`ファイルの [デフォルトユーザーの公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Public%20Layouts) セクションと [デフォルトユーザーの非公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Private%20Layouts) セクションを参照してください。 これらのプロパティの一部を以下の表に示します。
+個人サイトのデフォルトページをカスタマイズするために、[`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md)に追加できるポータルプロパティがいくつかあります。 ページの名前、ページに表示されるアプリケーション、ページのテーマとレイアウトテンプレートなどをカスタマイズできます。 詳細については、`portal.properties`ファイルの[デフォルトユーザーの公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Public%20Layouts)セクションと[デフォルトユーザーの非公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Private%20Layouts)セクションを参照してください。 これらのプロパティの一部を以下の表に示します。
 
 | 機能                          | プロパティ                                           |
 |:--------------------------- |:----------------------------------------------- |
@@ -56,9 +69,10 @@
 | 個人サイトの自動作成を無効にする            | `layout.user.public.layouts.auto.create=false`  |
 | 個人サイトでのプライベートページの自動作成を無効にする | `layout.user.private.layouts.auto.create=false` |
 
+
 個人サイトの公開ページセットと非公開ページセットは別々に処理されます。 一方のページセットを有効のままにして、もう一方を無効にすることができます。 最初にインスタンスのユーザーの個人サイトを有効にしてから無効にした場合、既存の個人サイトは、次にユーザーがサインインするまでインスタンスに残り、その時点で削除されます。
 
-<a name="additional-information" />
+
 
 ## 追加情報
 

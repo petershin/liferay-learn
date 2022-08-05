@@ -26,15 +26,15 @@ Liferayの[ワークフローエンジン](../introduction-to-workflow.md)は、
     <script>
         <![CDATA[script code goes here]]>
     </script>
-    <script-language>scripting language name goes here</script-language>
+    <script-language>groovy</script-language>
 </action>
 ...
 </actions>
 ```
 
-一般的な操作として、ワークフローの状態を設定することがあります。 例えば、このスクリプトでは、ワークフローの状態を **approved** に設定しています。
+一般的な操作として、ワークフローの状態を設定することがあります。 例えば、このスクリプトでは、ワークフローの状態を *approved*に設定しています。
 
-```xml
+```groovy
 <script>
 <![CDATA[
     import com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil;
@@ -54,10 +54,10 @@ Liferayの[ワークフローエンジン](../introduction-to-workflow.md)は、
 
 次の変数は、ワークフロースクリプトを実行できる場所であればどこからでも利用できます。
 
-| 値                                                                                                                                                                                                                                                                   | Description                                                                        | 使用法                                                                                                                                                                                                                                                                                                     |
+| 値                                                                                                                                                                                                                                                                   | 説明                                                                                 | 使用量                                                                                                                                                                                                                                                                                                     |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:---------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `kaleoInstanceToken` ( [`KaleoInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoInstanceToken.java) ) | ユーザーが **公開申請** をクリックするたびに、ワークフローインスタンスとそれに対応するインスタンストークン（`KaleoInstanceToken`）が作成されます。 | `kaleoInstanceToken.getKaleoInstanceTokenId()`を呼び出して、注入されたトークンを使用してそのIDを取得します。 これは多くの場合、スクリプトのメソッドパラメータとして渡されます。                                                                                                                                                                                        |
-| `userId`                                                                                                                                                                                                                                                            | `userId` が返されるかどうかは、コンテキストに依存します。                                                  | 技術的には以下のようなロジックになります。 `KaleoTaskInstanceToken.getcompletionUserId()` がnullの場合、 `KaleoTaskInstanceToken.getUserId()`をチェックします。 それもnullの場合は、`KaleoInstanceToken.getUserId()`を呼び出します。 これは、スクリプトの実行時にワークフローに介入する最後のユーザーのIDです。 `created`ノードでは、これは **公開申請** をクリックしたユーザーですが、単一の承認者定義の`review`ノードの終了時はレビューアのIDになります。 |
+| `kaleoInstanceToken` ([`KaleoInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoInstanceToken.java)) | ユーザーが_公開申請_をクリックするたびに、ワークフローインスタンスとそれに対応するインスタンストークン（`KaleoInstanceToken`）が作成されます。 | `kaleoInstanceToken.getKaleoInstanceTokenId()`を呼び出して、注入されたトークンを使用してそのIDを取得します。 これは多くの場合、スクリプトのメソッドパラメータとして渡されます。                                                                                                                                                                                        |
+| `userId`                                                                                                                                                                                                                                                            | `userId` が返されるかどうかは、コンテキストに依存します。                                                  | 技術的には以下のようなロジックになります。 `KaleoTaskInstanceToken.getcompletionUserId()` がnullの場合、 `KaleoTaskInstanceToken.getUserId()`をチェックします。 それもnullの場合は、`KaleoInstanceToken.getUserId()`を呼び出します。 これは、スクリプトの実行時にワークフローに介入する最後のユーザーのIDです。 `created`ノードでは、これは_公開申請_をクリックしたユーザーですが、単一の承認者定義の`review`ノードの終了時はレビューアのIDになります。 |
 | `workflowContext` (`Map<String, Serializable>`)                                                                                                                                                                                                               | ワークフローのコンテキストには、スクリプトで使用できる情報が含まれています。                                             | 通常、コンテキストはパラメーターとして渡されますが、`WorkflowContext`のすべての属性はスクリプトでも使用できます。 スクリプトのワークフローコンテキストは、コンテキストに依存します。 `ExecutionContext.getWorkflowContext()`の呼び出しがnullに戻ると、ワークフローコンテキストは`KaleoInstanceModel.getWorkflowContext()`によって取得されます。                                                                             |
 
 ### タスクノードに挿入される変数
@@ -66,10 +66,10 @@ Liferayの[ワークフローエンジン](../introduction-to-workflow.md)は、
 
 | 値                                                                                                                                                                                                                                                                                  | 説明                                                                                                                           | 使用法                                                    |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:---------------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------------ |
-| `kaleoTaskInstanceToken` ( [`KaleoTaskInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTaskInstanceToken.java) )    | タスクのトークン自体は、ワークフロースクリプトで利用できます。                                                                                              | これを使用してIDを取得し、プログラムによる割り当てなど、他の有用なプログラムワークフロー活動で使用します。 |
+| `kaleoTaskInstanceToken` ([`KaleoTaskInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTaskInstanceToken.java))    | タスクのトークン自体は、ワークフロースクリプトで利用できます。                                                                                              | これを使用してIDを取得し、プログラムによる割り当てなど、他の有用なプログラムワークフロー活動で使用します。 |
 | `taskName`（`String`）：タスク自体の名前にアクセスできます（`KaleoTak.getName()`と同じ値を返します）。                                                                                                                                                                                                             |                                                                                                                              |                                                        |
-| `workflowTaskAssignees` (`List<` [`WorkflowTaskAssignee`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/workflow/WorkflowTaskAssignee.java) `>`)                                                 | タスクの担当者をリストアップします。                                                                                                           |                                                        |
-| `kaleoTimerInstanceToken` ( [`KaleoTimerInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTimerInstanceToken.java) ) | [タスクタイマー](./workflow-task-node-reference.md)が存在する場合は、`kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`を呼び出してIDを取得します。 | |                                                      |
+| `workflowTaskAssignees` (`List<`[`WorkflowTaskAssignee`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/workflow/WorkflowTaskAssignee.java)`>`)                                                 | タスクの担当者をリストアップします。                                                                                                           |                                                        |
+| `kaleoTimerInstanceToken` ([`KaleoTimerInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTimerInstanceToken.java)) | [タスクタイマー](./workflow-task-node-reference.md)が存在する場合は、`kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`を呼び出してIDを取得します。 | |                                                      |
 
 ## スクリプトの例
 
@@ -81,7 +81,7 @@ Liferayの[ワークフローエンジン](../introduction-to-workflow.md)は、
 
 以下のワークフロースクリプトはGroovyを使って書かれており、 `Condition` Nodeと共に使用されます。 スクリプトはLiferayの[アセットフレームワーク](../../../building-applications/data-frameworks/assets.md)を使用してアセットのカテゴリを決定し、カテゴリを使用して正しい承認プロセスを自動的に決定します。 アセットが `法的な` カテゴリーにある場合は、提出時に `法的審査` タスクに送られます。 それ以外の場合、アセットは`Default Review`タスクに送信されます。
 
-```xml
+```groovy
 <script>
     <![CDATA[
         import com.liferay.portal.kernel.util.GetterUtil;
@@ -134,7 +134,7 @@ Liferayの[ワークフローエンジン](../introduction-to-workflow.md)は、
 ```
 
 ```{note}
-スクリプトの戻り値は、次のタスクまたは状態を決定します。
+スクリプトの `returnValue` 変数は、次のタスクや状態を決定する。
 ```
 
 ダウンロード可能なワークフローのスクリプト例へのリンクは、 [Crafting Workflow Definitions](./crafting-xml-workflow-definitions.md) を参照してください。

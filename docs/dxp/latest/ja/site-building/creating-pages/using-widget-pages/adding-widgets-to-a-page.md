@@ -4,11 +4,11 @@
 
 次の手順に従って、ウィジェットページにウィジェットを追加します。
 
-1. コントロールメニューの **追加** ボタン(![Add](../../../images/icon-add-app.png))をクリックします。
+1. コントロールメニューの *追加* ボタン(![Add](../../../images/icon-add-app.png))をクリックします。
 
-   ![ウィジェットパネルには、ページに機能を追加するために使用できるいくつかのデフォルトウィジェットが含まれています。](./adding-widgets-to-a-page/images/01.png)
+    ![ウィジェットパネルには、ページに機能を追加するために使用できるいくつかのデフォルトウィジェットが含まれています。](./adding-widgets-to-a-page/images/01.png)
 
-1. **ウィジェット** パネルを開き、利用可能なウィジェットのカテゴリを検索または閲覧して、目的のウィジェットを見つけます。
+1. *ウィジェット* パネルを開き、利用可能なウィジェットのカテゴリを検索または閲覧して、目的のウィジェットを見つけます。
 
 1. ウィジェットをページレイアウトの配置したい列と行にドラッグします。
 
@@ -17,13 +17,11 @@ DXP 7.3以降では、ウィジェットページの上部にある目のアイ�
 ```
 
 ```{note}
-ウィジェットはウィジェットページの、 [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) に従ってレンダリングされます。
+ウィジェットはウィジェットページの、 [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight)に従ってレンダリングされます。
 ```
-
-<a name="additional-information" />
 
 ## 追加情報
 
-- [ウィジェットページのユーザーパーソナライズの有効化](./enabling-user-personalization-of-widget-pages.md)
-- [ウィジェットページをコンテンツページに変換する](./converting-widget-pages-to-content-pages.md)
-- [コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析](../../../content-authoring-and-management/content-performance-tool/analyze-content-metrics-using-content-performance-tool.md)
+- [ウィジェットページのユーザーパーソナライズの有効化](./configuring-widgets/enabling-user-personalization-of-widget-pages.md)
+- [ウィジェットページをコンテントページに変換する](./configuring-widgets/converting-widget-pages-to-content-pages.md)
+- [コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析](../../../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)

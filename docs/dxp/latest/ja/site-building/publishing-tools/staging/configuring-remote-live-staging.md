@@ -1,10 +1,8 @@
 # リモート本番環境ステージングの設定
 
-**リモート本番環境ステージング** では、ステージング環境と本番環境は別々のLiferayサーバーでホストされます。 有効にすると、ステージングの構成に使用されるサイトまたはアセットライブラリがステージング環境になり、リモートサーバーが本番環境になります。
+*リモート本番環境ステージング*では、ステージング環境と本番環境は別々のLiferayサーバーでホストされます。 有効にすると、ステージングの構成に使用されるサイトまたはアセットライブラリがステージング環境になり、リモートサーバーが本番環境になります。
 
 リモート本番環境ステージングを有効にする前に、ステージング環境と本番環境で使用するLiferayサーバーを構成する必要があります。 また、リモートサーバー上に新しい空白のサイトまたはアセットライブラリを作成し、ステージング設定時にそのIDを使用する必要があります。
-
-<a name="preparing-your-liferay-servers" />
 
 ## Liferayサーバーの準備
 
@@ -21,11 +19,11 @@
 
    使用可能な暗号化アルゴリズムでは、次のキー長がサポートされています。
 
-   **AES** ：128、192、および256ビットキー
+   **AES**：128、192、および256ビットキー
 
-   **Blowfish** ：32～448ビットキー
+   **Blowfish**：32～448ビットキー
 
-   **DESede（トリプルDES**） ：112または168ビットキー。 Liferayの最小キー長は、56ビットキーをサポートしていません。 <!--Does this limit apply to Blowfish?-->
+   **DESede（トリプルDES）**：112または168ビットキー。 Liferayの最小キー長は、56ビットキーをサポートしていません。 <!--Does this limit apply to Blowfish?-->
 
 1. 各サーバーの`portal-ext.properties`ファイルに次のプロパティを追加して、各サーバーを他の許可されたサーバーのリストに追加します。
 
@@ -39,16 +37,16 @@
    IPv6アドレスを検証する場合は、IPv4アドレスの使用を強制しないようにアプリサーバーのJVMを構成する必要があります。 たとえば、Tomcatを使用している場合は、`$TOMCAT_HOME\bin\setenv.[bat|sh]`ファイルに`-Djava.net.preferIPv4Stack=false`属性を追加します。
    ```
 
-1. リモートインスタンスの **トンネル認証検証設定** を更新します。
+1. リモートインスタンスの*トンネル認証検証設定*を更新します。
 
-   これを行うには、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**System Settings**］ &rarr; ［**API Authentication**］ &rarr; ［**Tunnel Authentication**］ に移動します。
+   これを行うには、*［コントロールパネル］* &rarr; *［設定］* &rarr; *［System Settings］* &rarr; *［API Authentication］* &rarr; *［Tunnel Authentication］*に移動します。
 
-   **/api/liferay/do** をクリックし、使用している追加のIPアドレスを ［**Host Allowed**］ フィールドに挿入します。 完了したら、 ［**Update**］ をクリックします。
+   */api/liferay/do*をクリックし、使用している追加のIPアドレスを*［Host Allowed］*フィールドに挿入します。 完了したら、*［Update］*をクリックします。
 
    ![コントロールパネルからリモートインスタンスのトンネル認証検証設定を更新します。](./configuring-remote-live-staging/images/01.png)
 
    ```{note}
-   各Liferayサーバーのトンネリングサーブレットの [認証検証](../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md) が有効になっていることを確認してください（デフォルトで有効になっています）。
+   各Liferayサーバーのトンネリングサーブレットの[認証検証](../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md)が有効になっていることを確認してください（デフォルトで有効になっています）。
    ```
 
    または、次の構成をLiferayインスタンスのOSGiファイルに書き込むこともできます（例 ：`osgi/configs/com.liferay.portal.security.auth.verifier.tunnel.module.configuration.TunnelAuthVerifierConfiguration-default.config`）。
@@ -68,47 +66,45 @@
 リモートステージング環境にパッチを適用する場合は、すべてのサーバーにパッチを適用する必要があります。 サーバー間でパッチレベルが異なることは適切ではなく、インポートの失敗やデータの破損につながる可能性があります。 リモートステージングが正しく機能するようにするには、すべてのサーバーを同じパッチレベルに更新することが不可欠です。
 ```
 
-<a name="setting-up-remote-live-staging" />
-
 ## リモート本番環境ステージングの設定
 
 Liferayサーバーの準備ができたら、次の手順に従ってサイトまたはアセットライブラリのリモート本番環境ステージングを設定します。
 
 1. サイトまたはアセットライブラリでステージングアプリケーションを開きます。
 
-   サイトの場合は、 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) &rarr; ［**公開設定**］ &rarr; ［**ステージング**］ に移動します。
+   サイトの場合は、*サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) &rarr; *［公開設定］* &rarr; *［ステージング］*に移動します。
 
-   アセットライブラリの場合は、 **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; ［**Applications］タブ** &rarr; ［**アセットライブラリ**］ に移動します。 目的のアセットライブラリを開き、［公開設定］の下の ［**ステージング**］ をクリックします。
+   アセットライブラリの場合は、*グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *［Applications］タブ* &rarr; *［アセットライブラリ］*に移動します。 目的のアセットライブラリを開き、［公開設定］の下の*［ステージング］*をクリックします。
 
-1. ［**Remote Live**］ を選択します。 追加の設定フィールドが表示されます。
+1. *［Remote Live］*を選択します。 追加の設定フィールドが表示されます。
 
-   ![ [リモート本番環境ステージング]を選択します。](./configuring-remote-live-staging/images/02.png)
+   ![[リモート本番環境ステージング]を選択します。](./configuring-remote-live-staging/images/02.png)
 
 1. 次のリモート本番環境接続の詳細を入力します。
 
-   **リモートホスト/IP** ：リモートサーバーのIPアドレスを ［**リモートホスト/IP**］ フィールドに入力します。 これは、`portal-ext.properties`ファイルで指定した`tunnel.servlet.hosts.allowed`プロパティと一致する必要があります。
+   **リモートホスト/IP**：リモートサーバーのIPアドレスを*［リモートホスト/IP］*フィールドに入力します。 これは、`portal-ext.properties`ファイルで指定した`tunnel.servlet.hosts.allowed`プロパティと一致する必要があります。
 
-   **リモートポート** ：リモートDXPインスタンスのポートを ［**リモートポート**］ フィールドに入力します。
+   **リモートポート**：リモートDXPインスタンスのポートを*［リモートポート］*フィールドに入力します。
 
-   **リモートパスコンテクスト** ： **リモートパスコンテクスト** を入力します。 これは、ルート以外のポータルサーブレットコンテクストパスがリモートLiferayサーバーで使用されている場合にのみ必要です。 このコンテキストへのアクセスは、プロキシまたはファイアウォールによってブロックされてはなりません。
+   **リモートパスコンテクスト**：*リモートパスコンテクスト*を入力します。 これは、ルート以外のポータルサーブレットコンテクストパスがリモートLiferayサーバーで使用されている場合にのみ必要です。 このコンテキストへのアクセスは、プロキシまたはファイアウォールによってブロックされてはなりません。
 
-   **リモートサイトID** / **リモートアセットライブラリID** ：目的のターゲットの **サイトID** / **アセットライブラリID** を入力します。
+   **リモートサイトID**/**リモートアセットライブラリID**：目的のターゲットの*サイトID*/*アセットライブラリID*を入力します。
 
    ```{note}
    IPv6アドレスを構成する場合は、*リモートホスト/IP*フィールドに入力するときに角かっこを含める必要があります（例：[0:0:0:0:0:0:0:1]）。
 
-   リモートサーバーがクラスターの場合は、リモートホスト/IPをクラスターの負荷分散されたIPアドレスに設定して、公開設定プロセスの可用性を高めることができます。 詳細については、 [Configuring Remote Staging in a Clustered Environment](https://help.liferay.com/hc/ja/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment) を参照してください。
+   リモートサーバーがクラスターの場合は、リモートホスト/IPをクラスターの負荷分散されたIPアドレスに設定して、公開設定プロセスの可用性を高めることができます。 詳細については、[Configuring Remote Staging in a Clustered Environment](https://help.liferay.com/hc/en-us/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment)を参照してください。
    ```
 
 1. ステージングから本番環境にページを公開するために安全なネットワーク接続（つまりHTTPS）を使用するかどうかを決定します。
 
 1. サイトまたはアセットライブラリに使用されるリモートURLを手動で定義するかどうかを決定します。
 
-1. （サイトの場合のみ）［**ページバージョニング**］ をパブリックページまたはプライベートページ、あるいはその両方で有効にするかどうかを選択します。
+1. (サイトのみ) *Page Versioning* を有効にするかどうかを選択します。
 
-   ![ページバージョニングをプライベートページセットとパブリックページセットで有効にします。](./configuring-remote-live-staging/images/03.png)
+   ![ページのバージョニングを有効にする。](./configuring-local-live-staging/images/03.png)
 
-1. ステージングする **データ** および **コンテンツ** のタイプを選択します。
+1. ステージングする*データ*と*コンテンツ*のタイプを選択します。
 
    アセットライブラリは、ドキュメントとメディア、およびWebコンテンツアプリケーションのステージングデータのみをサポートしています。
 
@@ -117,18 +113,16 @@ Liferayサーバーの準備ができたら、次の手順に従ってサイト�
    ![ステージングするデータとコンテンツのタイプを選択します。](./configuring-remote-live-staging/images/04.png)
 
    ```{warning}
-   アプリケーションをチェックすると、そのデータがコピーされ、本番環境のサイトで直接編集できない場合があります。 アプリケーションのチェックを外す場合は、ステージングでの変更が失われる可能性があるため、まずステージングでの変更が公開されていることを確認してください。 詳細については、 [ステージングでのデータとコンテンツタイプの管理](./managing-data-and-content-types-in-staging.md) を参照してください。
+   アプリケーションをチェックすると、そのデータがコピーされ、本番環境のサイトで直接編集できない場合があります。 アプリケーションのチェックを外す場合は、ステージングでの変更が失われる可能性があるため、まずステージングでの変更が公開されていることを確認してください。 詳細については、[Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md)を参照してください。
    ```
 
-1. ［**保存**］ をクリックして、ステージングプロセスを開始します。 このプロセスの時間は、サイトまたはアセットライブラリのサイズによって異なります。
+1. *［保存］*をクリックして、ステージングプロセスを開始します。 このプロセスの時間は、サイトまたはアセットライブラリのサイズによって異なります。
 
    ```{note}
    リモート本番環境のステージングを有効にしようとして失敗した場合は、サーバーが適切に準備されていることを確認してください。
    ```
 
-プロセスが完了すると、リモート本番環境ステージングを使用する準備が整います。 ステージング環境の公開機能のナビゲートについては、 [サイトステージングUIリファレンス](./site-staging-ui-reference.md) を参照してください。
-
-<a name="remote-live-staging-permissions" />
+プロセスが完了すると、リモート本番環境ステージングを使用する準備が整います。 ステージング環境の公開機能のナビゲートについては、[Site Staging UI Reference](./site-staging-ui-reference.md)を参照してください。
 
 ## リモート本番環境ステージングの権限設定
 
@@ -136,9 +130,7 @@ Liferayサーバーの準備ができたら、次の手順に従ってサイト�
 
 ローカルユーザーにステージングから本番環境への変更を公開する権限を与えるには、リモートサーバー上のユーザーに対して同一の権限を持つ同一のユーザーアカウントを作成します。
 
-このプロセスを簡素化するために、LDAPを使用して、選択したユーザーアカウントをローカルサーバーからリモートサーバーにコピーできます。 詳細は、 [LDAPディレクトリへの接続](../../../users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) を参照してください。
-
-<a name="configuring-remote-stagings-buffer-size" />
+このプロセスを簡素化するために、LDAPを使用して、選択したユーザーアカウントをローカルサーバーからリモートサーバーにコピーできます。 詳細は、[Connecting to an LDAP Directory](../../../users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)を参照してください。
 
 ## リモートステージングのバッファサイズの設定
 
@@ -149,8 +141,6 @@ staging.remote.transfer.buffer.size
 ```
 
 このプロパティは、リモートステージングのファイルブロックサイズを設定します。 リモートステージングに使用されるLARファイルがこのサイズを超える場合、ファイルは送信前に複数のファイルに分割されてから、リモートサーバーで再構築されます。 デフォルトのバッファサイズは10メガバイトです。
-
-<a name="disabling-remote-live-staging" />
 
 ## リモート本番環境ステージングの無効化
 
@@ -166,13 +156,11 @@ staging.remote.transfer.buffer.size
 
 1. サイトまたはアセットライブラリでステージングアプリケーションを開きます。
 
-1. アプリケーションバーの **アクション** ボタン（![Actions button](../../../images/icon-actions.png)）をクリックし、 ［**Staging Configuration**］ を選択します。
+1. アプリケーションバーの*アクション*ボタン（![Actions button](../../../images/icon-actions.png)）をクリックし、*［Staging Configuration］*を選択します。
 
    ![アプリケーションバーのアクションボタンをクリックし、［ステージング設定］を選択します](./configuring-remote-live-staging/images/05.png)
 
-1. ステージング設定で ［**None**］ を選択し、 ［**保存**］ をクリックします。
-
-<a name="additional-information" />
+1. ステージング設定で*［None］*を選択し、*［保存］*をクリックします。
 
 ## 追加情報
 

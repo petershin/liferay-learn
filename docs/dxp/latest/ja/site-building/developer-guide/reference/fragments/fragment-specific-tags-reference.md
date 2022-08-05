@@ -33,8 +33,6 @@
 Liferay Portal 7.3 GA3 および Liferay DXP 7.3 以降は、編集可能な要素を`lfr-editable`タグでラップするのではなく、`data-lfr-editable*`属性を使用して要素を編集可能として定義できます。 古いタグは下位互換性のために引き続き機能しますが、Portal 7.3 GA3 以降または Liferay DXP 7.3 を実行している場合は、より記述しやすい新しいデータ属性を使用することをお勧めします。
 ```
 
-<a name="making-text-editable" />
-
 ## テキストを編集可能にする
 
 image 要素に `data-lfr-editable-type="text"` 属性を含めることで、フラグメント テキストを編集可能にできます。 例を以下に示します。 `data-lfr-editable-id` は一意の ID である必要があります。
@@ -81,8 +79,6 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 HTML 要素内のテキストを編集可能にしたい場合は、`rich-text` タイプを使用する必要があります。 `text`タイプは、レンダリング前にテキストから HTML フォーマットを取り除きます。
 ```
 
-<a name="making-images-editable" />
-
 ## 画像を編集可能にする
 
 画像はテキストと同じ `data-lfr-editable-type` 属性を使用しますが、 `image` タイプを使用すると、次のようになります。
@@ -118,9 +114,7 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 </div>
 ```
 
-コンテンツ マッピングは、フラグメント内の編集可能なフィールドを、Web コンテンツやブログなどのアセット タイプのフィールドに接続します。 たとえば、画像フィールドをマップして、Web コンテンツ記事のプレビュー画像を表示できます。 マッピングフィールドの詳細については、 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) を参照してください。
-
-<a name="creating-editable-links" />
+コンテンツ マッピングは、フラグメント内の編集可能なフィールドを、Web コンテンツやブログなどのアセット タイプのフィールドに接続します。 たとえば、画像フィールドをマップして、Webコンテンツ記事のプレビュー画像を表示できます。 マッピングフィールドの詳細については、[Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)を参照してください。
 
 ## 編集可能なリンクの作成
 
@@ -149,9 +143,7 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 
 ![リンクの外観と動作を定義するためのオプションがいくつかあります。](./fragment-specific-tags-reference/images/03.png)
 
-編集可能なリンクの詳細は、 [Editable Links](../../../creating-pages/page-fragments-and-widgets/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を参照してください。
-
-<a name="creating-editable-html" />
+編集可能なリンクの詳細は、[Editable Links](../../../creating-pages/page-fragments-and-widgets/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を参照してください。
 
 ## 編集可能な HTML の作成
 
@@ -171,11 +163,9 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 </lfr-editable>
 ```
 
-<a name="including-widgets-within-a-fragment" />
-
 ## フラグメント内にウィジェットを含める
 
-ウィジェットを含めるには、その登録名を知っている必要があります。 たとえば、サイトナビゲーションメニューのポートレットは `nav` として登録されています。 登録された各ポートレットには、それを埋め込むために使用される `lfr-widget-[name]` タグがあります。 たとえば、ナビゲーションメニューのタグは `<lfr-widget-nav />` です。 次のようにブロックに埋め込むことができます。
+各ウィジェットには、登録名とそれに対応する `lfr-widget-[name]` タグがあり、フラグメントに埋め込むために使用する必要があります。 例えば、メニュー表示ウィジェットは `nav`として登録されているため、そのタグは `<lfr-widget-nav />`となります。 次のようにブロックに埋め込むことができます。
 
 ```html
 <div class="nav-widget">
@@ -186,26 +176,24 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 
 埋め込み可能なウィジェットとそれに付随するタグは次のとおりです。
 
-| ウィジェット名           | タグ                                     |
-| ----------------- | -------------------------------------- |
-| DDL表示             | `<lfr-widget-dynamic-data-list>` |
-| フォーム              | `<lfr-widget-form>`              |
-| アセットパブリッシャー       | `<lfr-widget-asset-list>`        |
-| パンくずリスト           | `<lfr-widget-breadcrumb>`        |
-| カテゴリナビゲーション       | `<lfr-widget-categories-nav>`    |
-| Flash             | `<lfr-widget-flash>`             |
-| メディアギャラリー         | `<lfr-widget-media-gallery>`     |
-| ナビゲーションメニュー       | `<lfr-widget-nav>`               |
-| アンケート表示           | `<lfr-widget-polls>`             |
-| 関連するアセット          | `<lfr-widget-related-assets>`    |
-| サイトマップ            | `<lfr-widget-site-map>`          |
-| タグクラウド            | `<lfr-widget-tag-cloud>`         |
-| タグナビゲーション         | `<lfr-widget-tags-nav>`          |
-| Webコンテンツの表示       | `<lfr-widget-web-content>`       |
-| RSS パブリッシャー（廃止予定） | `<lfr-widget-rss>`               |
-| Iframe            | `<lfr-widget-iframe>`            |
-
-<a name="enabling-embedding-for-your-widget" />
+| ウィジェット名                          | タグ                                     |
+| -------------------------------- | -------------------------------------- |
+| DDL表示                            | `<lfr-widget-dynamic-data-list>` |
+| Form (Automatic Copy)            | `<lfr-widget-form>`              |
+| アセットバプリッシャー                      | `<lfr-widget-asset-list>`        |
+| パンくずリスト                          | `<lfr-widget-breadcrumb>`        |
+| Category Filter (Automatic Copy) | `<lfr-widget-categories-nav>`    |
+| Flash                            | `<lfr-widget-flash>`             |
+| メディアギャラリー                        | `<lfr-widget-media-gallery>`     |
+| メニュー表示                           | `<lfr-widget-nav>`               |
+| アンケート                            | `<lfr-widget-polls>`             |
+| 関連するアセット                         | `<lfr-widget-related-assets>`    |
+| サイトマップ                           | `<lfr-widget-site-map>`          |
+| タグクラウド                           | `<lfr-widget-tag-cloud>`         |
+| タグフィルター                          | `<lfr-widget-tags-nav>`          |
+| Webコンテンツの表示                      | `<lfr-widget-web-content>`       |
+| RSS パブリッシャー（廃止予定）                | `<lfr-widget-rss>`               |
+| Iframe                           | `<lfr-widget-iframe>`            |
 
 ### ウィジェットの埋め込みを有効にする
 
@@ -223,10 +211,8 @@ com.liferay.fragment.entry.processor.portlet.alias=app-name
 ```
 
 ```{note}
-W3C HTML 標準によると、カスタム要素は自己終了できません。 したがって、開始と終了 [](lfr-widget...) のタグの間に何かを追加することはできませんが、タグに自己終了表記を使用することはできません。
+W3C HTML 標準によると、カスタム要素は自己終了できません。 したがって、開始と終了 `<lfr-widget...>`のタグの間に何かを追加することはできませんが、タグに自己終了表記を使用することはできません。
 ```
-
-<a name="localizing-fragment-configurations" />
 
 ## フラグメント設定のローカライズ
 
@@ -275,7 +261,7 @@ W3C HTML 標準によると、カスタム要素は自己終了できません�
   }
 ```
 
-このサンプルコードを使うと、ページのターゲット言語に応じてボタンの種類を変更することができます。 次の例では、 **Contact Us** / **Contacto** ボタンフラグメントは`buttonType`フィールドの`ローカライズ可能な`属性を`true`に設定します。 この例では、この属性を使って、ページがen-US言語を使う場合(A)には **Primary** ボタンタイプを、ページがes-ESを使う場合(B)には **Outline Primary** タイプを設定します。
+このサンプルコードを使うと、ページのターゲット言語に応じてボタンの種類を変更することができます。 次の例では、 _Contact Us_/_Contacto_ボタンフラグメントは`buttonType`フィールドの`ローカライズ可能な`属性を`true`に設定します。 この例では、この属性を使って、ページがen-US言語を使う場合(A)には _Primary_ボタンタイプを、ページがes-ESを使う場合(B)には _Outline Primary_ タイプを設定します。
 
 ![フラグメントのローカライズ可能な要素には、一般タブにフラグのアイコンが表示され、言語ごとに異なる設定をサポートします。](./fragment-specific-tags-reference/images/04.png)
 
@@ -284,8 +270,6 @@ W3C HTML 標準によると、カスタム要素は自己終了できません�
 ```
 
 `ローカライズ可能な` 属性を持つフラグメントで、言語のカスタム設定を指定しない場合、デフォルトのページ言語の設定が使用されます。
-
-<a name="additional-information" />
 
 ## 追加情報
 

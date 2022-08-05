@@ -2,6 +2,7 @@
 toc:
 - ./page-fragments-and-widgets/using-fragments/.md
 ---
+
 # ページフラグメントとウィジェット
 
 ```{toctree}
@@ -9,9 +10,7 @@ toc:
 
 page-fragments-and-widgets/using-fragments/.md
 ```
-
 <!--TASK: Develop into-->
-
 Liferayは、サイトページとページテンプレートを構築するためのページフラグメントとウィジェットを提供します。
 
 ```{note}

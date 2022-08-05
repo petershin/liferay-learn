@@ -8,6 +8,7 @@ toc:
 - ./sharing-forms-and-managing-submissions/enabling-captcha-on-form-submissions.md
 - ./sharing-forms-and-managing-submissions/redirecting-users-on-form-submission.md
 ---
+
 # フォームの共有と送信数の管理
 
 ```{toctree}

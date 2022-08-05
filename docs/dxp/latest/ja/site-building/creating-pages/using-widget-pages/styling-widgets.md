@@ -5,6 +5,7 @@ toc:
 - ./styling-widgets/using-a-widget-template-example.md
 - ./styling-widgets/setting-a-default-widget-template.md
 ---
+
 # ウィジェットのスタイリング
 
 ```{toctree}

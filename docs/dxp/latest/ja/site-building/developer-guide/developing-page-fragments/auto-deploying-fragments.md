@@ -1,26 +1,23 @@
 # フラグメントの自動デプロイ
 
-> 利用可能：Liferay Portal 7.3GA1+およびLiferayDXP7.3+
+> 利用可能: Liferay Portal 7.3 GA1以降および Liferay DXP 7.3以降
 
-[独自のツールを使用してページフラグメントを開発している](./using-the-fragments-toolkit.md#fragment-set-structure) 場合は、Liferay UI を介してインポートできるように、それらを ZIP ファイルにパッケージ化することでデプロイできます。 ただし、UI の使用に限定されません。 コマンドラインからフラグメント ZIP ファイルをデプロイすることもできます。 ここでは、フラグメントプロジェクトを操作し、Liferay の自動デプロイメカニズムを使用してコマンドラインからフラグメントを必要なサイトにインポートする方法を学びます。
+[独自のツールを使用してページフラグメントを開発している](./using-the-fragments-toolkit.md#fragment-set-structure)場合は、Liferay UI を介してインポートできるように、それらを ZIP ファイルにパッケージ化することでデプロイできます。 ただし、UI の使用に限定されません。 コマンドラインからフラグメント ZIP ファイルをデプロイすることもできます。 ここでは、フラグメントプロジェクトを操作し、Liferay の自動デプロイメカニズムを使用してコマンドラインからフラグメントを必要なサイトにインポートする方法を学びます。
 
 ```{note}
 Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay UIではフラグメントセットと呼ばれます。
 ```
 
-<a name="deploy-an-auto-deployable-fragment-set" />
-
 ## 自動デプロイ可能なフラグメントセットをデプロイする
-
-```{include} /_snippets/run-liferay-dxp.md
+```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順を実行します。
+Then, follow these steps to auto-deploy an example Fragment Set:
 
-1. [サンプルの自動デプロイ可能なフラグメントセット](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip) をダウンロードして解凍します。
+1. Download and unzip the [example auto-deployable Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip):
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O
     ```
 
     ```bash
@@ -49,15 +46,13 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:263] Processing a2f8-fragments.zip
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
 
 ```{note}
 インポートされたフラグメントに無効なルールがある場合、ドラフトとして自動的に保存されます。
 ```
 
 ![セットが利用可能です。](./auto-deploying-fragments/images/01.png)
-
-<a name="fragment-project-structure" />
 
 ## フラグメントプロジェクトのストラクチャー
 
@@ -99,8 +94,6 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 フラグメントツールキット[npm run compress command](./using-the-fragments-toolkit.md) を使用すると、フラグメント ZIP ファイルとそのデプロイメント記述子の作成が容易になります。
 ```
 
-<a name="modify-the-fragment-set-and-redeploy" />
-
 ## フラグメントセットを変更して再デプロイする
 
 フラグメントセットを変更して再デプロイするには、次の手順に従います。
@@ -119,13 +112,11 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
    docker cp a2f8-fragments.zip $(docker ps -lq):/opt/liferay/deploy
    ```
 
-1. 新しいフラグメントを確認します。 ［**サイトメニュー**］(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動し、 ［**A2F8セット**］ をクリックします。 A2F8ジャンボトロンフラグメントが含まれているはずです。
+1. 新しいフラグメントを確認します。 *［サイトメニュー］* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動し、*［A2F8セット］*をクリックします。 A2F8ジャンボトロンフラグメントが含まれているはずです。
 
     ![新しいフラグメントは、自動デプロイされたセットに含まれます。](./auto-deploying-fragments/images/02.png)
 
 これで、ローカルでフラグメントセットを操作する方法、フラグメントセットにサイトを指定する方法、自動デプロイメントを使ってフラグメントセットをインポートする方法がわかりました。
-
-<a name="additional-information" />
 
 ## 追加情報
 

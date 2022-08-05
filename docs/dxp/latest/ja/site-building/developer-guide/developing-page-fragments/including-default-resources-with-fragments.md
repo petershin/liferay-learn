@@ -6,19 +6,16 @@
 Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay UIではフラグメントセットと呼ばれます。
 ```
 
-<a name="import-a-fragment-set-with-resources" />
-
 ## リソースとともにフラグメント セットをインポートする
-
-```{include} /_snippets/run-liferay-dxp.md
+```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、フラグメント セットのサンプルをインポートして、フラグメント リソースがどのように機能するかを確認します。
+Then, follow these steps to import an example Fragment Set to see how Fragment resources work:
 
-1. [サンプルのリソースフラグメントセット](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip) をダウンロードして解凍します。
+1. Download and unzip the [example resources Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip):
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O
     ```
 
     ```bash
@@ -62,15 +59,13 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     Project Imported
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 ブラウザで`https://localhost:8080`にアクセスし、画面左側のサイトメニューで、 [**デザイン**] &rarr; [**フラグメント**] に移動します。 I6R3セットが他のフラグメントセットと一緒に表示されるはずです。
+1. フラグメントセットが利用可能であることを確認します。 ブラウザで`https://localhost:8080`にアクセスし、画面左側のサイトメニューで、*［デザイン］* &rarr; *［フラグメント］*に移動します。 I6R3セットが他のフラグメントセットと一緒に表示されるはずです。
 
-1. ［**I6R3 セット**］ をクリックします。
+1. *［I6R3 セット］*をクリックします。
 
-1. [**Resources**] タブをクリックします。 `books.png` 画像がリソース リストに表示されます。
+1. *［Resources］*タブをクリックします。 `books.png` 画像がリソースリストに表示されます。
 
     ![リソースはフラグメントセットで使用できます。](./including-default-resources-with-fragments/images/01.png)
-
-<a name="fragment-set-structure-with-resources" />
 
 ## リソースを含むフラグメントセットストラクチャー
 
@@ -103,8 +98,6 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 `img[src="[resources:image-name.extension]"]` という構文を使用して、CSS で画像リソースのスタイルを設定できます。
 ```
 
-<a name="include-a-new-resource" />
-
 ## 新しいリソースを含める
 
 フラグメントにリソースを組み込んで参照する方法がわかったので、サンプルのフラグメント セットで新しいリソースを使用できます。
@@ -117,11 +110,11 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     yarn run import
     ```
 
-1. フラグメントセットにリソースが含まれていることを確認します。 UI の ［**Fragments**］ ページで、 ［**I6R3 セット**］ を選択し、 ［**Resources**］ タブをクリックします。 新しい画像がリソース リストに表示されるはずです。
+1. フラグメントセットにリソースが含まれていることを確認します。 UI の *［Fragments］* ページで、 *［I6R3 セット］* を選択し、*［Resources］* タブをクリックします。 新しい画像がリソース リストに表示されるはずです。
 
     ![新しい画像がセットのリソースリストに表示されることを確認します。](./including-default-resources-with-fragments/images/03.png)
 
-1. セットの ［**Fragments**］ タブを選択してから ［**I6R3 カード**］ フラグメントをクリックして、 ［**I6R3 カード**］ フラグメントを開きます。 フラグメント ソースがフラグメント エディターに表示されます。
+1. セットの *［Fragments］* タブを選択してから *［I6R3 カード］* フラグメントをクリックして、*［I6R3 カード］* フラグメントを開きます。 フラグメント ソースがフラグメント エディターに表示されます。
 
 1. 新しい画像リソースを使用するようにフラグメントを更新します。 `img` 要素の `src="[resources:books.png]"` 属性から `book.png` を削除し、`src="[resources:` の後に新しい画像ファイルの名前を入力します。 画像ファイル名の属性値がカーソルの下に表示されます。 その属性値を選択します。
 
@@ -136,8 +129,6 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 ```
 
 これで、画像リソースのフラグメント セットの使用方法がわかりました。
-
-<a name="related-information" />
 
 ## 関連情報
 

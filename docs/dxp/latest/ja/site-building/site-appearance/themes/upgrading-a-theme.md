@@ -2,8 +2,6 @@
 
 以前のバージョンのLiferay DXP用に開発されたテーマは、新しいバージョンにデプロイするためにアップグレードする必要があります。 `gulp upgrade`タスクを実行すると、Liferayバージョンの参照とテーマの依存関係が更新されます。 これにより、テーマを新しいバージョンのLiferayにデプロイできます。
 
-<a name="prerequisites" />
-
 ## 前提条件
 
 Liferayテーマジェネレーターは、アップグレードタスクを実行するために使用されます。 インストールしていない場合は、次のコマンドを使用してインストールしてください。
@@ -17,8 +15,6 @@ npm install -g generator-liferay-theme@10.x.x
 ```bash
 npm install -g yo gulp
 ```
-
-<a name="running-the-upgrade-task" />
 
 ## アップグレードタスクの実行
 
@@ -39,6 +35,13 @@ gulp upgrade
 ```
 ? We recommend creating a backup of your theme files before proceeding. Are you 
 sure you wish to start the upgrade process?
+```
+
+**Liferay 7.4**にアップグレードする場合、Bootstrap 3から4への互換性レイヤーを追加するかどうかを尋ねる別のプロンプトが表示されます。 Bootstrap 3との互換性が必要なテーマの場合は、「y」（または「yes」）を入力し、確認のための警告が表示されたら再度入力してください。 Bootstrap 3との互換性が必要ない場合は、「n」（または「no」）と入力してください。
+
+```
+? Would you like to add the Bootstrap 3 to 4 compatibility layer? Yes
+? Bootstrap 3 to 4 compatibility layer is for DXP 7.4 GA1 and we cannot garauntee it working with future releases of Liferay DXP. 確認する?
 ```
 
 コンソールのメッセージで、アップグレードタスクが完了したことを確認します。

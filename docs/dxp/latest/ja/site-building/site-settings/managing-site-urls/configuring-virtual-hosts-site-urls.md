@@ -1,33 +1,36 @@
 # バーチャルホストのサイトURLの設定
 
-バーチャルホストは、ドメイン名（つまり、`www.my-site.com`）をサイトに接続します。 これは、完全なドメインまたはサブドメイン（たとえば、`developers.my-site.com`）にできます。 これを使用して、1つのLiferay DXPサーバー上で複数のWebサイトを個別のサイトとしてホストできます。 次の手順に従って、バーチャルホストのサイトURLを設定します。
+バーチャルホストは、ドメイン名（つまり、`www.helloworld.com`）をサイトに接続します。 これは、完全なドメインまたはサブドメイン（たとえば、`developers.helloworld.com`）にできます。 これを使用して、1つのLiferay DXPサーバー上で複数のWebサイトを個別のサイトとしてホストできます。 次の手順に従って、バーチャルホストのサイトURLを設定します。
 
-1. プロバイダーで、Liferay DXPインスタンスのIPアドレスを指すようにDNS名を設定します（例：`developers.my-site.com`）。 <!-- I think we can take this .5 step further by either linking to a often cited resource on how on a common domain name provider, a user would update the DNS name to point to a particular IP address. -->
-1. Liferay DXP内で、プロダクトメニューを開き、サイトメニューの ［**Configuration**］ &rarr; ［**Settings**］ に移動します。
-1. ［一般］タブで、［Site URL］パネルを展開します。
+1. プロバイダーで、Liferay DXP インスタンスの IP アドレスを指すように DNS 名を設定します。 <!-- I think we can take this .5 step further by either linking to a often cited resource on how on a common domain name provider, a user would update the DNS name to point to a particular IP address. -->
 
-    ![バーチャルホストを設定する場合、サイトの公開ページと非公開ページを異なるドメインに設定できます。](./configuring-virtual-hosts-site-urls/images/01.png)
+1. Liferay DXP 内で Site Menu (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *Configuration*を展開し、 *Site Settings* &rarr; *Site Configuration* &rarr; *Site URL*に進みます。
 
-1. 開発者サイトの公開ページまたは非公開ページの入力で、ドメインまたはサブドメインを指すようにURLを設定します（例： `http://developers.my-site.com`）。
+   ![サイト構成]の[サイトのURL]に移動します。](./configuring-virtual-hosts-site-urls/images/01.png)
 
-    ```{note}
-    **Liferay 7.3 GA2以降**、オプションで*言語*セレクターからサイトのデフォルトロケールを選択できます。 たとえば、サイトの翻訳ごとにドメインがある場合（たとえば、`unchien.ca`と`adog.ca`）、各ドメインの公開ページと非公開ページにバーチャルホストを追加し、それぞれのデフォルトロケールを指定できます。
-    ```
+1. *バーチャルホスト* フィールドに希望のドメインまたはサブドメインを入力します（例： `www.helloworld.com`, `http://developers.helloworld.com`)。
 
-      ![バーチャルホストを特定のロケールに指定できます。](./configuring-virtual-hosts-site-urls/images/02.png)
+   ![バーチャルホストを特定のロケールに指定できます。](./configuring-virtual-hosts-site-urls/images/02.png)
 
-    ```{note}
-    ロケールは、サイトで使用可能な言語に制限されます（定義されている場合）。 ロケールが指定されていない場合は、サイトのデフォルトのロケールが使用されます。 ロケールは、関連付けられているすべてのドメインのサイトに適用されます。
-    ```
+   ```{important}
+   ドメインは単一のサイトにのみ適用できます。 1つのドメインを複数のサイトにマッピングすることはできません。
+   ```
 
-1. **Liferay 7.3 GA2以降** では、複数のドメインを持っている場合、公開ページや非公開ページのURL入力の横にある`+`/`-`ボタンをクリックすると、そのページセットに新しいURLを追加したり、URLを削除したりできます。
+1. (オプション）Liferay 7.3 GA2 以降、バーチャルホストドメインを追加する場合は *Plus* ボタン(![Plus Button](../../../images/icon-plus.png))をクリックします。
 
-    ![複数のバーチャルホストを追加して、異なるドメインを指すようにすることができます。](./configuring-virtual-hosts-site-urls/images/03.png)
+1. (オプション）Liferay 7.3 GA2 以降は、各バーチャルホストの言語を選択します。 サイトの各翻訳にドメインがある場合、各ドメインにバーチャルホストを追加することができます。
 
-    ```{important}
-    ドメインは単一のサイトにのみ適用できます。 1つのドメインを複数のサイトにマッピングすることはできません。
-    ```
+   ```{note}
+   ロケールは、サイトで使用可能な言語に制限されます（定義されている場合）。 ロケールが指定されていない場合は、サイトのデフォルトのロケールが使用されます。 ロケールは、関連付けられているすべてのドメインのサイトに適用されます。
+   ```
 
-1. 変更を **保存** します。
+   ![複数のバーチャルホストを追加して、異なるドメインを指すようにすることができます。](./configuring-virtual-hosts-site-urls/images/03.png)
+
+1. *［保存］* をクリックします。
 
 これで、設定済みのドメインを使用してサイトにアクセスできるようになりました。
+
+## 追加情報
+
+* [サイトのフレンドリURLを設定する](./configuring-your-sites-friendly-url.md)
+* [リダイレクションツールの使用](./using-the-redirection-tool.md)

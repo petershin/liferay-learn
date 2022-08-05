@@ -2,11 +2,9 @@
 
 > 対応可能：Liferay DXP/Portal 7.3以降
 
-スタイルブックには、テーマごとに定義されたさまざまなカテゴリにグループ化されたオプションがあります。 各オプションは **トークン** で定義されます。 1つのテーマに対して定義されたすべてのトークンのコレクションが **トークン定義** です。
+スタイルブックには、テーマごとに定義されたさまざまなカテゴリにグループ化されたオプションがあります。 各オプションは*トークン*で定義されます。 1つのテーマに対して定義されたすべてのトークンのコレクションが*トークン定義*です。
 
-サイトの公開ページにテーマを割り当てると、そのテーマに含まれているトークン定義が、サイトのスタイルブックを作成するときに使用されます。
-
-<a name="defining-tokens-for-your-style-book" />
+サイトのページにテーマを割り当てると、そのテーマに含まれるトークン定義が、サイトのスタイルブックを作成する際に使用されます。
 
 ## スタイルブックのトークン定義
 
@@ -32,11 +30,13 @@
 }
 ```
 
-トークンのカテゴリごとに、`label`と`name`を定義します。 `label`値は言語キーとして解釈され、カテゴリのドロップダウンメニューのオプションとして表示されます。 <!-- Add link to article explaining localization when it is available. --> ### トークンセット
+トークンのカテゴリごとに、`label`と`name`を定義します。 `label`値は言語キーとして解釈され、カテゴリのドロップダウンメニューのオプションとして表示されます。 <!-- Add link to article explaining localization when it is available. -->
+
+### トークンセット
 
 各カテゴリはさらにトークンセットに整理されます。 トークンセットは、スタイルブックを編集しているときに表示される折りたたみ可能なオプションのグループに対応しています。
 
-たとえば、デフォルトの標準テーマを使用すると、 **ボタンプライマリ** トークンセット（**ボタン** カテゴリ内）には、標準のボタンの色オプションのすべてのトークンが含まれています。
+たとえば、デフォルトの標準テーマを使用すると、*ボタンプライマリ*トークンセット（*ボタン*カテゴリ内）には、標準のボタンの色オプションのすべてのトークンが含まれています。
 
 ![ボタンプライマリトークンセットには、標準テーマにおけるメインボタンのカスタマイズ可能な色がすべて含まれています。](./style-book-token-definitions/images/02.png)
 
@@ -124,8 +124,6 @@
 ]
 ```
 
-<a name="matching-css-variables-to-style-book-tokens" />
-
 ## CSS変数をスタイルブックトークンに一致させる
 
 トークンの定義を含む`frontend-token-definition.json`ファイルは、テーマモジュールフォルダの`src/WEB-INF/`フォルダになければなりません。 トークン定義で定義されたすべてのトークンは、CSSでテーマのスタイル（色、間隔、フォントなど）を表している必要があります。
@@ -165,8 +163,7 @@ body {
 `defaultValue`の値がトークン定義に含まれている場合、これは一致するCSS変数定義で定義されているデフォルト値と一致する必要があります。
 ```
 
-<a name="additional-information" />
-
 ## 追加情報
 
-* [スタイルブックを使用してサイトの外観を標準化する](../using-a-style-book-to-standardize-site-appearance.md) <!-- Add link to token definition tutorial when available -->
+* [Using a Style Book to Standardize Site Appearance](../using-a-style-book-to-standardize-site-appearance.md)
+<!-- Add link to token definition tutorial when available -->

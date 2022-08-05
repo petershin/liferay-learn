@@ -6,7 +6,10 @@
 
    page-settings/configuring-page-sets.md
    page-settings/configuring-individual-pages.md
+   page-settings/configuring-your-pages-friendly-url.md
    page-settings/updating-page-permissions.md
 
-.. include:: /site-building/creating-pages/page-settings/README.rst
-   :start-line: 2
+-  :doc:`/site-building/creating-pages/page-settings/configuring-page-sets`
+-  :doc:`/site-building/creating-pages/page-settings/configuring-individual-pages`
+-  :doc:`/site-building/creating-pages/page-settings/configuring-your-pages-friendly-url`
+-  :doc:`/site-building/creating-pages/page-settings/updating-page-permissions`

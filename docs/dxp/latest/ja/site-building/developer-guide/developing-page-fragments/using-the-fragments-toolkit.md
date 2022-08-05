@@ -6,8 +6,6 @@
 Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay UIではフラグメントセットと呼ばれます。
 ```
 
-<a name="setting-up-the-toolkit" />
-
 ## ツールキットの設定
 
 ツールキットには次のソフトウェアが必要です。
@@ -26,7 +24,7 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
 1. サンプルの JavaScript プロジェクトの ZIP ファイルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
     ```
 
     ```bash
@@ -44,8 +42,6 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
     ```
 
 スクリプトによって報告された満たしていない要件をすべて解決し、環境の準備が整ったと報告されるまでスクリプトを再実行してください。
-
-<a name="create-a-fragments-project" />
 
 ## フラグメント プロジェクトを作成する
 
@@ -112,18 +108,13 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
 
 ジェネレータは、プロジェクト名から派生したフォルダに各プロジェクトを作成します。 この例では、プロジェクト名を `Sample Liferay Fragments` としたので、ジェネレータは `sample-liferay-fragments`というプロジェクト フォルダを作成します。
 
-<a name="import-the-sample-fragment-set" />
-
 ## サンプルのフラグメントセットをインポートする
-
-フラグメントを表示するには、サンプルのフラグメント セットを Liferay にインポートします。
-
-```{include} /_snippets/run-liferay-dxp.md
+```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順を実行します。
+Then, follow these steps to import the sample Fragment Set to Liferay:
 
-1. プロジェクトのルートフォルダ（例：`sample-liferay-fragments`）で`yarn run import`コマンドを呼び出して、フラグメントセットをLiferayインスタンスにインポートします。  あるいは、[手動でフラグメントセットをインポート](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md)することもできます。
+1. Import the Fragment Set to your Liferay instance invoking the `yarn run import` command in the project's root folder (e.g., `sample-liferay-fragments`). Alternatively, you can [import the Fragment Set manually](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
 
     ```bash
     cd sample-liferay-fragments
@@ -153,7 +144,7 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
     Done in 21.43s.
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
 
     ![セットが利用可能です。](./using-the-fragments-toolkit/images/01.png)
 
@@ -166,8 +157,6 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
     ![React を使用したフラグメントのサンプルです。](./using-the-fragments-toolkit/images/02.png)
 
 フラグメントセットを正常にデプロイしました。
-
-<a name="fragment-set-structure" />
 
 ## フラグメントセットのストラクチャー
 
@@ -186,7 +175,7 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
 
 * `[fragment-name]/`: フラグメントのすべてのファイルを含むフォルダ。
 
-    * `configuration.json`(オプション): フラグメントの構成を定義する JSON ファイル。 詳細は、 [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md) を参照してください。
+    * `configuration.json`(オプション): フラグメントの構成を定義する JSON ファイル。 詳細は、[Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)を参照してください。
 
     * `fragment.json`: フラグメントを説明するテキスト ファイル。
 
@@ -209,11 +198,9 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
 
     * `styles.css`: フラグメントの CSS ソース。
 
-* `resources/` (オプション): フラグメントが必要とする追加の画像またはファイルを含むフォルダ。 詳細は、 [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md) を参照してください。
+* `resources/` (オプション): フラグメントが必要とする追加の画像またはファイルを含むフォルダ。 詳細は、[Including Default Resources in Fragments](./including-default-resources-with-fragments.md)を参照してください。
 
 フラグメントツールキットを使用して、このストラクチャーを持つプロジェクトをすばやく作成できます。
-
-<a name="add-a-fragment-set-to-the-project" />
 
 ## プロジェクトにフラグメントセットを追加する
 
@@ -242,8 +229,6 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
         "name": "My Set"
     }
     ```
-
-<a name="create-a-new-fragment" />
 
 ## 新規フラグメントを作成する
 
@@ -284,7 +269,7 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
     ```
 
     ```{note}
-    Liferayの編集可能なデータ構文については、[フラグメント固有のタグと属性のリファレンス](../reference/fragments/fragment-specific-tags-reference.md) を参照してください。
+    Liferayの編集可能なデータ構文については、[Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md) を参照してください。
     ```
 
 1. 先ほど作成したフラグメントセットを選択します（`My Set`）。
@@ -297,7 +282,7 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
     ```
 
     ```{note}
-    `fragment.json` には、Fragment の CSS、HTML、JavaScript へのパスを定義します。 これらのファイル名のいずれかを変更した場合は、`fragment.json` 内のパスを更新してください。
+    `fragment.json` は、フラグメントのCSS、HTML、JavaScriptへのパスを定義します。 これらのファイル名のいずれかを変更した場合は、`fragment.json` 内のパスを更新してください。
     ```
 
 フラグメントの `index.html` は次のとおりです。
@@ -312,8 +297,6 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
 
 フラグメント HTML は、`data-lfr` の新しい編集可能な構文を使用します。
 
-<a name="edit-your-fragment" />
-
 ## フラグメントを編集する
 
 フラグメントの任意の部分を変更します。
@@ -323,7 +306,7 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
 * JavaScript (`main.js`)
 * [構成オプション](./adding-configuration-options-to-fragments.md) (`configuration.json`)
 
-たとえば、上記の HTML から構築し、 [Clay](https://clayui.com/) の [Bootstrap](https://getbootstrap.com/) ベースのコンポーネントを使用して、次の `index.html` に示すように、注目を集める見出しと説明を持つフラグメントを作成できます。
+たとえば、上記の HTML から構築し、[Clay](https://clayui.com/) の [Bootstrap](https://getbootstrap.com/) ベースのコンポーネントを使用して、次の `index.html` に示すように、注目を集める見出しと説明を持つフラグメントを作成できます。
 
 ```html
 <div class="component-my-jumbotron">
@@ -366,13 +349,13 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
 ```
 
 ```{note}
-Liferay 7.2以下を使用している場合は、[フラグメント固有のタグと属性のリファレンス](../reference/fragments/fragment-specific-tags-reference.md) にあるように、 `data-lfr-editable-[id|type]` 属性を削除してコンテンツ要素を `lfr-editable` 要素で囲んでください。
+Liferay 7.2以下を使用している場合は、[Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md) にあるように、 `data-lfr-editable-[id|type]` 属性を削除してコンテンツ要素を `lfr-editable` 要素で囲んでください。
 ```
 
 最初の `div` 要素の `class="component-my-jumbotron"` 属性は、ページ上のこのフラグメントを一意に識別しようとします。
 
 ```{tip}
-フラグメントのHTMLファイルでは、メインラッパー要素（上記の例では [](div) ）を使ってフラグメントを一意に識別し、ページ上の他のコンポーネントと衝突しないようにします。
+フラグメントのHTMLファイルでは、メインラッパー要素（上記の例では `<div>` ）を使ってフラグメントを一意に識別し、ページ上の他のコンポーネントと競合しないようにします。
 ```
 
 次に、 `<div class="jumbotron"/>` 要素がコンテンツをラップし、 [Bootstrap](https://getbootstrap.com/) のジャンボトロン コンポーネントを適用します。 このコンポーネントは、コンテンツを際立たせます。 コンテンツ要素は次のとおりです。
@@ -382,13 +365,11 @@ Liferay 7.2以下を使用している場合は、[フラグメント固有の�
 * `<hr/>` 要素と次の `<p ...` 要素は、それぞれ水平方向の罫線と別の編集可能な段落を生成します。
 * `<a class="btn btn-primary btn-lg" ...` は変更可能なリンクを指定します。 `btn-primary` クラスはそれをメイン ボタンとしてスタイル設定し、`btn-lg` はそれを拡大します。 `href="#"` 属性は、リンクをクリックしたときにユーザーをページの上部に移動します。 `data-lfr-editable-type="link"` 属性は、リンクを[編集可能](../reference/fragments/fragment-specific-tags-reference.md)にします。
 
-フラグメントにリソースを含めることもできます。 詳細は、 [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md) を参照してください。
+フラグメントにリソースを含めることもできます。 詳細は、[Including Default Resources in Fragments](./including-default-resources-with-fragments.md)を参照してください。
 
 ```{note}
 フラグメントと設定オブジェクトは JavaScript の引数として渡され、それぞれ `fragmentElement` と `configuration`パラメーターとして利用できます。
 ```
-
-<a name="import-your-new-fragment" />
 
 ## 新しいフラグメントをインポートする
 
@@ -400,13 +381,11 @@ Liferay 7.2以下を使用している場合は、[フラグメント固有の�
     yarn run import
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
 
 ![セットが利用可能です。](./using-the-fragments-toolkit/images/03.png)
 
-これで、フラグメント ツールキットを使用してフラグメントを作成および管理する方法がわかりました。 ツールキット コマンドの詳細は、 [フラグメントツールキットコマンドリファレンス](../reference/fragments/fragments-toolkit-command-reference.md) を参照してください。
-
-<a name="related-information" />
+これで、フラグメント ツールキットを使用してフラグメントを作成および管理する方法がわかりました。 ツールキット コマンドの詳細は、[Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md) を参照してください。
 
 ## 関連情報
 

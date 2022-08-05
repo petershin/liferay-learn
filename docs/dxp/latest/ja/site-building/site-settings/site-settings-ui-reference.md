@@ -1,14 +1,14 @@
 # サイト設定UIリファレンス
 
-> Liferay DXP 7.4では、サイト設定アプリケーションが大幅に変更されています。 以前のバージョンの詳細は、 [Liferay DXP7.2および7.3のサイト設定UIリファレンス ](#site-setting-ui-reference-in-liferay-dxp-7-2-and-7-3) を参照してください。
-
 Liferay DXP 7.4以降、サイト設定アプリケーションのレイアウトは、インスタンス設定やシステム設定などの他の設定エリアと一致しています。
 
-<a name="accessing-the-site-settings-application" />
+```{note}
+Liferay DXP 7.4では、サイト設定アプリケーションが大幅に変更されています。 以前のバージョンについては、下記の【Liferay DXP 7.2 および 7.3 におけるサイト設定 UI リファレンス】(#site-setting-ui-reference-in-liferay-dxp-7-2 and-7-3) をご覧ください。
+```
 
 ## サイト設定アプリケーションへのアクセス
 
-1. サイト管理rarr; ［**Configuration**］ &rarr; ［**Site Settings**］ へ行きます。
+1. サイト管理rarr; *［Configuration］ * &rarr; *［Site Settings］ *へ行きます。
 1. 設定項目をクリックすると、その設定が表示されます。
 
 以下のような設定エリアがあります。
@@ -20,8 +20,6 @@ Liferay DXP 7.4以降、サイト設定アプリケーションのレイアウ�
 
 ![サイト設定は4つのエリアに分かれています。](./site-settings-ui-reference/images/20.png)
 
-<a name="commerce" />
-
 ## コマース
 
 デフォルトでは、Commerceエリアには以下の設定が含まれています。
@@ -31,11 +29,9 @@ Liferay DXP 7.4以降、サイト設定アプリケーションのレイアウ�
 - 支払
 - 出荷先
 
-ここでは、サイトスコープでのCommerce設定を行うことができます。 コマースの設定の詳細は、 [のLiferay Commerce設定の概要](https://learn.liferay.com/commerce/latest/ja/store-administration/liferay-commerce-configuration-overview.html) を参照してください。
+ここでは、サイトスコープでのCommerce設定を行うことができます。 コマースの設定の詳細は、 [のLiferay Commerce設定の概要](https://learn.liferay.com/commerce/latest/en/store-management/liferay-commerce-configuration-overview.html)を参照してください。
 
 ![コマースのデフォルトサイト設定](./site-settings-ui-reference/images/21.png)
-
-<a name="platform" />
 
 ## プラットフォーム
 
@@ -48,8 +44,6 @@ Liferay DXP 7.4以降、サイト設定アプリケーションのレイアウ�
 - [サードパーティアプリケーション](#third-party-applications)
 - [ユーザー](#users)
 
-<a name="analytics" />
-
 ### 分析
 
 これらの設定を使用して、お客様のサイトのGoogle Analyticsオプションを設定します。 また、Piwik Analyticsのトラッキングコードを設定することもできます。
@@ -58,17 +52,13 @@ Liferay DXP 7.4以降、サイト設定アプリケーションのレイアウ�
 Piwikの設定では、スクリプトの開始タグと終了タグを含む完全なスクリプトコードを入力します。
 ```
 
-別のアナリティクスサービスが必要な場合は、追加できます。 異なるアナリティクスサービスのための追加フィールドを追加する方法については、 [新しいアナリティクスサービスの追加](./adding-a-new-analytics-service.md) を参照してください。
-
-<a name="localization" />
+別のアナリティクスサービスが必要な場合は、追加できます。 異なるアナリティクスサービスのための追加フィールドを追加する方法については、[Adding a New Analytics Service](./adding-a-new-analytics-service.md)を参照してください。
 
 ### ローカライズ
 
 ここでは、インストールのデフォルト言語オプションを使用するか、サイト用に独自の言語を定義するかを選択できます。 サイトの言語オプションの設定についての詳細は、 [サイトのローカライズ](../site-settings/site-localization.md)をご覧ください。
 
 ![サイトの言語オプションを設定するには、「ローカライズ」設定を使用します。](./site-settings-ui-reference/images/22.png)
-
-<a name="site-configuration" />
 
 ### サイト設定
 
@@ -80,24 +70,20 @@ Piwikの設定では、スクリプトの開始タグと終了タグを含む完
 |:---------------- |:--------------------------------------------------------------------------------------------------------------------------------------- |
 | サイトID            | サイトの作成時に自動的に生成される固有の番号。 このIDは永続的であり、変更できません。                                                                                            |
 | 説明               | このフィールドは、サイトの目的を説明するために使用します。                                                                                                           |
-| 親サイト             | 親サイトを選択して、子サイトとして指定する。 詳細は、[サイトの階層](../building-sites/site-hierarchies.md)を参照してください。                                                    |
+| 親サイト             | 親サイトを選択して、子サイトとして指定する。 詳細については、[Site Hierarchies](../sites/site-hierarchies.md)を参照してください。                                               |
 | メンバーシップタイプ       | サイトのメンバーシップをどの程度制限するかを決定します。 詳細は、[サイトのメンバーシップタイプを変更する](../site-settings/site-users/changing-site-membership-type.md)を参照してください。          |
 | 手動メンバーシップ管理を許可する | メンバーを手動でサイトに追加・削除することを許可するかどうかを決定します。 詳細は、[サイトのメンバーシップタイプを変更する](../site-settings/site-users/changing-site-membership-type.md)を参照してください。 |
 
 #### サイトURL
 
-| 設定           | 説明                                                                                                                                                                                |
-|:------------ |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| フレンドリURL     | サイトの公開・非公開に関わらず、カスタムURLを設定することができます。 詳細は、[サイトのフレンドリーURLの設定](../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)を参照してください。                                 |
-| 公開ページと非公開ページ | パブリックおよびプライベートのバーチャルホストを設定して、サイトのパブリックページおよびプライベートページにマッピングすることができます。 詳細は、 [仮想ホストサイトURLの設定](../site-settings/managing-site-urls/configuring-virtual-hosts-site-urls.md)を参照してください。 |
-
-<a name="third-party" />
+| 設定       | 説明                                                                                                                                                    |
+|:-------- |:----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| フレンドリURL | サイトページのカスタムURLを設定します。 詳細は、[サイトのフレンドリーURLの設定](../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)を参照してください。                    |
+| ページ      | サイトのページのフレンドリーなURLにマッピングするバーチャルホストを設定します。 詳細は、 [仮想ホストサイトURLの設定](../site-settings/managing-site-urls/configuring-virtual-hosts-site-urls.md)を参照してください。 |
 
 ### サードパーティー
 
-Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、 [Liferay Commerce Connector to PunchOut2Goのリファレンスのガイド](https://learn.liferay.com/commerce/latest/en/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide.html) を参照してください。
-
-<a name="third-party-applications" />
+Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、[Liferay Commerce Connector to PunchOut2Goのリファレンスのガイド](https://learn.liferay.com/commerce/latest/en/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide.html)を参照してください。
 
 ### サードパーティアプリケーション
 
@@ -106,19 +92,15 @@ Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、 [Lifera
 | セクション       | 説明                                                                                                                                                                                                                    |
 |:----------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | アセットの自動タグ付け | 有効にすると、インスタンススコープで構成されたプロバイダによってアセットが自動タグ付けされます。 詳細は、[アセットの自動タグ付けの設定](../../content-authoring-and-management/tags-and-categories/auto-tagging/configuring-asset-auto-tagging.md)を参照してください。                            |
-| カテゴリの設定     | このセクションでは、お客様のサイトを分類します。 この設定は、本サイトで利用可能なカテゴリーやタグには影響しません。 カテゴリとタグの使用の詳細は、[カテゴリとタグを使用したコンテンツの整理](../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md)を参照してください。 |
-
-<a name="users" />
+| カテゴリ設定      | このセクションでは、お客様のサイトを分類します。 この設定は、本サイトで利用可能なカテゴリーやタグには影響しません。 カテゴリとタグの使用の詳細は、[カテゴリとタグを使用したコンテンツの整理](../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md)を参照してください。 |
 
 ### ユーザー
 
 デフォルトでは、ユーザーセクションには「デフォルトユーザーの関連付け」の設定が含まれており、ここで新しいサイトメンバーのデフォルトのロールとチームを設定することができます。 詳細は、[サイトメンバーの役割とチームのデフォルトの設定](../site-settings/site-users/configuring-role-and-team-defaults-for-site-members.md)を参照してください。
 
-<a name="content-and-data" />
-
 ## コンテンツとデータ
 
-デフォルトでは、［コンテンツとデータ］エリアには以下の設定が含まれています。
+デフォルトでは、コンテンツとデータエリアには以下の設定が含まれています。
 
 - [アセット](#assets)
 - [チャット機能](#click-to-chat)
@@ -131,16 +113,12 @@ Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、 [Lifera
 - [報告](#reports)
 - [共有](#sharing)
 
-<a name="assets" />
-
 ### アセット
 
 | セクション                | 説明                                                                                                                                                                                                                                     |
 |:-------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 地図                   | サイト内でジオロカライズされたアセットを表示する際に使用するマップAPIプロバイダーを選択します。 ドキュメント、ウェブコンテンツの記事、DDLレコードなどに対して、ジオローカライズされたアセットを表示することができます。 詳しくは、 [Geo-locating Assets](../../content-authoring-and-management/tags-and-categories/geolocating-assets.md) をご覧ください。 |
 | Google Places API キー | Google Places API Keyを設定します。                                                                                                                                                                                                           |
-
-<a name="click-to-chat" />
 
 ### チャット機能
 
@@ -156,16 +134,12 @@ Liferay DXPは多くのライブサポートチャットプラットフォーム
 インスタンススコープでの設定によっては、サイトスコープでの設定を更新できない場合があります。 インスタンスの設定を確認するには、［サイトメニュー］ → ［コントロールパネル］ →［インスタンスの設定］→［コンテンツとデータ］→［チャット］をクリックしてください。
 ```
 
-<a name="community-tools" />
-
 ### コミュニティーツール
 
 | セクション             | 説明                                                                                                                                                                            |
 |:----------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 自分について書かれた記事/コメント | サイト内のアプリケーションで、ユーザーが他のユーザーに言及することを許可するかどうかを決定します。 詳しくは、 [メンションを設定する](../../collaboration-and-social/notifications-and-requests/user-guide/configuring-mentions.md) を参照してください。 |
 | 評価                | ここでは、さまざまなサイトアプリケーションに使用されるレーティングのタイプを選択できます。 詳しくは、 [コンテンツの評価タイプを設定する](../site-settings/site-content-configurations/configuring-content-rating-type.md) を参照してください。            |
-
-<a name="digital-signature" />
 
 ### デジタル署名
 
@@ -177,13 +151,9 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 インスタンススコープでのデジタル署名の構成によっては、サイトスコープでの構成を更新できない場合があります。 インスタンスの設定を確認するには、［サイトメニュー］ →［コントロールパネル］ →［インスタンスの設定］ →［コンテンツとデータ］→［デジタル署名］と進みます。 
 ```
 
-<a name="documents-and-media" />
-
 ### ドキュメントとメディア
 
 有効にすると、表示権限を持つユーザーがサイトのドキュメントライブラリファイルとフォルダを閲覧できます。 詳細は、[サイトのドキュメント内容の保護](../site-settings/site-content-configurations/securing-site-documents-content.md)を参照してください。
-
-<a name="message-boards" />
 
 ### 掲示板
 
@@ -191,17 +161,13 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 ![メッセージボードの自動モデレーションを設定します。](./site-settings-ui-reference/images/25.png)
 
-<a name="pages" />
-
 ### ページ
 
 | セクション                                         | 説明                                                                                                                                                                                                                                                          |
 |:--------------------------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Google PageSpeed Insights (Liferay DXP 7.4＋ ) | Liferay DXPでGoogle PageSpeed Insightの統合を有効にします。 このオプションを使用すると、ページのアクセシビリティの問題を監査し、修正のための提案を確認することができます。 詳しくは、 [ページのSEOとアクセシビリティを分析する](../../content-authoring-and-management/content-performance-tool/analyzing-seo-and-accessibility-on-pages.md) をご覧ください。 |
 | Open Graph                                    | これらのタグは、ページのメタデータを定義し、Facebook、Slack、TwitterなどのOpen Graphプロトコルをサポートするアプリケーションで共有する際に、サイトのコンテンツを魅力的に表現します。 Open Graphを有効にすると、`<meta>`タグがサイトのページの`head`に埋め込まれます。 詳細は、[Open Graphの設定](./configuring-open-graph.md)を参照してください。                             |
-| ページ                                           | サイトの公開と非公開のページを表示します。 このセクションでは、サイトテンプレートが存在する場合、そのテンプレートからの変更の伝搬を設定することもできます。 詳細は、[サイトテンプレートを使用したサイトの構築](../../../en/site-building/building-sites/building-sites-with-site-templates.md)を参照してください。                                                         |
-
-<a name="recycle-bin" />
+| ページ                                           | サイトのページを表示します。 このセクションでは、サイトテンプレートが存在する場合、そのテンプレートからの変更の伝搬を設定することもできます。 詳しくは、 [サイトテンプレート](../sites/site-templates.md) および [テンプレート変更の伝搬](../sites/site-templates/propagating-template-changes.md) を参照してください。                                                 |
 
 ### ゴミ箱
 
@@ -210,15 +176,11 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 
 
-<a name="reports" />
-
 ### 報告
 
 レポートグループサービス機能の設定
 
 
-
-<a name="sharing" />
 
 ### 共有
 
@@ -230,8 +192,6 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 
 
-<a name="other" />
-
 ## その他
 
 デフォルトでは、Otherエリアには以下の設定が含まれています。
@@ -239,19 +199,17 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 | セクション             | 説明                                                                                                                                                                       |
 |:----------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | その他               | お客様がサイトに定義したカスタムサイト設定があれば、それも含みます。 詳細は、[設定へのアクセス](../../building-applications/core-frameworks/configuration-framework/setting-and-accessing-configurations.md)を参照してください。 |
-| 税金                | Liferay Commerceの「Remote Commerce Tax Configuration」の設定を行います。 詳細は、 [Liferay Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) のドキュメントを参照してください。         |
-| category.tax-rate | Liferay Commerce Avalara統合の設定を行います。 詳細は、 [Liferay Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) のドキュメントを参照してください。                                   |
+| 税金                | Liferay Commerceの「Remote Commerce Tax Configuration」の設定を行います。 詳細は、 [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html) のドキュメントを参照してください。         |
+| category.tax-rate | Liferay Commerce Avalara統合の設定を行います。 詳細は、 [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html) のドキュメントを参照してください。                                   |
 
 
 
-
-<a name="site-setting-ui-reference-in-liferay-dxp-72-and-73" />
 
 ## Liferay DXP 7.2および7.3のサイト設定UIリファレンス
 
-サイトの設定を表示するには、サイトメニュー（![Site Menu](../../images/icon-product-menu.png)）を開き、 ［**Configuration**］ → ［**Settings**］ に移動します。ここに、次のタブが表示されます。
+サイトの設定を表示するには、サイトメニュー（![Site Menu](../../images/icon-product-menu.png)）を開き、*［Configuration］* → *［Settings］*に移動します。ここに、次のタブが表示されます。
 
-* [一般](#general)
+* [General (Automatic Copy)](#general)
 * [ソーシャル](#social)
 * [言語設定](#language)
 * [詳細設定](#advanced)
@@ -261,13 +219,11 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 
 ```{note}
-これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 詳しくは、 [Introduction to Localization](https://help.liferay.com/hc/ja/articles/360028746672-Introduction-to-Localization) および [Modifying Localizable Site Fields](./site-localization.md#modifying-localizable-site-fields) をご覧ください。
+これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 詳しくは、[Introduction to Localization](https://help.liferay.com/hc/en-us/articles/360028746672-Introduction-to-Localization) および [Modifying Localizable Site Fields](./site-localization.md#modifying-localizable-site-fields)をご覧ください。
 ```
 
 
 
-
-<a name="general" />
 
 ### 一般
 
@@ -277,21 +233,21 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 #### 詳細
 
-**サイトID** : サイトの作成時に自動的に生成される一意の番号。 このIDは永続的であり、変更できません。
+**サイトID**: サイトの作成時に自動的に生成される一意の番号。 このIDは永続的であり、変更できません。
 
-**Name** ： ［**Name**］ フィールドを使用してサイトのタイトルを設定します。 このタイトルは、ブラウザのタイトルバーと各サイトページのヘッダに表示されます。 ［**言語フラグ**］ ボタンを使用してサイトの名前をローカライズすることもできます。
+**Name**：*［Name］*フィールドを使用してサイトのタイトルを設定します。 このタイトルは、ブラウザのタイトルバーと各サイトページのヘッダに表示されます。 *［言語フラグ］*ボタンを使用してサイトの名前をローカライズすることもできます。
 
-**説明** ： ［**説明**］ フィールドを使用して、サイトの目的を説明します。 ［**言語フラグ**］ ボタンを使用してサイトの説明をローカライズすることもできます。
+**説明**：*［説明］*フィールドを使用して、サイトの目的を説明します。 *［言語フラグ］*ボタンを使用してサイトの説明をローカライズすることもできます。
 
-**有効** ：サイトが ［**有効**］ か ［**Inactive**］ かを判別します。 非アクティブの間、ユーザーはサイトにアクセスできませんが、必要に応じて再アクティブ化できます。
+**有効**：サイトが*［有効］*か*［Inactive］*かを判別します。 非アクティブの間、ユーザーはサイトにアクセスできませんが、必要に応じて再アクティブ化できます。
 
-**メンバーシップタイプ** ： **メンバーシップタイプ** によって、サイトのメンバーシップの制限度が決まります。 詳細は、[サイトのメンバーシップタイプを変更する](./site-users/changing-site-membership-type.md)を参照してください。
+**メンバーシップタイプ**：*メンバーシップタイプ*によって、サイトのメンバーシップの制限度が決まります。 詳細は、[サイトのメンバーシップタイプを変更する](./site-users/changing-site-membership-type.md)を参照してください。
 
-**手動メンバーシップ管理を許可する** ：メンバーをサイトに手動で追加したりサイトから削除することを許可するかどうかを決定します。 サイトのメンバーシップがメンバーシップポリシーによって自動的に処理される場合は、この設定を無効にすることができます。 詳細は、[サイトのメンバーシップポリシーの管理](./site-users/changing-site-membership-type.md)を参照してください。
+**手動メンバーシップ管理を許可する**：メンバーをサイトに手動で追加したりサイトから削除することを許可するかどうかを決定します。 サイトのメンバーシップがメンバーシップポリシーによって自動的に処理される場合は、この設定を無効にすることができます。 詳細は、[サイトのメンバーシップポリシーの管理](./site-users/changing-site-membership-type.md)を参照してください。
 
-**親サイト** ：親サイトを選択して、サイトをサブサイトとして指定します。 詳細は、[サイトの階層](../building-sites/site-hierarchies.md)を参照してください。
+**親サイト**：親サイトを選択して、サイトをサブサイトとして指定します。 詳細については、[Site Hierarchies](../sites/site-hierarchies.md)を参照してください。
 
-**Limit Membership to Parent Site Members** ：サブサイトのメンバーシップをその親サイトのメンバーに制限するかどうかを決定します。 このオプションは、サブサイトにのみ表示されます。
+**Limit Membership to Parent Site Members**：サブサイトのメンバーシップをその親サイトのメンバーに制限するかどうかを決定します。 このオプションは、サブサイトにのみ表示されます。
 
 
 
@@ -302,8 +258,6 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 ![［ページ］セクションでは、サイトの公開ページと非公開ページを表示できます。](./site-settings-ui-reference/images/03.png)
 
 
-
-<a name="custom-fields" />
 
 ### カスタムフィールド
 
@@ -319,9 +273,9 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 #### サイトURL
 
-**フレンドリURL** : サイトの公開ページと非公開ページの両方にカスタムURLを設定します。 詳細は、[サイトのフレンドリーURLの設定](./managing-site-urls/configuring-your-sites-friendly-url.md)を参照してください。
+**フレンドリURL**: サイトの公開ページと非公開ページの両方にカスタムURLを設定します。 詳細は、[サイトのフレンドリーURLの設定](./managing-site-urls/configuring-your-sites-friendly-url.md)を参照してください。
 
-**公開および非公開仮想ホスト** ：サイトの公開ページおよび非公開ページにマップする公開および非公開のバーチャルホストを設定します。 詳細は、 [仮想ホストサイトURLの設定](./managing-site-urls/configuring-virtual-hosts-site-urls.md)を参照してください。
+**公開および非公開仮想ホスト**：サイトの公開ページおよび非公開ページにマップする公開および非公開のバーチャルホストを設定します。 詳細は、 [仮想ホストサイトURLの設定](./managing-site-urls/configuring-virtual-hosts-site-urls.md)を参照してください。
 
 ![［サイトURL］セクションでは、サイトのフレンドリURLと、公開ページと非公開ページのバーチャルホストを設定できます。](./site-settings-ui-reference/images/05.png)
 
@@ -335,7 +289,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 #### サイトテンプレート
 
-**サイトテンプレート** を使用してサイトを作成した場合、テンプレートを継承したページをユーザーが変更できるかどうかとともに、サイトがここに表示されます。 サイトテンプレートと独自のテンプレートを作成する方法の詳細は、[テンプレートからサイトを構築する](../building-sites/building-sites-with-site-templates.md)を参照してください。
+*サイトテンプレート*を使用してサイトを作成した場合、テンプレートを継承したページをユーザーが変更できるかどうかとともに、サイトがここに表示されます。 詳しくは、 [サイトテンプレート](../sites/site-templates.md) をご覧ください。
 
 ![ページの選択されたテンプレートを表示します。](./site-settings-ui-reference/images/07.png)
 
@@ -343,9 +297,9 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 #### Open Graph
 
-**Open Graphを有効にする** ：サイトのページの`<head>`に [Open Graph](https://ogp.me/) `<meta>`タグを埋め込むかどうかを決定します。 これらのタグは、ページのメタデータを定義し、Facebook、Slack、TwitterなどのOpen Graphプロトコルをサポートするアプリケーションで共有する際に、サイトのコンテンツを魅力的に表現します。
+**Open Graphを有効にする**：サイトのページの`<head>`に[Open Graph](https://ogp.me/) `<meta>`タグを埋め込むかどうかを決定します。 これらのタグは、ページのメタデータを定義し、Facebook、Slack、TwitterなどのOpen Graphプロトコルをサポートするアプリケーションで共有する際に、サイトのコンテンツを魅力的に表現します。
 
-**Image** ：［Image］フィールドを使用して、ページの次のOpen Graph `<meta>`プロパティを定義します。 
+**Image**：［Image］フィールドを使用して、ページの次のOpen Graph `<meta>`プロパティを定義します。 
 
 
 
@@ -358,9 +312,9 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
    ```
 
 
-**画像の別の説明** ：［画像の別の説明］フィールドを使用して、ページの`og:image:alt`プロパティを定義します。 ［**言語フラグ**］ ボタンを使用して画像の別の説明をローカライズすることもできます。
+**画像の別の説明**：［画像の別の説明］フィールドを使用して、ページの`og:image:alt`プロパティを定義します。 *［言語フラグ］*ボタンを使用して画像の別の説明をローカライズすることもできます。
 
-詳しくは、 [Open Graphの設定](./configuring-open-graph.md) を参照してください。
+詳しくは、[Configuring Open Graph](./configuring-open-graph.md)を参照してください。
 
 ![Open Graphを有効または無効にしたり、画像のメタタグを定義したり、画像プレビューを表示したりできます。](./site-settings-ui-reference/images/08.png)
 
@@ -368,7 +322,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 #### 共有
 
-サイトユーザー間でドキュメント共有を有効にするかどうかを決定します。 有効にすると、ユーザー同士でアイテムを共有することができます。 詳細は、 [他のユーザーとのドキュメントの共有](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md) を参照してください。 
+サイトユーザー間でドキュメント共有を有効にするかどうかを決定します。 有効にすると、ユーザー同士でアイテムを共有することができます。 詳細は、[Sharing Documents with Other Users](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md)を参照してください。 
 
 
 
@@ -377,8 +331,6 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 サイトのアセットの自動タグ付けを有効にするかどうかを決定します。 有効にすると、インスタンススコープで設定されたプロバイダによってアセットが自動タグ付けされます。 詳細は、[アセットの自動タグ付けの設定](../../content-authoring-and-management/tags-and-categories/auto-tagging/configuring-asset-auto-tagging.md)を参照してください。 
 
 
-
-<a name="social" />
 
 ### ソーシャル
 
@@ -400,8 +352,6 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 
 
-<a name="language" />
-
 ### 言語設定
 
 ここでは、インストールのデフォルトの言語オプションを使用するか、サイトに独自の言語オプションを定義するかを選択できます。
@@ -409,8 +359,6 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 ![サイト設定の［言語］タブから言語オプションを更新できます。](./site-settings-ui-reference/images/13.png)
 
 
-
-<a name="advanced" />
 
 ### 詳細設定
 
@@ -420,7 +368,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 #### デフォルトの関連付け
 
-新しいサイトメンバーにデフォルトで割り当てられるロールとチームを選択します。 詳細は、 [サイトメンバーのロールとチームのデフォルトの設定](./site-users/configuring-role-and-team-defaults-for-site-members.md) を参照してください。
+新しいサイトメンバーにデフォルトで割り当てられるロールとチームを選択します。 詳細は、[Configuring Role and Team Defaults for Site Members](./site-users/configuring-role-and-team-defaults-for-site-members.md)を参照してください。
 
 ![新しいサイトメンバーにデフォルトで割り当てられるロールとチームを選択できます。](./site-settings-ui-reference/images/14.png)
 
@@ -430,7 +378,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 提供されたフィールドを使用して、サイトのGoogle アナリティクスIDを設定し、追加のGoogleアナリティクスオプションを設定します。 スクリプトの開始タグと終了タグを含む完全なスクリプトコードを入力して、サイトのPiwikアナリティクス追跡コードを設定することもできます。
 
-別のアナリティクスサービスが必要な場合は、追加できます。 異なるアナリティクスサービスのための追加フィールドを追加する方法については、 [新しいアナリティクスサービスの追加](./adding-a-new-analytics-service.md) を参照してください。
+別のアナリティクスサービスが必要な場合は、追加できます。 異なるアナリティクスサービスのための追加フィールドを追加する方法については、[Adding a New Analytics Service](./adding-a-new-analytics-service.md)を参照してください。
 
 ![［アナリティクス］セクションでは、サイトのアナリティクスサービスを設定できます。](./site-settings-ui-reference/images/15.png)
 
@@ -460,9 +408,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 
 
-<a name="additional-information" />
-
 ## 追加情報
 
-- [ページ設定UIリファレンス](../creating-pages/page-settings/configuring-individual-pages.md)
+- [Page Configuration UI Reference](../creating-pages/page-settings/configuring-individual-pages.md)
 - [ページセットの設定](../creating-pages/page-settings/configuring-page-sets.md)

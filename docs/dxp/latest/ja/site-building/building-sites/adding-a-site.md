@@ -2,7 +2,7 @@
 
 新しいサイトをLiferay Portalインスタンスに追加するには：
 
-1. [グローバルメニュー](../../getting-started/navigating-dxp.md) （ ![Global Menu icon](../../images/icon-applications-menu.png) ）を開き、［Control Panel］に移動して、 ［**Sites**］ を選択します。
+1. [グローバルメニュー](../../getting-started/navigating-dxp.md) （ ![Global Menu icon](../../images/icon-applications-menu.png) ）を開き、［Control Panel］に移動して、*［Sites］*を選択します。
 
     ![サイトコントロールパネルの場所です。](./adding-a-site/images/01.png)
 
@@ -12,19 +12,17 @@
 
 1. サイトの名前を入力します。
 
-1. ページ付きのサイトテンプレートを使用している場合は、必要に応じてチェックボックスをクリックして、デフォルトのページをプライベートにします。
+   ```{note}
+   Liferay DXP 7.3 では、ページ付きのサイトテンプレートを使用している場合、デフォルトのページをプライベートにするボックスをチェックすることができます。
+   ```
 
-    ![公開ページではなくプライベートページをサイトに反映させるチェックボックスは、ページを持つテンプレートにのみ存在します。](./adding-a-site/images/02.png)
-
-1. ［**Save**］ をクリックします。
+1. *［保存]*をクリックします。
 
 ```{tip}
 新しく作成された*ブランクサイト*を表示するには、まずそのサイトにページを作成する必要があります。 詳しくは 「サイトにページを追加する」(../creating-pages/adding-pages/adding-a-page-to-a-site.md)をご覧ください。
 ```
 
 サイトメニューで新しいサイトが選択されました。 利用可能なすべてのサイト設定の概要については、 [サイト設定のUI リファレンス](../site-settings/site-settings-ui-reference.md) を参照してください。
-
-<a name="related-information" />
 
 ## 関連情報
 

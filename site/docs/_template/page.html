@@ -1,6 +1,6 @@
 {%- extends "layout.html" %}
 
-{% macro githubEdit() -%}
+{% macro docsFeedback() -%}
     {%- if parents|length > 1 %}
         {% set product = parents[0].title.lower().replace(' ', '-') %}
 
@@ -24,9 +24,9 @@
         {% set fileName = title.lower().replace(' ', '-') %}
 
         <a
-            aria-label="{% trans %}Github icon{% endtrans %}"
-            href="https://github.com/liferay/liferay-learn/edit/master/docs/{{ product }}/{{ version }}/{{ language }}/{{ folderPath }}{{ fileName }}.md"
-            title="{% trans %}Contribute on Github{% endtrans %}"
+            aria-label="{% trans %}Edit icon{% endtrans %}"
+            href="https://liferay.dev/ask/questions/portal/new"
+            title="{% trans %}Give Feedback{% endtrans %}"
             >
             <svg>
                 <use xlink:href="#edit"></use>
@@ -148,7 +148,7 @@
                     </div>
 
                     <div class="actions col-md-2 d-none d-md-block offset-md-1">
-                        {{ githubEdit() }}
+                        {{ docsFeedback() }}
                     </div>
                 </div>
             </div>

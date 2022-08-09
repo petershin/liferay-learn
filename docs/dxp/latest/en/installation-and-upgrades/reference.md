@@ -6,6 +6,7 @@ toc:
 - ./reference/liferay-home.md
 - ./reference/portal-properties.md
 - ./reference/system-properties.md
+- ./reference/liferay-software-versions.md
 ---
 # Reference
 
@@ -18,6 +19,7 @@ reference/jvm-configuration.md
 reference/liferay-home.md
 reference/portal-properties.md
 reference/system-properties.md
+reference/liferay-software-versions.md
 ```
 
 * [Database Configuration](./reference/database-configurations.md)
@@ -26,3 +28,4 @@ reference/system-properties.md
 * [Liferay Home](./reference/liferay-home.md)
 * [Portal Properties](./reference/portal-properties.md)
 * [System Properties](./reference/system-properties.md)
+* [Liferay Software Versions](./reference/liferay-software-versions.md)

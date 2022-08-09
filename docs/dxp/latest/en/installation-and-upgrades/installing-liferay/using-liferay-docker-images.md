@@ -8,6 +8,7 @@ toc:
 - ./using-liferay-docker-images/running-scripts-in-containers.md
 - ./using-liferay-docker-images/providing-files-to-the-container.md
 - ./using-liferay-docker-images/upgrading-to-a-new-docker-image.md
+- ./using-liferay-docker-images/docker-image-versions.md
 ---
 # Using Liferay Docker Images
 
@@ -22,6 +23,7 @@ using-liferay-docker-images/patching-dxp-in-docker.md
 using-liferay-docker-images/running-scripts-in-containers.md
 using-liferay-docker-images/providing-files-to-the-container.md
 using-liferay-docker-images/upgrading-to-a-new-docker-image.md
+using-liferay-docker-images/docker-image-versions.md
 ```
 
 Docker Hub hosts [Liferay DXP](https://hub.docker.com/r/liferay/dxp) and [Liferay Portal](https://hub.docker.com/r/liferay/portal) Docker images, bundled with Tomcat on Linux. The Liferay Docker Hub pages provide image details and tags for the different releases.
@@ -119,3 +121,4 @@ If you want to know what the container entry point does and learn the container'
 * [Patching DXP in Docker](./using-liferay-docker-images/patching-dxp-in-docker.md)
 * [Providing Files to the Container](./using-liferay-docker-images/providing-files-to-the-container.md)
 * [Upgrading to a New Docker Image](./using-liferay-docker-images/upgrading-to-a-new-docker-image.md)
+* [Docker Image Versions](./using-liferay-docker-images/docker-image-versions.md)

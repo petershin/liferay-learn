@@ -4,18 +4,18 @@ Starting with Liferay 7.4, Liferay adopted a rolling release model for deliverin
 
 | Software | Version |
 | :--- | :--- |
-| Liferay Portal | 7.4.3.XX-gaXX |
-| Liferay DXP | 7.4.13-uXX |
+| Liferay Portal | 7.4.3.XX GAXX |
+| Liferay DXP | 7.4.13 Update XX |
 
 ## Liferay Portal Versioning
 
 Here are some hypothetical Liferay Portal version examples:
 
 ```
-7.4.3.30-ga30
-7.4.3.31-ga31
+Liferay Portal 7.4.3.30 GA30
+Liferay Portal 7.4.3.31 GA31
 ...
-7.4.3.100-ga100
+Liferay Portal 7.4.3.100 GA100
 ```
 
 ## Liferay DXP Versioning
@@ -23,10 +23,10 @@ Here are some hypothetical Liferay Portal version examples:
 Here are some hypothetical Liferay DXP version examples:
 
 ```
-7.4.13-u30
-7.4.13-u31
+Liferay DXP 7.4.13 Update 30
+Liferay DXP 7.4.13 Update 31
 ...
-7.4.13-u100
+Liferay DXP 7.4.13 Update 100
 ```
 
 ## Previous Versions

@@ -84,10 +84,10 @@ Click on an individual change to view more details. From here, you can also clic
 
 {bdg-secondary}`Available 7.4 U37+ and GA37+`
 
-If you edit a Page in a Publication, Liferay generates a URL for previewing your changes alongside the original version of the Page. You can access this URL while reviewing Publication changes by clicking the desired changes to the Page. This renders the two versions of the Page side by side.
+If you edit a Page in a publication, you can preview those changes alongside the original version of the Page. To do this, click the desired Page edits while reviewing publication changes. Once selected, Publications renders both versions of the Page side by side.
 
 ```{note}
-When previewing Page changes, you cannot access Page editing tools.
+When previewing Page changes, editing tools are disabled.
 ```
 
 <!-- ![]() -->

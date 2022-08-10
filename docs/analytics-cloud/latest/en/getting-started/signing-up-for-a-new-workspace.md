@@ -17,7 +17,7 @@ Your Liferay DXP installation must meet the following fix pack minimum requireme
 
 Once logged in, you can purchase a **paid tier** workspace by contacting sales. If you already have a workspace, you will also see your workspace listed after login.
 
-<!-- Requires new screenshot ![Sign up with a Business or Enterprise plan or begin with a Free Trial.](signing-up-for-a-new-workspace/images/02.png) -->
+![Sign up with a Business or Enterprise plan.](signing-up-for-a-new-workspace/images/02.png)
 
 ## Buying Analytics Cloud workspace
 

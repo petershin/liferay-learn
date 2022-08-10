@@ -9,6 +9,10 @@ Publishing is the process whereby changes made in the Staging environment are tr
 
 From a low level perspective, staging is a relationship between two Sites or Asset Libraries where the same entities are mirrored between them. From a high level perspective, staging involves a publish process that is executed in three sequential phases: Export, Validation, and Import.
 
+```{important}
+When using [Custom Fields](../../../users-and-permissions/users/adding-custom-fields-to-users.md) with Remote Live Staging, you must manually export and import new custom fields to your Live environment before publishing. This is because custom fields are not Site scoped and cannot be exported/imported automatically along with content changes.
+```
+
 ### Export Phase
 
 During Export, your publish configuration is processed and necessary referenced entities are gathered. Then everything is processed into the instance's own file format, and it is either stored locally or transferred to the remote live DXP instance.

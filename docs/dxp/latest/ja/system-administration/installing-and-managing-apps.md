@@ -4,6 +4,7 @@ toc:
 - ./installing-and-managing-apps/installing-apps.md
 - ./installing-and-managing-apps/managing-apps.md
 ---
+
 # アプリのインストールと管理
 
 ```{toctree}

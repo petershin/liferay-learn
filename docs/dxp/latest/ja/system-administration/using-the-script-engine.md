@@ -4,6 +4,7 @@ toc:
 - ./using-the-script-engine/running-scripts-from-the-script-console.md
 - ./using-the-script-engine/script-examples.md
 ---
+
 # スクリプトエンジンの使用
 
 ```{toctree}
@@ -14,7 +15,7 @@ using-the-script-engine/running-scripts-from-the-script-console.md
 using-the-script-engine/script-examples.md
 ```
 
-DXPは、 [Groovy](http://groovy-lang.org/) スクリプトを実行してLiferay DXPインスタンスを維持するための堅牢なスクリプトエンジンを提供します。 スクリプトを実行して、データのクリーンアップ、ユーザーメンテナンス操作、Liferay APIの一括呼び出し、またはシステムレベルの操作を含むメンテナンスタスクを実行できます。
+DXPは、[Groovy](http://groovy-lang.org/)スクリプトを実行してLiferay DXPインスタンスを維持するための堅牢なスクリプトエンジンを提供します。 スクリプトを実行して、データのクリーンアップ、ユーザーメンテナンス操作、Liferay APIの一括呼び出し、またはシステムレベルの操作を含むメンテナンスタスクを実行できます。
 
 ![このスクリプトコンソールはGroovyスクリプトを実行し、現在のactionRequestなどのコンテキスト変数を提供します。 このスクリプトコンソールは、Liferayサービスを呼び出すために設計されました。](./using-the-script-engine/images/01.png)
 
@@ -23,7 +24,7 @@ DXPは、 [Groovy](http://groovy-lang.org/) スクリプトを実行してLifera
 スクリプトコンソールは、コントロールパネルから利用できます。 スクリプトエンジンを使用するには、次の手順に従います。
 
 1. 管理者ユーザーとしてログインします。
-1. [プロダクトメニュー ](../../getting-started/navigating-dxp.md)を開き、［コントロールパネル］へ行き、 ［**設定**］ &rarr; ［**サーバ管理**］ &rarr; **スクリプト** を選択します。
+1. [プロダクトメニュー ](../../getting-started/navigating-dxp.md)を開き、［コントロールパネル］へ行き、 *［設定］* &rarr; *［サーバ管理］ * &rarr; * スクリプト*を選択します。
 
     ![このスクリプトコンソールは、［System Administration］メニュー内のタブです。](./using-the-script-engine/images/02.png)
 

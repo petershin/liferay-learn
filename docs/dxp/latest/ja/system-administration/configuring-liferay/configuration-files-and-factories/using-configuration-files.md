@@ -4,7 +4,7 @@
 
 バージョンが同一であれば、構成ファイルを使用して、構成を実動前のシステムから実動システムに、または他のLiferay DXPシステム間で転送できます。
 
-構成ファイルは、 [Apache Felix構成管理フレームワーク](http://felix.apache.org/documentation/subprojects/apache-felix-config-admin.html) によって定義された `.config` プロパティ値の形式を使用します。
+構成ファイルは、 [Apache Felix構成管理フレームワーク](http://felix.apache.org/documentation/subprojects/apache-felix-config-admin.html)によって定義された `.config` プロパティ値の形式を使用します。
 
 ```{note}
 '.cfg`ファイルフォーマットはOSGi環境では一般的で、サポートされているフォーマットですが、プロパティ値の型を指定したり、複数の値を持つプロパティを許容したりできるため、 `.config`ファイルが好まれます。 このため、ベストプラクティスとして `.config` ファイルが使用・推奨・文書化されています。
@@ -12,7 +12,7 @@
 
 ## 構成ファイルの作成
 
-システム設定には、設定エントリーを変更すると使用可能になる [**エクスポート**](../system-settings.md#exporting-and-deploying-configurations) オプションが用意されています。 エクスポートは、 `.config` ファイルを作成する最良の方法です。エントリの設定を含む `.config` ファイルを `key = value` 形式でダウンロードし、必要に応じて変更または配布します。 変更された値が1つだけであっても、使用可能なすべての構成キーと値がエクスポートされます。
+システム設定には、設定エントリーを変更すると使用可能になる [*エクスポート*](../system-settings.md#exporting-and-deploying-configurations) オプションが用意されています。 エクスポートは、 `.config` ファイルを作成する最良の方法です。エントリの設定を含む `.config` ファイルを `key = value` 形式でダウンロードし、必要に応じて変更または配布します。 変更された値が1つだけであっても、使用可能なすべての構成キーと値がエクスポートされます。
 
 単一の構成エントリまたは変更された構成のセット全体をエクスポートできます。
 
@@ -25,6 +25,16 @@ com.liferay.journal.configuration.JournalServiceConfiguration.config
 ![Webコンテンツのシステム設定エントリには、バックエンドID com.liferay.journal.configuration.JournalServiceConfigurationがあります。](./using-configuration-files/images/01.png)
 
 システムは構成ファイルの名前を強制します。 名前を編集すると、構成エントリへのリンクが壊れ、それ以上のカスタマイズは有効になりません。 唯一の例外は [ファクトリ構成](./using-factory-configuration.md)で、一意のサブネームを提供できる場合があります。
+
+### パスワードエクスポートの有効化
+
+デフォルトでは、設定ファイルをエクスポートする際にパスワードは除外されます（Elasticsearchのパスワード、Salesforceのパスワードなど）。 エクスポートに含めるには、 `portal-ext.properties` ファイルに以下のプロパティを追加してください。
+
+```properties
+module.framework.export.password.attributes=true
+```
+
+Liferayインスタンスを再起動することで、変更が反映されます。
 
 ## キー/値の構文
 
@@ -46,7 +56,7 @@ multiValueSetting=["Value 1","Value 2", ...]
 
 値の間に（コンマの後の）スペース文字を使用すると、プロパティーは無視されます。
 
-［コンテンツ］セクションの［System Settings］で［Web Content］カテゴリを開き、仮想インスタンススコープとして［**Web Content**］ を選択します。 **Characters Blacklist** の複数の単一値エントリが表示されます。
+［コンテンツ］セクションの［System Settings］で［Web Content］カテゴリを開き、仮想インスタンススコープとして［*Web Content*］ を選択します。 *Characters Blacklist*の複数の単一値エントリが表示されます。
 
 ![Webコンテンツシステム設定エントリには、多くのブラックリストに追加された文字フィールドがあります。](./using-configuration-files/images/02.png)
 
@@ -58,7 +68,7 @@ charactersblacklist=["&","'","@","\\","]","}",":","\=",">","/","<","[","{","%","
 
 ### エスケープ文字
 
-二重引用符（`"`）と等号（`=`）は、 `.config` ファイルで **エスケープ** する必要があります。  エスケープとは、別の文字を使用して、文字を通常の方法で使用してはならないことを示します。 二重引用符と等号はすでに `.config` ファイルで使用されているため、エスケープすると、システムは通常の方法では読み取らず、値の一部として渡すようにシステムに指示します。 `.config` ファイルの文字をエスケープするには、円記号を使用します。
+二重引用符（`"`）と等号（`=`）は、 `.config` ファイルで *エスケープ* する必要があります。  エスケープとは、別の文字を使用して、文字を通常の方法で使用してはならないことを示します。 二重引用符と等号はすでに `.config` ファイルで使用されているため、エスケープすると、システムは通常の方法では読み取らず、値の一部として渡すようにシステムに指示します。 `.config` ファイルの文字をエスケープするには、円記号を使用します。
 
 ```properties
 charactersblacklist=["&","\"","\="]
@@ -76,7 +86,7 @@ blacklistBundleSymbolicNames=["Liferay\ Marketplace","Liferay\ Sharepoint\ Conne
 
 ## 型付き値
 
-`.config` ファイル形式は、特殊なタイプマーカー文字を挿入することにより、構成値のタイプの指定をサポートします。 システムは各構成プロパティの正しいタイプをすでに認識しているため、タイプ文字は情報提供の目的でのみ役立ちます。 たとえば、ブール型の構成では、ブール型としてマークする値の直前に **B** あります。
+`.config` ファイル形式は、特殊なタイプマーカー文字を挿入することにより、構成値のタイプの指定をサポートします。 システムは各構成プロパティの正しいタイプをすでに認識しているため、タイプ文字は情報提供の目的でのみ役立ちます。 たとえば、ブール型の構成では、ブール型としてマークする値の直前に *B* あります。
 
 ```properties
 addDefaultStructures=B"true"
@@ -102,13 +112,31 @@ addDefaultStructures="true"
 Liferay DXPの設定（例えば、Liferay Home）をソースコントロールシステムに保存する場合、OSGi設定ファイル（.config ファイル）を必ず含めるようにしてください。
 ```
 
-## 読み取り専用の値を指定する
+## スキーマの読み取り専用設定の設定
 
-読み取り専用の設定値を指定する必要がある場合は、 [portal property](../../../installation-and-upgrades/reference/portal-properties.md)を使用します。
+{bdg-secondary}`あり 7.4 U19+`
 
-```{note}
-DXPは、7.4以降、FP1/SP1以降の7.3、FP14/SP5以降の7.2でこの機能をサポートしています。
-```
+特定のサイトやインスタンスをプロビジョニングする際、特定の設定を読み取り専用に設定すると便利な場合があります。 そのためには
+
+1. 読み取り専用に設定するコンフィグレーションに移動します。 例えば、 *Control Panel* &rarr; *Instance Settings* &rarr; *Blogs*に移動します。
+
+1. コンフィギュレーション設定を変更し、保存します。 ![Actions](../../../images/icon-actions.png) のアイコンをクリックします。 エクスポート］をクリックします。
+
+1. コマンドラインで、エクスポートされた設定ファイルをそのファイルに対して読み取り専用に設定します。 例:
+
+   ```bash
+   chmod -w com.liferay.blogs.configuration.BlogsGroupServiceConfiguration.scoped_0efd1a18-105e-445d-8b42-0ea2d6117690.config
+   ```
+
+1. 設定ファイルを、インストール先の `/osgi/configs` フォルダに配置します。 設定画面を更新する。 コンフィギュレーションが読み取り専用になりました。
+
+   ![設定ファイルを /osgi/configs に配置し、設定を読み取り専用にする。](./using-configuration-files/images/03.png)
+
+## 単一の読み取り専用値の指定
+
+単一の読み取り専用設定値を指定するには、 [ポータルプロパティ](../../../installation-and-upgrades/reference/portal-properties.md)を使用します。
+
+{bdg-secondary}`利用可能な7.4+、7/3 FP1/SP1、および7.2 FP14/SP5`
 
 以下は、プロパティの構文です。
 

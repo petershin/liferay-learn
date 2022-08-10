@@ -6,6 +6,7 @@ toc:
 - ./managing-apps/blacklisting-osgi-components.md
 - ./managing-apps/renewing-apps.md
 ---
+
 # アプリの管理
 
 ```{toctree}

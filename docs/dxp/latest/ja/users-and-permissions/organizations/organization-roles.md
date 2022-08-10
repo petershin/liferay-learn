@@ -4,7 +4,7 @@ Liferay [組織](./understanding-organizations.md) は、分散したユーザ�
 
 ## 組織ロールを理解する
 
-組織ロールパーミッションは、グローバルレベルで定義され、割り当てられた特定の組織に適用されます。 [組織サイト](./organization-sites.md)での対応する暗黙的の権利もユーザーに付与します。 ただし、一部の組織ロールは、子組織およびそのサイトに対する権限を付与します。 必要に応じて、サイトロールを使用し、 [サイトチーム](../../site-building/building-sites/site-membership/creating-teams-for-sites.md) を作成して、組織サイト内のユーザーに追加のロールを明示的に割り当てることができます。 詳細については、 [ロールと権限について](../roles-and-permissions/understanding-roles-and-permissions.md) を参照してください。
+組織ロールパーミッションは、グローバルレベルで定義され、割り当てられた特定の組織に適用されます。 [組織サイト](./organization-sites.md)での対応する暗黙的の権利もユーザーに付与します。 ただし、一部の組織ロールは、子組織およびそのサイトに対する権限を付与します。 必要に応じて、サイトロールを使用し、 [サイトチーム](../../site-building/sites/site-membership/creating-teams-for-sites.md) を作成して、組織サイト内のユーザーに追加のロールを明示的に割り当てることができます。 詳細については、 [ロールと権限について](../roles-and-permissions/understanding-roles-and-permissions.md) を参照してください。
 
 ```{note}
 デフォルトでは、組織ロールはコントロールパネルへのアクセスを許可しません。 ただし、組織の管理者やオーナーは、ドロップダウンの［個人用メニュー］から［私の組織］をクリックすることで、自分が管理する組織にアクセスできます。
@@ -17,7 +17,7 @@ Liferay DXPでは、以下のデフォルトの組織ロールが用意されて
 このロールは、組織内での基本的な権限を与えるもので、すべてのメンバーに自動的に割り当てられます。 組織にサイトが併設されている場合、このロールはユーザーにサイトの基本メンバーシップを付与します。
 
 ```{note}
-子組織のメンバーは、親組織のメンバーとなります。 これは、例えば、子組織のメンバーが親組織のプライベートページにアクセスできることを意味します。 この動作は、組織固有のプロパティがリストアップされている`組織` [portal-ext.propertiesのセクション](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Organizations) ファイルでカスタマイズすることができます。
+子組織のメンバーは、親組織のメンバーとなります。 これは、例えば、子組織のメンバーは親組織のページにアクセスできることを意味します。 この動作は、`Organizations` [portal-ext.properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Organizations) ファイルのセクションでカスタマイズすることができ、Organizations に固有のプロパティがリストアップされます。
 ```
 
 ### 組織管理者
@@ -32,21 +32,21 @@ Liferay DXPでは、以下のデフォルトの組織ロールが用意されて
 
 以下の手順で、既存の組織ユーザーに組織ロールを割り当てます。
 
-1. **グローバルメニュー** を開き、 ［**コントロールパネル**］ &rarr; ［**ユーザー**］ &rarr; ［**ユーザーと組織**］ に行きます。 そして、 ［**Organizations**］ タブをクリックします。
+1. *グローバルメニュー* を開き、*［コントロールパネル］* &rarr; *［ユーザー］* &rarr; *［ユーザーと組織］*に行きます。 そして、 *［Organizations］* タブをクリックします。
 
-1. 既存の組織の **アクション** ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 ［**Assign Organization Roles**］ を選択します。
+1. 既存の組織の *アクション* ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 *［Assign Organization Roles］*を選択します。
 
     ![［組織ロールの割当て］を選択します。](./organization-roles/images/01.png)
 
-1. ユーザーに割り当てたい **組織ロール** をクリックします。
+1. ユーザーに割り当てたい *組織ロール* をクリックします。
 
     ![ユーザーに割り当てたい組織ロールをクリックします。](./organization-roles/images/02.png)
 
-1. **チェックボックス** を使って、どのユーザーにロールを割り当てるかを選択します。
+1. *チェックボックス* を使って、どのユーザーにロールを割り当てるかを選択します。
 
     ![チェックボックスを使って、どのユーザーにそのロールを割り当てるかを選択します。](./organization-roles/images/03.png)
 
-1. 終了したら ［**Update Associations**］ をクリックします。
+1. 終了したら *［Update Associations］* をクリックします。
 
 ## 追加情報
 

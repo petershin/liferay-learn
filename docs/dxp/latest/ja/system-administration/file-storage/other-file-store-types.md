@@ -4,7 +4,10 @@ toc:
 - ./other-file-store-types/amazon-s3-store.md
 - ./other-file-store-types/dbstore.md
 - ./other-file-store-types/ibm-cloud-object-storage.md
+- ./other-file-store-types/google-cloud-storage.md
+- ./other-file-store-types/microsoft-azure-blob-storage.md
 ---
+
 # その他のファイルストレージタイプ
 
 ```{toctree}

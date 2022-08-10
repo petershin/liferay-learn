@@ -1,6 +1,6 @@
 # ロールと権限について
 
-Liferay DXPで作業を行うには、 [ユーザー](./../users/understanding-users.md) に適切な権限が必要です。 ロールは、権限を持つユーザーに参加します。 ロールとパーミッションに関するほとんどの管理作業は、 ［**Control Panel**］ &rarr; ［**Users**］ &rarr; ［**Roles**］ で行われます。
+Liferay DXPで作業を行うには、 [ユーザー](./../users/understanding-users.md) に適切な権限が必要です。 ロールは、権限を持つユーザーに参加します。 ロールとパーミッションに関するほとんどの管理作業は、 *［Control Panel］* &rarr; *［Users］* &rarr; *［Roles］*で行われます。
 
 ![コントロールパネルからロールを管理します。](./understanding-roles-and-permissions/images/03.png)
 
@@ -8,24 +8,24 @@ Liferay DXPで作業を行うには、 [ユーザー](./../users/understanding-u
 
 * [ロールの作成と管理](./creating-and-managing-roles.md)
 * [ロール権限の定義](./defining-role-permissions.md)
-* [ユーザーのロールへの割り当て](./assigning-users-to-roles.md)
+* [Assigning Users to Roles](./assigning-users-to-roles.md)
 
 ```{note}
-[サイト向けチームの作成](./../../site-building/building-sites/site-membership/creating-teams-for-sites.md)には、専用のパーミッション管理のユーザーインターフェースがあります。
+[サイトチーム](./../../site-building/sites/site-membership/creating-teams for-sites.md) には、専用の権限管理ユーザインタフェースが用意されています。
 ```
 
 ## ロールと範囲
 
 Liferay DXP内で目的の機能を実行するために必要な権限をユーザーに与えるには、最初に一連の権限をロールに関連付ける必要があります。
 
-例として、 **掲示板管理者** ロールとユーザー **Jane Slaughter** を例として使用すると、次の手順を実行できます。
+例として、_掲示板管理者_ ロールとユーザー _Jane Slaughter_ を例として使用すると、次の手順を実行できます。
 
-1. 必要な機能を決定する： **Liferay DXPで掲示板を管理します。**
-1. スコープを決定します： **仮想インスタンス全体（グローバル）。**
-1. 適切にスコープ設定されたロールを作成し、機能を実行する権限を割り当てます： **掲示板管理者（標準ロール）。**
-1. ユーザーコレクションを作成します： **掲示板の管理者と呼ばれるユーザーグループです。**
-1. ロールをユーザーコレクションに割り当てます： **掲示板管理者 &rarr; 掲示板管理者ロール。**
-1. ユーザーをユーザーコレクションに割り当てます： **Jane Slaughter &rarr; 掲示板管理者。**
+1. 必要な機能を決定する： _Liferay DXPで掲示板を管理します。_
+1. スコープを決定します： _仮想インスタンス全体（グローバル）。_
+1. 適切にスコープ設定されたロールを作成し、機能を実行する権限を割り当てます： _掲示板管理者（標準ロール）。_
+1. ユーザーコレクションを作成します： _掲示板の管理者と呼ばれるユーザーグループです。_
+1. ロールをユーザーコレクションに割り当てます： _掲示板管理者 &rarr; 掲示板管理者ロール。_
+1. ユーザーをユーザーコレクションに割り当てます： _Jane Slaughter &rarr; 掲示板管理者。_
 
 以下の概念図は、ユーザーがLiferay DXPのロールと権限システムで必要な権限を継承する方法を示しています。 ここには（掲示板管理者になるユーザーの）完全に関連付けられたロールの割り当てが1つだけ表示されますが、新しい矢印を描くと、他のユーザーコレクションやロールの割り当てを介してユーザーとアクセス許可がどのようにリンクされるかを確認できます。
 
@@ -46,13 +46,13 @@ Liferay DXP内で目的の機能を実行するために必要な権限をユー
 
 ### 標準ロール
 
-インスタンススコープのロールは通常のロールと呼ばれます。 これらのロールは、グローバルに、または [仮想インスタンス](./../../system-administration/configuring-liferay/virtual-instances.html) 全体に権限を付与します。
+インスタンススコープのロールは通常のロールと呼ばれます。 これらのロールは、グローバルに、または [仮想インスタンス](./../../system-administration/configuring-liferay/virtual-instances.html)全体に権限を付与します。
 
 いくつかのユーザーコレクションを通常のロールに割り当てることができます。
 
 * [組織](./../organizations/understanding-organizations.md) は、共有階層レベルのユーザーを保持します。
 * [ユーザーグループ](./../user-groups/creating-and-managing-user-groups.md) は、同じ機能を実行する必要性のみを共有するユーザーを保持します。
-* [サイト](./../../site-building/building-sites/site-membership/adding-members-to-sites.md) は、特定のアクションを実行する必要があるユーザー（サイトメンバーとして）を保持します。
+* [サイト](./../../site-building/sites/site-membership/adding-members-to-sites.md) は、特定のアクションを実行する必要があるユーザー（サイトメンバーとして）を保持します。
 * [セグメント](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) は、特定の条件に一致するサイトのユーザーを保持します。
 
 ### 組織ロール

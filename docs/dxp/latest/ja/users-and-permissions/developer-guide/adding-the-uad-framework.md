@@ -5,19 +5,15 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 この作業は、 [サービスビルダー](../../building-applications/data-frameworks/service-builder.md)を使用することでより簡単に行うことができます。 サービスビルダーがアプリケーションのためにUADを有効にするために必要なコードを自動的に生成する方法については、以下の例を参照してください。
 
 ## サンプルコードをダウンロードする
+```{include} /_snippets/run-liferay-dxp.md
+```
 
-1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
+次に、以下の手順に従います。
 
-    ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
-    ```
-
-    別のLiferay PortalバージョンまたはLiferay DXPを実行している場合は、上記のコマンドを適宜調整してください。
-
-1. [UADフレームワーク](./liferay-h6d2.zip) をダウンロードして解凍します。
+1. Download and unzip [UAD Framework](./liferay-h6d2.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-h6d2.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
     ```
 
     ```bash
@@ -53,9 +49,9 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 1. 新規ユーザーとしてログインし、H6D2ポートレットにコンテンツを追加してください。
 
-1. 管理者としてログインし直し、 ［**コントロールパネル**］ &rarr; ［**ユーザー**］ &rarr; ［**ユーザーと組織**］ に移動してください。
+1. 管理者としてログインし直し、 *［コントロールパネル］* &rarr; *［ユーザー］* &rarr; *［ユーザーと組織］*に移動してください。
 
-1. 新しいユーザーの **アクション** アイコン (![Action](../../images/icon-actions.png)) &rarr; ［**個人データの削除**］ をクリックしてください。 ［**OK**］ をクリックして、ユーザーの無効化を確認します。
+1. 新しいユーザーの *アクション* アイコン (![Action](../../images/icon-actions.png)) &rarr; *［個人データの削除］*をクリックしてください。 *［OK］* をクリックして、ユーザーの無効化を確認します。
 
 1. UAD管理ツールが表示されます。 H6D2ポートレットでは、新規ユーザーが追加したデータの表示、匿名化、削除を行うことができます。
 
@@ -69,7 +65,7 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 1. UADを有効にする`entity` パラメータには2つあります。
 
-   | `entity` 属性            | 説明                               |
+   | `entity` 属性            | Description                      |
    |:---------------------- |:-------------------------------- |
    | `uad-application-name` | エンティティタイプが所属するアプリケーションの名前を指定します。 |
    | `uad-package-path`     | 生成されたUADクラスのパッケージパスを指定します。       |

@@ -1,6 +1,13 @@
+---
+toc:
+- ./configuration-files-and-factories/using-configuration-files.md
+- ./configuration-files-and-factories/using-factory-configuration.md
+---
+
 # 設定ファイルとファクトリー
 
 ```{toctree}
+:maxdepth: 4
 
 configuration-files-and-factories/using-configuration-files.md
 configuration-files-and-factories/using-factory-configuration.md

@@ -7,6 +7,7 @@ toc:
 - ./organizations/organization-sites.md
 - ./organizations/adding-a-new-organization-type.md
 ---
+
 # 組織
 
 ```{toctree}
@@ -25,4 +26,4 @@ organizations/adding-a-new-organization-type.md
 -  [組織へのユーザーの追加](./organizations/adding-users-to-organizations.md)
 -  [組織ロール](./organizations/organization-roles.md)
 -  [組織サイト](./organizations/organization-sites.md)
--  [新しい組織タイプの追加](./organizations/adding-a-new-organization-type.md)
+-  [新しい組織種別の追加](./organizations/adding-a-new-organization-type.md)

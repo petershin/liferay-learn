@@ -10,7 +10,9 @@ toc:
 - ./virtual-instances/localization.md
 - ./virtual-instances/infrastructure.md
 - ./virtual-instances/third-party.md
+- ./virtual-instances/redirect-urls.md
 ---
+
 # 仮想インスタンス
 
 ```{toctree}
@@ -26,6 +28,7 @@ virtual-instances/analytics.md
 virtual-instances/localization.md
 virtual-instances/infrastructure.md
 virtual-instances/third-party.md
+virtual-instances/redirect-urls.md
 ```
 
 * [仮想インスタンスを理解する](./virtual-instances/understanding-virtual-instances.md)
@@ -37,4 +40,5 @@ virtual-instances/third-party.md
 * [アナリティクス](./virtual-instances/analytics.md)
 * [ローカライズ](./virtual-instances/localization.md)
 * [インフラストラクチャー](./virtual-instances/infrastructure.md)
-* [サードパーティー](./virtual-instances/third-party.md)
+* [サードパーティ](./virtual-instances/third-party.md)
+* [リダイレクト URL](./virtual-instances/redirect-urls.md)

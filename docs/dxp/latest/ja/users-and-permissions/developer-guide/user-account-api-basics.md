@@ -5,17 +5,15 @@
 まず、新しいユーザーを追加します。
 
 ## ユーザーの追加
+```{include} /_snippets/run-liferay-portal.md
+```
 
-1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
+次に、以下の手順に従います。
 
-   ```bash
-   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-   ```
-
-1. [User Account API Basics](./liferay-y6q4.zip) をダウンロードし解答します。
+1. Download and unzip [User Account API Basics](./liferay-y6q4.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-y6q4.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6q4.zip -O
    ```
 
    ```bash
@@ -103,21 +101,21 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
     :language: bash
 ```
 
-ここでは、コマンドの引数を紹介します。
+コマンドの引数は次のとおりです。
 
-| 引数                                                                                                                                             | Description                     |
+| 引数                                                                                                                                             | 説明                              |
 |:---------------------------------------------------------------------------------------------------------------------------------------------- |:------------------------------- |
 | `-H "Content-Type: application/json"`                                                                                                          | リクエストボディのフォーマットがJSONであることを示します。 |
 | `-X POST`                                                                                                                                      | 指定されたエンドポイントで起動するHTTPメソッド       |
 | `"http://localhost:8080/o/headless-admin-user/v1.0/user-accounts"`                                                                             | RESTサービスのエンドポイント                |
 | `-d "{\"alternateName\": \"Able\", \"emailAddress\": \"able@liferay.com\", \"familyName\": \"Foo\", \"givenName\": \"Able\"}"` | お客様が掲載を希望するデータ                  |
-| `-u "test@liferay.com:test"`                                                                                                                   | 基本的な認証情報                        |
+| `-u "test@liferay.com:learn"`                                                                                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2/using-oauth2.md).
+ここでは、デモンストレーションの目的で基本認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2/using-oauth2.md) を使ってユーザーを認証する必要があります。
 ```
 
-他のcURLコマンドも同様のJSON引数を使用しています。
+他のcURLコマンドも同様のJSON引数を使用します。
 
 ## Javaクラスを調べる
 
@@ -146,7 +144,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 他のJavaクラスの例はこれと似ていますが、異なる `UserAccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
+サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他のUser RESTサービスを呼び出す例です。
@@ -155,7 +153,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 以下のcURLとJavaのコマンドで全ユーザーのリストを取得します。
 
-### Users **GET** FromInstance.sh
+### Users_GET_FromInstance.sh
 
 コマンド:
 
@@ -169,7 +167,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
    :language: bash
 ```
 
-### Users **GET** FromInstance.java
+### Users_GET_FromInstance.java
 
 コマンド：
 
@@ -191,29 +189,29 @@ JSON レスポンスには、そのインスタンスのすべての Users が�
 
 以下のcURLとJavaコマンドで特定のUserを取得します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User **GET** ById.sh
+### User_GET_ById.sh
 
-コマンド：
+コマンド:
 
 ```bash
 ./User_GET_ById.sh 1234
 ```
 
-コード：
+コード:
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/curl/User_GET_ById.sh
    :language: bash
 ```
 
-### User **GET** ById.java
+### User_GET_ById.java
 
-コマンド：
+コマンド:
 
 ```bash 
 java -classpath .:* -DuserId=1234 User_GET_ById
 ```
 
-コード：
+コード:
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/java/User_GET_ById.java
    :dedent: 1
@@ -227,29 +225,29 @@ User は JSON レスポンスで返されます。
 
 以下のcURLとJavaコマンドで、既存のUserの部分編集を行います。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User **PATCH** ById.sh
+### User_PATCH_ById.sh
 
-コマンド：
+コマンド:
 
 ```bash
 ./User_PATCH_ById.sh 1234
 ```
 
-コード：
+コード:
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/curl/User_PATCH_ById.sh
    :language: bash
 ```
 
-### User **PATCH** ById.java
+### User_PATCH_ById.java
 
-コマンド：
+コマンド:
 
 ```bash 
 java -classpath .:* -DuserId=1234 User_PATCH_ById
 ```
 
-コード：
+コード:
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/java/User_PATCH_ById.java
    :dedent: 1
@@ -263,7 +261,7 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存のUserを完全に上書きします。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User **PUT** ById.sh
+### User_PUT_ById.sh
 
 コマンド:
 
@@ -277,15 +275,15 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
    :language: bash
 ```
 
-### User **PUT** ById.java
+### User_PUT_ById.java
 
-コマンド：
+コマンド:
 
 ```bash 
 java -classpath .:* -DuserId=1234 User_PUT_ById
 ```
 
-コード：
+コード:
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/java/User_PUT_ById.java
    :dedent: 1
@@ -301,21 +299,21 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
 
 以下のcURLおよびJavaコマンドで既存のUserを削除します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User **DELETE** ById.sh
+### User_DELETE_ById.sh
 
-コマンド：
+コマンド:
 
 ```bash
 ./User_DELETE_ById.sh 1234
 ```
 
-コード：
+コード:
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/curl/User_DELETE_ById.sh
    :language: bash
 ```
 
-### User **DELETE** ById.java
+### User_DELETE_ById.java
 
 コマンド：
 

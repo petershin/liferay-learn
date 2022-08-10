@@ -9,6 +9,7 @@ toc:
 - ./configuring-liferay/security-settings.md
 - ./configuring-liferay/common-tasks.md
 ---
+
 # Liferayの設定
 
 ```{toctree}

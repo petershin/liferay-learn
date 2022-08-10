@@ -3,17 +3,15 @@
 アプリケーションメニューから [アカウントユーザー](../accounts/account-users.md) と [アカウントロール](../accounts/account-roles.md) を管理することができますが、LiferayのREST APIを利用することもできます。 これらのサービスを呼び出して、アカウントユーザーとロールの作成と管理を行います。
 
 ## アカウントユーザーの追加
+```{include} /_snippets/run-liferay-dxp.md
+```
 
-1. Liferay DXPを起動します。 まだDockerコンテナがない場合は、以下を使用します。
+次に、以下の手順に従います。
 
-   ```bash
-   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
-   ```
-
-1. [アカウントAPIの基本](./liferay-t5p9.zip) をダウンロードして解凍します。
+1. Download and unzip [Accounts API Basics](./liferay-t5p9.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
    ```
 
    ```bash
@@ -79,7 +77,7 @@
         }     
     ```
 
-1. **グローバルメニュー** &rarr; **アプリケーション** &rarr; **アカウント** に移動します。 ユーザーを作成したアカウントをクリックします。 ［**Users**］ タブをクリックすると、作成された新しいユーザーが表示されます。
+1. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 ユーザーを作成したアカウントをクリックします。 *［Users］* タブをクリックすると、作成された新しいユーザーが表示されます。
 
   ![新しいアカウントユーザーが追加されたことを確認します。](./account-users-and-roles-apis/images/01.png)
 
@@ -103,7 +101,7 @@
     :language: bash
 ```
 
-ここでは、コマンドの引数を紹介します。
+コマンドの引数は次のとおりです。
 
 | 引数                                                                                                                                           | 説明                              |
 |:-------------------------------------------------------------------------------------------------------------------------------------------- |:------------------------------- |
@@ -111,13 +109,13 @@
 | `-X POST`                                                                                                                                    | 指定されたエンドポイントで起動するHTTPメソッド       |
 | `"http://localhost:8080/o/headless-admin-user/v1.0/accounts/${1}/user-accounts"`                                                             | RESTサービスのエンドポイント                |
 | `-d "{\"alternateName\": \"Dog\", \"emailAddress\": \"dog@liferay.com\", \"familyName\": \"Easy\", \"givenName\": \"Dog\"}"` | お客様が掲載を希望するデータ                  |
-| `-u "test@liferay.com:test"`                                                                                                                 | 基本的な認証情報                        |
+| `-u "test@liferay.com:learn"`                                                                                                                | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](./../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/introduction-to-using-oauth2.md)でユーザーを認証する必要があります。
+ここでは、デモンストレーションの目的で基本認証を使用しています。 本番環境では、 [OAuth2](./../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/introduction-to-using-oauth2.md)でユーザーを認証する必要があります。
 ```
 
-他のcURLコマンドも同様のJSON引数を使用しています。
+他のcURLコマンドも同様のJSON引数を使用します。
 
 ## Javaクラスを調べる
 
@@ -129,7 +127,7 @@
    :lines: 9-25
 ```
 
-このクラスは、わずか3行のコードでRESTサービスを呼び出します。
+このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
 | 行（省略形）                                                                           | 説明                                                                    |
 |:-------------------------------------------------------------------------------- |:--------------------------------------------------------------------- |
@@ -137,7 +135,7 @@
 | `UserAccountResource userAccountResource = builder.authentication(...).build();` | ベーシック認証を指定し、 `UserAccountResource` サービスインスタンスを生成します。                  |
 | `UserAccount userAccount = userAccountResource.postAccountUserAccount(...);`     | `userAccountResource.postAccountUserAccount` メソッドを呼び出し、データをpostに渡します。 |
 
-Note that the project includes the `com.liferay.headless.admin.user.client.jar` file as a dependency. すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
+プロジェクトには、依存関係として`com.liferay.headless.admin.user.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
 ```{note}
 `main`メソッドのコメントでは、クラスの実行を実演しています。
@@ -146,7 +144,7 @@ Note that the project includes the `com.liferay.headless.admin.user.client.jar` 
 他のJavaクラスの例は、このクラスと似ていますが、異なるメソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
+サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、関連する他のRESTサービスを呼び出す例です。
@@ -155,9 +153,9 @@ Note that the project includes the `com.liferay.headless.admin.user.client.jar` 
 
 以下のcURLまたはJavaコマンドを実行すると、アカウントのユーザーを一覧表示できます。 上記と同様に、 `1234` をアカウントのIDに置き換えてください。
 
-### AccountUsers **GET** FromAccount.sh
+### AccountUsers_GET_FromAccount.sh
 
-コマンド：
+コマンド:
 
 ```bash
 ./AccountUsers_GET_FromAccount 1234
@@ -169,7 +167,7 @@ Note that the project includes the `com.liferay.headless.admin.user.client.jar` 
    :language: bash
 ```
 
-### AccountUsers **GET** FromAccount.java
+### AccountUsers_GET_FromAccount.java
 
 コマンド:
 
@@ -191,7 +189,7 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
 
 特定のアカウントに対して新しいアカウントロールを作成します。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### AccountRole **POST** ToAccount.sh
+### AccountRole_POST_ToAccount.sh
 
 コマンド:
 
@@ -205,15 +203,15 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
    :language: bash
 ```
 
-### AccountRole **POST** ToAccount.java
+### AccountRole_POST_ToAccount.java
 
-コマンド：
+コマンド:
 
 ```bash
 java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
 ```
 
-コード：
+コード:
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/AccountRole_POST_ToAccount.java
    :dedent: 1
@@ -225,7 +223,7 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
 
 ユーザーを特定のアカウントロールに関連付けることができます。 `1234` をアカウントのIDに置き換えてください。 お使いのアカウントのロールのIDを`5678` に置き換えます。 `9012` は、アカウントユーザーのIDに置き換えてください。
 
-### AccountRole **POST** UserAssociation.sh
+### AccountRole_POST_UserAssociation.sh
 
 コマンド:
 
@@ -239,15 +237,15 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
    :language: bash
 ```
 
-### AccountRole **POST** UserAssociation.java
+### AccountRole_POST_UserAssociation.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 AccountRole_POST_UserAssociation
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/AccountRole_POST_UserAssociation.java
    :dedent: 1
@@ -257,23 +255,23 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
 
 ## アカウントからのアカウントロールの取得
 
-以下のcURLまたはJavaコマンドを実行することで、アカウントのアカウントロールを一覧表示することができます。 `1234` をアカウントのIDに置き換えてください。
+以下のcURLまたはJavaコマンドを実行することで、Accountのアカウントロールsを一覧表示することができます。 `1234` をアカウントのIDに置き換えてください。
 
-### AccountRoles **GET** FromAccount.sh
+### AccountRoles_GET_FromAccount.sh
 
-コマンド：
+コマンド:
 
 ```bash
 ./AccountRoles_GET_FromAccount.sh 1234
 ```
 
-コード：
+コード:
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/AccountRoles_GET_FromAccount.sh
    :language: bash
 ```
 
-### AccountRoles **GET** FromAccount.java
+### AccountRoles_GET_FromAccount.java
 
 コマンド:
 
@@ -295,21 +293,21 @@ java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
 
 特定のアカウントユーザーからアカウントロールの関連付けを削除します。 `1234` をアカウントのIDに置き換えてください。 お使いのアカウントのロールのIDを`5678` に置き換えます。 `9012` は、アカウントユーザーのIDに置き換えてください。
 
-### AccountRole **DELETE** UserAssociation.sh
+### AccountRole_DELETE_UserAssociation.sh
 
-コマンド：
+コマンド:
 
 ```bash
 ./AccountRole_DELETE_UserAssociation.sh 1234 5678 9012
 ```
 
-コード：
+コード:
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/AccountRole_DELETE_UserAssociation.sh
    :language: bash
 ```
 
-### AccountRole **DELETE** UserAssociation.java
+### AccountRole_DELETE_UserAssociation.java
 
 コマンド
 
@@ -325,4 +323,4 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
    :lines: 8-19
 ```
 
-[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
+[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェイスがあります。

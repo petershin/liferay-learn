@@ -440,6 +440,11 @@ public class Main {
 		return CharSubSequence.of(string.toCharArray(), 0, string.length());
 	}
 
+	private String _toFriendlyURLPath(String fileName) {
+		return FilenameUtils.removeExtension(
+			fileName.substring(fileName.indexOf("/")));
+	}
+
 	private String _toHTML(File file, String text) {
 		com.vladsch.flexmark.util.ast.Document document = _parser.parse(text);
 
@@ -481,24 +486,11 @@ public class Main {
 
 		String englishTitle = _getTitle(englishText);
 
-		String englishFriendlyUrlText = fileName.substring(
-			fileName.indexOf("/"));
-
-		englishFriendlyUrlText = FilenameUtils.removeExtension(
-			englishFriendlyUrlText);
-
 		File japaneseFile = new File(fileName.replace("/en/", "/ja/"));
 
 		if (japaneseFile.exists()) {
 			String japaneseText = FileUtils.readFileToString(
 				japaneseFile, StandardCharsets.UTF_8);
-
-			String japaneseFriendlyUrlText = japaneseFile.getPath();
-
-			japaneseFriendlyUrlText = japaneseFriendlyUrlText.substring(
-				japaneseFriendlyUrlText.indexOf("/"));
-
-			FilenameUtils.removeExtension(japaneseFriendlyUrlText);
 
 			structuredContent.setContentFields(
 				new ContentField[] {
@@ -521,18 +513,17 @@ public class Main {
 					}
 				});
 
+			structuredContent.setFriendlyUrlPath_i18n(
+				HashMapBuilder.put(
+					"en-US", _toFriendlyURLPath(fileName)
+				).put(
+					"ja-JP", _toFriendlyURLPath(japaneseFile.getPath())
+				).build());
 			structuredContent.setTitle_i18n(
 				HashMapBuilder.put(
 					"en-US", englishTitle
 				).put(
 					"ja-JP", _getTitle(japaneseText)
-				).build());
-
-			structuredContent.setFriendlyUrlPath_i18n(
-				HashMapBuilder.put(
-					"en-US", englishFriendlyUrlText
-				).put(
-					"ja-JP", japaneseFriendlyUrlText
 				).build());
 		}
 		else {
@@ -548,8 +539,8 @@ public class Main {
 		}
 
 		structuredContent.setContentStructureId(_CONTENT_STRUCTURE_ID);
+		structuredContent.setFriendlyUrlPath(_toFriendlyURLPath(fileName));
 		structuredContent.setTitle(englishTitle);
-		structuredContent.setFriendlyUrlPath(englishFriendlyUrlText);
 
 		return structuredContent;
 	}

@@ -8,6 +8,10 @@ Starting with Liferay DXP 7.4, 7.3 Fix Pack 1, and 7.2 Fix Pack 11, you can crea
 
 You can enable Page versioning for your Pages during initial setup or anytime afterward via the *Staging Configuration* page. Once enabled, you can create, merge, and publish variations for individual Pages or groups of Pages. You can also manage variation permissions for different User Roles.
 
+```{important}
+If you use Page Versioning and later disable it, the history of Page versions is removed and only the latest published Page versions are preserved. This is true for both Local Live and Remote Live Staging.
+```
+
 ## Types of Variations
 
 Staging provides two types of variations:

@@ -120,5 +120,5 @@ Then, follow these steps to auto-deploy an example Fragment Set:
 
 ## 追加情報
 
-* [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
+* [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md)
 * [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md)

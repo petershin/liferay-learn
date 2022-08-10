@@ -397,9 +397,9 @@ AlloyEditorがバージョン2.0.0になり、React v15からv16へのメジャ�
 
 コードの更新は、2つの方法のいずれかで行う必要があります。
 
-- [Reactのドキュメント](https://reactjs.org/docs/react-component.html)に記載の通り、`React.createClass`APIからカスタムボタンをポートし、ES6`class`APIを使用します。例として、[以前の`createClass`ベースの実行](https://github.com/liferay/alloy-editor/blob/2826ab9ceabe17c6ba0d38985baf8a787c23db43/src/ui/react/src/components/buttons/button-ol.jsx)から[ES6クラスベースのボタン](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx)に移行する際の変更点をご覧ください。
+- [Reactのドキュメント](https://reactjs.org/docs/react-component.html) に記載の通り、`React.createClass`APIからカスタムボタンをポートし、ES6`class`APIを使用します。例として、 [以前の`createClass`ベースの実行](https://github.com/liferay/alloy-editor/blob/2826ab9ceabe17c6ba0d38985baf8a787c23db43/src/ui/react/src/components/buttons/button-ol.jsx) から [ES6クラスベースのボタン](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx) に移行する際の変更点をご覧ください。
   
-- 互換性アダプタを提供します。[create-react-classパッケージ](https://www.npmjs.com/package/create-react-class) (説明は[こちら](https://reactjs.org/docs/react-without-es6.html))をページに注入することで、`createClass`のAPIを復元することができます。 
+- 互換性アダプタを提供します。 [create-react-classパッケージ](https://www.npmjs.com/package/create-react-class) (説明は [こちら](https://reactjs.org/docs/react-without-es6.html) )をページに注入することで、`createClass`のAPIを復元することができます。 
 
 #### 変更が行われた理由
 

@@ -5,7 +5,7 @@
 情報テンプレートを使用すると、 [FreeMarker](https://freemarker.apache.org/) のテンプレートを、 [Infoフレームワーク (近日公開！)](../../building-applications/data-frameworks/info-framework.md) を実装する任意のアイテムタイプ用に作成することができます。 対応するアイテムの種類は、Webコンテンツ、ドキュメント、アセット、ブログ、カテゴリー、オブジェクトです。 フラグメントフィールドを作成すると、テンプレートにマッピングして、コンテンツページと表示ページで項目がどのようにレンダリングされるかを決定することができます。 これにより、サイトに一貫したスタイルを導入することができます。
 
 ```{important}
-情報テンプレートはフラグメントでのみ利用可能で、ウィジェットでは利用できません。 ウィジェットで表示されるWebコンテンツのFreeMarkerテンプレートをデザインしたい場合は、[Webコンテンツテンプレート](../../content-authoring and-management/web-content/web-content-templates/creating-web-content-templates.md) を使用してください。
+情報テンプレートはフラグメントでのみ利用可能で、ウィジェットでは利用できません。 ウィジェットで表示されるWebコンテンツのFreeMarkerテンプレートをデザインしたい場合は、[Webコンテンツテンプレート](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md) を使用してください。
 ```
 
 ## 情報テンプレートの作成
@@ -38,29 +38,26 @@
 
 1. (オプション) プロパティサイドパネル(![Properties](../../images/icon-cog3.png))で、 *説明文* または *画像* をテンプレートに追加します。
 
-1. 完了したら、*[保存]*をクリックします。
+1. 完了したら、*[保存]* をクリックします。
 
-</a> 作成された情報テンプレートは、コンテンツ表示フラグメントや、テキストやリッチテキストなどのマッピング可能なサブ要素
-を持つその他のフラグメントで使用することができます。 選択すると、コンテンツページと表示ページテンプレートで項目がどのようにレンダリングされるかが決定されます。</p> 
-
+作成された情報テンプレートは、コンテンツ表示フラグメントや、テキストやリッチテキストなどのマッピング可能な[サブ要素](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md)を持つその他のフラグメントで使用することができます。選択すると、コンテントページと表示ページテンプレートで項目がどのようにレンダリングされるかが決定されます。
 
 
 ## スクリプトのインポートとエクスポート
 
 情報テンプレートを編集する際に、FreeMarkerスクリプトをインポート/エクスポートして、他のコンテキストで再利用することができます。
 
-1. *サイトメニュー*（![Site Menu](../../images/icon-product-menu.png)）を開き、*［デザイン］* &rarr; *［Templates］* &rarr; *［Information Templates］*に移動します。
+1. *サイトメニュー*（![Site Menu](../../images/icon-product-menu.png)）を開き、*［デザイン］* &rarr; *［Templates］* &rarr; *［Information Templates］* に移動します。
 
 1. 目的の情報テンプレートを選択します。
 
-1. アプリケーションバーの *アクション* ボタン ![Actions Button](../../images/icon-actions.png) をクリックし、 *エクスポートスクリプト* または *インポートスクリプト*を選択します。
+1. アプリケーションバーの *アクション* ボタン ![Actions Button](../../images/icon-actions.png) をクリックし、 *エクスポートスクリプト* または *インポートスクリプト* を選択します。
    
    ![スクリプトのエクスポート］または［スクリプトのインポート］を選択します。](./using-information-templates/images/03.png)
 
 エクスポートする場合、現在の FreeMarker スクリプトは、 `script.ftl` ファイルとして保存されます。
 
 インポート時には、選択したファイルがテンプレートの現在のFreeMarkerスクリプトに置き換わります。
-
 
 
 ## 情報テンプレートの管理
@@ -77,18 +74,13 @@
 
 ![管理オプションにアクセスするには、 [アクション]ボタンをクリックします。](./using-information-templates/images/04.png)
 
-また、 [export](#exporting-templates) をエクスポート、 [import](#importing-templates) Info Templates を LAR ファイルとしてインポートし、サイト間や環境間で共有することができます。 これを行うには、アプリケーションバーの *アクション* ボタンをクリックし、 *エクスポート/インポート*を選択します。
+また、 [export](#exporting-templates) をエクスポート、 [import](#importing-templates) Info Templates を LAR ファイルとしてインポートし、サイト間や環境間で共有することができます。 これを行うには、アプリケーションバーの *アクション* ボタンをクリックし、 *エクスポート/インポート* を選択します。
 
 ![テンプレートをLARファイルとしてエクスポート、インポートすることができます。](./using-information-templates/images/05.png)
-
-
 
 ```{note}
 デフォルトでは、情報テンプレートのエクスポートはウィジェットテンプレートを含みます。 ただし、どのテンプレートを LAR ファイルに含めるかは設定できます。
 ```
-
-
-
 
 ## 追加情報
 

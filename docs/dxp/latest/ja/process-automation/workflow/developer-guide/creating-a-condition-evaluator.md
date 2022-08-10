@@ -95,7 +95,7 @@ Acme R6J9 Implementationプロジェクトには、ワークフローのユー�
 
 `evaluate` メソッドは、ワークフロー定義で呼び出されたときに、ワークフローがトランジションを介して適切なノードに進むことができるように、有効なトランジション名を返す必要があります。
 
-`evaluate` メソッドは、 `KaleoCondition` と `ExecutionContext`の2つのパラメータを受け取ります。 ワークフローエンジンは、ワークフロープロセスの中で条件判定器を呼び出す役割を担っているため、お客様のコードではこれらのオブジェクトをインスタンス化したり構築したりする必要はありません。 しかし、そこから有益な情報を得ることができます。 例えば、以下のようになります。R6J9 Condition Evaluatorは、 `workflowContext` (type `Map`) と `serviceContext` (type `ServiceContext`) を<br /> から取得します。index='4' /> serviceContext </code> (タイプ ` ServiceContext `) と、 `ExecutionContext`から構成されています。
+`evaluate`メソッドは、`KaleoCondition`と `ExecutionContext`の2つのパラメータを受け取ります。ワークフローエンジンは、ワークフロープロセスの中で条件エバリュエーターを呼び出す役割を担っているため、お客様のコードではこれらのオブジェクトをインスタンス化したり構築したりする必要はありません。しかし、そこから有益な情報を得ることができます。例えば、以下のようになります。R6J9条件エバリュエーターは、 `workflowContext`(type `Map`) と `serviceContext`(type `ServiceContext`) を`ExecutionContext`から取得します。
 
 ```{literalinclude} ./creating-a-condition-evaluator/resources/liferay-r6j9.zip/r6j9-impl/src/main/java/com/acme/r6j9/internal/kaleo/runtime/condition/R6J9ConditionEvaluator.java
    :dedent: 2

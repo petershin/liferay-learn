@@ -1,6 +1,6 @@
 # ワークフローの有効化
 
-DXPインスタンス全体または特定のサイトのみで、アセットタイプのワークフロープロセスを有効化できます。 ワークフロープロセスが_Wikiページ_などの特定のアセットタイプのインスタンス全体で有効化されると、_Wikiページ_が作成されたサイトに関係なく、公開するために送信されたすべての_Wikiページ_はレビュープロセスを通過する必要があります。
+DXPインスタンス全体または特定のサイトのみで、アセットタイプのワークフロープロセスを有効化できます。 ワークフロープロセスが_Wikiページ_などの特定のアセットタイプのインスタンス全体で有効化されると、_Wikiページ_が作成されたサイトに関係なく、公開するために送信されたすべての_Wikiページ_ はレビュープロセスを通過する必要があります。
 
 ```{warning}
 ワークフローは [パブリケーション](../../../site-building/publishing-tools/publications.md) と共に使用することはできません。
@@ -16,7 +16,7 @@ DXPインスタンス全体または特定のサイトのみで、アセット�
 
     ![インスタンス全体の設定は［Configurations］タブにあります](./activating-workflow/images/02.png)
 
-1. ワークフロープロセスを実行するアセットタイプ（_ナレッジベースの記事_など）の横にある_［Edit］_をクリックします。
+1. ワークフロープロセスを実行するアセットタイプ（_ナレッジベースの記事_など）の横にある_［Edit］_ をクリックします。
 
     ![ナレッジベースの記事のインスタンス全体でワークフローを有効化する](./activating-workflow/images/03.png)
 
@@ -51,45 +51,45 @@ DXPインスタンス全体または特定のサイトのみで、アセット�
 
 ### Webコンテンツフォルダー
 
-_Webコンテンツフォルダー_のワークフローを有効化するには：
+_Webコンテンツフォルダー_ のワークフローを有効化するには：
 
-1. サイトの_サイト管理_メニューに移動します。
-1. _［Content & Data］_&rarr;_［Web Content］_をクリックします。
-1. （![Actions](../../../images/icon-actions.png)）をクリックし、目的のフォルダの横にある_［Edit］_をクリックします。
+1. サイトの _サイト管理_ メニューに移動します。
+1. _［Content & Data］_ &rarr;_［Web Content］_ をクリックします。
+1. （![Actions](../../../images/icon-actions.png)）をクリックし、目的のフォルダの横にある_［Edit］_ をクリックします。
 
     ![フォルダの編集画面からWebコンテンツフォルダーのワークフローを有効化する。](./activating-workflow/images/04.png)
 
 1. _［Structure Restrictions and Workflow］_メニューを展開します。
-1. _［Default Workflow for This Folder (Lunar Resort Holiday Getaway Content)］_のラジオボタンをクリックします。
+1. _［Default Workflow for This Folder (Lunar Resort Holiday Getaway Content)］_ のラジオボタンをクリックします。
 
     ![Webコンテンツフォルダーのワークフローを選択。](./activating-workflow/images/05.png)
 
 1. ワークフローの定義を選択します（例：_唯一の承認者_ ）。
-1. _［Save］_ボタンをクリックします。
+1. _［Save］_ ボタンをクリックします。
 
 ### ドキュメントとメディアフォルダー
 
 ワークフローは、  _ルート_フォルダー内の_ドキュメントとメディア_ アプリケーション全体または個々のフォルダーに対して有効にできます。
 
-_ドキュメントとメディアフォルダ_のワークフローを有効化するには：
+_ドキュメントとメディアフォルダ_ のワークフローを有効化するには：
 
 1. サイトの_サイト管理_メニューに移動します。
-1. _［Content & Data］_ &rarr; _［Documents and Media］_の順にクリックします。
-1. （![Actions](../../../images/icon-actions.png)）をクリックし、目的のフォルダの横にある_［Edit］_をクリックします。
+1. _［Content & Data］_ &rarr; _［Documents and Media］_ の順にクリックします。
+1. （![Actions](../../../images/icon-actions.png)）をクリックし、目的のフォルダの横にある_［Edit］_ をクリックします。
 
     ![DMフォルダのワークフローを選択。](./activating-workflow/images/06.png)
 
-1. _［Document Type Restrictions and Workflow］_メニューを展開します。
-1. _［Default Workflow for This Folder (DM Folder 1)］_のラジオボタンをクリックします。
+1. _［Document Type Restrictions and Workflow］_ メニューを展開します。
+1. _［Default Workflow for This Folder (DM Folder 1)］_ のラジオボタンをクリックします。
 
     ![DMフォルダのワークフローを選択。](./activating-workflow/images/07.png)
 
 1. ワークフロー定義を選択します（例：_Single Approver_ ）。
-1. _［保存］_ボタンをクリックします。
+1. _［保存］_ ボタンをクリックします。
 
 ### 動的データリスト
 
-_DDLフォーム_のワークフローを有効化するには：
+_DDLフォーム_ のワークフローを有効化するには：
 
 1. サイトの_サイト管理_メニューに移動します。
 1. _［コンテンツ & データ］_ &rarr; _［動的データリスト］_の順にクリックします。
@@ -111,7 +111,7 @@ _DDLフォーム_のワークフローを有効化するには：
 
 1. サイトの_サイト管理_メニューに移動します。
 1. _［コンテンツ & データ］_ &rarr; _ ［Form］_をクリックします。
-1. _フォームビルダー_ビューで（新しいフォームの場合も既存のフォームの場合も同様）、_オプション_ (![Options](../../../images/icon-actions.png))、_［Settings］_の順にクリックします。
+1. _フォームビルダー_ビューで（新しいフォームの場合も既存のフォームの場合も同様）、_オプション_ (![Options](../../../images/icon-actions.png))、_［Settings］_ の順にクリックします。
 
     ![フォームの設定に移動](./activating-workflow/images/09.png)
 
@@ -119,10 +119,9 @@ _DDLフォーム_のワークフローを有効化するには：
 
     ![フォームの設定ウィンドウから各フォームのエントリでワークフローを有効にします。](./activating-workflow/images/10.png)
 
-1. _［Done］_をクリックして、ダイアログウィンドウを閉じます。
+1. _［Done］_ をクリックして、ダイアログウィンドウを閉じます。
 
 情報を送信する前に、フォームの承認が必要になりました。
-
 
 <!-- Leaving this commented out until Staging materials are pushed up.
 ## Page Variations

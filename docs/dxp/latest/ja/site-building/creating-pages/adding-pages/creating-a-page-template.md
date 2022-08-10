@@ -64,7 +64,7 @@ Liferay DXP 7.4以降の場合、ページテンプレートコレクション�
 ### ステージングとページテンプレート
 
 ```{important}
-7.3 GA1以降、ステージング機能は [メンテナンスモード] (../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md) になっています。
+7.3 GA1以降、ステージング機能は [メンテナンスモード](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md) になっています。
 ```
 
 ステージングが有効になっている場合、ウィジェットページテンプレートへの変更は、自動的に*準備*ページに伝播されます。 これらの変更は、ページが本番環境に公開される前に承認される必要があります。 このため、準備ページへのウィジェットページテンプレートの変更の自動伝播をオフにすることはできず、 *変更の継承* セレクターは表示されません。

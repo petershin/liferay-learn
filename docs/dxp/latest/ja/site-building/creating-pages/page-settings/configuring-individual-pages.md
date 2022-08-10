@@ -16,7 +16,7 @@
 * [カスタムメタタグ](#custom-meta-tags)
 
 ```{note}
-これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 [Introduction to Localization](../../installation and-upgrades/setting-up-liferay/initial-instance-localization.md) と [Modifying Localizable Site Fields](../../site-settings/site-localization.md#modifying-localizable-site-fields) で、より詳細な情報をご覧下さい。
+これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 [Introduction to Localization](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) と [Modifying Localizable Site Fields](../../site-settings/site-localization.md#modifying-localizable-site-fields) で、より詳細な情報をご覧下さい。
 ```
 
 ## General (Automatic Copy)

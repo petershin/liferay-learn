@@ -1,9 +1,9 @@
-# Configuring SAML at the Instance Level
+# インスタンスレベルでのSAMLの設定
 
 各ポータルインスタンスは、アイデンティティプロバイダ（IdP）またはサービスプロバイダ（SP）であるSAMLプロバイダになることができる。 DXPインスタンスがどのような役割を担っていても、同じ場所で設定することができます。
 
 ```{warning}
-Instance Settingsのユーザーインターフェースは自動生成され、SAMLの設定を容易にするフィールド検証やその他の機能は提供されない。 SAMLインスタンスを設定するには、[SAML Admin](./saml-admin.md) インターフェースを使用してください。 Instance Settingsインターフェイスを使用して[設定ファイル](./saml-configuration-reference.md)を作成したい上級者向けのドキュメントをここに掲載します。
+Instance Settingsのユーザーインターフェースは自動生成され、SAMLの設定を容易にするフィールド検証やその他の機能は提供されない。 SAMLインスタンスを設定するには、 [SAML管理](./saml-admin.md) インターフェースを使用してください。 Instance Settingsインターフェイスを使用して[設定ファイル](./saml-configuration-reference.md)を作成したい上級者向けのドキュメントをここに掲載します。
 ```
 
 1. _コントロールパネル_ &rarr; _インスタンス設定_ &rarr; _セキュリティ_ &rarr; _SSO_ &rarr; _SAML プロバイダ設定_.

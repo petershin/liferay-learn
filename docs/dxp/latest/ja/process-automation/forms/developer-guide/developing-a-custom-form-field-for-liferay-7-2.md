@@ -237,5 +237,5 @@ Liferay 7.2 では、カスタムフォームフィールドに別のフロン�
    STARTED com.acme.c2p9.impl_1.0.0 [1009]
    ```
 
-</a> フォームフィールドはデプロイされ、 Liferay 7.2上で使用できるように準備されています。</p>
+フォーム項目はデプロイされ、 Liferay 7.2上で[使用できるように準備されています](writing-a-custom-forms-field-type.md#use-the-deployed-slider-field)。
 

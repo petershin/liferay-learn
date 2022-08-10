@@ -60,7 +60,7 @@
 
 1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *コントロールパネル*を開き、 *サイトテンプレート*をクリックします。
 
-1. アプリケーションバーの *アクション* ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 *エクスポート/インポート*を選択します。
+1. アプリケーションバーの *アクション* ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 *エクスポート/インポート* を選択します。
 
    ![アプリケーションバーの「アクション」ボタンをクリックし、「エクスポート/インポート」を選択します。](./exporting-importing-site-templates/images/05.png)
 
@@ -68,7 +68,7 @@
 
    一括エクスポートの設定オプションは、 [個々のサイトテンプレートをエクスポートする場合とほとんど同じです。](#exporting-individual-site-templates) . ただし、各テンプレートに含まれるページやコンテンツは設定できません。 また、個別のエクスポートとは異なり、ページテンプレートがエクスポートに含まれるかどうかを決定することができます。
 
-   ![エクスポート]タブに移動して、インスタンス内のすべてのサイトテンプレートをエクスポートします。](./exporting-importing-site-templates/images/06.png)
+   ![エクスポートタブに移動して、インスタンス内のすべてのサイトテンプレートをエクスポートします。](./exporting-importing-site-templates/images/06.png)
 
    バルクインポートの設定オプションは、 [個別のサイトテンプレートをインポートする場合とほぼ同じです。](#importing-individual-site-templates) . ただし、LARファイルに含まれるPage TemplatesがSite Templatesと一緒にインポートされるかどうかを判断することは可能です。
 

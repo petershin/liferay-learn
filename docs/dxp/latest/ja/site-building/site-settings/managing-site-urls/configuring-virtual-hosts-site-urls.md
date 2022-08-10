@@ -4,9 +4,9 @@
 
 1. プロバイダーで、Liferay DXP インスタンスの IP アドレスを指すように DNS 名を設定します。 <!-- I think we can take this .5 step further by either linking to a often cited resource on how on a common domain name provider, a user would update the DNS name to point to a particular IP address. -->
 
-1. Liferay DXP 内で Site Menu (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *Configuration*を展開し、 *Site Settings* &rarr; *Site Configuration* &rarr; *Site URL*に進みます。
+1. Liferay DXP 内で Site Menu (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *Configuration* を展開し、 *Site Settings* &rarr; *Site Configuration* &rarr; *Site URL* に進みます。
 
-   ![サイト構成]の [サイトのURL]に移動します。](./configuring-virtual-hosts-site-urls/images/01.png)
+   ![［サイト設定］の［サイトURL］に移動します。](./configuring-virtual-hosts-site-urls/images/01.png)
 
 1. *バーチャルホスト* フィールドに希望のドメインまたはサブドメインを入力します（例： `www.helloworld.com`, `http://developers.helloworld.com`)。
 

@@ -1,6 +1,6 @@
 # フォームを利用したユーザー調査
 
-Liferayの以前のバージョンでは、サイト管理者はサイト管理 &rarr; コンテンツとデータメニューにある専用のPollsアプリケーションにアクセスすることができました。 [ [このアプリケーションは、Liferay 7.3](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-4) で非推奨となり、Liferay 7.4](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-3) で削除されました。
+Liferayの以前のバージョンでは、サイト管理者はサイト管理&rarr;コンテンツとデータメニューにある専用のPollsアプリケーションにアクセスすることができました。このアプリケーションは、[Liferay 7.3](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-3)で非推奨となり、[Liferay 7.4](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4)で削除されました。
 
 Liferay Formsは、旧バージョンのLiferayでPollsアプリケーションが扱っていたユースケースを実現するために強化されました。 新しいポールを作成するには、ここで説明する機能を持つLiferay Formsを使用します。
 

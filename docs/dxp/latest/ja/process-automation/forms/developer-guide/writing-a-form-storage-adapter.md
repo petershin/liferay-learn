@@ -18,7 +18,7 @@
 
 次に、以下の手順に従います。
 
-1. Download and unzip [the DDM Storage Adapter project](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) .
+1. ダウンロードし、解凍してください [the DDM Storage Adapter project](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) .
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-r2f1.zip -O
@@ -48,19 +48,19 @@
 
 1. ブラウザで<http://localhost:8080>を開きます。
 
-1. _サイトメニュー_ &rarr; _コンテンツ & データ_ &rarr; _フォーム_のフォームアプリケーションに移動します。
+1. _サイトメニュー_ &rarr; _コンテンツ & データ_ &rarr; _フォーム_ のフォームアプリケーションに移動します。
 
 1. *追加* ボタン（![Add](./../../../images/icon-add.png)）をクリックして、フォームビルダーを開きます。
 
 1. ［フォームビルダー］ビューで、*オプション* ボタン（![Options](./../../../images/icon-options.png)）をクリックし、*［Settings］*ウィンドウを開きます。
 
-1. *［ストレージの種類を選択する］*で、*［R2F1 Dynamic Data Mapping Storage Adapter］*タイプを選択し、_［Done］_をクリックします。
+1. *［ストレージの種類を選択する］*で、*［R2F1 Dynamic Data Mapping Storage Adapter］*タイプを選択し、_［Done］_ をクリックします。
 
 1. フォームに[テキストフィールド](../creating-and-managing-forms/creating-forms.md)を追加し、フォームを公開して、何度か送信します。
 
 1. フォームデータが保持されていることを確認するには、フォームのレコードに移動します。
 
-   _［サイトメニュー］_ → _［コンテンツ］_ → _［フォーム］_から、フォームの *アクション* ボタン(![Actions](./../../../images/icon-actions.png))をクリックして、_［エントリの参照］_をクリックします。
+   _［サイトメニュー］_ → _［コンテンツ］_ → _［フォーム］_から、フォームの *アクション* ボタン(![Actions](./../../../images/icon-actions.png))をクリックして、_［エントリの参照］_ をクリックします。
 
    ![フォームエントリーが追加されたことを確認します。](./writing-a-form-storage-adapter/images/02.png)
 
@@ -293,13 +293,13 @@ private static final Log _log = LogFactoryUtil.getLog(
 
 以下のように動作を確認します。
 
-1. _サイトメニュー_ &rarr; _コンテンツ_ &rarr; _フォーム_にあるフォームアプリケーションにアクセスします。
+1. _サイトメニュー_ &rarr; _コンテンツ_ &rarr; _フォーム_ にあるフォームアプリケーションにアクセスします。
 
 1. *追加* ボタン![Add](./../../../images/icon-add.png)をクリックして、フォームビルダーを開きます。
 
 1. ［フォームビルダー］ビューで、*オプション* ボタン（![Options](./../../../images/icon-options.png)）をクリックし、*［Settings］*ウィンドウを開きます。
 
-1. リストを選択フィールド*［ストレージの種類を選択する］*から、*［R2F1 Dynamic Data Mapping Storage Adapter］*タイプを選択し、_［完了］_をクリックします。
+1. リストを選択フィールド*［ストレージの種類を選択する］*から、*［R2F1 Dynamic Data Mapping Storage Adapter］*タイプを選択し、_［完了］_ をクリックします。
 
 1. フォームに[テキストフィールド](../creating-and-managing-forms/creating-forms.md)を追加し、フォームを公開して、何度か送信します。
 

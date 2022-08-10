@@ -9,13 +9,13 @@
 
 ## 登録済みのJSON Webサービス
 
-データソースの中には、 [restcountries.com](https://restcountries.com) データプロバイダーのようなサードパーティーのソースから取得するものもあります。 また、Liferay DXPには独自に登録されたWebサービスがあります。 ローカルサーバーを実行している場合は、 [http://localhost:8080/api/jsonws](http://localhost:8080/api/jsonws) でリストを参照してください。 国のリストを入力する場合、2つの`get-countries` JSON Web サービスがありますが、どちらでも動作します。 _［Invoke］_をクリックすると、結果が生成されます。
+データソースの中には、 [restcountries.com](https://restcountries.com) データプロバイダーのようなサードパーティーのソースから取得するものもあります。 また、Liferay DXPには独自に登録されたWebサービスがあります。 ローカルサーバーを実行している場合は、 [http://localhost:8080/api/jsonws](http://localhost:8080/api/jsonws) でリストを参照してください。 国のリストを入力する場合、2つの`get-countries` JSON Web サービスがありますが、どちらでも動作します。 _［Invoke］_ をクリックすると、結果が生成されます。
 
 ```{warning}
-ローカルテスト環境でLiferayのWebサービスとデータプロバイダを使ってテストするには、ローカルネットワークアクセスを有効にする必要があります。 [ローカルネットワーク上のデータへのアクセスの有効化]を参照してください（./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network` __）。
+ローカルテスト環境でLiferayのWebサービスとデータプロバイダを使ってテストするには、ローカルネットワークアクセスを有効にする必要があります。[ローカルネットワーク上のデータへのアクセスの有効化](./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network)を参照してください
 ```
 
-_［Result］_タブには、次のアフガニスタンのレコードのように、JSON構文を使用した国のリストが表示されます。
+_［Result］_ タブには、次のアフガニスタンのレコードのように、JSON構文を使用した国のリストが表示されます。
 
 ```json
 [
@@ -40,7 +40,7 @@ Webサービスから選択可能なフィールドを選択します。 `get-co
 
 ## データプロバイダー設定リファレンス
 
-フォームアプリケーションからデータプロバイダーを設定するには、 _［サイト管理］_ &rarr; _［コンテンツ & データ］_ &rarr; _［フォーム］_へ行きます。 _［データプロバイダー］_タブをクリックし、（![Add icon](../../../images/icon-add.png)）アイコンをクリックして開始します。 データプロバイダーを設定する際には、いくつかのフィールドに入力する必要があります。
+フォームアプリケーションからデータプロバイダーを設定するには、 _［サイト管理］_ &rarr; _［コンテンツ & データ］_ &rarr; _［フォーム］_ へ行きます。 _［データプロバイダー］_ タブをクリックし、（![Add icon](../../../images/icon-add.png)）アイコンをクリックして開始します。 データプロバイダーを設定する際には、いくつかのフィールドに入力する必要があります。
 
 ![このデータサービスでは、国を返します。](./data-providers-overview/images/03.png)
 
@@ -54,7 +54,7 @@ Webサービスから選択可能なフィールドを選択します。 `get-co
 
 パスパラメーターは、REST Webサービスを呼び出すURLの一部で、`https://service-url.com/service/{path_parameter_name}`というパターンを使用して追加されます。
 
-たとえば、 `restcountries.com`サービスの`region`エンドポイントのパスパラメーターは`{region}`です。 パスパラメーターはURLの必須部分なので、URLのパスパラメーターに一致する _［パラメーター］_フィールド値を持つ入力（下記参照）を指定してください。
+たとえば、 `restcountries.com`サービスの`region`エンドポイントのパスパラメーターは`{region}`です。 パスパラメーターはURLの必須部分なので、URLのパスパラメーターに一致する _［パラメーター］_ フィールド値を持つ入力（下記参照）を指定してください。
 
 クエリパラメーターは、サービス呼び出しの出力を絞り込むためのURLの補完的な部分で、`?query_parameter=query_parameter_value`というパターンに従います。
 

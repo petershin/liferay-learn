@@ -3,7 +3,7 @@
 ユーザーはWebサイトにアクセスすると、コンテンツと対話し、興味に応じてさまざまな行動を示します。 Liferay DXPは、 [Liferay Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) と組み合わせて、この閲覧動作を分析し、ユーザーに関連するコンテンツを表示できます。 これは、ユーザーが購入または消費する可能性が高い特定の製品またはコンテンツを宣伝するのに役立ちます。 たとえば、ユーザーがオンラインストアにアクセスして特定の種類の商品に関心を示した場合、コンテンツリコメンデーションを使用して、類似商品や関連商品のプロモーションをユーザーに表示できます。
 
 ```{important}
-コンテンツリコメンデーションをユーザーに提供するには、[Analytics CloudをLiferay DXPインスタンスに接続する] (https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)必要があります。
+コンテンツリコメンデーションをユーザーに提供するには、[Analytics CloudをLiferay DXPインスタンスに接続する](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)必要があります。
 ```
 
 ## コンテンツリコメンデーションの仕組み
@@ -27,22 +27,17 @@ Analytics Cloudは現在、ユーザーの興味を引くためのタイトル�
 次の要素が設定されていれば、コンテンツ推薦は自動的に機能します。
 
 1. [Analytics CloudがLiferay DXPインスタンスに接続され](./configuring-content-recommendations.md#connecting-analytics-cloud-to-your-liferay-dxp-instance) 、サイトコンテンツが同期されている。
-2. Liferay DXPで異なるコンテンツを含む</a>動的コレクションを作成
-し、コンテンツ推薦オプションを有効にする。</li> 
-   
-   3 アセットパブリッシャー、コレクション表示フラグメント、またはコレクションページを使用して、 [動的コレクションを表示](./configuring-content-recommendations.md#displaying-the-dynamic-collection) する。</ol> 
-
-
+2. Liferay DXPで異なるコンテンツを含む[動的コレクションを作成](./configuring-content-recommendations.md#creating-a-dynamic-collection)
+し、コンテンツ推薦オプションを有効にする。
+3. アセットパブリッシャー、コレクション表示フラグメント、またはコレクションページを使用して、 [動的コレクションを表示](./configuring-content-recommendations.md#displaying-the-dynamic-collection) する。
 
 ```{note}
 コレクションは、Liferay DXP 7.2ではコンテンツセットと呼ばれています。
 ```
 
-
 コレクションまたはコンテンツセットを表示する方法は、Liferay DXPのバージョンによって異なります。 Liferay DXP 7.2では、アセットパブリッシャーを使用して表示ページにコンテンツセットを表示します。 DXP 7.3以降では、アセットパブリッシャーに加えて、コレクション表示フラグメントまたはコレクションページを使用してコレクションのコンテンツを表示できます。 コレクション、コレクションページ、およびコンテンツセットの詳細は、[コレクションとコレクションページについて](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)を参照してください。
 
 サイトのコンテンツ推薦を表示する方法の詳細は、[コンテンツ推薦の設定](./configuring-content-recommendations.md)を参照してください。
-
 
 
 ## コンテンツ推薦を実装する方法の例
@@ -53,15 +48,11 @@ DXPでは、動的コレクションを作成し、カトラリー、調理器�
 
 ユーザーがコーヒー関連のコンテンツを訪問し、対話を行えば行うほど、このユーザーの個人プロファイルの中で「コーヒー」が高く関連付けられ、コーヒーに関するコンテンツリコメンデーション数が増え、他の商品のリコメンデーション数が減ります。
 
-
-
 ## コンテンツリコメンデーションとセグメント
 
 ユーザーの行動に基づいて推奨コンテンツを表示することは、[セグメント](../segmentation/creating-and-managing-user-segments.md)を使用してユーザーエクスペリエンスをパーソナライズすることとは異なります。 セグメントを使用する場合、ユーザーをグループに分類し、これらの特定のグループにコンテンツをターゲティングします。 セグメントベースのパーソナライゼーションでは、特定のコンテンツを特定のユーザーグループにターゲティングします。 コンテンツ推薦では、サイトでのユーザーの以前の動作に基づいてコンテンツがユーザーに自動的に推奨されるため、グループを定義する必要はありません。
 
 ただし、[セグメントを使用してコレクションをカスタマイズする](./personalizing-collections.md)機能を利用して、特定のユーザーグループにコンテンツ推薦を提供できます。 たとえば、コンテンツ推薦の動的コレクションを、ドイツからの訪問者のみを含むセグメントと組み合わせることができます。 この場合、ドイツからサイトに訪問した人だけが、このコレクションからコンテンツ推薦を受け取ります。
-
-
 
 ## 関連情報
 

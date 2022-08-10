@@ -15,7 +15,7 @@
 1. Site の *の名前* を入力します。
 
    ```{note}
-   プライベートページ](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages)がシステムで有効になっていれば、サイトテンプレートから継承したすべてのページがプライベートかどうか判断することができます。
+   [プライベートページ](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages)がシステムで有効になっていれば、サイトテンプレートから継承したすべてのページがプライベートかどうか判断することができます。
    ```
 
 1. *保存* をクリックして、Siteの作成を開始します。

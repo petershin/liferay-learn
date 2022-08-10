@@ -65,7 +65,7 @@ Liferay 6.2を使用していた場合、以下のシステムワイドプロパ
 
 後者の2つのプロパティは、単一のプロパティに置き換えられました。`com.liferay.saml.runtime.configuration.SamlConfiguration.getMetadataRefreshInterval()`
 
-また、*［コントロールパネル］*&rarr;*［システム設定］*&rarr;［セキュリティ］&rarr;SSOでの［SAML KeyStoreManager インプリメンテーション設定］の導入についても注意してください。 この設定のオプションは、[Configuring SAML at the System Level](./configuring-saml-at-the-system-level.md)で説明されています。
+また、*［コントロールパネル］*&rarr;*［システム設定］*&rarr;［セキュリティ］&rarr;SSOでの［SAML KeyStoreManager インプリメンテーション設定］の導入についても注意してください。 この設定のオプションは、 [システムレベルでのSAMLの設定](./configuring-saml-at-the-system-level.md) で説明されています。
 
 最近のバージョンでは、 `SHA256` が設定および鍵の生成に使用されるデフォルトの暗号化アルゴリズムです。 デフォルト設定は、`SHA256`、次に `SHA384`、そして `SHA512` を経て `SHA1`にフォールバックしようとします。 `SHA1` は潜在的に脆弱であるため、このプロパティを使用してブラックリスト化することが可能です。
 

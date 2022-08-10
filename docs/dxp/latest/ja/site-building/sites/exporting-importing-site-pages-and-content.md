@@ -3,7 +3,7 @@
 Liferay Sites には、サイトデータを Liferay Archive (LAR) ファイルとして抽出・転送するための Export/Import アプリケーションが含まれています。 これらのツールは、サイトレベルでアクセスすることができます。
 
 ```{note}
-また、個々のサイトアプリケーションや[ページウィジェット]のエクスポート/インポート機能(../creating-pages/using-widget-pages/configuring-widgets/exporting-importing-widget-data.md)にアクセスすることが可能です。
+また、個々のサイトアプリケーションや[ページウィジェット](../creating-pages/using-widget-pages/configuring-widgets/exporting-importing-widget-data.md)のエクスポート／インポート機能にアクセスすることが可能です。
 ```
 
 ## サイトLARのプロパティと要件
@@ -17,14 +17,14 @@ LARにはこのようなプロパティと要件があります。
 * LARを使用してサイトを復元することはできますが、サイトを完全に削除してから、LARをインポートするために同じ名前で新しいサイトを作成する必要があります。 これにより、LARと本サイトの両方に存在するコンテンツの間でデータが衝突する可能性を回避できます。
 
 ```{important}
-定期的にLARをエクスポートすることは、バックアップソリューションではありません; 2つの環境間でデータを移行するためにのみ使用されるべきです。 Liferayインストールのバックアップについては、【Liferay Portalインストールのバックアップ】(../../installation-and-upgrades/maintaining-a-liferay-installation/backing-up.md) を参照してください。
+定期的にLARをエクスポートすることは、バックアップソリューションではありません; 2つの環境間でデータを移行するためにのみ使用されるべきです。 Liferayインストールのバックアップについては、[Liferay Portalインストールのバックアップ](../../installation-and-upgrades/maintaining-a-liferay-installation/backing-up.md) を参照してください。
 ```
 
 ## サイトのページとコンテンツをエクスポートする
 
 以下の手順で、サイトページとコンテンツをエクスポートします。
 
-1. *サイトメニュー* (![Site Menu](../../images/icon-product-menu.png)) を開き、 *パブリッシング*を展開し、 *エクスポート*をクリックします。
+1. *サイトメニュー* (![Site Menu](../../images/icon-product-menu.png)) を開き、 *パブリッシング*を展開し、 *エクスポート* をクリックします。
 
 1. *追加* ボタン (![Add Button](../../images/icon-add.png)) をクリックし、新しいエクスポートプロセスを作成します。
 

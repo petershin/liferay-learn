@@ -1,4 +1,4 @@
-# Configuring SAML at the System Level
+# システムレベルでのSAMLの設定
 
 ポータルインスタンスで SAML 認証を有効にする前に、システムレベルで構成して、これらのインスタンスで作業するための基礎を作る必要がある。 たとえば、ポータルインスタンスでSAMLを構成しているときに、ファイルシステムからドキュメントライブラリにキーストアを移動しなければならないことに気づくことはないだろう。 これでは、誰もが設定に頭を悩ませることになる。 システムレベルのオプションを先に設定するのがよいでしょう。
 
@@ -28,7 +28,7 @@
 
 設定できるオプションは様々です。
 
-**キーストアタイプ。** キーストアタイプを設定します。 デフォルトは、 _jks_、つまりJava Key Storeです。 Java でサポートされている任意のオプション [を選択することができます](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types)。
+**キーストアタイプ。** キーストアタイプを設定します。 デフォルトは、 _jks_、つまりJava Key Storeです。 Java でサポートされている任意のオプション [を選択することができます](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) 。
 
 **SSO Session Check Interval（SSOセッションのチェック間隔）。** ここに入力した分ごとに、IdPは期限切れのセッションをチェックする必要があります。
 

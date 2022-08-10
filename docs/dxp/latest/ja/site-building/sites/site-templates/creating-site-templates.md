@@ -3,7 +3,7 @@
 サイトテンプレートでは、サイトを作成するためのテンプレートを設計し、設定することができます。 各テンプレートは、Sitesと同じツールを使って構築されています。
 
 ```{tip}
-サイトテンプレートは、主に複数のサイトにまたがるページを管理するためのものです。 Webコンテンツやその他のアセットをサイト間で作成・管理する必要がある場合は、「アセットライブラリ」（.../.../content-authoring and-management/asset-libraries/asset-libraries-overview.md） を使用します。 また、自動伝播が必要ない場合は、サイトデータを環境間で転送するために、[export and import](./exporting-importing-site-pages-and-content.md) を行うことができます。
+サイトテンプレートは、主に複数のサイトにまたがるページを管理するためのものです。 Webコンテンツやその他のアセットをサイト間で作成・管理する必要がある場合は、[Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) を使用します。 また、自動伝播が必要ない場合は、サイトデータを環境間で転送するために、[export and import](./exporting-importing-site-pages-and-content.md) を行うことができます。
 ```
 
 以下の手順で、サイトテンプレートを作成します。

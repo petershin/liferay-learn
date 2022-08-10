@@ -20,11 +20,11 @@ Forms アプリケーションには、高度に設定可能な [フィールド
     Liferay 7.2 をお使いの場合、サポートされるフロントエンドフレームワークの違いにより、このソースコードは動作しません。 C2P9 Sliderのコードサンプルを7.2用に適合させる方法については、 [Developing a Custom Form Field for Liferay 7.2](./developing-a-custom-form-field-for-liferay-7-2.md) を参照してください。
 ```
 
-## Examine the Custom Form Field in Liferay 
+## Liferay のカスタムフォームフィールドを検証する
 
-To see how custom form fields work, deploy an example and then add some form data using the new field.
+カスタムフォームフィールドがどのように機能するかを見るために、例をデプロイし、新しいフィールドを使っていくつかのフォームデータを追加してみましょう。
 
-### Deploy the Example
+### 例をデプロイする
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -53,7 +53,7 @@ To see how custom form fields work, deploy an example and then add some form dat
 
    ```{note}
    Liferay 7.3 の場合、デプロイする前にプロジェクトに以下の調整を加えてください。
-   - c2p9-impl/package.json` で、`devDependencies` の参照を `@liferay/portal-7.4` から `@liferay/portal-7.3` に変更します。
+   - `c2p9-impl/package.json` で、`devDependencies` の参照を `@liferay/portal-7.4` から `@liferay/portal-7.3` に変更します。
    - `gradle.properties` で `liferay.workspace.product` の値を `portal-7.3-ga8` に変更します (GA8 より新しい Liferay 7.3 バージョンがある場合は、代わりにここを参照してみてください)。
    ```
 

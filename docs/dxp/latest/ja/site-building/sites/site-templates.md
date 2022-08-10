@@ -26,10 +26,11 @@ Liferayには、サイト作成時に使用できる構造やコンテンツを�
 テンプレートを使ってサイトを作成すると、テンプレートのページに変更を加え、その変更を接続されているサイトに自動的に反映させることができます。 詳しくは、 [テンプレート変更の伝搬](./site-templates/propagating-template-changes.md) を参照してください。
 
 ```{important}
-サイトテンプレートは、主に複数のサイトにまたがるページを管理するためのものです。 Webコンテンツやその他のアセットをサイト間で作成・管理する必要がある場合は、「アセットライブラリ」（.../.../content-authoring and-management/asset-libraries/asset-libraries-overview.md） を使用します。
+サイトテンプレートは、主に複数のサイトにまたがるページを管理するためのものです。 Webコンテンツやその他のアセットをサイト間で作成・管理する必要がある場合は、[アセットライブラリ](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) を使用します。
 ```
 
-::::{grid} 2 :gutter: 3 3 3 3
+::::{grid} 2
+:gutter: 3 3 3 3
 
 :::{grid-item-card} サイトテンプレートの作成
 :link: ./site-templates/creating-site-templates.md
@@ -45,4 +46,5 @@ Liferayには、サイト作成時に使用できる構造やコンテンツを�
 
 :::{grid-item-card} サイトテンプレートのエクスポートとインポート
 :link: ./site-templates/exporting-importing-site-templates.md
-::: :::
+:::
+::::

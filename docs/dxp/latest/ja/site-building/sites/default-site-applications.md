@@ -3,7 +3,7 @@
 すべてのサイトには、パーソナライズされたデジタル体験を構築するための以下のコアアプリケーションが含まれています。 *サイトメニュー* (![Site Menu](../../images/icon-product-menu.png)) からアクセスすることができます。 *サイトメニュー* には、Objects で作成されたカスタムアプリケーションも含めることができます。 詳しくは、 [オブジェクトの作成](../../building-applications/objects/creating-and-managing-objects/creating-objects.md) をご覧ください。
 
 ```{tip}
-お客様があるサイトにおいてアプリケーションを使用する場合、アプリケーションのデータはそのサイト内に限定され、他のサイトと共有することはできません。 ただし、アセットライブラリを使用すると、一部のアセットタイプを複数のサイトで使用できるようにすることができます。 詳しくは、[Asset Libraries](../../content-authoring and-management/asset-libraries/asset-libraries-overview.md) をご覧ください。
+お客様があるサイトにおいてアプリケーションを使用する場合、アプリケーションのデータはそのサイト内に限定され、他のサイトと共有することはできません。 ただし、アセットライブラリを使用すると、一部のアセットタイプを複数のサイトで使用できるようにすることができます。 詳しくは、[Asset Libraries](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) をご覧ください。
 ```
 
 ## デザイン

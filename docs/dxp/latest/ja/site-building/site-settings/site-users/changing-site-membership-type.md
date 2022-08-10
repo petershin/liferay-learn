@@ -17,7 +17,7 @@
     - Liferay DXP 7.4+の場合
 
       1. サイトのメニューから、*［Configuration］* &rarr; *［Site Settings］*に移動します。
-      1. ［プラットフォーム］セクションで、*［Site Configuration］*をクリックしてから、*［Details］*をクリックします。
+      1. ［プラットフォーム］セクションで、*［Site Configuration］* をクリックしてから、*［Details］* をクリックします。
 
        ![Liferay DXP 7.4以降では、［サイト設定］セクションからサイトメンバーシップタイプを変更します。](./changing-site-membership-type/images/02.png)
 
@@ -34,6 +34,6 @@
 
 ## 関連情報
 
-- [Managing Site Membership and Permissions With User Groups](../../../users-and-permissions/user-groups/managing-site-membership-and-permissions-with-user-groups)
+- [ユーザーグループを使用したサイトメンバーシップと権限の管理](../../../users-and-permissions/user-groups/managing-site-membership-and-permissions-with-user-groups)
 - [サイトメンバーシップ](../../sites/site-membership.md)
 - [サイト設定UIリファレンス](../site-settings-ui-reference.md)

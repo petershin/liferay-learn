@@ -34,7 +34,7 @@ Liferay DXPインスタンスは、サービスプロバイダー（SP）また�
 SAMLの構成に直接移動するか、SAMLがどのように機能するかを学ぶことができます。
 
 * [SAML Authentication Process Overview (近日公開！)](./authenticating-with-saml/saml-authentication-process-overview.md)
-* [Configuring SAML at the System Level](./authenticating-with-saml/configuring-saml-at-the-system-level.md)
+* [システムレベルでのSAMLの設定](./authenticating-with-saml/configuring-saml-at-the-system-level.md)
 * [SAML管理](./authenticating-with-saml/saml-admin.md)
-* [Configuring SAML at the Instance Level](./authenticating-with-saml/configuring-saml-at-the-instance-level.md)
+* [インスタンスレベルでのSAMLの設定](./authenticating-with-saml/configuring-saml-at-the-instance-level.md)
 * [SAML Configuration Reference](./authenticating-with-saml/saml-settings.md)

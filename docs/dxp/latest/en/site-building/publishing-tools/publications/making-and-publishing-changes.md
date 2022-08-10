@@ -80,6 +80,18 @@ Click on an individual change to view more details. From here, you can also clic
 
 ![Click on individual changes to view more details.](./making-and-publishing-changes/images/06.png)
 
+### Previewing Changes to Pages
+
+{bdg-secondary}`Available 7.4 U37+ and GA37+`
+
+If you edit a Page in a Publication, Liferay generates a URL for previewing your changes alongside the original version of the Page. You can access this URL while reviewing Publication changes by clicking the desired changes to the Page. This renders the two versions of the Page side by side.
+
+```{note}
+When previewing Page changes, you cannot access Page editing tools.
+```
+
+<!-- ![]() -->
+
 ## Publishing Your Changes
 
 When you've finished making your changes, you can publish them immediately or schedule them to be published at a later time. Once published, a publication is listed in the *History* tab of the Publications application. This maintains a clear audit trail that you can use review and revert Site changes when needed. See [Reverting Changes](./reverting-changes.md) for more information.

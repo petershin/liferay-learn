@@ -1,10 +1,8 @@
 # Configuring Automatic Publishing of Displayed Content
 
-> Available: Liferay DXP/Portal 7.4+
+{bdg-secondary}`Available 7.4+`
 
-By default, Site publish processes automatically publish content displayed using the following widgets: Dynamic Data Lists Display, Form, Web Content Display, and Wiki Display. This happens regardless of the publish process's configuration to ensure your displayed content in Live stays up to date.
-
-However, always republishing displayed content to Live can be unnecessary and slow down publishing. If desired, you can disable this default behavior in System Settings to improve publishing speeds. When disabled, only content included in the publishing process's configuration is published.
+By default, only content explicitly included in a publishing process is published to Live. If desired, you can configure your instance to always publish content displayed using the following widgets: Dynamic Data Lists Display, Form, Web Content Display, and Wiki Display. This can help ensure displayed content is always up to date in Live.
 
 Follow these steps to configure this Staging behavior:
 
@@ -17,6 +15,10 @@ Follow these steps to configure this Staging behavior:
    * When enabled, displayed content is republished for the following widgets, regardless of the publishing process's configuration: Dynamic Data Lists Display, Form, Web Content Display, and Wiki Display.
 
    * When disabled, only content included in the publishing process's configuration is published.
+
+   ```{tip}
+   Keep in mind that always republishing displayed content to Live can be unnecessary and slow down publishing.
+   ```
 
 1. Click *Save*.
 

@@ -1,10 +1,10 @@
 # Troubleshooting the Elasticsearch Connection
 
-## Network Host Addresses / Transport Addresses Configuration and Elasticsearch Nodes' Hosts Mismatch
+Listed here are some of the most common connection issues encountered when configuring the Liferay-Elasticsearch connection, along with the most common solutions to those issues.
 
-Possible errors (in Liferay's server log):
+## Mismatch between Liferay and Elasticsearch's Host Configurations
 
-On Liferay 7.3 and 7.4,
+On Liferay 7.3 and 7.4 (using the REST client connection) you can see this log message:
 
 ```
 Caused by: java.net.ConnectException: Timeout connecting to
@@ -19,7 +19,7 @@ Caused by: java.net.ConnectException: Timeout connecting to
 	... 55 more
 ```
 
-On Liferay 7.0-7.2,
+On Liferay 7.0-7.2 (using the Java Transport client), you can see this log message:
 
 ```
 2021-06-04 17:53:06.654 ERROR [main][ElasticsearchEngineConfigurator:93] bundle com.liferay.portal.search.elasticsearch7.impl:4.0.9 (83)[com.liferay.portal.search.elasticsearch7.internal.ElasticsearchEngineConfigurator(16)] : The activate method has thrown an exception 
@@ -35,7 +35,7 @@ java.lang.RuntimeException: org.elasticsearch.client.transport.NoNodeAvailableEx
 	at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.HealthClusterRequestExecutorImpl.execute(HealthClusterRequestExecutorImpl.java:46)
 ```
 
-The above errors indicate that Elasticsearch connector in Liferay is attempting to connect to Elasticsearch using host `es-node1-prod` and it can't find any available nodes. Obtain the Elasticsearch node(s) logs and look for lines like 
+The Elasticsearch connector in Liferay is attempting to connect to the Elasticsearch host `es-node1-prod` but can't find any available nodes. In the Elasticsearch logs look for lines like these:
 
 ```
 [2021-06-04T17:31:22,472][INFO ][o.e.t.TransportService   ] [es-node1] publish_address {es-node1/192.168.0.17:9300}, bound_addresses {192.168.0.17:9300}
@@ -43,17 +43,24 @@ The above errors indicate that Elasticsearch connector in Liferay is attempting 
 [2021-06-04T17:31:23,080][INFO ][o.e.h.AbstractHttpServerTransport] [es-node1] publish_address {es-node1/192.168.0.17:9200}, bound_addresses {192.168.0.17:9200}
 ```
 
-These are indicating the actual address of the given node. In this example, it is `es-node1/192.168.0.17:9300` for the Transport address and `es-node1/192.168.0.17:9200` for the HTTP address.
+The actual address of the given node is printed. In this example it is `es-node1/192.168.0.17:9300` for the Transport address and `es-node1/192.168.0.17:9200` for the HTTP address.
 
-Therefore, the connector config in Liferay should use
-* `networkHostAddresses=["http:es-node1:9200"]` on Liferay 7.3 and 7.4 (`["es-node1:9200"]` also works)
-* `transportAddresses=["es-node1:9300"]` on Liferay 7.0-7.2.
+The correct connector configuration in Liferay 7.3 and 7.4 is
+
+```properties
+networkHostAddresses=["http:es-node1:9200"]
+# The value ["es-node1:9200"] also works
+```
+
+The correct connector configuration in Liferay 7.0-7.2 is
+
+```properties
+transportAddresses=["es-node1:9300"]
+```
 
 ## TLS/SSL is Enabled, but Liferay is Attempting to Communicate Over an Unencrypted Channel
 
-Possible errors (in Liferay's server log):
-
-On Liferay 7.3 and 7.4,
+On Liferay 7.3 and 7.4 you can see this log message:
 
 ```
 Caused by: org.apache.http.ConnectionClosedException: Connection is closed
@@ -81,29 +88,29 @@ Caused by: org.apache.http.ConnectionClosedException: Connection is closed
 	... 1 more
 ```
 
-On Liferay 7.0-7.2, it manifests in the general `org.elasticsearch.client.transport.NoNodeAvailableException` error.
+On Liferay 7.0-7.2 the error manifests as a more general `org.elasticsearch.client.transport.NoNodeAvailableException`.
 
-Related errors in Elasticsearc's log:
+The Elasticsearch log shows related errors.
 
-On Liferay 7.3 and 7.4,
+On Liferay 7.3 and 7.4, the [Elasticsearch 7](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.4) log prints
 
 ```
 [2021-06-04T18:09:11,925][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [es-node1] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=0.0.0.0/0.0.0.0:9200, remoteAddress=/192.168.0.17:41104}
 ```
 
-On a Liferay 7.0-7.2,
+On a Liferay 7.0-7.2, the [Elasticsearch 6/7](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.2-Elasticsearch) log prints
 
 ```
 [2021-06-04T18:11:13,045][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] received plaintext traffic on an encrypted channel, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:34346}
 ```
 
-The Elasticsearch WARNs are indicating that the server received plaintext traffic on an encrypted channel.
+The Elasticsearch warnings indicate that the server received plain text traffic on an encrypted channel.
 
-Open the `elasticsearch.yml` and if it has `xpack.security.*` properties set for the transport and/or http layers (and optionally you also see `xpack.security.enabled: true`) it means Elasticsearch has X-Pack Security enabled so the connector in Liferay must also be configured accordingly.
+If the `elasticsearch.yml` file has `xpack.security.*` properties set for the transport and/or http layers (you may also see `xpack.security.enabled: true`), Elasticsearch has X-Pack Security enabled. Thus the connector in Liferay must be configured accordingly.
 
-Consult with the [Securing Elasticsearch](../securing-elasticsearch.html) article and adjust your settings, if needed.
+See [Securing Elasticsearch](../securing-elasticsearch.html) for the correct connector configurations.
 
-## Elasticsearch Node Host Does Not Match the DNS Names in the Certificate
+## The Elasticsearch Host Name Does Not Match the DNS Names in the Certificate
 
 Possible errors:
 
@@ -125,7 +132,7 @@ Caused by: javax.net.ssl.SSLPeerUnverifiedException: Host name 'es-node1' does n
 	... 1 more
 ```
 
-On Liferay 7-0-7.2, it manifests in `org.elasticsearch.client.transport.NoNodeAvailableException: NoNodeAvailableException` and `java.security.cert.CertificateException: No subject alternative DNS name matching found` errors.
+On Liferay 7.0-7.2 the error manifests as `org.elasticsearch.client.transport.NoNodeAvailableException: NoNodeAvailableException` and `java.security.cert.CertificateException: No subject alternative DNS name matching found`.
 
 ```
 [2021-06-08T17:09:24,557][WARN ][o.e.c.s.DiagnosticTrustManager] [
@@ -133,22 +140,23 @@ ode_name]failed to establish trust with server at [es-node1]; the server provide
 java.security.cert.CertificateException: No subject alternative DNS name matching es-node1 found.
 ```
 
-Note: on Liferay 7.0-7.2, this happens only when `transportSSLVerificationMode="full"` is set in `*.XPackSecurityConfiguration.config` in Liferay, so the client (connector in Liferay) is not only verifying that the Elasticsearch server node's certficate is signed by a trusted CA, but it's also performing host name/IP address verification.
+```{note}
+On Liferay 7.0-7.2 this happens only when `transportSSLVerificationMode="full"` is set in the `XPackSecurityConfiguration.config` file. The client (i.e., the connector in Liferay) is not only verifying that the Elasticsearch node's certificate is signed by a trusted CA, but it's also performing host name/IP address verification.
+```
 
-
-Related Elasticsearch error (on Liferay 7.0-7.2),
+There's a related Elasticsearch 6/7 error that appears on Liferay 7.0-7.2:
 
 ```
 [2021-06-08T17:06:03,540][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:40486}
 ```
 
-This error indicates that the Elasticsearch server node's host is not found in the certificate it is presenting to the client (Liferay) during the SSL handshake as a _Subject Alternative Name_: server's host: `es-node1` in this example, while the certificate is containing `es-node-1`.
+These errors signal that the Elasticsearch node's host is not found in the certificate it is presenting to the client (i.e., the connector in Liferay) during the SSL handshake. The host name must appear in the certificate as a Subject Alternative Name: in this case, the declared host name `es-node1` doesn't match the name in the certificate (perhaps it's `es-node-1` in the certificate).
 
-Open the server's certificate and DNS names/IP addresses under the `Subject Alternative Names` category and check if the server's host is there. If it is not, the cert should be updated.
+Open the server's certificate. If the server host name isn't in the DNS names/IP addresses under the `Subject Alternative Names` category, update the certificate.
 
-## Authentication Fails Due to Incorrect X-Pack Security User Credentials (username or password)
+## Authentication Fails Due to Incorrect X-Pack Security Credentials
 
-On Liferay 7.3 and 7.4 when the `password` set in the connector configuration is incorrect,
+On Liferay 7.3 and 7.4 when the password set in the connector configuration doesn't match the password in Elasticsearch, exceptions appear in the log:
 
 ```
 Caused by: java.lang.RuntimeException: org.elasticsearch.ElasticsearchStatusException: ElasticsearchStatusException[method [HEAD], host [https://es-node-1:9200], URI [/liferay-20102-workflow-metrics-processes?ignore_throttled=false&include_type_name=true&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true], status line [HTTP/1.1 401 Unauthorized]]; nested: ResponseException[method [HEAD], host [https://es-node-1:9200], URI [/liferay-20102-workflow-metrics-processes?ignore_throttled=false&include_type_name=true&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true], status line [HTTP/1.1 401 Unauthorized]];
@@ -157,7 +165,7 @@ Caused by: java.lang.RuntimeException: org.elasticsearch.ElasticsearchStatusExce
 	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1583) ~[?:?]
 ```
 
-If the `username` is incorrect,
+If the user name is incorrect, a different error can appear:
 
 ```
 2021-06-04 18:34:49.059 ERROR [com.liferay.data.engine.internal.petra.executor.DataEngineNativeObjectPortalExecutor-2][DataEngineNativeObjectPortalExecutor:163] java.lang.RuntimeException: org.elasticsearch.ElasticsearchStatusException: ElasticsearchStatusException[Elasticsearch exception [type=security_exception, reason=unable to authenticate user [elasticc] for REST request [/_bulk?refresh=true&timeout=1m]]]
@@ -171,19 +179,19 @@ java.lang.RuntimeException: org.elasticsearch.ElasticsearchStatusException: Elas
 	at org.elasticsearch.client.RestHighLevelClient.bulk(RestHighLevelClient.java:533) ~[?:?]
 ```
 
-On Liferay 7.0-7.2, it manifests in the `org.elasticsearch.client.transport.NoNodeAvailableException` error.
+On Liferay 7.0-7.2 the error manifests as `org.elasticsearch.client.transport.NoNodeAvailableException`.
 
-Corresponding Elasticsearch error,
+There's a corresponding error that appears in Elasticsearch:
 
 ```
 [2021-06-04T18:30:29,114][INFO ][o.e.x.s.a.AuthenticationService] [es-node1] Authentication of [elastic] was terminated by realm [reserved] - failed to authenticate user [elastic]
 ```
 
-Open the connector configuration and make sure that the username/password configured match with the credentials of the X-Pack user set up in Elasticsearch.
+Open the connector configuration in Liferay and make sure that the user name and password match the credentials of the X-Pack user in Elasticsearch.
 
-## Security is Enabled in Liferay, but X-Pack Security is Disabled in Elasticsearch
+## Security is Enabled in Liferay but Disabled in Elasticsearch
 
-On Liferay 7.3 and 7.4,
+On Liferay 7.3 and 7.4 the following log messages can appear:
 
 ```
 Caused by: javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
@@ -205,28 +213,26 @@ Caused by: javax.net.ssl.SSLException: Unrecognized SSL message, plaintext conne
 	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.12.jar:4.4.12]
 ```
 
-On Liferay 7.0-7.2, it usually manifests in the `org.elasticsearch.client.transport.NoNodeAvailableException` error.
+On Liferay 7.0-7.2 the error manifests with `org.elasticsearch.client.transport.NoNodeAvailableException`.
 
-Corresponding Elasticsearch error,
+There's a corresponding Elasticsearch error:
 
 ```
 [2021-06-07T17:48:31,554][WARN ][o.e.t.TcpTransport       ] [es-node1] SSL/TLS request received but SSL/TLS is not enabled on this node, got (16,3,3,1), [Netty4TcpChannel{localAddress=/192.168.0.17:9300, remoteAddress=/192.168.0.17:40646}], closing connection
 ```
 
-Open `elasticsearch.yml` and make sure `xpack.security.enabled` is not set to `false` and the HTTP and Transport layers are also configured properly to use encrypted communication according to the [Securing Elasticsearch](../securing-elasticsearch.html) article.
+Open `elasticsearch.yml` and make sure `xpack.security.enabled` is not set to `false`. Ensure that the HTTP and Transport layers are configured to use encrypted communication according to the [Securing Elasticsearch](../securing-elasticsearch.html) article.
 
-## Liferay and the Elasticsearch Nodes are Using Certificates Signed by a Different CA
+## Liferay and Elasticsearch are Using Certificates Signed by a Different Certificate Authority
 
-This happens when when `*.ssl.verification_mode` is configured as `certificate` or `full` in `elasticsearch.yml` for the HTTP and/or Transport layer.
-
-On Liferay 7.3 and 7.4,
+When `*.ssl.verification_mode` settings are `certificate` or `full` in `elasticsearch.yml`, the following error can appear in Liferay 7.3 and 7.4:
 
 ```
 Caused by: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
 	at sun.security.ssl.Alert.createSSLException(Alert.java:131) ~[?:?]
 ```
 
-On Liferay 7.0-7.2 when `transportSSLVerificationMode="certificate"` is set in the `*.XPackSecurityConfiguration.config` file,
+On Liferay 7.0-7.2, if `transportSSLVerificationMode="certificate"` is set in the `XPackSecurityConfiguration.config` file, this error can appear:
 ,
 
 ```
@@ -235,19 +241,21 @@ ode_name]failed to establish trust with server at [<unknown host>]; the server p
 sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
 ```
 
-Corresponding Elasticsearch error in case of Liferay 7.0-7.2 when connecting to the server over TCP:
+A corresponding Elasticsearch error appears with Liferay 7.0-7.2 when connecting to the server over TCP:
 
 ```
 [2021-06-07T18:19:49,623][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:41820}
 ```
 
-Make sure all nodes in your stack (Liferay, Elasticsearch, Kibana) are using certificates signed by the same Certificate Authority (CA) and the certificate (public key) of the CA is present in the client's (DXP, Kibana) truststore/sslCertificateAuthoritiesPaths files. If you open your cert files, the "Issuer Name" or "Issued by" entry holds information about the issuer CA.
+Make sure all nodes in your stack (e.g., Liferay, Elasticsearch, and Kibana) are using certificates signed by the same Certificate Authority (CA) and the certificate (public key) of the CA is present in the client's environment. For example, make sure the `sslTruststorePath` or `sslCertificateAuthoritiesPath` settings are configured according the [Securing Elasticsearch documentation](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2).
 
-## Elasticsearch Monitoring/X-Pack Monitoring Widget is Temporarily Unavailable
+```{tip}
+Open the certificate files and find the "Issuer Name" or "Issued by" entry. This holds information about the issuer CA.
+```
 
-This can happen due to Certificate Issues when Kibana is using HTTPS.
+## Elasticsearch Monitoring and/or the X-Pack Monitoring Widget is Temporarily Unavailable
 
-On Liferay 7.3 and 7.4,
+[Monitoring Elasticsearch](../../../liferay-enterprise-search.md#monitoring-elasticsearch) demonstrates configuring Kibana to use HTTPS. Certificate issues with the setup can cause these log messages to appear on Liferay 7.3 and 7.4:
 
 ```
 2021-06-08 13:54:53.084 ERROR [http-nio-8080-exec-8][MonitoringProxyServlet:107] java.net.ConnectException: Connection refused (Connection refused)
@@ -272,7 +280,7 @@ java.net.ConnectException: Connection refused (Connection refused)
 	at com.liferay.portal.search.elasticsearch.monitoring.web.internal.servlet.MonitoringProxyServlet.service(MonitoringProxyServlet.java:224) [bundleFile:?]
 ```
 
-On Liferay 7.0-7.2,
+On Liferay 7.0-7.2, different messages can appear:
 
 ```
 2021-06-08 13:24:57.104 ERROR [http-nio-7211-exec-8][XPackMonitoringProxyServlet:106] javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
@@ -280,17 +288,19 @@ javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.pro
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
 ```
 
-Corresponding Kibana error,
+A corresponding Kibana error can appear:
 
 ```
  error  [13:24:57.089] [error][client][connection] Error: 139942872246080:error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1544:SSL alert number 46
 ```
 
-The above errors indicate that the server (Kibana) the client (Liferay DXP through the LES Monitoring app) is probably using a self-signed certificate and the CA is not present in the client's trustStore file, which is the JDK's `cacerts` file by default.
+These errors indicate that the Kibana server is using a self-signed certificate and the CA is not present in the client's (Liferay DXP is the client, through the LES Monitoring app) truststore file. The JDK's `cacerts` file is the default truststore.
 
-Because you’re using the Monitoring portlet in Liferay as a proxy to Kibana’s UI and you are using a self-signed certificate, you must configure the application server’s startup JVM parameters to trust Kibana’s certificate.
+Because you're using the Monitoring portlet in Liferay as a proxy to Kibana's UI and using a self-signed certificate, you must configure the application server's startup JVM parameters to trust Kibana's certificate.
 
-One approach is to add the truststore path, password and type to your application server’s startup JVM parameters using the same files you also used to configure the Elasticsearch connector to use security. Here are example truststore and path parameters for appending to a Tomcat server’s `CATALINA_OPTS` through the `setenv.sh/bat` file:
+
+<!--I don't like this--the first approach is what we discuss in the monitoring docs, but it's not the recommended one? We should probably just cover the recommended approach, here and in the monitoring docs -->
+One approach is to add the truststore path, password and type to your application server's startup JVM parameters using the same files you also used to configure the Elasticsearch connector to use security. Here are example truststore and path parameters for appending to a Tomcat server's `CATALINA_OPTS` through the `setenv.sh/bat` file:
 
 ```
 CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/path/to/elastic-nodes.p12 -Djavax.net.ssl.trustStorePassword=liferay -Djavax.net.ssl.trustStoreType=pkcs12"
@@ -302,9 +312,9 @@ Another approach (recommended) is to make a copy of the default `cacerts` file (
 CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/PATH/TO/cacerts-custom.jks -Djavax.net.ssl.trustStorePassword=changeit"
 ```
 
-## SSLException: No PSK available. Unable to resume Error and Elasticsearch Monitoring/X-Pack Monitoring widget is Broken with Kibana 7.11+
+## SSL Exception when Using JDK 11 and Elasticsearch 7.11+
 
-Related error in Liferay,
+When Liferay DXP is configured to use JDK version 11 and communicate with Kibana version 7.11+, the following error can appear in Liferay's log:
 
 ```
 12:24:42,480 ERROR [http-nio-8080-exec-10][XPackMonitoringProxyServlet:108] javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
@@ -324,11 +334,9 @@ javax.net.ssl.SSLException: No PSK available. Unable to resume.
 
 See the [Monitoring Elasticsearch](../liferay-enterprise-search/monitoring-elasticsearch.md#troubleshooting-the-monitoring-setup) article.
 
-## java.io.IOException: parseAlgParameters failed: ObjectIdentifier() -- data isn't an object ID (tag = 48)
+## IOException: Data Isn't an Object ID
 
-This can happen when the the `.p12` files was generated using `keytool` by a JDK from a higher major version than what DXP is running on. (For example, generating the certs using JDK11, but than running the portal with JDK8.
-
-Related error from Liferay 7.3 and 7.4,
+When the the `.p12` file was generated using `keytool` by a JDK from a higher major version than the Liferay JDK, this error can appear in Liferay's log: 
 
 ```
 09:30:55,298 ERROR [ServerService Thread Pool -- 106][ElasticsearchConnectionManager:93] bundle com.liferay.portal.search.elasticsearch7.impl:5.0.17 (670)[com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager(1656)] : The activate method has thrown an exception
@@ -347,28 +355,25 @@ java.lang.RuntimeException: java.io.IOException: parseAlgParameters failed: Obje
         at com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnection.connect(ElasticsearchConnection.java:64)
 ```
 
-You have the following options,
-A.) Re-generate the certificate(s) using the same version of JDK that is used by DXP.  
-B.) Use `JKS` format instead of `PKCS12` for the keystore  
-C.) Use the `-Dkeystore.pkcs12.legacy` option with keytool to set the `keystore.pkcs12.legacy` system property and force OpenJDK 11/16's keytool to use the older algorithms (which are supported by Java 8 and 11)  
+For example, generating the certs using JDK11 but running Liferay with JDK8 can produce this exception.
 
-Related resources,
-* https://stackoverflow.com/questions/67766268/ioexception-in-java-8-when-reading-pkcs12-keystore-created-with-keytool-from-ope
-* https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8202837
-* https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8267837
-* https://liferay.slack.com/archives/CKY6GP7BL/p1634911737006400
+To proceed, follow one of these options:
 
-## CA Certificate Used to Sign Node Certificate is Not Trusted
+1. Re-generate the certificate(s) using a matching JDK version.
+1. Use the `JKS` format instead of `PKCS12` for the keystore.
+1. Use the `-Dkeystore.pkcs12.legacy` option with `keytool` to set the `keystore.pkcs12.legacy` system property and force OpenJDK 11/16's keytool to use the older algorithms.
 
-During the SSL handshake both in inter node communication between Elasticsearch nodes or between Liferay and the Elasticsearch nodes, the CA's certificate used to sign the nodes' certificates must be trusted, thus, be present in the `truststore` or `keystore` of the nodes. Otherwise the connection will fail. This is usually a problem when using Self-Signed Certificates.
+## The CA Certificate Used to Sign the Node Certificate is Not Trusted
 
-In a multi-node Elasticsearch cluster, the node which receives the request (the "server) from another node (the "client") may throw the following WARN message,
+During the SSL handshake between Elasticsearch nodes or between Liferay and Elasticsearch, the CA certificate used to sign the node certificates must be trusted. Make sure the certificate is present in the `truststore` or `keystore` of all nodes. This is usually a problem when using self-signed certificates.
+
+In a multi-node Elasticsearch cluster, the Elasticsearch server node receiving the request from a client Elasticsearch node can throw the following warning message:
 
 ```
 [2022-07-15T11:49:39,361][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/127.0.0.1:44198, profile=default}
 ```
 
-and the on client side (the other node) it manifests in a `SunCertPathBuilderException`:
+On the client Elasticsearch node the error manifests in a `SunCertPathBuilderException`:
 
 ```
 [2022-07-15T11:49:39,354][WARN ][o.e.t.OutboundHandler    ] [es-node2] send message failed [channel: Netty4TcpChannel{localAddress=/127.0.0.1:44198, remoteAddress=es-node1/127.0.0.1:9300, profile=default}]
@@ -377,24 +382,27 @@ javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.pro
 	at sun.security.ssl.TransportContext.fatal(TransportContext.java:368) ~[?:?]
 ```
 
-To test if this is really the root cause, you can set temporarily `xpack.security.transport.ssl.verification_mode: none` in the `elasticsearch.yml` of each node to see if they are able to connect.
+Some further testing can confirm the root cause. Temporarily set `xpack.security.transport.ssl.verification_mode: none` in the `elasticsearch.yml` of each node. If the errors clear up and the connection is successful, the certificate isn't present in the keystore or truststore of the client node.
 
-Note the following from [Elasticsearch's docs](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-settings.html#transport-tls-ssl-settings),
+```{warning}
+Never leave the SSL verification mode set to `none` in production environments.
 
-> `none`, which performs no verification of the server’s certificate. This mode disables many of the security benefits of SSL/TLS and should only be used after very careful consideration. **It is primarily intended as a temporary diagnostic mechanism when attempting to resolve TLS errors; its use on production clusters is strongly discouraged.**
-> 
-> The default value is `full`.
+Read the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-settings.html#transport-tls-ssl-settings) to learn more about the SSL verification mode setting.
+```
 
-Similarly, Liferay won't be able to establish the connection with the Elasticsearch nodes either and will throw an error like this if the Elasticsearch nodes certificates were signed by a non-trusted CA (for example when using Self-Signed Certificates),
+A similar problem can occur between Liferay and the Elasticsearch nodes. Liferay throws an error like this if the Elasticsearch node certificates were signed by a non-trusted CA (for example when using self-signed certificates):
 
 ```
 2022-07-15 10:15:54.287 ERROR [main][ElasticsearchSearchEngine:47] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.48 (335)[com.liferay.portal.search.elasticsearch7.internal.ElasticsearchSearchEngine(925)] : The activate method has thrown an exception
 java.lang.RuntimeException: org.elasticsearch.ElasticsearchException: ElasticsearchException[java.util.concurrent.ExecutionException: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target];
 ```
 
-The solution is to make sure that the CA's certificate that signed the (Elasticsearch) nodes certificates is present (thus, trusted) in the truststore configured in Liferay: the trustore that is used for the Elasticsearch connections in Liferay is set through the `truststorePath` property in case of `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config` (Elasticsearch 7 connector) or `sslTruststorePath` in `com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config` (LES Security app). 
+Make sure that the CA's certificate that signed the Elasticsearch node certificates is present and trusted in the truststore configured in Liferay. 
+* If your [security settings](../securing-elasticsearch.md) are in the Elasticsearch 7 connector's configuration (`com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`), set the trustore for the Elasticsearch connections using the `truststorePath` property.
+* If your security settings are in the LES Security app's configuration (`com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config`, set the truststore using the `sslTruststorePath` property. 
 
-If it's not present, you need to add it using Java's `keytool` or other tools like `openssl`, depending on the format of the CA's and your nodes certificates (PKCS#12 or PEM).
+<!-- I got lost with the material below. How does it relate to the material above here? Is it about going from PKCS#12 to PEM? -->
+If the it's not present, you need to add it using Java's `keytool` or other tools like `openssl`, depending on the format of the CA's and your nodes certificates (PKCS#12 or PEM).
 
 For example, if you have your CA's certificate (public key) and private key are stored in `ca.p12` and your node certificate is `elastic-nodes.p12`, you can do the following,
 

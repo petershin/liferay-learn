@@ -17,11 +17,10 @@ troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-sidecar
 
 Liferay is full of configurations, and Elasticsearch is full of configurations. Whenever you [connect such products](./getting-started-with-elasticsearch.md), you can run into difficulty along the way. 
 
-Troubleshooting the Elasticsearch Connection 
+Included below are techniques that can aid your troubleshooting work. To learn about some of the errors you might experience and how to solve them, see
 
-Troubleshooting Common Issues
-
-Included below are techniques that can aid your troubleshooting work.
+- [Troubleshooting the Elasticsearch Connection](./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md)
+- [Troubleshooting Elasticsearch: Common Issues](./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md)
 
 ## Getting the Elasticsearch Query of Search Bar Widget Searches
 

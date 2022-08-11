@@ -1,6 +1,6 @@
 # Elasticsearchへの接続
 
-[Elasticsearchを設定](./installing-elasticsearch.md)した後、Liferay Connector to Elasticsearchを使用してLiferayをElasticsearchに接続する必要があります。 接続の手順は、設定している[コネクタ](#available-liferay-elasticsearch-connectors)によって異なります。
+[Elasticsearchを設定](./installing-elasticsearch.md)した後、Liferay Connector to Elasticsearchを使用してLiferayをElasticsearchに接続する必要があります。 接続の手順は、設定している [コネクタ](#available-liferay-elasticsearch-connectors) によって異なります。
 
 * Liferay 7.3：Liferay Connector to Elasticsearchは、Liferay DXP 7.3およびCE 7.3 GA4以降に含まれています。 また、[Liferay マーケットプレイス](../../../system-administration/installing-and-managing-apps/using-marketplace.md)でも入手可能です。
 * Liferay 7.2：Liferay Connector to Elasticsearchは[Liferay マーケットプレイス](../../../system-administration/installing-and-managing-apps/using-marketplace.md)で入手できます。
@@ -11,7 +11,7 @@
 接続を設定する前に、各Liferayサーバーノードを停止します。
 ```
 
-Liferay 7.2を使用している場合は、[Liferay 7.2：Elasticsearch 7コネクタのインストール](#liferay-7-2-installing-elasticsearch-7-connector)にスキップしてください。
+Liferay 7.2を使用している場合は、 [Liferay 7.2：Elasticsearch 7コネクタのインストール](#liferay-7-2-installing-elasticsearch-7-connector) にスキップしてください。
 
 ## コネクタの設定
 
@@ -71,7 +71,7 @@ Liferay 7.3+コネクタのシンプル設定では、本番環境モード（`p
 Elasticsearchサーバーを名前で参照するには、各Elasticsearchサーバー名をDNSまたはLiferayサーバーの`/etc/hosts` ファイル内のIPアドレスにマップします。
 
 ```{tip}
-ネットワークホストアドレスの書式は `http[s]://[ホスト名]:[port]`です。 LiferayのDockerコンテナを使用している場合、`--add-host [host name]:[IP address]` オプションを `docker run` コマンドで使用し、各ElasticsearchサーバのIPアドレスにホスト名をマッピングすることが可能です。 ポートは、Elasticsearchコンテナのdocker runコマンドで、`-p 1234:5678` オプションの最初の値として定義されています（この場合は `1234`です）。 HTTPSを有効にしていないローカルなテスト環境では、すべてのアドレスが `http://localhost:port` になることがあります。 詳しくは[Dockerのドキュメント](https://docs.docker.com/engine/reference/run/#managing-etchosts)をご覧ください。
+ネットワークホストアドレスの書式は `http[s]://[ホスト名]:[port]`です。 LiferayのDockerコンテナを使用している場合、`--add-host [host name]:[IP address]` オプションを `docker run` コマンドで使用し、各ElasticsearchサーバのIPアドレスにホスト名をマッピングすることが可能です。 ポートは、Elasticsearchコンテナのdocker runコマンドで、`-p 1234:5678` オプションの最初の値として定義されています（この場合は `1234`です）。 HTTPSを有効にしていないローカルなテスト環境では、すべてのアドレスが `http://localhost:port` になることがあります。 詳しくは [Dockerのドキュメント](https://docs.docker.com/engine/reference/run/#managing-etchosts) をご覧ください。
 ```
 
 ## Liferay 7.2：Elasticsearch 7コネクタのインストール
@@ -111,10 +111,10 @@ Liferay 7.2では、バンドルされているコネクタアプリケーショ
 
 1. Liferay Connector to Elasticsearch 7をダウンロードします。
 
-   コネクタがElasticsearchのバージョンに対応していることを確認してください。 コネクタアプリケーションが新しいバージョン（7.18.0など）をサポートしている場合でも、コネクタのクライアントライブラリが古いバージョンのElasticsearch（7.17.1など）用である可能性があることに注意してください。 Liferayは、Elasticsearchのマイナーバージョンごとにコネクタをテストし、必要に応じて新しいアップデートコネクタバージョンを作成します。 コネクタの互換性については、[検索エンジンの互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360016511651)を参照してください。
+   コネクタがElasticsearchのバージョンに対応していることを確認してください。 コネクタアプリケーションが新しいバージョン（7.18.0など）をサポートしている場合でも、コネクタのクライアントライブラリが古いバージョンのElasticsearch（7.17.1など）用である可能性があることに注意してください。 Liferayは、Elasticsearchのマイナーバージョンごとにコネクタをテストし、必要に応じて新しいアップデートコネクタバージョンを作成します。 コネクタの互換性については、 [検索エンジンの互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
 
-   * CE： [Liferay CE Connector to Elasticsearch 7](https://web.liferay.com/en/marketplace/-/mp/application/170642090)です。
-   * DXP： [Liferay Connector to Elasticsearch 7](https://web.liferay.com/en/marketplace/-/mp/application/170390307)です。
+   * CE： [Liferay CE Connector to Elasticsearch 7](https://web.liferay.com/en/marketplace/-/mp/application/170642090) です。
+   * DXP： [Liferay Connector to Elasticsearch 7](https://web.liferay.com/en/marketplace/-/mp/application/170390307) です。
 
 1. [LPKGをフォルダに配置してインストール](../../../system-administration/installing-and-managing-apps/installing-apps.md)します。
 
@@ -184,14 +184,14 @@ Elasticsearchのインデックスをプライマリデータストレージと�
 |:----------------------- |:------------------------------------------------ |:----------------------------------------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------------- |:--------------------------------- |
 | Liferay 7.4、全種類         | Liferay Connector to  Elasticsearch 7            | バンドル                                                                                                                                                  | [HTTP](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-overview.html) | &#10004;                                                                                  | Sidecar / Remote (Production)\* |
 | ce 7.3 ga4, dxp 7.3 ga1 | Liferay (CE) Connector to Elasticsearch 7        | バンドル                                                                                                                                                  | [HTTP](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-overview.html) | &#10004;                                                                                  | Sidecar / Remote (Production)\* |
-| CE 7.2、DXP 7.2          | Liferay Connector (CE) to Elasticsearch 6        | バンドル                                                                                                                                                  | [トランスポート](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html) | &#10004;\*\* (requires [LES](https://www.liferay.com/products/dxp/enterprise-search)) | エンベデッド/リモート                       |
-| CE 7.2、DXP 7.2          | Liferay Connector (CE) to Elasticsearch 7 (v3.x) | マーケットプレイス [CE](https://web.liferay.com/marketplace/-/mp/application/170642090), [DXP](https://web.liferay.com/marketplace/-/mp/application/170390307) | [トランスポート](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html) | &#10004;                                                                                  | エンベデッド/リモート                       |
+| CE 7.2、DXP 7.2          | Liferay Connector (CE) to Elasticsearch 6        | バンドル                                                                                                                                                  | [トランスポート](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html) | &#10004;\*\* (requires [LES](https://www.liferay.com/products/dxp/enterprise-search) ) | エンベデッド/リモート                       |
+| CE 7.2、DXP 7.2          | Liferay Connector (CE) to Elasticsearch 7 (v3.x) | マーケットプレイス [CE](https://web.liferay.com/marketplace/-/mp/application/170642090) , [DXP](https://web.liferay.com/marketplace/-/mp/application/170390307) | [トランスポート](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html) | &#10004;                                                                                  | エンベデッド/リモート                       |
 
 \*  コネクタ設定の_動作モード_ (`operationMode`) 設定は非推奨になり、_本番モードが有効_ (`productionModeEnabled`)に置き換えられました。
 
-\*\* [Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963)アプリケーションを通して。
+\*\* [Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963) アプリケーションを通して。
 
-互換性のあるElasticsearchのバージョンや必要なパッチレベルなど、詳細な互換性情報については、 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360016511651)を参照してください。
+互換性のあるElasticsearchのバージョンや必要なパッチレベルなど、詳細な互換性情報については、 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
 
 ## 次のステップ
 

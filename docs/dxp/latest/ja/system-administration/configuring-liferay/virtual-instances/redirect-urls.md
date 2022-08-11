@@ -4,7 +4,7 @@
 
 Liferayインスタンスは、特定のURLやIPアドレスへのリダイレクトを許可するように設定することができます。 設定するには、 *Control Panel* &rarr; *Instance Settings* &rarr; *Content and Data* &rarr; *Pages* &rarr; *Redirect URLs*に移動します。
 
-![インスタンス設定]の[リダイレクトURL]に移動します。](./redirect-urls/images/01.png)
+![インスタンス設定]の [リダイレクトURL]に移動します。](./redirect-urls/images/01.png)
 
 セキュリティモード」で、 *ドメイン* または *IP*のいずれかを選択します。 Liferayインスタンスでユーザーを許可されたドメインにリダイレクトさせたい場合は、 *Domain* を選択します。 Liferayインスタンスがユーザーを許可されたIPアドレスにリダイレクトしたい場合は、 *IP* を選択します。
 

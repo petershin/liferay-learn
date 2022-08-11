@@ -32,7 +32,7 @@
 
 ## 検索結果の関連性
 
-検索エンジンは、*関連性*によって結果を処理し、並び替えます。 関連性は、検索エンジンによって計算されたスコアです。 スコアは、[検索エンジンが提供するアルゴリズム ](https://www.elastic.co/guide/en/elasticsearch/guide/master/relevance-intro.html#relevance-intro)によって計算されます。
+検索エンジンは、*関連性*によって結果を処理し、並び替えます。 関連性は、検索エンジンによって計算されたスコアです。 スコアは、 [検索エンジンが提供するアルゴリズム ](https://www.elastic.co/guide/en/elasticsearch/guide/master/relevance-intro.html#relevance-intro) によって計算されます。
 
 結果の関連性は構成可能です。
 

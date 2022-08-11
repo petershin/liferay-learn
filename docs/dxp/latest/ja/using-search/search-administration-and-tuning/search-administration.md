@@ -35,7 +35,7 @@ Liferay 7.4 以降、サーバー管理者は再インデックスアクショ�
    ![インデックスを再作成するインスタンスを選択します。](./search-administration/images/03.png)
 
 ```{note}
-[ワークフロー統計情報](../process-automation/workflow/using-workflow/using-workflow-metrics.md)は、アプリケーション専用の設定メニューからインデックスが再作成されます。 グローバルメニューの［アプリケーション］ &rarr; ［ワークフロー］セクションの［ _Metrics_  ］をクリックし、［設定］ウィンドウを開きます (![Options](../../images/icon-actions.png)). 詳しくは、[ワークフローメトリクスのインデックスの再作成](../process-automation/workflow/using-workflow/using-workflow-metrics.md#re-indexing-workflow-metrics ) を参照してください。
+[ワークフロー統計情報](../process-automation/workflow/using-workflow/using-workflow-metrics.md)は、アプリケーション専用の設定メニューからインデックスが再作成されます。 グローバルメニューの［アプリケーション］ &rarr; ［ワークフロー］セクションの［ _Metrics_  ］をクリックし、［設定］ウィンドウを開きます (![Options](../../images/icon-actions.png)). 詳しくは、 [ワークフローメトリクスのインデックスの再作成](../process-automation/workflow/using-workflow/using-workflow-metrics.md#re-indexing-workflow-metrics ) を参照してください。
 ```
 
 ## フィールドマッピング

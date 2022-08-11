@@ -8,10 +8,10 @@
 
 次に、以下の手順に従います。
 
-1. Download and unzip [Roles API Basics](./liferay-z3v5.zip).
+1. Download and unzip [Roles API Basics](./liferay-z3v5.zip) .
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-z3v5.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-z3v5.zip -O
    ```
 
    ```bash
@@ -94,7 +94,7 @@
 他のJavaクラスの例もこれと同様であるが、異なる `RoleResource` メソッドを呼び出している。
 
 ```{important}
-サービスの詳細は、 [RoleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
+サービスの詳細は、 [RoleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
 ```
 
 以下は、cURL と Java を使用して、他の `Role` REST サービスを呼び出す例です。

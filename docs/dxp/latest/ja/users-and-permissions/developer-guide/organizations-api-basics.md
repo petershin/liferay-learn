@@ -8,10 +8,10 @@
 
 Then, follow these steps:
 
-1. Download and unzip [Organizations API Basics](./liferay-w2h3.zip).
+1. Download and unzip [Organizations API Basics](./liferay-w2h3.zip) .
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-w2h3.zip -O
    ```
 
    ```bash
@@ -160,7 +160,7 @@ Instance の `Organization` オブジェクトが JSON で表示されます。
 以下のcURLまたはJavaコマンドで、特定のOrganizationを取得します。
 
 ```{tip}
-インスタンスの ``Organization`` ID を取得するには、 ``Organizations_GET_FromInstance.[java|sh]`` を使用します。
+インスタンスの ``Organization` ID を取得するには、 ``Organizations_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
 ### 組織名_GET_ById.sh

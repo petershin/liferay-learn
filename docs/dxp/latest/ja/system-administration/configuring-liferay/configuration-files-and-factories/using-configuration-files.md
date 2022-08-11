@@ -4,7 +4,7 @@
 
 バージョンが同一であれば、構成ファイルを使用して、構成を実動前のシステムから実動システムに、または他のLiferay DXPシステム間で転送できます。
 
-構成ファイルは、 [Apache Felix構成管理フレームワーク](http://felix.apache.org/documentation/subprojects/apache-felix-config-admin.html)によって定義された `.config` プロパティ値の形式を使用します。
+構成ファイルは、 [Apache Felix構成管理フレームワーク](http://felix.apache.org/documentation/subprojects/apache-felix-config-admin.html) によって定義された `.config` プロパティ値の形式を使用します。
 
 ```{note}
 '.cfg`ファイルフォーマットはOSGi環境では一般的で、サポートされているフォーマットですが、プロパティ値の型を指定したり、複数の値を持つプロパティを許容したりできるため、 `.config`ファイルが好まれます。 このため、ベストプラクティスとして `.config` ファイルが使用・推奨・文書化されています。

@@ -28,16 +28,16 @@ Liferay Enterprise Search Experiencesアプリには、エンドユーザーの�
 - [検索ブループリントの作成と管理](./search-experiences/creating-and-managing-search-blueprints.md)
 - [検索ブループリントを検索ページで使用する](./search-experiences/using-a-search-blueprint-on-a-search-page.md)
 - [Search Experiencesのパーソナライズ](./search-experiences/personalizing-the-search-experience.md)
-- [Search blueprints Elements Reference](./search-experiences/search-blueprints-elements-reference.md)
+- [検索ブループリント要素のリファレンス](./search-experiences/search-blueprints-elements-reference.md)
 - [検索ブループリント 構成リファレンス](./search-experiences/search-blueprints-configuration-reference.md)
 - [エレメントの作成](./search-experiences/creating-and-managing-elements.md)
 
 ## Liferay Search Experiencesの取得
 
-Liferay Search Experiences は、Liferay DXP 7.3 および 7.4 で[Liferay Enterprise Search](../liferay-enterprise-search.md)サブスクリプションを持つ Liferay DXPのお客様に提供される予定です。
+Liferay Search Experiences は、Liferay DXP 7.3 および 7.4 で [Liferay Enterprise Search](../liferay-enterprise-search.md) サブスクリプションを持つ Liferay DXPのお客様に提供される予定です。
 
 * Liferay DPX 7.4 Update 5（アップデートの詳細は[こちら](../../../installation-and-upgrades/maintaining-a-liferay-installation/updating-liferay.md)）から、Search Experiencesは他のLESアプリと同様にバンドルアプリケーションとして提供されるようになりました。
-* Liferay DXP 7.3では、Search Experiencesはアドオンアプリケーションとしてカスタマーポータルを通じてLESサブスクライバーに提供されます。 [ Liferay DXP 7.3のLiferay Enterprise Search](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3)で利用可能かをご確認ください。
+* Liferay DXP 7.3では、Search Experiencesはアドオンアプリケーションとしてカスタマーポータルを通じてLESサブスクライバーに提供されます。 [ Liferay DXP 7.3のLiferay Enterprise Search](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3) で利用可能かをご確認ください。
 
 ## Search Experiences REST API
 

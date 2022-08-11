@@ -12,7 +12,7 @@ Liferay DXP 7.1、7.2、7.3の間の設定や手順の違いは、この説明�
 
 `localhost`で2つのシングルノードElasticsearchクラスターを使用し、それぞれに同じインデックスのコピーを設定します。 これは、クラスター横断レプリケーションのデータの局所性とディザスタリカバリのメリットを享受するために構成できる最も単純なシナリオです。
 
-バニラのLiferay DXPインストールには、[クラスター横断レプリケーション](./cross-cluster-replication.md#liferay-dxp-decide-which-indexes-to-replicate-from-the-remote-cluster)で提示されるインデックスが含まれています。 Liferay DXPで使用されるすべてのElasticsearchクラスター（この例では2つのクラスター）には、これらのインデックスが必要です。
+バニラのLiferay DXPインストールには、 [クラスター横断レプリケーション](./cross-cluster-replication.md#liferay-dxp-decide-which-indexes-to-replicate-from-the-remote-cluster) で提示されるインデックスが含まれています。 Liferay DXPで使用されるすべてのElasticsearchクラスター（この例では2つのクラスター）には、これらのインデックスが必要です。
 
 ここで提供されるElasticsearch API呼び出しは、Kibanaの開発ツールコンソールにコピーして貼り付けることができ、別のKibanaインストールまたは[LES モニタリングウィジェット](../monitoring-elasticsearch.md)からアクセスできます。
 
@@ -32,7 +32,7 @@ cluster.link.enabled=true
 
 ## 必要なElasticsearchプラグインのインストール
 
-必要なElasticsearch[プラグイン](../../installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md#install-elasticsearch)を必ずインストールしてください。
+必要なElasticsearch [プラグイン](../../installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md#install-elasticsearch) を必ずインストールしてください。
 
 - `analysis-icu`
 - `analysis-stempel`
@@ -56,7 +56,7 @@ cluster.link.enabled=true
 
    Liferay DXP 7.1および7.2の場合、 `ElasticsearchConfiguration.config` でリモート接続を、 `ElasticsearchConnectionConfiguration-ccr.config` でリードオンリー接続を設定します。
 
-   各接続にセキュリティ設定を含めます。 詳細は、[Elasticsearchの保護](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)を参照してください。 [Configuring CCR in a Local Follower Data Center](./configuring-ccr-in-a-local-follower-data-center.md)では、ローカルDXPノードからの読み取り専用CCR接続に対するセキュリティの設定について説明しています。
+   各接続にセキュリティ設定を含めます。 詳細は、[Elasticsearchの保護](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)を参照してください。 [ローカルフォロワーデータセンターでのCCRの構成](./configuring-ccr-in-a-local-follower-data-center.md) では、ローカルDXPノードからの読み取り専用CCR接続に対するセキュリティの設定について説明しています。
 
 完全な構成例は、[こちら](./ccr-basic-use-case-config-reference.md)で提供しています。
 
@@ -64,7 +64,7 @@ cluster.link.enabled=true
 
 Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーションは、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 そのため、Liferay DXP 7.4+ では、LPKG のインストールは不要です。 詳しくは、 [LESの有効化](./activating-liferay-enterprise-search.md) をご覧ください。
 
-1. [LESダウンロードページ](https://customer.liferay.com/downloads)から、Elasticsearch LPKGのLiferay DXPクラスター横断レプリケーションをダウンロードします。
+1. [LESダウンロードページ](https://customer.liferay.com/downloads) から、Elasticsearch LPKGのLiferay DXPクラスター横断レプリケーションをダウンロードします。
 
 1. すべてのDXPノードに[LPKGをインストール](../../../system-administration/installing-and-managing-apps/installing-apps.md)します。
 

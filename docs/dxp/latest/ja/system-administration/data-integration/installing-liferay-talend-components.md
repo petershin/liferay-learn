@@ -6,7 +6,7 @@ LiferayのTalend Open Studio用コンポーネントは、Liferay DXP/PortalとM
 
 ## 前提条件
 
-Liferayコンポーネントをインストールするには、JDK 1.8+、Apache Maven 3.3+、および [DXP/Portalコードのローカルコピー](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend)が必要です。 また、 [Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) 、 [Components API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) 、すでにインストールされている必要があります。
+Liferayコンポーネントをインストールするには、JDK 1.8+、Apache Maven 3.3+、および [DXP/Portalコードのローカルコピー](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend) が必要です。 また、 [Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) 、 [Components API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) 、すでにインストールされている必要があります。
 
 ## Talend Open Studioの構成
 

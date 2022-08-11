@@ -8,7 +8,7 @@ Liferay DXPで作業を行うには、 [ユーザー](./../users/understanding-u
 
 * [ロールの作成と管理](./creating-and-managing-roles.md)
 * [ロール権限の定義](./defining-role-permissions.md)
-* [Assigning Users to Roles](./assigning-users-to-roles.md)
+* [ユーザーのロールへの割り当て](./assigning-users-to-roles.md)
 
 ```{note}
 [サイトチーム](./../../site-building/sites/site-membership/creating-teams for-sites.md) には、専用の権限管理ユーザインタフェースが用意されています。
@@ -46,7 +46,7 @@ Liferay DXP内で目的の機能を実行するために必要な権限をユー
 
 ### 標準ロール
 
-インスタンススコープのロールは通常のロールと呼ばれます。 これらのロールは、グローバルに、または [仮想インスタンス](./../../system-administration/configuring-liferay/virtual-instances.html)全体に権限を付与します。
+インスタンススコープのロールは通常のロールと呼ばれます。 これらのロールは、グローバルに、または [仮想インスタンス](./../../system-administration/configuring-liferay/virtual-instances.html) 全体に権限を付与します。
 
 いくつかのユーザーコレクションを通常のロールに割り当てることができます。
 

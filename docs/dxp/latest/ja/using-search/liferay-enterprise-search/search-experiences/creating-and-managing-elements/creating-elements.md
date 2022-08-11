@@ -2,10 +2,10 @@
 
 Search Blueprints に同梱されている [system Elements はたくさんあります](../search-blueprints-elements-reference.md). システムエレメントで対応できない場合は、サーチブループリントのエレメントを独自に作成する方法もあります。
 
-* [Custom JSON Element](#using-the-custom-json-elements) を使用して、Search Blueprints [Query Builder](../creating-and-managing-search-blueprints.md#using-the-query-builder)から Element を作成します。
+* [Custom JSON Element](#using-the-custom-json-elements) を使用して、Search Blueprints [Query Builder](../creating-and-managing-search-blueprints.md#using-the-query-builder) から Element を作成します。
 * [Add Element source editor](#using-the-add-element-source-editor) を使用すると、便利なプレビュー機能やシステム内の定義済みテンプレート変数のリストなど、より堅牢なElementエディタを使用してElementを記述することができます。
 * [システムのElement](./managing-elements.md) を複製して、独自のカスタムElementを開発するためのスタートラインに立つことができます。
-* [](../search-blueprints-elements-reference.md#paste-any-elasticsearch-query) Paste Any Elasticsearch Query system Element ElasticsearchクエリDSL の使い方に慣れていて、Elasticsearchクエリを元に素早くElementを作り上げたい場合は、この方法を使用します。</a>
+* [Paste Any Elasticsearch Query system Element](../search-blueprints-elements-reference.md#paste-any-elasticsearch-query) Paste Any Elasticsearch Query system Element ElasticsearchクエリDSL の使い方に慣れていて、Elasticsearchクエリを元に素早くElementを作り上げたい場合は、この方法を使用します。</a>
 </li> </ul> 
   
   
@@ -35,9 +35,9 @@ Custom JSON Elementをビルダーに追加し、定型的なJSONの編集を開
 ```
 
 
-JSONエディタに入力すると、オートコンプリートにより、利用可能なプロパティが表示されます。 利用可能なJSONプロパティをさらに理解するには、 [スキーマを理解する](#understanding-the-element-schema)を参照してください。
+JSONエディタに入力すると、オートコンプリートにより、利用可能なプロパティが表示されます。 利用可能なJSONプロパティをさらに理解するには、 [スキーマを理解する](#understanding-the-element-schema) を参照してください。
 
-どのような要素でもカスタムJSON要素で記述することができますが、通常、この方法は、クエリ句とおそらく条件を追加する単純な要素にのみ使用するのが最適です。 多くの場合、 `uiConfiguration` セクションは必要なく、Element で使用できる定義済みのテンプレート変数を広範囲に使用することはありません。 より複雑なケースでは、 [Element source editor](#using-the-add-element-source-editor)をご利用ください。
+どのような要素でもカスタムJSON要素で記述することができますが、通常、この方法は、クエリ句とおそらく条件を追加する単純な要素にのみ使用するのが最適です。 多くの場合、 `uiConfiguration` セクションは必要なく、Element で使用できる定義済みのテンプレート変数を広範囲に使用することはありません。 より複雑なケースでは、 [Element source editor](#using-the-add-element-source-editor) をご利用ください。
 
 例えば、以下のExclude Journal Articles Elementは、Custom JSON Elementをベースにしています。 `exclude.journal_articles` というパラメータが `true`のときだけ、Element のクエリが適用されるように条件を追加しています。 このクエリでは、 `must_not` term クエリ句を追加して、結果が Web Content article の `entryClassName` フィールドと一致しないことを確認しています。
 
@@ -116,13 +116,13 @@ JSONエディタに入力すると、オートコンプリートにより、利�
 
 Elementsを構築するために、より強固な編集環境を提供します。 Search BlueprintsのElementsセクションから、Add(![Add](../../../../images/icon-add.png))ボタンをクリックします。 
 
-要素に名前を付けて、 _Create_をクリックします。 Element Sourceエディタが表示され、エディタ左側のペインにPredefined Variablesが表示されます。 JSONエディタに入力すると、オートコンプリートにより、利用可能なプロパティが表示されます。 利用可能なJSONプロパティをさらに理解するには、 [スキーマを理解する](#understanding-the-element-schema)を参照してください。
+要素に名前を付けて、 _Create_ をクリックします。 Element Sourceエディタが表示され、エディタ左側のペインにPredefined Variablesが表示されます。 JSONエディタに入力すると、オートコンプリートにより、利用可能なプロパティが表示されます。 利用可能なJSONプロパティをさらに理解するには、 [スキーマを理解する](#understanding-the-element-schema) を参照してください。
 
 ![エレメントソースエディタでエレメントを作成します。](./creating-elements/images/02.png)
 
 UI設定オプションは、Element JSON内の `uiConfiguration` プロパティで定義されます。 要素の設定ウィンドウがクエリビルダでどのように表示されるかをプレビューするには、 _プレビュー_ リンク（キャンセルボタンの隣）をクリックします。
 
-![要素設定]ウィンドウをプレビューします。](./creating-elements/images/03.png)
+![要素設定ウィンドウをプレビューします。](./creating-elements/images/03.png)
 
 
 
@@ -130,7 +130,7 @@ UI設定オプションは、Element JSON内の `uiConfiguration` プロパテ�
 
 要素ソースエディタで要素に定義済み変数を追加するには、変数を配置する場所にカーソルを置き、左側のサイドバーで変数をクリックして挿入させます。 Custom JSON Elementでは、エディタに直接変数を入力する必要があります。
 
-詳しくは、 [Predefined Element Variables Reference](./predefined-element-variables-reference.md) をご覧ください。
+詳しくは、 [定義済み要素変数リファレンス](./predefined-element-variables-reference.md) をご覧ください。
 
 
 

@@ -43,7 +43,7 @@ Liferay DXPにアップロードされた全てのファイルは、インスタ
 
 1. ［コントロールパネル］から、_ ［設定］_ &rarr; _［System Settings］ _ &rarr; _［File Storage］_へ行きます。
 
-1. _［Advanced File System Store］_画面で、_［Root Directory］_を[Liferay Home](../installation-and-upgrades/reference/liferay-home.md)パス（絶対または相対）に設定します。
+1. _［Advanced File System Store］_画面で、_［Root Directory］_を [Liferay Home](../installation-and-upgrades/reference/liferay-home.md) パス（絶対または相対）に設定します。
 
     ![高度なファイルシステムストア画面](./file-storage/images/02.png)
 
@@ -72,7 +72,7 @@ Liferayは、高度なファイルシステムストアを使用してファイ�
 * [DBStore（データベースストレージ）](./file-storage/other-file-store-types/dbstore.md)は、ファイルを`BLOB`としてDXPデータベースに保存します。 DBStoreのファイルサイズ制限は1ギガバイトです。 1ギガバイトを超えるファイルを保存するには、簡易ファイルシステムストアまたは高度なファイルシステムストアを使用します。
 
 ```{warning}
-ファイルシステムベースのストア（Simple、Advanced、S3）には、トランザクションロールバック機能がありません。 ドキュメントライブラリでデータベーストランザクションのロールバックが発生した場合、トランザクションのファイルシステムの変更は元に戻されません。 ドキュメントライブラリファイルとファイルシステムストア内のファイルとの間に不整合が発生する可能性があり、手動での同期が必要になる場合があります。 [DBStore](./file-storage/other-file-store-types/dbstore.md)以外のすべてのストアは、この制限に対して脆弱です。
+ファイルシステムベースのストア（Simple、Advanced、S3）には、トランザクションロールバック機能がありません。 ドキュメントライブラリでデータベーストランザクションのロールバックが発生した場合、トランザクションのファイルシステムの変更は元に戻されません。 ドキュメントライブラリファイルとファイルシステムストア内のファイルとの間に不整合が発生する可能性があり、手動での同期が必要になる場合があります。 [DBStore](./file-storage/other-file-store-types/dbstore.md) 以外のすべてのストアは、この制限に対して脆弱です。
 ```
 
 ### ファイルストア間でのファイルの移行

@@ -57,13 +57,13 @@
 | 天気図を開く 気温                    | 番号温度を返す                                                                                                                                                            | `${openweathermap.temp}`                |
 | 天気図を開く 天気予報の説明               | テキスト天気の説明を返す（例：「晴れ」）。                                                                                                                                              | `${openweathermap.weather_description}` |
 | 天気図を開く 天気予報のID               | 番号を指定します。天気予報の説明に対応する [ID を返す](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2)                                                            | `${openweathermap.weather_id}`          |
-| 天気図を開く メインラベル                | テキスト天候の [一次識別子を返す (例: Rain; これは OpenWeatherMap の API レスポンスの Main フィールドです](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2), 天気 ID に従っています) | `${openweathermap.weather_main}`        |
+| 天気図を開く メインラベル                | テキスト天候の [一次識別子を返す (例: Rain; これは OpenWeatherMap の API レスポンスの Main フィールドです](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2) , 天気 ID に従っています) | `${openweathermap.weather_main}`        |
 | オープンウェザーマップ 風速               | 番号風速をkm/hで返します。                                                                                                                                                    | `${openweathermap.wind_speed}`          |
 | User Custom Fields **\**** | ユーザーカスタムフィールドの値を返す                                                                                                                                                 | `user.custom.field.[name]`              |
 
-**\*** [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/activating-liferay-commerce-enterprise.html) を起動し、Commerce 固有の変数にアクセスします。
+**\*** [Liferay Commerce](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/activating-liferay-commerce-enterprise.html) を起動し、Commerce 固有の変数にアクセスします。
 
-**\* ￭** Ipstack と OpenWeatherMap のサービスを有効にすることで、これらの変数にアクセスできます。 System or Instance Settings &rarr; Platform &rarr; Search Experiences にアクセスします。 Enabled]チェックボックスをクリックし、設定するサービスの設定を保存します。 Ipstackサービスを使用した例については、 [Personalizing the Search Experience](../personalizing-the-search-experience.md) を参照してください。
+**\* ￭** Ipstack と OpenWeatherMap のサービスを有効にすることで、これらの変数にアクセスできます。 System or Instance Settings &rarr; Platform &rarr; Search Experiences にアクセスします。 Enabled]チェックボックスをクリックし、設定するサービスの設定を保存します。 Ipstackサービスを使用した例については、 [Search Experiencesのパーソナライズ](../personalizing-the-search-experience.md) を参照してください。
 
 **\**** これらのすぐに使える変数に加えて、 [User エンティティの Custom Fields](../../../../system-administration/configuring-liferay/adding-custom-fields.md) も Element の変数として参照することができます。 例えば、 _Employee_ という名前のユーザーカスタムフィールドは、 `user.custom.field.employee`という名前の要素で参照されています。
 

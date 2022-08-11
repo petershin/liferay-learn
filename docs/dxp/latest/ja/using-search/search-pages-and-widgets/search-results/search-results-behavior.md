@@ -85,13 +85,13 @@
 
 1. 概要に含めるアセット固有のフィールドは、 `ModelSummaryContributor` Javaクラス（Liferay独自のクラスおよびサードパーティの開発者によってデプロイされたクラス）で定義されます。 このロジックの古い実装は、 `Indexer.getSummary`で提供されていました。
 
-1. 検索結果のサマリーで表示可能なフィールドは、検索結果の表示ロジック（[`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/builder/SearchResultSummaryDisplayBuilder.java) および [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java)）によって定義されます。
+1. 検索結果のサマリーで表示可能なフィールドは、検索結果の表示ロジック（ [`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/builder/SearchResultSummaryDisplayBuilder.java) および [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java) ）によって定義されます。
 
 1. [ウィジェットテンプレート](./../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) は、 [検索結果](./configuring-the-search-results-widget.md) ウィジェット（デフォルトでは_List_ ）で使用されており、利用可能なフィールドのどれがサマリーに含まれるかなど、検索結果の表示に関するすべての事柄について最終的な決定権を持っています。
 
 ## ハイライト
 
-概要に表示される検索用語はデフォルトで<mark>ハイライト表示</mark>されています。 望ましくない場合は、 [ウィジェット設定画面](./configuring-the-search-results-widget.md#displaying-search-results)で無効にしてください。
+概要に表示される検索用語はデフォルトで<mark>ハイライト表示</mark>されています。 望ましくない場合は、 [ウィジェット設定画面](./configuring-the-search-results-widget.md#displaying-search-results) で無効にしてください。
 
 ![検索キーワードは、検索結果の一覧でハイライト表示されます。](./search-results-behavior/images/05.png)
 
@@ -112,7 +112,7 @@ Liferay 7.2以降では、公開コンテンツページの [ページコンテ�
 ![公開・非公開ページのタイトルを検索することができます。](./search-results-behavior/images/11.png)
 
 ```{note}
-Liferay 7.4 U22+ と GA22+ では、新規インストール時にプライベートページが無効になっています。 ただし、必要に応じて有効にすることができます。 詳しくは、[プライベートページの有効化](../../site-building/creating-pages/understanding-pages.md#enabling-private-pages)をご覧ください。
+Liferay 7.4 U22+ と GA22+ では、新規インストール時にプライベートページが無効になっています。 ただし、必要に応じて有効にすることができます。 詳しくは、 [プライベートページの有効化](../../site-building/creating-pages/understanding-pages.md#enabling-private-pages) をご覧ください。
 ```
 
 コンテンツページのインデックスに登録されているフィールドを確認するには、［検索結果］ウィジェットの _［ドキュメントフォームに結果を表示］_ の設定を有効にします。 詳しくは、 [検索エンジンのドキュメントを検査する](./configuring-the-search-results-widget.md#inspecting-search-engine-documents) をご覧ください。
@@ -123,6 +123,6 @@ Liferay 7.4 GA25+/U25+ では、ウィジェットページの検索も可能で
 
 ## 検索結果でオブジェクトを返す
 
-Liferay 7.4 には [Liferay Objects](../../../building-applications/objects.md)という GUI 主導のアプリケーション構築フレームワークが含まれています。 各オブジェクトの定義のフィールドは検索可能と宣言できます。オブジェクトエントリ（アプリケーションのユーザが送信したレコード）は、[クエリを実行でき](../../getting-started/searching-for-content.md#searching-for-liferay-objects)、検索結果ウィジェットに返すことが可能です。
+Liferay 7.4 には [Liferay Objects](../../../building-applications/objects.md)という GUI 主導のアプリケーション構築フレームワークが含まれています。 各オブジェクトの定義のフィールドは検索可能と宣言できます。オブジェクトエントリ（アプリケーションのユーザが送信したレコード）は、 [クエリを実行でき](../../getting-started/searching-for-content.md#searching-for-liferay-objects) 、検索結果ウィジェットに返すことが可能です。
 
 ![オブジェクトエントリには、タイトルとコンテンツの概要が表示されます。](./search-results-behavior/images/13.png)

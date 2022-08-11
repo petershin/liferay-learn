@@ -16,7 +16,7 @@ Liferayは、 [ClamAV Daemon](https://www.clamav.net/documents/scanning#clamd) (
 
 ここでは、ウイルス対策スキャンを有効にする方法を説明します。
 
-1. 別のサーバーで、[Clamdを設定・起動します](https://www.clamav.net/documents/scanning#clamd)。
+1. 別のサーバーで、 [Clamdを設定・起動します](https://www.clamav.net/documents/scanning#clamd) 。
 
     ```{important}
     Clamdを起動する前にClamAVデータベースを読み込みます。

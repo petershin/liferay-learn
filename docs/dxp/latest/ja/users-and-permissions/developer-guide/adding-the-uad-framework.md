@@ -10,10 +10,10 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 次に、以下の手順に従います。
 
-1. Download and unzip [UAD Framework](./liferay-h6d2.zip).
+1. Download and unzip [UAD Framework](./liferay-h6d2.zip) .
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-h6d2.zip -O
     ```
 
     ```bash

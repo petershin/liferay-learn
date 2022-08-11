@@ -50,7 +50,7 @@ Search Blueprints で [Highlights](https://www.elastic.co/guide/en/elasticsearch
 ブループリントにハイライトを追加するには。
 
 1. ブループリント・エディターから、 _Configuration_ タブをクリックします。
-1. Highlight Configurationのテキストエリアを探し、有効なJSONを入力します。 プロパティとその取り得る値については、 [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/highlighting.html)で詳しく説明しています。
+1. Highlight Configurationのテキストエリアを探し、有効なJSONを入力します。 プロパティとその取り得る値については、 [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/highlighting.html) で詳しく説明しています。
 
    ```json
    {

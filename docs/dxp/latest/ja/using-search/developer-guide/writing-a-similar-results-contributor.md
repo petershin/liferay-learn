@@ -2,7 +2,7 @@
 
 > **サブスクライバー**
 
-> **可用性：** この機能は、Liferay DXP 7.3+にバンドルされているサービス・プロバイダー・インターフェース（SPI）に依存しています。 Liferay DX 7.2で、Fix Pack 5+から、[Liferay マーケットプレイス](https://web.liferay.com/marketplace/-/mp/application/172465398)から同様の結果ウィジェットをインストールして入手できます。
+> **可用性：** この機能は、Liferay DXP 7.3+にバンドルされているサービス・プロバイダー・インターフェース（SPI）に依存しています。 Liferay DX 7.2で、Fix Pack 5+から、 [Liferay マーケットプレイス](https://web.liferay.com/marketplace/-/mp/application/172465398) から同様の結果ウィジェットをインストールして入手できます。
 
 `SimilarResultsContributor`実装することにより、 [類似結果ウィジェット](../search-pages-and-widgets/similar-results.md) アプリケーションのカスタムコンテンツを表示できます。 コントリビューターが機能するには、類似結果ウィジェットがコンテンツをページのメインアセットとして検出できる必要があります。 つまり、サポートされているLiferay DXPアセット（ブログエントリやWikiページなど）のように、「表示ウィジェット」のURLを介して表示できる必要があります。 類似結果ウィジェットは、カスタムコントリビューターを必要とせずに、Lifery DXPのアセットパブリッシャーに表示されるコンテンツですでに使用できることに注意してください。
 <!-- I'd like to see the image highlight what someone should be noticing in this image because it is not immediately obvious. -->
@@ -22,10 +22,10 @@
 
 Then, follow these steps to get an example `SimilarResultsContributor` up and running on your Liferay DXP instance:
 
-1. Download and unzip [Acme Similar Results Contributor](./liferay-r1s1.zip).
+1. Download and unzip [Acme Similar Results Contributor](./liferay-r1s1.zip) .
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-r1s1.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/using-search/developer-guide/liferay-r1s1.zip -O
     ```
 
     ```bash
@@ -244,10 +244,10 @@ private KBArticleLocalService _kbArticleLocalService;
 
 アプリケーションのカスタムコンテンツを類似結果ウィジェットに提供するために必要な作業の多くは、表示URLを使用することです。 Liferay独自のアセットが表示URLを作成する方法を学ぶには、エンティティの `* AssetRenderer` クラスの `getURLView` メソッドを調べます。
 
-* [`JournalArticleAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/journal/journal-web/src/main/java/com/liferay/journal/web/internal/asset/model/JournalArticleAssetRenderer.java#L352-L383)、Liferay DXP 7.3.2 GA3
-* [`WikiPageAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/wiki/wiki-web/src/main/java/com/liferay/wiki/web/internal/asset/model/WikiPageAssetRenderer.java#L232-L249)、Liferay DXP 7.3.2 GA3
-* [`BlogsEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/blogs/blogs-web/src/main/java/com/liferay/blogs/web/internal/asset/model/BlogsEntryAssetRenderer.java#L202-L218)、Liferay DXP 7.3.2 GA3
-* [`DLFileEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/asset/model/DLFileEntryAssetRenderer.java#L280-L297)、Liferay DXP 7.3.2 GA3
+* [`JournalArticleAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/journal/journal-web/src/main/java/com/liferay/journal/web/internal/asset/model/JournalArticleAssetRenderer.java#L352-L383) 、Liferay DXP 7.3.2 GA3
+* [`WikiPageAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/wiki/wiki-web/src/main/java/com/liferay/wiki/web/internal/asset/model/WikiPageAssetRenderer.java#L232-L249) 、Liferay DXP 7.3.2 GA3
+* [`BlogsEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/blogs/blogs-web/src/main/java/com/liferay/blogs/web/internal/asset/model/BlogsEntryAssetRenderer.java#L202-L218) 、Liferay DXP 7.3.2 GA3
+* [`DLFileEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/asset/model/DLFileEntryAssetRenderer.java#L280-L297) 、Liferay DXP 7.3.2 GA3
 
 前述のとおり、このサンプルでは、アプリケーションのルートフォルダーにあるKB記事で機能する `SimilarResultsModelDocumentContributor` を作成する方法を示しています。 KBフォルダーのサポートを追加することは可能であり、やる気のある読者にとって興味深い演習です。 [`DocumentLibrarySimilarResultsContributor`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor/document/library/DocumentLibrarySimilarResultsContributor.java) のソースコードを見て、インスピレーションを得てください。
 

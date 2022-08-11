@@ -10,10 +10,10 @@
 
 次に、以下の手順に従います。
 
-1. Download and unzip [User Account API Basics](./liferay-y6q4.zip).
+1. Download and unzip [User Account API Basics](./liferay-y6q4.zip) .
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6q4.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-y6q4.zip -O
    ```
 
    ```bash
@@ -144,7 +144,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 他のJavaクラスの例はこれと似ていますが、異なる `UserAccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
+サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他のUser RESTサービスを呼び出す例です。

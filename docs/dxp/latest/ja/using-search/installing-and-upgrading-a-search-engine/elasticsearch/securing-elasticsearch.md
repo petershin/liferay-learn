@@ -1,9 +1,9 @@
 # Elasticsearchの保護
 
-Elasticsearchを保護するために最初に行う必要があるのは、[X-Pack Securityを有効にする](#enable-x-pack-security)ことです。 その後、認証と暗号化通信の設定を開始できます。
+Elasticsearchを保護するために最初に行う必要があるのは、 [X-Pack Securityを有効にする](#enable-x-pack-security) ことです。 その後、認証と暗号化通信の設定を開始できます。
 
 ```{note}
-**Elasticsearch 6.x:** Elasticsearch 6を使用している場合、ElasticのX-Pack Securityを使用するにはLiferay Enterprise Search (LES)サブスクリプションとLiferay Enterprise Search セキュリティアプリケーションが必要です。 Liferay Connector to Elasticsearch 7（[Customer Downloads Portal](https://customer.liferay.com/downloads)で入手可能で、Liferay 7.3以降にバンドルされている）から、ElasticのX-Packセキュリティのサポートがデフォルトで含まれています。 Elastic社のX-Packモニタリングと連携するには、LESが必要です。
+**Elasticsearch 6.x:** Elasticsearch 6を使用している場合、ElasticのX-Pack Securityを使用するにはLiferay Enterprise Search (LES)サブスクリプションとLiferay Enterprise Search セキュリティアプリケーションが必要です。 Liferay Connector to Elasticsearch 7（ [Customer Downloads Portal](https://customer.liferay.com/downloads) で入手可能で、Liferay 7.3以降にバンドルされている）から、ElasticのX-Packセキュリティのサポートがデフォルトで含まれています。 Elastic社のX-Packモニタリングと連携するには、LESが必要です。
 ```
 
 ## X-Pack Securityの有効化
@@ -18,12 +18,12 @@ xpack.security.enabled: true
 
 ## X-Packユーザーの設定
 
-X-Packを使用するシステムでは、次の[組み込みX-Packユーザー](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/built-in-users.html)が重要です。
+X-Packを使用するシステムでは、次の [組み込みX-Packユーザー](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/built-in-users.html) が重要です。
 
 * `kibana_system`
 * `elastic`
 
-Elasticsearchサーバーで、[`setup-passwords`コマンド](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-passwords.html)を使用してパスワードを設定します。
+Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-passwords.html) を使用してパスワードを設定します。
 
 ```bash
 ./bin/elasticsearch-setup-passwords interactive
@@ -34,7 +34,7 @@ Elasticsearchサーバーで、[`setup-passwords`コマンド](https://www.elast
 ```
 
 ```{note}
-内蔵ユーザーのパスワードを更新するには、KibanaのUIまたは[Change Password API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-api-change-password.html)を使用します。
+内蔵ユーザーのパスワードを更新するには、KibanaのUIまたは [Change Password API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-api-change-password.html) を使用します。
 ```
 
 ## Elasticsearch通信の暗号化
@@ -43,9 +43,9 @@ Elasticsearchサーバーで、[`setup-passwords`コマンド](https://www.elast
 
 ### ノード証明書の生成
 
-ノードごとに[証明書を生成する](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/configuring-tls.html#node-certificates)か、Liferayなどのすべてのノードとクライアントで使用する証明書を生成します。 または、認証局を使用してノード証明書を取得します。
+ノードごとに [証明書を生成する](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/configuring-tls.html#node-certificates) か、Liferayなどのすべてのノードとクライアントで使用する証明書を生成します。 または、認証局を使用してノード証明書を取得します。
 
-1. X-Packの[`certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/certutil.html)コマンドを使用してX-Pack認証局を生成します。
+1. X-Packの [`certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/certutil.html) コマンドを使用してX-Pack認証局を生成します。
 
     ```bash
     ./bin/elasticsearch-certutil ca --ca-dn CN=elastic-ca
@@ -82,7 +82,7 @@ Elasticsearchサーバーで、[`setup-passwords`コマンド](https://www.elast
    ```
 
    ```{note}
-   Liferay 7.3+では、[Elasticsearch 7コネクター設定](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types)で使用できるキーストアタイプは以下のもののみです。
+   Liferay 7.3+では、 [Elasticsearch 7コネクター設定](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) で使用できるキーストアタイプは以下のもののみです。
    ```
 
    複数のホストで動作する証明書を生成するには（たとえば、すべてのElasticsearchおよびLiferayサーバーで同じ証明書を使用するには）、DNS名とIPアドレスを列挙する際にカンマ区切りのリストを使用します。
@@ -121,7 +121,7 @@ Elasticsearchサーバーで、[`setup-passwords`コマンド](https://www.elast
 
 ### Elasticsearch用のTLSを設定する
 
-`［Elasticsearch Home］/config/elasticsearch.yml`ファイルを介して各ノードで[TLSを有効](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/configuring-tls.html)にします。
+`［Elasticsearch Home］/config/elasticsearch.yml`ファイルを介して各ノードで [TLSを有効](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/configuring-tls.html) にします。
 
 1. ノード間通信のために`elasticsearch.yml`で次の設定を使用してトランスポート層TLSを有効にします。
 
@@ -214,7 +214,7 @@ TLSの設定に加えて、`authenticationEnabled`/`requiresAuthentication`を`t
 [Elasticsearchのインストール](./installing-elasticsearch.md) と [Elasticsearchへの接続](./connecting-to-elasticsearch.md) では、セキュリティを有効にし設定する方法を紹介していますので、 7.3 適用対象のセキュリティ設定についてはそちらを参照してください。
 ```
 
-Liferay 7.3+にバンドルされているLiferay Connector to Elasticsearch 7には、X-Pack Securityのサポートが含まれています。 Elasticsearch 7コネクタの設定で使用できるサポートされているキーストアタイプの一覧については、[Java 11セキュリティのドキュメンテーション](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types)を参照してください。
+Liferay 7.3+にバンドルされているLiferay Connector to Elasticsearch 7には、X-Pack Securityのサポートが含まれています。 Elasticsearch 7コネクタの設定で使用できるサポートされているキーストアタイプの一覧については、 [Java 11セキュリティのドキュメンテーション](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) を参照してください。
 
 以下のようなファイルを作成します。
 

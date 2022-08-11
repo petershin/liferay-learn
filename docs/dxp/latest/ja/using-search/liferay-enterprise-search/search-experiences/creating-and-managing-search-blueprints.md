@@ -1,6 +1,6 @@
 # 検索ブループリントの作成と管理
 
-[検索ブループリント](./understanding-search-blueprints.md) は、グローバルメニューの管理用アプリケーションを使用して作成、更新、削除します。 グローバルメニューのアプリケーションセクションを開き、Search Experiencesカテゴリーを見つけます。 もし既にブループリントを持っていて、その機能をLiferay [ページの検索](../../search-pages-and-widgets/working-with-search-pages.md)に適用したい場合は、 [Using a Search Blueprint on a Search Page](using-a-search-blueprint-on-a-search-page.md)をご覧ください。
+[検索ブループリント](./understanding-search-blueprints.md) は、グローバルメニューの管理用アプリケーションを使用して作成、更新、削除します。 グローバルメニューのアプリケーションセクションを開き、Search Experiencesカテゴリーを見つけます。 もし既にブループリントを持っていて、その機能をLiferay [ページの検索](../../search-pages-and-widgets/working-with-search-pages.md)に適用したい場合は、 [検索ブループリントを検索ページで使用する](using-a-search-blueprint-on-a-search-page.md) をご覧ください。
 
 検索ブループリントを作成する。
 
@@ -12,11 +12,11 @@
 
 1. ［新規検索ブループリント］ウィンドウで、ブループリントに［name］ (必須) と［description］(オプション) を指定します。
 
-1. [ブループリントの計画](./planning-a-blueprint.md)に応じて、次にこれらのメニューを使用して [ブループリント](./understanding-search-blueprints.md#what-is-a-blueprint)の構築を継続することになります。
+1. [ブループリントの計画](./planning-a-blueprint.md)に応じて、次にこれらのメニューを使用して [ブループリント](./understanding-search-blueprints.md#what-is-a-blueprint) の構築を継続することになります。
 
-   - [クエリビルダー](#using-the-query-builder): クエリ要素セクションで、ブループリントの要素を選択または作成して、検索に新しいクエリー条件を追加します。 クエリ設定セクションで、クエリの追加設定（検索するアセットタイプやオブジェクトタイプなど）を行います。
+   - [クエリビルダー](#using-the-query-builder) : クエリ要素セクションで、ブループリントの要素を選択または作成して、検索に新しいクエリー条件を追加します。 クエリ設定セクションで、クエリの追加設定（検索するアセットタイプやオブジェクトタイプなど）を行います。
 
-   - [設定](#adding-configurations): 検索における詳細設定（ソートや集計など）を行います。
+   - [設定](#adding-configurations) : 検索における詳細設定（ソートや集計など）を行います。
 
 1. ブループリントを構築し、構成しながらテストします。 _［Preview］_ をクリックし、検索キーワードを入力してください。
 
@@ -30,7 +30,7 @@
 
 ブループリントの編集や削除は、その［アクション］メニュー（![Actions](../../../images/icon-actions.png)）から行います。
 
-CRUDオプションに加えて、検索ブループリントは [インポートおよびエクスポート](#importing-and-exporting-blueprints)することができます。
+CRUDオプションに加えて、検索ブループリントは [インポートおよびエクスポート](#importing-and-exporting-blueprints) することができます。
 
 ![ブループリントのアクションメニューから編集、削除、エクスポートを行うことができます。](./creating-and-managing-search-blueprints/images/03.png)
 
@@ -38,8 +38,8 @@ CRUDオプションに加えて、検索ブループリントは [インポー�
 
 ブループリントの多くの使用例では、クエリビルダーを使用する必要があります。 クエリビルダーの使用して
 
-1. [ブループリントに要素を追加](#adding-elements-to-the-blueprint).
-1. [どのLiferayアセットを検索するかを選択](#choosing-which-liferay-assets-to-search).
+1. [ブループリントに要素を追加](#adding-elements-to-the-blueprint) .
+1. [どのLiferayアセットを検索するかを選択](#choosing-which-liferay-assets-to-search) .
 
 ### ブループリントに要素を追加する
 
@@ -51,7 +51,7 @@ CRUDオプションに加えて、検索ブループリントは [インポー�
 1. この［要素］は、クエリビルダーに追加され、設定できるようになります。 ![この要素は、検索ユーザーが所属しているサイトのコンテンツを10ブーストします。](./creating-and-managing-search-blueprints/images/04.png)
 1. 検索クエリを設定するために必要な数の要素を追加します。
 
-   既成の各要素の説明については、 [Search Blueprints Elements Reference](./search-blueprints-elements-reference.md) を参照してください。
+   既成の各要素の説明については、 [検索ブループリント要素のリファレンス](./search-blueprints-elements-reference.md) を参照してください。
 
 1. カスタム要素が必要な場合は、クエリビルダーにカスタムJSON要素を追加し、必要なクエリ句を記述します。
 
@@ -95,7 +95,7 @@ CRUDオプションに加えて、検索ブループリントは [インポー�
 
 クエリ句は、Liferayのバックエンドコード（およびLiferayインスタンスにデプロイされたカスタムアプリケーションの可能性もあります）によって進行中の検索に提供されます。
 
-検索ブループリントは、これらのバックエンドが提供するクエリ句を設定することができます。 しかし、ほとんどのユーザーは、［Search Framework Indexer Clauses］や ［Search Framework Query Contributor］の設定には決して触れないようにしてください。 通常はデフォルトの設定で十分です。 もし、 [［Searchable Types］](#choosing-which-liferay-assets-to-search)を使う以外にこの動作を微調整する必要があると確信するならば、これらのバックエンドのコントリビューターの動作方法を理解する必要があります。
+検索ブループリントは、これらのバックエンドが提供するクエリ句を設定することができます。 しかし、ほとんどのユーザーは、［Search Framework Indexer Clauses］や ［Search Framework Query Contributor］の設定には決して触れないようにしてください。 通常はデフォルトの設定で十分です。 もし、 [［Searchable Types］](#choosing-which-liferay-assets-to-search) を使う以外にこの動作を微調整する必要があると確信するならば、これらのバックエンドのコントリビューターの動作方法を理解する必要があります。
 
 1. **［Searchable Types］** を使用すると、個々のインデクサが検索に参加できないようにすることができます。 タイプのインデクサを無効にすると、クエリコントリビュータが選択されていても、そのタイプの句は検索クエリに追加されなくなります。 検索エンドユーザーには、これらのタイプの結果は表示されません。
 

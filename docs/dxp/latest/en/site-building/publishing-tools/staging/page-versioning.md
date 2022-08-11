@@ -21,14 +21,16 @@ Staging provides two types of variations:
 * **Page Variations**: This type is for creating variations of an individual Page. They are created within Site Pages Variations and are only available for Widget Pages.
 
    ```{note}
-   Use [Experiences](../../../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md) to create different versions of a Content Page.
+   When you import a Widget Page to a Site with Page variations enabled, the Page is imported as a new variation of the Site Page's main variation.
+   
+   For content Pages, use [Experiences](../../../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md) to create alternative Page versions.
    ```
 
 Both variation types only affect Pages and do not affect your Site's content, since all variations in your staging Site share the same content. That said, each variation can use and configure the same content or applications in different ways, and each Site Pages Variation can include different Pages.
 
 Also, Page metadata is not versioned (e.g., layout type, friendly URL). This means changes to metadata are applied to all variations. For example, if a Page template is modified, those modifications are propagated to all Pages configured to inherit changes from the template.
 
-```{note}
+```{important}
 Page templates are not recognized by the Staging framework. This means that existing Page templates are not viewable or editable on a staged Site. If they're created on a staged Site, they are lost if staging is disabled.
 ```
 

@@ -21,7 +21,7 @@ The General configuration entry contains several general authentication settings
 
 **Allow users to request password reset links?** Enable/Disable requesting a reset link for forgotten passwords.
 
-**Allow strangers to create accounts?** Enable/Disable account creation by strangers. If running an Internet site, leave this enabled so visitors can create accounts. 
+**Allow strangers to create accounts?** Enable/Disable account creation by unauthenticated guest users. If running an Internet site, leave this enabled so visitors can create accounts. 
 
 **Allow strangers to create accounts with a company email address?** Enable/Disable account creation by those using an email address in the domain of the organization running the Site (which is set on the General page of Instance Settings). This is handy if you're using one Liferay installation to host both internal and external web sites. Make sure all internal IDs are created by administrators but external Users can register for IDs themselves.
 

@@ -6,8 +6,6 @@ After [connecting data sources](../connecting-data-sources.md) to your workspace
 
 If you haven't already connected a Liferay DXP instance, see [connecting Liferay DXP to Analytics Cloud](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md).
 
-Other data sources such as CSV data can also be added. See [Adding a CSV data source](../connecting-data-sources/adding-a-csv-data-source.md).
-
 To view or make changes to your Liferay DXP data source, click the name of the connected data source.
 
 ![Click on the data source name to open a new page.](./managing-data-sources/images/02.png)
@@ -23,8 +21,6 @@ If you choose to disconnect the DXP instance from the workspace, click the *Disc
 **Synced Sites:** Shows your DXP Sites' sync status with Analytics Cloud. To configure, see [syncing sites to a property](../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-sites-to-a-property).
 
 **Synced Contacts:** Shows your DXP contacts sync status with Analytics Cloud. To configure, see [syncing contacts to a property](../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property)
-
-Note that this manage page looks different for a CSV data source.
 
 ## Deleting a Data Source
 

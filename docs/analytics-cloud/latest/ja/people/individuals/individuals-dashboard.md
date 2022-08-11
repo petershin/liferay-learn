@@ -36,7 +36,7 @@ Enriched Profilesパネルには、過去30日以内にエンリッチされた�
 
 ![Enriched Profilesパネルには、エンリッチメントを受けた個人の総数が表示されます。](./individuals-dashboard/images/02.png)
 
-例えば、 [DXPからコンタクトデータを同期させた場合](../../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property) や、コンタクトデータを追加した場合（例：[CSVコンタクトデータを追加した場合](../../connecting-data-sources/adding-a-csv-data-source.md)）など、属性がその個人に関連付けられた時に、その個人はエンリッチされたとみなされます。
+例えば、 [DXPからコンタクトデータを同期させた場合](../../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property) 属性がその個人に関連付けられた時に、その個人はエンリッチされたとみなされます。
 
 <a name="active-individuals" />
 

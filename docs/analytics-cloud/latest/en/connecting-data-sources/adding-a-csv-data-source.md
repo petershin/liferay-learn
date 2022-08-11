@@ -1,4 +1,4 @@
-# Adding a CSV Data Source
+<!--- # Adding a CSV Data Source
 
 You can import contact profile data from CSV files to enrich customer profiles with additional data related to a user’s industry, job title, annual income, or whatever metrics are important to your business. If you have customer profile data in databases or collect it through web forms, you can export the data into CSV files.
 
@@ -56,3 +56,4 @@ Your custom model field is ready to match with source fields.
 
 When you’re done mapping the data, click the Done button.
 
+--->

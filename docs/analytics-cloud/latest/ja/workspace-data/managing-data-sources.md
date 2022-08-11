@@ -6,8 +6,6 @@
 
 Liferay DXP インスタンスをまだ接続していない場合は、 [connecting Liferay DXP to Analytics Cloud](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md)をご覧ください。
 
-また、CSVデータなど、他のデータソースを追加することもできます。 [adding a CSV data source](../connecting-data-sources/adding-a-csv-data-source.md)を参照してください。
-
 Liferay DXPのデータソースを表示したり変更したりするには、接続されているデータソースの名前をクリックします。
 
 ![データソース名をクリックすると、新しいページが表示されます。](./managing-data-sources/images/02.png)
@@ -23,8 +21,6 @@ Liferay DXPのデータソースを表示したり変更したりするには、
 **Synced Sites：** DXPサイトのAnalytics Cloudとの同期状態を表示します。 設定方法は、 [syncing sites to a property](../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-sites-to-a-property) を参照してください。
 
 **Synced Contacts：** DXP連絡先のAnalytics Cloudとの同期状態を表示します。 設定方法は、 [syncing sites to a property](../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property) を参照してください。
-
-なお、この管理ページは、CSVデータソースでは異なって見えます。
 
 <a name="deleting-a-data-source" />
 

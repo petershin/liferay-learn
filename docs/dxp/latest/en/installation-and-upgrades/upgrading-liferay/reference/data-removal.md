@@ -14,6 +14,10 @@ Here's how to remove the obsolete data:
 
 The obsolete data is removed.
 
+Note, to save the settings to a [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md), click the *Actions* menu and select *Export*.
+
+Use this `com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration.config` configuration file upon server startup to remove obsolete data. Set the `removeExpiredJournalArticles` key to `true` in the file. After data removal, remove the configuration file from the `osgi/configs` folder to prevent the file from running upon subsequent server startups.
+
 ## Additional Information
 
 * [Data Cleanup](./data-cleanup.md)

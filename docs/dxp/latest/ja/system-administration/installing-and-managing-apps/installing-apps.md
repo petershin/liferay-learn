@@ -64,7 +64,7 @@ DXPのコントロールパネルからマーケットプレイスにアクセ�
 
 ### Purchased Apps画面
 
-コントロールパネルの _［Apps］_ &rarr; _［Purchased］_のPurchasedページには、以前に購入したアプリが一覧表示されます。 インストールされていないアプリには、DXPインスタンスにアプリをインストールするための_［Install］_ボタンがあります。
+コントロールパネルの ［**Apps**］ &rarr; ［**Purchased**］ のPurchasedページには、以前に購入したアプリが一覧表示されます。 インストールされていないアプリには、DXPインスタンスにアプリをインストールするための ［**Install**］ ボタンがあります。
 
 ![コントロールパネルに表示される［Purchased Apps］画面。](./installing-apps/images/01.png)
 

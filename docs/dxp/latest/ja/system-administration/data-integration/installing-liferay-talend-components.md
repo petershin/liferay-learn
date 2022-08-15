@@ -33,14 +33,13 @@ Maven は最近、安全でないリポジトリ接続を非推奨としてい�
 
 ## Talendコンポーネントの構築
 
-`Talendコンポーネントをインストールする前に、ローカルの <a href="https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend">liferay-portal` リポジトリの</a> modules/etl/talend</code> で、 `mvn clean install を実行する必要があります。</p>
+Talendコンポーネントをインストールする前に、ローカルの`liferay-portal`リポジトリの[modules/etl/talend](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend)で、`mvn clean install`を実行する必要があります。
 
-<p spaces-before="0">これにより、以下のディレクトリ/フォルダーにjarバンドルファイルが生成されます。</p>
+これにより、以下のディレクトリ/フォルダーにjarバンドルファイルが生成されます。
 
-<ul>
-<li><code>talend-definition/target/`</li>
+* talend-definition/target/`
 * `talend-common/target/`
-* `talend-runtime/target/`</ul>
+* `talend-runtime/target/`
 
 JARファイルは、これらのローカルMavenリポジトリフォルダにも公開されます。
 
@@ -74,7 +73,7 @@ Mavenのビルドが成功したら、以下の手順でTalend Open StudioにLif
 
 1. `com.liferay.talend`、 `com.liferay.talend.common`、 `com.liferay.talend.runtime` フォルダをローカル `$USER_HOME/.m2/repository/com/liferay/` から `$TOS_ROOT/configuration/.m2/repository/com/liferay/` にコピーしてください。
 
-1. Talend Open Studioを起動します。 Liferay コンポーネントは *Business* &rarr; *Liferay* in *Palette* タブに表示されます。
+1. Talend Open Studioを起動します。 Liferay コンポーネントは **Business** &rarr; **Liferay** in **Palette** タブに表示されます。
 
    ![コンポーネントは、パレットタブのビジネス &rarr; Liferayに表示されます。](liferay-talend-components-overview/images/01.png)
 

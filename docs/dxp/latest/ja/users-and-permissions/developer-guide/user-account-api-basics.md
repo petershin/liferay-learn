@@ -153,7 +153,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 以下のcURLとJavaのコマンドで全ユーザーのリストを取得します。
 
-### Users_GET_FromInstance.sh
+### Users **GET** FromInstance.sh
 
 コマンド:
 
@@ -167,7 +167,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
    :language: bash
 ```
 
-### Users_GET_FromInstance.java
+### Users **GET** FromInstance.java
 
 コマンド：
 
@@ -189,7 +189,7 @@ JSON レスポンスには、そのインスタンスのすべての Users が�
 
 以下のcURLとJavaコマンドで特定のUserを取得します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User_GET_ById.sh
+### User **GET** ById.sh
 
 コマンド:
 
@@ -203,7 +203,7 @@ JSON レスポンスには、そのインスタンスのすべての Users が�
    :language: bash
 ```
 
-### User_GET_ById.java
+### User **GET** ById.java
 
 コマンド:
 
@@ -225,7 +225,7 @@ User は JSON レスポンスで返されます。
 
 以下のcURLとJavaコマンドで、既存のUserの部分編集を行います。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User_PATCH_ById.sh
+### User **PATCH** ById.sh
 
 コマンド:
 
@@ -239,7 +239,7 @@ User は JSON レスポンスで返されます。
    :language: bash
 ```
 
-### User_PATCH_ById.java
+### User **PATCH** ById.java
 
 コマンド:
 
@@ -261,7 +261,7 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存のUserを完全に上書きします。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User_PUT_ById.sh
+### User **PUT** ById.sh
 
 コマンド:
 
@@ -275,7 +275,7 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
    :language: bash
 ```
 
-### User_PUT_ById.java
+### User **PUT** ById.java
 
 コマンド:
 
@@ -299,7 +299,7 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
 
 以下のcURLおよびJavaコマンドで既存のUserを削除します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User_DELETE_ById.sh
+### User **DELETE** ById.sh
 
 コマンド:
 
@@ -313,7 +313,7 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
    :language: bash
 ```
 
-### User_DELETE_ById.java
+### User **DELETE** ById.java
 
 コマンド：
 

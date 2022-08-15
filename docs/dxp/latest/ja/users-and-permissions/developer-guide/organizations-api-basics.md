@@ -47,7 +47,7 @@ Then, follow these steps:
 
    ```
 
-1. *Global Menu* &rarr; *Control Panel* &rarr; *User and Organizations*に移動します。 *［Organizations］*タブをクリックします。 新しい組織が追加されたことを確認します。
+1. **Global Menu** &rarr; **Control Panel** &rarr; **User and Organizations** に移動します。 ［**Organizations**］ タブをクリックします。 新しい組織が追加されたことを確認します。
 
    ![新しい組織が追加されたことを確認します。](./organizations-api-basics/images/01.png)
 
@@ -123,7 +123,7 @@ Then, follow these steps:
 
 以下のcURLまたはJavaコマンドを実行することで、Organizationを一覧表示することができます。
 
-### Organizations_GET_FromInstance.sh
+### Organizations **GET** FromInstance.sh
 
 コマンド:
 
@@ -137,7 +137,7 @@ Then, follow these steps:
    :language: bash
 ```
 
-### Organizations_GET_FromInstance.java
+### Organizations **GET** FromInstance.java
 
 コマンド:
 
@@ -163,7 +163,7 @@ Instance の `Organization` オブジェクトが JSON で表示されます。
 インスタンスの ``Organization` ID を取得するには、 ``Organizations_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### 組織名_GET_ById.sh
+### 組織名 **GET** ById.sh
 
 コマンド:
 
@@ -177,7 +177,7 @@ Instance の `Organization` オブジェクトが JSON で表示されます。
    :language: bash
 ```
 
-### 組織_GET_ById.java
+### 組織 **GET** ById.java
 
 コマンド:
 
@@ -199,7 +199,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
 
 以下のcURLとJavaコマンドで、既存の組織の部分編集を行います。 `1234` を組織のIDに置き換えてください。
 
-### 組織名_PATCH_ById.sh
+### 組織名 **PATCH** ById.sh
 
 コマンド:
 
@@ -213,7 +213,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
    :language: bash
 ```
 
-### 組織_PATCH_ById.java
+### 組織 **PATCH** ById.java
 
 コマンド:
 
@@ -233,7 +233,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
 
 以下のcURLとJavaのコマンドで、既存のOrganizationを完全に上書きします。 `1234` を組織IDに置き換えてください。
 
-### 組織名_PUT_ById.sh
+### 組織名 **PUT** ById.sh
 
 コマンド:
 
@@ -247,7 +247,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
    :language: bash
 ```
 
-### 組織_PUT_ById.java
+### 組織 **PUT** ById.java
 
 コマンド:
 
@@ -267,7 +267,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
 
 以下のcURLとJavaのコマンドで、既存の組織を削除します。 `1234` を組織のIDに置き換えてください。
 
-### 組織名_DELETE_ById.sh
+### 組織名 **DELETE** ById.sh
 
 コマンド:
 
@@ -281,7 +281,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
    :language: bash
 ```
 
-### 組織_DELETE_ById.java
+### 組織 **DELETE** ById.java
 
 コマンド
 

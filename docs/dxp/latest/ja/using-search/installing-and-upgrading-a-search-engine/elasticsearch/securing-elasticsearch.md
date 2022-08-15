@@ -94,12 +94,12 @@ Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elas
    `elasticsearch-certutil cert` コマンドは、 `elastic-nodes.p12` という別のファイルを生成します（他の名前でかまいません）。
 
    ```{note}
-   certutil`コマンドのデフォルトでは、証明書の生成に*PKCS#12*形式を使用しており、これはElastic Stack 7.xで動作します。 Kibana 6.xはPKCS#12証明書では動作しないため、Liferay 7.2とKibana 6.xを*Liferay Enterprise Search Monitoring*で使用している場合は、`--pem`オプション（証明書を*PEM*形式で生成）が重要になります。 それぞれのケースのPEMコマンドは2つのZIPファイルを生成します。ca.crt`と`ca.key`、`elastic-nodes.crt`と`elastic-nodes.key`の2つのZIPファイルが生成されます。 アーカイブの内容を解凍して、*[Elasticsearch Home]/config/certs*フォルダに入れてください。
+   `certutil`コマンドのデフォルトでは、証明書の生成に*PKCS#12*形式を使用しており、これはElastic Stack 7.xで動作します。 Kibana 6.xはPKCS#12証明書では動作しないため、Liferay 7.2とKibana 6.xを*Liferay Enterprise Search Monitoring*で使用している場合は、`--pem`オプション（証明書を*PEM*形式で生成）が重要になります。 それぞれのケースのPEMコマンドは2つのZIPファイルを生成します。`ca.crt` と `ca.key`、`elastic-nodes.crt` と `elastic-nodes.key`の2つのZIPファイルが生成されます。 アーカイブの内容を解凍して、*[Elasticsearch Home]/config/certs* フォルダに入れてください。
    ```
 
 1. `elastic-nodes.p12`を`［Elasticsearch Home］/config/certs`フォルダに移動します。
 
-    **チェックポイント：**`［Elasticsearch Home］/config/certs`フォルダに次のファイルができました。
+    **チェックポイント：** `［Elasticsearch Home］/config/certs`フォルダに次のファイルができました。
 
     ```bash
     elastic-nodes.p12
@@ -198,7 +198,7 @@ xpack.security.http.ssl.truststore.password: liferay
 
 ## LiferayでElasticsearchへの安全な接続を設定する
 
-Liferayでは、セキュリティはコントロールパネルまたは設定ファイルを使用して構成できます。 *［コントロールパネル］* &rarr; *［設定］* &rarr; *［システム設定］*に移動します。 *［検索機能］*カテゴリを見つけて、Liferay 7.3+の*［Elasticsearch 7］*エントリまたはLiferay 7.2の*［X-Pack Security］*エントリをクリックします。 ここにプロパティ値を入力することもできますが、`［Liferay Home］/osgi/configs`にデプロイされている設定ファイルを使用するのが一般的です。
+Liferayでは、セキュリティはコントロールパネルまたは設定ファイルを使用して構成できます。 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**システム設定**］ に移動します。 ［**検索機能**］ カテゴリを見つけて、Liferay 7.3+の ［**Elasticsearch 7**］ エントリまたはLiferay 7.2の ［**X-Pack Security**］ エントリをクリックします。 ここにプロパティ値を入力することもできますが、`［Liferay Home］/osgi/configs`にデプロイされている設定ファイルを使用するのが一般的です。
 
 ファイルの正確なコンテンツは、X-Packの設定によって異なります。 `password`は、上記のX-Packユーザーパスワードのセットアップ中に設定したものと一致する必要があります。
 
@@ -286,17 +286,17 @@ transportSSLEnabled="true"
 
 7.3+におけるElasticsearch 7コネクタのセキュリティ設定の完全な一覧は次のとおりです（括弧内はデフォルト値）。
 
-`authenticationEnabled`（_true_）：ユーザー名とパスワードを使用したElasticsearchへの認証を有効または無効にします。
+`authenticationEnabled`（**true**）：ユーザー名とパスワードを使用したElasticsearchへの認証を有効または無効にします。
 
-`username`（_elastic_）：［認証が有効］がオンになっている場合、認証用のユーザー名をElasticsearchに設定します。
+`username`（**elastic**）：［認証が有効］がオンになっている場合、認証用のユーザー名をElasticsearchに設定します。
 
 `password`：［認証が有効］がオンになっている場合、認証用のパスワードをElasticsearchに設定します。
 
-`httpSSLEnabled`（_false_）：TLS/SSLを有効または無効にします。
+`httpSSLEnabled`（**false**）：TLS/SSLを有効または無効にします。
 
-`truststoreType`（_pkcs12_）：［HTTP SSLが有効］がオンになっている場合、トラストストアの種類を設定します。
+`truststoreType`（**pkcs12**）：［HTTP SSLが有効］がオンになっている場合、トラストストアの種類を設定します。
 
-`truststorePath`（_/path/ro/localhost.p12_）：［HTTP SSLが有効］がオンになっている場合、トラストストアファイルへのパスを設定します。
+`truststorePath`（**/path/ro/localhost.p12**）：［HTTP SSLが有効］がオンになっている場合、トラストストアファイルへのパスを設定します。
 
 `truststorePassword`：［HTTP SSLが有効］がオンになっている場合、パスワードをトラストストアに設定します。
 
@@ -304,29 +304,29 @@ transportSSLEnabled="true"
 
 Liferay 7.2のX-Pack Security構成の設定の完全な一覧は次のとおりです。
 
-`sslKeyPath`（_/path/to/instance.key_）：秘密鍵を含むPEMエンコードファイルへのパスを設定します。
+`sslKeyPath`（**/path/to/instance.key**）：秘密鍵を含むPEMエンコードファイルへのパスを設定します。
 
-`sslCertificatePath`（_/path/to/instance.crt_）：クライアントが接続するときにクライアントに提示される証明書（または証明書チェーン）を含むPEMエンコードファイルへのパスを設定します。 デフォルトは`/path/to/instance.crt`です。
+`sslCertificatePath`（**/path/to/instance.crt**）：クライアントが接続するときにクライアントに提示される証明書（または証明書チェーン）を含むPEMエンコードファイルへのパスを設定します。 デフォルトは`/path/to/instance.crt`です。
 
-`sslcertificateAuthoritiesPaths` (_["/path/to/ca.crt"]_) です。信頼できるPEMエンコードされた証明書ファイルのパスのリストを提供します。
+`sslcertificateAuthoritiesPaths` ([**"/path/to/ca.crt"**]) です。信頼できるPEMエンコードされた証明書ファイルのパスのリストを提供します。
 
 `certificateFormat` (_PKCS#12_) を指定します。証明書のフォーマットを指定します (`PEM` または `PKCS#12`)。
 
-`requireAuthentication`（_false_）：有効にすると、Elasticsearch/X-Packとの接続は設定されたユーザー名とパスワードで認証されます。
+`requireAuthentication`（**false**）：有効にすると、Elasticsearch/X-Packとの接続は設定されたユーザー名とパスワードで認証されます。
 
-`username`（_elastic_）：［認証を要求］が有効になっている場合は、認証用のユーザー名をElasticsearchに設定する必要があります。
+`username`（**elastic**）：［認証を要求］が有効になっている場合は、認証用のユーザー名をElasticsearchに設定する必要があります。
 
 `password`：［認証を要求］が有効になっている場合、パスワードが必要です。
 
-`transportSSLVerificationMode`（_certificate_）：LDAPを使用して中間者攻撃や証明書の偽造から保護する場合は、検証タイプ（`none`、`certificate`、または `full`）を指定します。
+`transportSSLVerificationMode`（**certificate**）：LDAPを使用して中間者攻撃や証明書の偽造から保護する場合は、検証タイプ（`none`、`certificate`、または `full`）を指定します。
 
-`transportSSLEnabled`（_false_）：TLS/SSLを設定または無効にします。
+`transportSSLEnabled`（**false**）：TLS/SSLを設定または無効にします。
 
-`sslKeystorePath`（_/path/to/elastic-certificates.p12_）：秘密鍵と証明書を保持しているキーストアへのパスを設定します。
+`sslKeystorePath`（**/path/to/elastic-certificates.p12**）：秘密鍵と証明書を保持しているキーストアへのパスを設定します。
 
 `sslKeystorePassword`: PKCS#12ファイルのパスワードを設定します。
 
-`sslTruststorePath`（_/path/to/elastic-certificates.p12_）：トラストストアファイルへのパスを設定します。
+`sslTruststorePath`（**/path/to/elastic-certificates.p12**）：トラストストアファイルへのパスを設定します。
 
 `sslTruststorePassword`：パスワードをトラストストアに設定します。
 

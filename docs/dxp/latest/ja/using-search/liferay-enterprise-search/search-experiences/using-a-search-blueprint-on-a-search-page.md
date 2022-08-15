@@ -39,7 +39,7 @@
 <!--
 Follow this example to set search context attributes into a Blueprint-driven search page:
 
-1. Create two Users: name them _Acme User_ and _Other User_.
+1. Create two Users: name them **Acme User** and **Other User** .
    - Acme User
       - Screen Name: `acmeuser`
       - Email Address: `acme@liferay.com`
@@ -50,8 +50,8 @@ Follow this example to set search context attributes into a Blueprint-driven sea
       - Email Address: `other@liferay.com`
       - First Name: `Other`
       - Last Name: `User`
-1. Create a [User Segment](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) called _Acme Users_. Drag the User attribute and add Acme User to it. Record the segment's ID. It's in the URL as the parameter `segmentsEntryId`.
-1. Create an [Asset Category](../../../content-authoring-and-management/tags-and-categories.md). Name the Vocabulary and the Category _Business_. Record the Category's ID. It's in the URL as part of the path: `category/[ID]`.
+1. Create a [User Segment](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) called **Acme Users** . Drag the User attribute and add Acme User to it. Record the segment's ID. It's in the URL as the parameter `segmentsEntryId`.
+1. Create an [Asset Category](../../../content-authoring-and-management/tags-and-categories.md). Name the Vocabulary and the Category **Business** . Record the Category's ID. It's in the URL as part of the path: `category/[ID]`.
 1. Create two pieces of Basic Web Content:
    - Web Content 1
       - Title: Has Business Category
@@ -62,8 +62,8 @@ Follow this example to set search context attributes into a Blueprint-driven sea
       - Content: Test
 1. [Create a Blueprint](./creating-and-managing-search-blueprints.md) with the following Element:
    - Element Name: Boost Contents in a Category for a User Segment
-      - Asset Category ID: The _Business_ Category's ID. 
-      - User Segment IDs: The ID of the _Acme Users_ User Segment.
+      - Asset Category ID: The **Business** Category's ID. 
+      - User Segment IDs: The ID of the **Acme Users** User Segment.
       - Boost: 100
 1. Navigate to the Site's Search Page.
 1. Add the Low Level Search Options widget to the page, and open it's configuration screen.

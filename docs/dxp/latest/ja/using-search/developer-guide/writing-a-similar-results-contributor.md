@@ -17,12 +17,13 @@
 1. [**追加情報**](#additional-information)
 
 ## サンプルをデプロイする
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps to get an example `SimilarResultsContributor` up and running on your Liferay DXP instance:
+次に、以下の手順に従って、サンプルの `SimilarResultsContributor` を Liferay DXP インスタンスで起動し、動作させます。
 
-1. Download and unzip [Acme Similar Results Contributor](./liferay-r1s1.zip) .
+1. [Acme Similar Results Contributor](./liferay-r1s1.zip) をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/using-search/developer-guide/liferay-r1s1.zip -O
@@ -50,19 +51,19 @@ Then, follow these steps to get an example `SimilarResultsContributor` up and ru
 
 1. サンプルのコントリビューターが機能していることを確認します。 まず、ブラウザで`https://localhost:8080`を開きます。
 
-1. _サイトメニュー_ &rarr; _コンテンツ_ &rarr; _ナレッジベース_にKB記事を追加します。
+1. **サイトメニュー** &rarr; **コンテンツ** &rarr; **ナレッジベース** にKB記事を追加します。
 
-    同様の_［タイトル］_と_［コンテンツ］_フィールドがあることを確認してください。 これらの文字列を使用して、3つの記事を作成できます（タイトルとコンテンツに同じ文字列を使用します）。
+    同様の ［**タイトル**］ と ［**コンテンツ**］ フィールドがあることを確認してください。 これらの文字列を使用して、3つの記事を作成できます（タイトルとコンテンツに同じ文字列を使用します）。
 
-    _KB記事1をテストする_
+**KB記事1をテストする**
 
-    _KB記事2をテストする_
+**KB記事2をテストする**
 
-    _KB記事3をテストする_
+**KB記事3をテストする**
 
 1. ナレッジベース表示ウィジェットをページに追加し、続いて類似結果ウィジェットを追加します。
 
-1. 類似結果ウィジェットのウィジェット構成を開き、これらの設定に必ず _1_ 値を設定してください。
+1. 類似結果ウィジェットのウィジェット構成を開き、これらの設定に必ず **1** 値を設定してください。
 
     最小期間頻度：1最小ドキュメント頻度：1
 
@@ -255,7 +256,7 @@ private KBArticleLocalService _kbArticleLocalService;
 
 `uid` は、Liferay DXP 7.3以降の標準的な方法で構築されます。 `com.liferay.portal.search.internal.model.uid.UIDFactoryImpl` クラスは、Liferayのインデックスアーキテクチャによって制御されているすべてのドキュメントに `uid` を設定する責任があります。 現在は標準化されているので、推測をする必要はありません。
 
-同様に、バージョン7.2および7.1では、エンティティにComposite Indexer APIでインデックスが付けられている（つまり、ModelDocumentContributor</code> クラスが `）場合、 <code>uid` はLiferayの実装によって設定され、標準化されます。
+同様に、バージョン7.2および7.1では、エンティティにComposite Indexer APIでインデックスが付けられている（つまり、`ModelDocumentContributor` クラスが）場合、 `uid` はLiferayの実装によって設定され、標準化されます。
 
 ただし、レガシーインデクサーAPIでインデックス付けされたエンティティ（つまり、エンティティにはLiferayの `BaseIndexer`を拡張する `*インデクサー` クラスがある）は、 `uid`を設定するロジックをオーバーライドしている可能性があるため、エンティティのインデックス付けの実装を調べる価値があります。
 

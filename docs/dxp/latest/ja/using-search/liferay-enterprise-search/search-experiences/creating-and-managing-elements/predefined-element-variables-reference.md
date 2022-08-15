@@ -4,7 +4,7 @@
 
 | 値                            | タイプです。定義                                                                                                                                                           | シンタックス                                  |
 |:---------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |:--------------------------------------- |
-|                              | <a href="#context" id="context">**CONTEXT**</a>                                                                                                                                          |                                         |
+|                              | <a href="#context" id="context"> **CONTEXT** </a>                                                                                                                                          |                                         |
 | 企業ID                         | 番号です。現在のインスタンスの会社IDを返します。                                                                                                                                          | `${context.company_id}`                 |
 | ステージンググループである                | ブール値。現在のサイトがステージングされているかどうかを返す                                                                                                                                     | `${context.is_staging_group}`           |
 | 言語設定                         | テキスト現在の言語の2文字コードを返す（例： `en`）。                                                                                                                                      | `${context.language}`                   |
@@ -13,16 +13,16 @@
 | ページレイアウト ID                  | 番号を指定します。ページのIDを返す                                                                                                                                                 | `${context.plid}`                       |
 | 公開 ID                        | 番号パブリケーションIDを返す                                                                                                                                                    | `${context.publication_id}`             |
 | 範囲グループ ID                    | 現在のサイトのIDを返す                                                                                                                                                       | `${context.scope_group_id}`             |
-|                              | <a href="#time" id="time">**TIME**</a>                                                                                                                                          |                                         |
+|                              | <a href="#time" id="time"> **TIME** </a>                                                                                                                                          |                                         |
 | 現在の日付                        | 日付現在の日付を返す                                                                                                                                                         | `${time.current_date}`                  |
 | 現在の月の日                       | 番号月日を返す                                                                                                                                                            | `${time.current_day_of_month}`          |
-| 現在の週の日                       | 番号です。曜日を返す (_1 = 月曜日_)                                                                                                                                             | `${time.current_day_of_week}`           |
+| 現在の週の日                       | 番号です。曜日を返す (**1 = 月曜日**)                                                                                                                                             | `${time.current_day_of_week}`           |
 | 現在の年の日                       | 番号年月日を返す                                                                                                                                                           | `${time.current_day_of_year}`           |
 | 現在の時間                        | 番号現在の時刻を返す                                                                                                                                                         | `${time.current_hour}`                  |
 | 現在の年                         | 番号現在の年号を返す                                                                                                                                                         | `${time.current_year}`                  |
 | 時刻                           | 時間時刻を返す                                                                                                                                                            | `${time.time_of_day}`                   |
 | 翻訳済みタイムゾーン名                  | テキストロケール用にローカライズされたタイムゾーンを返す                                                                                                                                       | `${time.time_zone_name_localized}`      |
-|                              | <a href="#user" id="user">**USER**</a>                                                                                                                                          |                                         |
+|                              | <a href="#user" id="user"> **USER** </a>                                                                                                                                          |                                         |
 | 有効なセグメントのエントリー ID            | 番号ユーザーのセグメントIDを返す                                                                                                                                                  | `${user.active_segment_entry_ids}`      |
 | 年齢                           | 数字ユーザーの年齢を年数で返します。                                                                                                                                                 | `${user.age}`                           |
 | 誕生日                          | 日付ユーザーの生年月日を返します。                                                                                                                                                  | `${user.birthday}`                      |
@@ -43,7 +43,7 @@
 | 姓                            | テキストユーザーの姓を返す                                                                                                                                                      | `${user.last_name}`                     |
 | 標準ロール ID                     | 番号ユーザーのレギュラーロールのロール ID を返します。                                                                                                                                      | `${user.regular_role_ids}`              |
 | ユーザーグループID                   | 番号当該ユーザーが所属するユーザーグループの ID を返します。                                                                                                                                   | `${user.user_group_ids}`                |
-|                              | <a href="#conditional-elements" id="conditional-elements">**conditional elements***</a>                                                                                                                                          |                                         |
+|                              | <a href="#conditional-elements" id="conditional-elements"> **conditional elements***</a>                                                                                                                                          |                                         |
 | IPスタックシティ                    | テキスト検索しているIPアドレスの発信元となる都市名を返します。                                                                                                                                   | `${ipstack.city}`                       |
 | IPスタック大陸コード                  | テキスト検索対象の IP アドレスの発信元となる大陸コード (例: NA (North America)) を返します。                                                                                                       | `${ipstack.continent_code}`             |
 | IPスタック大陸名                    | テキスト大陸名を返す                                                                                                                                                         | `${ipstack.continent_name}`             |
@@ -59,13 +59,13 @@
 | 天気図を開く 天気予報のID               | 番号を指定します。天気予報の説明に対応する [ID を返す](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2)                                                            | `${openweathermap.weather_id}`          |
 | 天気図を開く メインラベル                | テキスト天候の [一次識別子を返す (例: Rain; これは OpenWeatherMap の API レスポンスの Main フィールドです](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2) , 天気 ID に従っています) | `${openweathermap.weather_main}`        |
 | オープンウェザーマップ 風速               | 番号風速をkm/hで返します。                                                                                                                                                    | `${openweathermap.wind_speed}`          |
-| User Custom Fields **\**** | ユーザーカスタムフィールドの値を返す                                                                                                                                                 | `user.custom.field.[name]`              |
+| User Custom Fields **\*\*** | ユーザーカスタムフィールドの値を返す                                                                                                                                                 | `user.custom.field.[name]`              |
 
 **\*** [Liferay Commerce](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/activating-liferay-commerce-enterprise.html) を起動し、Commerce 固有の変数にアクセスします。
 
-**\* ￭** Ipstack と OpenWeatherMap のサービスを有効にすることで、これらの変数にアクセスできます。 System or Instance Settings &rarr; Platform &rarr; Search Experiences にアクセスします。 Enabled]チェックボックスをクリックし、設定するサービスの設定を保存します。 Ipstackサービスを使用した例については、 [Search Experiencesのパーソナライズ](../personalizing-the-search-experience.md) を参照してください。
+**\*** Ipstack と OpenWeatherMap のサービスを有効にすることで、これらの変数にアクセスできます。 System or Instance Settings &rarr; Platform &rarr; Search Experiences にアクセスします。 Enabled]チェックボックスをクリックし、設定するサービスの設定を保存します。 Ipstackサービスを使用した例については、 [Search Experiencesのパーソナライズ](../personalizing-the-search-experience.md) を参照してください。
 
-**\**** これらのすぐに使える変数に加えて、 [User エンティティの Custom Fields](../../../../system-administration/configuring-liferay/adding-custom-fields.md) も Element の変数として参照することができます。 例えば、 _Employee_ という名前のユーザーカスタムフィールドは、 `user.custom.field.employee`という名前の要素で参照されています。
+**\*\*** これらのすぐに使える変数に加えて、 [User エンティティの Custom Fields](../../../../system-administration/configuring-liferay/adding-custom-fields.md) も Element の変数として参照することができます。 例えば、**Employee** という名前のユーザーカスタムフィールドは、 `user.custom.field.employee`という名前の要素で参照されています。
 
 ## 追加情報
 

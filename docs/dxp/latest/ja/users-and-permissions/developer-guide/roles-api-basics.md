@@ -28,7 +28,7 @@
    ./RoleUserAssociation_POST_ToInstance.sh 1234 5678
    ```
 
-1. *Global Menu* &rarr; *Control Panel* &rarr; *Roles*に移動します。 通常の役割]タブで、ユーザーを関連付けるために使用した特定の役割をクリックします。 *Assignees* タブをクリックします。 選択した役割にユーザーが関連付けられていることを確認します。
+1. **Global Menu** &rarr; **Control Panel** &rarr; **Roles** に移動します。 通常の役割]タブで、ユーザーを関連付けるために使用した特定の役割をクリックします。 **Assignees** タブをクリックします。 選択した役割にユーザーが関連付けられていることを確認します。
 
    ![ユーザーが関連付けられたことを確認します。](./roles-api-basics/images/01.png)
 
@@ -103,7 +103,7 @@
 
 以下のcURLまたはJavaコマンドを実行することで、Roleの一覧を表示することができます。
 
-### Roles_GET_FromInstance.sh
+### Roles **GET** FromInstance.sh
 
 コマンド:
 
@@ -117,7 +117,7 @@
    :language: bash
 ```
 
-### Roles_GET_FromInstance.java
+### Roles **GET** FromInstance.java
 
 コマンド:
 
@@ -143,7 +143,7 @@ Instance の `Roles` オブジェクトが JSON で表示されます。
 インスタンスの ``Role`` ID を取得するには、 ``Roles_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### Role_GET_ById.sh（ロールゲットバイアイディー）。
+### Role **GET** ById.sh（ロールゲットバイアイディー）。
 
 コマンド:
 
@@ -157,7 +157,7 @@ Instance の `Roles` オブジェクトが JSON で表示されます。
    :language: bash
 ```
 
-### Role_GET_ById.java
+### Role **GET** ById.java
 
 コマンド:
 
@@ -179,7 +179,7 @@ java -classpath .:* -DroleId=1234 Role_GET_ById
 
 ユーザーを特定のサイトロールに関連付けることができます。 `1234` をRoleのIDに置き換えてください。 `5678` をお客様のサイトIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation_POST_ToSite.shを実行します。
+### RoleUserAssociation **POST** ToSite.shを実行します。
 
 コマンド:
 
@@ -193,7 +193,7 @@ java -classpath .:* -DroleId=1234 Role_GET_ById
    :language: bash
 ```
 
-### RoleUserAssociation_POST_ToSite.java
+### RoleUserAssociation **POST** ToSite.java
 
 コマンド:
 
@@ -213,7 +213,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
 
 ユーザーを特定の組織ロールに関連付けることができます。 `1234` を組織のIDに置き換えてください。 `5678` を自分のRoleのIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation_POST_ToOrganization.shを実行します。
+### RoleUserAssociation **POST** ToOrganization.shを実行します。
 
 コマンド:
 
@@ -227,7 +227,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
    :language: bash
 ```
 
-### RoleUserAssociation_POST_ToOrganization.java
+### RoleUserAssociation **POST** ToOrganization.java
 
 コマンド:
 
@@ -247,7 +247,7 @@ java -classpath .:* -DorganizationId=1234 -DroleId=5678 -DuserAccountId=9012 Rol
 
 特定のユーザーから通常の役割の関連付けを削除します。 `1234` をRoleのIDに置き換えてください。 `5678` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation_DELETE_FromInstance.shを実行します。
+### RoleUserAssociation **DELETE** FromInstance.shを実行します。
 
 コマンド:
 
@@ -261,7 +261,7 @@ java -classpath .:* -DorganizationId=1234 -DroleId=5678 -DuserAccountId=9012 Rol
    :language: bash
 ```
 
-### RoleUserAssociation_DELETE_FromInstance.java
+### RoleUserAssociation **DELETE** FromInstance.java
 
 コマンド
 
@@ -281,7 +281,7 @@ java -classpath .:* -DroleId=1234 -DuserAccountId=5678 RoleUserAssociation_DELET
 
 特定のユーザーからサイトロールの関連付けを削除する。 `1234` をRoleのIDに置き換えてください。 `5678` をお客様のサイトIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation_DELETE_FromSite.shを実行します。
+### RoleUserAssociation **DELETE** FromSite.shを実行します。
 
 コマンド:
 
@@ -295,7 +295,7 @@ java -classpath .:* -DroleId=1234 -DuserAccountId=5678 RoleUserAssociation_DELET
    :language: bash
 ```
 
-### RoleUserAssociation_DELETE_FromSite.java
+### RoleUserAssociation **DELETE** FromSite.java
 
 コマンド
 
@@ -315,7 +315,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
 
 特定のユーザーから組織ロールの関連付けを解除する。 `1234` を組織のIDに置き換えてください。 `5678` を自分のRoleのIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation_DELETE_FromOrganization.sh
+### RoleUserAssociation **DELETE** FromOrganization.sh
 
 コマンド：
 
@@ -329,7 +329,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
    :language: bash
 ```
 
-### RoleUserAssociation_DELETE_FromOrganization.java
+### RoleUserAssociation **DELETE** FromOrganization.java
 
 コマンド
 

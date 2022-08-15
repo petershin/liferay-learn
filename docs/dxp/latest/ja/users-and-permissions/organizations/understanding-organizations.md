@@ -19,13 +19,14 @@ Liferay Organizationsは、現実の組織階層を反映したユーザーと�
 
 ### 組織管理者
 
-組織管理者は、 *委任された* 管理者です。 つまり、ポータルサイトの一部（あなたが定義した部分）を提供することで、あなたの肩の荷を下ろすことができるのです。 組織管理者は、これらのことを行うことができます。
+組織管理者は、 **委任された** 管理者です。 つまり、ポータルサイトの一部（あなたが定義した部分）を提供することで、あなたの肩の荷を下ろすことができるのです。 組織管理者は、これらのことを行うことができます。
 
 * 自分の組織および子組織のすべてのユーザーを管理することができます。
-* 必要に応じて、ユーザーを組織に割り当てます（ [portal-ext.propertiesの`［Organizations］`セクション](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Organizations) を参照）。
+* 必要に応じて、ユーザーを組織に割り当てます（ [portal-ext.propertiesの`Organizations`セクション](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Organizations)
+を参照）。
 * サイト管理者と同じように、組織のサイトを管理することができます。
 
-組織管理者は、デフォルトでコントロールパネルにアクセスできません。 代わりに、*［自分の組織］*リンクをクリックして、管理している組織にアクセスできます。
+組織管理者は、デフォルトでコントロールパネルにアクセスできません。 代わりに、 ［**自分の組織**］ リンクをクリックして、管理している組織にアクセスできます。
 
 ![組織の管理者は、プロフィールから自分の組織にアクセスできます。](./understanding-organizations/images/03.png)
 

@@ -9,7 +9,7 @@ creating-and-managing-elements/predefined-element-variables-reference.md
 ```
 
 
-エレメントは、 [Search Blueprints](understanding-search-blueprints.md) の基本的な構成要素の1つで、Blueprints アプリケーション内で管理されます。 グローバルメニューのアプリケーションセクションを開き、サーチエクスペリエンスカテゴリを見つけると、サーチブループリントを開くことができます。 _Elements_ タブをクリックすると、新しいエレメントを追加したり、既存のエレメントを管理することができます。
+エレメントは、 [Search Blueprints](understanding-search-blueprints.md) の基本的な構成要素の1つで、Blueprints アプリケーション内で管理されます。 グローバルメニューのアプリケーションセクションを開き、サーチエクスペリエンスカテゴリを見つけると、サーチブループリントを開くことができます。 **Elements** タブをクリックすると、新しいエレメントを追加したり、既存のエレメントを管理することができます。
 
 ![Blueprintsアプリケーションからエレメントを作成・管理します。](./creating-and-managing-elements/creating-elements/images/01.png)
 

@@ -26,11 +26,11 @@
 
 次に、LDAP属性からLiferayフィールドへのマッピングを定義できます。 LDAPユーザー属性はLDAPサーバーごとに異なる場合がありますが、ユーザーを認識するためにLiferayでマップする必要があるフィールドは5つあります。
 
-****Screen Name**（例：`uid`または`cn`）
-****Password**（例：`userPassword`）
-****Email Address**（例：`mail`または`email`）
-****First Name**（例：`name`または`givenName`）
-****Last Name**（例：`sn`）
+* **Screen Name**（例：`uid`または`cn`）
+* **Password**（例：`userPassword`）
+* **Email Address**（例：`mail`または`email`）
+* **First Name**（例：`name`または`givenName`）
+* **Last Name**（例：`sn`）
 
 ```{note}
 メールアドレスを持たないユーザーを作成またはインポートする場合は、`portal-ext.properties` で `users.email.address.required=false` を設定する必要があります。 この設定をすると、LiferayはユーザーIDに加えて、プロパティ`users.email.address.auto.suffix=`で定義されたサフィックスを組み合わせたメールアドレスを自動生成します。 最後に、LiferayおよびLDAP認証を電子メールアドレス以外のものに設定してください。
@@ -38,7 +38,7 @@
 
 LDAPグループをLiferayユーザーグループとしてインポートする場合は、メンバーシップ情報が保持されるように、Liferayグループフィールドのマッピングを定義してください。
 
-****Group**（例： **member**）
+* **Group**（例： **member**）
 
 その他のLDAPユーザーマッピングフィールドはオプションです。
 
@@ -62,9 +62,9 @@ LDAPグループをLiferayユーザーグループとしてインポートする
 
 このマッピングで取得するLDAPグループ属性を入力します。 以下の属性をマップできます。 ［**Group Name**］ および ［**User**］ フィールドは必須です。 ［**Description**］ はオプションです。
 
-****Group Name**（例`cn`または`o`）
-****Description**（例：`description`）
-****User**（例`member`）
+* **Group Name**（例`cn`または`o`）
+* **Description**（例：`description`）
+* **User**（例`member`）
 
 **Test LDAP Groups：**［**Test LDAP Groups**］ ボタンをクリックすると、検索フィルターによって返されたグループのリストが表示されます。
 

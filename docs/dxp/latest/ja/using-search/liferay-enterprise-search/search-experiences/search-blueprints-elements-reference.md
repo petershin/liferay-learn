@@ -189,13 +189,13 @@ GET /_search
 
 ![指定されたフィールドに完全に一致する結果をフィルタリングします。](./search-blueprints-elements-reference/images/09.png)
 
-**外部参照：** [Elasticsearch Terms query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-terms-query.html) のドキュメントを参照してください。
+**外部参照：**[Elasticsearch Terms query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-terms-query.html) のドキュメントを参照してください。
 
 ### 一定期間内に作成されたコンテンツに限定して検索する
 
 Rangeクエリで結果をフィルタリングします。 時間範囲を設定します。
 
-**外部参照：** [Elasticsearch Range query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-range-query.html) のドキュメントを参照してください。
+**外部参照：**[Elasticsearch Range query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-range-query.html) のドキュメントを参照してください。
 
 ### HEADバージョンに限定して検索する
 
@@ -239,7 +239,7 @@ PDFファイルに限定して検索します。 この要素は、`mimeType`フ
 
 クエリをMust Not occurrence句を含むブールクエリで折り返すことで、クエリにマッチした場合に結果を非表示にすることができます。
 
-**外部参照：** [Elasticsearch Boolean query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html) のドキュメントを参照してください。
+**外部参照：**[Elasticsearch Boolean query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html) のドキュメントを参照してください。
 
 ### ［Hide by Exact Term Match］
 
@@ -279,7 +279,7 @@ Elasticsearch DSLのクエリ本体をそのまま要素に貼り付けます。
 
 ![Elasticsearchのクエリ本体を要素に貼り付けます。](./search-blueprints-elements-reference/images/12.png)
 
-**外部参照：** [Elasticsearch Wrapper query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-wrapper-query.html) のドキュメントをご参照ください。
+**外部参照：**[Elasticsearch Wrapper query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-wrapper-query.html) のドキュメントをご参照ください。
 
 ### スケジューリングアウェア
 
@@ -289,7 +289,7 @@ Elasticsearch DSLのクエリ本体をそのまま要素に貼り付けます。
 
 1つまたは複数のフィールドにマッチさせるには、検索文字列のクエリ構文を使用します。 検索キーワードがすべて一致しなければならない（AND）か、1つだけ一致しなければならない（OR）かを決定する際に使用するデフォルトのブール演算子（ORまたはAND）を指定します。 この要素では、ブール演算子やワイルドカードなどを使って、より高度な検索キーワードを入力することができます。
 
-**外部参照：** [Elasticsearch Query String query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html#query-string-syntax) のドキュメントをご覧ください。
+**外部参照：**[Elasticsearch Query String query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html#query-string-syntax) のドキュメントをご覧ください。
 
 ### ステージングアウェア
 
@@ -308,7 +308,7 @@ Elasticsearch DSLのクエリ本体をそのまま要素に貼り付けます。
 - この要素が提供する句に一致するドキュメントをブーストするようブーストを設定します。
 - クエリ句を一致させる値をハードコードしたい場合は、Text to Matchを設定します。 ユーザーのキーワードで検索したいだけの場合は、空欄にしてください。
 
-**外部参照：** [Elasticsearch Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) のドキュメントをご覧ください。
+**外部参照：**[Elasticsearch Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) のドキュメントをご覧ください。
 
 ## 追加情報
 

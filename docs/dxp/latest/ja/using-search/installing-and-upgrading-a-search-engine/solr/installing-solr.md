@@ -311,7 +311,7 @@ Solr コネクタのプロパティは、Solr 7 および Solr 8 コネクタに
 以下に、デフォルトの設定と、Solrコネクタ・アプリケーションをインストールしたときに利用可能になる設定（システム設定の検索カテゴリ、または `.config` ファイルで設定可能）を示します。 これらの設定は、限られた値を受け入れるものです。
 
 **設定ファイル：** `com.liferay.portal.search.solr8.configuration.SolrConfiguration.config` \
-**システム設定のエントリ：****Solr 8**
+**システム設定のエントリ：** **Solr 8**
 ```properties
 authenticationMode=["BASIC" or "CERT"]
 clientType=["REPLICATED" or "CLOUD"]
@@ -323,7 +323,7 @@ zkHost="localhost:9983"
 ```
 
 **設定ファイル：** `com.liferay.portal.search.solr8.configuration.SolrHttpClientFactoryConfiguration.config` \
-**システム設定エントリ：****Solr 8 HTTPクライアントファクトリー**
+**システム設定エントリ：** **Solr 8 HTTPクライアントファクトリー**
 
 ```properties
 basicAuthPassword="solr"
@@ -333,7 +333,7 @@ maxTotalConnections="20"
 ```
 
 **設定ファイル：** `com.liferay.portal.search.solr8.configuration.SolrSSLSocketFactoryConfiguration.config` \
-**システム設定エントリ：****Solr 8 SSLファクトリー**
+**システム設定エントリ：** **Solr 8 SSLファクトリー**
 
 ```properties
 keyStorePassword="secret"

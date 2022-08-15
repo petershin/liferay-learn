@@ -5,12 +5,13 @@
 Liferay の Rest API を使用して、国を作成および管理します。
 
 ## 国を追加する
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+次に、以下の手順に従います。
 
-1. Download and unzip [Countries API Basics](./liferay-g6m8.zip) .
+1. [Countries API Basics](./liferay-g6m8.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-g6m8.zip -O
@@ -118,7 +119,7 @@ Then, follow these steps:
 
 以下のcURLまたはJavaコマンドを実行することで、国を一覧表示することができます。
 
-### Countries_GET_FromInstance.sh
+### Countries **GET** FromInstance.sh
 
 コマンド:
 
@@ -132,7 +133,7 @@ Then, follow these steps:
    :language: bash
 ```
 
-### Countries_GET_FromInstance.java
+### Countries **GET** FromInstance.java
 
 コマンド：
 
@@ -158,7 +159,7 @@ Instanceの `Country` オブジェクトがJSONで表示されます。
 インスタンスの ``Countries`` ID を取得するには、 ``Countries_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### 国名_GET_ById.sh
+### 国名 **GET** ById.sh
 
 コマンド：
 
@@ -172,7 +173,7 @@ Instanceの `Country` オブジェクトがJSONで表示されます。
    :language: bash
 ```
 
-### Country_GET_ById.java
+### Country **GET** ById.java
 
 コマンド：
 
@@ -194,7 +195,7 @@ java -classpath .:* -DcountryId=1234 Country_GET_ById
 
 以下のcURLとJavaコマンドで、既存の国の部分編集を行う。 `1234` を自分の国のIDに置き換えてください。
 
-### Country_PATCH_ById.sh
+### Country **PATCH** ById.sh
 
 コマンド：
 
@@ -208,7 +209,7 @@ java -classpath .:* -DcountryId=1234 Country_GET_ById
    :language: bash
 ```
 
-### Country_PATCH_ById.java
+### Country **PATCH** ById.java
 
 コマンド：
 
@@ -228,7 +229,7 @@ java -classpath .:* -DcountryId=1234 Country_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存の国を完全に上書きします。 `1234` をあなたの国のIDに置き換えてください。
 
-### Country_PUT_ById.sh
+### Country **PUT** ById.sh
 
 コマンド:
 
@@ -242,7 +243,7 @@ java -classpath .:* -DcountryId=1234 Country_PATCH_ById
    :language: bash
 ```
 
-### Country_PUT_ById.java
+### Country **PUT** ById.java
 
 コマンド:
 
@@ -262,7 +263,7 @@ java -classpath .:* -DcountryId=1234 Country_PUT_ById
 
 以下のcURLとJavaコマンドで、既存の国を削除します。 `1234` をあなたの国のIDに置き換えてください。
 
-### 国名_DELETE_ById.sh
+### 国名 **DELETE** ById.sh
 
 コマンド:
 
@@ -276,7 +277,7 @@ java -classpath .:* -DcountryId=1234 Country_PUT_ById
    :language: bash
 ```
 
-### Country_DELETE_ById.java
+### Country **DELETE** ById.java
 
 コマンド
 

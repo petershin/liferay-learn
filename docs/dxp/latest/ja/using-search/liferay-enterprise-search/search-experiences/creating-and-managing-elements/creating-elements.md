@@ -5,10 +5,7 @@ Search Blueprints に同梱されている [system Elements はたくさんあ�
 * [Custom JSON Element](#using-the-custom-json-elements) を使用して、Search Blueprints [Query Builder](../creating-and-managing-search-blueprints.md#using-the-query-builder) から Element を作成します。
 * [Add Element source editor](#using-the-add-element-source-editor) を使用すると、便利なプレビュー機能やシステム内の定義済みテンプレート変数のリストなど、より堅牢なElementエディタを使用してElementを記述することができます。
 * [システムのElement](./managing-elements.md) を複製して、独自のカスタムElementを開発するためのスタートラインに立つことができます。
-* [Paste Any Elasticsearch Query system Element](../search-blueprints-elements-reference.md#paste-any-elasticsearch-query) Paste Any Elasticsearch Query system Element ElasticsearchクエリDSL の使い方に慣れていて、Elasticsearchクエリを元に素早くElementを作り上げたい場合は、この方法を使用します。</a>
-</li> </ul> 
-  
-  
+* [Paste Any Elasticsearch Query system Element](../search-blueprints-elements-reference.md#paste-any-elasticsearch-query) クエリDSL の使い方に慣れていて、Elasticsearchクエリを元に素早くElementを作り上げたい場合は、この方法を使用します。
 
 ## カスタムJSON要素の使用
 
@@ -116,11 +113,11 @@ JSONエディタに入力すると、オートコンプリートにより、利�
 
 Elementsを構築するために、より強固な編集環境を提供します。 Search BlueprintsのElementsセクションから、Add(![Add](../../../../images/icon-add.png))ボタンをクリックします。 
 
-要素に名前を付けて、 _Create_ をクリックします。 Element Sourceエディタが表示され、エディタ左側のペインにPredefined Variablesが表示されます。 JSONエディタに入力すると、オートコンプリートにより、利用可能なプロパティが表示されます。 利用可能なJSONプロパティをさらに理解するには、 [スキーマを理解する](#understanding-the-element-schema) を参照してください。
+要素に名前を付けて、 **Create** をクリックします。 Element Sourceエディタが表示され、エディタ左側のペインにPredefined Variablesが表示されます。 JSONエディタに入力すると、オートコンプリートにより、利用可能なプロパティが表示されます。 利用可能なJSONプロパティをさらに理解するには、 [スキーマを理解する](#understanding-the-element-schema) を参照してください。
 
 ![エレメントソースエディタでエレメントを作成します。](./creating-elements/images/02.png)
 
-UI設定オプションは、Element JSON内の `uiConfiguration` プロパティで定義されます。 要素の設定ウィンドウがクエリビルダでどのように表示されるかをプレビューするには、 _プレビュー_ リンク（キャンセルボタンの隣）をクリックします。
+UI設定オプションは、Element JSON内の `uiConfiguration` プロパティで定義されます。 要素の設定ウィンドウがクエリビルダでどのように表示されるかをプレビューするには、 **プレビュー** リンク（キャンセルボタンの隣）をクリックします。
 
 ![要素設定ウィンドウをプレビューします。](./creating-elements/images/03.png)
 
@@ -139,7 +136,7 @@ UI設定オプションは、Element JSON内の `uiConfiguration` プロパテ�
 
 
 ```{warning}
-要素スキーマ](#understanding-the-element-schema)は変更されることがあります。 Liferayのバージョン間でスキーマが変更された場合、古いエレメントのJSONのインポートに失敗することがあります。
+[要素スキーマ](#understanding-the-element-schema)は変更されることがあります。 Liferayのバージョン間でスキーマが変更された場合、古いエレメントのJSONのインポートに失敗することがあります。
 ```
 
 
@@ -147,7 +144,7 @@ Search Blueprint Elements のスキーマは、 [sxp-query-element.schema.json](
 
 <http://localhost:8080/o/api?endpoint=http://localhost:8080/o/search-experiences-rest/v1.0/openapi.json>
 
-_POST /v1.0/sxp-blueprints_ エンドポイントエントリを展開します。 下にスクロールして、 _Schema_ リンク（ _Example Value_ リンクの隣）をクリックします。
+**POST /v1.0/sxp-blueprints** エンドポイントエントリを展開します。 下にスクロールして、 **Schema** リンク（**Example Value** リンクの隣）をクリックします。
 
 ![APIエクスプローラーからElementスキーマを探索します。](./creating-elements/images/04.png)
 

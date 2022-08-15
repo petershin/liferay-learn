@@ -17,8 +17,8 @@ managing-user-data/configuring-the-anonymous-user.md
 
 Liferayのユーザー関連データ（UAD）フレームワークは、一般データ保護規則（GDPR）の技術的に厳しい2つの要件を満たすのに役立ちます。
 
-- データポータビリティの権利
-- [「忘れられる権利」](./managing-user-data/sanitizing-user-data.md)
+- [データポータビリティの権利](./managing-user-data/exporting-user-data.md)
+- [忘れられる権利](./managing-user-data/sanitizing-user-data.md)
 
 以下のLiferayアプリケーションには、UADフレームワークが適用されています。
 

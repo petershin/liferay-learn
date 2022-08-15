@@ -22,7 +22,7 @@ DXP 7.3にバンドルされているElasticsearch 7コネクタは、 [Elastic�
 
 > 利用可能:Liferay 7.3 CE GA4以降、Liferay DXP 7.3 GA1以降
 
-_Liferay Enterprise Search Security_（以前の_Liferay Connector to X-Pack Security_）モジュールの機能は、_Liferay Connector to Elasticsearch 7_に含まれています。 CE/DXP 7.3のすべてのお客様は、 [Liferay Enterprise Search (LES)](https://www.liferay.com/products/dxp/enterprise-search) サブスクリプションなしでElasticsearchクラスターに安全に接続できます。
+**Liferay Enterprise Search Security**（以前の **Liferay Connector to X-Pack Security**）モジュールの機能は、 **Liferay Connector to Elasticsearch 7** に含まれています。 CE/DXP 7.3のすべてのお客様は、 [Liferay Enterprise Search (LES)](https://www.liferay.com/products/dxp/enterprise-search) サブスクリプションなしでElasticsearchクラスターに安全に接続できます。
 
 [アップグレード](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md)ガイドには、暗号化設定をElasticsearch 7コネクタに移動するための情報が含まれています。
 
@@ -118,7 +118,7 @@ DXP 7.2 SP2以前から7.3にアップグレードすると、新しいDXPイン
 
 ## Liferay Enterprise Search（LES）
 
-> ** [LESサブスクライバー](https://www.liferay.com/products/dxp/enterprise-search) **
+> [**LESサブスクライバー](https://www.liferay.com/products/dxp/enterprise-search**)
 
 ### クラスター横断レプリケーション（LES）
 
@@ -137,7 +137,7 @@ Learning to Rank（LTR）は、機械学習（ML）モデルを適用して検�
 - 「機能」の選択（モデルのトレーニング時に考慮する検索要素の用語---たとえば、最新性、地理的近接性、タグの一致）
 - 手動（クエリの結果を評価する検索エキスパートなど）または半自動（クエリのユーザークリック率の測定など）で管理される判断リスト（「グラウンドトゥルース」とも呼ばれます）の提供。
 
-判断リストは、モデルのトレーニングに情報を提供し、導くための信頼できる情報源です。 ユーザーが検索クエリを送信すると、LTRは検索エンジンから返された最初の _×_ 件の結果（デフォルトでは最初の1,000件の結果）を受け取り、学習したモデルを使ってそれらの結果を再スコアリングして並べ替えた後、リストをユーザーに返します。
+判断リストは、モデルのトレーニングに情報を提供し、導くための信頼できる情報源です。 ユーザーが検索クエリを送信すると、LTRは検索エンジンから返された最初の **×** 件の結果（デフォルトでは最初の1,000件の結果）を受け取り、学習したモデルを使ってそれらの結果を再スコアリングして並べ替えた後、リストをユーザーに返します。
 
 ### LESアプリケーションの名前が変更されました
 
@@ -156,7 +156,7 @@ Liferay CE/DXP 7.3リリースには明示的にリンクされていません�
 
 > 利用可能:Liferay CE 7.3 GA6以降、Liferay DXP 7.3 GA1以降
 
-Elasticsearchのバージョンに依存しない`IndexSettingsContributor`が追加されました（ [srcコードはこちら）](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$］/modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/IndexSettingsContributor.java) ：
+Elasticsearchのバージョンに依存しない`IndexSettingsContributor`が追加されました（ [srcコードはこちら）](https://github.com/liferay/liferay-portal/blob/[$LIFERAY **LEARN** PORTAL **GIT** TAG$］/modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/IndexSettingsContributor.java) ：
 
 * `com.liferay.portal.search.spi.settings.IndexSettingsContributor`
 * `com.liferay.portal.search.spi.settings.IndexSettingsHelper.java`
@@ -166,7 +166,7 @@ Elasticsearchのバージョンに依存しない`IndexSettingsContributor`が�
 
 > 利用可能:Liferay CE 7.3 GA4以降、Liferay DXP 7.3 GA1以降
 
-互換性のあるバージョンのElasticsearchがLiferay CE/DXP 7.3+ Tomcatバンドルにバンドルされ、 _sidecar_ JVMで同時に起動されます。 このサイドカーのインストールは、_開発モード_と呼ばれ、以前の_組み込み_モードに置き換わるものです（どちらも本番環境のインストールではサポートされていません）。 サイドカーのシステム設定には、Elasticsearch 7設定に専用のプロパティがあります。 デフォルトでは、HTTPポート9201で実行されます。 詳細は、[サイドカーまたはEmbedded モードのElasticsearchの使用](../installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md)を参照してください。
+互換性のあるバージョンのElasticsearchがLiferay CE/DXP 7.3+ Tomcatバンドルにバンドルされ、 **sidecar** JVMで同時に起動されます。 このサイドカーのインストールは、 **開発モード** と呼ばれ、以前の **組み込み** モードに置き換わるものです（どちらも本番環境のインストールではサポートされていません）。 サイドカーのシステム設定には、Elasticsearch 7設定に専用のプロパティがあります。 デフォルトでは、HTTPポート9201で実行されます。 詳細は、[サイドカーまたはEmbedded モードのElasticsearchの使用](../installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md)を参照してください。
 
 初回起動時にサイドカーElasticsearchサーバーが自動ダウンロードされます。 デプロイでサイドカーサーバーをダウンロードできない場合は、 [Elasticsearchをリモートサーバーとしてインストールします](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md)。
 

@@ -1,6 +1,6 @@
 # 検索ブループリント 構成リファレンス
 
-Search Blueprintsのユーザーインターフェースには、Blueprintsを作成するためのQuery Builderがあります。 要素の追加とクエリ設定の構成以外にも、多くのBlueprintsのユースケースで重要な構成があります。 これらの設定を行うには、Global Menu &rarr; Applications &rarr; Blueprintsにアクセスしてください。 新しいブループリントを追加するか、既存のブループリントを開き、 _Configuration_ ]タブをクリックします。
+Search Blueprintsのユーザーインターフェースには、Blueprintsを作成するためのQuery Builderがあります。 要素の追加とクエリ設定の構成以外にも、多くのBlueprintsのユースケースで重要な構成があります。 これらの設定を行うには、Global Menu &rarr; Applications &rarr; Blueprintsにアクセスしてください。 新しいブループリントを追加するか、既存のブループリントを開き、 **Configuration**]タブをクリックします。
 
 ![JSON を使用して検索ブループリントを設定します。](./search-blueprints-configuration-reference/images/01.png)
 
@@ -18,7 +18,7 @@ Search Blueprintsで追加された集約は、検索要求に既に存在する
 
 ブループリントにアグリゲーションを追加するには、次のようにします。
 
-1. ブループリント・エディターから、 _Configuration_ タブをクリックします。
+1. ブループリント・エディターから、 **Configuration** タブをクリックします。
 1. Aggregation Configurationのテキストエリアを探し、有効なJSONを入力します。 Elasticsearch DSLを使用してJSONを作成します。
 
    ```{warning}
@@ -49,7 +49,7 @@ Search Blueprints で [Highlights](https://www.elastic.co/guide/en/elasticsearch
 
 ブループリントにハイライトを追加するには。
 
-1. ブループリント・エディターから、 _Configuration_ タブをクリックします。
+1. ブループリント・エディターから、 **Configuration** タブをクリックします。
 1. Highlight Configurationのテキストエリアを探し、有効なJSONを入力します。 プロパティとその取り得る値については、 [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/highlighting.html) で詳しく説明しています。
 
    ```json
@@ -80,7 +80,7 @@ Search Blueprints で [Sorts](https://www.elastic.co/guide/en/elasticsearch/refe
 
 ブループリントにソートを追加するには。
 
-1. ブループリント・エディターから、 _Configuration_ タブをクリックします。
+1. ブループリント・エディターから、 **Configuration** タブをクリックします。
 1. ソート設定のテキストエリアを探し、有効なJSONを入力します。
 
    ```json
@@ -97,7 +97,7 @@ Search Blueprints で [Sorts](https://www.elastic.co/guide/en/elasticsearch/refe
 
 検索コンテキストの属性から新規テンプレート変数を宣言します。 例えば、Custom FilterウィジェットをWidget TemplateとBlueprintと組み合わせて、エンドユーザーが検索結果を未公開コンテンツと下書きコンテンツの間で切り替えられるようにすることができます。
 
-この例では、新しい検索コンテキスト属性を追加し、その属性の値が _true の場合に、検索結果から Web コンテンツを除外するために使用します_.
+この例では、新しい検索コンテキスト属性を追加し、その属性の値が **true の場合に、検索結果から Web コンテンツを除外するために使用します** .
 
 1. 新しいブループリントにパラメータ設定を追加する： 設定 タブで、PArameter Configuration テキストボックスを見つけます。 追加
 
@@ -111,7 +111,7 @@ Search Blueprints で [Sorts](https://www.elastic.co/guide/en/elasticsearch/refe
    }
    ```
 
-1. ブループリントにカスタム要素を追加します。Query Builder] タブで [Custom JSON Element] を見つけ、[ _Add_] をクリックします。 既存のコンテンツをこれで上書きしてください。
+1. ブループリントにカスタム要素を追加します。Query Builder] タブで [Custom JSON Element] を見つけ、[**Add**] をクリックします。 既存のコンテンツをこれで上書きしてください。
 
    ```json
    {
@@ -179,11 +179,11 @@ Search Blueprints で [Sorts](https://www.elastic.co/guide/en/elasticsearch/refe
 
 1. 検索コンテキスト属性を追加します。 テスト目的であれば、 [プレビュー](creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) サイドバーで行うことができます。
 
-   _［プレビュー］_をクリックします。 歯車のアイコン(![Gear](../../../images/icon-cog3.png))をクリックして、ブループリントのプレビュー検索に検索コンテキスト属性を追加します。 属性のキーと値のペアを入力してください： `exclude.journal_articles`/`true`
+［**プレビュー**］ をクリックします。 歯車のアイコン(![Gear](../../../images/icon-cog3.png))をクリックして、ブループリントのプレビュー検索に検索コンテキスト属性を追加します。 属性のキーと値のペアを入力してください： `exclude.journal_articles`/`true`
 
-   次に、 _完了_をクリックします。
+   次に、 **完了** をクリックします。
 
-   **チェックポイント** ウェブコンテンツの記事が返されることを想定した検索を実行し（必要なら追加）、記事が返されないことを確認する。 再度、属性設定を開き、値を _false_に設定します。 プレビュー検索にWebコンテンツが含まれるようになったことを確認します。
+   **チェックポイント** ウェブコンテンツの記事が返されることを想定した検索を実行し（必要なら追加）、記事が返されないことを確認する。 再度、属性設定を開き、値を **false** に設定します。 プレビュー検索にWebコンテンツが含まれるようになったことを確認します。
 
 
    ```{tip}
@@ -196,9 +196,9 @@ Search Blueprints で [Sorts](https://www.elastic.co/guide/en/elasticsearch/refe
 これは高度な機能で、ほとんど必要ないでしょう。 LiferayのUIにはこの設定に対応する機能がないため、カスタムコードのみがこの設定の結果を検索レスポンスに利用することができます。
 ```
 
-Advanced Configurationでは、検索リクエストパラメーターとして、 [source includeとexcludes](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping-source-field.html#include-exclude) が追加されます。 `_source` フィールドには、インデックスリクエストに渡された保存されたドキュメント本体が含まれています。 このフィールドは、それ自身はインデックスされない。 Blueprints の Advanced Configuration では、 `_source` フィールドに含めるフィールドと除外するフィールドを指定して、プルーンすることができます。 この機能は、低レベル検索オプションウィジェットの _Fields to Return_ の設定と重複し、競合する可能性があるため、両方のアプローチを同時に使用してはいけません。 ブループリントにAdvanced構成を追加するには、次のようにします。
+Advanced Configurationでは、検索リクエストパラメーターとして、 [source includeとexcludes](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping-source-field.html#include-exclude) が追加されます。 `_source` フィールドには、インデックスリクエストに渡された保存されたドキュメント本体が含まれています。 このフィールドは、それ自身はインデックスされない。 Blueprints の Advanced Configuration では、 `_source` フィールドに含めるフィールドと除外するフィールドを指定して、プルーンすることができます。 この機能は、低レベル検索オプションウィジェットの **Fields to Return** の設定と重複し、競合する可能性があるため、両方のアプローチを同時に使用してはいけません。 ブループリントにAdvanced構成を追加するには、次のようにします。
 
-1. ブループリント・エディターから、 _Configuration_ タブをクリックします。
+1. ブループリント・エディターから、 **Configuration** タブをクリックします。
 1. Advanced Configurationのテキストエリアを探し、必要な `excludes` と `includes` を入力します。 ワイルドカードは使用可能です。
 
 ```json

@@ -69,14 +69,14 @@ Liferay 7.4 (DXP、Portal)、Liferay DXP 7.3、Liferay Portal 7.3 GA4+ では、
 | Wildfly：7.3以降            | サイドカー               | &#10008; | &#10008; (自動ダウンロードされました) |
 | WebSphere：7.3以降          | サイドカー               | &#10008; | &#10004;                 |
 | Weblogic：7.3以降           | サイドカー               | &#10008; | &#10004;                 |
-| _すべてのフレーバー：7.2/7.3 GA3-_ | _埋め込み_              | &#10004; | &#10008;                 |
+| **すべてのフレーバー：7.2/7.3 GA3-** | **埋め込み** | &#10004; | &#10008;                 |
 
 Tomcat以外のアプリケーションサーバーのバンドルをダウンロードした場合、サーバーを起動すると、Elasticsearchディストリビューションがオンザフライでダウンロードされ、サイドカーサーバーとして起動されます。
 
 [WebSphere](../../../installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md)および[Weblogic](../../../installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md)アプリケーションサーバーへの Liferayのインストール手順には、サイドカーサーバーを初期化するために必要な Elasticsearchアーカイブを手動で提供する手順が含まれています。
 
 ```{important}
-バンドルされているElasticsearchサーバは、開発およびテスト目的に有用であり、本番環境では使用しないでください。 リモート検索エンジンのインストールについては、【Elasticsearchのインストール】(./getting-started-with-elasticsearch.md)をご参照ください。
+バンドルされているElasticsearchサーバは、開発およびテスト目的に有用であり、本番環境では使用しないでください。 リモート検索エンジンのインストールについては、[Elasticsearchのインストール](./getting-started-with-elasticsearch.md)をご参照ください。
 ```
 
 ## Embeddedとサイドカーの比較

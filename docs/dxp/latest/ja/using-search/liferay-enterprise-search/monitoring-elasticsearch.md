@@ -33,10 +33,10 @@ Elasticsearchを再起動してから、Kibanaをインストールします。
 KibanaのバージョンがElasticsearchのバージョンと一致していることを確認してください。 詳細は、 [Liferay Enterprise Search互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
 
 ```{note}
-Elasticsearch 6.x が、[サポート終了] (https://www.elastic.co/support/eol#elasticsearch) になりました。 Liferay 7.2システムでElasticsearch 6.xを使用している場合、Elasticsearch 7.xにアップグレードする必要があります。 詳細は、[Elasticsearch 7へのアップグレード](./../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md) を参照ください。
+Elasticsearch 6.x が、[サポート終了](https://www.elastic.co/support/eol#elasticsearch) になりました。 Liferay 7.2システムでElasticsearch 6.xを使用している場合、Elasticsearch 7.xにアップグレードする必要があります。 詳細は、[Elasticsearch 7へのアップグレード](./../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md) を参照ください。
 ```
 
-1. [Kibanaをダウンロード](https://www.elastic.co/downloads/kibana) して、解凍します。 ルートフォルダは*Kibanaホーム*と呼ばれます。
+1. [Kibanaをダウンロード](https://www.elastic.co/downloads/kibana) して、解凍します。 ルートフォルダは **Kibanaホーム** と呼ばれます。
 
 1. `kibana.yml`でElasticsearchのURLを設定して、モニタリングデータの送信先をKibanaに指示します。
 
@@ -55,7 +55,7 @@ Elasticsearch 6.x が、[サポート終了] (https://www.elastic.co/support/eol
    elasticsearch.password: "liferay"
    ```
 
-   [セキュリティ設定](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)の`kibana_system`ユーザーパスワードを使用します。 Kibanaをインストールすると、*［Management］*ユーザーインターフェイスから組み込みのユーザーパスワードを変更できます。
+   [セキュリティ設定](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)の`kibana_system`ユーザーパスワードを使用します。 Kibanaをインストールすると、 ［**Management**］ ユーザーインターフェイスから組み込みのユーザーパスワードを変更できます。
 
 1. 証明書ファイルを提供して、暗号化の設定を開始します。 詳しくは [Elastic社のガイド](https://www.elastic.co/guide/en/kibana/7.x/using-kibana-with-security.html#using-kibana-with-security) を参照してください。
 
@@ -127,7 +127,7 @@ LESモニタリングアプリをダウンロードし、LPKGファイルを`［
 
    正確な構成値は、Kibanaの構成によって異なります。 たとえば、TLSを有効にしていない場合は、`kibanaURL="http://localhost:5601"`などのURLを使用します。
 
-   または、[システム設定](../../system-administration/configuring-liferay/system-settings.md)からモニタリングアダプターを設定します。 グローバルメニューで、*［コントロールパネル］* → *［設定］* → *［システム設定］*に移動し、［検索］カテゴリでElasticsearch Monitoringエントリを見つけます。 モニタリングコネクタのすべての設定オプションがそこに表示されます。
+   または、[システム設定](../../system-administration/configuring-liferay/system-settings.md)からモニタリングアダプターを設定します。 グローバルメニューで、 ［**コントロールパネル**］ → ［**設定**］ → ［**システム設定**］ に移動し、［検索］カテゴリでElasticsearch Monitoringエントリを見つけます。 モニタリングコネクタのすべての設定オプションがそこに表示されます。
 
 1. 構成ファイルを`Liferay Home/osgi/configs`にデプロイすると、実行中のインスタンスが設定を適用します。
 
@@ -165,11 +165,11 @@ LiferayとKibanaを再起動します。
 
 KibanaとLES Monitoringがインストールされ、構成され、すべての サーバーが稼働したら、Elasticsearch Monitoringウィジェットをページに追加します。
 
-1. コンテンツページの*［フラグメントとウィジェット］*メニュー、またはウィジェットページの［Add Widgets］メニューを開きます。
+1. コンテンツページの ［**フラグメントとウィジェット**］ メニュー、またはウィジェットページの［Add Widgets］メニューを開きます。
 
-1. ウィジェット検索バーを使用して*モニタリング*を検索し、*Elasticsearch Monitoring*ウィジェットを［検索］カテゴリからページにドラッグします。 Liferay DXP 7.2の場合、ウィジェットは*X-Pack Monitoring*と呼ばれます。
+1. ウィジェット検索バーを使用して **モニタリング** を検索し、 **Elasticsearch Monitoring** ウィジェットを［検索］カテゴリからページにドラッグします。 Liferay DXP 7.2の場合、ウィジェットは **X-Pack Monitoring** と呼ばれます。
 
-> 詳細については、関連するElasticsearchのドキュメントを参照してください。 * [クラスタを監視する](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/es-monitoring.html) * [X-Packを設定する--クラスタ環境での監視とセキュリティのベストプラクティス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html) </a>
+> 詳細については、関連するElasticsearchのドキュメントを参照してください。 [**クラスタを監視する](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/es-monitoring.html**)[X-Packを設定する--クラスタ環境での監視とセキュリティのベストプラクティス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html) </a>
 
 ## Kibana構成の例
 

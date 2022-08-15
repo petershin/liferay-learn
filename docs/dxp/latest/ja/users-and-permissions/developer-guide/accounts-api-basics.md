@@ -42,7 +42,7 @@
 
     ```
 
-1. *グローバルメニュー* &rarr; *アプリケーション* &rarr; *アカウント*に移動します。 新しいアカウントが追加されたことを確認してください。
+1. **グローバルメニュー** &rarr; **アプリケーション** &rarr; **アカウント** に移動します。 新しいアカウントが追加されたことを確認してください。
 
    ![新しいアカウントが追加されたことを確認します。](./accounts-api-basics/images/01.png)
 
@@ -118,7 +118,7 @@
 
 以下のcURLまたはJavaコマンドを実行することで、アカウントを一覧表示することができます。
 
-### Accounts_GET_FromInstance.sh
+### Accounts **GET** FromInstance.sh
 
 コマンド:
 
@@ -132,7 +132,7 @@
    :language: bash
 ```
 
-### Accounts_GET_FromInstance.java
+### Accounts **GET** FromInstance.java
 
 コマンド:
 
@@ -158,7 +158,7 @@ java -classpath .:* Accounts_GET_FromInstance
 インスタンスのアカウントIDを取得するには、Accounts_GET_FromInstance.[java|sh]を使用します。
 ```
 
-### Account_GET_ById.sh
+### Account **GET** ById.sh
 
 コマンド:
 
@@ -172,7 +172,7 @@ java -classpath .:* Accounts_GET_FromInstance
    :language: bash
 ```
 
-### Account_GET_ById.java
+### Account **GET** ById.java
 
 コマンド:
 
@@ -194,7 +194,7 @@ java -classpath .:* -DaccountId=1234 Account_GET_ById
 
 以下のcURLおよびJavaコマンドで、既存のAccountの部分編集を行います。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account_PATCH_ById.sh
+### Account **PATCH** ById.sh
 
 コマンド:
 
@@ -208,7 +208,7 @@ java -classpath .:* -DaccountId=1234 Account_GET_ById
    :language: bash
 ```
 
-### Account_PATCH_ById.java
+### Account **PATCH** ById.java
 
 コマンド:
 
@@ -228,7 +228,7 @@ java -classpath .:* -DaccountId=1234 Account_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存のAccountを完全に上書きします。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account_PUT_ById.sh
+### Account **PUT** ById.sh
 
 コマンド:
 
@@ -242,7 +242,7 @@ java -classpath .:* -DaccountId=1234 Account_PATCH_ById
    :language: bash
 ```
 
-### Account_PUT_ById.java
+### Account **PUT** ById.java
 
 コマンド:
 
@@ -262,7 +262,7 @@ java -classpath .:* -DaccountId=1234 Account_PUT_ById
 
 以下のcURLおよびJavaコマンドで既存のAccountを削除します。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account_DELETE_ById.sh
+### Account **DELETE** ById.sh
 
 コマンド:
 
@@ -276,7 +276,7 @@ java -classpath .:* -DaccountId=1234 Account_PUT_ById
    :language: bash
 ```
 
-### Account_DELETE_ById.java
+### Account **DELETE** ById.java
 
 コマンド
 

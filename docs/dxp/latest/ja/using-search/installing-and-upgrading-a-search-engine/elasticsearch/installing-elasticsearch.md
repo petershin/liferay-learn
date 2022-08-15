@@ -27,7 +27,7 @@ localhostまたはDockerコンテナを使用してテスト環境をセット�
 
 ### mmapの調整
 
-Elasticsearchは、ほとんどのオペレーティングシステムのデフォルトよりも多くの_mmapカウント_を必要とします（インデックスを保持するディレクトリをメモリにマッピングするため）。 Linuxでは、rootユーザーとして、次のように実行します。
+Elasticsearchは、ほとんどのオペレーティングシステムのデフォルトよりも多くの **mmapカウント** を必要とします（インデックスを保持するディレクトリをメモリにマッピングするため）。 Linuxでは、rootユーザーとして、次のように実行します。
 
 ```bash
 sysctl -w vm.max_map_count=262144
@@ -41,7 +41,7 @@ sysctl -w vm.max_map_count=262144
     [お使いのLiferayのバージョンと互換性のある](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors) 最新のElasticsearchアーカイブをダウンロードしてください。
     ```
 
-1. Elasticsearchを実行するローカルフォルダにアーカイブの内容を展開します。 このフォルダが*Elasticsearchホーム*です。
+1. Elasticsearchを実行するローカルフォルダにアーカイブの内容を展開します。 このフォルダが **Elasticsearchホーム** です。
 
 1. `［Elasticsearch Home］/bin`フォルダで次のコマンドを実行して、必要なElasticsearchプラグインをインストールします。
 

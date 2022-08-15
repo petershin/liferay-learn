@@ -8,7 +8,7 @@
 
 次に、以下の手順に従います。
 
-1. Download and unzip [Accounts API Basics](./liferay-t5p9.zip) .
+1. [Accounts API Basics](./liferay-t5p9.zip)をダウンロードし、解凍してください。.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -77,7 +77,7 @@
         }     
     ```
 
-1. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 ユーザーを作成したアカウントをクリックします。 *［Users］* タブをクリックすると、作成された新しいユーザーが表示されます。
+1. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 ユーザーを作成したアカウントをクリックします。 ［**Users**］ タブをクリックすると、作成された新しいユーザーが表示されます。
 
   ![新しいアカウントユーザーが追加されたことを確認します。](./account-users-and-roles-apis/images/01.png)
 
@@ -153,7 +153,7 @@
 
 以下のcURLまたはJavaコマンドを実行すると、アカウントのユーザーを一覧表示できます。 上記と同様に、 `1234` をアカウントのIDに置き換えてください。
 
-### AccountUsers_GET_FromAccount.sh
+### AccountUsers **GET** FromAccount.sh
 
 コマンド:
 
@@ -167,7 +167,7 @@
    :language: bash
 ```
 
-### AccountUsers_GET_FromAccount.java
+### AccountUsers **GET** FromAccount.java
 
 コマンド:
 
@@ -189,7 +189,7 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
 
 特定のアカウントに対して新しいアカウントロールを作成します。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### AccountRole_POST_ToAccount.sh
+### AccountRole **POST** ToAccount.sh
 
 コマンド:
 
@@ -203,7 +203,7 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
    :language: bash
 ```
 
-### AccountRole_POST_ToAccount.java
+### AccountRole **POST** ToAccount.java
 
 コマンド:
 
@@ -223,7 +223,7 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
 
 ユーザーを特定のアカウントロールに関連付けることができます。 `1234` をアカウントのIDに置き換えてください。 お使いのアカウントのロールのIDを`5678` に置き換えます。 `9012` は、アカウントユーザーのIDに置き換えてください。
 
-### AccountRole_POST_UserAssociation.sh
+### AccountRole **POST** UserAssociation.sh
 
 コマンド:
 
@@ -237,7 +237,7 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
    :language: bash
 ```
 
-### AccountRole_POST_UserAssociation.java
+### AccountRole **POST** UserAssociation.java
 
 コマンド：
 
@@ -257,7 +257,7 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
 
 以下のcURLまたはJavaコマンドを実行することで、Accountのアカウントロールsを一覧表示することができます。 `1234` をアカウントのIDに置き換えてください。
 
-### AccountRoles_GET_FromAccount.sh
+### AccountRoles **GET** FromAccount.sh
 
 コマンド:
 
@@ -271,7 +271,7 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
    :language: bash
 ```
 
-### AccountRoles_GET_FromAccount.java
+### AccountRoles **GET** FromAccount.java
 
 コマンド:
 
@@ -293,7 +293,7 @@ java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
 
 特定のアカウントユーザーからアカウントロールの関連付けを削除します。 `1234` をアカウントのIDに置き換えてください。 お使いのアカウントのロールのIDを`5678` に置き換えます。 `9012` は、アカウントユーザーのIDに置き換えてください。
 
-### AccountRole_DELETE_UserAssociation.sh
+### AccountRole **DELETE** UserAssociation.sh
 
 コマンド:
 
@@ -307,7 +307,7 @@ java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
    :language: bash
 ```
 
-### AccountRole_DELETE_UserAssociation.java
+### AccountRole **DELETE** UserAssociation.java
 
 コマンド
 

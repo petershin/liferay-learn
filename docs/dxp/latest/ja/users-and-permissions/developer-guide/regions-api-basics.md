@@ -5,12 +5,13 @@
 Liferay の REST API を使用して、地域を作成および管理します。
 
 ## リージョンの追加
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+次に、以下の手順に従います。
 
-1. Download and unzip [Regions API Basics](./liferay-r2p3.zip) .
+1. [Regions API Basics](./liferay-r2p3.zip)をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-r2p3.zip -O
@@ -113,7 +114,7 @@ Then, follow these steps:
 
 以下のcURLまたはJavaコマンドを実行することで、リージョンの一覧を表示することができます。
 
-### Regions_GET_FromInstance.sh
+### Regions **GET** FromInstance.sh
 
 コマンド:
 
@@ -127,7 +128,7 @@ Then, follow these steps:
    :language: bash
 ```
 
-### Regions_GET_FromInstance.java
+### Regions **GET** FromInstance.java
 
 コマンド：
 
@@ -153,7 +154,7 @@ Instance の `Region` オブジェクトが JSON で表示されます。
 インスタンスの ``Region`` ID を取得するには、 ``Regions_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### Region_GET_ById.sh
+### Region **GET** ById.sh
 
 コマンド：
 
@@ -167,7 +168,7 @@ Instance の `Region` オブジェクトが JSON で表示されます。
    :language: bash
 ```
 
-### Region_GET_ById.java
+### Region **GET** ById.java
 
 コマンド：
 
@@ -189,7 +190,7 @@ java -classpath .:* -DregionId=1234 Region_GET_ById
 
 以下のcURLとJavaコマンドで、既存のRegionの部分編集を行う。 `1234` を自分のリージョンIDに置き換えてください。
 
-### Region_PATCH_ById.sh
+### Region **PATCH** ById.sh
 
 コマンド：
 
@@ -203,7 +204,7 @@ java -classpath .:* -DregionId=1234 Region_GET_ById
    :language: bash
 ```
 
-### Region_PATCH_ById.java
+### Region **PATCH** ById.java
 
 コマンド：
 
@@ -223,7 +224,7 @@ java -classpath .:* -DregionId=1234 Region_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存のリージョンを完全に上書きする。 `1234` を自分の地域のIDに置き換えてください。
 
-### Region_PUT_ById.sh
+### Region **PUT** ById.sh
 
 コマンド:
 
@@ -237,7 +238,7 @@ java -classpath .:* -DregionId=1234 Region_PATCH_ById
    :language: bash
 ```
 
-### Region_PUT_ById.java
+### Region **PUT** ById.java
 
 コマンド:
 
@@ -257,7 +258,7 @@ java -classpath .:* -DregionId=1234 Region_PUT_ById
 
 以下のcURLとJavaのコマンドで、既存のリージョンを削除する。 `1234` を自分の地域のIDに置き換えてください。
 
-### Region_DELETE_ById.sh
+### Region **DELETE** ById.sh
 
 コマンド:
 
@@ -271,7 +272,7 @@ java -classpath .:* -DregionId=1234 Region_PUT_ById
    :language: bash
 ```
 
-### Region_DELETE_ById.java
+### Region **DELETE** ById.java
 
 コマンド
 

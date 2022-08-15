@@ -58,7 +58,7 @@ Liferay 7.4 バージョン U9+ および GA13+ からは、複数のカテゴ�
 
 Liferay Portal 7.4 の GA4 より前のバージョンでは、 *Display Page* Navigation Menu という要素タイプもあり、これはメニューに追加された表示ページ（コンテンツの種類を問わない）に使用されます。
 
-Liferay 7.4 GA5+ と U1+ では、Display Page タイプは Display Pages を使用するコンテンツタイプに置き換えられます： [ブログエントリー](#blogs-entries) , [Webコンテンツの記事](#web-content-articles) , [ドキュメント](#documents) , と [カテゴリ](#categories) .
+Liferay 7.4 GA5+とU1+では、表示ページタイプは表示ページを使用するコンテンツタイプに置き換えられます：[ブログエントリー](#blogs-entries)、[Webコンテンツの記事](#web-content-articles)、[ドキュメント](#documents)、[カテゴリ](#categories)
 
 ## 追加情報
 

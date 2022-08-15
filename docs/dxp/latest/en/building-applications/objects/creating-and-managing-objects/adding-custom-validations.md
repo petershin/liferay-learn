@@ -60,7 +60,7 @@ The Groovy validation type supports all standard Groovy Script capabilities. How
 
 ![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/05.png)
 
-For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay displays an error message.
+For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay shows an error message.
 
 ## Using Expression Builder Validations
 
@@ -72,7 +72,7 @@ Expression Builder validations can only be used with text, numeric, date, and bo
 
 ![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/06.png)
 
-For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax when you click *Save*. If the expression is invalid, Liferay displays an error message.
+For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax when you click *Save*. If the expression is invalid, Liferay shows an error message.
 
 ## Available Fields Reference
 

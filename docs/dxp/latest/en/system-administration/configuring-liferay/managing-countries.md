@@ -12,6 +12,10 @@ By default, the Countries Management App is hidden from the UI. To enable the UI
    
    `feature.flag.LPS-122223=true` 
 
+   If using Docker, use the following [`Environmental Variable`](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#portal-properties) upon first startup:
+
+   `--env LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER2__NUMBER2__NUMBER2__NUMBER2__NUMBER3_=true`
+
 1. Restart your server. The app is now visible.
 
    ![See the Countries Management app in the UI.](./managing-countries/images/01.png)

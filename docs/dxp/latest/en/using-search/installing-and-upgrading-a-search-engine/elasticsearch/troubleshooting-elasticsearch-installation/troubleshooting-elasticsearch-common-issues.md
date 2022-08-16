@@ -1,6 +1,6 @@
 # Troubleshooting Elasticsearch: Common Issues
 
-Listed here are some of the most common issues you'll encounter while confioguring Elasticsearch and Liferay. Additional specific errors are discussed in [Troubleshooting the Elasticsearch Connection](troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-connection.md)
+Listed here are some of the most common issues you'll encounter while confioguring Elasticsearch and Liferay. Additional specific errors are discussed in [Troubleshooting the Elasticsearch Connection](troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-connection.md).
 
 ## Cluster Name
 

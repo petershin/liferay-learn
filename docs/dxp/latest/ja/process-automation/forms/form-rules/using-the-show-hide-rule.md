@@ -4,8 +4,8 @@
 
 この例では、2つのテキストフィールドを持つ[キャンプ登録フォーム](../creating-and-managing-forms/creating-forms.md)を使用しています。
 
-***I am 18 Years Old or Older** : ［**Yes**］ と ［**No**］ の2つのオプションを持つ必須の単一選択フィールド。
-***Legal Guardian Email Address** : 有効なメールアドレスを受け付けるテキストフィールド。
+* **I am 18 Years Old or Older** : ［**Yes**］ と ［**No**］ の2つのオプションを持つ必須の単一選択フィールド。
+* **Legal Guardian Email Address** : 有効なメールアドレスを受け付けるテキストフィールド。
 
 <a name="configuring-the-show-action-rule" />
 

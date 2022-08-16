@@ -11,11 +11,11 @@ BlogsEntryService _blogsEntryService;
 
 すべてのDeclarative Servicesコンポーネント（ [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) でアノテーションが付けられたクラス）は、この方法でOSGiサービスにアクセスできます。  ランタイムフレームワークは、コンポーネントの`@Reference`のアノテーションが付いたフィールドにサービスタイプを挿入します。
 
-次の例は、`Greeter`と呼ばれるOSGiサービスの使用を示しています。 3つのモジュールは、OSGiサービスで使用される*API-Provider-Consumer*パターンを示しています。
+次の例は、`Greeter`と呼ばれるOSGiサービスの使用を示しています。 3つのモジュールは、OSGiサービスで使用される **API-Provider-Consumer** パターンを示しています。
 
-* **API**モジュールは、`Greeter`サービスタイプを定義します。
-* 実装モジュールは`Greeter`サービスを**提供**します。
-* サンプルモジュールは`Greeter`サービスを**消費**します。
+* **API** モジュールは、`Greeter`サービスタイプを定義します。
+* 実装モジュールは`Greeter`サービスを **提供** します。
+* サンプルモジュールは`Greeter`サービスを **消費** します。
 
 サンプルモジュールクラスは、`Greeter`サービスを使用してパーソナライズされた挨拶を返すGogo シェルコマンドを作成します。 この例をOSGiサービスの「Hello World」と考えてください。
 

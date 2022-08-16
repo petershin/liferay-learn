@@ -6,17 +6,17 @@
 
 次の手順に従って、独自のビデオショートカットプロバイダーを作成します。
 
-1. **OSGIコンポーネントアノテーション**：`@Component`アノテーションを使用して、OSGiフレームワーク内でプロバイダーを`DLVideoExternalShortcutProvider.class`サービスとして宣言します。
+1. **OSGIコンポーネントアノテーション** ：`@Component`アノテーションを使用して、OSGiフレームワーク内でプロバイダーを`DLVideoExternalShortcutProvider.class`サービスとして宣言します。
 
 1. [**`DLVideoExternalShortcutProvider`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/provider/DLVideoExternalShortcutProvider.java) ：`DLVideoExternalShortcutProvider`インターフェースを実装します。
 
-1. **インターフェイスメソッドのオーバーライド**：インターフェイスの`getDLVideoExternalShortcut()`メソッドをオーバーライドします。 このメソッドは、 [`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java) インターフェイスのインスタンスを作成し、URL文字列を受け取ります。 実装において次のことが実行されるか確認してください。
+1. **インターフェイスメソッドのオーバーライド** ：インターフェイスの`getDLVideoExternalShortcut()`メソッドをオーバーライドします。 このメソッドは、 [`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java) インターフェイスのインスタンスを作成し、URL文字列を受け取ります。 実装において次のことが実行されるか確認してください。
 
    * 受信したURLが定義済みのURLパターンと一致するかどうかを確認します。
    * URLがパターンに一致しない場合、プログラムは`null`を返す必要があります。 Liferayは、一致するものを探して他の利用可能なプロバイダーをチェックします。
    * URLがパターンと一致する場合は、URLを解析し、外部ソースから追加情報をフェッチして、収集した情報を含む`DLVideoExternalShortcut`インスタンスを返します。
 
-1. **`DLVideoExternalShortcut`メソッドのオーバーライド**：`getDLVideoExternalShortcut()`メソッドによって返される`DLVideoExternalShortcut`インスタンスに必要なメソッドをオーバーライドします。
+1. **`DLVideoExternalShortcut`メソッドのオーバーライド** ：`getDLVideoExternalShortcut()`メソッドによって返される`DLVideoExternalShortcut`インスタンスに必要なメソッドをオーバーライドします。
 
    * `getURL()`：元のビデオURLを取得します。
    * `renderHTML()`：ユーザーインターフェイスにビデオを埋め込みます。 これは通常、`iframe`をレンダリングしますが、ユーザー向けにビデオをレンダリングするHTMLビデオタグにすることもできます。
@@ -64,7 +64,7 @@
    STARTED com.acme.G9B6.impl-1.0.0 [1356]
    ```
 
-1. 短いDailymotionのURLで新しい外部動画ショートカットを作成し、モジュールが機能していることを確認します<!--TASK: add link once article is merged--> （例：https://dai.ly/x7szh28）。
+1. 短いDailymotionのURLで新しい外部動画ショートカットを作成し、モジュールが機能していることを確認します <!--TASK: add link once article is merged--> （例：https://dai.ly/x7szh28）。
 
    成功した場合、LiferayはDailymotionをサポートされているプラットフォームとして認識します。
 

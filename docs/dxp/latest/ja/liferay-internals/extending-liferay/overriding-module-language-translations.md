@@ -106,7 +106,7 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
     STARTED com.acme.e6u7.impl_1.0.0 [1650]
     ```
 
-1. *［Content & Data］* &rarr; *［Blogs］*に移動します。 カーソルを追加アイコン（![Add](../../images/icon-add.png)）に合わせます。 メッセージにカスタム言語ファイルが表示されます。
+1. ［**Content & Data**］ &rarr; ［**Blogs**］ に移動します。 カーソルを追加アイコン（![Add](../../images/icon-add.png)）に合わせます。 メッセージにカスタム言語ファイルが表示されます。
 
     ![カスタム言語ファイルが使用されるようになりました。](./overriding-module-language-translations/images/01.png)
 

@@ -4,11 +4,11 @@
 
 ## キーストアマネージャーのターゲットを選ぶ
 
-1. Liferay DXP に管理者資格でログインし、 _コントロールパネル_ &rarr; _システム設定_ &rarr; _セキュリティ_ &rarr; _SSO_ &rarr; _SAML KeyStoreManager 実装設定_.
+1. Liferay DXP に管理者資格でログインし、 **コントロールパネル** &rarr; **システム設定** &rarr; **セキュリティ** &rarr; **SSO** &rarr; **SAML KeyStoreManager 実装設定** .
 
-1. _ファイルシステム_ （デフォルト）または _ドキュメントライブラリ_ のいずれかを選択します。
+1. **ファイルシステム**（デフォルト）または **ドキュメントライブラリ** のいずれかを選択します。
 
-1. _アップデート_ をクリックします。
+1. **アップデート** をクリックします。
 
 ![ファイルシステム」または「ドキュメントライブラリ」のいずれかを選択します。](./configuring-saml-at-the-system-level/images/01.png)
 
@@ -18,17 +18,17 @@
 
 デフォルトの設定がお使いのシステムに適切であることを確認します。
 
-1. _コントロールパネル_ &rarr; _システム設定_ &rarr; _セキュリティ_ &rarr; _SSO_ &rarr; _SAML 設定_ にアクセスしてください。
+1. **コントロールパネル** &rarr; **システム設定** &rarr; **セキュリティ** &rarr; **SSO** &rarr; **SAML 設定** にアクセスしてください。
 
 1. キーストアのパスを設定します。 デフォルトでは、あなたの [Liferay Home](../../../reference/liferay-home.md) ディレクトリにあります。 ドキュメントライブラリをキーストアの場所として選択した場合、そのパスは現在のポータルインスタンスの `/saml/keystore.jks` にハードコードされており、ここに何かを入力しても何の効果もありません。
 
 1. キーストアにアクセスするためのパスワードを設定します。
 
-1. その他のオプション（下記参照）を確認し、適宜修正して、 _Save_ をクリックします。
+1. その他のオプション（下記参照）を確認し、適宜修正して、 **Save** をクリックします。
 
 設定できるオプションは様々です。
 
-**キーストアタイプ。** キーストアタイプを設定します。 デフォルトは、 _jks_、つまりJava Key Storeです。 Java でサポートされている任意のオプション [を選択することができます](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) 。
+**キーストアタイプ。** キーストアタイプを設定します。 デフォルトは、 **jks** 、つまりJava Key Storeです。 Java でサポートされている任意のオプション [を選択することができます](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) 。
 
 **SSO Session Check Interval（SSOセッションのチェック間隔）。** ここに入力した分ごとに、IdPは期限切れのセッションをチェックする必要があります。
 

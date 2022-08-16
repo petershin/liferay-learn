@@ -5,7 +5,7 @@ Liferayのソースがどのように構成されているかをしっかりと�
 Liferay Sourceは、2つの主要な領域を使用して構成されるようになりました。
 
 * **Portal Core** - オリジナルのプラットフォームの一部で、今のところモジュールに抽出されていないものです。 これらは Liferay 6.2 でおなじみの portal-impl, portal-service, portal-web のような名前を持っています。
-* **モジュール** - 多くの機能がモジュールとして抽出され、 *liferay-portal/modules* ディレクトリに常駐するようになりました。 多くのモジュールは Liferay MVC パターンに従っており、関連する .api, .service, .web モジュールに整理されています。
+* **モジュール** - 多くの機能がモジュールとして抽出され、 **liferay-portal/modules** ディレクトリに常駐するようになりました。 多くのモジュールは Liferay MVC パターンに従っており、関連する .api, .service, .web モジュールに整理されています。
 
 ## 詳細情報
 
@@ -20,7 +20,7 @@ Liferay Sourceで使われているいくつかのパターンをより深く理
 `liferay-portal/modules/apps/blogs/blogs-web/src/main/java/
 com/liferay/blogs/web/internal/portlet/BlogsPortlet.java`
 
-*BlogsPortlet* は Liferay MVC パターンに従っており、Blogs Widget のメインエントリポイントです。 一つ注意すべきことは、BlogsPortletクラスはビューテンプレートのinitパラメータをリストアップしていないことです。 詳しくは次の通りです。
+**BlogsPortlet** は Liferay MVC パターンに従っており、Blogs Widget のメインエントリポイントです。 一つ注意すべきことは、BlogsPortletクラスはビューテンプレートのinitパラメータをリストアップしていないことです。 詳しくは次の通りです。
 
 詳細については、 [Liferay MVC docs](https://help.liferay.com/hc/ja/articles/360029028191-Liferay-MVC-Portlet) を参照してください。
 
@@ -29,7 +29,7 @@ com/liferay/blogs/web/internal/portlet/BlogsPortlet.java`
 `liferay-portal/modules/apps/blogs/blogs-web/src/main/java/
 com/liferay/blogs/web/internal/portlet/BlogsViewMVCRenderCommand.java`
 
-ポートレットコンポーネントが *view-template*をリストアップしていない場合、これは通常、MVCRenderCommandがエントリ.jspファイルにディスパッチしていることを意味します。 *BlogsViewMVCRenderCommand* */blogs/view.jsp* /と/blogs/viewの両方へのディスパッチを処理する。
+ポートレットコンポーネントが **view-template** をリストアップしていない場合、これは通常、MVCRenderCommandがエントリ.jspファイルにディスパッチしていることを意味します。 **BlogsViewMVCRenderCommand** **/blogs/view.jsp** /と/blogs/viewの両方へのディスパッチを処理する。
 
 ## ビュー.jsp
 

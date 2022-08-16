@@ -10,13 +10,13 @@
 
 | ノード                    | Description                                                               |
 |:---------------------- |:------------------------------------------------------------------------- |
-| タスク                    | _タスク_ノードは、ワークフローのタスクとその担当者を示します。                                          |
-| フォークと結合                | _フォーク_と_結合_は、複数のレビュアが並行して実行できるようにレビュープロセスを分割し、レビューが完了したら再び結合するためのペアノードです。 |
-| XOR 結合                 | _XOR 結合_ノードでは、並列レビュアのいずれかからのトランジションが呼び出されている限り、ワークフローを続行できます。             |
-| 条件                     | _条件_ノードは、レビュープロセスを進める前の条件を設定します。                                          |
-| Start (Automatic Copy) | _開始_ノードはワークフローを開始します。                                                     |
-| End (Automatic Copy)   | デフォルトの_終了_ノードでは、ワークフローのステータスが_「承認済み」_に設定されます。                             |
-| ステータス                  | _ステータス_ノードは、レビュープロセスを特定のモード、または状態にします。 開始ノードと終了ノードは、特別なタイプのステータスノードです。    |
+| タスク                    | **タスク** ノードは、ワークフローのタスクとその担当者を示します。                                          |
+| フォークと結合                | **フォーク** と **結合** は、複数のレビュアが並行して実行できるようにレビュープロセスを分割し、レビューが完了したら再び結合するためのペアノードです。 |
+| XOR 結合                 | **XOR 結合** ノードでは、並列レビュアのいずれかからのトランジションが呼び出されている限り、ワークフローを続行できます。             |
+| 条件                     | **条件** ノードは、レビュープロセスを進める前の条件を設定します。                                          |
+| Start (Automatic Copy) | **開始** ノードはワークフローを開始します。                                                     |
+| End (Automatic Copy)   | デフォルトの **終了** ノードでは、ワークフローのステータスが 「**承認済み**」 に設定されます。                             |
+| ステータス                  | **ステータス** ノードは、レビュープロセスを特定のモード、または状態にします。 開始ノードと終了ノードは、特別なタイプのステータスノードです。    |
 
 ### 開始ノードと終了ノード
 
@@ -33,7 +33,7 @@ WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("approve
 
 ### ステータスノード
 
-ステータスノードには、[アクションと通知](./configuring-workflow-actions-and-notifications.md)を設定できます。 例えば、次のGroovyスクリプトを使って、ステータスを_「期限切れ」_に設定するノードを作成することができます。
+ステータスノードには、[アクションと通知](./configuring-workflow-actions-and-notifications.md)を設定できます。 例えば、次のGroovyスクリプトを使って、ステータスを 「**期限切れ**」 に設定するノードを作成することができます。
 
 ```java
 import com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil;
@@ -44,13 +44,13 @@ WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("expired
 
 ### 条件ノード
 
-_条件_ノードは、アセットやその実行コンテキストをチェックし、その結果に応じて、適切なトランジションに送ります。 このノードでは、トランジションの1つに値を設定するスクリプトが必要です。
+**条件** ノードは、アセットやその実行コンテキストをチェックし、その結果に応じて、適切なトランジションに送ります。 このノードでは、トランジションの1つに値を設定するスクリプトが必要です。
 
-[Category Specific Definition](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/category-specific-definition.xml) は、対象となるアセットを調べ、その[アセットカテゴリー](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md)を取得し、初期の`returnValue`を設定するスクリプトです。 その後、そのアセットが*legal*カテゴリでマークされているかどうかを確認します。 マークされていない場合は、*コンテンツレビュー*（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、*法務レビュー*（ワークフローのlegal-reviewタスク）を通過します。
+[Category Specific Definition](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/category-specific-definition.xml) は、対象となるアセットを調べ、その[アセットカテゴリー](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md)を取得し、初期の`returnValue`を設定するスクリプトです。 その後、そのアセットが **legal** カテゴリでマークされているかどうかを確認します。 マークされていない場合は、 **コンテンツレビュー**（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、 **法務レビュー**（ワークフローのlegal-reviewタスク）を通過します。
 
 ### タスクノード
 
-_タスク_ノードは、すべての作業が行われる場所を表しています。 [ワークフロータスクの作成](./creating-workflow-tasks.md)および[タスクノードの使用](./assigning-task-nodes.md)を参照してください。
+**タスク** ノードは、すべての作業が行われる場所を表しています。 [ワークフロータスクの作成](./creating-workflow-tasks.md)および[タスクノードの使用](./assigning-task-nodes.md)を参照してください。
 
 ## 追加情報
 

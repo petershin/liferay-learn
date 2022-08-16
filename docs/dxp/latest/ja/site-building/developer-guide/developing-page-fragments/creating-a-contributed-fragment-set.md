@@ -57,7 +57,7 @@ Then, follow these steps to deploy an example to see what a contributed Fragment
     INFO  [fileinstall-directory-watcher][BundleStartStopLogger:46] STARTED com.acme.l3m9.impl_1.0.0 [1824]
     ```
 
-1. 提供されたフラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがデフォルトセットリストに表示されます。
+1. 提供されたフラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがデフォルトセットリストに表示されます。
 
     ![提供されたフラグメントセットがデフォルトセットリストに表示されていることを確認します。](./creating-a-contributed-fragment-set/images/01.png)
 
@@ -140,7 +140,7 @@ private ServletContext _servletContext;
     Windows でデプロイに失敗した場合は、[コンテナに Liferay をバインドマウント](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md) してモジュール JAR を `.\gradlew jar` でビルドし、JAR を適切なバインドマウントフォルダーにコピーする必要があるかもしれません。
     ```
 
-1. 更新されたフラグメントが提供されたセットに含まれていることを確認します。 ブラウザで`https://localhost:8080`にアクセスし、画面左側のサイトメニューで、*［デザイン］* &rarr; *［フラグメント］*に移動します。 L3M9 ジャンボトロンフラグメントが L3M9 セットに表示されます。
+1. 更新されたフラグメントが提供されたセットに含まれていることを確認します。 ブラウザで`https://localhost:8080`にアクセスし、画面左側のサイトメニューで、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 L3M9 ジャンボトロンフラグメントが L3M9 セットに表示されます。
 
     ![カスタムのジャンボトロンフラグメントが提供されたセットに含まれています。](./creating-a-contributed-fragment-set/images/02.png)
 

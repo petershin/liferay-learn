@@ -1,6 +1,6 @@
 # 自動入力ルールの使用
 
-_自動入力_ルールは、事前に設定された条件に基づいて、フォーム項目のオプションを絞り込みます。 すでに[データプロバイダー](../data-providers/data-providers-overview.md)を有効にしている場合、_自動入力_ ルールはフォームを拡張するための次のステップです。 詳細は、、 [RESTデータプロバイダーを使用したフォームオプションの入力](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) を参照してください。
+**自動入力** ルールは、事前に設定された条件に基づいて、フォーム項目のオプションを絞り込みます。 すでに[データプロバイダー](../data-providers/data-providers-overview.md)を有効にしている場合、 **自動入力** ルールはフォームを拡張するための次のステップです。 詳細は、、 [RESTデータプロバイダーを使用したフォームオプションの入力](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) を参照してください。
 
 以下のサンプルフォームでは、回答者に現金報酬か休暇のどちらかを選択するよう求めています。 後者を選択した場合、回答者は地域を選択し、次に国を選択する必要があります。 このフォームでは、自動入力ルールを使用して、地域に基づいて国をフィルタリングしています。
 
@@ -9,31 +9,31 @@ _自動入力_ルールは、事前に設定された条件に基づいて、フ
 1. [地域フィルターを含む世界の国々をインポートするデータプロバイダー](../data-providers/using-the-rest-data-provider-to-populate-form-options.md)を設定します。
 1. 次のフィールドを使用して[フォームを作成](../creating-and-managing-forms/creating-forms.md)します。
 
-    * _［Cash］_ または*［All expenses paid trip］* の2つのオプションがある*［Rewards］*という単一選択フィールド
-    * _［Region］_ という名前のテキストフィールド
-    * [restcountries.eu](https://restcountries.eu) データプロバイダーを使用する_［Choose a Destination Country］_ という名前の［リストから選択］フィールド
+    * ［**Cash**］ または ［**All expenses paid trip**］ の2つのオプションがある ［**Rewards**］ という単一選択フィールド
+    * ［**Region**］ という名前のテキストフィールド
+    * [restcountries.eu](https://restcountries.eu) データプロバイダーを使用する ［**Choose a Destination Country**］ という名前の［リストから選択］フィールド
 
 ## 自動入力ルールの設定
 
-1. _［Rules］_ タブをクリックします。
+1. ［**Rules**］ タブをクリックします。
 
-1. *追加*（![Add](../../../images/icon-add.png)）ボタンをクリックします。
+1. **追加**（![Add](../../../images/icon-add.png)）ボタンをクリックします。
 
-1. If 条件から_［Reward］_ を選択します。
+1. If 条件から ［**Reward**］ を選択します。
 
-1. ルールの作成：_Is equal to_ &rarr; _Value_ &rarr; _All expense paid trip_.
+1. ルールの作成： **Is equal to** &rarr; **Value** &rarr; **All expense paid trip** .
 
-1. _［Do］_ アクションセレクタから_［自動入力］_ を選択します。
+1. ［**Do**］ アクションセレクタから ［**自動入力**］ を選択します。
 
-1. _［From Data Provider］_ セレクタからデータプロバイダーを選択します。
+1. ［**From Data Provider**］ セレクタからデータプロバイダーを選択します。
 
-1. _［地域(都道府県)］_ セレクタから_［地域(都道府県)］_ を選択します。
+1. ［**地域(都道府県**)］ セレクタから ［**地域(都道府県**)］ を選択します。
 
-1. _［国］_セレクタから_［国］_ を選択します。
+1. ［**国**］ セレクタから ［**国**］ を選択します。
 
     ![自動入力ルールを作成します。](./using-the-autofill-rule/images/01.png)
 
-1. 完了したら、_［保存］_ をクリックします。
+1. 完了したら、 ［**保存**］ をクリックします。
 
 ## 自動入力ルールの検証
 

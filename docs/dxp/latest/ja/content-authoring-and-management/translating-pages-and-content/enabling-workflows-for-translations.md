@@ -4,11 +4,11 @@
 
 カスタムワークフローを定義したら、次のステップに進みます。
 
-1. *［サイトメニュー］* (![Site Menu](../../images/icon-product-menu.png))を開き、*［Configuration］*を展開して、*［Workflow］*に移動します。
+1. ［**サイトメニュー**］(![Site Menu](../../images/icon-product-menu.png))を開き、 ［**Configuration**］ を展開して、 ［**Workflow**］ に移動します。
 
-1. *［Translation］*のワークフロードロップダウンメニューをクリックして、目的のワークフローを選択します。
+1. ［**Translation**］ のワークフロードロップダウンメニューをクリックして、目的のワークフローを選択します。
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 ![［Translation］のワークフロードロップダウンメニューをクリックして、目的のワークフローを選択します。](./enabling-workflows-for-translations/images/01.png)
 

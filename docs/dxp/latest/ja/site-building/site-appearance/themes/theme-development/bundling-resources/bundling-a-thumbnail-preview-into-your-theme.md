@@ -24,11 +24,11 @@
     STARTED my-liferay-theme_1.0.0
     ```
 
-1. テーマを展開したら、 *Site Menu* (![Site Menu](../../../../../images/icon-product-menu.png)) を開き、 *Site Builder*を展開し、 *Pages*に進みます。
+1. テーマを展開したら、 **Site Menu**(![Site Menu](../../../../../images/icon-product-menu.png)) を開き、 **Site Builder** を展開し、 **Pages** に進みます。
 
-1. アプリケーションバーの「 *Actions」* ボタン(![Actions](../../../../../images/icon-actions.png))をクリックし、「Configuration」(![Configuration icon](../.././../../../images/icon-settings.png))を選択します。
+1. アプリケーションバーの「**Actions**」 ボタン(![Actions](../../../../../images/icon-actions.png))をクリックし、「Configuration」(![Configuration icon](../.././../../../images/icon-settings.png))を選択します。
 
-1. *［現在のテーマを変更する］*ボタンをクリックして、使用可能なすべてのテーマをサムネイルとともに表示し、変更を確認します。
+1. ［**現在のテーマを変更する**］ ボタンをクリックして、使用可能なすべてのテーマをサムネイルとともに表示し、変更を確認します。
 
 ![テーマを選択すると、選択した画像がサムネイルとして表示されます。](./bundling-a-thumbnail-preview-into-your-theme/images/02.png)
 

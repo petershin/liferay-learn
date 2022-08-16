@@ -22,7 +22,7 @@ Fast IDentity Online 2またはFIDO2標準では、バイオメトリクス（�
 
 **Allowed Credentials Per User：** 各ユーザーは、この数のFIDO2デバイスを持つことができます。
 
-**Relying Party ID：** [WebAuthn証明書利用者識別子](https://www.w3.org/TR/webauthn-2/#relying-party) 。 通常は、これをWebサイトのドメイン名に設定します。
+**Relying Party ID：**[WebAuthn証明書利用者識別子](https://www.w3.org/TR/webauthn-2/#relying-party) 。 通常は、これをWebサイトのドメイン名に設定します。
 
 **Origins：** オーセンティケーターの応答がこの元のURLと比較されます。これは、インストール先を指している必要があります。 セキュリティ上の理由から、接続の暗号化には常に`https`を使用する必要があります。
 

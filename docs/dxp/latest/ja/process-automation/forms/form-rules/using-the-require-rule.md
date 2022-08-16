@@ -4,9 +4,9 @@
 
 例えば、キャンプの登録フォームに以下の項目が含まれているとします。
 
-***I am 18 Years Old or Older** : ［**Yes**］ と ［**No**］ の2つのオプションを持つ必須の単一選択フィールド。
-***Legal Guardian Email Address** : 有効なメールアドレスを受け付けるテキストフィールド。
-［***I am 18 Years Old or Older**］ の値が［NO］の場合に ［**Legal Guardian Address**］ フィールドを表示する[表示ルール](./using-the-show-hide-rule.md)。
+* **I am 18 Years Old or Older** : ［**Yes**］ と ［**No**］ の2つのオプションを持つ必須の単一選択フィールド。
+* **Legal Guardian Email Address** : 有効なメールアドレスを受け付けるテキストフィールド。
+* ［**I am 18 Years Old or Older**］ の値が［NO］の場合に ［**Legal Guardian Address**］ フィールドを表示する[表示ルール](./using-the-show-hide-rule.md)。
 
 回答者が ［**No**］ と答えた場合、 ［**Legal Guardian Email Address**］ が表示され、回答者は有効なメールアドレスを入力しなければなりません。
 

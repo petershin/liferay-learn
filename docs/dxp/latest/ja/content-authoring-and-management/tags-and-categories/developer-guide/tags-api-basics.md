@@ -46,7 +46,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
    "siteId" : 20125
     ```
 
-1. *［Administration Menu］* &rarr; *［カテゴリー設定］* &rarr; *［Tags］*に移動して、タグアプリケーションに移動します。 新しいタグが追加されたことを確認してください。
+1. ［**Administration Menu**］ &rarr; ［**カテゴリー設定**］ &rarr; ［**Tags**］ に移動して、タグアプリケーションに移動します。 新しいタグが追加されたことを確認してください。
 
     ![新しいタグが追加されたことを確認してください。](./tags-api-basics/images/01.png)
 
@@ -122,7 +122,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 次のcURLまたはJavaコマンドを実行すると、サイトのタグを一覧表示できます。 上記のように、`1234`をサイトのIDに置き換えてください。
 
-### Keywords_GET_FromSite.sh
+### Keywords **GET** FromSite.sh
 
 コマンド:
 
@@ -136,7 +136,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
    :language: bash
 ```
 
-### Keywords_GET_FromSite.java
+### Keywords **GET** FromSite.java
 
 コマンド:
 
@@ -162,7 +162,7 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 `eywords_GET_FromSite.[java|sh]`を使用して、サイトの`Keyword` IDを取得します。
 ```
 
-### Keyword_GET_ById.sh
+### Keyword **GET** ById.sh
 
 コマンド:
 
@@ -176,7 +176,7 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
    :language: bash
 ```
 
-### Keyword_GET_ById.java
+### Keyword **GET** ById.java
 
 コマンド:
 
@@ -198,7 +198,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のタグを完全に上書きします。 注： `1234`をタグのIDに置き換えてください。
 
-### Keyword_PUT_ById.sh
+### Keyword **PUT** ById.sh
 
 コマンド:
 
@@ -212,7 +212,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
    :language: bash
 ```
 
-### Keyword_PUT_ById.java
+### Keyword **PUT** ById.java
 
 コマンド:
 
@@ -232,7 +232,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のタグを削除します。 注： `1234`をタグのIDに置き換えてください。
 
-### Keyword_DELETE_ById.sh
+### Keyword **DELETE** ById.sh
 
 コマンド:
 
@@ -246,7 +246,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
    :language: bash
 ```
 
-### Keyword_DELETE_ById.java
+### Keyword **DELETE** ById.java
 
 コマンド
 

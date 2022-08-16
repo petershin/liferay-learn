@@ -33,9 +33,9 @@ DDMでバックアップされたストラクチャは、親のフィールド�
 
 フィールドセットと連動するため。
 
-1. Web Content Structure フォームビルダービューで、 _Fieldsets_ タブをクリックします。
-1. _新規フィールドセットの作成_をクリックします。 フィールドセットに名前を付けます。
-1. そのフィールドを追加し、設定する。 _［保存］_ をクリックします。
+1. Web Content Structure フォームビルダービューで、 **Fieldsets** タブをクリックします。
+1. **新規フィールドセットの作成** をクリックします。 フィールドセットに名前を付けます。
+1. そのフィールドを追加し、設定する。 ［**保存**］ をクリックします。
 
 ![ストラクチャーまたは専用のフィールドセットをストラクチャーで使用します。](./whats-new-with-web-content-structures-in-7-4/images/07.png)
 
@@ -52,15 +52,15 @@ JSON Structureのソースは、一見すると複雑なので、注意して作
 StructureのJSONをエクスポートします。
 
 1. サイトメニュー &rarr; コンテンツとデータ &rarr; Webコンテンツにアクセスします。
-1. _［ストラクチャー］_タブをクリックします。
+1. ［**ストラクチャー**］ タブをクリックします。
 1. 既存の構造体がない場合は、構造体を作成し、保存します。
-1. メインストラクチャのリストビューで、Actions メニューを開き、 _Export_ as JSON_をクリックします。
+1. メインストラクチャのリストビューで、Actions メニューを開き、 **Export** as JSON_をクリックします。
 
 既存のStructureにStructure JSONをインポートする（つまり、既存のStructure JSONを上書きする）。
 
 1. サイトメニュー &rarr; コンテンツとデータ &rarr; Webコンテンツにアクセスします。
-1. _［ストラクチャー］_タブをクリックします。
-1. メインのStructuresリストビューで、StructureのActionsメニューを開き、 _Import and Override_をクリックします。
+1. ［**ストラクチャー**］ タブをクリックします。
+1. メインのStructuresリストビューで、StructureのActionsメニューを開き、 **Import and Override** をクリックします。
 1. JSONファイルをアップロードします。
 
 ![Web Content StructureのJSONをエクスポートおよびインポートします。](./whats-new-with-web-content-structures-in-7-4/images/01.png)
@@ -68,9 +68,9 @@ StructureのJSONをエクスポートします。
 新しいStructureをインポートする。
 
 1. サイトメニュー &rarr; コンテンツとデータ &rarr; Webコンテンツにアクセスします。
-1. _［ストラクチャー］_タブをクリックします。
+1. ［**ストラクチャー**］ タブをクリックします。
 1. 画面右上の「Webコンテンツ」のオプションメニューを開く。
-1. _構造体のインポート_ をクリックします。
+1. **構造体のインポート** をクリックします。
 
    ![JSON構造体ファイルをインポートする。](./whats-new-with-web-content-structures-in-7-4/images/02.png)
 

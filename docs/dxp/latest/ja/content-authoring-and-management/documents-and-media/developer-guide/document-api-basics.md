@@ -149,7 +149,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 次のcURLまたはJavaコマンドを実行すると、サイトのドキュメントを一覧表示できます。 上記のように、`1234`をサイトのIDに置き換えてください。
 
-### Documents_GET_FromSite.sh
+### Documents **GET** FromSite.sh
 
 コマンド:
 
@@ -163,7 +163,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
    :language: bash
 ```
 
-### Documents_GET_FromSite.java
+### Documents **GET** FromSite.java
 
 コマンド：
 
@@ -189,7 +189,7 @@ java -classpath .:* -DsiteId=1234 Documents_GET_FromSite
 サイトの `Document` ID を取得するには、 `Documents_GET_FromSite.[java|sh]` を使用してください。
 ```
 
-### Document_GET_ById.sh
+### Document **GET** ById.sh
 
 コマンド:
 
@@ -203,7 +203,7 @@ java -classpath .:* -DsiteId=1234 Documents_GET_FromSite
    :language: bash
 ```
 
-### Document_GET_ById.java
+### Document **GET** ById.java
 
 コマンド:
 
@@ -225,7 +225,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById
 
 `Document`コンテンツはBase64でエンコードされ、`Document`の`nestedFields`に埋め込まれます。 次のcURLまたはJavaコマンドを実行すると、コンテンツを取得できます。 `1234`を`Document`のIDに置き換えてください。
 
-### Document_GET_ById_ContentValue.sh
+### Document **GET** ById_ContentValue.sh
 
 コマンド:
 
@@ -253,7 +253,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById
    :language: bash
 ```
 
-### Document_GET_ById_ContentValue.java
+### Document **GET** ById_ContentValue.java
 
 `Document`コンテンツを取得してデコードするJavaコードは、前のcURLコマンドよりも簡単です。
 
@@ -289,7 +289,7 @@ Base64.Decoder decoder = Base64.getDecoder();
 
 `Document`のPATCHサービスは、`Document`とそのフィールドを更新します。 次のcURLまたはJavaコマンドを実行して、`Document`を更新できます。 `1234`を`Document`のIDに置き換えてください。
 
-### Document_PATCH_ById.sh
+### Document **PATCH** ById.sh
 
 コマンド：
 
@@ -305,7 +305,7 @@ Base64.Decoder decoder = Base64.getDecoder();
 
 最初のフォームデータ部分（-Fに続く）は、`Document`の`description`フィールドに新しい値を指定します。 2番目のフォームデータ部分は、アップロードする更新されたファイルを指定します。
 
-### Document_PATCH_ById.java
+### Document **PATCH** ById.java
 
 コマンド：
 
@@ -331,7 +331,7 @@ java -classpath .:* -DdocumentId=1234 Document_PATCH_ById
 
 `Document`のPUTサービスは、`Document`とそのフィールドを完全に置き換えます。 次のcURLまたはJavaコマンドを実行して、`Document`を置き換えることができます。 `1234`を`Document`のIDに置き換えてください。
 
-### Document_PUT_ById.sh
+### Document **PUT** ById.sh
 
 コマンド：
 
@@ -347,7 +347,7 @@ java -classpath .:* -DdocumentId=1234 Document_PATCH_ById
 
 最初のフォームデータ部分は、新しい`description`と`title`フィールドの値を設定します。 2番目のフォームデータ部分は、アップロードする置換ファイルを指定します。
 
-### Document_PUT_ById.java
+### Document **PUT** ById.java
 
 コマンド：
 
@@ -365,7 +365,7 @@ java -classpath .:* -DdocumentId=1234 Document_PUT_ById
 
 上記のJavaコードは、`DocumentResource`の`putDocument`メソッドを呼び出し、`Document`のID、`Document`の`description`フィールドと`title`フィールドの値を含む`Document`オブジェクト、およびアップロードする置換ファイルを渡します。
 
-上記のcURLコマンドとJavaクラスは、`Document`インスタンスを、それぞれ新しいタイトル"Document_PUT_ById.sh"と"Document_PUT_ById.java"を持ち、説明が"Goo"である完全に新しいインスタンスに置き換えます。
+上記のcURLコマンドとJavaクラスは、`Document`インスタンスを、それぞれ新しいタイトル"Document **PUT** ById.sh"と"Document **PUT** ById.java"を持ち、説明が"Goo"である完全に新しいインスタンスに置き換えます。
 
 ```{warning}
 現在の `Document` のタイトルを使用する場合を除いて、代わりの `Document` に使用する`title` の値を必ず指定してください。
@@ -377,7 +377,7 @@ java -classpath .:* -DdocumentId=1234 Document_PUT_ById
 
 次のcURLまたはJavaコマンドを実行して、`Document`を削除できます。 `1234`を`Document`のIDに置き換えてください。
 
-### Document_DELETE_ById.sh
+### Document **DELETE** ById.sh
 
 コマンド：
 
@@ -391,7 +391,7 @@ java -classpath .:* -DdocumentId=1234 Document_PUT_ById
    :language: bash
 ```
 
-### Document_DELETE_ById.java
+### Document **DELETE** ById.java
 
 コマンド
 
@@ -424,7 +424,7 @@ java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 
 [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`Document`および`DocumentFolder`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 
-[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) および [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) のJavaインターフェースも参照してください。
+[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1 **0/DocumentResource.java) および [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY** LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) のJavaインターフェースも参照してください。
 
 ## 追加情報
 

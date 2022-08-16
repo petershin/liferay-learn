@@ -24,24 +24,24 @@ Liferay DXP/Portalは、メールサーバーを使用して、ユーザー登�
 コントロールパネルからメールセッションを設定するには、次の手順に従います。
 
 1. 管理ユーザー（[［Basic Configuration］ページ](../../getting-started/using-the-setup-wizard.md)で指定されたユーザー）としてサインインします。
-1. *［Control Panel］ &rarr; ［Configuration］ &rarr; ［Server Administration］ &rarr; ［Mail］*に移動します。
+1. ［**Control Panel］ &rarr; ［Configuration］ &rarr; ［Server Administration］ &rarr; ［Mail**］ に移動します。
 1. [次のフィールド](#mail-configuration-reference) に値を入力します。
 
     * **［Incoming POP Server］:** pop.gmail.com
     * **Incoming Port：** 110
     * **Use a Secure Network Connection：** Flagged
     * **User Name：** joe.bloggs
-    * **［Password］：** *****
-    * **［Outgoing SMTP Server］：** smtp.gmail.com
+    * **Password**：*******
+    * **［Outgoing SMTP Server ：** smtp.gmail.com
     * **Outgoing Port：** 465
     * **Use a Secure Network Connection：** Flagged
     * **User Name：** joe.bloggs
-    * **［Password］：** *****
+    * **［Password］**：*******
     * **［Manually specify additional JavaMail properties to override the above configuration］：** 指定する必要のある追加のプロパティがある場合は、ここで指定します。
 
     ![メールサーバーの設定](./configuring-mail/images/01.png)
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 DXPがすぐにメールセッションに接続します。
 

@@ -10,7 +10,7 @@
 コンテンツパフォーマンスメトリクスは、[デフォルトのエクスペリエンス](../../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md)でのみ使用できます。
 ```
 
-コンテンツの*［統計情報を表示］*（![View Metrics](../../images/icon-analytics.png)）オプションを使用して、コンテンツパフォーマンスツールにアクセスします。 このオプションは、 [アプリケーションツールバー](../../getting-started/navigating-dxp.md#applications-bar) と[コンテンツダッシュボード](../content-dashboard/about-the-content-dashboard.md)にあります。 詳しくは、[コンテンツパフォーマンスツールの説明](./about-the-content-performance-tool.md)を参照してください。
+コンテンツの ［**統計情報を表示**］（![View Metrics](../../images/icon-analytics.png)）オプションを使用して、コンテンツパフォーマンスツールにアクセスします。 このオプションは、 [アプリケーションツールバー](../../getting-started/navigating-dxp.md#applications-bar) と[コンテンツダッシュボード](../content-dashboard/about-the-content-dashboard.md)にあります。 詳しくは、[コンテンツパフォーマンスツールの説明](./about-the-content-performance-tool.md)を参照してください。
 
 コンテンツパフォーマンスツールには、次の3つの異なる領域があります。
 
@@ -44,7 +44,7 @@
 
 ![期間セレクターの使用 ](./analyze-content-metrics-using-content-performance-tool/images/02.png)
 
-期間セレクターは、*［Referral］*および*［Social traffic］*パネルの詳細ビューにも含まれています。
+期間セレクターは、 ［**Referral**］ および ［**Social traffic**］ パネルの詳細ビューにも含まれています。
 
 ![パネルの詳細表示の期間 ](./analyze-content-metrics-using-content-performance-tool/images/03.png)
 

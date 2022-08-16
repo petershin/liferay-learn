@@ -6,9 +6,9 @@
 Instance Settingsのユーザーインターフェースは自動生成され、SAMLの設定を容易にするフィールド検証やその他の機能は提供されない。 SAMLインスタンスを設定するには、 [SAML管理](./saml-admin.md) インターフェースを使用してください。 Instance Settingsインターフェイスを使用して[設定ファイル](./saml-configuration-reference.md)を作成したい上級者向けのドキュメントをここに掲載します。
 ```
 
-1. _コントロールパネル_ &rarr; _インスタンス設定_ &rarr; _セキュリティ_ &rarr; _SSO_ &rarr; _SAML プロバイダ設定_.
+1. **コントロールパネル** &rarr; **インスタンス設定** &rarr; **セキュリティ** &rarr; **SSO** &rarr; **SAML プロバイダ設定** .
 
-1. フォームに必要事項を入力し、下部にある「 _Update_」をクリックします。
+1. フォームに必要事項を入力し、下部にある「**Update**」をクリックします。
 
 **Key Store Credential Password:** Key Store Credential Passwordは、キーストアへのアクセスに使用されます。
 

@@ -48,7 +48,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
   "siteId" : 20125
     ```
 
-1. *［Administration Menu］* &rarr; *［カテゴリー設定］* &rarr; *［カテゴリー］*に移動して、カテゴリーアプリケーションに移動します。 新しいボキャブラリが追加されたことを確認してください。
+1. ［**Administration Menu**］ &rarr; ［**カテゴリー設定**］ &rarr; ［**カテゴリー**］ に移動して、カテゴリーアプリケーションに移動します。 新しいボキャブラリが追加されたことを確認してください。
 
     ![新しいボキャブラリが追加されました。](./categories-and-vocabulary-api-basics/images/01.png)
 
@@ -124,7 +124,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 
 次のcURLまたはJavaコマンドを実行すると、サイトのボキャブラリを一覧表示できます。 上記のように、`1234`をサイトのIDに置き換えてください。
 
-### TaxonomyVocabularies_GET_FromSite.sh
+### TaxonomyVocabularies **GET** FromSite.sh
 
 コマンド:
 
@@ -138,7 +138,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
    :language: bash
 ```
 
-### TaxonomyVocabularies_GET_FromSite.java
+### TaxonomyVocabularies **GET** FromSite.java
 
 コマンド:
 
@@ -164,7 +164,7 @@ java -classpath .:* -DsiteId=1234 TaxonomyVocabularies_GET_FromSite
 `TaxonomyVocabularies_GET_FromSite.[java|sh]`を使用して`Vocabulary` IDを取得します。
 ```
 
-### TaxonomyVocabulary_GET_ById.sh
+### TaxonomyVocabulary **GET** ById.sh
 
 コマンド:
 
@@ -178,7 +178,7 @@ java -classpath .:* -DsiteId=1234 TaxonomyVocabularies_GET_FromSite
    :language: bash
 ```
 
-### TaxonomyVocabulary_GET_ById.java
+### TaxonomyVocabulary **GET** ById.java
 
 コマンド:
 
@@ -200,7 +200,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_GET_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のボキャブラリを部分的に編集します。 注： `1234`をボキャブラリのIDに置き換えてください。
 
-### TaxonomyVocabulary_PATCH_ById.sh
+### TaxonomyVocabulary **PATCH** ById.sh
 
 コマンド:
 
@@ -214,7 +214,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_GET_ById
    :language: bash
 ```
 
-### TaxonomyVocabulary_PATCH_ById.java
+### TaxonomyVocabulary **PATCH** ById.java
 
 コマンド:
 
@@ -236,7 +236,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PATCH_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のボキャブラリを上書きします。 注： `1234`をボキャブラリのIDに置き換えてください。
 
-### TaxonomyVocabulary_PUT_ById.sh
+### TaxonomyVocabulary **PUT** ById.sh
 
 コマンド:
 
@@ -250,7 +250,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PATCH_ById
    :language: bash
 ```
 
-### TaxonomyVocabulary_PUT_ById.java
+### TaxonomyVocabulary **PUT** ById.java
 
 コマンド:
 
@@ -270,7 +270,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PUT_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のボキャブラリを削除します。 注： `1234`をボキャブラリのIDに置き換えてください。
 
-### TaxonomyVocabulary_DELETE_ById.sh
+### TaxonomyVocabulary **DELETE** ById.sh
 
 コマンド:
 
@@ -284,7 +284,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PUT_ById
    :language: bash
 ```
 
-### TaxonomyVocabulary_DELETE_ById.java
+### TaxonomyVocabulary **DELETE** ById.java
 
 コマンド
 

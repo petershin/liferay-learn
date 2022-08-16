@@ -20,21 +20,21 @@
 
 テンプレート作成後のプロパゲーションを有効または無効にするには、以下の手順に従います。
 
-1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *コントロールパネル* タブを開き、 *サイトテンプレート*をクリックします。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** タブを開き、 **サイトテンプレート** をクリックします。
 
-1. 希望する *テンプレートを選択します*。
+1. 希望する **テンプレートを選択します** 。
 
-1. *伝達* ボタン (![Propagation Button](../../../images/icon-merge.png)) をクリックします。
+1. **伝達** ボタン (![Propagation Button](../../../images/icon-merge.png)) をクリックします。
 
-   伝搬が有効な場合、 *Disable Propagation* をクリックして、テンプレートの変更が接続されているサイトページに自動的に伝搬されないようにします。
+   伝搬が有効な場合、 **Disable Propagation** をクリックして、テンプレートの変更が接続されているサイトページに自動的に伝搬されないようにします。
 
    ![Propagationが有効な場合は、Disable Propagationをクリックします。](./propagating-template-changes/images/02.png)
 
-   伝搬が無効になっている場合は、 *Ready for Propagation* をクリックして、自動伝搬を有効にします。
+   伝搬が無効になっている場合は、 **Ready for Propagation** をクリックして、自動伝搬を有効にします。
 
    ![Propagationが無効になっている場合は、Ready for Propagationをクリックします。](./propagating-template-changes/images/03.png)
 
-また、「サイトテンプレート」アプリケーションページで、自動伝搬を有効または無効にすることもできます。 希望するテンプレートの *Actions* ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 *Disable Propagation* または *Ready for Propagation*を選択するだけです。
+また、「サイトテンプレート」アプリケーションページで、自動伝搬を有効または無効にすることもできます。 希望するテンプレートの **Actions** ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 **Disable Propagation** または **Ready for Propagation** を選択するだけです。
 
 ![目的のサイトテンプレートの「Actions」ボタンをクリックし、「Disable Propagation」または「Ready for Propagation」を選択します。](./propagating-template-changes/images/04.png)
 
@@ -50,7 +50,7 @@
 
    ![情報アイコンをクリックし、「変更をリセット」を選択します。](./propagating-template-changes/images/05.png)
 
-1. *Reset Changes*をクリックします。
+1. **Reset Changes** をクリックします。
 
    ```{warning}
    変更のリセット **サイトページで行われた変更を直接元に戻す**。 その結果、データが失われる可能性があります。 注意して続行してください。
@@ -67,9 +67,9 @@ After encountering a conflict, follow these steps to restore automatic propagati
 
 1. Manually resolve all conflicts identified in the error message.
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Configuration*, and go to *Site Settings*.
+1. Open the **Site Menu**(![Site Menu](../../../images/icon-product-menu.png)), expand **Configuration** , and go to **Site Settings** .
 
-1. Click the *Reset and Propagate* button to reset the merge fail count and attempts to propagate your site's changes again. -->
+1. Click the **Reset and Propagate** button to reset the merge fail count and attempts to propagate your site's changes again. -->
 
 ## 追加情報
 

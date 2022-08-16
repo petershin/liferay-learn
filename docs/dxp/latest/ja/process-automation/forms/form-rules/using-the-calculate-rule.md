@@ -8,9 +8,9 @@
 
 次の例では、3つの数値フィールドを持つフォームがあります。
 
-***Number of attendees** : 数値フィールド。
-***Registration Fee** : 150が[定義済みの値](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)として設定されている数値フィールド。
-***Total** : 合計が表示される数値フィールド。
+* **Number of attendees** : 数値フィールド。
+* **Registration Fee** : 150が[定義済みの値](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)として設定されている数値フィールド。
+* **Total** : 合計が表示される数値フィールド。
 
 ## 計算ルールの設定
 

@@ -17,7 +17,7 @@
 
 ### テーマにおけるJSPテンプレートのサポートを削除しました。
 - **日付：** 2018年11月14日
-- **JIRAチケット：** [LPS-87064](https://issues.liferay.com/browse/LPS-87064)
+- **JIRAチケット：**[LPS-87064](https://issues.liferay.com/browse/LPS-87064)
 
 #### 変更点
 
@@ -41,7 +41,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### Lodashはデフォルトでは含まれなくなりました。
 - **日付：** 2018年11月27日
-- **JIRAチケット：** [LPS-87677](https://issues.liferay.com/browse/LPS-87677)
+- **JIRAチケット：**[LPS-87677](https://issues.liferay.com/browse/LPS-87677)
 
 #### 変更点
 
@@ -55,7 +55,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 サードパーティライブラリを追加する方法として、独自のLodashバージョンを提供し、カスタム開発で使用する必要があります。
 
-一時的な対策として、Liferayポータルのコントロールパネルの*［コントロールパネル］* &rarr; *［設定］* &rarr; *［システム設定］* &rarr; *［サードパーティー］* &rarr; *［Lodash］*で*［Lodashを有効にする］*プロパティを`true`に設定することで、以前の動作に戻すことができます。
+一時的な対策として、Liferayポータルのコントロールパネルの ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**システム設定**］ &rarr; ［**サードパーティー**］ &rarr; ［**Lodash**］ で ［**Lodashを有効にする**］ プロパティを`true`に設定することで、以前の動作に戻すことができます。
 
 #### 変更が行われた理由
 
@@ -65,7 +65,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### 2つのステージングポータルプロパティをOSGi構成に移動
 - **日付：** 2018年12月12日
-- **JIRAチケット：** [LPS-88018](https://issues.liferay.com/browse/LPS-88018)
+- **JIRAチケット：**[LPS-88018](https://issues.liferay.com/browse/LPS-88018)
 
 #### 変更点
 
@@ -80,7 +80,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 #### コードの更新方法
 
-`portal.properties` ファイルを上書きする代わりに、Portalの設定管理者からプロパティを管理することができます。 これにアクセスするには、Liferayポータルの*［コントロールパネル］* &rarr; *［設定］* &rarr; *［システム設定］* &rarr; *［Infrastructure］* &rarr; *［エクスポート / インポート］*に移動し、そこで設定を編集します。
+`portal.properties` ファイルを上書きする代わりに、Portalの設定管理者からプロパティを管理することができます。 これにアクセスするには、Liferayポータルの ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**システム設定**］ &rarr; ［**Infrastructure**］ &rarr; ［**エクスポート / インポート**］ に移動し、そこで設定を編集します。
 
 新しいコンフィギュレーションをアプリケーションに組み込みたい場合は、 [making applications configurable](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-1/making-applications-configurable) の手順に従ってください。
 
@@ -92,11 +92,11 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### ページの機能へのリンクアプリケーションURLを削除
 - **日付：** 2018年12月14日
-- **JIRAチケット：** [LPS-85948](https://issues.liferay.com/browse/LPS-85948)
+- **JIRAチケット：**[LPS-85948](https://issues.liferay.com/browse/LPS-85948)
 
 #### 変更点
 
-*Link Portlet URLs to Page* ポートレットの Look and Feel のオプションは、Liferay Portal 7.1 で非推奨とされ、ユーザーは設定プロパティでオプションを表示、非表示することができるようになりました。 Liferay Portal 7.2 では、これは削除され、設定することができなくなりました。
+**Link Portlet URLs to Page** ポートレットの Look and Feel のオプションは、Liferay Portal 7.1 で非推奨とされ、ユーザーは設定プロパティでオプションを表示、非表示することができるようになりました。 Liferay Portal 7.2 では、これは削除され、設定することができなくなりました。
 
 #### 影響を受ける人
 
@@ -114,7 +114,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### TermsOfUseContentProviderをkernel.utilから移動しました。
 - **日付：** 2019年1月07日
-- **JIRAチケット：** [LPS-88869](https://issues.liferay.com/browse/LPS-88869)
+- **JIRAチケット：**[LPS-88869](https://issues.liferay.com/browse/LPS-88869)
 
 #### 変更点
 
@@ -148,7 +148,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### HibernateConfigurationConverterとConverterを削除しました。
 - **日付：** 2019年1月07日
-- **JIRAチケット：** [LPS-88870](https://issues.liferay.com/browse/LPS-88870)
+- **JIRAチケット：**[LPS-88870](https://issues.liferay.com/browse/LPS-88870)
 
 #### 変更点
 
@@ -170,7 +170,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### JDKの関数とサプライヤーを使用するように切り替えました。
 - **日付：** 2019年1月08日
-- **JIRAチケット：** [LPS-88911](https://issues.liferay.com/browse/LPS-88911)
+- **JIRAチケット：**[LPS-88911](https://issues.liferay.com/browse/LPS-88911)
 
 #### 変更点
 
@@ -192,7 +192,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### com.liferay.portal.service.InvokableServiceインターフェイスを廃止
 - **日付：** 2019年1月08日
-- **JIRAチケット：** [LPS-88912](https://issues.liferay.com/browse/LPS-88912)
+- **JIRAチケット：**[LPS-88912](https://issues.liferay.com/browse/LPS-88912)
 
 #### 変更点
 
@@ -214,7 +214,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### ServiceLoaderConditionのサポートを終了しました。
 - **日付：** 2019年1月08日
-- **JIRAチケット：** [LPS-88913](https://issues.liferay.com/browse/LPS-88913)
+- **JIRAチケット：**[LPS-88913](https://issues.liferay.com/browse/LPS-88913)
 
 #### 変更点
 
@@ -236,7 +236,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### JDK述語を使用するように変更しました。
 - **日付：** 2019年1月14日
-- **JIRAチケット：** [LPS-89139](https://issues.liferay.com/browse/LPS-89139)
+- **JIRAチケット：**[LPS-89139](https://issues.liferay.com/browse/LPS-89139)
 
 #### 変更点
 
@@ -265,7 +265,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### com.liferay.portal.kernel.utilパッケージから安全でない機能インターフェイスを削除しました
 - **日付：** 2019年1月15日
-- **JIRAチケット：** [LPS-89223](https://issues.liferay.com/browse/LPS-89223)
+- **JIRAチケット：**[LPS-89223](https://issues.liferay.com/browse/LPS-89223)
 
 #### 変更点
 
@@ -291,7 +291,7 @@ JSPテンプレートの削除により、既存および新規のテンプレ�
 
 ### ポータル配信における非推奨のNTLMについて
 - **日付：** 2019年1月21日
-- **JIRAチケット：** [LPS-88300](https://issues.liferay.com/browse/LPS-88300)
+- **JIRAチケット：**[LPS-88300](https://issues.liferay.com/browse/LPS-88300)
 
 #### 変更点
 
@@ -313,7 +313,7 @@ NTLMを認証システムとして使い続けたい場合は、Liferay Marketpl
 
 ### ポータル配信における非推奨のOpenID
 - **日付：** 2019年1月21日
-- **JIRAチケット：** [LPS-88906](https://issues.liferay.com/browse/LPS-88906)
+- **JIRAチケット：**[LPS-88906](https://issues.liferay.com/browse/LPS-88906)
 
 #### 変更点
 
@@ -335,7 +335,7 @@ OpenIDを認証システムとして使い続けたい場合は、Liferay Market
 
 ### ポータル配信における非推奨のGoogle SSOについて
 - **日付：** 2019年1月21日
-- **JIRAチケット：** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
+- **JIRAチケット：**[LPS-88905](https://issues.liferay.com/browse/LPS-88905)
 
 #### 変更点
 
@@ -357,7 +357,7 @@ Google SSOを認証システムとして使い続けたい場合は、Liferay Ma
 
 ### liferay-amd-loader から Liferay.Loader.addModules を削除しました。
 - **日付：** 2019年2月01日
-- **JIRAチケット：** [LPS-83949](https://issues.liferay.com/browse/LPS-83949)
+- **JIRAチケット：**[LPS-83949](https://issues.liferay.com/browse/LPS-83949)
 
 #### 変更点
 
@@ -381,7 +381,7 @@ Liferay.Loader.addModules を直接置き換えるものはありません。
 
 ### AlloyEditor v2.0は、Reactの新しいメジャーバージョンを含むように更新されました。
 - **日付：** 2019年2月4日
-- **JIRAチケット：** [LPS-90079](https://issues.liferay.com/browse/LPS-90079)
+- **JIRAチケット：**[LPS-90079](https://issues.liferay.com/browse/LPS-90079)
 
 #### 変更点
 
@@ -410,7 +410,7 @@ AlloyEditorがバージョン2.0.0になり、React v15からv16へのメジャ�
 ### dl.tabs.visibleポータルプロパティは非推奨になりました
 
 - **日付：** 2019年4月10日
-- **JIRAチケット：** [LPS-93948](https://issues.liferay.com/browse/LPS-93948)
+- **JIRAチケット：**[LPS-93948](https://issues.liferay.com/browse/LPS-93948)
 
 #### 変更点
 
@@ -433,7 +433,7 @@ AlloyEditorがバージョン2.0.0になり、React v15からv16へのメジャ�
 ### ユーザーメニューを製品メニューから移動
 
 - **日付：** 2019年4月19日
-- **JIRAチケット：** [LPS-87868](https://issues.liferay.com/browse/LPS-87868)
+- **JIRAチケット：**[LPS-87868](https://issues.liferay.com/browse/LPS-87868)
 
 #### 変更点
 
@@ -456,7 +456,7 @@ AlloyEditorがバージョン2.0.0になり、React v15からv16へのメジャ�
 ### 国別一覧から香港・マカオを削除しました。
 
 - **日付：** 2019年4月26日
-- **JIRAチケット：** [LPS-82203](https://issues.liferay.com/browse/LPS-82203)
+- **JIRAチケット：**[LPS-82203](https://issues.liferay.com/browse/LPS-82203)
 
 #### 変更点
 
@@ -479,7 +479,7 @@ AlloyEditorがバージョン2.0.0になり、React v15からv16へのメジャ�
 ### JGroups が 3.6.16 から 4.1.1 にアップグレードされました。
 
 - **日付：** 2019年8月15日
-- **JIRAチケット：** [LPS-97897](https://issues.liferay.com/browse/LPS-97897)
+- **JIRAチケット：**[LPS-97897](https://issues.liferay.com/browse/LPS-97897)
 
 #### 変更点
 
@@ -501,8 +501,8 @@ JGroups をバージョン 3.6.16 からバージョン 4.1.1 に更新しまし
 
 ### Liferay AssetEntries_AssetCategories は使用されなくなりました
 
-- **日付：**  2019年9月11日
-- **JIRAのチケットです。** [LPS-99973](https://issues.liferay.com/browse/LPS-99973) , [LPS-76488](https://issues.liferay.com/browse/LPS-76488)
+- **日付：** 2019年9月11日
+- **JIRAのチケットです。**[LPS-99973](https://issues.liferay.com/browse/LPS-99973) , [LPS-76488](https://issues.liferay.com/browse/LPS-76488)
 
 #### 変更点
 
@@ -558,7 +558,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### 自動タグ付けは手動で再設定する必要があります。
 
 - **日付：** 2019年10月02日
-- **JIRAチケット：** [LPS-97123](https://issues.liferay.com/browse/LPS-97123)
+- **JIRAチケット：**[LPS-97123](https://issues.liferay.com/browse/LPS-97123)
 
 #### 変更点
 
@@ -581,7 +581,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### ブログ画像ポータルプロパティをシステム設定に移動
 
 - **日付：** 2019年10月02日
-- **JIRAチケット：** [LPS-95298](https://issues.liferay.com/browse/LPS-95298)
+- **JIRAチケット：**[LPS-95298](https://issues.liferay.com/browse/LPS-95298)
 
 #### 変更点
 
@@ -593,7 +593,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### コードの更新方法
 
-カスタムブログ画像のプロパティ値を保持する場合は、*［設定］* &rarr; *［ブログ］* &rarr; *［ファイルアップロード］*の［システム設定］で再構成する必要があります。 古いプロパティを参照しているコードは、新しいコンフィギュレーション・インターフェースを使用するように更新する必要があります。
+カスタムブログ画像のプロパティ値を保持する場合は、 ［**設定**］ &rarr; ［**ブログ**］ &rarr; ［**ファイルアップロード**］ の［システム設定］で再構成する必要があります。 古いプロパティを参照しているコードは、新しいコンフィギュレーション・インターフェースを使用するように更新する必要があります。
 
 #### 変更が行われた理由
 
@@ -604,7 +604,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### キャッシュブートストラップ機能を削除
 
 - **日付：** 2020年1月08日
-- **JIRAチケット：** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
+- **JIRAチケット：**[LPS-96563](https://issues.liferay.com/browse/LPS-96563)
 
 #### 変更点
 
@@ -629,7 +629,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### ContentTransformerListenerをデフォルトで無効化
 
 - **日付：** 2020年5月25日
-- **JIRAチケット：** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
+- **JIRAチケット：**[LPS-114239](https://issues.liferay.com/browse/LPS-114239)
 
 #### 変更点
 
@@ -652,7 +652,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMDataProviderのメソッドを置き換え
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+- **JIRAチケット：**[LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 変更点
 
@@ -675,7 +675,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMDataProviderRequestのコンストラクターを削除
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+- **JIRAチケット：**[LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 変更点
 
@@ -698,7 +698,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMDataProviderRequestのメソッドを削除
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+- **JIRAチケット：**[LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 変更点
 
@@ -731,7 +731,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMDataProviderRequestのメソッドを置き換え
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+- **JIRAチケット：**[LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 変更点
 
@@ -754,7 +754,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMDataProviderResponseのメソッドを削除
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+- **JIRAチケット：**[LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 変更点
 
@@ -783,7 +783,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMDataProviderResponseのメソッドを置き換え
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+- **JIRAチケット：**[LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 変更点
 
@@ -806,7 +806,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMDataProviderResponseのEnumを置き換え
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+- **JIRAチケット：**[LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 変更点
 
@@ -829,7 +829,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMDataProviderResponseOutputを削除
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+- **JIRAチケット：**[LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 変更点
 
@@ -852,7 +852,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMDataProviderTrackerのメソッドを削除
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+- **JIRAチケット：**[LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 変更点
 
@@ -875,7 +875,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMFormInstanceRecordLocalServiceのメソッドを置き換え
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-81564](https://issues.liferay.com/browse/LPS-81564)
+- **JIRAチケット：**[LPS-81564](https://issues.liferay.com/browse/LPS-81564)
 
 #### 変更点
 
@@ -900,7 +900,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### DDMStructureServiceのメソッドを削除
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
+- **JIRAチケット：**[LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 #### 変更点
 
@@ -937,7 +937,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### 動的データマッピング永続性クラスのメソッドを削除
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
+- **JIRAチケット：**[LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 #### 変更点
 
@@ -978,7 +978,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### 動的データマッピングユーティリティクラスのメソッドを削除
 
 - **日付：** 2020年7月14日
-- **JIRAチケット：** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
+- **JIRAチケット：**[LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 #### 変更点
 
@@ -1009,10 +1009,10 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 ---------------------------------------
 
-### module.framework.properties.felix.fileinstall.\*ポータルプロパティの名前をmodule.framework.properties.file.install.\*に変更
+### module.framework.properties.felix.fileinstall.\ **ポータルプロパティの名前をmodule.framework.properties.file.install.\** に変更
 
 - **日付：** 2020年8月8日
-- **JIRAチケット：** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
+- **JIRAチケット：**[LPS-115016](https://issues.liferay.com/browse/LPS-115016)
 
 #### 変更点
 
@@ -1035,7 +1035,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### buffered.increment.enabledポータルプロパティの置き換え
 
 - **日付：** 2020年10月21日
-- **JIRAチケット：** [LPS-122159](https://issues.liferay.com/browse/LPS-122159)
+- **JIRAチケット：**[LPS-122159](https://issues.liferay.com/browse/LPS-122159)
 
 #### 変更点
 
@@ -1066,7 +1066,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### module.framework.properties.file.install.optionalImportRefreshScopeポータルプロパティの削除
 
 - **日付：** 2021年2月3日
-- **JIRAチケット：** [LPS-122008](https://issues.liferay.com/browse/LPS-122008)
+- **JIRAチケット：**[LPS-122008](https://issues.liferay.com/browse/LPS-122008)
 
 #### 変更点
 
@@ -1089,7 +1089,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 ### .cfgファイルに.cfg形式を使用
 
 - **日付：** 2021年2月21日
-- **JIRAチケット：** [LPS-128031](https://issues.liferay.com/browse/LPS-128031)
+- **JIRAチケット：**[LPS-128031](https://issues.liferay.com/browse/LPS-128031)
 
 #### 変更点
 

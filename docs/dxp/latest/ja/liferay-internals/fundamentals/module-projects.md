@@ -4,11 +4,11 @@ Liferayのアプリケーションやカスタマイズは、 [OSGi モジュー
 
 モジュールプロジェクトは、次の3つから構成されています。
 
-1. **コード：**Javaクラスと、画像、テンプレート、追加の記述子などのリソース。 Javaパッケージはデフォルトではプライベートですが、他のモジュールが使用できるように[エクスポート](./exporting-packages.md)することができます。
+1. **コード：** Javaクラスと、画像、テンプレート、追加の記述子などのリソース。 Javaパッケージはデフォルトではプライベートですが、他のモジュールが使用できるように[エクスポート](./exporting-packages.md)することができます。
 
 1. **ビルドスクリプト：** モジュールをビルドしてデプロイするための [Gradle](https://gradle.org/) ファイル。
 
-1. **メタデータ：** [Bnd](https://bnd.bndtools.org/) ファイルは、モジュールのアーティファクトを定義し、モジュールが提供するまたは必要とするパッケージや機能を指定します。
+1. **メタデータ：**[Bnd](https://bnd.bndtools.org/) ファイルは、モジュールのアーティファクトを定義し、モジュールが提供するまたは必要とするパッケージや機能を指定します。
 
 モジュールプロジェクトの構造は次のとおりです。
 
@@ -40,9 +40,9 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 
 1. **API** モジュールはインターフェイスを定義します。
 
-1. **実装**モジュールは、インターフェイスを実装する具象クラスを提供します。
+1. **実装** モジュールは、インターフェイスを実装する具象クラスを提供します。
 
-1. **クライアント**モジュールはAPIを消費します。
+1. **クライアント** モジュールはAPIを消費します。
 
 [Gogo シェル](./using-the-gogo-shell.md)でユーザーが名前を入力したときにあいさつ文を表示する簡単なコマンドを開発することで、それぞれを作成する方法を学習します。
 
@@ -225,7 +225,7 @@ liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 ```{literalinclude} ./module-projects/resources/liferay-k8s2.zip/k8s2-api/bnd.bnd
 ```
 
-The module's name is *Acme K8S2 API*. Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [*exports*](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
+The module's name is **Acme K8S2 API** . Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [**exports**](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
 
 #### Generated Metadata
 
@@ -257,7 +257,7 @@ Bndは`bnd.bnd`ファイルからすべてのヘッダーをプロパゲート�
 
 これで、モジュールプロジェクトがどのようなものか、ビルドしてデプロイする方法、そしてランタイム時にモジュールを検査する方法をマスターしました。
 
-モジュールは、`Greeter` APIのようなAPIを介して、互いの機能を活用します。 LiferayはOSGiサービスを使用して、APISを定義、実装、消費します。 次に、 [OSGiサービスとしてのAPI](./apis-as-osgi-services.md) で、OSGiサービスを使用した`Greeter` APIの*実装*について説明します。
+モジュールは、`Greeter` APIのようなAPIを介して、互いの機能を活用します。 LiferayはOSGiサービスを使用して、APISを定義、実装、消費します。 次に、 [OSGiサービスとしてのAPI](./apis-as-osgi-services.md) で、OSGiサービスを使用した`Greeter` APIの **実装** について説明します。
 
 ```{note}
 モジュールのライフサイクルの詳細については、[モジュールのライフサイクル](../architecture/module-lifecycle.md)を参照してください。

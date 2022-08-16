@@ -46,7 +46,7 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
 
     ```
 
-4. *［Administration Menu］* &rarr; *［サイトビルダー］* &rarr; *［Navigation Menus］*に移動して、ナビゲーションメニューアプリケーションに移動します。 新しいナビゲーションメニューが追加されたことを確認してください。
+4. ［**Administration Menu**］ &rarr; ［**サイトビルダー**］ &rarr; ［**Navigation Menus**］ に移動して、ナビゲーションメニューアプリケーションに移動します。 新しいナビゲーションメニューが追加されたことを確認してください。
 
     ![新しいナビゲーションメニューが追加されたことを確認してください。](./navigation-menu-api-basics/images/01.png)
 
@@ -122,7 +122,7 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
 
 次のcURLまたはJavaコマンドを実行すると、サイトのナビゲーションメニューを一覧表示できます。 上記のように、`1234`をサイトのIDに置き換えてください。
 
-### NavigationMenus_GET_FromSite.sh
+### NavigationMenus **GET** FromSite.sh
 
 コマンド:
 
@@ -136,7 +136,7 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
    :language: bash
 ```
 
-### NavigationMenus_GET_FromSite.java
+### NavigationMenus **GET** FromSite.java
 
 コマンド:
 
@@ -162,7 +162,7 @@ java -classpath .:* -DsiteId=1234 NavigationMenus_GET_FromSite
 ``NavigationMenus_GET_FromSite.[java|sh]`` を使用して、`NavigationMenu`  IDを取得します。
 ```
 
-### NavigationMenu_GET_ById.sh
+### NavigationMenu **GET** ById.sh
 
 コマンド:
 
@@ -176,7 +176,7 @@ java -classpath .:* -DsiteId=1234 NavigationMenus_GET_FromSite
    :language: bash
 ```
 
-### NavigationMenu_GET_ById.java
+### NavigationMenu **GET** ById.java
 
 コマンド:
 
@@ -198,7 +198,7 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_GET_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のナビゲーションメニューを完全に上書きします。 なお、 `1234` は、ナビゲーションメニューのIDに置き換えてください。
 
-### NavigationMenu_PUT_ById.sh
+### NavigationMenu **PUT** ById.sh
 
 コマンド:
 
@@ -212,7 +212,7 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_GET_ById
    :language: bash
 ```
 
-### NavigationMenu_PUT_ById.java
+### NavigationMenu **PUT** ById.java
 
 コマンド:
 
@@ -232,7 +232,7 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_PUT_ById
 
 以下のcURLおよびJavaコマンドで既存のナビゲーションメニューを削除します。 なお、 `1234` は、ナビゲーションメニューのIDに置き換えてください。
 
-### NavigationMenu_DELETE_ById.sh
+### NavigationMenu **DELETE** ById.sh
 
 コマンド:
 
@@ -246,7 +246,7 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_PUT_ById
    :language: bash
 ```
 
-### NavigationMenu_DELETE_ById.java
+### NavigationMenu **DELETE** ById.java
 
 コマンド
 

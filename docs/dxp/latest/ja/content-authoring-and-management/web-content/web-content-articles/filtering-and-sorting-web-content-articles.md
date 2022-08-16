@@ -1,6 +1,6 @@
 # Webコンテンツ記事の絞り込みとソート
 
-デフォルトでは、Web Content アプリケーション (*Site Menu* &rarr; *Content & Data* &rarr; *Web Content*) には、アクセスできるすべての Web Content Article のリストが表示されます。 多くの項目を扱う場合、フィルタリングとソートオプションを使用すると、このコンテンツリストをより速く検索して確認することができます。
+デフォルトでは、Web Content アプリケーション (**Site Menu** &rarr; **Content & Data** &rarr; **Web Content**) には、アクセスできるすべての Web Content Article のリストが表示されます。 多くの項目を扱う場合、フィルタリングとソートオプションを使用すると、このコンテンツリストをより速く検索して確認することができます。
 
 ![Webコンテンツアプリケーションから、Webコンテンツの記事をフィルタリングしたり、ソートしたりすることができます。](./filtering-and-sorting-web-content-articles/images/01.png)
 
@@ -10,7 +10,7 @@
 - [ステータスで絞り込み](#filter-by-status)
 - [ソート順](#order-by)
 
-これらのフィルタとソートのオプションを組み合わせることができます。 例えば、 [*Mine* フィルタ](#filter-by-navigation) と [*Draft*](#filer-by-status) と [sort by *Modified Date*](#order-by) フィルタを選択すると、Draft 状態の記事を修正日順にリストアップすることができます。
+これらのフィルタとソートのオプションを組み合わせることができます。 例えば、 [**Mine** フィルタ](#filter-by-navigation) と [**Draft**](#filer-by-status) と [sort by **Modified Date**](#order-by) フィルタを選択すると、Draft 状態の記事を修正日順にリストアップすることができます。
 
 ## ナビゲーションで絞り込む
 

@@ -1,6 +1,6 @@
 # Liferayソースのビルド
 
-このセクションでは、Liferay Portal をソースからできるだけ早くビルドするための手順を提供することを目的としています。 ナイトリースナップショットバンドルを使うことで、 *ant all* を使ったフルビルドが不要になり、Liferay Portal を構築する際に多くの時間を節約することができるようになりました。
+このセクションでは、Liferay Portal をソースからできるだけ早くビルドするための手順を提供することを目的としています。 ナイトリースナップショットバンドルを使うことで、 **ant all** を使ったフルビルドが不要になり、Liferay Portal を構築する際に多くの時間を節約することができるようになりました。
 
 最初のステップは、Liferay Portalをビルドするために必要なツールがインストールされていることを確認することです。 Liferay Portalの構築には必要です。
 
@@ -10,11 +10,11 @@
 
 ## Liferayポータルの構築
 
-次のステップは、Github から *liferay-portal* のレポをフォークし、ナイトリースナップショットバンドルを使用するようにビルドを設定することです。
+次のステップは、Github から **liferay-portal** のレポをフォークし、ナイトリースナップショットバンドルを使用するようにビルドを設定することです。
 
 Liferay Portal をソースからビルドするには、以下のようにします。
 
-* *liferay-binaries-cache-2020* のレポをクローンしてビルドを高速化します。
+* **liferay-binaries-cache-2020** のレポをクローンしてビルドを高速化します。
 
     ```
     git clone https://github.com/liferay/liferay-binaries-cache-2020 --branch master --single-branch --depth 1
@@ -55,7 +55,7 @@ Liferay のコアコンポーネントをビルドして、スナップショッ
     ant deploy
     ```
 
-* *liferay-portal* ディレクトリからスナップショットバンドル を起動します。
+* **liferay-portal** ディレクトリからスナップショットバンドル を起動します。
 
     ```
     ../bundles/tomcat-9.0.17/bin/startup.sh | bat
@@ -87,12 +87,12 @@ Liferay のコアコンポーネントをビルドして、スナップショッ
 
 以下の手順でJIRAにチケットを作成します。
 
-* [JIRA Account](https://issues.liferay.com/secure/Dashboard.jspa) に登録し、実装したい機能、改善、バグフィックスの進捗を確認することができます。 今後、これらを *課題* と呼ぶことにします。
+* [JIRA Account](https://issues.liferay.com/secure/Dashboard.jspa) に登録し、実装したい機能、改善、バグフィックスの進捗を確認することができます。 今後、これらを **課題** と呼ぶことにします。
 * [問題のチケット](https://issues.liferay.com/secure/Dashboard.jspa) を送信してください。 チケットには、必ず以下のアクションを定義/完了させてください。
 * 課題を明確に記述する。 バグであれば、それを再現するための手順も含める。
 * 課題に対して適切なカテゴリーを選択してください。
 * 問題の影響を受ける製品の最も古いバージョンを選択します。
-* *Contribute Solution ボタン*をクリックして、表示された Contributor License Agreement に応答します。
+* **Contribute Solution ボタン** をクリックして、表示された Contributor License Agreement に応答します。
 * すでにチケットが存在する場合は、そのチケットから参加してください。
 
 ## ギズブ

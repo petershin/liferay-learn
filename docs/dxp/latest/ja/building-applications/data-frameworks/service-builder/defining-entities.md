@@ -15,9 +15,9 @@ defining-entities/adding-model-hints.md
 
 エンティティはサービスの最も重要な部分です。 エンティティは、Javaのモデルオブジェクトとデータベースフィールドおよびテーブルの間のマップを表します。 [Service Builder](../service-builder.md)は、Javaモデルを定義したエンティティに自動的にマップし、Javaオブジェクトを永続化する機能を提供します。 [Generating Model, Persistence, and Service Code](./service-builder-basics/generating-model-persistence-and-service-code.md)にあるY7G4サンプルプロジェクトについて検討します。 エンティティの概要は次のとおりです。
 
-***名前** : `Y7G4Entry`
-***ローカルサービス：****yes**
-***リモートサービス：****no**
+* **名前** : `Y7G4Entry`
+* **ローカルサービス：** **yes**
+* **リモートサービス：** **no**
 
 エンティティを定義する方法は次のとおりです。
 

@@ -16,13 +16,13 @@ Follow these steps:
 
 1. Go to `http://localhost:8080/o/api`.
 
-1. At the top-left of the screen that appears, pick *headless-delivery* from the selector. これはブログ投稿APIを含むカテゴリです。
+1. At the top-left of the screen that appears, pick **headless-delivery** from the selector. これはブログ投稿APIを含むカテゴリです。
 
-1. Click the *Show GraphQL* button at the top-right of the screen to open Liferay's [GraphiQL](https://github.com/graphql/graphiql) browser.
+1. Click the **Show GraphQL** button at the top-right of the screen to open Liferay's [GraphiQL](https://github.com/graphql/graphiql) browser.
 
-1. Click the *Docs* link below the button you just clicked. これでAPIを閲覧できます。
+1. Click the **Docs** link below the button you just clicked. これでAPIを閲覧できます。
 
-1. GraphQL separates read and write operations by calling the first a *query* and the second a *mutation*. Since the first thing you want to do is post a blog entry, click *mutation*.
+1. GraphQL separates read and write operations by calling the first a **query** and the second a **mutation** . Since the first thing you want to do is post a blog entry, click **mutation** .
 
 1. A list appears of the entire API use the search at the top or scroll down and find the call to `createSiteBlogPosting`:
 
@@ -52,11 +52,11 @@ APIでは、エントリが投稿されるブログを含むサイトを把握�
 
 1. `http://localhost:8080`にアクセスしてください。
 
-1. *グローバルメニュー* ![Global Menu](../../images/icon-applications-menu.png)を開き、 *コントロールパネル* タブをクリックし、 *サイト* &rarr; サイトを表示します。
+1. **グローバルメニュー** ![Global Menu](../../images/icon-applications-menu.png)を開き、 **コントロールパネル** タブをクリックし、 **サイト** &rarr; サイトを表示します。
 
-1. Liferay Site の横にある *Actions* ボタン ![Actions Button](../../images/icon-actions.png) をクリックし、 *Go to Site Settings*を選択します。
+1. Liferay Site の横にある **Actions** ボタン ![Actions Button](../../images/icon-actions.png) をクリックし、 **Go to Site Settings** を選択します。
 
-1. *サイト構成*にアクセスしてください。
+1. **サイト構成** にアクセスしてください。
 
 サイトIDが[Details]セクションの上部に表示されます。 `20122`のような整数になります。
 
@@ -64,7 +64,7 @@ APIでは、エントリが投稿されるブログを含むサイトを把握�
 
 これで、呼び出しを行うために必要なものがすべて揃いました。 すべてのWebサービスには、要求しているデータにアクセスできる資格情報を使用してアクセスする必要があります。 含まれているGraphQLクライアントは、ブラウザーを使用して認証します。 スタンドアロンのクライアントを作成する場合は、[OAuth2](../using-oauth2/using-oauth2.md)経由でユーザーを認証する必要があります。
 
-開発中は、URLで資格情報データを渡す基本認証を使用する方がはるかに簡単です。 しかし、これは安全ではないので、 *この方法をプロダクションに決して使用しないでください。*
+開発中は、URLで資格情報データを渡す基本認証を使用する方がはるかに簡単です。 しかし、これは安全ではないので、 **この方法をプロダクションに決して使用しないでください。**
 
 ### 基本認証を使用したGraphQL APIの呼び出し（開発中のみ）
 
@@ -138,7 +138,7 @@ GraphQLスキーマによって、ブログエントリを投稿するために�
     }
     ```
 
-1. 再度 `http://localhost:8080/o/api`にアクセスしてリクエストを行います。 *［GraphQLを表示］* ボタンをクリックします。
+1. 再度 `http://localhost:8080/o/api`にアクセスしてリクエストを行います。 ［**GraphQLを表示**］ ボタンをクリックします。
 
 1. 左下のクエリ変数ボックスにJSONドキュメントを貼り付けます。
 
@@ -232,7 +232,7 @@ query {blogPosting(blogPostingId: 35541)
 }
 ```
 
-これをクライアントの左上のウィンドウに貼り付け、［ *再生* ］ボタンをクリックします。 同じブログエントリを返します。
+これをクライアントの左上のウィンドウに貼り付け、［**再生**］ボタンをクリックします。 同じブログエントリを返します。
 
 ```json
 {

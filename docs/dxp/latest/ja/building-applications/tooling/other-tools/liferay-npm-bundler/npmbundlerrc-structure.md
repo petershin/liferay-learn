@@ -220,7 +220,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 
 バージョン2.2.0以降、liferay-npm-bundlerはウィジェットOSGiバンドルを作成できます。 詳しい手順については、[Creating and Bundling JavaScript Widgets with JavaScript Tooling](../liferay-js-generator.md)を参照してください。 OSGiバンドル作成の構成オプションは次のとおりです：
 
-***create-jar** ：真の値に設定すると、OSGiバンドルが作成されます。 `true`に設定すると、すべてのサブオプションはデフォルト値を取ります。 オブジェクトが渡されると、各サブオプションを個別に構成できます。 これをビルドフラグとして渡すこともできます： `$ liferay-npm-bundler --create-` または `$ liferay-npm-bundler -j`。 デフォルト値は `false`です。
+* **create-jar** ：真の値に設定すると、OSGiバンドルが作成されます。 `true`に設定すると、すべてのサブオプションはデフォルト値を取ります。 オブジェクトが渡されると、各サブオプションを個別に構成できます。 これをビルドフラグとして渡すこともできます： `$ liferay-npm-bundler --create-` または `$ liferay-npm-bundler -j`。 デフォルト値は `false`です。
 
 ```json
 {
@@ -228,9 +228,9 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.auto-deploy-portlet** ：このオプションは非推奨です。 代わりに `create-jar.features.js-extender` オプションを使用してください。
+* **create-jar.auto-deploy-portlet** ：このオプションは非推奨です。 代わりに `create-jar.features.js-extender` オプションを使用してください。
 
-***create-jar.features.configuration** ：使用するシステム（OSGi）およびウィジェットインスタンス（ポートレット仕様で定義されているウィジェット設定）の構成を記述したファイルを指定します。 （必要な設定構成の詳細については、[Configuring System Settings and Instance Settings for Your JavaScript Widgets](../liferay-js-generator.md)を参照してください）。 そのファイルが存在する場合、デフォルト値は `features/configuration.json` です。それ以外の場合、デフォルトは `undefined`です。
+* **create-jar.features.configuration** ：使用するシステム（OSGi）およびウィジェットインスタンス（ポートレット仕様で定義されているウィジェット設定）の構成を記述したファイルを指定します。 （必要な設定構成の詳細については、[Configuring System Settings and Instance Settings for Your JavaScript Widgets](../liferay-js-generator.md)を参照してください）。 そのファイルが存在する場合、デフォルト値は `features/configuration.json` です。それ以外の場合、デフォルトは `undefined`です。
 
 ```json
 {
@@ -242,7 +242,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.output-dir：** 最終的なJARを配置する場所を指定します。
+* **create-jar.output-dir：** 最終的なJARを配置する場所を指定します。
 
 ```json
 {
@@ -252,7 +252,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.features.js-extender：** OSGiバンドルをJS Portlet Extenderで処理するかどうかを制御します。 バンドルに使用するエクステンダーの最低限必要なバージョンを指定することもできます。 これは、バンドルで高度な機能を使用したいが、Extenderの古いバージョンで展開可能にしたい場合に役立ちます。 ストリング `"any"` を渡して、バンドルをエクステンダーの任意のバージョンにデプロイできるようにします。 `true`の場合、liferay-npm-bundlerは、バンドルで使用される機能に必要なエクステンダーの最小バージョンを自動的に決定します。 デフォルト値は `true`です。 以下は構成例です：
+* **create-jar.features.js-extender：** OSGiバンドルをJS Portlet Extenderで処理するかどうかを制御します。 バンドルに使用するエクステンダーの最低限必要なバージョンを指定することもできます。 これは、バンドルで高度な機能を使用したいが、Extenderの古いバージョンで展開可能にしたい場合に役立ちます。 ストリング `"any"` を渡して、バンドルをエクステンダーの任意のバージョンにデプロイできるようにします。 `true`の場合、liferay-npm-bundlerは、バンドルで使用される機能に必要なエクステンダーの最小バージョンを自動的に決定します。 デフォルト値は `true`です。 以下は構成例です：
 
 ```json
 {
@@ -264,7 +264,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.features.web-context：** バンドルの静的リソースの公開に使用するコンテキストパスを指定します。 デフォルト値は `/{project name}-{project version}`です。
+* **create-jar.features.web-context：** バンドルの静的リソースの公開に使用するコンテキストパスを指定します。 デフォルト値は `/{project name}-{project version}`です。
 
 ```json
 {
@@ -276,7 +276,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.features.localization：** バンドルに使用するL10Nファイルを指定します。ウィジェットでのローカリゼーションの使用の詳細については、[Providing Localization in Your JavaScript Widgets](../liferay-js-generator.md)を参照してください。 デフォルト値は、そのベース名を持つプロパティファイルが存在する場合、 `features/localization/Language` です。それ以外の場合、デフォルトは `undefined`です。
+* **create-jar.features.localization：** バンドルに使用するL10Nファイルを指定します。ウィジェットでのローカリゼーションの使用の詳細については、[Providing Localization in Your JavaScript Widgets](../liferay-js-generator.md)を参照してください。 デフォルト値は、そのベース名を持つプロパティファイルが存在する場合、 `features/localization/Language` です。それ以外の場合、デフォルトは `undefined`です。
 
 ```json
 {
@@ -288,7 +288,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-***create-jar.features.settings：** このオプションは非推奨です。 代わりに `create-jar.features.configuration` オプションを使用してください。
+* **create-jar.features.settings：** このオプションは非推奨です。 代わりに `create-jar.features.configuration` オプションを使用してください。
 
 ```{note}
 プラグインの設定では、可能なすべてのフェーズでプラグインを設定するためのオプションと、バベルを実行する際に使用する`.babelrc`ファイルを指定します（このファイルフォーマットの詳細については、 [Babel's documentation](https://babeljs.io/docs/usage/babelrc/) を参照してください）。

@@ -2,7 +2,7 @@
 
 フォームを共有するには2つの方法があります。
 
-［***フォーム**］ ウィジェットをサイトページに配置し、特定のフォームを表示するようにウィジェットを構成する。 これにより、[サイトページ](../../../site-building/creating-pages/understanding-pages/understanding-pages.md)にアクセスできるユーザーがフォームを表示したりフォームを送信したりできます。
+* ［**フォーム**］ ウィジェットをサイトページに配置し、特定のフォームを表示するようにウィジェットを構成する。 これにより、[サイトページ](../../../site-building/creating-pages/understanding-pages/understanding-pages.md)にアクセスできるユーザーがフォームを表示したりフォームを送信したりできます。
 * 専用フォームURLをユーザーと直接共有する。 これにより、フォームへのアクセスは、直接リンクを持っているユーザーのみに制限されます。
 
 <a name="displaying-a-form-on-a-site-page" />

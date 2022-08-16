@@ -144,7 +144,7 @@ Then, follow these steps to import the sample Fragment Set to Liferay:
     Done in 21.43s.
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
 
     ![セットが利用可能です。](./using-the-fragments-toolkit/images/01.png)
 
@@ -381,7 +381,7 @@ Liferay 7.2以下を使用している場合は、[Fragment-Specific Tags](../re
     yarn run import
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
 
 ![セットが利用可能です。](./using-the-fragments-toolkit/images/03.png)
 

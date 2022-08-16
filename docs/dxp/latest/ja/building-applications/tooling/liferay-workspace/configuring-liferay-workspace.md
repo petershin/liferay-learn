@@ -1,7 +1,7 @@
 # Liferay Workspaceの設定
 
 ```{warning}
-Liferay Workspaceは使い方が簡単で、[最初から](./what-is-liferay-workspace.md)始めることで、基本を学ぶことができます。 もしあなたが喜んで [プロジェクトの作成](./creating-code-with-liferay-workspace.md) や [コードのデプロイ](./creating-code-with-liferay-workspace.md #deploying-code-via-liferay-workspace) 、あるいは [Docker コンテナを使用] (./configuring-a-liferay-docker-container.md)しているなら、ここの情報は必要ないかもしれません。 ただし、もっと掘り下げて、ワークスペースで実行できるすべてのことについて学びたい場合は、このサイトが有益となるでしょう。 
+Liferay Workspaceは使い方が簡単で、[最初から](./what-is-liferay-workspace.md)始めることで、基本を学ぶことができます。 もしあなたが喜んで [プロジェクトの作成](./creating-code-with-liferay-workspace.md) や [コードのデプロイ](./creating-code-with-liferay-workspace.md#deploying-code-via-liferay-workspace) 、あるいは [Docker コンテナを使用](./configuring-a-liferay-docker-container.md)しているなら、ここの情報は必要ないかもしれません。 ただし、もっと掘り下げて、ワークスペースで実行できるすべてのことについて学びたい場合は、このサイトが有益となるでしょう。 
 ```
 
 取り上げるトピックは次のとおりです。

@@ -252,8 +252,8 @@ DXPコンテンツのインデックス作成を開始します。
 
 1. ［アクションをインデックスする］タブで、次のオプションをクリックします。
 
-    ****Reindex all search indexes**
-    ****Reindex all spell check indexes**
+    * **Reindex all search indexes**
+    * **Reindex all spell check indexes**
 
 コンテンツは検索エンジンにインデックス付けされます。 詳細は、 [検索機能の概要](../../../using-search/getting-started/search-overview.md) を参照してください。
 

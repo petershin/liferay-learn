@@ -12,21 +12,21 @@ Liferay 7.4 U22+ と GA22+ では、新規インストール時にプライベ�
 
 ### ページ管理から新しいページを追加する
 
-1. *サイトメニュー* (![Site Menu](../../../images/icon-menu.png)) を開き、 *サイトビルダー*を展開し、 *ページ*をクリックします。
+1. **サイトメニュー**(![Site Menu](../../../images/icon-menu.png)) を開き、 **サイトビルダー** を展開し、 **ページ** をクリックします。
 
-1. *追加* ボタン (![Add](../../../images/icon-add.png)) をクリックし、 *ページ*を選択します。
+1. **追加** ボタン (![Add](../../../images/icon-add.png)) をクリックし、 **ページ** を選択します。
 
    ![サイトにページを追加する。](./adding-a-page-to-a-site/images/01.png)
 
 1. Page Template Sets」で、「Basic」または「Global」のテンプレートを選択します。
 
-   空の [コンテントページ](../understanding-pages/understanding-pages.md#page-types) から始めるには、 *空白の* [マスターページテンプレート](../defining-headers-and-footers/master-page-templates.md)をクリックしてください。
+   空の [コンテントページ](../understanding-pages/understanding-pages.md#page-types) から始めるには、 **空白の**[マスターページテンプレート](../defining-headers-and-footers/master-page-templates.md)をクリックしてください。
 
    または、他の利用可能なテンプレートから選択します。
 
    ![ページの基本テンプレートまたはグローバルテンプレートを選択します。](./adding-a-page-to-a-site/images/02.png)
 
-1. ページの追加」ダイアログで名前を入力し、 *「ページの追加」*をクリックします。
+1. ページの追加」ダイアログで名前を入力し、 「**ページの追加**」 をクリックします。
 
 コンテンツページを作成した場合は、コンテンツページの下書きにリダイレクトされ、フラグメントやウィジェットの追加を開始することができます。
 
@@ -40,9 +40,9 @@ Widgetページを作成した場合、ページの設定オプションにリ�
 
 > 対応可能：Liferay DXP/Portal 7.3以降
 
-1. *サイトメニュー* (![Site Menu](../../../images/icon-menu.png)) を開き、 *ページツリー* (![Page Tree](../../../images/icon-page-tree.png)) をクリックします。
+1. **サイトメニュー**(![Site Menu](../../../images/icon-menu.png)) を開き、 **ページツリー**(![Page Tree](../../../images/icon-page-tree.png)) をクリックします。
 
-1. *追加* ボタン(![Add Button](../../../images/icon-add-app.png))をクリックすると、新しいページが追加されます。
+1. **追加** ボタン(![Add Button](../../../images/icon-add-app.png))をクリックすると、新しいページが追加されます。
 
    ![ページツリーメニューを使用して新規ページを追加する。](adding-a-page-to-a-site/images/03.png)
 
@@ -58,7 +58,7 @@ Widgetページを作成した場合、ページの設定オプションにリ�
 
 ### ページ管理からサブページを追加する
 
-1. *サイトメニュー* (![Site Menu](../../../images/icon-menu.png)) を開き、 *サイトビルダー*を展開し、 *ページ*をクリックします。
+1. **サイトメニュー**(![Site Menu](../../../images/icon-menu.png)) を開き、 **サイトビルダー** を展開し、 **ページ** をクリックします。
 
 1. </em> 既存のページの「 *追加」ボタン（![Add](../../../images/icon-duplicate.png)）をクリックします。</p>
 
@@ -76,9 +76,9 @@ Widgetページを作成した場合、ページの設定オプションにリ�
 
 > 対応可能：Liferay DXP/Portal 7.3以降
 
-1. *サイトメニュー* (![Site Menu](../../../images/icon-menu.png)) を開き、 *ページツリー* (![Page Tree](../../../images/icon-page-tree.png)) をクリックします。
+1. **サイトメニュー**(![Site Menu](../../../images/icon-menu.png)) を開き、 **ページツリー**(![Page Tree](../../../images/icon-page-tree.png)) をクリックします。
 
-1. 目的のページの *アクション* ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 *子ページの追加*を選択します。
+1. 目的のページの **アクション** ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 **子ページの追加** を選択します。
 
     ![ページツリーメニューを使用して子ページを追加する。](adding-a-page-to-a-site/images/05.png)
 

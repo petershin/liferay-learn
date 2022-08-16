@@ -37,11 +37,11 @@ Liferay 7.4 U22+ と GA22+ では、新規にインストールした Liferay �
 
 個人サイトのページにアクセスするには、次の手順に従います。
 
-1. 個人用メニューアイコンを開き、*［My Profile］*または *［My Dashboard］*を選択します。
+1. 個人用メニューアイコンを開き、 ［**My Profile**］ または ［**My Dashboard**］ を選択します。
    
    ![個人用メニューから個人サイトページにアクセスします。](./personal-sites/images/03.png)
 
-1. *サイトメニュー* (![Site Menu](../../images/icon-product-menu.png)) を開き、 *サイトビルダー*を展開し、 *ページ*をクリックします。
+1. **サイトメニュー**(![Site Menu](../../images/icon-product-menu.png)) を開き、 **サイトビルダー** を展開し、 **ページ** をクリックします。
 
 1. 他のサイトページと同じように管理する [サイトページ](../creating-pages/understanding-pages/understanding-pages.md).
 

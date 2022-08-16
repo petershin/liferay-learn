@@ -5,9 +5,9 @@ Liferayでは、Webインターフェイスで利用可能なアクションと�
 ## 接続する方法
 
 クライアントがWeb APIを介してLiferay DXPに接続するには、3つの異なるアプローチがあります。
-* OpenAPIの仕様に準拠した [__ヘッドレスREST API__](#headless-rest-apis)
-* GraphQLの仕様に準拠した [__GraphQL API__](#graphql-api)
-* サービスビルダによって生成された、 [__プレーンWeb/RESTサービス__](#plain-webrest-services)
+* OpenAPIの仕様に準拠した [**_** ヘッドレスREST API **_**](#headless-rest-apis)
+* GraphQLの仕様に準拠した [**_** GraphQL API **_**](#graphql-api)
+* サービスビルダによって生成された、 [**_** プレーンWeb/RESTサービス **_**](#plain-webrest-services)
 
 ### ヘッドレスREST API
 

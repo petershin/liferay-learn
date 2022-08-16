@@ -57,12 +57,12 @@ Webコンテンツを作成するには、Webコンテンツストラクチャ�
 
 これらの例では、単一のテキストフィールドとデフォルトの基本Webコンテンツストラクチャーを持つ基本Webコンテンツ記事を使用しています。 以下の手順で、Webコンテンツを作成します。
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 *［Content & Data］* &rarr; *［Web Content］*に移動します。
-1. *［Web Content］*タブで、追加 (![Add](../../../images/icon-add.png))をクリックし、 *［Basic Web Content］*を選択します。
+1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**Content & Data**］ &rarr; ［**Web Content**］ に移動します。
+1. ［**Web Content**］ タブで、追加 (![Add](../../../images/icon-add.png))をクリックし、 ［**Basic Web Content**］ を選択します。
 
    ![Webコンテンツパネルから基本Webコンテンツ記事を作成する。](./web-content-api-basics/images/01.png)
 
-1. 新しいWebコンテンツの名前として _Foo_ を入力し、 *［Publish］*をクリックします。
+1. 新しいWebコンテンツの名前として **Foo** を入力し、 ［**Publish**］ をクリックします。
 
    ![Webコンテンツ記事は、デフォルトで基本Webコンテンツストラクチャーを使用します。](./web-content-api-basics/images/02.png)
 
@@ -72,7 +72,7 @@ Webコンテンツを作成するには、Webコンテンツストラクチャ�
 
 次のcURLまたはJavaコマンドを実行すると、サイトのWebコンテンツ記事を取得できます。 `1234` をサイトのIDに置き換えてください。
 
-### StructuredContents_GET_FromSite.sh
+### StructuredContents **GET** FromSite.sh
 
 `StructuredContents_GET_FromSite.sh` cURLスクリプトは、サイトのすべてのWebコンテンツ記事を一覧表示します。 このスクリプトは、サイトIDを唯一のパラメーターとして、`GET` HTTPメソッドで`StructuredContent`サービスを使用します。
 
@@ -160,7 +160,7 @@ JSON出力で以下の情報を確認します。
 
    ![JSONキープロパティは、ユーザーインターフェースにおける構造化コンテンツ識別子に相当します。](./web-content-api-basics/images/03.png)
 
-### StructuredContents_GET_FromSite.java
+### StructuredContents **GET** FromSite.java
 
 `StructuredContents_GET_FromSite.java` クラスは、構造化コンテンツ関連サービスを呼び出してWebコンテンツの記事一覧を取得します。
 
@@ -195,7 +195,7 @@ JSON出力で以下の情報を確認します。
 ## Webコンテンツ記事の取得
 [前の手順](#get-web-content-articles-from-site) のスクリプトは、サイトのすべてのWebコンテンツ記事を返します。 特定の記事を取得するには、 `StructuredContent_GET_ById.[java|sh]` スクリプトを使用します。 `1234` をWebコンテンツ記事のIDに置き換えてください。
 
-### StructuredContent_GET_ById.sh
+### StructuredContent **GET** ById.sh
 
 コマンド:
 
@@ -209,7 +209,7 @@ JSON出力で以下の情報を確認します。
    :language: bash
 ```
 
-### StructuredContent_GET_ById.java
+### StructuredContent **GET** ById.java
 
 コマンド: 
 
@@ -235,7 +235,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_GET_ById
 デフォルトの基本ウェブコンテンツストラクチャーは、このエンドポイントを使用すると表示されません。
 ```
 
-### ContentStructures_GET_FromSite.sh
+### ContentStructures **GET** FromSite.sh
 
 コマンド:
 
@@ -249,7 +249,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_GET_ById
    :language: bash
 ```
 
-### ContentStructures_GET_FromSite.java
+### ContentStructures **GET** FromSite.java
 
 コマンド:
 
@@ -273,7 +273,7 @@ java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSite
 
 `ContentStructure_GET_ById.[java|sh]` スクリプトは、Webコンテンツストラクチャーの説明を返します。
 
-### ContentStructure_GET_ById.sh
+### ContentStructure **GET** ById.sh
 
 | メソッド  | サービス               | エンドポイント                                         |
 |:----- |:------------------ |:----------------------------------------------- |
@@ -315,7 +315,7 @@ java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSite
 }
 ```
 
-### ContentStructure_GET_ById.java
+### ContentStructure **GET** ById.java
 
 コマンド: 
 
@@ -337,7 +337,7 @@ java -classpath .:* -DcontentStructureId=1234 ContentStructure_GET_ById
 
 `StructuredContent_POST_ToSite[java|sh]` スクリプトを使って、新規Webコンテンツ記事を作成します。 `1234` をWebコンテンツストラクチャーIDに置き換えてください。 `5678` をサイトのIDに置き換えてください。
 
-### StructuredContent_POST_ToSite.sh
+### StructuredContent **POST** ToSite.sh
 
 `StructuredContent_POST_ToSite.sh`cURLスクリプトサンプルは、`POST`HTTPメソッドとデフォルトのWebコンテンツストラクチャーを使って新規Webコンテンツの記事を作成します。 このスクリプトでは、 [サイトID](#identifying-the-site-id) とストラクチャー`ID`をパラメーターとして使用しています。
 
@@ -358,7 +358,7 @@ cURLスクリプトのパラメーター：
 | $2       | `contentStructureId` |
 
 
-Liferay DXPで新規Webコンテンツの記事を見つけるには、サイトメニュー (![Site menu](../../../images/icon-menu.png))を開いて、*［コンテンツ & データ］* &rarr; *［Webコンテンツ］*に移動します。
+Liferay DXPで新規Webコンテンツの記事を見つけるには、サイトメニュー (![Site menu](../../../images/icon-menu.png))を開いて、 ［**コンテンツ & データ**］ &rarr; ［**Webコンテンツ**］ に移動します。
 
 以下は、このスクリプトが生成するJSON出力の一部です。 このスクリプトは、ストラクチャー` contentField` `content`を参照として使用し、シンプルな `<p>Foo</p>` HTMLストリングを投稿します。
 
@@ -413,7 +413,7 @@ Liferay DXPで新規Webコンテンツの記事を見つけるには、サイト
 }
 ```
 
-### StructuredContent_POST_ToSite.java
+### StructuredContent **POST** ToSite.java
 
 `StructuredContent_POST_ToSite.java`クラスは、サービスに関連した構造化コンテンツを呼び出して、Webコンテンツ記事を追加します。
 
@@ -437,7 +437,7 @@ java -classpath .:* -DcontentStructureId=1234 -DsiteId=5678 StructuredContent_PO
 
 `StructuredContent`サービスで`PATCH`メソッドを使用して、Webコンテンツ記事を更新します。 `StructuredContent_PATCH_ById.[java|sh]`スクリプトは構造化コンテンツ識別子 `id`を使用して、記事のコンテンツを'Foo'から'Bar'に更新します。
 
-### StructuredContent_PATCH_ById.sh
+### StructuredContent **PATCH** ById.sh
 
 コマンド：
 
@@ -451,7 +451,7 @@ java -classpath .:* -DcontentStructureId=1234 -DsiteId=5678 StructuredContent_PO
    :language: bash
 ```
 
-### StructuredContent_PATCH_ById.java
+### StructuredContent **PATCH** ById.java
 
 コマンド： 
 
@@ -472,7 +472,7 @@ java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 Structu
 `StructuredContent`サービスと共に`PUT`HTTPメソッドを使って、オリジナルのWebコンテンツ情報を置き換えることができます。 `StructuredContent_PUT_ById.[java|sh]`スクリプトはWebコンテンツやストラクチャー識別子を使用して、記事のコンテンツを`Bar`から`Goo`へ更新します。
 
 
-### StructuredContent_PUT_ById.sh
+### StructuredContent **PUT** ById.sh
 
 コマンド：
 
@@ -486,7 +486,7 @@ java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 Structu
    :language: bash
 ```
 
-### StructuredContent_PUT_ById.java
+### StructuredContent **PUT** ById.java
 
 コマンド:
 
@@ -510,7 +510,7 @@ java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 Structu
 REST APIを使用してWebコンテンツを削除すると、[Liferay DXPゴミ箱](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md) を使用せずに、永久に削除されます。
 ```
 
-### StructuredContent_DELETE_ById.sh
+### StructuredContent **DELETE** ById.sh
 
 コマンド:
 
@@ -524,7 +524,7 @@ REST APIを使用してWebコンテンツを削除すると、[Liferay DXPゴミ
    :language: bash
 ```
 
-### StructuredContent_DELETE_ById.java
+### StructuredContent **DELETE** ById.java
 
 コマンド
 

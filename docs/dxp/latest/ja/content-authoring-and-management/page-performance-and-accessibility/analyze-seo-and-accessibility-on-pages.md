@@ -53,8 +53,8 @@ SEOの問題：
 ### 現在のサイトにページ監査ツールを構成する
 
 1. サイトメニュー（![Site Menu](../../images/icon-product-menu-open.png)）を選択し、［Configuration］ &rarr; ［Site Settings］に移動します。
-1. ［コンテンツとデータ］セクションで、*［Pages］*をクリックします。
-1. ［Site Scope ］セクションで、*［Google PageSpeed Insights］*をクリックします。
+1. ［コンテンツとデータ］セクションで、 ［**Pages**］ をクリックします。
+1. ［Site Scope ］セクションで、 ［**Google PageSpeed Insights**］ をクリックします。
 
    ![現在のサイトスコープでGoogle PageSpeed Insights設定を使用して、ページ監査ツールを構成します。](./analyze-seo-and-accessibility-on-pages/images/02.png)
 
@@ -65,25 +65,25 @@ SEOの問題：
 1. ［Enable Google PageSpeed Insights］チェックボックスがオンになっていることを確認します。
 1. Google PageSpeed Insights APIキーをコピーして、このキーを［API Key］フィールドの下に貼り付けます。
 1. PageSpeed Insightsテスト用の優先戦略を選択します。 選択した戦略は、すべてのページ監査に適用されます。
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 ### Liferay DXPシステムにページ監査ツールを構成する
 
 1. Liferay DXPのグローバルメニュー（![Global Menu](../../images/icon-applications-menu.png)）をクリックします。
-1. *［コントロールパネル］*タブを選択し、［設定］の下で、*［System Settings］*をクリックします。
-1. ［コンテンツとデータ］セクションで、*［Pages］*をクリックします。
-1. 目的のスコープ（システム、仮想インスタンス、またはサイト）の下で、*［Google PageSpeed Insights］*をクリックします。
-1. *［Enable Google PageSpeed Insights］*チェックボックスをオンまたはオフにして、ページ監査ツールを有効または無効にします。
+1. ［**コントロールパネル**］ タブを選択し、［設定］の下で、 ［**System Settings**］ をクリックします。
+1. ［コンテンツとデータ］セクションで、 ［**Pages**］ をクリックします。
+1. 目的のスコープ（システム、仮想インスタンス、またはサイト）の下で、 ［**Google PageSpeed Insights**］ をクリックします。
+1. ［**Enable Google PageSpeed Insights**］ チェックボックスをオンまたはオフにして、ページ監査ツールを有効または無効にします。
 
    ![システム、仮想インスタンス、またはサイトスコープでページ監査ツール設定を構成します](./analyze-seo-and-accessibility-on-pages/images/03.png)
 
-1. *［Update］*をクリックします。
+1. ［**Update**］ をクリックします。
 
 ページ監査ツールをグローバルに無効にするには、システムスコープで［Enable Google PageSpeed Insights］オプションをオフにします。
 
 ## ページ監査ツールへのアクセスとページ監査の実行
 
-1. 監査するページにアクセスし、アプリケーションバーの*［ページ監査］* （![Page Audit](../../images/icon-information.png)）ボタンをクリックします。
+1. 監査するページにアクセスし、アプリケーションバーの ［**ページ監査**］（![Page Audit](../../images/icon-information.png)）ボタンをクリックします。
 
    ![［ページ監査］ボタンをクリックして、新しいページ監査を開始します。](./analyze-seo-and-accessibility-on-pages/images/05.png)
 
@@ -92,7 +92,7 @@ SEOの問題：
    ```
 
 1. ［ページ監査］パネルには、［ページ監査の開始］ボタンが表示されます。
-1. *［ページ監査の開始］*をクリックして、ページをGoogle PageSpeed Insightsに接続し、監査プロセスを開始します。
+1. ［**ページ監査の開始**］ をクリックして、ページをGoogle PageSpeed Insightsに接続し、監査プロセスを開始します。
 
 テストを実行した後、ページを開いてページ監査（![Page Audit](../../images/icon-information.png)）ボタンをクリックすると、いつでも最後の監査結果を確認できます。
 
@@ -115,7 +115,7 @@ SEOの問題：
 - ページで以前に監査テストを実行したことがある場合、ページ監査ツールは最後のテストの実行時間とテスト結果を表示します。 ページ監査の結果を更新するには、再開する（![relaunch](../../images/icon-restore2.png)）アイコン（A）をクリックして新しいテストを実行します。
 - ページ監査ツールは、特定の時間にSEOとアクセシビリティの問題についてページを分析します。 ページまたはページのコンテンツが変更された場合（たとえば、動的コンテンツを表示した場合）、テスト結果が異なる場合があります。
 - ページ監査は、[デフォルトのエクスペリエンス](../../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md)の結果のみを表示します。
-- ページがローカライズされている場合は、言語ごとにページ監査テストを実行できます。 テストを実行する前に、ページ監査ツールの_［フラグ］_ボタンをクリックして言語を選択してください。
+- ページがローカライズされている場合は、言語ごとにページ監査テストを実行できます。 テストを実行する前に、ページ監査ツールの ［**フラグ**］ ボタンをクリックして言語を選択してください。
 
   ![ページ監査ツールのフラグボタンを使用して、監査するページ言語を変更できます。](./analyze-seo-and-accessibility-on-pages/images/06.gif)
 
@@ -129,7 +129,7 @@ SEOの問題：
 
 | エラー             | 説明                                                                                                                                                                                                                                                 |
 |:--------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| このAPIキーは無効です    | Google PageSpeed Insights APIキーが無効です。 エラーメッセージの*［APIキーを設定］*ボタンをクリックして、有効なAPIキーを構成します。 </br>APIキーを取得するには、Googleドキュメンテーションの [Get Started with the PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started) を参照してください。 |
+| このAPIキーは無効です    | Google PageSpeed Insights APIキーが無効です。 エラーメッセージの ［**APIキーを設定**］ ボタンをクリックして、有効なAPIキーを構成します。 </br>APIキーを取得するには、Googleドキュメンテーションの [Get Started with the PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started) を参照してください。 |
 | このページは監査できません   | 監査しようとしているページは、一般に公開されていません。                                                                                                                                                                                                                       |
 | 予期しないエラーが発生しました | これは一般的なエラーです。 ページ監査ツールが正しく構成されていること、および監査するページにインターネットからアクセスできることを確認してください。                                                                                                                                                                        |
 

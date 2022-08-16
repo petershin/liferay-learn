@@ -4,8 +4,8 @@
 
 この例では、以下のフィールドを持つ登録フォームを想定しています。
 
-***Are you taking any medications?** : ［**Yes**］ と ［**No**］ の2つのオプションを持つ必須の単一選択フィールドです。
-***List all medications** : テキストフィールド要素です。
+* **Are you taking any medications?** : ［**Yes**］ と ［**No**］ の2つのオプションを持つ必須の単一選択フィールドです。
+* **List all medications** : テキストフィールド要素です。
 
 有効/無効ルールを設定します。
 

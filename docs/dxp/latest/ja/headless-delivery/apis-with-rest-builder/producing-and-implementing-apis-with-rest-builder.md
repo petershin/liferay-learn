@@ -37,7 +37,7 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
     STARTED com.acme.headless.r3b2.impl_1.0.0
     ```
 
-1. DXPインスタンスにログインし、_グローバルメニュー_（![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; _［コントロールパネル］_ &rarr; _［Gogoシェル］_ に移動します。
+1. DXPインスタンスにログインし、 **グローバルメニュー**（![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; ［**コントロールパネル**］ &rarr; ［**Gogoシェル**］ に移動します。
 
 1. Gogoシェルプロンプトで、次のコマンドを入力します。
 

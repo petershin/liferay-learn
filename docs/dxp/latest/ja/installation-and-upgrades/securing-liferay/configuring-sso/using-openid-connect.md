@@ -26,7 +26,7 @@ OpenID Connectを使用するには、まずプロバイダーにクライアン
 
 ## OpenID Connectプロバイダー接続の構成
 
-［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**System Scope**］ の下の ***［OpenID Connect Provider**］*を選択します。
+［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**System Scope**］ の下の * ［**OpenID Connect Provider**］* を選択します。
 
 ![［System Settings］メニューでOpenID構成を検索する。](using-openid-connect/images/01.png)
 
@@ -65,7 +65,7 @@ com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConn
 
 ## OpenID Connect認証の有効化
 
-1. ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**Virtual Instance Scope**］ の下の ***［OpenId Connect**］*を選択します。
+1. ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**Virtual Instance Scope**］ の下の *［**OpenId Connect**］* を選択します。
 
     ![インスタンス設定でOpenID Connect認証を有効にする。](using-openid-connect/images/02.png)
 

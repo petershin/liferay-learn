@@ -37,7 +37,7 @@ gulp upgrade
 sure you wish to start the upgrade process?
 ```
 
-**Liferay 7.4**にアップグレードする場合、Bootstrap 3から4への互換性レイヤーを追加するかどうかを尋ねる別のプロンプトが表示されます。 Bootstrap 3との互換性が必要なテーマの場合は、「y」（または「yes」）を入力し、確認のための警告が表示されたら再度入力してください。 Bootstrap 3との互換性が必要ない場合は、「n」（または「no」）と入力してください。
+**Liferay 7.4** にアップグレードする場合、Bootstrap 3から4への互換性レイヤーを追加するかどうかを尋ねる別のプロンプトが表示されます。 Bootstrap 3との互換性が必要なテーマの場合は、「y」（または「yes」）を入力し、確認のための警告が表示されたら再度入力してください。 Bootstrap 3との互換性が必要ない場合は、「n」（または「no」）と入力してください。
 
 ```
 ? Would you like to add the Bootstrap 3 to 4 compatibility layer? Yes

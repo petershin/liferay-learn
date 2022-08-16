@@ -28,9 +28,9 @@ http://localhost:8080/o/api
 
 APIs are divided into several categories. This example uses the `BlogPosting` service to retrieve blog posts from the Blogs widget, but you can use this procedure with any of the published services. 
 
-1. Select the *Headless Delivery* category. This category contains the `BlogPosting` service. You can use the filter to search for services. 
+1. Select the **Headless Delivery** category. This category contains the `BlogPosting` service. You can use the filter to search for services. 
 
-1. Click the *Show Schemas* button, and on the right side of the screen a list of all the schemas in this category appears. 
+1. Click the **Show Schemas** button, and on the right side of the screen a list of all the schemas in this category appears. 
 
 1. Keep a browser tab open to the schema browser; when you want to PUT a `BlogPosting`, you'll need its schema. 
 
@@ -40,8 +40,8 @@ APIs are divided into several categories. This example uses the `BlogPosting` se
 
 Now you must find the default Site ID:
 
-1. Open the Site menu (![Site menu](../../images/icon-menu.png)) and go to *Configuration* &rarr; *Site Settings*.
-1. Under the Platform section, click *Site Configuration*. For Liferay DXP versions 7.3 and earlier, click the *General* tab.
+1. Open the Site menu (![Site menu](../../images/icon-menu.png)) and go to **Configuration** &rarr; **Site Settings** .
+1. Under the Platform section, click **Site Configuration** . For Liferay DXP versions 7.3 and earlier, click the **General** tab.
 1. サイトIDの下でサイト識別子を見つけます。
 
    ![Identify the Site Id under the Site Settings and Site Configuration option.](./consuming-rest-services/images/03.png)

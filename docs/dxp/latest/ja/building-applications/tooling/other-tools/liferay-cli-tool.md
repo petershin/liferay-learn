@@ -128,8 +128,8 @@ liferay adapt
 
 CLIツールは、プロジェクトの依存関係から検出されたフレームワークに基づいて、プロジェクトを適応させます。 プロジェクトの `package.json` ファイルから、これらの特定の依存関係 ( `dependency` または `devDependency`としてリストアップされています) を探します。
 
-***React用** : `react-scripts`
+* **React用** : `react-scripts`
 
-***Angular用** : `@angular/cli`
+* **Angular用** : `@angular/cli`
 
-***Vue.js用** : `@vue/cli-service`
+* **Vue.js用** : `@vue/cli-service`

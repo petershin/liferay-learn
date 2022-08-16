@@ -10,11 +10,11 @@
 
 サイトテンプレートの伝搬を設定するには、次の手順に従います。
 
-1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *コントロールパネル* タブを開き、 *システム設定*をクリックします。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** タブを開き、 **システム設定** をクリックします。
 
-1. *Infrastructure* settings にアクセスし、サイドメニューの *Site Templates* をクリックします。
+1. **Infrastructure** settings にアクセスし、サイドメニューの **Site Templates** をクリックします。
 
-1. Check *Trigger Propagation*.
+1. Check **Trigger Propagation** .
 
    チェックを外すと、ユーザーが最初にアクセスしたときに、サイトに対して個別に変更が反映されます。
 
@@ -22,7 +22,7 @@
 
    ![トリガー・プロパゲーションを確認する](./configuring-site-template-propagation/images/01.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 サイトテンプレートで伝搬が無効になっている場合、伝搬を有効にすると、接続されているサイトへの変更が同時に伝搬されます。 テンプレートへの伝搬は有効なままですが、それ以降の変更は、ユーザーが最初にアクセスしたときに、サイトに個別に伝搬されます。
 

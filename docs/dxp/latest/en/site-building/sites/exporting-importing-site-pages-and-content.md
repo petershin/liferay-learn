@@ -92,6 +92,20 @@ Instead of manually creating an export process every time you export Site Pages 
 
 You can now select your template when [creating a new export process](#exporting-site-pages-and-content).
 
+## Configuring Export/Import Processes
+
+Liferay provides setting for configuring export/import processes as well as Staging specific features. These settings affect Staging, as well as Site Template propagation.
+
+| Setting | Description |
+| :--- | :--- |
+| Include All Asset Links | If checked, all asset links are included from the site within the given date range. If unchecked, only asset links that are connected to the content are included. |
+| Replicate Individual Deletions by Default | If checked, delete operations performed for content types are always replicated in the target site by default. |
+| Publish Permissions by Default | If checked, permissions assigned for exported pages and individual portlet windows are always included by default. |
+| Validate File Entries | If checked, publishing or importing content types with text causes Liferay to check the content for links to documents and ensure they point to valid documents. |
+| Validate Journal Feed References | If checked, publishing or importing content types with text causes Liferay to check the content for references to web content feeds and ensure they point to valid feeds. |
+| Validate Layout References | If checked, publishing or importing content types with text causes Liferay to check the content for links to one of the portal's virtual hosts and ensure they point to a valid Liferay page. Uncheck this if your virtual host has pages not in Liferay. |
+| Validate Missing References | If checked, publishing and import processes cause Liferay to check for missing references. If unchecked, missing reference validation is skipped. As a result, references without existing targets can be published or imported to the target site. |
+
 ## Additional Information
 
 * [Adding a Site](./adding-a-site.md)

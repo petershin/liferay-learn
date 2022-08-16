@@ -81,11 +81,11 @@ The Audience report uses charts to present information about the audience intera
 * Of the users in Segments, what are the top 15 segments?
 * Here are the charts in the Audience report:
 
-**Visitors:** A donut chart that presents the percentage of total unique visitors who are known or anonymous. The center of the chart shows the total number of unique visitors. Tooltips on each chart section show the number of users for that section (e.g, the number of known or anonymous users).
+**Visitors:** A donut chart presents the percentage of total unique visitors who are known or anonymous. The center of the chart shows the total number of unique visitors. Tooltips on each chart section show the number of users for that section (e.g, the number of known or anonymous users).
 
-**Segmented Viewers:** A donut chart that presents the percentage of known individuals who belong or do not belong to one or more Analytics Cloud Segments. The center of the chart shows the total number of known individuals. Tooltips on each chart section show the number of users for that section (e.g, the number of users belonging to one or more Segments). 
+**Segmented Viewers:** A donut chart presents the percentage of known individuals who belong or do not belong to one or more Analytics Cloud Segments. The center of the chart shows the total number of known individuals. Tooltips on each chart section show the number of users for that section (e.g, the number of users belonging to one or more Segments). 
 
-**Segments at the Time of View:** A bar chart that shows the percentage of known individuals that comprise each Segment. The chart shows a bar for each of the top five Segments, and then aggregates the remaining Segments into the last bar. A tooltip on the last bar shows the values for each of the remaining Segments.
+**Segments at the Time of View:** A bar chart shows the percentage of known individuals that comprise each Segment. The chart shows a bar for each of the top five Segments, and then aggregates the remaining Segments into the last bar. A tooltip on the last bar shows the values for each of the remaining Segments.
 
 ![Quickly identify and segment users of your site.](pages/images/02.png)
 

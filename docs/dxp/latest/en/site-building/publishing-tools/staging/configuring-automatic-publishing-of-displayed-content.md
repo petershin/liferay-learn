@@ -12,9 +12,9 @@ Follow these steps to configure this Staging behavior:
 
 1. Check or uncheck *Publish Displayed Content by Default*.
 
-   * When enabled, displayed content is republished for the following widgets, regardless of the publishing process's configuration: Dynamic Data Lists Display, Form, Web Content Display, and Wiki Display.
+   When enabled, displayed content is republished for the following widgets, regardless of the publishing process's configuration: Dynamic Data Lists Display, Form, Web Content Display, and Wiki Display.
 
-   * When disabled, only content included in the publishing process's configuration is published.
+   When disabled, only content included in the publishing process's configuration is published.
 
    ```{tip}
    Keep in mind that always republishing displayed content to Live can be unnecessary and slow down publishing.

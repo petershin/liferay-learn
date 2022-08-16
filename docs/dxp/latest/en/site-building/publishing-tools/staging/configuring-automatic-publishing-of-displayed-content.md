@@ -24,6 +24,26 @@ Follow these steps to configure this Staging behavior:
 
 ![Check or uncheck Publish Displayed Content by Default.](./configuring-automatic-publishing-of-displayed-content/images/01.png)
 
+## Configuring Publishing for Asset Publisher
+
+By default, Asset Publisher does not export displayed content to Live automatically. This is because the widget's content is usually available in Live. Liferay provides additional configurations for content items displayed using the Asset Publisher widget.
+
+Follow these steps to enable dynamic or manual export for the Asset Publisher widget:
+
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel*, and go to *System Settings* &rarr; *Assets*.
+
+1. Click *Asset Publisher* under System Scope in the left menu.
+
+1. Check/Uncheck *Enable Dynamic Export*.
+
+   When enabled, Asset Publisher exports include all related assets within the *Dynamic Export Limit*.
+
+1. Check *Enable Manual Export*.
+
+   When enabled, users can manually select which related assets to include in the export.
+
+1. Click *Save*.
+
 ## Additional Information
 
 * [Staging](../staging.md)

@@ -25,10 +25,12 @@ To access the Content Info sidebar, click the *Actions Menu* (![Action Menu](../
 
 This tool is the graphical area at the top of the Content Dashboard page. The chart represents the total number of assets for a given combination of vocabularies and categories,  including the *Global* scope and all *Sites & Asset Libraries* in the instance. This chart takes into account:
 
-* [Web Content Articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md) and [Documents and Media](../documents-and-media/documents-and-media-overview.md) across all Sites and Asset Libraries.
+* [Web Content Articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents and Media](../documents-and-media/documents-and-media-overview.md) and [Blog Entries](../blogs/adding-blog-entries.md) across all Sites and Asset Libraries.
 
     ```{note}
-    Documents and Media are available in the Content Dashboard starting with Liferay 7.4+.
+    Documents and Media are available in the Content Dashboard starting with Liferay CE/DXP 7.4+. 
+    
+    Blog Entries are available in the Content Dashboard starting from Liferay DXP 7.4 U23+/GA23+.
     ```
 
 * Content you can access.
@@ -94,7 +96,7 @@ In the list of contents, you can find the following columns:
 | :--- | :--- |
 | Title | Article title(*). |
 | Author | Author's name. |
-| Type | Specifies a [Web Content Article](../web-content/web-content-articles/adding-a-basic-web-content-article.md) or [Documents](../documents-and-media/documents-and-media-overview.md) asset type (available in Liferay DXP 7.4+.) |
+| Type | Specifies a [Web Content Article](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents](../documents-and-media/documents-and-media-overview.md) asset type (available in Liferay DXP 7.4+.) or [Blog Entry](../blogs/adding-blog-entries.md) asset type (available in Liferay DXP 7.4 U23+/GA23+) |
 | Subtype | Content [Subcategory](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). Includes Basic Documents and External Video Shortcuts |
 | Site or Asset Library | Location of the article in the Liferay DXP instance. |
 | Status | Article workflow status. Articles with more than one version in different statuses show all than statuses. |
@@ -154,11 +156,11 @@ From the *Filter and Order* drop-down menu, you can choose these options:
 | :--- | :--- |
 | Categories | Filters using one or more [Categories](../tags-and-categories/organizing-content-with-categories-and-tags.md) from your Vocabularies. |
 | Site or Asset Library | Selects the assets' Site or Asset Library.  |
-| Type | Choose the Web Content Articles or Documents to include. From here, you can select</br><ul><li>**Web Content Articles**: Includes all the [Basic Web Content Articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md) and the custom [Structures](../web-content/web-content-structures/understanding-web-content-structures.md) from all the Sites.</li><li>**Documents**: Includes the out of the box Document types and all the [custom Document types](../documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md).</li></ul> |
+| Type | Choose the Web Content Articles, Documents or Blog Entries to include. From here, you can select</br><ul><li>**Web Content Articles**: Includes all the [Basic Web Content Articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md) and the custom [Structures](../web-content/web-content-structures/understanding-web-content-structures.md) from all the Sites.</li><li>**Documents**: Includes the out of the box Document types and all the [custom Document types](../documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md).</li><li>**Blog Entries**: Includes all the Blog Entries from all the Sites.</li></ul> |
 | Extension | Provides a way to filter by the Document or Media type. You can choose from the following types:</br><ul><li>`audio`</li><li>`code`</li><li>`compressed`</li><li>`image`</li><li>`presentation`</li><li>`spreadsheet`</li><li>`text`</li><li>`vectorial`</li><li>`video`</li><li>`other`</li></ul> |
 | Tags | Selects from the list of [keywords](../tags-and-categories/tagging-content-and-managing-tags.md) you use to organize your assets. |
-| Filter by Author | Filters by the Web Content or Document's author. |
-| Filter by Status | Filters by the Web Content or Document's [workflow status](../../process-automation/workflow/introduction-to-workflow.md). |
+| Filter by Author | Filters by the author of the Web Content, Document, or Blog Entry. |
+| Filter by Status | Filters by the [workflow status](../../process-automation/workflow/introduction-to-workflow.md) of the Web Content, Document, or Blog Entry. |
 
 When using the Type or Extension filter, you can define your search criteria from a new Filter dialog. Consider this information:
 

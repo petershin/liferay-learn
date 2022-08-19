@@ -4,7 +4,7 @@ Site Settings
 .. toctree::
    :maxdepth: 3
 
-   site-settings/site_users.rst
+   site-settings/site-users.md
    site-settings/managing_site_urls.rst
    site-settings/site_content_configurations.rst
    site-settings/site-localization.md

@@ -2,33 +2,33 @@
 
 {bdg-secondary}`Available 7.4 DXP U23+ or 7.4 GA23+`
 
-The *Advanced* Settings tab for Page Fragments provides fields for more complex or technical configurations. For example, advanced settings may alter the way web browsers handle the Fragment's HTML.
+The *Advanced* Settings tab for page fragments provides fields for more complex or technical configurations. For example, advanced settings may alter the way web browsers handle the fragment's HTML.
 
-Follow these steps to access a Fragment's Advanced Settings menu:
+Follow these steps to access a fragment's Advanced Settings menu:
 
-1. Begin editing a Page or Template that supports Fragments.
+1. Begin editing a page or template that supports fragments.
 
 1. Open the *Browser* panel (![Browser](../../../../../images/icon-browser.png)) in the sidebar menu and select the desired *Fragment* under Page Elements.
 
-   Alternatively, you can click on the desired Fragment in the Page or Template to open this menu.
+   Alternatively, you can click on the desired fragment in the page or template to open this menu.
 
 1. Click the *Advanced* tab in the Page Elements side menu.
 
-![Access a Fragment's Advanced settings in the Browser panel of the editing sidebar menu.](./advanced-settings-reference/images/01.png)
+![Access a fragment's Advanced settings in the Browser panel of the editing sidebar menu.](./advanced-settings-reference/images/01.png)
 
 ## HTML Tag
 
-Several HTML tags exist that allow web scrapers, browsers, and site renderers to more easily find and retrieve what kind of content is on a page. *Container* Page Fragments provide the option to choose which tag is generated for the Container Fragment's HTML element on the page.
+Several HTML tags exist that allow web scrapers, browsers, and site renderers to more easily find and retrieve what kind of content is on a page. *Container* page fragments provide the option to choose which tag is generated for the container fragment's HTML element on the page.
 
 | Field | Description |
 | :--- | :--- |
-| HTML Tag | Choose the HTML tag generated for the Fragment (Container Fragments only). The available options are `div` (default), `header`, `nav`, `section`, `article`, `main`, `aside`, and `footer`. |
+| HTML Tag | Choose the HTML tag generated for the fragment (container fragments only). The available options are `div` (default), `header`, `nav`, `section`, `article`, `main`, `aside`, and `footer`. |
 
 ```{note}
-The tag chosen only applies to the Container Fragment itself, not to any other Fragments or content nested within it.
+The tag chosen only applies to the container fragment itself, not to any other fragments or content nested within it.
 ```
 
-![You can choose which HTML tag is used for Container Fragments in the Advanced Settings tab.](./advanced-settings-reference/images/02.png)
+![You can choose which HTML tag is used for container fragments in the Advanced Settings tab.](./advanced-settings-reference/images/02.png)
 
 ## Custom CSS
 
@@ -64,9 +64,9 @@ You can also use variables in your custom CSS that come from the [Style Book](..
 
 ## Hiding Content from Search Results
 
-You may want to hide a Page Fragment from search results on your Site. This configuration especially helps to prevent irrelevant or repeated search results if a Fragment is commonly reused on many pages, or otherwise is not relevant for content searches.
+You may want to hide a page fragment from search results on your site. This configuration especially helps to prevent irrelevant or repeated search results if a fragment is commonly reused on many pages, or otherwise is not relevant for content searches.
 
-![Improve the search results on your Site by hiding irrelevant or commonly reused Fragments.](./advanced-settings-reference/images/05.png)
+![Improve the search results on your site by hiding irrelevant or commonly reused fragments.](./advanced-settings-reference/images/05.png)
 
 ## Additional Information
 

@@ -30,11 +30,43 @@ The tag chosen only applies to the Container Fragment itself, not to any other F
 
 ![You can choose which HTML tag is used for Container Fragments in the Advanced Settings tab.](./advanced-settings-reference/images/02.png)
 
+## Custom CSS
+
+{bdg-secondary}`Available 7.4 DXP U34+ or 7.4 GA34+`
+
+You can add custom CSS fo fragments under *CSS* in the Advanced configuration tab, in the *Custom CSS* text box. Using this field requires the UPDATE permission for fragments.
+
+By default, the Custom CSS text box contains this placeholder CSS:
+
+```css
+.[$FRAGMENT_CLASS$] {
+
+}
+```
+
+`[$FRAGMENT_CLASS$]` is a CSS class variable that represents the unique class name of the fragment you are configuring. Use this to apply CSS specifically to that fragment. When the page renders, this is replaced with the fragment's actual class name on the back-end (like `lfr-layout-structure-item-01d752e4-32e3-ed4a-9cd6-fcaf483d0c34`).
+
+```{tip}
+Click the *Expand* icon above the text box to open a modal on the screen, to give you more space to edit the custom CSS for your fragment.
+```
+
+Use the *CSS Classes* text box above to add classes for use in your custom CSS (separating them with a space, comma, or line break). Classes that you add in this field can be reused for any other fragments on the same page. Suggestions for classes that you have added to other fragments on the same page appear while you type.
+
+![Entering custom CSS classes in this field makes them appear as suggestions in the advanced settings for other fragments on the same page.](./advanced-settings-reference/images/03.png)
+
+```{note}
+Only CSS classes that you have added yourself appear as suggestions in the CSS Classes text box. Pre-existing classes or variables (such as `[$FRAGMENT_CLASS$]`) do not appear, and do not need to be added to this field.
+```
+
+You can also use variables in your custom CSS that come from the [Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) you are currently using. This example shows using the *Info* color from a Style Book to set a fragment's background color:
+
+![You can use variables from your Style Book to fine-tune the CSS for specific fragments.](./advanced-settings-reference/images/04.png)
+
 ## Hiding Content from Search Results
 
 You may want to hide a Page Fragment from search results on your Site. This configuration especially helps to prevent irrelevant or repeated search results if a Fragment is commonly reused on many pages, or otherwise is not relevant for content searches.
 
-![Improve the search results on your Site by hiding irrelevant or commonly reused Fragments.](./advanced-settings-reference/images/03.png)
+![Improve the search results on your Site by hiding irrelevant or commonly reused Fragments.](./advanced-settings-reference/images/05.png)
 
 ## Additional Information
 

@@ -1,6 +1,6 @@
 # Using Job Scheduler
 
-[Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a flexible framework built on top of Liferay's scheduler engine that you can use to run and schedule any type of logic. This framework uses the `DispatchTaskExecutor` interface to define templates with custom logic that you can use to [create tasks](#adding-a-new-job-scheduler-task) via the Control Panel. Once a Job Scheduler task is created, you can configure its behavior and execution [schedule](#scheduling-the-job-scheduler-task).
+[Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a flexible framework built on top of Liferay's scheduler engine that you can use to run and schedule any type of logic. This framework uses the `DispatchTaskExecutor` interface to define templates with custom logic that you can use to [create tasks](#adding-a-new-job-scheduler-task) via the Control Panel. You can configure its behavior and execution [schedule](#scheduling-the-job-scheduler-task) after creating the Job Scheduler task.
 
 ![Add and manage Job Scheduler tasks via the Job Scheduler page.](./using-job-scheduler/images/01.png)
 
@@ -8,7 +8,7 @@ Job Scheduler provides a convenient UI for viewing and managing all instance [jo
 
 ```{note}
 When deciding whether to use Job Scheduler or `MessageListener` to schedule instance jobs, consider the following Job Scheduler benefits.
-Job Scheduler tasks are more flexible than jobs scheduled using `MessageListener`, since changes can be applied to Job Scheduler tasks in runtime through the Job Scheduler UI. Changes to `MessageListener` jobs must be hardcoded and redeployed. 
+Job Scheduler tasks are more flexible than jobs scheduled using `MessageListener`, because you can make changes to the tasks in runtime through the Job Scheduler UI. Changes to `MessageListener` jobs must be hardcoded and redeployed. 
 The Job Scheduler UI also provides a more complete overview of each Job Scheduler task's execution properties (e.g., cron expression, start/end date, cluster mode) and execution history. This information is not provided in the UI for `MessageListener` jobs.
 ```
 
@@ -32,7 +32,7 @@ The Job Scheduler UI also provides a more complete overview of each Job Schedule
 
 1. (Optional) Use the settings editor to define properties for the Job Scheduler task that are injected at runtime.
 
-   These settings can be used to fine tune execution flow and more.
+   You can use these settings to fine tune execution flow and more.
 
    All settings added in this way are soft-coded, so you can configure your Job Scheduler tasks without having to edit and redeploy the Executor's code.
 
@@ -50,7 +50,7 @@ All Job Scheduler tasks added to an instance appear on the Job Scheduler page. F
 
 ## Scheduling the Job Scheduler Task
 
-By default, all Job Scheduler task triggers are deactivated at creation. Follow these steps to activate a Task's Job Scheduler Trigger and schedule when it runs:
+By default, all Job Scheduler task triggers are inactive at creation. Follow these steps to activate a Task's Job Scheduler Trigger and schedule when it runs:
 
 1. Go to the *Job Scheduler Triggers* tab in the Job Scheduler page and click the desired task.
 
@@ -65,6 +65,8 @@ By default, all Job Scheduler task triggers are deactivated at creation. Follow 
 **Task Execution ClusterMode**: Determine whether the Job Scheduler task is run on one or all nodes in a clustered environment.
 
 **Overlap Allowed**: Enable or disable  concurrent execution for the Job Scheduler task. When enabled, new task executions are initiated according to the set schedule, regardless of whether a previous execution is still running.
+
+**Time Zone**: Select a time zone for the execution of the Job Scheduler task. This is independent of the time zone of your Liferay instance.  
 
 **Cron Expression**: Enter a valid Cron expression to determine when the Job Scheduler task is executed.
 

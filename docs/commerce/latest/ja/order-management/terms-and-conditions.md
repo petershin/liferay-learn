@@ -2,6 +2,7 @@
 toc:
 - ./terms-and-conditions/payment-and-delivery-terms.md
 ---
+
 # 利用規約
 
 ```{toctree}

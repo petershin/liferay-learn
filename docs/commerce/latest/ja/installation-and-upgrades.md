@@ -8,6 +8,7 @@ toc:
 - ./installation-and-upgrades/3-0-breaking-changes.md
 - ./installation-and-upgrades/installing-commerce-2.1-and-below.md
 ---
+
 # インストールとアップグレード
 
 ```{toctree}

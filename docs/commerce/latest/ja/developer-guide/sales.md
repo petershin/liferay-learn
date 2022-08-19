@@ -7,6 +7,7 @@ toc:
 - ./sales/implementing-a-new-tax-engine.md
 - ./sales/implementing-an-exchange-rate-provider.md
 ---
+
 # 販売
 
 ```{toctree}

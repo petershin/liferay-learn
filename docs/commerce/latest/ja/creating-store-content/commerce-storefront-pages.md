@@ -11,6 +11,7 @@ toc:
 - ./commerce-storefront-pages/product-details.md
 - ./commerce-storefront-pages/search.md
 ---
+
 # Commerce ストアフロントページ
 
 ```{toctree}

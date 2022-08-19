@@ -16,6 +16,7 @@ toc:
 - ./products/configuring-product-visibility-using-account-groups.md
 - ./products/product-configuration-reference.md
 ---
+
 # プロダクト
 
 ```{toctree}

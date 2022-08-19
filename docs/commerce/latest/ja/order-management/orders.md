@@ -6,6 +6,7 @@ toc:
 - ./orders/order-life-cycle.md
 - ./orders/order-management-statuses-reference-guide.md
 ---
+
 # 順番
 
 ```{toctree}

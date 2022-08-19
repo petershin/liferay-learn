@@ -7,6 +7,7 @@ toc:
 - ./starting-a-store/sites-and-site-types.md
 - ./starting-a-store/channels.md
 ---
+
 # ストアサイトを作成する
 
 ```{toctree}

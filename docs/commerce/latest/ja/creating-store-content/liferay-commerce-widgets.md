@@ -5,6 +5,7 @@ toc:
 - ./liferay-commerce-widgets/using-the-product-downloads-widget.md
 - ./liferay-commerce-widgets/widget-reference.md
 ---
+
 # Liferay Commerce ウィジェット
 
 ```{toctree}

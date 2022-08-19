@@ -4,6 +4,7 @@ toc:
 - ./catalogs/configuring-a-product-placeholder-image.md
 - ./catalogs/configuring-catalog-permissions.md
 ---
+
 # カタログ
 
 ```{toctree}

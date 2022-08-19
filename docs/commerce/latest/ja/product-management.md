@@ -5,6 +5,7 @@ toc:
 - ./product-management/managing-inventory.md
 - ./product-management/managing-prices.md
 ---
+
 # 商品管理
 
 ```{toctree}

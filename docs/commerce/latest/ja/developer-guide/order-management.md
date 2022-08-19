@@ -5,6 +5,7 @@ toc:
 - ./order-management/implementing-a-custom-notification-type.md
 - ./order-management/implementing-a-custom-order-rule.md
 ---
+
 # 注文管理
 
 ```{toctree}
@@ -19,19 +20,19 @@ order-management/implementing-a-custom-order-rule.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card}  Commerce Order Engine Overview
+:::{grid-item-card}  コマースオーダーエンジン概要
 :link: ./order-management/commerce-order-engine-overview.md
 :::
 
-:::{grid-item-card}  Implementing a Custom Order Status
+:::{grid-item-card}  カスタムオーダーステータスの実装
 :link: ./order-management/implementing-a-custom-order-status.md
 :::
 
-:::{grid-item-card}  Implementing a Custom Notification Type
+:::{grid-item-card}  カスタム通知タイプの実装
 :link: ./order-management/implementing-a-custom-notification-type.md
 :::
 
-:::{grid-item-card}  Implementing a Custom Order Rule
+:::{grid-item-card}  カスタムオーダールールの実装
 :link: ./order-management/implementing-a-custom-order-rule.md
 :::
 ::::

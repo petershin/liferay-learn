@@ -10,6 +10,7 @@ toc:
 - ./pricing/promoting-products.md
 - ./pricing/configuring-taxes.md
 ---
+
 # 価格
 
 ```{toctree}

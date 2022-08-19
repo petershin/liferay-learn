@@ -3,6 +3,7 @@ toc:
 - ./product-recommendations/using-product-recommendations.md
 - ./product-recommendations/understanding-recommendation-types.md
 ---
+
 # 商品の推薦
 
 {bdg-primary}`サブスクリプション`

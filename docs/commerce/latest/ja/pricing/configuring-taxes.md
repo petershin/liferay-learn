@@ -4,6 +4,7 @@ toc:
 - ./configuring-taxes/setting-rates-for-tax-calculations.md
 - ./configuring-taxes/applying-tax-rates.md
 ---
+
 # 税金の設定
 
 ```{toctree}

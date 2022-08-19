@@ -2,7 +2,8 @@
 toc:
 - ./catalog/adding-a-new-product-type.md
 ---
-# Catalog
+
+# カタログ
 
 ```{toctree}
 :maxdepth: 1

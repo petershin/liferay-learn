@@ -30,8 +30,8 @@ Liferay Commerceは、税カテゴリーを使用して、チャネル商品と�
 1. Add Tax Category（![Add icon](../../images/icon-add.png)）ボタンをクリックします。
 1. 次のように入力します：
 
-    * **名前** ：ホリデースペシャル
-    * **説明** ：休日の税金
+    ***名前** ：ホリデースペシャル
+    ***説明** ：休日の税金
 
     ![新しい税カテゴリを追加します。](./creating-tax-categories/images/04.png)
 

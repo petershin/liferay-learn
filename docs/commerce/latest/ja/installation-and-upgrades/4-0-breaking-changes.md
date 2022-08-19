@@ -22,9 +22,9 @@
 
 ## 宛先名の変更
 
-* **日付：** 2020年9月10日
+***日付：** 2020年9月10日
 
-* **JIRAチケット：** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
+***JIRAチケット：** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
 
 ### 変更点
 
@@ -54,9 +54,9 @@ Commerce デスティネーションへの明示的な参照をすべて新し�
 
 ## 宛先名の変更
 
-* **日付：**2021年2月22日
+***日付：** 2021年2月22日
 
-* **JIRAチケット：** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-5788)
+***JIRAチケット：** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-5788)
 
 ### 変更点
 
@@ -150,9 +150,9 @@ Commerce デスティネーションへの明示的な参照をすべて新し�
 
 ## ミニカートコンポーネントの拡張性
 
-* **日付：**2021年2月12日
+***日付：** 2021年2月12日
 
-* **JIRAチケット：** [COMMERCE-4974](https://issues.liferay.com/browse/COMMERCE-4974)
+***JIRAチケット：** [COMMERCE-4974](https://issues.liferay.com/browse/COMMERCE-4974)
 
 ### 変更点
 
@@ -162,7 +162,7 @@ Commerce デスティネーションへの明示的な参照をすべて新し�
 
   * `commerce-frontend-js` モジュールは、そのコンテンツ（特に `MiniCartContext` `MiniCart` の統合に必要）へのアクセスや公開を制御できるように、適切なインターフェイスで公開されるようになりました。
 
-  * MiniCartコンポーネントのユーザビリティと拡張性については、こちらのドキュメント（ [）](https://issues.liferay.com/browse/LRDOCS-9462)に記載されています。
+  * MiniCartコンポーネントのユーザビリティと拡張性については、こちらのドキュメント（ [）](https://issues.liferay.com/browse/LRDOCS-9462) に記載されています。
 
 ### 影響を受ける人
 
@@ -174,9 +174,9 @@ Liferay DXP 標準との整合性により、コンポーネントの拡張性�
 
 ## CommerceCountry と CommerceRegion が削除されました。
 
-* **日付：**2021年3月02日
+***日付：** 2021年3月02日
 
-* **JIRAチケット：** [LPS-125991](https://issues.liferay.com/browse/LPS-125991)
+***JIRAチケット：** [LPS-125991](https://issues.liferay.com/browse/LPS-125991)
 
 ### 変更点
 
@@ -222,9 +222,9 @@ Liferay DXP 標準との整合性により、コンポーネントの拡張性�
 
 ## ミニコンペアウィジェット＋ミニコンペア コンポーネント
 
-* **日付：**2021年3月26日
+***日付：** 2021年3月26日
 
-* **JIRAチケット：** [COMMERCE-2909](https://issues.liferay.com/browse/COMMERCE-2909)
+***JIRAチケット：** [COMMERCE-2909](https://issues.liferay.com/browse/COMMERCE-2909)
 
 ### 変更点
 
@@ -234,7 +234,7 @@ Liferay DXP 標準との整合性により、コンポーネントの拡張性�
 
 * `CompareCheckboxTag` を JSP 経由でレンダリングするようにリファクタリングしました。 JSP は順番に、 `CompareCheckbox` React コンポーネントをレンダリングします。
 
-  * **Deprecated** and **removed** 古い Soy/MetalJS の実装である `CompareCheckbox` in `commerce-frontend-taglib` モジュールを削除しました。
+  ***Deprecated** and **removed** 古い Soy/MetalJS の実装である `CompareCheckbox` in `commerce-frontend-taglib` モジュールを削除しました。
 
 ### 影響を受ける人
 
@@ -248,9 +248,9 @@ MiniCompareコンポーネント/ウィジェットの古い実装に依存し�
 
 ## アカウントセレクターを刷新
 
-* **日付：**2021年4月27日
+***日付：** 2021年4月27日
 
-* **JIRAチケット：** [COMMERCE-5888](https://issues.liferay.com/browse/COMMERCE-6315)
+***JIRAチケット：** [COMMERCE-5888](https://issues.liferay.com/browse/COMMERCE-6315)
 
 ### 変更点
 
@@ -270,9 +270,9 @@ MiniCompareコンポーネント/ウィジェットの古い実装に依存し�
 
 ## ストアフロントにおける商品カードと商品レンダリング戦略
 
-* **日付：**2021年4月27日
+***日付：** 2021年4月27日
 
-* **JIRAチケット：** [COMMERCE-5889](https://issues.liferay.com/browse/COMMERCE-5889)
+***JIRAチケット：** [COMMERCE-5889](https://issues.liferay.com/browse/COMMERCE-5889)
 
 ### 変更点
 
@@ -284,21 +284,21 @@ MiniCompareコンポーネント/ウィジェットの古い実装に依存し�
 
   * この実装は現在 `commerce-product-content-web` モジュールにあり、 `CPContentRenderer` override, JSP override, または Liferay Dynamic Include によって拡張可能になっています。
 
-  * **Deprecated** and **removed** 古い Soy/MetalJS の実装である `commerce-frontend-taglib` モジュールの Product Card は、 **deprecated** and **removed**となりました。
+  ***Deprecated** and **removed** 古い Soy/MetalJS の実装である `commerce-frontend-taglib` モジュールの Product Card は、 **deprecated** and **removed** となりました。
 
-  * 古い Minium 専用 `CPContentRenderer`'s in `commerce-theme-minium-impl` module has been **deprecated** and **removed**...。
+  * 古い Minium 専用 `CPContentRenderer`'s in `commerce-theme-minium-impl` module has been **deprecated** and **removed** ...。
 
 * `AddToCartTag` をJSP経由でレンダリングするようにリファクタリングし、現在は `IncludeTag`から継承しています。 JSP は順番に、 `AddToCart` React コンポーネントをレンダリングし、 `QuantitySelector` React コンポーネントもレンダリングします。
 
-  * **Deprecated** and **removed** 古い Soy/MetalJS の実装である `AddToCartButton` in `commerce-frontend-taglib` モジュールを削除しました。
+  ***Deprecated** and **removed** 古い Soy/MetalJS の実装である `AddToCartButton` in `commerce-frontend-taglib` モジュールを削除しました。
 
-  * **非推奨** と **** `commerce-frontend-taglib` モジュールにある `QuantitySelector` の古い Soy/MetalJS の実装を削除しました。
+  ***非推奨** と **** `commerce-frontend-taglib` モジュールにある `QuantitySelector` の古い Soy/MetalJS の実装を削除しました。
 
-  * **非推奨** と **削除** 古い `QuantitySelectorTag` を `commerce-frontend-taglib` モジュールで削除しました。
+  ***非推奨** と **削除** 古い `QuantitySelectorTag` を `commerce-frontend-taglib` モジュールで削除しました。
 
 * `PriceTag` は、JSPでレンダリングするようにリファクタリングされ、現在は `IncludeTag`から継承されています。 JSPは、正しく構造化されたテンプレート（SEO対策用）と、最終的に（ユーザーページの着地用） `Price` Reactコンポーネントの両方をレンダリングします。
 
-  * **非推奨** と **** を削除 `commerce-frontend-taglib` モジュールにある `価格` の古い Soy/MetalJS の実装を削除しました。
+  ***非推奨** と **** を削除 `commerce-frontend-taglib` モジュールにある `価格` の古い Soy/MetalJS の実装を削除しました。
 
 ### 影響を受ける人
 
@@ -320,9 +320,9 @@ MiniCompareコンポーネント/ウィジェットの古い実装に依存し�
 
 ## ServiceImplクラスでAddOrUpdateとUpsertを使い分けるためのメソッド名の標準化
 
-* **日付：**2021年6月4日
+***日付：** 2021年6月4日
 
-* **JIRAチケット：** [COMMERCE-6095](https://issues.liferay.com/browse/COMMERCE-6095)
+***JIRAチケット：** [COMMERCE-6095](https://issues.liferay.com/browse/COMMERCE-6095)
 
 ### 変更点
 
@@ -338,9 +338,9 @@ Commerce `*ServiceImpl` クラスのメソッドで `upsert*` という名前の
 
 ## BOM機能は、Shop by Diagram機能に置き換わりました。
 
-* **日付：**2021年10月14日
+***日付：** 2021年10月14日
 
-* **JIRAチケット：** [COMMERCE-3030](https://issues.liferay.com/browse/COMMERCE-3030)
+***JIRAチケット：** [COMMERCE-3030](https://issues.liferay.com/browse/COMMERCE-3030)
 
 ### 変更点
 
@@ -356,9 +356,9 @@ Shop by Diagramは、BOM機能に代わるものです。 つまり、FolderとB
 
 ## Accounts ウィジェットを削除し、Liferay Commerce のモジュールではなくなりました。
 
-* **日付：**2021年11月21日
+***日付：** 2021年11月21日
 
-* **JIRAチケット：** [COMMERCE-7288](https://issues.liferay.com/browse/COMMERCE-7288)
+***JIRAチケット：** [COMMERCE-7288](https://issues.liferay.com/browse/COMMERCE-7288)
 
 ### 変更点
 
@@ -376,9 +376,9 @@ Shop by Diagramは、BOM機能に代わるものです。 つまり、FolderとB
 
 ## CommerceOrderLocalServiceImpl をリファクタリングしました。
 
-* **日付：**2022年2月16日
+***日付：** 2022年2月16日
 
-* **JIRAチケット：** [COMMERCE-8440](https://issues.liferay.com/browse/COMMERCE-8440)
+***JIRAチケット：** [COMMERCE-8440](https://issues.liferay.com/browse/COMMERCE-8440)
 
 ### 変更点
 
@@ -414,9 +414,9 @@ Shop by Diagramは、BOM機能に代わるものです。 つまり、FolderとB
 
 ## commerce-service service.xml で CommerceOrder を絞り込む。
 
-* **日付：**2022年4月13日
+***日付：** 2022年4月13日
 
-* **JIRAチケット：** [COMMERCE-8408](https://issues.liferay.com/browse/COMMERCE-8408)
+***JIRAチケット：** [COMMERCE-8408](https://issues.liferay.com/browse/COMMERCE-8408)
 
 ### 変更点
 
@@ -448,9 +448,9 @@ Shop by Diagramは、BOM機能に代わるものです。 つまり、FolderとB
 
 ## CPContentHelperとCPContentHelperImplをリファクタリングしました。
 
-* **日付：**2021年12月16日
+***日付：** 2021年12月16日
 
-* **JIRAチケット：** [COMMERCE-7830](https://issues.liferay.com/browse/COMMERCE-7830)
+***JIRAチケット：** [COMMERCE-7830](https://issues.liferay.com/browse/COMMERCE-7830)
 
 ### 変更点
 

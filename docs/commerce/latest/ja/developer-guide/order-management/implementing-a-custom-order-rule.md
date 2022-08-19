@@ -1,6 +1,6 @@
 # カスタム注文ルールの実装
 
-Liferayでは、特定の条件を満たした注文に対して注文ルールを設定することができます。 最少注文金額のルールは、すぐに利用可能です。 特定の値以下の注文のチェックアウトを防ぐことができます。 新しい注文ルールを追加するには、[`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java)インターフェースを実装する必要があります。 詳しくは、[注文ルール](https://learn.liferay.com/commerce/latest/en/order-management/order-rules.html)をご覧ください。
+Liferayでは、特定の条件を満たした注文に対して注文ルールを設定することができます。 最少注文金額のルールは、すぐに利用可能です。 特定の値以下の注文のチェックアウトを防ぐことができます。 新しい注文ルールを追加するには、 [`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java) インターフェースを実装する必要があります。 詳しくは、 [注文ルール](https://learn.liferay.com/commerce/latest/ja/order-management/order-rules.html) をご覧ください。
 
 ## カスタム注文ルールのデプロイと言語キーの追加
 ```{include} /_snippets/run-liferay-dxp.md
@@ -32,7 +32,7 @@ Liferayでは、特定の条件を満たした注文に対して注文ルール�
    STARTED com.acme.x9k1.impl_1.0.0
    ```
 
-1. 管理者としてログインし、 *グローバルメニュー* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［コントロールパネル］* &rarr; *［言語オーバーライド］*をクリックしてください。 _追加_ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下のキーを追加します。
+1. 管理者としてログインし、 **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コントロールパネル**］ &rarr; ［**言語オーバーライド**］ をクリックしてください。 **追加** ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下のキーを追加します。
 
    | 言語キー                        | 値          |
    |:--------------------------- |:---------- |
@@ -43,31 +43,31 @@ Liferayでは、特定の条件を満たした注文に対して注文ルール�
    Liferay DXP 7.4 U4以降、またはLiferay Portal 7.4 GA8以降の言語オーバーライドツールで言語キーを追加することができます。 以前のバージョンでは、ビルドとデプロイの前に、 `/src/main/resources/content/`の下に`Language.properties`ファイルを追加し、キーを指定する必要があります。
    ```
 
-1. *グローバルメニュー* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［コマース］* &rarr; *［注文ルール］*をクリックしてください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**注文ルール**］ をクリックしてください。
 
-1. *追加*ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下の情報を入力します。
+1. **追加** ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下の情報を入力します。
 
-   **［Name］：** Minimum Order Quantity - 3
+   ［**Name］：** Minimum Order Quantity - 3
 
-   **［Description］：** Testing minimum order quantity of 3 items
+   ［**Description］：** Testing minimum order quantity of 3 items
 
-   **［Type］：** X9K1 Minimum Order Quantity
+   ［**Type］：** X9K1 Minimum Order Quantity
 
    ![カスタム注文ルールの名前、説明、タイプを入力します。](./implementing-a-custom-order-rule/images/01.png)
 
-1. *［Submit］*をクリックします 。
+1. ［**Submit**］ をクリックします 。
 
-1. *［Configuration］*セクションで、*［Minimum Quantity］*を_3_に設定します。
+1. ［**Configuration**］ セクションで、 ［**Minimum Quantity**］ を **3** に設定します。
 
 1. 新しい注文ルールを有効にするには、［アクティブ］トグルをクリックします。
 
    ![最小数を3に設定し、有効トグルを使用して新しい注文ルールを有効にします。](./implementing-a-custom-order-rule/images/02.png)
 
-1. *［Publish］*をクリックします。
+1. ［**Publish**］ をクリックします。
 
-1. *グローバルメニュー* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［コントロールパネル］* &rarr; *［サイト］*をクリックし、新しいMiniumデモサイトを追加してください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コントロールパネル**］ &rarr; ［**サイト**］ をクリックし、新しいMiniumデモサイトを追加してください。
 
-1. バイヤーとしてログインし、商品をカートに追加します。 *Submit*をクリックしてチェックアウトします。
+1. バイヤーとしてログインし、商品をカートに追加します。 **Submit** をクリックしてチェックアウトします。
 
 注文数が3個以下の場合、警告メッセージが表示されます。 この条件を満たすまで、チェックアウトはできません。
 

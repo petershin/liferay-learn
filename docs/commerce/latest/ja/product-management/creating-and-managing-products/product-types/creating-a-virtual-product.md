@@ -36,11 +36,11 @@ Liferay Commerceでは、仮想商品とは、顧客がダウンロードでき�
 
 1. ［**Basic Information**］に、以下の設定を行います：
 
-   * **ライセンス認証ステータス** : ダウンロードのライセンス認証ステータスを設定します。 これにより、アセットがダウンロードできるようになる注文段階（つまり完了、返答待ち、または処理中）が決まります。
+   ***ライセンス認証ステータス** : ダウンロードのライセンス認証ステータスを設定します。 これにより、アセットがダウンロードできるようになる注文段階（つまり完了、返答待ち、または処理中）が決まります。
 
-   * **継続期間** ：顧客がファイルにアクセスできる日数を設定します。このフィールドを`0`にすると、ユーザーに無制限のアクセス権利が与えられます。
+   ***継続期間** ：顧客がファイルにアクセスできる日数を設定します。このフィールドを`0`にすると、ユーザーに無制限のアクセス権利が与えられます。
 
-   * **最大ダウンロード数** : 顧客がデジタルアセットをダウンロードできる最大回数を設定します。
+   ***最大ダウンロード数** : 顧客がデジタルアセットをダウンロードできる最大回数を設定します。
 
 1. ［**サンプル**］で、商品に関連するサンプルのダウンロードがあるかどうかを決めます。 あるとした場合、サンプルのダウンロードに使用するURLを入力するか、ファイルを選択します。
 
@@ -57,14 +57,14 @@ Liferay Commerceでは、仮想商品とは、顧客がダウンロードでき�
 1. ［**コントロールパネル**］ → ［**コマース**］ → ［**商品**］ に移動します。
 1. 追加（![Add icon](../../../images/icon-add.png)）ボタンをクリックしてから、 ［**仮想**］をクリックします。
 1. 次のように入力します：
-    * **Catalog** ：Sahara.com
-    * **Name** : 3年保証
-    * **Short Description** : 3年保証
-    * **Full Description** : Sahara.comで購入したすべての商品の3年保証
-    * **Friendly URL** ：（自動生成）
-    * **Meta Title** : 3年保証
-    * **Meta Description** : すべての商品の3年保証
-    * **Meta Keywords** : 保証、商品、年
+    ***Catalog** ：Sahara.com
+    ***Name** : 3年保証
+    ***Short Description** : 3年保証
+    ***Full Description** : Sahara.comで購入したすべての商品の3年保証
+    ***Friendly URL** ：（自動生成）
+    ***Meta Title** : 3年保証
+    ***Meta Description** : すべての商品の3年保証
+    ***Meta Keywords** : 保証、商品、年
 1. ［**公開**］ をクリックします。
 
 この仮想商品を作成したら、ストア管理者はデジタルアセットと利用規約を商品に関連付ける必要があります。
@@ -76,12 +76,12 @@ Liferay Commerceでは、仮想商品とは、顧客がダウンロードでき�
    ![仮想サブタブでは、仮想商品の設定を行います。](./creating-a-virtual-product/images/01.png)
 
 1. 次のように入力します：
-    * **Insert the URL or select a file of your virtual product.** : warranty.pdfをアップロード
-    * **Activation Status** : 完了
-    * **Duration** : 0
-    * **Max Number of Downloads** : 0
-    * **Enable Sample** ：オフ
-    * **Enable Terms of Use** ：No
+    ***Insert the URL or select a file of your virtual product.** : warranty.pdfをアップロード
+    ***Activation Status** : 完了
+    ***Duration** : 0
+    ***Max Number of Downloads** : 0
+    ***Enable Sample** ：オフ
+    ***Enable Terms of Use** ：No
 
    ![仮想商品の詳細を入力します。](./creating-a-virtual-product/images/02.png)
 
@@ -97,9 +97,9 @@ Liferay Commerceでは、仮想商品とは、顧客がダウンロードでき�
 1. ［**default**］SKUの［**3-dot**］ アイコン &rarr; ［**Edit**］をクリックします。
 1. 左側のメニューで ［**Pricing**］ をクリックします。
 1. 次のように入力します：
-    * **Price** : 12.00
-    * **Promo Price** : 0.00
-    * **Cost** : 0.00
+    ***Price** : 12.00
+    ***Promo Price** : 0.00
+    ***Cost** : 0.00
 1. ［**保存**］ をクリックします。 （［Promo Price］および［Cost］フィールドが0.00のままの場合、この時点では割引やプロモーションは適用されません。）
 1. ［**Price List**］ をクリックして、この商品を既存の[［価格表］](../../../pricing/adding-products-to-a-price-list.md)に適用します。
 1. 在庫を設定するには、 ［**在庫**］ サブタブをクリックし、各倉庫に適切な数量を設定します。 更新されたすべての倉庫の ［**保存**]ボタンをクリックします。

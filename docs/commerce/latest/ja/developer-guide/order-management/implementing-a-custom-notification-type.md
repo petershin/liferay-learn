@@ -42,7 +42,7 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
     STARTED com.acme.g2f3.impl_1.0.0
     ```
 
-2. 管理者としてログインし、 *グローバルメニュー* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［コントロールパネル］* &rarr; *［言語オーバーライド］*をクリックしてください。 *追加*ボタン (![Add icon](../../images/icon-add.png)) をクリックし、以下のキーを追加します。
+2. 管理者としてログインし、 **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コントロールパネル**］ &rarr; ［**言語オーバーライド**］ をクリックしてください。 **追加** ボタン (![Add icon](../../images/icon-add.png)) をクリックし、以下のキーを追加します。
 
     | 言語キー                                        | 値               |
     |:------------------------------------------- |:--------------- |
@@ -56,15 +56,15 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
     Liferay DXP 7.4 U4以降、またはLiferay Portal 7.4 GA8以降の言語オーバーライド ツールで言語キーを追加することができます。 以前のバージョンでは、ビルドとデプロイの前に、 `/src/main/resources/content/` の下に `Language.properties` ファイルを追加し、キーを指定する必要があります。
     ```
 
-3. *グローバルメニュー* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、*［コマース］* &rarr; *［チャネル］* をクリックし、*［通知テンプレート］* を選択します。
+3. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**チャネル**］ をクリックし、 ［**通知テンプレート**］ を選択します。
 
-4. *追加* ボタン (![Add icon](../../images/icon-add.png)) を使用して、新しいテンプレートを作成します。 
+4. **追加** ボタン (![Add icon](../../images/icon-add.png)) を使用して、新しいテンプレートを作成します。 
 
     **名前:** 作成されたG2F3出荷テスト
 
     **タイプ:** 作成されたG2F3出荷
 
-    **宛先:** [%SHIPMENT_CREATOR_EMAIL%]
+    **宛先:**[%SHIPMENT_CREATOR_EMAIL%]
 
     **送信者メールアドレス:** test@liferay.com
 
@@ -74,26 +74,26 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 
     **Body:**
 
-    *Hi,*
+    **Hi,**
 
-    *[%SHIPMENT_CREATOR_NAME%]によって、新しい出荷が作成されました*
+    [**%SHIPMENT_CREATOR_NAME%]によって、新しい出荷が作成されました**
 
-    *配送先住所:*
-    *[%ORDER_SHIPPING_ADDRESS%]*
+    **配送先住所:**
+    [**%ORDER_SHIPPING_ADDRESS%**]
 
-    *ありがとうございます。*
+    **ありがとうございます。**
 
-    *管理者*
+    **管理者**
 
-5. ［*保存*］をクリックします。
+5. ［**保存**］をクリックします。
 
-6. *グローバルメニュー* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、*［コントロールパネル］* &rarr; *［サイト］* をクリックし、新しいMiniumデモサイトを追加してください。
+6. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コントロールパネル**］ &rarr; ［**サイト**］ をクリックし、新しいMiniumデモサイトを追加してください。
 
 7. 購入者としてログインし、ストアで新しく注文をします。
 
-8. 管理者としてログアウトしてログインし直し、*グローバルメニュー* を開いて、*［コマース］* &rarr; *［注文］* をクリックします。 
+8. 管理者としてログアウトしてログインし直し、 **グローバルメニュー** を開いて、 ［**コマース**］ &rarr; ［**注文**］ をクリックします。 
 
-9. 注文を選択し、*［受注］*をクリックします。 次に、*［出荷を作成］*をクリックします。
+9. 注文を選択し、 ［**受注**］ をクリックします。 次に、 ［**出荷を作成**］ をクリックします。
 
 10. 受信通知を受信トレイで確認してください。
 

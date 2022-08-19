@@ -16,7 +16,7 @@ Liferay Commerceでは、[ Simple ](../product-types/creating-a-simple-product.m
 
 ## 前提条件
 
-商品のサブスクリプションを有効にするには、ストア管理者は定期的な支払いをサポートする支払い方法をアクティブにする必要があります。 デフォルトでは、Liferay Commerceは定期的な支払い方法として [Paypal](../../../store-management/configuring-payment-methods/paypal.md) をサポートしています。
+商品のサブスクリプションを有効にするには、ストア管理者は定期的な支払いをサポートする支払い方法をアクティブにする必要があります。 デフォルトでは、Liferay Commerceは定期的な支払い方法として [PayPal](../../../store-management/configuring-payment-methods/paypal.md) をサポートしています。
 
 ## 商品のサブスクリプションを有効にする
 

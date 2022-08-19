@@ -5,17 +5,17 @@
 Liferay Commerceの使用を開始するには：
 
 1. 最新のLiferay Commerce `LPKG`をダウンロードします。
-    * エンタープライズサブスクライバーは、最新の`LPKG`を[ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)からダウンロードできます。
-      * サブスクライバーは、Liferay Commerceの注文番号またはアクティベーションキーも必要です。 [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)を参照してください。
-    * 最新のオープンソース`LPKG`は、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community)から入手できます。
+    * エンタープライズサブスクライバーは、最新の`LPKG`を [ヘルプセンター](https://customer.liferay.com/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118190997& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) からダウンロードできます。
+      * サブスクライバーは、Liferay Commerceの注文番号またはアクティベーションキーも必要です。 [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/ja/articles/360018427391) を参照してください。
+    * 最新のオープンソース`LPKG`は、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community) から入手できます。
 
 1. `LPKG`を`${liferay.home}/deploy`フォルダにデプロイします。
 
     ```{note}
-    Liferay DXPへのアプリケーションのデプロイについては、[Liferay Home](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html)をご覧ください。
+    Liferay DXPへのアプリケーションのデプロイについては、 [Liferay Home](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) をご覧ください。
     ```
 
-1. （_サブスクライバー_） `${liferay.home}/ deploy` フォルダーにアクティベーションキーをデプロイします。
+1. （**サブスクライバー**） `${liferay.home}/ deploy` フォルダーにアクティベーションキーをデプロイします。
 1. アプリケーションサーバーコンソールに次のメッセージが表示されることを確認します。
 
     ```
@@ -31,14 +31,14 @@ Liferay Commerceの使用を開始するには：
     2019-08-09 00:32:48.850 INFO  [main][BaseDeployer:877] Deploying minium-theme.war
     ```
 
-1. **最初**のデプロイでは、一連のコマンドの後に次のメッセージが続きます。
+1. **最初** のデプロイでは、一連のコマンドの後に次のメッセージが続きます。
 
     ```
     2019-08-09 00:34:51.753 INFO  [main][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
     ```
 
-1. 初回立ち上げ時には、Liferay Commerceのデフォルトコンテンツを入力するためにインデックスの再構築を実行し、_［コントロールパネル］_ → ［_［設定］_ → _［検索機能］_に移動します。
-1. _［全ての検索インデクスの再構築］_の隣にある_［実行］_をクリックします。
+1. 初回立ち上げ時には、Liferay Commerceのデフォルトコンテンツを入力するためにインデックスの再構築を実行し、 ［**コントロールパネル**］ → ［［**設定**］ → ［**検索機能**］ に移動します。
+1. ［**全ての検索インデクスの再構築**］ の隣にある ［**実行**］ をクリックします。
 
 Liferay Commerceがデプロイされ、使用できる状態になりました。 ストア管理者は、ストアフロントの構築とカタログの作成を開始できます。
 
@@ -46,6 +46,6 @@ Liferay Commerceがデプロイされ、使用できる状態になりました�
 
 アプリケーションサーバーを再起動した場合、Liferay Commerceは`VerifyProcess`コマンドを再度実行しないことに注意してください。
 
-* [Liferay Commerce3.0互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360049238151)
+* [Liferay Commerce3.0互換性マトリクス](https://help.liferay.com/hc/ja/articles/360049238151)
 * [インストールの概要](../installation-overview.md)
 * [Liferay CommerceTomcatバンドルの使用](./using-the-liferay-commerce-tomcat-bundle.md)

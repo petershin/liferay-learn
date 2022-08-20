@@ -6,7 +6,7 @@ Site Appearance
 
    site-appearance/site-appearance.md
    creating-pages/defining-headers-and-footers/master-page-templates.md
-   site-appearance/themes.rst
+   site-appearance/themes.md
    site-appearance/style_books.rst
 
 .. raw:: html

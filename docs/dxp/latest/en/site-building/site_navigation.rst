@@ -9,7 +9,7 @@ Site Navigation
    site-navigation/using-the-navigation-menus-application.md
    site-navigation/configuring-menu-displays.md
    site-navigation/navigation-menu-element-types.md
-   site-navigation/developer_guide.rst
+   site-navigation/developer-guide.md
 
 -  :doc:`/site-building/site-navigation/managing-site-navigation`
 -  :doc:`/site-building/site-navigation/managing-page-hierarchies`

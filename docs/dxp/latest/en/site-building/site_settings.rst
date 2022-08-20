@@ -5,8 +5,8 @@ Site Settings
    :maxdepth: 3
 
    site-settings/site-users.md
-   site-settings/managing-site-urls.rst
-   site-settings/site_content_configurations.rst
+   site-settings/managing-site-urls.md
+   site-settings/site-content-configurations.md
    site-settings/site-localization.md
    site-settings/adding-a-new-analytics-service.md
    site-settings/configuring-open-graph.md

@@ -30,39 +30,39 @@ promoting-products/product-recommendations.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card}  Introduction to Discounts
+:::{grid-item-card}  割引について
 :link: ./promoting-products/introduction-to-discounts.md
 :::
 
-:::{grid-item-card}  Creating a Discount
+:::{grid-item-card}  割引を作成する
 :link: ./promoting-products/creating-a-discount.md
 :::
 
-:::{grid-item-card}  Introduction to Promotions
+:::{grid-item-card}  プロモーションについて
 :link: ./promoting-products/introduction-to-promotions.md
 :::
 
-:::{grid-item-card}  Using the Promotion Base List
+:::{grid-item-card}  プロモーションベースリストの活用
 :link: ./promoting-products/using-the-promotion-base-list.md
 :::
 
-:::{grid-item-card}  Creating a Promotion
+:::{grid-item-card}  プロモーションを作成する
 :link: ./promoting-products/creating-a-promotion.md
 :::
 
-:::{grid-item-card}  Promotion Base List Reference
+:::{grid-item-card}  プロモーションベースリストリファレンス
 :link: ./promoting-products/promotion-base-list-reference.md
 :::
 
-:::{grid-item-card}  Introduction to Product Groups
+:::{grid-item-card}  商品グループについて
 :link: ./promoting-products/introduction-to-product-groups.md
 :::
 
-:::{grid-item-card}  Replacement Products
+:::{grid-item-card}  代替品
 :link: ./promoting-products/replacement-products.md
 :::
 
-:::{grid-item-card}  Product Recommendations
+:::{grid-item-card}  商品の推薦
 :link: ./promoting-products/product-recommendations.md
 :::
 ::::

@@ -8,14 +8,14 @@ Liferay Commerceでは、すぐに使用できる複数の通貨を事前設定�
 1. ［**通貨**］ タブをクリックします。
 1. ［**通貨を追加**］ ボタンをクリックします。
 1. 次のように入力します：
-    ****Name:** New Zealand Dollar
-    ****Code:** NZD (ISO code)
-    ****Format Pattern:** $###,##0.00
-    ****Maximum Decimal places:** 2
-    ****Minimum Decimal places:** 2
-    ****Rounding Mode:** HALF EVEN
-    ****Exchange Rate:** 1.49701
-    ****Priority:** 11
+    * **Name:** New Zealand Dollar
+    * **Code:** NZD (ISO code)
+    * **Format Pattern:** $###,##0.00
+    * **Maximum Decimal places:** 2
+    * **Minimum Decimal places:** 2
+    * **Rounding Mode:** HALF EVEN
+    * **Exchange Rate:** 1.49701
+    * **Priority:** 11
 1. ［**メインにする**］ トグルは ［**いいえ**］ のままにします。
 
     ![通貨を追加する](./adding-a-new-currency/images/01.png)

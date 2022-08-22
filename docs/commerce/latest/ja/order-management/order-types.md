@@ -11,7 +11,7 @@ order-types/using-order-types.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Using Order Types
+:::{grid-item-card} 注文タイプの使用
 :link: ./order-types/using-order-types.md
 :::
 ::::

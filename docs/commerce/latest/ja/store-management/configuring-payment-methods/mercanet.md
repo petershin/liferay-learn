@@ -10,7 +10,7 @@
 
 ## 前提条件
 
-[Mercanet](https://documentation.mercanet.bnpparibas.net/index.php?title=Obtenir **sa** cl%C3%A9_secr%C3%A8te#s) を使用するようにストアを設定する前に、以下を生成する必要があります。
+[Mercanet](https://documentation.mercanet.bnpparibas.net/index.php?title=Obtenir_sa_cl%C3%A9_secr%C3%A8te#)) を使用するようにストアを設定する前に、以下を生成する必要があります。
 
 1. MercanetのマーチャントID
 1. シークレットキー
@@ -36,9 +36,9 @@ Mercanetを使用する場合、ストアではユーロを主要通貨として
 1. ［**Mercanet**］ をクリックします。
 1. ［**設定**］ をクリックします。
 1. 次のように入力します：
-    ***販売者ID**
-    ***秘密鍵**
-    ***鍵バージョン**
+    * **販売者ID**
+    * **秘密鍵**
+    * **鍵バージョン**
 1. ライブサイトの場合は ［**Production**］ を、テスト環境の場合は ［**Test**］ または ［**Simulation**］ を選択します。 ![Mercanetの設定](./mercanet/images/02.png)
 1. ［**保存**］ をクリックします。
 1. ［**Mercanet**］ の隣にある **3ドットアイコン** をクリックし、次に ［**有効にする**］ をクリックします。

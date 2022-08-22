@@ -8,11 +8,11 @@
 1. ［**グローバル**］ サイトで、 ［**カテゴリー設定**］ → ［**カテゴリー**］ をクリックします。
 1. (![Add icon](../../../images/icon-add.png))ボタンをクリックして、まずボキャブラリを作成します。
 1. 次のように入力します：
-    ***Name** : 化粧品
-    ***Description** : すべての化粧品
-    ***Allow Multiple Categories** : Yes
-    ***Choose Asset Type** : Commerce商品
-    ***Required** : はい
+    * **Name** : 化粧品
+    * **Description** : すべての化粧品
+    * **Allow Multiple Categories** : Yes
+    * **Choose Asset Type** : Commerce商品
+    * **Required** : はい
 
         ![ボキャブラリの作成](./creating-a-new-product-category/images/01.png)
 
@@ -70,11 +70,11 @@
 1. ［**グローバル**］ サイトで、 ［**カテゴリー設定**］ → ［**カテゴリー**］ をクリックします。
 1. 最初にボキャブラリを作成するには、（+）ボタンをクリックします。
 1. 次のように入力します：
-    ***Name** : 化粧品
-    ***Description** : すべての化粧品
-    ***Allow Multiple Categories** : Yes
-    ***Choose Asset Type** : Commerce商品
-    ***Required** : Yes
+    * **Name** : 化粧品
+    * **Description** : すべての化粧品
+    * **Allow Multiple Categories** : Yes
+    * **Choose Asset Type** : Commerce商品
+    * **Required** : Yes
 
         ![ボキャブラリの作成](./creating-a-new-product-category/images/01.png)
 
@@ -99,8 +99,8 @@
 1. カテゴリを追加するボキャブラリをクリックします。 前の例を続けるには、 ［**Cosmetics**］ をクリックします。
 1. （+）ボタンをクリックして、新しいカテゴリを追加します。
 1. 次のように入力します：
-    ***Name** : ヘアー商品
-    ***説明** : すべてのヘアー商品
+    * **Name** : ヘアー商品
+    * **説明** : すべてのヘアー商品
 
     ![カテゴリ作成](./creating-a-new-product-category/images/02.png)
 

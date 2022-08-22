@@ -12,9 +12,9 @@
 1. 追加（![Add icon](../../images/icon-add.png)）ボタンをクリックして、新しいカタログを追加します。
 1. 次のように入力します：
 
-    ***Name** ：医療用品
-    ***Default カタログ Language** ：（ご使用の言語）（たとえば、 **English (United States**)）
-    ***Currency** ：（ストアの通貨）（**US Dollar**）
+    * **Name** ：医療用品
+    * **Default カタログ Language** ：（ご使用の言語）（たとえば、 **English (United States**)）
+    * **Currency** ：（ストアの通貨）（**US Dollar**）
 
     ![空白のカタログを新規に追加します。](./creating-a-new-catalog/images/04.png)
 
@@ -30,9 +30,9 @@
 1. 追加（![Add icon](../../images/icon-add.png)）ボタンをクリックして、新しいカタログを追加します。
 1. 次のように入力します：
 
-    ***Name** ：医療用品
-    ***Default Catalog Language** ：（ご使用の言語）（たとえば、 **English (United States**)）
-    ***Currency** ：（ストアの通貨）（**US Dollar**）
+    * **Name** ：医療用品
+    * **Default Catalog Language** ：（ご使用の言語）（たとえば、 **English (United States**)）
+    * **Currency** ：（ストアの通貨）（**US Dollar**）
 
     ![新しいカタログ](./creating-a-new-catalog/images/01.png)
 

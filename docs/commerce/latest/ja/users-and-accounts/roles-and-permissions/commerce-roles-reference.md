@@ -1,16 +1,10 @@
 # Commerceロールのリファレンス
 
-Liferay には</a> for Commerce の4つのロール（
-out-of-the-box role）が含まれています。アカウント管理者、アカウントメンバー、バイヤー、そしてオーダーマネージャーです。 これらのロールは、いくつかの一般的なロールをモデルとして構成されていますが、ユースケースにより適したアカウントロールを追加作成したり、すぐに利用できるロールを変更したりすることが可能です。 [一般的なカスタムロール](#custom-roles) には、Catalog Manager、Inventory Manager、Shipment Manager、Instance Order Manager、および Discount Manager が含まれます。</p> 
-
-
+Liferayには、コマースの[標準ロール](#out-of-the-box-roles)が4つ（アカウント管理者、アカウントメンバー、バイヤー、オーダーマネージャー）含まれています。これらのロールは、いくつかの一般的なロールをモデルとして構成されていますが、ユースケースにより適したアカウントロールを追加作成したり、標準ロールを変更したりすることが可能です。 [一般的なカスタムロール](#custom-roles)には、Catalog Manager、Inventory Manager、Shipment Manager、Instance Order Manager、および Discount Managerが含まれます。
 
 ```{note}
 Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Agent](#sales-agent) もすぐに使用できるロールとして含まれています。
 ```
-
-
-
 
 ## 表示の権限
 
@@ -22,16 +16,14 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 
 1. 目的のロールをクリックします。
 
-   ****アカウント管理者**(アカウントの役割)
-   ****アカウントメンバー**（アカウントロール）
+   * **アカウント管理者** (アカウントの役割)
+   * **アカウントメンバー**（アカウントロール）
    * バイヤー（アカウントロール）
    * オーダーマネージャー（アカウントロール） 
-     
 
    ```{note}
    Liferay 7.3およびそれ以前のバージョンでは、アカウント管理者はサイトロールであり、アカウントメンバーロールはデフォルトロールではありません。 
    ```
-
 
 1. ［**権限の定義**］ タブをクリックします。
    
@@ -41,17 +33,11 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
    
    ![ [権限の定義]タブをクリックして、ロールの権限を表示および管理します。](./commerce-roles-reference/images/02.png)
 
-
-
 ## すぐに使えるロール
 
 以下のロールは、Commerceの起動時にDXPインスタンスに自動的に追加されます。 これらは、DXPのデフォルトの役割と一緒に含まれており、必要に応じて変更することができます。 詳細は、 [ロール権限の定義](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照してください。
 
-
-
 ### アカウント管理者
-
-
 
 > アカウントロール
 
@@ -89,12 +75,7 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 | Accounts > アカウントの入力。アドレスの管理                    | 本アカウントのアドレス管理機能                           |
 | アカウント > アカウントの入力。組織を見る                         | アカウント内の組織を表示する機能                          |
 
-
-
-
 ### アカウント メンバー
-
-
 
 > アカウントロール（Liferay 7.4に含まれる）
 
@@ -104,12 +85,7 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 |:------------------------------ |:------------ |
 | Accounts > Account Entry: View | アカウントを表示する機能 |
 
-
-
-
 ### バイヤー
-
-
 
 > アカウントロール
 
@@ -131,12 +107,7 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 | カートを開く > コマース注文。注文の支払条件を管理する                  | 注文の支払い条件を管理する機能       |
 | カートを開く > コマースオーダー。請求先住所の表示                    | 注文の請求先住所を確認する機能       |
 
-
-
-
 ### オーダーマネージャー
-
-
 
 > アカウントロール
 
@@ -157,18 +128,11 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 | カートを開く > コマース注文。注文の支払条件を管理する                   | 注文の支払い条件を管理する機能                           |
 | カートを開く > コマースオーダー。請求先住所の表示                     | 注文の請求先住所の表示機能                             |
 
-
-
-
 ## カスタムロール
 
 以下のリストには、自身のCommerceインスタンス用に作成した方がいい一般的なカスタムロールが含まれています。 これらの役割は、他のDXPの役割と同じように作成できます。 詳細は、 [ロールの作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) と [ロール権限の定義](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照してください。
 
-
-
 ### カタログマネージャー
-
-
 
 > 標準ロール
 
@@ -183,23 +147,15 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 | Products: Access in Control Panel                   | グローバルメニューから商品アプリケーションにアクセスする機能   |
 | Products: View                                      | 商品アプリケーションを表示する機能                |
 
-
 上記の権限に加えて、ロールに管理させたい個々のカタログに対して、 **表示** および **アップデート** の権限を割り当てる必要があります。
 
 これを行うには、［**グローバルメニュー**］(![Global Menu](../../images/icon-applications-menu.png))を開き、［**Commerce**］タブをクリックし、 ［**商品管理**］ &rarr; ［**カタログ**］ に移動します。 次に、目的のカタログの ［**Actions**］ ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 ［**権限設定**］ を選択します。 チェックボックスを使用して、ロール **表示** および **アップデート** 許可を割り当てます。
-
-
 
 ```{note}
 カタログマネージャーに、カタログ自体を変更することなく、カタログ内の商品を管理させたい場合は、`Catalogs.Access in Control Panel`と`Catalogs: Access in Control Panel`を削除してください。
 ```
 
-
-
-
 ### 割引マネージャー
-
-
 
 > 標準ロール
 
@@ -228,12 +184,7 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 | Price Lists: Access in Control Panel                             | グローバルメニューから価格表アプリケーションにアクセスする機能 |
 | Product Groups: View                                             | 商品グループエンティティを表示する機能             |
 
-
-
-
 ### 在庫マネージャー
-
-
 
 > 標準ロール
 
@@ -246,12 +197,7 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 | Warehouses > Commerce Inventories: Manage Inventory | 倉庫にリンクされている在庫エンティティにアクセスして変更する機能 |
 | Portal: View Control Panel Menu                     | グローバルメニューにアクセスする機能               |
 
-
-
-
 ### インスタンス オーダーマネージャー
-
-
 
 > 標準ロール
 
@@ -274,12 +220,7 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 | Account Groups > Commerce Accounts: Manage All Accounts | アカウントグループアプリケーションにアクセスするために必要             |
 | Portal: View Control Panel Menu                         | グローバルメニューにアクセスする機能                        |
 
-
-
-
 ### 出荷マネージャー
-
-
 
 > 標準ロール
 
@@ -296,16 +237,9 @@ Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Age
 | Shipments: View                                         | 出荷アプリケーションを表示する機能              |
 | Shipments > Commerce Warehouse: View                    | 倉庫エンティティを表示する機能                |
 
-
-
-
 ## Liferay 7.3以前
 
-
-
 ### Sales Agent
-
-
 
 > 標準ロール
 
@@ -317,9 +251,6 @@ Sales AgentはLiferay Commerceの通常のロールであり、割り当てユ�
 |:------------- |:------------------------------ |
 | 組織を管理         | 組織を追加または削除する機能                 |
 | 利用可能なアカウントを管理 | Sales Agentが加入しているアカウントを管理する機能 |
-
-
-
 
 ## 追加情報
 

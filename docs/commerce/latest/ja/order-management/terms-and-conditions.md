@@ -15,7 +15,7 @@ Liferayは、支払条件と配送条件を通じて、注文に利用規約を�
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Payment and Delivery Terms
+:::{grid-item-card} 支払条件と配送条件
 :link: ./terms-and-conditions/payment-and-delivery-terms.md
 :::
 ::::

@@ -44,23 +44,39 @@ By default, the Custom CSS text box contains this placeholder CSS:
 }
 ```
 
-`[$FRAGMENT_CLASS$]` is a CSS class variable that represents the unique class name of the fragment you are configuring. Use this to apply CSS specifically to that fragment. When the page renders, this is replaced with the fragment's actual class name on the back-end (like `lfr-layout-structure-item-01d752e4-32e3-ed4a-9cd6-fcaf483d0c34`).
+`[$FRAGMENT_CLASS$]` is a token for a CSS class that represents the unique class name of the fragment you are configuring. Use this to apply CSS specifically to that fragment.
+
+For example, this custom CSS sets the fragment's background to red normally and blue when the user hovers their cursor over it:
+
+```css
+.[$FRAGMENT_CLASS$] {
+    background: red;
+}
+
+.[$FRAGMENT_CLASS$]:hover {
+    background: blue
+}
+```
+
+When the page renders, `[$FRAGMENT_CLASS$]` is replaced with the fragment's actual class name on the back-end (like `lfr-layout-structure-item-01d752e4-32e3-ed4a-9cd6-fcaf483d0c34`).
 
 ```{tip}
 Click the *Expand* icon above the text box to open a modal on the screen, to give you more space to edit the custom CSS for your fragment.
 ```
 
+You can also use variables in your custom CSS that come from the [Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) you are currently using. This example uses the *Info* color from a Style Book (defined as dark blue) to set a fragment's background color:
+
+![You can use variables from your Style Book to fine-tune the CSS for specific fragments.](./advanced-settings-reference/images/03.png)
+
+### Custom CSS Classes
+
 Use the *CSS Classes* text box above to add classes for use in your custom CSS (separating them with a space, comma, or line break). Classes that you add in this field can be reused for any other fragments on the same page. Suggestions for classes that you have added to other fragments on the same page appear while you type.
 
-![Entering custom CSS classes in this field makes them appear as suggestions in the advanced settings for other fragments on the same page.](./advanced-settings-reference/images/03.png)
+![Entering custom CSS classes in this field makes them appear as suggestions in the advanced settings for other fragments on the same page.](./advanced-settings-reference/images/04.png)
 
 ```{note}
-Only CSS classes that you have added yourself appear as suggestions in the CSS Classes text box. Pre-existing classes or variables (such as `[$FRAGMENT_CLASS$]`) do not appear, and do not need to be added to this field.
+Only CSS classes that you have added yourself appear as suggestions in the CSS Classes text box. Pre-existing classes or variables (such as `[$FRAGMENT_CLASS$]`) do not appear, and they do not need to be added to this field.
 ```
-
-You can also use variables in your custom CSS that come from the [Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) you are currently using. This example shows using the *Info* color from a Style Book to set a fragment's background color:
-
-![You can use variables from your Style Book to fine-tune the CSS for specific fragments.](./advanced-settings-reference/images/04.png)
 
 ## Hiding Content from Search Results
 

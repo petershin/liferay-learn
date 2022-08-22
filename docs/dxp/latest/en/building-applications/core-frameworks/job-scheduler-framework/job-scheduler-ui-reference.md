@@ -64,7 +64,7 @@ Configure the Job Scheduler Trigger to schedule task executions.
 | Active | Determines whether the configured schedule for execution is active or inactive |
 | Task Execution Cluster Mode | Determines whether the Job Scheduler task is executed on a *Single Node* or *All Nodes* in a clustered environment |
 | Overlap Allowed | Determines whether concurrent execution of Job Scheduler Tasks are allowed |
-| Time Zone | Define a time zone that is independent of your instance time zone for the execution of Job Scheduler tasks |
+| Time Zone | Define a time zone that is independent of your instance time zone for the execution of Job Scheduler tasks. This field is available starting from Liferay DXP 7.4 U35+/GA35+. |
 | Cron Expression | Defines time intervals for automatically executing Job Scheduler tasks |
 | Start Date | Defines when the Job Scheduler task begins to be executed according to the cron schedule; set to current date and time by default |
 | Never End | Determines whether the Job Scheduler task's automatic execution ever ends; checked by default |

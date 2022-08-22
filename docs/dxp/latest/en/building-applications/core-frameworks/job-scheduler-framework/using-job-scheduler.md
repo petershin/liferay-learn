@@ -66,7 +66,7 @@ By default, all Job Scheduler task triggers are inactive at creation. Follow the
 
 **Overlap Allowed**: Enable or disable  concurrent execution for the Job Scheduler task. When enabled, new task executions are initiated according to the set schedule, regardless of whether a previous execution is still running.
 
-**Time Zone**: Select a time zone for the execution of the Job Scheduler task. This is independent of the time zone of your Liferay instance.  
+**Time Zone**: Select a time zone for the execution of the Job Scheduler task. This is independent of the time zone of your Liferay instance. This field is available starting from Liferay DXP 7.4 U35+/GA35+.  
 
 **Cron Expression**: Enter a valid Cron expression to determine when the Job Scheduler task is executed.
 

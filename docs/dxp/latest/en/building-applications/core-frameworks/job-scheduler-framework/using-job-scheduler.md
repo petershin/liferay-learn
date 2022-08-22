@@ -32,7 +32,7 @@ The Job Scheduler UI also provides a more complete overview of each Job Schedule
 
 1. (Optional) Use the settings editor to define properties for the Job Scheduler task that are injected at runtime.
 
-   You can use these settings to fine tune execution flow and more.
+   You can use these settings to fine tune the execution flow and more.
 
    All settings added in this way are soft-coded, so you can configure your Job Scheduler tasks without having to edit and redeploy the Executor's code.
 

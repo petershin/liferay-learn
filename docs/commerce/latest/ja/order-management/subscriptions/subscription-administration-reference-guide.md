@@ -42,11 +42,9 @@
 
 ### 注文の参照
 
-**Reference Order** セクションには、</a>注文に関する
-情報が表示されます。</p> 
+**注文の参照** セクションには、[注文情報](../orders/order-information.md)が表示されます：
 
 ![支払いセクション](./subscription-administration-reference-guide/images/02.png)
-
 
 
 ### 支払のサブスクリプション
@@ -64,8 +62,6 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 | モード          | これは、間隔がマークされた日付を指します。 ユーザーは、オプションとして月の正確な日または **月の最後の日** を選択することもできます。 |
 
 
-
-
 ### 配送のサブスクリプション
 
 **配送サブスクリプション** セクションは、次の情報を追跡します。
@@ -80,16 +76,11 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 | サブスクリプション期間  | これは、出荷の間隔を指します。                                                      |
 | モード          | これは、間隔がマークされた日付を指します。 ユーザーは、オプションとして月の正確な日または **月の最後の日** を選択することもできます。 |
 
-
-
-
 ### 項目
 
 **アイテム** セクションには、サブスクリプション内の[商品](../../product-management/creating-and-managing-products/products/products-overview.md)がすべてリストされます。
 
 ![アイテム](./subscription-administration-reference-guide/images/05.png)
-
-
 
 ## 発送タブ
 
@@ -97,11 +88,16 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 
 ![出荷](./subscription-administration-reference-guide/images/06.png)
 
-この番号は 出荷/0>IDとして生成されます</td> </tr> 
+5つの項目があります。
 
-</tbody> </table> 
-
-
+| 項目 | 説明 |
+| :--- | :--- |
+| 作成日 | 注文が[作成された](../orders/processing-an-order.md)日付。 |
+| 出荷ID | この番号は[出荷](../shipments/introduction-to-shipments.md)IDとして生成されます |
+| ステータス | [注文](../orders/orders-menu-reference-guide.md)のステータス。 |
+| 注文ID | これは、サブスクリプションの基礎となる注文を指します。 |
+| 配送先 | アカウントの配送先住所。 |
+| 追跡 | 配送業者の追跡番号。 | 
 
 ## 支払いタブ
 
@@ -115,9 +111,6 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 | Date   | これは、注文が[作成された日です ](../orders/processing-an-order.md)。 |
 | TXN ID | これはトランザクションIDです。                                      |
 | 量      | これは注文の合計金額を指します。                                      |
-
-
-
 
 ## 追加情報
 

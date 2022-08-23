@@ -8,7 +8,7 @@ Liferay DXP 7.4+ は、関連資産としての Commerce Products をサポー�
 
 ## データベースの検索のためにアセットブラウザーを設定する
 
-1. ``[Liferay Home]\osgi\marketplace\` へ移動します。 ``Liferay Home`フォルダーについての詳細は、 [Liferay Home](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) を参照してください。
+1. `[Liferay Home]\osgi\marketplace\` へ移動します。 `Liferay Home`フォルダーについての詳細は、 [Liferay Home](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) を参照してください。
 1. `Liferay Web Experience - Liferay Asset - Impl.lpkg`を検索し、アーカイブマネージャーで開きます。
 1. アーカイブマネージャーウインドウで、`com.liferay.asset.browser.web.jar`を開きます。
 1. テキストエディターを使用して、`portlet.properties`ファイルを開きます。

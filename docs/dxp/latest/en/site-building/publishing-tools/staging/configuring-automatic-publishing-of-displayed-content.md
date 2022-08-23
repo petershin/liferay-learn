@@ -40,7 +40,7 @@ Follow these steps to enable dynamic or manual export for the Asset Publisher wi
 
 1. Check *Enable Manual Export*.
 
-   When enabled, users can manually select which related assets to include in the export.
+   When enabled, users can select which related assets to include in the export manually.
 
 1. Click *Save*.
 

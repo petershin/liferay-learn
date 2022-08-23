@@ -84,13 +84,13 @@ Click on an individual change to view more details. From here, you can also clic
 
 {bdg-secondary}`Available 7.4 U37+ and GA37+`
 
-If a publication includes edits to a Page, you can preview those changes alongside the original version of the Page. To do this, click the edited Page while reviewing changes.
+If a publication includes edits to a page, you can preview those changes alongside the original version of the page. To do this, click the edited page while reviewing changes.
 
-![View Page versions in the Display tab.](./making-and-publishing-changes/images/07.png)
+![View page versions in the Display tab.](./making-and-publishing-changes/images/07.png)
 
-Once selected, you can view each Page version individually or select Split View to see both versions side by side.
+Once selected, you can view each page version individually or select Split View to see both versions side by side.
 
-![View each Page version individually, or select Split View to see them side by side.](./making-and-publishing-changes/images/08.png)
+![View each page version individually, or select Split View to see them side by side.](./making-and-publishing-changes/images/08.png)
 
 ## Publishing Your Changes
 
@@ -108,7 +108,7 @@ Follow these steps to publish changes immediately:
 
 1. Click on *Publish*.
 
-   ![Navigate to the desired publication, and click on Publish.](./making-and-publishing-changes/images/09.png)
+   ![Navigate to the desired publication and click on Publish.](./making-and-publishing-changes/images/09.png)
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
@@ -128,7 +128,7 @@ Follow these steps to schedule publishing for a later time.
 
 1. Click on *Schedule*.
 
-   ![Navigate to the desired publication, and click on Schedule.](./making-and-publishing-changes/images/11.png)
+   ![Navigate to the desired publication and click on Schedule.](./making-and-publishing-changes/images/11.png)
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 

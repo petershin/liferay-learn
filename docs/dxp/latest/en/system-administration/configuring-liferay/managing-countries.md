@@ -2,21 +2,21 @@
 
 {bdg-secondary}`Available Liferay DXP 7.4 U36/Liferay Portal 7.4 GA36 and above`
 
-Liferay ships with a list of available countries as defined by the [ISO 3166 Standard](https://www.iso.org/iso-3166-country-codes.html). If you have a need to modify an existing entry or add a new entry, use the Countries Management App.
+Liferay contains a list of available countries as defined by the [ISO 3166 Standard](https://www.iso.org/iso-3166-country-codes.html), but you can use the Countries Management app to modify an existing entry or add a new entry. 
 
 ## Enable the Countries Management App
 
 By default, the Countries Management App is hidden from the UI. To enable the UI,
 
 1. Add the following property to your [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) file: 
-   
+
    `feature.flag.LPS-122223=true` 
 
-   If using Docker, use the following [`Environmental Variable`](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#portal-properties) upon first startup:
+   If using Docker, use the following [`Environment Variable`](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#portal-properties) upon first startup:
 
    `--env LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER2__NUMBER2__NUMBER2__NUMBER2__NUMBER3_=true`
 
-1. Restart your server. The app is now visible.
+1. Restart your server. The app now appears.
 
    ![See the Countries Management app in the UI.](./managing-countries/images/01.png)
 
@@ -30,13 +30,13 @@ By default, the Countries Management App is hidden from the UI. To enable the UI
 
 ## Deactivate a Country
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Configuration* &rarr; *Countries Management*
-   
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Configuration* &rarr; *Countries Management*. 
+
 1. Locate a country by scrolling through the list of countries. Use the search bar to locate a specific country quickly.
 
 1. Click _Options_ (![Options icon](../../images/icon-options.png)) on the Country and click _Deactivate_. 
 
-1. Click _OK_ to confirm and the country is deactivated.
+1. Click _OK_ to confirm, and the country is deactivated.
 
 ## Activate a Country
 
@@ -48,7 +48,7 @@ By default, the Countries Management App is hidden from the UI. To enable the UI
 
 ## Delete a Country
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Configuration* &rarr; *Countries Management*
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Configuration* &rarr; *Countries Management*. 
 
 1. Locate a country by scrolling through the list of countries. Use the search bar to locate a specific country quickly.
 
@@ -64,10 +64,10 @@ Make sure you intend to delete an entry before you click _OK_. The entry cannot 
 
 1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Configuration* &rarr; *Countries Management*
 
-1. Click _Add_ (![Add icon](../../images/icon-add.png)) next to the search bar. A new page will appear to add a country.
+1. Click _Add_ (![Add icon](../../images/icon-add.png)) next to the search bar. A new page appears for adding a country.
 
-   ![A new page appears to add a country.](./managing-countries/images/02.png)
+   ![A new page appears for adding a country.](./managing-countries/images/02.png)
 
-1. Fill in the different fields to add a new country. Note, Name, Two-Letter ISO Code, Three-Letter ISO Code, and Number are required fields.
+1. Complete the form to add a new country. Name, Two-Letter ISO Code, Three-Letter ISO Code, and Number are required fields.
 
-1. Click _Save_ and the new country has been added.
+1. Click _Save_, and the new country has been added.

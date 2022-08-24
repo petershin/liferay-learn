@@ -12,7 +12,7 @@ Site Building
    site-building/site_navigation.rst
    site-building/personalizing-site-experience.md
    site-building/publishing_tools.rst
-   site-building/optimizing_sites.rst
+   site-building/optimizing-sites.md
    site-building/site_settings.rst
    site-building/developer_guide.rst
    

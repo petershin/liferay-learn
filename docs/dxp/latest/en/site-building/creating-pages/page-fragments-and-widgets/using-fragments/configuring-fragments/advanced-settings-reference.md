@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available 7.4 DXP U23+ or 7.4 GA23+`
 
-The *Advanced* Settings tab for page fragments provides fields for more complex or technical configurations. For example, advanced settings may alter the way web browsers handle the fragment's HTML.
+The Advanced Settings tab for page fragments provides fields for more complex or technical configurations. For example, advanced settings may alter the way web browsers handle the fragment's HTML.
 
 Follow these steps to access a fragment's Advanced Settings menu:
 
@@ -18,7 +18,7 @@ Follow these steps to access a fragment's Advanced Settings menu:
 
 ## HTML Tag
 
-Several HTML tags exist that allow web scrapers, browsers, and site renderers to more easily find and retrieve what kind of content is on a page. *Container* page fragments provide the option to choose which tag is generated for the container fragment's HTML element on the page.
+Several HTML tags exist that allow web scrapers, browsers, and site renderers to find and retrieve what kind of content is on a page more easily. *Container* page fragments provide the option to choose which tag is generated for the container fragment's HTML element on the page.
 
 | Field | Description |
 | :--- | :--- |
@@ -34,7 +34,7 @@ The tag chosen only applies to the container fragment itself, not to any other f
 
 {bdg-secondary}`Available 7.4 DXP U34+ or 7.4 GA34+`
 
-You can add custom CSS fo fragments under *CSS* in the Advanced configuration tab, in the *Custom CSS* text box. Using this field requires the UPDATE permission for fragments.
+You can add custom CSS to fragments under CSS in the Advanced configuration tab, in the Custom CSS text box. Using this field requires the UPDATE permission for fragments.
 
 By default, the Custom CSS text box contains this placeholder CSS:
 
@@ -64,9 +64,9 @@ When the page renders, `[$FRAGMENT_CLASS$]` is replaced with the fragment's actu
 Click the *Expand* icon above the text box to open a modal on the screen, to give you more space to edit the custom CSS for your fragment.
 ```
 
-You can also use variables in your custom CSS that come from the [Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) you are currently using. This example uses the *Info* color from a Style Book (defined as dark blue) to set a fragment's background color:
+You can also use variables in your custom CSS that come from the [style book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) you are currently using. This example uses the Info color from a style book (defined as dark blue) to set a fragment's background color:
 
-![You can use variables from your Style Book to fine-tune the CSS for specific fragments.](./advanced-settings-reference/images/03.png)
+![You can use variables from your style book to fine-tune the CSS for specific fragments.](./advanced-settings-reference/images/03.png)
 
 ### Custom CSS Classes
 

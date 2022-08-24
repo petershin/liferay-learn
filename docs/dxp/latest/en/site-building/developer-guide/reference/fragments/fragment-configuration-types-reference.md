@@ -5,6 +5,7 @@ This reference list the available configuration types for Fragments. See [Adding
 These are the configurable Fragment types available to implement:
 
 - `checkbox`
+- `colorPicker` (Available Liferay DXP 7.4+)
 - `colorPalette`
 - `itemSelector` (Available Liferay DXP 7.3+)
 - `select`
@@ -41,9 +42,58 @@ This JSON configuration creates a checkbox you can implement for cases where a b
 
 ![The Checkbox configuration is useful when a boolean selection is necessary.](./fragment-configuration-types-reference/images/01.png)
 
+## Color Picker Configuration
+
+{bdg-secondary}`Available Liferay DXP 7.4+`
+
+The color picker JSON configuration creates a flexible color selector that can allows any color to be selected. You can use any of these methods to select a color with this selector:
+
+* Click the color on the left side to open a color picker, and choose any color.
+
+* Enter the hex code for the desired color into the text box to change to any color.
+
+* Click the *Value from Stylebook* button to open a menu of pre-defined colors to choose from. You can select any color configured in your currently used [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). This links the field's value to the selected token, until you press the button again to unlink it.
+
+![The color picker configuration lets you directly input a color value, select one from a range, or select one from your Style Book.](./fragment-configuration-types-reference/images/02.png)
+
+This JSON configuration creates a color picker field called `headingColor`:
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "headingColor",
+                    "label": "Heading Color",
+                    "description": "heading-color",
+                    "type": "colorPicker",
+                    "defaultValue": "#FF0000"
+                }
+                ...
+            ]
+        }
+    ]
+}
+```
+
+The `colorPicker` type stores an object with the configured name that holds the currently chosen color's value. You can reference this object in your fragment's HTML like this:
+
+```html
+<div class="fragment_69">
+    <h1 style="color: ${configuration.headingColor}">
+        This text's color is configurable.
+    </h1>
+</div>
+```
+
+When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is replaced with the chosen color. If you chose a color directly, then it is replaced with the corresponding hex code value. If you chose a color from the current Style Book, then it replaced with a CSS variable for the linked token (for example, `var(--danger)`).
+
 ## Color Palette Configuration
 
-This JSON configuration creates a color selector you can implement for cases where you must select a color:
+The color palette JSON configuration creates a color selector you can implement for cases where you must select a color. Unlike the [color picker configuration](#color-picker-configuration), it only provides options based on the Theme Colors configured in the currently used [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)'s color system.
+
+This configuration creates a color palette field called `textColor`:
 
 ```json
 {
@@ -77,7 +127,7 @@ For example, if you implement the snippet above, you can use it in the FreeMarke
 
 If you were to choose the color white, the `h3` tag heading would have the class `text-white'`.
 
-![The Color Palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/02.png)
+![The Color Palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/03.png)
 
 ## Item Selector Configuration
 
@@ -175,7 +225,7 @@ in the example below). This example renders the title, description, and body of 
 </div>
 ```
 
-![The Item Selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/03.png)
+![The Item Selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/04.png)
 
 ## Select Configuration
 
@@ -208,7 +258,7 @@ This JSON configuration creates a selector you can implement for cases where you
 }
 ```
 
-![The Select configuration is useful when an option choice is necessary.](./fragment-configuration-types-reference/images/04.png)
+![The Select configuration is useful when an option choice is necessary.](./fragment-configuration-types-reference/images/05.png)
 
 ## Text Configuration
 
@@ -237,7 +287,7 @@ This JSON configuration creates an input text field you can implement for cases 
 }
 ```
 
-![The Text configuration is useful when an input text option is necessary.](./fragment-configuration-types-reference/images/05.png)
+![The Text configuration is useful when an input text option is necessary.](./fragment-configuration-types-reference/images/06.png)
 
 ## Video Selector
 
@@ -303,7 +353,7 @@ This is useful when you want a Fragment that has an embedded video by default. T
 }
 ```
 
-![With the Video Selector you can include External Videos in Fragments](./fragment-configuration-types-reference/images/06.png)
+![With the Video Selector you can include External Videos in Fragments](./fragment-configuration-types-reference/images/07.png)
 
 ```{note}
 The `videoSelector` type is compatible with the [External Video](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) Fragment, but not with the [Video URL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) Fragment.
@@ -356,7 +406,7 @@ To reference this Collection in the HTML, use the Collection `name` in the JSON 
 </div>
 ```
 
-![You can develop a Fragment with a Collection selector using the Collection configuration.](./fragment-configuration-types-reference/images/07.png)
+![You can develop a Fragment with a Collection selector using the Collection configuration.](./fragment-configuration-types-reference/images/08.png)
 
 You can also filter the Collection selector using `itemType` in the `collectionSelector` configuration. For example, if you have different Collections including Web Content and Blogs, you can restrict the Collection selector to show only Blog Collections. This JSON sample illustrates this configuration:
 
@@ -381,7 +431,7 @@ You can also filter the Collection selector using `itemType` in the `collectionS
 
 Using this sample configuration, Collections including both Web Content and Blogs are filtered out of the Collection selector because the Collection type is Asset.
 
-![A Collection including Web Content and Blog entries corresponds to the Asset type.](./fragment-configuration-types-reference/images/08.png)
+![A Collection including Web Content and Blog entries corresponds to the Asset type.](./fragment-configuration-types-reference/images/09.png)
 
 ```{tip}
 In addition to the `itemTime`, you can specify the `itemSubtype` in the configuration. The `itemSubtype` corresponds to the Asset `classPK`.
@@ -392,3 +442,4 @@ In addition to the `itemTime`, you can specify the `itemSubtype` in the configur
 - [Developing Fragments](../../developing-page-fragments/developing-fragments-intro.md)
 - [Fragment Specific Tags Reference](./fragment-specific-tags-reference.md)
 - [Page Fragment Editor Interface Reference](./page-fragment-editor-interface-reference.md)
+- [Using a Style Book to Standardize Site Appearance](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)

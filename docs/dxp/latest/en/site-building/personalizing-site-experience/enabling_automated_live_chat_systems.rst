@@ -5,7 +5,7 @@ Enabling Automated Live Chat Systems
    :maxdepth: 3
 
    enabling-automated-live-chat-systems/enabling-automated-live-chat-systems.md
-   enabling-automated-live-chat-systems/getting_a_chat_provider_account_id.rst
+   enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
 
 -  :doc:`/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/enabling-automated-live-chat-systems`
 

@@ -1,6 +1,16 @@
+---
+toc:
+- ./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
+---
 # Enabling Automated Live Chat Systems
 
- > Available: Liferay Portal 7.4 GA2+
+```{toctree}
+:maxdepth: 3
+
+enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
+```
+
+{bdg-secondary}`Available Liferay 7.4+`
 
 Liferay now offers integration with a number of live support chat platforms. Enabling this integration adds a chat window to sites on your Liferay instance and can be used to enable improved support and site experience for your users.
 
@@ -8,7 +18,7 @@ Liferay now offers integration with a number of live support chat platforms. Ena
 
 To enable Click To Chat go to *Instance Settings*.
 
-1. Go to the *Global Menu* (![icon](../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings*.
+1. Go to the *Global Menu* (![icon](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings*.
 
     ![Go to Instance Settings under Control Panel.](./enabling-automated-live-chat-systems/images/02.png)
 
@@ -20,7 +30,7 @@ To enable Click To Chat go to *Instance Settings*.
 
     ![Toggle the switch on to enable Click to Chat.](./enabling-automated-live-chat-systems/images/04.png)
 
-1. Once enabled, you must select a [Site Settings](../../site_settings.html) Strategy. Your Site Settings strategy determines how Click to Chat is enabled across sites that exist on a given [Liferay instance](../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md).
+1. Once enabled, you must select a [Site Settings](../site_settings.html) Strategy. Your Site Settings strategy determines how Click to Chat is enabled across sites that exist on a given [Liferay instance](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md).
 
     ![Choose your Site Settings Strategy option.](./enabling-automated-live-chat-systems/images/05.png)
 
@@ -44,13 +54,13 @@ Click To Chat integration with your live chat provider is now configured.
 
 If you are unsure how to get the Account ID or Token for your chat provider see the following articles for available Chat Providers:
 
-* [Chatwoot](./getting-a-chat-provider-account-id/chatwoot.md)
-* [Crisp](./getting-a-chat-provider-account-id/crisp.md)
-* [Hubspot](./getting-a-chat-provider-account-id/hubspot.md)
-* [Jivochat](./getting-a-chat-provider-account-id/jivochat.md)
-* [LiveChat](./getting-a-chat-provider-account-id/livechat.md)
-* [LivePerson](./getting-a-chat-provider-account-id/liveperson.md)
-* [Smartsupp](./getting-a-chat-provider-account-id/smartsupp.md)
-* [Tawk.to](./getting-a-chat-provider-account-id/tawk-to.md)
-* [Tidio](./getting-a-chat-provider-account-id/tidio.md)
-* [Zendesk](./getting-a-chat-provider-account-id/zendesk.md)
+* [Chatwoot](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/chatwoot.md)
+* [Crisp](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/crisp.md)
+* [Hubspot](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/hubspot.md)
+* [Jivochat](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/jivochat.md)
+* [LiveChat](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat.md)
+* [LivePerson](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/liveperson.md)
+* [Smartsupp](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/smartsupp.md)
+* [Tawk.to](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/tawk-to.md)
+* [Tidio](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/tidio.md)
+* [Zendesk](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/zendesk.md)

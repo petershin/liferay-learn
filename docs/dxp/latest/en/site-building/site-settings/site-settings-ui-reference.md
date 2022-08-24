@@ -124,7 +124,7 @@ By default, the Content and Data area includes the following settings:
 
 > Available: Liferay 7.4 GA2+
 
-You can integrate Liferay DXP with a number of live support chat platforms. The configuration at Site scope depends on the Click to Chat configuration at Instance scope. For more information, read [Enabling Automated Live Chat Systems](../personalizing-site-experience/enabling-automated-live-chat-systems/enabling-automated-live-chat-systems.md).
+You can integrate Liferay DXP with a number of live support chat platforms. The configuration at Site scope depends on the Click to Chat configuration at Instance scope. For more information, read [Enabling Automated Live Chat Systems](../personalizing-site-experience/enabling-automated-live-chat-systems.md).
 
 You can see the type of configuration for this setting at the Instance scope under the Site Settings Strategy text:
 

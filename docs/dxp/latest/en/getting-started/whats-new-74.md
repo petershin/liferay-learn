@@ -215,7 +215,7 @@ There is also a full backwards compatibility: the existing behavior is maintaine
 
 ### Click to Chat Integration
 
-An out-of-the-box [integration with a number of chat platforms](../site-building/personalizing-site-experience/enabling-automated-live-chat-systems/enabling-automated-live-chat-systems.md) is available.  Enabling the integration under Instance Settings enables users to chat with representatives at their own convenience.  Please note that a separate subscription with the chat provider is required. The following chat providers are available for OOTB integration:
+An out-of-the-box [integration with a number of chat platforms](../site-building/personalizing-site-experience/enabling-automated-live-chat-systems.md) is available.  Enabling the integration under Instance Settings enables users to chat with representatives at their own convenience.  Please note that a separate subscription with the chat provider is required. The following chat providers are available for OOTB integration:
 
 * Chatwoot
 * Crisp

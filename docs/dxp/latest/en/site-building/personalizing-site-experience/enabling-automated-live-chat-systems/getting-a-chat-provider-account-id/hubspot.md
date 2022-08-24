@@ -32,4 +32,4 @@ While logged in to your Hubspot account:
 
 ## Conclusion
 
-Once you have your User Account ID and your API token, combine them to use as your Chat Provider Account ID when [enabling live chat](../enabling-automated-live-chat-systems.md) with your Liferay instance. The Chat Provider Account ID follows this format: `[Hubspot Account ID]/[Hubspot API Token]`.
+Once you have your User Account ID and your API token, combine them to use as your Chat Provider Account ID when [enabling live chat](../../enabling-automated-live-chat-systems.md) with your Liferay instance. The Chat Provider Account ID follows this format: `[Hubspot Account ID]/[Hubspot API Token]`.

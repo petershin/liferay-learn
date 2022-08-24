@@ -10,7 +10,7 @@ Site Building
    site-building/displaying-content.md
    site-building/site_appearance.rst
    site-building/site_navigation.rst
-   site-building/personalizing_site_experience.rst
+   site-building/personalizing-site-experience.md
    site-building/publishing_tools.rst
    site-building/optimizing_sites.rst
    site-building/site_settings.rst

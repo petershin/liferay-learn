@@ -1,6 +1,6 @@
 # Crisp
 
-[Crisp](https://crisp.chat/) is a multi-channel messaging platform. This article documents how to locate your Crisp account ID in order to [enable integration](../enabling-automated-live-chat-systems.md) with your Liferay instance.
+[Crisp](https://crisp.chat/) is a multi-channel messaging platform. This article documents how to locate your Crisp account ID in order to [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.
 
 ## Locating your Crisp Account ID
 
@@ -16,6 +16,6 @@
 
 1. Click *Setup instructions*.
 
-   Look for the Website ID field. The value provided, highlighted in the screenshot, can be used as the Chat Provider *Account ID* to [enable automated live chat integration](../enabling-automated-live-chat-systems.md) with your Liferay instance.
+   Look for the Website ID field. The value provided, highlighted in the screenshot, can be used as the Chat Provider *Account ID* to [enable automated live chat integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.
 
     ![Click on Setup instructions to find your Account ID.](./crisp/images/03.png)

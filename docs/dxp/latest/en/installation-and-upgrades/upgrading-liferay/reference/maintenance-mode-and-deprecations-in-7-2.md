@@ -42,7 +42,7 @@ Here are the features deprecated in 7.2:
 | Feature |  Availability |  Notes |
 | :--- | :--- | :--- |
 | AlloyUI | Bundled | Replaced by [MetalJS](http://metaljs.com/) (temporary) exposed as [ClayUI tag](https://clayui.com/) equivalents. |
-| Audience Targeting | Removed | Replaced by [Personalization](../../../site-building/personalizing-site-experience/personalizing-site-experience.md) (see [Migrating from Audience Targeting](https://help.liferay.com/hc/en-us/articles/360028711992-Manually-Migrating-from-Audience-Targeting)). |
+| Audience Targeting | Removed | Replaced by [Personalization](../../../site-building/personalizing-site-experience.md) (see [Migrating from Audience Targeting](https://help.liferay.com/hc/en-us/articles/360028711992-Manually-Migrating-from-Audience-Targeting)). |
 | Central Authentication Service (CAS) | Bundled | Migrate to [SAML-based authentication](../../securing-liferay/configuring-sso/authenticating-with-saml.md). |
 | CMIS Store | Removed | Migrate to another [File Store option](../../../system-administration/file-storage.md). Before [upgrading to Liferay 7.2](../upgrade-basics.md), [migrate your File Store data](../../../system-administration/file-storage/file-store-migration.md). |
 | Google Login/SSO | Marketplace | Replaced by [OpenID Connect](../../securing-liferay/configuring-sso/using-openid-connect.md). |

@@ -2,7 +2,7 @@
 
 > Available: Liferay DXP 7.2 SP2+, Liferay CE 7.3.1 GA2
 
-User Segments are dynamically assigned User collections. If a [Segment can be well-defined with the available criteria](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), the administrative overhead of User management can be greatly reduced. On top of this, you can define [personalized experiences](../../site-building/personalizing-site-experience/personalizing-site-experience.md) for User Segments created at the Site scope, ensuring that Users see the most relevant content in your Site.
+User Segments are dynamically assigned User collections. If a [Segment can be well-defined with the available criteria](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), the administrative overhead of User management can be greatly reduced. On top of this, you can define [personalized experiences](../../site-building/personalizing-site-experience.md) for User Segments created at the Site scope, ensuring that Users see the most relevant content in your Site.
 
 | Where Do I Create User Segments? | What Are They For? | Where Do I Assign Roles To a Segment? |
 | :--- | :--- | :--- |

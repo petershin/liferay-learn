@@ -2,7 +2,7 @@
 toc:
 0: other-tools/liferay-cli-tool.md
 1: other-tools/liferay-js-generator.md
-2: other-tools/liferay_npm_bundler.rst
+2: other-tools/liferay **npm** bundler.rst
 3: other-tools/intellij-plugin.md
 4: other-tools/theme-generator.md
 5: other-tools/maven-plugins.md
@@ -33,15 +33,15 @@ other-tools/sync.md
 
 * [フラグメントCLI](./other-tools/fragments-cli.md)
 * [Liferay CLI ツール](./other-tools/liferay-cli-tool.md)
-* [Liferay JS Generator](./other-tools/liferay-js-generator.md)
+* [Liferay JS Generator (近日公開！)](./other-tools/liferay-js-generator.md)
 * [IntelliJプラグイン](./other-tools/intellij-plugin.md)
 * [テーマジェネレーター](./other-tools/theme-generator.md)
 * [Mavenプラグイン](./other-tools/maven-plugins.md)
 * [Gradleプラグイン](./other-tools/gradle-plugins.md)
-* [Screens](./other-tools/screens.md)
+* [Screens (近日公開！)](./other-tools/screens.md)
 * [モバイルSDK](./other-tools/mobile-sdk.md)
 * [プッシュ](./other-tools/push.md)
-* [Sync](./other-tools/sync.md)
+* [Sync (近日公開！)](./other-tools/sync.md)
 
 ## Liferay npm Bundler
 
@@ -58,7 +58,7 @@ other-tools/sync.md
 
 ### バンドラー移行ガイド
 
-* [Migrating a liferay-npm-bundler Project from 1.x to 2.x](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-bundler-projects-intro.md)
+* [1.xから2.xへのliferay-npm-bundlerプロジェクトの移行](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-bundler-projects-intro.md)
 * [liferay-npm-bundlerの新しいモードを使用するためのプロジェクトの移行](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-to-the-new-mode.md)
 * [Angularプロジェクトを移行してLiferay npm Bundler 2.xを使用する](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-angular-bundler.md)
 * [プレーンJavaScript、Billboard JS、JQuery、Metal JS、React、またはVue JSプロジェクトを移行してLiferay npm Bundler 2.xを使用する](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-plain-js-billboard-jquery-metal-js-react-vue-bundler.md)

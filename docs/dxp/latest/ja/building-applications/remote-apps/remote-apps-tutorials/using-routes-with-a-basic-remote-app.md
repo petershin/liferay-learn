@@ -1,6 +1,6 @@
 # 基本のリモートアプリケーションによるルーティングの使用
 
-リモートアプリケーションは、Liferayのフロントエンド基盤を利用して、外部アプリケーションをLiferayプラットフォームに登録し、ウィジェットとして描画します。 複数のルーティングを含むアプリケーション（例： [React Router](https://reactrouter.com/)）では、実行時にウィジェットに使用するルーティングを決定するために、リモートアプリケーションのプロパティを定義することができます。 これらのプロパティは、リモートアプリケーションまたはデプロイされたのウィジェットの設定オプションを使用して、アプリケーションに設定することができます。
+リモートアプリケーションは、Liferayのフロントエンド基盤を利用して、外部アプリケーションをLiferayプラットフォームに登録し、ウィジェットとして描画します。 複数のルーティングを含むアプリケーション（例： [React Router](https://reactrouter.com/) ）では、実行時にウィジェットに使用するルーティングを決定するために、リモートアプリケーションのプロパティを定義することができます。 これらのプロパティは、リモートアプリケーションまたはデプロイされたのウィジェットの設定オプションを使用して、アプリケーションに設定することができます。
 
 このチュートリアルでは、Liferayの`create_remote_app.sh`スクリプトを使用して基本のReactアプリケーションを作成し、`hello-world`、`hello-foo`、`hello-bar`の3つのルーティングを持つサンプルのアプリを生成します。 アプリケーションをコンパイルし、`.js`と`.css`ファイルをホストしたら、アプリケーションをリモートアプリケーションに登録して、ページウィジェットとしてデプロイします。 最後に、それぞれの代替ルーティングを使用するように設定します。
 
@@ -10,7 +10,7 @@
 Liferayリモートアプリケーションは、アプリケーションの構築、パッケージ化、ホスティングの方法にとらわれません。 このチュートリアルでは、リモートアプリケーションのサンプルを作成するための便利な方法のみを紹介します。
 ```
 
-`create_remote_app.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/)、 [NPM](https://www.npmjs.com/)、および [YARN](https://classic.yarnpkg.com/)が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
+`create_remote_app.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/) 、 [NPM](https://www.npmjs.com/) 、および [YARN](https://classic.yarnpkg.com/) が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
 
 ## Reactアプリケーションの作成、構築、ホスティング
 
@@ -138,7 +138,7 @@ J1V3-Remote-Appはインスタンス化可能なので、1つのページに多�
 
 ## `ルート`プロパティを使用する場合
 
-自動生成されたアプリには、3つのルートが含まれています。 `hello-world`、`hello-foo`、`hello-bar`です。 デフォルトでは、アプリケーションは`hello-world`ルートを使用します。 ただし、リモートアプリケーションのプロパティを使用して、別のルートを使用するように設定することができます。 これらのプロパティは、[リモートアプリケーション](#defining-a-route-property-via-remote-apps)または [ウィジェットの設定オプション](#defining-a-route-property-via-widget-configuration)で設定することが可能です。
+自動生成されたアプリには、3つのルートが含まれています。 `hello-world`、`hello-foo`、`hello-bar`です。 デフォルトでは、アプリケーションは`hello-world`ルートを使用します。 ただし、リモートアプリケーションのプロパティを使用して、別のルートを使用するように設定することができます。 これらのプロパティは、 [リモートアプリケーション](#defining-a-route-property-via-remote-apps) または [ウィジェットの設定オプション](#defining-a-route-property-via-widget-configuration) で設定することが可能です。
 
 ### リモートアプリケーションでルートプロパティを定義する
 
@@ -183,7 +183,7 @@ J1V3-Remote-Appはインスタンス化可能なので、1つのページに多�
     :lines: 1-34
 ```
 
-この`index.js`ファイルは`WebComponent`クラスを作成し、`HTMLElement`インターフェイスを拡張します。 このクラスは、インターフェースの[`connectedCallback()`](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks)関数を実装し、`App`をパラメータとして[`ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render)に呼び出します。 `App`が呼び出されると、定義された`"route"`属性がないか調べ、その値と利用可能なルートを比較します。 `hello-foo`または`hello-bar`のいずれかにマッチすれば、該当するルートを返して描画します。 そうでない場合は、`hello-world`を返して描画します。
+この`index.js`ファイルは`WebComponent`クラスを作成し、`HTMLElement`インターフェイスを拡張します。 このクラスは、インターフェースの [`connectedCallback()`](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) 関数を実装し、`App`をパラメータとして [`ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render) に呼び出します。 `App`が呼び出されると、定義された`"route"`属性がないか調べ、その値と利用可能なルートを比較します。 `hello-foo`または`hello-bar`のいずれかにマッチすれば、該当するルートを返して描画します。 そうでない場合は、`hello-world`を返して描画します。
 
 各ルートは、`index.js`ファイルに`routes`フォルダーからインポートされます。
 

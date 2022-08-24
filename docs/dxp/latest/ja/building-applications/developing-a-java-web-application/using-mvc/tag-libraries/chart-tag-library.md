@@ -33,7 +33,7 @@ chart-tag-library/step-chart.md
 chart-tag-library/refreshing-charts-to-reflect-real-time-data.md
 ```
 
-線、スプライン、棒、パイなど、チャートタグライブラリは、データのモデル化に必要なものを提供します。 各taglibは、対応する[Clayコンポーネント](https://github.com/liferay/clay/tree/2.x-stable/packages/clay-charts/src)へのアクセスを提供します。 これらのコンポーネントには、UIのデフォルト構成が含まれています。
+線、スプライン、棒、パイなど、チャートタグライブラリは、データのモデル化に必要なものを提供します。 各taglibは、対応する [Clayコンポーネント](https://github.com/liferay/clay/tree/2.x-stable/packages/clay-charts/src) へのアクセスを提供します。 これらのコンポーネントには、UIのデフォルト構成が含まれています。
 
 アプリでChart taglibを使用するには、JSPに次の宣言を追加します。
 

@@ -105,6 +105,6 @@
 
 ## 関連トピック
 
-* [Chart Tag library](../chart-tag-library.md)
+* [チャートタグライブラリ](../chart-tag-library.md)
 * [Frontend Tag Library](../liferay-frontend-tag-library.md)
 * [Clayタグライブラリ](../clay-tag-library.md)

@@ -7,7 +7,7 @@
 サンプルプロジェクトをダウンロードして解凍します。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-y7g4.zip -O
+curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-y7g4.zip -O
 ```
 
 ```bash
@@ -117,7 +117,7 @@ y7g4-service
 | `name` | インスタンスの名前（文字列）です。 |
 | `description` | インスタンスの説明 (文字列) です。 |
 
-`service.xml` 要素の詳細については、[Liferayサービスビルダー DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html)を参照してください。
+`service.xml` 要素の詳細については、 [Liferayサービスビルダー DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html) を参照してください。
 
 ## 永続化コードの生成
 
@@ -221,7 +221,7 @@ SQLスクリプトと永続性構成が`resources/META-INF`フォルダに生成
 </hibernate-mapping>
 ```
 
-`module-hbm.xml`ファイルは、`Y7G4EntryImpl`オブジェクトを`Y7G4_Y7G4Entry`テーブルにマップします。 Hibernateでのマッピングの詳細については、[Hibernate](https://hibernate.org)をご覧ください。
+`module-hbm.xml`ファイルは、`Y7G4EntryImpl`オブジェクトを`Y7G4_Y7G4Entry`テーブルにマップします。 Hibernateでのマッピングの詳細については、 [Hibernate](https://hibernate.org) をご覧ください。
 
 `tables.sql`スクリプトは、`Y7G4_Y7G4Entry`テーブルを指定します。
 

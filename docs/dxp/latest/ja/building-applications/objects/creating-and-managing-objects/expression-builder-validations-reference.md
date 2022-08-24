@@ -30,7 +30,7 @@ condition(<condition>, <return-value>)
 
 ### Contains (with Text)
 
-テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。 If the field *does not* contain the value, it returns `false`.
+テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。 If the field **does not** contain the value, it returns `false`.
 
 ```
 contains(<textField>, "<string>")
@@ -38,7 +38,7 @@ contains(<textField>, "<string>")
 
 ### Does Not Contain (with Text)
 
-テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。  If the field *does* contain the value, it returns `false`.
+テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。  If the field **does** contain the value, it returns `false`.
 
 ```
 NOT(contains(<textField>, "<string>"))
@@ -70,7 +70,7 @@ isEmpty(<textField>)
 
 ### Is Equal To (with Text)
 
-テキストフィールドが特定のString値に等しいかどうかを確認し、ブール値を返します。 If they *are not* equal, it returns `false`.
+テキストフィールドが特定のString値に等しいかどうかを確認し、ブール値を返します。 If they **are not** equal, it returns `false`.
 
 ```
 <textField> == "<string>"
@@ -78,7 +78,7 @@ isEmpty(<textField>)
 
 ### Is Not Equal To (with Text)
 
-テキストフィールドが特定のString値と異なるかどうかを確認し、ブール値を返します。 If they *are* equal, it returns `false`.
+テキストフィールドが特定のString値と異なるかどうかを確認し、ブール値を返します。 If they **are** equal, it returns `false`.
 
 ```
 <textField> != "<string>"
@@ -108,7 +108,7 @@ condition(<condition>, <return-value>)
 
 ### Contains (with Numeric)
 
-数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 If the field *does not* contain the value, it returns `false`.
+数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 If the field **does not** contain the value, it returns `false`.
 
 ```
 contains(<numericField>, <number>)
@@ -116,7 +116,7 @@ contains(<numericField>, <number>)
 
 ### Does not Contain (with Numeric)
 
-数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 If the field *does* contain the value, it returns `false`.
+数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 If the field **does** contain the value, it returns `false`.
 
 ```
 NOT(contains(<numericField>, <number>))
@@ -124,7 +124,7 @@ NOT(contains(<numericField>, <number>))
 
 ### 小数である
 
-数値フィールドが小数であるかどうかを確認し、ブール値を返します。 If the field *is not* a decimal, it returns `false`.
+数値フィールドが小数であるかどうかを確認し、ブール値を返します。 If the field **is not** a decimal, it returns `false`.
 
 ```
 isDecimal(<numericField>)
@@ -132,7 +132,7 @@ isDecimal(<numericField>)
 
 ### 整数である
 
-数値フィールドが整数であるかどうかを確認し、ブール値を返します。 If the field *is not* an integer, it returns `false`.
+数値フィールドが整数であるかどうかを確認し、ブール値を返します。 If the field **is not** an integer, it returns `false`.
 
 ```
 isInteger(<numericField>)
@@ -140,7 +140,7 @@ isInteger(<numericField>)
 
 ### Is Equal To (with Numeric)
 
-数値フィールドが特定の数値に等しいかどうかを確認し、ブール値を返します。 If they *are not* equal, it returns `false`.
+数値フィールドが特定の数値に等しいかどうかを確認し、ブール値を返します。 If they **are not** equal, it returns `false`.
 
 ```
 <numericField> == <number>
@@ -148,7 +148,7 @@ isInteger(<numericField>)
 
 ### Is Not Equal To (with Numeric)
 
-数値フィールドが特定の数値と異なるかどうかを確認し、ブール値を返します。 If they *are* equal, it returns `false`.
+数値フィールドが特定の数値と異なるかどうかを確認し、ブール値を返します。 If they **are** equal, it returns `false`.
 
 ```
 <numericField> != <number>
@@ -156,7 +156,7 @@ isInteger(<numericField>)
 
 ### 以上
 
-数値フィールドが特定の数値より大きいかどうかを確認し、ブール値を返します。 If the field *is not* greater, it returns `false`.
+数値フィールドが特定の数値より大きいかどうかを確認し、ブール値を返します。 If the field **is not** greater, it returns `false`.
 
 ```
 <numericField> > <number>
@@ -164,7 +164,7 @@ isInteger(<numericField>)
 
 ### 以上もしくは等しい
 
-数値フィールドが特定の数値以上もしくは等しいかどうかを確認し、ブール値を返します。 If the field *is not* equal or greater, it returns `false`.
+数値フィールドが特定の数値以上もしくは等しいかどうかを確認し、ブール値を返します。 If the field **is not** equal or greater, it returns `false`.
 
 ```
 <numericField> >= <number>
@@ -172,7 +172,7 @@ isInteger(<numericField>)
 
 ### 以下
 
-数値フィールドが特定の数値以下かどうかを確認し、ブール値を返します。 If the field *is not* less, it returns `false`.
+数値フィールドが特定の数値以下かどうかを確認し、ブール値を返します。 If the field **is not** less, it returns `false`.
 
 ```
 <numericField> < <number>
@@ -180,7 +180,7 @@ isInteger(<numericField>)
 
 ### 以下もしくは等しい
 
-数値フィールドが特定の数値以下もしくは等しいかどうかを確認し、ブール値を返します。 If the field *is not* equal or less, it returns `false`.
+数値フィールドが特定の数値以下もしくは等しいかどうかを確認し、ブール値を返します。 If the field **is not** equal or less, it returns `false`.
 
 ```
 <numericField> <= <number>
@@ -216,7 +216,7 @@ condition(<condition>, <return-value>)
 
 ### 未来の日付
 
-日付フィールドの値が将来かどうかを確認し、ブール値をします。 If the field *is not* a future date, it returns `false`.
+日付フィールドの値が将来かどうかを確認し、ブール値をします。 If the field **is not** a future date, it returns `false`.
 
 ```
 futureDates(<dateField>, "<yyyy-MM-dd>")
@@ -224,7 +224,7 @@ futureDates(<dateField>, "<yyyy-MM-dd>")
 
 ### 過去の日付
 
-日付フィールドの値が過去かどうかを確認し、ブール値をします。 If the field *is not* a past date, it returns `false`.
+日付フィールドの値が過去かどうかを確認し、ブール値をします。 If the field **is not** a past date, it returns `false`.
 
 ```
 pastDates(<dateField>, "<yyyy-MM-dd>")
@@ -232,7 +232,7 @@ pastDates(<dateField>, "<yyyy-MM-dd>")
 
 ### 範囲
 
-日付の範囲が過去の日付で始まり、未来の日付で終わるかどうかを確認します。 If the field *is not* within the date range, it returns `false`.
+日付の範囲が過去の日付で始まり、未来の日付で終わるかどうかを確認します。 If the field **is not** within the date range, it returns `false`.
 
 ```
 pastDates(<dateField>, "<yyyy-MM-dd>")

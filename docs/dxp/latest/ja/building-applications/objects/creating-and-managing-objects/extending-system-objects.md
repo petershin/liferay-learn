@@ -6,7 +6,7 @@ Liferay Objectを使用すると、サポートされているシステムサー
 
 ![オブジェクトフレームワークと統合されたシステムサービスを拡張します。](./extending-system-objects/images/01.png)
 
-システムオブジェクトを拡張する場合、[リレーションシップ](#adding-relationships)と[アクション](#adding-actions)を追加することができます。<!--TASK: You can also access limited \[configuration options\](#additional-configuration-options).-->| 機能        | システムオブジェクト                                                | カスタムオブジェクト |
+システムオブジェクトを拡張する場合、[リレーションシップ](#adding-relationships)と[アクション](#adding-actions)を追加することができます。 <!--TASK: You can also access limited \[configuration options\](#additional-configuration-options).--> | 機能        | システムオブジェクト                                                | カスタムオブジェクト |
 |:--------- |:--------------------------------------------------------- |:---------- |
 | 項目        | <!--TASK: Uncomment once supported: &#10004;--> | &#10004;   |
 | リレーションシップ | &#10004;                                                  | &#10004;   |
@@ -24,10 +24,10 @@ You can add custom fields to system Objects to define additional database column
 
 ## リレーションシップの追加
 
-システムオブジェクトとカスタムオブジェクトの間にリレーションシップを作成し、それらのエンティティをリンクさせることができます。 システムオブジェクトは、*1対多*と*多対多*の両方のリレーションシップをサポートしています。 詳細については、[オブジェクトリレーションシップの定義](./defining-object-relationships.md)を参照してください。
+システムオブジェクトとカスタムオブジェクトの間にリレーションシップを作成し、それらのエンティティをリンクさせることができます。 システムオブジェクトは、 **1対多** と **多対多** の両方のリレーションシップをサポートしています。 詳細については、[オブジェクトリレーションシップの定義](./defining-object-relationships.md)を参照してください。
 
 ```{important}
-システムオブジェクトは[カスタムレイアウト](./designing-object-layouts.md)をサポートしていないため、多対多のリレーションシップ、もしくは一対多のリレーションシップの親側を表示するために[レイアウトタブ](./designing-object-layouts.md#adding-layout-tabs)をオブジェクトに追加することができません。
+システムオブジェクトは[カスタムレイアウト](./designing-object-layouts.md)をサポートしていないため、多対多のリレーションシップ、もしくは一対多のリレーションシップの親側を表示するために [レイアウトタブ](./designing-object-layouts.md#adding-layout-tabs) をオブジェクトに追加することができません。
 ```
 
 ## アクションの追加
@@ -37,7 +37,7 @@ You can add custom fields to system Objects to define additional database column
 <!--TASK: Uncomment once supported.
 ## Additional Configuration Options
 
-When editing a system Object, you can also configure the following settings in the *Details* tab.
+When editing a system Object, you can also configure the following settings in the **Details** tab.
 
 | Field | Description |
 | :--- | :--- |

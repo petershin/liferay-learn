@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.4以降で利用可能`
 
-ここでは、 [Workato](https://www.workato.com/)を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Workatoのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
+ここでは、 [Workato](https://www.workato.com/) を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Workatoのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
 
 ## オブジェクトデータをGoogle シートに同期させる
 
@@ -76,6 +76,6 @@
 
 ## 追加情報
 
-* [Objects](../../../objects.md)
+* [オブジェクト](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
 * [オブジェクト統合を理解する](../../understanding-object-integrations.md)

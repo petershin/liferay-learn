@@ -6,7 +6,7 @@
 
   learn.liferay.comの記事に自分の名前が表示されないことをテストします。 下記の手順で行います。 別のブラウザで手動で操作して手順を確認してください。
 
-  1. [Liferay Learn サイト](http://learn.liferay.com)に移動します。
+  1. [Liferay Learn サイト](http://learn.liferay.com) に移動します。
 
   1. 検索入力フィールドをクリックします。
 

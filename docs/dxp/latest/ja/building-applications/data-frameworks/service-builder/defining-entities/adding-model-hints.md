@@ -16,7 +16,7 @@ Liferayはフォーム項目をレンダリングするときに、構成に基�
 依存性注入としてSpringを選択した場合、Service Builderは、サービスモジュールの ``src/main/resources/META-INF``フォルダに多数のXML構成ファイルを生成します。 Service Builderは、これらのファイルのほとんどを使用して、SpringおよびHibernateの構成を管理します。 SpringまたはHibernateの構成ファイルは変更しないでください。それらへの変更は、Service Builderの実行時に上書きされます。 ただし、``portlet-model-hints.xml`` ファイルは安全に編集できます。
 ```
 
-例として、[ブログアプリサービスモジュールの](https://github.com/liferay/liferay-portal/blob/master/modules/apps/blogs/blogs-service/src/main/resources/META-INF/portlet-model-hints.xml)モデルヒントファイルを考えてみましょう。
+例として、 [ブログアプリサービスモジュールの](https://github.com/liferay/liferay-portal/blob/master/modules/apps/blogs/blogs-service/src/main/resources/META-INF/portlet-model-hints.xml) モデルヒントファイルを考えてみましょう。
 
 ```xml
 <?xml version="1.0"?>
@@ -87,7 +87,7 @@ Liferayはフォーム項目をレンダリングするときに、構成に基�
 
 フィールドにヒントを追加するには、`hint`子要素を追加します。 たとえば、`display-width hint`を追加して、フィールドの表示に使用するピクセル幅を指定できます。 デフォルトのピクセル幅は`350`です。 50ピクセルの`String`フィールドを表示するには、`display-width`という名前の`hint`要素をネストして値`50`を指定します。
 
-フィールドに対するヒントの効果を確認するには、[サービスビルダーを再度実行](../service-builder-basics/generating-model-persistence-and-service-code.md#generate-the-persistence-code)して、[モジュールを再デプロイ](../../../../liferay-internals/fundamentals/module-projects.md#deploy-a-simple-module)します。`display-width`を変更しても、ユーザーが`name`フィールドに入力できる文字数は制限されないことに注意してください。入力フォームのフィールドの幅のみが制御されます。
+フィールドに対するヒントの効果を確認するには、 [サービスビルダーを再度実行](../service-builder-basics/generating-model-persistence-and-service-code.md#generate-the-persistence-code) して、 [モジュールを再デプロイ](../../../../liferay-internals/fundamentals/module-projects.md#deploy-a-simple-module) します。`display-width`を変更しても、ユーザーが`name`フィールドに入力できる文字数は制限されないことに注意してください。入力フォームのフィールドの幅のみが制御されます。
 
 モデルフィールドのデータベース列の最大サイズ（つまり、フィールドに保存できる最大文字数）を構成するには、`max-length`ヒントを使用します。 デフォルトの`max-length`値は、`75`文字です。 `name`フィールドを最大100文字まで保持する場合は、そのフィールドに`max-length`ヒントを追加します。
 
@@ -133,7 +133,7 @@ aui taglibは完全にサポートされており、廃止予定のAlloyUI（Jav
 1つのフォームでClayタグとauiタグを組み合わせて使用できます。 ただし、モデルヒントはauiタグにのみ影響します。
 ```
 
-LiferayDXP/Portalには独自のモデルヒントのファイル[`portal-model-hints.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-model-hints.xml)があることに注意してください。 これは、`portal-impl.jar`の`META-INF`フォルダにあります。 このファイルには多くのヒントの例が含まれているため、`portlet-model-hints.xml`ファイルを作成するときに参照できます。
+LiferayDXP/Portalには独自のモデルヒントのファイル [`portal-model-hints.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-model-hints.xml) があることに注意してください。 これは、`portal-impl.jar`の`META-INF`フォルダにあります。 このファイルには多くのヒントの例が含まれているため、`portlet-model-hints.xml`ファイルを作成するときに参照できます。
 
 ## デフォルトのヒント
 

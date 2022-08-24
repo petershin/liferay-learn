@@ -1,6 +1,6 @@
 # Reactチャートでのオブジェクトデータの使用
 
-ここでは、[オブジェクト](../../objects.md)、[ヘッドレスAPI](../understanding-object-integrations/headless-framework-integration.md)、[リモートアプリケーション](../../remote-apps.md)を使って、データダッシュボード用の動的なグラフを作成する方法を説明します。 まず、オブジェクトAPI 呼び出し用に[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)を有効にして、新しいDXP インスタンスをセットアップします。 次に、データの受信と保存を行うためのオブジェクトを作成します。 REST APIを使ってオブジェクトにデータを追加したら、提供されているReact [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)アプリケーションをダウンロードし、ビルドしてください。 コードがコンパイルされたら、生成された`.js`ファイルをLiferayドキュメントライブラリーでホストし、そのWebDAV URLをコピーします。 最後に、このURLを使ってReactチャートのリモートアプリケーションを作成し、ページウィジェットとしてデプロイします。
+ここでは、[オブジェクト](../../objects.md)、[ヘッドレスAPI](../understanding-object-integrations/headless-framework-integration.md)、[リモートアプリケーション](../../remote-apps.md)を使って、データダッシュボード用の動的なグラフを作成する方法を説明します。 まず、オブジェクトAPI 呼び出し用に [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) を有効にして、新しいDXP インスタンスをセットアップします。 次に、データの受信と保存を行うためのオブジェクトを作成します。 REST APIを使ってオブジェクトにデータを追加したら、提供されているReact [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) アプリケーションをダウンロードし、ビルドしてください。 コードがコンパイルされたら、生成された`.js`ファイルをLiferayドキュメントライブラリーでホストし、そのWebDAV URLをコピーします。 最後に、このURLを使ってReactチャートのリモートアプリケーションを作成し、ページウィジェットとしてデプロイします。
 
 チャートは5秒ごとにヘッドレスAPI経由でオブジェクトを呼び出し、オブジェクトのデータを返してチャートを動的に更新するように構成されています。
 
@@ -45,7 +45,7 @@
 
 1. ［**詳細**］ タブをクリックし、 ［**公開**］ をクリックします。
 
-[オブジェクトの公開](../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 Liferay UIやヘッドレスAPIでアクセスできるようになりました。
+[オブジェクトの公開](../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 Liferay UIやヘッドレスAPIでアクセスできるようになりました。
 
 ## ヘッドレスAPIを使ったオブジェクトへのデータ追加
 
@@ -86,10 +86,10 @@
 
 以下の手順で、Reactアプリケーションをダウンロードし、ビルドします。
 
-1. [Reactプロジェクト](./liferay-x3j8.zip)をダウンロードし、解凍してください。
+1. [Reactプロジェクト](./liferay-x3j8.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/liferay-x3j8.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/objects/objects-tutorials/liferay-x3j8.zip -O
    ```
 
    ```bash
@@ -186,6 +186,6 @@
 
 ## 追加情報
 
-* [Objects](../../objects.md)
+* [オブジェクト](../../objects.md)
 * [ヘッドレスフレームワークの統合](../understanding-object-integrations/headless-framework-integration.md)
 * [CORSの設定](../../../installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors.md)

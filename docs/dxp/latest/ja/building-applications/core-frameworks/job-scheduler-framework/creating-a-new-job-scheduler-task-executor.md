@@ -4,11 +4,11 @@ Each Job Scheduler Task is created by implementing the `DispatchTaskExecutor` in
 
 次の手順に従って、`DispatchTaskExecutor`インターフェースの独自の実装を作成します。
 
-1. **OSGIコンポーネント**：`@Component`アノテーションを使用して、OSGiフレームワーク内でモジュールをコンポーネントとして宣言します。
+1. **OSGIコンポーネント** ：`@Component`アノテーションを使用して、OSGiフレームワーク内でモジュールをコンポーネントとして宣言します。
 
-1. **サービス**：モジュールを`@Component`アノテーション内の`DispatchTaskExecutor.class`サービスとして識別します。
+1. **サービス** ：モジュールを`@Component`アノテーション内の`DispatchTaskExecutor.class`サービスとして識別します。
 
-1. **OSGiプロパティ**：次のプロパティを`@Component`アノテーションに追加します。
+1. **OSGiプロパティ** ：次のプロパティを`@Component`アノテーションに追加します。
 
    * `dispatch.task.executor.name`: defines the string used for the executor's name in the Job Scheduler UI.
 
@@ -22,7 +22,7 @@ Each Job Scheduler Task is created by implementing the `DispatchTaskExecutor` in
       正しいエグゼキュータが一致するように、値は一意である必要があります。 値が一意でない場合、ログには起動時にエラーが表示され、同じプロパティ値を持つエグゼキュータが示されます。
       ```
 
-1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java)：`DispatchTaskExecutor`インターフェースを実装するか、その実装を拡張します（`BaseDispatchTaskExecutor`など）。
+1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) ：`DispatchTaskExecutor`インターフェースを実装するか、その実装を拡張します（`BaseDispatchTaskExecutor`など）。
 
       ```{important}
       Implementations of the `DispatchTaskExecutor` interface must handle status logs for Job Scheduler tasks, because the framework depends on those logs to control the concurrent execution of tasks.
@@ -30,7 +30,7 @@ Each Job Scheduler Task is created by implementing the `DispatchTaskExecutor` in
       For your convenience, Liferay provides the `BaseDispatchTaskExecutor` abstract [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/BaseDispatchTaskExecutor.java) that logs the Job Scheduler task's status as `IN PROGRESS`, `SUCCESSFUL`, or `FAILED`.
       ```
 
-1. **メソッド**：`DispatchTaskExecutor`インターフェースを直接実装している場合は、`execute()`メソッドをオーバーライドしてカスタムロジックを実装します。 代わりに、`BaseDispatchTaskExecutor`抽象クラスを拡張する場合は、その`doExecute()`メソッドをオーバーライドします。
+1. **メソッド** ：`DispatchTaskExecutor`インターフェースを直接実装している場合は、`execute()`メソッドをオーバーライドしてカスタムロジックを実装します。 代わりに、`BaseDispatchTaskExecutor`抽象クラスを拡張する場合は、その`doExecute()`メソッドをオーバーライドします。
 
    ```{note}
    `getName()`メソッドは廃止予定となり、`dispatch.task.executor.name`プロパティに置き換えられました。
@@ -51,7 +51,7 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
 1. Download and unzip the example module.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/liferay-s7a3.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/liferay-s7a3.zip -O
    ```
 
    ```bash
@@ -81,7 +81,7 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
 
    ![Add a new Job Scheduler Task using the new template.](./creating-a-new-job-scheduler-task-executor/images/01.png)
 
-   タスクを作成したら、*［Run Now］*をクリックします。
+   タスクを作成したら、 ［**Run Now**］ をクリックします。
 
    ![Click Run Now for your new Job Scheduler Task.](./creating-a-new-job-scheduler-task-executor/images/02.png)
 
@@ -91,7 +91,7 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
    INFO [liferay/dispatch/executor-2][S7A3DispatchTaskExecutor:30] Invoking #doExecute(DispatchTrigger, DispatchTaskExecutorOutput)
    ```
 
-   You can also click the task and go to the *Logs* tab to see a list of all previous runs.
+   You can also click the task and go to the **Logs** tab to see a list of all previous runs.
 
    ![View and manage logs for your Job Scheduler Task.](./creating-a-new-job-scheduler-task-executor/images/03.png)
 

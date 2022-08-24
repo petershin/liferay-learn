@@ -2,7 +2,7 @@
 
 オブジェクトを公開すると、Liferayは自動的にそのためのREST APIを生成します。 これらのAPIは、会社とサイトに範囲指定されたオブジェクトで異なりますが、すべて`c/[pluralobjectlabel]` の命名パターン（例： `c/timeoffrequests`）を使用します。 これらのAPIを使用して、オブジェクトエントリーの作成、アクセス、更新、および削除を行うことができます。
 
-ここでは、cURLコマンドを使用して、カスタムオブジェクトの基本的なCRUD操作を実行します。 先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。
+ここでは、cURLコマンドを使用して、カスタムオブジェクトの基本的なCRUD操作を実行します。 先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
 
 ```{tip}
 サイトオブジェクトと会社オブジェクトの両方に対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*REST Applications*の下にリストされています。
@@ -36,14 +36,14 @@
    このチュートリアルでは、下記の値を使用する必要があります。
    ```
 
-[オブジェクトの公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 ヘッドレスAPIを介してアクセスできるようになりました。
+[オブジェクトの公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 ヘッドレスAPIを介してアクセスできるようになりました。
 
 ## サンプルコードを準備する
 
 以下のコマンドを実行して、提供されたサンプルコードをダウンロードし、解凍してください。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-v1s4.zip -O
+curl https://learn.liferay.com/dxp/latest/ja/building-applications/objects/objects-tutorials/using-apis/liferay-v1s4.zip -O
 ```
 
 ```bash

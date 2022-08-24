@@ -4,13 +4,13 @@
 
 Liferay Objectをデータ統合ツールと併用することで、Objectのデータを外部サービスと同期するための自動タスクを作成することができます。 これらのタスクは、Webhooksを使用してトリガーされ、GoogleアプリケーションやMicrosoft Officeなどと接続することができます。
 
-ここでは、 [Elastic.io](https://www.elastic.io/)を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Elastic.ioのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
+ここでは、 [Elastic.io](https://www.elastic.io/) を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Elastic.ioのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
 
 ## オブジェクトデータをGoogle シートに同期させる
 
 以下の手順で、オブジェクトデータをGoogle シートに同期させます。
 
-1. [Elastic.io](https://www.elastic.io/)にサインインし、 ［**Integrate**］ ページに移動し、 ［**Flows**］ をクリックします。
+1. [Elastic.io](https://www.elastic.io/) にサインインし、 ［**Integrate**］ ページに移動し、 ［**Flows**］ をクリックします。
 
    ![統合ページに移動し、［フロー］をクリックします。](./using-elastic-io-to-sync-object-data-with-google-sheets/images/01.png)
 

@@ -4,7 +4,7 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
 
 ここでは、 `aggregatedTerms` パラメーターを、基本的なカスタムオブジェクトと一緒に使用します。
 
-先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。
+先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
 
 ## Liferayインスタンスのセットアップ
 ```{include} /_snippets/run-liferay-portal.md
@@ -28,7 +28,7 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
    | :--- | :--- | :--- | :--- |
    | 名前 | 名前 | テキスト | &#10004; |
 
-1. ［**詳細**］ タブで[**公開**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) をクリックします。
+1. ［**詳細**］ タブで [**公開**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) をクリックします。
 
    ```{important}
    このチュートリアルでは、下記の値を使用する必要があります。
@@ -41,7 +41,7 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
 以下のコマンドを実行して、提供されたサンプルコードをダウンロードし、解凍してください。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-b3x5.zip -O
+curl https://learn.liferay.com/dxp/latest/ja/building-applications/objects/objects-tutorials/using-apis/liferay-b3x5.zip -O
 ```
 
 ```bash

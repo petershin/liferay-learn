@@ -2,13 +2,13 @@
 
 {bdg-secondary}`7.4以降で利用可能`
 
-ここでは、 [Pabbly](https://www.pabbly.com/)を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Pabblyのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
+ここでは、 [Pabbly](https://www.pabbly.com/) を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Pabblyのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
 
 ## オブジェクトデータをGoogle シートに同期させる
 
 以下の手順で、オブジェクトデータをGoogle シートに同期させます。
 
-1. [Pabbly](https://www.pabbly.com/)にサインインし、 ［**All Apps**］ ページに移動し、 ［**Pabbly Connect**］ をクリックします。
+1. [Pabbly](https://www.pabbly.com/) にサインインし、 ［**All Apps**］ ページに移動し、 ［**Pabbly Connect**］ をクリックします。
 
    ![［All Apps］ページに移動し、［Pabbly Connect］をクリックします。](./using-pabbly-to-sync-object-data-with-google-sheets/images/01.png)
 
@@ -66,6 +66,6 @@
 
 ## 追加情報
 
-* [Objects](../../../objects.md)
+* [オブジェクト](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
 * [オブジェクト統合を理解する](../../understanding-object-integrations.md)

@@ -4,7 +4,7 @@
 
 リモートアプリケーションは、Liferayのフロントエンド基盤を利用して、外部アプリケーションをLiferayプラットフォームに登録し、ウィジェットとして描画します。
 
-このチュートリアルでは、Liferayの[`create_remote_app.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_remote_app.sh)スクリプトを使って、基本のアプリケーションを作成します。 アプリケーションが生成されたら、そのコードをコンパイルし、`.js`と`.css`ファイルをホストします。 ホストされたら、各ファイルのURLをコピーして、それを使ってLiferayリモートアプリケーションを作成します。 最後に、アプリケーションをウィジェットとしてサイトページにデプロイします。
+このチュートリアルでは、Liferayの [`create_remote_app.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_remote_app.sh) スクリプトを使って、基本のアプリケーションを作成します。 アプリケーションが生成されたら、そのコードをコンパイルし、`.js`と`.css`ファイルをホストします。 ホストされたら、各ファイルのURLをコピーして、それを使ってLiferayリモートアプリケーションを作成します。 最後に、アプリケーションをウィジェットとしてサイトページにデプロイします。
 
 ![create **remote** app.shスクリプトを使用して、簡単なReactアプリケーションを作成します。](./creating-a-basic-remote-app/images/01.png)
 
@@ -12,7 +12,7 @@
 Liferayリモートアプリケーションは、アプリケーションの構築、パッケージ化、ホスティングの方法にとらわれません。 このチュートリアルでは、リモートアプリケーションのサンプルを作成するための便利な方法のみを紹介します。
 ```
 
-`create_remote_app.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/)、 [NPM](https://www.npmjs.com/)、および [YARN](https://classic.yarnpkg.com/)が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
+`create_remote_app.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/) 、 [NPM](https://www.npmjs.com/) 、および [YARN](https://classic.yarnpkg.com/) が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
 
 ## `create_remote_app.sh`スクリプトを実行します。
 
@@ -103,7 +103,7 @@ gzip後のファイルサイズ：
   121 B     build/static/css/main.9877909d.css
 ```
 
-これらのファイルは、Liferayリモートアプリケーションにアクセス可能な場所に[ホスト](#hosting-the-application-files)されている必要があります。 これらは、リモートサーバーや、静的リソースの提供に最適化されたデータストレージシステムでホストすることができます。 デモの目的で、この例ではLiferayのドキュメントライブラリにアップロードし、WebDAV URLを使ってホストしています。
+これらのファイルは、Liferayリモートアプリケーションにアクセス可能な場所に [ホスト](#hosting-the-application-files) されている必要があります。 これらは、リモートサーバーや、静的リソースの提供に最適化されたデータストレージシステムでホストすることができます。 デモの目的で、この例ではLiferayのドキュメントライブラリにアップロードし、WebDAV URLを使ってホストしています。
 
 ```{tip}
 ビルドごとに一意のファイル名が生成されます。 カスタムアプリケーションをテストするときは、ビルド後に `.js` と `.css` ファイルを更新するのを忘れないようにしてください。

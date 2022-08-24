@@ -6,7 +6,7 @@
 
   learn.liferay.comの記事に自分の名前が表示されないことをテストします。 下記の手順で行います。 別のブラウザで手動で操作して手順を確認してください。
 
-  1. [Liferay Learn サイト](http://learn.liferay.com)に移動します。
+  1. [Liferay Learn サイト](http://learn.liferay.com) に移動します。
 
   1. 検索入力フィールドをクリックします。
 
@@ -30,7 +30,7 @@
     }
     ```
 
-1. .macroファイルの定義ブロックの中で、マクロブロックを使って個々のマクロを定義します。 そのためには、マクロキーワードの後に、文字列の識別子名を使用します。 これらのマクロ名はユニークであり、意図された連携を説明するものでなければなりません。 詳細は[Macros](../poshi-basics/poshi-layers/macros.md)を参照してください。 このシナリオでは、用語を検索するマクロは、単純に `searchForTerm`と呼ぶことができます。
+1. .macroファイルの定義ブロックの中で、マクロブロックを使って個々のマクロを定義します。 そのためには、マクロキーワードの後に、文字列の識別子名を使用します。 これらのマクロ名はユニークであり、意図された連携を説明するものでなければなりません。 詳細は [マクロ](../poshi-basics/poshi-layers/macros.md) を参照してください。 このシナリオでは、用語を検索するマクロは、単純に `searchForTerm`と呼ぶことができます。
 
 1.  テストシナリオのステップ2からステップ4は、合わせて1つの検索連携を構成するアクションです。 これらの3つのステップは、 `searchForTerm` マクロブロックの中に含まれます。 これらのアクションは、 [パスファイルの作成](./creating-a-path-file.md) の記事で作成したロケーターと [関数](https://github.com/liferay/liferay-portal/tree/master/modules/test/poshi/poshi-runner-resources/src/main/resources/default/testFunctional/functions) を使用してスクリプト化できます。 関数の使い方の詳細は、 [関数](../poshi-basics/poshi-layers/functions.md)をご覧ください。
 

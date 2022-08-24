@@ -1,6 +1,6 @@
 # Liferay CLI ツール
 
-Liferay CLIツールは、LiferayのRESTおよびGraphQLサービスとインターフェイスで接続するために、[Angular](https://angular.io/)、 JavaScript、[React](https://reactjs.org/)、共有されるバンドル、または [Vue.js](https://vuejs.org/)プロジェクトを簡単に作成できるようにします。 `liferay`コマンドを使用すると、プロジェクトの生成、ビルド、デプロイを行うことができます。
+Liferay CLIツールは、LiferayのRESTおよびGraphQLサービスとインターフェイスで接続するために、 [Angular](https://angular.io/) 、 JavaScript、 [React](https://reactjs.org/) 、共有されるバンドル、または [Vue.js](https://vuejs.org/) プロジェクトを簡単に作成できるようにします。 `liferay`コマンドを使用すると、プロジェクトの生成、ビルド、デプロイを行うことができます。
 
 ```{note}
 Liferay CLIツールは、Liferay DXP 7.4+用のJavaScriptアプリケーションプロジェクトを作成するために使用されていた古いYeomanジェネレータに代わるものです。 古いバージョンではどちらの方法でも使用できますが、7.4以降ではYeomanジェネレーターの代わりにCLIツールを使用する必要があります。
@@ -15,7 +15,7 @@ npm install -g @liferay/cli
 ```
 
 ```{note}
-CLI ツールをグローバルにインストールしたくない場合は、 `npx` を使用することで、インストールせずにツールのコマンドを実行することもできます。 例えば、`npx @liferay/cli new [project-name]` を実行することで、[新しいプロジェクトを生成する](#generating-a-project)ことができます。
+CLI ツールをグローバルにインストールしたくない場合は、 `npx` を使用することで、インストールせずにツールのコマンドを実行することもできます。 例えば、`npx @liferay/cli new [project-name]` を実行することで、 [新しいプロジェクトを生成する](#generating-a-project) ことができます。
 ```
 
 ## プロジェクトの生成
@@ -78,7 +78,7 @@ liferay build
 
 ## プロジェクトのデプロイ
 
-このコマンドを使用して、プロジェクトの `dist/` ディレクトリに保存されている JAR ファイルをローカルの Liferay インストールにデプロイします ( [`liferay build`](#building-a-project)を実行した後)。
+このコマンドを使用して、プロジェクトの `dist/` ディレクトリに保存されている JAR ファイルをローカルの Liferay インストールにデプロイします ( [`liferay build`](#building-a-project) を実行した後)。
 
 ```bash
 liferay deploy
@@ -88,7 +88,7 @@ liferay deploy
 
 ## プロジェクトのビルドファイルの消去
 
-古い成果物がビルドの妨げになる場合、`clean`コマンドを使って、[`build`](#building-a-project) と [`deploy`](#deploying-a-project) コマンドで作成された `build/` と `dist/` を削除します。
+古い成果物がビルドの妨げになる場合、`clean`コマンドを使って、 [`build`](#building-a-project) と [`deploy`](#deploying-a-project) コマンドで作成された `build/` と `dist/` を削除します。
 
 プロジェクトのディレクトリからこのコマンドを実行すると、これらのフォルダが削除されます。
 
@@ -114,11 +114,11 @@ liferay upgrade-project
 
 また、他のツールで作成したプロジェクトをLiferay CLIツールでデプロイできるように適応させることも可能です。 これらのツールで作成したプロジェクトを適応することができます。
 
-* [**React**](https://reactjs.org/)：[create-react-app](https://reactjs.org/)プロジェクトジェネレータ
+* [**React**](https://reactjs.org/) ： [create-react-app](https://reactjs.org/) プロジェクトジェネレータ
 
-* [**Angular**](https://angular.io/)：[Angular CLI](https://cli.angular.io/)プロジェクトジェネレータ
+* [**Angular**](https://angular.io/) ： [Angular CLI](https://cli.angular.io/) プロジェクトジェネレータ
 
-* [**Vue.js**](https://vuejs.org/)：[Vue CLI](https://cli.vuejs.org/)プロジェクトジェネレータ
+* [**Vue.js**](https://vuejs.org/) ： [Vue CLI](https://cli.vuejs.org/) プロジェクトジェネレータ
 
 これらの他のジェネレータで作成されたプロジェクトを適応させるには、プロジェクトのディレクトリからこのコマンドを実行します。
 

@@ -71,7 +71,7 @@ WARプラグインに基づいてWABをデプロイするには、WARプラグ�
 
 ## WABのコピーを保存する
 
-必要に応じて、WABをローカルフォルダに保存します。 これにより、生成されたWABを確認することができます。 生成されたWABSを保存するには、以下の[portal properties](../../installation-and-upgrades/reference/portal-properties.md)を`［Liferay Home］/portal-ext.properties`ファイルに追加します。 その後、Liferayサーバーを再起動します。
+必要に応じて、WABをローカルフォルダに保存します。 これにより、生成されたWABを確認することができます。 生成されたWABSを保存するには、以下の [ポータルプロパティ](../../installation-and-upgrades/reference/portal-properties.md) を`［Liferay Home］/portal-ext.properties`ファイルに追加します。 その後、Liferayサーバーを再起動します。
 
 ```properties
 module.framework.web.generator.generated.wabs.store=true

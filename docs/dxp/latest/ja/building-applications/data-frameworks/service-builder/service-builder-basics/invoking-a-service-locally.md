@@ -17,7 +17,7 @@ DXP/Portalにデプロイされたサービスビルダーサービスは、同�
 1. サンプルをダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-t2p5.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-t2p5.zip -O
    ```
 
    ```bash

@@ -32,11 +32,11 @@
 
 1. ［View Builder］タブで、 [列](#adding-columns-to-a-view) をビューテーブルに追加します。
 
-1. (オプション) 各列の表示名を[変更またはローカライズ](#renaming-columns)します。
+1. (オプション) 各列の表示名を [変更またはローカライズ](#renaming-columns) します。
 
-1. (オプション）［Default Sort］タブで、 [デフォルトの列のソート](#setting-a-default-sorting)を設定します。
+1. (オプション）［Default Sort］タブで、 [デフォルトの列のソート](#setting-a-default-sorting) を設定します。
 
-1. (オプション）［Filters］タブで、 [ビューフィルター](#adding-filters)として提供するフィールドを選択します。
+1. (オプション）［Filters］タブで、 [ビューフィルター](#adding-filters) として提供するフィールドを選択します。
 
 1. ［**Save**］ をクリックします。
 

@@ -1,6 +1,6 @@
 # スプライングラフ
 
-スプライングラフには、複数のデータセットが含まれています。 スプライングラフは、データのポイントを滑らかな曲線で接続します。 各データ系列（`addColumns()`メソッドで作成）は、IDと値のセットを受け取る`MultiValueColumn`オブジェクト</a> <!--\[`MultiValueColumn` object\](https://docs.liferay.com/dxp/apps/foundation/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html)--> の新しいインスタンスで定義されます。 次の手順に従って、スプライングラフを使用するようにポートレットを構成します。
+スプライングラフには、複数のデータセットが含まれています。 スプライングラフは、データのポイントを滑らかな曲線で接続します。 各データ系列（`addColumns()`メソッドで作成）は、IDと値のセットを受け取る`MultiValueColumn`オブジェクト <!--\[`MultiValueColumn` object\](https://docs.liferay.com/dxp/apps/foundation/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html)--> の新しいインスタンスで定義されます。 次の手順に従って、スプライングラフを使用するようにポートレットを構成します。
 
 1. Chart taglibを`SplineChartConfig`クラスと`MultiValueColumn`クラスとともにバンドルの`init.jsp`ファイルにインポートします。
 

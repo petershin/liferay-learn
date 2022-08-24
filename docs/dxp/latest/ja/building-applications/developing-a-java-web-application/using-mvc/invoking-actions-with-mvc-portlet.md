@@ -1,6 +1,6 @@
 # MVCポートレットを使用したアクションの呼び出し
 
-ポートレットの[**アクションフェーズ**](../reference/portlets.md#portlet-phases)は、状態の変更を適用します。 **ポートレットのアクションURL** を使用して、ポートレットのアクション処理メソッドをUIコンポーネントにバインドできます。 これらは、ユーザーの要求をアクションを実行するためのポートレットメソッドにマッピングする`portlet:actionURL`JSPタグです。
+ポートレットの [**アクションフェーズ**](../reference/portlets.md#portlet-phases) は、状態の変更を適用します。 **ポートレットのアクションURL** を使用して、ポートレットのアクション処理メソッドをUIコンポーネントにバインドできます。 これらは、ユーザーの要求をアクションを実行するためのポートレットメソッドにマッピングする`portlet:actionURL`JSPタグです。
 
 ここでは、アクションURLを3つの異なる方法で使用するサンプルポートレットを呼び出して調べる方法を学習します。
 
@@ -16,7 +16,7 @@
 1. サンプルをダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
    ```
 
    ```bash
@@ -49,9 +49,9 @@
 
    ポートレットには3つのリンクがあります。
 
-   * *Do Something*
-   * *Do Something Else*
-   * *Do Something More*
+   * **Do Something**
+   * **Do Something Else**
+   * **Do Something More**
 
     各リンクをクリックすると、異なるアクション処理メソッドが呼び出されます。 学習の目的で、各メソッドはそれ自体を識別するメッセージをログに記録します。
 
@@ -77,18 +77,18 @@
 
 ## ポートレットのアクション処理メソッドを調べる
 
-`U8T2Portlet`クラスは、3つのアクション処理メソッドを持つ標準の[`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java)です。
+`U8T2Portlet`クラスは、3つのアクション処理メソッドを持つ標準の [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java) です。
 
 ```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-u8t2.zip/u8t2-web/src/main/java/com/acme/u8t2/web/internal/portlet/U8T2Portlet.java
 :language: java
 :lines: 14-53
 ```
 
-[`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html)アノテーションは、クラスを、[`Portlet`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html)サービスを提供するOSGi宣言型サービスコンポーネントとしてマークします。 プロパティにより、ポートレットは ［**サンプル**］ ウィジェットカテゴリで使用可能になり、ポートレットに *U8T2ポート* レットという名前が付けられ、ポートレットのデフォルトのビューテンプレートが `/view.jsp` に設定されます。
+[`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html) アノテーションは、クラスを、 [`Portlet`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html) サービスを提供するOSGi宣言型サービスコンポーネントとしてマークします。 プロパティにより、ポートレットは ［**サンプル**］ ウィジェットカテゴリで使用可能になり、ポートレットに **U8T2ポート** レットという名前が付けられ、ポートレットのデフォルトのビューテンプレートが `/view.jsp` に設定されます。
 
-各メソッドは、[`ActionRequest`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionRequest.html)および[`ActionResponse`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionResponse.html)パラメーターを取ります。 `ActionRequest`はメソッド情報を提供し、`ActionResponse`はメソッドが情報を渡すための手段を提供します。 各サンプルメソッドは、ログメッセージで自身を識別します。
+各メソッドは、 [`ActionRequest`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionRequest.html) および [`ActionResponse`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionResponse.html) パラメーターを取ります。 `ActionRequest`はメソッド情報を提供し、`ActionResponse`はメソッドが情報を渡すための手段を提供します。 各サンプルメソッドは、ログメッセージで自身を識別します。
 
-JSP（以下で説明）は、ポートレットアクションURLを使用してサンプルメソッドにマッピングします。 最初の2つのメソッドは、名前を除いて同じです。 最後のメソッドで注目すべき点は、`@ProcessAction(name = "nameForTheDoSomethingMoreMethod")`アノテーションがあることです。 ポートレットアクションURLは、メソッド名の代わりに[`@ProcessAction`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ProcessAction.html)アノテーション名を介してメソッドにマッピングできます。 たとえば、`ProcessAction`名を使用すると、ポートレットアクションURLを壊すことなく、メソッド名を変更したり、別のメソッドにアノテーションを割り当てたりできます。 JSPのポートレットアクションURLを調べることで理解しやすくなります。
+JSP（以下で説明）は、ポートレットアクションURLを使用してサンプルメソッドにマッピングします。 最初の2つのメソッドは、名前を除いて同じです。 最後のメソッドで注目すべき点は、`@ProcessAction(name = "nameForTheDoSomethingMoreMethod")`アノテーションがあることです。 ポートレットアクションURLは、メソッド名の代わりに [`@ProcessAction`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ProcessAction.html) アノテーション名を介してメソッドにマッピングできます。 たとえば、`ProcessAction`名を使用すると、ポートレットアクションURLを壊すことなく、メソッド名を変更したり、別のメソッドにアノテーションを割り当てたりできます。 JSPのポートレットアクションURLを調べることで理解しやすくなります。
 
 ## JSPを調べる
 

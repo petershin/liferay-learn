@@ -2,13 +2,13 @@
 
 {bdg-secondary}`7.4以降で利用可能`
 
-ここでは、 [Zapier](https://zapier.com/)を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Zapierのプレミアムアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
+ここでは、 [Zapier](https://zapier.com/) を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Zapierのプレミアムアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
 
 ## オブジェクトデータをGoogle シートに同期させる
 
 以下の手順で、オブジェクトデータをGoogle シートに同期させます。
 
-1. [Zapier](https://zapier.com/)にログインし、 ［**Create Zap**］ をクリックします。
+1. [Zapier](https://zapier.com/) にログインし、 ［**Create Zap**］ をクリックします。
 
    ![Zapを作成します。](./using-zapier-to-sync-object-data-with-google-sheets/images/01.png)
 
@@ -78,6 +78,6 @@
 
 ## 追加情報
 
-* [Objects](../../../objects.md)
+* [オブジェクト](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
 * [オブジェクト統合を理解する](../../understanding-object-integrations.md)

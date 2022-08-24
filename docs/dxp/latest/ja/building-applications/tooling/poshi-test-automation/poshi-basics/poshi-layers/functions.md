@@ -39,4 +39,4 @@ function click {
 Click(locator1 = "//button[contains(.,'Edit')]");
 ```
 
-Poshi単体では、機能をすぐに利用できます。 利用可能な関数は、[Liferay Portalのソースにある関数ディレクトリ](https://github.com/liferay/liferay-portal/tree/master/portal-web/test/functional/com/liferay/portalweb/functions)で見つけることができます。
+Poshi単体では、機能をすぐに利用できます。 利用可能な関数は、 [Liferay Portalのソースにある関数ディレクトリ](https://github.com/liferay/liferay-portal/tree/master/portal-web/test/functional/com/liferay/portalweb/functions) で見つけることができます。

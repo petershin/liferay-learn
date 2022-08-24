@@ -1,5 +1,5 @@
 ツーリング
-=======
+==========
 
 -  :doc:`/building-applications/tooling/developer-tools-overview`
 
@@ -27,7 +27,7 @@ RESTビルダー
 
 
 その他のツール
-~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 -  :doc:`/building-applications/tooling/other-tools/fragments-cli`
 -  :doc:`/building-applications/tooling/other-tools/liferay-js-generator`

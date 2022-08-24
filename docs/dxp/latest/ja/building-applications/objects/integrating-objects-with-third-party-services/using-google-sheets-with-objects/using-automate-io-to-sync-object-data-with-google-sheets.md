@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.4以降で利用可能`
 
-ここでは、 [Automate.io](https://automate.io/)を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Automate.ioのプレミアムアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
+ここでは、 [Automate.io](https://automate.io/) を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Automate.ioのプレミアムアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
 
 ## オブジェクトデータをGoogle シートに同期させる
 

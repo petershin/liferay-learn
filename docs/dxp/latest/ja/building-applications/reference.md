@@ -14,4 +14,4 @@ reference/jars-excluded-from-wabs.md
 ```
 
 * [WARのデプロイ（WABジェネレータ）](./reference/deploying-wars-wab-generator.md)
-* [JARS Excluded from WABs](./reference/jars-excluded-from-wabs.md)
+* [WABから除外されたJAR](./reference/jars-excluded-from-wabs.md)

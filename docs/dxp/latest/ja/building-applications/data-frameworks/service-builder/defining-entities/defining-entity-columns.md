@@ -7,7 +7,7 @@
 サンプルをダウンロードして解凍することから始めます。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
    ```
 
    ```bash
@@ -29,7 +29,7 @@
 Service Builderを実行すると、オブジェクトリレーショナルマッピングを処理するHibernate構成が生成されます。 Service Builderは、`service.xml`ファイルに追加する列ごとにデータベースフィールドを作成します。 各列に指定されたJavaタイプに適したデータベースフィールド型をマップし、Liferayがサポートするすべてのデータベースにわたってマッピングを行います。  Service Builderは、これらの属性のモデルクラスにgetter/setterメソッドも生成します。 列の`primary`（つまりプライマリーキー）属性が`true`に設定されている場合、その列はエンティティのプライマリーキーになります。 これは、[生成されたクラスの理解と拡張](../service-builder-basics/understanding-service-builder-generated-classes.md)にあるW9B7アプリケーションの場合です。 `primary`属性をtrueに設定して複数の列を定義する場合、列を組み合わせることでエンティティの複合プライマリーキーが構成されます。
 
 ```{note}
-[Implementing an Add Method](../service-builder-basics/understanding-service-builder-generated-classes.md#adding-a-local-service-method)では、エンティティインスタンスの一意のプライマリーキーを生成する方法を示しています。
+[Implementing an Add Method](../service-builder-basics/understanding-service-builder-generated-classes.md#adding-a-local-service-method) では、エンティティインスタンスの一意のプライマリーキーを生成する方法を示しています。
 ```
 
 ## エンティティの列を作成する
@@ -62,7 +62,7 @@ Service Builderを実行すると、オブジェクトリレーショナルマ�
 
 ## ワークフローフィールド
 
-エンティティの進行状況を追跡するために必要なフィールドを追加することで、Liferayの[ワークフローシステム](https://learn.liferay.com/dxp/latest/en/process-automation/workflow/introduction-to-workflow.md)をサポートできます。
+エンティティの進行状況を追跡するために必要なフィールドを追加することで、Liferayの [ワークフローシステム](https://learn.liferay.com/dxp/latest/en/process-automation/workflow/introduction-to-workflow.md) をサポートできます。
 
 ```xml
 <!-- Status fields -->

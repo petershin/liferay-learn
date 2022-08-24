@@ -17,7 +17,7 @@ Implementations of the base [`DispatchTaskExecutor`](https://github.com/liferay/
 
 ## `DispatchTrigger`
 
-[`DispatchTrigger`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchTrigger.java)インターフェイスは、`DispatchTriggerModel`と`PersistedModel`を拡張します。 このエンティティは、Liferay（Quartz）トリガーのドラフトとして機能します。 これは、`DispatchTaskExecutor`とLiferayスケジューラーエンジン間の接続です。
+[`DispatchTrigger`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchTrigger.java) インターフェイスは、`DispatchTriggerModel`と`PersistedModel`を拡張します。 このエンティティは、Liferay（Quartz）トリガーのドラフトとして機能します。 これは、`DispatchTaskExecutor`とLiferayスケジューラーエンジン間の接続です。
 
 ## `DispatchMessageListener`
 
@@ -25,11 +25,11 @@ The [`DispatchMessageListener`](https://github.com/liferay/liferay-portal/blob/m
 
 ## `DispatchTaskExecutorRegistry`
 
-[`DispatchTaskExecutorRegistry`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutorRegistry.java)インターフェイスを実装すると、ポータル内の`DispatchTaskExecutor`のすべての実装への参照が保持され、各`dispatch.task.executor.type` OSGiのプロパティ値が一意であることが検証されます。
+[`DispatchTaskExecutorRegistry`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutorRegistry.java) インターフェイスを実装すると、ポータル内の`DispatchTaskExecutor`のすべての実装への参照が保持され、各`dispatch.task.executor.type` OSGiのプロパティ値が一意であることが検証されます。
 
 ## `DispatchLog`
 
-[`DispatchLog`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchLog.java)インターフェイスは、`DispatchLogModel`と`PersistedModel`を拡張します。 This entity is responsible for persisting Job Scheduler task execution logs.
+[`DispatchLog`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchLog.java) インターフェイスは、`DispatchLogModel`と`PersistedModel`を拡張します。 This entity is responsible for persisting Job Scheduler task execution logs.
 
 ## `DispatchConfigurator`
 

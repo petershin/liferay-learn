@@ -2,13 +2,13 @@
 
 {bdg-secondary}`7.4以降で利用可能`
 
-ここでは、 [IFTTT](https://ifttt.com/)を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、IFTTTのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
+ここでは、 [IFTTT](https://ifttt.com/) を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、IFTTTのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
 
 ## オブジェクトデータをGoogle シートに同期させる
 
 以下の手順で、オブジェクトデータをGoogle シートに同期させます。
 
-1. [IFTTT](https://ifttt.com/)にサインインし、 ［**Create**］ をクリックします。
+1. [IFTTT](https://ifttt.com/) にサインインし、 ［**Create**］ をクリックします。
 
     ![［作成］をクリックします。](./using-ifttt-to-sync-object-data-with-google-sheets/images/01.png)
 

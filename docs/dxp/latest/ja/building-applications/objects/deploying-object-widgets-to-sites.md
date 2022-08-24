@@ -20,7 +20,7 @@
 
 1. ［**Save**］ をクリックします。
 
-スイッチを ［**Show Widget**］ に切り替えてオブジェクトを公開すると、すぐに[サイトページにウィジェットを追加](#adding-the-widget-to-pages)できるようになります。
+スイッチを ［**Show Widget**］ に切り替えてオブジェクトを公開すると、すぐに [サイトページにウィジェットを追加](#adding-the-widget-to-pages) できるようになります。
 
 ただし、スイッチを ［**ウィジェットを非表示**］ に切り替えると、ウィジェットメニューに非表示となり、ページに追加することができなくなります。
 
@@ -40,7 +40,7 @@
 
 ![オプションボタンをクリックすると、その他の機能や設定オプションにアクセスできます。](./deploying-object-widgets-to-sites/images/03.png)
 
-利用可能なオプションは、ウィジェットが[コンテンツページ](../../site-building/creating-pages/using-content-pages/using-widgets-on-a-content-page.md)または[ウィジェットページ](../../site-building/creating-pages/using_widget_pages.html)にデプロイされるかどうかに依存します。
+利用可能なオプションは、ウィジェットが[コンテンツページ](../../site-building/creating-pages/using-content-pages/using-widgets-on-a-content-page.md)または [ウィジェットページ](../../site-building/creating-pages/using_widget_pages.html) にデプロイされるかどうかに依存します。
 
 ## 追加情報
 

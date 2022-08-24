@@ -43,6 +43,6 @@
 
 ## 関連トピック
 
-* [Clay Badges](./clay-badges.md)
-* [Clay Cards](./clay-cards.md)
-* [Clay Icons](./clay-icons.md)
+* [Clayバッジ](./clay-badges.md)
+* [Clayカード](./clay-cards.md)
+* [Clayアイコン](./clay-icons.md)

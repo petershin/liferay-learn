@@ -6,7 +6,7 @@
 ネストされたフィールドは、通常、複数のリクエストを必要とする情報を取得するのに便利な方法です。 こうすることで、関連するエンティティIDで新たにリクエストを送ることなく、エンティティ自身から関連するエンティティの全情報を得られます。
 ```
 
-先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。
+先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
 
 ## Liferayインスタンスのセットアップ
 ```{include} /_snippets/run-liferay-portal.md
@@ -62,7 +62,7 @@
       | :--- | :--- | :--- | :--- |
       | `Baker to Charlie` | `bakerToCharlie` | 1対多 | Charlie |
 
-1. 各オブジェクトを[公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)します。
+1. 各オブジェクトを [公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) します。
 
 公開後は、ヘッドレスAPIで各オブジェクトにアクセスすることができます。
 
@@ -71,7 +71,7 @@
 以下のコマンドを実行して、提供されたサンプルコードをダウンロードし、解凍してください。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
+curl https://learn.liferay.com/dxp/latest/ja/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
 ```
 
 ```bash

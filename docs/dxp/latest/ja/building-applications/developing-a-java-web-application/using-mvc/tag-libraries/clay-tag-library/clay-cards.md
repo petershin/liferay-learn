@@ -147,7 +147,7 @@
 ```
 
 ```{note}
-利用可能なLiferayアイコンの完全なリストは、 [Clay CSS Webサイト](https://claycss.com/docs/components/icons-lexicon.html#clay-lexicon-icons) にあります。
+利用可能なLiferayアイコンの完全なリストは、[Clay CSS Webサイト](https://clayui.com/docs/components/icon.html)にあります。
 ```
 
 ## ユーザーカード
@@ -204,6 +204,6 @@
 
 ## 関連トピック
 
-* [Clayバッジ](./clay-badges.md)
-* [Clayラベルとリンク](./clay-links-and-labels.md)
-* [Clayステッカー](./clay-stickers.md)
+* [Clay Badges](./clay-badges.md)
+* [Clay Labels and Links](./clay-links-and-labels.md)
+* [Clay Stickers](./clay-stickers.md)

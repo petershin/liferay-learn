@@ -1,17 +1,18 @@
 ---
 toc:
-other-tools/liferay-cli-tool.md
-other-tools/liferay-js-generator.md
-other-tools/liferay_npm_bundler.rst
-other-tools/intellij-plugin.md
-other-tools/theme-generator.md
-other-tools/maven-plugins.md
-other-tools/gradle-plugins.md
-other-tools/screens.md
-other-tools/mobile-sdk.md
-other-tools/push.md
-other-tools/sync.md
+0: other-tools/liferay-cli-tool.md
+1: other-tools/liferay-js-generator.md
+2: other-tools/liferay_npm_bundler.rst
+3: other-tools/intellij-plugin.md
+4: other-tools/theme-generator.md
+5: other-tools/maven-plugins.md
+6: other-tools/gradle-plugins.md
+7: other-tools/screens.md
+8: other-tools/mobile-sdk.md
+9: other-tools/push.md
+10: other-tools/sync.md
 ---
+
 # その他のツール
 
 ```{toctree}

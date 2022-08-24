@@ -1,3 +1,17 @@
+---
+toc:
+- ./data-frameworks/asset-framework.md
+- ./data-frameworks/cache.md
+- ./data-frameworks/data-scopes.md
+- ./data-frameworks/expando-framework.md
+- ./data-frameworks/export-import.md
+- ./data-frameworks/implementing-an-item-selector.md
+- ./data-frameworks/info-framework.md
+- ./data-frameworks/recycle-bin.md
+- ./data-frameworks/service-builder.md
+- ./data-frameworks/upgrade-processes.md
+---
+
 # データフレームワーク
 
 ```{toctree}

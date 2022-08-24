@@ -9,6 +9,7 @@ toc:
 - ./tag-libraries/liferay-util-tag-library.md
 - ./tag-libraries/chart-tag-library.md
 ---
+
 # タグライブラリ
 
 ```{toctree}
@@ -29,7 +30,7 @@ tag-libraries/chart-tag-library.md
 
 * グラフ：データを視覚化します。 棒グラフ、折れ線グラフ、散布図、スプライングラフなどを作成します。
 
-* Clay：アプリ用のアラート、ボタン、ドロップダウンメニュー、フォーム要素など、 [Clayコンポーネント](https://clayui.com/docs/components/alerts.html) を作成します。
+* Clay：アプリ用のアラート、ボタン、ドロップダウンメニュー、フォーム要素など、[Clayコンポーネント](https://clayui.com/docs/components/alerts.html)を作成します。
 
 * フロントエンド：追加メニュー、カード、管理バーなど、ポータルのアプリ全体で一般的に使用されるUIコンポーネントを作成します。
 
@@ -38,7 +39,7 @@ tag-libraries/chart-tag-library.md
 * Liferay Util：追加のリソースのロード、パラメーターの定義、コンテンツのバッファーなど。
 
 ```{note} 
-Chart taglibを除いて、各taglibはFreeMarkerマクロとして使用できます。 Chart taglibは、FreeMarkerマクロとして**使用できません**。 このセクションの記事では、各マクロに使用する適切な構文について説明しています。 使用可能なFreeMarker taglibマクロの完全なリストについては、 [FreeMarker Taglib Mappings reference](https://help.liferay.com/hc/ja/articles/360029145851-FreeMarker-Taglib-Macros) を参照してください。
+Chart taglibを除いて、各taglibはFreeMarkerマクロとして使用できます。 Chart taglibは、FreeMarkerマクロとして**使用できません**。 このセクションの記事では、各マクロに使用する適切な構文について説明しています。 使用可能なFreeMarker taglibマクロの完全なリストについては、[FreeMarker Taglib Mappings reference](https://help.liferay.com/hc/en-us/articles/360029145851-FreeMarker-Taglib-Macros)を参照してください。
 ```
 
 このセクションでは、taglibsを使用してアプリの素晴らしいユーザーインターフェイスを構築する方法を学習します。

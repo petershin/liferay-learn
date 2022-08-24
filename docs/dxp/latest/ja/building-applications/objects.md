@@ -12,6 +12,7 @@ toc:
 - ./objects/objects-application-permissions.md
 - ./objects/integrating-objects-with-third-party-services.md
 ---
+
 # オブジェクト
 
 ```{toctree}
@@ -38,7 +39,7 @@ Liferay Objectを使用すると、コードを記述したりモジュールを
 
 公開する前に、各オブジェクトのデータを会社またはサイトにスコープし、Liferay UIのどこに表示されるかを決定できます。
 
-作成時から、すべてのオブジェクトはLiferayの[コアフレームワーク](./core-frameworks.md)と完全に統合されており、プラットフォーム全体で統一されたエクスペリエンスを提供し、Liferayのすべての機能を活用します。 すべてのオブジェクトに対して[ヘッドレスREST API](./objects/understanding-object-integrations/headless-framework-integration.md)が自動的に生成される機能が含まれているため、定義されたエンドポイントを介してオブジェクトと対話できます。 これらのAPIを[Job Scheduler](./core-frameworks/dispatch-framework/using-dispatch.md)と統合して使用することで、オブジェクトデータを外部システムと動的に同期するようにTalendジョブを構成することもできます。
+作成時から、すべてのオブジェクトはLiferayの[コアフレームワーク](./core-frameworks.md)と完全に統合されており、プラットフォーム全体で統一されたエクスペリエンスを提供し、Liferayのすべての機能を活用します。 すべてのオブジェクトに対して[ヘッドレスREST API](./objects/understanding-object-integrations/headless-framework-integration.md)が自動的に生成される機能が含まれているため、定義されたエンドポイントを介してオブジェクトと対話できます。 これらのAPIを[Job Scheduler](./core-frameworks/job-scheduler-framework/using-job-scheduler.md)と統合して使用することで、オブジェクトデータを外部システムと動的に同期するようにTalendジョブを構成することもできます。
 
 すべてのオブジェクトは[ワークフロー](./objects/enabling-workflows-for-objects.md)と統合されているため、定義されたレビューおよび承認プロセスを通じてオブジェクトエントリーの作成をガイドできます。  オブジェクトは、[フォーム](objects/using-forms-with-objects.md)とも統合されているため、オブジェクトフィールドにマップし、オブジェクトエントリーを作成するためのユーザー入力を受け取るフォームを設計できます。
 
@@ -46,9 +47,9 @@ Liferay Objectを使用すると、コードを記述したりモジュールを
 
 すべてのオブジェクトはLiferayの[権限設定フレームワーク](./objects/understanding-object-integrations/permissions-framework-integration.md)と統合されているため、アプリケーションとリソースの権限を割り当てて、オブジェクトとそのエントリーへのアクセスを管理できます。 範囲指定と合わせ、ロールベースのアクセス制御を行うことで、データを保護し、適切なユーザーのみがデータにアクセスできるようにすることができます。
 
-オブジェクトを使用すると、オブジェクトフレームワークに登録されたシステムサービスを拡張し、設定することも可能です。 これには、カスタムフィールドやアクションの追加も含まれます。
+With Objects, you can also extend and configure [system services](./objects/creating-and-managing-objects/extending-system-objects.md) registered with the Objects framework. This includes adding custom relationships and actions. <!--TASK: Add fields when ready.-->
 
-カスタムアプリケーションの構築を開始するには[オブジェクトの作成](./objects/creating-and-managing-objects/creating-objects.md)を参照し、オブジェクトがLiferayのコアフレームワークをどのように活用するかについて確認するには[オブジェクト統合を理解する](./objects/understanding-object-integrations.md)を参照してください。
+カスタムアプリケーションの構築を開始するには[Creating Objects](./objects/creating-and-managing-objects/creating-objects.md)を参照し、オブジェクトがLiferayのコアフレームワークをどのように活用するかについて確認するには[Understanding Object Integrations](./objects/understanding-object-integrations.md)を参照してください。
 
 ```{raw} html
 :file: ../landingpage_template.html

@@ -4,6 +4,7 @@ toc:
 - ./localization/automatically-generating-translations.md
 - ./localization/reference.md
 ---
+
 # ローカライズ
 
 ```{toctree}
@@ -15,8 +16,8 @@ localization/reference.md
 ```
 
 - [言語の追加](./localization/adding-a-language.md)
-- [翻訳を自動的に生成する](./localization/automatically-generating-translations.md)
+- [Automatically Generating Translations](./localization/automatically-generating-translations.md)
 
-## 参照
+## リファレンス
 
-- [リソースバンドルの集約](./localization/reference/aggregating-resource-bundles.md)
+- [Aggregating Resource Bundles](./localization/reference/aggregating-resource-bundles.md)

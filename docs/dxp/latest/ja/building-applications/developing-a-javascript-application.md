@@ -4,6 +4,7 @@ toc:
 - ./developing-a-javascript-application/using-angular.md
 - ./developing-a-javascript-application/using-vuejs.md
 ---
+
 # JavaScriptアプリケーションの開発
 
 ```{toctree}

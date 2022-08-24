@@ -31,7 +31,7 @@
 ```jsp
 <div class="aspect-ratio">
 
-    <img class="aspect-ratio-item-fluid" src="https://claycss.com/images/thumbnail_hot_air_ballon.jpg" />
+    <img class="aspect-ratio-item-fluid" src="/images/thumbnail_hot_air_ballon.jpg" />
 
     <clay:sticker label="PDF" position="top-left" style="danger" />
 </div>
@@ -43,6 +43,6 @@
 
 ## 関連トピック
 
-* [Clayバッジ](./clay-badges.md)
-* [Clayカード](./clay-cards.md)
-* [Clayアイコン](./clay-icons.md)
+* [Clay Badges](./clay-badges.md)
+* [Clay Cards](./clay-cards.md)
+* [Clay Icons](./clay-icons.md)

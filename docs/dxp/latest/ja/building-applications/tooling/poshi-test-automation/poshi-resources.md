@@ -1,4 +1,7 @@
 ---
+toc:
+- ./poshi-resources/configuration.md
+- ./poshi-resources/using-poshi-resources.md
 html_meta:
   "documentation-type": "user-guide"
 ---

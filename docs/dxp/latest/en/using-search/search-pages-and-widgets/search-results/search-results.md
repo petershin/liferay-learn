@@ -67,7 +67,7 @@ Post-filtering is configurable at *Control Panel* &rarr; *Configuration* &rarr; 
 
 ## Search and Staging
 
-With [staging](./../../../site-building/site_settings.md), content is placed first in a preview and testing environment before being published to the live Site. Indexed content is marked so the search API knows if an item is live or not. In the live version of the Site, only live indexed content is searchable.
+With [staging](./../../../site-building/site-settings.md), content is placed first in a preview and testing environment before being published to the live Site. Indexed content is marked so the search API knows if an item is live or not. In the live version of the Site, only live indexed content is searchable.
 
 In the staged version of the Site, all content---live or staged---is searchable.
 

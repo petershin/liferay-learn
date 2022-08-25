@@ -91,8 +91,12 @@ Both keys in this JSON file are optional. In your `liferay-deploy-fragments.json
 }
 ```
 
+```{warning}
+Importing fragments [with resources](./including-default-resources-in-fragments.md) to be available at the system level is not supported.
+```
+
 ```{note}
-The Fragments Toolkit's [npm run compress command](./using-the-fragments-toolkit.md) facilitates creating Fragment ZIP files and their deployment descriptors.
+The Fragments Toolkit's [`npm run compress` command](./using-the-fragments-toolkit.md) facilitates creating Fragment ZIP files and their deployment descriptors.
 ```
 
 ## Modify the Fragment Set and Redeploy

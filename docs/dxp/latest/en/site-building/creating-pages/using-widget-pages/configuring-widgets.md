@@ -1,6 +1,5 @@
 ---
 toc:
-- ./configuring-widgets/adding-widgets-to-a-page.md
 - ./configuring-widgets/exporting-importing-widget-data.md
 - ./configuring-widgets/communication-between-widgets.md
 - ./configuring-widgets/converting-widget-pages-to-content-pages.md
@@ -17,7 +16,6 @@ Widgets available out-of-the-box with Liferay DXP share several configurable fea
 ```{toctree}
 :maxdepth: 3
 
-configuring-widgets/adding-widgets-to-a-page.md
 configuring-widgets/exporting-importing-widget-data.md
 configuring-widgets/communication-between-widgets.md
 configuring-widgets/converting-widget-pages-to-content-pages.md

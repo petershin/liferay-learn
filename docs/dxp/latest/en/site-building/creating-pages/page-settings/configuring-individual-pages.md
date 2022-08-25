@@ -46,7 +46,7 @@ For basic Widget Pages created using a global template (e.g., blog, wiki, search
 
 ### Categorization
 
-Use *Topics* and *Tags* to categorize a Page's content so users can more easily find it. For more information on using tags and categories, see [Organizing Content with Tags and Categories](../../../content-authoring-and-management/tags_and_categories.html).
+Use *Topics* and *Tags* to categorize a Page's content so users can more easily find it. For more information on using tags and categories, see [Organizing Content with Tags and Categories](../../../content-authoring-and-management/tags-and-categories.md).
 
 ### Look and Feel
 
@@ -82,7 +82,7 @@ If your Site's theme uses JavaScript, it's best to add custom JavaScript code to
 
 **Mobile Device Rules**: Determine whether a Page uses its Page Set's rules for mobile devices or is uniquely configured. These rules determine how a Page's content renders for different types of mobile devices. 
 
-**Customization Settings**: Determine whether a Widget Page's columns are *Customizable* for users. If customization is enabled, specify the columns users can customize. See [Personalizing Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) for more information.
+**Customization Settings**: Determine whether a Widget Page's columns are *Customizable* for users. If customization is enabled, specify the columns users can customize. See [Personalizing Pages](../using-widget-pages/configuring-widgets/enabling-user-personalization-of-widget-pages.md) for more information.
 
 ![Determine whether users can customize a Widget Page.](./configuring-individual-pages/images/12.png)
 

@@ -59,7 +59,7 @@ This step-by-step example shows you how to create a banner-style composition usi
 * [Step 1: Creating a New Content Page](#step-1-creating-a-new-content-page).
 * [Step 2: Configuring the Container Fragment](#step-2-configuring-the-container-fragment).
 * [Step 3: Saving the Fragment Composition](#step-3-saving-the-fragment-composition).
-* [Step 4: Setting the Default Container Width in the Style Book](#step-3-setting-the-default-container-width-in-the-style-book).
+* [Step 4: Setting the Default Container Width in the Style Book](#step-4-setting-the-default-container-width-in-the-style-book).
 
 ### Step 1: Creating a New Content Page
 

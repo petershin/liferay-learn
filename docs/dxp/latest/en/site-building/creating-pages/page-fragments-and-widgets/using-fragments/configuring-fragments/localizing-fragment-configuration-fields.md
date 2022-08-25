@@ -4,7 +4,7 @@
 
 When using Liferay Fragments, you can localize the following Fragment configuration fields to match your target audience's language:
 
-* [Image Description (*alt text*)](#localizing-alternative-text-for-images)
+* [Image Description (*alt text*)](#localizing-image-descriptions)
 * [Editable URLs](#localizing-editable-urls)
 <!-- * [Collection Filter Label Text](#localizing-collection-filter-label-text) -->
 

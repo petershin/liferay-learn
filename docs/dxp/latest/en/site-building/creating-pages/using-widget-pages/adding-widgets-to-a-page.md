@@ -1,14 +1,16 @@
 # Adding Widgets to a Page
 
-Widgets are applications. They can be simple, and only used to [display content](../../displaying_content.md), or they can be full-featured collaboration applications, like the [Message Boards widget](../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md).
+Widgets are applications. They can be simple, and only used to [display content](../../displaying-content.md), or they can be full-featured collaboration applications, like the [Message Boards widget](../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md).
 
 Follow these steps to add a widget to a Widget Page:
 
-1. Click the *Add* button (![Add](../../../images/icon-add-app.png)) in the Control Menu.
+1. Click the *Add* button (![Add](../../../images/icon-add-app.png)) in the Application Bar.
 
-    ![The Widgets panel contains several default widgets that you can use to add functionality to the page.](./adding-widgets-to-a-page/images/01.png)
+   ![Click the Add Button in the Application Bar.](./adding-widgets-to-a-page/images/01.png)
 
 1. Open the *Widgets* panel and search or browse through the categories of available widgets to find the one you want.
+
+   ![The Widgets panel contains several default widgets that you can use to add functionality to the page.](./adding-widgets-to-a-page/images/02.png)
 
 1. Drag the widget to the column and row of the page layout where you want to place it.
 

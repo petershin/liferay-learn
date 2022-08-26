@@ -1,91 +1,93 @@
-# Using Job Scheduler
+# ジョブスケジューラーを使う
 
-[Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a flexible framework built on top of Liferay's scheduler engine that you can use to run and schedule any type of logic. このフレームワークは、`DispatchTaskExecutor`インターフェイスを使用してカスタムロジックでテンプレートを定義し、そのテンプレートを使用してコントロールパネルから [タスクを作成](#adding-a-new-job-scheduler-task) できます。 Once a Job Scheduler task is created, you can configure its behavior and execution [schedule](#scheduling-the-job-scheduler-task) .
+[Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) は、Liferayのスケジューラエンジン上に構築された柔軟なフレームワークで、あらゆるタイプのロジックを実行し、スケジュールするために使用することができます。 このフレームワークは、`DispatchTaskExecutor`インターフェイスを使用してカスタムロジックでテンプレートを定義し、そのテンプレートを使用してコントロールパネルから[タスクを作成](#adding-a-new-job-scheduler-task)できます。 ジョブスケジューラタスクを作成すると、その動作や実行方法を設定することができます。 [スケジュール](#scheduling-the-job-scheduler-task)。
 
-![Add and manage Job Scheduler tasks via the Job Scheduler page.](./using-job-scheduler/images/01.png)
+![ジョブスケジューラーページでジョブスケジューラータスクを追加・管理します。](./using-job-scheduler/images/01.png)
 
-Job Scheduler provides a convenient UI for viewing and managing all instance [jobs scheduled using the `MessageListener` interface](#viewing-and-managing-scheduled-jobs) .
+Job Scheduler は、すべてのインスタンス [`MessageListener` インターフェースを使用してスケジュールされたジョブ](#viewing-and-managing-scheduled-jobs) を表示・管理するための便利な UI を提供します。
 
 ```{note}
-When deciding whether to use Job Scheduler or `MessageListener` to schedule instance jobs, consider the following Job Scheduler benefits.
-Job Scheduler tasks are more flexible than jobs scheduled using `MessageListener`, since changes can be applied to Job Scheduler tasks in runtime through the Job Scheduler UI. `MessageListener`ジョブへの変更は、ハードコーディングして再デプロイする必要があります。 
-The Job Scheduler UI also provides a more complete overview of each Job Scheduler task's execution properties (e.g., cron expression, start/end date, cluster mode) and execution history. この情報は、`MessageListener`ジョブのUIでは提供されません。
+インスタンスジョブのスケジューリングにJob Schedulerと`MessageListener`のどちらを使用するかを決定する際には、以下のJob Schedulerの利点を考慮してください。
+ジョブスケジューラーのタスクは、ジョブスケジューラーのUIから実行時に変更を加えることができるため、`MessageListener`を使ってスケジュールしたジョブよりも柔軟性があります。 `MessageListener`ジョブへの変更は、ハードコーディングして再デプロイする必要があります。 
+また、Job Scheduler UIでは、各Job Schedulerタスクの実行プロパティ（cron式、開始/終了日、クラスタモードなど）および実行履歴をより詳細に把握することができます。 この情報は、`MessageListener`ジョブのUIでは提供されません。
 ```
 
-## Adding a New Job Scheduler Task
+## ジョブスケジューラタスクの新規追加
 
-1. Open the **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png)), click **Control Panel** , and go to **Configuration** &rarr; **Job Scheduler** .
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** をクリックし、 **設定** &rarr; **ジョブスケジューラ** に進みます。
 
-1. Click the **Add** button (![Add Button](../../../images/icon-add.png)) and select the desired template for your Job Scheduler Task. 選択したテンプレートは、タスクの基本的なロジックを定義します。
+1. **追加** ボタン (![Add Button](../../../images/icon-add.png)) をクリックし、ジョブスケジューラタスクに必要なテンプレートを選択します。 選択したテンプレートは、タスクの基本的なロジックを定義します。
+   
+   各テンプレートは `DispatchTaskExecutor` インターフェイスの実装であり、各ジョブスケジューラタスクは選択されたテンプレートのインスタンスです。 その仕組みについては、 [Understanding Job Scheduler Framework](./understanding-the-job-scheduler-framework.md) をご覧ください。 
 
-   Each template is an implementation of the `DispatchTaskExecutor` interface, and each Job Scheduler task is an instance of the selected template. See [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md) for more information about how it works.
 
    ```{note}
-   Liferay DXP provides a variety of Job Scheduler task templates, while Liferay Portal only includes the Talend Job Scheduler Task Executor.
+   Liferay DXPには様々なJob Schedulerのタスクテンプレートがありますが、Liferay PortalにはTalend Job Scheduler Task Executorのみが含まれています。
 
-   独自のテンプレートを作成することもできます。 See [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md) to learn how.
+   独自のテンプレートを作成することもできます。 詳細は、[ジョブスケジューラタスク実行ファイルの作成](./creating-a-new-job-scheduler-task-executor.md) をご覧ください。
    ```
 
-   ![Click the Add button and select a Job Scheduler Task Executor template for your task.](./using-job-scheduler/images/02.png)
+   ![Addボタンをクリックし、タスクのJob Scheduler Task Executorテンプレートを選択します。](./using-job-scheduler/images/02.png)
 
-1. Enter a name for the Job Scheduler task.
+1. Job Schedulerタスクの名前を入力します。
 
-1. (Optional) Use the settings editor to define properties for the Job Scheduler task that are injected at runtime.
-
+1. (オプション）設定エディタを使用して、ランタイムに注入されるジョブスケジューラタスクのプロパティを定義します。
+   
    これらの設定を使用して、実行フローなどを微調整できます。
-
-   All settings added in this way are soft-coded, so you can configure your Job Scheduler tasks without having to edit and redeploy the Executor's code.
+   
+   この方法で追加された設定はすべてソフトコード化されているので、Executorのコードを編集して再展開しなくても、ジョブスケジューラのタスクを設定することができます。 
 
    ```{tip}
-   You can create multiple instances of the same Job Scheduler Task Executor and modify their properties and behavior using the settings editor.
+   同じJob Scheduler Task Executorのインスタンスを複数作成し、そのプロパティや動作を設定エディターで変更することができます。
    ```
 
-1. Click **Save** to create a new Job Scheduler task for the selected template.
+1. **Save** をクリックすると、選択したテンプレートの新規ジョブスケジューラタスクが作成されます。
+   
+   ![名前を入力し、オプションで設定エディタを使用してジョブスケジューラタスクのプロパティを定義します。](./using-job-scheduler/images/03.png)
 
-   ![Enter a name and optionally use the settings editor to define properties for the Job Scheduler task.](./using-job-scheduler/images/03.png)
+インスタンスに追加されたすべてのジョブスケジューラタスクは、ジョブスケジューラページに表示されます。 ここから、タスクをクリックしてその設定を編集したり、ジョブスケジューラトリガーを設定して実行時のスケジュールを設定することができます。 ［**今すぐ実行**］ をクリックして、タスクを手動で実行することもできます。 ログ]タブには、選択したジョブスケジューラタスクの全実行記録が表示されます。
 
-All Job Scheduler tasks added to an instance appear on the Job Scheduler page. From here, you can click the task to edit its settings or configure its Job Scheduler Trigger to schedule when it runs. ［**今すぐ実行**］ をクリックして、タスクを手動で実行することもできます。 The Logs tab shows a record of all executions for the selected Job Scheduler task.
+![ジョブスケジューラページから、すべてのインスタンスジョブスケジューラタスクを表示、管理、および設定します。](./using-job-scheduler/images/04.png)
 
-![View, manage, and configure all instance Job Scheduler tasks from the Job Scheduler page.](./using-job-scheduler/images/04.png)
 
-## Scheduling the Job Scheduler Task
+## ジョブスケジューラタスクのスケジューリング
 
-By default, all Job Scheduler task triggers are deactivated at creation. Follow these steps to activate a Task's Job Scheduler Trigger and schedule when it runs:
+デフォルトでは、すべてのジョブスケジューラタスクトリガーは作成時に非アクティブ化されます。 タスクのジョブスケジューラートリガーを有効にし、タスクの実行をスケジュールするには、次の手順に従います。
 
-1. Go to the **Job Scheduler Triggers** tab in the Job Scheduler page and click the desired task.
+1. Job Scheduler ページの **Job Scheduler Triggers** タブに移動し、目的のタスクをクリックします。
 
-1. Click the **Job Scheduler Trigger** tab and configure the fields below.
+1. **Job Scheduler Trigger** タブをクリックし、以下のフィールドを設定します。
 
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
+   
+   ![Job Schedulerのタスクが実行されるタイミングをスケジュールします。](./using-job-scheduler/images/05.png)
 
-   ![Schedule when the Job Scheduler task runs.](./using-job-scheduler/images/05.png)
+**Active** : ジョブスケジューラートリガーをアクティブまたは非アクティブにします。 トリガーを有効にするには、有効な cron 式を入力する必要があります。 アクティブな場合、ジョブスケジューラタスクは設定されたスケジュールに従って実行されます。 無効にすると、トリガーが実行されなくなります。
 
-**Active** : Activate or deactivate the Job Scheduler Trigger. To activate the trigger, you must enter a valid cron expression. When active, the Job Scheduler task executes according to the set schedule. 無効にすると、トリガーが実行されなくなります。
+**Task Execution ClusterMode** : クラスター環境において、ジョブスケジューラタスクを1つのノードで実行するか、すべてのノードで実行するかを決定します。
 
-**Task Execution ClusterMode** : Determine whether the Job Scheduler task is run on one or all nodes in a clustered environment.
+**Overlap Allowed** : ジョブスケジューラタスクの同時実行を有効または無効にします。 有効にすると、前の実行がまだ実行されているかどうかに関係なく、設定されたスケジュールに従って新しいタスクの実行が開始されます。
 
-**Overlap Allowed** : Enable or disable  concurrent execution for the Job Scheduler task. 有効にすると、前の実行がまだ実行されているかどうかに関係なく、設定されたスケジュールに従って新しいタスクの実行が開始されます。
+**Cron Expression** : ジョブスケジューラタスクがいつ実行されるかを決定する有効なCron式を入力します。
 
-**Cron Expression** : Enter a valid Cron expression to determine when the Job Scheduler task is executed.
+**Start Date** : Job Scheduler タスクの開始日を決定します。
 
-**Start Date** : Determine the Job Scheduler task's start date.
+**End Date** : チェックボックスを使用して、ジョブスケジューラタスクがクーロンスケジュールによって実行されなくなるタイミングを決定します。 デフォルトでは、現在の日時に設定されています。
 
-**End Date** : Use the checkbox to determine when the Job Scheduler task is no longer executed by the cron schedule. デフォルトでは、現在の日時に設定されています。
+ジョブスケジューラタスクが、指定した日時に、cron間隔に従って自動的に起動・停止するようになりました。
 
-The Job Scheduler task now automatically starts and stops at your specified date/time and according to the cron intervals.
+## Talend Job Schedulerのタスクのセットアップ
 
-## Setting Up a Talend Job Scheduler Task
+Talendは、カスタムデータ統合ジョブを定義するためのオープンソースのデータ統合ソフトウェアです。 これらのジョブは、 `.zip` アーカイブとしてエクスポートし、Talend実行者テンプレートを使用する任意のJob Schedulerタスクにアップロードすることができます。 アップロードされると、Talendデータ統合ジョブは、ジョブスケジューラタスクが実行されるたびに実行されます。
 
-Talendは、カスタムデータ統合ジョブを定義するためのオープンソースのデータ統合ソフトウェアです。 These jobs can be exported as a `.zip` archive and uploaded to any Job Scheduler task that uses the Talend executor template. Once uploaded, the Talend data integration job is executed whenever the Job Scheduler task is run.
+以下の手順に従って、Talend **Job Archive** を Job Scheduler タスクにアップロードしてください。
 
-Follow these steps to upload a Talend **Job Archive** to a Job Scheduler task:
+1. Talend executorテンプレートを使用して、新しいJob Schedulerタスクをインスタンスに追加します。 詳細な手順については、 [新しいジョブスケジューラタスクを追加する](#adding-a-new-job-scheduler-task) を参照してください。
 
-1. Add a new Job Scheduler task to your instance using the Talend executor template. See [Adding a New Job Scheduler Task](#adding-a-new-job-scheduler-task) for detailed instructions.
-
-1. Go to the **Job Scheduler Triggers** tab in the Job Scheduler page, and click on the desired task.
+1. Job Scheduler ページの **Job Scheduler Triggers** タブに移動し、目的のタスクをクリックします。
 
 1. ［**Talend**］ タブをクリックします。
-
+   
    ![［Talend］タブをクリックして、Talendジョブアーカイブをアップロードします](./using-job-scheduler/images/06.png)
 
 1. Talend **ジョブアーカイブ** のZIPファイルをアップロードします。
@@ -94,12 +96,12 @@ Follow these steps to upload a Talend **Job Archive** to a Job Scheduler task:
 
 ## スケジュールされたジョブの表示と管理
 
-The Job Scheduler Page's **Scheduled Jobs** tab also lists all jobs scheduled on the Liferay instance using the `MessageListener` interface. ここでは、各ジョブの一般的な詳細（名前、ステータスなど）を表示したり、手動で実行を開始したり、ジョブを個別に一時停止/再開したりできます。
+Job Scheduler Page の **Scheduled Jobs** タブには、 `MessageListener` インターフェイスを使用して Liferay インスタンスでスケジュールされたすべてのジョブもリストアップされます。 ここでは、各ジョブの一般的な詳細（名前、ステータスなど）を表示したり、手動で実行を開始したり、ジョブを個別に一時停止/再開したりできます。
 
 ![MessageListenerインターフェイスを使用してスケジュールされたすべてのジョブを表示します。](./using-job-scheduler/images/07.png)
 
 ## 追加情報
 
-* [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)
-* [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)
-* [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md)
+* [ジョブスケジューラーUIリファレンス](./job-scheduler-ui-reference.md)
+* [ジョブスケジューラフレームワークの理解](./understanding-the-job-scheduler-framework.md)
+* [ジョブスケジューラ タスクエクゼキュータの新規作成](./creating-a-new-job-scheduler-task-executor.md)

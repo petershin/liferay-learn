@@ -31,7 +31,8 @@ using-google-sheets-with-objects/using-zapier-to-sync-object-data-with-google-sh
 
 これらの記事では、様々なサードパーティツールを使用して、Liferay ObjectとGoogle シート間の同期タスクをトリガーするためにWebhookを使用する方法を説明します。
 
-::::{grid} 2 :gutter: 3 3 3 3
+::::{grid} 2
+:gutter: 3 3 3 3
 
 :::{grid-item-card} Automate.ioを使用してオブジェクトデータをGoogle シートと同期する
 :link: ./using-google-sheets-with-objects/using-automate-io-to-sync-object-data-with-google-sheets.md
@@ -67,4 +68,5 @@ using-google-sheets-with-objects/using-zapier-to-sync-object-data-with-google-sh
 
 :::{grid-item-card} Zapierを使用して、オブジェクトデータをGoogle シートと同期する
 :link: ./using-google-sheets-with-objects/using-zapier-to-sync-object-data-with-google-sheets.md
-::: ::::
+:::
+::::

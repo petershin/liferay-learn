@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay DXP/Portal 7.4以降で利用可能`
 
-Relationships are connections between Object definitions that you can use to link their entities. You can add relationships to any published or unpublished Object, including both system and custom Objects.
+リレーションシップは、オブジェクト定義間の接続であり、そのエンティティをリンクさせるために使用することができます。 システムオブジェクトとカスタムオブジェクトの両方を含む、任意のパブリッシュまたは非パブリッシュのオブジェクトにリレーションシップを追加することができます。
 
 ## リレーションシップの種類
 
@@ -15,7 +15,7 @@ Relationships are connections between Object definitions that you can use to lin
 **多対多** ：現在のオブジェクトの複数のエンティティを別のオブジェクトの複数のエンティティに関連付けることができます。 選択すると、リレーションシップの両側に新しいデータベーステーブルが作成されます。 このテーブルは、いずれかのオブジェクトのカスタムレイアウトの[リレーションシップタブ](./designing-object-layouts.md#adding-relationships-tabs)に追加でき、関連するすべてのエンティティを一覧表示するために使用されます。 <!--REFINE-->
 
 ```{important}
-Displaying relationship tables requires a custom layout. However, custom layouts are not supported for system Objects. 詳しくは、[オブジェクトレイアウトの設計](./designing-object-layouts.md)を参照してください。 
+リレーションシップテーブルの表示には、カスタムレイアウトが必要です。 ただし、システムオブジェクトのカスタムレイアウトはサポートされていません。 詳しくは、[オブジェクトレイアウトの設計](./designing-object-layouts.md)を参照してください。 
 ```
 
 ## 新しいリレーションシップの追加
@@ -82,7 +82,7 @@ Liferay 7.4 U26/GA26 以前のバージョンでは、 [公開された](./creat
 
 1. 目的のリレーションシップの **アクション** ボタン (![Actions Button](../../../images/icon-actions.png))をクリックし、 ［**削除**］ を選択します。
 
-1. In the dialog window, enter the name of the relationship and click **Delete** to confirm.
+1. ダイアログウィンドウで、リレーションシップの名前を入力し、 **Delete** をクリックして確認します。
 
    ![リレーションシップの名前を入力し、［Done］をクリックします。](./defining-object-relationships/images/04.png)
 

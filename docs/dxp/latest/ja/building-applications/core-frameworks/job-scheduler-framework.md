@@ -6,7 +6,7 @@ toc:
 - ./job-scheduler-framework/job-scheduler-ui-reference.md
 ---
 
-# Job Scheduler Framework
+# ジョブスケジューラフレームワーク
 
 ```{toctree}
 :maxdepth: 3

@@ -11,8 +11,10 @@ toc:
 developing-a-rest-web-api/producing-graphql-apis.md
 ```
 
-::::{grid} 2 :gutter: 3 3 3 3
+::::{grid} 2
+:gutter: 3 3 3 3
 
-:::{grid-item-card} Producing GraphQL API's
+:::{grid-item-card} GraphQL APIの作成
 :link: ./developing-a-rest-web-api/producing-graphql-apis.md
-::: ::::
+:::
+::::

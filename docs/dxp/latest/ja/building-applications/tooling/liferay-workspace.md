@@ -19,7 +19,8 @@ liferay-workspace/configuring-a-liferay-docker-container.md
 liferay-workspace/configuring-liferay-workspace.md
 ```
 
-::::{grid} 2 :gutter: 3 3 3 3
+::::{grid} 2
+:gutter: 3 3 3 3
 
 :::{grid-item-card} Liferay Workspaceの概要
 :link: ./liferay-workspace/what-is-liferay-workspace.md
@@ -39,4 +40,5 @@ liferay-workspace/configuring-liferay-workspace.md
 
 :::{grid-item-card} Liferay Workspaceの設定
 :link: ./liferay-workspace/configuring-liferay-workspace.md
-::: ::::
+:::
+::::

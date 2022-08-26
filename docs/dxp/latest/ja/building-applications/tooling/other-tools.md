@@ -1,16 +1,16 @@
 ---
 toc:
-0: other-tools/liferay-cli-tool.md
-1: other-tools/liferay-js-generator.md
-2: other-tools/liferay **npm** bundler.rst
-3: other-tools/intellij-plugin.md
-4: other-tools/theme-generator.md
-5: other-tools/maven-plugins.md
-6: other-tools/gradle-plugins.md
-7: other-tools/screens.md
-8: other-tools/mobile-sdk.md
-9: other-tools/push.md
-10: other-tools/sync.md
+: other-tools/liferay-cli-tool.md
+: other-tools/liferay-js-generator.md
+: other-tools/liferay **npm** bundler.rst
+: other-tools/intellij-plugin.md
+: other-tools/theme-generator.md
+: other-tools/maven-plugins.md
+: other-tools/gradle-plugins.md
+: other-tools/screens.md
+: other-tools/mobile-sdk.md
+: other-tools/push.md
+: other-tools/sync.md
 ---
 
 # その他のツール
@@ -51,7 +51,7 @@ other-tools/sync.md
 * [デフォルトのバンドラーローダー](./other-tools/liferay-npm-bundler/default-bundler-loaders.md)
 * [Liferayとローダー構成のエクスポート方法](./other-tools/liferay-npm-bundler/how-liferay-amd-loader-configuration-is-exported.md)
 * [ポータルがnpmパッケージを公開する方法](./other-tools/liferay-npm-bundler/how-portal-publishes-npm-packages.md)
-* [How the Bundler Formats JS Modules](./other-tools/liferay-npm-bundler/how-the-bundler-formats-js-modules.md)
+* [バンドラーがJavaScriptモジュールをフォーマットする方法](./other-tools/liferay-npm-bundler/how-the-bundler-formats-js-modules.md)
 * [バンドラー構成プリセットについて](./other-tools/liferay-npm-bundler/how-the-default-preset-configures-the-liferay-npm-bundler.md)
 * [npmbundlerrc構造について](./other-tools/liferay-npm-bundler/npmbundlerrc-structure.md)
 * [OSGiバンドルとnpmパッケージ構造](./other-tools/liferay-npm-bundler/the-structure-of-osgi-bundles-containing-npm-packages.md)

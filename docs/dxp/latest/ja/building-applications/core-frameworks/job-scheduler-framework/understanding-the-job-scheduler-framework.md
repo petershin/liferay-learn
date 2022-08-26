@@ -1,42 +1,42 @@
-# Understanding the Job Scheduler Framework
+# ジョブスケジューラフレームワークの理解
 
-Liferay Job Scheduler is a flexible framework built on top of Liferay's Scheduler Engine. これを使用して、Liferayインスタンス全体でカスタムロジックを含むタスクの追加、実行、およびスケジューリングができます。
+Liferay Job Schedulerは、LiferayのScheduler Engineの上に構築された柔軟なフレームワークです。 これを使用して、Liferayインスタンス全体でカスタムロジックを含むタスクの追加、実行、およびスケジューリングができます。
 
-The Job Scheduler framework consists of six essential parts:
+ジョブスケジューラのフレームワークは、6つの要素で構成されています。
 
 * [ベースの`DispatchTaskExecutor`](#base-dispatchtaskexecutor)
-* [`DispatchTrigger`](#dispatchtrigger)
+* [`ディスパッチトリガー`](#dispatchtrigger)
 * [`DispatchMessageListener`](#dispatchmessagelistener)
-* [`DispatchTaskExecutorRegistry`](#dispatchtaskexecutorregistry)
-* [`DispatchLog`](#dispatchlog)
-* [`DispatchConfigurator`](#dispatchconfigurator)
+* [`DispatchTaskExecutorRegistry（ディスパッチタスクエクセキュータレジストリ`](#dispatchtaskexecutorregistry)
+* [`ディスパッチログ`](#dispatchlog)
+* [`ディスパッチコンフィギュレータ`](#dispatchconfigurator)
 
 ## ベースの`DispatchTaskExecutor`
 
-Implementations of the base [`DispatchTaskExecutor`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) interface create templates for Job Scheduler Tasks in a Liferay instance. Each implementation of `DispatchTaskExecutor` is registered as an OSGi component and contains the logic executed by the Job Scheduler task. All Job Scheduler tasks are instances of Java classes that implement the `DispatchTaskExecutor` interface and have the `dispatch.task.executor.name` and `dispatch.task.executor.type` OSGi component properties. See [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md) to learn more.
+ベースとなる [`DispatchTaskExecutor`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) インターフェースの実装は、Liferay インスタンスでジョブスケジューラタスクのテンプレートを作成します。 `DispatchTaskExecutor` の各実装は、OSGiコンポーネントとして登録され、ジョブスケジューラタスクで実行されるロジックを含んでいます。 すべてのジョブスケジューラタスクは、 `DispatchTaskExecutor` インターフェースを実装し、 `dispatch.task.executor.name` と `dispatch.task.executor.type` OSGi コンポーネントのプロパティを持つ、Java クラスのインスタンスです。 詳しくは、 [新規ジョブスケジューラ タスクエクゼキュータの作成](./creating-a-new-job-scheduler-task-executor.md) をご覧ください。
 
-## `DispatchTrigger`
+## `ディスパッチトリガー`
 
-[`DispatchTrigger`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchTrigger.java) インターフェイスは、`DispatchTriggerModel`と`PersistedModel`を拡張します。 このエンティティは、Liferay（Quartz）トリガーのドラフトとして機能します。 これは、`DispatchTaskExecutor`とLiferayスケジューラーエンジン間の接続です。
+[`DispatchTrigger`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchTrigger.java)インターフェイスは、`DispatchTriggerModel`と`PersistedModel`を拡張します。 このエンティティは、Liferay（Quartz）トリガーのドラフトとして機能します。 これは、`DispatchTaskExecutor`とLiferayスケジューラーエンジン間の接続です。
 
 ## `DispatchMessageListener`
 
-The [`DispatchMessageListener`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-service/src/main/java/com/liferay/dispatch/internal/messaging/DispatchMessageListener.java) class initiates the execution of all Job Scheduler Task Executors. これは、`DispatchTaskExecutor`サービスクラスのスケジュールされたインスタンスごとに新しいLiferayトリガーが作成されることを意味します。 このトリガーは同じ宛先（`liferay/dispatch/executor`）で作成され、Liferayトリガーを`DispatchTaskExecutor`に接続するペイロード（`dispatchTriggerId`）を持っています。 次に、Liferayスケジューラーエンジンは、適切なタイミングでメッセージ（`dispatchTriggerId`）を使用して`DispatchMessageListener`をトリガーします。 `dispatchTriggerId`を使用すると、`DispatchMessageListener`は、`DispatchTaskExecutorRegistry`を使用して`DispatchTaskExecutor`の適切なインスタンスを見つけて実行します。
+[`DispatchMessageListener`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-service/src/main/java/com/liferay/dispatch/internal/messaging/DispatchMessageListener.java) クラスは、すべてのジョブスケジューラタスクエクゼキュータの実行を開始します。 これは、`DispatchTaskExecutor`サービスクラスのスケジュールされたインスタンスごとに新しいLiferayトリガーが作成されることを意味します。 このトリガーは同じ宛先（`liferay/dispatch/executor`）で作成され、Liferayトリガーを`DispatchTaskExecutor`に接続するペイロード（`dispatchTriggerId`）を持っています。 次に、Liferayスケジューラーエンジンは、適切なタイミングでメッセージ（`dispatchTriggerId`）を使用して`DispatchMessageListener`をトリガーします。 `dispatchTriggerId`を使用すると、`DispatchMessageListener`は、`DispatchTaskExecutorRegistry`を使用して`DispatchTaskExecutor`の適切なインスタンスを見つけて実行します。
 
-## `DispatchTaskExecutorRegistry`
+## `DispatchTaskExecutorRegistry（ディスパッチタスクエクセキュータレジストリ`
 
-[`DispatchTaskExecutorRegistry`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutorRegistry.java) インターフェイスを実装すると、ポータル内の`DispatchTaskExecutor`のすべての実装への参照が保持され、各`dispatch.task.executor.type` OSGiのプロパティ値が一意であることが検証されます。
+[`DispatchTaskExecutorRegistry`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutorRegistry.java)インターフェイスを実装すると、ポータル内の`DispatchTaskExecutor`のすべての実装への参照が保持され、各`dispatch.task.executor.type` OSGiのプロパティ値が一意であることが検証されます。
 
-## `DispatchLog`
+## `ディスパッチログ`
 
-[`DispatchLog`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchLog.java) インターフェイスは、`DispatchLogModel`と`PersistedModel`を拡張します。 This entity is responsible for persisting Job Scheduler task execution logs.
+[`DispatchLog`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/model/DispatchLog.java)インターフェイスは、`DispatchLogModel`と`PersistedModel`を拡張します。 このエンティティは、ジョブスケジューラタスクの実行ログを保持する責任を負う。
 
-## `DispatchConfigurator`
+## `ディスパッチコンフィギュレータ`
 
-The [`DispatchConfigurator`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-service/src/main/java/com/liferay/dispatch/internal/messaging/DispatchConfigurator.java) class defines properties of the Job Scheduler framework, such as the `DispatchMessageListener` destination, `executorService` queue size and thread pool, `RejectedExecutionHandler`, and more.
+[`DispatchConfigurator`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-service/src/main/java/com/liferay/dispatch/internal/messaging/DispatchConfigurator.java) クラスは、`DispatchMessageListener` の送信先、`executorService` のキューサイズとスレッドプール、`RejectedExecutionHandler` など、ジョブスケジューラーフレームワークのプロパティを定義します。
 
 ## 追加情報
 
-* [Using Job Scheduler](./using-job-scheduler.md)
-* [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)
-* [Creating a New Job Scheduler Executor](./creating-a-new-job-scheduler-task-executor.md)
+* [ジョブスケジューラーを使う](./using-job-scheduler.md)
+* [ジョブスケジューラーUIリファレンス](./job-scheduler-ui-reference.md)
+* [ジョブスケジューラエクゼキュータの新規作成](./creating-a-new-job-scheduler-task-executor.md)

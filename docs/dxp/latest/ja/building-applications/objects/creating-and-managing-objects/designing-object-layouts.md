@@ -22,7 +22,7 @@
 
 1. **名前** を入力し、 ［**Save**］ をクリックします。
 
-保存すると、新しい空白のレイアウトが作成されます。 これで、カスタムレイアウトに [タブを追加](#adding-layout-tabs) し、エントリーの作成と編集のためにオブジェクトのフィールドとリレーションシップをどのように編成するかを決定できます。
+保存すると、新しい空白のレイアウトが作成されます。 これで、カスタムレイアウトに[タブを追加](#adding-layout-tabs)し、エントリーの作成と編集のためにオブジェクトのフィールドとリレーションシップをどのように編成するかを決定できます。
 
 ## レイアウトタブの追加
 <!--TASK: Add drag and drop details once implemented.-->
@@ -30,9 +30,9 @@
 
 [**フィールド**](#fields-tabs)：オブジェクトエントリーフィールドを表示します。 これには、オブジェクトで直接作成されたフィールド、または **一対多** のリレーションシップから継承されたフィールドが含まれます。 <!--TASK: Add in One to One after implemented-->
 
-[**リレーションシップ**](#relationships-tabs) ：リレーションシップテーブルを表示し、 **一対多** のリレーションシップの親側と **多対多** のリレーションシップの両側を表示するために使用する必要があります。
+[**リレーションシップ**](#relationships-tabs)：リレーションシップテーブルを表示し、 **一対多** のリレーションシップの親側と **多対多** のリレーションシップの両側を表示するために使用する必要があります。
 
-レイアウトを設計するには、必要なすべての [フィールド](#fields-tabs) と [リレーションシップ](#relationships-tabs) を追加するまで、次の手順を繰り返します。
+レイアウトを設計するには、必要なすべての[フィールド](#fields-tabs)と[リレーションシップ](#relationships-tabs)を追加するまで、次の手順を繰り返します。
 
 ```{important}
 オブジェクトエントリーの作成中は、最初のタブのみが表示されます。 他のタブは、オブジェクトエントリーを編集するときにのみ表示されます。
@@ -46,13 +46,13 @@
 
    ![［レイアウト］タブには、レイアウトを作成するためのコントロールが含まれています。](./designing-object-layouts/images/02.png)
 
-1. Click **Add Tab** , enter a **Label** , select the **Fields** type, and click **Save** .
+1. **Add Tab** をクリックし、 **Label** を入力し、 **Fields** type を選択し、 **Save** をクリックします。
 
    ラベルの値によって、Liferay UIでのタブの表示名が決定します。
 
-   ![Click Add Tab, enter a Label, select the Fields type, and click Save.](./designing-object-layouts/images/03.png)
+   ![タブの追加をクリックし、ラベルを入力し、フィールドの種類を選択し、保存をクリックします。](./designing-object-layouts/images/03.png)
 
-1. Click **Add Block** , enter a **Label** , and click **Save** .
+1. **ブロックの追加** をクリックし、 **ラベル** を入力し、 **保存** をクリックします。
 
    これにより、フィールドを追加できるタブサブセクションが作成されます。 ラベルの値によって、Liferay UIでのブロックの表示名が決定します。
 
@@ -60,15 +60,15 @@
    フィールドをタブに直接追加することはできず、ブロックにまとめておく必要があります。
    ```
 
-   ![Click Add Block, enter a Label, and click Save.](./designing-object-layouts/images/04.png)
+   ![[ブロックの追加]をクリックし、[ラベル]を入力し、[保存]をクリックします。](./designing-object-layouts/images/04.png)
 
-1. Click **Add Field** , select the desired field, determine whether the field is displayed in one, two, or three columns, and click **Save** .
+1. **Add Field** をクリックし、目的のフィールドを選択し、フィールドを1列、2列、または3列で表示するかどうかを決定し、 **Save** をクリックします。
 
    ```{note}
    フィールドは、レイアウトで1回だけ使用できます。
    ```
 
-   ![Click Add Field, choose a field, select the number of columns the field is displayed in, and click Save.](./designing-object-layouts/images/05.png)
+   ![フィールドの追加」をクリックし、フィールドを選択し、フィールドが表示される列の数を選択し、「保存」をクリックします。](./designing-object-layouts/images/05.png)
 
 1. ［**フィールドを追加**］ をクリックしてさらにフィールドをブロックに追加するか、 ［**Add Block**］ をクリックして追加するフィールド用に新しいブロックをタブに追加します。
 
@@ -82,59 +82,59 @@
 
 1. 目的のレイアウトを選択して、 ［**Layout**］ タブに移動します。
 
-   ![Click the desired layout, and go to the Layout tab.](./designing-object-layouts/images/07.png)
+   ![目的のレイアウトをクリックし、「レイアウト」タブを表示します。](./designing-object-layouts/images/07.png)
 
-1. Click **Add Tab** and enter a **Label** . この値によって、Liferay UIでのタブの表示名が決定します。
+1. **追加タブ** をクリックし、 **ラベル** を入力します。 この値によって、Liferay UIでのタブの表示名が決定します。
 
-1. For tab type, select **Relationships** .
+1. タブタイプは、 **Relationship** を選択します。
 
-1. Select the relationship you want to display in the tab. Only one relationship can be displayed per tab.
+1. タブに表示させたいリレーションシップを選択します。 1つのタブに表示できるリレーションシップは1つだけです。
 
    ```{note}
-   レイアウトに少なくとも1つの［フィールド］タブがある場合にのみ、［関連］タイプを選択できます。 エントリーの作成時に関連を設定することはできないため、［関連］タブをオブジェクトレイアウトの最初のタブにすることはできません。 エントリーを他のオブジェクトエンティティに関連付けるには、まずそのエントリーが存在していなければなりません。
+   レイアウトに少なくとも1つの［フィールド］タブがある場合にのみ、［リレーションシップ］タイプを選択できます。 エントリーの作成時に関連を設定することはできないため、［リレーションシップ］タブをオブジェクトレイアウトの最初のタブにすることはできません。 エントリーを他のオブジェクトエンティティに関連付けるには、まずそのエントリーが存在していなければなりません。
    ```
 
    ![タブのタイプとして［関連］を選択し、［One to Many］または［Many to Many］を選択して、関連テーブルを決定します。](./designing-object-layouts/images/08.png)
 
 1. ［**保存**］ をクリックします。
 
-## Adding Categorization
+## カテゴリー分けの追加
 
-{bdg-secondary}`Available Liferay 7.4 U31+ and GA31+`
+{bdg-secondary}`利用可能な Liferay 7.4 U31+ および GA31+`
 
-If desired, you can add a **Categorization** block to [**Fields** tabs](#fields-tabs) . End users then have access to tags and categories they can apply to Object entries.
+必要に応じて、 **Categorization** ブロックを [**Fields** tabs](#fields-tabs)に追加することができます。 エンドユーザーは、オブジェクトのエントリに適用できるタグやカテゴリにアクセスできるようになります。
 
 ```{note}
-Visibility and permissions can affect how the Categorization block is displayed.
+Visibilityとpermissionは、Categorizationブロックの表示方法に影響を与えます。
 ```
 
-Follow these steps to add a Categorization block to a Fields tabs:
+以下の手順で、「フィールド」タブに「カテゴリー」ブロックを追加してください。
 
-1. 目的のレイアウトを選択して、 ［**レイアウト**］ タブに移動します。
+1. 目的のレイアウトを選択して、 ［**Layout**］ タブに移動します。
 
-1. Click the **Actions** button (![Actions Button](../../../images/icon-actions.png)) for the desired [**Fields** tab](#fields-tabs) and select **Add Categorization** .
+1. 目的の **アクション** ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 [**フィールド** タブ](#fields-tabs) を選択し、 **カテゴリの追加** を選択します。
 
-   ![Click the Actions button and select Add Categorization.](./designing-object-layouts/images/09.png)
+   ![アクション]ボタンをクリックし、[カテゴリの追加]を選択します。](./designing-object-layouts/images/09.png)
 
-   This adds a new block to the tab for accessing categorization tools.
+   これにより、カテゴリ分けツールにアクセスするためのタブに新しいブロックが追加されます。
 
    ```{important}
-   You can only add the Categorization block to one tab per layout.
+   Categorizationブロックは、1レイアウトにつき1つのタブにしか追加できません。
    ```
 
-1. Determine whether the block is **collapsible** .
+1. ブロックが **折り畳み式かどうかを判断する** .
 
-   ![Determine whether the Categorization block is collapsible.](./designing-object-layouts/images/10.png)
+   ![Categorizationブロックが折りたたみ可能かどうかを判断します。](./designing-object-layouts/images/10.png)
 
 1. ［**Save**］ をクリックします。
 
-Now when creating or editing the Object's entries, users can access and apply tags and categories.
+オブジェクトのエントリーを作成または編集する際に、ユーザーはタグやカテゴリーにアクセスし、適用することができるようになりました。
 
-![Access and apply tags and categories to the Object's entries.](./designing-object-layouts/images/11.png)
+![タグやカテゴリーにアクセスし、オブジェクトのエントリに適用することができます。](./designing-object-layouts/images/11.png)
 
 ## デフォルトのレイアウトの選択
 
-目的のフィールドと関連をカスタムレイアウトに追加したら、それをオブジェクトのデフォルトレイアウトとして設定できます。 これにより、オブジェクトのエントリーの作成と編集に確実に使用されるようになります。 デフォルトとしてカスタムレイアウトが選択されていない場合、オブジェクトは自動的に生成されたレイアウトを使用します。
+目的のフィールドとリレーションシップをカスタムレイアウトに追加したら、それをオブジェクトのデフォルトレイアウトとして設定できます。 これにより、オブジェクトのエントリーの作成と編集に確実に使用されるようになります。 デフォルトとしてカスタムレイアウトが選択されていない場合、オブジェクトは自動的に生成されたレイアウトを使用します。
 
 ```{important}
 デフォルトとしてカスタムレイアウトを選択するには、必要なすべてのオブジェクトフィールドをレイアウトの最初のタブに追加する必要があります。
@@ -142,11 +142,11 @@ Now when creating or editing the Object's entries, users can access and apply ta
 
 次の手順に従って、オブジェクトのデフォルトのレイアウトを選択します。
 
-1. Select the desired layout.
+1. 希望のレイアウトを選択する。
 
-1. In the Basic Details tab, check **Mark as Default** .
+1. 基本詳細」タブで、 「**既定値としてマークする**」 をチェックします。
 
-   ![Check Mark as Default and click Save.](./designing-object-layouts/images/12.png)
+   ![デフォルトとしてマークをチェックし、[保存]をクリックします。](./designing-object-layouts/images/12.png)
 
 1. ［**Save**］ をクリックします。
 

@@ -5,33 +5,32 @@
 [オブジェクトを作成・公開すると](../objects/creating-and-managing-objects/creating-objects.md)、Headless REST APIが自動的に生成されます。 ここでは、これらのエンドポイントを統合して、シンプルなCRUD（作成、読み取り、更新、削除）リモートアプリケーションを作成する方法について説明します。
 
 ## Liferay DXPのセットアップ
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps to add the `/o/c/*` URL pattern to the **Default Portal CORS Configuration** :
+次に、以下の手順に従って、 `/o/c/*`URLパターンを ［**Default Portal CORS Configuration**］ に追加してください。 **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**System Settings**］ &rarr; ［**Security Tools**］ に移動します。
 
-1. Open the **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png)), click the **Control Panel** tab, and go to **System Settings** &rarr; **Security Tools** .
+1. ［**Portal Cross-Origin Resource Sharing (CORS**)］ タブで、 ［**Default Portal CORS Configuration**］ をクリックしてください。
 
-1. Go to the **Portal Cross-Origin Resource Sharing (CORS**) tab and click **Default Portal CORS Configuration** .
+1. ［**URL Pattern**］ に`/o/c/*`の値を追加し、 ［**保存**］ をクリックします。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
 
-1. Add a **URL Pattern** with the `/o/c/*` value and click **Save** . This enables CORS for all Object APIs.
+   ![オブジェクトAPIの/o/c/* URLパターンを追加します。](./remote-apps-with-headless-apis/images/01.png)
 
-   ![Add the /o/c/* URL Pattern for Object APIs.](./remote-apps-with-headless-apis/images/01.png)
+## CRUDアプリケーション用のオブジェクトを作成する
 
-## Creating an Object for the CRUD app
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**オブジェクト**］ に移動します。
 
-1. Open the **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png)), click the **Control Panel** tab, and go to **Objects** .
+1. **追加** ボタン (![追加ボタン](../../../images/icon-add.png)) をクリックし、下記の値を入力します。
 
-1. Click the **Add** button (![Add Button](../../../images/icon-add.png)) and enter these values:
-
-   | Field | Value |
+   | 項目 | 値 |
    | :--- | :--- |
-   | Label | J4X7-Object |
-   | Plural Label | J4X7-Objects |
-   | Name | J4X7Object |
+   | ラベル | J4X7-Object |
+   | 複数形のラベル | J4X7-Objects |
+   | 名前 | J4X7Object |
 
    ```{note}
-   The provided React app uses these values.
+   提供されたReactアプリケーションがこの値を使用します。
    ```
 
 1. 新しい **オブジェクト** ドラフトを選択し、 ［**フィールド**］ タブをクリックして、これらの **フィールド** を追加します。
@@ -45,10 +44,10 @@ Then, follow these steps to add the `/o/c/*` URL pattern to the **Default Portal
 
 ## CRUDアプリをセットアップする
 
-1. [CRUDアプリ](./liferay-j4x7.zip) をダウンロードし、解凍してください。
+1. [CRUDアプリ](./liferay-j4x7.zip)をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/remote-apps/remote-apps-tutorials/liferay-j4x7.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/remote-apps/remote-apps-tutorials/liferay-j4x7.zip -O
    ```
 
    ```bash
@@ -59,7 +58,7 @@ Then, follow these steps to add the `/o/c/*` URL pattern to the **Default Portal
    cd liferay-j4x7
    ```
 
-1. `node>と`yarn`がインストールされていることを確認します。 そうでない場合は、以下のコマンドを実行し、プロンプトに従います。
+1. `node>と<code>yarn`がインストールされていることを確認します。 そうでない場合は、以下のコマンドを実行し、プロンプトに従います。
 
    ```bash
    ./setup_tutorial.sh
@@ -127,15 +126,15 @@ Then, follow these steps to add the `/o/c/*` URL pattern to the **Default Portal
 
 ### フォームの実装
 
-[`GetForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/GetForm.js) は、`getObjects`メソッドを呼び出し、レスポンスをJSONとしてパースします。 J4X7の各エントリーは、フォームごとに一覧表示されます。
+[`GetForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/GetForm.js)は、`getObjects`メソッドを呼び出し、レスポンスをJSONとしてパースします。 J4X7の各エントリーは、フォームごとに一覧表示されます。
 
-[`AddForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/AddForm.js) は、入力を受信し、ユーザーが **Add** をクリックすると、`addObject`メソッドを呼び出します。
+[`AddForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/AddForm.js)は、入力を受信し、ユーザーが **Add** をクリックすると、`addObject`メソッドを呼び出します。
 
-[`PatchForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/PatchForm.js) は、入力を受信し、ユーザーが **Patch** をクリックすると、`patchObject`メソッドを呼び出します。
+[`PatchForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/PatchForm.js)は、入力を受信し、ユーザーが **Patch** をクリックすると、`patchObject`メソッドを呼び出します。
 
-[`DeleteForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/DeleteForm.js) は、入力を受信し、ユーザーが **Delete** をクリックすると、`deleteObject`メソッドを呼び出します。
+[`DeleteForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/DeleteForm.js)は、入力を受信し、ユーザーが **Delete** をクリックすると、`deleteObject`メソッドを呼び出します。
 
-[`App.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/App.js) ファイルでフォームを集め、1つのページに表示します。
+[`App.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/App.js)ファイルでフォームを集め、1つのページに表示します。
 
 ## 追加情報
 

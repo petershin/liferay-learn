@@ -1,72 +1,72 @@
-# Job Scheduler UI Reference
+# ジョブスケジューラーUIリファレンス
 
 ## 送信トリガー
 
-![View, create, and manage Job Scheduler Tasks.](./job-scheduler-ui-reference/images/01.png)
+![ジョブスケジューラタスクの表示、作成、管理。](./job-scheduler-ui-reference/images/01.png)
 
-The Job Scheduler Triggers tab lists all tasks added to the Liferay instance.
+Job Scheduler Triggers] タブには、Liferay インスタンスに追加されたすべてのタスクが一覧表示されます。
 
-Click **Add**(![Add Button](../../../images/icon-add.png)) to create a Job Scheduler Task using a Job Scheduler Task Executor template.
+**Add**(![Add Button](../../../images/icon-add.png)) をクリックし、Job Scheduler Task Executor テンプレートを使用して、Job Scheduler Task を作成します。
 
-Once created, the following fields are displayed for each Job Scheduler Task:
+作成されたジョブスケジューラタスクには、次のフィールドが表示されます。
 
-| フィールド       | 説明                                                                                          |
-|:----------- |:------------------------------------------------------------------------------------------- |
-| 名前          | The name of the Job Scheduler task                                                          |
-| タスク エグゼキュータ | The Job Scheduler Task Executor template used to create the task                            |
-| システム        | システムタスクかどうかを示します                                                                            |
-| 作成日時        | Creation date of the Job Scheduler task                                                     |
-| 次の実行日       | The next time the Job Scheduler task is scheduled to run                                    |
-| ステータス       | The Status of the Job Scheduler task's most recent execution (e.g., **Successful** , **Failed**) |
-| 今すぐ実行       | Button for manually executing the Job Scheduler task                                        |
+| 項目          | 説明                                               |
+|:----------- |:------------------------------------------------ |
+| 名前          | ジョブスケジューラタスクの名前                                  |
+| タスク エグゼキュータ | タスクの作成に使用したJob Schedulerのタスクエクゼキュータテンプレート        |
+| システム        | システムタスクかどうかを示します                                 |
+| 作成日時        | ジョブスケジューラタスクの作成日                                 |
+| 次の実行日       | ジョブスケジューラーのタスクが次に実行される予定があるとき                    |
+| ステータス       | ジョブスケジューラタスクの直近の実行状況（例： **Successful** , **Failed**）。 |
+| 今すぐ実行       | Job Schedulerのタスクを手動で実行するためのボタン                  |
 
-From here, click a Job Scheduler task to access the following details and configuration options.
+ここから、ジョブスケジューラタスクをクリックすると、以下の詳細と設定オプションにアクセスできます。
 
 ### ［詳細］タブ
 
-![View and edit general details for Job Scheduler tasks](./job-scheduler-ui-reference/images/02.png)
+![ジョブスケジューラタスクの一般的な詳細の表示と編集](./job-scheduler-ui-reference/images/02.png)
 
-| 項目              | 説明                                                                                           |
-|:--------------- |:-------------------------------------------------------------------------------------------- |
-| 名前              | View/Edit the Job Scheduler task's name                                                      |
-| Settings Editor | Code editor for defining properties that are injected into the Job Scheduler task at runtime |
+| 項目              | 説明                                         |
+|:--------------- |:------------------------------------------ |
+| 名前              | Job Schedulerタスクの名前の表示／編集                  |
+| Settings Editor | 実行時にジョブスケジューラタスクに注入されるプロパティを定義するためのコードエディタ |
 
-### Talend Tab (For Talend Job Scheduler Tasks Only)
+### Talendタブ(Talendジョブスケジューラタスクのみ)
 
 ![Talendジョブアーカイブファイルをアップロードします。](./job-scheduler-ui-reference/images/03.png)
 
-Upload a Talend **Job Archive** `.zip` file to your Job Scheduler task.
+Talend **Job Archive** `.zip` ファイルを Job Scheduler タスクにアップロードします。
 
 ### ［Logs］タブ
 
-![View and remove Logs for the selected Job Scheduler task.](./job-scheduler-ui-reference/images/04.png)
+![選択したジョブスケジューラタスクのログを表示・削除します。](./job-scheduler-ui-reference/images/04.png)
 
-View and remove **Logs** for the Job Scheduler task. ［**Start Date**］ , ［**ランタイム**］ , ［**Trigger**］ 、および ［**Status**］ が含まれます。
+Job Scheduler タスクの **Logs** を表示および削除します。 ［**Start Date**］ , ［**ランタイム**］ , ［**Trigger**］ 、および ［**Status**］ が含まれます。
 
-| 項目    | 説明                                                   |
-|:----- |:---------------------------------------------------- |
-| 開始日   | 実行開始時のタイムスタンプ                                        |
-| ランタイム | 実行期間                                                 |
-| トリガー  | The name of the Job Scheduler task that was executed |
-| ステータス | 実行ステータス（例： **Successful** 、 **Failed**）                     |
+| 項目    | 説明                               |
+|:----- |:-------------------------------- |
+| 開始日   | 実行開始時のタイムスタンプ                    |
+| ランタイム | 実行期間                             |
+| トリガー  | 実行されたJob Schedulerタスクの名前         |
+| ステータス | 実行ステータス（例： **Successful** 、 **Failed**） |
 
 ログエントリをクリックすると、実行時のエラーと出力も確認できます。
 
-### Job Scheduler Trigger Tab
+### ジョブスケジューラトリガータブ
 
-![Configure the Job Scheduler Trigger to schedule task executions.](./job-scheduler-ui-reference/images/05.png)
+![タスクの実行をスケジュールするためのJob Scheduler Triggerを設定します。](./job-scheduler-ui-reference/images/05.png)
 
-Configure the Job Scheduler Trigger to schedule task executions.
+タスクの実行をスケジュールするためのJob Scheduler Triggerを設定します。
 
-| 項目            | 説明                                                                                                                                |
-|:------------- |:--------------------------------------------------------------------------------------------------------------------------------- |
-| 有効            | 設定された実行スケジュールがアクティブか非アクティブかを決定します                                                                                                 |
-| タスク実行クラスターモード | Determines whether the Job Scheduler task is executed on a **Single Node** or **All Nodes** in a clustered environment                |
-| 重複可能          | Determines whether concurrent execution of Job Scheduler Tasks are allowed                                                        |
-| Cron式         | Defines time intervals for automatically executing Job Scheduler tasks                                                            |
-| 開始日           | Defines when the Job Scheduler task begins to be executed according to the cron schedule; set to current date and time by default |
-| 無期限           | Determines whether the Job Scheduler task's automatic execution ever ends; checked by default                                     |
-| 終了日           | Defines when the Job Scheduler task is no longer automatically executed; disabled if **Never End** is checked                       |
+| 項目            | 説明                                                                      |
+|:------------- |:----------------------------------------------------------------------- |
+| 有効            | 設定された実行スケジュールがアクティブか非アクティブかを決定します                                       |
+| タスク実行クラスターモード | クラスタ環境において、ジョブスケジューラタスクを **シングルノード** または **オールノード** のいずれで実行するかを決定します。       |
+| 重複可能          | ジョブスケジューラタスクの同時実行を許可するかどうかを決定します。                                       |
+| Cron式         | ジョブスケジューラーのタスクを自動的に実行する時間間隔を定義します。                                      |
+| 開始日           | ジョブスケジューラタスクがcronスケジュールに従って実行され始めるタイミングを定義します。デフォルトでは現在の日付と時刻に設定されています。 |
+| 無期限           | ジョブスケジューラタスクの自動実行を終了させるかどうかを設定します。                                      |
+| 終了日           | ジョブスケジューラタスクが自動的に実行されなくなるタイミングを定義します。 **Never End** がチェックされている場合は、無効です。   |
 
 ## スケジュールジョブ
 
@@ -85,5 +85,5 @@ Configure the Job Scheduler Trigger to schedule task executions.
 
 ## 追加情報
 
-* [Using Job Scheduler](./using-job-scheduler.md)
-* [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)
+* [ジョブスケジューラーを使う](./using-job-scheduler.md)
+* [ジョブスケジューラフレームワークの理解](./understanding-the-job-scheduler-framework.md)

@@ -1,6 +1,6 @@
-# Creating a New Job Scheduler Task Executor
+# ジョブスケジューラ タスクエクゼキュータの新規作成
 
-Each Job Scheduler Task is created by implementing the `DispatchTaskExecutor` interface and can execute any logic. Liferay DXPは、すぐに使える複数のエグゼキュータを提供しますが、独自のエグゼキュータを作成することもできます。 Once created and deployed, you can add Job Scheduler Tasks to a Liferay instance.
+各ジョブスケジューラタスクは、 `DispatchTaskExecutor` インターフェースを実装することで作成され、任意のロジックを実行することができます。 Liferay DXPは、すぐに使える複数のエグゼキュータを提供しますが、独自のエグゼキュータを作成することもできます。 一度作成し、デプロイすると、ジョブスケジューラタスクをLiferayインスタンスに追加することができます。
 
 次の手順に従って、`DispatchTaskExecutor`インターフェースの独自の実装を作成します。
 
@@ -10,24 +10,24 @@ Each Job Scheduler Task is created by implementing the `DispatchTaskExecutor` in
 
 1. **OSGiプロパティ** ：次のプロパティを`@Component`アノテーションに追加します。
 
-   * `dispatch.task.executor.name`: defines the string used for the executor's name in the Job Scheduler UI.
+   * `dispatch.task.executor.name`: ジョブスケジューラUIで実行者名に使用される文字列を定義します。
 
       ```{note}
-      If you want your Job Scheduler Task to use localized names, add a language key value for the `dispatch.task.executor.name` property to the module’s `resources/content/Language.properties` file.
+      もし、ジョブスケジューラータスクにローカライズされた名前を使いたい場合は、モジュールの `resources/content/Language.properties` ファイルに `dispatch.task.executor.name` 属性の言語キー値を追加してください。
       ```
 
-   * `dispatch.task.executor.type`: defines a unique `type` value to match the right Job Scheduler Task Executor and Job Scheduler Trigger.
+   * `dispatch.task.executor.type`: 正しいジョブスケジューラタスク実行者とジョブスケジューラトリガーに一致するように、一意の `type` 値を定義します。
 
       ```{note}
       正しいエグゼキュータが一致するように、値は一意である必要があります。 値が一意でない場合、ログには起動時にエラーが表示され、同じプロパティ値を持つエグゼキュータが示されます。
       ```
 
-1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) ：`DispatchTaskExecutor`インターフェースを実装するか、その実装を拡張します（`BaseDispatchTaskExecutor`など）。
+1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java)：`DispatchTaskExecutor`インターフェースを実装するか、その実装を拡張します（`BaseDispatchTaskExecutor`など）。
 
       ```{important}
-      Implementations of the `DispatchTaskExecutor` interface must handle status logs for Job Scheduler tasks, because the framework depends on those logs to control the concurrent execution of tasks.
+      DispatchTaskExecutor` インターフェースの実装は、Job Scheduler タスクのステータスログを処理しなければなりません。なぜなら、フレームワークはタスクの同時実行を制御するために、これらのログに依存するからです。
 
-      For your convenience, Liferay provides the `BaseDispatchTaskExecutor` abstract [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/BaseDispatchTaskExecutor.java) that logs the Job Scheduler task's status as `IN PROGRESS`, `SUCCESSFUL`, or `FAILED`.
+      便宜上、Liferay は `BaseDispatchTaskExecutor` 抽象 [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/BaseDispatchTaskExecutor.java) を提供しており、ジョブスケジューラタスクの状態を `IN PROGRESS`, `SUCCESSFUL`, または `FAILED` としてログに記録します。
       ```
 
 1. **メソッド** ：`DispatchTaskExecutor`インターフェースを直接実装している場合は、`execute()`メソッドをオーバーライドしてカスタムロジックを実装します。 代わりに、`BaseDispatchTaskExecutor`抽象クラスを拡張する場合は、その`doExecute()`メソッドをオーバーライドします。
@@ -37,21 +37,22 @@ Each Job Scheduler Task is created by implementing the `DispatchTaskExecutor` in
    ```
 
    ```{tip}
-   You can use the `dispatchTrigger.getDispatchTaskSettings()` method to fetch properties set in the Job Scheduler Task's Settings editor.
+   ジョブスケジューラタスクのSettingsエディタに設定されているプロパティを取得するには、`dispatchTrigger.getDispatchTaskSettings()` メソッドを使用します。
    ```
 
-The following sample module demonstrates how to create and deploy a custom Job Scheduler Task Executor to a Liferay instance.
+次のサンプルモジュールは、カスタムジョブスケジューラータスクエクゼキュータを作成し、Liferayインスタンスにデプロイする方法を示しています。
 
-## Deploying the Sample Job Scheduler Task Executor
+## サンプルジョブスケジューラ タスクエクゼキュータの配備
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to download, build, and deploy the sample Job Scheduler Task Executor to the new Docker container:
+次に、以下の手順でサンプルの Job Scheduler Task Executor をダウンロードし、ビルドして、新しい Docker コンテナにデプロイします。
 
-1. Download and unzip the example module.
+1. サンプルモジュールをダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/liferay-s7a3.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/liferay-s7a3.zip -O
    ```
 
    ```bash
@@ -77,13 +78,13 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
    STARTED com.acme.s7a3.impl-1.0.0 [1656]
    ```
 
-1. Verify the module is working by using it to [add a new Job Scheduler Task](./using-job-scheduler.md#adding-a-new-job-scheduler-task) to your Liferay instance.
+1. このモジュールを使って [Liferay インスタンスに新しい Job Scheduler Task](./using-job-scheduler.md#adding-a-new-job-scheduler-task) を追加し、モジュールが動作していることを確認します。
 
-   ![Add a new Job Scheduler Task using the new template.](./creating-a-new-job-scheduler-task-executor/images/01.png)
+   ![新しいテンプレートを使って、新しいジョブスケジューラータスクを追加します。](./creating-a-new-job-scheduler-task-executor/images/01.png)
 
    タスクを作成したら、 ［**Run Now**］ をクリックします。
 
-   ![Click Run Now for your new Job Scheduler Task.](./creating-a-new-job-scheduler-task-executor/images/02.png)
+   ![新しいジョブスケジューラタスクの［今すぐ実行］をクリックします。](./creating-a-new-job-scheduler-task-executor/images/02.png)
 
    成功すると、実行時に次のメッセージがコンソールに出力されます。
 
@@ -91,11 +92,11 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
    INFO [liferay/dispatch/executor-2][S7A3DispatchTaskExecutor:30] Invoking #doExecute(DispatchTrigger, DispatchTaskExecutorOutput)
    ```
 
-   You can also click the task and go to the **Logs** tab to see a list of all previous runs.
+   また、タスクをクリックし、 **Logs** タブを開くと、過去に実行されたすべてのリストが表示されます。
 
-   ![View and manage logs for your Job Scheduler Task.](./creating-a-new-job-scheduler-task-executor/images/03.png)
+   ![ジョブスケジューラタスクのログを表示・管理します。](./creating-a-new-job-scheduler-task-executor/images/03.png)
 
-## Code for the Sample Job Scheduler Task Executor
+## サンプルジョブスケジューラ タスクエクゼキュータのコード
 
 ```{literalinclude} creating-a-new-job-scheduler-task-executor/resources/liferay-s7a3.zip/s7a3-impl/src/main/java/com/acme/s7a3/internal/dispatch/executor/S7A3DispatchTaskExecutor.java
    :language: java
@@ -108,6 +109,6 @@ Then, follow these steps to download, build, and deploy the sample Job Scheduler
 
 ## 追加情報
 
-* [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)
-* [Using Job Scheduler](./using-job-scheduler.md)
-* [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)
+* [ジョブスケジューラフレームワークの理解](./understanding-the-job-scheduler-framework.md)
+* [ジョブスケジューラーを使う](./using-job-scheduler.md)
+* [ジョブスケジューラーUIリファレンス](./job-scheduler-ui-reference.md)

@@ -1,11 +1,11 @@
-# 式ビルダーバリデーションのリファレンス
+# エクスプレッションビルダーバリデーションのリファレンス
 
 {bdg-secondary}`Liferay 7.4 U27以降とGA27以降で利用可能`
 
-カスタムオブジェクトでは、Liferayの式ビルダーを使用してフィールドのバリデーションを作成できます。 このツールには、定義済みのフィールド、演算子、関数を使用して複雑なバリデーションルールを迅速に定義するための統合エディターがあります。 利用可能なエレメントは、条件サイドパネルで閲覧できます。
+カスタムオブジェクトでは、Liferayのエクスプレッションビルダーを使用してフィールドのバリデーションを作成できます。 このツールには、定義済みのフィールド、演算子、関数を使用して複雑なバリデーションルールを迅速に定義するための統合エディターがあります。 利用可能なエレメントは、条件サイドパネルで閲覧できます。
 
 ```{important}
-式ビルダーバリデーションは、テキスト、数値、日付、ブール値の各フィールドタイプでのみ使用可能です。
+エクスプレッションビルダーバリデーションは、テキスト、数値、日付、ブール値の各フィールドタイプでのみ使用可能です。
 ```
 
 ## テキスト項目
@@ -20,33 +20,33 @@ Liferayは、テキストおよび長いテキストフィールドに対して�
 concat(<textField>, "<string>")
 ```
 
-### Condition (with Text)
+### 条件(テキスト付き)
 
-Check if user input meets one or more conditions and return a boolean value. This function works like `if` statements. Each expression includes at least one `<condition>` (e.g., `<textField> == "foo"`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `<textField> == "foo", <textField> == "bar", true, false`).
+ユーザー入力が一つ以上の条件を満たしているかどうかを調べ、ブール値を返す。この関数は `if` 文のように動作します。各式は少なくとも一つの `<condition>` (例: `<textField> == "foo"`) を含み、 `true` または `false` を返します。同じ式に複数の条件を追加して、どの条件にも当てはまらない場合に戻り値を決定することもできます（例： `<textField> == "foo", <textField> == "bar", true, false` ）。
 
 ```
 condition(<condition>, <return-value>)
 ```
 
-### Contains (with Text)
+### が以下を含む（テキスト付き）
 
-テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。 If the field **does not** contain the value, it returns `false`.
+テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。フィールドが値を **含まない** 場合は、`false`を返します。
 
 ```
 contains(<textField>, "<string>")
 ```
 
-### Does Not Contain (with Text)
+### が以下を含まない（テキスト付き）
 
-テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。  If the field **does** contain the value, it returns `false`.
+テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。フィールドが値を **含む** 場合は、 `false`を返します。
 
 ```
 NOT(contains(<textField>, "<string>"))
 ```
 
-### URL である
+### URLである
 
-テキストフィールドがURLであるかどうかを確認し、ブール値を返します。 If the field does not match a URL pattern, it returns `false`. To return `true`, entries must use standard URL elements (e.g., `http`, `://`, `.com`)
+テキストフィールドがURLであるかどうかを確認し、ブール値を返します。フィールドがURLパターンにマッチしない場合は、`false`を返します。`true`を返すには、エントリに標準的なURL要素（例: `http`, `://`, `.com`）を使用しなければなりません。
 
 ```
 isURL(<textField>)
@@ -54,7 +54,7 @@ isURL(<textField>)
 
 ### メールアドレスである
 
-テキストフィールドがメールアドレスであるかどうかを確認し、ブール値を返します。 If the field does not match a specific email or email pattern, it returns `false`. To return `true`, entries must use standard email elements (e.g., `@gmail`, `.com`)
+テキストフィールドがメールアドレスであるかどうかを確認し、ブール値を返します。フィールドが特定のメールアドレスまたはメールアドレスパターンに一致しない場合、 `false`を返します。`true`を返すには、エントリーに標準的なメールアドレス要素（例: `@gmail`, `.com`）を使用する必要があります。
 
 ```
 isEmailAddress(<textField>)
@@ -62,23 +62,23 @@ isEmailAddress(<textField>)
 
 ### が空の場合
 
-テキストフィールドが空であるかどうかを確認し、ブール値を返します。  If the field is not empty, it returns `false`.
+テキストフィールドが空であるかどうかを確認し、ブール値を返します。フィールドが空ではない場合、`false`を返します。
 
 ```
 isEmpty(<textField>)
 ```
 
-### Is Equal To (with Text)
+### が以下と等しい（テキスト付き）
 
-テキストフィールドが特定のString値に等しいかどうかを確認し、ブール値を返します。 If they **are not** equal, it returns `false`.
+テキストフィールドが特定のString値に等しいかどうかを確認し、ブール値を返します。これが以下と **等しくない** 場合、`false`を返します。
 
 ```
 <textField> == "<string>"
 ```
 
-### Is Not Equal To (with Text)
+### が以下と等しくない（テキスト付き）
 
-テキストフィールドが特定のString値と異なるかどうかを確認し、ブール値を返します。 If they **are** equal, it returns `false`.
+テキストフィールドが特定のString値と異なるかどうかを確認し、ブール値を返します。これが以下と **等しい** 場合、`false`を返します。
 
 ```
 <textField> != "<string>"
@@ -86,7 +86,7 @@ isEmpty(<textField>)
 
 ### 一致
 
-テキストフィールドが特定のString値または正規表現と一致するかどうかを確認し、ブール値を返します。 If the field does not match the value, it returns `false`.
+テキストフィールドが特定のString値または正規表現と一致するかどうかを確認し、ブール値を返します。フィールドが値と一致しない場合、`false`を返します。
 
 ```
 match(<textField>, "<string>")
@@ -98,25 +98,25 @@ match(<textField>, "<regex>")
 
 Liferayでは、整数、長整数、小数、小数の精度フィールドに対して以下の演算子や関数を提供します。 これらのフィールドのいずれかを引数として使用できます。 いくつかの要素では、フィールドの値と比較するための数値を追加することもできます（例：`123`、 `3.1415`）。
 
-### Condition (with Numeric)
+### 条件（数値あり）
 
-Check if user input meets one or more conditions and return a boolean value. This function works like `if` statements. Each expression includes at least one `<condition>` (e.g., `<numericField> == 10`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `<numericField> == 10, <numericField> != 100, true, false`).
+ユーザー入力が一つ以上の条件を満たしているかどうかを確認し、ブール値を返します。この関数は `if` 文のように動作します。各式は少なくとも一つの `<condition>` （例: `<numericField> == 10`）を含み、 `true`または`false`を返します。同じ式に複数の条件を追加して、どの条件も満たさない場合に戻り値を決定することができます（例：`<numericField> == 10, <numericField> != 100, true, false`）。
 
 ```
 condition(<condition>, <return-value>)
 ```
 
-### Contains (with Numeric)
+###が以下を含む（数値あり）
 
-数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 If the field **does not** contain the value, it returns `false`.
+数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。フィールドが値を **含まない** 場合、`false`を返します。
 
 ```
 contains(<numericField>, <number>)
 ```
 
-### Does not Contain (with Numeric)
+### が以下を含まない（数値あり）
 
-数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 If the field **does** contain the value, it returns `false`.
+数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。フィールドが値を **含む** 場合、`false`を返します。
 
 ```
 NOT(contains(<numericField>, <number>))
@@ -124,7 +124,7 @@ NOT(contains(<numericField>, <number>))
 
 ### 小数である
 
-数値フィールドが小数であるかどうかを確認し、ブール値を返します。 If the field **is not** a decimal, it returns `false`.
+数値フィールドが小数であるかどうかを確認し、ブール値を返します。フィールドが小数 **でない** 場合、`false`を返します。
 
 ```
 isDecimal(<numericField>)
@@ -132,23 +132,23 @@ isDecimal(<numericField>)
 
 ### 整数である
 
-数値フィールドが整数であるかどうかを確認し、ブール値を返します。 If the field **is not** an integer, it returns `false`.
+数値フィールドが整数であるかどうかを確認し、ブール値を返します。フィールドが整数 **でない** 場合、`false`を返します。
 
 ```
 isInteger(<numericField>)
 ```
 
-### Is Equal To (with Numeric)
+### が以下と等しい（数値あり）
 
-数値フィールドが特定の数値に等しいかどうかを確認し、ブール値を返します。 If they **are not** equal, it returns `false`.
+数値フィールドが特定の数値に等しいかどうかを確認し、ブール値を返します。これらが **等しくない** 場合、`false`を返します。
 
 ```
 <numericField> == <number>
 ```
 
-### Is Not Equal To (with Numeric)
+### が以下と等しくない（数値あり）
 
-数値フィールドが特定の数値と異なるかどうかを確認し、ブール値を返します。 If they **are** equal, it returns `false`.
+数値フィールドが特定の数値と異なるかどうかを確認し、ブール値を返します。これらが **等しい** 場合、`false`を返します。
 
 ```
 <numericField> != <number>
@@ -156,7 +156,7 @@ isInteger(<numericField>)
 
 ### 以上
 
-数値フィールドが特定の数値より大きいかどうかを確認し、ブール値を返します。 If the field **is not** greater, it returns `false`.
+数値フィールドが特定の数値より大きいかどうかを確認し、ブール値を返します。そのフィールドが特定の数値より **大きくない** 場合、`false`を返します。
 
 ```
 <numericField> > <number>
@@ -164,15 +164,14 @@ isInteger(<numericField>)
 
 ### 以上もしくは等しい
 
-数値フィールドが特定の数値以上もしくは等しいかどうかを確認し、ブール値を返します。 If the field **is not** equal or greater, it returns `false`.
-
+数値フィールドが特定の数値以上もしくは等しいかどうかを確認し、ブール値を返します。フィールドが **等しくないか大きい** 場合は、 `false` を返します。
 ```
 <numericField> >= <number>
 ```
 
 ### 以下
 
-数値フィールドが特定の数値以下かどうかを確認し、ブール値を返します。 If the field **is not** less, it returns `false`.
+数値フィールドが特定の数値以下かどうかを確認し、ブール値を返します。フィールドが特定の数値 **以下ではない** 場合は、 `false`を返します。
 
 ```
 <numericField> < <number>
@@ -180,7 +179,7 @@ isInteger(<numericField>)
 
 ### 以下もしくは等しい
 
-数値フィールドが特定の数値以下もしくは等しいかどうかを確認し、ブール値を返します。 If the field **is not** equal or less, it returns `false`.
+数値フィールドが特定の数値以下もしくは等しいかどうかを確認し、ブール値を返します。フィールドが **等しくないか以下** の場合は、`false` を返します。
 
 ```
 <numericField> <= <number>
@@ -200,15 +199,15 @@ Liferayは、日付フィールドに対して以下の演算子および関数�
 
 ### 日付を比較
 
-Check if a date field's value is the same as a set value. If the field does not match the date, it returns `false`.
+日付フィールドの値が設定された値と同じかどうかを確認します。フィールドが日付と一致しない場合、`false`を返します。
 
 ```
 compareDates(<dateField>, <yyyy-MM-dd>)
 ```
 
-### Condition (with Date)
+### 条件（日付あり）
 
-Check if user input meets one or more conditions and return a boolean value. This function works like `if` statements. Each expression includes at least one `<condition>` (e.g., `<dateField> == 2020-01-01`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `<dateField> == 2020-01-01, <dateField> != 2022-01-01, true, false`).
+ユーザー入力が一つ以上の条件を満たしているかどうかを確認し、ブール値を返します。この関数は`if`文のように動作します。各式は少なくとも一つの `<condition>` (例: `<dateField> == 2020-01-01`) を含み、`true`または`false`を返します。同じ式に複数の条件を追加して、どの条件にも当てはまらない場合に戻り値を決定することができます (例: `<dateField> == 2020-01-01, <dateField> != 2022-01-01, true, false`)。
 
 ```
 condition(<condition>, <return-value>)
@@ -216,7 +215,7 @@ condition(<condition>, <return-value>)
 
 ### 未来の日付
 
-日付フィールドの値が将来かどうかを確認し、ブール値をします。 If the field **is not** a future date, it returns `false`.
+日付フィールドの値が将来かどうかを確認し、ブール値をします。 そのフィールドが将来の日付 **でない** 場合は、`false`を返します。
 
 ```
 futureDates(<dateField>, "<yyyy-MM-dd>")
@@ -224,7 +223,7 @@ futureDates(<dateField>, "<yyyy-MM-dd>")
 
 ### 過去の日付
 
-日付フィールドの値が過去かどうかを確認し、ブール値をします。 If the field **is not** a past date, it returns `false`.
+日付フィールドの値が過去かどうかを確認し、ブール値をします。 そのフィールドが過去の日付 **でない** 場合は、`false`を返します。
 
 ```
 pastDates(<dateField>, "<yyyy-MM-dd>")
@@ -232,7 +231,7 @@ pastDates(<dateField>, "<yyyy-MM-dd>")
 
 ### 範囲
 
-日付の範囲が過去の日付で始まり、未来の日付で終わるかどうかを確認します。 If the field **is not** within the date range, it returns `false`.
+日付の範囲が過去の日付で始まり、未来の日付で終わるかどうかを確認します。フィールドがその日付の範囲内 **ではない** 場合、`false`を返します。
 
 ```
 pastDates(<dateField>, "<yyyy-MM-dd>")
@@ -278,7 +277,7 @@ futureDates(<dateField>, "<yyyy-MM-dd>")
 
 ## 論理演算子
 
-論理演算子は複数の要素で使用し、複数の要素から複雑な条件を集計します。 現在、式ビルダーの検証は `AND` と `OR` の演算子を提供しています。
+論理演算子は複数の要素で使用し、複数の要素から複雑な条件を集計します。 現在、エクスプレッションビルダーの検証は `AND` と `OR` の演算子を提供しています。
 
 * `AND`：これは依存する関係を表すのによく使用される等位接続詞の一種です。
 
@@ -298,7 +297,7 @@ OR match(<lastNameField>, "[A-Za-z]{1,50}")
 
 以下のバリデーションは一般的な例です。
 
-### Name Validation (with Text)
+### 名前のバリデーション（テキスト付き）
 
 このバリデーションでは、値をアルファベット文字に限定し、許容される文字数が制限されます。
 
@@ -312,9 +311,9 @@ match(<nameField>, ("[A-Za-z]{1,50}")
 match(<lastNameField>, "[A-Za-z][0-9]{1,50}")
 ```
 
-### Password (with Text)
+### パスワード（テキスト付き）
 
-This validation checks if entries meet the following password criteria:
+このバリデーションでは、エントリーが以下のパスワードの条件を満たしているかどうかを確認します。
 
 * 8文字以上
 * 一意の5文字以上
@@ -328,15 +327,15 @@ match(<passwordField>, "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{
 
 ### Cell Phone Number (with Numeric)
 
-This validation checks if entries match a phone number pattern. バリデーションはエントリーを数字に限定し、文字数も制限し、標準的な電話番号のパターンを設定します。
+このバリデーションは、エントリーが電話番号のパターンに一致するかどうかを確認します。バリデーションはエントリーを数字に限定し、文字数も制限し、標準的な電話番号のパターンを設定します。
 
 ```
 match(<phoneNumberField>, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 ```
 
-### Postal Code (with Numeric)
+### 郵便番号（数値あり）
 
-This validation checks if entries match a postal code pattern. バリデーションはエントリーを数字に限定し、文字数も制限し、標準的な郵便番号のパターンを設定します。
+このバリデーションは、エントリーが郵便番号のパターンに一致するかどうかを確認します。バリデーションはエントリーを数字に限定し、文字数も制限し、標準的な郵便番号のパターンを設定します。
 
 ```
 match(<postalField>, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
@@ -344,7 +343,7 @@ match(<postalField>, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 
 ### 年齢幅の指定（日付）
 
-This validation checks if entries are between 18-65.
+このバリデーションでは、エントリーが18歳～65歳であるかどうかを確認します。
 
 ```
 pastDates(<dateField>, startsFrom, responseDate, years, -120, endsOn, responseDate, years, -18)

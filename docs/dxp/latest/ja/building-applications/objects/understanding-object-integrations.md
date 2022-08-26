@@ -1,8 +1,8 @@
 ---
 toc:
-- ./understanding-object-integrations/permissions-framework-integration.md
-- ./understanding-object-integrations/headless-framework-integration.md
-- ./understanding-object-integrations/assets-framework-integration.md
+- ./understanding-object-integrations/permissions-framework-integrations.md
+- ./understanding-object-integrations/headless-framework-integrations.md
+- ./understanding-object-integrations/assets-framework-integrations.md
 ---
 
 # オブジェクト統合を理解する
@@ -12,24 +12,25 @@ toc:
 
 understanding-object-integrations/permissions-framework-integration.md
 understanding-object-integrations/headless-framework-integration.md
-understanding-object-integrations/assets-framework-integration.md
+understanding-object-integrations/assets-framework-integrations.md
 ```
 
-Published custom Objects are integrated with Liferay's core frameworks, so you can leverage Liferay's features to build unified experiences across the platform. This chart provides an overview of how Objects leverages these integrations.
+公開されたカスタムオブジェクトはLiferayのコアフレームワークと統合されているため、Liferayの機能を活用してプラットフォーム全体で統一されたエクスペリエンスを構築できます。 この表は、Objects がこれらの統合をどのように活用しているかの概要を示しています。
 
-| Framework   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|:----------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| アセット        | Use the [Attachment field](../objects/understanding-object-field-types.md#attachment) to upload files to your instance's document library.                                                                                                                                                                                                                                                                                                                                    |
-| 監査          | Use the [Audit application](./creating-and-managing-objects/auditing-object-definition-events.md) to review Object events with their user and resource info.                                                                                                                                                                                                                                                                                                                  |
-| カテゴリの設定     | Add categorization tools to custom Object layouts so users can add [tags and categories](./creating-and-managing-objects/designing-object-layouts.md#adding-categorization) to entries.                                                                                                                                                                                                                                                                                       |
-| Headless    | Liferay generates a [headless endpoint](./understanding-object-integrations/headless-framework-integration.md) for each published Object, so you can make REST calls. <!-- TASK: Add GraphQL when supported.--> |
-| Infoフレームワーク | Use Object data with [Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md), [Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), [Navigation Menus](../../site-building/site-navigation/using-the-navigation-menus-application.md). Liferay also creates a [Collection Provider](../../content-authoring-and-management/collections-and-collection-pages.md) for displaying its entries. |
-| ローカライズ      | Localize fields for Object definitions to better serve your global users.                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 権限設定        | Manage application and resource  permissions to control access to Object definitions and their data.                                                                                                                                                                                                                                                                                                                                                                          |
-| ワークフロー      | Enable custom workflows for Objects to direct the creation, review, and publishing of Object entries.                                                                                                                                                                                                                                                                                                                                                                         |
+| フレームワーク|  説明文 | 
+| :--- | :--- |
+| アセット| [添付ファイルフィールド](../objects/understanding-object-field-types.md#attachment) を使用して、インスタンスのドキュメントライブラリにファイルをアップロードしてください。 |
+| 監査 | [監査アプリケーション](./creating-and-managing-objects/auditing-object-definition-events.m) を使用して、ユーザーとリソース情報を含むオブジェクト イベントを確認します。 |  
+| カテゴライズ | カスタムオブジェクトのレイアウトにカテゴライズツールを追加し、ユーザーがエントリに[タグとカテゴリ](./creating-and-managing-objects/designing-object-layouts.md#adding-categorization) を追加できるようになりました。|
+| ヘッドレス | Liferayは各公開Objectに対して[ヘッドレスエンドポイント](./understanding-object-integrations/headless-framework-integration.md) を生成するので、RESTコールをすることができます。 <!-- TASK: Add GraphQL when supported.--> ｜
+| Info Framework | [Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md), [Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), [Navigation Menus](../../site-building/site-navigation/using-the-navigation-menus-application.md) でオブジェクトデータを利用することができます。Liferay はまた、そのエントリーを表示するために [Collection Provider](../../content-authoring-and-management/collections-and-collection-pages.md) を作成します。|
+| ローカライゼーション | オブジェクト定義のフィールドをローカライズして、グローバルなユーザーにより良いサービスを提供します。|
+| 権限 | オブジェクト定義とそのデータへのアクセスを制御するために、アプリケーションとリソースの権限を管理します。|
+| ワークフロー | オブジェクトのカスタムワークフローを有効にして、オブジェクトエントリの作成、レビュー、および公開を指示します。|
 
 <!-- TASK: Add the following integrations when ready -->
-<!-- | Job Scheduler | Use the \[Job Scheduler\](../core-frameworks/dispatch-framework/using-job-scheduler.md) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |--> <!-- | Publications |  | -->
+<!-- | Job Scheduler | Use the [Job Scheduler](../core-frameworks/dispatch-framework/using-job-scheduler.md) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |-->
+<!-- | Publications |  | -->
 
 ```{raw} html
 :file: ../../landingpage_template.html

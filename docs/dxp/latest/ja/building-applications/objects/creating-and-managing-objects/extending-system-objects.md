@@ -6,14 +6,16 @@ Liferay Objectを使用すると、サポートされているシステムサー
 
 ![オブジェクトフレームワークと統合されたシステムサービスを拡張します。](./extending-system-objects/images/01.png)
 
-システムオブジェクトを拡張する場合、[リレーションシップ](#adding-relationships)と[アクション](#adding-actions)を追加することができます。 <!--TASK: You can also access limited \[configuration options\](#additional-configuration-options).--> | 機能        | システムオブジェクト                                                | カスタムオブジェクト |
-|:--------- |:--------------------------------------------------------- |:---------- |
-| 項目        | <!--TASK: Uncomment once supported: &#10004;--> | &#10004;   |
-| リレーションシップ | &#10004;                                                  | &#10004;   |
-| レイアウト     |                                                           | &#10004;   |
-| 操作        | &#10004;                                                  | &#10004;   |
-| 閲覧数       |                                                           | &#10004;   |
-| 入力値の検証    |                                                           | &#10004;   |
+システムオブジェクトを拡張する場合、[リレーションシップ](#adding-relationships)と[アクション](#adding-actions)を追加することができます。 また、限定された[設定オプション](#additional-configuration-options)にアクセスすることもできます。
+
+| 機能 | システムオブジェクト | カスタムオブジェクト |
+| :--- | :--- | :--- |
+| 項目 | <!--TASK: Uncomment once supported: &#10004;--> | &#10004; |
+| リレーションシップ | &#10004; | &#10004; |
+| レイアウト |  | &#10004;   |
+| 操作 | &#10004; | &#10004;   |
+| 閲覧数 |  | &#10004; |
+| 入力値の検証 |  | &#10004; |
 
 <!--TASK: Uncomment once supported.
 ## Adding Fields

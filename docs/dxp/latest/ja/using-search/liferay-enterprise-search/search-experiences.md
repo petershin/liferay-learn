@@ -46,7 +46,7 @@ Liferay Enterprise Search Experiencesアプリには、エンドユーザーの�
 
 Liferay Search Experiences は、Liferay DXP 7.3 および 7.4 で [Liferay Enterprise Search](../liferay-enterprise-search.md) サブスクリプションを持つ Liferay DXPのお客様に提供される予定です。
 
-* Liferay DPX 7.4 Update 5（アップデートの詳細は[こちら](../../../installation-and-upgrades/maintaining-a-liferay-installation/updating-liferay.md)）から、Search Experiencesは他のLESアプリと同様にバンドルアプリケーションとして提供されるようになりました。
+* Liferay DXP 7.4 Update 5（アップデートの詳細は[こちら](../../../installation-and-upgrades/maintaining-a-liferay-installation/updating-liferay.md)）から、Search Experiencesは他のLESアプリと同様にバンドルアプリケーションとして提供されるようになりました。
 * Liferay DXP 7.3では、Search Experiencesはアドオンアプリケーションとしてカスタマーポータルを通じてLESサブスクライバーに提供されます。 [ Liferay DXP 7.3のLiferay Enterprise Search](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3) で利用可能かをご確認ください。
 
 ## Search Experiences REST API

@@ -17,14 +17,19 @@ poshi-resources/configuration.md
 poshi-resources/using-poshi-resources.md
 ```
 
-::::{grid} 1 :gutter: 3 3 3 3
+::::{grid} 1
+:gutter: 3 3 3 3
 
-:::{grid-item-card} 設定 :link: ./poshi-resources/configuration.md
+:::{grid-item-card} 設定
+:link: ./poshi-resources/configuration.md
 
-プロジェクトにPoshiリソースを設定します。 :::
+プロジェクトにPoshiリソースを設定します。
+:::
 
-:::{grid-item-card} Poshiのリソースの使用 :link: ./poshi-resources/using-poshi-resources.md
+:::{grid-item-card} Poshiのリソースの使用
+:link: ./poshi-resources/using-poshi-resources.md
 
-Poshiのリソースの使用方法。 :::
+Poshiのリソースの使用方法。
+:::
 
 ::::

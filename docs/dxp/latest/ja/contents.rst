@@ -7,9 +7,9 @@
    :maxdepth: 6
 
    getting-started
-   site_building
+   site-building
    content-authoring-and-management
-   process_automation
+   process-automation
    using-search
    collaboration-and-social
    users-and-permissions

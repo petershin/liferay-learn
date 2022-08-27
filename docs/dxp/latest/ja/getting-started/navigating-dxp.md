@@ -15,7 +15,7 @@ Liferay DXPのすぐに使えるナビゲーションは、 **個人用メニュ
 * [ページの追加](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
 * [コンテンツを作成する](../content-authoring-and-management.md)
 * [サイトメンバーシップの管理](../site-building/sites/site-membership/adding-members-to-sites.md)
-* [サイトの動作と機能の設定と最適化](../site_building.html)
+* [サイトの動作と機能の設定と最適化](../site-building.md)
 * など・・・
 
 ## アプリケーションバー

@@ -2,9 +2,9 @@
 
 {bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`
 
-With custom Objects, you can add validations for both custom and metadata fields. Validations set rules used for determining valid field entries and are defined using either [Groovy](https://groovy-lang.org/) scripts or Liferay's [expression builder](./expression-builder-validations-reference.md). Each validation has its own trigger, conditions, and error text, which you can set via the Objects UI. When triggered, the validation checks for valid field entries according to your defined conditions and displays your error text for invalid entries.
+With Objects, you can add validations for both custom and system fields. Validations set rules used for determining valid field entries and are defined using either [Groovy](https://groovy-lang.org/) scripts or Liferay's [expression builder](./expression-builder-validations-reference.md). Each validation has its own trigger, conditions, and error text, which you can set via the Objects UI. When triggered, the validation checks for valid field entries according to your defined conditions and displays your error text for invalid entries.
 
-![Create validations for custom and metadata Object fields.](./adding-custom-validations/images/01.png)
+![Create validations for custom and system Object fields.](./adding-custom-validations/images/01.png)
 
 ```{important}
 Currently, Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
@@ -14,7 +14,11 @@ Follow these steps to add a custom validation:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
 
-1. Begin editing a custom Object.
+1. Begin editing an Object definition.
+
+   ```{note}
+   Beginning with Liferay 7.4 U38+/GA38+, you can add custom validations to system Objects.
+   ```
 
 1. Go to the *Validations* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
@@ -76,9 +80,9 @@ For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax 
 
 ## Available Fields Reference
 
-When constructing conditions, you can use any of the Object's custom or metadata fields. You can also select from relationship fields on the 'one' side of a relationship.
+When constructing conditions, you can use any of the Object's custom or system fields. You can also select from relationship fields on the 'one' side of a relationship.
 
-The following table lists all default metadata fields included in custom Objects:
+The following table lists all default system fields included in both system and custom Object definitions:
 
 | Field | Description |
 | :--- | :--- |
@@ -103,7 +107,7 @@ The following table lists all default metadata fields included in custom Objects
 | `uuid` | Unique universal ID for the entry |
 
 ```{note}
-Besides custom fields, the following metadata fields are listed in the editing sidebar for easy access:
+Only the following system fields are listed in the editing sidebar for easy access:
 
 * Author (`userName`)
 * Created Date (`createDate`)

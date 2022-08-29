@@ -62,7 +62,7 @@ Follow these steps to add columns:
 
 1. Check all fields you want to include in the view table and click *Save*.
 
-   Available options include both [custom fields](./adding-fields-to-objects.md) and default metadata fields (i.e., ID, Author, Creation Date, Modified Date, and Workflow Status).
+   Available options include both [custom fields](./adding-fields-to-objects.md) and default system fields (i.e., ID, Author, Creation Date, Modified Date, and Workflow Status).
 
    ![Arrange the fields in any order you want.](./designing-object-views/images/04.png)
 

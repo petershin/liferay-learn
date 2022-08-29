@@ -1,6 +1,6 @@
 # Using Aggregation Terms with REST APIs
 
-When querying Object entries using REST APIs, you can use an Object's fields as facet criteria for aggregating entry data. To do this, add the `aggregationTerms` parameter to your GET request and specify the data fields you want to use as facet criteria. These criteria can include custom fields, default metadata fields, or relationship fields. The request response then groups the specified data facets into a single `facets` block.
+When querying Object entries using REST APIs, you can use an Object's fields as facet criteria for aggregating entry data. To do this, add the `aggregationTerms` parameter to your GET request and specify the data fields you want to use as facet criteria. These criteria can include custom fields, default system fields, or relationship fields. The request response then groups the specified data facets into a single `facets` block.
 
 Here you'll use the `aggregatedTerms` parameter with a basic custom Object.
 

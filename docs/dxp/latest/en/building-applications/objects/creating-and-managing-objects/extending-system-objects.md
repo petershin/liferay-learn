@@ -1,6 +1,6 @@
 # Extending System Objects
 
-{bdg-secondary}`Available Liferay 7.4 U35+ and GA35+`
+{bdg-secondary}`Available Liferay 7.4 U38+ and GA38+`
 
 With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, Postal Address, and User.
 
@@ -10,16 +10,16 @@ The Postal Address object is only used to store account addresses. For this reas
 
 ![Extend system services integrated with the Objects Framework.](./extending-system-objects/images/01.png)
 
-When extending system Objects, you can add [relationships](#adding-relationships) and [actions](#adding-actions) to them. <!--TASK: You can also access limited [configuration options](#additional-configuration-options).-->
+When extending system Objects, you can add [relationships](#adding-relationships), [actions](#adding-actions), and [validations](#adding-validations) to them. <!--TASK: You can also access limited [configuration options](#additional-configuration-options).-->
 
 | Feature | System Objects | Custom Objects |
 | :--- | :--- | :--- |
-| Fields | <!--TASK: Uncomment once supported: &#10004;--> | &#10004; |
+| Fields |  | &#10004; |
 | Relationships | &#10004; | &#10004; |
 | Layouts |  | &#10004; |
 | Actions | &#10004; | &#10004; |
 | Views |  | &#10004; |
-| Validations |  | &#10004; |
+| Validations | &#10004; | &#10004; |
 
 <!--TASK: Uncomment once supported.
 ## Adding Fields
@@ -39,6 +39,10 @@ Since system Objects don't support [custom layouts](./designing-object-layouts.m
 ## Adding Actions
 
 You can add custom actions to system Objects that are triggered when entries are added, updated, or removed. This includes both Webhook and Groovy Script actions. See [Defining Object Actions](./defining-object-actions.md) for more information.
+
+## Adding Validations
+
+You can add Groovy and Expression Builder validations to system Objects. When triggered, these validations check for valid field entries and display custom error messages for invalid entries. Currently, Objects only supports validations for a system Object's default fields and does not support validations for its custom Expando fields. See [Adding Custom Validations](./adding-custom-validations.md) for more information.
 
 <!--TASK: Uncomment once supported.
 ## Additional Configuration Options

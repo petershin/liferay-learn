@@ -2,7 +2,7 @@
 toc:
 - ./notifications/configuring-personal-notifications.md
 - ./notifications/creating-notification-templates.md
-- ./notifications/using-notification-queue.md
+- ./notifications/using-the-notification-queue.md
 ---
 # Notifications
 
@@ -11,7 +11,7 @@ toc:
 
 notifications/configuring-personal-notifications.md
 notifications/creating-notification-templates.md
-notifications/using-notification-queue.md
+notifications/using-the-notification-queue.md
 ```
 
 Liferay provides integrated notification tools, so you can ensure users are alerted to platform events. For Liferay DXP, this includes email, website, and mobile notifications for the following default applications:

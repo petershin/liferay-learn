@@ -20,11 +20,11 @@ From having top-tier SEO, to understanding and acting on your site's content, to
 :gutter: 3 3 3 3
 
 :::{grid-item-card} Configuring Your Page's Friendly URL
-:link: ./site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md
+:link: ./creating-pages/page-settings/configuring-your-pages-friendly-url.md
 :::
 
 :::{grid-item-card} Configuring Your Site's Friendly URL
-:link: ./site-building/site-settings/managing-site-urls/configuring-your-sites-friendly-url.md
+:link: ./site-settings/managing-site-urls/configuring-your-sites-friendly-url.md
 :::
 
 :::{grid-item-card} Site Map
@@ -32,23 +32,23 @@ From having top-tier SEO, to understanding and acting on your site's content, to
 :::
 
 :::{grid-item-card} Configuring Virtual Hosts Site URLs
-:link: ./site-building/site-settings/managing-site-urls/configuring-virtual-hosts-site-urls.md
+:link: ./site-settings/managing-site-urls/configuring-virtual-hosts-site-urls.md
 :::
 
 :::{grid-item-card} Using the Redirection Tool
-:link: ./site-building/site-settings/managing-site-urls/using-the-redirection-tool.md
+:link: ./site-settings/managing-site-urls/using-the-redirection-tool.md
 :::
 
 :::{grid-item-card} Configuring SEO and Open Graph for Display Page Templates
-:link: ./site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md
+:link: ./displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md
 :::
 
 :::{grid-item-card} Configuring Open Graph for Sites
-:link: ./site-building/site-settings/configuring-open-graph.md
+:link: ./site-settings/configuring-open-graph.md
 :::
 
 :::{grid-item-card} Configuring Hreflang Meta Data
-:link: ./site-building/site-settings/configuring-hreflang-meta-data.md
+:link: ./site-settings/configuring-hreflang-meta-data.md
 :::
 ::::
 
@@ -58,15 +58,15 @@ From having top-tier SEO, to understanding and acting on your site's content, to
 :gutter: 3 3 3 3
 
 :::{grid-item-card} About the Content Performance Tool
-:link: ./content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md
+:link: ../content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md
 :::
 
 :::{grid-item-card} Analyze Content Metrics Using Content Performance Tool
-:link: ./content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
+:link: ../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
 :::
 
 :::{grid-item-card} Analyze SEO and Accessibility on Pages
-:link: ./content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
+:link: ../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
 :::
 ::::
 

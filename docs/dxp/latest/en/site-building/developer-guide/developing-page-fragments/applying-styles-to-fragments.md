@@ -1,4 +1,4 @@
-# Applying Styles to fragments
+# Applying Styles to Fragments
 
 When you add a fragment to a page, you can use the sidebar menu to configure the fragment, including [the *Styles* configuration tab](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles).
 

@@ -1,78 +1,67 @@
-<!--- # アカウント
+<!--- # Accounts
 
-[Salesforceデータソース](../connecting-data-sources/adding-a-salesforce-data-source.md)をお持ちの場合、Analytics CloudはSalesforceのアカウントデータをインポートして分析することができます。 Analytics Cloud は、Salesforce のアカウントデータと他のソースからのデータを組み合わせることで、アカウントとその中にいる人の全体像を提示します。
+If you have a [Salesforce data source](../connecting-data-sources/adding-a-salesforce-data-source.md), Analytics Cloud can import and analyze Salesforce account data. By combining Salesforce account data with data from other sources, Analytics Cloud presents a holistic view of the account and those in it.
 
-アカウント分析を表示するには、左のナビゲーションパネルから［アカウント］を選択します。 アカウントは、各アカウントの以下のデータを一覧にした検索可能な表で表示されます。
+To view account analytics, select Accounts from the left navigation panel. The accounts are displayed in a searchable table that lists the following data for each account:
 
 * Account Type
 * Individuals
 * Total Activities
 
-!［アカウント］ タブには、Analytics Cloud にインポートされた Salesforce アカウントが一覧表示されます。](accounts/images/01.png)
+![The Accounts tab lists the Salesforce accounts imported in Analytics Cloud.](accounts/images/01.png)
 
-アカウントをクリックすると、これらのタブに整理された情報が表示されます。
+Click an account to view its information, which is organized into these tabs:
 
-* 概要
-* アクテビティ
-* 興味のあるトピック
-* セグメント
-* 訪問者
-* 詳細
+* Overview
+* Activities
+* Interests
+* Segments
+* Individuals
+* Details
 
-次のセクションでは、各タブについて説明します。
+The sections that follow describe each tab.
 
-<a name="overview" />
+## Overview
 
-## 概要
+The Overview tab presents summaries of the account’s data. It displays these summaries via these panes:
 
-［Overview］タブには、アカウントのデータのサマリーが表示されます。 これらのペインを介して、これらのサマリーを表示します。
+* Account Activities
+* Account Firmographics
+* Contact Information
+* Account Interest Topics
+* Known Individuals
+* Associated Segments
 
-* アカウント活動
-* アカウントファームオグラフィックス
-* 連絡先情報
-* アカウントの興味のあるトピック
-* 既知の訪問者
-* 関連セグメント
+If more information is available for each tab, you can access it via its link. For example, a View All Activities link is at the bottom of the Account Activities pane. Clicking this link takes you to the Activities tab, which shows more detailed information about activities.
 
-各タブでより多くの情報が利用可能な場合は、そのリンクからアクセスできます。 たとえば、［Account Activities］ペインの下部には、［すべてのアクティビティを表示］ リンクがあります。 このリンクをクリックすると、アクティビティタブに移動し、アクティビティの詳細情報が表示されます。
+![The Overview tab displays summaries of the account’s data.](accounts/images/02.png)
 
-![概要］ タブには、アカウントのデータのサマリーが表示されます。](accounts/images/02.png)
+## Activities
 
-<a name="activities" />
+The Activities tab shows the activities of the individuals in the account. A histogram shows the number of activities by date. A searchable table below the histogram shows more detail about the activities.
 
-## アクテビティ
+![The Activities tab displays data on activities of the account’s individuals.](accounts/images/03.png)
 
-［Activities］タブには、アカウント内の個人のアクティビティが表示されます。 ヒストグラムでは、日付ごとのアクティビティ数を表示しています。 ヒストグラムの下にある検索可能な表には、活動の詳細が表示されています。
+## Interests
 
-![アクティビティ］ タブには、アカウントの個人のアクティビティに関するデータが表示されます。](accounts/images/03.png)
+The Interests tab shows the topics of interest for the account’s individuals. Analytics Cloud identifies these topics via the same methodology it uses for individuals. For more information, see [Understanding Interests](../../workspace-data/managing-interest-topics.md#understanding-interests).
 
-<a name="interests" />
+## Segments
 
-## 興味のあるトピック
+The Segments tab shows the segments for the account’s individuals. These segments function the same as segments in general. The only difference is that the segments here apply to the individuals in the account. For more information on segments, see the documentation on creating and profiling segments.
 
-［興味のあるトピック］タブには、そのアカウントの個人が興味を持っているトピックが表示されます。 Analytics Cloudでは、個人向けに使用するのと同じ方法でこれらのトピックを識別しています。 詳しくは、 [興味のあるトピックを理解する](../../workspace-data/managing-interest-topics.md#understanding-interests) をご覧ください。
+## Individuals
 
-<a name="segments" />
+The Individuals tab shows information about the individuals in the account. For more information on individuals in Analytics Cloud, see Profiling Individuals.
 
-## セグメント
+## Details
 
-［セグメント］ タブには、アカウントの個人のセグメントが表示されます。 これらのセグメントは、一般的なセグメントと同じように機能します。 唯一の違いは、ここでのセグメントは、アカウント内の個人に適用されます。 セグメントの詳細は、セグメントの作成とプロファイリングに関するドキュメントを参照してください。
+The Details tab shows information about the account’s properties. The properties appear in a searchable table that shows each account property in Analytics Cloud and its value. The table also has columns for these values:
 
-<a name="individuals" />
+* **Source Name:** The corresponding property name in the Salesforce data source. For example, the Analytics Cloud `accountId` property is `id` in Salesforce. Therefore, `id` appears in the Source Name column of the `accountId` row.
+* **Data Source:** The data source the property’s value originated from.
+* **Last Modified:** The date the property’s value was most recently changed.
 
-## 訪問者
-
-［訪問者］タブには、アカウント内の個人に関する情報が表示されます。 Analytics Cloudの個人の詳細は、［訪問者のプロファイリング］を参照してください。
-
-<a name="details" />
-
-## 詳細
-
-［詳細］タブには、アカウントのプロパティに関する情報が表示されます。 プロパティは、Analytics Cloudの各アカウント プロパティとその値が検索可能な表に表示されます。 テーブルには、これらの値の列もあります。
-
-* **ソース名：** Salesforce データ・ソースの対応するプロパティ名。 例えば、Analytics Cloudの `accountId` プロパティは、Salesforceの `id` です。 そのため、 `accountId` 行のソース名欄には、 `id` が表示されます。
-* **データ・ソース：** プロパティの値が発生したデータソース。
-* **最終更新日：** プロパティの値が最も最近変更された日付。
-![詳細］ タブには、アカウントのプロパティとその値を示す検索可能なテーブルが含まれています。](accounts/images/04.png)
+![The Details tab contains a searchable table that shows the account’s properties and their values.](accounts/images/04.png)
 
 --->

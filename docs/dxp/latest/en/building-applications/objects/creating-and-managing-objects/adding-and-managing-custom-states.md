@@ -48,12 +48,28 @@ After adding the field to a definition, you can [set up a flow](#setting-up-a-fl
 
 ## Setting Up a Flow for State Fields
 
-Go to the *State Manager* tab to configure the flow used for the state field.
+By default, each state can transition to all other states. However, you can __. Ensures the entry goes through the desires process.
 
-![Go to the State Manager tab to set up flows for state fields.](./adding-and-managing-custom-states/images/05.png)
+Follow these steps to set up a custom flow for state fields:
 
-Determines available options from each state. Can select multiple options. Ensures the entry goes through the desires process.
+1. While editing a custom Object, go to the *State Manager* tab and select the desired *state field*.
 
-![Determine the available transitions between states.](./adding-and-managing-custom-states/images/06.png)
+   ![Go to the State Manager tab to set up a flow for state fields.](./adding-and-managing-custom-states/images/05.png)
+
+1. Under Next Status, click the dropdown menus and check the boxes to determines available transitions for each state.
+
+   You can select any number of transitions for a state.
+
+   ![Determine the available transitions between states.](./adding-and-managing-custom-states/images/06.png)
+
+1. Click *Save*.
+
+Once saved, users can only transition an entry's state according to your defined flow.
+
+![Set up a custom flow determines available transitions for each state.](./adding-and-managing-custom-states/images/07.png)
 
 ## Additional Information
+
+* [Picklists](../picklists.md)
+* [Adding Fields to Objects](./adding-fields-to-objects.md)
+* [Understanding Object Field Types](../understanding-object-field-types.md)

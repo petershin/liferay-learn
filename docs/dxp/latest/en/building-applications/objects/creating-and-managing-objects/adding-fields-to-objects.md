@@ -2,9 +2,9 @@
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.4+`
 
-Fields are data definitions that represent database columns. They store different [types of values](#field-types-ui-reference) for Liferay Objects. You can add fields to any published or unpublished custom Object. <!--TASK: swap last sentence once system Objects are supported. "You can add fields to any published or unpublished Object, including both system and custom Objects."-->
+Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference) for Liferay Objects. You can add fields to any published or unpublished custom Object. <!--TASK: swap last sentence once system Objects are supported. "You can add fields to any published or unpublished Object, including both system and custom Objects."-->
 
-When an Object is [published](./creating-objects.md#publishing-object-drafts), an initial database table is created with the draft's data definitions. This table includes all Object fields and relationships that exist at the time of publishing. Fields and relationships added to an Object after publishing are added to a side table (i.e., `[Initial_Table_Name]_x`).
+When an Object is [published](./creating-objects.md#publishing-object-drafts), an initial database table is created with the draft's data definitions. This table includes all Object fields and relationships that exist at the time of publishing. Any fields and relationships added to an Object after publishing are added to a side table (i.e., `[Initial_Table_Name]_x`).
 
 ```{important}
 If a field is saved to an Object draft, you can edit any of its settings and values. However, once fields are published or saved to a published Object, only its Label can be edited. All other values and settings cannot be changed. 
@@ -12,15 +12,15 @@ If a field is saved to an Object draft, you can edit any of its settings and val
 Fields in Object drafts can be removed. After initial publication, however, fields cannot be removed, with the exception of fields added *after* initial publication, because those fields were added to a side table.
 ```
 
-Follow these steps to add a new field to an Object:
+Follow these steps to add a field to an Object:
 
-1. Open the *Objects* portlet.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
 
-1. Select the desired Object.
+1. Begin editing the desired Object definition.
 
-1. Click on the *Fields* tab, and click on the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Go to the *Fields* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
-   ![In the Fields tab, click on the Add button and enter the required details.](./adding-fields-to-objects/images/01.png)
+   ![In the Fields tab, click the Add button and enter the required details.](./adding-fields-to-objects/images/01.png)
 
 1. Enter a *Label* and *Field Name*.
 
@@ -32,9 +32,11 @@ Follow these steps to add a new field to an Object:
    The following field names are reserved by Liferay and cannot be used for custom fields: `companyId`, `createDate`, `groupId`, `id`, `lastPublishDate`, `modifiedDate`, `status`, `statusByUserId`, `statusByUserName`, `statusDate`, `userId`, `userName`. If users attempt to create a field using one of these field names, Liferay displays an error message.
    ```
 
-1. Select a field *Type*. See [Field Type Reference](#field-types-ui-reference) for more information.
+1. Select a field *Type*. Some field types include additional configuration options (e.g., Picklist, Attachment). See [Field Type Reference](#field-types-ui-reference) below for a basic overview of each type, or see [Understanding Object Field Types](../understanding-object-field-types.md) for more detailed information.
 
-1. Determine whether or not the field is *Mandatory*.
+   In some cases, these options are available during field creation (e.g., Picklist, Attachment), while others are only available after field creation (e.g., Text, Long Text). See  for more information.
+
+1. Determine whether the field is *Mandatory*.
 
    ```{note}
    Mandatory boolean fields require a true value from end users.
@@ -48,22 +50,22 @@ After saving fields to an Object draft, you can select them to define whether th
 
 ## Field Types UI Reference
 
-{bdg-secondary}`For Liferay DXP 7.4 U24+`
+{bdg-secondary}`For Liferay DXP 7.4 U24+ and GA24+`
 
 | Type | Description |
 | :--- | :--- |
-| [Attachment](../understanding-object-field-types.md#attachment) | Stores `jpeg`, `jpg`, `pdf`, and `png` files no larger than 100 MB |
+| Attachment | Stores `jpeg`, `jpg`, `pdf`, and `png` files no larger than 100 MB; see [Attachment Fields](../understanding-object-field-types.md#attachment) for more information |
 | Boolean | Stores true or false values |
 | Date | Stores date values |
 | Decimal (*previously Double*) | Stores a decimal number value that supports fractional portions |
 | Integer | Stores an integer up to 9 digits in length |
 | Long Integer (*previously Long*) | Stores a large integer up to 19 digits in length |
-| Long Text (*previously Clob*) | Stores a text box value that supports up to 65,000 characters; when configuring this field type, you can limit the number of characters allowed |
-| Picklist | Stores a [Picklist](../picklists.md) string value |
+| Long Text (*previously Clob*) | Stores a text box value that supports up to 65,000 characters; after creating a Long Text field, you can configure it to limit the number of characters allowed |
+| Picklist | Stores a [Picklist](../picklists.md) string value; see [Picklist Fields](../understanding-object-field-types.md#picklist) for more information |
 | Precision Decimal (*previously BigDecimal*) | Stores a high-precision decimal number without rounding |
 | Relationship | Stores the numeric ID for all related Object entries |
 | Rich Text | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio) |
-| Text (*previously String*) | Stores simple text values up to 280 characters; when configuring this field type, you can limit the number of characters allowed |
+| Text (*previously String*) | Stores simple text values up to 280 characters; after creating a Text field, you can configure it to limit the number of characters allowed |
 
 ## Additional Information
 

@@ -14,12 +14,12 @@ Liferay provides a user-friendly name for each field type, which corresponds to 
 | Decimal (*previously Double*) | Double | Stores a decimal number value with a limit of 16 digits, whether before or after the decimal <br><br> For example: `999.9999999999999` (16 digits total) <br><br> Note: Due to its limited number of digits, this field type sometimes rounds large numbers and does not provide high precision. Use the Precision Decimal type to enter values with more decimal places and to avoid rounding. |
 | Integer | Integer | Stores an integer up to 9 digits in length <br><br> Maximum value: `2147483647` <br><br> Minimum value: `-2147483648` |
 | Long Integer (*previously Long*) | Long | Stores a large integer up to 19 digits in length <br><br> Maximum value: `9007199254740991` <br><br> Minimum value: `-9007199254740991` |
-| Long Text (*previously Clob*) | Clob | Stores a text box value that supports up to 65,000 characters; when configuring this field type, you can limit the number of characters allowed |
+| Long Text (*previously Clob*) | Clob | Stores a text box value that supports up to 65,000 characters; after creating a Long Text field, you can configure it to limit the number of characters allowed |
 | Picklist | String | Stores a [Picklist](./picklists.md) string value |
 | Precision Decimal (*previously BigDecimal*) | BigDecimal | Stores a high-precision decimal number without rounding and supports up to 16 decimal digits <br><br> Maximum Value: `99999999999999.9999999999999999` <br><br> Minimum value: `-99999999999999.9999999999999999` |
 | Relationship | Long | Stores the numeric ID for all related Object entries |
 | Rich Text | Clob | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio) |
-| Text (*previously String*) | String | Stores simple text values up to 280 characters; when configuring this field type, you can limit the number of characters allowed |
+| Text (*previously String*) | String | Stores simple text values up to 280 characters; after creating a Text field, you can configure it to limit the number of characters allowed |
 
 ## Attachment
 
@@ -51,6 +51,8 @@ After creating an Attachment field, you can configure it in these ways:
 | Maximum File Size | Enter the maximum file size accepted by the field. The default value is 100 MB. If desired, you can set the value to 0 to use the server's Overall Maximum Upload Request Size property. |
 | Storage Folder (*for Show Files in Documents and Media*) | Enter a folder name to determine where uploaded files are stored in Documents and Media. By default, the folder uses the Object definition's name (e.g., `/Employee`, `/TimeOffRequest`). |
 
+<!-- ## Picklist -->
+
 <!-- 
 ## Text Fields
 
@@ -61,8 +63,6 @@ After creating an Attachment field, you can configure it in these ways:
 ### Rich Text
 
 Use this field type to create rich text compositions that include images, links, and other elements.
-
-## Picklist
 
 ## Numeric Fields 
 

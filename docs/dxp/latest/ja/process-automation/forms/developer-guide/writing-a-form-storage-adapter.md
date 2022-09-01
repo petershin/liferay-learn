@@ -6,7 +6,7 @@
 
 ![DDMストレージアダプターを使用して、フォームアプリケーションにストレージタイプを追加します。](./writing-a-form-storage-adapter/images/01.png)
 
-最初に、 [デフォルトのストレージアダプター](https://github.com/liferay/liferay-portal/blob/［$LIFERAY **LEARN** PORTAL **GIT** TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/JSONDDMStorageAdapter.java) がフォームレコードをLiferay DXPのデータベースにJSONコンテンツとして保存する方法を確認します。 そして、各フォームレコードをファイルシステムに保存するロジックを追加します。
+最初に、 [デフォルトのストレージアダプター](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/JSONDDMStorageAdapter.java) がフォームレコードをLiferay DXPのデータベースにJSONコンテンツとして保存する方法を確認します。 そして、各フォームレコードをファイルシステムに保存するロジックを追加します。
 
 ## 実行中のDDMストレージアダプターを調べる
 

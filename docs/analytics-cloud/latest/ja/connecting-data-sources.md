@@ -33,14 +33,14 @@ Liferay Analytics Cloudには2種類のデータが必要です。 １つ目は�
 
 [データソース]ページが表示され、既存のすべてのデータソースが一覧表示されます。
 
-![[データソース]ページからデータソースを表示、編集、および追加します。](./connecting-data-sources/images/01.png)
+![ [データソース]ページからデータソースを表示、編集、および追加します。](./connecting-data-sources/images/01.png)
 
 チームメイトが既にデータソースを追加していない限り、リストは空です。 新しいデータソースを追加するには、以下のチュートリアルを参照してください。
 
 - [Liferay DXPをAnalytics Cloudに接続する](./connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md)
 - [CSVデータソースを追加する](./connecting-data-sources/adding-a-csv-data-source.md)
 
-データソースを作成した後、データソースを変更する必要がある場合もあります。 詳細は[Managing Data Sources](./workspace-data/managing-data-sources.md)を参照してください。
+データソースを作成した後、データソースを変更する必要がある場合もあります。 詳細は [データソースの管理](./workspace-data/managing-data-sources.md) を参照してください。
 
 ## 次のステップ
 

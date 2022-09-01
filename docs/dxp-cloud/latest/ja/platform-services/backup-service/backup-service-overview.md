@@ -88,7 +88,7 @@ DXP Cloudのコンソールや、バックアップサービスの `LCP.json` �
 
 1. [Environment Variables Reference](#environment-variables-reference) のリストから変数を追加して、バックアップサービスを設定します。
 
-1. *［変更を保存］*をクリックします。
+1. *［変更を保存］* をクリックします。
 
 通常の環境変数とは別に、DXP Cloudのコンソールから *シークレット* 変数を設定することができます。 詳しくは、 [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) をご覧ください。
 
@@ -99,17 +99,17 @@ DXP Cloudのコンソールや、バックアップサービスの `LCP.json` �
 1. テキストエディターを使って、以下のパスにあるバックアップの `LCP.json` ファイルを開きます。 `/{your_project_name}/backup/LCP.json`
 
    ```{note}
-   バージョン3.x.xのサービスを利用している場合、バックアップ用の［LCP.json］ファイルは次のパスにあります：［/{your_project_name}/lcp/backup/LCP.json］。  
+   バージョン3.x.xのサービスを利用している場合、バックアップ用の［LCP.json］ファイルは次のパスにあります：`/{your_project_name}/lcp/backup/LCP.json`。  
    ```
 
 1. 環境の項目までスクロールしてください。
 
    ```
-    "env "です。{
-      "lcp_backup_folder":"/opt/liferay/data",
-      "LCP_DATABASE_SERVICE":"mydatabase",
-      "LCP_MASTER_USER_PASSWORD":"mypassword"
-},
+    "env": {
+      "LCP_BACKUP_FOLDER": "/opt/liferay/data",
+      "LCP_DATABASE_SERVICE": "mydatabase",
+      "LCP_MASTER_USER_PASSWORD": "mypassword"
+    },
    ```
 
 1. [Environment Variables Reference](#environment-variables-reference) のリストから変数を追加して、バックアップサービスを設定します。
@@ -118,12 +118,12 @@ DXP Cloudのコンソールや、バックアップサービスの `LCP.json` �
 
 環境サービスの`LCP.json`ファイルによる設定の詳細については、[LCP.jsonによる設定](../../reference/configuration-via-lcp-json.md)を参照してください。
 
-## 自動バックアップとクリーンアップのスケジューリング
+## 自動バックアップとクリーンアップのスケジュwarningーリング
 
 バックアップの作成と削除の頻度を決定することは、データの保護とストレージの最適化に役立ちます。 *本番環境のみスケジュールされたバックアップを行うことができます。*
 
 ```{warning}
-Liferayインスタンス上でデータが能動的に変更されている間に作成されたバックアップは、一貫性のないデータを作成する危険性があります。 データの不整合のリスクを軽減するために、アクティビティが少ない時間帯にバックアップを作成するように、バックアップスケジュールを設定します。 完全に一貫したバックアップを行うためには、データベース管理者と調整して、［手動バックアップ］を行っている間は更新をフリーズするようにしてください。(./backup-service-overview.md#creating-a-manual-backup).
+ Liferayインスタンス上でデータが能動的に変更されている間に作成されたバックアップは、一貫性のないデータを作成する危険性があります。データの不整合のリスクを軽減するために、アクティビティが少ない時間帯にバックアップを作成するように、バックアップスケジュールを設定します。 完全に一貫したバックアップを行うためには、データベース管理者と調整して、[手動バックアップ](./backup-service-overview.md#creating-a-manual-backup)を行っている間は更新をフリーズするようにしてください。
 ```
 
 自動バックアップのスケジュールを設定するには、2つの方法があります。
@@ -168,7 +168,7 @@ Liferayインスタンス上でデータが能動的に変更されている間�
 * **Retention Period**: `LCP_BACKUP_RETENTION_PERIOD` 変数に数値（1～30の間）を追加して、自動クリーンアップで削除される前にバックアップを保持する日数を設定します。
 
 ```{note}
-標準および非標準の[cronスケジューリング構文]（https://crontab.guru/）は、UTC±00タイムゾーンに基づいています。 非標準のcron構文を使用する場合、自動バックアップとクリーンアップは指定された値の先頭で実行されます。 例えば、`@daily`は毎日UTCの00:00にバックアップを実行します。
+標準および非標準の[cronスケジューリング構文](https://crontab.guru/) は、UTC±00タイムゾーンに基づいています。 非標準のcron構文を使用する場合、自動バックアップとクリーンアップは指定された値の先頭で実行されます。 例えば、`@daily`は毎日UTCの00:00にバックアップを実行します。
 ```
 
 これらの環境変数は、 [DXP Cloud コンソール](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-dxp-cloud-console) （Backup サービス内）で設定するか、 [プロジェクトリポジトリの `backup/LCP.json` ファイル](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp-json) で設定して Backup サービスを環境にデプロイすることで使用することが可能です。
@@ -180,14 +180,14 @@ DXP Cloud コンソールで環境変数を設定し、後で `backup/LCP.json` 
 次の `backup/LCP.json` の例では、12時間ごと（つまり、UTCの00:00と12:00）にバックアップを作成し、30日以上前のバックアップを削除する月次クリーンアップを実行するようになっています。
 
 ```
- "env "です。{
-   "lcp_backup_folder":"/opt/liferay/data",
-   "LCP_DATABASE_SERVICE":"mydatabase",
-   "LCP_MASTER_USER_PASSWORD":"mypassword"、
-   "LCP_BACKUP_CREATE_SCHEDULE"。"0 0,12 * * *",
-   "LCP_BACKUP_CLEANUP_SCHEDLE": "@monthly", "LCP_BACKUP_CREATE_SCHEDLE"。"@monthly",
-   "LCP_BACKUP_RETENTION_PERIOD":"30"
-},
+ "env": {
+   "LCP_BACKUP_FOLDER": "/opt/liferay/data",
+   "LCP_DATABASE_SERVICE": "mydatabase",
+   "LCP_MASTER_USER_PASSWORD": "mypassword",
+   "LCP_BACKUP_CREATE_SCHEDULE": "0 0,12 * * *",
+   "LCP_BACKUP_CLEANUP_SCHEDULE": "@monthly",
+   "LCP_BACKUP_RETENTION_PERIOD": "30"
+ },
 ```
 
 ## 環境変数リファレンス

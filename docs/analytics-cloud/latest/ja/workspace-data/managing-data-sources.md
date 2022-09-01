@@ -4,7 +4,7 @@
 
 ![設定で接続されているデータソースのリストを見ることができます。](./managing-data-sources/images/01.png)
 
-Liferay DXP インスタンスをまだ接続していない場合は、 [connecting Liferay DXP to Analytics Cloud](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md)をご覧ください。
+Liferay DXP インスタンスをまだ接続していない場合は、 [Liferay DXPをAnalytics Cloudに接続する](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md) をご覧ください。
 
 Liferay DXPのデータソースを表示したり変更したりするには、接続されているデータソースの名前をクリックします。
 

@@ -7,6 +7,7 @@ Configurable options help make your Fragments flexible, so you don't have to mai
 - [Deploy a Configurable Fragment](#deploy-a-configurable-fragment)
 - [Examine the Configuration](#examine-the-configuration)
 - [Escape Configuration Text Values](#escape-configuration-text-values)
+- [Use Lists for Repeated HTML Elements](#use-lists-for-repeated-html-elements)
 - [Modify the Configuration](#modify-the-configuration)
 - [Propagate the Changes and Test](#propagate-the-changes-and-test)
 - [Related Information](#related-information)
@@ -207,6 +208,37 @@ To prevent JavaScript attacks, such as setting an attribute or appending HTML ch
 function (fragmentElement, configuration) {
     const escapedValue = Liferay.Util.escapeHTML(configuration.text)
 }
+```
+
+### Use Lists for Repeated HTML Elements
+
+Avoid repeatedly writing the same HTML elements for your fragment by using FreeMarker lists. You can use the values from the configuration options you have implemented to implement your list's logic.
+
+For example, you can iterate over a number of lines that is defined in a configuration (like [this example select configuration](../reference/fragments/fragment-configuration-types-reference.md#select-configuration)), and then use this HTML to list the configured number of lines:
+
+```html
+<div class="fragment_1">
+    [#list 1..configuration.numberOfLines as index]
+        <li>Line number: ${index}</li>
+    [/#list]
+</div>
+```
+
+If you have implemented a [collection selector configuration](../reference/fragments/fragment-configuration-types-reference.md#collection-selector), then you can also list all of the titles in the configured collection, like this example:
+
+```html
+<div class="fragment_310">
+    <h1>
+        List of Items:
+    </h1>
+    <ul>
+        [#if collectionObjectList??]
+            [#list collectionObjectList as item]
+                <li>${item.title}</li>
+            [/#list]
+        [/#if]
+    </ul>
+</div>
 ```
 
 ## Modify the Configuration

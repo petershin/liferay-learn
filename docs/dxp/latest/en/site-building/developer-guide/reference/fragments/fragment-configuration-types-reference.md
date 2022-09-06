@@ -52,9 +52,15 @@ The color picker JSON configuration creates a flexible color selector that can a
 
 * Enter the hex code for the desired color into the text box to change to any color.
 
-* Click the *Value from Stylebook* button to open a menu of pre-defined colors to choose from. You can select any color configured in your currently used [style book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). This links the field's value to the selected token, until you press the button again to unlink it.
+* Click the *Value from Stylebook* button to open a menu of pre-defined colors to choose from. You can select any color configured in your currently used [style book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). This links the field's value to the selected token, until you press the button again to unlink it. Unlinking the token value converts the chosen color to its equivalent hex code value again.
+
+* If the color picker has no default value defined, then click the *Default* drop-down menu to select any color from your currently used style book. This works the same as the Value from Stylebook button when you select a value.
 
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/02.png)
+
+```{note}
+If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/style-book-token-definitions.md), any color picker configurations on the page are replaced with [color palette](#color-palette configuration) configurations.
+```
 
 This JSON configuration creates a color picker field called `headingColor`:
 
@@ -87,7 +93,11 @@ The `colorPicker` type stores an object with the configured name that holds the 
 </div>
 ```
 
-When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is replaced with the chosen color. If you chose a color directly, then it is replaced with the corresponding hex code value. If you chose a color from the current style book, then it replaced with a CSS variable for the linked token (for example, `var(--danger)`).
+When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is replaced with the chosen color. The type of value that it becomes depends on how the color is chosen:
+
+* If you chose a color directly, then it is replaced with the corresponding hex code value.
+* If you chose a color from the current style book, then it replaced with a CSS variable for the linked token (for example, `var(--danger)`).
+* If the current theme does not have any token definitions to use (so a [color palette](#color-palette-configuration) is used instead), then it is replaced with a CSS Color (for example, `rgb(255, 0, 0)`).
 
 ## Color Palette Configuration
 

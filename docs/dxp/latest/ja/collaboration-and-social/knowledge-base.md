@@ -13,6 +13,7 @@ toc:
 - ./knowledge-base/knowledge-base-system-settings.md
 - ./knowledge-base/developer-guide.md
 ---
+
 # ナレッジベース
 
 ```{toctree}
@@ -44,6 +45,6 @@ knowledge-base/developer-guide.md
 * [ナレッジベースインポーターに関するFAQ](./knowledge-base/knowledge-base-importer-faq.md)
 * [ナレッジベースシステム設定](./knowledge-base/knowledge-base-system-settings.md)
 
-開発者ガイド
+## 開発者ガイド
 
-近日公開！
+* [ナレッジベースAPIの基本](./knowledge-base/developer-guide/knowledge-base-api-basics.md)

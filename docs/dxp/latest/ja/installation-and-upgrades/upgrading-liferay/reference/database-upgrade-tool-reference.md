@@ -1,6 +1,6 @@
 # データベースアップグレードツールのリファレンス
 
-この記事では、アプリケーションサーバー内のアップグレードツールの概要について説明します。
+ここでは、Liferayのアップグレードツールの概要について説明します。
 
 `［LIFERAY_HOME］/tools/portal-tools-db-upgrade-client`フォルダ（Windowsでは`db_upgrade.bat`）にある`db_upgrade.sh`スクリプトを使用して、アップグレードツールを起動します。
 
@@ -19,13 +19,13 @@ db_upgrade.sh --help
 
 次に、アップグレードツールのすべてのコマンドラインオプションを示します。
 
-**--help** または **-h** ：ツールのヘルプメッセージを出力します。
+**--help**または**-h**：ツールのヘルプメッセージを出力します。
 
-**--jvm-opts** or **-j** + [**arg**] ：アップグレードプロセスのJVMオプションを設定します。
+**--jvm-opts** or **-j** + **[arg]**：アップグレードプロセスのJVMオプションを設定します。
 
-**--log-file** or **-l** + [**arg**] ：ツールのログファイル名を指定します。デフォルト名は`upgrade.log`です。
+**--log-file** or **-l** + **[arg]**：ツールのログファイル名を指定します。デフォルト名は`upgrade.log`です。
 
-**--shell** または **-s** ：アップグレード作業終了後、[Gogoシェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)に自動的に接続します。
+**--shell** または **-s**：アップグレード作業終了後、[Gogoシェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)に自動的に接続します。
 
 ### ログ出力
 
@@ -69,7 +69,7 @@ Please enter your global library directory (../../tomcat-9.0.17/lib):
 
 Please enter your portal directory (../../tomcat-9.0.17/webapps/ROOT):
 
-［ db2 mariadb mysql oracle postgresql sqlserver sybase ］
+[ db2 mariadb mysql oracle postgresql sqlserver sybase ]
 Please enter your database (mysql):
 mariadb
 
@@ -88,7 +88,7 @@ Please enter your database host (localhost):
 
 * `app-server.properties`：サーバーの場所とライブラリを指定します。
 * `portal-upgrade-database.properties`：データベース接続を設定します。
-* `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず [現在のDXPバージョンに合わせて更新してください](./preparing-a-new-application-server.md#migrate-your-portal-properties) 。
+* `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず[現在のDXPバージョンに合わせて更新してください](./preparing-a-new-application-server.md#migrate-your-portal-properties)。
 
 #### app-server.propertiesの設定
 
@@ -124,14 +124,14 @@ server.detector.server.id=tomcat
 
 #### portal-upgrade-database.propertiesの構成
 
-次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する [JDBCポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) に対応することに注意してください。
+次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する[JDBCポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)に対応することに注意してください。
 
 * `jdbc.default.driverClassName`
 * `jdbc.default.url`
 * `jdbc.default.username`
 * `jdbc.default.password`
 
-これらの値のリファレンスについては、最新の [ポータルプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を参照してください。
+これらの値のリファレンスについては、最新の[ポータルプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)を参照してください。
 
 #### portal-upgrade-ext.propertiesの構成
 
@@ -148,7 +148,40 @@ server.detector.server.id=tomcat
     dl.store.impl=com.liferay.portal.store.s3.S3Store
     ```
 
-* `hibernate.jdbc.batch_size`：パフォーマンスを向上させるために使用されるJDBCバッチサイズ（デフォルトでは **250** に設定）。 **このプロパティを使用するとアップグレードのパフォーマンスが向上しますが、必須ではありません。**
+* `hibernate.jdbc.batch_size`：パフォーマンスを向上させるために使用されるJDBCバッチサイズ（デフォルトでは_250_に設定）。 _このプロパティを使用するとアップグレードのパフォーマンスが向上しますが、必須ではありません。_
+
+* `upgrade.log.context.enabled`: `true`に設定すると、識別子にタグ付けされたアップグレード関連のログ行が表示されます。
+
+* `upgrade.log.context.name`：`upgrade.log.context.enabled`を使用する場合、識別子の名前を設定します。 例えば、 `upgrade.log.context.name=foo`です。
+
+なお、`upgrade.log.context.enabled`は、立ち上げ時のアップグレードだけでなく、アップグレードツールでも動作します。 また、この機能を利用するには、[`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml)ファイルを`bundles/tomcat/webapps/ROOT/WEB-INF/META-INF`にコピーし、ファイル名を`portal-log4j-ext.xml`に変更する必要があります。 次に、アペンダーの定義を見つけます。
+
+```
+<Appender name="CONSOLE" type="Console">
+    <Layout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m%n" type="PatternLayout" />
+</Appender>
+```
+
+スレッドコンテキスト情報を出力するようにLog4jに指示する `%X`を含むように定義を変更します。
+
+```
+<Appender name="CONSOLE" type="Console">
+    <Layout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m %X%n" type="PatternLayout" />
+</Appender>
+```
+
+以下に、アップグレード関連行のタグを含むログ行の例を示します。
+
+```
+...
+2022-07-26 20:56:15.966 INFO  [main][PortalUpgradeProcess:174] Upgrading com.liferay.portal.upgrade.PortalUpgradeProcess {foo=foo}
+2022-07-26 20:56:15.969 INFO  [main][UpgradeProcess:98] Upgrading com.liferay.portal.upgrade.v7_4_x.UpgradeAddress {foo=foo}
+2022-07-26 20:56:18.765 INFO  [main][UpgradeProcess:113] Completed upgrade process com.liferay.portal.upgrade.v7_4_x.UpgradeAddress in 2797 ms {foo=foo}
+...
+2022-07-26 20:56:38.611 INFO  [main][BaseDB:716] Dropping stale indexes {foo=foo}
+2022-07-26 20:56:38.615 INFO  [main][BaseDB:786] drop index IX_60C8634C on Repository {foo=foo}
+...
+```
 
 #### アップグレード構成の例
 

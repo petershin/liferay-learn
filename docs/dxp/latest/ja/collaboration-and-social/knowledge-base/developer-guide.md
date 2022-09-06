@@ -1,16 +1,14 @@
 ---
 toc:
-- ./developer-guide/apis.md
+- ./developer-guide/knowledge-base-api-basics.md
 ---
-## デベロッパーガイド
+
+# 開発者ガイド
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 
-developer-guide/apis.md
+developer-guide/knowledge-base-api-basics.md
 ```
 
-API
-----
-
-近日公開！
+* [ナレッジベースAPIの基本](./developer-guide/knowledge-base-api-basics.md)

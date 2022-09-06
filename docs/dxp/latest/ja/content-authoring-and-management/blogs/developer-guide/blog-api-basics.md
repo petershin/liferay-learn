@@ -10,17 +10,17 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 
 次に、以下の手順に従います。
 
-1. [ブログAPIの基本](./liferay-r3g4.zip) をダウンロードし、解凍します。
+1. [ブログAPIの基本](./liferay-r3g4.zip)をダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/blogs/developer-guide/liferay-r3g4.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/developer-guide/liferay-r3g4.zip -O
    ```
 
    ```bash
    unzip liferay-r3g4.zip
    ```
 
-2. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
+2. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 3. cURLスクリプトを使用して、サイトに新しいブログ投稿を追加します。 コマンドラインで、 `curl` フォルダに移動します。 サイトIDをパラメーターとして使用して、`BlogPosting_POST_ToSite.sh`スクリプトを実行します。
 
@@ -57,7 +57,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
     "taxonomyCategoryBriefs" : [ ]
     ```
 
-1. ［**Administration Menu**］ &rarr; ［**Content & Data**］ &rarr; ［**ブログ**］ に移動して、ブログアプリケーションに移動します。 新しいブログ投稿が追加されたことを確認してください。
+1. *［Administration Menu］* &rarr; *［Content & Data］* &rarr; *［ブログ］* に移動して、ブログアプリケーションに移動します。 新しいブログ投稿が追加されたことを確認してください。
 
     ![新しいブログ投稿が追加されたことを確認してください。](./blog-api-basics/images/01.png)
 
@@ -92,7 +92,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 | `-u "test@liferay.com:learn"`                                               | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモンストレーションの目的で基本認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -124,7 +124,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 他の例のJavaクラスはこれと類似していますが、異なる`BlogPostingResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、 [BlogPostingResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/BlogPostingResource.java) を参照してください。
+サービスの詳細は、[BlogPostingResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/BlogPostingResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`BlogPosting` RESTサービスを呼び出す例です。
@@ -133,7 +133,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 
 次のcURLまたはJavaコマンドを実行すると、サイトのブログ投稿を一覧表示できます。 上記のように、`1234`をサイトのIDに置き換えてください。
 
-### BlogPostings **GET** FromSite.sh
+### BlogPostings_GET_FromSite.sh
 
 コマンド:
 
@@ -147,7 +147,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
    :language: bash
 ```
 
-### BlogPostings **GET** FromSite.java
+### BlogPostings_GET_FromSite.java
 
 コマンド：
 
@@ -173,7 +173,7 @@ java -classpath .:* -DsiteId=1234 BlogPostings_GET_FromSite
 `BlogPosting` のIDを取得するには `BlogPostings_GET_FromSite.[java|sh]` を使ってください。
 ```
 
-### BlogPosting **GET** ById.sh
+### BlogPosting_GET_ById.sh
 
 コマンド：
 
@@ -187,7 +187,7 @@ java -classpath .:* -DsiteId=1234 BlogPostings_GET_FromSite
    :language: bash
 ```
 
-### BlogPosting **GET** ById.java
+### BlogPosting_GET_ById.java
 
 コマンド：
 
@@ -209,7 +209,7 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_GET_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のブログ投稿を部分的に編集します。 注： `1234`をブログ投稿のIDに置き換えてください。
 
-### BlogPosting **PATCH** ById.sh
+### BlogPosting_PATCH_ById.sh
 
 コマンド：
 
@@ -223,7 +223,7 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_GET_ById
    :language: bash
 ```
 
-### BlogPosting **PATCH** ById.java
+### BlogPosting_PATCH_ById.java
 
 コマンド：
 
@@ -245,7 +245,7 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_PATCH_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のブログ投稿を完全に上書きします。 注： `1234`をブログ投稿のIDに置き換えてください。
 
-### BlogPosting **PUT** ById.sh
+### BlogPosting_PUT_ById.sh
 
 コマンド:
 
@@ -259,7 +259,7 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_PATCH_ById
    :language: bash
 ```
 
-### BlogPosting **PUT** ById.java
+### BlogPosting_PUT_ById.java
 
 コマンド：
 
@@ -279,7 +279,7 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_PUT_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のブログ投稿を削除します。 注： `1234`をブログ投稿のIDに置き換えてください。
 
-### BlogPosting **DELETE** ById.sh
+### BlogPosting_DELETE_ById.sh
 
 コマンド：
 
@@ -293,7 +293,7 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_PUT_ById
    :language: bash
 ```
 
-### BlogPosting **DELETE** ById.java
+### BlogPosting_DELETE_ById.java
 
 コマンド
 
@@ -313,8 +313,8 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_DELETE_ById
 
 ブログ画像のcURLコマンドとJavaクラスは、ブログ投稿と同じように機能します。
 
-| ファイル                                       | 説明                      |
-|:------------------------------------------ |:----------------------- |
+| ファイル                                         | 説明                      |
+|:-------------------------------------------- |:----------------------- |
 | `BlogPostingImage_DELETE_ById.[java\|sh]`   | ID別にブログ投稿画像を削除します。      |
 | `BlogPostingImage_GET_ById.[java\|sh]`      | ID別に特定のブログ投稿画像を取得します。   |
 | `BlogPostingImage_POST_ToSite.[java\|sh]`   | ブログ投稿画像をサイトに投稿します。      |

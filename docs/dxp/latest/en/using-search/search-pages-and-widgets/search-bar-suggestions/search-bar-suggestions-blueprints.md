@@ -26,6 +26,8 @@ There are a few additional configurations you can use.
 
 When you select the Blueprint Suggestions Contributor, new configuration fields appear in the Search Bar Widget Configuration.
 
+![The Blueprint contributor uses additional configurations.](./search-bar-suggestions-blueprints/images/01.png)
+
 **Blueprint:** This is the only required additional setting. Select the Blueprint to use.
 
 **Include Asset URL:** Enable this to return the link to the result with the response. If an asset appears on a page accessible to the search user, clicking a result brings the user to that display page. Otherwise the asset is shown in an Asset Publisher under the search page's context. If disabled, clicking on results in the Suggestions list does nothing.

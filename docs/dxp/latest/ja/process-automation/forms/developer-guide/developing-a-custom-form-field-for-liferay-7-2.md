@@ -1,65 +1,65 @@
-# Liferay 7.2 のカスタムフォームフィールドの開発
+# Liferay 7.2のカスタムフォーム項目の開発
 
-Reactベースのカスタムフォームフィールドは、Liferay 7.3およびLiferay 7.4用に開発することができます。 その方法は、 [カスタムフォームフィールドタイプの書き方](./writing-a-form-storage-adapter.md) を参照してください。 Liferay 7.2では、MetalJSとSoyクロージャテンプレートをベースにした、異なるフロントエンド技術を採用しました。 このチュートリアルでは、ReactベースのAcme C2P9 SliderフィールドをLiferay 7.2インストール上で動作するように適合させることを学ぶことができます。
+Reactベースのカスタムフォーム項目は、Liferay 7.3およびLiferay 7.4用に開発できます。 方法については、[カスタムフォーム項目タイプの書き込み](./writing-a-custom-form-field-type.md)を参照してください。 Liferay 7.2では、MetalJSとSoyクロージャテンプレートをベースにした、異なるフロントエンド技術を採用しました。 このチュートリアルでは、ReactベースのAcme C2P9 SliderフィールドをLiferay 7.2インストール上で動作するように適合させることについて学びます。
 
-## Acme C2P9 スライダーを Liferay 7.2 で動作するように調整する。
+## Acme C2P9 SliderをLiferay 7.2で動作するように調整する
 
-Liferay 7.2 では、カスタムフォームフィールドに別のフロントエンドフレームワークを使用していました。 Acme C2P9 SliderフィールドをLiferay 7.2上で動作させるために調整すること。
+Liferay 7.2 では、カスタムフォーム項目に別のフロントエンドフレームワークを使用していました。 Acme C2P9 SliderフィールドをLiferay 7.2上で動作するよう調整するには、以下の手順に従ってください。
 
-1. [Custom Forms Field Type プロジェクト](./writing-a-custom-form-field-type/resources/liferay-c2p9.zip) をダウンロードし、解凍してください。
+1. [カスタムフォーム項目タイププロジェクト](./writing-a-custom-form-field-type/resources/liferay-c2p9.zip)をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-c2p9.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O
     ```
 
     ```bash
     unzip liferay-c2p9.zip
     ```
-1. `liferay-c2p9.zip/gradle.properties` ファイルを開き、次の行を変更します。
+1. `liferay-c2p9.zip/gradle.properties`ファイルを開き、次の行を
 
    ```properties
    liferay.workspace.product=portal-7.4-ga8
    ```
 
-   宛先
+   下記に変更します。
 
    ```properties
    liferay.workspace.product=portal-7.2-ga2
    ```
 
-1. `liferay-c2p9.zip/settings.gradle` ファイルを開き、次の行を変更します。
+1. `liferay-c2p9.zip/settings.gradle`ファイルを開き、次の行を
 
    ```groovy
    classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "latest.release"
    ```
 
-   宛先
+   下記に変更します。
 
    ```groovy
    classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "3.4.17"
    ```
 
-1. `liferay-c2p9.zip/c2p9-impl/build.gradle` ファイルを開き、次の行を追加します。
+1. `liferay-c2p9.zip/c2p9-impl/build.gradle`ファイルを開き、次の行を追加します。
 
    ```groovy
     compileOnly group: "org.osgi", name: "osgi.cmpn"
     jsCompile group: "com.liferay", name: "com.liferay.dynamic.data.mapping.form.field.type"
     ```
 
-1. `liferay-c2p9.zip/c2p9-impl/package.json` ファイルを開いてください。 `devDependencies` の行を置き換えることから始めます。
+1. `liferay-c2p9.zip/c2p9-impl/package.json`ファイルを開きます。 次の`devDependencies`の行を
 
    ```json
     "@liferay/portal-7.4": "*"
    ```
 
-   を、この2行で表しています。
+   下記の2行に置き換えるところから始めます。
 
    ```json
     "@liferay/portal-7.2": "*",
     "metal-tools-soy": "4.3.2"
    ```
 
-   次に、既存の `scripts` の内容（2行）を、以下の3行に置き換えます。
+   次に、既存の`scripts`コンテンツ（2行）を下記の3行に置き換えます。
 
    ```json
    "build": "npm run build-soy && npm run build-js && liferay-npm-bundler",
@@ -67,7 +67,7 @@ Liferay 7.2 では、カスタムフォームフィールドに別のフロン�
    "build-soy": "metalsoy --externalMsgFormat \"Liferay.Language.get('\\$2')\" --soyDeps \"./node_modules/clay-*/src/**/*.soy\" \"./node_modules/com.liferay.dynamic.data.mapping.form.field.type/META-INF/resources/+(FieldBase|components)/**/*.soy\""
    ```
 
-1. `liferay-c2p9.zip/c2p9-impl/bnd.bnd` ファイルを開き、以下の行を追加してください。
+1. `liferay-c2p9.zip/c2p9-impl/bnd.bnd`ファイルを開き、次の行を追加します。
 
    ```properties
    Provide-Capability:\
@@ -75,7 +75,7 @@ Liferay 7.2 では、カスタムフォームフィールドに別のフロン�
         type:String="LiferayFormField"
    ```
 
-1. `liferay-c2p9.zip/c2p9-impl/.babelrc.js` の内容を次のように置き換えます。
+1. `liferay-c2p9.zip/c2p9-impl/.babelrc.js`の内容を次のように置き換えます。
 
    ```js
    module.exports = {
@@ -83,10 +83,10 @@ Liferay 7.2 では、カスタムフォームフィールドに別のフロン�
    };
    ```
 
-   **チェックポイント** プロジェクトは7.2のフロントエンドフレームワークを想定して再設定されているので、フォームフィールドプロジェクトのフロントエンドを置き換える必要があります。
+   **チェックポイント：**プロジェクトは7.2のフロントエンドフレームワークを想定して再設定されているので、フォーム項目プロジェクトのフロントエンドを置き換える必要があります。
 
-1. 既存の `Slider.es.js` ファイルを削除し、それに代わる以下の3つのファイルを作成します。
-   - `Slider.es.js`: MetalJS + Soyフロントエンドを使用した新しいスライダーコンポーネントです。
+1. 既存の`Slider.es.js`ファイルを削除し、それに代わる以下の3つのファイルを作成します。
+   - `Slider.es.js`：MetalJS + Soyフロントエンドを使用した新しいスライダーコンポーネント。
 
       ```js
       import 'dynamic-data-mapping-form-field-type/FieldBase/FieldBase.es';
@@ -139,7 +139,7 @@ Liferay 7.2 では、カスタムフォームフィールドに別のフロン�
 
       export default Slider;
       ```
-   - `Slider.soy`: フィールドのSoyテンプレートです。
+   - `Slider.soy`：フィールドのSoyテンプレート。
       ```shell
       {namespace Slider}
 
@@ -203,7 +203,7 @@ Liferay 7.2 では、カスタムフォームフィールドに別のフロン�
       {/template}
       ```
 
-   - `SliderRegister.soy`: スライダーのソイテンプレートの登録コードです。
+   - `SliderRegister.soy`：スライダーのSoyテンプレートの登録コード。
 
       ```shell
       {namespace SliderRegister}
@@ -213,20 +213,20 @@ Liferay 7.2 では、カスタムフォームフィールドに別のフロン�
       {/deltemplate}
       ```
 
-1. `DDMFormFieldType` に対して細かい調整が必要です: フィールドの識別子 ( `の名前`) は、Soy テンプレートで String リテラルとして参照されるため、ハイフン (`-`) を持つことができません。 `C2P9DDMFormFieldType` クラスを開き、以下のハイフンを削除してください。
+1. `DDMFormFieldType`に対して細かい調整が必要です：フィールドの識別子（`名前`）は、Soy テンプレートで Stringリテラルとして参照されるため、ハイフン（`-`）を持つことができません。 `C2P9DDMFormFieldType`クラスを開き、以下のハイフンを削除してください。
 
-   - the component property `ddm.form.field.type.name`
-   - the String returned by `getName`
+   - コンポーネントプロパティ `ddm.form.field.type.name`
+   - `getName`によって返される文字列
 
-   両方の場所の値は、現在、 `c2p9slider`.
+   両方の場所の値は`c2p9slider`になりました。
 
-1. プロジェクトのフロントエンドを置き換えたら、それを稼働中の Liferay 7.2 にデプロイします。
+1. プロジェクトのフロントエンドを置き換えたら、それを稼働中のLiferay 7.2にデプロイします。
 
-   - Liferay 7.2 の Docker コンテナを起動するには、次のコマンドを実行します。
+   - Liferay 7.2のDockerコンテナを起動するには、次のコマンドを実行します。
       ```shell
       docker run -it -m 8g -p 8080:8080 liferay/portal:7.2.1-ga2
       ```
-   - 再構成されたフォームフィールドプロジェクトを配備するには、 `liferay-c2p9.zip` フォルダーに移動し、以下を実行します。
+   - 再構成されたフォーム項目プロジェクトをデプロイするには、 `liferay-c2p9.zip`フォルダーに移動し、以下を実行します。
       ```shell
       ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
       ```
@@ -237,5 +237,5 @@ Liferay 7.2 では、カスタムフォームフィールドに別のフロン�
    STARTED com.acme.c2p9.impl_1.0.0 [1009]
    ```
 
-フォーム項目はデプロイされ、 Liferay 7.2上で[使用できるように準備されています](writing-a-custom-forms-field-type.md#use-the-deployed-slider-field)。
+フォーム項目はデプロイされ、Liferay 7.2上で[使用できるように準備されています](./writing-a-custom-forms-field-type.md#use-the-deployed-slider-field)。
 

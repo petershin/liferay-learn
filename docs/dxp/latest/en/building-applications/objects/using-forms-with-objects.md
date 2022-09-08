@@ -40,8 +40,10 @@ Follow these steps to map a form field to an Object field.
 
    ```{important}
    Object fields can only be mapped to [compatible field types](#field-compatibility-reference).
+   ```
 
-   When mapped to a required Object field, the form field type is automatically set. 
+   ```{warning}
+   When mapped to a required Object field, the form field is automatically marked required. If you're [using a form rule](../../process-automation/forms/form-rules/form-rules-overview.md) to [conditionally hide a required field](../../process-automation/forms/form-rules/example-using-hidden-fields-with-form-rules.md), you must ensure it contains appropriate data or form submission will fail. Using a [predefined value](../../process-automation/forms/creating-and-managing-forms/providing-help-text-and-predefined-values.md) with an [autofill rule](../../process-automation/forms/form-rules/using-the-autofill-rule.md) can help ensure that a required hidden field is properly populated.
    ```
 
 1. Click on the *Advanced* tab.

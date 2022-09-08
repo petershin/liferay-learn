@@ -22,6 +22,8 @@ dependencies {
 	compile group: "com.liferay.portal", name: "com.liferay.portal.kernel", version: "latest.release"
 	compile group: "com.vladsch.flexmark", name: "flexmark-all", version: "0.64.0"
 	compile group: "commons-io", name: "commons-io", version: "2.11.0"
+	compile group: "org.apache.httpcomponents", name: "httpclient", version: "4.5.13"
+	compile group: "org.json", name: "json", version: "20220320"
 }
 
 mainClassName = "com.liferay.learn.dxp.importer.Main"

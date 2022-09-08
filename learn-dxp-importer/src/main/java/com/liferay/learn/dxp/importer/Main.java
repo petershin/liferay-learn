@@ -26,6 +26,7 @@ import com.liferay.headless.delivery.client.resource.v1_0.DocumentResource;
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentFolderResource;
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResource;
 import com.liferay.petra.string.StringPool;
+import com.liferay.portal.kernel.util.GetterUtil;
 import com.liferay.portal.kernel.util.HashMapBuilder;
 
 import com.vladsch.flexmark.ast.Image;
@@ -54,8 +55,12 @@ import com.vladsch.flexmark.util.sequence.CharSubSequence;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStream;
 import java.io.StringReader;
 
+import java.net.URL;
+
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
 import java.util.ArrayList;
@@ -64,12 +69,24 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Properties;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.regex.Matcher;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.http.HttpStatus;
+import org.apache.http.StatusLine;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+
+import org.json.JSONObject;
 
 /**
  * @author Brian Wing Shun Chan
@@ -78,22 +95,59 @@ import org.apache.commons.io.FilenameUtils;
 public class Main {
 
 	public static void main(String[] arguments) throws Exception {
-		Main main = new Main("test@liferay.com", "test");
+		Properties properties = new Properties();
+
+		try (InputStream inputStream = Main.class.getResourceAsStream(
+				"dependencies/application.properties")) {
+
+			properties.load(inputStream);
+		}
+
+		Main main = new Main(
+			properties.getProperty("liferay.client.id"),
+			properties.getProperty("liferay.client.secret"),
+			properties.getProperty("liferay.content.structure.id"),
+			properties.getProperty("liferay.group.id"),
+			properties.getProperty("liferay.url"));
 
 		main.uploadToLiferay();
 	}
 
-	public Main(String login, String password) {
+	public Main(
+			String liferayClientId, String liferayClientSecret,
+			String liferayContentStructureId, String liferayGroupId,
+			String liferayURL)
+		throws Exception {
+
+		_liferayClientId = liferayClientId;
+		_liferayClientSecret = liferayClientSecret;
+		_liferayContentStructureId = GetterUtil.getLong(
+			liferayContentStructureId);
+		_liferayGroupId = GetterUtil.getLong(liferayGroupId);
+		_liferayURL = liferayURL;
+
+		_oauthExpirationMillis = 0L;
+
 		_addFileNames("../docs");
 
 		_initFlexmark();
-		_initResourceBuilders(login, password);
+		_initResourceBuilders(_getOAuthAuthorization());
 	}
 
 	public void uploadToLiferay() throws Exception {
+		long start = System.currentTimeMillis();
+
 		for (String fileName : _fileNames) {
 			if (!fileName.contains("/en/") || !fileName.endsWith(".md")) {
 				continue;
+			}
+
+			long timeElapsed = System.currentTimeMillis() - start;
+
+			if (timeElapsed > (_oauthExpirationMillis - 10000)) {
+				_initResourceBuilders(_getOAuthAuthorization());
+
+				start = System.currentTimeMillis();
 			}
 
 			System.out.println(fileName);
@@ -168,14 +222,14 @@ public class Main {
 		if (parentDocumentFolderId == 0) {
 			Page<DocumentFolder> page =
 				_documentFolderResource.getSiteDocumentFoldersPage(
-					_GROUP_ID, null, null, null, "name eq '" + dirName + "'",
-					null, null);
+					_liferayGroupId, null, null, null,
+					"name eq '" + dirName + "'", null, null);
 
 			documentFolder = page.fetchFirstItem();
 
 			if (documentFolder == null) {
 				documentFolder = _documentFolderResource.postSiteDocumentFolder(
-					_GROUP_ID,
+					_liferayGroupId,
 					new DocumentFolder() {
 						{
 							description = "";
@@ -212,6 +266,49 @@ public class Main {
 		return documentFolderId;
 	}
 
+	private String _getOAuthAuthorization() throws Exception {
+		System.out.println("Obtaining OAuth token");
+
+		HttpPost httpPost = new HttpPost(_liferayURL + "/o/oauth2/token");
+
+		httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
+
+		httpPost.setEntity(
+			new UrlEncodedFormEntity(
+				Arrays.asList(
+					new BasicNameValuePair("client_id", _liferayClientId),
+					new BasicNameValuePair(
+						"client_secret", _liferayClientSecret),
+					new BasicNameValuePair(
+						"grant_type", "client_credentials"))));
+
+		HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
+
+		try (CloseableHttpClient closeableHttpClient =
+				httpClientBuilder.build()) {
+
+			CloseableHttpResponse closeableHttpResponse =
+				closeableHttpClient.execute(httpPost);
+
+			StatusLine statusLine = closeableHttpResponse.getStatusLine();
+
+			if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
+				JSONObject responseJSONObject = new JSONObject(
+					EntityUtils.toString(
+						closeableHttpResponse.getEntity(),
+						Charset.defaultCharset()));
+
+				_oauthExpirationMillis =
+					responseJSONObject.getLong("expires_in") * 1000;
+
+				return responseJSONObject.getString("token_type") + " " +
+					responseJSONObject.getString("access_token");
+			}
+
+			throw new Exception("Unable to obtain OAuth token");
+		}
+	}
+
 	private Long _getStructuredContentFolderId(String fileName)
 		throws Exception {
 
@@ -243,7 +340,7 @@ public class Main {
 			Page<StructuredContentFolder> page =
 				_structuredContentFolderResource.
 					getSiteStructuredContentFoldersPage(
-						_GROUP_ID, null, null, null,
+						_liferayGroupId, null, null, null,
 						"name eq '" + dirName + "'", null, null);
 
 			structuredContentFolder = page.fetchFirstItem();
@@ -252,7 +349,7 @@ public class Main {
 				structuredContentFolder =
 					_structuredContentFolderResource.
 						postSiteStructuredContentFolder(
-							_GROUP_ID,
+							_liferayGroupId,
 							new StructuredContentFolder() {
 								{
 									description = "";
@@ -337,36 +434,49 @@ public class Main {
 		).build();
 	}
 
-	private void _initResourceBuilders(String login, String password) {
+	private void _initResourceBuilders(String authorization) throws Exception {
 		DocumentFolderResource.Builder documentFolderResourceBuilder =
 			DocumentFolderResource.builder();
 
-		_documentFolderResource = documentFolderResourceBuilder.authentication(
-			login, password
+		URL url = new URL(_liferayURL);
+
+		String host = url.getHost();
+		int port = url.getPort();
+		String protocol = url.getProtocol();
+
+		_documentFolderResource = documentFolderResourceBuilder.header(
+			"Authorization", authorization
+		).endpoint(
+			host, port, protocol
 		).build();
 
 		DocumentResource.Builder documentResourceBuilder =
 			DocumentResource.builder();
 
-		_documentResource = documentResourceBuilder.authentication(
-			login, password
+		_documentResource = documentResourceBuilder.header(
+			"Authorization", authorization
+		).endpoint(
+			host, port, protocol
 		).build();
 
 		StructuredContentResource.Builder structuredContentResourceBuilder =
 			StructuredContentResource.builder();
 
-		_structuredContentResource =
-			structuredContentResourceBuilder.authentication(
-				login, password
-			).build();
+		_structuredContentResource = structuredContentResourceBuilder.header(
+			"Authorization", authorization
+		).endpoint(
+			host, port, protocol
+		).build();
 
 		StructuredContentFolderResource.Builder
 			structuredContentFolderResourceBuilder =
 				StructuredContentFolderResource.builder();
 
 		_structuredContentFolderResource =
-			structuredContentFolderResourceBuilder.authentication(
-				login, password
+			structuredContentFolderResourceBuilder.header(
+				"Authorization", authorization
+			).endpoint(
+				host, port, protocol
 			).build();
 	}
 
@@ -538,7 +648,7 @@ public class Main {
 				});
 		}
 
-		structuredContent.setContentStructureId(_CONTENT_STRUCTURE_ID);
+		structuredContent.setContentStructureId(_liferayContentStructureId);
 		structuredContent.setFriendlyUrlPath(_toFriendlyURLPath(fileName));
 		structuredContent.setTitle(englishTitle);
 
@@ -595,15 +705,16 @@ public class Main {
 		_nodeVisitor.visitChildren(image);
 	}
 
-	private static final long _CONTENT_STRUCTURE_ID = 40384;
-
-	private static final long _GROUP_ID = 20122;
-
 	private Map<String, Long> _documentFolderIds = new HashMap<>();
 	private DocumentFolderResource _documentFolderResource;
 	private DocumentResource _documentResource;
 	private Set<String> _fileNames = new TreeSet<>();
 	private Map<String, String> _imageURLs = new HashMap<>();
+	private final String _liferayClientId;
+	private final String _liferayClientSecret;
+	private final long _liferayContentStructureId;
+	private final long _liferayGroupId;
+	private final String _liferayURL;
 	private File _markdownFile;
 
 	private NodeVisitor _nodeVisitor = new NodeVisitor(
@@ -623,6 +734,7 @@ public class Main {
 
 			}));
 
+	private long _oauthExpirationMillis;
 	private Parser _parser;
 	private HtmlRenderer _renderer;
 	private Map<String, Long> _structuredContentFolderIds = new HashMap<>();

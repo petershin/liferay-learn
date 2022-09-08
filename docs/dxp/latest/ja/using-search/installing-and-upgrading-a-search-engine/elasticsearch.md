@@ -35,7 +35,7 @@ Liferayのバージョンと互換性のあるElasticsearchのバージョンと
 ```
 
 ```{important}
-Liferay 7.2および7.3では、Elasticsearch 7をサポートし、認証および暗号化されたElasticsearch接続を保護します。 Elasticsearch 6 コネクタ (Liferay 7.2 で利用可能) を保護するには、[Liferay Enterprise Search](../liferay-enterprise-search.md) でのみ利用できる追加モジュールが必要です。
+Liferay 7.2および7.3では、Elasticsearch 7をサポートし、認証および暗号化されたElasticsearch接続を保護します。 Elasticsearch 6 コネクタ (Liferay 7.2 で利用可能) を保護するには、 [Liferay Enterprise Search](../liferay-enterprise-search.md) でのみ利用できる追加モジュールが必要です。
 ```
 
 ## インストール

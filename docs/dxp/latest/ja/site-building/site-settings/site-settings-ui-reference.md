@@ -3,7 +3,7 @@
 Liferay DXP 7.4以降、サイト設定アプリケーションのレイアウトは、インスタンス設定やシステム設定などの他の設定エリアと一致しています。
 
 ```{note}
-Liferay DXP 7.4では、サイト設定アプリケーションが大幅に変更されています。 以前のバージョンについては、下記の[Liferay DXP7.2および7.3におけるサイト設定 UI リファレンス](#site-setting-ui-reference-in-liferay-dxp-7-2-and-7-3)をご覧ください。
+Liferay DXP 7.4では、サイト設定アプリケーションが大幅に変更されています。 以前のバージョンについては、下記の [Liferay DXP7.2および7.3におけるサイト設定 UI リファレンス](#site-setting-ui-reference-in-liferay-dxp-7-2-and-7-3) をご覧ください。
 ```
 
 ## サイト設定アプリケーションへのアクセス

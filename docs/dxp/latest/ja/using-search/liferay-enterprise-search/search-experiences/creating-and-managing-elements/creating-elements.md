@@ -136,7 +136,7 @@ UI設定オプションは、Element JSON内の `uiConfiguration` プロパテ�
 
 
 ```{warning}
-[要素スキーマ](#understanding-the-element-schema)は変更されることがあります。 Liferayのバージョン間でスキーマが変更された場合、古いエレメントのJSONのインポートに失敗することがあります。
+[要素スキーマ](#understanding-the-element-schema) は変更されることがあります。 Liferayのバージョン間でスキーマが変更された場合、古いエレメントのJSONのインポートに失敗することがあります。
 ```
 
 

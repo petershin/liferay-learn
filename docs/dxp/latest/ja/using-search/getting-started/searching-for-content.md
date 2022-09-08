@@ -1,6 +1,6 @@
 # コンテンツの検索
 
-すべてのインデックス付きコンテンツ（別名 Liferay DXPの_アセット_ ）を検索結果として返すことができます。 [カスタムコンテンツにもインデックスを付けることができます](https://help.liferay.com/hc/en-us/articles/360032260612-Model-Entity-Indexing-Framework)そのため、ご使用のシステムには、デフォルトで含まれているもの以外の追加のアセットタイプがある場合があります。 次の画像は、Liferay DXPでインデックスが作成されるさまざまなタイプのコンテンツの例を示しています。
+すべてのインデックス付きコンテンツ（別名 Liferay DXPの_アセット_ ）を検索結果として返すことができます。 [カスタムコンテンツにもインデックスを付けることができます](https://help.liferay.com/hc/ja/articles/360032260612-Model-Entity-Indexing-Framework) そのため、ご使用のシステムには、デフォルトで含まれているもの以外の追加のアセットタイプがある場合があります。 次の画像は、Liferay DXPでインデックスが作成されるさまざまなタイプのコンテンツの例を示しています。
 
 ![これらのアプリがデプロイされている場合、そのコンテンツはデフォルトで検索可能です。](./searching-for-content/images/08.png)
 
@@ -12,7 +12,7 @@
 
 ### 検索用語を入力する
 
-Liferayの検索インフラストラクチャは、サポートされている検索エンジン([Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html)および[Solr](http://lucene.apache.org/solr/features.html))によって実装されている全文検索に対応しています。
+Liferayの検索インフラストラクチャは、サポートされている検索エンジン( [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) および [Solr](http://lucene.apache.org/solr/features.html) )によって実装されている全文検索に対応しています。
 
 全文検索では、検索クエリに入力されたすべての単語（例えば、 *stock market*）と、インデックスされた各文書に含まれるすべての単語を比較します。 Elasticsearchのような検索エンジンは、関連性スコアを計算して、最適な結果が最初に返されるようにしています（最近の強気の市場についてのBlog Entryなど）。 *stock* や *market* のような単語を含むものが返されます。
 
@@ -92,11 +92,11 @@ http://localhost:8080/web/guest/search?q=data&target=this-site
 
 #### 検索提案の設定
 
-[Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions.md) が利用可能で有効な場合、Search Bar ウィジェットの設定に追加の設定が表示されます。 これらの設定オプションについては、「 [検索バーのサジェスチョンを設定する」](../search-pages-and-widgets/search-bar-suggestions/configuring-search-bar-suggestions.md) を参照してください。
+[検索バーのサジェスチョン](../search-pages-and-widgets/search-bar-suggestions.md) が利用可能で有効な場合、Search Bar ウィジェットの設定に追加の設定が表示されます。 これらの設定オプションについては、「 [検索バーのサジェスチョンを設定する」](../search-pages-and-widgets/search-bar-suggestions/configuring-search-bar-suggestions.md) を参照してください。
 
 #### 詳細設定
 
-**詳細検索シンタックスを利用する：** Elasticsearchを使用している場合、これを有効にすると、ユーザーは [検索文字列構文](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) を検索バーに入力できます。 Solrを使用している場合は、 [適切な構文](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html)に関するドキュメントを参照してください。
+**詳細検索シンタックスを利用する：** Elasticsearchを使用している場合、これを有効にすると、ユーザーは [検索文字列構文](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) を検索バーに入力できます。 Solrを使用している場合は、 [適切な構文](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html) に関するドキュメントを参照してください。
 
 **ステージサイトからの結果を表示：** ステージング環境 [からのコンテンツは](../../site-building/publishing-tools/staging.md) この設定に関わらず、本番環境サイトでは [検索できない](../search-pages-and-widgets/search-results/search-results-behavior.md#search-and-staging) ようになりました。 この設定は、ローカルステージングを有効にしたサイトで「すべて」のスコープが構成されている場合に、他のローカルステージングサイトからのコンテンツの検索を可能にします。
 

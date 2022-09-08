@@ -11,7 +11,7 @@ Liferay の REST API を使用して、地域を作成および管理します�
 
 次に、以下の手順に従います。
 
-1. [Regions API Basics](./liferay-r2p3.zip)をダウンロードし、解凍してください。
+1. [Regions API Basics](./liferay-r2p3.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-r2p3.zip -O

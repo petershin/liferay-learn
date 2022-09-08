@@ -16,7 +16,7 @@
 |                              | <a href="#time" id="time">**TIME**</a>                                                                                                                                          |                                         |
 | 現在の日付                        | 日付現在の日付を返す                                                                                                                                                         | `${time.current_date}`                  |
 | 現在の月の日                       | 番号月日を返す                                                                                                                                                            | `${time.current_day_of_month}`          |
-| 現在の週の日                       | 番号です。曜日を返す (_1 = 月曜日_)                                                                                                                                             | `${time.current_day_of_week}`           |
+| 現在の週の日                       | 番号です。曜日を返す (**1 = 月曜日**)                                                                                                                                             | `${time.current_day_of_week}`           |
 | 現在の年の日                       | 番号年月日を返す                                                                                                                                                           | `${time.current_day_of_year}`           |
 | 現在の時間                        | 番号現在の時刻を返す                                                                                                                                                         | `${time.current_hour}`                  |
 | 現在の年                         | 番号現在の年号を返す                                                                                                                                                         | `${time.current_year}`                  |
@@ -43,7 +43,7 @@
 | 姓                            | テキストユーザーの姓を返す                                                                                                                                                      | `${user.last_name}`                     |
 | 標準ロール ID                     | 番号ユーザーのレギュラーロールのロール ID を返します。                                                                                                                                      | `${user.regular_role_ids}`              |
 | ユーザーグループID                   | 番号当該ユーザーが所属するユーザーグループの ID を返します。                                                                                                                                   | `${user.user_group_ids}`                |
-|                              | <a href="#conditional-elements" id="conditional-elements">**conditional elements***</a>                                                                                                                                          |                                         |
+|                              | <a href="#conditional-elements" id="conditional-elements">**CONDITIONAL ELEMENTS\***</a>                                                                                                                                          |                                         |
 | IPスタックシティ                    | テキスト検索しているIPアドレスの発信元となる都市名を返します。                                                                                                                                   | `${ipstack.city}`                       |
 | IPスタック大陸コード                  | テキスト検索対象の IP アドレスの発信元となる大陸コード (例: NA (North America)) を返します。                                                                                                       | `${ipstack.continent_code}`             |
 | IPスタック大陸名                    | テキスト大陸名を返す                                                                                                                                                         | `${ipstack.continent_name}`             |
@@ -57,15 +57,15 @@
 | 天気図を開く 気温                    | 番号温度を返す                                                                                                                                                            | `${openweathermap.temp}`                |
 | 天気図を開く 天気予報の説明               | テキスト天気の説明を返す（例：「晴れ」）。                                                                                                                                              | `${openweathermap.weather_description}` |
 | 天気図を開く 天気予報のID               | 番号を指定します。天気予報の説明に対応する [ID を返す](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2)                                                            | `${openweathermap.weather_id}`          |
-| 天気図を開く メインラベル                | テキスト天候の [一次識別子を返す (例: Rain; これは OpenWeatherMap の API レスポンスの Main フィールドです](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2), 天気 ID に従っています) | `${openweathermap.weather_main}`        |
+| 天気図を開く メインラベル                | テキスト天候の [一次識別子を返す (例: Rain; これは OpenWeatherMap の API レスポンスの Main フィールドです](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2) , 天気 ID に従っています) | `${openweathermap.weather_main}`        |
 | オープンウェザーマップ 風速               | 番号風速をkm/hで返します。                                                                                                                                                    | `${openweathermap.wind_speed}`          |
-| User Custom Fields **\**** | ユーザーカスタムフィールドの値を返す                                                                                                                                                 | `user.custom.field.[name]`              |
+| User Custom Fields **\*\*** | ユーザーカスタムフィールドの値を返す                                                                                                                                                 | `user.custom.field.[name]`              |
 
-**\*** [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/activating-liferay-commerce-enterprise.html) を起動し、Commerce 固有の変数にアクセスします。
+**\*** [Liferay Commerce](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/activating-liferay-commerce-enterprise.html) を起動し、Commerce 固有の変数にアクセスします。
 
-**\* Ъ** ipstack と OpenWeatherMap の変数にアクセスするには、まず各サービスを有効にする必要があります。 System or Instance Settings &rarr; Platform &rarr; Search Experiences にアクセスします。 有効]チェックボックスをクリックし、設定するサービスの設定を保存します。 OpenWeatherMap サービスは、ipstack サービスが有効になっていることに依存することに注意してください。 ipstack サービスを使用した例については、 [Personalizing the Search Experience](../personalizing-the-search-experience.md) を参照してください。
+**\*** ipstack と OpenWeatherMap の変数にアクセスするには、まず各サービスを有効にする必要があります。 System or Instance Settings &rarr; Platform &rarr; Search Experiences にアクセスします。 有効]チェックボックスをクリックし、設定するサービスの設定を保存します。 OpenWeatherMap サービスは、ipstack サービスが有効になっていることに依存することに注意してください。 ipstack サービスを使用した例については、 [Search Experiencesのパーソナライズ](../personalizing-the-search-experience.md) を参照してください。
 
-**\**** これらのすぐに使える変数に加えて、 [User エンティティの Custom Fields](../../../../system-administration/configuring-liferay/adding-custom-fields.md) も Element の変数として参照することができます。 例えば、 _Employee_ という名前のユーザーカスタムフィールドは、 `user.custom.field.employee`という名前の要素で参照されています。
+**\*\*** これらのすぐに使える変数に加えて、 [User エンティティの Custom Fields](../../../../system-administration/configuring-liferay/adding-custom-fields.md) も Element の変数として参照することができます。 例えば、** Employee** という名前のユーザーカスタムフィールドは、 `user.custom.field.employee`という名前の要素で参照されています。
 
 ## 追加情報
 

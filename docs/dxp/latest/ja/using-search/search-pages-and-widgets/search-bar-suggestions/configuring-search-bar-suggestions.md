@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.4 U36+とGA36+`
 
-Search Bar Suggestions は、Liferay の Search Bar ウィジェットに _search as you type_ functionality を追加します。
+Search Bar Suggestions は、Liferay の Search Bar ウィジェットに **search as you type** functionality を追加します。
 
 ![ドロップダウン・リストから結果を選択するか、通常通り検索を実行します。](./configuring-search-bar-suggestions/images/01.gif)
 
@@ -10,7 +10,7 @@ Search Bar Suggestions は、Liferay の Search Bar ウィジェットに _searc
 
 ## 設定オプション
 
-[Instance Settings](#search-bar-suggestions-configuration-scope)で Search Bar Suggestions が有効になっている場合、Search Suggestions をウィジェット [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md)で設定することができます。
+[Instance Settings](#search-bar-suggestions-configuration-scope) で Search Bar Suggestions が有効になっている場合、Search Suggestions をウィジェット [scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md)で設定することができます。
 
 検索バーのサジェスチョンを設定する主な方法は、検索バーウィジェットの設定です。
 
@@ -22,11 +22,11 @@ Search Bar Suggestions は、Liferay の Search Bar ウィジェットに _searc
 
 **サジェスチョンコントリビューターの設定。** 検索エンジンに送信されるクエリを制御するコントリビューターを設定します。 この設定は、3つの値で構成されています。
 
-1. **Suggestions Contributor**: デフォルトの投稿者、そしてLiferay CEですぐに利用できる唯一の投稿者は、 `Basic`. Liferay DXP では、代わりに1つまたは複数のブループリントのコントリビュータを使用することを選択することができます。 詳しくは、 [Search Bar Suggestions Blueprint](./search-bar-suggestions-blueprints.md) をご覧ください。
+1. **Suggestions Contributor** : デフォルトの投稿者、そしてLiferay CEですぐに利用できる唯一の投稿者は、 `Basic`. Liferay DXP では、代わりに1つまたは複数のブループリントのコントリビュータを使用することを選択することができます。 詳しくは、 [Search Bar Suggestions Blueprint](./search-bar-suggestions-blueprints.md) をご覧ください。
 
-1. **表示グループ名**: デフォルトは `提案`. この値は、英語のUIにおける見出しとしてSuggestionsに解決される言語キーである。 言語キーを変更したり、独自の言語を追加することができます。 例えば、 `is-this-what-you're-looking-for`とした後、 [translation](../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation)を追加します。 複数のBlueprintコントリビューターを使用している場合、それぞれのDisplay Group Nameの値が一意であることを確認してください。
+1. **表示グループ名** : デフォルトは `提案`. この値は、英語のUIにおける見出しとしてSuggestionsに解決される言語キーである。 言語キーを変更したり、独自の言語を追加することができます。 例えば、 `is-this-what-you're-looking-for`とした後、 [translation](../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation) を追加します。 複数のBlueprintコントリビューターを使用している場合、それぞれのDisplay Group Nameの値が一意であることを確認してください。
 
-1. **Size**: Search Barのドロップダウンリストに表示する結果の最大件数を設定します。 デフォルトは `5`です。 表示スペースが限られているため、サイズを大きく設定するメリットはない。
+1. **Size** : Search Barのドロップダウンリストに表示する結果の最大件数を設定します。 デフォルトは `5`です。 表示スペースが限られているため、サイズを大きく設定するメリットはない。
 
 ```{tip}
 検索ブループリント ユーザーは、検索バーのサジェストクエリを制御するためにブループリントを使用することを選択できます。 コントリビューターとして_Blueprint_を選択した場合、検索バーウィジェットの設定に追加の設定オプションが表示されます。 詳しくは、[検索バー提案のブループリント](./search-bar-suggestions-blueprints.md)をご覧ください。
@@ -48,7 +48,7 @@ Search Bar Suggestions は、Liferay の Search Bar ウィジェットに _searc
 
 1. グローバルメニュー &rarr; コントロールパネル &rarr; サービスアクセスポリシー（セキュリティセクション内）を開いてください。
 
-1. _SEARCH_SUGGESTIONS_ のエントリーをクリックします。
+1. **SEARCH** SUGGESTIONS_ のエントリーをクリックします。
 
 ポリシーを無効にすると、ウィジェット構成でサジェストが有効になっていても、ゲストにはサジェストが表示されません。
 

@@ -3,9 +3,7 @@
 {bdg-primary}`Subscription`
 {bdg-secondary}`7.4 U36+とGA36+`
 
-</a> 検索バーのサジェスチョンでは、デフォルトで通常の検索バーのクエリ
-
-を使用します。 [Liferay Enterprise Search のユーザー](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) は、 [Search Blueprints](../../liferay-enterprise-search/search-experiences/understanding-search-blueprints.md)を使ってクエリに影響を与えたり上書きしたりすることができます。</p> 
+検索バーのサジェスチョンでは、デフォルトで通常の[検索バーのクエリ](../search-insights.md)を使用します。 [Liferay Enterprise Searchのユーザー](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) は、 [検索ブループリント](../../liferay-enterprise-search/search-experiences/understanding-search-blueprints.md)を使ってクエリに影響を与えたり上書きしたりすることができます。
 
 まず、 [Blueprint](../../liferay-enterprise-search/search-experiences/creating-and-managing-search-blueprints.md)を構築します。 ブループリントができたら
 
@@ -13,17 +11,16 @@
 
 1. 検索バーウィジェットの設定で、検索バーサジェスチョンを設定します。
    
-      - オプション(![Options](../../../images/icon-widget-options.png))メニューをクリックし、 _コンフィグレーション_を選択します。
-1. Suggestions Contributor を _Blueprint_に変更します。
+      - オプション(![Options](../../../images/icon-widget-options.png))メニューをクリックし、 **コンフィグレーション** を選択します。
+1. Suggestions Contributor を **Blueprint** に変更します。
 
-1. _Select_をクリックして、Blueprint を選択します。
+1. **Select** をクリックして、Blueprint を選択します。
 
-1. _［Save］_ をクリックします。
+1. ［**Save**］ をクリックします。
 
 これでSearch Bar SuggestionsはBlueprintが提供するクエリ句と設定を使って、Elasticsearchにカスタマイズされたリクエストを送ることができるようになりました。
 
 さらに使える設定もいくつかあります。
-
 
 
 ## 検索バーのサジェスチョンがブループリントを使用するように設定する

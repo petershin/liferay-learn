@@ -65,7 +65,7 @@ Liferay 7.3+コネクタのシンプル設定では、本番環境モード（`p
 
 
 ```{tip}
-コネクタには多くの設定項目があります。 それぞれの定義については、[Elasticsearchコネクターの設定](./elasticsearch-connector-configuration-reference.md) を参照してください。 ほとんどの設定は、[Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index.html) で利用可能な設定に対応しています。
+コネクタには多くの設定項目があります。 それぞれの定義については、[Elasticsearchコネクターの設定](./elasticsearch-connector-configuration-reference.md) を参照してください。 ほとんどの設定は、 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index.html) で利用可能な設定に対応しています。
 ```
 
 Elasticsearchサーバーを名前で参照するには、各Elasticsearchサーバー名をDNSまたはLiferayサーバーの`/etc/hosts` ファイル内のIPアドレスにマップします。
@@ -189,7 +189,7 @@ Elasticsearchのインデックスをプライマリデータストレージと�
 
 \ **コネクタ設定の***動作モード***( `operationMode`) 設定は非推奨になり、 ***本番モードが有効**(`productionModeEnabled`)に置き換えられました。
 
-\ **\**[Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963) アプリケーションを通して。
+\ **\** [Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963) アプリケーションを通して。
 
 互換性のあるElasticsearchのバージョンや必要なパッチレベルなど、詳細な互換性情報については、 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
 

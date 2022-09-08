@@ -8,7 +8,7 @@
 
 次に、以下の手順に従います。
 
-1. [Accounts API Basics](./liferay-t5p9.zip)をダウンロードし、解凍してください。.
+1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O

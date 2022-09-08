@@ -17,7 +17,7 @@ Webコンテンツを作成するときは、掲示板のエントリーやブ�
 * Wikiページ
 
 ```{note}
-Liferay DXP 7.2以降、開発者は [情報フレームワーク](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework)を使用して [情報リスト](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) からアセットを表示できるようになりました。
+Liferay DXP 7.2以降、開発者は [情報フレームワーク](https://help.liferay.com/hc/ja/articles/360029067251-Introduction-to-The-Info-Framework) を使用して [情報リスト](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) からアセットを表示できるようになりました。
 ```
 
 必要なアセットを表示するためにAsset Publisherを設定する最も簡単な方法は、ニーズに合った [Collection](../../../content-authoring-and-management/collections-and-collection-pages.md) を使用することです。 コレクションに手動または動的にアセットが割り当てられても、Asset Publisher ウィジェットは、コレクションが定義した順序で自動的にアセットをロードします。 Liferay DXP 7.4 U10+ または GA14 では、Asset Publishers はデフォルトで Collection 構成を使用します。

@@ -21,4 +21,4 @@ LiferayのSearch Bar Suggestionsは、 _入力しながら検索する_ 機能�
 
 検索バーのサジェスチョンの使い方や設定方法については、 [検索バーのサジェスチョンを設定する](./search-bar-suggestions/configuring-search-bar-suggestions.md)を参照してください。
 
-[Search Blueprints](../liferay-enterprise-search/search-experiences.md) を使って Search Bar Suggestions で使用するクエリを制御するには、 [Search Bar Suggestions Blueprints](./search-bar-suggestions/search-bar-suggestions-blueprints.md)を参照してください。
+[Search Blueprints](../liferay-enterprise-search/search-experiences.md) を使って Search Bar Suggestions で使用するクエリを制御するには、 [検索バー サジェスチョン ブループリント](./search-bar-suggestions/search-bar-suggestions-blueprints.md) を参照してください。

@@ -19,7 +19,7 @@ Element をエクスポートするには、Element の Actions (![Actions](../.
 ![要素のJSONファイルをインポートする。](./managing-elements/images/02.png)
 
 ```{warning}
-[要素スキーマ](./creating-elements.md#understanding-the-element-schema)は変更することができます。 Liferayのバージョン間でスキーマが変更された場合、古いエレメントのJSONのインポートに失敗することがあります。
+[要素スキーマ](./creating-elements.md#understanding-the-element-schema) は変更することができます。 Liferayのバージョン間でスキーマが変更された場合、古いエレメントのJSONのインポートに失敗することがあります。
 ```
 
 ## 追加情報

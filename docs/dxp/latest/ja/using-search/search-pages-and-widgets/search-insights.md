@@ -9,7 +9,7 @@
 - サーチエンジンから返されるレスポンス文字列
 
 ```{note}
-リクエスト文字列として返されたJSONは、明確にするためにいくつかのElasticsearchのクエリのデフォルトから刈り取られています。 Elasticsearchが処理した完全なリクエストJSONを見るには、[Elasticsearch server's logging](https://www.elastic.co/guide/en/elasticsearch/reference/6.x/logging.html)を調整してください。
+リクエスト文字列として返されたJSONは、明確にするためにいくつかのElasticsearchのクエリのデフォルトから刈り取られています。 Elasticsearchが処理した完全なリクエストJSONを見るには、 [Elasticsearch server's logging](https://www.elastic.co/guide/en/elasticsearch/reference/6.x/logging.html) を調整してください。
 ```
 
 _スコアの説明を有効にする_ オプション（デフォルトで有効）を指定すると、「洞察」ウィジェットは、返された各結果に対して関連性スコアの説明も表示します。
@@ -36,7 +36,7 @@ Explainオプションを有効または無効にするには、次のように�
 
 1. デフォルトで有効になっているブール型フィールドは1つだけです：スコアの説明を有効にする。 選択を外すと、各結果の関連性スコアの説明を無効にすることができます。
 
-フードの下では、検索インサイト ウィジェットの Explain オプションが Elasticsearch API を公開しています： [Explain](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-explain.html)。 詳細はElasticsearchのドキュメントを参照してください。
+フードの下では、検索インサイト ウィジェットの Explain オプションが Elasticsearch API を公開しています： [Explain](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-explain.html) 。 詳細はElasticsearchのドキュメントを参照してください。
 
 以下は、検索されたキーワードが _test_であったときの、Test Test User の Search Document に対する応答の採点説明の省略した部分である。
 

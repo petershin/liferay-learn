@@ -4,21 +4,21 @@ Liferayには通知ツールが統合されているため、プラットフォ�
 
 下記手順に従って、個別の通知をカスタマイズします。
 
-1. *個人用メニュー*を開き、［Notifications］をクリックします。
+1. **個人用メニュー** を開き、［Notifications］をクリックします。
 
-   ![パーソナルメニューを開き、[通知]をクリックします](./configuring-personal-notifications/images/01.png)
+   ![パーソナルメニューを開き、 [通知]をクリックします](./configuring-personal-notifications/images/01.png)
 
-1. アプリケーションバーの*アクション*ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、*［Configuration］*を選択します。
+1. アプリケーションバーの **アクション** ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 ［**Configuration**］ を選択します。
 
    ![アプリケーションバーの「アクション」ボタンをクリックし、「コンフィギュレーション」を選択します。](./configuring-personal-notifications/images/02.png)
 
-   または、通知ウィジェットがデプロイされている場所であればどこでもこれらの設定にアクセスできます。 ウィジェットの*オプション*アイコン（![Options Button](../../images/icon-widget-options.png)）をクリックし、*［Configuration］*を選択します。
+   または、通知ウィジェットがデプロイされている場所であればどこでもこれらの設定にアクセスできます。 ウィジェットの **オプション** アイコン（![Options Button](../../images/icon-widget-options.png)）をクリックし、 ［**Configuration**］ を選択します。
 
    ![Notificationsウィジェットのオプションボタンをクリックし、Configurationを選択します。](./configuring-personal-notifications/images/03.png)
 
 1. 目的のアプリケーショントリガーの通知を有効または無効にします。
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 カスタマイズのオプションとして、以下のアプリケーショントリガーがあります。
 

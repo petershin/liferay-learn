@@ -12,7 +12,7 @@
 データソースの中には、 [restcountries.com](https://restcountries.com) データプロバイダーのようなサードパーティーのソースから取得するものもあります。 また、Liferay DXPには独自に登録されたWebサービスがあります。 ローカルサーバーを実行している場合は、 [http://localhost:8080/api/jsonws](http://localhost:8080/api/jsonws) でリストを参照してください。 国のリストを入力する場合、2つの`get-countries` JSON Web サービスがありますが、どちらでも動作します。 ［**Invoke**］ をクリックすると、結果が生成されます。
 
 ```{warning}
-ローカルテスト環境でLiferayのWebサービスとデータプロバイダを使ってテストするには、ローカルネットワークアクセスを有効にする必要があります。[ローカルネットワーク上のデータへのアクセスの有効化](./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network)を参照してください
+ローカルテスト環境でLiferayのWebサービスとデータプロバイダを使ってテストするには、ローカルネットワークアクセスを有効にする必要があります。 [ローカルネットワーク上のデータへのアクセスの有効化](./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network) を参照してください
 ```
 
 ［**Result**］ タブには、次のアフガニスタンのレコードのように、JSON構文を使用した国のリストが表示されます。

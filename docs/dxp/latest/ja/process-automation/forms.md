@@ -10,7 +10,6 @@ toc:
 - ./forms/developer-guide.md
 - ./forms/using-forms-to-poll-users.md
 ---
-
 # フォーム
 
 ```{toctree}

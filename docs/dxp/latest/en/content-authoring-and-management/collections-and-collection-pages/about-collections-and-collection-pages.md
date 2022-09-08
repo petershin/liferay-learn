@@ -4,7 +4,11 @@
 This information applies to Liferay DXP 7.3+. In previous Liferay versions, Collections were called Content Sets. For information on Content Sets, see [Liferay DXP 7.2](#liferay-dxp-7-2).
 ```
 
-Collections are sets of content items that you can use to group and filter information. Consider the following example. You plan to create a new section in your product web page with customer success stories. You want this section to show new success stories automatically as these stories are published. In this case, you can create a Collection that groups all your success stories with a Collection Page that shows the Collection's content. In addition to Collection Pages, you can show this Collection in other Content Pages using a Collection Display Fragment (for more information, see [Displaying Collections](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md).)
+Collections are sets of content items that you can use to group and filter information. Collections can include many different types of content or just one specific type of content. You can then display them on a [Collection Page](), which you can present in your desired format using page fragments.
+
+![Use a Collection Page to quickly present a specific Collection in your desired format.](./about-collections-and-collection-pages/images/01.png)
+
+Consider the following example. You plan to create a new section in your product web page with customer success stories. You want this section to show new success stories automatically as these stories are published. In this case, you can create a Collection that groups all your success stories with a Collection Page that shows the Collection's content. In addition to Collection Pages, you can show this Collection in other Content Pages using a Collection Display Fragment (for more information, see [Displaying Collections](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md).)
 
 There are two types of Collections in Liferay:
 
@@ -20,6 +24,8 @@ There are two types of Collections in Liferay:
 
     For example, for your Kitchenware Store, you create a Collection including all blog posts with the *porcelain* tag (this tag represents your criteria). The Dynamic Collection includes all the new blog posts with the *porcelain* tag automatically.
 
+![Use manual collections to choose the items in the collection yourself, or dynamic collections to automatically assemble the items based on your chosen criteria.](./about-collections-and-collection-pages/images/02.png)
+
 For information about how to create Manual or Dynamic Collections, see [Creating Collections](./creating-collections.md).
 
 ## Displaying Collections
@@ -28,11 +34,11 @@ You can display Collections using a [Collection Page](../../site-building/displa
 
 A Collection Page is a type of page linked to a Collection. Collection Pages ease the task of showing and customizing Collections. For example, you can quickly add new items to your Collection using a Collection page.
 
-![You can display your Collection using a Collection Page](./about-collections-and-collection-pages/images/01.png)
+![You can display your Collection using a Collection Page](./about-collections-and-collection-pages/images/03.png)
 
 A Collection Display Fragment is a type of Fragment that shows a Collection. You can use this Fragment to show your Collection on any Content Page, Page Template, or Display Page.
 
-![You can show the Collection's content using a Collection Display Fragment](./about-collections-and-collection-pages/images/02.png)
+![You can show the Collection's content using a Collection Display Fragment](./about-collections-and-collection-pages/images/04.png)
 
 For more information, see [Displaying Collections](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md).
 

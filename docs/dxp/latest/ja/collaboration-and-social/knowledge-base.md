@@ -13,7 +13,6 @@ toc:
 - ./knowledge-base/knowledge-base-system-settings.md
 - ./knowledge-base/developer-guide.md
 ---
-
 # ナレッジベース
 
 ```{toctree}

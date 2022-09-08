@@ -10,7 +10,6 @@ toc:
 - ./../site-building/building-sites/site-membership/inviting-members-to-your-site.md
 - ./collaboration-and-social/knowledge-base.md
 ---
-
 # コラボレーションとソーシャルメディア
 
 ```{toctree}

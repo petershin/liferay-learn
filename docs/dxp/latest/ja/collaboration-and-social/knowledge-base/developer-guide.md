@@ -2,7 +2,6 @@
 toc:
 - ./developer-guide/knowledge-base-api-basics.md
 ---
-
 # 開発者ガイド
 
 ```{toctree}

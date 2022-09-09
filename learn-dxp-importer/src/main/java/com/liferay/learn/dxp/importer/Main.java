@@ -607,8 +607,10 @@ public class Main {
 		File japaneseFile = new File(fileName.replace("/en/", "/ja/"));
 
 		if (japaneseFile.exists()) {
-			String japaneseText = FileUtils.readFileToString(
-				japaneseFile, StandardCharsets.UTF_8);
+			String japaneseText = _processMarkdown(
+				FileUtils.readFileToString(
+					japaneseFile, StandardCharsets.UTF_8),
+				japaneseFile);
 
 			structuredContent.setContentFields(
 				new ContentField[] {

@@ -69,6 +69,7 @@ import java.nio.charset.StandardCharsets;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -109,12 +110,20 @@ public class Main {
 			properties.load(inputStream);
 		}
 
+		Properties tokenProperties = new Properties();
+
+		try (InputStream inputStream = Main.class.getResourceAsStream(
+				"dependencies/token.properties")) {
+
+			tokenProperties.load(inputStream);
+		}
+
 		Main main = new Main(
 			properties.getProperty("liferay.client.id"),
 			properties.getProperty("liferay.client.secret"),
 			properties.getProperty("liferay.content.structure.id"),
 			properties.getProperty("liferay.group.id"),
-			properties.getProperty("liferay.url"));
+			properties.getProperty("liferay.url"), tokenProperties);
 
 		main.uploadToLiferay();
 	}
@@ -122,7 +131,7 @@ public class Main {
 	public Main(
 			String liferayClientId, String liferayClientSecret,
 			String liferayContentStructureId, String liferayGroupId,
-			String liferayURL)
+			String liferayURL, Properties tokenProperties)
 		throws Exception {
 
 		_liferayClientId = liferayClientId;
@@ -131,6 +140,19 @@ public class Main {
 			liferayContentStructureId);
 		_liferayGroupId = GetterUtil.getLong(liferayGroupId);
 		_liferayURL = liferayURL;
+
+		Enumeration<String> tokenPropertyNames =
+			(Enumeration<String>)tokenProperties.propertyNames();
+
+		while (tokenPropertyNames.hasMoreElements()) {
+			String tokenPropertyName = tokenPropertyNames.nextElement();
+
+			if (tokenPropertyName.endsWith("_TOKEN")) {
+				_tokens.put(
+					tokenProperties.getProperty(tokenPropertyName),
+					tokenProperties.getProperty(tokenPropertyName + "_VALUE"));
+			}
+		}
 
 		_oauthExpirationMillis = 0L;
 
@@ -642,6 +664,11 @@ public class Main {
 		while ((line = bufferedReader.readLine()) != null) {
 			StringBuilder leadingSpacesSB = new StringBuilder();
 
+			for (Map.Entry<String, String> entry : _tokens.entrySet()) {
+				line = StringUtil.replace(
+					line, entry.getKey(), entry.getValue());
+			}
+
 			Matcher matcher = _sphinxBadgePattern.matcher(line);
 
 			if (matcher.find()) {
@@ -910,5 +937,6 @@ public class Main {
 	private Map<String, Long> _structuredContentFolderIds = new HashMap<>();
 	private StructuredContentFolderResource _structuredContentFolderResource;
 	private StructuredContentResource _structuredContentResource;
+	private Map<String, String> _tokens = new HashMap<>();
 
 }

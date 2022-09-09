@@ -123,7 +123,9 @@ public class Main {
 			properties.getProperty("liferay.client.secret"),
 			properties.getProperty("liferay.content.structure.id"),
 			properties.getProperty("liferay.group.id"),
-			properties.getProperty("liferay.url"), tokenProperties);
+			properties.getProperty("liferay.url"),
+			properties.getProperty("markdown.import.directory"),
+			tokenProperties);
 
 		main.uploadToLiferay();
 	}
@@ -131,7 +133,8 @@ public class Main {
 	public Main(
 			String liferayClientId, String liferayClientSecret,
 			String liferayContentStructureId, String liferayGroupId,
-			String liferayURL, Properties tokenProperties)
+			String liferayURL, String markdownImportDirectory,
+			Properties tokenProperties)
 		throws Exception {
 
 		_liferayClientId = liferayClientId;
@@ -140,6 +143,7 @@ public class Main {
 			liferayContentStructureId);
 		_liferayGroupId = GetterUtil.getLong(liferayGroupId);
 		_liferayURL = liferayURL;
+		_markdownImportDirectory = markdownImportDirectory;
 
 		Enumeration<String> tokenPropertyNames =
 			(Enumeration<String>)tokenProperties.propertyNames();
@@ -156,7 +160,7 @@ public class Main {
 
 		_oauthExpirationMillis = 0L;
 
-		_addFileNames("../docs");
+		_addFileNames(_markdownImportDirectory);
 
 		_initFlexmark();
 		_initResourceBuilders(_getOAuthAuthorization());
@@ -741,8 +745,14 @@ public class Main {
 	}
 
 	private String _toFriendlyURLPath(String fileName) {
-		return FilenameUtils.removeExtension(
-			fileName.substring(fileName.indexOf("/")));
+		String friendlyURLPath = fileName.substring(
+			_markdownImportDirectory.length());
+
+		if (friendlyURLPath.startsWith(System.getProperty("file.separator"))) {
+			friendlyURLPath = friendlyURLPath.substring(1);
+		}
+
+		return FilenameUtils.removeExtension(friendlyURLPath);
 	}
 
 	private String _toHTML(File file, String text) {
@@ -911,6 +921,7 @@ public class Main {
 	private final Pattern _literalIncludeParameterPattern = Pattern.compile(
 		":(.*): (.*)");
 	private File _markdownFile;
+	private final String _markdownImportDirectory;
 
 	private NodeVisitor _nodeVisitor = new NodeVisitor(
 		new VisitHandler<Image>(

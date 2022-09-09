@@ -2,7 +2,11 @@
 
 {bdg-secondary}`Available Liferay 7.4 U35+ and GA35+`
 
-With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, and User. Liferay also provides the Postal Address system Object for storing address information and relating it to other Objects.
+With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, Postal Address, and User.
+
+```{note}
+The Postal Address object is only used to store account addresses. For this reason, you can only relate it to custom Objects that are related to the Accounts object. See [Using Accounts with Custom Objects](./using-accounts-with-custom-objects.md) for more information.
+```
 
 ![Extend system services integrated with the Objects Framework.](./extending-system-objects/images/01.png)
 

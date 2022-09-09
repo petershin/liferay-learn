@@ -25,7 +25,9 @@ import com.liferay.headless.delivery.client.resource.v1_0.DocumentFolderResource
 import com.liferay.headless.delivery.client.resource.v1_0.DocumentResource;
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentFolderResource;
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResource;
+import com.liferay.petra.string.CharPool;
 import com.liferay.petra.string.StringPool;
+import com.liferay.petra.string.StringUtil;
 import com.liferay.portal.kernel.util.GetterUtil;
 import com.liferay.portal.kernel.util.HashMapBuilder;
 
@@ -55,7 +57,9 @@ import com.vladsch.flexmark.util.sequence.CharSubSequence;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.StringReader;
 
 import java.net.URL;
@@ -171,6 +175,38 @@ public class Main {
 		}
 
 		_fileNames.add(fileName);
+	}
+
+	private String _dedent(String s, int dedent) {
+		if (s == null) {
+			return null;
+		}
+
+		int len = s.length();
+
+		if (len == 0) {
+			return s;
+		}
+
+		int x = 0;
+
+		while ((x < len) && (x < dedent)) {
+			char c = s.charAt(x);
+
+			if (((c > CharPool.SPACE) && (c < 128)) ||
+				!Character.isWhitespace(c)) {
+
+				break;
+			}
+
+			x++;
+		}
+
+		if (x > 0) {
+			return s.substring(x);
+		}
+
+		return s;
 	}
 
 	private String[] _getDirNames(String fileName) throws Exception {
@@ -482,7 +518,119 @@ public class Main {
 			).build();
 	}
 
-	private String _processMarkdown(String markdown) throws Exception {
+	private String _processLiteralInclude(
+			String literalIncludeFileName, File markdownFile,
+			Map<String, String> literalIncludeParameters)
+		throws Exception {
+
+		String fileName =
+			FilenameUtils.getPath(markdownFile.getPath()) +
+				literalIncludeFileName;
+
+		File file = new File(fileName);
+
+		if (!file.exists()) {
+			throw new Exception("Could not find literalinclude file " + file);
+		}
+
+		int dedent = GetterUtil.getInteger(
+			literalIncludeParameters.get("dedent"));
+
+		String language = GetterUtil.getString(
+			literalIncludeParameters.get("language"), "java");
+
+		int lineStart = GetterUtil.getInteger(
+			literalIncludeParameters.get("lineStart"));
+		int lineEnd = GetterUtil.getInteger(
+			literalIncludeParameters.get("lineEnd"), -1);
+
+		StringBuilder sb = new StringBuilder();
+
+		sb.append("```");
+		sb.append(language + "\n");
+
+		BufferedReader br = new BufferedReader(
+			new InputStreamReader(new FileInputStream(file)));
+
+		String line;
+		int i = 0;
+
+		while ((line = br.readLine()) != null) {
+			if (i >= (lineStart - 1)) {
+				sb.append(_dedent(line, dedent) + "\n");
+			}
+
+			if ((lineEnd != -1) && (i > (lineEnd - 2))) {
+				break;
+			}
+
+			i++;
+		}
+
+		sb.append("```");
+
+		return sb.toString();
+	}
+
+	private String _processLiteralIncludeBlock(
+			BufferedReader bufferedReader, String literalIncludeFileName,
+			File markdownFile)
+		throws Exception {
+
+		String literalIncludeLine;
+
+		Map<String, String> literalIncludeParameters = new HashMap<>();
+
+		while ((literalIncludeLine = bufferedReader.readLine()) != null) {
+			String trimmedLiteralIncludeLine = literalIncludeLine.trim();
+
+			if (trimmedLiteralIncludeLine.startsWith("```")) {
+				break;
+			}
+
+			Matcher literalIncludeParameterMatcher =
+				_literalIncludeParameterPattern.matcher(
+					trimmedLiteralIncludeLine);
+
+			if (literalIncludeParameterMatcher.find()) {
+				String parameter = literalIncludeParameterMatcher.group(1);
+				String value = literalIncludeParameterMatcher.group(2);
+
+				if (parameter.equals("lines")) {
+					List<String> lineValues = StringUtil.split(
+						value, CharPool.DASH);
+
+					if (lineValues.size() == 1) {
+						literalIncludeParameters.put(
+							"lineEnd", lineValues.get(0));
+						literalIncludeParameters.put(
+							"lineStart", lineValues.get(0));
+					}
+					else if (lineValues.size() == 2) {
+						literalIncludeParameters.put(
+							"lineEnd", lineValues.get(1));
+						literalIncludeParameters.put(
+							"lineStart", lineValues.get(0));
+					}
+					else {
+						throw new Exception(
+							"Invalid literalinclude lines parameter value " +
+								value);
+					}
+				}
+				else {
+					literalIncludeParameters.put(parameter, value);
+				}
+			}
+		}
+
+		return _processLiteralInclude(
+			literalIncludeFileName, markdownFile, literalIncludeParameters);
+	}
+
+	private String _processMarkdown(String markdown, File markdownFile)
+		throws Exception {
+
 		StringBuilder sb = new StringBuilder();
 
 		BufferedReader bufferedReader = new BufferedReader(
@@ -527,16 +675,23 @@ public class Main {
 
 				qualifier = qualifier.substring(0, qualifier.indexOf("}"));
 
-				if (!qualifier.equals("toctree")) {
+				if (qualifier.equals("literalinclude")) {
+					line = _processLiteralIncludeBlock(
+						bufferedReader,
+						line.substring(
+							line.indexOf(qualifier) + qualifier.length() + 2),
+						markdownFile);
+				}
+				else if (qualifier.equals("toctree")) {
+					toctree = true;
+				}
+				else {
 					admonitionLineSB.append(leadingSpacesSB);
 					admonitionLineSB.append("!!! ");
 					admonitionLineSB.append(qualifier);
 					admonitionLineSB.append(" \"\" ");
 
 					startAdmonitionBlock = true;
-				}
-				else {
-					toctree = true;
 				}
 			}
 
@@ -594,7 +749,8 @@ public class Main {
 		File englishFile = new File(fileName);
 
 		String englishText = _processMarkdown(
-			FileUtils.readFileToString(englishFile, StandardCharsets.UTF_8));
+			FileUtils.readFileToString(englishFile, StandardCharsets.UTF_8),
+			englishFile);
 
 		ContentFieldValue englishContentFieldValue = new ContentFieldValue() {
 			{
@@ -725,6 +881,8 @@ public class Main {
 	private final long _liferayContentStructureId;
 	private final long _liferayGroupId;
 	private final String _liferayURL;
+	private final Pattern _literalIncludeParameterPattern = Pattern.compile(
+		":(.*): (.*)");
 	private File _markdownFile;
 
 	private NodeVisitor _nodeVisitor = new NodeVisitor(

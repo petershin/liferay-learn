@@ -42,6 +42,7 @@ Follow these steps to manage individual Page Fragments:
 
     ```{note}
     For Liferay DXP/Portal 7.3 and earlier, it's located under *Product Menu* &rarr; *Site Menu* &rarr; *Site Builder* &rarr; *Page Fragments*.
+   ```
 
 1. Select the desired Set in the *Fragment Sets* list.
 

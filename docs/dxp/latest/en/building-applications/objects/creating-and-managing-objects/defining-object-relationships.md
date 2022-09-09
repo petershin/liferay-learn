@@ -22,19 +22,19 @@ Displaying relationship tables requires a custom layout. However, custom layouts
 
 Follow these steps to add relationships to an Object:
 
-1. Open the *Objects* portlet.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
 
-1. Select the desired Object.
+1. Begin editing the desired object definition.
 
-1. Click the *Relationships* tab and select the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Go to the *Relationship* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
    ![Click on the Add button in the Relationships tab, then enter a label and name, and select a relationship type and the desired Object.](./defining-object-relationships/images/01.png)
 
-1. Enter a *Label* and *Relationship Name*.
+1. Enter a *Label* and *Name*.
 
    **Label**: Identifies the relationship in the Objects UI and can be localized after the relationship is created.
 
-   **Relationship Name**: Determines the relationship's name in the back-end and uses camel case. Once the relationship is published, this value cannot be changed.
+   **Name**: Determines the relationship's name in the back-end and uses camel case. Once the relationship is published, this value cannot be changed.
 
 1. Select a relationship Type: *One to Many* or *Many to Many*. <!--TASK: Add One to One after it's been implemented-->
 

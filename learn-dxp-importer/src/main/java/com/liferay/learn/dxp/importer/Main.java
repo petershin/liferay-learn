@@ -373,6 +373,30 @@ public class Main {
 		}
 	}
 
+	private String _getProductVersionLanguagePath(String markdownFilePath)
+		throws Exception {
+
+		String fileSeparator = System.getProperty("file.separator");
+		String relativePath = markdownFilePath.substring(
+			_markdownImportDirectory.length());
+
+		List<String> relativePaths = StringUtil.split(
+			relativePath, fileSeparator.charAt(0));
+
+		if (relativePaths.size() < 3) {
+			throw new Exception("Invalid path found " + relativePath);
+		}
+
+		StringBuilder sb = new StringBuilder();
+
+		sb.append(_markdownImportDirectory);
+		sb.append(fileSeparator + relativePaths.get(0));
+		sb.append(fileSeparator + relativePaths.get(1));
+		sb.append(fileSeparator + relativePaths.get(2));
+
+		return sb.toString();
+	}
+
 	private Long _getStructuredContentFolderId(String fileName)
 		throws Exception {
 
@@ -544,6 +568,58 @@ public class Main {
 			).build();
 	}
 
+	private String _processInclude(String includeFileName, File markdownFile)
+		throws Exception {
+
+		String markdownFilePath = markdownFile.getPath();
+
+		String fileName =
+			FilenameUtils.getPath(markdownFilePath) + includeFileName;
+
+		if (includeFileName.startsWith(System.getProperty("file.separator"))) {
+			fileName =
+				_getProductVersionLanguagePath(markdownFilePath) +
+					includeFileName;
+		}
+
+		File file = new File(fileName);
+
+		if (!file.exists()) {
+			throw new Exception("Could not find include file " + file);
+		}
+
+		StringBuilder sb = new StringBuilder();
+
+		BufferedReader br = new BufferedReader(
+			new InputStreamReader(new FileInputStream(file)));
+
+		String line;
+
+		while ((line = br.readLine()) != null) {
+			sb.append(line + "\n");
+		}
+
+		return _processMarkdown(sb.toString(), markdownFile);
+	}
+
+	private String _processIncludeBlock(
+			BufferedReader bufferedReader, String includeFileName,
+			File markdownFile)
+		throws Exception {
+
+		String literalIncludeLine;
+
+		while ((literalIncludeLine = bufferedReader.readLine()) != null) {
+			String trimmedLiteralIncludeLine = literalIncludeLine.trim();
+
+			if (trimmedLiteralIncludeLine.startsWith("```")) {
+				break;
+			}
+		}
+
+		return _processInclude(includeFileName, markdownFile);
+	}
+
 	private String _processLiteralInclude(
 			String literalIncludeFileName, File markdownFile,
 			Map<String, String> literalIncludeParameters)
@@ -706,7 +782,14 @@ public class Main {
 
 				qualifier = qualifier.substring(0, qualifier.indexOf("}"));
 
-				if (qualifier.equals("literalinclude")) {
+				if (qualifier.equals("include")) {
+					line = _processIncludeBlock(
+						bufferedReader,
+						line.substring(
+							line.indexOf(qualifier) + qualifier.length() + 2),
+						markdownFile);
+				}
+				else if (qualifier.equals("literalinclude")) {
 					line = _processLiteralIncludeBlock(
 						bufferedReader,
 						line.substring(

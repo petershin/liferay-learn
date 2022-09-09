@@ -50,7 +50,7 @@ Then, follow these steps to auto-deploy an example fragment set:
 1. Verify the fragment set is available. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*. The set should appear in the list.
 
 ```{note}
-If an imported fragment has invalid rules, it is automatically saved as a draft.
+If an imported fragment has invalid rules, it is saved automatically as a draft.
 ```
 
 ![The set is available.](./auto-deploying-fragments/images/01.png)
@@ -92,7 +92,7 @@ Both keys in this JSON file are optional. In your `liferay-deploy-fragments.json
 ```
 
 ```{warning}
-Importing fragments [with resources](./including-default-resources-in-fragments.md) to be available at the system level is not supported.
+Importing fragments [with resources](./including-default-resources-in-fragments.md) is not supported if you are making them available at the system level.
 ```
 
 ```{note}

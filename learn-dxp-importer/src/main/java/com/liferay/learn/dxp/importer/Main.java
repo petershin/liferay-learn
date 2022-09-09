@@ -73,6 +73,7 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
@@ -91,6 +92,7 @@ import org.json.JSONObject;
 /**
  * @author Brian Wing Shun Chan
  * @author Rich Sezov
+ * @author Allen Ziegenfus
  */
 public class Main {
 
@@ -492,6 +494,12 @@ public class Main {
 		while ((line = bufferedReader.readLine()) != null) {
 			StringBuilder leadingSpacesSB = new StringBuilder();
 
+			Matcher matcher = _sphinxBadgePattern.matcher(line);
+
+			if (matcher.find()) {
+				line = matcher.replaceFirst("<span class=\"bdg-$1\">$2</span>");
+			}
+
 			String trimmedLine = line.trim();
 
 			for (int i = 0; i < line.indexOf(trimmedLine); i++) {
@@ -737,6 +745,8 @@ public class Main {
 	private long _oauthExpirationMillis;
 	private Parser _parser;
 	private HtmlRenderer _renderer;
+	private final Pattern _sphinxBadgePattern = Pattern.compile(
+		"\\{bdg-(.*)\\}`(.*)`");
 	private Map<String, Long> _structuredContentFolderIds = new HashMap<>();
 	private StructuredContentFolderResource _structuredContentFolderResource;
 	private StructuredContentResource _structuredContentResource;

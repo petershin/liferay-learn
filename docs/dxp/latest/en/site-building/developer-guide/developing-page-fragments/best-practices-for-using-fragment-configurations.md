@@ -1,0 +1,62 @@
+# Best Practices for Using Fragment Configurations
+
+When you are creating page fragments for your site with your own [configurations](./adding-configuration-options-to-fragments.md), it's your responsibility to safely and effectively use them in their HTML presentation. Here are some techniques that you can use to make your fragments more effective and robust.
+
+* [Escape Configuration Text Values](#escape-configuration-text-values)
+* [Use Lists for Repeated HTML Elements](#use-lists-for-repeated-html-elements)
+
+## Escape Configuration Text Values
+
+Malicious code can be inserted into the text field, wreaking havoc for other Fragment users. You must escape Fragment text values to guard against cross-site scripting (XSS) attacks.
+
+For generic cases, an HTML `escape()` method is available. See the [`HtmlUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) class for more information.
+
+```html
+<div class="fragment_38816">
+    "${htmlUtil.escape(configuration.text)}"
+</div>
+```
+
+To prevent JavaScript attacks, such as setting an attribute or appending HTML children, use the `Liferay.Util.escapeHTML()` function:
+
+```javascript
+function (fragmentElement, configuration) {
+    const escapedValue = Liferay.Util.escapeHTML(configuration.text)
+}
+```
+
+## Use Lists for Repeated HTML Elements
+
+Avoid repeatedly writing the same HTML elements for your fragment by using FreeMarker lists. You can use the values from the configuration options you have implemented to implement your list's logic.
+
+For example, you can iterate over a number of lines that is defined in a configuration (like [this example select configuration](../reference/fragments/fragment-configuration-types-reference.md#select-configuration)), and then use this HTML to list the configured number of lines:
+
+```html
+<div class="fragment_1">
+    [#list 1..configuration.numberOfLines as index]
+        <li>Line number: ${index}</li>
+    [/#list]
+</div>
+```
+
+If you have implemented a [collection selector configuration](../reference/fragments/fragment-configuration-types-reference.md#collection-selector), then you can also list all of the titles in the configured collection, like this example:
+
+```html
+<div class="fragment_310">
+    <h1>
+        List of Items:
+    </h1>
+    <ul>
+        [#if collectionObjectList??]
+            [#list collectionObjectList as item]
+                <li>${item.title}</li>
+            [/#list]
+        [/#if]
+    </ul>
+</div>
+```
+
+## Additional Information
+
+* [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
+* [Fragment Configuration Types](../reference/fragments/fragment-configuration-types-reference.md)

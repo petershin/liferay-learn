@@ -1,6 +1,6 @@
 # Configuring Page Publishing
 
-By default, publishing a child page to Live also publishes its parent pages. This is to prevent orphaned pages. However, always publishing parent pages to Live can affect performance and publish to parent pages changes prematurely. If desired, you can configure this behavior to only publish your selected pages, instead of always including parent pages.
+By default, publishing a child page to Live also publishes its parent pages. This prevents orphaned pages. Always publishing parent pages to Live, however, can affect performance and prematurely publish the changes to parent pages. If desired, you can configure this behavior to only publish your selected pages, instead of always including parent pages.
 
 ```{note}
 This configuration only affects Staging. Manually exporting a Site to an LAR file always includes all parent pages.
@@ -16,7 +16,7 @@ Follow these steps to configure child/parent publishing for your system:
 
    If checked, parent pages are always published to Live.
 
-   If unchecked, the parent page is only published if it doesn't exist in Live yet. If the parent page was already published, only a reference element is added, which is used for the validation to make sure the parent is already in the Live.
+   If unchecked, the parent page is only published if it doesn't exist in Live yet. If the parent page was already published, only a reference element is added, which is used for the validation to make sure the parent is already in the Live site.
 
 1. Click *Save*.
 

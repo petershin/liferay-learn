@@ -94,11 +94,11 @@ You can now select your template when [creating a new export process](#exporting
 
 ## Configuring Export/Import Processes
 
-Liferay provides setting for configuring export/import processes as well as Staging specific features. These settings affect Staging, as well as Site Template propagation.
+Liferay provides settings for configuring export/import processes as well as Staging specific features. These settings affect Staging and Site Template propagation.
 
 | Setting | Description |
 | :--- | :--- |
-| Include All Asset Links | If checked, all asset links are included from the site within the given date range. If unchecked, only asset links that are connected to the content are included. |
+| Include All Asset Links | If checked, all asset links are included from the site within the given date range. If unchecked, only asset links connected to the content are included. |
 | Replicate Individual Deletions by Default | If checked, delete operations performed for content types are always replicated in the target site by default. |
 | Publish Permissions by Default | If checked, permissions assigned for exported pages and individual portlet windows are always included by default. |
 | Validate File Entries | If checked, publishing or importing content types with text causes Liferay to check the content for links to documents and ensure they point to valid documents. |

@@ -81,7 +81,7 @@ Follow these steps to deactivate or activate a custom Object.
 
 {bdg-secondary}`Available Liferay 7.4 U26+ and GA26+`
 
-You can delete both draft and published Object definitions at any time. Deleting a definition removes its associated data; this including stored entries for published definitions.
+You can delete both draft and published Object definitions at any time. Deleting a definition removes its associated data; this includes stored entries for published definitions.
 
 ```{important}
 For versions before Liferay 7.4 U26/GA26, users cannot delete [published Object definitions](./creating-objects.md#publishing-object-drafts).

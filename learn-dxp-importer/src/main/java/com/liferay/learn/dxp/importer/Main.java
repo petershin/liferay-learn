@@ -30,6 +30,7 @@ import com.liferay.petra.string.StringPool;
 import com.liferay.petra.string.StringUtil;
 import com.liferay.portal.kernel.util.GetterUtil;
 import com.liferay.portal.kernel.util.HashMapBuilder;
+import com.liferay.portal.kernel.util.Tuple;
 
 import com.vladsch.flexmark.ast.Image;
 import com.vladsch.flexmark.ext.admonition.AdmonitionExtension;
@@ -625,7 +626,8 @@ public class Main {
 
 	private String _processLiteralInclude(
 			String literalIncludeFileName, File markdownFile,
-			Map<String, String> literalIncludeParameters)
+			Map<String, String> literalIncludeParameters,
+			List<Tuple> literalIncludeLineRanges)
 		throws Exception {
 
 		String fileName =
@@ -639,24 +641,103 @@ public class Main {
 		}
 
 		if (!file.exists()) {
-			throw new Exception("Could not find literalinclude file " + file);
-		}
+			System.out.println("Could not find literalinclude file " + file);
 
-		int dedent = GetterUtil.getInteger(
-			literalIncludeParameters.get("dedent"));
+			return StringPool.BLANK;
+		}
 
 		String language = GetterUtil.getString(
 			literalIncludeParameters.get("language"), "java");
-
-		int lineStart = GetterUtil.getInteger(
-			literalIncludeParameters.get("lineStart"));
-		int lineEnd = GetterUtil.getInteger(
-			literalIncludeParameters.get("lineEnd"), -1);
 
 		StringBuilder sb = new StringBuilder();
 
 		sb.append("```");
 		sb.append(language + "\n");
+
+		for (Tuple literalIncludeLineRange : literalIncludeLineRanges) {
+			sb.append(
+				_processLiteralIncludeLineRange(
+					file, literalIncludeParameters, literalIncludeLineRange));
+		}
+
+		sb.append("```");
+
+		return sb.toString();
+	}
+
+	private String _processLiteralIncludeBlock(
+			String literalIncludeFileName, List<String> mystDirectiveLines,
+			File markdownFile)
+		throws Exception {
+
+		Map<String, String> literalIncludeParameters = new HashMap<>();
+		List<Tuple> literalIncludeLineRanges = new ArrayList<>();
+
+		for (String mystDirectiveLine : mystDirectiveLines) {
+			Matcher literalIncludeParameterMatcher =
+				_literalIncludeParameterPattern.matcher(
+					mystDirectiveLine.trim());
+
+			if (literalIncludeParameterMatcher.find()) {
+				String parameter = literalIncludeParameterMatcher.group(1);
+				String value = literalIncludeParameterMatcher.group(2);
+
+				if (parameter.equals("lines")) {
+					List<String> lineRanges = StringUtil.split(
+						value, CharPool.COMMA);
+
+					for (String lineRange : lineRanges) {
+						List<String> lineValues = StringUtil.split(
+							lineRange, CharPool.DASH);
+
+						Tuple lineRangeTuple;
+
+						if (lineValues.size() == 1) {
+							lineRangeTuple = new Tuple(
+								GetterUtil.getInteger(lineValues.get(0)),
+								GetterUtil.getInteger(lineValues.get(0)));
+						}
+						else if (lineValues.size() == 2) {
+							lineRangeTuple = new Tuple(
+								GetterUtil.getInteger(lineValues.get(0)),
+								GetterUtil.getInteger(lineValues.get(1)));
+						}
+						else {
+							throw new Exception(
+								"Invalid literalinclude lines value " + value);
+						}
+
+						literalIncludeLineRanges.add(lineRangeTuple);
+					}
+				}
+				else {
+					literalIncludeParameters.put(parameter, value);
+				}
+			}
+		}
+
+		if (literalIncludeLineRanges.isEmpty()) {
+			literalIncludeLineRanges.add(new Tuple(0, -1));
+		}
+
+		return _processLiteralInclude(
+			literalIncludeFileName, markdownFile, literalIncludeParameters,
+			literalIncludeLineRanges);
+	}
+
+	private String _processLiteralIncludeLineRange(
+			File file, Map<String, String> literalIncludeParameters,
+			Tuple literalIncludeLineRange)
+		throws Exception {
+
+		StringBuilder sb = new StringBuilder();
+
+		int lineStart = GetterUtil.getInteger(
+			literalIncludeLineRange.getObject(0));
+		int lineEnd = GetterUtil.getInteger(
+			literalIncludeLineRange.getObject(1), -1);
+		int dedent = GetterUtil.getInteger(
+			literalIncludeParameters.get("dedent"));
 
 		BufferedReader br = new BufferedReader(
 			new InputStreamReader(new FileInputStream(file)));
@@ -676,57 +757,7 @@ public class Main {
 			i++;
 		}
 
-		sb.append("```");
-
 		return sb.toString();
-	}
-
-	private String _processLiteralIncludeBlock(
-			String literalIncludeFileName, List<String> mystDirectiveLines,
-			File markdownFile)
-		throws Exception {
-
-		Map<String, String> literalIncludeParameters = new HashMap<>();
-
-		for (String mystDirectiveLine : mystDirectiveLines) {
-			Matcher literalIncludeParameterMatcher =
-				_literalIncludeParameterPattern.matcher(
-					mystDirectiveLine.trim());
-
-			if (literalIncludeParameterMatcher.find()) {
-				String parameter = literalIncludeParameterMatcher.group(1);
-				String value = literalIncludeParameterMatcher.group(2);
-
-				if (parameter.equals("lines")) {
-					List<String> lineValues = StringUtil.split(
-						value, CharPool.DASH);
-
-					if (lineValues.size() == 1) {
-						literalIncludeParameters.put(
-							"lineEnd", lineValues.get(0));
-						literalIncludeParameters.put(
-							"lineStart", lineValues.get(0));
-					}
-					else if (lineValues.size() == 2) {
-						literalIncludeParameters.put(
-							"lineEnd", lineValues.get(1));
-						literalIncludeParameters.put(
-							"lineStart", lineValues.get(0));
-					}
-					else {
-						throw new Exception(
-							"Invalid literalinclude lines parameter value " +
-								value);
-					}
-				}
-				else {
-					literalIncludeParameters.put(parameter, value);
-				}
-			}
-		}
-
-		return _processLiteralInclude(
-			literalIncludeFileName, markdownFile, literalIncludeParameters);
 	}
 
 	private String _processMarkdown(String markdown, File markdownFile)

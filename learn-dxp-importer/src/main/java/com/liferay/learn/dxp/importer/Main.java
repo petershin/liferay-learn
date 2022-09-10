@@ -75,7 +75,6 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.Properties;
 import java.util.Set;
 import java.util.TreeSet;
@@ -570,6 +569,26 @@ public class Main {
 			).build();
 	}
 
+	private String _processAdmonitionBlock(
+		String directiveName, List<String> mystDirectiveLines,
+		String leadingSpaces) {
+
+		StringBuilder admonitionLineSB = new StringBuilder();
+
+		admonitionLineSB.append(leadingSpaces);
+		admonitionLineSB.append("!!! ");
+		admonitionLineSB.append(directiveName);
+		admonitionLineSB.append(" \"\" \n");
+
+		for (String mystDirectiveLine : mystDirectiveLines) {
+			admonitionLineSB.append("    ");
+			admonitionLineSB.append(mystDirectiveLine);
+			admonitionLineSB.append("\n");
+		}
+
+		return admonitionLineSB.toString();
+	}
+
 	private String _processInclude(String includeFileName, File markdownFile)
 		throws Exception {
 
@@ -602,24 +621,6 @@ public class Main {
 		}
 
 		return _processMarkdown(sb.toString(), markdownFile);
-	}
-
-	private String _processIncludeBlock(
-			BufferedReader bufferedReader, String includeFileName,
-			File markdownFile)
-		throws Exception {
-
-		String literalIncludeLine;
-
-		while ((literalIncludeLine = bufferedReader.readLine()) != null) {
-			String trimmedLiteralIncludeLine = literalIncludeLine.trim();
-
-			if (trimmedLiteralIncludeLine.startsWith("```")) {
-				break;
-			}
-		}
-
-		return _processInclude(includeFileName, markdownFile);
 	}
 
 	private String _processLiteralInclude(
@@ -677,24 +678,16 @@ public class Main {
 	}
 
 	private String _processLiteralIncludeBlock(
-			BufferedReader bufferedReader, String literalIncludeFileName,
+			String literalIncludeFileName, List<String> mystDirectiveLines,
 			File markdownFile)
 		throws Exception {
 
-		String literalIncludeLine;
-
 		Map<String, String> literalIncludeParameters = new HashMap<>();
 
-		while ((literalIncludeLine = bufferedReader.readLine()) != null) {
-			String trimmedLiteralIncludeLine = literalIncludeLine.trim();
-
-			if (trimmedLiteralIncludeLine.startsWith("```")) {
-				break;
-			}
-
+		for (String mystDirectiveLine : mystDirectiveLines) {
 			Matcher literalIncludeParameterMatcher =
 				_literalIncludeParameterPattern.matcher(
-					trimmedLiteralIncludeLine);
+					mystDirectiveLine.trim());
 
 			if (literalIncludeParameterMatcher.find()) {
 				String parameter = literalIncludeParameterMatcher.group(1);
@@ -739,90 +732,97 @@ public class Main {
 
 		BufferedReader bufferedReader = new BufferedReader(
 			new StringReader(markdown));
-		String line = null;
-		boolean startAdmonitionBlock = false;
-		boolean toctree = false;
+		String line;
 
 		while ((line = bufferedReader.readLine()) != null) {
-			StringBuilder leadingSpacesSB = new StringBuilder();
+			line = _processTokens(line);
 
-			for (Map.Entry<String, String> entry : _tokens.entrySet()) {
-				line = StringUtil.replace(
-					line, entry.getKey(), entry.getValue());
-			}
+			line = _processSphinxBadges(line);
 
-			Matcher matcher = _sphinxBadgePattern.matcher(line);
+			line = _processMySTDirectiveBlocks(
+				bufferedReader, line, markdownFile);
 
-			if (matcher.find()) {
-				line = matcher.replaceFirst("<span class=\"bdg-$1\">$2</span>");
-			}
-
-			String trimmedLine = line.trim();
-
-			for (int i = 0; i < line.indexOf(trimmedLine); i++) {
-				leadingSpacesSB.append(" ");
-			}
-
-			StringBuilder admonitionLineSB = new StringBuilder();
-
-			if (trimmedLine.startsWith("```") &&
-				(startAdmonitionBlock || toctree)) {
-
-				line = "";
-
-				startAdmonitionBlock = false;
-				toctree = false;
-			}
-
-			if (startAdmonitionBlock) {
-				admonitionLineSB.append("    ");
-				admonitionLineSB.append(line);
-			}
-
-			if (trimmedLine.startsWith("```{")) {
-				String qualifier = line.substring(line.indexOf("{") + 1);
-
-				qualifier = qualifier.substring(0, qualifier.indexOf("}"));
-
-				if (qualifier.equals("include")) {
-					line = _processIncludeBlock(
-						bufferedReader,
-						line.substring(
-							line.indexOf(qualifier) + qualifier.length() + 2),
-						markdownFile);
-				}
-				else if (qualifier.equals("literalinclude")) {
-					line = _processLiteralIncludeBlock(
-						bufferedReader,
-						line.substring(
-							line.indexOf(qualifier) + qualifier.length() + 2),
-						markdownFile);
-				}
-				else if (qualifier.equals("toctree")) {
-					toctree = true;
-				}
-				else {
-					admonitionLineSB.append(leadingSpacesSB);
-					admonitionLineSB.append("!!! ");
-					admonitionLineSB.append(qualifier);
-					admonitionLineSB.append(" \"\" ");
-
-					startAdmonitionBlock = true;
-				}
-			}
-
-			if (!Objects.equals(admonitionLineSB.toString(), "")) {
-				line = admonitionLineSB.toString();
-			}
-
-			line = line + "\n";
-
-			if (!toctree) {
-				sb.append(line);
-			}
+			sb.append(line + "\n");
 		}
 
 		return sb.toString();
+	}
+
+	private String _processMySTDirectiveBlocks(
+			BufferedReader bufferedReader, String line, File markdownFile)
+		throws Exception {
+
+		String trimmedLine = line.trim();
+
+		if (!trimmedLine.startsWith("```{")) {
+			return line;
+		}
+
+		int directiveNameBegin = line.indexOf(StringPool.OPEN_CURLY_BRACE) + 1;
+		int directiveNameEnd = line.indexOf(StringPool.CLOSE_CURLY_BRACE);
+
+		String directiveName = line.substring(
+			directiveNameBegin, directiveNameEnd);
+
+		List<String> mystDirectiveLines = new ArrayList<>();
+		String mystDirectiveLine;
+
+		while ((mystDirectiveLine = bufferedReader.readLine()) != null) {
+			mystDirectiveLine = _processTokens(mystDirectiveLine);
+
+			String trimmedMySTDirectiveLine = mystDirectiveLine.trim();
+
+			if (trimmedMySTDirectiveLine.startsWith("```") ||
+				(!directiveName.equals("toctree") &&
+				 trimmedMySTDirectiveLine.isBlank())) {
+
+				break;
+			}
+
+			mystDirectiveLines.add(mystDirectiveLine);
+		}
+
+		String directiveArguments = line.substring(directiveNameEnd + 1);
+
+		directiveArguments = directiveArguments.trim();
+
+		if (directiveName.equals("include")) {
+			return _processInclude(directiveArguments, markdownFile);
+		}
+		else if (directiveName.equals("literalinclude")) {
+			return _processLiteralIncludeBlock(
+				directiveArguments, mystDirectiveLines, markdownFile);
+		}
+		else if (directiveName.equals("toctree")) {
+			return StringPool.BLANK;
+		}
+
+		StringBuilder leadingSpacesSB = new StringBuilder();
+
+		for (int i = 0; i < line.indexOf(trimmedLine); i++) {
+			leadingSpacesSB.append(" ");
+		}
+
+		return _processAdmonitionBlock(
+			directiveName, mystDirectiveLines, leadingSpacesSB.toString());
+	}
+
+	private String _processSphinxBadges(String line) {
+		Matcher matcher = _sphinxBadgePattern.matcher(line);
+
+		if (matcher.find()) {
+			line = matcher.replaceFirst("<span class=\"bdg-$1\">$2</span>");
+		}
+
+		return line;
+	}
+
+	private String _processTokens(String line) {
+		for (Map.Entry<String, String> entry : _tokens.entrySet()) {
+			line = StringUtil.replace(line, entry.getKey(), entry.getValue());
+		}
+
+		return line;
 	}
 
 	private void _saveOutputToFile(

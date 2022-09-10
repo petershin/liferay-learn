@@ -635,6 +635,10 @@ public class Main {
 		File file = new File(fileName);
 
 		if (!file.exists()) {
+			file = new File(fileName.replaceAll("/ja/", "/en/"));
+		}
+
+		if (!file.exists()) {
 			throw new Exception("Could not find literalinclude file " + file);
 		}
 

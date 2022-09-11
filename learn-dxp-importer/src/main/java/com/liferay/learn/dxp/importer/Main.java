@@ -56,8 +56,10 @@ import com.vladsch.flexmark.util.sequence.BasedSequence;
 import com.vladsch.flexmark.util.sequence.CharSubSequence;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringReader;
@@ -823,6 +825,31 @@ public class Main {
 		return sb.toString();
 	}
 
+	private void _saveOutputToFile(
+			File markdownInputFile, String text, String pathPrefix)
+		throws Exception {
+
+		String markdownInputFileName = markdownInputFile.getPath();
+
+		String relativePath = markdownInputFileName.substring(
+			_markdownImportDirectory.length());
+
+		String outputFileName = pathPrefix + relativePath;
+
+		File outputFilePath = new File(FilenameUtils.getPath(outputFileName));
+
+		if (!outputFilePath.exists()) {
+			outputFilePath.mkdirs();
+		}
+
+		File outputFile = new File(outputFileName);
+
+		BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
+
+		bw.write(text);
+		bw.close();
+	}
+
 	private BasedSequence _toBasedSequence(String string) {
 		return CharSubSequence.of(string.toCharArray(), 0, string.length());
 	}
@@ -838,7 +865,7 @@ public class Main {
 		return FilenameUtils.removeExtension(friendlyURLPath);
 	}
 
-	private String _toHTML(File file, String text) {
+	private String _toHTML(File file, String text) throws Exception {
 		com.vladsch.flexmark.util.ast.Document document = _parser.parse(text);
 
 		AbstractYamlFrontMatterVisitor abstractYamlFrontMatterVisitor =
@@ -858,7 +885,13 @@ public class Main {
 			_markdownFile = null;
 		}
 
-		return _renderer.render(document);
+		String html = _renderer.render(document);
+
+		_saveOutputToFile(file, text, "build/markdown");
+
+		_saveOutputToFile(file, html, "build/html");
+
+		return html;
 	}
 
 	private StructuredContent _toStructuredContent(String fileName)

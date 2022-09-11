@@ -33,6 +33,7 @@ import com.liferay.portal.kernel.util.HashMapBuilder;
 import com.liferay.portal.kernel.util.Tuple;
 
 import com.vladsch.flexmark.ast.Image;
+import com.vladsch.flexmark.ast.Link;
 import com.vladsch.flexmark.ext.admonition.AdmonitionExtension;
 import com.vladsch.flexmark.ext.anchorlink.AnchorLinkExtension;
 import com.vladsch.flexmark.ext.aside.AsideExtension;
@@ -897,7 +898,7 @@ public class Main {
 			friendlyURLPath = friendlyURLPath.substring(1);
 		}
 
-		return FilenameUtils.removeExtension(friendlyURLPath);
+		return FilenameUtils.removeExtension(friendlyURLPath) + ".html";
 	}
 
 	private String _toHTML(File file, String text) throws Exception {
@@ -1059,6 +1060,12 @@ public class Main {
 		_nodeVisitor.visitChildren(image);
 	}
 
+	private void _visit(Link link) throws Exception {
+		BasedSequence url = link.getUrl();
+
+		link.setUrl(url.replace(".md", ".html"));
+	}
+
 	private Map<String, Long> _documentFolderIds = new HashMap<>();
 	private DocumentFolderResource _documentFolderResource;
 	private DocumentResource _documentResource;
@@ -1083,6 +1090,21 @@ public class Main {
 				public void visit(Image image) {
 					try {
 						_visit(image);
+					}
+					catch (Exception exception) {
+						exception.printStackTrace();
+					}
+				}
+
+			}),
+		new VisitHandler<Link>(
+			Link.class,
+			new Visitor<Link>() {
+
+				@Override
+				public void visit(Link link) {
+					try {
+						_visit(link);
 					}
 					catch (Exception exception) {
 						exception.printStackTrace();

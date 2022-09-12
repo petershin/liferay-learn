@@ -591,9 +591,9 @@ public class Main {
 	}
 
 	private String _processLiteralInclude(
-			String literalIncludeFileName, File markdownFile,
+			String literalIncludeFileName,
 			Map<String, String> literalIncludeParameters,
-			List<Tuple> literalIncludeLineRanges)
+			List<Tuple> literalIncludeLineRanges, File markdownFile)
 		throws Exception {
 
 		String fileName =
@@ -687,8 +687,8 @@ public class Main {
 		}
 
 		return _processLiteralInclude(
-			literalIncludeFileName, markdownFile, literalIncludeParameters,
-			literalIncludeLineRanges);
+			literalIncludeFileName, literalIncludeParameters,
+			literalIncludeLineRanges, markdownFile);
 	}
 
 	private String _processLiteralIncludeLineRange(

@@ -1044,9 +1044,9 @@ public class Main {
 	}
 
 	private void _visit(Link link) throws Exception {
-		BasedSequence url = link.getUrl();
+		BasedSequence basedSequence = link.getUrl();
 
-		link.setUrl(url.replace(".md", ".html"));
+		link.setUrl(basedSequence.replace(".md", ".html"));
 	}
 
 	private Map<String, Long> _documentFolderIds = new HashMap<>();

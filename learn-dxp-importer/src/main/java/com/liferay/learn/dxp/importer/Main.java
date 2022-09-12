@@ -129,7 +129,7 @@ public class Main {
 			properties.getProperty("liferay.oauth.client.id"),
 			properties.getProperty("liferay.oauth.client.secret"),
 			properties.getProperty("liferay.url"),
-			properties.getProperty("markdown.import.directory"),
+			properties.getProperty("markdown.import.dir"),
 			tokenProperties);
 
 		main.uploadToLiferay();
@@ -138,7 +138,7 @@ public class Main {
 	public Main(
 			long liferayContentStructureId, long liferayGroupId,
 			String liferayOAuthClientId, String liferayOAuthClientSecret,
-			String liferayURL, String markdownImportDirectory,
+			String liferayURL, String markdownImportDirName,
 			Properties tokenProperties)
 		throws Exception {
 
@@ -147,7 +147,7 @@ public class Main {
 		_liferayOAuthClientId = liferayOAuthClientId;
 		_liferayOAuthClientSecret = liferayOAuthClientSecret;
 		_liferayURL = liferayURL;
-		_markdownImportDirectory = markdownImportDirectory;
+		_markdownImportDirName = markdownImportDirName;
 
 		Enumeration<String> enumeration =
 			(Enumeration<String>)tokenProperties.propertyNames();
@@ -162,7 +162,7 @@ public class Main {
 			}
 		}
 
-		_addFileNames(_markdownImportDirectory);
+		_addFileNames(_markdownImportDirName);
 
 		_initFlexmark();
 		_initResourceBuilders(_getOAuthAuthorization());
@@ -377,7 +377,7 @@ public class Main {
 
 		String fileSeparator = System.getProperty("file.separator");
 		String relativePath = markdownFilePath.substring(
-			_markdownImportDirectory.length());
+			_markdownImportDirName.length());
 
 		List<String> relativePaths = StringUtil.split(
 			relativePath, fileSeparator.charAt(0));
@@ -388,7 +388,7 @@ public class Main {
 
 		StringBuilder sb = new StringBuilder();
 
-		sb.append(_markdownImportDirectory);
+		sb.append(_markdownImportDirName);
 		sb.append(fileSeparator + relativePaths.get(0));
 		sb.append(fileSeparator + relativePaths.get(1));
 		sb.append(fileSeparator + relativePaths.get(2));
@@ -864,7 +864,7 @@ public class Main {
 		String markdownInputFileName = markdownInputFile.getPath();
 
 		String relativePath = markdownInputFileName.substring(
-			_markdownImportDirectory.length());
+			_markdownImportDirName.length());
 
 		String outputFileName = pathPrefix + relativePath;
 
@@ -888,7 +888,7 @@ public class Main {
 
 	private String _toFriendlyURLPath(String fileName) {
 		String friendlyURLPath = fileName.substring(
-			_markdownImportDirectory.length());
+			_markdownImportDirName.length());
 
 		if (friendlyURLPath.startsWith(System.getProperty("file.separator"))) {
 			friendlyURLPath = friendlyURLPath.substring(1);
@@ -1075,7 +1075,7 @@ public class Main {
 	private final Pattern _literalIncludeParameterPattern = Pattern.compile(
 		":(.*): (.*)");
 	private File _markdownFile;
-	private final String _markdownImportDirectory;
+	private final String _markdownImportDirName;
 
 	private NodeVisitor _nodeVisitor = new NodeVisitor(
 		new VisitHandler<Image>(

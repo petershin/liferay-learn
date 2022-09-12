@@ -541,10 +541,9 @@ public class Main {
 	private String _processInclude(String includeFileName, File markdownFile)
 		throws Exception {
 
-		String markdownFileName = markdownFile.getPath();
+		File includeFile = null;
 
-		String fileName =
-			FilenameUtils.getPath(markdownFileName) + includeFileName;
+		String markdownFileName = markdownFile.getPath();
 
 		if (includeFileName.startsWith(File.separator)) {
 			String dirName = markdownFileName.substring(
@@ -568,19 +567,21 @@ public class Main {
 			sb.append(dirNameParts.get(2));
 			sb.append(includeFileName);
 
-			fileName = sb.toString();
+			includeFile = new File(sb.toString());
+		}
+		else {
+			includeFile = new File(
+				FilenameUtils.getPath(markdownFileName) + includeFileName);
 		}
 
-		File file = new File(fileName);
-
-		if (!file.exists()) {
-			throw new Exception("Nonexistent file " + file);
+		if (!includeFile.exists()) {
+			throw new Exception("Nonexistent include file " + includeFile);
 		}
 
 		StringBuilder sb = new StringBuilder();
 
 		BufferedReader bufferedReader = new BufferedReader(
-			new InputStreamReader(new FileInputStream(file)));
+			new InputStreamReader(new FileInputStream(includeFile)));
 
 		String line = null;
 

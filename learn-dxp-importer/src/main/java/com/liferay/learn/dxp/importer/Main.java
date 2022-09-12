@@ -128,7 +128,7 @@ public class Main {
 				mainProperties.getProperty("liferay.group.id")),
 			mainProperties.getProperty("liferay.oauth.client.id"),
 			mainProperties.getProperty("liferay.oauth.client.secret"),
-			mainProperties.getProperty("liferay.url"),
+			new URL(mainProperties.getProperty("liferay.url")),
 			mainProperties.getProperty("markdown.import.dir"),
 			tokenProperties);
 
@@ -138,7 +138,7 @@ public class Main {
 	public Main(
 			long liferayContentStructureId, long liferayGroupId,
 			String liferayOAuthClientId, String liferayOAuthClientSecret,
-			String liferayURL, String markdownImportDirName,
+			URL liferayURL, String markdownImportDirName,
 			Properties tokenProperties)
 		throws Exception {
 
@@ -501,12 +501,10 @@ public class Main {
 		DocumentFolderResource.Builder documentFolderResourceBuilder =
 			DocumentFolderResource.builder();
 
-		URL url = new URL(_liferayURL);
-
 		_documentFolderResource = documentFolderResourceBuilder.header(
 			"Authorization", authorization
 		).endpoint(
-			url.getHost(), url.getPort(), url.getProtocol()
+			_liferayURL.getHost(), _liferayURL.getPort(), _liferayURL.getProtocol()
 		).build();
 
 		DocumentResource.Builder documentResourceBuilder =
@@ -515,7 +513,7 @@ public class Main {
 		_documentResource = documentResourceBuilder.header(
 			"Authorization", authorization
 		).endpoint(
-			url.getHost(), url.getPort(), url.getProtocol()
+			_liferayURL.getHost(), _liferayURL.getPort(), _liferayURL.getProtocol()
 		).build();
 
 		StructuredContentResource.Builder structuredContentResourceBuilder =
@@ -524,7 +522,7 @@ public class Main {
 		_structuredContentResource = structuredContentResourceBuilder.header(
 			"Authorization", authorization
 		).endpoint(
-			url.getHost(), url.getPort(), url.getProtocol()
+			_liferayURL.getHost(), _liferayURL.getPort(), _liferayURL.getProtocol()
 		).build();
 
 		StructuredContentFolderResource.Builder
@@ -535,7 +533,7 @@ public class Main {
 			structuredContentFolderResourceBuilder.header(
 				"Authorization", authorization
 			).endpoint(
-				url.getHost(), url.getPort(), url.getProtocol()
+				_liferayURL.getHost(), _liferayURL.getPort(), _liferayURL.getProtocol()
 			).build();
 	}
 
@@ -1060,7 +1058,7 @@ public class Main {
 	private final long _liferayGroupId;
 	private final String _liferayOAuthClientId;
 	private final String _liferayOAuthClientSecret;
-	private final String _liferayURL;
+	private final URL _liferayURL;
 	private final Pattern _literalIncludeParameterPattern = Pattern.compile(
 		":(.*): (.*)");
 	private File _markdownFile;

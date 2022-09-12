@@ -67,7 +67,6 @@ import java.io.StringReader;
 import java.net.URL;
 
 import java.nio.charset.Charset;
-import java.nio.charset.CharsetEncoder;
 import java.nio.charset.StandardCharsets;
 
 import java.util.ArrayList;
@@ -586,8 +585,7 @@ public class Main {
 	private String _processLiteralInclude(
 			String literalIncludeFileName,
 			List<Tuple> literalIncludeLineRangeTuples,
-			Map<String, String> literalIncludeParameters,
-			File markdownFile)
+			Map<String, String> literalIncludeParameters, File markdownFile)
 		throws Exception {
 
 		String fileName =
@@ -614,10 +612,13 @@ public class Main {
 				literalIncludeParameters.get("language"), "java"));
 		sb.append("\n");
 
-		for (Tuple literalIncludeLineRangeTuple : literalIncludeLineRangeTuples) {
+		for (Tuple literalIncludeLineRangeTuple :
+				literalIncludeLineRangeTuples) {
+
 			sb.append(
 				_processLiteralIncludeLineRange(
-					file, literalIncludeLineRangeTuple, literalIncludeParameters));
+					file, literalIncludeLineRangeTuple,
+					literalIncludeParameters));
 		}
 
 		sb.append("```");
@@ -626,53 +627,54 @@ public class Main {
 	}
 
 	private String _processLiteralIncludeBlock(
-			String literalIncludeFileName, List<String> mySTDirectiveLines,
-			File markdownFile)
+			String literalIncludeFileName, File markdownFile,
+			List<String> mySTDirectiveLines)
 		throws Exception {
 
 		Map<String, String> literalIncludeParameters = new HashMap<>();
 		List<Tuple> literalIncludeLineRangeTuples = new ArrayList<>();
 
 		for (String mySTDirectiveLine : mySTDirectiveLines) {
-			Matcher literalIncludeParameterMatcher =
-				_literalIncludeParameterPattern.matcher(
-					mySTDirectiveLine.trim());
+			Matcher matcher = _literalIncludeParameterPattern.matcher(
+				mySTDirectiveLine.trim());
 
-			if (literalIncludeParameterMatcher.find()) {
-				String parameter = literalIncludeParameterMatcher.group(1);
-				String value = literalIncludeParameterMatcher.group(2);
+			if (!matcher.find()) {
+				continue;
+			}
 
-				if (parameter.equals("lines")) {
-					List<String> lineRanges = StringUtil.split(
-						value, CharPool.COMMA);
+			String name = matcher.group(1);
+			String value = matcher.group(2);
 
-					for (String lineRange : lineRanges) {
-						List<String> lineValues = StringUtil.split(
-							lineRange, CharPool.DASH);
+			if (name.equals("lines")) {
+				List<String> lineRanges = StringUtil.split(
+					value, CharPool.COMMA);
 
-						Tuple lineRangeTuple;
+				for (String lineRange : lineRanges) {
+					Tuple tuple = null;
 
-						if (lineValues.size() == 1) {
-							lineRangeTuple = new Tuple(
-								GetterUtil.getInteger(lineValues.get(0)),
-								GetterUtil.getInteger(lineValues.get(0)));
-						}
-						else if (lineValues.size() == 2) {
-							lineRangeTuple = new Tuple(
-								GetterUtil.getInteger(lineValues.get(0)),
-								GetterUtil.getInteger(lineValues.get(1)));
-						}
-						else {
-							throw new Exception(
-								"Invalid literalinclude lines value " + value);
-						}
+					List<String> lineRangParts = StringUtil.split(
+						lineRange, CharPool.DASH);
 
-						literalIncludeLineRangeTuples.add(lineRangeTuple);
+					if (lineRangParts.size() == 1) {
+						tuple = new Tuple(
+							GetterUtil.getInteger(lineRangParts.get(0)),
+							GetterUtil.getInteger(lineRangParts.get(0)));
 					}
+					else if (lineRangParts.size() == 2) {
+						tuple = new Tuple(
+							GetterUtil.getInteger(lineRangParts.get(0)),
+							GetterUtil.getInteger(lineRangParts.get(1)));
+					}
+					else {
+						throw new Exception(
+							"Invalid literal include lines value " + value);
+					}
+
+					literalIncludeLineRangeTuples.add(tuple);
 				}
-				else {
-					literalIncludeParameters.put(parameter, value);
-				}
+			}
+			else {
+				literalIncludeParameters.put(name, value);
 			}
 		}
 
@@ -686,7 +688,8 @@ public class Main {
 	}
 
 	private String _processLiteralIncludeLineRange(
-			File file, Tuple literalIncludeLineRangeTuple, Map<String, String> literalIncludeParameters)
+			File file, Tuple literalIncludeLineRangeTuple,
+			Map<String, String> literalIncludeParameters)
 		throws Exception {
 
 		StringBuilder sb = new StringBuilder();
@@ -787,7 +790,7 @@ public class Main {
 		}
 		else if (directiveName.equals("literalinclude")) {
 			return _processLiteralIncludeBlock(
-				directiveArguments, mySTDirectiveLines, markdownFile);
+				directiveArguments, markdownFile, mySTDirectiveLines);
 		}
 		else if (directiveName.equals("toctree")) {
 			return StringPool.BLANK;

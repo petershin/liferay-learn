@@ -617,7 +617,7 @@ public class Main {
 		for (Tuple literalIncludeLineRangeTuple : literalIncludeLineRangeTuples) {
 			sb.append(
 				_processLiteralIncludeLineRange(
-					file, literalIncludeParameters, literalIncludeLineRangeTuple));
+					file, literalIncludeLineRangeTuple, literalIncludeParameters));
 		}
 
 		sb.append("```");
@@ -686,8 +686,7 @@ public class Main {
 	}
 
 	private String _processLiteralIncludeLineRange(
-			File file, Map<String, String> literalIncludeParameters,
-			Tuple literalIncludeLineRangeTuple)
+			File file, Tuple literalIncludeLineRangeTuple, Map<String, String> literalIncludeParameters)
 		throws Exception {
 
 		StringBuilder sb = new StringBuilder();

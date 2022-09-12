@@ -162,8 +162,6 @@ public class Main {
 			}
 		}
 
-		_oauthExpirationMillis = 0L;
-
 		_addFileNames(_markdownImportDirectory);
 
 		_initFlexmark();

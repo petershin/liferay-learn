@@ -108,7 +108,7 @@ public class Main {
 		Properties properties = new Properties();
 
 		try (InputStream inputStream = Main.class.getResourceAsStream(
-				"dependencies/application.properties")) {
+				"dependencies/main.properties")) {
 
 			properties.load(inputStream);
 		}

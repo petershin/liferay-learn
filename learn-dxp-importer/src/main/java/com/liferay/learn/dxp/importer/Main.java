@@ -1014,14 +1014,15 @@ public class Main {
 		link.setUrl(basedSequence.replace(".md", ".html"));
 	}
 
-	private void _write(String content, String dirName, File markdownInputFile)
+	private void _write(String content, String dirName, File markdownFile)
 		throws Exception {
 
-		String markdownInputFileName = markdownInputFile.getPath();
+		String markdownFileName = markdownFile.getPath();
 
-		File file = new File(
-			dirName,
-			markdownInputFileName.substring(_markdownImportDirName.length()));
+		markdownFileName = markdownFileName.substring(
+			_markdownImportDirName.length());
+
+		File file = new File(dirName + markdownFileName);
 
 		FileUtils.forceMkdirParent(file);
 

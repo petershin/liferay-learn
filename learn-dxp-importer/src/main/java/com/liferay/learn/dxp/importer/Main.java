@@ -205,21 +205,21 @@ public class Main {
 		_fileNames.add(fileName);
 	}
 
-	private String _dedent(String s, int dedent) {
-		if (s == null) {
+	private String _dedent(int dedent, String line) {
+		if (line == null) {
 			return null;
 		}
 
-		int length = s.length();
+		int length = line.length();
 
 		if (length == 0) {
-			return s;
+			return line;
 		}
 
 		int index = 0;
 
 		while ((index < length) && (index < dedent)) {
-			char c = s.charAt(index);
+			char c = line.charAt(index);
 
 			if (((c > CharPool.SPACE) && (c < 128)) ||
 				!Character.isWhitespace(c)) {
@@ -231,10 +231,10 @@ public class Main {
 		}
 
 		if (index > 0) {
-			return s.substring(index);
+			return line.substring(index);
 		}
 
-		return s;
+		return line;
 	}
 
 	private String[] _getDirNames(String fileName) throws Exception {
@@ -715,7 +715,7 @@ public class Main {
 
 		while ((line = br.readLine()) != null) {
 			if (i >= (lineStart - 1)) {
-				sb.append(_dedent(line, dedent) + "\n");
+				sb.append(_dedent(dedent, line) + "\n");
 			}
 
 			if ((lineEnd != -1) && (i > (lineEnd - 2))) {

@@ -210,16 +210,16 @@ public class Main {
 			return null;
 		}
 
-		int len = s.length();
+		int length = s.length();
 
-		if (len == 0) {
+		if (length == 0) {
 			return s;
 		}
 
-		int x = 0;
+		int index = 0;
 
-		while ((x < len) && (x < dedent)) {
-			char c = s.charAt(x);
+		while ((index < length) && (index < dedent)) {
+			char c = s.charAt(index);
 
 			if (((c > CharPool.SPACE) && (c < 128)) ||
 				!Character.isWhitespace(c)) {
@@ -227,11 +227,11 @@ public class Main {
 				break;
 			}
 
-			x++;
+			index++;
 		}
 
-		if (x > 0) {
-			return s.substring(x);
+		if (index > 0) {
+			return s.substring(index);
 		}
 
 		return s;

@@ -578,18 +578,9 @@ public class Main {
 			throw new Exception("Nonexistent include file " + includeFile);
 		}
 
-		StringBuilder sb = new StringBuilder();
-
-		BufferedReader bufferedReader = new BufferedReader(
-			new InputStreamReader(new FileInputStream(includeFile)));
-
-		String line = null;
-
-		while ((line = bufferedReader.readLine()) != null) {
-			sb.append(line + "\n");
-		}
-
-		return _processMarkdown(sb.toString(), markdownFile);
+		return _processMarkdown(
+			FileUtils.readFileToString(includeFile, StandardCharsets.UTF_8),
+			markdownFile);
 	}
 
 	private String _processLiteralInclude(

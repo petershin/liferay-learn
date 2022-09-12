@@ -541,7 +541,7 @@ public class Main {
 	private String _processInclude(String includeFileName, File markdownFile)
 		throws Exception {
 
-		File includeFile = null;
+		File file = null;
 
 		String markdownFileName = markdownFile.getPath();
 
@@ -567,19 +567,19 @@ public class Main {
 			sb.append(dirNameParts.get(2));
 			sb.append(includeFileName);
 
-			includeFile = new File(sb.toString());
+			file = new File(sb.toString());
 		}
 		else {
-			includeFile = new File(
+			file = new File(
 				FilenameUtils.getPath(markdownFileName) + includeFileName);
 		}
 
-		if (!includeFile.exists()) {
-			throw new Exception("Nonexistent include file " + includeFile);
+		if (!file.exists()) {
+			throw new Exception("Nonexistent include " + file);
 		}
 
 		return _processMarkdown(
-			FileUtils.readFileToString(includeFile, StandardCharsets.UTF_8),
+			FileUtils.readFileToString(file, StandardCharsets.UTF_8),
 			markdownFile);
 	}
 
@@ -601,7 +601,7 @@ public class Main {
 		}
 
 		if (!file.exists()) {
-			System.out.println("Nonexistent literal include file " + file);
+			System.out.println("Nonexistent literal include " + file);
 
 			return StringPool.BLANK;
 		}

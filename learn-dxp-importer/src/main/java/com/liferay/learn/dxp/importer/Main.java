@@ -333,11 +333,7 @@ public class Main {
 	}
 
 	private String _getOAuthAuthorization() throws Exception {
-		System.out.println("Obtaining OAuth token");
-
 		HttpPost httpPost = new HttpPost(_liferayURL + "/o/oauth2/token");
-
-		httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
 
 		httpPost.setEntity(
 			new UrlEncodedFormEntity(
@@ -347,6 +343,7 @@ public class Main {
 						"client_secret", _liferayOAuthClientSecret),
 					new BasicNameValuePair(
 						"grant_type", "client_credentials"))));
+		httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
 
 		HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
 
@@ -359,19 +356,19 @@ public class Main {
 			StatusLine statusLine = closeableHttpResponse.getStatusLine();
 
 			if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
-				JSONObject responseJSONObject = new JSONObject(
+				JSONObject jsonObject = new JSONObject(
 					EntityUtils.toString(
 						closeableHttpResponse.getEntity(),
 						Charset.defaultCharset()));
 
 				_oauthExpirationMillis =
-					responseJSONObject.getLong("expires_in") * 1000;
+					jsonObject.getLong("expires_in") * 1000;
 
-				return responseJSONObject.getString("token_type") + " " +
-					responseJSONObject.getString("access_token");
+				return jsonObject.getString("token_type") + " " +
+					jsonObject.getString("access_token");
 			}
 
-			throw new Exception("Unable to obtain OAuth token");
+			throw new Exception("Unable to get OAuth authorization");
 		}
 	}
 

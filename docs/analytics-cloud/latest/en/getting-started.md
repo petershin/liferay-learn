@@ -1,120 +1,105 @@
 ---
 toc:
-- ./getting-started/signing-up-for-a-new-workspace.md
-- ./getting-started/multi-factor-authentication.md
-- ./getting-started/accessing-your-workspace.md
-- ./getting-started/viewing-the-analytics-dashboard.md
+- ./getting-started/connecting-liferay-dxp-to-analytics-cloud.md
+- ./getting-started/syncing-sites-and-contacts.md
+- ./getting-started/understanding-your-sites-data.md
+- ./getting-started/paths-and-pages.md
+- ./getting-started/assets-and-events.md
+- ./getting-started/understanding-your-audience.md
+- ./getting-started/individuals.md
+- ./getting-started/segments.md
 ---
 # Getting Started
 
 ```{toctree}
 :maxdepth: 3
 
-getting-started/signing-up-for-a-new-workspace.md
-getting-started/multi-factor-authentication.md
-getting-started/accessing-your-workspace.md
-getting-started/viewing-the-analytics-dashboard.md
+getting-started/connecting-liferay-dxp-to-analytics-cloud.md
+getting-started/syncing-sites-and-contacts.md
+getting-started/understanding-your-sites-data.md
+getting-started/paths-and-pages.md
+getting-started/assets-and-events.md
+getting-started/understanding-your-audience.md
+getting-started/individuals.md
+./getting-started/segments.md
 ```
 
-Your company interacts with lots of people, including existing and prospective customers. On your websites they browse products and services, ask questions, leave feedback, and more. Presenting relevant, interesting site content motivates people to do business with you. Knowing your customers well and understanding how they interact with your digital content can help you improve their experience.
+Welcome to Liferay Analytics Cloud. This learning path will take you on a journey to learn how to setup and start using Analytics Cloud to get the most out of its different features. Delivering an awesome digital experience is important to you. But knowing how to craft your site and make future improvements only comes from understanding who your users are and knowing how they interact with your site. With the integration of Analytics Cloud and Liferay DXP, you can both measure what's happening on your site and easily put the data into action through site improvements.
 
-Liferay Analytics Cloud is a cloud-based SaaS offering that works with Liferay Digital Experience Platform (Liferay DXP) to give you insights into customer attributes and behavior. It aggregates your data from multiple sources and presents analytics, making it easier to understand people and their interests. The centralized contact data and analytics help you communicate intelligently with people and create terrific user experiences that drive business and make people happier.
+Some key differences between Liferay Analytics Cloud versus other analytics solutions:
 
-![As you learn about topics that interest your audience, you can speak intelligently about the topics, through online content and in person.](./getting-started/images/01.png)
+| Liferay Analytics Cloud | Other analytics products |
+| :--- | :--- |
+| Quick setup and out-of-the-box integration | Potentially lengthy setup process and manual integration |
+| Both site-level and individual page analytics | Analytics mostly focused on individual pages |
+| Insights into both known and anonymous visitors | Only anonymous visitor data (depending on site setup) |
 
-## Benefits
+Before diving into [Setting Up Your Analytics Cloud](#setting-up-you-analytics-cloud), let's take a quick tour of the major features that can bring your business the most value. In Analytics Cloud, all your analytics data is easily accessed through the navigation menu on the left of the screen. The [Touchpoints](#touchpoints) section reports on what's happening with your website, your individual pages, and different assets. The [People](#people) section reports on what individuals are doing on your website and on any segment data of groups of individuals.
 
-Here are key things Analytics Cloud helps you do:
+![The left navigation has the Touchpoints section and People section.](./getting-started/images/01.png)
 
-* **Gain a well-rounded view of people:** Analytics Cloud gives you a clear picture of people by aggregating their profile properties and behavior data from multiple sources, including Liferay DXP sites.
+## Touchpoints
 
-* **Identify and track target audiences:** You can focus on characteristics and behaviors common to targeted individuals, aggregate those individuals into Segments, and track Segment growth.
+From the moment you sync your DXP site, Analytics Cloud automatically begins collecting data across all your pages and assets. There's no need for additional configuration.  
 
-* **Learn people’s interests:** Once you know topics that interest people, you can engage them on those topics. You can also produce stimulating content that highlights how your products and services relate to the topics. These things help you generate new business and improve customer relationships.
+### Sites
 
-* **Measure content performance:** Identify content that gets the most activity so you can build off its success by creating similar content to grow other parts of your business. Spot under-performing content or content issues that prevent people from engaging more deeply with your brand. Fix or improve the content to get people on track, or remove the content from your site.
+The [Sites Dashboard](./touchpoints/sites-dashboard.md) is a site-wide report that aggregates analytics data across your entire site in one comprehensive dashboard.
 
-* **Determine the best advertising channels:** Discover how customers are finding your site pages so you can advertise on the right channels.
+![The Sites Dashboard gives high level analytics of your website.](./getting-started/images/02.png)
 
-These are just some ways you benefit from using Analytics Cloud. Before getting started with Analytics Cloud, you should understand its key components.
+View analytics such as visitor data across time, most visited pages, and traffic sources.
 
-Analytics Cloud helps you understand people, their interaction with your sites, and the paths (or channels) that draw them to your sites in these ways:
+Click the _Pages_ tab to see detailed analytics of every page on your site. Click any page to drill down on the specific analytics of that page.
 
-- [People](./people.md)
-- [Touchpoints](./touchpoints.md)
-- [Path](./touchpoints/pages/paths.md)
+![Click any page to see its specific analytics.](./getting-started/images/03.png)
+
+Get actionable data such as how long visitors stay on a page or what percent of visitors leave a page. As you make improvements to your pages or promote them through marketing, use Analytics Cloud to track their performance over time.
+
+From a page's analytics, click the _Path_ tab to see where the page's traffic is coming from (i.e. organic or referral traffic). This is especially useful if you are paying for ad traffic and want to know whether your marketing efforts are working.
+
+### Assets
+
+As background, the term _asset_ refers to any type of content that exists in a Liferay instance. This could be a blog post, a document, a file, a form, or other web content. Analytics Cloud tracks how visitors interact with these assets on your site. Click _Assets_ in the navigation menu to see analytics data of the various assets of your site.
+
+![Click Assets on the left navigation to see asset analytics.](./getting-started/images/04.png)
+
+The assets are organized by different types. Click on the different tabs at the top to see analytics for each type of asset.
+
+### Events
+
+The term _event_ refers to various user interactions that are tracked by Analytics Cloud. These are events such as page views, interactions with assets, and various other user actions. The [Events Analysis](./touchpoints/events/events-analysis.md) tool is a powerful tool to help break down and filter these events in ways that are meaningful to your business. 
+
+For example, use the tool to compare the monthly page views of specific pages. 
+
+![Use the Events Analysis tool to compare monthly page views.](./getting-started/images/08.png)
+
+The Events Analysis tool can become even more powerful if you [Define Custom Events](./workspace-data/definitions/definitions-for-events.md#custom-events) that are tailored to your site. See [Tracking Events](./touchpoints/events/tracking-events.md) to learn more.
 
 ## People
 
-Existing and prospective customers interact with your company in person, on your websites, and via email and messaging. On Liferay DXP sites, people are registered users or visitors. Analytics Cloud integrates contacts (people) from multiple sources, including Liferay DXP sites, into a single view. It merges contact data into rich profiles of Individuals—unique contacts. You can name contact fields your way, making them most useful to you and your company.
+After syncing your Liferay DXP contacts, Analytics Cloud will begin tracking visitor data for you to analyze.
 
-Analytics Cloud lets you aggregate Individuals into Segments. Segments are groups of Individuals with common characteristics. You can create Segments dynamically based on criteria such as industry and location, or statically (comprising hand-selected Individuals). Industry Segment Analytics shows industries engaging with you most and identifies your content that interests them.
+### Segments
 
-![Dynamic Segment membership growth (and decline) reflects the number of people matching the Segment’s criteria.](./getting-started/images/02.png)
+Use the [Segments](./people/segments/segments.md) tool to group individuals based on common attributes. The segmentation can be set up dynamically by attributes you select, or set up statically with the individuals you specifically choose. For example, you could create a dynamic segment of managers by filtering any users on your site with a job title that contains the word "manager".
 
-Contact profiles are a big part of Analytics Cloud, but analytics about people’s interaction with your website pages and assets is a bigger part. This type of analytics (called Touchpoint Analytics) helps you determine how effective your content is in achieving your business goals.
+![Overview page of dynamic segment of managers.](./getting-started/images/06.png)
 
-## Touchpoint Analytics
+The overview tab gives you a quick view of the number of people in the segment and their top interests.
 
-Touchpoints are the locations (pages) where people interact with content. Here are some of the Touchpoint Analytics:
+### Individuals
 
-* **Visitor count:** the number of users (guest and signed in) visiting a Touchpoint.
-* **Session length:** amount of time people are spending on a page’s site.
-* **Number of sessions:** number of different people on a page’s site.
-* **Time on page:** amount of time people are spending on a page.
-* **Bounce rate:** percentage of visitors to a particular website who navigate away from the site after viewing only one page.
+The [Individuals Dashboard](./people/individuals/individuals-dashboard.md) gives an overview of all your visitors. See which portion of your visitors are known users who are logged in to your site and which visitors are unknown. Click the _Known Individuals_ tab to drill down on a particular individual.
 
-Assets are specific types of content entities on site pages. Traditional web analytics are based on static websites—everyone sees the same page content. By additionally providing analytics on content articles, Analytics Cloud helps you determine the article effectiveness. It also provides insight into people’s interaction with personalized content. It generates charts on target audience engagement with the content.
+![See analytics data on any of your known individuals.](./getting-started/images/07.png)
 
-Analytics Cloud supports these Liferay DXP Assets:
+These [Individual Profiles](./people/individuals/individual-profiles.md) provide detailed analytics on how each user is interacting with your site. Understanding individual behavior and interests can help you make better decisions when improving your site to tailor user experience.
 
-- [Blogs](./touchpoints/assets/blogs.md)
-- [Documents and Media](./touchpoints/assets/documents-and-media.md)
-- [Forms](./touchpoints/assets/forms.md)
-- [Web Content](./touchpoints/assets/web-content.md)
+## Setting Up You Analytics Cloud
 
-Regarding user behavior with a form, for example, Analytics Cloud shows the number of views and submissions, the percentage of users abandoning the form, and the form’s average completion time. A line graph shows the number of views over time.
+Now that you've seen some of the capabilities of Analytics Cloud, let's get your workspace set up. The first step is to connect your Liferay DXP instance to Analytics Cloud. This is, in essence, giving Analytics Cloud permission to view what's happening on your Liferay instance.
 
-![See how the number of views, visitors, and more are trending on your pages.](./getting-started/images/03.png)
+See [Connecting Liferay DXP to Analytics Cloud](./getting-started/connecting-liferay-dxp-to-analytics-cloud.md) and follow the steps.
 
-As you view Page and Asset Analytics you can discern whether an action is positive or negative. Here are some examples.
-
-Positive:
-
-* staying active in sessions
-* frequent sign in
-* submitting a form
-* giving an article five stars
-
-Negative:
-
-* signing out shortly after signing in
-* passing by key strategic content
-* abandoning a form
-* letting a session end
-
-Learning how people get to pages and Assets is also useful. That’s Path Analytics.
-
-## Path Analytics
-
-People get to content through different channels (paths):
-
-* Google search
-* Advertisements
-* Site navigation
-* Search within the site
-* Links inside other pages
-* Links within Assets
-
-If you expect your advertisements on a channel to draw lots of people to a page, for example, you can check its performance in the page’s Path Analytics. You may learn that a particular social network increasingly drives site traffic, and thus advertise more on that network.
-
-Path Analytics reports the device and browser types that render your site content. It helps you determine which devices and browsers to test more and optimize user experiences on.
-
-You’ve been introduced to Liferay Analytics Cloud and what it offers: Segments, Touchpoints, Paths, and more. It’s time to experience Analytics Cloud for yourself.
-
-## Next Steps
-
-- [Signing Up for a New Workspace](./getting-started/signing-up-for-a-new-workspace.md)
-- [Multi-factor Authentication](./getting-started/multi-factor-authentication.md)
-- [Accessing Your Workspace](./getting-started/accessing-your-workspace.md)
-- [Viewing the Analytics Dashboard](./getting-started/viewing-the-analytics-dashboard.md)
+The contents of the article are also covered in this video tutorial [What is Analytics Cloud?](https://youtu.be/RGGvIG3YPyg).

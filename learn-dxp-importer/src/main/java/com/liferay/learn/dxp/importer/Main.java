@@ -539,26 +539,6 @@ public class Main {
 			).build();
 	}
 
-	private String _processAdmonitionBlock(
-		String directiveName, List<String> mystDirectiveLines,
-		String leadingSpaces) {
-
-		StringBuilder admonitionLineSB = new StringBuilder();
-
-		admonitionLineSB.append(leadingSpaces);
-		admonitionLineSB.append("!!! ");
-		admonitionLineSB.append(directiveName);
-		admonitionLineSB.append(" \"\" \n");
-
-		for (String mystDirectiveLine : mystDirectiveLines) {
-			admonitionLineSB.append("    ");
-			admonitionLineSB.append(mystDirectiveLine);
-			admonitionLineSB.append("\n");
-		}
-
-		return admonitionLineSB.toString();
-	}
-
 	private String _processInclude(String includeFileName, File markdownFile)
 		throws Exception {
 
@@ -788,9 +768,14 @@ public class Main {
 			directiveNameBegin, directiveNameEnd);
 
 		List<String> mystDirectiveLines = new ArrayList<>();
-		String mystDirectiveLine;
 
-		while ((mystDirectiveLine = bufferedReader.readLine()) != null) {
+		while (true) {
+			String mystDirectiveLine = bufferedReader.readLine();
+
+			if (mystDirectiveLine == null) {
+				break;
+			}
+
 			mystDirectiveLine = _processTokens(mystDirectiveLine);
 
 			String trimmedMySTDirectiveLine = mystDirectiveLine.trim();
@@ -820,14 +805,27 @@ public class Main {
 			return StringPool.BLANK;
 		}
 
+		StringBuilder admonitionLineSB = new StringBuilder();
+
 		StringBuilder leadingSpacesSB = new StringBuilder();
 
 		for (int i = 0; i < line.indexOf(trimmedLine); i++) {
 			leadingSpacesSB.append(" ");
 		}
 
-		return _processAdmonitionBlock(
-			directiveName, mystDirectiveLines, leadingSpacesSB.toString());
+		admonitionLineSB.append(leadingSpacesSB);
+
+		admonitionLineSB.append("!!! ");
+		admonitionLineSB.append(directiveName);
+		admonitionLineSB.append(" \"\" \n");
+
+		for (String mystDirectiveLine : mystDirectiveLines) {
+			admonitionLineSB.append("    ");
+			admonitionLineSB.append(mystDirectiveLine);
+			admonitionLineSB.append("\n");
+		}
+
+		return admonitionLineSB.toString();
 	}
 
 	private String _processSphinxBadges(String line) {

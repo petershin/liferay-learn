@@ -802,23 +802,23 @@ public class Main {
 			return StringPool.BLANK;
 		}
 
-		StringBuilder admonitionLineSB = new StringBuilder();
+		StringBuilder sb = new StringBuilder();
 
 		for (int i = 0; i < line.indexOf(trimmedLine); i++) {
-			admonitionLineSB.append(" ");
+			sb.append(" ");
 		}
 
-		admonitionLineSB.append("!!! ");
-		admonitionLineSB.append(directiveName);
-		admonitionLineSB.append(" \"\" \n");
+		sb.append("!!! ");
+		sb.append(directiveName);
+		sb.append(" \"\" \n");
 
 		for (String mySTDirectiveLine : mySTDirectiveLines) {
-			admonitionLineSB.append("    ");
-			admonitionLineSB.append(mySTDirectiveLine);
-			admonitionLineSB.append("\n");
+			sb.append("    ");
+			sb.append(mySTDirectiveLine);
+			sb.append("\n");
 		}
 
-		return admonitionLineSB.toString();
+		return sb.toString();
 	}
 
 	private String _processSphinxBadges(String line) {

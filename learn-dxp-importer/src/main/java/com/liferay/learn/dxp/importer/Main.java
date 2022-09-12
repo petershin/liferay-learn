@@ -67,6 +67,7 @@ import java.io.StringReader;
 import java.net.URL;
 
 import java.nio.charset.Charset;
+import java.nio.charset.CharsetEncoder;
 import java.nio.charset.StandardCharsets;
 
 import java.util.ArrayList;
@@ -1030,7 +1031,7 @@ public class Main {
 
 		FileUtils.forceMkdirParent(file);
 
-		FileUtils.writeStringToFile(file, content);
+		FileUtils.writeStringToFile(file, content, StandardCharsets.UTF_8);
 	}
 
 	private Map<String, Long> _documentFolderIds = new HashMap<>();

@@ -176,9 +176,9 @@ public class Main {
 				continue;
 			}
 
-			long timeElapsed = System.currentTimeMillis() - start;
+			long delta = System.currentTimeMillis() - start;
 
-			if (timeElapsed > (_oauthExpirationMillis - 10000)) {
+			if (delta > (_oauthExpirationMillis - 10000)) {
 				_initResourceBuilders(_getOAuthAuthorization());
 
 				start = System.currentTimeMillis();

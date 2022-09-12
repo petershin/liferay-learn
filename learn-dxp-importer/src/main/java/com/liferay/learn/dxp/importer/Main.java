@@ -761,11 +761,10 @@ public class Main {
 
 		List<String> mySTDirectiveLines = new ArrayList<>();
 
-		int directiveNameBegin = line.indexOf(StringPool.OPEN_CURLY_BRACE) + 1;
-		int directiveNameEnd = line.indexOf(StringPool.CLOSE_CURLY_BRACE);
+		int index = line.indexOf(StringPool.CLOSE_CURLY_BRACE);
 
 		String directiveName = line.substring(
-			directiveNameBegin, directiveNameEnd);
+			line.indexOf(StringPool.OPEN_CURLY_BRACE) + 1, index);
 
 		while (true) {
 			String mySTDirectiveLine = bufferedReader.readLine();
@@ -788,7 +787,7 @@ public class Main {
 			mySTDirectiveLines.add(mySTDirectiveLine);
 		}
 
-		String directiveArguments = line.substring(directiveNameEnd + 1);
+		String directiveArguments = line.substring(index + 1);
 
 		directiveArguments = directiveArguments.trim();
 
@@ -805,13 +804,9 @@ public class Main {
 
 		StringBuilder admonitionLineSB = new StringBuilder();
 
-		StringBuilder leadingSpacesSB = new StringBuilder();
-
 		for (int i = 0; i < line.indexOf(trimmedLine); i++) {
-			leadingSpacesSB.append(" ");
+			admonitionLineSB.append(" ");
 		}
-
-		admonitionLineSB.append(leadingSpacesSB);
 
 		admonitionLineSB.append("!!! ");
 		admonitionLineSB.append(directiveName);

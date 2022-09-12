@@ -153,12 +153,12 @@ public class Main {
 			(Enumeration<String>)tokenProperties.propertyNames();
 
 		while (enumeration.hasMoreElements()) {
-			String tokenPropertyName = enumeration.nextElement();
+			String key = enumeration.nextElement();
 
-			if (tokenPropertyName.endsWith("_TOKEN")) {
+			if (key.endsWith("_TOKEN")) {
 				_tokens.put(
-					tokenProperties.getProperty(tokenPropertyName),
-					tokenProperties.getProperty(tokenPropertyName + "_VALUE"));
+					tokenProperties.getProperty(key),
+					tokenProperties.getProperty(key + "_VALUE"));
 			}
 		}
 

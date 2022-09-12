@@ -122,10 +122,12 @@ public class Main {
 		}
 
 		Main main = new Main(
-			properties.getProperty("liferay.client.id"),
-			properties.getProperty("liferay.client.secret"),
-			properties.getProperty("liferay.content.structure.id"),
-			properties.getProperty("liferay.group.id"),
+			GetterUtil.getLong(
+				properties.getProperty("liferay.content.structure.id")),
+			GetterUtil.getLong(
+				properties.getProperty("liferay.group.id")),
+			properties.getProperty("liferay.oauth.client.id"),
+			properties.getProperty("liferay.oauth.client.secret"),
 			properties.getProperty("liferay.url"),
 			properties.getProperty("markdown.import.directory"),
 			tokenProperties);
@@ -134,17 +136,16 @@ public class Main {
 	}
 
 	public Main(
-			String liferayClientId, String liferayClientSecret,
-			String liferayContentStructureId, String liferayGroupId,
+			long liferayContentStructureId, long liferayGroupId,
+			String liferayOAuthClientId, String liferayOAuthClientSecret,
 			String liferayURL, String markdownImportDirectory,
 			Properties tokenProperties)
 		throws Exception {
 
-		_liferayClientId = liferayClientId;
-		_liferayClientSecret = liferayClientSecret;
-		_liferayContentStructureId = GetterUtil.getLong(
-			liferayContentStructureId);
-		_liferayGroupId = GetterUtil.getLong(liferayGroupId);
+		_liferayContentStructureId = liferayContentStructureId;
+		_liferayGroupId = liferayGroupId;
+		_liferayOAuthClientId = liferayOAuthClientId;
+		_liferayOAuthClientSecret = liferayOAuthClientSecret;
 		_liferayURL = liferayURL;
 		_markdownImportDirectory = markdownImportDirectory;
 
@@ -343,9 +344,9 @@ public class Main {
 		httpPost.setEntity(
 			new UrlEncodedFormEntity(
 				Arrays.asList(
-					new BasicNameValuePair("client_id", _liferayClientId),
+					new BasicNameValuePair("client_id", _liferayOAuthClientId),
 					new BasicNameValuePair(
-						"client_secret", _liferayClientSecret),
+						"client_secret", _liferayOAuthClientSecret),
 					new BasicNameValuePair(
 						"grant_type", "client_credentials"))));
 
@@ -1071,10 +1072,10 @@ public class Main {
 	private DocumentResource _documentResource;
 	private Set<String> _fileNames = new TreeSet<>();
 	private Map<String, String> _imageURLs = new HashMap<>();
-	private final String _liferayClientId;
-	private final String _liferayClientSecret;
 	private final long _liferayContentStructureId;
 	private final long _liferayGroupId;
+	private final String _liferayOAuthClientId;
+	private final String _liferayOAuthClientSecret;
 	private final String _liferayURL;
 	private final Pattern _literalIncludeParameterPattern = Pattern.compile(
 		":(.*): (.*)");

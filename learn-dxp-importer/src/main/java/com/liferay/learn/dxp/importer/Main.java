@@ -149,11 +149,11 @@ public class Main {
 		_liferayURL = liferayURL;
 		_markdownImportDirectory = markdownImportDirectory;
 
-		Enumeration<String> tokenPropertyNames =
+		Enumeration<String> enumeration =
 			(Enumeration<String>)tokenProperties.propertyNames();
 
-		while (tokenPropertyNames.hasMoreElements()) {
-			String tokenPropertyName = tokenPropertyNames.nextElement();
+		while (enumeration.hasMoreElements()) {
+			String tokenPropertyName = enumeration.nextElement();
 
 			if (tokenPropertyName.endsWith("_TOKEN")) {
 				_tokens.put(

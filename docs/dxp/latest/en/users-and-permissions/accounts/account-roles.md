@@ -4,7 +4,7 @@
 
 You can create different Account Roles and define specific permissions for each one. Then assign these Roles to different [Account Users](./accounts/account-users.md) to grant appropriate access to their [Accounts](../accounts.md). 
 
-Note that Account Roles are assigned to a User for each specific Account. This offers great flexibility in managing Users. For example, a User might have a "Buyer" Role for Account "A" but not have that Role for Account "B".
+Note that Account Roles are assigned to a User for each specific Account. This offers great flexibility in managing Users. For example, a User might have a "Buyer" Role for Account "A" but not have that Role for Account "B". To learn more more about permissions and how roles inherit permissions, see [Defining Role Permissions](../roles-and-permissions/defining-role-permissions.md).
 
 ## View Account Roles
 

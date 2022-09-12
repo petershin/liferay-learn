@@ -543,7 +543,7 @@ public class Main {
 		String markdownFileName = markdownFile.getPath();
 
 		String fileName =
-			FilenameUtils.getPath(markdownFile.getPath()) + includeFileName;
+			FilenameUtils.getPath(markdownFileName) + includeFileName;
 
 		String fileSeparator = System.getProperty("file.separator");
 

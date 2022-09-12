@@ -652,18 +652,18 @@ public class Main {
 				for (String lineRange : lineRanges) {
 					Tuple tuple = null;
 
-					List<String> lineRangParts = StringUtil.split(
+					List<String> lineRangeParts = StringUtil.split(
 						lineRange, CharPool.DASH);
 
-					if (lineRangParts.size() == 1) {
+					if (lineRangeParts.size() == 1) {
 						tuple = new Tuple(
-							GetterUtil.getInteger(lineRangParts.get(0)),
-							GetterUtil.getInteger(lineRangParts.get(0)));
+							GetterUtil.getInteger(lineRangeParts.get(0)),
+							GetterUtil.getInteger(lineRangeParts.get(0)));
 					}
-					else if (lineRangParts.size() == 2) {
+					else if (lineRangeParts.size() == 2) {
 						tuple = new Tuple(
-							GetterUtil.getInteger(lineRangParts.get(0)),
-							GetterUtil.getInteger(lineRangParts.get(1)));
+							GetterUtil.getInteger(lineRangeParts.get(0)),
+							GetterUtil.getInteger(lineRangeParts.get(1)));
 					}
 					else {
 						throw new Exception(

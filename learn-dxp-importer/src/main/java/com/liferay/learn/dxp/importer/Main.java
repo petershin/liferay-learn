@@ -105,12 +105,12 @@ import org.json.JSONObject;
 public class Main {
 
 	public static void main(String[] arguments) throws Exception {
-		Properties properties = new Properties();
+		Properties mainProperties = new Properties();
 
 		try (InputStream inputStream = Main.class.getResourceAsStream(
 				"dependencies/main.properties")) {
 
-			properties.load(inputStream);
+			mainProperties.load(inputStream);
 		}
 
 		Properties tokenProperties = new Properties();
@@ -123,13 +123,13 @@ public class Main {
 
 		Main main = new Main(
 			GetterUtil.getLong(
-				properties.getProperty("liferay.content.structure.id")),
+				mainProperties.getProperty("liferay.content.structure.id")),
 			GetterUtil.getLong(
-				properties.getProperty("liferay.group.id")),
-			properties.getProperty("liferay.oauth.client.id"),
-			properties.getProperty("liferay.oauth.client.secret"),
-			properties.getProperty("liferay.url"),
-			properties.getProperty("markdown.import.dir"),
+				mainProperties.getProperty("liferay.group.id")),
+			mainProperties.getProperty("liferay.oauth.client.id"),
+			mainProperties.getProperty("liferay.oauth.client.secret"),
+			mainProperties.getProperty("liferay.url"),
+			mainProperties.getProperty("markdown.import.dir"),
 			tokenProperties);
 
 		main.uploadToLiferay();

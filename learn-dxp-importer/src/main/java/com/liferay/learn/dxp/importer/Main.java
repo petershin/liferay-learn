@@ -503,14 +503,10 @@ public class Main {
 
 		URL url = new URL(_liferayURL);
 
-		String host = url.getHost();
-		int port = url.getPort();
-		String protocol = url.getProtocol();
-
 		_documentFolderResource = documentFolderResourceBuilder.header(
 			"Authorization", authorization
 		).endpoint(
-			host, port, protocol
+			url.getHost(), url.getPort(), url.getProtocol()
 		).build();
 
 		DocumentResource.Builder documentResourceBuilder =
@@ -519,7 +515,7 @@ public class Main {
 		_documentResource = documentResourceBuilder.header(
 			"Authorization", authorization
 		).endpoint(
-			host, port, protocol
+			url.getHost(), url.getPort(), url.getProtocol()
 		).build();
 
 		StructuredContentResource.Builder structuredContentResourceBuilder =
@@ -528,7 +524,7 @@ public class Main {
 		_structuredContentResource = structuredContentResourceBuilder.header(
 			"Authorization", authorization
 		).endpoint(
-			host, port, protocol
+			url.getHost(), url.getPort(), url.getProtocol()
 		).build();
 
 		StructuredContentFolderResource.Builder
@@ -539,7 +535,7 @@ public class Main {
 			structuredContentFolderResourceBuilder.header(
 				"Authorization", authorization
 			).endpoint(
-				host, port, protocol
+				url.getHost(), url.getPort(), url.getProtocol()
 			).build();
 	}
 

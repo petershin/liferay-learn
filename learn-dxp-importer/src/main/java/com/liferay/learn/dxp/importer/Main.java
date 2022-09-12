@@ -844,7 +844,7 @@ public class Main {
 		return line;
 	}
 
-	private void _saveOutputToFile(
+	private void _write(
 			File markdownInputFile, String text, String pathPrefix)
 		throws Exception {
 
@@ -885,6 +885,8 @@ public class Main {
 	}
 
 	private String _toHTML(File file, String text) throws Exception {
+		_write(file, "build/markdown", text);
+
 		com.vladsch.flexmark.util.ast.Document document = _parser.parse(text);
 
 		AbstractYamlFrontMatterVisitor abstractYamlFrontMatterVisitor =
@@ -906,9 +908,7 @@ public class Main {
 
 		String html = _renderer.render(document);
 
-		_saveOutputToFile(file, text, "build/markdown");
-
-		_saveOutputToFile(file, html, "build/html");
+		_write(file, "build/html", html);
 
 		return html;
 	}

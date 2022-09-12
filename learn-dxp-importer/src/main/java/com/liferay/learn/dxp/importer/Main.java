@@ -585,8 +585,9 @@ public class Main {
 
 	private String _processLiteralInclude(
 			String literalIncludeFileName,
+			List<Tuple> literalIncludeLineRanges,
 			Map<String, String> literalIncludeParameters,
-			List<Tuple> literalIncludeLineRanges, File markdownFile)
+			File markdownFile)
 		throws Exception {
 
 		String fileName =
@@ -600,18 +601,18 @@ public class Main {
 		}
 
 		if (!file.exists()) {
-			System.out.println("Could not find literalinclude file " + file);
+			System.out.println("Nonexistent literal include file " + file);
 
 			return StringPool.BLANK;
 		}
 
-		String language = GetterUtil.getString(
-			literalIncludeParameters.get("language"), "java");
-
 		StringBuilder sb = new StringBuilder();
 
 		sb.append("```");
-		sb.append(language + "\n");
+		sb.append(
+			GetterUtil.getString(
+				literalIncludeParameters.get("language"), "java"));
+		sb.append("\n");
 
 		for (Tuple literalIncludeLineRange : literalIncludeLineRanges) {
 			sb.append(
@@ -680,8 +681,8 @@ public class Main {
 		}
 
 		return _processLiteralInclude(
-			literalIncludeFileName, literalIncludeParameters,
-			literalIncludeLineRanges, markdownFile);
+			literalIncludeFileName, literalIncludeLineRanges,
+			literalIncludeParameters, markdownFile);
 	}
 
 	private String _processLiteralIncludeLineRange(

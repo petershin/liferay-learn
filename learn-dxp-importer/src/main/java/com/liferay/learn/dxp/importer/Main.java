@@ -840,28 +840,18 @@ public class Main {
 	}
 
 	private void _write(
-			File markdownInputFile, String text, String pathPrefix)
+			String content, String dirName, File markdownInputFile)
 		throws Exception {
 
 		String markdownInputFileName = markdownInputFile.getPath();
 
-		String relativePath = markdownInputFileName.substring(
-			_markdownImportDirName.length());
+		File file = new File(
+			dirName,
+			markdownInputFileName.substring(_markdownImportDirName.length()));
 
-		String outputFileName = pathPrefix + relativePath;
+		FileUtils.forceMkdirParent(file);
 
-		File outputFilePath = new File(FilenameUtils.getPath(outputFileName));
-
-		if (!outputFilePath.exists()) {
-			outputFilePath.mkdirs();
-		}
-
-		File outputFile = new File(outputFileName);
-
-		BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
-
-		bw.write(text);
-		bw.close();
+		FileUtils.writeStringToFile(file, content);
 	}
 
 	private BasedSequence _toBasedSequence(String string) {
@@ -880,7 +870,7 @@ public class Main {
 	}
 
 	private String _toHTML(File file, String text) throws Exception {
-		_write(file, "build/markdown", text);
+		_write(text, "build/markdown", file);
 
 		com.vladsch.flexmark.util.ast.Document document = _parser.parse(text);
 
@@ -903,7 +893,7 @@ public class Main {
 
 		String html = _renderer.render(document);
 
-		_write(file, "build/html", html);
+		_write(html, "build/html", file);
 
 		return html;
 	}

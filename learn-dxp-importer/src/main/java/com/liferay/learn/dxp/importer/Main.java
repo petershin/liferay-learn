@@ -548,23 +548,25 @@ public class Main {
 		String fileSeparator = System.getProperty("file.separator");
 
 		if (includeFileName.startsWith(fileSeparator)) {		
-			String relativePath = markdownFileName.substring(
+			String dirName = markdownFileName.substring(
 				_markdownImportDirName.length());
 
-			List<String> relativePathParts = StringUtil.split(
-				relativePath, fileSeparator.charAt(0));
+			List<String> dirNameParts = StringUtil.split(
+				dirName, fileSeparator.charAt(0));
 
-			if (relativePathParts.size() < 3) {
-				throw new Exception(
-					"Invalid relative path found " + relativePath);
+			if (dirNameParts.size() < 3) {
+				throw new Exception("Invalid directory " + dirName);
 			}
 
 			StringBuilder sb = new StringBuilder();
 
 			sb.append(_markdownImportDirName);
-			sb.append(fileSeparator + relativePathParts.get(0));
-			sb.append(fileSeparator + relativePathParts.get(1));
-			sb.append(fileSeparator + relativePathParts.get(2));
+			sb.append(fileSeparator);
+			sb.append(dirNameParts.get(0));
+			sb.append(fileSeparator);
+			sb.append(dirNameParts.get(1));
+			sb.append(fileSeparator);
+			sb.append(dirNameParts.get(2));
 			sb.append(includeFileName);
 
 			fileName = sb.toString();
@@ -573,17 +575,17 @@ public class Main {
 		File file = new File(fileName);
 
 		if (!file.exists()) {
-			throw new Exception("Could not find include file " + file);
+			throw new Exception("Nonexistent file " + file);
 		}
 
 		StringBuilder sb = new StringBuilder();
 
-		BufferedReader br = new BufferedReader(
+		BufferedReader bufferedReader = new BufferedReader(
 			new InputStreamReader(new FileInputStream(file)));
 
-		String line;
+		String line = null;
 
-		while ((line = br.readLine()) != null) {
+		while ((line = bufferedReader.readLine()) != null) {
 			sb.append(line + "\n");
 		}
 

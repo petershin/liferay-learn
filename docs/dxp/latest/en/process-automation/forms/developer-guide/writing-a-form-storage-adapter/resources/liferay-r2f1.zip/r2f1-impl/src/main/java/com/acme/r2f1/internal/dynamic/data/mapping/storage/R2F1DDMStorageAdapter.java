@@ -30,7 +30,7 @@ public class R2F1DDMStorageAdapter implements DDMStorageAdapter {
 				_log.info("Acme storage adapter's delete method was invoked");
 			}
 
-			return _jsonStorageAdapter.delete(ddmStorageAdapterDeleteRequest);
+			return _defaultStorageAdapter.delete(ddmStorageAdapterDeleteRequest);
 		}
 		catch (Exception exception) {
 			throw new StorageException(exception);
@@ -47,7 +47,7 @@ public class R2F1DDMStorageAdapter implements DDMStorageAdapter {
 				_log.info("Acme storage adapter's get method was invoked");
 			}
 
-			return _jsonStorageAdapter.get(ddmStorageAdapterGetRequest);
+			return _defaultStorageAdapter.get(ddmStorageAdapterGetRequest);
 		}
 		catch (Exception exception) {
 			throw new StorageException(exception);
@@ -64,7 +64,7 @@ public class R2F1DDMStorageAdapter implements DDMStorageAdapter {
 				_log.info("Acme storage adapter's save method was invoked");
 			}
 
-			return _jsonStorageAdapter.save(ddmStorageAdapterSaveRequest);
+			return _defaultStorageAdapter.save(ddmStorageAdapterSaveRequest);
 		}
 		catch (Exception exception) {
 			throw new StorageException(exception);
@@ -74,7 +74,7 @@ public class R2F1DDMStorageAdapter implements DDMStorageAdapter {
 	private static final Log _log = LogFactoryUtil.getLog(
 		R2F1DDMStorageAdapter.class);
 
-	@Reference(target = "(ddm.storage.adapter.type=json)")
-	private DDMStorageAdapter _jsonStorageAdapter;
+	@Reference(target = "(ddm.storage.adapter.type=default)")
+	private DDMStorageAdapter _defaultStorageAdapter;
 
 }

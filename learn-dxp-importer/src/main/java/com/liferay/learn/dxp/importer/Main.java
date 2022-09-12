@@ -585,7 +585,7 @@ public class Main {
 
 	private String _processLiteralInclude(
 			String literalIncludeFileName,
-			List<Tuple> literalIncludeLineRanges,
+			List<Tuple> literalIncludeLineRangeTuples,
 			Map<String, String> literalIncludeParameters,
 			File markdownFile)
 		throws Exception {
@@ -614,10 +614,10 @@ public class Main {
 				literalIncludeParameters.get("language"), "java"));
 		sb.append("\n");
 
-		for (Tuple literalIncludeLineRange : literalIncludeLineRanges) {
+		for (Tuple literalIncludeLineRangeTuple : literalIncludeLineRangeTuples) {
 			sb.append(
 				_processLiteralIncludeLineRange(
-					file, literalIncludeParameters, literalIncludeLineRange));
+					file, literalIncludeParameters, literalIncludeLineRangeTuple));
 		}
 
 		sb.append("```");
@@ -631,7 +631,7 @@ public class Main {
 		throws Exception {
 
 		Map<String, String> literalIncludeParameters = new HashMap<>();
-		List<Tuple> literalIncludeLineRanges = new ArrayList<>();
+		List<Tuple> literalIncludeLineRangeTuples = new ArrayList<>();
 
 		for (String mySTDirectiveLine : mySTDirectiveLines) {
 			Matcher literalIncludeParameterMatcher =
@@ -667,7 +667,7 @@ public class Main {
 								"Invalid literalinclude lines value " + value);
 						}
 
-						literalIncludeLineRanges.add(lineRangeTuple);
+						literalIncludeLineRangeTuples.add(lineRangeTuple);
 					}
 				}
 				else {
@@ -676,26 +676,26 @@ public class Main {
 			}
 		}
 
-		if (literalIncludeLineRanges.isEmpty()) {
-			literalIncludeLineRanges.add(new Tuple(0, -1));
+		if (literalIncludeLineRangeTuples.isEmpty()) {
+			literalIncludeLineRangeTuples.add(new Tuple(0, -1));
 		}
 
 		return _processLiteralInclude(
-			literalIncludeFileName, literalIncludeLineRanges,
+			literalIncludeFileName, literalIncludeLineRangeTuples,
 			literalIncludeParameters, markdownFile);
 	}
 
 	private String _processLiteralIncludeLineRange(
 			File file, Map<String, String> literalIncludeParameters,
-			Tuple literalIncludeLineRange)
+			Tuple literalIncludeLineRangeTuple)
 		throws Exception {
 
 		StringBuilder sb = new StringBuilder();
 
 		int lineStart = GetterUtil.getInteger(
-			literalIncludeLineRange.getObject(0));
+			literalIncludeLineRangeTuple.getObject(0));
 		int lineEnd = GetterUtil.getInteger(
-			literalIncludeLineRange.getObject(1), -1);
+			literalIncludeLineRangeTuple.getObject(1), -1);
 		int dedent = GetterUtil.getInteger(
 			literalIncludeParameters.get("dedent"));
 

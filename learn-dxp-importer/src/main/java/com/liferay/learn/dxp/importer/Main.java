@@ -372,30 +372,6 @@ public class Main {
 		}
 	}
 
-	private String _getProductVersionLanguagePath(String markdownFilePath)
-		throws Exception {
-
-		String fileSeparator = System.getProperty("file.separator");
-		String relativePath = markdownFilePath.substring(
-			_markdownImportDirName.length());
-
-		List<String> relativePaths = StringUtil.split(
-			relativePath, fileSeparator.charAt(0));
-
-		if (relativePaths.size() < 3) {
-			throw new Exception("Invalid path found " + relativePath);
-		}
-
-		StringBuilder sb = new StringBuilder();
-
-		sb.append(_markdownImportDirName);
-		sb.append(fileSeparator + relativePaths.get(0));
-		sb.append(fileSeparator + relativePaths.get(1));
-		sb.append(fileSeparator + relativePaths.get(2));
-
-		return sb.toString();
-	}
-
 	private Long _getStructuredContentFolderId(String fileName)
 		throws Exception {
 
@@ -590,15 +566,34 @@ public class Main {
 	private String _processInclude(String includeFileName, File markdownFile)
 		throws Exception {
 
-		String markdownFilePath = markdownFile.getPath();
+		String markdownFileName = markdownFile.getPath();
 
 		String fileName =
-			FilenameUtils.getPath(markdownFilePath) + includeFileName;
+			FilenameUtils.getPath(markdownFile.getPath()) + includeFileName;
 
-		if (includeFileName.startsWith(System.getProperty("file.separator"))) {
-			fileName =
-				_getProductVersionLanguagePath(markdownFilePath) +
-					includeFileName;
+		String fileSeparator = System.getProperty("file.separator");
+
+		if (includeFileName.startsWith(fileSeparator)) {		
+			String relativePath = markdownFileName.substring(
+				_markdownImportDirName.length());
+
+			List<String> relativePathParts = StringUtil.split(
+				relativePath, fileSeparator.charAt(0));
+
+			if (relativePathParts.size() < 3) {
+				throw new Exception(
+					"Invalid relative path found " + relativePath);
+			}
+
+			StringBuilder sb = new StringBuilder();
+
+			sb.append(_markdownImportDirName);
+			sb.append(fileSeparator + relativePathParts.get(0));
+			sb.append(fileSeparator + relativePathParts.get(1));
+			sb.append(fileSeparator + relativePathParts.get(2));
+			sb.append(includeFileName);
+
+			fileName = sb.toString();
 		}
 
 		File file = new File(fileName);

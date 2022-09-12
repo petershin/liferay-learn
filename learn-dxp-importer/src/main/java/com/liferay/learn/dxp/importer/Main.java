@@ -58,10 +58,8 @@ import com.vladsch.flexmark.util.sequence.BasedSequence;
 import com.vladsch.flexmark.util.sequence.CharSubSequence;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringReader;
@@ -124,13 +122,11 @@ public class Main {
 		Main main = new Main(
 			GetterUtil.getLong(
 				mainProperties.getProperty("liferay.content.structure.id")),
-			GetterUtil.getLong(
-				mainProperties.getProperty("liferay.group.id")),
+			GetterUtil.getLong(mainProperties.getProperty("liferay.group.id")),
 			mainProperties.getProperty("liferay.oauth.client.id"),
 			mainProperties.getProperty("liferay.oauth.client.secret"),
 			new URL(mainProperties.getProperty("liferay.url")),
-			mainProperties.getProperty("markdown.import.dir"),
-			tokenProperties);
+			mainProperties.getProperty("markdown.import.dir"), tokenProperties);
 
 		main.uploadToLiferay();
 	}
@@ -504,7 +500,8 @@ public class Main {
 		_documentFolderResource = documentFolderResourceBuilder.header(
 			"Authorization", authorization
 		).endpoint(
-			_liferayURL.getHost(), _liferayURL.getPort(), _liferayURL.getProtocol()
+			_liferayURL.getHost(), _liferayURL.getPort(),
+			_liferayURL.getProtocol()
 		).build();
 
 		DocumentResource.Builder documentResourceBuilder =
@@ -513,7 +510,8 @@ public class Main {
 		_documentResource = documentResourceBuilder.header(
 			"Authorization", authorization
 		).endpoint(
-			_liferayURL.getHost(), _liferayURL.getPort(), _liferayURL.getProtocol()
+			_liferayURL.getHost(), _liferayURL.getPort(),
+			_liferayURL.getProtocol()
 		).build();
 
 		StructuredContentResource.Builder structuredContentResourceBuilder =
@@ -522,7 +520,8 @@ public class Main {
 		_structuredContentResource = structuredContentResourceBuilder.header(
 			"Authorization", authorization
 		).endpoint(
-			_liferayURL.getHost(), _liferayURL.getPort(), _liferayURL.getProtocol()
+			_liferayURL.getHost(), _liferayURL.getPort(),
+			_liferayURL.getProtocol()
 		).build();
 
 		StructuredContentFolderResource.Builder
@@ -533,7 +532,8 @@ public class Main {
 			structuredContentFolderResourceBuilder.header(
 				"Authorization", authorization
 			).endpoint(
-				_liferayURL.getHost(), _liferayURL.getPort(), _liferayURL.getProtocol()
+				_liferayURL.getHost(), _liferayURL.getPort(),
+				_liferayURL.getProtocol()
 			).build();
 	}
 
@@ -545,7 +545,7 @@ public class Main {
 		String fileName =
 			FilenameUtils.getPath(markdownFileName) + includeFileName;
 
-		if (includeFileName.startsWith(File.separator)) {		
+		if (includeFileName.startsWith(File.separator)) {
 			String dirName = markdownFileName.substring(
 				_markdownImportDirName.length());
 
@@ -839,21 +839,6 @@ public class Main {
 		return line;
 	}
 
-	private void _write(
-			String content, String dirName, File markdownInputFile)
-		throws Exception {
-
-		String markdownInputFileName = markdownInputFile.getPath();
-
-		File file = new File(
-			dirName,
-			markdownInputFileName.substring(_markdownImportDirName.length()));
-
-		FileUtils.forceMkdirParent(file);
-
-		FileUtils.writeStringToFile(file, content);
-	}
-
 	private BasedSequence _toBasedSequence(String string) {
 		return CharSubSequence.of(string.toCharArray(), 0, string.length());
 	}
@@ -1032,6 +1017,20 @@ public class Main {
 		BasedSequence basedSequence = link.getUrl();
 
 		link.setUrl(basedSequence.replace(".md", ".html"));
+	}
+
+	private void _write(String content, String dirName, File markdownInputFile)
+		throws Exception {
+
+		String markdownInputFileName = markdownInputFile.getPath();
+
+		File file = new File(
+			dirName,
+			markdownInputFileName.substring(_markdownImportDirName.length()));
+
+		FileUtils.forceMkdirParent(file);
+
+		FileUtils.writeStringToFile(file, content);
 	}
 
 	private Map<String, Long> _documentFolderIds = new HashMap<>();

@@ -632,17 +632,17 @@ public class Main {
 	}
 
 	private String _processLiteralIncludeBlock(
-			String literalIncludeFileName, List<String> mystDirectiveLines,
+			String literalIncludeFileName, List<String> mySTDirectiveLines,
 			File markdownFile)
 		throws Exception {
 
 		Map<String, String> literalIncludeParameters = new HashMap<>();
 		List<Tuple> literalIncludeLineRanges = new ArrayList<>();
 
-		for (String mystDirectiveLine : mystDirectiveLines) {
+		for (String mySTDirectiveLine : mySTDirectiveLines) {
 			Matcher literalIncludeParameterMatcher =
 				_literalIncludeParameterPattern.matcher(
-					mystDirectiveLine.trim());
+					mySTDirectiveLine.trim());
 
 			if (literalIncludeParameterMatcher.find()) {
 				String parameter = literalIncludeParameterMatcher.group(1);
@@ -759,24 +759,24 @@ public class Main {
 			return line;
 		}
 
+		List<String> mySTDirectiveLines = new ArrayList<>();
+
 		int directiveNameBegin = line.indexOf(StringPool.OPEN_CURLY_BRACE) + 1;
 		int directiveNameEnd = line.indexOf(StringPool.CLOSE_CURLY_BRACE);
 
 		String directiveName = line.substring(
 			directiveNameBegin, directiveNameEnd);
 
-		List<String> mystDirectiveLines = new ArrayList<>();
-
 		while (true) {
-			String mystDirectiveLine = bufferedReader.readLine();
+			String mySTDirectiveLine = bufferedReader.readLine();
 
-			if (mystDirectiveLine == null) {
+			if (mySTDirectiveLine == null) {
 				break;
 			}
 
-			mystDirectiveLine = _processTokens(mystDirectiveLine);
+			mySTDirectiveLine = _processTokens(mySTDirectiveLine);
 
-			String trimmedMySTDirectiveLine = mystDirectiveLine.trim();
+			String trimmedMySTDirectiveLine = mySTDirectiveLine.trim();
 
 			if (trimmedMySTDirectiveLine.startsWith("```") ||
 				(!directiveName.equals("toctree") &&
@@ -785,7 +785,7 @@ public class Main {
 				break;
 			}
 
-			mystDirectiveLines.add(mystDirectiveLine);
+			mySTDirectiveLines.add(mySTDirectiveLine);
 		}
 
 		String directiveArguments = line.substring(directiveNameEnd + 1);
@@ -797,7 +797,7 @@ public class Main {
 		}
 		else if (directiveName.equals("literalinclude")) {
 			return _processLiteralIncludeBlock(
-				directiveArguments, mystDirectiveLines, markdownFile);
+				directiveArguments, mySTDirectiveLines, markdownFile);
 		}
 		else if (directiveName.equals("toctree")) {
 			return StringPool.BLANK;
@@ -817,9 +817,9 @@ public class Main {
 		admonitionLineSB.append(directiveName);
 		admonitionLineSB.append(" \"\" \n");
 
-		for (String mystDirectiveLine : mystDirectiveLines) {
+		for (String mySTDirectiveLine : mySTDirectiveLines) {
 			admonitionLineSB.append("    ");
-			admonitionLineSB.append(mystDirectiveLine);
+			admonitionLineSB.append(mySTDirectiveLine);
 			admonitionLineSB.append("\n");
 		}
 

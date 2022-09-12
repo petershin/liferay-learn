@@ -241,7 +241,7 @@ public class Main {
 		List<String> dirNames = new ArrayList<>();
 
 		String[] parts = fileName.split(
-			Matcher.quoteReplacement(System.getProperty("file.separator")));
+			Matcher.quoteReplacement(File.separator));
 
 		for (String part : parts) {
 			if (part.endsWith(".html") || part.endsWith(".md") ||
@@ -545,14 +545,12 @@ public class Main {
 		String fileName =
 			FilenameUtils.getPath(markdownFileName) + includeFileName;
 
-		String fileSeparator = System.getProperty("file.separator");
-
-		if (includeFileName.startsWith(fileSeparator)) {		
+		if (includeFileName.startsWith(File.separator)) {		
 			String dirName = markdownFileName.substring(
 				_markdownImportDirName.length());
 
 			List<String> dirNameParts = StringUtil.split(
-				dirName, fileSeparator.charAt(0));
+				dirName, File.separatorChar);
 
 			if (dirNameParts.size() < 3) {
 				throw new Exception("Invalid directory " + dirName);
@@ -561,11 +559,11 @@ public class Main {
 			StringBuilder sb = new StringBuilder();
 
 			sb.append(_markdownImportDirName);
-			sb.append(fileSeparator);
+			sb.append(File.separator);
 			sb.append(dirNameParts.get(0));
-			sb.append(fileSeparator);
+			sb.append(File.separator);
 			sb.append(dirNameParts.get(1));
-			sb.append(fileSeparator);
+			sb.append(File.separator);
 			sb.append(dirNameParts.get(2));
 			sb.append(includeFileName);
 
@@ -879,7 +877,7 @@ public class Main {
 		String friendlyURLPath = fileName.substring(
 			_markdownImportDirName.length());
 
-		if (friendlyURLPath.startsWith(System.getProperty("file.separator"))) {
+		if (friendlyURLPath.startsWith(File.separator)) {
 			friendlyURLPath = friendlyURLPath.substring(1);
 		}
 

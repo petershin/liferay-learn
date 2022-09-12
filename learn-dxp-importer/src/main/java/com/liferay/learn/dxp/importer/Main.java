@@ -691,12 +691,12 @@ public class Main {
 
 		StringBuilder sb = new StringBuilder();
 
-		int lineStart = GetterUtil.getInteger(
-			literalIncludeLineRangeTuple.getObject(0));
-		int lineEnd = GetterUtil.getInteger(
-			literalIncludeLineRangeTuple.getObject(1), -1);
 		int dedent = GetterUtil.getInteger(
 			literalIncludeParameters.get("dedent"));
+		int lineEnd = GetterUtil.getInteger(
+			literalIncludeLineRangeTuple.getObject(1), -1);
+		int lineStart = GetterUtil.getInteger(
+			literalIncludeLineRangeTuple.getObject(0));
 
 		BufferedReader br = new BufferedReader(
 			new InputStreamReader(new FileInputStream(file)));

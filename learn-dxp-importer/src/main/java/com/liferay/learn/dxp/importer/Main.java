@@ -698,13 +698,12 @@ public class Main {
 		int lineStart = GetterUtil.getInteger(
 			literalIncludeLineRangeTuple.getObject(0));
 
-		BufferedReader br = new BufferedReader(
+		BufferedReader bufferedReader = new BufferedReader(
 			new InputStreamReader(new FileInputStream(file)));
-
-		String line;
 		int i = 0;
+		String line = null;
 
-		while ((line = br.readLine()) != null) {
+		while ((line = bufferedReader.readLine()) != null) {
 			if (i >= (lineStart - 1)) {
 				sb.append(_dedent(dedent, line) + "\n");
 			}
@@ -726,7 +725,7 @@ public class Main {
 
 		BufferedReader bufferedReader = new BufferedReader(
 			new StringReader(markdown));
-		String line;
+		String line = null;
 
 		while ((line = bufferedReader.readLine()) != null) {
 			line = _processTokens(line);
@@ -736,7 +735,8 @@ public class Main {
 			line = _processMySTDirectiveBlocks(
 				bufferedReader, line, markdownFile);
 
-			sb.append(line + "\n");
+			sb.append(line);
+			sb.append("\n");
 		}
 
 		return sb.toString();

@@ -728,12 +728,10 @@ public class Main {
 		String line = null;
 
 		while ((line = bufferedReader.readLine()) != null) {
-			line = _processTokens(line);
-
-			line = _processSphinxBadges(line);
-
 			line = _processMySTDirectiveBlocks(
 				bufferedReader, line, markdownFile);
+			line = _processSphinxBadges(line);
+			line = _processTokens(line);
 
 			sb.append(line);
 			sb.append("\n");

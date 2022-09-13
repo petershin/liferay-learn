@@ -1,5 +1,6 @@
 # Using the Script Engine in Workflow
 
+
 Liferay's [workflow engine](../introduction-to-workflow.md) can be scripted using Groovy scripts embedded in [XML workflow definitions](./crafting-xml-workflow-definitions.md) and run during workflow execution.
 
 Here are the workflow scripting topics:
@@ -136,8 +137,7 @@ The following workflow script is written using Groovy and is used with a `Condit
 ```{note}
 A Condition node script's `returnValue` variable must be a valid transition name to determine the next task or state.
 
-For Liferay Portal, a valid transition name is the transition's `<name>` element value as entered in the XML file or in the source view of the Process Builder. For Liferay DXP, when you view the source of the definition in the Process Builder, you will instead see the value of the transition name in the transition's `<id>` element. 
-
+For Liferay Portal, a valid transition name is the transition's `<name>` element value as entered in the XML file or in the source view of the Process Builder. For Liferay DXP, when you view the source of the definition in the Process Builder, you must instead use the value of the transition ID as specified in the transition's `<id>` element.
 ```
 
 See [Crafting Workflow Definitions](./crafting-xml-workflow-definitions.md) for links to downloadable workflow script examples.

@@ -1,6 +1,6 @@
 # Using Workflow Metrics
 
-> Subscription
+{bdg-primary}`Subscription`
 
 ```{warning}
 This feature works [only with Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
@@ -122,6 +122,28 @@ On Liferay 7.2, Workflow Metrics are re-indexed from the Search administrative p
 A re-index of Workflow Metrics is required when the [search engine](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md) is first configured and each time it's upgraded. A good rule of thumb is that Workflow Metrics should be re-indexed each time Liferay DXP's main search indexes are re-indexed.
 
 From the overall metrics of a workflow process down to the details on a single item in the workflow, the new Workflow Metrics functionality gives you insights into the time it takes to _get things done_ in Liferay DXP.
+
+## Managing Workflow Tasks in Bulk
+
+With the metrics UI, you can manage workflow tasks in bulk. For example, assign multiple tasks to a single assignee without going into each task separately. To explore this functionality make sure you have some items that need managing inside a workflow process. For example, [activate](./activating-workflow.md) the Single Approver workflow process for Blogs Entries, then submit a few blogs to the workflow.
+
+1. From the Metrics application, click the workflow process (e.g., Single Approver) to open its dashboard view.
+1. Hover over the _Total Pending_ box and click _See Items_ to open the table of pending workflow items with the Pending status.
+1. Select the items you'd like to reassign in the workflow and click the reassign button (![Reassign](../../../images/icon-move.png)).
+
+   ![Reassign multiple workflow tasks at once.](./using-workflow-metrics/images/04.png)
+1. In the Select Tasks to Reassign modal, select the tasks again, then click _Next_.
+1. To assign all the tasks to the same assignee, check the box _Use the same assignee for all tasks._, then search for the assignee.
+
+   To select assignees manually for each task, use the New Assignee box for each item to select the assignee.
+
+   ![Select the assignee for each workflow task, or choose to use the same assignee for all tasks.](./using-workflow-metrics/images/05.png)
+
+1. Click Reassign.
+
+Following a similar set of steps, you can also update the due date (![Calendar](../../../images/icon-calendar.png)) of selected workflow items or transition (![Transition](../../../images/icon-transition-arrow.png)) them to another step in the workflow.
+
+![Transition multiple workflow items at once to a new step in the workflow.](./using-workflow-metrics/images/06.png)
 
 ## Additional Information
 

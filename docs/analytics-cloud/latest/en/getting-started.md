@@ -24,13 +24,16 @@ getting-started/individuals.md
 ./getting-started/segments.md
 ```
 
-Welcome to Liferay Analytics Cloud. This learning path will take you on a journey to learn how to setup and start using Analytics Cloud to get the most out of its different features. Delivering an awesome digital experience is important to you. But knowing how to craft your site and make future improvements only comes from understanding who your users are and knowing how they interact with your site. With the integration of Analytics Cloud and Liferay DXP, you can both measure what's happening on your site and easily put the data into action through site improvements.
+Welcome to Liferay Analytics Cloud. This learning path will take you on a journey to learn how to setup and start using Analytics Cloud to get the most out of its different features. Delivering an awesome digital experience is important to you. But knowing how to craft your site and make future improvements only comes from understanding who your users are and knowing how they interact with your site. 
+
+Why is the integration of Analytics Cloud and Liferay DXP so awesome? Simply that, straight out-of-the-box Analytics Cloud has access to the full range of data on a Liferay DXP's database. This integration is something no other analytics product can easily accomplish. All the hosted content and a site's various users are ready to be tracked and analyzed. You can both measure what's happening on your site and easily put the data into action through site improvements.
 
 Some key differences between Liferay Analytics Cloud versus other analytics solutions:
 
 | Liferay Analytics Cloud | Other analytics products |
 | :--- | :--- |
 | Quick setup and out-of-the-box integration | Potentially lengthy setup process and manual integration |
+| Full range of data integration options | Limited options on what can be tracked |
 | Both site-level and individual page analytics | Analytics mostly focused on individual pages |
 | Insights into both known and anonymous visitors | Only anonymous visitor data (depending on site setup) |
 

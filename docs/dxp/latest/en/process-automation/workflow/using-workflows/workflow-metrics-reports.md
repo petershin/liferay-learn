@@ -1,5 +1,7 @@
 # Workflow Metrics: Reports
 
+{bdg-primary}`Subscription`
+
 Open the Workflow Metrics from the Applications Menu (![Applications Menu](../../../images/icon-applications-menu.png)) (Control Panel &rarr; Workflow &rarr; Metrics) and you immediately see metrics on each workflow installed in the system.
 
 ![In this view, the only process with pending items is the Auto Insurance Application.](./workflow-metrics-reports/images/06.png)

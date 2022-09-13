@@ -2,6 +2,10 @@
 
 When an asset's workflow has been [activated](./activating-workflow.md), one or more users have to review it before publication. Workflow review processes can be assigned to specific users or to a particular Role (for example: Portal or Site Content Reviewer). In the latter case, anyone assigned to that Role may approve or reject the submission. For example, if you are using the out-of-the-box _Single Approver_ process, the workflow tasks are assigned to a Portal or Site Content Reviewer or anyone with administrator rights.
 
+```{tip}
+DXP subscribers: bulk management of workflow items is possible using the [Workflow Metrics application](./using-workflow-metrics.md#managing-workflow-tasks-in-bulk).
+```
+
 Once an asset has been submitted, the _Workflow_ application sends a notification to all the potential reviewers. To access notifications, click your avatar and select _Notifications_.
 
 ![Workflow sends a notification an asset is ready for review.](./reviewing-assets/images/01.png)

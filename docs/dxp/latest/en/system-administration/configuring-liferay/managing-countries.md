@@ -4,21 +4,9 @@
 
 Liferay contains a list of available countries as defined by the [ISO 3166 Standard](https://www.iso.org/iso-3166-country-codes.html), but you can use the Countries Management app to modify an existing entry or add a new entry. 
 
-## Enable the Countries Management App
-
-By default, the Countries Management App is hidden from the UI. To enable the UI,
-
-1. Add the following property to your [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) file: 
-
-   `feature.flag.LPS-122223=true` 
-
-   If using Docker, use the following [`Environment Variable`](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#portal-properties) upon first startup:
-
-   `--env LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER2__NUMBER2__NUMBER2__NUMBER2__NUMBER3_=true`
-
-1. Restart your server. The app now appears.
-
-   ![See the Countries Management app in the UI.](./managing-countries/images/01.png)
+```{note}
+For liferay DXP 7.4 U36 - U40 (or Liferay Portal 7.4 GA36 - GA40), the Countries Management app is hidden from the UI and must be enabled with the use of feature flags. See [Enable the Countries Management App](#enable-the-countries-management-app) below to see the steps.
+```
 
 ## Edit an Existing Country
 
@@ -71,3 +59,19 @@ Make sure you intend to delete an entry before you click _OK_. The entry cannot 
 1. Complete the form to add a new country. Name, Two-Letter ISO Code, Three-Letter ISO Code, and Number are required fields.
 
 1. Click _Save_, and the new country has been added.
+
+## Enable the Countries Management App
+
+By default, the Countries Management App is hidden from the UI. To enable the UI,
+
+1. Add the following property to your [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) file: 
+
+   `feature.flag.LPS-122223=true` 
+
+   If using Docker, use the following [`Environment Variable`](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#portal-properties) upon first startup:
+
+   `--env LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER2__NUMBER2__NUMBER2__NUMBER2__NUMBER3_=true`
+
+1. Restart your server. The app now appears.
+
+   ![See the Countries Management app in the UI.](./managing-countries/images/01.png)

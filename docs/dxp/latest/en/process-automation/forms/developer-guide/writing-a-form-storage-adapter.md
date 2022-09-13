@@ -6,7 +6,7 @@ By default, forms are stored as JSON in Liferay DXP's database. This example sho
 
 ![Use a DDM Storage Adapter to add a Storage Type to the Forms application.](./writing-a-form-storage-adapter/images/01.png)
 
-First you'll see how the [default storage adapter](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/JSONDDMStorageAdapter.java) saves form records in the Liferay DXP database as JSON content. Then you'll add logic to store each Form Record on the file system.
+First you'll see how the [default storage adapter](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/DefaultDDMStorageAdapter.java) saves form records in the Liferay DXP database as JSON content. Then you'll add logic to store each Form Record on the file system.
 
 ## Examine a Running DDM Storage Adapter
 
@@ -73,7 +73,7 @@ Then, follow these steps:
 
 ## Understand the Extension Point
 
-The example contains only one class: `R2F1DDMStorageAdapter`, a service implementing a `DDMStorageAdapter` to provide logic for storing Form Entries. The deployed example currently just wraps the default JSON implementation: `JSONDDMStorageAdapter`. Later, you'll add file system storage to the code that's already here.
+The example contains only one class: `R2F1DDMStorageAdapter`, a service implementing a `DDMStorageAdapter` to provide logic for storing Form Entries. The deployed example currently just wraps the default JSON implementation: `DefaultDDMStorageAdapter`. Later, you'll add file system storage to the code that's already here.
 
 ### Register the Adapter Class with the OSGi Container
 
@@ -97,7 +97,7 @@ The property `ddm.storage.adapter.type` provides an identifier so that your serv
 
 ```java
 @Reference(target = "(ddm.storage.adapter.type=r2f1-ddm-storage-adapter)")
-private DDMStorageAdapter jsonWrapperDDMStorageAdapter;
+private DDMStorageAdapter defaultWrapperDDMStorageAdapter;
 ```
 
 ### Understand the DDMStorageAdapter Interface
@@ -266,23 +266,23 @@ There are two types of save requests: 1) a new record is added or 2) an existing
 		return ddmFormValuesSerializerSerializeResponse.getContent();
 	}
     ```
-    
+
     Import `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializer`, `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializerSerializeRequest`, and `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializerSerializeResponse`.
 
 1. Add this logic and the call to `_saveFile` to the `save` method by replacing the existing `return` statement:
 
    ```java
-    DDMStorageAdapterSaveResponse jsonStorageAdapterSaveResponse =
-        _jsonStorageAdapter.save(ddmStorageAdapterSaveRequest);
+    DDMStorageAdapterSaveResponse defaultStorageAdapterSaveResponse =
+        _defaultStorageAdapter.save(ddmStorageAdapterSaveRequest);
 
-    long fileId = jsonStorageAdapterSaveResponse.getPrimaryKey();
+    long fileId = defaultStorageAdapterSaveResponse.getPrimaryKey();
 
     _saveFile(fileId, ddmStorageAdapterSaveRequest.getDDMFormValues());
 
-    return jsonStorageAdapterSaveResponse;
+    return defaultStorageAdapterSaveResponse;
    ```
 
-   The `_jsonStorageAdapter.save` call is made first, so that a Primary Key is created for a new form entry. This Primary Key is retrieved from the `Response` object to create the `fielId`.
+   The `_defaultStorageAdapter.save` call is made first, so that a Primary Key is created for a new form entry. This Primary Key is retrieved from the `Response` object to create the `fielId`.
 
 ## Deploy and Test the Storage Adapter
 

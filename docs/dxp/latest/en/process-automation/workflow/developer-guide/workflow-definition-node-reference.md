@@ -111,7 +111,9 @@ Here's the `determine-branch` condition from the [Category Specific Approval](ht
 
 This example checks the asset category to choose whether to transition to the _Legal Review_ task or the _Content Review_ task.
 
-The `returnValue` variable points from the condition to a transition, and its value must match a valid transition name. This script looks up the asset in question, retrieves its asset category, and sets an initial `returnValue`. Then it checks to see if the asset has been marked with the _legal_ category. If not it goes through _Content Review_ (to the content-review task in the workflow), and if it does it goes through _Legal Review_ (to the legal-review task in the workflow).
+The `returnValue` variable points from the condition to a transition, and its value must match a valid transition name[^1]. This script looks up the asset in question, retrieves its asset category, and sets an initial `returnValue`. Then it checks to see if the asset has been marked with the _legal_ category. If not it goes through _Content Review_ (to the content-review task in the workflow), and if it does it goes through _Legal Review_ (to the legal-review task in the workflow).
+
+[^1]: For Liferay Portal, a valid transition name is the transition's `<name>` element value as entered in the XML file or in the source view of the Process Builder. For Liferay DXP, when you view the source of the definition in the Process Builder, you will instead see the value of the transition name in the transition's `<id>` element. 
 
 ## Forks and Joins
 

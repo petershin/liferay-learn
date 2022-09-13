@@ -134,7 +134,10 @@ The following workflow script is written using Groovy and is used with a `Condit
 ```
 
 ```{note}
-A script's `returnValue` variable determines the next task or state.
+A Condition node script's `returnValue` variable must be a valid transition name to determine the next task or state.
+
+For Liferay Portal, a valid transition name is the transition's `<name>` element value as entered in the XML file or in the source view of the Process Builder. For Liferay DXP, when you view the source of the definition in the Process Builder, you will instead see the value of the transition name in the transition's `<id>` element. 
+
 ```
 
 See [Crafting Workflow Definitions](./crafting-xml-workflow-definitions.md) for links to downloadable workflow script examples.

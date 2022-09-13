@@ -56,6 +56,8 @@ If you have implemented a [collection selector configuration](../reference/fragm
 </div>
 ```
 
+See the [official FreeMarker documentation](https://freemarker.apache.org/docs/ref_directive_list.html) for more information.
+
 ## Additional Information
 
 * [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)

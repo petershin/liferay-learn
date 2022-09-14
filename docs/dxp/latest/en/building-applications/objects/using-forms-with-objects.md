@@ -36,19 +36,17 @@ Once linked to the desired Object, you can add field elements to the form and ma
 
 Follow these steps to map a form field to an Object field.
 
-1. Add a field element to the form.
+1. Add a form field that is compatible with the desired Object field.
 
-   ```{important}
-   Object fields can only be mapped to [compatible field types](#field-compatibility-reference).
-   ```
-
-   ```{warning}
-   When mapped to a required Object field, the form field is automatically marked required. If you're [using a form rule](../../process-automation/forms/form-rules/form-rules-overview.md) to [conditionally hide a required field](../../process-automation/forms/form-rules/example-using-hidden-fields-with-form-rules.md), you must ensure it contains appropriate data or form submission will fail. Using a [predefined value](../../process-automation/forms/creating-and-managing-forms/providing-help-text-and-predefined-values.md) with an [autofill rule](../../process-automation/forms/form-rules/using-the-autofill-rule.md) can help ensure that a required hidden field is properly populated.
-   ```
+   See [Field Compatibility Reference](#field-compatibility-reference) for a list of which form fields are compatible with each type of Object field.
 
 1. Click on the *Advanced* tab.
 
 1. Select the desired *Object field*.
+
+   ```{warning}
+   When mapped to a required Object field, the form field is automatically marked required. If you're [using a form rule](../../process-automation/forms/form-rules/form-rules-overview.md) to [conditionally hide a required field](../../process-automation/forms/form-rules/example-using-hidden-fields-with-form-rules.md), you must ensure it contains appropriate data or form submission will fail. Using a [predefined value](../../process-automation/forms/creating-and-managing-forms/providing-help-text-and-predefined-values.md) with an [autofill rule](../../process-automation/forms/form-rules/using-the-autofill-rule.md) can help ensure that a required hidden field is properly populated.
+   ```
 
    ![In the Advanced tab, select the desired Object field.](./using-forms-with-objects/images/02.png)
 
@@ -60,7 +58,7 @@ Follow these steps to map a form field to an Object field.
 
    ![Map all desired Object fields to the form fields.](./using-forms-with-objects/images/03.png)
 
-1. Design the form layout. See [Forms](../../process-automation/forms.md) documentation to learn more about designing forms.
+1. Design the form layout. See [Forms](../../process-automation/forms.md) documentation to learn more about this process.
 
 1. Once you've finished designing the form, click *Publish* to finish form creation.
 

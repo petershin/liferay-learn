@@ -59,7 +59,7 @@ Then, follow these steps to deploy the example theme contributor:
 ### テーマコントリビューターのプロパティを調べる
 
 テーマコントリビューターのプロジェクトには、それを構成するために必要なプロパティが`bnd.bnd`ファイルに追加されています。
-```{literalinclude} ./bundling-independent-ui-resources-via-contributors/resources/liferay-w9m6.zip/w9m6-web/bnd.bnd
+```{literalinclude} ./bundling-independent-ui-resources-via-theme-contributors/resources/liferay-w9m6.zip/w9m6-web/bnd.bnd
 ```
 
 A theme contributor's `bnd.bnd` file must have these properties for it to function:

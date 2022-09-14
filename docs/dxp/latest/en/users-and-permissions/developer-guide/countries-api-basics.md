@@ -63,7 +63,7 @@ Then, follow these steps:
 
 The `Country_POST_ToInstance.sh` script calls the REST service with a cURL command.
 
-```{literalinclude} ./countries-api-basics/resources/liferay-g6m8.zip/curl/Countries_POST_ToInstance.sh
+```{literalinclude} ./countries-api-basics/resources/liferay-g6m8.zip/curl/Country_POST_ToInstance.sh
     :language: bash
 ```
 

@@ -153,7 +153,7 @@ public String getLabel(Locale locale);
 
 ### 最小数値を取得するユーティリティクラスを追加する
 
-```{literalinclude} ./implementing-a-custom-order-rule/resources/liferay-x9k1.zip/x9k1-impl/src/main/java/com/acme/x9k1/internal/commerce/order/rule/entry/type/util/X9K1MinimumQuantityUtil.java
+```{literalinclude} ./implementing-a-custom-order-rule/resources/liferay-x9k1.zip/x9k1-impl/src/main/java/com/acme/x9k1/internal/commerce/order/rule/entry/util/X9K1MinimumQuantityUtil.java
     :language: java
    :lines: 8-20
 ```

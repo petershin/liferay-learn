@@ -16,7 +16,7 @@ Start by downloading and unzipping the example:
 
 Examine the `w9b7-service/service.xml` file:
 
-```{literalinclude} ../service-builder-basics/understanding-service-builder-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml)
+```{literalinclude} ../service-builder-basics/understanding-service-builder-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
 :language: xml
 ```
 

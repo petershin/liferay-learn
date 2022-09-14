@@ -237,7 +237,7 @@ java -classpath .:* -DorganizationId=1234 -DroleId=5678 -DuserAccountId=9012 Rol
 
 コード:
 
-```{literalinclude} ./role-api-basics/resources/liferay-z3v5.zip/java/RoleUserAssociation_POST_ToOrganization.java
+```{literalinclude} ./roles-api-basics/resources/liferay-z3v5.zip/java/RoleUserAssociation_POST_ToOrganization.java
    :dedent: 1
    :language: java
    :lines: 8-19

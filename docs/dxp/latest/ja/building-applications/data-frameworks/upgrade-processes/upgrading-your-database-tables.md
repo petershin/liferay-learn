@@ -94,7 +94,7 @@
 
 `UpgradeStepRegistrator`クラスを作成し、 `UpgradeStepRegister` インターフェイスを実装してください。
 
-```{literalinclude} ./upgrade-process-for-your-application/resources/liferay-p5d2.zip/2.0.0/p5d2-service/src/main/java/com/acme/p5d2/internal/upgrade/P5D2EntryUpgrade.java
+```{literalinclude} ./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/src/main/java/com/acme/p5d2/internal/upgrade/P5D2EntryUpgrade.java
 :dedent: 1
 :language: java
 :lines: 26-34
@@ -107,7 +107,7 @@
 
 基本クラスを拡張する`UpgradeProcess`クラスを作成します。
 
-```{literalinclude} ./upgrade-process-for-your-application/resources/liferay-p5d2.zip/2.0.0/p5d2-service/src/main/java/com/acme/p5d2/internal/upgrade/v2_0_0/P5D2EntryUpgradeProcess.java
+```{literalinclude} ./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/src/main/java/com/acme/p5d2/internal/upgrade/v2_0_0/P5D2EntryUpgradeProcess.java
 :dedent: 1
 :language: java
 :lines: 22-32

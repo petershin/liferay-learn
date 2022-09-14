@@ -93,7 +93,8 @@ Acme E5C9実装プロジェクトでは、唯一の承認者定義のワーク�
 
 このプロジェクトでは、アクションエクゼキュータに加えて、E5C9 唯一の承認者と呼ばれるワークフロー定義が含まれ、オートロードされます。このワークフロー定義は、デフォルトの唯一の承認者と同じロジックを持ちますが、ワークフロー定義に直接Groovyスクリプトを使用する代わりに、アクションエクゼキュータクラスのロジックを使用します。
 
-```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java">   :dedent: 4
+```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
+   :dedent: 4
    :language: java
    :lines: 49-50
 ```

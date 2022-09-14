@@ -63,7 +63,7 @@ Liferay の Rest API を使用して、国を作成および管理します。
 
 `Country_POST_ToInstance.sh` スクリプトは、cURL コマンドで REST サービスを呼び出します。
 
-```{literalinclude} ./countries-api-basics/resources/liferay-g6m8.zip/curl/Countries_POST_ToInstance.sh
+```{literalinclude} ./countries-api-basics/resources/liferay-g6m8.zip/curl/Country_POST_ToInstance.sh
     :language: bash
 ```
 

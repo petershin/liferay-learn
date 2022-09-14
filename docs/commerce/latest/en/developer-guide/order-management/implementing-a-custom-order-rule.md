@@ -154,7 +154,7 @@ The code retrieves the value for the minimum quantity configured for the Order R
 
 ### Add a utility class to retrieve the minimum quantity value
 
-```{literalinclude} ./implementing-a-custom-order-rule/resources/liferay-x9k1.zip/x9k1-impl/src/main/java/com/acme/x9k1/internal/commerce/order/rule/entry/type/util/X9K1MinimumQuantityUtil.java
+```{literalinclude} ./implementing-a-custom-order-rule/resources/liferay-x9k1.zip/x9k1-impl/src/main/java/com/acme/x9k1/internal/commerce/order/rule/entry/util/X9K1MinimumQuantityUtil.java
     :language: java
     :lines: 8-20
 ```

@@ -75,6 +75,7 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Properties;
 import java.util.Set;
 import java.util.TreeSet;
@@ -192,7 +193,9 @@ public class Main {
 	private void _addFileNames(String fileName) {
 		File file = new File(fileName);
 
-		if (file.isDirectory()) {
+		if (file.isDirectory() &&
+			!Objects.equals(file.getName(), "resources")) {
+
 			for (String currentFileName : file.list()) {
 				_addFileNames(fileName + "/" + currentFileName);
 			}

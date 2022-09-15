@@ -981,7 +981,10 @@ public class Main {
 		}
 
 		if (!file.exists()) {
-			System.out.println("Missing image file " + file);
+			System.out.println(
+				"Markdown file " + _markdownFile.getCanonicalPath() +
+					" references nonexistent image file " +
+						file.getCanonicalPath());
 
 			return;
 		}

@@ -1,6 +1,6 @@
 # Predefined Element Variables Reference
 
-To add a predefined variable to the element in the Element Source editor, place the cursor where the variable will be, then click on the variable in the left hand sidebar to have it inserted. In the Custom JSON Element you must type the variable directly into the editor. The syntax for each variable is included in the table below.
+To add a predefined variable to the element in the Element Source editor, place the cursor where the variable will be, then click on the variable in the left hand sidebar to have it inserted. In the Custom JSON Element you must type the variable directly into the editor. The syntax for each variable appears in the table below.
 
 | Variable | Type: Definition | Syntax |
 | :--- | :--- | :--- |
@@ -27,10 +27,10 @@ To add a predefined variable to the element in the Element Source editor, place 
 | Age | Number: Return the user's age in number of years | `${user.age}` |
 | {bdg-secondary}`7.4 U41+` Asset Category Ids | Number: Return the IDs of the user's categories | `${user.asset_category_ids}` |
 | {bdg-secondary}`7.4 U41+` Asset Tag Names | Text: Return the user's tags | `${user.asset_tag_names}` |
-| Birthday | Date: Return he user's birth date | `${user.birthday}` |
+| Birthday | Date: Return the user's birth date | `${user.birthday}` |
 | Create Date | Date: Return the date when the user account was created in Liferay | `${user.create_date}` |
-| Current Site Role IDs | Number: Return the IDs of the user's site roles | `${user.current_site_role_ids}` |
-| Email Domain | Text: Return the domain of the user's email | `${user.email_domain}` |
+| Current Site Role IDs | Number: Return the user's site role IDs | `${user.current_site_role_ids}` |
+| Email Domain | Text: Return the user's email domain | `${user.email_domain}` |
 | First Name | Text: Return the user's first name | `${user.first_name}` |
 | Full Name | Text: Return the user's full name | `${user.full_name}` |
 | Group IDs | Number: Return the IDs of sites the user is a member of | `${user.group_ids}` |

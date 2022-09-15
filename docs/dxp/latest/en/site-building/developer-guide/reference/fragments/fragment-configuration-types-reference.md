@@ -1,6 +1,6 @@
 # Fragment Configuration Types Reference
 
-This reference list the available configuration types for fragments. See [Adding Configuration Options to Fragments](../../developing-page-fragments/adding-configuration-options-to-fragments.md) for more information on how to make a fragment configurable.
+This reference lists the available configuration types for fragments. See [Adding Configuration Options to Fragments](../../developing-page-fragments/adding-configuration-options-to-fragments.md) for more information on how to make a fragment configurable.
 
 These are the configurable fragment types available to implement:
 
@@ -46,20 +46,20 @@ This JSON configuration creates a checkbox you can implement for cases where a b
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-The color picker JSON configuration creates a flexible color selector that can allows any color to be selected. You can use any of these methods to select a color with this selector:
+The color picker JSON configuration creates a flexible color selector where any color can be selected. You can use any of these methods to select a color:
 
-* Click the color on the left side to open a color picker, and choose any color.
+* Click the color on the left side to open a color picker to choose a color.
 
-* Enter the hex code for the desired color into the text box to change to any color.
+* Enter a color's hex code into the text box.
 
-* Click the *Value from Stylebook* button to open a menu of pre-defined colors to choose from. You can select any color configured in your currently used [style book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). This links the field's value to the selected token, until you press the button again to unlink it. Unlinking the token value converts the chosen color to its equivalent hex code value again.
+* Click the *Value from Stylebook* button to open a menu of pre-defined colors to choose defined in your currently used [style book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). This links the field's value to the selected token, until you press the button again to unlink it. Unlinking the token value converts the chosen color to its equivalent hex code value again.
 
-* If the color picker has no default value defined, then click the *Default* drop-down menu to select any color from your currently used style book. This works the same as the Value from Stylebook button when you select a value.
+* If the color picker has no default value defined, click the *Default* drop-down menu to select any color from your currently used style book. This works the same as the Value from Stylebook button when you select a value.
 
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/02.png)
 
 ```{note}
-If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/style-book-token-definitions.md), any color picker configurations on the page are replaced with [color palette](#color-palette configuration) configurations.
+If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/style-book-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette configuration) configurations.
 ```
 
 This JSON configuration creates a color picker field called `headingColor`:
@@ -83,7 +83,7 @@ This JSON configuration creates a color picker field called `headingColor`:
 }
 ```
 
-The `colorPicker` type stores an object with the configured name that holds the currently chosen color's value. You can reference this object in your fragment's HTML like this:
+The `colorPicker` type stores an object holding the chosen color value with the configured name. You can reference this object in your fragment's HTML like this:
 
 ```html
 <div class="fragment_69">
@@ -95,9 +95,9 @@ The `colorPicker` type stores an object with the configured name that holds the 
 
 When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is replaced with the chosen color. The type of value that it becomes depends on how the color is chosen:
 
-* If you chose a color directly, then it is replaced with the corresponding hex code value.
-* If you chose a color from the current style book, then it replaced with a CSS variable for the linked token (for example, `var(--danger)`).
-* If the current theme does not have any token definitions to use (so a [color palette](#color-palette-configuration) is used instead), then it is replaced with a CSS Color (for example, `rgb(255, 0, 0)`).
+* If you chose a color directly, it is replaced with the corresponding hex code value.
+* If you chose a color from the current style book, it's replaced with a CSS variable for the linked token (for example, `var(--danger)`).
+* If the current theme does not have any token definitions to use (so a [color palette](#color-palette-configuration) is used instead), it is replaced with a CSS Color (for example, `rgb(255, 0, 0)`).
 
 ## Color Palette Configuration
 
@@ -143,7 +143,7 @@ If you were to choose the color white, the `h3` tag heading would have the class
 
 {bdg-secondary}`Available Liferay 7.3+`
 
-This configuration creates a selector that lets you select one existing piece of content (a web content article, blog entry, or document by default) to include in the fragment.
+This configuration creates a selector for selecting one existing piece of content (a web content article, blog entry, or document by default) to include in the fragment.
 
 ```json
 {
@@ -224,7 +224,7 @@ You can then render the content in your fragment with this HTML snippet for the 
 </div>
 ```
 
-You can also access the Java object in your fragment, if you need access to specific portions of the content, under the key `[name-of-field]Object` (`itemSelector1Object` 
+If you need access to specific portions of the content, you can also access the Java object in your fragment under the key `[name-of-field]Object` (`itemSelector1Object` 
 in the example below). This example renders the title, description, and body of the web content article:
 
 ```markup
@@ -378,7 +378,7 @@ The `videoSelector` type is compatible with the [external video](../../../creati
 Using the `collectionSelector` configuration type, you can develop a fragment that includes a [collection](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) or collection provider. You can use the `collectionSelector` with both manual and dynamic collections.
 
 ```{note}
-Collection providers allow developers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
+Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
 ```
 
 The following JSON configuration shows how to use the `collectionSelector`:

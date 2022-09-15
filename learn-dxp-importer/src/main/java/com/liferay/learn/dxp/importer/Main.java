@@ -985,7 +985,7 @@ public class Main {
 
 		File finalFile = file;
 
-		String filePathString = file.getPath();
+		String fileNameString = file.getName();
 
 		String canonicalPathString = file.getCanonicalPath();
 
@@ -999,7 +999,7 @@ public class Main {
 							_markdownImportDirName.length()))),
 				new Document() {
 					{
-						title = filePathString;
+						title = fileNameString;
 					}
 				},
 				new HashMap<>() {

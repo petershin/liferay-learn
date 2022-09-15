@@ -25,7 +25,7 @@ You can find the blueprint ID from the Blueprints application (Global Menu &rarr
 
 ![The blueprint ID is listed in the Blueprints application.](./using-a-search-blueprint-on-a-search-page/images/01.png)
 
-Unless you're already using the Low Level Search Options widget on your search page, the Blueprints Options widget is more convenient for setting a blueprint. If you need to set other Search Context Attributes, perhaps for testing a blueprint, use the Low Level Search Options widget.
+Unless you're already using the Low Level Search Options widget on your search page, the Blueprints Options widget is more convenient for setting a blueprint. If you must set other Search Context Attributes, perhaps for testing a blueprint, use the Low Level Search Options widget.
 
 ## Applying Additional Search Context Attributes
 

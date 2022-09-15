@@ -120,6 +120,9 @@ public class Main {
 			tokenProperties.load(inputStream);
 		}
 
+		File markdownImportDirFile = new File(
+			mainProperties.getProperty("markdown.import.dir"));
+
 		Main main = new Main(
 			GetterUtil.getLong(
 				mainProperties.getProperty("liferay.content.structure.id")),
@@ -127,7 +130,7 @@ public class Main {
 			mainProperties.getProperty("liferay.oauth.client.id"),
 			mainProperties.getProperty("liferay.oauth.client.secret"),
 			new URL(mainProperties.getProperty("liferay.url")),
-			mainProperties.getProperty("markdown.import.dir"), tokenProperties);
+			markdownImportDirFile.getCanonicalPath(), tokenProperties);
 
 		main.uploadToLiferay();
 	}
@@ -185,7 +188,10 @@ public class Main {
 
 			_structuredContentResource.
 				postStructuredContentFolderStructuredContent(
-					_getStructuredContentFolderId(fileName),
+					_getStructuredContentFolderId(
+						FilenameUtils.getPathNoEndSeparator(
+							fileName.substring(
+								_markdownImportDirName.length()))),
 					_toStructuredContent(fileName));
 		}
 	}
@@ -545,7 +551,7 @@ public class Main {
 
 		File file = null;
 
-		String markdownFileName = markdownFile.getPath();
+		String markdownFileName = markdownFile.getCanonicalPath();
 
 		if (includeFileName.startsWith(File.separator)) {
 			String dirName = markdownFileName.substring(
@@ -573,7 +579,7 @@ public class Main {
 		}
 		else {
 			file = new File(
-				FilenameUtils.getPath(markdownFileName) + includeFileName);
+				FilenameUtils.getFullPath(markdownFileName) + includeFileName);
 		}
 
 		if (!file.exists()) {
@@ -592,7 +598,7 @@ public class Main {
 		throws Exception {
 
 		String fileName =
-			FilenameUtils.getPath(markdownFile.getPath()) +
+			FilenameUtils.getFullPath(markdownFile.getPath()) +
 				literalIncludeFileName;
 
 		File file = new File(fileName);
@@ -963,7 +969,7 @@ public class Main {
 
 	private void _visit(Image image) throws Exception {
 		String fileName =
-			FilenameUtils.getPath(_markdownFile.getPath()) + image.getUrl();
+			FilenameUtils.getFullPath(_markdownFile.getPath()) + image.getUrl();
 
 		File file = new File(fileName);
 
@@ -981,15 +987,16 @@ public class Main {
 
 		String filePathString = file.getPath();
 
-		String imageURL = _imageURLs.get(filePathString);
+		String canonicalPathString = file.getCanonicalPath();
+
+		String imageURL = _imageURLs.get(canonicalPathString);
 
 		if (imageURL == null) {
 			Document document = _documentResource.postDocumentFolderDocument(
 				_getDocumentFolderId(
-					FilenameUtils.getPath(
-						filePathString.substring(
-							filePathString.indexOf("/"),
-							filePathString.length()))),
+					FilenameUtils.getPathNoEndSeparator(
+						canonicalPathString.substring(
+							_markdownImportDirName.length()))),
 				new Document() {
 					{
 						title = filePathString;
@@ -1003,7 +1010,7 @@ public class Main {
 
 			imageURL = document.getContentUrl();
 
-			_imageURLs.put(filePathString, imageURL);
+			_imageURLs.put(canonicalPathString, imageURL);
 		}
 
 		image.setUrl(_toBasedSequence(imageURL));
@@ -1020,7 +1027,7 @@ public class Main {
 	private void _write(String content, String dirName, File markdownFile)
 		throws Exception {
 
-		String markdownFileName = markdownFile.getPath();
+		String markdownFileName = markdownFile.getCanonicalPath();
 
 		markdownFileName = markdownFileName.substring(
 			_markdownImportDirName.length());

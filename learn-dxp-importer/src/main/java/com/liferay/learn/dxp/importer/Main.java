@@ -965,8 +965,14 @@ public class Main {
 	}
 
 	private void _visit(Image image) throws Exception {
+		BasedSequence url = image.getUrl();
+
+		if (url.startsWith("http")) {
+			return;
+		}
+
 		String fileName =
-			FilenameUtils.getFullPath(_markdownFile.getPath()) + image.getUrl();
+			FilenameUtils.getFullPath(_markdownFile.getPath()) + url;
 
 		File file = new File(fileName);
 

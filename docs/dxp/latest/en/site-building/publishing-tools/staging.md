@@ -30,7 +30,7 @@ staging/using-staging-in-asset-libraries.md
 staging/site-staging-ui-reference.md
 ```
 
-Liferay's Staging application provides a working environment for making changes to a Site or Asset Library before publishing your changes to your live environment. With it, you can modify staged application data and Pages behind the scenes and then publish your changes when ready, whether individually or altogether, while the Live environment handles incoming user traffic.
+Liferay's Staging application provides a working environment for making changes to a Site or Asset Library before publishing your changes to your live environment. With it, you can modify staged application data and Pages behind the scenes and then publish your changes when ready, whether individually or all together, while the Live environment handles incoming user traffic.
 
 ```{important}
 Liferay Commerce does not support Staging. During the publishing process, entities from Commerce are not staged. 

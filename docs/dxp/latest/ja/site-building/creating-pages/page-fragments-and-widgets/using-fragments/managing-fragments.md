@@ -42,6 +42,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
     ```{note}
     Liferay DXP/Portal 7.3以前の場合は、*プロダクトメニュー* &rarr; *サイトメニュー* &rarr; *サイトビルダー* &rarr; *ページフラグメント*の下にあります。
+    ```
 
 1. *フラグメントセット*リストで目的のセットを選択します。
 
@@ -80,6 +81,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 1. *サイトメニュー* (![Site Menu](../../../../images/icon-product-menu.png)) を開き、 *［Design］* &rarr; *［Fragments］*に移動します。
 
     ```{note} Liferay DXP/Portal 7.3以前の場合は、*［プロダクトメニュー］* &rarr; *［サイトメニュー］* &rarr; *［サイトビルダー］* &rarr; *［ページ フラグメント］*の下にあります。
+    ```
 
 1. **Fragments Sets** リストで目的のデフォルトセットを選択します。
 

@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay DXP 7.4 U42+/GA42+`
 
-You can configure Segments by geolocation to dynamically display different pages or content based on the user's country. To display different pages, you can use [Experiences](../experience-personalization/content-page-personalization.md#understanding-how-experiences-work), and to display specific content on the page, you can use [Collections](../experience-personalization/personalizing-collections.md).
+You can configure *Segments* by geolocation to dynamically display different pages or content based on the user's country. To display different pages, you can use [Experiences](../experience-personalization/content-page-personalization.md#understanding-how-experiences-work), and to display specific content on the page, you can use [Collections](../experience-personalization/personalizing-collections.md).
 
 ## Creating a Segment by Geolocation
 

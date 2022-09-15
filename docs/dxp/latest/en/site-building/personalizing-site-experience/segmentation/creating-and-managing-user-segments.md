@@ -51,6 +51,10 @@ From the *Condition* area you have these options:
 
 For the [Session Properties](./segments-editor-ui-reference.md#session-properties), you can configure a list of predefined values using [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md). This option facilitates the task of defining the segments and eliminates manual entry errors.
 
+```{note}
+Starting from Liferay DXP 7.4 U42+/GA42+, you can create Segments by geolocation. See [Segmentation by Geolocation](./segmentation-by-geolocation.md) for more information.
+```
+
 As you edit, a count of members meeting the criteria appears at the top of the Conditions area. You can click on *View Members* to see the list. This helps you determine if you are correctly defining the Segment.
 
 ![You can view the list of Segment members at any time.](./creating-and-managing-user-segments/images/04.png)

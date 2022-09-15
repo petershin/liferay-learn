@@ -63,22 +63,6 @@ After you create your User Segment, you can see it in the list of User Segments 
 You can't delete a User Segment if it's used in an experience.
 ```
 
-### Segmentation By Geolocation
-
-{bdg-secondary}`Available Liferay DXP 7.4 U42+/GA42+`
-
-You can configure Segments by geolocation to dynamically display different pages or content based on the user's location. To display different pages, you can use *Experiences* and to display specific content on the page you can use *Collections*.
-
-#### Configuring the Geolocation Database
-
-A geolocation database contains information about IP addresses and their country of origin. To configure this,
-
-1. Open the Global Menu and go to Control Panel -> System Settings.
-2. Click on Third Party from the Platform section.
-3. Click on IP Geocoder Configuration from the left menu to set the path to a custom geolocation database.
-
-The file path is empty by default. When empty, it uses the free GeoLite2 database to resolve IP addresses. Optionally, you can set the path to a custom geolocation database with the `.mmdb` extension to override the default database.  
-
 ## Related Information
 
 - [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)

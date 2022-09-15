@@ -771,6 +771,10 @@ public class Main {
 			String mySTDirectiveLine = bufferedReader.readLine();
 
 			if (mySTDirectiveLine == null) {
+				System.out.println(
+					"Unclosed MyST directive block found in " +
+						markdownFile.getCanonicalPath());
+
 				break;
 			}
 

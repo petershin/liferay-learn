@@ -1,6 +1,7 @@
 ---
 toc:
 - ./segmentation/creating-and-managing-user-segments.md
+- ./segmentation/segmentation-by-geolocation.md
 - ./segmentation/getting-analytics-for-user-segments.md
 - ./segmentation/segments-editor-ui-reference.md
 ---
@@ -10,6 +11,7 @@ toc:
 :maxdepth: 3
 
 segmentation/creating-and-managing-user-segments.md
+segmentation/segmentation-by-geolocation.md
 segmentation/getting-analytics-for-user-segments.md
 segmentation/segments-editor-ui-reference.md
 ```
@@ -19,6 +21,10 @@ segmentation/segments-editor-ui-reference.md
 
 :::{grid-item-card} Creating and Managing User Segments
 :link: ./segmentation/creating-and-managing-user-segments.md
+:::
+
+:::{grid-item-card} Segmentation by Geolocation
+:link: ./segmentation/segmentation-by-geolocation.md
 :::
 
 :::{grid-item-card} Getting Analytics for User Segments

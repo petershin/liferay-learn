@@ -249,10 +249,7 @@ public class Main {
 			Matcher.quoteReplacement(File.separator));
 
 		for (String part : parts) {
-			if (part.endsWith(".html") || part.endsWith(".md") ||
-				part.endsWith(".rst") || part.equalsIgnoreCase("..") ||
-				part.equalsIgnoreCase("docs") || part.equalsIgnoreCase("en") ||
-				part.equalsIgnoreCase("ja") || part.equalsIgnoreCase(".") ||
+			if (part.equalsIgnoreCase("en") || part.equalsIgnoreCase("ja") ||
 				part.equalsIgnoreCase("latest")) {
 
 				continue;

@@ -114,12 +114,18 @@ Session Properties contains criteria based on the user's activity, browser, and 
 | URL | Enter the current URL. |
 | User Agent | Enter a User Agent property. |
 
-Since Liferay DXP 7.2 SP2+, these properties are also available for Organizations:
+Since Liferay DXP 7.2 SP2+, these properties are also available for the Session:
 
 | Property | Description |
 | :--- | :--- |
 | Hostname | Enter a virtual host name. |
 | Request Parameters | Enter the name and value of a request parameter. |
+
+Starting from Liferay DXP 7.4 U42+/GA42+, the following property is also available for the Session:
+
+| Property | Description |
+| :--- | :--- |
+| IP Geocoder Country | Select a country to match with the user's IP address. |
 
 ## Segments Property
 

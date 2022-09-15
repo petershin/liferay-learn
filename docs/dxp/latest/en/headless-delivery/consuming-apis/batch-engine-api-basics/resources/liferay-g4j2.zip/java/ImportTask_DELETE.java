@@ -6,14 +6,12 @@ public class ImportTask_DELETE {
 		ImportTaskResource.Builder builder = ImportTaskResource.builder();
 
 		ImportTaskResource importTaskResource = builder.authentication(
-			"test@liferay.com", "test1"
+			"test@liferay.com", "learn"
 		).build();
-
-		String json = args[0];
 
 		System.out.println(
 			importTaskResource.deleteImportTask(
-				args[1], null, null, null, null, json));
+				args[0], null, null, null, null, args[1]));
 	}
 
 }

@@ -6,16 +6,14 @@ public class ImportTask_POST {
 		ImportTaskResource.Builder builder = ImportTaskResource.builder();
 
 		ImportTaskResource importTaskResource = builder.authentication(
-			"test@liferay.com", "test1"
+			"test@liferay.com", "learn"
 		).parameter(
 			"siteId", String.valueOf(System.getProperty("siteId"))
 		).build();
 
-		String json = args[0];
-
 		System.out.println(
 			importTaskResource.postImportTask(
-				args[1], null, null, null, null, null, null, json));
+				args[0], null, null, null, null, null, null, args[1]));
 	}
 
 }

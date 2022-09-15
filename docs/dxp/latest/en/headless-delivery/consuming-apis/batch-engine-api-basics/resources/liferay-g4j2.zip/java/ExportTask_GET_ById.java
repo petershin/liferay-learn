@@ -6,7 +6,7 @@ public class ExportTask_GET_ById {
 		ExportTaskResource.Builder builder = ExportTaskResource.builder();
 
 		ExportTaskResource exportTaskResource = builder.authentication(
-			"test@liferay.com", "test1"
+			"test@liferay.com", "learn"
 		).build();
 
 		System.out.println(

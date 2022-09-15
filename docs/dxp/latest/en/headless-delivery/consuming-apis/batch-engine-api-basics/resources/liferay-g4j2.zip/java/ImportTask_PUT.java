@@ -6,14 +6,12 @@ public class ImportTask_PUT {
 		ImportTaskResource.Builder builder = ImportTaskResource.builder();
 
 		ImportTaskResource importTaskResource = builder.authentication(
-			"test@liferay.com", "test1"
+			"test@liferay.com", "learn"
 		).build();
-
-		String json = args[0];
 
 		System.out.println(
 			importTaskResource.putImportTask(
-				args[1], "", "", "", "", null, json));
+				args[0], "", "", "", "", null, args[1]));
 	}
 
 }

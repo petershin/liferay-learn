@@ -10,13 +10,15 @@ public class ExportTask_POST {
 		ExportTaskResource.Builder builder = ExportTaskResource.builder();
 
 		ExportTaskResource exportTaskResource = builder.authentication(
-			"test@liferay.com", "test1"
+			"test@liferay.com", "learn"
 		).parameter(
 			"siteId", String.valueOf(System.getProperty("siteId"))
 		).build();
 
 		ExportTask exportTask = exportTaskResource.postExportTask(
 			args[0], "json", "", "", "", "");
+
+		System.out.println(exportTask);
 
 		HttpInvoker.HttpResponse httpResponse =
 			exportTaskResource.getExportTaskContentHttpResponse(

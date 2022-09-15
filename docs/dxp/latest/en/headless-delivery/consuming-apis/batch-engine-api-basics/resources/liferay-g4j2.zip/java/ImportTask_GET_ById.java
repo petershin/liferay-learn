@@ -6,7 +6,7 @@ public class ImportTask_GET_ById {
 		ImportTaskResource.Builder builder = ImportTaskResource.builder();
 
 		ImportTaskResource importTaskResource = builder.authentication(
-			"test@liferay.com", "test1"
+			"test@liferay.com", "learn"
 		).build();
 
 		System.out.println(

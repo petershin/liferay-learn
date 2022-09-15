@@ -1,6 +1,6 @@
 # Best Practices for Using Fragment Configurations
 
-When you are creating page fragments for your site with your own [configurations](./adding-configuration-options-to-fragments.md), it's your responsibility to safely and effectively use them in their HTML presentation. Here are some techniques that you can use to make your fragments more effective and robust.
+When you are creating page fragments for your site with your own [configurations](./adding-configuration-options-to-fragments.md), it's your responsibility to use them in their HTML presentation safely and effectively. Here are some techniques that you can use to make your fragments more effective and robust.
 
 * [Escape Configuration Text Values](#escape-configuration-text-values)
 * [Use Lists for Repeated HTML Elements](#use-lists-for-repeated-html-elements)
@@ -39,7 +39,7 @@ For example, you can iterate over a number of lines that is defined in a configu
 </div>
 ```
 
-If you have implemented a [collection selector configuration](../reference/fragments/fragment-configuration-types-reference.md#collection-selector), then you can also list all of the titles in the configured collection, like this example:
+If you have implemented a [collection selector configuration](../reference/fragments/fragment-configuration-types-reference.md#collection-selector), you can also list all of the titles in the configured collection, like this example:
 
 ```html
 <div class="fragment_310">

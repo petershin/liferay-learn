@@ -778,12 +778,9 @@ public class Main {
 
 			String trimmedMySTDirectiveLine = mySTDirectiveLine.trim();
 
-			if (trimmedMySTDirectiveLine.startsWith("```") ||
-				(!directiveName.equals("toctree") &&
-				 trimmedMySTDirectiveLine.isBlank())) {
+			if (trimmedMySTDirectiveLine.startsWith("```"))
 
 				break;
-			}
 
 			mySTDirectiveLines.add(mySTDirectiveLine);
 		}

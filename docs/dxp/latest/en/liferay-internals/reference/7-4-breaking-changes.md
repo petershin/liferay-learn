@@ -1094,10 +1094,11 @@ MySQL connector has been upgraded to version 8.0.29. MySQL 8.0.29 utilizes TLSv1
 
 ### Who is affected?
 
-For clients who use a MySQL version lower than 5.7.28 and if they use the auto-downloaded MySQL connector on DXP U37 or higher. For those who manually installed MySQL connector 8.0.28 or higher, upgrading MySEL to 5.7.28 or higher is required. 
+Clients who use a MySQL version lower than 5.7.28, especially if they use the auto-downloaded MySQL connector on DXP U37 or higher. For those who manually installed MySQL connector 8.0.28 or higher, upgrading MySQL to 5.7.28 or higher is required. 
 
 ### How should I update my code?
-Upgrade MySQL to version 5.7.28 or higher. Or set the protocol to TLSv1.2 manually (See https://dev.mysql.com/doc/refman/5.7/en/encrypted-connection-protocols-ciphers.html#encrypted-connection-supported-protocols).
+
+Upgrade MySQL to version 5.7.28 or higher, or set the protocol to TLSv1.2 manually (See https://dev.mysql.com/doc/refman/5.7/en/encrypted-connection-protocols-ciphers.html#encrypted-connection-supported-protocols).
 
 ### Why was this change made?
 - This change was made to address security vulnerabilities.

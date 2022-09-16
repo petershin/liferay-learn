@@ -128,3 +128,13 @@ Override the `doUpgrade()` method with instructions to modify your table. The fo
 ```
 
 Re-run Service Builder after making your changes. You are now ready to build an deploy your upgrade.
+
+## Managing Complex Upgrades
+
+If your upgrade is complex with many steps, consider using the `getPreUpgradeSteps()` and `getPostUpgradeSteps()` methods in your `UpgradeProcess` class. This approach provides more control over the upgrade process and in case of failure, each upgrade step is given a different schema version in the `Release_` table for easier debugging. When re-running the upgrade, the upgrade process will also automatically check and restart the upgrade from the latest point of failure.
+
+For example, Liferay's [OpenIdConnectSessionUpgradeProcess](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-security-sso/portal-security-sso-openid-connect-persistence-service/src/main/java/com/liferay/portal/security/sso/openid/connect/persistence/internal/upgrade/v2_0_0/OpenIdConnectSessionUpgradeProcess.java) utilizes this feature.
+
+In this example, the `getPreUpgradeSteps()` runs first, which involves a simple step to add a new column. The `doUpgrade()` method involves populating the new column. If the `doUpgrade()` method were to fail, a developer could debug and make the necessary changes and re-run the upgrade. The process would see that the new column was added in the first step and automatically move on to the next step.
+
+Note, to utilize the upgrade steps, import `import com.liferay.portal.kernel.upgrade.UpgradeStep` class into your upgrade process.

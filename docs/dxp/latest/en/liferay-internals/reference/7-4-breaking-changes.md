@@ -1090,11 +1090,11 @@ To retrieve data from these fields, you can get the same information from the `_
 
 ### What changed?
 
-MySQL connector has been upgraded to version 8.0.29. MySQL 8.0.29 utilizes TLSv1.2 and TLSv1 and TLv1.1 are no longer supported. See https://dev.mysql.com/doc/refman/8.0/en/encrypted-connection-protocols-ciphers.html for more information.
+MySQL connector has been upgraded to version 8.0.29. MySQL 8.0.29 utilizes TLSv1.2, and TLSv1 and TLv1.1 are no longer supported. See https://dev.mysql.com/doc/refman/8.0/en/encrypted-connection-protocols-ciphers.html for more information.
 
 ### Who is affected?
 
-For clients who use a MySQL version lower than 5.7.28 and if they use the auto-downloaded MySQL connector on DXP U37 or higher. Or they manually installed MySQL connector 8.0.28 or higher.
+For clients who use a MySQL version lower than 5.7.28 and if they use the auto-downloaded MySQL connector on DXP U37 or higher. For those who manually installed MySQL connector 8.0.28 or higher, upgrading MySEL to 5.7.28 or higher is required. 
 
 ### How should I update my code?
 Upgrade MySQL to version 5.7.28 or higher. Or set the protocol to TLSv1.2 manually (See https://dev.mysql.com/doc/refman/5.7/en/encrypted-connection-protocols-ciphers.html#encrypted-connection-supported-protocols).

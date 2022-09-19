@@ -782,9 +782,9 @@ public class Main {
 
 			String trimmedMySTDirectiveLine = mySTDirectiveLine.trim();
 
-			if (trimmedMySTDirectiveLine.startsWith("```"))
-
+			if (trimmedMySTDirectiveLine.startsWith("```")) {
 				break;
+			}
 
 			mySTDirectiveLines.add(mySTDirectiveLine);
 		}

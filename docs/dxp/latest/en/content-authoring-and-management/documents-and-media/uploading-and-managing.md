@@ -6,6 +6,7 @@ toc:
 - ./uploading-and-managing/deleting-files.md
 - ./uploading-and-managing/editing-images.md
 - ./uploading-and-managing/using-file-expiration-and-review-dates.md
+- ./uploading-and-managing/configuring-document-urls.md
 - ./uploading-and-managing/linking-to-files-on-google-drive.md
 - ./uploading-and-managing/enabling-docusign-digital-signatures.md
 - ./uploading-and-managing/creating-documents.md
@@ -22,6 +23,7 @@ uploading-and-managing/previewing-files.md
 uploading-and-managing/deleting-files.md
 uploading-and-managing/editing-images.md
 uploading-and-managing/using-file-expiration-and-review-dates.md
+uploading-and-managing/configuring-document-urls.md
 uploading-and-managing/linking-to-files-on-google-drive.md
 uploading-and-managing/enabling-docusign-digital-signatures.md
 uploading-and-managing/creating-documents.md
@@ -34,6 +36,7 @@ uploading-and-managing/managing-metadata.md
 - [Deleting Files](./uploading-and-managing/deleting-files.md)
 - [Editing Images](./uploading-and-managing/editing-images.md)
 - [Using File Expiration and Review Dates](./uploading-and-managing/using-file-expiration-and-review-dates.md)
+- [Configuring Document URLs](./uploading-and-managing/configuring-document-urls.md)
 - [Linking to Files on Google Drive](./uploading-and-managing/linking-to-files-on-google-drive.md)
 - [Enabling DocuSign Digital Signature](./uploading-and-managing/enabling-docusign-digital-signatures.md)
 

@@ -982,7 +982,7 @@ public class Main {
 
 		if (!file.exists()) {
 			System.out.println(
-				"Markdown file " + _markdownFile.getCanonicalPath() +
+				_markdownFile.getCanonicalPath() +
 					" references nonexistent image file " +
 						file.getCanonicalPath());
 

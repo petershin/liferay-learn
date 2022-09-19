@@ -11,7 +11,7 @@ To access it, open the Site Menu (![Site Menu](../../../images/icon-product-menu
 Here, the Redirection tool's functionalities are organized into two tabs: *Redirects* and *404 URLs*.
 
 * [Redirects](#redirects)
-* [404 URLs](#urls)
+* [404 URLs](#404-urls)
 
 ```{important}
 For Liferay DXP/Portal 7.4+, 404 tracking is disabled by default. To use this feature, you must [enable 404 tracking](#enabling-404-tracking). This enables both 404 tracking and the 404 URLs tab in the Redirection application.
@@ -29,6 +29,10 @@ While both automatically direct users to a specified destination, they each have
 * **Temporary**: Use a 302 code to inform search engines and other tools accessing your Site that the requested resource is temporarily moved. A 302 code is useful when you want to conduct A/B testing or redirect traffic while fixing a problem, without impacting your Site ranking. DXP uses 302 codes by default.
 
 See [Optimizing Sites](../../optimizing-sites.md) to learn more about the implications of each redirect type for SEO. Also, see [A/B Testing](../../optimizing-sites/ab-testing/ab-testing.md) to learn about using 302 codes when testing.
+
+```{note}
+The Rediretion tool is used for defining [alias redirects](../managing-site-urls.md#site-redirects). If you need to perform bulk redirects, see [Using Pattern Redirects](./using-pattern-redirects.md).
+```
 
 ### Creating a Redirect
 
@@ -142,3 +146,4 @@ Enabling or disabling the application does not affect data stored in the databas
 
 * [Configuring Virtual Hosts Site URLs](./configuring-virtual-hosts-site-urls.md)
 * [Configuring Your Site's Friendly URLs](./configuring-your-sites-friendly-url.md)
+* [Using Pattern Redirects](./using-pattern-redirects.md)

@@ -27,7 +27,7 @@ Email invitations grant users access to a single project environment. Invited us
 New DXP Cloud users must create an account, while returning users can *Log in* using their DXP Cloud credentials.
 
 ```{note}
-Any user can access the Team page to see other users in the environment and their roles, including the Administrators.
+Any user can access the Team page to see other users in the environment and their roles, including the administrators.
 ```
 
 ## Managing Team Members
@@ -48,7 +48,7 @@ Roles determine a user's access level within an environment. Liferay DXP Cloud c
 
 * **Owner:** The sole owner of the project has the most complete access.
 * **Administrator:** Administrators have full control over DXP Cloud environments and their members.
-* **Contributor:** Contributors can handle application management and most of the development life cycle, but they can't manage team members or perform other Administrator-exclusive actions.
+* **Contributor:** Contributors can handle application management and most of the development life cycle, but they can't manage team members or perform other administrator-exclusive actions.
 * **Guest:** Guests have view-only access. Guests can see what is happening in the environment, but can't perform actions or make any changes. They only have permission to remove themselves from the environment.
 
 Here is a list of important permission and which team roles have them:

@@ -54,6 +54,10 @@ Follow these steps to view and manage retained URLs for a file:
 
 Changes to the friendly URL history are automatically saved.
 
+```{note}
+Beginning with Liferay 7.4 U34/GA34, the Display Page Template framework now takes into account each file's friendly URL history. This means users can continue to access a file's display page using old friendly URLs while they remain in the file's friendly URL history.
+```
+
 ## Document Version URLs
 
 All file friendly URLs lead to latest version of the file. If you want to access the URL for previous file versions, navigate to the file's version history and copy the *download* URL for the desired version.

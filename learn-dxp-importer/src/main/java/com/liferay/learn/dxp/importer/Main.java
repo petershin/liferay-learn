@@ -965,14 +965,14 @@ public class Main {
 	}
 
 	private void _visit(Image image) throws Exception {
-		BasedSequence url = image.getUrl();
+		BasedSequence basedSequence = image.getUrl();
 
-		if (url.startsWith("http")) {
+		if (basedSequence.startsWith("http")) {
 			return;
 		}
 
 		String fileName =
-			FilenameUtils.getFullPath(_markdownFile.getPath()) + url;
+			FilenameUtils.getFullPath(_markdownFile.getPath()) + basedSequence;
 
 		File file = new File(fileName);
 
@@ -988,21 +988,19 @@ public class Main {
 
 		File finalFile = file;
 
-		String fileNameString = file.getName();
+		String filePathString = file.getCanonicalPath();
 
-		String canonicalPathString = file.getCanonicalPath();
-
-		String imageURL = _imageURLs.get(canonicalPathString);
+		String imageURL = _imageURLs.get(filePathString);
 
 		if (imageURL == null) {
 			Document document = _documentResource.postDocumentFolderDocument(
 				_getDocumentFolderId(
 					FilenameUtils.getPathNoEndSeparator(
-						canonicalPathString.substring(
+						filePathString.substring(
 							_markdownImportDirName.length()))),
 				new Document() {
 					{
-						title = fileNameString;
+						title = finalFile.getName();
 					}
 				},
 				new HashMap<>() {
@@ -1013,7 +1011,7 @@ public class Main {
 
 			imageURL = document.getContentUrl();
 
-			_imageURLs.put(canonicalPathString, imageURL);
+			_imageURLs.put(filePathString, imageURL);
 		}
 
 		image.setUrl(_toBasedSequence(imageURL));

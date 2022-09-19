@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4 U27+/GA27+`
 
-When a document is uploaded, Liferay automatically generates a friendly URL for accessing it. This URL uses the following structure: `server-address/documents/d/sites-friendly-url/documents-friendly-URL`. Unless specified during upload, Liferay uses the document's title for the friendly URL, but you can manually child this value at any time. Once set, you can access the latest version of the file at its friendly URL.
+When a document is uploaded, Liferay automatically generates a friendly URL for accessing it. This URL uses the following structure: `server-address/documents/d/sites-friendly-url/documents-friendly-URL`. Unless specified during upload, Liferay uses the document's title for the friendly URL, but you can manually change this value at any time. Once set, you can access the latest version of the file at its friendly URL.
 
 ```{note}
 For Liferay 7.4 U26/GA26 and earlier versions, Liferay generates document URLs using the following structure: `server-address/documents/site-id/folder-id/file-name/UUID` (e.g., `http://server-address/documents/20121/0/file-name.txt/c4c06cfa-a655-c796-fdf2-0ea38ef8d8a5`). If you're updating to U27+/GA27+, your existing documents can continue to use their old URLs based on this pattern. However, whenever one of these documents is first updated by a user, Liferay will convert its URL to use the new structure. Until updated, you can continue to access your documents using their old URLs. 

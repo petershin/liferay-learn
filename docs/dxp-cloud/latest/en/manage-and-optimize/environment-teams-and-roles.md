@@ -26,6 +26,10 @@ Email invitations grant users access to a single project environment. Invited us
 
 New DXP Cloud users must create an account, while returning users can *Log in* using their DXP Cloud credentials.
 
+```{note}
+Any user can access the Team page to see other users in the environment and their roles, including the Administrators.
+```
+
 ## Managing Team Members
 
 Current and invited team members appear in separate tabs of the *Members* section. Here administrators can manage team members via the *Actions* button in each tab.
@@ -40,28 +44,31 @@ From the *Current* tab, administrators can change team member roles or remove a 
 
 ## Understanding Team Roles
 
-Roles determine a user's access level within an environment. Liferay DXP Cloud comes with three default user roles: Admin, Contributor, and Guest.
+Roles determine a user's access level within an environment. Liferay DXP Cloud comes with four default user roles:
 
-**Admin:** Administrators have full control over the DXP Cloud environment and its members. The following permissions belong exclusively to administrators:
+* **Owner:** The sole owner of the project has the most complete access.
+* **Administrator:** Administrators have full control over DXP Cloud environments and their members.
+* **Contributor:** Contributors can handle application management and most of the development life cycle, but they can't manage team members or perform other Administrator-exclusive actions.
+* **Guest:** Guests have view-only access. Guests can see what is happening in the environment, but can't perform actions or make any changes. They only have permission to remove themselves from the environment.
 
-* Enable/disable auto scaling
-* Manually downscale a service
-* Restore from a backup
-* Change user roles
-* Invite members to the environment
-* Remove members from the environment
-* Enable/disable support access
-* Delete a service
+Here is a list of important permission and which team roles have them:
 
-**Contributor:** Contributors can handle application management and most of the development life cycle, but can't manage team members or perform other Admin-exclusive actions. Contributors have the following permissions:
-
-* Start a backup
-* Change VPN settings
-* Restart a service
-* Deploy a build
-* Remove themselves from the environment
-
-**Guest:** Guests have view-only access. Guests can see what is happening in the environment, but can't perform actions or make any changes. They only have permission to remove themselves from the environment.
+| **Permission** | **Owner** | **Administrator** | **Contributor** | **Guest** |
+| --- | :-: | :-: | :-: | :-: |
+| Inviting/removing members | &#10004; | &#10004; | X | X |
+| Changing members' roles | &#10004; | &#10004; | X | X |
+| Enabling/disabling Support access | &#10004; | &#10004; | X | X |
+| Deleting an environment | &#10004; | X | X | X |
+| Deleting a service | &#10004; | &#10004; | X | X |
+| Restarting/stopping a service | &#10004; | &#10004; | &#10004; | X |
+| Deploying a build | &#10004; | &#10004; | &#10004; | X |
+| Creating, viewing, or editing secrets | &#10004; | &#10004; | X | X |
+| Creating a new backup | &#10004; | &#10004; | &#10004; | X |
+| Uploading/downloading a backup | &#10004; | &#10004; | X | X |
+| Restoring from a backup | &#10004; | &#10004; | X | X |
+| Enabling/disabling auto-scaling | &#10004; | &#10004; | X | X |
+| Downscaling manually | &#10004; | &#10004; | X | X |
+| Changing VPN settings | &#10004; | &#10004; | &#10004; | X |
 
 ## Additional Information
 

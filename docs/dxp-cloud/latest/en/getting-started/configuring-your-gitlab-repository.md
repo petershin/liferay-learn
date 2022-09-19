@@ -5,7 +5,11 @@ Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub reposit
 1. Transfer the provisioned repository to their own private repository.
 1. Integrate their private repository with the Jenkins (CI) service in DXP Cloud using a Webhook.
 
-The provisioned repository will be on GitHub, but you can transfer it to a GitLab repository as of version 3.2.0 of the Jenkins service.
+The provisioned repository will be on GitHub, but you can transfer it to a GitLab repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the GitLab repository.
+
+```{note}
+The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
+```
 
 ## Preparing the Jenkins Service
 

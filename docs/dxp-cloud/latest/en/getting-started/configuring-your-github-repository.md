@@ -7,7 +7,7 @@ Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub reposit
 1. Integrate their private repository with the Jenkins (CI) service in DXP Cloud using a Webhook.
 
 ```{note}
-If you are using an organization account, then you must have administrative privileges to transfer the repository to the organization.
+If you are using an organization account, then you must have administrative privileges to transfer the repository to the organization. The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
 ```
 
 ## Transferring the Repository

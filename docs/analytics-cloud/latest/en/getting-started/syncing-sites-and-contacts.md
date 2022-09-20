@@ -2,13 +2,9 @@
 
 Now that you've [Connected Liferay DXP to Analytics Cloud](./connecting-liferay-dxp-to-analytics-cloud.md), it's time to sync your site and your contacts.
 
-<!-- This is good. When there's a prerequisite step, we should link to it. -->
-
 ## Optional Sample Setup 
 
-If you're also new to Liferay DXP, there isn't much on your Liferay instance for Analytics Cloud to start tracking. Use Liferay Commerce's [Minimum Accelerator Site](https://learn.liferay.com/commerce/latest/en/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html) to get some sample content that you can use to explore Analytics Cloud.
-
-<!-- We need to be much more careful here. Our goal is onboarding existing users of Liferay who aren't using Analytics Cloud. Therefore, our audience is assumed to be people who already have a site; they're just not using AC. If people have an existing site and follow these instructions, they'll create a new Minium site and put all their analytics in that. Tell them what you're doing: creating a new site based on the Minium accelerator as an example. They can either create that site or implement AC in their own site. Emphasize that this Minium site is an _example_ to show AC. -->
+If you already have an existing Liferay DXP site and users, skip to the next step of [Syncing Sites](#syncing-sites). If you are new to Liferay DXP, there isn't much on your Liferay instance for Analytics Cloud to start tracking. If you're interested in jump-starting a demo site, consider using Liferay Commerce's [Minimum Accelerator Site](https://learn.liferay.com/commerce/latest/en/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html) to get some sample content that you can use to explore Analytics Cloud.
 
 1. In your Liferay instance, open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to _Control Panel_ &rarr; _Sites_. 
 
@@ -16,7 +12,7 @@ If you're also new to Liferay DXP, there isn't much on your Liferay instance for
 
    ![Select the Minimum Site and add it to your Liferay instance.](./syncing-sites-and-contacts/images/01.png)
 
-Now add a few sample users for Analytics Cloud to track. 
+Now let's add a few sample users for Analytics Cloud to track. 
 
 1. In your Liferay instance, open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to _Control Panel_ &rarr; _System_ &rarr; _Server Administration_. Click on the _Script_ tab.
 
@@ -41,7 +37,7 @@ Now add a few sample users for Analytics Cloud to track.
    Click _Execute_. Three new users have been added to your instance.
 
 1. Open the Global Menu (![Global Menu](../images/icon-applications-menu.png)) and navigate to _Control Panel_ &rarr; _Instance Settings_. Under _Platform_, click _User Authentication_. Uncheck `Require strangers to verify their email address?
-` and click _Save_. Note, this setting makes it so we can log into these sample user accounts without the need for email verification.
+` and click _Save_. Note, this setting makes it so we can log into these sample user accounts without the need for email verification during this demo.
 
 1. Open the Global Menu (![Global Menu](../images/icon-applications-menu.png)) and navigate to _Control Panel_ &rarr; _Users and Organizations_.
 
@@ -53,7 +49,7 @@ Now add a few sample users for Analytics Cloud to track.
 
 The first step to syncing sites is creating a new Property. A property is a label associated with a single Liferay site or multiple Liferay sites. Analytics Cloud aggregates your data according to how you define your properties. This example shows a simple setup where a single site is associated with a property. To learn more about defining a property with multiple sites see [Scoping Sites and Individuals Using Properties](../connecting-data-sources/scoping-sites-and-individuals-using-properties.md).
 
-1. In Analytics Cloud, navigate to _Settings_ &rarr; _Properties_. Click _New Property_ and input a label. (e.g. Beryl Intranet).
+1. In Analytics Cloud, navigate to _Settings_ &rarr; _Properties_. Click _New Property_ and input a label. (e.g. Minium Site).
 
 1. In your Liferay DXP instance, open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to _Configuration_ &rarr; _Instance Settings_. Under _Platform_, click _Analytics Cloud_. Click _Select Sites_.
 
@@ -75,11 +71,9 @@ Analytics Cloud gives you tools to sync and manage individual contact data. Howe
 
 1. In your Liferay DXP instance, open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to _Configuration_ &rarr; _Instance Settings_. Under _Platform_, click _Analytics Cloud_. Click _Select Contacts_.
 
-1. Under the Contact Sync Options, click _Sync Contacts_. Use the switch to enable _Sync All_ to sync all your contacts. Alternatively, click _Sync by User Groups_ or _Sync by Organizations_ if you prefer to sync a subset of your contacts. Click _Save and Next_.
+1. Under the Contact Sync Options, click _Sync Contacts_. Use the switch to enable _Sync All_ to sync all your contacts. Alternatively, click _Sync by User Groups_ or _Sync by Organizations_ if you prefer to sync a subset of your contacts. Click _Save and Next_. For this example, syncing all your contacts will sync four contacts (the three individuals created above and the Test administrator user).
 
-<!-- This is fine for this onboarding, because it's not exactly like Learning Paths as we've defined them. But for the Raylife and other LPs, because we're building a specific thing (i.e., Raylife), we won't give people a choice: they should select what we tell them to select. -->
-
-1. Liferay DXP stores contact data in two separate tables (Contact and User). Switch between the Contact tab and User tab to select the fields to sync. Analytics Cloud requires some fields to be synced, so those are grayed out. Click _Save_.
+1. Liferay DXP stores contact data in two separate tables (Contact and User). Switch between the _Contact_ tab and _User_ tab to select the fields to sync. Analytics Cloud requires some fields to be synced, so those are grayed out. For this example, keep the default selection. Click _Save_.
 
     ![Select the fields you want to sync from the list.](./syncing-sites-and-contacts/images/03.png)
 

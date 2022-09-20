@@ -78,7 +78,6 @@ Here are the features moved to Maintenance Mode in 7.4:
 | :------ | :---- |
 | Export/Import | To be replaced replaced by [Publications](../../../site-building/publishing-tools/publications.md). |
 | Kaleo Forms | To be replaced replaced by business processes for [Liferay Objects](../../../building-applications/objects.md). |
-| Staging | To be replaced replaced by [Publications](../../../site-building/publishing-tools/publications.md). |
 
 ## Additional Information
 

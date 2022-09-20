@@ -71,7 +71,6 @@ Here are the features moved to maintenance mode in 7.2:
 * Liferay Connected Services (LCS)
 * Liferay Mobile Experience (Liferay Screens, Liferay Mobile SDK, Liferay Push)
 * Liferay Sync
-* Staging
 
 ## Additional Information
 

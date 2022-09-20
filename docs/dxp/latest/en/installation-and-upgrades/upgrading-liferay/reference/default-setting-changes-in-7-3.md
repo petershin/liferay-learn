@@ -17,7 +17,7 @@ Here are the changes from 7.2 to 7.3:
 | admin.email.password.sent.body | com/liferay/portlet/admin/dependencies/email_password_sent_body.tmpl | Removed |
 | admin.obfuscated.properties | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Admin%20Portlet) | dropped captcha.engine.recaptcha.key.private |
 | auto.deploy.listeners | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Auto%20Deploy) | Removed com.liferay.portal.deploy.auto.ExtAutoDeployListener |
-| auto.deploy.glassfish.* | See [here](vhttps://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Auto%20Deploy) | Removed |
+| auto.deploy.glassfish.* | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Auto%20Deploy) | Removed |
 | auto.deploy.jetty.* | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Auto%20Deploy) | Removed |
 | auto.deploy.jonas.* | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Auto%20Deploy) | Removed |
 | auto.deploy.resin.* | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Auto%20Deploy) | Removed |
@@ -26,7 +26,7 @@ Here are the changes from 7.2 to 7.3:
 | blogs.entry.page.delta.values | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Blogs%20Service) | See the values in [Blogs Service](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Blogs%20Service). |
 | blogs.image.extensions | .gif,.jpeg,.jpg,.png | Removed |
 | blogs.image.max.size | 5242880 | Removed |
-| buffered.increment.enabled | true | Removed. See the [breaking change](../../../liferay-internals/reference/7-3-breaking-changes.html). |
+| buffered.increment.enabled | true | Removed. See the [breaking change](https://learn.liferay.com/dxp/latest/en/liferay-internals/reference/7-3-breaking-changes.html#replaced-portal-properties-view-count-enabled-and-buffered-increment-enabled). |
 | cache.clear.on.context.initialization | true | Removed |
 | com.liferay.portal.deploy.auto.ExtAutoDeployListener | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Auto%20Deploy) | Removed |
 | cluster.link.channel.properties.control | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) | jgroups/udp_control.xml |
@@ -83,7 +83,7 @@ Here are the changes from 7.2 to 7.3:
 | verify.processes | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Verify) | Removed |
 | verify.frequency | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Verify) | Removed |
 | verify.database.transactions.disabled | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Verify) | Removed |
-| view.count.enabled | *NA* | true. See the [breaking change](https://learn.liferay.com/dxp/latest/en/liferay-internals/reference/7-3-breaking-changes.html). |
+| view.count.enabled | *NA* | true. See the [breaking change](https://learn.liferay.com/dxp/latest/en/liferay-internals/reference/7-3-breaking-changes.html#replaced-portal-properties-view-count-enabled-and-buffered-increment-enabled). |
 | work.dir.override.enabled | *NA* | false. See [Work Directory](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Work%20Directory). |
 
 ## Additional Information

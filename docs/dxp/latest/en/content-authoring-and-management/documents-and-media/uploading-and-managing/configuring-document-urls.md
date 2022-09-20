@@ -55,7 +55,9 @@ Follow these steps to view and manage retained URLs for a file:
 Changes to the friendly URL history are automatically saved.
 
 ```{note}
-Beginning with Liferay 7.4 U34/GA34, the Display Page Template framework now takes into account each file's friendly URL history. This means users can continue to access a file's display page using old friendly URLs while they remain in the file's friendly URL history.
+Beginning with Liferay 7.4 U34/GA34, the display page template framework takes into account each file's friendly URL history. This means users can continue to access a file's display page using old friendly URLs, provided those URLs remain in the file's friendly URL history. All URLs in the file's friendly URL history are automatically redirected to the file's current URL.
+
+When the file is on the same site as its display page template, the file's friendly URL is appended to the display page URL (i.e., `display-page-url/file-friendly-url`). However, if the file is in a different site or asset library from the template, the URL pattern also includes the friendly URL of the file's site or asset library (i.e., `display-page-url/site-friendly-url/document-friendly-url`). This is to avoid duplicate URLs.
 ```
 
 ## Document Version URLs

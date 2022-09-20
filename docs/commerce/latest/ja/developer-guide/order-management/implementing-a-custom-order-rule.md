@@ -1,12 +1,12 @@
 # カスタム注文ルールの実装
 
-Liferayでは、特定の条件を満たした注文に対して注文ルールを設定することができます。 最少注文金額のルールは、すぐに利用可能です。 特定の値以下の注文のチェックアウトを防ぐことができます。 新しい注文ルールを追加するには、 [`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java) インターフェースを実装する必要があります。 詳しくは、 [注文ルール](https://learn.liferay.com/commerce/latest/ja/order-management/order-rules.html) をご覧ください。
+Liferayでは、特定の条件を満たした注文に対して注文ルールを設定することができます。 最少注文金額のルールは、すぐに利用可能です。 特定の値以下の注文のチェックアウトを防ぐことができます。 新しい注文ルールを追加するには、[`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java)インターフェースを実装する必要があります。 詳しくは、[注文ルール](https://learn.liferay.com/commerce/latest/en/order-management/order-rules.html)をご覧ください。
 
 ## カスタム注文ルールのデプロイと言語キーの追加
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+Then, follow these steps:
 
 1. Download and unzip the Acme Commerce Order Rule.
 
@@ -47,7 +47,7 @@ Liferayでは、特定の条件を満たした注文に対して注文ルール�
 
 1. **追加** ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下の情報を入力します。
 
-   ［**Name］：** Minimum Order Quantity - 3
+   **名前：** Minimum Order Quantity - 3
 
    ［**Description］：** Testing minimum order quantity of 3 items
 
@@ -95,7 +95,7 @@ Liferayでは、特定の条件を満たした注文に対して注文ルール�
 
 ```{literalinclude} ./implementing-a-custom-order-rule/resources/liferay-x9k1.zip/x9k1-impl/src/main/java/com/acme/x9k1/internal/commerce/order/rule/entry/type/X9K1MinimumQuantityCOREntryTypeImpl.java
     :language: java
-   :lines: 18-26
+    :lines: 18-26
 ```
 
 Liferay Commerceが注文ルールレジストリの他のものと区別できるように、注文ルールに個別のキーを指定する必要があります。 すでに使用されているキーを指定すると、既存の関連付けられているタイプが上書きされます。 順番は、ドロップダウンでのソート順で決まります。 この場合、順序は1であり、ドロップダウンの2番目の項目として表示されます。
@@ -146,7 +146,7 @@ public String getLabel(Locale locale);
 
 ```{literalinclude} ./implementing-a-custom-order-rule/resources/liferay-x9k1.zip/x9k1-impl/src/main/java/com/acme/x9k1/internal/commerce/order/rule/web/display/context/X9K1MinimumQuantityDisplayContext.java
     :language: java
-   :lines: 7-19
+    :lines: 7-19
 ```
 
 このコードは、 `COREntry` というタイプの単一のフィールドを含む表示コンテキストから、注文ルール用に設定された最小数の値を取得し、作成された注文ルールを使って設定されます。 表示コンテキストには、オーダールールに設定された最小数を取得するためのメソッドが1つあり、以下の詳細なユーティリティクラスを使用します。
@@ -155,7 +155,7 @@ public String getLabel(Locale locale);
 
 ```{literalinclude} ./implementing-a-custom-order-rule/resources/liferay-x9k1.zip/x9k1-impl/src/main/java/com/acme/x9k1/internal/commerce/order/rule/entry/util/X9K1MinimumQuantityUtil.java
     :language: java
-   :lines: 8-20
+    :lines: 8-20
 ```
 
 `X9K1MinimumQuantityUtil`クラスは、注文ルールに設定された最小量を取得します。 JSPkeyで設定されたプロパティ名で値を取得します。
@@ -164,7 +164,7 @@ public String getLabel(Locale locale);
 
 ```{literalinclude} ./implementing-a-custom-order-rule/resources/liferay-x9k1.zip/x9k1-impl/src/main/java/com/acme/x9k1/internal/commerce/order/rule/web/entry/type/X9K1MinimumQuantityCOREntryTypeJSPContributor.java
     :language: java
-   :lines: 18-24
+    :lines: 18-24
 ```
 
 `commerce.order.rule.entry.type.jsp.contributor.key` プロパティは、JSPコントリビュータが実装される注文ルールを決定します。

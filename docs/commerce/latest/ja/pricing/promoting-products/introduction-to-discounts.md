@@ -8,7 +8,7 @@
 * 一定期間プロモーションをスケジュールする
 
 ```{tip}
-割引は*価格表*とは異なります。 価格の詳細については、 [価格の概要](../introduction-to-pricing.md) 、 [価格表の作成](../creating-a-price-list.md) 、[Using Price Tiers](../using-price-tier.md)をご覧ください。
+割引は*価格表*とは異なります。 価格の詳細については、 [価格の概要](../introduction-to-pricing.md) 、 [価格表の作成](../creating-a-price-list.md) 、[価格レートを使う](../using-price-tiers.md)をご覧ください。
 ```
 
 ```{note}

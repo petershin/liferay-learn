@@ -5,12 +5,11 @@ toc:
 - ./promoting-products/introduction-to-promotions.md
 - ./promoting-products/using-the-promotion-base-list.md
 - ./promoting-products/creating-a-promotion.md
-- ./promoting-products/promotion-base-list-reference.md
+- ./promoting-products/promotions-reference.md
 - ./promoting-products/introduction-to-product-groups.md
 - ./promoting-products/replacement-products.md
 - ./promoting-products/product-recommendations.md
 ---
-
 # 商品のプロモーション
 
 ```{toctree}
@@ -21,7 +20,7 @@ promoting-products/creating-a-discount.md
 promoting-products/introduction-to-promotions.md
 promoting-products/using-the-promotion-base-list.md
 promoting-products/creating-a-promotion.md
-promoting-products/promotion-base-list-reference.md
+promoting-products/promotions-reference.md
 promoting-products/introduction-to-product-groups.md
 promoting-products/replacement-products.md
 promoting-products/product-recommendations.md
@@ -30,39 +29,39 @@ promoting-products/product-recommendations.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card}  割引について
+:::{grid-item-card}  割引の紹介
 :link: ./promoting-products/introduction-to-discounts.md
 :::
 
-:::{grid-item-card}  割引を作成する
+:::{grid-item-card}  割引の作成
 :link: ./promoting-products/creating-a-discount.md
 :::
 
-:::{grid-item-card}  プロモーションについて
+:::{grid-item-card}  プロモーション入門
 :link: ./promoting-products/introduction-to-promotions.md
 :::
 
-:::{grid-item-card}  プロモーションベースリストの活用
+:::{grid-item-card}  プロモーションベースリストの使用
 :link: ./promoting-products/using-the-promotion-base-list.md
 :::
 
-:::{grid-item-card}  プロモーションを作成する
+:::{grid-item-card}  プロモーションの作成
 :link: ./promoting-products/creating-a-promotion.md
 :::
 
-:::{grid-item-card}  プロモーションベースリストリファレンス
-:link: ./promoting-products/promotion-base-list-reference.md
+:::{grid-item-card}  プロモーション・リファレンス
+:link: ./promoting-products/promotions-reference.md
 :::
 
-:::{grid-item-card}  商品グループについて
+:::{grid-item-card}  製品グループ入門
 :link: ./promoting-products/introduction-to-product-groups.md
 :::
 
-:::{grid-item-card}  代替品
+:::{grid-item-card}  交換用製品
 :link: ./promoting-products/replacement-products.md
 :::
 
-:::{grid-item-card}  商品の推薦
+:::{grid-item-card}  製品の推奨事項
 :link: ./promoting-products/product-recommendations.md
 :::
 ::::

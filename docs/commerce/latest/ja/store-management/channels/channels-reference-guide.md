@@ -4,7 +4,7 @@
 
 この記事では、チャネル管理インターフェースの概要について説明します。 チャネルを作成するには、[チャネルの管理](./managing-channels.md)参照してください。
 
-## 一般
+## 共通
 
 **General** タブには、通貨、注文ワークフロー、支払い、配送、税金など、多くの重要なチャネル設定があります。
 
@@ -83,7 +83,7 @@ Liferay Commerceは、さまざまなイベントによってトリガーされ�
 
 ［カテゴリ表示ページ］タブには、ストアサイトで作成されたすべてのカテゴリ表示ページのリストが表示されます。 **カテゴリー表示ページ** 使用すると、ユーザーは、特定のカテゴリーでタグ付けされたすべての商品を表示する特定のDXPサイトページを置き換えることができます。 ユーザーは最初に [商品カテゴリ](../../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)を作成し、それらを目的の商品に関連付けてから、ページを作成する必要があります。
 
-DXPサイトページの作成の詳細は、 [ページの作成](https://learn.liferay.com/dxp/latest/ja/site-building/creating_pages.html) を参照してください。 タグとカテゴリの作成の詳細は、 [タグとカテゴリ](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories.html) を参照してください。
+DXPサイトページの作成の詳細は、 [ページの作成](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages.html) を参照してください。 タグとカテゴリの作成の詳細は、 [タグとカテゴリ](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories.html) を参照してください。
 
 ## 商品表示ページ
 

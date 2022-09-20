@@ -73,11 +73,14 @@ Features deprecated in earlier Liferay versions may also need to be considered, 
 
 Here are the features moved to Maintenance Mode in 7.3:
 
-* Export/Import
 * Liferay Drools
 * Liferay Mobile Experience: Mobile SDK
 * Liferay Reports
 * Site Templates
+
+```{note}
+While Export/Import was previously listed under maintenance mode, Liferay continues to improve the Export/Import application.
+```
 
 ## Additional Information
 

@@ -72,6 +72,10 @@ Here are the features moved to maintenance mode in 7.2:
 * Liferay Mobile Experience (Liferay Screens, Liferay Mobile SDK, Liferay Push)
 * Liferay Sync
 
+```{note}
+While Staging was previously listed under maintenance mode, Liferay continues to improve the Staging application and recommend Remote Live Staging in scenarios that require content to be created in a different environment than where it's consumed. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
+```
+
 ## Additional Information
 
 * [7.2 Breaking Changes](../../../liferay-internals/reference/7-2-breaking-changes.md)

@@ -80,7 +80,7 @@ Here are the features moved to Maintenance Mode in 7.4:
 | Kaleo Forms | To be replaced replaced by business processes for [Liferay Objects](../../../building-applications/objects.md). |
 
 ```{note}
-While Staging was previously listed under maintenance mode, Liferay continues to improve the Staging application and recommend Remote Live Staging in scenarios that require content to be created in a different environment than where it's consumed. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
+While Staging was previously listed under maintenance mode, Liferay continues to improve the Staging application and recommends Remote Live Staging in scenarios that require content to be created in a different environment than where it's consumed. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
 ```
 
 ## Additional Information

@@ -73,7 +73,7 @@ Here are the features moved to maintenance mode in 7.2:
 * Liferay Sync
 
 ```{note}
-While Staging was previously listed under maintenance mode, Liferay continues to improve the Staging application and recommend Remote Live Staging in scenarios that require content to be created in a different environment than where it's consumed. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
+While Staging was previously listed under maintenance mode, Liferay continues to improve the Staging application and recommends Remote Live Staging in scenarios that require content to be created in a different environment than where it's consumed. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
 ```
 
 ## Additional Information

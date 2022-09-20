@@ -76,11 +76,10 @@ Here are the features moved to Maintenance Mode in 7.4:
 
 | Feature | Notes |
 | :------ | :---- |
-| Export/Import | To be replaced replaced by [Publications](../../../site-building/publishing-tools/publications.md). |
 | Kaleo Forms | To be replaced replaced by business processes for [Liferay Objects](../../../building-applications/objects.md). |
 
 ```{note}
-While Staging was previously listed under maintenance mode, Liferay continues to improve the Staging application. Liferay also recommends remote live Staging in scenarios that require content to be created in a different environment than where it is consumed. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
+While Export/Import and Staging were previously listed under maintenance mode, Liferay continues to improve these applications. Also, Liferay recommends Remote Live Staging in scenarios that require content to be created in a different environment than where it is consumed. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
 ```
 
 ## Additional Information

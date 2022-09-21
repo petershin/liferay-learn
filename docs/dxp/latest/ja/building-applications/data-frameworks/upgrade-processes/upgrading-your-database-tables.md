@@ -5,15 +5,16 @@
 アプリケーションをアップグレードすると、データベースのテーブルを変更する必要がある場合があります。 Liferayのアップグレードフレームワークは、これらの変更を簡単に行うことができます。 サンプルプロジェクトをデプロイして、このアップグレード処理を確認します。 Liferayの以前のバージョンについては、 [Creating Upgrade Processes for Modules](https://help.liferay.com/hc/ja/articles/360031165751-Creating-Upgrade-Processes-for-Modules) を参照してください。
 
 ## バージョン1.0.0をデプロイする
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順に従います:
 
 1. [データベーステーブルのアップグレード](./liferay-p5d2.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/upgrade-processes/liferay-p5d2.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-p5d2.zip -O
    ```
 
    ```bash

@@ -9,6 +9,7 @@ toc:
 
 ```{toctree}
 :maxdepth: 3
+
 bundler-migration-guide/migrating-bundler-projects-intro.md
 bundler-migration-guide/migrating-angular-bundler.md
 bundler-migration-guide/migrating-plain-js-billboard-jquery-metal-js-react-vue-bundler.md
@@ -18,11 +19,11 @@ bundler-migration-guide/migrating-to-the-new-mode.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} 1.xから2.xへのliferay-npm-bundlerプロジェクトの移行
+:::{grid-item-card} liferay-npm-bundler プロジェクトを 1.x から 2.x に移行する
 :link: ./bundler-migration-guide/migrating-bundler-projects-intro.md
 :::
 
-:::{grid-item-card} Angularプロジェクトを移行してLiferay npm Bundler 2.xを使用する
+:::{grid-item-card} Angular プロジェクトを Liferay を使うように移行する npm Bundler 2.x
 :link: ./bundler-migration-guide/migrating-angular-bundler.md
 :::
 
@@ -30,7 +31,7 @@ bundler-migration-guide/migrating-to-the-new-mode.md
 :link: ./bundler-migration-guide/migrating-plain-js-billboard-jquery-metal-js-react-vue-bundler.md
 :::
 
-:::{grid-item-card} liferay-npm-bundlerの新しいモードを使用するためのプロジェクトの移行
+:::{grid-item-card} liferay-npm-bundler の新しいモードを使うためにプロジェクトを移行する
 :link: ./bundler-migration-guide/migrating-to-the-new-mode.md
 :::
 ::::

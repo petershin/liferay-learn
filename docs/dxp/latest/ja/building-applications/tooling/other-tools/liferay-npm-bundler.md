@@ -16,6 +16,7 @@ toc:
 
 ```{toctree}
 :maxdepth: 3
+
 liferay-npm-bundler/liferay-npm-bundler-intro.md
 liferay-npm-bundler/understanding-bundler-loaders.md
 liferay-npm-bundler/changes-between-bundler-1.x-and-2.x.md
@@ -40,11 +41,11 @@ liferay-npm-bundler/bundler-migration-guide.md
 :link: ./liferay-npm-bundler/understanding-bundler-loaders.md
 :::
 
-:::{grid-item-card} Bundler 1.xと2.xの間の変更点
+:::{grid-item-card} Bundler 1.x と 2.x の間の変更点
 :link: ./liferay-npm-bundler/changes-between-bundler-1.x-and-2.x.md
 :::
 
-:::{grid-item-card} デフォルトのバンドラーローダー
+:::{grid-item-card} デフォルトのバンドルローダー
 :link: ./liferay-npm-bundler/default-bundler-loaders.md
 :::
 
@@ -64,15 +65,15 @@ liferay-npm-bundler/bundler-migration-guide.md
 :link: ./liferay-npm-bundler/how-the-default-preset-configures-the-liferay-npm-bundler.md
 :::
 
-:::{grid-item-card} npmbundlerrc構造について
+:::{grid-item-card} npmbundlerrc の構造を理解する
 :link: ./liferay-npm-bundler/npmbundlerrc-structure.md
 :::
 
-:::{grid-item-card} OSGiバンドルとnpmパッケージ構造
+:::{grid-item-card} OSGi バンドルと npm パッケージの構造
 :link: ./liferay-npm-bundler/the-structure-of-osgi-bundles-containing-npm-packages.md
 :::
 
 :::{grid-item-card} バンドラー移行ガイド
 :link: ./liferay-npm-bundler/bundler-migration-guide.md
-:::
+:::  
 ::::

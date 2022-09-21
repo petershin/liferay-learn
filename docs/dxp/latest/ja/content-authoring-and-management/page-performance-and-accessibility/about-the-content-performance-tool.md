@@ -2,7 +2,7 @@
 
 > 対応可能：Liferay DXP/Portal 7.3以降 一部のコンテンツパフォーマンスオプションは、Liferay DXP／Portal 7.4以降でのみ使用できます。
 
-コンテンツパフォーマンスツールは、トラフィック取得チャネルや時間の経過に伴う閲覧数など、コンテンツのパフォーマンスメトリクスを分析するためのグローバルアプリケーションです。 コンテンツチームは、コンテンツパフォーマンスツールを使用して、コンテンツ戦略を定期的に評価して適用させることができます。 コンテンツパフォーマンスツールは、[表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)に基づいたアセットやLiferay DXP 7.4以降では、[コンテント](../../site-building/creating-pages/using-content-pages.md)ページと[ウィジェット](../../site-building/creating-pages/using-widget-pages/configuring-widgets/adding-widgets-to-a-page.md)ページに使用できます。
+コンテンツパフォーマンスツールは、トラフィック取得チャネルや時間の経過に伴う閲覧数など、コンテンツのパフォーマンスメトリクスを分析するためのグローバルアプリケーションです。 コンテンツチームは、コンテンツパフォーマンスツールを使用して、コンテンツ戦略を定期的に評価して適用させることができます。 コンテンツパフォーマンスツールは、[表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)に基づいたアセットやLiferay DXP 7.4以降では、[コンテント](../../site-building/creating-pages/using-content-pages.md)ページと[ウィジェット](../../site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.md)ページに使用できます。
 
 コンテンツパフォーマンスツールを使用してコンテンツパフォーマンスを定量的に分析する方法については、 [コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析](./analyze-content-metrics-using-content-performance-tool.md) を参照してください。
 
@@ -42,7 +42,7 @@
 
 ### コンテンツまたはウィジェットページからコンテンツパフォーマンスツールにアクセスする
 
-1. ［**サイト管理**］ &rarr; ［**サイトビルダー**］ &rarr; ［**Pages**］ に移動します。
+1. ［**サイト管理**］ &rarr; ［**Site Builder**］ &rarr; ［**Pages**］ に移動します。
 1. レビューするページで、 **アクション**（![Actions](../../images/icon-actions.png)）メニューをクリックし、 ［**表示**］ を選択します。
 1. アプリケーションツールバーの **コンテンツパフォーマンス**（![Content Performance](../../images/icon-analytics.png)）アイコンをクリックします。
 
@@ -57,7 +57,7 @@
 ![コンテンツダッシュボードからコンテンツパフォーマンスメトリクスにアクセスします。](./about-the-content-performance-tool/images/05.png)
 
 ```{note}
-コンテンツパフォーマンスオプションが使用できない場合、コンテンツは1つ以上の条件を満たしていません。 詳細については、 [About the Content Performance Tool](#about-the-content-performance-tool) を参照してください。
+コンテンツパフォーマンスオプションが使用できない場合、コンテンツは1つ以上の条件を満たしていません。 詳細については、 [コンテンツパフォーマンスツールの説明](#about-the-content-performance-tool) を参照してください。
 ```
 
 ## 関連情報

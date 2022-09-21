@@ -24,7 +24,7 @@ Liferay DXP 7.4は、強化された機能と大幅な改良が施されおり�
 
 ### コンテンツパフォーマンスツールでのトラフィック獲得チャネル
 
-[Content Performance Tool](../content-authoring-and-management/content-performance-panel/analyze-content-metrics-using-content-performance-panel.md) のトラフィック獲得チャネルは、 [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) のデータを使用しており、オーガニック検索、有料検索、ソーシャル・トラフィック、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
+[Content Performance Tool](../content-authoring-and-management/content-performance-panel/analyze-content-metrics-using-content-performance-panel.md) のトラフィック獲得チャネルは、<0>Analytics Cloud</0> のデータを使用しており、オーガニック検索、有料検索、ソーシャル・トラフィック、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
 
 ![トラフィック獲得チャネルには、検索、ソーシャル、リファラルデータなどがあります。](./whats-new-74/images/09.png)
 
@@ -214,7 +214,7 @@ Liferay DXPには、ユーザー管理、サイトページとエクスペリエ
 
 ### チャット機能との統合
 
-すぐに使える [数多くのチャットプラットフォーム](../site-building/personalizing-site-experience/enabling-automated-live-chat-systems/enabling-automated-live-chat-systems.md) との統合が可能です。  インスタンスの設定で統合を有効にすると、ユーザーは自分の都合に合わせて担当者とチャットできるようになります。  別途、チャットプロバイダーの契約が必要となりますのでご注意ください。 OOTB統合できるチャットプロバイダーは以下の通りです。
+すぐに使える [数多くのチャットプラットフォーム](../site-building/personalizing-site-experience/enabling-automated-live-chat-systems.md) との統合が可能です。  インスタンスの設定で統合を有効にすると、ユーザーは自分の都合に合わせて担当者とチャットできるようになります。  別途、チャットプロバイダーの契約が必要となりますのでご注意ください。 OOTB統合できるチャットプロバイダーは以下の通りです。
 
 * Chatwoot
 * Crisp

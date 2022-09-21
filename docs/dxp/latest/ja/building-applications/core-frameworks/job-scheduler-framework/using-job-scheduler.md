@@ -1,14 +1,14 @@
 # ジョブスケジューラーを使う
 
-[Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) は、Liferayのスケジューラエンジン上に構築された柔軟なフレームワークで、あらゆるタイプのロジックを実行し、スケジュールするために使用することができます。 このフレームワークは、`DispatchTaskExecutor`インターフェイスを使用してカスタムロジックでテンプレートを定義し、そのテンプレートを使用してコントロールパネルから[タスクを作成](#adding-a-new-job-scheduler-task)できます。 ジョブスケジューラタスクを作成すると、その動作や実行方法を設定することができます。 [スケジュール](#scheduling-the-job-scheduler-task)。
+[Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) は、ビジネスロジックの実行とスケジューリングのために、Liferayのスケジューラエンジン上に構築された柔軟なフレームワークです。 このフレームワークは、`DispatchTaskExecutor`インターフェイスを使用してカスタムロジックでテンプレートを定義し、そのテンプレートを使用してコントロールパネルから [タスクを作成](#adding-a-new-job-scheduler-task) できます。 ジョブスケジューラタスクを作成した後、その動作と実行 [スケジュール](#scheduling-the-job-scheduler-task) を設定することができます。
 
 ![ジョブスケジューラーページでジョブスケジューラータスクを追加・管理します。](./using-job-scheduler/images/01.png)
 
-Job Scheduler は、すべてのインスタンス [`MessageListener` インターフェースを使用してスケジュールされたジョブ](#viewing-and-managing-scheduled-jobs) を表示・管理するための便利な UI を提供します。
+ディスパッチは、 [`MessageListener`インターフェースを使用してスケジュールされたジョブ](#viewing-and-managing-scheduled-jobs) のすべてのインスタンスを表示および管理するための便利なUIを提供します。
 
 ```{note}
 インスタンスジョブのスケジューリングにJob Schedulerと`MessageListener`のどちらを使用するかを決定する際には、以下のJob Schedulerの利点を考慮してください。
-ジョブスケジューラーのタスクは、ジョブスケジューラーのUIから実行時に変更を加えることができるため、`MessageListener`を使ってスケジュールしたジョブよりも柔軟性があります。 `MessageListener`ジョブへの変更は、ハードコーディングして再デプロイする必要があります。 
+ジョブスケジューラーのタスクは `MessageListener` を使ってスケジュールされたジョブよりも柔軟です。なぜなら、ジョブスケジューラーのUIから実行時にタスクの変更を行うことができるからです。 `MessageListener` のジョブの変更は、コーディング、コンパイル、再デプロイを行う必要があります。 
 また、Job Scheduler UIでは、各Job Schedulerタスクの実行プロパティ（cron式、開始/終了日、クラスタモードなど）および実行履歴をより詳細に把握することができます。 この情報は、`MessageListener`ジョブのUIでは提供されません。
 ```
 
@@ -19,7 +19,7 @@ Job Scheduler は、すべてのインスタンス [`MessageListener` インタ�
 1. **追加** ボタン (![Add Button](../../../images/icon-add.png)) をクリックし、ジョブスケジューラタスクに必要なテンプレートを選択します。 選択したテンプレートは、タスクの基本的なロジックを定義します。
    
    各テンプレートは `DispatchTaskExecutor` インターフェイスの実装であり、各ジョブスケジューラタスクは選択されたテンプレートのインスタンスです。 その仕組みについては、 [Understanding Job Scheduler Framework](./understanding-the-job-scheduler-framework.md) をご覧ください。 
-
+   
 
    ```{note}
    Liferay DXPには様々なJob Schedulerのタスクテンプレートがありますが、Liferay PortalにはTalend Job Scheduler Task Executorのみが含まれています。
@@ -27,13 +27,13 @@ Job Scheduler は、すべてのインスタンス [`MessageListener` インタ�
    独自のテンプレートを作成することもできます。 詳細は、[ジョブスケジューラタスク実行ファイルの作成](./creating-a-new-job-scheduler-task-executor.md) をご覧ください。
    ```
 
-   ![Addボタンをクリックし、タスクのJob Scheduler Task Executorテンプレートを選択します。](./using-job-scheduler/images/02.png)
+![Addボタンをクリックし、タスクのJob Scheduler Task Executorテンプレートを選択します。](./using-job-scheduler/images/02.png)
 
 1. Job Schedulerタスクの名前を入力します。
 
 1. (オプション）設定エディタを使用して、ランタイムに注入されるジョブスケジューラタスクのプロパティを定義します。
    
-   これらの設定を使用して、実行フローなどを微調整できます。
+   これらの設定により、実行の流れなどを細かく調整することができます。
    
    この方法で追加された設定はすべてソフトコード化されているので、Executorのコードを編集して再展開しなくても、ジョブスケジューラのタスクを設定することができます。 
 
@@ -49,10 +49,9 @@ Job Scheduler は、すべてのインスタンス [`MessageListener` インタ�
 
 ![ジョブスケジューラページから、すべてのインスタンスジョブスケジューラタスクを表示、管理、および設定します。](./using-job-scheduler/images/04.png)
 
-
 ## ジョブスケジューラタスクのスケジューリング
 
-デフォルトでは、すべてのジョブスケジューラタスクトリガーは作成時に非アクティブ化されます。 タスクのジョブスケジューラートリガーを有効にし、タスクの実行をスケジュールするには、次の手順に従います。
+デフォルトでは、すべてのジョブスケジューラタスクトリガーは、作成時に非アクティブになります。 タスクのジョブスケジューラートリガーを有効にし、タスクの実行をスケジュールするには、次の手順に従います。
 
 1. Job Scheduler ページの **Job Scheduler Triggers** タブに移動し、目的のタスクをクリックします。
 
@@ -64,9 +63,11 @@ Job Scheduler は、すべてのインスタンス [`MessageListener` インタ�
 
 **Active** : ジョブスケジューラートリガーをアクティブまたは非アクティブにします。 トリガーを有効にするには、有効な cron 式を入力する必要があります。 アクティブな場合、ジョブスケジューラタスクは設定されたスケジュールに従って実行されます。 無効にすると、トリガーが実行されなくなります。
 
-**Task Execution ClusterMode** : クラスター環境において、ジョブスケジューラタスクを1つのノードで実行するか、すべてのノードで実行するかを決定します。
+**Task Execution Cluster Mode** : クラスター環境において、ジョブスケジューラタスクを1つのノードで実行するか、すべてのノードで実行するかを決定します。
 
 **Overlap Allowed** : ジョブスケジューラタスクの同時実行を有効または無効にします。 有効にすると、前の実行がまだ実行されているかどうかに関係なく、設定されたスケジュールに従って新しいタスクの実行が開始されます。
+
+**Time Zone** : Job Schedulerタスクの実行に使用するタイムゾーンを選択します。 これは、Liferayインスタンスのタイムゾーンとは無関係です。 このフィールドは Liferay DXP 7.4 U35+/GA35+ 以降で利用可能です。  
 
 **Cron Expression** : ジョブスケジューラタスクがいつ実行されるかを決定する有効なCron式を入力します。
 

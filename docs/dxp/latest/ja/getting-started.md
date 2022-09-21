@@ -36,19 +36,19 @@ Liferay DXPは、Webアプリケーションの構築とデプロイのための
 Liferay DXP 7.4で利用可能な最新機能の詳細については、こちらをご覧ください。
 :::
 
-:::{grid-item-card} Dockerイメージから始める
+:::{grid-item-card} Dockerイメージで起動する
 :link: ./getting-started/starting-with-a-docker-image.md
 
 Dockerイメージを使用してLiferay DXP 7.4のデモインスタンスを起動します。
 :::
 
-:::{grid-item-card} 管理者アカウントの概要
+:::{grid-item-card} 管理者アカウントの紹介
 :link: ./getting-started/introduction-to-the-admin-account.md
 
 Liferayのデフォルトの管理者ユーザーについて理解を深め、デフォルトのパスワードを変更します。
 :::
 
-:::{grid-item-card} DXPのナビゲート
+:::{grid-item-card} DXP のナビゲート
 :link: ./getting-started/navigating-dxp.md
 
 Liferay DXPの操作方法について説明します。
@@ -69,6 +69,6 @@ Liferay DXPの操作方法について説明します。
 :::{grid-item-card} 7.3 新機能一覧
 :link: ./getting-started/whats-new-73.md
 
-Liferay DXP 7.3の機能とアップデートの詳細はこちらをご覧ください
-:::
+Liferay DXP 7.3 の機能とアップデートの詳細はこちら
+:::  
 ::::

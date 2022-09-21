@@ -1,7 +1,7 @@
-# APIs
+# API
 
 ```{toctree}
 :maxdepth: 2
 ```
 
-近日公開！
+近日公開!

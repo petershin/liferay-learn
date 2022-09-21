@@ -12,7 +12,7 @@
 
 [コンテンツダッシュボードを開く](#accessing-the-content-dashboard) と、ページの上部に [コンテンツ監査ツール](#content-audit-tool) （1）が表示され、下部に [コンテンツ一覧](#contents-list) （2）が表示されます。 コンテンツ一覧から、 [コンテンツ情報サイドバー](#content-info-sidebar) （3）と[コンテンツパフォーマンスパネル](../page-performance-and-accessibility/about-the-content-performance-tool.md)にアクセスできます。 コンテンツ情報サイドバーとコンテンツパフォーマンスパネルは折りたたみ可能です。 コンテンツ一覧の各アイテムの追加の詳細が表示されます。
 
-コンテンツ情報サイドバーにアクセスするには、コンテンツの **アクションメニュー**（![Action Menu](../../images/icon-actions.png)）をクリックし、 ［**Info**］ オプションを選択します。 または、記事の上にカーソルを置き、 ［**Info**］（![Info](../../images/icon-information.png)）をクリックします。 **統計情報を表示**（![Metrics](../../images/icon-analytics.png)）オプションの詳細は、[コンテンツパフォーマンスツールの説明](../page-performance-and-accessibility/about-the-content-performance-tool.md)を参照してください。
+コンテンツ情報サイドバーにアクセスするには、コンテンツの **アクションメニュー**（![Action Menu](../../images/icon-actions.png)）をクリックし、 ［**Info**］ オプションを選択します。 または、記事の上にカーソルを置き、 ［**Info**］（![Info](../../images/icon-information.png)）をクリックします。 **統計情報を表示**（![Metrics](../../images/icon-analytics.png)）オプションの詳細は、[About the Content Performance Panel](../page-performance-and-accessibility/about-the-content-performance-tool.md)を参照してください。
 
 ## コンテンツダッシュボードへのアクセス
 
@@ -25,10 +25,12 @@
 
 このツールは、［コンテンツダッシュボード］ページの上部にあるグラフィカル領域です。 このグラフは、提供されたボキャブラリーとカテゴリーの組み合わせについて、 **Global** スコープとインスタンス内のすべての **サイト & アセットライブラリ** を含むアセットの総数を表しています。 この表は以下を考慮に入れています：
 
-* 全てのサイトとアセットライブラリにわたる[Webコンテンツの記事](../web-content/web-content-articles/adding-a-basic-web-content-article.md)と[ドキュメントとメディア](../documents-and-media/documents-and-media-overview.md)。
+* [ウェブコンテンツ 記事](../web-content/web-content-articles/adding-a-basic-web-content-article.md)、 [ドキュメントとメディア](../documents-and-media/documents-and-media-overview.md) と [ブログエントリー](../blogs/adding-blog-entries.md) すべてのサイトとアセットライブラリにまたがる。
 
     ```{note}
-    ドキュメントとメディアは、Liferay 7.4以降からコンテンツダッシュボードで利用できるようになりました。
+    Liferay CE/DXP 7.4+から、ドキュメントとメディアがContent Dashboardで利用できるようになりました。 
+
+    Liferay DXP 7.4 U23+/GA23+ から、Content Dashboard で Blog Entries が利用できるようになりました。
     ```
 
 * アクセスできるコンテンツ。
@@ -38,8 +40,7 @@
 ![コンテンツダッシュボードのコンテンツ監査ツールの概要](./content-dashboard-interface/images/10.png)
 
 ```{tip}
-コンテンツ監査ツールに期待される表が表示されない場合は、グローバルボキャブラリの 
-[verify your Categories](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) し、[your content is categorized](../tags-and-categories/organizing-content-with-categories-and-tags.md) ことを確認してください。
+コンテンツ監査ツールで期待したチャートが表示されない場合は、グローバル語彙の[カテゴリを確認する](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) と[コンテンツをカテゴリ分けする](../tags-and-categories/organizing-content-with-categories-and-tags.md) を確認してください。 
 ```
 
 コンテンツ監査ツールのインターフェースには、次のものがあります。
@@ -91,19 +92,19 @@
 
 コンテンツの一覧には、次のカラムがあります。
 
-| 列               | 説明                                                                                                                                                                                                |
-|:--------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| タイトル            | 記事のタイトル（*）。                                                                                                                                                                                       |
-| 作成者             | 作成者の名前。                                                                                                                                                                                           |
-| 種類              | [Webコンテンツの記事](../web-content/web-content-articles/adding-a-basic-web-content-article.md)または[ドキュメント](../documents-and-media/documents-and-media-overview.md)アセットタイプ(Liferay DXP 7.4+にて利用可能)を特定します。 |
-| サブタイプ           | コンテンツの [サブカテゴリ](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories) 。 基本のドキュメントと外部動画のショートカットが含まれています。                                                |
-| サイトまたはアセットライブラリ | Liferay DXPインスタンス内の記事の場所。                                                                                                                                                                         |
-| ステータス           | 記事のワークフローステータス。 ステータスが異なる複数のバージョンの記事には、すべてのステータスが表示されます。                                                                                                                                          |
-| **第一ボキャブラリ** | これは、コンテンツ監査ツールの最初のボキャブラリです。                                                                                                                                                                       |
-| **第二ボキャブラリ** | コンテンツ監査ツールのオプションの2番目のボキャブラリ。                                                                                                                                                                      |
-| 編集日時            | 最後に記事が更新された日付または時刻。                                                                                                                                                                               |
+| 列               | 説明                                                                                                                                                                                                                                                                                                                    |
+|:--------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| タイトル            | 記事のタイトル（*）。                                                                                                                                                                                                                                                                                                           |
+| 作成者             | 作成者の名前。                                                                                                                                                                                                                                                                                                               |
+| 種類             | [Webコンテンツ](../web-content/web-content-articles/adding-a-basic-web-content-article.md)、[ドキュメント](../documents-and-media/documents-and-media-overview.md)のアセットタイプ（Liferay DXP 7.4+で使用可能）または[ブログエントリ](../blogs/adding-blog-entries.md)のアセットタイプ（Liferay DXP 7.4 U23+/GA23+で使用可能）を指定します。 |
+| サブタイプ          | コンテンツの [サブカテゴリ](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories) 。基本のドキュメントと外部動画のショートカットが含まれています。                                                                                                                                                                    |
+| サイトまたはアセットライブラリ | Liferay DXPインスタンス内の記事の場所。                                                                                                                                                                                                                                                                                             |
+| ステータス           | 記事のワークフローステータス。 ステータスが異なる複数のバージョンの記事には、すべてのステータスが表示されます。                                                                                                                                                                                                                                                              |
+| **第一ボキャブラリ** | これは、コンテンツ監査ツールの最初のボキャブラリです。                                                                                                                                                                                                                                                                                           |
+| **第二ボキャブラリ** | コンテンツ監査ツールのオプションの2番目のボキャブラリ。                                                                                                                                                                                                                                                                                          |
+| 編集日時            | 最後に記事が更新された日付または時刻。                                                                                                                                                                                                                                                                                                   |
 
-（*）**ページ**（![Page](../../images/icon-page.png)）アイコンは、[表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md)に基づくコンテンツを示します。
+(*) *ページ*（![Page](../../images/icon-page.png)）アイコンは、[表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md)に基づくコンテンツを示します。
 
 ```{note}
 ［第一ボキャブラリ］カラムと［第二ボキャブラリ］カラムは、選択したボキャブラリによって異なります。
@@ -151,15 +152,15 @@
 
 **フィルターと並び替え** ドロップダウンメニューから、以下のオプションを選択することができます。
 
-| 絞り込み            | 説明                                                                                                               |
-|:--------------- |:---------------------------------------------------------------------------------------------------------------- |
-| カテゴリ            | ボキャブラリから1つまたは複数の [カテゴリー](../tags-and-categories/organizing-content-with-categories-and-tags.md) を使用してフィルタリングします。 |
-| サイトまたはアセットライブラリ | アセットの「サイト」または「アセットライブラリ」を選択します。                                                                                  |
-| 種類              | 含めるWebコンテンツの記事またはドキュメントを選択します。 ここから、選択できます</br><ul><li> **Webコンテンツの記事** 。すべてのサイトの[基本Webコンテンツの記事](../web-content/web-content-articles/adding-a-basic-web-content-article.md)とカスタムの [Structures](../web-content/web-content-structures/understanding-web-content-structures.md)を含みます。</li><li> **ドキュメント** 。すぐに使用できるドキュメントタイプと、すべての[カスタムドキュメントタイプ](../documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md)を含みます。</li></ul>                                         |
-| 内線              | ドキュメントやメディアの種類でフィルタリングする方法を提供します。 以下のタイプから選択できます：</br><ul><li>`音声`</li><li>`コード`</li><li>`圧縮`</li><li>`画像`</li><li>`プレゼンテーション`</li><li>`スプレッドシート`</li><li>`テキスト`</li><li>`ベクター`</li><li>`ビデオ`</li><li>`その他`</li></ul>                                  |
-| タグ              | アセットの整理に使用する [キーワード](../tags-and-categories/tagging-content-and-managing-tags.md)のリストから選択します。                    |
-| 作成者で絞り込む        | Webコンテンツまたはドキュメントの作成者で絞り込みます。                                                                                    |
-| ステータスで絞り込み      | Webコンテンツまたはドキュメントの [ワークフローステータス](../../process-automation/workflow/introduction-to-workflow.md)で絞り込みます。          |
+| 絞り込み            | 説明                                                                                                                  |
+|:--------------- |:------------------------------------------------------------------------------------------------------------------- |
+| カテゴリ            | ボキャブラリから1つまたは複数の [カテゴリー](../tags-and-categories/organizing-content-with-categories-and-tags.md) を使用してフィルタリングします。    |
+| サイトまたはアセットライブラリ | アセットの「サイト」または「アセットライブラリ」を選択します。                                                                                     |
+| 種類              | ウェブコンテンツの記事、ドキュメント、またはブログエントリーを選択して、含めることができます。 ここから、選択できます</br><ul><li> **Webコンテンツの記事** 。すべてのサイトの[基本Webコンテンツの記事](../web-content/web-content-articles/adding-a-basic-web-content-article.md)とカスタムの [Structures](../web-content/web-content-structures/understanding-web-content-structures.md)を含みます。</li><li> **ドキュメント** 。すぐに使用できるドキュメントタイプと、すべての[カスタムドキュメントタイプ](../documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md)を含みます。</li><li> **ブログエントリー** 。すべてのサイトのすべてのブログエントリーが含まれます。</li></ul>                           |
+| 内線              | ドキュメントやメディアの種類でフィルタリングする方法を提供します。 以下のタイプから選択できます：</br><ul><li>`音声`</li><li>`コード`</li><li>`圧縮`</li><li>`画像`</li><li>`プレゼンテーション`</li><li>`スプレッドシート`</li><li>`テキスト`</li><li>`ベクター`</li><li>`ビデオ`</li><li>`その他`</li></ul>                                     |
+| タグ              | アセットの整理に使用する [キーワード](../tags-and-categories/tagging-content-and-managing-tags.md)のリストから選択します。                       |
+| 作成者で絞り込む        | ウェブコンテンツ、ドキュメント、ブログエントリーの作者によるフィルタリング。                                                                              |
+| ステータスで絞り込み      | Webコンテンツ、ドキュメント、ブログエントリーの [ワークフローステータス](../../process-automation/workflow/introduction-to-workflow.md) でフィルタリングします。 |
 
 タイプまたは内線フィルターを使用する場合、新しいフィルターダイアログから検索条件を定義することができます。 以下の情報を考慮してください：
 

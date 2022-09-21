@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.MessageBoardThread;
 import com.liferay.headless.delivery.client.resource.v1_0.MessageBoardThreadResource;
 
 public class MessageBoardThread_GET_ById {
@@ -15,11 +14,9 @@ public class MessageBoardThread_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		MessageBoardThread messageBoardThread =
+		System.out.println(
 			messageBoardThreadResource.getMessageBoardThread(
-				Long.valueOf(System.getProperty("messageBoardThreadId")));
-
-		System.out.println(messageBoardThread);
+				Long.valueOf(System.getProperty("messageBoardThreadId"))));
 	}
 
 }

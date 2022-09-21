@@ -1,4 +1,3 @@
-import com.liferay.headless.admin.address.client.dto.v1_0.Country;
 import com.liferay.headless.admin.address.client.resource.v1_0.CountryResource;
 
 public class Country_GET_ById {
@@ -13,10 +12,9 @@ public class Country_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		Country country = countryResource.getCountry(
-			Long.valueOf(System.getProperty("countryId")));
-
-		System.out.println(country);
+		System.out.println(
+			countryResource.getCountry(
+				Long.valueOf(System.getProperty("countryId"))));
 	}
 
 }

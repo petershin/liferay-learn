@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.WikiPage;
 import com.liferay.headless.delivery.client.resource.v1_0.WikiPageResource;
 
 public class WikiPage_GET_ById {
@@ -13,10 +12,9 @@ public class WikiPage_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		WikiPage wikiPage = wikiPageResource.getWikiPage(
-			Long.valueOf(System.getProperty("wikiPageId")));
-
-		System.out.println(wikiPage);
+		System.out.println(
+			wikiPageResource.getWikiPage(
+				Long.valueOf(System.getProperty("wikiPageId"))));
 	}
 
 }

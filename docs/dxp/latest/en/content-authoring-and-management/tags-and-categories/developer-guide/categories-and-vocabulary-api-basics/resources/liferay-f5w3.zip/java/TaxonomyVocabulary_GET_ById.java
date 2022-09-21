@@ -1,4 +1,3 @@
-import com.liferay.headless.admin.taxonomy.client.dto.v1_0.TaxonomyVocabulary;
 import com.liferay.headless.admin.taxonomy.client.resource.v1_0.TaxonomyVocabularyResource;
 
 public class TaxonomyVocabulary_GET_ById {
@@ -15,11 +14,9 @@ public class TaxonomyVocabulary_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		TaxonomyVocabulary taxonomyVocabulary =
+		System.out.println(
 			taxonomyVocabularyResource.getTaxonomyVocabulary(
-				Long.valueOf(System.getProperty("taxonomyVocabularyId")));
-
-		System.out.println(taxonomyVocabulary);
+				Long.valueOf(System.getProperty("taxonomyVocabularyId"))));
 	}
 
 }

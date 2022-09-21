@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.BlogPosting;
 import com.liferay.headless.delivery.client.resource.v1_0.BlogPostingResource;
 
 public class BlogPosting_GET_ById {
@@ -13,10 +12,9 @@ public class BlogPosting_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		BlogPosting blogPosting = blogPostingResource.getBlogPosting(
-			Long.valueOf(System.getProperty("blogPostingId")));
-
-		System.out.println(blogPosting);
+		System.out.println(
+			blogPostingResource.getBlogPosting(
+				Long.valueOf(System.getProperty("blogPostingId"))));
 	}
 
 }

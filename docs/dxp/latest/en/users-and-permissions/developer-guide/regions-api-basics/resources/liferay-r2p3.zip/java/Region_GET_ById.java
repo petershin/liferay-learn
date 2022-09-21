@@ -1,4 +1,3 @@
-import com.liferay.headless.admin.address.client.dto.v1_0.Region;
 import com.liferay.headless.admin.address.client.resource.v1_0.RegionResource;
 
 public class Region_GET_ById {
@@ -13,10 +12,9 @@ public class Region_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		Region region = regionResource.getRegion(
-			Long.valueOf(System.getProperty("regionId")));
-
-		System.out.println(region);
+		System.out.println(
+			regionResource.getRegion(
+				Long.valueOf(System.getProperty("regionId"))));
 	}
 
 }

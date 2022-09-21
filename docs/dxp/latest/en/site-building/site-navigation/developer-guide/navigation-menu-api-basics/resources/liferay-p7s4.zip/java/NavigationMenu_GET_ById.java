@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.NavigationMenu;
 import com.liferay.headless.delivery.client.resource.v1_0.NavigationMenuResource;
 
 public class NavigationMenu_GET_ById {
@@ -14,11 +13,9 @@ public class NavigationMenu_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		NavigationMenu navigationMenu =
+		System.out.println(
 			navigationMenuResource.getNavigationMenu(
-				Long.valueOf(System.getProperty("navigationMenuId")));
-
-		System.out.println(navigationMenu);
+				Long.valueOf(System.getProperty("navigationMenuId"))));
 	}
 
 }

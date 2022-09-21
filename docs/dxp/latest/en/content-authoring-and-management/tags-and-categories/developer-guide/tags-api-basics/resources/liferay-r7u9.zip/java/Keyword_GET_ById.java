@@ -1,4 +1,3 @@
-import com.liferay.headless.admin.taxonomy.client.dto.v1_0.Keyword;
 import com.liferay.headless.admin.taxonomy.client.resource.v1_0.KeywordResource;
 
 public class Keyword_GET_ById {
@@ -13,10 +12,9 @@ public class Keyword_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		Keyword keyword = keywordResource.getKeyword(
-			Long.valueOf(System.getProperty("keywordId")));
-
-		System.out.println(keyword);
+		System.out.println(
+			keywordResource.getKeyword(
+				Long.valueOf(System.getProperty("keywordId"))));
 	}
 
 }

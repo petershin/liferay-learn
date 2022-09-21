@@ -1,4 +1,3 @@
-import com.liferay.headless.admin.user.client.dto.v1_0.Role;
 import com.liferay.headless.admin.user.client.resource.v1_0.RoleResource;
 
 public class Role_GET_ById {
@@ -13,10 +12,8 @@ public class Role_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		Role role = roleResource.getRole(
-			Long.valueOf(System.getProperty("roleId")));
-
-		System.out.println(role);
+		System.out.println(
+			roleResource.getRole(Long.valueOf(System.getProperty("roleId"))));
 	}
 
 }

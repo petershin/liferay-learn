@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.StructuredContent;
 import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResource;
 
 public class StructuredContent_GET_ById {
@@ -15,11 +14,9 @@ public class StructuredContent_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		StructuredContent structuredContent =
+		System.out.println(
 			structuredContentResource.getStructuredContent(
-				Long.valueOf(System.getProperty("structuredContentId")));
-
-		System.out.println(structuredContent);
+				Long.valueOf(System.getProperty("structuredContentId"))));
 	}
 
 }

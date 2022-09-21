@@ -1,4 +1,3 @@
-import com.liferay.headless.admin.user.client.dto.v1_0.Account;
 import com.liferay.headless.admin.user.client.resource.v1_0.AccountResource;
 
 public class Account_GET_ById {
@@ -13,10 +12,9 @@ public class Account_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		Account account = accountResource.getAccount(
-			Long.valueOf(System.getProperty("accountId")));
-
-		System.out.println(account);
+		System.out.println(
+			accountResource.getAccount(
+				Long.valueOf(System.getProperty("accountId"))));
 	}
 
 }

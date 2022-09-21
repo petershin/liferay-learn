@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.DocumentFolder;
 import com.liferay.headless.delivery.client.resource.v1_0.DocumentFolderResource;
 
 public class DocumentFolder_GET_ById {
@@ -14,11 +13,9 @@ public class DocumentFolder_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		DocumentFolder documentFolder =
+		System.out.println(
 			documentFolderResource.getDocumentFolder(
-				Long.valueOf(System.getProperty("documentFolderId")));
-
-		System.out.println(documentFolder);
+				Long.valueOf(System.getProperty("documentFolderId"))));
 	}
 
 }

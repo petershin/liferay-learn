@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.KnowledgeBaseArticle;
 import com.liferay.headless.delivery.client.resource.v1_0.KnowledgeBaseArticleResource;
 
 public class KnowledgeBaseArticle_GET_ById {
@@ -15,11 +14,9 @@ public class KnowledgeBaseArticle_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		KnowledgeBaseArticle knowledgeBaseArticle =
+		System.out.println(
 			knowledgeBaseArticleResource.getKnowledgeBaseArticle(
-				Long.valueOf(System.getProperty("knowledgeBaseArticleId")));
-
-		System.out.println(knowledgeBaseArticle);
+				Long.valueOf(System.getProperty("knowledgeBaseArticleId"))));
 	}
 
 }

@@ -1,4 +1,3 @@
-import com.liferay.headless.admin.user.client.dto.v1_0.Organization;
 import com.liferay.headless.admin.user.client.resource.v1_0.OrganizationResource;
 
 public class Organization_GET_ById {
@@ -13,10 +12,9 @@ public class Organization_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		Organization organization = organizationResource.getOrganization(
-			String.valueOf(System.getProperty("organizationId")));
-
-		System.out.println(organization);
+		System.out.println(
+			organizationResource.getOrganization(
+				String.valueOf(System.getProperty("organizationId"))));
 	}
 
 }

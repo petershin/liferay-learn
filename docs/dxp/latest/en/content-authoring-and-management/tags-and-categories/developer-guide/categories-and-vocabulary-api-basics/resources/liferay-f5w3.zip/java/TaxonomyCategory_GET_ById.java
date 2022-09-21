@@ -1,4 +1,3 @@
-import com.liferay.headless.admin.taxonomy.client.dto.v1_0.TaxonomyCategory;
 import com.liferay.headless.admin.taxonomy.client.resource.v1_0.TaxonomyCategoryResource;
 
 public class TaxonomyCategory_GET_ById {
@@ -15,11 +14,9 @@ public class TaxonomyCategory_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		TaxonomyCategory taxonomyCategory =
+		System.out.println(
 			taxonomyCategoryResource.getTaxonomyCategory(
-				String.valueOf(System.getProperty("taxonomyCategoryId")));
-
-		System.out.println(taxonomyCategory);
+				String.valueOf(System.getProperty("taxonomyCategoryId"))));
 	}
 
 }

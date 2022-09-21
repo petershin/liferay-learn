@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.Document;
 import com.liferay.headless.delivery.client.resource.v1_0.DocumentResource;
 
 public class Document_GET_ById {
@@ -13,10 +12,9 @@ public class Document_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		Document document = documentResource.getDocument(
-			Long.valueOf(System.getProperty("documentId")));
-
-		System.out.println(document);
+		System.out.println(
+			documentResource.getDocument(
+				Long.valueOf(System.getProperty("documentId"))));
 	}
 
 }

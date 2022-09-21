@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.MessageBoardMessage;
 import com.liferay.headless.delivery.client.resource.v1_0.MessageBoardMessageResource;
 
 public class MessageBoardMessage_GET_ById {
@@ -15,11 +14,9 @@ public class MessageBoardMessage_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		MessageBoardMessage messageBoardMessage =
+		System.out.println(
 			messageBoardMessageResource.getMessageBoardMessage(
-				Long.valueOf(System.getProperty("messageBoardMessageId")));
-
-		System.out.println(messageBoardMessage);
+				Long.valueOf(System.getProperty("messageBoardMessageId"))));
 	}
 
 }

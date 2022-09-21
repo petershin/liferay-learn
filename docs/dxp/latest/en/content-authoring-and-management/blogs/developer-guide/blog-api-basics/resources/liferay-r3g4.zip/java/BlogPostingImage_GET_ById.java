@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.BlogPostingImage;
 import com.liferay.headless.delivery.client.resource.v1_0.BlogPostingImageResource;
 
 public class BlogPostingImage_GET_ById {
@@ -15,11 +14,9 @@ public class BlogPostingImage_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		BlogPostingImage blogPostingImage =
+		System.out.println(
 			blogPostingImageResource.getBlogPostingImage(
-				Long.valueOf(System.getProperty("blogPostingImageId")));
-
-		System.out.println(blogPostingImage);
+				Long.valueOf(System.getProperty("blogPostingImageId"))));
 	}
 
 }

@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.WikiNode;
 import com.liferay.headless.delivery.client.resource.v1_0.WikiNodeResource;
 
 public class WikiNode_GET_ById {
@@ -13,10 +12,9 @@ public class WikiNode_GET_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		WikiNode wikiNode = wikiNodeResource.getWikiNode(
-			Long.valueOf(System.getProperty("wikiNodeId")));
-
-		System.out.println(wikiNode);
+		System.out.println(
+			wikiNodeResource.getWikiNode(
+				Long.valueOf(System.getProperty("wikiNodeId"))));
 	}
 
 }

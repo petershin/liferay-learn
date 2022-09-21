@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.ContentStructure;
 import com.liferay.headless.delivery.client.resource.v1_0.ContentStructureResource;
 
 public class ContentStructure_GET_ById {
@@ -15,11 +14,9 @@ public class ContentStructure_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		ContentStructure contentStructure =
+		System.out.println(
 			contentStructureResource.getContentStructure(
-				Long.valueOf(System.getProperty("contentStructureId")));
-
-		System.out.println(contentStructure);
+				Long.valueOf(System.getProperty("contentStructureId"))));
 	}
 
 }

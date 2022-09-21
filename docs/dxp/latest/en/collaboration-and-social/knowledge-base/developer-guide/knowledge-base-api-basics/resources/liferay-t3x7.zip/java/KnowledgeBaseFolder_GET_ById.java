@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.KnowledgeBaseFolder;
 import com.liferay.headless.delivery.client.resource.v1_0.KnowledgeBaseFolderResource;
 
 public class KnowledgeBaseFolder_GET_ById {
@@ -15,11 +14,9 @@ public class KnowledgeBaseFolder_GET_ById {
 				"test@liferay.com", "learn"
 			).build();
 
-		KnowledgeBaseFolder knowledgeBaseFolder =
+		System.out.println(
 			knowledgeBaseFolderResource.getKnowledgeBaseFolder(
-				Long.valueOf(System.getProperty("knowledgeBaseFolderId")));
-
-		System.out.println(knowledgeBaseFolder);
+				Long.valueOf(System.getProperty("knowledgeBaseFolderId"))));
 	}
 
 }

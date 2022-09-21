@@ -1,0 +1,25 @@
+---
+toc:
+- ./getting-started.md
+- ./connecting-data-sources.md
+- ./touchpoints.md
+- ./people.md
+- ./optimization.md
+- ./apis.md
+- ./workspace-data.md
+- ./workspace-settings.md
+- ./troubleshooting.md
+---
+# Analytics Cloud
+
+```{toctree}
+:maxdepth: 4
+```
+
+```{raw} html
+:file: landingpage_template.html
+```
+
+```{raw} html
+:file: landing.html
+```

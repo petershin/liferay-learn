@@ -32,7 +32,7 @@ Once you've published an Object, follow these steps to use the Collection Displa
 
    ![Select the fragment and click Select Collection.](../objects/displaying-object-entries/images/02.png)
 
-1. In the modal window, click on the *Collection Providers* tab and select the *Object's provider*.
+1. In the modal window, click the *Collection Providers* tab and select the *Object's provider*.
 
    ![In the Collection Providers tab, select the Object's provider.](./displaying-object-entries/images/03.png)
 
@@ -40,7 +40,7 @@ Once you've published an Object, follow these steps to use the Collection Displa
 
    To do this, click the *Collection Options* button (![Collection Options Button](../../images/icon-actions.png)) and select *Filter Collection*.
 
-   ![Click on the Collection Options button and select Filter Collection.](./displaying-object-entries/images/04.png)
+   ![Click the Collection Options button and select Filter Collection.](./displaying-object-entries/images/04.png)
 
    Then, select the desired *filters* and click *Apply*.
 
@@ -52,7 +52,13 @@ After selecting the desired provider, use additional fragment options to determi
 
 ## Creating Display Page Templates for Objects
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-menu.png)). Go to *Design* &rarr; *Page Templates* and click on the *Display Page Templates* tab.
+When created, each Object entry is automatically assigned a dedicated friendly URL that uses the following pattern: `server-address/l/objectEntryId` (e.g., `https://mysite.com/l/44337`). To view an entry at its URL, you must first create a Display Page Template for the Object.
+
+Follow these steps:
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-menu.png)), expand *Design*, and go to *Page Templates*.
+
+1. Click the *Display Page Templates* tab.
 
 1. Click the *Add* button (![Add Button](../../images/icon-add.png)) and select the *Blank* template.
 
@@ -64,9 +70,19 @@ After selecting the desired provider, use additional fragment options to determi
 
 1. Click *Save*.
 
-Once saved, the selected Object is set as the template's mapping source, and you're redirected to edit the template. Here, you can design flexible page displays for individual Object entries using fragments that map to Object fields. See [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md) for information.
+   This creates a blank template with the selected Object as its default mapping source and redirects you to the template editing page.
 
-![Map fragment elements to Object fields to dynamically populate Display Pages for individual entries.](./displaying-object-entries/images/08.png)
+1. Use page fragments and widgets to create flexible, dynamic displays for Object entries. See [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md) for information.
+
+   ![Map fragment elements to Object fields to dynamically populate Display Pages for individual entries.](./displaying-object-entries/images/08.png)
+
+1. When finished, click *Publish*.
+
+1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for your template and select *Mark as Default*.
+
+   This template is now used to render the Object's entries whenever users visit their friendly URLs.
+
+   ![Click the Actions button for the template and select Mark as Default.](./displaying-object-entries/images/09.png)
 
 ## Creating Information Templates for Objects
 
@@ -76,29 +92,29 @@ Once saved, the selected Object is set as the template's mapping source, and you
 
 1. Enter a *name* and select the desired *Object*.
 
-   ![Enter a name and select the desired Object.](./displaying-object-entries/images/09.png)
+   ![Enter a name and select the desired Object.](./displaying-object-entries/images/10.png)
 
 1. Click *Save*. This redirects you to the template design page.
 
 1. (Optional) Click the Actions button (![Actions Button](../../images/icon-actions.png)) in the Application Bar, select *Import Script*, and choose an `.ftl` file to import. This replaces the current template with the file's FreeMarker script.
 
-   ![Import script from an .ftl file.](./displaying-object-entries/images/10.png)
+   ![Import script from an .ftl file.](./displaying-object-entries/images/11.png)
 
 1. Use [FreeMarker](https://freemarker.apache.org) to design your template.
 
    In the *Elements* side panel (![Elements](../../images/icon-list-ul.png)), you can access available fields from the selected Object's structure.
 
-   ![Select from available fields in the Object's structure.](./displaying-object-entries/images/11.png)
+   ![Select from available fields in the Object's structure.](./displaying-object-entries/images/12.png)
 
 1. (Optional) Add a description or image to the template in the Properties side panel (![Properties](../../images/icon-cog3.png)).
 
-   ![Add a description or image in the Properties panel.](./displaying-object-entries/images/12.png)
+   ![Add a description or image in the Properties panel.](./displaying-object-entries/images/13.png)
 
 1. Click *Save* when finished.
 
 You can now select from the template when mapping Object entries to fragment fields.
 
-![Select the template when mapping fragment elements.](./displaying-object-entries/images/13.png)
+![Select the template when mapping fragment elements.](./displaying-object-entries/images/14.png)
 
 ## Adding Entries to Navigation Menus
 

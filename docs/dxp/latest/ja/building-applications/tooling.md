@@ -6,7 +6,6 @@ toc:
 - ./tooling/poshi-test-automation.md
 - ./tooling/developer-studio.md
 - ./tooling/rest-builder.md
-- ./
 - ./tooling/other-tools.md
 - ./tooling/reference.md
 ---

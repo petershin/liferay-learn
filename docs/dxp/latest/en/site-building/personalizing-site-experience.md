@@ -3,7 +3,7 @@ toc:
 - ./personalizing-site-experience/segmentation.md
 - ./personalizing-site-experience/experience-personalization.md
 - ./personalizing-site-experience/migration-from-audience-targeting.md
-- ./personalizing-site-experience/enabling_automated-live-chat-systems.md
+- ./personalizing-site-experience/enabling-automated-live-chat-systems.md
 - ./personalizing-site-experience/developer-guide.md
 ---
 # Personalizing Site Experience
@@ -14,7 +14,7 @@ toc:
 personalizing-site-experience/segmentation.md
 personalizing-site-experience/experience-personalization.md
 personalizing-site-experience/migration-from-audience-targeting.md
-personalizing-site-experience/enabling_automated-live-chat-systems.md
+personalizing-site-experience/enabling-automated-live-chat-systems.md
 personalizing-site-experience/developer-guide.md
 ```
 

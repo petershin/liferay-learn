@@ -1,3 +1,10 @@
+---
+toc:
+- using-the-server-administration-panel/managing-system-resources.md
+- using-the-server-administration-panel/configuring-logging.md
+- using-the-server-administration-panel/configuring-external-services.md
+- using-the-server-administration-panel/configuring-a-shutdown-event.md
+---
 # サーバー管理パネルの使用
 
 ```{toctree}

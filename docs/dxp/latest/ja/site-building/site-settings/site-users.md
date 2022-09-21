@@ -1,7 +1,7 @@
 ---
 toc:
 - ./site-users/changing-site-membership-type.md
-- ./configuring-role-and-team-defaults-for-site-members.md
+- ./site-users/configuring-role-and-team-defaults-for-site-members.md
 ---
 
 # Site Users

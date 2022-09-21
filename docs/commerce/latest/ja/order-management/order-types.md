@@ -1,3 +1,7 @@
+---
+toc:
+- order-types/using-order-types.md
+---
 # 注文タイプ
 
 ```{toctree}

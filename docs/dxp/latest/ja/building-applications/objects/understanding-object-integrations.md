@@ -1,8 +1,8 @@
 ---
 toc:
-- ./understanding-object-integrations/permissions-framework-integrations.md
-- ./understanding-object-integrations/headless-framework-integrations.md
-- ./understanding-object-integrations/assets-framework-integrations.md
+- ./understanding-object-integrations/permissions-framework-integration.md
+- ./understanding-object-integrations/headless-framework-integration.md
+- ./understanding-object-integrations/assets-framework-integration.md
 ---
 
 # オブジェクト統合を理解する

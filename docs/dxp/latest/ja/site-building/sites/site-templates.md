@@ -1,9 +1,9 @@
 ---
 toc:
-- ./sites-templates/creating-site-templates.md
-- ./sites-templates/propagating-template-changes.md
-- ./sites-templates/configuring-site-template-propagation.md
-- ./sites-templates/exporting-importing-site-templates.md
+- ./site-templates/creating-site-templates.md
+- ./site-templates/propagating-template-changes.md
+- ./site-templates/configuring-site-template-propagation.md
+- ./site-templates/exporting-importing-site-templates.md
 ---
 
 # サイトテンプレート

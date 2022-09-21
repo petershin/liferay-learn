@@ -1,3 +1,8 @@
+---
+toc:
+- order-types/using-order-types.md
+---
+
 # Order Types
 
 ```{toctree}

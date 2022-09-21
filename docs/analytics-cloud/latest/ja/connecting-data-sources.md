@@ -2,7 +2,7 @@
 toc:
 - ./connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md
 - ./connecting-data-sources/syncing-contact-data-from-dxp.md
-- ./connecting-data-sources/scoping-sites-and-individuals-using-properties.mdをご参照ください。
+- ./connecting-data-sources/scoping-sites-and-individuals-using-properties.md
 - ./connecting-data-sources/adding-a-csv-data-source.md
 ---
 

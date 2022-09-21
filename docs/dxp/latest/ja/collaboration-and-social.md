@@ -7,7 +7,6 @@ toc:
 - ./collaboration-and-social/wiki.md
 - ./collaboration-and-social/questions.md
 - ./collaboration-and-social/alerts-and-announcements.md
-- ./../site-building/building-sites/site-membership/inviting-members-to-your-site.md
 - ./collaboration-and-social/knowledge-base.md
 ---
 # コラボレーションとソーシャルメディア

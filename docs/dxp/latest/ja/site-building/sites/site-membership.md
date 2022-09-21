@@ -1,8 +1,8 @@
 ---
 toc:
-- ./sites-membership/adding-members-to-sites.md
-- ./sites-membership/inviting-members-to-your-site.md
-- ./sites-membership/creating-teams-for-sites.md
+- ./site-membership/adding-members-to-sites.md
+- ./site-membership/inviting-members-to-your-site.md
+- ./site-membership/creating-teams-for-sites.md
 ---
 
 # サイトメンバーシップ

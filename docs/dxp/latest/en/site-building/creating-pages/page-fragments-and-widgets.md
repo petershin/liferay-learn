@@ -1,6 +1,6 @@
 ---
 toc:
-- ./page-fragments-and-widgets/using-fragments/.md
+- ./page-fragments-and-widgets/using-fragments.md
 ---
 # Page Fragments and Widgets
 

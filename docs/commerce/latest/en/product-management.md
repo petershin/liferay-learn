@@ -12,8 +12,6 @@ toc:
 
 product-management/catalogs.md
 product-management/creating-and-managing-products.md
-product-management/managing-inventory.md
-product-management/managing-prices.md
 ```
 
 ```{raw} html

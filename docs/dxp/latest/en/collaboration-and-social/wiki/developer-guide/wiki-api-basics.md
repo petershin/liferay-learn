@@ -416,7 +416,6 @@ The following are representative examples of the tutorial's Java commands.
 ### `WikiNode_POST_ToSite.java`
 
 ```{literalinclude} ./wiki-api-basics/resources/liferay-q8u2.zip/java/WikiNode_POST_ToSite.java
-   :dedent: 1
    :language: java
    :lines: 4-28
 ```
@@ -424,7 +423,6 @@ The following are representative examples of the tutorial's Java commands.
 ### `WikiPage_POST_ToNode.java`
 
 ```{literalinclude} ./wiki-api-basics/resources/liferay-q8u2.zip/java/WikiPage_POST_ToNode.java
-   :dedent: 1
    :language: java
    :lines: 4-29
 ```
@@ -432,7 +430,6 @@ The following are representative examples of the tutorial's Java commands.
 ### `WikiPages_GET_FromNode.java`
 
 ```{literalinclude} ./wiki-api-basics/resources/liferay-q8u2.zip/java/WikiPages_GET_FromNode.java
-   :dedent: 1
    :language: java
    :lines: 6-25
 ```

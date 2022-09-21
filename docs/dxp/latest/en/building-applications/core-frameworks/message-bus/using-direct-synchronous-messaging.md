@@ -127,14 +127,14 @@ The `x6n5-charlie-impl` module's `X6N5CharlieMessageListener` class and `x6n5-do
 
 ```{literalinclude} ./using-direct-synchronous-messaging/resources/liferay-x6n5.zip/x6n5-charlie-impl/src/main/java/com/acme/x6n5/charlie/internal/messaging/X6N5CharlieMessageListener.java
    :language: java
-   :lines: 10-30
+   :lines: 10-28
 ```
 
 `X6N5DogMessageListener` class:
 
 ```{literalinclude} ./using-direct-synchronous-messaging/resources/liferay-x6n5.zip/x6n5-dog-impl/src/main/java/com/acme/x6n5/dog/internal/messaging/X6N5DogMessageListener.java
    :language: java
-   :lines: 10-30
+   :lines: 10-28
 ```
 
 Each listener's `receive(Message)` method logs the message payload and then sets the message response to its own class name.

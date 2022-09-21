@@ -50,7 +50,7 @@ Besides standard Product details (e.g., [Specifications](../products/specificati
 
 1. Click *Save* when finished.
 
-For more information about each field, see the [Virtual Product Reference](./virtual-product-reference.md) article. Also, see general [Products](../products.html) documentation for additional configuration settings.
+For more information about each field, see the [Virtual Product Reference](./virtual-product-reference.md) article. Also, see general [Products](../products.md) documentation for additional configuration settings.
 
 ## Commerce 2.1 and Below
 

@@ -96,20 +96,17 @@ Compare the `service.xml` column definitions of [1.0.0](./upgrading-your-databas
 Create a `UpgradeStepRegistrator` class that implements the `UpgradeStepRegister` interface.
 
 ```{literalinclude} ./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/src/main/java/com/acme/p5d2/internal/upgrade/P5D2EntryUpgrade.java
-:dedent: 1
 :language: java
 :lines: 26-34
 ```
 
 Override the `register` method to implement the app's upgrade registration. Make sure to use the `@Component` annotation and identify it as a `UpgradeStepRegistrator.class` service.
 
-
 ### Create an UpgradeProcess Class
 
 Create an `UpgradeProcess` class that extends the base class.
 
 ```{literalinclude} ./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/src/main/java/com/acme/p5d2/internal/upgrade/v2_0_0/P5D2EntryUpgradeProcess.java
-:dedent: 1
 :language: java
 :lines: 22-32
 ```

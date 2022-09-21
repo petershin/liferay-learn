@@ -71,7 +71,6 @@ In the class where you want to receive messages, implement the [`MessageListener
 Override the `receive` method with logic for processing messages. Here's the example `receive` method implementation:
 
 ```{literalinclude} ./listening-for-messages/resources/liferay-w3a4.zip/w3a4-impl/src/main/java/com/acme/w3a4/internal/messaging/W3A4MessageListener.java
-   :dedent: 1
    :language: java
    :lines: 17-27
 ```

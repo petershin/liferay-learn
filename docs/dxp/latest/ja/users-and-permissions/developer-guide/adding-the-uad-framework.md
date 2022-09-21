@@ -103,6 +103,7 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
    :language: xml
    :lines: 20
    ```
+
 ## UADモジュールを生成する
 
 1. `-service` フォルダから移動して、 `-uad` フォルダを新規に作成します。
@@ -110,7 +111,7 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 1. モジュール用の `bnd.bnd` ファイルを作成します。
 
 ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd
-    ```
+```
 
    Make sure to include the `-dsannotations-options: inherit` annotation. OSGi service component classes inherit [OSGi declarative services](../../liferay-internals/fundamentals/module-projects.md) annotations from their class hierarchy.
 

@@ -68,9 +68,9 @@ You invoked a Service Builder service from a portlet. Learn how it works, starti
 The `t2p5-api` module project's `T2P5EntryLocalService` class has a method called `addT2P5Entry(String description, String name)`.
 
 ```{literalinclude} ./invoking-a-service-locally/resources/liferay-t2p5.zip/t2p5-api/src/main/java/com/acme/t2p5/service/T2P5EntryLocalService.java
-:dedent: 1
-:language: java
-:lines: 65-66
+   :dedent: 1
+   :language: java
+   :lines: 65-66
 ```
 
 The `addT2P5Entry` method creates a `T2P5Entry` with the given description and name and persists the entry.

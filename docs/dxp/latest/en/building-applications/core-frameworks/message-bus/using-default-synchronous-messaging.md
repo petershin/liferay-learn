@@ -132,7 +132,7 @@ The `m4q7-charlie-impl` module's `M4Q7CharlieMessageListener` class listens for 
 
 ```{literalinclude} ./using-default-synchronous-messaging/resources/liferay-m4q7.zip/m4q7-charlie-impl/src/main/java/com/acme/m4q7/charlie/internal/messaging/M4Q7CharlieMessageListener.java
    :language: java
-   :lines: 12-42
+   :lines: 12-40
 ```
 
 When `M4Q7CharlieMessageListener` receives a message, its `receive(Message)` method logs the message payload and sends a response message to the original message's response destination. The method sets the response message payload to the listener class name and sets the response message ID to the original message's response ID.
@@ -147,7 +147,7 @@ The `m4q7-baker-impl` module's `M4Q7BakerMessageListener` class listens for mess
 
 ```{literalinclude} ./using-default-synchronous-messaging/resources/liferay-m4q7.zip/m4q7-baker-impl/src/main/java/com/acme/m4q7/baker/internal/messaging/M4Q7BakerMessageListener.java
    :language: java
-   :lines: 10-28
+   :lines: 10-26
 ```
 
 When `M4Q7BakerMessageListener` receives a message, its `receive(Message)` method logs the message payload.

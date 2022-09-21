@@ -10,7 +10,7 @@ Properties can also be used to achieve the converse. Users can create a distinct
 
 In each Analytics Cloud workspace, you can create and track multiple properties. When starting out, a default property will always be created when you connect a new DXP data source. The name of the data source will be the same as your DXP instance name.
 
-To create a new property, go to your Analytics Cloud Workspace. Then go to *Settings* -> *Properties*, and click *New Property* in the top right corner.
+To create a new property, go to your Analytics Cloud Workspace. Then go to *Settings* &rarr; *Properties*, and click *New Property* in the top right corner.
 
 ![Adding a new property.](scoping-sites-and-individuals-using-properties/images/01.png)
 
@@ -22,7 +22,7 @@ Give a name to the property and click *Save*. Next, you will see the setting pag
 
 You have to sync sites to a property in order to see their data on Analytics Cloud. To do that, you will need to go to the Control Panel of your Liferay DXP instance.
 
-1. Verify that your Liferay DXP instance is syncing with Analytics Cloud by viewing *Instance Settings* -> *Analytics Cloud* in your Liferay DXP instance. The message `Your DXP instance is connected to Analytics Cloud` confirms that your Liferay DXP instance is correctly connected to Analytics Cloud.
+1. Verify that your Liferay DXP instance is syncing with Analytics Cloud by viewing *Instance Settings* &rarr; *Analytics Cloud* in your Liferay DXP instance. The message `Your DXP instance is connected to Analytics Cloud` confirms that your Liferay DXP instance is correctly connected to Analytics Cloud.
 
     ```{important}
     If you do not see the message `Your DXP instance is connected to Analytics Cloud.`, please review [Connecting Liferay DXP Sites to Analytics Cloud](./connecting-liferay-dxp-to-analytics-cloud.md).
@@ -54,13 +54,29 @@ To sync contacts to a property:
 
 Learn more about [syncing contact data from Liferay DXP](syncing-contact-data-from-dxp.md).
 
+## Email Reports
+
+You can enable reports to be emailed to you on a regular basis. The report includes the number of unique visitors, number of sessions per visitor, average session duration, and average bounce rate. To enable,
+
+1. Navigate to _Settings_ &rarr; _Properties_. Select the property you would like to enable email reports for.
+
+1. Click the _Cog_ icon (![Cog icon](../images/icon-cog-2.png)) and a new window will pop open. 
+
+1. Toggle the switch to enable email reports. Select the email frequency (e.g. Daily, Weekly, or Monthly). Click _Save_.
+
+    ![Toggle the switch to enable email reports and select a frequency.](./scoping-sites-and-individuals-using-properties/images/06.png)
+
+1. You will receive regular email reports based on your selected frequency. Note, daily reports are sent out every day at 12:00 AM (UTC). Weekly reports are sent out every Monday at 12:00 AM (UTC). Monthly reports are sent out on the 1st of the month at 12:00 AM (UTC). The screenshot below shows a sample report.
+
+    ![Email reports include analytics about individuals visiting your site.](./scoping-sites-and-individuals-using-properties/images/07.png)
+
 ## Managing Permissions for a Property
 
 Administrators have permissions to see all properties in a workspace. You can assign members of a workspace permissions to view data for any particular property.
 
 To assign property permissions, do the following:
 
-1. In your Analytics Cloud workspace, go to *Settings* -> *Properties*, and select the property you wish to manage permissions for.
+1. In your Analytics Cloud workspace, go to *Settings* &rarr; *Properties*, and select the property you wish to manage permissions for.
 
     ```{note}
     By default, properties are accessible to all users of a workspace in Analytics Cloud. You can change that by clicking on the *Select Users* radio button.
@@ -70,13 +86,13 @@ To assign property permissions, do the following:
 
 Users who are added now have access to the property.
 
-![Adding users to a property.](scoping-sites-and-individuals-using-properties/images/06.png)
+![Adding users to a property.](scoping-sites-and-individuals-using-properties/images/08.png)
 
 ## Navigating Between Different Properties
 
 To alternate between viewing different properties on your Analytics Cloud workspace, click on the property name on the top left corner in the navigation bar. A list of properties that you have permission to view will display in a menu. Click on a derided property to switch.
 
-![Changing views from one property to another.](scoping-sites-and-individuals-using-properties/images/07.png)
+![Changing views from one property to another.](scoping-sites-and-individuals-using-properties/images/09.png)
 
 When viewing a property. **All** the analytics data is scoped to this property. For example:
 

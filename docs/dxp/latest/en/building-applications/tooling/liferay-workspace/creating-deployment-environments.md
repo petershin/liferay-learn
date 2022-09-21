@@ -1,8 +1,8 @@
 # Creating Deployment Environments
 
-There comes a point when your code is ready to share with somebody. For that, you must build an environment. In the corporate world, there are usually three environments: 
+There comes a point when your code is ready to share. For that, you must build an environment. In the corporate world, there are usually three environments: 
 
-* Developer: an environment for early testing, where code can be fixed and redeployed rapidly. Power users test here. 
+* Developer: an environment for early testing, where code can be fixed and redeployed rapidly. Developers and power users test here. 
 * User Acceptance Testing (UAT): an environment that more closely mirrors the production configuration. When your application is near-complete, you generally invite a larger segment of users to test here. 
 * Production: the environment where your live site lives. Deployments are tightly controlled, and only code that's been tested on the other two environments is deployed. 
 
@@ -40,7 +40,7 @@ The `configs` folders define specific scenarios:
 
 `uat`: Contains configuration for the User Acceptance Testing environment. 
 
-Placing configuration files in a particular folder defines the configuration for that environment. In the case of `common`, that configuration is merged with the others when the environment is built. Now you're ready to build some environments. 
+Placing configuration files in a particular folder defines the configuration for that environment. In the case of `common` and `docker`, all other configurations override them. This is so you can provide a baseline configuration for the environments to override. Now you're ready to build some environments. 
 
 ## Building Deployment Environments
 
@@ -100,7 +100,25 @@ Excellent! You're all set up now to generate and distribute environments.
 
 ## Generating Deployment Environments
 
-Now you can generate environments to run locally or to distribute to your server. This is done using either the `initBundle` or the `distBundle` Gradle task. 
+Now you can generate a Docker container or bundles to run locally or to distribute to your server. 
+
+### Generating a Docker Container
+
+When you generate a Docker container, it contains configurations for all environments. You choose which environment you want to use by using the `liferay.workspace.environment` variable. 
+
+This command starts a Docker container using the dev configuration above: 
+
+```bash
+./gradlew startDockerContainer -Pliferay.workspace.environment=dev
+```
+
+The configurations are generated inside the Liferay container, and the variable determines the one to use. 
+
+![All configurations are generated inside the Docker container.](./creating-deployment-environments/images/01.png)
+
+### Generating Bundles
+
+This is done using either the `initBundle` or the `distBundle` Gradle task. 
 
 1. You should test your environment first. To build it locally, use the `initBundle` command. For example, to build the `dev` environment, you'd run this: 
 

@@ -1,26 +1,24 @@
 # Adding Fields to Objects
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.4+`
+{bdg-secondary}`Available Liferay 7.4+`
 
-Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference) for Liferay Objects. You can add fields to any published or unpublished custom Object. <!--TASK: swap last sentence once system Objects are supported. "You can add fields to any published or unpublished Object, including both system and custom Objects."-->
+Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference). By default, all custom objects include the following system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status. But you can add custom fields to custom objects at any time.
 
-When an Object is [published](./creating-objects.md#publishing-object-drafts), an initial database table is created with the draft's data definitions. This table includes all Object fields and relationships that exist at the time of publishing. Any fields and relationships added to an Object after publishing are added to a side table (i.e., `[Initial_Table_Name]_x`).
+When an object draft is [published](./creating-objects.md#publishing-object-drafts), Liferay creates an initial database table with all fields and relationships included in the draft at the time of publishing. Fields and relationships added to an object after publishing are added to a side table (i.e., `[Initial_Table_Name]_x`).
 
 ```{important}
-If a field is saved to an Object draft, you can edit any of its settings and values. However, once fields are published or saved to a published Object, only its Label can be edited. All other values and settings cannot be changed. 
-
-Fields in Object drafts can be removed. After initial publication, however, fields cannot be removed, with the exception of fields added *after* initial publication, because those fields were added to a side table.
+You can remove fields from object drafts at any time. However, you cannot remove published fields. After publishing, only fields added to the object's side table can be removed.
 ```
 
-Follow these steps to add a field to an Object:
+Follow these steps to add a field to an object:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
 
-1. Begin editing the desired Object definition.
+1. Begin editing the desired object definition.
 
 1. Go to the *Fields* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
-   ![In the Fields tab, click the Add button and enter the required details.](./adding-fields-to-objects/images/01.png)
+   ![Go to the Fields tab, click the Add button and enter the required details.](./adding-fields-to-objects/images/01.png)
 
 1. Enter a *Label* and *Field Name*.
 
@@ -29,7 +27,7 @@ Follow these steps to add a field to an Object:
    **Field Name**: This value determines the field's name in the back-end and uses camel case. Once a field is published, this value cannot be changed.
 
    ```{important}
-   The following field names are reserved by Liferay and cannot be used for custom fields: `companyId`, `createDate`, `groupId`, `id`, `lastPublishDate`, `modifiedDate`, `status`, `statusByUserId`, `statusByUserName`, `statusDate`, `userId`, `userName`. If users attempt to create a field using one of these field names, Liferay displays an error message.
+   Some field names are reserved by Liferay and cannot be used for custom fields. See [Reserved Field Names](#reserved-field-names) for more information. 
    ```
 
 1. Select a field *Type*. Some field types include additional configuration options (e.g., Picklist, Attachment). See [Field Type Reference](#field-types-ui-reference) below for a basic overview of each type, or see [Understanding Object Field Types](../understanding-object-field-types.md) for more detailed information.
@@ -44,13 +42,15 @@ Follow these steps to add a field to an Object:
 
 1. Click on *Save*.
 
-After saving fields to an Object draft, you can select them to define whether they are searchable. All fields are searchable by default.
+After saving fields to an object draft, you can access additional configuration options. For instance, you can determine whether a field is searchable. Other configuration options depend on the field's type. See [Understanding Object Field Types](../understanding-object-field-types.md) for more information.
 
-![After saving the field, determine whether or not it is searchable.](./adding-fields-to-objects/images/02.png)
+```{important}
+If you publish the draft or add fields to an already published object, configuration options are restricted. See [Configuration Restrictions for Published Objects](./creating-objects.md#configuration-restrictions-for-published-objects) to learn more.
+```
 
 ## Field Types UI Reference
 
-{bdg-secondary}`For Liferay DXP 7.4 U24+ and GA24+`
+{bdg-secondary}`For 7.4 U24+/GA24+`
 
 | Type | Description |
 | :--- | :--- |
@@ -63,9 +63,37 @@ After saving fields to an Object draft, you can select them to define whether th
 | Long Text (*previously Clob*) | Stores a text box value that supports up to 65,000 characters; after creating a Long Text field, you can configure it to limit the number of characters allowed |
 | Picklist | Stores a [Picklist](../picklists.md) string value; see [Picklist Fields](../understanding-object-field-types.md#picklist) for more information |
 | Precision Decimal (*previously BigDecimal*) | Stores a high-precision decimal number without rounding |
-| Relationship | Stores the numeric ID for all related Object entries |
+| Relationship | Stores the numeric ID for all related object entries |
 | Rich Text | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio) |
 | Text (*previously String*) | Stores simple text values up to 280 characters; after creating a Text field, you can configure it to limit the number of characters allowed |
+
+## Reserved Field Names
+
+{bdg-secondary}`For 7.4 U41+/GA41+`
+
+The following field names are reserved by Liferay and cannot be used for custom fields. If users attempt to create a field using one of these field names, Liferay displays an error message.
+
+| Field | Description |
+| :--- | :--- |
+| `companyId` | Portal instance where the entry was created |
+| `createDate` | When the entry was created |
+| `externalReferenceCode` | External reference code for the entry |
+| `groupId` | Site ID in where the entry was created |
+| `lastPublishDate` | Date when the entry was last published |
+| `modifiedDate` | Date when the entry was last modified |
+| `mvccVersion` | MVCC version of the entry |
+| `objectDefinitionId` | ID of the entry's object |
+| `objectEntryId` | ID for the entry |
+| `status` | Workflow status for the entry |
+| `statusByUserId` | ID of the assigned user in Workflow |
+| `statusByUserName` | Name of the assigned user in Workflow |
+| `statusDate` | Date when the Workflow status was last updated |
+| `userEmailAddress` | Email address for the entry's author |
+| `userFirstName` | First name of the entry's author |
+| `userId` | ID of the entry's author |
+| `userLastName` | Last name of the entry's author |
+| `userName` | User name of the entry's author |
+| `uuid` | Unique universal ID for the entry |
 
 ## Additional Information
 

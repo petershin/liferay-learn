@@ -1,6 +1,6 @@
 # Adding Custom Validations
 
-{bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`
+{bdg-secondary}`Available Liferay 7.4 U27+/GA27+`
 
 With Objects, you can add validations for both custom and system fields. Validations set rules used for determining valid field entries and are defined using either [Groovy](https://groovy-lang.org/) scripts or Liferay's [expression builder](./expression-builder-validations-reference.md). Each validation has its own trigger, conditions, and error text, which you can set via the Objects UI. When triggered, the validation checks for valid field entries according to your defined conditions and displays your error text for invalid entries.
 
@@ -120,6 +120,8 @@ The following table lists available Expression Builder functions with their comp
 | Sum |  | &#10004; |  |
 
 ## Available Fields Reference
+
+{bdg-secondary}`For 7.4 U41+/GA41+`
 
 When constructing conditions, you can use any of the Object's custom or system fields. You can also select from relationship fields on the 'one' side of a relationship.
 

@@ -14,6 +14,10 @@ Currently, Liferay supports four action types:
 
 * [Add an Object Entry actions](#add-an-object-entry-actions) create entries in an active Object.
 
+```{important}
+Groovy script actions are not currently available on LXC.
+```
+
 Follow these steps to define actions for an Object:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click on the *Control Panel* tab, and go to *Objects*.

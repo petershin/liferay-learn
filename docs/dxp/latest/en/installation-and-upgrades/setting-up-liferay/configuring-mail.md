@@ -22,7 +22,7 @@ If using the [IMAP](https://support.google.com/mail/answer/7126229?hl=en) protoc
 
 Follow these steps to configure the mail session from the Control Panel:
 
-1. Sign in as the administrative User (the User specified on the [Basic Configuration page](../../getting-started/using-the-setup-wizard.md)).
+1. Sign in as the administrative User (the User specified on the [Basic Configuration page](../installing-liferay/running-liferay-for-the-first-time.md)).
 1. Navigate to *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*.
 1. Enter your values for the [following fields](#mail-configuration-reference):
 

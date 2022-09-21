@@ -23,7 +23,7 @@ Liferay DXP/Portalは、メールサーバーを使用して、ユーザー登�
 
 コントロールパネルからメールセッションを設定するには、次の手順に従います。
 
-1. 管理ユーザー（[［Basic Configuration］ページ](../../getting-started/using-the-setup-wizard.md)で指定されたユーザー）としてサインインします。
+1. 管理ユーザー（[［Basic Configuration］ページ](../installing-liferay/running-liferay-for-the-first-time.md)で指定されたユーザー）としてサインインします。
 1. ［**Control Panel］ &rarr; ［Configuration］ &rarr; ［Server Administration］ &rarr; ［Mail**］ に移動します。
 1. [次のフィールド](#mail-configuration-reference) に値を入力します。
 

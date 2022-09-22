@@ -106,7 +106,13 @@ Now you can generate a Docker container or bundles to run locally or to distribu
 
 When you generate a Docker container, it contains configurations for all environments. You choose which environment you want to use by using the `liferay.workspace.environment` variable. 
 
-This command starts a Docker container using the dev configuration above: 
+To generate a Docker container from your deployment environment configuration, use this command: 
+
+```bash
+./gradlew buildDockerImage
+```
+
+Once your Docker container is built, this command starts it using the dev configuration above: 
 
 ```bash
 ./gradlew startDockerContainer -Pliferay.workspace.environment=dev
@@ -140,3 +146,16 @@ You can use the `distBundleZip` command if you would rather have a .zip archive.
 ```
 
 Follow the above steps to test and build each environment. 
+
+You can also build all your environments at once. To build all bundles into gzipped tar files, use 
+
+```bash
+./gradlew distBundleTarAll
+```
+
+To build all bundles into .zip files, use 
+
+```bash
+./gradlew distBundleZipAll
+```
+

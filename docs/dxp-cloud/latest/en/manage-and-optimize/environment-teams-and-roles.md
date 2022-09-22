@@ -51,7 +51,7 @@ Roles determine a user's access level within an environment. Liferay DXP Cloud c
 * **Contributor:** Contributors can handle application management and most of the development life cycle, but they can't manage team members or perform other administrator-exclusive actions.
 * **Guest:** Guests have view-only access. Guests can see what is happening in the environment, but can't perform actions or make any changes. They only have permission to remove themselves from the environment.
 
-Here is a list of important permission and which team roles have them:
+Here is a list of important permissions and which team roles have them:
 
 | **Permission** | **Owner** | **Administrator** | **Contributor** | **Guest** |
 | --- | :-: | :-: | :-: | :-: |

@@ -59,4 +59,4 @@
 * [可変レート配送方法を使う](./using-the-variable-rate-shipping-method.md)
 * [FedExを運送業者の方法として使用する](./using-the-fedex-shipping-method.md)
 * [配送方法の制限の適用](./applying-shipping-method-restrictions.md)
-* [新しい出荷エンジンの実装](../../developer-guide/sales/implementing-a-new-shipping-engine.md)
+<!-- Commenting until developer guide is added back * [新しい出荷エンジンの実装](../../developer-guide/sales/implementing-a-new-shipping-engine.md) -->

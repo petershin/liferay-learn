@@ -28,7 +28,8 @@ Here are several shipping methods:
 * [Flat Rate](./configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
 * [FedEx](./configuring-shipping-methods/using-the-fedex-shipping-method.md) (Subscribers)
 
-For users interested in adding other shipping methods or carriers, see [Implementing a New Shipping Engine](../developer-guide/sales/implementing-a-new-shipping-engine.md).
+<!-- Commenting until developer guide is added back
+For users interested in adding other shipping methods or carriers, see [Implementing a New Shipping Engine](../developer-guide/sales/implementing-a-new-shipping-engine.md). -->
 
 Shipping methods may be restricted by country or region. To learn more, see [Applying Shipping Method Restrictions](./configuring-shipping-methods/applying-shipping-method-restrictions.md).
 

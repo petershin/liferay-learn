@@ -46,7 +46,9 @@ Users can configure which [payment methods](../../store-management/configuring-p
 
 Users can configure the channel's shipment methods. By default, the [flat rate](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) is enabled. Users can also enable a [variable rate](../../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md) shipping method. Subscribers can also enable [FedEx](../../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md).
 
-Lastly, users can use a [custom shipping engine](../../developer-guide/sales/implementing-a-new-shipping-engine.md).
+<!-- Commenting until developer guide is added back
+Lastly, users can use a [custom shipping engine](../../developer-guide/sales/implementing-a-new-shipping-engine.md). 
+-->
 
 ![The Shipment Methods section allows you to choose which shipment method to use.](./channels-reference-guide/images/06.png)
 

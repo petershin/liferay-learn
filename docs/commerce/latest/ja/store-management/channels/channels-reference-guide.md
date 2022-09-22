@@ -46,7 +46,8 @@
 
 ユーザーはチャネルの配送方法を設定できます。 デフォルトでは、 [一律料金](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) が有効になっています。 ユーザーは、[可変レート](../../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)配送方法を有効にすることもできます。 サブスクライバーは、 [FedEx](../../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md)を有効にすることもできます。
 
-最後に、ユーザーは [カスタム配送エンジン](../../developer-guide/sales/implementing-a-new-shipping-engine.md)使用できます。
+<!-- Commenting until developer guide is added back
+最後に、ユーザーは [カスタム配送エンジン](../../developer-guide/sales/implementing-a-new-shipping-engine.md)使用できます。 -->
 
 ![［配送方法］セクションでは、使用する配送方法を選択できます。](./channels-reference-guide/images/06.png)
 

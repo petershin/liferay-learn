@@ -28,7 +28,7 @@ Welcome to Liferay Analytics Cloud. Collecting analytics data is a crucial part 
 
 Use Liferay Analytics Cloud to know exactly who the people are that are visiting your site and how they're interacting with your site's content. The high value comes from the tight integration shared between Liferay Analytics Cloud and Liferay DXP.
 
-Why is this integration so awesome? Because straight out-of-the-box, Analytics Cloud has access to the full range of data on a Liferay DXP's database. No other analytics product easily accomplishes this. When you build sites and site content with Liferay DXP, you can take full advantage of this integration. As interactions happen on your site, the data associated with users can help you create individual profiles and segment profiles. As Analytics Cloud helps you learn what's important to your users, and helps you deliver improved content and optimized site experiences.
+Why is this integration so awesome? Because straight out-of-the-box, Analytics Cloud is built to receive access to the wide range of data on a Liferay DXP's database. This means that as you build out your site, all the content you create (i.e. pages, blogs, forms, documents, etc.) are ready to be tracked without any additional configuration. As individuals interact on your site, the data associated with these users can help you create individual profiles and segment profiles. Analytics Cloud helps you learn what's important to your users and helps you deliver improved content and optimized site experiences.
 
 What are some example use cases for using Analytics Cloud with Liferay DXP?
 

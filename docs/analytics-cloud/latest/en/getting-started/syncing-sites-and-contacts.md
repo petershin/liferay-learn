@@ -2,48 +2,9 @@
 
 Now that you've [Connected Liferay DXP to Analytics Cloud](./connecting-liferay-dxp-to-analytics-cloud.md), it's time to sync your site and your contacts.
 
-## Optional Sample Setup 
-
-If you already have an existing Liferay DXP site and users, skip to the next step of [Syncing Sites](#syncing-sites). If you are new to Liferay DXP, there isn't much on your Liferay instance for Analytics Cloud to start tracking. If you're interested in jump-starting a demo site, consider using Liferay Commerce's [Minimum Accelerator Site](https://learn.liferay.com/commerce/latest/en/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html) to get some sample content that you can use to explore Analytics Cloud.
-
-1. In your Liferay instance, open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to _Control Panel_ &rarr; _Sites_. 
-
-1. Click (![Add](../images/icon-add.png)) and select _Minimum_. Give the sample site a name (e.g. Minimum Site). Click _Add_. The Minimum sample site has now been added.
-
-   ![Select the Minimum Site and add it to your Liferay instance.](./syncing-sites-and-contacts/images/01.png)
-
-Now let's add a few sample users for Analytics Cloud to track. 
-
-1. In your Liferay instance, open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to _Control Panel_ &rarr; _System_ &rarr; _Server Administration_. Click on the _Script_ tab.
-
-1. Paste the following script in the Script window:
-
-   ```groovy
-   import com.liferay.portal.kernel.service.UserLocalServiceUtil;
-   import com.liferay.portal.kernel.util.LocaleUtil;
-   import com.liferay.portal.kernel.service.ServiceContext;
-   import com.liferay.portal.kernel.service.ServiceContextThreadLocal;
-
-   ServiceContext serviceContext = ServiceContextThreadLocal.getServiceContext();
-   long companyId = serviceContext.getCompanyId();
-
-   UserLocalServiceUtil.addUser(0L, companyId, false, "test", "test", false, "John", "john@liferay.com", LocaleUtil.getDefault(), "John", "", "Liferay", 0, 0, true, 1, 1, 1975, "Manager", new long[0], new long[0], new long[0], new long[0], false, serviceContext);
-
-   UserLocalServiceUtil.addUser(0L, companyId, false, "test", "test", false, "Emily", "emily@liferay.com", LocaleUtil.getDefault(), "Emily", "", "Liferay", 0, 0, false, 3, 1, 1985, "Sales Agent", new long[0], new long[0], new long[0], new long[0], false, serviceContext);
-
-   UserLocalServiceUtil.addUser(0L, companyId, false, "test", "test", false, "David", "david@liferay.com", LocaleUtil.getDefault(), "David", "", "Liferay", 0, 0, true, 5, 1, 1995, "Engineer", new long[0], new long[0], new long[0], new long[0], false, serviceContext);
-    ```
-
-   Click _Execute_. Three new users have been added to your instance.
-
-1. Open the Global Menu (![Global Menu](../images/icon-applications-menu.png)) and navigate to _Control Panel_ &rarr; _Instance Settings_. Under _Platform_, click _User Authentication_. Uncheck `Require strangers to verify their email address?
-` and click _Save_. Note, this setting makes it so we can log into these sample user accounts without the need for email verification during this demo.
-
-1. Open the Global Menu (![Global Menu](../images/icon-applications-menu.png)) and navigate to _Control Panel_ &rarr; _Users and Organizations_.
-
-1. Click on _John Liferay_. Click on _Memberships_. Click _Select_ next to Sites. Click _Minimum Site_. Scroll down to the bottom and click _Save_. The user is now a member of the Minimum site.
-
-1. Add the other two users as members of the Minimum site by following the same steps. 
+```{note}
+If you are new to Liferay DXP, there isn't much content on your Liferay instance for Analytics Cloud to start tracking. If you're interested in jump-starting a demo site, consider using Liferay Commerce's [Minium Accelerator Site](https://learn.liferay.com/commerce/latest/en/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html) to get some sample content that you can use to explore Analytics Cloud. 
+```
 
 ## Syncing Sites
 

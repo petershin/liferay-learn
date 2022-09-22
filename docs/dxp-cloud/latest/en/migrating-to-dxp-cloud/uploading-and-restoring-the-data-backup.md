@@ -1,6 +1,6 @@
 # Stage 3: Uploading and Restoring the Data Backup
 
-With your Liferay DXP database and document library in a compatible format, the next stage is to upload them together as a single backup to DXP Cloud and restore them to your chosen environment.
+With your Liferay DXP database and document library in a compatible format, the next stage is to upload them together as a single backup to Liferay Cloud and restore them to your chosen environment.
 
 ## Upload the Backup
 
@@ -12,7 +12,7 @@ Uploading a backup may take minutes or hours to complete, depending on the file 
 
 Upload the backup using the Backups page.
 
-1. In the DXP Cloud console, navigate to your chosen environment, and click *Backups* from the menu on the left.
+1. In the Liferay Cloud console, navigate to your chosen environment, and click *Backups* from the menu on the left.
 
     ![Navigate to the Backups screen to upload your data.](./uploading-and-restoring-the-data-backup/images/01.png)
 
@@ -23,7 +23,7 @@ Upload the backup using the Backups page.
     ![Click the buttons to upload the database and document library as a new backup.](./uploading-and-restoring-the-data-backup/images/02.png)
 
     ```{note}
-    The database dump and document library uploads should not exceed **2 TB** total. To upload larger files, [contact DXP Cloud Support](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview).
+    The database dump and document library uploads should not exceed **2 TB** total. To upload larger files, [contact Liferay Cloud Support](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview).
     ```
 
 1. Click *Initiate Upload* and wait for the upload to complete.
@@ -55,9 +55,9 @@ Restore the backup created from your upload on the Backups page.
 When the backup restoration is complete, the target environment has the same data from the database and document library you uploaded.
 
 ```{tip}
-You can check the status of your Liferay DXP instance on DXP Cloud by clicking *Visit Site* on the top bar of the target environment.
+You can check the status of your Liferay DXP instance on Liferay Cloud by clicking *Visit Site* on the top bar of the target environment.
 ```
 
 ## Next Steps
 
-Now you have a Liferay instance up and running on DXP Cloud with your data. Next, you will [migrate your configurations and customizations](./migrating-dxp-configurations-and-customizations.md) for Liferay DXP to your Cloud environment.
+Now you have a Liferay instance up and running on Liferay Cloud with your data. Next, you will [migrate your configurations and customizations](./migrating-dxp-configurations-and-customizations.md) for Liferay DXP to your Cloud environment.

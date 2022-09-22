@@ -1,6 +1,6 @@
 # Troubleshooting Services
 
-Services are the core of a DXP Cloud environment. This article covers troubleshooting techniques that can be used to investigate and address issues that may arise with DXP Cloud services.
+Services are the core of a Liferay Cloud environment. This article covers troubleshooting techniques that can be used to investigate and address issues that may arise with Liferay Cloud services.
 
 ## A Service is Continually Restarting 
 
@@ -108,4 +108,4 @@ See [Using and Configuring Probes](./self-healing.md#using-and-configuring-probe
 
 ### Contact Cloud Support
 
-If liveness or readiness probe failures are not causing the service restarts, or if these strategies have not helped to resolve them, then please contact [DXP Cloud Support](https://help.liferay.com/hc/en-us) for further assistance.
+If liveness or readiness probe failures are not causing the service restarts, or if these strategies have not helped to resolve them, then please contact [Liferay Cloud Support](https://help.liferay.com/hc/en-us) for further assistance.

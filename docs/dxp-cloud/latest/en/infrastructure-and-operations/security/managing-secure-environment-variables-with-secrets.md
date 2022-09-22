@@ -1,6 +1,6 @@
 # Managing Secure Environment Variables with Secrets
 
-Secrets allow you to securely store variables for any environment within DXP Cloud. Whereas any user with permission to view your DXP Cloud project can view your [environment variables](../../reference/defining-environment-variables.md), secrets are only viewable if their role has been given permission to view them.
+Secrets allow you to securely store variables for any environment within Liferay Cloud. Whereas any user with permission to view your Liferay Cloud project can view your [environment variables](../../reference/defining-environment-variables.md), secrets are only viewable if their role has been given permission to view them.
 
 ## What is a Secret?
 
@@ -12,11 +12,11 @@ Users with permission to view secrets can see them on the _Environment Variables
 
 By default, secrets can only be viewed by Users with the _Admin_ role. However, secrets can be configured to be viewable by Users with other roles, as well.
 
-Secrets are stored with encryption, and have additional security in the backend of DXP Cloud than regular environment variables. Viewing a secret through the UI decrypts the stored value before it is shown.
+Secrets are stored with encryption, and have additional security in the backend of Liferay Cloud than regular environment variables. Viewing a secret through the UI decrypts the stored value before it is shown.
 
 ## Adding a New Secret
 
-New secrets are added through the _Settings_ screen in DXP Cloud. Only Users with the _Admin_ role can add new secrets.
+New secrets are added through the _Settings_ screen in Liferay Cloud. Only Users with the _Admin_ role can add new secrets.
 
 ```{warning}
 Adding a new secret to a service causes the service to restart, so that the value can take effect.
@@ -24,7 +24,7 @@ Adding a new secret to a service causes the service to restart, so that the valu
 
 Follow these steps to add a new secret:
 
-1. Log into the DXP Cloud console.
+1. Log into the Liferay Cloud console.
 
 1. Navigate to the _Settings_ screen for any environment.
 

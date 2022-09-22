@@ -1,6 +1,6 @@
 # Updating Your DXP Instance to a New Minor Version
 
-Regularly updating your Liferay DXP installation is an important part of maintaining your DXP Cloud environment. Use the available tags on the [Liferay DXP Docker Hub page](https://hub.docker.com/r/liferay/dxp/tags) to update and deploy your service.
+Regularly updating your Liferay DXP installation is an important part of maintaining your Liferay Cloud environment. Use the available tags on the [Liferay DXP Docker Hub page](https://hub.docker.com/r/liferay/dxp/tags) to update and deploy your service.
 
 ```{note}
 Upgrading to a new major version (such as Liferay DXP 7.3) requires a different procedure from a smaller version update. See [Upgrading Your Liferay DXP Instance](./upgrading-your-liferay-dxp-instance.md) for more information.
@@ -14,7 +14,7 @@ If you want to install a [hotfix](../../../../dxp/latest/en/installation-and-upg
 
 First, if you are updating a 7.3+ version of DXP, then set an environment variable to allow modules to upgrade as needed:
 
-1. In the DXP Cloud console, click on the Liferay service in the desired environment.
+1. In the Liferay Cloud console, click on the Liferay service in the desired environment.
 
 1. Click the *Environment Variables* tab.
 
@@ -114,5 +114,5 @@ The updated `liferay` service starts back up with the desired number of nodes af
 
 * [Deploying to the Liferay Service](./deploying-to-the-liferay-service.md)
 * [Installing Hotfixes](./deploying-to-the-liferay-service.md#deploying-hotfixes)
-* [Setting Up Clustering in DXP Cloud](./setting-up-clustering-in-dxp-cloud.md)
+* [Setting Up Clustering in Liferay Cloud](./setting-up-clustering-in-dxp-cloud.md)
 * [Upgrading Your Liferay DXP Instance](./upgrading-your-liferay-dxp-instance.md)

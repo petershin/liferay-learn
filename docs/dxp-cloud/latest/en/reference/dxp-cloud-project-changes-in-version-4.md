@@ -1,6 +1,6 @@
 # DXP Cloud Project Changes in Version 4
 
-Several changes are made between version 3.x and 4.x of the DXP Cloud stack, including where Docker image versions are defined for your services, the structure of the repository, and how `Jenkinsfiles` are used.
+Several changes are made between version 3.x and 4.x of the Liferay Cloud stack, including where Docker image versions are defined for your services, the structure of the repository, and how `Jenkinsfiles` are used.
 
 **Contents:**
 
@@ -15,9 +15,9 @@ Several changes are made between version 3.x and 4.x of the DXP Cloud stack, inc
 
 ## Changes to Docker Image Definitions
 
-Docker images for your services in version 4.x of DXP Cloud are no longer defined in the project's `gradle.properties` file. They are now defined in the `LCP.json` file for each service.
+Docker images for your services in version 4.x of Liferay Cloud are no longer defined in the project's `gradle.properties` file. They are now defined in the `LCP.json` file for each service.
 
-Upgrading to DXP Cloud Stack version 4 changes every service's Docker image version from `3.x.x` to `4.x.x`. These image changes are in addition to organizational changes to how DXP Cloud projects are structured and function.
+Upgrading to Liferay Cloud Stack version 4 changes every service's Docker image version from `3.x.x` to `4.x.x`. These image changes are in addition to organizational changes to how Liferay Cloud projects are structured and function.
 
 ## Project Organization Changes
 
@@ -29,7 +29,7 @@ Several other files previously at the root of the repository (including `gradle.
 
 The `liferay` service folder now follows the functional structure of a [Liferay Workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html).
 
-All configurations within the `liferay` service now belong in an environment-specific `configs` directory that corresponds to a project's DXP Cloud environments. Additionally, the `license` folder has been removed; add your licenses into the `deploy` folder instead.
+All configurations within the `liferay` service now belong in an environment-specific `configs` directory that corresponds to a project's Liferay Cloud environments. Additionally, the `license` folder has been removed; add your licenses into the `deploy` folder instead.
 
 The following table summarizes the new organization of your `liferay` service configurations:
 
@@ -43,7 +43,7 @@ The following table summarizes the new organization of your `liferay` service co
 | Licenses | lcp/liferay/license/{ENV}/ | lcp/configs/{ENV}/deploy/ |
 
 ```{note}
-Files within the `configs/{ENV}/` directory are copied as overrides into the `LIFERAY_HOME` directory in the Liferay container in DXP Cloud.
+Files within the `configs/{ENV}/` directory are copied as overrides into the `LIFERAY_HOME` directory in the Liferay container in Liferay Cloud.
 ```
 
 Instead of directly committing hotfixes to the repository, a new CI service environment variable is now available to automatically add when deploying the Liferay service. See [Installing Hotfixes with an Environment Variable](#installing-hotfixes-with-an-environment-variable) for more information.
@@ -63,7 +63,7 @@ All configurations within the `search` service now belong in an environment-spec
 | Elasticsearch license (.json) files | lcp/search/license/{ENV}/ | search/configs/{ENV}/license/ |
 
 ```{note}
-Files in `search/configs/{ENV}/` are copied as overrides into `usr/shared/elasticsearch/` in the Search container in DXP Cloud. For example, configurations in `search/configs/{ENV}/config/`, such as `elasticsearch.yml`, are copied into `usr/shared/elasticsearch/config/` and override existing defaults.
+Files in `search/configs/{ENV}/` are copied as overrides into `usr/shared/elasticsearch/` in the Search container in Liferay Cloud. For example, configurations in `search/configs/{ENV}/config/`, such as `elasticsearch.yml`, are copied into `usr/shared/elasticsearch/config/` and override existing defaults.
 ```
 
 ### Elasticsearch Plugins
@@ -84,7 +84,7 @@ Multiple `Jenkinsfile` extension points are now available in the `ci` folder to 
 
 ### Installing Hotfixes with an Environment Variable
 
-Instead of directly committing large hotfixes to your Git repository, a new environment variable has been added that allows you to install a hotfix through the CI build process. Add the hotfix's name (with the `.zip` extension omitted) to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the DXP Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply them during the build process.
+Instead of directly committing large hotfixes to your Git repository, a new environment variable has been added that allows you to install a hotfix through the CI build process. Add the hotfix's name (with the `.zip` extension omitted) to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply them during the build process.
 
 The following example defines hotfixes using the `LCP.json` file:
 
@@ -108,12 +108,12 @@ See the following table for the new organization of your `webserver` service con
 | Static content | lcp/webserver/deploy/{ENV}/ | webserver/configs/{ENV}/public/ |
 
 ```{note}
-Files in `/webserver/configs/{ENV}/` are copied as overrides into `/etc/nginx/` in the webserver container in DXP Cloud. Files in `/webserver/configs/{ENV}/public/` are copied as overrides into `var/www/html/`.
+Files in `/webserver/configs/{ENV}/` are copied as overrides into `/etc/nginx/` in the webserver container in Liferay Cloud. Files in `/webserver/configs/{ENV}/public/` are copied as overrides into `var/www/html/`.
 ```
 
 ### Webserver Configuration Overrides
 
-You can customize the root location for the `webserver` service by adding a `liferay.conf` file into `webserver/configs/{ENV}/conf.d/`. This will override the default `liferay.conf` available in the `webserver` service image's container. Access the shell in the DXP Cloud Console to see the default `liferay.conf` file as a reference when customizing the root location.
+You can customize the root location for the `webserver` service by adding a `liferay.conf` file into `webserver/configs/{ENV}/conf.d/`. This will override the default `liferay.conf` available in the `webserver` service image's container. Access the shell in the Liferay Cloud Console to see the default `liferay.conf` file as a reference when customizing the root location.
 
 ```{warning}
 Do not customize the root location using a file name other than `liferay.conf`, so that this file specifically overrides the default `liferay.conf`. Otherwise, both files may exist together in the container and two root locations may be found, causing an error.
@@ -125,7 +125,7 @@ You can also override the default NGINX configuration by adding an `nginx.conf` 
 
 ### Configuring the Public Directory
 
-If you wish to add custom static content, then place these files in `webserver/configs/{ENV}/public/`. DXP Cloud will look for this public folder and copy all files inside of it to `/var/www/html`.
+If you wish to add custom static content, then place these files in `webserver/configs/{ENV}/public/`. Liferay Cloud will look for this public folder and copy all files inside of it to `/var/www/html`.
 
 You will need to add additional locations within your `conf.d` folder to configure the public folder. For example, to add a `.html` file (such as `index.html`) to a new `webserver/configs/{ENV}/public/static` folder, add a unique `.conf` configuration file to `webserver/configs/{ENV}/conf.d` with the following content:
 
@@ -149,8 +149,8 @@ All `.sql` scripts deployed to the `backup` service are executed automatically a
 
 The new stack does not contain a docker-compose file to spin up a local environment. Because of this, a DXP bundle is needed for local testing.
 
-You can test changes in a local environment, and then migrate them to DXP Cloud. See [Migrating to DXP Cloud](../migrating-to-dxp-cloud.md) for more help.
+You can test changes in a local environment, and then migrate them to Liferay Cloud. See [Migrating to Liferay Cloud](../migrating-to-dxp-cloud.md) for more help.
 
 ## Additional Information
 
-* [Upgrading Your DXP Cloud Stack](./upgrading-your-dxp-cloud-stack.md)
+* [Upgrading Your Liferay Cloud Stack](./upgrading-your-dxp-cloud-stack.md)

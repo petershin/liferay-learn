@@ -1,6 +1,6 @@
 # Creating Thread and Heap Dumps
 
-When you are experiencing issues with your `liferay` service's performance, you may need to take thread or heap dumps to help you or DXP Cloud Support optimize your instance or troubleshoot problems.
+When you are experiencing issues with your `liferay` service's performance, you may need to take thread or heap dumps to help you or Liferay Cloud Support optimize your instance or troubleshoot problems.
 
 Follow these steps to generate thread or heap dumps for troubleshooting:
 
@@ -12,7 +12,7 @@ Follow these steps to generate thread or heap dumps for troubleshooting:
 
 1. [Delete the dumps when you are done](#delete-the-dumps-when-you-are-done)
 
-The next section provides example scripts that you can run to generate thread or heap dumps for a DXP Cloud environment.
+The next section provides example scripts that you can run to generate thread or heap dumps for a Liferay Cloud environment.
 
 ## Choose a Script to Generate the Dumps
 
@@ -20,9 +20,9 @@ Whether you are generating thread or heap dumps, you can run a script through th
 
 ### Thread Dump Creation Script
 
-Thread dumps help you to understand what processes are taking place in your DXP Cloud environment. Having multiple sets of thread dumps gives a more useful view of whether problematic patterns may exist in your Liferay instance.
+Thread dumps help you to understand what processes are taking place in your Liferay Cloud environment. Having multiple sets of thread dumps gives a more useful view of whether problematic patterns may exist in your Liferay instance.
 
-You can use this script to generate thread dumps for your Liferay instance in any DXP Cloud environment:
+You can use this script to generate thread dumps for your Liferay instance in any Liferay Cloud environment:
 
 ```
 #!/bin/bash
@@ -36,7 +36,7 @@ take_thread_dump() {
 
     local pid=$(jps | grep -v Jps | awk '{print $1}')
 
-    echo "[DXP Cloud] jstack ${pid} > ${TARGET_THREAD_DUMP_FOLDER}/${1}/threaddump${2}.txt"
+    echo "[Liferay Cloud] jstack ${pid} > ${TARGET_THREAD_DUMP_FOLDER}/${1}/threaddump${2}.txt"
 
     jstack ${pid} > ${TARGET_THREAD_DUMP_FOLDER}/${1}/threaddump${2}.txt
 }
@@ -44,7 +44,7 @@ take_thread_dump() {
 take_thread_group() {
     local time=$(date +'%H%M%S')
 
-    echo "[DXP Cloud] Taking thread dumps with timestamp ${time}"
+    echo "[Liferay Cloud] Taking thread dumps with timestamp ${time}"
 
     for num in 1 2 3 4 5 6
     do
@@ -60,10 +60,10 @@ main() {
         sleep 60
     done
 
-    echo "[DXP Cloud] Thread dumps generated"
+    echo "[Liferay Cloud] Thread dumps generated"
 }
 
-echo "[DXP Cloud] Take thread dumps"
+echo "[Liferay Cloud] Take thread dumps"
 main
 ```
 
@@ -81,7 +81,7 @@ You can make multiple edits to alter this behavior:
 
 Heap dumps help you to understand what data is consuming RAM in your Liferay instance. If you need to troubleshoot your instance's memory allocation, then you may need to take multiple heap dumps at different, key times to determine if there is an issue.
 
-You can use this script to generate a heap dump for your Liferay instance in any DXP Cloud environment:
+You can use this script to generate a heap dump for your Liferay instance in any Liferay Cloud environment:
 
 ```
 #!/bin/bash
@@ -93,11 +93,11 @@ mkdir -p "${TARGET_HEAP_DUMP_FOLDER}"
 take_heap_dump() {
     mkdir -p "${TARGET_HEAP_DUMP_FOLDER}/${1}"
 
-    echo "[DXP Cloud] Taking heap dump with timestamp ${1}"
+    echo "[Liferay Cloud] Taking heap dump with timestamp ${1}"
 
     local pid=$(jps | grep -v Jps | awk '{print $1}')
 
-    echo "[DXP Cloud] jmap -dump:format=b,file=heapdump.txt ${pid}"
+    echo "[Liferay Cloud] jmap -dump:format=b,file=heapdump.txt ${pid}"
 
     jmap -dump:format=b,file=heapdump.txt ${pid}
 
@@ -109,7 +109,7 @@ main() {
 
     take_heap_dump $time
 
-    echo "[DXP Cloud] Heap dump generated"
+    echo "[Liferay Cloud] Heap dump generated"
 }
 
 main
@@ -121,7 +121,7 @@ You can change the name of the directory that thread dumps are saved to by chang
 
 ## Run the Script from the Liferay Service Shell
 
-Once you have a script to use, you must deploy it and run it from the `liferay` service's shell in the DXP Cloud console.
+Once you have a script to use, you must deploy it and run it from the `liferay` service's shell in the Liferay Cloud console.
 
 ### Save the Script to Your Project Repository
 
@@ -147,11 +147,11 @@ First, save your chosen script into a directory that you can deploy to your Life
 
 ### Deploy and Run the Script
 
-Once you have the script saved into a subfolder in `liferay/configs/{ENV}/`, you must deploy the script and run it from the shell on the DXP Cloud console.
+Once you have the script saved into a subfolder in `liferay/configs/{ENV}/`, you must deploy the script and run it from the shell on the Liferay Cloud console.
 
-1. Follow the steps outlined in [Overview of the DXP Cloud Deployment Workflow](../using-the-liferay-dxp-service/overview-of-the-dxp-cloud-deployment-workflow.md) to deploy the script to the appropriate environment.
+1. Follow the steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../using-the-liferay-dxp-service/overview-of-the-dxp-cloud-deployment-workflow.md) to deploy the script to the appropriate environment.
 
-1. In the DXP Cloud console, navigate to the `liferay` service page in the appropriate environment.
+1. In the Liferay Cloud console, navigate to the `liferay` service page in the appropriate environment.
 
 1. Click the *Shell* tab.
 
@@ -180,7 +180,7 @@ Once you have the script saved into a subfolder in `liferay/configs/{ENV}/`, you
 1. Wait until the script completes to ensure that you have the appropriate number of thread dumps. A confirmation message appears when the script has finished creating thread or heap dumps.
 
     ```
-    [DXP Cloud] Thread dumps generated
+    [Liferay Cloud] Thread dumps generated
     ```
 
     ```{note}
@@ -207,9 +207,9 @@ A download begins containing a backup of the `data` volume. The dumps are contai
 
 ## Delete the Dumps When You are Done
 
-The thread and/or heap dumps that you generate may take up significant space in your Liferay service's `data` volume, especially if you run the scripts multiple times. Remember to delete the dumps from your environment when you do not need them anymore to avoid wasting memory in your `data` volume. Use the Liferay service shell in the DXP Cloud console to delete the dumps.
+The thread and/or heap dumps that you generate may take up significant space in your Liferay service's `data` volume, especially if you run the scripts multiple times. Remember to delete the dumps from your environment when you do not need them anymore to avoid wasting memory in your `data` volume. Use the Liferay service shell in the Liferay Cloud console to delete the dumps.
 
-For example, run these commands from the DXP Cloud console to delete one set of thread dumps:
+For example, run these commands from the Liferay Cloud console to delete one set of thread dumps:
 
 ```bash
 cd data/thread_dumps/

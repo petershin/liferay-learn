@@ -11,7 +11,7 @@ To update to new minor versions or service packs, instead see [Updating to a New
 ```
 
 ```{important}
-Upgrading an environment in DXP Cloud requires restoring an upgraded database, and therefore involves downtime for the Liferay service to restart. Plan ahead for this downtime for production environments.
+Upgrading an environment in Liferay Cloud requires restoring an upgraded database, and therefore involves downtime for the Liferay service to restart. Plan ahead for this downtime for production environments.
 ```
 
 Review the following steps to perform a database upgrade:
@@ -39,7 +39,7 @@ Download a fresh bundle for the upgrade instead of reusing an old one. Data from
 
 Perform the following steps to download a backup (consisting of both the database and data volume) of the DXP instance currently running in your `prd` environment:
 
-1. Log in to the [DXP Cloud console](https://console.liferay.cloud/login).
+1. Log in to the [Liferay Cloud console](https://console.liferay.cloud/login).
 
 1. Navigate to your production environment, then select _Backups_ from the menu.
 
@@ -157,7 +157,7 @@ Test the bundle locally to ensure the upgrade completed smoothly. You can test t
 ./catalina.sh run
 ```
 
-Once the upgrade is complete and verified, your database and data volume are ready to be uploaded to DXP Cloud.
+Once the upgrade is complete and verified, your database and data volume are ready to be uploaded to Liferay Cloud.
 
 ## Compress the Document Library and Database
 
@@ -197,7 +197,7 @@ The database and Liferay data volume are now ready for upload to the `backup` se
 
 Upload the document library and database archives to the `backup` service via the console:
 
-1. If you are not already logged in, log into the [DXP Cloud console](https://console.liferay.cloud/login).
+1. If you are not already logged in, log into the [Liferay Cloud console](https://console.liferay.cloud/login).
 
 1. Navigate to the *Backups* page for the appropriate environment.
 
@@ -233,7 +233,7 @@ When both of these image versions are updated, [deploy the changes](./deploying-
 
 Follow these steps to restore a backup to your chosen environment:
 
-1. Log into the DXP Cloud console, if you are not already logged in.
+1. Log into the Liferay Cloud console, if you are not already logged in.
 
 1. Navigate to the environment [you uploaded your backup to](#upload-the-document-library-and-database), then click _Backups_ from the side menu.
 

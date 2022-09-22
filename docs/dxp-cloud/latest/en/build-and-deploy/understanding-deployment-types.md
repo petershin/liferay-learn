@@ -1,6 +1,6 @@
 # Understanding Deployment Types
 
-The deployment type of a service determines many different facets of how the service functions, including performance, memory usage, and access to files or volumes. DXP Cloud provides two deployment types for its services: `Deployment` and `StatefulSet`.
+The deployment type of a service determines many different facets of how the service functions, including performance, memory usage, and access to files or volumes. Liferay Cloud provides two deployment types for its services: `Deployment` and `StatefulSet`.
 
 ## Differences Between Deployment Types
 
@@ -35,9 +35,9 @@ The volumes stored in NFS are also available to all `Deployment` type services. 
 
 `StatefulSet` type services instead have a dedicated SSD for all volume storage. The dedicated SSD available to `StatefulSet` type services is not accessible to other services. Volumes stored on the SSD also persist on re-deployment and after service deletion. In clustered `StatefulSet` services, each instance has a different volume.
 
-## How DXP Cloud's Services are Configured
+## How Liferay Cloud's Services are Configured
 
-The following details how the services in DXP Cloud are pre-configured out-of-the-box:
+The following details how the services in Liferay Cloud are pre-configured out-of-the-box:
 
 * The _Liferay_ and _Backup_ services use the **Deployment** type, so that they can share access to the document library, which is stored in  NFS.
 
@@ -49,7 +49,7 @@ The following details how the services in DXP Cloud are pre-configured out-of-th
 
 ## Configuring Deployment Types
 
-By default, the services in DXP Cloud are pre-configured in order to fit a majority of use cases. However, the deployment type for each service is configurable via the `kind` variable in the service's `LCP.json`:
+By default, the services in Liferay Cloud are pre-configured in order to fit a majority of use cases. However, the deployment type for each service is configurable via the `kind` variable in the service's `LCP.json`:
 
 ```json
 {
@@ -59,7 +59,7 @@ By default, the services in DXP Cloud are pre-configured in order to fit a major
 ```
 
 ```{note}
-The deployment type of the services in DXP Cloud must only be changed with caution, as it may result in data loss or impacted performance.
+The deployment type of the services in Liferay Cloud must only be changed with caution, as it may result in data loss or impacted performance.
 ```
 
 ## Additional Information

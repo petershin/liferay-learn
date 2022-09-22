@@ -1,10 +1,10 @@
 # Configuring Your GitHub Repository
 
-Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private DXP Cloud development repository and is typically removed after 10 business days. Users must:
+Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must:
 
 1. Transfer the provisioned repository to their own private GitHub repository.
 
-1. Integrate their private repository with the Jenkins (CI) service in DXP Cloud using a Webhook.
+1. Integrate their private repository with the Jenkins (CI) service in Liferay Cloud using a Webhook.
 
 ```{note}
 If you are using an organization account, you must have administrative privileges to transfer the repository to the organization. The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
@@ -24,13 +24,13 @@ If you need help creating, cloning, and pushing GitHub repositories, see [GitHub
 
 ## Integrating with the Jenkins Service
 
-Now you must integrate your new repository with the Jenkins service in DXP Cloud. Set up a webhook in GitHub that pushes to the Jenkins service:
+Now you must integrate your new repository with the Jenkins service in Liferay Cloud. Set up a webhook in GitHub that pushes to the Jenkins service:
 
 1. In GitHub, go to your repository's *Settings* page and select *Webhooks*.
 
 1. Click *Add Webhook*. This opens the *Add webhook* form.
 
-1. In the *Payload URL* field, add the domain of your DXP Cloud `infra` environment's Jenkins service. For example, the URL of the `infra` environment's `ci` service for a project named `acme` is `https://ci-acme-infra.lfr.cloud/github-webhook/`. Note that the relative path `github-webhook` is required to integrate with the Jenkins GitHub plugin.
+1. In the *Payload URL* field, add the domain of your Liferay Cloud `infra` environment's Jenkins service. For example, the URL of the `infra` environment's `ci` service for a project named `acme` is `https://ci-acme-infra.lfr.cloud/github-webhook/`. Note that the relative path `github-webhook` is required to integrate with the Jenkins GitHub plugin.
 
 1. In the *Content type* selector menu, select *application/json*.
 
@@ -54,7 +54,7 @@ Now you must integrate your new repository with the Jenkins service in DXP Cloud
 
 Set these environment variables in the Jenkins service to point to your new repository:
 
-1. Log in to the DXP Cloud Console and navigate to your Jenkins service in the `infra` environment.
+1. Log in to the Liferay Cloud Console and navigate to your Jenkins service in the `infra` environment.
 
 1. Navigate to the *Environment Variables* tab.
 
@@ -69,7 +69,7 @@ Set these environment variables in the Jenkins service to point to your new repo
 
 For the `LCP_CI_SCM_TOKEN` value, use the personal access token created for your GitHub organization. For instructions on creating and accessing this token, see [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line).
 
-The personal access token created must have all of the scope permissions under *repo* and *admin:repo_hook* checked. The *admin:repo_hook* scope permissions specifically can be removed later if you [disable automatic web hook management](#personal-access-token-usage) after your repository is successfully integrated with DXP Cloud.
+The personal access token created must have all of the scope permissions under *repo* and *admin:repo_hook* checked. The *admin:repo_hook* scope permissions specifically can be removed later if you [disable automatic web hook management](#personal-access-token-usage) after your repository is successfully integrated with Liferay Cloud.
 
 ![Check the correct permissions to ensure that the PAT can be used successfully.](./configuring-your-github-repository/images/05.png)
 
@@ -85,7 +85,7 @@ Jenkins versions prior to `2.222.1-3.2.0` use the environment variables `GITHUB_
 
 ### Personal Access Token Usage
 
-The personal access token referenced by the `LCP_CI_SCM_TOKEN` value is needed for DXP Cloud to integrate with your repository.
+The personal access token referenced by the `LCP_CI_SCM_TOKEN` value is needed for Liferay Cloud to integrate with your repository.
 
 ```{warning}
 If the personal access token belongs to a personal user account and that user is removed from the organization, all builds will fail to complete. Instead, use an account specifically belonging to the organization. See [GitHub's official documentation](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access) for more information.
@@ -93,7 +93,7 @@ If the personal access token belongs to a personal user account and that user is
 
 By default, the GitHub organization's [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) must also have the `admin:repo_hook` permissions in order for the CI service to successfully integrate using the default web hook.
 
-However, it is recommended to set the `LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md) to `false` in your [CI service](../platform-services/continuous-integration.md). This disables automatic management of the web hook (which is no longer needed after you have finished setting up integration with your repository), and allows you to remove the (admin-level) `admin:repo_hook` permissions from the personal access token DXP Cloud uses:
+However, it is recommended to set the `LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md) to `false` in your [CI service](../platform-services/continuous-integration.md). This disables automatic management of the web hook (which is no longer needed after you have finished setting up integration with your repository), and allows you to remove the (admin-level) `admin:repo_hook` permissions from the personal access token Liferay Cloud uses:
 
 ![You can remove the admin:repo_hook permissions from the personal access token if you disable automatic web hook management.](./configuring-your-github-repository/images/06.png)
 
@@ -101,7 +101,7 @@ Removing these permissions from the web hook improves security by minimizing acc
 
 ## Verifying Builds
 
-Pushed branches and pull requests trigger builds that you can see or deploy from the _Builds_ tab in the DXP Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
+Pushed branches and pull requests trigger builds that you can see or deploy from the _Builds_ tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
 
 ### Verifying Builds from Pushed Branches
 
@@ -119,7 +119,7 @@ Verify that new Git pushes trigger Jenkins builds:
     git push origin branch-name
     ```
 
-1. Navigate to the _Builds_ page in the DXP Cloud Console.
+1. Navigate to the _Builds_ page in the Liferay Cloud Console.
 
 1. Verify that the build displays for the pushed branch on the _Builds_ page.
 
@@ -131,7 +131,7 @@ Verify that new pull requests trigger Jenkins builds:
 
 1. Verify that a new build is created for the pull request.
 
-1. Navigate to the _Builds_ page in the DXP Cloud Console.
+1. Navigate to the _Builds_ page in the Liferay Cloud Console.
 
 1. Click the links for the branch and commit in the appropriate build.
 

@@ -12,9 +12,7 @@ For every connection configured in this private network, you must specify these 
 
 `protocol`: The type of connection to create (TCP and UDP are supported). 
 
-`external`: Whether your connection is available to external connections. The 
-default value `false` restricts the connection to internal DXP Cloud 
-connections.
+`external`: Whether your connection is available to external connections. The default value `false` restricts the connection to internal Liferay Cloud connections.
 
 ```{tip}
 If you expose a connection to external connections, then you may need to troubleshoot the connection using your service's shell. See [Shell Access](../../troubleshooting/shell-access.md)_ for more information.
@@ -48,7 +46,7 @@ Here's an example configuration:
 | `port` | 3400 | The external port of the service to connect to. |
 | `targetPort` | 7000 | The internal port of the service to expose |
 | `protocol` | TCP | The type of connection to create (TCP and UDP are supported) |
-| `external` | true | Whether your connection is available to external connections. The default value `false` restricts the connection to internal DXP Cloud connections |
+| `external` | true | Whether your connection is available to external connections. The default value `false` restricts the connection to internal Liferay Cloud connections |
 
 ## Additional Information
 

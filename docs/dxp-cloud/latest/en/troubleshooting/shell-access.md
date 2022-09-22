@@ -1,11 +1,6 @@
 # Shell Access
 
-The command-line tools in DXP Cloud contribute to the developer's workflow by 
-delivering speed, control, traceability, scripting, and automation capabilities. 
-Shell access makes it simpler to see what's going on inside your application. 
-For example, you can use the shell to look for side effects not easily spotted 
-in the logs. You can also call functions for data population or report 
-generation that are meant to run only once. 
+The command-line tools in Liferay Cloud contribute to the developer's workflow by delivering speed, control, traceability, scripting, and automation capabilities. Shell access makes it simpler to see what's going on inside your application. For example, you can use the shell to look for side effects not easily spotted in the logs. You can also call functions for data population or report generation that are meant to run only once. 
 
 ```{note}
 The backup and database services do not provide shell access. 
@@ -13,13 +8,13 @@ The backup and database services do not provide shell access.
 
 ## Accessing the Shell via the Web Console
 
-Follow these steps to access the shell via the DXP Cloud web console: 
+Follow these steps to access the shell via the Liferay Cloud web console: 
 
 1. Go to your environment page. 
 1. Click *Services* in the menu on the left. 
 1. Select the service you want to access, then click the *Shell* tab. 
 
-![Figure 1: Access the shell via DXP Cloud's web console.](./shell-access/images/01.png)
+![Figure 1: Access the shell via Liferay Cloud's web console.](./shell-access/images/01.png)
 
 ## Accessing the Shell via a Terminal
 
@@ -41,9 +36,4 @@ lcp shell -p projectID -s serviceID
 
 ## Shell Limitations
 
-The shell is a great tool to troubleshoot or perform one-time actions on your 
-service, but it's not intended for permanent changes. When you deploy or restart 
-your service, all files not in a persistent volume are replaced by the new 
-build. For the shell, this means every command you run on your service is 
-temporary and will reset when you redeploy or restart your service, unless you 
-make the changes within a volume. 
+The shell is a great tool to troubleshoot or perform one-time actions on your service, but it's not intended for permanent changes. When you deploy or restart your service, all files not in a persistent volume are replaced by the new build. For the shell, this means every command you run on your service is temporary and will reset when you redeploy or restart your service, unless you make the changes within a volume. 

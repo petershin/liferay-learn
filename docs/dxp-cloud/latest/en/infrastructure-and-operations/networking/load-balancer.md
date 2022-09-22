@@ -23,7 +23,7 @@ Having a dedicated load balancer provides a myriad of enhanced features, such as
 
 ## CDN
 
-Liferay's Content Delivery Network (CDN) is a built-in feature provided with DXP Cloud. This CDN caches your static content globally, greatly enhancing your delivery speed. By default, it's enabled in all environments except `dev` environments. You can enable or disable the CDN for a service (in its `LCP.json` file) by setting the value of `cdn` within the `loadbalancer` object:
+Liferay's Content Delivery Network (CDN) is a built-in feature provided with Liferay Cloud. This CDN caches your static content globally, greatly enhancing your delivery speed. By default, it's enabled in all environments except `dev` environments. You can enable or disable the CDN for a service (in its `LCP.json` file) by setting the value of `cdn` within the `loadbalancer` object:
 
 ```json
 {
@@ -43,9 +43,9 @@ The CDN is not currently supported for the Dubai/Northern UAE region.
 
 The CDN improves performance by reducing latency for delivering static content to users. However, it is possible that some of this content is delivered to users before the cache is updated, when the content is no longer valid.
 
-If it is necessary to clear the CDN cache to force the content to be retrieved again, then you can manually clear it from the DXP Cloud console:
+If it is necessary to clear the CDN cache to force the content to be retrieved again, then you can manually clear it from the Liferay Cloud console:
 
-1. Log into the DXP Cloud console and navigate to the appropriate environment.
+1. Log into the Liferay Cloud console and navigate to the appropriate environment.
 
 1. Click *Network* from the menu on the left.
 
@@ -67,7 +67,7 @@ Clearing the CDN cache too frequently can negatively impact server performance, 
 
 ## Port
 
-You can set which internal port (`targetPort`) the load balancer's service endpoint routes to. DXP Cloud automatically configures the correct port for the services it provides.
+You can set which internal port (`targetPort`) the load balancer's service endpoint routes to. Liferay Cloud automatically configures the correct port for the services it provides.
 
 ```json
 "targetPort": 3000
@@ -81,15 +81,15 @@ When you specify the load balancer attribute for a service, it adds a service en
 
 - `<SERVICE-NAME>-<PROJECT-NAME>-<ENVIRONMENT-NAME>.lfr.cloud`
 
-Domains created by DXP Cloud's infrastructure at `.lfr.cloud` are covered by a wildcard certificate that is not displayed in the Network page's SSL certificates section.
+Domains created by Liferay Cloud's infrastructure at `.lfr.cloud` are covered by a wildcard certificate that is not displayed in the Network page's SSL certificates section.
 
-For all custom domains added through the console or `LCP.json`, Liferay DXP Cloud reaches out to [Let's Encrypt](https://letsencrypt.org/) for a certificate that renews automatically and covers all custom domains you create.
+For all custom domains added through the console or `LCP.json`, Liferay Cloud reaches out to [Let's Encrypt](https://letsencrypt.org/) for a certificate that renews automatically and covers all custom domains you create.
 
 ### Adding Custom SSL Certificates
 
-You can also add your own SSL certificate to cover any custom domains you create. You can either use the SSL certificate provided by Let's Encrypt (for any custom domains added through the DXP Cloud console), or you can define one or more custom certificates by referencing secret values in your `webserver` service's `LCP.json` file. If certificates exist in both places, then any custom certificates defined in the `LCP.json` file take precedent.
+You can also add your own SSL certificate to cover any custom domains you create. You can either use the SSL certificate provided by Let's Encrypt (for any custom domains added through the Liferay Cloud console), or you can define one or more custom certificates by referencing secret values in your `webserver` service's `LCP.json` file. If certificates exist in both places, then any custom certificates defined in the `LCP.json` file take precedent.
 
-When creating custom certificates, note that DXP Cloud only accepts keys and certificates that are in the proper PEM format with [Base64](https://tools.ietf.org/html/rfc4648#section-4) encoding, which must include encapsulation boundaries.
+When creating custom certificates, note that Liferay Cloud only accepts keys and certificates that are in the proper PEM format with [Base64](https://tools.ietf.org/html/rfc4648#section-4) encoding, which must include encapsulation boundaries.
 
 To add a single SSL certificate to the `LCP.json` file:
 
@@ -136,7 +136,7 @@ Use the `certs` property in your web server's `LCP.json` file to create a list o
 ```
 
 ```{note}
-Mapping multiple SSL certificates to your custom domains requires adding the `certs` property to the `webserver` service's `LCP.json` file. Adding custom domains through the DXP Cloud console instead maps all of the custom domains to a single certificate.
+Mapping multiple SSL certificates to your custom domains requires adding the `certs` property to the `webserver` service's `LCP.json` file. Adding custom domains through the Liferay Cloud console instead maps all of the custom domains to a single certificate.
 ```
 
 ### Generating an SSL Certificate
@@ -191,7 +191,7 @@ It is possible to include multiple values for the `cert` by concatenating certif
 
 The Network page shows any custom certificates, with a maximum of one per service. For more information, see [Custom Domains](./custom-domains.md).
 
-![DXP Cloud shows the status of SSL certificates that cover custom domains.](./load-balancer/images/06.png)
+![Liferay Cloud shows the status of SSL certificates that cover custom domains.](./load-balancer/images/06.png)
 
 ## Environment Variables Reference
 

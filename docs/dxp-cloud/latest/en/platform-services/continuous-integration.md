@@ -1,12 +1,12 @@
 # Continuous Integration
 
-DXP Cloud uses [Jenkins](https://jenkins.io/) to power its continuous integration infrastructure service. When you send a pull request or push a commit to one of your pre-configured GitHub branches, an automatic and configurable build will be triggered.
+Liferay Cloud uses [Jenkins](https://jenkins.io/) to power its continuous integration infrastructure service. When you send a pull request or push a commit to one of your pre-configured GitHub branches, an automatic and configurable build will be triggered.
 
 ```{note}
-DXP Cloud customers (using the `customer` login) have permissions to manage and review their builds, but do not have full administrative privileges.
+Liferay Cloud customers (using the `customer` login) have permissions to manage and review their builds, but do not have full administrative privileges.
 ```
 
-By default, this automated build will compile code and can be configured to execute tests. DXP Cloud will build your services and show their status on your environment's Builds page. If the tests fail, you can check the Jenkins dashboard and logs at `https://ci-companyname-infra.lfr.cloud`.
+By default, this automated build will compile code and can be configured to execute tests. Liferay Cloud will build your services and show their status on your environment's Builds page. If the tests fail, you can check the Jenkins dashboard and logs at `https://ci-companyname-infra.lfr.cloud`.
 
 ```{note}
 Continuous integration only works if you deploy from GitHub, GitLab, or Bitbucket, not the CLI.
@@ -52,7 +52,7 @@ Here is a basic overview of the steps in the CI build process:
 
 1. Load `ci/Jenkinsfile-before-cloud-build`, if it exists.
 
-1. Create the DXP Cloud build that you see in console.
+1. Create the Liferay Cloud build that you see in console.
 
 1. Load `ci/Jenkinsfile-before-cloud-deploy`, if it exists.
 
@@ -80,7 +80,7 @@ It is possible to use the additional steps in your pipeline to call external ser
 You can also create your own pipeline by defining your own `Jenkinsfile` in your repository's `ci/` folder. See the [Jenkins website](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/) for more information.
 
 ```{warning}
-External services or custom pipelines should be used with discretion and are outside the scope of DXP Cloud Support. Custom Jenkins plugins are not supported.
+External services or custom pipelines should be used with discretion and are outside the scope of Liferay Cloud Support. Custom Jenkins plugins are not supported.
 ```
 
 ```{note}
@@ -104,7 +104,7 @@ Then you could insert the following in `ci/Jenkinsfile-before-cloud-build`:
 ```
 def util = load("ci/util.groovy")
 
-util.sendSlackMessage("About to create DXP Cloud build...")
+util.sendSlackMessage("About to create Liferay Cloud build...")
 ```
 
 ```{note}
@@ -137,7 +137,7 @@ Name                                          | Default Value   | Description |
 
 ## Additional Information
 
-* [Logging into your DXP Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
+* [Logging into your Liferay Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
 * [Configuring Your GitLab Repository](../getting-started/configuring-your-gitlab-repository.md)
 * [Configuring Your Bitbucket Repository](../getting-started/configuring-your-bitbucket-repository.md)
 * [DXP Cloud Project Changes in Version 4](../reference/dxp-cloud-project-changes-in-version-4.md)

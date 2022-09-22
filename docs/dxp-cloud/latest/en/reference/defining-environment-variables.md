@@ -2,21 +2,21 @@
 
 Environment variables are a set of dynamic placeholders that can affect the way a service behaves within an environment.
 
-You can define environment variables via the DXP Cloud console or by configuring the `LCP.json` file for each service.
+You can define environment variables via the Liferay Cloud console or by configuring the `LCP.json` file for each service.
 
 ```{note}
-DXP Cloud always applies the most recent changes to settings. If the latest changes are made in the LCP.json file, upon restart, the environment variables will be reflected in the web console. However, if the environment variables are changed in the web console, the container will be restarted with those new configurations.
+Liferay Cloud always applies the most recent changes to settings. If the latest changes are made in the LCP.json file, upon restart, the environment variables will be reflected in the web console. However, if the environment variables are changed in the web console, the container will be restarted with those new configurations.
 ```
 
-## Defining Environment Variables via the DXP Cloud Console
+## Defining Environment Variables via the Liferay Cloud Console
 
-You can add, change, or remove environment variables for a service via the DXP Cloud console. When configuring a service in this way, all variables are scoped to the project environment in which they are defined.
+You can add, change, or remove environment variables for a service via the Liferay Cloud console. When configuring a service in this way, all variables are scoped to the project environment in which they are defined.
 
 ```{warning}
 Updating a service's environment variables restarts the service to apply the change. While restarting, the service may stop receiving requests for some minutes and behave differently depending on the variable values.
 ```
 
-Follow these steps to add environment variables to a service via the DXP Cloud console:
+Follow these steps to add environment variables to a service via the Liferay Cloud console:
 
 1. Navigate to a project environment.
 
@@ -28,7 +28,7 @@ Follow these steps to add environment variables to a service via the DXP Cloud c
 
    ![Figure 1: Navigate to the service's Environment Variables tab.](./defining-environment-variables/images/01.png)
 
-1. Enter a new environment variable as a key-value pair. The following example disables clustering for the Liferay DXP service:
+1. Enter a new environment variable as a key-value pair. The following example disables clustering for the Liferay service:
 
     * **Key**: `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED`
     * **Value**:  `false`
@@ -75,11 +75,11 @@ The following example creates an exception to the top level attribute, defining 
 }
 ```
 
-When you are finished editing the service's `LCP.json` file, save and deploy your changes to update environment variables. See [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information.
+When you are finished editing the service's `LCP.json` file, save and deploy your changes to update environment variables. See [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information.
 
 ## Secret Environment Variables
 
-Normal environment variables do not have special security measures. Any Users that can access your DXP Cloud project can also see the variable values for your services.
+Normal environment variables do not have special security measures. Any Users that can access your Liferay Cloud project can also see the variable values for your services.
 
 To store sensitive variable values (such as login credentials), you can use secrets. Secrets are encrypted in the backend and are hidden from Users without the *Admin* role. Regular environment variables may also [reference secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#referencing-secrets-from-environment-variables) to secure their values. See [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) for more information.
 
@@ -87,4 +87,4 @@ To store sensitive variable values (such as login credentials), you can use secr
 
 * [Configuration via LCP.json](../reference/configuration-via-lcp-json.md)
 * [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
-* [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)

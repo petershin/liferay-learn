@@ -1,9 +1,9 @@
 # Configuring Your Bitbucket Repository
 
-Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private DXP Cloud development repository and is typically removed after 10 business days. Users must:
+Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must:
 
 1. Transfer the provisioned repository to their own private repository.
-1. Integrate their private repository with the Jenkins (CI) service in DXP Cloud using a Webhook.
+1. Integrate their private repository with the Jenkins (CI) service in Liferay Cloud using a Webhook.
 
 The provisioned repository will be on GitHub, but you can transfer it to a BitBucket repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the BitBucket repository.
 
@@ -13,7 +13,7 @@ The repository's administrators *are not necessarily the same* as your project's
 
 ## Preparing the Jenkins service
 
-If you are using [version 4.x.x services](../reference/understanding-service-stack-versions.md) in your DXP Cloud instance already, then your Jenkins service is already compatible with Bitbucket. See [Upgrading Your DXP Cloud Stack](../reference/upgrading-your-dxp-cloud-stack.md) for more information on upgrading.
+If you are using [version 4.x.x services](../reference/understanding-service-stack-versions.md) in your Liferay Cloud instance already, then your Jenkins service is already compatible with Bitbucket. See [Upgrading Your Liferay Cloud Stack](../reference/upgrading-your-dxp-cloud-stack.md) for more information on upgrading.
 
 If you are using version 3.x.x services, then check the `LCP.json` for your `ci` service, and ensure you're running the following Jenkins service or higher:
 
@@ -110,7 +110,7 @@ The user that generated the app password must use their username for the `LCP_CI
 
 ## Checking Branch Types and Prefixes
 
-In order for DXP Cloud to be able to properly link to your branches, you must provide it with a complete list of the branch prefixes in use in your repository. Each of the branch types used in your repository has its own prefix, which is defined in the repository's settings.
+In order for Liferay Cloud to be able to properly link to your branches, you must provide it with a complete list of the branch prefixes in use in your repository. Each of the branch types used in your repository has its own prefix, which is defined in the repository's settings.
 
 On [the Bitbucket website](https://bitbucket.org), click _Repository settings_ &rarr; _Branching model_ from the menu on the left. This brings you to the _Branching model_ page, where the prefix for each of your branches is listed. Take note of each of these prefixes to add them to the `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI environment variable.
 
@@ -120,7 +120,7 @@ On [the Bitbucket website](https://bitbucket.org), click _Repository settings_ &
 
 Lastly, set environment variables in the Jenkins service's to point to your new repository:
 
-1. Log in to the DXP Cloud Console and navigate to your Jenkins service in the `infra` environment.
+1. Log in to the Liferay Cloud Console and navigate to your Jenkins service in the `infra` environment.
 
 1. Navigate to the _Environment Variables_ tab.
 
@@ -151,7 +151,7 @@ Set the `LCP_CI_SCM_SERVER_HOST` variable to the base URL of your private Bitbuc
 
 ## Verifying Builds
 
-Pushed branches and pull requests trigger builds that you can see or deploy from the _Builds_ tab in the DXP Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
+Pushed branches and pull requests trigger builds that you can see or deploy from the _Builds_ tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
 
 ### Verifying Builds from Pushed Branches
 
@@ -169,7 +169,7 @@ Verify that new Git pushes trigger Jenkins builds:
     git push bitbucket branch-name
     ```
 
-1. Navigate to the _Builds_ page in the DXP Cloud Console.
+1. Navigate to the _Builds_ page in the Liferay Cloud Console.
 
 1. Verify that the build displays for the pushed branch on the _Builds_ page.
 
@@ -181,7 +181,7 @@ Verify that new pull requests trigger Jenkins builds:
 
 1. Verify that a new build is created for the pull request.
 
-1. Navigate to the _Builds_ page in the DXP Cloud Console.
+1. Navigate to the _Builds_ page in the Liferay Cloud Console.
 
 1. Click the links for the branch and commit in the appropriate build.
 

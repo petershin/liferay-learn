@@ -1,6 +1,6 @@
 # Command-Line Tool
 
-The CLI tool can be used to view and manage your DXP Cloud services. Once installed, you can run `lcp --help` in your terminal to view available actions.
+The CLI tool can be used to view and manage your Liferay Cloud services. Once installed, you can run `lcp --help` in your terminal to view available actions.
 
 ```{tip}
 You can run the `-v` or `--verbose` option at the end of any `lcp` command to see extra logging and information. Run the `--help` flag at the end of any `lcp` command to see the available flags you can use with it.
@@ -13,7 +13,7 @@ You can run the `-v` or `--verbose` option at the end of any `lcp` command to se
 * [Changing the Number of Service Instances](#changing-the-number-of-service-instances)
 * [Listing Projects or Services](#listing-projects-or-services)
 * [Restarting a Service](#restarting-a-service)
-* [Deploying to Your DXP Cloud Environment](#deploying-to-your-dxp-cloud-environment)
+* [Deploying to Your Liferay Cloud Environment](#deploying-to-your-dxp-cloud-environment)
 * [Accessing a Service's Shell](#accessing-a-services-shell)
 * [Uninstalling Version 3 of the CLI Tool](#uninstalling-version-3-of-the-cli-tool)
 
@@ -65,7 +65,7 @@ Once version 2 is uninstalled, you can following the [above instructions](#insta
 
 ## Configuring the CLI Remote
 
-To access DXP Cloud services via the CLI tool, it must be configured to point to DXP Cloud's remote URL: `liferay.cloud`. To list the CLI's remotes, run the following command:
+To access Liferay Cloud services via the CLI tool, it must be configured to point to Liferay Cloud's remote URL: `liferay.cloud`. To list the CLI's remotes, run the following command:
 
 ```shell
 lcp remote
@@ -205,7 +205,7 @@ Alternatively, restart a service by passing its full URL to `lcp restart`:
 lcp restart --url <serviceID>-<projectID>.lfr.cloud
 ```
 
-## Deploying to Your DXP Cloud Environment
+## Deploying to Your Liferay Cloud Environment
 
 Use the `lcp deploy` command to deploy either a specific service or all of your services to one of your environments:
 
@@ -243,7 +243,7 @@ lcp shell -p <project>-<environment> -s <service>
 
 ## Open docs
 
-Use the `lcp docs` command to access Liferay DXP Cloud resources, including official documentation, Help Center content, and more.
+Use the `lcp docs` command to access Liferay Cloud resources, including official documentation, Help Center content, and more.
 
 ## Uninstalling Version 3 of the CLI Tool
 
@@ -259,4 +259,4 @@ For Windows 7 and 8, go to *Control Panel* &rarr; *Add or Remove Programs*. In W
 
 * [Troubleshooting Tools and Resources](../troubleshooting/troubleshooting-tools-and-resources.md)
 * [Deploying Changes Via the CLI Tool](../build-and-deploy/deploying-changes-via-the-cli-tool.md)
-* [Upgrading Your DXP Cloud Stack](./upgrading-your-dxp-cloud-stack.md)
+* [Upgrading Your Liferay Cloud Stack](./upgrading-your-dxp-cloud-stack.md)

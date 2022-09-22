@@ -1,13 +1,13 @@
 # Support Access
 
-Support Access is an optional setting that expedites troubleshooting by giving Liferay engineers direct access to a DXP Cloud project environment. DXP Cloud administrators can enable or disable Support Access for individual project environments.
+Support Access is an optional setting that expedites troubleshooting by giving Liferay engineers direct access to a Liferay Cloud project environment. Liferay Cloud administrators can enable or disable Support Access for individual project environments.
 
 When Support Access is enabled, Liferay Support engineers have read access to the following information:
 
 * Project console
 * Service logs
 * Control Panel settings
-* The region where the DXP Cloud services are hosted
+* The region where the Liferay Cloud services are hosted
 * Team members and their associated roles
 * Members' activities
 
@@ -32,7 +32,7 @@ Any change to Support Access registers a new activity that lists who made that c
 
 ![Figure 2: The general activities panel shows any changes to Support Access.](./support-access/images/02.png)
 
-DXP Cloud also sends an email to all team members when the Support Access setting changes.
+Liferay Cloud also sends an email to all team members when the Support Access setting changes.
 
 ![Figure 3: An email lets everyone know when the Support Access setting changes.](./support-access/images/03.png)
 

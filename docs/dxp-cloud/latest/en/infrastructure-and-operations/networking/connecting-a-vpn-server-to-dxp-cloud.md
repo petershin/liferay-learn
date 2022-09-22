@@ -1,8 +1,8 @@
 # Connecting a VPN Server to DXP Cloud
 
-You can use DXP Cloud's VPN feature to connect your DXP Cloud services to external services on private networks. This allows you to operate an external system with the Cloud environment as though they exist within the same network.
+You can use Liferay Cloud's VPN feature to connect your Liferay Cloud services to external services on private networks. This allows you to operate an external system with the Cloud environment as though they exist within the same network.
 
-For example, you may need to connect your DXP Cloud services to directories or applications that are only accessible on a company VPN. You'll learn how to do this here.
+For example, you may need to connect your Liferay Cloud services to directories or applications that are only accessible on a company VPN. You'll learn how to do this here.
 
 ## Creating a VPN Configuration
 
@@ -38,7 +38,7 @@ For example, you may need to connect your DXP Cloud services to directories or a
 
 1. Enter one or more port forwarding routes for your VPN connection. Fill in the required fields for each route:
 
-    * **Forwarded Port**: The port number within the DXP Cloud environment to forward.
+    * **Forwarded Port**: The port number within the Liferay Cloud environment to forward.
 
     * **Destination IP**: The IP address of the customer network interfacing with the VPN.
 
@@ -87,7 +87,7 @@ While the connection is being established, the message "VPN connection attempt i
 To disconnect the VPN any time after the connection is established, click _Disconnect_ from the top-right Actions menu. This takes you to the _Disconnect VPN_ page.
 
 ```{warning}
-Disconnecting the VPN will interrupt communications with any external services with DXP Cloud.
+Disconnecting the VPN will interrupt communications with any external services with Liferay Cloud.
 ```
 
 ![The Disconnect VPN page asks you to confirm the impact of disconnecting before proceeding.](./connecting-a-vpn-server-to-dxp-cloud/images/08.png)

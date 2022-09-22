@@ -1,12 +1,12 @@
 # Backup Service Overview
 
-Maintaining regular backups is vital to protecting your project's data. The DXP Cloud backup service stores iterations of environment data that can be used to restore your environments if needed. These backups include both the Liferay DXP Database and the full contents of the `LIFERAY_HOME/data` folder.
+Maintaining regular backups is vital to protecting your project's data. The Liferay Cloud backup service stores iterations of environment data that can be used to restore your environments if needed. These backups include both the Liferay DXP Database and the full contents of the `LIFERAY_HOME/data` folder.
 
-![The backup service is one of several services available in DXP Cloud.](./backup-service-overview/images/01.png)
+![The backup service is one of several services available in Liferay Cloud.](./backup-service-overview/images/01.png)
 
 From the Backups page in any environment, you can create backups, view or download retained backups, and restore an environment from a backup.
 
-You can also configure the backup service to meet your project's needs via the DXP Cloud console or the backup service's `LCP.json` file.
+You can also configure the backup service to meet your project's needs via the Liferay Cloud console or the backup service's `LCP.json` file.
 
 See the [Backup service limitations](../../reference/platform-limitations.md#backup-service) section for more information.
 
@@ -62,7 +62,7 @@ See [Log Management](../../troubleshooting/reading-dxp-cloud-service-logs.md) fo
 
 ## Configuring the Backup Service
 
-You can configure the backup service to meet your project's needs via the DXP Cloud console or the backup service's `LCP.json` file.
+You can configure the backup service to meet your project's needs via the Liferay Cloud console or the backup service's `LCP.json` file.
 
 See [Environment Variables Reference](#environment-variables-reference) for a list of variables you can use to configure the backup service.
 
@@ -70,9 +70,9 @@ See [Environment Variables Reference](#environment-variables-reference) for a li
 Whenever the backup service is reconfigured, the backup service will restart and may stop receiving requests for some minutes or behave differently depending on the configuration.
 ```
 
-### Configuring the Backup Service via the DXP Cloud Console
+### Configuring the Backup Service via the Liferay Cloud Console
 
-Follow these steps to configure the backup service via the DXP Cloud Console:
+Follow these steps to configure the backup service via the Liferay Cloud Console:
 
 1. Navigate to an environment where the backup service is deployed.
 
@@ -90,7 +90,7 @@ Follow these steps to configure the backup service via the DXP Cloud Console:
 
 1. Click on *Save Changes*.
 
-Apart from regular environment variables, you can also set *Secret* variables via the DXP Cloud console. See [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) for more information.
+Apart from regular environment variables, you can also set *Secret* variables via the Liferay Cloud console. See [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) for more information.
 
 ### Configuring the Backup Service via the Backup `LCP.json` File
 
@@ -171,10 +171,10 @@ Use the following variables per environment to customize when backups are create
 Both standard and non-standard [cron scheduling syntax](https://crontab.guru/) are based on the UTC±00 time zone. When using non-standard cron syntax, automated backups and cleanups run at the start of the specified value. For example, `@daily` runs backups every day at 00:00 UTC.
 ```
 
-You can use these environment variables by [setting them via the DXP Cloud console](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-dxp-cloud-console) (in the Backup service), or by [setting them in your project repository's `backup/LCP.json` file](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp-json) and deploying the Backup service to your environment.
+You can use these environment variables by [setting them via the Liferay Cloud console](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-dxp-cloud-console) (in the Backup service), or by [setting them in your project repository's `backup/LCP.json` file](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp-json) and deploying the Backup service to your environment.
 
 ```{warning}
-If you set the environment variables via the DXP Cloud console but later deploy the Backup service from your repository with a different configuration in `backup/LCP.json`, the configuration from your repository overwrites the environment variables set in the console.
+If you set the environment variables via the Liferay Cloud console but later deploy the Backup service from your repository with a different configuration in `backup/LCP.json`, the configuration from your repository overwrites the environment variables set in the console.
 ```
 
 The following `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 12:00 UTC) and performs monthly cleanups that remove backups over 30 days old:

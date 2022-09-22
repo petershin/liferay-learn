@@ -20,7 +20,7 @@ Deploying with the [CLI tool](../reference/command-line-tool.md) requires extra 
 
 [Deployable files](#deploying-themes-portlets-and-osgi-modules), [built source code](#building-and-deploying-source-code), [hotfixes](#deploying-hotfixes), and [licenses](#deploying-licenses) require extra steps to include with your deployment if you are using the CLI tool. These extra steps are not necessary if you are using the [CI service](../platform-services/continuous-integration.md) to generate a build from your repository.
 
-If you deploy the Liferay service with the CLI normally (when deploying all services at once, or from the `liferay/` directory), then a **default version** of the DXP image (using the major version defined in `LCP.json`) will deploy, that does not contain your customizations. This happens because you must specifically build and deploy any customizations with the service for them to be included.
+If you deploy the Liferay service with the CLI normally (when deploying all services at once, or from the `liferay/` directory), then a **default version** of the Liferay DXP image (using the major version defined in `LCP.json`) will deploy, that does not contain your customizations. This happens because you must specifically build and deploy any customizations with the service for them to be included.
 
 Follow these steps to deploy the Liferay service with your customizations:
 
@@ -115,7 +115,7 @@ If you are using version 3.x.x services, then hotfixes are instead added into th
 
 You can also install hotfixes as part of the CI build process instead of directly committing them to your Git repository. This approach is ideal for large hotfixes so you can avoid keeping large files in your repository.
 
-Add a comma-delimited list of hotfixes to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the DXP Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply them during the build process.
+Add a comma-delimited list of hotfixes to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply them during the build process.
 
 ```{note}
 If you add this environment variable to the `LCP.json` for your `ci` service, then you must deploy the `ci` service to your **infra environment** to complete the update.
@@ -163,5 +163,5 @@ If you are using version 3.x.x services, then licenses instead belong in the `lc
 
 * [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
-* [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
 * [CLI Tool](../reference/command-line-tool.md)

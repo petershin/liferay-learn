@@ -1,12 +1,12 @@
 # Stage 1: Matching DXP Versions
 
-The first stage of migration is to configure the Liferay service running on DXP Cloud to run the same version of the installation you want to migrate.
+The first stage of migration is to configure the Liferay service running on Liferay Cloud to run the same version of the installation you want to migrate.
 
-This requires cloning the DXP Cloud repository, configuring version changes to it, and then applying such updates back to DXP Cloud by deploying a build.
+This requires cloning the Liferay Cloud repository, configuring version changes to it, and then applying such updates back to Liferay Cloud by deploying a build.
 
 ## Find Liferay Version Information
 
-First, find the version number and installed patches for the Liferay DXP installation you want to migrate. You need these values to properly configure the Liferay service in DXP Cloud.
+First, find the version number and installed patches for the Liferay DXP installation you want to migrate. You need these values to properly configure the Liferay service in Liferay Cloud.
 
 To find these values, use the patching tool:
 
@@ -30,9 +30,9 @@ The patching tool displays patch and version information including the build ver
 
 Take note of this information for future steps.
 
-## Clone the DXP Cloud Repository
+## Clone the Liferay Cloud Repository
 
-DXP Cloud provides a repository on [GitHub](https://github.com/) together with your project. You must have a clone of the repository locally to make configurations to some files in your project, such as each service's [LCP.json file](../reference/configuration-via-lcp-json.html).
+Liferay Cloud provides a repository on [GitHub](https://github.com/) together with your project. You must have a clone of the repository locally to make configurations to some files in your project, such as each service's [LCP.json file](../reference/configuration-via-lcp-json.html).
 
 If you have not already cloned the repository, then use any terminal with [Git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to clone it locally:
 
@@ -64,13 +64,13 @@ Next, update the Liferay DXP image in the repository you [cloned previously](#cl
     liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-dxp-5
     ```
 
-This ensures that your DXP Cloud environment runs the correct version of Liferay DXP, so you can successfuly upload your data to it.
+This ensures that your Liferay Cloud environment runs the correct version of Liferay DXP, so you can successfuly upload your data to it.
 
 ## Update the Liferay Service Image in the Repository
 
 Next, update the Liferay service image in the Liferay service's `LCP.json` file in your repository. This requires you to find an up-to-date Docker image compatible with your Liferay installation's version.
 
-1. Go to DXP Cloud's [Services Changelog](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) page.
+1. Go to Liferay Cloud's [Services Changelog](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) page.
 
 1. Click on the most recent services update at the top of the list.
 
@@ -133,7 +133,7 @@ Run Git commands to submit your changes using any terminal with Git installed.
 1. Make a commit with your changes and a message:
 
     ```bash
-    git commit -m "DXP Cloud Migration Stage 1"
+    git commit -m "Liferay Cloud Migration Stage 1"
     ```
 
 1. Push the changes to GitHub:
@@ -146,9 +146,9 @@ Since your project is linked to the GitHub repository, pushing the changes autom
 
 ### Deploy the Build to Your Chosen Environment
 
-Finally, use the [DXP Cloud Console](https://console.liferay.cloud/) to deploy the completed build to your chosen environment.
+Finally, use the [Liferay Cloud Console](https://console.liferay.cloud/) to deploy the completed build to your chosen environment.
 
-1. In the DXP Cloud Console, go to the Builds page (using the link at the top of the page).
+1. In the Liferay Cloud Console, go to the Builds page (using the link at the top of the page).
 
 1. Find the build you created previously in the list, and from the Actions menu, click *Deploy build to*.
 
@@ -170,4 +170,4 @@ The deployment takes some time to complete and for your services to be ready. Th
 
 ## Next Steps
 
-Now you have a deployment to your chosen environment with all of the correct Liferay DXP version information. Next, you will [create backup files](./creating-data-backup-files.md) for your instance's data to prepare it for DXP Cloud.
+Now you have a deployment to your chosen environment with all of the correct Liferay DXP version information. Next, you will [create backup files](./creating-data-backup-files.md) for your instance's data to prepare it for Liferay Cloud.

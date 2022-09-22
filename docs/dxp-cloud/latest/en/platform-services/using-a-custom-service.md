@@ -1,18 +1,18 @@
 # Using a Custom Service
 
-DXP Cloud allows you to run more than just the standard set of services provided out-of-the-box. You can also create and deploy a custom service to run any new processes within the DXP Cloud infrastructure. Customers who wish to enable the use custom services on their DXP Cloud environments must first contact their sales representative in order to enable this functionality and ensure that their environments are provisioned accordingly.
+Liferay Cloud allows you to run more than just the standard set of services provided out-of-the-box. You can also create and deploy a custom service to run any new processes within the Liferay Cloud infrastructure. Customers who wish to enable the use custom services on their Liferay Cloud environments must first contact their sales representative in order to enable this functionality and ensure that their environments are provisioned accordingly.
 
 ```{note}
 You must have sufficient hardware resources provisioned to be able to add a custom service. You can allocate additional resources for custom services during the provisioning process.
 ```
 
-DXP Cloud uses Docker images as the basis for its services. If you want to run these services locally, [install Docker](https://docs.docker.com/get-docker/) on your local system.
+Liferay Cloud uses Docker images as the basis for its services. If you want to run these services locally, [install Docker](https://docs.docker.com/get-docker/) on your local system.
 
 See the [custom services limitations](../reference/platform-limitations.md#custom-services) for more information.
 
 ## Adding a Custom Service
 
-Use the following steps to add your own custom service to a build in DXP Cloud:
+Use the following steps to add your own custom service to a build in Liferay Cloud:
 
 1. Create or find your custom service as a Docker image. You can either use a Dockerfile that you add to your project's workspace directly or an image from a public repository like [Docker Hub](https://hub.docker.com/).
 
@@ -74,9 +74,9 @@ Use the following steps to add your own custom service to a build in DXP Cloud:
     git commit -m "Add custom service"
     ```
 
-1. Push your branch up and start a new build in DXP Cloud to deploy. See the information on deployment in the [Overview of DXP Cloud Deployment](./overview-of-the-dxp-cloud-deployment-workflow#deploy) for help with deploying your build.
+1. Push your branch up and start a new build in Liferay Cloud to deploy. See the information on deployment in the [Overview of Liferay Cloud Deployment](./overview-of-the-dxp-cloud-deployment-workflow#deploy) for help with deploying your build.
 
-Once you have triggered a new build in CI with your changes, you can navigate to the _Builds_ screen in the DXP Cloud console to see the build. The services listed under the _Services_ column includes the new service with the others.
+Once you have triggered a new build in CI with your changes, you can navigate to the _Builds_ screen in the Liferay Cloud console to see the build. The services listed under the _Services_ column includes the new service with the others.
 
 If you deploy this build to one of your environments (by clicking _Deploy Build to_ in the Actions menu), then you can also navigate to that environment's _Services_ page to see the custom service listed there:
 
@@ -84,4 +84,4 @@ If you deploy this build to one of your environments (by clicking _Deploy Build 
 
 ## Additional Information
 
-* [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow)
+* [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow)

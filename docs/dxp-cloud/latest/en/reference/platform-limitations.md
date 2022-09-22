@@ -1,10 +1,10 @@
 # Platform Limitations
 
-DXP Cloud and its services have some notable limitations. Many of these limitations may vary due to your specific level of subscription. Other limitations may change over time as changes are made to DXP Cloud's infrastructure.
+Liferay Cloud and its services have some notable limitations. Many of these limitations may vary due to your specific level of subscription. Other limitations may change over time as changes are made to Liferay Cloud's infrastructure.
 
 ## Overview
 
-Take these general limitations into consideration when planning to use DXP Cloud:
+Take these general limitations into consideration when planning to use Liferay Cloud:
 
 * Limits apply on the available vCPUs, memory, scaling, network configurations (domains, SSL certificates, and IP addresses), and VPN bandwidth for each service. For instance, each service is limited to a maximum 200 GB RAM. Custom domains are also limited to 50 or 1500, depending on your [web server's configuration](#network-configuration).
 
@@ -14,7 +14,7 @@ Take these general limitations into consideration when planning to use DXP Cloud
 
 * A private cluster subscription may be needed for more stringent security, compliance, or VPN requirements.
 
-* Remote Staging is not supported on DXP Cloud.
+* Remote Staging is not supported on Liferay Cloud.
 
 See the further sections below for more details.
 
@@ -33,13 +33,13 @@ See the further sections below for more details.
 
 ## All Services
 
-These limitations apply to every service in a DXP Cloud environment:
+These limitations apply to every service in a Liferay Cloud environment:
 
 * **Access to Old Logs**: By default, logs are only available from the last 30 days for each service. [Submit a Support request](https://help.liferay.com/) to access older logs (up to a year old).
 
 * **Additional Instances per Service**: Your subscription plan determines the allowed [`scale` setting](../manage-and-optimize/auto-scaling.md) for your services. By default, all services will have only one additional instance (the Search service must use an odd number of additional instances). The `scale` setting will begin already configured to use the purchased number of instances for your subscription plan.
 
-* **Downtime**: Services running with a single instance may experience restarts when the DXP Cloud infrastructure is updated for scheduled maintenance. Use high availability settings (two instances each of the Web server and Liferay services, and three instances of the Search service) for production-type environments to avoid disruptions. You can view the schedule for planned maintenance [here](https://help.liferay.com/hc/en-us/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule).
+* **Downtime**: Services running with a single instance may experience restarts when the Liferay Cloud infrastructure is updated for scheduled maintenance. Use high availability settings (two instances each of the Web server and Liferay services, and three instances of the Search service) for production-type environments to avoid disruptions. You can view the schedule for planned maintenance [here](https://help.liferay.com/hc/en-us/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule).
 
 * **Memory per Service Instance**: Services can have up to a possible 200 GB of RAM, and this is determined by your subscription plan. The default plan has 16 GB per service.
 
@@ -47,45 +47,45 @@ These limitations apply to every service in a DXP Cloud environment:
 
 ## Liferay Service
 
-These limitations apply to the [Liferay service](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md) in each DXP Cloud environment:
+These limitations apply to the [Liferay service](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md) in each Liferay Cloud environment:
 
-* **Remote Staging**: [Remote Staging](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) is not available with DXP Cloud. Local Staging is still available and supported.
+* **Remote Staging**: [Remote Staging](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) is not available with Liferay Cloud. Local Staging is still available and supported.
 
 * **Autoscaling**: When enabled, autoscaling may only add new instances up to a default maximum of 10. You can configure a different maximum number of instances, up to 100 instances.
 
 * **Document Library Storage**: Your subscription plan determines the size of the `data` volume for the Liferay service; this includes storage used for Liferay's Document Library. The default volume size is 100 GB, but it can be increased as long as the size is below 4 TB. A private cluster is required if a project needs more than 4 TB of storage.
 
-* **Session Replication**: Replicating sessions between multiple Liferay instances in DXP Cloud may impact your instances' performance, and is not supported. <!-- Instead, use sticky sessions, or avoid using session storage entirely in your custom applications. -->
+* **Session Replication**: Replicating sessions between multiple Liferay instances in Liferay Cloud may impact your instances' performance, and is not supported. <!-- Instead, use sticky sessions, or avoid using session storage entirely in your custom applications. -->
 
 ### Dynatrace
 
-[Dynatrace](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) is not included in the Standard setup for DXP Cloud environments, but it can be purchased separately to use with it. Dynatrace is included in the High Availability setup, but only for Production or UAT environments.
+[Dynatrace](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) is not included in the Standard setup for Liferay Cloud environments, but it can be purchased separately to use with it. Dynatrace is included in the High Availability setup, but only for Production or UAT environments.
 
 These limitations apply to Dynatrace:
 
-* **Dynatrace Metrics Discrepancy**: Dynatrace metrics do not match the metrics shown in the DXP Cloud Console. This is because Dynatrace displays metrics for the JVM process, while the console metrics measure the entire container hosting the JVM.
+* **Dynatrace Metrics Discrepancy**: Dynatrace metrics do not match the metrics shown in the Liferay Cloud Console. This is because Dynatrace displays metrics for the JVM process, while the console metrics measure the entire container hosting the JVM.
 
 * **Streaming Liferay Logs**: Liferay logs cannot be streamed to Dynatrace logs.
 
-* **Session Replay**: The Dynatrace Session Replay feature is not available with DXP Cloud.
+* **Session Replay**: The Dynatrace Session Replay feature is not available with Liferay Cloud.
 
 ## Database Service
 
-These limitations apply to the [Database service](../platform-services/database-service/database-service.md) in each DXP Cloud environment:
+These limitations apply to the [Database service](../platform-services/database-service/database-service.md) in each Liferay Cloud environment:
 
-* **Database Metrics**: The metrics displayed in the DXP Cloud console reflect the data for the service container, not individual service metrics.
+* **Database Metrics**: The metrics displayed in the Liferay Cloud console reflect the data for the service container, not individual service metrics.
 
 * **Database Size**: The maximum size for a database is normally 100 GB. [Submit a Support request](https://help.liferay.com/) to increase this limit.
 
 * **Downtime**: Database maintenance may cause downtime every few months. This downtime usually lasts about two minutes. This may not come with a notification in advance. You can set a [preferred maintenance window](../platform-services/database-service/database-service.md#database-maintenance-window-variables) to mitigate the impact of downtime.
 
-* **Read/write splits**: Configuring a read/write split in your database service is not supported in DXP Cloud.
+* **Read/write splits**: Configuring a read/write split in your database service is not supported in Liferay Cloud.
 
 ## Search Service
 
-These limitations apply to the [Search service](../platform-services/search-service.md) in each DXP Cloud environment:
+These limitations apply to the [Search service](../platform-services/search-service.md) in each Liferay Cloud environment:
 
-* **Configuration**: Elasticsearch must be configured through the DXP Cloud workspace, and **not** the Liferay UI. The configuration file in the project workspace is used on each deployment and overwrites the previous configuration.
+* **Configuration**: Elasticsearch must be configured through the Liferay Cloud workspace, and **not** the Liferay UI. The configuration file in the project workspace is used on each deployment and overwrites the previous configuration.
 
 * **Memory Settings**: The default (and maximum) JVM heap size for the Elasticsearch server is 4 GB. The maximum allocation is determined by your subscription plan.
 
@@ -95,11 +95,11 @@ These limitations apply to the [Search service](../platform-services/search-serv
 
 ## Backup Service
 
-These limitations apply to the [Backup service](../platform-services/backup-service/backup-service-overview.md) in each DXP Cloud environment:
+These limitations apply to the [Backup service](../platform-services/backup-service/backup-service-overview.md) in each Liferay Cloud environment:
 
 * **Backup Consistency**: As with any process copying from a database with changing data, consistency between data in the database and document library cannot be guaranteed if a backup is created while updates are occurring. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a [manual backup](../platform-services/backup-service/backup-service-overview.md#creating-a-manual-backup).
 
-* **Backup Size**: Before DXP Cloud version 4.2.0, backups used [ephemeral storage](#file-storage). The size of backups in these versions is limited to the remaining space on a shared ephemeral disk, which may vary.
+* **Backup Size**: Before Liferay Cloud version 4.2.0, backups used [ephemeral storage](#file-storage). The size of backups in these versions is limited to the remaining space on a shared ephemeral disk, which may vary.
 
 * **Backup Uploads**: Only one backup may be uploaded per minute.
 
@@ -111,7 +111,7 @@ These limitations apply to the [Backup service](../platform-services/backup-serv
 
 ## Web Server Service
 
-These limitations apply to the [Web server service](../platform-services/web-server-service.md) in each DXP Cloud environment:
+These limitations apply to the [Web server service](../platform-services/web-server-service.md) in each Liferay Cloud environment:
 
 * **Plugins**: Installing additional plugins for the web server is not supported.
 
@@ -119,11 +119,11 @@ These limitations apply to the [Web server service](../platform-services/web-ser
 
 ## Continuous Integration Service
 
-These limitations apply to the [CI service](../platform-services/continuous-integration.md) in each DXP Cloud environment:
+These limitations apply to the [CI service](../platform-services/continuous-integration.md) in each Liferay Cloud environment:
 
 * **Administrative access**: Admin-level access is not allowed on the Jenkins server. Instead, use the [Jenkins pipeline hooks](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) to extend the CI pipeline. Existing DevOps processes may need to be adjusted to conform to this pipeline.
 
-* **Concurrent API Calls**: Projects cannot perform concurrent calls to DXP Cloud APIs. This includes tasks such as deploying a build to an environment through the [CLI tool](./command-line-tool.md).
+* **Concurrent API Calls**: Projects cannot perform concurrent calls to Liferay Cloud APIs. This includes tasks such as deploying a build to an environment through the [CLI tool](./command-line-tool.md).
 
 * **Resource Allocation**: The RAM and number of vCPUs allocated to the CI service are determined by your subscription plan. The default allocation is 4 vCPUs and 8 GB of RAM for the service.
 
@@ -143,19 +143,19 @@ These limitations apply to any builds created within a project:
 
 ## Custom Services
 
-These limitations apply to any [custom services](../platform-services/using-a-custom-service.md) in a DXP Cloud environment:
+These limitations apply to any [custom services](../platform-services/using-a-custom-service.md) in a Liferay Cloud environment:
 
 * **Host OS Access**: Privileged access to the host Operating System kernel is limited to subscriptions that include a private cluster.
 
 ## Security
 
-These limitations apply to the security features available within DXP Cloud:
+These limitations apply to the security features available within Liferay Cloud:
 
-* **Antivirus**: The default Liferay DXP feature for scanning viruses on file upload cannot be used. DXP Cloud's [Antivirus solution](./dxp-cloud-infrastructure.md#antivirus) is used instead. Uploaded content is scanned on a schedule, and thus risks may not be detected immediately when a file is uploaded.
+* **Antivirus**: The default Liferay DXP feature for scanning viruses on file upload cannot be used. Liferay Cloud's [Antivirus solution](./dxp-cloud-infrastructure.md#antivirus) is used instead. Uploaded content is scanned on a schedule, and thus risks may not be detected immediately when a file is uploaded.
 
 * **Authentications per Minute**: A maximum of 8400 authentications are allowed per minute.
 
-* **Firewall Rules**: You must purchase a subscription with a private cluster and coordinate with DXP Cloud Support to set custom firewall rules. Custom firewall rules cannot be used with a shared cluster subscription. Any custom firewall rules created for a private cluster apply to all environments in the project.
+* **Firewall Rules**: You must purchase a subscription with a private cluster and coordinate with Liferay Cloud Support to set custom firewall rules. Custom firewall rules cannot be used with a shared cluster subscription. Any custom firewall rules created for a private cluster apply to all environments in the project.
 
 * **IP Address Filtering**: IP address filtering can only be applied on the web server service.
 
@@ -171,7 +171,7 @@ These limitations apply to file storage for multiple services:
 
 ## Network Configuration
 
-These limitations apply to the network configuration of your services in a DXP Cloud environment:
+These limitations apply to the network configuration of your services in a Liferay Cloud environment:
 
 * **Changes to Custom Domains**: There may be a delay (up to 60 minutes) for changes or additions to custom domains to propagate.
 

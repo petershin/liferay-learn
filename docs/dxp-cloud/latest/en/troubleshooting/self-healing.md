@@ -1,10 +1,10 @@
 # Self-Healing
 
-The self-healing functionality of DXP Cloud detects if a service or application has become unresponsive and automatically initiates procedures to recover the unresponsive service. The platform uses probes to monitor the services.
+The self-healing functionality of Liferay Cloud detects if a service or application has become unresponsive and automatically initiates procedures to recover the unresponsive service. The platform uses probes to monitor the services.
 
 ## Using and Configuring Probes
 
-DXP Cloud offers two probes used in conjunction to manage applications:
+Liferay Cloud offers two probes used in conjunction to manage applications:
 
 * Liveness Probe: Indicates whether the service is running.
 * Readiness Probe: Indicates whether the service is ready to receive requests.
@@ -17,7 +17,7 @@ Each probe can be configured with the following options:
 | `periodSeconds` | How often (in seconds) to perform the probe. The default is 10; the minimum is 1. |
 | `timeoutSeconds` | Number of seconds after which the probe times out. The default and minimum is 1. |
 | `successThreshold` | Minimum consecutive successes for the probe to be considered successful following a failure. The default and minimum is `1`. Must be `1` for liveness. |
-| `failureThreshold` | The number of times DXP Cloud repeats a failed probe before giving up. For a liveness probe, giving up means the service will restart. For a readiness probe, giving up means the probe will be marked as Failed. The default is `3`; the minimum is `1`. |
+| `failureThreshold` | The number of times Liferay Cloud repeats a failed probe before giving up. For a liveness probe, giving up means the service will restart. For a readiness probe, giving up means the probe will be marked as Failed. The default is `3`; the minimum is `1`. |
 
 When a probe detects a failure (i.e., it does not return the success message in a status check), the probe automatically takes action to address it (restarting the service or redirecting traffic away from the instance). The probes themselves *do not cause* outages, but they instead attempt to detect and respond to them automatically.
 

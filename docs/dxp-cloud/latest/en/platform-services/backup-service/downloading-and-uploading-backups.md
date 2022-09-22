@@ -1,8 +1,8 @@
 # Downloading and Uploading Backups
 
-The DXP Cloud backup service creates backups of an environment's database and the full contents of the `LIFERAY_HOME/data` folder. This content is stored as archive files (`.gz` and `.tgz` respectively) and can be downloaded via the DXP Cloud console.
+The Liferay Cloud backup service creates backups of an environment's database and the full contents of the `LIFERAY_HOME/data` folder. This content is stored as archive files (`.gz` and `.tgz` respectively) and can be downloaded via the Liferay Cloud console.
 
-Users can also download or upload environment backups [using the DXP Cloud Console](#uploading-backups-via-the-console), or through [Backup APIs](#backup-service-apis).
+Users can also download or upload environment backups [using the Liferay Cloud Console](#uploading-backups-via-the-console), or through [Backup APIs](#backup-service-apis).
 
 ```{note}
 The Backups page is only available in production environments for backup service versions older than 4.3.5.
@@ -34,7 +34,7 @@ Only administrators for the chosen environment can download backups from the Bac
 
 You can also upload a backup to your project through the *Backups* page in your chosen environment.
 
-Before you can upload a backup to DXP Cloud, you must compress the database dump and document library in separate archives. See [Preparing the Database and Document Library for Upload](#preparing-the-database-and-document-library-for-upload) for more information on preparing for the upload for an on-premises environment.
+Before you can upload a backup to Liferay Cloud, you must compress the database dump and document library in separate archives. See [Preparing the Database and Document Library for Upload](#preparing-the-database-and-document-library-for-upload) for more information on preparing for the upload for an on-premises environment.
 
 ```{warning}
 Once an upload is initiated, the Backup service is unavailable to generate or restore other backups until the upload is completed.
@@ -50,7 +50,7 @@ Follow these steps from the *Backups* page:
 
 1. When both the database dump and document library are uploaded, click *Initiate Upload*.
 
-DXP Cloud begins using the files you uploaded to generate a backup and add it to the list you can restore to your environments. While the backup is being generated, other backups cannot be generated or restored.
+Liferay Cloud begins using the files you uploaded to generate a backup and add it to the list you can restore to your environments. While the backup is being generated, other backups cannot be generated or restored.
 
 A success message appears on the page when the backup is generated and the service resumes normal operation.
 
@@ -93,7 +93,7 @@ curl -X POST \
 ```
 
 ```{note}
-Passing the user token in the header `dxpcloud-authorization` only works for versions `3.2.0` or greater of the backup service. Previous versions should be upgraded to at least `3.2.0`. Requests to earlier versions must use the header `Authorization: Bearer <PROJECT_MASTER_TOKEN>`. You can find the project master token by running the command `env | grep LCP_PROJECT_MASTER_TOKEN` in any shell in the Liferay DXP Cloud console.
+Passing the user token in the header `dxpcloud-authorization` only works for versions `3.2.0` or greater of the backup service. Previous versions should be upgraded to at least `3.2.0`. Requests to earlier versions must use the header `Authorization: Bearer <PROJECT_MASTER_TOKEN>`. You can find the project master token by running the command `env | grep LCP_PROJECT_MASTER_TOKEN` in any shell in the Liferay Cloud console.
 ```
 
 ### Download Database API
@@ -140,7 +140,7 @@ curl -X GET \
 
 ### Upload Backup API
 
-Follow these steps to upload a backup to DXP Cloud with the upload backup API:
+Follow these steps to upload a backup to Liferay Cloud with the upload backup API:
 
 1. [Create the database file](#creating-the-database-file).
 
@@ -172,7 +172,7 @@ curl -X POST \
 
 ## Preparing the Database and Document Library for Upload
 
-To upload a backup of your environment to DXP Cloud, you must have the database and document library from that environment prepared in separate archive files.
+To upload a backup of your environment to Liferay Cloud, you must have the database and document library from that environment prepared in separate archive files.
 
 ### Creating the Database File
 
@@ -207,7 +207,7 @@ USE `lportal`;
 The document library must also be compressed to a format that you can upload.
 
 ```{tip}
-If permissions are not already configured for DXP Cloud when you upload a backup, then restoring the backup to your environments afterward can take longer to complete. To avoid long restore times, navigate to your `LIFERAY_HOME` folder and run this command before compressing the document library: `chown -R 1000:1000 data/document_library/`.
+If permissions are not already configured for Liferay Cloud when you upload a backup, then restoring the backup to your environments afterward can take longer to complete. To avoid long restore times, navigate to your `LIFERAY_HOME` folder and run this command before compressing the document library: `chown -R 1000:1000 data/document_library/`.
 ```
 
 Run this command to compress the data volume:

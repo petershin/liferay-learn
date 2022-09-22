@@ -1,6 +1,6 @@
 # Auto-scaling
 
-Liferay DXP Cloud's auto-scaling feature automatically creates and destroys instances of the DXP service as needed to optimize performance. This addresses sudden changes such as increased server traffic, memory leaks, or other issues. By default, this feature is *disabled* in every DXP Cloud account.
+Liferay Cloud's auto-scaling feature automatically creates and destroys instances of the Liferay service as needed to optimize performance. This addresses sudden changes such as increased server traffic, memory leaks, or other issues. By default, this feature is *disabled* in every Liferay Cloud account.
 
 Using this feature, a service can automatically increase (upscale) the number of Liferay DXP instances to a [defined maximum](#setting-the-maximum-number-of-instances) (10 by default), or decrease (downscale) to the number specified in the `scale` property in [`LCP.json`](../reference/configuration-via-lcp-json.md). The `scale` property specifies the minimum number of instances to run:
 
@@ -44,13 +44,13 @@ See [Defining Environment Variables](../reference/defining-environment-variables
 
 ## Managing Auto-scaling
 
-Follow these steps to enable or disable auto-scaling in the DXP Cloud Console:
+Follow these steps to enable or disable auto-scaling in the Liferay Cloud Console:
 
 1. Navigate to the production environment.
 1. Navigate to *Services* &rarr; *Liferay* &rarr; *Scale*.
 1. If auto-scaling is disabled, click *Enable Auto Scaling* to enable it. If auto-scaling is already enabled, click *Disable Auto Scaling* to disable it.
 
-With auto-scaling enabled, DXP Cloud monitors your service and scales it automatically according to predefined thresholds.
+With auto-scaling enabled, Liferay Cloud monitors your service and scales it automatically according to predefined thresholds.
 
 ![Figure 1: Enable or disable auto-scaling from your service's Scale tab.](./auto-scaling/images/01.png)
 
@@ -94,4 +94,4 @@ Once you have updated both of these configurations, auto-scaling increases your 
 
 ## Auto-scaling and DXP Activation Keys
 
-An activation key is typically required to be deployed and validated in order to use Liferay DXP on premises. On DXP Cloud when Auto-scaling is enabled, the DXP Cloud team resolves any DXP Activation key issues and will add and remove activation keys on an as needed basis.
+An activation key is typically required to be deployed and validated in order to use Liferay DXP on premises. On Liferay Cloud when Auto-scaling is enabled, the Liferay Cloud team resolves any DXP Activation key issues and will add and remove activation keys on an as needed basis.

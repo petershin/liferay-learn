@@ -1,6 +1,6 @@
 # Logging into Your DXP Cloud Services
 
-By default, login is required to directly access the web interfaces for the DXP and Infrastructure services. Login credentials for these services are typically provided in an initial onboarding email - but may be located in the DXP Cloud Console if needed.
+By default, login is required to directly access the web interfaces for the Liferay and Infrastructure services. Login credentials for these services are typically provided in an initial onboarding email - but may be located in the Liferay Cloud Console if needed.
 
 ## Locating Login Credentials
 
@@ -25,13 +25,13 @@ By default, login is required to directly access the web interfaces for the DXP 
 
 1. Click on the desired endpoint to access your Liferay instance with the corresponding URL.
 
-1. Enter the DXP Cloud [Jenkins user name and password](#locating-login-credentials) when prompted.
+1. Enter the Liferay Cloud [Jenkins user name and password](#locating-login-credentials) when prompted.
 
     ![authentication](./logging-into-your-dxp-cloud-services/images/03.png)
 
 1. This will redirect the user to the Liferay DXP 7.x instance (in this example, Liferay DXP 7.2 GA1).
 
-    ![DXP 7.2 GA1 Sign In](./logging-into-your-dxp-cloud-services/images/04.png)
+    ![Liferay DXP 7.2 GA1 Sign In](./logging-into-your-dxp-cloud-services/images/04.png)
 
 ### Finding Default Service URLs
 
@@ -47,6 +47,6 @@ You can follow similar steps to access the Jenkins CI web interface. Navigate to
 
 ## Additional Information
 
-* [Using the DXP Service](../using-the-liferay-dxp-service.md)
+* [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Continuous Integration](../platform-services/continuous-integration.md)
 * [Web Server Service](../platform-services/web-server-service.md)

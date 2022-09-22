@@ -1,9 +1,9 @@
 # Configuring Your GitLab Repository
 
-Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private DXP Cloud development repository and is typically removed after 10 business days. Users must:
+Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must:
 
 1. Transfer the provisioned repository to their own private repository.
-1. Integrate their private repository with the Jenkins (CI) service in DXP Cloud using a Webhook.
+1. Integrate their private repository with the Jenkins (CI) service in Liferay Cloud using a Webhook.
 
 The provisioned repository will be on GitHub, but you can transfer it to a GitLab repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the GitLab repository.
 
@@ -13,7 +13,7 @@ The repository's administrators *are not necessarily the same* as your project's
 
 ## Preparing the Jenkins Service
 
-If you are using [version 4.x.x services](../reference/understanding-service-stack-versions.md) in your DXP Cloud instance already, then your Jenkins service is already compatible with GitLab. See [Upgrading Your DXP Cloud Stack](../reference/upgrading-your-dxp-cloud-stack.md) for more information on upgrading.
+If you are using [version 4.x.x services](../reference/understanding-service-stack-versions.md) in your Liferay Cloud instance already, then your Jenkins service is already compatible with GitLab. See [Upgrading Your Liferay Cloud Stack](../reference/upgrading-your-dxp-cloud-stack.md) for more information on upgrading.
 
 If you are using version 3.x.x services, then check the `LCP.json` for your `ci` service, and ensure you're running the following Jenkins service or higher:
 
@@ -101,7 +101,7 @@ Next, create an access token that will be used by the Webhook to trigger Jenkins
 
 Lastly, set environment variables in the Jenkins service's to point to your new repository:
 
-1. Log in to the DXP Cloud Console and navigate to your Jenkins service in the `infra` environment.
+1. Log in to the Liferay Cloud Console and navigate to your Jenkins service in the `infra` environment.
 
 1. Navigate to the _Environment Variables_ tab.
 
@@ -128,7 +128,7 @@ Set the `LCP_CI_SCM_SERVER_HOST` variable to the base URL of your private GitLab
 
 ## Additional GitLab Webhook Configurations
 
-Liferay DXP Cloud's Jenkins service creates a webhook for your selected git SCM provider; however, it only creates the default one. GitLab's default webhook requires additional configuration to match the functionality of GitHub and BitBucket's webhooks.
+Liferay Cloud's Jenkins service creates a webhook for your selected git SCM provider; however, it only creates the default one. GitLab's default webhook requires additional configuration to match the functionality of GitHub and BitBucket's webhooks.
 
 1. Navigate to your GitLab repository.
 
@@ -148,7 +148,7 @@ Liferay DXP Cloud's Jenkins service creates a webhook for your selected git SCM 
 
 ## Verifying Builds
 
-Pushed branches and merge requests (GitLab's equivalent of pull requests) trigger builds that you can see or deploy from the _Builds_ tab in the DXP Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
+Pushed branches and merge requests (GitLab's equivalent of pull requests) trigger builds that you can see or deploy from the _Builds_ tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
 
 ### Verifying Builds from Pushed Branches
 
@@ -166,7 +166,7 @@ Verify that new Git pushes trigger Jenkins builds:
     git push gitlab branch-name
     ```
 
-1. Navigate to the _Builds_ page in the DXP Cloud Console.
+1. Navigate to the _Builds_ page in the Liferay Cloud Console.
 
 1. Verify that the build displays for the pushed branch on the _Builds_ page.
 
@@ -178,7 +178,7 @@ Verify that new merge requests trigger Jenkins builds:
 
 1. Verify that a new build is created for the merge request.
 
-1. Navigate to the _Builds_ page in the DXP Cloud Console.
+1. Navigate to the _Builds_ page in the Liferay Cloud Console.
 
 1. Click the links for the branch and commit in the appropriate build.
 

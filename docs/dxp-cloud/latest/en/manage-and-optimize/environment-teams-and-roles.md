@@ -1,6 +1,6 @@
 # Environment Teams and Roles
 
-Administrators can manage team members and roles in each project environment using the DXP Cloud Console. Each environment can have unique members, and each member can have different roles in different environments.
+Administrators can manage team members and roles in each project environment using the Liferay Cloud Console. Each environment can have unique members, and each member can have different roles in different environments.
 
 Invite members and assign roles with varying access levels to achieve your desired team structure in each project environment.
 
@@ -24,7 +24,7 @@ Email invitations grant users access to a single project environment. Invited us
 
 ![Figure 2: Click Accept Invite to gain access to the environment](./environment-teams-and-roles/images/02.png)
 
-New DXP Cloud users must create an account, while returning users can *Log in* using their DXP Cloud credentials.
+New Liferay Cloud users must create an account, while returning users can *Log in* using their Liferay Cloud credentials.
 
 ```{note}
 Any user can access the Team page to see other users in the environment and their roles, including the administrators.
@@ -44,10 +44,10 @@ From the *Current* tab, administrators can change team member roles or remove a 
 
 ## Understanding Team Roles
 
-Roles determine a user's access level within an environment. Liferay DXP Cloud comes with four default user roles:
+Roles determine a user's access level within an environment. Liferay Cloud comes with four default user roles:
 
 * **Owner:** The sole owner of the project has the most complete access.
-* **Administrator:** Administrators have full control over DXP Cloud environments and their members.
+* **Administrator:** Administrators have full control over Liferay Cloud environments and their members.
 * **Contributor:** Contributors can handle application management and most of the development life cycle, but they can't manage team members or perform other administrator-exclusive actions.
 * **Guest:** Guests have view-only access. Guests can see what is happening in the environment, but can't perform actions or make any changes. They only have permission to remove themselves from the environment.
 
@@ -74,4 +74,4 @@ Here is a list of important permissions and which team roles have them:
 
 * [Initial Setup Overview](../getting-started/initial-setup-overview.md)
 * [Team Activities](./team-activities.md)
-* [Understanding DXP Cloud Environments](../getting-started/understanding-dxp-cloud-environments.md)
+* [Understanding Liferay Cloud Environments](../getting-started/understanding-dxp-cloud-environments.md)

@@ -1,6 +1,6 @@
 # Configuring Cross-Region Disaster Recovery
 
-DXP Cloud provides two ways for customers to take advantage of the Disaster Recovery (DR) procedure in the case of major incidents: Automatic Disaster Recovery and Cross-Region Disaster Recovery. DXP Cloud's approaches to disaster recovery scenarios can be reviewed in greater detail in the [Disaster Recovery Overview](./disaster-recovery-overview.md).
+Liferay Cloud provides two ways for customers to take advantage of the Disaster Recovery (DR) procedure in the case of major incidents: Automatic Disaster Recovery and Cross-Region Disaster Recovery. Liferay Cloud's approaches to disaster recovery scenarios can be reviewed in greater detail in the [Disaster Recovery Overview](./disaster-recovery-overview.md).
 
 Here you'll learn how to recover data manually during a cross-region disaster. These steps are required only when there is a compromise in all three zones in the same geographic region at the same time.
 
@@ -10,13 +10,13 @@ Here you'll learn how to recover data manually during a cross-region disaster. T
 
 ## Initial Setup
 
-Liferay offers a dedicated DXP Cloud environment to manage a cross region disaster. For this example, assume that a Production environment is stored in the *europe-west2* region and the region is compromised. To prevent downtime and data loss on the Production environment, shift the Disaster Recovery environment to outside the region of operation, such as *us-west1*. This fifth Disaster Recovery (shortened to DR) environment thus serves as a backup to store new user data generated during the incident.
+Liferay offers a dedicated Liferay Cloud environment to manage a cross region disaster. For this example, assume that a Production environment is stored in the *europe-west2* region and the region is compromised. To prevent downtime and data loss on the Production environment, shift the Disaster Recovery environment to outside the region of operation, such as *us-west1*. This fifth Disaster Recovery (shortened to DR) environment thus serves as a backup to store new user data generated during the incident.
 
-DXP Cloud customers wishing to set up a Disaster Recovery environment must contact their sales representative to provision the DR environment. This new environment appears with the other available environments (e.g., `dev`, `infra`, `uat`, and `prd`).
+Liferay Cloud customers wishing to set up a Disaster Recovery environment must contact their sales representative to provision the DR environment. This new environment appears with the other available environments (e.g., `dev`, `infra`, `uat`, and `prd`).
 
 ![Once you have a disaster recovery environment, you can select it like you would any other environment.](./configuring-cross-region-disaster-recovery/images/01.png)
 
-DXP Cloud systems administrators must have full administrative rights on both the DR environment and the Production environment.
+Liferay Cloud systems administrators must have full administrative rights on both the DR environment and the Production environment.
 
 ### Verify VPN Settings in the DR environment
 
@@ -44,7 +44,7 @@ For more information on connecting to a VPN, see [VPN Connection](../infrastruct
 
 ### Deploy the Latest Stable Build from Production to the DR Environment
 
-Now you must deploy the latest stable build on Production to the DR environment. Follow the same steps outlined in [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
+Now you must deploy the latest stable build on Production to the DR environment. Follow the same steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
 
 ### Set Up Automated Backup Restores to Disaster Recovery
 
@@ -52,7 +52,7 @@ To finish setting up your Disaster Recovery environment, set up automated backup
 
 First, retrieve your production environment's master token (this requires administrator privileges to access the `liferay` service shell):
 
-1. In the DXP Cloud console, navigate to your production environment &rarr; the `liferay` service page.
+1. In the Liferay Cloud console, navigate to your production environment &rarr; the `liferay` service page.
 
 1. Click on the *Shell* tab.
 
@@ -99,7 +99,7 @@ If you are using the [`LCP_BACKUP_RESTORE_SCHEDULE` environment variable](../pla
 
 Follow these steps to disable the restoration schedule while it is accessible:
 
-1. On the DXP Cloud Console, navigate to your DR environment &rarr; Backup service page &rarr; Environment Variables.
+1. On the Liferay Cloud Console, navigate to your DR environment &rarr; Backup service page &rarr; Environment Variables.
 
 1. Click the eye icon to reveal the value for your `LCP_BACKUP_RESTORE_SCHEDULE` variable:
 
@@ -138,7 +138,7 @@ Next, follow these steps to ensure your DR environment is ready for incoming tra
 
     ![Check the VPN status for your DR environment to confirm that it is properly connected.](./configuring-cross-region-disaster-recovery/images/05.png)
 
-    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to DXP Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) for more information.
+    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) for more information.
 
 1. Log onto your DXP instance (using the IP address, since the custom domain does not yet point to the DR environment).
 
@@ -208,7 +208,7 @@ Follow these steps to ensure your production environment is ready for incoming t
 
 1. Verify that your VPN is connected to the production environment by navigating to the _Settings_ &rarr; _VPN_ page for your production environment.
 
-   If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to DXP Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) for more information.
+   If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) for more information.
 
 1. Log onto your DXP instance (using the IP address, since the custom domain still points to the DR environment).
 
@@ -243,10 +243,10 @@ Traffic should now be directed back to the original Production environment. If y
 
 If you were using the `LCP_BACKUP_RESTORE_SCHEDULE` environment variable to regularly restore to your DR environment before the incident, restore this variable again to resume the restoration schedule:
 
-1. On the DXP Cloud console, navigate to your DR environment &rarr; Backup service page &rarr; Environment Variables.
+1. On the Liferay Cloud console, navigate to your DR environment &rarr; Backup service page &rarr; Environment Variables.
 
 1. Add the `LCP_BACKUP_RESTORE_SCHEDULE` environment variable and restore the value that you noted previously [when you removed it](#disable-the-database-restoration-schedule).
 
 1. Save the changes.
 
-Your DXP Cloud environments can now resume their normal operations.
+Your Liferay Cloud environments can now resume their normal operations.

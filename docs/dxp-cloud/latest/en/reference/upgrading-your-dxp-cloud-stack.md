@@ -1,12 +1,12 @@
 # Upgrading Your DXP Cloud Stack
 
-Upgrading your repository to use the new structure in DXP Cloud version 4 allows you to take advantage of Liferay Workspace within your repository, keep your services up to date, and use a range of new and updated features.
+Upgrading your repository to use the new structure in Liferay Cloud version 4 allows you to take advantage of Liferay Workspace within your repository, keep your services up to date, and use a range of new and updated features.
 
 Upgrading to the new repository structure involves the use of an [upgrade script](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip).
 
 ## Preparing to Upgrade
 
-In order to upgrade to version 4.x.x of the DXP Cloud stack, your current services must be at 3.x.x. To verify your current version, locate the gradle.properties file in your repository. Before upgrading to version 4.x.x, repositories follow this structure:
+In order to upgrade to version 4.x.x of the Liferay Cloud stack, your current services must be at 3.x.x. To verify your current version, locate the gradle.properties file in your repository. Before upgrading to version 4.x.x, repositories follow this structure:
 
 ```
 repository
@@ -35,7 +35,7 @@ Open the `gradle.properties` file and review the versions specified for any of y
 liferay.workspace.lcp.liferay.image=liferaycloud/liferay-dxp:7.2.10-sp1-fp4-3.0.19
 ```
 
-The number at the end of the Docker image name indicates the version of the DXP Cloud stack you are using. Ensure that the image name ends with `3.x.x` (in this example, liferay-dxp:7.2.10-sp1-fp4-**3.0.19**).
+The number at the end of the Docker image name indicates the version of the Liferay Cloud stack you are using. Ensure that the image name ends with `3.x.x` (in this example, liferay-dxp:7.2.10-sp1-fp4-**3.0.19**).
 
 Next, make sure your Git repository is on a clean branch. The upgrade script will commit any previously uncommitted files and check out a new branch called `upgrade-workspace`.
 
@@ -47,7 +47,7 @@ If you already have an `upgrade-workspace` branch, then the script will skip cre
 
 Perform the following steps to upgrade:
 
-1. Download the [upgrade script](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip), and extract it into the root of your local DXP Cloud repository:
+1. Download the [upgrade script](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip), and extract it into the root of your local Liferay Cloud repository:
 
     ```bash
     curl -L https://github.com/LiferayCloud/stack-upgrade/archive/release.zip -O
@@ -74,7 +74,7 @@ Perform the following steps to upgrade:
     Please enter your project id: lfrlearn
     ```
 
-1. At the prompt, authenticate into the DXP Cloud Console.
+1. At the prompt, authenticate into the Liferay Cloud Console.
 
 1. Enter the number corresponding to the Liferay version to use for your services:
 
@@ -172,9 +172,9 @@ The quickest way to deploy only the `ci` service is to [use the CLI tool](../bui
     lcp deploy --project=<project-name> --environment=infra
 ```
 
-Alternatively, you can also follow the [development workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) and deploy the changes as a build from the DXP Cloud console.
+Alternatively, you can also follow the [development workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) and deploy the changes as a build from the Liferay Cloud console.
 
-You may then want to [deploy the new service versions](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md) to a development environment, or explore some of the new functionality in the new versions of your DXP Cloud services. See the [explanation of the changes](./dxp-cloud-project-changes-in-version-4.md) to learn more.
+You may then want to [deploy the new service versions](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md) to a development environment, or explore some of the new functionality in the new versions of your Liferay Cloud services. See the [explanation of the changes](./dxp-cloud-project-changes-in-version-4.md) to learn more.
 
 ## Additional Information
 

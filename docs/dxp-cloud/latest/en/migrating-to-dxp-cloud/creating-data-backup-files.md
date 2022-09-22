@@ -1,9 +1,9 @@
 # Stage 2: Creating Data Backup Files
 
-Now that the Liferay versions match between your on-premises and DXP Cloud environments, you must prepare the data from your installation for migration. This stage of migration involves creating a database dump, migrating the document library store, and compressing the document library into an archive.
+Now that the Liferay versions match between your on-premises and Liferay Cloud environments, you must prepare the data from your installation for migration. This stage of migration involves creating a database dump, migrating the document library store, and compressing the document library into an archive.
 
 ```{warning}
-The combined size of your database dump and (compressed) document library archive must not exceed 2 TB for you to upload in the next step without contacting DXP Cloud Support.
+The combined size of your database dump and (compressed) document library archive must not exceed 2 TB for you to upload in the next step without contacting Liferay Cloud Support.
 ```
 
 ## Freeze the Data
@@ -54,7 +54,7 @@ See [File Store Migration](https://learn.liferay.com/dxp/latest/en/system-admini
 
 ### Create a Jenkins Build with the Change
 
-After your local installation of Liferay is migrated, you must also create and deploy a build to your DXP Cloud environments with the change to `portal-ext.properties`. You do not need to deploy any changes to your environments if you did not need to migrate your document library store.
+After your local installation of Liferay is migrated, you must also create and deploy a build to your Liferay Cloud environments with the change to `portal-ext.properties`. You do not need to deploy any changes to your environments if you did not need to migrate your document library store.
 
 Run Git commands to submit your changes using any terminal with Git installed.
 
@@ -67,7 +67,7 @@ Run Git commands to submit your changes using any terminal with Git installed.
 1. Make a commit with your changes and a message:
 
     ```bash
-    git commit -m "DXP Cloud Migration Stage 2"
+    git commit -m "Liferay Cloud Migration Stage 2"
     ```
 
 1. Push the changes to GitHub:
@@ -80,9 +80,9 @@ Since your project is linked to the GitHub repository, pushing the changes autom
 
 ### Deploy the Build to Your Chosen Environment
 
-Finally, use the [DXP Cloud Console](https://console.liferay.cloud/) to deploy the completed build to your chosen environment.
+Finally, use the [Liferay Cloud Console](https://console.liferay.cloud/) to deploy the completed build to your chosen environment.
 
-1. In the DXP Cloud Console, go to the Builds page (using the link at the top of the page).
+1. In the Liferay Cloud Console, go to the Builds page (using the link at the top of the page).
 
 1. Find the build you created previously in the list, and from the Actions menu, click *Deploy build to*.
 
@@ -99,7 +99,7 @@ Finally, use the [DXP Cloud Console](https://console.liferay.cloud/) to deploy t
 The build is deployed to your chosen environment, and the change to `portal-ext.properties` is applied when the `liferay` service restarts.
 
 ```{important}
-All of your environments on DXP Cloud must use the same implementation for the document library to allow backups from one environment to work if [restored to the others](../platform-services/backup-service/restoring-data-from-a-backup.md). You should deploy the build to all of your environments to make sure they all correctly use the migrated document library store.
+All of your environments on Liferay Cloud must use the same implementation for the document library to allow backups from one environment to work if [restored to the others](../platform-services/backup-service/restoring-data-from-a-backup.md). You should deploy the build to all of your environments to make sure they all correctly use the migrated document library store.
 ```
 
 ## Compress the Document Library
@@ -134,4 +134,4 @@ You now have a compressed document library archive called `volume.tgz`.
 
 ## Next Steps
 
-Now you have two files (`database.gz` and `volume.tgz`) ready to apply to a DXP Cloud environment. Next, you will [upload and restore a data backup](./uploading-and-restoring-the-data-backup.md) using these files.
+Now you have two files (`database.gz` and `volume.tgz`) ready to apply to a Liferay Cloud environment. Next, you will [upload and restore a data backup](./uploading-and-restoring-the-data-backup.md) using these files.

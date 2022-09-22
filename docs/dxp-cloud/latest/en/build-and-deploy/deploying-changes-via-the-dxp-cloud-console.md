@@ -1,6 +1,6 @@
 # Deploying Changes via the DXP Cloud Console
 
-This tutorial walks through the process of adding a portal property to the Liferay service, triggering a CI build with a pull request, and deploying the new build to the `dev` environment via the DXP Cloud console.
+This tutorial walks through the process of adding a portal property to the Liferay service, triggering a CI build with a pull request, and deploying the new build to the `dev` environment via the Liferay Cloud console.
 
 To get started, you need a code hosting service integrated with your project's CI service and a local, working copy of your project's repository.
 
@@ -10,7 +10,7 @@ For an alternative deployment workflow, see [Deploying Changes via the CLI Tool]
 
 * [Adding a Portal Property to the Liferay Service](#adding-a-portal-property-to-the-liferay-service)
 * [Triggering a Jenkins Build with GitHub](#triggering-a-jenkins-build-with-github)
-* [Deploying Your New Build via the DXP Cloud Console](#deploying-your-new-build-via-the-dxp-cloud-console)
+* [Deploying Your New Build via the Liferay Cloud Console](#deploying-your-new-build-via-the-dxp-cloud-console)
 * [Verifying Your Sample Deployment](#verifying-your-sample-deployment)
 
 ## Adding a Portal Property to the Liferay Service
@@ -32,7 +32,7 @@ Begin the deployment life cycle by adding a portal property to the `dev` environ
    ```
 
    ```{note}
-   If you're using version 3.x.x services, then the appropriate folder path is `lcp/liferay/deploy/dev`. See [DXP Cloud Project Changes in Version 4](../reference/dxp-cloud-project-changes-in-version-4.md)_ for more information on the differences in the directory structure, and [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_ for how to check the version of your services.
+   If you're using version 3.x.x services, then the appropriate folder path is `lcp/liferay/deploy/dev`. See [Liferay Cloud Project Changes in Version 4](../reference/dxp-cloud-project-changes-in-version-4.md)_ for more information on the differences in the directory structure, and [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_ for how to check the version of your services.
    ```
 
 1. Add and commit your changes to the `portal-env.properties` file with the following commands:
@@ -65,11 +65,11 @@ Next, trigger a Jenkins build with a pull request to your project's central Git 
 
    ![View detailed logs via your project's Jenkins page.](./deploying-changes-via-the-dxp-cloud-console/images/03.png)
 
-## Deploying Your New Build via the DXP Cloud Console
+## Deploying Your New Build via the Liferay Cloud Console
 
-Once your new build is ready, deploy it to your project's `dev` environment via the DXP Cloud console:
+Once your new build is ready, deploy it to your project's `dev` environment via the Liferay Cloud console:
 
-1. Navigate to the *Builds* page for your project in the DXP Cloud console. You can access this page from any project environment.
+1. Navigate to the *Builds* page for your project in the Liferay Cloud console. You can access this page from any project environment.
 
 1. Click on the *Actions* button ( ⋮ ) for the build you want to deploy, and select *Deploy Build To...*
 
@@ -97,9 +97,9 @@ Once your build has successfully deployed and your `dev` environment's Liferay s
 
 1. Navigate to your project's `dev` environment.
 
-1. Go to the *Web Server* service's page, and click on its URL to access the `dev` environment's DXP instance: `https://webserver-<project-name>-dev.lfr.cloud/`.
+1. Go to the *Web Server* service's page, and click on its URL to access the `dev` environment's Liferay instance: `https://webserver-<project-name>-dev.lfr.cloud/`.
 
-   ![Click on the Web Server url to access the dev environment's DXP instance.](./deploying-changes-via-the-dxp-cloud-console/images/08.png)
+   ![Click on the Web Server url to access the dev environment's Liferay instance.](./deploying-changes-via-the-dxp-cloud-console/images/08.png)
 
 1. Verify the web server node is displayed at the bottom of the Home Page.
 
@@ -107,7 +107,7 @@ Once your build has successfully deployed and your `dev` environment's Liferay s
 
 ## Additional Information
 
-* [Overview of the DXP Cloud Development Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Overview of the Liferay Cloud Development Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
 * [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md)
 * [Setting Up Automatic Deployment](./automatically-deploying-ci-service-builds.md)
-* [Configuring the Liferay DXP Service](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Configuring the Liferay Service](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)

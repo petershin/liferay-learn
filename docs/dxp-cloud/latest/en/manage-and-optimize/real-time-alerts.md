@@ -1,10 +1,10 @@
 # Real-Time Alerts
 
-Liferay DXP Cloud can alert system administrators of unexpected behaviors in a project. Examples of unexpected behaviors include auto-scaling events, higher than expected memory consumption, reaching the allotted CPU quota, and database connection issues.
+Liferay Cloud can alert system administrators of unexpected behaviors in a project. Examples of unexpected behaviors include auto-scaling events, higher than expected memory consumption, reaching the allotted CPU quota, and database connection issues.
 
 ## Alert Preferences
 
-Users can set [Alert Preferences](https://console.liferay.cloud/account/alerts-preferences) for all environments via the DXP Cloud Console.
+Users can set [Alert Preferences](https://console.liferay.cloud/account/alerts-preferences) for all environments via the Liferay Cloud Console.
 
 1. Click the *User Profile* icon at the top-right of the console navigation bar.
 

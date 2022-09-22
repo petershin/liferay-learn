@@ -1,10 +1,10 @@
 # Reading DXP Cloud Service Logs
 
-Environment logs are crucial for diagnosing and resolving technical issues in a project. Liferay DXP Cloud provides a variety of environment logs that users can access and download via the DXP Cloud console or OS terminal.
+Environment logs are crucial for diagnosing and resolving technical issues in a project. Liferay Cloud provides a variety of environment logs that users can access and download via the Liferay Cloud console or OS terminal.
 
 ## Log Types
 
-Liferay DXP Cloud provides three types of logs for environment services:
+Liferay Cloud provides three types of logs for environment services:
 
 * **Build Logs**: These logs list build information generated as the application boots up. Examples of build information include: when Docker images are pulled from the registry, when deploys are in progress, and when builds are successful.
 
@@ -14,15 +14,15 @@ Liferay DXP Cloud provides three types of logs for environment services:
 
 ## Log Structure
 
-Logs in DXP Cloud conform to a specific structure that gives extra, contextual information. See this log message as an example:
+Logs in Liferay Cloud conform to a specific structure that gives extra, contextual information. See this log message as an example:
 
 ```log
 Jun 29 10:07:46.585 build-214 [webserver-699bf65bfb-4w8pl] [WARNING] 179/170746 (13) : api/backend2 changed its IP from 10.0.17.186 to 10.0.26.120 by DNS cache.
 ```
 
-Many logs in DXP Cloud have a label (in this example, ``[WARNING]``) that indicates that this message came from DXP Cloud infrastructure, and not directly from the service's output. Logs can also have labels that come from DXP Cloud infrastructure but are related to the service, such as ``[LIFERAY]``. Logs that come directly from the service's output have no label.
+Many logs in Liferay Cloud have a label (in this example, ``[WARNING]``) that indicates that this message came from Liferay Cloud infrastructure, and not directly from the service's output. Logs can also have labels that come from Liferay Cloud infrastructure but are related to the service, such as ``[LIFERAY]``. Logs that come directly from the service's output have no label.
 
-Additionally, these components are always present in any log message in DXP Cloud:
+Additionally, these components are always present in any log message in Liferay Cloud:
 
 * The **timestamp**: in this example, `Jun 29 10:07:46.585`.
 
@@ -68,9 +68,9 @@ These are the only components of the `instance ID` for stateful set type service
 
 The entire instance ID for stateful set type services always remains the same for each node of the service. This allows you to reliably use the same instance ID to identify the node in a cluster with the same [volume](../build-and-deploy/configuring-persistent-file-storage-volumes.md), even after the service has been redeployed.
 
-## Accessing Logs via the DXP Cloud Console
+## Accessing Logs via the Liferay Cloud Console
 
-Follow these steps to access environment service logs via the DXP Cloud console:
+Follow these steps to access environment service logs via the Liferay Cloud console:
 
 1. Navigate to a project environment.
 

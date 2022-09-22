@@ -1,6 +1,6 @@
 # Stage 4: Migrating DXP Configurations and Customizations
 
-Now that your database and document library are applied to your DXP Cloud environment, the next stage of migration is to migrate your on-premises Liferay installation's configurations and custom code. This involves organizing property files, OSGi configurations, and custom modules, themes, and WAR files to the appropriate folders before deployment.
+Now that your database and document library are applied to your Liferay Cloud environment, the next stage of migration is to migrate your on-premises Liferay installation's configurations and custom code. This involves organizing property files, OSGi configurations, and custom modules, themes, and WAR files to the appropriate folders before deployment.
 
 ## Organize Configuration Files
 
@@ -10,7 +10,7 @@ First, organize the Liferay configuration files from your on-premises installati
 Liferay-specific code belongs in the `liferay` folder, which is organized like a [Liferay DXP workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html).
 ```
 
-In the DXP Cloud project repository you [cloned previously](./matching-dxp-versions.md#clone-the-dxp-cloud-repository), navigate to the `liferay/configs/{ENV}/` folders (which correspond to your DXP Cloud environments),
+In the Liferay Cloud project repository you [cloned previously](./matching-dxp-versions.md#clone-the-dxp-cloud-repository), navigate to the `liferay/configs/{ENV}/` folders (which correspond to your Liferay Cloud environments),
 and put all of your Liferay [portal property](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) files (e.g., `portal-ext.properties`) into each appropriate environment folder.
 
 Put [OSGi configuration](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#osgi-configurations) files (e.g., `.cfg` or `.config` files) into a subfolder in the appropriate environment folders called `osgi/`.
@@ -43,7 +43,7 @@ When the changes are deployed, WAR files are automatically deployed to the `$LIF
 
 ## Create and Deploy a Build
 
-Next, you must create and deploy a build with these changes to apply them to your DXP Cloud environments.
+Next, you must create and deploy a build with these changes to apply them to your Liferay Cloud environments.
 
 ### Create a Jenkins Build with the Change
 
@@ -58,7 +58,7 @@ Run Git commands to submit your changes using any terminal with Git installed.
 1. Make a commit with your changes and a message:
 
     ```bash
-    git commit -m "DXP Cloud Migration Stage 4"
+    git commit -m "Liferay Cloud Migration Stage 4"
     ```
 
 1. Push the changes to GitHub:
@@ -71,9 +71,9 @@ Since your project is linked to the GitHub repository, pushing the changes autom
 
 ### Deploy the Build to Your Chosen Environment
 
-Finally, use the [DXP Cloud Console](https://console.liferay.cloud/) to deploy the completed build to your chosen environment.
+Finally, use the [Liferay Cloud Console](https://console.liferay.cloud/) to deploy the completed build to your chosen environment.
 
-1. In the DXP Cloud Console, go to the Builds page (using the link at the top of the page).
+1. In the Liferay Cloud Console, go to the Builds page (using the link at the top of the page).
 
 1. Find the build you created previously in the list, and from the Actions menu, click *Deploy build to*.
 

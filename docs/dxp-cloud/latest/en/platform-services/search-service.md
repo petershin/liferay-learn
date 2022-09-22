@@ -2,13 +2,13 @@
 
 The Elasticsearch service is the text search engine for your Liferay DXP application. It's a private service that only communicates with the other services in your application, not with the outside internet.
 
-![Figure 1: The Elasticsearch service is one of several services available in DXP Cloud.](./search-service/images/01.png)
+![Figure 1: The Elasticsearch service is one of several services available in Liferay Cloud.](./search-service/images/01.png)
 
 See the [Search service limitations](../reference/platform-limitations.md#search-service) section for more information.
 
 ## Configurations
 
-Although DXP Cloud's services are fine-tuned to work well by default, you may need to configure Elasticsearch further. To do so, you can include any YML file inside the appropriate `configs/{ENV}/config/` folder. When you deploy your changes, the file is automatically injected into your service and overwrites the default configuration. Here's an example folder structure of such a file inside the correct folder:
+Although Liferay Cloud's services are fine-tuned to work well by default, you may need to configure Elasticsearch further. To do so, you can include any YML file inside the appropriate `configs/{ENV}/config/` folder. When you deploy your changes, the file is automatically injected into your service and overwrites the default configuration. Here's an example folder structure of such a file inside the correct folder:
 
     search
     ├── configs

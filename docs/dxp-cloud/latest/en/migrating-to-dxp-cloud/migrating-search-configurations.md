@@ -1,6 +1,6 @@
 # Stage 6: Migrating Search Configurations
 
-Now that your web server configurations are deployed to DXP Cloud, the next stage of migration is to migrate your search configurations. This involves migrating your search engine to Elasticsearch (if needed), and deploying all of your Elasticsearch configuration files and plugins to your DXP Cloud environments.
+Now that your web server configurations are deployed to Liferay Cloud, the next stage of migration is to migrate your search configurations. This involves migrating your search engine to Elasticsearch (if needed), and deploying all of your Elasticsearch configuration files and plugins to your Liferay Cloud environments.
 
 ## Migrate Your Search Engine to Elasticsearch
 
@@ -9,7 +9,7 @@ If you are not using Elasticsearch in your on-premises environment, then migrate
 Migrating to Elasticsearch involves installing and then connecting your Liferay installation to it. See [Getting Started with Elasticsearch](https://learn.liferay.com/dxp/latest/en/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.html) for more information.
 
 ```{tip}
-If you need help with migrating to Elasticsearch, please contact [DXP Cloud Support](https://help.liferay.com/hc/en-us).
+If you need help with migrating to Elasticsearch, please contact [Liferay Cloud Support](https://help.liferay.com/hc/en-us).
 ```
 
 ## Organize Configurations and Shell Scripts
@@ -18,7 +18,7 @@ If you need help with migrating to Elasticsearch, please contact [DXP Cloud Supp
 Skip this step if you do not have any specific Elasticsearch configurations or scripts to organize.
 ```
 
-In the project repository you [cloned previously](./matching-dxp-versions.md#clone-the-dxp-cloud-repository), navigate to the `search/configs/{ENV}/` folders (which correspond to your DXP Cloud environments), and put all of your Elasticsearch configuration files and shell scripts into the appropriate environment folders, following this pattern: 
+In the project repository you [cloned previously](./matching-dxp-versions.md#clone-the-dxp-cloud-repository), navigate to the `search/configs/{ENV}/` folders (which correspond to your Liferay Cloud environments), and put all of your Elasticsearch configuration files and shell scripts into the appropriate environment folders, following this pattern: 
 
 * Put Elasticsearch configuration files into `search/configs/{ENV}/config/`
 * Put all custom shell scripts into `search/configs/{ENV}/scripts/`
@@ -35,9 +35,9 @@ To see what an Elasticsearch configuration file looks like, see the example conf
 Skip this step if you do not have any extra plugins to add.
 ```
 
-First, review the list of plugins that are already installed on DXP Cloud by default:
+First, review the list of plugins that are already installed on Liferay Cloud by default:
 
-1. In your DXP Cloud environment, navigate to a production (`prd`) environment.
+1. In your Liferay Cloud environment, navigate to a production (`prd`) environment.
 
     ![Navigate to a production environment using the dropdown at the top of the console screen.](./migrating-search-configurations/images/01.png)
 
@@ -53,7 +53,7 @@ First, review the list of plugins that are already installed on DXP Cloud by def
 
 The shell lists all pre-installed Elasticsearch plugins when you run the command.
 
-If you have extra search plugins that are not listed, add them to your DXP Cloud project's repository:
+If you have extra search plugins that are not listed, add them to your Liferay Cloud project's repository:
 
 1. In your repository, open the `search/LCP.json` file.
 
@@ -69,7 +69,7 @@ If you have extra search plugins that are not listed, add them to your DXP Cloud
 
 ## Create and Deploy a Build
 
-Next, create and deploy a build with these changes to apply them to your DXP Cloud environments.
+Next, create and deploy a build with these changes to apply them to your Liferay Cloud environments.
 
 ### Create a Jenkins Build with the Change
 
@@ -84,7 +84,7 @@ Run Git commands to submit your changes using any terminal with Git installed.
 1. Make a commit with your changes and a message:
 
     ```bash
-    git commit -m "DXP Cloud Migration Stage 6"
+    git commit -m "Liferay Cloud Migration Stage 6"
     ```
 
 1. Push the changes to GitHub:
@@ -97,9 +97,9 @@ Since your project is linked to the GitHub repository, pushing the changes autom
 
 ### Deploy the Build to Your Chosen Environment
 
-Finally, use the [DXP Cloud Console](https://console.liferay.cloud/) to deploy the completed build to your chosen environment.
+Finally, use the [Liferay Cloud Console](https://console.liferay.cloud/) to deploy the completed build to your chosen environment.
 
-1. In the DXP Cloud Console, go to the Builds page (using the link at the top of the page).
+1. In the Liferay Cloud Console, go to the Builds page (using the link at the top of the page).
 
 1. Find the build you created previously in the list, and from the Actions menu, click *Deploy build to*.
 
@@ -117,4 +117,4 @@ The build is deployed to your chosen environment, and your Elasticsearch configu
 
 ## Next Steps
 
-Now you have finished migrating your Elasticsearch configurations to your DXP Cloud environments. Next, you will [configure and connect a VPN server](./connecting-the-vpn.md).
+Now you have finished migrating your Elasticsearch configurations to your Liferay Cloud environments. Next, you will [configure and connect a VPN server](./connecting-the-vpn.md).

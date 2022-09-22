@@ -1,10 +1,10 @@
 # Disaster Recovery Overview
 
-Liferay DXP Cloud offers two strategies for disaster recovery: Automatic and Cross-Region.
+Liferay Cloud offers two strategies for disaster recovery: Automatic and Cross-Region.
 
 ## Automatic Disaster Recovery Strategy
 
-DXP Cloud performs automatic disaster recovery protocols by distributing service instances between three zones in different geographic locations within the same region, and restarting services in a different zone if one zone goes down. In case any of the zones become unavailable, the Load Balancer will automatically route to the remaining zones without requiring DNS changes on the customer side. In this situation, *no action is required from the customer during an incident*.
+Liferay Cloud performs automatic disaster recovery protocols by distributing service instances between three zones in different geographic locations within the same region, and restarting services in a different zone if one zone goes down. In case any of the zones become unavailable, the Load Balancer will automatically route to the remaining zones without requiring DNS changes on the customer side. In this situation, *no action is required from the customer during an incident*.
 
 ## Cross-Region Disaster Recovery Strategies
 
@@ -16,11 +16,11 @@ There are multiple Cross-Region DR strategies in the IT industry which have been
 | Warm | You have a spare tire and a replacement kit so you can get back on the road using what you have in your car. However, you must stop to repair the problem. |
 | Hot | You have special run-flat tires. You might need to slow down a little, but there is no immediate impact on your journey. Your tires run well enough that you can continue (although you must eventually address the issue). |
 
-The DR strategy in DXP Cloud is _Warm_. DXP Cloud users do not need to contact Support in order to respond to a disaster scenario, but are required to act in the case of a cross-region disaster to use the provided tools.
+The DR strategy in Liferay Cloud is _Warm_. Liferay Cloud users do not need to contact Support in order to respond to a disaster scenario, but are required to act in the case of a cross-region disaster to use the provided tools.
 
 ## Disaster Recovery Example Scenario
 
-Here is an example of how the DXP Cloud Disaster Recovery tools and approaches would work in the case of a fictional disaster scenario.
+Here is an example of how the Liferay Cloud Disaster Recovery tools and approaches would work in the case of a fictional disaster scenario.
 
 ### During an Incident
 

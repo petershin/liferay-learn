@@ -1,6 +1,6 @@
 # Setting Up Clustering in DXP Cloud
 
-This article outlines the steps necessary to configure clustering for your Liferay DXP instance in DXP Cloud.
+This article outlines the steps necessary to configure clustering for your Liferay DXP instance in Liferay Cloud.
 
 **Contents:**
 
@@ -11,7 +11,7 @@ This article outlines the steps necessary to configure clustering for your Lifer
 
 ## Enable the Clustering Environment Variable
 
-Start from the desired environment in the DXP Cloud Console. Then, under `Services`, navigate to `liferay`, and then click `Environment Variables`. Ensure that the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` variable is set to `true`. This instructs the image startup process to add the clustering configuration to Liferay DXP.
+Start from the desired environment in the Liferay Cloud Console. Then, under `Services`, navigate to `liferay`, and then click `Environment Variables`. Ensure that the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` variable is set to `true`. This instructs the image startup process to add the clustering configuration to Liferay DXP.
 
 ![Setting LCP_PROJECT_LIFERAY_CLUSTER_ENABLED](./setting-up-clustering-in-dxp-cloud/images/01.png)
 
@@ -46,13 +46,13 @@ Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-sc
 
 ## Add Clustering Portal Properties
 
-By default, no additional portal properties are required to enable clustering in DXP Cloud. The necessary configuration to set up clustering will already be copied to a `portal-clu.properties` and `unicast.xml` files in the Docker image when the Liferay DXP service starts up.
+By default, no additional portal properties are required to enable clustering in Liferay Cloud. The necessary configuration to set up clustering will already be copied to a `portal-clu.properties` and `unicast.xml` files in the Docker image when the Liferay DXP service starts up.
 
-However, if additional portal properties for clustering are desired, the properties may still be added to the repository. You can override the clustering-specific portal properties by adding them into the `portal-clu.properties` file within the `config` folder appropriate to the chosen environment. See [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md) for more about deploying configurations for the DXP service.
+However, if additional portal properties for clustering are desired, the properties may still be added to the repository. You can override the clustering-specific portal properties by adding them into the `portal-clu.properties` file within the `config` folder appropriate to the chosen environment. See [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md) for more about deploying configurations for the Liferay service.
 
 ## Deploy and Verify
 
-Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information.
+Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information.
 
 To check if clustering is working correctly, check the logs of the Liferay DXP instances for the `Accepted View` message from the `JGroupsReceiver` class.
 
@@ -70,5 +70,5 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 ## Additional Information
 
 * [Auto-scaling](../manage-and-optimize/auto-scaling.md)
-* [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
+* [Introduction to the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)

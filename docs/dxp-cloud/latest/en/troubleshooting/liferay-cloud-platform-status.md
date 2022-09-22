@@ -2,9 +2,9 @@
 
 The Liferay Cloud Platform is comprised of multiple systems. Users can view the status of Liferay Cloud Platform systems, incident history, and planned maintenance windows via the [Liferay Cloud Platform](https://status.liferay.cloud/) status page.
 
-## Access the Status Page via the DXP Cloud Console
+## Access the Status Page via the Liferay Cloud Console
 
-Users can access the Liferay Cloud Platform status page via the DXP Cloud console:
+Users can access the Liferay Cloud Platform status page via the Liferay Cloud console:
 
 1. Click on the *Help* icon at the top right of the console page.
 
@@ -46,5 +46,5 @@ Click on *Subscribe to Updates*, and select the method of notification that is m
 
 ## Additional Information
 
-* [DXP Cloud Support Overview](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
+* [Liferay Cloud Support Overview](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
 * [Troubleshooting Tools and Resources](./troubleshooting-tools-and-resources.md)

@@ -1,10 +1,10 @@
 # Application Metrics
 
-With Liferay DXP Cloud's built-in monitoring, you can track resources used by each environment service. These application metrics include memory and CPU usage, as well as network data transfer. Metrics are available for the default DXP Cloud stack services: Webserver, Liferay, Search, Database, and Backup.
+With Liferay Cloud's built-in monitoring, you can track resources used by each environment service. These application metrics include memory and CPU usage, as well as network data transfer. Metrics are available for the default Liferay Cloud stack services: Webserver, Liferay, Search, Database, and Backup.
 
 ## Service Popover
 
-You can quickly see a service's current resource usage from several pages in your DXP Cloud environment, including the environment's _Overview_ and _Services_ pages, and the individual service pages. View a popover of any service's resource usage by hovering over the service's icon.
+You can quickly see a service's current resource usage from several pages in your Liferay Cloud environment, including the environment's _Overview_ and _Services_ pages, and the individual service pages. View a popover of any service's resource usage by hovering over the service's icon.
 
 ![Hover over a service's icon.](./application-metrics/images/01.png)
 
@@ -15,7 +15,7 @@ Users can view extended service metrics from the *Monitoring* page:
 1. Click *Monitoring* in the environment menu.
 1. Use the drop-down menus to select the service and time frame you want to monitor.
 
-![You can use DXP Cloud to monitor your services.](./application-metrics/images/02.png)
+![You can use Liferay Cloud to monitor your services.](./application-metrics/images/02.png)
 
 Users can also view extended service metrics from the *Services* page:
 
@@ -40,13 +40,13 @@ Here is an example of CPU and Memory allocation for the `liferay` service in its
 "cpu": 8
 ```
 
-Users can view allocated resources from the DXP Cloud console.
+Users can view allocated resources from the Liferay Cloud console.
 
-![View resources allocated to your environment services from the DXP Cloud console.](./application-metrics/images/04.png)
+![View resources allocated to your environment services from the Liferay Cloud console.](./application-metrics/images/04.png)
 
 ## Advanced Application Metrics (Production Only)
 
-With Liferay DXP Cloud, you can integrate [Dynatrace's](https://www.dynatrace.com/) advanced performance monitoring with your production environments.
+With Liferay Cloud, you can integrate [Dynatrace's](https://www.dynatrace.com/) advanced performance monitoring with your production environments.
 
 See the [Dynatrace limitations](../reference/platform-limitations.md#dynatrace) for more information.
 
@@ -83,7 +83,7 @@ See the [official Dynatrace documentation](https://www.dynatrace.com/support/hel
 
 ### Accessing Dynatrace
 
-Now you can access Dynatrace's advanced performance monitoring from the DXP Cloud console:
+Now you can access Dynatrace's advanced performance monitoring from the Liferay Cloud console:
 
 1. Navigate to a production environment.
 
@@ -93,7 +93,7 @@ Now you can access Dynatrace's advanced performance monitoring from the DXP Clou
 
 1. Click the *Go to Dynatrace Dashboard* button to access your Dynatrace dashboard.
 
-	![Access the Dynatrace dashboard from the DXP Cloud Console](./application-metrics/images/05.png)
+	![Access the Dynatrace dashboard from the Liferay Cloud Console](./application-metrics/images/05.png)
 
 Log in with your Dynatrace credentials to check log trails and create custom dashboards.
 

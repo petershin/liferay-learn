@@ -1,6 +1,6 @@
 # Team Activities
 
-Keeping track of activities within each project environment is essential. With Liferay DXP Cloud, you can monitor builds, deployments, and other project activities via the web console.
+Keeping track of activities within each project environment is essential. With Liferay Cloud, you can monitor builds, deployments, and other project activities via the web console.
 
 ## Types of Environment Activities
 
@@ -32,16 +32,16 @@ View extended records of environment activities from the *Activities* page:
 
 1. Click on *Activities* in the environment menu.
 
-This page lists all activities that have occurred on the DXP Cloud instance.
+This page lists all activities that have occurred on the Liferay Cloud instance.
 
 ![Figure 2: View extended environment activities from the Activities page.](./team-activities/images/02.png)
 
 ```{note}
-You can also view all build and deployment activities from your project environments via the *Builds* and *Deployments* pages. See [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information about these pages.
+You can also view all build and deployment activities from your project environments via the *Builds* and *Deployments* pages. See [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information about these pages.
 ```
 
 ## Additional Information
 
 * [Environment Teams and Roles](./environment-teams-and-roles.md)
-* [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
 * [Log Management](../troubleshooting/reading-dxp-cloud-service-logs.md)

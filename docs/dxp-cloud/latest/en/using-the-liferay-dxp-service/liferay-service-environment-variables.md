@@ -1,6 +1,6 @@
 # Liferay Service Environment Variables
 
-The Liferay service has a [range of environment variables](#environoment-variables-reference) that are used to configure the service, its connection to other services, and the DXP installation itself. You can use DXP Cloud-specific environment variables, or you can define variables that override DXP [portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html).
+The Liferay service has a [range of environment variables](#environoment-variables-reference) that are used to configure the service, its connection to other services, and the DXP installation itself. You can use Liferay Cloud-specific environment variables, or you can define variables that override DXP [portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html).
 
 ## Overriding Portal Properties
 
@@ -22,7 +22,7 @@ Environment variables overriding portal properties:
 
 * Must only consist of uppercase letters, digits, and the underscore (`_`) character. Any character that does not fit this constraint must be converted to its corresponding [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) or [Unicode](https://unicode-table.com/en/) endpoint (converted to decimal).
 
-To meet these requirements, you must convert any portal properties to this format. This allows DXP Cloud to properly recognize the full name and match it to its corresponding portal property.
+To meet these requirements, you must convert any portal properties to this format. This allows Liferay Cloud to properly recognize the full name and match it to its corresponding portal property.
 
 Use these steps to convert a portal property name to an environment variable name:
 

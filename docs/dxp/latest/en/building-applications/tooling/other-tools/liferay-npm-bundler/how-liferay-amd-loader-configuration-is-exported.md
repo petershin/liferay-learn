@@ -7,7 +7,7 @@ If you don't understand how Liferay AMD Loader works under the hood, please read
 With [de-duplication](./how-portal-publishes-npm-packages.md#package-de-duplication) in place, JavaScript modules are made available to Liferay AMD Loader through the configuration returned by the `/o/js_loader_modules` URL.
 
 The OSGi bundle shown below is used for reference in this article:
-<!-- TODO: Update the following bullets into an actual dir structure diagram akin to: https://learn.liferay.com/dxp-cloud/latest/en/reference/upgrading-your-liferay-cloud-stack.html#preparing-to-upgrade -->
+<!-- TODO: Update the following bullets into an actual dir structure diagram akin to: https://learn.liferay.com/liferay-cloud/latest/en/reference/upgrading-your-liferay-cloud-stack.html#preparing-to-upgrade -->
 * `my-bundle/`
     * `META-INF/`
         * `resources/`

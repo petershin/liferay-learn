@@ -32,9 +32,9 @@ Liferay Tomcatバンドルは、任意のサーバーに抽出、構成、およ
 もちろん、オンプレミスでサポートされている任意のアプリケーションサーバーにLiferayをいつでもインストールできます。
 
 ```{note}
-エンタープライズサブスクライバーは、Liferay DXP Cloud上で [Liferay DXPをサービスとしてデプロイ](https://learn.liferay.com/dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html) できます。 DXP Cloudは、インフラストラクチャコスト（ハードウェア、電気料金）を削減し、より多くの顧客を処理するために迅速に拡張し、市場投入までの時間を短縮し、使用方法も簡単です。
+エンタープライズサブスクライバーは、Liferay Cloud上で [Liferay DXPをサービスとしてデプロイ](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html) できます。 Liferay Cloudは、インフラストラクチャコスト（ハードウェア、電気料金）を削減し、より多くの顧客を処理するために迅速に拡張し、市場投入までの時間を短縮し、使用方法も簡単です。
 
-DXPクラウドにご興味のある方は、DXP Cloud [製品情報](https://www.liferay.com/products/dxp-cloud) をご覧いただくか、Liferayの担当者にお問い合わせください。
+DXPクラウドにご興味のある方は、Liferay Cloud [製品情報](https://www.liferay.com/products/liferay-cloud) をご覧いただくか、Liferayの担当者にお問い合わせください。
 ```
 
 自分のマシンでLiferayを開発したい場合は、次の便利なオプションを検討してください。

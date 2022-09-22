@@ -63,7 +63,7 @@ Liferay Cloudのコンソールですべての環境アラートを表示し、�
 
 ![図4：Liferay CloudコンソールのLogsページによるログの表示](./troubleshooting-tools-and-resources/images/04.png)
 
-詳しくは [Log Management](./reading-dxp-cloud-service-logs.md) をご覧ください。
+詳しくは [Log Management](./reading-liferay-cloud-service-logs.md) をご覧ください。
 
 ## シェルアクセス
 

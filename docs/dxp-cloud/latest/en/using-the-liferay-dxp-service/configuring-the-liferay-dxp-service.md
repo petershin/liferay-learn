@@ -102,6 +102,6 @@ See [Liferay Service Environment Variables](./liferay-service-environment-variab
 ## Additional Information
 
 * [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
-* [Enabling Clustering in Liferay Cloud](./setting-up-clustering-in-dxp-cloud.md)
+* [Enabling Clustering in Liferay Cloud](./setting-up-clustering-in-liferay-cloud.md)
 * [Portal Properties](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)
 * [Liferay Service Environment Variables](./liferay-service-environment-variables.md)

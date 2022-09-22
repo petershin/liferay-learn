@@ -30,6 +30,6 @@ Liferay Cloudでは、プロジェクトのGitリポジトリ（例： [GitHub](
 
 ## 追加情報
 
-* [Liferay Cloud開発ワークフローの概要](./overview-of-the-dxp-cloud-deployment-workflow.md)
-* [Liferay Cloudコンソールによる変更の展開](./deploying-changes-via-the-dxp-cloud-console.md)
+* [Liferay Cloud開発ワークフローの概要](./overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloudコンソールによる変更の展開](./deploying-changes-via-the-liferay-cloud-console.md)
 * [CLIツールによる変更点のデプロイ](./deploying-changes-via-the-cli-tool.md)

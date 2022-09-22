@@ -12,7 +12,7 @@
    manage-and-optimize.md
    platform-services.md
    infrastructure-and-operations.md
-   migrating-to-dxp-cloud.md
+   migrating-to-liferay-cloud.md
    troubleshooting.md
    reference.md
 

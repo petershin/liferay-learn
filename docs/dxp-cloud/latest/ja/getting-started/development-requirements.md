@@ -29,5 +29,5 @@ Liferay Cloud は、 [Liferay Workspace](https://help.liferay.com/hc/ja/articles
 * [Github リポジトリの設定](../getting-started/configuring-your-github-repository.md)
 * [Bitbucketリポジトリの設定](./configuring-your-bitbucket-repository.md)
 * [GitHubリポジトリの設定](./configuring-your-gitlab-repository.md)
-* [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [Liferay DXPインスタンスへのログイン](../getting-started/logging-into-your-dxp-cloud-services.md)
+* [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay DXPインスタンスへのログイン](../getting-started/logging-into-your-liferay-cloud-services.md)

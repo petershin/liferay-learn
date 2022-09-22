@@ -27,7 +27,7 @@ Liferay Cloudは、高効率なCI/CD戦略を実現するための強固なフ�
 
 すべてのプロジェクト環境のビルドの履歴にアクセスするには、Liferay Cloudコンソールの **Builds** ページに移動します。 ここでは、CIサービスまたはCLIツールのいずれかによって開始されたすべてのビルドを、その一般的な情報やステータス（保留、通過、失敗など）とともに表示することができます。
 
-![ビルドページからプロジェクトのビルドにアクセスできます。](./overview-of-the-dxp-cloud-deployment-workflow/images/01.png)
+![ビルドページからプロジェクトのビルドにアクセスできます。](./overview-of-the-liferay-cloud-deployment-workflow/images/01.png)
 
 ## デプロイ
 
@@ -51,9 +51,9 @@ CLIツールでデプロイする場合、すべてのサービスを一度に�
 
 Liferay Cloudコンソールは、プロジェクトの変更をデプロイするための主要な方法です。 これを使用すると、成功したビルドを表示して選択し、選択した環境にデプロイできます。 これらには、CIサービスとCLIツールの両方で生成されたビルドが含まれており、Liferay Cloudコンソールの **Builds** ページからアクセスできます。 **本番環境にデプロイする前に、必ず `dev` または `uat` の環境を選び、変更点を検証してください。**
 
-デプロイメントのワークフローについては、 [Liferay Cloud Consoleによる変更のデプロイメント](./deploying-changes-via-the-dxp-cloud-console.md) を参照してください。
+デプロイメントのワークフローについては、 [Liferay Cloud Consoleによる変更のデプロイメント](./deploying-changes-via-the-liferay-cloud-console.md) を参照してください。
 
-![Liferay Cloudコンソールからビルドをデプロイします。](./overview-of-the-dxp-cloud-deployment-workflow/images/02.png)
+![Liferay Cloudコンソールからビルドをデプロイします。](./overview-of-the-liferay-cloud-deployment-workflow/images/02.png)
 
 ### オプション3：自動的にビルドを `dev`環境にデプロイ
 
@@ -63,5 +63,5 @@ Liferay Cloudコンソールは、プロジェクトの変更をデプロイす�
 
 * [デプロイタイプについて](./understanding-deployment-types.md)
 * [デプロイメント戦略について](./understanding-deployment-strategies.md)
-* [Liferay Cloudコンソールによる変更の展開](./deploying-changes-via-the-dxp-cloud-console.md)
+* [Liferay Cloudコンソールによる変更の展開](./deploying-changes-via-the-liferay-cloud-console.md)
 * [CLIツールによる変更点のデプロイ](./deploying-changes-via-the-cli-tool.md)

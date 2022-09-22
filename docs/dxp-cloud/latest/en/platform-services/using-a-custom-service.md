@@ -74,7 +74,7 @@ Use the following steps to add your own custom service to a build in Liferay Clo
     git commit -m "Add custom service"
     ```
 
-1. Push your branch up and start a new build in Liferay Cloud to deploy. See the information on deployment in the [Overview of Liferay Cloud Deployment](./overview-of-the-dxp-cloud-deployment-workflow#deploy) for help with deploying your build.
+1. Push your branch up and start a new build in Liferay Cloud to deploy. See the information on deployment in the [Overview of Liferay Cloud Deployment](./overview-of-the-liferay-cloud-deployment-workflow#deploy) for help with deploying your build.
 
 Once you have triggered a new build in CI with your changes, you can navigate to the _Builds_ screen in the Liferay Cloud console to see the build. The services listed under the _Services_ column includes the new service with the others.
 
@@ -84,4 +84,4 @@ If you deploy this build to one of your environments (by clicking _Deploy Build 
 
 ## Additional Information
 
-* [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow)
+* [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)

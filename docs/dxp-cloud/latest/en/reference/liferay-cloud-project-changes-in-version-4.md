@@ -1,4 +1,4 @@
-# DXP Cloud Project Changes in Version 4
+# Liferay Cloud Project Changes in Version 4
 
 Several changes are made between version 3.x and 4.x of the Liferay Cloud stack, including where Docker image versions are defined for your services, the structure of the repository, and how `Jenkinsfiles` are used.
 
@@ -149,8 +149,8 @@ All `.sql` scripts deployed to the `backup` service are executed automatically a
 
 The new stack does not contain a docker-compose file to spin up a local environment. Because of this, a DXP bundle is needed for local testing.
 
-You can test changes in a local environment, and then migrate them to Liferay Cloud. See [Migrating to Liferay Cloud](../migrating-to-dxp-cloud.md) for more help.
+You can test changes in a local environment, and then migrate them to Liferay Cloud. See [Migrating to Liferay Cloud](../migrating-to-liferay-cloud.md) for more help.
 
 ## Additional Information
 
-* [Upgrading Your Liferay Cloud Stack](./upgrading-your-dxp-cloud-stack.md)
+* [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)

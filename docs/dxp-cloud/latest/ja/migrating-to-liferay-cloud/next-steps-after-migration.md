@@ -2,7 +2,7 @@
 
 　 このセクションの前の段階がすべて完了したなら、オンプレミスの Liferay DXP インストールを Liferay Cloud に正常に移行したことになります!
 
-Liferay DXPがLiferay Cloud上で動作するようになったので、 [自動バックアップ](../platform-services/backup-service/backup-service-overview.md), [内蔵継続的インテグレーション](../platform-services/continuous-integration.md), 自動 [サービスログ](../troubleshooting/reading-dxp-cloud-service-logs.md), 内蔵 [セキュリティ機能](../infrastructure-and-operations/security/information-security-and-dxp-cloud.md)などその機能を利用する準備が整ったことになります。
+Liferay DXPがLiferay Cloud上で動作するようになったので、 [自動バックアップ](../platform-services/backup-service/backup-service-overview.md), [内蔵継続的インテグレーション](../platform-services/continuous-integration.md), 自動 [サービスログ](../troubleshooting/reading-liferay-cloud-service-logs.md), 内蔵 [セキュリティ機能](../infrastructure-and-operations/security/information-security-and-liferay-cloud.md)などその機能を利用する準備が整ったことになります。
 
 しかし、Liferay Cloudの機能をフルに活用するためには、導入時にいくつかの追加手順が必要です。
 
@@ -24,7 +24,7 @@ Liferay Cloudの管理者は、必要に応じて他のメンバーを招待し�
 
 シングルサインオンは、DXPクラウドインスタンスでLiferayのユーザーを認証するために、お好みのIDプロバイダーを使用することができます。 これにより、サインオン・エクスペリエンスがよりスムーズになり、プロジェクトの他の部分とより統合された印象を与えることができます。
 
-Liferay Cloudは、SAML2.0に準拠したSignle Sign-On Identity Providerをサポートしています。 詳細は、 [Liferay CloudでのSSOの使用](../infrastructure-and-operations/security/using-sso-with-dxp-cloud.md) を参照してください。
+Liferay Cloudは、SAML2.0に準拠したSignle Sign-On Identity Providerをサポートしています。 詳細は、 [Liferay CloudでのSSOの使用](../infrastructure-and-operations/security/using-sso-with-liferay-cloud.md) を参照してください。
 
 ## カスタムドメインの追加
 
@@ -66,10 +66,10 @@ Liferay CloudでLiferayを使い始めるにあたり、アプリケーション
 
 * 本番環境では、 [Dynatrace integration](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) を使用して、より高度なパフォーマンスメトリクスを使用することもできます。 **これを使用するには、LiferayCloudサブスクリプションに特定のDynatraceアドオンが必要であることに注意してください。**
 
-Liferay Cloud上のインスタンスは、オンプレミスインスタンスと同様に、お客様ご自身でパフォーマンステストと最適化を行う必要があります。 サービスデータ、メトリクス、 [ロギング](../troubleshooting/reading-dxp-cloud-service-logs.md) が利用できるので、テストに役立てることができます。
+Liferay Cloud上のインスタンスは、オンプレミスインスタンスと同様に、お客様ご自身でパフォーマンステストと最適化を行う必要があります。 サービスデータ、メトリクス、 [ロギング](../troubleshooting/reading-liferay-cloud-service-logs.md) が利用できるので、テストに役立てることができます。
 
 ## Liferay Cloudでの開発を開始する
 
 Liferay Cloud への移行が完了し、 [カスタマイズを](./migrating-dxp-configurations-and-customizations.md)配置したので、変更をクラウド環境に配備して開発を継続することができます。 もしまだなら、 [コマンドラインツール](../reference/command-line-tool.md) に慣れることは、開発作業を行う上で助けになります。
 
-[DXPクラウドコンソール](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)を介して、サービスをデプロイすることに加えて、 [自動デプロイ](../build-and-deploy/automatically-deploying-ci-service-builds.md)を構成して、開発環境のプロセスを高速化することもできます。また、CIサービスが利用する[Jenkinsパイプラインをカスタマイズして](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)、自分のニーズに合わせることもできます。Liferay Cloudのデプロイワークフローについて、詳しくは[こちら](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)をご参照ください。
+[DXPクラウドコンソール](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)を介して、サービスをデプロイすることに加えて、 [自動デプロイ](../build-and-deploy/automatically-deploying-ci-service-builds.md)を構成して、開発環境のプロセスを高速化することもできます。また、CIサービスが利用する[Jenkinsパイプラインをカスタマイズして](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)、自分のニーズに合わせることもできます。Liferay Cloudのデプロイワークフローについて、詳しくは[こちら](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)をご参照ください。

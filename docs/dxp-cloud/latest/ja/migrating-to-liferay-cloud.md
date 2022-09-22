@@ -1,27 +1,27 @@
 ---
 toc:
-- ./migrating-to-dxp-cloud/matching-dxp-versions.md
-- ./migrating-to-dxp-cloud/creating-data-backup-files.md
-- ./migrating-to-dxp-cloud/uploading-and-restoring-the-data-backup.md
-- ./migrating-to-dxp-cloud/migrating-dxp-configurations-and-customizations.md
-- ./migrating-to-dxp-cloud/migrating-web-server-configurations.md
-- ./migrating-to-dxp-cloud/migrating-search-configurations.md
-- ./migrating-to-dxp-cloud/connecting-the-vpn.md
-- ./migrating-to-dxp-cloud/next-steps-after-migration.md
+- ./migrating-to-liferay-cloud/matching-dxp-versions.md
+- ./migrating-to-liferay-cloud/creating-data-backup-files.md
+- ./migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.md
+- ./migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.md
+- ./migrating-to-liferay-cloud/migrating-web-server-configurations.md
+- ./migrating-to-liferay-cloud/migrating-search-configurations.md
+- ./migrating-to-liferay-cloud/connecting-the-vpn.md
+- ./migrating-to-liferay-cloud/next-steps-after-migration.md
 ---
 # DXPクラウドへの移行
 
 ```{toctree}
 :maxdepth: 1
 
-migrating-to-dxp-cloud/matching-dxp-versions.md
-migrating-to-dxp-cloud/creating-data-backup-files.md
-migrating-to-dxp-cloud/uploading-and-restoring-the-data-backup.md
-migrating-to-dxp-cloud/migrating-dxp-configurations-and-customizations.md
-migrating-to-dxp-cloud/migrating-web-server-configurations.md
-migrating-to-dxp-cloud/migrating-search-configurations.md
-migrating-to-dxp-cloud/connecting-the-vpn.md
-migrating-to-dxp-cloud/next-steps-after-migration.md
+migrating-to-liferay-cloud/matching-dxp-versions.md
+migrating-to-liferay-cloud/creating-data-backup-files.md
+migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.md
+migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.md
+migrating-to-liferay-cloud/migrating-web-server-configurations.md
+migrating-to-liferay-cloud/migrating-search-configurations.md
+migrating-to-liferay-cloud/connecting-the-vpn.md
+migrating-to-liferay-cloud/next-steps-after-migration.md
 ```
 
 Liferay Cloudは、高い可用性、スケーラビリティ、およびパフォーマンスのために構築された、安全で信頼性の高いエンタープライズプラットフォームです。 Liferay Cloud上でLiferay DXPインスタンスを実行すると、 [機能が提供されます。](./getting-started.md) 、ユーザーに安全で信頼性の高い、スムーズなエクスペリエンスを確保します。
@@ -30,18 +30,18 @@ Liferay Cloudは、高い可用性、スケーラビリティ、およびパフ�
 
 Liferay Cloudへの移行の主な段階を紹介します。
 
-- [ステージ1：DXPバージョンのマッチング](./migrating-to-dxp-cloud/matching-dxp-versions.md)
-- [ステージ2：データバックアップファイルの作成](./migrating-to-dxp-cloud/creating-data-backup-files.md)
-- [ステージ3：データバックアップのアップロードとリストア](./migrating-to-dxp-cloud/uploading-and-restoring-the-data-backup.md)
-- [ステージ4：DXPの設定とカスタマイズの移行](./migrating-to-dxp-cloud/migrating-dxp-configurations-and-customizations.md)
-- [第5ステージウェブサーバー設定の移行](./migrating-to-dxp-cloud/migrating-web-server-configurations.md)
-- [ステージ6:検索設定の移行](./migrating-to-dxp-cloud/migrating-search-configurations.md)
-- [ステージ 7:VPNを接続する](./migrating-to-dxp-cloud/connecting-the-vpn.md)
-- [第8ステージ移行後の次のステップ](./migrating-to-dxp-cloud/next-steps-after-migration.md)
+- [ステージ1：DXPバージョンのマッチング](./migrating-to-liferay-cloud/matching-dxp-versions.md)
+- [ステージ2：データバックアップファイルの作成](./migrating-to-liferay-cloud/creating-data-backup-files.md)
+- [ステージ3：データバックアップのアップロードとリストア](./migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.md)
+- [ステージ4：DXPの設定とカスタマイズの移行](./migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.md)
+- [第5ステージウェブサーバー設定の移行](./migrating-to-liferay-cloud/migrating-web-server-configurations.md)
+- [ステージ6:検索設定の移行](./migrating-to-liferay-cloud/migrating-search-configurations.md)
+- [ステージ 7:VPNを接続する](./migrating-to-liferay-cloud/connecting-the-vpn.md)
+- [第8ステージ移行後の次のステップ](./migrating-to-liferay-cloud/next-steps-after-migration.md)
 
 ## なぜLiferay Cloudに移行する必要があるのでしょうか？
 
-Liferay Cloud に移行することで、 [高可用性と拡張性](./getting-started.md#high-availability-scalability-and-performance) [クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md), [ロードバランシング](infrastructure-and-operations/networking/load-balancer.md), [オートスケーリング](./manage-and-optimize/auto-scaling.md) といったすぐに導入できる機能を活用することができるようになります。 内蔵の [Git および Jenkins](./getting-started.md#accelerated-development-with-built-in-ci-cd) との統合も、開発プロセスを合理化します。 これにより、本番用インスタンスのデプロイと開発が容易になり、ニーズに合わせてより柔軟に、そしてユーザーにとってより信頼性の高いものになります。
+Liferay Cloud に移行することで、 [高可用性と拡張性](./getting-started.md#high-availability-scalability-and-performance) [クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md), [ロードバランシング](infrastructure-and-operations/networking/load-balancer.md), [オートスケーリング](./manage-and-optimize/auto-scaling.md) といったすぐに導入できる機能を活用することができるようになります。 内蔵の [Git および Jenkins](./getting-started.md#accelerated-development-with-built-in-ci-cd) との統合も、開発プロセスを合理化します。 これにより、本番用インスタンスのデプロイと開発が容易になり、ニーズに合わせてより柔軟に、そしてユーザーにとってより信頼性の高いものになります。
 
 ## 事前に準備するものは？
 
@@ -49,7 +49,7 @@ Liferay Cloud に移行することで、 [高可用性と拡張性](./getting-s
 
 ### プラン・アヘッド
 
-移行準備のために行う最初の重要な作業は、前もって計画を立て、そのための時間を確保することです。 データベース管理者と協力して、移行のステップが完了したら移行を行う時間、および [第 2 段階の移行](./migrating-to-dxp-cloud/creating-data-backup-files.md#freeze-the-data) （データベースとドキュメントライブラリのバックアップファイルの作成）のためにデータを凍結するウィンドウを手配してください。
+移行準備のために行う最初の重要な作業は、前もって計画を立て、そのための時間を確保することです。 データベース管理者と協力して、移行のステップが完了したら移行を行う時間、および [第 2 段階の移行](./migrating-to-liferay-cloud/creating-data-backup-files.md#freeze-the-data) （データベースとドキュメントライブラリのバックアップファイルの作成）のためにデータを凍結するウィンドウを手配してください。
 
 事前に移行のステップを確認し、何が起こるか、移行にどれくらいの時間がかかるかを把握しておくこと。
 
@@ -78,4 +78,4 @@ Liferay Cloudへの移行には、独自のカスタムコード、モジュー�
 
 ## 移行はどのように行うのですか？
 
-ローカルの Liferay DXP インスタンスにアクセスできることを確認し、 [リポジトリ](#prepare-the-environment) を移行に使用します。 そして、準備ができたら、 [ステージ1：DXPバージョンのマッチング](./migrating-to-dxp-cloud/matching-dxp-versions.md) から始めてください。
+ローカルの Liferay DXP インスタンスにアクセスできることを確認し、 [リポジトリ](#prepare-the-environment) を移行に使用します。 そして、準備ができたら、 [ステージ1：DXPバージョンのマッチング](./migrating-to-liferay-cloud/matching-dxp-versions.md) から始めてください。

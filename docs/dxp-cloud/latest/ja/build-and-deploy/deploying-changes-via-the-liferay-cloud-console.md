@@ -32,7 +32,7 @@
    ```
 
    ```{note}
-   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev` となります。 ディレクトリ構造の違いについては [バージョン4におけるLiferay Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md) サービスのバージョンの確認方法については [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) をご参照ください。
+   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev` となります。 ディレクトリ構造の違いについては [バージョン4におけるLiferay Cloudプロジェクトの変更](../reference/liferay-cloud-project-changes-in-version-4.md) サービスのバージョンの確認方法については [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) をご参照ください。
    ```
 
 1. 以下のコマンドで、 `portal-env.properties` ファイルに変更を追加し、コミットします。
@@ -57,13 +57,13 @@
 
 1. Gitリポジトリに移動し、プロジェクトの中央リポジトリへの新しいプルリクエストを使ってJenkinsのビルドを開始します。
 
-   ![プロジェクトのセントラル・リポジトリへの新しいプルリクエストによって、Jenkinsのビルドが開始されます。](./deploying-changes-via-the-dxp-cloud-console/images/01.png)
+   ![プロジェクトのセントラル・リポジトリへの新しいプルリクエストによって、Jenkinsのビルドが開始されます。](./deploying-changes-via-the-liferay-cloud-console/images/01.png)
 
    ビルドの状況を把握したり、詳細なログを見るには、プロジェクトのJenkinsページから行うことができます。 `https://ci-<project-name>-infra.lfr.cloud`
 
-   ![プロジェクトのJenkinsページでビルドのステータスを追跡](./deploying-changes-via-the-dxp-cloud-console/images/02.png)
+   ![プロジェクトのJenkinsページでビルドのステータスを追跡](./deploying-changes-via-the-liferay-cloud-console/images/02.png)
 
-   ![プロジェクトのJenkinsページから詳細なログを見ることができます。](./deploying-changes-via-the-dxp-cloud-console/images/03.png)
+   ![プロジェクトのJenkinsページから詳細なログを見ることができます。](./deploying-changes-via-the-liferay-cloud-console/images/03.png)
 
 ## Liferay Cloudコンソールによる新規ビルドのデプロイメント
 
@@ -73,15 +73,15 @@
 
 1. デプロイしたいビルドの ［**Actions**］ ボタン（⋮）をクリックし、 ［**Deploy Build To...**］ を選択します。
 
-   ![ビルドページからビルドの表示とデプロイを行うことができます。](./deploying-changes-via-the-dxp-cloud-console/images/04.png)
+   ![ビルドページからビルドの表示とデプロイを行うことができます。](./deploying-changes-via-the-liferay-cloud-console/images/04.png)
 
 1. ドロップダウンメニューを使って、 `dev` の環境を選択します。
 
-   ![開発環境を選択し、［Deploy Build］をクリックします。](./deploying-changes-via-the-dxp-cloud-console/images/05.png)
+   ![開発環境を選択し、［Deploy Build］をクリックします。](./deploying-changes-via-the-liferay-cloud-console/images/05.png)
 
 1. チェックボックスを使ってデプロイを確認し、 ［**Deploy Build**］ をクリックします。
 
-   ![チェックボックスを使ってデプロイを確認し、［Deploy Build］をクリックします。](./deploying-changes-via-the-dxp-cloud-console/images/06.png)
+   ![チェックボックスを使ってデプロイを確認し、［Deploy Build］をクリックします。](./deploying-changes-via-the-liferay-cloud-console/images/06.png)
 
    ```{tip}
    また、デプロイしたいビルドの*Build ID*をクリックすると、*Deploy Build to...*のページにアクセスできます。
@@ -89,7 +89,7 @@
 
    デプロイメントのステータスは、 **デプロイメント** ページや、  `dev` 環境の **ログ** および **アクティビティ** ページから見ることができます。
 
-   ![デプロイメントページからデプロイメントのステータスを確認する](./deploying-changes-via-the-dxp-cloud-console/images/07.png)
+   ![デプロイメントページからデプロイメントのステータスを確認する](./deploying-changes-via-the-liferay-cloud-console/images/07.png)
 
 ## サンプルデプロイメントの検証
 
@@ -99,15 +99,15 @@
 
 1. **Web Server** サービスのページにアクセスし、その URL をクリックして、 `dev` 環境の DXP インスタンスにアクセスします：`https://webserver-<project-name>-dev.lfr.cloud/`。
 
-   ![開発環境のDXPインスタンスにアクセスするために、WebサーバのURLをクリックします。](./deploying-changes-via-the-dxp-cloud-console/images/08.png)
+   ![開発環境のDXPインスタンスにアクセスするために、WebサーバのURLをクリックします。](./deploying-changes-via-the-liferay-cloud-console/images/08.png)
 
 1. ホームページの下部にWebサーバーのノードが表示されていることを確認します。
 
-   ![ホームページの下部にWebサーバーのノードが表示されていることを確認します。](./deploying-changes-via-the-dxp-cloud-console/images/09.png)
+   ![ホームページの下部にWebサーバーのノードが表示されていることを確認します。](./deploying-changes-via-the-liferay-cloud-console/images/09.png)
 
 ## 追加情報
 
-* [DXPクラウド開発ワークフローの概要](./overview-of-the-dxp-cloud-deployment-workflow.md)
+* [DXPクラウド開発ワークフローの概要](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLIツールによる変更点のデプロイ](./deploying-changes-via-the-cli-tool.md)
 * [自動デプロイメントの設定](./automatically-deploying-ci-service-builds.md)
 * [Liferay DXPサービスの設定　](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)

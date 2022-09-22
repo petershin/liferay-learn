@@ -58,7 +58,7 @@ Jenkins(CI)とLiferay DXPにログインして、それぞれのWebインター�
 
 どちらのログイン資格も最初のオンボーディング メールで提供されていますが、 **環境変数** の下に、 **infra** 環境の **ci** サービス ページにも記載されています。
 
-詳しい手順については、 [Liferay Cloudサービスへのログイン](./logging-into-your-dxp-cloud-services.md) をご覧ください。
+詳しい手順については、 [Liferay Cloudサービスへのログイン](./logging-into-your-liferay-cloud-services.md) をご覧ください。
 
 ## セットアップの確認
 
@@ -99,5 +99,5 @@ Liferay Cloudのスタックサービスが正しく展開されていること�
 ## 追加情報
 
 - [GitHubリポジトリの設定](./configuring-your-github-repository.md)
-- [DXPのクラウド環境を理解する](./understanding-dxp-cloud-environments.md)
-- [DXPクラウドサービスへログインする](./logging-into-your-dxp-cloud-services.md)
+- [DXPのクラウド環境を理解する](./understanding-liferay-cloud-environments.md)
+- [DXPクラウドサービスへログインする](./logging-into-your-liferay-cloud-services.md)

@@ -259,4 +259,4 @@ For Windows 7 and 8, go to *Control Panel* &rarr; *Add or Remove Programs*. In W
 
 * [Troubleshooting Tools and Resources](../troubleshooting/troubleshooting-tools-and-resources.md)
 * [Deploying Changes Via the CLI Tool](../build-and-deploy/deploying-changes-via-the-cli-tool.md)
-* [Upgrading Your Liferay Cloud Stack](./upgrading-your-dxp-cloud-stack.md)
+* [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)

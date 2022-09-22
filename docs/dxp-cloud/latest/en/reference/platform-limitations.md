@@ -151,7 +151,7 @@ These limitations apply to any [custom services](../platform-services/using-a-cu
 
 These limitations apply to the security features available within Liferay Cloud:
 
-* **Antivirus**: The default Liferay DXP feature for scanning viruses on file upload cannot be used. Liferay Cloud's [Antivirus solution](./dxp-cloud-infrastructure.md#antivirus) is used instead. Uploaded content is scanned on a schedule, and thus risks may not be detected immediately when a file is uploaded.
+* **Antivirus**: The default Liferay DXP feature for scanning viruses on file upload cannot be used. Liferay Cloud's [Antivirus solution](./liferay-cloud-infrastructure.md#antivirus) is used instead. Uploaded content is scanned on a schedule, and thus risks may not be detected immediately when a file is uploaded.
 
 * **Authentications per Minute**: A maximum of 8400 authentications are allowed per minute.
 

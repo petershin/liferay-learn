@@ -1,6 +1,6 @@
 # Understanding Service Stack Versions
 
-The Liferay Cloud service stack represents the major version of all of the services in your Liferay Cloud environment. Each individual service may have a different minor version, but they all share the service stack version (e.g., version 4.x.x). New service stack versions generally introduce a variety of new features (such as the addition of a default Jenkinsfile, and a new repository structure in [version 4.x.x](./dxp-cloud-project-changes-in-version-4.md)).
+The Liferay Cloud service stack represents the major version of all of the services in your Liferay Cloud environment. Each individual service may have a different minor version, but they all share the service stack version (e.g., version 4.x.x). New service stack versions generally introduce a variety of new features (such as the addition of a default Jenkinsfile, and a new repository structure in [version 4.x.x](./liferay-cloud-project-changes-in-version-4.md)).
 
 The version of the Liferay Cloud service stack itself is indicated by the major version of your services' Docker images. This version is the last number that appears in the Docker image name.
 
@@ -18,7 +18,7 @@ Any Liferay Cloud environment displays the version of its services' Docker image
 
 ## Verifying the Service Stack Version from the Repository
 
-Docker image versions are defined in different locations depending on whether or not the service stack has been upgraded to 4.x.x. Because of this, you must check different locations for each version. For more information about the differences before and after upgrading to 4.x.x, see the [Liferay Cloud Project Changes in Version 4](./dxp-cloud-project-changes-in-version-4.md).
+Docker image versions are defined in different locations depending on whether or not the service stack has been upgraded to 4.x.x. Because of this, you must check different locations for each version. For more information about the differences before and after upgrading to 4.x.x, see the [Liferay Cloud Project Changes in Version 4](./liferay-cloud-project-changes-in-version-4.md).
 
 ### Checking Before the Upgrade to 4.x.x
 
@@ -52,10 +52,10 @@ For example, see this section of an `LCP.json` file for the `database` service:
 In this example, the `image` property's value has a name ending in `4.0.0`, indicating that the service stack is at version 4.x.x.
 
 ```{tip}
-Upgrading your service stack to version `4.x.x` is recommended for access to the latest improvements. See [Upgrading Your Liferay Cloud Stack](./upgrading-your-dxp-cloud-stack.md)_ for steps on performing the upgrade.
+Upgrading your service stack to version `4.x.x` is recommended for access to the latest improvements. See [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)_ for steps on performing the upgrade.
 ```
 
 ## Additional Information
 
-* [Liferay Cloud Project Changes in Version 4](./dxp-cloud-project-changes-in-version-4.md)
-* [Upgrading Your Liferay Cloud Stack](./upgrading-your-dxp-cloud-stack.md)
+* [Liferay Cloud Project Changes in Version 4](./liferay-cloud-project-changes-in-version-4.md)
+* [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)

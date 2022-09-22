@@ -5,7 +5,7 @@ With the CLI tool, you can directly deploy local project changes without trigger
 To get started, you first need the [CLI tool](../reference/command-line-tool.md) installed and ready to use, as well as a local copy of your project's Git repository (e.g., [GitHub](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github), [Bitbucket](https://confluence.atlassian.com/bitbucketserver/clone-a-repository-790632786.html), [GitLab](https://docs.gitlab.com/ee/university/training/topics/getting_started.html#instantiate-workflow-with-clone)).
 
 ```{note}
-Although the CLI tool provides a quick way to deploy changes to your project, it's best practice to use the CI service and Liferay Cloud console for the majority of deployments. See [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-dxp-cloud-console.md) to learn how.
+Although the CLI tool provides a quick way to deploy changes to your project, it's best practice to use the CI service and Liferay Cloud console for the majority of deployments. See [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-liferay-cloud-console.md) to learn how.
 ```
 
 If you are using version `3.x.x` services in your project, you must first [prepare](#preparing-lcpjson-files-in-project-version-3) their `LCP.json` files before deploying changes with the CLI tool.
@@ -62,7 +62,7 @@ Begin the deployment life cycle by adding a portal property to the `dev` environ
    ```
 
    ```{note}
-   If you're using version 3.x.x services, then the appropriate folder path is `lcp/liferay/deploy/dev`. See [Liferay Cloud Project Changes in Version 4](../reference/dxp-cloud-project-changes-in-version-4.md) for more information on the differences in the directory structure, and [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for how to check the version of your services.
+   If you're using version 3.x.x services, then the appropriate folder path is `lcp/liferay/deploy/dev`. See [Liferay Cloud Project Changes in Version 4](../reference/liferay-cloud-project-changes-in-version-4.md) for more information on the differences in the directory structure, and [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for how to check the version of your services.
    ```
 
 1. Add and commit your changes with the following commands:
@@ -142,5 +142,5 @@ Once your build has successfully deployed and your `dev` environment's Liferay s
 ## Additional Information
 
 * [Command-Line Tool](../reference/command-line-tool.md)
-* [Overview of the Liferay Cloud Development Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
-* [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-dxp-cloud-console.md)
+* [Overview of the Liferay Cloud Development Workflow](./overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-liferay-cloud-console.md)

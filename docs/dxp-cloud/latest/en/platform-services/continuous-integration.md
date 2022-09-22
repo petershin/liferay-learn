@@ -137,8 +137,8 @@ Name                                          | Default Value   | Description |
 
 ## Additional Information
 
-* [Logging into your Liferay Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
+* [Logging into your Liferay Cloud Services](../getting-started/logging-into-your-liferay-cloud-services.md)
 * [Configuring Your GitLab Repository](../getting-started/configuring-your-gitlab-repository.md)
 * [Configuring Your Bitbucket Repository](../getting-started/configuring-your-bitbucket-repository.md)
-* [DXP Cloud Project Changes in Version 4](../reference/dxp-cloud-project-changes-in-version-4.md)
+* [DXP Cloud Project Changes in Version 4](../reference/liferay-cloud-project-changes-in-version-4.md)
 <!-- While Version 3 is still supported, because of the fact a large part of this article hinges on the project version, this link may be helpful. This link should likely be removed once version 3 is no longer supported. -->

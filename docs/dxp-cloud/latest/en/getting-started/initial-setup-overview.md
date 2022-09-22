@@ -58,7 +58,7 @@ Log in to Jenkins (CI) and Liferay to directly access their web interfaces.
 
 Both login credentials are provided in the initial onboarding email, but they are also listed under *Environment Variables* in the *ci* service page of the *infra* environment.
 
-See [Logging into Your Liferay Cloud Services](./logging-into-your-dxp-cloud-services.md) for detailed instructions.
+See [Logging into Your Liferay Cloud Services](./logging-into-your-liferay-cloud-services.md) for detailed instructions.
 
 ## Verifying Setup
 
@@ -99,5 +99,5 @@ When properly deployed, the status of all 5 default Cloud Stack services should 
 ## Additional Information
 
 - [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
-- [Understanding Liferay Cloud Environments](./understanding-dxp-cloud-environments.md)
-- [Logging into Your Liferay Cloud Services](./logging-into-your-dxp-cloud-services.md)
+- [Understanding Liferay Cloud Environments](./understanding-liferay-cloud-environments.md)
+- [Logging into Your Liferay Cloud Services](./logging-into-your-liferay-cloud-services.md)

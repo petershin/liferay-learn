@@ -4,7 +4,7 @@ toc:
 - ./using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version.md
 - ./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
 - ./using-the-liferay-dxp-service/liferay-service-environment-variables.md
-- ./using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md
+- ./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
 - ./using-the-liferay-dxp-service/using-the-mysql-client.md
 - ./using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
 ---
@@ -53,7 +53,7 @@ Deploying custom additions to Liferay DXP involves adding the new module, licens
 
 With the exception of the `common/` directory, changes added to an environment-specific folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to a `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to all subfolders within the `configs/` directory, for all services.
 
-Because the Liferay service provides many more means of customization compared to other services (such as adding hotfixes, building your module's source code), there are several more considerations to make when deploying the service. See [Deploying to the Liferay Service](./deploying-to-the-liferay-service.md) for more information. Additionally, see [Overview of the Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information on how the deployment workflow in general. For a tutorial on deploying to Liferay Cloud, see [Deploying Changes via the DCP Cloud Console](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md).
+Because the Liferay service provides many more means of customization compared to other services (such as adding hotfixes, building your module's source code), there are several more considerations to make when deploying the service. See [Deploying to the Liferay Service](./deploying-to-the-liferay-service.md) for more information. Additionally, see [Overview of the Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) for more information on how the deployment workflow in general. For a tutorial on deploying to Liferay Cloud, see [Deploying Changes via the DCP Cloud Console](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md).
 
 ## Configuration
 
@@ -71,7 +71,7 @@ Using hot deploy in Liferay Cloud is *not* recommended because any customization
 
 ## Enabling Clustering
 
-Clustering Liferay DXP in Liferay Cloud is a very simplified process compared to doing so in Liferay DXP. Support for clustering is available and enabled out-of-the-box in Liferay Cloud. Additional configurations for clustering behavior and scale does require a few extra steps. See [Setting Up Clustering in Liferay Cloud](./setting-up-clustering-in-dxp-cloud.md) for more information.
+Clustering Liferay DXP in Liferay Cloud is a very simplified process compared to doing so in Liferay DXP. Support for clustering is available and enabled out-of-the-box in Liferay Cloud. Additional configurations for clustering behavior and scale does require a few extra steps. See [Setting Up Clustering in Liferay Cloud](./setting-up-clustering-in-liferay-cloud.md) for more information.
 
 ## Running Scripts
 
@@ -104,9 +104,9 @@ Liferay DXP has many powerful features to build, manage, and deploy content to t
 ## Additional Information
 
 * [Deploying to the Liferay Service](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md)
-* [Logging Into Your Liferay Cloud Services](getting-started/logging-into-your-dxp-cloud-services.md)
+* [Logging Into Your Liferay Cloud Services](getting-started/logging-into-your-liferay-cloud-services.md)
 * [Configuring the Liferay DXP Service](./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
-* [Deploying Changes via the DCP Cloud Console](build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)
+* [Deploying Changes via the DCP Cloud Console](build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
 
 ```{toctree}
 :maxdepth: 1
@@ -115,7 +115,7 @@ using-the-liferay-dxp-service/deploying-to-the-liferay-service.md
 using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version.md
 using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
 using-the-liferay-dxp-service/liferay-service-environment-variables.md
-using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md
+using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
 using-the-liferay-dxp-service/using-the-mysql-client.md
 using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
 ```

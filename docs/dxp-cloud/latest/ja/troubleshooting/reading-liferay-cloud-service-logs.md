@@ -36,7 +36,7 @@ Liferay Cloudの多くのログには、このメッセージが直接サービ�
 
 ログメッセージに関連付けられたインスタンスIDは、サービスのいずれかのインスタンスに対応しています。 ログページでは、ログの上にあるインスタンスのドロップダウンメニューをクリックすることで、サービス内のすべてのアクティブなインスタンスを確認（およびフィルタリング）することができます。
 
-![インスタンスのドロップダウンメニューをクリックすると、すべてのインスタンスが表示されます](./reading-dxp-cloud-service-logs/images/01.png)
+![インスタンスのドロップダウンメニューをクリックすると、すべてのインスタンスが表示されます](./reading-liferay-cloud-service-logs/images/01.png)
 
 インスタンスIDの形式は、サービスがどのような配布タイプ（展デプロイまたはステートフルセット）として構成されているかによって異なります。 詳細は、 [デプロイタイプについて](../build-and-deploy/understanding-deployment-types.md) を参照してください。
 
@@ -90,11 +90,11 @@ Liferay Cloudのコンソールから環境サービスログにアクセスす�
 
 ログをダウンロードするには、[**Download Logs**]をクリックします。
 
-![図1：ログページから環境ログを表示します。](./reading-dxp-cloud-service-logs/images/02.png)
+![図1：ログページから環境ログを表示します。](./reading-liferay-cloud-service-logs/images/02.png)
 
 また、各サービスのログは、各サービスの専用ページの **ログ** タブでご覧いただけます。
 
-![図2：各サービスの専用ページの［Logs］タブから、各サービスのログにアクセスし、ダウンロードすることができます。](./reading-dxp-cloud-service-logs/images/03.png)
+![図2：各サービスの専用ページの［Logs］タブから、各サービスのログにアクセスし、ダウンロードすることができます。](./reading-liferay-cloud-service-logs/images/03.png)
 
 <a name="accessing-logs-via-the-terminal" />
 

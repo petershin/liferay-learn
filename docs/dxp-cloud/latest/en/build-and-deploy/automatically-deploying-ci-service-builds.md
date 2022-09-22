@@ -28,6 +28,6 @@ Once restarted, any changes pushed or merged to your specified branch are automa
 
 ## Additional Information
 
-* [Overview of the Liferay Cloud Development Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
-* [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-dxp-cloud-console.md)
+* [Overview of the Liferay Cloud Development Workflow](./overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-liferay-cloud-console.md)
 * [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md)

@@ -43,7 +43,7 @@ Liferay DXPへのカスタム追加の導入には、Gitリポジトリの適切
 
 `common/`ディレクトリを除き、特定の環境フォルダ（`dev`、`uat`、`prod`など）に追加された変更は、対応する環境にデプロイするときに **のみ** 伝播されます。 `common/`ディレクトリに追加された変更は、ターゲットのデプロイ環境に関係なく、 **常に** デプロイされます。 これは、すべてのサービスにおいて、 `configs/` ディレクトリ内のすべてのサブフォルダに適用されます。
 
-Liferayサービスは、他のサービスに比べて多くのカスタマイゼーション（ホットフィックスの追加、モジュールのソースコードの構築など）を提供しているため、サービスをデプロイする際には、いくつかの考慮すべき点があります。 詳しくは [Liferayサービスへのデプロイ](./deploying-to-the-liferay-service.md) を参照してください。 また、一般的なデプロイメントワークフローについては、 [Overview of Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) を参照してください。 Liferay Cloudへのデプロイについてのチュートリアルは、 [Deploying Changes via DCP Cloud Console](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)を参照してください。
+Liferayサービスは、他のサービスに比べて多くのカスタマイゼーション（ホットフィックスの追加、モジュールのソースコードの構築など）を提供しているため、サービスをデプロイする際には、いくつかの考慮すべき点があります。 詳しくは [Liferayサービスへのデプロイ](./deploying-to-the-liferay-service.md) を参照してください。 また、一般的なデプロイメントワークフローについては、 [Overview of Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。 Liferay Cloudへのデプロイについてのチュートリアルは、 [Deploying Changes via DCP Cloud Console](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)を参照してください。
 
 ## Configuration (Automatic Copy)
 
@@ -61,7 +61,7 @@ Liferayサービスは、他のサービスに比べて多くのカスタマイ�
 
 ## クラスタリングを有効にする
 
-Liferay CloudでのLiferay DXPのクラスタリングは、Liferay DXPでのクラスタリングに比べて非常に単純化されたプロセスです。 クラスタリングのサポートが利用可能で、Liferay Cloudですぐに使用できます。 クラスタリングの動作とスケールのための追加の設定には、いくつかの追加の手順が必要です。 詳細は、 [Liferay Cloud](./setting-up-clustering-in-dxp-cloud.md) でのクラスタリングのセットアップを参照してください。
+Liferay CloudでのLiferay DXPのクラスタリングは、Liferay DXPでのクラスタリングに比べて非常に単純化されたプロセスです。 クラスタリングのサポートが利用可能で、Liferay Cloudですぐに使用できます。 クラスタリングの動作とスケールのための追加の設定には、いくつかの追加の手順が必要です。 詳細は、 [Liferay Cloud](./setting-up-clustering-in-liferay-cloud.md) でのクラスタリングのセットアップを参照してください。
 
 ## スクリプトの実行
 
@@ -94,6 +94,6 @@ Liferay DXPには、コンテンツを構築、管理、Webにデプロイする
 ## 追加情報
 
 * [Liferayサービスへのデプロイ](./deploying-to-the-liferay-service.md)
-* [DXPクラウドサービスにログインする](../getting-started/logging-into-your-dxp-cloud-services.md)
+* [DXPクラウドサービスにログインする](../getting-started/logging-into-your-liferay-cloud-services.md)
 * [Liferay DXPサービスの設定　](./configuring-the-liferay-dxp-service.md)
-* [Liferay Cloudコンソールによる変更のデプロイ](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)
+* [Liferay Cloudコンソールによる変更のデプロイ](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)

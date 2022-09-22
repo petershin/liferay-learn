@@ -10,7 +10,7 @@ Liferay Cloudプロジェクトは、開発、ステージング、本番など�
 
 左上のセレクターメニューからこれらの環境にアクセスできます。
 
-![図1：このセレクタメニューから、プロジェクトの環境にアクセスできる。](./understanding-dxp-cloud-environments/images/01.png)
+![図1：このセレクタメニューから、プロジェクトの環境にアクセスできる。](./understanding-liferay-cloud-environments/images/01.png)
 
 ## 環境の場所
 
@@ -18,7 +18,7 @@ Liferay Cloudプロジェクトは、開発、ステージング、本番など�
 
 これは、現在利用可能な [Liferay Cloudのリージョンリスト](https://help.liferay.com/hc/ja/articles/360019177512) です。
 
-![図2：お客様の環境は、異なる場所にホスティングすることが可能です。](./understanding-dxp-cloud-environments/images/02.png)
+![図2：お客様の環境は、異なる場所にホスティングすることが可能です。](./understanding-liferay-cloud-environments/images/02.png)
 
 
 ## 環境タイプ
@@ -40,4 +40,4 @@ Liferay Cloudプロジェクトは、開発、ステージング、本番など�
 * バックアップ：デフォルトで、データのバックアップは自動的に作成されません。
 * データベース：データは単一のアベイラビリティーゾーンに存在し、通常のIOPSが含まれています。
 
-![図3：環境のタイプが［設定］に表示されます。](./understanding-dxp-cloud-environments/images/03.png)
+![図3：環境のタイプが［設定］に表示されます。](./understanding-liferay-cloud-environments/images/03.png)

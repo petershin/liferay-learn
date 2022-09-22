@@ -2,7 +2,7 @@
 
 Congratulations! If you have completed all of the previous stages in this section, then you have successfully migrated your on-premises Liferay DXP installation to Liferay Cloud!
 
-Now that you have Liferay DXP running on Liferay Cloud, you are ready to begin taking advantage of its features, including [automated backups](../platform-services/backup-service/backup-service-overview.md), [built-in continuous integration](../platform-services/continuous-integration.md), automatic [service logging](../troubleshooting/reading-dxp-cloud-service-logs.md), and built-in [security features](../infrastructure-and-operations/security/information-security-and-dxp-cloud.md).
+Now that you have Liferay DXP running on Liferay Cloud, you are ready to begin taking advantage of its features, including [automated backups](../platform-services/backup-service/backup-service-overview.md), [built-in continuous integration](../platform-services/continuous-integration.md), automatic [service logging](../troubleshooting/reading-liferay-cloud-service-logs.md), and built-in [security features](../infrastructure-and-operations/security/information-security-and-liferay-cloud.md).
 
 However, in order to take full advantage of Liferay Cloud's capabilities, there are some additional steps you can perform while getting started:
 
@@ -24,7 +24,7 @@ See [Environment Teams and Roles](../manage-and-optimize/environment-teams-and-r
 
 Single Sign-On allows you to use your preferred identity provider to authenticate Users to Liferay in your Liferay Cloud instance. This can help your sign-on experience feel smoother and more integrated with the rest of your project.
 
-Liferay Cloud supports Signle Sign-On Identity Providers that are compliant with SAML 2.0. For more information, see [Using SSO with Liferay Cloud](../infrastructure-and-operations/security/using-sso-with-dxp-cloud.md).
+Liferay Cloud supports Signle Sign-On Identity Providers that are compliant with SAML 2.0. For more information, see [Using SSO with Liferay Cloud](../infrastructure-and-operations/security/using-sso-with-liferay-cloud.md).
 
 ## Add Custom Domains
 
@@ -66,12 +66,12 @@ As you begin using Liferay in Liferay Cloud, familiarize yourself with the avail
 
 * For production environments, you can also use [Dynatrace integration](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) to use more advanced performance metrics. *Note that this requires a specific Dynatrace add-on to your Liferay Cloud subscription to use.*
 
-You should perform your own performance testing and optimization with your instance on Liferay Cloud, the same way as you would tune an on-premises instance. The service data, metrics, and [logging](../troubleshooting/reading-dxp-cloud-service-logs.md) available are all there to help you with your testing.
+You should perform your own performance testing and optimization with your instance on Liferay Cloud, the same way as you would tune an on-premises instance. The service data, metrics, and [logging](../troubleshooting/reading-liferay-cloud-service-logs.md) available are all there to help you with your testing.
 
 ## Get Started Developing on Liferay Cloud
 
 Now that you have migrated to Liferay Cloud and you have already deployed [your customizations](./migrating-dxp-configurations-and-customizations.md), you can continue your developments by deploying your changes to your Cloud environment(s). If you have not already, then getting familiar with the [command-line tool](../reference/command-line-tool.md) can help you perform development tasks.
 
-In addition to deploying your services [via the Liferay Cloud console](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md), you can also configure [automatic deployments](../build-and-deploy/automatically-deploying-ci-service-builds.md) to speed up the process for your development environment. You can also [customize the Jenkins pipeline](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) that the CI service uses to suit your needs.
+In addition to deploying your services [via the Liferay Cloud console](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md), you can also configure [automatic deployments](../build-and-deploy/automatically-deploying-ci-service-builds.md) to speed up the process for your development environment. You can also [customize the Jenkins pipeline](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) that the CI service uses to suit your needs.
 
-Learn more about the Liferay Cloud deployment workflow [here](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
+Learn more about the Liferay Cloud deployment workflow [here](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md).

@@ -77,7 +77,7 @@ search` サービスのインスタンスが適切に接続できるように、
 
 ## 変更内容を展開する
 
-すべてのサービスの構成が完了したら、 [新しい構成を](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md#deploy) 本番環境と UAT 環境にデプロイしてください。 Liferay Cloudへの変更の展開に慣れていない場合は、例として以下の手順を確認することができます。
+すべてのサービスの構成が完了したら、 [新しい構成を](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) 本番環境と UAT 環境にデプロイしてください。 Liferay Cloudへの変更の展開に慣れていない場合は、例として以下の手順を確認することができます。
 
 ### 変更した内容でJenkinsビルドを作成する
 

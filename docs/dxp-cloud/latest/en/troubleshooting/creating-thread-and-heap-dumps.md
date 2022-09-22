@@ -149,7 +149,7 @@ First, save your chosen script into a directory that you can deploy to your Life
 
 Once you have the script saved into a subfolder in `liferay/configs/{ENV}/`, you must deploy the script and run it from the shell on the Liferay Cloud console.
 
-1. Follow the steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../using-the-liferay-dxp-service/overview-of-the-dxp-cloud-deployment-workflow.md) to deploy the script to the appropriate environment.
+1. Follow the steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../using-the-liferay-dxp-service/overview-of-the-liferay-cloud-deployment-workflow.md) to deploy the script to the appropriate environment.
 
 1. In the Liferay Cloud console, navigate to the `liferay` service page in the appropriate environment.
 

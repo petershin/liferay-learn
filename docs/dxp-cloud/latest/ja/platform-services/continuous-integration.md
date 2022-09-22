@@ -132,8 +132,8 @@ util.sendSlackMessage("About to create Liferay Cloud build...")
 
 ## 追加情報
 
-* [DXPクラウドサービスへログインする](../getting-started/logging-into-your-dxp-cloud-services.md)
+* [DXPクラウドサービスへログインする](../getting-started/logging-into-your-liferay-cloud-services.md)
 * [GitHubリポジトリの設定](../getting-started/configuring-your-gitlab-repository.md)
 * [Bitbucket リポジトリの設定](../getting-started/configuring-your-bitbucket-repository.md)
-* [バージョン4でのLiferay Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md)
+* [バージョン4でのLiferay Cloudプロジェクトの変更](../reference/liferay-cloud-project-changes-in-version-4.md)
 <!-- While Version 3 is still supported, because of the fact a large part of this article hinges on the project version, this link may be helpful. This link should likely be removed once version 3 is no longer supported. -->

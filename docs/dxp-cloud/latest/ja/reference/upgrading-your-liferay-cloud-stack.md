@@ -140,7 +140,7 @@ Dockerイメージ名の末尾にある数字は、使用しているLiferay Clo
 
 ### Jenkinsfile設定変数の確認
 
-プロジェクトにデフォルトのJenkinsfileが [必要とされていない](./dxp-cloud-project-changes-in-version-4.md#ci-service-changes) ので、プロジェクトのルートのJenkinsfileもアップグレードした後に除去することができます。 プロジェクトにデフォルトのJenkinsfileを使用する場合は、 `ci` サービス環境変数がこれを反映していることを確認してください：
+プロジェクトにデフォルトのJenkinsfileが [必要とされていない](./liferay-cloud-project-changes-in-version-4.md#ci-service-changes) ので、プロジェクトのルートのJenkinsfileもアップグレードした後に除去することができます。 プロジェクトにデフォルトのJenkinsfileを使用する場合は、 `ci` サービス環境変数がこれを反映していることを確認してください：
 
 ```json
 {
@@ -172,9 +172,9 @@ Dockerイメージ名の末尾にある数字は、使用しているLiferay Clo
     lcp deploy --project=<project-name> --environment=infra
 ```
 
-また、 [開発ワークフロー](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) に従って、Liferay Cloud コンソールからビルドとして変更をデプロイすることも可能です。
+また、 [開発ワークフロー](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) に従って、Liferay Cloud コンソールからビルドとして変更をデプロイすることも可能です。
 
-その後、 [新しいサービスバージョンを](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md) 開発環境にデプロイしたり、Liferay Cloudサービスの新しいバージョンの新機能を試したりすることができます。 詳細は、[変更点の説明 ](./dxp-cloud-project-changes-in-version-4.md)ご覧ください。
+その後、 [新しいサービスバージョンを](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) 開発環境にデプロイしたり、Liferay Cloudサービスの新しいバージョンの新機能を試したりすることができます。 詳細は、[変更点の説明 ](./liferay-cloud-project-changes-in-version-4.md)ご覧ください。
 
 ## 追加情報
 

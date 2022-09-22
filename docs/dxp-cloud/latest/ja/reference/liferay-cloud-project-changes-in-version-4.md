@@ -149,8 +149,8 @@ location /static/ {
 
 新しいスタックには、ローカル環境を立ち上げるためのdocker-composeファイルが含まれていません。 このため、ローカルテストにはDXPバンドルが必要です。
 
-ローカル環境で変更事項をテストしてから、Liferay Cloudに移行することができます。 [DXPクラウドへの移行](../migrating-to-dxp-cloud.md) をご参照ください。
+ローカル環境で変更事項をテストしてから、Liferay Cloudに移行することができます。 [DXPクラウドへの移行](../migrating-to-liferay-cloud.md) をご参照ください。
 
 ## 追加情報
 
-* [DXPクラウドスタックのアップグレード](./upgrading-your-dxp-cloud-stack.md)
+* [DXPクラウドスタックのアップグレード](./upgrading-your-liferay-cloud-stack.md)

@@ -75,4 +75,4 @@
 
 * [初期設定の概要](../getting-started/initial-setup-overview.md)
 * [チーム活動](./team-activities.md)
-* [Liferay Cloud環境について](../getting-started/understanding-dxp-cloud-environments.md)
+* [Liferay Cloud環境について](../getting-started/understanding-liferay-cloud-environments.md)

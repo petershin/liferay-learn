@@ -65,7 +65,7 @@ SSOを使用してLiferay Cloudにログインするには：
 1. <https://console.liferay.cloud/login>に移動します。
 1. ［**Login via SSO**］をクリックします 。
 
-   ![ログインページ](./using-sso-with-dxp-cloud/images/01.png)
+   ![ログインページ](./using-sso-with-liferay-cloud/images/01.png)
 
 1. ［**組織ID**］ フィールドに ［**会社名**］ を入力します。
 1. ［**続行**］をクリックします。
@@ -80,4 +80,4 @@ SSOを使用してLiferay Cloudにログインするには：
 
 ログインすると、ユーザーはすべてのプロジェクトと環境を確認できます。
 
-![プロジェクトページ](./using-sso-with-dxp-cloud/images/02.png)
+![プロジェクトページ](./using-sso-with-liferay-cloud/images/02.png)

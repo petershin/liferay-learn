@@ -323,4 +323,4 @@ The OpenVPN server has been configured.
 ## Additional Information
 
 * [VPN Integration Overview](./vpn-integration-overview.md)
-* [Connecting a VPN Server to Liferay Cloud](./connecting-a-vpn-server-to-dxp-cloud.md)
+* [Connecting a VPN Server to Liferay Cloud](./connecting-a-vpn-server-to-liferay-cloud.md)

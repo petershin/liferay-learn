@@ -29,7 +29,7 @@ This allows your modules to perform the necessary upgrades for the new minor ver
 Minor version updates to Liferay DXP also require a change to your project's repository.
 
 ```{important}
-If you are using [clustered services](./setting-up-clustering-in-dxp-cloud.md) and updating to any version that changes the Liferay database schema (such as a [service pack](../../../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)), then follow [these steps](#updating-to-a-new-service-pack-with-clustering-enabled).
+If you are using [clustered services](./setting-up-clustering-in-liferay-cloud.md) and updating to any version that changes the Liferay database schema (such as a [service pack](../../../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)), then follow [these steps](#updating-to-a-new-service-pack-with-clustering-enabled).
 ```
 
 Perform these steps to update and deploy changes in your project repository:
@@ -70,7 +70,7 @@ Follow these steps:
    }
    ```
 
-1. [Deploy the change](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) to the `liferay` service.
+1. [Deploy the change](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) to the `liferay` service.
 
 1. Find the tag for the version of Liferay you are updating to on [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags).
 
@@ -90,7 +90,7 @@ Follow these steps:
     }
     ```
 
-1. [Deploy these changes](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) to the `liferay` service.
+1. [Deploy these changes](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) to the `liferay` service.
 
     The Liferay DXP installation on your `liferay` service updates to the new version as it starts up. However, you must still reverse the temporary changes made to your service.
 
@@ -104,7 +104,7 @@ Follow these steps:
 
 1. Reset the deployment strategy in `liferay/LCP.json` to its former value (or remove the property if it was only added for the version update).
 
-1. [Deploy the changes](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) one more time.
+1. [Deploy the changes](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) one more time.
 
 1. For versions 7.3+ of DXP, if you do not intend to allow modules to upgrade when upgrading to new fix packs or service packs in the future, then remove the `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` environment variable [you previously added](#enabling-module-upgrades-for-dxp) to the Liferay service's Environment Variables page.
 
@@ -114,5 +114,5 @@ The updated `liferay` service starts back up with the desired number of nodes af
 
 * [Deploying to the Liferay Service](./deploying-to-the-liferay-service.md)
 * [Installing Hotfixes](./deploying-to-the-liferay-service.md#deploying-hotfixes)
-* [Setting Up Clustering in Liferay Cloud](./setting-up-clustering-in-dxp-cloud.md)
+* [Setting Up Clustering in Liferay Cloud](./setting-up-clustering-in-liferay-cloud.md)
 * [Upgrading Your Liferay DXP Instance](./upgrading-your-liferay-dxp-instance.md)

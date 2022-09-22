@@ -104,6 +104,6 @@ Liferay CloudのLiferayサービスでは、JVMメモリ設定やデータベー
 ## 追加情報
 
 * [Liferay DXPサービスの紹介](./introduction-to-the-liferay-dxp-service.md)
-* [Liferay Cloudでのクラスタリングの有効化](./setting-up-clustering-in-dxp-cloud.md)
+* [Liferay Cloudでのクラスタリングの有効化](./setting-up-clustering-in-liferay-cloud.md)
 * [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html)
 * [Liferayサービス環境変数](./liferay-service-environment-variables.md)

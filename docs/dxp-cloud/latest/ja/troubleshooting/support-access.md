@@ -40,4 +40,4 @@ Support Accessに変更があった場合、誰がいつ変更したかを示す
 
 * [トラブルシューティングツールとリソース](./troubleshooting-tools-and-resources.md)
 * [ヘルプセンター](https://help.liferay.com/hc/en-us)
-* [ログ管理](./reading-dxp-cloud-service-logs.md)
+* [ログ管理](./reading-liferay-cloud-service-logs.md)

@@ -2,7 +2,7 @@
 
 Liferay Cloudは、堅牢で信頼性が高く、管理しやすいLiferay DXPの実装を提供するための主要コンポーネントを集めた柔軟なプラットフォームです。 この図は、これらのコンポーネントがどのように組み合わされてこの実装が完成するかを示しています。
 
-![Liferay Cloudに統合されている主要なサービスやコンポーネントはすべて、ここにその接続先が示されています。](./dxp-cloud-infrastructure/images/01.png)
+![Liferay Cloudに統合されている主要なサービスやコンポーネントはすべて、ここにその接続先が示されています。](./liferay-cloud-infrastructure/images/01.png)
 
 ```{note}
 プライベートクラスターサブスクリプションには、ビルトインの 

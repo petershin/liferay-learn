@@ -1,7 +1,7 @@
 ---
 toc:
 - ./troubleshooting/troubleshooting-tools-and-resources.md
-- ./troubleshooting/reading-dxp-cloud-service-logs.md
+- ./troubleshooting/reading-liferay-cloud-service-logs.md
 - ./troubleshooting/shell-access.md
 - ./troubleshooting/troubleshooting-services.md
 - ./troubleshooting/disaster-recovery-overview.md
@@ -17,7 +17,7 @@ toc:
 :maxdepth: 1
 
 troubleshooting/troubleshooting-tools-and-resources.md
-troubleshooting/reading-dxp-cloud-service-logs.md
+troubleshooting/reading-liferay-cloud-service-logs.md
 troubleshooting/shell-access.md
 troubleshooting/troubleshooting-services.md
 troubleshooting/disaster-recovery-overview.md
@@ -29,7 +29,7 @@ troubleshooting/creating-thread-and-heap-dumps.md
 ```
 
 - [トラブルシューティングツールとリソース](./troubleshooting/troubleshooting-tools-and-resources.md)
-- [Liferay Cloudのサービスログを読む](troubleshooting/reading-dxp-cloud-service-logs.md)
+- [Liferay Cloudのサービスログを読む](troubleshooting/reading-liferay-cloud-service-logs.md)
 - [シェルアクセス](troubleshooting/shell-access.md)
 - [トラブルシューティングサービス](troubleshooting/troubleshooting-services.md)
 - [ディザスタ リカバリの概要](troubleshooting/disaster-recovery-overview.md)

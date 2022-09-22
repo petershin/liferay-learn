@@ -63,7 +63,7 @@ Application, status, and build logs are provided for each Liferay Cloud Service:
 
 ![Figure 4: View logs via the Logs page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/04.png)
 
-See [Log Management](./reading-dxp-cloud-service-logs.md) for more information.
+See [Log Management](./reading-liferay-cloud-service-logs.md) for more information.
 
 ## Shell Access
 

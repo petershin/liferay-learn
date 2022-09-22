@@ -74,4 +74,4 @@ Here is a list of important permissions and which team roles have them:
 
 * [Initial Setup Overview](../getting-started/initial-setup-overview.md)
 * [Team Activities](./team-activities.md)
-* [Understanding Liferay Cloud Environments](../getting-started/understanding-dxp-cloud-environments.md)
+* [Understanding Liferay Cloud Environments](../getting-started/understanding-liferay-cloud-environments.md)

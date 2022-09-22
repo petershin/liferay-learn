@@ -161,7 +161,7 @@ main
 
 スクリプトを `liferay/configs/{ENV}/`のサブフォルダに保存したら、スクリプトをデプロイし、Liferay Cloudコンソールのシェルから実行する必要があります。
 
-1. [Overview of Liferay Cloud Deployment Workflow](../using-the-liferay-dxp-service/overview-of-the-dxp-cloud-deployment-workflow.md) で説明されている手順に従って、スクリプトを適切な環境にデプロイします。
+1. [Overview of Liferay Cloud Deployment Workflow](../using-the-liferay-dxp-service/overview-of-the-liferay-cloud-deployment-workflow.md) で説明されている手順に従って、スクリプトを適切な環境にデプロイします。
 
 1. Liferay Cloudコンソールで、該当する環境の `liferay` サービスページに移動します。
 

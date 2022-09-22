@@ -9,7 +9,7 @@ Liferay Cloudオンボーディングメールを受信すると、 `［dxpcloud
 
 ## Jenkinsサービスの準備
 
-すでにDXPクラウドのインスタンスで [version 4.x.x services](../reference/understanding-service-stack-versions.md) を使用している場合は、JenkinsサービスはすでにBitbucketと互換性があります。 アップグレードの詳細については、 [Liferay Cloudスタックのアップグレード](../reference/upgrading-your-dxp-cloud-stack.md) を参照してください。
+すでにDXPクラウドのインスタンスで [version 4.x.x services](../reference/understanding-service-stack-versions.md) を使用している場合は、JenkinsサービスはすでにBitbucketと互換性があります。 アップグレードの詳細については、 [Liferay Cloudスタックのアップグレード](../reference/upgrading-your-liferay-cloud-stack.md) を参照してください。
 
 version 3.x.xのサービスを使用している場合は、 `［LCP.json］` で、 `［ci］` サービスを確認し、以下のJenkinsサービス以上のものを実行していることを確認してください：
 

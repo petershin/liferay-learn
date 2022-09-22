@@ -58,7 +58,7 @@ Backups created while data is actively changing on your Liferay instance risk cr
 
 Clicking *View logs* redirects you to the Logs page, where you can view the backup stages in real-time. You can also view backup logs in the *Logs* tab of the backup service's page.
 
-See [Log Management](../../troubleshooting/reading-dxp-cloud-service-logs.md) for more information about viewing service logs.
+See [Log Management](../../troubleshooting/reading-liferay-cloud-service-logs.md) for more information about viewing service logs.
 
 ## Configuring the Backup Service
 

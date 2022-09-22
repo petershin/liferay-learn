@@ -1,4 +1,4 @@
-# Upgrading Your DXP Cloud Stack
+# Upgrading Your Liferay Cloud Stack
 
 Upgrading your repository to use the new structure in Liferay Cloud version 4 allows you to take advantage of Liferay Workspace within your repository, keep your services up to date, and use a range of new and updated features.
 
@@ -140,7 +140,7 @@ See the [GitHub](../getting-started/configuring-your-github-repository.md#settin
 
 ### Verify Jenkinsfile Configuration Variables
 
-Since a default Jenkinsfile is [no longer required](./dxp-cloud-project-changes-in-version-4.md#ci-service-changes) in your project, the Jenkinsfile at the root of your project may also be removed after the upgrade. If you intend to use the default Jenkinsfile for your project, ensure that the `ci` services environment variables reflect this:
+Since a default Jenkinsfile is [no longer required](./liferay-cloud-project-changes-in-version-4.md#ci-service-changes) in your project, the Jenkinsfile at the root of your project may also be removed after the upgrade. If you intend to use the default Jenkinsfile for your project, ensure that the `ci` services environment variables reflect this:
 
 ```json
 {
@@ -172,9 +172,9 @@ The quickest way to deploy only the `ci` service is to [use the CLI tool](../bui
     lcp deploy --project=<project-name> --environment=infra
 ```
 
-Alternatively, you can also follow the [development workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) and deploy the changes as a build from the Liferay Cloud console.
+Alternatively, you can also follow the [development workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) and deploy the changes as a build from the Liferay Cloud console.
 
-You may then want to [deploy the new service versions](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md) to a development environment, or explore some of the new functionality in the new versions of your Liferay Cloud services. See the [explanation of the changes](./dxp-cloud-project-changes-in-version-4.md) to learn more.
+You may then want to [deploy the new service versions](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) to a development environment, or explore some of the new functionality in the new versions of your Liferay Cloud services. See the [explanation of the changes](./liferay-cloud-project-changes-in-version-4.md) to learn more.
 
 ## Additional Information
 

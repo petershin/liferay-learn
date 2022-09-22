@@ -1,7 +1,7 @@
 ---
 toc:
 - ./troubleshooting/troubleshooting-tools-and-resources.md
-- ./troubleshooting/reading-dxp-cloud-service-logs.md
+- ./troubleshooting/reading-liferay-cloud-service-logs.md
 - ./troubleshooting/shell-access.md
 - ./troubleshooting/troubleshooting-services.md
 - ./troubleshooting/disaster-recovery-overview.md
@@ -17,7 +17,7 @@ toc:
 :maxdepth: 1
 
 troubleshooting/troubleshooting-tools-and-resources.md
-troubleshooting/reading-dxp-cloud-service-logs.md
+troubleshooting/reading-liferay-cloud-service-logs.md
 troubleshooting/shell-access.md
 troubleshooting/troubleshooting-services.md
 troubleshooting/disaster-recovery-overview.md
@@ -29,7 +29,7 @@ troubleshooting/creating-thread-and-heap-dumps.md
 ```
 
 - [Troubleshooting Tools and Resources](./troubleshooting/troubleshooting-tools-and-resources.md)
-- [Reading DXP Cloud Service Logs](troubleshooting/reading-dxp-cloud-service-logs.md)
+- [Reading Liferay Cloud Service Logs](troubleshooting/reading-liferay-cloud-service-logs.md)
 - [Shell Access](troubleshooting/shell-access.md)
 - [Troubleshooting Services](troubleshooting/troubleshooting-services.md)
 - [Disaster Recovery Overview](troubleshooting/disaster-recovery-overview.md)

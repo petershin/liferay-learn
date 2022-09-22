@@ -1,4 +1,4 @@
-# Setting Up Clustering in DXP Cloud
+# Setting Up Clustering in Liferay Cloud
 
 This article outlines the steps necessary to configure clustering for your Liferay DXP instance in Liferay Cloud.
 
@@ -13,11 +13,11 @@ This article outlines the steps necessary to configure clustering for your Lifer
 
 Start from the desired environment in the Liferay Cloud Console. Then, under `Services`, navigate to `liferay`, and then click `Environment Variables`. Ensure that the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` variable is set to `true`. This instructs the image startup process to add the clustering configuration to Liferay DXP.
 
-![Setting LCP_PROJECT_LIFERAY_CLUSTER_ENABLED](./setting-up-clustering-in-dxp-cloud/images/01.png)
+![Setting LCP_PROJECT_LIFERAY_CLUSTER_ENABLED](./setting-up-clustering-in-liferay-cloud/images/01.png)
 
 ## Set the Clustering Scale
 
-The number of nodes for your clustering environment is determined by the `scale` property within the Liferay service's `LCP.json` file (in the `liferay/` folder). If you are deploying your Liferay service for the first time, or if the `scale` property has not yet been set in the `LCP.json` file, then you must first set the value to `1` and then [deploy the service](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md#deploy).
+The number of nodes for your clustering environment is determined by the `scale` property within the Liferay service's `LCP.json` file (in the `liferay/` folder). If you are deploying your Liferay service for the first time, or if the `scale` property has not yet been set in the `LCP.json` file, then you must first set the value to `1` and then [deploy the service](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md#deploy).
 
 ```json
 {
@@ -52,7 +52,7 @@ However, if additional portal properties for clustering are desired, the propert
 
 ## Deploy and Verify
 
-Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information.
+Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) for more information.
 
 To check if clustering is working correctly, check the logs of the Liferay DXP instances for the `Accepted View` message from the `JGroupsReceiver` class.
 

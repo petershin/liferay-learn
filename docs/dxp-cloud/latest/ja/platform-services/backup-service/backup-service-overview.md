@@ -58,7 +58,7 @@ Liferayインスタンス上でデータが能動的に変更されている間�
 
 *View logs* をクリックするとLogsページにリダイレクトされ、リアルタイムでバックアップステージを確認することができます。 また、バックアップのログは、バックアップサービスのページの *ログ* タブで見ることができます。
 
-サービスログの閲覧については、 [ログ管理](../../troubleshooting/reading-dxp-cloud-service-logs.md) を参照してください。
+サービスログの閲覧については、 [ログ管理](../../troubleshooting/reading-liferay-cloud-service-logs.md) を参照してください。
 
 ## バックアップサービスの設定
 

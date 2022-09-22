@@ -12,7 +12,7 @@ Liferay CloudのVPN機能を使って、Liferay Cloudのサービスをプライ
 
 1. ページのVPNセクションにスクロールダウンし、 **Create New VPN** をクリックします。
 
-    ![お使いの環境の設定ページから［新規VPNの作成］をクリックします。](./connecting-a-vpn-server-to-dxp-cloud/images/01.png)
+    ![お使いの環境の設定ページから［新規VPNの作成］をクリックします。](./connecting-a-vpn-server-to-liferay-cloud/images/01.png)
 
 1. 使用する接続プロトコルを選択します。 対応するプロトコルは以下の通りです。
 
@@ -20,7 +20,7 @@ Liferay CloudのVPN機能を使って、Liferay Cloudのサービスをプライ
 
     * [IPSec](https://www.cloudflare.com/learning/network-layer/what-is-ipsec/)
 
-    ![VPNへの接続に使用するプロトコルを選択します。](./connecting-a-vpn-server-to-dxp-cloud/images/02.png)
+    ![VPNへの接続に使用するプロトコルを選択します。](./connecting-a-vpn-server-to-liferay-cloud/images/02.png)
 
     プロトコルを選択すると、そのプロトコルに接続するための必須項目が以下のように表示されます。
 
@@ -46,7 +46,7 @@ Liferay CloudのVPN機能を使って、Liferay Cloudのサービスをプライ
 
     * **Destination Port** ：VPNに接続するお客様のネットワークのポートです。
 
-    ![VPN接続を行う前に、1つ以上のポートフォワーディングルートを追加してください。](./connecting-a-vpn-server-to-dxp-cloud/images/03.png)
+    ![VPN接続を行う前に、1つ以上のポートフォワーディングルートを追加してください。](./connecting-a-vpn-server-to-liferay-cloud/images/03.png)
 
     ```{tip}
     右側のアイコンをクリックして、さらにポートフォワーディングのルートを追加します。 追加されたルートを削除するには、既存のルートの横にあるゴミ箱のアイコンをクリックします。
@@ -62,11 +62,11 @@ VPN設定が作成されました。 ただし、VPNの詳細ページから手�
 
 VPN設定を作成した後は、詳細ページで接続状況や設定の詳細を確認したり、設定の編集や接続・切断を行うことができます。
 
-![VPN詳細ページでは、VPNの状態、設定の詳細、VPNネットワークのアクティビティが表示されます。](./connecting-a-vpn-server-to-dxp-cloud/images/04.png)
+![VPN詳細ページでは、VPNの状態、設定の詳細、VPNネットワークのアクティビティが表示されます。](./connecting-a-vpn-server-to-liferay-cloud/images/04.png)
 
 お使いの環境の **設定** ページに移動し、設定されているVPN接続をクリックして詳細ページを表示します。
 
-![設定されたVPN接続をクリックすると、VPNの詳細ページが表示されます。](./connecting-a-vpn-server-to-dxp-cloud/images/05.png)
+![設定されたVPN接続をクリックすると、VPNの詳細ページが表示されます。](./connecting-a-vpn-server-to-liferay-cloud/images/05.png)
 
 ```{note}
 VPNの状態（接続されているか、されていないか）は、VPNの詳細ページと、あなたの環境の`設定`ページのVPNセクションの両方から見ることができます。
@@ -78,7 +78,7 @@ VPNの状態（接続されているか、されていないか）は、VPNの�
 
 VPNの詳細ページでは、右上にVPNがすでに接続されているかどうかが表示されます。 VPNが接続されていない場合は、 **接続** ボタンをクリックして、接続を確立します。
 
-![詳細ページの右上には、接続状態が表示され、［接続］または［切断］のオプションが表示されます。](./connecting-a-vpn-server-to-dxp-cloud/images/06.png)
+![詳細ページの右上には、接続状態が表示され、［接続］または［切断］のオプションが表示されます。](./connecting-a-vpn-server-to-liferay-cloud/images/06.png)
 
 ボタンをクリックすると、VPNが接続を試みます。 接続に失敗した場合は、詳細ページの **関連アクティビティ** セクションに失敗した試みが表示されます。
 
@@ -88,7 +88,7 @@ VPNの詳細ページでは、右上にVPNがすでに接続されているか�
 
 接続が確立されている間は、「VPN接続の試行が開始されました」というメッセージが表示され、完了するまではVPNの他の管理操作を行うことができません。 接続をキャンセルする必要がある場合（たとえば、エラーで接続が止まっているなど）、ポップアップで［Cancel］をクリックします。
 
-![接続が確立される前に停止する必要がある場合は、メッセージポップアップの［キャンセル］ボタンをクリックしてください。](./connecting-a-vpn-server-to-dxp-cloud/images/07.png)
+![接続が確立される前に停止する必要がある場合は、メッセージポップアップの［キャンセル］ボタンをクリックしてください。](./connecting-a-vpn-server-to-liferay-cloud/images/07.png)
 
 接続が確立された後にVPNを切断するには、右上の［アクション］メニューから ［**切断**］ をクリックします。 これにより、 **Disconnect VPN** のページが表示されます。
 
@@ -96,7 +96,7 @@ VPNの詳細ページでは、右上にVPNがすでに接続されているか�
 VPNを切断すると、DXPクラウドとの外部サービスとの通信が遮断されます。
 ```
 
-![「VPNの切断」ページでは、先に進む前に切断の影響を確認するよう求められます。](./connecting-a-vpn-server-to-dxp-cloud/images/08.png)
+![「VPNの切断」ページでは、先に進む前に切断の影響を確認するよう求められます。](./connecting-a-vpn-server-to-liferay-cloud/images/08.png)
 
 VPNを切断したときの影響を確認するボックスにチェックを入れ、 ［**Disconnect VPN**］ をクリックすると、すぐにVPNを切断することができます。 一度VPNを切断すると、再び設定を変更することができます。
 
@@ -108,7 +108,7 @@ VPNを切断したときの影響を確認するボックスにチェックを�
 
 設定を編集するには、その環境の詳細ページに行き、右上のアクションメニューから ［**Edit...**］ を選択します。 初めてVPN設定を作成したときと同じ画面が表示されます。
 
-![VPNが接続されていない状態で、アクションメニューの「編集」ボタンをクリックすると、設定を変更することができます。](./connecting-a-vpn-server-to-dxp-cloud/images/09.png)
+![VPNが接続されていない状態で、アクションメニューの「編集」ボタンをクリックすると、設定を変更することができます。](./connecting-a-vpn-server-to-liferay-cloud/images/09.png)
 
 <a name="deleting-the-configuration" />
 
@@ -120,7 +120,7 @@ VPNを切断したときの影響を確認するボックスにチェックを�
 
 1. Delete VPNページでは、チェックボックスにチェックを入れて削除を確認します。 その時にVPNが接続されていれば、さらにチェックボックスが表示され、効果を確認することができます。
 
-    ![ [VPNの削除]のページ。](./connecting-a-vpn-server-to-dxp-cloud/images/10.png)
+    ![ [VPNの削除]のページ。](./connecting-a-vpn-server-to-liferay-cloud/images/10.png)
 
 1. ページの下部にある［Delete VPN］をクリックします。
 

@@ -257,4 +257,4 @@ Windows 7および8の場合は、 ［**コントロールパネル**］ &rarr; 
 
 * [トラブルシューティングツールとリソース](../troubleshooting/troubleshooting-tools-and-resources.md)
 * [CLIツールによる変更点のデプロイ](../build-and-deploy/deploying-changes-via-the-cli-tool.md)
-* [DXPクラウドスタックのアップグレード](./upgrading-your-dxp-cloud-stack.md)
+* [DXPクラウドスタックのアップグレード](./upgrading-your-liferay-cloud-stack.md)

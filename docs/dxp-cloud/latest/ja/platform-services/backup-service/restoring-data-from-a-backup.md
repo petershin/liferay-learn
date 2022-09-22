@@ -15,7 +15,7 @@
 各環境の **バックアップ** ページには、最近取得されたすべてのバックアップ（自動および手動）のリストがあります。 このページから環境へバックアップを復元すると、各サービスが使用しているデータは復元されますが、各サービスが使用しているビルドやDockerイメージは変更 **されません** 。
 
 ```{warning}
-復元するバックアップの `バックアップ` サービスのバージョンは、復元が正常に完了するように、復元前のターゲット環境と一致している必要があります。 Liferayの [フィックスパックレベル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) も、データベーススキーマの不一致によるエラーを避けるために一致させる必要があります。 現在環境にデプロイされているものとは異なるビルドを必要とするバックアップを復元する場合は、復元を開始する前に、[適切なビルドをデプロイ](./../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)してください。
+復元するバックアップの `バックアップ` サービスのバージョンは、復元が正常に完了するように、復元前のターゲット環境と一致している必要があります。 Liferayの [フィックスパックレベル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) も、データベーススキーマの不一致によるエラーを避けるために一致させる必要があります。 現在環境にデプロイされているものとは異なるビルドを必要とするバックアップを復元する場合は、復元を開始する前に、[適切なビルドをデプロイ](./../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)してください。
 ```
 
 以下の手順で、バックアップから環境を復元します。
@@ -75,7 +75,7 @@ SQLスクリプトを適切な、環境固有の `backup/configs/{ENV}/scripts/`
 
 SQLスクリプトの準備ができたら、以下の手順でカスタムSQLスクリプトをデータリストアに適用します。
 
-1. [バックアップサービスをデプロイ](../../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) して、カスタムSQLスクリプトをオンラインに含めます。
+1. [バックアップサービスをデプロイ](../../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) して、カスタムSQLスクリプトをオンラインに含めます。
 
 1. 上記の [バックアップページからの環境の復元](#restoring-an-environment-from-the-backups-page) の手順に従ってください。
 

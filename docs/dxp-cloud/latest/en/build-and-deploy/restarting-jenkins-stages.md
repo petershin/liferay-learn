@@ -46,5 +46,5 @@ Follow these steps to restart a Jenkins stage:
 ## Additional Information
 
 * [Continuous Integration](../platform-services/continuous-integration.md)
-* [Overview of the Liferay Cloud Deployment Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Overview of the Liferay Cloud Deployment Workflow](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md)

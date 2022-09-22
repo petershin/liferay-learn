@@ -1,4 +1,4 @@
-# Deploying Changes via the DXP Cloud Console
+# Deploying Changes via the Liferay Cloud Console
 
 This tutorial walks through the process of adding a portal property to the Liferay service, triggering a CI build with a pull request, and deploying the new build to the `dev` environment via the Liferay Cloud console.
 
@@ -32,7 +32,7 @@ Begin the deployment life cycle by adding a portal property to the `dev` environ
    ```
 
    ```{note}
-   If you're using version 3.x.x services, then the appropriate folder path is `lcp/liferay/deploy/dev`. See [Liferay Cloud Project Changes in Version 4](../reference/dxp-cloud-project-changes-in-version-4.md)_ for more information on the differences in the directory structure, and [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_ for how to check the version of your services.
+   If you're using version 3.x.x services, then the appropriate folder path is `lcp/liferay/deploy/dev`. See [Liferay Cloud Project Changes in Version 4](../reference/liferay-cloud-project-changes-in-version-4.md)_ for more information on the differences in the directory structure, and [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_ for how to check the version of your services.
    ```
 
 1. Add and commit your changes to the `portal-env.properties` file with the following commands:
@@ -57,13 +57,13 @@ Next, trigger a Jenkins build with a pull request to your project's central Git 
 
 1. Navigate to your Git repository, and trigger a Jenkins build with a new pull request to your project's central repository.
 
-   ![Trigger a Jenkins build with a new pull request to your project's central repository.](./deploying-changes-via-the-dxp-cloud-console/images/01.png)
+   ![Trigger a Jenkins build with a new pull request to your project's central repository.](./deploying-changes-via-the-liferay-cloud-console/images/01.png)
 
    You can track the status of your build and view detailed logs via your project's Jenkins page: `https://ci-<project-name>-infra.lfr.cloud`
 
-   ![Track the status of your build via your project's Jenkins page](./deploying-changes-via-the-dxp-cloud-console/images/02.png)
+   ![Track the status of your build via your project's Jenkins page](./deploying-changes-via-the-liferay-cloud-console/images/02.png)
 
-   ![View detailed logs via your project's Jenkins page.](./deploying-changes-via-the-dxp-cloud-console/images/03.png)
+   ![View detailed logs via your project's Jenkins page.](./deploying-changes-via-the-liferay-cloud-console/images/03.png)
 
 ## Deploying Your New Build via the Liferay Cloud Console
 
@@ -73,15 +73,15 @@ Once your new build is ready, deploy it to your project's `dev` environment via 
 
 1. Click on the *Actions* button ( ⋮ ) for the build you want to deploy, and select *Deploy Build To...*
 
-   ![View and deploy builds from the Builds page.](./deploying-changes-via-the-dxp-cloud-console/images/04.png)
+   ![View and deploy builds from the Builds page.](./deploying-changes-via-the-liferay-cloud-console/images/04.png)
 
 1. Use the drop-down menu to select the `dev` environment.
 
-   ![Select the dev environment, and click on Deploy Build.](./deploying-changes-via-the-dxp-cloud-console/images/05.png)
+   ![Select the dev environment, and click on Deploy Build.](./deploying-changes-via-the-liferay-cloud-console/images/05.png)
 
 1. Use the checkboxes to confirm your deployment, and click on *Deploy Build*.
 
-   ![Use the checkboxes to confirm your deployment, and click on Deploy Build.](./deploying-changes-via-the-dxp-cloud-console/images/06.png)
+   ![Use the checkboxes to confirm your deployment, and click on Deploy Build.](./deploying-changes-via-the-liferay-cloud-console/images/06.png)
 
    ```{tip}
    You can also access the *Deploy Build to...* page by clicking on the *Build ID* for the build you want to deploy.
@@ -89,7 +89,7 @@ Once your new build is ready, deploy it to your project's `dev` environment via 
 
    You can view the status of your deployment from the *Deployments* page, as well as the *Logs* and *Activities* pages of the `dev` environment.
 
-   ![View the status of your deployment from the Deployments page](./deploying-changes-via-the-dxp-cloud-console/images/07.png)
+   ![View the status of your deployment from the Deployments page](./deploying-changes-via-the-liferay-cloud-console/images/07.png)
 
 ## Verifying Your Sample Deployment
 
@@ -99,15 +99,15 @@ Once your build has successfully deployed and your `dev` environment's Liferay s
 
 1. Go to the *Web Server* service's page, and click on its URL to access the `dev` environment's Liferay instance: `https://webserver-<project-name>-dev.lfr.cloud/`.
 
-   ![Click on the Web Server url to access the dev environment's Liferay instance.](./deploying-changes-via-the-dxp-cloud-console/images/08.png)
+   ![Click on the Web Server url to access the dev environment's Liferay instance.](./deploying-changes-via-the-liferay-cloud-console/images/08.png)
 
 1. Verify the web server node is displayed at the bottom of the Home Page.
 
-   ![Verify the web server node is displayed at the bottom of the Home Page.](./deploying-changes-via-the-dxp-cloud-console/images/09.png)
+   ![Verify the web server node is displayed at the bottom of the Home Page.](./deploying-changes-via-the-liferay-cloud-console/images/09.png)
 
 ## Additional Information
 
-* [Overview of the Liferay Cloud Development Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Overview of the Liferay Cloud Development Workflow](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md)
 * [Setting Up Automatic Deployment](./automatically-deploying-ci-service-builds.md)
 * [Configuring the Liferay Service](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)

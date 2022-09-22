@@ -38,11 +38,11 @@
 
 ```{note}
 また、プロジェクト環境のすべてのビルドとデプロイメントのアクティビティは、［Builds］および［Deployments］ページで確認できます。 これらのページについては、 
-[DXPクラウド導入ワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) を参照してください。
+[DXPクラウド導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。
 ```
 
 ## 追加情報
 
 * [環境のチームとロール](./environment-teams-and-roles.md)
-* [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [ログ管理](../troubleshooting/reading-dxp-cloud-service-logs.md)
+* [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [ログ管理](../troubleshooting/reading-liferay-cloud-service-logs.md)

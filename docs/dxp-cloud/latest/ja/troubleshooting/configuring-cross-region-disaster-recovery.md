@@ -40,11 +40,11 @@ Liferay Cloudシステム管理者は、DR環境と本番環境の両方に対�
 
 1. ［**Connect VPN**］をクリックします。
 
-VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md)を参照してください。
+VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md)を参照してください。
 
 ### 最新の安定したビルドを本番環境からDR環境にデプロイする
 
-次に、最新の安定したビルドを本番環境でDR環境にデプロイする必要があります。 そのためには、 [Liferay Cloud展開ワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)で説明したのと同じ手順に従ってください。
+次に、最新の安定したビルドを本番環境でDR環境にデプロイする必要があります。 そのためには、 [Liferay Cloud展開ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)で説明したのと同じ手順に従ってください。
 
 ### ディザスタリカバリへの自動バックアップリストアの設定
 
@@ -138,7 +138,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
     ![DR環境のVPNステータスをチェックして、正しく接続されていることを確認します。](./configuring-cross-region-disaster-recovery/images/05.png)
 
-    適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [Liferay CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) をご覧ください。
+    適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [Liferay CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
 
 1. DXPインスタンスにログインします（カスタムドメインはまだDR環境を指していないため、IPアドレスを使用します）。
 
@@ -208,7 +208,7 @@ DR環境から通常の本番環境にデータを復元します。
 
 1. 本番環境の ［**設定**］ &rarr; ［**VPN**］ ページに移動して、VPNが本番環境に接続されていることを確認します。
 
-   適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [Liferay CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) をご覧ください。
+   適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [Liferay CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
 
 1. DXPインスタンスにログインします（カスタムドメインはDR環境を指しているため、IPアドレスを使用します）。
 

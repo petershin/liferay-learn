@@ -1,4 +1,4 @@
-# Information Security and DXP Cloud
+# Information Security and Liferay Cloud
 
 Liferay takes security on the cloud very seriously and has published the following documents on our compliance with the **SOC 2** and **ISO 27001:2013** standards:
 

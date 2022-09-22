@@ -13,7 +13,7 @@ The repository's administrators *are not necessarily the same* as your project's
 
 ## Preparing the Jenkins Service
 
-If you are using [version 4.x.x services](../reference/understanding-service-stack-versions.md) in your Liferay Cloud instance already, then your Jenkins service is already compatible with GitLab. See [Upgrading Your Liferay Cloud Stack](../reference/upgrading-your-dxp-cloud-stack.md) for more information on upgrading.
+If you are using [version 4.x.x services](../reference/understanding-service-stack-versions.md) in your Liferay Cloud instance already, then your Jenkins service is already compatible with GitLab. See [Upgrading Your Liferay Cloud Stack](../reference/upgrading-your-liferay-cloud-stack.md) for more information on upgrading.
 
 If you are using version 3.x.x services, then check the `LCP.json` for your `ci` service, and ensure you're running the following Jenkins service or higher:
 

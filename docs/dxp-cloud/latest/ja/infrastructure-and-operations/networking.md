@@ -3,7 +3,7 @@ toc:
 - ./networking/private-network.md
 - ./networking/vpn-integration-overview.md
 - ./networking/configuring-a-vpn-server.md
-- ./networking/connecting-a-vpn-server-to-dxp-cloud.md
+- ./networking/connecting-a-vpn-server-to-liferay-cloud.md
 - ./networking/custom-domains.md
 - ./networking/load-balancer.md
 ---
@@ -15,7 +15,7 @@ toc:
 networking/private-network.md
 networking/vpn-integration-overview.md
 networking/configuring-a-vpn-server.md
-networking/connecting-a-vpn-server-to-dxp-cloud.md
+networking/connecting-a-vpn-server-to-liferay-cloud.md
 networking/custom-domains.md
 networking/load-balancer.md
 ```
@@ -23,6 +23,6 @@ networking/load-balancer.md
 - [プライベートネットワーク](./networking/private-network.md)
 - [VPNインテグレーションの概要](./networking/vpn-integration-overview.md)
 - [VPNサーバーの設定](./networking/configuring-a-vpn-server.md)
-- [Liferay CloudへのVPNサーバーの接続](./networking/connecting-a-vpn-server-to-dxp-cloud.md)
+- [Liferay CloudへのVPNサーバーの接続](./networking/connecting-a-vpn-server-to-liferay-cloud.md)
 - [カスタムドメイン](./networking/custom-domains.md)
 - [ロードバランサー](./networking/load-balancer.md)

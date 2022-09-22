@@ -1,8 +1,8 @@
-# DXP Cloud Infrastructure
+# Liferay Cloud Infrastructure
 
 Liferay Cloud is a flexible platform that combines a collection of key components to provide a robust, reliable, and manageable Liferay DXP implementation. This diagram shows how all of these components fit together to complete this implementation:
 
-![All of the key services and components integrated with Liferay Cloud are shown with their connections here.](./dxp-cloud-infrastructure/images/01.png)
+![All of the key services and components integrated with Liferay Cloud are shown with their connections here.](./liferay-cloud-infrastructure/images/01.png)
 
 ```{note}
 Private cluster subscriptions also include a built-in [Web Application Firewall](../infrastructure-and-operations/security/web-application-firewall.md). However, this is [not available with a shared cluster](./platform-limitations.md#security).

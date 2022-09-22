@@ -1,4 +1,4 @@
-# Understanding DXP Cloud Environments
+# Understanding Liferay Cloud Environments
 
 A Liferay Cloud project can have multiple environments, each for a different purpose (e.g., development, staging, production, etc.). Each environment has a unique name that is the project ID plus the environment ID. For example, the staging and production environments for a project named *acme* can be named *acme-uat* and *acme-prd*, respectively.
 
@@ -10,7 +10,7 @@ Despite this naming connection, each environment is independent. They're segrega
 
 You can access these environments from the selector menu at the upper left.
 
-![Figure 1: You can access your project's environments from this selector menu.](./understanding-dxp-cloud-environments/images/01.png)
+![Figure 1: You can access your project's environments from this selector menu.](./understanding-liferay-cloud-environments/images/01.png)
 
 ## Environment Location
 
@@ -18,7 +18,7 @@ Different environments can be located in different regions. For example, a compa
 
 Here's a [list of the Liferay Cloud regions](https://help.liferay.com/hc/en-us/articles/360019177512) currently available.
 
-![Figure 2: Your environments can be hosted in different locations.](./understanding-dxp-cloud-environments/images/02.png)
+![Figure 2: Your environments can be hosted in different locations.](./understanding-liferay-cloud-environments/images/02.png)
 
 ## Environment Type
 
@@ -39,4 +39,4 @@ Besides having different prices and computing power, these environment types dif
 * Backup: Data backups are not created automatically by default.
 * Database: Data is present in a single availability zone and contains regular IOPS.
 
-![Figure 3: Your environment's type appears in Settings.](./understanding-dxp-cloud-environments/images/03.png)
+![Figure 3: Your environment's type appears in Settings.](./understanding-liferay-cloud-environments/images/03.png)

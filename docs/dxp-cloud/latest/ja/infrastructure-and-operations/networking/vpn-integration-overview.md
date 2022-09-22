@@ -25,7 +25,7 @@ VPN接続が設定されると、環境のログページで、ドロップダ�
 IPsecサーバで `IKEv2` プロトコルを使用すると、`MSCHAPv2` または `TLS` 認証プロトコルを使用することができます。 詳しくは、 [IPsecサーバーの基本設定](./configuring-a-vpn-server.md#basic-setup-for-an-ipsec-server) をご覧ください。
 ```
 
-詳しくは [Liferay CloudへのVPNサーバーの接続](./connecting-a-vpn-server-to-dxp-cloud.md) をご覧ください。
+詳しくは [Liferay CloudへのVPNサーバーの接続](./connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
 
 ## Liferay CloudとIPSec VPNサーバーの接続
 

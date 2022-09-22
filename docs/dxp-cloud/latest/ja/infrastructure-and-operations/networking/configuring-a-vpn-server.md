@@ -323,4 +323,4 @@ OpenVPNサーバーの設定が完了しました。
 ## 追加情報
 
 * [VPNインテグレーションの概要](./vpn-integration-overview.md)
-* [Liferay CloudへのVPNサーバーの接続](./connecting-a-vpn-server-to-dxp-cloud.md)
+* [Liferay CloudへのVPNサーバーの接続](./connecting-a-vpn-server-to-liferay-cloud.md)

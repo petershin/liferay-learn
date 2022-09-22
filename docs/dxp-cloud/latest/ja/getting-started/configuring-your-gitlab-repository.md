@@ -9,7 +9,7 @@ Liferay Cloudオンボーディングメールを受信すると、 `［dxpcloud
 
 ## Jenkinsサービスの準備
 
-すでにLiferay Cloudのインスタンスで [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を使用している場合は、JenkinsサービスはすでにGitLabと互換性があります。 アップグレードの詳細については、 [Liferay Cloudスタックのアップグレード](../reference/upgrading-your-dxp-cloud-stack.md) を参照してください。
+すでにLiferay Cloudのインスタンスで [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を使用している場合は、JenkinsサービスはすでにGitLabと互換性があります。 アップグレードの詳細については、 [Liferay Cloudスタックのアップグレード](../reference/upgrading-your-liferay-cloud-stack.md) を参照してください。
 
 version 3.x.xのサービスを使用している場合は、 `［LCP.json］` で、 `［ci］` サービスを確認し、以下のJenkinsサービス以上のものを実行していることを確認してください：
 

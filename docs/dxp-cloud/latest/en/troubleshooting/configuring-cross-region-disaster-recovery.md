@@ -40,11 +40,11 @@ To ensure the two environments are connected,
 
 1. Click *Connect VPN*.
 
-For more information on connecting to a VPN, see [VPN Connection](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md).
+For more information on connecting to a VPN, see [VPN Connection](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md).
 
 ### Deploy the Latest Stable Build from Production to the DR Environment
 
-Now you must deploy the latest stable build on Production to the DR environment. Follow the same steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
+Now you must deploy the latest stable build on Production to the DR environment. Follow the same steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md).
 
 ### Set Up Automated Backup Restores to Disaster Recovery
 
@@ -138,7 +138,7 @@ Next, follow these steps to ensure your DR environment is ready for incoming tra
 
     ![Check the VPN status for your DR environment to confirm that it is properly connected.](./configuring-cross-region-disaster-recovery/images/05.png)
 
-    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) for more information.
+    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
 
 1. Log onto your DXP instance (using the IP address, since the custom domain does not yet point to the DR environment).
 
@@ -208,7 +208,7 @@ Follow these steps to ensure your production environment is ready for incoming t
 
 1. Verify that your VPN is connected to the production environment by navigating to the _Settings_ &rarr; _VPN_ page for your production environment.
 
-   If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) for more information.
+   If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
 
 1. Log onto your DXP instance (using the IP address, since the custom domain still points to the DR environment).
 

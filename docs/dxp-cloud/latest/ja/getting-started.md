@@ -5,8 +5,8 @@ toc:
 - ./getting-started/configuring-your-github-repository.md
 - ./getting-started/configuring-your-bitbucket-repository.md
 - ./getting-started/configuring-your-gitlab-repository.md
-- ./getting-started/logging-into-your-dxp-cloud-services.md
-- ./getting-started/understanding-dxp-cloud-environments.md
+- ./getting-started/logging-into-your-liferay-cloud-services.md
+- ./getting-started/understanding-liferay-cloud-environments.md
 ---
 # はじめに
 
@@ -18,8 +18,8 @@ getting-started/development-requirements.md
 getting-started/configuring-your-github-repository.md
 getting-started/configuring-your-bitbucket-repository.md
 getting-started/configuring-your-gitlab-repository.md
-getting-started/logging-into-your-dxp-cloud-services.md
-getting-started/understanding-dxp-cloud-environments.md
+getting-started/logging-into-your-liferay-cloud-services.md
+getting-started/understanding-liferay-cloud-environments.md
 ```
 
 Liferay Cloudは、安全で信頼性の高いエンタープライズクラウドプラットフォームであり、Liferay DXPで驚くべきアプリケーションを簡素化、安全化、提供するために必要なインフラストラクチャとツールを提供します。
@@ -56,7 +56,7 @@ Liferay Cloudはセキュリティを考慮して設計されています。 **I
 
 ## 高可用性、スケーラビリティ、およびパフォーマンス
 
-[クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md) と [ロードバランシング](./infrastructure-and-operations/networking/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 Liferay Cloudは、マルチリージョンアーキテクチャを通じてデータを提供し、高可用性を保証します。
+[クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) と [ロードバランシング](./infrastructure-and-operations/networking/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 Liferay Cloudは、マルチリージョンアーキテクチャを通じてデータを提供し、高可用性を保証します。
 
 [オートスケーリング](./manage-and-optimize/auto-scaling.md) は、予期しないトラフィックスパイクによって安定したパフォーマンスを維持するために、帯域幅とコンピューティング容量が動的に追加されることを保証します。 同様に、アクティビティが少ない期間に、不要なリソースを縮小できます。 チームはインスタンスの使用状況に関する自動通知と電子メールアラートを受信するので、自信を持ってリソースを管理できます。
 
@@ -70,7 +70,7 @@ Liferay Cloudはセキュリティを考慮して設計されています。 **I
 
 ## CI/CDの組み込みによる開発の加速化
 
-すぐに使えるCI/CD戦略により、アプリケーションをより速く提供できます。 [GithubとJenkins](./platform-services/continuous-integration.md) 統合により、それぞれの新しいコミットまたはプル要求ごとに、 [本番環境または非本番環境](./getting-started/understanding-dxp-cloud-environments.md)にデプロイできるビルドをトリガーできます。
+すぐに使えるCI/CD戦略により、アプリケーションをより速く提供できます。 [GithubとJenkins](./platform-services/continuous-integration.md) 統合により、それぞれの新しいコミットまたはプル要求ごとに、 [本番環境または非本番環境](./getting-started/understanding-liferay-cloud-environments.md)にデプロイできるビルドをトリガーできます。
 
 これらの堅牢なシステムにより、フォールトトレラントプロセスの作成が可能になり、組織固有のニーズを満たし、一般的なサーバーの問題が発生したときにそれを検出して修復します。 これにより、小さなプログラミングエラーが蓄積してサーバーがクラッシュするのを防ぐことができます。
 
@@ -78,7 +78,7 @@ Liferay Cloudはセキュリティを考慮して設計されています。 **I
 
 ## アプリケーション開発ツール
 
-リアルタイムのビルドと [デプロイメントログ](./troubleshooting/reading-dxp-cloud-service-logs.md)を使用して、アプリケーションのデプロイメントとパフォーマンスを追跡します。 チームは、Webコンソールまたは端子を介して[シェルへのアクセス](./troubleshooting/shell-access.md) および/またはログをダウンロードすることで、スタックトレースとトラブルシューティングのバグを分析することができます。
+リアルタイムのビルドと [デプロイメントログ](./troubleshooting/reading-liferay-cloud-service-logs.md)を使用して、アプリケーションのデプロイメントとパフォーマンスを追跡します。 チームは、Webコンソールまたは端子を介して[シェルへのアクセス](./troubleshooting/shell-access.md) および/またはログをダウンロードすることで、スタックトレースとトラブルシューティングのバグを分析することができます。
 
 ![図8: リアルタイムのビルドとデプロイのログは、アプリケーションの問題解決に役立ちます。](./getting-started/images/06.png)
 
@@ -92,5 +92,5 @@ Liferay Cloudは [アプリケーションメトリクスス](./manage-and-optim
 
 * [開発要件](./getting-started/development-requirements.md)
 * [Github リポジトリの設定](./getting-started/configuring-your-github-repository.md)
-* [Liferay Cloud デプロイメントワークフローの概要](./build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [Liferay Cloudコンソールによる変更のデプロイ](./build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)
+* [Liferay Cloud デプロイメントワークフローの概要](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloudコンソールによる変更のデプロイ](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)

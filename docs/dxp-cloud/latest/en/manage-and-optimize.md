@@ -27,8 +27,8 @@ manage-and-optimize/team-activities.md
 
 ## Managing Usage
 
-- [](./manage-and-optimize/real-time-alerts.md)
-- [](./manage-and-optimize/quotas.md)
+- [Real-Time Alerts](./manage-and-optimize/real-time-alerts.md)
+- [Quotas](./manage-and-optimize/quotas.md)
 
 ## Account and Team Management
 

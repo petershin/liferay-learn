@@ -5,8 +5,8 @@ toc:
 - ./getting-started/configuring-your-github-repository.md
 - ./getting-started/configuring-your-bitbucket-repository.md
 - ./getting-started/configuring-your-gitlab-repository.md
-- ./getting-started/logging-into-your-dxp-cloud-services.md
-- ./getting-started/understanding-dxp-cloud-environments.md
+- ./getting-started/logging-into-your-liferay-cloud-services.md
+- ./getting-started/understanding-liferay-cloud-environments.md
 ---
 # Getting Started
 
@@ -18,8 +18,8 @@ getting-started/development-requirements.md
 getting-started/configuring-your-github-repository.md
 getting-started/configuring-your-bitbucket-repository.md
 getting-started/configuring-your-gitlab-repository.md
-getting-started/logging-into-your-dxp-cloud-services.md
-getting-started/understanding-dxp-cloud-environments.md
+getting-started/logging-into-your-liferay-cloud-services.md
+getting-started/understanding-liferay-cloud-environments.md
 ```
 
 Liferay Cloud is a secure and reliable enterprise cloud platform that provides the infrastructure and tooling necessary to simplify, secure, and deliver amazing applications on Liferay DXP.
@@ -56,7 +56,7 @@ Out-of-the-box [role and team administration](./manage-and-optimize/environment-
 
 ## High Availability, Scalability, and Performance
 
-[Clustering](./using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md) and [load-balancing](./infrastructure-and-operations/networking/load-balancer.md) deliver highly available, zero-downtime deployments to ensure that mission-critical sites stay online. Liferay Cloud delivers data through a multi-region architecture to ensure high availability.
+[Clustering](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) and [load-balancing](./infrastructure-and-operations/networking/load-balancer.md) deliver highly available, zero-downtime deployments to ensure that mission-critical sites stay online. Liferay Cloud delivers data through a multi-region architecture to ensure high availability.
 
 [Auto-scaling](./manage-and-optimize/auto-scaling.md) ensures that bandwidth and compute capacity is dynamically added to maintain steady performance through unexpected traffic spikes. Similarly, unneeded resources can be scaled down during periods of lower activity. Teams receive automatic notifications and email alerts regarding instance usage so they can manage resources with confidence.
 
@@ -70,7 +70,7 @@ Administrators can configure [alerts](./manage-and-optimize/real-time-alerts.md)
 
 ## Accelerated Development with Built-in CI/CD
 
-Deliver your application faster with a fully-realized CI/CD strategy available out-of-the-box. [Github and Jenkins](./platform-services/continuous-integration.md) integrations allow each new commit or pull request to trigger a build that can be deployed to your [production or non-production environments](./getting-started/understanding-dxp-cloud-environments.md).
+Deliver your application faster with a fully-realized CI/CD strategy available out-of-the-box. [Github and Jenkins](./platform-services/continuous-integration.md) integrations allow each new commit or pull request to trigger a build that can be deployed to your [production or non-production environments](./getting-started/understanding-liferay-cloud-environments.md).
 
 These robust systems enable the creation of fault tolerant processes to meet organizations' unique needs and detect and repair common server problems as they occur. This helps prevent small programming errors from accumulating and causing a server crash.
 
@@ -78,7 +78,7 @@ These robust systems enable the creation of fault tolerant processes to meet org
 
 ## Application Development Tools
 
-Keep track of application deployments and performance with real-time build and [deployment logs](./troubleshooting/reading-dxp-cloud-service-logs.md). Teams can analyze stack traces and troubleshoot bugs by [accessing the shell](./troubleshooting/shell-access.md) via the web console or terminal, and/or by downloading the logs.
+Keep track of application deployments and performance with real-time build and [deployment logs](./troubleshooting/reading-liferay-cloud-service-logs.md). Teams can analyze stack traces and troubleshoot bugs by [accessing the shell](./troubleshooting/shell-access.md) via the web console or terminal, and/or by downloading the logs.
 
 ![Figure 8: Real-time build and deployment logs help you solve problems with your applications.](./getting-started/images/06.png)
 
@@ -92,5 +92,5 @@ Liferay Cloud delivers [application metrics](./manage-and-optimize/application-m
 
 * [Development Requirements](./getting-started/development-requirements.md)
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
-* [Overview of the Liferay Cloud Deployment Workflow](./build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [Deploying Changes via the Liferay Cloud Console](./build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)
+* [Overview of the Liferay Cloud Deployment Workflow](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Deploying Changes via the Liferay Cloud Console](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)

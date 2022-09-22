@@ -5,7 +5,7 @@
 When a file is uploaded, Liferay automatically generates a friendly URL for accessing it. This URL uses the following structure: `server-address/documents/d/sites-friendly-url/file-friendly-URL`. Unless specified during upload, Liferay uses the file's name for the friendly URL, but you can manually change this value at any time. Once set, you can access the latest version of the file at its friendly URL.
 
 ```{note}
-For Liferay 7.4 U26/GA26 and earlier versions, Liferay generates file URLs using the following structure: `server-address/documents/site-id/folder-id/file-name/UUID` (e.g., `http://server-address/documents/20121/0/file-name.txt/c4c06cfa-a655-c796-fdf2-0ea38ef8d8a5`). If you're updating to U27+/GA27+, your existing files can continue to use their old URLs based on this pattern. However, whenever one of these files is first updated by a user, Liferay will convert its URL to use the new structure. Until updated, you can continue to access your files using their old URLs. 
+For 7.4 U26/GA26 and earlier versions, Liferay generates file URLs using the following structure: `server-address/documents/site-id/folder-id/file-name/UUID`. If you're updating to U27+/GA27+, existing files continue to use their old URLs based on this pattern. However, whenever one of these files is first updated by a user, Liferay converts its URL to use the new structure. Until updated, you can continue to access your files using their old URLs. 
 ```
 
 ## Setting Friendly URLs for Documents
@@ -16,7 +16,7 @@ You can manually configure a file's friendly URL during [file upload](./uploadin
 When uploading multiple files, each file's friendly URL is automatically generated using its name. 
 ```
 
-Follow these steps to change a file's friendly URL:
+Follow these steps to set a file's friendly URL:
 
 1. Begin uploading or editing the desired file.
 
@@ -32,7 +32,7 @@ Once saved, you can access the file at the designated URL (e.g., `http://server-
 
 ## Friendly URL History
 
-When you change a file's friendly URL, Liferay automatically retains a history of the previous URLs. While retained, you can continue to use previous URLs to access the latest version of the file. If desired, you can remove old friendly URL entries.
+When you change a file's friendly URL, Liferay automatically retains a history of the previous URLs. You can continue to use these saved URLs to access the latest version of the file. If desired, you can remove old friendly URL entries.
 
 ```{note}
 While saved in the friendly URL history, old file URLs cannot be used for other files in the same site. To reuse the URL for another file, you must first remove it from the file's friendly URL history.
@@ -48,7 +48,7 @@ Follow these steps to view and manage retained URLs for a file:
 
 1. Click the *Restore* button ( ![Restore Button](../../../images/icon-restore2.png) ) to replace the current friendly URL with the selected URL.
 
-1. Click the *Forget URL* button ( ![Forget URL Button](../../../images/icon-times-circle.png) ) to remove the selected URL from the file's history. Once removed, you can no longer use the URL to access the file.
+1. Click the *Forget URL* button ( ![Forget URL Button](../../../images/icon-delete.png) ) to remove the selected URL from the file's history. Once removed, you can no longer use the URL to access the file.
 
    ![Click the Restore or Forget URL buttons.](./configuring-document-urls/images/03.png)
 

@@ -2,7 +2,6 @@
 toc:
 - ./message-boards/user-guide.md
 - ./message-boards/developer-guide.md
-- ./message-boards/apis.md
 ---
 # Message Boards
 
@@ -11,7 +10,6 @@ toc:
 
 message-boards/user-guide.md
 message-boards/developer-guide.md
-message-boards/apis.md
 ```
 
 User Guide
@@ -29,8 +27,4 @@ User Guide
 
 ## Developer Guide
 
-Coming soon!
-
-## APIs
-
-Coming soon!
+* [Message Boards API Basics](./message-boards/developer-guide/message-boards-api-basics.md)

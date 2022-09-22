@@ -15,7 +15,7 @@ Currently, Liferay supports four action types:
 * [Add an Object Entry actions](#add-an-object-entry-actions) create entries in an active Object.
 
 ```{important}
-Groovy script actions are not currently available on LXC.
+Currently, Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
 ```
 
 Follow these steps to define actions for an Object:

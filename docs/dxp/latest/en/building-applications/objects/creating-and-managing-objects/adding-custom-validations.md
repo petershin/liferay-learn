@@ -7,7 +7,7 @@ With custom Objects, you can add validations for both custom and metadata fields
 ![Create validations for custom and metadata Object fields.](./adding-custom-validations/images/01.png)
 
 ```{important}
-Groovy script validations are not currently available on LXC.
+Currently, Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
 ```
 
 Follow these steps to add a custom validation:

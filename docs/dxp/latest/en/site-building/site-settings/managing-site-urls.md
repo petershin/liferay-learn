@@ -19,21 +19,21 @@ managing-site-urls/using-pattern-redirects.md
 
 Liferay DXP provides multiple out-of-the-box features for configuring and managing site URLs.
 
+## Virtual Hosts Site URLs
+
+Configure virtual hosts for your Liferay server to connect domain names (e.g., `www.helloworld.com`) and subdomain names (e.g. `developers.helloworld.com`) to your sites. In this way you can host multiple, separate sites on one Liferay DXP server. See [Configuring Virtual Hosts Site URLs](./managing-site-urls/configuring-virtual-hosts-site-urls.md) for more information
+
 ## Friendly URLs
 
-Friendly URLs are readable URLs that can helps users quickly access your site. Each friendly URL on your Liferay server must be unique and is appended to `https://localhost:8080/web` (e.g., `https://localhost:8080/web/hello-world/`). See [Configuring Your Site's Friendly URL](./managing-site-urls/configuring-your-sites-friendly-url.md) for more information.
+Define friendly URLs to help users quickly access your sites. Each friendly URL on your Liferay server must be unique and is appended to `https://localhost:8080/web` (e.g., `https://localhost:8080/web/hello-world/`). See [Configuring Your Site's Friendly URL](./managing-site-urls/configuring-your-sites-friendly-url.md) for more information.
 
 ```{note}
 You can also configure friendly URLs for pages and documents. See [Configuring Your Page's Friendly URL](../creating-pages/page-settings/configuring-your-pages-friendly-url.md) and [Configuring Document URLs](../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md) for more information.
 ```
 
-## Virtual Hosts Site URLs
-
-With Liferay, you can use virtual hosts to connect domain names (e.g., `www.helloworld.com`) and subdomain names (e.g. `developers.helloworld.com`) to your sites. In this way you can host multiple, separate sites on one Liferay DXP server. See [Configuring Virtual Hosts Site URLs](./managing-site-urls/configuring-virtual-hosts-site-urls.md) for more information
-
 ## Site Redirects
 
-With Liferay DXP, you can define two types of redirects: alias redirects and pattern redirects.
+Set up URL redirects for your sites to avoid 404s and improve user experience. With Liferay DXP, you can define two types of redirects: alias redirects and pattern redirects.
 
 **Alias Redirects**: These redirects explicitly define an absolute source URL and an absolute destination URL. For this reason, they are more predictable and recommended in most use cases. See [Using the Redirection Tool](./managing-site-urls/using-the-redirection-tool.md) for instructions on setting up alias redirects for your site.
 
@@ -41,7 +41,7 @@ With Liferay DXP, you can define two types of redirects: alias redirects and pat
 
 ## 404 URLs
 
-Using the Redirection tool, you can track and manage Site requests leading to 404 errors. When this feature is enabled, Liferay DXP catalogs each 404 error, so you can assess the cause of the errors and quickly resolve any issues. See [Using the Redirection Tool](./managing-site-urls/using-the-redirection-tool.md) for more information and available configuration options.
+Use the Redirection tool to track and manage Site requests leading to 404 errors. When enabled, Liferay DXP catalogs each 404 error, so you can assess and quickly resolve any issues. See [Using the Redirection Tool](./managing-site-urls/using-the-redirection-tool.md) for more information and available configuration options.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

@@ -4,7 +4,7 @@ Message Boards Categories organize threads by topic. Only authenticated users wi
 
 ## Adding Categories
 
-The most common way to add a new category is by directly using the the _Message Boards_ widget.
+The most common way to add a new category is by directly using the _Message Boards_ widget.
 
 1. On the Message Boards widget, click the _Add Category_ button.
 
@@ -20,7 +20,7 @@ The most common way to add a new category is by directly using the the _Message 
     ![Select a display style.](./creating-message-boards-categories/images/04.png)
 
 1. In the _Mailing List_ section, leave the _Active_ toggle to _NO_ to disable a mailing list for the category. If switched to _YES_, fill in the mail server settings. For more information, see the [Setting up Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) article.
-1. Leave the _Allow Anonymous Emails_ toggle to _NO_ to prevent anonymous users from posting to the category. Otherwise, if you do want to let anonymous users send emails to post to the message board category, switch the _Allow Anonymous Emails_ toggle to _YES_.
+1. Leave the _Allow Anonymous Emails_ toggle to _NO_ to prevent anonymous users from posting to the category. Otherwise, if you want to allow anonymous users to send emails and post to the category, toggle the switch to _YES_.
 
     ![Configure the message board category.](./creating-message-boards-categories/images/02.png)
 

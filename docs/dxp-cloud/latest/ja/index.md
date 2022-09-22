@@ -10,7 +10,7 @@ toc:
 - ./troubleshooting.md
 - ./reference.md
 ---
-# DXP Cloud
+# Liferay Cloud
 
 ```{raw} html
 :file: landingpage_template.html

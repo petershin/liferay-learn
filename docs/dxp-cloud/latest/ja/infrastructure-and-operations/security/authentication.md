@@ -1,6 +1,6 @@
 # 認証
 
-この記事では、Liferay DXP Cloudで使用される2種類の認証リクエストについて説明します。
+この記事では、Liferay Cloudで使用される2種類の認証リクエストについて説明します。
 
 最初の方法は [基本認証](https://swagger.io/docs/specification/authentication/basic-authentication/) です。これは、サーバーがクライアントに認証を要求するときにエンコードされる承認ヘッダーのHTTPプロトコルです。
 
@@ -17,4 +17,4 @@ curl -X POST /
   -F 'volume=@/my-folder/volume.tgz'
 ```
 
-> **注** ：ヘッダー `dxpcloud-authorization` にユーザートークンを渡すことは、バックアップサービスのバージョン `3.2.0` 以降でのみ機能します。 以前のバージョンは、少なくとも `3.2.0` にアップグレードする必要があります。 以前のバージョンへのリクエストでは、ヘッダー `Authorization: Bearer <PROJECT_MASTER_TOKEN>` を使用する必要があります。 プロジェクトマスタートークンを見つけるには、Liferay DXP Cloudコンソールの任意のシェルでコマンド `env grep LCP_PROJECT_MASTER_TOKEN` を実行します。
+> **注** ：ヘッダー `dxpcloud-authorization` にユーザートークンを渡すことは、バックアップサービスのバージョン `3.2.0` 以降でのみ機能します。 以前のバージョンは、少なくとも `3.2.0` にアップグレードする必要があります。 以前のバージョンへのリクエストでは、ヘッダー `Authorization: Bearer <PROJECT_MASTER_TOKEN>` を使用する必要があります。 プロジェクトマスタートークンを見つけるには、Liferay Cloudコンソールの任意のシェルでコマンド `env grep LCP_PROJECT_MASTER_TOKEN` を実行します。

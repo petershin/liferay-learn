@@ -1,18 +1,18 @@
 # カスタムサービスの使用
 
-DXP Cloudでは、すぐに利用できる標準的なサービスだけでなく、より多くのサービスを実行することができます。 また、カスタムサービスを作成して展開し、DXP Cloudインフラストラクチャ内で新しいプロセスを実行することもできます。 DXP Cloud環境においてカスタムサービスの利用を希望されるお客様は、まず販売代理店にご連絡の上、この機能を有効にし、お客様の環境が適切にプロビジョニングされていることをご確認ください。
+Liferay Cloudでは、すぐに利用できる標準的なサービスだけでなく、より多くのサービスを実行することができます。 また、カスタムサービスを作成して展開し、Liferay Cloudインフラストラクチャ内で新しいプロセスを実行することもできます。 Liferay Cloud環境においてカスタムサービスの利用を希望されるお客様は、まず販売代理店にご連絡の上、この機能を有効にし、お客様の環境が適切にプロビジョニングされていることをご確認ください。
 
 ```{note}
 カスタムサービスを追加するためには、十分なハードウェアリソースが用意されている必要があります。 プロビジョニングプロセス中にカスタムサービスに追加のリソースを割り当てることができます。
 ```
 
-DXP Cloudは、サービスの基盤としてDockerイメージを使用しています。 これらのサービスをローカルで実行したい場合は、 [［install Docker］](https://docs.docker.com/get-docker/) をローカルシステムにインストールしてください。
+Liferay Cloudは、サービスの基盤としてDockerイメージを使用しています。 これらのサービスをローカルで実行したい場合は、 [［install Docker］](https://docs.docker.com/get-docker/) をローカルシステムにインストールしてください。
 
 詳しくは、 [［custom services limitations］](../reference/platform-limitations.md#custom-services) を参照してください。
 
 ## カスタムサービスの追加
 
-次の手順を使用して、DXP Cloudのビルドに独自のカスタムサービスを追加します：
+次の手順を使用して、Liferay Cloudのビルドに独自のカスタムサービスを追加します：
 
 1. カスタムサービスをDockerイメージとして作成または検索します。 プロジェクトのワークスペースに直接追加したDockerfileを使用するか、 [［Docker Hub］](https://hub.docker.com/) などのパブリックリポジトリのイメージを使用できます。
 
@@ -74,9 +74,9 @@ DXP Cloudは、サービスの基盤としてDockerイメージを使用して�
     git commit -m "Add custom service"
     ```
 
-1. ブランチをアップして、DXP Cloudで新規ビルドを開始してデプロイします。 ビルドのデプロイについては、 [DXP Cloud Deployment の概要](./overview-of-the-dxp-cloud-deployment-workflow#deploy) にあるデプロイの情報を参照してください。
+1. ブランチをアップして、Liferay Cloudで新規ビルドを開始してデプロイします。 ビルドのデプロイについては、 [Liferay Cloud Deployment の概要](./overview-of-the-dxp-cloud-deployment-workflow#deploy) にあるデプロイの情報を参照してください。
 
-変更を加えたCIで新しいビルドをトリガーしたら、DXP Cloudコンソールの ［**ビルド**］ 画面に移動して、ビルドを確認できます。 ［**サービス**］ の列にリストされているサービスには、他のサービスとの新しいサービスが含まれています。
+変更を加えたCIで新しいビルドをトリガーしたら、Liferay Cloudコンソールの ［**ビルド**］ 画面に移動して、ビルドを確認できます。 ［**サービス**］ の列にリストされているサービスには、他のサービスとの新しいサービスが含まれています。
 
 このビルドをいずれかの環境にデプロイする場合（アクションメニューで[**ビルドを** にデプロイ]をクリックして）、その環境の ［**サービス**］ ページに移動して、そこにリストされているカスタムサービスを確認することもできます：
 
@@ -84,4 +84,4 @@ DXP Cloudは、サービスの基盤としてDockerイメージを使用して�
 
 ## 追加情報
 
-* [DXP Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow)
+* [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow)

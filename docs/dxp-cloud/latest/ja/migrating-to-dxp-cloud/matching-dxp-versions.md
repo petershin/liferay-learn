@@ -1,12 +1,12 @@
 # ステージ1：DXPバージョンのマッチング
 
-移行の第一段階として、DXP Cloud上で動作するLiferayサービスが、移行したいインストールと同じバージョンで動作するように設定します。
+移行の第一段階として、Liferay Cloud上で動作するLiferayサービスが、移行したいインストールと同じバージョンで動作するように設定します。
 
-そのため、DXP Cloudのリポジトリをクローンし、バージョン変更の設定を行い、ビルドを展開することでDXP Cloudにその更新を戻す必要があります。
+そのため、Liferay Cloudのリポジトリをクローンし、バージョン変更の設定を行い、ビルドを展開することでLiferay Cloudにその更新を戻す必要があります。
 
 ## Liferayのバージョン情報を検索する
 
-まず、移行したい Liferay DXP インストールのバージョン番号とインストールされているパッチを探します。 DXP Cloud で Liferay サービスを適切に設定するために、これらの値が必要です。
+まず、移行したい Liferay DXP インストールのバージョン番号とインストールされているパッチを探します。 Liferay Cloud で Liferay サービスを適切に設定するために、これらの値が必要です。
 
 これらの値を求めるには、パッチングツールを使用します。
 
@@ -70,7 +70,7 @@ git clone https://github.com/dxpcloud/acme
 
 次に、リポジトリ内のLiferayサービスの `LCP.json` ファイルにあるLiferayサービスのイメージを更新します。 このため、Liferayのインストールバージョンと互換性のある最新のDockerイメージを見つける必要があります。
 
-1. DXP Cloudの [Services Changelog](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) のページに移動します。
+1. Liferay Cloudの [Services Changelog](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) のページに移動します。
 
 1. リストの一番上にある最新のサービス更新をクリックします。
 
@@ -130,7 +130,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 1. 変更内容とメッセージを添えてコミットしてください。
 
     ```bash
-    git commit -m "DXP Cloud Migration Stage 1"
+    git commit -m "Liferay Cloud Migration Stage 1"
     ```
 
 1. 変更をGitHubにプッシュします。
@@ -143,9 +143,9 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 ### ビルドを選択した環境にデプロイする
 
-最後に、 [DXP Cloud Console](https://console.liferay.cloud/) を使用して、完成したビルドを選択した環境にデプロイします。
+最後に、 [Liferay Cloud Console](https://console.liferay.cloud/) を使用して、完成したビルドを選択した環境にデプロイします。
 
-1. DXP Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
+1. Liferay Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
 
 1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
 
@@ -167,4 +167,4 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 ## 次のステップ
 
-これで、選択した環境に、正しい Liferay DXP のバージョン情報をすべて含むデプロイができました。 次に、 [インスタンスのデータのバックアップファイル](./creating-data-backup-files.md) を作成し、DXP Cloud に対応させる準備をします。
+これで、選択した環境に、正しい Liferay DXP のバージョン情報をすべて含むデプロイができました。 次に、 [インスタンスのデータのバックアップファイル](./creating-data-backup-files.md) を作成し、Liferay Cloud に対応させる準備をします。

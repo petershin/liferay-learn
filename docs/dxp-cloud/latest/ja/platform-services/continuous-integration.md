@@ -1,12 +1,12 @@
 # 継続的インテグレーション
 
-DXP Cloudは [Jenkins](https://jenkins.io/) を使用して、継続的なインテグレーションインフラストラクチャサービスを強化しています。 プルリクエストを送信するか、事前設定されたGitHubブランチの1つにコミットをプッシュすると、自動で設定可能なビルドがトリガーされます。
+Liferay Cloudは [Jenkins](https://jenkins.io/) を使用して、継続的なインテグレーションインフラストラクチャサービスを強化しています。 プルリクエストを送信するか、事前設定されたGitHubブランチの1つにコミットをプッシュすると、自動で設定可能なビルドがトリガーされます。
 
 ```{note}
 DXPクラウドの顧客（ ［customer］ログインを使用）には、ビルドを管理および確認する権限がありますが、完全な管理者権限はありません。
 ```
 
-デフォルトでは、この自動ビルドはコードをコンパイルし、テストを実行するように設定できます。 DXP Cloudはサービスをビルドし、そのステータスを環境のビルドページに表示します。 テストが失敗した場合は、Jenkinsダッシュボードと `［https://ci-companyname-infra.lfr.cloud］`ログを確認できます。
+デフォルトでは、この自動ビルドはコードをコンパイルし、テストを実行するように設定できます。 Liferay Cloudはサービスをビルドし、そのステータスを環境のビルドページに表示します。 テストが失敗した場合は、Jenkinsダッシュボードと `［https://ci-companyname-infra.lfr.cloud］`ログを確認できます。
 
 ```{note}
 継続的インテグレーションは、CLIではなく、GitHub、GitLab、またはBitbucketからデプロイする場合にのみ機能します。
@@ -52,7 +52,7 @@ CIビルドプロセスのステップの基本的な概要は次のとおりで
 
 1. 存在する場合は、 `［ci/Jenkinsfile-before-cloud-build］`をロードします。
 
-1. コンソールに表示されるDXP Cloudビルドを作成します。
+1. コンソールに表示されるLiferay Cloudビルドを作成します。
 
 1. 存在する場合は、 `［ci/Jenkinsfile-before-cloud-deploy］`をロードします。
 
@@ -99,7 +99,7 @@ return this
 ```
 def util = load("ci/util.groovy")
 
-util.sendSlackMessage("About to create DXP Cloud build...")
+util.sendSlackMessage("About to create Liferay Cloud build...")
 ```
 
 ```{note}
@@ -135,5 +135,5 @@ util.sendSlackMessage("About to create DXP Cloud build...")
 * [DXPクラウドサービスへログインする](../getting-started/logging-into-your-dxp-cloud-services.md)
 * [GitHubリポジトリの設定](../getting-started/configuring-your-gitlab-repository.md)
 * [Bitbucket リポジトリの設定](../getting-started/configuring-your-bitbucket-repository.md)
-* [バージョン4でのDXP Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md)
+* [バージョン4でのLiferay Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md)
 <!-- While Version 3 is still supported, because of the fact a large part of this article hinges on the project version, this link may be helpful. This link should likely be removed once version 3 is no longer supported. -->

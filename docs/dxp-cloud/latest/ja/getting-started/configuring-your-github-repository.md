@@ -1,10 +1,10 @@
 # GitHubリポジトリの設定
 
-DXP Cloudオンボーディングメールを受信すると、 `［dxpcloud］` 組織でホストされているGitHubリポジトリがプロビジョニングされます。 このリポジトリは、チームの個別のプライベートDXP Cloud開発リポジトリのテンプレートで、通常は10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
+Liferay Cloudオンボーディングメールを受信すると、 `［dxpcloud］` 組織でホストされているGitHubリポジトリがプロビジョニングされます。 このリポジトリは、チームの個別のプライベートLiferay Cloud開発リポジトリのテンプレートで、通常は10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
 
 1. プロビジョニングされたリポジトリを独自のプライベートGitHubリポジトリに転送します。
 
-1. プライベートリポジトリとDXP CloudのJenkins(CI)サービスをWebhookで連携させます。
+1. プライベートリポジトリとLiferay CloudのJenkins(CI)サービスをWebhookで連携させます。
 
 ```{note}
 組織のアカウントを使用している場合、リポジトリを組織に転送するには管理者権限が必要です。
@@ -24,13 +24,13 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 ## Jenkinsサービスとの統合
 
-次に、新しいリポジトリをDXP CloudのJenkinsサービスと統合する必要があります。 JenkinsサービスにプッシュするGitHubでWebhookを設定します：
+次に、新しいリポジトリをLiferay CloudのJenkinsサービスと統合する必要があります。 JenkinsサービスにプッシュするGitHubでWebhookを設定します：
 
 1. GitHubでは、リポジトリの **Settings** ページに移動し、 ［**Webhooks**］ を選択します。
 
 1. ［**Webhookの追加**］ をクリックします。 **Webhookの追加** フォームが開きます。
 
-1. **Payload URL** フィールドに、DXP Cloud `infra` 環境のJenkinsサービスのドメインを追加します。 たとえば、 `acme` というプロジェクトの `インフラ` 環境の `ci` サービスのURLは `https://ci-acme-infra.lfr.cloud/github-webhook/`です。 Jenkins GitHubプラグインと統合するには、相対パス `github-webhook` が必要です。
+1. **Payload URL** フィールドに、Liferay Cloud `infra` 環境のJenkinsサービスのドメインを追加します。 たとえば、 `acme` というプロジェクトの `インフラ` 環境の `ci` サービスのURLは `https://ci-acme-infra.lfr.cloud/github-webhook/`です。 Jenkins GitHubプラグインと統合するには、相対パス `github-webhook` が必要です。
 
 1. **Content type** セレクターメニューで、 **application/json** を選択します。
 
@@ -54,7 +54,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 新しいリポジトリを指すようにJenkinsサービスの環境変数を設定します：
 
-1. DXP Cloudコンソールにログインし、 `［infra］` 環境でJenkinsサービスに移動します。
+1. Liferay Cloudコンソールにログインし、 `［infra］` 環境でJenkinsサービスに移動します。
 
 1. ［**環境変数**］ タブに移動します。
 
@@ -69,7 +69,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 `LCP_CI_SCM_TOKEN` の値には、GitHub組織用に作成した個人用アクセストークンを使用します。 このトークンの作成とアクセスの手順については、 [GitHub's documentation](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) を参照してください。
 
-作成されたパーソナルアクセストークンは、 **repo** と **admin:repo** **hook** 以下のすべてのスコープ権限にチェックが入っている必要があります。リポジトリがDXP Cloudと正常に統合された後、 [自動Webフック管理を無効](#personal-access-token-usage) にすれば、具体的には、 **admin:repo** **hook** スコープ権限を後で削除できます。
+作成されたパーソナルアクセストークンは、 **repo** と **admin:repo** **hook** 以下のすべてのスコープ権限にチェックが入っている必要があります。リポジトリがLiferay Cloudと正常に統合された後、 [自動Webフック管理を無効](#personal-access-token-usage) にすれば、具体的には、 **admin:repo** **hook** スコープ権限を後で削除できます。
 
 ![PATが正常に使用できるように、正しい権限を確認してください。](./configuring-your-github-repository/images/05.png)
 
@@ -93,7 +93,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 
 デフォルトでは、GitHub組織の [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) は、CIサービスがデフォルトのWebフックを使用して正常に統合するために、 `admin:repo_hook` パーミッションも持つ必要がある。
 
-しかし、[CI service](../platform-services/continuous-integration.md)の`LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md)を`false`に設定することをお勧めします。 これにより、ウェブフックの自動管理が無効になり（リポジトリとの統合設定が終了すると不要になります）、DXP Cloudが使用するパーソナルアクセストークンから（管理者レベルの） `admin:repo_hook` の権限を削除することができます。
+しかし、[CI service](../platform-services/continuous-integration.md)の`LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md)を`false`に設定することをお勧めします。 これにより、ウェブフックの自動管理が無効になり（リポジトリとの統合設定が終了すると不要になります）、Liferay Cloudが使用するパーソナルアクセストークンから（管理者レベルの） `admin:repo_hook` の権限を削除することができます。
 
 ![ウェブフックの自動管理を無効にすると、個人用アクセストークンからadmin:repo_hookの権限を削除することができます。](./configuring-your-github-repository/images/06.png)
 
@@ -101,7 +101,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 
 ## ビルドの確認
 
-プッシュされたブランチとプルリクエストは、DXP Cloudコンソールの ［**Builds**］ タブから表示またはデプロイできるビルドをトリガーする必要があります。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
+プッシュされたブランチとプルリクエストは、Liferay Cloudコンソールの ［**Builds**］ タブから表示またはデプロイできるビルドをトリガーする必要があります。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
 
 ### プッシュされたブランチからのビルドの確認
 
@@ -119,7 +119,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
     git push origin branch-name
     ```
 
-1. DXP Cloud コンソールの **Builds** ページに移動します。
+1. Liferay Cloud コンソールの **Builds** ページに移動します。
 
 1. **Builds** ページで、プッシュされたブランチのビルドが表示されることを確認します。
 
@@ -131,7 +131,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 
 1. プルリクエストに対して新しいビルドが作成されていることを確認します。
 
-1. DXP Cloud コンソールの **Builds** ページに移動します。
+1. Liferay Cloud コンソールの **Builds** ページに移動します。
 
 1. ブランチのリンクをクリックして、適切なビルドでコミットします。
 

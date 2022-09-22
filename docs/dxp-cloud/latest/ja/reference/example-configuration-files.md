@@ -1,6 +1,6 @@
 # コンフィギュレーションファイルの例
 
-DXP Cloudの異なるサービス（ [検索](../platform-services/search-service.md) や [Webサーバー](../platform-services/web-server-service.md) サービスなど）は、オンプレミス環境では異なる扱いに慣れているかもしれませんが、設定ファイルを使用して実行されます。 DXP Cloudを使い始める際に、これらのファイルがどのようなものかを確認する出発点として使用できるサンプルリソースを紹介します。
+Liferay Cloudの異なるサービス（ [検索](../platform-services/search-service.md) や [Webサーバー](../platform-services/web-server-service.md) サービスなど）は、オンプレミス環境では異なる扱いに慣れているかもしれませんが、設定ファイルを使用して実行されます。 Liferay Cloudを使い始める際に、これらのファイルがどのようなものかを確認する出発点として使用できるサンプルリソースを紹介します。
 
 ## ウェブサーバサービスの設定 (nginx.conf)
 

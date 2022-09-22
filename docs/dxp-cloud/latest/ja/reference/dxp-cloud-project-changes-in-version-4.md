@@ -1,6 +1,6 @@
-# バージョン4におけるDXP Cloudプロジェクトの変更
+# バージョン4におけるLiferay Cloudプロジェクトの変更
 
-DXP Cloud スタックのバージョン 3.x と 4.x の間には、サービスに対して Docker イメージのバージョンを定義する場所、リポジトリの構造、および `Jenkinsfiles` の使用方法など、いくつかの変更が加えられています。
+Liferay Cloud スタックのバージョン 3.x と 4.x の間には、サービスに対して Docker イメージのバージョンを定義する場所、リポジトリの構造、および `Jenkinsfiles` の使用方法など、いくつかの変更が加えられています。
 
 **内容：**
 
@@ -15,9 +15,9 @@ DXP Cloud スタックのバージョン 3.x と 4.x の間には、サービス
 
 ## Dockerイメージ定義の変更
 
-DXP Cloudのバージョン4.xのサービス用Dockerイメージは、プロジェクトの `gradle.properties` ファイルに定義されなくなりました。 各サービスの `LCP.json` ファイルに定義されるようになりました。
+Liferay Cloudのバージョン4.xのサービス用Dockerイメージは、プロジェクトの `gradle.properties` ファイルに定義されなくなりました。 各サービスの `LCP.json` ファイルに定義されるようになりました。
 
-DXP Cloud Stackバージョン4にアップグレードすると、すべてのサービスのDockerイメージバージョンが `3.xx` から `4.xx`に変更されます。 これらのイメージの変更は、DXP Cloudプロジェクトの構造と機能の方法に対する組織の変更に加えて行われます。
+Liferay Cloud Stackバージョン4にアップグレードすると、すべてのサービスのDockerイメージバージョンが `3.xx` から `4.xx`に変更されます。 これらのイメージの変更は、Liferay Cloudプロジェクトの構造と機能の方法に対する組織の変更に加えて行われます。
 
 ## プロジェクト組織の変更
 
@@ -29,7 +29,7 @@ DXP Cloud Stackバージョン4にアップグレードすると、すべての�
 
 `liferay` サービスフォルダは [Liferay Workspace](https://learn.liferay.com/dxp/latest/ja/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) の機能構造に従っています。
 
-`liferay` サービス内のすべての構成は、プロジェクトの DXP Cloud 環境に対応する環境固有の `configs` ディレクトリに属するようになりました。 さらに、 `ライセンス` フォルダーが削除されました。 代わりに、 `デプロイ` フォルダーにライセンスを追加してください。
+`liferay` サービス内のすべての構成は、プロジェクトの Liferay Cloud 環境に対応する環境固有の `configs` ディレクトリに属するようになりました。 さらに、 `ライセンス` フォルダーが削除されました。 代わりに、 `デプロイ` フォルダーにライセンスを追加してください。
 
 次の表は、 `liferay` サービス設定の新しい設定をまとめたものです。
 
@@ -43,7 +43,7 @@ DXP Cloud Stackバージョン4にアップグレードすると、すべての�
 | ライセンス                      | lcp/liferay/license/{ENV}/ | lcp/configs/{ENV}/deploy/           |
 
 ```{note}
-`configs/{ENV}/` ディレクトリ内のファイルは、DXP Cloud の Liferay コンテナ内の `LIFERAY_HOME` ディレクトリにオーバーライドとしてコピーされます。
+`configs/{ENV}/` ディレクトリ内のファイルは、Liferay Cloud の Liferay コンテナ内の `LIFERAY_HOME` ディレクトリにオーバーライドとしてコピーされます。
 ```
 
 ホットフィックスを直接リポジトリにコミットするのではなく、Liferayサービスのデプロイ時に自動的に追加される新しいCIサービス環境変数が用意されています。 詳細については、 [Installing Hotfixes with an Environment Variable](#installing-hotfixes-with-an-environment-variable) を参照してください。
@@ -63,7 +63,7 @@ DXP Cloud Stackバージョン4にアップグレードすると、すべての�
 | Elasticsearchライセンス（.json）ファイル | lcp/search/license/{ENV}/ です。 | search/configs/{ENV}/license/ |
 
 ```{note}
-`search/configs/{ENV}/` にあるファイルは、DXP Cloud の Search コンテナ内の `usr/shared/elasticsearch/` にオーバーライドとしてコピーされます。 例えば、`search/configs/{ENV}/config/` にある `elasticsearch.yml` などの設定は `usr/shared/elasticsearch/config/` にコピーされ、既存のデフォルトをオーバーライドします。
+`search/configs/{ENV}/` にあるファイルは、Liferay Cloud の Search コンテナ内の `usr/shared/elasticsearch/` にオーバーライドとしてコピーされます。 例えば、`search/configs/{ENV}/config/` にある `elasticsearch.yml` などの設定は `usr/shared/elasticsearch/config/` にコピーされ、既存のデフォルトをオーバーライドします。
 ```
 
 ### Elasticsearchプラグイン
@@ -84,7 +84,7 @@ bin/elasticsearch-pluginリスト
 
 ### 環境変数を使用したホットフィックスのインストール
 
-大規模なHotfixをGitリポジトリに直接コミットする代わりに、CIビルドプロセスを通じてHotfixをインストールできる新しい環境変数が追加されました。 ビルドプロセス中にCIサービスが自動的に適用するために、ホットフィックスの名前（ `.zip` 拡張子は省略）を `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` 環境変数（DXP Cloud コンソールの `Environment Variables` タブ、または `ci` サービスの `LCP.json` に追加してください）に追加します。
+大規模なHotfixをGitリポジトリに直接コミットする代わりに、CIビルドプロセスを通じてHotfixをインストールできる新しい環境変数が追加されました。 ビルドプロセス中にCIサービスが自動的に適用するために、ホットフィックスの名前（ `.zip` 拡張子は省略）を `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` 環境変数（Liferay Cloud コンソールの `Environment Variables` タブ、または `ci` サービスの `LCP.json` に追加してください）に追加します。
 
 次の例では、 `LCP.json` ファイルを使用してホットフィックスを定義しています：
 
@@ -108,12 +108,12 @@ bin/elasticsearch-pluginリスト
 | 静的コンテンツ   | lcp/webserver/deploy/{ENV}/。 | webserver/configs/{ENV}/public/  |
 
 ```{note}
-`webserver/configs/{ENV}/` にあるファイルは、DXP Cloud の Web サーバコンテナ内の `/etc/nginx/` にオーバーライドとしてコピーされます。 `wbserver/configs/{ENV}/public/` にあるファイルは、オーバーライドとして `var/www/html/` にコピーされます。
+`webserver/configs/{ENV}/` にあるファイルは、Liferay Cloud の Web サーバコンテナ内の `/etc/nginx/` にオーバーライドとしてコピーされます。 `wbserver/configs/{ENV}/public/` にあるファイルは、オーバーライドとして `var/www/html/` にコピーされます。
 ```
 
 ### Webサーバー設定の上書き
 
-`liferay.conf` ファイルを `webserver/configs/{ENV}/conf.d/`に追加することにより、 `webserver` サービスのルート位置をカスタマイズすることができま す。 これにより、 `webserver` サービスイメージのコンテナで利用可能なデフォルトの `liferay.conf` が上書きされます。 ルートの場所をカスタマイズするときに、DXP Cloud Consoleのシェルにアクセスして、デフォルトとして `liferay.conf` ファイルを参照として表示します。
+`liferay.conf` ファイルを `webserver/configs/{ENV}/conf.d/`に追加することにより、 `webserver` サービスのルート位置をカスタマイズすることができま す。 これにより、 `webserver` サービスイメージのコンテナで利用可能なデフォルトの `liferay.conf` が上書きされます。 ルートの場所をカスタマイズするときに、Liferay Cloud Consoleのシェルにアクセスして、デフォルトとして `liferay.conf` ファイルを参照として表示します。
 
 ```{warning}
 このファイルが特にデフォルトの `liferay.conf` を上書きするように、`liferay.conf` 以外のファイル名でルートの場所をカスタマイズしないようにしてください。 そうでない場合は、両方のファイルがコンテナ内に一緒に存在していて、2つのルート位置が見つかってエラーになることがあります。
@@ -125,7 +125,7 @@ bin/elasticsearch-pluginリスト
 
 ### パブリックディレクトリの設定
 
-カスタム静的コンテンツを追加したい場合は、これらのファイルを `webserver/configs/{ENV}/public/`に配置します。 DXP Cloudはこのパブリックフォルダを探し、その中のすべてのファイルを `/var/www/html`にコピーします。
+カスタム静的コンテンツを追加したい場合は、これらのファイルを `webserver/configs/{ENV}/public/`に配置します。 Liferay Cloudはこのパブリックフォルダを探し、その中のすべてのファイルを `/var/www/html`にコピーします。
 
 パブリックフォルダーを設定するには、 `conf.d` フォルダー内に場所を追加する必要があります。 例えば、 `.html` ファイル（ `index.html`など）を新しい `webserver/configs/{ENV}/public/static` フォルダに追加する場合、 `.conf` 設定ファイルを `webserver/configs/{ENV}/conf.d` へ追加し、以下の内容を記述してください。
 
@@ -149,7 +149,7 @@ location /static/ {
 
 新しいスタックには、ローカル環境を立ち上げるためのdocker-composeファイルが含まれていません。 このため、ローカルテストにはDXPバンドルが必要です。
 
-ローカル環境で変更事項をテストしてから、DXP Cloudに移行することができます。 [DXPクラウドへの移行](../migrating-to-dxp-cloud.md) をご参照ください。
+ローカル環境で変更事項をテストしてから、Liferay Cloudに移行することができます。 [DXPクラウドへの移行](../migrating-to-dxp-cloud.md) をご参照ください。
 
 ## 追加情報
 

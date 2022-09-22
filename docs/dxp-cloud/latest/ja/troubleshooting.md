@@ -29,7 +29,7 @@ troubleshooting/creating-thread-and-heap-dumps.md
 ```
 
 - [トラブルシューティングツールとリソース](./troubleshooting/troubleshooting-tools-and-resources.md)
-- [DXP Cloudのサービスログを読む](troubleshooting/reading-dxp-cloud-service-logs.md)
+- [Liferay Cloudのサービスログを読む](troubleshooting/reading-dxp-cloud-service-logs.md)
 - [シェルアクセス](troubleshooting/shell-access.md)
 - [トラブルシューティングサービス](troubleshooting/troubleshooting-services.md)
 - [ディザスタ リカバリの概要](troubleshooting/disaster-recovery-overview.md)

@@ -12,7 +12,7 @@
 
 `protocol`：作成する接続のタイプ（TCPおよびUDPがサポートされています）。
 
-`external`：接続が外部接続で使用可能かどうか。 デフォルト値 `false` は、接続を内部DXP Cloud接続に制限します。
+`external`：接続が外部接続で使用可能かどうか。 デフォルト値 `false` は、接続を内部Liferay Cloud接続に制限します。
 
 ```{tip}
 接続を外部接続に公開している場合は、サービスのシェルを使用して接続のトラブルシューティングを行う必要がある場合があります。 詳しくは、[シェルアクセス](../../troubleshooting/shell-access.md) をご覧ください。
@@ -46,7 +46,7 @@
 | `port`                      | 3400 | 接続するサービスの外部ポート。                                          |
 | `targetPort`                | 7000 | 公開するサービスの内部ポート                                           |
 | `protocol`                  | TCP  | 作成する接続のタイプ（TCPおよびUDPがサポートされています）                         |
-| `external (Automatic Copy)` | true | 接続が外部接続で使用できるかどうか。 デフォルト値 `false` DXP Cloudの内部接続に制限されます。 |
+| `external (Automatic Copy)` | true | 接続が外部接続で使用できるかどうか。 デフォルト値 `false` Liferay Cloudの内部接続に制限されます。 |
 
 ## 追加情報
 

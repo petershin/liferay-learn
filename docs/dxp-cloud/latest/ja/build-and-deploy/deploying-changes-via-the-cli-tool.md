@@ -1,11 +1,11 @@
 # CLIツールによる変更点のデプロイ
 
-CLIツールを使用すると、Jenkinsのビルドをトリガーしたり、DXP Cloud Management Consoleを使用することなく、ローカルプロジェクトの変更を直接デプロイすることができます。 このチュートリアルでは、Liferayサービスにポータル・プロパティを追加し、CLIツールを使用して `dev` にデプロイするプロセスを説明します。
+CLIツールを使用すると、Jenkinsのビルドをトリガーしたり、Liferay Cloud Management Consoleを使用することなく、ローカルプロジェクトの変更を直接デプロイすることができます。 このチュートリアルでは、Liferayサービスにポータル・プロパティを追加し、CLIツールを使用して `dev` にデプロイするプロセスを説明します。
 
 はじめに、まず [のCLIツール](../reference/command-line-tool.md) をインストールして使用できる状態にし、プロジェクトのGitリポジトリのローカルコピー（例, [GitHub](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github) , [Bitbucket](https://confluence.atlassian.com/bitbucketserver/clone-a-repository-790632786.html) , [GitLab](https://docs.gitlab.com/ee/university/training/topics/getting_started.html#instantiate-workflow-with-clone) など）が必要です。)
 
 ```{note}
-CLIツールは、プロジェクトへの変更を迅速にデプロイする方法を提供しますが、大部分のデプロイにはCIサービスとDXP Cloudコンソールを使用することがベストプラクティスです。 方法については、 [DXP Cloudコンソールによる変更の展開](./deploying-changes-via-the-dxp-cloud-console.md) を参照してください。
+CLIツールは、プロジェクトへの変更を迅速にデプロイする方法を提供しますが、大部分のデプロイにはCIサービスとLiferay Cloudコンソールを使用することがベストプラクティスです。 方法については、 [Liferay Cloudコンソールによる変更の展開](./deploying-changes-via-the-dxp-cloud-console.md) を参照してください。
 ```
 
 プロジェクトでバージョン`3.x.x`サービスを使用している場合は、CLIツールを使用して変更をデプロイする前に、まず`LCP.json`ファイルを [準備](#preparing-lcpjson-files-in-project-version-3) する必要があります。
@@ -63,7 +63,7 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
    ```
 
    ```{note}
-   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev`となります。 ディレクトリ構造の違いについては、 [バージョン4におけるDXP Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md) を、サービスのバージョンを確認する方法については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
+   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev`となります。 ディレクトリ構造の違いについては、 [バージョン4におけるLiferay Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md) を、サービスのバージョンを確認する方法については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
    ```
 
 1. 以下のコマンドで変更内容を追加し、コミットします。 
@@ -147,4 +147,4 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
 
 * [コマンドラインツール](../reference/command-line-tool.md)
 * [DXPクラウド開発ワークフローの概要](./overview-of-the-dxp-cloud-deployment-workflow.md)
-* [DXP Cloudコンソールによる変更の展開](./deploying-changes-via-the-dxp-cloud-console.md)
+* [Liferay Cloudコンソールによる変更の展開](./deploying-changes-via-the-dxp-cloud-console.md)

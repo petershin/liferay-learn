@@ -1,6 +1,6 @@
-# DXP Cloud デプロイメントワークフローの概要
+# Liferay Cloud デプロイメントワークフローの概要
 
-DXP Cloudは、高効率なCI/CD戦略を実現するための強固なフレームワークを提供します。 GitとJenkinsの統合により、CIビルドを自動的にトリガーして、プロジェクト環境にデプロイすることができます。 また、CIサービスのビルドプロセスを完全に省略し、 [Command Line Interface](../reference/command-line-tool.md) (CLI)ツールを使用して、プロジェクト環境にローカルの変更を直接デプロイすることもできます。
+Liferay Cloudは、高効率なCI/CD戦略を実現するための強固なフレームワークを提供します。 GitとJenkinsの統合により、CIビルドを自動的にトリガーして、プロジェクト環境にデプロイすることができます。 また、CIサービスのビルドプロセスを完全に省略し、 [Command Line Interface](../reference/command-line-tool.md) (CLI)ツールを使用して、プロジェクト環境にローカルの変更を直接デプロイすることもできます。
 
 デプロイメントには複数のパスがありますが、ワークフローは一般的に以下の3つのステージに沿って行われます：
 
@@ -25,13 +25,13 @@ DXP Cloudは、高効率なCI/CD戦略を実現するための強固なフレー
 
 プロジェクトのGitリポジトリの構成にもよりますが、プロジェクトの中央リポジトリにコミットをマージしたり、変更内容を記載した新しいプルリクエストを公開したりすることで、自動CIビルドをトリガーすることができます。 このプロセスは自動的に行われますが、`infra`環境のCIサービスを変更して、テストを含む追加のパイプラインステップを含めることができます。 詳しくは [継続的インテグレーション](../platform-services/continuous-integration.md) を参照してください。
 
-すべてのプロジェクト環境のビルドの履歴にアクセスするには、DXP Cloudコンソールの **Builds** ページに移動します。 ここでは、CIサービスまたはCLIツールのいずれかによって開始されたすべてのビルドを、その一般的な情報やステータス（保留、通過、失敗など）とともに表示することができます。
+すべてのプロジェクト環境のビルドの履歴にアクセスするには、Liferay Cloudコンソールの **Builds** ページに移動します。 ここでは、CIサービスまたはCLIツールのいずれかによって開始されたすべてのビルドを、その一般的な情報やステータス（保留、通過、失敗など）とともに表示することができます。
 
 ![ビルドページからプロジェクトのビルドにアクセスできます。](./overview-of-the-dxp-cloud-deployment-workflow/images/01.png)
 
 ## デプロイ
 
-Liferay DXP Cloudでは、サービスをデプロイする方法として、CLIツールを介したデプロイ（手動）、DXP Cloud管理コンソールを介したデプロイ（手動）、または特定のCIビルドを構成して自動的にデプロイする３つの方法があります。
+Liferay Cloudでは、サービスをデプロイする方法として、CLIツールを介したデプロイ（手動）、Liferay Cloud管理コンソールを介したデプロイ（手動）、または特定のCIビルドを構成して自動的にデプロイする３つの方法があります。
 
 ### オプション1：コマンドラインインターフェースを介したデプロイ
 
@@ -47,13 +47,13 @@ CLIツールを使用するのが、ローカル変更をサービスにデプ�
 
 CLIツールでデプロイする場合、すべてのサービスを一度にデプロイする（プロジェクトのルートディレクトリからコマンドを実行する）か、単一のサービスのみをデプロイする（サービスの `LCP.json`ファイルを含むディレクトリからコマンドを実行する）ことができます。 `liferay` サービスではデプロイするために [追加のステップ](../using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) を必要とするため、プロジェクトワークスペースからファイルをビルドおよび準備できます。
 
-### オプション2：Liferay DXP Cloudコンソールからのデプロイ
+### オプション2：Liferay Cloudコンソールからのデプロイ
 
-Liferay DXP Cloudコンソールは、プロジェクトの変更をデプロイするための主要な方法です。 これを使用すると、成功したビルドを表示して選択し、選択した環境にデプロイできます。 これらには、CIサービスとCLIツールの両方で生成されたビルドが含まれており、DXP Cloudコンソールの **Builds** ページからアクセスできます。 **本番環境にデプロイする前に、必ず `dev` または `uat` の環境を選び、変更点を検証してください。**
+Liferay Cloudコンソールは、プロジェクトの変更をデプロイするための主要な方法です。 これを使用すると、成功したビルドを表示して選択し、選択した環境にデプロイできます。 これらには、CIサービスとCLIツールの両方で生成されたビルドが含まれており、Liferay Cloudコンソールの **Builds** ページからアクセスできます。 **本番環境にデプロイする前に、必ず `dev` または `uat` の環境を選び、変更点を検証してください。**
 
-デプロイメントのワークフローについては、 [DXP Cloud Consoleによる変更のデプロイメント](./deploying-changes-via-the-dxp-cloud-console.md) を参照してください。
+デプロイメントのワークフローについては、 [Liferay Cloud Consoleによる変更のデプロイメント](./deploying-changes-via-the-dxp-cloud-console.md) を参照してください。
 
-![DXP Cloudコンソールからビルドをデプロイします。](./overview-of-the-dxp-cloud-deployment-workflow/images/02.png)
+![Liferay Cloudコンソールからビルドをデプロイします。](./overview-of-the-dxp-cloud-deployment-workflow/images/02.png)
 
 ### オプション3：自動的にビルドを `dev`環境にデプロイ
 
@@ -63,5 +63,5 @@ Liferay DXP Cloudコンソールは、プロジェクトの変更をデプロイ
 
 * [デプロイタイプについて](./understanding-deployment-types.md)
 * [デプロイメント戦略について](./understanding-deployment-strategies.md)
-* [DXP Cloudコンソールによる変更の展開](./deploying-changes-via-the-dxp-cloud-console.md)
+* [Liferay Cloudコンソールによる変更の展開](./deploying-changes-via-the-dxp-cloud-console.md)
 * [CLIツールによる変更点のデプロイ](./deploying-changes-via-the-cli-tool.md)

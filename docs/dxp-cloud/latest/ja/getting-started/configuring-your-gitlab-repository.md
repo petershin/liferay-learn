@@ -1,15 +1,15 @@
 # GitLab リポジトリの設定
 
-DXP Cloudオンボーディングメールを受信すると、 `［dxpcloud］` 組織でホストされているGitHubリポジトリがプロビジョニングされます。 このリポジトリは、チームの個別のプライベートDXP Cloud開発リポジトリのテンプレートで、通常は10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
+Liferay Cloudオンボーディングメールを受信すると、 `［dxpcloud］` 組織でホストされているGitHubリポジトリがプロビジョニングされます。 このリポジトリは、チームの個別のプライベートLiferay Cloud開発リポジトリのテンプレートで、通常は10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
 
 1. プロビジョニングされたリポジトリを独自のプライベートリポジトリに転送します。
-1. プライベートリポジトリとDXP CloudのJenkins(CI)サービスをWebhookで連携させます。
+1. プライベートリポジトリとLiferay CloudのJenkins(CI)サービスをWebhookで連携させます。
 
 プロビジョニングされたリポジトリはGitHubにありますが、Jenkinsサービスのバージョン3.2.0以降ではGitLabリポジトリに転送できます。
 
 ## Jenkinsサービスの準備
 
-すでにDXP Cloudのインスタンスで [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を使用している場合は、JenkinsサービスはすでにGitLabと互換性があります。 アップグレードの詳細については、 [DXP Cloudスタックのアップグレード](../reference/upgrading-your-dxp-cloud-stack.md) を参照してください。
+すでにLiferay Cloudのインスタンスで [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を使用している場合は、JenkinsサービスはすでにGitLabと互換性があります。 アップグレードの詳細については、 [Liferay Cloudスタックのアップグレード](../reference/upgrading-your-dxp-cloud-stack.md) を参照してください。
 
 version 3.x.xのサービスを使用している場合は、 `［LCP.json］` で、 `［ci］` サービスを確認し、以下のJenkinsサービス以上のものを実行していることを確認してください：
 
@@ -97,7 +97,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 最後に、新しいリポジトリを指すようにJenkinsサービスの環境変数を設定します：
 
-1. DXP Cloudコンソールにログインし、 `［infra］` 環境でJenkinsサービスに移動します。
+1. Liferay Cloudコンソールにログインし、 `［infra］` 環境でJenkinsサービスに移動します。
 
 1. ［**環境変数**］ タブに移動します。
 
@@ -124,7 +124,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 ## 追加のGitLab Webhook設定
 
-Liferay DXP CloudのJenkinsサービスは、選択したgit SCMプロバイダーのためのWebhookを作成しますが、デフォルトのものしか作成しません。 GitLabのデフォルトのWebhookをGitHubやBitBucketのWebhookの機能と一致させるためには追加の設定が必要です。
+Liferay CloudのJenkinsサービスは、選択したgit SCMプロバイダーのためのWebhookを作成しますが、デフォルトのものしか作成しません。 GitLabのデフォルトのWebhookをGitHubやBitBucketのWebhookの機能と一致させるためには追加の設定が必要です。
 
 1. GitLabリポジトリに移動します。
 
@@ -144,7 +144,7 @@ Liferay DXP CloudのJenkinsサービスは、選択したgit SCMプロバイダ�
 
 ## ビルドの確認
 
-プッシュされたブランチとマージリクエスト（GitLabのプルリクエストに相当）は、DXP Cloudコンソールの[**Builds**]タブから表示またはデプロイできるビルドをトリガーする必要があります。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
+プッシュされたブランチとマージリクエスト（GitLabのプルリクエストに相当）は、Liferay Cloudコンソールの[**Builds**]タブから表示またはデプロイできるビルドをトリガーする必要があります。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
 
 ### プッシュされたブランチからのビルドの確認
 
@@ -162,7 +162,7 @@ Liferay DXP CloudのJenkinsサービスは、選択したgit SCMプロバイダ�
     git push gitlab branch-name
     ```
 
-1. DXP Cloud コンソールの ［**Builds**］ ページに移動します。
+1. Liferay Cloud コンソールの ［**Builds**］ ページに移動します。
 
 1. **Builds** ページで、プッシュされたブランチのビルドが表示されることを確認します。
 
@@ -174,7 +174,7 @@ Liferay DXP CloudのJenkinsサービスは、選択したgit SCMプロバイダ�
 
 1. マージリクエストに対して新しいビルドが作成されていることを確認します。
 
-1. DXP Cloud コンソールの **Builds** ページに移動します。
+1. Liferay Cloud コンソールの **Builds** ページに移動します。
 
 1. ブランチのリンクをクリックして、適切なビルドでコミットします。
 

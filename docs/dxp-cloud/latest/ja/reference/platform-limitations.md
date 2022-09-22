@@ -1,10 +1,10 @@
 # プラットフォームの制限
 
-DXP Cloudとそのサービスには、いくつかの顕著な制限があります。 これらの制限の多くは、お客様のサブスクリプションのレベルによって異なる場合があります。 その他の制限事項は、DXP Cloudのインフラに変更が加えられることにより、時間の経過とともに変更される可能性があります。
+Liferay Cloudとそのサービスには、いくつかの顕著な制限があります。 これらの制限の多くは、お客様のサブスクリプションのレベルによって異なる場合があります。 その他の制限事項は、Liferay Cloudのインフラに変更が加えられることにより、時間の経過とともに変更される可能性があります。
 
 ## 概要
 
-DXP Cloudの使用を計画する際には、これらの一般的な制限を考慮してください。
+Liferay Cloudの使用を計画する際には、これらの一般的な制限を考慮してください。
 
 * 各サービスの利用可能なvCPU、メモリ、スケーリング、ネットワーク設定　（ドメイン、SSL証明書、IPアドレス）、VPN帯域幅に制限があります。 例えば、各サービスは最大200GBのRAMに制限されています。 カスタムドメインも、 [Webサーバーの設定に応じて、50または1500に制限されています](#network-configuration) 。
 
@@ -14,7 +14,7 @@ DXP Cloudの使用を計画する際には、これらの一般的な制限を�
 
 * より厳格なセキュリティ、コンプライアンス、またはVPNの要件を満たすためには、プライベートクラスターのサブスクリプションが必要になる場合があります。
 
-* DXP Cloudでは、リモートステージングはサポートされていません。
+* Liferay Cloudでは、リモートステージングはサポートされていません。
 
 詳細は以下の項目を参照してください。
 
@@ -33,13 +33,13 @@ DXP Cloudの使用を計画する際には、これらの一般的な制限を�
 
 ## すべてのサービス
 
-これらの制限は、DXP Cloud環境のすべてのサービスに適用されます。
+これらの制限は、Liferay Cloud環境のすべてのサービスに適用されます。
 
 * **古いログへのアクセス** : デフォルトでは、各サービスの過去30日分のログしか利用できません。 古いログ（1年前まで）にアクセスするには、 [サポートリクエストを](https://help.liferay.com/) 提出してください。
 
 * **サービスごとの追加インスタンス** : サブスクリプションプランによって、サービスに許容される [`スケール` 設定](../manage-and-optimize/auto-scaling.md) が決まります。 デフォルトでは、すべてのサービスが1つの追加インスタンスのみを持ちます（Searchサービスは奇数の追加インスタンスを使用する必要があります）。 `スケール`の 設定は、サブスクリプションプランの購入したインスタンス数を使用するように既に設定された状態で開始されます。
 
-* **ダウンタイム** : 単一のインスタンスで動作しているサービスは、DXP Cloudのインフラが定期的なメンテナンスのために更新されると、再起動が発生することがあります。 本番環境では、高可用性設定（WebサーバーとLiferayサービスは各2インスタンス、Searchサービスは3インスタンス）にして、混乱を回避してください。 計画的なメンテナンスのスケジュールは [こちら](https://help.liferay.com/hc/ja/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule) で確認できます。
+* **ダウンタイム** : 単一のインスタンスで動作しているサービスは、Liferay Cloudのインフラが定期的なメンテナンスのために更新されると、再起動が発生することがあります。 本番環境では、高可用性設定（WebサーバーとLiferayサービスは各2インスタンス、Searchサービスは3インスタンス）にして、混乱を回避してください。 計画的なメンテナンスのスケジュールは [こちら](https://help.liferay.com/hc/ja/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule) で確認できます。
 
 * **サービスインスタンスあたりのメモリ** : サービスは最大で200GBのRAMを持つことができますが、これはサブスクリプションプランによって決定されます。 デフォルトのプランでは、1サービスあたり16GBとなっています。
 
@@ -47,45 +47,45 @@ DXP Cloudの使用を計画する際には、これらの一般的な制限を�
 
 ## ライフレイサービス
 
-これらの制限は、各DXP Cloud環境における[Liferayサービス](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md) に適用されます。
+これらの制限は、各Liferay Cloud環境における[Liferayサービス](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md) に適用されます。
 
-* **リモートステージング** : [リモートステージング](https://learn.liferay.com/dxp/latest/ja/site-building/publishing-tools/staging/configuring-remote-live-staging.html) はDXP Cloudでは利用できません。 ローカルステージングは引き続き利用可能で、サポートされています。
+* **リモートステージング** : [リモートステージング](https://learn.liferay.com/dxp/latest/ja/site-building/publishing-tools/staging/configuring-remote-live-staging.html) はLiferay Cloudでは利用できません。 ローカルステージングは引き続き利用可能で、サポートされています。
 
 * **Autoscaling** : 有効にすると、Autoscalingはデフォルトの最大10個までの新しいインスタンスを追加することができます。 最大100個のインスタンスまで、異なる最大数のインスタンスを構成できます。
 
 * **ドキュメントライブラリストレージ** ：サブスクリプションプランにより、Liferayサービスの `データ`のボリュームが決められます。 これには、Liferayのドキュメントライブラリに使用されるストレージが含まれます。 デフォルトのボリュームサイズは100GBですが、4TB以下であればサイズを増やすことができます。 プロジェクトに4TBを超えるストレージが必要な場合は、プライベートクラスターが必要です。
 
-* **セッションレプリケーション** ：DXP Cloud内の複数のLiferayインスタンス間でセッションをレプリケートすると、インスタンスのパフォーマンスに影響を与える可能性があり、サポートされていません。 <!-- Instead, use sticky sessions, or avoid using session storage entirely in your custom applications. -->
+* **セッションレプリケーション** ：Liferay Cloud内の複数のLiferayインスタンス間でセッションをレプリケートすると、インスタンスのパフォーマンスに影響を与える可能性があり、サポートされていません。 <!-- Instead, use sticky sessions, or avoid using session storage entirely in your custom applications. -->
 
 ### Dynatrace
 
-[Dynatrace](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) は、DXP Cloud環境のStandardセットアップには含まれていませんが、別途購入して併用することができます。 Dynatraceは高可用性の設定に含まれていますが、ProductionまたはUAT環境にのみ適用されます。
+[Dynatrace](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) は、Liferay Cloud環境のStandardセットアップには含まれていませんが、別途購入して併用することができます。 Dynatraceは高可用性の設定に含まれていますが、ProductionまたはUAT環境にのみ適用されます。
 
 これらの制限は、Dynatraceに適用されます。
 
-* **Dynatrace Metrics Discrepancy** ：DynatraceのメトリクスがDXP Cloud Consoleに表示されているメトリクスと一致しません。 これは、DynatraceがJVMプロセスのメトリクスを表示するのに対し、コンソールのメトリクスはJVMをホストするコンテナ全体を測定するためです。
+* **Dynatrace Metrics Discrepancy** ：DynatraceのメトリクスがLiferay Cloud Consoleに表示されているメトリクスと一致しません。 これは、DynatraceがJVMプロセスのメトリクスを表示するのに対し、コンソールのメトリクスはJVMをホストするコンテナ全体を測定するためです。
 
 * **Liferay Logのストリーミング** : Liferay LogをDynatraceログにストリーミングすることはできません。
 
-* **Session Replay** ：Dynatrace Session Replay機能はDXP Cloudでは利用できません。
+* **Session Replay** ：Dynatrace Session Replay機能はLiferay Cloudでは利用できません。
 
 ## データベースサービス
 
-これらの制限は、各DXP Cloud環境の[Databaseサービス](../platform-services/database-service/database-service.md)に適用されます。
+これらの制限は、各Liferay Cloud環境の[Databaseサービス](../platform-services/database-service/database-service.md)に適用されます。
 
-* **Database Metrics** ：DXP Cloudコンソールに表示されるメトリクスは、個々のサービスのメトリクスではなく、サービスコンテナのデータを反映しています。
+* **Database Metrics** ：Liferay Cloudコンソールに表示されるメトリクスは、個々のサービスのメトリクスではなく、サービスコンテナのデータを反映しています。
 
 * **データベースのサイズ** ：通常、データベースの最大サイズは100GBです。 [この制限を増やすには、サポートリクエスト](https://help.liferay.com/) を提出してください。
 
 * **ダウンタイム** ：データベースのメンテナンスにより、数ヶ月に一度、ダウンタイムが発生することがあります。 このダウンタイムは通常2分程度です。 これは、事前に通知がない場合もあります。 ダウンタイムの影響を軽減するために、 [優先メンテナンスウィンドウ](../platform-services/database-service/database-service.md#database-maintenance-window-variables) を設定することができます。
 
-* **Read/write splits** ：データベースサービスでのread/write splitの構成は、DXP Cloudではサポートされていません。
+* **Read/write splits** ：データベースサービスでのread/write splitの構成は、Liferay Cloudではサポートされていません。
 
 ## 検索サービス
 
-これらの制限は、各DXP Cloud環境の [Searchサービス](../platform-services/search-service.md) に適用されます。
+これらの制限は、各Liferay Cloud環境の [Searchサービス](../platform-services/search-service.md) に適用されます。
 
-* **設定** ：ElasticsearchはDXP Cloudのワークスペースを通して設定する必要があり、 **LiferayのUIではなく** 設定する必要があります。 プロジェクトのワークスペースにある設定ファイルは、デプロイのたびに使用され、以前の設定が上書きされます。
+* **設定** ：ElasticsearchはLiferay Cloudのワークスペースを通して設定する必要があり、 **LiferayのUIではなく** 設定する必要があります。 プロジェクトのワークスペースにある設定ファイルは、デプロイのたびに使用され、以前の設定が上書きされます。
 
 * **メモリ設定** ：Elasticsearchサーバーのデフォルト（および最大）のJVMヒープサイズは4GBです。 最大割り当て数は、お客様のサブスクリプションプランによって決まります。
 
@@ -95,11 +95,11 @@ DXP Cloudの使用を計画する際には、これらの一般的な制限を�
 
 ## バックアップサービス
 
-これらの制限は、各DXP Cloud環境の[Backupサービス](../platform-services/backup-service/backup-service-overview.md)に適用されます。
+これらの制限は、各Liferay Cloud環境の[Backupサービス](../platform-services/backup-service/backup-service-overview.md)に適用されます。
 
 * **Backup Consistency** ：データが変更されたデータベースからコピーする他のプロセスと同様に、更新の実行中にバックアップが作成された場合、データベース内のデータとドキュメントライブラリ間の整合性は保証されません。 完全に一貫したバックアップを行うためには、データベース管理者と調整して、 [手動バックアップ](../platform-services/backup-service/backup-service-overview.md#creating-a-manual-backup) を行っている間は更新をフリーズするようにしてください。
 
-* **バックアップサイズ** : DXP Cloudのバージョン4.2.0以前は、バックアップは [エフェメラルストレージを使用していました](#file-storage) 。 これらのバージョンでは、バックアップのサイズは、共有のエフェメラルディスクの残りのスペースに制限されています。
+* **バックアップサイズ** : Liferay Cloudのバージョン4.2.0以前は、バックアップは [エフェメラルストレージを使用していました](#file-storage) 。 これらのバージョンでは、バックアップのサイズは、共有のエフェメラルディスクの残りのスペースに制限されています。
 
 * **バックアップのアップロード** : 1分間に1つのバックアップしかアップロードできません。
 
@@ -111,7 +111,7 @@ DXP Cloudの使用を計画する際には、これらの一般的な制限を�
 
 ## Webサーバーサービス
 
-これらの制限は、各DXP Cloud環境の [Webサーバーサービス](../platform-services/web-server-service.md) に適用されます。
+これらの制限は、各Liferay Cloud環境の [Webサーバーサービス](../platform-services/web-server-service.md) に適用されます。
 
 * **プラグイン** : Webサーバーの追加プラグインのインストールはサポートされていません。
 
@@ -119,11 +119,11 @@ DXP Cloudの使用を計画する際には、これらの一般的な制限を�
 
 ## 継続的インテグレーションサービス
 
-これらの制限は、各DXP Cloud環境の[CIサービス](../platform-services/continuous-integration.md)に適用されます。
+これらの制限は、各Liferay Cloud環境の[CIサービス](../platform-services/continuous-integration.md)に適用されます。
 
 * **管理者アクセス** : 管理者レベルのアクセスはJenkinsサーバでは許可されていません。 代わりに、 [Jenkinsパイプラインフック](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) を使ってCIパイプラインを拡張します。 既存のDevOpsプロセスは、このパイプラインに合わせて調整する必要があるかもしれません。
 
-* **APIの同時呼び出し** ：プロジェクトはDXP Cloud APIへの同時呼び出しを行うことはできません。 これには、 [CLIツール](./command-line-tool.md)を使ってビルドを環境にデプロイするといったタスクが含まれます。
+* **APIの同時呼び出し** ：プロジェクトはLiferay Cloud APIへの同時呼び出しを行うことはできません。 これには、 [CLIツール](./command-line-tool.md)を使ってビルドを環境にデプロイするといったタスクが含まれます。
 
 * **リソースの割り当て** ：CIサービスに割り当てられるRAMとvCPUの数は、サブスクリプションプランによって決定されます。 デフォルトでは、サービスに4つのvCPUと8GBのRAMが割り当てられています。
 
@@ -143,15 +143,15 @@ DXP Cloudの使用を計画する際には、これらの一般的な制限を�
 
 ## カスタムサービス
 
-これらの制限は、DXP Cloud環境における [カスタムサービス](../platform-services/using-a-custom-service.md) にも適用されます。
+これらの制限は、Liferay Cloud環境における [カスタムサービス](../platform-services/using-a-custom-service.md) にも適用されます。
 
 * **ホストOSアクセス** ：ホストOSカーネルへの特権的なアクセスは、プライベート・クラスターを含むサブスクリプションに限定されます。
 
 ## セキュリティ
 
-これらの制限は、DXP Cloudで利用可能なセキュリティ機能に適用されます。
+これらの制限は、Liferay Cloudで利用可能なセキュリティ機能に適用されます。
 
-* **アンチウイルス** ：ファイルアップロード時にウイルスをスキャンするためのデフォルトのLiferayDXP機能は使用できません。 DXP Cloudの [アンチウイルスソリューション](./dxp-cloud-infrastructure.md#antivirus) が代わりに使用されます。 アップロードされたコンテンツはスケジュールに沿ってスキャンされるため、ファイルがアップロードされた時点ではリスクが検出されない場合があります。
+* **アンチウイルス** ：ファイルアップロード時にウイルスをスキャンするためのデフォルトのLiferayDXP機能は使用できません。 Liferay Cloudの [アンチウイルスソリューション](./dxp-cloud-infrastructure.md#antivirus) が代わりに使用されます。 アップロードされたコンテンツはスケジュールに沿ってスキャンされるため、ファイルがアップロードされた時点ではリスクが検出されない場合があります。
 
 * **1分あたりの認証** ：1分あたり最大8400の認証が許可されます。
 
@@ -171,7 +171,7 @@ DXP Cloudの使用を計画する際には、これらの一般的な制限を�
 
 ## ネットワーク設定　
 
-これらの制限は、DXP Cloud環境におけるお客様のサービスのネットワーク設定　に適用されます。
+これらの制限は、Liferay Cloud環境におけるお客様のサービスのネットワーク設定　に適用されます。
 
 * **カスタムドメインの変更** : カスタムドメインへの変更または追加が反映されるまでに遅延（最大60分）が発生することがあります。
 

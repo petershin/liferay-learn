@@ -1,6 +1,6 @@
 # スレッドとヒープのダンプの作成
 
-`Liferay` サービスのパフォーマンスに問題が発生した場合は、スレッドまたはヒープダンプを使って、自身またはDXP Cloudサポートがインスタンスの最適化または問題のトラブルシューティングを行う必要があります。
+`Liferay` サービスのパフォーマンスに問題が発生した場合は、スレッドまたはヒープダンプを使って、自身またはLiferay Cloudサポートがインスタンスの最適化または問題のトラブルシューティングを行う必要があります。
 
 次の手順に従って、トラブルシューティング用のスレッドまたはヒープダンプを生成します：
 
@@ -12,7 +12,7 @@
 
 1. [終わったらダンプを削除する](#delete-the-dumps-when-you-are-done)
 
-次のセクションでは、DXP Cloud環境のスレッドやヒープダンプを生成するために実行できるスクリプトの例を紹介します。
+次のセクションでは、Liferay Cloud環境のスレッドやヒープダンプを生成するために実行できるスクリプトの例を紹介します。
 
 <a name="choose-a-script-to-generate-the-dumps" />
 
@@ -24,9 +24,9 @@
 
 ### スレッドダンプ作成スクリプト
 
-スレッドダンプは、DXP Cloud環境でどのようなプロセスが行われているかを理解するのに役立ちます。 複数のスレッドダンプのセットがあると、Liferayインスタンスに問題のあるパターンが存在する可能性があるかどうかをよりわかりやすく表示できます。
+スレッドダンプは、Liferay Cloud環境でどのようなプロセスが行われているかを理解するのに役立ちます。 複数のスレッドダンプのセットがあると、Liferayインスタンスに問題のあるパターンが存在する可能性があるかどうかをよりわかりやすく表示できます。
 
-以下のスクリプトを使用して、あらゆるDXP Cloud環境のLiferayインスタンスのスレッドダンプを生成することができます：
+以下のスクリプトを使用して、あらゆるLiferay Cloud環境のLiferayインスタンスのスレッドダンプを生成することができます：
 
 ```
 #!/bin/bash
@@ -40,7 +40,7 @@ take_thread_dump() {
 
     local pid=$(jps | grep -v Jps | awk '{print $1}')
 
-    echo "[DXP Cloud] jstack ${pid} > ${TARGET_THREAD_DUMP_FOLDER}/${1}/threaddump${2}.txt"
+    echo "[Liferay Cloud] jstack ${pid} > ${TARGET_THREAD_DUMP_FOLDER}/${1}/threaddump${2}.txt"
 
     jstack ${pid} > ${TARGET_THREAD_DUMP_FOLDER}/${1}/threaddump${2}.txt
 }
@@ -48,7 +48,7 @@ take_thread_dump() {
 take_thread_group() {
     local time=$(date +'%H%M%S')
 
-    echo "[DXP Cloud] Taking thread dumps with timestamp ${time}"
+    echo "[Liferay Cloud] Taking thread dumps with timestamp ${time}"
 
     for num in 1 2 3 4 5 6
     do
@@ -64,10 +64,10 @@ main() {
         sleep 60
     done
 
-    echo "[DXP Cloud] Thread dumps generated"
+    echo "[Liferay Cloud] Thread dumps generated"
 }
 
-echo "[DXP Cloud] Take thread dumps"
+echo "[Liferay Cloud] Take thread dumps"
 main
 ```
 
@@ -87,7 +87,7 @@ main
 
 ヒープダンプは、LiferayインスタンスでどのデータがRAMを消費しているかを把握するのに役立ちます。 インスタンスのメモリ割り当てをトラブルシューティングする必要がある場合、問題があるかどうかを判断するために、異なる重要な時間に複数のヒープダンプを取得する必要があるかもしれません。
 
-以下のスクリプトを使って、DXP Cloud環境のLiferayインスタンスのヒープダンプを生成することができます：
+以下のスクリプトを使って、Liferay Cloud環境のLiferayインスタンスのヒープダンプを生成することができます：
 
 ```
 #!/bin/bash
@@ -99,11 +99,11 @@ mkdir -p "${TARGET_HEAP_DUMP_FOLDER}"
 take_heap_dump() {
     mkdir -p "${TARGET_HEAP_DUMP_FOLDER}/${1}"
 
-    echo "[DXP Cloud] Taking heap dump with timestamp ${1}"
+    echo "[Liferay Cloud] Taking heap dump with timestamp ${1}"
 
     local pid=$(jps | grep -v Jps | awk '{print $1}')
 
-    echo "[DXP Cloud] jmap -dump:format=b,file=heapdump.txt ${pid}"
+    echo "[Liferay Cloud] jmap -dump:format=b,file=heapdump.txt ${pid}"
 
     jmap -dump:format=b,file=heapdump.txt ${pid}
 
@@ -115,7 +115,7 @@ main() {
 
     take_heap_dump $time
 
-    echo "[DXP Cloud] Heap dump generated"
+    echo "[Liferay Cloud] Heap dump generated"
 }
 
 main
@@ -129,7 +129,7 @@ main
 
 ## Liferayサービスシェルからスクリプトを実行する
 
-使用するスクリプトができたら、それをデプロイして、DXP Cloudコンソールの `liferay`サービスのシェルから実行する必要があります。
+使用するスクリプトができたら、それをデプロイして、Liferay Cloudコンソールの `liferay`サービスのシェルから実行する必要があります。
 
 <a name="save-the-script-to-your-project-repository" />
 
@@ -159,11 +159,11 @@ main
 
 ### スクリプトのデプロイと実行
 
-スクリプトを `liferay/configs/{ENV}/`のサブフォルダに保存したら、スクリプトをデプロイし、DXP Cloudコンソールのシェルから実行する必要があります。
+スクリプトを `liferay/configs/{ENV}/`のサブフォルダに保存したら、スクリプトをデプロイし、Liferay Cloudコンソールのシェルから実行する必要があります。
 
-1. [Overview of DXP Cloud Deployment Workflow](../using-the-liferay-dxp-service/overview-of-the-dxp-cloud-deployment-workflow.md) で説明されている手順に従って、スクリプトを適切な環境にデプロイします。
+1. [Overview of Liferay Cloud Deployment Workflow](../using-the-liferay-dxp-service/overview-of-the-dxp-cloud-deployment-workflow.md) で説明されている手順に従って、スクリプトを適切な環境にデプロイします。
 
-1. DXP Cloudコンソールで、該当する環境の `liferay` サービスページに移動します。
+1. Liferay Cloudコンソールで、該当する環境の `liferay` サービスページに移動します。
 
 1. ［**Shell**］ タブをクリックします。
 
@@ -192,7 +192,7 @@ main
 1. スクリプトが完了するまで待って、適切な数のスレッドダンプがあることを確認します。 スクリプトがスレッドまたはヒープダンプの作成を終了すると、確認メッセージが表示されます。
 
     ```
-    [DXP Cloud] Thread dumps generated
+    [Liferay Cloud] Thread dumps generated
     ```
 
     ```{note}
@@ -223,9 +223,9 @@ main
 
 ## 終わった後のダンプの削除
 
-生成されたスレッドやヒープダンプは、特にスクリプトを複数回実行した場合、Liferayサービスの `データ` ボリュームのかなりのスペースを占める可能性があります。 `データ` ボリュームのメモリを浪費しないように、ダンプが不要になったら、環境からダンプを削除するようにしてください。 DXP CloudコンソールでLiferayのサービスシェルを使い、ダンプを削除します。
+生成されたスレッドやヒープダンプは、特にスクリプトを複数回実行した場合、Liferayサービスの `データ` ボリュームのかなりのスペースを占める可能性があります。 `データ` ボリュームのメモリを浪費しないように、ダンプが不要になったら、環境からダンプを削除するようにしてください。 Liferay CloudコンソールでLiferayのサービスシェルを使い、ダンプを削除します。
 
-例えば、DXP Cloudコンソールから以下のコマンドを実行して、スレッドダンプの１つのセットを削除します：
+例えば、Liferay Cloudコンソールから以下のコマンドを実行して、スレッドダンプの１つのセットを削除します：
 
 ```bash
 cd data/thread_dumps/

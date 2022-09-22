@@ -1,6 +1,6 @@
 # コマンドラインツール
 
-CLIツールを使用して、DXP Cloudサービスを表示および管理できます。 インストール後、ターミナルで `lcp --help` を実行すると、利用可能なアクションが表示されます。
+CLIツールを使用して、Liferay Cloudサービスを表示および管理できます。 インストール後、ターミナルで `lcp --help` を実行すると、利用可能なアクションが表示されます。
 
 ```{tip}
 すべての 「lcp」コマンドの最後に 「-v」 または 「--verbose」オプションを実行すると、追加のログや情報を見ることができます。 すべての 「lcp」コマンドの最後に 「--help」フラグを実行すると、そのコマンドで使用できるフラグが表示されます。
@@ -13,7 +13,7 @@ CLIツールを使用して、DXP Cloudサービスを表示および管理で�
 * [サービスインスタンスの数の変更](#changing-the-number-of-service-instances)
 * [プロジェクトまたはサービスの一覧表示](#listing-projects-or-services)
 * [サービスの再起動](#restarting-a-service)
-* [DXP Cloud環境へのデプロイ](#deploying-to-your-dxp-cloud-environment)
+* [Liferay Cloud環境へのデプロイ](#deploying-to-your-dxp-cloud-environment)
 * [サービスのシェルへのアクセス](#accessing-a-services-shell)
 * [CLIツールのバージョン3のアンインストール](#uninstalling-version-3-of-the-cli-tool)
 
@@ -65,7 +65,7 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 
 ## CLIリモートの設定
 
-CLIツールでDXP Cloudのサービスにアクセスするには、DXP CloudのリモートURLを指すように設定する必要があります：`liferay.cloud`。 CLIのリモートを一覧表示するには、以下のコマンドを実行します：
+CLIツールでLiferay Cloudのサービスにアクセスするには、Liferay CloudのリモートURLを指すように設定する必要があります：`liferay.cloud`。 CLIのリモートを一覧表示するには、以下のコマンドを実行します：
 
 ```shell
 lcp remote
@@ -205,7 +205,7 @@ lcp restart -p <project>-<environment> -s <service>
 lcp restart --url <serviceID>-<projectID>.lfr.cloud
 ```
 
-## DXP Cloud環境へのデプロイ
+## Liferay Cloud環境へのデプロイ
 
 `lcp deploy` コマンドを使用して、特定のサービスまたはすべてのサービスをいずれかの環境にデプロイします：
 
@@ -241,7 +241,7 @@ lcp shell -p <project>-<environment> -s <service>
 
 ## ドキュメントを開く
 
-`lcp docs` コマンドを使用すると、公式ドキュメントやヘルプセンターのコンテンツなど、Liferay DXP Cloudのリソースにアクセスできます。
+`lcp docs` コマンドを使用すると、公式ドキュメントやヘルプセンターのコンテンツなど、Liferay Cloudのリソースにアクセスできます。
 
 ## CLIツールのバージョン3のアンインストール
 

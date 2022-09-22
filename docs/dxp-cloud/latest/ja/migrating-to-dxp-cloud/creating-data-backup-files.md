@@ -54,7 +54,7 @@ mysqldump -u### -p##### --databases --add-drop-database lportal > database.sql
 
 ### 変更を伴うJenkinsビルドの作成
 
-Liferayのローカルインストールを移行した後、 `portal-ext.properties`に変更してDXP Cloud環境にもビルドを作成し、デプロイする必要があります。 ドキュメントライブラリストアの移行が必要ない場合は、環境に対する変更を展開する必要はありません。
+Liferayのローカルインストールを移行した後、 `portal-ext.properties`に変更してLiferay Cloud環境にもビルドを作成し、デプロイする必要があります。 ドキュメントライブラリストアの移行が必要ない場合は、環境に対する変更を展開する必要はありません。
 
 Gitがインストールされている端末でGitコマンドを実行し、変更内容を送信します。
 
@@ -80,9 +80,9 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 ### ビルドを選択した環境にデプロイする
 
-最後に、 [DXP Cloud Console](https://console.liferay.cloud/) を使用して、完成したビルドを選択した環境にデプロイします。
+最後に、 [Liferay Cloud Console](https://console.liferay.cloud/) を使用して、完成したビルドを選択した環境にデプロイします。
 
-1. DXP Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
+1. Liferay Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
 
 1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
 
@@ -99,7 +99,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 ビルドは選択した環境にデプロイされ、 `portal-ext.properties` への変更は `liferay` サービス再始動の際に適用されます。
 
 ```{important}
-[バックアップからデータをリストアする](../platform-services/backup-service/restoring-data-from-a-backup.md)場合、ある環境のバックアップが動作するように、DXP Cloud上のすべての環境が同じドキュメントライブラリの実装を使用する必要があります。ビルドをすべての環境に配備して、すべての環境で移行したドキュメントライブラリストアが正しく使用されていることを確認する必要があります。
+[バックアップからデータをリストアする](../platform-services/backup-service/restoring-data-from-a-backup.md)場合、ある環境のバックアップが動作するように、Liferay Cloud上のすべての環境が同じドキュメントライブラリの実装を使用する必要があります。ビルドをすべての環境に配備して、すべての環境で移行したドキュメントライブラリストアが正しく使用されていることを確認する必要があります。
 ```
 
 ## ドキュメントライブラリの圧縮
@@ -134,4 +134,4 @@ cd $LIFERAY_HOME\data
 
 ## 次のステップ
 
-これで、2つのファイル（`database.gz` と `volume.tgz`）ができ、DXP Cloud 環境に適用する準備が整いました。 次に、これらのファイルを使って、 [データのバックアップ](./uploading-and-restoring-the-data-backup.md) をアップロードし、リストアすることになります。
+これで、2つのファイル（`database.gz` と `volume.tgz`）ができ、Liferay Cloud 環境に適用する準備が整いました。 次に、これらのファイルを使って、 [データのバックアップ](./uploading-and-restoring-the-data-backup.md) をアップロードし、リストアすることになります。

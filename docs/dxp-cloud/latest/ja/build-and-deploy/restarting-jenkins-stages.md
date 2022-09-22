@@ -46,5 +46,5 @@ LCP_CI_ARTIFACT_NUM_TO_KEEP` 変数で許可されている以上のビルドで
 ## 追加情報
 
 * [継続的インテグレーション](../platform-services/continuous-integration.md)
-* [DXP Cloud デプロイメントワークフローの概要](./overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Liferay Cloud デプロイメントワークフローの概要](./overview-of-the-dxp-cloud-deployment-workflow.md)
 * [CLIツールによる変更点のデプロイ](./deploying-changes-via-the-cli-tool.md)

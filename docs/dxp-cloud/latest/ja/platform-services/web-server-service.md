@@ -8,7 +8,7 @@ Nginx Webサーバーは、オープンインターネットからDXP クラウ�
 
 ## 設定
 
-DXP Cloudのサービスはデフォルトでうまく機能するように微調整されていますが、さらにNginxを設定する必要がある場合があります。 これを行うには、 `configs/{ENV}/conf.d/` フォルダー内に任意のCONFファイルを含めることができます。 変更をデプロイすると、ファイルが自動的にサービスに挿入され、デフォルトの設定が上書きされます。 以下は、 正しいディレクトリ内のそのようなファイルのフォルダー構造の例です： 
+Liferay Cloudのサービスはデフォルトでうまく機能するように微調整されていますが、さらにNginxを設定する必要がある場合があります。 これを行うには、 `configs/{ENV}/conf.d/` フォルダー内に任意のCONFファイルを含めることができます。 変更をデプロイすると、ファイルが自動的にサービスに挿入され、デフォルトの設定が上書きされます。 以下は、 正しいディレクトリ内のそのようなファイルのフォルダー構造の例です： 
 
     webserver
     ├── configs
@@ -17,7 +17,7 @@ DXP Cloudのサービスはデフォルトでうまく機能するように微�
     │           └── nginx.conf
     └── LCP.json
 
-`/webserver/configs/{ENV}/`内のファイルは、DXP Cloudのウェブサーバコンテナ内の /etc/nginx/にオーバーライドとしてコピーされます。 `/webserver/configs/{ENV}/public/`のファイルはオーバーライドとしてvar/www/html/にコピーされます。
+`/webserver/configs/{ENV}/`内のファイルは、Liferay Cloudのウェブサーバコンテナ内の /etc/nginx/にオーバーライドとしてコピーされます。 `/webserver/configs/{ENV}/public/`のファイルはオーバーライドとしてvar/www/html/にコピーされます。
 
 ```{note}
 バージョン3.x.xのサービスを使用している場合は、Nginxの設定は適切な［lcp/webserver/config/{ENV}/］ディレクトリに属しています。 バージョンの確認方法については， [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください．

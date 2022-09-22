@@ -1,10 +1,10 @@
 # アプリケーションメトリクス
 
-Liferay DXP Cloudに組み込まれたモニタリング機能により、各環境サービスが使用するリソースを追跡することができます。 これらのアプリケーションメトリクスには、メモリとCPUの使用量、およびネットワークデータ転送量が含まれます。 メトリクスは、デフォルトのDXP Cloudのスタックサービス（Webサーバ、Liferay、検索、データベース、バックアップ）で利用できます。
+Liferay Cloudに組み込まれたモニタリング機能により、各環境サービスが使用するリソースを追跡することができます。 これらのアプリケーションメトリクスには、メモリとCPUの使用量、およびネットワークデータ転送量が含まれます。 メトリクスは、デフォルトのLiferay Cloudのスタックサービス（Webサーバ、Liferay、検索、データベース、バックアップ）で利用できます。
 
 ## サービスポップオーバー
 
-サービスの現在のリソース使用状況は、DXP Cloud環境の **概要** や **サービス** のページや、個々のサービスのページなど、いくつかのページから素早く確認することができます。 サービスのアイコンにカーソルを合わせると、そのサービスのリソース使用状況のポップオーバーが表示されます。
+サービスの現在のリソース使用状況は、Liferay Cloud環境の **概要** や **サービス** のページや、個々のサービスのページなど、いくつかのページから素早く確認することができます。 サービスのアイコンにカーソルを合わせると、そのサービスのリソース使用状況のポップオーバーが表示されます。
 
 ![サービスのアイコンにカーソルを合わせます。](./application-metrics/images/01.png)
 
@@ -15,7 +15,7 @@ Liferay DXP Cloudに組み込まれたモニタリング機能により、各環
 1. 環境メニューの ［**モニタリング**］ をクリックします。
 1. ドロップダウンメニューを使って、モニターしたいサービスと時間帯を選択します。
 
-![DXP Cloudを使用してサービスを監視できます。](./application-metrics/images/02.png)
+![Liferay Cloudを使用してサービスを監視できます。](./application-metrics/images/02.png)
 
 ユーザーは、 ［**Services**］ ページから拡張サービスメトリクスを表示できます：
 
@@ -40,13 +40,13 @@ Liferay DXP Cloudに組み込まれたモニタリング機能により、各環
 "cpu": 8
 ```
 
-ユーザーはDXP Cloudのコンソールから割り当てられたリソースを確認できます。
+ユーザーはLiferay Cloudのコンソールから割り当てられたリソースを確認できます。
 
-![DXP Cloudのコンソールから、お客様の環境サービスに割り当てられたリソースを確認できます。](./application-metrics/images/04.png)
+![Liferay Cloudのコンソールから、お客様の環境サービスに割り当てられたリソースを確認できます。](./application-metrics/images/04.png)
 
 ## 高度なアプリケーションメトリクス（本番環境のみ）
 
-Liferay DXP Cloudでは、 [Dynatrace](https://www.dynatrace.com/) の高度なパフォーマンスモニタリングを本番環境に統合することができます。
+Liferay Cloudでは、 [Dynatrace](https://www.dynatrace.com/) の高度なパフォーマンスモニタリングを本番環境に統合することができます。
 
 詳しくは、 [Dynatrace limitations](../reference/platform-limitations.md#dynatrace) を参照してください。
 
@@ -85,7 +85,7 @@ Liferay DXP Cloudでは、 [Dynatrace](https://www.dynatrace.com/) の高度な�
 
 ### Dynatraceへのアクセス
 
-DXP CloudのコンソールからDynatraceの高度なパフォーマンスモニタリングにアクセスできるようになりました。
+Liferay CloudのコンソールからDynatraceの高度なパフォーマンスモニタリングにアクセスできるようになりました。
 
 1. 本番環境に移動します。
 
@@ -95,7 +95,7 @@ DXP CloudのコンソールからDynatraceの高度なパフォーマンスモ�
 
 1. [**Go to Dynatrace Dashboard**] ボタンをクリックして、 [Dynatrace] ダッシュボードにアクセスします。
 
-    ![DXP CloudコンソールからDynatraceダッシュボードにアクセスします。](./application-metrics/images/05.png)
+    ![Liferay CloudコンソールからDynatraceダッシュボードにアクセスします。](./application-metrics/images/05.png)
 
 Dynatraceの認証情報でログインすると、ログの軌跡を確認したり、カスタムダッシュボードを作成したりできます。
 

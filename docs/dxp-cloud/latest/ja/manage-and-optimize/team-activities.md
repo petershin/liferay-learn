@@ -1,6 +1,6 @@
 # チーム活動
 
-各プロジェクト環境でのアクティビティを把握することは非常に重要です。 Liferay DXP Cloudでは、ビルド、デプロイメント、その他のプロジェクトアクティビティをWebコンソールで監視することができます。
+各プロジェクト環境でのアクティビティを把握することは非常に重要です。 Liferay Cloudでは、ビルド、デプロイメント、その他のプロジェクトアクティビティをWebコンソールで監視することができます。
 
 ## 環境アクティビティの種類
 
@@ -32,7 +32,7 @@
 
 1. 環境メニューの ［**アクティビティ**］ をクリックします。
 
-このページでは、DXP Cloudのインスタンスで発生したすべてのアクティビティをリストアップしています。
+このページでは、Liferay Cloudのインスタンスで発生したすべてのアクティビティをリストアップしています。
 
 ![図2：アクティビティページから拡張環境のアクティビティを表示。](./team-activities/images/02.png)
 
@@ -44,5 +44,5 @@
 ## 追加情報
 
 * [環境のチームとロール](./environment-teams-and-roles.md)
-* [DXP Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
 * [ログ管理](../troubleshooting/reading-dxp-cloud-service-logs.md)

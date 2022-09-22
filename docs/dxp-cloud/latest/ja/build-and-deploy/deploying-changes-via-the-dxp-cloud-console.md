@@ -1,6 +1,6 @@
-# DXP Cloudコンソールによる変更の展開
+# Liferay Cloudコンソールによる変更の展開
 
-このチュートリアルでは、Liferayサービスにポータル・プロパティを追加し、プル・リクエストでCIビルドをトリガーし、DXP Cloudコンソールを介して `dev` 環境に新しいビルドをデプロイするプロセスを説明します。
+このチュートリアルでは、Liferayサービスにポータル・プロパティを追加し、プル・リクエストでCIビルドをトリガーし、Liferay Cloudコンソールを介して `dev` 環境に新しいビルドをデプロイするプロセスを説明します。
 
 始めるためには、プロジェクトのCIサービスと統合されたコードホスティングサービスと、プロジェクトのリポジトリのローカルな作業コピーが必要です。
 
@@ -10,7 +10,7 @@
 
 * [Liferayサービスへのポータル・プロパティの追加](#adding-a-portal-property-to-the-liferay-service)
 * [GitHubを使ったJenkinsビルドの実行](#triggering-a-jenkins-build-with-github)
-* [DXP Cloudコンソールによる新規ビルドのデプロイメント](#deploying-your-new-build-via-the-dxp-cloud-console)
+* [Liferay Cloudコンソールによる新規ビルドのデプロイメント](#deploying-your-new-build-via-the-dxp-cloud-console)
 * [サンプルデプロイメントの検証](#verifying-your-sample-deployment)
 
 ## Liferayサービスへのポータル・プロパティの追加
@@ -32,7 +32,7 @@
    ```
 
    ```{note}
-   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev` となります。 ディレクトリ構造の違いについては [バージョン4におけるDXP Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md) サービスのバージョンの確認方法については [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) をご参照ください。
+   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev` となります。 ディレクトリ構造の違いについては [バージョン4におけるLiferay Cloudプロジェクトの変更](../reference/dxp-cloud-project-changes-in-version-4.md) サービスのバージョンの確認方法については [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) をご参照ください。
    ```
 
 1. 以下のコマンドで、 `portal-env.properties` ファイルに変更を追加し、コミットします。
@@ -65,11 +65,11 @@
 
    ![プロジェクトのJenkinsページから詳細なログを見ることができます。](./deploying-changes-via-the-dxp-cloud-console/images/03.png)
 
-## DXP Cloudコンソールによる新規ビルドのデプロイメント
+## Liferay Cloudコンソールによる新規ビルドのデプロイメント
 
-新しいビルドの準備ができたら、DXP Cloudコンソールからプロジェクトの `dev` 環境にデプロイします。
+新しいビルドの準備ができたら、Liferay Cloudコンソールからプロジェクトの `dev` 環境にデプロイします。
 
-1. DXP Cloudコンソールで、プロジェクトの **Builds** ページに移動します。 このページは、どのプロジェクト環境からでもアクセスできます。
+1. Liferay Cloudコンソールで、プロジェクトの **Builds** ページに移動します。 このページは、どのプロジェクト環境からでもアクセスできます。
 
 1. デプロイしたいビルドの ［**Actions**］ ボタン（⋮）をクリックし、 ［**Deploy Build To...**］ を選択します。
 

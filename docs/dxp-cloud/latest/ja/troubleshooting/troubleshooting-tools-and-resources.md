@@ -1,6 +1,6 @@
 # トラブルシューティングツールとリソース
 
-技術的な問題を素早く診断し、解決する能力が不可欠です。 Liferay DXP Cloudプロジェクトの問題をトラブルシューティングするための利用可能なツールとリソースを熟知してください。
+技術的な問題を素早く診断し、解決する能力が不可欠です。 Liferay Cloudプロジェクトの問題をトラブルシューティングするための利用可能なツールとリソースを熟知してください。
 
 * [アプリケーションメトリクス](#application-metrics)
 * [リアルタイムアラート](#real-time-alerts)
@@ -21,11 +21,11 @@
 
 ## アプリケーションメトリクス
 
-Liferay DXP Cloudに組み込まれたモニタリング機能により、ユーザーは各環境サービスが使用するリソースを追跡することができます。 これらのアプリケーションメトリクスには、メモリとCPUの使用量、およびネットワークデータ転送量が含まれます。
+Liferay Cloudに組み込まれたモニタリング機能により、ユーザーは各環境サービスが使用するリソースを追跡することができます。 これらのアプリケーションメトリクスには、メモリとCPUの使用量、およびネットワークデータ転送量が含まれます。
 
-メトリクスは、デフォルトのDXP Cloudのスタックサービス（Webサーバ、Liferay、検索、データベース、バックアップ）で利用できます。 CIメトリクスはinfra環境でも利用可能です。
+メトリクスは、デフォルトのLiferay Cloudのスタックサービス（Webサーバ、Liferay、検索、データベース、バックアップ）で利用できます。 CIメトリクスはinfra環境でも利用可能です。
 
-![図1：DXP Cloudコンソールのモニタリングページでアプリケーション・メトリクスを見る](./troubleshooting-tools-and-resources/images/01.png)
+![図1：Liferay Cloudコンソールのモニタリングページでアプリケーション・メトリクスを見る](./troubleshooting-tools-and-resources/images/01.png)
 
 ユーザーは、 [Dynatrace](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) の高度なパフォーマンス・モニタリングを本番環境に統合することもできます。
 
@@ -33,45 +33,45 @@ Liferay DXP Cloudに組み込まれたモニタリング機能により、ユー
 
 ## リアルタイムアラート
 
-Liferay DXP Cloudは、プロジェクトの予期せぬ動作をシステム管理者に警告することができます。 予期せぬ動作の例としては、オートスケーリングイベント、予想以上のメモリ消費量、割り当てられたCPUクォータへの到達、データベース接続の問題などがあります。
+Liferay Cloudは、プロジェクトの予期せぬ動作をシステム管理者に警告することができます。 予期せぬ動作の例としては、オートスケーリングイベント、予想以上のメモリ消費量、割り当てられたCPUクォータへの到達、データベース接続の問題などがあります。
 
-DXP Cloudのコンソールですべての環境アラートを表示し、アラートの設定を行うことができます。
+Liferay Cloudのコンソールですべての環境アラートを表示し、アラートの設定を行うことができます。
 
-![図2：DXP Cloudコンソールの「Alerts」ページによるアラートの表示と管理](./troubleshooting-tools-and-resources/images/02.png)
+![図2：Liferay Cloudコンソールの「Alerts」ページによるアラートの表示と管理](./troubleshooting-tools-and-resources/images/02.png)
 
 詳しくは [リアルタイムアラート](../manage-and-optimize/real-time-alerts.md) をご覧ください。
 
 ## 環境アクティビティ
 
-ユーザーはDXP Cloudのコンソールで環境のアクティビティを監視することができ、2つのセクションに分類されます。 **ビルドとデプロイメント** と **一般的なアクティビティ** です。
+ユーザーはLiferay Cloudのコンソールで環境のアクティビティを監視することができ、2つのセクションに分類されます。 **ビルドとデプロイメント** と **一般的なアクティビティ** です。
 
 ビルド、デプロイメント、サービスアクティビティなどのステータスを確認し、環境問題のトラブルシューティングに役立てることができます。
 
-![図3：DXP Cloudコンソールからの環境アクティビティの表示](./troubleshooting-tools-and-resources/images/03.png)
+![図3：Liferay Cloudコンソールからの環境アクティビティの表示](./troubleshooting-tools-and-resources/images/03.png)
 
 詳しくは [チーム活動](../manage-and-optimize/team-activities.md) をご覧ください。
 
 ## 環境ログ
 
-環境ログは、プロジェクトにおける技術的な問題を診断し、解決するために非常に重要です。 ユーザーはDXP CloudのコンソールやOS端末から環境ログにアクセスし、ダウンロードすることができます。
+環境ログは、プロジェクトにおける技術的な問題を診断し、解決するために非常に重要です。 ユーザーはLiferay CloudのコンソールやOS端末から環境ログにアクセスし、ダウンロードすることができます。
 
-各DXP Cloudサービスのアプリケーションログ、ステータスログ、ビルドログを提供しています。
+各Liferay Cloudサービスのアプリケーションログ、ステータスログ、ビルドログを提供しています。
 
 * **Application Logs** ：これらのログは、アプリケーションが実行され、ユーザーがアクセスした後に生成されたランタイム情報をリストアップします。
 * **Application Logs** ：これらのログは、アプリケーションが実行され、ユーザーがアクセスした後に生成されたランタイム情報をリストアップします。
 * **Build Logs** ：これらのログは、アプリケーションの起動時に生成されるビルド情報を一覧表示します。
 
-![図4：DXP CloudコンソールのLogsページによるログの表示](./troubleshooting-tools-and-resources/images/04.png)
+![図4：Liferay CloudコンソールのLogsページによるログの表示](./troubleshooting-tools-and-resources/images/04.png)
 
 詳しくは [Log Management](./reading-dxp-cloud-service-logs.md) をご覧ください。
 
 ## シェルアクセス
 
-DXP Cloudコンソールのコマンドラインツールは、スピード、コントロール、トレーサビリティ、スクリプト、自動化の機能を提供し、開発者のワークフローに貢献します。
+Liferay Cloudコンソールのコマンドラインツールは、スピード、コントロール、トレーサビリティ、スクリプト、自動化の機能を提供し、開発者のワークフローに貢献します。
 
 トラブルシューティングの際には、シェルアクセスツールを使用してアプリケーションの内部を確認し、ログでは簡単に見つけられない詳細を見ることができます。
 
-![図5：DXP Cloudコンソールのシェルアクセスツールを使って、アプリケーション内部で何が行われているかを確認する。](./troubleshooting-tools-and-resources/images/05.png)
+![図5：Liferay Cloudコンソールのシェルアクセスツールを使って、アプリケーション内部で何が行われているかを確認する。](./troubleshooting-tools-and-resources/images/05.png)
 
 シェルは、 `liferay`、 `search`、 `webserver` など、ほとんどのサービスでアクセス可能です。 サーバーのファイルシステムに直接アクセスしたり、トラブルシューティングのためのコマンドを実行したりすることができます。
 
@@ -85,9 +85,9 @@ curl -v [address]
 
 ## セルフヒーリング
 
-DXP Cloudのセルフヒーリング機能は、サービスやアプリケーションが応答しなくなったことを検知し、応答しなくなったサービスを回復するための手順を自動的に開始します。 このプラットフォームでは、プローブを使ってサービスを監視しています。
+Liferay Cloudのセルフヒーリング機能は、サービスやアプリケーションが応答しなくなったことを検知し、応答しなくなったサービスを回復するための手順を自動的に開始します。 このプラットフォームでは、プローブを使ってサービスを監視しています。
 
-DXP Cloudでは、アプリケーションを管理するために2つのプローブを併用しています。
+Liferay Cloudでは、アプリケーションを管理するために2つのプローブを併用しています。
 
 * **Liveness Probe** ：サービスが実行されているかどうかを示すプローブです。
 * **Readiness Probe** ：サービスがリクエストを受信する準備ができているかどうかを示すプローブです。
@@ -96,9 +96,9 @@ DXP Cloudでは、アプリケーションを管理するために2つのプロ�
 
 ## ディザスターリカバリー
 
-災害時には、Liferay DXP Cloudはプロジェクト復旧のための2つの戦略を提供します。自動」と「Cross-Region」です。
+災害時には、Liferay Cloudはプロジェクト復旧のための2つの戦略を提供します。自動」と「Cross-Region」です。
 
-Liferay DXP Cloudの自動災害復旧戦略は、同一地域内の3つのアベイラビリティーゾーン間でサービスを複製します。 あるアベイラビリティーゾーンが利用できなくなった場合、ロードバランサーはユーザーの操作を必要とせず、残りのアベイラビリティーゾーンに自動的にルーティングします。
+Liferay Cloudの自動災害復旧戦略は、同一地域内の3つのアベイラビリティーゾーン間でサービスを複製します。 あるアベイラビリティーゾーンが利用できなくなった場合、ロードバランサーはユーザーの操作を必要とせず、残りのアベイラビリティーゾーンに自動的にルーティングします。
 
 しかし、地域を越えた災害では、ユーザーの介入が必要です。 クロスリージョン ディザスタリカバリのツールやプロセスについては、 [クロスリージョンディザスタ リカバリの設定](./configuring-cross-region-disaster-recovery.md)を参照してください。
 
@@ -118,7 +118,7 @@ Liferay DXP Cloudの自動災害復旧戦略は、同一地域内の3つのア�
 
 ## サポートアクセス
 
-サポートアクセスはオプションの環境設定で、LiferayのエンジニアがDXP Cloudのプロジェクト環境に直接アクセスすることで、トラブルシューティングを迅速に行うことができます。
+サポートアクセスはオプションの環境設定で、LiferayのエンジニアがLiferay Cloudのプロジェクト環境に直接アクセスすることで、トラブルシューティングを迅速に行うことができます。
 
 デフォルトでは、サポートアクセスは各プロジェクト環境で有効になっていますが、管理者は **設定** ページから無効にすることができます。
 
@@ -128,16 +128,16 @@ Liferay DXP Cloudの自動災害復旧戦略は、同一地域内の3つのア�
 
 ## ヘルプセンター
 
-DXP Cloud [Documentation](https://learn.liferay.com/dxp-cloud-latest/) で回答されていない質問がある場合や、問題を報告したい場合は、Liferay [Help Center](https://help.liferay.com/) にサインインして、サブスクリプション専用のリソースを閲覧したり、チケットを提出したりしてください。
+Liferay Cloud [Documentation](https://learn.liferay.com/dxp-cloud-latest/) で回答されていない質問がある場合や、問題を報告したい場合は、Liferay [Help Center](https://help.liferay.com/) にサインインして、サブスクリプション専用のリソースを閲覧したり、チケットを提出したりしてください。
 
 ![図8：Liferay Help Centerページによるサブスクリプション専用リソースの閲覧またはチケットの提出](./troubleshooting-tools-and-resources/images/08.png)
 
-ここからユーザーは、DXP Cloudの [ナレッジベース](https://help.liferay.com/hc/ja/categories/360001132872) 、 [プロダクトサポート](https://help.liferay.com/hc/ja/articles/360030208451-DXP-Cloud-Support-Overview) 、 [アナウンスメント](https://help.liferay.com/hc/ja/categories/360001192512) にアクセスすることができます。
+ここからユーザーは、Liferay Cloudの [ナレッジベース](https://help.liferay.com/hc/ja/categories/360001132872) 、 [プロダクトサポート](https://help.liferay.com/hc/ja/articles/360030208451-DXP-Cloud-Support-Overview) 、 [アナウンスメント](https://help.liferay.com/hc/ja/categories/360001192512) にアクセスすることができます。
 
-また、ユーザーは、DXP Cloudの最新の [ヘルプセンターの更新情報](https://www.liferay.com/web/l/subscribe-to-liferay-dxp-cloud-updates) のメール通知を受け取ることができます。 これらのアップデートには、新しいプラットフォームのリリース、サービスアップデート、セキュリティアラートやパッチなどが含まれます。
+また、ユーザーは、Liferay Cloudの最新の [ヘルプセンターの更新情報](https://www.liferay.com/web/l/subscribe-to-liferay-dxp-cloud-updates) のメール通知を受け取ることができます。 これらのアップデートには、新しいプラットフォームのリリース、サービスアップデート、セキュリティアラートやパッチなどが含まれます。
 
 ```{note}
-Liferay DXP Cloudの通知は、有効なLiferay Enterprise Subscriptionをお持ちのお客様にのみ配信されます。
+Liferay Cloudの通知は、有効なLiferay Enterprise Subscriptionをお持ちのお客様にのみ配信されます。
 ```
 
 追加のサポートについては、ユーザーはLiferayのグローバルな [サポートセンター](https://help.liferay.com/hc/ja/articles/360017784212?_ga=2.254167624.1908736764.1562000563-1350017715.1560788053) に電話で問い合わせるか、 [ヘルプセンター](https://help.liferay.com/) のページからチケットを提出することができます。
@@ -147,6 +147,6 @@ Liferay DXP Cloudの通知は、有効なLiferay Enterprise Subscriptionをお�
 ## 追加情報
 
 * [DXPクラウドサポートの概要](https://help.liferay.com/hc/ja/articles/360030208451-DXP-Cloud-Support-Overview)
-* [Liferay DXP Cloud ナレッジベース](https://help.liferay.com/hc/ja/categories/360001132872)
-* [Liferay DXP Cloudの発表](https://help.liferay.com/hc/ja/categories/360001192512)
+* [Liferay Cloud ナレッジベース](https://help.liferay.com/hc/ja/categories/360001132872)
+* [Liferay Cloudの発表](https://help.liferay.com/hc/ja/categories/360001192512)
 * [サポートアクセス](./support-access.md)

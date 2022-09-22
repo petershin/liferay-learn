@@ -1,6 +1,6 @@
 # クロスリージョンディザスタ リカバリの設定
 
-DXP Cloudは、大規模なインシデントの場合にお客様が障害復旧（DR）手順を利用するための2つの方法を提供します：自動障害復旧と地域間障害復旧。 障害復旧シナリオに対するDXP Cloudのアプローチについては、 [障害復旧の概要](./disaster-recovery-overview.md)を参照してください。
+Liferay Cloudは、大規模なインシデントの場合にお客様が障害復旧（DR）手順を利用するための2つの方法を提供します：自動障害復旧と地域間障害復旧。 障害復旧シナリオに対するLiferay Cloudのアプローチについては、 [障害復旧の概要](./disaster-recovery-overview.md)を参照してください。
 
 ここでは、地域間の災害時にデータを手動で回復する方法をご紹介します。 これらの手順は、同じリージョン内の3つのゾーンすべてに同時に妥協がある場合にのみ必要です。
 
@@ -12,11 +12,11 @@ DXP Cloudは、大規模なインシデントの場合にお客様が障害復�
 
 Liferayは、地域をまたいだ災害を管理するために、専用のDXPクラウド環境を提供しています。 この例では、本番環境が **europe-west2** リージョンに格納されており、リージョンが危険にさらされていると想定しています。 本番環境でのダウンタイムとデータ損失を防ぐには、ディザスタリカバリ環境を、 **us-west1** などの運用領域外にシフトする必要があります。 したがって、この5番目の障害復旧（DRに短縮された）環境は、インシデント中に生成された新しいユーザーデータを格納するバックアップとして機能します。
 
-障害復旧環境のセットアップを希望するDXP Cloudのお客様は、DR環境をプロビジョニングするために、営業担当者に連絡する必要があります。 この新しい環境は、他の利用可能な環境 (例えば、 `dev`、 `infra`、 `uat`、および `prd`) とともに表示されます。
+障害復旧環境のセットアップを希望するLiferay Cloudのお客様は、DR環境をプロビジョニングするために、営業担当者に連絡する必要があります。 この新しい環境は、他の利用可能な環境 (例えば、 `dev`、 `infra`、 `uat`、および `prd`) とともに表示されます。
 
 ![災害復旧環境を作成したら、他の環境と同じようにそれを選択できます。](./configuring-cross-region-disaster-recovery/images/01.png)
 
-DXP Cloudシステム管理者は、DR環境と本番環境の両方に対する完全な管理権限を持っている必要があります。
+Liferay Cloudシステム管理者は、DR環境と本番環境の両方に対する完全な管理権限を持っている必要があります。
 
 ### DR環境でのVPN設定の確認
 
@@ -44,7 +44,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 ### 最新の安定したビルドを本番環境からDR環境にデプロイする
 
-次に、最新の安定したビルドを本番環境でDR環境にデプロイする必要があります。 そのためには、 [DXP Cloud展開ワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)で説明したのと同じ手順に従ってください。
+次に、最新の安定したビルドを本番環境でDR環境にデプロイする必要があります。 そのためには、 [Liferay Cloud展開ワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)で説明したのと同じ手順に従ってください。
 
 ### ディザスタリカバリへの自動バックアップリストアの設定
 
@@ -52,7 +52,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 まず、本番環境のマスタートークンを取得します（これには、 `liferay` サービスシェルにアクセスするための管理者権限が必要です）：
 
-1. DXP Cloudコンソールで、本番環境&rarr; `liferay`のサービスページに移動します。
+1. Liferay Cloudコンソールで、本番環境&rarr; `liferay`のサービスページに移動します。
 
 1. **Shell** タブをクリックします。
 
@@ -99,7 +99,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 アクセス可能な状態で復元スケジュールを無効にするには、以下の手順に従ってください：
 
-1. DXP Cloudコンソールで、DR環境 &rarr; Backup serviceページ &rarr; 環境変数に移動します。
+1. Liferay Cloudコンソールで、DR環境 &rarr; Backup serviceページ &rarr; 環境変数に移動します。
 
 1. 目のアイコンをクリックすると、 `LCP_BACKUP_RESTORE_SCHEDULE` の変数の値が表示されます：
 
@@ -138,7 +138,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
     ![DR環境のVPNステータスをチェックして、正しく接続されていることを確認します。](./configuring-cross-region-disaster-recovery/images/05.png)
 
-    適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [DXP CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) をご覧ください。
+    適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [Liferay CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) をご覧ください。
 
 1. DXPインスタンスにログインします（カスタムドメインはまだDR環境を指していないため、IPアドレスを使用します）。
 
@@ -208,7 +208,7 @@ DR環境から通常の本番環境にデータを復元します。
 
 1. 本番環境の ［**設定**］ &rarr; ［**VPN**］ ページに移動して、VPNが本番環境に接続されていることを確認します。
 
-   適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [DXP CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) をご覧ください。
+   適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [Liferay CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-dxp-cloud.md) をご覧ください。
 
 1. DXPインスタンスにログインします（カスタムドメインはDR環境を指しているため、IPアドレスを使用します）。
 
@@ -249,4 +249,4 @@ DR環境から通常の本番環境にデータを復元します。
 
 1. 変更を保存します。
 
-これで、DXP Cloud環境は通常の操作を再開することができます。
+これで、Liferay Cloud環境は通常の操作を再開することができます。

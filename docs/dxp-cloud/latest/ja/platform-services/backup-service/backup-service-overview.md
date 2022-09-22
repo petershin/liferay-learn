@@ -1,12 +1,12 @@
 # バックアップサービスの概要
 
-プロジェクトのデータを守るためには、定期的にバックアップを取ることが重要です。 DXP Cloudのバックアップサービスでは、環境データの反復を保存し、必要に応じて環境の復元に使用できます。 これらのバックアップには、Liferay DXPデータベースと、 `LIFERAY_HOME/data` フォルダの全コンテンツの両方が含まれます。
+プロジェクトのデータを守るためには、定期的にバックアップを取ることが重要です。 Liferay Cloudのバックアップサービスでは、環境データの反復を保存し、必要に応じて環境の復元に使用できます。 これらのバックアップには、Liferay DXPデータベースと、 `LIFERAY_HOME/data` フォルダの全コンテンツの両方が含まれます。
 
-![バックアップサービスは、DXP Cloudで利用可能ないくつかのサービスの1つです。](./backup-service-overview/images/01.png)
+![バックアップサービスは、Liferay Cloudで利用可能ないくつかのサービスの1つです。](./backup-service-overview/images/01.png)
 
 どの環境のバックアップページからでも、バックアップの作成、保持されたバックアップの表示またはダウンロード、そしてバックアップから環境を復元することができます。
 
-また、DXP Cloudのコンソールや、バックアップサービスの `LCP.json` ファイルから、プロジェクトのニーズに合わせてバックアップサービスを設定することができます。
+また、Liferay Cloudのコンソールや、バックアップサービスの `LCP.json` ファイルから、プロジェクトのニーズに合わせてバックアップサービスを設定することができます。
 
 詳細は、 [バックアップサービスの制限](../../reference/platform-limitations.md#backup-service) のセクションを参照してください。
 
@@ -62,7 +62,7 @@ Liferayインスタンス上でデータが能動的に変更されている間�
 
 ## バックアップサービスの設定
 
-DXP Cloudのコンソールや、バックアップサービスの `LCP.json` ファイルから、プロジェクトのニーズに合わせてバックアップサービスを設定することができます。
+Liferay Cloudのコンソールや、バックアップサービスの `LCP.json` ファイルから、プロジェクトのニーズに合わせてバックアップサービスを設定することができます。
 
 バックアップサービスの設定に使用できる変数の一覧については、 [環境変数のリファレンス](#environment-variables-reference) を参照してください。
 
@@ -70,9 +70,9 @@ DXP Cloudのコンソールや、バックアップサービスの `LCP.json` �
 バックアップサービスを再設定するたびに、バックアップサービスが再起動し、数分間リクエストを受け取らなくなったり、設定によっては挙動が異なる場合があります。
 ```
 
-### DXP Cloudコンソールによるバックアップサービスの設定
+### Liferay Cloudコンソールによるバックアップサービスの設定
 
-以下の手順で、DXP Cloud Consoleを使ってバックアップサービスを設定します。
+以下の手順で、Liferay Cloud Consoleを使ってバックアップサービスを設定します。
 
 1. バックアップサービスが導入されている環境に移動します。
 
@@ -90,7 +90,7 @@ DXP Cloudのコンソールや、バックアップサービスの `LCP.json` �
 
 1. *［変更を保存］* をクリックします。
 
-通常の環境変数とは別に、DXP Cloudのコンソールから *シークレット* 変数を設定することができます。 詳しくは、 [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) をご覧ください。
+通常の環境変数とは別に、Liferay Cloudのコンソールから *シークレット* 変数を設定することができます。 詳しくは、 [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) をご覧ください。
 
 ### バックアップによるバックアップサービスの設定 `LCP.json` ファイル
 
@@ -171,10 +171,10 @@ DXP Cloudのコンソールや、バックアップサービスの `LCP.json` �
 標準および非標準の[cronスケジューリング構文](https://crontab.guru/) は、UTC±00タイムゾーンに基づいています。 非標準のcron構文を使用する場合、自動バックアップとクリーンアップは指定された値の先頭で実行されます。 例えば、`@daily`は毎日UTCの00:00にバックアップを実行します。
 ```
 
-これらの環境変数は、 [DXP Cloud コンソール](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-dxp-cloud-console) （Backup サービス内）で設定するか、 [プロジェクトリポジトリの `backup/LCP.json` ファイル](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp-json) で設定して Backup サービスを環境にデプロイすることで使用することが可能です。
+これらの環境変数は、 [Liferay Cloud コンソール](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-dxp-cloud-console) （Backup サービス内）で設定するか、 [プロジェクトリポジトリの `backup/LCP.json` ファイル](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp-json) で設定して Backup サービスを環境にデプロイすることで使用することが可能です。
 
 ```{warning}
-DXP Cloud コンソールで環境変数を設定し、後で `backup/LCP.json` に異なる設定をしてリポジトリから Backup サービスをデプロイすると、リポジトリからの設定がコンソールで設定された環境変数を上書きしてしまいます。
+Liferay Cloud コンソールで環境変数を設定し、後で `backup/LCP.json` に異なる設定をしてリポジトリから Backup サービスをデプロイすると、リポジトリからの設定がコンソールで設定された環境変数を上書きしてしまいます。
 ```
 
 次の `backup/LCP.json` の例では、12時間ごと（つまり、UTCの00:00と12:00）にバックアップを作成し、30日以上前のバックアップを削除する月次クリーンアップを実行するようになっています。

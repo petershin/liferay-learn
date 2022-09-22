@@ -115,7 +115,7 @@ liferay
 
 ホットフィックスをGitリポジトリに直接コミットするのではなく、CIのビルドプロセスの一部としてインストールすることもできます。 この方法は、リポジトリに大きなファイルを残さないようにすることができるため、大規模なHotfixの場合に最適です。
 
-CIサービスがビルドプロセス中に自動的に適用することができるようにするために、ホットフィックスのコンマ区切りのリストを `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` 環境変数に追加します（DXP Cloudコンソールの `［環境変数］` タブ、または、 `ci` サービスの `LCP.json`ファイルを介して）。
+CIサービスがビルドプロセス中に自動的に適用することができるようにするために、ホットフィックスのコンマ区切りのリストを `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` 環境変数に追加します（Liferay Cloudコンソールの `［環境変数］` タブ、または、 `ci` サービスの `LCP.json`ファイルを介して）。
 
 ```{note}
 この環境変数を「ci」サービスの「LCP.json」に追加した場合、アップデートを完了するには、「ci」サービスを **infra 環境** にデプロイする必要があります。
@@ -163,5 +163,5 @@ liferay
 
 * [Liferay DXPサービスの紹介](./introduction-to-the-liferay-dxp-service.md)
 * [Liferay DXPサービスの設定　](./configuring-the-liferay-dxp-service.md)
-* [DXP Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
 * [CLIツール](../reference/command-line-tool.md)

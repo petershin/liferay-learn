@@ -1,6 +1,6 @@
 # DXPインスタンスを新しいマイナーバージョンにアップデートする
 
-Liferay DXPのインストールを定期的に更新することは、DXP Cloud環境を維持するための重要な要素です。 [Liferay DXP Docker Hubページの](https://hub.docker.com/r/liferay/dxp/tags) にある利用可能なタグを使用して、サービスの更新とデプロイを行います。
+Liferay DXPのインストールを定期的に更新することは、Liferay Cloud環境を維持するための重要な要素です。 [Liferay DXP Docker Hubページの](https://hub.docker.com/r/liferay/dxp/tags) にある利用可能なタグを使用して、サービスの更新とデプロイを行います。
 
 ```{note}
 新しいメジャーバージョン（Liferay DXP 7.3など）へのアップグレードは、小さいバージョンのアップデートとは異なる手順が必要です。 詳細は、 [Liferay DXPインスタンスのアップグレード](./upgrading-your-liferay-dxp-instance.md) を参照してください。
@@ -114,5 +114,5 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
 
 * [Liferayサービスへのデプロイ](./deploying-to-the-liferay-service.md)
 * [Hotfixのインストール](./deploying-to-the-liferay-service.md#deploying-hotfixes)
-* [DXP Cloudでのクラスタリングのセットアップ](./setting-up-clustering-in-dxp-cloud.md)
+* [Liferay Cloudでのクラスタリングのセットアップ](./setting-up-clustering-in-dxp-cloud.md)
 * [Liferay DXPインスタンスのアップグレード](./upgrading-your-liferay-dxp-instance.md)

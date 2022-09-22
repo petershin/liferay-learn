@@ -7,7 +7,7 @@
 バックアップページの詳細は、 [バックアップサービス](./backup-service-overview.md) および [バックアップのダウンロードとアップロード](./downloading-and-uploading-backups.md) を参照してください。
 
 ```{important}
-選択した環境のAdminロールを持つユーザーのみが、DXP Cloudコンソールを介して環境を手動で復元できます。
+選択した環境のAdminロールを持つユーザーのみが、Liferay Cloudコンソールを介して環境を手動で復元できます。
 ```
 
 ## バックアップページから環境を復元する

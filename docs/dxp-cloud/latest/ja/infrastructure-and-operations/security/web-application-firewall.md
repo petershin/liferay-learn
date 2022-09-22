@@ -1,8 +1,8 @@
 # Webアプリケーションファイアウォール
 
-DXP Cloudは、組み込みのWebアプリケーションファイアウォール（WAF）機能を提供し、機密データの損失、攻撃者によるシステムのハイジャック、およびダウンタイムにつながる可能性のある高度な Layer 7攻撃からアプリケーションを保護します。
+Liferay Cloudは、組み込みのWebアプリケーションファイアウォール（WAF）機能を提供し、機密データの損失、攻撃者によるシステムのハイジャック、およびダウンタイムにつながる可能性のある高度な Layer 7攻撃からアプリケーションを保護します。
 
-ここでは、DXP Cloudの機能が一般的な攻撃から保護するWAFをどのように形成するかを学びます。
+ここでは、Liferay Cloudの機能が一般的な攻撃から保護するWAFをどのように形成するかを学びます。
 
 ![図1：Webアプリケーションファイアウォールは、一般的な攻撃から保護します。](./web-application-firewall/images/01.png)
 
@@ -12,11 +12,11 @@ DXP Cloudは、組み込みのWebアプリケーションファイアウォー�
 
 ## プライベートネットワーク
 
-DXP Cloudのサービスはインターネットに公開されていません。 DXP Cloudのすべての環境には独自のプライベートネットワークがあり、同じ環境のサービスが、パブリックインターネットとやり取りすることなく、安全な通信プロトコルを介して通信できます。 このプライベートネットワークの設定については、 [プライベートネットワーク](../networking/private-network.md) を参照してください。
+Liferay Cloudのサービスはインターネットに公開されていません。 Liferay Cloudのすべての環境には独自のプライベートネットワークがあり、同じ環境のサービスが、パブリックインターネットとやり取りすることなく、安全な通信プロトコルを介して通信できます。 このプライベートネットワークの設定については、 [プライベートネットワーク](../networking/private-network.md) を参照してください。
 
 ## パブリックロードバランサー
 
-DXP Cloud Public Load Balancer（ [［Layer 7］](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) ）は、TLS（1.0〜1.2）プロトコルを使用したプロキシされたHTTP（S）接続を介して環境のサービスへのインターネットアクセスを提供します。 各ロードバランサーには、カスタムドメインの設定に使用できる静的IPがあります。 HTTP（S）負荷分散は、IPスプーフィングと大規模なSYNフラッド攻撃を吸収して保護できます。 この機能はDXP Cloudに組み込まれており、ユーザー設定は必要ありません。
+Liferay Cloud Public Load Balancer（ [［Layer 7］](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) ）は、TLS（1.0〜1.2）プロトコルを使用したプロキシされたHTTP（S）接続を介して環境のサービスへのインターネットアクセスを提供します。 各ロードバランサーには、カスタムドメインの設定に使用できる静的IPがあります。 HTTP（S）負荷分散は、IPスプーフィングと大規模なSYNフラッド攻撃を吸収して保護できます。 この機能はLiferay Cloudに組み込まれており、ユーザー設定は必要ありません。
 
 ## CDNオフロード
 
@@ -26,7 +26,7 @@ DXPクラウドの [CDN](../networking/load-balancer.md#cdn) は、クライア�
 
 ## IP許可および拒否リスト
 
-許可リストと拒否リストを使用してIPアドレスまたは範囲に基づいて着信トラフィックを許可またはブロックする機能は、DXP Cloudが提供する [Webserver (Nginx) service](../../platform-services/web-server-service.md) を介して利用できます。
+許可リストと拒否リストを使用してIPアドレスまたは範囲に基づいて着信トラフィックを許可またはブロックする機能は、Liferay Cloudが提供する [Webserver (Nginx) service](../../platform-services/web-server-service.md) を介して利用できます。
 
 ユーザーは `nginx.conf` ファイルの `stream` コンテキストまたは `server` ブロック内の `allow` および `deny` ディレクティブを利用できます。
 

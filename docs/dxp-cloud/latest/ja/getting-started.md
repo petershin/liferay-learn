@@ -22,7 +22,7 @@ getting-started/logging-into-your-dxp-cloud-services.md
 getting-started/understanding-dxp-cloud-environments.md
 ```
 
-Liferay DXP Cloudは、安全で信頼性の高いエンタープライズクラウドプラットフォームであり、Liferay DXPで驚くべきアプリケーションを簡素化、安全化、提供するために必要なインフラストラクチャとツールを提供します。
+Liferay Cloudは、安全で信頼性の高いエンタープライズクラウドプラットフォームであり、Liferay DXPで驚くべきアプリケーションを簡素化、安全化、提供するために必要なインフラストラクチャとツールを提供します。
 
 次の機能を提供するプラットフォームを使用して、心配をせずにさらに構築できます。
 
@@ -32,9 +32,9 @@ Liferay DXP Cloudは、安全で信頼性の高いエンタープライズクラ
 
 これらすべては、Liferay DXPでビジネスクリティカルなソリューションを実行した10年以上の経験を持つLiferayプロフェッショナルの専任チームによって設計、構築、サポートされています。
 
-DXP Cloudは、完全なDevOps CI/CD戦略、ツール、ワークフローを提供することにより、アプリケーションの開発とデプロイを加速します。
+Liferay Cloudは、完全なDevOps CI/CD戦略、ツール、ワークフローを提供することにより、アプリケーションの開発とデプロイを加速します。
 
-すべてのDXP Cloudプロジェクトには以下が付属しています：
+すべてのLiferay Cloudプロジェクトには以下が付属しています：
 
 * [CI/CDの組み込みによる開発の加速化](#accelerated-development-with-built-in-ci-cd)
 * [アプリケーション開発ツール](#application-development-tools)
@@ -42,7 +42,7 @@ DXP Cloudは、完全なDevOps CI/CD戦略、ツール、ワークフローを�
 
 ## 標準に準拠したセキュリティ、自動バックアップ、柔軟なガバナンス
 
-DXP Cloudはセキュリティを考慮して設計されています。 **ISO 27001** 及び **AICPA SOC2** が認証を受けていることから、自信を持ってビルドおよびデプロイミッションクリティカルなサイトDXP Cloudがあることを知っています。
+Liferay Cloudはセキュリティを考慮して設計されています。 **ISO 27001** 及び **AICPA SOC2** が認証を受けていることから、自信を持ってビルドおよびデプロイミッションクリティカルなサイトLiferay Cloudがあることを知っています。
 
 すべての顧客データは、デフォルトで保存時に暗号化されています。 保存時の暗号化により、ディスクに保存された機密データが、有効なキーなしでユーザーやアプリケーションから読み取られることがなくなります。 詳細は、 [セキュリティポリシー](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Cloud+Data+Security+and+Protection.pdf/78ce7065-9787-1fb2-9c7b-6d7c13f4a3e6?t=1564674972483) を参照してください。
 
@@ -56,7 +56,7 @@ DXP Cloudはセキュリティを考慮して設計されています。 **ISO 2
 
 ## 高可用性、スケーラビリティ、およびパフォーマンス
 
-[クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md) と [ロードバランシング](./infrastructure-and-operations/networking/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 DXP Cloudは、マルチリージョンアーキテクチャを通じてデータを提供し、高可用性を保証します。
+[クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md) と [ロードバランシング](./infrastructure-and-operations/networking/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 Liferay Cloudは、マルチリージョンアーキテクチャを通じてデータを提供し、高可用性を保証します。
 
 [オートスケーリング](./manage-and-optimize/auto-scaling.md) は、予期しないトラフィックスパイクによって安定したパフォーマンスを維持するために、帯域幅とコンピューティング容量が動的に追加されることを保証します。 同様に、アクティビティが少ない期間に、不要なリソースを縮小できます。 チームはインスタンスの使用状況に関する自動通知と電子メールアラートを受信するので、自信を持ってリソースを管理できます。
 
@@ -84,13 +84,13 @@ DXP Cloudはセキュリティを考慮して設計されています。 **ISO 2
 
 ## 洞察に満ちたモニタリング
 
-DXP Cloudは [アプリケーションメトリクスス](./manage-and-optimize/application-metrics.md) 提供するため、ITチームはサイトの正常性とコンピューティング要件を経時的に理解できます。 管理者は、すぐに使用できる [Dynatrace統合](./manage-and-optimize/application-metrics.md#advanced-application-metrics-on-production) を使用して、CPUとメモリの使用状況、データ転送速度などをすばやく理解することもできます。
+Liferay Cloudは [アプリケーションメトリクスス](./manage-and-optimize/application-metrics.md) 提供するため、ITチームはサイトの正常性とコンピューティング要件を経時的に理解できます。 管理者は、すぐに使用できる [Dynatrace統合](./manage-and-optimize/application-metrics.md#advanced-application-metrics-on-production) を使用して、CPUとメモリの使用状況、データ転送速度などをすばやく理解することもできます。
 
-![図9：さまざまなメトリクスを使用して、Liferay DXPインスタンスを含むDXP Cloudサービスを監視します。](./getting-started/images/07.png)
+![図9：さまざまなメトリクスを使用して、Liferay DXPインスタンスを含むLiferay Cloudサービスを監視します。](./getting-started/images/07.png)
 
 ## 追加情報
 
 * [開発要件](./getting-started/development-requirements.md)
 * [Github リポジトリの設定](./getting-started/configuring-your-github-repository.md)
-* [DXP Cloud デプロイメントワークフローの概要](./build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [DXP Cloudコンソールによる変更のデプロイ](./build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)
+* [Liferay Cloud デプロイメントワークフローの概要](./build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Liferay Cloudコンソールによる変更のデプロイ](./build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md)

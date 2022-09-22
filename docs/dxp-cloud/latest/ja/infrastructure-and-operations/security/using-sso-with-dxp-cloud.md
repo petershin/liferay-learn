@@ -1,22 +1,22 @@
-# DXP CloudでのSSOの使用
+# Liferay CloudでのSSOの使用
 
-顧客はSAML 2.0準拠のシングルサインオンIDプロバイダーを使用して、DXP Cloudプラットフォームに対してユーザーを認証できます。 このドキュメントでは、この統合を有効にするプロセスについて詳しく説明します。
+顧客はSAML 2.0準拠のシングルサインオンIDプロバイダーを使用して、Liferay Cloudプラットフォームに対してユーザーを認証できます。 このドキュメントでは、この統合を有効にするプロセスについて詳しく説明します。
 
 SAMLを使用してSSOを実行するには、クライアント、サービスプロバイダー（SP）、アイデンティティプロバイダー（IdP）の3つのエージェントが必要です。 クライアントがサービスプロバイダーに接続しようとすると、サービスプロバイダーはクライアントをアイデンティティプロバイダーにリダイレクトします。 クライアントがIDプロバイダーによって認証された後、IDプロバイダーはクライアントの資格情報へのアクセスをサービスプロバイダーに許可します。
 
-このシナリオでは、DXP Cloudはサービスプロバイダーとして機能します。 DXP Cloudにログインしようとしているお客様がクライアントです。 IDプロバイダーは、顧客が管理するエンタープライズディレクトリソリューションです。
+このシナリオでは、Liferay Cloudはサービスプロバイダーとして機能します。 Liferay Cloudにログインしようとしているお客様がクライアントです。 IDプロバイダーは、顧客が管理するエンタープライズディレクトリソリューションです。
 
-## DXP CloudプロジェクトでSSOを有効にする
+## Liferay CloudプロジェクトでSSOを有効にする
 
-DXP CloudプロジェクトでSSOを有効にするには、次の手順を実行する必要があります：
+Liferay CloudプロジェクトでSSOを有効にするには、次の手順を実行する必要があります：
 
 1. [DXPクラウドチームへのIdPメタデータの提供](#provide-identity-provider-metadata-to-the-dxp-cloud-team)
-1. [DXP Cloudチームは、提供されたIdPデータをインポートし、サービスプロバイダ（SP）メタデータを提供します。](#dxp-cloud-team-imports-provided-idp-data-and-provides-service-provider-metadata)
-1. [Liferay DXP Cloud チームが提供する SP メタデータをインポートする。](#import-sp-metadata-provided-by-the-liferay-dxp-cloud-team)
+1. [Liferay Cloudチームは、提供されたIdPデータをインポートし、サービスプロバイダ（SP）メタデータを提供します。](#dxp-cloud-team-imports-provided-idp-data-and-provides-service-provider-metadata)
+1. [Liferay Cloud チームが提供する SP メタデータをインポートする。](#import-sp-metadata-provided-by-the-liferay-dxp-cloud-team)
 
 ### DXPクラウドチームへのIDプロバイダメタデータの提供
 
-DXP CloudプロジェクトでSSOを有効にしたいクライアントは、次の情報を含む必要がある ［**IdP**］ システムのメタデータを提供する必要があります：
+Liferay CloudプロジェクトでSSOを有効にしたいクライアントは、次の情報を含む必要がある ［**IdP**］ システムのメタデータを提供する必要があります：
 
 | Field                              | Description                                                                                                                   |
 |:---------------------------------- |:----------------------------------------------------------------------------------------------------------------------------- |
@@ -37,7 +37,7 @@ Microsoft ADFSを使用するクライアントは、SAMLを使用してSSOを�
 | IdPシングルサインオンURL | デフォルトは `/adfs/ls`です。 例： <http://adfs.example.com/adfs/ls/>                   |
 | IdP署名証明書        | DERエンコードされたバイナリX.509証明書ファイル                                                  |
 
-IdPメタデータが生成されたら、 [DXP Cloudチームでチケットを開きます](https://help.liferay.com/hc/) 。 IdPメタデータは、XMLファイルまたはURLエンドポイント（<https://localhost:8080/c/saml/metadata> が基本例）のいずれかの形式で送信することができる。
+IdPメタデータが生成されたら、 [Liferay Cloudチームでチケットを開きます](https://help.liferay.com/hc/) 。 IdPメタデータは、XMLファイルまたはURLエンドポイント（<https://localhost:8080/c/saml/metadata> が基本例）のいずれかの形式で送信することができる。
 
 ### DXPクラウドチームは、提供されたIdPデータをインポートし、サービスプロバイダのメタデータを提供する。
 
@@ -45,12 +45,12 @@ IdPメタデータが生成されたら、 [DXP Cloudチームでチケットを
 
 | 項目                       | 説明                                                                       |
 |:------------------------ |:------------------------------------------------------------------------ |
-| アサーションコンシューマサービス（ACS）URL | DXP Cloudが受信したSAML応答。 これは常に <https://auth.liferay.cloud>からのアドレスサーバーになります |
+| アサーションコンシューマサービス（ACS）URL | Liferay Cloudが受信したSAML応答。 これは常に <https://auth.liferay.cloud>からのアドレスサーバーになります |
 | オーディエンスURL               | 顧客のIDプロバイダーにアクセスするために使用されるURL Liferay Cloud                              |
 
-### Liferay DXP Cloud チームが提供する SP メタデータをインポートする。
+### Liferay Cloud チームが提供する SP メタデータをインポートする。
 
-DXP CloudチームからSPメタデータを受け取った後、IdPにSPメタデータの値を入力します。
+Liferay CloudチームからSPメタデータを受け取った後、IdPにSPメタデータの値を入力します。
 
 ## SSOの使用
 
@@ -60,7 +60,7 @@ SSOを有効にすると、適切なアイデンティティプロバイダー�
 ユーザーがSSOで初めて認証すると、そのユーザーアカウントが変更され、それ以降はSSOを使用して認証する必要があります。
 ```
 
-SSOを使用してDXP Cloudにログインするには：
+SSOを使用してLiferay Cloudにログインするには：
 
 1. <https://console.liferay.cloud/login>に移動します。
 1. ［**Login via SSO**］をクリックします 。

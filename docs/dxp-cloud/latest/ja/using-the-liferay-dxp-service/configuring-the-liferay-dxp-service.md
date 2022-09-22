@@ -1,6 +1,6 @@
 # Liferay DXPサービスの設定　
 
-Liferay DXPを設定するには、 [DXPシステム設定](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/system-settings.html) や、 [config](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) と [propertyファイル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) を使用するなど、いくつかの方法があります。 DXP CloudのLiferay DXPインスタンスのDXPプロパティおよび設定ファイルは、リポジトリのLiferay DXPサービスディレクトリにある`configs/`フォルダのいずれかに配置することでデプロイされます。
+Liferay DXPを設定するには、 [DXPシステム設定](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/system-settings.html) や、 [config](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) と [propertyファイル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) を使用するなど、いくつかの方法があります。 Liferay CloudのLiferay DXPインスタンスのDXPプロパティおよび設定ファイルは、リポジトリのLiferay DXPサービスディレクトリにある`configs/`フォルダのいずれかに配置することでデプロイされます。
 
 ```
 liferay
@@ -23,7 +23,7 @@ liferay
 
 [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) は、 `portal-ext.properties` ファイルに保存されたプロパティです。 これらは、Liferay DXP環境の設定に使用されます。
 
-オンプレミスのLiferay DXPインスタンスの場合、このファイルは `$LIFERAY_HOME`の中に属します。 Liferay DXP Cloudを使用する場合、ポータルプロパティファイルを適切な `configs/{ENV}` フォルダに配置して、デプロイ時にLiferay DXPインスタンスの `$LIFERAY_HOME` にコピーします。
+オンプレミスのLiferay DXPインスタンスの場合、このファイルは `$LIFERAY_HOME`の中に属します。 Liferay Cloudを使用する場合、ポータルプロパティファイルを適切な `configs/{ENV}` フォルダに配置して、デプロイ時にLiferay DXPインスタンスの `$LIFERAY_HOME` にコピーします。
 
 例えば、開発環境のプロパティは、 `configs/common` ディレクトリのプロパティファイルと、 `configs/dev` ディレクトリのプロパティから構成されています。 同名のファイルがある場合は、環境固有のディレクトリにあるファイルが、 `共通の` ディレクトリにあるファイルを上書きします。
 
@@ -75,7 +75,7 @@ liferay
 
 OSGi構成（`.cfg` または `.config` ファイル）は、Liferay DXPでOSGiコンポーネントを構成するために使用されます。
 
-これらの構成ファイルは、 `$LIFERAY_HOME`内の `osgi/configs/` フォルダに属しています。 Liferay DXP Cloudを使用する場合、これらのファイルを適切な `config` フォルダに配置して、デプロイ時にLiferay DXPインスタンスの `configs/{ENV}/osgi` にコピーします。
+これらの構成ファイルは、 `$LIFERAY_HOME`内の `osgi/configs/` フォルダに属しています。 Liferay Cloudを使用する場合、これらのファイルを適切な `config` フォルダに配置して、デプロイ時にLiferay DXPインスタンスの `configs/{ENV}/osgi` にコピーします。
 
 ```{note}
 バージョン3.x.xのサービスを使用している場合、OSGiの設定ファイルはLiferayサービスディレクトリ内の適切な`config/{ENV}/`フォルダに属します。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
@@ -90,12 +90,12 @@ DXPクラウドのLiferayコンテナには、一般的な`tomcat`フォルダ�
 ```
 
 ```{warning}
-デフォルトのTomcatの設定を上書きする際には、DXP CloudのLiferayサービスは、クラウドプラットフォーム上の閉じられたネットワークに存在することに留意してください。 オンプレミスのLiferayインストールで変更可能なネットワーク構成の中には、クラウド環境ではデフォルト値から変更できないものや、お客様の環境で問題が発生する可能性のあるものがあります。
+デフォルトのTomcatの設定を上書きする際には、Liferay CloudのLiferayサービスは、クラウドプラットフォーム上の閉じられたネットワークに存在することに留意してください。 オンプレミスのLiferayインストールで変更可能なネットワーク構成の中には、クラウド環境ではデフォルト値から変更できないものや、お客様の環境で問題が発生する可能性のあるものがあります。
 ```
 
 ## 環境変数
 
-DXP CloudのLiferayサービスでは、JVMメモリ設定やデータベース接続設定など、オンプレミスインスタンスと異なる一部の構成の代わりに、[環境変数](../reference/defining-environment-variables.md)（または[シークレット](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)）を使用します。 環境変数は、 [override or replace portal properties](./liferay-service-environment-variables.md#overriding-portal-properties) にも使用できます。 
+Liferay CloudのLiferayサービスでは、JVMメモリ設定やデータベース接続設定など、オンプレミスインスタンスと異なる一部の構成の代わりに、[環境変数](../reference/defining-environment-variables.md)（または[シークレット](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)）を使用します。 環境変数は、 [override or replace portal properties](./liferay-service-environment-variables.md#overriding-portal-properties) にも使用できます。 
 
 詳しくは、 [Liferayサービス環境変数](./liferay-service-environment-variables.md) を参照してください。
 
@@ -104,6 +104,6 @@ DXP CloudのLiferayサービスでは、JVMメモリ設定やデータベース�
 ## 追加情報
 
 * [Liferay DXPサービスの紹介](./introduction-to-the-liferay-dxp-service.md)
-* [DXP Cloudでのクラスタリングの有効化](./setting-up-clustering-in-dxp-cloud.md)
+* [Liferay Cloudでのクラスタリングの有効化](./setting-up-clustering-in-dxp-cloud.md)
 * [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html)
 * [Liferayサービス環境変数](./liferay-service-environment-variables.md)

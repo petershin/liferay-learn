@@ -1,8 +1,8 @@
 # ステージ 7:VPNを接続する
 
-開発環境に必要であれば、クラウド環境をプライベートネットワークに接続することが移行の最終段階となります。 これは、VPNサーバーを設定（または更新）し、DXP Cloudコンソールで接続を設定するものです。
+開発環境に必要であれば、クラウド環境をプライベートネットワークに接続することが移行の最終段階となります。 これは、VPNサーバーを設定（または更新）し、Liferay Cloudコンソールで接続を設定するものです。
 
-以下のような場合、DXP Cloud環境をVPNに接続する必要がある場合があります。
+以下のような場合、Liferay Cloud環境をVPNに接続する必要がある場合があります。
 
 * 自社のプロジェクト要件でVPNを使用する場合
 * 自分の環境を [LDAPサーバー](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html?highlight=ldap) に接続したい。
@@ -13,7 +13,7 @@ VPNサーバーの設定が必要ない場合は、 [次のステップに進ん
 
 ## VPNサーバーの設定
 
-DXP Cloudと内部ネットワークとの間に安全な接続を確立できるように、VPNサーバーを設定する必要があります。
+Liferay Cloudと内部ネットワークとの間に安全な接続を確立できるように、VPNサーバーを設定する必要があります。
 
 VPN接続では、 `EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを使用するように設定することが可能です。 VPNサーバーの設定については、 [VPNサーバーの設定](../infrastructure-and-operations/networking/configuring-a-vpn-server.md) を参照してください。
 
@@ -21,7 +21,7 @@ VPN接続では、 `EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを�
 
 次に、DXPクラウドのコンソールを使用して、設定したサーバーのVPN接続を作成します。
 
-1. DXP Cloudコンソールで、プロジェクトの要件に応じて、VPNを接続したい環境（ `prd`など）に移動します。
+1. Liferay Cloudコンソールで、プロジェクトの要件に応じて、VPNを接続したい環境（ `prd`など）に移動します。
 
 1. 画面左側の **Settings** をクリックします。
 
@@ -37,7 +37,7 @@ VPN接続では、 `EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを�
     * **説明**
     * **プロトコル**（IPSec または OpenVPN）
 
-1. DXP Cloud環境のポートと、プライベートネットワークのポートをマッピングします。
+1. Liferay Cloud環境のポートと、プライベートネットワークのポートをマッピングします。
 
     ![これらのフィールドを使用して、クラウド環境のポートとVPNのポートをマッピングしてください。](./connecting-the-vpn/images/03.png)
 
@@ -49,7 +49,7 @@ VPN接続では、 `EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを�
 
 ## VPNサーバーの応答を確認する
 
-VPNがDXP Cloud環境に正常に接続されていることを確認するために、 `curl` コマンドを実行して接続をテストしてください。
+VPNがLiferay Cloud環境に正常に接続されていることを確認するために、 `curl` コマンドを実行して接続をテストしてください。
 
 1. DXPクラウド環境（VPN接続した環境と同じ）で、 `liferay` サービスに移動してください。
 

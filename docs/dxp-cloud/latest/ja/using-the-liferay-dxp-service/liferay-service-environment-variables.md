@@ -1,6 +1,6 @@
 # Liferayサービス環境変数
 
-Liferayサービスには [環境変数の範囲](#environoment-variables-reference) があり、サービスや他のサービスへの接続、DXPのインストール自体を設定するために使用されます。 Liferay DXP Cloud固有の環境変数を使用したり、DXPの [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) をオーバーライドする変数を定義したりすることができます。
+Liferayサービスには [環境変数の範囲](#environoment-variables-reference) があり、サービスや他のサービスへの接続、DXPのインストール自体を設定するために使用されます。 Liferay Cloud固有の環境変数を使用したり、DXPの [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) をオーバーライドする変数を定義したりすることができます。
 
 ## ポータルプロパティのオーバーライド
 
@@ -22,7 +22,7 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 
 * 大文字、数字、アンダースコア（`_`）のみで構成されていなければなりません。 この制約に当てはまらない文字は、対応する [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) または [Unicode](https://unicode-table.com/en/) エンドポイントに変換しなければなりません（10進数に変換）。
 
-これらの要件を満たすためには、すべてのポータルプロパティをこのフォーマットに変換する必要があります。 これにより、DXP Cloudはフルネームを適切に認識し、対応するポータルプロパティと一致させることができます。
+これらの要件を満たすためには、すべてのポータルプロパティをこのフォーマットに変換する必要があります。 これにより、Liferay Cloudはフルネームを適切に認識し、対応するポータルプロパティと一致させることができます。
 
 以下の手順で、ポータルプロパティ名を環境変数名に変換します。
 

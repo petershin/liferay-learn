@@ -4,9 +4,9 @@ Liferay Cloud Platformは複数のシステムで設定されています。 ユ
 
 <a name="access-the-status-page-via-the-dxp-cloud-console" />
 
-## DXP Cloudコンソールからステータスページにアクセスする
+## Liferay Cloudコンソールからステータスページにアクセスする
 
-ユーザーは、DXP CloudのコンソールからLiferay Cloud Platformのステータスページにアクセスできます。
+ユーザーは、Liferay CloudのコンソールからLiferay Cloud Platformのステータスページにアクセスできます。
 
 1. コンソールページの右上にある **ヘルプ** アイコンをクリックします。
 
@@ -56,5 +56,5 @@ Liferay Cloud Platformのステータスページを下にスクロールする�
 
 ## 追加情報
 
-* [DXP Cloudサポートの概要](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
+* [Liferay Cloudサポートの概要](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
 * [トラブルシューティングツールとリソース](./troubleshooting-tools-and-resources.md)

@@ -1,6 +1,6 @@
 # ステージ4：DXPの設定とカスタマイズの移行
 
-データベースとドキュメントライブラリがDXP Cloud環境に適用されたので、次の移行段階では、オンプレミスのLiferayインストールの設定とカスタムコードの移行を行います。 これは、デプロイ前にプロパティファイル、OSGi設定、カスタムモジュール、テーマ、WARファイルを適切なフォルダーに整理することです。
+データベースとドキュメントライブラリがLiferay Cloud環境に適用されたので、次の移行段階では、オンプレミスのLiferayインストールの設定とカスタムコードの移行を行います。 これは、デプロイ前にプロパティファイル、OSGi設定、カスタムモジュール、テーマ、WARファイルを適切なフォルダーに整理することです。
 
 ## 設定ファイルの整理
 
@@ -10,7 +10,7 @@
 Liferay 固有のコードは `liferay` フォルダに属し、 [Liferay DXP workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html) のように構成されています。
 ```
 
-[クローンしたDXP Cloudプロジェクトリポジトリで](./matching-dxp-versions.md#clone-the-dxp-cloud-repository) 、 `liferay/configs/{ENV}/` フォルダ（DXP Cloud環境に相当）に移動してください。 そしてLiferayの [ポータルのプロパティ](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) ファイルを全て置きます（例.g., `portal-ext.properties`) をそれぞれの環境フォルダに入れます。
+[クローンしたLiferay Cloudプロジェクトリポジトリで](./matching-dxp-versions.md#clone-the-dxp-cloud-repository) 、 `liferay/configs/{ENV}/` フォルダ（Liferay Cloud環境に相当）に移動してください。 そしてLiferayの [ポータルのプロパティ](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) ファイルを全て置きます（例.g., `portal-ext.properties`) をそれぞれの環境フォルダに入れます。
 
 [OSGi 設定](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#osgi-configurations) ファイル (例: `.cfg` または `.config` files) を `osgi /`という適切な環境フォルダ内のサブフォルダに入れてください .
 
@@ -42,7 +42,7 @@ liferay/configs/common/` フォルダに置かれたファイルは、デプロ�
 
 <h2 spaces-before="0">ビルドの作成とデプロイ</h2>
 
-<p spaces-before="0">次に、これらの変更点を含むビルドを作成してデプロイし、DXP Cloud 環境に適用する必要があります。</p>
+<p spaces-before="0">次に、これらの変更点を含むビルドを作成してデプロイし、Liferay Cloud 環境に適用する必要があります。</p>
 
 <h3 spaces-before="0">変更を伴うJenkinsビルドの作成</h3>
 
@@ -56,7 +56,7 @@ liferay/configs/common/` フォルダに置かれたファイルは、デプロ�
 1. 変更内容とメッセージを添えてコミットしてください。
 
     ```bash
-    git commit -m "DXP Cloud Migration Stage 4"
+    git commit -m "Liferay Cloud Migration Stage 4"
     ```
 
 1. 変更をGitHubにプッシュします。
@@ -69,9 +69,9 @@ liferay/configs/common/` フォルダに置かれたファイルは、デプロ�
 
 ### ビルドを選択した環境にデプロイする
 
-最後に、 [DXP Cloud Console](https://console.liferay.cloud/) を使用して、完成したビルドを選択した環境にデプロイします。
+最後に、 [Liferay Cloud Console](https://console.liferay.cloud/) を使用して、完成したビルドを選択した環境にデプロイします。
 
-1. DXP Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
+1. Liferay Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
 
 1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
 

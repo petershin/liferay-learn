@@ -2,13 +2,13 @@
 
 Elasticsearchサービスは、Liferay DXPアプリケーションのテキスト検索エンジンです。 これは、外部のインターネットではなく、アプリケーションの他のサービスとのみ通信するプライベートサービスです。
 
-![図1：Elasticsearchサービスは、DXP Cloudで利用可能ないくつかのサービスのうちの1つです。](./search-service/images/01.png)
+![図1：Elasticsearchサービスは、Liferay Cloudで利用可能ないくつかのサービスのうちの1つです。](./search-service/images/01.png)
 
 詳細は、 [Search service limitations](../reference/platform-limitations.md#search-service) のセクションを参照してください。
 
 ## 設定
 
-DXP Cloudのサービスはデフォルトで適切に機能するように微調整されていますが、Elasticsearchをさらに設定する必要がある場合があります。 これを行うには、 適切な`［configs/{ENV}/config/］`フォルダー内にYMLファイルを含めることができます。 変更をデプロイすると、ファイルが自動的にサービスに挿入され、デフォルトの設定が上書きされます。 以下は、 正しいフォルダー内のそのようなファイルのフォルダー構造の例です：
+Liferay Cloudのサービスはデフォルトで適切に機能するように微調整されていますが、Elasticsearchをさらに設定する必要がある場合があります。 これを行うには、 適切な`［configs/{ENV}/config/］`フォルダー内にYMLファイルを含めることができます。 変更をデプロイすると、ファイルが自動的にサービスに挿入され、デフォルトの設定が上書きされます。 以下は、 正しいフォルダー内のそのようなファイルのフォルダー構造の例です：
 
     search
     ├── configs

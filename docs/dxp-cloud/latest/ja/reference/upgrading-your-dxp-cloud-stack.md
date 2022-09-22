@@ -1,12 +1,12 @@
 # DXPクラウドスタックのアップグレード
 
-DXP Cloudバージョン4の新しい構造を使用するようにリポジトリをアップグレードすると、リポジトリ内でLiferayワークスペースを活用し、サービスを最新の状態に保ち、さまざまな新機能や更新された機能を使用できます。
+Liferay Cloudバージョン4の新しい構造を使用するようにリポジトリをアップグレードすると、リポジトリ内でLiferayワークスペースを活用し、サービスを最新の状態に保ち、さまざまな新機能や更新された機能を使用できます。
 
 新しいリポジトリ構造へのアップグレードには、 [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) の使用が含まれます。
 
 ## アップグレードの準備
 
-DXP Cloudスタックのバージョン4.x.xにアップグレードするには、現在のサービスが3.x.xである必要があります。 現在のバージョンを確認するには、リポジトリでgradle.propertiesファイルを見つけます。 バージョン4.x.xにアップグレードする前のリポジトリは、このような構造になっています：
+Liferay Cloudスタックのバージョン4.x.xにアップグレードするには、現在のサービスが3.x.xである必要があります。 現在のバージョンを確認するには、リポジトリでgradle.propertiesファイルを見つけます。 バージョン4.x.xにアップグレードする前のリポジトリは、このような構造になっています：
 
 ```
 repository
@@ -35,7 +35,7 @@ repository
 liferay.workspace.lcp.liferay.image=liferaycloud/liferay-dxp:7.2.10-sp1-fp4-3.0.19
 ```
 
-Dockerイメージ名の末尾にある数字は、使用しているDXP Cloudスタックのバージョンを示しています。 イメージ名が `3.xx` （この例では、liferay-dxp：7.2.10-sp1-fp4- **3.0.19**）で終わっていることを確認します。
+Dockerイメージ名の末尾にある数字は、使用しているLiferay Cloudスタックのバージョンを示しています。 イメージ名が `3.xx` （この例では、liferay-dxp：7.2.10-sp1-fp4- **3.0.19**）で終わっていることを確認します。
 
 次に、Gitリポジトリがクリーンなブランチ上にあることを確認します。 アップグレードスクリプトは、以前にコミットされていないファイルをコミットし、 `upgrade-workspace`と呼ばれる新しいブランチをチェックアウトします。
 
@@ -47,7 +47,7 @@ Dockerイメージ名の末尾にある数字は、使用しているDXP Cloud�
 
 アップグレードするには、次の手順を実行します：
 
-1. [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) をダウンロードし、ローカルのDXP Cloudリポジトリのルートに抽出します：
+1. [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) をダウンロードし、ローカルのLiferay Cloudリポジトリのルートに抽出します：
 
     ```bash
     curl -L https://github.com/LiferayCloud/stack-upgrade/archive/release.zip -O
@@ -74,7 +74,7 @@ Dockerイメージ名の末尾にある数字は、使用しているDXP Cloud�
     Please enter your project id: lfrlearn
     ```
 
-1. プロンプトで、DXP Cloud Consoleに認証します。
+1. プロンプトで、Liferay Cloud Consoleに認証します。
 
 1. サービスに使用するLiferayバージョンに対応する番号を入力します：
 
@@ -172,9 +172,9 @@ Dockerイメージ名の末尾にある数字は、使用しているDXP Cloud�
     lcp deploy --project=<project-name> --environment=infra
 ```
 
-また、 [開発ワークフロー](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) に従って、DXP Cloud コンソールからビルドとして変更をデプロイすることも可能です。
+また、 [開発ワークフロー](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) に従って、Liferay Cloud コンソールからビルドとして変更をデプロイすることも可能です。
 
-その後、 [新しいサービスバージョンを](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md) 開発環境にデプロイしたり、DXP Cloudサービスの新しいバージョンの新機能を試したりすることができます。 詳細は、[変更点の説明 ](./dxp-cloud-project-changes-in-version-4.md)ご覧ください。
+その後、 [新しいサービスバージョンを](../build-and-deploy/deploying-changes-via-the-dxp-cloud-console.md) 開発環境にデプロイしたり、Liferay Cloudサービスの新しいバージョンの新機能を試したりすることができます。 詳細は、[変更点の説明 ](./dxp-cloud-project-changes-in-version-4.md)ご覧ください。
 
 ## 追加情報
 

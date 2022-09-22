@@ -11,7 +11,7 @@ Articles for each product are written in Markdown (`.md` files) and reside in fo
 | Analytics Cloud | [`./docs/analytics-cloud`](./docs/analytics-cloud) |
 | Commerce | [`./docs/commerce`](./docs/commerce) |
 | DXP | [`./docs/dxp`](./docs/dxp) |
-| DXP Cloud | [`./docs/dxp-cloud`](./docs/dxp-cloud) |
+| Liferay Cloud | [`./docs/liferay-cloud`](./docs/liferay-cloud) |
 
 ## Contributing
 

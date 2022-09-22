@@ -20,9 +20,9 @@
 		<loc>https://learn.liferay.com/dxp/latest/ja/sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
-		<loc>https://learn.liferay.com/dxp-cloud/latest/en/sitemap.xml</loc>
+		<loc>https://learn.liferay.com/liferay-cloud/latest/en/sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
-		<loc>https://learn.liferay.com/dxp-cloud/latest/ja/sitemap.xml</loc>
+		<loc>https://learn.liferay.com/liferay-cloud/latest/ja/sitemap.xml</loc>
 	</sitemap>
 </sitemapindex>

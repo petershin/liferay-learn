@@ -86,8 +86,12 @@ If *Allow Back Orders* is enabled, then all Options are listed in the Product De
 | Field | Description |
 | :--- | :--- |
 | Base Price | Sets a Base Price entry for the SKU |
-| Sale Price | Sets a sale price for the SKU's Base Price entry |
+| Promotion Price | Sets a promotion price for the SKU's Base Price entry |
 | Cost | Sets the SKU cost used for net calculations |
+
+```{note}
+Prior to Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
+```
 
 ### Shipping Override
 

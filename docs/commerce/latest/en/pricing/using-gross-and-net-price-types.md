@@ -34,7 +34,7 @@ You can also set the price type for a Channel. To do so, follow these step:
 
 ## Understanding Gross and Net Price Calculations
 
-If a Price List or promotion contains gross price entries, Commerce calculates the net price by subtracting the taxes from the gross price. The net price is then used to calculate the unit and promo price. Other price modifiers are then applied. The best net price between unit and promo is selected, and the discount (with target product, product groups, categories) is applied.
+If a Price List or promotion contains gross price entries, Commerce calculates the net price by subtracting the taxes from the gross price. The net price is then used to calculate the unit and promotion price. Other price modifiers are then applied. The best net price between unit and promo is selected, and the discount (with target product, product groups, categories) is applied.
 
 If the discount amount is gross, then the net amount is calculated and applied to the net price of the product. When a discount is a *fixed amount*, the taxes are removed from the discount amount before applying the discount calculation algorithm. When discount is a *percentage amount*, the net percentage is recalculated before applying the discount: N = L - T(100-L) with T in %. Taxes are calculated on the final price.
 

@@ -39,7 +39,7 @@ You can also use the Override Discount toggle to give the promotion price preced
 ![You can use the Override Discount toggle in the Promotion's configuration to override any active discounts.](./using-the-promotion-base-list/images/04.png)
 
 ```{note}
-Another way to target an SKU with a promo price is by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and going to *Commerce* &rarr; *Products*. Find and select the product and click the *SKUs* tab. Select the SKU you want to target and set a Sale Price for it. Click *Publish*. This sets the price of the SKU in the Base Promotion List.   
+Another way to target an SKU with a promotion price is by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and going to *Commerce* &rarr; *Products*. Find and select the product and click the *SKUs* tab. Select the SKU you want to target and set a Promotion Price for it. Click *Publish*. This sets the price of the SKU in the Base Promotion List. Prior to Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
 ```
 
 ## Additional Information

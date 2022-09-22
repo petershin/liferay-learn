@@ -14,13 +14,17 @@ Follow these steps to assign a price to a SKU:
 
 1. In the *Details* tab, enter the desired value in the *Base Price* field under *Pricing*.
 
-   Optionally, you can also set a *Sale Price* and *Cost* for the SKU.
+   Optionally, you can also set a *Promotion Price* and *Cost* for the SKU.
 
    ![Set the product's base price.](./setting-a-products-base-price/images/01.png)
 
+   ```{note}
+   Prior to Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
+   ```
+
 1. Click on *Publish*.
 
-The SKU’s base price and any other entered values are now set. You can directly edit this amount at any time or modify it using Price Lists, promo prices, and discounts.
+The SKU’s base price and any other entered values are now set. You can directly edit this amount at any time or modify it using Price Lists, promotion prices, and discounts.
 
 ## Commerce 2.1 and Below
 

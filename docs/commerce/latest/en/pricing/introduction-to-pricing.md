@@ -36,9 +36,13 @@ Custom Price Lists store price entries for specific Products and are made availa
 
 ### Promotion Lists
 
-Custom Promotion Lists store sale price entries for specific Products and are made available only to eligible customers. These lists can use a different currency from the Base Price List and only include manually selected Products. When applied, they override an SKU's other price entries (e.g., base prices, tiered prices) for eligible users. In these lists, you also define [Price Modifiers](./using-price-modifiers.md) to modify specific price entries. While active, both the original price and promotional price appear together on the Product page so that buyers see the markdown. See [Creating a Promotion](./promoting-products/creating-a-promotion.md) for more information.
+Custom Promotion Lists store promotion price entries for specific Products and are made available only to eligible customers. These lists can use a different currency from the Base Price List and only include manually selected Products. When applied, they override an SKU's other price entries (e.g., base prices, tiered prices) for eligible users. In these lists, you also define [Price Modifiers](./using-price-modifiers.md) to modify specific price entries. While active, both the original price and promotional price appear together on the Product page so that buyers see the markdown. See [Creating a Promotion](./promoting-products/creating-a-promotion.md) for more information.
 
-   ![Use custom Promotion Lists to store targeted sale price entries.](./introduction-to-pricing/images/05.png)
+   ![Use custom Promotion Lists to store targeted promotion price entries.](./introduction-to-pricing/images/05.png)
+
+```{note}
+Prior to Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
+```
 
 ### Price Tiers
 
@@ -52,7 +56,7 @@ Discounts are applied on top a price and modify it without superseding it. They 
 
 ## How Commerce Calculates Product Prices
 
-Commerce's pricing algorithm determines how each pricing component contributes to an SKU's price in a Channel. When the algorithm receives a price request, Commerce first calculates the Product's *unit price* and *promo price*. These prices are then used to determine the *final price* made available to the Channel customer.
+Commerce's pricing algorithm determines how each pricing component contributes to an SKU's price in a Channel. When the algorithm receives a price request, Commerce first calculates the Product's *unit price* and *promotion price*. These prices are then used to determine the *final price* made available to the Channel customer.
 <!--TASK: Consider adding details about net/gross price types and how taxes are calculated-->
 
 ### Calculating an SKU's Unit Price
@@ -71,17 +75,17 @@ When calculating an SKU's unit price, Commerce first searches for any Price List
 During this process, Commerce also checks for applicable tier prices. If one exists, its price is used in place of the default list price for specific quantities.
 ```
 
-### Calculating an SKU's Promo Price
+### Calculating an SKU's Promotion Price
 
-After calculating the SKU's unit Price, Commerce calculates the SKU's promo price. This calculation is essentially the same as the process for calculating the unit price with two exceptions:
+After calculating the SKU's unit Price, Commerce calculates the SKU's promotion price. This calculation is essentially the same as the process for calculating the unit price with two exceptions:
 
-* If an applicable Promotion List does not have a price entry for the SKU, any existing price modifiers are applied to the unit price, and the total is used for the promo price.
+* If an applicable Promotion List does not have a price entry for the SKU, any existing price modifiers are applied to the unit price, and the total is used for the promotion price.
 
-* If there is no applicable Promotion List and the Base Promotion List is set to 0, the promo price is set to 0.
+* If there is no applicable Promotion List and the Base Promotion List is set to 0, the promotion price is set to 0.
 
 ### Calculating an SKU's Final Price
 
-Once the unit and promo prices have been calculated, Commerce compares the two prices and selects the better of the two. The pricing algorithm then searches for all applicable discounts and applies them to the best SKU price. The total is the SKU's final price--the price used by the customer to purchase the product.
+Once the unit and promotion prices have been calculated, Commerce compares the two prices and selects the better of the two. The pricing algorithm then searches for all applicable discounts and applies them to the best SKU price. The total is the SKU's final price--the price used by the customer to purchase the product.
 
 ## How Commerce Calculates Order Prices
 
@@ -102,7 +106,7 @@ Finally, Commerce adds together the discounted shipping cost and discounted subt
 | Discount | Modifies price for a group of Products or buyers (Can limit quantity and use coupon codes) | No | Discounts | Selected Buyers (Accounts & Account Groups or those who meet certain qualifications) | Groups of Products (or Individual Product SKUs) |
 
 ```{note}
-In the Commerce Pricing Engine v1.0, price entries include three components: an SKU, a standard price, and a promo price. In v2.0, each is a separate entity.
+In the Commerce Pricing Engine v1.0, price entries include three components: an SKU, a standard price, and a promotion price. In v2.0, each is a separate entity.
 ```
 
 ![Pricing Hierarchy Diagram](./introduction-to-pricing/images/01.png)

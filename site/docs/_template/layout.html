@@ -55,7 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {% trans %}Help Center{% endtrans %}
         </a>
 
-        {% if pagename != 'index' and pagename != 'search' %}
+        {% if pagename != 'search' %}
         <div class="searchbox" id="searchbox" role="search">
             {% include "searchbox.html" %}
         </div>
@@ -63,7 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 
     <div class="d-lg-none mobile-menu-wrapper" id="mobileMenuWrapper">
-        {% if pagename != 'index' and pagename != 'search' %}
+        {% if pagename != 'search' %}
         <div class="searchbox" id="mobileSearchbox" role="search">
             {% include "mobile-searchbox.html" %}
         </div>

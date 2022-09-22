@@ -14,6 +14,10 @@
 
 廃止されたデータが削除されます。
 
+注：設定を [設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)に保存するには、 **Actions** メニューをクリックし、 **Export** を選択します。
+
+この `com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration.config` 設定ファイルをサーバー起動時に使用し、古いデータを削除します。 ファイル内の `removeExpiredJournalArticles` キーに `true` を設定します。 データ削除後、 `osgi/configs` フォルダから設定ファイルを削除し、以後のサーバー起動時にファイルが実行されないようにする。
+
 ## 追加情報
 
 * [データ初期化](./data-cleanup.md)

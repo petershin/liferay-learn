@@ -17,7 +17,7 @@
 * [トークンベースのソリューション](./configuring-sso/token-based-authentication.md)
 * [OAuth 2.0](../../headless-delivery/using-oauth2/using-oauth2.md)
 
-[認証検証](./securing-web-services/using-authentication-verifiers.md)はリモートアプリケーションの認証を管理でき、[認証パイプライン](../../building-applications/README.md)はユーザーが1つまたは複数のシステムによって検証される方法を定義します。
+[認証検証](./securing-web-services/using-authentication-verifiers.md)はリモートアプリケーションの認証を管理でき、[認証パイプライン](../../building-applications.md)はユーザーが1つまたは複数のシステムによって検証される方法を定義します。
 
 ## 認証の種類
 
@@ -47,7 +47,7 @@
 
 ### プロパティを使用して認証の種類を設定する
 
-[`portal-ext.properties`](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) ファイルを使用するには、以下のプロパティに貼り付け、目的の認証の種類のコメントを解除します。
+[`portal-ext.properties`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) ファイルを使用するには、以下のプロパティに貼り付け、目的の認証の種類のコメントを解除します。
 
 ```properties
 company.security.auth.type=emailAddress
@@ -73,7 +73,7 @@ company.security.auth.type=emailAddress
 
 ユーザーが自分のパスワードをリセットできないようにする必要がある場合は、同じ画面から設定できます。
 
-1. ［コントロールパネル］ &rarr; ［**設定**］ &rarr; ［**Instance Settings**］ &rarr; ［**プラットフォーム**］ &rarr; ［**ユーザー認証**］ に移動します。
+1. ［Control Panel］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**プラットフォーム**］ &rarr; ［**User Authentication**］ に移動します。
 1. ［**Allow users to request password reset links?**］ をオフにします。
 1. ［**保存**］ をクリックします。
 

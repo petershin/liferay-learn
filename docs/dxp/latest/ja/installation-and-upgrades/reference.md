@@ -6,8 +6,8 @@ toc:
 - ./reference/liferay-home.md
 - ./reference/portal-properties.md
 - ./reference/system-properties.md
+- ./reference/liferay-software-versions.md
 ---
-
 # リファレンス
 
 ```{toctree}
@@ -19,6 +19,7 @@ reference/jvm-configuration.md
 reference/liferay-home.md
 reference/portal-properties.md
 reference/system-properties.md
+reference/liferay-software-versions.md
 ```
 
 * [データベース設定](./reference/database-configurations.md)
@@ -27,3 +28,4 @@ reference/system-properties.md
 * [Liferay Home](./reference/liferay-home.md)
 * [ポータルプロパティ](./reference/portal-properties.md)
 * [システムプロパティ](./reference/system-properties.md)
+* [Liferayソフトウェアバージョン](./reference/liferay-software-versions.md)

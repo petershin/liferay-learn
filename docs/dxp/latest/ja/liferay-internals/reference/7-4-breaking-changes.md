@@ -14,7 +14,7 @@
 
 ## liferay-ui:flashタグを削除
 - **日付：** 2020年10月13日
-- **JIRAチケット：**[LPS-121732](https://issues.liferay.com/browse/LPS-121732)
+- **JIRAチケット：** [LPS-121732](https://issues.liferay.com/browse/LPS-121732)
 
 ### 変更点
 
@@ -36,7 +36,7 @@
 
 ## /portal/flashパスの削除
 - **日付：** 2020年10月13日
-- **JIRAチケット：**[LPS-121733](https://issues.liferay.com/browse/LPS-121733)
+- **JIRAチケット：** [LPS-121733](https://issues.liferay.com/browse/LPS-121733)
 
 ### 変更点
 
@@ -60,7 +60,7 @@
 
 ## swfobject AUIモジュールの削除
 - **日付：** 2020年10月13日
-- **JIRAチケット：**[LPS-121736](https://issues.liferay.com/browse/LPS-121736)
+- **JIRAチケット：** [LPS-121736](https://issues.liferay.com/browse/LPS-121736)
 
 ### 変更点
 
@@ -82,7 +82,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 
 ## AssetEntries_AssetCategoriesテーブルと対応するコードを削除
 - **日付：** 2020年10月16日
-- **JIRAチケット：**[LPS-89065](https://issues.liferay.com/browse/LPS-89065)
+- **JIRAチケット：** [LPS-89065](https://issues.liferay.com/browse/LPS-89065)
 
 ### 変更点
 
@@ -106,7 +106,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 
 ## AntivirusScannerのサポートとClamdの統合をリファクタリング
 - **日付：** 2020年10月21日
-- **JIRAチケット：**[LPS-122280](https://issues.liferay.com/browse/LPS-122280)
+- **JIRAチケット：** [LPS-122280](https://issues.liferay.com/browse/LPS-122280)
 
 ### 変更点
 
@@ -130,7 +130,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 
 ## エンティティ表示ページ登録追跡ロジックを変更
 - **日付：** 2020年10月27日
-- **JIRAチケット：**[LPS-122275](https://issues.liferay.com/browse/LPS-122275)
+- **JIRAチケット：** [LPS-122275](https://issues.liferay.com/browse/LPS-122275)
 
 ### 変更点
 
@@ -158,7 +158,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 
 ## 廃止予定および未使用のJSPタグを削除
 - **日付：** 2020年11月24日
-- **JIRAチケット：**[LPS-112476](https://issues.liferay.com/browse/LPS-112476)
+- **JIRAチケット：** [LPS-112476](https://issues.liferay.com/browse/LPS-112476)
 
 ### 変更点
 
@@ -193,7 +193,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 
 ## .container-fluid-1280 CSSクラスを置き換え
 - **日付：** 2020年11月24日
-- **JIRAチケット：**[LPS-123894](https://issues.liferay.com/browse/LPS-123894)
+- **JIRAチケット：** [LPS-123894](https://issues.liferay.com/browse/LPS-123894)
 
 ### 変更点
 
@@ -215,7 +215,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 
 ## CSSおよびJavaScriptリソースのランタイム縮小化をデフォルトで無効化
 - **日付：** 2020年11月27日
-- **JIRAチケット：**[LPS-123550](https://issues.liferay.com/browse/LPS-123550)
+- **JIRAチケット：** [LPS-123550](https://issues.liferay.com/browse/LPS-123550)
 
 ### 変更点
 
@@ -237,7 +237,7 @@ AUIモジュールの`swfobject`は削除されました。 これは、Adobe Fl
 
 ## SoyPortletクラスを削除
 - **日付：** 2020年12月9日
-- **JIRAチケット：**[LPS-122955](https://issues.liferay.com/browse/LPS-122955)
+- **JIRAチケット：** [LPS-122955](https://issues.liferay.com/browse/LPS-122955)
 
 ### 変更点
 
@@ -263,7 +263,7 @@ JSPを使用する`MVCPortlet`などの確立されたアーキテクチャ、�
 
 ## サーバー側のClosure Templates（Soy）のサポートを削除
 - **日付：** 2020年12月14日
-- **JIRAチケット：**[LPS-122956](https://issues.liferay.com/browse/LPS-122956)
+- **JIRAチケット：** [LPS-122956](https://issues.liferay.com/browse/LPS-122956)
 
 ### 変更点
 
@@ -300,7 +300,7 @@ JSPを使用する`MVCPortlet`などの確立されたアーキテクチャ、�
 
 ## com.liferay.portal.kernel.model.PortletPreferencesメソッド、getPreferencesおよびsetPreferencesを削除
 - **日付：** 2020年12月20日
-- **JIRAチケット：**[LPS-122562](https://issues.liferay.com/browse/LPS-122562)
+- **JIRAチケット：** [LPS-122562](https://issues.liferay.com/browse/LPS-122562)
 
 ### 変更点
 
@@ -322,7 +322,7 @@ JSPを使用する`MVCPortlet`などの確立されたアーキテクチャ、�
 
 ## CSS互換性レイヤーを削除
 - **日付：** 2021年1月02日
-- **JIRAチケット：**[LPS-123359](https://issues.liferay.com/browse/LPS-123359)
+- **JIRAチケット：** [LPS-123359](https://issues.liferay.com/browse/LPS-123359)
 
 ### 変更点
 
@@ -344,7 +344,7 @@ Clayマークアップを使用している場合は、最新の [Clayコンポ�
 
 ## Log4j XML定義ファイルからspi.idプロパティを削除
 - **日付：** 2021年1月19日
-- **JIRAチケット：**[LPS-125998](https://issues.liferay.com/browse/LPS-125998)
+- **JIRAチケット：** [LPS-125998](https://issues.liferay.com/browse/LPS-125998)
 
 ### 変更点
 
@@ -366,7 +366,7 @@ SPIが [LPS-110758](https://issues.liferay.com/browse/LPS-110758) によって�
 
 ## frontend-taglib-clayタグから廃止予定の属性を削除
 - **日付：** 2021年1月26日
-- **JIRAチケット：**[LPS-125256](https://issues.liferay.com/browse/LPS-125256)
+- **JIRAチケット：** [LPS-125256](https://issues.liferay.com/browse/LPS-125256)
 
 ### 変更点
 
@@ -384,7 +384,7 @@ SPIが [LPS-110758](https://issues.liferay.com/browse/LPS-110758) によって�
 
 ## HTMLタグのブール属性の処理を変更
 - **日付：** 2021年2月18日
-- **JIRAチケット：**[LPS-127832](https://issues.liferay.com/browse/LPS-127832)
+- **JIRAチケット：** [LPS-127832](https://issues.liferay.com/browse/LPS-127832)
 
 ### 変更点
 
@@ -434,7 +434,7 @@ DOMに存在させたいブール属性に`true`値を渡すようにしてく�
 
 ## com.liferay.portal.kernel.model.PortalPreferencesメソッド、getPreferencesおよびsetPreferencesを削除
 - **日付：** 2020年3月31日
-- **JIRAチケット：**[LPS-124338](https://issues.liferay.com/browse/LPS-124338)
+- **JIRAチケット：** [LPS-124338](https://issues.liferay.com/browse/LPS-124338)
 
 ### 変更点
 
@@ -456,7 +456,7 @@ DOMに存在させたいブール属性に`true`値を渡すようにしてく�
 
 ## item-selector-taglibはcoverImage関連のイベントを起動しなくなりました
 - **日付：** 2021年4月15日
-- **JIRAチケット：**[LPS-130359](https://issues.liferay.com/browse/LPS-130359)
+- **JIRAチケット：** [LPS-130359](https://issues.liferay.com/browse/LPS-130359)
 
 ### 変更点
 
@@ -478,7 +478,7 @@ DOMに存在させたいブール属性に`true`値を渡すようにしてく�
 
 ## OAuth 2.0トークンインストロスペクション機能識別子を変更
 - **日付：** 2021年5月4日
-- **JIRAチケット：**[LPS-131573](https://issues.liferay.com/browse/LPS-131573)
+- **JIRAチケット：** [LPS-131573](https://issues.liferay.com/browse/LPS-131573)
 
 ### 変更点
 
@@ -503,7 +503,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 
 ## JournalArticleのコンテンツ項目を削除
 - **日付：** 2021年5月21日
-- **JIRAチケット：**[LPS-129058](https://issues.liferay.com/browse/LPS-129058)
+- **JIRAチケット：** [LPS-129058](https://issues.liferay.com/browse/LPS-129058)
 
 ### 変更点
 
@@ -525,7 +525,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 
 ## com.liferay.portal.kernel.util.StringBundlerをcom.liferay.petra.string.StringBundlerに置き換え
 - **日付：** 2021年6月25日
-- **JIRAチケット：**[LPS-133200](https://issues.liferay.com/browse/LPS-133200)
+- **JIRAチケット：** [LPS-133200](https://issues.liferay.com/browse/LPS-133200)
 
 ### 変更点
 
@@ -566,7 +566,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 
 ## UserLocalService関連のクラスがパブリックAPIを変更しました
 - **日付：** 2021年7月7日
-- **JIRAチケット：**[LPS-134096](https://issues.liferay.com/browse/LPS-134096)
+- **JIRAチケット：** [LPS-134096](https://issues.liferay.com/browse/LPS-134096)
 
 ### 変更点
 
@@ -601,7 +601,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 
 ## frontend-css-web CSSモジュールを削除
 - **日付：** 2021年8月2日
-- **JIRAチケット：**[LPS-127085](https://issues.liferay.com/browse/LPS-127085)
+- **JIRAチケット：** [LPS-127085](https://issues.liferay.com/browse/LPS-127085)
 
 ### 変更点
 
@@ -653,7 +653,7 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 
 ## 一部のSanitizedServletResponse静的メソッド、HttpHeaders X **XSS** PROTECTION定数、およびhttp.header.secure.x.xss.protectionポータルプロパティを削除
 - **日付：** 2021年8月5日
-- **JIRAチケット：**[LPS-134188](https://issues.liferay.com/browse/LPS-134188)
+- **JIRAチケット：** [LPS-134188](https://issues.liferay.com/browse/LPS-134188)
 
 ### 変更点
 
@@ -692,7 +692,7 @@ X-Xss-Protectionヘッダーは、最新のブラウザではサポートされ�
 
 ## OpenIdConnectServiceHandlerインターフェイスをOpenIdConnectAuthenticationHandlerに置き換え
 - **日付：** 2021年8月9日
-- **JIRAチケット：**[LPS-124898](https://issues.liferay.com/browse/LPS-124898)
+- **JIRAチケット：** [LPS-124898](https://issues.liferay.com/browse/LPS-124898)
 
 ### 変更点
 
@@ -755,7 +755,7 @@ portal.security.sso.openid.connect.OpenIdConnectAuthenticationHandler
 
 ## CAS SSOモジュールをportal-security-sso-casプロジェクトに移動
 - **日付：** 2021年9月15日
-- **JIRAチケット：**[LPS-88905](https://issues.liferay.com/browse/LPS-88905)
+- **JIRAチケット：** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
 
 ### 変更点
 
@@ -777,7 +777,7 @@ CAS SSOモジュールは、`portal-security-sso`プロジェクトから`portal
 
 ## clay:selectタグの名前に印刷用の属性のネームスペースを指定
 - **日付：** 2021年9月15日
-- **JIRAチケット：**[LPS-139131](https://issues.liferay.com/browse/LPS-139131)
+- **JIRAチケット：** [LPS-139131](https://issues.liferay.com/browse/LPS-139131)
 
 ### 変更点
 
@@ -801,7 +801,7 @@ CAS SSOモジュールは、`portal-security-sso`プロジェクトから`portal
 
 ## コアレジストリAPIおよびレジストリ実装モジュールを削除
 - **日付：** 2021年9月28日
-- **JIRAチケット：**[LPS-138126](https://issues.liferay.com/browse/LPS-138126)
+- **JIRAチケット：** [LPS-138126](https://issues.liferay.com/browse/LPS-138126)
 
 ### 変更点
 
@@ -823,7 +823,7 @@ CAS SSOモジュールは、`portal-security-sso`プロジェクトから`portal
 
 ## ドキュメントタイプにおけるWebコンテンツのサポートが削除されました
 - **日付:** 2021年9月30日
-- **JIRAチケット：**[LPS-139710](https://issues.liferay.com/browse/LPS-139710)
+- **JIRAチケット：** [LPS-139710](https://issues.liferay.com/browse/LPS-139710)
 
 ### 変更点
 
@@ -846,7 +846,7 @@ Webコンテンツフィールドのドキュメントタイプは、ドキュ�
 ## OpenID Connect プロバイダーの署名アルゴリズムが RS256 と異なる場合、設定する必要があります
 
 - **日付：** 2021年9月30日
-- **JIRAチケット：**[LPS-138756](https://issues.liferay.com/browse/LPS-138756)
+- **JIRAチケット：** [LPS-138756](https://issues.liferay.com/browse/LPS-138756)
 
 ### 変更点
 
@@ -869,7 +869,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 ## サービスXMLファイルを持つサービスモジュールフォルダにサービスビルダータスクを制限しました。
 
 - **日付：** 2021年11月02日
-- **JIRAチケット：**[LPS-129696](https://issues.liferay.com/browse/LPS-129696)
+- **JIRAチケット：** [LPS-129696](https://issues.liferay.com/browse/LPS-129696)
 
 ### 変更点
 
@@ -892,7 +892,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 ## FragmentEntryLocalServiceとFragmentEntryServiceのaddFragmentEntryメソッドを更新しました。
 
 - **日付：** 2021年12月16日
-- **JIRAチケット：**[LPS-125034](https://issues.liferay.com/browse/LPS-125034)
+- **JIRAチケット：** [LPS-125034](https://issues.liferay.com/browse/LPS-125034)
 
 ### 変更点
 
@@ -914,7 +914,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 
 ## FragmentEntryProcessorContext、DefaultFragmentEntryProcessorContext、FragmentRendererContext、DefaultFragmentRendererContextのgetSegmentsExperienceIdsメソッドが削除されました。
 - **日付：** 2021年12月17日
-- **JIRAチケット：**[LPS-141471](https://issues.liferay.com/browse/LPS-141471)
+- **JIRAチケット：** [LPS-141471](https://issues.liferay.com/browse/LPS-141471)
 
 ### 変更点
 
@@ -936,21 +936,21 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 
 ## ポータルのプロパティからリダイレクトURLが削除されました。
 - **日付：** 2022年5月24日
-- **JIRAチケット：**[LPS-128837](https://issues.liferay.com/browse/LPS-128837)
+- **JIRAチケット：** [LPS-128837](https://issues.liferay.com/browse/LPS-128837)
 
 ### 変更点
 
-リダイレクトURLの設定は、ポータルのプロパティから設定できなくなりました。 UIの「インスタンス設定」の「 [Redirect URLs](../../system-administration/configuring-liferay/virtual-instances/redirect-urls.md) 」で設定することができます。
+リダイレクトURLの設定は、ポータルのプロパティから設定できなくなりました。 UIの「インスタンス設定」の「 [リダイレクト URL](../../system-administration/configuring-liferay/virtual-instances/redirect-urls.md) 」で設定することができます。
 
 ### 影響を受ける人
 
 この問題は、ポータルのプロパティを使用してリダイレクトURLを設定している人に影響します。
 
-### コードを更新するにはどうすればよいですか？
+### コードの更新方法
 
-UIの「インスタンス設定」の「 [Redirect URLs](../../system-administration/configuring-liferay/virtual-instances/redirect-urls.md) 」で必要な設定を行ってください。
+UIの「インスタンス設定」の「 [リダイレクト URL](../../system-administration/configuring-liferay/virtual-instances/redirect-urls.md) 」で必要な設定を行ってください。
 
-### なぜこの変更が行われたのですか？
+### 変更が行われた理由
 
 この変更は、管理者がLiferayインスタンスごとにリダイレクトURLの設定を個別に行えるようにするために行われました。
 
@@ -958,9 +958,9 @@ UIの「インスタンス設定」の「 [Redirect URLs](../../system-administr
 
 ## ポータルLibsクリーンアップ
 - **日付** 2022-May-26
-- **JIRA チケット**[LPS-142130](https://issues.liferay.com/browse/LPS-142130)
+- **JIRA チケット** [LPS-142130](https://issues.liferay.com/browse/LPS-142130)
 
-### 削除しました
+### 削除済み
 
 - abdera.jar, axiom-api.jar, axiom-impl.jar - [LPS-142131](https://issues.liferay.com/browse/LPS-142131)
 - xuggle-xuggler-noarch.jar - [LPS-143939](https://issues.liferay.com/browse/LPS-143939) 注：FFmpegがXugglerを置き換えた。 詳しくは、 [Enabling FFmpeg for Audio and View Previews](../../content-authoring-and-management/documents-and-media/devops/enabling-ffmpeg-for-audio-and-video-previews.md) をご覧ください。
@@ -1048,5 +1048,34 @@ UIの「インスタンス設定」の「 [Redirect URLs](../../system-administr
 ### なぜ、このような変更を行ったのですか？
 
 この変更は、メンテナンスが終了した古いライブラリの脆弱性に対応するために行われたものです。
+
+---------------------------------------
+
+## Elasticsearch のソート可能なタイプマッピングが keyword から icu **collation** keyword に変更されました。
+
+- **日付：** 2022年5月12日
+- **JIRAチケット：** [LPS-152937](https://issues.liferay.com/browse/LPS-152937)
+
+### 変更点
+
+ローカライズされたソート可能な `*_<languageId>_sortable` とネストされた `ddmFieldArray.ddmFieldValueText_<languageId>_String_sortable` フィールドの Elasticsearch タイプマッピングは `keyword` から `icu_collation_keyword`へ変更された。
+
+これらのフィールドの索引情報を符号化して保存するようになった。 例えば、 `エンティティタイトル` のテキストが、 `MkRQOlBaBFA6UEAyARABEAA=`として格納されるようになった。
+
+この新しい `icu_collation_keyword` タイプは、各言語の正しい照合規則を使用してソートすることができます。 詳しくは、 <https://www.elastic.co/guide/en/elasticsearch/plugins/7.17/analysis-icu-collation-keyword-field.html>をご覧ください。
+
+既存のLiferayインストールを更新した場合、完全な再インデックスが実行され、Elasticsearchマッピングが再作成されたときに、新しいマッピングが有効になります。
+
+### 影響を受ける人
+
+`*_<languageId>_sortable` と `ddmFieldArray.ddmFieldValueText_<languageId>_String_sortable` フィールドをカスタムElasticsearchクエリで使用している場合。
+   - **ソートされた結果** を見ると、各言語の正しい照合規則で結果がソートされていることがわかります。
+   - **Elasticsearch インデックス** から情報を取得する場合、情報がエンコードされた形式で返されるようになったことがわかります。
+
+### コードの更新方法
+
+古いソートの動作を維持したい場合は、Elasticsearch マッピングをカスタマイズして、 `icu_collation_keyword`を削除する必要があります。 マッピングの設定方法の詳細については、https://learn.liferay.com/dxp/latest/en/using-search/installing-and-upgrading-a-search-engine/elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.html を参照してください。
+
+これらのフィールドからデータを取得するには、Elasticsearchの `_source` フィールドから同じ情報を取得します。 <https://www.elastic.co/guide/en/elasticsearch/reference/7.17/mapping-source-field.html>. または、前項で説明したように、 `icu_collation_keyword` を削除してください。
 
 ---------------------------------------

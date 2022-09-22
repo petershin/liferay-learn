@@ -6,22 +6,23 @@
 
 ![DDMストレージアダプターを使用して、フォームアプリケーションにストレージタイプを追加します。](./writing-a-form-storage-adapter/images/01.png)
 
-最初に、 [デフォルトのストレージアダプター](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/JSONDDMStorageAdapter.java) がフォームレコードをLiferay DXPのデータベースにJSONコンテンツとして保存する方法を確認します。 そして、各フォームレコードをファイルシステムに保存するロジックを追加します。
+まず、 [デフォルトのストレージアダプタ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/DefaultDDMStorageAdapter.java) が Liferay DXP データベースのフォームレコードを JSON コンテンツとして保存する様子をご覧いただきます。 そして、各フォームレコードをファイルシステムに保存するロジックを追加します。
 
 ## 実行中のDDMストレージアダプターを調べる
 
 ストレージアダプターの動作を確認するために、サンプルをデプロイし、サンプルアダプターを使用していくつかのフォームデータを追加します。
 
 ### サンプルをデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順に従います:
 
-1. ダウンロードし、解凍してください [the DDM Storage Adapter project](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) .
+1. [DDM Storage Adapter プロジェクト](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-r2f1.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
     ```
 
     ```bash
@@ -72,7 +73,7 @@
 
 ## 拡張ポイントを理解する
 
-この例には、`R2F1DDMStorageAdapter`という1つのクラスのみが含まれています。これは、フォームエントリーを格納するためのロジックを提供する`DDMStorageAdapter`を実装しているサービスです。  今のところ、デプロイされた例は、デフォルトのJSON実装`JSONDDMStorageAdapter`をラップしているだけです。 後で、すでにここにあるコードにファイルシステムのストレージを追加します。
+この例には、`R2F1DDMStorageAdapter`という1つのクラスのみが含まれています。これは、フォームエントリーを格納するためのロジックを提供する`DDMStorageAdapter`を実装しているサービスです。  配置された例では、現在、デフォルトの JSON の実装をラップしているだけです。 `DefaultDDMStorageAdapter`. 後で、すでにここにあるコードにファイルシステムのストレージを追加します。
 
 ### アダプタークラスをOSGiコンテナに登録する
 
@@ -96,7 +97,7 @@ public class R2F1DDMStorageAdapter implements DDMStorageAdapter {
 
 ```java
 @Reference(target = "(ddm.storage.adapter.type=r2f1-ddm-storage-adapter)")
-private DDMStorageAdapter jsonWrapperDDMStorageAdapter;
+private DDMStorageAdapter defaultWrapperDDMStorageAdapter;
 ```
 
 ### DDMStorageAdapterインターフェイスを理解する
@@ -121,7 +122,7 @@ public DDMStorageAdapterSaveResponse save(
     throws StorageException;
 ```
 
-各メソッドは、 **DDMStorageAdapter[ [保存](https://github.com/liferay/liferay-portal/blob/[$LIFERAY** LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java) / [取得](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java) / [削除](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java) ]レスポンス_ オブジェクトを返さなければなりません。静的なインナー `Builder` クラスの `newBuilder` メソッドを使用して構築されます。
+各メソッドは、 **DDMStorageAdapter[ [Save](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java) / [Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java) / [Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java) ]レスポンス** オブジェクトを返さなければなりません。静的なインナー `Builder` クラスの `newBuilder` メソッドを使用して構築されます。
 
 すべてのメソッドに`DDMStorageAdapter［Save/Delete/Get］Request`が渡されます。 リクエストオブジェクトには、有用なコンテキスト情報を返すgetterメソッドが含まれています。
 
@@ -271,17 +272,17 @@ private static final Log _log = LogFactoryUtil.getLog(
 1. このロジックと`_saveFile`への呼び出しを、既存の`return`ステートメントを置き換えて`save`メソッドに追加します。
 
    ```java
-    DDMStorageAdapterSaveResponse jsonStorageAdapterSaveResponse =
-        _jsonStorageAdapter.save(ddmStorageAdapterSaveRequest);
+    DDMStorageAdapterSaveResponse defaultStorageAdapterSaveResponse =
+        _defaultStorageAdapter.save(ddmStorageAdapterSaveRequest);
 
-    long fileId = jsonStorageAdapterSaveResponse.getPrimaryKey();
+    long fileId = defaultStorageAdapterSaveResponse.getPrimaryKey();
 
     _saveFile(fileId, ddmStorageAdapterSaveRequest.getDDMFormValues());
 
-    return jsonStorageAdapterSaveResponse;
+    return defaultStorageAdapterSaveResponse;
    ```
 
-   `_jsonStorageAdapter.save`の呼び出しが最初に行われ、新しいフォームエントリー用にプライマリーキーが作成されます。 このプライマリーキーは、`fielId`を作成するために`Response`オブジェクトから取得されます。
+   `_defaultStorageAdapter.save` の呼び出しが最初に行われ、新しいフォーム項目に対して主キーが作成されるようにします。 このプライマリーキーは、`fielId`を作成するために`Response`オブジェクトから取得されます。
 
 ## ストレージアダプターをデプロイしてテストする
 

@@ -17,7 +17,7 @@ Forms アプリケーションには、高度に設定可能な [フィールド
 
 - **プロジェクトの互換性** サンプルプロジェクトはLiferay 7.4で動作しています。 Liferay 7.3 を実行している場合、ソースコードは互換性がありますが、 [Workspace プロジェクト](../../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md) を Liferay 7.3 用に再設定する必要があります。 そのための手順が、以下のインストラクションに記載されています。
 
-    Liferay 7.2 をお使いの場合、サポートされるフロントエンドフレームワークの違いにより、このソースコードは動作しません。 C2P9 Sliderのコードサンプルを7.2用に適合させる方法については、 [Developing a Custom Form Field for Liferay 7.2](./developing-a-custom-form-field-for-liferay-7-2.md) を参照してください。
+    Liferay 7.2 をお使いの場合、サポートされるフロントエンドフレームワークの違いにより、このソースコードは動作しません。 C2P9 Sliderのコードサンプルを7.2用に適合させる方法については、 [Liferay 7.2のカスタムフォーム項目の開発](./developing-a-custom-form-field-for-liferay-7-2.md) を参照してください。
 ```
 
 ## Liferay のカスタムフォームフィールドを検証する

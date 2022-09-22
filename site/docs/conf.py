@@ -66,14 +66,14 @@ class WithRootSiteHTMLBuilder(StandaloneHTMLBuilder):
     def get_doc_context(self, docname, body, metatags):
         doc_context = super().get_doc_context(docname, body, metatags)
 
-        if docname != "README":
-            # Set the README.md on the root level as the "fake" parent
-            # ie: docs/commerce/README.md
-            site_parent = self.get_relative_uri(docname, "README")
+        if docname != "index":
+            # Set the index.md on the root level as the "fake" parent
+            # ie: docs/commerce/index.md
+            site_parent = self.get_relative_uri(docname, "index")
 
             # Set the document title as site title
             # ie: Commerce or DXP Cloud, etc
-            site_title = self.render_partial(self.env.titles["README"])["title"]
+            site_title = self.render_partial(self.env.titles["index"])["title"]
 
             # Add the "fake" parent to the parents object, so that "DXP", "Commerce", etc.
             # is visible in the breadcrumbs

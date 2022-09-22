@@ -187,24 +187,7 @@ function generate_static_html {
 		do
 			sed -i '/github\.com\/liferay\/liferay\-learn/ ! s/.md"/.html"/g' ${html_file_name}
 			sed -i 's/.md#/.html#/g' ${html_file_name}
-			sed -i 's/README.html"/index.html"/g' ${html_file_name}
-			sed -i 's/README.html#/index.html#/g' ${html_file_name}
 		done
-
-		#
-		# Rename README.html to index.html.
-		#
-
-		for readme_file_name in $(find build/output/"${product_version_language_dir_name}" -name *README.html -type f)
-		do
-			mv "${readme_file_name}" "$(dirname "${readme_file_name}")"/index.html
-		done
-
-		#
-		# Update search references for README.html to index.html.
-		#
-
-		sed -i 's/README"/index"/g' build/output/"${product_version_language_dir_name}"/searchindex.js
 
 		#
 		# Make ZIP files.

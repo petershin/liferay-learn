@@ -41,32 +41,15 @@ javac -classpath .:* *.java
 
 Note that the project includes the `com.liferay.headless.delivery.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-## Using WikiNode and WikiPage Headless APIs
-
-The sample code includes cURL scripts and Java classes that call the following APIs.
-
-| Service | HTTP Method | HTTP Endpoint | Java Method | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| WikiNode | `POST` | `/v1.0/sites/{siteId}/wiki-nodes` | `postSiteWikiNode` | Creates a new Wiki node in the specified Site using the details provided in the API call |
-| WikiNode | `GET` | `/v1.0/sites/{siteId}/wiki-nodes` | `getSiteWikiNodesPage` | Returns a complete list of all Wiki nodes in the specified Site; results can be paginated, filtered, searched, and sorted |
-| WikiNode | `GET` | `/v1.0/wiki-nodes/{wikiNodeId}` | `getWikiNode` | Returns details for the specified node entity |
-| WikiNode | `PUT` | `/v1.0/wiki-nodes/{wikiNodeId}` | `putWikiNode` | Replaces the specified node's details with those provided in the API call |
-| WikiNode | `DELETE` | `​/v1.0​/wiki-nodes​/{wikiNodeId}` | `deleteWikiNode` | Deletes the specified node and returns a 204 if the operation succeeds |
-| WikiPage | `POST` | `/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages` | `postWikiNodeWikiPage` | Creates a new Wiki page in the specified node using the details provided in the API call |
-| WikiPage | `POST` | `/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages` | `postWikiPageWikiPage` | Creates a new Wiki child page for the specified Wiki page using the details provided in the API call. |
-| WikiPage | `GET` | `/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages` | `getWikiNodeWikiPagesPage` | Returns a complete list of all Wiki pages added to the specified Wiki node; results can be paginated, filtered, searched, and sorted |
-| WikiPage | `GET` | `/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages` | `getWikiPageWikiPagesPage` | Returns a complete list of all Wiki child pages added to the specified Wiki page; results can be paginated, filtered, searched, and sorted |
-| WikiPage | `GET` | `/v1.0/wiki-pages/{wikiPageId}` | `getWikiPage` | Returns details for the specified Wiki page entity |
-| WikiPage | `PUT` | `/v1.0/wiki-pages/{wikiPageId}` | `putWikiPage` | Replaces the specified page's details with those provided in the API call |
-| WikiPage | `DELETE` | `/v1.0/wiki-pages/{wikiPageId}` | `deleteWikiPage` | Deletes the specified page and returns a 204 if the operation succeeds |
+The provided code includes APIs for the `WikiNode` and `WikiPage` services. See [Tutorial Code Reference](#tutorial-code-reference) for a list of all included sample APIs.
 
 ```{important}
-When using POST and PUT methods for Wiki pages, you must define both the `headline` and `encodingFormat` fields. The `headline` field sets the page's main title, while the `encodingFormat` field determines the page's media format (e.g., HTML, BBCode, etc.).
+The provided code uses basic authentication for demonstration purposes. For production, you should authorize users with [OAuth2](../../../headless-delivery/using-oauth2.md).
 ```
 
-### Calling the WikiNode APIs
+## Calling the Sample WikiNode APIs
 
-In this exercise, you can use either the cURL commands or Java classes to call the WikiNode APIs. The following output examples correspond to the cURL command, which slightly differs from the output for the provided Java classes.
+In this exercise, you can use either the cURL commands or Java classes to call the `WikiNode` APIs. The following output examples correspond to the cURL commands, which slightly differ from the output for the provided Java classes.
 
 1. Navigate to the `curl` or `java` folder in the `liferay-q8u2` project.
 
@@ -82,7 +65,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    cd liferay-q8u2/java
    ```
 
-1. Execute the `WikiNode_POST_ToSite` shell script or Java class using your Site ID as a parameter. This creates a new Wiki node in the specified Site.
+1. Execute `WikiNode_POST_ToSite` using your Site ID as a parameter. This creates a new Wiki node in the specified Site.
 
    **For cURL:**
 
@@ -96,7 +79,9 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    java -classpath .:* -DsiteId={site-id} WikiNode_POST_ToSite
    ```
 
-   The terminal displays the complete schema for the newly created Wiki node. The provided API calls only define the `description` and `name` fields for the new node, though you should copy the node's ID for use with the following GET, PUT, and DELETE methods.
+   The terminal displays the complete schema for the newly created Wiki node. The provided API calls only define the `description` and `name` fields for the new node.
+
+1. Copy the node's ID for use with the following GET, PUT, and DELETE methods.
 
    ```bash
    {
@@ -109,7 +94,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    }
    ```
 
-1. Execute the `WikiNodes_GET_FromSite` shell script or Java class using the Site ID for its parameter. This returns a list of all Wiki nodes in the specified Site.
+1. Execute `WikiNodes_GET_FromSite` using the Site ID for its parameter. This returns a list of all Wiki nodes in the specified Site.
 
    **For cURL:**
 
@@ -127,7 +112,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    All DXP/Portal instances come with a default Wiki node called `Main`. This node is shown in the above output, along with any nodes you've created.
    ```
 
-1. Execute the `WikiNode_PUT_ById` shell script or Java class using the Wiki node ID for its parameter. This replaces the details of the specified Wiki node with the details provided in the API call.
+1. Execute `WikiNode_PUT_ById` using the Wiki node ID for its parameter. This replaces the details of the specified Wiki node with the details provided in the API call.
 
    **For cURL:**
 
@@ -152,7 +137,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    }
    ```
 
-1. Execute the `WikiNode_DELETE_ById` shell script or Java class using the Wiki node ID for its parameter. This deletes the specified node.
+1. Execute `WikiNode_DELETE_ById` using the same Wiki node ID for its parameter. This deletes the specified node.
 
    **For cURL:**
 
@@ -166,7 +151,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    java -classpath .:* -DwikiNodeId={wiki-node-id} WikiNode_DELETE_ById
    ```
 
-1. Execute the `WikiNode_GET_ById` shell script or Java class using the previous Wiki node ID for its parameter. This returns the details for the specified node if it exists.
+1. Execute `WikiNode_GET_ById` using the same Wiki node ID for its parameter. This returns the details for the specified node if it exists.
 
    **For cURL:**
 
@@ -189,9 +174,9 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    }
    ```
 
-### Calling the WikiPage APIs
+## Calling the Sample WikiPage APIs
 
-You can use either the cURL commands or Java classes to call the WikiPage APIs. The following output examples correspond to the cURL command, which differs from the Java classes output.
+You can use either the cURL commands or Java classes to call the `WikiPage` APIs. The following output examples correspond to the cURL commands, which slightly differ from the output for the provided Java classes.
 
 1. Navigate to the `curl` or `java` folder in the `liferay-q8u2` project.
 
@@ -207,7 +192,7 @@ You can use either the cURL commands or Java classes to call the WikiPage APIs. 
    cd liferay-q8u2/java
    ```
 
-1. Execute the `WikiNode_POST_ToSite` shell script or Java class to create a node for your Wiki page.
+1. Execute `WikiNode_POST_ToSite` to create a node for your Wiki page.
 
    **For cURL:**
 
@@ -238,7 +223,7 @@ You can use either the cURL commands or Java classes to call the WikiPage APIs. 
    }
    ```
 
-1. Execute the `WikiPage_POST_ToNode` shell script or Java class using the above node ID for its parameter. This creates a new Wiki page for the specified node.
+1. Execute `WikiPage_POST_ToNode` using the above node ID for its parameter. This creates a new Wiki page for the specified node.
 
    **For cURL:**
 
@@ -268,7 +253,7 @@ You can use either the cURL commands or Java classes to call the WikiPage APIs. 
    }
    ```
 
-1. Execute the `WikiPage_POST_ToParent` shell script or Java class using the above Wiki page ID for its parameter. This creates a child page for the specified Wiki page.
+1. Execute `WikiPage_POST_ToParent` using the above Wiki page ID for its parameter. This creates a child page for the specified Wiki page.
 
    **For cURL:**
 
@@ -296,7 +281,7 @@ You can use either the cURL commands or Java classes to call the WikiPage APIs. 
    }
    ```
 
-1. Execute the `WikiPages_GET_FromNode` shell script or Java class using the Wiki node ID for its parameter. This returns a list of all Wiki pages added to the specified node, which includes both of the newly created Wiki pages.
+1. Execute `WikiPages_GET_FromNode` using the Wiki node ID for its parameter. This returns a list of all Wiki pages added to the specified node, which includes both of the newly created Wiki pages.
 
    **For cURL:**
 
@@ -310,7 +295,7 @@ You can use either the cURL commands or Java classes to call the WikiPage APIs. 
    java -classpath .:* -DwikiNodeId={wiki-node-id} WikiPages_GET_FromNode
    ```
 
-1. Execute the `WikiPages_GET_FromParent` shell script or Java class using the Wiki parent page ID for its parameter. This returns any existing child pages for the specified Wiki page.
+1. Execute `WikiPages_GET_FromParent` using the Wiki parent page ID for its parameter. This returns any existing child pages for the specified Wiki page.
 
    **For cURL:**
 
@@ -324,7 +309,7 @@ You can use either the cURL commands or Java classes to call the WikiPage APIs. 
    java -classpath .:* -DparentWikiPageId={wiki-page-id} WikiPages_GET_FromParent
    ```
 
-1. Execute the `WikiPage_PUT_ById` shell script or Java class using either of the above Wiki page IDs for its parameter. This replaces the original page's content with the content defined in the API call.
+1. Execute `WikiPage_PUT_ById` using either of the above Wiki page IDs for its parameter. This replaces the original page's content with the content defined in the API call.
 
    **For cURL:**
 
@@ -350,7 +335,7 @@ You can use either the cURL commands or Java classes to call the WikiPage APIs. 
    }
    ```
 
-1. Execute the `WikiPage_DELETE_ById` shell script or Java class using the desired Wiki page ID for its parameter. This deletes the specified Wiki page.
+1. Execute `WikiPage_DELETE_ById` using the desired Wiki page ID for its parameter. This deletes the specified Wiki page.
 
    **For cURL:**
 
@@ -364,7 +349,7 @@ You can use either the cURL commands or Java classes to call the WikiPage APIs. 
    java -classpath .:* -DwikiPageId={wiki-page-id} WikiPage_DELETE_ById
    ```
 
-1. Execute the `WikiPage_GET_ById` shell script or Java class using the deleted Wiki page's ID for its parameter. This returns the details for the specified page if it exists.
+1. Execute `WikiPage_GET_ById` using the deleted Wiki page's ID for its parameter. This returns the details for the specified page if it exists.
 
    **For cURL:**
 
@@ -386,6 +371,36 @@ You can use either the cURL commands or Java classes to call the WikiPage APIs. 
      "title" : "No WikiNode exists with the primary key 38515"
    }
    ```
+
+## Tutorial Code Reference
+
+The provided sample code includes cURL scripts and Java classes for the following `WikiNode` and `WikiPage` APIs.
+
+### Sample WikiNode APIs
+
+| Service | HTTP Method | HTTP Endpoint | Description |
+| :--- | :--- | :--- | :--- |
+| WikiNode | `POST` | `/v1.0/sites/{siteId}/wiki-nodes` | Creates a new Wiki node in the specified Site using the details provided in the API call |
+| WikiNode | `GET` | `/v1.0/sites/{siteId}/wiki-nodes` | Returns a complete list of all Wiki nodes in the specified Site; results can be paginated, filtered, searched, and sorted |
+| WikiNode | `GET` | `/v1.0/wiki-nodes/{wikiNodeId}` | Returns details for the specified node entity |
+| WikiNode | `PUT` | `/v1.0/wiki-nodes/{wikiNodeId}` | Replaces the specified node's details with those provided in the API call |
+| WikiNode | `DELETE` | `​/v1.0​/wiki-nodes​/{wikiNodeId}` | Deletes the specified node and returns a 204 if the operation succeeds |
+
+### Sample WikiPage APIs
+
+| Service | HTTP Method | HTTP Endpoint | Description |
+| :--- | :--- | :--- | :--- |
+| WikiPage | `POST` | `/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages` | Creates a new Wiki page in the specified node using the details provided in the API call |
+| WikiPage | `POST` | `/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages` | Creates a new Wiki child page for the specified Wiki page using the details provided in the API call. |
+| WikiPage | `GET` | `/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages` | Returns a complete list of all Wiki pages added to the specified Wiki node; results can be paginated, filtered, searched, and sorted |
+| WikiPage | `GET` | `/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages` | Returns a complete list of all Wiki child pages added to the specified Wiki page; results can be paginated, filtered, searched, and sorted |
+| WikiPage | `GET` | `/v1.0/wiki-pages/{wikiPageId}` | Returns details for the specified Wiki page entity |
+| WikiPage | `PUT` | `/v1.0/wiki-pages/{wikiPageId}` | Replaces the specified page's details with those provided in the API call |
+| WikiPage | `DELETE` | `/v1.0/wiki-pages/{wikiPageId}` | Deletes the specified page and returns a 204 if the operation succeeds |
+
+```{important}
+When using POST and PUT methods for Wiki pages, you must define both the `headline` and `encodingFormat` fields. The `headline` field sets the page's main title, while the `encodingFormat` field determines the page's media format (e.g., HTML, BBCode, etc.).
+```
 
 ## Examining the Sample cURL Scripts
 

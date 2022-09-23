@@ -147,15 +147,23 @@ You can use the `distBundleZip` command if you would rather have a .zip archive.
 
 Follow the above steps to test and build each environment. 
 
-You can also build all your environments at once. To build all bundles into gzipped tar files, use 
+You can also build all your environments at once. This takes only two steps: 
 
-```bash
-./gradlew distBundleTarAll
-```
+1. Set the property `liferay.workspace.bundle.dist.include.metadata` to `true` in Workspace's `gradle.properties` file: 
 
-To build all bundles into .zip files, use 
+   ```properties
+   liferay.workspace.bundle.dist.include.metadata=true
+   ```
 
-```bash
-./gradlew distBundleZipAll
-```
+2. Call the target to build all the bundles. To build all bundles into gzipped tar files, use 
+
+   ```bash
+   ./gradlew distBundleTarAll
+   ```
+
+   To build all bundles into .zip files, use 
+
+   ```bash
+   ./gradlew distBundleZipAll
+   ```
 

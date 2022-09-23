@@ -1,91 +1,97 @@
 # Creating and Managing Display Page Templates
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
-A Display Page Template specifies the layout and formatting for your content and displays it at a unique friendly URL. See [Using Display Page Templates](../using-display-page-templates.md) to learn more.
+Display page templates define structures for displaying content at a dedicated friendly URL. These templates currently support the following content types:
 
-```{note}
-Display Page Templates are only supported for Web Content, Documents, Blog Entries, and Categories (starting with Liferay DXP 7.4.)
-```
+* [Blog Entries](../../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
+* [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) ({bdg-secondary}`Available 7.4+`)
+* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) ({bdg-secondary}`Available 7.4+`)
+* [Documents](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
+* [Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+
+See [Using Display Page Templates](../using-display-page-templates.md) to learn more.
 
 ## Creating a Display Page Template
 
-1. Open the Product Menu and click *Design* &rarr; *Page Templates*.
+Follow these steps to create a display page template:
+
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and click *Design* &rarr; *Page Templates*.
 
 1. Click the *Display Page Templates* tab.
 
-   ![Go to Page Templates, and click on the Display Page Templates tab.](./creating-and-managing-display-page-templates/images/02.png)
+   ![Go to Page Templates, and click on the display page templates tab.](./creating-and-managing-display-page-templates/images/02.png)
 
-1. Click *Add* (![Add](./../../../images/icon-add.png)).
+1. Click the *Add* button (![Add Button](./../../../images/icon-add.png)).
 
 1. Enter a *Name* for your template and select a *Content Type* and *Subtype*, if applicable. Then click *Save*.
 
    ![Select the content type and subtype for your new template.](./creating-and-managing-display-page-templates/images/03.png)
 
-1. Add element in the Display Page Template editor using the same interface and page elements as [Content Pages](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md).
+1. Design the template using the same interface and page elements as [content pages](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md).
 
-   ![Build your template using Fragments and Widgets.](./creating-and-managing-display-page-templates/images/04.png)
+   ![Build your template using fragments and widgets.](./creating-and-managing-display-page-templates/images/04.png)
 
-1. Once you've added Page elements, you can [map](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) them to content structure fields (e.g., title, description) by double-clicking on an editable field.
+1. Once you've added page elements, you can [map](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) them to content structure fields (e.g., title, description) by double-clicking on an editable field. Mapped fields are outlined in purple.
 
    ```{tip}
-   Mapped fields are outlined in purple color.
+   You can use mapped fields when configuring SEO and Open Graph settings for a display page template. See [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md) for more information.
    ```
 
-   ![Map Page elements to structure fields.](./creating-and-managing-display-page-templates/images/05.png)
+   ![Map page elements to structure fields.](./creating-and-managing-display-page-templates/images/05.png)
 
-   See [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md) to learn about using these mapped structure fields when configuring SEO and Open Graph settings for your Display Page.
-
-1. Before publishing, you can preview your editable fields mappings with existing content using the [preview function](#preview-the-display-page-template-content-mappings) (available in Liferay DXP 7.4+.)
+1. Before publishing, you can preview your editable fields mappings with existing content using the [preview function](#preview-the-display-page-template-content-mappings) (available 7.4+).
 
 1. When finished, click *Publish* to save your work.
 
-You can now [publish your content](./publishing-content-with-display-pages.md) with the Display Page Template.
+You can now use the template to [display your content](./publishing-content-with-display-pages.md).
 
 ### Preview the Display Page Template Content Mappings
 
-> Available: Liferay DXP/Portal 7.4+.
+{bdg-secondary}`Available 7.4+`
 
-1. From the Product Menu, click the *Preview With* drop-down menu and choose *Select Other Item*.
+While editing, Liferay provides two ways to preview display page templates with content items.
 
-   ![Choose the content you want to use to preview your Display Page Template.](./creating-and-managing-display-page-templates/images/07.png)
+From the Application Menu, you can click the *Preview With* drop-down menu and choose a content item. If no item is listed, click *Select Other Item* and browse for the desired content. This dynamically populates the template with content data according to your field mapping.
 
-1. In the Select dialog, click the content you want to use to preview the Display Page Template.
-1. Alternatively, from the Display Page Template editor, click the *Preview* (![Preview](../../../images/icon-preview.png)) button and choose the content you want to preview.
+![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/07.png)
 
-   ![Click the Preview button to preview your Display Page Template mappings.](./creating-and-managing-display-page-templates/images/08.png)
+Alternatively, from the display page template editor, click the *Preview* (![Preview](../../../images/icon-preview.png)) button and choose the content you want to preview.
+
+![Click the Preview button to preview your display page template mappings.](./creating-and-managing-display-page-templates/images/08.png)
 
 ## Viewing Display Page Template Usage
 
-> Available: Liferay DXP/Portal 7.4+
+{bdg-secondary}`Available 7.4+`
 
-You can manage the different Display Page Templates using the *Actions* menu (![Actions](../../../images/icon-actions.png)). From here, the *View Usages* option provides a list of content that uses a specific Display Page Template.
+You can manage the different display page templates using the *Actions* menu (![Actions](../../../images/icon-actions.png)). From here, the *View Usages* option provides a list of content that uses a specific display page template other than the default template. This option is not available for default templates.
 
-```{note}
-The *View Usages* option does not provide the usage of content assigned to the default Display Page Template.
-```
+![Managing your display page template using the Actions menu](./creating-and-managing-display-page-templates/images/06.png)
 
-![Managing your Display Page Template using the Actions menu](./creating-and-managing-display-page-templates/images/06.png)
+Before you delete a display page template that is in use, you have two ways to unassign the display page template from the content:
 
-Before you delete a Display Page Template in use by some of your content, you have two ways to unassign the Display Page Template from the content:
+* Assign to Default: Your content is unassigned from the current display page template and assigned to the default display page template for the content type and subtype (if applicable.)
+* Unassign: Your content is not assigned to any display page template.
 
-- Assign to Default: Your content is unassigned from the current Display Page Template and assigned to the default Display Page Template for the content type and subtype (if applicable.)
-- Unassign: Your content is not assigned to any Display Page Template.
+Follow these steps to view your display page template usage and unassign your content:
 
-To view your Display Page Template usage and unassign your content,
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Page Templates*.
 
-1. Open the Product Menu and go to *Design* &rarr; *Page Templates*.
 1. Click the *Display Page Templates* tab.
-1. Click the Display Page Template's *Actions* menu (![Actions](../../../images/icon-actions.png)) and select *View Usages*.
-1. From the list of content using the Display Page Template, select one or more elements.
-1. Click the *Actions* menu (![Actions](../../../images/icon-actions.png)) in the top-right corner and select *Assign to Default* or *Unassigned*.
+
+1. Click the display page template's *Actions* menu (![Actions](../../../images/icon-actions.png)) and select *View Usages*.
+
+1. Select one or more elements from the list of content using the display page template.
+
+1. Click the *Actions* menu (![Actions](../../../images/icon-actions.png)) in the top-right corner and select *Assign to Default* or *Unassign*.
+
 1. Click *OK*.
 
-If you assign your content to a new Display Page Template, make sure the content appears as expected. To preview and publish your content, see [Publishing Content with Display Pages](./publishing-content-with-display-pages.md).
+If you assign your content to a new display page template, make sure the content appears as expected. To preview and display your content, see [Publishing Content with Display Pages](./publishing-content-with-display-pages.md).
 
 ## Additional Information
 
-- [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
-- [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
-- [Using Content Pages](./../../creating-pages/using-content-pages.md)
-- [Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
+* [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
+* [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
+* [Using Content Pages](./../../creating-pages/using-content-pages.md)
+* [Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)

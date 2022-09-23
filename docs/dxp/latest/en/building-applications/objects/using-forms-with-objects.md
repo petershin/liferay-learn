@@ -45,7 +45,7 @@ Follow these steps to map a form field to an Object field.
 1. Select the desired *Object field*.
 
    ```{warning}
-   When mapped to a required Object field, the form field is automatically marked required. If you're [using a form rule](../../process-automation/forms/form-rules/form-rules-overview.md) to [conditionally hide a required field](../../process-automation/forms/form-rules/example-using-hidden-fields-with-form-rules.md), you must ensure it contains appropriate data or form submission will fail. Using a [predefined value](../../process-automation/forms/creating-and-managing-forms/providing-help-text-and-predefined-values.md) with an [autofill rule](../../process-automation/forms/form-rules/using-the-autofill-rule.md) can help ensure that a required hidden field is properly populated.
+   When mapped to a required Object field, the form field is marked required automatically. If you're [using a form rule](../../process-automation/forms/form-rules/form-rules-overview.md) to [hide a required field conditionally](../../process-automation/forms/form-rules/example-using-hidden-fields-with-form-rules.md), you must ensure it contains appropriate data or form submission fails. Using a [predefined value](../../process-automation/forms/creating-and-managing-forms/providing-help-text-and-predefined-values.md) with an [autofill rule](../../process-automation/forms/form-rules/using-the-autofill-rule.md) can help ensure that a required hidden field is populated properly.
    ```
 
    ![In the Advanced tab, select the desired Object field.](./using-forms-with-objects/images/02.png)

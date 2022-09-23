@@ -5,8 +5,8 @@
 Display page templates define structures for displaying content at a dedicated friendly URL. These templates currently support the following content types:
 
 * [Blog Entries](../../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
-* [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) ({bdg-secondary}`Available 7.4+`)
-* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) ({bdg-secondary}`Available 7.4+`)
+* [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`Available 7.4+`
+* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`Available 7.4+`
 * [Documents](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
 * [Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
 

@@ -42,11 +42,13 @@ Follow these steps to use a display page template for displaying content items:
 
 1. Click *Select*, choose the desired template, and click *Done*.
 
-   ```{tip}
    You can preview what the display page looks like with the *Preview* button located next to the selected display page template.
-   ```
 
 1. (Optional) In the Properties tab, expand the *Friendly URL* panel and modify the friendly URL. This determines the URL for displaying your content item using the display page template.
+
+   ```{note}
+   For Liferay 7.4 U34+/GA34+, the Display Page Template framework takes into account an asset's friendly URL history. This means all URLs saved in the file's URL history automatically redirect to the file's current URL. The friendly URL history is supported for both [documents](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md) and [blogs](../../../content-authoring-and-management/blogs/displaying-blogs.md).
+   ```
 
    ![You can configure the friendly URL used for your displayed content.](./publishing-content-with-display-pages/images/02.png)
 

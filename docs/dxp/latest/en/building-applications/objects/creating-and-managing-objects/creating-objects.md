@@ -114,7 +114,7 @@ The publishing process includes the following operations:
 
 * A Page widget is created for the Object.
 
-* The Object is integrated with Info framework, so you can select the Object as a content type for a [Display Page Template](../../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md)
+* The Object is integrated with Info framework, so you can select the Object as a content type for a [Display Page Template](../../../site-building/displaying-content/using-display-page-templates.md)
 
 * The Object is integrated with the [Permissions framework](../understanding-object-integrations/permissions-framework-integration.md), so you can manage permissions for the new application and its resources.
 

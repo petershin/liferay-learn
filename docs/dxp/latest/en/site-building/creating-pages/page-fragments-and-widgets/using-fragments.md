@@ -30,7 +30,7 @@ using-fragments/managing-fragments.md
 using-fragments/propagating-fragment-changes.md
 ```
 
-Page *Fragments* are extensible and reusable drag-and-drop elements that you can use to build [Content Pages](../using-content-pages.md) and Templates (i.e., [Masters](../defining-headers-and-footers/master-page-templates.md), [Pages](../adding-pages/creating-a-page-template.md), [Display Pages](../../displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md)). They are built using CSS, HTML, and JavaScript and can provide both structure and functionality to a Page.
+Page *Fragments* are extensible and reusable drag-and-drop elements that you can use to build [Content Pages](../using-content-pages.md) and Templates (i.e., [Masters](../defining-headers-and-footers/master-page-templates.md), [Pages](../adding-pages/creating-a-page-template.md), [Display Pages](../../displaying-content/using-display-page-templates.md)). They are built using CSS, HTML, and JavaScript and can provide both structure and functionality to a Page.
 
 ![Build Content Pages and Templates with Fragments.](./using-fragments/images/01.png)
 

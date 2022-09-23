@@ -4,7 +4,7 @@
 
 With Liferay Objects, you can use existing DXP frameworks to display Object entries dynamically in Sites. This includes collection displays for multiple entries and display pages for individual entries.
 
-When an Object is published, Liferay creates a Collection Provider that you can use with the [Collection Display fragment](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) to display multiple Object entries. You can also configure the fragment to style, filter, and paginate the collection. And since published Objects are integrated with the Info framework, you can select them as the content type for [Display Page Templates](../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md). When selected, the Object is set as the template's mapping source, so you can easily map fragment fields to Object fields to create flexible page displays for individual Object entries.
+When an Object is published, Liferay creates a Collection Provider that you can use with the [Collection Display fragment](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) to display multiple Object entries. You can also configure the fragment to style, filter, and paginate the collection. And since published Objects are integrated with the Info framework, you can select them as the content type for [Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md). When selected, the Object is set as the template's mapping source, so you can easily map fragment fields to Object fields to create flexible page displays for individual Object entries.
 
 Additionally, you can use FreeMarker to create [Information Templates for Objects](#creating-information-templates-for-objects). Once created, you can map fragment fields to your template to determine how entries are rendered in Content Pages and Display Pages.
 
@@ -64,7 +64,7 @@ After selecting the desired provider, use additional fragment options to determi
 
 1. Click *Save*.
 
-Once saved, the selected Object is set as the template's mapping source, and you're redirected to edit the template. Here, you can design flexible page displays for individual Object entries using fragments that map to Object fields. See [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md) for information.
+Once saved, the selected Object is set as the template's mapping source, and you're redirected to edit the template. Here, you can design flexible page displays for individual Object entries using fragments that map to Object fields. See [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md) for information.
 
 ![Map fragment elements to Object fields to dynamically populate Display Pages for individual entries.](./displaying-object-entries/images/08.png)
 
@@ -108,4 +108,4 @@ Since Objects are integrated with the info framework, you can add Object entries
 
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)
 * [About Collections and Collection Pages](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
-* [About Display Page Templates and Display Pages](../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md)
+* [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md)

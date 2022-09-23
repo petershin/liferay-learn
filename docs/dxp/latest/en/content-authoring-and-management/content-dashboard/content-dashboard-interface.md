@@ -104,7 +104,7 @@ In the list of contents, you can find the following columns:
 | *Second Vocabulary* | The optional second Vocabulary in the Content Audit Tool. |
 | Modified Date | Date or time of the last article update. |
 
-(*) The *Page* (![Page](../../images/icon-page.png)) icon denotes content based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md).
+(*) The*Page* (![Page](../../images/icon-page.png)) icon denotes content based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates.md).
 
 ```{note}
 The *First Vocabulary* and *Second Vocabulary* columns depend on the Vocabularies you select.

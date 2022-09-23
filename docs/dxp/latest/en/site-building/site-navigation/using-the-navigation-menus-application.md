@@ -47,7 +47,7 @@ While editing a Navigation Menu, follow these steps to add an element to the Nav
     You can select multiple elements.
 
     ```{important}
-    When the added element does not have an [associated display page](../displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md), Liferay displays a warning. Items without a display page do not have links and are hidden from menus.
+    When the added element does not have an [associated display page](../displaying-content/using-display-page-templates.md), Liferay displays a warning. Items without a display page do not have links and are hidden from menus.
     ```
 
     ![When the added element does not have an associated display page](./using-the-navigation-menus-application/images/05.png)

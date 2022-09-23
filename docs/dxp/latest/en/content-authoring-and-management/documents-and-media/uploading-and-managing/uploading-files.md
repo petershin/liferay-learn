@@ -52,7 +52,7 @@ However, if you would like to define file details before uploading them, follow 
 | Title | &#10004; |  | Set a display title used for the file after upload. By default this field is populated with the selected file's original name, but you can change it during or after upload. |
 | File Name | &#10004; |  | Set a new name for the uploaded file. By default this field is populated with the selected file's original name, but you can change it during or after upload. |
 | Description | &#10004; | &#10004; | Add a file description for your uploaded file/files. |
-| Display Page | &#10004; | &#10004; | Select a [Display Page Template](../../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md) for the uploaded file/files. |
+| Display Page | &#10004; | &#10004; | Select a [Display Page Template](../../../site-building/displaying-content/using-display-page-templates.md) for the uploaded file/files. |
 | Categorization | &#10004; | &#10004; | Apply tags and public or internal Categories to the uploaded file/files. |
 | Expiration Date | &#10004; | &#10004; | Determine if and when the file/files expire or should be reviewed. By default, files are set to never expire or require review. If enabled, you the date when the file expires or should be reviewed. See [Using File Expiration and Review Dates](./using-file-expiration-and-review-dates.md) for more information. |
 | Related Assets | &#10004; |  | Select related assets or the file from the Site or connected Asset Library. |

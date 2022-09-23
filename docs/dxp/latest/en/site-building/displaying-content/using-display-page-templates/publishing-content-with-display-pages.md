@@ -1,62 +1,64 @@
 # Publishing Content With Display Pages
 
-You publish your content on a Display Page using the layout and content mapping options you define in the Display Page Template. Display Pages are always associated with a certain type of content. To learn more, read [About Display Page Templates and Display Pages](./about-display-page-templates-and-display-pages.md).
+You can use display page templates to create reusable dynamic designs for displaying content items at their friendly URLs. After [designing the template](./creating-and-managing-display-page-templates.md), you can make it the default template for displaying its content type, or manually configure only some of your content items to use it. Once set, users can view the content item's display page by visiting its friendly URL. The content is dynamically rendered according to your template design and mappings. See [Using Display Page Templates](./using-display-page-templates.md) for more information.
 
-To publish your content using a Display Page,
+```{note}
+Even though you can create multiple display page templates for the same content type, you can select only one default template. To use an alternative template as the default, you must assign the template to content items individually.
+```
 
-1. From the Site Administration panel, click the panel category for the type of content you want to display:
+## Setting a Default Display Page Template
 
-    - For *Web Content*, *Blogs*, or *Documents and Media*, click *Content & Data*.
-    - For *Categories*, click *Categorization*.
+Follow these steps to set the default display page template for a type of content:
 
-    ```{note}
-    Publishing Categories using a Display Page Template is available starting with Liferay DXP 7.4.
-    ```
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and click *Design* &rarr; *Page Templates*.
 
-1. From the *Actions* (![Actions](../../../images/icon-actions.png)) menu of an existing content, choose *Edit*. Alternatively, click the *Add* (![Add](../../../images/icon-add.png)) button to create a new piece of content.
+1. Click the *Display Page Templates* tab.
 
-    ![Edit or create the content you want to display using a Display Page.](./publishing-content-with-display-pages/images/03.png)
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired template and select *Mark as Default*
 
-1. Expand the *Display Page Template* section in the Properties area, open the drop-down selector and choose *Specific Display Page Template*.
-
-    ![Select a specific display page template to configure it.](./publishing-content-with-display-pages/images/01.png)
-
-    ```{note}
-    If you don't choose a specific Display Page Template, your content is published using the [default one](#configuring-a-default-display-page-template) for the content type.
+   ```{tip}
+   Each template's content type is listed under its name (A). The blue check (B) indicates which templates are marked as default.
    ```
 
-1. Click *Select*, click the Display Page Template of your choice, and click *Done*.
+   ![Select a display page template as the default one for the content type using the Actions menu.](./publishing-content-with-display-pages/images/05.png)
 
-    ```{tip}
-    You can preview what the display page looks like with the *Preview* button located next to the selected Display Page Template.
-    ```
+## Setting a Display Page Template for Individual Content Items
 
-1. Scroll down to the *Friendly URL* panel, expand it, and modify the friendly URL if you want. This is the URL the Display Page uses to show your content.
+Follow these steps to use a display page template for displaying content items:
 
-    ![You can configure the friendly URL used for your displayed content.](./publishing-content-with-display-pages/images/02.png)
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to the desired application (e.g., Web Content, Blogs, Categories).
+
+1. Begin editing or creating a content item.
+
+   ![Edit or create a content item.](./publishing-content-with-display-pages/images/03.png)
+
+1. In the Properties tab, expand the *Display Page Template* section, click the drop-down menu, and select *Specific Display Page Template*.
+
+   ```{note}
+   If you don't choose a specific display page template, your content is published using the [default one](#setting-a-default-display-page-template) for the content type.
+   ```
+
+   ![Select a specific display page template to configure it.](./publishing-content-with-display-pages/images/01.png)
+
+1. Click *Select*, choose the desired template, and click *Done*.
+
+   ```{tip}
+   You can preview what the display page looks like with the *Preview* button located next to the selected display page template.
+   ```
+
+1. (Optional) In the Properties tab, expand the *Friendly URL* panel and modify the friendly URL. This determines the URL for displaying your content item using the display page template.
+
+   ![You can configure the friendly URL used for your displayed content.](./publishing-content-with-display-pages/images/02.png)
 
 1. Click *Publish*.
-1. To preview your content in the context of the Display Page Template, click the content's *Actions* (![Actions](../../../images/icon-actions.png)) menu and choose *Preview*. To view your Display Page, including the friendly URL, choose *View Content*.
 
-    ![Preview your content in the context of the Display Page Template or view the Display Page using the content's Action menu.](./publishing-content-with-display-pages/images/04.png)
+Once set, Liferay uses the template to display the content item at it's unique friendly URL. If desired, you can preview your content's display page at any time by clicking the content's *Actions* button (![Actions](../../../images/icon-actions.png)) and selecting *Preview* or *View Content*
 
-## Configuring the Default Display Page Template
+*Preview* displays the content in the display page template context, while *View Content* redirects you to the content item's friendly URL.
 
-Consider these items when configuring a default Display Page Template:
-
-- You can publish the content using the default or a specific Display Page Template. 
-- You can create more than one Display Page Template for the same content type, but you can set only one by default.
-- If you don't choose a specific Display Page Template, your content is published using the default one for the content type.
-
-To configure the default Display Page Template,
-
-1. Under *Site Administration*, click *Design* &rarr; *Page Templates* and choose the *Display Page Templates* column.
-1. Under the Display Page Template's name you can see the type of content the Display Page Template is associated to (A). The blue check (B) indicates the default Display Page Template for the type of content.
-1. Click the *Actions* (![Actions](../../../images/icon-actions.png)) menu for the Display Page Template you want to configure as default and choose *Mark As Default*.
-
-    ![Select a Display Page Template as the default one for the content type using the Actions menu.](./publishing-content-with-display-pages/images/05.png)
+![Preview your content in the context of the display page template or view the Display Page using the content's Action menu.](./publishing-content-with-display-pages/images/04.png)
 
 ## Additional Information
 
-- [About Display Page Templates and Display Pages](./about-display-page-templates-and-display-pages.md)
-- [Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)
+* [Using Display Page Templates](./using-display-page-templates.md)
+* [Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)

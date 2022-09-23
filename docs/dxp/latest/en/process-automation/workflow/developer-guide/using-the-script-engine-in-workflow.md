@@ -1,6 +1,5 @@
 # Using the Script Engine in Workflow
 
-
 Liferay's [workflow engine](../introduction-to-workflow.md) can be scripted using Groovy scripts embedded in [XML workflow definitions](./crafting-xml-workflow-definitions.md) and run during workflow execution.
 
 Here are the workflow scripting topics:

@@ -1,16 +1,48 @@
 # Displaying Blogs
 
-You can [add](./adding-blog-entries.md), [manage](./managing-blog-entries.md), and [configure](./configuring-the-blogs-app.md) blogs from the Product Menu (![Product Menu](../../images/icon-product-menu.png)) &rarr; _Content & Data_ &rarr; _Blogs_. Once you have blog entries, you can display them by adding a Blogs widget to a page. 
+Liferay provides two methods for displaying blog entries: [display page templates](#using-display-page-templates) and the [Blogs widget](#using-the-blogs-widget).
+
+## Using Display Page Templates
+
+You can use [display page templates](../../site-building/displaying-content/using-display-page-templates.md) to create reusable dynamic designs for displaying blog entries at their friendly URLs. By default, all blog entries are automatically assigned a unique friendly URL. You can use this URL to view the blog entry at a display page if you've selected a display page template to use for blog entries.
+
+The blog's friendly URL is appended to the display page's URL (i.e., `display-page-url/blog-friendly-url`) and can be edited at any time. If you do change it, Liferay stores the previous URL in the entry's friendly URL history. As long as the old URL remains in this history, users can continue to use it to access the latest version of the blog entry. See [Publishing Content with Display Pages](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) for more instructions on setting up templates for displaying blog entries.
+
+Once you've set up display pages for your blog entries, you can use collections to list them in your content pages. See [About Collections and Collection Pages](./../collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
+
+### Friendly URL History
+
+While saved in the friendly URL history, old blog entry URLs cannot be used for other entries in the same site. To reuse the URL for another entry, you must first remove it from the entry's friendly URL history.
+
+Follow these steps to manage a blog entry's friendly URL history:
+
+1. Open the *Site Menu* ( ![Site Menu](../../images/icon-product-menu.png) ), expand *Content & Data*, and go to *Blogs*.
+
+1. Click the *Actions* button ( ![Actions Button](../../images/icon-actions.png) ) for the desired entry and select *Edit*.
+
+1. Expand the Configuration section and click the *History* button ( ![History Button](../../images/icon-history.png) ) in the Friendly URL field.
+
+   ![Click the History button for the Friendly URL field.](./displaying-blogs/images/01.png)
+
+1. Click the *Restore* button ( ![Restore Button](../../images/icon-restore2.png) ) to replace the current friendly URL with the selected URL.
+
+1. Click the *Forget URL* button ( ![Forget URL Button](../../images/icon-delete.png) ) to remove the selected URL from the entry's history. Once removed, you can no longer use the URL to access the blog entry.
+
+   ![Click the Restore or Forget URL buttons.](./displaying-blogs/images/02.png)
+
+Changes to the friendly URL history are automatically saved.
+
+## Using the Blogs Widget
 
 Adding the Blogs widget to a page exposes the blog interface to Site members. Similarly, adding the widget to a User's personal Site (Profile) creates a blog just for that User. The widget works the same way in both cases. 
 
 Once you've added a Blogs widget to a page, there are several display options for configuring the listing to look the way you want. 
 
-To configure the widget, click _Options_ (![Options icon](../../images/icon-app-options.png)) &rarr; _Configuration_. 
+To configure the widget, click *Options* (![Options icon](../../images/icon-app-options.png)) &rarr; *Configuration*.
 
-![There are different setup options for the Blogs widget](displaying-blogs/images/02.png)
+![There are different setup options for the Blogs widget](displaying-blogs/images/03.png)
 
-## Setup Tab
+### Setup Tab
 
 **Enable Ratings:** Enable the [ratings system](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) for blog entries. 
 
@@ -36,7 +68,7 @@ To configure the widget, click _Options_ (![Options icon](../../images/icon-app-
 
 * **Card:** Displays each blog entry in a card-like rectangle that shows the cover image, title, author, post date, and a few lines of text.
 
-![The card display template makes your blog posts look like fun little trading cards.](displaying-blogs/images/03.png)
+![The card display template makes your blog posts look like fun little trading cards.](displaying-blogs/images/04.png)
 
 To select a different application display template (ADT) or create your own, click *Manage Templates*. 
 
@@ -46,7 +78,7 @@ To select a different application display template (ADT) or create your own, cli
 
 **Show Related Assets:** Enable showing related content from other widgets.
 
-## Communication, Sharing, and Scope Tabs
+### Communication, Sharing, and Scope Tabs
 
 **Communication:** Lists public render parameters the widget publishes to other widgets on the page. Other widgets can read and take actions on these. For each shared parameter, you can specify whether to allow communication using the parameter and select which incoming parameter can populate it.
 
@@ -54,3 +86,7 @@ To select a different application display template (ADT) or create your own, cli
 
 **Scope:** Specify the blog instance the widget displays: the current Site's blog (default), the global blog, or the page's blog. 
 
+## Additional Information
+
+* [Adding Blog Entries](./adding-blog-entries.md)
+* [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md)

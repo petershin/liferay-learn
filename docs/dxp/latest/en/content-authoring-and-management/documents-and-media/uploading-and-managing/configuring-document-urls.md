@@ -18,6 +18,8 @@ When uploading multiple files, each file's friendly URL is automatically generat
 
 Follow these steps to set a file's friendly URL:
 
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ), expand *Content & Data*, and go to *Documents and Media*.
+
 1. Begin uploading or editing the desired file.
 
 1. Edit the *Friendly URL* field.
@@ -40,7 +42,9 @@ While saved in the friendly URL history, old file URLs cannot be used for other 
 
 Follow these steps to view and manage retained URLs for a file:
 
-1. Begin editing the desired file.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ), expand *Content & Data*, and go to *Documents and Media*.
+
+1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired file and select *Edit*.
 
 1. Click the *History* button ( ![History Button](../../../images/icon-history.png) ) in the Friendly URL field.
 

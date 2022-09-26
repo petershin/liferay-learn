@@ -16,10 +16,22 @@ theme-development/working-with-templates.md
 theme-development/bundling-resources.md
 ```
 
-```{raw} html
-:file: ../../../landingpage_template.html
-```
+::::{grid} 2
+:gutter: 3 3 3 3
 
-```{raw} html
-:file: theme-development/landing.html
-```
+:::{grid-item-card} 入門編
+:link: ./theme-development/getting-started.md
+:::
+
+:::{grid-item-card} スタイリング (Coming Soon)
+:link: ./theme-development/styling.md
+:::
+
+:::{grid-item-card} テンプレートでの作業
+:link: ./theme-development/working-with-templates.md
+:::
+
+:::{grid-item-card} ビルドリソース
+:link: ./theme-development/bundling-resources.md
+:::  
+::::

@@ -2,7 +2,7 @@
 
 > 対応可能：Liferay DXP/Portal 7.3以降
 
-[Open Graph](https://ogp.me/) は、Facebook、Slack、Twitterなどのアプリケーションコンテキストで共有する際に、サイトコンテンツのプレビューを標準化するインターネットプロトコルです。 これは、 `<meta>` タグとしてページヘッダーに構造化データを埋め込むことで、 [RDFa](https://en.wikipedia.org/wiki/RDFa) と同じように実現します。
+[Open Graph](https://ogp.me/) は、Facebook、Slack、Twitterなど、サイトコンテンツをサポートしているアプリケーションコンテキストで共有する際に、サイトコンテンツのプレビューを標準化するインターネットプロトコルです。 これは、 `<meta>` タグとしてページヘッダーに構造化データを埋め込むことで、 [RDFa](https://en.wikipedia.org/wiki/RDFa) と同じように実現します。
 
 デフォルトでは、Open Graph `<meta>`タグはすべてのLiferay公開ページに埋め込まれていますが、必要に応じてサイトレベルでこの動作を無効にすることができます。 サイト設定では、デフォルトの`og:image`プロパティを設定することもできます。 これらの値は、 [ページ](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) または[表示ページ](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)レベルで上書きされない限り、すべてのページに使用されます。
 
@@ -32,7 +32,7 @@ Open Graph `<meta>` タグは、未認証のユーザーに対してのみペー
 
    ![デフォルトのOpen Graph設定をプレビューします。](./configuring-open-graph/images/03.png)
 
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
 ## `og:image`プロパティの分析
 
@@ -56,6 +56,6 @@ Open Graph画像のローカライズされた別の説明を作成するには�
 
 ## 追加情報
 
-* [検索エンジンを最適化](../../optimizing_sites.html)
+* [検索エンジンを最適化](../../optimizing-sites.md)
 * [サイト設定UIリファレンス](./site-settings-ui-reference.md)
 * [ページ単位での設定](./../creating-pages/page-settings/configuring-individual-pages.md)

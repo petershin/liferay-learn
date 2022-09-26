@@ -7,29 +7,21 @@
 
 ![［編集する］をクリックして、コンテントページの編集ツールバーとサイドバーにアクセスします。](./content-page-editor-ui-reference/images/01.png)
 
-<a name="editing-toolbar" />
-
 ## 編集ツールバー
 
 コンテントページのツールバーには、独自のユーザーエクスペリエンスの作成、ローカライズされた翻訳の設定、編集モードの切り替えなどのツールが含まれています。
 
 ![［編集する］をクリックして、コンテントページのツールバーにアクセスします。](./content-page-editor-ui-reference/images/02.png)
 
-<a name="experiences" />
-
 ### エクスペリエンス
 
 ［Experience］ドロップダウンメニューを使用して、現在のページのコピーを作成し、特定のオーディエンス向けにカスタマイズできます。 詳細は、 [コンテンツページのパーソナライゼーション](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) を参照してください。
-
-<a name="translations" />
 
 ### 翻訳
 
 ［**言語フラグ**］ をクリックして、翻訳ドロップダウンメニューにアクセスします。 ここでは、ページの有効言語のステータスを表示したり、言語を切り替えて翻訳を直接表示および編集したりできます。 詳細は、[サイト言語の設定](../../site-settings/site-localization.md)を参照してください。
 
 [［エクスペリエンス］](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) をコンテントページのパーソナライズに使用する場合、サイトで使用できる言語を使用してエクスペリエンスを設定することができます。 詳しくは、 [Managing Experience Localization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md#managing-experience-localization) を参照してください。
-
-<a name="device-display" />
 
 ### デバイスディスプレイ
 
@@ -50,15 +42,11 @@
 
 ![タブレットやスマホのレイアウトで、コンテンツプレビューのサイズを変更することができます。](content-page-editor-ui-reference/images/09.gif)
 
-<a name="edit-history" />
-
 ### 編集履歴
 
 履歴(![Time](./../../../images/icon-time.png))をクリックすると、現在の編集セッション中にコンテントページに対して行った変更を表示します。 元に戻すボタンとやり直しボタンを使用して、これらの変更を元に戻したり復元したりできます。
 
 ![［元に戻す］、［やり直し］、［履歴］ボタンを使って、変更した内容を元に戻すことができます。](./content-page-editor-ui-reference/images/10.png)
-
-<a name="edit-mode-selector" />
 
 ### 編集モードセレクター
 
@@ -66,18 +54,14 @@
 
 | 編集モード   | Description                                   | 利用可能なオプション                                      |
 |:------- |:--------------------------------------------- |:----------------------------------------------- |
-| ページデザイン | ページとページの内容を更新する権限がある場合に、ページをデザインすることができます。    | <ul><li> [Selection](#selection) </li><li> [Contents](#contents) </li><li> [Comments](#comments) </li></ul>                       |
+| ページデザイン | ページとページの内容を更新する権限がある場合に、ページをデザインすることができます。    | <ul><li> [Selection](#selection) </li><li> [Contents](#コンテンツ) </li><li> [Comments](#コメント) </li></ul>                       |
 | コンテンツ編集 | ページの更新権限がある場合は、コンテンツの編集が可能ですが、ページの内容は編集できません。 | ページデザインモードの全オプションに加えて: <ul><li> [フラグメントとウィジェット](#fragments-and-widgets) </li><li> [ページデザインオプション](#page-design-options) </li></ul> |
 
 ![編集モードは、［ページデザイン］と［コンテンツ編集］のどちらかを選択します。](content-page-editor-ui-reference/images/18.png)
 
-<a name="preview-and-publish" />
-
 ### プレビューと公開
 
 変更後、 **プレビュー**(![Preview](../../../images/icon-preview.png)) をクリックすると、ページの公開ビューが表示されます。 変更をプレビューしながら、表示するエクスペリエンス、言語、およびデバイスレイアウトを選択できます。 完了したら、 ［**公開**］ をクリックします。 デフォルトでは、公開すると変更がすぐに公開されます。 ただし、カスタム[ワークフロー](../../../process-automation/workflow/introduction-to-workflow.md)を有効にしてレビューと公開のプロセスを指示している場合は、［Publish］をクリックすると定義済みの手順が開始されます。
-
-<a name="editing-sidebar" />
 
 ## 編集サイドバー
 
@@ -96,8 +80,6 @@ DXP 7.4 以前では、ブラウザ (![Browser](../../../images/icon-browser.png
 
 ![コンテンツページサイドバーは、Liferay DXP 7.4以降と以前のバージョンとの違いを制御します。](content-page-editor-ui-reference/images/03.png)
 
-<a name="fragments-and-widgets" />
-
 ### フラグメントとウィジェット
 
 フラグメントとウィジェットサイドバーパネル(![Fragments and Widgets icon](../../../images/icon-cards2.png))では、ページを作成するために、ページ要素とカスタムページ要素の両方にアクセスできます。
@@ -108,9 +90,7 @@ DXP 7.4 以前では、ブラウザ (![Browser](../../../images/icon-browser.png
       コンテントページエディタのさまざまなページフラグメントの説明については、 [デフォルトのフラグメントリファレンス](./../page-fragments-and-widgets/using-fragments/default-fragments-reference.md) を参照してください。
    ```
 
-- **ウィジェット** ：他のDXPコンテキストと同様に、ウィジェットはページに動的機能を追加する [アプリケーション](../../../building-applications.html) です。 例としては、ブログ、掲示板、カレンダーなどがあります。 詳細は、[Using Widgets on Content Pages](./using-widgets-on-a-content-page.md)を参照してください。
-
-<a name="browser" />
+- **ウィジェット** ：他のDXPコンテキストと同様に、ウィジェットはページに動的機能を追加する[アプリケーション](../../../building-applications.md)です。 例としては、ブログ、掲示板、カレンダーなどがあります。 詳細は、[Using Widgets on Content Pages](./using-widgets-on-a-content-page.md)を参照してください。
 
 ### ブラウザ
 
@@ -123,7 +103,7 @@ DXP 7.4 以前では、ブラウザ (![Browser](../../../images/icon-browser.png
 - **ページ要素** ：ページ要素は、すべてのページ要素の階層的なアウトラインを表示し、それらの要素を選択、設定、削除することが可能です。 デザインモード中にページ上の任意の要素をクリックすると、選択パネルが開き、階層内の選択した要素が強調表示されます。 要素を選択すると、その要素に一般、スタイル、およびリンクオプションがある場合はそれらにアクセスできます。 詳しくは、 [フラグメントの設定](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) を参照してください。
 
    ```{note}
-   ページのヘッダーとフッターは、ページ要素パネルの階層に表示されません。 これは、[マスターページテンプレート](../defining-headers-and-footers/master-page-templates.md)  でしか修正できないからです。
+   ページのヘッダーとフッターは、ページ要素パネルの階層に表示されません。 これは、[マスターページテンプレート](../defining-headers and footers/master-page-templates.md) でしか修正できないからです。
    ```
 
 - **ページコンテンツ** ：ページコンテンツから、ページに含まれるコンテンツと、それらを編集するオプションにアクセスすることができます。 このコンテンツは、必須情報、名称、サブタイプなど、タイプ別に分類されています。 ここから、さまざまなアクションを行うことができます。
@@ -137,13 +117,9 @@ DXP 7.4 以前では、ブラウザ (![Browser](../../../images/icon-browser.png
    コンテンツをタイプで絞り込むと、そのタイプに応じた絞り込み検索が行われます。 検索結果にカーソルを合わせると、該当するページ要素がハイライトされます。
    ```
 
-<a name="page-design-options" />
-
 ### ページデザインオプション
 
 **ルック&フィール**(![Look and Feel](../../../images/icon-format.png)) をクリックすると [マスターページテンプレート](../defining-headers-and-footers/managing-master-page-templates.md) または [スタイルブック](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)を変更することができます。
-
-<a name="comments" />
 
 ### コメント
 
@@ -152,8 +128,6 @@ DXP 7.4 以前では、ブラウザ (![Browser](../../../images/icon-browser.png
 ```{note}
    7.3以降のバージョンでは、コメントはデフォルトで無効になっています。 ページコメントを有効にするには、*コントロールパネル*→*設定*→*システム設定*→*ページ*→*コンテンツページエディタ*に移動します。 次に、*コメントを有効にする*ボックスにチェックを入れて、*アップデート*をクリックします。
 ```
-
-<a name="selection" />
 
 ### 選択
 
@@ -167,15 +141,11 @@ DXP 7.4 以前では、ブラウザ (![Browser](../../../images/icon-browser.png
    ページのヘッダーとフッターは、選択パネルの階層に表示されません。 これは、[マスターページテンプレート](../defining-headers and footers/master-page-templates.md) でしか修正できないからです。
 ```
 
-<a name="contents" />
-
 ### コンテンツ
 
 > 対応可能：Liferay DXP/Portal 7.3
 
 ここでは、ページ上のすべてのWebコンテンツを表示、編集、および管理できます。 ウィジェットに表示されるコンテンツやコンテンツフィールドにマッピングされたコンテンツがあります。 詳細については、 [コンテントページのコンテンツの管理](./managing-content-in-content-pages.md) を参照してください。
-
-<a name="additional-information" />
 
 ## 追加情報
 

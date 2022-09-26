@@ -8,13 +8,13 @@ Liferay DXPインスタンスを最初に起動して設定すると、デフォ
 
 ## サイトの作成
 
-Liferay DXPには[サイトを構築](./sites/adding-a-site.md)し、[ページを作成する ](./creating-pages/adding-pages/adding-a-page-to-a-site.md)のに必要なツールがすべて含まれています。 既存の [サイトテンプレート](./sites/site-templates.md)からサイトを作成することもできますし、空白のサイトを作成して一から構築することもできます。
+Liferay DXPには[サイトを構築](./sites/adding-a-site.md)し、[ページを作成する ](./creating-pages/adding-pages/adding-a-page-to-a-site.md)のに必要なツールがすべて含まれています。 アプリケーションを含む事前定義されたページのセットを含む既存の[サイトテンプレート](./sites/site-templates.md)からサイトを作成することもできますし、空白のサイトを作成してゼロから構築することもできます。
 
 ページも同様に柔軟です。 複数のページタイプがあります。 既存の[ページタイプ](./creating-pages/understanding-pages/understanding-pages.md)からページを作成するか、デフォルトの[ページテンプレート](./creating-pages/adding-pages/creating-a-page-template.md)、または自分で作成したページテンプレートからページを作成します。
 
 サイトとページは階層的に整理することができます。 親サイトや親ページに対して、ネストしたページ（子ページ）や [ネストしたサイト](./sites/site-hierarchies.md) （子サイト）を好きなだけ追加することができます。 Liferay DXPインスタンスでは、様々な組織や従業員などのために複数のサイトを持つことが可能です。 [インポート/エクスポートオプション](./sites/exporting-importing-site-pages-and-content.md)を使用して、コンテンツやページをサイト間で共有することもできます。
 
-ページとサイトの設定 [ナビゲーション](./site-navigation/using-the-navigation-menus-application.md)の動作は直感的で柔軟性があります。 ページを作成すると、自動的にナビゲーションメニューに追加することができます。 必要に応じてページを非表示にしたり、ページのアクセス権を設定してユーザーのアクセスを制限することができます。
+ページとサイトの[ナビゲーション](./site-navigation/using-the-navigation-menus-application.md)動作の構成は直感的で柔軟性があります。 ページを作成すると、自動的にナビゲーションメニューに追加することができます。 必要に応じてページを非表示にしたり、ページのアクセス権を設定してユーザーのアクセスを制限することができます。
 
 また、Liferay DXPは、ユーザーエクスペリエンスを妨げることなく、サイトの変更を可能にするツールを提供しています。 Liferayサイトはステージングすることができ、ユーザーに公開する前にサイト上で変更を加えてテストすることができます。 Liferay DXPの [公開](./publishing-tools/publications.md) 機能がこれを処理してくれます。 ユーザーが見ている本番のサイトに影響を与えることなく、安全な環境でサイトの開発、追跡、更新を行うために、公開を利用することができます。
 
@@ -32,7 +32,7 @@ Liferay DXPのコンテンツ管理システム（CMS）は、さまざまな種
 
 ## ユーザーエクスペリエンスのカスタマイズ
 
-Liferay DXPの [パーソナライズとセグメンテーション](./personalizing-site-experience/personalizing-site-experience.md) フレームワークにより、ユーザーの興味やニーズに対応したサイト体験を構築することができます。 所属する組織やサイト内での役割など、特定の条件に基づいて[ユーザーセグメントを作成](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)し、それを使ってユーザー層に合わせて [パーソナライズされたページレイアウトやコンテンツ](./personalizing-site-experience/experience-personalization/content-page-personalization.md) を表示することができます。または、 [Analytics Cloudと連携](https://learn.liferay.com/analytics-cloud/latest/ja/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) して、セグメント内のユーザーがどのようにサイトを利用しているのか、その行動を分析することができます。 [ユーザーの行動に基づいてコンテンツを推奨](./personalizing-site-experience/experience-personalization/understanding-content-recommendations.md)することもできます。
+Liferay DXPの [パーソナライズとセグメンテーション](./personalizing-site-experience.md) フレームワークにより、ユーザーの興味やニーズに対応したサイト体験を構築することができます。 所属する組織やサイト内での役割など、特定の条件に基づいて[ユーザーセグメントを作成](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)し、それを使ってユーザー層に合わせて [パーソナライズされたページレイアウトやコンテンツ](./personalizing-site-experience/experience-personalization/content-page-personalization.md) を表示することができます。または、 [Analytics Cloudと連携](https://learn.liferay.com/analytics-cloud/latest/ja/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) して、セグメント内のユーザーがどのようにサイトを利用しているのか、その行動を分析することができます。 [ユーザーの行動に基づいてコンテンツを推奨](./personalizing-site-experience/experience-personalization/understanding-content-recommendations.md)することもできます。
 
 <!-- Screenshot -->
 
@@ -40,8 +40,8 @@ Liferay DXPの [パーソナライズとセグメンテーション](./personali
 
 サイトの外観、動作、機能を変更するための[設定](./site-settings/site-settings-ui-reference.md)が多数用意されています。 必要に応じて、[サイトとそのコンテンツを複数の言語にローカライズ](./site-settings/site-localization.md)できます。
 
-サイトのルック＆フィールを[異なるテーマを使用することで変更](../getting-started/changing-your-sites-appearance.md)することができます。 テーマは [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md)からダウンロードしてデプロイすることができますし、 [自分でテーマを作成することもできます](./site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md). テーマは、サイトの全体的なルック＆フィールを決定し、ページのCSS、JavaScript、HTMLを定義します（FreeMarkerテンプレートを使用）。  FreeMarkerは、標準的なHTML要素を組み合わせ、変数、条件文、ループなどの機能を追加しています。 詳細は、[Developing Themes](./developer_guide.md)を参照してください。
+サイトのルック＆フィールを[異なるテーマを使用することで変更](../getting-started/changing-your-sites-appearance.md)することができます。 テーマは [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md)からダウンロードしてデプロイすることができますし、 [自分でテーマを作成することもできます](./site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md). テーマは、サイトの全体的なルック＆フィールを決定し、ページのCSS、JavaScript、HTMLを定義します（FreeMarkerテンプレートを使用）。  FreeMarkerは、標準的なHTML要素を組み合わせ、変数、条件文、ループなどの機能を追加しています。 詳しくは、 [テーマを開発する](./developer-guide.md) をご覧ください。
 
 ## サイトの最適化
 
-Liferay DXPは、サイトの [検索エンジン最適化(SEO)ランキング](../site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)の向上から、 各デバイスに最適化された[レスポンシブ・ページの作成](./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md)、 [A/Bテスト](../site-building/optimizing-sites/ab-testing/ab-testing.md)によるメッセージング・キャンペーンの改善まで、サイトを最適化するための複数のツールと機能を提供します。 A/Bテストでは、現在のデフォルトバリエーションのページと、ページバリアント（複数可）を比較し、特定の目標（直帰率、クリック数など）に対して、どのページのパフォーマンスが良いかを確認します。 これにより、データに基づいてサイトに関するより良い判断ができるようになり、ユーザーや顧客にこれまで以上に迅速にサービスを提供できるようになります。
+Liferay DXPは、サイトの [検索エンジン最適化(SEO)ランキング](../site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)の向上から、各デバイスに最適化された[レスポンシブ・ページの作成](./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md)、[A/Bテスト](../site-building/optimizing-sites/ab-testing/ab-testing.md)によるメッセージング・キャンペーンの改善まで、サイトを最適化するための複数のツールと機能を提供します。A/Bテストでは、現在のデフォルトバリエーションのページと、ページバリアント（複数可）を比較し、特定の目標（直帰率、クリック数など）に対して、どのページのパフォーマンスが良いかを確認します。これにより、データに基づいてサイトに関するより良い判断ができるようになり、ユーザーや顧客にこれまで以上に迅速にサービスを提供できるようになります。

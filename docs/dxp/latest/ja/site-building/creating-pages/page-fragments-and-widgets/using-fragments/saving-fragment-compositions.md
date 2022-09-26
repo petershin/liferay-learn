@@ -32,7 +32,7 @@
 
    ![表示されるダイアログにフラグメント構成の情報を入力します。](./saving-fragment-compositions/images/02.png)
 
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
 保存されたフラグメント構成は、選択したフラグメントセットの下の ［**フラグメントとウィジェット**］ パネル（![Fragments and Widgets icon](../../../../images/icon-cards2.png)）に一覧表示されます。 他のフラグメントと同様に、ページまたはテンプレートに追加できます。
 
@@ -50,8 +50,6 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 最新版の[Liferayフラグメントツールキット](../../../developer-guide/reference/fragments/fragments-toolkit-command-reference.md)では、フラグメント構成の作成、エクスポート/インポート、およびプレビューがサポートされています。
 ```
 
-<a name="example-creating-a-banner-composition" />
-
 ## 例：バナーコンポジションの作成
 
 このステップバイステップの例では、入れ子になったコンテナフラグメントを使用してバナースタイルコンポジションを作成する方法を紹介します。 また、この例では、コンポジションを保存し、スタイルブックでその設定を調整する方法を説明しています。
@@ -61,9 +59,7 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 * [ステップ1：新しいコンテントページを作成する](#step-1-creating-a-new-content-page) 。
 * [ステップ2：コンテナフラグメントを設定する](#step-2-configuring-the-container-fragment) 。
 * [ステップ3: フラグメントコンポジションを保存する](#step-3-saving-the-fragment-composition) 。
-* [ステップ4：スタイルブックでコンテナ幅のデフォルトを設定する](#step-3-setting-the-default-container-width-in-the-style-book) 。
-
-<a name="step-1-creating-a-new-content-page" />
+* [ステップ4：スタイルブックでコンテナ幅のデフォルトを設定する](#step-4-setting-the-default-container-width-in-the-style-book) 。
 
 ### ステップ1：新しいコンテントページを作成する。
 
@@ -74,8 +70,6 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 1. **空白** テンプレート、または既存のテンプレートのいずれかを選択します。
 
 1. **ページの追加** ダイアログで、ページの **名前** を入力します。
-
-<a name="step-2-configuring-the-container-fragment" />
 
 ### ステップ2：コンテナフラグメントの設定
 
@@ -121,15 +115,11 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 コンテントページを公開する必要はありません。 コンテントページで進行中の作業は、自動的に下書きとして保存されます。
 ```
 
-<a name="step-3-saving-the-fragment-composition" />
-
 ### Step 3: フラグメントコンポジションの保存
 
 上記の手順に従って、コンポジションを新しいフラグメントとして保存します。
 
 ![コンテナオプションメニューからフラグメントコンポジションを保存します。](./saving-fragment-compositions/images/13.png)
-
-<a name="step-4-setting-the-default-container-width-in-the-style-book" />
 
 ### ステップ4：スタイルブックでデフォルトのコンテナ幅を設定する
 
@@ -167,8 +157,6 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 
 1. ［**公開**］ をクリックすると、新しい設定でスタイルブックが更新されます。
 
-<a name="creating-advanced-compositions-with-the-container-fragment" />
-
 ## コンテナフラグメントを使った高度なコンポジションの作成
 
 > 対応可能：Liferay DXP/Portal 7.4以降
@@ -190,8 +178,6 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 1. ［**Align Items**］ と ［**Justify Content**］ の設定をお好みで設定してください。
 
     ![項目の整列とコンテンツの両端揃えの設定をお好みで行ってください。](./saving-fragment-compositions/images/21.gif)
-
-<a name="additional-information" />
 
 ## 追加情報
 

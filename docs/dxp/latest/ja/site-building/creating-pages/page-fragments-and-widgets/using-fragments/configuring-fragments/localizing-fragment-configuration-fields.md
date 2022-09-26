@@ -4,7 +4,7 @@
 
 Liferayフラグメントを使用する場合、ターゲットオーディエンスの言語に一致するように次のフラグメント設定フィールドをローカライズできます。
 
-* [画像の説明（**alt text**)](#localizing-alternative-text-for-images)
+* [画像の説明（**alt text**)](#localizing-image-descriptions)
 * [編集可能なURL](#localizing-editable-urls) <!-- * \[Collection Filter Label Text\](#localizing-collection-filter-label-text) --> フラグメントの開発中に、`localizable`属性を使用して、フラグメントの構成フィールドをローカライズ可能にすることができます。 詳しくは、 [Fragment Specific Tags and Attributes Reference](../../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md)をお読みください。
 
 ## 画像の説明のローカライズ
@@ -17,7 +17,7 @@ Liferayフラグメントを使用する場合、ターゲットオーディエ�
 ローカライズ可能なフィールドには、その画像の説明の横にフラグのアイコンが表示されます。 
 ```
 
-画像の説明文に翻訳がない場合、説明文にはデフォルトのコンテントページの言語が表示されます。
+画像の説明に翻訳がない場合、説明にはデフォルトのコンテントページの言語が表示されます。
 
 ## 編集可能なURLのローカライズ
 
@@ -25,8 +25,12 @@ Liferayフラグメントを使用する場合、ターゲットオーディエ�
 
 ![コンテントページエディタでリンクをローカライズすることができます。](./localizing-fragment-configuration-fields/images/02.png)
 
-手動で入力したリンクや、コンテンツ項目からのリンクをローカライズすることができます。 リンクに翻訳がない場合、アクティブなURLは、デフォルトのコンテントページの言語のものになります。 <!--TASK: explain.
-## Localizing Collection Filter Label Text --> ## 追加情報
+手動で入力したリンクや、コンテンツ項目からのリンクをローカライズすることができます。 リンクに翻訳がない場合、アクティブなURLは、デフォルトのコンテントページの言語のものになります。
+
+<!--TASK: explain.
+## Localizing Collection Filter Label Text -->
+
+## 追加情報
 
 - [コンテントページの使用](../../../using-content-pages.md)
 - [コンテントページエディタUIリファレンス](../../../using-content-pages/content-page-editor-ui-reference.md)

@@ -1,6 +1,6 @@
 # コンテントページのコンテンツの管理
 <!-- Alt: Managing Content in Pages and Templates... If renamed, relocate to Displaying Content.-->
-ウィジェットセクションは、[ウィジェットページの**追加**メニュー](../using-widget-pages/adding-widgets-to-a-page.md)と同じように機能します。使用可能なウィジェットの完全なリストが表示され、それらをページに追加できます。主な違いは、コンテントページではウィジェットの主な設定オプションしか使用できないことです。
+ウィジェットセクションは、[ウィジェットページの **追加** メニュー](../using-widget-pages/adding-widgets-to-a-page.md)と同じように機能します。使用可能なウィジェットの完全なリストが表示され、それらをページに追加できます。主な違いは、コンテントページではウィジェットの主な設定オプションしか使用できないことです。
 
 ![ブラウザパネルを開き、［ページコンテンツ］タブをクリックします。](./managing-content-in-content-pages/images/01.png)
 

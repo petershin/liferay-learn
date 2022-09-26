@@ -22,10 +22,10 @@ bundling-resources/bundling-independent-ui-resources-via-theme-contributors.md
 :::
 
 :::{grid-item-card} テーマレットを介したリソースのバンドルとテーマへのインストール
-:link: ./bundling-resources/bundling-and-installing-resources-into-your-theme-via-themelets.md
+:link: ./bundling-resources/bundling-and-installing-resources-into-your-theme-via-themelet.md
 :::
 
 :::{grid-item-card} テーマコントリビューターを介した独立したUIリソースのバンドル
 :link: ./bundling-resources/bundling-independent-ui-resources-via-theme-contributors.md
-:::
+:::  
 ::::

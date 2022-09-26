@@ -1,8 +1,6 @@
 # Smartsupp
 
-[Smartsupp](https://www.smartsupp.com/) は、マルチチャネルの顧客コミュニケーションプラットフォームです。 この記事では、Liferayインスタンスとの[統合を可能にする](../enabling-automated-live-chat-systems.md)ためにSmartsuppアカウントIDを見つける方法について説明します。
-
-<a name="locating-your-smartsupp-account-id" />
+[Smartsupp](https://www.smartsupp.com/) は、マルチチャネルの顧客コミュニケーションプラットフォームです。 この記事では、Liferayインスタンスとの[統合を可能にする](../../enabling-automated-live-chat-systems.md)ためにSmartsuppアカウントIDを見つける方法について説明します。
 
 ## SmartsuppアカウントIDを見つける
 
@@ -12,6 +10,6 @@
 
     ![Smartsuppの左側のサイドバーにオプションが表示されます。歯車アイコンとチャットボックスを選択します。](./smartsupp/images/01.png)
 
-1. 以下のスクリーンショットでは、強調表示されている部分がLiferayチャットプロバイダーアカウントIDとして使用されます。  この部分を選択してコピーし、チャットプロバイダーアカウントIDとして使用して、Liferayインスタンスとの[自動ライブチャット統合を有効にします](../enabling-automated-live-chat-systems.md)。
+1. 以下のスクリーンショットでは、強調表示されている部分がLiferayチャットプロバイダーアカウントIDとして使用されます。  この部分を選択してコピーし、チャットプロバイダーアカウントIDとして使用して、Liferayインスタンスとの[自動ライブチャット統合を有効にします](../../enabling-automated-live-chat-systems.md)。
 
     ![Smartsuppキーの例を示しています。これをチャットプロバイダーIDとして使用します。](./smartsupp/images/02.png)

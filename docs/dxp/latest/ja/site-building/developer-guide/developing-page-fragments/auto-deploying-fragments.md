@@ -1,20 +1,21 @@
 # フラグメントの自動デプロイ
 
-> 利用可能: Liferay Portal 7.3 GA1以降および Liferay DXP 7.3以降
+{bdg-secondary}`利用可能な Liferay Portal 7.3 GA1+ または Liferay DXP 7.3+`
 
-[独自のツールを使用してページフラグメントを開発している](./using-the-fragments-toolkit.md#fragment-set-structure) 場合は、Liferay UI を介してインポートできるように、それらを ZIP ファイルにパッケージ化することでデプロイできます。 ただし、UI の使用に限定されません。 コマンドラインからフラグメント ZIP ファイルをデプロイすることもできます。 ここでは、フラグメントプロジェクトを操作し、Liferay の自動デプロイメカニズムを使用してコマンドラインからフラグメントを必要なサイトにインポートする方法を学びます。
+もしあなたが [独自のツールでページフラグメントを開発しているなら、](./using-the-fragments-toolkit.md#fragment-set-structure) 、Liferay UI経由でインポートするためにそれらをZIPファイルにパッケージすることでデプロイすることができます。 ただし、UI の使用に限定されません。 コマンドラインからフラグメントZIPファイルをデプロイすることも可能です。 ここでは、フラグメントプロジェクトを扱う方法と、Liferayの自動デプロイメント機構を使ってコマンドラインから好きなサイトにフラグメントをインポートする方法を学びます。
 
 ```{note}
-Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay UIではフラグメントセットと呼ばれます。
+Liferay DXP 7.4+ では、フラグメントコレクションは Liferay UI ではフラグメントセットと呼ばれます。
 ```
 
 ## 自動デプロイ可能なフラグメントセットをデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to auto-deploy an example Fragment Set:
+次に、以下の手順に従って、サンプルのフラグメントセットを自動デプロイします。
 
-1. Download and unzip the [example auto-deployable Fragment Set](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip) :
+1. [Example auto-deployable fragment set](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip) をダウンロードし、解凍する。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O
@@ -24,7 +25,7 @@ Then, follow these steps to auto-deploy an example Fragment Set:
     unzip liferay-a2f8.zip
     ```
 
-1. フラグメントプロジェクトのセットとそのデプロイメント記述子をZIPファイルに圧縮します。
+1. フラグメントプロジェクトのセットとそのデプロイメントディスクリプタをZIPファイルに圧縮します。
 
     ```bash
     cd liferay-a2f8
@@ -34,7 +35,7 @@ Then, follow these steps to auto-deploy an example Fragment Set:
     zip -r  a2f8-fragments.zip a2f8-set/ liferay-deploy-fragments.json
     ```
 
-1. 新しい `.zip` ファイルをLiferayのDockerコンテナ内の自動デプロイフォルダにコピーすることで、フラグメントセットを記述子で指定されたサイトにインポートします。
+1. 新しい `.zip` ファイルを Liferay の Docker コンテナの auto-deploy フォルダにコピーして、フラグメントセットをディスクリプタで指定したサイトにインポートします。
 
     ```bash
     docker cp a2f8-fragments.zip $(docker ps -lq):/opt/liferay/deploy
@@ -46,17 +47,17 @@ Then, follow these steps to auto-deploy an example Fragment Set:
     INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:263] Processing a2f8-fragments.zip
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認する。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されるはずです。
 
 ```{note}
-インポートされたフラグメントに無効なルールがある場合、ドラフトとして自動的に保存されます。
+インポートしたフラグメントに無効なルールがある場合、自動的にドラフトとして保存されます。
 ```
 
-![セットが利用可能です。](./auto-deploying-fragments/images/01.png)
+![セットでご利用いただけます。](./auto-deploying-fragments/images/01.png)
 
 ## フラグメントプロジェクトのストラクチャー
 
-自動デプロイ可能なフラグメントプロジェクトの構造は次のとおりです。
+自動展開可能なフラグメントプロジェクトは、このような構造になっています。
 
 ```bash
 [project ZIP]
@@ -67,13 +68,13 @@ Then, follow these steps to auto-deploy an example Fragment Set:
 └── liferay-deploy-fragments.json
 ```
 
-`liferay-deploy-fragments.json` ファイルは、フラグメントをデプロイする範囲を指定します。
+`liferay-deploy-fragments.json` ファイルは、フラグメントをデプロイするスコープを指定します。
 
 * システム全体 (すべてのインスタンス)
-* 仮想インスタンス (会社)
-* サイト (グループ)
+* 仮想インスタンス（会社）
+* あるサイト（グループ）。
 
-以下のサンプルの構成では、仮想インスタンス（liferay.com）内の「Guest」というサイト（グループ）にデプロイするよう指定されています。
+この例では、仮想インスタンス（liferay.com）内の「Guest」というサイト（グループ）にデプロイする設定になっています。
 
 ```json
 {
@@ -82,7 +83,7 @@ Then, follow these steps to auto-deploy an example Fragment Set:
 }
 ```
 
-このJSONファイルのキーはどちらもオプションです。 `liferay-deploy-fragments.json` ファイルで、空の JSON 要素を指定するか、次の構成を追加することで、フラグメントをシステム全体 (すべてのインスタンス) で使用できるようにすることができます。
+このJSONファイルのキーはどちらもオプションです。 `liferay-deploy-fragments.json` ファイルで、空のJSON要素を指定するか、この設定を追加すれば、フラグメントをシステム全体で（すべてのインスタンスで）利用できるようにすることができます。
 
 ```json
 {
@@ -90,35 +91,39 @@ Then, follow these steps to auto-deploy an example Fragment Set:
 }
 ```
 
+```{warning}
+フラグメントをシステムレベルで利用可能にする場合、[リソース付き](./including-default-resources-in-fragments.md) のインポートはサポートされていません。
+```
+
 ```{note}
-フラグメントツールキット[npm run compress command](./using-the-fragments-toolkit.md) を使用すると、フラグメント ZIP ファイルとそのデプロイメント記述子の作成が容易になります。
+フラグメントツールキットの [`npm run compress` コマンド](./using-the-fragments-toolkit.md) はフラグメント ZIP ファイルとその配備記述子の作成を容易にします。
 ```
 
 ## フラグメントセットを変更して再デプロイする
 
-フラグメントセットを変更して再デプロイするには、次の手順に従います。
+以下の手順でフラグメントセットを修正し、再展開します。
 
-1. プロジェクトの `a2f8-jumbotron` フラグメントフォルダを `a2f8-set/` フォルダに移動して、サンプルのセットに新しいフラグメントを追加します。
+1. プロジェクトの `a2f8-jumbotron` fragment フォルダーを `a2f8-set/` フォルダーに移動して、サンプルセットに新しいフラグメントを追加してください。
 
-1. 前述のように、フラグメントセットを ZIP ファイルに圧縮します。
+1. 上記と同様にフラグメントセットをZIPファイルに圧縮してください。
 
     ```bash
     zip -r  a2f8-fragments.zip a2f8-set/ liferay-deploy-fragments.json
     ```
 
-1. 上記で行ったように、ZIP ファイルを Docker コンテナにコピーして、変更されたフラグメントセットをインポートします。
+1. 前回と同様にZIPファイルをDockerコンテナにコピーして、変更したフラグメントセットをインポートします。
 
    ```bash
    docker cp a2f8-fragments.zip $(docker ps -lq):/opt/liferay/deploy
    ```
 
-1. 新しいフラグメントを確認します。 ［**サイトメニュー**］(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動し、 ［**A2F8セット**］ をクリックします。 A2F8ジャンボトロンフラグメントが含まれているはずです。
+1. 新しいフラグメントをチェックする。 ［**サイトメニュー**］(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動し、 ［**A2F8セット**］ をクリックします。 A2F8ジャンボトロンの断片が含まれているはずです。
 
-    ![新しいフラグメントは、自動デプロイされたセットに含まれます。](./auto-deploying-fragments/images/02.png)
+    ![新しいフラグメントは、自動展開されたセットに含まれます。](./auto-deploying-fragments/images/02.png)
 
-これで、ローカルでフラグメントセットを操作する方法、フラグメントセットにサイトを指定する方法、自動デプロイメントを使ってフラグメントセットをインポートする方法がわかりました。
+フラグメントセットをローカルで操作する方法、フラグメントセットのサイトを指定する方法、自動配置を使用してインポートする方法はお分かりいただけたと思います。
 
 ## 追加情報
 
-* [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md)
+* [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
 * [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md)

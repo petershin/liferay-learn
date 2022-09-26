@@ -15,11 +15,11 @@ style-books/developer-guide.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} スタイルブックを使用してサイトの外観を標準化する
-:link: ./style-books/using-a-style-book-to-standardize-site-appearance.md
+:::{grid-item-card} Using a Style Book to Standardize Site Appearance
+:link: ./style-books/using-a-style-book tostandardize-site-appearance.md
 :::
 
-:::{grid-item-card} 開発者ガイド
+:::{grid-item-card} デベロッパーガイド
 :link: ./style-books/developer-guide.md
-:::
+:::  
 ::::

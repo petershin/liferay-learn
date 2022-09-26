@@ -25,19 +25,19 @@ experience-personalization/configuring-content-recommendations.md
 :link: ./experience-personalization/content-page-personalization.md
 :::
 
-:::{grid-item-card} エクスペリエンスの作成と管理
-:link: ./experience-personalization/creating-and-managing-experiences.md
+:::{grid-item-card} 体験の作成と管理
+:link: ./experience-personalization/creating and-managing-experiences.md
 :::
 
-:::{grid-item-card} コレクションのパーソナライズ
+:::{grid-item-card} パーソナライジングコレクション
 :link: ./experience-personalization/personalizing-collections.md
 :::
 
-:::{grid-item-card} コンテンツ推薦を理解する
+:::{grid-item-card} コンテンツの推奨を理解する
 :link: ./experience-personalization/understanding-content-recommendations.md
 :::
 
-:::{grid-item-card} コンテンツのリコメンデーションの設定
+:::{grid-item-card} コンテンツ推薦の設定
 :link: ./experience-personalization/configuring-content-recommendations.md
-:::
+:::  
 ::::

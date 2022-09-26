@@ -17,7 +17,7 @@ managing-site-urls/using-the-redirection-tool.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} サイトのフレンドリURLを設定する
+:::{grid-item-card} あなたのサイトのフレンドリーURLを設定する
 :link: ./managing-site-urls/configuring-your-sites-friendly-url.md
 :::
 
@@ -25,7 +25,7 @@ managing-site-urls/using-the-redirection-tool.md
 :link: ./managing-site-urls/configuring-virtual-hosts-site-urls.md
 :::
 
-:::{grid-item-card} 404設定の構成
+:::{grid-item-card} リダイレクトツールを使った設定
 :link: ./managing-site-urls/using-the-redirection-tool.md
-:::
+:::  
 ::::

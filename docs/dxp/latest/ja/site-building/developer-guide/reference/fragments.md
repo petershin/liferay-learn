@@ -19,19 +19,19 @@ fragments/fragment-specific-tags-reference.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} フラグメントツールキットコマンドリファレンス
+:::{grid-item-card} Fragments Toolkit コマンドリファレンス
 :link: ./fragments/fragments-toolkit-command-reference.md
 :::
 
-:::{grid-item-card} ページ フラグメントエディタのインターフェイスリファレンス
+:::{grid-item-card} ページフラグメントエディタインタフェースリファレンス
 :link: ./fragments/page-fragment-editor-interface-reference.md
 :::
 
-:::{grid-item-card} フラグメント設定タイプのリファレンス
+:::{grid-item-card} フラグメントの設定タイプリファレンス
 :link: ./fragments/fragment-configuration-types-reference.md
 :::
 
-:::{grid-item-card} フラグメント固有のタグと属性のリファレンス
+:::{grid-item-card} フラグメント固有タグリファレンス
 :link: ./fragments/fragment-specific-tags-reference.md
-:::
+:::  
 ::::

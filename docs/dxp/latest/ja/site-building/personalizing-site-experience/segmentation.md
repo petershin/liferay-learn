@@ -18,14 +18,14 @@ segmentation/segments-editor-ui-reference.md
 :gutter: 3 3 3 3
 
 :::{grid-item-card} ユーザーセグメントの作成と管理
-:link: ./segmentation/creating-and-managing-user-segments.md
+:link: ./segmentation/creating and-managing-user-segments.md
 :::
 
-:::{grid-item-card} ユーザーセグメントの分析を取得する
+:::{grid-item-card} ユーザーセグメントのアナリティクスを取得する
 :link: ./segmentation/getting-analytics-for-user-segments.md
 :::
 
-:::{grid-item-card} セグメントエディターUIリファレンス
-:link: ./segmentation/segments-editor-ui-reference.md
-:::
+:::{grid-item-card} Segments Editor UI Reference
+:link: ./segmentation/segments-editor-ui-reference.md 
+:::  
 ::::

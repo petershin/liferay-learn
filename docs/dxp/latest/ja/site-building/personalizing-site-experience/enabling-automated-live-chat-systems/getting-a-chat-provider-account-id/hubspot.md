@@ -4,8 +4,6 @@
 
 ライブチャットを作成し設定するには、 [Hubspotのナレッジベース](https://knowledge.hubspot.com/chatflows/create-a-live-chat) の手順に従ってください。
 
-<a name="locating-your-hubspot-user-account-id" />
-
 ## HubspotユーザーアカウントIDを見つける
 
 1. [Hubspotアカウント](https://app.hubspot.com/login) にログインします。
@@ -16,8 +14,6 @@
 
     ![右上隅にあるプロフィールに移動し、使用するチャンネルへのアカウント番号をコピーします。](./hubspot/images/01.png)
 
-<a name="getting-the-hubspot-api-token" />
-
 ## Hubspot APIトークンを取得する
 
 Hubspotアカウントにログインしている状態で、
@@ -26,18 +22,14 @@ Hubspotアカウントにログインしている状態で、
 
     ![［Settings］ボタンをクリックします。](./hubspot/images/02.png)
 
-1. ページの左側にある</em>［Integrations］</em> &rarr; ［**API Key**］ をクリックします。</p>
+1. ページの左側にある ［**Integrations**］ &rarr; ［**API Key**］ をクリックします。
 
-    ![［Integrations］をクリックして、APIキーにアクセスします。](./hubspot/images/03.png)</li>
+    ![［Integrations］をクリックして、APIキーにアクセスします。](./hubspot/images/03.png)
 
-1
+1. ［**Show**］ をクリックして、APIトークンキーを表示します。
 
-［**Show**］ をクリックして、APIトークンキーを表示します。
-
-    ![［Show］をクリックして、APIトークンキーを表示します。](./hubspot/images/04.png)</ol>
-
-<a name="conclusion" />
+    ![［Show］をクリックして、APIトークンキーを表示します。](./hubspot/images/04.png)
 
 ## まとめ
 
-ユーザーアカウントIDとAPIトークンを取得したら、それらを組み合わせて、Liferayインスタンスとの[ライブチャットを有効にする](../enabling-automated-live-chat-systems.md)ときにチャットプロバイダーアカウントIDとして使用します。 チャットプロバイダーアカウントIDは、`[Hubspot Account ID]/[Hubspot API Token]`の形式に従います。
+ユーザーアカウントIDとAPIトークンを取得したら、それらを組み合わせて、Liferayインスタンスとの[ライブチャットを有効にする](../../enabling-automated-live-chat-systems.md)ときにチャットプロバイダーアカウントIDとして使用します。 チャットプロバイダーアカウントIDは、`[Hubspot Account ID]/[Hubspot API Token]`の形式に従います。

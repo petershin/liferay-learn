@@ -31,7 +31,7 @@ adding-pages/using-the-full-page-application-page-type.md
 :link: ./adding-pages/exporting-and-importing-page-templates.md
 :::
 
-:::{grid-item-card} フルページアプリケーションページタイプの使用
+:::{grid-item-card} フルページアプリケーションページタイプを使う
 :link: ./adding-pages/using-the-full-page-application-page-type.md
 :::
 ::::

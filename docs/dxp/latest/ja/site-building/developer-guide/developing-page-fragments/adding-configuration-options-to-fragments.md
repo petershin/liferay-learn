@@ -6,8 +6,7 @@
 
 - [構成可能なフラグメントのデプロイ](#deploy-a-configurable-fragment)
 - [構成の検討](#examine-the-configuration)
-- [構成テキスト値のエスケープ](#escape-configuration-text-values)
-- [構成の変更](#modify-the-configuration)
+- [設定の変更](#modify-the-configuration)
 - [変更のプロパゲートとテスト](#propagate-the-changes-and-test)
 - [関連情報](#related-information)
 
@@ -188,31 +187,11 @@ Then, follow these steps to deploy an example to see how Fragment configuration 
 
 この例は、選択の構成を示しています。 使用可能なフラグメント構成タイプの完全なリストは、[Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md)を参照してください。
 
-### 構成テキスト値のエスケープ
-
-悪意のあるコードがテキストフィールドに挿入され、他のフラグメントユーザーに大損害を与える可能性があります。 クロスサイトスクリプティング（XSS）攻撃から保護するには、フラグメントテキスト値をエスケープする必要があります。
-
-一般的なケースでは、HTML `escape()`メソッドを使用できます。 詳細は、 [`HtmlUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) クラスを参照してください。
-
-```html
-<div class="fragment_38816">
-    "${htmlUtil.escape(configuration.text)}"
-</div>
-```
-
-属性の設定やHTMLの子要素の追加など、JavaScript攻撃を防ぐには、`Liferay.Util.escapeHTML()` 関数を使用します。
-
-```javascript
-function (fragmentElement, configuration) {
-    const escapedValue = Liferay.Util.escapeHTML(configuration.text)
-}
-```
-
 ## 設定の変更
 
 構成がどのように機能するかを理解したので、構成を変更できます。
 
-1. **サイトメニュー**（![サイトメニュー](../../../images/icon-product-menu.png)）を開き、 ［**Design**］ &rarr; ［**Fragments**］ に移動します。
+1. **サイトメニュー**（![サイトメニュー](../../../images/icon-product-menu.png)）を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。
 
     ```{note}
     Liferay DXP 7.1および7.2では、代わりにプロダクトメニューの*サイト* → *サイトビルダー* → *ページ フラグメント*に移動して、フラグメントページを表示します。
@@ -274,5 +253,6 @@ function (fragmentElement, configuration) {
 ## 関連情報
 
 * [フラグメントの自動デプロイ](./auto-deploying-fragments.md)
+* [フラグメント・コンフィギュレーションを使用する際のベストプラクティス](./best-practices-for-using-fragment-configurations.md)
 * [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
 * [フラグメント設定タイプのリファレンス](../reference/fragments/fragment-configuration-types-reference.md)

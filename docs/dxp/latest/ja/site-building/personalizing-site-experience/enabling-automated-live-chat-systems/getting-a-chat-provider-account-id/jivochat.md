@@ -1,8 +1,6 @@
 # JivoChat
 
-[JivoChat](https://jivochat.com/) は、プラットフォーム間でチームをユーザーに接続するメッセージングプラットフォームです。 JivoChatアカウントIDをLiferayインスタンスと[統合できます](../enabling-automated-live-chat-systems.md)。
-
-<a name="locating-your-jivochat-account-id" />
+[JivoChat](https://jivochat.com/) は、プラットフォーム間でチームをユーザーに接続するメッセージングプラットフォームです。 JivoChatアカウントIDをLiferayインスタンスと[統合できます](../../enabling-automated-live-chat-systems.md)。
 
 ## JivoChatアカウントIDを見つける
 
@@ -18,6 +16,6 @@
 
 4. ［**Installation**］ をクリックします。
 
-    以下のスクリーンショットでは、強調表示されている部分がLiferayチャットプロバイダーアカウントIDとして使用されます。  この部分を選択してコピーし、チャットプロバイダーアカウントIDとして使用して、Liferayインスタンスとの[自動ライブチャット統合を有効にします](../enabling-automated-live-chat-systems.md)。
+    以下のスクリーンショットでは、強調表示されている部分がLiferayチャットプロバイダーアカウントIDとして使用されます。  この部分を選択してコピーし、チャットプロバイダーアカウントIDとして使用して、Liferayインスタンスとの[自動ライブチャット統合を有効にします](../../enabling-automated-live-chat-systems.md)。
 
     ![LiferayチャットプロバイダーアカウントIDのこの部分をコピーして、チャットプロバイダーIDとして使用します。](./jivochat/images/03.png)

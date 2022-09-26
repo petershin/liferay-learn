@@ -15,5 +15,5 @@ developer-guide/navigation-menu-api-basics.md
 
 :::{grid-item-card} ナビゲーションメニューAPIの基本
 :link: ./developer-guide/navigation-menu-api-basics.md
-:::
+:::  
 ::::

@@ -13,7 +13,7 @@
 ```
 
 ```{important}
-詳細は、 [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation) を参照してください。
+詳細は、 [メンテナンスモードと非推奨のポリシー](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation) を参照してください。
 ```
 
 ## 廃止予定の機能の利用可能性

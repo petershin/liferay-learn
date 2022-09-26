@@ -21,11 +21,11 @@ building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
 :link: ./building-a-responsive-site/building-a-responsive-site.md
 :::
 
-:::{grid-item-card} モバイルデバイスルールの作成
+:::{grid-item-card} モバイルデバイスのルールを作成する
 :link: ./building-a-responsive-site/creating-mobile-device-rules.md
 :::
 
 :::{grid-item-card} グリッドフラグメントを使用したレスポンシブレイアウトの構築
 :link: ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
-:::
+:::  
 ::::

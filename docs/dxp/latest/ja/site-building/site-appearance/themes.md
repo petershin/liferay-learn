@@ -17,7 +17,7 @@ themes/theme-development.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} テーマの概要
+:::{grid-item-card} テーマ入門
 :link: ./themes/introduction-to-themes.md
 :::
 
@@ -27,5 +27,5 @@ themes/theme-development.md
 
 :::{grid-item-card} テーマ開発
 :link: ./themes/theme-development.md
-:::
+:::  
 ::::

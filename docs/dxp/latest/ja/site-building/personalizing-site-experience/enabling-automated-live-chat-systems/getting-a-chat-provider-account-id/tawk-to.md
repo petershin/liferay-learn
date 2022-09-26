@@ -1,8 +1,6 @@
 # Tawk.to
 
-[Tawk.to](https://www.tawk.to/) は、ライブチャットおよびカスタマーサポートのプラットフォームです。 この記事では、Liferayインスタンスとの[統合を可能にする](../enabling-automated-live-chat-systems.md)ためにTawk.toアカウントIDを見つける方法について説明します。
-
-<a name="locating-your-tawkto-account-id" />
+[Tawk.to](https://www.tawk.to/) は、ライブチャットおよびカスタマーサポートのプラットフォームです。 この記事では、Liferayインスタンスとの[統合を可能にする](../../enabling-automated-live-chat-systems.md)ためにTawk.toアカウントIDを見つける方法について説明します。
 
 ## Tawk.toアカウントIDを見つける
 
@@ -16,6 +14,6 @@
 
     ![チャットウィジェットオプションが表示されます。](./tawk-to/images/02.png)
 
-1. ［**Direct Chat Link**］ ヘッダの下で、URLの強調表示された部分をコピーし、それをチャットプロバイダーアカウントIDとして使用して、Liferayインスタンスとの[自動ライブチャット統合を有効にします](../enabling-automated-live-chat-systems.md)。
+1. ［**Direct Chat Link**］ ヘッダの下で、URLの強調表示された部分をコピーし、それをチャットプロバイダーアカウントIDとして使用して、Liferayインスタンスとの[自動ライブチャット統合を有効にします](../../enabling-automated-live-chat-systems.md)。
 
     ![ダイレクトチャットリンクのこの部分をLiferayチャットアカウントIDとして使用します。](./tawk-to/images/03.png)

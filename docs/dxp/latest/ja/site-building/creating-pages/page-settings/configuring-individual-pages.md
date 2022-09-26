@@ -10,7 +10,7 @@
 
 これらの設定は、以下のタブに整理されています。
 
-* [General (Automatic Copy)](#general)
+* [共通](#general)
 * [SEO](#seo)
 * [Open Graph](#open-graph)
 * [カスタムメタタグ](#custom-meta-tags)
@@ -19,7 +19,7 @@
 これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 [Introduction to Localization](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) と [Modifying Localizable Site Fields](../../site-settings/site-localization.md#modifying-localizable-site-fields) で、より詳細な情報をご覧下さい。
 ```
 
-## General (Automatic Copy)
+## 共通
 
 ページ名、フレンドリURL、レイアウトなど、ページの基本的な情報やデザインを設定することができます。
 
@@ -45,7 +45,7 @@
 
 ### カテゴリ設定
 
-**トピック** と **タグ** を使ってページのコンテンツを分類し、ユーザーがより簡単にコンテンツを探せるようにします。 タグとカテゴリの使用の詳細については、 [カテゴリとタグを使用したコンテンツの整理](../../../content-authoring-and-management/tags_and_categories.html) を参照してください。
+**トピック** と **タグ** を使ってページのコンテンツを分類し、ユーザーがより簡単にコンテンツを探せるようにします。 タグとカテゴリの使用の詳細は、[カテゴリとタグを使用したコンテンツの整理](../../../content-authoring-and-management/tags-and-categories.md)を参照してください。
 
 ### ルック&フィール
 
@@ -81,7 +81,7 @@
 
 **モバイルデバイスルール** ：ページがモバイルデバイスのためにそのページセットのルールを使用するか、独自に設定されているかを判断します。 これらのルールは、ページのコンテンツがさまざまな種類のモバイルデバイスでどのように表示されるかを決定します。
 
-**カスタマイズの設定** ：ウィジェットページのカラムをユーザー向けに **カスタマイズ可能** にするかどうかを決定します。 カスタマイズが有効な場合、ユーザーがカスタマイズできる列を指定します。 詳しくは、 [Personalizing Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) を参照してください。
+**カスタマイズの設定** ：ウィジェットページのカラムをユーザー向けに **カスタマイズ可能** にするかどうかを決定します。 カスタマイズが有効な場合、ユーザーがカスタマイズできる列を指定します。 詳しくは、 [Personalizing Pages](../using-widget-pages/configuring-widgets/enabling-user-personalization-of-widget-pages.md) を参照してください。
 
 ![ユーザーがウィジェットページをカスタマイズできるかどうかを判断します。](./configuring-individual-pages/images/12.png)
 

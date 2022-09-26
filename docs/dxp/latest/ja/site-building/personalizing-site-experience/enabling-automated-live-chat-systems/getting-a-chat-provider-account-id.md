@@ -69,5 +69,5 @@ getting-a-chat-provider-account-id/zendesk.md
 
 :::{grid-item-card} Zendesk
 :link: ./getting-a-chat-provider-account-id/zendesk.md
-:::
+:::  
 ::::

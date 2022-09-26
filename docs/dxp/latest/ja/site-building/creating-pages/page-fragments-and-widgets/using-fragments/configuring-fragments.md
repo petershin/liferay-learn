@@ -6,7 +6,6 @@ toc:
 - ./configuring-fragments/fragment-sub-elements-reference.md
 - ./configuring-fragments/localizing-fragment-configuration-fields.md
 ---
-
 # フラグメントの設定
 
 ```{toctree}
@@ -40,7 +39,9 @@ DXPのレスポンシブレイアウトエディターを使用すると、さ�
 
 ### スタイル
 
-［Styles］タブには、フラグメントのスタイルを構成するための標準オプションが含まれています。 フラグメントの寸法、背景、枠線などが含まれます。 詳しくは、[Configuring Fragment Styles](./configuring-fragments/styles-reference.md)を参照してください。
+［Styles］タブには、フラグメントのスタイルを構成するための標準オプションが含まれています。 フラグメントの寸法、背景、枠線などが含まれます。 利用可能なスタイル設定の詳細については、「 [フラグメントスタイルの設定」](./configuring-fragments/styles-reference.md) を参照してください。
+
+より複雑な構造を持つカスタム・フラグメントでは、スタイルの変更を適切に適用するために、特定のHTMLの変更が必要になる場合があります。 詳しくは、 [フラグメントにスタイルを適用する](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) を参照してください。
 
 ### 詳細設定
 
@@ -62,7 +63,7 @@ Advancedタブには、より高度な設定や技術的な設定が含まれて
 
 ［リンク］タブでは、ページ要素にURLを手動で追加するか、使用可能なコンテンツ項目から選択することができます。 目的のターゲット（例：自身、親）を指定することもできます。
 
-::::{grid} 2 
+::::{grid} 2
 :gutter: 3 3 3 3
 
 :::{grid-item-card} 一般設定リファレンス
@@ -73,11 +74,11 @@ Advancedタブには、より高度な設定や技術的な設定が含まれて
 :link: ./configuring-fragments/styles-reference.md
 :::
 
-:::{grid-item-card} フラグメントサブ要素リファレンス
+:::{grid-item-card} フラグメントサブエレメントリファレンス
 :link: ./configuring-fragments/fragment-sub-elements-reference.md
 :::
 
 :::{grid-item-card} フラグメント設定フィールドのローカライズ
 :link: ./configuring-fragments/localizing-fragment-configuration-fields.md
-:::
+:::  
 ::::

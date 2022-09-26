@@ -165,8 +165,12 @@ In this exercise, you can use either the cURL commands or Java classes to call t
      ...
      "headline" : "Able Thread",
      "id" : 43942,
+     ...
+     "messageBoardRootMessageId" : 43941,
    }
    ```
+
+   All threads are created with a root message that serves as the parent message of all direct replies in the thread (i.e., `messageBoardRootMessageId`).
 
 1. Execute `MessageBoardThread_POST_ToSection` using the above section ID for its parameter. This creates a new message board thread for the specified section.
 
@@ -196,10 +200,6 @@ In this exercise, you can use either the cURL commands or Java classes to call t
      "messageBoardSectionId" : 43925,
      ...
    }
-   ```
-
-   ```{note}
-   The `messageBoardRootMessageId` field identifies the thread's root message.
    ```
 
 1. Execute `MessageBoardThread_PATCH_ById` using the thread's ID for its parameter. This updates the details of the specified thread with those provided in the API call.
@@ -293,9 +293,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    }
    ```
 
-   ```{note}
    The new message is created as a child of the thread's root message (`messageBoardRootMessageId`).
-   ```
 
 1. Execute `MessageBoardMessage_PATCH_ById` using the message's ID for its parameter. This updates the details of the specified message with those provided in the API call.
 

@@ -192,7 +192,7 @@ Code:
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-23
+   :lines: 8-20
 ```
 
 The `TaxonomyVocabulary` fields are listed in JSON.

@@ -201,7 +201,7 @@ Code:
 ```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/java/BlogPosting_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-18
 ```
 
 The `BlogPosting` fields are listed in JSON.

@@ -204,7 +204,7 @@ Code:
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/java/KnowledgeBaseArticle_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-23
+   :lines: 8-20
 ```
 
 The `KnowledgeBaseArticle` fields appear in JSON.

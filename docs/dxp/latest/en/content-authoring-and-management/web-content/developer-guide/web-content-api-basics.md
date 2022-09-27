@@ -224,7 +224,7 @@ Code:
 ```{literalinclude} ./web-content-api-basics/resources/liferay-r4h9.zip/java/StructuredContent_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-23
+   :lines: 8-20
 ```
 
 The `StructuredContent` fields appear in JSON.
@@ -328,7 +328,7 @@ Code:
 ```{literalinclude} ./web-content-api-basics/resources/liferay-r4h9.zip/java/ContentStructure_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-23
+   :lines: 8-20
 ```
 
 The `ContentStructure` fields appear in JSON.

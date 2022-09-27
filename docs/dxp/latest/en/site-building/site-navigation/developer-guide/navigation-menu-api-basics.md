@@ -190,7 +190,7 @@ Code:
 ```{literalinclude} ./navigation-menu-api-basics/resources/liferay-p7s4.zip/java/NavigationMenu_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-22
+   :lines: 8-19
 ```
 
 The `NavigationMenu` fields are listed in JSON.

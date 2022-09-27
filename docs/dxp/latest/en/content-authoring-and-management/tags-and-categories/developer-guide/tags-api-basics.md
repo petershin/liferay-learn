@@ -190,7 +190,7 @@ Code:
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/java/Keyword_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-18
 ```
 
 The `Keyword` fields are listed in JSON.

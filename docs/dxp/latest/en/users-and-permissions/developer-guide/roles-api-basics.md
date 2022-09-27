@@ -171,7 +171,7 @@ Code:
 ```{literalinclude} ./roles-api-basics/resources/liferay-z3v5.zip/java/Role_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-17
 ```
 
 The `Role` fields appear in JSON.

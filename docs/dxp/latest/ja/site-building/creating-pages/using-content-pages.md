@@ -6,7 +6,6 @@ toc:
 - ./using-content-pages/using-page-comments.md
 - ./using-content-pages/content-page-editor-ui-reference.md
 ---
-
 # コンテントページの使用
 
 ```{toctree}
@@ -35,7 +34,8 @@ using-content-pages/content-page-editor-ui-reference.md
 
 はじめるには、 [コンテンツページへの要素の追加](./using-content-pages/adding-elements-to-content-pages.md) を参照してください。
 
-::::{grid} 2 :gutter: 3 3 3 3
+::::{grid} 2
+:gutter: 3 3 3 3
 
 :::{grid-item-card} コンテンツページへの要素の追加
 :link: ./using-content-pages/adding-elements-to-content-pages.md
@@ -49,7 +49,8 @@ using-content-pages/content-page-editor-ui-reference.md
 
 * [デフォルトのフラグメントリファレンス](./page-fragments-and-widgets/using-fragments/default-fragments-reference.md)
 * [レイアウト要素の使用](./page-fragments-and-widgets/using-fragments/using-layout-elements.md)
-* [フラグメントの設定](./page-fragments-and-widgets/using-fragments/configuring-fragments.md) :::
+* [フラグメントの設定](./page-fragments-and-widgets/using-fragments/configuring-fragments.md)
+:::
 
 :::{grid-item-card} コンテンツページでウィジェットを利用する
 :link: ./using-content-pages/using-widgets-on-a-content-page.md
@@ -61,4 +62,5 @@ using-content-pages/content-page-editor-ui-reference.md
 
 :::{grid-item-card} コンテンツページエディタ UI リファレンス
 :link: ./using-content-pages/content-page-editor-ui-reference.md
-::: :::
+::: 
+::::

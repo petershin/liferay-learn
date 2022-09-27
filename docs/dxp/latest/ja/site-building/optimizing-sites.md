@@ -61,7 +61,7 @@ optimizing-sites/building-a-responsive-site.md
 :link: ../content-authoring and-management/page-performance and-accessibility/about-the-content-performance-tool.md
 :::
 
-:::{grid-item-card} Analyze Content Metrics Using Content Performance Tool
+:::{grid-item-card} コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析
 :link: ../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
 :::
 
@@ -91,7 +91,7 @@ optimizing-sites/building-a-responsive-site.md
 :link: ./optimizing-sites/ab-testing/running-and-monitoring-ab-tests.md
 :::
 
-:::{grid-item-card} Reviewing A/B Test Results and Publishing Test Variants
+:::{grid-item-card} A/Bテスト結果のレビューとテストバリアントの公開
 :link: ./optimizing-sites/ab-testing/reviewing-ab-test-results-and-publishing-test-variants.md
 :::  
 ::::
@@ -109,7 +109,7 @@ optimizing-sites/building-a-responsive-site.md
 :link: ./optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md
 :::
 
-:::{grid-item-card} Building Responsive Layouts with Grid Fragment
+:::{grid-item-card} グリッドフラグメントを使用したレスポンシブレイアウトの構築
 :link: ./optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
 :::  
 ::::

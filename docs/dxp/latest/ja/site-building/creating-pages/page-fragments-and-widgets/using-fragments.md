@@ -12,7 +12,6 @@ toc:
 - ./using-fragments/managing-fragments.md
 - ./using-fragments/propagating-fragment-changes.md
 ---
-
 # フラグメントの使用
 
 ```{toctree}
@@ -41,7 +40,8 @@ Liferayは、すぐに使用できるさまざまなフラグメントを提供�
 
 ページまたはテンプレートにフラグメントを追加した後、フラグメントとそのサブ要素を構成したりカスタマイズしたりできます。 これらのオプションは異なる場合がありますが、一部はすべてに共通です。 使用可能なオプションの詳細については、 [フラグメントの設定](./using-fragments/configuring-fragments.md) を参照してください。
 
-::::{grid} 2 :gutter: 3 3 3 3
+::::{grid} 2 
+:gutter: 3 3 3 3
 
 :::{grid-item-card} デフォルトフラグメントのリファレンス
 :link: ./using-fragments/default-fragments-reference.md
@@ -55,7 +55,8 @@ Liferayは、すぐに使用できるさまざまなフラグメントを提供�
 
 * [一般設定リファレンス](using-fragments/configuring-fragments/general-settings-reference.md)
 * [スタイルリファレンス](using-fragments/configuring-fragments/styles-reference.md)
-* [フラグメントサブ要素リファレンス](using-fragments/configuring-fragments/fragment-sub-elements-reference.md) :::
+* [フラグメントサブ要素リファレンス](using-fragments/configuring-fragments/fragment-sub-elements-reference.md)
+:::
 
 :::{grid-item-card} フラグメント要素のマッピングとリンク
 :link: ./using-fragments/mapping-and-link-fragment-elements.md
@@ -87,4 +88,5 @@ Liferayは、すぐに使用できるさまざまなフラグメントを提供�
 
 :::{grid-item-card} フラグメントの変更の伝播
 :link: ./using-fragments/propagating-fragment-changes.md
-::: ::::
+:::
+::::

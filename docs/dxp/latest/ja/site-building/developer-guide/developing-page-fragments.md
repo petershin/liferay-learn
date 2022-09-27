@@ -41,5 +41,5 @@ developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
 - [提供されたフラグメントセットの作成](./developing-page-fragments/creating-a-contributed-fragment-set.md)
 - [検証ルールの追加](./developing-page-fragments/adding-validation-rules.md)
 - [フラグメントの自動デプロイ](./developing-page-fragments/auto-deploying-fragments.md)
-- [Including Default Resources with Fragments](./developing-page-fragments/including-default-resources-with-fragments.md)
+- [フラグメントにデフォルトのリソースを含める](./developing-page-fragments/including-default-resources-with-fragments.md)
 - [フラグメント内の要素の順序を設定する](./developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md)

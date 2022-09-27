@@ -254,5 +254,5 @@ Then, follow these steps to deploy an example to see how Fragment configuration 
 
 * [フラグメントの自動デプロイ](./auto-deploying-fragments.md)
 * [フラグメント・コンフィギュレーションを使用する際のベストプラクティス](./best-practices-for-using-fragment-configurations.md)
-* [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
+* [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md)
 * [フラグメント設定タイプのリファレンス](../reference/fragments/fragment-configuration-types-reference.md)

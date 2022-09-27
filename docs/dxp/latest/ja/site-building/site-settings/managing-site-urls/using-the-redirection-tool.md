@@ -126,7 +126,7 @@ URLがアクティブか無視されているかを判断するには、 **ア�
 
 1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** タブをクリックし、 **システム設定** &rarr; **ページ** &rarr; **リダイレクト** と進みます。
 
-   ![有効]にチェックを入れ、 [保存]をクリックします。](./using-the-redirection-tool/images/15.png)
+   ![［Enabled］にチェックを入れ、［Save］をクリックします。](./using-the-redirection-tool/images/15.png)
 
 1. Check **Enabled** .
 

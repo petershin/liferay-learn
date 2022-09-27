@@ -59,7 +59,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 ![カラーピッカーの設定により、色の値を直接入力したり、範囲から選択したり、スタイルブックから選択することができます。](./fragment-configuration-types-reference/images/02.png)
 
 ```{note}
-使用しているテーマに[スタイルブックのトークン定義](../../site-appearance/style-books/style-book-token-definitions.md)がない場合、ページ上のカラーピッカーの設定は [カラーパレット](#color-palette configuration) に置き換わります。
+使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/style-book-token-definitions.md)がない場合、ページ上のカラーピッカーの設定は [カラーパレット](#color-palette-configuration) に置き換わります。
 ```
 
 このJSON設定により、 `headingColor`というカラーピッカーフィールドが作成されます。

@@ -21,7 +21,7 @@ Liferayのページフラグメントには便利なスタイル設定が含ま�
 多くのスタイルには、スタイルブックでサポートされるトークンが定義されています。 詳細については、[Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)および [スタイルブックトークンの定義](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) を参照してください。
 
 ```{note}
-Liferay 7.4 バージョン U31+ と GA31+ では、すべてのスタイルをデバイスの種類ごとに独立して設定できます（画面上部のデバイスボタン、または背景画像については [Adaptive Media](./../../../content-authoring and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md) で設定します）。 それ以前のバージョンでは、テキストとスペーシングスタイルの設定のみデバイスごとに異なる設定が可能です。
+Liferay 7.4 バージョン U31+ と GA31+ では、すべてのスタイルをデバイスの種類ごとに独立して設定できます（画面上部のデバイスボタン、または背景画像については [アダプティブメディア](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md) で設定します）。 それ以前のバージョンでは、テキストとスペーシングスタイルの設定のみデバイスごとに異なる設定が可能です。
 ```
 
 ## 間隔

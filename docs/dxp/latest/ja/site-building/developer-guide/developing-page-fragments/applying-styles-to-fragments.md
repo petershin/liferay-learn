@@ -43,7 +43,7 @@
 ```
 
 ```{warning}
-data-lfr-styles` 属性は、編集可能な要素 (`data-lfr-editable` または `lfr-editable` 属性を使用) に含まれるタグには使用することができません。 これらの編集可能なタグに含まれるフラグメントの一部に `data-lfr-styles` を追加しても、それは無視されます。
+`data-lfr-styles` 属性は、編集可能な要素 (`data-lfr-editable` または `lfr-editable` 属性を使用) に含まれるタグには使用することができません。 これらの編集可能なタグに含まれるフラグメントの一部に `data-lfr-styles` を追加しても、それは無視されます。
 ```
 
 `data-lfr-styles` 属性は、フラグメントの編集にお好きな方法で追加してください。

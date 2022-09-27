@@ -25,7 +25,7 @@ segmentation/segments-editor-ui-reference.md
 :link: ./segmentation/getting-analytics-for-user-segments.md
 :::
 
-:::{grid-item-card} Segments Editor UI Reference
+:::{grid-item-card} セグメントエディターUIリファレンス
 :link: ./segmentation/segments-editor-ui-reference.md 
 :::  
 ::::

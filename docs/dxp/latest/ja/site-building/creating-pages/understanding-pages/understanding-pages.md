@@ -84,7 +84,7 @@ Liferay 7.4 U22+ と GA22+ では、新規インストール時にプライベ�
 
 ページテンプレートの詳細：
 
-* Adding a Page Using a Page Template
+* ページテンプレートを使ってページを追加する
 * [ページテンプレートの作成](../adding-pages/creating-a-page-template.md)
 
 ## 子ページとページ階層
@@ -120,6 +120,6 @@ Liferay 7.4 U22+ と GA22+ では、新規インストール時にプライベ�
 
 ## 関連情報
 
-* [Adding a Page](../adding-pages/adding-a-page-to-a-site.md)
+* [サイトにページを追加する](../adding-pages/adding-a-page-to-a-site.md)
 * [ページ単位での設定](../page-settings/configuring-individual-pages.md)
 * [ウィジェットページのユーザーパーソナライズの有効化](../using-widget-pages/configuring-widgets/enabling-user-personalization-of-widget-pages.md)

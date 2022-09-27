@@ -125,5 +125,5 @@ Liferay DXP 7.4+ では、フラグメントコレクションは Liferay UI で
 
 ## 追加情報
 
-* [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
+* [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md)
 * [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md)

@@ -23,7 +23,7 @@ theme-development/bundling-resources.md
 :link: ./theme-development/getting-started.md
 :::
 
-:::{grid-item-card} スタイリング (Coming Soon)
+:::{grid-item-card} スタイリング (近日公開！)
 :link: ./theme-development/styling.md
 :::
 

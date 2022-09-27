@@ -4,7 +4,7 @@
 This information applies to Liferay DXP 7.3+. In previous Liferay versions, collections were called content sets. For information on content sets, see [Liferay DXP 7.2](#liferay-dxp-7-2).
 ```
 
-Collections are sets of content items that you can use to group and filter information. Collections can include many different types of content or just one specific type of content. You can then display them on a [collection page](), which you can present in your desired format using page fragments.
+Collections are sets of content items that you can use to group and filter information. Collections can include many different types of content or just one specific type of content. You can then display them on a [collection page](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page), which you can present in your desired format using page fragments.
 
 ![Use a collection page to quickly present a specific collection in your desired format.](./about-collections-and-collection-pages/images/01.png)
 

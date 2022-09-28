@@ -3,11 +3,11 @@
 There are several highlights and new features added to Liferay's search infrastructure for the 7.4 release. New features include those added to the product for Liferay CE 7.4 GA4 and Liferay DXP 7.4 GA1.
 
 ```{tip}
-To learn about features added in later 7.4 DXP Updates and Portal GA releases, refer to the release highlights.
+To learn about features added in later 7.4 DXP Updates and Portal GA releases, refer to the release notes.
 
-DXP: The Release Highlights are available on the [Customer Portal's Liferay DXP Release Notes page](https://customer.liferay.com/dxp-release-notes).
+Liferay DXP: the release notes are available on the [Customer Portal's Liferay DXP Release Notes page](https://customer.liferay.com/dxp-release-notes).
 
-Portal: See the [Blogs](https://liferay.dev/blogs/-/blogs) on the Liferay Community site. For example, see the [Liferay Portal 7.4 GA43 release notes](https://liferay.dev/blogs/-/blogs/liferay-portal-7-4-ga43-and-liferay-commerce-4-0-ga43-release).
+Liferay Portal: release notes are provided as [release announcement blogs](https://liferay.dev/blogs/-/blogs) on the Liferay Community site. For example, see the [Liferay Portal 7.4 GA43 release announcement](https://liferay.dev/blogs/-/blogs/liferay-portal-7-4-ga43-and-liferay-commerce-4-0-ga43-release).
 ```
 
 ## Elasticsearch 7 Integration

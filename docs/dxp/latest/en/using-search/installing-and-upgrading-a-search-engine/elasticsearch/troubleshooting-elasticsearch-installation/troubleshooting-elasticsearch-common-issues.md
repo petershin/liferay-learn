@@ -1,6 +1,6 @@
 # Troubleshooting Elasticsearch: Common Issues
 
-Listed here are some of the most common issues you'll encounter while confioguring Elasticsearch and Liferay. Additional specific errors are discussed in [Troubleshooting the Elasticsearch Connection](troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-connection.md).
+Listed here are some of the most common issues you'll encounter while configuring Elasticsearch and Liferay. Additional specific errors are discussed in [Troubleshooting the Elasticsearch Connection](troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-connection.md).
 
 ## Cluster Name
 
@@ -14,15 +14,15 @@ The value of the `transportAddresses` property in the Elasticsearch connector co
 
 ## Network Host Addresses
 
-In Liferay 7.3+, the bundled Elasticsearch server (sidecar) runs on port `9201` by default. This means that setting the `networkHostAddress` of your remote Elasticsearch installation using Elasticsearch's default HTTP port (`9200`) will not cause a conflict. As with the transport addresses, make sure to list all master and data node addresses of the cluster.
+In Liferay 7.3+, the bundled [sidecar Elasticsearch](../using-the-sidecar-or-embedded-elasticsearch.md) server runs on port `9201` by default. This means that setting the `networkHostAddress` of your remote Elasticsearch installation using Elasticsearch's default HTTP port (`9200`) will not cause a conflict. As with the transport addresses, make sure to list all master and data node addresses of the cluster.
 
 ## Cluster Sniffing (Additional Configurations)
 
-Elasticsearch clusters can have multiple node [types](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node).  [Cluster sniffing](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html), enabled by default in the Elasticsearch connector, looks for `data` nodes configured in the `transportAddresses` property. If none are available, the connector may throw a `NoNodeAvailableException` in the console log. If cluster sniffing is to remain enabled, avoid this error by configuring at least one `data` node's transport address to be "sniffable" at all times.
+Elasticsearch clusters can have multiple node [types](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node). [Cluster sniffing](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html), enabled by default in the Elasticsearch connector, looks for data nodes configured in the `transportAddresses` property. If none are available, the connector may throw a `NoNodeAvailableException` in the console log. If cluster sniffing is to remain enabled, To avoid this error and continue using cluster sniffing, configure at least one data node's transport address.
 
-To disable cluster sniffing, add `clientTransportSniff=false` to the `.config` file or unselect the Client Transport Sniff property in System Settings.
+To disable cluster sniffing, add `clientTransportSniff=false` to the `.config` file or un-select the Client Transport Sniff property in System Settings.
 
-## [Docker] Connection Refused
+## Docker Connection Refused
 
 The Liferay DXP container must recognize the Elasticsearch IP to establish a connection. Add `/etc/hosts/` entries that map the Elasticsearch container name to the Elasticsearch server host IP address. This can be established during the `docker run` phase by passing an argument like this:
 
@@ -38,11 +38,11 @@ docker network inspect bridge
 
 ## Configuration File Names
 
-If you are experiencing any problem connecting Liferay to Elasticsearch (perhaps seeing `NoNodeAvailableException` messages in the Liferay log), one of the first steps to take is to make absolutely sure that the configuration files are named properly. Unrecognizable configuration files aren't processed. Resulting errors can vary.
+When you have problems connecting Liferay to Elasticsearch (perhaps seeing `NoNodeAvailableException` messages in the Liferay log), one of the first steps to take is confirming that the configuration files are named properly. Unrecognizable configuration files aren't processed and resulting errors can vary.
 
 ## Disable Elasticsearch Deprecation Logging
 
-Sometimes, Elasticsearch APIs used by Liferay's Elasticsearch connectors are deprecated. Even when there's no impact to the functionality required by Liferay, warning log messages can result:
+Sometimes Elasticsearch APIs used in Liferay's Elasticsearch connectors are deprecated. Even when there's no impact to the functionality required by Liferay, warning log messages can result:
 
 ```
 [2019-07-16T14:47:05,779][WARN ][o.e.d.c.j.Joda           ] [

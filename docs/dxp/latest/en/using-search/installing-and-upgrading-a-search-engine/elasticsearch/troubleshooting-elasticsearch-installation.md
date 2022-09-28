@@ -24,7 +24,7 @@ Included below are techniques that can aid your troubleshooting work. To learn a
 
 ## Inspecting the Search Bar's Elasticsearch Query
 
-Liferay's search infrastructure generates a large Elasticsearch request when a user searches form the Search Bar widget. To inspect the query that's sent to elasticsearch, to use the _Search Insights_ widget. For more information see [Search Insights](../search-pages-and-widgets/search-insights.md).
+Liferay's search infrastructure generates a large Elasticsearch request when a user searches from the Search Bar widget. To inspect the query that's sent to Elasticsearch, use the _Search Insights_ widget. For more information see [Search Insights](../search-pages-and-widgets/search-insights.md).
 
 ## Inspecting any Liferay-Generated Elasticsearch Query
 
@@ -38,7 +38,7 @@ If you are on Liferay 7.1-7.2 and using the default bundled _Connector to Elasti
 
 To troubleshoot encryption related issues, enable verbose SSL logging.
 
-For Liferay, you can set `-Djavax.net.debug=ssl:handshake:verbose` in the Application Server's JVM. In Tomcat you can add the option  to `CATALINA_OPTS` in `setenv.sh`:
+For Liferay, set `-Djavax.net.debug=ssl:handshake:verbose` in the Application Server's JVM. In Tomcat the option is added to `CATALINA_OPTS` in `setenv.sh`:
 
 ```properties
 CATALINA_OPTS="$CATALINA_OPTS -Djavax.net.debug=ssl:handshake:verbose"

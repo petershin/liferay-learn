@@ -1,6 +1,6 @@
 # Troubleshooting the Elasticsearch Connection
 
-Listed here are some of the most common connection issues encountered when configuring the Liferay-Elasticsearch connection, along with the most common solutions to those issues.
+Listed here are some connection issues you can encounter when configuring the Liferay-Elasticsearch connection, along with the most common solutions to those issues. See [Troubleshooting Elasticsearch: Common Issues](#troubleshooting-elasticsearch-common-issues) for additional possibilities.
 
 ## Mismatch between Liferay and Elasticsearch's Host Configurations
 
@@ -112,9 +112,7 @@ See [Securing Elasticsearch](../securing-elasticsearch.html) for the correct con
 
 ## The Elasticsearch Host Name Does Not Match the DNS Names in the Certificate
 
-Possible errors:
-
-On Liferay 7.3 and 7.4,
+On Liferay 7.3 and 7.4 you can see this log message:
 
 ```
 Caused by: javax.net.ssl.SSLPeerUnverifiedException: Host name 'es-node1' does not match the certificate subject provided by the peer (CN=elastic-nodes)
@@ -250,7 +248,7 @@ A corresponding Elasticsearch error appears with Liferay 7.0-7.2 when connecting
 Make sure all nodes in your stack (e.g., Liferay, Elasticsearch, and Kibana) are using certificates signed by the same Certificate Authority (CA) and the certificate (public key) of the CA is present in the client's environment. For example, make sure the `sslTruststorePath` or `sslCertificateAuthoritiesPath` settings are configured according the [Securing Elasticsearch documentation](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2).
 
 ```{tip}
-Open the certificate files and find the "Issuer Name" or "Issued by" entry. This holds information about the issuer CA.
+Open the certificate files and find the "Issuer Name" or "Issued by" entry. These entries hold information about the issuer CA.
 ```
 
 ## Elasticsearch Monitoring and/or the X-Pack Monitoring Widget is Temporarily Unavailable
@@ -294,23 +292,25 @@ A corresponding Kibana error can appear:
  error  [13:24:57.089] [error][client][connection] Error: 139942872246080:error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1544:SSL alert number 46
 ```
 
-These errors indicate that the Kibana server is using a self-signed certificate and the CA is not present in the client's (Liferay DXP is the client, through the LES Monitoring app) truststore file. The JDK's `cacerts` file is the default truststore.
+These errors indicate that the Kibana server is using a self-signed certificate and the CA is not present in the client's truststore file (Liferay DXP is the client, through the LES Monitoring app). The JDK's `cacerts` file is the default truststore.
 
-Because you're using the Monitoring portlet in Liferay as a proxy to Kibana's UI and using a self-signed certificate, you must configure the application server's startup JVM parameters to trust Kibana's certificate.
+Because you're using the Monitoring portlet in Liferay as a proxy to Kibana's UI and using a self-signed certificate, you must configure the application server's startup JVM parameters to trust Kibana's certificate. There are two approaches, demonstrated with Tomcat here:
 
+1. Add the truststore path, password, and type to your application server's startup JVM parameters using the same files you also used to configure security in the Elasticsearch connector. Append truststore and path parameters to a Tomcat server's `CATALINA_OPTS` through the `setenv.sh/bat` file:
 
-<!--I don't like this--the first approach is what we discuss in the monitoring docs, but it's not the recommended one? We should probably just cover the recommended approach, here and in the monitoring docs -->
-One approach is to add the truststore path, password and type to your application server's startup JVM parameters using the same files you also used to configure the Elasticsearch connector to use security. Here are example truststore and path parameters for appending to a Tomcat server's `CATALINA_OPTS` through the `setenv.sh/bat` file:
+   ```
+   CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/path/to/elastic-nodes.p12 -Djavax.net.ssl.trustStorePassword=liferay -Djavax.net.ssl.trustStoreType=pkcs12"
+   ```
 
-```
-CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/path/to/elastic-nodes.p12 -Djavax.net.ssl.trustStorePassword=liferay -Djavax.net.ssl.trustStoreType=pkcs12"
-```
+1. A better way is to make a copy of the default `cacerts` file, import the certificate without private key, then configure the application server to use the custom truststore file:
+   - Copy the default `cacerts` file from the Liferay JVM (located in `JAVA_HOME/jre/lib/security` in JDK 8 or in `JAVA_HOME/lib/security` in JDK 11), and rename it `cacerts-custom.jks`.
+   - Extract the certificate of the CA without the private key using `openssl` (if you only have a single `.p12` file like `elastic-stack-ca.p12`)
+   - Import the certificate into your custom JKS file using Java's `keytool`
+   - Configure Tomcat to use the custom truststore:
 
-Another approach (recommended) is to make a copy of the default `cacerts` file (located in `JAVA_HOME/jre/lib/security` in JDK 8 or in `JAVA_HOME/lib/security` in JDK 11) , name it `cacerts-custom.jks`, extract/obtain the certificate of the CA without the private key using `openssl` (if you only have a single .p12 file like `elastic-stack-ca.p12`) and import it into your custom JKS file using Java's `keytool` and then configure Tomcat to use that trustStore:
-
-```
-CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/PATH/TO/cacerts-custom.jks -Djavax.net.ssl.trustStorePassword=changeit"
-```
+      ```
+      CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/PATH/TO/cacerts-custom.jks -Djavax.net.ssl.trustStorePassword=changeit"
+      ```
 
 ## SSL Exception when Using JDK 11 and Elasticsearch 7.11+
 
@@ -332,11 +332,12 @@ javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
 javax.net.ssl.SSLException: No PSK available. Unable to resume.
 ```
 
+<!-- I think we want at least a brief description of the problem. -->
 See the [Monitoring Elasticsearch](../liferay-enterprise-search/monitoring-elasticsearch.md#troubleshooting-the-monitoring-setup) article.
 
 ## IOException: Data Isn't an Object ID
 
-When the the `.p12` file was generated using `keytool` by a JDK from a higher major version than the Liferay JDK, this error can appear in Liferay's log: 
+When the `.p12` file was generated using `keytool` by a JDK from a higher major version than the Liferay JDK, this error can appear in Liferay's log: 
 
 ```
 09:30:55,298 ERROR [ServerService Thread Pool -- 106][ElasticsearchConnectionManager:93] bundle com.liferay.portal.search.elasticsearch7.impl:5.0.17 (670)[com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager(1656)] : The activate method has thrown an exception
@@ -387,7 +388,7 @@ Some further testing can confirm the root cause. Temporarily set `xpack.security
 ```{warning}
 Never leave the SSL verification mode set to `none` in production environments.
 
-Read the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-settings.html#transport-tls-ssl-settings) to learn more about the SSL verification mode setting.
+Read the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html#transport-tls-ssl-settings) to learn more about the SSL verification mode setting.
 ```
 
 A similar problem can occur between Liferay and the Elasticsearch nodes. Liferay throws an error like this if the Elasticsearch node certificates were signed by a non-trusted CA (for example when using self-signed certificates):
@@ -398,20 +399,19 @@ java.lang.RuntimeException: org.elasticsearch.ElasticsearchException: Elasticsea
 ```
 
 Make sure that the CA's certificate that signed the Elasticsearch node certificates is present and trusted in the truststore configured in Liferay. 
-* If your [security settings](../securing-elasticsearch.md) are in the Elasticsearch 7 connector's configuration (`com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`), set the trustore for the Elasticsearch connections using the `truststorePath` property.
-* If your security settings are in the LES Security app's configuration (`com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config`, set the truststore using the `sslTruststorePath` property. 
+* If your [security settings](../securing-elasticsearch.md) are in the Elasticsearch 7 connector's configuration (`com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`), set the truststore for the Elasticsearch connections using the `truststorePath` property.
+* If your security settings are in the LES Security app configuration (`com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config`, set the truststore using the `sslTruststorePath` property. 
 
-<!-- I got lost with the material below. How does it relate to the material above here? Is it about going from PKCS#12 to PEM? -->
-If the it's not present, you need to add it using Java's `keytool` or other tools like `openssl`, depending on the format of the CA's and your nodes certificates (PKCS#12 or PEM).
+You can also see these errors if the CA certificate (public key) is not present in the node certificate. In this case add it using Java's `keytool` or other tools like `openssl`, depending on the format of the CA certificate and node certificates (PKCS#12 or PEM).
 
-For example, if you have your CA's certificate (public key) and private key are stored in `ca.p12` and your node certificate is `elastic-nodes.p12`, you can do the following,
+For example, if you have your CA's certificate (public key) and private key in `ca.p12` and your node certificate is `elastic-nodes.p12`, you can do the following,
 
-1. Export the Public Key of the CA (aka. the certificate) without the Private Key:
+1. Export the public key of the CA without the private key:
 
 	`openssl pkcs12 -in ca.p12 -out ca.crt -nokeys`
 
 1. Provide the password of `ca.p12` when prompted. This produces a file called `ca.crt`.
 
-1. Import the CA's certificate into `elastic-nodes.p12`:
+1. Import the CA certificate into `elastic-nodes.p12`:
 
 	`keytool -importcert -keystore elastic-nodes.p12 -trustcacerts -storepass liferay -file ca.crt`

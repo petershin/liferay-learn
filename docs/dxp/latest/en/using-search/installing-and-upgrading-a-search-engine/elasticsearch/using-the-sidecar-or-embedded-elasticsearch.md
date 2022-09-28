@@ -149,14 +149,3 @@ To resolve errors like these,
 1. Restart Liferay.
 1. The Portal will download and extract the Elasticsearch runtime at startup [on select App Servers](../using-the-sidecar-or-embedded-elasticsearch.html#embedded-versus-sidecar) (e.g, Tomcat).
 
-<!-- We don't show people how to start the sidecar manually--why should we mention it here? -->
-### Starting Elasticsearch Sidecar Manually Does Not Work
-
-The Elasticsearch Sidecar installation is using Elasticsearch's `*-no-jdk-linux-x86_64 ` distribution. This means that starting the Sidecar runtime manually on Windows and macOS operating systems may not work. Always let Liferay manage the Sidecar environment.
-
-<!-- There's no error here, it feels awkward -->
-### Error Connecting to the Sidecar Elasticsearch from Kibana
-
-{bdg-secondary}`7.4 U17+ and 7.3 U4+`
-
-Starting with DXP 7.4 U17 and DXP 7.3 U5, you can use the standard distribution of Kibana.

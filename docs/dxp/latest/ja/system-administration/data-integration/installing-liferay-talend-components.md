@@ -33,7 +33,7 @@ Maven は最近、安全でないリポジトリ接続を非推奨としてい�
 
 ## Talendコンポーネントの構築
 
-Talendコンポーネントをインストールする前に、ローカルの`liferay-portal`リポジトリの[modules/etl/talend](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend)で、`mvn clean install`を実行する必要があります。
+Talendコンポーネントをインストールする前に、ローカルの`liferay-portal`リポジトリの [modules/etl/talend](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend) で、`mvn clean install`を実行する必要があります。
 
 これにより、以下のディレクトリ/フォルダーにjarバンドルファイルが生成されます。
 

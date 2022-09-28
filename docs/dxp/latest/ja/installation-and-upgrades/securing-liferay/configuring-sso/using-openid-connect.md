@@ -26,7 +26,7 @@ OpenID Connectを使用するには、まずプロバイダーにクライアン
 
 ## OpenID Connectプロバイダー接続の構成
 
-［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**System Scope**］ の下の ［***OpenID Connect Provider**］* を選択します。
+［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**System Scope**］ の下の ［***OpenID Connect Provider***］ を選択します。
 
 ![［System Settings］メニューでOpenID構成を検索する。](using-openid-connect/images/01.png)
 

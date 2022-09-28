@@ -2,7 +2,7 @@
 
 > 利用可能：Liferay DXP 7.2 SP2 +、Liferay CE 7.3.1 GA2
 
-ユーザーセグメントは、動的に割り当てられたユーザーコレクションです。 [使用可能な基準で、セグメントを明確に定義できる](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)場合、ユーザー管理の管理オーバーヘッドを大幅に削減できます。 さらに、サイトスコープで作成されたユーザーセグメントに対して [パーソナライズされたエクスペリエンス](../../site-building/personalizing-site-experience/personalizing-site-experience.md) を定義して、ユーザーがサイトで最も関連性の高いコンテンツを表示できるようにすることができます。
+ユーザーセグメントは、動的に割り当てられたユーザーコレクションです。 [使用可能な基準で、セグメントを明確に定義できる](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)場合、ユーザー管理の管理オーバーヘッドを大幅に削減できます。 さらに、サイトスコープで作成されたユーザーセグメントに対して [パーソナライズされたエクスペリエンス](../../site-building/personalizing-site-experience.md) を定義して、ユーザーがサイトで最も関連性の高いコンテンツを表示できるようにすることができます。
 
 | ユーザーセグメントはどこに作成しますか？                                   | それらは何のため？                          | セグメントにロールをどこに割り当てますか？                     |
 |:------------------------------------------------------ |:---------------------------------- |:----------------------------------------- |

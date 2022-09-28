@@ -130,8 +130,8 @@ sslKeystorePath="/PATH/TO/elastic-nodes.p12"
 
 次の値を設定します。
 
-［***Read from Local Clusters**］ チェックボックスをオンにする
-［***Local Cluster Configurations**］ プロパティに値 **localhost:9080,ccr** を設定する
+* ［**Read from Local Clusters**］ チェックボックスをオンにする
+* ［**Local Cluster Configurations**］ プロパティに値 **localhost:9080,ccr** を設定する
 
 ![システム設定からCCRを設定します。](./ccr-basic-use-case-config-reference/images/01.png)
 

@@ -5,7 +5,6 @@ toc:
 - ./using-the-asset-publisher-widget/configuring-asset-publisher-display-settings.md
 - ./using-the-asset-publisher-widget/configuring-asset-publisher-subscriptions.md
 ---
-
 # アセットパブリッシャーウィジェットの使用
 
 ```{toctree}

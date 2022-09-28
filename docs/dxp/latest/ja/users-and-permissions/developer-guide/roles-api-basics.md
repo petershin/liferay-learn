@@ -3,12 +3,13 @@
 アプリケーションメニューから [Create and Manage Roles](../roles-and-permissions/creating-and-managing-roles.md) を利用できますが、LiferayのREST APIを利用することも可能です。 これらのサービスを呼び出して、Roleを管理します。
 
 ## ユーザーを通常の役割に関連付ける
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順に従います:
 
-1. Download and unzip [Roles API Basics](./liferay-z3v5.zip) .
+1.  [Roles API Basics](./liferay-z3v5.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-z3v5.zip -O
@@ -62,7 +63,7 @@
 | `-u "test@liferay.com:learn"`                                                                 | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) 経由でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -103,7 +104,7 @@
 
 以下のcURLまたはJavaコマンドを実行することで、Roleの一覧を表示することができます。
 
-### Roles **GET** FromInstance.sh
+### Roles_GET_FromInstance.sh
 
 コマンド:
 
@@ -117,7 +118,7 @@
    :language: bash
 ```
 
-### Roles **GET** FromInstance.java
+### Roles_GET_FromInstance.java
 
 コマンド:
 
@@ -143,7 +144,7 @@ Instance の `Roles` オブジェクトが JSON で表示されます。
 インスタンスの ``Role`` ID を取得するには、 ``Roles_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### Role **GET** ById.sh（ロールゲットバイアイディー）。
+### Role_GET_ById.sh（ロールゲットバイアイディー）。
 
 コマンド:
 
@@ -157,7 +158,7 @@ Instance の `Roles` オブジェクトが JSON で表示されます。
    :language: bash
 ```
 
-### Role **GET** ById.java
+### Role_GET_ById.java
 
 コマンド:
 
@@ -179,7 +180,7 @@ java -classpath .:* -DroleId=1234 Role_GET_ById
 
 ユーザーを特定のサイトロールに関連付けることができます。 `1234` をRoleのIDに置き換えてください。 `5678` をお客様のサイトIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation **POST** ToSite.shを実行します。
+### RoleUserAssociation_POST_ToSite.shを実行します。
 
 コマンド:
 
@@ -193,7 +194,7 @@ java -classpath .:* -DroleId=1234 Role_GET_ById
    :language: bash
 ```
 
-### RoleUserAssociation **POST** ToSite.java
+### RoleUserAssociation_POST_ToSite.java
 
 コマンド:
 
@@ -213,7 +214,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
 
 ユーザーを特定の組織ロールに関連付けることができます。 `1234` を組織のIDに置き換えてください。 `5678` を自分のRoleのIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation **POST** ToOrganization.shを実行します。
+### RoleUserAssociation_POST_ToOrganization.shを実行します。
 
 コマンド:
 
@@ -227,7 +228,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
    :language: bash
 ```
 
-### RoleUserAssociation **POST** ToOrganization.java
+### RoleUserAssociation_POST_ToOrganization.java
 
 コマンド:
 
@@ -247,7 +248,7 @@ java -classpath .:* -DorganizationId=1234 -DroleId=5678 -DuserAccountId=9012 Rol
 
 特定のユーザーから通常の役割の関連付けを削除します。 `1234` をRoleのIDに置き換えてください。 `5678` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation **DELETE** FromInstance.shを実行します。
+### RoleUserAssociation_DELETE_FromInstance.shを実行します。
 
 コマンド:
 
@@ -261,7 +262,7 @@ java -classpath .:* -DorganizationId=1234 -DroleId=5678 -DuserAccountId=9012 Rol
    :language: bash
 ```
 
-### RoleUserAssociation **DELETE** FromInstance.java
+### RoleUserAssociation_DELETE_FromInstance.java
 
 コマンド
 
@@ -281,7 +282,7 @@ java -classpath .:* -DroleId=1234 -DuserAccountId=5678 RoleUserAssociation_DELET
 
 特定のユーザーからサイトロールの関連付けを削除する。 `1234` をRoleのIDに置き換えてください。 `5678` をお客様のサイトIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation **DELETE** FromSite.shを実行します。
+### RoleUserAssociation_DELETE_FromSite.shを実行します。
 
 コマンド:
 
@@ -295,7 +296,7 @@ java -classpath .:* -DroleId=1234 -DuserAccountId=5678 RoleUserAssociation_DELET
    :language: bash
 ```
 
-### RoleUserAssociation **DELETE** FromSite.java
+### RoleUserAssociation_DELETE_FromSite.java
 
 コマンド
 
@@ -303,7 +304,7 @@ java -classpath .:* -DroleId=1234 -DuserAccountId=5678 RoleUserAssociation_DELET
 java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAssociation_DELETE_FromSite
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./roles-api-basics/resources/liferay-z3v5.zip/java/RoleUserAssociation_DELETE_FromSite.java
    :dedent: 1
@@ -315,7 +316,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
 
 特定のユーザーから組織ロールの関連付けを解除する。 `1234` を組織のIDに置き換えてください。 `5678` を自分のRoleのIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation **DELETE** FromOrganization.sh
+### RoleUserAssociation_DELETE_FromOrganization.sh
 
 コマンド：
 
@@ -323,13 +324,13 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
 ./RoleUserAssociation_DELETE_FromOrganization.sh 1234 5678 9012
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./roles-api-basics/resources/liferay-z3v5.zip/curl/RoleUserAssociation_DELETE_FromOrganization.sh
    :language: bash
 ```
 
-### RoleUserAssociation **DELETE** FromOrganization.java
+### RoleUserAssociation_DELETE_FromOrganization.java
 
 コマンド
 

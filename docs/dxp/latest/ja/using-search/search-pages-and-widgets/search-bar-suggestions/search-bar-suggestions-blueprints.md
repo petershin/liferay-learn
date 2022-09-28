@@ -3,7 +3,7 @@
 {bdg-primary}`Subscription`
 {bdg-secondary}`7.4 U36+とGA36+`
 
-検索バーのサジェスチョンでは、デフォルトで通常の[検索バーのクエリ](../search-insights.md)を使用します。 [Liferay Enterprise Searchのユーザー](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) は、 [検索ブループリント](../../liferay-enterprise-search/search-experiences/understanding-search-blueprints.md)を使ってクエリに影響を与えたり上書きしたりすることができます。
+検索バーのサジェスチョンでは、デフォルトで通常の[検索バーのクエリ](../search-insights.md)を使用します。 [Liferay Enterprise Search のユーザー](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) は、 [Search Blueprints](../../liferay-enterprise-search/search-experiences/understanding-search-blueprints.md)を使ってクエリに影響を与えたり上書きしたりすることができます。 
 
 まず、 [Blueprint](../../liferay-enterprise-search/search-experiences/creating-and-managing-search-blueprints.md)を構築します。 ブループリントができたら
 
@@ -11,7 +11,7 @@
 
 1. 検索バーウィジェットの設定で、検索バーサジェスチョンを設定します。
    
-      - オプション(![Options](../../../images/icon-widget-options.png))メニューをクリックし、 **コンフィグレーション** を選択します。
+      - オプション」(![Options](../../../images/icon-widget-options.png))メニューをクリックし、「**コンフィグレーション**」()を選択します。
 1. Suggestions Contributor を **Blueprint** に変更します。
 
 1. **Select** をクリックして、Blueprint を選択します。
@@ -23,9 +23,12 @@
 さらに使える設定もいくつかあります。
 
 
+
 ## 検索バーのサジェスチョンがブループリントを使用するように設定する
 
 Blueprint Suggestions Contributor を選択すると、Search Bar Widget Configuration に新しい設定フィールドが表示されます。
+
+![Blueprintコントリビューターは、追加のコンフィギュレーションを使用します。](./search-bar-suggestions-blueprints/images/01.png)
 
 **ブループリント。** 唯一必要な追加設定です。 使用するブループリントを選択します。
 

@@ -9,7 +9,7 @@ Liferay の Rest API を使用して、国を作成および管理します。
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順に従います:
 
 1. [Countries API Basics](./liferay-g6m8.zip) をダウンロードし、解凍してください。
 
@@ -78,7 +78,7 @@ Liferay の Rest API を使用して、国を作成および管理します。
 | `-u "test@liferay.com:learn"`                                                                     | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) 経由でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -119,7 +119,7 @@ Liferay の Rest API を使用して、国を作成および管理します。
 
 以下のcURLまたはJavaコマンドを実行することで、国を一覧表示することができます。
 
-### Countries **GET** FromInstance.sh
+### Countries_GET_FromInstance.sh
 
 コマンド:
 
@@ -133,7 +133,7 @@ Liferay の Rest API を使用して、国を作成および管理します。
    :language: bash
 ```
 
-### Countries **GET** FromInstance.java
+### Countries_GET_FromInstance.java
 
 コマンド：
 
@@ -159,7 +159,7 @@ Instanceの `Country` オブジェクトがJSONで表示されます。
 インスタンスの ``Countries`` ID を取得するには、 ``Countries_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### 国名 **GET** ById.sh
+### Country_GET_ById.sh
 
 コマンド：
 
@@ -173,7 +173,7 @@ Instanceの `Country` オブジェクトがJSONで表示されます。
    :language: bash
 ```
 
-### Country **GET** ById.java
+### Country_GET_ById.java
 
 コマンド：
 
@@ -193,9 +193,9 @@ java -classpath .:* -DcountryId=1234 Country_GET_ById
 
 ## 国別パッチ
 
-以下のcURLとJavaコマンドで、既存の国の部分編集を行う。 `1234` を自分の国のIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存の国の部分編集を行う。 `1234` をあなたの国のIDに置き換えてください。
 
-### Country **PATCH** ById.sh
+### Country_PATCH_ById.sh
 
 コマンド：
 
@@ -209,7 +209,7 @@ java -classpath .:* -DcountryId=1234 Country_GET_ById
    :language: bash
 ```
 
-### Country **PATCH** ById.java
+### Country_PATCH_ById.java
 
 コマンド：
 
@@ -227,9 +227,9 @@ java -classpath .:* -DcountryId=1234 Country_PATCH_ById
 
 ## 国を指定する
 
-以下のcURLとJavaコマンドで、既存の国を完全に上書きします。 `1234` をあなたの国のIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存の国を完全に上書きする。 `1234` を自分の国のIDに置き換えてください。
 
-### Country **PUT** ById.sh
+### Country_PUT_ById.sh
 
 コマンド:
 
@@ -243,7 +243,7 @@ java -classpath .:* -DcountryId=1234 Country_PATCH_ById
    :language: bash
 ```
 
-### Country **PUT** ById.java
+### Country_PUT_ById.java
 
 コマンド:
 
@@ -263,7 +263,7 @@ java -classpath .:* -DcountryId=1234 Country_PUT_ById
 
 以下のcURLとJavaコマンドで、既存の国を削除します。 `1234` をあなたの国のIDに置き換えてください。
 
-### 国名 **DELETE** ById.sh
+### Country_DELETE_ById.sh
 
 コマンド:
 
@@ -277,7 +277,7 @@ java -classpath .:* -DcountryId=1234 Country_PUT_ById
    :language: bash
 ```
 
-### Country **DELETE** ById.java
+### Country_DELETE_ById.java
 
 コマンド
 

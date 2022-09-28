@@ -6,7 +6,7 @@
 ブラックリストは、DXP がアプリのアンインストールに使用する [OSGi 設定](../../configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) です。 これを使用すると、リストされているアプリは削除されるまでインストールされなくなります。
 ```
 
-リストは、[コントロールパネル](#blacklisting-via-the-control-panel) で設定するか、（コントロールパネルから[エクスポートする](../../configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)ことで）[OSGi構成](#blacklisting-via-a-configuration-file) (`.config`) ファイルを使用して設定できます。
+リストは、 [コントロールパネル](#blacklisting-via-the-control-panel) で設定するか、（コントロールパネルから [エクスポートする](../../configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) ことで） [OSGi構成](#blacklisting-via-a-configuration-file) (`.config`) ファイルを使用して設定できます。
 
 ## ブラックリスト登録
 

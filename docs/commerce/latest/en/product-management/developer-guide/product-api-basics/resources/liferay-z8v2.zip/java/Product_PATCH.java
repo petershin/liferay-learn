@@ -17,7 +17,7 @@ public class Product_PATCH {
 			new Product() {
 				{
 					active = true;
-					catalogId = 43730L;
+					catalogId = 12345L;
 					name = new HashMap<String, String>() {
 						{
 							put("en_US", "Bar");

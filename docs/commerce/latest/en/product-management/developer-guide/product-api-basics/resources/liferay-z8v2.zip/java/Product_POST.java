@@ -17,10 +17,10 @@ public class Product_POST {
 				new Product() {
 					{
 						active = true;
-						catalogId = 46966L;
+						catalogId = 12345L;
 						name = new HashMap<String, String>() {
 							{
-								put("en_US", "Bar");
+								put("en_US", "Foo");
 							}
 						};
 						productType = "simple";

@@ -5,7 +5,7 @@ There are several highlights and new features added to Liferay's search infrastr
 ```{tip}
 To learn about features added in later 7.4 DXP Updates and Portal GA releases, refer to the release highlights.
 
-DXP: The Release Highlights are available on the [Customer Portal's Downloads page](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=121096180&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=121096186).
+DXP: The Release Highlights are available on the [Customer Portal's Liferay DXP Release Notes page](https://customer.liferay.com/dxp-release-notes).
 
 Portal: See the [Blogs](https://liferay.dev/blogs/-/blogs) on the Liferay Community site. For example, see the [Liferay Portal 7.4 GA43 release notes](https://liferay.dev/blogs/-/blogs/liferay-portal-7-4-ga43-and-liferay-commerce-4-0-ga43-release).
 ```

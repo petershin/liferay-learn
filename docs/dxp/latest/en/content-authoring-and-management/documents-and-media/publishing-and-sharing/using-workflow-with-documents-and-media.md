@@ -1,50 +1,52 @@
 # Using Workflow with Documents and Media
 
-Users can [implement a Workflow](../../../process-automation/workflow/using-workflows/activating-workflow.md) for their _Documents and Media_ files. (To learn more about Workflows in general, see [Introduction to Workflow](../../../process-automation/workflow/introduction-to-workflow.md).)
+Documents and Media is fully integrated with Liferay's [workflow engine](../../../process-automation/workflow/introduction-to-workflow.md). This means you can define custom review and approval processes for your files. In addition to standard workflow capabilities, Documents and Media also supports using multiple workflows. You can set a default workflow for all document types and configure individual folders to use alternative workflows for specific document types.
 
-The _Documents and Media_ application has its own separate workflow settings. For example, you can activate workflow for a specific [folder](../uploading-and-managing/creating-folders.md), so that every file uploaded into that folder must be reviewed first.
+Consider a scenario where you've defined different [document types](../uploading-and-managing/managing-metadata/defining-document-types.md) for marketing, legal, and accounting files. Due to their content, each document type must go through a specific review and approval process. To achieve this, you can [create a custom workflow](../../../process-automation/workflow/designing-and-managing-workflows/workflow-designer.md) for each type and then configure your Documents and Media folders to use the custom workflows. Also, if you need all other document types to go through the same review and approval process, you can set a default workflow for your Documents and Media root folder.
 
-Second, you can create multiple [Document Types](../uploading-and-managing/managing-metadata/defining-document-types.md) and designate which Document Types are subject to a review process. For example, if there are two created Document Types---a Legal Docs Document Type and a Training Videos Document Type---you can activate workflow for only the Legal Docs Document Type. This is configured at the _folder_ level.
+## Enabling a Default Workflow
 
-## Enabling Workflow for All Document Types
+Follow these steps to enable a default Workflow for all document types:
 
-1. Click (![Actions icon](../../../images/icon-actions.png)) at the top right then _Edit_.
+1. Open the *Documents and Media* application in the desired Site or Asset Library.
 
-    ![Click Edit to access the Options settings.](./using-workflow-with-documents-and-media/images/05.png)
+1. From the root folder (i.e., Home), click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) in the Application Bar and select *Edit*.
 
-1. Select the desired Workflow definition from the dropdown menu.
+   ![Click the Actions button in the Application Bar and select Edit.](./using-workflow-with-documents-and-media/images/01.png)
 
-    ![Select a Workflow definition.](./using-workflow-with-documents-and-media/images/06.png)
+1. Select the desired *Workflow* from the dropdown menu.
 
-1. Click _Save_ when finished.
+   ![Select a Workflow definition.](./using-workflow-with-documents-and-media/images/02.png)
 
-Once Workflow has been enabled, the _Publish_ button is replaced with a _Submit for Publication_ button whenever a user uploads a file (regardless of Document Type).
+1. Click *Save*.
 
-![Expand to view the Document Type Restrictions and Workflow radio buttons.](./using-workflow-with-documents-and-media/images/04.png)
+This enables a default workflow for all document types in your Site or Asset Library. Now whenever users upload or edit files, the *Publish* button is replaced with a *Submit for Publication* button. If needed, you can override this workflow for individual folders. See [Enabling Alternative Workflows for Folders and Document Types](#enabling-alternative-workflows-for-folders-and-document-types) for more information.
 
-## Enabling Workflow for Folders
+## Enabling Alternative Workflows for Folders and Document Types
 
-1. Navigate to (your site) &rarr; _Content & Data_ &rarr; _Documents and Media_.
-1. Click (![Actions icon](../../../images/icon-actions.png)) next to the desired folder &rarr; _Edit_.
+Follow these steps to enable or disable a workflow for individual folders and document types:
 
-    ![Click Edit to access the folder's Workflow settings.](./using-workflow-with-documents-and-media/images/01.png)
+1. Open the *Documents and Media* application in the desired Site or Asset Library.
 
-1. Expand the _Document Type Restrictions and Workflow_ section.
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired folder and select *Edit*.
 
-    ![Expand to view the Document Type Restrictions and Workflow radio buttons.](./using-workflow-with-documents-and-media/images/02.png)
+   ![Click the Actions button for a folder and select Edit.](./using-workflow-with-documents-and-media/images/03.png)
 
-1. Select your desired settings. You can have the folder inherit the parent folder (the _Documents and Media Home_ folder in this case), specify a specific Document Type, or enable workflow for all document types inside this designated folder.
-1. If _Default Workflow for this Folder_ is selected, select the Workflow definition.
+1. Under *Document Type Restrictions and Workflow*, select the desired configuration:
 
-    ![Expand to view the Document Type Restrictions and Workflow radio buttons.](./using-workflow-with-documents-and-media/images/03.png)
+   **Use Document Type Restrictions and Workflow of the Parent Folder (parent-folder)**: Use the parent folder's configuration. This is the default value.
 
-1. Click _Save_ when finished.
+   **Define Specific Document Type Restrictions and Workflow for this Folder (current-folder)**: Select a *custom workflow* for individual document types, or select *No Workflow* to disable the default workflow for individual types.
 
-Workflow has been enabled for this folder.
+   **Default Workflow for This Folder (current-folder)**: Select a default Workflow for the current folder. This applies the workflow for all files in the folder, regardless of document type.
 
-Users can also _disable_ workflow for specific folders (or sub-folders) even if workflow has been enabled on the parent (for example, _Home_) folder. To do so, select the third option: _Default Workflow for this Folder (Folder Name)_ and then select _No Workflow_. If disabled, files uploaded into this folder do not require the review process.
+   ![Under Document Type Restrictions and Workflow, select the desired configuration.](./using-workflow-with-documents-and-media/images/04.png)
+
+1. Click *Save*.
+
+This enables the chosen workflows for the selected folder and document types.
 
 ## Additional Information
 
-* [Activating Workflow](../../../process-automation/workflow/using-workflows/activating-workflow.md)
+* [Workflow Designer](../../../process-automation/workflow/designing-and-managing-workflows/workflow-designer.md)
 * [Documents and Media UI Reference](../documents-and-media-ui-reference.md)

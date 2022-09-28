@@ -24,7 +24,7 @@ You can add a [web content article](../../content-authoring-and-management/web-c
 
 ## Documents
 
-You can add a [document](../../content-authoring-and-management/documents-and-media/documents-and-media-overview.md) as an independent menu element that links to the document's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a document without a Display Page is added, then it does not have a link, so it is hidden from users on the menu. This behavior can change if you use a different Application Display Template.
+You can add a [document](../../content-authoring-and-management/documents-and-media.md) as an independent menu element that links to the document's [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md). Using the default Application Display Template for Navigation Menus, if a document without a Display Page is added, then it does not have a link, so it is hidden from users on the menu. This behavior can change if you use a different Application Display Template.
 
 ## Categories
 

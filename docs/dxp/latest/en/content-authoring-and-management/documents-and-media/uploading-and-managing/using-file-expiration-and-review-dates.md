@@ -61,5 +61,5 @@ When a file expires or requires review, a notification email is sent to the file
 ## Additional Information
 
 * [Uploading Files](./uploading-files.md)
-* [Documents and Media Overview](../documents-and-media-overview.md)
+* [Documents and Media](../../documents-and-media.md)
 * [Documents and Media UI Reference](../documents-and-media-ui-reference.md)

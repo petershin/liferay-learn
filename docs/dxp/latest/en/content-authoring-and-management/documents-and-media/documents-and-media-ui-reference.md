@@ -110,5 +110,5 @@ Using email notifications requires a connected mail server. See `Configuring Mai
 
 ## Additional Information
 
-* [Documents and Media Overview](./documents-and-media-overview.md)
+* [Documents and Media](../documents-and-media.md)
 * [Exporting/Importing Site Pages and Contents](../../site-building/sites/exporting-importing-site-pages-and-content.md)

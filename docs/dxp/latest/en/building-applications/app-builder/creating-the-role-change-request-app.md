@@ -74,7 +74,7 @@ A Standard app can be created from within the Object Control Panel entry, but no
 
 Now the app is ready for use. It just needs to be [deployed](./creating-a-standard-application.md#deploying-the-application) so its users can begin sending data.
 
-The Role Change Request app can be deployed as a standalone app with a dedicated link. This is the type of app that should be used after reading some procedures, perhaps in a [Wiki](../../collaboration-and-social/collaboration-and-social-overview.md#wiki) or a company's employee handbook [document](../../content-authoring-and-management/documents-and-media/documents-and-media-overview.md). Keeping the link there ensures that employees read the appropriate documentation before kicking off a Role Change Request.
+The Role Change Request app can be deployed as a standalone app with a dedicated link. This is the type of app that should be used after reading some procedures, perhaps in a [Wiki](../../collaboration-and-social/collaboration-and-social-overview.md#wiki) or a company's employee handbook [document](../../content-authoring-and-management/documents-and-media.md). Keeping the link there ensures that employees read the appropriate documentation before kicking off a Role Change Request.
 
 ## Using the App
 
@@ -104,7 +104,7 @@ Add enhancements to make the Role Change Request app fully functional:
 
 ## Related Information
 
-* [App Builder Overview](../app-builder.md)
-* [Creating a Standard Application](./creating-a-standard-application.md)
-* [Workflow](../../process-automation/workflow/introduction-to-workflow.md)
-* [Roles and Permissions](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
+- [App Builder Overview](../app-builder.md)
+- [Creating a Standard Application](./creating-a-standard-application.md)
+- [Workflow](../../process-automation/workflow/introduction-to-workflow.md)
+- [Roles and Permissions](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

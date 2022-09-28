@@ -1,6 +1,6 @@
 # Including Default Resources in Fragments
 
-You can include images (e.g. `.gif`, `.jpg`, `.jpeg`, or `.png`) in your Fragment Sets for your Fragments to use. Keeping images with your Fragments, rather than in other applications, like [Documents and Media](../../../content-authoring-and-management/documents-and-media/documents-and-media-overview.md), is a convenience. Here you'll learn how to include image resources in your Fragment Sets and use image resources in your Fragments.
+You can include images (e.g. `.gif`, `.jpg`, `.jpeg`, or `.png`) in your Fragment Sets for your Fragments to use. Keeping images with your Fragments, rather than in other applications, like [Documents and Media](../../../content-authoring-and-management/documents-and-media.md), is a convenience. Here you'll learn how to include image resources in your Fragment Sets and use image resources in your Fragments.
 
 ```{note}
 For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Liferay UI.

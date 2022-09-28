@@ -25,7 +25,7 @@ To access the Content Info sidebar, click the *Actions Menu* (![Action Menu](../
 
 This tool is the graphical area at the top of the Content Dashboard page. The chart represents the total number of assets for a given combination of vocabularies and categories,  including the *Global* scope and all *Sites & Asset Libraries* in the instance. This chart takes into account:
 
-* [Web Content Articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents and Media](../documents-and-media/documents-and-media-overview.md) and [Blog Entries](../blogs/adding-blog-entries.md) across all Sites and Asset Libraries.
+* [Web Content Articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents and Media](../documents-and-media.md) and [Blog Entries](../blogs/adding-blog-entries.md) across all Sites and Asset Libraries.
 
     ```{note}
     Documents and Media are available in the Content Dashboard starting with Liferay CE/DXP 7.4+. 
@@ -96,7 +96,7 @@ In the list of contents, you can find the following columns:
 | :--- | :--- |
 | Title | Article title(*). |
 | Author | Author's name. |
-| Type | Specifies a [Web Content Article](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents](../documents-and-media/documents-and-media-overview.md) asset type (available in Liferay DXP 7.4+.) or [Blog Entry](../blogs/adding-blog-entries.md) asset type (available in Liferay DXP 7.4 U23+/GA23+) |
+| Type | Specifies a [Web Content Article](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents](../documents-and-media.md) asset type (available in Liferay DXP 7.4+.) or [Blog Entry](../blogs/adding-blog-entries.md) asset type (available in Liferay DXP 7.4 U23+/GA23+) |
 | Subtype | Content [Subcategory](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). Includes Basic Documents and External Video Shortcuts |
 | Site or Asset Library | Location of the article in the Liferay DXP instance. |
 | Status | Article workflow status. Articles with more than one version in different statuses show all than statuses. |

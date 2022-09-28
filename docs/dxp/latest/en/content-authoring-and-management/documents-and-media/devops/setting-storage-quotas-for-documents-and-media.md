@@ -36,5 +36,5 @@ Updating a quota can be time and resource intensive, depending on the amount of 
 
 ## Additional Information
 
-* [Documents and Media Overview](../documents-and-media-overview.md)
+* [Documents and Media](../../documents-and-media.md)
 * [Portal Properties](../../../installation-and-upgrades/reference/portal-properties.md)

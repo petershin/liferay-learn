@@ -1,6 +1,6 @@
 # Document API Basics
 
-Liferay's headless delivery application provides REST services for [Documents and Media](../documents-and-media-overview.md) that add documents and folders, list their information, modify them, delete them and more. Here you'll call those services using cURL commands and Java classes.
+Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add documents and folders, list their information, modify them, delete them and more. Here you'll call those services using cURL commands and Java classes.
 
 Start with uploading documents using an example cURL command and Java class.
 
@@ -23,7 +23,7 @@ Then, follow these steps:
     unzip liferay-g9i6.zip
     ```
 
-Use a cURL script to upload a file to [Documents and Media](../documents-and-media-overview.md). 
+Use a cURL script to upload a file to [Documents and Media](../../documents-and-media.md).
 
 1. On the command line, navigate to the `curl` folder.
 
@@ -429,7 +429,7 @@ See the [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFE
 
 ## Additional Information
 
-* [Documents and Media Overview](../documents-and-media-overview.md)
+* [Documents and Media](../../documents-and-media.md)
 * [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
 * [API Headers Reference](../../../headless-delivery/consuming-apis/api-headers-reference.md)
 * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md)

@@ -87,5 +87,5 @@ When users create new files of the document type, they're presented with metadat
 
 ## Additional Information
 
-* [Documents and Media Overview](../../documents-and-media-overview.md)
+* [Documents and Media](../../../documents-and-media.md)
 * [Defining Metadata Sets](./defining-metadata-sets.md)

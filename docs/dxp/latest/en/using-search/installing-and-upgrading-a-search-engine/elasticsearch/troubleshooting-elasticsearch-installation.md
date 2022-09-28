@@ -1,8 +1,7 @@
 ---
 toc:
-- ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-connection.md
-- ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-logging.md
-- ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-sidecar-embedded.md
+- ./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
+- ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
 ---
 
 # Troubleshooting Elasticsearch Installation
@@ -10,9 +9,8 @@ toc:
 ```{toctree}
 :maxdepth: 1
 
-troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-liferay-connection.md
-troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-liferay-logging.md
-troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-sidecar-embedded.md
+troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
+troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
 ```
 
 Liferay is full of configurations, and Elasticsearch is full of configurations. Whenever you [connect such products](./getting-started-with-elasticsearch.md), you can run into difficulty along the way. 
@@ -21,6 +19,8 @@ Included below are techniques that can aid your troubleshooting work. To learn a
 
 - [Troubleshooting the Elasticsearch Connection](./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md)
 - [Troubleshooting Elasticsearch: Common Issues](./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md)
+
+To troubleshoot the sidecar Elasticsearch server bundled with Liferay, see [Troubleshooting the Sidecar/Embedded Elasticsearch](./using-the-sidecar-or-embedded-elasticsearch.md#troubleshooting-the-sidecar-embedded-elasticsearch)
 
 ## Inspecting the Search Bar's Elasticsearch Query
 

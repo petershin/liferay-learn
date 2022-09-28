@@ -149,13 +149,23 @@ Download the LES Monitoring app and install the LPKG file by copying it into the
 
    [http://localhost:8080/o/portal-search-elasticsearch-monitoring/monitoring-proxy/app/monitoring](http://localhost:8080/o/portal-search-elasticsearch-monitoring/monitoring-proxy/app/monitoring)
 
-1. Because you're using the Monitoring widget in Liferay as a proxy to Kibana's UI and you are using a self-signed certificate, you must configure the application server's startup JVM parameters to trust Kibana's certificate.
+1. Because you're using the Monitoring widget in Liferay as a proxy to Kibana's UI and you are using a self-signed certificate, you must configure the Liferay application server's startup JVM parameters to trust Kibana's certificate. There are two approaches, demonstrated with Tomcat here:
 
-   One approach is to add the truststore path, password and type to your application server's startup JVM parameters. Here are example truststore and path parameters for appending to a Tomcat server's `CATALINA_OPTS`:
+   - The recommended way is to make a copy of the default `cacerts` file, import the certificate without private key, then configure the application server to use the custom truststore file:
+      1. Copy the default `cacerts` file from the Liferay JVM (located in `JAVA_HOME/jre/lib/security` in JDK 8 or in `JAVA_HOME/lib/security` in JDK 11), and rename it `cacerts-custom.jks`.
+      1. Extract the certificate of the CA without the private key using `openssl` (if you only have a single `.p12` file like `elastic-stack-ca.p12`).
+      1. Import the certificate into your custom JKS file using Java's `keytool`.
+      1. Configure Tomcat to use the custom truststore:
 
-    ```bash
-    -Djavax.net.ssl.trustStore=/path/to/elastic-nodes.p12 -Djavax.net.ssl.trustStorePassword=liferay -Djavax.net.ssl.trustStoreType=pkcs12
-    ```
+         ```
+         CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/PATH/TO/cacerts-custom.jks -Djavax.net.ssl.trustStorePassword=changeit"
+         ```
+
+   - Alternatively, add the truststore path, password, and type to your application server's startup JVM parameters using the same files you also used to configure security in the Elasticsearch connector. Append truststore and path parameters to a Tomcat server's `CATALINA_OPTS` through the `setenv.sh/bat` file:
+
+      ```
+      CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/path/to/elastic-nodes.p12 -Djavax.net.ssl.trustStorePassword=liferay -Djavax.net.ssl.trustStoreType=pkcs12"
+      ```
 
 1. If your stack includes Kibana 7.11+ and JDK 11, you must disable TLS version 1.3. Disable TLS 1.3 in Kibana itself by adding `--tls-max-v1.2` to `KIBANA_HOME/config/node.options`. See [Troubleshooting the Monitoring Setup](#troubleshooting-the-monitoring-setup) for details and an alternative solution.
 
@@ -163,8 +173,7 @@ Restart Liferay and Kibana.
 
 ## Monitoring in Liferay
 
-Once you have Kibana and LES Monitoring installed, configured, and all the
-servers are running, add the Elasticsearch Monitoring widget to a page:
+Once Kibana and LES Monitoring are installed, configured, and running, add the Elasticsearch Monitoring widget to a page:
 
 1. Open the *Fragments and Widgets* menu on a Content Page, or the Add Widgets menu on a Widget Page.
 

@@ -8,7 +8,7 @@ Liferay provides a user-friendly name for each field type, which corresponds to 
 
 | Field Types (UI) | Data Type (HEADLESS) | Description |
 | :--- | :--- | :--- |
-| [Attachment](#attachment) | Relationship > Long | Stores files; by default, uploaded files can be no larger than 100 MB; this field supports all file types accepted by the [Documents and Media](../../content-authoring-and-management/documents-and-media.md) application |
+| [Attachment](#attachment) | Relationship > Long | Stores files; by default, uploaded files can be no larger than 100 MB; this field supports all file types accepted by [Documents and Media](../../content-authoring-and-management/documents-and-media.md). |
 | Boolean | Boolean | Stores true or false values |
 | Date | Date | Stores date values |
 | Decimal (*previously Double*) | Double | Stores a decimal number value with a limit of 16 digits, whether before or after the decimal <br><br> For example: `999.9999999999999` (16 digits total) <br><br> Note: Due to its limited number of digits, this field type sometimes rounds large numbers and does not provide high precision. Use the Precision Decimal type to enter values with more decimal places and to avoid rounding. |
@@ -47,7 +47,7 @@ After creating an Attachment field, you can configure it in these ways:
 
 | Field | Description |
 | :--- | :--- |
-| Accepted File Extensions | Enter a list of accepted file extensions to determine the type of files users can upload to the field. Each extension must be separated by commas. Attachment fields support all file types accepted by the [Documents and Media](../../content-authoring-and-management/documents-and-media.md) application. |
+| Accepted File Extensions | Enter a list of accepted file extensions to determine the type of files users can upload to the field. Each extension must be separated by commas. Attachment fields support all file types accepted by [Documents and Media](../../content-authoring-and-management/documents-and-media.md). |
 | Maximum File Size | Enter the maximum file size accepted by the field. The default value is 100 MB. If desired, you can set the value to 0 to use the server's Overall Maximum Upload Request Size property. |
 | Storage Folder (*for Show Files in Documents and Media*) | Enter a folder name to determine where uploaded files are stored in Documents and Media. By default, the folder uses the Object definition's name (e.g., `/Employee`, `/TimeOffRequest`). |
 

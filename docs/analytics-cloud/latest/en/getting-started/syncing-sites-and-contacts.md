@@ -3,7 +3,7 @@
 Now that you've [Connected Liferay DXP to Analytics Cloud](./connecting-liferay-dxp-to-analytics-cloud.md), it's time to sync your site and your contacts.
 
 ```{note}
-If you are new to Liferay DXP, there isn't much content on your Liferay instance for Analytics Cloud to start tracking. If you're interested in jump-starting a demo site, consider using Liferay Commerce's [Minium Accelerator Site](https://learn.liferay.com/commerce/latest/en/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html) to get some sample content that you can use to explore Analytics Cloud. 
+If you are new to Liferay DXP, there isn't much content on your Liferay instance for Analytics Cloud to start tracking. If you want to learn Analytics Cloud by jump-starting a demo site, consider using Liferay Commerce's [Minium Accelerator Site](https://learn.liferay.com/commerce/latest/en/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html) to get some sample content. 
 ```
 
 ## Syncing Sites
@@ -18,7 +18,7 @@ The first step to syncing sites is creating a new Property. A property is a labe
 
    ![Select the site you want to sync and list of available sites.](./syncing-sites-and-contacts/images/02.png)
 
-   Upon successful sync, the following message appears at the bottom left of your screen:
+   Upon successful sync, this message appears at the bottom left of your screen:
 
     `Success: Your request completed successfully`
 
@@ -32,7 +32,7 @@ Analytics Cloud gives you tools to sync and manage individual contact data. Howe
 
 1. In your Liferay DXP instance, open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to _Configuration_ &rarr; _Instance Settings_. Under _Platform_, click _Analytics Cloud_. Click _Select Contacts_.
 
-1. Under the Contact Sync Options, click _Sync Contacts_. Use the switch to enable _Sync All_ to sync all your contacts. Alternatively, click _Sync by User Groups_ or _Sync by Organizations_ if you prefer to sync a subset of your contacts. Click _Save and Next_. For this example, syncing all your contacts will sync four contacts (the three individuals created above and the Test administrator user).
+1. Under the Contact Sync Options, click _Sync Contacts_. Use the switch to enable _Sync All_ to sync all your contacts. Alternatively, click _Sync by User Groups_ or _Sync by Organizations_ if you prefer to sync a subset of your contacts. Click _Save and Next_. 
 
 1. Liferay DXP stores contact data in two separate tables (Contact and User). Switch between the _Contact_ tab and _User_ tab to select the fields to sync. Analytics Cloud requires some fields to be synced, so those are grayed out. For this example, keep the default selection. Click _Save_.
 

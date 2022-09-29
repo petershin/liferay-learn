@@ -1,7 +1,6 @@
 ---
 toc:
 ---
-
 # 注文ルール
 
 ```{toctree}
@@ -12,7 +11,7 @@ order-rules/using-the-minimum-order-amount-rule.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Using the Minimum Order Amount Rule
+:::{grid-item-card} 最少注文金額ルールの使用
 :link: ./order-rules/using-the-minimum-order-amount-rule.md
 :::
 ::::

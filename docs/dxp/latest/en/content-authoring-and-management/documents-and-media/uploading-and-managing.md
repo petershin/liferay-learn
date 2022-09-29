@@ -1,7 +1,7 @@
 ---
 toc:
 - ./uploading-and-managing/uploading-files.md
-- ./uploading-and-managing/creating-folders.md
+- ./uploading-and-managing/using-folders.md
 - ./uploading-and-managing/previewing-files.md
 - ./uploading-and-managing/deleting-files.md
 - ./uploading-and-managing/editing-images.md
@@ -18,7 +18,7 @@ toc:
 :maxdepth: 2
 
 uploading-and-managing/uploading-files.md
-uploading-and-managing/creating-folders.md
+uploading-and-managing/using-folders.md
 uploading-and-managing/previewing-files.md
 uploading-and-managing/deleting-files.md
 uploading-and-managing/editing-images.md
@@ -31,7 +31,7 @@ uploading-and-managing/managing-metadata.md
 ```
 
 - [Uploading Files](./uploading-and-managing/uploading-files.md)
-- [Creating Folders](./uploading-and-managing/creating-folders.md)
+- [Using Folders](./uploading-and-managing/using-folders.md)
 - [Previewing Files](./uploading-and-managing/previewing-files.md)
 - [Deleting Files](./uploading-and-managing/deleting-files.md)
 - [Editing Images](./uploading-and-managing/editing-images.md)

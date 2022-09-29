@@ -16,7 +16,7 @@ You can give permissions to an individual file, to an entire folder, or to a spe
 
 1. Navigate to the *Documents and Media* application. 
 
-1. Click the options icon (![Options icon](../../../../images/icon-options.png)) on the folder whose permissions should change and select Permissions. See [Creating Folders](../../uploading-and-managing/creating-folders.md) to learn more about folders.
+1. Click the options icon (![Options icon](../../../../images/icon-options.png)) on the folder whose permissions should change and select Permissions. See [Using Folders](../../uploading-and-managing/using-folders.md) to learn more about folders.
 
    ![In the options, click on Permissions.](permissions-and-documents/images/01.png)
 

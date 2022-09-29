@@ -28,7 +28,7 @@ The *Documents and Media* tab provides access to the application's primary featu
 The Home folder serves as the root folder for the Documents and Media application.
 ```
 
-Click the *Add* button (![Add Button](../../images/icon-add.png)) to access these actions: File Upload, Multiple Files Upload, Folder, Repository, Shortcut, External Video Shortcut. See [Creating Folders](./uploading-and-managing/creating-folders.md) and [Uploading Files](./uploading-and-managing/uploading-files.md) for more information.
+Click the *Add* button (![Add Button](../../images/icon-add.png)) to access these actions: File Upload, Multiple Files Upload, Folder, Repository, Shortcut, External Video Shortcut. See [Using Folders](./uploading-and-managing/using-folders.md) and [Uploading Files](./uploading-and-managing/uploading-files.md) for more information.
 
 ![Click the Add button to create a new folder or digital asset.](./documents-and-media-ui-reference/images/04.png)
 

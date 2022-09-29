@@ -60,6 +60,6 @@ However, if you would like to define file details before uploading them, follow 
 
 ## Additional Information
 
-* [Creating Folders](./creating-folders.md)
+* [Using Folders](./using-folders.md)
 * [Using the Media Gallery](../publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget)
 * [Enabling Xuggler and ImageMagick for Previews](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-document-previews)

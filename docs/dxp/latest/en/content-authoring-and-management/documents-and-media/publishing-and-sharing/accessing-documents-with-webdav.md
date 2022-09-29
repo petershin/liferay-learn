@@ -28,5 +28,5 @@ Once set up, you can use your operating system's file browser to add, edit, and 
 
 * [Enabling and Configuring Document Sharing](./managing-document-access/enabling-and-configuring-sharing.md)
 * [Sharing Documents with Other Users](./managing-document-access/sharing-documents-with-other-users.md)
-* [Creating Folders](../uploading-and-managing/creating-folders.md)
+* [Using Folders](../uploading-and-managing/using-folders.md)
 * [Documents and Media UI Reference](../documents-and-media-ui-reference.md)

@@ -56,19 +56,19 @@ Learn more about [syncing contact data from Liferay DXP](syncing-contact-data-fr
 
 ## Email Reports
 
-You can enable reports to be emailed to you on a regular basis. The report includes the number of unique visitors, number of sessions per visitor, average session duration, and average bounce rate. To enable,
+You can have reports emailed to you on a regular basis. The report includes the number of unique visitors, number of sessions per visitor, average session duration, and average bounce rate. To enable,
 
-1. Navigate to _Settings_ &rarr; _Properties_. Select the property you would like to enable email reports for.
+1. Navigate to _Settings_ &rarr; _Properties_. Select the property for which you want an emailed report.
 
-1. Click the _Cog_ icon (![Cog icon](../images/icon-cog-2.png)) and a new window will pop open. 
+1. Click the _Cog_ icon (![Cog icon](../images/icon-cog-2.png)), and a new window opens. 
 
 1. Toggle the switch to enable email reports. Select the email frequency (e.g. Daily, Weekly, or Monthly). Click _Save_.
 
-    ![Toggle the switch to enable email reports and select a frequency.](./scoping-sites-and-individuals-using-properties/images/06.png)
+   ![Toggle the switch to enable email reports and select a frequency.](./scoping-sites-and-individuals-using-properties/images/06.png)
 
-1. You will receive regular email reports based on your selected frequency. Note, daily reports are sent out every day at 12:00 AM (UTC). Weekly reports are sent out every Monday at 12:00 AM (UTC). Monthly reports are sent out on the 1st of the month at 12:00 AM (UTC). The screenshot below shows a sample report.
+1. Regular email reports are sent based on your selected frequency. Note, daily reports are sent out every day at 12:00 AM (UTC). Weekly reports are sent out every Monday at 12:00 AM (UTC). Monthly reports are sent out on the 1st of the month at 12:00 AM (UTC). A sample report appears below.
 
-    ![Email reports include analytics about individuals visiting your site.](./scoping-sites-and-individuals-using-properties/images/07.png)
+   ![Email reports include analytics about individuals visiting your site.](./scoping-sites-and-individuals-using-properties/images/07.png)
 
 ## Managing Permissions for a Property
 
@@ -78,9 +78,9 @@ To assign property permissions, do the following:
 
 1. In your Analytics Cloud workspace, go to *Settings* &rarr; *Properties*, and select the property you wish to manage permissions for.
 
-    ```{note}
-    By default, properties are accessible to all users of a workspace in Analytics Cloud. You can change that by clicking on the *Select Users* radio button.
-    ```
+   ```{note}
+   By default, properties are accessible to all users of a workspace in Analytics Cloud. You can change that by clicking on the *Select Users* radio button.
+   ```
 
 1. Add users to a property by clicking *Add User*.
 

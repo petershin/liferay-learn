@@ -4,19 +4,25 @@ You can access the Document Library from your desktop file manager via [WebDAV](
 
 To access the Document Library folder from a file browser, you must use your log-in credentials and the WebDAV URL of the folder you want to access. Follow these steps:
 
-1. Navigate to the Documents and Media app that contains the folder you want to access. Click the folder's Actions icon (![Actions](../../../images/icon-actions.png)) and select _Access from Desktop_.
+1. Open the Documents and Media application in the desired Site or Asset Library.
 
-    ![Select Access from Desktop to get the folder's WebDAV URL.](./accessing-documents-with-webdav/images/01.png)
+1. Click the *Actions* button for the desired folder (![Actions Button](../../../images/icon-actions.png)) and select *Access from Desktop*.
 
-1. Copy the WebDAV URL and follow the instructions for your operating system:
+   ![Select Access from Desktop to get the folder's WebDAV URL.](./accessing-documents-with-webdav/images/01.png)
 
-    * **Windows:** Map a network drive drive to the WebDAV URL. Enter your credentials when prompted. The Document Library folder appears in the network drive. From your file browser, you can now add, edit, move, or delete files in this folder.
+1. Copy the folder's unique *WebDAV URL*.
 
-    * **macOS:** In the Finder, select *Go* &rarr; *Connect to Server*. In the Server Address field, enter the WebDAV URL of the folder you want to access, then click *Connect* and enter your credentials when prompted.
+   ![Copy the folder's WebDAV URL.](./accessing-documents-with-webdav/images/02.png)
 
-    * **Linux:** In your file manager, you must slightly modify the Document Library folder's WebDAV URL. For KDE Dolphin, change the URL's protocol to `webdav://` instead of `http://`. For GNOME Files, change the URL's protocol to `dav://` instead of `http://`. Then press *Enter* and enter your credentials when prompted.
+1. Follow the instructions for your operating system.
 
-Now you can access the Document Library folder from your desktop file system. If you edit a file in this folder on your file system, the change also appears in the same Document Library folder in the portal. What's more, the file's minor version is incremented due to the edit.
+   * **Windows:** Map a network drive to the WebDAV URL. Enter your credentials when prompted. Once authenticated, the Document Library folder appears as a network drive.
+
+   * **macOS:** Open Finder and select *Go* &rarr; *Connect to Server*. In the Server Address field, enter the WebDAV URL of the folder you want to access, then click *Connect* and enter your credentials when prompted.
+
+   * **Linux:** For Linux, you must slightly modify the folder's WebDAV URL. For KDE Dolphin, change the URL's protocol to `webdav://` instead of `http://`. For GNOME Files, change the URL's protocol to `dav://` instead of `http://`. Paste the modified URL in your file manager, press *Enter*, and enter your credentials when prompted.
+
+Once set up, you can use your operating system's file browser to add, edit, and delete files in the connected Documents and Media folder. If you edit a file in this folder on your file system, all changes appear in Liferay and the file's minor version is incremented.
 
 ## Additional Information
 

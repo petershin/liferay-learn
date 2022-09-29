@@ -1,16 +1,16 @@
 # Introduction to Shipments
 
-Create shipments first in the _Orders_ menu as part of [processing an order](../orders/processing-an-order.md). Once an order is processed, you are redirected to the _Shipments_ menu to complete order processing.
+You can view all your orders by opening the Global Menu and going to Commerce -> Orders. When an Order is in the [processing](../orders/processing-an-order.md)stage, you can create shipments for it. Once you create a shipment, you are taken to the Shipments page where you can finish processing the Order.
 
 ```{note}
-A single shipment may contain multiple orders but all the orders must be created by the *same* account.
+A single shipment may contain multiple orders but the same account must create all the orders contained in the shipment.
 ```
 
 Navigate to _Global Applications_ → _Commerce_ → _Orders_. Select an order that is ready to be shipped and click the _Create Shipment_ button.
 
 ![Shipments Menu](./introduction-to-shipments/images/04.png)
 
-This takes the user automatically to the Shipments menu to finish processing the order. There are four stages: Processing, Ready to Ship, Shipped, and Delivered.
+This automatically takes you to the Shipments menu to finish processing the order. There are four stages: Processing, Ready to Ship, Shipped, and Delivered.
 
 ## Processing
 
@@ -25,8 +25,7 @@ Once all the items and the sourcing warehouse chosen, the order is ready to ship
 ![Shipments Menu - Ready to Ship](./introduction-to-shipments/images/06.png)
 
 ## Shipped
-
-Once an order has been shipped and awaiting confirmation of delivery, the order is in the Shipped phase. Click _Deliver_ when the delivery has been made.
+After shipping the order and before confirmation of delivery, the order is in the ‘Shipped’ phase. Once delivered, click the _Deliver_button to mark the Order as 'Delivered'.
 
 ![Shipments Menu - Shipped](./introduction-to-shipments/images/08.png)
 

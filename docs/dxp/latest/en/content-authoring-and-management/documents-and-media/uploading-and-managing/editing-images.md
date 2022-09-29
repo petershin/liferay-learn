@@ -28,17 +28,17 @@ The Documents and Media application comes with a built-in image editor. Edit ima
 
 In the Documents and Media application, locate the image. Click the Options icon (![Options icon](../../../images/icon-options.png)) and select *Edit With Image Editor*. 
 
-![The Options icon contains functions for sharing, editing, checking out, or changing permissions for images.](editing-images/images/04.png)
+![The Options icon contains functions for sharing, editing, checking out, or changing permissions for images.](editing-images/images/03.png)
 
 The image editor offers a minimal, user-friendly UI with the following tools.
 
-![There are different editing tools below the image.](editing-images/images/05.png)
+![There are different editing tools below the image.](editing-images/images/04.png)
 
 ### Effects Tool (Filters)
 
 Select from and apply predefined filters to your image.
 
-![The Effects tool brings up predefined filters you can apply to your image.](editing-images/images/06.png)
+![The Effects tool brings up predefined filters you can apply to your image.](editing-images/images/05.png)
 
 ### Transform Tools (Transform Option)
 
@@ -60,12 +60,12 @@ Once you have made changes to the image in the editor, you can click *Apply* to 
 
 There is also history bar at the top of the image:
 
-![The history bar at the top of your image can be used to undo or redo changes.](editing-images/images/07.png)
+![The history bar at the top of your image can be used to undo or redo changes.](editing-images/images/06.png)
 
 The history bar can undo, redo, or reset changes that have been made to the image in the editor. Use the reset button with caution: once it has been pressed the image is reset to its original state, causing all changes made within the editor to be lost.
 
 ## Additional Information
 
-* [Documents and Media Overview](../documents-and-media-overview.md)
+* [Documents and Media](../../documents-and-media.md)
 * [Uploading Files](./uploading-files.md)
 * [Previewing Files](./previewing-files.md)

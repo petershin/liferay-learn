@@ -68,4 +68,4 @@ The history bar can undo, redo, or reset changes that have been made to the imag
 
 * [Documents and Media](../../documents-and-media.md)
 * [Uploading Files](./uploading-files.md)
-* [Previewing Files](./previewing-files.md)
+* [Managing Files](./managing-files.md)

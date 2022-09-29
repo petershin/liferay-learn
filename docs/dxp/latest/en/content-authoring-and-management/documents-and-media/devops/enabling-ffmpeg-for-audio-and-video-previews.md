@@ -24,5 +24,5 @@ Once configured, audio and video previews are automatically generated for audio 
 
 ## Additional Information
 
-* [Previewing Files](../uploading-and-managing/previewing-files.md)
+* [Managing Files](../uploading-and-managing/managing-files.md)
 * [Configuring Documents and Media Previews](./configuring-documents-and-media-previews.md)

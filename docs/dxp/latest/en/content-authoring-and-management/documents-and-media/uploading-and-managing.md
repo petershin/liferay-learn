@@ -2,7 +2,7 @@
 toc:
 - ./uploading-and-managing/uploading-files.md
 - ./uploading-and-managing/using-folders.md
-- ./uploading-and-managing/previewing-files.md
+- ./uploading-and-managing/managing-files.md
 - ./uploading-and-managing/deleting-files.md
 - ./uploading-and-managing/editing-images.md
 - ./uploading-and-managing/using-file-expiration-and-review-dates.md
@@ -19,7 +19,7 @@ toc:
 
 uploading-and-managing/uploading-files.md
 uploading-and-managing/using-folders.md
-uploading-and-managing/previewing-files.md
+uploading-and-managing/managing-files.md
 uploading-and-managing/deleting-files.md
 uploading-and-managing/editing-images.md
 uploading-and-managing/using-file-expiration-and-review-dates.md
@@ -32,7 +32,7 @@ uploading-and-managing/managing-metadata.md
 
 - [Uploading Files](./uploading-and-managing/uploading-files.md)
 - [Using Folders](./uploading-and-managing/using-folders.md)
-- [Previewing Files](./uploading-and-managing/previewing-files.md)
+- [Managing Files](./uploading-and-managing/managing-files.md)
 - [Deleting Files](./uploading-and-managing/deleting-files.md)
 - [Editing Images](./uploading-and-managing/editing-images.md)
 - [Using File Expiration and Review Dates](./uploading-and-managing/using-file-expiration-and-review-dates.md)

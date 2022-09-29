@@ -1,6 +1,6 @@
 # Configuring Documents and Media Previews
 
-By default, Liferay DXP uses [PDFBox](https://pdfbox.apache.org) to generate [previews](../uploading-and-managing/previewing-files.md) for files added to the Document Library. This is because PDFBox is the only 100% Java-based tool that can be distributed with DXP.
+By default, Liferay DXP uses [PDFBox](https://pdfbox.apache.org) to generate previews for files added to the Document Library. This is because PDFBox is the only 100% Java-based tool that can be distributed with DXP.
 
 However, since PDFBox only supports a limited number of file types, Liferay also provides integration with external services to support additional file types. These services can be used to more quickly generate high quality file previews for more of your files.
 
@@ -24,6 +24,6 @@ With these tools installed and configured, Documents and Media can provide in ap
 
 ## Additional Information
 
-* [Previewing Files](../uploading-and-managing/previewing-files.md)
+* [Managing Files](../uploading-and-managing/managing-files.md)
 * [Documents and Media UI Reference](../documents-and-media-ui-reference.md)
 * [Enabling OpenOffice/LibreOffice Integration](./enabling-openoffice-libreoffice-integration.md)

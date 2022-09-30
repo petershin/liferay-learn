@@ -4,7 +4,7 @@
 
 Some use cases may require assigning multiple states to an object entry at the same time. For example, when building an Order application, you may need to assign and manage order, payment, and delivery statuses for the same entry, each with its own flow and associated business logic. Using Liferay picklists with custom objects, you can achieve this functionality.
 
-With [picklists](../picklists.md), you can define lists of strings and use them with object fields to define custom states for entries. Once added to an object definition, you can design the flow for each state and use [validations](./adding-custom-validations.md) and [actions](./defining-object-actions.md) to add custom business logic for different states. These custom states can also be used alongside [workflow statuses](../enabling-workflows-for-objects.md) to define more complex review and approval processes.
+With [picklists](../picklists.md), you can define lists of strings and use them as object fields to define custom states for entries. Once added to an object definition, you can design the flow for each state and use [validations](./adding-custom-validations.md) and [actions](./defining-object-actions.md) to add custom business logic for different states. These custom states can also be used alongside [workflow statuses](../enabling-workflows-for-objects.md) to define more complex review and approval processes.
 
 ![Use picklists to add custom states to object definitions.](./adding-and-managing-custom-states/images/01.png)
 
@@ -50,7 +50,7 @@ After adding the field to a definition, you can [set up a flow](#setting-up-a-fl
 
 ## Setting Up a Flow for State Fields
 
-By default, each state can transition to all other states. However, you can __. Ensures the entry goes through the desires process.
+By default, each state can transition to all other states. However, you can restrict transitions to ensure the entry goes through the desired process.
 
 Follow these steps to set up a custom flow for state fields:
 

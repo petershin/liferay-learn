@@ -11,7 +11,7 @@ toc:
 - ./creating-and-managing-objects/adding-and-managing-custom-states.md
 - ./creating-and-managing-objects/exporting-and-importing-object-structures.md
 - ./creating-and-managing-objects/expression-builder-validations-reference.md
-- ./creating-and-managing-objects/restricting-access-to-object-data-by-account.md
+- ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
 - ./creating-and-managing-objects/auditing-object-definition-events.md
 ---
 # Creating and Managing Objects
@@ -31,7 +31,7 @@ creating-and-managing-objects/adding-custom-validations.md
 creating-and-managing-objects/adding-and-managing-custom-states.md
 creating-and-managing-objects/exporting-and-importing-object-structures.md
 creating-and-managing-objects/expression-builder-validations-reference.md
-creating-and-managing-objects/restricting-access-to-object-data-by-account.md
+creating-and-managing-objects/using-system-objects-with-custom-objects.md
 creating-and-managing-objects/auditing-object-definition-events.md
 ```
 

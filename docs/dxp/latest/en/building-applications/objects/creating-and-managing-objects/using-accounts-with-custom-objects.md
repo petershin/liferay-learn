@@ -12,13 +12,13 @@ The Account object stores general account data (e.g., name, email), while the Po
 
 When relating a custom object to the Accounts and Postal Address system objects, these relationships should be defined on the system object side and use the one-to-many type. The custom object should be on the many side of both relationships.
 
-Follow these set up relationships for accessing Account and Postal Address entries from your custom object:
+Follow these steps to set up relationships for accessing Account and Postal Address entries from your custom object:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
 
 1. Begin editing the *Accounts* object.
 
-1. Go to the *Relationship* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Go to the *Relationships* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
 1. Enter a *Label* and *Name*.
 
@@ -32,9 +32,9 @@ Follow these set up relationships for accessing Account and Postal Address entri
 
 1. Return to the Objects admin page and begin editing the *Postal Address* object.
 
-1. Go to the *Relationship* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Go to the *Relationships* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
-1. Enter a *label* and *name*.
+1. Enter a *Label* and *Name*.
 
 1. For Type, select *One to Many*.
 
@@ -52,12 +52,12 @@ Follow these set up relationships for accessing Account and Postal Address entri
 
    ![Add the relationship fields to the custom object's default layout and view.](./using-accounts-with-custom-objects/images/04.png)
 
-Once added, users can select from available accounts and addresses in the custom object. Available account options depend on the user's membership, and available addresses depend on the selected account.
+Once added, users can select from available accounts and addresses in the custom object. Available account options depend on the user's account memberships, and available addresses depend on the selected account.
 
 ![Users can select from available accounts and addresses in the custom object.](./using-accounts-with-custom-objects/images/05.png)
 
 ```{tip}
-By default, objects use entry IDs for their title fields. The title field value determines how each entry option is displayed to end users in the relationship field. If desired, you can configure each object to use a different field for the title.
+By default, objects use entry IDs for their title fields. The title field value determines how each entry option is displayed to end users in the relationship field. If desired, you can improve readability by configuring each object to use a different field for the title.
 
 To do this, begin editing the desired object definition, go to the *Details* tab, and select a different value for the *Title Field*. Click *Save* when finished.
 ```

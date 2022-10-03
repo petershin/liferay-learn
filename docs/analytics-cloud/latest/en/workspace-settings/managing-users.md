@@ -45,7 +45,3 @@ Here’s how to change a user’s permission Role:
 1. Select the permission Role for the user.
 
 The user is assigned the selected Role.
-
-## Additional Information
-
-* [Accessing Your Analytics Cloud Workspace](../getting-started/accessing-your-workspace.md)

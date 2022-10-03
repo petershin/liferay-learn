@@ -4,11 +4,7 @@ The home of your workspace is a dashboard of your websites' analytics performanc
 
 ![The Analytics Dashboard presents an overview of your site's analytics data.](viewing-the-analytics-dashboard/images/01.png)
 
-The Dashboard is also the starting point for a variety of workspace management and configuration tasks. If you have not connected your workspace during the [Onboarding Process](accessing-your-workspace.md#onboarding-process), see the steps below.
-
-## Connecting a DXP Site to Analytics Cloud
-
-The first task for a new workspace is to connect it to a Data Source. Analytics Cloud is built to use Liferay DXP Sites as a key data source. See [Connecting Liferay DXP Sites to Analytics Cloud](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md) to learn more. 
+The Dashboard is also the starting point for a variety of workspace management and configuration tasks. 
 
 ## Inviting Others to Your Workspace
 

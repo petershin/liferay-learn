@@ -1,6 +1,6 @@
 # Managing Workspaces
 
-After [signing up for a new workspace](../getting-started/signing-up-for-a-new-workspace.md), you can view and change your workspace settings from the settings page. Navigate to *Settings* &rarr; *Workspace Settings* &rarr; *Workspace*.
+You can view and change your workspace settings from the settings page. Navigate to *Settings* &rarr; *Workspace Settings* &rarr; *Workspace*.
 
 **Workspace Name:** The name of your analytics workspace. To change your workspace name, enter a new name and click *Save*.
 

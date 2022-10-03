@@ -42,4 +42,4 @@ Analytics Cloud gives you tools to sync and manage individual contact data. Howe
 
     `Success: Your request completed successfully`
 
-Great, now you're all set up! As users visit and interact with your site, Analytics Cloud begins tracking what's happening. Once that happens, you can take a dive into [Understanding Your Site's Data](./understanding-your-sites-data.md) to see the different interactions that get tracked.
+Great, now you're all set up! As users visit and interact with your site, Analytics Cloud begins tracking what's happening. Once that happens, you can take a dive into [Viewing the Analytics Dashboard](././viewing-the-analytics-dashboard.md) to see the different interactions that get tracked.

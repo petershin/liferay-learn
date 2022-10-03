@@ -1,3 +1,0 @@
-# Individuals
-
-Coming soon!

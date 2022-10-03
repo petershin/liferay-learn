@@ -2,12 +2,7 @@
 toc:
    - ./getting-started/connecting-liferay-dxp-to-analytics-cloud.md
    - ./getting-started/syncing-sites-and-contacts.md
-   - ./getting-started/understanding-your-sites-data.md
-   - ./getting-started/paths-and-pages.md
-   - ./getting-started/assets-and-events.md
-   - ./getting-started/understanding-your-audience.md
-   - ./getting-started/individuals.md
-   - ./getting-started/segments.md
+   - ./getting-started/viewing-the-analytics-dashboard.md
 ---
 # Getting Started
 
@@ -16,12 +11,7 @@ toc:
 
 getting-started/connecting-liferay-dxp-to-analytics-cloud.md
 getting-started/syncing-sites-and-contacts.md
-getting-started/understanding-your-sites-data.md
-getting-started/paths-and-pages.md
-getting-started/assets-and-events.md
-getting-started/understanding-your-audience.md
-getting-started/individuals.md
-getting-started/segments.md
+getting-started/viewing-the-analytics-dashboard.md
 ```
 
 Welcome to Liferay Analytics Cloud. Collecting analytics data is a crucial part of any business. There are many different tools out there but not all provide high value. It's not enough just to gather large amounts of data, because it doesn't necessarily translate to valuable data and useful insights. Furthermore, low value data can lead to an incomplete picture of who your customers are or wasted marketing spend in the wrong areas.

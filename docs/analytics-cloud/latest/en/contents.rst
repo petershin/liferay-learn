@@ -7,7 +7,6 @@ Contents
    :maxdepth: 3
 
    getting-started
-   connecting-data-sources
    touchpoints
    people
    optimization

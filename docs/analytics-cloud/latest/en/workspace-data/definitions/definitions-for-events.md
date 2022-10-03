@@ -6,7 +6,7 @@ Analytics Cloud tracks default and custom events that occur on your DXP instance
 
 ## Default Events
 
-There are several default events that can be analyzed as soon as you have [connected your DXP instance to Analytics Cloud](../../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md). Click on the *Default Events* tab to see all the events that are available out of the box.
+There are several default events that can be analyzed as soon as you have [connected your DXP instance to Analytics Cloud](../../getting-started/connecting-liferay-dxp-to-analytics-cloud.md). Click on the *Default Events* tab to see all the events that are available out of the box.
 
 Click on a default event to see the specific attributes that are associated with that event.
 

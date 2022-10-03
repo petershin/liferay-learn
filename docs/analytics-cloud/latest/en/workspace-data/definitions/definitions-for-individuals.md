@@ -1,6 +1,6 @@
 # Definitions for Individuals
 
-The data model for individuals is defined by the various attributes that get mapped when contact data is [synced from DXP](../../connecting-data-sources/syncing-contact-data-from-dxp.md).
+The data model for individuals is defined by the various attributes that get mapped when contact data is [synced from DXP](../../getting-started/syncing-sites-and-contacts.md).
 
 To view a list of these attributes, navigate to *Settings* &rarr; *Workspace Data* &rarr; *Definitions* &rarr; *Individuals*.
 

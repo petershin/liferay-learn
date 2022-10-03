@@ -1,7 +1,6 @@
 ---
 toc:
 - ./getting-started.md
-- ./connecting-data-sources.md
 - ./touchpoints.md
 - ./people.md
 - ./optimization.md

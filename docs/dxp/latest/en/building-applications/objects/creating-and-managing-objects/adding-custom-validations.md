@@ -78,44 +78,6 @@ Expression Builder validations can only be used with text, numeric, date, and bo
 
 For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax when you click *Save*. If the expression is invalid, Liferay shows an error message.
 
-## Available Fields Reference
-
-When constructing conditions, you can use any of the Object's custom or system fields. You can also select from relationship fields on the 'one' side of a relationship.
-
-The following table lists all default system fields included in both system and custom Object definitions:
-
-| Field | Description |
-| :--- | :--- |
-| `companyId` | Portal instance where the entry was created |
-| `createDate` | When the entry was created |
-| `externalReferenceCode` | External reference code for the entry |
-| `groupId` | Site ID in where the entry was created |
-| `lastPublishDate` | Date when the entry was last published |
-| `modifiedDate` | Date when the entry was last modified |
-| `mvccVersion` | MVCC version of the entry |
-| `objectDefinitionId` | ID of the entry's Object |
-| `objectEntryId` | ID for the entry |
-| `status` | Workflow status for the entry |
-| `statusByUserId` | ID of the assigned user in Workflow |
-| `statusByUserName` | Name of the assigned user in Workflow |
-| `statusDate` | Date when the Workflow status was last updated |
-| `userEmailAddress` | Email address for the entry's author |
-| `userFirstName` | First name of the entry's author |
-| `userId` | ID of the entry's author |
-| `userLastName` | Last name of the entry's author |
-| `userName` | User name of the entry's author |
-| `uuid` | Unique universal ID for the entry |
-
-```{note}
-Only the following system fields are listed in the editing sidebar for easy access:
-
-* Author (`userName`)
-* Created Date (`createDate`)
-* ID (`objectEntryId`)
-* Modified Date (`lastPublishDate`)
-* Workflow status (`status`)
-```
-
 ## Expression Builder Operators
 
 The following table lists available operators for Expression Builder validations:
@@ -156,6 +118,33 @@ The following table lists available Expression Builder functions with their comp
 | Past Dates |  |  | &#10004; |
 | Range |  |  | &#10004; |
 | Sum |  | &#10004; |  |
+
+## Available Fields Reference
+
+When constructing conditions, you can use any of the Object's custom or system fields. You can also select from relationship fields on the 'one' side of a relationship.
+
+The following table lists all default fields available for custom Objects:
+
+| Field | Description |
+| :--- | :--- |
+| `companyId` | Portal instance where the entry was created |
+| `createDate` | When the entry was created |
+| `externalReferenceCode` | External reference code for the entry |
+| `groupId` | Site ID in where the entry was created |
+| `lastPublishDate` | Date when the entry was last published |
+| `modifiedDate` | Date when the entry was last modified |
+| `mvccVersion` | MVCC version of the entry |
+| `objectDefinitionId` | ID of the entry's Object |
+| `objectEntryId` | ID for the entry |
+| `status` | Workflow status for the entry |
+| `statusByUserId` | ID of the assigned user in Workflow |
+| `statusByUserName` | Name of the assigned user in Workflow |
+| `statusDate` | Date when the Workflow status was last updated |
+| `userId` | ID of the entry's author |
+| `userName` | User name of the entry's author |
+| `uuid` | Unique universal ID for the entry |
+
+System Objects have their own default fields, though there is some overlap with the above chart.
 
 ## Additional Information
 

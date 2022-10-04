@@ -32,10 +32,6 @@ staging/site-staging-ui-reference.md
 
 Liferay's Staging application provides a working environment for making changes to a Site or Asset Library before publishing your changes to your live environment. With it, you can modify staged application data and Pages behind the scenes and then publish your changes when ready, whether individually or all together, while the Live environment handles incoming user traffic.
 
-```{important}
-Liferay Commerce does not support Staging. During the publishing process, entities from Commerce are not staged. 
-```
-
 When setting up Staging, determine whether to host your Site or Asset Library locally (i.e., on the same server) or remotely (i.e., on separate servers connected by a network). Then customize which application data is staged. For Sites, you can also enable Page versioning for Widget Pages and Content Pages.
 
 ```{important}
@@ -69,6 +65,10 @@ Starting with Liferay DXP 7.4, 7.3 Fix Pack 1, and 7.2 Fix Pack 11, you can use 
 From a low level perspective, staging is an equivalence relation where entities are mirrored to a different location. From a high level perspective, the staging process is executed in three sequential phases: Export, Validation, and Import.
 
 Understanding this process can improve efficiency and help you plan ahead to achieve a seamless publishing experience. See [Understanding the Publishing Process](./staging/understanding-the-publishing-process.md) for more information.
+
+```{important}
+Staging does not support [Commerce applications](https://learn.liferay.com/commerce/latest/en/index.html) or [custom Objects](../../building-applications/objects.md). During the publishing process, entities from Commerce and Objects are not staged. 
+```
 
 ```{raw} html
 :file: ../../landingpage_template.html

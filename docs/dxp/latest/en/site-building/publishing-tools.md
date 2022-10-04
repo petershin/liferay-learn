@@ -12,19 +12,21 @@ publishing-tools/staging.md
 publishing-tools/publications.md
 ```
 
-Liferay provides two publishing tools for content creation and site building: Publications and Staging. Each tool provides a way to edit sites and content in a working environment without affecting end users. While Publications is recommended for most use cases, selecting the right publishing tool can depend on your needs.
+Liferay provides two publishing tools for content creation and site building: Publications and Staging. Each tool provides a way to edit sites and content in a working environment without affecting end users. However, they both achieve this using different frameworks that have varying integration with other Liferay features. While Publications is recommended for most use cases, selecting the right publishing tool can depend on your needs.
 
 ```{important}
-Presently, [Commerce](https://learn.liferay.com/commerce/latest/en/index.html) and [Objects](../building-applications/objects.md) are not supported by Liferay's publishing tools.
+Presently, Liferay's publishing tools do not support [Commerce applications](https://learn.liferay.com/commerce/latest/en/index.html) and [custom Objects](../building-applications/objects.md).
 ```
 
 ## Publications
 
-With the Publications tool, contributors can create multiple *publications* for tracking and publishing changes to *production*. Each publication is instance scoped and can include changes across multiple sites and asset libraries. When working on your publications, you can seamlessly switch between edit and production modes.
+Publications is a change tracking tool for editing sites and content. With it, contributors can create working environments called *publications* where they can work without affecting end users (i.e., *production*). These publications are instance scoped and can group changes across multiple sites and asset libraries. Each instance can have as many publications as needed.
 
-<!--Publications creates a database column for determining which version of your content is displayed in production. It also maintains a detailed history, so you can quickly review and revert changes to your instance.-->
+By default, access to a publication is limited to its creator. However, creators can invite other members and assign them roles specific to their publications. Since each publication is independent, contributors can make and publish their changes without affecting one another. This frees them up to work on their own timelines and publish their changes when ready.
 
-You can create as many publications as you need, each with its own contributors and roles. Also, since publications are independent, contributors can make and publish changes without affecting one another, freeing them up to work on their own timelines. Together, these features provide a superior collaboration experience over Staging.
+During the publishing process, Liferay checks for any conflicts with production and prompts the user to review and resolve them. Some conflicts can be automatically resolved, while others require manual resolution. Once published, these changes are automatically populated to other publications if there are no conflicts. Publications also maintains a detailed history of published changes, which you can use to quickly review and revert changes if needed.
+
+Together, these features provide a superior editing and collaboration experience. See [Enabling Publications](./publishing-tools/publications/enabling-publications.md) for how to set up Publications for your instance.
 
 ```{important}
 Beginning with Liferay 7.4 U44/GA44, Publications is fully integrated with [Workflow](../process-automation/workflow.md), so you can enable custom workflows for entities tracked by Publications.

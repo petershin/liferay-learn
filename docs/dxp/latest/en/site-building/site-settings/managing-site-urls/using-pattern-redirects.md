@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available 7.4 U42+/GA42+`
 
-Pattern redirects use regular expressions to define patterns for multiple source URLs and their replacements. For this reason, they are best used when you have large groups of URLS that you need to map to new URLs. While you can set up bulk redirects using Nginx, Apache, or a similar service, Liferay provides this capability out of the box, so you can set up pattern redirects directly in Liferay DXP.
+Pattern redirects use regular expressions to define patterns for multiple source URLs and their replacements. For this reason, they are best used when you have large groups of URLs that you need to map to new URLs. While you can set up bulk redirects using a web server like Nginx  or Apache, Liferay provides this capability out of the box, so you can set up pattern redirects directly in Liferay DXP.
 
 ```{important}
 In Liferay, redirect patterns are interpreted as friendly URLs based on the current site's friendly URL. For this reason, it is not possible to use redirect patterns with non-friendly URLs (e.g., virtual host names, port numbers) or redirect users to pages outside of the current site.

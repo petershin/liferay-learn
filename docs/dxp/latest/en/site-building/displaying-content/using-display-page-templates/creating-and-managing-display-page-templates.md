@@ -52,7 +52,7 @@ You can now use the template to [display your content](./publishing-content-with
 
 While editing, Liferay provides two ways to preview display page templates with content items.
 
-From the Application Menu, you can click the *Preview With* drop-down menu and choose a content item. If no item is listed, click *Select Other Item* and browse for the desired content. This dynamically populates the template with content data according to your field mapping.
+From the Application Menu, you can click the *Preview With* drop-down menu and choose a content item. If no item appears, click *Select Other Item* and browse for the desired content. This dynamically populates the template with content data according to your field mapping.
 
 ![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/07.png)
 

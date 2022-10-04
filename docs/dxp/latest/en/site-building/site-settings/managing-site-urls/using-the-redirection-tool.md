@@ -31,7 +31,7 @@ While both automatically direct users to a specified destination, they each have
 See [Optimizing Sites](../../optimizing-sites.md) to learn more about the implications of each redirect type for SEO. Also, see [A/B Testing](../../optimizing-sites/ab-testing/ab-testing.md) to learn about using 302 codes when testing.
 
 ```{note}
-The Rediretion tool is used for defining [alias redirects](../managing-site-urls.md#site-redirects). If you need to perform bulk redirects, see [Using Pattern Redirects](./using-pattern-redirects.md).
+The Redirection tool is used for defining [alias redirects](../managing-site-urls.md#site-redirects). If you need to perform bulk redirects, see [Using Pattern Redirects](./using-pattern-redirects.md).
 ```
 
 ### Creating a Redirect

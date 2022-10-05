@@ -14,7 +14,7 @@
 
 1. Setup Gradle wrapper (6.6.1 +) in the newly created directory.
     ```
-    $ gradle wrapper
+    $ gradle wrapper --gradle-distribution-url https://github.com/liferay/liferay-binaries-cache-2020/raw/master/gradle-6.6.1.LIFERAY-PATCHED-1-bin.zip 
     ```
 
     Your directory should now contain the following:

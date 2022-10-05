@@ -436,33 +436,33 @@ The sample code includes cURL scripts and Java classes that call the following A
 
 | Service | HTTP Method | HTTP Endpoint | Description |
 | :--- | :--- | :--- | :--- |
-| MessageBoardSection | `POST` | `/v1.0/sites/{siteId}/message-board-sections` | Creates a new category with the details provided in the API call |
-| MessageBoardSection | `GET` | `/v1.0/sites/{siteId}/message-board-sections` | Returns a complete list of all categories in the specified site; results can be paginated, filtered, searched, and sorted |
-| MessageBoardSection | `PATCH` | `/v1.0/message-board-sections/{messageBoardSectionId}` | Updates only the fields specified in the API call for a category |
-| MessageBoardSection | `PUT` | `/v1.0/message-board-sections/{messageBoardSectionId}` | Replaces all fields for the specified category with those provided in the API call |
-| MessageBoardSection | `DELETE` | `/v1.0/message-board-sections/{messageBoardSectionId}` | Deletes the specified category and returns a 204 if the operation succeeds |
+| MessageBoardSection | `POST` | `/v1.0/sites/[siteId]/message-board-sections` | Creates a new category with the details provided in the API call |
+| MessageBoardSection | `GET` | `/v1.0/sites/[siteId]/message-board-sections` | Returns a complete list of all categories in the specified site; results can be paginated, filtered, searched, and sorted |
+| MessageBoardSection | `PATCH` | `/v1.0/message-board-sections/[messageBoardSectionId]` | Updates only the fields specified in the API call for a category |
+| MessageBoardSection | `PUT` | `/v1.0/message-board-sections/[messageBoardSectionId]` | Replaces all fields for the specified category with those provided in the API call |
+| MessageBoardSection | `DELETE` | `/v1.0/message-board-sections/[messageBoardSectionId]` | Deletes the specified category and returns a 204 if the operation succeeds |
 
 ### Sample MessageBoardThread APIs
 
 | Service | HTTP Method | HTTP Endpoint | Description |
 | :--- | :--- | :--- | :--- |
-| MessageBoardThread | `POST` | `/v1.0/sites/{siteId}/message-board-threads` | Creates a new thread with the details provided in the API call |
-| MessageBoardThread | `POST` | `/v1.0/message-board-sections/{messageBoardSectionId}/message-board-threads` | Creates a new thread within the specified category using the details provided in the API call |
-| MessageBoardThread | `GET` | `/v1.0/sites/{siteId}/message-board-threads` | Returns a complete list of all site threads that are not in a category; results can be paginated, filtered, searched, and sorted |
-| MessageBoardThread | `GET` | `/v1.0/message-board-sections/{messageBoardSectionId}/message-board-threads` | Returns a complete list of all threads in the specified category; results can be paginated, filtered, searched, and sorted |
-| MessageBoardThread | `PATCH` | `/v1.0/message-board-threads/{messageBoardThreadId}` | Updates only the fields specified in the API call for a thread |
-| MessageBoardThread | `PUT` | `/v1.0/message-board-threads/{messageBoardThreadId}` | Replaces all fields for the specified thread with those provided in the API call |
-| MessageBoardThread | `DELETE` | `/v1.0/message-board-threads/{messageBoardThreadId}` | Deletes the specified thread and returns a 204 if the operation succeeds |
+| MessageBoardThread | `POST` | `/v1.0/sites/[siteId]/message-board-threads` | Creates a new thread with the details provided in the API call |
+| MessageBoardThread | `POST` | `/v1.0/message-board-sections/[messageBoardSectionId]/message-board-threads` | Creates a new thread within the specified category using the details provided in the API call |
+| MessageBoardThread | `GET` | `/v1.0/sites/[siteId]/message-board-threads` | Returns a complete list of all site threads that are not in a category; results can be paginated, filtered, searched, and sorted |
+| MessageBoardThread | `GET` | `/v1.0/message-board-sections/[messageBoardSectionId]/message-board-threads` | Returns a complete list of all threads in the specified category; results can be paginated, filtered, searched, and sorted |
+| MessageBoardThread | `PATCH` | `/v1.0/message-board-threads/[messageBoardThreadId]` | Updates only the fields specified in the API call for a thread |
+| MessageBoardThread | `PUT` | `/v1.0/message-board-threads/[messageBoardThreadId]` | Replaces all fields for the specified thread with those provided in the API call |
+| MessageBoardThread | `DELETE` | `/v1.0/message-board-threads/[messageBoardThreadId]` | Deletes the specified thread and returns a 204 if the operation succeeds |
 
 ### Sample MessageBoardMessage APIs
 
 | Service | HTTP Method | HTTP Endpoint | Description |
 | :--- | :--- | :--- | :--- |
-| MessageBoardMessage | `POST` | `/v1.0/message-board-threads/{messageBoardThreadId}/message-board-messages` | Creates a new message in the specified thread with the detailed provided in the API call. |
-| MessageBoardMessage | `GET` | `/v1.0/message-board-threads/{messageBoardThreadId}/message-board-messages` | Returns a complete list of all messages in the specified thread; results can be paginated, filtered, searched, and sorted |
-| MessageBoardMessage | `PATCH` | `/v1.0/message-board-messages/{messageBoardMessageId}` | Updates only the fields specified in the API call for a message |
-| MessageBoardMessage | `PUT` | `/v1.0/message-board-messages/{messageBoardMessageId}` | Replaces all fields for the specified message with those provided in the API call |
-| MessageBoardMessage | `DELETE` | `/v1.0/message-board-messages/{messageBoardMessageId}` | Deletes the specified message and returns a 204 if the operation succeeds |
+| MessageBoardMessage | `POST` | `/v1.0/message-board-threads/[messageBoardThreadId]/message-board-messages` | Creates a new message in the specified thread with the detailed provided in the API call. |
+| MessageBoardMessage | `GET` | `/v1.0/message-board-threads/[messageBoardThreadId]/message-board-messages` | Returns a complete list of all messages in the specified thread; results can be paginated, filtered, searched, and sorted |
+| MessageBoardMessage | `PATCH` | `/v1.0/message-board-messages/[messageBoardMessageId]` | Updates only the fields specified in the API call for a message |
+| MessageBoardMessage | `PUT` | `/v1.0/message-board-messages/[messageBoardMessageId]` | Replaces all fields for the specified message with those provided in the API call |
+| MessageBoardMessage | `DELETE` | `/v1.0/message-board-messages/[messageBoardMessageId]` | Deletes the specified message and returns a 204 if the operation succeeds |
 
 ## Examining the Sample cURL Scripts
 

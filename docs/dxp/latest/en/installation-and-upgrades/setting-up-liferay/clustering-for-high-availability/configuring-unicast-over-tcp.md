@@ -30,7 +30,9 @@ Use the following steps to configure Unicast:
     WEB-INF/classes/jgroups/tcp.xml
     ```
 
-1. In the `tcp.xml` file, set the TCP bind port to an unused port on your node. Here's an example:
+    Note, this `tcp.xml` configuration file is used for both the control channel and the transport channel of the cluster link. To use separate configuration files, see [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports).
+
+1. In the `tcp.xml` file, set the TCP bind port to an unused port on your node. Here's an example: 
 
     ```xml
     <TCP bind_port="7800"/>
@@ -42,7 +44,11 @@ Use the following steps to configure Unicast:
     <TCP bind_port="7800"/>
     <TCPPING async_discovery="true"
         initial_hosts="192.168.224.154[7800],192.168.224.155[7800]"
-        port_range="0"/>
+        port_range="1"/>
+    ```
+
+    ```{important}
+    Note that the `port_range` is set to `1` so that TCCPing will probe additional ports. For example, for `initial_hosts="HostA[7800],HostB[7800]`, TCCPing will try to contact both HostA and HostB with port 7800 and 7801. 
     ```
 
     **Regarding Initial Hosts:**
@@ -54,13 +60,13 @@ Use the following steps to configure Unicast:
         -Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]
         ```
 
-1. Copy your `tcp.xml` file to the same location on each node, making sure to set the TCP bind port to an unused port on each node. On the node with IP address `192.168.224.155`, for example, configure TCPPing like this:
+1. Copy your `tcp.xml` file to the same location on each node, making sure to set the TCP bind port to an unused port on each node. Make sure to reference the JVM argument. On the node with IP address `192.168.224.155`, for example, configure TCPPing like this:
 
     ```xml
     <TCP bind_port="7800"/>
     <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7800],192.168.224.155[7800]"
-        port_range="0"/>
+        initial_hosts="${jgroups.tcpping.initial_hosts:192.168.224.154[7800],192.168.224.155[7800]}"
+        port_range="1"/>
     ```
 
 1. Modify the [Cluster Link properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) in each node's [`portal-ext.properties` file](../../reference/portal-properties.md) to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:

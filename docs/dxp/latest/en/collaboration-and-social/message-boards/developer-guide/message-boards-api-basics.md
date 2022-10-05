@@ -3,7 +3,7 @@
 Liferay's Headless Delivery application provides REST services for the [Message Boards](../../message-boards.md) application. With these services, you can add message board categories, threads, and messages, list their information, modify their content, or remove them altogether. Here you'll call those services using cURL commands and Java classes.
 
 ```{note}
-Message board categories are named *sections* in the Liferay backend. These sections define topics for organizing threads.
+Message board categories are named *sections* in the Liferay back-end. These sections define topics for organizing threads.
 ```
 
 ## Preparing Tutorial Resources
@@ -15,13 +15,13 @@ Before proceeding with the tutorial, first set up a clean Liferay Docker contain
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once started, retrieve the site ID. To find your site ID, open the *Site Menu* (![Site Menu](../../../images/icon-menu.png)), and go to *Configuration* &rarr; *Site Settings* &rarr; *Site Configuration*.
+Once started, retrieve the site ID. To find your site ID, open the *Site Menu* (![Site Menu](../../../images/icon-menu.png)) and go to *Configuration* &rarr; *Site Settings* &rarr; *Site Configuration*.
 
 ![Find the site ID under the Site Configuration settings.](./message-boards-api-basics/images/01.png)
 
 ### Tutorial Code
 
-This tutorial provides sample code to demonstrate the Headless API. This code includes both sample cURL and Java files for use throughout the tutorial.
+Below is sample code to demonstrate the Headless API. This code includes both sample cURL and Java files.
 
 Run the following command to download and unzip the [sample code](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip):
 
@@ -33,7 +33,7 @@ curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-bo
 unzip liferay-y3a6.zip
 ```
 
-While the cURL scripts come ready for use, you must manually compile the Java source files before you can run them. To do this, go to the project's `java` folder, and run the `javac` command.
+While the cURL scripts come ready for use, you must compile the Java source files manually before you can run them. To do this, go to the project's `java` folder and run the `javac` command.
 
 ```bash
 cd liferay-y3a6/java
@@ -53,7 +53,7 @@ The provided code uses basic authentication for demonstration purposes. For prod
 
 ## Calling the Sample APIs
 
-In this exercise, you can use either the cURL commands or Java classes to call the `MessageBoardSection`, `MessageBoardThread` and `MessageBoardMessage` APIs. The following output examples correspond to the cURL commands, which slightly differ from the output for the provided Java classes.
+In this exercise, you can use either the cURL commands or Java classes to call the `MessageBoardSection`, `MessageBoardThread` and `MessageBoardMessage` APIs. The following output examples correspond to the cURL commands, which differ slightly from the output for the provided Java classes.
 
 1. Navigate to the `curl` or `java` folder in the `liferay-y3a6` project.
 
@@ -426,7 +426,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    }
    ```
 
-## Tutorial Code Reference
+## Code Reference
 
 The provided sample code includes cURL scripts and Java classes for the following `MessageBoardSection`, `MessageBoardThread` and `MessageBoardMessage` APIs.
 

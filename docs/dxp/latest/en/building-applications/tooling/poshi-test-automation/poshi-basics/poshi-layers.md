@@ -49,7 +49,7 @@ Writing User Behaviors
 :::
 
 :::{grid-item-card} Variables
-:link: ./poshi-layers/testcases.md
+:link: ./poshi-layers/variables.md
 
 Making paths and macros specific yet reusable
 :::

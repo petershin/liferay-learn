@@ -176,7 +176,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
 
 ## Calling the Sample WikiPage APIs
 
-You can use either the cURL commands or Java classes to call the `WikiPage` APIs. The following output examples correspond to the cURL commands, which slightly differ from the output for the provided Java classes.
+You can use either the cURL commands or Java classes to call the `WikiPage` APIs. The following output examples correspond to the cURL commands, which differ slightly from the output for the provided Java classes.
 
 1. Navigate to the `curl` or `java` folder in the `liferay-q8u2` project.
 
@@ -380,23 +380,23 @@ The provided sample code includes cURL scripts and Java classes for the followin
 
 | Service | HTTP Method | HTTP Endpoint | Description |
 | :--- | :--- | :--- | :--- |
-| WikiNode | `POST` | `/v1.0/sites/{siteId}/wiki-nodes` | Creates a new Wiki node in the specified Site using the details provided in the API call |
-| WikiNode | `GET` | `/v1.0/sites/{siteId}/wiki-nodes` | Returns a complete list of all Wiki nodes in the specified Site; results can be paginated, filtered, searched, and sorted |
-| WikiNode | `GET` | `/v1.0/wiki-nodes/{wikiNodeId}` | Returns details for the specified node entity |
-| WikiNode | `PUT` | `/v1.0/wiki-nodes/{wikiNodeId}` | Replaces the specified node's details with those provided in the API call |
-| WikiNode | `DELETE` | `​/v1.0​/wiki-nodes​/{wikiNodeId}` | Deletes the specified node and returns a 204 if the operation succeeds |
+| WikiNode | `POST` | `/v1.0/sites/[siteId]/wiki-nodes` | Creates a new Wiki node in the specified Site using the details provided in the API call |
+| WikiNode | `GET` | `/v1.0/sites/[siteId]/wiki-nodes` | Returns a complete list of all Wiki nodes in the specified Site; results can be paginated, filtered, searched, and sorted |
+| WikiNode | `GET` | `/v1.0/wiki-nodes/[wikiNodeId]` | Returns details for the specified node entity |
+| WikiNode | `PUT` | `/v1.0/wiki-nodes/[wikiNodeId]` | Replaces the specified node's details with those provided in the API call |
+| WikiNode | `DELETE` | `/v1.0/wiki-nodes/[wikiNodeId]` | Deletes the specified node and returns a 204 if the operation succeeds |
 
 ### Sample WikiPage APIs
 
 | Service | HTTP Method | HTTP Endpoint | Description |
 | :--- | :--- | :--- | :--- |
-| WikiPage | `POST` | `/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages` | Creates a new Wiki page in the specified node using the details provided in the API call |
-| WikiPage | `POST` | `/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages` | Creates a new Wiki child page for the specified Wiki page using the details provided in the API call. |
-| WikiPage | `GET` | `/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages` | Returns a complete list of all Wiki pages added to the specified Wiki node; results can be paginated, filtered, searched, and sorted |
-| WikiPage | `GET` | `/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages` | Returns a complete list of all Wiki child pages added to the specified Wiki page; results can be paginated, filtered, searched, and sorted |
-| WikiPage | `GET` | `/v1.0/wiki-pages/{wikiPageId}` | Returns details for the specified Wiki page entity |
-| WikiPage | `PUT` | `/v1.0/wiki-pages/{wikiPageId}` | Replaces the specified page's details with those provided in the API call |
-| WikiPage | `DELETE` | `/v1.0/wiki-pages/{wikiPageId}` | Deletes the specified page and returns a 204 if the operation succeeds |
+| WikiPage | `POST` | `/v1.0/wiki-nodes/[wikiNodeId]/wiki-pages` | Creates a new Wiki page in the specified node using the details provided in the API call |
+| WikiPage | `POST` | `/v1.0/wiki-pages/[parentWikiPageId]/wiki-pages` | Creates a new Wiki child page for the specified Wiki page using the details provided in the API call. |
+| WikiPage | `GET` | `/v1.0/wiki-nodes/[wikiNodeId]/wiki-pages` | Returns a complete list of all Wiki pages added to the specified Wiki node; results can be paginated, filtered, searched, and sorted |
+| WikiPage | `GET` | `/v1.0/wiki-pages/[parentWikiPageId]/wiki-pages` | Returns a complete list of all Wiki child pages added to the specified Wiki page; results can be paginated, filtered, searched, and sorted |
+| WikiPage | `GET` | `/v1.0/wiki-pages/[wikiPageId]` | Returns details for the specified Wiki page entity |
+| WikiPage | `PUT` | `/v1.0/wiki-pages/[wikiPageId]` | Replaces the specified page's details with those provided in the API call |
+| WikiPage | `DELETE` | `/v1.0/wiki-pages/[wikiPageId]` | Deletes the specified page and returns a 204 if the operation succeeds |
 
 ```{important}
 When using POST and PUT methods for Wiki pages, you must define both the `headline` and `encodingFormat` fields. The `headline` field sets the page's main title, while the `encodingFormat` field determines the page's media format (e.g., HTML, BBCode, etc.).
@@ -405,8 +405,6 @@ When using POST and PUT methods for Wiki pages, you must define both the `headli
 ## Examining the Sample cURL Scripts
 
 The following are representative examples of the tutorial's cURL commands.
-
-### `WikiNode_POST_ToSite.sh`
 
 ```{literalinclude} ./wiki-api-basics/resources/liferay-q8u2.zip/curl/WikiNode_POST_ToSite.sh
    :language: bash
@@ -453,3 +451,5 @@ The following are representative examples of the tutorial's Java commands.
 
 * [Using Liferay as a Headless Platform](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
 * [Consuming Rest Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+### `WikiNode_POST_ToSite.sh`
+

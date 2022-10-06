@@ -52,7 +52,7 @@ After selecting the desired provider, use additional fragment options to determi
 
 ## Creating Display Page Templates for Objects
 
-When created, each Object entry is automatically assigned a dedicated friendly URL that uses the following pattern: `server-address/l/objectEntryId` (e.g., `https://mysite.com/l/44337`). To view an entry at its URL, you must first create a Display Page Template for the Object.
+When created, each Object entry is assigned automatically a dedicated friendly URL that uses the following pattern: `server-address/l/objectEntryId` (e.g., `https://mysite.com/l/44337`). To view an entry at its URL, you must first create a Display Page Template for the Object.
 
 Follow these steps:
 

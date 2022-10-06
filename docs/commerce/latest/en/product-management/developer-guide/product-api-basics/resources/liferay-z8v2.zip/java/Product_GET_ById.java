@@ -2,6 +2,9 @@ import com.liferay.headless.commerce.admin.catalog.client.resource.v1_0.ProductR
 
 public class Product_GET_ById {
 
+	/**
+	 * java -classpath .:* -DproductId=1234 Product_GET_ById
+	 */
 	public static void main(String[] args) throws Exception {
 		ProductResource.Builder builder = ProductResource.builder();
 
@@ -10,7 +13,7 @@ public class Product_GET_ById {
 		).build();
 
 		System.out.println(
-			productResource.getProduct(Long.valueOf(System.getProperty("id"))));
+			productResource.getProduct(Long.valueOf(System.getProperty("productId"))));
 	}
 
 }

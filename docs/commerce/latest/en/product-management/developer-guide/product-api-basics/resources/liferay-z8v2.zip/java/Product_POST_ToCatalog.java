@@ -3,8 +3,11 @@ import com.liferay.headless.commerce.admin.catalog.client.resource.v1_0.ProductR
 
 import java.util.HashMap;
 
-public class Product_PATCH {
+public class Product_POST_ToCatalog {
 
+	/**
+	 * java -classpath .:* -DcatalogId=1234 Product_POST_ToCatalog
+	 */
 	public static void main(String[] args) throws Exception {
 		ProductResource.Builder builder = ProductResource.builder();
 
@@ -12,20 +15,20 @@ public class Product_PATCH {
 			"test@liferay.com", "learn"
 		).build();
 
-		productResource.patchProduct(
-			Long.valueOf(System.getProperty("id")),
-			new Product() {
-				{
-					active = true;
-					catalogId = 12345L;
-					name = new HashMap<String, String>() {
-						{
-							put("en_US", "Bar");
-						}
-					};
-					productType = "simple";
-				}
-			});
+		System.out.println(
+			productResource.postProduct(
+				new Product() {
+					{
+						active = true;
+						catalogId = Long.valueOf(System.getProperty("catalogId"));
+						name = new HashMap<String, String>() {
+							{
+								put("en_US", "Foo");
+							}
+						};
+						productType = "simple";
+					}
+				}));
 	}
 
 }

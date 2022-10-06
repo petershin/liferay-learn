@@ -1,6 +1,6 @@
 # Extending System Objects
 
-{bdg-secondary}`Available Liferay 7.4 U38+ and GA38+`
+{bdg-secondary}`Available Liferay 7.4 U46+/GA46+`
 
 With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, Postal Address, and User.
 
@@ -38,7 +38,7 @@ Since system Objects don't support [custom layouts](./designing-object-layouts.m
 
 ## Adding Actions
 
-You can add custom actions to system Objects that are triggered when entries are added, updated, or removed. This includes both Webhook and Groovy Script actions. See [Defining Object Actions](./defining-object-actions.md) for more information.
+You can add custom actions to system Objects that are triggered when entries are added, updated, or removed. Currently, system Objects support [Webhook](./defining-object-actions.md#webhook-actions) and [Groovy Script](./defining-object-actions.md#groovy-script-actions), and [Notification](./defining-object-actions.md#notification-actions) actions. See [Defining Object Actions](./defining-object-actions.md) for more information.
 
 ## Adding Validations
 

@@ -34,13 +34,13 @@ Follow these steps to set up relationships for accessing Account and Postal Addr
 
 1. Return to the Objects admin page and begin editing the *Postal Address* object.
 
-1. Go to the *Relationships* tab and click the *Add* button (![Add Button](../../../../images/icon-add.png)).
+1. Go to the *Relationships* tab and click *Add* (![Add Button](../../../../images/icon-add.png)).
 
 1. Enter a *Label* and *Name*.
 
 1. For Type, select *One to Many*.
 
-1. For Object, select the same *custom object* as you did for previous relationship.
+1. For Object, select the same *custom object* as you did for the previous relationship.
 
 1. For Parameter, select the custom object's *relationship with the Account object* that you created earlier.
 
@@ -59,7 +59,7 @@ Once added, users can select from available accounts and addresses in the custom
 ![Users can select from available accounts and addresses in the custom object.](./accessing-accounts-data-from-custom-objects/images/05.png)
 
 ```{tip}
-By default, objects use entry IDs for their title fields. The title field value determines how each entry option is displayed to end users in the relationship field. If desired, you can improve readability by configuring each object to use a different field for the title.
+By default, objects use entry IDs for their title fields. The title field value determines how each entry option appears to end users in the relationship field. If desired, you can improve readability by configuring each object to use a different field for the title.
 
 To do this, begin editing the desired object definition, go to the *Details* tab, and select a different value for the *Title Field*. Click *Save* when finished.
 ```

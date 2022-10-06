@@ -42,7 +42,7 @@ You can add custom actions to system Objects that are triggered when entries are
 
 ## Adding Validations
 
-You can add Groovy and Expression Builder validations to system Objects. When triggered, these validations check for valid field entries and display custom error messages for invalid entries. Currently, Objects only supports validations for a system Object's default fields and does not support validations for its custom Expando fields. See [Adding Custom Validations](./adding-custom-validations.md) for more information.
+You can add Groovy and Expression Builder validations to system Objects. When triggered, these validations check for valid field entries and show custom error messages for invalid entries. Currently, Objects only supports validations for a system Object's default fields and does not support validations for its custom Expando fields. See [Adding Custom Validations](./adding-custom-validations.md) for more information.
 
 <!--TASK: Uncomment once supported.
 ## Additional Configuration Options

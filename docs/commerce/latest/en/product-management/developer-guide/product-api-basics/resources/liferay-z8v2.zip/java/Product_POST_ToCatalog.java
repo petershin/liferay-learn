@@ -20,7 +20,8 @@ public class Product_POST_ToCatalog {
 				new Product() {
 					{
 						active = true;
-						catalogId = Long.valueOf(System.getProperty("catalogId"));
+						catalogId = Long.valueOf(
+							System.getProperty("catalogId"));
 						name = new HashMap<String, String>() {
 							{
 								put("en_US", "Foo");

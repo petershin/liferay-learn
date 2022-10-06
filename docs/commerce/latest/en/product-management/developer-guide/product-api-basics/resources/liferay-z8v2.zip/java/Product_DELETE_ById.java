@@ -12,7 +12,8 @@ public class Product_DELETE_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		productResource.deleteProduct(Long.valueOf(System.getProperty("productId")));
+		productResource.deleteProduct(
+			Long.valueOf(System.getProperty("productId")));
 	}
 
 }

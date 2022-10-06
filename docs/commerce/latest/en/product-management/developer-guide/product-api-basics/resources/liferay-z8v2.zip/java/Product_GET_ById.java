@@ -13,7 +13,8 @@ public class Product_GET_ById {
 		).build();
 
 		System.out.println(
-			productResource.getProduct(Long.valueOf(System.getProperty("productId"))));
+			productResource.getProduct(
+				Long.valueOf(System.getProperty("productId"))));
 	}
 
 }

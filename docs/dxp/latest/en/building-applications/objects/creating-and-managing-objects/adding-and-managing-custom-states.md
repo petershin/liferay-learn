@@ -32,7 +32,7 @@ Follow these steps to use a picklist to add custom states for an object's entrie
 
 1. Enter a *Label* and *Field Name*.
 
-1. Select the *Picklist* type and choose the desired list.
+1. Select the *Picklist type* and choose the desired list.
 
 1. Toggle *Mark as State*.
 
@@ -58,7 +58,7 @@ Follow these steps to set up a custom flow for state fields:
 
    ![Go to the State Manager tab to set up a flow for state fields.](./adding-and-managing-custom-states/images/05.png)
 
-1. Under Next Status, click the dropdown menus and check the boxes to determines available transitions for each state.
+1. Under Next Status, click the drop-down menus and check the boxes to determine available transitions for each state.
 
    You can select any number of transitions for a state.
 

@@ -3,7 +3,7 @@
 You can create *Shipments* when an order is in the [processing](../orders/processing-an-order.md) stage. Once you create a shipment, you are taken to the Shipments page where you can manage shipments and finish processing the order.
 
 ```{note}
-A single shipment may contain multiple orders but the same account must create all the orders contained in the shipment.
+A single shipment may contain multiple orders, but the same account must create all the orders contained in the shipment.
 ```
 
 To create a shipment,
@@ -24,22 +24,22 @@ This takes you to the Shipments page where you can finish processing the order. 
 * Delivered
 
 ```{note}
-Starting from Liferay DXP 7.4 U30/GA30, each shipment has an external reference code (ERC) displayed under the shipment ID. Click the *Edit* button (![Edit button](../../images/icon-edit-pencil.png)) to change the default value. 
+Starting with Liferay DXP 7.4 U30/GA30, each shipment has an external reference code (ERC) displayed under the shipment ID. Click the *Edit* button (![Edit button](../../images/icon-edit-pencil.png)) to change the default value. 
 ```
 
 ## Processing
 
-Click on *Finish Processing* after selecting the items in the shipment and quantities from their source warehouse. The order is ready to ship now. You can also view additional details such as the carrier, tracking number, shipping method, tracking URL, addresses, and estimated delivery and shipping dates here.
+Click *Finish Processing* after selecting the items in the shipment and quantities from their source warehouse. The order is ready to ship now. You can also view additional details such as the carrier, tracking number, shipping method, tracking URL, addresses, and estimated delivery and shipping dates here.
 
 ![You can finish processing after selecting the items in the order and their source warehouse.](./introduction-to-shipments/images/05.png)
 
 ```{note}
-Starting from Liferay DXP 7.4 U35/GA35, each item in the shipment also has an external reference code (ERC) associated with it. You can change this by clicking on the item and entering a value for the *External Reference Code* field.
+Starting with Liferay DXP 7.4 U35/GA35, each item in the shipment also has an external reference code (ERC) associated with it. You can change this by clicking on the item and entering a value for the *External Reference Code* field.
 ```
 
 ## Ready to Ship
 
-At this stage, you can confirm all the details of the shipment. Once confirmed, click on *Ship* to ship the order. This also moves the order's status from *Processing* to *Shipped*.
+Now you can confirm all the details of the shipment. Once confirmed, click *Ship* to ship the order. This also moves the order's status from *Processing* to *Shipped*.
 
 ![You can confirm all the details of the shipment before shipping the order.](./introduction-to-shipments/images/06.png)
 
@@ -53,7 +53,7 @@ After shipping the order, both the order and the shipment move to the *Shipped* 
 
 All the stages of a shipment are complete upon confirmation of delivery.
 
-![All the stages of a shipment are complete upon confirmation of delivery.](./introduction-to-shipments/images/09.png)
+![When delivery is confirmed, all shipment stages are marked complete.](./introduction-to-shipments/images/09.png)
 
 After delivery, the order moves to the *Completed* status. See the [Shipments Management Reference Guide](./shipments-management-reference-guide.md) to learn more about the specific features and fields.
 
@@ -61,21 +61,21 @@ After delivery, the order moves to the *Completed* status. See the [Shipments Ma
 
 ## Liferay Commerce 2.1 and Below
 
-Commerce 2.1 is virtually identical to the latest version, except that you access the *Orders* menu via the *Control Panel*. Select an order with the processing status and click  on *Create Shipment*.
+Commerce 2.1 is virtually identical to the latest version, except that you access the *Orders* menu via the *Control Panel*. Select an order with the processing status and click *Create Shipment*.
 
 See the [Shipments Management Reference Guide](./shipments-management-reference-guide.md) to learn more about the specific features and fields.
 
 ## Liferay Commerce 2.0 and Below
 
-The *Shipments* menu is where store managers can create and track a shipment after [receiving an order](../orders/processing-an-order.md#commerce-2-0-and-below).
+Store managers use the Shipments menu to create and track a shipment after [receiving an order](../orders/processing-an-order.md#commerce-2-0-and-below).
 
 Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Shipments*.
 
 ![You can create and track Shipments from the Shipments Menu.](./introduction-to-shipments/images/01.png)
 
-The *Shipments* menu displays all created shipments in all statuses. Click the Add (![add-icon](../../images/icon-add.png)) button to add a new shipment.
+The Shipments menu displays all created shipments in all statuses. Click *Add* (![add-icon](../../images/icon-add.png)) to add a new shipment.
 
-Clicking on a particular shipment number (for example, *41250*) displays the shipment's *Details* tab and the *Items* tab. Clicking the *Order Number* (*41241*) redirects you to the *Orders* menu.
+Clicking on a particular shipment number (for example, *41250*) displays the shipment's Details tab and the Items tab. Clicking the *Order Number* (*41241*) shows the Orders menu.
 
 ### Details
 
@@ -96,13 +96,13 @@ The *Shipment Details* tab contains the following information:
 | Region | Shipping address' state or province |
 | Carrier | Name of the carrier |
 | Tracking Number | Shipment's tracking number generated by the **carrier** |
-| Shipment Status | Dropdown menu with the options: *Processing*, *Ready to be Shipped*, *Shipped*, and *Delivered*  |
+| Shipment Status | Drop-down menu with the options: *Processing*, *Ready to be Shipped*, *Shipped*, and *Delivered*  |
 | Shipping Date | Date of shipment delivery to the carrier    |
 | Expected Delivery Date | Expected arrival date of the shipment  |
 
 ## Items
 
-The *Shipment Items* Tab contains the following information:
+The Shipment Items Tab contains the following information:
 
 ![View all the items in the shipment under the Shipment Items Tab.](./introduction-to-shipments/images/03.png)
 
@@ -113,11 +113,11 @@ The *Shipment Items* Tab contains the following information:
 | Quantity | Number of items in the shipment |
 | Warehouse | Name of the warehouse sourcing the shipment |
 
-Clicking the *Add* (![Add icon](../../images/icon-add.png)) button opens a window where you can add more items to the order.
+Clicking *Add* (![Add icon](../../images/icon-add.png)) opens a window where you can add more items to the order.
 
 ## Additional Information
 
 * [Creating a Shipment](./creating-a-shipment.md)
-* [Cancelling a Shipment](./cancelling-a-shipment.md)
+* [Canceling a Shipment](./cancelling-a-shipment.md)
 * [Processing an Order](../orders/processing-an-order.md)
 * [Shipments Management Reference Guide](./shipments-management-reference-guide.md)

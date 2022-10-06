@@ -32,6 +32,8 @@ Once finished, click the *Save* button.
 
 {bdg-secondary}`7.4 U45+ and GA45+`
 
+<!-- Note to self: Consider adding this, and other highlights like suggestions, to the what's new? article: talk to Tibor about this. -->
+
 By default the Category Facet widget collects and displays results from all categories in every vocabulary in the site, and displays them in a flat list. In this paradigm vocabularies are not considered in the display or configuration of the widget. With the enhancements made in Update 45, you gain these behaviors:
 
 1. Display the categories under their vocabulary. This is accomplished by selecting the new Vocabulary Layout in the Category Facet's configuration screen. 
@@ -113,6 +115,8 @@ To configure the use case above,
 
 <!-- GIF? -->
 
+
+<!-- STOP Reviewing here: below is just notes -->
 
 The Category Parameter Name controls whether to use AND or OR selection behavior when selecting categories in separate Category Facet widgets. Within a single Category Facet the selection behavior operates and OR clause: the search results are expanded by the selection, matching the categories _Foo OR Bar_. Configuring a second Category Facet widget with the same Category Parameter Name cause the OR selection behavior to apply also to selections made between facets. 
 

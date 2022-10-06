@@ -20,7 +20,7 @@ Follow these steps to enable Publications:
 
    ![Toggle the switch and click on Save.](./enabling-publications/images/01.png)
 
-1. (Optional) Toggle *Sandbox Only* mode. While enabled, users are automatically directed to their last working publication when they log in. If they don't have one, a new publication is generated for them.
+1. (Optional) Toggle *Sandbox Only* mode. While enabled, users are directed automatically to their last working publication when they log in. If they don't have one, a new publication is generated for them.
 
    ```{tip}
    Using Sandbox Only can help reduce accidental edits to production.

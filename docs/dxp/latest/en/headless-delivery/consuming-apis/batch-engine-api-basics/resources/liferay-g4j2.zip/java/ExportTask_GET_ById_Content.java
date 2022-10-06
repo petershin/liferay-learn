@@ -10,8 +10,6 @@ public class ExportTask_GET_ById_Content {
 
 		ExportTaskResource exportTaskResource = builder.authentication(
 			"test@liferay.com", "learn"
-		).parameter(
-			"siteId", String.valueOf(System.getProperty("siteId"))
 		).build();
 
 		HttpInvoker.HttpResponse httpResponse =

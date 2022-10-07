@@ -26,6 +26,30 @@ Collect the information from the provider. You'll need it create the provider co
 
 ## Configuring an OpenID Connect Provider Connection
 
+Liferay seeks feedback on a new interface for a provider connection. For this reason, there are two ways to create the connection: the standard way and the new way. 
+
+**New OpenID Connect Provider Connection for OAuth 2.0**
+
+This interface is for those who want granular control over their client connection. All configuration is done through the provider's Well-Known Configuration Endpoint, as defined in the [OpenID Connect configuration specification](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest). 
+
+1. Go to the Global Menu &rarr; Security &rarr; OAuth Client Administration. 
+
+1. Click *Add* (![Add Button](../../../images/icon-add.png)). 
+
+1. Paste the authorization server's Well Known URI. For example, Google's is https://accounts.google.com/.well-known/openid-configuration. 
+
+1. Most of the time, this is all you need to do. Click *Save*. 
+
+The other fields on the form are for specific configuration generated with the provider. 
+
+**OAuth Client Information:** Add client configuration information according to the [RFC-7591](https://www.rfc-editor.org/rfc/rfc7591.html) JSON format. Note that you may not need to add anything here if you used the Well Known URI. 
+
+**OAuth Client Default Authorization Request Parameters:** If you have Liferay applications that do not specify [authorization request parameters](https://www.iana.org/assignments/oauth-parameters) themselves, specify the default parameters in JSON format for using this OAuth client here. Custom parameter values must be a JSON array of strings.
+
+**OAuth Client Default Token Request Parameters:** If you have Liferay applications that do not specify [token request parameters](https://www.iana.org/assignments/oauth-parameters) themselves, specify the default parameters in JSON format for using this OAuth client here. Custom parameter values must be a JSON array of strings. 
+
+**Standard OpenID Connect Provider Connection**
+
 Go to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO* and select ***OpenID Connect Provider*** under the *System Scope*.
 
 ![Locating OpenID configurations in the System Settings menu.](using-openid-connect/images/01.png)

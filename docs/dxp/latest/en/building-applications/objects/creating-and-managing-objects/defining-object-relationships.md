@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.4+`
 
-Relationships are connections between Object definitions that you can use to link their entities. You can add relationships to any published or unpublished Object, including both system and custom Objects.
+Relationships are connections between Object definitions that you can use to link their entries. You can add relationships to any published or unpublished Object, including both system and custom Objects.
 
 ## Relationship Types
 
@@ -10,12 +10,12 @@ Objects provides two types of relationships:
 
 <!--TASK: Add One to One after it's been implemented-->
 
-**One to Many**: You can relate one of the current Object's entities to multiple entities of another Object. When selected, a new field is added to entities on the child side of the relationship (i.e., the 'many' side), while a table is added to the 'parent' side (i.e., the 'one' side). On the child side, the new field can be added to a [Fields Tab](./designing-object-layouts.md#adding-fields-tabs) in the Object's custom layout and relates its entities to a single entity on the parent side of the relationship. On the parent side, the new table can be added to a [Relationships Tab](./designing-object-layouts.md#adding-relationships-tabs) in the Object's custom layout and lists all entities related to the current parent entity. <!--REFINE-->
+**One to Many**: You can relate one Object entry to multiple Object entries. When selected, a new field is added to entries on the child side of the relationship (i.e., the 'many' side), while a table is added to the 'parent' side (i.e., the 'one' side). On the child side, the new field can be added to a [Fields Tab](./designing-object-layouts.md#adding-fields-tabs) in the Object's custom layout and relates its entries to a single entry on the parent side of the relationship. On the parent side, the new table can be added to a [Relationships Tab](./designing-object-layouts.md#adding-relationships-tabs) in the Object's custom layout and lists all entries related to the current parent entry.
 
-**Many to Many**: You can relate multiple entities from the current Object to multiple entities in another Object. When selected, a new database table is created for both sides of the relationship. This table can be added to a [Relationships Tab](./designing-object-layouts.md#adding-relationships-tabs) in either Object's custom layout and is used to list all related entities. <!--REFINE-->
+**Many to Many**: You can relate multiple Object entries with multiple Object entries. When selected, a new database table is created for both sides of the relationship. This table can be added to a [Relationships Tab](./designing-object-layouts.md#adding-relationships-tabs) in the Object's custom layout and lists all related entries.
 
 ```{important}
-Displaying relationship tables requires a custom layout. However, custom layouts are not supported for system Objects. See [Designing Object Layouts](./designing-object-layouts.md) for more information. 
+Displaying relationship tables requires a custom layout. However, custom layouts are not supported for system Objects, so they cannot display relationship tables. See [Designing Object Layouts](./designing-object-layouts.md) for more information. 
 ```
 
 ## Adding New Relationships
@@ -38,11 +38,11 @@ Follow these steps to add relationships to an Object:
 
 1. Select a relationship Type: *One to Many* or *Many to Many*. <!--TASK: Add One to One after it's been implemented-->
 
-   ```{note}
-   If you want to relate entries within the same Object, you must use the One to Many type. <!--TASK: Add One to One after it's been implemented-->
-   ```
+1. Select an *Object* to relate to the current Object. You can relate Objects to themselves or other Object definitions.
 
-1. Select an *Object* to relate to the current Object.
+   ```{note}
+   Beginning with 7.4 U46/GA46, you can define one-to-many and many-to-many relationships that relate an Object definition to itself. Previously, you could only use the one-to-many type to relate entries within the same Object. <!--TASK: Add One to One after it's been implemented-->
+   ```
 
 1. Click on *Save*.
 

@@ -77,8 +77,7 @@ public class G2F3CommerceShipmentCommerceDefinitionTermContributor
 
 	@Override
 	public String getLabel(String term, Locale locale) {
-		return LanguageUtil.get(
-			locale, _languageKeys.get(term));
+		return LanguageUtil.get(locale, _languageKeys.get(term));
 	}
 
 	@Override
@@ -86,22 +85,21 @@ public class G2F3CommerceShipmentCommerceDefinitionTermContributor
 		return new ArrayList<>(_languageKeys.keySet());
 	}
 
-	private static final String _SHIPMENT_CREATOR_NAME = "[%SHIPMENT_CREATOR_NAME%]";
-
 	private static final String _ORDER_SHIPPING_ADDRESS =
 		"[%ORDER_SHIPPING_ADDRESS%]";
 
+	private static final String _SHIPMENT_CREATOR_NAME =
+		"[%SHIPMENT_CREATOR_NAME%]";
+
 	private static final String _SHIPMENT_ID = "[%SHIPMENT_ID%]";
 
-	private static final Map<String, String>
-		_languageKeys = HashMapBuilder.put(
-			_SHIPMENT_CREATOR_NAME, "g2f3-shipment-creator-name-definition-term"
-		).put(
-			_ORDER_SHIPPING_ADDRESS,
-			"g2f3-order-shipping-address-definition-term"
-		).put(
-			_SHIPMENT_ID, "g2f3-shipment-id-definition-term"
-		).build();
+	private static final Map<String, String> _languageKeys = HashMapBuilder.put(
+		_ORDER_SHIPPING_ADDRESS, "g2f3-order-shipping-address-definition-term"
+	).put(
+		_SHIPMENT_CREATOR_NAME, "g2f3-shipment-creator-name-definition-term"
+	).put(
+		_SHIPMENT_ID, "g2f3-shipment-id-definition-term"
+	).build();
 
 	@Reference
 	private UserLocalService _userLocalService;

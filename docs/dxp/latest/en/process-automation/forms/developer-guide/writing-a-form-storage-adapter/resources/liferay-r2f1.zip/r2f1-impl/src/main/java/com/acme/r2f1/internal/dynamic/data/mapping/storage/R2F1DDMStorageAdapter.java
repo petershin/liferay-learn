@@ -30,7 +30,8 @@ public class R2F1DDMStorageAdapter implements DDMStorageAdapter {
 				_log.info("Acme storage adapter's delete method was invoked");
 			}
 
-			return _defaultStorageAdapter.delete(ddmStorageAdapterDeleteRequest);
+			return _defaultStorageAdapter.delete(
+				ddmStorageAdapterDeleteRequest);
 		}
 		catch (Exception exception) {
 			throw new StorageException(exception);

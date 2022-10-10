@@ -1,6 +1,6 @@
 import com.liferay.headless.batch.engine.client.resource.v1_0.ImportTaskResource;
 
-public class ImportTask_POST {
+public class ImportTask_DELETE_ById {
 
 	public static void main(String[] args) throws Exception {
 		ImportTaskResource.Builder builder = ImportTaskResource.builder();
@@ -10,8 +10,8 @@ public class ImportTask_POST {
 		).build();
 
 		System.out.println(
-			importTaskResource.postImportTask(
-				args[0], null, null, null, null, null, null, args[1]));
+			importTaskResource.deleteImportTask(
+				args[0], null, null, null, null, args[1]));
 	}
 
 }

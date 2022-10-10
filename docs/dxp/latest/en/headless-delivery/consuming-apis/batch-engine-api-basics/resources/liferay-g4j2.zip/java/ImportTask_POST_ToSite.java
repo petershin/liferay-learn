@@ -3,7 +3,7 @@ import com.liferay.headless.batch.engine.client.resource.v1_0.ImportTaskResource
 public class ImportTask_POST_ToSite {
 
 	/**
-	 * java -classpath .:* -DimportTaskId=1234 ImportTask_POST_ToSite
+	 * java -classpath .:* -DsiteId=1234 ImportTask_POST_ToSite
 	 */
 	public static void main(String[] args) throws Exception {
 		ImportTaskResource.Builder builder = ImportTaskResource.builder();
@@ -11,7 +11,7 @@ public class ImportTask_POST_ToSite {
 		ImportTaskResource importTaskResource = builder.authentication(
 			"test@liferay.com", "learn"
 		).parameter(
-			"siteId", String.valueOf(System.getProperty("importTaskId"))
+			"siteId", String.valueOf(System.getProperty("siteId"))
 		).build();
 
 		System.out.println(

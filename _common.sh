@@ -20,12 +20,14 @@ readonly LIFERAY_LEARN_YOUTUBE_END_HTML='" title\="YouTube video player" width\=
 readonly LIFERAY_LEARN_YOUTUBE_URL_TOKEN=\\[\$LIFERAY_LEARN_YOUTUBE_URL\$\\]
 
 function download_nexus_jar {
-    group="com.liferay"
-    if [[ ${1} == *"headless.commerce"* ]]
-    then
-      group="com.liferay.commerce"
-    fi
-    curl -L "https://repository-cdn.liferay.com/nexus/service/local/artifact/maven/redirect?a=${1}&g=${group}&r=liferay-public-releases&v=LATEST" -o $(ls -d liferay*.zip | head -n1)/java/${1}.jar
+	group="com.liferay"
+
+	if [[ ${1} == *"headless.commerce"* ]]
+	then
+		group="com.liferay.commerce"
+	fi
+
+	curl -L "https://repository-cdn.liferay.com/nexus/service/local/artifact/maven/redirect?a=${1}&g=${group}&r=liferay-public-releases&v=LATEST" -o $(ls -d liferay*.zip | head -n1)/java/${1}.jar
 }
 
 function generate_remote_app {

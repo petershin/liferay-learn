@@ -6,8 +6,8 @@ import java.io.FileOutputStream;
 public class ImportTaskContent_GET_ById {
 
 	/**
-	* java -classpath .:* -DimportTaskContentId=1234 ImportTaskContent_GET_ById
-	*/
+	 * java -classpath .:* -DimportTaskContentId=1234 ImportTaskContent_GET_ById
+	 */
 	public static void main(String[] args) throws Exception {
 		ImportTaskResource.Builder builder = ImportTaskResource.builder();
 

@@ -3,6 +3,9 @@ import com.liferay.headless.batch.engine.client.resource.v1_0.ExportTaskResource
 
 public class ExportTask_POST_ToSite {
 
+	/**
+	 * java -classpath .:* -DsiteId=1234 ExportTask_POST_ToSite
+	 */
 	public static void main(String[] args) throws Exception {
 		ExportTaskResource.Builder builder = ExportTaskResource.builder();
 

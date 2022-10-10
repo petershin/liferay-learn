@@ -2,6 +2,9 @@ import com.liferay.headless.batch.engine.client.resource.v1_0.ExportTaskResource
 
 public class ExportTask_GET_ById {
 
+	/**
+	 * java -classpath .:* -DexportTaskId=1234 ExportTask_GET_ById
+	 */
 	public static void main(String[] args) throws Exception {
 		ExportTaskResource.Builder builder = ExportTaskResource.builder();
 
@@ -11,7 +14,7 @@ public class ExportTask_GET_ById {
 
 		System.out.println(
 			exportTaskResource.getExportTask(
-				Long.valueOf(System.getProperty("taskId"))));
+				Long.valueOf(System.getProperty("exportTaskId"))));
 	}
 
 }

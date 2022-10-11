@@ -7,6 +7,7 @@ toc:
 - ./publications/collaborating-on-publications.md
 - ./publications/resolving-conflicts.md
 - ./publications/reverting-changes.md
+- ./publications/publications-permissions.md
 ---
 # Publications
 
@@ -20,6 +21,7 @@ publications/using-workflow-with-publications.md
 publications/collaborating-on-publications.md
 publications/resolving-conflicts.md
 publications/reverting-changes.md
+publications/publications-permissions.md
 ```
 
 > Available: Liferay DXP/Portal 7.3+

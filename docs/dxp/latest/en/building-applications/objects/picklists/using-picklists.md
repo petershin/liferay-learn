@@ -66,18 +66,17 @@ With them, you can perform CRUD operations for both Picklist Definitions (`ListT
 
 ## Picklist Fields in Object API Calls
 
-When making POST, PATCH, and PUT API calls for Objects that include a Picklist field, you must use the following formats.
+{bdg-secondary}`For 7.4+ U1+/GA5+`
 
-### For Liferay DXP 7.4 U1+/Portal 7.4 GA5+
-
-```json
-"samplePicklist": {"key": "string"}
-```
-
-### For Liferay DXP 7.4 GA1/Portal 7.4 GA4
+When making POST, PATCH, and PUT API calls for Objects that include a Picklist field, you must use the following format.
 
 ```json
-"samplePicklist": "string"
+{ 
+      "picklistExample": {
+        "key": "secondOption",
+        "name": "Second Option"
+      }
+}
 ```
 
 ## Additional Information

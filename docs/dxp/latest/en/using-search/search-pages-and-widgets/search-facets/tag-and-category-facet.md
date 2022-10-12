@@ -2,15 +2,15 @@
 
 The Tag Facet narrows search results for any assets with tags that match the search keyword. Likewise, the Category Facet narrows search results for any categorized assets that match the search keyword. Each match appears as a facet term.
 
-![Example of tag facet results.](tag-and-category-facet/images/01.png)
+![Example of tag facet results.](./tag-and-category-facet/images/01.png)
 
-![Example of category facet results.](tag-and-category-facet/images/02.png)
+![Example of category facet results.](./tag-and-category-facet/images/02.png)
 
 ## Configuring the Tag Facet and the Category Facet
 
-The Tag Facet and the Category Facet contain identical configuration options. To configure either, open the Options menu (![Click on the options icon of the search bar.](../../../images/icon-app-options.png)) of the facet and click *Configuration*.
+The Tag Facet and the Category Facet contain nearly identical configuration options. To configure either, open the Options menu (![Options](../../../images/icon-app-options.png)) of the facet and click *Configuration*.
 
-![Click on the Configuration option.](tag-and-category-facet/images/03.png)
+![Click on the Configuration option.](./tag-and-category-facet/images/03.png)
 
 **Display Settings:** Choose between *Default*, *Compact Layout*, and *Label Layout*. The Default layout shows checkboxes next to each term but the Compact layout does not. The Label layout shows small clickable labels for each term.
 
@@ -24,8 +24,6 @@ The Advanced Configuration section contains additional options:
 
 **Display Frequencies:** Choose whether or not to display the term frequencies.
 
-Once finished, click the *Save* button.
-
 ## Vocabularies in the Category Facet
 
 {bdg-secondary}`7.4 U46+ and GA46+`
@@ -37,6 +35,10 @@ By default the Category Facet widget collects and displays results from all cate
    ![Categories are displayed under their vocabulary.](./tag-and-category-facet/images/04.png)
 
 1. Decide which vocabularies and categories to include in the facet. This capability requires that the `assetVocabularyCategoryIds` field is used to create the aggregations in the Category Facet. Switching to this field in System Settings &rarr; Search &rarr; Category Facet Field activates the vocabulary settings within the Category Facet widget's configuration screen. 
+
+   ```{important}
+   If you're upgrading from an earlier Liferay version or update and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
+   ```
 
    ![Select the vocabulary.](./tag-and-category-facet/images/06.png)
 

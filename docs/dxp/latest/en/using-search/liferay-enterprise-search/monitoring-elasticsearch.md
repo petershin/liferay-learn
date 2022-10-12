@@ -153,7 +153,7 @@ Download the LES Monitoring app and install the LPKG file by copying it into the
 
    - The recommended way is to make a copy of the default `cacerts` file, import the certificate without private key, then configure the application server to use the custom truststore file:
       1. Copy the default `cacerts` file from the Liferay JVM (located in `JAVA_HOME/jre/lib/security` in JDK 8 or in `JAVA_HOME/lib/security` in JDK 11), and rename it `cacerts-custom.jks`.
-      1. Extract the certificate of the CA without the private key using `openssl` (if you only have a single `.p12` file like `elastic-stack-ca.p12`).
+      1. Extract the certificate of the CA without the private key using `openssl`. If you only have a single `.p12` (e.g., `elastic-stack-ca.p12`) use
 
          ```sh
          openssl pkcs12 -in elastic-stack-ca.p12 -out elastic-stack-ca.crt -nokeys

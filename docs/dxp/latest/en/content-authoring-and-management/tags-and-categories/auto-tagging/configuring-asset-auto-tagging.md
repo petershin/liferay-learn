@@ -18,8 +18,6 @@ By default, asset auto tagging is only triggered when content is created. Beginn
 
 ## Global Scope Configuration
 
-Follow these steps to configure auto tagging globally:
-
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings*.
 
 1. In the Content and Data section, click *Assets*.

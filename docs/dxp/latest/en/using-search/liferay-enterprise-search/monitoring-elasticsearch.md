@@ -1,6 +1,6 @@
 # Monitoring Elasticsearch
 
-> LES Subscribers
+{bdg-link-primary}`LES Subscription <./activating-liferay-enterprise-search.md>`
 
 If you have a Liferay Enterprise Search (LES) [subscription](https://www.liferay.com/products/dxp/enterprise-search), you can integrate Elastic's [Kibana monitoring UI](https://www.elastic.co/guide/en/kibana/7.x/introduction.html) with Liferay DXP, so your monitoring activities can be done within Liferay itself.
 
@@ -156,7 +156,7 @@ Download the LES Monitoring app and install the LPKG file by copying it into the
       1. Extract the certificate of the CA without the private key using `openssl` (if you only have a single `.p12` file like `elastic-stack-ca.p12`).
 
          ```sh
-         openssl pkcs12 -in elastic-stack-ca.p12 -out elastic-stack-ca.crt -nokeys      
+         openssl pkcs12 -in elastic-stack-ca.p12 -out elastic-stack-ca.crt -nokeys
          ```
 
       1. Import the certificate into your custom JKS file using Java's `keytool`.

@@ -1,10 +1,29 @@
 # Viewing the Analytics Dashboard
 
-The home of your workspace is a dashboard of your websites' analytics performance. This dashboard gives you a summary of how your website is doing overall and is the entry point for diving deeper into analysis of your site's Pages, Assets, and People
+Once your [Liferay site and contacts are synced](syncing-sites-and-contacts.md), Analytics Cloud automatically begins tracking visitors to your site and how they're interacting with your site's content. The next steps are to explore the different tools available through the navigation menu on the left.
 
-![The Analytics Dashboard presents an overview of your site's analytics data.](viewing-the-analytics-dashboard/images/01.png)
+![Explore the different tools through the left navigation.](viewing-the-analytics-dashboard/images/01.png)
 
-The Dashboard is also the starting point for a variety of workspace management and configuration tasks. 
+For understanding your site's data:
+
+* [Sites Dashboard](../touchpoints/sites-dashboard.md)
+* [Individual Pages](../touchpoints/pages/pages.md) and [Paths](../touchpoints/pages/paths.md)
+* [Assets](../touchpoints/assets.md)
+* [Events Analysis](../touchpoints/events/events-analysis.md)
+
+For understanding your audience:
+
+* [Individuals Dashboard](../people/individuals/individuals-dashboard.md)
+* [Individual Profiles](../people/individuals/individual-profiles.md)
+* [Segments](../people/segments/segments.md)
+
+```{note}
+To explore analytics data based on segments, you must first [Create Segments](../people/segments/creating-segments.md). These are groups of individuals that are aggregated together based on attributes you select.
+```
+
+For optimizing site content:
+
+* [A/B Testing](../optimization/a-b-testing.md)
 
 ## Inviting Others to Your Workspace
 

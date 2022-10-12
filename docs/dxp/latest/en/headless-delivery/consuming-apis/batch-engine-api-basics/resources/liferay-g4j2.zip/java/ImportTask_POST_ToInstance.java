@@ -3,7 +3,7 @@ import com.liferay.headless.batch.engine.client.resource.v1_0.ImportTaskResource
 public class ImportTask_POST_ToInstance {
 
 	/**
-	 * java -classpath .:* ImportTask_POST_ToInstance
+	 * java -classpath .:* -DclassName=able -Ddata="baker" ImportTask_POST_ToInstance
 	 */
 	public static void main(String[] args) throws Exception {
 		ImportTaskResource.Builder builder = ImportTaskResource.builder();
@@ -14,7 +14,7 @@ public class ImportTask_POST_ToInstance {
 
 		System.out.println(
 			importTaskResource.postImportTask(
-				args[0], null, null, null, null, null, null, args[1]));
+				String.valueOf(System.getProperty("className")), null, null, null, null, null, null, String.valueOf(System.getProperty("data"))));
 	}
 
 }

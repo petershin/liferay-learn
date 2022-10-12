@@ -16,7 +16,8 @@ public class ExportTask_POST_ToSite {
 		).build();
 
 		ExportTask exportTask = exportTaskResource.postExportTask(
-			String.valueOf(System.getProperty("className")), "json", null, null, null, "");
+			String.valueOf(System.getProperty("className")), "json", null, null,
+			null, "");
 
 		System.out.println(exportTask);
 	}

@@ -14,7 +14,8 @@ public class ImportTask_DELETE_ById {
 
 		System.out.println(
 			importTaskResource.deleteImportTask(
-				String.valueOf(System.getProperty("className")), null, null, null, null, String.valueOf(System.getProperty("data"))));
+				String.valueOf(System.getProperty("className")), null, null,
+				null, null, String.valueOf(System.getProperty("data"))));
 	}
 
 }

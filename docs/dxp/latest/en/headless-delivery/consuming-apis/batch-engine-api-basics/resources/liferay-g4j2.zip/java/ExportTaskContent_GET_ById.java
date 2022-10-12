@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 public class ExportTaskContent_GET_ById {
 
 	/**
-	 * java -classpath .:* -DexportTaskContentId=1234 ExportTaskContent_GET_ById
+	 * java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
 	 */
 	public static void main(String[] args) throws Exception {
 		ExportTaskResource.Builder builder = ExportTaskResource.builder();
@@ -17,7 +17,7 @@ public class ExportTaskContent_GET_ById {
 
 		HttpInvoker.HttpResponse httpResponse =
 			exportTaskResource.getExportTaskContentHttpResponse(
-				Long.valueOf(System.getProperty("exportTaskContentId")));
+				Long.valueOf(System.getProperty("exportTaskId")));
 
 		try (FileOutputStream fileOutputStream = new FileOutputStream(
 				"file.zip")) {

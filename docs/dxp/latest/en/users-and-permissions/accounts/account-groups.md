@@ -6,7 +6,7 @@ Use Account Groups to group Accounts together based on need. For example, group 
 
 ## Creating an Account Group
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Applications* &rarr; *Account Groups*.
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Account Groups*.
 
 1. Click the _Add_ icon (![Add icon](../../images/icon-add.png)) to create a new account group.
 

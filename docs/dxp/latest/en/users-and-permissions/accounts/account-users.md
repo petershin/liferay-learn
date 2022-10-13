@@ -6,7 +6,7 @@ Account Users are User accounts that are associated with a Business Account or a
 
 ## Adding a New Account User
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Applications* &rarr; *Account Users*.
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Account Users*.
 
 1. Click the _Add_ icon (![Add icon](../../images/icon-add.png)) to create a new Account User. 
 
@@ -36,7 +36,7 @@ If you haven't set up a mail server, set a password manually for the User.
 
 To associate an existing user to a Business Account,
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Applications* &rarr; *Accounts*.
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Click the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the account you want to edit and click _Manage Users_. 
 
@@ -46,7 +46,7 @@ To associate an existing user to a Business Account,
 
 To associate an existing user to a Personal Account,
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Applications* &rarr; *Accounts*.
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Click the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the account you want to edit and click _Edit_. 
 

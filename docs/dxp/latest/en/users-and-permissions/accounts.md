@@ -30,7 +30,7 @@ Accounts is a feature, originally found in [Liferay Commerce](https://learn.life
 
 ## Creating an Account
 
-1. Open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to *Applications* &rarr; *Accounts*.
+1. Open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Click the _Add_ icon (![Add icon](../images/icon-add.png)) to create a new account.
 

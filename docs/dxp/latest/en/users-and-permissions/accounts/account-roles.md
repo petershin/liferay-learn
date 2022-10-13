@@ -18,7 +18,7 @@ There are two types of Account Roles: Shared and Owned. Shared type Account Role
 
 ### View Owned Account Roles
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Applications* &rarr; *Accounts*.
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Click on the specific Account you wish to view. Click the *Roles* tab and view the list of available Roles.
 
@@ -40,7 +40,7 @@ Make a choice to create an Shared Account Role or an Owned Account Role.
 
 1. Click the *Define Group Scope Permissions* tab. Select what permissions the Role has to act on resources owned by other groups (i.e. Sites, channels, asset libraries, etc.). Note that the permissions apply for the Account that is [selected as the current account](./account-management-widget.md#using-the-account-management-widget). 
 
-1. To assign an Account User to this Role, navigate to *Applications* &rarr; *Accounts*. Select a specific account. 
+1. To assign an Account User to this Role, navigate to *Control Panel* &rarr; *Accounts*. Select a specific account. 
 
 1. Click the *Roles* tab and click the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the Role you just created. Click *Assign Users*.
 
@@ -50,7 +50,7 @@ Make a choice to create an Shared Account Role or an Owned Account Role.
 
 ### Creating and Assigning an Owned Account Role
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Applications* &rarr; *Accounts*.
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Select the specific account in which to create the new Role. Click the *Roles* tab and click the _Add_ icon (![Add icon](../../images/icon-add.png)).
 

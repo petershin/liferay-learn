@@ -18,9 +18,9 @@ The Current Status panel on the right shows the data source's status: **Active**
 
 If you choose to disconnect the DXP instance from the workspace, click the *Disconnect* button. You're asked to confirm. Note, disconnecting the data source stops all syncing of analytics data.
 
-**Synced Sites:** Shows your DXP Sites' sync status with Analytics Cloud. To configure, see [syncing sites to a property](../getting-started/scoping-sites-and-individuals-using-properties.md#syncing-sites-to-a-property).
+**Synced Sites:** Shows your DXP Sites' sync status with Analytics Cloud. To configure, see [syncing sites to a property](../workspace-settings/scoping-sites-and-individuals-using-properties.md#syncing-sites-to-a-property).
 
-**Synced Contacts:** Shows your DXP contacts sync status with Analytics Cloud. To configure, see [syncing contacts to a property](../getting-started/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property)
+**Synced Contacts:** Shows your DXP contacts sync status with Analytics Cloud. To configure, see [syncing contacts to a property](../workspace-settings/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property)
 
 ## Deleting a Data Source
 

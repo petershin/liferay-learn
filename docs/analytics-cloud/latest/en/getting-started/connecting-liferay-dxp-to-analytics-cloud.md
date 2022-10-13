@@ -4,7 +4,7 @@ To begin the setup process, there are a few requirements:
 
 1. You need a [liferay.com](https://www.liferay.com) account. If you don't have a Liferay account, you can [Create an account](https://login.liferay.com/signin/register).
 
-1. When you visit [analytics.liferay.com](https://analytics.liferay.com/) for the first time, you are prompted to set up multi-factor authentication for the account. If you need help, see [Multi-Factor Authentication](./multi-factor-authentication.md).
+1. When you visit [analytics.liferay.com](https://analytics.liferay.com/) for the first time, you are prompted to set up multi-factor authentication for the account. If you need help, see [Multi-Factor Authentication](../workspace-settings/multi-factor-authentication.md).
 
 1. Your Liferay DXP installation must meet one of the following minimum versions:
 

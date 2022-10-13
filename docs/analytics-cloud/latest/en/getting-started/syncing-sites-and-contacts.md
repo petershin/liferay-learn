@@ -8,13 +8,13 @@ If you are new to Liferay DXP, there isn't much content on your Liferay instance
 
 ## Syncing Sites
 
-The first step to syncing sites is creating a new Property. A property is a label associated with a single Liferay site or multiple Liferay sites. Analytics Cloud aggregates your data according to how you define your properties. This example shows a simple setup where a single site is associated with a property. To learn more about defining a property with multiple sites see [Scoping Sites and Individuals Using Properties](./scoping-sites-and-individuals-using-properties.md).
+The first step to syncing sites is creating a new Property. A property is a label associated with a single Liferay site or multiple Liferay sites. Analytics Cloud aggregates your data according to how you define your properties. This example shows a simple setup where a single site is associated with a property. To learn more about defining a property with multiple sites see [Scoping Sites and Individuals Using Properties](../workspace-settings/scoping-sites-and-individuals-using-properties.md).
 
 1. In Analytics Cloud, navigate to _Settings_ &rarr; _Properties_. Click _New Property_ and input a label. (e.g. Minium Site).
 
-1. In your Liferay DXP instance, open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to _Configuration_ &rarr; _Instance Settings_. Under _Platform_, click _Analytics Cloud_. Click _Select Sites_.
+2. In your Liferay DXP instance, open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to _Configuration_ &rarr; _Instance Settings_. Under _Platform_, click _Analytics Cloud_. Click _Select Sites_.
 
-1. The property you just created appears under Available Properties. Click the name of your property. On the next page, select the site you want to sync and click _Done_.
+3. The property you just created appears under Available Properties. Click the name of your property. On the next page, select the site you want to sync and click _Done_.
 
    ![Select the site you want to sync and list of available sites.](./syncing-sites-and-contacts/images/02.png)
 

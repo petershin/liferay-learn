@@ -25,7 +25,7 @@ You have to sync sites to a property in order to see their data on Analytics Clo
 1. Verify that your Liferay DXP instance is syncing with Analytics Cloud by viewing *Instance Settings* &rarr; *Analytics Cloud* in your Liferay DXP instance. The message `Your DXP instance is connected to Analytics Cloud` confirms that your Liferay DXP instance is correctly connected to Analytics Cloud.
 
     ```{important}
-    If you do not see the message `Your DXP instance is connected to Analytics Cloud.`, please review [Connecting Liferay DXP Sites to Analytics Cloud](./connecting-liferay-dxp-to-analytics-cloud.md).
+    If you do not see the message `Your DXP instance is connected to Analytics Cloud.`, please review [Connecting Liferay DXP Sites to Analytics Cloud](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
     ```
 
 1. In your Analytics Cloud workspace, click on *Synced Sites*. A list of available properties that you created on Analytics Cloud appears. Create a new property here for the sites you would like to track.
@@ -52,7 +52,7 @@ To sync contacts to a property:
 
 1. Select the users or groups you want to sync and click *Save*.
 
-Learn more about [syncing contact data from Liferay DXP](syncing-contact-data-from-dxp.md).
+Learn more about [syncing contact data from Liferay DXP](../getting-started/syncing-sites-and-contacts.md).
 
 ## Email Reports
 

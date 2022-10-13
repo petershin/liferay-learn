@@ -30,7 +30,7 @@ Use the following steps to configure Unicast:
     WEB-INF/classes/jgroups/tcp.xml
     ```
 
-    Note, this `tcp.xml` configuration file is used for both the control channel and the transport channel of the cluster link. To use separate configuration files, see [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports).
+    Note, this `tcp.xml` configuration file is used for both the cluster link's control channel and transport channel. To use separate configuration files, see [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports).
 
 1. In the `tcp.xml` file, set the TCP bind port to an unused port on your node. Here's an example: 
 
@@ -48,7 +48,7 @@ Use the following steps to configure Unicast:
     ```
 
     ```{important}
-    Note that the `port_range` is set to `1` so that TCCPing will probe additional ports to create each channel. For example, for `initial_hosts="HostA[7800],HostB[7800]`, TCCPing will try to contact both HostA and HostB with port 7800 and 7801. 
+    Note that the `port_range` is set to `1` so that TCCPing probes additional ports to create each channel. For example, for `initial_hosts="HostA[7800],HostB[7800]`, TCCPing tries to contact both HostA and HostB with port 7800 and 7801. Set this value to cover as many ports as you need (number of channels minus one). 
     ```
 
     **Regarding Initial Hosts:**

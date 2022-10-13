@@ -23,7 +23,7 @@ developing-page-fragments/using-the-fragments-toolkit.md
 developing-page-fragments/adding-configuration-options-to-fragments.md
 developing-page-fragments/best-practices-for-using-fragment-configurations.md
 developing-page-fragments/applying-styles-to-fragments.md
-developing-page-fragments/defining-fragments-drop-zones.md
+developing-page-fragments/defining-fragment-drop-zones.md
 developing-page-fragments/creating-a-contributed-fragment-set.md
 developing-page-fragments/adding-validation-rules.md
 developing-page-fragments/auto-deploying-fragments.md

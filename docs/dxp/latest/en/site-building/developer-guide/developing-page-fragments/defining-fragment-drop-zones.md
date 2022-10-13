@@ -34,29 +34,9 @@ This image shows the result in the Content Page editor sidebar:
 
 Once defined, you can drag and drop any Fragment or widget into the drop zone.
 
-## Identifying the Drop Zones in the Fragment Code
-
-> Available in Liferay DXP 7.4+.
-
-If you want to identify the drop zones, include the `data-lfr-drop-zone-id` HTML attribute in the `<lfr-drop-zone></lfr-drop-zone>` label. The Fragments you create in Liferay DXP 7.4+ include the `data-lfr-drop-zone-id` HTML attribute by default.
-
-![The drop zones layout in the Content Page Editor is different in Liferay DXP 7.3 and Liferay DXP 7.4+.](./defining-fragment-drop-zones/images/03.png)
-
-The following example demonstrates how to use the `data-lfr-drop-zone-id` attribute to identify drop zones within the Tabs Fragment:
-
-   ```html
-      <div class="tab-panel">
-         [#list 0..configuration.numberOfTabs-1 as i]
-         <div aria-labelledby="tab${i+1}-${fragmentEntryLinkNamespace}" class="tab-panel-item d-none" data-fragment-namespace="${fragmentEntryLinkNamespace}" id="tabPanel${i+1}-${fragmentEntryLinkNamespace}" role="tabpanel" tabindex="0">
-            <lfr-drop-zone data-lfr-drop-zone-id="${i+1}"></lfr-drop-zone>
-         </div>
-         [/#list]
-      </div>
-   ```
-
-   ```{tip}
-   You can configure the order of the drop zones and other elements in the Fragment. For more information, see [Setting the Order of Elements in a Fragment](./setting-the-order-of-elements-in-a-fragment.md).
-   ```
+```{tip}
+Drop zones do not have an ID. They are rendered in the order they are specified, and they cannot be moved manually. However, you can configure the order of [other elements in the Fragment](./setting-the-order-of-elements-in-a-fragment.md).
+```
 
 ## Additional Information
 

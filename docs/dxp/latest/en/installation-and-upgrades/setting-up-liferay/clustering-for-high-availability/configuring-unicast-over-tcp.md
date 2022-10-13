@@ -48,7 +48,7 @@ Use the following steps to configure Unicast:
     ```
 
     ```{important}
-    Note that the `port_range` is set to `1` so that TCCPing will probe additional ports. For example, for `initial_hosts="HostA[7800],HostB[7800]`, TCCPing will try to contact both HostA and HostB with port 7800 and 7801. 
+    Note that the `port_range` is set to `1` so that TCCPing will probe additional ports to create each channel. For example, for `initial_hosts="HostA[7800],HostB[7800]`, TCCPing will try to contact both HostA and HostB with port 7800 and 7801. 
     ```
 
     **Regarding Initial Hosts:**

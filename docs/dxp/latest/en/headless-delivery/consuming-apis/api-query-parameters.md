@@ -177,7 +177,7 @@ The JSON response:
 
 ## Page and Page Size Parameters
 
-Use these parameter to specify which subset of items to return. The `page` parameter specifies which page to return out of all the pages available. The `pageSize` parameter specifies how many items you want per page. For example, query the countries API for a `pageSize=10` and `page=22` (i.e. the 22nd page of items).
+Use these parameters to specify which subset of items to return. The `page` parameter specifies which page to return out of all the pages available. The `pageSize` parameter specifies how many items you want per page. For example, query the countries API for a `pageSize=10` and `page=22` (i.e. the 22nd page of items).
 
 ### REST API Example
 

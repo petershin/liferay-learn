@@ -34,11 +34,11 @@ This interface is for those who want granular control over their client connecti
 
 1. Go to the Global Menu &rarr; Security &rarr; OAuth Client Administration. 
 
-1. Click *Add* (![Add Button](../../../images/icon-add.png)). 
+1. There are two tabs. The first is for authorization servers that have a Well Known URI. The second is for authorization servers without a Well Known URI. Choose the appropriate tab and click *Add* (![Add Button](../../../images/icon-add.png)). 
 
-1. Paste the authorization server's Well Known URI. For example, Google's is https://accounts.google.com/.well-known/openid-configuration. 
+1. If you have the authorization server's Well Known URI, paste it into the Well Known URI field. For example, Google's is https://accounts.google.com/.well-known/openid-configuration. 
 
-1. Most of the time, this is all you need to do. Click *Save*. 
+1. Most of the time, this is all you need to do. If you don't have a Well Known URI, use the fields below to configure the connection. When finished, click *Save*. 
 
 The other fields on the form are for specific configuration generated with the provider. 
 

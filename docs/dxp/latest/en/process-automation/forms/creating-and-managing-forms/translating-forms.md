@@ -23,6 +23,10 @@ To add a translation:
 1. Continue until all the desired fields have been translated.
 1. Click _Save Form_ when finished.
 
+```{note}
+The field's messages are editable in the translation. Other changes made to the field's settings apply to all translations (e.g., marking the field as required). If you set up [validation](./validating-text-and-numeric-field-entries.md) on a field, the Accept if Input field is only editable in the default language, although the corresponding Value and Error Message fields are translatable.
+```
+
 ## Viewing Translated Forms
 
 Authenticated users that have configured a matching default language for the site now see the translated form by default.

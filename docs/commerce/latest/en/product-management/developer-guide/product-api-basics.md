@@ -19,7 +19,7 @@ Then, follow these steps:
    unzip liferay-z8v2.zip
    ```
 
-1. A product belongs to a catalog and the Catalog ID is a required parameter. To get this, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog you wish to add the product to and note down the ID present next to its name.
+1. A product belongs to a catalog and the Catalog ID is one of the required parameters. To get this, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog you wish to add the product to and note down the ID present next to its name.
 
    ![Note down the ID of the Catalog present next to its name.](./product-api-basics/images/01.png)
 
@@ -94,7 +94,7 @@ Then, follow these steps:
    }
     ```
 
-1. Verify this by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and going to *Commerce* &rarr; *Products*. See that a new product has been added.
+1. Verify this by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and navigating to *Commerce* &rarr; *Products*. See that a new product has been added.
 
    ![See that a new product has been added.](./product-api-basics/images/02.png)
 
@@ -202,7 +202,7 @@ Code:
 
 The `Product` objects of your Liferay instance are listed in JSON.
 
-This API also accepts parameters to search, filter, paginate and sort the products. See the [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) method for more information. You can use the following Product fields in your queries to filter, sort and search:
+This API also accepts parameters to filter, paginate, search, and sort the products. See the [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) method for more information. You can use the following Product fields in your queries to filter, search, and sort the results.
 
 * categoryIds
 * channelId

@@ -27,13 +27,13 @@ For optimizing site content:
 
 ## Inviting Others to Your Workspace
 
-As a workspace owner or admin, you can invite your colleagues to the workspace. Invited users can be configured to help setup and configure data sources, create segments, or simply view analytics reports.
+As a workspace owner or admin, you can invite your colleagues to the workspace. Invited users can be configured to help set up and configure data sources, create segments, or view analytics reports.
 
 See [Managing Users](../../workspace-settings/managing-users.md) to learn more about adding users to your workspace.
 
 ## Configure Settings for Your Workspace
 
-Most of the important settings are configured when you created the workspace. However there are other settings worth reviewing for your workspace.
+Most of the important settings were configured when you created the workspace. However there are other settings worth reviewing. 
 
 * Data Definitions
 * Data Control and Privacy
@@ -41,7 +41,7 @@ Most of the important settings are configured when you created the workspace. Ho
 * Workspace Usage Monitoring
 * Workspace Settings
 
-You will begin to see analytics data once your workspace is connected. For example, view Site specific analytics on the [Sites dashboard](../../touchpoints/sites-dashboard.md). To see more about your workspace settings, see [Managing Workspaces](../../workspace-settings/managing-workspaces.md). 
+Analytics data appears once your workspace is connected. For example, you can view site-specific analytics on the [Sites dashboard](../../touchpoints/sites-dashboard.md). To see more about your workspace settings, see [Managing Workspaces](../../workspace-settings/managing-workspaces.md). 
 
 ## Language Menu Option
 
@@ -52,3 +52,5 @@ The UI for Analytics Cloud currently supports English, Japanese, Portuguese, and
    ![Click on your user name, then click Language.](./viewing-the-analytics-dashboard/images/02.png)
 
 2. Select the language. Refresh the page. The dashboard and menu is now in the selected language.
+
+Well done! To browse all the available features, options, and configurations for Analytics Cloud, click the _Analytics Cloud_ breadcrumb above. 

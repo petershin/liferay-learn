@@ -3,7 +3,7 @@
 Now that you've [Connected Liferay DXP to Analytics Cloud](./connecting-liferay-dxp-to-analytics-cloud.md), it's time to sync your site and your contacts.
 
 ```{note}
-If you are new to Liferay DXP, there isn't much content on your Liferay instance for Analytics Cloud to start tracking. If you want to learn Analytics Cloud by jump-starting a demo site, consider using Liferay Commerce's [Minium Accelerator Site](https://learn.liferay.com/commerce/latest/en/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html) to get some sample content. 
+If you are new to Liferay DXP, there isn't much content on your Liferay instance for Analytics Cloud to start tracking. If you want to learn Analytics Cloud by jump-starting a demo site, consider using Liferay Commerce's [Minium Accelerator Site](https://learn.liferay.com/commerce/latest/en/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html) to generate some sample content. 
 ```
 
 ## Syncing Sites

@@ -19,7 +19,7 @@ Then, follow these steps:
    unzip liferay-z8v2.zip
    ```
 
-1. A product falls under a catalog and the Catalog ID is a required parameter. To get this, open the Global Menu, and go to *Commerce* &rarr; *Catalogs*. Select the catalog you want and note down the ID present next to its name.
+1. A product belongs to a catalog and the Catalog ID is a required parameter. To get this, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog you wish to add the product to and note down the ID present next to its name.
 
    ![Note down the ID of the Catalog present next to its name.](./product-api-basics/images/01.png)
 
@@ -94,11 +94,11 @@ Then, follow these steps:
    }
     ```
 
-1. Verify this by opening the *Global Menu*, and going to *Commerce* &rarr; *Products*. See that a new product has been added.
+1. Verify this by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and going to *Commerce* &rarr; *Products*. See that a new product has been added.
 
    ![See that a new product has been added.](./product-api-basics/images/02.png)
 
-1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. You can also call the The REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
    ```bash
    javac -classpath .:* *.java
@@ -157,6 +157,7 @@ Note that the project includes the `com.liferay.headless.commerce.admin.catalog.
 ```{note}
 The `main` method's comment demonstrates running the class.
 ```
+
 The other example Java classes are similar to this one, but call different `ProductResource` methods.
 
 ```{important}
@@ -167,7 +168,7 @@ Below are examples of calling other `Product` REST services using cURL and Java.
 
 ## Get Products from Instance
 
-You can list all products from an Instance by executing the following cURL or Java command.
+You can list all products from your Liferay instance by executing the following cURL or Java command.
 
 ### Products_GET_FromInstance.sh
 
@@ -199,7 +200,7 @@ Code:
    :lines: 11-21
 ```
 
-The `Product` objects of the Instance are listed in JSON.
+The `Product` objects of your Liferay instance are listed in JSON.
 
 This API also accepts parameters to search, filter, paginate and sort the products. See the [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) method for more information. You can use the following Product fields in your queries to filter, sort and search:
 

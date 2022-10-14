@@ -100,6 +100,20 @@ To access these options, click the *Actions* (![Actions](../../images/icon-actio
 
 ![Edit the Category to define additional options.](./defining-categories-and-vocabularies-for-content/images/10.png)
 
+### Changing the Maximum Number of Categories per Vocabulary
+
+You can create a maximum of 150 Categories for each Vocabulary. But a very large number of categories may impact performance and load times. To set a lower maximum number,
+
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Assets*.
+
+1. Click *Categorization* in the left navigation. Input a new maximum value and click *Save* (e.g. `2`)
+
+    ![Set a new maximum value of Categories.](./defining-categories-and-vocabularies-for-content/images/11.png)
+
+1.  A message will now appear when you reach the maximum value and the user will be prevented from creating additional categories.
+
+    ![A message will appear when you reach the maximum value.](./defining-categories-and-vocabularies-for-content/images/12.png)
+
 ## Related Information
 
 - [Organizing Content with Categories and Tags](./organizing-content-with-categories-and-tags.md)

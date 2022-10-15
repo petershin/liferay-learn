@@ -20,6 +20,17 @@ Object drafts are application templates that store the necessary data for creati
 
    **Object Name**: Determines the object's `definition.name` and cannot be changed once the object is published.
 
+   <!--TASK: when released, uncomment and update img & alt text 
+
+   **Storage Type**: Determines whether the Object's data is stored in Liferay (*Default*) or in an external system (*Salesforce*).
+
+   ```{important}
+   Selecting an external system imposes limitations on Object customization. 
+   
+   Currently, Liferay only supports Salesforce for external storage. See [Using the Salesforce Storage Type](../integrating-objects-with-third-party-services/storing-object-data-in-an-external-system/using-the-salesforce-storage-type.md) for more information.
+   ```
+   -->
+
    ![Enter a Label, Plural Label, and Name for the object draft.](./creating-objects/images/01.png)
 
 1. Click *Save*.

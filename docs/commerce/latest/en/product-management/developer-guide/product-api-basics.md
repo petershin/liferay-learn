@@ -19,7 +19,7 @@ Then, follow these steps:
    unzip liferay-z8v2.zip
    ```
 
-1. A product belongs to a catalog and the Catalog ID is one of the required parameters. To get this, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog you wish to add the product to and note down the ID present next to its name.
+1. A Product is scoped to a Catalog and the catalog ID is one of the required parameters. To get this, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog you wish to add the product to and note down the ID present next to its name.
 
    ![Note down the ID of the Catalog present next to its name.](./product-api-basics/images/01.png)
 
@@ -92,7 +92,7 @@ Then, follow these steps:
       "label" : "approved",
       "label_i18n" : "Approved"
    }
-    ```
+   ```
 
 1. Verify this by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and navigating to *Commerce* &rarr; *Products*. See that a new product has been added.
 

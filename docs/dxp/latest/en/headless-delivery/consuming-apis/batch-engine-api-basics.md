@@ -63,7 +63,7 @@ Then, follow these steps:
       "executeStatus" : "COMPLETED",
       "externalReferenceCode" : "103798d4-7454-810e-c067-2a472d214d5c",
       "failedItems" : [ ],
-      "id" : 1,
+      "id" : 1234,
       "importStrategy" : "ON_ERROR_FAIL",
       "operation" : "CREATE",
       "processedItemsCount" : 2,
@@ -71,6 +71,8 @@ Then, follow these steps:
       "totalItemsCount" : 2
    }
    ```
+
+   If the `executeStatus` is `COMPLETED`, you can proceed to the next step. If not, execute the command again to ensure the task has finished execution.
 
 1. Verify the imported data by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and navigating to *Control Panel* &rarr; *Accounts*. See that two new Accounts have been added.
 

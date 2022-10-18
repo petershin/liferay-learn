@@ -18,27 +18,31 @@ The Advanced Configuration section contains additional options:
 
 **Max Terms:** Set the maximum number of facet terms to display, regardless of how many matching terms are found for the facet.
 
-**Frequency Threshold:** Set the minimum frequency required for terms to appear in the list of facet terms. For example, if the frequency threshold of a facet is set to 3, a term with two matching results doesn't appear in the term result list.
+**Frequency Threshold:** Set the minimum frequency required for terms to appear in the facet term list. For example, if the facet's frequency threshold is set to 3, a term with two matching results doesn't appear in the term result list.
 
 **Display Frequencies:** Choose whether or not to display the term frequencies.
 
-### Selecting Vocabularies
+### Displaying and Filtering Facet Terms by Vocabulary
 
 {bdg-secondary}`7.4 U46+ and GA46+`
 
-By default the Category Facet widget collects and displays results from all categories in every vocabulary in the site, and displays them in a flat list. In this paradigm vocabularies are not considered in the display or configuration of the widget. With the enhancements made in Update 46, you gain these behaviors:
+By default the Category Facet widget collects the categories of the matching results from every vocabulary in the site and displays them in a flat list. With the enhancements made in Update 46, you gain new behaviors.
 
-1. Display categories under their vocabulary by selecting the Vocabulary Layout in the Category Facet's configuration screen. 
+#### Display Facet Terms (Categories) by Vocabulary
 
-   ![Categories are displayed under their vocabulary.](./category-facet/images/04.png)
+Display categories under their vocabulary by selecting the Vocabulary Layout in the Category Facet's configuration screen. 
 
-1. Decide which vocabularies and categories to include in the facet. This capability requires that the `assetVocabularyCategoryIds` field is used to create the aggregations in the Category Facet. Switching to this field in System Settings &rarr; Search &rarr; Category Facet Field activates the vocabulary settings within the Category Facet widget's configuration screen. 
+![Categories are displayed under their vocabulary.](./category-facet/images/04.png)
 
-   ```{important}
-   If you're upgrading from an earlier Liferay version or update and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
-   ```
+#### Filter Facet Terms (Categories) by Vocabulary
 
-   ![Select the vocabulary.](./category-facet/images/06.png)
+Select which vocabularies and categories to display in the facet. To enable this capability, switch the configuration in in System Settings &rarr; Search &rarr; Category Facet Field from the default field, `assetCategoryIds`, to the `assetVocabularyCategoryIds` field. This setting specifies the field that's used to create the aggregations in the Category Facet, and setting `assetVocabularyCategoryIds` activates the vocabulary settings within the category facet widget's configuration screen. 
+
+```{important}
+If you're upgrading from an earlier Liferay version or update and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
+```
+
+![Select the vocabulary.](./category-facet/images/06.png)
 
 With this behavior you can provide a powerful search facet experience: users select multiple categories (facet terms) within one vocabulary in one widget to expand the search results, but select categories from another vocabulary in a second widget to narrow the results. You might think of this in terms of boolean operators: use OR selection behavior inside a facet, but AND selection between facets.
 
@@ -66,7 +70,7 @@ Consider a commerce portal for buying auto parts. Each part is a commerce produc
    - Premium
    - Standard
 
-When your site users select Engine and Exhaust System, they expect to see products matching either category. If they then select the Premium category from the Quality vocabulary, they expect the results to be narrowed to just premium auto parts for the engine and exhaust systems of the vehicle. This can be accomplished out-of-the-box as of Update 46.
+When your site users select Engine and Exhaust System, they expect to see products matching either category. If they then select the Premium category from the Quality vocabulary, they expect the results to be narrowed to just premium auto parts for the engine and exhaust systems. This can be accomplished out-of-the-box as of Update 46.
 
 To configure the use case above,
 
@@ -123,7 +127,7 @@ To configure the use case above,
 
 1. Using a similar procedure, configure the original Category Facet widget to display only the Quality vocabulary's categories. Since you already changed the Category Parameter Name of the new Category Facet widget, you can leave the default value in the existing widget.
 
-1. Refresh the page. Selecting the Brake System and Suspension categories in the Category Facet widget showing the Foo vocabulary ensures that the displayed products match the category of Brake System OR Suspension products are showing.
+1. Refresh the page. Selecting the Brake System and Suspension categories in the Category Facet widget showing the Foo vocabulary ensures that the displayed products match the category of Brake System OR Suspension.
 
    Selecting Standard from the Category Facet showing the Quality categories narrows the results to only those products categorized as Brake System OR Suspension AND Standard.
 

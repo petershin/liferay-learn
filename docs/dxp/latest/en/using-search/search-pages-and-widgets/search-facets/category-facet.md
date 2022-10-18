@@ -1,22 +1,20 @@
-# Tag and Category Facet
+# Category Facet
 
-The Tag Facet narrows search results for any assets with tags that match the search keyword. Likewise, the Category Facet narrows search results for any categorized assets that match the search keyword. Each match appears as a facet term.
+The Category Facet narrows search results for any categorized assets that match the search keyword. Each match appears as a facet term.
 
-![Example of tag facet results.](./tag-and-category-facet/images/01.png)
+![Example of category facet results.](./category-facet/images/02.png)
 
-![Example of category facet results.](./tag-and-category-facet/images/02.png)
+## Configuring the Category Facet
 
-## Configuring the Tag Facet and the Category Facet
+To configure the Category Facet, open the Options menu (![Options](../../../images/icon-app-options.png)) of the facet and click *Configuration*.
 
-The Tag Facet and the Category Facet contain nearly identical configuration options. To configure either, open the Options menu (![Options](../../../images/icon-app-options.png)) of the facet and click *Configuration*.
-
-![Click on the Configuration option.](./tag-and-category-facet/images/03.png)
+![Click on the Configuration option.](./category-facet/images/03.png)
 
 **Display Settings:** Choose between *Default*, *Compact Layout*, and *Label Layout*. The Default layout shows checkboxes next to each term but the Compact layout does not. The Label layout shows small clickable labels for each term.
 
 The Advanced Configuration section contains additional options: 
 
-**Tag or Category Parameter Name:** Change the parameter name in the URL for the Facet. The default is *tag* or *category*. 
+**Category Parameter Name:** Change the parameter name in the URL for the Facet. The default is *category*. 
 
 **Max Terms:** Set the maximum number of facet terms to display, regardless of how many matching terms are found for the facet.
 
@@ -24,7 +22,7 @@ The Advanced Configuration section contains additional options:
 
 **Display Frequencies:** Choose whether or not to display the term frequencies.
 
-## Vocabularies in the Category Facet
+### Selecting Vocabularies
 
 {bdg-secondary}`7.4 U46+ and GA46+`
 
@@ -32,7 +30,7 @@ By default the Category Facet widget collects and displays results from all cate
 
 1. Display categories under their vocabulary by selecting the Vocabulary Layout in the Category Facet's configuration screen. 
 
-   ![Categories are displayed under their vocabulary.](./tag-and-category-facet/images/04.png)
+   ![Categories are displayed under their vocabulary.](./category-facet/images/04.png)
 
 1. Decide which vocabularies and categories to include in the facet. This capability requires that the `assetVocabularyCategoryIds` field is used to create the aggregations in the Category Facet. Switching to this field in System Settings &rarr; Search &rarr; Category Facet Field activates the vocabulary settings within the Category Facet widget's configuration screen. 
 
@@ -40,13 +38,15 @@ By default the Category Facet widget collects and displays results from all cate
    If you're upgrading from an earlier Liferay version or update and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
    ```
 
-   ![Select the vocabulary.](./tag-and-category-facet/images/06.png)
+   ![Select the vocabulary.](./category-facet/images/06.png)
 
 With this behavior you can provide a powerful search facet experience: users select multiple categories (facet terms) within one vocabulary in one widget to expand the search results, but select categories from another vocabulary in a second widget to narrow the results. You might think of this in terms of boolean operators: use OR selection behavior inside a facet, but AND selection between facets.
 
 ```{important}
 To achieve the AND style selection between facets, you must configure a different Category Parameter Name for each widget. By default all Category Facet widgets have this field set to _category_.
 ```
+
+## Example: Creating a Hierarchic Filtering Experience in the Category Facet Using Vocabularies
 
 Consider a commerce portal for buying auto parts. Each part is a commerce product that's categorized in distinct vocabularies:
 
@@ -82,7 +82,7 @@ To configure the use case above,
    There's an existing vocabulary created by the site template during site initialization (named Foo after the site): it'd be better named _Vehicle Systems_  to match the example you're building and characterize the categories better (e.g., Brake System). However, the Foo vocabulary's categories are referenced by existing Commerce products, so it cannot be edited. 
    ```
 
-   ![Create a Quality vocabulary in the global site.](./tag-and-category-facet/images/07.png)
+   ![Create a Quality vocabulary in the global site.](./category-facet/images/07.png)
 
 1. Categorize some of the existing Commerce Products in Global Menu &rarr; Commerce &rarr; Products (under the Product Management section).
 
@@ -99,13 +99,13 @@ To configure the use case above,
    - Brake Pads
    - Brake Rotors
 
-   ![Categorize some existing products as Premium or Standard.](./tag-and-category-facet/images/09.png)
+   ![Categorize some existing products as Premium or Standard.](./category-facet/images/09.png)
 
 1. Go to the Foo site's home page. By default a Minium site's home page is the product catalog, which is essentially a search page with Allow Empty Searches enabled.
 
    Look at the Category Facet widget: the categories of both vocabularies are shown in one flat list. Selecting multiple facet terms (e.g., Suspension and Standard) expands the results on the page: this demonstrates OR operator behavior among facet terms.
 
-   ![The categories of all available vocabularies are aggregated.](./tag-and-category-facet/images/08.png)
+   ![The categories of all available vocabularies are aggregated.](./category-facet/images/08.png)
 
    Some of the widgets on the page are Commerce-specific widgets (e.g. the Specification Facet) but the Category Facet is the standard search widget.
 

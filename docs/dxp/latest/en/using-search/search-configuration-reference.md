@@ -23,7 +23,7 @@ For dedicated coverage of the search widgets, see [Search Pages and Widgets](./g
 
 **Search Bar**: Configure the behavior of how search keywords are processed. See [Configuring the Search Bar](./getting-started/searching-for-content.md#configuring-the-search-bar) for more information.
 
-**Search Facets**: Configure each facet's behavior and URL parameters. See [Facets](./search-pages-and-widgets/search-facets/facets.md) for more information.
+**Search Facets**: Configure each facet's behavior and URL parameters. See [Facets](./search-pages-and-widgets/search-facets.md) for more information.
 
 **Search Options**: This is a special case, where configuring this widget defines page scoped behavior. Add the Search Option widget to a page and define two booleans for the Search Page:
 

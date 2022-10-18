@@ -16,7 +16,7 @@ Previously, you [learned](./configuring-the-search-results-widget.md) how to dis
 
 Results are filtered using facets. Users enter a search term and see a list of results and search facets, which you can think of as buckets that group results together if they share a common characteristic.
 
-Administrators can configure facets. Read about [Search facets](../search-facets/facets.md) to learn more.
+Administrators can configure facets. Read about [Search facets](../search-facets.md) to learn more.
 
 ## Search Results Relevance
 

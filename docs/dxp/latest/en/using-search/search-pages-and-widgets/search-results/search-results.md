@@ -22,7 +22,7 @@ Results are filtered using *facets*. Most users have encountered similar filteri
 
 ![The Type facet is one of the facets provided out of the box.](./search-results/images/02.png)
 
-Facets are configurable. Read about configuring [facets](../search-facets/facets.md) to learn more.
+Facets are configurable. Read about configuring [facets](../search-facets.md) to learn more.
 
 ## Search Results Relevance
 

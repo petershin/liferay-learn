@@ -1,6 +1,6 @@
 # Batch Engine API Basics - Exporting Data
 
-Liferay's Headless Batch Engine provides REST APIs to export and export data. Call these services to export data from Liferay.
+Liferay's Headless Batch Engine provides REST APIs to import and export data. Call these services to export data from Liferay.
 
 <!-- TASK: Link to Batch Engine Overview in the introduction once it is ready !-->
 
@@ -23,7 +23,7 @@ Then, follow these steps:
 
 1. To export data, you must have the fully qualified class name of the entity you are exporting. You can get the class name from the API explorer in your installation at `/o/api`. Scroll down to the *Schemas* section and note down the `x-class-name` field of the entity you want to export.
 
-1. Use the following cURL script to export Accounts from your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ExportTask_POST_ToInstance.sh` script with the fully qualified class name of *Account*, and `json` as parameters. The `json` parameter denotes the format of the exported data. It also supports `jsonl` and `csv` formats.
+1. Use the following cURL script to export Accounts from your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ExportTask_POST_ToInstance.sh` script with the fully qualified class name of *Account* and `json` as parameters. The `json` parameter denotes the format of the exported data. It also supports `jsonl` and `csv` formats.
 
    ```bash
    ./ExportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account json
@@ -44,8 +44,8 @@ Then, follow these steps:
    }
    ```
 
-   ```{note}
-   When using `csv` as the export format, you must also provide an additional query parameter `fieldNames` with the fields you want to export. Each field must be separated by a comma (,).
+   ```{important}
+   When using `json` or `jsonl` as the output format, all fields are exported by default. To specify fields, you must provide an additional query parameter (`fieldNames`) with the fields you want to export. Each field must be separated by a comma (,). When using `csv` as the export format, this is a mandatory query parameter.
    ```
 
 1. The current `executeStatus` is `INITIAL`. It denotes the submission of a task to the Batch Engine. You must wait until this is `COMPLETED` to download the data. On the command line, execute the `ExportTask_GET_ById.sh` script and replace `1234` with the ID of your export task.
@@ -132,8 +132,6 @@ Here are the command's arguments:
 Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html).
 ```
 
-The other cURL commands use similar JSON arguments.
-
 ## Examine the Java Class
 
 The `ExportTask_POST_ToInstance.java` class exports data by calling the Batch Engine related service.
@@ -164,7 +162,7 @@ The other example Java classes are similar to this one, but call different `Expo
 See [ExportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ExportTaskResource.java) for service details.
 ```
 
-Below is an example of exporting data from *Site* using cURL and Java.
+Below are examples of calling other Batch Engine export REST services using cURL and Java.
 
 ## Get the ExportTask Status
 
@@ -245,7 +243,7 @@ Code:
 ```
 
 ```{note}
-The second parameter is `json` and denotes the output format of the exported data. You can also use `jsonl` and `csv` here. When using `csv` you must specify the fields you want to export as a comma separated string.
+The second parameter is `json` and denotes the output format of the exported data. You can also use `jsonl` and `csv` here. If using CSV, it is mandatory to specify the fields you want to export as a comma separated string and pass it as the fifth parameter in the `exportTaskResource.postExportTask()` method.
 ```
 
 The JSON response displays information of the newly created export task. Note down the `id` to keep track of its `executeStatus`. Once completed, you can execute `ExportTaskContent_GET_ById.[java|sh]` with the export task ID to download the data.

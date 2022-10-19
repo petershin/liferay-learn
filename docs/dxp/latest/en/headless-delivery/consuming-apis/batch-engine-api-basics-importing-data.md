@@ -96,9 +96,9 @@ Then, follow these steps:
    java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"name\": \"Able\", \"type\": \"business\"}, {\"name\": \"Baker\", \"type\": \"guest\"}]" ImportTask_POST_ToInstance
    ```
 
-   Note down the `id` of the task from the JSON response.
+   Note down the `id` of the import task from the JSON response.
 
-1. Run the `ImportTask_GET_ById` class with the following command. Replace `1234` with the ID of your import task. Once the `executeStatus` shows `COMPLETED`, you can verify the data as shown in the above steps.
+1. Run the `ImportTask_GET_ById` class with the following command. Replace `1234` with the ID of your import task. Once the `executeStatus` shows `COMPLETED`, you can verify the data as shown in the steps above.
 
    ```bash
    java -cp .:* -DimportTaskId=1234 ImportTask_GET_ById
@@ -162,7 +162,7 @@ Below are examples of calling other Batch Engine import REST services using cURL
 
 ## Importing Data to a Site
 
-You can import data to a *Site* by executing the following cURL or Java command. The example shows importing blog posts to a site. [Find your Site’s ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) and replace `1234` with it.
+You can import data to a *Site* by executing the following cURL or Java command. The example imports blog posts to a site. [Find your Site’s ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) and replace `1234` with it. When using another entity, you must also update the fully qualified class name parameter and the data to import in the cURL script.
 
 ### ImportTask_POST_ToSite.sh
 

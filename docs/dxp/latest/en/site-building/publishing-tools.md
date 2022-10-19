@@ -1,6 +1,6 @@
 ---
 toc:
-- ./publishing-tools/choosing-a-publishing-tool.md
+- ./publishing-tools/comparing-publishing-tools.md
 - ./publishing-tools/publications.md
 - ./publishing-tools/staging.md
 ---
@@ -9,12 +9,12 @@ toc:
 ```{toctree}
 :maxdepth: 3
 
-publishing-tools/choosing-a-publishing-tool.md
+publishing-tools/comparing-publishing-tools.md
 publishing-tools/publications.md
 publishing-tools/staging.md
 ```
 
-Liferay provides two publishing tools for content creation and site building: Publications and Staging. Each tool provides a way to edit sites and content in a working environment without affecting end users. However, they both achieve this using different frameworks that have varying integration with other Liferay features. While Publications is recommended for most use cases, selecting the right publishing tool can depend on your needs. See [Choosing a Publishing Tool](./publishing-tools/choosing-a-publishing-tool.md) for more information.
+Liferay provides two publishing tools for content creation and site building: Publications and Staging. Each tool provides a way to edit sites and content in a working environment without affecting end users. However, they both achieve this using different frameworks that have varying integration with other Liferay features. Publications is recommended for all use cases except when you need to host your working and production environments on separate servers. In this case, you must use Remote Live Staging. See [Comparing Publishing Tools](./publishing-tools/comparing-publishing-tools.md) for more information.
 
 ```{important}
 Presently, Liferay's publishing tools do not support [Commerce applications](https://learn.liferay.com/commerce/latest/en/index.html) or [custom Objects](../building-applications/objects.md).
@@ -23,8 +23,8 @@ Presently, Liferay's publishing tools do not support [Commerce applications](htt
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Choosing a Publishing Tool
-:link: ./publishing-tools/choosing-a-publishing-tool.md
+:::{grid-item-card} Comparing Publishing Tools
+:link: ./publishing-tools/comparing-publishing-tools.md
 :::
 
 :::{grid-item-card} Publications

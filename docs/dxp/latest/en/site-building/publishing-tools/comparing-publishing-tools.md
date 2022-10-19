@@ -1,19 +1,19 @@
-# Choosing a Publishing Tool
+# Comparing Publishing Tools
 
-<!-- Add Intro -->
+Liferay provides two publishing tools for content creation and site building: Publications and Staging. Publications is recommended over Staging in nearly all use cases because it provides a superior collaboration experience and greater integration with other Liferay features. However, there is one exception. If you need to host your working and production environments on separate servers, you must use Remote Live Staging.
 
 ## Publications
 
-Publications is a change tracking tool for editing sites and content. With it, contributors can create working environments called *publications* where they can work without affecting end users (i.e., *production*). These publications are instance scoped and can group changes across multiple sites and asset libraries. Each instance can have as many publications as needed.
+Publications is a change tracking tool for editing sites and content. With it, contributors can create working environments called *publications* where they can make edits without affecting end users (i.e., *production*). Each publication is instance scoped and can group changes across multiple sites and asset libraries. You can also create as many publications as needed for your projects and teams.
 
-By default, access to a publication is limited to its creator. However, creators can invite other members and assign them roles specific to their publications. Since each publication is independent, contributors can make and publish their changes without affecting one another. This frees them up to work on their own timelines and publish their changes when ready.
+By default, access to a publication is limited to its creator. However, creators can invite other members and assign them roles specific to each publication. Since publications are independent, contributors can make and publish their changes without affecting one another. This frees them up to work on their own timelines and publish their changes when ready.
 
 During the publishing process, Liferay checks for any conflicts with production and prompts the user to review and resolve them. Some conflicts can be automatically resolved, while others require manual resolution. Once published, these changes are automatically populated to other publications if there are no conflicts. Publications also maintains a detailed history of published changes, which you can use to quickly review and revert changes if needed.
 
 Together, these features provide a superior editing and collaboration experience. See [Enabling Publications](./publications/enabling-publications.md) for how to set up Publications for your instance.
 
 ```{important}
-Beginning with Liferay 7.4 U44/GA44, Publications is fully integrated with [Workflow](../../process-automation/workflow.md), so you can enable custom workflows for entities tracked by Publications. If you're on 7.3 and must use Workflow, consider using Staging.
+Beginning with Liferay 7.4 U44/GA44, Publications is fully integrated with [Workflow](../../process-automation/workflow.md), so you can enable custom workflows for entities tracked by Publications.
 ```
 
 ## Staging
@@ -22,7 +22,7 @@ With the Staging tool, contributors work in a shared *staging* environment befor
 
 All changes are site or asset library scoped, and during setup you can determine the pages and application data you want to stage. Only changes to *staged* data is tracked. You can then publish your changes when ready, either individually or all together, while the Live environment handles incoming user traffic.
 
-In general, Publications is recommended over Staging. However, Remote Live Staging is recommended in scenarios that require content to be created in a different environment than where it's consumed. This is because Publications does not currently offer a remote option.
+In general, Publications is recommended over Staging. However, Remote Live Staging is necessary in scenarios that require content to be created in a different environment than where it's consumed. This is because Publications does not currently offer a remote option. In all other use cases, use Publications.
 
 ```{important}
 If you must use Staging, you should enable it at the beginning of development. Enabling Staging immediately begins copying data between your environments, which can cause errors if a lot of data already exists. Staging works best when publishing data frequently in small blocks. So you should publish your changes incrementally to avoid publishing errors.
@@ -38,8 +38,7 @@ If you must use Staging, you should enable it at the beginning of development. E
 | Comment on blocks of changes | &#10004; | &#10008; |
 | Use custom workflows | &#10004; | &#10004; |
 | Preview changes before publishing | &#10004; | &#10004; |
-| View differences between working and production environments | &#10004; | &#10008; |
-| Configure which changes from your working environment are published | &#10008; | &#10004; |
+| Review differences between working and production environments | &#10004; | &#10008; |
 | Include changes from multiple sites or asset libraries in the same working environment | &#10004; | &#10008; |
 | Schedule when to publish changes | &#10004; | &#10004; |
 | Automatically send notifications/alerts for publishing events | &#10004; | &#10004; |
@@ -49,7 +48,7 @@ If you must use Staging, you should enable it at the beginning of development. E
 
 ### Supported Pages and Content Types
 
-Liferay's publishing tools support for the following types of entities.
+Liferay's publishing tools support for the following types of pages and content.
 
 | Feature | Publications | Staging |
 | :--- | :--- | :--- |
@@ -70,3 +69,9 @@ Liferay's publishing tools support for the following types of entities.
 ```{important}
 Content pages do not support Staging's [page variations](./staging/page-versioning.md) feature.
 ```
+
+## Additional Information
+
+* [Publishing Tools](../publishing-tools.md)
+* [Publications](./publications.md)
+* [Staging](./staging.md)

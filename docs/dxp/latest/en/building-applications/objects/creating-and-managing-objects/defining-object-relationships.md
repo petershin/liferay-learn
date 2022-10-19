@@ -64,10 +64,9 @@ Available options include *Prevent*, *Disassociate*, and *Cascade*.
 
 **Cascade**: Entries on the parent side can be freely deleted; deleting a parent entry also deletes any related child entries, provided the user has the requisite permissions for the child object.
 
-<!--TASK: Uncomment when LRDOCS-11003 is ready
 ## Making Relationship Fields Mandatory
 
-{bdg-secondary}`For 7.4 U__+/GA__+`
+{bdg-secondary}`For 7.4 U47+/GA47+`
 
 In some scenarios, you may want to make relationship fields mandatory. For example, if you're creating a Ticket object, you may want to define a mandatory relationship field for selecting an 'assignee'. Or if you want to [restrict access to object data](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) by account, you should make the object's relationship with the Account object mandatory.
 
@@ -84,7 +83,6 @@ Follow these steps to make a relationship field mandatory:
    ![Toggle the Mandatory switch.](./defining-object-relationships/images/05.png)
 
 1. Click *Save*.
--->
 
 ## Removing Relationships
 

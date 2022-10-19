@@ -1,6 +1,6 @@
 # Batch Engine API Basics - Importing Data
 
-Liferay's Batch Engine provides REST APIs to import and export data. Call these services to import data to Liferay.
+Liferay's Headless Batch Engine provides REST APIs to import and export data. Call these services to import data to Liferay.
 
 <!-- TASK: Link to Batch Engine Overview in the introduction once it is ready !-->
 
@@ -21,9 +21,9 @@ Then, follow these steps:
    unzip liferay-g4j2.zip
    ```
 
-1. There are two steps involved in importing data using the Batch Engine's REST APIs. First, you must have the fully qualified class name of the class that your are importing. You can get the class name from the API explorer in your installation at `/o/api` by checking the `x-class-name` field under Schemas. Second, you must wait for the task's `executeStatus` to be `COMPLETED`.
+1. To import data, you must have the fully qualified class name of the entity you are importing. You can get the class name from the API explorer in your installation at `/o/api`. Scroll down to the *Schemas* section and note down the `x-class-name` field of the entity you want to import.
 
-1. Use the cURL script to import Accounts to your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ImportTask_POST_ToInstance.sh` script with the fully qualified class name of Accounts as a parameter.
+1. Use the following cURL script to import Accounts to your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ImportTask_POST_ToInstance.sh` script with the fully qualified class name of *Account* as a parameter.
 
    ```bash
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
@@ -33,22 +33,22 @@ Then, follow these steps:
 
    ```bash
    {
-      "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-      "contentType" : "JSON",
-      "errorMessage" : "",
-      "executeStatus" : "STARTED",
-      "externalReferenceCode" : "103798d4-7454-810e-c067-2a472d214d5c",
-      "failedItems" : [ ],
-      "id" : 1234,
-      "importStrategy" : "ON_ERROR_FAIL",
-      "operation" : "CREATE",
-      "processedItemsCount" : 0,
-      "startTime" : "2022-10-17T11:11:59Z",
-      "totalItemsCount" : 0
+   "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+   "contentType" : "JSON",
+   "errorMessage" : "",
+   "executeStatus" : "STARTED",
+   "externalReferenceCode" : "7d256faa-9b7e-9589-e85c-3a72f68b8f08",
+   "failedItems" : [ ],
+   "id" : 1234,
+   "importStrategy" : "ON_ERROR_FAIL",
+   "operation" : "CREATE",
+   "processedItemsCount" : 0,
+   "startTime" : "2022-10-19T12:18:58Z",
+   "totalItemsCount" : 0
    }
    ```
 
-1. On the command line, execute the `ImportTask_GET_ById.sh` script with the task id as a parameter. Replace `1234` with the ID of your import task.
+1. The current `executeStatus` is `STARTED`. It denotes the submission of a task to the Batch Engine. You must wait until this is `COMPLETED` to verify the data. On the command line, execute the `ImportTask_GET_ById.sh` script with the import task ID as a parameter. Replace `1234` with the ID of your import task.
 
    ```bash
    ./ImportTask_GET_ById.sh 1234
@@ -56,27 +56,27 @@ Then, follow these steps:
 
    ```bash
    {
-      "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-      "contentType" : "JSON",
-      "endTime" : "2022-10-17T11:11:59Z",
-      "errorMessage" : "",
-      "executeStatus" : "COMPLETED",
-      "externalReferenceCode" : "103798d4-7454-810e-c067-2a472d214d5c",
-      "failedItems" : [ ],
-      "id" : 1234,
-      "importStrategy" : "ON_ERROR_FAIL",
-      "operation" : "CREATE",
-      "processedItemsCount" : 2,
-      "startTime" : "2022-10-17T11:11:59Z",
-      "totalItemsCount" : 2
+   "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+   "contentType" : "JSON",
+   "endTime" : "2022-10-19T12:18:59Z",
+   "errorMessage" : "",
+   "executeStatus" : "COMPLETED",
+   "externalReferenceCode" : "7d256faa-9b7e-9589-e85c-3a72f68b8f08",
+   "failedItems" : [ ],
+   "id" : 1234,
+   "importStrategy" : "ON_ERROR_FAIL",
+   "operation" : "CREATE",
+   "processedItemsCount" : 2,
+   "startTime" : "2022-10-19T12:18:58Z",
+   "totalItemsCount" : 2
    }
    ```
 
-   If the `executeStatus` is `COMPLETED`, you can proceed to the next step. If not, execute the command again to ensure the task has finished execution.
+   If the `executeStatus` is `COMPLETED`, you can verify the imported data. If not, execute the command again to ensure the task has finished execution. If the `executeStatus` shows `FAILED`, check the `errorMessage` field to understand what went wrong.
 
 1. Verify the imported data by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and navigating to *Control Panel* &rarr; *Accounts*. See that two new Accounts have been added.
 
-   ![Verify that two new Accounts have been added.](./batch-engine-api-basics/images/02.png)
+   ![Verify that two new Accounts have been added.](./batch-engine-api-basics/images/01.png)
 
 1. You can also call the The REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
@@ -90,7 +90,7 @@ Then, follow these steps:
    java -classpath .:* -DclassName=able -Ddata=baker ImportTask_POST_ToInstance
    ```
 
-   The command should look like this to import `Account` data:
+   To import `Account` data, the command is as follows:
 
    ```bash
    java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"name\": \"Able\", \"type\": \"business\"}, {\"name\": \"Baker\", \"type\": \"guest\"}]" ImportTask_POST_ToInstance
@@ -152,17 +152,17 @@ Note that the project includes the `com.liferay.headless.batch.engine.client.jar
 The `main` method's comment demonstrates running the class.
 ```
 
-The other example Java classes are similar to this one, but call different `ImportTaskResource` and `ExportTaskResource` methods.
+The other example Java classes are similar to this one, but call different `ImportTaskResource` methods.
 
 ```{important}
 See [ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java) for service details.
 ```
 
-Below are examples of calling other Batch Engine REST services using cURL and Java.
+Below are examples of calling other Batch Engine import REST services using cURL and Java.
 
 ## Importing Data to a Site
 
-You can import data to a Site by executing the following cURL or Java command. The example shows importing Blogs to a site. Replace `1234` with your site's ID.
+You can import data to a *Site* by executing the following cURL or Java command. The example shows importing blog posts to a site. [Find your Site’s ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) and replace `1234` with it.
 
 ### ImportTask_POST_ToSite.sh
 
@@ -180,7 +180,7 @@ Code:
 
 ### ImportTask_POST_ToSite.java
 
-Run the `ImportTask_POST_ToSite` class with the following command. [Find your Site’s ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) and replace `1234` with it, `able` with the fully qualified name of the class, and `baker` with the JSON data you want to import.
+Run the `ImportTask_POST_ToSite` class with the following command. Replace `1234` with your site's ID, `able` with the fully qualified name of the class, and `baker` with the JSON data you want to import.
 
 Command:
 
@@ -188,7 +188,7 @@ Command:
 java -classpath .:* -DsiteId=1234 -DclassName=able -Ddata=baker ImportTask_POST_ToSite
 ```
 
-To import `BlogPosting` data, the command should look like this:
+To import `BlogPosting` data, the command is as follows:
 
 ```bash
 java -classpath .:* -DsiteId=1234 -DclassName=com.liferay.headless.delivery.dto.v1_0.BlogPosting -Ddata="[{\"articleBody\": \"Foo\", \"headline\": \"Able\"}, {\"articleBody\": \"Bar\", \"headline\": \"Baker\"}]" ImportTask_POST_ToSite
@@ -206,7 +206,7 @@ The JSON response displays information of the newly created import task. Note do
 
 ## Put the Imported Data
 
-Completely overwrite existing data with the following cURL or Java command. The example shows updating existing Account data. When using another entity, you must update the fully qualified class name parameter and also the data to POST in the cURL script.
+You can use the following cURL or Java command to completely overwrite existing data using the Batch Engine. The example shows updating existing Account data. When using another entity, you must update the fully qualified class name parameter and the data to overwrite in the cURL script.
 
 ### ImportTask_PUT_ById.sh
 
@@ -232,7 +232,7 @@ Command:
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_PUT_ById
 ```
 
-For instance, if you want to overwrite existing `Account` data, replace `1234` and `5678` with the IDs of the existing Accounts. The command should look like this:
+For instance, if you want to overwrite existing `Account` data, replace `1234` and `5678` with the IDs of the existing Accounts. The command is as follows:
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\" :1234, \"name\": \"Bar\", \"type\": \"business\"}, {\"id\": 5678, \"name\": \"Goo\", \"type\": \"guest\"}]" ImportTask_PUT_ById
@@ -246,11 +246,9 @@ Code:
    :lines: 8-19
 ```
 
-The JSON response displays information of the newly created import task. Note down the `id` to keep track of its `executeStatus`.
-
 ## Delete the Imported Data
 
-Delete the imported data with the following cURL and Java commands. The example shows deleting Account data. When using another entity, you must update the fully qualified class name parameter and also the data to POST in the cURL script.
+You can use the following cURL or Java command to delete existing data using the Batch Engine. The example deletes Account data. When using another entity, you must update the fully qualified class name parameter and also the data to delete in the cURL script.
 
 ### ImportTask_DELETE_ById.sh
 
@@ -268,10 +266,18 @@ Code:
 
 ### ImportTask_DELETE_ById.java
 
+Run the `ImportTask_DELETE_ById` class with the following command. Replace `able` with the fully qualified name of the class, and `baker` with the JSON data you want to overwrite with. The data should contain the IDs of the entity you want to delete.
+
 Command:
 
 ```bash
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_DELETE_ById
+```
+
+For instance, if you want to delete `Account` data, replace `1234` and `5678` with the IDs of the existing accounts. The command is as follows:
+
+```bash
+java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\": 1234}, {\"id\": 5678}]" ImportTask_DELETE_ById
 ```
 
 Code:
@@ -284,7 +290,7 @@ Code:
 
 ## Get Contents of the Imported Data
 
-You can retrieve the data you imported with the following cURL and Java commands. Replace `1234` with the import task's ID.
+You can retrieve the data you imported with the following cURL and Java commands. Replace `1234` with the import task's ID. It is then downloaded as a `.zip` file in the current directory.
 
 ### ImportTaskContent_GET_ById.sh
 

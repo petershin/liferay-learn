@@ -29,26 +29,26 @@ Then, follow these steps:
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
    ```
 
-   The JSON response shows the creation of a new Import task. Note down the `id` of the task:
+   The JSON response shows the creation of a new import task. Note down the `id` of the task:
 
    ```bash
    {
    "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
    "contentType" : "JSON",
    "errorMessage" : "",
-   "executeStatus" : "STARTED",
-   "externalReferenceCode" : "7d256faa-9b7e-9589-e85c-3a72f68b8f08",
+   "executeStatus" : "INITIAL",
+   "externalReferenceCode" : "4a6ab4b0-12cc-e8e3-fc1a-4726ebc09df2",
    "failedItems" : [ ],
    "id" : 1234,
    "importStrategy" : "ON_ERROR_FAIL",
    "operation" : "CREATE",
    "processedItemsCount" : 0,
-   "startTime" : "2022-10-19T12:18:58Z",
+   "startTime" : "2022-10-19T14:19:43Z",
    "totalItemsCount" : 0
    }
    ```
 
-1. The current `executeStatus` is `STARTED`. It denotes the submission of a task to the Batch Engine. You must wait until this is `COMPLETED` to verify the data. On the command line, execute the `ImportTask_GET_ById.sh` script with the import task ID as a parameter. Replace `1234` with the ID of your import task.
+1. The current `executeStatus` is `INITIAL`. It denotes the submission of a task to the Batch Engine. You must wait until this is `COMPLETED` to verify the data. On the command line, execute the `ImportTask_GET_ById.sh` script and replace `1234` with the ID of your import task.
 
    ```bash
    ./ImportTask_GET_ById.sh 1234
@@ -159,6 +159,42 @@ See [ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERA
 ```
 
 Below are examples of calling other Batch Engine import REST services using cURL and Java.
+
+## Get the ImportTask Status
+
+You can get the status of an import task by executing the following cURL or Java command. Replace `1234` with the ID of your import task.
+
+### ImportTask_GET_ById.sh
+
+Command:
+
+```bash
+./ImportTask_GET_ById.sh 1234
+```
+
+Code:
+
+```{literalinclude} ./batch-engine-api-basics/resources/liferay-g4j2.zip/curl/ImportTask_GET_ById.sh
+   :language: bash
+```
+
+### ImportTask_GET_ById.java
+
+Run the `ImportTask_GET_ById` class with the following command. Replace `1234` with the ID of your import task.
+
+Command:
+
+```bash
+java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
+```
+
+Code:
+
+```{literalinclude} ./batch-engine-api-basics/resources/liferay-g4j2.zip/java/ImportTask_GET_ById.java
+   :dedent: 1
+   :language: java
+   :lines: 8-18
+```
 
 ## Importing Data to a Site
 

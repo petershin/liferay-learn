@@ -359,3 +359,7 @@ Code:
 ```
 
 The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists all of the Headless Batch Engine services and schemas and has an interface to try out each service.
+
+## Additional Information
+
+* [Batch Engine API Basics - Exporting Data](./batch-engine-api-basics-exporting-data.md)

@@ -10,16 +10,16 @@ toc:
 client-extensions/browser-based-client-extensions.md
 ```
 
-Client extensions are a flexible and specially tailored means of extending or adding functionality to Liferay. You can deploy your client extensions to any Liferay environment, whether you are hosting it yourself or on Liferay Experience Cloud, without having to make any changes to your code. They are also the primary way of customizing Liferay with Liferay Experience Cloud, together with built-in configurations like [Liferay objects](./objects.md) (that don't require any code).
+Client extensions are a flexible and specially tailored means of extending or adding functionality to Liferay, without the use of OSGi modules. You can deploy your client extensions to any Liferay environment, whether you are hosting it yourself or on Liferay Experience Cloud, without having to make any changes to them. They are also the primary way of customizing Liferay with Liferay Experience Cloud, together with built-in configurations like [Liferay objects](./objects.md) (that don't require any code).
 
 While other types of Liferay extensions, such as [OSGi modules](../liferay-internals/fundamentals/module-projects.md) or [themes](../site-building/site-appearance/themes/introduction-to-themes.md), are powerful tools for customizing Liferay itself, client extensions avoid directly using or customizing Liferay code. This makes client extensions more robust and simpler to apply to environments after an upgrade, since they do not depend on any specific version of the code.
 
 With client extensions, you can:
 
 * Apply [custom JavaScript or CSS](#browser-based-client-extensions) to your pages without needing to rely on any specific code in Liferay
-* Embed applications hosted remotely into a [custom element](link to custom element tutorial) on a page in Liferay
+* Embed applications hosted remotely into a [custom element](./client-extensions/browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a page in Liferay
 * Simplify your process to programmatically apply the same configurations to multiple environments, by [converting them into client extensions](#configuration-as-code)
-* Call [custom services](#custom-service-client-extensions) or [functions](#lambda-client-extensions) running outside of Liferay and using any programming languages or technologies of your choice for [ any tasks ]
+* Call [custom services](#custom-service-client-extensions) or [functions](#lambda-client-extensions) running outside of Liferay and using any programming languages or technologies of your choice
 
 <!-- Add some sort of diagram maybe, to show the critical distinction between client extensions and other forms of extensions? I'm not sure the existing diagrams we have currently really demonstrate this (but also not sure if there is a clearer way to do so) -->
 
@@ -45,6 +45,12 @@ Browser-based client extensions are hosted on a CDN when they are deployed. Exam
 * **CSS**: CSS client extensions can apply globally or within a specific theme.
 
 * **Favicon**: Client extensions can deploy a favicon for a specific theme.
+
+* **Custom Element**: Custom element client extensions can integrate a remote application into a page.
+
+* **IFrame**: IFrame client extensions work similarly to custom elements, but they allow for limited interaction with a remote application using a separate `<iframe>` HTML element.
+
+See [Browser-Based Client Extensions](./client-extensions/browser-based-client-extensions.md) for more information.
 
 ### Configuration as Code
 
@@ -112,5 +118,5 @@ The only difference is how you deploy your extensions once they are ready, which
 
 ## Additional Information
 
-* [Deploying Your First Client Extension](link)
+* [Creating Your First Client Extension](./client-extensions/browser-based-client-extensions/developer-guide/creating-your-first-global-javascript-client-extension.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

@@ -40,7 +40,7 @@ The Blade CLI allows you to easily generate the skeleton for many types of clien
 
 1. Use the arrow keys to highlight `globalCSS` from the list of client extension types and press Enter.
 
-    ![Select globalCSS from the provided list of client extension types.](screenshot link)
+    ![Select globalCSS from the provided list of client extension types.](./creating-your-first-global-css-client-extension/images/01.png)
 
 1. Enter the desired name for your client extension at the prompt.
 
@@ -102,11 +102,11 @@ You must configure a page in your Liferay instance to specifically use your depl
 
 1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)), and click the configuration icon ![Configuration icon](../../../../images/icon-cog3.png) at the top of the menu.
 
-    ![Click the cog wheel icon in the Page Design Options menu to access configurations for this type of client extension.](link to screenshot)
+    ![Click the cog wheel icon in the Page Design Options menu to access configurations for this type of client extension.](./creating-your-first-global-css-client-extension/images/02.png)
 
 1. In the *CSS Client Extensions* section toward the bottom of the page, click *Add CSS Client Extensions*.
 
-    ![Add the CSS client extension from this menu. It will appear in a list of any deployed CSS client extensions.](link to screenshot)
+    ![Add the CSS client extension from this menu. It will appear in a list of any deployed CSS client extensions.](./creating-your-first-global-css-client-extension/images/03.png)
 
 1. Select your CSS client extension from the list in the popup modal, and click *Add*.
 

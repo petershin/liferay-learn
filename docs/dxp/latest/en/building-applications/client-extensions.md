@@ -14,6 +14,8 @@ Client extensions are a flexible and specially tailored means of extending or ad
 
 While other types of Liferay extensions, such as [OSGi modules](../liferay-internals/fundamentals/module-projects.md) or [themes](../site-building/site-appearance/themes/introduction-to-themes.md), are powerful tools for customizing Liferay itself, client extensions avoid directly using or customizing Liferay code. This makes client extensions more robust and simpler to apply to environments after an upgrade, since they do not depend on any specific version of the code. You can also develop using whatever programming languages or technologies are most familiar to you, because your client extensions can run outside of Liferay and integrate with Liferay objects using no extra code required to connect them.
 
+![Client extensions provide the key customization capabilities needed to meet specific business requirements, without needing to modify Liferay itself.](./client-extensions/images/01.png)
+
 With client extensions, you can:
 
 * Apply [custom JavaScript or CSS](#browser-based-client-extensions) to your pages without needing to rely on any specific code in Liferay
@@ -104,7 +106,7 @@ The only difference is how you deploy your extensions once they are ready, which
 
 * **Liferay Experience Cloud (Self-Managed)**: If you manage your own Liferay Cloud environments, then deploy your client extensions along with any other customizations in a CI Build, following the [Liferay Cloud development workflow](https://learn.liferay.com/dxp-cloud/latest/en/build-and-deploy/deploying-changes-via-the-dxp-cloud-console.html).
 
-* **Liferay DXP (Self-Hosted)**: If you use your own hosting solution, then you can deploy your client extensions using similar tools for deploying other kinds of customizations, such as `gradle deploy`.
+* **Liferay DXP (Self-Hosted)**: If you use your own hosting solution, then you can deploy your client extensions using similar tools for deploying other kinds of customizations.
 
 ## Additional Information
 

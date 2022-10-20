@@ -28,6 +28,10 @@ Global JavaScript client extensions are some of the most straightforward and eas
 
 See [Creating Your First Global Javascript Client Extension](./browser-based-client-extensions/developer-guide/creating-your-first-global-javascript-client-extension.md) to get started working with this type.
 
+## Theme JavaScript Client Extensions
+
+Similarly to [Global JavaScript client extensions](#global-javascript-client-extensions), you can also 
+
 ## Global CSS Client Extensions
 
 Global CSS client extensions are a simple way to override CSS styling on your pages. When you deploy a global CSS client extension to your Liferay instance and configure a page to use it, the global CSS contained in it overrides the styling present on the page, including theme and style book settings. This allows you to programmatically override specific styles on a page for special needs that may be cumbersome to modify your theme to accommodate.
@@ -38,7 +42,7 @@ See [Creating Your First Global CSS Client Extension](./browser-based-client-ext
 
 You can also use client extensions to override the favicon for your pages in Liferay. When you deploy a theme favicon client extension, the icon file included with it becomes available for any page in Liferay. You can access it in a separate *Client Extensions* tab when you configure the favicon for a page from the Page Design Options menu.
 
-![When you configure the favicon for a page, access the favicon from your client extension from a special Client Extensions tab.](screenshot link)
+![When you configure the favicon for a page, access the favicon from your client extension from a special Client Extensions tab.](./browser-based-client-extensions/01.png)
 
 ## Custom Element Client Extensions
 

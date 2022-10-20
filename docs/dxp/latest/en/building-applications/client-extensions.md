@@ -12,16 +12,14 @@ client-extensions/browser-based-client-extensions.md
 
 Client extensions are a flexible and specially tailored means of extending or adding functionality to Liferay, without the use of OSGi modules. You can deploy your client extensions to any Liferay environment, whether you are hosting it yourself or on Liferay Experience Cloud, without having to make any changes to them. They are also the primary way of customizing Liferay with Liferay Experience Cloud, together with built-in configurations like [Liferay objects](./objects.md) (that don't require any code).
 
-While other types of Liferay extensions, such as [OSGi modules](../liferay-internals/fundamentals/module-projects.md) or [themes](../site-building/site-appearance/themes/introduction-to-themes.md), are powerful tools for customizing Liferay itself, client extensions avoid directly using or customizing Liferay code. This makes client extensions more robust and simpler to apply to environments after an upgrade, since they do not depend on any specific version of the code.
+While other types of Liferay extensions, such as [OSGi modules](../liferay-internals/fundamentals/module-projects.md) or [themes](../site-building/site-appearance/themes/introduction-to-themes.md), are powerful tools for customizing Liferay itself, client extensions avoid directly using or customizing Liferay code. This makes client extensions more robust and simpler to apply to environments after an upgrade, since they do not depend on any specific version of the code. You can also develop using whatever programming languages or technologies are most familiar to you, because your client extensions can run outside of Liferay and integrate with Liferay objects using no extra code required to connect them.
 
 With client extensions, you can:
 
 * Apply [custom JavaScript or CSS](#browser-based-client-extensions) to your pages without needing to rely on any specific code in Liferay
 * Embed applications hosted remotely into a [custom element](./client-extensions/browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a page in Liferay
-* Simplify your process to programmatically apply the same configurations to multiple environments, by [converting them into client extensions](#configuration-as-code)
-* Call [custom services](#custom-service-client-extensions) or [functions](#lambda-client-extensions) running outside of Liferay and using any programming languages or technologies of your choice
-
-<!-- Add some sort of diagram maybe, to show the critical distinction between client extensions and other forms of extensions? I'm not sure the existing diagrams we have currently really demonstrate this (but also not sure if there is a clearer way to do so) -->
+* Simplify your process to programmatically apply the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-as-code)
+* Call [custom services](#custom-service-client-extensions) or [functions](#lambda-client-extensions) running outside of Liferay, such as an external feed or even an custom authentication server, using the programming languages or technologies of your choice
 
 ## Types of Client Extensions
 
@@ -55,52 +53,46 @@ See [Browser-Based Client Extensions](./client-extensions/browser-based-client-e
 ### Configuration as Code
 
 ```{warning}
-Configuration client extensions are currently a **beta feature** in Liferay 7.4. They are available to use, but the features available may be temporarily limited.
+Configuration client extensions are currently a **beta feature** in Liferay 7.4. The available features may be temporarily limited.
 ```
 
-Configurations in Liferay can also be used as a type of client extension. In Liferay 7.4, configurations (as well as custom data models) can be easily exported and imported into other environments as client extensions. This allows you to simplify the process of configuring multiple environments at once, implementing them as a client extension and deploying to any applicable environemnts in a simplified workflow, without needing a script or custom code to push the changes.
-
-<!-- Why are we also lumping in data models and APIs under "configurations" in this type? Are they also actually types of configurations? -->
+Configurations in Liferay can also be used as a type of client extension. In Liferay 7.4, configurations (as well as custom objects and data models) can be easily exported and imported into other environments as client extensions. This allows you to simplify the process of configuring multiple environments at once, implementing them as a client extension and deploying to any applicable environments in a simplified workflow, without needing a script or custom code to push the changes.
 
 ### Scheduler Client Extensions
 
 ```{warning}
-Scheduler client extensions are currently a **beta feature** in Liferay 7.4. They are available to use, but the features available may be temporarily limited.
+Scheduler client extensions are currently a **beta feature** in Liferay 7.4. The available features may be temporarily limited.
 ```
 
 Scheduler client extensions allow you to configure jobs to execute on scheduled intervals, that you can configure with flexible Cron expressions. You can deploy custom code with it to run on these intervals, or to synchronize data with Liferay using [data connector client extensions](#data-connector-client-extensions) or external APIs, such as [Salesforce](https://www.salesforce.com).
 
-<!-- If you are using a scheduler client extension (not necessarily with a data connector), then what is the difference between using this and a lambda client extension? Is the code execution different somehow? Does the scheduler type have more flexibility than objects for the schedules? -->
-
 ### Data Connector Client Extensions
 
 ```{warning}
-Data connector client extensions are currently a **beta feature** in Liferay 7.4. They are available to use, but the features available may be temporarily limited.
+Data connector client extensions are currently a **beta feature** in Liferay 7.4. The available features may be temporarily limited.
 ```
 
 Use data connector client extensions to import data into Liferay. These are in the forms of [Liferay objects](./objects.md). These are generally used in conjunction with [scheduler client extensions](#scheduler-client-extensions) to synchronize data on regular, scheduled intervals.
 
-<!-- Is this different from deploying object configurations, i.e. "configurations as code"? Not much information available on this type. -->
-
 ### Lambda Client Extensions
 
 ```{warning}
-Lambda client extensions are currently a **beta feature** in Liferay 7.4. They are available to use, but the features available may be temporarily limited.
+Lambda client extensions are currently a **beta feature** in Liferay 7.4. The available features may be temporarily limited.
 ```
 
 You can use lambda client extensions for special needs that require executing custom code. These client extensions execute custom code outside of Liferay. This allows you to implement custom solutions for specialized functions without needing to implement an OSGi module or model listener.
 
 Liferay triggers the execution of this code via [objects](./objects.md); with a lambda client extension deployed, you can create objects that call on your client extension's function as an available action, and customize the triggers as needed. In Liferay Experience Cloud, although the code is executed outside of Liferay, the code is executed alongside Liferay in the same environment, eliminating the need for your own server for it.
 
-<!-- How will this work for local or self-hosted environments? -->
-
 ### Custom Service Client Extensions
 
-For even more complex use cases, you can use a client extension that works as its own service in Liferay Experience Cloud. You supply your own code, and then deploy it to run as a service that functions within the Cloud's network, with its own virtual server allocated to it. Being hosted in the same Cloud network allows your own service access to your other services while also benefiting from the Cloud's built-in security features.
+```{warning}
+Custom service client extensions are currently a **beta feature** in Liferay 7.4. The available features may be temporarily limited.
+```
+
+For more complex use cases, you can use a client extension that works as its own service in Liferay Experience Cloud. You supply your own code, and then deploy it to run as a service that functions within the Cloud's network, with its own virtual server allocated to it. Being hosted in the same Cloud network allows your own service access to your other services while also benefiting from the Cloud's built-in security features.
 
 Deploying custom services gives you much more power to implement customizations that benefit from behaving as a separate service. For example, you could implement your own authentication server, or a custom application written in a completely different language that interfaces with Liferay using its [headless APIs](../headless-delivery/using-liferay-as-a-headless-platform.md). Custom services are also useful for integrating separate applications that involve interfacing with users.
-
-<!-- Is there any functional difference between a "custom service client extension" and what customers are already able to do with custom services on LXC SM? Is there a meaningful distinction to client extensions being termed "microservices"? To that end, is it safe to directly link to our existing documentation on custom services now if so, or is there any more work to be done on its presentation as a client extension? -->
 
 ## Deploying Client Extensions
 
@@ -114,9 +106,8 @@ The only difference is how you deploy your extensions once they are ready, which
 
 * **Liferay DXP (Self-Hosted)**: If you use your own hosting solution, then you can deploy your client extensions using similar tools for deploying other kinds of customizations, such as `gradle deploy`.
 
-<!-- TODO: link to an article going over the general development workflow/experience for more detail -->
-
 ## Additional Information
 
 * [Creating Your First Client Extension](./client-extensions/browser-based-client-extensions/developer-guide/creating-your-first-global-javascript-client-extension.md)
+* [Browser-Based Client Extensions](./client-extensions/browser-based-client-extensions.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

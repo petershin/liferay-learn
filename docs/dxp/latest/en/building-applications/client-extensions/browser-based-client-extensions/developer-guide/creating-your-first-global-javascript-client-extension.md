@@ -74,7 +74,11 @@ Once you are satisfied with your changes to the JS code, deploy your client exte
 blade gw deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-<!-- TODO: add alternative other instructions for deploying to LXC, etc. -->
+This builds and deploys your client extension to your Liferay installation's `deploy/` folder within your Docker container. 
+
+```{note}
+If you want to deploy your client extension to a Liferay Experience Cloud environment, then use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#) instead, and run the [`lcp deploy`](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#deploying-to-your-dxp-cloud-environment) command.
+```
 
 Confirm the deployment in your Liferay instance's console:
 
@@ -119,5 +123,3 @@ If the alert window does not appear at first, try doing a hard refresh of the pa
 Congratulations! You have successfully created and used your first global JS client extension in Liferay. Next, try deploying other client extension types.
 
 * [Creating Your First Global CSS Client Extension](./creating-your-first-global-css-client-extension.md)
-
-<!-- TODO: point to other documentation for more advanced tutorials, or other client extension types. -->

@@ -18,6 +18,10 @@ The Advanced Configuration section contains additional options:
 
 **Category Parameter Name:** Change the parameter name in the URL for the Facet. The default is *category*. 
 
+```{important}
+To achieve AND style selection between facet widgets, you must configure a different Category Parameter Name for each widget. By default all Category Facet widgets have this field set to _category_. The [example below](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) demonstrates a use case. 
+```
+
 **Max Terms:** Set the maximum number of facet terms to display, regardless of how many matching terms are found for the facet.
 
 **Frequency Threshold:** Set the minimum frequency required for terms to appear in the facet term list. For example, if the facet's frequency threshold is set to 3, a term with two matching results doesn't appear in the term result list.
@@ -41,16 +45,13 @@ Display categories under their vocabulary by selecting the Vocabulary Layout in 
 Select which vocabularies and categories to display in the facet. To enable this capability, switch the configuration in System Settings &rarr; Search &rarr; Category Facet Field from the default field, `assetCategoryIds`, to the `assetVocabularyCategoryIds` field. This setting specifies the field that's used to create the aggregations in the Category Facet, and setting `assetVocabularyCategoryIds` activates the vocabulary settings within the Category Facet widget's configuration screen. 
 
 ```{important}
-If you're upgrading from an earlier Liferay version or update and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
+If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 47 and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
 ```
 
 ![Select the vocabulary.](./category-facet/images/06.png)
 
-With this behavior you can provide a powerful search facet experience: users select multiple categories (facet terms) within one vocabulary in one widget to expand the search results, but select categories from another vocabulary in a second widget to narrow the results. You might think of this in terms of boolean operators: use OR selection behavior inside a facet, but AND selection between facets.
+With this behavior you can provide a powerful search facet experience: see the [example below](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) for one use case.
 
-```{important}
-To achieve the AND style selection between facets, you must configure a different Category Parameter Name for each widget. By default all Category Facet widgets have this field set to _category_.
-```
 
 ## Example: Creating a Hierarchic Filtering Experience in the Category Facet Using Vocabularies
 

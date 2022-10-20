@@ -88,3 +88,7 @@ Your Liferay DXP installation must meet the following fix pack minimum requireme
 1. Follow the steps for [adding a Liferay DXP data source](../getting-started/connecting-data-sources/connecting-liferay-dxp-using-oauth.md).
 
 1. If the error persists, make sure JSON web services are enabled on your DXP instance. They're enabled by default. If you disabled them using a [portal property](https://docs.liferay.com/dxp/portal/7.1-latest/propertiesdoc/portal.properties.html#JSON) setting json.web.service.enabled=false (e.g., set in a [portal-ext.properties file](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)), delete the setting or set the property value to true.
+
+## Logged In Users Showing Up Anonymous
+
+When [Syncing Contacts](../getting-started/syncing-sites-and-contacts.md#syncing-contacts), Analytics Cloud is dependent on user records existing within Liferay DXP. Therefore if you are using [SSO](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/securing-liferay/configuring-sso.html) or [LDAP](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html), make sure to import or map all your users to Liferay DXP before syncing contacts with Analytics Cloud.

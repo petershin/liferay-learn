@@ -98,9 +98,9 @@ You must configure a page in your Liferay instance to specifically use your depl
 
 1. Log in to your running Liferay instance.
 
-1. On any page, click the Edit icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
+1. On any page with at least one button on it, click the Edit icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)), and click the configuration icon ![Configuration icon](../../../../images/icon-cog3.png) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)), and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
     ![Click the cog wheel icon in the Page Design Options menu to access configurations for this type of client extension.](./creating-your-first-global-css-client-extension/images/02.png)
 
@@ -112,7 +112,7 @@ You must configure a page in your Liferay instance to specifically use your depl
 
 1. Click Save.
 
-Now your client extension is configured and you can see it in action. Navigate back to the page you configured and look at the background color for any buttons on the page. The background color on the buttons now appears as the color you configured it to. (You may need to add a button to the page first if it does not already have any buttons on it.)
+Now your client extension is configured and you can see it in action. Navigate back to editing the page you configured and look at the background color for any buttons on the page. The background color on the buttons now appears as the color you configured it to. If you want to also see your CSS applied on the page outside of Edit mode, you must publish the page.
 
 ![If you changed the background color for buttons in your client extension's global.css file, then any buttons on the page now appear in that color.](./creating-your-first-global-css-client-extension/images/04.png)
 

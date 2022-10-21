@@ -96,7 +96,7 @@ You must configure a page in your Liferay instance to specifically use your depl
 
 1. On any page, click the Edit icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)), and click the configuration icon ![Configuration icon](../../../../images/icon-cog3.png) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)), and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
     ![Click the cog wheel icon in the Page Design Options menu to access configurations for this type of client extension.](./creating-your-first-global-javascript-client-extension/images/02.png)
 
@@ -104,11 +104,13 @@ You must configure a page in your Liferay instance to specifically use your depl
 
 1. Click the *Add JavaScript Client Extensions* button to add the new client extension (to the page head or page bottom).
 
-    ![Add the JavaScript client extension in this menu. It will appear in a list depending on whether you added it to the page head or page bottom.](/creating-your-first-global-javascript-client-extension/images/03.png)
+    ![Add the JavaScript client extension in this menu. It will appear in a list depending on whether you added it to the page head or page bottom.](./creating-your-first-global-javascript-client-extension/images/03.png)
 
 1. Click Save.
 
-Now your client extension is configured and you can see it in action. Navigate back to the page you configured, and see the alert window pop up with a message from the client extension.
+1. Optionally, publish the page for your JavaScript to execute on the page outside of Edit mode.
+
+Now your client extension is configured and you can see it in action. Navigate back to the page you configured, and see the alert window pop up with a message from the client extension. If you want your JavaScript to also run when you view the page outside of Edit mode, you must publish the page.
 
 ![This example client extension creates an alert message popup when the page is loaded.](./creating-your-first-global-javascript-client-extension/images/04.png)
 

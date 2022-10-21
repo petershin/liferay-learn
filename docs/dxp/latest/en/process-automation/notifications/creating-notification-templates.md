@@ -16,11 +16,11 @@ Follow these steps to create a notification template for Object actions:
 
 1. Click the *Add* button (![Add Button](../../images/icon-add.png)).
 
-   When designing a template, you can use Object field references to dynamically populate notification emails with entry data. To do this, go to the *Definition of Terms* section and use the *Entity* dropdown menu to select the desired Object definition. Then copy and paste the field references into the desired template fields.
+   When designing a template, you can use Object field references to populate notification emails dynamically with entry data. To do this, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select the desired Object definition. Then copy and paste the field references into the desired template fields.
 
    ![Search and add references to supported entity fields.](./creating-notification-templates/images/01.png)
 
-   Keep in mind you can only reference fields for entries directly involved in the Object's notification action.
+   Remember you can only reference fields for entries directly involved in the Object's notification action.
 
 1. In the Basic Info section, enter a *name* and *description*.
 

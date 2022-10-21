@@ -8,28 +8,28 @@ In addition to these tables and fields, there are other user associated data tha
 
 ## Custom Fields
 
-[Custom Fields](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-custom-fields-to-users.html) can be used to extend many of Liferay's assets and resources, including users or organizations. The following custom fields are synced:
+[Custom Fields](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-custom-fields-to-users.html) can extend many of Liferay's assets and resources, including users or organizations. The following custom fields are synced:
 
 | Attribute | Description |
 | :--- | :--- |
-| columnId | Numeric identifier of the custom field |
-| className | Reference to which entity (i.e. User, Organization) the custom field belongs to |
-| dataType | Type of the data value the custom field refers to |
-| displayType | Type of data value the custom field presents |
-| name | Name of the custom field |
+| `columnId` | Numeric identifier of the custom field |
+| `className` | Reference to which entity (i.e. User, Organization) the custom field belongs to |
+| `dataType` | Type of the data value the custom field refers to |
+| `displayType` | Type of data value the custom field presents |
+| `name` | Name of the custom field |
 
 ## Organizations
 
-Users can belong to different [Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/understanding-organizations.html) in Liferay. Organizations can have its own sites as well as its own roles and permissions. Organizations can have sub-organizations under a parent organization. The following organization fields are synced:
+Users can belong to different [Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/understanding-organizations.html) in Liferay. Organizations can have their own sites as well as their own roles and permissions. Organizations can have sub-organizations under a parent organization. The following organization fields are synced:
 
 | Attribute | Description |
 | :--- | :--- |
-| organizationId | Numeric identifier of the Organization |
-| organizationType | Type of the Organization |
-| name | Name of the Organization |
-| parentOrganizationId | Numeric identifier of the parent Organization as Organization can be hierarchical |
-| parentOrganizationName | Name of the parent Organization |
-| treePath | The hierarchical path to the Organization |
+| `organizationId` | Numeric identifier of the Organization |
+| `organizationType` | Type of the Organization |
+| `name` | Name of the Organization |
+| `parentOrganizationId` | Numeric identifier of the parent Organization as Organization can be hierarchical |
+| `parentOrganizationName` | Name of the parent Organization |
+| `treePath` | The hierarchical path to the Organization |
 
 ## Roles
 
@@ -37,8 +37,8 @@ Users can be given different [Roles](https://learn.liferay.com/dxp/latest/en/use
 
 | Attribute | Description |
 | :--- | :--- |
-| roleId -| Numeric identifier of the Role |
-| Name | Name of the Role |
+| `roleId` -| Numeric identifier of the Role |
+| `Name` | Name of the Role |
 
 ## Teams
 
@@ -46,23 +46,23 @@ Users can be given different [Roles](https://learn.liferay.com/dxp/latest/en/use
 
 | Attribute | Description |
 | :--- | :--- |
-| teamId | Numeric identifier of the Team |
-| Name | Name of the Team |
+| `teamId` | Numeric identifier of the Team |
+| `Name` | Name of the Team |
 
 ## User Groups
 
-[User Groups](https://learn.liferay.com/dxp/latest/en/users-and-permissions/user-groups/creating-and-managing-user-groups.html) are users, who may be from different organizations, who are grouped together for a specific purpose. The following user group fields are synced:
+[User Groups](https://learn.liferay.com/dxp/latest/en/users-and-permissions/user-groups/creating-and-managing-user-groups.html) are users who may be from different organizations, who are grouped together for a specific purpose. The following user group fields are synced:
 
 | Attribute | Description |
 | :--- | :--- |
-| userGroupId | Numeric identifier of the User Group |
-| Name |  Name of the User Group |
+| `userGroupId` | Numeric identifier of the User Group |
+| `Name` |  Name of the User Group |
 
 ## User Group Sites
 
-[User Group Sites](https://learn.liferay.com/dxp/latest/en/users-and-permissions/user-groups.html) are specific sites in which user groups are granted membership to be a part of. The following user group sites fields are synced:
+[User Group Sites](https://learn.liferay.com/dxp/latest/en/users-and-permissions/user-groups.html) are pages added to group members' personal sites. The following user group sites fields are synced:
 
 | Attribute | Description |
 | :--- | :--- |
-| GroupId | Numeric identifier of the Site |
-| Name | Name of the DXP Site |
+| `GroupId` | Numeric identifier of the Site |
+| `Name` | Name of the DXP Site |

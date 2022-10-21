@@ -22,7 +22,7 @@ Follow these steps to set any page's Style Book:
 
 1. Click to open the *Style Book* tab.
 
-    ![Open the Style Book tab to choose the desired Style Book from the list.](./using-a-style-book-to-standardize-site-appearance/images/01.png)
+    ![Open the Style Book tab to choose the desired Style Book from the list.](./using-a-style-book-to-standardize-site-appearance/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. Select the desired Style Book from the list.
 

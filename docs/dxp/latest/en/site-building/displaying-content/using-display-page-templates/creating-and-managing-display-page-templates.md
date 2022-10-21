@@ -30,7 +30,7 @@ Follow these steps to create a display page template:
 
 1. Design the template using the same interface and page elements as [content pages](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md).
 
-   ![Build your template using fragments and widgets.](./creating-and-managing-display-page-templates/images/04.png)
+   ![Build your template using fragments and widgets.](./creating-and-managing-display-page-templates/images/04.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. Once you've added page elements, you can [map](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) them to content structure fields (e.g., title, description) by double-clicking on an editable field. Mapped fields are outlined in purple.
 
@@ -38,7 +38,7 @@ Follow these steps to create a display page template:
    You can use mapped fields when configuring SEO and Open Graph settings for a display page template. See [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md) for more information.
    ```
 
-   ![Map page elements to structure fields.](./creating-and-managing-display-page-templates/images/05.png)
+   ![Map page elements to structure fields.](./creating-and-managing-display-page-templates/images/05.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. Before publishing, you can preview your editable fields mappings with existing content using the [preview function](#preview-the-display-page-template-content-mappings) (available 7.4+).
 
@@ -54,11 +54,11 @@ While editing, Liferay provides two ways to preview display page templates with 
 
 From the Application Menu, you can click the *Preview With* drop-down menu and choose a content item. If no item appears, click *Select Other Item* and browse for the desired content. This dynamically populates the template with content data according to your field mapping.
 
-![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/07.png)
+![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/07.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 Alternatively, from the display page template editor, click the *Preview* (![Preview](../../../images/icon-preview.png)) button and choose the content you want to preview.
 
-![Click the Preview button to preview your display page template mappings.](./creating-and-managing-display-page-templates/images/08.png)
+![Click the Preview button to preview your display page template mappings.](./creating-and-managing-display-page-templates/images/08.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ## Viewing Display Page Template Usage
 

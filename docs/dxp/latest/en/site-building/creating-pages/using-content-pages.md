@@ -24,7 +24,7 @@ As with other page types, you can use [widgets](./using-content-pages/using-widg
 
 When editing Content Pages, changes are made through a *Site Builder* and are saved as a draft. You can review, undo, and redo changes you've made during your current editing session, without affecting the live version. When ready, publish your changes immediately or enable a custom [Workflow](../../process-automation/workflow/introduction-to-workflow.md) to direct the review and publishing process. You can also add [comments](./using-content-pages/using-page-comments.md) on Page elements to collaborate with team members.
 
-![When editing Content Pages, all changes are made to Content Pages  through a Site Builder.](./using-content-pages/images/01.png)
+![When editing Content Pages, all changes are made to Content Pages  through a Site Builder.](./using-content-pages/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 With Content Page Fragments and widgets, you can display web content, documents, and more. You can also view, edit, and manage your content, including content mapped to page fields. See [Managing Content in Content Pages](./using-content-pages/managing-content-in-content-pages.md) for more information.
 

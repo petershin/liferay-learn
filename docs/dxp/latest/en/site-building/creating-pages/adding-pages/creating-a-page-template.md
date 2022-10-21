@@ -44,7 +44,7 @@ Follow these steps to make a Page Template from a page:
 
 1. While editing the page, click the *Create Page Template* button near the top of the screen.
 
-    ![Click Create Page Template to turn the page you are editing into a new Page Template.](./creating-a-page-template/images/03.png)
+    ![Click Create Page Template to turn the page you are editing into a new Page Template.](./creating-a-page-template/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. In the modal that appears on the screen, enter a name for the new Page Template.
 

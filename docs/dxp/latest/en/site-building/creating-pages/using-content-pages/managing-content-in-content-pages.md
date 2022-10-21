@@ -2,7 +2,7 @@
 <!-- Alt: Managing Content in Pages and Templates... If renamed, relocate to Displaying Content.-->
 When editing or creating Content Pages and Templates, you can quickly view and edit any documents, Web Content articles, Collections, or inline text added to them. To do this, open the *Browser* panel (![Browser](../../../images/icon-browser.png)) in the editing sidebar and click the *Page Content* tab.
 
-![Open the Browser panel and click the Page Content tab.](./managing-content-in-content-pages/images/01.png)
+![Open the Browser panel and click the Page Content tab.](./managing-content-in-content-pages/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 The Page Content tab lists all content added using Fragments and supported widgets (i.e., Asset Publisher and Web Content Display). This includes content added to Fragments directly and those mapped to Fragment elements.
 

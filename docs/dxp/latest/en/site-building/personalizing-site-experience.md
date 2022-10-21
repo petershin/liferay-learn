@@ -46,7 +46,7 @@ Once you've [created User Segments](./personalizing-site-experience/segmentation
 
 Content Page Personalization dynamically changes the page layout and content based on who is viewing the page. You can create *Experiences* for any [Content Page](./creating-pages/using-content-pages.md) which provide different text, images, widgets, and even different layouts based on the User Segment criteria of the User viewing the page. See [Content Page Personalization](./personalizing-site-experience/experience-personalization/content-page-personalization.md) for more information.
 
-![You can create unique experiences for different segments of Users.](./personalizing-site-experience/images/02.png)
+![You can create unique experiences for different segments of Users.](./personalizing-site-experience/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ### Collections
 

@@ -5,13 +5,13 @@ Using the Content Page Editor, you can [add](./adding-elements-to-content-pages.
 - [Editing Toolbar](#editing-toolbar)
 - [Editing Sidebar](#editing-sidebar)
 
-![Click Edit to access a Content Page's editing toolbar and sidebar.](./content-page-editor-ui-reference/images/01.png)
+![Click Edit to access a Content Page's editing toolbar and sidebar.](./content-page-editor-ui-reference/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ## Editing Toolbar
 
 The Content Page toolbar contains tools for creating unique user experiences, setting localized translations, switching between edit modes, and more.
 
-![Click on Edit to access the Content Page toolbar.](./content-page-editor-ui-reference/images/02.png)
+![Click on Edit to access the Content Page toolbar.](./content-page-editor-ui-reference/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ### Experiences
 
@@ -32,7 +32,7 @@ Click the device icons to access DXP's Responsive Layout Editor, where you can v
 - Landscape Phone
 - Portrait Phone
 
-![Select the design option for different screen layouts.](content-page-editor-ui-reference/images/17.png)
+![Select the design option for different screen layouts.](content-page-editor-ui-reference/images/17.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ```{note}
    The Fragments and Widgets and Page Design options in the Content Page sidebar are only available in the Desktop layout.
@@ -40,13 +40,13 @@ Click the device icons to access DXP's Responsive Layout Editor, where you can v
 
 In the Tablet and Phone layouts, you can further adjust the screen size using the resize handlebar.
 
-![Resize the content preview in the Tablet or Phone layouts.](content-page-editor-ui-reference/images/09.gif)
+![Resize the content preview in the Tablet or Phone layouts.](content-page-editor-ui-reference/images/09.gif) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ### Edit History
 
 Click History (![Time](./../../../images/icon-time.png)) to view changes you've made to the Content Page during your current edit session. Use the undo and redo buttons to reverse or restore those changes.
 
-![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/10.png)
+![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/10.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856???-->
 
 ### Edit Mode Selector
 
@@ -78,7 +78,7 @@ Before DXP 7.4, the Browser (![Browser](../../../images/icon-browser.png)) butto
 - ![Contents](../../../images/icon-list-ul.png) - [Contents](#contents)
 
 
-![Content Page sidebar controls differences between Liferay DXP 7.4+ and previous versions.](content-page-editor-ui-reference/images/03.png)
+![Content Page sidebar controls differences between Liferay DXP 7.4+ and previous versions.](content-page-editor-ui-reference/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ### Fragments and Widgets
 
@@ -98,7 +98,7 @@ In the Fragments and Widgets sidebar panel (![Fragments and Widgets icon](../../
 
 The *Browser* sidebar panel (![Browser](../../../images/icon-browser.png)) allows you to view, edit, and manage all web content on the Page. The mapped content on a Page can be from different types of assets: documents and media, web content articles, etc. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information. 
 
-   ![Browser tab allows you to view, edit, and manage web content on the Page.](./content-page-editor-ui-reference/images/02.gif)
+   ![Browser tab allows you to view, edit, and manage web content on the Page.](./content-page-editor-ui-reference/images/02.gif) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 - **Page Elements**: Page Elements shows a hierarchical outline of all Page elements, where you can select, configure, or remove those elements. Clicking any element on the Page while in the Design mode opens the Selection panel and highlights the selected element in the hierarchy. When an element is selected, you can access its General, Styles, and Link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.  
 
@@ -135,7 +135,7 @@ Use Page Fragment comments to collaborate with team members while developing you
 
 In the Selection sidebar panel (![Selection](../../../images/icon-pages-tree.png)), you can view a hierarchical outline of all Page elements, as well as select, configure, or remove those elements. Similarly, clicking any element on the Page while in the Design mode opens the Selection panel and highlights the selected Page element in the hierarchy. When an element is selected, you can access its General, Styles, and Link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
-![Selection shows you a hierarchy of your Page and contents.](./content-page-editor-ui-reference/images/08.png)
+![Selection shows you a hierarchy of your Page and contents.](./content-page-editor-ui-reference/images/08.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ```{note}
    A Page's Header and Footer are not listed in the Selection panel hierarchy. This is because you can only modify them in the [Master Page Template](../defining-headers-and-footers/master-page-templates.md).

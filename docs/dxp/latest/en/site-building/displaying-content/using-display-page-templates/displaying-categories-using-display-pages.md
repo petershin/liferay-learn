@@ -76,7 +76,7 @@ This example shows how to map the Category fields using a [Card Fragment](../../
 1. In the Mapping area and the *Source* drop-down menu, select *Category* if it's not selected already.
 1. Click the *Field* drop-down menu and select *Name* (C) to map your Category's name to the Card's title.
 
-   ![Map the Category fields in the Display Page Template using a Card Fragment.](./displaying-categories-using-display-pages/images/03.png)
+   ![Map the Category fields in the Display Page Template using a Card Fragment.](./displaying-categories-using-display-pages/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. Repeat the same mapping process for the Card description and Card image. This list summarizes the Card Fragment to Category Field mappings in the example:
 

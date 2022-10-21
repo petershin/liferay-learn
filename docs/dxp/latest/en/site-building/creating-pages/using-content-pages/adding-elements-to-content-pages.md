@@ -14,11 +14,11 @@ After you [create a Content Page](../adding-pages/adding-a-page-to-a-site.md), y
 
 1. Alternatively, click the an existing Content Page's *Actions* Menu (![Actions](../../../images/icon-actions.png)) and select *Edit*.
 
-    ![Edit an existing Content Page by dropping Fragments or Widgets in the edit area.](adding-elements-to-content-pages/images/02.png)
+    ![Edit an existing Content Page by dropping Fragments or Widgets in the edit area.](adding-elements-to-content-pages/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. From the Content Page sidebar, select *Fragments and Widgets* (![Fragments and Widgets](../../../images/icon-cards2.png)) and start adding the [Fragments](../page-fragments-and-widgets/using-fragments.md) and [Widgets](./using-widgets-on-a-content-page.md) for your content. You can browse for the component or use the *Search* field to find a specific element.
 
-    ![Add Fragments and Widgets from the Content Page sidebar.](adding-elements-to-content-pages/images/03.png)
+    ![Add Fragments and Widgets from the Content Page sidebar.](adding-elements-to-content-pages/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
     ```{note}
     New Content Pages start empty and in a *Draft* status. The Page is not visible until you publish it.

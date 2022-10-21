@@ -11,18 +11,18 @@ Follow these steps to create a Master Page Template:
 1. Enter the *Name* of your new Master Page Template.
 1. Click *Fragments and Widgets* (![Fragments and Widgets](./../../../images/icon-add-widget.png)) on the sidebar and add Fragments for the common elements that you require.
 
-    ![Add the Master Page Template's common elements from the Footers and Navigation Bars sections.](./creating-a-master-page-template/images/02.png)
+    ![Add the Master Page Template's common elements from the Footers and Navigation Bars sections.](./creating-a-master-page-template/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. Optionally drag and drop the Drop Zone to a new location in the layout. For example, you can add a Grid with two Modules and move the Drop Zone to one Module, so users can only add Page Fragments to that portion of the Grid.
 
-    ![You can move the Drop Zone to control where users can add Page Fragments.](./creating-a-master-page-template/images/03.gif)
+    ![You can move the Drop Zone to control where users can add Page Fragments.](./creating-a-master-page-template/images/03.gif) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. Optionally specify which Page Fragments can be added to the Drop Zone by clicking the *Configure Allowed Fragments* button.
 
     - Check the Page Fragments you want to allow in this Master Page Template.
     - Check the *Select New Fragments Automatically* box to include new fragment types in the list of allowed fragments.
 
-    ![Check and uncheck Fragments from the Allowed Fragments dialog to specify whether they can be added to a page that uses this Master Page Template.](./creating-a-master-page-template/images/04.png)
+    ![Check and uncheck Fragments from the Allowed Fragments dialog to specify whether they can be added to a page that uses this Master Page Template.](./creating-a-master-page-template/images/04.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. Click *Save* to close the *Allowed Fragments* dialog.
 1. To preview your Content Page, click the *Preview* button (![Preview](../../../images/icon-preview.png)).

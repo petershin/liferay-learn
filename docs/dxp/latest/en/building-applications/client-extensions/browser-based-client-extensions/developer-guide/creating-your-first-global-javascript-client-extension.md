@@ -54,7 +54,7 @@ The Blade CLI tool creates a subfolder with your chosen name within `client-exte
 
 Now you have a basic client extension to work with. Next, let's look at what this client extension does and how to adjust its behavior.
 
-## Modify and Deploy the Client Extension
+## Examine and Deploy the Client Extension
 
 By default, the `src/global.js` file contains this line of code:
 
@@ -62,15 +62,9 @@ By default, the `src/global.js` file contains this line of code:
 window.alert('Global JavaScript deployed.');
 ```
 
-This causes a popup window to appear when you open the page with the given message.
+This causes a popup window to appear when you open the page with the given message. Add any additional JavaScript you want to run to this file.
 
-Open up the `global.js` file and modify the message to one of your own, like this:
-
-```js
-window.alert('Hello World! Global JavaScript successfully deployed.');
-```
-
-Once you are satisfied with your changes to the JS code, deploy your client extension to your Liferay testing instance. If you are running Liferay from a Docker container, run this command from your client extension's root folder:
+Then, deploy your client extension to your Liferay testing instance. If you are running Liferay from a Docker container, run this command from your client extension's root folder:
 
 ```bash
 blade gw deploy -Ddeploy.docker.container.id=$(docker ps -lq)

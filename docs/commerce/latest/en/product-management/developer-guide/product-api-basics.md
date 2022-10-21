@@ -1,13 +1,13 @@
 # Product API Basics
 
-You can manage Products from the Applications menu, but you can also use Liferay’s REST APIs. Call these services to create and manage products.
+You can manage products from the Applications menu, but you can also use Liferay’s REST APIs. Call these services to create and manage products.
 
 ## Adding a Product
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+Then follow these steps:
 
 1. Download and unzip [Product API Basics](./liferay-z8v2.zip).
 
@@ -19,7 +19,7 @@ Then, follow these steps:
    unzip liferay-z8v2.zip
    ```
 
-1. A Product is scoped to a Catalog and the catalog ID is one of the required parameters. To get this, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog you wish to add the product to and note down the ID present next to its name.
+1. A product is scoped to a catalog and the catalog ID is one of the required parameters. To get this, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog where you'll add products and note down the ID present next to its name.
 
    ![Note down the ID of the Catalog present next to its name.](./product-api-basics/images/01.png)
 
@@ -98,13 +98,13 @@ Then, follow these steps:
 
    ![See that a new product has been added.](./product-api-basics/images/02.png)
 
-1. You can also call the The REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. You can also call the The REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `Product_POST_ToCatalog` class with the following command. Replace the `catalogId` value with your Catalog's ID:
+1. Run the `Product_POST_ToCatalog` class. Replace the `catalogId` value with your Catalog's ID:
 
    ```bash
    java -classpath .:* -DcatalogId=1234 Product_POST_ToCatalog
@@ -125,7 +125,7 @@ Here are the command's arguments:
 | `-H "Content-Type: application/json"`                                                                           | Indicates that the request body format is JSON.     |
 | `-X POST`                                                                                                       | The HTTP method to invoke at the specified endpoint |
 | `"http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/products"`                                       | The REST service endpoint                           |
-| `-d "{\"active\": true, \"catalogId\": \"${1}\", \"name\": {\"en_US\": \"Foo\"}, \"productType\": \"simple\"}"` | The data you are requesting to post                 |
+| `-d "{\"active\": true, \"catalogId\": \"${1}\", \"name\": {\"en_US\": \"Foo\"}, \"productType\": \"simple\"}"` | The data to post                 |
 | `-u "test@liferay.com:learn"`                                                                                   | Basic authentication credentials                    |
 
 ```{note}
@@ -226,7 +226,7 @@ This API also accepts parameters to filter, paginate, search, and sort the produ
 | name:asc                  | Sort by name in the ascending order                                                    |
 | createDate:desc,name:desc | Sort by createDate in the descending order first, then by name in the descending order |
 
-Read [Filter, Sort and Search](https://help.liferay.com/hc/en-us/articles/360036343152-Filter-Sort-and-Search) for more information.
+Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.
 
 ## Get a Product
 
@@ -270,7 +270,7 @@ The `Product` fields are listed in JSON.
 
 ## Patch a Product
 
-Update an existing product with the following cURL and Java commands. Note, replace `1234` with your product's ID.
+Update an existing product with the following cURL and Java commands. Replace `1234` with your product's ID.
 
 ### Product_PATCH_ById.sh
 
@@ -304,7 +304,7 @@ Code:
 
 ## Delete a Product
 
-Delete an existing product with the following cURL and Java commands. Note, replace `1234` with your product's ID.
+Delete an existing product with the following cURL and Java commands. Replace `1234` with your product's ID.
 
 ### Product_DELETE_ById.sh
 

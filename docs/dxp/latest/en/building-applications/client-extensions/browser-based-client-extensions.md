@@ -14,6 +14,8 @@ browser-based-client-extensions/understanding-custom-element-and-iframe-client-e
 browser-based-client-extensions/remote-applications-ui-reference.md
 ```
 
+{bdg-secondary}`Available Liferay 7.4+`
+
 There is a variety of different types of browser-based client extensions that provide different ways to augment your pages in Liferay. Create and deploy these client extensions from your [Liferay workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md).
 
 CSS and JavaScript client extensions are applied to pages in this order:

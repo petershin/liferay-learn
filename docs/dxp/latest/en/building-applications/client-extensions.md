@@ -10,6 +10,8 @@ toc:
 client-extensions/browser-based-client-extensions.md
 ```
 
+{bdg-secondary}`Available Liferay 7.4+`
+
 Client extensions are a flexible and specially tailored means of extending or adding functionality to Liferay, without the use of OSGi modules. You can deploy your client extensions to any Liferay environment, whether you are hosting it yourself or on Liferay Experience Cloud, without having to make any changes to them. They are also the primary way of customizing Liferay with Liferay Experience Cloud, together with built-in configurations like [Liferay objects](./objects.md) (that don't require any code).
 
 While other types of Liferay extensions, such as [OSGi modules](../liferay-internals/fundamentals/module-projects.md) or [themes](../site-building/site-appearance/themes/introduction-to-themes.md), are powerful tools for customizing Liferay itself, client extensions avoid directly using or customizing Liferay code. This makes client extensions more robust and simpler to apply to environments after an upgrade, since they do not depend on any specific version of Liferay. You can also develop using whatever programming languages or technologies are most familiar to you, because your client extensions can run outside of Liferay and integrate with objects, with no extra code required to connect them.

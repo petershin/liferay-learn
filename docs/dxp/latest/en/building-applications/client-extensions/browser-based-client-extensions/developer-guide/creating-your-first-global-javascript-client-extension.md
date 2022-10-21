@@ -1,5 +1,7 @@
 # Creating Your First Global JavaScript Client Extension
 
+{bdg-secondary}`Available Liferay 7.4+`
+
 A basic global JavaScript client extension is a great place to start with developing your own client extensions. You can use a global JS client extension to run your own JavaScript on any page in Liferay without worrying about any dependency on Liferay code or developing a theme. You'll use the [Blade CLI](../../../tooling/blade-cli.md) to generate, build, and deploy your client extension along the way.
 
 ## Prerequisites

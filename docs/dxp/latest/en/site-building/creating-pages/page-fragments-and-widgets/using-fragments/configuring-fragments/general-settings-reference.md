@@ -1,22 +1,22 @@
 # General Settings Reference
 
-Nearly all Fragments include General settings. Some of these options are standard (e.g., visibility and frame), while others are unique to each Fragment. The following reference only includes Fragments with General settings.
+Nearly all fragments include General settings. Some of these options are standard (e.g., visibility and frame), while others are unique to each fragment. The following reference only includes fragments with General settings.
 
 ```{note}
 HTML, Paragraph, Separator, and Social do not have General settings. 
 ```
 
-Follow these steps to access a Fragment's *General* menu:
+Follow these steps to access a fragment's *General* menu:
 
-1. Begin editing a Page or Template that supports Fragments.
+1. Begin editing a page or template that supports fragments.
 
-1. Open the *Browser* panel (![Browser](../../../../../images/icon-browser.png)) in the sidebar menu and select the desired *Fragment* under Page Elements.
+1. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired *fragment*.
 
-   Alternatively, you can click on the desired Fragment in the Page or Template to open this menu.
+   Alternatively, you can click the desired fragment in the page or template to open this menu.
 
-1. Click the *General* tab in the Page Elements side menu.
+1. Click the *General* tab in the Page Elements side panel.
 
-![Access a Fragment's General settings in the Browser panel of the editing sidebar menu.](./general-settings-reference/images/01.png)
+![Select a fragment to access its General settings in the Page Element side panel.](./general-settings-reference/images/01.png)
 
 ## Standard General Settings
 
@@ -24,29 +24,32 @@ Follow these steps to access a Fragment's *General* menu:
 
 | Field | Description |
 | :--- | :--- |
-| Hide Fragment | Check the box to hide the Fragment for different viewports. See [Configuring Fragment Visibility](../configuring-fragment-visibility.md) to learn more about how this setting interacts with Page viewports. |
+| Hide Fragment | Check the box to hide the fragment for different viewports. See [Configuring Fragment Visibility](../configuring-fragment-visibility.md) to learn more about how this setting interacts with Page viewports. |
 
 ### Frame
 <!--CONFIRM-->
 | Field | Description |
 | :--- | :--- |
-| Width/Height | Determine the default height and width of the Fragment's frame. |
+| Width/Height | Determine the default height and width of the fragment's frame. |
 | Min Width/Max Width | Determine the min and max width for the frame when displayed in different viewports. |
 | Min Height/Max Height | Determine the min and max height for the frame when displayed in different viewports. |
-| Overflow | Determine whether to allow Fragment content to overflow its frame. By default, Fragment content is restricted to its frame. If overflow is allowed, you can determine how it is displayed (e.g., Scroll). |
+| Overflow | Determine whether to allow fragment content to overflow its frame. By default, fragment content is restricted to its frame. If overflow is allowed, you can determine how it is displayed (e.g., Scroll). |
 
 ## Container Options
 
 | Field | Description |
 | :--- | :--- |
-| Link | Determine if the Container links to a URL, Page, or Mapped URL. |
-| URL (*URL*) | Enter a localizable URL for the Container. To set a URL for other languages, first switch the language for the Page or Template via the editing bar. Then, enter the desired URL. |
-| Page (*Page*) | Select a Liferay Page for the Container. |
-| Item (*Mapped*) | Select an item from Documents and Media, Web Content, Blogs, or Categories. The selected item provides fields for mapping. |
-| Field (*Mapped*) | Select the URL field you want to map to the Container. Selecting a valid field automatically populates the *URL* field. |
-| URL (*Mapped*) | This field is auto-populated with the selected *Field* URL. |
+| Link | Determine if the Container links to a *URL*, *Page*, or *Mapped URL*; this setting determines which of the following fields are available. |
+| URL (*for URL*) | Enter a localizable URL for the Container. To set a URL for other languages, first switch the language for the page or template via the editing bar. Then, enter the desired URL. |
+| Page (*for Page*) | Select a Liferay Page for the Container. |
+| Item (*for Mapped URL*) | Select an item from Documents and Media, Web Content, Blogs, or Categories. The selected item provides fields for mapping. |
+| Field (*for Mapped URL*) | Select the URL field you want to map to the Container. Selecting a valid field automatically populates the *URL* field. |
+| URL (*for Mapped URL*) | This field is auto-populated with the selected *Field* URL. |
 | Open in New Tab | Determine whether the link is opened in a new tab. |
-| Content Display | Determine whether the Container's content is displayed in a Block, Flex Row, or Flex Column. |
+| Content Display | Determine whether the Container's content is displayed in a *Block*, *Flex Row*, or *Flex Column*; the flex options have additional configuration options. |
+| Flex Wrap (*for Flex Row or Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Configure wrapping for flex rows and columns: No Wrap, Wrap, or Wrap Reverse. |
+| Align Items (*for Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the column are aligned: Start, Center, End, Stretch, or Baseline.  |
+| Justify Content (*for Flex Row*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the row are justified: Start, Center, End, Between, or Around. |
 | Container Width | Determine whether the Container uses a Fluid or Fixed Width. |
 
 ## Grid Options
@@ -117,7 +120,7 @@ Follow these steps to access a Fragment's *General* menu:
 
 | Field | Description |
 | :--- | :--- |
-| Number of Slides | Determine how many slides are included in the Fragment. |
+| Number of Slides | Determine how many slides are included in the fragment. |
 
 ```{tip}
 There is no limit to the number of slides you can add to a Slider. However, high numbers of slides can negatively impact performance.
@@ -133,10 +136,10 @@ There is no limit to the number of slides you can add to a Slider. However, high
 
 | Field | Description |
 | :--- | :--- |
-| Number of Tabs | Determine how many tabs are included in the Fragment. |
+| Number of Tabs | Determine how many tabs are included in the fragment. |
 
 ```{tip}
-There is no limit to the number of tabs you can add to a Tabs Fragment. However, a high number of tabs can negatively impact performance.
+There is no limit to the number of tabs you can add to a Tabs fragment. However, a high number of tabs can negatively impact performance.
 ```
 
 ## Video URL Options
@@ -169,43 +172,43 @@ There is no limit to the number of tabs you can add to a Tabs Fragment. However,
 
 | Field | Description |
 | :--- | :--- |
-| Target Collection | Select a Collection to use with the filter. |
+| Target Collection | Select a collection to use with the filter. |
 | Filter | Determine the filter's type: Keywords or Category. When using Category, end users can select from predefined filter categories. When using Keywords, they can manually enter their own filter values. |
-| Source (*Category*) | Select the Vocabulary or Category used for filtering the target Collection. |
-| Single Selection (*Category*) | Determine whether end users can apply only one or more filters to the Collection.  |
-| Include Search Field (*Category*) | Determine whether to include a field for end users to search available filter values. |
+| Source (*for Category*) | Select the Vocabulary or Category used for filtering the target collection. |
+| Single Selection (*for Category*) | Determine whether end users can apply only one or more filters to the collection.  |
+| Include Search Field (*for Category*) | Determine whether to include a field for end users to search available filter values. |
 | Show Label | Check to show a label for the filter in the UI. |
-| Label Text | Enter localizable text for the label. To set label text for another language, first switch the language for the Page or Template via the editing bar. Then, enter the desired text. See [Localizing Fragment Configuration Fields](./localizing-fragment-configuration-fields.md) for more information. |
+| Label Text | Enter localizable text for the label. To set label text for another language, first switch the language for the page or template via the editing bar. Then, enter the desired text. See [Localizing Fragment Configuration Fields](./localizing-fragment-configuration-fields.md) for more information. |
 
 ## Applied Filters Options
 
 | Field | Description |
 | :--- | :--- |
-| Target Collection | Select a Collection to use with the Fragment. This Fragment displays all filters applied to the selected Collection. |
+| Target Collection | Select a collection to use with the fragment. This fragment displays all filters applied to the selected collection. |
 | Include Clear Filters Option | Determine whether to include the Clear Filters option to end users. |
 
 ```{note}
-This fragment is only displayed when a filter is applied to the target Collection.
+This fragment is only displayed when a filter is applied to the target collection.
 ```
 
 ## Content Ratings Options
 
 | Field | Description |
 | :--- | :--- |
-| Item | Select the item you want to associate with the Fragment from Documents and Media, Web Content, Blogs, or Categories. |
+| Item | Select the item you want to associate with the fragment from Documents and Media, Web Content, Blogs, or Categories. |
 
 ## Collection Display Options
 
 | Field | Description |
 | :--- | :--- |
-| Collection | Select a Collection or Collection Provider to display in the Fragment. Once selected, you can click the Actions button to access additional options. Available actions depend on the selected Collection or Collection Provider. |
-| List Style | Select from available styles to determine how items are listed. Available styles depend on the selected Collection or Collection Provider. |
-| Layout (*Grid*) | Determine how many columns the Collection list has: 1-6. |
-| List Item Style (*Templates*) | Select from available styles to determine how each entry is displayed. Available styles depend on the selected Collection asset type. |
-| Pagination | Determine whether to use pagination for the Collection. When enabled, you can select from two style options: Numeric or Simple. |
-| Display All Collection Items | Determine whether to display all items in the selected Collection or Collection Provider. |
-| Maximum Number of Items | Set the maximum number of items to display from the selected Collection or Collection Provider. |
-| Maximum Number of Items per Page | Determine the number of items included in each Fragment page. This value cannot exceed 200. |
+| Collection | Select a collection or collection provider to display in the fragment. Once selected, you can click the Actions button to access additional options. Available actions depend on the selected collection or collection provider. |
+| List Style | Select from available styles to determine how items are listed. Available styles depend on the selected collection or collection provider. |
+| Layout (*for Grid*) | Determine how many columns the collection list has: 1-6. |
+| List Item Style (*for Templates*) | Select from available styles to determine how each entry is displayed. Available styles depend on the selected collection asset type. |
+| Pagination | Determine whether to use pagination for the collection. When enabled, you can select from two style options: Numeric or Simple. |
+| Display All Collection Items | Determine whether to display all items in the selected collection or collection provider. |
+| Maximum Number of Items | Set the maximum number of items to display from the selected collection or collection provider. |
+| Maximum Number of Items per Page | Determine the number of items included in each fragment per page. This value cannot exceed 200. |
 
 ## Additional Information
 

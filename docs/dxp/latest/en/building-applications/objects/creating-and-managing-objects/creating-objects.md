@@ -44,7 +44,7 @@ Once saved, a blank object draft is created without any configurations or data e
 Before publishing an object, you can add elements and configure its settings. This includes adding fields, defining validations, setting a scope for its data, and more.
 
 ```{note}
-Whenever you add a field, relationship, or layout, the object draft is saved automatically. However, any unsaved changes in the *Details* tab are lost if you navigate to other tabs.
+Whenever you add a field, relationship, or layout, the object draft is saved automatically. However, any unsaved changes in the Details tab are lost if you navigate to other tabs.
 ```
 
 Follow these steps to edit the object draft:
@@ -57,15 +57,15 @@ Follow these steps to edit the object draft:
 
 1. Go to the *Fields* tab to add custom fields. Each field represents a database column for storing specific types of values. See [Adding Fields to Objects](./adding-fields-to-objects.md) for more information.
 
-   By default, all custom objects include these system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status.
+   By default, all objects include these system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status.
 
-   ![Add custom fields to the object from the Fields tab.](./creating-objects/images/04.png)
+   ![Add fields to the object from the Fields tab.](./creating-objects/images/04.png)
 
 1. (Optional) Go to the *Relationships* tab to add relationships. Relationships are connections between object definitions that you can use to link their entries. See [Defining Object Relationships](./defining-object-relationships.md) for more information.
 
    ![Add relationships to the object from the Relationships tab.](./creating-objects/images/05.png)
 
-1. (Optional) Go to the *Layouts* tab to add custom layouts. Object layouts determine how fields and relationships are displayed when creating and viewing object entries. See [Designing Object Layouts](./designing-object-layouts.md) for more information.
+1. (Optional) Go to the *Layouts* tab to add layouts. Object layouts determine how fields and relationships are displayed when creating and viewing object entries. See [Designing Object Layouts](./designing-object-layouts.md) for more information.
 
    ```{note}
    If you do not add a custom layout and set it as default, the object uses an automatically generated layout for its entries. This layout has a single tab that displays all object fields in alphabetical order and does not display relationships. To display relationships, you must create a custom layout with a dedicated relationships tab.
@@ -73,29 +73,29 @@ Follow these steps to edit the object draft:
 
    ![Add custom layouts to the object from the Layouts tab.](./creating-objects/images/06.png)
 
-1. (Optional) Go to the *Actions* tab to add custom actions. Each action defines an operation that runs automatically according to a set trigger. See [Defining Object Actions](./defining-object-actions.md) for more information.
+1. (Optional) Go to the Actions tab to add custom actions. Each action defines an operation that runs automatically according to a set trigger. See [Defining Object Actions](./defining-object-actions.md) for more information.
 
    ![Add custom actions to the object from the Actions tab.](./creating-objects/images/07.png)
 
-1. (Optional) Go to the *Views* tab to add custom views. Object views determine how entries are displayed in the object's application page. See [Designing Object Views](./designing-object-views.md) for more information.
+1. (Optional) Go to the Views tab to add custom views. Object views determine how entries are displayed in the object's application page. See [Designing Object Views](./designing-object-views.md) for more information.
 
    ![Add custom views to the object from the Views tab.](./creating-objects/images/08.png)
 
-1. (Optional) Go to the *Validations* tab to add validations. Each validation sets rules for determining valid field entries. See [Adding Custom Validations](./adding-custom-validations.md)
+1. (Optional) Go to the Validations tab to add validations. Each validation sets rules for determining valid field entries. See [Adding Custom Validations](./adding-custom-validations.md)
 
    ![Add custom validations to the object from the Validations tab.](./creating-objects/images/09.png)
 
-1. (Optional) If you've added a state field to the draft, go to the *State Manager* tab to define its flow. See [Adding and Managing Custom States](./adding-and-managing-custom-states.md) for more information.
+1. (Optional) If you've added a state field to the draft, go to the State Manager tab to define its flow. See [Adding and Managing Custom States](./adding-and-managing-custom-states.md) for more information.
 
    ![Define flows for state fields in the State Manager tab.](./creating-objects/images/10.png)
 
-1. Go to the *Details* tab to configure the object draft.
+1. Go to the Details tab to configure the object draft.
 
 1. (Optional) Change the name, label, or plural label for the object.
 
    ![Change the name, label and plural label for the object.](./creating-objects/images/11.png)
 
-1. (Optional) Select an *Entry Title*. This determines the field used to identify object entries in the UI. By default, objects use the ID field.
+1. (Optional) Select an Entry Title. This determines the field used to identify object entries in the UI. By default, objects use the ID field.
 
    ![Once a field is added to an object, you can select it as the Entry Title.](./creating-objects/images/12.png)
 
@@ -105,11 +105,11 @@ Follow these steps to edit the object draft:
 
    **Site**: When scoped by Site, the object's data is stored per Site.
 
-1. (Optional) Select a *Panel Category Key* to determine where the definition is displayed in the Liferay UI.
+1. (Optional) Select a Panel Category Key to determine where the definition is displayed in the Liferay UI.
 
-   For company-scoped objects, select tab and category in the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)).
+   For company-scoped objects, select tab and category in the Global Menu (![Global Menu](../../../images/icon-applications-menu.png)).
 
-   For site-scoped objects, select a section in the *Site Menu* (![Site Menu](../../../images/icon-menu.png)).
+   For site-scoped objects, select a section in the Site Menu (![Site Menu](../../../images/icon-menu.png)).
 
    You can leave this value blank if you don't want to display the application in a UI menu.
 
@@ -165,7 +165,7 @@ To prevent data loss and system conflicts, some configuration options are remove
 
 * Most configuration options for published fields and relationships cannot be changed.
 
-You can still edit and localize labels for objects, fields, and relationships after publishing, but most configuration options are removed. For objects, you can change the Panel Category Key as well as add new fields, relationships, and layouts. For relationships, you can configure its *Deletion Type*.
+You can still edit and localize labels for objects, fields, and relationships after publishing, but most configuration options are removed. For objects, you can change the Panel Category Key as well as add new fields, relationships, and layouts. For relationships, you can configure its Deletion Type.
 
 ```{note}
 For Liferay 7.4 U25/GA25 and earlier versions, users cannot delete published object definitions or remove relationships included in an object at the time of publishing.

@@ -18,7 +18,7 @@ Follow these steps to add a field to an object:
 
 1. Go to the *Fields* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
-   ![Go to the Fields tab, click the Add button and enter the required details.](./adding-fields-to-objects/images/01.png)
+   ![Go to the Fields tab, click the Add button, and enter the required details.](./adding-fields-to-objects/images/01.png)
 
 1. Enter a *Label* and *Field Name*.
 
@@ -71,7 +71,7 @@ If you publish the draft or add fields to an already published object, configura
 
 {bdg-secondary}`For 7.4 U41+/GA41+`
 
-The following field names are reserved by Liferay and cannot be used for custom fields. If users attempt to create a field using one of these field names, Liferay displays an error message.
+The following field names are reserved by Liferay and cannot be used. If users attempt to create a field using one of these field names, Liferay displays an error message.
 
 | Field | Description |
 | :--- | :--- |

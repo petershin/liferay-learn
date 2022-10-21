@@ -53,5 +53,5 @@ When an IFrame app uses the client SDK, the Liferay page receives instructions t
 ## Additional Information
 
 * [Introduction to Client Extensions](../../client-extensions.md)
-* [Creating a Basic Remote App](./remote-apps-tutorials/creating-a-basic-remote-app.md)
-* [Remote Apps UI Reference](./remote-apps-ui-reference.md)
+* [Creating a Basic Custom Element Remote Application](./developer-guide/creating-a-basic-custom-element-remote-application.md)
+* [Remote Applications UI Reference](./remote-applications-ui-reference.md)

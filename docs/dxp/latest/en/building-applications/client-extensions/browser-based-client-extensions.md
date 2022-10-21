@@ -59,7 +59,7 @@ The `clay.css` and `main.css` files must be hosted remotely to use this type of 
 
 You can also use client extensions to override the favicon for your pages in Liferay. When you deploy a theme favicon client extension, the icon file included with it becomes available for any page in Liferay. You can access it in a separate *Client Extensions* tab when you configure the favicon for a page from the Page Design Options menu.
 
-![When you configure the favicon for a page, access the favicon from your client extension from a special Client Extensions tab.](./browser-based-client-extensions/02.png)
+![When you configure the favicon for a page, access the favicon from your client extension from a special Client Extensions tab.](./browser-based-client-extensions/images/02.png)
 
 ## Custom Element Client Extensions
 

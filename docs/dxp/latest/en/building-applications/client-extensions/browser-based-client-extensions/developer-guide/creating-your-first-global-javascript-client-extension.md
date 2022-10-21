@@ -1,6 +1,6 @@
 # Creating Your First Global JavaScript Client Extension
 
-A basic global JavaScript client extension is a great place to start with developing your own client extensions. You can use a global JS client extension to run your own JavaScript on any page in Liferay without worrying about any Liferay code. You'll use the [Blade CLI](../../../tooling/blade-cli.md) to generate, build, and deploy your client extension along the way.
+A basic global JavaScript client extension is a great place to start with developing your own client extensions. You can use a global JS client extension to run your own JavaScript on any page in Liferay without worrying about any Liferay code or developing a theme. You'll use the [Blade CLI](../../../tooling/blade-cli.md) to generate, build, and deploy your client extension along the way.
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ You must have these requirements ready in your development environment to begin 
 1. Install Java (JDK 8 or JDK 11).
 
     ```{note}
-    Please see the [compatibility matrix](link->HC compatibility matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](link->JVM Configuration) for recommended JVM settings.
+    Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/references/jvm-configuration.md) for recommended JVM settings.
     ```
 
 1. Install the [Blade CLI](../../../tooling/blade-cli/installing-and-updating-blade-cli.md).

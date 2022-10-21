@@ -9,7 +9,7 @@ You must have these requirements ready in your development environment to begin 
 1. Install Java (JDK 8 or JDK 11).
 
     ```{note}
-    Please see the [compatibility matrix](link->HC compatibility matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](link->JVM Configuration) for recommended JVM settings.
+    Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/references/jvm-configuration.md) for recommended JVM settings.
     ```
 
 1. Install the [Blade CLI](../../../tooling/blade-cli/installing-and-updating-blade-cli.md).
@@ -114,7 +114,7 @@ You must configure a page in your Liferay instance to specifically use your depl
 
 Now your client extension is configured and you can see it in action. Navigate back to the page you configured and look at the background color for any buttons on the page. The background color on the buttons now appears as the color you configured it to. (You may need to add a button to the page first if it does not already have any buttons on it.)
 
-![If you changed the background color for buttons in your client extension's global.css file, then any buttons on the page now appear in that color.](link to screenshot)
+![If you changed the background color for buttons in your client extension's global.css file, then any buttons on the page now appear in that color.](./creating-your-first-global-css-client-extension/images/04.png)
 
 ```{tip}
 If the buttons on the page still appear with the default background color, try doing a hard refresh of the page to clear your browser's cache (`CTRL + SHIFT + R` for most browsers). If you change your client extension and redeploy it, you may need to remove it from the page's configuration and re-add it to see the changes.

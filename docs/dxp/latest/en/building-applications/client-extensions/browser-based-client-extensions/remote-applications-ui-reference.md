@@ -24,6 +24,6 @@ When creating or editing a remote application entry, the following fields are av
 
 ## Additional Information
 
-* [Browser-Based Client Extensions](./browser-based-client-extensions.md)
+* [Browser-Based Client Extensions](../browser-based-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](./understanding-custom-element-and-iframe-client-extensions.md)
 * [Creating a Basic Custom Element Remote Application](./developer-guide/creating-a-basic-custom-element-remote-application.md)

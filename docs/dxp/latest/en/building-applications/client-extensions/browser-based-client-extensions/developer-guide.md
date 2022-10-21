@@ -8,7 +8,7 @@ toc:
 
 # Developer Guide 
 
-```toctree
+```{toctree}
 :maxdepth: 2
 
 developer-guide/creating-your-first-global-javascript-client-extension.md

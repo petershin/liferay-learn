@@ -99,7 +99,7 @@ Running `create_remote_app.sh` requires the latest versions of [Node.JS](https:/
 
 1. Click *Publish*.
 
-This adds the files to the Liferay Document Library and assigns them unique WebDAV URLs, which you'll use to create the remote app.
+This adds the files to the Liferay Document Library and assigns them unique WebDAV URLs, which you'll use to create the remote application.
 
 ```{tip}
 This tutorial hosts the application’s static resources in Liferay’s Document Library for demonstration purposes. In a production environment, you should host the application’s files on a server optimized for hosting static resources.
@@ -142,7 +142,7 @@ Since J1V3-Remote-App is instanceable, you can add many of them to a page, each 
 
 ## Using the `route` Property
 
-The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello-bar`. By default the application uses the `hello-world` route. However, you can use remote app properties to configure it to use an alternate route. You can set these properties via [the Remote Apps menu](#defining-a-route-property-via-the-remote-apps-menu) or a [widget's configuration options](#defining-a-route-property-via-widget-configuration).
+The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello-bar`. By default the application uses the `hello-world` route. However, you can use remote application properties to configure it to use an alternate route. You can set these properties via [the Remote Apps menu](#defining-a-route-property-via-the-remote-apps-menu) or a [widget's configuration options](#defining-a-route-property-via-widget-configuration).
 
 ### Defining a Route Property via the Remote Apps Menu
 

@@ -1,6 +1,6 @@
 # Creating Your First Global CSS Client Extension
 
-A basic global CSS client extension is a great place to start with developing your own client extensions. You can use a global CSS client extension to override styling on any page in Liferay without worrying about any Liferay code. You'll use the [Blade CLI](../../../tooling/blade-cli.md) to generate, build, and deploy your client extension along the way.
+A basic global CSS client extension is a great place to start with developing your own client extensions. You can use a global CSS client extension to override styling on any page in Liferay without needing to develop a theme or depend on any Liferay code. You'll use the [Blade CLI](../../../tooling/blade-cli.md) to generate, build, and deploy your client extension along the way.
 
 ## Prerequisites
 

@@ -2,10 +2,6 @@
 
 Nearly all fragments include General settings. Some of these options are standard (e.g., visibility and frame), while others are unique to each fragment. The following reference only includes fragments with General settings.
 
-```{note}
-HTML, Paragraph, Separator, and Social do not have General settings. 
-```
-
 Follow these steps to access a fragment's *General* menu:
 
 1. Begin editing a page or template that supports fragments.
@@ -15,6 +11,10 @@ Follow these steps to access a fragment's *General* menu:
    Alternatively, you can click the desired fragment in the page or template to open this menu.
 
 1. Click the *General* tab in the Page Elements side panel.
+
+   ```{note}
+   All fragments have General settings except for the HTML, Paragraph, Separator, and Social fragments.
+   ```
 
 ![Select a fragment to access its General settings in the Page Element side panel.](./general-settings-reference/images/01.png)
 

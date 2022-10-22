@@ -1,96 +1,84 @@
 # Managing Fragments
 
-Liferay DXP provides tools for managing Fragments and Fragment Sets in the Liferay UI. With out-of-the-box tools, you can quickly edit Fragment code, export and import Fragments and Sets between Sites, or move and copy Fragments between Sets.
+Liferay DXP provides tools for managing fragments in the Liferay UI. With out-of-the-box tools, you can quickly edit fragment code, export/import fragment sets between sites, and more.
 
-```{note}
-For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Liferay UI.
+```{tip}
+To share fragments and sets between sites, add them to the Global site, or use the export/import actions.
 ```
 
 ## Managing Fragment Sets
 
-Follow these steps to access management options for Fragment Sets:
-
 1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
 
-    ```{note}
-    For Liferay DXP/Portal 7.3 and earlier, it's located under *Product Menu* &rarr; *Site Menu* &rarr; *Site Builder* &rarr; *Page Fragments*.
-    ```
+1. Select the desired *fragment set*.
 
-1. Select the desired Set in the *Fragment Sets* list and click its *Actions* button (![Actions](../../../../images/icon-actions.png)).
+1. Click the set's *Actions* button (![Actions](../../../../images/icon-actions.png)).
 
-   ![Click the Fragment Set's Actions button to access management options.](./managing-fragments/images/01.png)
+   ![Click the fragment set's Actions button to access management options.](./managing-fragments/images/01.png)
 
 1. Select an action:
 
-   **Edit**: Change the name or description for the Fragment Set.
+   **Edit**: Change the name or description for the fragment set.
 
-   **Export**: Download the code for the Set's Fragments as a `.zip` file. This does not export the Fragments with Set data. To export the Fragment Set with its data, click the *Actions* button (![Actions](../../../../images/icon-actions.png)) for Fragment Sets and select *Export*. Then, check which Fragment Sets to export. Each Set is downloaded in a separate `.zip` file.
+   **Export**: Download the fragment set as a `.zip` file. This file includes the set's `.json`, fragment code, and resources.
 
-   **Import**: Select a `.zip` file to upload to the Set. During import, check *Overwrite Existing Files* to determine whether the imported code overwrites the Set's existing Fragments. You can import Sets created in Liferay DXP, Sets created using external tools, or Page Fragments without a Set. If an imported Fragment has invalid rules, it is automatically saved as a draft.
+   **Import**: Upload fragments and resources to a set as a `.zip` file. During import, check *Overwrite Existing Files* to overwrite existing fragments with the same fragment name. If an imported fragment has invalid rules, it is saved as a draft.
 
-   **Delete**: Remove the current Fragment Set and all its contents.
+   **Delete**: Remove the current fragment set and all its contents.
 
 ```{tip}
-Exporting and importing Page Fragments is the preferred way to share Fragment code between Sites.
+If you want to export multiple sets, click the Fragment Sets *Actions* button (![Actions](../../../../images/icon-actions.png)) and select *Export*. Then, check the sets you want to export and click *Export*. Each set is downloaded as a separate `.zip` file.
 ```
 
 ## Managing Individual Page Fragments
 
-Follow these steps to manage individual Page Fragments:
-
 1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
 
-    ```{note}
-    For Liferay DXP/Portal 7.3 and earlier, it's located under *Product Menu* &rarr; *Site Menu* &rarr; *Site Builder* &rarr; *Page Fragments*.
-   ```
+1. Select the desired *fragment set*.
 
-1. Select the desired Set in the *Fragment Sets* list.
+1. Click the *Actions* button (![Actions](../../../../images/icon-actions.png)) for the desired fragment.
 
-1. Click the *Actions* button (![Actions](../../../../images/icon-actions.png)) for the desired Fragment.
-
-   ![Click the Fragment's Actions button to access Fragment management options.](./managing-fragments/images/02.png)
+   ![Click the fragment's Actions button to access fragment management options.](./managing-fragments/images/02.png)
 
 1. Select an action:
 
-    **Edit**: Modify the Fragment's code and configuration.
+    **Edit**: Modify the fragment's code or configuration.
 
-    **Rename**: Change the Fragment's name.
+    **Change Thumbnail**: Change the fragment's thumbnail image.
 
-    **Move**: Move the Fragment to a different Fragment Set.
+    **Remove Thumbnail**: Remove the fragment's thumbnail image and use the default fragment type icon.
 
-    **Make a Copy**: Duplicate the Fragment. Duplicated Fragments share the same name with *(Copy)* appended to the end.
+    **Rename**: Change the fragment's name.
 
-    **Change Thumbnail**: Change the Fragment's thumbnail image.
+    **Export**: Download the fragment as a `.zip` file.
 
-    **Export**: Download the Fragment as a `.zip` file.
+    **Make a Copy**: Duplicate the fragment. Duplicated fragments share the same name with *(Copy)* appended to the end.
 
-    **Delete**: Remove the Fragment.
+    **Move**: Move the fragment to a different fragment set.
+
+    **Delete**: Remove the fragment.
 
 ```{important}
-Users cannot edit or copy [saved Fragment compositions](./saving-fragment-compositions.md).
+Users cannot edit or copy [saved fragment compositions](./saving-fragment-compositions.md).
 ```
 
-## Copying Default Fragments
+## Copying Fragments
 
-> Availability: Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+.
-
-[Default Page Fragments](./default-fragments-reference.md) cannot be directly edited. However, you can copy default Fragments into a custom Set and edit them there.
-
-Follow these steps:
+{bdg-secondary}`For Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+`
 
 1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
 
-    ```{note}
-    For Liferay DXP/Portal 7.3 and earlier, it's located under *Product Menu* &rarr; *Site Menu* &rarr; *Site Builder* &rarr; *Page Fragments*.
-    ```
+1. Select the desired *fragment set*.
 
-1. Select the desired Default Set in the *Fragment Sets* list.
+1. Click the *Actions* button (![Actions](../../../../images/icon-actions.png)) for the desired fragment and select *Copy To*.
 
-1. Click the *Actions* button (![Actions](../../../../images/icon-actions.png)) for the desired Fragment and select *Copy To*.
+   ![Click the fragment's Actions button and select Copy To.](./managing-fragments/images/03.png)
 
-   ![Click the Fragment's Actions button and select Copy To.](./managing-fragments/images/03.png)
+1. Select the set where you want to copy the fragment.
 
-1. Select the Set where you want to copy the default Fragment.
+```{tip}
+Users cannot edit [default fragments](./default-fragments-reference.md) directly. However, you can copy default fragments into a custom set and edit them there.
+```
 
 ## Additional Information
 

@@ -18,38 +18,29 @@ configuring-fragments/fragment-sub-elements-reference.md
 configuring-fragments/localizing-fragment-configuration-fields.md
 ```
 
-Liferay DXP provides configuration options for Fragments and their sub-elements. These options can vary, though some are common to all. To view available configuration options, begin editing a Page or Template and open the *Browser* panel (![Browser](../../../../images/icon-browser.png)) in the sidebar menu. Then, click on a Fragment or sub-element and select which options you'd like to configure from the available tabs.
+Liferay provides configuration options for fragments and their sub-elements. Available options can vary, though some are common to all. To view available configuration options, begin editing a page or template and open the *Browser* panel (![Browser](../../../../images/icon-hierarchy.png)) in the sidebar menu. Then, click the fragment or sub-element you want to configure. Available configuration options are grouped into three tabs: General, Styles, and Advanced.
 
-```{note}
-Some Fragment configuration fields can be localized. See [Localizing Fragment Configuration Fields](./configuring-fragments/localizing-fragment-configuration-fields.md) for more information.
-```
+![Available configuration options are grouped into three tabs.](./configuring-fragments/images/01.png)
 
-## Fragment Configuration Options
+Some of these configurations are scoped to the specific viewport where they're made. This means you can configure fragments for specific devices to ensure page content is displayed in the most suitable way. See [Building a Responsive Site](../../../optimizing-sites/building-a-responsive-site.md) for more information.
 
-Available Fragment configuration options are grouped into two tabs: General or Styles. Nearly all Fragments include both tabs. However, there are some exceptions:
+To better serve your global users, you can also localize some fragment configuration fields. See [Localizing Fragment Configuration Fields](./configuring-fragments/localizing-fragment-configuration-fields.md) for more information.
 
-* HTML, Paragraph, Separator, and Social do not have General settings.
-* Collection Display does not have Styles settings.
+## General
 
-With DXP's Responsive Layout Editor, you can also configure these settings for different viewports.
+The General tab includes both standard configuration options (e.g., visibility and frame) as well as options unique to each fragment. See [General Settings Reference](./configuring-fragments/general-settings-reference.md) for more information.
 
-### General
+## Styles
 
-The General tab includes both standard configuration options (e.g., visibility and frame) as well as options unique to each Fragment. See [General Settings Reference](./configuring-fragments/general-settings-reference.md) for more information.
+The Styles tab includes standard options for configuring a fragment's style. This includes a fragment's dimensions, background, borders, and more. See [Configuring Fragment Styles](./configuring-fragments/styles-reference.md) for more information on available style configurations.
 
-### Styles
+## Advanced
 
-The Styles tab includes standard options for configuring a Fragment's style. This includes a Fragment's dimensions, background, borders, and more. See [Configuring Fragment Styles](./configuring-fragments/styles-reference.md) for more information on the available style configurations.
-
-Custom Fragments with more complex structures may require a specific HTML change for style changes to be applied appropriately. See [Applying Styles to Fragments](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information.
-
-### Advanced
-
-The Advanced tab includes more advanced or technical configurations. This includes hiding Fragments from search results, or changing the HTML generated on a page. See [Advanced Settings Reference](./configuring-fragments/advanced-settings-reference.md) for more information.
+The Advanced tab includes more advanced or technical configurations. This includes hiding fragments from search results, or changing the HTML generated on a page. See [Advanced Settings Reference](./configuring-fragments/advanced-settings-reference.md) for more information.
 
 ## Fragment Sub-Element Settings
 
-Many Fragments include sub-elements with their own configuration options. Available options depend on the sub-element's type and are organized into tabs: Mapping, Image Source, and Link. See [Fragment Sub-Elements Reference](./configuring-fragments/fragment-sub-elements-reference.md) for more information.
+Many fragments include sub-elements with their own configuration options. Available options depend on the sub-element's type and are organized into tabs: Mapping, Image Source, and Link. See [Fragment Sub-Elements Reference](./configuring-fragments/fragment-sub-elements-reference.md) for more information.
 
 ### Mapping
 

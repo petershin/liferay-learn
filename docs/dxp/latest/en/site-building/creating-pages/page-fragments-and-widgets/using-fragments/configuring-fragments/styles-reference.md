@@ -1,70 +1,74 @@
 # Styles Reference
 
-Liferay Page Fragments include convenient style settings so you can configure their look and feel via the Liferay UI. Many of these options correspond to CSS classes and have defined tokens supported by Style Books. See [General Settings Reference](./general-settings-reference.md) and [Fragment Sub-Elements Reference](./fragment-sub-elements-reference.md) for additional Fragment configuration options.
+Liferay page fragments include convenient style settings so you can configure their look and feel via the Liferay UI. Many of these options correspond to CSS classes and have defined tokens supported by Style Books. See [General Settings Reference](./general-settings-reference.md) and [Fragment Sub-Elements Reference](./fragment-sub-elements-reference.md) for additional fragment configuration options.
 
-Follow these steps to access a Fragment's *Styles* menu:
+```{note}
+By default, Liferay applies style configurations to the entire fragment. This means elements contained in the fragment inherit these changes if their CSS allows it; otherwise, the inner elements are ignored. If desired, you can create and configure custom fragments to only apply style changes to some inner elements. See [Applying Styles to Fragments](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information.
+```
 
-1. Begin editing a Page or Template that supports Fragments.
+Follow these steps to access a fragment's *Styles* menu:
 
-1. Open the *Browser* panel (![Browser](../../../../../images/icon-browser.png)) in the sidebar menu and select the desired *Fragment* under Page Elements.
+1. Begin editing a page or template that supports fragments.
 
-   Alternatively, you can click on the desired Fragment in the Page or Template to open this menu.
+1. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired *fragment*.
 
-   ```{note}
-   Sub-elements within a fragment do not have independent style options.
-   ```
+   Alternatively, you can click the desired fragment in the page or template to open this menu.
 
 1. Click the *Styles* tab in the Page Elements side menu.
 
-![Access a Fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
+   ```{note}
+   All fragments have Styles settings except for the Collection Display fragment.
+   ```
 
-Many styles have defined tokens supported by Style Books. See [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) and [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) for more information.
+![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
+
+Many styles have defined tokens supported by style books. See [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) and [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) for more information.
 
 ```{note}
-In Liferay 7.4 versions U31+ and GA31+, all styles can be configured independently per type of device (using the device buttons at the top of the screen, or [Adaptive Media](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md) for background images). In earlier versions, only text and spacing style configurations can be configured differently per device.
+For Liferay 7.4 U31+/GA31+, you can configure fragment styles for individual viewports by clicking the device buttons at the top of the screen or setting up [adaptive media](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md) for background images. For earlier versions, you can only configure text and spacing styles for different devices.
 ```
 
 ## Spacing
 
-```{note}
-This feature requires Liferay DXP 7.4 U21+ or GA21+. If you are using an older version, see [this section](#liferay-7-4-u20-and-older) instead.
-```
+{bdg-secondary}`For Liferay 7.4 U47+/GA47+`
 
-Configure the spacing around the Fragment by clicking on the regions surrounding the rectangle in the Spacing section. Click the outer buttons to configure the space between the Fragment's frame and the end of its surrounding context (the *margin* size); this affects margins such as the space between the Fragment's frame and the edge of the page, or the Fragment's Container. Click the inner buttons to configure the space between a Fragment's frame and its content (the *padding* size).
+Click the button for the spacing dimension you want to configure. The inner buttons determine the fragment's *padding*, while the outer buttons determine its *margins*. In this context, *padding* refers to the space between a fragment's frame and its content, while *margin* refers to the space between the fragment's frame and the end of its surrounding context.
 
-![Click the regions aroud the rectangle in the Spacing section to configure the spacing for the Fragment's margin or padding.](./styles-reference/images/02.png)
+![When you click any of the regions, choose the desired spacing from the list of sizes shown.](./styles-reference/images/02.png)
 
-When you click one of these regions, a list appears with pre-defined options for how many pixels to set the chosen spacing size to. These sizes come from the numbered *Spacer* fields in the Spacing category when you [create or edit the Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing).
+Clicking one of the padding or margin buttons opens a menu where you can select from existing tokens or enter a custom value. The predefined tokens come from the numbered *Spacer* fields in the style book's [Spacing](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) category. If you enter a custom value, you can select the unit used for it (e.g., `px`, `rem`). During configuration, you can also click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ) to restore the field to its initial value.
 
 ```{note}
-If the spacing options in your Style Book are defined in units other then pixels (such as `rem`), then they are converted to the equivalent number of pixels when you are selecting them in a Fragment's Styles configuration.
+For 7.4 U46/GA46 and earlier versions, if your style book uses a unit other than pixel to define spacing values (e.g., `rem`), they are converted to pixels during fragment configuration.
 ```
-
-![When you click any of the regions, choose the desired spacing from the list of sizes shown.](./styles-reference/images/03.png)
 
 ## Text
 
-Format the Fragment's text.
+Format the fragment's text.
 
 | Field | Description |
 | :--- | :--- |
-| Font Family | Specifies the font for an element. |
-| Font Weight | Sets how thick or thin characters in text should be displayed. |
-| Font Size | Sets the size of a font. |
-| Text Color | Choose a color for the text. The available color palette can be configured by the Fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
-| Text Align | Specifies the horizontal alignment of text in an element. Choose from *Left*, *Right*, *Center*, or *Justify*. |
+| Font Family ( ![Font Family](../../../../../images/icon-font-family.png) ) | Specifies the font for an element. |
+| Font Weight ( ![Font Weight](../../../../../images/icon-font-weight.png) ) | Sets how thick or thin characters in text should be displayed. |
+| Font Size ( ![Font Size](../../../../../images/icon-font-size.png) ) | Sets the size of a font. |
+| Text Color ( ![Font Color](../../../../../images/icon-color-circle.png) ) | Choose a color for the text. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
+| Text Align ( ![Align Left](../../../../../images/icon-align-left.png) ![Align Center](../../../../../images/icon-align-center.png) ![Align Right](../../../../../images/icon-align-right.png) ![Justify](../../../../../images/icon-align-justify.png) ) | Specifies the horizontal alignment of text in an element. Choose from *Left*, *Center*, *Right*, or *Justify*. |
+
+![Format the fragment's text.](./styles-reference/images/03.png)
 
 ## Background
 
-Configure the Fragment's background.
+Configure the fragment's background.
 
 | Field | Description |
 | :--- | :--- |
-| Background Color | Choose a background color from the palette. The available color palette can be configured by the Fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
+| Background Color ( ![Background Color](../../../../../images/icon-color-circle.png) ) | Choose a background color from the palette. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
 | Image Source | If set to *Direct*, users can upload a background image. If set to *Mapping*, users can choose from Documents and Media, Web Content, Blogs, or Categories. |
 | Background Image (*Direct*) | Select an image  from your library or enter an image URL. |
 | Item (*Mapping*) | Map the background to a specific item from Documents and Media, Web Content, Blogs, or Categories. Once selected, click the *Actions* button (![Actions button](../../../../../images/icon-actions.png)) to edit the item and its permissions, or view its usages. |
 | Field (*Mapping*) | Determine which of the item's fields is used for the background image. |
+
+![Configure the fragment's background.](./styles-reference/images/04.png)
 
 ```{note}
 When mapping the background to an item's field, you can only select from fields in its structure. For example, if you've selected a Web Content item, you can only select from image fields in its structure and not from images in it's content field.
@@ -72,30 +76,34 @@ When mapping the background to an item's field, you can only select from fields 
 
 ## Borders
 
-Determine the width, radius, and color of the Fragment's border.
+Determine the width, radius, and color of the fragment's border.
 
 | Field | Description |
 | :--- | :--- |
-| Border Width | Sets the width of an element's four borders. |
-| Border Radius | Defines the radius of the element's corners and allows you to add rounded corners. |
-| Border Color | Sets the color of an element's four borders. The available color palette can be configured by the Fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
+| Border Width ( ![Border Width](../../../../../images/icon-border-width.png) ) | Sets the width of an element's four borders. Click the *Units* button ( ![Units](../../../../../images/icon-code.png) ) to select the desired unit for the border width (e.g., `px`, `rem`). Click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ) to revert the field to its initial value. |
+| Border Radius ( ![Border Radius](../../../../../images/icon-corner-radius.png) ) | Defines the radius of the element's corners and allows you to add rounded corners. |
+| Border Color ( ![Border Color](../../../../../images/icon-color-circle.png) ) | Sets the color of an element's four borders. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. <!--CONFIRM WITH ECHO TEAM THAT THIS IS APPROPRIATE TO SAY. SHOULD WE JUST POINT TO STYLE BOOKS?--> |
+
+![Determine the width, radius, and color of the fragment's border.](./styles-reference/images/05.png)
 
 ## Effects
 
-Set the Fragment's opacity and determine whether it has a shadow.
+Set the fragment's opacity and determine whether it has a shadow.
 
 | Field | Description |
 | :--- | :--- |
 | Opacity | Sets the transparency level; 100 is default and 0 is transparent. |
-| Shadow | Adds a shadow around the box; can choose from a small, medium, or large shadow. |
+| Shadow ( ![Shadow](../../../../../images/icon-shadow.png) ) | Adds a shadow around the box; can choose from a small, medium, or large shadow. |
+
+![Set the fragment's opacity and determine whether it has a shadow.](./styles-reference/images/06.png)
 
 ## Liferay 7.4 U20 and Older
 
-In earlier versions than Liferay DXP 7.4 U21 or GA21, the Spacing section is split into the *Margin* and *Padding* sections.
+For 7.4 U20/GA20 and earlier versions, spacing configurations are divided into the *Margin* and *Padding* sections.
 
 ### Margin
 
-Configure the space between a Fragment's frame and the end of its surrounding context (e.g., between the frame and the edge of the page, or between the frame and the edge of its Container or Grid).
+Configure the space between a fragment's frame and the end of its surrounding context (e.g., between the frame and the edge of the page, or between the frame and the edge of its Container or Grid).
 
 | Field | Description |
 | :--- | :--- |
@@ -106,7 +114,7 @@ Configure the space between a Fragment's frame and the end of its surrounding co
 
 ### Padding
 
-Configure the space between a Fragment's frame and its content.
+Configure the space between a fragment's frame and its content.
 
 | Field | Description |
 | :--- | :--- |

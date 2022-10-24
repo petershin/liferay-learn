@@ -1,3 +1,0 @@
-# Advanced Queries
-
-Coming soon!

@@ -1,3 +1,0 @@
-# Expando
-
-Coming soon!

@@ -1,3 +1,0 @@
-# Recycle Bin
-
-Coming soon!

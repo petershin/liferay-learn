@@ -3,7 +3,6 @@ toc:
 - ./service-builder/service-builder-basics.md
 - ./service-builder/defining-entities.md
 - ./service-builder/business-logic-with-service-builder.md
-- ./service-builder/reference.md
 ---
 
 # サービスビルダー
@@ -14,7 +13,6 @@ toc:
 service-builder/service-builder-basics.md
 service-builder/defining-entities.md
 service-builder/business-logic-with-service-builder.md
-service-builder/reference.md
 ```
 
 信頼できるビジネスロジックや永続性のないアプリケーションは、たいしたアプリケーションではありません。 残念ながら、独自の永続コードを作成するには、多くの場合、かなりの時間がかかります。 サービスビルダーは、単一の`xml`ファイルからモデルレイヤー、永続レイヤー、およびサービスレイヤーを生成できるオブジェクト関係マッピングツールです。  生成されたコードは完全にカスタマイズ可能です。必要に応じて、カスタムSQLとともに独自の永続コードを記述できます。 永続コードの作成方法に関係なく、サービスビルダーを使用してアプリのビジネスロジックを実装できます。

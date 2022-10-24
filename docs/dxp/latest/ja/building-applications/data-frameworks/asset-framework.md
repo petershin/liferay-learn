@@ -1,7 +1,6 @@
 ---
 toc:
 - ./asset-framework/enabling-assets.md
-- ./asset-framework/enhancing-assets.md
 ---
 
 # アセットフレームワーク
@@ -10,7 +9,6 @@ toc:
 :maxdepth: 3
 
 asset-framework/enabling-assets.md
-asset-framework/enhancing-assets.md
 ```
 
 アセットフレームワークは、Liferayの最も強力な機能の多くを支えています。 あらゆるタイプのコンテンツとデータを表示および操作するためのツールを提供します。 たとえば、今後のイベントのリストを表示するイベント管理アプリケーションを構築する場合、アセットフレームワークを使用して、ユーザーがタグ、カテゴリー、またはコメントを追加して、エントリーをよりわかりやすくすることができます。 アセットフレームワークの使用は、セグメンテーションやワークフローなどの他の重要なフレームワークを統合するための最初のステップでもあります。
@@ -22,4 +20,3 @@ asset-framework/enhancing-assets.md
 ## 次のステップ
 
 - [アセットの有効化](./asset-framework/enabling-assets.md)
-- [アセットの強化 (近日公開！)](./asset-framework/enhancing-assets.md)

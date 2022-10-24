@@ -1,3 +1,0 @@
-# Enhancing Assets
-
-Coming soon!

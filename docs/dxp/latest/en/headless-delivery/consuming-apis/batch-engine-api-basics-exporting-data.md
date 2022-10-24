@@ -23,13 +23,13 @@ Then, follow these steps:
 
 1. To export data, you must have the fully qualified class name of the entity you are exporting. You can get the class name from the API explorer in your installation at `/o/api`. Scroll down to the *Schemas* section and note down the `x-class-name` field of the entity you want to export.
 
-1. Use the following cURL script to export Accounts from your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ExportTask_POST_ToInstance.sh` script with the fully qualified class name of *Account* and `json` as parameters. The `json` parameter denotes the format of the exported data. It also supports `jsonl` and `csv` formats.
+1. Use the following cURL script to export accounts from your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ExportTask_POST_ToInstance.sh` script with the fully qualified class name of *Account* and `json` as parameters. The `json` parameter denotes the format of the exported data. It also supports `jsonl` and `csv` formats.
 
    ```bash
    ./ExportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account json
    ```
 
-   The JSON response shows the creation of a new export task. Note down the `id` of the task:
+   The JSON response shows the creation of a new export task. Note the `id` of the task:
 
    ```bash
    {
@@ -79,25 +79,25 @@ Then, follow these steps:
 
    This downloads the exported data as a `.zip` file in the current directory. Extract it and use an appropriate application to view the data.
 
-1. You can also call the The REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. You can also call the The REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `ExportTask_POST_ToInstance` class with the following command. Replace `able` with the fully qualified name of the class.
+1. Run the `ExportTask_POST_ToInstance` class. Replace `able` with the fully qualified name of the class.
 
    ```bash
    java -classpath .:* -DclassName=able ExportTask_POST_ToInstance
    ```
 
-   To export `Account` data, the command is as follows:
+   For example, export `Account` data:
 
    ```bash
    java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account ExportTask_POST_ToInstance
    ```
 
-   Note down the `id` of the export task from the JSON response.
+   Note the `id` of the export task from the JSON response.
 
 1. Run the `ExportTask_GET_ById` class with the following command. Replace `1234` with the ID of your export task.
 
@@ -105,7 +105,7 @@ Then, follow these steps:
    java -classpath .:* -DexportTaskId=1234 ExportTask_GET_ById
    ```
 
-1. Once the `executeStatus` shows `COMPLETED`, you can download the data by running the `ExportTaskContent_GET_ById` class with the following command. Replace `1234` with the ID of your export task.
+1. Once the `executeStatus` shows `COMPLETED`, you can download the data by running the `ExportTaskContent_GET_ById` class. Replace `1234` with the ID of your export task.
 
    ```bash
    java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
@@ -184,7 +184,7 @@ Code:
 
 ### ExportTask_GET_ById.java
 
-Run the `ExportTask_GET_ById` class with the following command. Replace `1234` with the ID of your export task.
+Run the `ExportTask_GET_ById` class. Replace `1234` with the ID of your export task.
 
 Command:
 
@@ -202,7 +202,7 @@ Code:
 
 ## Exporting Data from a Site
 
-You can export data from a *Site* by executing the following cURL or Java command. The example exports blog posts from a site. [Find your Site’s ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) and replace `1234` with it. When using another entity, you must also update the fully qualified class name parameter in the cURL script.
+You can export data from a site by executing the following cURL or Java command. The example below exports blog posts from a site. [Find your Site’s ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) and replace `1234` with it. When using another entity, you must also update the fully qualified class name parameter in the cURL script.
 
 ### ExportTask_POST_ToSite.sh
 
@@ -220,15 +220,13 @@ Code:
 
 ### ExportTask_POST_ToSite.java
 
-Run the `ExportTask_POST_ToSite` class with the following command. Replace `1234` with your site's ID and `able` with the fully qualified name of the class you want to export.
-
-Command:
+Run the `ExportTask_POST_ToSite` class. Replace `1234` with your site's ID and `able` with the fully qualified name of the class you want to export:
 
 ```bash
 java -classpath .:* -DsiteId=1234 -DclassName=able ExportTask_POST_ToSite
 ```
 
-To export `BlogPosting` data, the command is as follows:
+For example, export `BlogPosting` data: 
 
 ```bash
 java -classpath .:* -DsiteId=1234 -DclassName=com.liferay.headless.delivery.dto.v1_0.BlogPosting ExportTask_POST_ToSite
@@ -246,7 +244,7 @@ Code:
 The second parameter is `json` and denotes the output format of the exported data. You can also use `jsonl` and `csv` here. If using CSV, it is mandatory to specify the fields you want to export as a comma separated string and pass it as the fifth parameter in the `exportTaskResource.postExportTask()` method.
 ```
 
-The JSON response displays information of the newly created export task. Note down the `id` to keep track of its `executeStatus`. Once completed, you can execute `ExportTaskContent_GET_ById.[java|sh]` with the export task ID to download the data.
+The JSON response displays information of the newly created export task. Note the `id` to keep track of its `executeStatus`. Once completed, you can execute `ExportTaskContent_GET_ById.[java|sh]` with the export task ID to download the data.
 
 ## Get Contents of the Exported Data
 

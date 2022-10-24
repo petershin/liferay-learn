@@ -9,7 +9,7 @@ Liferay's Headless Batch Engine provides REST APIs to import and export data. Ca
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+Then follow these steps:
 
 1. Download and unzip [Batch Engine API Basics](./liferay-g4j2.zip).
 
@@ -23,13 +23,13 @@ Then, follow these steps:
 
 1. To import data, you must have the fully qualified class name of the entity you are importing. You can get the class name from the API explorer in your installation at `/o/api`. Scroll down to the *Schemas* section and note down the `x-class-name` field of the entity you want to import.
 
-1. Use the following cURL script to import Accounts to your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ImportTask_POST_ToInstance.sh` script with the fully qualified class name of *Account* as a parameter.
+1. Use the following cURL script to import accounts to your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ImportTask_POST_ToInstance.sh` script with the fully qualified class name of *Account* as a parameter.
 
    ```bash
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
    ```
 
-   The JSON response shows the creation of a new import task. Note down the `id` of the task:
+   The JSON response shows the creation of a new import task. Note the `id` of the task:
 
    ```bash
    {
@@ -74,31 +74,31 @@ Then, follow these steps:
 
    If the `executeStatus` is `COMPLETED`, you can verify the imported data. If not, execute the command again to ensure the task has finished execution. If the `executeStatus` shows `FAILED`, check the `errorMessage` field to understand what went wrong.
 
-1. Verify the imported data by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and navigating to *Control Panel* &rarr; *Accounts*. See that two new Accounts have been added.
+1. Verify the imported data by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and navigating to *Control Panel* &rarr; *Accounts*. See that two new accounts have been added.
 
-   ![Verify that two new Accounts have been added.](./batch-engine-api-basics/images/01.png)
+   ![Verify that two new accounts have been added.](./batch-engine-api-basics/images/01.png)
 
-1. You can also call the The REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. You can also call the The REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `ImportTask_POST_ToInstance` class with the following command. Replace `able` with the fully qualified name of the class, and `baker` with the JSON data you want to import.
+1. Run the `ImportTask_POST_ToInstance` class. Replace `able` with the fully qualified name of the class and `baker` with the JSON data you want to import.
 
    ```bash
    java -classpath .:* -DclassName=able -Ddata=baker ImportTask_POST_ToInstance
    ```
 
-   To import `Account` data, the command is as follows:
+   For example, import `Account` data: 
 
    ```bash
    java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"name\": \"Able\", \"type\": \"business\"}, {\"name\": \"Baker\", \"type\": \"guest\"}]" ImportTask_POST_ToInstance
    ```
 
-   Note down the `id` of the import task from the JSON response.
+   Note the `id` of the import task from the JSON response.
 
-1. Run the `ImportTask_GET_ById` class with the following command. Replace `1234` with the ID of your import task. Once the `executeStatus` shows `COMPLETED`, you can verify the data as shown in the steps above.
+1. Run the `ImportTask_GET_ById` class. Replace `1234` with the ID of your import task. Once the `executeStatus` shows `COMPLETED`, you can verify the data as shown in the steps above.
 
    ```bash
    java -cp .:* -DimportTaskId=1234 ImportTask_GET_ById
@@ -106,7 +106,7 @@ Then, follow these steps:
 
 ## Examine the cURL Command
 
-The `ImportTask_POST_ToInstance.sh` script calls the REST service with a cURL command.
+The `ImportTask_POST_ToInstance.sh` script calls the REST service using cURL.
 
 ```{literalinclude} ./batch-engine-api-basics/resources/liferay-g4j2.zip/curl/ImportTask_POST_ToInstance.sh
     :language: bash
@@ -180,7 +180,7 @@ Code:
 
 ### ImportTask_GET_ById.java
 
-Run the `ImportTask_GET_ById` class with the following command. Replace `1234` with the ID of your import task.
+Run the `ImportTask_GET_ById` class. Replace `1234` with the ID of your import task.
 
 Command:
 
@@ -198,7 +198,7 @@ Code:
 
 ## Importing Data to a Site
 
-You can import data to a *Site* by executing the following cURL or Java command. The example imports blog posts to a site. [Find your Site’s ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) and replace `1234` with it. When using another entity, you must also update the fully qualified class name parameter and the data to import in the cURL script.
+You can import data to a site by executing the following cURL or Java command. The example imports blog posts to a site. [Find your Site’s ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) and replace `1234` with it. When using another entity, you must also update the fully qualified class name parameter and the data to import in the cURL script.
 
 ### ImportTask_POST_ToSite.sh
 
@@ -216,7 +216,7 @@ Code:
 
 ### ImportTask_POST_ToSite.java
 
-Run the `ImportTask_POST_ToSite` class with the following command. Replace `1234` with your site's ID, `able` with the fully qualified name of the class, and `baker` with the JSON data you want to import.
+Run the `ImportTask_POST_ToSite` class. Replace `1234` with your site's ID, `able` with the fully qualified name of the class, and `baker` with the JSON data you want to import.
 
 Command:
 
@@ -224,7 +224,7 @@ Command:
 java -classpath .:* -DsiteId=1234 -DclassName=able -Ddata=baker ImportTask_POST_ToSite
 ```
 
-To import `BlogPosting` data, the command is as follows:
+For example, import `BlogPosting` data: 
 
 ```bash
 java -classpath .:* -DsiteId=1234 -DclassName=com.liferay.headless.delivery.dto.v1_0.BlogPosting -Ddata="[{\"articleBody\": \"Foo\", \"headline\": \"Able\"}, {\"articleBody\": \"Bar\", \"headline\": \"Baker\"}]" ImportTask_POST_ToSite
@@ -238,11 +238,11 @@ Code:
    :lines: 8-22
 ```
 
-The JSON response displays information of the newly created import task. Note down the `id` to keep track of its `executeStatus`.
+The JSON response displays information from the newly created import task. Note the `id` to keep track of its `executeStatus`.
 
 ## Put the Imported Data
 
-You can use the following cURL or Java command to completely overwrite existing data using the Batch Engine. The example shows updating existing Account data. When using another entity, you must update the fully qualified class name parameter and the data to overwrite in the cURL script.
+You can use the following cURL or Java command to completely overwrite existing data using the Batch Engine. The example shows updating existing account data. When using another entity, you must update the fully qualified class name parameter and the data to overwrite in the cURL script.
 
 ### ImportTask_PUT_ById.sh
 
@@ -260,7 +260,7 @@ Code:
 
 ### ImportTask_PUT_ById.java
 
-Run the `ImportTask_PUT_ById` class with the following command. Replace `able` with the fully qualified name of the class, and `baker` with the JSON data you want to overwrite with. The data should contain the IDs of the entity you want to overwrite.
+Run the `ImportTask_PUT_ById` class. Replace `able` with the fully qualified name of the class, and `baker` with the JSON data to overwrite what's there. The data should contain the IDs of the entity you want to overwrite.
 
 Command:
 
@@ -268,7 +268,7 @@ Command:
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_PUT_ById
 ```
 
-For instance, if you want to overwrite existing `Account` data, replace `1234` and `5678` with the IDs of the existing Accounts. The command is as follows:
+For instance, if you want to overwrite existing `Account` data, replace `1234` and `5678` with the IDs of the existing Accounts: 
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\" :1234, \"name\": \"Bar\", \"type\": \"business\"}, {\"id\": 5678, \"name\": \"Goo\", \"type\": \"guest\"}]" ImportTask_PUT_ById
@@ -284,7 +284,7 @@ Code:
 
 ## Delete the Imported Data
 
-You can use the following cURL or Java command to delete existing data using the Batch Engine. The example deletes Account data. When using another entity, you must update the fully qualified class name parameter and also the data to delete in the cURL script.
+You can use the following cURL or Java command to delete existing data using the Batch Engine. The example deletes account data. When using another entity, you must update the fully qualified class name parameter and also the data to delete in the cURL script.
 
 ### ImportTask_DELETE_ById.sh
 
@@ -302,7 +302,7 @@ Code:
 
 ### ImportTask_DELETE_ById.java
 
-Run the `ImportTask_DELETE_ById` class with the following command. Replace `able` with the fully qualified name of the class, and `baker` with the JSON data you want to overwrite with. The data should contain the IDs of the entity you want to delete.
+Run the `ImportTask_DELETE_ById` class. Replace `able` with the fully qualified name of the class, and `baker` with the JSON data to overwrite what's there. The data should contain the IDs of the entity you want to delete.
 
 Command:
 
@@ -310,7 +310,7 @@ Command:
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_DELETE_ById
 ```
 
-For instance, if you want to delete `Account` data, replace `1234` and `5678` with the IDs of the existing accounts. The command is as follows:
+For instance, if you want to delete `Account` data, replace `1234` and `5678` with the IDs of the existing accounts: 
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\": 1234}, {\"id\": 5678}]" ImportTask_DELETE_ById

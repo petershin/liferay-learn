@@ -10,7 +10,7 @@ Objects provides two types of relationships:
 
 <!--TASK: Add One to One after it's been implemented-->
 
-**One to Many**: You can relate one object entry to multiple object entries. When selected, a new field is added to entries on the child side of the relationship (i.e., the 'many' side), while a table is added to the 'parent' side (i.e., the 'one' side). On the child side, the new field can be added to a [Fields Tab](./designing-object-layouts.md#adding-fields-tabs) in the object's custom layout and relates its entries to a single entry on the parent side of the relationship. On the parent side, the new table can be added to a [Relationships Tab](./designing-object-layouts.md#adding-relationships-tabs) in the object's custom layout and lists all entries related to the current parent entry.
+**One to Many**: You can relate one object entry to multiple object entries. When selected, a new field is added to entries on the child side of the relationship (i.e., the 'many' side), while a table is added to the 'parent' side (i.e., the 'one' side). On the child side, the new field can be added to a [Fields Tab](./designing-object-layouts.md#adding-fields-tabs) in the object's custom layout to relate its entries to an entry on the parent side of the relationship. On the parent side, the new table can be added to a [Relationships Tab](./designing-object-layouts.md#adding-relationships-tabs) in the object's custom layout and lists all entries related to the current parent entry.
 
 **Many to Many**: You can relate multiple object entries with multiple object entries. When selected, a new database table is created for both sides of the relationship. This table can be added to a [Relationships Tab](./designing-object-layouts.md#adding-relationships-tabs) in the object's custom layout and lists all related entries.
 
@@ -68,7 +68,7 @@ Available options include *Prevent*, *Disassociate*, and *Cascade*.
 
 {bdg-secondary}`For 7.4 U47+/GA47+`
 
-In some scenarios, you may want to make relationship fields mandatory. For example, if you're creating a Ticket object, you may want to define a mandatory relationship field for selecting an 'assignee'. Or if you want to [restrict access to object data](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) by account, you should make the object's relationship with the Account object mandatory.
+In some scenarios, you may want to make relationship fields mandatory. For example, if you're creating a Ticket object, you may want to define a mandatory relationship field for selecting an 'assignee'. Or if you want to [restrict access to object data](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) by account, you should make the object's relationship with the account object mandatory.
 
 Follow these steps to make a relationship field mandatory:
 

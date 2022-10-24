@@ -91,7 +91,7 @@ Also, the first tab in a layout cannot contain relationships, and a Relationship
 1. Select the relationship you want to display in the tab. Only one relationship can be displayed per tab.
 
    ```{note}
-   You can only select the Relationships type if the layout has at least one Fields tab. A Relationships tab cannot be the first tab in an Object layout, because relationships cannot be set at entry creation. An entry must first exist before it can be related to another Object entry.
+   You can only select the Relationships type if the layout has at least one Fields tab. A Relationships tab cannot be the first tab in an object layout, because relationships cannot be set at entry creation. An entry must first exist before it can be related to another object entry.
    ```
 
    ![For tab type, select Relationships, and then choose either One to Many or Many to Many to determine the relationship table.](./designing-object-layouts/images/08.png)
@@ -99,7 +99,7 @@ Also, the first tab in a layout cannot contain relationships, and a Relationship
 1. Click *Save*.
 
 ```{important}
-If the Object has a *Many to Many* relationship with itself, you can add two Relationship tabs to its layout. Each tab corresponds to one side of the relationship. For example, consider a ticket Object that relates multiple tickets with one another. You can define two Relationship tabs for keeping track of tickets and their dependencies. One tab would list all tickets that the current ticket depends on, while the other tab would list all tickets that the current ticket is a dependency of. See [Defining Object Relationships](./defining-object-relationships.md) for more information about relationships.
+If the object has a *Many to Many* relationship with itself, you can add two Relationship tabs to its layout. Each tab corresponds to one side of the relationship. For example, consider a ticket object that relates multiple tickets with one another. You can define two relationship tabs for keeping track of tickets and their dependencies. One tab would list all tickets that the current ticket depends on, while the other tab would list all tickets that depend on the current. See [Defining Object Relationships](./defining-object-relationships.md) for more information about relationships.
 ```
 
 ## Adding Categorization

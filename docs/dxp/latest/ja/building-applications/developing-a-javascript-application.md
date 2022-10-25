@@ -1,8 +1,6 @@
 ---
 toc:
 - ./developing-a-javascript-application/using-react.md
-- ./developing-a-javascript-application/using-angular.md
-- ./developing-a-javascript-application/using-vuejs.md
 ---
 
 # JavaScriptアプリケーションの開発
@@ -11,8 +9,6 @@ toc:
 :maxdepth: 3
 
 developing-a-javascript-application/using-react.md
-developing-a-javascript-application/using-angular.md
-developing-a-javascript-application/using-vuejs.md
 ```
 
 ```{raw} html

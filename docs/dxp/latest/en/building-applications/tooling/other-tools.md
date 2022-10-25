@@ -4,7 +4,6 @@ toc:
 - ./other-tools/liferay-npm-bundler.md
 - ./other-tools/theme-generator.md
 - ./other-tools/screens.md
-- ./other-tools/mobile-sdk.md
 - ./other-tools/push.md
 - ./other-tools/sync.md
 ---
@@ -16,7 +15,6 @@ other-tools/liferay-cli-tool.md
 other-tools/liferay-npm-bundler.md
 other-tools/theme-generator.md
 other-tools/screens.md
-other-tools/mobile-sdk.md
 other-tools/push.md
 other-tools/sync.md
 ```
@@ -24,7 +22,6 @@ other-tools/sync.md
 * [Liferay CLI Tool](./other-tools/liferay-cli-tool.md)
 * [Theme Generator](./other-tools/theme-generator.md)
 * [Screens](./other-tools/screens.md)
-* [Mobile SDK](./other-tools/mobile-sdk.md)
 * [Push](./other-tools/push.md)
 * [Sync](./other-tools/sync.md)
 

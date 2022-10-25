@@ -30,15 +30,15 @@ using-fragments/managing-fragments.md
 using-fragments/propagating-fragment-changes.md
 ```
 
-Page *Fragments* are extensible and reusable drag-and-drop elements you can use to build [Content Pages](../using-content-pages.md) and Templates (i.e., [Masters](../defining-headers-and-footers/master-page-templates.md), [Pages](../adding-pages/creating-a-page-template.md), [Display Pages](../../displaying-content/using-display-page-templates.md)). They can provide both structure and functionality to a page and are built using CSS, HTML, and JavaScript.
+Page *fragments* are extensible and reusable drag-and-drop elements you can use to build [content pages](../using-content-pages.md) and their related templates (i.e., [Masters](../defining-headers-and-footers/master-page-templates.md), [Pages](../adding-pages/creating-a-page-template.md), [Display Pages](../../displaying-content/using-display-page-templates.md)). They are built using CSS, HTML, and JavaScript and can provide both structure and functionality to your pages.
 
-![Build Content Pages and Templates with Fragments.](./using-fragments/images/01.png)
+![Build content pages and templates with fragments.](./using-fragments/images/01.png)
 
-Liferay provides a variety of Fragments out-of-the-box. However, you can also develop custom Fragments using either the [Page Fragment editor](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md) or [Fragments Toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md). Additionally, you can [embed Liferay widgets](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#including-widgets-within-a-fragment) into Fragments or add editable fields. See [Developing Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn more.
+Liferay provides a variety of fragments out-of-the-box. However, you can also develop custom fragments using either the [page fragment editor](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md) or [Fragments Toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md). Additionally, you can [embed Liferay widgets](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#including-widgets-within-a-fragment) into fragments or add editable fields. See [Developing Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn more.
 
-All Page Fragments are organized into Sets, which group related Fragments for easier management and use. Each Fragment Set can also include resources that can be referenced directly in its Fragments' code. See [Including Default Resources in Page Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md) for more information.
+All page fragments are organized into *sets*, which group related fragments for easier management and use. Each fragment set can also include resources that can be referenced directly in its fragments' code. See [Including Default Resources in Page Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md) for more information.
 
-After adding Fragments to a Page or Template, you can configure and customize them and their sub-elements. These options can vary, though some are common to all. See [Configuring Fragments](./using-fragments/configuring-fragments.md) to learn more about available options.
+After adding fragments to a page or template, you can configure and customize them and their sub-elements. These options can vary, though some are common to all. See [Configuring Fragments](./using-fragments/configuring-fragments.md) to learn more about available options.
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -52,10 +52,7 @@ After adding Fragments to a Page or Template, you can configure and customize th
 :::
 
 :::{grid-item-card} Configuring Fragments
-
-* [General Settings Reference](using-fragments/configuring-fragments/general-settings-reference.md)
-* [Styles Reference](using-fragments/configuring-fragments/styles-reference.md)
-* [Fragment Sub-Elements Reference](using-fragments/configuring-fragments/fragment-sub-elements-reference.md)
+:link: ./using-fragments/configuring-fragments.md
 :::
 
 :::{grid-item-card} Mapping and Linking Fragment Elements

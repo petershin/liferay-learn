@@ -1,7 +1,6 @@
 ---
 toc:
 - ./other-tools/liferay-cli-tool.md
-- ./other-tools/liferay-js-generator.md
 - ./other-tools/liferay-npm-bundler.md
 - ./other-tools/theme-generator.md
 - ./other-tools/maven-plugins.md
@@ -15,7 +14,6 @@ toc:
 ```{toctree}
 :maxdepth: 4
 other-tools/liferay-cli-tool.md
-other-tools/liferay-js-generator.md
 other-tools/liferay-npm-bundler.md
 other-tools/theme-generator.md
 other-tools/maven-plugins.md
@@ -26,7 +24,6 @@ other-tools/sync.md
 ```
 
 * [Liferay CLI Tool](./other-tools/liferay-cli-tool.md)
-* [Liferay JS Generator](./other-tools/liferay-js-generator.md)
 * [Theme Generator](./other-tools/theme-generator.md)
 * [Maven Plugins](./other-tools/maven-plugins.md)
 * [Screens](./other-tools/screens.md)

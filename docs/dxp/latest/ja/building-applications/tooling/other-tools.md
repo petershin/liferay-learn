@@ -3,9 +3,6 @@ toc:
 - ./other-tools/liferay-cli-tool.md
 - ./other-tools/liferay-npm-bundler.md
 - ./other-tools/theme-generator.md
-- ./other-tools/screens.md
-- ./other-tools/push.md
-- ./other-tools/sync.md
 ---
 
 # Other Tools
@@ -15,9 +12,6 @@ toc:
 other-tools/liferay-cli-tool.md
 other-tools/liferay-npm-bundler.md
 other-tools/theme-generator.md
-other-tools/screens.md
-other-tools/push.md
-other-tools/sync.md
 ```
 
 * [Liferay CLI ツール](./other-tools/liferay-cli-tool.md)

@@ -1,3 +1,0 @@
-# Sync
-
-Coming soon!

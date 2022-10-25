@@ -1,18 +1,18 @@
 # Category Facet
 
-The Category Facet narrows search results for any categorized assets that match the search query keywords. The categories of each matching result are aggregated as facet terms.
+The Category Facet narrows search results for categorized assets that match the search query keywords. The each matching result's categories are aggregated as facet terms.
 
 ![Example of category facet results.](./category-facet/images/02.png)
 
 ## Configuring the Category Facet
 
-To configure the Category Facet, open the Options menu (![Options](../../../images/icon-app-options.png)) of the facet and click *Configuration*.
+To configure the Category Facet, open the facet's _Options_ menu (![Options](../../../images/icon-app-options.png)) and click *Configuration*.
 
-![Click on the Configuration option.](./category-facet/images/03.png)
+![Click the Configuration option.](./category-facet/images/03.png)
 
 The Display Settings appear first:
 
-**Display Template:** Choose between *Default*, *Cloud Layout*, *Compact Layout*, *Label Layout*, and *Vocabulary Layout* (available in 7.4 Update/GA 47+). The Default Layout shows checkboxes next to each term but the Compact layout does not. The Label layout shows small clickable labels for each term. The [Vocabulary Layout](#display-facet-terms-categories-by-vocabulary) shows the facet terms (categories) organized by vocabulary.
+**Display Template:** Choose between *Default*, *Cloud Layout*, *Compact Layout*, *Label Layout*, and *Vocabulary Layout* (available in 7.4 Update/GA 47+). The Default Layout shows checkboxes next to each term, but the Compact layout does not. The Label layout shows small clickable labels for each term. The [Vocabulary Layout](#display-facet-terms-categories-by-vocabulary) shows the facet terms (categories) organized by vocabulary.
 
 The Advanced Configuration section contains additional options: 
 
@@ -26,7 +26,7 @@ To achieve AND style selection between facet widgets, you must configure a diffe
 
 **Frequency Threshold:** Set the minimum frequency required for terms to appear in the facet term list. For example, if the facet's frequency threshold is set to 3, a term with two matching results doesn't appear in the term result list.
 
-**Display Frequencies:** Choose whether or not to display the term frequencies.
+**Display Frequencies:** Choose whether to display the term frequencies.
 
 ### Displaying and Filtering Facet Terms by Vocabulary
 
@@ -42,7 +42,7 @@ Display categories under their vocabulary by selecting the Vocabulary Layout in 
 
 #### Filter Facet Terms (Categories) by Vocabulary
 
-Select which vocabularies and categories to display in the facet. To enable this capability, switch the configuration in System Settings &rarr; Search &rarr; Category Facet Field from the default field, `assetCategoryIds`, to the `assetVocabularyCategoryIds` field. This setting specifies the field that's used to create the aggregations in the Category Facet, and setting `assetVocabularyCategoryIds` activates the vocabulary settings within the Category Facet widget's configuration screen. 
+Select the vocabularies and categories to display in the facet. To enable this, switch the configuration in System Settings &rarr; Search &rarr; Category Facet Field from the default field, `assetCategoryIds`, to the `assetVocabularyCategoryIds` field. This setting specifies the field used to create the aggregations in the Category Facet. Setting `assetVocabularyCategoryIds` activates the vocabulary settings within the Category Facet widget's configuration screen. 
 
 ```{important}
 If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 47 and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
@@ -55,7 +55,7 @@ With this behavior you can provide a powerful search facet experience: see the [
 
 ## Example: Creating a Hierarchic Filtering Experience in the Category Facet Using Vocabularies
 
-Consider a commerce portal for buying auto parts. Each part is a commerce product that's categorized in distinct vocabularies:
+Consider a commerce portal for buying auto parts. Each part is a commerce product categorized in distinct vocabularies:
 
 - Vocabulary: Vehicle System
 
@@ -73,7 +73,7 @@ Consider a commerce portal for buying auto parts. Each part is a commerce produc
    - Premium
    - Standard
 
-When your site users select Engine and Exhaust System, they expect to see products matching either category. If they then select the Premium category from the Quality vocabulary, they expect the results to be narrowed to just premium auto parts for the engine and exhaust systems. This can be accomplished out-of-the-box as of 7.4 Update/GA 47.
+When users select Engine and Exhaust System, they expect to see products matching either category. If they then select the Premium category from the Quality vocabulary, they expect the results to be narrowed to just premium auto parts for the engine and exhaust systems. This can be accomplished out-of-the-box as of 7.4 Update/GA 47.
 
 To configure the use case above,
 
@@ -86,7 +86,7 @@ To configure the use case above,
    ```
 
    ```{note}
-   There's an existing vocabulary created by the site template during site initialization (named Foo after the site): it's better named _Vehicle Systems_  to match the example you're building and characterize the categories better (e.g., Brake System). However, the Foo vocabulary's categories are referenced by existing Commerce products, so it cannot be edited. 
+   There's an existing vocabulary created by the site template during site initialization (named Foo after the site): it's better named _Vehicle Systems_ to match the example you're building and characterize the categories better (e.g., Brake System). However, the Foo vocabulary's categories are referenced by existing Commerce products, so it cannot be edited. 
    ```
 
    ![Create a Quality vocabulary in the global site.](./category-facet/images/07.png)
@@ -120,14 +120,14 @@ To configure the use case above,
 
 1. On the Foo site's home page add a Category Facet widget configured to show only the Foo vocabulary's categories. 
 
-   - Click the plus icon at the top of the page (![Plus](../../../images/icon-plus.png)).
-   - Drag a Category Facet widget directly above or below the existing one.
-   - Open the widget configuration screen (![App Options](../../../images/icon-app-options.png)).
+   - Click the *plus icon* at the top of the page (![Plus](../../../images/icon-plus.png)).
+   - Drag a *Category Facet* widget directly above or below the existing one.
+   - Open the *Widget Configuration* screen (![App Options](../../../images/icon-app-options.png)).
    - Change the Category Parameter Name to _foocategories_.
    - Click the _Select Vocabularies_ radio button. Expand _Global_ and select _Foo_.
    - Click _Save_.
 
-1. Using a similar procedure, configure the original Category Facet widget to display only the Quality vocabulary's categories. Since you already changed the Category Parameter Name of the new Category Facet widget, you can leave the default value in the existing widget.
+1. Using a similar procedure, configure the original Category Facet widget to display only the Quality vocabulary's categories. Since you already changed the new Category Facet widget's Category Parameter Name, you can leave the default value in the existing widget.
 
 1. Refresh the page. Selecting the Brake System and Suspension categories in the Category Facet widget showing the Foo vocabulary ensures that the displayed products match the category of Brake System OR Suspension.
 

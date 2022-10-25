@@ -94,7 +94,7 @@ System Settings can also be configured via [OSGi configuration file](../system-a
 
 **Configuration File:** `com.liferay.portal.search.configuration.CategoryFacetConfiguration.config`
 
-The Category Facet Field entry contains one setting: Category Facet Field. This setting specifies the indexed field to use when creating aggregations in the Category Facet. The default value is `assetCategoryIds`: you must instead use `assetVocabularyCategoryIds` to enable selecting which vocabularies and categories to display in the Category Facet widget. Learn more in the [Category Facet documentation](./search-pages-and-widgets/search-facets/category-facet.md).
+The Category Facet Field entry contains one setting: Category Facet Field. This setting specifies the indexed field to use when creating aggregations in the Category Facet. The default value is `assetCategoryIds`. You must instead use `assetVocabularyCategoryIds` to enable selecting which vocabularies and categories to display in the Category Facet widget. Learn more in the [Category Facet documentation](./search-pages-and-widgets/search-facets/category-facet.md).
 
 ### Default Keyword Query
 

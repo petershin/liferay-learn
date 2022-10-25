@@ -43,11 +43,11 @@ A facet aggregates search results by a common characteristic, or facet term.
 
 ## Using Facets
 
-Click one or more facet terms to efficiently filter through the search results. For example, if you search for documents related to Apollo, you can check a term in the Type facet.
+Click one or more facet terms to filter through the search results efficiently. For example, if you search for documents related to Apollo, you can check a term in the Type facet.
 
 ![Apollo search results filtered by type.](./search-facets/images/02.png)
 
-To specifically look for documents related to Apollo 11, you might also check the term in the folder facet.
+To look specifically for documents related to Apollo 11, you might also check the term in the folder facet.
 
 ![Apollo search results filtered by folder.](./search-facets/images/03.png)
 

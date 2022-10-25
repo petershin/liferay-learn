@@ -6,7 +6,7 @@ The Tag Facet narrows search results for any assets with tags that match the sea
 
 ## Configuring the Tag Facet
 
-To configure the Tag Facet, open the Options menu (![Options](../../../images/icon-app-options.png)) of the facet and click *Configuration*.
+To configure the Tag Facet, open the facet's Options menu (![Options](../../../images/icon-app-options.png)) and click *Configuration*.
 
 ![Click on the Configuration option.](./tag-facet/images/03.png)
 

@@ -4,12 +4,10 @@
 
 1. テーブルを変更してデータを保持するための[アップグレードプロセス](../../../data-frameworks/upgrade-processes.md)を作成するか、または
 
-2. `cleanServiceBuilder` [Gradleタスク](../../../tooling/other-tools/gradle-plugins.md)（MavenとAntでもサポートされています）を実行します。これにより、テーブルが削除され、次にアプリがデプロイされたときにテーブルが再作成されます。
+2. `cleanServiceBuilder` Gradleタスク（MavenとAntでもサポートされています）を実行します。これにより、テーブルが削除され、次にアプリがデプロイされたときにテーブルが再作成されます。
 
 リリースされたアプリケーションがあり、ユーザーデータを保持する必要がある場合は、最初のオプションを使用します。 開発中に新しい列を追加する場合は、2番目のオプションを使用します。
 
 ## 関連トピック
 
 [アップグレードのプロセス](../../../data-frameworks/upgrade-processes.md)
-
-[Gradleプラグイン](../../../tooling/other-tools/gradle-plugins.md)

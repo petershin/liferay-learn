@@ -6,7 +6,6 @@ toc:
 - ./other-tools/intellij-plugin.md
 - ./other-tools/theme-generator.md
 - ./other-tools/maven-plugins.md
-- ./other-tools/gradle-plugins.md
 - ./other-tools/screens.md
 - ./other-tools/mobile-sdk.md
 - ./other-tools/push.md
@@ -22,7 +21,6 @@ other-tools/liferay-npm-bundler.md
 other-tools/intellij-plugin.md
 other-tools/theme-generator.md
 other-tools/maven-plugins.md
-other-tools/gradle-plugins.md
 other-tools/screens.md
 other-tools/mobile-sdk.md
 other-tools/push.md
@@ -34,7 +32,6 @@ other-tools/sync.md
 * [IntelliJ Plugin](./other-tools/intellij-plugin.md)
 * [Theme Generator](./other-tools/theme-generator.md)
 * [Maven Plugins](./other-tools/maven-plugins.md)
-* [Gradle Plugins](./other-tools/gradle-plugins.md)
 * [Screens](./other-tools/screens.md)
 * [Mobile SDK](./other-tools/mobile-sdk.md)
 * [Push](./other-tools/push.md)

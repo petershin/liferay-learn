@@ -4,12 +4,10 @@ As you develop an application, you might need to add fields to your database. Th
 
 1. Write an [upgrade process](../../../data-frameworks/upgrade-processes.md) to modify the tables and preserve the data, or
 
-2. Run the `cleanServiceBuilder` [Gradle task](../../../tooling/other-tools/gradle-plugins.md) (also supported on Maven and Ant), which drops your tables so they get re-created the next time your app is deployed. 
+2. Run the `cleanServiceBuilder` Gradle task (also supported on Maven and Ant), which drops your tables so they get re-created the next time your app is deployed. 
 
 Use the first option if you have a released application and you must preserve user data. Use the second option if you're adding new columns during development. 
 
 ## Related Topics
 
 [Upgrade Processes](../../../data-frameworks/upgrade-processes.md) 
-
-[Gradle DB Support Plugin](../../../tooling/other-tools/gradle-plugins.md)

@@ -17,7 +17,6 @@ toc:
 
 ```{toctree}
 :maxdepth: 4
-other-tools/fragments-cli.md
 other-tools/liferay-cli-tool.md
 other-tools/liferay-js-generator.md
 other-tools/liferay-npm-bundler.md
@@ -31,7 +30,6 @@ other-tools/push.md
 other-tools/sync.md
 ```
 
-* [フラグメントCLI](./other-tools/fragments-cli.md)
 * [Liferay CLI ツール](./other-tools/liferay-cli-tool.md)
 * [Liferay JS Generator](./other-tools/liferay-js-generator.md)
 * [IntelliJプラグイン](./other-tools/intellij-plugin.md)

@@ -1,3 +1,0 @@
-# Fragments CLI
-
-Coming soon!

@@ -2,7 +2,7 @@
 toc:
 - ./building-applications/objects.md
 - ./building-applications/developing-a-javascript-application.md
-- ./building-applications/developing-a-rest-web-api.md
+- ../headless-delivery/apis-with-rest-builder.md
 - ./building-applications/developing-a-java-web-application.md
 - ./building-applications/core-frameworks.md
 - ./building-applications/data-frameworks.md
@@ -19,7 +19,7 @@ toc:
 
 building-applications/objects.md
 building-applications/developing-a-javascript-application.md
-building-applications/developing-a-rest-web-api.md
+../headless-delivery/apis-with-rest-builder.md
 building-applications/developing-a-java-web-application.md
 building-applications/core-frameworks.md
 building-applications/data-frameworks.md

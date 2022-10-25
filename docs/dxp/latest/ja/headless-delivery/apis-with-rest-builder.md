@@ -1,8 +1,6 @@
 ---
 toc:
 - ./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
-- ./apis-with-rest-builder/query-design.md
-- ./apis-with-rest-builder/reference.md
 ---
 
 # RESTビルダーを使用したAPI
@@ -11,8 +9,6 @@ toc:
 :maxdepth: 3
 
 apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
-apis-with-rest-builder/query-design.md
-apis-with-rest-builder/reference.md
 ```
 
 RESTビルダーとは、ローカルAPIをWeb上で利用しやすくするためのコード生成ツールです。 [OpenAPI仕様](https://www.openapis.org/) を使用し、RESTと [GraphQL](https://graphql.org/) APIを生成します。
@@ -24,5 +20,3 @@ Liferay Workspaceにある`impl`モジュールからGradleタスク`buildREST`�
 ## 次のステップ
 
 - [RESTビルダーを使用したAPIの作成と実装](./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md)
-- [クエリデザイン](./apis-with-rest-builder/query-design.md)
-- [参考](./apis-with-rest-builder/reference.md)

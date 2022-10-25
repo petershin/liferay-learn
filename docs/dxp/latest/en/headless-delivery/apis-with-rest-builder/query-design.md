@@ -1,3 +1,0 @@
-# Query Design
-
-Coming soon!

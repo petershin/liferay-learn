@@ -1,8 +1,6 @@
 ---
 toc:
 - ./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
-- ./apis-with-rest-builder/query-design.md
-- ./apis-with-rest-builder/reference.md
 ---
 # APIs with REST Builder
 
@@ -10,8 +8,6 @@ toc:
 :maxdepth: 3
 
 apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
-apis-with-rest-builder/query-design.md
-apis-with-rest-builder/reference.md
 ```
 
 REST Builder is a code generation tool that makes it easy for you to take your local APIs and make them available on the web. It uses the [OpenAPI Specification](https://www.openapis.org/) to generate REST and [GraphQL](https://graphql.org/) APIs.
@@ -23,5 +19,3 @@ You run REST Builder using the Gradle task `buildREST` from your `impl` module i
 ## Next Steps
 
 - [Producing and Implementing APIs with REST Builder](./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md)
-- [Query Design](./apis-with-rest-builder/query-design.md)
-- [Reference](./apis-with-rest-builder/reference.md)

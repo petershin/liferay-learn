@@ -14,7 +14,7 @@ Here's how to export packages:
     Export-Package: com.liferay.petra.io,com.liferay.petra.io.unsync
     ```
 
-[Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)-based projects created using [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md) or [Liferay Developer Studio](../../building-applications/tooling/developer-studio.md) have [Bnd](http://bnd.bndtools.org/). Bnd propagates OSGi headers from the `bnd.bnd` file to the module JAR `META-INF/MANIFEST.MF` file.
+[Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)-based projects created using [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md) or Liferay Developer Studio have [Bnd](http://bnd.bndtools.org/). Bnd propagates OSGi headers from the `bnd.bnd` file to the module JAR `META-INF/MANIFEST.MF` file.
 
 ```{important}
 Don't export the same package in multiple JARs. Exporting the same package from different modules leads to "split package" issues with unpredictable side effects.
@@ -32,4 +32,3 @@ Now you can share your module's terrific packages!
 * [Semantic Versioning](./semantic-versioning.md)
 * [Liferay Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)
 * [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)
-* [Liferay Developer Studio](../../building-applications/tooling/developer-studio.md)

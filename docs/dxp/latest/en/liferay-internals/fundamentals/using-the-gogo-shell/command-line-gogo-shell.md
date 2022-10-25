@@ -8,7 +8,7 @@ Gogo shell should only be run from the command line in development environments.
 
 ## Prerequisites
 
-Gogo shell on the command line requires that the server is running in Developer Mode. You can enable Developer Mode on the server in [Developer Studio](../../../building-applications/tooling/developer-studio.md) or by setting the following [Portal Property](../../../installation-and-upgrades/reference/portal-properties.md):
+Gogo shell on the command line requires that the server is running in Developer Mode. You can enable Developer Mode on the server in Developer Studio or by setting the following [Portal Property](../../../installation-and-upgrades/reference/portal-properties.md):
 
 ```properties
 include-and-override=portal-developer.properties

@@ -17,7 +17,7 @@ Read below to explore how package imports are specified in these scenarios.
 
 ## Automatic Package Imports
 
-[Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)-based projects from the tutorial examples (see [Module Projects](./module-projects.md)) or created using [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md) or [Liferay Developer Studio](../../building-applications/tooling/developer-studio.md) use [Bnd](http://bnd.bndtools.org/). A Gradle plugin invokes Bnd, which can then read the Gradle dependencies and resolve the imports. When you build the project's JAR, Bnd detects the packages the module uses, generates a `META-INF/MANIFEST.MF` file, and assigns the packages to an `Import-Package` header. In that sense, package import is automatic, because you must only define your dependencies in one place: the build script.
+[Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)-based projects from the tutorial examples (see [Module Projects](./module-projects.md)) or created using [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md) or Liferay Developer Studio use [Bnd](http://bnd.bndtools.org/). A Gradle plugin invokes Bnd, which can then read the Gradle dependencies and resolve the imports. When you build the project's JAR, Bnd detects the packages the module uses, generates a `META-INF/MANIFEST.MF` file, and assigns the packages to an `Import-Package` header. In that sense, package import is automatic, because you must only define your dependencies in one place: the build script.
 
 ```{note}
 Liferay's project templates use [a third-party Gradle plugin](https://github.com/TomDmitriev/gradle-bundle-plugin) to invoke Bnd.
@@ -85,7 +85,6 @@ Congratulations! Now you can import all kinds of packages for your modules to us
 
 * [Configuring Dependencies](./configuring-dependencies.md)
 * [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)
-* [Liferay Developer Studio](../../building-applications/tooling/developer-studio.md)
 * [Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)
 * [Semantic Versioning](./semantic-versioning.md)
 * [Deploying WARs \(WAB Generator\)](../../building-applications/reference/deploying-wars-wab-generator.md)

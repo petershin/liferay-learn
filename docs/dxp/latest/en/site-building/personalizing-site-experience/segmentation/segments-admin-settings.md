@@ -8,7 +8,7 @@ To configure segments at the system level,
 
 1. Scroll down to the *Content and Data section* and click *Segments*.
 
-To configure segments at the instance level, follow the same steps as above, but select *Instance Settings* from the *Global Menu*.
+To configure segments at the instance level, follow the same steps as above and select *Instance Settings* from the *Global Menu*.
 
 ```{note}
 These settings are available under Instance Settings starting from Liferay DXP 7.4 U38+/GA38+.
@@ -18,9 +18,9 @@ These settings are available under Instance Settings starting from Liferay DXP 7
 
 ![View and configure Analytics Cloud Segments settings under System and Instance settings.](./segments-admin-settings/images/01.png)
 
-**Anonymous User Segments Cache Expiration Time** – You can add anonymous users to Segments based on their behavior. This field defines the time (in seconds) after which the Segment cache for these users expires. 
+**Anonymous User Segments Cache Expiration Time** – You can add anonymous users to segments based on their behavior. This field defines the time (in seconds) after which the segment cache for these users expires.
 
-**Interest Terms Cache Expiration Time** – This defines the time (in seconds) after which the Interests cache expires. Read Understanding Interests for more information.
+**Interest Terms Cache Expiration Time** – This defines the time (in seconds) after which the Interests cache expires. Read [Understanding Interests](https://learn.liferay.com/analytics-cloud/latest/en/workspace-data/definitions/managing-interest-topics.html#understanding-interests)   for more information.
 
 **Update Interval** – This defines the interval (in minutes) at which you get updates from segments in Analytics Cloud.
 
@@ -32,7 +32,7 @@ Read [Session Property Vocabularies](../../../content-authoring-and-management/t
 
 ![View and configure Segments Service settings under System and Instance settings.](./segments-admin-settings/images/02.png)
 
-**Enable Segmentation** - Use this checkbox to enable or disable segmentation. If unchecked, it disables user segmentation on every request. As a result, personalized variations of Collections and Experiences are not displayed to the end user.
+**Enable Segmentation** - Use this checkbox to enable or disable segmentation. If unchecked, it disables user segmentation on every request. As a result, personalized variations of collections and experiences are not displayed to the end user.
 
 **Enable Assign Roles by Segment** - If you enable this setting, you can assign users to a role using a global segment. Instead of manually updating a role, you can assign groups of dynamically changing individuals to a role automatically.
 
@@ -51,5 +51,5 @@ To do this,
 **Compound Segments Interval** -  This defines the time interval (in minutes) for checking and refreshing compound segments based on its rules.
 
 ```{important}
-You can also configure these settings per instance. Go to Control Panel &rarr; Instance Settings &rarr; Segments to change the defaults. You cannot, however, configure the Update Interval and Compound Segments Interval per instance under Instance Settings. 
+You can also configure these settings per instance. Go to Control Panel &rarr; Instance Settings &rarr; Segments to change the defaults. You cannot, however, configure the *Update Interval* and *Compound Segments Interval* per instance under *Instance Settings*. 
 ```

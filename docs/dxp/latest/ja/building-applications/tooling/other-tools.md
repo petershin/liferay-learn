@@ -2,7 +2,6 @@
 toc:
 - ./other-tools/liferay-cli-tool.md
 - ./other-tools/liferay-npm-bundler.md
-- ./other-tools/theme-generator.md
 ---
 
 # Other Tools
@@ -11,19 +10,9 @@ toc:
 :maxdepth: 4
 other-tools/liferay-cli-tool.md
 other-tools/liferay-npm-bundler.md
-other-tools/theme-generator.md
 ```
 
 * [Liferay CLI ツール](./other-tools/liferay-cli-tool.md)
-* [Liferay JS Generator](./other-tools/liferay-js-generator.md)
-* [IntelliJプラグイン](./other-tools/intellij-plugin.md)
-* [テーマジェネレーター](./other-tools/theme-generator.md)
-* [Mavenプラグイン](./other-tools/maven-plugins.md)
-* [Gradleプラグイン](./other-tools/gradle-plugins.md)
-* [Screens](./other-tools/screens.md)
-* [モバイルSDK](./other-tools/mobile-sdk.md)
-* [プッシュ](./other-tools/push.md)
-* [Sync](./other-tools/sync.md)
 
 ## Liferay npm Bundler
 

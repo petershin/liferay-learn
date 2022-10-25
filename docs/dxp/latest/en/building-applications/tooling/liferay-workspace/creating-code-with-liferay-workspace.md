@@ -46,7 +46,7 @@ To write code to run on Liferay DXP, you must have a Liferay runtime on which to
 
 ## Using the Themes Generator with Liferay Workspace
 
-The [Liferay Themes Generator](../other-tools/theme-generator.md) is a node.js-based tool for creating themes to change the look and feel of your site. These projects can also be managed by Liferay Workspace. You can create theme projects with Blade or manually. 
+The Liferay Themes Generator is a node.js-based tool for creating themes to change the look and feel of your site. These projects can also be managed by Liferay Workspace. You can create theme projects with Blade or manually. 
 
 To create a Theme Generator project with Blade, use this command: 
 

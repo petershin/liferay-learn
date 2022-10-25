@@ -1,3 +1,0 @@
-# Theme Generator
-
-Coming soon!

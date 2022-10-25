@@ -2,7 +2,6 @@
 toc:
 - ./other-tools/liferay-cli-tool.md
 - ./other-tools/liferay-npm-bundler.md
-- ./other-tools/theme-generator.md
 ---
 # Other Tools
 
@@ -10,11 +9,9 @@ toc:
 :maxdepth: 4
 other-tools/liferay-cli-tool.md
 other-tools/liferay-npm-bundler.md
-other-tools/theme-generator.md
 ```
 
 * [Liferay CLI Tool](./other-tools/liferay-cli-tool.md)
-* [Theme Generator](./other-tools/theme-generator.md)
 
 ## Liferay npm Bundler
 

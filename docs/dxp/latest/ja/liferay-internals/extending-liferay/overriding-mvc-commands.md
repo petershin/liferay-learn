@@ -1,3 +1,0 @@
-# MVCコマンドのオーバーライド
-
-Coming soon!

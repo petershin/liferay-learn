@@ -10,8 +10,6 @@ toc:
 :maxdepth: 2
 
 message-boards/user-guide.md
-message-boards/developer-guide.md
-message-boards/apis.md
 ```
 
 ユーザーガイド
@@ -26,11 +24,3 @@ message-boards/apis.md
 * [掲示板の権限リファレンス](.//message-boards/user-guide/message-boards-permissions-reference.md)
 * [掲示板の設定リファレンス](.//message-boards/user-guide/message-boards-configuration-reference.md)
 * [掲示板ウィジェットのUIリファレンス](.//message-boards/user-guide/message-boards-widget-ui-reference.md)
-
-## 開発者ガイド
-
-近日公開！
-
-## API
-
-近日公開！

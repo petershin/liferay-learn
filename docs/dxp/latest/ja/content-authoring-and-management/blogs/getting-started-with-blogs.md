@@ -28,9 +28,9 @@
 
   - [ブログエントリの追加](./adding-blog-entries.md)
   - [ブログエントリの管理](./managing-blog-entries.md)
-  - [ブログの表示 (近日公開！)](./displaying-blogs.md)
-  - [ブログアプリの設定 (近日公開！)](./configuring-the-blogs-app.md)
-  - [最近のブログ作成者を強調表示する (近日公開！)](./highlighting-recent-bloggers.md)
+  - [ブログの表示](./displaying-blogs.md)
+  - [ブログアプリの設定](./configuring-the-blogs-app.md)
+  - [最近のブログ作成者を強調表示する](./highlighting-recent-bloggers.md)
 
 <a name="reference" />
 

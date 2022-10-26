@@ -108,7 +108,7 @@ GitHubユーザーのリポジトリアクセスを削除する方法は次の�
 
 （**1）問題とコメントについて：** ソースコードリポジトリで発生した問題をクローズし、未回答のままにします。 Liferayソフトウェアに問題がある場合は、ヘルプセンターで [サポートチケットを作成](https://help.liferay.com/hc/ja/requests/new) してLiferayサポートチームにお知らせください。 
 
-（**2）コード投稿について：** パブリックLiferay Portalリポジトリ（<https://github.com/liferay/liferay-portal>）でコードを投稿できます。 承認された投稿は、次のLiferay DXPリリースに含まれます。 詳細については、 [Liferay開発への貢献](../../../liferay-internals/contributing-to-liferay-development.md) （近日公開）をご覧ください。
+（**2）コード投稿について：** パブリックLiferay Portalリポジトリ（<https://github.com/liferay/liferay-portal>）でコードを投稿できます。 承認された投稿は、次のLiferay DXPリリースに含まれます。 
 
 （**3）Wikiについて：** Liferay DXPの公式ドキュメンテーションは<https://learn.liferay.com>にあり、サポートナレッジベースは [ヘルプセンター](https://help.liferay.com/hc/ja/) にあります。 `liferay-dxp`リポジトリのwikiは使用していません。  記事の変更を提案したり、トピックに関するドキュメントをリクエストする場合は、ヘルプセンターで [サポートチケットを作成](https://help.liferay.com/hc/ja/requests/new) してLiferayサポートチームにお知らせください。
 

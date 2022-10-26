@@ -67,7 +67,7 @@ w9b7-service/src/main/java/com/acme/w9b7
 The `W9B7EntryImpl.java` and `W9B7EntryLocalServiceImpl.java` classes are the only classes you can modify. Don't modify the other generated classes---Service Builder regenerates their content every time Service Builder runs.
 
 ```{note}
-If you run Service Builder with remote services enabled (i.e., `remote-service="true"`) for an entity, Service Builder generates remote service classes, including a modifiable remote service implementation class (e.g., `W9B7EntryServiceImpl.java`). See *Remote Services* (coming soon).
+If you run Service Builder with remote services enabled (i.e., `remote-service="true"`) for an entity, Service Builder generates remote service classes, including a modifiable remote service implementation class (e.g., `W9B7EntryServiceImpl.java`).
 ```
 
 All the classes are described, starting with the API classes.

@@ -1,7 +1,6 @@
 ---
 toc:
 - ./developer-guide/style-book-token-definitions.md
-- ./developer-guide/adding-a-new-token-set-for-your-style-book.md
 ---
 # 開発者ガイド
 
@@ -9,7 +8,6 @@ toc:
 :maxdepth: 3
 
 developer-guide/style-book-token-definitions.md
-developer-guide/adding-a-new-token-set-for-your-style-book.md
 ```
 
 ::::{grid} 2

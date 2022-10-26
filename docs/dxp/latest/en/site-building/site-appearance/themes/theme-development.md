@@ -1,7 +1,6 @@
 ---
 toc:
 - ./theme-development/getting-started.md
-- ./theme-development/styling.md
 - ./theme-development/working-with-templates.md
 - ./theme-development/bundling-resources.md
 ---
@@ -11,7 +10,6 @@ toc:
 :maxdepth: 3
 
 theme-development/getting-started.md
-theme-development/styling.md
 theme-development/working-with-templates.md
 theme-development/bundling-resources.md
 ```
@@ -21,10 +19,6 @@ theme-development/bundling-resources.md
 
 :::{grid-item-card} Getting Started
 :link: ./theme-development/getting-started.md
-:::
-
-:::{grid-item-card} Styling (Coming Soon)
-:link: ./theme-development/styling.md
 :::
 
 :::{grid-item-card} Working with Templates

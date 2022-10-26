@@ -4,7 +4,6 @@ toc:
 - ./personalizing-site-experience/experience-personalization.md
 - ./personalizing-site-experience/migration-from-audience-targeting.md
 - ./personalizing-site-experience/enabling-automated-live-chat-systems.md
-- ./personalizing-site-experience/developer-guide.md
 ---
 # Personalizing Site Experience
 
@@ -15,7 +14,6 @@ personalizing-site-experience/segmentation.md
 personalizing-site-experience/experience-personalization.md
 personalizing-site-experience/migration-from-audience-targeting.md
 personalizing-site-experience/enabling-automated-live-chat-systems.md
-personalizing-site-experience/developer-guide.md
 ```
 
 Liferay DXP comes out of the box with powerful tools to understand and deliver personalized experiences. The first step to delivering a personalized experience is to start with collecting, or segmenting your users. [*User Segments*](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) are dynamically assigned [*Collections*](../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md). Instead of manually assigning Users to the Collection, Users are assigned to Segments based on shared attributes or behaviors (see [Personalizing Collections](./personalizing-site-experience/experience-personalization/personalizing-collections.md) for more information).
@@ -85,9 +83,5 @@ Viewing the perspective of a User Segment previews any personalizations for Cont
 
 :::{grid-item-card} Enabling Automated Live Chat Systems
 :link: ./personalizing-site-experience/enabling-automated-live-chat-systems.md
-:::
-
-:::{grid-item-card} Developer Guide
-:link: ./personalizing-site-experience/developer-guide.md
 :::
 ::::

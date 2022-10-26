@@ -4,7 +4,6 @@ toc:
 - ./personalizing-site-experience/experience-personalization.md
 - ./personalizing-site-experience/migration-from-audience-targeting.md
 - ./personalizing-site-experience/enabling-automated-live-chat-systems.md
-- ./personalizing-site-experience/developer-guide.md
 ---
 # サイトエクスペリエンスのパーソナライズ
 
@@ -15,7 +14,6 @@ personalizing-site-experience/segmentation.md
 personalizing-site-experience/experience-personalization.md
 personalizing-site-experience/migration-from-audience-targeting.md
 personalizing-site-experience/enabling-automated-live-chat-systems.md
-personalizing-site-experience/developer-guide.md
 ```
 
 Liferay DXPは、パーソナライズされたエクスペリエンスを理解して提供するための強力なツールを備えています。 パーソナライズされた体験を提供するための最初のステップは、ユーザーの収集、つまりセグメンテーションから始まります。 [**ユーザーセグメント**](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) には、 [**コレクション**](../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)が動的に割り当てられます。 ユーザーをコレクションに手動で割り当てる代わりに、ユーザーは共有属性または動作に基づいてセグメントに割り当てられます（詳細は、 [コレクションのパーソナライズ](./personalizing-site-experience/experience-personalization/personalizing-collections.md) を参照してください）。

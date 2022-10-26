@@ -1,3 +1,0 @@
-# REST Apisのカスタマイズ
-
-Coming soon!

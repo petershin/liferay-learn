@@ -1,3 +1,0 @@
-# GraphQL Apisのカスタマイズ
-
-Coming soon!

@@ -1,6 +1,6 @@
 # Category Facet
 
-The Category Facet narrows search results for categorized assets that match the search query keywords. The each matching result's categories are aggregated as facet terms.
+The Category Facet narrows search results for categorized assets that match the search query keywords. Each matching result's categories are aggregated as facet terms.
 
 ![Example of category facet results.](./category-facet/images/02.png)
 

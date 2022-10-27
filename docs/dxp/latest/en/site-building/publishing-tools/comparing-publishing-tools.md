@@ -4,7 +4,7 @@ Liferay provides two publishing tools for content creation and site building: Pu
 
 ## Publications
 
-Publications is a change tracking tool for editing sites and content. With it, contributors can create working environments called *publications* where they can make edits without affecting end users (i.e., *production*). Each publication is instance scoped and can group changes across multiple sites and asset libraries. You can also create as many publications as needed for your projects and teams.
+Publications is a change tracking tool for editing sites and content. With it, contributors can create working environments called *publications* where they can make edits without affecting end users (i.e., *production*). Each publication is company scoped and can group changes across multiple sites and asset libraries. You can also create as many publications as needed for your projects and teams.
 
 By default, access to a publication is limited to its creator. However, creators can invite other members and assign them roles specific to each publication. Since publications are independent, contributors can make and publish their changes without affecting one another. This frees them up to work on their own timelines and publish their changes when ready.
 
@@ -34,6 +34,7 @@ If you must use Staging, you should enable it at the beginning of development. E
 | :--- | :--- | :--- |
 | Host your working and production environments on the same server | &#10004; | &#10004; |
 | Host your working and production environments on separate servers | &#10008; | &#10004; |
+| Supports Asset Libraries | &#10004; | &#10004; |
 | Create and manage separate working environments for different projects and teams | &#10004; | &#10008; |
 | Comment on blocks of changes | &#10004; | &#10008; |
 | Use custom workflows | &#10004; | &#10004; |
@@ -42,9 +43,9 @@ If you must use Staging, you should enable it at the beginning of development. E
 | Include changes from multiple sites or asset libraries in the same working environment | &#10004; | &#10008; |
 | Schedule when to publish changes | &#10004; | &#10004; |
 | Automatically send notifications/alerts for publishing events | &#10004; | &#10004; |
-| Maintain a detailed history of all published changes | &#10004; | &#10008;<!--???--> |
+| Maintain a detailed history of all published changes | &#10004; | &#10008; |
 | Revert published changes to pages | &#10004; | &#10004; |
-| Revert published changes to content | &#10004; | &#10008;<!--???--> |
+| Revert published changes to content | &#10004; | &#10008; |
 
 ### Supported Pages and Content Types
 

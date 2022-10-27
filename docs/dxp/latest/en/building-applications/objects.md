@@ -42,7 +42,7 @@ From the time of creation, all Objects are fully integrated with Liferay's [core
 
 Every Object is integrated with [Workflows](./objects/enabling-workflows-for-objects.md), so you can guide Object entry creation through a defined review and approval process. Objects are also integrated with [Forms](objects/using-forms-with-objects.md), so you can design forms that map to Object fields and receive user input for creating Object entries.
 
-Once entries are created, you can leverage Liferay's Info framework to create dynamic user experiences, [displaying Object entries](./objects/displaying-object-entries.md) with Page Fragments and Display Page Templates. As of Liferay DXP 7.4 U1 and Liferay Portal 7.4 GA5, you can also [deploy an Object to Site Pages](./objects/deploying-objects-to-sites.md) as a widget.
+Once entries are created, you can leverage Liferay's Info framework to create dynamic user experiences, [displaying Object entries](./objects/displaying-object-entries.md) with Page Fragments and Display Page Templates. As of Liferay DXP 7.4 U1 and Liferay Portal 7.4 GA5, you can also [deploy an Object to Site Pages](./objects/deploying-object-widgets-to-sites.md) as a widget.
 
 All Objects are integrated with Liferay's [Permissions framework](./objects/understanding-object-integrations/permissions-framework-integration.md), so you can assign application and resource permissions to manage access to Objects and their entries. Together with scoping, role-based access control can help you secure your data and ensure it can only be accessed by the appropriate users.
 

@@ -6,7 +6,7 @@ liferay-npm-bundler's mechanism is inspired by webpack. Like webpack, the lifera
 While webpack creates a single JS bundle file, liferay-npm-bundler targets an AMD loader, so webpack and liferay-npm-bundler loaders are not compatible.
 ```
 
-Loaders are npm packages that in their main module export a function that receives source files and returns new or modified files, based on the loader's configuration. For example, the [babel-loader](https://github.com/liferay/liferay-js-toolkit/tree/master/packages/liferay-npm-bundler-loader-babel-loader) receives ES6+ JavaScript files, runs Babel on them, and returns transpiled ES5 files along with a generated source map. You can use this pattern to [create custom loaders](../developer/creating-custom-loaders-for-the-bundler.md). Here are some example loader functions:
+Loaders are npm packages that in their main module export a function that receives source files and returns new or modified files, based on the loader's configuration. For example, the [babel-loader](https://github.com/liferay/liferay-js-toolkit/tree/master/packages/liferay-npm-bundler-loader-babel-loader) receives ES6+ JavaScript files, runs Babel on them, and returns transpiled ES5 files along with a generated source map. You can use this pattern to [create custom loaders](https://help.liferay.com/hc/en-us/articles/360037662951-Creating-Custom-Loaders-for-the-liferay-npm-bundler). Here are some example loader functions:
 
 * Pass JavaScript files through Babel or TSC
 * Convert CSS files into JS modules that dynamically inject the CSS into the HTML page

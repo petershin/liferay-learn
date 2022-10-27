@@ -1,5 +1,4 @@
 # DXP
-===
 
 ```{toctree}
 :maxdepth: 6

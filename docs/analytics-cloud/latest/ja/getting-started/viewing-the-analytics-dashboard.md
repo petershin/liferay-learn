@@ -4,11 +4,11 @@
 
 ![アナリティクス ダッシュボードでは、サイトのアナリティクス データの概要を紹介しています。](viewing-the-analytics-dashboard/images/01.png)
 
-ダッシュボードは、さまざまなワークスペース管理や設定作業の出発点でもあります。 [オンボーディングプロセス](accessing-your-workspace.md#onboarding-process) の間にワークスペースを接続しなかった場合は、以下の手順を参照してください。
+ダッシュボードは、さまざまなワークスペース管理や設定作業の出発点でもあります。 [オンボーディングプロセス](accessing-your-workspace.md#onboarding-process) で、ワークスペースを接続していない場合は、以下の手順を参照してください。
 
 ## DXPサイトをAnalytics Cloudに接続する
 
-新しいワークスペースの最初のタスクは、ワークスペースをデータ ソースに接続することです。 Analytics Cloudは、Liferay DXP Sitesをキーデータソースとして利用するために構築されています。 詳細は、 [Liferay DXPサイトをAnalytics Cloudに接続する](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md) を参照してください。 
+新しいワークスペースの最初のタスクは、ワークスペースをデータ ソースに接続することです。 Analytics Cloudは、Liferay DXP Sitesをキーデータソースとして利用するために構築されています。 詳細は、 [Liferay DXPサイトをAnalytics Cloudに接続する](../connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.md) を参照してください。
 
 ## 自分のワークスペースにユーザーを招待する
 

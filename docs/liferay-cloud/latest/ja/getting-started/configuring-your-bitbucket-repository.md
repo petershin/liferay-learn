@@ -5,7 +5,11 @@ Liferay Cloudオンボーディングメールを受信すると、 `［dxpcloud
 1. プロビジョニングされたリポジトリを独自のプライベートリポジトリに転送します。
 1. プライベートリポジトリとLiferay CloudのJenkins(CI)サービスをWebhookで連携させます。
 
-プロビジョニングされたリポジトリはGitHubにありますが、Jenkinsサービスのバージョン3.2.0以降ではBitBucketリポジトリに転送できます。
+プロビジョニングされたリポジトリはGitHubにありますが、Jenkinsサービスのバージョン3.2.0以降ではBitBucketリポジトリに転送できます。 これは、BitBucket リポジトリへの管理者アクセス権で行う必要があります。
+
+```{note}
+リポジトリの管理者は、Cloud コンソールのプロジェクトの管理者と *同じ* とは限りません。
+```
 
 ## Jenkinsサービスの準備
 
@@ -39,7 +43,7 @@ Jenkinsfileをカスタマイズしている場合は、こちらのガイドに
 
 1. サイドバーの検索アイコンの下にある「＋」アイコンをクリックします。
 
-    ![アイコンをクリックすると、新しいBitBucketリポジトリの作成が始まります。](./configuring-your-bitbucket-repository/images/01.png)
+    ![アイコンをクリックすると、新しいBitBucketリポジトリの作成が開始されます。](./configuring-your-bitbucket-repository/images/01.png)
 
 1. ［**リポジトリ**］ をクリックして、新しいリポジトリの作成を開始します。
 
@@ -122,7 +126,7 @@ Liferay Cloudがブランチに正しくリンクできるようにするため�
 
 1. 以下の環境変数を設定します：
 
-| 名称                                     | 値                  |
+| 名前                                     | 値                  |
 |:-------------------------------------- |:------------------ |
 | `LCP_CI_SCM_PROVIDER`                  | bitbucket          |
 | `LCP_CI_SCM_REPOSITORY_OWNER`          | [repo owner]       |
@@ -139,7 +143,7 @@ Liferay Cloudがブランチに正しくリンクできるようにするため�
 
 プライベートなBitbucketサーバーを使用するには、Jenkinsサービスで追加の環境変数を設定する必要があります：
 
-| 名称                       | 値                  |
+| 名前                       | 値                  |
 |:------------------------ |:------------------ |
 | `LCP_CI_SCM_SERVER_HOST` | [private host URL] |
 

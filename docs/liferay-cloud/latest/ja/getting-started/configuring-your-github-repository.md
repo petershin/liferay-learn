@@ -7,7 +7,7 @@ Liferay Cloudオンボーディングメールを受信すると、 `［dxpcloud
 1. プライベートリポジトリとLiferay CloudのJenkins(CI)サービスをWebhookで連携させます。
 
 ```{note}
-組織のアカウントを使用している場合、リポジトリを組織に転送するには管理者権限が必要です。
+組織アカウントを使用する場合、リポジトリを組織に転送するには、管理者権限が必要です。 リポジトリの管理者は、Cloud コンソールのプロジェクトの管理者と *同じ* とは限りません。
 ```
 
 ## リポジトリの転送
@@ -40,13 +40,13 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 1. ［**このウェブフックをトリガーにしたいイベントはどれですか？**］ の下にある、 ［**個々のイベントを選択させてください**］ を選択してください。 イベントのリストが表示されます。
 
-1. イベントのリストから ［**Pushes**］ と ［**Pull Requests**］ を選択します。
+1. イベントのリストから ［**Pushes**］ と ［**Pull Requests**］ を選択します。<0>
 
     ![図2：このWebhookのために個別のイベントを選択する必要があります。](./configuring-your-github-repository/images/02.png)
 
     ![図3：Push、Pull Requestsの選択。](./configuring-your-github-repository/images/03.png)
 
-1. ［**Active**] が選択されていることを確認し、 ［**Add webhook**］ をクリックします。
+1. ［**Active**］ が選択されていることを確認し、 ［**Add webhook**］ をクリックします。
 
     ![図4：WebhookをActiveに設定し、作成を終了する。](./configuring-your-github-repository/images/04.png)
 
@@ -62,19 +62,19 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 | 名前                            | 値              |
 |:----------------------------- |:-------------- |
-| `lcp_ci_scm_provider`         | github         |
-| `lcp_ci_scm_repository_owner` | [repo_owner]   |
-| `lcp_ci_scm_repository_name`  | [repo_name]    |
-| `lcp_ci_scm_token`            | [access_token] |
+| `LCP_CI_SCM_PROVIDER`         | github         |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner]   |
+| `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
+| `LCP_CI_SCM_TOKEN`            | [access_token] |
 
-`LCP_CI_SCM_TOKEN` の値には、GitHub組織用に作成した個人用アクセストークンを使用します。 このトークンの作成とアクセスの手順については、 [GitHub's documentation](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) を参照してください。
+`LCP_CI_SCM_TOKEN` の値には、GitHub組織用に作成した個人用アクセストークンを使用します。 このトークンの作成とアクセスの手順については、 [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line) を参照してください。
 
 作成されたパーソナルアクセストークンは、 **repo** と **admin:repo** **hook** 以下のすべてのスコープ権限にチェックが入っている必要があります。リポジトリがLiferay Cloudと正常に統合された後、 [自動Webフック管理を無効](#personal-access-token-usage) にすれば、具体的には、 **admin:repo** **hook** スコープ権限を後で削除できます。
 
 ![PATが正常に使用できるように、正しい権限を確認してください。](./configuring-your-github-repository/images/05.png)
 
 ```{note}
-SAMLシングルサインオン認証で組織のアカウントを使用している場合は、アクセストークンを認証するために追加の手順を行う必要があります。 詳しくは [GitHub公式ドキュメント](https://docs.github.com/ja/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on) を参照ください。
+SAMLシングルサインオン認証で組織のアカウントを使用している場合は、アクセストークンを認証するために追加の手順を行う必要があります。 詳しくは [GitHub公式ドキュメント](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on) を参照ください。
 ```
 
 これらの環境変数を更新した後、Jenkinsサービスが再起動します。 これで、新しいリポジトリでプッシュされたブランチとプルリクエストがビルドをトリガーします。
@@ -91,7 +91,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 パーソナルアクセストークンが個人のユーザーアカウントに属していて、そのユーザーが組織から削除されている場合、すべてのビルドが完了しません。 代わりに、組織専用のアカウントを使用してください。 詳しくは [GitHubの公式ドキュメント](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access) をご覧ください。
 ```
 
-デフォルトでは、GitHub組織の [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) は、CIサービスがデフォルトのWebフックを使用して正常に統合するために、 `admin:repo_hook` パーミッションも持つ必要がある。
+デフォルトでは、GitHub組織の [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) が、デフォルトのWebフックを使ってCIサービスを正常に統合するために、 `admin:repo_hook` のパーミッションも持っている必要があります。
 
 しかし、[CI service](../platform-services/continuous-integration.md)の`LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md)を`false`に設定することをお勧めします。 これにより、ウェブフックの自動管理が無効になり（リポジトリとの統合設定が終了すると不要になります）、Liferay Cloudが使用するパーソナルアクセストークンから（管理者レベルの） `admin:repo_hook` の権限を削除することができます。
 
@@ -110,7 +110,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 1. リポジトリに変更を加え（ファイルの追加など）、ブランチにコミットします：
 
     ```bash
-    git commit -m "Add file to test builds" 
+    git commit -m "Add file to test builds"
     ```
 
 1. ブランチをGitHubにプッシュします：

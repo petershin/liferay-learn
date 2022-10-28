@@ -19,7 +19,7 @@ platform-services/using-a-custom-service.md
 
 platform-services/backup-service.md
 
-platform-services/database-service.md。
+platform-services/database-service.md
 ```
 
 - [継続的インテグレーション](./platform-services/continuous-integration.md)
@@ -31,7 +31,7 @@ platform-services/database-service.md。
 
 - [バックアップサービスの概要](./platform-services/backup-service/backup-service-overview.md)
 - [バックアップのダウンロードとアップロード](./platform-services/backup-service/downloading-and-uploading-backups.md)
-- [バックアップからのデータの復元](./platform-services/backup-service/restoring-data-from-a-backup.md)
+- [バックアップページからのデータの復元](./platform-services/backup-service/restoring-data-from-a-backup.md)
 
 ## データベースサービス
 

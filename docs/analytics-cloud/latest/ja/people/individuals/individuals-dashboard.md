@@ -4,9 +4,9 @@ Individuals dashboardでは、訪問者やサイトの利用状況に関する�
 
 ダッシュボードを表示するには
 
-1. メニューの **メンバー** のセクションにある［Individual］ をクリックします。
+1. メニューの **メンバー** のセクションにある［ Individual］ をクリックします。
 
-1. **Overview** タブをクリックします（Individualsをクリックすると、このタブがデフォルトで選択されます）。
+1. ［**Overview**］ タブをクリックします（Individualsをクリックすると、このタブがデフォルトで選択されます）。
 
 Individuals Dashboardには、以下のパネルがあります。
 
@@ -15,8 +15,6 @@ Individuals Dashboardには、以下のパネルがあります。
 * [Active Individuals](#active-individuals)
 * [Interests](#interests)
 * [Breakdown](#breakdown)
-
-<a name="current-totals" />
 
 ## Current Totals
 
@@ -28,17 +26,13 @@ Current Totalsパネルには、Analytics Cloudによって追跡された既知
 
 また、パネルには、過去30日と比較した総数の変化率も表示されます。
 
-<a name="enriched-profiles" />
-
 ## Enriched Profiles
 
 Enriched Profilesパネルには、過去30日以内にエンリッチされた個人の合計数が表示されます。
 
 ![Enriched Profilesパネルには、エンリッチメントを受けた個人の総数が表示されます。](./individuals-dashboard/images/02.png)
 
-例えば、 [DXPからコンタクトデータを同期させた場合](../../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property) 属性がその個人に関連付けられた時に、その個人はエンリッチされたとみなされます。
-
-<a name="active-individuals" />
+例えば、 [DXP](../../connecting-data-sources/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property) から連絡先データを同期させた場合などです。
 
 ## Active Individuals
 
@@ -47,8 +41,6 @@ Active Individualsパネルには、選択した期間中にお客様のサイ�
 ![Active Individualsパネルには、本サイトにアクセスしたことのある個人を時系列で表示しています。](./individuals-dashboard/images/03.png)
 
 日、週、月に基づいてデータを視覚化することを選択します。 データは、時間の範囲でフィルタリングすることができます。直近24時間、直近7日、直近30日、直近90日。 **More Preset Periods** をクリックすると、追加の時間範囲が表示されます。 **期間を指定** をクリックすると、任意の開始日と終了日でフィルタリングすることができます。
-
-<a name="interests" />
 
 ## Interests
 
@@ -61,8 +53,6 @@ Interestsパネルでは、人気のあったトピックのトップ5を紹介�
 興味のあるトピックの全リストを表示するには、パネル内の **View All Interests** をクリックします。 または、ページ上部の［Interests］タブをクリックします。
 
 Interestsの詳細については、 [Understanding Interests](../../workspace-data/definitions/managing-interest-topics.html#understanding-interests) を参照してください。
-
-<a name="breakdown" />
 
 ## Breakdown
 

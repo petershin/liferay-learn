@@ -6,13 +6,11 @@
 
 プロパティを使用して、その逆を行うこともできます。 ユーザーは、Liferay DXPインスタンス内のサイトごとに個別のプロパティを作成できるため、AnalyticsCloudユーザーはサイトごとにスコープを設定した詳細な分析データを使用することができます。 管理者は、Analytics Cloudユーザーに、異なるプロパティにスコープされた権限を割り当てることもできます。
 
-<a name="creating-a-property" />
-
 ## プロパティの作成
 
 Analytics Cloudの各ワークスペースでは、複数のプロパティを作成してトラッキングすることができます。 新規にDXPデータソースを接続すると、必ずデフォルトのプロパティが作成されます。 データソースの名前は、DXPのインスタンス名と同じになります。
 
-新しいプロパティを作成するには、Analytics Cloud Workspaceにアクセスします。 次に、 ［**Settings**］ -> ［**Properties**］ に移動し、右上の ［**New Property**］ をクリックします。
+新しいプロパティを作成するには、Analytics Cloud Workspaceにアクセスします。 次に、 **設定** &rarr; **プロパティ** 、右上にある **新規プロパティ** をクリックします。
 
 ![新しいプロパティを追加します。](scoping-sites-and-individuals-using-properties/images/01.png)
 
@@ -20,19 +18,17 @@ Analytics Cloudの各ワークスペースでは、複数のプロパティを�
 
 ![新しいプロパティが作成されました。](scoping-sites-and-individuals-using-properties/images/02.png)
 
-<a name="syncing-sites-to-a-property" />
-
 ## サイトをプロパティに同期する
 
 Analytics Cloudでサイトのデータを見るためには、サイトをプロパティに同期する必要があります。 これを行うには、LiferayDXPインスタンスのコントロールパネルに移動する必要があります。
 
-1. Liferay DXPインスタンスで **Instance Settings** -> **Analytics Cloud** を表示して、Liferay DXPインスタンスがAnalytics Cloudと同期していることを確認します。 `Your DXP instance is connected to Analytics Cloud` というメッセージは、Liferay DXPインスタンスがAnalytics Cloudに正しく接続されていることを示します。
+1. Liferay DXPインスタンスで **Instance Settings** &rarr; **Analytics Cloud** を表示し、Liferay DXPインスタンスがAnalytics Cloudと同期していることを確認します。 `Your DXP instance is connected to Analytics Cloud` というメッセージは、Liferay DXPインスタンスがAnalytics Cloudに正しく接続されていることを示します。
 
     ```{important}
-    Your DXP instance is connected to Analytics Cloud.`というメッセージが表示されない場合は、 [Liferay DXPをAnalytics Cloudに接続する](./connecting-liferay-dxp-to-analytics-cloud.md) をご確認ください。
+    `Your DXP instance is connected to Analytics Cloud.`というメッセージが表示されない場合は、[Liferay DXPをAnalytics Cloudに接続する](./connecting-liferay-dxp-to-analytics-cloud.md)をご確認ください。
     ```
 
-1. Analytics Cloudのワークスペースで、 ［**Synced Sites**］ をクリックします。 Analytics Cloudで作成した利用可能なプロパティのリストが表示されます。 ここに追跡するサイトの新しいプロパティを作成します。
+1. Analytics Cloudのワークスペースで、 ［**同期済みのサイト**］ をクリックします。 Analytics Cloudで作成した利用可能なプロパティのリストが表示されます。 ここに追跡するサイトの新しいプロパティを作成します。
 
     ![サイトを追跡するための新しいプロパティを作成します。](scoping-sites-and-individuals-using-properties/images/03.png)
 
@@ -44,8 +40,6 @@ Analytics Cloudでサイトのデータを見るためには、サイトをプ�
     1つのDXPサイトを複数のプロパティと同期させることはできません。 あなたのサイトの1つがすでに別のプロパティに同期されている場合。 ここではグレーアウトされており、選択できません。
     ```
 
-<a name="syncing-contacts-to-a-property" />
-
 ## 連絡先をプロパティに同期する
 
 連絡先をプロパティに同期するには：
@@ -56,11 +50,25 @@ Analytics Cloudでサイトのデータを見るためには、サイトをプ�
 
     DXP内のすべてのユーザーを同期することも、ユーザーグループや組織ごとに同期することも可能です。
 
-1. 同期させたいユーザーやグループを選択し、 ［**Save**］ をクリックします。
+1. 同期させたいユーザーやグループを選択し、 ［**保存**］ をクリックします。
 
-Liferay DXPからコンタクトデータを同期する についての詳細は [こちら](syncing-contact-data-from-dxp.md) を確認してください。
+Liferay DXPからコンタクトデータを同期する についての詳細は[こちら](syncing-contact-data-from-dxp.md)を確認してください。
 
-<a name="managing-permissions-for-a-property" />
+## メールレポート
+
+定期的にレポートをメールで送信してもらうことも可能です。 レポートには、ユニークビジター数、ビジターごとのセッション数、平均セッション時間、平均直帰率などが含まれています。 有効にするには
+
+1. **設定** &rarr; **プロパティ** に移動します。 電子メールによるレポートが必要な物件を選択します。
+
+1. **コグ** のアイコン(![Cog icon](../images/icon-cog-2.png))をクリックすると、新しいウィンドウが開きます。
+
+1. スイッチを切り替えると、電子メールによるレポートが有効になります。 メールの送信頻度を選択します（例：毎日、毎週、毎月）。 ［**保存**］ をクリックします。
+
+   ![スイッチを切り替えて、電子メールによるレポートを有効にし、頻度を選択します。](./scoping-sites-and-individuals-using-properties/images/06.png)
+
+1. 選択された頻度に基づいて、定期的に電子メールによるレポートが送信されます。 なお、日報は毎日午前12時（UTC）に送信されます。 ウィークリーレポートは、毎週月曜日午前12時（UTC）に配信されます。 月次レポートは、毎月1日の午前12時（UTC）に送信されます。 レポートのサンプルは以下の通りです。
+
+   ![メールレポートには、サイトを訪問した個人に関する分析結果が含まれています。](./scoping-sites-and-individuals-using-properties/images/07.png)
 
 ## プロパティの権限を管理する
 
@@ -68,27 +76,25 @@ Liferay DXPからコンタクトデータを同期する についての詳細�
 
 プロパティの権限を割り当てるには、以下の手順に従ってください。
 
-1. Analytics Cloudのワークスペースで、 **設定** -> **プロパティ** に移動し、権限を管理したいプロパティを選択します。
+1. Analytics Cloudワークスペースで、 **Settings** &rarr; **Properties** に移動し、権限を管理したいプロパティを選択します。
 
-    ```{note}
-    デフォルトでは、Analytics Cloudのワークスペースのすべてのユーザーがプロパティにアクセスできます。 これを変更するには、 **Select Users** ラジオボタンをクリックします。
-    ```
+   ```{note}
+   デフォルトでは、Analytics Cloudのワークスペースのすべてのユーザーがプロパティにアクセスできます。 これを変更するには、*Select Users*ラジオボタンをクリックします。
+   ```
 
 1. ［**ユーザを追加する**］ をクリックして、ユーザーをプロパティに追加します。
 
 これで追加されたユーザーは、プロパティにアクセスできます。
 
-![プロパティにユーザーを追加します。](scoping-sites-and-individuals-using-properties/images/06.png)
-
-<a name="navigating-between-different-properties" />
+![プロパティにユーザーを追加します。](scoping-sites-and-individuals-using-properties/images/08.png)
 
 ## 異なるプロパティ間の移動
 
-Analytics Cloudのワークスペースで異なるプロパティを交互に表示するには、ナビゲーションバーの左上にあるプロパティ名をクリックします。 閲覧権限のあるプロパティの一覧がメニューに表示されます。 ディレードされたプロパティをクリックすると切り替わります。
+Analytics Cloudのワークスペースで異なるプロパティを交互に表示するには、ナビゲーション バーの左上にあるプロパティ名をクリックします。 閲覧権限のあるプロパティの一覧がメニューに表示されます。 ディレードされたプロパティをクリックすると切り替わります。
 
-![あるプロパティから別のプロパティへビューを変更します。](scoping-sites-and-individuals-using-properties/images/07.png)
+![あるプロパティから別のプロパティへビューを変更します。](scoping-sites-and-individuals-using-properties/images/09.png)
 
-プロパティを表示するとき。 **すべての** アナリティクスデータはこのプロパティにスコープされています。 たとえば、
+プロパティを表示するとき。 **すべての** アナリティクスデータはこのプロパティにスコープされています。 以下に例を示します。
 
 * 訪問者、セッション、ページビューの統計情報は、各プロパティのサイト内のセッションのみに基づいて算出されます。
 * 各プロパティのサイトを訪れた訪問者を個別に表示します。 つまり、DXPインスタンスに5000人のユーザーがいたとしたら、そのうち100人しかサイトにセッションしていないということです。 100人だけが個別のリストに表示されます。 5000人全員のデータが同期されていますが、プロパティ追跡サイトを訪れた人だけが表示されます。

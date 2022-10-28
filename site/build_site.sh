@@ -177,7 +177,7 @@ function generate_static_html {
 
 		sphinx-build -M html "build/input/${product_version_language_dir_name}" "build/output/${product_version_language_dir_name}"
 
-		mv build/output/"${product_version_language_dir_name}"/html/* build/output/"${product_version_language_dir_name}"
+		mv -f build/output/"${product_version_language_dir_name}"/html/* build/output/"${product_version_language_dir_name}"
 
 		#
 		# Fix broken links.
@@ -223,7 +223,7 @@ function generate_static_html {
 
 	sphinx-build -M html build/input/homepage build/output/homepage
 
-	mv build/output/homepage/html/* build/output/
+	mv -f build/output/homepage/html/* build/output/
 
 	rm -fr build/output/homepage
 }
@@ -244,27 +244,39 @@ function unzip_reference_docs {
 
 	if [ "${1}" == "prod" ] || [ "${1}" == "reference" ]
 	then
-		curl -L https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}" > liferay-ce-portal-doc.zip
+#		curl -L https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}" > liferay-ce-portal-doc.zip
 
 		7z x liferay-ce-portal-doc.zip
+
+		mkdir -p ./build/output/reference/latest/en/dxp
 
 		mv liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/* ./build/output/reference/latest/en/dxp
 
 		rmdir liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}
 
-		rm -f liferay-ce-portal-doc.zip
+#		rm -f liferay-ce-portal-doc.zip
+
+		echo "# Apps" > ./build/input/reference/latest/en/dxp/apps.md
+		echo "" >> ./build/input/reference/latest/en/dxp/apps.md
+
+		for d in ./build/output/reference/latest/en/dxp/javadocs/modules/apps/*; do
+			for f in $d/*; do
+				echo "[${f##*/}]($f/index.html)" >> ./build/input/reference/latest/en/dxp/apps.md
+				echo "" >> ./build/input/reference/latest/en/dxp/apps.md
+			done
+		done
 
 		#
 		# portlet-api-3.0.1-javadoc.jar
 		#
 
-		curl https://repo1.maven.org/maven2/javax/portlet/portlet-api/3.0.1/portlet-api-3.0.1-javadoc.jar -O
+#		curl https://repo1.maven.org/maven2/javax/portlet/portlet-api/3.0.1/portlet-api-3.0.1-javadoc.jar -O
 
-		mkdir ../site/build/output/reference/latest/en/dxp/portlet-api
+		mkdir -p ../site/build/output/reference/latest/en/dxp/portlet-api
 
 		7z x -o../site/build/output/reference/latest/en/portlet-api portlet-api-3.0.1-javadoc.jar
 
-		rm -f portlet-api-3.0.1-javadoc.jar
+#		rm -f portlet-api-3.0.1-javadoc.jar
 	fi
 }
 
@@ -277,9 +289,9 @@ function main {
 
 	generate_sphinx_input ${1}
 
-	generate_static_html
-
 	unzip_reference_docs ${1}
+
+	generate_static_html
 
 	upload_to_server
 

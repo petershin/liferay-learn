@@ -1,5 +1,7 @@
 # Javadocs
 
+[Apps](./apps.md)
+
 [Portal-Impl](javadocs/portal-impl/index.html)
 
 [Portal-Kernel](javadocs/portal-kernel/index.html)
@@ -8,6 +10,6 @@
 
 [Core/Service Tracker Collections](javadocs/modules/core/com.liferay.osgi.service.tracker.collections/index.html)
 
-[Core/Liferay Registry API](javadocs/modules/core/com.liferay.registry.api/index.html)
+[Core/Liferay Shielded Container API](javadocs/modules/core/com.liferay.shielded.container.api/index.html)
 
 [Petra](javadocs/modules/core/petra/index.html)

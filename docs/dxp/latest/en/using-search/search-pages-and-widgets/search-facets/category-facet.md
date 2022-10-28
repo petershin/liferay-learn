@@ -12,7 +12,7 @@ To configure the Category Facet, open the facet's _Options_ menu (![Options](../
 
 The Display Settings appear first:
 
-**Display Template:** Choose between *Default*, *Cloud Layout*, *Compact Layout*, *Label Layout*, and *Vocabulary Layout* (available in 7.4 Update/GA 47+). The Default Layout shows checkboxes next to each term, but the Compact layout does not. The Label layout shows small clickable labels for each term. The [Vocabulary Layout](#display-facet-terms-categories-by-vocabulary) shows the facet terms (categories) organized by vocabulary.
+**Display Template:** Choose between *Default*, *Cloud Layout*, *Compact Layout*, *Label Layout*, and *Vocabulary Layout* (available in 7.4 Update/GA 48+). The Default Layout shows checkboxes next to each term, but the Compact layout does not. The Label layout shows small clickable labels for each term. The [Vocabulary Layout](#display-facet-terms-categories-by-vocabulary) shows the facet terms (categories) organized by vocabulary.
 
 The Advanced Configuration section contains additional options: 
 
@@ -30,9 +30,9 @@ To achieve AND style selection between facet widgets, you must configure a diffe
 
 ### Displaying and Filtering Facet Terms by Vocabulary
 
-{bdg-secondary}`7.4 U47+ and GA47+`
+{bdg-secondary}`7.4 U48+ and GA48+`
 
-By default the Category Facet widget collects the categories of the matching results from every vocabulary in the site and displays them in a flat list. With the enhancements made in Update 47, you gain new display and filtering behaviors.
+By default the Category Facet widget collects the categories of the matching results from every vocabulary in the site and displays them in a flat list. With the enhancements made in Update 48, you gain new display and filtering behaviors.
 
 #### Display Facet Terms (Categories) by Vocabulary
 
@@ -45,7 +45,7 @@ Display categories under their vocabulary by selecting the Vocabulary Layout in 
 Select the vocabularies and categories to display in the facet. To enable this, switch the configuration in System Settings &rarr; Search &rarr; Category Facet Field from the default field, `assetCategoryIds`, to the `assetVocabularyCategoryIds` field. This setting specifies the field used to create the aggregations in the Category Facet. Setting `assetVocabularyCategoryIds` activates the vocabulary settings within the Category Facet widget's configuration screen. 
 
 ```{important}
-If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 47 and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
+If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
 ```
 
 ![Select the vocabulary.](./category-facet/images/06.png)
@@ -73,7 +73,7 @@ Consider a commerce portal for buying auto parts. Each part is a commerce produc
    - Premium
    - Standard
 
-When users select Engine and Exhaust System, they expect to see products matching either category. If they then select the Premium category from the Quality vocabulary, they expect the results to be narrowed to just premium auto parts for the engine and exhaust systems. This can be accomplished out-of-the-box as of 7.4 Update/GA 47.
+When users select Engine and Exhaust System, they expect to see products matching either category. If they then select the Premium category from the Quality vocabulary, they expect the results to be narrowed to just premium auto parts for the engine and exhaust systems. This can be accomplished out-of-the-box as of 7.4 Update/GA 48.
 
 To configure the use case above,
 

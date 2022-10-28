@@ -8,6 +8,7 @@ toc:
   - ./search-experiences/search-blueprints-configuration-reference.md
   - ./search-experiences/creating-and-managing-elements.md
   - ./search-experiences/sorting-results-in-a-search-blueprint.md
+  - ./search-experiences/semantic-search.md
 uuid: 4955593b-f8dd-4b87-bffa-6cb10c97e9e2
 ---
 # Search Experiences
@@ -26,6 +27,7 @@ search-experiences/search-blueprints-elements-reference.md
 search-experiences/search-blueprints-configuration-reference.md
 search-experiences/creating-and-managing-elements.md
 search-experiences/sorting-results-in-a-search-blueprint.md
+search-experiences/semantic-search.md
 ```
 
 The Liferay Enterprise Search Experiences app includes a suite of features granting fine-grained control over the end user's search experience. As the search administrator you can use Search Experiences for search customizations varying in complexity:
@@ -49,6 +51,7 @@ Search Blueprints is the first feature in the Search Experiences application. To
   - [Managing Elements](./search-experiences/creating-and-managing-elements/managing-elements.md)
   - [Predefined Element Variables Reference](./search-experiences/creating-and-managing-elements/predefined-element-variables-reference.md)
 - [Sorting Results in a Search Blueprint](./search-experiences/sorting-results-in-a-search-blueprint.md)
+- [Semantic Search](./search-experiences/semantic-search.md)
 
 ## Getting Liferay Search Experiences
 

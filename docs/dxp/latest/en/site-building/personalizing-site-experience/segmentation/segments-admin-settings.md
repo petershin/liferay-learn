@@ -1,5 +1,7 @@
 # Segments Admin Settings
 
+{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
+
 You can configure *Segments* at the system level in *System Settings* or at the instance level in *Instance settings*.
 
 To configure segments at the system level,

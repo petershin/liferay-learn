@@ -1,7 +1,6 @@
 ---
 toc:
 - ./getting-started.md
-- ./connecting-data-sources.md
 - ./touchpoints.md
 - ./people.md
 - ./optimization.md
@@ -10,6 +9,7 @@ toc:
 - ./workspace-settings.md
 - ./troubleshooting.md
 ---
+
 # Analytics Cloud
 
 ```{toctree}

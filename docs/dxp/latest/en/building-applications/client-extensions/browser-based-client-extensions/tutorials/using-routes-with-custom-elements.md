@@ -1,4 +1,6 @@
-# Using Routes with a Basic Custom Element Remote Application
+# Using Routes with Custom Elements
+
+{bdg-secondary}`Available Liferay 7.4+`
 
 Custom elements are a type of client extension that use Liferay's front-end infrastructure to register external applications with the Liferay platform and render them as widgets. For applications that include multiple routes (e.g., [React Router](https://reactrouter.com/), you can define remote application properties to determine which routes are used for a widget at runtime. These properties can be set for an application via the Remote Apps menu in Liferay or the widget's configuration options once deployed.
 
@@ -8,7 +10,7 @@ Custom elements or IFrames being deployed in the same way as other types of clie
 
 In this tutorial, you'll create a basic React application using Liferay's `create_remote_app.sh` script, which generates a sample app with three routes: `hello-world`, `hello-foo`, `hello-bar`. After compiling the application and hosting its `.js` and `.css` files, you'll register the application with Liferay and deploy it as a page widget. Finally, you'll configure it to use each of the alternative routes.
 
-![Create a basic custom element remote appliaction with alternate routes and use the route property to configure which is rendered.](./using-routes-with-a-basic-custom-element-remote-application/images/01.png)
+![Create a basic custom element remote appliaction with alternate routes and use the route property to configure which is rendered.](./using-routes-with-custom-elements/images/01.png)
 
 ```{note}
 Custom element client extensions are agnostic regarding how applications are built, packaged, and hosted. This tutorial only offers a convenient way to create a sample custom element application with basic routing.
@@ -95,7 +97,7 @@ Running `create_remote_app.sh` requires the latest versions of [Node.JS](https:/
 
 1. Drag and drop the `.js` and `.css` files into the upload area.
 
-   ![Upload the .js and .css files to the Liferay Document Library.](./using-routes-with-a-basic-custom-element-remote-application/images/02.png)
+   ![Upload the .js and .css files to the Liferay Document Library.](./using-routes-with-custom-elements/images/02.png)
 
 1. Click *Publish*.
 
@@ -107,7 +109,7 @@ This tutorial hosts the application’s static resources in Liferay’s Document
 
 To view each file's URL, click the *Info* icon (![Info Icon](../../../../images/icon-information.png)) and select one of the files at a time. Copy each file's *WebDAV URL* and save them for use in the next step.
 
-![Copy each file's WebDAV URL.](./using-routes-with-a-basic-custom-element-remote-application/images/03.png)
+![Copy each file's WebDAV URL.](./using-routes-with-custom-elements/images/03.png)
 
 For example,
 
@@ -138,7 +140,7 @@ Once saved, Liferay creates a widget named J1V3-Remote-App, which you can deploy
 
 Since J1V3-Remote-App is instanceable, you can add many of them to a page, each with its own independent configuration. For this tutorial, add the widget to a page twice.
 
-![Deploy two instances of the J1V3-Remote-App widget.](./using-routes-with-a-basic-custom-element-remote-application/images/04.png)
+![Deploy two instances of the J1V3-Remote-App widget.](./using-routes-with-custom-elements/images/04.png)
 
 ## Using the `route` Property
 
@@ -150,17 +152,17 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
 
 1. Select *J1V3-Remote-App*.
 
-   ![Select J1V3-Remote-App.](./using-routes-with-a-basic-custom-element-remote-application/images/05.png)
+   ![Select J1V3-Remote-App.](./using-routes-with-custom-elements/images/05.png)
 
 1. Enter `route=hello-foo` into the Properties field.
 
-   ![Enter route=hello-foo into the Properties field.](./using-routes-with-a-basic-custom-element-remote-application/images/06.png)
+   ![Enter route=hello-foo into the Properties field.](./using-routes-with-custom-elements/images/06.png)
 
 1. Click *Publish*.
 
 1. Verify both deployed widgets use the `HelloFoo` route.
 
-   ![Verify both widgets use the HelloFoo route.](./using-routes-with-a-basic-custom-element-remote-application/images/07.png)
+   ![Verify both widgets use the HelloFoo route.](./using-routes-with-custom-elements/images/07.png)
 
 ### Defining a Route Property via Widget Configuration
 
@@ -168,17 +170,17 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
 
 1. Click the *Options* button (![Options Button](../../../../images/icon-actions.png)) for one of the widgets and select *Configuration*.
 
-   ![Click the Options button and select Configuration.](./using-routes-with-a-basic-custom-element-remote-application/images/08.png)
+   ![Click the Options button and select Configuration.](./using-routes-with-custom-elements/images/08.png)
 
 1. Enter `route=hello-bar` into the Properties field.
 
-   ![Enter route=hello-bar into the Properties field.](./using-routes-with-a-basic-custom-element-remote-application/images/09.png)
+   ![Enter route=hello-bar into the Properties field.](./using-routes-with-custom-elements/images/09.png)
 
 1. Click *Save*.
 
 1. Verify the configured widget uses the `hello-bar` route, while the other widget still uses the `hello-foo` route.
 
-   ![Verify the configured widget uses the HelloBar route.](./using-routes-with-a-basic-custom-element-remote-application/images/10.png)
+   ![Verify the configured widget uses the HelloBar route.](./using-routes-with-custom-elements/images/10.png)
 
 ## Analyzing the Route Code
 
@@ -206,21 +208,21 @@ routes
 
 ### HelloWorld.js
 
-```{literalinclude} ./using-routes-with-a-basic-custom-element-remote-application/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-world/pages/HelloWorld.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-world/pages/HelloWorld.js
     :language: js
     :lines: 1-9
 ```
 
 ### HelloFoo.js
 
-```{literalinclude} ./using-routes-with-a-basic-custom-element-remote-application/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-foo/pages/HelloFoo.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-foo/pages/HelloFoo.js
     :language: js
     :lines: 1-9
 ```
 
 ### HelloBar.js
 
-```{literalinclude} ./using-routes-with-a-basic-custom-element-remote-application/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-bar/pages/HelloBar.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-bar/pages/HelloBar.js
     :language: js
     :lines: 1-9
 ```
@@ -229,5 +231,5 @@ routes
 
 * [Browser-Based Client Extensions](../../browser-based-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
-* [Creating a Basic Custom Element Remote Application](./creating-a-basic-custom-element-remote-application.md)
+* [Creating a Basic Custom Element](./creating-a-basic-custom-element.md)
 * [Remote Applications UI Reference](../remote-applications-ui-reference.md)

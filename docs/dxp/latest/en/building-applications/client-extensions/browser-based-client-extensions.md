@@ -1,6 +1,6 @@
 ---
 toc:
-- ./browser-based-client-extensions/developer-guide.md
+- ./browser-based-client-extensions/tutorials.md
 - ./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
 - ./browser-based-client-extensions/remote-applications-ui-reference.md
 ---
@@ -9,47 +9,42 @@ toc:
 ```{toctree}
 :maxdepth: 3
 
-browser-based-client-extensions/developer-guide.md
+browser-based-client-extensions/tutorials.md
 browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
 browser-based-client-extensions/remote-applications-ui-reference.md
 ```
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-There is a variety of different types of browser-based client extensions that provide different ways to augment your pages in Liferay. Create and deploy these client extensions from your [Liferay workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md).
+Liferay provides a variety of browser-based client extensions for augmenting your pages and integrating functionality. These extension types include CSS, JS, Theme CSS, Theme Favicon, Custom Element, and IFrame.
 
-CSS and JavaScript client extensions are applied to pages in this order:
-
-1. Page sets
-1. Master pages
-1. Page templates
-1. Individual pages
-
-You can generate a basic version of browser-based client extensions by running this command using the [Blade CLI](../tooling/blade-cli.md) in your Liferay workspace:
+You can create and deploy these extensions from your [Liferay workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md). To generate a basic version of these browser-based client extensions, run this command using the [Blade CLI](../tooling/blade-cli.md) in your Liferay workspace:
 
 ```bash
 blade create -t client-extension <your-new-folder-name>
 ```
 
+See [Understanding Custom Element and IFrame Client Extensions](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) to learn more about creating [custom element](#custom-element-client-extensions) and [IFrame](#iframe-client-extensions) client extensions.
+
 ```{note}
-You must create the [custom element](#custom-element-client-extensions) and [IFrame](#iframe-client-extensions) client extension types differently from other browser-based client extensions until a future update. See [Understanding Custom Element and IFrame Client Extensions](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information on these types.
+You can add JS, CSS, or Theme CSS client extensions to layout sets (i.e., page sets), master templates, page templates, and individual content pages. The level at which you add the extension determines which entities inherit the extension's code. For example, if you add extensions to a master template, all page templates and content pages using the master template inherit its extensions.
 ```
 
-## Global JavaScript Client Extensions
+## JavaScript Client Extensions
 
-Global JavaScript client extensions are some of the most straightforward and easy to create. When you deploy a global JS client extension to your Liferay instance and configure a page to use it, the JavaScript contained in it automatically runs each time you visit the page. This allows you to add special functionality to your pages without the use of an OSGi module or theme.
+JavaScript client extensions are some of the most straightforward and easy to create. When you deploy a JS client extension to your Liferay instance and configure a page to use it, the JavaScript contained in it automatically runs each time you visit the page. This allows you to add special functionality to your pages without the use of an OSGi module or theme.
 
-See [Creating Your First Global Javascript Client Extension](./browser-based-client-extensions/developer-guide/creating-your-first-global-javascript-client-extension.md) to get started working with this type.
+See [Creating Your First Javascript Client Extension](./browser-based-client-extensions/tutorials/creating-your-first-javascript-client-extension.md) to get started working with this type.
 
-## Global CSS Client Extensions
+## CSS Client Extensions
 
-Global CSS client extensions are a simple way to override CSS styling on your pages. When you deploy a global CSS client extension to your Liferay instance and configure a page to use it, the global CSS contained in it overrides the styling present on the page, including theme and style book settings. This allows you to programmatically override specific styles on a page for special needs that may be cumbersome to modify your theme to accommodate.
+CSS client extensions are a simple way to override CSS styling on your pages. When you deploy a CSS client extension to your Liferay instance and configure a page to use it, the CSS contained in it overrides the styling present on the page, including theme and style book settings. This allows you to programmatically override specific styles on a page for special needs that may be cumbersome to modify your theme to accommodate.
 
-See [Creating Your First Global CSS Client Extension](./browser-based-client-extensions/developer-guide/creating-your-first-global-css-client-extension.md) to get started working with this type.
+See [Creating Your First CSS Client Extension](./browser-based-client-extensions/tutorials/creating-your-first-css-client-extension.md) to get started working with this type.
 
 ## Theme CSS Client Extensions
 
-Similarly to global CSS client extensions, you can also add CSS the same way as you would with a [theme](../../site-building/themes/introduction-to-themes.md) without deploying an entire theme. For this type of client extension, you use a `clay.css` file and a `main.css` file, which are the same style files generated by a theme by default. You can add this type of client extension as an option from the *Remote Apps* menu in the Liferay Applications menu.
+Similarly to CSS client extensions, you can also add CSS the same way as you would with a [theme](../../site-building/site-appearance/themes/introduction-to-themes.md) without deploying an entire theme. For this type of client extension, you use a `clay.css` file and a `main.css` file, which are the same style files generated by a theme by default. You can add this type of client extension as an option from the *Remote Apps* menu in the Liferay Applications menu.
 
 ![Add a theme CSS client extension to apply CSS to your pages the same way as you would with a theme, without the rest of the theme itself.](./browser-based-client-extensions/images/01.png)
 
@@ -65,9 +60,7 @@ You can also use client extensions to override the favicon for your pages in Lif
 
 ## Custom Element Client Extensions
 
-```{note}
-The custom element and IFrame types of client extensions were previously referred to as Liferay Remote Apps.
-```
+> Previously named Custom Element Remote Apps
 
 Custom element client extensions Liferay's front-end infrastructure to integrate external applications with the platform and render them as page widgets. They can integrate applications from any domain accessible outside of Liferay.
 
@@ -77,15 +70,13 @@ See [Understanding Custom Element and IFrame Client Extensions](./browser-based-
 
 ## IFrame Client Extensions
 
-```{note}
-The custom element and IFrame types of client extensions were previously referred to as Liferay Remote Apps.
-```
+> Previously named IFrame Remote Apps
 
 IFrame client extensions work very similarly to [custom element client extensions](#custom-element-client-extensions). However, they render external applications as `<iframe>` HTML elements, which allow for limited interaction from the host page. See [Understanding Custom Element and IFrame Client Extensions](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information.
 
 ## Additional Information
 
 * [Introduction to Client Extensions](../client-extensions.md)
-* [Creating Your First Global JavaScript Client Extension](./browser-based-client-extensions/developer-guide/creating-your-first-global-javascript-client-extension.md)
-* [Creating Your First Global CSS Client Extension](./browser-based-client-extensions/developer-guide/creating-your-first-global-css-client-extension.md)
+* [Creating Your First JavaScript Client Extension](./browser-based-client-extensions/tutorials/creating-your-first-javascript-client-extension.md)
+* [Creating Your First CSS Client Extension](./browser-based-client-extensions/tutorials/creating-your-first-css-client-extension.md)
 * [Understanding Custom Element and IFrame Client Extensions](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)

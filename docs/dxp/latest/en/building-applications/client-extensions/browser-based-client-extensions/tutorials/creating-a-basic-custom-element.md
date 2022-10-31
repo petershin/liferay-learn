@@ -1,6 +1,6 @@
-# Creating a Basic Custom Element Remote Application
+# Creating a Basic Custom Element
 
-> Available for Liferay DXP 7.4+
+{bdg-secondary}`Available Liferay 7.4+`
 
 Custom elements are a type of client extension that use Liferay's front-end infrastructure to register external, remote applications with the Liferay platform and render them as widgets.
 
@@ -10,7 +10,7 @@ Custom elements or IFrames being deployed in the same way as other types of clie
 
 In this tutorial, you'll create a basic remote application using Liferay's [`create_remote_app.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_remote_app.sh) script. After the application is generated, you'll compile its code and host its `.js` and `.css` files. Once hosted, you'll copy each file's URLs and use them to create a custom element. Finally, you can deploy the application to site pages as a widget.
 
-![Use the create_remote_app.sh script to create a simple React application.](./creating-a-basic-custom-element-remote-application/images/01.png)
+![Use the create_remote_app.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
 
 ```{note}
 Custom element client extensions are agnostic regarding how applications are built, packaged, and hosted. This tutorial only offers a convenient way to create a sample custom element application.
@@ -79,7 +79,7 @@ The generated `index.js` file includes two customizations necessary for using th
 
 ### Understanding the React Routes
 
-The generated code includes three routes: `hello-world` (default), `hello-foo`, and `hello-bar`. Routes are alternative sets of code that you can use when running an application. See [Using Routes with a Basic Custom Element Application](./using-routes-with-a-basic-remote-app.md) for a basic example.
+The generated code includes three routes: `hello-world` (default), `hello-foo`, and `hello-bar`. Routes are alternative sets of code that you can use when running an application. See [Using Routes with Custom Elements](./using-routes-with-custom-elements.md) for a basic example.
 
 ## Building the React Application
 
@@ -130,7 +130,7 @@ Then, follow these steps:
 
    Alternatively, use *Select Files* to upload them.
 
-   ![Upload the .js and .css files to the Liferay Document Library.](./creating-a-basic-custom-element-remote-application/images/02.png)
+   ![Upload the .js and .css files to the Liferay Document Library.](./creating-a-basic-custom-element/images/02.png)
 
 1. Click *Publish*.
 
@@ -138,7 +138,7 @@ This adds the files to the Document Library and assigns them unique URLs, which 
 
 To view each file's URL, click the *Info* icon (![Info Icon](../../../../images/icon-information.png)) and select a file. Copy each file's *WebDAV URL* and save them for use in the next step.
 
-![Copy each file's WebDAV URL.](./creating-a-basic-remote-app/images/03.png)
+![Copy each file's WebDAV URL.](./creating-a-basic-custom-element/images/03.png)
 
 For example,
 
@@ -166,11 +166,11 @@ For example,
 
 Once saved, Liferay creates a widget named H5V7-Remote-App, which you can deploy to site pages like other page widgets. This widget appears under the selected Portlet Category Name.
 
-![Deploy the H5V7-Remote-App widget to site pages.](./creating-a-basic-remote-app/images/04.png)
+![Deploy the H5V7-Remote-App widget to site pages.](./creating-a-basic-custom-element/images/04.png)
 
 ## Additional Information
 
 * [Browser-Based Client Extensions](../../browser-based-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
-* [Using Routes with a Basic Custom Element Remote Application](./using-routes-with-a-basic-custom-element-remote-application.md)
+* [Using Routes with Custom Elements](./using-routes-with-custom-elements.md)
 * [Remote Applications UI Reference](../remote-applications-ui-reference.md)

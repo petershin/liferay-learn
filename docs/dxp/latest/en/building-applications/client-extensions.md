@@ -10,9 +10,9 @@ toc:
 client-extensions/browser-based-client-extensions.md
 ```
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Client extensions are a flexible and specially tailored means of extending or adding functionality to Liferay, without the use of OSGi modules. You can deploy your client extensions to any Liferay environment, whether you are hosting it yourself or on Liferay Experience Cloud, without having to make any changes to them. They are also the primary way of customizing Liferay with Liferay Experience Cloud, together with built-in configurations like [Liferay objects](./objects.md) (that don't require any code).
+Client extensions are a flexible way of extending Liferay without using OSGi modules. You can deploy client extensions to any Liferay environment, whether you are hosting it yourself or on Liferay Experience Cloud, without having to make any changes to them. They are also the primary way of customizing Liferay with Liferay Experience Cloud, together with built-in configurations like [Liferay objects](./objects.md).
 
 While other types of Liferay extensions, such as [OSGi modules](../liferay-internals/fundamentals/module-projects.md) or [themes](../site-building/site-appearance/themes/introduction-to-themes.md), are powerful tools for customizing Liferay itself, client extensions avoid directly using or customizing Liferay code. This makes client extensions more robust and simpler to apply to environments after an upgrade, since they do not depend on any specific version of Liferay. You can also develop using whatever programming languages or technologies are most familiar to you, because your client extensions can run outside of Liferay and integrate with objects, with no extra code required to connect them.
 
@@ -48,7 +48,7 @@ Browser-based client extensions are hosted on a CDN when they are deployed. Exam
 
 * **Favicon**: Client extensions can deploy a favicon for a specific theme.
 
-* **Custom Element**: Custom element client extensions can integrate a remote application into a page.
+* **Custom Element**: Custom element client extensions can integrate an application into a page.
 
 * **IFrame**: IFrame client extensions work similarly to custom elements, but they allow for limited interaction with a remote application using a separate `<iframe>` HTML element.
 
@@ -100,6 +100,6 @@ Deploying custom services gives you much more power to implement customizations 
 
 ## Additional Information
 
-* [Creating Your First Client Extension](./client-extensions/browser-based-client-extensions/developer-guide/creating-your-first-global-javascript-client-extension.md)
+* [Creating Your First Client Extension](./client-extensions/browser-based-client-extensions/tutorials/creating-your-first-javascript-client-extension.md)
 * [Browser-Based Client Extensions](./client-extensions/browser-based-client-extensions.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

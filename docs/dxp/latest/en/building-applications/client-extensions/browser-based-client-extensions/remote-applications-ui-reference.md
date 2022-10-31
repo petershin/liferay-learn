@@ -1,10 +1,8 @@
 # Remote Applications UI Reference
+<!-- TASK: Rename article and add reference material for the other four client extensions; also, maybe reconsider the use of "remote" and "external"-->
+The [custom element](./understanding-custom-element-and-iframe-client-extensions.md#using-the-custom-element-type) and [IFrame](./understanding-custom-element-and-iframe-client-extensions.md#using-the-iframe-type) client extensions use Liferay's front-end infrastructure to register JavaScript applications and render them as page widgets. To add and manage these extensions, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Remote Apps*.
 
-Remote applications (used for [custom element or IFrame client extensions](./understanding-custom-element-and-iframe-client-extensions.md)) use Liferay's front-end infrastructure to register external JavaScript applications and render them as page widgets. To access them in Liferay, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Remote Apps*.
-
-To add a remote application, click the *Add* button (![Add Button](../../../images/icon-add.png)).
-
-When creating or editing a remote application entry, the following fields are available depending on the selected type of client extension it is used for (i.e., custom element or IFrame).
+When creating or editing an extension, the following fields are available depending on the selected type of client extension (i.e., custom element or IFrame).
 
 | Field | Description |
 | --- | --- |
@@ -26,4 +24,4 @@ When creating or editing a remote application entry, the following fields are av
 
 * [Browser-Based Client Extensions](../browser-based-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](./understanding-custom-element-and-iframe-client-extensions.md)
-* [Creating a Basic Custom Element Remote Application](./developer-guide/creating-a-basic-custom-element-remote-application.md)
+* [Creating a Basic Custom Element](./tutorials/creating-a-basic-custom-element.md)

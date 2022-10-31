@@ -1,8 +1,8 @@
 # Understanding Custom Element and IFrame Client Extensions
 
-Custom element and IFrame client extensions are special types that integrate remote applications into pages on Liferay. They use Liferay's front-end infrastructure to register external applications and render them as page widgets. When creating an entry for them in the UI, you can select between the [custom element](#using-the-custom-element-type) and [IFrame](#using-the-iframe-type) and types. This determines how the external application is registered with Liferay DXP and rendered in site pages.
+Custom Element and IFrame client extensions use Liferay's front-end infrastructure to register applications with Liferay and render them as page widgets. The [custom element](#using-the-custom-element-type) and [iframe](#using-the-iframe-type) types determine how the application is registered with Liferay and rendered in site pages.
 
-Both of these client extension types are integrated into pages as a widget during the page rendering life cycle. When you create the entry, Liferay generates and adds the widget to the OSGi service registry. If desired, you can set additional properties at the entry or widget level to configure how both custom element and IFrame applications are rendered.
+When you create one of these extensions, Liferay generates and adds the widget to the OSGi service registry. If desired, you can set additional properties at the entry or widget level to configure how both custom element and IFrame applications are rendered.
 
 However, custom element and IFrame applications are hosted and rendered differently. They also have different levels of access to Liferay services and runtime data.
 
@@ -21,7 +21,7 @@ Each custom element entry includes an HTML element name, as well as URLs to any 
 Once added to a page, Liferay inserts the client extension's JavaScript and CSS files directly into the page via `<script>` and `<link>` elements. When loaded, the JavaScript declares and instantiates the application, and the CSS files style it.
 
 ```{important}
-The remote application's code must declare the custom element and provide an HTML element name matching the name in the remote app entry. For this reason, it must use an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) to ensure the custom element declaration runs in the browser as soon as the app code is loaded.
+The application's code must declare the custom element and provide an HTML element name matching the name in the Remote Apps entry. For this reason, it must use an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) to ensure the custom element declaration runs in the browser as soon as the app code is loaded.
 ```
 
 When the remote app's widget is added to a page, it renders the application markup by first generating a tag with the provided HTML element name and then executing the logic defined in the element's code. If the entry or widget instance includes properties, they are added to the generated custom element markup (`<custom-element (+props)/>`).
@@ -53,5 +53,5 @@ When an IFrame app uses the client SDK, the Liferay page receives instructions t
 ## Additional Information
 
 * [Introduction to Client Extensions](../../client-extensions.md)
-* [Creating a Basic Custom Element Remote Application](./developer-guide/creating-a-basic-custom-element-remote-application.md)
+* [Creating a Basic Custom Element](./tutorials/creating-a-basic-custom-element.md)
 * [Remote Applications UI Reference](./remote-applications-ui-reference.md)

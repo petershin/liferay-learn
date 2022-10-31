@@ -1,6 +1,6 @@
 # Using Workflow with Publications
 
-{bdg-secondary}`Available Liferay 7.4 U__+/GA__+`
+{bdg-secondary}`Available Liferay 7.4 U44+/GA44+`
 
 Publications is fully integrated with Liferay's [Workflow](../../../process-automation/workflow/introduction-to-workflow.md) framework. This means you can continue to use custom workflows for reviewing content and pages while Publications is enabled for your system. Using Workflow with Publications can help ensure all tracked changes go through the desired approval process before publishing them to production.
 

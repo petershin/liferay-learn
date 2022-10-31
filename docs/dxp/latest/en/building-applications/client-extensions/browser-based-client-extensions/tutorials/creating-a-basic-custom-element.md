@@ -8,7 +8,7 @@ Custom elements are a type of client extension that use Liferay's front-end infr
 Custom elements or IFrames being deployed in the same way as other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial uses a different way to deploy custom element remote applications, and it is still the recommended approach until a future update.
 ```
 
-In this tutorial, you'll create a basic remote application using Liferay's [`create_remote_app.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_remote_app.sh) script. After the application is generated, you'll compile its code and host its `.js` and `.css` files. Once hosted, you'll copy each file's URLs and use them to create a custom element. Finally, you can deploy the application to site pages as a widget.
+Here you'll create a basic remote application using Liferay's [`create_remote_app.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_remote_app.sh) script. After the application is generated, you'll compile its code and host its `.js` and `.css` files. Once hosted, you'll copy each file's URLs and use them to create a custom element. Finally, you can deploy the application to site pages as a widget.
 
 ![Use the create_remote_app.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
 
@@ -30,7 +30,7 @@ curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_remot
 
 This calls the script with two arguments: a custom HTML element name (`h5v7-remote-app`) and the desired JavaScript framework (`react`).
 
-When finished running, the script automatically creates a new React application in a folder named `h5v7-remote-app`, which includes these elements:
+When finished running, the script automatically creates a new React application which includes these elements in a folder named `h5v7-remote-app`:
 
 ```bash
 h5v7-remote-app
@@ -74,8 +74,8 @@ h5v7-remote-app
 
 The generated `index.js` file includes two customizations necessary for using the application as a Liferay custom element remote application.
 
-* WebComponent: On line 21, the application is declared a `WebComponent` so it can connect to Liferay's framework.
-* ELEMENT_ID: On line 30, `ELEMENT_ID` is set to `h5v7-remote-app`, instead of the conventional `<div id="root" />`. This is because a remote application's HTML Element Name must match the application's `ELEMENT_ID`, and `<div id="root" />` does not work for this purpose.
+* `WebComponent`: On line 21, the application is declared a `WebComponent` so it can connect to Liferay's framework.
+* `ELEMENT_ID`: On line 30, `ELEMENT_ID` is set to `h5v7-remote-app`, instead of the conventional `<div id="root" />`. This is because a remote application's HTML Element Name must match the application's `ELEMENT_ID`, and `<div id="root" />` does not work for this purpose.
 
 ### Understanding the React Routes
 

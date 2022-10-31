@@ -16,7 +16,7 @@ The custom element client extension type renders external application code into 
 
 ![The custom element architecture includes an entry in the Liferay server, application code stored on a server, and the Liferay page with the client extension's unique widget.](./understanding-custom-element-and-iframe-client-extensions/images/02.png)
 
-Each custom element entry includes an HTML element name, as well as URLs to any necessary JavaScript and CSS files. They can also include properties rendered with the application during runtime.
+Each custom element entry includes an HTML element name, as well as URLs to any necessary JavaScript and CSS files. They can also include properties rendered with the application at runtime.
 
 Once added to a page, Liferay inserts the client extension's JavaScript and CSS files directly into the page via `<script>` and `<link>` elements. When loaded, the JavaScript declares and instantiates the application, and the CSS files style it.
 
@@ -26,7 +26,7 @@ The application's code must declare the custom element and provide an HTML eleme
 
 When the remote app's widget is added to a page, it renders the application markup by first generating a tag with the provided HTML element name and then executing the logic defined in the element's code. If the entry or widget instance includes properties, they are added to the generated custom element markup (`<custom-element (+props)/>`).
 
-Once rendered, the application is fully integrated in the Liferay page so it can use Liferay's public JavaScript API and reuse style classes already available in the host page. However, you can change this by how you build the custom element and where you put its style rules. For example, if the application's markup uses [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM), the styles of the custom element and the host page can be isolated from one another.
+Once rendered, the application is integrated fully into the Liferay page so it can use Liferay's public JavaScript API and reuse style classes already available in the host page. However, you can change this by how you build the custom element and where you put its style rules. For example, if the application's markup uses [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM), the styles of the custom element and the host page can be isolated from one another.
 
 ```{note}
 When multiple instances of the custom element widget are added to a page, Liferay only includes the application's URLs once.
@@ -43,7 +43,7 @@ Each IFrame entry stores an IFrame URL that links to an application, typically s
 When you add the client extension's widget to a page, Liferay uses the entry's URL to render an `<iframe>` tag populated with the external application's content. If the entry or widget instance includes properties, they are passed to the application as additional URL attributes (`<iframe (+properties)/>`) so the app can access them programmatically.
 
 ```{note}
-IFrame apps must be deployed to a server so they can assemble their own markup and send it to the browser to fill the widget's `<iframe>` element. By contrast, [Custom Element apps](#using-the-custom-element-type) don't require a server to produce any markup. They only require the application's code is available via URLs, since the browser is responsible for running the necessary logic via the app's widget and JS code.
+IFrame apps must be deployed to a server so they can assemble their own markup and send it to the browser to fill the widget's `<iframe>` element. By contrast, [Custom Element apps](#using-the-custom-element-type) don't require a server to produce any markup. They only require the application's code be available via URLs, since the browser is responsible for running the necessary logic via the app's widget and JS code.
 ```
 
 By default, all browsers impose the 'same-origin' policy for IFrame applications to prevent information flow between a host page and its external applications. Liferay provides a client SDK script to allow limited communication between IFrame elements and a Liferay page. It works by implementing a communication protocol with the page via the `postMessage()` API. To use this script, it must be included in the application's markup.

@@ -13,12 +13,12 @@
 
 視聴者を理解するために
 
-* [Individuals Dashboard](../people/individuals/individuals-dashboard.md)
+* [個人ダッシュボード](../people/individuals/individuals-dashboard.md)
 * [訪問者プロフィール](../people/individuals/individual-profiles.md)
 * [セグメント](../people/segments/segments.md)
 
 ```{note}
-セグメントに基づいて分析データを探索するには、まず［セグメントの作成］(../people/segments/creating-segments.md)を行う必要があります。 選択した属性に基づき集計された個人のグループです。
+セグメントに基づいて分析データを探索するには、まず [セグメントの作成](../people/segments/creating-segments.md)を行う必要があります。 選択した属性に基づき集計された個人のグループです。
 ```
 
 サイトコンテンツの最適化のために。
@@ -41,16 +41,16 @@
 * ワークスペース使用状況の監視
 * ワークスペース設定
 
-ワークスペースが接続されると、アナリティクスデータが表示されます。 例えば、 [Sites dashboard](../../touchpoints/sites-dashboard.md)でサイト別の分析結果を見ることができます。 ワークスペース設定の詳細は、 [Managing Workspaces](../../workspace-settings/managing-workspaces.md)を参照してください。
+ワークスペースが接続されると、アナリティクスデータが表示されます。 例えば、 [ サイトダッシュボード](../../touchpoints/sites-dashboard.md)でサイト別の分析結果を見ることができます。 ワークスペース設定の詳細は、 [ワークスペースの管理](../../workspace-settings/managing-workspaces.md)を参照してください。
 
 ## 言語メニューオプション
 
 Analytics CloudのUIは、現在、英語、日本語、ポルトガル語、スペイン語に対応しています。 言語設定を変更する場合。
 
-1. ダッシュボードの下部にあるユーザー名をクリックします。 次に、 *Language*をクリックします。
+1. ダッシュボードの下部にあるユーザー名をクリックします。 次に、 **Language** をクリックします。
 
    ![ユーザー名をクリックし、「言語」をクリックします。](./viewing-the-analytics-dashboard/images/02.png)
 
 2. 言語を選択します. ページを更新してください。 ダッシュボードとメニューが選択した言語で表示されるようになりました。
 
-よくぞ言ってくれました。 Analytics Cloudで利用可能なすべての機能、オプション、および構成を参照するには、上記の _Analytics Cloud_ パンくずをクリックします。 
+よくぞ言ってくれました。 Analytics Cloudで利用可能なすべての機能、オプション、および構成を参照するには、上記の **Analytics Cloud** パンくずをクリックします。 

@@ -4,17 +4,17 @@ Individuals dashboardでは、訪問者やサイトの利用状況に関する�
 
 ダッシュボードを表示するには
 
-1. メニューの_メンバー_のセクションにある［ Individual］ をクリックします。
+1. メニューの **メンバー** のセクションにある［ Individual］ をクリックします。
 
-1. _［Overview］_ タブをクリックします（Individualsをクリックすると、このタブがデフォルトで選択されます）。
+1. ［**Overview**］ タブをクリックします（Individualsをクリックすると、このタブがデフォルトで選択されます）。
 
 Individuals Dashboardには、以下のパネルがあります。
 
 * [Current Totals](#current-totals)
-* [Enriched Profiles](#enriched-profiles)
-* [Active Individuals](#active-individuals)
+* [充実化したプロファイル](#enriched-profiles)
+* [有効な個人](#active-individuals)
 * [Interests](#interests)
-* [Breakdown](#breakdown)
+* [内訳](#breakdown)
 
 ## Current Totals
 
@@ -26,7 +26,7 @@ Current Totalsパネルには、Analytics Cloudによって追跡された既知
 
 また、パネルには、過去30日と比較した総数の変化率も表示されます。
 
-## Enriched Profiles
+## 充実化したプロファイル
 
 Enriched Profilesパネルには、過去30日以内にエンリッチされた個人の合計数が表示されます。
 
@@ -34,13 +34,13 @@ Enriched Profilesパネルには、過去30日以内にエンリッチされた�
 
 例えば、 [DXP](../../getting-started/syncing-sites-and-contacts.md)から連絡先データを同期させた場合などです。
 
-## Active Individuals
+## 有効な個人
 
 Active Individualsパネルには、選択した期間中にお客様のサイトにアクセスした既知および匿名の個人に関する情報が表示されます。
 
 ![Active Individualsパネルには、本サイトにアクセスしたことのある個人を時系列で表示しています。](./individuals-dashboard/images/03.png)
 
-日、週、月に基づいてデータを視覚化することを選択します。 データは、時間の範囲でフィルタリングすることができます。直近24時間、直近7日、直近30日、直近90日。 *More Preset Periods* をクリックすると、追加の時間範囲が表示されます。 *期間を指定* をクリックすると、任意の開始日と終了日でフィルタリングすることができます。
+日、週、月に基づいてデータを視覚化することを選択します。 データは、時間の範囲でフィルタリングすることができます。直近24時間、直近7日、直近30日、直近90日。 **More Preset Periods** をクリックすると、追加の時間範囲が表示されます。 **期間を指定** をクリックすると、任意の開始日と終了日でフィルタリングすることができます。
 
 ## Interests
 
@@ -50,11 +50,11 @@ Interestsパネルでは、人気のあったトピックのトップ5を紹介�
 
 これらのトピックは、ページのHTMLのtitle、description、keywordタグから導き出されます。
 
-興味のあるトピックの全リストを表示するには、パネル内の *View All Interests* をクリックします。 または、ページ上部の［Interests］タブをクリックします。
+興味のあるトピックの全リストを表示するには、パネル内の **View All Interests** をクリックします。 または、ページ上部の［Interests］タブをクリックします。
 
-Interestsの詳細については、 [Understanding Interests](../../workspace-data/definitions/managing-interest-topics.html#understanding-interests)を参照してください。
+Interestsの詳細については、 [Understanding Interests](../../workspace-data/definitions/managing-interest-topics.html#understanding-interests) を参照してください。
 
-## Breakdown
+## 内訳
 
 Breakdownパネルは、選択されたユーザーの属性に基づいて分布情報を表示します。
 
@@ -66,7 +66,7 @@ Breakdownパネルは、選択されたユーザーの属性に基づいて分�
 
 1. ドロップダウンメニューで属性を選択します。
 
-1. 内訳の名前を入力し、 *［保存］*をクリックします。
+1. 内訳の名前を入力し、 ［**保存**］ をクリックします。
 
-追加属性の内訳を表示するには、 *Explore Breakdown*をクリックしてください。 または、ページ上部の［ _Distribution_ ］タブをクリックします。
+追加属性の内訳を表示するには、 **Explore Breakdown** をクリックしてください。 または、ページ上部の［**Distribution**］タブをクリックします。
 

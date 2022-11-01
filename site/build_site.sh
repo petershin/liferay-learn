@@ -244,39 +244,48 @@ function unzip_reference_docs {
 
 	if [ "${1}" == "prod" ] || [ "${1}" == "reference" ]
 	then
-#		curl -L https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}" > liferay-ce-portal-doc.zip
+		curl -L https://github.com/liferay/liferay-portal/releases/download/"${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}"/"${LIFERAY_LEARN_PORTAL_DOC_FILE_NAME}" > liferay-ce-portal-doc.zip
 
 		7z x liferay-ce-portal-doc.zip
 
-		mkdir -p ./build/output/reference/latest/en/dxp
+		mkdir -p ./build/input/reference/latest/en/dxp
 
-		mv liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/* ./build/output/reference/latest/en/dxp
+		mv liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/* ./build/input/reference/latest/en/dxp
 
 		rmdir liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}
 
-#		rm -f liferay-ce-portal-doc.zip
+		rm -f liferay-ce-portal-doc.zip
 
 		echo "# Apps" > ./build/input/reference/latest/en/dxp/apps.md
+
 		echo "" >> ./build/input/reference/latest/en/dxp/apps.md
 
-		for d in ./build/output/reference/latest/en/dxp/javadocs/modules/apps/*; do
+		for d in ./build/input/reference/latest/en/dxp/javadocs/modules/apps/*; do
+
+			apptitle=$(echo $d | cut -d/ -f11)
+
+			echo "## $apptitle" >> ./build/input/reference/latest/en/dxp/apps.md
+
 			for f in $d/*; do
-				echo "[${f##*/}]($f/index.html)" >> ./build/input/reference/latest/en/dxp/apps.md
+				inputpath="$f/index.html"
+				relpath=$(echo $inputpath | cut -d/ -f4-)
+				echo "[${f##*/}](/$relpath)" >> ./build/input/reference/latest/en/dxp/apps.md
 				echo "" >> ./build/input/reference/latest/en/dxp/apps.md
 			done
+
 		done
 
 		#
 		# portlet-api-3.0.1-javadoc.jar
 		#
 
-#		curl https://repo1.maven.org/maven2/javax/portlet/portlet-api/3.0.1/portlet-api-3.0.1-javadoc.jar -O
+		curl https://repo1.maven.org/maven2/javax/portlet/portlet-api/3.0.1/portlet-api-3.0.1-javadoc.jar -O
 
-		mkdir -p ../site/build/output/reference/latest/en/dxp/portlet-api
+		mkdir -p ../site/build/input/reference/latest/en/dxp/portlet-api
 
-		7z x -o../site/build/output/reference/latest/en/portlet-api portlet-api-3.0.1-javadoc.jar
+		7z x -o../site/build/input/reference/latest/en/portlet-api portlet-api-3.0.1-javadoc.jar
 
-#		rm -f portlet-api-3.0.1-javadoc.jar
+		rm -f portlet-api-3.0.1-javadoc.jar
 	fi
 }
 
@@ -293,9 +302,25 @@ function main {
 
 	generate_static_html
 
+	move_reference_docs ${1}
+
 	upload_to_server
 
 	echo_path ${1}
+}
+
+function move_reference_docs {
+
+	if [ "${1}" == "prod" ] || [ "${1}" == "reference" ]
+	then
+
+		mv ./build/input/reference/latest/en/dxp/definitions ./build/output/reference/latest/en/dxp
+		mv ./build/input/reference/latest/en/dxp/javadocs ./build/output/reference/latest/en/dxp
+		mv ./build/input/reference/latest/en/dxp/portlet-api ./build/output/reference/latest/en/dxp
+		mv ./build/input/reference/latest/en/dxp/propertiesdoc ./build/output/reference/latest/en/dxp
+		mv ./build/input/reference/latest/en/dxp/taglibs ./build/output/reference/latest/en/dxp
+
+	fi
 }
 
 function npm_install {

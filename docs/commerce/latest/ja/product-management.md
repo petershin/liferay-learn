@@ -2,8 +2,7 @@
 toc:
 - ./product-management/catalogs.md
 - ./product-management/creating-and-managing-products.md
-- ./product-management/managing-inventory.md
-- ./product-management/managing-prices.md
+- ./product-management/developer-guide.md
 ---
 
 # 商品管理
@@ -13,8 +12,7 @@ toc:
 
 product-management/catalogs.md
 product-management/creating-and-managing-products.md
-product-management/managing-inventory.md
-product-management/managing-prices.md
+product-management/developer-guide.md
 ```
 
 ```{raw} html

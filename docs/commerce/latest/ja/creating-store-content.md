@@ -20,7 +20,7 @@ creating-store-content/creating-your-storefront.md
 creating-store-content/creating-a-catalog-page.md
 creating-store-content/creating-separate-catalog-pages-for-individual-product-catalogs.md
 creating-store-content/creating-product-display-pages.md
-creating-store-content/creating-category-display-pages.md
+creation-store-content/creating-category-display-pages.md creation-store-content/creating-catalog-page.md
 creating-store-content/using-wish-lists.md
 creating-store-content/commerce-storefront-pages.md
 creating-store-content/using-web-experience-management.md

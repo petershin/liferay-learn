@@ -30,6 +30,10 @@ The JVM's memory comprises heap and non-heap spaces. The heap contains a space f
 | `-XX:InitialCodeCacheSize=64m` | Initial space for JIT-compiled code. Too small a code cache (`48m` is the default) reduces performance, as the JIT isn't able to optimize high frequency methods. |
 | `-XX:ReservedCodeCacheSize=96m` | Maximum space for JIT-compiled code. |
 
+```{Note}
+It is recommended to set the minimum size (`-Xms`) and maximum size (`-Xmx`) as the same value to avoid the virtual machine needing to dynamically make adjustments.
+```
+
 ```{warning}
 Avoid allocating more than 32g to your JVM heap. Your heap size should be commensurate with the speed and quantity of available CPU resources.
 ```

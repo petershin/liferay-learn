@@ -2,15 +2,19 @@
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
-You can configure *Segments* behavior at the system or instance level.
+You can configure *Segments* behavior at the system or instance level. These settings can be used to configure the following:
 
-<!--
-NOTE: It could help to give examples. What sort of things can you configure?
-e.g., "These settings determine..."
+* Set the interval to sync Analytics Cloud segments with Liferay DXP.
 
-NOTE: Also, it might help to clarify how the scopes relate.
-e.g., "When you enable settings at the system level, you can still disable them at the instance level. However, if you disable settings at the system level, you cannot enable them at the instance level."
--->
+* Set the expiration intervals for interest terms cache and anonymous user cache for Analytics Cloud segments.
+
+* Create segment-based session properties based on vocabularies.
+
+* Enable/disable segmentation
+
+* Enable/disable dynamic segment-based assignment of users to roles
+
+* Set the interval to update compound segments.
 
 To access segment settings,
 
@@ -20,7 +24,15 @@ To access segment settings,
    Beginning with Liferay DXP 7.4 U38+/GA38+, you can configure segment settings at the instance level.
    ```
 
-1. Click *Segments* in the Content and Data section.
+1. Click *Segments* in the *Content and Data* section.
+
+See the table below to understand how settings applied at the system and instance level work.
+
+| Scope                                                                                       | Description                                                                                                    |
+| :------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------- |
+| *Control Panel* &rarr; *System Settings* &rarr; *Segments* under *System Scope*             | Sets the default throughout the system. You cannot override these at a more granular scope.                    |
+| *Control Panel* &rarr; *System Settings* &rarr; *Segments* under *Virtual Instance Scope*   | Sets the default for all instances. You can override these at a more granular scope under *Instance Settings*. |
+| *Control Panel* &rarr; *Instance Settings* &rarr; *Segments* under *Virtual Instance Scope* | Sets the default for the current instance. You cannot override these at a more granular scope.                 |
 
 ## Analytics Cloud Segments
 
@@ -38,31 +50,19 @@ These Liferay DXP settings are available for Analytics Cloud segments:
 
 ## Session Property Vocabularies
 
-<!--NOTE: This section could use more info/context; cf. with the Analytics Cloud Segments section-->
-
-Add session property vocabularies that you can use in the segments editor. See [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md) for more information.
+With a *Session Property Vocabulary*, you can create [session-based Segment properties](../../../site-building/personalizing-site-experience/segmentation/segments-editor-ui-reference.md#session-properties) using predefined values. This option is useful when you want the user to select them from a list of predefined values. This fulfils the task of defining segments and eliminates manual entry errors. See [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md) for more information.
 
 ## Segments Service
 
 ![View and configure Segments Service settings.](./segments-admin-settings/images/02.png)
 
-<!--NOTE: This section could use an intro; cf. with the Analytics Cloud Segments section-->
+You can use segments service settings to enable/disable segmentation and the dynamic segment-based assignment of users to roles. You can also configure the interval to update compound segments. 
+
+These Liferay DXP settings are available for segments service:
 
 **Enable Segmentation**: Enable or disable segmentation. While disabled, personalized variations of collections and experiences are not displayed to the end user.
 
-**Enable Assign Roles by Segment**: Enable or disable the ability to assign roles to users dynamically using global segments. While enabled, you can assign roles automatically to groups of changing individuals. <!--NOTE: I think the following steps should be in a separate roles article (e.g., "Using Segments to Assign Roles Dynamically"). This would give the content more visibility. If such an article (or section in an article) already exists, this line should just link to the article.-->
-
-To do this,
-
-1. Open the *Global Menu* ![Global Menu](../../../images/icon-applications-menu.png) and navigate to *Control Panel* &rarr; *Users*.
-
-1. Click on *Roles*, and select a role of your choice.
-
-1. Click the *Assignees* tab and click *Segments*.
-
-1. Select a global segment of your choice. Users from that segment get assigned to the selected role dynamically.
-
-   ![Select a global segment of your choice to assign users from that segment to the selected role dynamically.](./segments-admin-settings/images/03.png)
+**Enable Assign Roles by Segment**: Enable or disable the ability to assign roles to users dynamically using global segments. While enabled, you can assign roles automatically to groups of changing individuals. See [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md) for more information.
 
 **Compound Segments Interval**: Set the interval (in minutes) for checking and refreshing compound segments based on its rules. This setting is only available under system settings.
 

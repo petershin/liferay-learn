@@ -14,6 +14,18 @@ When you [open the Content Dashboard](#accessing-the-content-dashboard), you see
 
 To access the Content Info sidebar, click the *Actions Menu* (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* option. Alternatively, hover over the article and click *Info* (![Info](../../images/icon-information.png)). For information on the *View Metrics* (![Metrics](../../images/icon-analytics.png)) option, read [About the Content Performance Panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
 
+```{note}
+Starting from Liferay DXP 7.4 U42+/GA42+, the following improvements have been made to the info panel.
+
+* Blogs and web content have a preview image in addition to images and PDFs. But you cannot click on the preview image to redirect to the blog or web content. 
+
+* In the *Details* section, you can now view the *WebDAV* URL for documents along with the *Latest Version URL* below it. 
+
+* You can subscribe to a web content by clicking on the bell icon at the top right of the info panel. This notifies you of any changes that occurs with the web content. 
+
+* You can share blogs and documents from the info panel by clicking on the *Share* button and entering the email address of the person(s) you want to share it with. Once added, you can view and manage the collaborators from the info panel itself. 
+```
+
 ## Accessing the Content Dashboard
 
 1. Click on the Global Menu and, under the *Content* area, click *Content Dashboard*.
@@ -112,10 +124,13 @@ The *First Vocabulary* and *Second Vocabulary* columns depend on the Vocabularie
 
 For each entry in the Contents list, you can access the following options using the *Actions* menu (![Actions Menu](../../images/icon-actions.png)) or hovering over the article and clicking the corresponding option:
 
-- *View* (![View](../../images/icon-preview.png)): Opens the content based on a Display Page Template in view mode.
-- *Edit* (![Edit](../../images/icon-edit.png)): Opens the content in edit mode.
-- *Info* (![Information](../../images/icon-information.png)): Opens the [Content info](#content-info-sidebar) sidebar.
-- *View Metrics* (![View Metrics](../../images/icon-analytics.png)): Opens the [Content Performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
+* *View* (![View](../../images/icon-preview.png)): Opens the content based on a Display Page Template in view mode.
+
+* *Edit* (![Edit](../../images/icon-edit.png)): Opens the content in edit mode.
+
+* *Info* (![Information](../../images/icon-information.png)): Opens the [Content info](#content-info-sidebar) sidebar.
+
+* *View Metrics* (![View Metrics](../../images/icon-analytics.png)): Opens the [Content Performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
 
     ![Access the Content info sidebar and Content Performance panel from the Actions menu or the icons on each content row.](./content-dashboard-interface/images/11.png)
 
@@ -164,18 +179,24 @@ From the *Filter and Order* drop-down menu, you can choose these options:
 
 When using the Type or Extension filter, you can define your search criteria from a new Filter dialog. Consider this information:
 
-- Selecting a top-level node selects all the elements inside.
-- The top-level nodes show the total number of elements inside.
-- Search is case insensitive.
-- You can add, remove, or edit the available extensions from the Global menu (![Global menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *System Settings* &rarr; *Content and Data* &rarr; *Documents and Media* &rarr; *Service*.
-- The filter in the Content lists reflects the filter criteria you choose in the Filter dialog.
+* Selecting a top-level node selects all the elements inside.
+
+* The top-level nodes show the total number of elements inside.
+
+* Search is case insensitive.
+
+* You can add, remove, or edit the available extensions from the Global menu (![Global menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *System Settings* &rarr; *Content and Data* &rarr; *Documents and Media* &rarr; *Service*.
+
+* The filter in the Content lists reflects the filter criteria you choose in the Filter dialog.
 
 ![The search criteria you use in the Type or Extension filters is included in the Content List.](./content-dashboard-interface/images/13.png)
 
 ### Understanding How Filtering Works in the Contents List
 
 * When you use the Categories or Tags filters with more than one criteria, the results correspond to content that meets all the criteria (see example A.)
+
 * When you choose multiple options for the same filter criteria, the Contents list shows assets matching at least one option (see example B.)
+
 * The criteria from different filters is combined using the `and` operator (see example C.)
 
 | Example| Filter By | Filter Example | Contents List Results |
@@ -193,9 +214,22 @@ This sidebar provides access to different metadata for the asset selected in the
 To open the Information sidebar,
 
 1. Click the Actions Menu (![Actions Menu](../../images/icon-actions.png)) next to the asset and select *Info*.
+
 1. Alternatively, hover over the asset and click the *Info* (![Information icon](../../images/icon-information.png)) icon.
 
     ![The Information sidebar provides different metadata for your content.](./content-dashboard-interface/images/09.png)
+
+```{note}
+Starting from Liferay DXP 7.4 U44+/GA44+, the following improvements have been made to the content dashboard.
+
+* The content type and subtype are now present in the info panel of the content dashboard.
+
+* The MIME type of a basic document (image, vectorial, etc) is present in the info panel and in the subtype column of the content list.
+
+* The *Categorization* and *Detail* sections in the info panel are collapsible. 
+
+* The info panel remains open after page reload so that you can keep viewing the content that was previously open. 
+```
 
 ## Related Information
 

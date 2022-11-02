@@ -3,15 +3,16 @@
 Liferayの多くのアプリケーション（ブログ、ドキュメントとメディア、掲示板など）は、すぐに使用可能なアセットです。 [アセットパブリッシャーウィジェット](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md)でアセットを公開したり、 [アセットライブラリ](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)を作成することも可能です。 [サービスビルダー](../service-builder.md)を使用すると、カスタムアプリケーションをアセット対応にすることができます。 その方法は、以下のサンプルプロジェクトをご覧ください。
 
 ## サンプルコードを取得する
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [アセットの有効化](./liferay-s5e6.zip) をダウンロードし、解凍してください。
+1. [Enabling Assets](./liferay-s5e6.zip)  をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/ubuilding-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
    ```
 
    ```bash
@@ -107,7 +108,7 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 :lines: 64-73
 ```
 
-[`AssetEntryLocalServiceImpl`クラス](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-) のJavadocsを確認すると、このメソッドはオーバーロードされていることが分かります。 `updateEntry()`のバージョンで、`title`パラメータを受け取り、アセットエントリーのタイトルを設定できるようにします。
+[`AssetEntryLocalServiceImpl`クラス](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-)のJavadocsを確認すると、このメソッドはオーバーロードされていることが分かります。 `updateEntry()`のバージョンで、`title`パラメータを受け取り、アセットエントリーのタイトルを設定できるようにします。
 
 変更後、サービスビルダーを再実行します。
 

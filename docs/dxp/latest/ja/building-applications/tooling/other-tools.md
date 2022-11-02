@@ -3,8 +3,7 @@ toc:
 - ./other-tools/liferay-cli-tool.md
 - ./other-tools/liferay-npm-bundler.md
 ---
-
-# Other Tools
+# その他のツール
 
 ```{toctree}
 :maxdepth: 4

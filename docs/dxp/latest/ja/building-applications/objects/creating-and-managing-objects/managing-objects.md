@@ -7,12 +7,12 @@
 ![オブジェクトポートレットを使用して、システムオブジェクトとカスタムオブジェクトの両方を表示および管理します。](./managing-objects/images/01.png)
 
 ```{note}
-これらの管理操作を行うために必要なパーミッションについては、[オブジェクトアプリケーションの権限](../objects-application-permissions.md)を参照してください。
+これらの管理操作を行うために必要なパーミッションについては、[Objects Application Permissions](../objects-application-permissions.md)を参照してください。
 ```
 
 ## オブジェクトの編集と拡張
 
-ユーザーは、 [フィールド](#fields) 、 [リレーションシップ](#relationships) 、 [レイアウト](#layouts) 、 [アクション](#actions) 、 [ビュー](#views) 、また [バリデーション](#validations) を使用して、システムオブジェクトおよびカスタムオブジェクトの両方を編集、拡張できます。
+ユーザーは、[フィールド](#fields)、[リレーションシップ](#relationships)、 [レイアウト](#layouts)、[アクション](#actions)、[ビュー](#views)、また[バリデーション](#validations)を使用して、システムオブジェクトおよびカスタムオブジェクトの両方を編集、拡張できます。
 
 ### フィールド
 
@@ -30,7 +30,7 @@
 
 ![カスタムオブジェクトのレイアウトを追加、編集、および削除します。](./managing-objects/images/04.png)
 
-カスタムオブジェクトのレイアウトは、いつでも追加、編集、削除することができます。 カスタムレイアウトをオブジェクトのデフォルトレイアウトとして設定するには、オブジェクトのすべての必須フィールドを含める必要があります。 詳細については、[オブジェクトレイアウトの設計](./designing-object-layouts.md)を参照してください。 <!--TASK: Replace with following text once system Objects are supported, "You can add, edit, and remove layouts for both system and custom Objects at any time. Custom layouts must include all of an Object's required fields in order to be set as the Object's default layout. See \[Designing Object Layouts\](./designing-object-layouts.md) for more information."--> ### アクション
+カスタムオブジェクトのレイアウトは、いつでも追加、編集、削除することができます。 カスタムレイアウトをオブジェクトのデフォルトレイアウトとして設定するには、オブジェクトのすべての必須フィールドを含める必要があります。 詳細については、[オブジェクトレイアウトの設計](./designing-object-layouts.md)を参照してください。<!--TASK: Replace with following text once system Objects are supported, "You can add, edit, and remove layouts for both system and custom Objects at any time. Custom layouts must include all of an Object's required fields in order to be set as the Object's default layout. See \[Designing Object Layouts\](./designing-object-layouts.md) for more information."-->### アクション
 
 ![カスタムオブジェクトのアクションを追加、編集、および削除します。](./managing-objects/images/05.png)
 
@@ -46,13 +46,13 @@
 
 ![カスタムオブジェクトのバリデーションを追加、編集、および削除します。](./managing-objects/images/07.png)
 
-カスタムオブジェクトの定義は、いつでもバリデーションを追加、編集、削除できます。 これらのバリデーションは、有効なフィールドエントリを決定するためのルールを設定し、GroovyスクリプトまたはLiferayのエクスプレッションビルダーのいずれかを使用して定義されるものです。 詳細は、[カスタムバリデーションの追加](./adding-custom-validations.md)を参照してください。
+カスタムオブジェクトの定義は、いつでもバリデーションを追加、編集、削除できます。 これらのバリデーションは、有効なフィールドエントリを決定するためのルールを設定し、GroovyスクリプトまたはLiferayの式ビルダーのいずれかを使用して定義されるものです。 詳細は、[カスタムバリデーションの追加](./adding-custom-validations.md)を参照してください。
 
 ## オブジェクトの有効化と無効化
 
-デフォルトでは、カスタムオブジェクトは、最初に [公開](./creating-objects.md#publishing-object-drafts) された時に、 **有効化** されます。 これにより、アプリケーションが作成されるとすぐに使用できるようになります。 アクティブになっている間は、LiferayのUIやHeadless APIコールを介して、オブジェクトとそのエントリーにアクセスできます。 ただし、カスタムオブジェクトはいつでも無効にすることができます。
+デフォルトでは、カスタムオブジェクトは、最初に[公開](./creating-objects.md#publishing-object-drafts)された時に、 *有効化*されます。 これにより、アプリケーションが作成されるとすぐに使用できるようになります。 アクティブになっている間は、LiferayのUIやHeadless APIコールを介して、オブジェクトとそのエントリーにアクセスできます。 ただし、カスタムオブジェクトはいつでも無効にすることができます。
 
-オブジェクトを無効にすると、そのオブジェクトは、パネルカテゴリー、統合されたフレームワーク、および関連するオブジェクトから削除されます。 非アクティブな状態のオブジェクトは、 [編集と拡張](#editing-and-extending-objects) のみ、オブジェクト ポートレットで行うことができます。 オブジェクトのエントリが無効化された時点でサイトや関連オブジェクトに表示されていた場合、それらのエントリは空白となり、関連のオブジェクトレイアウトにフィールドは表示されなくなります。
+オブジェクトを無効にすると、そのオブジェクトは、パネルカテゴリー、統合されたフレームワーク、および関連するオブジェクトから削除されます。 非アクティブな状態のオブジェクトは、 [編集と拡張](#editing-and-extending-objects)のみ、オブジェクト ポートレットで行うことができます。 オブジェクトのエントリが無効化された時点でサイトや関連オブジェクトに表示されていた場合、それらのエントリは空白となり、関連のオブジェクトレイアウトにフィールドは表示されなくなります。
 
 非アクティブなオブジェクトを有効化すると、そのオブジェクトとデータを使用できるようにすることができます。
 
@@ -62,44 +62,43 @@
 
 以下の手順で、カスタムオブジェクトを無効化または有効化します。
 
-1. **オブジェクト** ポートレットから、目的の **オブジェクト** をクリックします。
+1. *オブジェクト*ポートレットから、目的の*オブジェクト*をクリックします。
 
-   ```{note}
+オブジェクト   ```{note}
    システムオブジェクトを無効にすることはできません。
    ```
 
-1. ［Details］タブで、トグルスイッチを ［**Active**］ または ［**Inactive**］ のいずれかに設定します。
+1. ［Details］タブで、トグルスイッチを*［Active］*または*［Inactive］*のいずれかに設定します。
 
     ![オブジェクトを有効または無効に切り替えます。 ](./managing-objects/images/08.png)
 
-1. ［**保存**］ をクリックします。
+1. *［保存］*をクリックします。
 
 ## オブジェクト定義の削除
 
 {bdg-secondary}`Liferay 7.4 U26以降およびGA26以降で利用可能`
 
-ドラフトおよび公開されたオブジェクト定義は、いつでも削除できます。 定義を削除すると、関連するデータが削除されます。これには、公開された定義の保存されたエントリーが含まれます。
+ドラフトおよび公開されたオブジェクト定義は、いつでも削除できます。 定義を削除すると、その関連データが削除されます。これには、公開された定義の保存されたエントリーが含まれます。
 
 ```{important}
-Liferay 7.4 U26/GA26 以前のバージョンでは、 [公開されたオブジェクト定義](./creating-objects.md#publishing-object-drafts) をユーザーが削除できないようになっています。
+Liferay 7.4 U26/GA26 以前のバージョンでは、 [公開されたオブジェクト定義]](./creating-objects.md#publishing-object-drafts)をユーザーが削除できないようになっています。
 ```
 
-定義に有効なリレーションシップがある場合、定義を削除する前にそれらを削除する必要があります。 詳細については、 [リレーションシップの削除](./defining-object-relationships.md#removing-relationships) を参照してください。
+定義に有効なリレーションシップがある場合、定義を削除する前にそれらを削除する必要があります。 詳細については、[リレーションシップの削除](./defining-object-relationships.md#removing-relationships)を参照してください。
 
    ![オブジェクト定義を削除する前に、すべての有効なリレーションシップを削除する必要があります。](./managing-objects/images/09.png)
 
 準備ができたら、以下の手順で定義を削除してください。
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**オブジェクト**］ をクリックします。
+1. *グローバルメニュー* （![Global Menu](../../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］*タブに移動して、*［オブジェクト］*をクリックします。
 
-1. 目的の定義の **アクション** ボタン (![Actions Button](../../../images/icon-actions.png))をクリックし、 ［**削除**］ を選択します。
+1. 目的の定義の*アクション*ボタン (![Actions Button](../../../images/icon-actions.png))をクリックし、 *［削除］*を選択します。
 
-1. ダイアログウィンドウで、定義の **名前** を入力し、 ［**Done**］ をクリックして確定します。
+1. ダイアログウィンドウで、定義の*名前*を入力し、 *［Done］* をクリックして確定します。
 
    ![オブジェクト定義の名前を入力し、［Done］をクリックします。](./managing-objects/images/10.png)
 
 ## 追加情報
 
 * [オブジェクト](../../objects.md)
-* [オブジェクトの作成](./creating-objects.md) 
-<!--TASK: Add once article is finished * \[Objects UI Reference\](../objects-ui-reference.md) -->
+* [オブジェクトの作成](./creating-objects.md)<!--TASK: Add once article is finished * \[Objects UI Reference\](../objects-ui-reference.md) -->

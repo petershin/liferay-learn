@@ -1,7 +1,7 @@
 # Liferay Workspaceの設定
 
 ```{warning}
-Liferay Workspaceは使い方が簡単で、[最初から](./what-is-liferay-workspace.md)始めることで、基本を学ぶことができます。 もしあなたが喜んで [プロジェクトの作成](./creating-code-with-liferay-workspace.md) や [コードのデプロイ](./creating-code-with-liferay-workspace.md#deploying-code-via-liferay-workspace) 、あるいは [Docker コンテナを使用](./configuring-a-liferay-docker-container.md)しているなら、ここの情報は必要ないかもしれません。 ただし、もっと掘り下げて、ワークスペースで実行できるすべてのことについて学びたい場合は、このサイトが有益となるでしょう。 
+Liferay Workspaceは使い方が簡単で、[最初から](./what-is-liferay-workspace.md)始めることで、基本を学ぶことができます。 もしあなたが喜んで [プロジェクトの作成](./creating-code-with-liferay-workspace.md) や [コードのデプロイ](./creating-code-with-liferay-workspace.md #deploying-code-via-liferay-workspace) 、あるいは [Docker コンテナを使用](./configuring-a-liferay-docker-container.md)しているなら、ここの情報は必要ないかもしれません。 ただし、もっと掘り下げて、ワークスペースで実行できるすべてのことについて学びたい場合は、このサイトが有益となるでしょう。 
 ```
 
 取り上げるトピックは次のとおりです。
@@ -14,7 +14,7 @@ Liferay Workspaceは使い方が簡単で、[最初から](./what-is-liferay-wor
 
 Liferay Workspaceは、開発者の生産性を高めるために常に更新されており、ワークスペースを最新の状態にするのは簡単なプロセスです。
 
-1. Liferayのリポジトリにある [ワークスペースのリリースに移動](https://repository-cdn.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/com.liferay.gradle.plugins.workspace) します。 バージョンがリストに表示されます。必要なバージョン番号をメモしてください。
+1. Liferayのリポジトリにある[ワークスペースのリリースに移動](https://repository-cdn.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/com.liferay.gradle.plugins.workspace)します。 バージョンがリストに表示されます。必要なバージョン番号をメモしてください。
 1. ワークスペースのルートフォルダにある`settings.gradle`ファイルを開きます。
 1. `依存関係`ブロックで、リポジトリで見つけたバージョンでバージョンを更新します。 最新のリリースを維持したい場合は、バージョン番号の代わりにテキスト`latest.release`を指定してください。
 
@@ -95,131 +95,6 @@ JAX-WSプロジェクトがある場合は、JDK 11から削除された`javax.x
 ```groovy
 compile 'com.sun.xml.ws:jaxws-ri:2.3.2'
 ```
-
-## デプロイメント環境の構築
-
-コードを誰かと共有するときが来ます。 そのためには、環境を構築する必要があります。 企業の世界では、通常3つの環境があります。
-
-* 開発者：コードを迅速に修正および再デプロイできる、早期テスト用の環境。 パワーユーザーはここでテストします。
-* ユーザー受け入れテスト（UAT）：本番環境の構成をより厳密に反映する環境。 アプリケーションがほぼ完成したら、通常、より多くのユーザーをここでテストするように招待します。
-* 本番環境：本番環境のサイトが存在する環境。 デプロイメントは厳密に制御され、他の2つの環境でテストされたコードのみがデプロイされます。
-
-Liferay Workspaceを使用すると、コンテナーベースであろうと従来型であろうと、デプロイ環境を簡単に生成できます。 構成を提供し、Gradleタスクを実行すると、配布可能なDockerコンテナまたはサーバーアーカイブを生成して、インストールすることができます。 ワークスペースには、アクションが発生するオプションの`configs`フォルダが含まれています。
-
-[Blade CLI](../blade-cli/generating-projects-with-blade-cli.md)を使用してワークスペースを作成した場合、`configs`フォルダは既に存在しています。 ワークスペースを[手動で](./creating-a-liferay-workspace.md)作成した場合は、ワークスペースディレクトリに次のフォルダ構造を作成します。
-
-   ```
-   ├── common
-   │   └── portal-setup-wizard.properties
-   ├── dev
-   │   └── portal-ext.properties
-   ├── docker
-   ├── local
-   ├── prod
-   └── uat
-       └── portal-ext.properties
-   ```
-
-まだファイルには何も入れないでください。
-
-### デプロイメント環境の仕組み
-
-`configs`フォルダは、特定のシナリオを定義します。
-
-`common`：すべての環境に適用される構成が含まれています。
-
-`dev`：開発環境の構成が含まれています。
-
-`docker`：Docker構成が含まれています。
-
-`local`：ワークスペースが存在するローカル環境の構成が含まれます。
-
-`prod`：本番環境の構成が含まれています。
-
-`uat`：ユーザー受け入れテスト環境の構成が含まれています。
-
-構成ファイルを特定のフォルダに配置すると、その環境の構成が定義されます。 `common`の場合、その構成は、環境が構築されるときに他の構成とマージされます。 これで、いくつかの環境を構築する準備が整いました。
-
-### デプロイメント環境の構築
-
-ご使用の環境で次のシナリオを想定します。
-
-- 開発者環境は開発者プロパティを使用する必要があります
-- ローカル環境はローカルデータベースを指します
-- 開発者およびUAT環境は、独自のデータベースを指します
-- すべての環境はセットアップウィザードをスキップします
-
-そのシナリオを構成する方法は次のとおりです。
-
-1. `common`フォルダで、次のプロパティを`portal-setup-wizard.properties`に追加します
-
-   ```properties
-   setup.wizard.enabled=false
-   ```
-1. `local`フォルダで、`portal-ext.properties`にローカルデータベースを構成します。
-
-   ```properties
-   #
-   # MySQL
-   #
-   jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
-   jdbc.default.url=jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
-   jdbc.default.username=root
-   jdbc.default.password=password
-   ```
-
-1. `dev`フォルダで、開発者プロパティを有効にし、`portal-ext.properties`の開発サーバーでデータベースを構成します。
-
-   ```properties
-   include-and-override=portal-developer.properties
-
-   #
-   # MySQL
-   #
-   jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
-   jdbc.default.url=jdbc:mysql://devel.server/lportaldev?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
-   jdbc.default.username=root
-   jdbc.default.password=password
-   ```
-
-1. `uat`フォルダで、`portal-ext.properties`のUAT環境でデータベースを構成します。
-
-   ```properties
-   #
-   # MySQL
-   #
-   jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
-   jdbc.default.url=jdbc:mysql://uat.server/lportaluat?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
-   jdbc.default.username=root
-   jdbc.default.password=password
-   ```
-
-これで、環境を生成して配布する準備が整いました。
-
-### デプロイメント環境の生成
-
-これで、ローカルで実行したり、サーバーに配布したりする環境を生成できます。 これは、`initBundle`または`distBundle` Gradleタスクのいずれかを使用して実行されます。
-
-1. 最初に環境をテストする必要があります。 ローカルでビルドするには、`initBundle`コマンドを使用します。 たとえば、`dev`環境を構築するには、次のように実行します。
-
-   ```bash
-   ./gradlew initBundle -Pliferay.workspace.environment=dev
-   ```
-   これにより、ワークスペース内のすべてのプロジェクトがコンパイルされ、`bundles`フォルダ内のランタイムにデプロイされます。 また、指定した構成も提供されます（この例では、`dev`環境の構成）。 `bundles`フォルダ内の`portal-ext.properties`ファイルを調べると、`dev`構成に提供したものと一致していることがわかります。
-
-1. 環境が整いテストが良好な場合は、すべてのアプリケーションと構成を含む配布可能なバンドルを構築できます。 次のコマンドを実行します。
-
-   ```bash
-   ./gradlew distBundleTar -Pliferay.workspace.environment=dev
-   ```
-
-   これにより、gzip圧縮された`tar`ファイルが`build`フォルダにビルドされます。 このアーカイブを取得して、他のLiferayバンドルと同じように開発サーバーにインストールできます。ただし、このバンドルは希望どおりに完全に構成されており、すべてのアプリケーションが既にインストールされている点が異なります。
-
-```{note}
-.zipアーカイブが必要な場合は、`distBundleZip`コマンドを使用できます。
-```
-
-上記の手順に従って、各環境をテストおよび構築します。
 
 ## ターゲットプラットフォームの管理
 

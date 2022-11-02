@@ -2,16 +2,16 @@
 
 {bdg-secondary}`Liferay DXP 7.4 U10以降およびLiferay Portal7.4 GA14以降で利用可能`
 
-アプリケーションをアップグレードすると、データベースのテーブルを変更する必要がある場合があります。 Liferayのアップグレードフレームワークは、これらの変更を簡単に行うことができます。 サンプルプロジェクトをデプロイして、このアップグレード処理を確認します。 Liferayの以前のバージョンについては、 [Creating Upgrade Processes for Modules](https://help.liferay.com/hc/ja/articles/360031165751-Creating-Upgrade-Processes-for-Modules) を参照してください。
+アプリケーションをアップグレードすると、データベースのテーブルを変更する必要がある場合があります。 Liferayのアップグレードフレームワークは、これらの変更を簡単に行うことができます。 サンプルプロジェクトをデプロイして、このアップグレード処理を確認します。 Liferayの以前のバージョンについては、 [Creating Upgrade Processes for Modules](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules) を参照してください。
 
 ## バージョン1.0.0をデプロイする
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います:
+次に、以下の手順を実行します。
 
-1. [データベーステーブルのアップグレード](./liferay-p5d2.zip) をダウンロードし、解凍してください。
+1. [Upgrading Your Database Tables](./liferay-p5d2.zip) をダウンロードし、解凍してください。.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-p5d2.zip -O
@@ -62,7 +62,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. Liferayにログインし、 ［**コントロールパネル**］ &rarr; ［**Gogo Shell**］ でGogoシェルコンソールに移動します。
+1. Liferayにログインし、*［コントロールパネル］* &rarr; *［Gogo Shell］*でGogoシェルコンソールに移動します。
 
 1. `upgrade:list com.acme.p5d2.service`というコマンドを入力し、2.0.0へのアップグレードが可能であることを確認します。
 
@@ -89,27 +89,24 @@
 | `foo` (type: string)    | `bar` (type: string)     | 列名が変更されます。     |
 | -                       | `charlie` (type: string) | 新しい列が追加されます。   |
 
-[1.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/1.0.0/p5d2-service/service.xml) と [2.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/service.xml) の`service.xml`列の定義をと比較します。
+[1.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/1.0.0/p5d2-service/service.xml)と[2.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/service.xml)の`service.xml`列の定義をと比較します。
 
 ### UpgradeStepRegistratorクラスの作成
 
 `UpgradeStepRegistrator`クラスを作成し、 `UpgradeStepRegister` インターフェイスを実装してください。
 
 ```{literalinclude} ./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/src/main/java/com/acme/p5d2/internal/upgrade/P5D2EntryUpgrade.java
-:dedent: 1
 :language: java
 :lines: 26-34
 ```
 
 `register` メソッドをオーバーライドして、アプリのバージョンアップ登録を実装します。 必ず`@Component`アノテーションを使用し、 `UpgradeStepRegistrator.class`サービスとして特定します。
 
-
 ### UpgradeProcessクラスの作成
 
 基本クラスを拡張する`UpgradeProcess`クラスを作成します。
 
 ```{literalinclude} ./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/src/main/java/com/acme/p5d2/internal/upgrade/v2_0_0/P5D2EntryUpgradeProcess.java
-:dedent: 1
 :language: java
 :lines: 22-32
 ```
@@ -124,7 +121,17 @@
 | alterTableDropColumn | 列を削除します      |
 
 ```{warning}
-MariaDBでは、`alterTableDropColumn`は機能しません。 これは [既知のバグ](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b) です。 代わりに [旧ガイドライン](https://help.liferay.com/hc/ja/articles/360031165751-Creating-Upgrade-Processes-for-Modules) に従ってください。
+MariaDBでは、`alterTableDropColumn`は機能しません。 これは[既知のバグ](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b)です。 代わりに[旧ガイドライン](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules)に従ってください。
 ```
 
 変更後、サービスビルダーを再実行します。 これで、アップグレードの構築とデプロイの準備が整いました。
+
+## 複雑なアップグレードの管理
+
+アップグレードの手順が多く複雑な場合は、 `getPreUpgradeSteps()` と `getPostUpgradeSteps()` メソッドを `UpgradeProcess` クラスで使用することを検討してください。 この方法は、アップグレードプロセスをよりコントロールしやすくします。 デバッグしやすいように、各アップグレードステップには `Release_` テーブルで異なるスキーマのバージョンが与えられています。 ステップに失敗してアップグレードを再実行する必要がある場合、アップグレード処理は自動的にチェックされ、最新の失敗ポイントからアップグレードを再開します。
+
+例えば、Liferay の [OpenIdConnectSessionUpgradeProcess](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-security-sso/portal-security-sso-openid-connect-persistence-service/src/main/java/com/liferay/portal/security/sso/openid/connect/persistence/internal/upgrade/v2_0_0/OpenIdConnectSessionUpgradeProcess.java) は、この機能を利用しています。
+
+この例では、 `getPreUpgradeSteps()` が最初に実行され、新しいカラムを追加する簡単なステップを含んでいます。 `doUpgrade()` メソッドでは、新しいカラムの入力が行われます。 `doUpgrade()` メソッドが失敗した場合、開発者はデバッグして必要な変更を加え、アップグレードを再実行することができます。 プロセスは、最初のステップが成功したと認識し、自動的に次のステップに進みます。
+
+注意：アップグレードステップを利用するために、 `com.liferay.portal.kernel.upgrade.UpgradeStep` クラスをアップグレード処理にインポートしてください。

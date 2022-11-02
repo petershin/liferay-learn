@@ -1,6 +1,6 @@
 # ローカルでサービスを呼び出す
 
-DXP/Portalにデプロイされたサービスビルダーサービスは、同じJVM内の他のクラスから呼び出すことができます。 これらのサービスはクラスに対して **ローカル** です。
+DXP/Portalにデプロイされたサービスビルダーサービスは、同じJVM内の他のクラスから呼び出すことができます。 これらのサービスはクラスに対して*ローカル*です。
 
 サービスビルダーサービスは、宣言型サービス（DS）コンポーネントです。つまり、コンテナで管理されます。 コンシューマはコンテナにコンポーネントを要求し、コンテナは一致するコンポーネントインスタンスを提供します。
 
@@ -9,15 +9,16 @@ DXP/Portalにデプロイされたサービスビルダーサービスは、同�
 ここでは、[portlet](../../../developing-a-java-web-application/reference/portlets.md)DSコンポーネントからサービスビルダーサービスを呼び出します。  新しいエントリーを追加するためのフォームがあるポートレットアプリケーションの例を使用します。 フォームはJavaServer Page（JSP）にあります。 フォームを送信すると、ポートレットがトリガーされ、エントリを作成して永続化するためのサービスが呼び出されます。
 
 ## ポートレットからサービスを呼び出す
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. サンプルをダウンロードして解凍します。
+1. サンプルをダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-t2p5.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-t2p5.zip -O
    ```
 
    ```bash
@@ -46,19 +47,19 @@ DXP/Portalにデプロイされたサービスビルダーサービスは、同�
     STARTED com.acme.t2p5.web_1.0.0
     ```
 
-1. **T2P5ポートレット** ウィジェットを ［**サンプル**］ カテゴリからウィジェットページに追加します。 T2P5ポートレットが表示されます。
+1. *T2P5ポートレット*ウィジェットを*［サンプル］*カテゴリからウィジェットページに追加します。 T2P5ポートレットが表示されます。
 
    ![T2P5ポートレットをページに追加しました。](./invoking-a-service-locally/images/01.png)
 
-1. テキストフィールドにエントリ名と説明を入力し、 ［**Submit**］ をクリックします。 例:
+1. テキストフィールドにエントリ名と説明を入力し、*［Submit］*をクリックします。 例:
 
-    ［**Name**］ : `Trim the Hedges`
+    **［Name］**: `Trim the Hedges`
 
-    ［**Description］:** `Use hedge clippers to trim the hedges into a nice shape.`
+    **［Description］:** `Use hedge clippers to trim the hedges into a nice shape.`
 
 ![T2P5ポートレットをページに追加しました。](./invoking-a-service-locally/images/02.png)
 
-名前と説明を含む新しいエントリーが ［**T2P5 Entry**］ リストに表示されます。
+名前と説明を含む新しいエントリーが*［T2P5 Entry］*リストに表示されます。
 
 ポートレットからサービスビルダーサービスを呼び出しました。 その仕組みを、サービスAPIから見ていきましょう。
 
@@ -67,9 +68,9 @@ DXP/Portalにデプロイされたサービスビルダーサービスは、同�
 `t2p5-api`モジュールプロジェクトの`T2P5EntryLocalService`クラスには、`addT2P5Entry(String description, String name)`というメソッドがあります。
 
 ```{literalinclude} ./invoking-a-service-locally/resources/liferay-t2p5.zip/t2p5-api/src/main/java/com/acme/t2p5/service/T2P5EntryLocalService.java
-:dedent: 1
-:language: java
-:lines: 65-66
+   :dedent: 1
+   :language: java
+   :lines: 65-66
 ```
 
 `addT2P5Entry`メソッドは、指定された説明と名前で`T2P5Entry`を作成し、エントリーを永続化します。
@@ -82,7 +83,7 @@ DXP/Portalにデプロイされたサービスビルダーサービスは、同�
 ```{literalinclude} ./invoking-a-service-locally/resources/liferay-t2p5.zip/t2p5-api/bnd.bnd
 ```
 
-`t2p5-web`モジュールのポートレットアプリケーションは、 `T2P5EntryLocalService` クラスに依存しています。 Webモジュールの`build.gradle`ファイルは、`t2p5-api`プロジェクトへの依存を宣言しています。
+The `t2p5-web` module's portlet application depends on the `T2P5EntryLocalService` class. The web module's `build.gradle` file declares a dependency on the `t2p5-api` project.
 
 ```{literalinclude} ./invoking-a-service-locally/resources/liferay-t2p5.zip/t2p5-web/build.gradle
 ```
@@ -132,7 +133,7 @@ JSPは、次のタグライブラリのタグを使用します。
 * `T2P5EntryLocalServiceUtil`
 * `java.util.List`
 
-ページの ［**Add T2P5 Entry**］ セクションには、エントリーを追加するためのフォームがあります。 `<portlet:defineObjects />`タグは、標準のポートレットオブジェクトをテンプレートで使用できるようにします。 `aui`タグは、これらのオブジェクトを使用します。
+ページの*［Add T2P5 Entry］*セクションには、エントリーを追加するためのフォームがあります。 `<portlet:defineObjects />`タグは、標準のポートレットオブジェクトをテンプレートで使用できるようにします。 `aui`タグは、これらのオブジェクトを使用します。
 
 `<portlet:actionURL name="addT2P5Entry" var="addT2P5EntryURL" />`タグは、`addT2P5EntryURL`変数を`addT2P5Entry`という名前のポートレットアクションにマッピングします。 この`actionURL`を使用して`ActionRequest`を送信すると、ポートレットのメソッド`addT2P5Entry`が呼び出されます。これは、このメソッドが`actionUrl`名`addT2P5Entry`にマッピングされるためです。
 
@@ -142,7 +143,7 @@ JSPは、次のタグライブラリのタグを使用します。
 ポートレットアクションの詳細については、[MVCポートレットを使用したアクションの呼び出し](../../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md)を参照してください。 
 ```
 
-ページの ［**エントリ**］ セクションには、すべてのエントリーが一覧表示されます。  `T2P5EntryLocalServiceUtil.getT2P5Entries(-1, -1)`を呼び出すことにより、すべてのエントリーを取得します。最小値と最大値の範囲の値`-1`は、すべてのエントリーを返すようにメソッドに指示します。
+ページの*［エントリ］*セクションには、すべてのエントリーが一覧表示されます。  `T2P5EntryLocalServiceUtil.getT2P5Entries(-1, -1)`を呼び出すことにより、すべてのエントリーを取得します。最小値と最大値の範囲の値`-1`は、すべてのエントリーを返すようにメソッドに指示します。
 
 ポートレットアプリケーションからサービスビルダーサービスを呼び出しました。 これらのサービスは、MVCポートレットで簡単に使用できます。
 

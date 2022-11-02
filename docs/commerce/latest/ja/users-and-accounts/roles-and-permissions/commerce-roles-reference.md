@@ -1,6 +1,6 @@
 # Commerceロールのリファレンス
 
-Liferayには、コマースの[標準ロール](#out-of-the-box-roles)が4つ（アカウント管理者、アカウントメンバー、バイヤー、オーダーマネージャー）含まれています。これらのロールは、いくつかの一般的なロールをモデルとして構成されていますが、ユースケースにより適したアカウントロールを追加作成したり、標準ロールを変更したりすることが可能です。 [一般的なカスタムロール](#custom-roles)には、Catalog Manager、Inventory Manager、Shipment Manager、Instance Order Manager、および Discount Managerが含まれます。
+Liferayには、コマースの [標準ロール](#out-of-the-box-roles) が4つ（アカウント管理者、アカウントメンバー、バイヤー、オーダーマネージャー）含まれています。これらのロールは、いくつかの一般的なロールをモデルとして構成されていますが、ユースケースにより適したアカウントロールを追加作成したり、標準ロールを変更したりすることが可能です。 [一般的なカスタムロール](#custom-roles) には、Catalog Manager、Inventory Manager、Shipment Manager、Instance Order Manager、および Discount Managerが含まれます。
 
 ```{note}
 Liferay 7.3.xおよびそれ以前のCommerceバージョンでは、 [Sales Agent](#sales-agent) もすぐに使用できるロールとして含まれています。

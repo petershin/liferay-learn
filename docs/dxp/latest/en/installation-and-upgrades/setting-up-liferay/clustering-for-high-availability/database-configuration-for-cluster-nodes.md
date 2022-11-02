@@ -18,7 +18,8 @@ Connections to separate read and read-write [data sources](https://learn.liferay
 
 Edit your `portal-ext.properties` file following these steps to connect directly to your separate read and write data sources using [JDBC](../../installing-liferay/configuring-a-database.md):
 
-1. Configure JDBC connections to your separate read and write data sources. See the the [JDBC properties reference](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) for more information. Note, Liferay uses HikariCP as the connection pool provider. Here's an example:
+1. Configure JDBC connections to your separate read and write data sources. See the the [JDBC properties reference](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) for more information. Here's an example:
+
 
     ```properties
     jdbc.read.driverClassName=[place your driver name here]
@@ -30,6 +31,10 @@ Edit your `portal-ext.properties` file following these steps to connect directly
     jdbc.write.url=[place the URL to your "read-write" database here]
     jdbc.write.username=[place your user name here]
     jdbc.write.password=[place your password here]
+    ```
+
+    ```{note}
+    Liferay uses HikariCP as the connection pool provider.
     ```
 
     For example JDBC connection values, please see [Database Templates](../../reference/database-templates.md).

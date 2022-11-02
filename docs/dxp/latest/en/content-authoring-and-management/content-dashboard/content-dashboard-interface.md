@@ -29,6 +29,7 @@ Starting from Liferay DXP 7.4 U42+/GA42+, the following improvements have been m
 ## Accessing the Content Dashboard
 
 1. Click on the Global Menu and, under the *Content* area, click *Content Dashboard*.
+
 1. If the Global Menu is disabled, open the Product Menu and, under the *Site* Menu, go to *Content* &rarr; *Content Dashboard*.
 
     ![Open the Content Dashboard from the Global Menu.](./content-dashboard-interface/images/03.png)
@@ -46,7 +47,9 @@ This tool is the graphical area at the top of the Content Dashboard page. The ch
     ```
 
 * Content you can access.
+
 * The existing [filters](#filtering-and-sorting-content-in-the-contents-list) in the [Contents list](#contents-list).
+
 * A maximum of two Vocabularies (for the *x* and *y* axes.)
 
 ![Overview of the Content Audit Tool in the Content Dashboard](./content-dashboard-interface/images/10.png)
@@ -58,8 +61,11 @@ If the Content Audit Tool doesn't show the expected chart, [verify your Categori
 In the Content Audit Tool interface you can find:
 
 * Chart legend (1)
+
 * *X*-axis Categories for the first Vocabulary (2)
+
 * *Y*-axis Categories for the second Vocabulary (3)
+
 * Bar chart (4)
 
 ![Overview of the Content Performance user interface](./content-dashboard-interface/images/04.png)
@@ -69,16 +75,23 @@ In the Content Audit Tool interface you can find:
 By default, the bar chart shows the total number of assets for each Category in the selected vocabularies, but you can filter this information in different ways:
 
 * Use the [filters](#filtering-and-sorting-content-in-the-contents-list) in the [Contents list](#contents-list).
+
 * Filter categories in the chart by checking or unchecking the Category name in the chart legend.
+
 * Click one of the bars to zoom-in on a specific Category's results.
+
 * Change which Vocabularies are displayed in the graph.
 
 To change these Vocabularies:
 
 1. Click the *Configure Chart* icon (![gear icon](../../images/icon-settings.png)) in the Content Audit area.
+
 1. In the dual listbox, click the Vocabulary in the *Available* or *In Use* lists and click the selection buttons (![Angle Left](../../images/icon-angle-left.png) ![Angle right](../../images/icon-angle-right.png)) to add or remove the Vocabularies you want to show.
+
 1. Click the *Up* (![Up](../../images/icon-angle-up.png)) and *Down* (![Down](../../images/icon-angle-down.png)) buttons to order of the Vocabularies in the chart axis.
+
 1. Click *Save*.
+
 1. Click the *Flip Axes* (![Flip Axes](../../images/icon-change.png)) icon in the Content Audit area if you must switch the axis assigned to the selected vocabularies.
 
     ![Select the Vocabularies in the Content Audit Tool](./content-dashboard-interface/images/12.png)
@@ -96,8 +109,11 @@ By default, this area shows all the content you have access to, across all sites
 In the Contents list you can find the following elements:
 
 * Filter and Sort selector (1)
+
 * Filter editor (2)
+
 * Search field (3)
+
 * List of contents (4)
 
 ![The Contents list contains several elements to help you find content.](./content-dashboard-interface/images/06.png)
@@ -141,7 +157,9 @@ Use the *View*, *Info*, and *View Metrics* options for content based on a Displa
 ### Filtering and Sorting Content in the Contents List
 
 1. Click the *Filter and Order* drop-down menu.
+
 1. Select one of the predefined filters or a custom filter (denoted by three dots) to create your own filter criteria.
+
 1. Select the content you want to filter.
 
 The Filter Editor area shows your filters and the total results. To remove one or more filters, click the *Close* (![Close](../../images/icon-times.png)) button next to the filter's name, or click *Clear* to remove all filters and reset the Contents list. In addition to the predefined and custom filters, you can search and filter the assets in the Content View using keywords in the Search field. To understand how the combination of different filters works, read [Understanding How Filtering Works in the Contents List](#understanding-how-filtering-works-in-the-contents-list).
@@ -155,6 +173,7 @@ You can also filter the content by clicking one of the bars in the [Content Audi
 To sort the content,
 
 1. Click the *Filter and Order* drop-down menu.
+
 1. Under the *Order By* section, select the order for the items.
 
 ```{note}

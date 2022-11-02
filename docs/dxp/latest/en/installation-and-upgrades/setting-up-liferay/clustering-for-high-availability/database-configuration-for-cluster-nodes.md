@@ -18,13 +18,7 @@ Connections to separate read and read-write [data sources](https://learn.liferay
 
 Edit your `portal-ext.properties` file following these steps to connect directly to your separate read and write data sources using [JDBC](../../installing-liferay/configuring-a-database.md):
 
-1. Set the default connection pool provider. For provider information, see the [JDBC properties reference](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC). The default setting specifies [HikariCP](https://github.com/brettwooldridge/HikariCP) as the pool provider:
-
-    ```properties
-    jdbc.default.liferay.pool.provider=hikaricp
-    ```
-
-1. Configure JDBC connections to your separate read and write data sources. Here's an example:
+1. Configure JDBC connections to your separate read and write data sources. See the the [JDBC properties reference](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) for more information. Note, Liferay uses HikariCP as the connection pool provider. Here's an example:
 
     ```properties
     jdbc.read.driverClassName=[place your driver name here]
@@ -47,8 +41,6 @@ Edit your `portal-ext.properties` file following these steps to connect directly
     ```
 
 1. Optionally validate the data connections to make sure bad connections are handled gracefully.
-
-    Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties---specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
 
 1. Enable the read-writer database configuration by copying the default [`spring.configs` and `spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) to your `portal-ext.properties` file and adding the following Spring configuration file paths to them.
 
@@ -91,8 +83,6 @@ Edit your `portal-ext.properties` file following these steps to connect to your 
     ```
 
 1. Optionally validate the data connections to make sure bad connections are handled gracefully.
-
-    Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties---specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
 
 1. Enable the read-writer database configuration by copying the default [`spring.configs` and `spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) to your `portal-ext.properties` file and add the following Spring configuration file paths to them.
 

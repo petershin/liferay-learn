@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Applicable for Liferay DXP 7.4+ or Liferay Portal 7.4+`
 
-To set up JNDI resources, you must put the necessary JDBC drivers in the Tomcat lib directory (i.e. `tomcat-9.0.56/lib`). For example, if you use an Oracle database, copy the `ojdbc8.jar` file. If you use the default [Hikari Connection Pool](https://github.com/brettwooldridge/HikariCP), you must copy the `hikaricp.jar` and `slf4-api.jar` files as well.
+To set up JNDI resources, you must put the necessary JDBC drivers in the Tomcat lib directory (i.e. `tomcat-9.0.56/lib`). For example, if you use an Oracle database, copy the `ojdbc8.jar` file. If you use the [Hikari Connection Pool](https://github.com/brettwooldridge/HikariCP), you must copy the `hikaricp.jar` and `slf4-api.jar` files as well.
 
 After copying the necessary files, define your JNDI resources.
 

@@ -8,11 +8,11 @@ The Content Dashboard interface has the following areas:
 * [Contents list](#contents-list) (2)
 * [Content Info sidebar](#content-info-sidebar) (3)
 
-![The Content Dashboard user interface contains three areas of information.](./content-dashboard-interface/images/05.png)
+![The content dashboard user interface contains three areas of information.](./content-dashboard-interface/images/05.png)
 
-When you [open the Content Dashboard](#accessing-the-content-dashboard), you see the [Content Audit Tool](#content-audit-tool) (1) at the top of the page and the [Contents list](#contents-list) (2) at the bottom. From the Contents list, you can access the [Content Info sidebar](#content-info-sidebar) (3) and the [Content Performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md). The Content Info sidebar and the Content Performance panel can collapse. They show additional details for each item in the Contents List.
+When you [open the content dashboard](#accessing-the-content-dashboard), you see the [content audit tool](#content-audit-tool) (1) at the top of the page and the [contents list](#contents-list) (2) at the bottom. From the contents list, you can access the [content info sidebar](#content-info-sidebar) (3) and the [content performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md). The content info sidebar and the Content Performance panel can collapse. They show additional details for each item in the contents List.
 
-To access the Content Info sidebar, click the *Actions Menu* (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* option. Alternatively, hover over the article and click *Info* (![Info](../../images/icon-information.png)). For information on the *View Metrics* (![Metrics](../../images/icon-analytics.png)) option, read [About the Content Performance Panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
+To access the content info sidebar, click the *Actions Menu* (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* option. Alternatively, hover over the article and click *Info* (![Info](../../images/icon-information.png)). For information on the *View Metrics* (![Metrics](../../images/icon-analytics.png)) option, read [About the content Performance Panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
 
 ```{note}
 Starting from Liferay DXP 7.4 U42+/GA42+, the following improvements have been made to the info panel.
@@ -32,72 +32,72 @@ Starting from Liferay DXP 7.4 U42+/GA42+, the following improvements have been m
 
 1. If the Global Menu is disabled, open the Product Menu and, under the *Site* Menu, go to *Content* &rarr; *Content Dashboard*.
 
-    ![Open the Content Dashboard from the Global Menu.](./content-dashboard-interface/images/03.png)
+    ![Open the content dashboard from the Global Menu.](./content-dashboard-interface/images/03.png)
 
 ## Content Audit Tool
 
-This tool is the graphical area at the top of the Content Dashboard page. The chart represents the total number of assets for a given combination of vocabularies and categories,  including the *Global* scope and all *Sites & Asset Libraries* in the instance. This chart takes into account:
+This tool is the graphical area at the top of the content dashboard page. The chart represents the total number of assets for a given combination of vocabularies and categories,  including the *Global* scope and all *Sites & Asset Libraries* in the instance. This chart takes into account:
 
-* [Web Content Articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents and Media](../documents-and-media.md) and [Blog Entries](../blogs/adding-blog-entries.md) across all Sites and Asset Libraries.
+* [Web content articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [documents and media](../documents-and-media.md) and [blog entries](../blogs/adding-blog-entries.md) across all sites and asset libraries.
 
     ```{note}
-    Documents and Media are available in the Content Dashboard starting with Liferay CE/DXP 7.4+. 
+    Documents and media are available in the content dashboard starting with Liferay CE/DXP 7.4+. 
     
-    Blog Entries are available in the Content Dashboard starting from Liferay DXP 7.4 U23+/GA23+.
+    Blog entries are available in the content dashboard starting from Liferay DXP 7.4 U23+/GA23+.
     ```
 
 * Content you can access.
 
-* The existing [filters](#filtering-and-sorting-content-in-the-contents-list) in the [Contents list](#contents-list).
+* The existing [filters](#filtering-and-sorting-content-in-the-contents-list) in the [contents list](#contents-list).
 
-* A maximum of two Vocabularies (for the *x* and *y* axes.)
+* A maximum of two vocabularies (for the *x* and *y* axes.)
 
-![Overview of the Content Audit Tool in the Content Dashboard](./content-dashboard-interface/images/10.png)
+![Overview of the content audit tool in the content dashboard](./content-dashboard-interface/images/10.png)
 
 ```{tip}
-If the Content Audit Tool doesn't show the expected chart, [verify your Categories](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) for the global Vocabularies and ensure that [your content is categorized](../tags-and-categories/organizing-content-with-categories-and-tags.md).
+If the content audit tool doesn't show the expected chart, [verify your categories](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) for the global vocabularies and ensure that [your content is categorized](../tags-and-categories/organizing-content-with-categories-and-tags.md).
 ```
 
-In the Content Audit Tool interface you can find:
+In the content audit tool interface you can find:
 
 * Chart legend (1)
 
-* *X*-axis Categories for the first Vocabulary (2)
+* *X*-axis categories for the first vocabulary (2)
 
-* *Y*-axis Categories for the second Vocabulary (3)
+* *Y*-axis categories for the second vocabulary (3)
 
 * Bar chart (4)
 
-![Overview of the Content Performance user interface](./content-dashboard-interface/images/04.png)
+![Overview of the content performance user interface](./content-dashboard-interface/images/04.png)
 
 ### Customizing the Vocabularies and Categories in the Content Audit Tool
 
-By default, the bar chart shows the total number of assets for each Category in the selected vocabularies, but you can filter this information in different ways:
+By default, the bar chart shows the total number of assets for each category in the selected vocabularies, but you can filter this information in different ways:
 
-* Use the [filters](#filtering-and-sorting-content-in-the-contents-list) in the [Contents list](#contents-list).
+* Use the [filters](#filtering-and-sorting-content-in-the-contents-list) in the [contents list](#contents-list).
 
-* Filter categories in the chart by checking or unchecking the Category name in the chart legend.
+* Filter categories in the chart by checking or unchecking the category name in the chart legend.
 
-* Click one of the bars to zoom-in on a specific Category's results.
+* Click one of the bars to zoom-in on a specific category's results.
 
-* Change which Vocabularies are displayed in the graph.
+* Change which vocabularies are displayed in the graph.
 
 To change these Vocabularies:
 
-1. Click the *Configure Chart* icon (![gear icon](../../images/icon-settings.png)) in the Content Audit area.
+1. Click the *Configure Chart* icon (![gear icon](../../images/icon-settings.png)) in the content audit area.
 
-1. In the dual listbox, click the Vocabulary in the *Available* or *In Use* lists and click the selection buttons (![Angle Left](../../images/icon-angle-left.png) ![Angle right](../../images/icon-angle-right.png)) to add or remove the Vocabularies you want to show.
+1. In the dual listbox, click the vocabulary in the *Available* or *In Use* lists and click the selection buttons (![Angle Left](../../images/icon-angle-left.png) ![Angle right](../../images/icon-angle-right.png)) to add or remove the vocabularies you want to show.
 
-1. Click the *Up* (![Up](../../images/icon-angle-up.png)) and *Down* (![Down](../../images/icon-angle-down.png)) buttons to order of the Vocabularies in the chart axis.
+1. Click the *Up* (![Up](../../images/icon-angle-up.png)) and *Down* (![Down](../../images/icon-angle-down.png)) buttons to order of the vocabularies in the chart axis.
 
 1. Click *Save*.
 
-1. Click the *Flip Axes* (![Flip Axes](../../images/icon-change.png)) icon in the Content Audit area if you must switch the axis assigned to the selected vocabularies.
+1. Click the *Flip Axes* (![Flip Axes](../../images/icon-change.png)) icon in the content audit area if you must switch the axis assigned to the selected vocabularies.
 
-    ![Select the Vocabularies in the Content Audit Tool](./content-dashboard-interface/images/12.png)
+    ![Select the vocabularies in the Content Audit Tool](./content-dashboard-interface/images/12.png)
 
 ```{note}
-You can select a maximum of two Vocabularies. Only vocabularies from the same site can be combined. Global vocabularies can be combined with vocabularies from any site.
+You can select a maximum of two vocabularies. Only vocabularies from the same site can be combined. Global vocabularies can be combined with vocabularies from any site.
 ```
 
 A gray bar denotes content without any categories in one of the selected Vocabularies. Chart labels for this content are distinctive. For instance, when you choose the Audience Vocabulary, the content that is not categorized under Audience shows the *No Audience Specified* label.

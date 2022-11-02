@@ -2,41 +2,55 @@
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
-You can configure *Segments* at the system level in *System Settings* or at the instance level in *Instance settings*.
+You can configure *Segments* behavior at the system or instance level.
 
-To configure segments at the system level,
+<!--
+NOTE: It could help to give examples. What sort of things can you configure?
+e.g., "These settings determine..."
 
-1. Open the *Global Menu* ![Global Menu](../../../images/icon-applications-menu.png) and click on *Control Panel* &rarr; *System Settings*.
+NOTE: Also, it might help to clarify how the scopes relate.
+e.g., "When you enable settings at the system level, you can still disable them at the instance level. However, if you disable settings at the system level, you cannot enable them at the instance level."
+-->
 
-1. Scroll down to the *Content and Data section* and click *Segments*.
+To access segment settings,
 
-To configure segments at the instance level, follow the same steps as above and select *Instance Settings* from the *Global Menu*.
+1. Open the *Global Menu* ![Global Menu](../../../images/icon-applications-menu.png), click the *Control Panel* tab, and go to *System Settings* or *Instance Settings*.
 
-```{note}
-These settings are available under Instance Settings starting from Liferay DXP 7.4 U38+/GA38+.
-```
+   ```{note}
+   Beginning with Liferay DXP 7.4 U38+/GA38+, you can configure segment settings at the instance level.
+   ```
+
+1. Click *Segments* in the Content and Data section.
 
 ## Analytics Cloud Segments
 
-![View and configure Analytics Cloud Segments settings under System and Instance settings.](./segments-admin-settings/images/01.png)
+![View and configure Analytics Cloud Segments settings.](./segments-admin-settings/images/01.png)
 
-**Anonymous User Segments Cache Expiration Time** – You can add anonymous users to segments based on their behavior. This field defines the time (in seconds) after which the segment cache for these users expires.
+[Analytics Cloud segments](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html) aggregate individuals based on common attributes and behavior. You can integrate this data with Liferay DXP's segments to deliver content of interest to both known and anonymous users.
 
-**Interest Terms Cache Expiration Time** – This defines the time (in seconds) after which the Interests cache expires. Read [Understanding Interests](https://learn.liferay.com/analytics-cloud/latest/en/workspace-data/definitions/managing-interest-topics.html#understanding-interests)   for more information.
+These Liferay DXP settings are available for Analytics Cloud segments:
 
-**Update Interval** – This defines the interval (in minutes) at which you get updates from segments in Analytics Cloud.
+**Anonymous User Segments Cache Expiration Time**: Set a time limit (in seconds) for how long the anonymous segment cache is stored. When the time expires, the cache is cleared.
+
+**Interest Terms Cache Expiration Time**: Set a time limit (in seconds) for how long the interest terms cache is stored. When the time expires, the cache is cleared. See [Understanding Interests](https://learn.liferay.com/analytics-cloud/latest/en/workspace-data/definitions/managing-interest-topics.html#understanding-interests) for more information.
+
+**Update Interval**: Set the interval (in minutes) for receiving updates from Analytics Cloud segments. This setting is only available under system settings.
 
 ## Session Property Vocabularies
 
-Read [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md) for more information.
+<!--NOTE: This section could use more info/context; cf. with the Analytics Cloud Segments section-->
+
+Add session property vocabularies that you can use in the segments editor. See [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md) for more information.
 
 ## Segments Service
 
-![View and configure Segments Service settings under System and Instance settings.](./segments-admin-settings/images/02.png)
+![View and configure Segments Service settings.](./segments-admin-settings/images/02.png)
 
-**Enable Segmentation** - Use this checkbox to enable or disable segmentation. If unchecked, it disables user segmentation on every request. As a result, personalized variations of collections and experiences are not displayed to the end user.
+<!--NOTE: This section could use an intro; cf. with the Analytics Cloud Segments section-->
 
-**Enable Assign Roles by Segment** - If you enable this setting, you can assign users to a role using a global segment. Instead of manually updating a role, you can assign groups of dynamically changing individuals to a role automatically.
+**Enable Segmentation**: Enable or disable segmentation. While disabled, personalized variations of collections and experiences are not displayed to the end user.
+
+**Enable Assign Roles by Segment**: Enable or disable the ability to assign roles to users dynamically using global segments. While enabled, you can assign roles automatically to groups of changing individuals. <!--NOTE: I think the following steps should be in a separate roles article (e.g., "Using Segments to Assign Roles Dynamically"). This would give the content more visibility. If such an article (or section in an article) already exists, this line should just link to the article.-->
 
 To do this,
 
@@ -50,8 +64,9 @@ To do this,
 
    ![Select a global segment of your choice to assign users from that segment to the selected role dynamically.](./segments-admin-settings/images/03.png)
 
-**Compound Segments Interval** -  This defines the time interval (in minutes) for checking and refreshing compound segments based on its rules.
+**Compound Segments Interval**: Set the interval (in minutes) for checking and refreshing compound segments based on its rules. This setting is only available under system settings.
 
-```{important}
-You can also configure these settings per instance. Go to Control Panel &rarr; Instance Settings &rarr; Segments to change the defaults. You cannot, however, configure the *Update Interval* and *Compound Segments Interval* per instance under *Instance Settings*. 
-```
+## Additional Information
+
+* [Analytics Cloud Segments](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)
+* [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

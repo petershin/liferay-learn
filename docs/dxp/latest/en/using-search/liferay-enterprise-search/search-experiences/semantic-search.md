@@ -25,8 +25,6 @@ To enable semantic search in Liferay,
 1. Create a search blueprint to perform a similarity search between the text embeddings representation of the search terms versus the text embeddings representation of the document text. query account for the dense vector field containing the text embedding that is the natural language representation of the words.
 1. Create a search blueprint using the necessary Search Experiences elements.
 
-
-
 ```{important} 
 You must re-index if ...
 ```
@@ -41,26 +39,47 @@ On top of that, you need a model to perform a similarity search of the search ph
 
 You need a running sentence transformer provider. Choose from Hugging Face or txtai:
 
-txtai
-For setting up the textai, follow the docs to setup a txtai docker container at https://neuml.github.io/txtai/cloud/ See section "API". In Linux
+#### Starting a txtai Instance
+
+<!-- Say something about this setup is intended for testing, point to the txtai docs for more information? -->
+
+For setting up textai to access its APIs, follow the docs to setup a txtai docker container at https://neuml.github.io/txtai/cloud/ See section "API". In Linux
 
 Create a directory for txtai and go there
 wget https://raw.githubusercontent.com/neuml/txtai/master/docker/api/Dockerfile
+curl https://raw.githubusercontent.com/neuml/txtai/master/docker/api/Dockerfile -O
 Create a minimal config.yml:
+
+```yaml
 path: /tmp/index
 
 writable: False
 
 embeddings:
      path: sentence-transformers/nli-mpnet-base-v2
-docker build -t txtai-api
+```
+
+
+From the folder, run
+
+```
+docker build -t txtai-api .
+```
+
+Then start a container:
+
+```
 docker run -p 8000:8000 --rm -it txtai-api
+```
  
 Depending on the size of the models. It will take a few moment for the service to initialize. 
 
 After that, go to Control Panel / Search Experiences / Sentence Transformer and select txtai as service provider
 
-Hugging Face
+
+
+#### Provisioning a Hugging Face Instance
+
 To be able to use Hugging Face as sentence transformer, registration to Hugging Face is required in https://huggingface.co/join
 
 Create a Hugging Face account
@@ -71,7 +90,6 @@ As a model, use one of the models on the list https://huggingface.co/models?pipe
 
 
 Liferay DXP supports txtai (self-hosted / self-managed) and Hugging Face's Inference API as sentence transformer providers. Administrators can enable and configure these services through the System/ Instance Settings.
-<!-- there's nothing in the sys setting but a note that This Feature is not Available, 11/01 -->
 
 ### Search Experiences Elements for Semantic Search
 

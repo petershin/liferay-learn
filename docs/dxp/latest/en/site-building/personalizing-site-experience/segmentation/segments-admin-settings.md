@@ -2,13 +2,13 @@
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
-You can configure *Segments* behavior at the system or instance level. These settings can be used to configure the following:
+You can configure *Segments* behavior at the system or instance level. These settings can be used for the following:
 
 * Set the interval to sync Analytics Cloud segments with Liferay DXP.
 
 * Set the expiration intervals for interest terms cache and anonymous user cache for Analytics Cloud segments.
 
-* Create segment-based session properties based on vocabularies.
+* Create segment-based session properties based on vocabularies
 
 * Enable/disable segmentation
 
@@ -56,7 +56,7 @@ With a *Session Property Vocabulary*, you can create [session-based Segment prop
 
 ![View and configure Segments Service settings.](./segments-admin-settings/images/02.png)
 
-You can use segments service settings to enable/disable segmentation and the dynamic segment-based assignment of users to roles. You can also configure the interval to update compound segments. 
+You can use segments service settings to enable/disable segmentation, the dynamic segment-based assignment of users to roles, and configure the interval to update compound segments.
 
 These Liferay DXP settings are available for segments service:
 

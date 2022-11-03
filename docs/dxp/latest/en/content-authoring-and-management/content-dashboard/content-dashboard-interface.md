@@ -10,21 +10,9 @@ The Content Dashboard interface has the following areas:
 
 ![The content dashboard user interface contains three areas of information.](./content-dashboard-interface/images/05.png)
 
-When you [open the content dashboard](#accessing-the-content-dashboard), you see the [content audit tool](#content-audit-tool) (1) at the top of the page and the [contents list](#contents-list) (2) at the bottom. From the contents list, you can access the [content info sidebar](#content-info-sidebar) (3) and the [content performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md). The content info sidebar and the Content Performance panel can collapse. They show additional details for each item in the contents List.
+When you [open the content dashboard](#accessing-the-content-dashboard), you see the [content audit tool](#content-audit-tool) (1) at the top of the page and the [contents list](#contents-list) (2) at the bottom. From the contents list, you can access the [content info sidebar](#content-info-sidebar) (3) and the [content performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md). The content info sidebar and the Content Performance panel can collapse. They show additional details for each item in the contents list.
 
 To access the content info sidebar, click the *Actions Menu* (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* option. Alternatively, hover over the article and click *Info* (![Info](../../images/icon-information.png)). For information on the *View Metrics* (![Metrics](../../images/icon-analytics.png)) option, read [About the content Performance Panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
-
-```{note}
-Starting from Liferay DXP 7.4 U42+/GA42+, the following improvements have been made to the info panel.
-
-* Blogs and web content have a preview image in addition to images and PDFs. But you cannot click on the preview image to redirect to the blog or web content. 
-
-* In the *Details* section, you can now view the *WebDAV* URL for documents along with the *Latest Version URL* below it. 
-
-* You can subscribe to a web content by clicking on the bell icon at the top right of the info panel. This notifies you of any changes that occurs with the web content. 
-
-* You can share blogs and documents from the info panel by clicking on the *Share* button and entering the email address of the person(s) you want to share it with. Once added, you can view and manage the collaborators from the info panel itself. 
-```
 
 ## Accessing the Content Dashboard
 
@@ -32,18 +20,18 @@ Starting from Liferay DXP 7.4 U42+/GA42+, the following improvements have been m
 
 1. If the Global Menu is disabled, open the Product Menu and, under the *Site* Menu, go to *Content* &rarr; *Content Dashboard*.
 
-    ![Open the content dashboard from the Global Menu.](./content-dashboard-interface/images/03.png)
+    ![Open the Content Dashboard from the Global Menu.](./content-dashboard-interface/images/03.png)
 
 ## Content Audit Tool
 
-This tool is the graphical area at the top of the content dashboard page. The chart represents the total number of assets for a given combination of vocabularies and categories,  including the *Global* scope and all *Sites & Asset Libraries* in the instance. This chart takes into account:
+This tool is the graphical area at the top of the Content Dashboard page. The chart represents the total number of assets for a given combination of vocabularies and categories,  including the *Global* scope and all *Sites & Asset Libraries* in the instance. This chart takes into account:
 
 * [Web content articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [documents and media](../documents-and-media.md) and [blog entries](../blogs/adding-blog-entries.md) across all sites and asset libraries.
 
     ```{note}
-    Documents and media are available in the content dashboard starting with Liferay CE/DXP 7.4+. 
+    Documents and media are available in the Content Dashboard starting with Liferay CE/DXP 7.4+. 
     
-    Blog entries are available in the content dashboard starting from Liferay DXP 7.4 U23+/GA23+.
+    Blog entries are available in the Content Dashboard starting from Liferay DXP 7.4 U23+/GA23+.
     ```
 
 * Content you can access.
@@ -177,7 +165,7 @@ To sort the content,
 1. Under the *Order By* section, select the order for the items.
 
 ```{note}
-When you close the content dashboard page, the default filter and sorting option are set again.
+When you close the dashboard page, the default filter and sorting option are set again.
 ```
 
 ### Filter Options Reference
@@ -239,15 +227,19 @@ To open the sidebar,
     ![The content info sidebar provides different metadata for your content.](./content-dashboard-interface/images/09.png)
 
 ```{note}
+Starting from Liferay DXP 7.4 U42+/GA42+, the following improvements have been made to the content dashboard's info panel.
+
+* In the *Details* section, you can now view the *WebDAV* URL for documents along with the *Latest Version URL* below it. 
+
+* You can subscribe to a web content by clicking on the bell icon at the top right of the info panel. This notifies you of any changes that occurs with the web content. 
+
+* You can share blogs and documents from the info panel by clicking on the *Share* button and entering the email address of the person(s) you want to share it with. Once added, you can view and manage the collaborators from the info panel itself.
+
 Starting from Liferay DXP 7.4 U44+/GA44+, the following improvements have been made to the content dashboard.
 
 * The content type and subtype are now present in the info panel of the content dashboard.
 
 * The MIME type of a basic document (image, vectorial, etc) is present in the info panel and in the subtype column of the content list.
-
-* The *Categorization* and *Detail* sections in the info panel are collapsible. 
-
-* The info panel remains open after page reload so that you can keep viewing the content that was previously open. 
 ```
 
 ## Related Information

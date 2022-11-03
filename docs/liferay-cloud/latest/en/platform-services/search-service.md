@@ -2,7 +2,7 @@
 
 The Elasticsearch service is the text search engine for your Liferay DXP application. It's a private service that only communicates with the other services in your application, not with the outside internet.
 
-![Figure 1: The Elasticsearch service is one of several services available in Liferay Cloud.](./search-service/images/01.png)
+![The Elasticsearch service is one of several services available in Liferay Cloud.](./search-service/images/01.png)
 
 See the [Search service limitations](../reference/platform-limitations.md#search-service) section for more information.
 
@@ -63,7 +63,7 @@ Your environment's [service stack version](../reference/understanding-service-st
 
 ## Environment Variables Reference
 
-All environment variables and other forms of configuration for Elastisearch are in the [official Elastisearch documentation](https://www.elastic.co/guide/index.html).
+All environment variables and other forms of configuration for Elasticsearch are in the [official Elasticsearch documentation](https://www.elastic.co/guide/index.html).
 You can set such configurations and environment variables in the `configs/{ENV}/config/` directory and `LCP.json`, respectively. Examples include:
 
 | Name | Value | Description |

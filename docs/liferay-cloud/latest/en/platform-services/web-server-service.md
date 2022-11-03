@@ -2,7 +2,7 @@
 
 The Nginx web server functions as a gateway from the open internet to your Liferay Cloud services. It handles all traffic from your users and acts as a high-performance web server. 
 
-![Figure 1: The web server is one of several services available in Liferay Cloud.](./web-server-service/images/01.png)
+![The web server is one of several services available in Liferay Cloud.](./web-server-service/images/01.png)
 
 See the [Web server service limitations](../reference/platform-limitations.md#web-server-service) section for more information.
 

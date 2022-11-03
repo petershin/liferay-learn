@@ -1,6 +1,6 @@
 # Backup Service Overview
 
-Maintaining regular backups is vital to protecting your project's data. The Liferay Cloud backup service stores iterations of environment data that can be used to restore your environments if needed. These backups include both the Liferay DXP Database and the full contents of the `LIFERAY_HOME/data` folder.
+Maintaining regular backups is vital to protecting your project's data. The Liferay Cloud backup service stores iterations of environment data that can be used to restore your environments if needed. These backups include both the Liferay DXP Database and the full contents of the `[LIFERAY_HOME]/data` folder.
 
 ![The backup service is one of several services available in Liferay Cloud.](./backup-service-overview/images/01.png)
 
@@ -40,13 +40,13 @@ From the Backups page, environment administrators also have access to the Action
 
 You can also filter the list of backups by their status (failed or successful), or display the backups from the associated Disaster Recovery (`dr`) environment (if one is configured for the current environment), from the two selectors near the top of the screen.
 
-![View Disaster Recovery backups or filter by backup status from the dropdown menus.](./backup-service-overview/images/04.png)
+![View Disaster Recovery backups or filter by backup status from the drop-down menus.](./backup-service-overview/images/04.png)
 
 For more information and instructions on how to perform these actions, see [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) and [Restoring Data from a Backup](./restoring-data-from-a-backup.md).
 
 ## Creating a Manual Backup
 
-To manually backup your environment from the Backups page, click on *Backup Now*. This process can take several minutes or hours depending on the size of your services.
+To manually back up your environment from the Backups page, click on *Backup Now*. This process can take several minutes or hours depending on the size of your services.
 
 Once started, the backup service icon indicates a backup is in progress, and a message appears at the top of the screen. The new backup also appears in the Backup history.
 
@@ -141,7 +141,7 @@ There are two ways to configure an automated backup schedule:
    If this environment has no backups, clicking the *Set up a regular backup* link on the Backup service page also takes you to the Configuration tab.
    ```
 
-1. Choose the desired backup frequency from available options in the *Create backups* dropdown menu. You have these options: 
+1. Choose the desired backup frequency from available options in the *Create backups* drop-down menu. You have these options: 
 
    * **Daily**: A backup is created every day; you can set the time it is created (in the UTC±00 time zone).
 

@@ -44,7 +44,7 @@
 
 ## CRUDアプリをセットアップする
 
-1. [CRUDアプリ](./liferay-j4x7.zip)をダウンロードし、解凍してください。
+1. [CRUDアプリ](./liferay-j4x7.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/remote-apps/remote-apps-tutorials/liferay-j4x7.zip -O
@@ -126,15 +126,15 @@
 
 ### フォームの実装
 
-[`GetForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/GetForm.js)は、`getObjects`メソッドを呼び出し、レスポンスをJSONとしてパースします。 J4X7の各エントリーは、フォームごとに一覧表示されます。
+[`GetForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/GetForm.js) は、`getObjects`メソッドを呼び出し、レスポンスをJSONとしてパースします。 J4X7の各エントリーは、フォームごとに一覧表示されます。
 
-[`AddForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/AddForm.js)は、入力を受信し、ユーザーが **Add** をクリックすると、`addObject`メソッドを呼び出します。
+[`AddForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/AddForm.js) は、入力を受信し、ユーザーが **Add** をクリックすると、`addObject`メソッドを呼び出します。
 
-[`PatchForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/PatchForm.js)は、入力を受信し、ユーザーが **Patch** をクリックすると、`patchObject`メソッドを呼び出します。
+[`PatchForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/PatchForm.js) は、入力を受信し、ユーザーが **Patch** をクリックすると、`patchObject`メソッドを呼び出します。
 
-[`DeleteForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/DeleteForm.js)は、入力を受信し、ユーザーが **Delete** をクリックすると、`deleteObject`メソッドを呼び出します。
+[`DeleteForm.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/components/DeleteForm.js) は、入力を受信し、ユーザーが **Delete** をクリックすると、`deleteObject`メソッドを呼び出します。
 
-[`App.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/App.js)ファイルでフォームを集め、1つのページに表示します。
+[`App.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/App.js) ファイルでフォームを集め、1つのページに表示します。
 
 ## 追加情報
 

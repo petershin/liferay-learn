@@ -16,41 +16,41 @@ Account オブジェクトは一般的なアカウントデータ（名前、電
 
 以下の手順に従って、カスタムオブジェクトからアカウントと郵便番号のエントリにアクセスするためのリレーションシップを設定してください。
 
-1. *グローバルメニュー* （![Global Menu](../../../../images/icon-applications-menu.png)）を開き、*［コントロールパネル］ *タブをクリックして、 *［オブジェクト］ *に進みます。
+1. **グローバルメニュー**（![Global Menu](../../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**オブジェクト**］ に進みます。
 
-1. *Accounts* オブジェクトの編集を開始します。
+1. **Accounts** オブジェクトの編集を開始します。
 
-1. *Relationships* タブを開き、 *Add* ボタン (![Add Button](../../../../images/icon-add.png)) をクリックします。
+1. **Relationships** タブを開き、 **Add** ボタン (![Add Button](../../../../images/icon-add.png)) をクリックします。
 
-1. *ラベル* と *名前*を入力します。
+1. **ラベル** と **名前** を入力します。
 
-1. タイプ]で、[ *One to Many*]を選択します。
+1. タイプ]で、[**One to Many**]を選択します。
 
-1. オブジェクト] には、 *カスタムオブジェクト*を選択します。
+1. オブジェクト] には、 **カスタムオブジェクト** を選択します。
 
    ![Accountオブジェクトからカスタムオブジェクトへの一対多のリレーションシップを作成します。](./accessing-accounts-data-from-custom-objects/images/02.png)
 
-1. *［保存］*をクリックします。
+1. ［**保存**］ をクリックします。
 
-1. Objects 管理ページに戻り、 *Postal Address* オブジェクトの編集を開始します。
+1. Objects 管理ページに戻り、 **Postal Address** オブジェクトの編集を開始します。
 
-1. *Relationships* タブを開き、 *Add* (![Add Button](../../../../images/icon-add.png)) をクリックします。
+1. **Relationships** タブを開き、 **Add**(![Add Button](../../../../images/icon-add.png)) をクリックします。
 
-1. *ラベル* と *名前*を入力します。
+1. **ラベル** と **名前** を入力します。
 
-1. タイプ]で、[ *One to Many*]を選択します。
+1. タイプ]で、[**One to Many**]を選択します。
 
-1. Object」については、前回のリレーションシップと同じ「 *custom object* 」を選択します。
+1. Object」については、前回のリレーションシップと同じ「**custom object**」を選択します。
 
-1. Parameter」については、先に作成した「Account」オブジェクトとカスタムオブジェクトの関係（ *） を選択します（*）。
+1. Parameter」については、先に作成した「Account」オブジェクトとカスタムオブジェクトの関係（）**を選択します**（）。
 
    これは、Postal Addressの項目が特定のアカウントにスコープされているために必要です。 このパラメータは、利用可能なアドレスが Account リレーションシップのフィールド値に依存する従属リレーションシップを設定します。
 
    ![Postal Addressオブジェクトからカスタムオブジェクトへの一対多のリレーションを作成し、カスタムオブジェクトのAccountリレーションをパラメータとして使用します。](./accessing-accounts-data-from-custom-objects/images/03.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
-1. カスタムオブジェクトのデフォルトレイアウトとビューに、リレーションシップフィールドを追加します。 詳細な手順については、 [Designing Object Layouts](../designing-object-layouts.md) および [Designing Object Views](../designing-object-views.md) を参照してください。
+1. カスタムオブジェクトのデフォルトレイアウトとビューに、リレーションシップフィールドを追加します。 詳細な手順については、 [オブジェクトレイアウトの設計](../designing-object-layouts.md) および [オブジェクトビューの設計](../designing-object-views.md) を参照してください。
 
    ![カスタムオブジェクトのデフォルトレイアウトとビューに、リレーションシップフィールドを追加します。](./accessing-accounts-data-from-custom-objects/images/04.png)
 

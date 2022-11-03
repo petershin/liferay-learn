@@ -94,7 +94,7 @@ public class HelloWorldPortlet extends MVCPortlet {
 `javax.portlet.name`プロパティは必須です。 MVCコマンドを使用する場合、`javax.portlet.name`プロパティ値は、特定のポートレットURL /コマンドの組み合わせを正しいポートレットにリンクします。
 
 ```{important}
-[Liferay DXPがその名前を使用して[ポートレットのID](./reference/portlet-descriptor-to-osgi-service-property-map.md#ten)を作成する方法を考慮して、ポートレット名を一意にします。
+[Liferay DXPがその名前を使用して [ポートレットのID](./reference/portlet-descriptor-to-osgi-service-property-map.md#ten) を作成する方法を考慮して、ポートレット名を一意にします。
 ```
 
 コンポーネントを使用して公開している `Portlet.class` 実装の種類について、混乱が生じる可能性があります。 サービスレジストリは、これが [`javax.portlet.Portlet`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/Portlet.html) インターフェイスであると想定しています。 たとえば、 `com.liferay.portal.kernel.model.Portlet`ではなく、それをインポートします。

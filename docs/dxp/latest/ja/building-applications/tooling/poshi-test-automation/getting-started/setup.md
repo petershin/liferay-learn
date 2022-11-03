@@ -6,7 +6,7 @@
 
 1. Google Chrome
 
-1. [Gradle](https://gradle.org/install/)もしくは[Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html#sec:adding_wrapper) 6.6.1またはそれ以上。
+1. [Gradle](https://gradle.org/install/) もしくは [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html#sec:adding_wrapper) 6.6.1またはそれ以上。
 
 ## Poshi StandaloneのGradleプロジェクトをセットアップします。
 
@@ -67,7 +67,7 @@
 
 ## Poshi Standaloneの更新
 
-Poshi Standaloneは常に最新のリリースバージョンを実行するため、gradleプロジェクトを更新するための余分な手順は必要ありません。 ダウングレードが必要な場合は、 `build.gradle` ファイルの最後に以下の行を追加し、バージョン番号を [Poshi Runner Changelog](https://github.com/liferay/liferay-portal/blob/master/modules/test/poshi/CHANGELOG.markdown)にある希望のバージョンに置き換えてください。
+Poshi Standaloneは常に最新のリリースバージョンを実行するため、gradleプロジェクトを更新するための余分な手順は必要ありません。 ダウングレードが必要な場合は、 `build.gradle` ファイルの最後に以下の行を追加し、バージョン番号を [Poshi Runner Changelog](https://github.com/liferay/liferay-portal/blob/master/modules/test/poshi/CHANGELOG.markdown) にある希望のバージョンに置き換えてください。
 
 ```
 poshiRunner {

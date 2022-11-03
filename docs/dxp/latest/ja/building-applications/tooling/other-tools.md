@@ -28,7 +28,7 @@ other-tools/liferay-npm-bundler.md
 
 ### バンドラー移行ガイド
 
-* [Migrating a liferay-npm-bundler Project from 1.x to 2.x](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-bundler-projects-intro.md)
+* [1.xから2.xへのliferay-npm-bundlerプロジェクトの移行](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-bundler-projects-intro.md)
 * [liferay-npm-bundlerの新しいモードを使用するためのプロジェクトの移行](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-to-the-new-mode.md)
 * [Angularプロジェクトを移行してLiferay npm Bundler 2.xを使用する](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-angular-bundler.md)
 * [プレーンJavaScript、Billboard JS、JQuery、Metal JS、React、またはVue JSプロジェクトを移行してLiferay npm Bundler 2.xを使用する](./other-tools/liferay-npm-bundler/bundler-migration-guide/migrating-plain-js-billboard-jquery-metal-js-react-vue-bundler.md)

@@ -14,7 +14,7 @@ Liferay Workspaceは使い方が簡単で、[最初から](./what-is-liferay-wor
 
 Liferay Workspaceは、開発者の生産性を高めるために常に更新されており、ワークスペースを最新の状態にするのは簡単なプロセスです。
 
-1. Liferayのリポジトリにある[ワークスペースのリリースに移動](https://repository-cdn.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/com.liferay.gradle.plugins.workspace)します。 バージョンがリストに表示されます。必要なバージョン番号をメモしてください。
+1. Liferayのリポジトリにある [ワークスペースのリリースに移動](https://repository-cdn.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/com.liferay.gradle.plugins.workspace) します。 バージョンがリストに表示されます。必要なバージョン番号をメモしてください。
 1. ワークスペースのルートフォルダにある`settings.gradle`ファイルを開きます。
 1. `依存関係`ブロックで、リポジトリで見つけたバージョンでバージョンを更新します。 最新のリリースを維持したい場合は、バージョン番号の代わりにテキスト`latest.release`を指定してください。
 

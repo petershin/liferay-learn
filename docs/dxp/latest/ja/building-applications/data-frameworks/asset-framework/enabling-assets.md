@@ -12,7 +12,7 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 1. [Enabling Assets](./liferay-s5e6.zip)  をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
    ```
 
    ```bash
@@ -108,7 +108,7 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 :lines: 64-73
 ```
 
-[`AssetEntryLocalServiceImpl`クラス](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-)のJavadocsを確認すると、このメソッドはオーバーロードされていることが分かります。 `updateEntry()`のバージョンで、`title`パラメータを受け取り、アセットエントリーのタイトルを設定できるようにします。
+[`AssetEntryLocalServiceImpl`クラス](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-) のJavadocsを確認すると、このメソッドはオーバーロードされていることが分かります。 `updateEntry()`のバージョンで、`title`パラメータを受け取り、アセットエントリーのタイトルを設定できるようにします。
 
 変更後、サービスビルダーを再実行します。
 

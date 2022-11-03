@@ -21,7 +21,7 @@ understanding-object-integrations/assets-framework-integrations.md
 | :--- | :--- |
 | アセット| [添付ファイルフィールド](../objects/understanding-object-field-types.md#attachment) を使用して、インスタンスのドキュメントライブラリにファイルをアップロードしてください。 |
 | 監査 | [監査アプリケーション](./creating-and-managing-objects/auditing-object-definition-events.m) を使用して、ユーザーとリソース情報を含むオブジェクト イベントを確認します。 |  
-| カテゴライズ | カスタムオブジェクトのレイアウトにカテゴライズツールを追加し、ユーザーがエントリに[タグとカテゴリ](./creating-and-managing-objects/designing-object-layouts.md#adding-categorization) を追加できるようになりました。|
+| カテゴライズ | カスタムオブジェクトのレイアウトにカテゴライズツールを追加し、ユーザーがエントリに [タグとカテゴリ](./creating-and-managing-objects/designing-object-layouts.md#adding-categorization) を追加できるようになりました。|
 | ヘッドレス | Liferayは各公開Objectに対して[ヘッドレスエンドポイント](./understanding-object-integrations/headless-framework-integration.md) を生成するので、RESTコールをすることができます。 <!-- TASK: Add GraphQL when supported.--> ｜
 | Info Framework | [Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md), [Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), [Navigation Menus](../../site-building/site-navigation/using-the-navigation-menus-application.md) でオブジェクトデータを利用することができます。Liferay はまた、そのエントリーを表示するために [Collection Provider](../../content-authoring-and-management/collections-and-collection-pages.md) を作成します。|
 | ローカライゼーション | オブジェクト定義のフィールドをローカライズして、グローバルなユーザーにより良いサービスを提供します。|

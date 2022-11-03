@@ -70,9 +70,7 @@ A custom password policy might be useful in some scenarios. For example, you may
 
 ## Using the Properties File
 
-The Default Password Policy can only be modified from the UI in settings.
-
-A new password policy can be created in the UI or added via the [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) file. Add the properties and values you want to customize into the file. Make sure to add a name for the custom password policy. 
+A new custom password policy can be created via the [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) file during initial setup of a new Liferay instance. Add the properties and values you want to customize into the file. Make sure to add a name for the custom password policy. 
 
 For example, if you wanted to have a custom password policy that required a minimum length, numbers, symbols you might have these values set: 
 
@@ -88,6 +86,10 @@ passwords.default.policy.min.length=10
 passwords.default.policy.min.numbers=1
 passwords.default.policy.min.symbols=1
 ...
+```
+
+```{Note}
+A custom password policy can only be created via portal properties during initial Liferay instance setup. After initial setup, any policy changes must be configured via the control panel UI. The default password policy can only be configured via the control panel UI.
 ```
 
 See the reference below for a full list of properties that can be used to customize your password policy.

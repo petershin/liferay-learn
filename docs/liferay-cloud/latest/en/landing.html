@@ -1,199 +1,199 @@
 <script type="module">
-	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+   import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
 
-	const page = new Vue({
-		el: '#landingPage',
-		data: {
-			cards: [
-				{
-					icon: '#getting-started-logo',
-					sectionName: 'Getting Started',
-					sectionURL: 'getting-started.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Introduction to Liferay Cloud',
-							url: 'getting-started.html'
-						},
-						{
-							name: 'Development Requirements',
-							url: 'getting-started/development-requirements.html'
-						},
-						{
-							name: 'Configuring Your Github Repository',
-							url: 'getting-started/configuring-your-github-repository.html'
-						}
-					]
-				},
-				{
-					icon: '#site-building-logo',
-					sectionName: 'Using the Liferay DXP Service',
-					sectionURL: 'using-the-liferay-dxp-service.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Configuring the Liferay DXP Service',
-							url: 'using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.html'
-						},
-						{
-							name: 'Migrating from an On-Premises DXP Installation',
-							url: 'using-the-liferay-dxp-service/migrating-from-an-on-premises-dxp-installation.html'
-						},
-						{
-							name: 'Using the MySQL Client',
-							url: 'using-the-liferay-dxp-service/using-the-mysql-client.html'
-						},
-					]
-				},
-				{
-					icon: '#process-automation-logo',
-					sectionName: 'Build and Deploy',
-					sectionURL: 'build-and-deploy.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Overview of the Liferay Cloud Deployment Workflow',
-							url: 'build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html'
-						},
-						{
-							name: 'Deploying Changes via the Liferay Cloud Console',
-							url: 'build-and-deploy/deploying-changes-via-the-liferay-cloud-console.html'
-						},
-						{
-							name: 'Configuring Persistent File Storage Volumes',
-							url: 'build-and-deploy/configuring-persistent-file-storage-volumes.html'
-						},
-					]
-				},
-				{
-					icon: '#manage-and-optimize-logo',
-					sectionName: 'Manage and Optimize',
-					sectionURL: 'manage-and-optimize.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Auto-Scaling',
-							url: 'manage-and-optimize/auto-scaling.html'
-						},
-						{
-							name: 'Real-Time Alerts',
-							url: 'manage-and-optimize/real-time-alerts.html'
-						},
-						{
-							name: 'Environment Teams & Roles',
-							url: 'manage-and-optimize/environment-teams-and-roles.html'
-						},
-					]
-				},
-				{
-					icon: '#liferay-internals-logo',
-					sectionName: 'Platform Services',
-					sectionURL: 'platform-services.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Backup Service Overview',
-							url: 'platform-services/backup-service/backup-service-overview.html'
-						},
-						{
-							name: 'Continuous Integration',
-							url: 'platform-services/continuous-integration.html'
-						},
-						{
-							name: 'Database Service',
-							url: 'platform-services/database-service/database-service.html'
-						},
-					]
-				},
-				{
-					icon: '#installation-and-upgrades-logo',
-					sectionName: 'Infrastructure and Operations',
-					sectionURL: 'infrastructure-and-operations.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Custom Domains',
-							url: 'infrastructure-and-operations/networking/custom-domains.html'
-						},
-						{
-							name: 'VPN Integration Overview',
-							url: 'infrastructure-and-operations/networking/vpn-integration-overview.html'
-						},
-						{
-							name: 'Using SSO with Liferay Cloud',
-							url: 'infrastructure-and-operations/security/using-sso-with-liferay-cloud.html'
-						},
-					]
-				},
-				{
-					icon: '#migration-logo',
-					sectionName: 'Migrating to Liferay Cloud',
-					sectionURL: 'migrating-to-liferay-cloud.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Step 1: Matching DXP Versions',
-							url: 'migrating-to-liferay-cloud/matching-dxp-versions.html'
-						},
-						{
-							name: 'Step 2: Creating Data Backup Files',
-							url: 'migrating-to-liferay-cloud/creating-data-backup-files.html'
-						},
-						{
-							name: 'Step 3: Uploading and Restoring the Data Backup',
-							url: 'migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.html'
-						},
-						{
-							name: 'Step 4: Migrating DXP Configurations and Customizations',
-							url: 'migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.html'
-						}
-					]
-				},
-				{
-					icon: '#developing-applications-logo',
-					sectionName: 'Troubleshooting',
-					sectionURL: 'troubleshooting.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Log Management',
-							url: 'troubleshooting/log-management.html'
-						},
-						{
-							name: 'Shell Access',
-							url: 'troubleshooting/shell-access.html'
-						},
-						{
-							name: 'Disaster Recovery Overview',
-							url: 'troubleshooting/disaster-recovery-overview.html'
-						},
-					]
-				},
-				{
-					icon: '#using-search-logo',
-					sectionName: 'Reference',
-					sectionURL: 'reference.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Configuration via LCP.json',
-							url: 'reference/configuration-via-lcp-json.html'
-						},
-						{
-							name: 'Upgrading to a High Availability Subscription',
-							url: 'reference/upgrading-to-a-high-availability-subscription.html'
-						},
-						{
-							name: 'Upgrading Your Liferay Cloud Stack',
-							url: 'reference/upgrading-your-liferay-cloud-stack.html'
-						},
-						{
-							name: 'Liferay Cloud Project Changes in Version 4',
-							url: 'reference/liferay-cloud-project-changes-in-version-4.html'
-						}
-					]
-				},
-			]
-		}
-	})
+   const page = new Vue({
+      el: '#landingPage',
+      data: {
+         cards: [
+            {
+               icon: '#getting-started-logo',
+               sectionName: 'Getting Started',
+               sectionURL: 'getting-started.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Introduction to Liferay Cloud',
+                     url: 'getting-started.html'
+                  },
+                  {
+                     name: 'Development Requirements',
+                     url: 'getting-started/development-requirements.html'
+                  },
+                  {
+                     name: 'Configuring Your Github Repository',
+                     url: 'getting-started/configuring-your-github-repository.html'
+                  }
+               ]
+            },
+            {
+               icon: '#site-building-logo',
+               sectionName: 'Using the Liferay DXP Service',
+               sectionURL: 'using-the-liferay-dxp-service.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Configuring the Liferay DXP Service',
+                     url: 'using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.html'
+                  },
+                  {
+                     name: 'Migrating from an On-Premises DXP Installation',
+                     url: 'migrating-to-liferay-cloud.html'
+                  },
+                  {
+                     name: 'Using the MySQL Client',
+                     url: 'using-the-liferay-dxp-service/using-the-mysql-client.html'
+                  },
+               ]
+            },
+            {
+               icon: '#process-automation-logo',
+               sectionName: 'Build and Deploy',
+               sectionURL: 'build-and-deploy.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Overview of the Liferay Cloud Deployment Workflow',
+                     url: 'build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html'
+                  },
+                  {
+                     name: 'Deploying Changes via the Liferay Cloud Console',
+                     url: 'build-and-deploy/deploying-changes-via-the-liferay-cloud-console.html'
+                  },
+                  {
+                     name: 'Configuring Persistent File Storage Volumes',
+                     url: 'build-and-deploy/configuring-persistent-file-storage-volumes.html'
+                  },
+               ]
+            },
+            {
+               icon: '#manage-and-optimize-logo',
+               sectionName: 'Manage and Optimize',
+               sectionURL: 'manage-and-optimize.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Auto-Scaling',
+                     url: 'manage-and-optimize/auto-scaling.html'
+                  },
+                  {
+                     name: 'Real-Time Alerts',
+                     url: 'manage-and-optimize/real-time-alerts.html'
+                  },
+                  {
+                     name: 'Environment Teams & Roles',
+                     url: 'manage-and-optimize/environment-teams-and-roles.html'
+                  },
+               ]
+            },
+            {
+               icon: '#liferay-internals-logo',
+               sectionName: 'Platform Services',
+               sectionURL: 'platform-services.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Backup Service Overview',
+                     url: 'platform-services/backup-service/backup-service-overview.html'
+                  },
+                  {
+                     name: 'Continuous Integration',
+                     url: 'platform-services/continuous-integration.html'
+                  },
+                  {
+                     name: 'Database Service',
+                     url: 'platform-services/database-service/database-service.html'
+                  },
+               ]
+            },
+            {
+               icon: '#installation-and-upgrades-logo',
+               sectionName: 'Infrastructure and Operations',
+               sectionURL: 'infrastructure-and-operations.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Custom Domains',
+                     url: 'infrastructure-and-operations/networking/custom-domains.html'
+                  },
+                  {
+                     name: 'VPN Integration Overview',
+                     url: 'infrastructure-and-operations/networking/vpn-integration-overview.html'
+                  },
+                  {
+                     name: 'Using SSO with Liferay Cloud',
+                     url: 'infrastructure-and-operations/security/using-sso-with-liferay-cloud.html'
+                  },
+               ]
+            },
+            {
+               icon: '#migration-logo',
+               sectionName: 'Migrating to Liferay Cloud',
+               sectionURL: 'migrating-to-liferay-cloud.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Step 1: Matching DXP Versions',
+                     url: 'migrating-to-liferay-cloud/matching-dxp-versions.html'
+                  },
+                  {
+                     name: 'Step 2: Creating Data Backup Files',
+                     url: 'migrating-to-liferay-cloud/creating-data-backup-files.html'
+                  },
+                  {
+                     name: 'Step 3: Uploading and Restoring the Data Backup',
+                     url: 'migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.html'
+                  },
+                  {
+                     name: 'Step 4: Migrating DXP Configurations and Customizations',
+                     url: 'migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.html'
+                  }
+               ]
+            },
+            {
+               icon: '#developing-applications-logo',
+               sectionName: 'Troubleshooting',
+               sectionURL: 'troubleshooting.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Log Management',
+                     url: 'troubleshooting/reading-liferay-cloud-service-logs.html'
+                  },
+                  {
+                     name: 'Shell Access',
+                     url: 'troubleshooting/shell-access.html'
+                  },
+                  {
+                     name: 'Disaster Recovery Overview',
+                     url: 'troubleshooting/disaster-recovery-overview.html'
+                  },
+               ]
+            },
+            {
+               icon: '#using-search-logo',
+               sectionName: 'Reference',
+               sectionURL: 'reference.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Configuration via LCP.json',
+                     url: 'reference/configuration-via-lcp-json.html'
+                  },
+                  {
+                     name: 'Upgrading to a High Availability Subscription',
+                     url: 'reference/upgrading-to-a-high-availability-subscription.html'
+                  },
+                  {
+                     name: 'Upgrading Your Liferay Cloud Stack',
+                     url: 'reference/upgrading-your-liferay-cloud-stack.html'
+                  },
+                  {
+                     name: 'Liferay Cloud Project Changes in Version 4',
+                     url: 'reference/liferay-cloud-project-changes-in-version-4.html'
+                  }
+               ]
+            },
+         ]
+      }
+   })
 </script>

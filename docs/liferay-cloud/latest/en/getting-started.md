@@ -48,11 +48,11 @@ All customer data is encrypted at rest by default. Encryption at rest ensures th
 
 [Automated backups](./platform-services/backup-service/backup-service-overview.md) ensure that data and documents are protected and ready for restoration in case of data corruption or failure.
 
-![Figure 3: Liferay Cloud's backup service preserves and protects your data.](./getting-started/images/01.png)
+![Liferay Cloud's backup service preserves and protects your data.](./getting-started/images/01.png)
 
 Out-of-the-box [role and team administration](./manage-and-optimize/environment-teams-and-roles.md) allows administrators to deliver maximum productivity and security by adding or removing people from teams and managing permissions per project environment.
 
-![Figure 4: Manage your project's team members, including their permissions.](./getting-started/images/02.png)
+![Manage your project's team members, including their permissions.](./getting-started/images/02.png)
 
 ## High Availability, Scalability, and Performance
 
@@ -60,13 +60,13 @@ Out-of-the-box [role and team administration](./manage-and-optimize/environment-
 
 [Auto-scaling](./manage-and-optimize/auto-scaling.md) ensures that bandwidth and compute capacity is dynamically added to maintain steady performance through unexpected traffic spikes. Similarly, unneeded resources can be scaled down during periods of lower activity. Teams receive automatic notifications and email alerts regarding instance usage so they can manage resources with confidence.
 
-![Figure 5: Auto-scale your servers to meet demand.](./getting-started/images/03.png)
+![Auto-scale your servers to meet demand.](./getting-started/images/03.png)
 
 ## Real Time Alerts
 
 Administrators can configure [alerts](./manage-and-optimize/real-time-alerts.md) per user to receive resource utilization updates in real-time.
 
-![Figure 6: Administrators can configure real-time alerts.](./getting-started/images/04.png)
+![Administrators can configure real-time alerts.](./getting-started/images/04.png)
 
 ## Accelerated Development with Built-in CI/CD
 
@@ -74,19 +74,19 @@ Deliver your application faster with a fully-realized CI/CD strategy available o
 
 These robust systems enable the creation of fault tolerant processes to meet organizations' unique needs and detect and repair common server problems as they occur. This helps prevent small programming errors from accumulating and causing a server crash.
 
-![Figure 7: View, manage, and deploy your builds from a central location.](./getting-started/images/05.png)
+![View, manage, and deploy your builds from a central location.](./getting-started/images/05.png)
 
 ## Application Development Tools
 
 Keep track of application deployments and performance with real-time build and [deployment logs](./troubleshooting/reading-liferay-cloud-service-logs.md). Teams can analyze stack traces and troubleshoot bugs by [accessing the shell](./troubleshooting/shell-access.md) via the web console or terminal, and/or by downloading the logs.
 
-![Figure 8: Real-time build and deployment logs help you solve problems with your applications.](./getting-started/images/06.png)
+![Real-time build and deployment logs help you solve problems with your applications.](./getting-started/images/06.png)
 
 ## Insightful Monitoring
 
 Liferay Cloud delivers [application metrics](./manage-and-optimize/application-metrics.md) so IT teams can understand the health and compute requirements of their sites over time. Administrators can also use out-of-the-box [Dynatrace integration](./manage-and-optimize/application-metrics.md#advanced-application-metrics-on-production) to quickly understand CPU and memory usage, data transfer rates, and more.
 
-![Figure 9: Use a variety of metrics to keep tabs on your Liferay Cloud services, including your Liferay DXP instances.](./getting-started/images/07.png)
+![Use a variety of metrics to keep tabs on your Liferay Cloud services, including your Liferay DXP instances.](./getting-started/images/07.png)
 
 ## Additional Information
 

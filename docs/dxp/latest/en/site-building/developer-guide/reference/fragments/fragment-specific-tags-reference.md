@@ -2,6 +2,10 @@
 
 Along with standard HTML, CSS, and JavaScript, you can use Liferay-specific tags and, since Liferay Portal 7.3 GA3 and Liferay DXP 7.3, attributes, to make editable sections or embed widgets in your Fragment. Editable elements can be modified before publication, which means that you can create simple, reusable Fragments that have identical formatting, but contain elements that are adaptable to the specific context.
 
+```{note}
+Nesting editable elements inside of other editable elements in a fragment *is not supported.*
+```
+
 Page Fragments have access to these types of liferay-specific tags and attributes that add these features:
 
 - [Editable Text](#making-text-editable)
@@ -11,7 +15,7 @@ Page Fragments have access to these types of liferay-specific tags and attribute
 - [Embedded Widgets](#including-widgets-within-a-fragment)
 - [Localizable Fragment Fields](#localizing-fragment-configurations)
 
-```{note}
+```{tip}
 When you start typing the name of a tag, the [HTML editor](../../developing-page-fragments/using-the-fragments-editor.md) provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
 ```
 

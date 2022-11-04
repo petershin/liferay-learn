@@ -1,17 +1,19 @@
 # Content Page Editor UI Reference
 
-Using the Content Page Editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in your Content Page. To open the Content Page Editor, click *Edit* (![Edit icon](../../../images/icon-edit.png)) at the top right of the *Application Bar*. This reveals the editing toolbar and sidebar, which contain tools and components for building your Content Pages.
+{bdg-secondary}`For Liferay 7.4 U37+/GA37+`
+
+Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in your content page. To open the content page editor, go to a content page and click the *Edit* button ( ![Edit icon](../../../images/icon-edit.png) ). This reveals the editing toolbar and sidebar, which contain tools and components for building your content pages.
 
 - [Editing Toolbar](#editing-toolbar)
 - [Editing Sidebar](#editing-sidebar)
 
-![Click Edit to access a Content Page's editing toolbar and sidebar.](./content-page-editor-ui-reference/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![Click the Edit button to access the editing toolbar and sidebar.](./content-page-editor-ui-reference/images/01.png)
 
 ## Editing Toolbar
 
-The Content Page toolbar contains tools for creating unique user experiences, setting localized translations, switching between edit modes, and more.
+The content page toolbar contains tools for creating unique user experiences, setting localized translations, switching between edit modes, and more.
 
-![Click on Edit to access the Content Page toolbar.](./content-page-editor-ui-reference/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![Click the Edit button to access the editing toolbar.](./content-page-editor-ui-reference/images/02.png)
 
 ### Experiences
 
@@ -19,133 +21,116 @@ Using the Experience drop-down menu, you can create copies of the current page t
 
 ### Translations
 
-Click on the *language flag* to access the translation drop-down menu. Here, you can view the status of active languages for a Page, as well as switch between languages to view and edit translations directly. See [Configuring Site Languages](../../site-settings/site-localization.md) for more information.
+Click the *language flag* to access the translation drop-down menu. Here, you can view the status of active languages for a page, as well as switch between languages to view and edit translations directly. See [Configuring Site Languages](../../site-settings/site-localization.md) for more information.
 
-If you use [Experiences](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) for Content Page Personalization, you can configure the Experience using the languages available for your site. See [Managing Experience Localization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md#managing-experience-localization) for more information.
+If you use [experiences](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) for content page personalization, you can configure the Experience using the languages available for your site. See [Managing Experience Localization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md#managing-experience-localization) for more information.
 
 ### Device Display
 
-Click the device icons to access DXP's Responsive Layout Editor, where you can view and configure your Content Page layout for different screen sizes, such as desktop, phone, or tablet. These layout controls include
-
-- Desktop
-- Tablet
-- Landscape Phone
-- Portrait Phone
-
-![Select the design option for different screen layouts.](content-page-editor-ui-reference/images/17.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+Click the device icons to access Liferay's responsive layout editor. Here you can configure your page for different screen sizes. Available display options include Desktop ( ![Desktop](../../../images/icon-display.png) ), Tablet ( ![Tablet](../../../images/icon-tablet-portrait.png) ), Landscape Phone ( ![Landscape Phone](../../../images/icon-mobile-landscape.png) ), and Portrait Phone ( ![Portrait Phone](../../../images/icon-mobile-portrait.png) ). While editing the tablet and phone layouts, you can manually adjust the screen size using the resize handlebar. See [Building Responsive Layouts](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) for more information.
 
 ```{note}
-   The Fragments and Widgets and Page Design options in the Content Page sidebar are only available in the Desktop layout.
+The [Fragments and Widgets](#fragments-and-widgets) and [Page Design Options](#page-design-options) panel are only available in the desktop layout.
 ```
-
-In the Tablet and Phone layouts, you can further adjust the screen size using the resize handlebar.
-
-![Resize the content preview in the Tablet or Phone layouts.](content-page-editor-ui-reference/images/09.gif) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ### Edit History
 
-Click History (![Time](./../../../images/icon-time.png)) to view changes you've made to the Content Page during your current edit session. Use the undo and redo buttons to reverse or restore those changes.
+Click the *History* button ( ![History Button](./../../../images/icon-time.png) ) to view changes made during your current edit session. You can use this history to reserve or restore changes. Alternatively, you can click the *undo* and *redo* buttons.
 
-![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/10.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856???-->
+![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/03.png)
 
 ### Edit Mode Selector
 
-The editing options available in the Content Page sidebar depend on the editing mode you choose.
+The editing options available in the content page sidebar depend on the editing mode you choose.
 
 | Edit Mode | Description | Available Options |
 | :--- | :--- | :--- |
-| Page Design | You can design pages when you have permission to update the page and the page content. | <ul><li>[Selection](#selection)</li><li>[Contents](#contents)</li><li>[Comments](#comments)</li></ul> |
-| Content Editing | You can edit content when you have permission to update the page but not the page content. | All options in Page Design mode plus: <ul><li>[Fragments and Widgets](#fragments-and-widgets)</li><li>[Page Design Options](#page-design-options)</li></ul> |
+| Page Design | You can design pages when you have permission to update the page and the page content. | <ul><li>[Browser](#browser)</li><li>[Page Content](#page-content)</li><li>[Comments](#comments)</li></ul> |
+| Content Editing | You can edit content when you have permission to update the page but not the page content. | <ul><li>[Fragments and Widgets](#fragments-and-widgets)</li><li>[Browser](#browser)</li><li>[Page Design Options](#page-design-options)</li><li>[Page Content](#page-content)</li><li>[Comments](#comments)</li></ul> |
 
-![Choose between Page Design or Content Editing editing modes.](content-page-editor-ui-reference/images/18.png)
+![Choose between Page Design or Content Editing editing modes.](content-page-editor-ui-reference/images/04.png)
 
-### Preview and Publish
+### Toggle Sidebars
 
-After making your changes, click *Preview* (![Preview](../../../images/icon-preview.png)) to show the published view of your Page. While previewing your changes, you can select which experience, language, and device layout to view. When finished, click *Publish*. By default, publishing makes your changes live immediately. However, if you've enabled a custom [Workflow](../../../process-automation/workflow/introduction-to-workflow.md) to direct the review and publishing process, clicking Publish initiates your defined procedure.
+Click the *Toggle Sidebars* button ( ![Toggle Sidebars](../../../images/icon-view.png) ) to hide the editing sidebars and preview your page. Additionally, you can click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) in the Application Bar and select *Preview in a New Tab* to see the current page experience and language in a new tab.
+
+### Create Page Template
+
+Click the *Page Template* button ( ![Page Template](../../../images/icon-page-template.png) ) to create a [page template](../adding-pages/creating-a-page-template.md) based on the current page design.
+
+### Publish
+
+By default, publishing makes your changes live immediately. However, if you've enabled a custom [Workflow](../../../process-automation/workflow/introduction-to-workflow.md) to direct the review and publishing process, clicking Publish initiates your defined procedure.
 
 ## Editing Sidebar
 
-Depending on your selected editing mode, you can access these options in the edit sidebar:
+Depending on your selected editing mode, you can access these panels in the editing sidebar:
 
-- ![Fragments and Widgets](../../../images/icon-cards2.png) - [Fragments and Widgets](#fragments-and-widgets)
-- ![Browser](../../../images/icon-browser.png) - [Browser](#browser) (Liferay DXP 7.4)
+- ![Fragments and Widgets](../../../images/icon-plus.png) - [Fragments and Widgets](#fragments-and-widgets)
+- ![Browser](../../../images/icon-hierarchy.png) - [Browser](#browser) (previously *Selection*)
 - ![Page Design Options](../../../images/icon-format.png) - [Page Design Options](#page-design-options)
-- ![Comments](../../../images/icon-comments-w.png) - [Comments](#comments)
+- ![Page Content](../../../images/icon-paperclip.png) - [Page Content](#page-content) (previously *Contents*)
+- ![Comments](../../../images/icon-message.png) - [Comments](#comments)
 
-Before DXP 7.4, the Browser (![Browser](../../../images/icon-browser.png)) button functionality was provided by these two controls:
-
-- ![Selection](../../../images/icon-pages-tree.png) - [Selection](#selection)
-- ![Contents](../../../images/icon-list-ul.png) - [Contents](#contents)
-
-
-![Content Page sidebar controls differences between Liferay DXP 7.4+ and previous versions.](content-page-editor-ui-reference/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![The editing sidebar includes these panels.](content-page-editor-ui-reference/images/05.png)
 
 ### Fragments and Widgets
 
-In the Fragments and Widgets sidebar panel (![Fragments and Widgets icon](../../../images/icon-cards2.png)), you can access both out-of-the-box and custom Page elements for building your Page.
+In the Fragments and Widgets panel ( ![Fragments and Widgets icon](../../../images/icon-plus.png) ), you can access both out-of-the-box and custom page elements.
 
-- **Fragments**: Fragments are extensible, reusable, drag-and-drop elements that serve as the primary building blocks for Content Pages. Examples include layout elements, videos, and banner images with text overlay. See [Using Fragments](../page-fragments-and-widgets/using-fragments.md) to learn more about DXP's out-of-the-box fragments, or [Developing Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn how to create your own.
+**Fragments**: Fragments are extensible, reusable, drag-and-drop elements that serve as the primary building blocks for content pages. Examples include layout elements, videos, and banner images with text overlay. See [Using Fragments](../page-fragments-and-widgets/using-fragments.md) to learn more about Liferay's out-of-the-box fragments or [Developing Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn how to create your own.
 
-   ```{note}
-      For a description of the different Page Fragments in the Content Page editor, see [Default Fragments Reference](./../page-fragments-and-widgets/using-fragments/default-fragments-reference.md).
-   ```
+**Widgets**: Widgets are [applications](../../../building-applications.md) that add dynamic functionality to a page. Examples include blogs, message boards, and calendars. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
 
-- **Widgets**: As in other DXP contexts, widgets are [applications](../../../building-applications.md) that add dynamic functionality to a Page. Examples include blogs, message boards, and calendars. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
+```{tip}
+Beginning with Liferay 7.4 U37/GA37, you can click the *Order* button ( ![Order Button](../../../images/icon-order.png) ) to reorder sets of fragments and widgets. Also, you can click the *Star* button ( ![Star Button](../../../images/icon-star.png) ) to add a fragment or widget to your list of favorite elements.
+```
 
 ### Browser
 
-> Available: Liferay DXP/Portal 7.4+
+In the Browser panel ( ![Browser](../../../images/icon-hierarchy.png) ), you can view, organize, and manage all elements in the page. Elements are displayed in a hierarchy. For Liferay 7.4 U37/GA37+, you can drag and drop elements in the Browser panel to reorganize them or double click elements to rename them. If you select an element, you can access its settings in the configuration side panel. You can also select fragment sub-elements to access additional settings. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
-The *Browser* sidebar panel (![Browser](../../../images/icon-browser.png)) allows you to view, edit, and manage all web content on the Page. The mapped content on a Page can be from different types of assets: documents and media, web content articles, etc. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information. 
+```{note}
+When editing a content page, header and footer elements are not included in the Browser panel. You can only edit these elements in [master page templates](../defining-headers-and-footers/master-page-templates.md).
+```
 
-   ![Browser tab allows you to view, edit, and manage web content on the Page.](./content-page-editor-ui-reference/images/02.gif) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+### Page Content
 
-- **Page Elements**: Page Elements shows a hierarchical outline of all Page elements, where you can select, configure, or remove those elements. Clicking any element on the Page while in the Design mode opens the Selection panel and highlights the selected element in the hierarchy. When an element is selected, you can access its General, Styles, and Link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.  
+In the Page Content panel ( ![Page Content](../../../images/icon-paperclip.png) ), you can view and edit content directly added to the page. This can include inline text, images, web content articles, and more. While viewing content, you can search for content items and filter by type. If the page includes a [collection](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md), you can view its items and add new items. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
 
-   ```{note}
-   A Page's Header and Footer are not listed in the Page Elements panel hierarchy. This is because you can only modify them in the [Master Page Template](../defining-headers-and-footers/master-page-templates.md).
-   ```
-
-- **Page Content**: From Page Content, you can access the content included in the Page and the options to edit them. This content is grouped by type, including essential information, name, and subtype. From here you can complete different actions:
-
-  - Filter content by type or name, so you can quickly find and edit it.
-  - See all the [Collection](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) items, add new items.
-  - Edit images or the inline text using the editing controls.
-  - Edit the Inline Text from the edit button in the sidebar.
-
-   ```{tip}
-   When you filter content by type, your search is narrowed for that type. Hover over the search results to highlight the corresponding Page element.
-   ```
+```{note}
+Besides collections, mapped content is not listed in the Page Content panel. The panel only includes content added directly to the page.
+```
 
 ### Page Design Options
 
-Click *Look and Feel* (![Look and Feel](../../../images/icon-format.png)) to change the [Master Page Template](../defining-headers-and-footers/managing-master-page-templates.md) or [Style Book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md).
+In the Page Design Options panel ( ![Page Design Options](../../../images/icon-format.png) ), you can change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). You can also access additional Look and Feel configurations, including [browser-based client extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md).
 
 ### Comments
 
-Use Page Fragment comments to collaborate with team members while developing your Content Page. Once made, you can view, edit, delete, or reply to open comments in the Content Page sidebar's Comments panel (![Comments icon](../../../images/icon-comments-w.png)). If [mentions](../../../collaboration-and-social/notifications-and-requests/user-guide/mentioning-users.md) are enabled, you can tag Users with Page update permissions as part of your comment.
+In the Comments panel ( ![Comments](../../../images/icon-message.png) ), you can comment on fragments and widgets to collaborate with page contributors. You can also view, edit, delete, or reply to open comments. If [mentions](../../../collaboration-and-social/notifications-and-requests/user-guide/mentioning-users.md) are enabled, you can tag users with page update permissions as part of your comment. To add a comment, open the Comments panel and select the desired page element.
 
 ```{note}
-   For versions prior to 7.3+, comments are disabled by default. To enable Page comments, go to *Control Panel* → *Configuration* → *System Settings* → *Pages* → *Content Page Editor*. Then, check the *Comments Enabled* box, and click *Update*.
+For versions prior to 7.3, comments are disabled by default. To enable page comments, go to *Control Panel* &rarr; *System Settings* &rarr; *Pages* &rarr; *Content Page Editor*. Then, check the *Comments Enabled* box, and click *Update*.
 ```
 
 ### Selection
 
-> Available: Liferay DXP/Portal 7.3.
+{bdg-secondary}`For Liferay 7.3`
 
-In the Selection sidebar panel (![Selection](../../../images/icon-pages-tree.png)), you can view a hierarchical outline of all Page elements, as well as select, configure, or remove those elements. Similarly, clicking any element on the Page while in the Design mode opens the Selection panel and highlights the selected Page element in the hierarchy. When an element is selected, you can access its General, Styles, and Link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
+In the Selection panel ( ![Selection](../../../images/icon-pages-tree.png) ), you can view a hierarchical outline of all page elements, as well as select, configure, or remove those elements. Similarly, clicking any element on the page while in the Design mode opens the Selection panel and highlights the selected page element in the hierarchy. When an element is selected, you can access its General, Styles, and Link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
-![Selection shows you a hierarchy of your Page and contents.](./content-page-editor-ui-reference/images/08.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![Selection shows you a hierarchy of your page and contents.](./content-page-editor-ui-reference/images/06.png)
 
 ```{note}
-   A Page's Header and Footer are not listed in the Selection panel hierarchy. This is because you can only modify them in the [Master Page Template](../defining-headers-and-footers/master-page-templates.md).
+A page's header and footer are not listed in the Selection panel hierarchy. This is because you can only modify them in the [master page template](../defining-headers-and-footers/master-page-templates.md).
 ```
 
 ### Contents
 
-> Available: Liferay DXP/Portal 7.3.
+{bdg-secondary}`For Liferay 7.3`
 
-Here you can view, edit, and manage all web content on the Page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
+In the Contents panel ( ![Contents](../../../images/icon-list-ul.png) ), you can view, edit, and manage all web content on the page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
 
 ## Additional Information
 

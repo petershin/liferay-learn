@@ -60,17 +60,17 @@ A custom password policy might be useful in some scenarios. For example, you may
 
    ![Click on the Assign Members link.](configuring-a-password-policy/images/03.png)
 
-1. You can add individual Users or Organizations to the password policy. Click the *Add* icon (![Add icon](../../images/icon-add.png)) and a new form will pop up.
+1. You can add individual users or organizations to the password policy. Click the *Add* icon (![Add icon](../../images/icon-add.png)) and a new form will pop up.
 
-1. Make your selection (of Users or Organizations). When finished, click *Add*. 
+1. Make your selection (of users or organizations). When finished, click *Add*. 
 
    ![Make your selection and click the Add button.](configuring-a-password-policy/images/04.png)
 
-   Your Users or Organizations are now associated with your password policy.
+   Your users or organizations are now associated with your password policy.
 
 ## Using the Properties File
 
-During the initial setup of your Liferay instance, you can create a custom password policy using the [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) file. Add the properties and values you want to customize into the file. Make sure to add a name for the custom password policy.
+During the initial setup of your Liferay instance, you can create a custom password policy using the [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) file. Add the properties and values you want to customize into the file. Make sure to add a name for your password policy.
 
 For example, if you wanted to have a custom password policy that required a minimum length, numbers, symbols you might have these values set: 
 
@@ -89,7 +89,7 @@ passwords.default.policy.min.symbols=1
 ```
 
 ```{note}
-You can only use portal properties to create a custom password policy during initial Liferay instance setup. Afterwards, you can only change the custom policy via the control panel UI. Also, you can only configure the default password policy via the control panel UI.
+You can only use portal properties to create a custom password policy during initial Liferay instance setup. To modify it afterwards, you must use the control panel UI. To modify the default password policy, you must also use the control panel UI.
 ```
 
 See the reference below for a full list of properties that you can use to customize your password policy.

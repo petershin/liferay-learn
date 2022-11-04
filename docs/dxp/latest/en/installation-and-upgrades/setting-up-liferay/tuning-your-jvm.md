@@ -31,7 +31,7 @@ The JVM's memory comprises heap and non-heap spaces. The heap contains a space f
 | `-XX:ReservedCodeCacheSize=96m` | Maximum space for JIT-compiled code. |
 
 ```{Note}
-Set the minimum (`-Xms`) and maximum (`-Xmx`) heap size to the same value to avoid the virtual machine needing to make adjustments dynamically.
+Set the minimum (`-Xms`) and maximum (`-Xmx`) heap size to the same value to prevent the JVM from making dynamic adjustments.
 ```
 
 ```{warning}

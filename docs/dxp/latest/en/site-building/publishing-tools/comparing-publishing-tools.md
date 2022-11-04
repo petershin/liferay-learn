@@ -18,7 +18,7 @@ Beginning with Liferay 7.4 U44/GA44, Publications is fully integrated with [Work
 
 ## Staging
 
-With Staging, contributors work in a shared *staging* environment before publishing their changes to a *live* environment. Users enable staging for sites and asset libraries individually. When enabled, Liferay creates a separate copy of the original site or library and either hosts them on the same server ([Local Live Staging](./staging/configuring-local-live-staging.md)) or on separate servers ([Remote Live Staging](./staging/configuring-remote-live-staging.md)).
+With Staging, contributors work in a shared *staging* environment before publishing their changes to a *live* environment. Users enable staging for sites and asset libraries individually. When enabled, Liferay creates a separate copy of the original site or library and hosts them on either the same server ([Local Live Staging](./staging/configuring-local-live-staging.md)) or on separate servers ([Remote Live Staging](./staging/configuring-remote-live-staging.md)).
 
 All changes are site- or asset library-scoped. Within the site or asset library, you can determine the exact pages and application data you want to stage. Only changes to explicitly staged data are tracked. Publish your changes when ready, either individually or all together, while the live environment handles incoming user traffic.
 

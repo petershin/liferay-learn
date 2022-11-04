@@ -1,39 +1,35 @@
 # Adding Elements to Content Pages
 
-After you [create a Content Page](../adding-pages/adding-a-page-to-a-site.md), you can add Page widgets and Fragments to define the Page's content and structure.
+After you [create a content page](../adding-pages/adding-a-page-to-a-site.md), you can add widgets and fragments to define the page's content and structure.
 
-1. Under the Site Menu, go to *Site Builder* &rarr; *Pages*.
+Follow these steps to add elements:
 
-1. Click *Add* (![Add Page](../../../images/icon-plus.png)) at the level where you want to add the new Page, and select *Add Page*.
+1. Navigate to the desired content page and click the *Edit* button ( ![Edit Button](../../../images/icon-edit.png) ). This opens the [content page editor](./content-page-editor-ui-reference.md).
 
-    ![Begin by adding your new Content Page.](adding-elements-to-content-pages/images/01.png)
+1. Open the *Fragments and Widgets* ( ![Fragments and Widgets](../../../images/icon-plus.png) ) side panel and drag and drop the desired elements onto the page.
 
-1. Select the *Blank* template or one of the existing templates.
+   You can browse the *Fragments* and *Widgets* tabs or use the *Search* field to find a specific element.
 
-1. In the Add Page dialog, type your Page's *Name*.
+   ![Add fragments and widgets from the editing sidebar.](adding-elements-to-content-pages/images/01.png)
 
-1. Alternatively, click the an existing Content Page's *Actions* Menu (![Actions](../../../images/icon-actions.png)) and select *Edit*.
+1. (Optional) After adding elements, open the *Browser* panel ( ![Browser](../../../images/icon-hierarchy.png) ) to view and manage all elements added to the page. For Liferay 7.4 U37/GA37+, you can drag and drop elements in the Browser panel to reorganize them or double click elements to rename them.
 
-    ![Edit an existing Content Page by dropping Fragments or Widgets in the edit area.](adding-elements-to-content-pages/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+   ![View and manage all elements added to the page in the Browser panel.](adding-elements-to-content-pages/images/02.png)
 
-1. From the Content Page sidebar, select *Fragments and Widgets* (![Fragments and Widgets](../../../images/icon-cards2.png)) and start adding the [Fragments](../page-fragments-and-widgets/using-fragments.md) and [Widgets](./using-widgets-on-a-content-page.md) for your content. You can browse for the component or use the *Search* field to find a specific element.
+1. Select and configure each page element in the Configuration sidebar. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
-    ![Add Fragments and Widgets from the Content Page sidebar.](adding-elements-to-content-pages/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+   ![Select and configure each page element in the Configuration sidebar.](adding-elements-to-content-pages/images/03.png)
 
-    ```{note}
-    New Content Pages start empty and in a *Draft* status. The Page is not visible until you publish it.
-    ```
+1. Click *Publish*.
 
-1. Configure the look and content preferences of the Fragments and Widgets. For more information, see [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md).
+   By default, publishing makes your changes live immediately. However, if you've enabled a custom [workflow](../../../process-automation/workflow/introduction-to-workflow.md) to direct the review and publishing process, clicking Publish initiates your defined procedure.
 
-    ```{tip}
-    In progress work on a Content Page is automatically saved.
-    ```
-
-1. Click the *Publish* button in the top right to make the updates available to the live Page.
+```{note}
+While editing the page, Liferay automatically saves your progress as a draft.
+```
 
 ## Related Information
 
 - [Using Content Pages](../using-content-pages.md)
 - [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md)
-- [Content Pages User Interface Reference](./content-page-editor-ui-reference.md)
+- [Content Page Editor UI Reference](./content-page-editor-ui-reference.md)

@@ -18,16 +18,11 @@ Beginning with Liferay 7.4 U44/GA44, Publications is fully integrated with [Work
 
 ## Staging
 
-With Staging, contributors work in a shared *staging* environment before publishing their changes to a *live* environment. Users enable staging for sites and asset libraries individually. When enabled, Liferay creates a separate copy of the original site or library and hosts it in one of two ways:
-
-1. [Local Live Staging](./staging/configuring-local-live-staging.md) hosts the staged and live site/library on the same server.
-1. [Remote Live Staging](./staging/configuring-remote-live-staging.md) hosts the staged and live site/library on separate servers.
+With Staging, contributors work in a shared *staging* environment before publishing their changes to a *live* environment. Users enable staging for sites and asset libraries individually. When enabled, Liferay creates a separate copy of the original site or library and either hosts them on the same server ([Local Live Staging](./staging/configuring-local-live-staging.md)) or on separate servers ([Remote Live Staging](./staging/configuring-remote-live-staging.md)).
 
 All changes are site- or asset library-scoped. Within the site or asset library, you can determine the exact pages and application data you want to stage. Only changes to explicitly staged data are tracked. Publish your changes when ready, either individually or all together, while the live environment handles incoming user traffic.
 
-While Publications is recommended over Staging, Remote Live Staging is necessary when content must be created in a different environment than where it's consumed. Publications does not currently offer a remote option. In all other use cases, use Publications.
-
-<!-- Why? What's the scenario in which "content must be created in a different environment than where it's consumed." This is the question I was waiting for an answer for, and you skipped it. Tell us when Staging is useful. In what scenarios is it preferred to have content staged on one server and published on another (I can imagine some, but we should spell it out). -Rich -->
+While Publications is recommended over Staging, Remote Live Staging is necessary if you use a multi-tier architecture for your deployment model or have different security requirements for your working and production environments. This is because Publications does not currently offer a remote option. In all other use cases, use Publications.
 
 ```{important}
 If you must use Staging, you should enable it at the beginning of development. When enabled, Staging immediately begins copying data between your environments, which can cause errors if a lot of data already exists. Staging works best by publishing data frequently in small blocks. Publishing changes incrementally helps avoid publishing errors.

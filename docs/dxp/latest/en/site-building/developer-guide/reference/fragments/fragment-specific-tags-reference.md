@@ -19,7 +19,7 @@ Page fragments have access to these types of liferay-specific tags and attribute
 When you start typing the name of a tag, the [HTML editor](../../developing-page-fragments/using-the-fragments-editor.md) provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
 ```
 
-The text or images you provide here are the default values for the fields. You may want to display them in the final version of the page, or you may want filler text that should be replaced before the page is published.
+The text or images you provide here are the default values for the fields. You may want to display them in the final version of the page, or you may want filler text that should be replaced before publishing the page.
 
 All of these work together to help you create dynamic, reusable elements for building a site. For example, if you need a small text box with an image and link to provide a product description, you can create a fragment containing editable filler text, space for an editable image, the appropriate formatting, and an editable link. You can then add the fragment to multiple pages and define the image, text, and link for each product you need to describe.
 
@@ -39,7 +39,7 @@ Since Liferay Portal 7.3 GA3 and Liferay DXP 7.3, you can use `data-lfr-editable
 
 ## Making Text Editable
 
-You can make fragment text editable by including the `data-lfr-editable-type="text"` attribute in the image element. An example is shown below. The `data-lfr-editable-id` must be a unique ID:
+You can make fragment text editable by including the `data-lfr-editable-type="text"` attribute in the image element. The `data-lfr-editable-id` must be a unique ID, like this example:
 
 ```html
 <p data-lfr-editable-id="text1" data-lfr-editable-type="text">
@@ -169,7 +169,7 @@ For Liferay Portal 7.3 GA2 and below, use this syntax:
 
 ## Including Widgets Within A Fragment
 
-Each widget has a registered name and corresponding `lfr-widget-[name]` tag, which you must use to embed it in a fragment. For example, the Menu Display widget is registered as `nav`, so its tag is `<lfr-widget-nav />`. You could embed it in a block like this:
+Each widget has a registered name and corresponding `lfr-widget-[name]` tag, which you must use to embed it in a fragment. For example, the Menu Display widget is registered as `nav`, so its tag is `<lfr-widget-nav />`. You can embed it in a block like this:
 
 ```html
 <div class="nav-widget">

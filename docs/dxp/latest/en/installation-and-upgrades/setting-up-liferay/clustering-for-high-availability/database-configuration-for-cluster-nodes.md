@@ -16,9 +16,9 @@ Connections to separate read and read-write [data sources](https://learn.liferay
 
 ### JDBC
 
-Edit your `portal-ext.properties` file following these steps to connect directly to your separate read and write data sources using [JDBC](../../installing-liferay/configuring-a-database.md):
+Follow these steps to edit your `portal-ext.properties` file to connect directly to separate read and write data sources using [JDBC](../../installing-liferay/configuring-a-database.md):
 
-1. Configure JDBC connections to your separate read and write data sources. See the the [JDBC properties reference](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) for more information. Here's an example:
+1. Configure JDBC connections to separate read and write data sources. See the [JDBC properties reference](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) for more information. Here's an example:
 
 
     ```properties

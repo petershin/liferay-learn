@@ -60,7 +60,7 @@ Publications has the following resource permissions.
 | Permission | Description |
 | :--- | :--- |
 | Add Publication | Create a publication. Without this permission, users can only access and contribute to a publication when [invited](./collaborating-on-publications.md). |
-| Permissions | N/A |
+| Permissions | View and modify permissions for resource related actions in the Publications application: Add Publication and Permissions. |
 
 ### Publication (Actions on Database Entities)
 

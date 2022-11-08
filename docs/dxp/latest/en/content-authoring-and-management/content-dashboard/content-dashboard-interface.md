@@ -2,17 +2,17 @@
 
 {bdg-secondary}`Available 7.3+`
 
-The Content Dashboard interface has the following areas:
+The Content Dashboard user interface has the following areas:
 
 * [Content Audit Tool](#content-audit-tool) (1)
 * [Contents list](#contents-list) (2)
 * [Content Info sidebar](#content-info-sidebar) (3)
 
-![The content dashboard user interface contains three areas of information.](./content-dashboard-interface/images/05.png)
+![The Content Dashboard user interface contains three areas of information.](./content-dashboard-interface/images/01.png)
 
-When you [open the content dashboard](#accessing-the-content-dashboard), you see the [content audit tool](#content-audit-tool) (1) at the top of the page and the [contents list](#contents-list) (2) at the bottom. From the contents list, you can access the [content info sidebar](#content-info-sidebar) (3) and the [content performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md). The content info sidebar and the Content Performance panel can collapse. They show additional details for each item in the contents list.
+When you [open the Content Dashboard](#accessing-the-content-dashboard), you see the [content audit tool](#content-audit-tool) (1) at the top of the page and the [contents list](#contents-list) (2) at the bottom. From the contents list, you can access the [content info sidebar](#content-info-sidebar) (3) and the [content performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md). The content info sidebar and the Content Performance panel can collapse. They show additional details for each item in the contents list.
 
-To access the content info sidebar, click the *Actions Menu* (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* option. Alternatively, hover over the article and click *Info* (![Info](../../images/icon-information.png)). For information on the *View Metrics* (![Metrics](../../images/icon-analytics.png)) option, read [About the content Performance Panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
+To access the content info sidebar, click the *Actions Menu* (![Action Menu](../../images/icon-actions.png)) for the content and select the *Info* option. Alternatively, hover over the article and click *Info* (![Info](../../images/icon-information.png)). For information on the *View Metrics* (![Metrics](../../images/icon-analytics.png)) option, see [About the Content Performance Panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
 
 ## Accessing the Content Dashboard
 
@@ -20,16 +20,16 @@ To access the content info sidebar, click the *Actions Menu* (![Action Menu](../
 
 1. If the Global Menu is disabled, open the Product Menu and, under the *Site* Menu, go to *Content* &rarr; *Content Dashboard*.
 
-    ![Open the Content Dashboard from the Global Menu.](./content-dashboard-interface/images/03.png)
+    ![Open the Content Dashboard from the Global Menu.](./content-dashboard-interface/images/02.png)
 
 ## Content Audit Tool
 
 This tool is the graphical area at the top of the Content Dashboard page. The chart represents the total number of assets for a given combination of vocabularies and categories,  including the *Global* scope and all *Sites & Asset Libraries* in the instance. This chart takes into account:
 
-* [Web content articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [documents and media](../documents-and-media.md) and [blog entries](../blogs/adding-blog-entries.md) across all sites and asset libraries.
+* [Web content articles](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [documents and media](../documents-and-media.md), and [blog entries](../blogs/adding-blog-entries.md) across all sites and asset libraries.
 
     ```{note}
-    Documents and media are available in the Content Dashboard starting with Liferay CE/DXP 7.4+. 
+    Documents and Media assets are available in the Content Dashboard starting with Liferay CE/DXP 7.4+. 
     
     Blog entries are available in the Content Dashboard starting from Liferay DXP 7.4 U23+/GA23+.
     ```
@@ -40,7 +40,7 @@ This tool is the graphical area at the top of the Content Dashboard page. The ch
 
 * A maximum of two vocabularies (for the *x* and *y* axes.)
 
-![Overview of the content audit tool in the content dashboard](./content-dashboard-interface/images/10.png)
+![Overview of the content audit tool in the content dashboard.](./content-dashboard-interface/images/03.png)
 
 ```{tip}
 If the content audit tool doesn't show the expected chart, [verify your categories](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) for the global vocabularies and ensure that [your content is categorized](../tags-and-categories/organizing-content-with-categories-and-tags.md).
@@ -56,7 +56,7 @@ In the content audit tool interface you can find:
 
 * Bar chart (4)
 
-![Overview of the content performance user interface](./content-dashboard-interface/images/04.png)
+![Overview of the content performance user interface.](./content-dashboard-interface/images/04.png)
 
 ### Customizing the Vocabularies and Categories in the Content Audit Tool
 
@@ -82,7 +82,7 @@ To change these Vocabularies:
 
 1. Click the *Flip Axes* (![Flip Axes](../../images/icon-change.png)) icon in the content audit area if you must switch the axis assigned to the selected vocabularies.
 
-    ![Select the vocabularies in the Content Audit Tool](./content-dashboard-interface/images/12.png)
+    ![Select the vocabularies in the content audit tool.](./content-dashboard-interface/images/05.png)
 
 ```{note}
 You can select a maximum of two vocabularies. Only vocabularies from the same site can be combined. Global vocabularies can be combined with vocabularies from any site.
@@ -136,7 +136,7 @@ For each entry in the contents list, you can access the following options using 
 
 * *View Metrics* (![View Metrics](../../images/icon-analytics.png)): Opens the [content performance panel](../page-performance-and-accessibility/about-the-content-performance-tool.md).
 
-    ![Access the content info sidebar and content performance panel from the Actions menu or the icons on each content row.](./content-dashboard-interface/images/11.png)
+    ![Access the content info sidebar and content performance panel from the Actions menu or the icons on each content row.](./content-dashboard-interface/images/07.png)
 
 ```{note}
 Use the *View*, *Info*, and *View Metrics* options for content based on a display page template. Use the *Edit* option when you have edit permission for the content.
@@ -152,11 +152,11 @@ Use the *View*, *Info*, and *View Metrics* options for content based on a displa
 
 The filter editor area shows your filters and the total results. To remove one or more filters, click the *Close* (![Close](../../images/icon-times.png)) button next to the filter's name, or click *Clear* to remove all filters and reset the contents list. In addition to the predefined and custom filters, you can search and filter the assets in the content view using keywords in the search field. To understand how the combination of different filters works, read [Understanding How Filtering Works in the Contents List](#understanding-how-filtering-works-in-the-contents-list).
 
-![Use the filter editor to remove a specific filter or all of them from the filter area.](./content-dashboard-interface/images/01.png)
+![Use the filter editor to remove a specific filter or all of them from the filter area.](./content-dashboard-interface/images/08.png)
 
 You can also filter the content by clicking one of the bars in the [content audit tool](#content-audit-tool) area and zoom-in on a specific category's results.
 
-![Click on one of the bars in the content audit tool to filter by the bar's Category.](./content-dashboard-interface/images/08.png)
+![Click on one of the bars in the content audit tool to filter by the bar's Category.](./content-dashboard-interface/images/09.png)
 
 To sort the content,
 
@@ -192,11 +192,11 @@ When using the type or extension filter, you can define your search criteria fro
 
 * Search is case insensitive.
 
-* You can add, remove, or edit the available extensions from the *Global Menu* (![Global menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *System Settings* &rarr; *Content and Data* &rarr; *Documents and Media* &rarr; *Service*.
+* You can add, remove, or edit the available extensions from the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *System Settings* &rarr; *Content and Data* &rarr; *Documents and Media* &rarr; *Service*.
 
 * The filter in the content lists reflects the filter criteria you choose in the filter dialog.
 
-![The search criteria you use in the type or extension filters is included in the Content List.](./content-dashboard-interface/images/13.png)
+![The search criteria you use in the type or extension filters is included in the Content List.](./content-dashboard-interface/images/10.png)
 
 ### Understanding How Filtering Works in the Contents List
 
@@ -216,24 +216,20 @@ When using the type or extension filter, you can define your search criteria fro
 
 This sidebar provides access to different metadata for the asset selected in the contents list, including the asset owner, available languages for the content, tags and categories for the asset, or review date.
 
-![Access the content info sidebar from the assets in the contents list.](./content-dashboard-interface/images/07.png)
+![Access the content info sidebar from the assets in the contents list.](./content-dashboard-interface/images/11.png)
 
-To open the sidebar,
+To open the sidebar, click the *Actions* button ( ![Actions Button](../../images/icon-actions.png) ) for the desired asset and select *Info*. Alternatively, you can hover over the asset and click the *Info* icon ( ![Information icon](../../images/icon-information.png) ).
 
-1. Click the *Actions Menu* (![Actions Menu](../../images/icon-actions.png)) next to the asset and select *Info*.
-
-1. Alternatively, hover over the asset and click the *Info* (![Information icon](../../images/icon-information.png)) icon.
-
-    ![The content info sidebar provides different metadata for your content.](./content-dashboard-interface/images/09.png)
+![The content info sidebar provides different metadata for your content.](./content-dashboard-interface/images/12.png)
 
 ```{note}
-Starting from Liferay DXP 7.4 U42+/GA42+, the following improvements have been made to the content dashboard's info panel.
+Starting with Liferay 7.4 U42+/GA42+, the following improvements have been made to the content dashboard's info panel.
 
 * In the *Details* section, you can now view the *WebDAV* URL for documents along with the *Latest Version URL* below it. 
 
-* You can subscribe to a web content by clicking on the bell icon at the top right of the info panel. This notifies you of any changes that occurs with the web content. 
+* You can subscribe to a web content by clicking on the bell icon at the top right of the info panel. This notifies you of any changes that occur with the web content. 
 
-* You can share blogs and documents from the info panel by clicking on the *Share* button and entering the email address of the person(s) you want to share it with. Once added, you can view and manage the collaborators from the info panel itself.
+* You can share blogs and documents from the info panel by clicking on the *Share* button and entering the email address of the person(s) you want to share it with. Once added, you can view and manage the collaborators from the info panel.
 
 Starting from Liferay DXP 7.4 U44+/GA44+, the following improvements have been made to the content dashboard.
 

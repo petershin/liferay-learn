@@ -15,7 +15,7 @@ content-dashboard/exporting-the-assets-list-to-a-spreadsheet.md
 ```
 
 ```{note}
-This feature works [only with Elasticsearch](../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+This feature works only with [Elasticsearch](../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
 ```
 
 * [About the Content Dashboard](./content-dashboard/about-the-content-dashboard.md)

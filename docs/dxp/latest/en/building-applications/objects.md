@@ -3,6 +3,7 @@ toc:
 - ./objects/creating-and-managing-objects.md
 - ./objects/objects-tutorials.md
 - ./objects/using-forms-with-objects.md
+- ./objects/using-fragments-to-build-forms.md
 - ./objects/deploying-object-widgets-to-sites.md
 - ./objects/displaying-object-entries.md
 - ./objects/enabling-workflows-for-objects.md
@@ -19,6 +20,7 @@ toc:
 objects/creating-and-managing-objects.md
 objects/objects-tutorials.md
 objects/using-forms-with-objects.md
+objects/using-fragments-to-build-forms.md
 objects/deploying-object-widgets-to-sites.md
 objects/displaying-object-entries.md
 objects/enabling-workflows-for-objects.md

@@ -9,24 +9,21 @@ public class ListTypeEntry_PUT_ById {
 	 * java -classpath .:* -DlistTypeEntryId=1234 ListTypeEntry_PUT_ById
 	 */
 	public static void main(String[] args) throws Exception {
-		ListTypeEntryResource.Builder builder =
-			ListTypeEntryResource.builder();
+		ListTypeEntryResource.Builder builder = ListTypeEntryResource.builder();
 
-		ListTypeEntryResource listTypeEntryResource =
-			builder.authentication(
-				"test@liferay.com", "learn"
-			).build();
+		ListTypeEntryResource listTypeEntryResource = builder.authentication(
+			"test@liferay.com", "learn"
+		).build();
 
-		ListTypeEntry listTypeEntry =
-			listTypeEntryResource.putListTypeEntry(
-				Long.valueOf(System.getProperty("listTypeEntryId")),
-				new ListTypeEntry() {
-					{
-						key = "baker";
-						name = "Baker";
-						name_i18n = Collections.singletonMap("en-US", "Baker");
-					}
-				});
+		ListTypeEntry listTypeEntry = listTypeEntryResource.putListTypeEntry(
+			Long.valueOf(System.getProperty("listTypeEntryId")),
+			new ListTypeEntry() {
+				{
+					key = "baker";
+					name = "Baker";
+					name_i18n = Collections.singletonMap("en-US", "Baker");
+				}
+			});
 
 		System.out.println(listTypeEntry);
 	}

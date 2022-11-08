@@ -19,8 +19,7 @@ public class ListTypeDefinitions_GET_FromInstance {
 
 		Page<ListTypeDefinition> page =
 			listTypeDefinitionResource.getListTypeDefinitionsPage(
-				null, null, null,
-				Pagination.of(1, 2), null);
+				null, null, null, Pagination.of(1, 2), null);
 
 		System.out.println(page);
 	}

@@ -1,20 +1,20 @@
 # Notification Template Variables Reference Guide
 
-When creating a notification template, you can insert a variable as a substitute for key values in the Email Content's *Email Settings* and *Body* fields. Key values include a customer's name, the Order ID, shipping and billing addresses, and a list of items in the order.
+When creating a notification template, you can insert a variable as a substitute for key values in the *Email Settings* and *Body* fields. Key values include the customer's name, the order ID, shipping and billing addresses, and a list of items in the order.
 
-![Use these variables in the Email Body field.](./notification-template-variables-reference-guide/images/02.png)
+![Use these variables in the body of the email.](./notification-template-variables-reference-guide/images/02.png)
 
 To view the variables available, first select a Notification Template Type and enable it.
 
-![Select a Notification Template type first.](./notification-template-variables-reference-guide/images/01.png)
+![Select a type that triggers the notification.](./notification-template-variables-reference-guide/images/01.png)
 
-Once a template type has been selected, expand the _Definition of Terms_ dropdown menu.
+Once a template type has been selected, expand the *Definition of Terms* dropdown menu.
 
 ## Email Settings
 
-![Use these variables in the Email settings field.](./notification-template-variables-reference-guide/images/03.png)
+![Use these variables in the Email Settings field.](./notification-template-variables-reference-guide/images/03.png)
 
-The following variables are available to populate the Email Settings fields for the senders and addressees:
+The following variables are available in the *Email Settings* section:
 
 | Variable                       | Description                     |
 | :----------------------------- | :------------------------------ |
@@ -25,9 +25,9 @@ The following variables are available to populate the Email Settings fields for 
 
 ## Orders
 
-![Use these variables Orders emails.](./notification-template-variables-reference-guide/images/05.png)
+![Use these variables for displaying order related information in emails.](./notification-template-variables-reference-guide/images/05.png)
 
-The following variables are available for Orders-type email notification templates:
+The following variables are available when creating a notification template with an order type event trigger:
 
 | Variable                          | Description                                             |
 | :-------------------------------- | :------------------------------------------------------ |
@@ -56,9 +56,9 @@ The following variables are available for Orders-type email notification templat
 
 ## Subscription
 
-![Use this variable for Subscriptions.](./notification-template-variables-reference-guide/images/04.png)
+![Use these variables for subscription based event triggers.](./notification-template-variables-reference-guide/images/04.png)
 
-The following variables are available for Subscription-type email notification templates:
+The following variables are available when creating a notification template with the subscription type event trigger:
 
 | Variable          | Description                     |
 | :---------------- | :------------------------------ |

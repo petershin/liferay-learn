@@ -1,4 +1,8 @@
-# API
+---
+toc:
+- ./developer-guide/message-boards-api-basics.md
+---
+# 開発者ガイド
 
 ```{toctree}
 :maxdepth: 2

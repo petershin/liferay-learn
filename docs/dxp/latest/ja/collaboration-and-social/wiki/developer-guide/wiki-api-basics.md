@@ -7,6 +7,7 @@ LiferayのHeadless Deliveryアプリケーションは、[Wiki](../getting-start
 チュートリアルに進む前に、まずクリーンなLiferay Dockerコンテナをセットアップし、提供されたチュートリアルコードを使用できるように準備します。
 
 ### Liferay Dockerコンテナ
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
@@ -40,32 +41,15 @@ javac -classpath .:* *.java
 
 プロジェクトには、依存関係として`com.liferay.headless.delivery.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
-## WikiNodeおよびWikiPage Headless APIの使用
-
-サンプルコードには、次のAPIを呼び出すcURLスクリプトとJavaクラスが含まれています。
-
-| サービス     | HTTPメソッド | HTTPエンドポイント                                      | Javaメソッド                   | 説明                                                                              |
-|:-------- |:-------- |:------------------------------------------------ |:-------------------------- |:------------------------------------------------------------------------------- |
-| WikiNode | `POST`   | `/v1.0/sites/{siteId}/wiki-nodes`                | `postSiteWikiNode`         | API呼び出しで提供された詳細を使用して、指定されたサイトに新しいWikiノードを作成します                                  |
-| WikiNode | `GET`    | `/v1.0/sites/{siteId}/wiki-nodes`                | `getSiteWikiNodesPage`     | 指定されたサイト内のすべてのWikiノードの完全なリストを返します。結果に対して、ページ分割、絞り込み、検索、およびソートをすることができます         |
-| WikiNode | `GET`    | `/v1.0/wiki-nodes/{wikiNodeId}`                  | `getWikiNode`              | 指定されたノードエンティティの詳細を返します                                                          |
-| WikiNode | `PUT`    | `/v1.0/wiki-nodes/{wikiNodeId}`                  | `putWikiNode`              | 指定されたノードの詳細をAPI呼び出しで提供されたものに置き換えます                                              |
-| WikiNode | `DELETE` | `​/v1.0​/wiki-nodes​/{wikiNodeId}`               | `deleteWikiNode`           | 指定されたノードを削除し、操作が成功した場合は204を返します                                                 |
-| WikiPage | `POST`   | `/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages`       | `postWikiNodeWikiPage`     | API呼び出しで提供された詳細を使用して、指定されたノードに新しいWikiページを作成します                                  |
-| WikiPage | `POST`   | `/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages` | `postWikiPageWikiPage`     | API呼び出しで提供された詳細を使用して、指定されたWikiページの新しいWiki子ページを作成します。                            |
-| WikiPage | `GET`    | `/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages`       | `getWikiNodeWikiPagesPage` | 指定されたWikiノードに追加されたすべてのWikiページの完全なリストを返します。結果に対して、ページ分割、絞り込み、検索、およびソートをすることができます |
-| WikiPage | `GET`    | `/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages` | `getWikiPageWikiPagesPage` | 指定されたWikiページに追加されたすべてのWiki子ページの完全なリストを返します。結果に対して、ページ分割、絞り込み、検索、およびソートすることができます |
-| WikiPage | `GET`    | `/v1.0/wiki-pages/{wikiPageId}`                  | `getWikiPage`              | 指定されたWikiページエンティティの詳細を返します                                                      |
-| WikiPage | `PUT`    | `/v1.0/wiki-pages/{wikiPageId}`                  | `putWikiPage`              | 指定されたページの詳細をAPI呼び出しで提供されたものに置き換えます                                              |
-| WikiPage | `DELETE` | `/v1.0/wiki-pages/{wikiPageId}`                  | `deleteWikiPage`           | 指定されたページを削除し、操作が成功した場合は204を返します                                                 |
+提供されるコードには， `WikiNode` と `WikiPage` のサービスのAPIが含まれています． 含まれるすべてのサンプルAPIの一覧は、 [チュートリアル・コード・リファレンス](#tutorial-code-reference) を参照してください。
 
 ```{important}
-WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `headline`フィールドと` encodingFormat`フィールドの両方を定義する必要があります。 `headline`フィールドはページのメインタイトルを設定し、` encodingFormat`フィールドはページのメディアフォーマット（HTML、BBCodeなど）を決定します。
+提供されるコードでは、デモのためにBasic認証を使用しています。 本番環境では、 [OAuth2](../../../headless-delivery/using-oauth2.md) を使用してユーザーを認証する必要があります。
 ```
 
-### WikiNode APIの呼び出し
+## サンプルWikiNodeのAPIを呼び出す
 
-この演習では、cURLコマンドまたはJavaクラスのいずれかを使用してWikiNode APIを呼び出すことができます。 次の出力例はcURLコマンドに対応しており、提供されているJavaクラスの出力とは少し異なります。
+この演習では、cURLコマンドまたはJavaクラスのいずれかを使用して、 `WikiNode` APIを呼び出すことができます。 以下の出力例は、cURLコマンドに対応するもので、提供されたJavaクラスの出力とは若干異なります。
 
 1. `liferay-q8u2`プロジェクトの`curl`または`java`フォルダに移動します。
 
@@ -81,7 +65,7 @@ WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `h
    cd liferay-q8u2/java
    ```
 
-1. サイトIDをパラメーターとして使用して、`WikiNode_POST_ToSite`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定したサイトに新しいWikiノードが作成されます。
+1. `WikiNode_POST_ToSite` を、自分のサイトIDをパラメータとして実行する。 これにより、指定したサイトに新しいWikiノードが作成されます。
 
    **cURLの場合：**
 
@@ -95,7 +79,9 @@ WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `h
    java -classpath .:* -DsiteId={site-id} WikiNode_POST_ToSite
    ```
 
-   ターミナルには、新しく作成されたWikiノードの完全なスキーマが表示されます。 提供されているAPI呼び出しでは、新規ノードの`description`および`name`フィールドのみを定義していますが、以下のGET、PUT、DELETEメソッドで使用するためにノードのIDをコピーする必要があります。
+   ターミナルには、新しく作成されたWikiノードの完全なスキーマが表示されます。 提供される API コールは、新しいノードの `description` と `name` フィールドのみを定義します。
+
+1. 以下のGET、PUT、DELETEメソッドで使用するために、ノードのIDをコピーします。
 
    ```bash
    {
@@ -108,7 +94,7 @@ WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `h
    }
    ```
 
-1. サイトIDをパラメーターとして使用して、`WikiNodes_GET_FromSite`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定したサイト内のすべてのWikiノードのリストが返されます。
+1. `WikiNodes_GET_FromSite` を、そのパラメータにサイトIDを使用して実行します。 これにより、指定したサイト内のすべてのWikiノードのリストが返されます。
 
    **cURLの場合：**
 
@@ -126,7 +112,7 @@ WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `h
    すべてのDXP/ポータルインスタンスには、 `Main`と呼ばれるデフォルトのWikiノードが付属しています。 このノードは、作成したノードとともに上記の出力に表示されます。
    ```
 
-1. WikiのノードIDをパラメーターとして使用して、`WikiNode_PUT_ById`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定されたWikiノードの詳細がAPI呼び出しで提供された詳細に置き換えられます。
+1. `WikiNode_PUT_ById` を，Wiki ノード ID をパラメータに用いて実行します． これにより、指定されたWikiノードの詳細がAPI呼び出しで提供された詳細に置き換えられます。
 
    **cURLの場合：**
 
@@ -151,7 +137,7 @@ WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `h
    }
    ```
 
-1. WikiのノードIDをパラメーターとして使用して、`WikiNode_DELETE_ById`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定したノードが削除されます。
+1. `WikiNode_DELETE_ById` を、同じ Wiki ノード ID をパラメータに用いて実行します。 これにより、指定したノードが削除されます。
 
    **cURLの場合：**
 
@@ -165,7 +151,7 @@ WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `h
    java -classpath .:* -DwikiNodeId={wiki-node-id} WikiNode_DELETE_ById
    ```
 
-1. 以前のWikiのノードIDをパラメーターとして使用して、`WikiNode_GET_ById`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定されたノードが存在する場合はその詳細が返されます。
+1. `WikiNode_GET_ById` を、同じ Wiki ノード ID をパラメータとして実行します。 これにより、指定されたノードが存在する場合はその詳細が返されます。
 
    **cURLの場合：**
 
@@ -188,9 +174,9 @@ WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `h
    }
    ```
 
-### WikiPage APIの呼び出し
+## サンプルWikiページのAPIを呼び出す
 
-cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage APIを呼び出すことができます。 以下の出力例は、cURLコマンドに対応したもので、Javaクラスの出力とは異なります。
+`WikiPage` のAPIを呼び出すには、cURLコマンドかJavaクラスのどちらかを使用します。 以下の出力例は、cURLコマンドに対応するもので、提供されたJavaクラスの出力とは若干異なります。
 
 1. `liferay-q8u2`プロジェクトの`curl`または`java`フォルダに移動します。
 
@@ -206,7 +192,7 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
    cd liferay-q8u2/java
    ```
 
-1. `WikiNode_POST_ToSite`シェルスクリプトまたはJavaクラスを実行して、Wikiページのノードを作成します。
+1. `WikiNode_POST_ToSite` を実行し、Wikiページ用のノードを作成します。
 
    **cURLの場合：**
 
@@ -237,7 +223,7 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
    }
    ```
 
-1. 上記のノードIDをパラメーターとして使用して、`WikiPage_POST_ToNode`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定したノードの新しいWikiページが作成されます。
+1. `WikiPage_POST_ToNode` を上記のノードIDをパラメータとして実行します． これにより、指定したノードの新しいWikiページが作成されます。
 
    **cURLの場合：**
 
@@ -267,7 +253,7 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
    }
    ```
 
-1. 上記のWikiページIDをパラメーターとして使用して、`WikiPage_POST_ToParent`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定したWikiページの子ページが作成されます。
+1. `WikiPage_POST_ToParent` を、上記のWikiページIDをパラメータとして実行します。 これにより、指定したWikiページの子ページが作成されます。
 
    **cURLの場合：**
 
@@ -295,7 +281,7 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
    }
    ```
 
-1. WikiのノードIDをパラメーターとして使用して、`WikiPages_GET_FromNode`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定したノードに追加されたすべてのWikiページのリストが返されます。これには、新しく作成された両方のWikiページが含まれます。
+1. `WikiPages_GET_FromNode` を、WikiノードIDをパラメータとして実行します。 これにより、指定したノードに追加されたすべてのWikiページのリストが返されます。これには、新しく作成された両方のWikiページが含まれます。
 
    **cURLの場合：**
 
@@ -309,7 +295,7 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
    java -classpath .:* -DwikiNodeId={wiki-node-id} WikiPages_GET_FromNode
    ```
 
-1. Wikiの親ページIDをパラメーターとして使用して、`WikiPages_GET_FromParent`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定したWikiページの既存の子ページが返されます。
+1. `WikiPages_GET_FromParent` を、Wiki親ページIDをパラメータに用いて実行します。 これにより、指定したWikiページの既存の子ページが返されます。
 
    **cURLの場合：**
 
@@ -323,7 +309,7 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
    java -classpath .:* -DparentWikiPageId={wiki-page-id} WikiPages_GET_FromParent
    ```
 
-1. 上記のWikiページIDのいずれかをパラメーターとして使用して、`WikiPage_PUT_ById`シェルスクリプトまたはJavaクラスを実行します。 これにより、元のページのコンテンツがAPI呼び出しで定義されたコンテンツに置き換えられます。
+1. `WikiPage_PUT_ById` を、上記のいずれかのWikiページIDをパラメータに用いて実行します。 これにより、元のページのコンテンツがAPI呼び出しで定義されたコンテンツに置き換えられます。
 
    **cURLの場合：**
 
@@ -339,7 +325,7 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
 
    ```bash
    {
-     "content" : "Bar",
+     "content" :"バー",
      ...
      "encodingFormat" : "text/x-wiki",
      ...
@@ -349,7 +335,7 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
    }
    ```
 
-1. 目的のWikiページIDをパラメーターとして使用して、`WikiPage_DELETE_ById`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定したWikiページが削除されます。
+1. `WikiPage_DELETE_ById` を、希望するWikiページIDをパラメータに用いて実行します。 これにより、指定したWikiページが削除されます。
 
    **cURLの場合：**
 
@@ -363,7 +349,7 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
    java -classpath .:* -DwikiPageId={wiki-page-id} WikiPage_DELETE_ById
    ```
 
-1. 削除されたWikiページのIDをパラメーターとして使用して、`WikiPage_GET_ById`シェルスクリプトまたはJavaクラスを実行します。 これにより、指定されたページが存在する場合はその詳細が返されます。
+1. 削除された Wiki ページの ID をパラメータとして `WikiPage_GET_ById` を実行する。 これにより、指定されたページが存在する場合はその詳細が返されます。
 
    **cURLの場合：**
 
@@ -386,11 +372,39 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
    }
    ```
 
+## チュートリアルコード参照
+
+提供されるサンプルコードには、以下の `WikiNode` および `WikiPage` API 用の cURL スクリプトと Java クラスが含まれています。
+
+### WikiNode APIのサンプル
+
+| サービス     | HTTP メソッド | HTTPエンドポイント                       | 説明                                                                      |
+|:-------- |:--------- |:--------------------------------- |:----------------------------------------------------------------------- |
+| WikiNode | `POST`    | `/v1.0/sites/[siteId]/wiki-nodes` | API呼び出しで提供された詳細を使用して、指定されたサイトに新しいWikiノードを作成します                          |
+| WikiNode | `GET`     | `/v1.0/sites/[siteId]/wiki-nodes` | 指定されたサイト内のすべてのWikiノードの完全なリストを返します。結果に対して、ページ分割、絞り込み、検索、およびソートをすることができます |
+| WikiNode | `GET`     | `/v1.0/wiki-nodes/[wikiNodeId]`   | 指定されたノードエンティティの詳細を返します                                                  |
+| WikiNode | `PUT`     | `/v1.0/wiki-nodes/[wikiNodeId]`   | 指定されたノードの詳細をAPI呼び出しで提供されたものに置き換えます                                      |
+| WikiNode | `DELETE`  | `/v1.0/wiki-nodes/[wikiNodeId]`   | 指定されたノードを削除し、操作が成功した場合は204を返します                                         |
+
+### WikiPage API のサンプル
+
+| サービス     | HTTP メソッド | HTTPエンドポイント                                      | 説明                                                                              |
+|:-------- |:--------- |:------------------------------------------------ |:------------------------------------------------------------------------------- |
+| WikiPage | `POST`    | `/v1.0/wiki-nodes/[wikiNodeId]/wiki-pages`       | API呼び出しで提供された詳細を使用して、指定されたノードに新しいWikiページを作成します                                  |
+| WikiPage | `POST`    | `/v1.0/wiki-pages/[parentWikiPageId]/wiki-pages` | API呼び出しで提供された詳細を使用して、指定されたWikiページの新しいWiki子ページを作成します。                            |
+| WikiPage | `GET`     | `/v1.0/wiki-nodes/[wikiNodeId]/wiki-pages`       | 指定されたWikiノードに追加されたすべてのWikiページの完全なリストを返します。結果に対して、ページ分割、絞り込み、検索、およびソートをすることができます |
+| WikiPage | `GET`     | `/v1.0/wiki-pages/[parentWikiPageId]/wiki-pages` | 指定されたWikiページに追加されたすべてのWiki子ページの完全なリストを返します。結果に対して、ページ分割、絞り込み、検索、およびソートすることができます |
+| WikiPage | `GET`     | `/v1.0/wiki-pages/[wikiPageId]`                  | 指定されたWikiページエンティティの詳細を返します                                                      |
+| WikiPage | `PUT`     | `/v1.0/wiki-pages/[wikiPageId]`                  | 指定されたページの詳細をAPI呼び出しで提供されたものに置き換えます                                              |
+| WikiPage | `DELETE`  | `/v1.0/wiki-pages/[wikiPageId]`                  | 指定されたページを削除し、操作が成功した場合は204を返します                                                 |
+
+```{important}
+WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `headline`フィールドと` encodingFormat`フィールドの両方を定義する必要があります。 `headline`フィールドはページのメインタイトルを設定し、` encodingFormat`フィールドはページのメディアフォーマット（HTML、BBCodeなど）を決定します。
+```
+
 ## サンプルのcURLスクリプトの検証
 
 以下は、チュートリアルのcURLコマンドの代表的な例です。
-
-### `WikiNode_POST_ToSite.sh`
 
 ```{literalinclude} ./wiki-api-basics/resources/liferay-q8u2.zip/curl/WikiNode_POST_ToSite.sh
    :language: bash
@@ -415,7 +429,6 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
 ### `WikiNode_POST_ToSite.java`
 
 ```{literalinclude} ./wiki-api-basics/resources/liferay-q8u2.zip/java/WikiNode_POST_ToSite.java
-   :dedent: 1
    :language: java
    :lines: 4-28
 ```
@@ -423,7 +436,6 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
 ### `WikiPage_POST_ToNode.java`
 
 ```{literalinclude} ./wiki-api-basics/resources/liferay-q8u2.zip/java/WikiPage_POST_ToNode.java
-   :dedent: 1
    :language: java
    :lines: 4-29
 ```
@@ -431,7 +443,6 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
 ### `WikiPages_GET_FromNode.java`
 
 ```{literalinclude} ./wiki-api-basics/resources/liferay-q8u2.zip/java/WikiPages_GET_FromNode.java
-   :dedent: 1
    :language: java
    :lines: 6-25
 ```
@@ -440,3 +451,6 @@ cURLコマンドまたはJavaクラスのいずれかを使用して、WikiPage 
 
 * [ヘッドレスプラットフォームとしてのLiferayの使用](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
 * [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+
+### `WikiNode_POST_ToSite.sh`
+

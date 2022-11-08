@@ -2,7 +2,6 @@
 toc:
 - ./message-boards/user-guide.md
 - ./message-boards/developer-guide.md
-- ./message-boards/apis.md
 ---
 # 掲示板
 

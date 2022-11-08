@@ -12,7 +12,7 @@ toc:
 - ./wiki/wiki-widget-ui-reference.md
 - ./wiki/developer-guide.md
 ---
-# Wiki
+# Wikiノード
 
 ```{toctree}
 ./wiki/getting-started-with-wikis.md

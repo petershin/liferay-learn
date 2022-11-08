@@ -46,11 +46,12 @@ Follow these steps to access a fragment's *General* menu:
 | Field (*for Mapped URL*) | Select the URL field you want to map to the Container. Selecting a valid field automatically populates the *URL* field. |
 | URL (*for Mapped URL*) | This field is auto-populated with the selected *Field* URL. |
 | Open in New Tab | Determine whether the link is opened in a new tab. |
-| Content Display | Determine whether the Container's content is displayed in a *Block*, *Flex Row*, or *Flex Column*; the flex options have additional configuration options. |
-| Flex Wrap (*for Flex Row or Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Configure wrapping for flex rows and columns: No Wrap, Wrap, or Wrap Reverse. |
-| Align Items (*for Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the column are aligned: Start, Center, End, Stretch, or Baseline.  |
-| Justify Content (*for Flex Row*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the row are justified: Start, Center, End, Between, or Around. |
-| Container Width | Determine whether the Container uses a Fluid or Fixed Width. |
+| Content Display | Determine whether the Container's content is displayed in a *Block*, *Flex Row*, or *Flex Column*; the flex options have additional configurations. |
+| Flex Wrap (*for Flex Row or Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Configure wrapping for flex rows and columns: *No Wrap*, *Wrap*, or *Wrap Reverse*. |
+| Align Items (*for Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the column are aligned: *Start*, *Center*, *End*, *Stretch*, or *Baseline*.  |
+| Justify Content (*for Flex Row*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the row are justified: *Start*, *Center*, *End*, *Between*, or *Around*. |
+| Container Width | Determine whether the Container uses a *Fluid* or *Fixed Width*. |
+
 
 ## Grid Options
 
@@ -209,6 +210,40 @@ This fragment is only displayed when a filter is applied to the target collectio
 | Display All Collection Items | Determine whether to display all items in the selected collection or collection provider. |
 | Maximum Number of Items | Set the maximum number of items to display from the selected collection or collection provider. |
 | Maximum Number of Items per Page | Determine the number of items included in each fragment per page. This value cannot exceed 200. |
+
+## Form Fragment Options
+
+{bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
+
+Form fragments include the following unique configuration options. To access them, you must first map the fragment to an object field.
+
+### Form Container
+
+| Field | Description |
+| :--- | :--- |
+| Content Type | Select a custom object. This maps the form container and its fragments to the selected object. You can only map a form container to one object at a time. |
+| Success Message | Determine whether the form submission success message is *embedded* in the current page or redirects users to a *Liferay page* or *external URL*. |
+| Success Text (*for Embedded*) | Enter a localizable success text for the embedded success message. |
+| Preview Success State (*for Embedded*) | Toggle the form container state to preview the embedded success message. |
+| Content Display | Determine whether the Container's content is displayed in a *Block*, *Flex Row*, or *Flex Column*; the flex options have additional configurations. |
+| Flex Wrap (*for Flex Row or Flex Column*) | Configure wrapping for flex rows and columns: *No Wrap*, *Wrap*, or *Wrap Reverse*. |
+| Align Items (*for Flex Column*) | Determine how elements in the column are aligned: *Start*, *Center*, *End*, *Stretch*, or *Baseline*.  |
+| Justify Content (*for Flex Row*) | Determine how elements in the row are justified: *Start*, *Center*, *End*, *Between*, or *Around*. |
+| Container Width | Determine whether the Container uses a *Fluid* or *Fixed Width*. |
+
+### Other Fragment Components
+
+| Field | Description |
+| :--- | :--- |
+| Field | Map the fragment to an object field. |
+| Mark as Required | Mark the fragment field as required for form submission. Mandatory object fields are marked as required automatically. |
+| Show Label | Display or hide the fragment's label. |
+| Label | Set a localizable label for the fragment. By default, each fragment uses its object field's label. |
+| Show Help Text | Display or hide the fragment's help text. |
+| Help Text | Set a localizable help text for the fragment. |
+| Placeholder | For the Numeric Input and Text Input fragments, enter an example value.  |
+| Button Text | For the File Upload fragment, set a localizable button text for attaching files. |
+| Show Supported File Info | For the File Upload fragment, display or hide the list of supported extensions and file size limit. |
 
 ## Additional Information
 

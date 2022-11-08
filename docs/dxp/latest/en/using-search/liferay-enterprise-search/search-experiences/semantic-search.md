@@ -2,6 +2,15 @@
 {bdg-primary}`Subscription`
 {bdg-secondary}`7.4 U50+`
 
+<!-- Questions and comments:
+
+1. Are the vector representations (the text embeddings) stored in the transformer service? I don't see anything in the returned documents, and I saw txtai munching a lot of data as I added Liferay Learn articles via the ingester, so I am guessing the answer is "yes". So I cannot really say that the transformed text embeddings are indexed with the Liferay documents. Might want to get a good diagram prepared for this.
+2. I hate calling these things text embeddings, as a noun. They're the vector representations of the text as produced by the text embedding transformation technique (I think; obviously I could be very wrong). But, if that's the dumb jargon someone came up with and everyone uses, I guess we'll go with it.
+3. Our descriptions don't include any indication of which document fields are processed by the transformer. Are we only talking about content, content_xx_XX, or is it some kind of amalgamation of all the text fields in a document? Something else?
+-->
+
+
+<!-- The Intro still needs lots of work--skip it for now and start with Enabling Semantic Search -->
 Defines both semantic and lexical search https://en.wikipedia.org/wiki/Semantic_search
 
 Ideally, searching for "tech news" returns a document with a field containing the text "During economic downturns Linux distros gain on traditionally dominant operating system vendors." No amount of processing in a traditional search can provide this result. For this you need semantic search.
@@ -31,72 +40,130 @@ You must re-index if ...
 
 ### Setting up a Sentence Transformer Provider
 
-A Sentence Transformer has two jobs:
+A sentence transformer has two jobs:
+
 1. create a text embedding representation of the index document's fields (which are stored in the index).
 1. at search time, create a text embedding representation of the search phrase typed into the search bar.
 
-On top of that, you need a model to perform a similarity search of the search phrase embeddings and the document embeddings. These are housed in Hugging Face (even if you use txtai as the transformer).
+On top of that, you need a model to perform a [similarity search](https://www.elastic.co/blog/text-similarity-search-with-vectors-in-elasticsearch) of the search phrase embeddings and the document embeddings. Models are housed in Hugging Face even if you use txtai as the transformer.
 
-You need a running sentence transformer provider. Choose from Hugging Face or txtai:
+Choose from one of two sentence transformer providers that can be configured to work with Liferay's search index documents: [txtai](https://neuml.github.io/txtai/) and [Hugging Face](https://huggingface.co/).
 
 #### Starting a txtai Instance
 
 <!-- Say something about this setup is intended for testing, point to the txtai docs for more information? -->
 
-For setting up textai to access its APIs, follow the docs to setup a txtai docker container at https://neuml.github.io/txtai/cloud/ See section "API". In Linux
+Set up txtai to access its APIs. To start a txtai docker container, see the [txtai documentation](https://neuml.github.io/txtai/cloud/) or follow these basic steps for Linux:
 
-Create a directory for txtai and go there
-wget https://raw.githubusercontent.com/neuml/txtai/master/docker/api/Dockerfile
-curl https://raw.githubusercontent.com/neuml/txtai/master/docker/api/Dockerfile -O
-Create a minimal config.yml:
+1. Create a `txtai` directory and `cd` into it.
 
-```yaml
-path: /tmp/index
+1. From the `txtai` folder, download the Dockerfile with
 
-writable: False
+   ```sh
+   curl https://raw.githubusercontent.com/neuml/txtai/master/docker/api/Dockerfile -O
+   ```
 
-embeddings:
-     path: sentence-transformers/nli-mpnet-base-v2
-```
+1. Create a `config.yml` file in the `txtai` folder, and give it these minimal contents:
 
+   ```yaml
+   path: /tmp/index
 
-From the folder, run
+   writable: False
 
-```
-docker build -t txtai-api .
-```
+   embeddings:
+        path: sentence-transformers/nli-mpnet-base-v2
+   ```
 
-Then start a container:
+1. From the txtai folder, run
 
-```
-docker run -p 8000:8000 --rm -it txtai-api
-```
+   ```sh
+   docker build -t txtai-api .
+   ```
+
+1. Start the container:
+
+   ```sh
+   docker run -p 8000:8000 --rm -it txtai-api
+   ```
  
-Depending on the size of the models. It will take a few moment for the service to initialize. 
+   Depending on the size of the models, it can take several minutes for the service to initialize. 
 
-After that, go to Control Panel / Search Experiences / Sentence Transformer and select txtai as service provider
+1. Once the txtai server is running, go to Liferay's Control Panel &rarr; Search Experiences &rarr; Semantic Search and configure it:
 
+   - Set Sentence Transformer Enabled to true.
+   - Select _txtai_ as the Sentence Transformer Provider.
+   - If you followed the above test setup, leave the default value in txtai Host Address.
+   - Leave the default value (768) in Embedding Vector Dimensions
+
+<!-- Needed: a reference section for all the settings (Hugging Face specific ones too)-->
 
 
 #### Provisioning a Hugging Face Instance
 
-To be able to use Hugging Face as sentence transformer, registration to Hugging Face is required in https://huggingface.co/join
+To use Hugging Face as the sentence transformer provider, create a [Hugging Face account](https://huggingface.co/join).
 
-Create a Hugging Face account
-Go to your account settings and find "Access Tokens"
-As with txtai, go to Sentence Transformer settings, select Hugging Face and enter the access token
-As a model, use one of the models on the list https://huggingface.co/models?pipeline_tag=feature-extraction . Model name is the title of the model.
-1. 
+Once you have an account,
 
+1. Go to your account settings and find _Access Tokens_. Copy your token.
+1. Go to Liferay's Control Panel &rarr; Search Experiences &rarr; Semantic Search and configure its sentence transformer settings, selecting Hugging Face and entering the access token you copied.
+1. Choose one of the models from the list at <https://huggingface.co/models?pipeline_tag=feature-extraction>. 
+1. Enter the model name as the title of the model.
 
 Liferay DXP supports txtai (self-hosted / self-managed) and Hugging Face's Inference API as sentence transformer providers. Administrators can enable and configure these services through the System/ Instance Settings.
 
-### Search Experiences Elements for Semantic Search
+### Creating a Search Blueprint for Semantic Search
+<!-- A user searching for this might be better served with a title like "Re-Scoring the Query with Text Embeddings". -->
 
-To build a semantic search experience leveraging sentence embeddings, Liferay DXP ships with a new out-of-the-box element called Rescore by Text Embedding that can be used in Search Blueprints. Thanks to this element and the visual query builder, users can configure the different aspects of the search query and test how it performs easily to build the right solution.
+To build a semantic search experience leveraging the sentence embeddings created by the sentence transformer provider you configured, Liferay includes an out-of-the-box element (in 7.4 Update/GA 50+) called Rescore by Text Embedding that re-scores the results of the original query using the text embedding value. Use the element to build a [search blueprint](./creating-and-managing-search-blueprints.md). With this element and the visual query builder in Blueprints, you can configure and test the search query to build the right semantic search solution.
 
-There's an ootb element rescore by text embedding, ping petteri: it rescores x results using a special function which uses the vector field. produce initial results by keyword, rescore them using the vector representations. the function can be chosen, dotProduct or cosin
+<!-- For how it works: There's an ootb element rescore by text embedding, ping petteri: it rescores x results using a special function which uses the vector field. produce initial results by keyword, rescore them using the vector representations. the function can be chosen, dotProduct or cosin -->
 
+```{important}
+The out-of-the-box Rescore by Text Embedding element (available in 7.4 Update/GA 50+), when configured to work with a sentence transformer, can produce more semantically targeted search results for some data sets. However, many semantic search solutions will require manual tweaking and perhaps new elements to achieve a robust semantic search solution.
+```
+
+![The Rescore by Text Embedding element brings basic semantic search to Liferay.](./semantic-search/images/01.png)
+
+This element is effective only if the sentence transformer is enabled and configured to operate on specific content types and languages. See the Search Experiences entry in System Settings to configure transformation.
+
+## Configuring the Rescore by Text Embedding Element
+
+Several configurable options are provided in the Rescore by Text Embedding element: 
+
+**Boost:** Defaulting to 10, this setting determines by how much to boost re-scored results.
+
+**Vector Field Function:** Choose from the Cosine Similarity or Dot Product functions. Defaulting to use the Cosine Similarity function, the selected function measures similarity between the searched keywords and the target document text embeddings. Check the model's documentation to determine which function is most suitable. 
+
+**Min Score:** Defaulting to 1, this setting's integer (or 0) sets the minimum score a returned document must have to be included in the re-score query. 
+
+**Query Weight:** Defaulting to 0.01, this setting controls the weight of the original query in the final score calculation.
+
+**Rescore Query Weight:** Defaulting to 10, this sets the weight of the re-score query in the final score calculation.
+
+**Score Mode:** Defaulting to Average, this setting dictates the strategy to use when combining the original query scores with the results of the re-score. Choose from Average, Max, Min, Multiply, or Total.
+
+**Rescorer Window Size:** Defaulting to 50, you can choose the number of results to re-score at a time. Choosing a very high window size can impact performance negatively .
+
+## Configuring the Semantic Search Indexing Settings
+
+Additional configuration options are available for Semantic Search. Visit Control Panel &rarr; System Settings &rarr; Semantic Search, and find the Indexing Settings section.
+
+**Max Character Count:** 500 Set the maximum number of characters to be sent to the sentence transformer. By default up to 500 characters are sent to be transformed into their vector representations.
+
+**Text Truncation Strategy:** Beginning Select from which portion of the text the sample for the sentence transformer should be taken from. This setting applies only if the text is longer than the maximum character count. Choose from Beginning (the default), Middle, or End.
+
+Select whether to extract the pre-transformation sample from the Beginning (default), Middle, or End of the text. This setting applies only if the text is longer than the maximum character count.
+
+**Asset Entry Class Names:** Select the asset types to be transformed. By default all supported asset types are processed, including Blogs Entry, Knowledge Base Article, Message Boards Message, Web Content Article, and Wiki Page. 
+
+**Language IDs:** Select the languages and localizations to be transformed. By default all listed languages are selected: Arabic (Saudi Arabia), Catalan (Spain), Chinese (China), Dutch (Netherlands), English (United States), Finnish (Finland), French (France), German (Germany), Hungarian (Hungary), Japanese (Japan), Portuguese (Brazil), Spanish (Spain), and Swedish (Sweden). Select multiple languages from the list using _Ctrl + Click_.
+
+**Cache Timeout:** Set the cache timeout in milliseconds for transformed search keywords. By default 604800 is used (about ten minutes).
+
+<!-- TODO: Quickly follow this documentation with a more robust example article, configuring the ootb element differently and including Petteri's more complicated custom element? -->
+
+
+<!-- COMMENTS BELOW, DON'TBOTHER READING
 depending on data set and the model, can improve the results, but...
 
 there's another element Search with Sentence Embedding taht may be in producst or may just doc it (really complicated, more on the true semantic side instead of a rescore
@@ -126,3 +193,4 @@ send a sentence get back a vector/ 500 max char count by default, beginning of t
 
 
 Use txtai for testing
+-->

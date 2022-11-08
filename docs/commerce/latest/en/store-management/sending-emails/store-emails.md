@@ -1,6 +1,6 @@
 # Store Emails
 
-You can configure Liferay to send email notifications for different events that happen in your store. To do this, you must use a notification template that is customizable and defines the content of an email.  When sending emails, you can use wildcards that are available out-of-the-box (OOTB) or specify an email address.
+You can configure Liferay to send email notifications for different events that happen in your store. To do this, you must use a notification template that is customizable and defines the content of an email.  When sending emails, you can use wildcards that are available out-of-the-box (OOTB) or enter email addresses.
 
 ```{note}
 To use notifications in Commerce, you must first configure the mail settings for Liferay DXP. See [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html) for more information.
@@ -10,11 +10,11 @@ To use notifications in Commerce, you must first configure the mail settings for
 
 A notification template defines the sender and receiver, the event trigger, and the contents of the email notification. After configuring Liferay's mail settings, navigate to *Control Panel* &rarr; *Commerce* &rarr; *Channels*. Select the *Notifications Template* tab and click the *Add* button to create a notification template. Email notifications are configured per [channel](../../store-management/channels/introduction-to-channels.md).
 
-![The Notification Templates available out-of-the-box.](./store-emails/images/02.png)
+![You can create different notification templates for different event triggers.](./store-emails/images/02.png)
 
 ### Event Triggers
 
-There are ten events that can trigger email notifications. You can create notification templates to standardize email notifications using one of the following event triggers. Note that one notification template can only be used for one event.
+There are ten events that can trigger email notifications. Notification templates standardize email notifications using one of the following event triggers. Note that one notification template can only be used for one event.
 
 | Notification Type       | Event                                                               |
 | :---------------------- | :------------------------------------------------------------------ |
@@ -29,13 +29,13 @@ There are ten events that can trigger email notifications. You can create notifi
 | Subscription Suspended  | Suspension of a subscription pending review or action by the store. |
 | Subscription Canceled   | Cancellation of a subscription                                      |
 
-![Configuring a Notification Templates for a Channel.](./store-emails/images/01.png)
+![Configuring a notification templates for a channel.](./store-emails/images/01.png)
 
 ### Customizing an Email Notification Template
 
-You can customize the Notification Templates with your own text and wild card values that get substituted for key values in the _Email Settings_ and _Body_ fields. Some of the wildcards include a customer's name, the order ID, shipping and billing addresses, and a list of items in the order.
+After choosing the event trigger, you can customize the notification template with your own text and wild card values that get substituted for key values in the *Email Settings* and *Body* fields. Some of the wildcards include a customer's name, the order ID, shipping and billing addresses, and a list of items in the order.
 
-For example, the _Email Body_ field can contain:
+For example, the *Email Body* field can contain:
 
 ```
 Dear [%ORDER_CREATOR%],
@@ -57,7 +57,7 @@ By default, the system checks the Notification Queue at 15-minute intervals for 
 
 ## Viewing Email Notifications of an Order
 
-Email notifications related to an order are tracked. To view them, open the Global Menu and navigate to *Control Panel* &rarr; *Commerce* &rarr; *Orders*. Select an order and click the *Emails* tab. See [Orders Information](../../order-management/orders/order-information.md) to learn more.
+Email notifications related to an order are tracked. To view them, open the Global Menu and navigate to *Control Panel* &rarr; *Commerce* &rarr; *Orders*. Select an order and then click the *Emails* tab. See [Orders Information](../../order-management/orders/order-information.md) to learn more.
 
 ![You can view the triggered notification under the Emails tab of an Order.](./store-emails/images/04.png)
 

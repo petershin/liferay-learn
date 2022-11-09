@@ -6,23 +6,23 @@
 
 You can use Liferay's connector to Salesforce to import data from Salesforce to Liferay DXP. It uses Talend job designs and Liferay's Job Scheduler under the hood.
 
-You can [download]() the Salesforce Connector to a Liferay instance as an `.lpkg` file. This file contains multiple Talend jobs that map data fields in Liferay to data fields in Salesforce. Once deployed, Job Scheduler tasks are automatically created for each Talend job. You can then configure and run them manually via the Job Scheduler UI, or schedule to run them at specific time intervals.
+You can [download]() the Salesforce Connector to a Liferay instance as an `.lpkg` file. This file contains multiple Talend jobs that map data fields in Liferay to data fields in Salesforce. Once deployed, Job Scheduler tasks are automatically created for each Talend job. You can then configure and run them manually via the job scheduler UI, or schedule to run them at specific time intervals.
 
 ## Supported Entities
 
 The following chart lists supported Salesforce entities with their Liferay counterparts. Currently, you can only import Salesforce data to Liferay.
 
-| Salesforce       | Liferay     | From Salesforce to Liferay |
-| :--------------- | :---------- | :------------------------- |
-| Account          | Account     | &#10004;                   |
-| Account Address  | Account     | &#10004;                   |
-| Account Contact  | User        | &#10004;                   |
-| Price Book       | Price List  | &#10004;                   |
-| Price Book Entry | Price Entry | &#10004;                   |
-| Product          | Product     | &#10004;                   |
-| Order            | Order       | &#10004;                   |
-| OrderItem        | Order Item  | &#10004;                   |
-| OrderNote        | Order Note  | &#10004;                   |
+| Salesforce       | Liferay     |
+| :--------------- | :---------- |
+| Account          | Account     |
+| Account Address  | Account     |
+| Account Contact  | User        |
+| Price Book       | Price List  |
+| Price Book Entry | Price Entry |
+| Product          | Product     |
+| Order            | Order       |
+| OrderItem        | Order Item  |
+| OrderNote        | Order Note  |
 
 ```{note}
 There is no equivalent entity for Liferay's product catalogs in Salesforce. When importing Salesforce products to Liferay, you must have a catalog with `externalReferenceCode` as `SALESFORCE`. If it does not exist, Liferay automatically creates this during the `Products` task execution. This catalog is then used to store the imported products.
@@ -55,7 +55,7 @@ Follow these steps to deploy the Salesforce connector to a Liferay DXP instance:
 
 ## Configuring the Job Scheduler Tasks
 
-When created, the settings editor for each Talend Dispatch Task is automatically populated with default context parameters. These parameters can be used to provide necessary credentials and to modify each task's behavior in runtime.
+When created, the settings editor for each Talend job scheduler task is automatically populated with default context parameters. These parameters can be used to provide necessary credentials and to modify each task's behavior in runtime.
 
 ```{warning}
 Be careful when removing parameters from the settings editor. If you leave a key with a blank value, it will disappear when the settings are saved. If the keys and their values are lost, they cannot be restored, and you'll have to recreate the Talend Dispatch Task.
@@ -127,4 +127,4 @@ Once configured, you can run each task manually by clicking *Run Now*, or schedu
 Running these Talend Dispatch Tasks can be resource intensive and degrade platform performance. To reduce performance impact, avoid running them during peak use hours.
 ```
 
-## Additional Information -->
+## Additional Information

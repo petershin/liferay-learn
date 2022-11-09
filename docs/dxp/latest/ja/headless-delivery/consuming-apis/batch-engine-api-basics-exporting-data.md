@@ -144,13 +144,11 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                     | 説明                                                                                                                                                                                                     |
-|:------------------------------------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `ExportTaskResource.Builder builder = ...` | </code> `ExportTaskResource サービスインスタンスを生成するための Builder を取得する。` `</td>
-</tr>
-<tr>
-  <td align="left"><code>ExportTaskResource exportTaskResource = builder.authentication(...).build();` | 基本認証を指定し、 `ExportTaskResource` サービスインスタンスを生成します。 |
-| `exportTaskResource.postExportTask(...);`  | `exportTaskResource.postExportTask` メソッドを呼び出し、データをpostに渡します。                                                                                                                                           |
+| 行（省略） | 説明
+| :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
+| `ExportTaskResource.Builder builder = ...` | `ExportTaskResource` サービスインスタンスを生成するための `Builder` を取得します。             |
+| `ExportTaskResource exportTaskResource = builder.authentication(...).build();` | 基本認証を指定し、`ExportTaskResource` サービスインスタンスを生成します。|
+| `exportTaskResource.postExportTask(...);` | `exportTaskResource.postExportTask` メソッドを呼び出して、データをpostに渡します。    |
 
 プロジェクトには、依存関係として`com.liferay.headless.batch.engine.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 

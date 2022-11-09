@@ -344,57 +344,57 @@ Clayマークアップを使用している場合は、最新の [Clayコンポ�
 
 ## Log4j XML定義ファイルからspi.idプロパティを削除
 - **日付：** 2021年1月19日
-- **JIRAチケット：** [LPS-125998](https://issues.liferay.com/browse/LPS-125998)
+- **JIRAのチケットです。** [LPS-125998](https://issues.liferay.com/browse/LPS-125998)
 
-### 変更点
+### 何が変わったのでしょうか？
 
-Log4j XML定義ファイルの`spi.id`プロパティが削除されました。
+Log4j XML 定義ファイル内の `spi.id` プロパティは削除されました。
 
-### 影響を受ける人
+### 誰が影響を受けるのか？
 
-これは、カスタムのLog4j XML定義ファイルで`@spi.id@`を使用している場合に影響します。
+これは、そのカスタム Log4j XML 定義ファイルで `@spi.id@` を使用している場合に影響します。
 
-### コードの更新方法
+### どのようにコードを更新すればよいですか？
 
-Log4j XML定義ファイルから`@spi.id@`を削除します。
+`@spi.id@` を Log4j XML 定義ファイルから削除してください。
 
-### 変更が行われた理由
+### なぜ、このような変更を行ったのでしょうか？
 
-SPIが [LPS-110758](https://issues.liferay.com/browse/LPS-110758) によって削除されました。
-
----------------------------------------
-
-## frontend-taglib-clayタグから廃止予定の属性を削除
-- **日付：** 2021年1月26日
-- **JIRAチケット：** [LPS-125256](https://issues.liferay.com/browse/LPS-125256)
-
-### 変更点
-
-廃止予定の属性は`frontend-taglib-clay` TagLibから削除されました。
-
-### 影響を受ける人
-
-これは、`<clay:*>`タグで廃止予定の属性を使用している場合に影響します。
-
-### 変更が行われた理由
-
-`frontend-taglib-clay`モジュールは、削除された属性をサポートしていない [`Clay v3`](https://github.com/liferay/clay) のコンポーネントを使用するようになりました。
+SPIは、 [LPS-110758](https://issues.liferay.com/browse/LPS-110758) によって削除されました。
 
 ---------------------------------------
 
-## HTMLタグのブール属性の処理を変更
-- **日付：** 2021年2月18日
-- **JIRAチケット：** [LPS-127832](https://issues.liferay.com/browse/LPS-127832)
+## frontend-taglib-clayタグから非推奨の属性を削除しました。
+- **日付：** 2021-Jan-26
+- **JIRAのチケットです。** [LPS-125256](https://issues.liferay.com/browse/LPS-125256)
 
-### 変更点
+### 何が変わったのでしょうか？
 
-ブール型のHTML属性は、`true`の値が渡された場合にのみレンダリングされます。  このような属性の値は、それらの正規名になります。
+非推奨の属性は `frontend-taglib-clay` TagLib から削除されました。
 
-以前は、`disabled`属性の`false`などの値は、`disabled="false"`としてDOMにレンダリングされていました。現在、属性は省略されています。 同様に、`disabled`属性の`true`値は、以前は`disabled="true"`としてDOMにレンダリングされていました。 現在は、`disabled="disabled"`としてレンダリングされています。
+### 誰が影響を受けるのか？
 
-### 影響を受ける人
+`<clay:*>` タグで非推奨の属性を使用している場合に影響があります。
 
-これは、次のブール属性をタグライブラリに渡す場合に影響します。
+### なぜ、このような変更を行ったのでしょうか？
+
+`frontend-taglib-clay` モジュールは [`Clay v3`](https://github.com/liferay/clay) のコンポーネントを使用しており、削除された属性はサポートされていません。
+
+---------------------------------------
+
+## HTMLタグのBoolean属性の取り扱いを変更しました。
+- **日付：** 2021-Feb-18
+- **JIRAのチケットです。** [LPS-127832](https://issues.liferay.com/browse/LPS-127832)
+
+### 何が変わったのか？
+
+Boolean HTML属性は、 `trueの値が渡された場合のみレンダリングされます`。 このような属性の値は、その標準的な名前になります。
+
+以前は、 `disabled` 属性に対して `false` のような値を指定すると、 `disabled="false"`として DOM にレンダリングされていましたが、現在はその属性が省略されています。 同様に、 `true` value for a `disabled` attribute は、以前は `disabled="true"`として DOM にレンダリングされていましたが、現在は `disabled="disabled"`としてレンダリングされています。
+
+### 誰が影響を受けるのか？
+
+これは、タグライブラリに次のようなブール値属性を渡している場合に影響します。
 
 - `"allowfullscreen"`
 - `"allowpaymentrequest"`
@@ -422,116 +422,121 @@ SPIが [LPS-110758](https://issues.liferay.com/browse/LPS-110758) によって�
 - `"selected"`
 - `"truespeed"`
 
-### コードの更新方法
+### どのようにコードを更新すればよいですか？
 
-DOMに存在させたいブール属性に`true`値を渡すようにしてください。 `true`値（例：`[disabled="true"]`）をターゲットとするCSSセレクターを更新して、属性（例：`[disabled]`）またはその正規名（例：`[disabled="disabled"]`）の存在をターゲットにします。
+DOM に表示させたい boolean 属性には、必ず `true` の値を渡してください。 `true` の値を対象とする CSS セレクタ（例： `[disabled="true"]`）を、属性の存在（例： `[disabled]`）またはその正規名（例： `[disabled="disabled"]`）を対象とするように更新しました。
 
-### 変更が行われた理由
+### なぜ、このような変更を行ったのでしょうか？
 
-この変更は、 [HTML規格](https://html.spec.whatwg.org/#boolean-attribute) への準拠を強化するために行われました。この規格には、「要素にブール属性が存在する場合はtrueの値を表し、属性が存在しない場合はfalseの値を表す。 属性が存在する場合、その値は 空の文字列か、属性の正規名とASCIIの大文字/小文字を区別せずに一致する値のいずれかでなければならない」とあります。
-
----------------------------------------
-
-## com.liferay.portal.kernel.model.PortalPreferencesメソッド、getPreferencesおよびsetPreferencesを削除
-- **日付：** 2020年3月31日
-- **JIRAチケット：** [LPS-124338](https://issues.liferay.com/browse/LPS-124338)
-
-### 変更点
-
-`PortalPreferences`プリファレンスが`PortalPreferenceValue`テーブルに保存されるようになりました。
-
-### 影響を受ける人
-
-これは、`com.liferay.portal.kernel.model.PortalPreferences`メソッド`getPreferences`または`setPreferences`を介してポータル設定を直接取得または設定している場合に影響します。
-
-### コードの更新方法
-
-`PortalPreferencesLocalService`を介して`javax.portlet.PortalPreferences`インスタンスにアクセスします。 `javax.portlet.PortalPreferences` APIを使用してプリファレンスを取得および設定します。
-
-### 変更が行われた理由
-
-この変更により、アップグレードが簡素化され、ストレージ要件が軽減され、`like`演算子を使用せずに設定のクエリがサポートされます。
+この変更は、 [HTML規格](https://html.spec.whatwg.org/#boolean-attribute) に準拠するためで、「要素に boolean 属性がある場合は真の値を表し、ない場合は偽の値を表します。属性が存在する場合、その値は空の文字列か、属性の正規名とASCII大文字小文字を区別せずに一致する値でなければなりません。」となっています。
 
 ---------------------------------------
 
-## item-selector-taglibはcoverImage関連のイベントを起動しなくなりました
-- **日付：** 2021年4月15日
-- **JIRAチケット：** [LPS-130359](https://issues.liferay.com/browse/LPS-130359)
+## com.liferay.portal.kernel.model.PortalPreferences メソッド getPreferences と setPreferences を削除しました。
 
-### 変更点
+- **日付：** 2020-3-31
+- **JIRAのチケットです。** [LPS-124338](https://issues.liferay.com/browse/LPS-124338)
 
-`ImageSelector` JavaScriptモジュールは、`Liferay.fire()` APIを使用して`coverImageDeleted`、`coverImageSelected`、および`coverImageUploaded`イベントを起動しなくなりました。 これらのイベントにより、`item-selector-taglib`モジュールと`blogs-web`モジュール間の通信が容易になりました。  `Liferay.State`は、`imageSelectorCoverImageAtom`を使用して通信を同期するようになりました。
+### 何が変わったのでしょうか？
 
-### 影響を受ける人
+`PortalPreferences` プリファレンスは、 `PortalPreferenceValue` テーブルに格納されるようになりました。
 
-これは、`Liferay.on()`または同様の関数を含む削除されたイベントをリッスンしている場合に影響します。
+### 誰が影響を受けるのか？
 
-### コードの更新方法
+`com.liferay.portal.kernel.model.PortalPreferences` メソッド `getPreferences` または `setPreferences`で直接ポータルプリファレンスを取得または設定している場合に影響を及ぼします。
 
-実際には、これら2つのモジュール間の相互作用を観察するべきではありませんが、必要な場合は、`Liferay.State.subscribe()` APIを使用して`imageSelectorCoverImageAtom`にサブスクライブできます。
+### どのようにコードを更新すればよいですか？
 
-### 変更が行われた理由
+`javax.portlet.PortalPreferences` インスタンスに、 `PortalPreferencesLocalService`を介してアクセスします。 `javax.portlet.PortalPreferences` API を使用して、プリファレンスを取得および設定します。
 
-`Liferay.fire()`と`Liferay.on()`は、共有チャネルでグローバルに表示されるイベントを公開します。 `Liferay.State` APIは、このように離れた場所で調整したいモジュールに適しています。これは、型安全な方法で行われます。
+### なぜ、このような変更を行ったのでしょうか？
 
----------------------------------------
-
-## OAuth 2.0トークンインストロスペクション機能識別子を変更
-- **日付：** 2021年5月4日
-- **JIRAチケット：** [LPS-131573](https://issues.liferay.com/browse/LPS-131573)
-
-### 変更点
-
-OAuth 2.0トークンイントロスペクション機能識別子が`token_introspection`から `token.introspection`に変更されました。
-
-### 影響を受ける人
-
-これは、トークンイントロスペクション機能識別子を使用している場合に影響します。 ユースケースの一部は以下のとおりです。
-
-- トークンイントロスペクション機能識別子を有効にして、OAuth 2.0アプリケーションをプログラムで追加する。
-- OAuth 2.0アプリケーションでトークンイントロスペクション機能識別子が有効になっているかどうかを確認する。
-
-### コードの更新方法
-
-トークンを`token_introspection`から`token.introspection`に変更します。
-
-### 変更が行われた理由
-
-この変更は、コード内のすべてのOAuth 2.0定数を調整および標準化するために行われました。 機能識別子の単語を区切るには、ドットを使用することをお勧めします。
+この変更により、アップグレードの簡素化、ストレージ要件の削減、および `like` 演算子を使用しないプリファレンスのクエリーがサポートされます。
 
 ---------------------------------------
 
-## JournalArticleのコンテンツ項目を削除
-- **日付：** 2021年5月21日
-- **JIRAチケット：** [LPS-129058](https://issues.liferay.com/browse/LPS-129058)
+## item-selector-taglib が coverImage 関連イベントを発生させないようにした。
 
-### 変更点
+- **日付：** 2021-Apr-15
+- **JIRAのチケットです。** [LPS-130359](https://issues.liferay.com/browse/LPS-130359)
 
-`JournalArticle`コンテンツは、動的データマッピング（DDM）フィールドサービスによって保存されるようになりました。
+### 何が変わったのか？
 
-### 影響を受ける人
+`ImageSelector` JavaScript モジュールは、 `coverImageDeleted`, `coverImageSelected`, `coverImageUploaded` イベントを `Liferay.fire()` API を使用して発生しなくなりまし た。 これらのイベントは、 `item-selector-taglib` モジュールと `blogs-web` モジュール間のコミュニケーションを円滑にするものでした。 ここで `Liferay.State` は `imageSelectorCoverImageAtom`を使って通信の同期をとります。
 
-これは、`JournalArticle`コンテンツフィールドを直接設定している場合に影響します。
+### 誰が影響を受けるのか？
 
-### コードの更新方法
+`Liferay.on()` または同様の関数で削除されたイベントをリッスンしている場合に影響します。
 
-コンテンツ項目を直接設定する代わりに、`JournalArticleLocalService`の更新メソッドを使用します。
+### どのようにコードを更新すればよいですか？
 
-### 変更が行われた理由
+実際には、これらの2つのモジュールの間の相互作用を観察するべきではありませんが、もし必要なら、 `Liferay.State.subscribe()` API を使って `imageSelectorCoverImageAtom` をサブスクライブすることができます。
 
-この変更により、コンテンツをフェッチおよび解析せずに、データベース内のファイル、ページ、およびWebコンテンツのDDMフィールドを参照しやすくなります。
+### なぜ、このような変更を行ったのでしょうか？
+
+`Liferay.fire()` と `Liferay.on()` は、グローバルに見えるイベントを共有チャンネルで公開します。 `Liferay.State` APIは、このように離れた場所で調整したいモジュールに適しており、型安全な方法でそれを行います。
 
 ---------------------------------------
 
-## com.liferay.portal.kernel.util.StringBundlerをcom.liferay.petra.string.StringBundlerに置き換え
-- **日付：** 2021年6月25日
-- **JIRAチケット：** [LPS-133200](https://issues.liferay.com/browse/LPS-133200)
+## OAuth 2.0 Token InstrospectionのFeature Identifierを変更しました。
 
-### 変更点
+- **日付：** 2021-May-04
+- **JIRAのチケットです。** [LPS-131573](https://issues.liferay.com/browse/LPS-131573)
 
-`com.liferay.portal.kernel.util.StringBundler`クラスは廃止予定になりました。  `com.liferay.petra.string.StringBundler`クラスに置き換えられました 。
+### 何が変わったのか？
 
-`com.liferay.portal.kernel.util.StringBundler`の代わりに`com.liferay.petra.string.StringBundler`を返すようになったメソッドの一部を以下に示します。
+OAuth 2.0 Token Instrospectionの機能識別子が、 `token_introspection` から `token.introspection`に変更されました。
+
+### 誰が影響を受けるのか？
+
+これは、Token Introspection機能の識別子を使用している場合に影響します。 ここでは、いくつかの使用例を紹介します。
+
+- Token Introspection機能の識別子を有効にして、OAuth 2.0アプリケーションをプログラムで追加する。
+- OAuth 2.0アプリケーションでToken Introspection機能識別子が有効かどうかをチェックします。
+
+### どのようにコードを更新すればよいですか？
+
+トークンを `token_introspection` から `token.introspection`に変更します。
+
+### なぜ、このような変更を行ったのでしょうか？
+
+この変更は、OAuth 2.0の定数をすべて統一するために行われました。 機能識別子の単語の区切りには、ドットを使用することを推奨します。
+
+---------------------------------------
+
+## JournalArticleのContentフィールドを削除しました。
+
+- **日付：** 2021-May-21
+- **JIRAのチケットです。** [LPS-129058](https://issues.liferay.com/browse/LPS-129058)
+
+### 何が変わったのか？
+
+`JournalArticle` のコンテンツは、Dynamic Data Mapping (DDM) Field サービスによって保存されるようになりました。
+
+### 誰が影響を受けるのか？
+
+これは、 `JournalArticle` コンテンツフィールドを直接設定する場合に影響します。
+
+### どのようにコードを更新すればよいですか？
+
+コンテンツ・フィールドを直接設定するのではなく、 `JournalArticleLocalService`'の更新メソッドを使用します。
+
+### なぜ、このような変更を行ったのでしょうか？
+
+この変更により、コンテンツの取得や解析を行わずに、データベース内のファイル、ページ、WebコンテンツのDDMフィールドを容易に参照できるようになりました。
+
+---------------------------------------
+
+## com.liferay.portal.kernel.util.StringBundler を com.liferay.petra.string.StringBundler で置き換えた。
+
+- **日付：** 2021-Jun-25
+- **JIRAのチケットです。** [LPS-133200](https://issues.liferay.com/browse/LPS-133200)
+
+### 何が変わったのか？
+
+`com.liferay.portal.kernel.util.StringBundler` クラスは、非推奨となりました。 `com.liferay.petra.string.StringBundler` クラスがこれに取って代わりました。
+
+`com.liferay.petra.string.StringBundler` の代わりに `com.liferay.portal.kernel.util.StringBundler`を返すようになったいくつかのメソッドを紹介します。
 
 - `com.liferay.frontend.taglib.dynamic.section.BaseJSPDynamicSection.java#modify`
 - `com.liferay.frontend.taglib.dynamic.section.DynamicSection#modify`
@@ -550,27 +555,28 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 - `com.liferay.taglib.BodyContentWrapper#getStringBundler`
 - `com.liferay.taglib.aui.NavBarTag#getResponsiveButtonsSB`
 
-### 影響を受ける人
+### 誰が影響を受けるのか？
 
-これは、これらのメソッドのいずれかを呼び出している場合に影響します。
+これらのメソッドのいずれかを呼び出すと、影響があります。
 
-### コードの更新方法
+### どのようにコードを更新すればよいですか？
 
-`com.liferay.portal.kernel.util.StringBundler`の代わりに`com.liferay.petra.string.StringBundler`をインポートします。
+インポート `com.liferay.petra.string.StringBundler` の代わりに `com.liferay.portal.kernel.util.StringBundler`.
 
-### 変更が行われた理由
+### なぜ、このような変更を行ったのでしょうか？
 
-`com.liferay.portal.kernel.util.StringBundler`クラスは廃止予定になりました。
+`com.liferay.portal.kernel.util.StringBundler` クラスは、非推奨となりました。
 
 ---------------------------------------
 
-## UserLocalService関連のクラスがパブリックAPIを変更しました
-- **日付：** 2021年7月7日
-- **JIRAチケット：** [LPS-134096](https://issues.liferay.com/browse/LPS-134096)
+## UserLocalService関連クラスのパブリックAPIを変更しました。
 
-### 変更点
+- **日付：** 2021-Jul-07
+- **JIRAのチケットです。** [LPS-134096](https://issues.liferay.com/browse/LPS-134096)
 
-通常`void`を返す多くのメソッドは、代わりに`boolean`値を返すようになりました。  このリストには次のものが含まれます。
+### 何が変わったのか？
+
+通常 `void` を返す多くのメソッドは、代わりに `boolean` 値を返すようになりました。 このリストには
 
 - com.liferay.portal.kernel.service.UserLocalService#addDefaultGroups
 - com.liferay.portal.kernel.service.UserLocalService#addDefaultRoles
@@ -585,31 +591,32 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 - com.liferay.portal.service.impl.UserLocalServiceImpl#addDefaultRoles
 - com.liferay.portal.service.impl.UserLocalServiceImpl#addDefaultUserGroups
 
-### 影響を受ける人
+### 誰が影響を受けるのか？
 
-これらのメソッドのいずれかを呼び出しているすべてのユーザー
+これらのメソッドのいずれかを呼び出すすべての人
 
-### コードの更新方法
+### どのようにコードを更新すればよいですか？
 
-すぐに対処する必要はありませんが、戻り値のタイプが変更されていることに注意することが重要です。
+すぐに対応する必要はありませんが、戻り値の型が変更されていることに注意が必要です。
 
-### 変更が行われた理由
+### なぜ、このような変更を行ったのでしょうか？
 
-この変更は、デフォルトのグループ、ロール、またはユーザーグループが特定のユーザーに追加されたかどうか、またはユーザーがすでにこれらの関連付けを持っているかどうかを確認するために行われました。
+この変更は、指定されたユーザーにデフォルトのグループ、ロール、およびユーザーグループが追加されているかどうか、またはそのユーザーがすでにこれらの関連付けを持っているかどうかを確認するために行われたものです。
 
 ---------------------------------------
 
-## frontend-css-web CSSモジュールを削除
-- **日付：** 2021年8月2日
-- **JIRAチケット：** [LPS-127085](https://issues.liferay.com/browse/LPS-127085)
+## CSSモジュールfrontend-css-webを削除しました。
 
-### 変更点
+- **日付：** 2021-Aug-02
+- **JIRAのチケットです。** [LPS-127085](https://issues.liferay.com/browse/LPS-127085)
 
-`frontend-css-web`モジュールが削除され、そのCSSファイルがアップグレードされました。
+### 何が変わったのか？
 
-### 影響を受ける人
+`frontend-css-web` モジュールは削除され、その CSS ファイルはアップグレードされました。
 
-この変更は、次のモジュールに影響します。
+### 誰が影響を受けるのか？
+
+この変更は、以下のモジュールに影響します。
 
 - `modules/apps/asset/asset-taglib/`
 - `modules/apps/asset/asset-tags-navigation-web/`
@@ -641,142 +648,146 @@ OAuth 2.0トークンイントロスペクション機能識別子が`token_intr
 - `portal-kernel/`
 - `portal-web/`
 
-### コードの更新方法
+### どのようにコードを更新すればよいですか？
 
 必要なコードの更新はありません。
 
-### 変更が行われた理由
+### なぜ、このような変更を行ったのでしょうか？
 
-この変更により、廃止予定のレガシーコードがDXP/Portalから削除され、コードのパフォーマンスとコードの一貫性が向上します。
+この変更により、DXP/Portalから非推奨のレガシーコードが削除され、コードのパフォーマンスとコードの一貫性が改善されました。
 
 ---------------------------------------
 
-## 一部のSanitizedServletResponse静的メソッド、HttpHeaders X **XSS** PROTECTION定数、およびhttp.header.secure.x.xss.protectionポータルプロパティを削除
-- **日付：** 2021年8月5日
-- **JIRAチケット：** [LPS-134188](https://issues.liferay.com/browse/LPS-134188)
+## 一部の SanitizedServletResponse 静的メソッド、HHttpHeaders X_XSS_PROTECTION 定数、および http.header.secure.x.xss.protection ポータルプロパティを削除しました。
 
-### 変更点
+- **日付：** 2021-Aug-05
+- **JIRAのチケットです。** [LPS-134188](https://issues.liferay.com/browse/LPS-134188)
 
-次のメソッド、定数、およびポータルプロパティは削除されました。
+### 何が変わったのか？
 
-メソッド:
+以下のメソッド、定数、ポータルプロパティが削除されました。
+
+方法です。
 
 - `com.liferay.portal.kernel.servlet.SanitizedServletResponse#disableXSSAuditor`
 - `com.liferay.portal.kernel.servlet.SanitizedServletResponse#disableXSSAuditor`
 - `com.liferay.portal.kernel.servlet.SanitizedServletResponse#disableXSSAuditorOnNextRequest`
 - `com.liferay.portal.kernel.servlet.SanitizedServletResponse#disableXSSAuditorOnNextRequest`
 
-定数：
+定数です。
 
 - `com.liferay.portal.kernel.servlet.HttpHeaders#X_XSS_PROTECTION`
 
-ポータルプロパティ：
+ポータルのプロパティです。
 
 - `http.header.secure.x.xss.protection`
 
-### 影響を受ける人
+### 誰が影響を受けるのか？
 
-これは、これらのメソッドを呼び出す、定数を使用する、またはポータルプロパティを使用する場合に影響します。
+これは、これらのメソッドを呼び出したり、定数を使用したり、ポータルプロパティを使用した場合に影響します。
 
-### コードの更新方法
+### どのようにコードを更新すればよいですか？
 
-これらのメソッドを呼び出すか、定数を使用するコードを削除してください。 X-Xss-Protectionヘッダーは、最新のブラウザでは効果がなく、誤った安全性を感じさせる可能性があります。
+これらのメソッドを呼び出すコードや定数を使用するコードを削除してください。 X-Xss-Protectionヘッダーは、最近のブラウザでは効果がなく、誤ったセキュリティ感覚を与える可能性があります。
 
-ポータルプロパティ拡張ファイル（`portal-ext.properties`など）から`http.header.secure.x.xss.protection`プロパティを削除します。
+`http.header.secure.x.xss.protection` プロパティをポータルプロパティ拡張ファイルから削除します（例： `portal-ext.properties`）。
 
-### 変更が行われた理由
+### なぜ、このような変更を行ったのでしょうか？
 
-X-Xss-Protectionヘッダーは、最新のブラウザではサポートされなくなりました。 これらの静的メソッド、定数、およびポータルプロパティは、X-Xss-Protectionヘッダーに関連しています。
+X-Xss-Protectionヘッダーは、最近のブラウザではサポートされなくなりました。 これらの静的メソッド、定数、ポータルプロパティは、X-Xss-Protectionヘッダーに関連しています。
 
 ---------------------------------------
 
-## OpenIdConnectServiceHandlerインターフェイスをOpenIdConnectAuthenticationHandlerに置き換え
-- **日付：** 2021年8月9日
-- **JIRAチケット：** [LPS-124898](https://issues.liferay.com/browse/LPS-124898)
+## OpenIdConnectServiceHandler インターフェースを OpenIdConnectAuthenticationHandler に置き換える。
 
-### 変更点
+- **日付：** 2021-Aug-09
+- **JIRAのチケットです。** [LPS-124898](https://issues.liferay.com/browse/LPS-124898)
 
-`OpenIdConnectServiceHandler`インターフェイスは削除され、`OpenIdConnectAuthenticationHandler`インターフェイスに置き換えられました。
+### 何が変わったのか？
 
-旧インターフェイス：
+`OpenIdConnectServiceHandler` インターフェースが削除され、 `OpenIdConnectAuthenticationHandler` インターフェースに置き換わりました。
+
+旧インターフェース。
 
 ```
 portal.security.sso.openid.connect.OpenIdConnectServiceHandler
 ```
 
-新インターフェイス：
+新しいインターフェース。
 
 ```
 portal.security.sso.openid.connect.OpenIdConnectAuthenticationHandler
 ```
 
-### 影響を受ける人
+### 誰が影響を受けるのか？
 
-これは、`OpenIdConnectServiceHandler`インターフェイスを実装または使用している場合に影響します。
+`OpenIdConnectServiceHandler` インターフェースを実装または使用している場合、この影響はあります。
 
-### コードの更新方法
+### どのようにコードを更新すればよいですか？
 
-コードが`OpenIdConnectServiceHandler`インターフェイスを呼び出す場合は、`OpenIdConnectAuthenticationHandler`インターフェイスを呼び出すようにコードを変更します。 これには、DXP/Portalユーザーにサインインするための`UnsafeConsumer`を提供する必要があります。
+あなたのコードが `OpenIdConnectServiceHandler` インターフェースを呼び出している場合は、 `OpenIdConnectAuthenticationHandler` インターフェースを呼び出すように変更してください。 これには、DXP/Portal ユーザーのサインイン用に、 `UnsafeConsumer` を提供する必要があります。
 
-`OpenIdConnectServiceHandler`インターフェイスを実装している場合は、`OpenIdConnectAuthenticationHandler`インターフェイスを実装し、提供された更新トークンを使用してユーザーのOIDCアクセストークンを更新する方法を提供します。 このプロビジョニングを行わないと、初期アクセストークンの有効期限が切れたときにセッションが無効になります。
+`OpenIdConnectServiceHandler` インターフェースを実装している場合、 `OpenIdConnectAuthenticationHandler` インターフェースを実装し、提供されたリフレッシュトークンを使用してユーザーの OIDC アクセストークンをリフレッシュする方法を提供します。 この規定を設けない場合、最初のアクセストークンの有効期限が切れると、セッションは無効となります。
 
-### 変更が行われた理由
+### なぜ、このような変更を行ったのでしょうか？
 
-この変更により、OIDC更新トークンの処理が改善されます。 変更は次の理由で行われました。
+この変更により、OIDCリフレッシュトークンの取り扱いが改善されました。 このような理由から、今回の変更となりました。
 
-- アクセストークンの更新プロセスをHTTPリクエスト処理から切り離すため。 この切り離しができないと、更新トークンの使用を1回だけ許可するプロバイダーとのOIDCセッションを維持する際に問題が発生する可能性があります。 ポータルセッションの早期無効化が発生する可能性があります。
+- アクセストークンのリフレッシュ処理をHTTPリクエストの処理から切り離すこと。 この切り離しを行わないと、リフレッシュトークンを1回しか使えないプロバイダとのOIDCセッションの維持に問題が生じる可能性があります。 ポータルサイトのセッションが早期に無効化されることがある。
 
-- 対応するアクセストークンと同時に期限切れになる更新トークンを提供するOIDCプロバイダーのポータルセッションの早期無効化を回避するため。
-
----------------------------------------
-
-## 言語キーの名称変更
-
-- **日付：** 2021年9月9日
-- **JIRAチケット：** LPS-135504
-
-### 変更点
-
-すべてのモジュール言語キーは、`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang`にある`portal-language-lang`というモジュールに移動されました。 モジュールが同じ名前で異なる値の言語キーを使用する場合、異なる値に対応するために言語キーが追加されました。 影響を受けるモジュールの観点から、言語キーの名前が変更されました。
-
-### 影響を受ける人
-
-これは、名前が変更された言語キーを使用またはオーバーライドしている場合に影響します。 [名前が変更された言語キー](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/reference/renamed-language-keys.html) は、古い言語キー名を新しい名前にマップします。
-
-### コードの更新方法
-
-[名前が変更された言語キー](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/reference/renamed-language-keys.html) のマッピングに基づいて、名前が変更された言語キーのすべてのインスタンスの名前を新しい名前に変更します。
-
-### 変更が行われた理由
-
-一元化された言語キーは管理が簡単です。
+- 対応するアクセストークンと同時に期限が切れるリフレッシュトークンを提供するOIDCプロバイダーのポータルセッションが早期に無効化されるのを防ぐため。
 
 ---------------------------------------
 
-## CAS SSOモジュールをportal-security-sso-casプロジェクトに移動
-- **日付：** 2021年9月15日
-- **JIRAチケット：** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
+## 言語キーの名称を変更
 
-### 変更点
+- **日付：** 2021-Sep-09
+- **JIRAのチケットです。** LPS-135504
 
-CAS SSOモジュールは、`portal-security-sso`プロジェクトから`portal-security-sso-cas`という名前の新しいプロジェクトに移動されました。 新しいプロジェクトは廃止予定ですが、Liferay マーケットプレイスからダウンロードできます。
+### 何が変わったのか？
 
-### 影響を受ける人
+すべてのモジュールの言語キーは `liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang`の `portal-language-lang` というモジュールに移動されました。 また、同じ名前で異なる値の言語キーを使用しているモジュールがある場合、異なる値に対応する言語キーを追加した。 影響を受けるモジュールから見ると、言語キーの名称が変更されています。
 
-これは、認証システムとしてCAS SSOを使用しているすべてのユーザーに影響します。
+### 誰が影響を受けるのか？
 
-### コードの更新方法
+これは、名前が変更された言語キーを使用またはオーバーライドしている場合に影響します。 [言語キーの名称変更](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/reference/renamed-language-keys.html) 古い言語キー名を新しい名前にマッピングします。
 
-認証システムとしてCAS SSOを引き続き使用する場合は、Liferay マーケットプレイスから対応するアプリをダウンロードする必要があります。
+### どのようにコードを更新すればよいですか？
 
-### 変更が行われた理由
+[言語キーの名称変更](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/reference/renamed-language-keys.html) のマッピングに基づき、名前を変更した言語キーのすべてのインスタンスの名前を新しい名前に変更します。
 
-これは、SSOサポートを統合し、オープンスタンダードへの注目を高めるための継続的な取り組みの一環です。
+### なぜ、このような変更を行ったのでしょうか？
+
+言語キーを一元管理することで、管理が容易になります。
 
 ---------------------------------------
 
-## clay:selectタグの名前に印刷用の属性のネームスペースを指定
-- **日付：** 2021年9月15日
+## CAS SSOモジュールをportal-security-sso-casプロジェクトに移動しました。
+
+- **日付：** 2021-Sep-15
+- **JIRAのチケットです。** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
+
+### 何が変わったのか？
+
+CASのSSOモジュールは、 `portal-security-sso` プロジェクトから、 `portal-security-sso-cas`という名前の新しいプロジェクトに移動されました。 新しいプロジェクトは非推奨ですが、Liferay Marketplaceからダウンロードすることができます。
+
+### 誰が影響を受けるのか？
+
+これは、CAS SSOを認証システムとして使用している人に影響します。
+
+### どのようにコードを更新すればよいですか？
+
+認証システムとしてCAS SSOを継続して使用する場合は、Liferay Marketplaceから対応するアプリをダウンロードする必要があります。
+
+### なぜ、このような変更を行ったのでしょうか？
+
+これは、SSOサポートを統合し、オープンスタンダードへの注力を強化する継続的な取り組みの一部です。
+
+---------------------------------------
+
+## clay:select Tagのname Attributeを印刷用にネームスペース化した。
+
+- **日付：** 2021-Sep-15
 - **JIRAチケット：** [LPS-139131](https://issues.liferay.com/browse/LPS-139131)
 
 ### 変更点
@@ -797,9 +808,10 @@ CAS SSOモジュールは、`portal-security-sso`プロジェクトから`portal
 
 この変更は、現在の`aui:select`タグの動作により適合するように、また、今後`clay:select`タグへの移行を容易にし、現在の`clay:select`タグの使用を簡略化するために行われました。
 
----------------------------------------
+--------------------------------------
 
 ## コアレジストリAPIおよびレジストリ実装モジュールを削除
+
 - **日付：** 2021年9月28日
 - **JIRAチケット：** [LPS-138126](https://issues.liferay.com/browse/LPS-138126)
 
@@ -813,7 +825,7 @@ CAS SSOモジュールは、`portal-security-sso`プロジェクトから`portal
 
 ### コードの更新方法
 
-システムバンドルの`org.osgi.framework.BundleContext`を使用してネイティブOSGi APIにアクセスします。  `com.liferay.portal.kernel.module.util.SystemBundleUtil.getBundleContext()`メソッドを呼び出して、コンテキストを取得します。
+システムバンドルの`org.osgi.framework.BundleContext`を使用してネイティブOSGi APIにアクセスします。  `com.liferay.portal.kernel.module.util.SystemBundleUtil.getBundleContext()`メソッドを呼び出して、コンテキストを取得します。 
 
 ### 変更が行われた理由
 
@@ -822,6 +834,7 @@ CAS SSOモジュールは、`portal-security-sso`プロジェクトから`portal
 ---------------------------------------
 
 ## ドキュメントタイプにおけるWebコンテンツのサポートが削除されました
+
 - **日付:** 2021年9月30日
 - **JIRAチケット：** [LPS-139710](https://issues.liferay.com/browse/LPS-139710)
 
@@ -896,7 +909,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 
 ### 変更点
 
-`FragmentEntryLocalService` および `FragmentEntryService` の`addFragmentEntry`メソッドには `FragmentEntry` のアイコン向けの新しいパラメーターがあります。
+`FragmentEntryLocalService` および `FragmentEntryService` の`addFragmentEntry`メソッドには `FragmentEntry` のアイコン向けの新しいパラメーターがあります。 
 
 ### 影響を受ける人
 
@@ -913,6 +926,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 ---------------------------------------
 
 ## FragmentEntryProcessorContext、DefaultFragmentEntryProcessorContext、FragmentRendererContext、DefaultFragmentRendererContextのgetSegmentsExperienceIdsメソッドが削除されました。
+
 - **日付：** 2021年12月17日
 - **JIRAチケット：** [LPS-141471](https://issues.liferay.com/browse/LPS-141471)
 
@@ -935,6 +949,7 @@ UIで、OpenID Connect プロバイダー接続の設定を確認します。 �
 ---------------------------------------
 
 ## ポータルのプロパティからリダイレクトURLが削除されました。
+
 - **日付：** 2022年5月24日
 - **JIRAチケット：** [LPS-128837](https://issues.liferay.com/browse/LPS-128837)
 
@@ -957,6 +972,7 @@ UIの「インスタンス設定」の「 [リダイレクト URL](../../system-
 ---------------------------------------
 
 ## ポータルLibsクリーンアップ
+
 - **日付** 2022-May-26
 - **JIRA チケット** [LPS-142130](https://issues.liferay.com/browse/LPS-142130)
 
@@ -1009,6 +1025,7 @@ UIの「インスタンス設定」の「 [リダイレクト URL](../../system-
 - stax.jar - [LPS-151308](https://issues.liferay.com/browse/LPS-151308)
 
 ### モジュールに移動しました
+
 - im4java.jar と monte-cc.jar - [LPS-144170](https://issues.liferay.com/browse/LPS-144170)
 - java-diff.jar, daisydiff.jar and eclipse-core-runtime.jar - [LPS-144201](https://issues.liferay.com/browse/LPS-144201)
 - urlrewritefilter.jar - [LPS-145186](https://issues.liferay.com/browse/LPS-145186)
@@ -1051,7 +1068,7 @@ UIの「インスタンス設定」の「 [リダイレクト URL](../../system-
 
 ---------------------------------------
 
-## Elasticsearch のソート可能なタイプマッピングが keyword から icu **collation** keyword に変更されました。
+## Elasticsearch のソート可能なタイプマッピングが keyword から icu_collation_keyword に変更されました。
 
 - **日付：** 2022年5月12日
 - **JIRAチケット：** [LPS-152937](https://issues.liferay.com/browse/LPS-152937)
@@ -1064,11 +1081,12 @@ UIの「インスタンス設定」の「 [リダイレクト URL](../../system-
 
 この新しい `icu_collation_keyword` タイプは、各言語の正しい照合規則を使用してソートすることができます。 詳しくは、 <https://www.elastic.co/guide/en/elasticsearch/plugins/7.17/analysis-icu-collation-keyword-field.html>をご覧ください。
 
-既存のLiferayインストールを更新した場合、完全な再インデックスが実行され、Elasticsearchマッピングが再作成されたときに、新しいマッピングが有効になります。
+既存のLiferayインストールを更新した場合、完全な再インデックスが実行され、Elasticsearchマッピングが再作成されると、新しいマッピングが有効になります。
 
 ### 影響を受ける人
 
 `*_<languageId>_sortable` と `ddmFieldArray.ddmFieldValueText_<languageId>_String_sortable` フィールドをカスタムElasticsearchクエリで使用している場合。
+
    - **ソートされた結果** を見ると、各言語の正しい照合規則で結果がソートされていることがわかります。
    - **Elasticsearch インデックス** から情報を取得する場合、情報がエンコードされた形式で返されるようになったことがわかります。
 
@@ -1079,3 +1097,24 @@ UIの「インスタンス設定」の「 [リダイレクト URL](../../system-
 これらのフィールドからデータを取得するには、Elasticsearchの `_source` フィールドから同じ情報を取得します。 <https://www.elastic.co/guide/en/elasticsearch/reference/7.17/mapping-source-field.html>. または、前項で説明したように、 `icu_collation_keyword` を削除してください。
 
 ---------------------------------------
+
+## MySQL Connector を 8.0.29 にアップグレードし、MySQL でプロトコル TLSv1.2 を使用するよう強制された。
+
+- **日付：** 2022年7月20日
+- **JIRAのチケットです。** [lps-157036](https://issues.liferay.com/browse/LPS-157036) , [lps-157039](https://issues.liferay.com/browse/LPS-157039)
+
+### 変更点
+
+MySQLコネクタがバージョン8.0.29にアップグレードされました。 MySQL 8.0.29 では TLSv1.2 を使用しており、TLSv1 および TLv1.1 はサポートされなくなりました。 詳しくは、https://dev.mysql.com/doc/refman/8.0/en/encrypted-connection-protocols-ciphers.html をご覧ください。
+
+### 影響を受ける人
+
+MySQLのバージョンが5.7.28より低い場合、特にDXP U37以降で自動ダウンロードされたMySQLコネクタを使用されているクライアント様。 MySQLコネクタ8.0.28以降を手動でインストールされた方は、MySQLを5.7.28以降にアップグレードする必要があります。 
+
+### コードの更新方法
+
+MySQLをバージョン5.7.28以上にアップグレードするか、プロトコルをTLSv1.2に手動で設定してください（https://dev.mysql.com/doc/refman/5.7/en/encrypted-connection-protocols-ciphers.html#encrypted-connection-supported-protocols を参照）。
+
+### 変更が行われた理由
+
+- この変更は、セキュリティ上の脆弱性に対応するために行われたものです。

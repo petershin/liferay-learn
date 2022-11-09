@@ -7,7 +7,6 @@ toc:
 - ./architecture/bundle-classloading-flow.md
 - ./architecture/ui-architecture.md
 ---
-
 # アーキテクチャ
 
 ```{toctree}
@@ -87,9 +86,9 @@ DXPは、アプリケーションサーバー上で実行されるWebアプリ�
 
 ランタイム環境は、コンポーネントのオンザフライでの追加、置換、およびカスタマイズをサポートしています。 これにより、次のシナリオが可能になります。
 
-**置換：** `ServiceC Impl 2`コンポーネントのランクが既存のコンポーネント`ServiceC Impl 1`よりも高い場合、`ServiceC Impl 2`が使用されます。
+**置換：**`ServiceC Impl 2`コンポーネントのランクが既存のコンポーネント`ServiceC Impl 1`よりも高い場合、`ServiceC Impl 2`が使用されます。
 
-**カスタマイゼーション：** `PortletAフィルター`は、`PortletA`で行われる要求と応答をインターセプトして変更し、`PortletA`が表示するコンテンツに影響を与えます。
+**カスタマイゼーション：**`PortletAフィルター`は、`PortletA`で行われる要求と応答をインターセプトして変更し、`PortletA`が表示するコンテンツに影響を与えます。
 
 コンポーネントWARおよび[モジュールJARプロジェクト](./fundamentals/module-projects.md)は、 [OSGiバンドル](https://www.osgi.org/) (モジュール)としてインストールされます。 LiferayのOSGiフレームワークは、モジュールのライフサイクルを定義し、依存関係を適用し、クラスの読み込み構造を定義し、モジュールとコンポーネントを管理するためのAPIとCLI（[Felix Gogo シェル](./fundamentals/using-an-osgi-service.md)）を提供します。 コアは、[ポータルプロパティファイル](../installation-and-upgrades/reference/portal-properties.md)と[システム設定](../system-administration/configuring-liferay/system-settings.md)を介して構成されます。
 
@@ -97,7 +96,7 @@ DXPは、アプリケーションサーバー上で実行されるWebアプリ�
 
 ## サービス
 
-ビジネスロジックは、コンポーネントランタイム環境にデプロイされたサービスに実装されます。 組み込みのコアサービスとフレームワークサービスは、[ユーザー](../users-and-permissions/users/understanding-users.md)、[ロール](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)、[Webコンテンツ](../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)、[ドキュメントとメディア](../content-authoring-and-management/documents-and-media/documents-and-media-overview.md)などのモデルで動作します。 カスタムサービスを通じて新しいモデルと機能を導入できます。 サービスコンポーネントは、依存性注入を介して相互にアクセスできます。
+ビジネスロジックは、コンポーネントランタイム環境にデプロイされたサービスに実装されます。 組み込みのコアサービスとフレームワークサービスは、[ユーザー](../users-and-permissions/users/understanding-users.md)、[ロール](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)、[Webコンテンツ](../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)、[ドキュメントとメディア](../content-authoring-and-management/documents-and-media.md)などのモデルで動作します。 カスタムサービスを通じて新しいモデルと機能を導入できます。 サービスコンポーネントは、依存性注入を介して相互にアクセスできます。
 
 フロントエンドアプリケーションは、サービスを呼び出して作業を行います。 Java APIを使用してサービスを直接呼び出すJavaベースのアプリケーションをデプロイすることができます。 DXPにデプロイされているかに関係なく、Webベース（Javaおよび非Java）のアプリケーションであれば、 [OpenAPI](https://swagger.io/docs/specification/about/) 標準に準拠した[REST API](../headless-delivery/consuming-apis/consuming-rest-services.md)、[GraphQL API](../headless-delivery/consuming-apis/consuming-graphql-apis.md)、シンプルなWeb/RESTサービスを含むWeb APIを利用できます。 次の図は、Liferayサービスを呼び出すアプリケーションと外部クライアントを示しています。
 

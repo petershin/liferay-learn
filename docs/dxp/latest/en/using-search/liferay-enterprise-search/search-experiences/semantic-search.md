@@ -160,6 +160,29 @@ Select whether to extract the pre-transformation sample from the Beginning (defa
 
 **Cache Timeout:** Set the cache timeout in milliseconds for transformed search keywords. By default 604800 is used (about ten minutes).
 
+## Understanding Semantic Search in Liferay
+
+Providing a robust understanding of a semantic search's intricacies is beyond the scope of this brief explanation. Instead we'll focus on how Liferay's Semantic Search implementation works, along the way explaining a few fundamental concepts of a semantic search.
+
+Semantic search impacts the Liferay search at both index time and search time.
+
+During the indexing phase, 
+
+* Standard processing occurs:
+  * Content in Liferay is sent to the search engine where it's processed according to its data type: text is analyzed appropriately and stored in the index.
+* Additional Semantic Search processing occurs:
+  * Following the configuration in System/Instance Settings, the text snippet is sent to the sentence transformer, text embedding occurs, and a vector representation is created based on the model used the by the transformer. The result of the text embedding process is stored in the [Liferay Company Index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) as a [dense_vector](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/dense-vector.html) field for each document[^1].
+
+[^1]: To inspect the [mapping](../../search-administration-and-tuning/search-administration.md#field-mappings) for these transformer-produced dense vector fields, open the Control Panel &rarr; Search &rarr; Field Mappings. Copy the mappings into a file and search for *dense_vector*.
+
+During the search phase,
+
+* Standard Processing occurs:
+  * The search phrase entered in the Search Bar widget is received by Liferay's search framework, sent through to the search engine for analysis and additional processing, matched to existing index documents in the search engine, which are scored for relevance and returned to Liferay for its additional processing (highlighting, summarizing, performing additional filtering for permissions, etc.). 
+* Additional Semantic Search Processing occurs:
+  * The search phrase is sent to the sentence transformer, text embedding occurs, and a vector representation is created. Before rendering the search results scored by lexical relevance, the results captured within the window limit setting are re-scored by comparing the vector representation of the search phrase with the dense vector fields stored in the search documents. New scores are calculated, and the newly ordered set of results are returned to the search page for consumption by the end user.
+
+
 <!-- TODO: Quickly follow this documentation with a more robust example article, configuring the ootb element differently and including Petteri's more complicated custom element? -->
 
 
@@ -190,6 +213,7 @@ Only certain asset types are supported as per the config (no custom structures, 
 Search time cache timeout so the provider is not hit for multiple repeated searches over and over. No index time caching.
 
 send a sentence get back a vector/ 500 max char count by default, beginning of the content by default
+
 
 
 Use txtai for testing

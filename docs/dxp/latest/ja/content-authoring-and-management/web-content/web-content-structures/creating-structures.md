@@ -6,7 +6,7 @@
 1. ［**ストラクチャー**］ タブを選択します。
 1. **追加ボタン**（![Add Structure](../../../images/icon-add.png)）をクリックして、新しいストラクチャーを作成します。
 1. 新しいストラクチャーのタイトルを入力します。
-1. [使用可能なフィールド](#structure-fields)をストラクチャーにドラッグアンドドロップし、[それらの設定](./configuring-structure-fields.md#configurable-settings)を構成してストラクチャーを作成します。
+1. [使用可能なフィールド](#structure-fields) をストラクチャーにドラッグアンドドロップし、 [それらの設定](./configuring-structure-fields.md#configurable-settings) を構成してストラクチャーを作成します。
 
     ```{tip}
     [ストラクチャーを編集](./configuring-structure-fields.md)または作成したとき、デフォルトで*View*タブが選択されています。 *ソース*タブに切り替えて、ストラクチャーの生のXMLを表示し、直接変更することができます。
@@ -22,7 +22,7 @@
 ```
 
 ```{tip}
-Webコンテンツとストラクチャーの追加設定オプション（例：[カスタムストラクチャーキーの設定を有効にする](./whats-new-with-web-content-structures-in-7-4.md#setting-the-structure-key)）については、［システム設定］&rarr; ［コンテンツとデータ］&rarr; ［Webコンテンツ］&rarr; ［管理］をご覧ください。
+Webコンテンツとストラクチャーの追加設定オプション（例： [カスタムストラクチャーキーの設定を有効にする](./whats-new-with-web-content-structures-in-7-4.md#setting-the-structure-key) ）については、［システム設定］&rarr; ［コンテンツとデータ］&rarr; ［Webコンテンツ］&rarr; ［管理］をご覧ください。
 ```
 
 ## ストラクチャー項目

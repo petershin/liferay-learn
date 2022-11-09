@@ -12,7 +12,7 @@ WebコンテンツAPI の概要については、[WebコンテンツAPIの基本
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、[サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip)をダウンロードし、解凍します：
+次に、 [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) をダウンロードし、解凍します：
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip -O

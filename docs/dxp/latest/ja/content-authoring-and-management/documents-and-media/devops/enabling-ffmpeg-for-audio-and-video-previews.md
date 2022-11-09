@@ -8,9 +8,9 @@
 
 インストールしたら、次の手順に従って、FFmpegを使用するようにドキュメントとメディアを設定します。
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; ［**システム設定**］ &rarr; ［**ドキュメントとメディア**］ に移動します。
+1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; ［**System Settings**］ &rarr; ［**Documents and Media**］ に移動します。
 
-1. ［**FFMPEG Audio Converter**］ に移動し、 ［**Enable**］ をオンにして、 ［**アップデート**］ をクリックします。
+1. ［**FFMPEG Audio Converter**］ に移動し、 ［**Enable**］ をオンにして、 ［**Update**］ をクリックします。
 
 1. ［**FFMPEG Video Converter**］ に移動し、 ［**Enable**］ をオンにして、 ［**アップデート**］ をクリックします。
 
@@ -22,9 +22,7 @@
 
 設定が完了すると、アップロードまたはアップデート時に音声ファイルとビデオファイルの音声とビデオのプレビューが自動的に生成されます。
 
-<a name="additional-information" />
-
 ## 追加情報
 
-* [ファイルのプレビュー](../uploading-and-managing/previewing-files.md)
+* [ファイルの管理](../uploading-and-managing/managing-files.md)
 * [ドキュメントとメディアプレビューの設定](./configuring-documents-and-media-previews.md)

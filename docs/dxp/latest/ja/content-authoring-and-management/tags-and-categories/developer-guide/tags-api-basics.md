@@ -3,12 +3,13 @@
 LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提供します。 APIを使用してタグを作成および編集できます。 まずは、新しいタグを追加する例を見てみましょう。 Liferayのコードベースでは、タグはキーワードと呼ばれることに注意してください。
 
 ## タグの追加
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [タグAPIの基本](./liferay-r7u9.zip) をダウンロードし、解凍します。
+1. [Tags API Basics](./liferay-r7u9.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
@@ -20,7 +21,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
 
-1. cURLスクリプトを使用して、サイトに新しいタグを追加します。 コマンドラインで、 `curl` フォルダに移動します。 サイトIDをパラメーターとして使用して、`Keyword_POST_ToSite.sh`スクリプトを実行します。
+1. cURLスクリプトを使用して、サイトに新しいタグを追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`Keyword_POST_ToSite.sh`スクリプトを実行します。
 
     ```bash
     ./Keyword_POST_ToSite.sh 1234
@@ -122,7 +123,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 次のcURLまたはJavaコマンドを実行すると、サイトのタグを一覧表示できます。 上記のように、`1234`をサイトのIDに置き換えてください。
 
-### Keywords **GET** FromSite.sh
+### Keywords_GET_FromSite.sh
 
 コマンド:
 
@@ -136,7 +137,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
    :language: bash
 ```
 
-### Keywords **GET** FromSite.java
+### Keywords_GET_FromSite.java
 
 コマンド:
 
@@ -159,10 +160,10 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 次のcURLまたはJavaコマンドを使用して、特定のタグを取得します。 `1234`をタグのIDに置き換えてください。
 
 ```{tip}
-`eywords_GET_FromSite.[java|sh]`を使用して、サイトの`Keyword` IDを取得します。
+``Keywords_GET_FromSite.[java|sh]``を使用して、サイトの``Keyword`` IDを取得します。
 ```
 
-### Keyword **GET** ById.sh
+### Keyword_GET_ById.sh
 
 コマンド:
 
@@ -176,7 +177,7 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
    :language: bash
 ```
 
-### Keyword **GET** ById.java
+### Keyword_GET_ById.java
 
 コマンド:
 
@@ -189,7 +190,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/java/Keyword_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-18
 ```
 
 `Keyword`フィールドがJSONに一覧表示されます。
@@ -198,7 +199,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のタグを完全に上書きします。 注： `1234`をタグのIDに置き換えてください。
 
-### Keyword **PUT** ById.sh
+### Keyword_PUT_ById.sh
 
 コマンド:
 
@@ -212,7 +213,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
    :language: bash
 ```
 
-### Keyword **PUT** ById.java
+### Keyword_PUT_ById.java
 
 コマンド:
 
@@ -232,7 +233,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
 
 次のcURLおよびJavaコマンドを使用して、既存のタグを削除します。 注： `1234`をタグのIDに置き換えてください。
 
-### Keyword **DELETE** ById.sh
+### Keyword_DELETE_ById.sh
 
 コマンド:
 
@@ -246,7 +247,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
    :language: bash
 ```
 
-### Keyword **DELETE** ById.java
+### Keyword_DELETE_ById.java
 
 コマンド
 

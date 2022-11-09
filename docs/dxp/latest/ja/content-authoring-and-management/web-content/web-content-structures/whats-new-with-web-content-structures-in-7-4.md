@@ -98,7 +98,7 @@ JSONストラクチャーのソースは、一見すると複雑なので、注�
 
 新しいデータエンジンに基づくストラクチャーでは、エクスポート処理でJSONからストラクチャーキーが取り除かれます。 つまり、定義を（例えば新しいサイトに）インポートすると、新しいストラクチャーキーが生成されます。 エクスポートとインポートのプロセスでストラクチャーキーを保持したい場合、または新しいカスタムキーを提供したい場合は、エクスポートされたJSONを編集する必要があります。
 
-[エクスポートされたJSON](#structure-definition-source-changes)にカスタムストラクチャーキーを追加するには、以下の手順に従います。
+[エクスポートされたJSON](#structure-definition-source-changes) にカスタムストラクチャーキーを追加するには、以下の手順に従います。
 
 1. エクスポートしたJSONファイル（例： `Structure_my structure_42153_20220721144913685.json`）を開きます。
 1. `"dataDefinitionField"`要素の前に`"dataDefinitionKey"`要素を追加します。
@@ -111,6 +111,6 @@ JSONストラクチャーのソースは、一見すると複雑なので、注�
    }
    ```
 
-1. ストラクチャー定義ファイルを[インポート](#structure-definition-source-changes)して、キーがインポートされたことを［Properties］タブで確認します。
+1. ストラクチャー定義ファイルを [インポート](#structure-definition-source-changes) して、キーがインポートされたことを［Properties］タブで確認します。
 
    ![［プロパティ］タブには、ストラクチャーキーがカスタムキーであるか、Liferayによって自動生成されたかに関わらず、ストラクチャーキーが表示されます。](./whats-new-with-web-content-structures-in-7-4/images/11.png)

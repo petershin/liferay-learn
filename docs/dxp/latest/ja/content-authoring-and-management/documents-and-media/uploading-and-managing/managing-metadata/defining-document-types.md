@@ -4,35 +4,37 @@ Liferayでは、ドキュメントタイプは、ファイルをアップロー�
 
 次の手順に従って、カスタムドキュメントタイプを定義します。
 
-1. **製品メニュー**（![Product Menu](../../../../images/icon-product-menu.png)）を開き、 **サイト管理** メニューのコンパスアイコン（![Compass](../../../../images/icon-compass.png)）をクリックします。
+1. サイトまたはアセットライブラリでドキュメントとメディアアプリケーションに移動します。
 
    サイト内のドキュメントとメディアにアクセスするには、 **サイトメニュー**（![Site Menu](../../../../images/icon-product-menu.png)）を開き、 ［**Content & Data**］ &rarr; ［**ドキュメントとメディア**］ に移動します。
 
-3. [**Content & Data**] → [**Documents and Media**] の順にクリックします。
+   ![サイトメニューの［Content & Data］の下にある［ドキュメントとメディア］をクリックします。](./defining-document-types/images/01.png)
 
-4. [**Document Types**] タブをクリックします。
+   アセットライブラリのドキュメントとメディアにアクセスするには、有効になっているライブラリに移動し、 ［**Documents and Media**］ をクリックします。
 
-5.  追加ボタン（![Add](../../../../images/icon-add.png)）をクリックします。 **新規ドキュメントタイプ** フォームが表示されます。
+   ![アセットライブラリの［ドキュメントとメディア］をクリックします。](./defining-document-types/images/02.png)
 
 1. ［**Document Types**］ タブをクリックします。
 
 1. **追加** ボタン（![Add](../../../../images/icon-add.png)）をクリックして、［新規ドキュメントタイプの追加］フォームにアクセスします。
 
-8. [**Main Metadata Fields**] セクションを展開します。
+1. ドキュメントタイプの **名前** を入力します。
 
 1. ［作成］タブで、目的のフィールドを指定されたドロップゾーンにドラッグアンドドロップします。
 
    ![［作成］タブにフィールドを追加します。](./defining-document-types/images/03.png)
 
-10. [**Additional Metadata Fields**] を展開します。
+   各フィールドは高度に構成可能で、基本オプションと詳細オプションがあります。
 
    ![各フィールドを設定します。](./defining-document-types/images/04.png)
 
    必要に応じて、フィールドを互いにドラッグアンドドロップしてフィールドグループを作成できます。 各グループを1つのユニットとして設定することもできます。
 
-12. [**保存**] をクリックします。
+   ![フィールドグループを作成および設定します。](./defining-document-types/images/05.png)
 
-[Documents and Media]の [**Add**] メニューからドキュメントを追加するときに、新しいドキュメントタイプを使用できるようになりました。
+   ```{note}
+   すべてのカスタムドキュメントタイプには、［ファイルをアップロードする］、［Title］、［ファイル名］、および［説明］のフィールドがあります。 これらのデフォルトフィールドに加えて、カスタムドキュメントタイプに追加されたフィールドが一覧表示されます。
+   ```
 
 1. （オプション）［**Details**］ タブをクリックして、 **説明** を入力します。
 
@@ -46,7 +48,7 @@ Liferayでは、ドキュメントタイプは、ファイルをアップロー�
 
    ![［権限設定］タブでドキュメントタイプの権限を設定します](./defining-document-types/images/08.png)
 
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
 保存すると、［ドキュメントとメディア］タブで新しいドキュメントタイプにアクセスできるようになります。このタブを使用して、新しいアップロードを開始できます。
 
@@ -54,40 +56,36 @@ Liferayでは、ドキュメントタイプは、ファイルをアップロー�
 
 ドキュメントタイプを選択すると、設定済みのメタデータフィールドがユーザーに表示されます。 詳細については、 [ファイルのアップロード](../uploading-files.md) を参照してください。
 
-<a name="for-liferay-73x-and-earlier-versions" />
-
 ## Liferay 7.3.x以前のバージョンの場合
 
-1. **プロダクトメニュー**（![Product Menu](../../../../images/icon-product-menu.png)）を開き、 **サイト管理** メニューのコンパスアイコン（![Compass](../../../../images/icon-compass.png)）をクリックします。
+1. **プロダクトメニュー**（![Product Menu](../../../../images/icon-product-menu.png)）を開き、 ［**サイト管理**］ メニューのコンパスアイコン（![Compass](../../../../images/icon-compass.png)）をクリックします。
 1. フォームを作成するサイトを選択します。
-1. ［**Content & Data**］ &rarr; ［**ドキュメントとメディア**］ の順にクリックします。
+1. ［**コンテンツ & データ**］ &rarr; ［**ドキュメントとメディア**］ の順にクリックします。
 1. ［**Document Types**］ タブをクリックします。
-1. **追加ボタン**（![Add](../../../../images/icon-add.png)）をクリックします。 **新規ドキュメントタイプ** フォームが表示されます。
+1. **追加ボタン**（![Add](../../../../images/icon-add.png)）をクリックします。 **New Document Type** フォームが表示されます。
 1. 名前を入力します。
 1. 説明を入力します。
 1. ［**Main Metadata Fields**］ セクションを展開します。
 1. メタデータフィールドをエディターにドラッグアンドドロップします。
 
-    ![メインのメタデータフィールドをドラッグアンドドロップする](./defining-document-types/images/10.png)
+    ![主要なメタデータフィールドのドラッグ＆ドロップ](./defining-document-types/images/10.png)
 
 1. ［**Additional Metadata Fields**］ を展開します。
-1. ドキュメントタイプに関連付けるメタデータセットを選択します。 詳細については、 [メタデータセットの定義](./defining-metadata-sets.md) を参照してください。
+1. 文書タイプに関連付けるメタデータセットを選択します。 詳細については、 [メタデータセットの定義](./defining-metadata-sets.md) を参照してください。
 
-    ![追加のメタデータセットを関連付けます。](./defining-document-types/images/11.png)
+    ![追加のメタデータ・セットを関連付ける。](./defining-document-types/images/11.png)
 
 1. ［**保存**］ をクリックします。
 
 ［Documents and Media］の ［**Add**］ メニューからドキュメントを追加するときに、新しいドキュメントタイプを使用できるようになりました。
 
-![新しいドキュメントタイプが利用可能になりました。](./defining-document-types/images/12.png)
+![新しいDocument Typeが利用できるようになりました。](./defining-document-types/images/12.png)
 
-ユーザーがそのドキュメントタイプの新しいファイルを作成すると、そのファイルはドキュメントについて説明するメタデータフィールドとともに表示されます。
+ユーザーがドキュメントタイプのファイルを新規作成すると、ドキュメントを説明するためのメタデータフィールドが表示されます。
 
-![新しい画像ドキュメントの作成](./defining-document-types/images/13.png)
-
-<a name="additional-information" />
+![ピクチャードキュメントの新規作成](./defining-document-types/images/13.png)
 
 ## 追加情報
 
-* [「ドキュメントとメディア」の概要](../../documents-and-media-overview.md)
+* [ドキュメントとメディア](../../../documents-and-media.md)
 * [メタデータセットの定義](./defining-metadata-sets.md)

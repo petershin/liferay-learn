@@ -13,4 +13,4 @@ web-content-articles/filtering-and-sorting-web-content-articles.md
 ```
 
 - [基本的なWebコンテンツの記事の追加](./web-content-articles/adding-a-basic-web-content-article.md)
-- [Filtering and Sorting Web Content Articles](./web-content-articles/filtering-and-sorting-web-content-articles.md)
+- [Webコンテンツ記事の絞り込みとソート](./web-content-articles/filtering-and-sorting-web-content-articles.md)

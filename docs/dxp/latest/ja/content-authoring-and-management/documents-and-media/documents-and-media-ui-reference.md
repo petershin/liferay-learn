@@ -28,7 +28,7 @@
 ホームフォルダは、ドキュメントとメディアアプリケーションのルートフォルダとして機能します。
 ```
 
-**追加** ボタン（![Add Button](../../images/icon-add.png)）をクリックして、次のアクションにアクセスします：［ファイルアップロード］、［複数ファイルのアップロード］、［フォルダ］、［リポジトリ］、［ドキュメントとメディアのショートカット］、［External Video Shortcut］。 詳細については、 [フォルダの作成](./uploading-and-managing/creating-folders.md) および [ファイルのアップロード](./uploading-and-managing/uploading-files.md) を参照してください。
+**追加** ボタン（![Add Button](../../images/icon-add.png)）をクリックして、次のアクションにアクセスします：［ファイルアップロード］、［複数ファイルのアップロード］、［フォルダ］、［リポジトリ］、［ドキュメントとメディアのショートカット］、［External Video Shortcut］。 詳しくは、 [フォルダーの使用](./uploading-and-managing/using-folders.md) および [ファイルのアップロード](./uploading-and-managing/uploading-files.md) を参照してください。
 
 ![追加ボタンをクリックして、新しいフォルダまたはデジタルアセットを作成します。](./documents-and-media-ui-reference/images/04.png)
 
@@ -110,5 +110,5 @@
 
 ## 追加情報
 
-* [ドキュメントとメディアの概要](./documents-and-media-overview.md)
+* [ドキュメントとメディア](../documents-and-media.md)
 * [サイトのページやコンテンツをエクスポート/インポートする](../../site-building/sites/exporting-importing-site-pages-and-content.md)

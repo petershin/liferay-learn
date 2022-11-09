@@ -4,16 +4,17 @@
 
 ## リンクファイルの作成
 
-ドキュメントライブラリに、Google Drive&trade;のファイルまたはGoogle Photos&trade;の画像にリンクするファイルを作成できます。 次の手順に従ってください。
+以下の手順に従って、Google Drive&trade; のファイルや Google フォト&trade;の画像にリンクするファイルをドキュメントライブラリに作成します。
 
 1. ドキュメントライブラリで、 **追加** ボタン（![Add](../../../images/icon-add.png)）をクリックし、 ［**Google Drive Shortcut**］ を選択します。 ［**New Google Drive Shortcut**］ 画面が表示されます。
 
     ![ドキュメントライブラリの追加メニューから［New Google Drive Shortcut］を選択します。](./linking-to-files-on-google-drive/images/01.png)
 
-2. ［**ファイルの選択**］ ボタンをクリックして、Googleのファイルピッカーを開きます。
-3. ファイルピッカーを使用して、Google Drive&trade;またはGoogle Photos&trade;からファイルを選択します。
+1. ［**ファイルの選択**］ ボタンをクリックして、Googleのファイルピッカーを開きます。
 
-4. ［**Publish**］ をクリックします。
+1. ファイルピッカーを使用して、Google Drive&trade;またはGoogle Photos&trade;からファイルを選択します。
+
+1. ［**Publish**］ をクリックします。
 
     ![Google Drive&trade;のファイルや自分の写真を選択できます。](./linking-to-files-on-google-drive/images/02.png)
 

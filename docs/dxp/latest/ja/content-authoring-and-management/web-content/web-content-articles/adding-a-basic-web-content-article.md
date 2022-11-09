@@ -47,4 +47,4 @@ Webコンテンツは、サイトコンテンツを作成するための最も�
 
 * [表示ページテンプレートの作成と管理](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)
 * [Introduction to Web Content Structures](../web-content-structures/understanding-web-content-structures.md)
-* [Filtering and Sorting Web Content Articles](./filtering-and-sorting-web-content-articles.md)
+* [Webコンテンツ記事の絞り込みとソート](./filtering-and-sorting-web-content-articles.md)

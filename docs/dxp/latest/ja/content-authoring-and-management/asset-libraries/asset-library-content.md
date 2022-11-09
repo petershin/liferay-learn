@@ -19,7 +19,7 @@
 各タイプのコンテンツの作成の詳細は、 [コンテンツの作成と管理](../../content-authoring-and-management.html) を参照してください。
 
 ```{note}
-ライブラリのメニューページには、アクティブなアプリケーションのみが表示されます。 アプリケーションを有効にしたり無効にしたりするには、[Configuring Asset Libraries](./creating-and-managing-asset-libraries.md#configuring-asset-libraries)を参照してください。
+ライブラリのメニューページには、アクティブなアプリケーションのみが表示されます。 アプリケーションを有効にしたり無効にしたりするには、 [Configuring Asset Libraries](./creating-and-managing-asset-libraries.md#configuring-asset-libraries) を参照してください。
 ```
 
 ## サイトでコンテンツを使用する

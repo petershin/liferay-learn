@@ -2,7 +2,7 @@
 
 Liferayは、ドキュメントとメディアをGoogleドライブと統合するためのマーケットプレイスプラグインを提供しています。 有効にすると、Googleドライブファイルへのショートカットを作成して、ドキュメントとメディアを介してファイルを表示および管理できるようになります。 このプラグインは、 [Liferay Portal CE](https://web.liferay.com/marketplace/-/mp/application/105847499) システムと [Liferay DXP](https://web.liferay.com/marketplace/-/mp/application/98011653) システムの両方で使用できます。 Googleドライブ用のLiferayプラグインをインストールする方法については、 [アプリのインストール](../../../../system-administration/installing-and-managing-apps/installing-apps.md) を参照してください。
 
-インストール後、Googleプロジェクトをセットアップし、Liferayのドキュメントとメディアアプリケーションを設定する必要があります。
+プラグインをインストールした後、Googleプロジェクトを設定し、LiferayのDocuments and Mediaアプリケーションを設定する必要があります。
 
 ```{important}
 Googleドライブ用のLiferayプラグインは、Liferay CEポータルとLiferay DXPで利用できるLabsアプリケーションです。 Labsアプリは実験的なものであり、Liferayではサポートされていません。 これらは、便利な機能や最先端の機能の提供を加速するためにリリースされています。 この状態は予告なく変更されることがあります。 Labsアプリはご自身の判断でお使いください。
@@ -10,10 +10,10 @@ Googleドライブ用のLiferayプラグインは、Liferay CEポータルとLif
 
 ## Googleプロジェクトの設定
 
-Liferayプラグインを有効にするには、GoogleドライブAPIとGoogle Picker APIの両方が有効になっているアクティブなGoogleプロジェクトが必要です。 GoogleドライブAPIを使用すると、ユーザーはネイティブエディタでGoogleファイル（ドキュメント、シート、スライドなど）を表示および編集できます。 Picker APIを使用すると、ユーザーは、ドキュメントとメディアにファイルをアップロードするときに、Googleドライブに保存されているデジタルアセット（写真、ビデオ、ドキュメントなど）を表示して選択できます。 プロジェクトをまだ作成していない場合は、 [Creating a Google Project](https://support.google.com/googleapi/answer/6251787?hl=en&ref_topic=7014522) を参照してください。 それ以外の場合は、 [Enabling APIs](https://support.google.com/googleapi/answer/6158841) を参照して、プロジェクトでPicker APIを有効にする方法を確認してください。
+Liferayプラグインを有効にするには、Google Drive APIとGoogle Picker APIの両方を有効にして、アクティブなGoogleプロジェクトが必要です。 GoogleドライブAPIを使用すると、ユーザーはネイティブエディタでGoogleファイル（ドキュメント、シート、スライドなど）を表示および編集できます。 Picker APIを使用すると、ユーザーは、ドキュメントとメディアにファイルをアップロードするときに、Googleドライブに保存されているデジタルアセット（写真、ビデオ、ドキュメントなど）を表示して選択できます。 プロジェクトをまだ作成していない場合は、 [Creating a Google Project](https://support.google.com/googleapi/answer/6251787?hl=en&ref_topic=7014522) を参照してください。 それ以外の場合は、 [Enabling APIs](https://support.google.com/googleapi/answer/6158841) を参照して、プロジェクトでPicker APIを有効にする方法を確認してください。
 
 ```{note}
-必要に応じて、Googleドライブ用のLiferayプラグインとは別に、ドキュメントとメディアを介してGoogleドキュメントの作成と編集を有効にすることができます。 詳細は、［Googleドライブでドキュメントの作成と編集を有効にする](./enabling-document-creation-and-editing-with-google-drive.md)を参照してください。
+必要に応じて、Googleドライブ用のLiferayプラグインとは別に、ドキュメントとメディアを介してGoogleドキュメントの作成と編集を有効にすることができます。 詳細は、[Googleドライブでドキュメントの作成と編集を有効にする](./enabling-document-creation-and-editing-with-google-drive.md)を参照してください。
 ```
 
 プロジェクトでGoogle Picker APIを有効にした後、Picker APIの [APIキーを生成](https://support.google.com/googleapi/answer/6158862) し、 [OAuth 2を設定](https://support.google.com/cloud/answer/6158849) します。 OAuth 2の設定には、OAuth同意画面の設定、OAuth 2認証情報の生成、および承認されたJavaScriptオリジンのリストへのLiferayリクエストURIの追加が含まれます。 OAuth 2の認証情報を生成する際には、アプリケーションの種類として、 **Webアプリケーション** を選択していることを確認してください。
@@ -34,7 +34,7 @@ Googleプロジェクトの準備ができたら、Liferayコントロールパ�
 
 1. **Picker APIキー** を入力します。
 
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
 有効にすると、ユーザーはGoogleアセットへのドキュメントとメディアのショートカットを作成できます。
 
@@ -66,8 +66,9 @@ Googleプロジェクトの準備ができたら、Liferayコントロールパ�
 
 1. 完了したら、 ［**公開**］ をクリックします。
 
-公開されると、ドキュメントとメディアアプリケーションを介してGoogleドライブファイルにアクセスし、ファイルをLiferayで使用できるようになります。
+公開されると、ドキュメントとメディアアプリケーションを介してGoogleドライブファイルにアクセスし、ファイルをLiferayで使用できるようになります。 詳しくは、 [Google Drive上のファイルへのリンク](../../uploading-and-managing/linking-to-files-on-google-drive.md) をご覧ください。
 
 ## 追加情報
 
 * [Googleドライブでドキュメントの作成と編集を有効にする](./enabling-document-creation-and-editing-with-google-drive.md)
+* [Googleドライブ上のファイルへのリンク](../../uploading-and-managing/linking-to-files-on-google-drive.md)

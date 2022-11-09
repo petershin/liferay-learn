@@ -25,7 +25,7 @@
 
 このツールは、［コンテンツダッシュボード］ページの上部にあるグラフィカル領域です。 このグラフは、提供されたボキャブラリーとカテゴリーの組み合わせについて、 **Global** スコープとインスタンス内のすべての **サイト & アセットライブラリ** を含むアセットの総数を表しています。 この表は以下を考慮に入れています：
 
-* [ウェブコンテンツ 記事](../web-content/web-content-articles/adding-a-basic-web-content-article.md)、 [ドキュメントとメディア](../documents-and-media/documents-and-media-overview.md) と [ブログエントリー](../blogs/adding-blog-entries.md) すべてのサイトとアセットライブラリにまたがる。
+* [ウェブコンテンツ 記事](../web-content/web-content-articles/adding-a-basic-web-content-article.md)、 [ドキュメントとメディア](../documents-and-media.md) と [ブログエントリー](../blogs/adding-blog-entries.md) すべてのサイトとアセットライブラリにまたがる。
 
     ```{note}
     Liferay CE/DXP 7.4+から、ドキュメントとメディアがContent Dashboardで利用できるようになりました。 
@@ -40,7 +40,7 @@
 ![コンテンツダッシュボードのコンテンツ監査ツールの概要](./content-dashboard-interface/images/10.png)
 
 ```{tip}
-コンテンツ監査ツールで期待したチャートが表示されない場合は、グローバル語彙の[カテゴリを確認する](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) と[コンテンツをカテゴリ分けする](../tags-and-categories/organizing-content-with-categories-and-tags.md) を確認してください。 
+コンテンツ監査ツールに期待される表が表示されない場合は、グローバルボキャブラリの[カテゴリを確認](../tags-and-categories/defining-categories-and-vocabularies-for-content.md）し、[コンテンツが分類されている](../tags-and-categories/organizing-content-with-categories-and-tags.md] ことを確認してください。
 ```
 
 コンテンツ監査ツールのインターフェースには、次のものがあります。
@@ -92,19 +92,19 @@
 
 コンテンツの一覧には、次のカラムがあります。
 
-| 列               | 説明                                                                                                                                                                                                                                                                                                                    |
-|:--------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| タイトル            | 記事のタイトル（*）。                                                                                                                                                                                                                                                                                                           |
-| 作成者             | 作成者の名前。                                                                                                                                                                                                                                                                                                               |
-| 種類             | [Webコンテンツ](../web-content/web-content-articles/adding-a-basic-web-content-article.md)、[ドキュメント](../documents-and-media/documents-and-media-overview.md)のアセットタイプ（Liferay DXP 7.4+で使用可能）または[ブログエントリ](../blogs/adding-blog-entries.md)のアセットタイプ（Liferay DXP 7.4 U23+/GA23+で使用可能）を指定します。 |
-| サブタイプ          | コンテンツの [サブカテゴリ](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories) 。基本のドキュメントと外部動画のショートカットが含まれています。                                                                                                                                                                    |
-| サイトまたはアセットライブラリ | Liferay DXPインスタンス内の記事の場所。                                                                                                                                                                                                                                                                                             |
-| ステータス           | 記事のワークフローステータス。 ステータスが異なる複数のバージョンの記事には、すべてのステータスが表示されます。                                                                                                                                                                                                                                                              |
-| **第一ボキャブラリ** | これは、コンテンツ監査ツールの最初のボキャブラリです。                                                                                                                                                                                                                                                                                           |
-| **第二ボキャブラリ** | コンテンツ監査ツールのオプションの2番目のボキャブラリ。                                                                                                                                                                                                                                                                                          |
-| 編集日時            | 最後に記事が更新された日付または時刻。                                                                                                                                                                                                                                                                                                   |
+| 列               | 説明                                                                                                                                                                                                                                                                                       |
+|:--------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| タイトル            | 記事のタイトル（*）。                                                                                                                                                                                                                                                                              |
+| 作成者             | 作成者の名前。                                                                                                                                                                                                                                                                                  |
+| 種類              | [Web Content Article](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents](../documents-and-media.md) asset type (Liferay DXP 7.4+ で使用可能。) または [Blog Entry](../blogs/adding-blog-entries.md) asset type (Liferay DXP 7.4 U23+/GA23+ で使用可能) を指定することです。 |
+| サブタイプ           | コンテンツの [サブカテゴリ](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories) 。 基本のドキュメントと外部動画のショートカットが含まれています。                                                                                                                                       |
+| サイトまたはアセットライブラリ | Liferay DXPインスタンス内の記事の場所。                                                                                                                                                                                                                                                                |
+| ステータス           | 記事のワークフローステータス。 ステータスが異なる複数のバージョンの記事には、すべてのステータスが表示されます。                                                                                                                                                                                                                                 |
+| **第一ボキャブラリ** | これは、コンテンツ監査ツールの最初のボキャブラリです。                                                                                                                                                                                                                                                              |
+| **第二ボキャブラリ** | コンテンツ監査ツールのオプションの2番目のボキャブラリ。                                                                                                                                                                                                                                                             |
+| 編集日時            | 最後に記事が更新された日付または時刻。                                                                                                                                                                                                                                                                      |
 
-(*) *ページ*（![Page](../../images/icon-page.png)）アイコンは、[表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md)に基づくコンテンツを示します。
+()***Page**(![Page](../../images/icon-page.png)) アイコンは、 [Display Page Template](../../site-building/displaying-content/using-display-page-templates.md)に基づくコンテンツを示す。
 
 ```{note}
 ［第一ボキャブラリ］カラムと［第二ボキャブラリ］カラムは、選択したボキャブラリによって異なります。

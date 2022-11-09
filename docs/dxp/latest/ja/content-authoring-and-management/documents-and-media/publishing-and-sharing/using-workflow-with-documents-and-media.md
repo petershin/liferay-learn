@@ -1,56 +1,52 @@
 # ドキュメントとメディアでのワークフローの使用
 
-ユーザーは、 **ドキュメントとメディア** ファイルの[ワークフローを実装](../../../process-automation/workflow/using-workflows/activating-workflow.md)できます。  （一般的なワークフローの詳細については、 [ワークフローの概要](../../../process-automation/workflow/introduction-to-workflow.md) を参照してください。）
+Documents and Mediaは、Liferayのワークフローエンジン（ [）と完全に統合されています。](../../../process-automation/workflow/introduction-to-workflow.md). つまり、ファイルのレビューや承認プロセスをカスタムで定義することができます。 Documents and Mediaは、標準的なワークフロー機能に加えて、複数のワークフローを使用することもサポートしています。 すべての文書タイプに対してデフォルトのワークフローを設定し、特定の文書タイプに対して代替ワークフローを使用するように個々のフォルダを設定することができます。
 
-**ドキュメントとメディア** アプリケーションには、独自の個別のワークフロー設定があります。 たとえば、特定の[フォルダ](../uploading-and-managing/creating-folders.md)のワークフローを有効にして、そのフォルダにアップロードされたすべてのファイルが最初に確認されるようにすることができます。
+マーケティング、法務、会計の各ファイルに、それぞれ異なる [ドキュメントタイプ](../uploading-and-managing/managing-metadata/defining-document-types.md) を定義している場合を考えてみましょう。 その内容から、各文書タイプは特定のレビューと承認プロセスを経る必要があります。 これを実現するには、 [各タイプのカスタムワークフロー](../../../process-automation/workflow/designing-and-managing-workflows/workflow-designer.md) を作成し、Documents と Media フォルダでカスタムワークフローを使用するように設定します。 また、他のすべての種類のドキュメントに同じレビューと承認プロセスを実行させる必要がある場合は、Documents and Mediaのルートフォルダにデフォルトのワークフローを設定することができます。
 
-次に、複数の[ドキュメントタイプ](../uploading-and-managing/managing-metadata/defining-document-types.md)を作成し、レビュープロセスの対象となるドキュメントタイプを指定できます。 たとえば、作成された2つのドキュメントタイプ（法律文書ドキュメントタイプとトレーニングビデオドキュメントタイプ）がある場合、法律文書ドキュメントタイプに対してのみワークフローを有効にできます。 これは、 **フォルダ** レベルで設定されます。
+## デフォルトのワークフローを有効にする
 
-<a name="enabling-workflow-for-all-document-types" />
+以下の手順で、すべての種類の文書に対してデフォルトのワークフローを有効にします。
 
-## すべてのドキュメントタイプのワークフローを有効にする
+1. 目的のサイトまたはアセットライブラリで、 **Documents and Media** アプリケーションを開きます。
 
-1. 右上の（![Actions icon](../../../images/icon-actions.png) ）をクリックし、 ［**編集**］ をクリックします。
+1. ルートフォルダ（＝ホーム）から、アプリケーションバーの「**アクション**」 ボタン（![Actions Button](../../../images/icon-actions.png)）をクリックし、「**編集**」 を選択します。
 
-    ![［編集］をクリックして、オプション設定にアクセスします。](./using-workflow-with-documents-and-media/images/05.png)
+   ![アプリケーションバーの「アクション」ボタンをクリックし、「編集」を選択します。](./using-workflow-with-documents-and-media/images/01.png)
 
-1. ドロップダウンメニューから目的のワークフローの定義を選択します。
+1. ドロップダウンメニューから、目的の **ワークフロー** を選択します。
 
-    ![ワークフローの定義を選択します。](./using-workflow-with-documents-and-media/images/06.png)
+   ![ワークフローの定義を選択します。](./using-workflow-with-documents-and-media/images/02.png)
 
-1. 完了したら、 ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
-ワークフローを有効にすると、ユーザーがファイルをアップロードするたびに（ドキュメントタイプに関係なく）、 ［**公開**］ ボタンが ［**公開申請**］ ボタンに置き換えられます。
+サイトまたはアセットライブラリ内のすべてのドキュメントタイプに対して、デフォルトのワークフローを有効にします。 ユーザーがファイルをアップロードまたは編集するたびに、 **Publish** ボタンが、 **Submit for Publication** ボタンに置き換えられるようになりました。 必要に応じて、個々のフォルダーに対してこのワークフローをオーバーライドすることができます。 詳しくは、 [フォルダーとドキュメント タイプの代替ワークフローを有効にする](#enabling-alternative-workflows-for-folders-and-document-types) を参照してください。
 
-![展開して、［Document Type Restrictions and Workflow］ラジオボタンを表示します。](./using-workflow-with-documents-and-media/images/04.png)
+## フォルダーとドキュメントタイプの代替ワークフローを有効にする
 
-<a name="enabling-workflow-for-folders" />
+以下の手順で、個々のフォルダーや文書タイプに対してワークフローの有効/無効を設定します。
 
-## フォルダのワークフローを有効にする
+1. 目的のサイトまたはアセットライブラリで、 **Documents and Media** アプリケーションを開きます。
 
-1. （ご自身のサイト）&rarr; ［**Content & Data**］ &rarr; ［**ドキュメントとメディア**］ に移動します。
-1. 目的のフォルダの横にある（![Actions icon](../../../images/icon-actions.png)）&rarr; ［**編集**］ の順にクリックします。
+1. 目的のフォルダーの **アクション** ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 **編集** を選択します。
 
-    ![［編集］をクリックして、フォルダのワークフロー設定にアクセスします。](./using-workflow-with-documents-and-media/images/01.png)
+   ![フォルダーの[アクション]ボタンをクリックし、 [編集]を選択します。](./using-workflow-with-documents-and-media/images/03.png)
 
-1. ［**Document Type Restrictions and Workflow**］ セクションを展開します。
+1. ［**ドキュメントタイプ制限およびワークフロー**］ で、目的の構成を選択します。
 
-    ![展開して、［Document Type Restrictions and Workflow］ラジオボタンを表示します。](./using-workflow-with-documents-and-media/images/02.png)
+   **親フォルダー（parent-folder）の文書タイプ制限とワークフローを使用する** : 親フォルダーの設定を使用します。 これはデフォルト値である。
 
-1. 目的の設定を選択します。 フォルダに親フォルダ（ここでは **ドキュメントとメディアホーム** フォルダ）を継承させるか、特定のドキュメントタイプを指定するか、この指定されたフォルダ内のすべてのドキュメントタイプのワークフローを有効にすることができます。
-1. ［**Default Workflow for this Folder**］ が選択されている場合は、ワークフローの定義を選択します。
+   **このフォルダー（current-folder）の特定のドキュメントタイプの制限とワークフローを定義する** : 個々のドキュメントタイプに対して **カスタムワークフロー** を選択するか、 **ワークフローなし** を選択して個々のタイプに対するデフォルトワークフローを無効にすることができます。
 
-    ![展開して、［Document Type Restrictions and Workflow］ラジオボタンを表示します。](./using-workflow-with-documents-and-media/images/03.png)
+   **Default Workflow for This Folder (current-folder**) : 現在のフォルダーに対するデフォルトのワークフローを選択します。 文書の種類に関係なく、フォルダ内のすべてのファイルに対してワークフローを適用します。
 
-1. 完了したら、 ［**保存**］ をクリックします。
+   ![［ドキュメントタイプ制限およびワークフロー］で、目的の構成を選択します。](./using-workflow-with-documents-and-media/images/04.png)
 
-このフォルダのワークフローが有効になっています。
+1. ［**Save**］ をクリックします。
 
-親（**ホーム** など）フォルダでワークフローが有効になっている場合でも、ユーザーは特定のフォルダ（またはサブフォルダ）のワークフローを **無効** にすることもできます。  これを行うには、3番目のオプションである ［**Default Workflow for this Folder (Folder Name**)］ を選択してから、 ［**No Workflow**］ を選択します。 無効にすると、このフォルダにアップロードされたファイルはレビュープロセスを必要としません。
-
-<a name="additional-information" />
+これにより、選択したフォルダーと文書タイプに対して、選択したワークフローが有効になります。
 
 ## 追加情報
 
-* [ワークフローのアクティブ化](../../../process-automation/workflow/using-workflows/activating-workflow.md)
+* [ワークフローデザイナー](../../../process-automation/workflow/designing-and-managing-workflows/workflow-designer.md)
 * [ドキュメントとメディアUIリファレンス](../documents-and-media-ui-reference.md)

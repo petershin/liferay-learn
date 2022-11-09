@@ -38,7 +38,7 @@ Liferayのシステムは、設定された [チェック間隔](#configuring-th
 
    ![チェック間隔の分数を入力します。](./using-file-expiration-and-review-dates/images/03.png)
 
-1. 完了したら、 ［**保存**］ をクリックします。
+1. 完了したら、 ［**Save**］ をクリックします。
 
 保存されると、システムは設定された間隔に従って、有効期限またはレビュー日時に達したファイルを自動的にチェックします。
 
@@ -61,5 +61,5 @@ Liferayのシステムは、設定された [チェック間隔](#configuring-th
 ## 追加情報
 
 * [ファイルのアップロード](./uploading-files.md)
-* [ドキュメントとメディアの概要](../documents-and-media-overview.md)
+* [ドキュメントとメディア](../../documents-and-media.md)
 * [ドキュメントとメディアUIリファレンス](../documents-and-media-ui-reference.md)

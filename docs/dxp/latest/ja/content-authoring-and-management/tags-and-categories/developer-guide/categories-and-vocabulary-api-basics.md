@@ -3,24 +3,25 @@
 LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能のためのサービスを提供します。 APIを使用してボキャブラリを作成および編集できます。 カテゴリーをAPIに関連付けて編集することもできます。 まずは、新しいボキャブラリを追加する例を見てみましょう。
 
 ## ボキャブラリの追加
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [カテゴリーとボキャブラリAPIの基本](./liferay-f5w3.zip) をダウンロードして解凍します。
+1. [Categories and Vocabulary API Basics](./liferay-f5w3.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-f5w3.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories/developer-guide/liferay-f5w3.zip -O
    ```
 
    ```bash
    unzip liferay-f5w3.zip
    ```
 
-1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
+1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
 
-1. cURLスクリプトを使用して、サイトに新しいボキャブラリを追加します。 コマンドラインで、 `curl` フォルダに移動します。 サイトIDをパラメーターとして使用して、`TaxonomyVocabulary_POST_ToSite.sh`スクリプトを実行します。
+1. cURLスクリプトを使用して、サイトに新しいボキャブラリを追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`TaxonomyVocabulary_POST_ToSite.sh`スクリプトを実行します。
 
     ```bash
     ./TaxonomyVocabulary_POST_ToSite.sh 1234
@@ -28,9 +29,9 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 
     JSON応答では、新しいボキャブラリが追加されたことを示しています。
 
-```bash
-  "availableLanguages" : [ "en-US" ],
-  "creator" : {
+    ```bash
+    "availableLanguages" : [ "en-US" ],
+    "creator" : {
     "additionalName" : "",
     "contentType" : "UserAccount",
     "familyName" : "Test",
@@ -38,17 +39,17 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
     "id" : 20129,
     "name" : "Test Test",
     "profileURL" : "/web/test"
-  },
-  "dateCreated" : "2021-09-09T21:03:15Z",
-  "dateModified" : "2021-09-09T21:03:15Z",
-  "description" : "Foo",
-  "id" : 40126,
-  "name" : "Able",
-  "numberOfTaxonomyCategories" : 0,
-  "siteId" : 20125
-```
+    },
+    "dateCreated" : "2021-09-09T21:03:15Z",
+    "dateModified" : "2021-09-09T21:03:15Z",
+    "description" : "Foo",
+    "id" : 40126,
+    "name" : "Able",
+    "numberOfTaxonomyCategories" : 0,
+    "siteId" : 20125
+    ```
 
-1. *［Administration Menu］* &rarr; *［カテゴリー設定］* &rarr; *［カテゴリー］* に移動して、カテゴリーアプリケーションに移動します。 新しいボキャブラリが追加されたことを確認してください。
+1. ［**Administration Menu**］ &rarr; ［**カテゴリー設定**］ &rarr; ［**カテゴリー**］ に移動して、カテゴリーアプリケーションに移動します。 新しいボキャブラリが追加されたことを確認してください。
 
     ![新しいボキャブラリが追加されました。](./categories-and-vocabulary-api-basics/images/01.png)
 
@@ -115,7 +116,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 他の例のJavaクラスはこれと類似していますが、異なる`TaxonomyVocabularyResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、[TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java)を参照してください。
+サービスの詳細は、 [TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`TaxonomyVocabulary` RESTサービスを呼び出す例です。
@@ -191,7 +192,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_GET_ById
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-23
+   :lines: 8-20
 ```
 
 `TaxonomyVocabulary`フィールドがJSONに一覧表示されます。

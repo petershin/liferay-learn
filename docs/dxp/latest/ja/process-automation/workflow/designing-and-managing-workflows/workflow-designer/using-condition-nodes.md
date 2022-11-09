@@ -6,13 +6,13 @@
 
 条件は、指定された条件が満たされているかどうかをチェックするゲートキーパーの役割を果たし、その条件に基づいて、適切なレビュアを割り当てたり、特定のタスクに移行したりするなど、アセットに対してアクションを起こします。
 
-[Category Specific Definition](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/category-specific-definition.xml) には、条件ノードが含まれています。 条件付きロジックは、アセットカテゴリをチェックして、 **法務レビュー** タスクに移行するか、または **コンテンツレビュー** タスクに移行するかを選択します。 ワークフローに条件ノードを追加するには、以下の手順を行います。
+[Category Specific Definition](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml) には、条件ノードが含まれています。 条件付きロジックは、アセットカテゴリをチェックして、 **法務レビュー** タスクに移行するか、または **コンテンツレビュー** タスクに移行するかを選択します。 ワークフローに条件ノードを追加するには、以下の手順を行います。
 
 1. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**ワークフロー**］ &rarr; ［**ワークフロー**］ へ行きます。
 1. （![Add icon](../../../../images/icon-add.png)）をクリックして新規ワークフローを追加します。
 1. ワークフローデザイナーのキャンバスで、ワークフローの名前を入力します。
 1. ［**ソース**］ ビューを開いてください。
-1. [Category Specific Definition](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/category-specific-definition.xml) をアップロードします。 その生のコンテンツをソースビューにコピーして既存のコンテンツをすべて上書きするか、 ［**ファイルをインポート**］ をクリックして、定義のXMLファイルをアップロードします。
+1. [Category Specific Definition](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml) をアップロードします。 その生のコンテンツをソースビューにコピーして既存のコンテンツをすべて上書きするか、 ［**ファイルをインポート**］ をクリックして、定義のXMLファイルをアップロードします。
 1. ［**図**］ ビューを開きます。
 1. ［条件ノード］、［**Determine Branch**］ をクリックして、ノードのプロパティを設定します。
 1. **スクリプト （Groovy**） フィールドを探します。 コンテンツをより見やすくするには、フィールドのサイズを変更します（大きくします）。

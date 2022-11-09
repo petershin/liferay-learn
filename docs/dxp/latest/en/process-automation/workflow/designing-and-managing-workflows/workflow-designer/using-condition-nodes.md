@@ -6,13 +6,13 @@ _Condition_ nodes are useful for acting  (transitioning, assigning, etc.) condit
 
 Conditions act as a gatekeeper by checking whether the specified conditions are met, and then acting on the asset---assigning the right reviewer, or transitioning to a certain task, based on those conditions.
 
-The [Category Specific Definition](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/category-specific-definition.xml) contains a Condition node. The conditional logic checks the asset category to choose whether to transition to the _Legal Review_ task or the _Content Review_ task. To add a Condition node to your workflow,
+The [Category Specific Definition](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml) contains a Condition node. The conditional logic checks the asset category to choose whether to transition to the _Legal Review_ task or the _Content Review_ task. To add a Condition node to your workflow,
 
 1. Navigate to the _Global Menu_ &rarr;  _Applications_ &rarr; _Workflow_ &rarr; _Process Builder_.
 1. Click the (![Add icon](../../../../images/icon-add.png)) to add a new workflow.
 1. In the workflow designer Canvas, enter a name for the workflow.
 1. Open the _Source_ view.
-1. Find the [Category Specific Definition](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/category-specific-definition.xml). Either copy its raw contents into the source view, overwriting all the existing content, or click _Import A File_ and upload the definition's XML file.
+1. Find the [Category Specific Definition](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml). Either copy its raw contents into the source view, overwriting all the existing content, or click _Import A File_ and upload the definition's XML file.
 1. Open the _Diagram_ view.
 1. Click the Condition node, _Determine Branch_, to configure the node's properties.
 1. Find the _Script (Groovy)_ field. Resize the field (make it bigger) to see the contents more clearly:

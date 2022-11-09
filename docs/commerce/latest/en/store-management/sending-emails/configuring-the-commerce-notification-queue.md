@@ -4,7 +4,7 @@ When an event triggers a notification (for instance, when an order is placed), i
 
 You can change these intervals in the system settings of your instance.
 
-1. Open the Global Menu and navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
 
 1. Click *Orders* and then select *Commerce Notification Queue*. The default values are in minutes. You can change the values for the *Notification Queue Entry Check Interval* and the *Notification Queue Entry Delete Interval* here.
 

@@ -31,7 +31,7 @@ Follow these steps to create a notification template for a received order:
 
    ![Select the channel for creating a notification template.](./using-notification-templates/images/03.png)
 
-1. Click on the desired channel.
+1. Click the desired channel.
 
 1. Click the *Notification Templates* tab.
 
@@ -82,13 +82,13 @@ Use this section to define the content of the email notification.
 * **Body**:
 
    ```
-   Dear `[%ORDER_CREATOR%]`,
+   Dear [%ORDER_CREATOR%],
 
-   Your Order `[%ORDER_ID%]` has been received.
+   Your Order [%ORDER_ID%] has been received.
 
    Regards,
 
-   `[%ACCOUNT_ROLE_ORDER_MANAGER%]`
+   [%ACCOUNT_ROLE_ORDER_MANAGER%]
    ```
 
 ## Viewing Email Notifications of an Order
@@ -117,7 +117,7 @@ To create email notifications in Commerce 2.0 and below:
    * **From Address**: Your store's email address (for example: *orders@yourstore.com*)
    * **From Name**: Name of the store or a customer service representative
    * **Type**: Order Placed
-   * **Enabled**: Switch the Toggle to *YES*
+   * **Enabled**: Switch the toggle to *YES*
    * **Subject**: Email subject (for example: *Your order has been received.*)
    * **Body**: You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
 

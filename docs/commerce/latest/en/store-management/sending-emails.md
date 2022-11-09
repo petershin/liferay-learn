@@ -29,7 +29,7 @@ A notification template defines the sender and receiver, the event trigger, and 
 The *Notification Queue* tab displays all the email notifications of a channel. Each email notification entry shows its sender, receiver, type of event trigger, status and priority. By default, the system checks the notification queue at 15-minute intervals for unsent notifications. See [Configuring the Commerce Notification Queue](./sending-emails/configuring-the-commerce-notification-queue.md) to learn more about changing the defaults.
 
 ::::{grid} 2
-:gutter: 3 3 3 3a
+:gutter: 3 3 3 3
 
 :::{grid-item-card}  Using Notification Templates
 :link: ./sending-emails/using-notification-templates.md

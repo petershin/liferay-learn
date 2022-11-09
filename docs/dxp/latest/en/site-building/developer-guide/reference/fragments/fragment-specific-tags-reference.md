@@ -2,8 +2,8 @@
 
 Along with standard HTML, CSS, and JavaScript, you can use Liferay-specific tags and, since Liferay Portal 7.3 GA3 and Liferay DXP 7.3, attributes, to make editable sections or embed widgets in your fragment. Editable elements can be modified before publication, which means that you can create simple, reusable fragments that have identical formatting, but contain elements that are adaptable to the specific context.
 
-```{note}
-Nesting editable elements inside of other editable elements in a fragment *is not supported.*
+```{warning}
+Nesting editable elements inside of other editable elements in a fragment is not supported.
 ```
 
 Page fragments have access to these types of liferay-specific tags and attributes that add these features:

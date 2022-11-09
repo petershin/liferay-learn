@@ -46,7 +46,7 @@ WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("expired
 
 **条件** ノードは、アセットやその実行コンテキストをチェックし、その結果に応じて、適切なトランジションに送ります。 このノードでは、トランジションの1つに値を設定するスクリプトが必要です。
 
-[Category Specific Definition](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/category-specific-definition.xml) は、対象となるアセットを調べ、その[アセットカテゴリー](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md)を取得し、初期の`returnValue`を設定するスクリプトです。 その後、そのアセットが **legal** カテゴリでマークされているかどうかを確認します。 マークされていない場合は、 **コンテンツレビュー**（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、 **法務レビュー**（ワークフローのlegal-reviewタスク）を通過します。
+[Category Specific Definition](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml) は、対象となるアセットを調べ、その[アセットカテゴリー](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md)を取得し、初期の`returnValue`を設定するスクリプトです。 その後、そのアセットが **legal** カテゴリでマークされているかどうかを確認します。 マークされていない場合は、 **コンテンツレビュー**（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、 **法務レビュー**（ワークフローのlegal-reviewタスク）を通過します。
 
 ### タスクノード
 

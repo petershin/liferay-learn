@@ -95,7 +95,7 @@ Use this section to define the content of the email notification.
 
 Email notifications related to an order are tracked. To view them, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Commerce* &rarr; *Orders*. Select an order and click the *Emails* tab. See [Order Information](../../order-management/orders/order-information.md) to learn more.
 
-![You can view the triggered notification under the Emails tab of an order.](./store-emails/images/04.png)
+![You can view the triggered notification under the Emails tab of an order.](./using-notification-templates/images/07.png)
 
 ## Commerce 2.0 and Below
 

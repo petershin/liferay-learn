@@ -1,6 +1,5 @@
 ---
 toc:
-- ./sending-emails/store-emails.md
 - ./sending-emails/using-notification-templates.md
 - ./sending-emails/configuring-the-commerce-notification-queue.md
 - ./sending-emails/notification-template-variables-reference-guide.md
@@ -10,16 +9,37 @@ toc:
 ```{toctree}
 :maxdepth: 1
 
-sending-emails/store-emails.md
 sending-emails/using-notification-templates.md
 sending-emails/configuring-the-commerce-notification-queue.md
 sending-emails/notification-template-variables-reference-guide.md
 ```
 
-```{raw} html
-:file: ../landingpage_template.html
+You can configure Liferay to send email notifications for different events that happen in your store. For example, you may want to send updates to the order manager or another person of interest with details of the order. This can include the order ID, shipping and billing addresses, the payment method used, and more. To do this, you must use a notification template that is customizable and defines the contents of the email.
+
+```{note}
+To use notifications in Commerce, you must first configure the mail settings for Liferay DXP. See [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html) for more information.
 ```
 
-```{raw} html
-:file: sending-emails/landing.html
-```
+## Notification Templates
+
+A notification template defines the sender and receiver, the event trigger, and the contents of the email notification. After configuring Liferay's mail settings, navigate to *Control Panel* &rarr; *Commerce* &rarr; *Channels*. Click on the *Notification Templates* tab and click the *Add* button to create a notification template. These notifications are configured per [channel](../../store-management/channels/introduction-to-channels.md). When sending emails, you can use wildcards that are available out-of-the-box (OOTB) or enter email addresses. See [Using Notification Templates](./sending-emails/using-notification-templates.md) and [Notification Template Variables Reference Guide](./sending-emails/notification-template-variables-reference-guide.md) to learn about creating notification templates, customizing them, and using wildcards.
+
+## Notification Queue
+
+The *Notification Queue* tab displays all the email notifications of a channel. Each email notification entry shows its sender, receiver, type of event trigger, status and priority. By default, the system checks the notification queue at 15-minute intervals for unsent notifications. See [Configuring the Commerce Notification Queue](./sending-emails/configuring-the-commerce-notification-queue.md) to learn more about changing the defaults.
+
+::::{grid} 2
+:gutter: 3 3 3 3a
+
+:::{grid-item-card}  Using Notification Templates
+:link: ./sending-emails/using-notification-templates.md
+:::
+
+:::{grid-item-card}  Configuring the Notification Queue
+:link: ./sending-emails/configuring-the-commerce-notification-queue.md
+:::
+
+:::{grid-item-card}  Notification Template Variables Reference Guide
+:link: ./sending-emails/notification-template-variables-reference-guide.md
+:::
+::::

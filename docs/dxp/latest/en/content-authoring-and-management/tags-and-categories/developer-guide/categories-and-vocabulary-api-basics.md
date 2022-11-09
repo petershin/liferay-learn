@@ -30,23 +30,23 @@ Then, follow these steps:
     The JSON response shows a new vocabulary has been added:
 
     ```bash
-  "availableLanguages" : [ "en-US" ],
-  "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20129,
-    "name" : "Test Test",
-    "profileURL" : "/web/test"
-  },
-  "dateCreated" : "2021-09-09T21:03:15Z",
-  "dateModified" : "2021-09-09T21:03:15Z",
-  "description" : "Foo",
-  "id" : 40126,
-  "name" : "Able",
-  "numberOfTaxonomyCategories" : 0,
-  "siteId" : 20125
+    "availableLanguages" : [ "en-US" ],
+    "creator" : {
+      "additionalName" : "",
+      "contentType" : "UserAccount",
+      "familyName" : "Test",
+      "givenName" : "Test",
+      "id" : 20129,
+      "name" : "Test Test",
+      "profileURL" : "/web/test"
+    },
+    "dateCreated" : "2021-09-09T21:03:15Z",
+    "dateModified" : "2021-09-09T21:03:15Z",
+    "description" : "Foo",
+    "id" : 40126,
+    "name" : "Able",
+    "numberOfTaxonomyCategories" : 0,
+    "siteId" : 20125
     ```
 
 1. Go to the Categories application by navigating to *Administration Menu* &rarr; *Categorization* &rarr; *Categories*. See that a new vocabulary has been added.

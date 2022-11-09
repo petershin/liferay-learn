@@ -17,8 +17,6 @@ The toolkit requires this software:
 
 NPM and Yarn are package managers that you'll use to install the the toolkit and modules it depends on.
 
-Liferay's [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/master/docs/_template/js/setup_tutorial.sh) script provides commands for setting up Yeoman, Yarn, and the toolkit. The script is available in the example ZIP file and all of our example JavaScript project ZIP files.
-
 1. Start with installing an NPM and Node.js via a [Node.js LTS](https://nodejs.org/en/download/).
 
 1. Download and unzip the example JavaScript project ZIP file.
@@ -40,6 +38,8 @@ Liferay's [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/mast
     ```bash
     ./setup_tutorial.sh
     ```
+
+This `setup_tutorial.sh` script provides commands for setting up Yeoman, Yarn, and the toolkit. The script is available in the example ZIP file and all of our example JavaScript project ZIP files.
 
 Resolve all unmet requirements reported by the script and rerun the script until it reports that your environment is ready.
 

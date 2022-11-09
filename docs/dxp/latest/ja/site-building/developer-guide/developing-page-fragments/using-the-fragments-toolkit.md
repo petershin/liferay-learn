@@ -17,8 +17,6 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 NPM と Yarn は、依存するツールキットとモジュールをインストールするために使用するパッケージ マネージャーです。
 
-Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/master/docs/_template/js/setup_tutorial.sh) スクリプトは、Yeoman、Yarn、およびツールキットを設定するためのコマンドを提供します。 スクリプトは、サンプルの ZIP ファイルと、サンプルのすべての JavaScript プロジェクトの ZIP ファイルで使用できます。
-
 1. [Node.js LTS](https://nodejs.org/en/download/) を介して NPM と Node.js をインストールすることから始めます。
 
 1. サンプルの JavaScript プロジェクトの ZIP ファイルをダウンロードして解凍します。
@@ -40,6 +38,8 @@ Liferay の [setup_tutorial.sh](https://github.com/liferay/liferay-learn/blob/ma
     ```bash
     ./setup_tutorial.sh
     ```
+
+この `setup_tutorial.sh` スクリプトは、Yeoman、Yarn、およびツールキットを設定するためのコマンドを提供します。 スクリプトは、サンプルの ZIP ファイルと、サンプルのすべての JavaScript プロジェクトの ZIP ファイルで使用できます。
 
 スクリプトによって報告された満たしていない要件をすべて解決し、環境の準備が整ったと報告されるまでスクリプトを再実行してください。
 

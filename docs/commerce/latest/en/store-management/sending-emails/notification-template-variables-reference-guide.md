@@ -1,14 +1,14 @@
 # Notification Template Variables Reference Guide
 
-When creating a notification template, you can use wildcards as a substitute for key values. For the *Email Settings* and *Body* fields, the key values include the customer's name, the order ID, shipping and billing addresses, and a list of items in the order.
+When creating a notification template, you can use placeholders as a substitute for key values. For the *Email Settings* and *Body* fields, the key values include the customer's name, the order ID, shipping and billing addresses, and a list of items in the order.
 
 ![Use these variables in the body of the email.](./notification-template-variables-reference-guide/images/02.png)
 
-To view the available wildcards, select a notification template type from the *Type* dropdown.
+To view the available placeholders, select a notification template type from the *Type* dropdown.
 
 ![Select a type that triggers the notification.](./notification-template-variables-reference-guide/images/01.png)
 
-Once a template type has been selected, expand the *Definition of Terms* menu to view the available wildcards and their descriptions.
+Once a template type has been selected, expand the *Definition of Terms* menu to view the available placeholders and their descriptions.
 
 ## Email Settings
 

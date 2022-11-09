@@ -52,11 +52,11 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 
 このチュートリアルでは、すでに検索が有効になっているサービスビルダーアプリケーションがあることを前提に説明します。 アプリケーションには最低限必要です。
 
-`*SearchRegistrar.java` - アプリケーションのエンティティに対して検索サービスを検索フレームワークに登録します（例： [S5E6SearchRegistrar.java](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/building-applications/data-frameworks/asset-framework/enabling-assets/resources/liferay-s5e6.zip/s5e6-service/src/main/java/com/acme/s5e6/search/S5E6EntrySearchRegistrar.java) ）。
+`*SearchRegistrar.java` - アプリケーションのエンティティに対して検索サービスを検索フレームワークに登録します（例： `com.acme.s5e6.service.search.S5E6SearchRegistrar.java` Javaクラス ）。
 
-`*ModelIndexerWriterContributor.java` - エントリの再インデックスおよびバッチ再インデックスの動作を設定します（例： [S5E6EntryModelIndexerWriterContributor.java](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/building-applications/data-frameworks/asset-framework/enabling-assets/resources/liferay-s5e6.zip/s5e6-service/src/main/java/com/acme/s5e6/search/S5E6EntryModelIndexerWriterContributor.java) ）。
+`*ModelIndexerWriterContributor.java` - エントリの再インデックスおよびバッチ再インデックスの動作を設定します（例： `com.acme.s5e6.service.search.S5E6EntryModelIndexerWriterContributor.java` Javaクラス ）。
 
-`*ModelSummaryContributor.java` - エントリーの結果サマリーを構築します（例： [S5E6EntryModelSummaryContributor.java](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/building-applications/data-frameworks/asset-framework/enabling-assets/resources/liferay-s5e6.zip/s5e6-service/src/main/java/com/acme/s5e6/search/S5E6EntryModelSummaryContributor.java) ）。
+`*ModelSummaryContributor.java` - エントリーの結果サマリーを構築します（例： `com.acme.s5e6.service.search.S5E6EntryModelSummaryContributor.java` Javaクラス ）。
 
 検索を有効にする方法については、検索の使用の [開発者ガイド](../../../using-search/developer-guide.md)を参照してください。
 

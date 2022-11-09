@@ -26,7 +26,31 @@ OpenID Connectを使用するには、まずプロバイダーにクライアン
 
 ## OpenID Connectプロバイダー接続の構成
 
-［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**System Scope**］ の下の ［***OpenID Connect Provider***］ を選択します。
+Liferay は、プロバイダ接続のための新しいインターフェースに関するフィードバックを求めています。 このため、接続の作成方法には、標準的な方法と新しい方法の2つがあります。
+
+**OAuth 2.0に対応した新しいOpenID Connectプロバイダ接続を追加しました。**
+
+このインターフェースは、クライアント接続をきめ細かく制御したい人向けです。 すべての設定は、 [OpenID Connect 設定仕様](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest) で定義されている、プロバイダの Well-Known Configuration Endpoint を通して行われます。
+
+1. Global Menu &rarr; Security &rarr; OAuth Client Administrationにアクセスします。
+
+1. 2つのタブがあります。 1つ目は、Well Known URIを持つ認可サーバーの場合です。 2つ目は、Well Known URIを持たない認可サーバーの場合である。 適切なタブを選択し、 **Add**(![Add Button](../../../images/icon-add.png)) をクリックします。
+
+1. 認証サーバーの Well Known URI があれば、それを Well Known URI フィールドに貼り付けます。 例えば、Googleの場合は、https://accounts.google.com/.well-known/openid-configuration。
+
+1. たいていの場合、これだけでいいのです。 Well Known URIをお持ちでない場合は、以下のフィールドを使用して接続を設定します。 完了したら、 ［**Save**］ をクリックします。
+
+フォームの他のフィールドは、プロバイダと生成された特定の設定用です。
+
+**OAuthクライアント情報。** [RFC-7591](https://www.rfc-editor.org/rfc/rfc7591.html) JSON 形式に従ったクライアント設定情報を追加します。 Well Known URIを使用した場合は、ここに何も追加する必要がない場合があることに注意してください。
+
+**OAuthクライアントデフォルトの認証リクエストパラメータ。** [認証リクエストパラメータ](https://www.iana.org/assignments/oauth-parameters) を自分で指定しないLiferayアプリケーションがある場合、ここでこのOAuthクライアントを使用するためのデフォルトパラメータをJSON形式で指定します。 カスタムパラメータ値は、文字列のJSON配列である必要があります。
+
+**OAuthクライアントデフォルトトークンリクエストパラメータ。** [トークン要求パラメータ](https://www.iana.org/assignments/oauth-parameters) 自身を指定しない Liferay アプリケーションがある場合、ここでこの OAuth クライアントを使用するためのデフォルトパラメータを JSON 形式で指定します。 カスタムパラメータ値は、文字列のJSON配列である必要があります。
+
+**標準的なOpenID Connectプロバイダ接続**
+
+［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**System Scope**］ の下の ***［OpenID Connect Provider**］*を選択します。
 
 ![［System Settings］メニューでOpenID構成を検索する。](using-openid-connect/images/01.png)
 
@@ -36,12 +60,12 @@ OpenID Connectを使用するには、まずプロバイダーにクライアン
 
 1. プロバイダーから受け取った情報を使用して、フォームに記入します。
 
-   | Field                                | Description                                                                                                                                                      |
+   | 項目                                   | Description                                                                                                                                                      |
    |:------------------------------------ |:---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | **プロバイダー名** | この名前は、ユーザーがOpenID Connectを使用してログインするときにサインインポートレットに表示されます。                                                                                                       |
    | **OpenIDクライアントID** | プロバイダーから受け取ったOAuth 2.0クライアントIDを提供します。                                                                                                                            |
    | **OpenID Connect クライアントシークレット** | プロバイダーから受け取ったOAuth 2.0クライアントシークレットを提供します。                                                                                                                        |
-   | **スコープ** | ユーザー名と電子メールを要求するデフォルトのままにします。 プロバイダーは、他の範囲のユーザー情報を提供する場合があります。                                                                                                   |
+   | **範囲** | ユーザー名と電子メールを要求するデフォルトのままにします。 プロバイダーは、他の範囲のユーザー情報を提供する場合があります。                                                                                                   |
    | **ディスカバリーエンドポイント** | 他のURLはこのURLから取得でき、プロバイダーによって異なります。                                                                                                                               |
    | **ディスカバリーエンドポイントキャッシュのキャッシュ時間(ミリ秒**) | この期間に検出されたエンドポイント（URL）をキャッシュします。                                                                                                                                 |
    | **認証エンドポイント** | このURLは、ユーザーを承認する（つまり、ユーザーをサインインする）ためのプロバイダーのURLを指します。                                                                                                            |
@@ -58,14 +82,14 @@ OpenID Connectを使用するには、まずプロバイダーにクライアン
 エクスポートされた構成は、次のシステム設定の構成ファイルになります。
 
 ```
-com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration-［name］.config
+com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration-[name].config
 ```
 
 ここで、`［name］`には、`provider1`などの一意の名前を入力します。
 
 ## OpenID Connect認証の有効化
 
-1. ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**Virtual Instance Scope**］ の下の ［***OpenId Connect**］* を選択します。
+1. ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**Virtual Instance Scope**］ の下の ***［OpenId Connect**］*を選択します。
 
     ![インスタンス設定でOpenID Connect認証を有効にする。](using-openid-connect/images/02.png)
 

@@ -15,7 +15,6 @@ toc:
 - ./setting-up-liferay/tuning-liferay.md
 - ./setting-up-liferay/tuning-your-jvm.md
 ---
-
 # Liferayのセットアップ
 
 ```{toctree}
@@ -63,9 +62,9 @@ setting-up-liferay/tuning-your-jvm.md
 * [Liferayの調整](#tune-liferay)
 * [JNDIのセットアップ](#setting-up-jndi)
 
-上記の各タスクは、以下の説明にリンクしており、該当する記事への参照も含まれています。 最初のタスクは、本番用のLiferayインスタンスには不可欠です。 お使いのシステムにも適用される **その他のセットアップタスク** を調べてください。 タスクを完了するときは、必ず上記のチェックリストを見直すようにしてください。
+上記の各タスクは、以下の説明にリンクしており、該当する記事への参照も含まれています。 最初のタスクは、本番用のLiferayインスタンスには不可欠です。 お使いのシステムにも適用される*その他のセットアップタスク*を調べてください。 タスクを完了するときは、必ず上記のチェックリストを見直すようにしてください。
 
-## Liferayの起動
+## Liferayの有効化
 
 `Subscribers`
 
@@ -97,7 +96,7 @@ Liferay DXPを使用している場合は、[アクティベーションキー�
 
 ## ファイルストレージの設定
 
-[ドキュメントとメディア](../content-authoring-and-management/documents-and-media/documents-and-media-overview.md)、添付ファイルおよびコンテンツへの画像の埋め込みを使用するには、ファイルストレージが必要です。  設定するには、[ファイルストレージ](../system-administration/file-storage.md)にアクセスします。
+[ドキュメントとメディア](../content-authoring-and-management/documents-and-media.md)、添付ファイルおよびコンテンツへの画像の埋め込みを使用するには、ファイルストレージが必要です。  設定するには、[ファイルストレージ](../system-administration/file-storage.md)にアクセスします。
 
 ファイルストレージを設定した後、ウイルス対策のファイルスキャンを有効にすることを検討してください。 方法については、 [アップロードされたファイルのウイルス対策スキャンを有効にする](../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md) を参照してください。
 

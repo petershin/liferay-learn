@@ -37,4 +37,4 @@ Liferay DXP 7.4.13 Update 100
 
 3桁目の変更（例：6.2.1→6.2.2）はメンテナンスリリースを表します。 このリリースには、セキュリティ修正、信頼性向上などが含まれる場合があります。
 
-また、旧バージョン用のパッチやフィックスパックも用意されています。 詳しくは、 [Understanding Patch Types](../maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md) をご覧ください。
+また、旧バージョン用のパッチやフィックスパックも用意されています。 詳しくは、 [パッチタイプについて](../maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md) をご覧ください。

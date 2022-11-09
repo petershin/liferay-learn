@@ -13,7 +13,7 @@
 ```
 
 ```{important}
-詳細は、 [メンテナンスモードと非推奨のポリシー](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation) を参照してください。
+詳細は、 [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation) を参照してください。
 ```
 
 ## 廃止予定の機能の利用可能性
@@ -71,9 +71,12 @@ Liferay 7.0以前からアップグレードする場合は、該当するリリ
 * Liferay Connected Services（LCS）
 * Liferayモバイルエクスペリエンス（Liferay Screens、Liferay Mobile SDK、Liferay Push）
 * Liferay Sync
-* ステージング
+
+```{note}
+Liferayはステージングアプリケーションの改良を続けており、特に、ある環境でコンテンツを作成し、別の環境で消費する必要があるシナリオでのリモートライブステージングに対応しています。 詳しくは、 [公開ツール](../../../site-building/publishing-tools.md) をご覧ください。
+```
 
 ## 追加情報
 
 * [7.2 旧バージョンと非互換の変更](../../../liferay-internals/reference/7-2-breaking-changes.md)
-* [7.2 デフォルト設定の変更](./default-setting-changes-in-7-2.md)
+* [7.2 Default Setting Changes](./default-setting-changes-in-7-2.md)

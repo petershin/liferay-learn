@@ -22,13 +22,15 @@
     * `Rackspace_Ping`
 
     どれを選択すればよいかわからない場合は、TCPPingを使用してください。 これらの残りのステップでは、TCPPingを使用します。 他の詳細は、 [Alternative Discovery Protocols](#alternative-discovery-protocols) を参照してください。
-<!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. jrhoun -->
+    <!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. jrhoun -->
 
-1.  `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com.liferay.Portal.cluster.multiple-［version］.jar/lib/jgroups-［version］.Final.jar/tcp.xml`から`tcp.xml`ファイルをDXPにアクセスできる場所に展開します。 jar/lib/jgroups-［version］.Final.jar/tcp.xml` を、DXPウェブアプリケーションの`WEB-INF/classes`フォルダ内の `jgroups` というフォルダなど、DXPでアクセス可能な場所に移動します。
+1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com.liferay.Portal.cluster.multiple-[version].jar/lib/jgroups-[version].Final.jar/tcp.xml`から`tcp.xml`ファイルをDXP Webアプリケーションの`WEB-INF/classes`フォルダ内の`jgroups`というフォルダなど、DXPにアクセスできる場所に展開します。
 
     ```
     WEB-INF/classes/jgroups/tcp.xml
     ```
+
+    この `tcp.xml` 設定ファイルは、クラスタリンクの制御チャネルとトランスポートチャネルの両方に使用されることに注意してください。 別々の設定ファイルを使用する場合は、 [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports) を参照してください。
 
 1. `tcp.xml` ファイルで、TCPバインドポートをノードの未使用ポートに設定します。 以下に例を示します。
 
@@ -42,10 +44,15 @@
     <TCP bind_port="7800"/>
     <TCPPING async_discovery="true"
         initial_hosts="192.168.224.154[7800],192.168.224.155[7800]"
-        port_range="0"/>
+        port_range="1"/>
     ```
 
-    **初期ホストについて：**
+    ```{important}
+    TCCPingが各チャンネルを作成するために追加のポートをプローブするように、`port_range`が`1`に設定されていることに注意してください。 例えば、`initial_hosts="HostA[7800],HostB[7800]` の場合、TCCPingはポート7800と7801でHostAとHostBの両方にコンタクトしようとします。 この値は、必要なポート数（チャンネル数から1を引いた数）をカバーするように設定してください。 
+    ```
+
+
+    **Regarding Initial Hosts:**
 
     * 最初のホスト値がすべてのノードに対応していることを確認してください。 TCP XMLファイルまたはJVM引数で `initial_hosts` が指定されていない場合、 `localhost` が初期ホストです。
     * TCP XMLファイルで初期ホストを指定する代わりに、次のようなJVM引数を使用してアプリサーバーにそれらを指定することもできます。
@@ -54,13 +61,13 @@
         -Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]
         ```
 
-1. `tcp.xml` ファイルを各ノードの同じ場所にコピーして、TCPバインドポートが各ノードの未使用のポートに設定されていることを確認します。 たとえば、IPアドレス `192.168.224.155`のノードで、次のようにTCPPingを構成します。
+1. `tcp.xml` ファイルを各ノードの同じ場所にコピーして、TCPバインドポートが各ノードの未使用のポートに設定されていることを確認します。 JVMの引数を必ず参照してください。 たとえば、IPアドレス `192.168.224.155`のノードで、次のようにTCPPingを構成します。
 
     ```xml
     <TCP bind_port="7800"/>
     <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7800],192.168.224.155[7800]"
-        port_range="0"/>
+        initial_hosts="${jgroups.tcpping.initial_hosts:192.168.224.154[7800],192.168.224.155[7800]}"
+        port_range="1"/>
     ```
 
 1. 各ノードの[`portal-ext.properties`ファイル](../../reference/portal-properties.md)の [クラスターリンクプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) を変更して、クラスターリンクを有効にし、各クラスターリンクチャネルのTCP XMLファイルをポイントします。
@@ -89,10 +96,10 @@ TCP Pingを使用してクラスターメンバーを検出する代わりに、
 
 ```xml
 <JDBC_PING
-    connection_url="［place the URL to your database here］"
-    connection_username="［place your user name here］"
-    connection_password="［place your password here］"
-    connection_driver="［place your driver name here］"/>
+    connection_url="[place the URL to your database here]"
+    connection_username="[place your user name here]"
+    connection_password="[place your password here]"
+    connection_driver="[place your driver name here]"/>
 ```
 
 JDBC接続値の例については、 [データベーステンプレート](../../reference/database-templates.md) を参照してください。 JDBC Pingの詳細は、 [JGroups Documentation](http://www.jgroups.org/manual4/index.html#DiscoveryProtocols) を参照してください。
@@ -105,8 +112,8 @@ S3 Pingを構成するには、 [ユニキャスト構成](#unicast-configuratio
 
 ```xml
 <S3_PING
-    secret_access_key="［SECRETKEY］"
-    access_key="［ACCESSKEY］"
+    secret_access_key="[SECRETKEY]"
+    access_key="[ACCESSKEY]"
     location="ControlBucket"/>
 ```
 
@@ -128,7 +135,7 @@ JGroupsは、Rackspace Ping、BPing、File Pingなど、クラスターメンバ
     -Djgroups.bind_addr=[node_ip_address]
     ```
 
-1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml`から`tcp.xml`ファイルをDXP Webアプリケーションの`WEB-INF/classes`フォルダ内の`jgroupsというフォルダなど、DXPにアクセスできる場所に展開します。
+1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml`から`tcp.xml`ファイルをDXP Webアプリケーションの`WEB-INF/classes`フォルダ内の`jgroups` というフォルダなど、DXPにアクセスできる場所に展開します。
 
 1. 同じ場所に`tcp.xml`のコピーを作成し、両方のファイルの名前を変更して、1つを制御チャネル用に、もう1つをトランスポートチャネル用に指定します。 たとえば、次のファイル名を使用できます。
 
@@ -163,7 +170,7 @@ JGroupsは、Rackspace Ping、BPing、File Pingなど、クラスターメンバ
 ```xml
 <TCP bind_port="7800"/>
 <TCPPING async_discovery="true"
-    initial_hosts="192.168.224.154［7800］,192.168.224.154［7802］"
+    initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
     port_range="0"/>
 ```
 
@@ -172,7 +179,7 @@ JGroupsは、Rackspace Ping、BPing、File Pingなど、クラスターメンバ
 ```xml
 <TCP bind_port="7801"/>
 <TCPPING async_discovery="true"
-    initial_hosts="192.168.224.154［7801］,192.168.224.154［7803］"
+    initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
     port_range="0"/>
 ```
 
@@ -181,7 +188,7 @@ JGroupsは、Rackspace Ping、BPing、File Pingなど、クラスターメンバ
 ```xml
 <TCP bind_port="7802"/>
 <TCPPING async_discovery="true"
-    initial_hosts="192.168.224.154［7800］,192.168.224.154［7802］"
+    initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
     port_range="0"/>
 ```
 
@@ -190,7 +197,7 @@ JGroupsは、Rackspace Ping、BPing、File Pingなど、クラスターメンバ
 ```xml
 <TCP bind_port="7803"/>
 <TCPPING async_discovery="true"
-    initial_hosts="192.168.224.154［7801］,192.168.224.154［7803］"
+    initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
     port_range="0"/>
 ```
 

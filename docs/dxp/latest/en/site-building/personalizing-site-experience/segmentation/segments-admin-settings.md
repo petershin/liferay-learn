@@ -26,13 +26,7 @@ To access segment settings,
 
 1. Click *Segments* in the *Content and Data* section.
 
-See the table below to understand how settings applied at the system and instance level work.
-
-| Scope                                                                                       | Description                                                                                                    |
-| :------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------- |
-| *Control Panel* &rarr; *System Settings* &rarr; *Segments* under *System Scope*             | Sets the default throughout the system. You cannot override these at a more granular scope.                    |
-| *Control Panel* &rarr; *System Settings* &rarr; *Segments* under *Virtual Instance Scope*   | Sets the default for all instances. You can override these at a more granular scope under *Instance Settings*. |
-| *Control Panel* &rarr; *Instance Settings* &rarr; *Segments* under *Virtual Instance Scope* | Sets the default for the current instance. You cannot override these at a more granular scope.                 |
+See [Understanding Configuration Scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md) to learn how system and instance scopes work.
 
 ## Analytics Cloud Segments
 

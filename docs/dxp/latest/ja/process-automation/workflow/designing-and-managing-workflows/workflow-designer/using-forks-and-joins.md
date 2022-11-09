@@ -2,7 +2,7 @@
 
 {bdg-primary}`サブスクリプション`
 
-ここでは、 **フォーク** 、 **結合** および **XOR 結合** ノードの使用方法を学びます。 これらのノードは、 [Legal-Marketing Definition](https://github.com/liferay/liferay-learn/blob/master/docs/dxp/latest/en/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview/resources/legal-marketing-definition.xml) サンプルのような複数のレビュアがいるワークフロープロセスに役立ちます。
+ここでは、 **フォーク** 、 **結合** および **XOR 結合** ノードの使用方法を学びます。 これらのノードは、 [Legal-Marketing Definition](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/legal-marketing-workflow-definition.xml) サンプルのような複数のレビュアがいるワークフロープロセスに役立ちます。
 
 レビュータスクを分割することで、2つのレビューを同時に行うことができます。 Legal-Marketingのワークフロー例では、プロセスは線形です。ワークフローは公開前にMarketingからLegalに移行しますが、 **フォーク** および **結合**（またはXOR 結合）を使用して並行ワークフロープロセスを構築できます。
 

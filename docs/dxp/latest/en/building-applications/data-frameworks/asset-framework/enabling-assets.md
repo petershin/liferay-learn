@@ -53,11 +53,11 @@ Then, follow these steps:
 
 This tutorial assumes that you have a Service Builder application that is already search enabled. At minimum, your application needs:
 
-`*SearchRegistrar.java` - registers the search services to the search framework for the application's entities (e.g., the `com.acme.s5e6.service.search.S5E6SearchRegistrar.java` class).
+`*SearchRegistrar.java` - registers the search services to the search framework for the application's entities (e.g., the `com.acme.s5e6.search.S5E6SearchRegistrar.java` class).
 
-`*ModelIndexerWriterContributor.java` - configures the re-indexing and batch re-indexing behavior of entries (e.g., the `com.acme.s5e6.service.search.S5E6EntryModelIndexerWriterContributor.java` class).
+`*ModelIndexerWriterContributor.java` - configures the re-indexing and batch re-indexing behavior of entries (e.g., the `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` class).
 
-`*ModelSummaryContributor.java` - constructs the result summary for entries (e.g., the `com.acme.s5e6.service.search.S5E6EntryModelSummaryContributor.java` class).
+`*ModelSummaryContributor.java` - constructs the result summary for entries (e.g., the `com.acme.s5e6.search.S5E6EntryModelSummaryContributor.java` class).
 
 See the [Developer Guide](../../../using-search/developer-guide.md) in Using Search to learn more about enabling search.
 

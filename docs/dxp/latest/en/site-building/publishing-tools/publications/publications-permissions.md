@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.4+`
 
-Publications is integrated with Liferay's permissions framework, so you can assign [application](#application-permissions) and [resource](#resource-permissions) permissions to user roles. Only permitted users can access publications and perform actions on its resources.
+Publications is integrated with Liferay's permissions framework, so you can assign [application](#application-permissions) and [resource](#resource-permissions) permissions to regular roles. You can also assign permissions [scoped to individual publications](#assigning-roles-to-publication-collaborators) when inviting collaborators. Only permitted users can access publications and perform actions on its resources.
 
 ```{note}
 Publications permissions do not include page and content editing privileges. Publications users require explicit permissions for the applications and resources they're expected to act upon (e.g., web content, blogs, pages).
@@ -17,7 +17,7 @@ If needed, you can create additional [regular roles](../../../users-and-permissi
 ![Add additional regular roles or configure other role permissions.](./publications-permissions/images/02.png)
 
 ```{note}
-You can only assign Publications permissions to *Regular Roles*. See [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for more information.
+You can only assign Publications permissions to *regular roles*. See [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for more information.
 ```
 
 ## Application Permissions
@@ -69,6 +69,17 @@ Users with these permissions can perform these actions on existing publications.
 
 ![Users can view, update, publish, delete, and manage permissions on existing publications.](./publications-permissions/images/04.png)
 
+## Publications User Role
+
+By default, the *Publications User* role has these permissions:
+
+* Portal: View Control Panel Menu
+* Publications: Access in Control Panel
+* Publications: View
+* Publications > Publications: Add Publication
+
+![Liferay provides the default Publications User role with these permissions.](./publications-permissions/images/05.png)
+
 ## Assigning Roles to Publication Collaborators
 
 By default, publication creators are automatically assigned the *owner* role and can perform all actions on their publication. When [inviting users to their publication](./collaborating-on-publications.md#inviting-users-to-a-publication), owners can assign these publication roles:
@@ -80,22 +91,11 @@ By default, publication creators are automatically assigned the *owner* role and
 | Publisher | &#10004; | &#10004; | &#10004; | &#10008; | &#10008; |
 | Admin | &#10004; | &#10004; | &#10004; | &#10004; | &#10008; |
 
-![When inviting users to a publication, you can assign a role scoped to that publication.](./publications-permissions/images/05.png)
+![When inviting users to a publication, you can assign a role scoped to that publication.](./publications-permissions/images/06.png)
 
 Each publication role is scoped to the current publication and does not grant permissions in other publications.
 
-Also, publication roles do not restrict regular role permissions.  For example, if users with the delete permission are invited to a publication and assigned the *viewer* role, they can delete the publication because of their regular role permissions.
-
-## Publications User Role
-
-By default the *Publications User* role has these permissions:
-
-* Portal: View Control Panel Menu
-* Publications: Access in Control Panel
-* Publications: View
-* Publications > Publications: Add Publication
-
-![Liferay provides the default Publications User role with these permissions.](./publications-permissions/images/06.png)
+Also, publication roles do not restrict regular role permissions. For example, if users with the delete permission are invited to a publication and assigned the *viewer* role, they can delete the publication because of their regular role permissions.
 
 ## Additional Information
 

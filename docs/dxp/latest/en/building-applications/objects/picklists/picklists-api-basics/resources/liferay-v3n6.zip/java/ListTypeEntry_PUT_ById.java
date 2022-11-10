@@ -19,7 +19,6 @@ public class ListTypeEntry_PUT_ById {
 			Long.valueOf(System.getProperty("listTypeEntryId")),
 			new ListTypeEntry() {
 				{
-					key = "baker";
 					name = "Baker";
 					name_i18n = Collections.singletonMap("en-US", "Baker");
 				}

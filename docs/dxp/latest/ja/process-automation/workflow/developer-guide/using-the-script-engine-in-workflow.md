@@ -134,7 +134,9 @@ Liferayの[ワークフローエンジン](../introduction-to-workflow.md)は、
 ```
 
 ```{note}
-スクリプトの `returnValue` 変数は、次のタスクや状態を決定する。
+Conditionノードスクリプトの`returnValue`変数には、次のタスクやステートを決定するための有効なトランジション名を指定する必要があります。
+
+Liferay Portal の場合、有効な遷移名は XML ファイルまたはプロセスビルダーのソースビューに入力された遷移の `<name>` 要素の値です。 Liferay DXP では、プロセスビルダーで定義のソースを表示するとき、代わりにトランジションの `<id>` 要素で指定されたトランジション ID の値を使用する必要があります。
 ```
 
 ダウンロード可能なワークフローのスクリプト例へのリンクは、 [Crafting Workflow Definitions](./crafting-xml-workflow-definitions.md) を参照してください。

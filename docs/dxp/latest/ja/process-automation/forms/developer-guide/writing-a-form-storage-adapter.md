@@ -22,7 +22,7 @@
 1. [DDM Storage Adapter プロジェクト](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-r2f1.zip -O
     ```
 
     ```bash

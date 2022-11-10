@@ -34,8 +34,8 @@
         <name>Approve</name>
         <description>Approve</description>
         <script>
-            <!［CDATA［
-            com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil.updateStatus(com.liferay.portal.kernel.workflow.WorkflowConstants.getLabelStatus("approved"), workflowContext);］］>
+            <![CDATA[
+            com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil.updateStatus(com.liferay.portal.kernel.workflow.WorkflowConstants.getLabelStatus("approved"), workflowContext);]]>
         </script>
         <script-language>groovy</script-language>
         <execution-type>onEntry</execution-type>
@@ -53,7 +53,7 @@
 <condition>
     <name>determine-branch</name>
     <script>
-        <!［CDATA［
+        <![CDATA[
             import com.liferay.asset.kernel.model.AssetCategory;
             import com.liferay.asset.kernel.model.AssetEntry;
             import com.liferay.asset.kernel.model.AssetRenderer;
@@ -91,7 +91,7 @@
                     return;
                 }
             }
-        ］］>
+        ]]>
     </script>
     <script-language>groovy</script-language>
     <transitions>
@@ -111,7 +111,8 @@
 
 この例では、アセットカテゴリをチェックして、 **法務レビュー** タスクに移行するか、または **コンテンツレビュー** タスクに移行するかを選択します。
 
-`returnValue`変数は、条件からトランジションを指し、その値は有効なトランジション名と一致する必要があります。 このスクリプトでは、対象となるアセットを調べ、そのアセットカテゴリーを取得し、初期値として`returnValue`を設定します。 その後、そのアセットが **legal** カテゴリでマークされているかどうかを確認します。 マークされていない場合は、 **コンテンツレビュー**（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、 **法務レビュー**（ワークフローのlegal-reviewタスク）を通過します。
+`returnValue` 変数は条件から遷移を指し、その値は有効な遷移名[^1]に一致しなければならない。 このスクリプトでは、対象となるアセットを調べ、そのアセットカテゴリーを取得し、初期値として`returnValue`を設定します。 その後、そのアセットが **legal** カテゴリでマークされているかどうかを確認します。 マークされていない場合は、 **コンテンツレビュー**（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、 **法務レビュー**（ワークフローのlegal-reviewタスク）を通過します。
+
 
 ## フォークと結合
 
@@ -227,3 +228,5 @@ XOR 結合は、1つの重要な点で結合とは異なります。それは、
 
 * [XMLワークフロー定義の作成](./crafting-xml-workflow-definitions.md)
 * [ワークフロータスクノードリファレンス](./workflow-task-node-reference.md)
+
+[^1]: Liferay Portalの場合、有効なトランジション名は、XMLファイルまたはプロセスビルダーのソースビューに入力されたトランジションの `<name>` 要素の値です。 Liferay DXP の場合、プロセスビルダーで定義のソースを表示するとき、代わりにトランジションの `<id>` 要素で指定されたトランジション ID の値を使用する必要があります。

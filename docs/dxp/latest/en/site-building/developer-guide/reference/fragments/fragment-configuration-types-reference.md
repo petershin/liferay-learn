@@ -13,6 +13,7 @@ These are the configurable fragment types available to implement:
 - `colorPicker` (Available Liferay 7.4+)
 - `length` (Available Liferay 7.4+ U44/GA44)
 - `itemSelector`
+- `url` (Available Liferay 7.4+)
 - `videoSelector` (Available Liferay 7.4+)
 - `collectionSelector`
 - `colorPalette`
@@ -309,6 +310,36 @@ in the example below). This example renders the title, description, and body of 
 ```
 
 ![The item selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/04.png)
+
+## URL Configuration
+
+This configuration adds an input specifically for a URL to use in your fragment's markup:
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "label": "My URL",
+                    "name": "myURL",
+                    "type": "url"
+                }
+            ]
+        }
+    ]
+}
+```
+
+When you configure a fragment with this configuration, you can choose from a drop-down menu to manually enter a URL (`URL`) or to select another page from the same site and use its complete URL (`Page`).
+
+Here is an example of fragment HTML that uses the URL configuration in the above JSON to create a hyperlink:
+
+```html
+<div class="fragment_1">
+    <a href=${configuration.myURL}>Click this link!</a>
+</div>
+```
 
 ## Video Selector
 

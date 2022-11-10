@@ -1,12 +1,14 @@
 # Configuring the Commerce Notification Queue
 
-When an event triggers a notification (for instance, when an order is placed), it is logged in the channel's *Notification Queue* tab with the `Unsent` status. The Liferay instance checks for notifications in the queue every 15 minutes and sends them if they are in the `Unsent` status. If a notification is in the `Unsent` status after 43200 minutes (30 days), it is deleted.
+When channel events trigger notifications, Commerce logs them in the channel's *Notification Queue* tab with the `Unsent` status. By default, Liferay checks for queued notifications every 15 minutes and sends them if they have the `Unsent` status. However, if a notification has the `Unsent` status after 43200 minutes (30 days), Liferay deletes it.
 
-You can change these intervals in the system settings of your instance.
+You can change the interval for sending and removing queued notifications.
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings*.
 
-1. Click *Orders* and then select *Commerce Notification Queue*. The default values are in minutes. You can change the values for the *Notification Queue Entry Check Interval* and the *Notification Queue Entry Delete Interval* here.
+1. Click *Orders* and then select *Commerce Notification Queue*.
+
+1. Enter new values for the *Notification Queue Entry Check Interval* and *Notification Queue Entry Delete Interval* fields. Values are set in minutes (e.g., 15 = 15 mins).
 
    ![Change the default values for the Notification Queue Entry Check and Delete Intervals](./configuring-the-commerce-notification-queue/images/01.png)
 

@@ -39,7 +39,9 @@ NPM and Yarn are package managers that you'll use to install the the toolkit and
     ./setup_tutorial.sh
     ```
 
-This `setup_tutorial.sh` script provides commands for setting up Yeoman, Yarn, and the toolkit. The script is available in the example ZIP file and all of our example JavaScript project ZIP files.
+    ```{note}
+    The `setup_tutorial.sh` script provides commands for setting up Yeoman, Yarn, and the toolkit. The script is available in the example project's ZIP file.
+    ```
 
 Resolve all unmet requirements reported by the script and rerun the script until it reports that your environment is ready.
 

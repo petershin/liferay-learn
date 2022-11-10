@@ -12,6 +12,8 @@ All roles available in a Liferay DXP installation can be viewed in the Roles adm
 
 **Power User:** The Power User Role grants more permissions than the User Role. It's an distinguishes regular Users from more privileged Users. For example, you can define it so that only Power Users have personal Sites.
 
+**Publications User:** The Publications User grants basic permissions for accessing the Publications application and creating individual publications.
+
 **Administrator:** The administrator Role grants permission to manage the entire installation, including global settings and individual Sites, Organizations, and Users. The Administrator's permissions are hard-coded and cannot be overridden.
 
 ## Site Roles

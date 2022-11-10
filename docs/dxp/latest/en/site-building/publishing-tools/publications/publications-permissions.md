@@ -1,15 +1,12 @@
 # Publications Permissions
 
-<!--I think we discussed using the format `7.4 U##+/GA##+` I assume that means in this case we can just use the number (7.4+). If I'm wrong go ahead and change it.-->
 {bdg-secondary}`7.4+`
 
-Publications is integrated with Liferay's permissions framework, so you can assign [application](#application-permissions) and [resource](#resource-permissions) permissions to user roles. Only permitted users can access publications and perform actions on its resources. 
+Publications is integrated with Liferay's permissions framework, so you can assign [application](#application-permissions) and [resource](#resource-permissions) permissions to user roles. Only permitted users can access publications and perform actions on its resources.
 
 ```{note}
-The publications permissions do not include page and content editing priviliges. Publications users require explicit permissions for the applications and resources (e.g., web content, blogs, pages) they're expected to act upon.
+Publications permissions do not include page and content editing privileges. Publications users require explicit permissions for the applications and resources they're expected to act upon (e.g., web content, blogs, pages).
 ```
-
-<!-- We might want to update the Default Roles Reference article to include this new default role -->
 
 By default, Liferay provides the [*Publications User*](#publications-user-role) role with basic permissions for creating and accessing publications.
 
@@ -19,14 +16,13 @@ If needed, you can create additional [regular roles](../../../users-and-permissi
 
 ![Add additional regular roles or configure other role permissions.](./publications-permissions/images/02.png)
 
-<!-- My brain likes the first sentence of the below note better when it's about the resource (i.e., Since publications are company scoped ...) and not the application, but it might just be personal preference. -->
 ```{note}
-Since Publications is company scoped, you can only assign its permissions to *Regular Roles*. See [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for more information on role types.
+You can only assign Publications permissions to *Regular Roles*. See [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for more information.
 ```
 
 ## Application Permissions
 
-Application permissions grant the ability to perform operations on the Publications application itself, and do not include [resource permissions](#resource-permissions).
+Application permissions grant abilities related to the Publications application itself and do not include [resource permissions](#resource-permissions).
 
 | Permission | Description |
 | :--- | :--- |
@@ -38,7 +34,7 @@ Application permissions grant the ability to perform operations on the Publicati
 | View | View the Publications application in the Global Menu ( ![Global Menu](../../../images/icon-applications-menu.png) ) and access the Publications Bar. |
 | Work on Production | Access and work in production while Publications is enabled. |
 
-At minimum, contributing to a publication requires the Access in Control Panel and View permissions.
+At minimum, using Publications requires a regular role with the Access in Control Panel and View permissions.
 
 ```{important}
 If you've enabled Sandbox Only and don't want users to work in production, ensure they do not have the Work on Production permission.
@@ -46,43 +42,49 @@ If you've enabled Sandbox Only and don't want users to work in production, ensur
 
 ## Resource Permissions
 
-<!-- I want to say this because the existing intro paragraph to this section confuses me, but want to let you decide if it's an improvement.
+Resource permissions grant the ability to view and act on resources in the Publications application. Some of these permissions [relate to creating publications](#publications-related-to-creating-publications), while others are for [performing actions on existing publications](#publication-for-performing-actions-on-existing-publications) (e.g., edit, delete, publish).
 
-Resource permissions grant abilities to view or act on the Publications application's resources. Some permissions act on the entire collection of publications (e.g., configuring permissions on the entire collection) while others are limited to an individual existing publication (e.g., deleting a publication). -->
-
-Resource permissions grant specific abilities related to the Publications application's resources. Some of these permissions grant the ability to perform [actions on database entities](#publication-actions-on-database-entities) (e.g., update the publication). Others grant permission to perform [resource-related actions](#publications-resource-related-actions) in the Publications context (e.g., create a new publication).
-
-Publications has the following resource permissions.
-
-<!-- I don't think I'd bother separating these into sections, since they draw attention to the somewhat confusing UI. -->
-### Publications (Resource Related Actions)
+### Publications (Related to Creating Publications)
 
 | Permission | Description |
 | :--- | :--- |
-| Add Publication | Create a publication. Without this permission, users can only access and contribute to a publication when [invited](./collaborating-on-publications.md). |
-| Permissions | View and modify permissions for resource related actions in the Publications application: Add Publication and Permissions. |
+| Add Publication ( 1 ) | Create a publication. Without this permission, users can only access and contribute to a publication when [invited](./collaborating-on-publications.md#inviting-users-to-a-publication). |
+| Permissions ( 2 ) | View and modify permissions related to creating publications: Add Publication and Permissions.  |
 
-### Publication (Actions on Database Entities)
+Users with these permissions can perform these actions in the Publications application.
+
+![Users can add a publication and manage permissions for adding publications.](./publications-permissions/images/03.png)
+
+### Publication (For Performing Actions on Existing Publications)
 
 | Permission | Description |
 | :--- | :--- |
-| Delete | Delete a publication. |
-| Permissions | View and modify permissions for an individual publication. This includes the ability to [invite users](./collaborating-on-publications.md) to the publication. |
-| Publish | Publish a publication |
-| Update | Update a publication. |
-| View | View a publication. |
+| Delete | Delete publications you can view. |
+| Permissions | View and modify permissions for publications you can view. This includes the ability to [invite users](./collaborating-on-publications.md#inviting-users-to-a-publication) to a publication. |
+| Publish | Publish publications you can view. |
+| Update | Update publications you can view; this includes the ability to work in a publication and edit the publication's name and description. |
+| View | View all publications in the Liferay instance; this includes the ability to review each publication's changes. |
 
-<!-- Idea: I'd put this note in its own section, like Granting Permissions to Invited Users or something. Then it becomes linkable. -Russ -->
-```{note}
-Publication creators are automatically assigned the Owner role and granted all resource-level permissions on their publication. When they invite users to their publication and assign a role, the invitees can be granted more limited permissions.
+Users with these permissions can perform these actions on existing publications.
 
-* Viewer: View
-* Editor: View and Update
-* Publisher: View, Update, and Publish
-* Admin: View, Update, Publish, and Permissions
+![Users can view, update, publish, delete, and manage permissions on existing publications.](./publications-permissions/images/04.png)
 
-By default, only the publication owner has the Delete permission.
-```
+## Assigning Roles to Publication Collaborators
+
+By default, publication creators are automatically assigned the *owner* role and can perform all actions on their publication. When [inviting users to their publication](./collaborating-on-publications.md#inviting-users-to-a-publication), owners can assign these publication roles:
+
+| Publication Role | View | Update | Publish | Permissions | Delete |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Viewer | &#10004; | &#10008; | &#10008; | &#10008; | &#10008; |
+| Editor | &#10004; | &#10004; | &#10008; | &#10008; | &#10008; |
+| Publisher | &#10004; | &#10004; | &#10004; | &#10008; | &#10008; |
+| Admin | &#10004; | &#10004; | &#10004; | &#10004; | &#10008; |
+
+![When inviting users to a publication, you can assign a role scoped to that publication.](./publications-permissions/images/05.png)
+
+Each publication role is scoped to the current publication and does not grant permissions in other publications.
+
+Also, publication roles do not restrict regular role permissions.  For example, if users with the delete permission are invited to a publication and assigned the *viewer* role, they can delete the publication because of their regular role permissions.
 
 ## Publications User Role
 
@@ -93,7 +95,7 @@ By default the *Publications User* role has these permissions:
 * Publications: View
 * Publications > Publications: Add Publication
 
-![Liferay provides the default Publications User role with these permissions.](./publications-permissions/images/03.png)
+![Liferay provides the default Publications User role with these permissions.](./publications-permissions/images/06.png)
 
 ## Additional Information
 

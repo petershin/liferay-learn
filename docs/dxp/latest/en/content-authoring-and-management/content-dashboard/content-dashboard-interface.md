@@ -212,7 +212,7 @@ When using the type or extension filter, you can define your search criteria fro
 
 ## Content Info Sidebar
 
-This sidebar provides access to different metadata for the asset selected in the contents list, including the asset owner, available languages for the content, tags and categories for the asset, or review date.
+This sidebar provides access to different actions and metadata for the asset selected in the contents list, including the asset owner, available languages for the content, tags and categories for the asset, or review date.
 
 ![Access the content info sidebar from the assets in the contents list.](./content-dashboard-interface/images/11.png)
 
@@ -220,9 +220,9 @@ To open the sidebar, click the *Actions* button ( ![Actions Button](../../images
 
 ![The content info sidebar provides different metadata for your content.](./content-dashboard-interface/images/12.png)
 
-The table below shows the available metadata for the different asset types.
+The table below shows the available metadata and actions for the different asset types.
 
-| Asset                                                      | Metadata                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Asset                                                      | Metadata/Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | :--------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Web Content                                                | <ul><li>Title</li><li>Type (Available Liferay DXP 7.4 U44+/GA44+)</li><li>Subtype </li><li>Version</li><li>Status</li><li>Author</li><li>Preview Image - Non-clickable (Available Liferay DXP 7.4 U42+/GA42+)</li><li>Languages Translated Into</li><li>Display Date</li><li>Creation Date</li><li>Modified Date</li><li>ID</li><li>Subscribe - Click on the bell icon at the top right of the info panel. This notifies you when the web content changes (Available Liferay 7.4 U42+/GA42+).</li></ul>                                                                   |
 | Documents and Media (Available Liferay DXP 7.4 U23+/GA23+) | <ul><li>Title</li><li>URL</li><li>WebDAV URL (Available Liferay DXP 7.4 U42+/GA42+)</li><li>Filename</li><li>Type (Available Liferay DXP 7.4 U44+/GA44+)</li><li>Subtype</li><li>MIME Type (Available Liferay DXP 7.4 U44+/GA44+)</li><li>Version</li><li>Status</li><li>Author</li><li>Preview Image - Click to go the preview page of the asset</li><li>Download</li><li>Share - Click to share and collaborate with other users (Available Liferay DXP 7.4 U42+/GA42+)</li><li>Extension</li><li>Size</li><li>Creation Date</li><li>Modified Date</li><li>ID</li></ul> |

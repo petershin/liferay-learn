@@ -18,13 +18,9 @@ The Content Dashboard shows information based on the Categories you assign to co
 
 ## Content Dashboard Components
 
-To access the Content Dashboard, click the Global Menu and, under the *Content* area, click *Content Dashboard*.
+To access the Content Dashboard, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Applications* &rarr; *Content Dashboard*.
 
 ![Open the Content Dashboard from the Global Menu.](./about-the-content-dashboard/images/02.png)
-
-```{note}
-If the Global Menu is disabled, open the Product Menu and, under the *Site* Menu, go to *Content* → *Content Dashboard*.
-```
 
 You can see different areas on the Content Dashboard page.
 

@@ -16,9 +16,7 @@ To access the content info sidebar, click the *Actions Menu* (![Action Menu](../
 
 ## Accessing the Content Dashboard
 
-1. Click on the Global Menu and, under the *Content* area, click *Content Dashboard*.
-
-1. If the Global Menu is disabled, open the Product Menu and, under the *Site* Menu, go to *Content* &rarr; *Content Dashboard*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Applications* &rarr; *Content Dashboard*. You can also access the content dashboard by opening the Site Menu and navigating to *Content* &rarr; *Content Dashboard*.
 
     ![Open the Content Dashboard from the Global Menu.](./content-dashboard-interface/images/02.png)
 
@@ -113,7 +111,7 @@ In the list of contents, you can find the following columns:
 | Title                 | Article title(*).                                                                                                                                                                                                                                                                                      |
 | Author                | Author's name.                                                                                                                                                                                                                                                                                         |
 | Type                  | Specifies a [web content article](../web-content/web-content-articles/adding-a-basic-web-content-article.md), [documents](../documents-and-media.md) asset type (available in Liferay DXP 7.4+.) or [blog entry](../blogs/adding-blog-entries.md) asset type (available in Liferay DXP 7.4 U23+/GA23+) |
-| Subtype               | Content [subcategory](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). Includes basic documents and external video Shortcuts                                                                                                                        |
+| Subtype               | Content [subcategory](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). Includes basic documents and external video shortcuts. Starting from Liferay DXP 7.4 U44+/GA44+, the MIME type for basic documents are also displayed.                       |
 | Site or Asset Library | Location of the article in the Liferay DXP instance.                                                                                                                                                                                                                                                   |
 | Status                | Article workflow status. Articles with more than one version in different statuses show all than statuses.                                                                                                                                                                                             |
 | *First Vocabulary*    | This is the first vocabulary in the content audit Tool.                                                                                                                                                                                                                                                |
@@ -222,21 +220,13 @@ To open the sidebar, click the *Actions* button ( ![Actions Button](../../images
 
 ![The content info sidebar provides different metadata for your content.](./content-dashboard-interface/images/12.png)
 
-```{note}
-Starting with Liferay 7.4 U42+/GA42+, the following improvements have been made to the content dashboard's info panel.
+The table below shows the available metadata for the different asset types.
 
-* In the *Details* section, you can now view the *WebDAV* URL for documents along with the *Latest Version URL* below it. 
-
-* You can subscribe to a web content by clicking on the bell icon at the top right of the info panel. This notifies you of any changes that occur with the web content. 
-
-* You can share blogs and documents from the info panel by clicking on the *Share* button and entering the email address of the person(s) you want to share it with. Once added, you can view and manage the collaborators from the info panel.
-
-Starting from Liferay DXP 7.4 U44+/GA44+, the following improvements have been made to the content dashboard.
-
-* The content type and subtype are now present in the info panel of the content dashboard.
-
-* The MIME type of a basic document (image, vectorial, etc) is present in the info panel and in the subtype column of the content list.
-```
+| Asset                                                      | Metadata                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| :--------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Web Content                                                | <ul><li>Title</li><li>Type (Available Liferay DXP 7.4 U44+/GA44+)</li><li>Subtype </li><li>Version</li><li>Status</li><li>Author</li><li>Preview Image - Non-clickable (Available Liferay DXP 7.4 U42+/GA42+)</li><li>Languages Translated Into</li><li>Display Date</li><li>Creation Date</li><li>Modified Date</li><li>ID</li><li>Subscribe - Click on the bell icon at the top right of the info panel. This notifies you when the web content changes (Available Liferay 7.4 U42+/GA42+).</li></ul>                                                                   |
+| Documents and Media (Available Liferay DXP 7.4 U23+/GA23+) | <ul><li>Title</li><li>URL</li><li>WebDAV URL (Available Liferay DXP 7.4 U42+/GA42+)</li><li>Filename</li><li>Type (Available Liferay DXP 7.4 U44+/GA44+)</li><li>Subtype</li><li>MIME Type (Available Liferay DXP 7.4 U44+/GA44+)</li><li>Version</li><li>Status</li><li>Author</li><li>Preview Image - Click to go the preview page of the asset</li><li>Download</li><li>Share - Click to share and collaborate with other users (Available Liferay DXP 7.4 U42+/GA42+)</li><li>Extension</li><li>Size</li><li>Creation Date</li><li>Modified Date</li><li>ID</li></ul> |
+| Blog Entries                                               | <ul><li>Title</li><li>Type</li><li>Version</li><li>Status</li><li>Author</li><li>Preview Image - Non-clickable (Available Liferay DXP 7.4 U42+/GA42+)</li><li>Share - Click to share and collaborate with other users (Available Liferay DXP 7.4 U42+/GA42+)</li><li>Display Date</li><li>Creation Date</li><li>Modified Date</li><li>ID</li></ul>                                                                                                                                                                                                                        |
 
 ## Related Information
 

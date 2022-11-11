@@ -23,7 +23,7 @@ public class ListTypeDefinition_PATCH_ById {
 				new ListTypeDefinition() {
 					{
 						name = "Bar";
-						name_i18n = Collections.singletonMap("en-US", "Bar");
+						name_i18n = Collections.singletonMap("en_US", "Bar");
 					}
 				});
 

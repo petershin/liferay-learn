@@ -20,7 +20,7 @@ public class ListTypeEntry_PUT_ById {
 			new ListTypeEntry() {
 				{
 					name = "Baker";
-					name_i18n = Collections.singletonMap("en-US", "Baker");
+					name_i18n = Collections.singletonMap("en_US", "Baker");
 				}
 			});
 

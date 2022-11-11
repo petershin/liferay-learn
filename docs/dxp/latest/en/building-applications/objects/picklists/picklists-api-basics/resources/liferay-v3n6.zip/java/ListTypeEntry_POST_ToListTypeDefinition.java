@@ -22,7 +22,7 @@ public class ListTypeEntry_POST_ToListTypeDefinition {
 					{
 						key = "able";
 						name = "Able";
-						name_i18n = Collections.singletonMap("en-US", "Able");
+						name_i18n = Collections.singletonMap("en_US", "Able");
 					}
 				});
 

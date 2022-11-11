@@ -22,7 +22,7 @@ public class ListTypeDefinition_POST_ToInstance {
 				new ListTypeDefinition() {
 					{
 						name = "Foo";
-						name_i18n = Collections.singletonMap("en-US", "Foo");
+						name_i18n = Collections.singletonMap("en_US", "Foo");
 					}
 				});
 

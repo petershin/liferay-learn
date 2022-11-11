@@ -23,7 +23,7 @@ public class ListTypeDefinition_PUT_ById {
 				new ListTypeDefinition() {
 					{
 						name = "Goo";
-						name_i18n = Collections.singletonMap("en-US", "Goo");
+						name_i18n = Collections.singletonMap("en_US", "Goo");
 					}
 				});
 

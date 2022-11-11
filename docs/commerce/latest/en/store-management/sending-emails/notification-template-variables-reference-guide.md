@@ -1,18 +1,16 @@
 # Notification Template Variables Reference Guide
 
-When creating notification templates, you can use variables to dynamically populate email fields with data from the triggering channel event. To view available variables, first select a notification template *Type*. This determines which channel events trigger the notification.
+When creating notification templates, you can use variables to populate email fields dynamically with data from the triggering channel event. Select a notification template *Type* to view its variables. This determines which channel events trigger the notification.
 
 ![Select a notification template type.](./notification-template-variables-reference-guide/images/01.png)
 
-After selecting a type, you can view available variables and their descriptions by expanding *Definition of Terms* in the *Email Settings* and *Email Content* sections. Examples include the customer's name, order ID, shipping and billing addresses, list of order items, and more.
+After selecting a type, you can view its variables and their descriptions by expanding *Definition of Terms* in the *Email Settings* and *Email Content* sections. Examples include the customer's name, order ID, shipping and billing addresses, list of order items, and more.
 
 ![Use these variables in the body of the email.](./notification-template-variables-reference-guide/images/02.png)
 
 ## Email Settings
 
 ![Use these variables in the Email Settings field.](./notification-template-variables-reference-guide/images/03.png)
-
-These variables are available in the *Email Settings* section:
 
 | Variable                       | Description                     |
 | :----------------------------- | :------------------------------ |
@@ -23,18 +21,16 @@ These variables are available in the *Email Settings* section:
 
 ## Order Based Notification Template Types
 
-![Use these variables to include order related information in email notifications.](./notification-template-variables-reference-guide/images/04.png)
+![Use these variables to include order-related information in email notifications.](./notification-template-variables-reference-guide/images/04.png)
 
-Channels have 6 types of notification templates for order events:
+Channels have six types of notification templates for order events:
 
-* Order Placed
-* Order Processing
-* Order Awaiting Shipment
-* Order Partially Shipped
-* Order Shipped
-* Order Completed
-
-These variables are available for order notifications:
+1. Order Placed
+1. Order Processing
+1. Order Awaiting Shipment
+1. Order Partially Shipped
+1. Order Shipped
+1. Order Completed
 
 | Variable                          | Description                                        |
 | :-------------------------------- | :------------------------------------------------- |
@@ -65,14 +61,12 @@ These variables are available for order notifications:
 
 ![Use these variables to include subscription related information in email notifications.](./notification-template-variables-reference-guide/images/05.png)
 
-Channels have 4 types of notification templates for subscription events:
+Channels have four types of notification templates for subscription events:
 
-* Subscription Renewed
-* Subscription Activated
-* Subscription Suspended
-* Subscription Canceled
-
-These variables are available for subscription notifications:
+1. Subscription Renewed
+1. Subscription Activated
+1. Subscription Suspended
+1. Subscription Canceled
 
 | Variable          | Description                     |
 | :---------------- | :------------------------------ |

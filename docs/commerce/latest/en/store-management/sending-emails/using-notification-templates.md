@@ -1,9 +1,9 @@
 # Using Notification Templates
 
-Email notifications are automatically sent to users based on events in the store. To send them, you must first create a *Notification Template*. Notification templates define the sender, trigger, and content of an email notification.
+Email notifications are sent automatically to users based on events in the store. To send them, you must first create a *Notification Template*. Notification templates define the sender, trigger, and content of an email notification.
 
 ```{note}
-To use Liferay Commerce's Notifications feature, first configure mail settings for your Liferay system. See [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html) for more information.
+To use Liferay Commerce's Notifications, first configure mail settings for your Liferay system. See [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html) for more information.
 ```
 
 ## Event Triggers
@@ -31,7 +31,7 @@ Every notification template has a type that determines the channel event that tr
 
    ![Select a channel and go to the Notification Templates tab.](./using-notification-templates/images/01.png)
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
 1. Enter a *name* and *description* for the template.
 
@@ -55,7 +55,7 @@ Every notification template has a type that determines the channel event that tr
 
 1. Click *Save*.
 
-While enabled, the notification template automatically sends emails when triggered. The *Notification Queue* tab displays all triggered notifications with its sender, recipients, event type, status, and priority.
+While enabled, the notification template automatically sends emails when triggered. The Notification Queue tab displays all triggered notifications with its sender, recipients, event type, status, and priority.
 
 ## Viewing Email Notifications of an Order
 
@@ -75,7 +75,7 @@ To create email notifications in Commerce 2.0 and below:
 
 1. Click the *Notification Templates* sub-tab.
 
-1. Click the Add (![Add icon](../../images/icon-add.png)) button to create a new Notification Template and enter the following information.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) to create a new Notification Template and enter the following information.
 
    * **Name**: New Orders
    * **Description**: New orders template
@@ -87,11 +87,11 @@ To create email notifications in Commerce 2.0 and below:
    * **Subject**: Email subject (for example: *Your order has been received.*)
    * **Body**: You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
 
-   ![Creating and configuring a notification template.](./using-notification-templates/images/07.png)
+   ![Creating and configuring a notification template is easy.](./using-notification-templates/images/07.png)
 
 1. Click *Save*.
 
-The notification template now initiates an automated email upon receiving an order. After creating the template, a new notification is added to the notification queue whenever an order is placed. To view this, you can check the *Notifications Queue* sub-tab after placing an order. By default, the Liferay instance checks the queue every 15 minutes to send any unsent notifications. To learn how to change the interval, see [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md).
+The notification template now sends an automated email upon receiving an order. When you create a template, a new notification is added to the notification queue whenever an order is placed. To view this, you can check the *Notifications Queue* sub-tab after placing an order. By default, the Liferay instance checks the queue every 15 minutes to send any unsent notifications. To learn how to change the interval, see [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md).
 
 ## Additional Information
 

@@ -1,6 +1,6 @@
 # Configuring the Commerce Notification Queue
 
-When channel events trigger notifications, Commerce logs them in the channel's *Notification Queue* tab with the `Unsent` status. By default, Liferay checks for queued notifications every 15 minutes and sends them if they have the `Unsent` status. However, if a notification has the `Unsent` status after 43200 minutes (30 days), Liferay deletes it.
+When channel events trigger notifications, Commerce logs them in the channel's Notification Queue tab with the `Unsent` status. By default, Liferay checks for queued notifications every 15 minutes and sends them if they have the `Unsent` status. However, if a notification has the `Unsent` status after 43200 minutes (30 days), Liferay deletes it.
 
 You can change the interval for sending and removing queued notifications.
 

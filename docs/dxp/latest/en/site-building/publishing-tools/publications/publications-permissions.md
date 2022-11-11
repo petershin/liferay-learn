@@ -44,7 +44,7 @@ If you've enabled Sandbox Only and don't want users to work in production, ensur
 
 Resource permissions grant the ability to view and act on resources in the Publications application. Some of these permissions [relate to creating publications](#publications-related-to-creating-publications), while others are for [performing actions on existing publications](#publication-for-performing-actions-on-existing-publications) (e.g., edit, delete, publish).
 
-### Publications (Related to Creating Publications)
+### Publications (Creating Publications)
 
 | Permission | Description |
 | :--- | :--- |
@@ -55,7 +55,7 @@ Users with these permissions can perform these actions in the Publications appli
 
 ![Users can add a publication and manage permissions for adding publications.](./publications-permissions/images/03.png)
 
-### Publication (For Performing Actions on Existing Publications)
+### Publication (Acting on Existing Publications)
 
 | Permission | Description |
 | :--- | :--- |
@@ -65,7 +65,7 @@ Users with these permissions can perform these actions in the Publications appli
 | Update | Update publications you can view; this includes the ability to work in a publication and edit the publication's name and description. |
 | View | View all publications in the Liferay instance; this includes the ability to review each publication's changes. |
 
-Users with these permissions can perform these actions on existing publications.
+Users with these permissions can perform actions on existing publications.
 
 ![Users can view, update, publish, delete, and manage permissions on existing publications.](./publications-permissions/images/04.png)
 
@@ -95,7 +95,7 @@ By default, publication creators are automatically assigned the *owner* role and
 
 Each publication role is scoped to the current publication and does not grant permissions in other publications.
 
-Also, publication roles do not restrict regular role permissions. For example, if users with the delete permission are invited to a publication and assigned the *viewer* role, they can delete the publication because of their regular role permissions.
+Publication roles do not restrict regular role permissions. For example, if users with the delete permission are invited to a publication and assigned the *viewer* role, they can delete the publication because of their regular role permissions.
 
 ## Additional Information
 

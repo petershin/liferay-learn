@@ -1,20 +1,18 @@
 # Notification Template Variables Reference Guide
 
-When creating a notification template, you can use placeholders as a substitute for key values. For the *Email Settings* and *Email Content* sections, the key values include the customer's name, the order ID, shipping and billing addresses, a list of items in the order, and more.
+When creating notification templates, you can use variables to dynamically populate email fields with data from the triggering channel event. To view available variables, first select a notification template *Type*. This determines which channel events trigger the notification.
+
+![Select a notification template type.](./notification-template-variables-reference-guide/images/01.png)
+
+After selecting a type, you can view available variables and their descriptions by expanding *Definition of Terms* in the *Email Settings* and *Email Content* sections. Examples include the customer's name, order ID, shipping and billing addresses, list of order items, and more.
 
 ![Use these variables in the body of the email.](./notification-template-variables-reference-guide/images/02.png)
-
-To view the available placeholders, select a notification template type from the *Type* dropdown.
-
-![Select a type that triggers the notification.](./notification-template-variables-reference-guide/images/01.png)
-
-After selecting a template type, expand the *Definition of Terms* menu to view the available placeholders and their descriptions.
 
 ## Email Settings
 
 ![Use these variables in the Email Settings field.](./notification-template-variables-reference-guide/images/03.png)
 
-The following variables are available in the *Email Settings* section:
+These variables are available in the *Email Settings* section:
 
 | Variable                       | Description                     |
 | :----------------------------- | :------------------------------ |
@@ -25,9 +23,9 @@ The following variables are available in the *Email Settings* section:
 
 ## Order Based Notification Template Types
 
-![Use these variables for displaying order related information in emails.](./notification-template-variables-reference-guide/images/05.png)
+![Use these variables to include order related information in email notifications.](./notification-template-variables-reference-guide/images/04.png)
 
-There are 6 order based notification template types.
+Channels have 6 types of notification templates for order events:
 
 * Order Placed
 * Order Processing
@@ -36,11 +34,11 @@ There are 6 order based notification template types.
 * Order Shipped
 * Order Completed
 
-The following variables are available when selecting one of these types:
+These variables are available for order notifications:
 
 | Variable                          | Description                                        |
 | :-------------------------------- | :------------------------------------------------- |
-| [%ORDER_ITEMS%]                   | A table with all the items in the order            |
+| [%ORDER_ITEMS%]                   | A table listing all items in the order             |
 | [%ORDER_SHIPPING_ADDRESS%]        | The order's shipping address                       |
 | [%ORDER_BILLING_ADDRESS%]         | The order's billing address                        |
 | [%ORDER_ID%]                      | The order ID                                       |
@@ -65,16 +63,16 @@ The following variables are available when selecting one of these types:
 
 ## Subscription Based Notification Template Types
 
-![Use these variables for subscription based event triggers.](./notification-template-variables-reference-guide/images/04.png)
+![Use these variables to include subscription related information in email notifications.](./notification-template-variables-reference-guide/images/05.png)
 
-There are 4 subscription based notification template types.
+Channels have 4 types of notification templates for subscription events:
 
 * Subscription Renewed
 * Subscription Activated
 * Subscription Suspended
 * Subscription Canceled
 
-The following variables are available when selecting one of these types:
+These variables are available for subscription notifications:
 
 | Variable          | Description                     |
 | :---------------- | :------------------------------ |

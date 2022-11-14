@@ -260,19 +260,17 @@ function unzip_reference_docs {
 
 		echo "" >> ./build/input/reference/latest/en/dxp/apps.md
 
-		for d in ./build/input/reference/latest/en/dxp/javadocs/modules/apps/*; do
+		for app_dir_name in ./build/input/reference/latest/en/dxp/javadocs/modules/apps/*
+		do
+			echo "## $(echo $d | cut -d/ -f11)" >> ./build/input/reference/latest/en/dxp/apps.md
 
-			apptitle=$(echo $d | cut -d/ -f11)
+			for app_jar_dir_name in ${app_dir_name}/*
+			do
+				local relative_path=$(echo "${app_jar_dir_name}/index.html" | cut -d/ -f4-)
 
-			echo "## $apptitle" >> ./build/input/reference/latest/en/dxp/apps.md
-
-			for f in $d/*; do
-				inputpath="$f/index.html"
-				relpath=$(echo $inputpath | cut -d/ -f4-)
-				echo "[${f##*/}](/$relpath)" >> ./build/input/reference/latest/en/dxp/apps.md
+				echo "[${app_jar_dir_name##*/}](/$relative_path)" >> ./build/input/reference/latest/en/dxp/apps.md
 				echo "" >> ./build/input/reference/latest/en/dxp/apps.md
 			done
-
 		done
 
 		#
@@ -310,16 +308,13 @@ function main {
 }
 
 function move_reference_docs {
-
 	if [ "${1}" == "prod" ] || [ "${1}" == "reference" ]
 	then
-
 		mv ./build/input/reference/latest/en/dxp/definitions ./build/output/reference/latest/en/dxp
 		mv ./build/input/reference/latest/en/dxp/javadocs ./build/output/reference/latest/en/dxp
 		mv ./build/input/reference/latest/en/dxp/portlet-api ./build/output/reference/latest/en/dxp
 		mv ./build/input/reference/latest/en/dxp/propertiesdoc ./build/output/reference/latest/en/dxp
 		mv ./build/input/reference/latest/en/dxp/taglibs ./build/output/reference/latest/en/dxp
-
 	fi
 }
 

@@ -1,16 +1,16 @@
 # Setting Widget Scopes
 
-Roles can be scoped by the instance, by Site, or by an Organization, and it only takes effect within its scope. For example, a Message Boards Administrator Role with complete access to the Message Boards has different permissions based on the Role's scope. If it's a global Role, members have permission to administer message boards across the entire installation. If it's a Site Role, members only have permission to administer message boards within the Site where they've been assigned the Role. For Organizations with Sites, Site Roles are automatically assigned to Organization members based on the Organization Roles they have. For an Organization-scoped Message Boards administrator Role, members only have permission to administer message boards within the Site of the Organization that assigned the Role to them.
+Roles can be scoped by the instance, by site, or by an organization, and it only takes effect within its scope. For example, a Message Boards administrator role with complete access to the message boards has different permissions based on the role's scope. If it's a global role, members have permission to administer message boards across the entire installation. If it's a site role, members only have permission to administer message boards within the site where they've been assigned the role. For organizations with sites, site roles are automatically assigned to organization members based on the organization roles they have. For an organization-scoped Message Boards administrator role, members only have permission to administer message boards within the site of the organization that assigned the role to them.
 
 First, select a scope for your widget:
 
-**Default**: by default, when a widget is added to a page in a Site, it is *scoped* for that Site. This means its data belongs to that Site. If the widget is added to a page in a different Site, it employs a completely different data set. This enables you to place a Message Boards widget in one Site with one set of categories and threads, and place another Message Boards widget in a different Site with a different set of categories and threads.
+**Default**: by default, when a widget is added to a page in a site, it is *scoped* to that site. This means its data belongs to that site. If the widget is added to a page in a different site, it employs a completely different data set. This enables you to place a Message Boards widget in one site with one set of categories and threads, and place another Message Boards widget in a different site with a different set of categories and threads.
 
-**Global**: Scoping by Site means that you can only have one Message Boards widget per Site. If you add one Message Boards widget to a page in a Site and add another Message Boards widget to a different page in the same Site, the second Message Boards widget contains exactly the same data as the first. This is because, by default, the Message Boards widget is scoped by Site. Most of Liferay's DXP other widgets also default to being scoped by Site.
+**Global**: Scoping by site means that you can only have one Message Boards widget per site. If you add one Message Boards widget to a page in a site and add another Message Boards widget to a different page in the same site, the second Message Boards widget contains exactly the same data as the first. This is because, by default, the Message Boards widget is scoped by site. Most of Liferay's DXP other widgets also default to being scoped by site.
 
-**Page**: The data sets of page-scoped widget serve a single page, not an entire Site. If you set the scope of a widget to *page* instead of *Site*, you can add any number of widgets to different pages, and then they have different sets of data. You can have more than one message board per Site if you wish. Most widgets, however, default to the "native" configuration, and have their scopes set to the Site where they are placed.
+**Page**: The data sets of page-scoped widget serve a single page, not an entire site. If you set the scope of a widget to *page* instead of *site*, you can add any number of widgets to different pages, and then they have different sets of data. You can have more than one message board per site if you wish. Most widgets, however, default to the "native" configuration, and have their scopes set to the site where they are placed.
 
-Unless otherwise noted, all widgets support scoping by instance (global), Site (default), or page. This grants you some flexibility in how you want to set up your Liferay instance. You can configure the scope of an app with just a few simple steps.
+Unless otherwise noted, all widgets support scoping by instance (global), site (default), or page. This grants you some flexibility in how you want to set up your Liferay instance. You can configure the scope of an app with just a few simple steps.
 
 1.  While editing the page, click on *Options* (![Options](../../../../images/icon-app-options.png)) in the app window &rarr; *Configuration* &rarr; *Scope* tab.
 
@@ -20,7 +20,7 @@ Unless otherwise noted, all widgets support scoping by instance (global), Site (
 
 1. Save the configuration and publish the change.
 
-That's all it takes to change the scope for a particular widget. By setting the scope to the current page, you can add as many of these widgets to a Site as you want, provided they are all added to separate pages.
+That's all it takes to change the scope for a particular widget. By setting the scope to the current page, you can add as many of these widgets to a site as you want, provided they are all added to separate pages.
 
 Once you've created a new scope for widgets, a button (![Scope drop-down icon](../../../../images/icon-cog.png)) with a drop-down menu appears in the *Content & Data* menu for you to select which scope to manage content for. You can choose the default scope or any new scopes you created for your widgets. Your selection changes the content that appears when you manage each type.
 

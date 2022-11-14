@@ -9,7 +9,7 @@ Liferay 7.3以前のバージョンでは、ナビゲーションメニューに
 ![サイトページやコンテンツにカスタムメニューを作成する](./using-the-navigation-menus-application/images/01.png)
 
 ```{tip}
-Liferay 7.3+ では、カスタムフィールドを使用してナビゲーションメニューのアイテムに詳細な情報を追加できます（*Custom Fields* メニューの *Site Navigation Menu Item* の下にあります）。 この情報をもとに、アプリケーション表示テンプレートを使って、ナビゲーションメニューをさらにカスタマイズすることができます。
+Liferay 7.3+ では、カスタムフィールドを使用してナビゲーションメニューのアイテムに詳細な情報を追加できます（*Custom Fields* メニューの *Site Navigation Menu Item* の下にあります）。 この情報をアプリケーション表示テンプレートで利用することで、ナビゲーションメニューをさらにカスタマイズすることができます。
 ```
 
 ## ナビゲーションメニューの作成
@@ -47,7 +47,7 @@ Liferay 7.3+ では、カスタムフィールドを使用してナビゲーシ�
     複数の要素を選択することができます。
 
     ```{important}
-    追加された要素が [associated display page](../displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md) を持っていないとき、Liferay は警告を表示します。 表示ページがないものは、リンクを持たず、メニューからも非表示になります。
+    追加された要素が [associated display page](../displaying-content/using-display-page-templates.md) を持っていない場合、Liferay は警告を表示します。 表示ページがないものは、リンクを持たず、メニューからも非表示になります。
     ```
 
     ![追加した要素に関連する表示ページがない場合](./using-the-navigation-menus-application/images/05.png)
@@ -76,13 +76,13 @@ Liferay 7.3+ では、カスタムフィールドを使用してナビゲーシ�
 
 [Vocabulary Navigation Menu elements](./navigation-menu-element-types.md#vocabularies) は動的なもので、ページに表示されると、単一の要素ではなく、現在の階層にあるすべてのカテゴリーとサブカテゴリーが追加されます。 ボキャブラリーの内容に変更があった場合は、自動的にメニューに反映されます。
 
-Dynamic Vocabulary要素により、アイテムの階層が変化しても、ナビゲーションメニューを素早く簡単に更新することができます。 例えば、 [カタログ](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html) で商品の種類を表すためにカテゴリーを使用し、カテゴリーを更新すると、ボキャブラリーを使用しているすべてのメニューが自動的に更新されます。 そして、それらのカテゴリーに使用されている [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) に応じて、カテゴリー分けの変更がページとナビゲーションメニューに自動的に反映される場合があります。
+Dynamic Vocabulary要素により、アイテムの階層が変化しても、ナビゲーションメニューをすばやく簡単に更新することができます。 例えば、 [カタログ](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html) で商品の種類を表すためにカテゴリーを使用し、カテゴリーを更新すると、ボキャブラリーを使用しているすべてのメニューが自動的に更新されるようにすることができます。 そして、それらのカテゴリーに使用されている [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) に応じて、カテゴリー分けの変更がページとナビゲーションメニューに自動的に反映される場合があります。
 
 ![ダイナミックボキャブラリー要素は、ナビゲーションメニューのカテゴリー階層を反映し、自動的に更新されます。](./using-the-navigation-menus-application/images/08.png)
 
 ### ナビゲーションメニューのプレビュー
 
-ナビゲーションメニューは、編集中にプレビューして、ページ上に表示したときの見え方を確認することができます。 目のアイコン(![Eye icon](../../images/icon-view.png))をクリックすると、ナビゲーションメニューのプレビューが表示されたポップアップウィンドウが表示されます。
+ナビゲーションメニューは、編集中にプレビューして、ページ上に表示されたときの見え方を確認することができます。 目のアイコン(![Eye icon](../../images/icon-view.png))をクリックすると、ナビゲーションメニューのプレビューが表示されたポップアップウィンドウが表示されます。
 
 ![ナビゲーションメニューをプレビューして、ページ上に表示したときの見え方を確認することができます。](./using-the-navigation-menus-application/images/09.png)
 

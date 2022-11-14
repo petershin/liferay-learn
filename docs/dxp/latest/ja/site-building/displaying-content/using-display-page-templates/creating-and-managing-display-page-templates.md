@@ -1,99 +1,97 @@
 # 表示ページテンプレートの作成と管理
 
-> 対応可能：Liferay DXP/Portal 7.3以降
+{bdg-secondary}`Liferay DXP/Portal 7.3以降で利用可能`
 
-表示ページテンプレートは、コンテンツのレイアウトとフォーマットを指定し、一意のフレンドリURLで表示します。 表示ページテンプレートと表示ページについて詳しく知りたい方は、 [Displaying Content with Display Page Templates](./about-display-page-templates-and-display-pages.md)を参照してください。
+表示ページテンプレートは、専用のフレンドリーなURLにコンテンツを表示するための構造を定義します。 これらのテンプレートは、現在、以下のコンテンツタイプに対応しています。
 
-```{note}
-表示ページテンプレートは、ウェブコンテンツ、ドキュメント、ブログエントリー、カテゴリにのみ対応しています（Liferay DXP 7.4 以降）。
-```
+* [ブログエントリー](../../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
+* [カテゴリー](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`利用可能 7.4+`
+* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`Available 7.4+`
+* [ドキュメントとメディア](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
+* [Webコンテンツの記事](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
 
-<a name="creating-a-display-page-template" />
+詳しくは、「 [表示ページテンプレートの使用」](../using-display-page-templates.md) を参照してください。
 
 ## 表示ページテンプレートの作成
 
-1. プロダクトメニューを開き、 [**デザイン**] &rarr; [**ページテンプレート**] をクリックします。
+以下の手順で、表示ページのテンプレートを作成します。
 
-1. [**表示ページテンプレート**] タブをクリックします。
+1. **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 **デザイン** &rarr; **ページテンプレート** をクリックします。
 
-   ![[ページテンプレート] に移動し、 [表示ページテンプレート] タブをクリックします。](./creating-and-managing-display-page-templates/images/02.png)
+1. ［**Display Page Templates**］ タブをクリックします。
 
-1. **追加**（![Add](./../../../images/icon-add.png)）をクリックします。
+   ![[ページテンプレート]に移動し、 [表示ページテンプレート]タブをクリックします。](./creating-and-managing-display-page-templates/images/02.png)
 
-1. テンプレートの ［**名前**］ を入力し、 該当する場合は ［**コンテンツの種類**］ と ［**サブタイプ**］ を選択します。 次に、 [**保存**] をクリックします。
+1. **追加** ボタン（![Add Button](./../../../images/icon-add.png)）をクリックします。
+
+1. テンプレートの ［**Name**］ を入力し、 該当する場合は ［**Content Type**］ と ［**Subtype**］ を選択します。 次に、 ［**Save**］ をクリックします。
 
    ![新しいテンプレートのコンテンツ タイプとサブタイプを選択します。](./creating-and-managing-display-page-templates/images/03.png)
 
-1. [コンテントページ](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md)と同じインターフェイスとページ要素を使用して、表示ページテンプレートエディタに要素を追加します。
+1. [コンテンツページ](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md)と同じインターフェースとページ要素を使用してテンプレートを設計します。
 
-   ![フラグメントとウィジェットを使って、テンプレートを構築します。](./creating-and-managing-display-page-templates/images/04.png)
+   ![フラグメントとウィジェットを使ってテンプレートを構築します。](./creating-and-managing-display-page-templates/images/04.png)
 
-1. ページ要素を追加したら、編集可能なフィールドをダブルクリックして、それらをコンテンツストラクチャーフィールド (タイトル、説明など) に [マップ](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) できます。
+1. ページ要素を追加したら、編集可能なフィールドをダブルクリックして、 [map](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) コンテンツ構造のフィールド（例：タイトル、説明）に追加することができます。 マップされたフィールドは紫の輪郭で示されます。
 
    ```{tip}
-   マップされたフィールドは紫の輪郭で示されます。
+   表示ページテンプレートのSEOおよびOpen Graphの設定を行う際に、マッピングされたフィールドを使用することができます。 詳しくは、[SEOとOpen Graphの設定](./configuring-seo-and-open-graph.md)をご覧ください。
    ```
 
-   ![ページ要素をストラクチャーフィールドにマップします。](./creating-and-managing-display-page-templates/images/05.png)
+   ![ページ要素を構造体フィールドにマッピングする。](./creating-and-managing-display-page-templates/images/05.png)
 
-   表示ページの SEO および Open Graph 設定を構成するときにこれらのマップされたストラクチャーフィールドを使用する方法については、 [SEOとOpen Graphの設定](./configuring-seo-and-open-graph.md) を参照してください。
-
-1. 公開する前に、 [プレビュー機能](#preview-the-display-page-template-content-mappings) を使って既存のコンテンツとの編集可能フィールドのマッピングをプレビューできます（Liferay DXP 7.4 で利用可能です）。
+1. 公開前に、 [プレビュー機能](#preview-the-display-page-template-content-mappings) (available 7.4+) を使って、既存のコンテンツとの編集可能フィールドのマッピングをプレビューすることができます。
 
 1. 完了したら、 ［**公開**］ をクリックして作業内容を保存します。
 
-これで、表示ページテンプレートを使用して[コンテンツを公開できます。](./publishing-content-with-display-pages.md)
-
-<a name="preview-the-display-page-template-content-mappings" />
+これで、テンプレートを使って、 [コンテンツの表示ができるようになりました。](./publishing-content-with-display-pages.md).
 
 ### 表示ページテンプレートコンテンツマッピングのプレビュー
 
-> 対応可能：Liferay DXP/Portal 7.4以降
+{bdg-secondary}`7.4以降で利用可能`
 
-1. プロダクトメニューから、 ［**Preview With**］ のドロップダウンメニューをクリックし、 ［**Select Other Item**］ を選択します。
+編集中、Liferayはコンテンツアイテムを持つ表示ページテンプレートをプレビューする2つの方法を提供します。
 
-   ![表示ページテンプレートのプレビューに使用するコンテンツを選択します。](./creating-and-managing-display-page-templates/images/07.png)
+アプリケーションメニューから、 **Preview With** ドロップダウンメニューをクリックし、コンテンツアイテムを選択することができます。 項目が表示されない場合は、「**他の項目を選択する**」 をクリックし、目的のコンテンツを参照します。 これにより、フィールドマッピングに従って、テンプレートにコンテンツデータが動的に入力されます。
 
-1. 選択ダイアログで、表示ページテンプレートのプレビューに使用するコンテンツをクリックします。
-1. または、表示ページテンプレートエディターから、 ［**プレビュー**］(![Preview](../../../images/icon-preview.png)) ボタンをクリックし、プレビューしたいコンテンツを選択します。
+![表示ページテンプレートのプレビューに使用するコンテンツを選択します。](./creating-and-managing-display-page-templates/images/07.png)
 
-   ![ [プレビュー]ボタンをクリックして、表示ページテンプレートのマッピングをプレビューします。](./creating-and-managing-display-page-templates/images/08.png)
+または、表示ページテンプレートエディターから、 **プレビュー**(![Preview](../../../images/icon-preview.png)) ボタンをクリックし、プレビューしたいコンテンツを選択します。
 
-<a name="viewing-display-page-template-usage" />
+![プレビューボタンをクリックすると、表示ページテンプレートのマッピングをプレビューすることができます。](./creating-and-managing-display-page-templates/images/08.png)
 
-## 表示ページテンプレートの使用量を見る
+## 表示ページテンプレートの使用量の表示
 
-> 対応可能：Liferay DXP/Portal 7.4以降
+{bdg-secondary}`7.4以降で利用可能`
 
-**Actions** メニュー（![Actions](../../../images/icon-actions.png)）で、異なる表示ページテンプレートを管理することが可能です。 ここから、 ［**利用数を表示**］ オプションで、特定の表示ページテンプレートを使用しているコンテンツのリストが表示されます。
+異なる表示ページのテンプレートは、 **Actions** メニュー (![Actions](../../../images/icon-actions.png)) を使って管理できます。 ここから、 **View Usages** オプションで、デフォルトテンプレート以外の特定の表示ページテンプレートを使用しているコンテンツの一覧が表示されます。 このオプションは、デフォルトのテンプレートでは使用できません。
 
-```{note}
-* 利用数を表示*オプションは、デフォルトの表示ページテンプレートに割り当てられたコンテンツの使用量を提供するものではありません。
-```
+![アクションメニューによる表示ページテンプレートの管理](./creating-and-managing-display-page-templates/images/06.png)
 
-![［アクション］メニューを使った表示ページテンプレートの管理](./creating-and-managing-display-page-templates/images/06.png)
+使用中の表示ページテンプレートを削除する前に、コンテンツから表示ページテンプレートの割り当てを解除するには、2つの方法があります。
 
-一部のコンテンツで使用されている表示ページ用テンプレートを削除する前に、コンテンツから表示ページ用テンプレートの割り当てを解除する方法が2つあります。
+* デフォルトに割り当てる：コンテンツは現在の表示ページテンプレートから割り当てを解除し、コンテンツタイプとサブタイプのデフォルトの表示ページテンプレートに割り当てます（該当する場合）。
+* 割り当てを解除します。あなたのコンテンツは、どの表示ページテンプレートにも割り当てられていません。
 
-- デフォルトに割り当てる：コンテンツは現在の表示ページテンプレートから割り当てを解除し、コンテンツタイプとサブタイプのデフォルトの表示ページテンプレートに割り当てます（該当する場合）。
-- 割り当て解除：コンテンツはどの表示ページテンプレートにも割り当てられていません。
+以下の手順で、表示ページのテンプレートの使用状況を確認し、コンテンツの割り当てを解除してください。
 
-表示ページテンプレートの使用量を表示し、コンテンツの割り当てを解除するには、
+1. **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**Design**］ &rarr; ［**Page Templates**］ に移動します。
 
-1. プロダクトメニューを開き、 [**デザイン**] &rarr; [**ページテンプレート**] に移動します。
-1. ［**表示ページテンプレート**］ タブをクリックします。
-1. 表示ページテンプレートの ［**Actions**］ メニュー（![Actions](../../../images/icon-actions.png)）をクリックし、 ［**利用数を表示**］ を選択してください。
-1. 表示ページテンプレートを使用するコンテンツのリストから、1つ以上の要素を選択します。
-1. 右上の ［**Actions**］ メニュー (![Actions](../../../images/icon-actions.png)) をクリックし、 ［**Assign to Default**］ または ［**Unassigned**］ を選択します。
-1. [**OK**] をクリックします。
+1. ［**Display Page Templates**］ タブをクリックします。
 
-コンテンツを新しい表示ページテンプレートに割り当てた場合は、コンテンツが期待どおりに表示されることを確認してください。 コンテンツのプレビューと公開については、 [表示ページによるコンテンツの公開](./publishing-content-with-display-pages.md) を参照してください。
+1. 表示ページテンプレートの **アクション** メニュー (![Actions](../../../images/icon-actions.png)) をクリックし、 **使用状況の表示** を選択します。
 
-<a name="additional-information" />
+1. 表示ページのテンプレートを使って、コンテンツのリストから1つまたは複数の要素を選択します。
+
+1. 右上の「**アクション**」 メニュー (![Actions](../../../images/icon-actions.png)) をクリックし、「**デフォルトに割り当てる**」 または「**割り当てを解除する**」 を選択します。
+
+1. ［**OK**］ をクリックします。
+
+コンテンツを新しい表示ページテンプレートに割り当てた場合、コンテンツが期待通りに表示されることを確認します。 コンテンツをプレビューして表示するには、 [Display Pagesを使ったコンテンツの公開](./publishing-content-with-display-pages.md)を参照してください。
 
 ## 追加情報
 
-- [表示ページによるコンテンツの公開](./publishing-content-with-display-pages.md)
-- [SEOとOpen Graphの設定](./configuring-seo-and-open-graph.md)
-- [コンテントページの使用](./../../creating-pages/using-content-pages.md)
-- [コンテンツページへの要素の追加](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
+* [表示ページによるコンテンツの公開](./publishing-content-with-display-pages.md)
+* [SEOとOpen Graphの設定](./configuring-seo-and-open-graph.md)
+* [コンテントページの使用](./../../creating-pages/using-content-pages.md)
+* [コンテントページへの要素の追加](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)

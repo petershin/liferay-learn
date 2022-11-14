@@ -11,10 +11,10 @@ URLの整合性を維持することは、どのサイトにとっても重要�
 ここでは、リダイレクトツールの機能性が ［**Redirects**］ と ［**404 URLs**］ の2つのタブに編成されています。
 
 * [リダイレクト](#redirects)
-* [404 URL](#urls)
+* [404 URL](#404-urls)
 
 ```{important}
-Liferay DXP/Portal 7.4+では、404トラッキングはデフォルトで無効になっています。 この機能を利用するには、 [404トラッキングを有効にする](#enabling-404-tracking) 必要があります。 これにより、404トラッキングとRedirectionアプリケーションの404 URLタブの両方が有効になります。
+Liferay DXP/Portal 7.4+では、404トラッキングはデフォルトで無効になっています。 この機能を使用するには、 [404トラッキングを有効にする](#enabling-404-tracking) 必要があります。 これにより、404トラッキングとRedirectionアプリケーションの404 URLタブの両方が有効になります。
 ```
 
 ## リダイレクト
@@ -29,6 +29,10 @@ Liferay DXP/Portal 7.4+では、404トラッキングはデフォルトで無効
 * **一時的** ：302コードを使用して、サイトにアクセスする検索エンジンやその他のツールに、要求されたリソースが一時的に移動されたことを通知します。 302コードは、サイトのランキングに影響を与えることなく、問題を修正しながらA/Bテストを実行したりトラフィックをリダイレクトしたりする場合に役立ちます。 DXPはデフォルトで302コードを使用します。
 
 SEOの各リダイレクトタイプの影響の詳細については、 [サイトの最適化](../../optimizing-sites.md) を参照してください。 また、テスト時に302コードを使用する方法については、 [A/Bテスト](../../optimizing-sites/ab-testing/ab-testing.md) を参照してください。
+
+```{note}
+Redirectionツールは、 [alias redirects](../managing-site-urls.md#site-redirects) の定義に使われます。 一括してリダイレクトを行う必要がある場合は、 [パターンリダイレクトの利用](./using-pattern-redirects.md) を参照してください。
+```
 
 ### リダイレクトの作成
 
@@ -126,7 +130,7 @@ URLがアクティブか無視されているかを判断するには、 **ア�
 
 1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** タブをクリックし、 **システム設定** &rarr; **ページ** &rarr; **リダイレクト** と進みます。
 
-   ![［Enabled］にチェックを入れ、［Save］をクリックします。](./using-the-redirection-tool/images/15.png)
+   ![［有効］にチェックを入れ、［保存］をクリックします。](./using-the-redirection-tool/images/15.png)
 
 1. Check **Enabled** .
 
@@ -142,3 +146,4 @@ URLがアクティブか無視されているかを判断するには、 **ア�
 
 * [バーチャルホストのサイトURLの設定](./configuring-virtual-hosts-site-urls.md)
 * [サイトのフレンドリーURLの設定](./configuring-your-sites-friendly-url.md)
+* [パターンリダイレクトの利用](./using-pattern-redirects.md)

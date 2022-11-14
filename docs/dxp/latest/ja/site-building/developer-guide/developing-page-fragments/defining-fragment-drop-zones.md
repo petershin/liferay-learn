@@ -4,7 +4,7 @@
 
 ドロップゾーンを定義するには、次の手順に従います。
 
-1. ［**サイト管理**］ &rarr; ［**デザイン**］ &rarr; ［**フラグメント**］ へ移動します。
+1. ［**サイト管理**］ &rarr; ［**デザイン**］ &rarr; ［**Fragments**］ へ移動します。
 
 1. ［Fragment Sets］で、編集したいフラグメントのあるセットを選択します。
 
@@ -34,33 +34,9 @@
 
 定義したら、フラグメントまたはウィジェットをドロップゾーンにドラッグアンドドロップできます。
 
-<a name="identifying-the-drop-zones-in-the-fragment-code" />
-
-## フラグメントコードのドロップゾーンを特定する
-
-> LiferayDXP7.4以降で利用できます。
-
-ドロップゾーンを特定したい場合は、 `data-lfr-drop-zone-id` HTML属性を `<lfr-drop-zone></lfr-drop-zone>` ラベルに記述してください。 Liferay DXP 7.4以降で作成するフラグメントには、デフォルトで `data-lfr-drop-zone` id1HTML属性が含まれています。
-
-![コンテンツページエディタのドロップゾーンレイアウトは、LiferayDXP7.3とLiferayDXP7.4以降で異なります。](./defining-fragment-drop-zones/images/03.png)
-
-次の例は、 `data-lfr-drop-zone-id` 属性を使用して、タブフラグメント内のドロップゾーンを特定する方法を示しています。
-
-   ```html
-      <div class="tab-panel">
-         [#list 0..configuration.numberOfTabs-1 as i]
-         <div aria-labelledby="tab${i+1}-${fragmentEntryLinkNamespace}" class="tab-panel-item d-none" data-fragment-namespace="${fragmentEntryLinkNamespace}" id="tabPanel${i+1}-${fragmentEntryLinkNamespace}" role="tabpanel" tabindex="0">
-            <lfr-drop-zone data-lfr-drop-zone-id="${i+1}"></lfr-drop-zone>
-         </div>
-         [/#list]
-      </div>
-   ```
-
-   ```{tip}
-   フラグメント内のドロップゾーンおよびその他の要素の順序を構成できます。 詳細については、[フラグメント内の要素の順序を設定する](./setting-the-order-of-elements-in-a-fragment.md) を参照してください。
-   ```
-
-<a name="additional-information" />
+```{tip}
+ドロップゾーンにはIDがありません。 指定された順番で描画され、手動で移動することはできません。 ただし、[Fragment内の他の要素](./setting-the-order-of-elements-in-a-fragment.md)の順序を設定することが可能です。
+```
 
 ## 追加情報
 

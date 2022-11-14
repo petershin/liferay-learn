@@ -8,12 +8,12 @@
 
 ## デザイン
 
-| アプリケーション                                                                                       | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|:---------------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [スタイルブック](../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) | サイト全体で一貫したデザインを実現するためのサイトスタイルルールを定義します。                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [フラグメント](../creating-pages/page-fragments-and-widgets/using-fragments.md)                      | [コンテンツページ](../creating-pages/using-content-pages.md) とテンプレート（例： [マスター](../creating-pages/defining-headers-and-footers/master-page-templates.md), [ページ](../creating-pages/adding-pages/creating-a-page-template.md), [表示ページ](../displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md)）を構築するためのフラグメントとフラグメントセットの作成と管理。                                                                                                                    |
-| テンプレート                                                                                         | [Information Templates](../displaying-content/using-information-templates.md) と [Widget Templates](../creating-pages/using-widget-pages/styling-widgets/creating-a-widget-template.md) を作成し、ページウィジェットや情報アイテム（Web Content や Blog など）に一貫したスタイルを実装します。                                                                                                                                                                                                                                  |
-| ページテンプレート                                                                                      | [マスターページテンプレート](../creating-pages/defining-headers-and-footers/master-page-templates.md) を作成し、コンテンツページやコンテンツページテンプレートを作成する際に使用する主要なレイアウトを設計します。 マスターテンプレートは、ページのヘッダー、フッター、および許可されたフラグメントを決定します。 Create [Page Templates](../creating-pages/adding-pages/creating-a-page-template.md) マスターテンプレートをベースに、再利用可能なページレイアウトをデザインします。 [表示ページテンプレート](../displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md))を作成し、専用URLにコンテンツを表示するためのレイアウトを設計します。 |
+| アプリケーション                                                                                       | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|:---------------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [スタイルブック](../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) | サイト全体で一貫したデザインを実現するためのサイトスタイルルールを定義します。                                                                                                                                                                                                                                                                                                                                                                                               |
+| [フラグメント](../creating-pages/page-fragments-and-widgets/using-fragments.md)                      | [コンテンツページ](../creating-pages/using-content-pages.md) とテンプレート（例： [マスター](../creating-pages/defining-headers-and-footers/master-page-templates.md), [ページ](../creating-pages/adding-pages/creating-a-page-template.md), [表示ページ](../displaying-content/using-display-page-templates.md)）を構築するためのフラグメントとフラグメントセットの作成と管理。                                                                                                                    |
+| テンプレート                                                                                         | [Information Templates](../displaying-content/using-information-templates.md) と [Widget Templates](../creating-pages/using-widget-pages/styling-widgets/creating-a-widget-template.md) を作成し、ページウィジェットや情報アイテム（Web Content や Blog など）に一貫したスタイルを実装します。                                                                                                                                                                                   |
+| ページテンプレート                                                                                      | [マスターページテンプレート](../creating-pages/defining-headers-and-footers/master-page-templates.md) を作成し、コンテンツページやコンテンツページテンプレートを作成する際に使用する主要なレイアウトを設計します。 マスターテンプレートは、ページのヘッダー、フッター、および許可されたフラグメントを決定します。 Create [Page Templates](../creating-pages/adding-pages/creating-a-page-template.md) マスターテンプレートをベースに、再利用可能なページレイアウトをデザインします。 [表示ページテンプレート](../displaying-content/using-display-page-templates.md))を作成し、専用URLにコンテンツを表示するためのレイアウトを設計します。 |
 
 ## サイトビルダー
 
@@ -31,12 +31,12 @@
 | [Webコンテンツ](../../content-authoring-and-management/web-content.md)                         | 本サイトのウェブコンテンツの記事、構成およびテンプレートの作成と管理。              |
 | [ブログ](../../content-authoring-and-management/blogs.md)                                    | 本サイトのブログエントリおよび画像の作成および管理。                       |
 | [ドキュメントとメディア](../../content-authoring-and-management/documents-and-media.md)              | 本サイトの文書およびその他のメディア資産をアップロードし、管理すること。             |
-| [動的データリスト](../../process-automation/forms/dynamic-data-lists.md) (**Deprecated**) | 定義されたフィールドセットを使用してフォームを作成し、表示する。                 |
+| [動的データリスト](../../process-automation/forms/dynamic-data-lists.md) (**Deprecated**) | 定義されたフィールドセットを使用してフォームを作成し、表示することができます。          |
 | [フォーム](../../process-automation/forms.md)                                                 | ユーザーデータを収集するためのサイトフォームの作成と管理（例：フィードバック、求人応募）。    |
 | [ナレッジベース](../../collaboration-and-social/knowledge-base.md)                               | サイトの公式ドキュメントを作成し、表示する。                           |
 | [掲示板](../../collaboration-and-social/message-boards.md)                                   | コミュニケーションとコラボレーションを促進するために、サイトのメッセージボードを作成・管理する。 |
 | [Wikiノード](../../collaboration-and-social/wiki.md)                                         | 本サイトのWikiノードおよび記事の作成と管理。                         |
-| [翻訳](../../content-authoring-and-management/translating-pages-and-content.md)             | サイトページやコンテンツの翻訳プロセスを管理します。                       |
+| [翻訳](../../content-authoring-and-management/translating-pages-and-content.md)             | サイトページやコンテンツの翻訳プロセスを管理する。                        |
 
 ## カテゴリ設定
 
@@ -51,15 +51,15 @@
 |:------------------------------------------------------------ |:------------------------------------------------------------------------- |
 | [ゴミ箱](../../content-authoring-and-management/recycle-bin.md) | 本サイトのごみ箱のコンテンツを管理する。 デフォルトでは、ゴミ箱はインスタンス全体で有効になっていますが、個々のサイトではいつでも無効にできます。 |
 
-## メンバー
+## ユーザー
 
 | アプリケーション                                                                                        | 説明                                                 |
 |:----------------------------------------------------------------------------------------------- |:-------------------------------------------------- |
 | [メンバーシップ](./site-membership.md)                                                                 | ユーザー、組織、ユーザーグループのサイトメンバーシップを表示、管理します。              |
-| [チーム](./site-membership/creating-teams-for-sites.md)                                            | ユーザーに対してサイトの権限を迅速に割り当て、管理するためのチームを作成します。           |
+| [チーム](./site-membership/creating-teams-for-sites.md)                                            | ユーザーのサイト権限を迅速に割り当て、管理するためのチームを作成します。               |
 | [セグメント](./../personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) | サイトユーザーを共有プロパティ（言語、役職など）に基づきグループ化するためのセグメントを作成します。 |
 
-## Configuration (Automatic Copy)
+## 設定
 
 | アプリケーション                                                                    | 説明                                                  |
 |:--------------------------------------------------------------------------- |:--------------------------------------------------- |
@@ -67,13 +67,13 @@
 | [リダイレクト](../site-settings/managing-site-urls/using-the-redirection-tool.md) | HTTPリダイレクトの追加と管理、404エラーの追跡が可能です。                    |
 | [ワークフロー](../../process-automation/workflow.md)                              | コンテンツパブリッシングのレビューと承認プロセスを導くためのカスタムワークフローを設計し、実現します。 |
 
-## 公開設定
+## 公開
 
-| アプリケーション                                                  | 説明                                                         |
-|:--------------------------------------------------------- |:---------------------------------------------------------- |
-| [ステージング](../publishing-tools/staging.md)                  | サイトのステージングを設定する。 Stagingを有効にすると、公開プロセスのレビュー、管理、開始も可能になります。 |
-| [エクスポート](./exporting-importing-site-pages-and-content.md) | サイトページとコンテンツをLARファイルとしてエクスポートします。                          |
-| [インポート](./exporting-importing-site-pages-and-content.md)  | LARファイルからサイトページやコンテンツをインポートすることができます。                      |
+| アプリケーション                                                   | 説明                                                         |
+|:---------------------------------------------------------- |:---------------------------------------------------------- |
+| [ステージング](../publishing-tools/staging.md)                   | サイトのステージングを設定する。 Stagingを有効にすると、公開プロセスのレビュー、管理、開始も可能になります。 |
+| [エクスポート](./exporting-importing-site-pages-and-content.md)  | サイトページとコンテンツをLARファイルとしてエクスポートします。                          |
+| [インポートする](./exporting-importing-site-pages-and-content.md) | LARファイルからサイトページやコンテンツをインポートすることができます。                      |
 
 ## 追加情報
 

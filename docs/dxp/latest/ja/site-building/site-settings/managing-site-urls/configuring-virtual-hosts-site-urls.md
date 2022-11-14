@@ -1,12 +1,12 @@
 # バーチャルホストのサイトURLの設定
 
-バーチャルホストは、ドメイン名（つまり、`www.helloworld.com`）をサイトに接続します。 これは、完全なドメインまたはサブドメイン（たとえば、`developers.helloworld.com`）にできます。 これを使用して、1つのLiferay DXPサーバー上で複数のWebサイトを個別のサイトとしてホストできます。 次の手順に従って、バーチャルホストのサイトURLを設定します。
+バーチャルホストは、ドメイン名（例： `www.helloworld.com`）とサイトを接続します。 これは、完全なドメインまたはサブドメイン（たとえば、`developers.helloworld.com`）にできます。 これを使用して、1つのLiferay DXPサーバー上で複数のWebサイトを個別のサイトとしてホストできます。 次の手順に従って、バーチャルホストのサイトURLを設定します。
 
 1. プロバイダーで、Liferay DXP インスタンスの IP アドレスを指すように DNS 名を設定します。 <!-- I think we can take this .5 step further by either linking to a often cited resource on how on a common domain name provider, a user would update the DNS name to point to a particular IP address. -->
 
 1. Liferay DXP 内で Site Menu (![Site Menu](../../../images/icon-product-menu.png)) を開き、 **Configuration** を展開し、 **Site Settings** &rarr; **Site Configuration** &rarr; **Site URL** に進みます。
 
-   ![［サイト設定］の［サイトURL］に移動します。](./configuring-virtual-hosts-site-urls/images/01.png)
+   ![[サイト構成]の [サイトのURL]に移動します。](./configuring-virtual-hosts-site-urls/images/01.png)
 
 1. **バーチャルホスト** フィールドに希望のドメインまたはサブドメインを入力します（例： `www.helloworld.com`, `http://developers.helloworld.com`)。
 
@@ -26,7 +26,7 @@
 
    ![複数のバーチャルホストを追加して、異なるドメインを指すようにすることができます。](./configuring-virtual-hosts-site-urls/images/03.png)
 
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
 これで、設定済みのドメインを使用してサイトにアクセスできるようになりました。
 

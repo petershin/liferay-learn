@@ -56,6 +56,6 @@ Open Graph画像のローカライズされた別の説明を作成するには�
 
 ## 追加情報
 
-* [検索エンジンを最適化](../../optimizing-sites.md)
+* [検索エンジンを最適化](../optimizing-sites.md)
 * [サイト設定UIリファレンス](./site-settings-ui-reference.md)
 * [ページ単位での設定](./../creating-pages/page-settings/configuring-individual-pages.md)

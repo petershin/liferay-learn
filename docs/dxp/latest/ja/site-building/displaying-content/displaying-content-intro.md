@@ -28,7 +28,7 @@ Webコンテンツの表示ウィジェットは、個々の Web コンテンツ
 
 ## 表示ページテンプレート
 
-ディスプレイページテンプレートは、Webコンテンツをページ上でどのように編成およびフォーマットするかを定義します。 Asset PublisherまたはそのフレンドリURLからWebコンテンツの全文が表示されると、表示ページテンプレートに基づいて、独自のページに表示されます。 詳細は、[Using Display Pages](./using-display-page-templates/about-display-page-templates-and-display-pages.md)を参照してください。
+ディスプレイページテンプレートは、Webコンテンツをページ上でどのように編成およびフォーマットするかを定義します。 Asset PublisherまたはそのフレンドリURLからWebコンテンツの全文が表示されると、表示ページテンプレートに基づいて、独自のページに表示されます。 詳細は、[Using Display Pages](./using-display-page-templates.md)を参照してください。
 
 ## その他の方法
 

@@ -1,18 +1,19 @@
 # フラグメントにデフォルトのリソースを含める
 
-フラグメントセットに画像（例： `.gif`、`.jpg`、`.jpeg`、`.png`）を含めて、フラグメントで使用できるようにすることができます。 [ドキュメントとメディア](../../../content-authoring-and-management/documents-and-media/documents-and-media-overview.md)などの他のアプリケーションではなく、フラグメントと一緒に画像を保持すると便利です。 ここでは、フラグメント セットに画像リソースを含める方法と、フラグメントで画像リソースを使用する方法を学びます。
+フラグメントセットに画像（例： `.gif`、`.jpg`、`.jpeg`、`.png`）を含めて、フラグメントで使用できるようにすることができます。 [ドキュメントとメディア](../../../content-authoring-and-management/documents-and-media.md)などの他のアプリケーションではなく、フラグメントと一緒に画像を保持すると便利です。 ここでは、フラグメント セットに画像リソースを含める方法と、フラグメントで画像リソースを使用する方法を学びます。
 
 ```{note}
 Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay UIではフラグメントセットと呼ばれます。
 ```
 
 ## リソースとともにフラグメント セットをインポートする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to import an example Fragment Set to see how Fragment resources work:
+次に、以下の手順でサンプルのFragment Setをインポートして、Fragment Resourceの動作を確認します。
 
-1. Download and unzip the [example resources Fragment Set](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip) :
+1. [example resources Fragment Set](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip) をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O

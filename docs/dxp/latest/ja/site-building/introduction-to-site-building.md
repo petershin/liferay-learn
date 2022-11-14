@@ -26,7 +26,7 @@ Liferay DXPのコンテンツ管理システム（CMS）は、さまざまな種
 
 [フラグメント](./creating-pages/page-fragments-and-widgets/using-fragments.md)を使用してインラインでコンテンツを作成・編集することができます。 フラグメントとは、コード（CSS、HTML、JavaScript）の個々の断片のことで、これを並べたり組み合わせたりして、ページを構築することができます。 いくつかのフラグメントが用意されており、それらを変更してコンテンツを作成することができます。 よりカスタムなソリューションが必要な場合は、 [独自に作成](./developer-guide/developing-page-fragments/developing-fragments-intro.md)することができます。
 
-各コンテンツには、表示時に表示されるデフォルトページがありますが、 [表示ページテンプレート](./displaying-content/using-display-page-templates/about-display-page-templates-and-display-pages.md)を作成することにより、カスタマイズされたランディングページを提供できます。 表示ページテンプレートは、Webコンテンツの一部（タイトル、本文、画像など）をフラグメントにマッピングすることで、思い通りの表示を実現します。
+各コンテンツにはデフォルトのランディングページがありますが、 [Display Page Template](./displaying-content/using-display-page-templates.md) を作成し、カスタマイズすることができます。 表示ページテンプレートは、Webコンテンツの一部（タイトル、本文、画像など）をフラグメントにマッピングすることで、思い通りの見た目に仕上げることができます。
 
 ![表示ページテンプレートでは、Webコンテンツをページフラグメントにマッピングして、コンテンツを思い通りのデザインやレイアウトで表示することができます。](./introduction-to-site-building/images/02.png)
 
@@ -44,4 +44,4 @@ Liferay DXPの [パーソナライズとセグメンテーション](./personali
 
 ## サイトの最適化
 
-Liferay DXPは、サイトの [検索エンジン最適化(SEO)ランキング](../site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)の向上から、各デバイスに最適化された[レスポンシブ・ページの作成](./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md)、[A/Bテスト](../site-building/optimizing-sites/ab-testing/ab-testing.md)によるメッセージング・キャンペーンの改善まで、サイトを最適化するための複数のツールと機能を提供します。A/Bテストでは、現在のデフォルトバリエーションのページと、ページバリアント（複数可）を比較し、特定の目標（直帰率、クリック数など）に対して、どのページのパフォーマンスが良いかを確認します。これにより、データに基づいてサイトに関するより良い判断ができるようになり、ユーザーや顧客にこれまで以上に迅速にサービスを提供できるようになります。
+Liferay DXPは、サイトの [検索エンジン最適化(SEO)ランキング](../site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)の向上から、 各デバイスに最適化された[レスポンシブ・ページの作成](./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md)、 [A/Bテスト](../site-building/optimizing-sites/ab-testing/ab-testing.md)によるメッセージング・キャンペーンの改善まで、サイトを最適化するための複数のツールと機能を提供します。 A/Bテストでは、現在のデフォルトバリエーションのページと、ページバリアント（複数可）を比較し、特定の目標（直帰率、クリック数など）に対して、どのページのパフォーマンスが良いかを確認します。 これにより、データに基づいてサイトに関するより良い判断ができるようになり、ユーザーや顧客にこれまで以上に迅速にサービスを提供できるようになります。

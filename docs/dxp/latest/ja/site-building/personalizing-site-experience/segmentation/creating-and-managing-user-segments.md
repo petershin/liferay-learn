@@ -2,11 +2,9 @@
 
 **セグメント** を使用すると、ユーザーの **役職** やユーザーの **言語** など、共通のプロパティセットに基づいて、さまざまなユーザーグループを作成できます。 セグメントの定義に使用できるプロパティのリストについては、 [セグメントエディターUIリファレンス](./segments-editor-ui-reference.md) を参照してください。 既存のプロパティに加えて、ユーザーグループと組織グループの[カスタムフィールド](../../../system-administration/configuring-liferay/adding-custom-fields.md)を追加し、セグメント基準でこれらのフィールドを使用できます。
 
-<a name="compound-segments" />
-
 ## 複合セグメント
 
-> 対応可能：Liferay DXP/Portal 7.3以降
+{bdg-secondary}`Liferay DXP/Portal 7.3以降で利用可能`
 
 既存のセグメントを組み合わせて、新しい **複合セグメント** を作成できます。 複合セグメントは、ベースとなるセグメントからプロパティを継承し、メンバーを自動的に更新します。 プロパティを追加して、複合セグメントをさらにカスタマイズできます。
 
@@ -17,8 +15,6 @@
 ```
 
 ![2つ以上のセグメントを組み合わせて、新しい複合セグメントを作成します](./creating-and-managing-user-segments/images/08.png)
-
-<a name="creating-user-segments" />
 
 ## ユーザーセグメントの作成
 
@@ -40,9 +36,7 @@
 
 1. セグメントの条件を設定します（以下の [セグメントの条件の設定](#configuring-segment-conditions) を参照）。
 
-1. ［**保存**］ をクリックします。
-
-<a name="configuring-segment-conditions" />
+1. ［**Save**］ をクリックします。
 
 ### セグメント条件の設定
 
@@ -51,11 +45,15 @@
 - 比較ドロップダウンメニュー（A）を使用して、比較基準を編集します。
 - 条件の名前（B）の横にあるボタンを使用して、同じ **プロパティ** グループから **条件** を追加または削除します。
 - **プロパティ**（C）をドラッグアンドドロップして、別の **プロパティ** グループを使用して条件を追加します。
-- **条件を** AND **および** OR*演算子（DおよびE）と組み合わせます。</p>
+- **条件** を **AND** および **OR** 演算子（DおよびE）と組み合わせます。
 
-   ![条件を追加および組み合わせて、セグメント基準を定義します。](./creating-and-managing-user-segments/images/06.png)</li> </ul>
+   ![条件を追加および組み合わせて、セグメント基準を定義します。](./creating-and-managing-user-segments/images/06.png)
 
 [セッションプロパティ](./segments-editor-ui-reference.md#session-properties) の場合、[セッションプロパティのボキャブラリ](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)を使用して事前定義された値のリストを構成できます。 このオプションにより、セグメントを定義するタスクが容易になり、手動入力のエラーがなくなります。
+
+```{note}
+Liferay DXP 7.4 U42+/GA42+ からは、ジオロケーションによる Segment を作成することができます。 詳しくは、 [ジオロケーション別セグメント](./segmentation-by-geolocation.md) をご覧ください。
+```
 
 編集すると、基準を満たすメンバーの数が［Conditions］領域の上部に表示されます。 ［**View Members**］ をクリックしてリストを表示できます。 これは、セグメントを正しく定義しているかどうかを判断するのに役立ちます。
 
@@ -68,8 +66,6 @@
 ```{note}
 エクスペリエンスで使用されているユーザーセグメントは削除できません。
 ```
-
-<a name="related-information" />
 
 ## 関連情報
 

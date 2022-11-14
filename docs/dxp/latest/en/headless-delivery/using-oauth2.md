@@ -3,6 +3,7 @@ toc:
 - ./using-oauth2/creating-oauth2-applications.md
 - ./using-oauth2/authorizing-account-access-with-oauth2.md
 - ./using-oauth2/oauth2-scopes.md
+- ./using-oauth2/securing-your-app-with-oauth2.md
 ---
 # Using OAuth 2.0
 
@@ -12,6 +13,7 @@ toc:
 using-oauth2/creating-oauth2-applications.md
 using-oauth2/authorizing-account-access-with-oauth2.md
 using-oauth2/oauth2-scopes.md
+using-oauth2/securing-your-app-with-oauth2.md
 ```
 
 OAuth 2.0 is an industry-standard authorization protocol. Users can seamlessly share select credentials from your Liferay-based website with various clients. OAuth 2.0 works by authorizing password-less access to portions of user-owned resources (such as an email address, a user profile picture, or something else from your account) and other permissioned resources. OAuth 2.0's design encrypts all authorization transport through HTTPS, which prevents data passed between the systems from being intercepted.
@@ -66,4 +68,9 @@ That description throws around a lot of terms. Definitions provided below.
 
 **Callback URI:** Also called a Redirection Endpoint URI. After authorization is complete, the authorization server (i.e., Liferay) sends the client to this location.
 
-Ready to start configuring OAuth 2.0? The next step is to [create an application](./using-oauth2/creating-oauth2-applications.md).
+## Next Steps
+
+* [Creating an OAuth2 Application](./using-oauth2/creating-oauth2-applications.md)
+* [Authorizing Account Access with OAuth2](./using-oauth2/authorizing-account-access-with-oauth2.md)
+* [OAuth 2 Scopes](./using-oauth2/oauth2-scopes.md)
+* [Securing Your App with OAuth2](./using-oauth2/securing-your-app-with-oauth2.md)

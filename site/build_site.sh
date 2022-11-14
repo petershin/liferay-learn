@@ -266,9 +266,9 @@ function unzip_reference_docs {
 
 			for app_jar_dir_name in ${app_dir_name}/*
 			do
-				local relative_path=$(echo "${app_jar_dir_name}/index.html" | cut -d/ -f4-)
+				local app_jar_relative_path=$(echo "${app_jar_dir_name}/index.html" | cut -d/ -f4-)
 
-				echo "[${app_jar_dir_name##*/}](/$relative_path)" >> ./build/input/reference/latest/en/dxp/apps.md
+				echo "[${app_jar_dir_name##*/}](/${app_jar_relative_path})" >> ./build/input/reference/latest/en/dxp/apps.md
 				echo "" >> ./build/input/reference/latest/en/dxp/apps.md
 			done
 		done

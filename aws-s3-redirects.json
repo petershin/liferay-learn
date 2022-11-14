@@ -9,6 +9,14 @@
 	},
 	{
 		"Condition": {
+			"KeyPrefixEquals": "dxp-cloud"
+		},
+		"Redirect": {
+			"ReplaceKeyPrefixWith": "liferay-cloud"
+		}
+	},
+	{
+		"Condition": {
 			"KeyPrefixEquals": "dxp/7.x/"
 		},
 		"Redirect": {
@@ -29,14 +37,6 @@
 		},
 		"Redirect": {
 			"ReplaceKeyPrefixWith": "dxp/latest/ja/building-applications/"
-		}
-	},
-	{
-		"Condition": {
-			"KeyPrefixEquals": "dxp-cloud"
-		},
-		"Redirect": {
-			"ReplaceKeyPrefixWith": "liferay-cloud"
 		}
 	}
 ]

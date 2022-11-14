@@ -115,7 +115,7 @@ jdbc.default.registerMbeans=true
 See [HikariCP Settings](https://github.com/brettwooldridge/HikariCP/wiki) for additional settings details. 
 
 ```{note}
-As of Liferay 7.4, HikariCP is the only suppored connection pool. Support has ended for other connection pools such as C3P0, DBCP, and Tomcat.
+As of Liferay 7.4, HikariCP is the only supported connection pool. Support has ended for other connection pools such as C3P0, DBCP, and Tomcat.
 ```
 
 As with thread pools, monitor your connection pools and adjust them based on your performance tests.

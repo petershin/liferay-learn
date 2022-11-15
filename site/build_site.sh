@@ -262,7 +262,7 @@ function unzip_reference_docs {
 
 		for app_dir_name in ./build/input/reference/latest/en/dxp/javadocs/modules/apps/*
 		do
-			echo "## $(echo $d | cut -d/ -f11)" >> ./build/input/reference/latest/en/dxp/apps.md
+			echo "## $(echo $app_dir_name | cut -d/ -f11)" >> ./build/input/reference/latest/en/dxp/apps.md
 
 			for app_jar_dir_name in ${app_dir_name}/*
 			do

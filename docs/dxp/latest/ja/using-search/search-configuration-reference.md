@@ -23,7 +23,7 @@ Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](..
 
 **検索バー** : 検索キーワードをどのように処理するかの動作を設定します。 詳しくは、 [検索バーを設定する](./getting-started/searching-for-content.md#configuring-the-search-bar) をご覧ください。
 
-**検索ファセットFacets** : 各ファセットの動作とURLパラメータを設定します。 詳しくは、 [ファセット](./search-pages-and-widgets/search-facets/facets.md) をご覧ください。
+**検索ファセットFacets** : 各ファセットの動作とURLパラメータを設定します。 詳しくは、 [ファセット](./search-pages-and-widgets/search-facets.md) をご覧ください。
 
 **検索オプション** : これは特殊なケースで、このウィジェットを構成することで、ページスコープでの動作を定義します。 ［検索オプション］ウィジェットをページに追加し、「検索ページ」に2つのブーリアンを定義します。
 
@@ -38,11 +38,11 @@ Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](..
 
 **ソート** : インデックス内の特定の `キーワード` フィールドの値に基づいて、ユーザーが検索結果を並べ替えることができます。 例えば、「タイトル」フィールドのアルファベット順に結果を表示します。 デフォルトの順序は、検索エンジンの 「**関連性**」 の計算によって決定されます。 詳しくは、 [検索結果の並べ替え](./search-pages-and-widgets/search-results/sorting-search-results.md) をご覧ください。
 
-**低レベルの検索オプション：** **会社インデックス** 以外のインデックスを対象とした検索に参加するように検索ウィジェットを設定します。 会社インデックスはLiferay DXPアセットがデータのインデックスを作成する場所なので、多くのインストールではこのウィジェットは必要ありません。 詳しくは、 [低レベル検索オプションを理解する](./search-pages-and-widgets/search-results/understanding-low-level-search-options.md) をご覧ください。
+**低レベルの検索オプション：****会社インデックス** 以外のインデックスを対象とした検索に参加するように検索ウィジェットを設定します。 会社インデックスはLiferay DXPアセットがデータのインデックスを作成する場所なので、多くのインストールではこのウィジェットは必要ありません。 詳しくは、 [低レベル検索オプションを理解する](./search-pages-and-widgets/search-results/understanding-low-level-search-options.md) をご覧ください。
 
 **類似した検索結果：** ページに表示されているアセットに類似した検索結果を表示します。 詳細は、 [類似結果](./search-pages-and-widgets/similar-results.md) を参照してください。
 
-[Liferay Enterprise Search] **Elasticsearchのモニタリング：** Liferay Enterprise Searchの契約者は、Liferay DXPページに配置されたウィジェット内で、 [Elastic社のKibana](https://www.elastic.co/kibana) モニタリングツールにアクセスすることができます。 詳しくは、 [Elasticsearchをモニタリング](./liferay-enterprise-search/monitoring-elasticsearch.md) をご覧ください。
+[Liferay Enterprise Search]**Elasticsearchのモニタリング：** Liferay Enterprise Searchの契約者は、Liferay DXPページに配置されたウィジェット内で、 [Elastic社のKibana](https://www.elastic.co/kibana) モニタリングツールにアクセスすることができます。 詳しくは、 [Elasticsearchをモニタリング](./liferay-enterprise-search/monitoring-elasticsearch.md) をご覧ください。
 
 ## サイトスコープ検索の設定
 
@@ -88,6 +88,14 @@ Liferayのデフォルトテーマのように、検索先のページがテー�
 
 [OSGi設定ファイル](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を経由してシステム設定を設定できます。 ファイル名はここに記載されています。
 
+### カテゴリファセットフィールド
+
+{bdg-secondary}`7.4 U47+とGA47+`
+
+**設定ファイル：** `com.liferay.portal.search.configuration.CategoryFacetConfiguration.config`となっています。
+
+Category Facet Fieldの項目には、1つの設定があります。Category Facet Field（カテゴリファセットフィールド）」です。 この設定は、Category Facetで集計を作成する際に使用するインデックス付きフィールドを指定します。 デフォルト値は、 `assetCategoryIds`。 代わりに、 `assetVocabularyCategoryIds` を使用して、Category Facetウィジェットに表示する語彙とカテゴリを選択できるようにする必要があります。 詳しくは、 [Category Facet のドキュメント](./search-pages-and-widgets/search-facets/category-facet.md)をご覧ください。
+
 ### デフォルト・キーワードクエリ
 
 **設定ファイル：** `com.liferay.portal.search.configuration.DeltKeywordQueryConfiguration.config`・・・。
@@ -106,7 +114,7 @@ Liferayのデフォルトテーマのように、検索先のページがテー�
 
 * **`searchQueryResultWindowLimit`**
 
-### ステータス マネージャーをインデックスする
+### インデックス・ステータス・マネージャー
 
 **設定ファイル：** `com.liferay.portal.search.configuration.config`です。
 
@@ -144,23 +152,13 @@ Liferayのデフォルトテーマのように、検索先のページがテー�
 
 **`fieldNamePatterns`** ：ここで設定したパターンに一致する名前のフィールドは、分析されていないキーワードフィールドとして扱われます。 スコアリングされたフルテキストクエリの代わりに、スコアリングされていないワイルドカードクエリによってマッチングが行われます。 これはリソースを消費する操作で、インデックスが大きくなると検索エンジンのパフォーマンスが低下します。 部分文字列の照合では、 [ngram tokenizer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) に頼る方が、通常は良い結果が得られます。
 
-### インデックスの再構築
+### 再インデクス
 
 **設定ファイル：** `com.liferay.portal.search.configuration.config`です。
 
 このエントリーには、1つのプロパティしか含まれていません。
 
 **`indexingBatchSizes`** ：バッチインデックスをサポートするモデルタイプのバッチごとにインデックスを作成するドキュメントの数（デフォルト値は1000）を設定します。 大規模なドキュメントを持つモデルでは、この値を小さくすることで、完全な再インデックスを実行する際の安定性が向上する場合があります。
-
-### リインデックサー
-
-**設定ファイル：** `com.liferay.portal.search.configuration.config`です。
-
-これらのプロパティは、Search フレームワークの Reindexer サービスを構成します。 これらは実験的なものであり、Liferayのサポート担当者の指示のもと、特定の特定のシナリオをトラブルシューティングする場合にのみ有効です。 これらの設定は本番環境では使用しないでください。
-
-**`nonbulkIndexingOverride`** ：これをtrueに設定すると、変更されたエンティティがバッチではなく1つずつ再インデックス付けされます。 パフォーマンス上の理由から、本番環境ではこの設定を有効にしないでください。
-
-**`SynchronousExecutionOverride`** ：これをtrueに設定すると、変更されたエンティティのインデックスの再作成が完了するまで他のポータルプロセスをブロックします。 パフォーマンス上の理由から、本番環境ではこの設定を有効にしないでください。
 
 ### エンジンヘルパー
 
@@ -234,19 +232,19 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 ### 検索管理
 
-**コントロールパネル** &rarr; **設定** &rarr; **検索** には、つながり、アクションをインデックスする、フィールドマッピングの3つの管理用UIがあります。
+［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索**］ には、接続、アクションをインデックスする、フィールドマッピングの3つの管理用UIがあります。
 
 詳しくは、専用の [検索管理とチューニング](./search-administration-and-tuning.md) のドキュメントをご覧ください。
 
 #### つながり
 
-検索エンジンへの接続情報が表示されます。 例：
+検索エンジンへの接続情報が表示されます。 例えば、
 
 * 検索エンジンベンダー：Elasticsearch
 * クライアントのバージョン：7.17.1
 * 有効な接続：1
 * 稼働状態：緑
-* 接続ID：\ **REMOTE\**
+* 接続ID：\_REMOTE\_
 * 接続タイプ：読み取り/書き込み
 * クラスター名：LiferayElasticsearchCluster
 * ノード：1
@@ -255,7 +253,7 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 #### アクションをインデックスする
 
-アクションをインデックスするでは、これらのレベルのいずれかでインデックスを再作成します。
+アクションをインデックスでは、これらのレベルのいずれかでインデックスを再作成します。
 
    * すべてのインデックス可能アセット
    * 個々のインデックス可能アセット
@@ -269,6 +267,6 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 ## 関連する内容
 
-* [検索管理とチューニング](search-administration-and-tuning.md)
+* [検索管理と調整](search-administration-and-tuning.md)
 * [Elasticsearchコネクターの設定リファレンス](./installing-and-upgrading-a-search-engine/elasticsearch/elasticsearch-connector-configuration-reference.md)
 * [Elasticsearchを開始する](./installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md)

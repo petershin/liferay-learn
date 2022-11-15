@@ -9,7 +9,7 @@ Liferay の Rest API を使用して、国を作成および管理します。
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います:
+次に、以下の手順を実行します。
 
 1. [Countries API Basics](./liferay-g6m8.zip) をダウンロードし、解凍してください。
 
@@ -149,7 +149,7 @@ java -classpath .:* Countries_GET_FromInstance
    :lines: 11-22
 ```
 
-Instanceの `Country` オブジェクトがJSONで表示されます。
+Instance の `Country` オブジェクトが JSON で表示されます。
 
 ## 国を取得する
 
@@ -159,7 +159,7 @@ Instanceの `Country` オブジェクトがJSONで表示されます。
 インスタンスの ``Countries`` ID を取得するには、 ``Countries_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### Country_GET_ById.sh
+### 国名_GET_ById.sh
 
 コマンド：
 
@@ -186,7 +186,7 @@ java -classpath .:* -DcountryId=1234 Country_GET_ById
 ```{literalinclude} ./countries-api-basics/resources/liferay-g6m8.zip/java/Country_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-18
 ```
 
 `国名` フィールドは、JSONで表示されます。
@@ -227,7 +227,7 @@ java -classpath .:* -DcountryId=1234 Country_PATCH_ById
 
 ## 国を指定する
 
-以下のcURLとJavaコマンドで、既存の国を完全に上書きする。 `1234` を自分の国のIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存の国を完全に上書きします。 `1234` をあなたの国のIDに置き換えてください。
 
 ### Country_PUT_ById.sh
 
@@ -263,7 +263,7 @@ java -classpath .:* -DcountryId=1234 Country_PUT_ById
 
 以下のcURLとJavaコマンドで、既存の国を削除します。 `1234` をあなたの国のIDに置き換えてください。
 
-### Country_DELETE_ById.sh
+### 国名_DELETE_ById.sh
 
 コマンド:
 

@@ -5,12 +5,13 @@
 アプリケーションメニューから [アカウント](../accounts.md) を管理することができますが、LiferayのREST APIを利用することもできます。 これらのサービスを呼び出して、アカウントの作成や管理を行います。
 
 ## アカウントの追加
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. Download and unzip [Accounts API Basics](./liferay-t5p9.zip) .
+1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -42,7 +43,7 @@
 
     ```
 
-1. **グローバルメニュー** &rarr; **アプリケーション** &rarr; **アカウント** に移動します。 新しいアカウントが追加されたことを確認してください。
+1. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 新しいアカウントが追加されたことを確認してください。
 
    ![新しいアカウントが追加されたことを確認します。](./accounts-api-basics/images/01.png)
 
@@ -118,7 +119,7 @@
 
 以下のcURLまたはJavaコマンドを実行することで、アカウントを一覧表示することができます。
 
-### Accounts **GET** FromInstance.sh
+### Accounts_GET_FromInstance.sh
 
 コマンド:
 
@@ -132,7 +133,7 @@
    :language: bash
 ```
 
-### Accounts **GET** FromInstance.java
+### Accounts_GET_FromInstance.java
 
 コマンド:
 
@@ -158,7 +159,7 @@ java -classpath .:* Accounts_GET_FromInstance
 インスタンスのアカウントIDを取得するには、Accounts_GET_FromInstance.[java|sh]を使用します。
 ```
 
-### Account **GET** ById.sh
+### Account_GET_ById.sh
 
 コマンド:
 
@@ -172,7 +173,7 @@ java -classpath .:* Accounts_GET_FromInstance
    :language: bash
 ```
 
-### Account **GET** ById.java
+### Account_GET_ById.java
 
 コマンド:
 
@@ -185,16 +186,16 @@ java -classpath .:* -DaccountId=1234 Account_GET_ById
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Account_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-18
 ```
 
-`アカウント` フィールドはJSONで表示されます。
+`Account` フィールドはJSONで表示されます。
 
 ## アカウントへのパッチ適用
 
 以下のcURLおよびJavaコマンドで、既存のAccountの部分編集を行います。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account **PATCH** ById.sh
+### Account_PATCH_ById.sh
 
 コマンド:
 
@@ -208,7 +209,7 @@ java -classpath .:* -DaccountId=1234 Account_GET_ById
    :language: bash
 ```
 
-### Account **PATCH** ById.java
+### Account_PATCH_ById.java
 
 コマンド:
 
@@ -228,7 +229,7 @@ java -classpath .:* -DaccountId=1234 Account_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存のAccountを完全に上書きします。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account **PUT** ById.sh
+### Account_PUT_ById.sh
 
 コマンド:
 
@@ -242,7 +243,7 @@ java -classpath .:* -DaccountId=1234 Account_PATCH_ById
    :language: bash
 ```
 
-### Account **PUT** ById.java
+### Account_PUT_ById.java
 
 コマンド:
 
@@ -262,7 +263,7 @@ java -classpath .:* -DaccountId=1234 Account_PUT_ById
 
 以下のcURLおよびJavaコマンドで既存のAccountを削除します。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### Account **DELETE** ById.sh
+### Account_DELETE_ById.sh
 
 コマンド:
 
@@ -276,7 +277,7 @@ java -classpath .:* -DaccountId=1234 Account_PUT_ById
    :language: bash
 ```
 
-### Account **DELETE** ById.java
+### Account_DELETE_ById.java
 
 コマンド
 
@@ -292,4 +293,4 @@ java -classpath .:* -DaccountId=1234 Account_DELETE_ById
    :lines: 8-17
 ```
 
-[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェイスがあります。
+[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。

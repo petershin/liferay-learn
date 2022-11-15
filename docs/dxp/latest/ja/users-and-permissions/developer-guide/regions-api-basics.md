@@ -9,9 +9,9 @@ Liferay の REST API を使用して、地域を作成および管理します�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [Regions API Basics](./liferay-r2p3.zip) をダウンロードし、解凍してください。
+1. [Regions API Basics](./liferay-r2p3.zip)  をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-r2p3.zip -O
@@ -73,7 +73,7 @@ Liferay の REST API を使用して、地域を作成および管理します�
 | `-u "test@liferay.com:learn"`                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) 経由でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -114,7 +114,7 @@ Liferay の REST API を使用して、地域を作成および管理します�
 
 以下のcURLまたはJavaコマンドを実行することで、リージョンの一覧を表示することができます。
 
-### Regions **GET** FromInstance.sh
+### Regions_GET_FromInstance.sh
 
 コマンド:
 
@@ -128,7 +128,7 @@ Liferay の REST API を使用して、地域を作成および管理します�
    :language: bash
 ```
 
-### Regions **GET** FromInstance.java
+### Regions_GET_FromInstance.java
 
 コマンド：
 
@@ -154,7 +154,7 @@ Instance の `Region` オブジェクトが JSON で表示されます。
 インスタンスの ``Region`` ID を取得するには、 ``Regions_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### Region **GET** ById.sh
+### Region_GET_ById.sh
 
 コマンド：
 
@@ -168,7 +168,7 @@ Instance の `Region` オブジェクトが JSON で表示されます。
    :language: bash
 ```
 
-### Region **GET** ById.java
+### Region_GET_ById.java
 
 コマンド：
 
@@ -181,7 +181,7 @@ java -classpath .:* -DregionId=1234 Region_GET_ById
 ```{literalinclude} ./regions-api-basics/resources/liferay-r2p3.zip/java/Region_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-18
 ```
 
 `Region` フィールドは、JSONで表示されます。
@@ -190,7 +190,7 @@ java -classpath .:* -DregionId=1234 Region_GET_ById
 
 以下のcURLとJavaコマンドで、既存のRegionの部分編集を行う。 `1234` を自分のリージョンIDに置き換えてください。
 
-### Region **PATCH** ById.sh
+### Region_PATCH_ById.sh
 
 コマンド：
 
@@ -204,7 +204,7 @@ java -classpath .:* -DregionId=1234 Region_GET_ById
    :language: bash
 ```
 
-### Region **PATCH** ById.java
+### Region_PATCH_ById.java
 
 コマンド：
 
@@ -224,7 +224,7 @@ java -classpath .:* -DregionId=1234 Region_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存のリージョンを完全に上書きする。 `1234` を自分の地域のIDに置き換えてください。
 
-### Region **PUT** ById.sh
+### Region_PUT_ById.sh
 
 コマンド:
 
@@ -238,7 +238,7 @@ java -classpath .:* -DregionId=1234 Region_PATCH_ById
    :language: bash
 ```
 
-### Region **PUT** ById.java
+### Region_PUT_ById.java
 
 コマンド:
 
@@ -256,9 +256,9 @@ java -classpath .:* -DregionId=1234 Region_PUT_ById
 
 ## リージョンの削除
 
-以下のcURLとJavaのコマンドで、既存のリージョンを削除する。 `1234` を自分の地域のIDに置き換えてください。
+以下のcURLとJavaのコマンドで、既存のリージョンを削除します。 `1234` を自分の地域のIDに置き換えてください。
 
-### Region **DELETE** ById.sh
+### Region_DELETE_ById.sh
 
 コマンド:
 
@@ -272,7 +272,7 @@ java -classpath .:* -DregionId=1234 Region_PUT_ById
    :language: bash
 ```
 
-### Region **DELETE** ById.java
+### Region_DELETE_ById.java
 
 コマンド
 

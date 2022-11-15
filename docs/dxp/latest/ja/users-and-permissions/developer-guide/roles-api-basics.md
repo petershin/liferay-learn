@@ -7,9 +7,9 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います:
+次に、以下の手順を実行します。
 
-1.  [Roles API Basics](./liferay-z3v5.zip) をダウンロードし、解凍してください。
+1. [Roles API Basics](./liferay-z3v5.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-z3v5.zip -O
@@ -63,7 +63,7 @@
 | `-u "test@liferay.com:learn"`                                                                 | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) 経由でユーザーを認証する必要があります。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -80,11 +80,11 @@
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                             | 説明                                                      |
-|:------------------------------------------------------------------ |:------------------------------------------------------- |
-| `RoleResource.Builder builder = ...`                               | `RoleResource` サービスインスタンスを生成するための `Builder` を取得する。      |
-| `RoleResource roleResource = builder.authentication(...).build();` | Basic 認証を指定し、 `RoleResource` サービスインスタンスを生成します。          |
-| `roleResource.postRoleUserAccountAssociation(...);`                | `postRoleUserAccountAssociation` メソッドを呼び出し、postにデータを渡す。 |
+| 行（省略形）                                                             | 説明                                                        |
+|:------------------------------------------------------------------ |:--------------------------------------------------------- |
+| `RoleResource.Builder builder = ...`                               | `RoleResource` サービスインスタンスを生成するための `Builder` を取得する。        |
+| `RoleResource roleResource = builder.authentication(...).build();` | Basic 認証を指定し、 `RoleResource` サービスインスタンスを生成します。            |
+| `roleResource.postRoleUserAccountAssociation(...);`                | `postRoleUserAccountAssociation` メソッドを呼び出し、データをpostに渡します。 |
 
 プロジェクトには、依存関係として`com.liferay.headless.admin.user.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
@@ -171,7 +171,7 @@ java -classpath .:* -DroleId=1234 Role_GET_ById
 ```{literalinclude} ./roles-api-basics/resources/liferay-z3v5.zip/java/Role_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-17
 ```
 
 `Role` フィールドは、JSONで表示されます。
@@ -212,7 +212,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
 
 ## ユーザーを組織の役割に関連付ける
 
-ユーザーを特定の組織ロールに関連付けることができます。 `1234` を組織のIDに置き換えてください。 `5678` を自分のRoleのIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
+ユーザーを特定の組織ロールに関連付けることができます。 `1234` を組織IDに置き換えてください。 `5678` を自分のRoleのIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
 ### RoleUserAssociation_POST_ToOrganization.shを実行します。
 

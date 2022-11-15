@@ -5,7 +5,7 @@
 Liferayは、 [ISO 3166 Standard](https://www.iso.org/iso-3166-country-codes.html) で定義された利用可能な国のリストを含んでいますが、Countries Managementアプリを使用して既存のエントリを修正したり、新しいエントリを追加したりすることができます。
 
 ```{note}
-liferay DXP 7.4 U36 - U40（またはLiferay Portal 7.4 GA36 - GA40）の場合、国別管理アプリはUIから隠されており、機能フラグを使用して有効にする必要があります。 手順は、以下の[国別管理アプリの有効化](#enable-the-countries-management-app)を参照してください。
+liferay DXP 7.4 U36 - U40（またはLiferay Portal 7.4 GA36 - GA40）の場合、国別管理アプリはUIから隠されており、機能フラグを使用して有効にする必要があります。 手順は、以下の [国別管理アプリの有効化](#enable-the-countries-management-app) を参照してください。
 ```
 
 ## 既存の国を編集する

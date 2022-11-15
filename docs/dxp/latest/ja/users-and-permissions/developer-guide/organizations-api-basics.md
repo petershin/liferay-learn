@@ -6,9 +6,9 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+次に、以下の手順を実行します。
 
-1. Download and unzip [Organizations API Basics](./liferay-w2h3.zip) .
+1. [Organizations API Basics](./liferay-w2h3.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-w2h3.zip -O
@@ -123,7 +123,7 @@ Then, follow these steps:
 
 以下のcURLまたはJavaコマンドを実行することで、Organizationを一覧表示することができます。
 
-### Organizations **GET** FromInstance.sh
+### Organizations_GET_FromInstance.sh
 
 コマンド:
 
@@ -137,7 +137,7 @@ Then, follow these steps:
    :language: bash
 ```
 
-### Organizations **GET** FromInstance.java
+### Organizations_GET_FromInstance.java
 
 コマンド:
 
@@ -153,17 +153,17 @@ java -classpath .:* Organizations_GET_FromInstance
    :lines: 11-22
 ```
 
-Instance の `Organization` オブジェクトが JSON で表示されます。
+Instance の `Organization` オブジェクトは、JSON で表示されます。
 
 ## 組織を持つ
 
 以下のcURLまたはJavaコマンドで、特定のOrganizationを取得します。
 
 ```{tip}
-インスタンスの ``Organization` ID を取得するには、 ``Organizations_GET_FromInstance.[java|sh]`` を使用します。
+インスタンスの ``Organization`` ID を取得するには、 ``Organizations_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### 組織名 **GET** ById.sh
+### 組織名_GET_ById.sh
 
 コマンド:
 
@@ -177,7 +177,7 @@ Instance の `Organization` オブジェクトが JSON で表示されます。
    :language: bash
 ```
 
-### 組織 **GET** ById.java
+### 組織_GET_ById.java
 
 コマンド:
 
@@ -190,16 +190,16 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
 ```{literalinclude} ./organizations-api-basics/resources/liferay-w2h3.zip/java/Organization_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-18
 ```
 
-`組織` フィールドは、JSONで表示されます。
+`組織` フィールドはJSONで表示されます。
 
 ## 組織のパッチ
 
-以下のcURLとJavaコマンドで、既存の組織の部分編集を行います。 `1234` を組織のIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存の組織の部分編集を行います。 `1234` を組織IDに置き換えてください。
 
-### 組織名 **PATCH** ById.sh
+### 組織名_PATCH_ById.sh
 
 コマンド:
 
@@ -213,7 +213,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
    :language: bash
 ```
 
-### 組織 **PATCH** ById.java
+### 組織_PATCH_ById.java
 
 コマンド:
 
@@ -233,7 +233,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
 
 以下のcURLとJavaのコマンドで、既存のOrganizationを完全に上書きします。 `1234` を組織IDに置き換えてください。
 
-### 組織名 **PUT** ById.sh
+### 組織名_PUT_ById.sh
 
 コマンド:
 
@@ -247,7 +247,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
    :language: bash
 ```
 
-### 組織 **PUT** ById.java
+### 組織_PUT_ById.java
 
 コマンド:
 
@@ -265,9 +265,9 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
 
 ## 組織を削除する
 
-以下のcURLとJavaのコマンドで、既存の組織を削除します。 `1234` を組織のIDに置き換えてください。
+以下のcURLとJavaのコマンドで、既存の組織を削除します。 `1234` を組織IDに置き換えてください。
 
-### 組織名 **DELETE** ById.sh
+### 組織名_DELETE_ById.sh
 
 コマンド:
 
@@ -281,7 +281,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
    :language: bash
 ```
 
-### 組織 **DELETE** ById.java
+### 組織_DELETE_ById.java
 
 コマンド
 

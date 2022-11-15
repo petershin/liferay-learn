@@ -2,6 +2,14 @@
 
 7.4リリースでは、Liferayの検索インフラにいくつかのハイライトと新機能が追加されています。 新機能としては、Liferay CE 7.4 GA4およびLiferay DXP 7.4 GA1向けの製品に追加されたものがあります。
 
+```{tip}
+7.4 DXP アップデートおよび Portal GA のリリースで追加された機能については、リリースノートを参照してください。
+
+Liferay DXP：リリースノートは、 [カスタマーポータルのLiferay DXPリリースノートのページ](https://customer.liferay.com/dxp-release-notes) に掲載されています。
+
+Liferay Portal：リリースノートは、Liferay Communityのサイトで [リリース告知ブログ](https://liferay.dev/blogs/-/blogs) として提供されています。 例えば、 [Liferay Portal 7.4 GA43 release announcement](https://liferay.dev/blogs/-/blogs/liferay-portal-7-4-ga43-and-liferay-commerce-4-0-ga43-release) をご覧ください。
+```
+
 ## Elasticsearch7の統合
 
 Elasticsearch 7はLiferay 7.4でサポートされています。 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/ja/articles/360016511651) で、対応する最小バージョン、クライアントバージョン、対応する最新のElasticsearchバージョンなど、最新情報を確認してください。
@@ -56,7 +64,7 @@ DXP Liferay 7.4からは、結果ランキングと同義語セットのデー�
 
 ## Liferay Enterprise Search（LES）
 
-> [**LESサブスクライバー](https://www.liferay.com/products/dxp/enterprise-search**)
+> [**LESサブスクライバー**](https://www.liferay.com/products/dxp/enterprise-search)
 
 ### LESのインストールを簡素化
 

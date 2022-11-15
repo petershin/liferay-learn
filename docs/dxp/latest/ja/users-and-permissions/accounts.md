@@ -6,7 +6,6 @@ toc:
 - ./accounts/account-roles.md
 - ./accounts/account-management-widget.md
 ---
-
 # アカウント
 
 ```{toctree}
@@ -31,7 +30,7 @@ accounts/account-management-widget.md
 
 ## アカウントの作成
 
-1. ［グローバルメニュー］（![Global Menu](../images/icon-applications-menu.png)）を開きます。 *［アプリケーション］* &rarr; *［アカウント］*へ移動します。
+1. ［グローバルメニュー］（![Global Menu](../images/icon-applications-menu.png)）を開きます。 *コントロールパネル* &rarr; *アカウント*に移動します。
 
 1. _［追加］_ アイコン (![Add icon](../images/icon-add.png)) をクリックして、新しいアカウントを作成します。
 

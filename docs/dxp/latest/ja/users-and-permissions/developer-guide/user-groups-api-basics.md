@@ -179,7 +179,7 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_GET_ById
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/java/UserGroup_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-18
 ```
 
 `UserGroup` フィールドは、JSONで表示されます。
@@ -286,4 +286,4 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には、 `UserGroup` のすべてのサービスとスキーマが表示され、各サービスを試用できるインターフェイスを備えています。
+[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には `UserGroup` のすべてのサービスとスキーマが表示され、各サービスを試用するためのインターフェイスが用意されています。

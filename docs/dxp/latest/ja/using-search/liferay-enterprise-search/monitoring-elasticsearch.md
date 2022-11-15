@@ -1,6 +1,6 @@
 # Elasticsearchのモニタリング
 
-> LESサブスクライバー
+{bdg-link-primary}`LES サブスクリプション <./activating-liferay-enterprise-search.md>`
 
 Liferay Enterprise Search（LES）の [サブスクリプション](https://www.liferay.com/products/dxp/enterprise-search) をお持ちの場合は、Elasticの [KibanaモニタリングUI](https://www.elastic.co/guide/en/kibana/7.x/introduction.html) をLiferay DXPと統合できるため、Liferay自体の中でモニタリングアクティビティを実行できます。
 
@@ -102,7 +102,7 @@ Elasticsearch 6.x が、 [サポート終了](https://www.elastic.co/support/eol
 ## LESモニタリングアプリをインストールして設定する
 
 ```{note}
-Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーションは、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 そのため、Liferay DXP 7.4+ では、モジュールのインストールは不要です。 詳しくは、[LESの有効化](./activating-liferay-enterprise-search.md)を参照してください。
+Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーションは、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 そのため、Liferay DXP 7.4+ではモジュールのインストールは不要です。 詳しくは、[LESの有効化](./activating-liferay-enterprise-search.md)を参照してください。
 ```
 
 LESモニタリングアプリをダウンロードし、LPKGファイルを`［Liferay Home］/deploy`フォルダにコピーしてインストールします。 Liferay DXPが実行されている場合、サーバーを再起動するように求められる場合があります。 また、Liferay が起動していない状態で、 `[Liferay Home]/osgi/marketplace` フォルダに LPKG ファイルを配置することもできます。
@@ -145,17 +145,37 @@ LESモニタリングアプリをダウンロードし、LPKGファイルを`［
    server.basePath: "/o/portal-search-elasticsearch-xpack-monitoring/xpack-monitoring-proxy"
    ```
 
-   `server.basePath`を設定すると、KibanaのURL（`https://localhost:5601`など）からKibana UIにアクセスできなくなります。 Kibana UIへのアクセスはすべてMonitoringウィジェットを介して行われ、Liferayにサインインしたユーザーのみがアクセス可能です。 URLを使用してウィジェットに直接移動します。
+   `server.basePath`を設定すると、KibanaのURL（`https://localhost:5601`など）からKibana UIにアクセスできなくなります。 Kibana UIへのアクセスはすべてMonitoringウィジェットを経由し、Liferayにサインインしたユーザーのみアクセス可能です。 URLを使用してウィジェットに直接移動します。
 
    [http://localhost:8080/o/portal-search-elasticsearch-monitoring/monitoring-proxy/app/monitoring](http://localhost:8080/o/portal-search-elasticsearch-monitoring/monitoring-proxy/app/monitoring)
 
-1. Liferay の Monitoring ウィジェットを Kibana の UI へのプロキシとして使用しており、自己署名証明書を使用しているため、アプリケーションサーバーの起動 JVM パラメータで Kibana の証明書を信頼するように設定する必要があります。
+1. Liferay の Monitoring ウィジェットを Kibana の UI へのプロキシとして使用しており、自己署名証明書を使用しているため、Liferay アプリケーションサーバーの起動 JVM パラメータで Kibana の証明書を信頼するように設定する必要があります。 2つのアプローチがあり、ここではTomcatで実証しています。
 
-   1つのアプローチは、トラストストアのパス、パスワード、およびタイプをアプリケーションサーバーの起動JVMパラメーターに追加することです。 以下は、Tomcatサーバーの`CATALINA_OPTS`に追加するためのトラストストアとパスのパラメーターの例です。
+   - 推奨される方法は、デフォルトの `cacerts` ファイルのコピーを作成し、秘密鍵なしで証明書をインポートしてから、カスタムトラストストアファイルを使用するようにアプリケーションサーバーを構成することです。
+      1. Liferay JVM からデフォルトの `cacerts` ファイルをコピーし（JDK 8 では `$JAVA_HOME/jre/lib/security` に、JDK 11 では `$JAVA_HOME/lib/security` にあります）、名前を `cacerts-custom.jks`に変更してください。
+      1. `openssl`を使って、秘密鍵を除いたCAの証明書を取り出します。 `.p12` （例： `elastic-stack-ca.p12`）が1つしかない場合は、以下を使用します。
 
-    ```bash
-    -Djavax.net.ssl.trustStore=/path/to/elastic-nodes.p12 -Djavax.net.ssl.trustStorePassword=liferay -Djavax.net.ssl.trustStoreType=pkcs12
-    ```
+         ```sh
+         openssl pkcs12 -in elastic-stack-ca.p12 -out elastic-stack-ca.crt -nokeys
+         ```
+
+      1. Java の `keytool`を使って、証明書をカスタム JKS ファイルにインポートします。
+
+         ```sh
+         keytool -importcert -file elastic-stack-ca.crt -keystore PATH/TO/cacerts-custom.jks
+         ```
+
+      1. カスタムのトラストストアを使用するようにTomcatを設定します。
+
+         ```
+         CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/PATH/TO/cacerts-custom.jks -Djavax.net.ssl.trustStorePassword=changeit"
+         ```
+
+   - または、Elasticsearchコネクタのセキュリティ設定に使用したのと同じファイルを使用して、アプリケーションサーバのスタートアップJVMパラメータにトラストストアのパス、パスワード、タイプを追加してください。 `setenv.sh/bat` ファイルを通して、Tomcat サーバーの `CATALINA_OPTS` にトラストストアとパスのパラメータを追加する。
+
+      ```
+      CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/path/to/elastic-nodes.p12 -Djavax.net.ssl.trustStorePassword=liferay -Djavax.net.ssl.trustStoreType=pkcs12"
+      ```
 
 1. スタックにKibana 7.11とJDK 11が含まれている場合は、TLSバージョン1.3を無効にする必要があります。 `--tls-max-v1.2` を `KIBANA_HOME/config/node.options`に追加して、Kibana自体でTLS 1.3を無効にします。 詳細および別の解決策については、 [監視設定のトラブルシューティング](#troubleshooting-the-monitoring-setup) を参照してください。
 
@@ -163,15 +183,13 @@ LiferayとKibanaを再起動します。
 
 ## Liferayでのモニタリング
 
-KibanaとLES Monitoringがインストールされ、構成され、すべての サーバーが稼働したら、Elasticsearch Monitoringウィジェットをページに追加します。
+KibanaとLES Monitoringのインストール、設定、実行が完了したら、Elasticsearch Monitoringのウィジェットをページに追加します。
 
 1. コンテンツページの ［**フラグメントとウィジェット**］ メニュー、またはウィジェットページの［Add Widgets］メニューを開きます。
 
 1. ウィジェット検索バーを使用して **モニタリング** を検索し、 **Elasticsearch Monitoring** ウィジェットを［検索］カテゴリからページにドラッグします。 Liferay DXP 7.2の場合、ウィジェットは **X-Pack Monitoring** と呼ばれます。
 
-> 詳細については、関連するElasticsearchのドキュメントを参照してください。 
-> * [クラスタを監視する](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/es-monitoring.html)
-> * [X-Packを設定する--クラスタ環境での監視とセキュリティのベストプラクティス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html)
+> 詳細については、関連するElasticsearchのドキュメントを参照してください。 [**クラスタを監視する](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/es-monitoring.html**) [X-Packを設定する--クラスタ環境での監視とセキュリティのベストプラクティス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html) </a>
 
 ## Kibana構成の例
 

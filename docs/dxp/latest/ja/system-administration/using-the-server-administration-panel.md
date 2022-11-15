@@ -1,9 +1,9 @@
 ---
 toc:
-- using-the-server-administration-panel/managing-system-resources.md
-- using-the-server-administration-panel/configuring-logging.md
-- using-the-server-administration-panel/configuring-external-services.md
-- using-the-server-administration-panel/configuring-a-shutdown-event.md
+  - using-the-server-administration-panel/managing-system-resources.md
+  - using-the-server-administration-panel/configuring-logging.md
+  - using-the-server-administration-panel/configuring-external-services.md
+  - using-the-server-administration-panel/configuring-a-shutdown-event.md
 ---
 # サーバー管理パネルの使用
 
@@ -22,7 +22,7 @@ using-the-server-administration-panel/configuring-a-shutdown-event.md
 
 サーバー管理の機能はタブに分割されています。
 
-| サーバー管理タブ | 説明                                                                                                                                                                                                                                                                           | ドキュメントリンク                                                                                 |
+| サーバー管理タブ | Description                                                                                                                                                                                                                                                                  | ドキュメントリンク                                                                                 |
 |:-------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------------- |
 | リソース     | システムを監視し、管理タスクを実行します（ガベージコレクターの実行、データベースキャッシュのクリアなど）。                                                                                                                                                                                                                        | [システムリソースの管理](./using-the-server-administration-panel/managing-system-resources.md)       |
 | ログレベル    | ログレベルを表示および設定します。 Liferay DXPクラスおよびパッケージのログレベルを変更します。 ログ設定にカスタムオブジェクトを追加します。                                                                                                                                                                                                 | [ロギングの構成](./using-the-server-administration-panel/configuring-logging.md)                 |

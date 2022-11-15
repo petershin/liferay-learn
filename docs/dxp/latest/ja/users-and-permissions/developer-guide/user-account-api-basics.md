@@ -5,12 +5,13 @@
 まず、新しいユーザーを追加します。
 
 ## ユーザーの追加
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. Download and unzip [User Account API Basics](./liferay-y6q4.zip) .
+1. [User Account API Basics](./liferay-y6q4.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-y6q4.zip -O
@@ -101,7 +102,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
     :language: bash
 ```
 
-コマンドの引数は次のとおりです。
+ここでは、コマンドの引数を紹介します。
 
 | 引数                                                                                                                                             | 説明                              |
 |:---------------------------------------------------------------------------------------------------------------------------------------------- |:------------------------------- |
@@ -112,10 +113,10 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | `-u "test@liferay.com:learn"`                                                                                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモンストレーションの目的で基本認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2/using-oauth2.md) を使ってユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2/using-oauth2.md) を使ってユーザーを認証する必要があります。
 ```
 
-他のcURLコマンドも同様のJSON引数を使用します。
+他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
 
@@ -153,7 +154,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 以下のcURLとJavaのコマンドで全ユーザーのリストを取得します。
 
-### Users **GET** FromInstance.sh
+### Users_GET_FromInstance.sh
 
 コマンド:
 
@@ -167,7 +168,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
    :language: bash
 ```
 
-### Users **GET** FromInstance.java
+### Users_GET_FromInstance.java
 
 コマンド：
 
@@ -189,7 +190,7 @@ JSON レスポンスには、そのインスタンスのすべての Users が�
 
 以下のcURLとJavaコマンドで特定のUserを取得します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User **GET** ById.sh
+### User_GET_ById.sh
 
 コマンド:
 
@@ -203,7 +204,7 @@ JSON レスポンスには、そのインスタンスのすべての Users が�
    :language: bash
 ```
 
-### User **GET** ById.java
+### User_GET_ById.java
 
 コマンド:
 
@@ -216,7 +217,7 @@ java -classpath .:* -DuserId=1234 User_GET_ById
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/java/User_GET_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-20
+   :lines: 8-18
 ```
 
 User は JSON レスポンスで返されます。
@@ -225,7 +226,7 @@ User は JSON レスポンスで返されます。
 
 以下のcURLとJavaコマンドで、既存のUserの部分編集を行います。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User **PATCH** ById.sh
+### User_PATCH_ById.sh
 
 コマンド:
 
@@ -239,7 +240,7 @@ User は JSON レスポンスで返されます。
    :language: bash
 ```
 
-### User **PATCH** ById.java
+### User_PATCH_ById.java
 
 コマンド:
 
@@ -261,7 +262,7 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存のUserを完全に上書きします。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User **PUT** ById.sh
+### User_PUT_ById.sh
 
 コマンド:
 
@@ -275,7 +276,7 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
    :language: bash
 ```
 
-### User **PUT** ById.java
+### User_PUT_ById.java
 
 コマンド:
 
@@ -299,7 +300,7 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
 
 以下のcURLおよびJavaコマンドで既存のUserを削除します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
 
-### User **DELETE** ById.sh
+### User_DELETE_ById.sh
 
 コマンド:
 
@@ -313,7 +314,7 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
    :language: bash
 ```
 
-### User **DELETE** ById.java
+### User_DELETE_ById.java
 
 コマンド：
 

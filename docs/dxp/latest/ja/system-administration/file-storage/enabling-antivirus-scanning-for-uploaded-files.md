@@ -8,7 +8,7 @@
 
 <!-- TODO: LRDOCS-9341 - Antivirus can be enabled for older versions (7.2 and below) but requires use of portal properties and a local install of ClamAV server which we do not recommend. -->
 
-Liferayにアップロードされたファイルを自動的にスキャンしてウイルスを検出できます。 ウイルス対策スキャナーを有効にすると、[ドキュメントとメディア](../../content-authoring-and-management/documents-and-media/documents-and-media-overview.md)、[掲示板](../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md)などのLiferayアプリケーションへのアップロード時にファイルがチェックされます。 ウイルスが見つかった場合は、報告され、ユーザーが拒否できます。
+Liferayにアップロードされたファイルを自動的にスキャンしてウイルスを検出できます。 ウイルス対策スキャナーを有効にすると、[ドキュメントとメディア](../../content-authoring-and-management/documents-and-media.md)、[掲示板](../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md)などのLiferayアプリケーションへのアップロード時にファイルがチェックされます。 ウイルスが見つかった場合は、報告され、ユーザーが拒否できます。
 
 ![スキャナーは、ドキュメントとメディアやその他のLiferayアプリケーションへのアップロード時にウイルスに感染したファイルを検出します。](./enabling-antivirus-scanning-for-uploaded-files/images/01.png)
 

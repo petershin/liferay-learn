@@ -4,7 +4,6 @@ toc:
 - ./file-storage/file-store-migration.md
 - ./file-storage/other-file-store-types.md
 ---
-
 # ファイルストレージ
 
 ```{toctree}
@@ -15,7 +14,7 @@ file-storage/file-store-migration.md
 file-storage/other-file-store-types.md
 ```
 
-Liferay DXPにアップロードされた全てのファイルは、インスタンスの指定されたファイルストアに保存されます。 これには、 [［ドキュメントとメディア］](../content-authoring-and-management/documents-and-media/documents-and-media-overview.md)を使ってアップロードされたファイルや、ファイルの添付をサポートするアプリケーション（ [掲示板](../collaboration-and-social/collaboration-and-social-overview.md)など）を使ってアップロードされたファイルが含まれます。 ファイルストアは、ローカルマシン上、ネットワークにマウントされたファイルシステム上、データベース、またはクラウドでホストできます。
+Liferay DXPにアップロードされた全てのファイルは、インスタンスの指定されたファイルストアに保存されます。 これには、 [［ドキュメントとメディア］](../content-authoring-and-management/documents-and-media.md)を使ってアップロードされたファイルや、ファイルの添付をサポートするアプリケーション（ [掲示板](../collaboration-and-social/collaboration-and-social-overview.md)など）を使ってアップロードされたファイルが含まれます。 ファイルストアは、ローカルマシン上、ネットワークにマウントされたファイルシステム上、データベース、またはクラウドでホストできます。
 
 ```{important}
 本番環境に移行する場合は、さまざまなファイルストア構成オプションを確認し、本番環境に移行する**前**に、ニーズに最適なオプションを選択することを強くお勧めします。 そうすることで、プロジェクトの後半でファイル保管場所を移行する手間を省くことができます。

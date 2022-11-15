@@ -6,7 +6,7 @@
 
 ## アカウントグループの作成
 
-1. ［グローバルメニュー］（![Global Menu](../../images/icon-applications-menu.png)）を開きます。 ［**アプリケーション**］ &rarr; ［**アカウントグループ**］ へ移動します。
+1. ［グローバルメニュー］（![Global Menu](../../images/icon-applications-menu.png)）を開きます。 **コントロールパネル** &rarr; **アカウントグループ** に移動します。
 
 1. **追加** アイコン (![Add icon](../../images/icon-add.png)) をクリックして、新しいアカウントグループを作成します。
 

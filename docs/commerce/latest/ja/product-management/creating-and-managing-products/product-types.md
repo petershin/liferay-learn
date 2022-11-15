@@ -21,7 +21,7 @@ product-types/virtual-product-reference.md
 product-types/shop-by-diagram.md
 ```
 
-コマースカタログには、シンプル、グループ化、仮想、図の4つの商品タイプが用意されています。
+commerceカタログには、シンプル、グループ化、仮想、図の4つの商品タイプが用意されています。
 
 **[シンプル商品](./product-types/creating-a-simple-product.md)** ：在庫が追跡される物理的な商品。
 
@@ -29,7 +29,7 @@ product-types/shop-by-diagram.md
 
 **[仮想商品](./product-types/creating-a-virtual-product.md)** ：音楽ファイル、電子出版物、サービス、および保証などの非有形商品。
 
-**[コマースBOM](./product-types/shop-by-diagram.md)** : これらはストア内の商品を参照する部品表（BOM）図に属する構成部品。
+**[commerceBOM](./product-types/shop-by-diagram.md)** : これらはストア内の商品を参照する部品表（BOM）図に属する構成部品。
 
 ## 追加情報
 
@@ -37,4 +37,4 @@ product-types/shop-by-diagram.md
 * [グループ商品の作成](./product-types/creating-a-grouped-product.md)
 * [仮想商品の作成](./product-types/creating-a-virtual-product.md)
 * [仮想商品リファレンス](./product-types/virtual-product-reference.md)
-* [コマースBOM](./product-types/shop-by-diagram.md)
+* [commerceBOM](./product-types/shop-by-diagram.md)

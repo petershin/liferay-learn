@@ -3,6 +3,7 @@
 アプリケーションメニューから [Create and Manage Organizations](../organizations/creating-and-managing-organizations.md) を利用できますが、Liferay の REST API を利用することも可能です。 これらのサービスを呼び出して、組織を管理します。
 
 ## 組織を追加する
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
@@ -163,7 +164,7 @@ Instance の `Organization` オブジェクトは、JSON で表示されます�
 インスタンスの ``Organization`` ID を取得するには、 ``Organizations_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### 組織名_GET_ById.sh
+### Organization_GET_ById.sh
 
 コマンド:
 
@@ -177,7 +178,7 @@ Instance の `Organization` オブジェクトは、JSON で表示されます�
    :language: bash
 ```
 
-### 組織_GET_ById.java
+### Organization_GET_ById.java
 
 コマンド:
 
@@ -213,7 +214,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
    :language: bash
 ```
 
-### 組織_PATCH_ById.java
+### Organization_PATCH_ById.java
 
 コマンド:
 
@@ -247,7 +248,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
    :language: bash
 ```
 
-### 組織_PUT_ById.java
+### Organization_PUT_ById.java
 
 コマンド:
 
@@ -281,7 +282,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
    :language: bash
 ```
 
-### 組織_DELETE_ById.java
+### Organization_DELETE_ById.java
 
 コマンド
 

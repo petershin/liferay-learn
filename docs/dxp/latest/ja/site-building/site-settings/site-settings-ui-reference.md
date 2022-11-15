@@ -13,14 +13,14 @@ Liferay DXP 7.4では、サイト設定アプリケーションが大幅に変�
 
 以下のような設定エリアがあります。
 
-- [コマース](#commerce)
+- [commerce](#commerce)
 - [プラットフォーム](#platform)
 - [コンテンツとデータ](#content-and-data)
 - [その他](#other)
 
 ![サイト設定は4つのエリアに分かれています。](./site-settings-ui-reference/images/20.png)
 
-## コマース
+## commerce
 
 デフォルトでは、Commerceエリアには以下の設定が含まれています。
 
@@ -29,9 +29,9 @@ Liferay DXP 7.4では、サイト設定アプリケーションが大幅に変�
 - 支払
 - 出荷先
 
-ここでは、サイトスコープでのCommerce設定を行うことができます。 コマースの設定の詳細は、 [のLiferay Commerce設定の概要](https://learn.liferay.com/commerce/latest/ja/store-management/liferay-commerce-configuration-overview.html) を参照してください。
+ここでは、サイトスコープでのCommerce設定を行うことができます。 commerceの設定の詳細は、 [のLiferay Commerce設定の概要](https://learn.liferay.com/commerce/latest/ja/store-management/liferay-commerce-configuration-overview.html) を参照してください。
 
-![コマースのデフォルトサイト設定](./site-settings-ui-reference/images/21.png)
+![commerceのデフォルトサイト設定](./site-settings-ui-reference/images/21.png)
 
 ## プラットフォーム
 

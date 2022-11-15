@@ -10,7 +10,7 @@ Liferay Commerceでは、仮想商品とは、顧客がダウンロードでき�
 
 以下の手順に従って、仮想商品を作成します：
 
-1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png))を開き、 ［**コマース**］ タブをクリックして、 ［**商品管理**］ &rarr; ［**Products**］ に移動します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png))を開き、 ［**commerce**］ タブをクリックして、 ［**商品管理**］ &rarr; ［**Products**］ に移動します。
 
 1. ［**追加**］ボタン（![Add icon](../../../images/icon-add.png)）をクリックし、 [**仮想**] を選択します。
 
@@ -24,7 +24,7 @@ Liferay Commerceでは、仮想商品とは、顧客がダウンロードでき�
 
 一般的な商品の詳細（例えば、[仕様](../products/specifications.md)、[ オプション ](../products/using-product-options.md)、[SKUs](../products/creating-skus-for-product-variants.md)）に加えて、仮想商品には独自の設定があります。 次の手順に従って、独自の仮想商品設定を行います：
 
-1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png))を開き、 ［**コマース**］ タブをクリックして、 ［**商品管理**］ &rarr; ［**Products**］ に移動します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png))を開き、 ［**commerce**］ タブをクリックして、 ［**商品管理**］ &rarr; ［**Products**］ に移動します。
 
 1. 既存の **仮想商品** をクリックします。
 
@@ -54,7 +54,7 @@ Liferay Commerceでは、仮想商品とは、顧客がダウンロードでき�
 
 ## Commerce 2.1以前
 
-1. ［**コントロールパネル**］ → ［**コマース**］ → ［**商品**］ に移動します。
+1. ［**コントロールパネル**］ → ［**commerce**］ → ［**商品**］ に移動します。
 1. 追加（![Add icon](../../../images/icon-add.png)）ボタンをクリックしてから、 ［**仮想**］をクリックします。
 1. 次のように入力します：
     * **［Catalog**］ ：Sahara.com

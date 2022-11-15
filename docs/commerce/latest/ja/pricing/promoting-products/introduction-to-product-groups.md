@@ -12,7 +12,7 @@
 
 ## 商品グループの作成
 
-1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png)を開き、 ［**コマース**］ タブをクリックして ［**価格**］ &rarr; ［**商品グループ**］ へ移動します。
+1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png)を開き、 ［**commerce**］ タブをクリックして ［**価格**］ &rarr; ［**商品グループ**］ へ移動します。
 
 1. **追加**(![Add](../../images/icon-add.png)) をクリックし、商品グループの名前と説明を入力します。
 
@@ -40,7 +40,7 @@
 
 ## 商品グループと割引の関連付け
 
-1. アプリケーションメニュー &rarr; ［**コマース**］ タブから ［**価格**］ &rarr; ［**割引**］ をクリックしてください。
+1. アプリケーションメニュー &rarr; ［**commerce**］ タブから ［**価格**］ &rarr; ［**割引**］ をクリックしてください。
 
 1. **追加**(![Add](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
 
@@ -74,7 +74,7 @@
 
 価格表と商品グループを関連付けるには、まず価格表を作成し、作成した商品グループを対象とした価格修飾子を作成する必要があります。
 
-1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png), &rarr; ［**コマース**］ タブから ［**価格**］ &rarr; ［**価格表**］ を開いてください。
+1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png), &rarr; ［**commerce**］ タブから ［**価格**］ &rarr; ［**価格表**］ を開いてください。
 
 1. **追加**(![Add](../../images/icon-add.png)) をクリックし、価格表の［name］、［catalog］、［currency］を入力します。
 
@@ -117,7 +117,7 @@
 
 ![価格修飾子は、商品グループ内の商品に適用されます。](./introduction-to-product-groups/images/10.png)
 
-割引や価格表が商品グループにリンクされているかどうかを確認するには、 **アプリケーションメニュー** ![Applications Menu](../../images/icon-applications-menu.png)をクリックして、 ［**コマース**］ タブをクリックし、 ［**価格**］ &rarr; ［**商品グループ**］ へ進んでください。 価格表と割引の下に、関連するエンティティが表示されます。
+割引や価格表が商品グループにリンクされているかどうかを確認するには、 **アプリケーションメニュー** ![Applications Menu](../../images/icon-applications-menu.png)をクリックして、 ［**commerce**］ タブをクリックし、 ［**価格**］ &rarr; ［**商品グループ**］ へ進んでください。 価格表と割引の下に、関連するエンティティが表示されます。
 
 ## 追加情報
 

@@ -46,10 +46,10 @@
     STARTED com.acme.q4b9.impl_1.0.0
     ```
 
-1. サンプルの税エンジンが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次に、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**コマース**］ → ［**Channels**］ に移動します。 新しいチャネルを編集します。 新しい税エンジン（［Q4B9 Commerce Tax Engine］）がリストに表示されます。
+1. サンプルの税エンジンが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次に、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**commerce**］ → ［**Channels**］ に移動します。 新しいチャネルを編集します。 新しい税エンジン（［Q4B9 Commerce Tax Engine］）がリストに表示されます。
 
 ```{note}
-Commerce 2.1以前のバージョンでは、 ［*サイト管理*］ → ［*コマース*］ → ［*設定*］ → ［*税金*］ → ［*税の計算*］に移動して、税エンジンを確認します。
+Commerce 2.1以前のバージョンでは、 ［*サイト管理*］ → ［*commerce*］ → ［*設定*］ → ［*税金*］ → ［*税の計算*］に移動して、税エンジンを確認します。
 ```
 
 ![新しい税エンジン](./implementing-a-new-tax-engine/images/02.png "新しい税エンジン")

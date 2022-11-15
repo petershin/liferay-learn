@@ -8,7 +8,7 @@
 
 出荷を作成するには
 
-1. **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **コマース** &rarr; **オーダー** を開きます。
+1. **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **commerce** &rarr; **オーダー** を開きます。
 
 1. **Processing** の状態になっている注文を選択します。
 
@@ -69,7 +69,7 @@ Commerce 2.1 は、 **Control Panel** から **Orders** メニューにアクセ
 
 Store Manager は、 [受注後、Shipments メニューを使用して、出荷を作成し、追跡します](../orders/processing-an-order.md#commerce-2-0-and-below) .
 
-**コントロールパネル** &rarr; **コマース** &rarr; **出荷** に移動します。
+**コントロールパネル** &rarr; **commerce** &rarr; **出荷** に移動します。
 
 ![出荷メニューから出荷を作成し、追跡することができます。](./introduction-to-shipments/images/01.png)
 

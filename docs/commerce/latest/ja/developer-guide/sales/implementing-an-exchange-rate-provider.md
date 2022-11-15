@@ -52,10 +52,10 @@
     STARTED com.acme.f2y1.impl_1.0.0
     ```
 
-1. サンプルの為替レートプロバイダーが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次に、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**コマース**］ → ［**Currencies**］ に移動します。 新しい為替レートプロバイダー（［f2y1］）が、 ［**Exchange Rate Provide**］ ドロップダウンの下に表示されます。
+1. サンプルの為替レートプロバイダーが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次に、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**commerce**］ → ［**Currencies**］ に移動します。 新しい為替レートプロバイダー（［f2y1］）が、 ［**Exchange Rate Provide**］ ドロップダウンの下に表示されます。
 
 ```{note}
-Liferay Commerce 2.1以前のバージョンでは、［*コントロールパネル*］ → ［*コマース*］ → ［*設定*］ → ［*Currencies*］ → ［*Exchange Rate*］に移動して為替レートを検索します。 新しい為替レートプロバイダー（［f2y1］）が、［*Exchange Rate Provider*］ドロップダウンの下に表示されます。
+Liferay Commerce 2.1以前のバージョンでは、［*コントロールパネル*］ → ［*commerce*］ → ［*設定*］ → ［*Currencies*］ → ［*Exchange Rate*］に移動して為替レートを検索します。 新しい為替レートプロバイダー（［f2y1］）が、［*Exchange Rate Provider*］ドロップダウンの下に表示されます。
 ```
 
 ![新しい為替レートプロバイダー](./implementing-an-exchange-rate-provider/images/02.png "新しい為替レートプロバイダー")

@@ -4,7 +4,7 @@
 
 以下の手順に従って、新しい価格表を作成します：
 
-1. **グローバルメニュー**(![Applications Menu icon](../images/icon-applications-menu.png))を開き、 ［**コマース**］ タブをクリックして、 ［**価格**］ &rarr; ［**価格表**］ に移動します。
+1. **グローバルメニュー**(![Applications Menu icon](../images/icon-applications-menu.png))を開き、 ［**commerce**］ タブをクリックして、 ［**価格**］ &rarr; ［**価格表**］ に移動します。
 
 1. **追加** ボタン（![Add icon](../images/icon-add.png)）をクリックします。
 
@@ -30,7 +30,7 @@
 
 価格表を追加するには：
 
-1. ［**コントロールパネル**］ → ［**コマース**］ → ［**価格表**］ に移動します。
+1. ［**コントロールパネル**］ → ［**commerce**］ → ［**価格表**］ に移動します。
 1. （![Add icon](../images/icon-add.png)）ボタンをクリックします。
 1. 以下のフィールドに入力します（値の例を次に示します）。
     * ［**Catalog**］ ：Sahara.com

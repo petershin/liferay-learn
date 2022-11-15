@@ -12,10 +12,10 @@ toc:
 ```{toctree}
 :maxdepth: 1
 
-フラグメントの開発<https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/developing-fragments-intro.html>
-フラグメントの使用<https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/building-and-managing-content-pages/using-fragments.html>
-ナビゲーションメニュー<https://learn.liferay.com/dxp/latest/en/site-building/site-navigation.html>
-ウィジェットテンプレートによるウィジェットのスタイリング<https://learn.liferay.com/dxp/latest/en/site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.html>
+フラグメントの開発<https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/developing-fragments-intro.html>
+フラグメントの使用<https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/building-and-managing-content-pages/using-fragments.html>
+ナビゲーションメニュー<https://learn.liferay.com/dxp/latest/ja/site-building/site-navigation.html>
+ウィジェットテンプレートによるウィジェットのスタイリング<https://learn.liferay.com/dxp/latest/ja/site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.html>
 using-web-experience-management/enabling-commerce-products-as-related-assets.md
 ```
 

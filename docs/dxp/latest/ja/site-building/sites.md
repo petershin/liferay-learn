@@ -23,7 +23,7 @@ sites/exporting-importing-site-pages-and-content.md
 sites/default-site-applications.md
 ```
 
-サイトは、パーソナライズされたデジタル体験を構築するためのカスタマイズ可能なスペースです。 各サイトには、ポータル、イントラネット、eコマース・ストアフロントなどのカスタムソリューションを構築するための、 [out-of-the-box applications](./sites/default-site-applications.md) が含まれています。 サイトを作成する際、ブランクサイトを作成するか、カスタムおよびデフォルトのサイトテンプレートを使用して、定義済みの構造とコンテンツをサイトに入力することができます。 [組織](../users-and-permissions/organizations/understanding-organizations.md)を使用している場合、専用の [組織サイト](../users-and-permissions/organizations/organization-sites.md) を有効にし、各組織のニーズに合ったサイトを開発・管理することも可能です。
+サイトは、パーソナライズされたデジタル体験を構築するためのカスタマイズ可能なスペースです。 各サイトには、ポータル、イントラネット、ecommerce・ストアフロントなどのカスタムソリューションを構築するための、 [out-of-the-box applications](./sites/default-site-applications.md) が含まれています。 サイトを作成する際、ブランクサイトを作成するか、カスタムおよびデフォルトのサイトテンプレートを使用して、定義済みの構造とコンテンツをサイトに入力することができます。 [組織](../users-and-permissions/organizations/understanding-organizations.md)を使用している場合、専用の [組織サイト](../users-and-permissions/organizations/organization-sites.md) を有効にし、各組織のニーズに合ったサイトを開発・管理することも可能です。
 
 デフォルトでは、Liferayは認証されたユーザーのために個人サイトも生成します。 各ユーザーは、自分の個人サイトの唯一のメンバーであり、コンテンツを表示および管理するためにサイトを使用することができます。 [User Groups](../users-and-permissions/user-groups/creating-and-managing-user-groups.md)を使用している場合、 [ユーザーグループサイト](../users-and-permissions/user-groups/user-group-sites.md) を作成し、グループメンバー全員の個人サイトに定義済みのページを追加することができます。
 
@@ -65,6 +65,6 @@ sites/default-site-applications.md
 :::
 ::::
 
-## コマースでサイトを利用する
+## commerceでサイトを利用する
 
-Liferay Sites は [チャンネル](https://learn.liferay.com/commerce/latest/ja/store-management/channels.html) と共に使用され、e-コマースストアを作成します。 各チャンネルのサイトタイプ（B2B、B2C、B2Xなど）は、サイトがアカウントとどのように連携するかを決定します。 詳しくは、 [コマースサイトの種類](https://learn.liferay.com/commerce/latest/ja/starting-a-store/sites-and-site-types.html) をご覧ください。
+Liferay Sites は [チャンネル](https://learn.liferay.com/commerce/latest/ja/store-management/channels.html) と共に使用され、e-commerceストアを作成します。 各チャンネルのサイトタイプ（B2B、B2C、B2Xなど）は、サイトがアカウントとどのように連携するかを決定します。 詳しくは、 [commerceサイトの種類](https://learn.liferay.com/commerce/latest/ja/starting-a-store/sites-and-site-types.html) をご覧ください。

@@ -6,7 +6,7 @@
 
 以下の手順で、価格表に新しい価格修飾子を追加します：
 
-1. **グローバルメニュー**(![Applications Menu icon](../images/icon-applications-menu.png))を開き、 ［**コマース**］ タブをクリックして、 ［**価格**］ &rarr; ［**価格表**］ に移動します。
+1. **グローバルメニュー**(![Applications Menu icon](../images/icon-applications-menu.png))を開き、 ［**commerce**］ タブをクリックして、 ［**価格**］ &rarr; ［**価格表**］ に移動します。
 
 1. 設定したい ［**価格表**］ をクリックし、 ［**価格修飾子**］ タブに移動します。
 

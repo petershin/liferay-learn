@@ -20,7 +20,7 @@ Liferay Commerceは、単一の店舗と倉庫を持つユーザーから、複�
 
 倉庫とは、商品在庫が管理され、注文処理のために調達される物理的な場所を表します。 商品の在庫数量は、倉庫ごとに管理されます。
 
-在庫管理についての詳細は、 [コマース倉庫のセットアップ](./setting-up-commerce-warehouses.md) と [倉庫リファレンスガイド](./warehouse-reference-guide.md) を参照してください。
+在庫管理についての詳細は、 [commerce倉庫のセットアップ](./setting-up-commerce-warehouses.md) と [倉庫リファレンスガイド](./warehouse-reference-guide.md) を参照してください。
 
 ストアが商品の注文を受け付けるには、関連するチャネルに関連付けられた倉庫が必要です。 チャネルの仕組みについては、記事 [チャネルについて](../store-management/channels/introduction-to-channels.md) を参照してください。
 

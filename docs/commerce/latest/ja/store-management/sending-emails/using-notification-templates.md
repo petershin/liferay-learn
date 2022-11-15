@@ -10,7 +10,7 @@ Liferay Commerceの通知機能を使用するには、最初にLiferay Digital 
 
 次の手順に従って、受信した注文の通知を作成します。
 
-1. ［**コントロールパネル**］ → ［**コマース**］ → ［**チャネル**］ に移動します。
+1. ［**コントロールパネル**］ → ［**commerce**］ → ［**チャネル**］ に移動します。
 
     ![Commerce 2.1チャネル](./using-notification-templates/images/03.png)
 
@@ -71,7 +71,7 @@ Liferay Commerceの通知機能を使用するには、最初にLiferay Digital 
 
 Commerce 2.0以前でメール通知を作成するには：
 
-1. ［**サイト管理**］ → ［**コマース**］ → ［**設定**］ に移動します。
+1. ［**サイト管理**］ → ［**commerce**］ → ［**設定**］ に移動します。
 
     ![Commerce 2.0サイト設定](./using-notification-templates/images/04.png)
 
@@ -93,9 +93,9 @@ Commerce 2.0以前でメール通知を作成するには：
 
 1. ［**Save**］ をクリックします。
 
-新しい通知テンプレートが保存され、ストアが注文を受け取ると、ストアから購入者に自動メールが送信されます。 テンプレートが作成されると、注文が行われるたびに新しい通知が通知キューに追加されます。 注文が行われたときは、 ［**通知キュー**］ サブタブを確認してください。 デフォルトでは、Liferay Commerceは15分ごとにキューをチェックして、未送信の通知を送信します。 間隔を変更する方法については、[コマース通知キューの構成](./configuring-the-commerce-notification-queue.md)参照してください。
+新しい通知テンプレートが保存され、ストアが注文を受け取ると、ストアから購入者に自動メールが送信されます。 テンプレートが作成されると、注文が行われるたびに新しい通知が通知キューに追加されます。 注文が行われたときは、 ［**通知キュー**］ サブタブを確認してください。 デフォルトでは、Liferay Commerceは15分ごとにキューをチェックして、未送信の通知を送信します。 間隔を変更する方法については、[commerce通知キューの構成](./configuring-the-commerce-notification-queue.md)参照してください。
 
 ## 追加情報
 
 * [通知テンプレート変数リファレンスガイド](./notification-template-variables-reference-guide.md)
-* [コマース通知キューの設定](./configuring-the-commerce-notification-queue.md)
+* [commerce通知キューの設定](./configuring-the-commerce-notification-queue.md)

@@ -76,9 +76,9 @@ Liferay DXPサブスクリプションをお持ちの場合は、最新のフィ
 アップグレード前に公開したものは、アップグレード処理後に元に戻すことができないので、注意してください。 以前のLiferayバージョンで作成されたすべてのパブリケーションについて、*Revert*オプションが削除されました。
 ```
 
-### コマースのアップグレードの準備
+### commerceのアップグレードの準備
 
-[コマース](https://learn.liferay.com/commerce/latest/ja/index.html) を使用している場合は、Liferayデータベースをアップグレードする前にコマースをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
+[commerce](https://learn.liferay.com/commerce/latest/ja/index.html) を使用している場合は、Liferayデータベースをアップグレードする前にcommerceをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
 
 ### マーケットプレイスアプリの更新
 

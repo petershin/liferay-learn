@@ -1,6 +1,6 @@
 # インストールの概要
 
-Liferay Commerceは、Liferay DXP上に構築されたデジタルコマースプラットフォームです。 この記事では、Liferay Commerceをインストール、デプロイ、およびメンテナンスするための前提条件と利用可能なオプションについて概説します。
+Liferay Commerceは、Liferay DXP上に構築されたデジタルcommerceプラットフォームです。 この記事では、Liferay Commerceをインストール、デプロイ、およびメンテナンスするための前提条件と利用可能なオプションについて概説します。
 
 ## 前提条件
 
@@ -15,7 +15,7 @@ Liferay Commerce 3.0は、Liferay Portal 7.3 CE GA6とLiferay DXP 7.3 GA1がバ�
 | [Dockerイメージ](https://learn.liferay.com/dxp/latest/ja/getting-started/starting-with-a-docker-image.html#get-started-with-liferay)     | Dockerイメージから始めるのが最も早くLiferay Commerceを使い始められる方法です。                                   |
 | [バンドル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html) | Liferay Commerceには、アプリケーションサーバーがあらかじめバンドルされています。 Liferayインストールの実行を開始するための最も一般的な方法です。 |
 
-Liferay Portalのバンドルとイメージには、コマース特有の追加のインストール手順は必要ありません。 コマースの基本機能はアクティベートされており、起動時にすぐに使用することができます。
+Liferay Portalのバンドルとイメージには、commerce特有の追加のインストール手順は必要ありません。 commerceの基本機能はアクティベートされており、起動時にすぐに使用することができます。
 
 一方、DXPのインストールでは、基本的なCommerceとエンタープライズCommerceの両方のモジュールがデフォルトで無効化されているため、使用するためには有効にする必要があります。 DXPとCommerceの両方のライセンスがデプロイされ、検証されると、すべてのCommerceモジュールが開始され、すぐに利用できるようになります。よって、サーバーを再起動させる必要はありません。 詳しくは [Liferay Commerce Enterpriseのアクティベーション](./activating-liferay-commerce-enterprise.md) を参照してください。
 

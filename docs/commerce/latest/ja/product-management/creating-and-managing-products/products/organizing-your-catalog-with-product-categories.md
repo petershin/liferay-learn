@@ -32,7 +32,7 @@ Miniumなどのアクセラレータを使用してサンプルデータでサ�
 
 ## Commerce 2.1以前
 
-1. ［**コントロールパネル**］ → ［**コマース**］ → ［**商品**］ に移動します。
+1. ［**コントロールパネル**］ → ［**commerce**］ → ［**商品**］ に移動します。
 1. 商品をクリックします。 （Miniumを使用してサンプルデータを含むサイトを作成した場合は、 ［**Transmission Fluid**］ をクリックします。 **Transmission Fluid** 商品はすでにサンプルのボキャブラリとカテゴリにリンクされています。）
 
     ![Commerce 2.1でのカテゴリの関連付け](./organizing-your-catalog-with-product-categories/images/01.png)
@@ -46,7 +46,7 @@ Miniumなどのアクセラレータを使用してサンプルデータでサ�
 
 ### Commerce 2.0および以前
 
-1. ［**コントロールパネル**］ → ［**コマース**］ → ［**商品**］ に移動します。
+1. ［**コントロールパネル**］ → ［**commerce**］ → ［**商品**］ に移動します。
 1. 商品をクリックしてから、 ［**カテゴリー設定**］ タブをクリックします。 （Miniumを使用してサンプルデータを含むサイトを作成した場合は、 ［**Transmission Fluid**］ をクリックします。 **Transmission Fluid** 商品はすでにサンプルのボキャブラリとカテゴリにリンクされています。）
 
     ![カテゴリを管理](./organizing-your-catalog-with-product-categories/images/03.png)

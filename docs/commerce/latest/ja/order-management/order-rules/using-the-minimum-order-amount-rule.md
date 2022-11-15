@@ -14,7 +14,7 @@
 
 最少注文金額のルールは、すぐに利用可能です。
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**注文ルール**］ をクリックしてください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**注文ルール**］ をクリックしてください。
 1. **追加** ボタン (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
 
    **名前：** 最少注文$30

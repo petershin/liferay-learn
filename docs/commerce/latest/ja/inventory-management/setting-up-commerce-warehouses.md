@@ -1,18 +1,18 @@
-# コマース倉庫のセットアップ
+# commerce倉庫のセットアップ
 
-コマース倉庫は、商品の在庫が保管されている物理的な場所を表します。 各倉庫は複数のチャネルにリンクすることができ、有効にするには位置情報が設定されている必要があります。 これらの位置情報は、Fedexの配送方法で顧客への送料を計算する際に使用されます。
+commerce倉庫は、商品の在庫が保管されている物理的な場所を表します。 各倉庫は複数のチャネルにリンクすることができ、有効にするには位置情報が設定されている必要があります。 これらの位置情報は、Fedexの配送方法で顧客への送料を計算する際に使用されます。
 
-[Accelerator](../starting-a-store/accelerators.md)を使用してコマースサイトを作成する場合、3つのサンプル倉庫が作成されます。
+[Accelerator](../starting-a-store/accelerators.md)を使用してcommerceサイトを作成する場合、3つのサンプル倉庫が作成されます。
 
 ```{note}
-コマース倉庫を設定するとき、ユーザーは最初に倉庫の該当する国および地域の場所（州または県）を有効にする必要がある場合があります。 詳しくは、 [リージョンの追加](../store-management/adding-regions.md) をご覧ください。
+commerce倉庫を設定するとき、ユーザーは最初に倉庫の該当する国および地域の場所（州または県）を有効にする必要がある場合があります。 詳しくは、 [リージョンの追加](../store-management/adding-regions.md) をご覧ください。
 ```
 
 ## 倉庫の追加
 
 次の手順に従って、新しい倉庫を追加します：
 
-1. **グローバルメニュー**(![Global Menu](../images/icon-applications-menu.png))を開き、 ［**コマース**］ タブをクリックして、 ［**Warehouses**］ に移動します。
+1. **グローバルメニュー**(![Global Menu](../images/icon-applications-menu.png))を開き、 ［**commerce**］ タブをクリックして、 ［**Warehouses**］ に移動します。
 
 1. **追加** ボタン（![Add Button](../images/icon-add.png)）をクリックします。
 
@@ -42,7 +42,7 @@ Commerceでは、Bing Maps APIとの連携により、倉庫の位置情報を�
 
 その後、以下の手順に従ってインスタンスにBingジオコーダを設定します:
 
-1. **グローバルメニュー**（![Global Menu](../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; ［**システム設定**］ &rarr; ［**コマース**］ &rarr; ［**Shipping**］ &rarr; ［**Bing Geocoder**］ に移動します。
+1. **グローバルメニュー**（![Global Menu](../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; ［**システム設定**］ &rarr; ［**commerce**］ &rarr; ［**Shipping**］ &rarr; ［**Bing Geocoder**］ に移動します。
 
 1. ［**API Key**］ を入力します。
 
@@ -58,7 +58,7 @@ Commerceでは、Bing Maps APIとの連携により、倉庫の位置情報を�
 
 **コントロールパネル** に倉庫を追加するには：
 
-1. ［**コントロールパネル**］ → ［**コマース**］ → ［**設定**］ に移動します。
+1. ［**コントロールパネル**］ → ［**commerce**］ → ［**設定**］ に移動します。
 1. ［**倉庫**］ タブをクリックします。
 1. **倉庫の追加**（![Add Icon](../images/icon-add.png)）ボタンをクリックします。
 1. 次のように入力します：
@@ -71,7 +71,7 @@ Commerceでは、Bing Maps APIとの連携により、倉庫の位置情報を�
     * **緯度** ：36.282974
     * **経度** : -115.136
 
-    ![コマース倉庫のセットアップ](./setting-up-commerce-warehouses/images/04.png)
+    ![commerce倉庫のセットアップ](./setting-up-commerce-warehouses/images/04.png)
 
 1. 完了したら、 ［**保存**］ をクリックします。
 

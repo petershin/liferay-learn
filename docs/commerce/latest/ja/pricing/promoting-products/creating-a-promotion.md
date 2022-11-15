@@ -2,7 +2,7 @@
 
 以下の手順で、 **Promotion** を作成し、 **Catalog** の全製品の価格を7月4日に20％引き下げることができます。 **アカウント** , **アカウントグループ** , **チャンネル** , **オーダータイプ** のすべてがこのプロモーションの対象となります。
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **コマース** &rarr; **プロモーション** をクリックします。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **commerce** &rarr; **プロモーション** をクリックします。
 
    ![グローバルメニューの「プロモーション」をクリックし、新しいプロモーションを作成します。](./creating-a-promotion/images/01.png)
 

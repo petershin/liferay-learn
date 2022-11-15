@@ -1,6 +1,6 @@
-# コマース製品を関連するアセットとして利用可能に
+# commerce製品を関連するアセットとして利用可能に
 
-コマース製品は、 [関連するアセット](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships) の関係を使用して、Liferay Commerceの他のアセットに接続できます。
+commerce製品は、 [関連するアセット](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships) の関係を使用して、Liferay Commerceの他のアセットに接続できます。
 
 ```{note}
 Liferay DXP 7.4+ は、関連資産としての Commerce Products をサポートしていません。 
@@ -16,7 +16,7 @@ Liferay DXP 7.4+ は、関連資産としての Commerce Products をサポー�
 1. アプリケーションサーバーを再起動します。
 
 ```{note}
-コンテンツの編集時に、関連するアセットのオプションとしてコマース製品を表示するには、検索のインデックスの再構築が必要な場合があります。
+コンテンツの編集時に、関連するアセットのオプションとしてcommerce製品を表示するには、検索のインデックスの再構築が必要な場合があります。
 ```
 
 ## インデックスの再構築
@@ -26,7 +26,7 @@ Liferay DXP 7.4+ は、関連資産としての Commerce Products をサポー�
 1. ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索機能**］ へ移動します。
 1. ［すべての検索インデックスを再構築］の横にある ［**実行**］ をクリックします。
 
-## コマース製品の在庫状況の確認
+## commerce製品の在庫状況の確認
 
 Commerce Products はデフォルトですべての Liferay DXP サイトで利用可能なので、Filter を **Global** に変更する必要があります。
 
@@ -36,15 +36,15 @@ Commerce Products はデフォルトですべての Liferay DXP サイトで利�
 1. **選択** をクリックします。
 1. ［**Commerce Product**］ をクリックします。
 
-     ![［関連するアセット］セクションでコマース製品を選択します。](./enabling-commerce-products-as-related-assets/images/01.png)
+     ![［関連するアセット］セクションでcommerce製品を選択します。](./enabling-commerce-products-as-related-assets/images/01.png)
 
 1. ［**Filter and Order**］ そして ［**Globa**］ をクリックします。
 
-     ![グローバルフィルターを選択すると、コマース製品が表示されます。](./enabling-commerce-products-as-related-assets/images/02.png)
+     ![グローバルフィルターを選択すると、commerce製品が表示されます。](./enabling-commerce-products-as-related-assets/images/02.png)
 
 1. 商品をクリックします。
 
-これで、コマース製品を関連するアセットとして利用できるようになります。
+これで、commerce製品を関連するアセットとして利用できるようになります。
 
 ## 追加情報
 

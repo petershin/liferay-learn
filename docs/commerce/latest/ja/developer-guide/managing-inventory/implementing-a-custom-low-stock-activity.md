@@ -46,12 +46,12 @@
     STARTED com.acme.j1e4.impl_1.0.0
     ```
 
-1. サンプルの在庫数低下アクティビティが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**コマース**］ → ［**商品**］ に移動します。 次に、任意の商品のメニュー内の ［**編集**］ をクリックします。 必要に応じて、 [商品](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)追加できます。
+1. サンプルの在庫数低下アクティビティが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**commerce**］ → ［**商品**］ に移動します。 次に、任意の商品のメニュー内の ［**編集**］ をクリックします。 必要に応じて、 [商品](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)追加できます。
 
    そこから、 ［**設定**］ に移動します。 新しいアクティビティ（「ログ警告メッセージ」）が ［**Low Stock Action**］ ドロップダウンの下に表示されます。
 
 ```{note}
-Liferay Commerce 2.1以前のバージョンでは、*［コントロールパネル］* → *［コマース］* → *［商品］* に移動して商品ページを検索します。
+Liferay Commerce 2.1以前のバージョンでは、*［コントロールパネル］* → *［commerce］* → *［商品］* に移動して商品ページを検索します。
 ```
 
 ![新しい在庫数低下アクティビティ](./implementing-a-custom-low-stock-activity/images/02.png "新しい在庫数低下アクティビティ")

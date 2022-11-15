@@ -6,7 +6,7 @@ Liferay Commerceでは、プロモーションと割引の計算にグロスま�
 
 以下の手順で、価格表の価格の種類を設定します。
 
-1. **グローバルメニュー**（![Applications Menu icon](../images/icon-applications-menu.png)）を開き、 ［**コマース**］ タブをクリックし、 ［**Price Lists**］ に進みます。
+1. **グローバルメニュー**（![Applications Menu icon](../images/icon-applications-menu.png)）を開き、 ［**commerce**］ タブをクリックし、 ［**Price Lists**］ に進みます。
 
 1. 設定したい価格表をクリックします。
 
@@ -22,7 +22,7 @@ Liferay Commerceでは、プロモーションと割引の計算にグロスま�
 
 チャネルの価格タイプを設定することもできます。 以下の手順で行います。
 
-1. **グローバルメニュー**（![Applications Menu icon](../images/icon-applications-menu.png)）を開き、 ［**コマース**］ タブをクリックし、 ［**Channels**］ に進みます。
+1. **グローバルメニュー**（![Applications Menu icon](../images/icon-applications-menu.png)）を開き、 ［**commerce**］ タブをクリックし、 ［**Channels**］ に進みます。
 
 1. 目的のチャネルをクリックします。
 

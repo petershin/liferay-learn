@@ -86,13 +86,13 @@ DXPの **グローバルメニュー** には、 **アプリケーションメ�
 * [ワークフロー](../process-automation/workflow/introduction-to-workflow.md)
 * [リモートアプリケーション](../building-applications/remote-apps.md)
 
-### コマースメニュー
+### commerceメニュー
 
 Liferay 7.3 CE GA6およびLiferay DXP 7.3 GA1以降、Liferay Commerce 3.0はLiferay Portal 7.3 CE GA6およびLiferay DXP 7.3 GA1にバンドルされるようになりました。
 
-![コマースメニューには、すべてのストア機能が含まれています。](./navigating-dxp/images/03.png)
+![commerceメニューには、すべてのストア機能が含まれています。](./navigating-dxp/images/03.png)
 
-**コマース** メニューから管理できる機能は次のとおりです。
+**commerce** メニューから管理できる機能は次のとおりです。
 
 * [新しいカタログを作成する](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html)
 * [新しいチャンネルを作成する](https://learn.liferay.com/commerce/latest/ja/starting-a-store/channels/managing-channels.html)

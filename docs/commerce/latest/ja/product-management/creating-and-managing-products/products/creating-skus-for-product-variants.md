@@ -16,7 +16,7 @@ Liferay Commerceでは、複数のSKUを商品に追加して商品バリアン�
 
 1つの商品に複数のSKUを生成して有効にするには、以下の手順に従ってください：
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コマース**］ タブをクリックして、 ［**Products**］ に移動します。
+1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**commerce**］ タブをクリックして、 ［**Products**］ に移動します。
 
 1. SKUコントリビューターが有効になっているオプションが1つ以上ある商品をクリックして、［**SKUs**］タブに移動します。
 
@@ -42,7 +42,7 @@ Liferay Commerceでは、複数のSKUを商品に追加して商品バリアン�
    SKUコントリビューターが有効になっている間は、手動で作成された各SKUをオプション値にマッピングする必要があります。
    ```
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コマース**］ タブをクリックして、 ［**Products**］ に移動します。
+1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**commerce**］ タブをクリックして、 ［**Products**］ に移動します。
 
 1. SKUコントリビューターが有効になっているオプションが1つ以上ある商品をクリックして、［**SKUs**］タブに移動します。
 

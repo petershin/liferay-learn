@@ -79,4 +79,4 @@ Liferay Commerceは、Liferay Digital Experience Platform上に構築されて�
 
 * [Liferay Commerce修正プログラム配信方法](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
 * [Liferay Commerceのアップグレード](./upgrading-liferay-commerce.md)
-* [コマース](https://www.liferay.com/subscription-services/end-of-life/commerce)
+* [commerce](https://www.liferay.com/subscription-services/end-of-life/commerce)

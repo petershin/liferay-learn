@@ -44,7 +44,7 @@ Liferayでは、特定の条件を満たした注文に対して注文ルール�
    Liferay DXP 7.4 U4以降、またはLiferay Portal 7.4 GA8以降の言語オーバーライドツールで言語キーを追加することができます。 以前のバージョンでは、ビルドとデプロイの前に、 `/src/main/resources/content/`の下に`Language.properties`ファイルを追加し、キーを指定する必要があります。
    ```
 
-1. *グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［*コマース*］ &rarr; ［*注文ルール*］ をクリックしてください。
+1. *グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［*commerce*］ &rarr; ［*注文ルール*］ をクリックしてください。
 
 1. *追加* ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下の情報を入力します。
 

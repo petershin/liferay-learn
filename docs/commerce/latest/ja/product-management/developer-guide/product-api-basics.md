@@ -19,7 +19,7 @@
    unzip liferay-z8v2.zip
    ```
 
-1. 製品はカタログにスコープされ、カタログIDは必須パラメータの1つとなります。*グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［コマース］* &rarr; *［Catalogs］*を開きます。商品を追加するカタログを選択し、商品名の横にあるIDをメモしてください。
+1. 製品はカタログにスコープされ、カタログIDは必須パラメータの1つとなります。*グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［commerce］* &rarr; *［Catalogs］*を開きます。商品を追加するカタログを選択し、商品名の横にあるIDをメモしてください。
 
    ![カタログの名前の横にある、カタログのIDをメモしてください。](./product-api-basics/images/01.png)
 
@@ -94,7 +94,7 @@
    }
    ```
 
-1. *グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［コマース］* &rarr; *［Products］*に移動して確認してください。新しい製品が追加されたことを確認します。
+1. *グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［commerce］* &rarr; *［Products］*に移動して確認してください。新しい製品が追加されたことを確認します。
 
    ![新しい製品が追加されたことを確認します。](./product-api-basics/images/02.png)
 

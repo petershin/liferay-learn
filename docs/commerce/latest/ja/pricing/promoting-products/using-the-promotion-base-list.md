@@ -4,7 +4,7 @@
 
 プロモーションベースリストを使用するには
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **コマース** &rarr; **カタログ** を開きます。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Catalogs** を開きます。
 
    ![カタログをクリックし、製品用の新しいカタログを作成します。](./using-the-promotion-base-list/images/01.png)
 
@@ -20,7 +20,7 @@
 
 1. ［**Submit**］ をクリックします 。
 
-これにより、新しいカタログと新しいプロモーションベースリストが作成されます。 これを見るには、 **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **コマース** &rarr; **プロモーション** をクリックしてください。 **Test Catalog Base Promotion** という新しいエントリーが表示されるはずです。
+これにより、新しいカタログと新しいプロモーションベースリストが作成されます。 これを見るには、 **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Catalogs** をクリックしてください。 **Test Catalog Base Promotion** という新しいエントリーが表示されるはずです。
 
 ## エントリーの追加
 

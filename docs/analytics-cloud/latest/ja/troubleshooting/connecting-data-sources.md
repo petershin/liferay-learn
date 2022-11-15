@@ -69,7 +69,7 @@ INFO  [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:164] D
 
 ## サポートされていないバージョン
 
-**エラーメッセージ** ： `サポートされていないバージョンです。 この接続方法は、データソースのLiferayバージョンをサポートしていません。 Make sure you are connecting to Liferay 7.0/7.1 instance or try a different method of connection.`
+**エラーメッセージ** ： `エラーメッセージ ： サポートされていないバージョンです。 この接続方法は、データソースのLiferayバージョンをサポートしていません。 Liferay 7.0/7.1インスタンスに接続していることを確認するか、別の接続方法を試してみてください。`
 
 ```{important}
 Liferay DXP のインストールは、以下のフィックスパックの最小要件を満たしている必要があります。

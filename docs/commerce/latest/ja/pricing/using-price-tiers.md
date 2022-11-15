@@ -4,7 +4,7 @@ Liferay Commerceでは、 **価格レート** を使用して、注文された�
 
 以下の手順で、既存の価格表にレート価格設定を追加します：
 
-1. **グローバルメニュー**(![Applications Menu icon](../images/icon-applications-menu.png))を開き、 ［**コマース**］ タブをクリックして、 ［**価格**］ &rarr; ［**価格表**］ に移動します。
+1. **グローバルメニュー**(![Applications Menu icon](../images/icon-applications-menu.png))を開き、 ［**commerce**］ タブをクリックして、 ［**価格**］ &rarr; ［**価格表**］ に移動します。
 
 1. 目的の ［**価格表**］ をクリックし、 ［**エントリ**］ タブに移動します。
 
@@ -68,7 +68,7 @@ Liferay Commerceでは、 **価格レート** を使用して、注文された�
 
 ## Commerce 2.1以前
 
-1. **コントロールパネル** &rarr; **コマース** &rarr; **価格表** に移動します。
+1. **コントロールパネル** &rarr; **commerce** &rarr; **価格表** に移動します。
 1. ［価格表］をクリックします（この例では **VIP Customers**）。
 1. ［**エントリ**］ サブタブをクリックします。
 1. 商品をクリックします（この例では **Premium Brake Fluid**）。

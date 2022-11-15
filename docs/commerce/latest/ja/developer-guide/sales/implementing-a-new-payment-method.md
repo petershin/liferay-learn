@@ -46,10 +46,10 @@
     STARTED com.acme.b1c3.impl_1.0.0
     ```
 
-1. サンプルの支払方法が追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次にアプリケーションメニュー (![Applications Menu](../../images/icon-applications-menu.png))をクリックし、 ［**コマース**］ → ［**Channels**］ に移動します。その後、 ［**Payment Methods**］ セクションまでスクロールします。
+1. サンプルの支払方法が追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次にアプリケーションメニュー (![Applications Menu](../../images/icon-applications-menu.png))をクリックし、 ［**commerce**］ → ［**Channels**］ に移動します。その後、 ［**Payment Methods**］ セクションまでスクロールします。
 
 ```{note}
-Liferay Commerce 2.1以前のバージョンでは、［*サイト管理*］ → ［*コマース*］ → ［*設定*］ → ［*支払方法*］に移動します。
+Liferay Commerce 2.1以前のバージョンでは、［*サイト管理*］ → ［*commerce*］ → ［*設定*］ → ［*支払方法*］に移動します。
 ```
 
 ![新しい支払方法](./implementing-a-new-payment-method/images/02.png "新しい支払方法")

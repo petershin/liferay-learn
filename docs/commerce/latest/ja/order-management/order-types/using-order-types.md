@@ -14,7 +14,7 @@
 
 ![注文タイプの注文番号を変更して、デフォルトを希望するものに設定することができます。](./using-order-types/images/04.png)
 
-1. **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**注文タイプ**］ をクリックしてください。
+1. **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**注文タイプ**］ をクリックしてください。
 2. **追加** ボタン (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
 
    **名前:** 在庫
@@ -35,7 +35,7 @@
 
 カスタム価格表を作成し、緊急注文タイプにリンクさせることができます。 追加料金を追加するには、価格表上に価格修飾子を作成します。
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**価格表**］ をクリックしてください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**価格表**］ をクリックしてください。
 1. **追加** ボタン(![Add icon](../../images/icon-add.png))をクリックして、新しい価格表を作成し、以下の情報を入力してください。
 
     **名前：** 緊急注文追加料金

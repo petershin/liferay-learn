@@ -19,7 +19,7 @@
 
 最初のストア設定は、[管理者アカウント](./introduction-to-the-admin-account.md)を使用して行います 。 Liferay Commerceの設定レイアウトと使用可能なオプションについては、[Liferay Commerceの設定の概要](../store-management/liferay-commerce-configuration-overview.md)をご覧ください。
 
-### グローバルコマース設定の構成
+### グローバルcommerce設定の構成
 
 Liferay Commerceのグローバル設定には、ストアのタイムゾーンと使用可能な言語の設定、地域や地域固有の計量単位の追加などがあります。 詳細は、次の記事をご覧ください。
 
@@ -34,7 +34,7 @@ Liferay Commerceは、B2B、B2C、およびB2C-B2Bストアをサポートして
 
 Liferay CommerceはLiferay DXP上に構築されています。 Liferay DXPサイトの機能の詳細は、 [Building a Site](https://learn.liferay.com/dxp/latest/ja/site-building/building-sites/adding-a-site.html) を参照してください。
 
-### ストアサイトのコマース設定を構成する
+### ストアサイトのcommerce設定を構成する
 
 次のセクションでは、ストアサイトに固有の構成について説明します。
 

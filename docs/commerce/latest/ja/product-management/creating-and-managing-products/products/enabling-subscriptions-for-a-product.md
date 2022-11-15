@@ -22,7 +22,7 @@ Liferay Commerceでは、[ Simple ](../product-types/creating-a-simple-product.m
 
 以下の手順で、商品のサブスクリプションを有効にします：
 
-1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png))を開き、 ［**コマース**］ タブをクリックして、 ［**商品管理**］ &rarr; ［**Products**］ に移動します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png))を開き、 ［**commerce**］ タブをクリックして、 ［**商品管理**］ &rarr; ［**Products**］ に移動します。
 
 1. [**サブスクリプション**]タブをクリックします。
 

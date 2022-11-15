@@ -17,7 +17,7 @@
 
 ### 支払条件の作成
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**Terms and Conditions**］ をクリックしてください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**Terms and Conditions**］ をクリックしてください。
 
     ![利用規約のメニュー項目は、注文管理セクションで利用できます。](./payment-and-delivery-terms/images/01.png)
 
@@ -43,7 +43,7 @@
 
 チャンネルは複数の支払方法を持つことができ、それぞれに支払条件を関連付けることができます。 1つの支払方法に複数の支払条件がリンクされている場合、重要度によってどの支払方法が使用されるかが決定されます。
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**Channels**］ をクリックしてください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**Channels**］ をクリックしてください。
 
 1. チャンネルを選択し、 ［**Payment Methods**］ までスクロールダウンしてください。
 
@@ -76,7 +76,7 @@
 
 ### 配送条件の作成
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**Terms and Conditions**］ をクリックしてください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**Terms and Conditions**］ をクリックしてください。
 
 1. **追加** ボタン (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
 
@@ -100,7 +100,7 @@
 
 チャンネルは複数の配送方法を持つことができ、配送条件をそれぞれに関連付けることができます。 1つの配送方法に複数の配送条件がリンクされている場合、重要度によってどの配送方法が使用されるかが決定されます。
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**Channels**］ をクリックしてください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**Channels**］ をクリックしてください。
 
 1. チャンネルを選択し、 ［**Shipping Methods**］ までスクロールダウンしてください。
 

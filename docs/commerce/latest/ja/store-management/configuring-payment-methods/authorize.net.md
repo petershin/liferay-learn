@@ -15,7 +15,7 @@ Authorize.netを支払方法としてアクティブ化するには：
 
 1. ［**コントロールパネル**］ →［Commerce］→ ［**チャネル**］ へ移動します。
 
-    ![コマースのチャネル](./authorize.net/images/03.png)
+    ![commerceのチャネル](./authorize.net/images/03.png)
 
 1. 目的のチャネルをクリックします。
 1. 下にスクロールして、Authorize.netの横にある **編集** をクリックします。
@@ -45,7 +45,7 @@ Authorize.netを支払方法としてアクティブ化するには：
 
 ### Commerce 2.0および以前
 
-1. ［**サイト管理］ → ［コマース］ → ［設定］ → ［支払い方法**］ に移動します。
+1. ［**サイト管理］ → ［commerce］ → ［設定］ → ［支払い方法**］ に移動します。
 
     ![Authorize.Netの設定](./authorize.net/images/05.png)
 

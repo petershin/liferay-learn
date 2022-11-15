@@ -30,7 +30,7 @@ LES Learning to Rankがデプロイされているが、（おそらくはソー
 
 Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエリを再スコアリングするには、いくつかの前提条件があります。
 
-- Learning to Rankには、 [Liferay Enterprise Search](https://www.liferay.com/products/dxp/enterprise-search) （LES）サブスクリプションが必要です。 サブスクリプションを取得したら、 [Liferay Enterprise Search Learning to Rank](https://customer.liferay.com/en/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118191013& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKGファイルをダウンロードして[インストールします](../../system-administration/installing-and-managing-apps/installing-apps.md)。
+- Learning to Rankには、 [Liferay Enterprise Search](https://www.liferay.com/products/dxp/enterprise-search) （LES）サブスクリプションが必要です。 サブスクリプションを取得したら、 [Liferay Enterprise Search Learning to Rank](https://customer.liferay.com/en/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191013&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKGファイルをダウンロードして[インストールします](../../system-administration/installing-and-managing-apps/installing-apps.md)。
 
    ```{note}
    Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーションは、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 詳しくは、[LESの有効化](./activating-liferay-enterprise-search.md)を参照してください。

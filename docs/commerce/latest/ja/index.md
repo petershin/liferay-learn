@@ -14,7 +14,7 @@ toc:
 - ./get-help.md
 ---
 
-# コマース
+# Commerce
 
 ```{toctree}
 :maxdepth: 4

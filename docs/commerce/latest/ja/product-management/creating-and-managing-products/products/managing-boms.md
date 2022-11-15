@@ -7,7 +7,7 @@
 BOM図は、図とマップされた商品の2つの部分で構成されています。
 
 ```{important}
-Liferay Commerce 4.0からBOMが使えなくなりました。 より強固なコマースBOM機能に置き換わりました。 詳しくは、 [コマースBOM](../product-types/shop-by-diagram.md) をお読みください。 
+Liferay Commerce 4.0からBOMが使えなくなりました。 より強固なcommerceBOM機能に置き換わりました。 詳しくは、 [commerceBOM](../product-types/shop-by-diagram.md) をお読みください。 
 ```
 
 ## 新しいBOM図の追加
@@ -82,7 +82,7 @@ BOMウィジェットに図が表示されます。
 
 新しいBOM図を追加するには：
 
-1. ［**コントロールパネル**］ → ［**コマース**］ → ［**商品**］ に移動します。
+1. ［**コントロールパネル**］ → ［**commerce**］ → ［**商品**］ に移動します。
 1. **BOM** をクリックします 。
 
     ![BOM管理メニュー](./managing-boms/images/01.png)

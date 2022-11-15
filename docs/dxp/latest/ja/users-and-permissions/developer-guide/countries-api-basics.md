@@ -159,7 +159,7 @@ Instance の `Country` オブジェクトが JSON で表示されます。
 インスタンスの ``Countries`` ID を取得するには、 ``Countries_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### 国名_GET_ById.sh
+### Country_GET_ById.sh
 
 コマンド：
 
@@ -263,7 +263,7 @@ java -classpath .:* -DcountryId=1234 Country_PUT_ById
 
 以下のcURLとJavaコマンドで、既存の国を削除します。 `1234` をあなたの国のIDに置き換えてください。
 
-### 国名_DELETE_ById.sh
+### Country_DELETE_ById.sh
 
 コマンド:
 

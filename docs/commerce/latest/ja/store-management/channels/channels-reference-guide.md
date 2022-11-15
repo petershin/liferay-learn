@@ -1,6 +1,6 @@
 # チャネルリファレンスガイド
 
-> コマース2.1以降
+> commerce2.1以降
 
 この記事では、チャネル管理インターフェースの概要について説明します。 チャネルを作成するには、[チャネルの管理](./managing-channels.md)参照してください。
 
@@ -10,7 +10,7 @@
 
 ### 詳細
 
-**詳細** セクションでは、チャネルの名前、通貨、および [コマースサイトの種類](../../starting-a-store/sites-and-site-types.md) が設定されます。
+**詳細** セクションでは、チャネルの名前、通貨、および [commerceサイトの種類](../../starting-a-store/sites-and-site-types.md) が設定されます。
 
 ![［詳細］タブでは、名前、通貨、サイトタイプを設定します。](./channels-reference-guide/images/01.png)
 
@@ -34,7 +34,7 @@
 
 ヘルスチェックにより、ユーザーは、ストアが機能するために必要なウィジェットの不足など、ストアサイトに関する一般的なセットアップの問題をすばやく修正できます。
 
-![ヘルスチェックを使用すると、コマースポートレットをすばやく追加したり、手動でサイトを構築した場合は問題を修正したりできます。](./channels-reference-guide/images/04.png)
+![ヘルスチェックを使用すると、commerceポートレットをすばやく追加したり、手動でサイトを構築した場合は問題を修正したりできます。](./channels-reference-guide/images/04.png)
 
 ### 支払方法
 
@@ -69,7 +69,7 @@ Lastly, users can use a [custom shipping engine](../../developer-guide/sales/imp
 
 Liferay Commerceは、さまざまなイベントによってトリガーされるメール通知設定を送信するように構成できます。 イベントによって通知がトリガーされると（注文など）、通知はチャネルの［**通知キュー**］タブに記録されます。 デフォルトでは、Liferay Commerceインスタンスは、通知が15分ごとに送信されたかどうかを確認し、43200分（30日）後に未送信の通知を削除します。
 
-詳細は、 [コマース通知キューの設定](../../store-management/sending-emails/configuring-the-commerce-notification-queue.md)の記事を参照してください。
+詳細は、 [commerce通知キューの設定](../../store-management/sending-emails/configuring-the-commerce-notification-queue.md)の記事を参照してください。
 
 ## 通知テンプレート
 

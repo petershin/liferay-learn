@@ -162,6 +162,14 @@ function generate_sphinx_input {
 		sed -i "s/${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN}/${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN_VALUE}/g" "${md_file_name}"
 		sed -i "s/\(${LIFERAY_LEARN_YOUTUBE_URL_TOKEN}\=\)\(\https:\/\/www.youtube.com\/embed\/.*\)/${LIFERAY_LEARN_YOUTUBE_BEGIN_HTML}\2${LIFERAY_LEARN_YOUTUBE_END_HTML}/" "${md_file_name}"
 	done
+
+	#
+	# Sync the liferay-portal/readme/BREAKING_CHANGES.markdown file
+	#
+
+	curl https://github.com/liferay/liferay-portal/blob/master/readme/BREAKING_CHANGES.markdown -O
+
+	find build/input/dxp/latest/en -name "*breaking-changes*.md" -name "*7-4*" -exec mv BREAKING_CHANGES.markdown {} \;
 }
 
 function generate_static_html {

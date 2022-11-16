@@ -129,7 +129,7 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"`                                                                                   | Basic authentication credentials                    |
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html).
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Securing Your App with OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/securing-your-app-with-oauth2.html) for a sample React application that utilizes OAuth2.
 ```
 
 The other cURL commands use similar JSON arguments.

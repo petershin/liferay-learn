@@ -1,4 +1,4 @@
-# Product Inventory Configuration Reference
+# Product Inventory Configuration Reference Guide
 
 Each product in the catalog can be configured to display inventory data in the storefront. Administrators can display the availability of each item as 'In Stock' or 'Out of Stock' and the available inventory total, when stock is low.
 

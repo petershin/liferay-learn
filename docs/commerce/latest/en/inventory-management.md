@@ -1,6 +1,6 @@
 ---
 toc:
-- ./inventory-management/setting-up-commerce-warehouses.md
+- ./inventory-management/setting-up-warehouses.md
 - ./inventory-management/setting-inventory-by-warehouse.md
 - ./inventory-management/low-stock-action.md
 - ./inventory-management/availability-estimates.md
@@ -15,7 +15,7 @@ toc:
 ```{toctree}
 :maxdepth: 1
 
-inventory-management/setting-up-commerce-warehouses.md
+inventory-management/setting-up-warehouses.md
 inventory-management/setting-inventory-by-warehouse.md
 inventory-management/low-stock-action.md
 inventory-management/availability-estimates.md
@@ -47,7 +47,7 @@ Each product in the inventory must be associated to at least one SKU.
 
 Warehouses represent physical locations where you can manage product inventory and source them for order fulfillment. A single SKU may be available in more than one warehouse, and inventory is managed on a per-warehouse basis.
 
-See [Setting Up Commerce Warehouses](./inventory-management/setting-up-commerce-warehouses.md) and [Warehouse Reference Guide](./inventory-management/warehouse-reference-guide.md) for more information on managing warehouses.
+See [Setting Up Commerce Warehouses](./inventory-management/setting-up-warehouses.md) and [Warehouse Reference Guide](./inventory-management/warehouse-reference-guide.md) for more information on managing warehouses.
 
 For a store to accept orders, the related channel must have a warehouse associated with it. See [Introduction to Channels](../store-management/channels/introduction-to-channels.md) to understand how channels work.
 

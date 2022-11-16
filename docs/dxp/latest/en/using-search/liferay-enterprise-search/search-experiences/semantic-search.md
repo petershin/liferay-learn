@@ -5,12 +5,27 @@
 <!-- Questions and comments:
 
 1. Are the vector representations (the text embeddings) stored in the transformer service? I don't see anything in the returned documents, and I saw txtai munching a lot of data as I added Liferay Learn articles via the ingester, so I am guessing the answer is "yes". So I cannot really say that the transformed text embeddings are indexed with the Liferay documents. Might want to get a good diagram prepared for this.
+   Yes, they are stored. The output of this transformation process is stored in the index document for each supported and configured type in Elasticsearch.
+
+   The field is names as vector_embedding_<dimension>_<languageid>. If you don't see that in your documents in Elasticsearch, something is wrong with your setup.
+
 2. I hate calling these things text embeddings, as a noun. They're the vector representations of the text as produced by the text embedding transformation technique (I think; obviously I could be very wrong). But, if that's the dumb jargon someone came up with and everyone uses, I guess we'll go with it.
+
+   just catching one line there, of your feelings towards the word "embedding": I'd be more than happy to read language that makes sense easier, but this is an established term on this field. That's why, in my opinion, it should be made clear at least somewhere in the beginning that what we are doing is creating "text embedding". Maybe then once explaining what that is (vectors or strictly spoken: one embedding is one vector). That is created from a (configurable) text sample representing the indexed asset. To be exact, we are using sentence transformers and we should be talking about "sentence embedding" but I'm fine with "text embedding" because it makes more sense in this context.
+
+   Also, it's non plural because only one embedding is created per document (at least at the moment)
+
+   "Sentence" is just to make distinction to the v1 of this technique: "word embedding" which worked word wise. While speaking of "sentence" as the unit of transformation might sound not exactly correct the text samples actually rely on sentence boundaries. At least in this implementation here.
+
 3. Our descriptions don't include any indication of which document fields are processed by the transformer. Are we only talking about content, content_xx_XX, or is it some kind of amalgamation of all the text fields in a document? Something else?
--->
+   title + content, or subject + body in case of MBMessage. But depending on the configured char length and the length of the title/subject, there may be no characters used from the "content/body"-->
 
 
 <!-- The Intro still needs lots of work--skip it for now and start with Enabling Semantic Search -->
+```{important}
+Setting up a seamlessly effective semantic search experience is heavily dependent on using a model trained and fine-tuned to your specific content. The example configuration here can provide modestly improved results for most content, but is not intended to provide a production-ready semantic search solution.
+```
+
 Defines both semantic and lexical search https://en.wikipedia.org/wiki/Semantic_search
 
 Ideally, searching for "tech news" returns a document with a field containing the text "During economic downturns Linux distros gain on traditionally dominant operating system vendors." No amount of processing in a traditional search can provide this result. For this you need semantic search.
@@ -30,13 +45,24 @@ With this initial release, Administrators can enable an additional content proce
 
 To enable semantic search in Liferay,
 
-1. Set up a sentence transformer provider and configure it in Liferay.
-1. Create a search blueprint to perform a similarity search between the text embeddings representation of the search terms versus the text embeddings representation of the document text. query account for the dense vector field containing the text embedding that is the natural language representation of the words.
+1. Choose a trained model or create your own.
+1. Enable a sentence transformer provider and configure it in Liferay.
+1. Re-index the text embeddings.
+1. Create a Search Blueprint to perform a similarity search between the vectorized search terms and documents.
+
+
+query account for the dense vector field containing the text embedding that is the natural language representation of the words.
 1. Create a search blueprint using the necessary Search Experiences elements.
 
 ```{important} 
 You must re-index if ...
 ```
+
+### Choosing a Trained Model
+
+It should be mentioned somewhere that customers can use pretrained models or train/fine-tune their own. Fine tuning pretrained models is probably the easiest and fastest way to best possible experience (over training from scratch) but there are good pretrained models to start with. Hugging Face hub provides a big collection of pre-trained, domain specific models too2.
+This link should give some initial ideas for choosing a pretrained model https://www.sbert.net/docs/pretrained_models.html
+In development I actually used this model: sentence-transformers/msmarco-distilbert-base-dot-prod-v3. Maybe it could be here as an option of a good generic model
 
 ### Setting up a Sentence Transformer Provider
 
@@ -49,11 +75,14 @@ On top of that, you need a model to perform a [similarity search](https://www.el
 
 Choose from one of two sentence transformer providers that can be configured to work with Liferay's search index documents: [txtai](https://neuml.github.io/txtai/) and [Hugging Face](https://huggingface.co/).
 
-#### Starting a txtai Instance
+#### Configure and Run txtai
 
 <!-- Say something about this setup is intended for testing, point to the txtai docs for more information? -->
+```{note} 
+The txtai configuration here is intended for demonstration. Please read the [txtai documentation](https://neuml.github.io/txtai/) to learn more.
+```
 
-Set up txtai to access its APIs. To start a txtai docker container, see the [txtai documentation](https://neuml.github.io/txtai/cloud/) or follow these basic steps for Linux:
+Set up txtai to access its APIs. To run txtai in a docker container, see the [txtai documentation](https://neuml.github.io/txtai/cloud/) or follow these basic steps for Linux:
 
 1. Create a `txtai` directory and `cd` into it.
 
@@ -65,6 +94,7 @@ Set up txtai to access its APIs. To start a txtai docker container, see the [txt
 
 1. Create a `config.yml` file in the `txtai` folder, and give it these minimal contents:
 
+   <!-- from Petteri: use this model: sentence-transformers/msmarco-distilbert-base-dot-prod-v3 -->
    ```yaml
    path: /tmp/index
 
@@ -72,6 +102,10 @@ Set up txtai to access its APIs. To start a txtai docker container, see the [txt
 
    embeddings:
         path: sentence-transformers/nli-mpnet-base-v2
+   ```
+
+   ```{important}
+   [The model you chose](#choosing-a-model) is entered in the embeddings path.
    ```
 
 1. From the txtai folder, run
@@ -93,12 +127,17 @@ Set up txtai to access its APIs. To start a txtai docker container, see the [txt
    - Set Sentence Transformer Enabled to true.
    - Select _txtai_ as the Sentence Transformer Provider.
    - If you followed the above test setup, leave the default value in txtai Host Address.
-   - Leave the default value (768) in Embedding Vector Dimensions
+   - Leave the default value (768) in Embedding Vector Dimensions.
 
-<!-- Needed: a reference section for all the settings (Hugging Face specific ones too)-->
+   ```{important}
+   The Embedding Vector Dimensions must match that of the configured model. The model is specified in txtai using the `config.yml` file. See the model's documentation to configure the proper number of dimensions.
+   ```
 
+Before saving the configuration, click the Test Configuration button to ensure that Liferay can connect with the txtai server and that the configured settings using are in harmony.
 
-#### Provisioning a Hugging Face Instance
+This example setup is intended for demonstration. See the [txtai documentation](https://github.com/neuml/txtai) to find the setup that meets your need (e.g., running a GPU [container](https://neuml.github.io/txtai/cloud/) for increased performance).
+
+#### Using the Hugging Face Inference API
 
 To use Hugging Face as the sentence transformer provider, create a [Hugging Face account](https://huggingface.co/join).
 
@@ -108,18 +147,29 @@ Once you have an account,
 1. Go to Liferay's Control Panel &rarr; Search Experiences &rarr; Semantic Search and configure its sentence transformer settings, selecting Hugging Face and entering the access token you copied.
 1. Choose one of the models from the list at <https://huggingface.co/models?pipeline_tag=feature-extraction>. 
 1. Enter the model name as the title of the model.
+1. Enter the proper number of Embedding Vector Dimensions to match the model you chose.
 
-Liferay DXP supports txtai (self-hosted / self-managed) and Hugging Face's Inference API as sentence transformer providers. Administrators can enable and configure these services through the System/ Instance Settings.
+   ```{important}
+   The Embedding Vector Dimensions must match that of the configured model. The model is specified in txtai using the `config.yml` file. See the model's documentation to configure the proper number of dimensions.
+   ```
+1. Configure the other Hugging Face settings as desired:
+
+   **Model Timeout:** Set the time (in seconds) to wait for the model to be loaded before timing out. Hugging Face allows you to pin models in memory to avoid repeated time-consuming loading of models.
+   **Enable GPU:** Enable GPU for the sentence transformer. This speeds up the transformation but requires a paid plan with Hugging Face. Check the Hugging Face documentation for more information.
+
+Before saving the configuration, click the Test Configuration button to ensure that Liferay can connect with the Hugging Face Inference API and that the settings it's using are in harmony.
+
+### Re-Index the Text Embeddings
 
 ### Creating a Search Blueprint for Semantic Search
 <!-- A user searching for this might be better served with a title like "Re-Scoring the Query with Text Embeddings". -->
 
-To build a semantic search experience leveraging the sentence embeddings created by the sentence transformer provider you configured, Liferay includes an out-of-the-box element (in 7.4 Update/GA 50+) called Rescore by Text Embedding that re-scores the results of the original query using the text embedding value. Use the element to build a [search blueprint](./creating-and-managing-search-blueprints.md). With this element and the visual query builder in Blueprints, you can configure and test the search query to build the right semantic search solution.
+To build a semantic search experience leveraging the sentence embeddings created by the sentence transformer provider you configured, Liferay includes an out-of-the-box element (in 7.4 Update 50+) called Rescore by Text Embedding that re-scores the results of the original query using the text embedding value. Use the element to build a [search blueprint](./creating-and-managing-search-blueprints.md). With this element and the visual query builder in Blueprints, you can configure and test the search query to build the right semantic search solution.
 
 <!-- For how it works: There's an ootb element rescore by text embedding, ping petteri: it rescores x results using a special function which uses the vector field. produce initial results by keyword, rescore them using the vector representations. the function can be chosen, dotProduct or cosin -->
 
 ```{important}
-The out-of-the-box Rescore by Text Embedding element (available in 7.4 Update/GA 50+), when configured to work with a sentence transformer, can produce more semantically targeted search results for some data sets. However, many semantic search solutions will require manual tweaking and perhaps new elements to achieve a robust semantic search solution.
+The out-of-the-box Rescore by Text Embedding element (available in 7.4 Update 50+), when configured to work with a sentence transformer, can produce more targeted search results for some data sets. However, many semantic search solutions will require manual tweaking and perhaps new elements to achieve a robust search solution.
 ```
 
 ![The Rescore by Text Embedding element brings basic semantic search to Liferay.](./semantic-search/images/01.png)
@@ -144,9 +194,14 @@ Several configurable options are provided in the Rescore by Text Embedding eleme
 
 **Rescorer Window Size:** Defaulting to 50, you can choose the number of results to re-score at a time. Choosing a very high window size can impact performance negatively .
 
-## Configuring the Semantic Search Indexing Settings
+<!-- Terrible section name--revisit -->
+## Configuring Semantic Search in System or Instance Settings
 
 Additional configuration options are available for Semantic Search. Visit Control Panel &rarr; System Settings &rarr; Semantic Search, and find the Indexing Settings section.
+
+The Sentence Transformer Settings are covered in [Enabling Semantic Search](#enabling-semantic-search)
+
+The Index Settings include the following:
 
 **Max Character Count:** 500 Set the maximum number of characters to be sent to the sentence transformer. By default up to 500 characters are sent to be transformed into their vector representations.
 
@@ -154,17 +209,23 @@ Additional configuration options are available for Semantic Search. Visit Contro
 
 Select whether to extract the pre-transformation sample from the Beginning (default), Middle, or End of the text. This setting applies only if the text is longer than the maximum character count.
 
-**Asset Entry Class Names:** Select the asset types to be transformed. By default all supported asset types are processed, including Blogs Entry, Knowledge Base Article, Message Boards Message, Web Content Article, and Wiki Page. 
+**Asset Entry Class Names:** Select the asset types to be transformed. By default four supported asset types are processed, including Blogs Entry, Knowledge Base Article, Web Content Article, and Wiki Page. Message Boards Message entities can be configured if desired. 
 
 **Language IDs:** Select the languages and localizations to be transformed. By default all listed languages are selected: Arabic (Saudi Arabia), Catalan (Spain), Chinese (China), Dutch (Netherlands), English (United States), Finnish (Finland), French (France), German (Germany), Hungarian (Hungary), Japanese (Japan), Portuguese (Brazil), Spanish (Spain), and Swedish (Sweden). Select multiple languages from the list using _Ctrl + Click_.
+
+The Search Settings include the following:
 
 **Cache Timeout:** Set the cache timeout in milliseconds for transformed search keywords. By default 604800 is used (about ten minutes).
 
 ## Understanding Semantic Search in Liferay
 
-Providing a robust understanding of a semantic search's intricacies is beyond the scope of this brief explanation. Instead we'll focus on how Liferay's Semantic Search implementation works, along the way explaining a few fundamental concepts of a semantic search.
+Semantic Search in Liferay can be one of two things:
+1. Full semantic search, where the normal indexers are disabled in a Search blueprint, and a well-trained model is used to index and search all the content 
+1. Hybrid semantic search, where a lexical, or keyword, search is performed first, and a more generally model is employed to re-score the results, using .
 
-Semantic search impacts the Liferay search at both index time and search time.
+Providing a robust understanding semantic search and its intricacies is beyond the scope of this brief explanation. Instead we'll focus on how Liferay's Semantic Search implementation works, along the way explaining a few fundamental concepts of a semantic search.
+
+Semantic search impacts the Liferay search at both index time and search time, introducing an additional level of content processing.
 
 During the indexing phase, 
 

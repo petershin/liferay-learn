@@ -1,55 +1,59 @@
 # Warehouse Reference Guide
 
-Warehouses represent physical locations where product inventory is managed and shipped for order fulfillment. Product inventory quantities can be managed per Warehouse. Available inventory is then calculated by Liferay Commerce to determine the total available inventory for sale across Warehouses. Channels must have a Warehouse associated with it in order to source product inventory. Multiple Warehouses can be created and associated with a given channel.
-
-To manage your Warehouses, navigate to the _Global Applications_ → _Commerce_ → _Settings_. Click the _Warehouses_ tab.
+To manage warehouses, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Warehouses*.
 
 ```{note}
-Warehouse settings are located in the _Control Panel_ if using Commerce 2.0 or 2.1.
+If you're using Commerce 2.0 or 2.1, the warehouse settings are located in the *Control Panel*.
 ```
 
-## Warehouse Name
+## Details
 
-![Adding a Warehouse](./warehouse-reference-guide/images/01.png)
+![Enter a name and description for the warehouse and activate it using the toggle.](./warehouse-reference-guide/images/01.png)
 
-| Field       | Description                             |
-| :---------- | :-------------------------------------- |
-| Name        | Name of the Warehouse                   |
-| Description | Additional Information                  |
-| Active      | Toggle to designate Warehouse as active |
+| Field       | Description                                    |
+| :---------- | :--------------------------------------------- |
+| Name        | Name of the warehouse                          |
+| Description | Description of the warehouse                   |
+| Active      | Toggle to set the warehouse as active/inactive |
 
 ## Channels
 
-![Selecting a Channel](./warehouse-reference-guide/images/02.png)
+You can set the warehouse to serve all the available channels or select specific ones. To do this, click on the *Eligibility* tab and click on the *Specific Channels* radio button. Search for a channel and click *Select*.
 
-| Field    | Description                                               |
-| :------- | :-------------------------------------------------------- |
-| Channels | List of checkboxes for all channels this Warehouse serves |
+![Set the warehouse to serve all available channels or select specific ones.](./warehouse-reference-guide/images/02.png)
 
-## Address Fields
+### Liferay DXP 7.4 U46/GA46 and Below
 
-![Adding the Warehouse's Address](./warehouse-reference-guide/images/03.png)
+![Check the channels that the warehouse must serve.](./warehouse-reference-guide/images/03.png)
+
+| Field    | Description                                             |
+| :------- | :------------------------------------------------------ |
+| Channels | List of available channels that the warehouse can serve |
+
+## Address
+
+![Set the warehouses's address.](./warehouse-reference-guide/images/04.png)
 
 | Field       | Description                                   |
 | :---------- | :-------------------------------------------- |
-| Street 1    | Address's first line                          |
-| Street 2    | Address's second line                         |
-| Street 3    | Address's third line                          |
+| Street 1    | First line of address                         |
+| Street 2    | Second line of address                        |
+| Street 3    | Third line of address                         |
 | Country     | Dropdown menu to select a country             |
 | Region      | Dropdown menu to select the state or province |
 | Postal Code | Field to enter the postal code                |
-| City        | City where the Warehouse is located           |
+| City        | Field to enter the city                       |
 
 ## Geolocation
 
-![Setting the Warehouse's geolocation](./warehouse-reference-guide/images/04.png)
+![Set the warehouses's geolocation.](./warehouse-reference-guide/images/05.png)
 
-| Field     | Description           |
-| :-------- | :-------------------- |
-| Latitude  | Warehouse's Latitude  |
-| Longitude | Warehouse's Longitude |
+| Field     | Description                           |
+| :-------- | :------------------------------------ |
+| Latitude  | Latitude coordinate of the warehouse  |
+| Longitude | Longitude coordinate of the warehouse |
 
-A Warehouse's geolocation is used by the FedEx shipping method to calculate shipping costs during checkout. Commerce uses the Warehouse with the best rate for the customer.
+The FedEx shipping method uses the warehouse's geolocation to calculate shipping costs during checkout. When there are multiple warehouses, the Liferay instance chooses the warehouse with the lowest shipping cost.
 
 ## Additional Information
 

@@ -4,7 +4,7 @@ Stores with multiple warehouses can manage product inventory on a per warehouse 
 
 To set inventory by warehouse:
 
-1. Open the *Global Menu* and navigate to *Commerce* → *Products*.
+1. Open the *Global Menu* and navigate to *Commerce* &rarr; *Products*.
 
 1. Click on a product.
 
@@ -28,7 +28,7 @@ You can transfer stock from one warehouse to another if a store has multiple war
 
 To transfer stock between warehouses:
 
-1. Open the *Global Menu* and navigate to *Commerce* → *Inventory*.
+1. Open the *Global Menu* and navigate to *Commerce* &rarr; *Inventory*.
 
 1. Click on an SKU.
 
@@ -52,7 +52,7 @@ Inventory counts for each warehouse are now updated.
 
 To set inventory by warehouse:
 
-1. Navigate to the *Control Panel* → *Commerce* → *Products*.
+1. Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Products*.
 
 1. Click on a product.
 

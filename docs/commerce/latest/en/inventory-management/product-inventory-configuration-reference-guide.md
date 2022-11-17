@@ -1,32 +1,38 @@
 # Product Inventory Configuration Reference Guide
 
-Each product in the catalog can be configured to display inventory data in the storefront. Administrators can display the availability of each item as 'In Stock' or 'Out of Stock' and the available inventory total, when stock is low.
+You can configure each product in the catalog to display inventory data in the storefront. There are two options available to display inventory data: *Display Availability* and *Display Stock Quantity*. When the stock quantity is above the low stock threshold, it shows *Available* and when the stock quantity is less than the low stock threshold, it shows *Unavailable*. You can also select the inventory engine, availability estimate, enable back-orders, set the maximum number of orders, and more.
 
-The out of stock threshold indicates when a product needs to be reordered, subtracts from the salable quantity for a stock, and can be set to support back-orders. Administrators can allow back-orders and set a maximum amount of orders.
+![Displaying product availability when stock is available or unavailable.](./product-inventory-configuration-reference-guide/images/01.png)
 
-To manage the inventory for each product, navigate to a Product's _Configuration_ tab.
+To access the inventory configuration options for a product:
 
-![Product Configuration for Inventory](./product-inventory-configuration-reference-guide/images/02.png)
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and navigate to *Commerce* &rarr; *Products*.
 
-| Field | Description |
-| :--- | :--- |
-| Inventory Engine | Dropdown menu to select a required Inventory Engine; can be customized using extension point |
-| Availability Estimate | Dropdown menu to select length of time for how long it should take to resupply the product if inventory is depleted |
-| Display Availability | Toggle to select whether to display a product is available for sale |
-| Display Stock Quantity | Toggle to select whether to display the remaining amount of stock is available for sale |
-| Low Stock Threshold | The number of products remaining before orders cannot be fulfilled due to unavailability |
-| Low Stock Action | Dropdown menu to select whether to continue to display the product in the catalog or make it Unpublished |
-| Allow Back Orders | Toggle to select whether to allow orders even when the product is out of stock |
-| Minimum Order Quantity | The number of minimum items a buyer is required to buy |
-| Maximum Order Quantity | The number of maximum items a buyer is allowed to buy |
-| Allowed Order Quantities |  Order quantities are limited to any numbers entered. An entry of 2, 4, 6 allows buyers to purchase only those quantities. |
-| Multiple Order Quantity | Only permit order quantities that are multiples of the number entered. |
+1. Select a product.
+
+1. Click on the *Configuration* tab.
+
+![The available configuration options for the selected product.](./product-inventory-configuration-reference-guide/images/02.png)
+
+| Field                    | Description                                                                                                                                                        |
+| :----------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Inventory Engine         | Select an inventory engine; can be customized using extension point                                                                                                |
+| Availability Estimate    | Select the duration to replenish the product inventory when stock runs out.                                                                                        |
+| Display Availability     | Activate to display that a product is available to buy.                                                                                                            |
+| Display Stock Quantity   | Activate to display the number of units available to buy.                                                                                                          |
+| Low Stock Threshold      | The limit to stop fulifilling orders due to unavailability. This is also the threshold for triggering the low stock action.                                        |
+| Low Stock Action         | Select an action to perform when the stock reaches the low stock threshold.                                                                                        |
+| Allow Back Orders        | Activate to allow purchasing the product even when stock is unavailable.                                                                                           |
+| Minimum Order Quantity   | The minimum number of items an order should contain to be purchaseable.                                                                                            |
+| Maximum Order Quantity   | The maximum number of items an order can contain to be purchaseable.                                                                                               |
+| Allowed Order Quantities | The specific quantity of the product that the order should contain to be purchaseable. Entering 2, for instance, lets buyers purchase only 2 units of the product. |
+| Multiple Order Quantity  | Enter a number to only permit order quantities that are multiples of it.                                                                                           |
 
 ## Commerce 2.0 and Below
 
-To manage the inventory for each product, navigate to a Product's _Configuration_ tab then click _Inventory_ in the left menu.
+To access the inventory configuration options for a product, navigate to a its *Configuration* tab and click on *Inventory* from the left menu.
 
-![Product Configuration for Low Stock Action](./product-inventory-configuration-reference-guide/images/01.png "Product Configuration for Low Stock Action")
+![The available configuration options for the selected product.](./product-inventory-configuration-reference-guide/images/03.png)
 
 ## Additional Information
 

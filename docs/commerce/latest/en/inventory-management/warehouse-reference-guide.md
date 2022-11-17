@@ -12,41 +12,41 @@ Warehouse settings are located in the _Control Panel_ if using Commerce 2.0 or 2
 
 ![Adding a Warehouse](./warehouse-reference-guide/images/01.png)
 
-| Field | Description |
-| :--- | :--- |
-| Name | Name of the Warehouse |
-| Description | Additional Information |
-| Active | Toggle to designate Warehouse as active |
+| Field       | Description                             |
+| :---------- | :-------------------------------------- |
+| Name        | Name of the Warehouse                   |
+| Description | Additional Information                  |
+| Active      | Toggle to designate Warehouse as active |
 
 ## Channels
 
 ![Selecting a Channel](./warehouse-reference-guide/images/02.png)
 
-| Field | Description |
-| :--- | :--- |
+| Field    | Description                                               |
+| :------- | :-------------------------------------------------------- |
 | Channels | List of checkboxes for all channels this Warehouse serves |
 
 ## Address Fields
 
 ![Adding the Warehouse's Address](./warehouse-reference-guide/images/03.png)
 
-| Field | Description |
-| :--- | :--- |
-| Street 1 | Address's first line |
-| Street 2 | Address's second line |
-| Street 3 | Address's third line |
-| Country | Dropdown menu to select a country |
-| Region | Dropdown menu to select the state or province |
-| Postal Code | Field to enter the postal code |
-| City | City where the Warehouse is located |
+| Field       | Description                                   |
+| :---------- | :-------------------------------------------- |
+| Street 1    | Address's first line                          |
+| Street 2    | Address's second line                         |
+| Street 3    | Address's third line                          |
+| Country     | Dropdown menu to select a country             |
+| Region      | Dropdown menu to select the state or province |
+| Postal Code | Field to enter the postal code                |
+| City        | City where the Warehouse is located           |
 
 ## Geolocation
 
 ![Setting the Warehouse's geolocation](./warehouse-reference-guide/images/04.png)
 
-| Field | Description |
-| :--- | :--- |
-| Latitude | Warehouse's Latitude |
+| Field     | Description           |
+| :-------- | :-------------------- |
+| Latitude  | Warehouse's Latitude  |
 | Longitude | Warehouse's Longitude |
 
 A Warehouse's geolocation is used by the FedEx shipping method to calculate shipping costs during checkout. Commerce uses the Warehouse with the best rate for the customer.

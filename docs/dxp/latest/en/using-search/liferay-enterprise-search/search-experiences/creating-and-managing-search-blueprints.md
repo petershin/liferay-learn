@@ -8,7 +8,7 @@ To create Search Blueprints,
 
 1. Add a Blueprint by clicking the Add (![Add](../../../images/icon-add.png)) button.
 
-   ![Start creating a Blueprint from the Add Blueprint modal window.](./creating-and-managing-search-blueprints/images/02.png)
+   ![Start creating a Blueprint from the Add Blueprint modal window.](./creating-and-managing-search-blueprints/images/01.png)
 
 1. In the New Search Blueprint window, give the Blueprint a name (required) and a description (optional).
 
@@ -20,7 +20,7 @@ To create Search Blueprints,
 
 1. Test the Blueprint as you build and configure it. Click _Preview_ and enter a search keyword.
 
-   ![Preview a Blueprint before putting it in action.](./creating-and-managing-search-blueprints/images/01.png)
+   ![Preview a Blueprint before putting it in action.](./creating-and-managing-search-blueprints/images/02.png)
 
    See [Testing a Blueprint](#testing-a-blueprint-with-the-preview-sidebar) for more details.
 
@@ -39,6 +39,7 @@ In addition to the CRUD options, Search Blueprints can be [imported and exported
 Many use cases for Blueprints will require using its Query Builder. Use the Query Builder to
 
 1. [Add Elements to the Blueprint](#adding-elements-to-the-blueprint).
+
 1. [Choose which Liferay assets to search](#choosing-which-liferay-assets-to-search).
 
 ### Adding Elements to the Blueprint
@@ -46,18 +47,24 @@ Many use cases for Blueprints will require using its Query Builder. Use the Quer
 Add Elements to begin adding query clauses to the Blueprint:
 
 1. Open the Add Query Elements sidebar by clicking the Add (![Add](../../../images/icon-add.png)) button on the Query Elements screen. 
-   ![Add Elements to the Blueprint.](./creating-and-managing-search-blueprints/images/14.png)
+
+   ![Add Elements to the Blueprint.](./creating-and-managing-search-blueprints/images/04.png)
+
 1. Expand the Element category you'd like to explore.
+
 1. Hover over the Element, then click the _Add_ button.
+
 1. The Element is added to the Query Builder, ready to configure:
-   ![This Element gives a boost of ten to content found on sites the searching user is a member of.](./creating-and-managing-search-blueprints/images/04.png)
+
+   ![This Element gives a boost of ten to content found on sites the searching user is a member of.](./creating-and-managing-search-blueprints/images/05.png)
+
 1. Add as many Elements as needed to configure the search query as desired.
 
    See [Search Blueprints Elements Reference](./search-blueprints-elements-reference.md) for a description of each out of the box Element.
 
 1. If any custom Elements are required, add the Custom JSON Element to the Query Builder and write the query clause you need.
 
-   See [Creating Elements](./creating-elements.md) to learn about building Custom JSON Elements.
+   See [Creating Elements](./creating-and-managing-elements/creating-elements.md) to learn about building Custom JSON Elements.
 
 ```{important}
 Some Elements require more action than simply adding them to the Blueprint in the Query Builder. For example, to use either the Boost Longer Contents element or the Boost Contents with More Versions element, you must re-index the following entries in Control Panel &rarr; Search &rarr; Index Actions:
@@ -78,11 +85,12 @@ After adding Elements, make sure you save the Blueprint.
 
 Decide which Liferay Asset Types to include in the Blueprint's query. Use Query Settings &rarr; Searchable Types:
 
-![Expand the Searchable Types dropdown to begin removing assets from the Search Blueprint.](./creating-and-managing-search-blueprints/images/05.png)
+![Expand the Searchable Types dropdown to begin removing assets from the Search Blueprint.](./creating-and-managing-search-blueprints/images/06.png)
 
 - All asset and object types are selected by default.
 - To remove specific types, open the Select Types modal by clicking the Select Asset Types button, then de-select the corresponding checkboxes.
-    ![The Select Types modal is used for bulk management of the assets to be searched.](./creating-and-managing-search-blueprints/images/06.png)
+
+   ![The Select Types modal is used for bulk management of the assets to be searched.](./creating-and-managing-search-blueprints/images/07.png)
 
 ```{note}
 De-selecting all assets in the Searchble Types modal is identical to selecting all types: all the asset and object types will be searched. See [Configuring Query Clause Contributors](#advanced-configuring-query-clause-contributors) to learn about disabling most of Liferay's search clauses.
@@ -113,9 +121,8 @@ Search Blueprints provides configurability for these backend-contributed query c
 
 * Due to internal limitations, you must choose to enable or disable all of Liferay's `Indexer`s. The other clause contributors can be managed more flexibly: choose to include all, none, or any subset of contributors you wish.
 
-![Disable certain clause contributors or all indexers from contributing clauses to the search query.](./creating-and-managing-search-blueprints/images/07.png)
+![Disable certain clause contributors or all indexers from contributing clauses to the search query.](./creating-and-managing-search-blueprints/images/08.png)
 ```
-
 
 When you edit the clause contributors or indexer behavior, make sure to save the Blueprint.
 
@@ -129,7 +136,7 @@ In addition to micromanaging the search query, add Search Blueprint settings add
 - Parameters
 - Advanced Configurations
 
-![Additional settings can be configured using JSON.](./creating-and-managing-search-blueprints/images/08.png)
+![Additional settings can be configured using JSON.](./creating-and-managing-search-blueprints/images/09.png)
 
 To add these, click the Configuration tab, then find the text entry box for the desired configuration. Enter your JSON, then save the Blueprint.
 
@@ -145,13 +152,13 @@ Here's an example Sort that sorts the search results by the `name` field, in des
 }
 ```
 
-For more details see [Blueprints Configuration](./blueprints-configurations.md)
+For more details see [Search Blueprints Configuration Reference](./search-blueprints-configuration-reference.md)
 
 ## Importing and Exporting Blueprints
 
 A Blueprint is a JSON object. Export the JSON of a Blueprint from one environment and import it into the other. This can be useful when bringing the Blueprint from a staging and testing environment to production.
 
-To export the Blueprint JSON, 
+To export the Blueprint JSON,
 
 1. Open the Blueprints application from the Global Menu &rarr; Applications &rarr; Blueprints (in the Search Experiences section).
 
@@ -173,7 +180,7 @@ To import a Blueprint's JSON definition,
 
 There's a preview sidebar that's handy for examining the results of a search backed by the Blueprint in progress. Access the preview by clicking the _Preview_ button from the Edit Blueprint screen.
 
-![Preview a Blueprint before putting it in action.](./creating-and-managing-search-blueprints/images/01.png)
+![Preview a Blueprint before putting it in action.](./creating-and-managing-search-blueprints/images/02.png)
 
 There's more functionality in this screen than first meets the eye:
 
@@ -189,15 +196,20 @@ There's more functionality in this screen than first meets the eye:
 
    ![Inspect the document's fields.](./creating-and-managing-search-blueprints/images/13.png)
 
-[Some Elements](./search-blueprints-elements-reference.md) read search context attributes that you can provide or override manually. To test Blueprints with these Elements, add search context attributes to the Blueprint preview search by clicking the gear icon (![Gear](../../../images/icon-cog3.png)). Enter the key/value pair for the attribute, then click _Done_. Just keep in mind this attribute is only set for the Blueprint preview and isn't saved with the Blueprint itself. You can configure these attributes on a Search Page using the [Blueprints Search Options](./setting-a-blueprint-on-a-search-page.md) widget.
+[Some Elements](./search-blueprints-elements-reference.md) read search context attributes that you can provide or override manually. To test Blueprints with these Elements, add search context attributes to the Blueprint preview search by clicking the gear icon (![Gear](../../../images/icon-cog3.png)). Enter the key/value pair for the attribute, then click _Done_. Just keep in mind this attribute is only set for the Blueprint preview and isn't saved with the Blueprint itself. You can configure these attributes on a Search Page. See [Using a Search Blueprint on a Search Page](./using-a-search-blueprint-on-a-search-page.md) for more information.
 
-For example, 
+For example,
 
 1. Add a new [Vocabulary with a Category](../../../content-authoring-and-management/tags-and-categories.md) called _administrative_.
+
 1. Add two new [Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles.md); make sure both have _test_ in the title field. Associate one of them to the category you created.
+
 1. Create a new Blueprint and add the Conditional Element _Hide Contents in a Category for Guest Users_. You need the Asset Category ID for the Category you created, but you can find that in the Preview window.
+
 1. Search for _administrative_ in the preview. Expand the document of the Web Content Article with the category, then find the `assetCategoryId` (e.g., 43013).
+
 1. Use the ID in the Element's configuration.
+
 1. Open the Preview sidebar's Attributes modal, and enter
 
    Key: `user.is_signed_in`

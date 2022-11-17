@@ -54,13 +54,8 @@ Define the configurable attributes in the configuration interface. The sample pr
 
 Note that when using `ConfigurationFormRenderer`, the `generateUI` annotation is not necessary to [hide the generated UI](./hiding-the-configuration-ui.md).
 
-## Add the Configuration Bean Declaration
-
-Register the configuration class with a `ConfigurationBeanDeclaration` class. This enables the system to keep track of configuration changes as they happen.
-
-```{literalinclude} ./configuration-form-renderer/resources/liferay-b7r2.zip/b7r2-web/src/main/java/com/acme/b7r2/web/internal/settings/definition/B7R2WebConfigurationBeanDeclaration.java
-:language: java
-:lines: 10-18
+```{note}
+A `ConfigurationBeanDeclaration` is required for versions of Liferay before Liferay DXP 7.4 U51 or Liferay Portal 7.4 GA51. See [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeandeclaration-with-previous-versions-of-liferay).
 ```
 
 ## Implement the Configuration Form Renderer

@@ -94,17 +94,6 @@ Next, see how the configuration is read by the MVC Portlet.
 
     The configuration object is added to the request object and can now be read from the request of the application's JSP.
 
-## Create a Configuration Bean Declaration
-
-To use the `ConfigurationProvider`, the configuration class must also be regisered with a `ConfigurationBeanDeclaration`. This enables the system to keep track of configuration changes as they happen.
-
-```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/settings/definition/N2F3WebConfigurationBeanDeclaration.java
-:language: java
-:lines: 9-18
-```
-
-This class has one method that returns the configuration interface class of your application.
-
 ## Accessing the Configuration from a JSP
 
 1. The following import statement adds the configuration interface to the JSP:
@@ -141,6 +130,31 @@ Redeploy the example module.
 ![The font family is now a dropdown selection.](./setting-and-accessing-configurations/images/03.png)
 
 Now the font family attribute is a dropdown selection.
+
+## ConfigurationBeanDeclaration with Previous Versions of Liferay
+
+```{note}
+For versions before Liferay DXP 7.4 U51 or Liferay Portal 7.4 GA51, a `ConfigurationBeanDeclaration` class is required.
+```
+
+The configuration class must be registered with a `ConfigurationBeanDeclaration` in order to use with the Configuration Provider API. The `ConfigurationBeanDeclaration` class has one method that returns the configuration interface class and helps the system keep track of configuration changes as they happen. For example, for this N2F3 portlet, you would create a class like this:
+
+```java
+@Component(service = ConfigurationBeanDeclaration.class)
+public class N2F3WebConfigurationBeanDeclaration
+	implements ConfigurationBeanDeclaration {
+
+	@Override
+	public Class<?> getConfigurationBeanClass() {
+		return N2F3WebConfiguration.class;
+	}
+
+}
+```
+
+Then place this class in the following folder:
+
+`/src/main/java/com/acme/n2f3/web/internal/settings/definition/`
 
 ## Further Customization
 

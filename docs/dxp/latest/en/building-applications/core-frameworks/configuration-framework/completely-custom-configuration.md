@@ -54,13 +54,8 @@ Define the configurable attributes in the configuration interface. The sample pr
 
 Note that under the `@ExtendedObjectClassDefinition` annotation, `generateUI` is set to `false`. This excludes the configuration UI from being auto-generated. 
 
-## Add the Configuration Bean Declaration
-
-Register the configuration class with a `ConfigurationBeanDeclaration`. This enables the system to keep track of configuration changes as they happen.
-
-```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/settings/definition/U2G5WebConfigurationBeanDeclaration.java
-:language: java
-:lines: 9-18
+```{note}
+A `ConfigurationBeanDeclaration` is required for versions of Liferay before Liferay DXP 7.4 U51 or Liferay Portal 7.4 GA51. See [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeandeclaration-with-previous-versions-of-liferay).
 ```
 
 ## Implement the Configuration Screen

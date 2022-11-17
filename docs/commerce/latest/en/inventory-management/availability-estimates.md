@@ -1,56 +1,51 @@
 # Availability Estimates
 
-If a Product becomes unavailable, store owners can provide customers with an estimate for when it will be restocked.
+If a product runs out of stock, you can provide an estimate to customers for when it becomes available again. If you're using an accelerator like Minium or Speedwell, three availability estimates are automatically created.
 
-When using an [accelerator](../starting-a-store/accelerators.md) to create a Commerce Site, three sample estimates are created.
+To create your own availability estimates:
 
-Follow these steps to create your own availability estimates:
-
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Availability Estimates*.
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and navigate to *Commerce* &rarr; *Availability Estimates*.
 
 1. Click the *Add* button (![Add Button](../images/icon-add.png)).
 
-    ![Click the Add button to create a new Availability Estimate.](./availability-estimates/images/01.png)
+    ![Click the Add button to create a new availability estimate.](./availability-estimates/images/01.png)
 
-1. Enter a *Title*. This value should be the estimated period of time before the Product is restocked (e.g., 3-5 days, 3-4 weeks, 2-3 months).
+1. Enter a *Title*. This should denote the estimated time before the product becomes available again (for instance: 3-5 days, 3-4 weeks, 2-3 months).
 
-   It is displayed in the Product Details widget as follows: "Product will be available in: [Title Value]."
-
-1. Enter a *Priority* to determine the order in which the estimate is listed.
+1. Enter a *Priority* to determine the display order of the estimate.
 
 1. Click *Save*.
 
-Once created, you can add it to Products with *Display Availability* enabled. Simply navigate to a Product's *Configuration* tab, select the desired *Availability Estimate*, and click *Publish* when finished.
+Once created, you can add it to a product with *Display Availability* enabled. Navigate to a product's *Configuration* tab, select the desired *Availability Estimate* from the dropdown, and click *Publish*.
 
-![Select the desired Availability Estimate.](./availability-estimates/images/02.png)
+![Select the desired availability estimate.](./availability-estimates/images/02.png)
 
-The selected estimate is displayed to customers whenever the Product's inventory reaches 0.
+You can view the selected availability estimate whenever the product runs out of stock.
 
-![The selected estimate is displayed to customers whenever the Product's inventory reaches 0.](./availability-estimates/images/03.png)
+![The selected estimate appears on the product page whenever the product runs out of stock](./availability-estimates/images/03.png)
 
 ## Commerce 2.1 and Below
 
-A set of Availability Estimates are created when using an [Accelerator](../starting-a-store/accelerators.md) to create a storefront.
+To create a new availability estimate:
 
-![Managing Availability Estimates](./availability-estimates/images/04.png)
+1. Navigate to the *Control Panel* → *Commerce* → *Settings*.
 
-To create an Availability Estimate:
+1. Click the *Availability Estimates* tab.
 
-1. Navigate to the _Control Panel_ → _Commerce_ → _Settings_.
-1. Click the _Availability Estimates_ tab.
-1. Click the (+) button to add a new estimate.
-1. Enter the following:
-    * Title: 15-21 days
-    * Priority: 4.0
-1. Click _Save_.
+1. Click the *Add* button (![Add Button](../images/icon-add.png)) and enter the following information:
 
-The new Availability Estimate has been added. Note that because the priority is set to _4.0_, this means this time period is displayed last in the menu.
+   * **Title:** 15-21 days
+   * **Priority:** 4.0
 
-![New Availability Estimate](./availability-estimates/images/05.png)
+1. Click *Save*.
 
-When configuring the low stock threshold, this Availability Estimate option is displayed in the _Product Configuration_ → _Inventory_ menu.
+This creates the new availability estimate. The priority value of 4.0 means that the new estimate appears below the existing availability estimates in the dropdown menu. Only estimates of priority 5.0 or higher can appear below it.
 
-![Availability Estimates in Inventory Dropdown](./availability-estimates/images/06.png)
+![New Availability Estimate](./availability-estimates/images/04.png)
+
+To use it, navigate to a product's *Configuration* tab, enable the *Display Availability* option, select the desired *Availability Estimate* from the dropdown, and click *Publish*.
+
+![Activate the Display Availability toggle and select an availability estimate from the dropdown.](./availability-estimates/images/05.png)
 
 ## Additional Information
 

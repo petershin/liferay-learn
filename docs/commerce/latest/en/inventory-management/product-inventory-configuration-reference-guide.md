@@ -6,7 +6,7 @@ The out of stock threshold indicates when a product needs to be reordered, subtr
 
 To manage the inventory for each product, navigate to a Product's _Configuration_ tab.
 
-![Product Configuration for Inventory](./product-inventory-configuration-reference/images/02.png)
+![Product Configuration for Inventory](./product-inventory-configuration-reference-guide/images/02.png)
 
 | Field | Description |
 | :--- | :--- |
@@ -26,7 +26,7 @@ To manage the inventory for each product, navigate to a Product's _Configuration
 
 To manage the inventory for each product, navigate to a Product's _Configuration_ tab then click _Inventory_ in the left menu.
 
-![Product Configuration for Low Stock Action](./product-inventory-configuration-reference/images/01.png "Product Configuration for Low Stock Action")
+![Product Configuration for Low Stock Action](./product-inventory-configuration-reference-guide/images/01.png "Product Configuration for Low Stock Action")
 
 ## Additional Information
 

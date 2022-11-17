@@ -8,7 +8,7 @@ toc:
 - ./inventory-management/using-the-inventory-management-system.md
 - ./inventory-management/inventory-management-reference-guide.md
 - ./inventory-management/warehouse-reference-guide.md
-- ./inventory-management/product-inventory-configuration-reference.md
+- ./inventory-management/product-inventory-configuration-reference-guide.md
 ---
 # Inventory Management
 
@@ -23,7 +23,7 @@ inventory-management/managing-product-publication.md
 inventory-management/using-the-inventory-management-system.md
 inventory-management/inventory-management-reference-guide.md
 inventory-management/warehouse-reference-guide.md
-inventory-management/product-inventory-configuration-reference.md
+inventory-management/product-inventory-configuration-reference-guide.md
 ```
 
 {bdg-secondary}`Available Commerce 2.1+`

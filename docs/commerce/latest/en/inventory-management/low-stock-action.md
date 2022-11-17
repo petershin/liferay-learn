@@ -1,50 +1,40 @@
 # Low Stock Action
 
-With Liferay Commerce, you can set up automated actions for when a Product's inventory falls below a specified threshold. While Commerce only includes the *Set as Unpublished* low stock action out of the box, you can create [custom low stock actions](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) if desired.
+Low stock actions are actions performed when the product inventory falls below a specific threshold.  There's one low stock action available out-of-the-box (*Set as Unpublished*), that removes the product from the store when its inventory falls below the threshold. You can also create custom low stock actions. See [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) for more information.
 
-Follow these steps to set up a low stock action for a Product:
+To set up a low stock action for a product:
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Products*.
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and navigate to *Commerce* &rarr; *Products*.
 
-1. Click on the desired Product.
+1. Click on the desired product and navigate to the *Configuration* tab.
 
-1. Click on the *Configurations* tab.
+1. Under the inventory section, select a *Low Stock Action* from the dropdown menu.
 
-1. Select a *Low Stock Action* using the dropdown menu.
+1. Enter a *Low Stock Threshold* to determine the trigger quantity for the action.
 
-1. Enter a *Low Stock Threshold* to determine when the action is automatically triggered.
+   ![Select a low stock action and set the quantity for it to trigger.](./low-stock-action/images/01.png)
 
-1. Click on *Publish*.
+1. Click *Publish*.
 
-Once configured, the selected Low Stock Action is triggered whenever the Product's inventory falls below the set threshold.
+Once configured, the selected low stock action is triggered whenever the product inventory falls below the set threshold.
 
 ## Commerce 2.1 and Below
 
-Access to the Products are found in the _Control Panel_. To configure a Low Stock Action:
+To configure a low stock action:
 
-1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product (for example, _U-Joint_)
-1. Click the _Configurations_ sub-tab.
-1. Enter the following:
-    * **Inventory Engine**: Default
-    * **Availability Estimate**: 5-7 Days
-    * **Display Availability**: YES
-    * **Display Stock Quantity**: YES
-    * **Low Stock Threshold**: 5
-    * **Low Stock Action**: Set as Unpublished
-    * **Allow Back Orders**: Yes
-    * **Minimum Order Quantity**: 1
-    * **Maximum Order Quantity**: 5
-    * **Allowed Order Quantities**: 1
-    * **Multiple Order Quantity**: 1
+1. Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Products*.
 
-    ![Product Configuration for Low Stock Action](./low-stock-action/images/01.png)
+1. Click on a product and select the *Configuration* tab.
 
-1. Click _Publish_.
+1. Under the inventory section, select a *Low Stock Action* from the dropdown menu.
 
-The Low Stock Action for this product has been configured. In the future, should the number of stock fall below _5_, the "U-Joint" product will be unpublished.
+1. Enter a *Low Stock Threshold* to determine the trigger quantity for the action.
+
+1. Click *Publish*.
+
+Once configured, the selected low stock action is triggered whenever the product inventory falls below the set threshold.
 
 ## Additional Information
 
-* [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
+* [Product Inventory Configuration Reference](./product-inventory-configuration-reference-guide.md)
 * [Implementing a Custom Low Stock Action](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)

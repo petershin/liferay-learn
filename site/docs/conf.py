@@ -48,6 +48,7 @@ language = os.path.basename(language_path)
 locale_dirs = ["_locale"]
 log = logging.getLogger(__name__)
 master_doc = "contents"
+myst_all_links_external = True
 myst_enable_extensions = ["colon_fence"]
 notfound_no_urls_prefix = True
 notfound_template = "404.html"

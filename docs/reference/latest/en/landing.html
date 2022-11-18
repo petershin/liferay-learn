@@ -1,51 +1,51 @@
 <script type="module">
-	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+   import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
 
-	const page = new Vue({
-		data: {
-			cards: [
-				{
-					icon: '#dxp-logo',
-					sectionName: 'DXP',
-					sectionURL: 'dxp.html',
-					showAll: true,
-					subsections: [
-						{
-							name: 'Apps',
-							url: 'http://docs.liferay.com/dxp/portal/7.3-latest/apps'
-						},
-						{
-							name: 'Definitions',
-							url: 'dxp/definitions/index.html'
-						},
-						{
-							name: 'Javadocs',
-							url: 'dxp.html'
-						},
-						{
-							name: 'Properties',
-							url: 'dxp/propertiesdoc/index.html'
-						},
-						{
-							name: 'Taglibs',
-							url: 'dxp/taglibs/util-taglib/index.html'
-						}
-					]
-				},
-				{
-					icon: '#site-building-logo',
-					sectionName: 'Faces',
-					sectionURL: 'https://docs.liferay.com/faces/3.2/vdldoc',
-					showAll: false,
-				},
-				{
-					icon: '#content-authoring-and-management-logo',
-					sectionName: 'Portlet API',
-					sectionURL: 'portlet-api/index.html',
-					showAll: false,
-				}
-			]
-		},
-		el: '#landingPage',
-	})
+   const page = new Vue({
+      data: {
+         cards: [
+            {
+               icon: '#dxp-logo',
+               sectionName: 'DXP',
+               sectionURL: 'dxp.html',
+               showAll: true,
+               subsections: [
+                  {
+                     name: 'Apps',
+                     url: 'dxp/apps.html'
+                  },
+                  {
+                     name: 'Definitions',
+                     url: 'dxp/definitions/index.html'
+                  },
+                  {
+                     name: 'Javadocs',
+                     url: 'dxp.html'
+                  },
+                  {
+                     name: 'Properties',
+                     url: 'dxp/propertiesdoc/index.html'
+                  },
+                  {
+                     name: 'Taglibs',
+                     url: 'dxp/taglibs/util-taglib/index.html'
+                  }
+               ]
+            },
+            {
+               icon: '#site-building-logo',
+               sectionName: 'Faces',
+               sectionURL: 'https://docs.liferay.com/faces/3.2/vdldoc',
+               showAll: false,
+            },
+            {
+               icon: '#content-authoring-and-management-logo',
+               sectionName: 'Portlet API',
+               sectionURL: 'portlet-api/index.html',
+               showAll: false,
+            }
+         ]
+      },
+      el: '#landingPage',
+   })
 </script>

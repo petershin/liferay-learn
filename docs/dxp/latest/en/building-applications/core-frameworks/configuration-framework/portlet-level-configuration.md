@@ -73,7 +73,7 @@ Note that this example also works with scope set at higher levels (i.e. Site, In
 To learn more, see [Creating the Configuration Interface](./setting-and-accessing-configurations.html#Creating-the-Configuration-Interface).
 
 ```{note}
-A `ConfigurationBeanDeclaration` is required for versions of Liferay before Liferay DXP 7.4 U51 or Liferay Portal 7.4 GA51. See [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeandeclaration-with-previous-versions-of-liferay).
+A `ConfigurationBeanDeclaration` is required for Liferay versions before DXP 7.4 U51 or Portal 7.4 GA51. See [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeandeclaration-with-previous-versions-of-liferay).
 ```
 
 ## Read the Configuration with PortletDisplay

@@ -133,11 +133,11 @@ Now the font family attribute is a dropdown selection.
 
 ## ConfigurationBeanDeclaration with Previous Versions of Liferay
 
-```{note}
-For versions before Liferay DXP 7.4 U51 or Liferay Portal 7.4 GA51, a `ConfigurationBeanDeclaration` class is required.
+```{important}
+For Liferay DXP 7.4 U51+ and Liferay Portal 7.4 GA51+, a `ConfigurationBeanDeclaration` class is not required. The configration interface is registered with the Configuration Provider API automatically.
 ```
 
-The configuration class must be registered with a `ConfigurationBeanDeclaration` in order to use with the Configuration Provider API. The `ConfigurationBeanDeclaration` class has one method that returns the configuration interface class and helps the system keep track of configuration changes as they happen. For example, for this N2F3 portlet, you would create a class like this:
+On Liferay versions before 7.4 Update/GA 51, the configuration class must be registered with a `ConfigurationBeanDeclaration` to use it with the Configuration Provider API. The `ConfigurationBeanDeclaration` class has one method that returns the configuration interface class. This helps the system keep track of configuration changes as they happen. For example, for the N2F3 portlet, create a class like this:
 
 ```java
 @Component(service = ConfigurationBeanDeclaration.class)
@@ -152,9 +152,7 @@ public class N2F3WebConfigurationBeanDeclaration
 }
 ```
 
-Then place this class in the following folder:
-
-`/src/main/java/com/acme/n2f3/web/internal/settings/definition/`
+In this example, place the class in the `com.acme.n2f3.web.internal.settings.definition` package.
 
 ## Further Customization
 

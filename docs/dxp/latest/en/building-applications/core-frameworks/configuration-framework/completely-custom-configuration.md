@@ -55,7 +55,7 @@ Define the configurable attributes in the configuration interface. The sample pr
 Note that under the `@ExtendedObjectClassDefinition` annotation, `generateUI` is set to `false`. This excludes the configuration UI from being auto-generated. 
 
 ```{note}
-A `ConfigurationBeanDeclaration` is required for versions of Liferay before Liferay DXP 7.4 U51 or Liferay Portal 7.4 GA51. See [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeandeclaration-with-previous-versions-of-liferay).
+A `ConfigurationBeanDeclaration` is required for Liferay versions before DXP 7.4 U51 or Portal 7.4 GA51. See [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeandeclaration-with-previous-versions-of-liferay).
 ```
 
 ## Implement the Configuration Screen

@@ -1,7 +1,5 @@
 # Using the Inventory Management System
 
-{bdg-secondary} `Available Commerce 2.1+`
-
 You can manage the entire inventory for your Liferay instance using the inventory management system.
 
 Here are the features of the inventory management system that you can use for an SKU:
@@ -13,7 +11,7 @@ Here are the features of the inventory management system that you can use for an
 
 Inventory management is closely tied to the warehouses, from where you can view the available stock in each warehouse.
 
-You can access the inventory page by opening the *Global Menu* and navigating to  *Commerce* &rarr; *Inventory*.
+You can access the inventory page by opening the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigating to  *Commerce* &rarr; *Inventory*.
 
 ```{note}
 If you're using Commerce 2.0 or 2.1, the *Inventory Management* option is located in the *Control Panel*.
@@ -105,7 +103,7 @@ After adding the incoming stock, it appears under the *Incoming* column in the *
 
 You can view changes in inventory for an SKU in the *Changelog* page. To view this:
 
-1. Open the Global Menu and navigate to *Commerce* &rarr; *Inventory*.
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
 1. Click on an SKU.
 

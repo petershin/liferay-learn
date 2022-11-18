@@ -1,12 +1,10 @@
 # Inventory Management Reference Guide
 
-> Commerce 2.1+
-
 To access the inventory settings, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
 ![Navigate to the inventory settings from the Global Menu.](./inventory-management-reference-guide/images/01.png)
 
-The page displays product variants identified by their SKU code with their availability data.
+The page displays product variants identified by their SKU code and their availability data.
 
 ![The first page tracks all the SKUs in the catalog and displays their availability data.](./inventory-management-reference-guide/images/02.png)
 

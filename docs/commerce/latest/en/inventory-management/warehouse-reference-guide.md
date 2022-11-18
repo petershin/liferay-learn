@@ -10,11 +10,11 @@ If you're using Commerce 2.0 or 2.1, the warehouse settings are located in the *
 
 ![Enter a name and description for the warehouse and activate it using the toggle.](./warehouse-reference-guide/images/01.png)
 
-| Field       | Description                                    |
-| :---------- | :--------------------------------------------- |
-| Name        | Name of the warehouse                          |
-| Description | Description of the warehouse                   |
-| Active      | Toggle to set the warehouse as active/inactive |
+| Field       | Description                                 |
+| :---------- | :------------------------------------------ |
+| Name        | Name of the warehouse                       |
+| Description | Description of the warehouse                |
+| Active      | Toggle to activate/deactivate the warehouse |
 
 ## Channels
 
@@ -23,6 +23,8 @@ You can set the warehouse to serve all the available channels or select specific
 ![Set the warehouse to serve all available channels or select specific ones.](./warehouse-reference-guide/images/02.png)
 
 ### Liferay DXP 7.4 U46/GA46 and Below
+
+Under the *Channels* section, you can view the available channels that the warehouse can serve. Use the checkbox to select the desired channels.
 
 ![Check the channels that the warehouse must serve.](./warehouse-reference-guide/images/03.png)
 

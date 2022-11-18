@@ -49,5 +49,5 @@ To use it, navigate to a product's *Configuration* tab, enable the *Display Avai
 
 ## Additional Information
 
-* [Introduction to Managing Inventory](./introduction-to-managing-inventory.md)
+* [Inventory Management](../inventory-management.md)
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference-guide.md)

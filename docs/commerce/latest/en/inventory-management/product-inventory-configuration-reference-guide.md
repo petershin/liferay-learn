@@ -16,7 +16,7 @@ To access the inventory configuration options for a product:
 
 | Field                    | Description                                                                                                                                                        |
 | :----------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Inventory Engine         | Select an inventory engine; can be customized using extension point                                                                                                |
+| Inventory Engine         | Select an inventory engine; can be customized using an extension point                                                                                             |
 | Availability Estimate    | Select the duration to replenish the product inventory when stock runs out.                                                                                        |
 | Display Availability     | Activate to display that a product is available to buy.                                                                                                            |
 | Display Stock Quantity   | Activate to display the number of units available to buy.                                                                                                          |

@@ -18,13 +18,13 @@ To set inventory by warehouse:
 
 1. Click *Save* for each warehouse.
 
-1. Repeat these steps for all the other product variants (SKUs) associated for a product.
+1. Repeat these steps for other SKUs associated with the product.
 
 Each warehouse now has the correct quantity available for sale.
 
 ## Transferring Stock Between Warehouses
 
-You can transfer stock from one warehouse to another if a store has multiple warehouses. Inventory is tracked at the SKU level and reflected in the *Inventory* page.
+You can transfer stock from one warehouse to another if a store has multiple warehouses. Inventory is tracked at the SKU level and reflected on the *Inventory* page.
 
 To transfer stock between warehouses:
 
@@ -32,7 +32,7 @@ To transfer stock between warehouses:
 
 1. Click on an SKU.
 
-1. Click the (![Add icon](../images/icon-add.png)) then select *Create a Transfer*.
+1. Click the *Add* (![Add icon](../images/icon-add.png)) button, then select *Create a Transfer*.
 
     ![You can transfer stock from one warehouse to another.](./setting-inventory-by-warehouse/images/02.png)
 
@@ -46,7 +46,7 @@ To transfer stock between warehouses:
 
 1. Click *Submit*.
 
-Inventory counts for each warehouse are now updated.
+Inventory for each warehouse is now updated.
 
 ## Commerce 2.1 and Below
 
@@ -72,7 +72,7 @@ Each warehouse now has the correct quantity available for sale.
 
 ### Transferring Stock Between Warehouses
 
-If a store has more than one [warehouse](./setting-up-warehouses.md), users can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected in *Inventory* administration.
+If a store has more than one [warehouse](./setting-up-warehouses.md), users can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected on the *Inventory* page.
 
 To transfer stock between warehouses:
 
@@ -80,11 +80,11 @@ To transfer stock between warehouses:
 
 1. Click on an SKU.
 
-1. Click the (![Add icon](../images/icon-add.png)) then *Create a Transfer*.
+1. Click the *Add* (![Add icon](../images/icon-add.png)) button, then *Create a Transfer*.
 
     ![Users can transfer stock between warehouses](./setting-inventory-by-warehouse/images/05.png)
 
-1. Enter the following:
+1. Enter the following information to transfer 40 units of the selected SKU from the United States - Southwest warehouse to the United States - Northwest warehouse:
 
     * **Quantity**: 40
     * **Source**: United States - Southwest
@@ -94,7 +94,7 @@ To transfer stock between warehouses:
 
 1. Click *Submit*.
 
-You can now view the updated inventory counts for each warehouse.
+You can now view the updated inventory for each warehouse.
 
 ## Additional Information
 

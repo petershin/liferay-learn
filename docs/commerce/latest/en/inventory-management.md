@@ -37,7 +37,7 @@ Here are the inventory management features:
 * Configure low stock actions
 * Set inventory by warehouse
 
-You can use the inventory management system to track your entire inventory in a single place. The system tracks inventory by SKU. See [Using the Inventory Management System](./using-the-inventory-management-system.md) for more information.
+You can use the inventory management system to track your entire inventory in a single place. The system tracks inventory by SKU. See [Using the Inventory Management System](./inventory-management/using-the-inventory-management-system.md) for more information.
 
 ```{important}
 Each product in the inventory must be associated to at least one SKU.
@@ -49,7 +49,7 @@ Warehouses represent physical locations where you can manage product inventory a
 
 See [Setting Up Commerce Warehouses](./inventory-management/setting-up-warehouses.md) and [Warehouse Reference Guide](./inventory-management/warehouse-reference-guide.md) for more information on managing warehouses.
 
-For a store to accept orders, the related channel must have a warehouse associated with it. See [Introduction to Channels](../store-management/channels/introduction-to-channels.md) to understand how channels work.
+For a store to accept orders, the related channel must have a warehouse associated with it. Read [Introduction to Channels](../store-management/channels/introduction-to-channels.md) to understand how channels work.
 
 ## Setting Inventory by Warehouse
 
@@ -57,13 +57,13 @@ In Liferay, inventory is managed per SKU. Read [Setting Inventory by Warehouse](
 
 ## Low Stock Actions
 
-A low stock action performs an action when available product inventory reaches a specific threshold. See [Low Stock Action](./inventory-management/low-stock-action.md) to learn how to configure the action that is executed when inventory reaches a minimum threshold.
+A low stock action performs an action when available product inventory reaches a specific threshold. Read [Low Stock Action](./inventory-management/low-stock-action.md) to learn how to configure the action that is executed when inventory reaches a minimum threshold.
 
 Developers interested in creating their own custom low stock action can read [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md).
 
 ## Availability Estimates
 
-You can configure availability estimates for products that are out of stock. This informs customers when it becomes available again. See the [Availability Estimates](./inventory-management/availability-estimates.md) for more information.
+You can configure availability estimates for products that are out of stock. This informs customers when it becomes available again. Read [Availability Estimates](./inventory-management/availability-estimates.md) for more information.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

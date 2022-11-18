@@ -34,7 +34,7 @@ To add a new warehouse,
 
 1. Enter an address for the warehouse in the *Address* section.
 
-   Alternatively, you can configure the Bing Geocoder to automatically generate a warehouse's geolocation. To use this feature, the warehouse must have an address. See [below](#using-bing-geocoder-to-set-a-warehouses-geolocation) for more information.
+   Alternatively, you can configure the [Bing Geocoder](#using-bing-geocoder-to-set-a-warehouses-geolocation) to automatically generate a warehouse's geolocation. To use this feature, the warehouse must have an address.
 
 1. Click on the *Eligibility* tab to associate the warehouse to a specific channel or all available channels. If you want to associate the warehouse to a specific channel, click the *Specific Channels* radio button, enter a channel name and click *Select*. The associated warehouses determine the product inventory for a channel.
 
@@ -84,16 +84,16 @@ Once the geocoder is configured, you can generate warehouse geolocations for any
 
 ## Commerce 2.1 and Below
 
-To add a new warehouse,:
+To add a new warehouse:
 
 1. Go to *Control Panel* &rarr; *Commerce* &rarr; *Settings*.
 
 1. Click the *Warehouses* tab.
 
-1. Click the *Add Warehouse* (![Add Icon](../images/icon-add.png)) button and enter the following information.
+1. Click the *Add* (![Add Icon](../images/icon-add.png)) button and enter the following information.
 
-   * *Name:* North Vegas Warehouse
-   * *Description:* North Vegas Processing Center
+   * **Name:** North Vegas Warehouse
+   * **Description:** North Vegas Processing Center
 
 1. Switch the toggle to *Active*.
 
@@ -103,8 +103,8 @@ To add a new warehouse,:
 
 1. Enter the mandatory geolocation data based on your warehouse's location.
 
-   * *Latitude*: 36.282974
-   * *Longitude*: -115.136
+   * **Latitude**: 36.282974
+   * **Longitude**: -115.136
 
     ![Configuring the newly created warehouse.](./setting-up-warehouses/images/07.png)
 

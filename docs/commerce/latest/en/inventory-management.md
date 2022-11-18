@@ -84,8 +84,8 @@ You can configure availability estimates for products that are out of stock. Thi
 :link: ./inventory-management/availability-estimates.md
 :::
 
-:::{grid-item-card}  Managing Product Publications
-:link: ./inventory-management/managing-product-publication.md
+:::{grid-item-card}  Managing Product Status
+:link: ./inventory-management/managing-product-status.md
 :::
 
 :::{grid-item-card}  Using the Inventory Management System

@@ -58,7 +58,7 @@ Follow these steps to deploy the Salesforce connector to a Liferay DXP instance:
 When created, the settings editor for each Talend job scheduler task is automatically populated with default context parameters. These parameters can be used to provide necessary credentials and to modify each task's behavior in runtime.
 
 ```{warning}
-Be careful when removing parameters from the settings editor. If you leave a key with a blank value, it will disappear when the settings are saved. If the keys and their values are lost, they cannot be restored, and you'll have to recreate the Talend Dispatch Task.
+Be careful when removing parameters from the settings editor. If you leave a key with a blank value, it will disappear when the settings are saved. If the keys and their values are lost, they can't be restored, and you'll have to recreate the Talend dispatch task.
 ```
 
 ### Credentials Reference
@@ -77,47 +77,67 @@ Each task includes the following fields for entering Liferay and Salesforce cred
 
 ### Products Reference
 
-| Context Parameter              | Description                                                                                          | Default Value |
-| :----------------------------- | :--------------------------------------------------------------------------------------------------- | :------------ |
-| `catalogName`                  | The name of the Catalog used to store Salesforce data                                                | `Salesforce`  |
-| `catalogExternalReferenceCode` | The external reference code used when creating or fetching the catalog; must be `SALESFORCE`         | `SALESFORCE`  |
-| `catalogDefaultCurrency`       | The default currency used for the Catalog                                                            | `USD`         |
-| `catalogDefaultLanguage`       | The default language used for the Catalog                                                            | `en_US`       |
-| `catalogId`                    | The ID of the Catalog used to store Salesforce data                                                  |               |
-| `allowBackOrder`               | The boolean value that determines if a product supports back orders when stock is                    |               |
-| `displayAvailability`          | The boolean value that determines if a product displays its availability in the Product Details page |               |
-| `productType`                  | The product type used when creating all products                                                     | `simple`      |
-| `freeShipping`                 | The boolean value that determines if a product supports free shipping or not                         | `false`       |
-| `shippable`                    | The boolean value that determines if a product is shippable or not                                   |               |
-| `shippingSeparately`           | The boolean value that determines if a product supports separate shipping or not                     |               |
+| Context Parameter              | Description                                                                                      | Default Value               |
+| :----------------------------- | :----------------------------------------------------------------------------------------------- | :-------------------------- |
+| `catalogName`                  | Name of the catalog used to store Salesforce data                                                | `Salesforce`                |
+| `catalogExternalReferenceCode` | External reference code used when creating or fetching the catalog; must be `SALESFORCE`         | `SALESFORCE`                |
+| `catalogDefaultCurrency`       | Default currency used for the catalog                                                            | `USD`                       |
+| `catalogDefaultLanguage`       | Default language used for the catalog                                                            | `en_US`                     |
+| `catalogId`                    | ID of the catalog used to store Salesforce data                                                  | Determined during execution |
+| `allowBackOrder`               | Boolean value that determines if a product supports back orders when stock runs out              | `true`                      |
+| `displayAvailability`          | Boolean value that determines if a product displays its availability on the product details page | `false`                     |
+| `productType`                  | Product type used when creating all products                                                     | `simple`                    |
+| `freeShipping`                 | Boolean value that determines if a product supports free shipping or not                         | `false`                     |
+| `shippable`                    | Boolean value that determines if a product is shippable or not                                   | `true`                      |
+| `shippingSeparately`           | Boolean value that determines if a product supports separate shipping or not                     | `true`                      |
+
+### Sample Configuration for the Products Job
+
+```bash
+```
 
 ### Price List Reference
 
-| Context Parameter | Description | Default Value |
-| :---------------- | :---------- | :------------ |
-| `catalogId`       |             |               |
-| `currencyCode`    |             |               |
-| `neverExpire`     |             |               |
-| `priority`        |             |               |
-| `hasTierPrice`    |             |               |
-| `standardPrice`   |             |               |
+| Context Parameter | Description                                                                              | Default Value |
+| :---------------- | :--------------------------------------------------------------------------------------- | :------------ |
+| `catalogId`       | ID of the catalog to associate the price list with                                       | `0`           |
+| `currencyCode`    | Default currency code used for the price list                                            | `USD`         |
+| `neverExpire`     | Boolean to determine if the price list expires or not                                    | `true`        |
+| `priority`        | Determines the priority of the price list when there are multiple applicable price lists | `0`           |
+| `hasTierPrice`    | Boolean to determine if the price list contains tiered prices                            | `false`       |
+| `standardPrice`   | Boolean to determine if the price list contains standard prices                          | `false`       |
+
+### Sample Configuration for the Price List Job
+
+```bash
+```
 
 ### Accounts Reference
 
 | Context Parameter     | Description                                                                                                                                              | Default Value |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ |
-| `accountType`         | The account type used when creating all accounts: 1 (personal) or 2 (business)                                                                           |               |
+| `accountType`         | The account type used when creating all accounts: 1 (personal) or 2 (business)                                                                           | `2`           |
 | `countryMapping_null` | The country mapping used for Account addresses, must use the following syntax `countryMapping_NAME=COUNTRY_ISO_CODE` (e.g., `countryMapping_Croatia=HR`) |               |
 | `regionMapping_null`  | The region mapping used for Account addresses; must use the following syntax `regionMapping_NAME=REGION_ISO_CODE` (e.g., `regionMapping_Milan=MI`)       |               |
 
+### Sample Configuration for the Accounts Job
+
+```bash
+```
+
 ### Orders Reference
 
-| Context Parameter            | Description | Default Value |
-| :--------------------------- | :---------- | :------------ |
-| `channelId`                  |             |               |
-| `defaultCurrency`            |             |               |
-| `statusMapping_Activated`    |             |               |
-| `paymentStatusMapping_Payed` |             |               |
+| Context Parameter            | Description                           | Default Value                                                                                                                                                        |
+| :--------------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `channelId`                  | ID of the channel to import orders to | Copy the channel ID from the UI. Open the *Global Menu* and go to *Commerce* &rarr; *Channels*. Select the desired channel and copy the ID present next to the name. |
+| `defaultCurrency`            | Default currency used for the order   | `USD`                                                                                                                                                                |
+| `statusMapping_Activated`    |                                       | `5`                                                                                                                                                                  |
+| `paymentStatusMapping_Payed` |                                       | `2`                                                                                                                                                                  |
+
+### Sample Configuration for the Orders Job
+
+```bash
+```
 
 ## Running Each Talend Dispatch Task
 

@@ -4,9 +4,9 @@
 
 The Content Dashboard user interface has three main sections:
 
-* [Content Audit Tool](#content-audit-tool) (1)
-* [Contents List](#contents-list) (2)
-* [Content Info Sidebar](#content-info-sidebar) (3)
+1. [Content Audit Tool](#content-audit-tool)
+1. [Contents List](#contents-list)
+1. [Content Info Sidebar](#content-info-sidebar)
 
 ![The Content Dashboard user interface has three main sections.](./content-dashboard-interface/images/01.png)
 
@@ -26,15 +26,15 @@ The content audit tool displays assets from the [contents list](#contents-list) 
 If the chart does not display the expected information, [verify your categories](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) for the selected vocabularies and ensure that [your content is categorized](../tags-and-categories/organizing-content-with-categories-and-tags.md).
 ```
 
-The content audit tool includes these UI elements:
+The content audit tool includes four UI elements:
 
-* The chart legend (1)
+1. The chart legend 
 
-* X-axis categories for the first vocabulary (2)
+1. X-axis categories for the first vocabulary 
 
-* Y-axis categories for the second vocabulary (3)
+1. Y-axis categories for the second vocabulary 
 
-* The bar chart (4)
+1. The bar chart
 
 ![The content audit tool includes these UI elements.](./content-dashboard-interface/images/03.png)
 
@@ -64,31 +64,31 @@ Click the *Flip Axes* button ( ![Flip Axes](../../images/icon-change.png) ) to q
 
 By default, the contents list displays all content you can access across your sites and asset libraries. From here, you can sort and filter this content using built-in or custom filters. The content audit tool chart changes dynamically based on the filters that you set.
 
-The contents list includes these UI elements:
+The contents list includes four UI elements:
 
-* Filter and Sort selector (1)
+1. Filter and Sort selector 
 
-* Filter editor (2)
+1. Filter editor 
 
-* Search field (3)
+1. Search field 
 
-* List of contents (4)
+1. List of contents 
 
 ![The contents list contains several elements to help you find content.](./content-dashboard-interface/images/05.png)
 
-In the list of contents, you can find the following columns:
+In the list of contents are the following columns:
 
 | Column                | Description                                                                                                                             |
 |:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| Title                 | Displays the content's title.                                                                                                           |
-| Author                | Identifies the content's author.                                                                                                        |
-| Type                  | Indicates the content type: web content article, document {bdg-secondary}`7.4+`, or blogs entry {bdg-secondary}`7.4 U23+/GA23+`         |
-| Subtype               | Indicates the sub content [subtype](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). |
-| Site or Asset Library | Indicates the location of the content item in the Liferay instance.                                                                     |
-| Status                | Displays the workflow statuses for each content item.                                                                                   |
-| Vocabulary (x-axis)   | Lists the categories applied to the content item from the content audit tool's [x-axis vocabulary](#content-audit-tool).                |
-| Vocabulary (y-axis)   | Lists the categories applied to the content item from the content audit tool's [y-axis vocabulary](#content-audit-tool).                |
-| Modified Date         | Displays when the content item was last modified.                                                                                       |
+| Title                 | The content's title.                                                                                                           |
+| Author                | The content's author.                                                                                                        |
+| Type                  | The content type: web content article, document {bdg-secondary}`7.4+`, or blogs entry {bdg-secondary}`7.4 U23+/GA23+`         |
+| Subtype               | The content [subtype](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). |
+| Site or Asset Library | The location of the content item in the Liferay instance.                                                                     |
+| Status                | The workflow statuses for each content item.                                                                                   |
+| Vocabulary (x-axis)   | The categories applied to the content item from the content audit tool's [x-axis vocabulary](#content-audit-tool).                |
+| Vocabulary (y-axis)   | The categories applied to the content item from the content audit tool's [y-axis vocabulary](#content-audit-tool).                |
+| Modified Date         | The content's last modified date                                                                                        |
 
 The content list uses the *Page* icon ( ![Page Icon](../../images/icon-page.png) ) to identify assets that have a [display page template](../../site-building/displaying-content/using-display-page-templates.md).
 
@@ -106,9 +106,9 @@ You can hover over content in the list to access these actions:
 
 ### Filtering and Sorting Content in the Contents List
 
-To filter content, you can click the *Filter and Order* drop-down menu and select a [pre-defined filter](#filter-options-reference). Here you can also sort content by title or modified date.
+From the *Filter and Order* drop-down menu, select a [pre-defined filter](#filter-options-reference). You can also sort content by title or modified date.
 
-Additionally, you can use the search bar to filter content by keyword, or click a bar in the [content audit](#content-audit-tool) chart to filter content by the selected category.
+You can use the search bar to filter content by keyword or click a bar in the [content audit](#content-audit-tool) chart to filter content by the selected category.
 
 ![Use the filter editor to remove a specific filter or all of them from the filter area.](./content-dashboard-interface/images/07.png)
 

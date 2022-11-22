@@ -1,6 +1,6 @@
 # Exporting Assets List To a Spreadsheet
 
-The *Content Dashboard* can export a spreadsheet (`.xls` file) of content related metadata for further analysis.
+The Content Dashboard can export a spreadsheet (`.xls` file) of content related metadata for further analysis.
 
 To export the asset list to a spreadsheet follow these steps:
 
@@ -10,21 +10,21 @@ To export the asset list to a spreadsheet follow these steps:
 
 ![Click the Export XLS button to begin the export process.](./exporting-the-assets-list-to-a-spreadsheet/images/01.png)
 
-While generating the file, the *Export XLS* button will show a loading state with a button to cancel the export process. If you click on *Cancel Export*, the export process stops and shows a message: *XLS generation was cancelled*.
+While generating the file, *Export XLS* is replaced with a status and a cancel button for the export process. If you click *Cancel Export*, the export process stops and shows a message: *XLS generation was canceled*.
 
-When the export process is complete, the *Export XLS* button shows the message: *XLS Generated*.
+When the export process is complete, the status shows the message: *XLS Generated*.
 
 ![Once the export process begins, it can be cancelled by clicking Cancel Export.](./exporting-the-assets-list-to-a-spreadsheet/images/02.png)
 
 ```{note}
-Navigating away from the page while the `.xls` file is being generated will stop the export process. The system prompts the user before leaving the page.
+Navigating away from the page while the `.xls` file is being generated stops the export process. The system prompts the user before leaving the page.
 
 ![A prompt appears to confirm navigating away from the page while an export is being processed.](./exporting-the-assets-list-to-a-spreadsheet/images/03.png)
 ```
 
 ## XLS File Content
 
-All metadata is exported from contents and documents, so the `.xls` file will contain the following columns:
+All metadata is exported from contents and documents, so the `.xls` file contains the following columns:
 
 * Title
 * Author
@@ -44,5 +44,5 @@ All metadata is exported from contents and documents, so the `.xls` file will co
 * Languages Translated Into
 
 ```{note}
-The available metadata present in the `.xls` file differs between content types. For example, an image will not display anything for *Languages Translated Into*, as an image cannot be translated.
+The available metadata present in the `.xls` file affects content types. For example, an image will not display anything for *Languages Translated Into*, as an image cannot be translated.
 ```

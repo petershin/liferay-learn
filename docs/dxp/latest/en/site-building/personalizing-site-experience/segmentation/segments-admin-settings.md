@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
-You can configure *Segments* behavior at the system or instance level. With these settings, you can enable/disable segmentation, set the interval for syncing Analytics Cloud segments with Liferay DXP, create session-based segment properties, and more.
+You can configure Segments behavior at the system or instance level. With these settings, you can enable/disable segmentation, set the interval for syncing Analytics Cloud segments with Liferay DXP, create session-based segment properties, and more.
 
 To access segment settings,
 
@@ -28,11 +28,11 @@ You can access these settings under *Analytics Cloud Segments*:
 
 **Interest Terms Cache Expiration Time**: Set a time limit (in seconds) for how long the interest terms cache is stored. When the time expires, the cache is cleared. See [Understanding Interests](https://learn.liferay.com/analytics-cloud/latest/en/workspace-data/definitions/managing-interest-topics.html#understanding-interests) for more information.
 
-**Update Interval**: Set the interval (in minutes) for receiving updates from Analytics Cloud segments. This setting is only available under system settings.
+**Update Interval**: Set the interval (in minutes) for receiving updates from Analytics Cloud segments. This setting appears only under system settings.
 
 ## Session Property Vocabularies
 
-With *Session Property Vocabularies*, you can create [session-based Segment properties](../../../site-building/personalizing-site-experience/segmentation/segments-editor-ui-reference.md#session-properties) using predefined values. This option is useful when you want the user to select them from a list of predefined values. This fulfills the task of defining segments and eliminates manual entry errors. See [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md) for more information.
+With *Session Property Vocabularies*, you can create [session-based Segment properties](../../../site-building/personalizing-site-experience/segmentation/segments-editor-ui-reference.md#session-properties) using predefined values. This helps when you want users to select properties from a list of predefined values, because it defines segments while eliminating manual entry errors. See [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md) for more information.
 
 ## Segments Service
 
@@ -42,12 +42,12 @@ You can access these settings under *Segments Service*:
 
 **Enable Segmentation**: Enable or disable segmentation. While disabled, Liferay does not display personalized variations of collections and experiences to end users.
 
-**Enable Assign Roles by Segment**: Enable or disable the ability to assign roles to users dynamically using global segments. While enabled, you can assign roles automatically to groups of changing individuals. See [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md) for more information.
+**Enable Assign Roles by Segment**: Enable or disable assigning roles to users dynamically using global segments. While enabled, you can assign roles automatically to groups of changing individuals. See [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md) for more information.
 
-**Compound Segments Interval**: Set the interval (in minutes) for checking and refreshing compound segments based on its rules. This setting is only available under system settings.
+**Compound Segments Interval**: Set the interval (in minutes) for checking and refreshing compound segments based on their rules. This setting appears only under system settings.
 
 ```{note}
-If you disable settings at the system level, you cannot enable them at the instance level. However, if you enable settings at the system level, you can still disable them at the instance level. See [Understanding Configuration Scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md) for more information.
+Please be aware of [Configuration Scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md). Settings disabled at the system level cannot be enabled at the instance level, but settings enabled at the system level can be disabled at the instance level.
 ```
 
 ## Additional Information

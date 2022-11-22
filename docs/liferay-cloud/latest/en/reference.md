@@ -4,6 +4,7 @@ toc:
 - ./reference/configuration-via-lcp-json.md
 - ./reference/understanding-service-stack-versions.md
 - ./reference/upgrading-your-liferay-cloud-stack.md
+- ./reference/liferay-cloud-version-5-changes.md
 - ./reference/liferay-cloud-project-changes-in-version-4.md
 - ./reference/upgrading-to-a-high-availability-subscription.md
 - ./reference/command-line-tool.md
@@ -20,6 +21,7 @@ reference/liferay-cloud-infrastructure.md
 reference/configuration-via-lcp-json.md
 reference/understanding-service-stack-versions.md
 reference/upgrading-your-liferay-cloud-stack.md
+reference/liferay-cloud-version-5-changes.md
 reference/liferay-cloud-project-changes-in-version-4.md
 reference/upgrading-to-a-high-availability-subscription.md
 reference/command-line-tool.md
@@ -32,6 +34,7 @@ reference/example-configuration-files.md
 - [Configuration via LCP.json](./reference/configuration-via-lcp-json.md)
 - [Understanding Service Stack Versions](./reference/understanding-service-stack-versions.md)
 - [Upgrading Your Liferay Cloud Stack](./reference/upgrading-your-liferay-cloud-stack.md)
+- [Liferay Cloud Version 5 Changes](./reference/liferay-cloud-version-5-changes.md)
 - [Liferay Cloud Project Changes in Version 4](./reference/liferay-cloud-project-changes-in-version-4.md)
 - [Upgrading to a High Availability Subscription](./reference/upgrading-to-a-high-availability-subscription.md)
 - [Command-Line Tool](./reference/command-line-tool.md)

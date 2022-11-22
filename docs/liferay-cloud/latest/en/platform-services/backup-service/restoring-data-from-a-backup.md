@@ -4,6 +4,8 @@ During project development, there may be times when you need to restore data or 
 
 You can also use custom SQL scripts to perform additional updates to a database as part of the data restore.
 
+Restoring data from a backup causes some downtime for the database service, and any other service that depends on it (including the Liferay service). However, if your backup service is at least version `5.x.x`, you can change the restore behavior so that a separate, fresh database instance and volume start up *first*, and then switching to the new instance once they're ready. This minimizes the necessary downtime for your instance. Set the [`LCP_BACKUP_RESTORE_STRATEGY` environment variable](./backup-service-overview.md#environment-variables-reference)'s value to `PREPARE_AND_SWAP` to use this strategy.
+
 See [Backup Service](./backup-service-overview.md) and [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) for more information about the Backups page.
 
 ```{important}

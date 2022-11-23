@@ -23,7 +23,11 @@ Having a dedicated load balancer provides a myriad of enhanced features, such as
 
 ## CDN
 
-Liferay's Content Delivery Network (CDN) is a built-in feature provided with Liferay Cloud. This CDN caches your static content globally, greatly enhancing your delivery speed. By default, it's enabled in all environments except `dev` environments. You can enable or disable the CDN for a service (in its `LCP.json` file) by setting the value of `cdn` within the `loadbalancer` object:
+Liferay's Content Delivery Network (CDN) is a built-in feature provided with Liferay Cloud that acts as a proxy between the client and origin servers. The CDN caches and serves cacheable content from points-of-presence (POPs) closer to users, instead of sending them to backend servers (instances).
+
+In the event of a DDoS attack for cacheable content, the requests are sent to POPs all over the globe instead of the origin servers, thereby providing a larger set of locations to absorb the attack. This caching of your global, static content also greatly enhances your delivery speed.
+
+By default, the CDN is enabled in all environments except `dev` environments. You can enable or disable the CDN for a service (in its `LCP.json` file) by setting the value of `cdn` within the `loadbalancer` object:
 
 ```json
 {

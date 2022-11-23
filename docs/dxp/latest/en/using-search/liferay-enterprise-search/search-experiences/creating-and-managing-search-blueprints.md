@@ -56,7 +56,7 @@ Add Elements to begin adding query clauses to the Blueprint:
 
 1. The Element is added to the Query Builder, ready to configure:
 
-   ![This Element gives a boost of ten to content found on sites the searching user is a member of.](./creating-and-managing-search-blueprints/images/05.png)
+   ![This Element gives a boost of 10 to content found on sites the searching user is a member of.](./creating-and-managing-search-blueprints/images/05.png)
 
 1. Add as many Elements as needed to configure the search query as desired.
 
@@ -196,7 +196,7 @@ There's more functionality in this screen than first meets the eye:
 
    ![Inspect the document's fields.](./creating-and-managing-search-blueprints/images/13.png)
 
-[Some Elements](./search-blueprints-elements-reference.md) read search context attributes that you can provide or override manually. To test Blueprints with these Elements, add search context attributes to the Blueprint preview search by clicking the gear icon (![Gear](../../../images/icon-cog3.png)). Enter the key/value pair for the attribute, then click _Done_. Just keep in mind this attribute is only set for the Blueprint preview and isn't saved with the Blueprint itself. You can configure these attributes on a Search Page. See [Using a Search Blueprint on a Search Page](./using-a-search-blueprint-on-a-search-page.md) for more information.
+[Some elements](./search-blueprints-elements-reference.md) read search context attributes that you can provide or override manually. To test Blueprints with these elements, add search context attributes to the Blueprint preview search by clicking the gear icon (![Gear](../../../images/icon-cog3.png)). Enter the key/value pair for the attribute, then click _Done_. Just keep in mind this attribute is only set for the Blueprint preview and isn't saved with the Blueprint itself. You can configure these attributes on a Search Page. See [Using a Search Blueprint on a Search Page](./using-a-search-blueprint-on-a-search-page.md) for more information.
 
 For example,
 

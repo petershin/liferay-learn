@@ -1,6 +1,6 @@
-# Securing an Application with OAuth2
+# Using OAuth2 to Authorize Users
 
-You can create applications that access Liferay's headless REST APIs using the OAuth 2.0 authorization protocol. The provided sample React app demonstrates three different OAuth2 token-based authentication flows: authorization code flow, client credentials flow, and password flow. For more details on the OAUth2 Administration panel see [Creating an OAuth2 Application](./creating-oauth2-applications.md)
+You can create applications that access Liferay's headless REST APIs using the OAuth 2.0 authorization protocol. The provided sample React app demonstrates three different OAuth2 token-based authentication flows: authorization code flow, client credentials flow, and password flow. For more details on the OAuth2 Administration panel see [Creating an OAuth2 Application](./creating-oauth2-applications.md)
 
 ## Set Up Liferay DXP
 
@@ -9,7 +9,7 @@ You can create applications that access Liferay's headless REST APIs using the O
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Security* &rarr; *OAuth 2 Administration*.
 
-1. Click the *Add Icon* (![Add Icon](../../images/icon-add.png)) to create a new OAuth2 application. 
+1. Click *Add* (![Add Icon](../../images/icon-add.png)) to create a new OAuth2 application. 
 
 1. Give the application a name (e.g., foo). Set the Website URL as `http://localhost:3000` and the Callback URI as `http://localhost:3000/grant-type-authorization-code`. Click *Save*.
 
@@ -19,7 +19,7 @@ You can create applications that access Liferay's headless REST APIs using the O
 
    These values are needed later in the sample React app. 
 
-1. Click on the _Scopes_ tab at the top of the page. Scroll down, click _LIFERAY.HEADLESS.ADMIN.USER_, then check the box for _read data on your behalf_. 
+1. Click the _Scopes_ tab at the top of the page. Scroll down, click _LIFERAY.HEADLESS.ADMIN.USER_, then check the box for _read data on your behalf_. 
 
    ![Enable read privileges for LIFERAY.HEADLESS.ADMIN.USER.](./securing-your-app-with-oauth2/images/02.png)
 
@@ -81,27 +81,27 @@ The authorization code flow requires users to log in with their credentials and 
 
 ### Client Credentials Flow
 
-The client credentials flow is typically used for server to server interaction and does not involve any users.
+The client credentials flow is used typically for server to server interaction and does not involve any users.
 
 1. Open the React app running at <http://localhost:3000>, then click *Client Credentials Flow* at the top of the page. 
 
 1. Click *Get Token*. The application makes a request to Liferay for an access token.
 
-1. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns list of Liferay users.
+1. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
 
 ### Password Flow
 
 In the password flow authorization, the React app passes the username and password directly in the request.
 
 ```{warning}
-In a password flow, the username and password are directly exposed to the application. Thus the user must trust the application. Passing the username and password in the API request also carries risk. Using password flow is typically not recommended.
+In a password flow, the username and password are directly exposed to the application. Thus the user must trust the application. Passing the username and password in the API request also carries risk. Using password flow is not recommended.
 ```
 
 1. Open the React app running at <http://localhost:3000>, then click *Password Flow* at the top of the page. 
 
 1. Click *Get Token*. The application makes a request to Liferay for an access token.
 
-1. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns list of Liferay users.
+1. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
 
 ## Examine the Code
 
@@ -138,9 +138,9 @@ src
 └── index.js
 ```
 
-### grant-type-authorization-code
+### Authorization Grant Type
 
-In the authorization code flow, the first step is handled by the `Authorize.js` file. A request for authorization is made when the *Authorize* button is clicked.
+In `grant-type-authorization-code`, the first step is handled by the `Authorize.js` file. A request for authorization is made when the *Authorize* button is clicked.
 
 ```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/components/Authorize.js
 :language: javascript
@@ -187,9 +187,9 @@ Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js`
 
 The access token is passed in the header of the API request as an `'Authorization': 'Bearer'` type authorization.
 
-### grant-type-client-credentials
+### Client Credentials Grant Type
 
-In the client credentials flow, the `Request.js` file's `getAuthToken` function is called when the *Get Token* button is clicked.
+In `grant-type-client-credentials`, the `Request.js` file's `getAuthToken` function is called when the *Get Token* button is clicked.
 
 ```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-client-credentials/utils/Requests.js
 :language: javascript
@@ -209,9 +209,9 @@ Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js`
 
 The access token is passed along in the header of the API request as an `'Authorization': 'Bearer'` type authorization.
 
-### grant-type-password
+### Password Grant Type
 
-In the password flow, the `Request.js` file's `getAuthToken` function is called when the *Get Token* button is clicked.
+In `grant-type-password`, the `Request.js` file's `getAuthToken` function is called when the *Get Token* button is clicked.
 
 ```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-password/utils/Requests.js
 :language: javascript

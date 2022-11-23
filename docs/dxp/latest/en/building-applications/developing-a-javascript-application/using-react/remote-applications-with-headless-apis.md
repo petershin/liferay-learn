@@ -123,7 +123,7 @@ The `Requests.js` file uses JavaScript's built-in `fetch()` method.
 ```
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth 2.0](../../../headless-delivery/using-oauth2.md). See [Securing Your App with OAuth2](../../../headless-delivery/using-oauth2/securing-your-app-with-oauth2.md) for a sample React application that uses Oauth2.
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth 2.0](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 ```
 
 ### Implement Forms

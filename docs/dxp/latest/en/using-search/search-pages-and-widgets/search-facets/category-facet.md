@@ -81,7 +81,7 @@ To configure the use case above,
 1. Name the site Foo and click _Add_.
 1. Go to the Global site's menu &rarr; Categorization &rarr; Categories. Add a vocabulary named Quality and create two categories: Premium and Standard.
 
-   ```{importan}
+   ```{important}
    You must create a global category in the Global site, rather than a site category in the Foo site.
    ```
 

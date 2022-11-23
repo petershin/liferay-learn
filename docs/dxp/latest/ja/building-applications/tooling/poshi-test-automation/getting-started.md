@@ -7,8 +7,9 @@ toc:
 - ./getting-started/syntax-validation.md
 - ./getting-started/running-a-test.md
 - ./getting-started/understanding-test-results-and-debugging-tests.md
-html_meta:
-  "documentation-type": "user-guide"
+myst:
+  html_meta:
+    "documentation-type": "user-guide"
 ---
 
 # はじめに

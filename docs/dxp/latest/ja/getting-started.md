@@ -7,8 +7,9 @@ toc:
 - ./getting-started/creating-your-first-site.md
 - ./getting-started/changing-your-sites-appearance.md
 - ./getting-started/whats-new-73.md
-html_meta:
-  "documentation-type": "user-guide"
+myst:
+  html_meta:
+    "documentation-type": "user-guide"
 ---
 
 # はじめに

@@ -6,17 +6,17 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-docutils = "==0.16"
-jinja2 = "==2.11.3"
-myst-parser = "~=0.16.1"
+docutils = "==0.19"
+jinja2 = "==3.1.2"
+myst-parser = "~=0.18.1"
 nodeenv = "*"
 sphinxext-opengraph = "*"
-sphinx = "==4.4.0"
+sphinx = "==5.2.3"
 sphinx-copybutton = "*"
-sphinx-design = "~=0.0.13"
+sphinx-design = "==0.3.0"
 sphinx-intl = "*"
 sphinx-notfound-page = "*"
-sphinx-sitemap = "~=2.2.0"
+sphinx-sitemap = "~=2.2.1"
 wheel = "*"
 
 [requires]

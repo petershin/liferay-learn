@@ -24,6 +24,7 @@ html_title = "Liferay Learn"
 language = "en"
 locale_dirs = ["_locale"]
 master_doc = "contents"
+myst_all_links_external = True
 notfound_no_urls_prefix = True
 notfound_template = "404.html"
 ogp_image = "https://learn.liferay.com/_static/liferay-waffle.svg"

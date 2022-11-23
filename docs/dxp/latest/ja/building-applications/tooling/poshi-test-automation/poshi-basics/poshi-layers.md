@@ -5,8 +5,9 @@ toc:
 - ./poshi-layers/macros.md
 - ./poshi-layers/testcases.md
 - ./poshi-layers/variables.md
-html_meta:
-  "documentation-type": "user-guide"
+myst:
+  html_meta:
+    "documentation-type": "user-guide"
 ---
 # Poshiレイヤー
 

@@ -105,7 +105,7 @@ Each task includes the following fields for entering Liferay and Salesforce cred
 | `neverExpire`     | Boolean to determine if the price list expires or not                                    | `true`        |
 | `priority`        | Determines the priority of the price list when there are multiple applicable price lists | `0`           |
 | `hasTierPrice`    | Boolean to determine if the price list contains tiered prices                            | `false`       |
-| `standardPrice`   | Boolean to determine if the price list contains standard prices                          | `false`       |
+| `standardPrice`   | Boolean to determine if the price entry contains standard prices                         | `false`       |
 
 ### Sample Configuration for the Price List Job
 
@@ -117,8 +117,8 @@ Each task includes the following fields for entering Liferay and Salesforce cred
 | Context Parameter     | Description                                                                                                                                              | Default Value |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ |
 | `accountType`         | The account type used when creating all accounts: 1 (personal) or 2 (business)                                                                           | `2`           |
-| `countryMapping_null` | The country mapping used for Account addresses, must use the following syntax `countryMapping_NAME=COUNTRY_ISO_CODE` (e.g., `countryMapping_Croatia=HR`) |               |
-| `regionMapping_null`  | The region mapping used for Account addresses; must use the following syntax `regionMapping_NAME=REGION_ISO_CODE` (e.g., `regionMapping_Milan=MI`)       |               |
+| `countryMapping_null` | The country mapping used for account addresses, must use the following syntax `countryMapping_NAME=COUNTRY_ISO_CODE` (e.g., `countryMapping_Croatia=HR`) |               |
+| `regionMapping_null`  | The region mapping used for account addresses; must use the following syntax `regionMapping_NAME=REGION_ISO_CODE` (e.g., `regionMapping_Milan=MI`)       |               |
 
 ### Sample Configuration for the Accounts Job
 
@@ -127,12 +127,12 @@ Each task includes the following fields for entering Liferay and Salesforce cred
 
 ### Orders Reference
 
-| Context Parameter            | Description                           | Default Value                                                                                                                                                        |
-| :--------------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `channelId`                  | ID of the channel to import orders to | Copy the channel ID from the UI. Open the *Global Menu* and go to *Commerce* &rarr; *Channels*. Select the desired channel and copy the ID present next to the name. |
-| `defaultCurrency`            | Default currency used for the order   | `USD`                                                                                                                                                                |
-| `statusMapping_Activated`    |                                       | `5`                                                                                                                                                                  |
-| `paymentStatusMapping_Payed` |                                       | `2`                                                                                                                                                                  |
+| Context Parameter            | Description                                                                                                                | Default Value                                                                                                                                                        |
+| :--------------------------- | :------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `channelId`                  | ID of the channel to import orders to                                                                                      | Copy the channel ID from the UI. Open the *Global Menu* and go to *Commerce* &rarr; *Channels*. Select the desired channel and copy the ID present next to the name. |
+| `defaultCurrency`            | Default currency used for the order                                                                                        | `USD`                                                                                                                                                                |
+| `statusMapping_Activated`    | The status mapping used for order statuses, must use the following syntax `statusMapping_Status=StatusCode`                |                                                                                                                                                                      |
+| `paymentStatusMapping_Payed` | The status mapping used for order payment statuses, must use the following syntax `paymentStatusMapping_Status=StatusCode` |                                                                                                                                                                      |
 
 ### Sample Configuration for the Orders Job
 

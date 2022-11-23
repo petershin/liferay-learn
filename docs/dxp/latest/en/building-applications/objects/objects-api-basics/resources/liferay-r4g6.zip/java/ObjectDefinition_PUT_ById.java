@@ -28,7 +28,6 @@ public class ObjectDefinition_PUT_ById {
 						name = "Goo";
 						objectFields = new ObjectField[] {
 							new ObjectField() {
-
 							}
 						};
 						pluralLabel = Collections.singletonMap("en_US", "Goos");

@@ -1,10 +1,21 @@
 # Liferay Cloud Version 5 Changes
 
-Liferay Cloud version 5.x.x comes with several changes and new features. Find out about the major changes here:
+Liferay Cloud version 5 comes with several changes and new features. Find out about the major changes here:
 
+* [ModSecurity Capabilities with Nginx](#modsecurity-capabilities-with-nginx)
+* [Improved Regional Persistence](#improved-regional-persistence)
 * [Prepare and Swap Backup Restore Strategy](#prepare-and-swap-backup-restore-strategy)
 * [Backup Upload Retry Configuration](#backup-upload-retry-configuration)
-* [ModSecurity Capabilities with Nginx](#modsecurity-capabilities-with-nginx)
+
+## ModSecurity Capabilities with Nginx
+
+ModSecurity is a Web Application Firewall available in Liferay Cloud with Web server version 5.x.x. It inspects requests sent to the web server in real time, against a predefined set of custom rules. This step prevents typical web application L7 attacks, like XSS and SQL injection.
+
+See [Enabling ModSecurity](../infrastructure-and-operations/security/web-application-firewall.md) for more information.
+
+## Improved Regional Persistence
+
+Liferay Cloud's database and backup services have improved reliability with version 5.x.x. When you perform the upgrade, your services are automatically updated to benefit from improved regional persistence. This upgrade improves their performance for workloads and minimizes failover latency.
 
 ## Prepare and Swap Backup Restore Strategy
 
@@ -15,9 +26,3 @@ Set the [`LCP_BACKUP_RESTORE_STRATEGY` environment variable](../platform-service
 ## Backup Upload Retry Configuration
 
 With version 5.x.x, you can fine-tune the number of retries and the delays between them for your backup uploads. See the `LCP_GCP_STORAGE_UPLOAD_*` [Backup service environemnt variables](../platform-services/backup-service/backup-service-overview.md#environment-variables-reference) for more information.
-
-## ModSecurity Capabilities with Nginx
-
-ModSecurity is a Web Application Firewall available in Liferay Cloud with Web server version 5.x.x. It inspects requests sent to the web server in real time, against a predefined set of custom rules. This step prevents typical web application L7 attacks, like XSS and SQL injection.
-
-See [Enabling ModSecurity](../infrastructure-and-operations/security/web-application-firewall.md) for more information.

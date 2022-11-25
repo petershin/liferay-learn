@@ -142,7 +142,7 @@ If you've purchased Commerce through a Liferay Cloud contract, then the Liferay 
 
 Verify your key has successfully deployed via the console:
 
-   ```
+   ```bash
    INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:271] Processing activation-key-commercesubscriptiondevelopment-1-developeractivationkeys.xml
    ...
    INFO  [fileinstall-directory-watcher][LicenseManager:?] Commerce Subscription Development license validation passed
@@ -157,7 +157,7 @@ If a license expires, the Commerce modules remain activated, though it is no lon
 
 The console also displays an error message during server restart:
 
-   ```
+   ```bash
    ERROR [main][LicenseManager:?] Liferay Commerce license is expired
    ```
 

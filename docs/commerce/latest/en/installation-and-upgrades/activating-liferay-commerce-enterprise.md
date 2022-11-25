@@ -46,13 +46,13 @@ LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=false
 
 See [Configuring Containers](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties) for more information.
 
-If successful, the Commerce modules no longer appear in the Global Menu (![Global Menu](../images/icon-applications-menu.png)).
+If successful, the Commerce modules no longer appear in the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)).
 
 ## Activating Liferay Commerce Enterprise for Liferay DXP 7.3 FP3/SP3+
 
 {bdg-primary}`Liferay DXP and Commerce Subscriptions Required`
 
-For DXP 7.3 FP3/SP2+, activate Commerce by setting the `enterprise.product.commerce.enabled` portal property to `true`. 
+For DXP 7.3 FP3/SP2+, activate Commerce by setting the `enterprise.product.commerce.enabled` portal property to `true`.
 
 ### Activating Commerce for Liferay Bundles
 
@@ -84,7 +84,7 @@ LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=true
 
 ### Verifying Successful Activation
 
-To verify the property has been added successfully, open Liferay DXP and click on the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)). If successful, you can view and access Commerce modules in the *Commerce* tab. Alternatively, you can open the *Global Menu*, and go to *Control Panel* &rarr; *Server Administration* &rarr; *Properties* &rarr; *Portal Properties*. The new property should be listed along with other properties.
+To verify the property has been added successfully, start your Liferay DXP instance and open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)). If successful, you can view and access Commerce modules in the *Commerce* tab. Alternatively, you can open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and go to *Control Panel* &rarr; *Server Administration* &rarr; *Properties* &rarr; *Portal Properties*. The new property should be listed along with other properties.
 
 ## Activating Liferay Commerce Enterprise for Liferay DXP 7.1-7.3 FP2
 

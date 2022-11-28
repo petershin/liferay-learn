@@ -16,22 +16,22 @@ notifications/using-the-notification-queue.md
 
 Liferay provides integrated notification tools, so you can ensure users are alerted to platform events. For Liferay DXP, this includes email, website, and mobile notifications for the following default applications:
 
-| Application | Email | Website | Mobile |
-| --- | --- | --- | --- |
-| Blogs | &#10004; | &#10004; |  |
-| Comments | &#10004; | &#10004; |  |
-| Contact Center |  | &#10004; |  |
-| Documents and Media | &#10004; | &#10004; |  |
-| Import/Export Center |  | &#10004; |  |
-| Invite Members |  | &#10004; |  |
-| Mentions | &#10004; | &#10004; |  |
-| Message Boards | &#10004; | &#10004; |  |
-| My Workflow Tasks | &#10004; | &#10004; | &#10004; |
-| Publications |  | &#10004; |  |
-| Segments Experiment | &#10004; | &#10004; |  |
-| Sharing | &#10004; | &#10004; |  |
-| Web Content | &#10004; | &#10004; |  |
-| Wiki | &#10004; | &#10004; |  |
+| Application | Email | Website |
+| :--- | :--- | :--- |
+| Blogs | &#10004; | &#10004; |
+| Comments | &#10004; | &#10004; |
+| Contact Center |  | &#10004; |
+| Documents and Media | &#10004; | &#10004; |
+| Import/Export Center |  | &#10004; |
+| Invite Members |  | &#10004; |
+| Mentions | &#10004; | &#10004; |
+| Message Boards | &#10004; | &#10004; |
+| My Workflow Tasks | &#10004; | &#10004; |
+| Publications |  | &#10004; |
+| Segments Experiment | &#10004; | &#10004; |
+| Sharing | &#10004; | &#10004; |
+| Web Content | &#10004; | &#10004; |
+| Wiki | &#10004; | &#10004; |
 
 To use email notifications, you must [configure a mail server](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) for your instance. Once configured, you can access additional [email notification settings](../system-administration/configuring-liferay/virtual-instances/email-settings.md) at the instance level. Beginning with Liferay 7.4 U33+/GA33+, you can also create [notification templates](./notifications/creating-notification-templates.md) to design and dynamically populate email notifications for Objects. See [Notification Actions](../building-applications/objects/creating-and-managing-objects/defining-object-actions.md#notification-actions) for more information.
 

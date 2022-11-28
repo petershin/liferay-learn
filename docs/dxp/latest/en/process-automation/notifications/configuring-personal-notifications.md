@@ -25,27 +25,27 @@ Customization options include the following application triggers.
 ## Blogs
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Adds a new blog entry you are subscribed to | &#10004; | &#10004; |
 | Updates a blog entry you are subscribed to | &#10004; | &#10004; |
 
 ## Comments
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Adds a comment to comments you are subscribed to | &#10004; | &#10004; |
 | Updates a comment you are subscribed to | &#10004; | &#10004; |
 
 ## Contacts Center
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Sends you a social relationship request |  | &#10004; |
 
 ## Documents and Media
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Adds a new document in a folder you are subscribed to | &#10004; | &#10004; |
 | A document in a folder you are subscribed to has expired | &#10004; | &#10004; |
 | Review a document in a folder you are subscribed to | &#10004; | &#10004; |
@@ -54,57 +54,57 @@ Customization options include the following application triggers.
 ## Import/Export Center
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Import or export job finishes |  | &#10004; |
 
 ## Invite Members
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Sends you a membership request |  | &#10004; |
 
 ## Mentions
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Mentions you in a blogs entry, comment, or message boards message | &#10004; | &#10004; |
 
 ## Message Boards
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Adds a new post in a thread or category you are subscribed to | &#10004; | &#10004; |
 | Updates a post you are subscribed to | &#10004; | &#10004; |
 
 ## My Workflow Tasks
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Interacts with a workflow | &#10004; | &#10004; |
 
 ## Publications
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Invites you to work on a publication |  | &#10004; |
 
 ## Segments Experiment
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | When someone changes the status of your A/B tests | &#10004; | &#10004; |
 
 ## Sharing
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Shares content with you | &#10004; | &#10004; |
 | Modifies your permissions for content shared with you | &#10004; | &#10004; |
 
 ## Web Content
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Adds new web content in a folder you are subscribed to | &#10004; | &#10004; |
 | Moves from folder web content you are subscribed to | &#10004; | &#10004; |
 | Restores from trash web content you are subscribed to | &#10004; | &#10004; |
@@ -115,7 +115,7 @@ Customization options include the following application triggers.
 ## Wiki
 
 | Trigger | Email | Website |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | Adds a new wiki page in a wiki you are subscribed to | &#10004; | &#10004; |
 | Updates a wiki page you are subscribed to | &#10004; | &#10004; |
 

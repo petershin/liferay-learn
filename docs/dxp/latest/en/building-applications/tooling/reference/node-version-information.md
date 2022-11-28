@@ -67,10 +67,10 @@ node {
 
 ## Version Compatibility Matrix
 
-| **Liferay Version** | **Supported Node Version** | **Supported NPM Version** |
-| :---: | :---: | :---: |
-| 7.0 | 6.6.0 | 6.4.1 |
-| 7.1 | 8.15.0 | 6.4.1 |
-| 7.2 | 10.15.3 | 6.4.1 |
-| 7.3 | 10.15.3 | 6.4.1 |
-| 7.4 | 16.13.0 | 8.1.0 |
+| **Liferay Version** | **Node Version** | **NPM Version** | **Theme Generator Version** | **Gulp Version** | **Yeoman Version** |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 7.0 | 6.6.0 | 6.4.1 | 8.x.x | 2.x | 2.x |
+| 7.1 | 8.15.0 | 6.4.1 | 8.x.x | 2.x | 3.x |
+| 7.2 | 10.15.3 | 6.4.1 | 9.x.x & 10.x.x | 3.x | 3.x |
+| 7.3 | 10.15.3 | 6.4.1 | 9.x.x & 10.x.x | 3.x | 3.x |
+| 7.4 | 16.13.0 | 8.1.0 | 10.2.x | 4.x | 4.x |

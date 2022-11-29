@@ -13,15 +13,15 @@ You can create applications that access Liferay's headless REST APIs using the O
 
 1. Give the application a name (e.g., foo). Set the Website URL as `http://localhost:3000` and the Callback URI as `http://localhost:3000/grant-type-authorization-code`. Click *Save*.
 
-   ![Fill out the form to the create a new OAuth2 application.](./securing-your-app-with-oauth2/images/01.png)
+   ![Fill out the form to the create a new OAuth2 application.](./using-oauth2-to-authorize-users/images/01.png)
 
-1. Copy the Client ID and Client Secret to your clipboard. To get the Client Secret click *Edit*. Copy the value from the pop-up window.
+2. Copy the Client ID and Client Secret to your clipboard. To get the Client Secret click *Edit*. Copy the value from the pop-up window.
 
    These values are needed later in the sample React app. 
 
-1. Click the _Scopes_ tab at the top of the page. Scroll down, click _LIFERAY.HEADLESS.ADMIN.USER_, then check the box for _read data on your behalf_. 
+3. Click the _Scopes_ tab at the top of the page. Scroll down, click _LIFERAY.HEADLESS.ADMIN.USER_, then check the box for _read data on your behalf_. 
 
-   ![Enable read privileges for LIFERAY.HEADLESS.ADMIN.USER.](./securing-your-app-with-oauth2/images/02.png)
+   ![Enable read privileges for LIFERAY.HEADLESS.ADMIN.USER.](./using-oauth2-to-authorize-users/images/02.png)
 
    Click *Save*. Your OAuth2 Application now has read privileges for the Admin User API category.
 
@@ -71,7 +71,7 @@ The authorization code flow requires users to log in with their credentials and 
 
 1. Open the React app running at <http://localhost:3000>, then click *Authorization Code Flow* at the top of the page. Click *Authorize*.
 
-   ![In the authorization code flow, click the Authorize button.](./securing-your-app-with-oauth2/images/03.png)
+   ![In the authorization code flow, click the Authorize button.](./using-oauth2-to-authorize-users/images/03.png)
 
 1. If you're not already logged in, you are redirected to the Liferay login page before being sent to the authorization page. Enter your username and password (e.g. *test@liferay.com:learn*) and click *Sign In*. On the authorization page, click *Authorize*. If you are already logged in, you are sent to the authorization page directly.
 

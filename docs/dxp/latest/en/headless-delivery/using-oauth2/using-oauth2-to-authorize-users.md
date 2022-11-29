@@ -15,15 +15,21 @@ You can create applications that access Liferay's headless REST APIs using the O
 
    ![Fill out the form to the create a new OAuth2 application.](./using-oauth2-to-authorize-users/images/01.png)
 
-2. Copy the Client ID and Client Secret to your clipboard. To get the Client Secret click *Edit*. Copy the value from the pop-up window.
+1. Copy the Client ID and Client Secret to your clipboard. To get the Client Secret click *Edit*. Copy the value from the pop-up window.
 
    These values are needed later in the sample React app. 
 
-3. Click the _Scopes_ tab at the top of the page. Scroll down, click _LIFERAY.HEADLESS.ADMIN.USER_, then check the box for _read data on your behalf_. 
+1. Click the _Scopes_ tab at the top of the page. Scroll down, click _LIFERAY.HEADLESS.ADMIN.USER_, then check the box for _read data on your behalf_. 
 
    ![Enable read privileges for LIFERAY.HEADLESS.ADMIN.USER.](./using-oauth2-to-authorize-users/images/02.png)
 
    Click *Save*. Your OAuth2 Application now has read privileges for the Admin User API category.
+
+1. Next, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Security Tools*.
+
+1. Go to the *Portal Cross-Origin Resource Sharing (CORS)* tab and click *Default Portal CORS Configuration*.
+
+1. Add a *URL Pattern* with the value `/o/headless-admin-user/*` and click *Save*. This enables CORS for the `headless-admin-user` category of APIs.
 
 ## Deploy the Sample React App
 

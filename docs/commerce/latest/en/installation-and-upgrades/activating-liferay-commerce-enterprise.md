@@ -3,7 +3,7 @@
 Starting with Liferay DXP/Portal 7.3, Commerce ships with all Liferay bundles and Docker containers and does not require separate installation. However, to access and use the enterprise features of Commerce, the process differs depending on the DXP version you're running. For Liferay DXP 7.4 GA1+, all Commerce modules are enabled by default and ready for use. For DXP 7.3 FP3/SP2+, Commerce is activated using a [portal property](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html), while earlier versions use a Commerce license file. This property doesn't affect Liferay Portal bundles/images since they don't include the enterprise features.
 
 ```{important}
-Starting from Liferay DXP 7.4 U48+/GA48+, you don't need a separate license to use Commerce features. Commerce modules are available out-of-the-box like other Liferay DXP modules. The portal property to disable Commerce modules (`enterprise.product.commerce.enabled`) has also been removed to maintain consistency.
+Starting from Liferay DXP 7.4 U48+/GA48+, you don't need a separate license to use Commerce features. Commerce modules are available out-of-the-box like other Liferay DXP modules. The portal property to disable Commerce modules (`enterprise.product.commerce.enabled`) has also been removed to maintain consistency with other modules.
 ```
 
 ## Disabling Liferay Commerce Enterprise for Liferay DXP 7.4 GA1+

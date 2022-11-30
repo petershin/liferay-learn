@@ -1,6 +1,19 @@
+---
+toc:
+- ./semantic-search/setting-up-a-sentence-tranformer-provider.md
+- ./semantic-search/adding-a-search-blueprint-for-semantic-search.md
+---
+
 # Semantic Search
 {bdg-primary}`Subscription`
 {bdg-secondary}`7.4 U50+`
+
+```{toctree}
+:maxdepth: 1
+
+semantic-search/setting-up-a-sentence-tranformer-provider.md
+semantic-search/adding-a-search-blueprint-for-semantic-search.md
+```
 
 <!-- Questions and comments:
 
@@ -64,136 +77,6 @@ It should be mentioned somewhere that customers can use pretrained models or tra
 This link should give some initial ideas for choosing a pretrained model https://www.sbert.net/docs/pretrained_models.html
 In development I actually used this model: sentence-transformers/msmarco-distilbert-base-dot-prod-v3. Maybe it could be here as an option of a good generic model
 
-### Setting up a Sentence Transformer Provider
-
-A sentence transformer has two jobs:
-
-1. create a text embedding representation of the index document's fields (which are stored in the index).
-1. at search time, create a text embedding representation of the search phrase typed into the search bar.
-
-On top of that, you need a model to perform a [similarity search](https://www.elastic.co/blog/text-similarity-search-with-vectors-in-elasticsearch) of the search phrase embeddings and the document embeddings. Models are housed in Hugging Face even if you use txtai as the transformer.
-
-Choose from one of two sentence transformer providers that can be configured to work with Liferay's search index documents: [txtai](https://neuml.github.io/txtai/) and [Hugging Face](https://huggingface.co/).
-
-#### Configure and Run txtai
-
-<!-- Say something about this setup is intended for testing, point to the txtai docs for more information? -->
-```{note} 
-The txtai configuration here is intended for demonstration. Please read the [txtai documentation](https://neuml.github.io/txtai/) to learn more.
-```
-
-Set up txtai to access its APIs. To run txtai in a docker container, see the [txtai documentation](https://neuml.github.io/txtai/cloud/) or follow these basic steps for Linux:
-
-1. Create a `txtai` directory and `cd` into it.
-
-1. From the `txtai` folder, download the Dockerfile with
-
-   ```sh
-   curl https://raw.githubusercontent.com/neuml/txtai/master/docker/api/Dockerfile -O
-   ```
-
-1. Create a `config.yml` file in the `txtai` folder, and give it these minimal contents:
-
-   <!-- from Petteri: use this model: sentence-transformers/msmarco-distilbert-base-dot-prod-v3 -->
-   ```yaml
-   path: /tmp/index
-
-   writable: False
-
-   embeddings:
-        path: sentence-transformers/nli-mpnet-base-v2
-   ```
-
-   ```{important}
-   [The model you chose](#choosing-a-model) is entered in the embeddings path.
-   ```
-
-1. From the txtai folder, run
-
-   ```sh
-   docker build -t txtai-api .
-   ```
-
-1. Start the container:
-
-   ```sh
-   docker run -p 8000:8000 --rm -it txtai-api
-   ```
- 
-   Depending on the size of the models, it can take several minutes for the service to initialize. 
-
-1. Once the txtai server is running, go to Liferay's Control Panel &rarr; Search Experiences &rarr; Semantic Search and configure it:
-
-   - Set Sentence Transformer Enabled to true.
-   - Select _txtai_ as the Sentence Transformer Provider.
-   - If you followed the above test setup, leave the default value in txtai Host Address.
-   - Leave the default value (768) in Embedding Vector Dimensions.
-
-   ```{important}
-   The Embedding Vector Dimensions must match that of the configured model. The model is specified in txtai using the `config.yml` file. See the model's documentation to configure the proper number of dimensions.
-   ```
-
-Before saving the configuration, click the Test Configuration button to ensure that Liferay can connect with the txtai server and that the configured settings using are in harmony.
-
-This example setup is intended for demonstration. See the [txtai documentation](https://github.com/neuml/txtai) to find the setup that meets your need (e.g., running a GPU [container](https://neuml.github.io/txtai/cloud/) for increased performance).
-
-#### Using the Hugging Face Inference API
-
-To use Hugging Face as the sentence transformer provider, create a [Hugging Face account](https://huggingface.co/join).
-
-Once you have an account,
-
-1. Go to your account settings and find _Access Tokens_. Copy your token.
-1. Go to Liferay's Control Panel &rarr; Search Experiences &rarr; Semantic Search and configure its sentence transformer settings, selecting Hugging Face and entering the access token you copied.
-1. Choose one of the models from the list at <https://huggingface.co/models?pipeline_tag=feature-extraction>. 
-1. Enter the model name as the title of the model.
-1. Enter the proper number of Embedding Vector Dimensions to match the model you chose.
-
-   ```{important}
-   The Embedding Vector Dimensions must match that of the configured model. The model is specified in txtai using the `config.yml` file. See the model's documentation to configure the proper number of dimensions.
-   ```
-1. Configure the other Hugging Face settings as desired:
-
-   **Model Timeout:** Set the time (in seconds) to wait for the model to be loaded before timing out. Hugging Face allows you to pin models in memory to avoid repeated time-consuming loading of models.
-   **Enable GPU:** Enable GPU for the sentence transformer. This speeds up the transformation but requires a paid plan with Hugging Face. Check the Hugging Face documentation for more information.
-
-Before saving the configuration, click the Test Configuration button to ensure that Liferay can connect with the Hugging Face Inference API and that the settings it's using are in harmony.
-
-### Re-Index the Text Embeddings
-
-### Creating a Search Blueprint for Semantic Search
-<!-- A user searching for this might be better served with a title like "Re-Scoring the Query with Text Embeddings". -->
-
-To build a semantic search experience leveraging the sentence embeddings created by the sentence transformer provider you configured, Liferay includes an out-of-the-box element (in 7.4 Update 50+) called Rescore by Text Embedding that re-scores the results of the original query using the text embedding value. Use the element to build a [search blueprint](./creating-and-managing-search-blueprints.md). With this element and the visual query builder in Blueprints, you can configure and test the search query to build the right semantic search solution.
-
-<!-- For how it works: There's an ootb element rescore by text embedding, ping petteri: it rescores x results using a special function which uses the vector field. produce initial results by keyword, rescore them using the vector representations. the function can be chosen, dotProduct or cosin -->
-
-```{important}
-The out-of-the-box Rescore by Text Embedding element (available in 7.4 Update 50+), when configured to work with a sentence transformer, can produce more targeted search results for some data sets. However, many semantic search solutions will require manual tweaking and perhaps new elements to achieve a robust search solution.
-```
-
-![The Rescore by Text Embedding element brings basic semantic search to Liferay.](./semantic-search/images/01.png)
-
-This element is effective only if the sentence transformer is enabled and configured to operate on specific content types and languages. See the Search Experiences entry in System Settings to configure transformation.
-
-## Configuring the Rescore by Text Embedding Element
-
-Several configurable options are provided in the Rescore by Text Embedding element: 
-
-**Boost:** Defaulting to 10, this setting determines by how much to boost re-scored results.
-
-**Vector Field Function:** Choose from the Cosine Similarity or Dot Product functions. Defaulting to use the Cosine Similarity function, the selected function measures similarity between the searched keywords and the target document text embeddings. Check the model's documentation to determine which function is most suitable. 
-
-**Min Score:** Defaulting to 1, this setting's integer (or 0) sets the minimum score a returned document must have to be included in the re-score query. 
-
-**Query Weight:** Defaulting to 0.01, this setting controls the weight of the original query in the final score calculation.
-
-**Rescore Query Weight:** Defaulting to 10, this sets the weight of the re-score query in the final score calculation.
-
-**Score Mode:** Defaulting to Average, this setting dictates the strategy to use when combining the original query scores with the results of the re-score. Choose from Average, Max, Min, Multiply, or Total.
-
-**Rescorer Window Size:** Defaulting to 50, you can choose the number of results to re-score at a time. Choosing a very high window size can impact performance negatively .
-
 <!-- Terrible section name--revisit -->
 ## Configuring Semantic Search in System or Instance Settings
 
@@ -210,6 +93,10 @@ The Index Settings include the following:
 Select whether to extract the pre-transformation sample from the Beginning (default), Middle, or End of the text. This setting applies only if the text is longer than the maximum character count.
 
 **Asset Entry Class Names:** Select the asset types to be transformed. By default four supported asset types are processed, including Blogs Entry, Knowledge Base Article, Web Content Article, and Wiki Page. Message Boards Message entities can be configured if desired. 
+
+```{note}
+Only Basic Web Content is currently supported.
+```
 
 **Language IDs:** Select the languages and localizations to be transformed. By default all listed languages are selected: Arabic (Saudi Arabia), Catalan (Spain), Chinese (China), Dutch (Netherlands), English (United States), Finnish (Finland), French (France), German (Germany), Hungarian (Hungary), Japanese (Japan), Portuguese (Brazil), Spanish (Spain), and Swedish (Sweden). Select multiple languages from the list using _Ctrl + Click_.
 
@@ -256,8 +143,6 @@ see the blueprint on the ticket, may or may not be included in the product
 ### Specify a Pre-Trained Model
 
 Semantic Search: User story has steps on using the ingester module to index from Liferay Learn and HC to get data, how to set up text AI using docker. See the confluence page (tibor linked in DM) for links to other articles to familiarize myself. Sys Settings > Semantic Search setting
-
-enable the ff for the epic
 
 set the transformer txtai or HF (need account and access token)
 

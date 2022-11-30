@@ -5,6 +5,7 @@ toc:
 - ./accounts/account-groups.md
 - ./accounts/account-roles.md
 - ./accounts/account-management-widget.md
+- ./accounts/using-workflow-with-accounts.md
 ---
 # Accounts
 
@@ -16,6 +17,7 @@ accounts/account-addresses.md
 accounts/account-groups.md
 accounts/account-roles.md
 accounts/account-management-widget.md
+accounts/using-workflow-with-accounts.md
 ```
 
 {bdg-secondary}`Available 7.4+`
@@ -126,3 +128,4 @@ See [Account Roles](./accounts/account-roles.md) to learn more.
 * [Account Groups](./accounts/account-groups.md)
 * [Account Roles](./accounts/account-roles.md)
 * [Account Management Widget](./accounts/account-management-widget.md)
+* [Using Workflow with Accounts](accounts/using-workflow-with-accounts.md)

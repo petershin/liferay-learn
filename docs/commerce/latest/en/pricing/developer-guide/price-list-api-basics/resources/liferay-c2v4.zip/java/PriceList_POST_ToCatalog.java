@@ -1,5 +1,4 @@
 import com.liferay.headless.commerce.admin.pricing.client.dto.v2_0.PriceList;
-import com.liferay.headless.commerce.admin.pricing.client.dto.v2_0.PriceList.Type;
 import com.liferay.headless.commerce.admin.pricing.client.resource.v2_0.PriceListResource;
 
 public class PriceList_POST_ToCatalog {
@@ -13,6 +12,7 @@ public class PriceList_POST_ToCatalog {
 		PriceListResource priceListResource = builder.authentication(
 			"test@liferay.com", "learn"
 		).build();
+
 		System.out.println(
 			priceListResource.postPriceList(
 				new PriceList() {
@@ -21,7 +21,7 @@ public class PriceList_POST_ToCatalog {
 							System.getProperty("catalogId"));
 						currencyCode = "USD";
 						name = "Able";
-						type = Type.PRICE_LIST;
+						type = PriceList.Type.PRICE_LIST;
 					}
 				}));
 	}

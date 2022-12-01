@@ -1,0 +1,57 @@
+---
+toc:
+- ./fields/adding-fields-to-objects.md
+- ./fields/aggregation-fields.md
+- ./fields/attachment-fields.md
+---
+# Fields
+
+```{toctree}
+:maxdepth: 3
+
+fields/adding-fields-to-objects.md
+fields/aggregation-fields.md
+fields/attachment-fields.md
+```
+
+{bdg-secondary}`Available Liferay 7.4+`
+
+Object fields are data definitions that represent database columns and store different types of values. All objects include default system fields, but you can [add custom fields](./fields/adding-fields-to-objects.md) to both draft and published objects.
+
+When you [publish](../creating-objects.md#publishing-object-drafts) an object draft, Liferay creates an initial database table that includes all fields and relationships in the draft at the time of publishing. Fields and relationships added after publishing are added to a side table (i.e., `[Initial_Table_Name]_x`).
+
+![All objects include default system fields, but you can add custom fields.](./fields/images/01.png)
+
+Liferay provides these field types that correspond to specific data types in the back-end:
+
+| Field Types (UI) | Data Type (HEADLESS) | Description |
+| :--- | :--- | :--- |
+| [Aggregation](./fields/aggregation-fields.md) | String | Stores read-only values calculated using values from a relationship table. Available functions include `count`, `sum`, `average`, `min`, and `max`. |
+| [Attachment](./fields/attachment-fields.md) | Relationship > Long | Stores files; by default, uploaded files can be no larger than 100 MB; this field supports all file types accepted by [Documents and Media](../../../content-authoring-and-management/documents-and-media.md). |
+| Boolean | Boolean | Stores true or false values |
+| Date | Date | Stores date values |
+| Decimal (_previously Double_) | Double | Stores a decimal number value with a limit of 16 digits, whether before or after the decimal. <br><br> Example: `999.9999999999999` (16 digits total) |
+| Integer | Integer | Stores an integer up to nine digits in length. <br><br> Maximum value: `2147483647` <br><br> Minimum value: `-2147483648` |
+| Long Integer (_previously Long_) | Long | Stores a large integer up to 16 digits in length. <br><br> Maximum value: `9007199254740991` <br><br> Minimum value: `-9007199254740991` |
+| Long Text (_previously Clob_) | Clob | Stores a text box value that supports up to 65,000 characters; after creating a Long Text field, you can configure it to limit the number of characters allowed. |
+| Picklist | String | Stores a [Picklist](../picklists.md) string value. |
+| Precision Decimal (_previously BigDecimal_) | BigDecimal | Stores a high-precision decimal number without rounding and supports up to 16 decimal digits. <br><br> Maximum Value: `99999999999999.9999999999999999` <br><br> Minimum value: `-99999999999999.9999999999999999` |
+| Relationship | Long | Stores the numeric ID for all related object entries. Objects automatically adds relationship fields to objects on the child side of a One to Many relationship. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information. |
+| Rich Text | Clob | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio). |
+| Text (_previously String_) | String | Stores simple text values up to 280 characters; after creating a Text field, you can configure it to limit the number of characters allowed. |
+
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card} Adding Fields to Objects
+:link: ./fields/adding-fields-to-objects.md
+:::
+
+:::{grid-item-card} Aggregation Fields
+:link: ./fields/aggregation-fields.md
+:::
+
+:::{grid-item-card} Attachment Fields
+:link: ./fields/attachment-fields.md
+:::
+::::

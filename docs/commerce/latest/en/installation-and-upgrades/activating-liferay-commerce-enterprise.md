@@ -8,7 +8,7 @@ Starting from Liferay DXP 7.4 U48+/GA48+, the portal property (`enterprise.produ
 
 ## Disabling Liferay Commerce Enterprise for Liferay DXP 7.4 GA1+
 
-{bdg-primary}`Liferay DXP Subscription Required`
+{bdg-primary}`Liferay DXP and Commerce Subscriptions Required`
 
 For Liferay DXP 7.4 GA1+, all Commerce modules are enabled by default. Users can disable them by setting the `enterprise.product.commerce.enabled` portal property to `false`.
 

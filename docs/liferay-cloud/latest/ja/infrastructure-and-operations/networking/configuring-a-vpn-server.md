@@ -1,6 +1,6 @@
 # VPNサーバーの設定
 
-以下のシナリオでは、IPsecまたはOpenVPNのVPNサーバーを設定する方法を説明します。 VPNサーバーを設定すると、Liferay Cloudの内部ネットワークと本番環境の間に安全な接続を確立できます。 この例では、Ubuntu Server 18.0.4をコンセプトの証明として使用しています。 Liferay CloudのClient-to-Site VPNs機能の概要については、 [VPNインテグレーションの概要](./vpn-integration-overview.md) の記事をご覧ください。
+以下のシナリオでは、IPsecまたはOpenVPNのVPNサーバーを設定する方法を説明します。 VPNサーバーを設定すると、社内ネットワークとLiferay Cloud上の本番環境との間にセキュアな接続を確立することができます。 この例では、Ubuntu Server 18.0.4をコンセプトの証明として使用しています。 Liferay Cloud の Client-to-Site VPN 機能の概要については、 [VPNインテグレーションの概要](./vpn-integration-overview.md) の記事をお読みください。
 
 ```{warning}
 設定コマンドや値は変更される場合がありますので、お客様の環境に合わせて設定してください。
@@ -49,7 +49,7 @@ IPsecテストサーバーを設定するには
     rightauth=eap-mschapv2,eap-tls!
     ```
 
-1. サーバー上で、 `SERVER_EXTERNAL_IP` をVPNサーバーの外部IP、 `USERNAME/PASSWORD` をあなたの値で置き換えてください。
+1. サーバー上で、 `SERVER_EXTERNAL_IP` をVPNサーバーの外部IPに、 `USERNAME/PASSWORD` をあなたの値に置き換えてください。
 
     ```properties
     SERVER_EXTERNAL_IP="18.188.145.101"
@@ -323,4 +323,4 @@ OpenVPNサーバーの設定が完了しました。
 ## 追加情報
 
 * [VPNインテグレーションの概要](./vpn-integration-overview.md)
-* [Liferay CloudへのVPNサーバーの接続](./connecting-a-vpn-server-to-liferay-cloud.md)
+* [Liferay CloudにVPNサーバーを接続する](./connecting-a-vpn-server-to-liferay-cloud.md)

@@ -1,12 +1,10 @@
 # リアルタイムアラート
 
-Liferay Cloudは、プロジェクトの予期せぬ動作をシステム管理者に警告することができます。 予期せぬ動作の例としては、オートスケーリングイベント、予想以上のメモリ消費量、割り当てられたCPUクォータへの到達、データベース接続の問題などがあります。
-
-<a name="alert-preferences" />
+Liferay Cloud は、プロジェクトにおける予期せぬ動作をシステム管理者に警告することができます。 予期せぬ動作の例としては、オートスケーリングイベント、予想以上のメモリ消費量、割り当てられたCPUクォータへの到達、データベース接続の問題などがあります。
 
 ## アラート設定
 
-ユーザーはLiferay Cloud Consoleを介して、すべての環境に対して [Alert Preferences](https://console.liferay.cloud/account/alerts-preferences) を設定することができます。
+ユーザーは、Liferay Cloud Console からすべての環境に対して [Alert Preferences](https://console.liferay.cloud/account/alerts-preferences) を設定することができます。
 
 1. コンソールナビゲーションバーの右上にある ［**ユーザープロフィール**］ アイコンをクリックします。
 
@@ -19,8 +17,6 @@ Liferay Cloudは、プロジェクトの予期せぬ動作をシステム管理�
 ![リアルタイムアラート](./real-time-alerts/images/01.png)
 
 ユーザーは、アラートページからアラート設定にアクセスすることもできます。
-
-<a name="alerts-page" />
 
 ## アラートページ
 
@@ -45,8 +41,6 @@ Liferay Cloudは、プロジェクトの予期せぬ動作をシステム管理�
 * **アラート設定** : アラート設定のページに移動します。
 
 ![リアルタイムアラート](./real-time-alerts/images/02.png)
-
-<a name="additional-information" />
 
 ## 追加情報
 

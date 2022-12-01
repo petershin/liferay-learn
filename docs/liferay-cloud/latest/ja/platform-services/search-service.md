@@ -2,13 +2,13 @@
 
 Elasticsearchサービスは、Liferay DXPアプリケーションのテキスト検索エンジンです。 これは、外部のインターネットではなく、アプリケーションの他のサービスとのみ通信するプライベートサービスです。
 
-![図1：Elasticsearchサービスは、Liferay Cloudで利用可能ないくつかのサービスのうちの1つです。](./search-service/images/01.png)
+![Elasticsearchサービスは、Liferay Cloudで利用できるいくつかのサービスのうちの1つです。](./search-service/images/01.png)
 
 詳細は、 [Search service limitations](../reference/platform-limitations.md#search-service) のセクションを参照してください。
 
 ## 設定
 
-Liferay Cloudのサービスはデフォルトで適切に機能するように微調整されていますが、Elasticsearchをさらに設定する必要がある場合があります。 これを行うには、 適切な`［configs/{ENV}/config/］`フォルダー内にYMLファイルを含めることができます。 変更をデプロイすると、ファイルが自動的にサービスに挿入され、デフォルトの設定が上書きされます。 以下は、 正しいフォルダー内のそのようなファイルのフォルダー構造の例です：
+Liferay Cloudのサービスはデフォルトでうまく動作するように微調整されていますが、Elasticsearchをさらに設定する必要がある場合があります。 これを行うには、 適切な`［configs/{ENV}/config/］`フォルダー内にYMLファイルを含めることができます。 変更をデプロイすると、ファイルが自動的にサービスに挿入され、デフォルトの設定が上書きされます。 以下は、 正しいフォルダー内のそのようなファイルのフォルダー構造の例です：
 
     search
     ├── configs
@@ -25,7 +25,7 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 検索サービスの［LCP.json］ファイルには、デフォルトで次の値が含まれています：［"podManagementPolicy":"Parallel"］ この値を［LCP.json］から削除すると、複数のクラスタインスタンスがある場合に検索サービスの起動に失敗することがあります。なぜなら、Elasticsearch のノードが相互に接続しないと正常に起動しないからです。
 ```
 
-環境の [サービススタックのバージョンについて］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、設定ファイルをどのフォルダに追加しなければならないかに影響を及ぼします。
+環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、設定ファイルをどのフォルダに追加しなければならないかに影響を及ぼします。
 
 | **サービススタックバージョン** | **設定フォルダー** |
 |:----------------- |:------------------------------ |
@@ -43,7 +43,7 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
     │           └── elasticsearch.yml
     └── LCP.json
 
-環境の [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにスクリプトを追加しなければならないかに影響を及ぼします：
+環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにスクリプトを追加しなければならないかに影響を及ぼします：
 
 | **サービススタックバージョン** | **スクリプトフォルダ** |
 |:----------------- |:------------------------------- |
@@ -54,7 +54,7 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 ライセンスを検索サービスにデプロイするには、パス `［search/configs/{ENV}/license/］` を作成し、そこにライセンスファイルを配置する必要があります。
 
-環境の [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにライセンスファイルを追加しなければならないかに影響を及ぼします：
+環境の [［service stack version］](../reference/understanding-service-stack-versions.md) が、まだバージョン `［4.x.x］`にアップグレードされていない場合、どのフォルダにライセンスファイルを追加しなければならないかに影響を及ぼします：
 
 | **サービススタックバージョン** | **ライセンスフォルダ** |
 |:----------------- |:------------------------------- |
@@ -63,9 +63,9 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 ## 環境変数リファレンス
 
-Elastisearchのすべての環境変数とその他の設定形式は、 [［official Elastisearch documentation］](https://www.elastic.co/guide/index.html) にあります。 このような設定と環境変数は、それぞれ `［configs/{ENV}/config/］` ディレクトリと `［LCP.json］`で設定できます。 例は次のとおりです：
+Elasticsearchの環境変数やその他の設定方法はすべて、 [Elasticsearch公式ドキュメント](https://www.elastic.co/guide/index.html) に記載されています。 このような設定と環境変数は、それぞれ `［configs/{ENV}/config/］` ディレクトリと `［LCP.json］`で設定できます。 例は次のとおりです：
 
-| 名称             | 値               | 説明              |
+| 名前             | 値               | 説明              |
 |:-------------- |:--------------- |:--------------- |
 | `ES_JAVA_OPTS` | `-Xms4g -Xmx4g` | ESインスタンスのJava設定 |
 

@@ -22,7 +22,7 @@ getting-started/logging-into-your-liferay-cloud-services.md
 getting-started/understanding-liferay-cloud-environments.md
 ```
 
-Liferay Cloudは、安全で信頼性の高いエンタープライズクラウドプラットフォームであり、Liferay DXPで驚くべきアプリケーションを簡素化、安全化、提供するために必要なインフラストラクチャとツールを提供します。
+Liferay Cloudは、Liferay DXP上の素晴らしいアプリケーションを簡素化、安全、そして配信するために必要なインフラとツールを提供する、安全で信頼できるエンタープライズ向けクラウドプラットフォームです。
 
 次の機能を提供するプラットフォームを使用して、心配をせずにさらに構築できます。
 
@@ -32,9 +32,9 @@ Liferay Cloudは、安全で信頼性の高いエンタープライズクラウ�
 
 これらすべては、Liferay DXPでビジネスクリティカルなソリューションを実行した10年以上の経験を持つLiferayプロフェッショナルの専任チームによって設計、構築、サポートされています。
 
-Liferay Cloudは、完全なDevOps CI/CD戦略、ツール、ワークフローを提供することにより、アプリケーションの開発とデプロイを加速します。
+Liferay Cloudは、完全なDevOps CI/CD戦略、ツール、ワークフローを提供することで、アプリケーションの開発とデプロイメントを加速します。
 
-すべてのLiferay Cloudプロジェクトには以下が付属しています：
+Liferay Cloudのプロジェクトには必ず付属しています。
 
 * [CI/CDの組み込みによる開発の加速化](#accelerated-development-with-built-in-ci-cd)
 * [アプリケーション開発ツール](#application-development-tools)
@@ -42,55 +42,55 @@ Liferay Cloudは、完全なDevOps CI/CD戦略、ツール、ワークフロー�
 
 ## 標準に準拠したセキュリティ、自動バックアップ、柔軟なガバナンス
 
-Liferay Cloudはセキュリティを考慮して設計されています。 **ISO 27001** 及び **AICPA SOC2** が認証を受けていることから、自信を持ってビルドおよびデプロイミッションクリティカルなサイトLiferay Cloudがあることを知っています。
+Liferay Cloudは、セキュリティに配慮して設計されています。 Liferay Cloudは、 **ISO 27001** および **AICPA SOC2** の認証を取得しており、ミッションクリティカルなサイトを安心して構築・展開することができます。
 
 すべての顧客データは、デフォルトで保存時に暗号化されています。 保存時の暗号化により、ディスクに保存された機密データが、有効なキーなしでユーザーやアプリケーションから読み取られることがなくなります。 詳細は、 [セキュリティポリシー](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Cloud+Data+Security+and+Protection.pdf/78ce7065-9787-1fb2-9c7b-6d7c13f4a3e6?t=1564674972483) を参照してください。
 
 [自動バックアップ](./platform-services/backup-service/backup-service-overview.md) データの破損や障害が発生した場合に、データとドキュメントが保護され、復元の準備ができていることを確認します。
 
-![図3：DXPクラウドのバックアップサービスは、お客様のデータを保全・保護するものです。](./getting-started/images/01.png)
+![Liferay Cloudのバックアップサービスは、お客様のデータを保存・保護するものです。](./getting-started/images/01.png)
 
 すぐに使える [ロールとチーム管理](./manage-and-optimize/environment-teams-and-roles.md) により、管理者はチームに人を追加または削除し、プロジェクト環境ごとに権限を管理することにより、最大の生産性とセキュリティを提供できます。
 
-![図4：プロジェクトのチームメンバーの権限などを管理します。](./getting-started/images/02.png)
+![プロジェクトのチームメンバーを、権限も含めて管理します。](./getting-started/images/02.png)
 
 ## 高可用性、スケーラビリティ、およびパフォーマンス
 
-[クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) と [ロードバランシング](./infrastructure-and-operations/networking/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 Liferay Cloudは、マルチリージョンアーキテクチャを通じてデータを提供し、高可用性を保証します。
+[クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) と [ロードバランシング](./infrastructure-and-operations/networking/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 Liferay Cloudは、高可用性を確保するため、マルチリージョンアーキテクチャでデータを配信しています。
 
 [オートスケーリング](./manage-and-optimize/auto-scaling.md) は、予期しないトラフィックスパイクによって安定したパフォーマンスを維持するために、帯域幅とコンピューティング容量が動的に追加されることを保証します。 同様に、アクティビティが少ない期間に、不要なリソースを縮小できます。 チームはインスタンスの使用状況に関する自動通知と電子メールアラートを受信するので、自信を持ってリソースを管理できます。
 
-![図5：需要を満たすためにサーバーをオートスケーリングします。](./getting-started/images/03.png)
+![需要に応じてサーバーをオートスケールすることができます。](./getting-started/images/03.png)
 
 ## リアルタイムアラート
 
 管理者は、リソース使用率の更新をリアルタイムで受信するように、ユーザーごとに [アラート](./manage-and-optimize/real-time-alerts.md) を設定できます。
 
-![図6：管理者はリアルタイムアラートを設定できる。](./getting-started/images/04.png)
+![管理者は、リアルタイムのアラートを設定することができます。](./getting-started/images/04.png)
 
 ## CI/CDの組み込みによる開発の加速化
 
-すぐに使えるCI/CD戦略により、アプリケーションをより速く提供できます。 [GithubとJenkins](./platform-services/continuous-integration.md) 統合により、それぞれの新しいコミットまたはプル要求ごとに、 [本番環境または非本番環境](./getting-started/understanding-liferay-cloud-environments.md)にデプロイできるビルドをトリガーできます。
+すぐに使えるCI/CD戦略で、アプリケーションをより速く提供します。 [GithubとJenkins](./platform-services/continuous-integration.md) 統合により、それぞれの新しいコミットまたはプル要求ごとに、 [本番環境または非本番環境](./getting-started/understanding-liferay-cloud-environments.md)にデプロイできるビルドをトリガーできます。
 
 これらの堅牢なシステムにより、フォールトトレラントプロセスの作成が可能になり、組織固有のニーズを満たし、一般的なサーバーの問題が発生したときにそれを検出して修復します。 これにより、小さなプログラミングエラーが蓄積してサーバーがクラッシュするのを防ぐことができます。
 
-![図7：ビルドの表示、管理、デプロイを一元的に行うことができます。](./getting-started/images/05.png)
+![ビルドの表示、管理、デプロイを一元的に行えます。](./getting-started/images/05.png)
 
 ## アプリケーション開発ツール
 
 リアルタイムのビルドと [デプロイメントログ](./troubleshooting/reading-liferay-cloud-service-logs.md)を使用して、アプリケーションのデプロイメントとパフォーマンスを追跡します。 チームは、Webコンソールまたは端子を介して[シェルへのアクセス](./troubleshooting/shell-access.md) および/またはログをダウンロードすることで、スタックトレースとトラブルシューティングのバグを分析することができます。
 
-![図8: リアルタイムのビルドとデプロイのログは、アプリケーションの問題解決に役立ちます。](./getting-started/images/06.png)
+![ビルドやデプロイのログをリアルタイムに取得することで、アプリケーションの問題解決に役立ちます。](./getting-started/images/06.png)
 
 ## 洞察に満ちたモニタリング
 
-Liferay Cloudは [アプリケーションメトリクスス](./manage-and-optimize/application-metrics.md) 提供するため、ITチームはサイトの正常性とコンピューティング要件を経時的に理解できます。 管理者は、すぐに使用できる [Dynatrace統合](./manage-and-optimize/application-metrics.md#advanced-application-metrics-on-production) を使用して、CPUとメモリの使用状況、データ転送速度などをすばやく理解することもできます。
+Liferay Cloud は、 [アプリケーションメトリクス](./manage-and-optimize/application-metrics.md) を提供するため、IT チームはサイトの健全性とコンピューティング要件を長期的に把握することができます。 管理者は、すぐに使用できる [Dynatrace統合](./manage-and-optimize/application-metrics.md#advanced-application-metrics-on-production) を使用して、CPUとメモリの使用状況、データ転送速度などをすばやく理解することもできます。
 
-![図9：さまざまなメトリクスを使用して、Liferay DXPインスタンスを含むLiferay Cloudサービスを監視します。](./getting-started/images/07.png)
+![Liferay DXPインスタンスを含むLiferay Cloudサービスを監視するために、様々なメトリクスを使用します。](./getting-started/images/07.png)
 
 ## 追加情報
 
 * [開発要件](./getting-started/development-requirements.md)
 * [Github リポジトリの設定](./getting-started/configuring-your-github-repository.md)
-* [Liferay Cloud デプロイメントワークフローの概要](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [Liferay Cloudコンソールによる変更のデプロイ](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
+* [Liferay Cloud 導入ワークフローの概要](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloud Consoleを使った変更のデプロイメント](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)

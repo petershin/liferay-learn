@@ -1,6 +1,6 @@
 # コマンドラインツール
 
-CLIツールを使用して、Liferay Cloudサービスを表示および管理できます。 インストール後、ターミナルで `lcp --help` を実行すると、利用可能なアクションが表示されます。
+CLIツールは、Liferay Cloudのサービスを表示・管理するために使用することができます。 インストール後、ターミナルで `lcp --help` を実行すると、利用可能なアクションが表示されます。
 
 ```{tip}
 すべての 「lcp」コマンドの最後に 「-v」 または 「--verbose」オプションを実行すると、追加のログや情報を見ることができます。 すべての 「lcp」コマンドの最後に 「--help」フラグを実行すると、そのコマンドで使用できるフラグが表示されます。
@@ -13,13 +13,13 @@ CLIツールを使用して、Liferay Cloudサービスを表示および管理�
 * [サービスインスタンスの数の変更](#changing-the-number-of-service-instances)
 * [プロジェクトまたはサービスの一覧表示](#listing-projects-or-services)
 * [サービスの再起動](#restarting-a-service)
-* [Liferay Cloud環境へのデプロイ](#deploying-to-your-dxp-cloud-environment)
+* [Liferayクラウド環境へのデプロイメント](#deploying-to-your-liferay-cloud-environment)
 * [サービスのシェルへのアクセス](#accessing-a-services-shell)
 * [CLIツールのバージョン3のアンインストール](#uninstalling-version-3-of-the-cli-tool)
 
 ## CLIツールのインストール
 
-### \*nixシステム
+### \*nix Systems
 
 ターミナルを開き、以下のコマンドを実行します：
 
@@ -65,7 +65,7 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 
 ## CLIリモートの設定
 
-CLIツールでLiferay Cloudのサービスにアクセスするには、Liferay CloudのリモートURLを指すように設定する必要があります：`liferay.cloud`。 CLIのリモートを一覧表示するには、以下のコマンドを実行します：
+CLIツールからLiferay Cloudサービスにアクセスするには、Liferay CloudのリモートURLを指すように設定する必要があります。 `liferay.cloud`. CLIのリモートを一覧表示するには、以下のコマンドを実行します：
 
 ```shell
 lcp remote
@@ -190,7 +190,7 @@ lcp list --url <service>-<project>-<environment>.lfr.cloud
 すべてのプロジェクトの環境とサービスを表示して、再起動する環境サービスを選択します：
 
 ```shell
-lcp restarts
+lcp restart
 ```
 
 プロジェクトの特定のサービスを再起動します：
@@ -205,7 +205,7 @@ lcp restart -p <project>-<environment> -s <service>
 lcp restart --url <serviceID>-<projectID>.lfr.cloud
 ```
 
-## Liferay Cloud環境へのデプロイ
+## Liferayクラウド環境へのデプロイメント
 
 `lcp deploy` コマンドを使用して、特定のサービスまたはすべてのサービスをいずれかの環境にデプロイします：
 
@@ -241,7 +241,7 @@ lcp shell -p <project>-<environment> -s <service>
 
 ## ドキュメントを開く
 
-`lcp docs` コマンドを使用すると、公式ドキュメントやヘルプセンターのコンテンツなど、Liferay Cloudのリソースにアクセスできます。
+`lcp docs` コマンドを使用すると、公式ドキュメントやヘルプセンターのコンテンツなど、Liferay Cloud のリソースにアクセスできます。
 
 ## CLIツールのバージョン3のアンインストール
 
@@ -257,4 +257,4 @@ Windows 7および8の場合は、 ［**コントロールパネル**］ &rarr; 
 
 * [トラブルシューティングツールとリソース](../troubleshooting/troubleshooting-tools-and-resources.md)
 * [CLIツールによる変更点のデプロイ](../build-and-deploy/deploying-changes-via-the-cli-tool.md)
-* [DXPクラウドスタックのアップグレード](./upgrading-your-liferay-cloud-stack.md)
+* [Liferayクラウドスタックのアップグレード](./upgrading-your-liferay-cloud-stack.md)

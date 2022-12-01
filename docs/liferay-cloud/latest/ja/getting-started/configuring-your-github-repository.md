@@ -1,10 +1,10 @@
 # GitHubリポジトリの設定
 
-Liferay Cloudオンボーディングメールを受信すると、 `［dxpcloud］` 組織でホストされているGitHubリポジトリがプロビジョニングされます。 このリポジトリは、チームの個別のプライベートLiferay Cloud開発リポジトリのテンプレートで、通常は10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
+Liferay Cloud のオンボーディングメールを受け取ると、 `dxpcloud` の組織でホストされている GitHub リポジトリがプロビジョニングされます。 このリポジトリは、チームの独立したプライベートなLiferay Cloud開発リポジトリのテンプレートであり、通常10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
 
 1. プロビジョニングされたリポジトリを独自のプライベートGitHubリポジトリに転送します。
 
-1. プライベートリポジトリとLiferay CloudのJenkins(CI)サービスをWebhookで連携させます。
+1. Webhookを使用して、自社のプライベートリポジトリとLiferay CloudのJenkins（CI）サービスを連携させます。
 
 ```{note}
 組織アカウントを使用する場合、リポジトリを組織に転送するには、管理者権限が必要です。 リポジトリの管理者は、Cloud コンソールのプロジェクトの管理者と *同じ* とは限りません。
@@ -24,13 +24,13 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 ## Jenkinsサービスとの統合
 
-次に、新しいリポジトリをLiferay CloudのJenkinsサービスと統合する必要があります。 JenkinsサービスにプッシュするGitHubでWebhookを設定します：
+ここで、新しいリポジトリを Liferay Cloud の Jenkins サービスと統合する必要があります。 JenkinsサービスにプッシュするGitHubでWebhookを設定します：
 
 1. GitHubでは、リポジトリの **Settings** ページに移動し、 ［**Webhooks**］ を選択します。
 
 1. ［**Webhookの追加**］ をクリックします。 **Webhookの追加** フォームが開きます。
 
-1. **Payload URL** フィールドに、Liferay Cloud `infra` 環境のJenkinsサービスのドメインを追加します。 たとえば、 `acme` というプロジェクトの `インフラ` 環境の `ci` サービスのURLは `https://ci-acme-infra.lfr.cloud/github-webhook/`です。 Jenkins GitHubプラグインと統合するには、相対パス `github-webhook` が必要です。
+1. **Payload URL** フィールドに、Liferay Cloud `infra` 環境の Jenkins サービスのドメインを追加してください。 たとえば、 `acme` というプロジェクトの `インフラ` 環境の `ci` サービスのURLは `https://ci-acme-infra.lfr.cloud/github-webhook/`です。 Jenkins GitHubプラグインと統合するには、相対パス `github-webhook` が必要です。
 
 1. **Content type** セレクターメニューで、 **application/json** を選択します。
 
@@ -54,7 +54,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 新しいリポジトリを指すようにJenkinsサービスの環境変数を設定します：
 
-1. Liferay Cloudコンソールにログインし、 `［infra］` 環境でJenkinsサービスに移動します。
+1. Liferay Cloud Console にログインし、 `infra` 環境で Jenkins サービスに移動します。
 
 1. ［**環境変数**］ タブに移動します。
 
@@ -69,7 +69,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 `LCP_CI_SCM_TOKEN` の値には、GitHub組織用に作成した個人用アクセストークンを使用します。 このトークンの作成とアクセスの手順については、 [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line) を参照してください。
 
-作成されたパーソナルアクセストークンは、 **repo** と **admin:repo** **hook** 以下のすべてのスコープ権限にチェックが入っている必要があります。リポジトリがLiferay Cloudと正常に統合された後、 [自動Webフック管理を無効](#personal-access-token-usage) にすれば、具体的には、 **admin:repo** **hook** スコープ権限を後で削除できます。
+作成されたパーソナルアクセストークンは、 **repo** と **admin:repo***hook** のすべてのスコープパーミッションにチェックが入っている必要があります。 **admin:repo***hook** scope permissions specifically は、リポジトリが Liferay Cloud と正常に統合された後、 [automatic web hook management](#personal-access-token-usage) を無効にすれば、後で削除することができます。
 
 ![PATが正常に使用できるように、正しい権限を確認してください。](./configuring-your-github-repository/images/05.png)
 
@@ -85,7 +85,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 
 ### パーソナルアクセストークンの使用
 
-リポジトリと統合するために`LCP_CI_SCM_TOKEN`の 値によってレファレンスされているパーソナルアクセストークンが必要です。
+`LCP_CI_SCM_TOKEN` の値で参照されるパーソナルアクセストークンは、Liferay Cloud がお客様のリポジトリと統合するために必要なものです。
 
 ```{warning}
 パーソナルアクセストークンが個人のユーザーアカウントに属していて、そのユーザーが組織から削除されている場合、すべてのビルドが完了しません。 代わりに、組織専用のアカウントを使用してください。 詳しくは [GitHubの公式ドキュメント](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access) をご覧ください。
@@ -93,7 +93,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 
 デフォルトでは、GitHub組織の [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) が、デフォルトのWebフックを使ってCIサービスを正常に統合するために、 `admin:repo_hook` のパーミッションも持っている必要があります。
 
-しかし、[CI service](../platform-services/continuous-integration.md)の`LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md)を`false`に設定することをお勧めします。 これにより、ウェブフックの自動管理が無効になり（リポジトリとの統合設定が終了すると不要になります）、Liferay Cloudが使用するパーソナルアクセストークンから（管理者レベルの） `admin:repo_hook` の権限を削除することができます。
+しかし、[CI service](../platform-services/continuous-integration.md)の`LCP_CLI_SCM_MANAGE_HOOKS` [environment variable](../reference/defining-environment-variables.md)を`false`に設定することをお勧めします。 これはウェブフックの自動管理を無効にし（リポジトリとの統合設定が終了したら不要になります）、Liferay Cloud が使用する個人アクセストークンから（管理者レベルの） `admin:repo_hook` 権限を削除できるようにします。
 
 ![ウェブフックの自動管理を無効にすると、個人用アクセストークンからadmin:repo_hookの権限を削除することができます。](./configuring-your-github-repository/images/06.png)
 
@@ -101,7 +101,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 
 ## ビルドの確認
 
-プッシュされたブランチとプルリクエストは、Liferay Cloudコンソールの ［**Builds**］ タブから表示またはデプロイできるビルドをトリガーする必要があります。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
+プッシュされたブランチやプルリクエストは、Liferay Cloud Console の **Builds** タブから確認したりデプロイしたりできるビルドのトリガーとなります。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
 
 ### プッシュされたブランチからのビルドの確認
 
@@ -119,7 +119,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
     git push origin branch-name
     ```
 
-1. Liferay Cloud コンソールの **Builds** ページに移動します。
+1. Liferay Cloud Console の **Builds** ページに移動します。
 
 1. **Builds** ページで、プッシュされたブランチのビルドが表示されることを確認します。
 
@@ -131,7 +131,7 @@ Jenkins の `2.222.1-3.2.0` より前のバージョンでは、代わりに環�
 
 1. プルリクエストに対して新しいビルドが作成されていることを確認します。
 
-1. Liferay Cloud コンソールの **Builds** ページに移動します。
+1. Liferay Cloud Console の **Builds** ページに移動します。
 
 1. ブランチのリンクをクリックして、適切なビルドでコミットします。
 

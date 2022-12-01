@@ -3,7 +3,7 @@
 Liferayは定期的にLiferay DXPの新しいマイナーバージョンとメジャーバージョンをリリースします。 このバージョンには、セキュリティとバグ修正、および拡張機能が含まれています。 Liferay DXPの新しいメジャーバージョンの増分にアップグレードするには、DXPデータベースをアップグレードする必要があります。
 
 ```{note}
-運用中の大規模なデータセットの場合、スムーズなアップグレードを行うためには、さらにいくつかの考慮事項があります。 例えば、カスタムコードやマーケットプレイスアプリは、正常に動作し続けるために追加のアップデートが必要な場合があります。 コアアップグレードの包括的な概要については、 [Liferay DXP アップグレードの手引き](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) を参照してください。
+実稼働中の大規模なデータセットの場合、スムーズなアップグレードを行うためには、さらにいくつかの考慮事項があります。 例えば、カスタムコードやマーケットプレイスアプリは、正常に動作し続けるために追加のアップデートが必要な場合があります。 コアアップグレードの包括的な概要については、 [Liferay DXP アップグレードの手引き](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) を参照してください。
 ```
 
 ```{note}
@@ -11,7 +11,7 @@ Liferayは定期的にLiferay DXPの新しいマイナーバージョンとメ�
 ```
 
 ```{important}
-Liferay Cloudの環境をアップグレードするには、アップグレードしたデータベースを復元する必要があるため、Liferayサービスの再起動にダウンタイムが発生します。 本番環境では、このようなダウンタイムが発生することを想定して、計画的に対処してください。
+Liferay Cloudで環境をアップグレードする場合、アップグレードしたデータベースをリストアする必要があるため、Liferayサービスの再起動によるダウンタイムが発生します。 本番環境では、このようなダウンタイムが発生することを想定して、計画的に対処してください。
 ```
 
 次の手順を確認して、データベースのアップグレードを実行します。
@@ -39,7 +39,7 @@ Liferay Cloudの環境をアップグレードするには、アップグレー�
 
 次の手順を実行して、現在 `prd` 環境で実行されているDXPインスタンスのバックアップ（データベースとデータボリュームの両方で設定される）をダウンロードします。
 
-1. [Liferay Cloudコンソール](https://console.liferay.cloud/login) にログインします。
+1. [Liferay Cloud コンソール](https://console.liferay.cloud/login) にログインしてください。
 
 1. 本番環境に移動し、メニューから［**バックアップ**］を選択します。
 
@@ -57,7 +57,7 @@ Liferay Cloudの環境をアップグレードするには、アップグレー�
 
 バックアップからデータボリュームを抽出するには、次の手順を実行します：
 
-1. ダウンロードした `.tgz` データボリュームのアーカイブ（名前は `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`）に先ほど展開したLiferayバンドル中の `LIFERAY_HOME/data` フォルダーに移動させます。
+1. ダウンロードしたデータボリュームの `.tgz` アーカイブ（名称 `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`）を、先ほど解凍した Liferay バンドル内の `LIFERAY_HOME/data` フォルダーに移動させます。
 
 1. 以下のコマンドを実行して、アーカイブを抽出します：
 
@@ -113,7 +113,7 @@ DXPバンドルは、データのアップグレードに使用されるアッ�
 データベースのアップグレードツールを事前に設定しておくことで、実行時の柔軟性を高めることができます。 高度な使い方については、 [データベースアップグレードツールの使い方](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.html) を参照してください。
 ```
 
-あなたの `LIFERAY_HOME/tools/portal-tools-db-upgrade-client` フォルダ内でコマンドプロンプトを開いてください。 次に、以下のコマンドを実行します：
+`LIFERAY_HOME/tools/portal-tools-db-upgrade-client` フォルダ内でコマンドプロンプトを開いてください。 次に、以下のコマンドを実行します：
 
 ```bash
 db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "output.log"
@@ -151,21 +151,21 @@ Completed Liferay core upgrade and verify processes in 64 seconds
 Checking to see if all upgrades have completed... done.
 ```
 
-バンドルをローカルでテストして、アップグレードがスムーズに完了したことを確認します。 `LIFERAY_HOME/tomcat-9.x.x/bin/`から以下のコマンドを実行すれば、ローカルでインスタンスをテストすることができます。
+バンドルをローカルでテストして、アップグレードがスムーズに完了したことを確認します。 `LIFERAY_HOME/tomcat-9.x.x/bin/`から以下のコマンドを実行することで、ローカルにインスタンスをテストすることができます。
 
 ```bash
 ./catalina.sh run
 ```
 
-アップグレードが完了し、検証されると、データベースとデータ量がLiferay Cloudにアップロードされる準備が整います。
+アップグレードが完了し、確認されると、データベースとデータボリュームはLiferay Cloudにアップロードできる状態になります。
 
 ## ドキュメントライブラリを圧縮する
 
-Liferayのインストールがアップグレードされたので、以下の手順で `バックアップ` サービスにアップロードする準備をします。
+Liferay のインストールがアップグレードされたので、次の手順で `バックアップ` サービスにアップロードする準備をします。
 
 ### ドキュメントライブラリの圧縮
 
-1. あなたの `LIFERAY_HOME/data` フォルダ内でコマンドプロンプトを開きます。
+1. あなたの `LIFERAY_HOME/data` フォルダ内でコマンドプロンプトを開いてください。
 
 1. 次のコマンドを使用して、このファイルを `.tgz` アーカイブに圧縮します：
 
@@ -191,13 +191,13 @@ Liferayのインストールがアップグレードされたので、以下の�
     tar zcvf database.tgz database.gz
     ```
 
-データベースとLiferayデータボリュームは、 `backup` サービスにアップロードするための準備が整いました。
+データベースと Liferay データボリュームは、 `backup` サービスにアップロードする準備が整いました。
 
 ## ドキュメントライブラリとデータベースのアップロード
 
 コンソールから `backup` サービスにドキュメントライブラリとデータベースのアーカイブをアップロードします。
 
-1. まだログインしていない場合は、 [Liferay Cloudコンソール](https://console.liferay.cloud/login) にログインします。
+1. まだログインしていない場合は、 [Liferay Cloud コンソール](https://console.liferay.cloud/login) にログインしてください。
 
 1. 該当する環境の **Backups** ページに移動します。
 
@@ -205,7 +205,7 @@ Liferayのインストールがアップグレードされたので、以下の�
 
     ![Upload Backup ボタンをクリックすると、アップロードのページにアクセスできます。](./upgrading-your-liferay-dxp-instance/images/03.png)
 
-1. Upload Backup ページで、該当する環境を展開し、データベースとドキュメントライブラリの両方で `` アイコンをクリックし、アップロードしてください。
+1. バックアップのアップロード」ページで、該当する環境を展開し、データベースとドキュメントライブラリの両方で `+` のアイコンをクリックし、アップロードします。
 
     ![アイコンをクリックすると、データベースとドキュメントライブラリの両方が.gz形式のアーカイブとしてアップロードされます。](./upgrading-your-liferay-dxp-instance/images/04.png)
 
@@ -223,17 +223,17 @@ Liferayのインストールがアップグレードされたので、以下の�
 
 Liferay DXP の新バージョンを反映させるために、必要に応じてこれらの場所を更新してください。
 
-* `画像` プロパティ `liferay/LCP.json にある`. [Services Changelogs](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) で更新されたイメージを確認し、アップグレードされたDXPのバージョンがイメージ内のバージョンと一致していることを確認します（例： `7.2` in `liferaycloud/liferay-dxp:7.2-4.0.7`）。
+* `image` property in `liferay/LCP.json`. [Services Changelogs](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) で更新されたイメージを確認し、アップグレードされた DXP のバージョンがイメージ内のバージョンと一致していることを確認します（例： `7.2` `liferaycloud/liferay-dxp:7.2-4.0.7`)。
 
-* ```の` プロパティ。 [Liferay DXP Docker Hub ページ](https://hub.docker.com/r/liferay/dxp/tags) から、アップグレードしたDXPのバージョンに合ったイメージを確認してください。
+* `liferay.workspace.docker.image.liferay` property in `liferay/gradle.properties`. [Liferay DXP Docker Hub ページ](https://hub.docker.com/r/liferay/dxp/tags) で、アップグレードした DXP のバージョンに合致するイメージを確認してください。
 
-これらの両方のイメージ バージョンが更新されたら、 [変更を](./deploying-to-the-liferay-service.md) 選択した環境にデプロイしてください。 これは、アップロードしたバックアップを復元するためのLiferayサービスを準備するものです。
+これらのイメージバージョンの両方が更新されたら、 [変更点を](./deploying-to-the-liferay-service.md) 選択した環境に展開します。 これは、アップロードしたバックアップを復元するためのLiferayサービスを準備するものです。
 
 ## バックアップを復元する
 
 次の手順に従って、選択した環境にバックアップを復元します：
 
-1. まだログインしていない場合は、Liferay Cloudコンソールにログインします。
+1. Liferay Cloud コンソールにログインしていない場合は、ログインしてください。
 
 1. [バックアップをアップロードした](#upload-the-document-library-and-database) 環境に移動し、サイドメニューから ［**バックアップ**］ をクリックします。
 

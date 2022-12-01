@@ -1,6 +1,6 @@
 # Liferayサービス環境変数
 
-Liferayサービスには [環境変数の範囲](#environoment-variables-reference) があり、サービスや他のサービスへの接続、DXPのインストール自体を設定するために使用されます。 Liferay Cloud固有の環境変数を使用したり、DXPの [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) をオーバーライドする変数を定義したりすることができます。
+Liferayサービスには [環境変数の範囲](#environoment-variables-reference) があり、サービスや他のサービスへの接続、DXPのインストール自体を設定するために使用されます。 Liferay Cloud 固有の環境変数を使用するか、DXP [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) を上書きする変数を定義することができます。
 
 ## ポータルプロパティのオーバーライド
 
@@ -22,7 +22,7 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 
 * 大文字、数字、アンダースコア（`_`）のみで構成されていなければなりません。 この制約に当てはまらない文字は、対応する [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) または [Unicode](https://unicode-table.com/en/) エンドポイントに変換しなければなりません（10進数に変換）。
 
-これらの要件を満たすためには、すべてのポータルプロパティをこのフォーマットに変換する必要があります。 これにより、Liferay Cloudはフルネームを適切に認識し、対応するポータルプロパティと一致させることができます。
+これらの要件を満たすためには、すべてのポータルプロパティをこのフォーマットに変換する必要があります。 これにより、Liferay Cloud はフルネームを適切に認識し、対応するポータルプロパティにマッチングさせることができます。
 
 以下の手順で、ポータルプロパティ名を環境変数名に変換します。
 
@@ -40,7 +40,7 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 
 以下の環境変数は、環境変数UIまたはLiferayサービスの `LCP.json` ファイルで設定できます。
 
-| 名称                                     | デフォルト値                 | 説明                                                                                                                         |
+| 名前                                     | デフォルト値                 | 説明                                                                                                                         |
 |:-------------------------------------- |:---------------------- |:-------------------------------------------------------------------------------------------------------------------------- |
 | `LCP_DATABASE_PORT`                    | `3306`                 | 読み取り専用ユーザーが使用するデータベースポートの設定を設定します。 `DATABASE_SERVICE_PORT` infra環境変数が定義されている場合は、それを上書きします。                                 |
 | `LCP_LIFERAY_JDBC_CONNECTION_URL`      |                        | データベースへの接続に使用されるURLです。 これは、データベース名とホストを直接設定するために使用することができます。 値は、 `jdbc:mysql://`で始まるものとします。                                |
@@ -50,14 +50,14 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 | `LIFERAY_JVM_OPTS`                     | `-Xms4096m -Xmx12288m` | JVMオプションは`CATALINA_OPTS` に追加されて、デフォルトの推奨オプションをオーバーライドします。 推奨は、 `-Xms` をLiferayサービスの利用可能なメモリの25%に設定し、 `-Xmx` を75%に設定することです。 |
 
 ```{note}
-まだバージョン `3.x.x` のサービスを使用している場合は、JVM オプションを指定するのに `LIFERAY_JVM_OPTS` の代わりに `LIFERAY_JAVA_OPTS` を使用してください。 バージョンの確認方法については， [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
+まだバージョン `3.x.x` のサービスを使用している場合は、JVM オプションを指定するのに `LIFERAY_JVM_OPTS` の代わりに `LIFERAY_JAVA_OPTS` を使用してください。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ### シークレット
 
 これらの変数は、代わりにLiferayサービスの[シークレットとして定義](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)する必要があります。
 
-| 名称                                           | デフォルト値 | 説明                                                                                                                                         |
+| 名前                                           | デフォルト値 | 説明                                                                                                                                         |
 |:-------------------------------------------- |:------ |:------------------------------------------------------------------------------------------------------------------------------------------ |
 | `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        |        | Dynatraceアカウントの ［**Deploy Dynatrace**］ &rarr; ［**Start installation**］ &rarr; ［**Set up PaaS monitoring**］ &rarr; ［**Installer Download**］ にある文字列です。 |
 | `LCP_SECRET_DATABASE_NAME`                   |        | データベース接続（jdbc、jdbc ping、および読み取り専用のユーザー接続）に使用されるデータベース名です。                                                                                  |

@@ -1,6 +1,6 @@
 # チーム活動
 
-各プロジェクト環境でのアクティビティを把握することは非常に重要です。 Liferay Cloudでは、ビルド、デプロイメント、その他のプロジェクトアクティビティをWebコンソールで監視することができます。
+各プロジェクト環境でのアクティビティを把握することは非常に重要です。 Liferay Cloudでは、ビルドやデプロイメントなど、プロジェクトの活動をWebコンソールで監視することができます。
 
 ## 環境アクティビティの種類
 
@@ -32,17 +32,16 @@
 
 1. 環境メニューの ［**アクティビティ**］ をクリックします。
 
-このページでは、Liferay Cloudのインスタンスで発生したすべてのアクティビティをリストアップしています。
+このページでは、Liferay Cloud インスタンスで発生したすべてのアクティビティが一覧表示されます。
 
 ![図2：アクティビティページから拡張環境のアクティビティを表示。](./team-activities/images/02.png)
 
 ```{note}
-また、プロジェクト環境のすべてのビルドとデプロイメントのアクティビティは、［Builds］および［Deployments］ページで確認できます。 これらのページについては、 
-[DXPクラウド導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。
+また、プロジェクト環境のすべてのビルドとデプロイメントのアクティビティは、［Builds］および［Deployments］ページで確認できます。 これらのページについては、[Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-liferay-cloud-deployment-workflow.md) を参照してください。
 ```
 
 ## 追加情報
 
 * [環境のチームとロール](./environment-teams-and-roles.md)
-* [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [ログ管理](../troubleshooting/reading-liferay-cloud-service-logs.md)

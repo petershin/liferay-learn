@@ -1,6 +1,6 @@
-# DXPクラウドサービスへログインする
+# Liferayクラウドサービスにログインする
 
-デフォルトでは、DXPおよびインフラストラクチャサービスのWebインターフェイスに直接アクセスするにはログインが必要です。 これらのサービスのログイン資格情報は通常、初期のオンボーディングメールで提供されますが、必要に応じてLiferay Cloud Consoleに配置される場合があります。
+デフォルトでは、LiferayおよびInfrastructureサービスのWebインターフェースに直接アクセスするためにログインが必要です。 これらのサービスのログイン認証情報は、通常、最初のオンボーディングメールで提供されますが、必要に応じてLiferay Cloud Consoleにある場合もあります。
 
 ## ログイン資格情報の検索
 
@@ -25,13 +25,13 @@
 
 1. 目的のエンドポイントをクリックして、対応するURLでLiferayインスタンスにアクセスできます。
 
-1. プロンプトされたら、Liferay Cloudの [Jenkinsユーザーネームと パスワード](#locating-login-credentials) を入力します。
+1. プロンプトが表示されたら、Liferay Cloud [Jenkins のユーザー名とパスワード](#locating-login-credentials) を入力してください。
 
     ![認証](./logging-into-your-liferay-cloud-services/images/03.png)
 
 1. これにより、ユーザーがLiferay DXP 7.xインスタンス（この例ではLiferay DXP 7.2 GA1）にリダイレクトされます。
 
-    ![DXP 7.2 GA1 サインイン](./logging-into-your-liferay-cloud-services/images/04.png)
+    ![Liferay DXP 7.2 GA1 サインイン](./logging-into-your-liferay-cloud-services/images/04.png)
 
 ### デフォルトのサービスURLの検索
 
@@ -47,6 +47,6 @@
 
 ## 追加情報
 
-* [DXPサービスの利用](../using-the-liferay-dxp-service.md)
+* [Liferay DXPサービスの使用](../using-the-liferay-dxp-service.md)
 * [継続的インテグレーション](../platform-services/continuous-integration.md)
 * [Webサーバサービス](../platform-services/web-server-service.md)

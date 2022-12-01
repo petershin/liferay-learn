@@ -1,6 +1,6 @@
-# Liferay Cloud デプロイメントワークフローの概要
+# Liferay Cloud 導入ワークフローの概要
 
-Liferay Cloudは、高効率なCI/CD戦略を実現するための強固なフレームワークを提供します。 GitとJenkinsの統合により、CIビルドを自動的にトリガーして、プロジェクト環境にデプロイすることができます。 また、CIサービスのビルドプロセスを完全に省略し、 [Command Line Interface](../reference/command-line-tool.md) (CLI)ツールを使用して、プロジェクト環境にローカルの変更を直接デプロイすることもできます。
+Liferay Cloudは、非常に効率的なCI/CD戦略を実現するための強固なフレームワークを提供します。 GitとJenkinsの統合により、CIビルドを自動的にトリガーして、プロジェクト環境にデプロイすることができます。 また、CIサービスのビルドプロセスを完全に省略し、 [Command Line Interface](../reference/command-line-tool.md) (CLI)ツールを使用して、プロジェクト環境にローカルの変更を直接デプロイすることもできます。
 
 デプロイメントには複数のパスがありますが、ワークフローは一般的に以下の3つのステージに沿って行われます：
 
@@ -10,7 +10,7 @@ Liferay Cloudは、高効率なCI/CD戦略を実現するための強固なフ�
 
 ## 開発・構成
 
-すべてのワークフローは、プロジェクトのGitリポジトリ（つまり、[GitHub](../getting-started/configuring-your-github-repository.md)、[Bitbucket](../getting-started/configuring-your-bitbucket-repository.md)、または[GitLab](../getting-started/configuring-your-gitlab-repository.md)）に変更を加えることから始まります。 このリポジトリは、Liferay DXPサービスインスタンスを含む、お客様のプロジェクトへのカスタム追加の基礎となります。 このGitリポジトリは、プロジェクトサービスの構成とカスタマイゼーションのための共有バージョンコントロール、プロジェクトのデプロイのための信頼できる唯一のソース、DXPモジュール、テーマ、拡張機能を構築するための共有ワークスペースを提供します。
+すべてのワークフローは、プロジェクトのGitリポジトリ（つまり、[GitHub](../getting-started/configuring-your-github-repository.md)、[Bitbucket](../getting-started/configuring-your-bitbucket-repository.md)、または[GitLab](../getting-started/configuring-your-gitlab-repository.md)）に変更を加えることから始まります。 このリポジトリは、Liferayサービスインスタンス自体を含む、あなたのプロジェクトにカスタムで追加するための基礎となります。 このGitリポジトリは、プロジェクトサービスの設定とカスタマイズのための共有バージョンコントロール、プロジェクトのデプロイのための単一の真実のソース、およびLiferayモジュール、テーマ、および拡張機能を構築するための共有ワークスペースを提供します。
 
 サービスの [LCP.json file](../reference/configuration-via-lcp-json.md)を構成、 または`configs/` フォルダを介してサービスへの環境固有およびプロジェクト全体の変更を行います。 各サービスの構成オプションの詳細については、それぞれのドキュメンテーションを参照してください：
 
@@ -19,19 +19,19 @@ Liferay Cloudは、高効率なCI/CD戦略を実現するための強固なフ�
 * [継続的インテグレーションサービス（Jenkins）](../platform-services/continuous-integration.md)
 * [データベースサービス(MySQL)](../platform-services/database-service/database-service.md)
 * [検索サービス（Elasticsearch）](../platform-services/search-service.md)
-* [ウェブサーバサービス（Nginx）](../platform-services/web-server-service.md)
+* [Webサーバーサービス（Nginx）](../platform-services/web-server-service.md)
 
 ## ビルドとテスト
 
 プロジェクトのGitリポジトリの構成にもよりますが、プロジェクトの中央リポジトリにコミットをマージしたり、変更内容を記載した新しいプルリクエストを公開したりすることで、自動CIビルドをトリガーすることができます。 このプロセスは自動的に行われますが、`infra`環境のCIサービスを変更して、テストを含む追加のパイプラインステップを含めることができます。 詳しくは [継続的インテグレーション](../platform-services/continuous-integration.md) を参照してください。
 
-すべてのプロジェクト環境のビルドの履歴にアクセスするには、Liferay Cloudコンソールの **Builds** ページに移動します。 ここでは、CIサービスまたはCLIツールのいずれかによって開始されたすべてのビルドを、その一般的な情報やステータス（保留、通過、失敗など）とともに表示することができます。
+すべてのプロジェクト環境でのビルドの全履歴にアクセスするには、Liferay Cloudコンソールで **Builds** ページに移動してください。 ここでは、CIサービスまたはCLIツールのいずれかによって開始されたすべてのビルドを、その一般的な情報やステータス（保留、通過、失敗など）とともに表示することができます。
 
 ![ビルドページからプロジェクトのビルドにアクセスできます。](./overview-of-the-liferay-cloud-deployment-workflow/images/01.png)
 
 ## デプロイ
 
-Liferay Cloudでは、サービスをデプロイする方法として、CLIツールを介したデプロイ（手動）、Liferay Cloud管理コンソールを介したデプロイ（手動）、または特定のCIビルドを構成して自動的にデプロイする３つの方法があります。
+Liferay Cloudでは、CLIツールによるデプロイ（手動）、Liferay Cloud管理コンソールによるデプロイ（手動）、特定のCIビルドを設定して自動デプロイする、という3つの方法でサービスをデプロイすることができます。
 
 ### オプション1：コマンドラインインターフェースを介したデプロイ
 
@@ -47,13 +47,13 @@ CLIツールを使用するのが、ローカル変更をサービスにデプ�
 
 CLIツールでデプロイする場合、すべてのサービスを一度にデプロイする（プロジェクトのルートディレクトリからコマンドを実行する）か、単一のサービスのみをデプロイする（サービスの `LCP.json`ファイルを含むディレクトリからコマンドを実行する）ことができます。 `liferay` サービスではデプロイするために [追加のステップ](../using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) を必要とするため、プロジェクトワークスペースからファイルをビルドおよび準備できます。
 
-### オプション2：Liferay Cloudコンソールからのデプロイ
+### オプション 2: Liferay Cloud Console からのデプロイメント
 
-Liferay Cloudコンソールは、プロジェクトの変更をデプロイするための主要な方法です。 これを使用すると、成功したビルドを表示して選択し、選択した環境にデプロイできます。 これらには、CIサービスとCLIツールの両方で生成されたビルドが含まれており、Liferay Cloudコンソールの **Builds** ページからアクセスできます。 **本番環境にデプロイする前に、必ず `dev` または `uat` の環境を選び、変更点を検証してください。**
+Liferay Cloud コンソールは、プロジェクトに変更をデプロイするための主要な方法です。 これを使用すると、成功したビルドを表示して選択し、選択した環境にデプロイできます。 これらはCIサービスとCLIツールの両方で生成されたビルドを含み、Liferay Cloudコンソールの **Builds** ページからアクセスすることができます。 **本番環境にデプロイする前に、必ず `dev` または `uat` の環境を選び、変更点を検証してください。**
 
-デプロイメントのワークフローについては、 [Liferay Cloud Consoleによる変更のデプロイメント](./deploying-changes-via-the-liferay-cloud-console.md) を参照してください。
+デプロイメントのワークフローについては、 [Deploying Changes via Liferay Cloud Console](./deploying-changes-via-the-liferay-cloud-console.md) を参照してください。
 
-![Liferay Cloudコンソールからビルドをデプロイします。](./overview-of-the-liferay-cloud-deployment-workflow/images/02.png)
+![Liferay Cloud コンソールからビルドをデプロイします。](./overview-of-the-liferay-cloud-deployment-workflow/images/02.png)
 
 ### オプション3：自動的にビルドを `dev`環境にデプロイ
 
@@ -63,5 +63,5 @@ Liferay Cloudコンソールは、プロジェクトの変更をデプロイす�
 
 * [デプロイタイプについて](./understanding-deployment-types.md)
 * [デプロイメント戦略について](./understanding-deployment-strategies.md)
-* [Liferay Cloudコンソールによる変更の展開](./deploying-changes-via-the-liferay-cloud-console.md)
+* [Liferay Cloud Consoleを使った変更のデプロイメント](./deploying-changes-via-the-liferay-cloud-console.md)
 * [CLIツールによる変更点のデプロイ](./deploying-changes-via-the-cli-tool.md)

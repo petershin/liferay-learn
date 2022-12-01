@@ -1,18 +1,18 @@
 # カスタムサービスの使用
 
-Liferay Cloudでは、すぐに利用できる標準的なサービスだけでなく、より多くのサービスを実行することができます。 また、カスタムサービスを作成して展開し、Liferay Cloudインフラストラクチャ内で新しいプロセスを実行することもできます。 Liferay Cloud環境においてカスタムサービスの利用を希望されるお客様は、まず販売代理店にご連絡の上、この機能を有効にし、お客様の環境が適切にプロビジョニングされていることをご確認ください。
+Liferay Cloudでは、すぐに利用できる標準的なサービスだけでなく、より多くのサービスを実行することができます。 また、Liferay Cloudインフラストラクチャ内で新しいプロセスを実行するためのカスタムサービスを作成し、デプロイすることができます。 Liferay Cloud環境においてカスタムサービスの利用を希望されるお客様は、まず営業担当者にご連絡いただき、この機能を有効にし、お客様の環境が適切にプロビジョニングされていることを確認してください。
 
 ```{note}
 カスタムサービスを追加するためには、十分なハードウェアリソースが用意されている必要があります。 プロビジョニングプロセス中にカスタムサービスに追加のリソースを割り当てることができます。
 ```
 
-Liferay Cloudは、サービスの基盤としてDockerイメージを使用しています。 これらのサービスをローカルで実行したい場合は、 [［install Docker］](https://docs.docker.com/get-docker/) をローカルシステムにインストールしてください。
+Liferay Cloud は、サービスの基盤として Docker イメージを使用しています。 これらのサービスをローカルで実行したい場合は、 [［install Docker］](https://docs.docker.com/get-docker/) をローカルシステムにインストールしてください。
 
 詳しくは、 [［custom services limitations］](../reference/platform-limitations.md#custom-services) を参照してください。
 
 ## カスタムサービスの追加
 
-次の手順を使用して、Liferay Cloudのビルドに独自のカスタムサービスを追加します：
+以下の手順で、Liferay Cloud のビルドに独自のカスタムサービスを追加してください。
 
 1. カスタムサービスをDockerイメージとして作成または検索します。 プロジェクトのワークスペースに直接追加したDockerfileを使用するか、 [［Docker Hub］](https://hub.docker.com/) などのパブリックリポジトリのイメージを使用できます。
 
@@ -74,14 +74,14 @@ Liferay Cloudは、サービスの基盤としてDockerイメージを使用し�
     git commit -m "Add custom service"
     ```
 
-1. ブランチをアップして、Liferay Cloudで新規ビルドを開始してデプロイします。 ビルドのデプロイについては、 [Liferay Cloud Deployment の概要](./overview-of-the-liferay-cloud-deployment-workflow#deploy) にあるデプロイの情報を参照してください。
+1. ブランチをプッシュし、Liferay Cloud で新しいビルドを開始し、デプロイします。 ビルドのデプロイについては、 [Liferay Cloud デプロイメントの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow#deploy) にあるデプロイの情報を参照してください。
 
-変更を加えたCIで新しいビルドをトリガーしたら、Liferay Cloudコンソールの ［**ビルド**］ 画面に移動して、ビルドを確認できます。 ［**サービス**］ の列にリストされているサービスには、他のサービスとの新しいサービスが含まれています。
+CIで変更を加えて新しいビルドを起動したら、Liferay Cloudコンソールで **Builds** 画面に移動してビルドを確認することができます。 ［**サービス**］ の列にリストされているサービスには、他のサービスとの新しいサービスが含まれています。
 
 このビルドをいずれかの環境にデプロイする場合（アクションメニューで[**ビルドを** にデプロイ]をクリックして）、その環境の ［**サービス**］ ページに移動して、そこにリストされているカスタムサービスを確認することもできます：
 
-![新しい "customservice" は他のサービスと一緒にデプロイされます。](./using-a-custom-service/images/01.png)
+![新しい "カスタムサービス" 他のサービスと並行して展開。](./using-a-custom-service/images/01.png)
 
 ## 追加情報
 
-* [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
+* [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)

@@ -14,7 +14,7 @@ Liferay DXPのインストールを定期的に更新することは、Liferay C
 
 まず、DXPの7.3バージョンを更新しているのであれば、環境変数を設定して、必要に応じてモジュールがアップグレードできるようにします。
 
-1. DXPクラウドのコンソールで、目的の環境のLiferayサービスをクリックします。
+1. Liferay Cloud コンソールで、目的の環境の Liferay サービスをクリックします。
 
 1. ［**環境変数**］ タブをクリックします。
 
@@ -29,7 +29,7 @@ Liferay DXPのインストールを定期的に更新することは、Liferay C
 Liferay DXPのマイナーバージョンのアップデートには、プロジェクトのリポジトリの変更も必要です。
 
 ```{important}
-[クラスタリングサービス](./setting-up-clustering-in-liferay-cloud.md)を使用していて、Liferayデータベーススキーマを変更するバージョン（ [サービスパック](./../../...など）に更新する場合、Liferayデータベーススキーマを変更します。/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) ) にアップデートし、 [この手順](#uPDATTO-NEWS-PACKWITH-CLUSTING-ENABLE) に従い、アップデートしてください。
+[クラスタリングサービス](./setting-up-clustering-in-liferay-cloud.md)を使用していて、Liferayデータベーススキーマを変更するバージョン（ [サービスパック](../../../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) など）に更新する場合、 [以下の手順]( #updating-to-a-new-service-pack-with-clustering-enabled) を実行してください。
 ```
 
 以下の手順で、プロジェクトリポジトリの変更点を更新およびデプロイします。
@@ -50,9 +50,10 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
     }
     ```
 
-1. 目的の環境の`liferay`サービスに [変更をデプロイします](./deploying-to-the-liferay-service.md)。
+1. 目的の環境の`liferay`サービスに[変更をデプロイします](./deploying-to-the-liferay-service.md)。
 
-1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの環境変数ページで [以前に追加した](#enabling-module-upgrades-for-dxp) `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。
+1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの「環境変数」ページで
+[以前に追加した](#enabling-module-upgrades-for-dxp) `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。
 
 ## クラスタリングが有効になっている新しいサービスパックへの更新
 
@@ -62,6 +63,7 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
 
 1. リポジトリの`liferay/LCP.json`ファイルの`スケール`プロパティを`1`に設定します： 
    
+   
 
    ```json
    {
@@ -69,17 +71,22 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
    }
    ```
 
+
 1. `liferay` サービスに[変更内容をデプロイします](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)。
 
 1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags) で、アップデートするLiferayのバージョンのタグを見つけます。
 
-1. `liferay/gradle.properties`の`liferay.workspace.docker.image.liferay`のプロパティの値を、新しいバージョンのタグに変更します：  
+1. `liferay/gradle.properties`の`liferay.workspace.docker.image.liferay`のプロパティの値を、新しいバージョンのタグに変更します： 
+   
+   
 
     ```properties
     liferay.workspace.docker.image.liferay=liferay/dxp:7.3.10-ga1
     ```
 
+
 1. `liferay/LCP.json`で[deployment strategy](../build-and-deploy/understanding-deployment-strategies.md) を`Recreate`に設定します。 
+   
    
 
     ```json
@@ -90,11 +97,14 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
     }
     ```
 
+
 1. `liferay`サービスに[これらの変更内容をデプロイします](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)。
    
    お客様の `liferay` サービス上のLiferay DXPインストールは、起動時に新しいバージョンに更新されます。 ただし、一時的に行われたサービスの変更を元に戻す必要があります。
 
-1. `scale` プロパティを、 `liferay/LCP.json`で希望するノード数に戻します：  
+1. `scale` プロパティを、 `liferay/LCP.json`で希望するノード数に戻します： 
+   
+   
 
     ```json
     {
@@ -102,17 +112,20 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
     }
     ```
 
+
 1. `liferay/LCP.json` のデプロイメントストラテジーを元の値に戻します（もしくはバージョン更新のためだけに追加されたプロパティを削除します）。
 
 1. もう一度[変更内容をデプロイします](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)。
 
-1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの「環境変数」 [ページで以前に追加した](#enabling-module-upgrades-for-dxp) `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。
-
-更新された `liferay` サービスは、最終的なデプロイメントの後、希望する数のノードで再起動します。
+1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの「環境変数」ページで以前に追加した<1>`LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。</p></li> </ol> 
+   
+   更新された `liferay` サービスは、最終的なデプロイメントの後、希望する数のノードで再起動します。
+   
+   
 
 ## 追加情報
 
 * [Liferayサービスへのデプロイ](./deploying-to-the-liferay-service.md)
 * [Hotfixのインストール](./deploying-to-the-liferay-service.md#deploying-hotfixes)
-* [Liferay Cloudでのクラスタリングのセットアップ](./setting-up-clustering-in-liferay-cloud.md)
+* [Liferay Cloudのクラスタリングの設定](./setting-up-clustering-in-liferay-cloud.md)
 * [Liferay DXPインスタンスのアップグレード](./upgrading-your-liferay-dxp-instance.md)

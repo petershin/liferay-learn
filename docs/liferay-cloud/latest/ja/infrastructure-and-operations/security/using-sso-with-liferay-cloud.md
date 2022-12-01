@@ -1,24 +1,24 @@
-# Liferay CloudでのSSOの使用
+# Liferay CloudでSSOを使用する
 
-顧客はSAML 2.0準拠のシングルサインオンIDプロバイダーを使用して、Liferay Cloudプラットフォームに対してユーザーを認証できます。 このドキュメントでは、この統合を有効にするプロセスについて詳しく説明します。
+お客様は、SAML 2.0に準拠したシングルサインオンのアイデンティティプロバイダーを使用して、Liferayクラウドプラットフォームのユーザーを認証することができます。 このドキュメントでは、この統合を有効にするプロセスについて詳しく説明します。
 
 SAMLを使用してSSOを実行するには、クライアント、サービスプロバイダー（SP）、アイデンティティプロバイダー（IdP）の3つのエージェントが必要です。 クライアントがサービスプロバイダーに接続しようとすると、サービスプロバイダーはクライアントをアイデンティティプロバイダーにリダイレクトします。 クライアントがIDプロバイダーによって認証された後、IDプロバイダーはクライアントの資格情報へのアクセスをサービスプロバイダーに許可します。
 
-このシナリオでは、Liferay Cloudはサービスプロバイダーとして機能します。 Liferay Cloudにログインしようとしているお客様がクライアントです。 IDプロバイダーは、顧客が管理するエンタープライズディレクトリソリューションです。
+このシナリオでは、Liferay Cloudがサービスプロバイダとして機能し、Liferay Cloudにログインしようとするお客様がクライアント、そしてIdentity Providerはお客様が管理するエンタープライズディレクトリソリューションとなります。
 
-## Liferay CloudプロジェクトでSSOを有効にする
+## Liferay Cloud プロジェクトで SSO を有効にする
 
-Liferay CloudプロジェクトでSSOを有効にするには、次の手順を実行する必要があります：
+Liferay Cloud プロジェクトで SSO を有効にするには、次の手順を実行する必要があります。
 
-1. [DXPクラウドチームへのIdPメタデータの提供](#provide-identity-provider-metadata-to-the-dxp-cloud-team)
-1. [Liferay Cloudチームは、提供されたIdPデータをインポートし、サービスプロバイダ（SP）メタデータを提供します。](#dxp-cloud-team-imports-provided-idp-data-and-provides-service-provider-metadata)
-1. [Liferay Cloud チームが提供する SP メタデータをインポートする。](#import-sp-metadata-provided-by-the-liferay-dxp-cloud-team)
+1. [Liferay Cloud チームへの IdP メタデータの提供](#provide-identity-provider-metadata-to-the-liferay-cloud-team)
+1. [Liferay Cloud チームは、提供された IdP データをインポートし、サービスプロバイダ (SP) メタデータを提供します。](#liferay-cloud-team-imports-provided-idp-data-and-provides-service-provider-metadata)
+1. [Liferay Cloud チームが提供する SP メタデータをインポートする。](#import-sp-metadata-provided-by-the-liferay-cloud-team)
 
-### DXPクラウドチームへのIDプロバイダメタデータの提供
+### Liferay CloudチームにIdentity Provider Metadataを提供する。
 
-Liferay CloudプロジェクトでSSOを有効にしたいクライアントは、次の情報を含む必要がある ［**IdP**］ システムのメタデータを提供する必要があります：
+Liferay Cloud プロジェクトで SSO を有効にしたいクライアントは、 **IdP** システムのメタデータを提供する必要があり、それには次の情報が含まれている必要があります。
 
-| Field                              | Description                                                                                                                   |
+| 項目                                 | 説明                                                                                                                            |
 |:---------------------------------- |:----------------------------------------------------------------------------------------------------------------------------- |
 | IdP発行者                             | ID発行者の名前。通常、 `EntityDescriptor` メタデータの `EntityID` 属性                                                                          |
 | IdPシングルサインオンURL                    | SAML認証を受信するリクエストエンドポイント(例：<http://adfs.customer.com/saml/sso)>                                                                |
@@ -34,23 +34,23 @@ Microsoft ADFSを使用するクライアントは、SAMLを使用してSSOを�
 | 項目              | 説明                                                                           |
 |:--------------- |:---------------------------------------------------------------------------- |
 | IdP発行者URI       | ［全般］タブの **フェデレーションサービス識別子** にあり、デフォルト値は <http://domain/adfs/services/trust>です。 |
-| IdPシングルサインオンURL | デフォルトは `/adfs/ls`です。 例： <http://adfs.example.com/adfs/ls/>                   |
+| IdPシングルサインオンURL | デフォルトは、 `/adfs/ls`。 例： <http://adfs.example.com/adfs/ls/>                    |
 | IdP署名証明書        | DERエンコードされたバイナリX.509証明書ファイル                                                  |
 
-IdPメタデータが生成されたら、 [Liferay Cloudチームでチケットを開きます](https://help.liferay.com/hc/) 。 IdPメタデータは、XMLファイルまたはURLエンドポイント（<https://localhost:8080/c/saml/metadata> が基本例）のいずれかの形式で送信することができる。
+IdP メタデータが生成されたら、 [Liferay Cloud チームにチケットを開きます。](https://help.liferay.com/hc/) . IdPメタデータは、XMLファイルまたはURLエンドポイント（<https://localhost:8080/c/saml/metadata> が基本例）のいずれかの形式で送信することができる。
 
-### DXPクラウドチームは、提供されたIdPデータをインポートし、サービスプロバイダのメタデータを提供する。
+### Liferay Cloud チームは、提供された IdP データをインポートし、サービスプロバイダのメタデータを提供します。
 
-その後、DXPクラウドチームは、以下のSPメタデータの値をクライアントに提供します。
+その後、Liferay Cloud チームは、以下の SP メタデータの値をクライアントに提供します。
 
-| 項目                       | 説明                                                                       |
-|:------------------------ |:------------------------------------------------------------------------ |
-| アサーションコンシューマサービス（ACS）URL | Liferay Cloudが受信したSAML応答。 これは常に <https://auth.liferay.cloud>からのアドレスサーバーになります |
-| オーディエンスURL               | 顧客のIDプロバイダーにアクセスするために使用されるURL Liferay Cloud                              |
+| 項目                       | 説明                                                                                 |
+|:------------------------ |:---------------------------------------------------------------------------------- |
+| アサーションコンシューマサービス（ACS）URL | Liferay Cloud が受信した SAML レスポンス。 これは常に <https://auth.liferay.cloud>からのアドレスサーバーになります |
+| オーディエンスURL               | 顧客のIDプロバイダーにアクセスするために使用されるURL Liferay Cloud                                        |
 
 ### Liferay Cloud チームが提供する SP メタデータをインポートする。
 
-Liferay CloudチームからSPメタデータを受け取った後、IdPにSPメタデータの値を入力します。
+Liferay Cloud チームから SP メタデータを受信したら、IdP に SP メタデータの値を入力します。
 
 ## SSOの使用
 
@@ -60,7 +60,7 @@ SSOを有効にすると、適切なアイデンティティプロバイダー�
 ユーザーがSSOで初めて認証すると、そのユーザーアカウントが変更され、それ以降はSSOを使用して認証する必要があります。
 ```
 
-SSOを使用してLiferay Cloudにログインするには：
+SSOを使用してLiferay Cloudにログインする場合。
 
 1. <https://console.liferay.cloud/login>に移動します。
 1. ［**Login via SSO**］をクリックします 。

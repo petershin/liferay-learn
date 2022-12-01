@@ -1,10 +1,10 @@
 # アプリケーションメトリクス
 
-Liferay Cloudに組み込まれたモニタリング機能により、各環境サービスが使用するリソースを追跡することができます。 これらのアプリケーションメトリクスには、メモリとCPUの使用量、およびネットワークデータ転送量が含まれます。 メトリクスは、デフォルトのLiferay Cloudのスタックサービス（Webサーバ、Liferay、検索、データベース、バックアップ）で利用できます。
+Liferay Cloudに組み込まれたモニタリング機能により、各環境サービスが使用しているリソースを把握することができます。 これらのアプリケーションメトリクスには、メモリとCPUの使用量、およびネットワークデータ転送量が含まれます。 メトリクスは、デフォルトの Liferay Cloud スタックサービスで利用可能です。Webserver、Liferay、Search、Database、Backupです。
 
 ## サービスポップオーバー
 
-サービスの現在のリソース使用状況は、Liferay Cloud環境の **概要** や **サービス** のページや、個々のサービスのページなど、いくつかのページから素早く確認することができます。 サービスのアイコンにカーソルを合わせると、そのサービスのリソース使用状況のポップオーバーが表示されます。
+Liferay Cloud 環境の **Overview** と **Services** ページ、および個々のサービスページなど、いくつかのページからサービスの現在のリソース使用量を素早く確認できます。 サービスのアイコンにカーソルを合わせると、そのサービスのリソース使用状況のポップオーバーが表示されます。
 
 ![サービスのアイコンにカーソルを合わせます。](./application-metrics/images/01.png)
 
@@ -15,7 +15,7 @@ Liferay Cloudに組み込まれたモニタリング機能により、各環境�
 1. 環境メニューの ［**モニタリング**］ をクリックします。
 1. ドロップダウンメニューを使って、モニターしたいサービスと時間帯を選択します。
 
-![Liferay Cloudを使用してサービスを監視できます。](./application-metrics/images/02.png)
+![Liferay Cloudを使用して、サービスを監視することができます。](./application-metrics/images/02.png)
 
 ユーザーは、 ［**Services**］ ページから拡張サービスメトリクスを表示できます：
 
@@ -40,13 +40,13 @@ Liferay Cloudに組み込まれたモニタリング機能により、各環境�
 "cpu": 8
 ```
 
-ユーザーはLiferay Cloudのコンソールから割り当てられたリソースを確認できます。
+ユーザーは、Liferay Cloud コンソールから割り当てられたリソースを確認することができます。
 
-![Liferay Cloudのコンソールから、お客様の環境サービスに割り当てられたリソースを確認できます。](./application-metrics/images/04.png)
+![Liferay Cloudのコンソールから、環境サービスに割り当てられたリソースを確認できます。](./application-metrics/images/04.png)
 
 ## 高度なアプリケーションメトリクス（本番環境のみ）
 
-Liferay Cloudでは、 [Dynatrace](https://www.dynatrace.com/) の高度なパフォーマンスモニタリングを本番環境に統合することができます。
+Liferay Cloudでは、 [Dynatraceの](https://www.dynatrace.com/) 高度なパフォーマンス監視を本番環境と統合することができます。
 
 詳しくは、 [Dynatrace limitations](../reference/platform-limitations.md#dynatrace) を参照してください。
 
@@ -60,7 +60,7 @@ Liferay Cloudでは、 [Dynatrace](https://www.dynatrace.com/) の高度なパ�
 
 1. Liferayサービスに、Dynatrace`token`値を[Secret](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)として追加します。
 
-1. Liferayサービスの本番環境の`LCP.json`ファイルにDynatrace`テナント` Dynatrace環境変数を追加します。 たとえば、
+1. Liferayサービスの本番環境の`LCP.json`ファイルにDynatrace`テナント` Dynatrace環境変数を追加します。 以下に例を示します。
 
 ```json
 {
@@ -74,7 +74,7 @@ Liferay Cloudでは、 [Dynatrace](https://www.dynatrace.com/) の高度なパ�
 }
 ```
 
-| 名称 | Description |
+| 名前 | Description |
 |:-- |:----------- |
 |    |             |
 
@@ -85,7 +85,7 @@ Liferay Cloudでは、 [Dynatrace](https://www.dynatrace.com/) の高度なパ�
 
 ### Dynatraceへのアクセス
 
-Liferay CloudのコンソールからDynatraceの高度なパフォーマンスモニタリングにアクセスできるようになりました。
+Liferay Cloudのコンソールから、Dynatraceの高度なパフォーマンス監視にアクセスできるようになりました。
 
 1. 本番環境に移動します。
 
@@ -95,7 +95,7 @@ Liferay CloudのコンソールからDynatraceの高度なパフォーマンス�
 
 1. [**Go to Dynatrace Dashboard**] ボタンをクリックして、 [Dynatrace] ダッシュボードにアクセスします。
 
-    ![Liferay CloudコンソールからDynatraceダッシュボードにアクセスします。](./application-metrics/images/05.png)
+    ![Liferay Cloud ConsoleからDynatraceダッシュボードにアクセスします。](./application-metrics/images/05.png)
 
 Dynatraceの認証情報でログインすると、ログの軌跡を確認したり、カスタムダッシュボードを作成したりできます。
 

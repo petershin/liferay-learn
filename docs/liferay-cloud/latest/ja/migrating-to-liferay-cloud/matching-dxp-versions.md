@@ -2,7 +2,7 @@
 
 移行の第一段階として、Liferay Cloud上で動作するLiferayサービスが、移行したいインストールと同じバージョンで動作するように設定します。
 
-そのため、Liferay Cloudのリポジトリをクローンし、バージョン変更の設定を行い、ビルドを展開することでLiferay Cloudにその更新を戻す必要があります。
+そのためには、Liferay Cloud のリポジトリをクローンし、そこにバージョン変更の設定を行い、ビルドをデプロイすることでLiferay Cloudにその更新を戻す必要があります。
 
 ## Liferayのバージョン情報を検索する
 
@@ -10,7 +10,7 @@
 
 これらの値を求めるには、パッチングツールを使用します。
 
-1. こちらの [の指示に従い、](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) パッチツールを移行したいインストール先にインストールします。
+1. [こちら](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) の手順に従って、移行したいインストールにパッチングツールをインストールします。s
 
 1. 任意のコマンドラインツールでパッチングツールフォルダーに移動します。
 
@@ -30,11 +30,11 @@
 
 今後のステップのために、この情報をメモしておいてください。
 
-## DXPクラウドリポジトリのクローン
+## Liferay Cloud リポジトリのクローンを作成します。
 
-DXPクラウドでは、プロジェクトと一緒に [GitHub](https://github.com/) にリポジトリを提供しています。 各サービスの [LCP.json ファイル](../reference/configuration-via-lcp-json.html) など、プロジェクト内のいくつかのファイルに設定を行うには、リポジトリのクローンをローカルに用意する必要があります。
+Liferay Cloud は、プロジェクトと一緒に [GitHub](https://github.com/) にリポジトリを提供します。 各サービスの [LCP.json ファイル](../reference/configuration-via-lcp-json.html) など、プロジェクト内のいくつかのファイルに対して設定を行うには、ローカルにリポジトリのクローンを用意する必要があります。
 
-まだリポジトリをクローンしていない場合は、 [Git がインストールされているターミナルで](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) ローカルにリポジトリをクローンしてください。
+まだリポジトリをクローンしていない場合は、 [Git がインストールされている任意のターミナル](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) を使って、ローカルにクローンします。
 
 ```bash
 git clone https://github.com/dxpcloud/acme
@@ -42,11 +42,11 @@ git clone https://github.com/dxpcloud/acme
 
 ## リポジトリ内の Liferay DXP イメージを更新する
 
-次に、以前 [クローンした](#clone-the-dxp-cloud-repository) リポジトリ内のLiferay DXPイメージを更新します。 このため、Liferayインストールのバージョン情報と互換性のあるDockerイメージを見つける必要があります。
+次に、以前 [クローンしたリポジトリにある Liferay DXP イメージを更新します](#clone-the-liferay-cloud-repository) 。 このため、Liferayインストールのバージョン情報と互換性のあるDockerイメージを見つける必要があります。
 
-1. Docker Hub の [Liferay DXP images](https://hub.docker.com/r/liferay/dxp/tags) ページに移動します。
+1. Docker Hub の [Liferay DXP images](https://hub.docker.com/r/liferay/dxp/tags) ページにアクセスします。
 
-1. **フィルタータグ** フィールドを使用して、以前に見つけたメジャーバージョンとフィックスパック番号 [を使用してイメージのリストをフィルター処理し](#find-liferay-version-information) （たとえば、フォーム `7.2.10-dxp-5`）。 このDockerイメージ名をコピーしてください。
+1. **フィルタタグ** フィールドを使い、メジャーバージョンとフィックスパック番号を用いて画像のリストをフィルタリングします。 [以前に見つけた](#find-liferay-version-information) （例えば `7.2.10-dxp-5`のような形式です）。 このDockerイメージ名をコピーしてください。
 
     ![Filter Tagsフィールドを使用して、Liferay DXPイメージのリストをお探しのメジャーバージョンに絞り込みます。](./matching-dxp-versions/images/02.png)
 
@@ -56,52 +56,57 @@ git clone https://github.com/dxpcloud/acme
 
 1. リポジトリで、 `liferay/gradle.properties` ファイルを開いてください。
 
-1. `liferay.workspace.docker.image.liferay` の値を、以前コピーしたDockerイメージ名に設定します。
+1. `liferay.workspace.docker.image.liferay` の値を、前回コピーしたDockerイメージ名に設定します。
 
-    例えば、Liferay DXPのイメージ名が `7.2.10-dxp-5`である場合、これを `gradle.properties`で設定してください。
+    例えば、Liferay DXP のイメージ名が `7.2.10-dxp-5`である場合、 `gradle.properties`でこれを設定します。
 
     ```
     liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-dxp-5
     ```
 
-これにより、DXPクラウド環境で正しいバージョンのLiferay DXPが動作し、データを正常にアップロードできるようになります。
+これにより、Liferay Cloud 環境で正しいバージョンの Liferay DXP が動作するようになり、データを正常にアップロードできるようになります。
 
 ## リポジトリ内のLiferayサービスイメージの更新
 
-次に、リポジトリ内のLiferayサービスの `LCP.json` ファイルにあるLiferayサービスのイメージを更新します。 このため、Liferayのインストールバージョンと互換性のある最新のDockerイメージを見つける必要があります。
+次に、リポジトリ内の Liferay サービスの `LCP.json` ファイルにある Liferay サービスのイメージを更新してください。 このため、Liferayのインストールバージョンと互換性のある最新のDockerイメージを見つける必要があります。
 
-1. Liferay Cloudの [Services Changelog](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) のページに移動します。
+1. Liferay Cloud の [Services Changelog](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) ページにアクセスします。
 
 1. リストの一番上にある最新のサービス更新をクリックします。
 
-    ![最新のサービス更新のリンクをクリックし、環境が最新であることを確認します。](./matching-dxp-versions/images/03.png)
+    ![最新のサービス更新のリンクをクリックし、お使いの環境が最新のものであることを確認します。](./matching-dxp-versions/images/03.png)
 
-1. ページに記載されている **Liferay** サービス画像を探します。 オンプレミスのLiferayインストールの **メジャーバージョン** に一致するイメージ名をコピーしてください。
+1. ページに記載されている **Liferay** のサービス画像を探してください。 オンプレミスの Liferay インストールの **メジャーバージョン** に一致するイメージ名をコピーしてください。
 
     ![表示された Liferay サービスイメージの中から、お使いの Liferay インストールのメジャーバージョンに合うものを選びます。](./matching-dxp-versions/images/04.png)
 
 1. リポジトリで、 `liferay/LCP.json` ファイルを開いてください。
 
-1. `image` フィールドの値を、以前コピーしたDockerイメージ名に設定します。
+1. `image` の項目に、以前コピーしたDockerイメージ名を設定します。
 
-    たとえば、Liferayサービスイメージ名が `liferaycloud/liferay-dxp：7.2-4.0.4` の場合、これをに設定します。  
- ```
- "image": "liferaycloud/liferay-dxp:7.2-4.0.4"
- ```
+    例えば、Liferay のサービスイメージ名が `liferaycloud/liferay-dxp:7.2-4.0.4`である場合、これを `LCP.json`に設定します。
 
-これにより、あなたのLiferayサービスは、あなたのLiferay DXPのバージョンと互換性のある最新のバージョンを使用することが保証されます。
+    ```
+    "image": "liferaycloud/liferay-dxp:7.2-4.0.4"
+    ```
+
+これにより、Liferay サービスは、Liferay DXP のバージョンと互換性のある最新のバージョンを使用するようになります。
 
 ## Hotfixの情報を追加する
 
-また、オンプレミスでインストールした [パッチのホットフィックス情報](#find-liferay-version-information) をCIサービスの `LCP.json` ファイルへ追加する必要があります。
+</a> また、オンプレミスでインストールしたパッチ
 
-1. ンストールされているパッチのリストを確認するには、 `$LIFERAY_HOME/patching-tool` フォルダーから `./patching-tool.sh info` コマンドを再度実行します。
+の Hotfix 情報を CI サービスの `LCP.json` ファイルに追加する必要があります。</p> 
+
+1. インストールされているパッチの一覧を確認するには、 `./patching-tool.sh info` コマンドを `$LIFERAY_HOME/patching-tool` フォルダから再度実行してください。
    
-    ![現在インストールされているパッチから最新のHotfixでLCP.jsonを更新する必要があります。](./matching-dxp-versions/images/05.png)
+   ![現在インストールされているパッチの中から、最新のHotfixでLCP.jsonを更新する必要があります。](./matching-dxp-versions/images/05.png)
+   
+   現在インストールされているHotfix（または「パッチ」）の名前をコピーしてください。 複数のHotfix名が表示された場合は、利用可能な最新のHotfixの名前をコピーします。
 
-1. レポジトリで、`ci/LCP.json`ファイルを開いてください。
+1. リポジトリで、 `ci/LCP.json` ファイルを開いてください。
 
-1. 先にコピーしたHotfix名を新しい [環境変数として追加します](../reference/defining-environment-variables.md) 名前 `LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON`:
+1. 先ほどコピーしたHotfix名を新しい[環境変数](../reference/defining-environment-variables.md)として、`LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON`という名前で追加してください。
 
     ```
     "env": {
@@ -121,19 +126,19 @@ LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON` で定義されたホットフィックス�
 
 Gitがインストールされている端末でGitコマンドを実行し、変更内容を送信します。
 
-1. 変更したファイルをGitに追加します。
+1. 変更したファイルをGitに追加します。 
 
     ```bash
     git add .
     ```
 
-1. 変更内容とメッセージを添えてコミットしてください。
+1. 変更内容とメッセージを添えてコミットしてください。 
 
     ```bash
     git commit -m "Liferay Cloud Migration Stage 1"
     ```
 
-1. 変更をGitHubにプッシュします。
+1. 変更をGitHubにプッシュします。 
 
     ```bash
     git push origin master
@@ -143,19 +148,19 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 ### ビルドを選択した環境にデプロイする
 
-最後に、 [Liferay Cloud Console](https://console.liferay.cloud/) を使用して、完成したビルドを選択した環境にデプロイします。
+最後に、 [Liferay Cloud Console](https://console.liferay.cloud/) を使って、完成したビルドを選択した環境にデプロイします。
 
-1. Liferay Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
+1. Liferay Cloud Console で Builds ページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
-
-    ![ビルドのActionsメニューでデプロイします。](./matching-dxp-versions/images/06.png)
+1. リストの中から前回作成したビルドを探し、「Actions」メニューから「**Deploy build to**」をクリックします。
+   
+   ![ビルドのActionsメニューでデプロイします。](./matching-dxp-versions/images/06.png)
 
 1. ビルドをデプロイする環境を選択します（例： `acme-dev`）。
 
 1. 以下の情報を読み、確認ボックスを選択して、展開結果を確認します。
-
-    ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./matching-dxp-versions/images/07.png)
+   
+   ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./matching-dxp-versions/images/07.png)
 
 1. **Deploy Build** をクリックします。
 

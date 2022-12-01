@@ -1,14 +1,14 @@
-# ウェブサーバサービス（Nginx）
+# Webサーバーサービス（Nginx）
 
-Nginx Webサーバーは、オープンインターネットからDXP クラウドサービスへのゲートウェイとして機能します。 ユーザーからのすべてのトラフィックを処理し、高性能なWebサーバーとして機能します。
+Nginxウェブサーバーは、オープンインターネットからお客様のLiferayクラウドサービスへのゲートウェイとして機能します。 ユーザーからのすべてのトラフィックを処理し、高性能なウェブサーバーとして機能します。
 
-![図1：Webサーバーは、DXPクラウドで利用できるいくつかのサービスのうちの一つです。](./web-server-service/images/01.png)
+![Webサーバーは、Liferay Cloudで利用できるいくつかのサービスのうちの1つです。](./web-server-service/images/01.png)
 
 詳細は、 [Web server service limitations](../reference/platform-limitations.md#web-server-service) のセクションを参照してください。
 
 ## 設定
 
-Liferay Cloudのサービスはデフォルトでうまく機能するように微調整されていますが、さらにNginxを設定する必要がある場合があります。 これを行うには、 `configs/{ENV}/conf.d/` フォルダー内に任意のCONFファイルを含めることができます。 変更をデプロイすると、ファイルが自動的にサービスに挿入され、デフォルトの設定が上書きされます。 以下は、 正しいディレクトリ内のそのようなファイルのフォルダー構造の例です： 
+Liferay Cloud のサービスはデフォルトでうまく動作するように微調整されていますが、Nginx をさらに設定する必要がある場合があります。 そのためには、 `configs/{ENV}/conf.d/` フォルダ内に任意の CONF ファイルをインクルードしてください。 変更をデプロイすると、ファイルが自動的にサービスに挿入され、デフォルトの設定が上書きされます。 このようなファイルを適切なディレクトリに格納した場合のフォルダ構造の例を示します。 
 
     webserver
     ├── configs
@@ -17,7 +17,7 @@ Liferay Cloudのサービスはデフォルトでうまく機能するように�
     │           └── nginx.conf
     └── LCP.json
 
-`/webserver/configs/{ENV}/`内のファイルは、Liferay Cloudのウェブサーバコンテナ内の /etc/nginx/にオーバーライドとしてコピーされます。 `/webserver/configs/{ENV}/public/`のファイルはオーバーライドとしてvar/www/html/にコピーされます。
+`/webserver/configs/{ENV}/` のファイルは、Liferay Cloud の Web サーバコンテナの /etc/nginx/ にオーバーライドとしてコピーされます。 `/webserver/configs/{ENV}/public/`のファイルはオーバーライドとしてvar/www/html/にコピーされます。
 
 ```{note}
 バージョン3.x.xのサービスを使用している場合は、Nginxの設定は適切な［lcp/webserver/config/{ENV}/］ディレクトリに属しています。 バージョンの確認方法については， [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください．
@@ -27,7 +27,7 @@ Liferay Cloudのサービスはデフォルトでうまく機能するように�
 
 これらの環境変数は、Webサーバーサービスで利用できます：
 
-| 名称                                        | デフォルト値 | 説明                                                                                                                                                                      |
+| 名前                                        | デフォルト値 | 説明                                                                                                                                                                      |
 |:----------------------------------------- |:------ |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `LCP_HAPROXY_RESOLVER_HOLD_TIME`          | `10`   | HAProxyロードバランサーの [`ホールド` 構成](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-hold) の設定を行います。 この構成は、 `有効な` ステータス用です。                                 |
 | `LCP_HAPROXY_RESOLVER_RETRIES`            | `3`    | HAProxyロードバランサーの [`resolve_retries` の構成](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-resolve_retries) を行います（再試行回数は、セッションがあきらめる前に、サーバーに接続しようとします）。 |

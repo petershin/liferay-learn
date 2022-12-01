@@ -28,11 +28,11 @@ reference/platform-limitations.md
 reference/example-configuration-files.md
 ```
 
-- [Liferay Cloudインフラストラクチャー](./reference/liferay-cloud-infrastructure.md)
+- [Liferayクラウドインフラ](./reference/liferay-cloud-infrastructure.md)
 - [LCP.jsonによるコンフィギュレーション](./reference/configuration-via-lcp-json.md)
 - [サービススタックのバージョンについて](./reference/understanding-service-stack-versions.md)
-- [DXPクラウドスタックのアップグレード](./reference/upgrading-your-liferay-cloud-stack.md)
-- [バージョン4におけるLiferay Cloudプロジェクトの変更](./reference/liferay-cloud-project-changes-in-version-4.md)
+- [Liferayクラウドスタックのアップグレード](./reference/upgrading-your-liferay-cloud-stack.md)
+- [Liferay Cloud プロジェクト バージョン 4 での変更点](./reference/liferay-cloud-project-changes-in-version-4.md)
 - [高可用性サブスクリプションへのアップグレード](./reference/upgrading-to-a-high-availability-subscription.md)
 - [コマンドラインツール](./reference/command-line-tool.md)
 - [環境変数の定義](./reference/defining-environment-variables.md)

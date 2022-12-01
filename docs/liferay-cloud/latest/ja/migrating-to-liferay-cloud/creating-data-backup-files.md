@@ -1,12 +1,12 @@
 # ステージ2：データバックアップファイルの作成
 
-オンプレミス環境とDXPクラウド環境でLiferayのバージョンが一致したので、インストールしたデータを移行するための準備をする必要があります。 この段階では、データベースダンプの作成、ドキュメントライブラリストアの移行、ドキュメントライブラリのアーカイブへの圧縮が行われます。
+オンプレミス環境とLiferayクラウド環境でLiferayのバージョンが一致したので、インストールしたデータを移行するための準備をします。 この段階では、データベースダンプの作成、ドキュメントライブラリストアの移行、ドキュメントライブラリのアーカイブへの圧縮が行われます。
 
 ```{warning}
-DXPクラウドサポートに連絡せずに次のステップでアップロードするには、データベースダンプと（圧縮）ドキュメントライブラリアーカイブの合計サイズが2TBを超えてはいけません。
+Liferay Cloudサポートに連絡せずに次のステップでアップロードするには、データベースダンプと（圧縮された）ドキュメントライブラリのアーカイブの合計サイズが2TBを超えてはいけません。
 ```
 
-## データを凍結する
+## データの凍結
 
 データのバックアップファイルを作成する前に、Liferayインスタンスのデータをフリーズさせるためのウィンドウを手配する必要があります。 これにより、バックアップをとっている間にデータが失われることを防ぎます。 データベース管理者と調整し、データベースとドキュメントライブラリを凍結して移行するためのウィンドウを予約します。
 
@@ -14,33 +14,33 @@ DXPクラウドサポートに連絡せずに次のステップでアップロ�
 
 データベースがMySQL 5.7と互換性があることを確認してください。 [DBeaver](https://dbeaver.io/) のようなツールを使用して、他のデータベース形式をMySQLに変換することができます。
 
-データの整合性を確保するために、変換の前後にデータベース管理者と調整します。 変換したデータベースを [ローカルのLiferayインストールに接続してテストします](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/configuring-a-database.html) 次に進む前に、変換したデータベースをテストします。
+データの整合性を確保するために、変換の前後にデータベース管理者と調整します。 変換したデータベースをテストするには、 [ローカルの Liferay インストール](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/configuring-a-database.html) に接続してから次に進みます。
 
 ## データベースダンプの作成
 
 ```{note}
-Windows（OS）をお使いの場合、圧縮ファイルのパック/アンパックのコマンドを実行するために、ファイル圧縮ソフトが必要です。 [7-zip](https://www.7-zip.org/) などのファイル圧縮ソフトをインストールして行ってください。
+Windows（OS）をお使いの場合、圧縮ファイルのパック/アンパックのコマンドを実行するために、ファイル圧縮ソフトが必要です。 これを行うには、 [7-zip](https://www.7-zip.org/) または同様のファイル圧縮ソフトをインストールします。
 ```
 
-データベースがMySQL形式になったので、データベースサーバーで次のコマンドを実行します。 `#` はそれぞれデータベースユーザーとパスワード、 `lportal` は必要ならデータベース名で置き換えてください。
+データベースがMySQL形式になったので、データベースサーバーで次のコマンドを実行します。 `#` をそれぞれデータベースユーザーとパスワードに、 `lportal` を必要に応じてデータベース名に置き換えてください。
 
-**Linux、MacOSの場合**(1コマンド):
+**Linux、MacOSの場合**(1コマンド)。
 
 ```bash
-mysqldump -u### -p### --databases --add-drop-database lportal | gzip -c | cat > database.gz
+mysqldump -u##### -p##### --databases --add-drop-database lportal | gzip -c | cat > database.gz
 ```
 
-**Windowsの場合**(2コマンド)。
+**Windowsの場合**（2コマンド）。
 
 ```
-mysqldump -u### -p##### --databases --add-drop-database lportal > database.sql
+mysqldump -u##### -p##### --databases --add-drop-database lportal > database.sql
 ```
 
 ```
 7za a -tgzip database.gz database.sql
 ```
 
-サーバーは、 `database.gz`という名前の圧縮されたデータベースダンプファイルを作成します。
+サーバーは、 `database.gz`という名前の圧縮されたデータベース・ダンプ・ファイルを作成します。
 
 ## ドキュメントライブラリーをファイルシステムストアに移行する
 
@@ -54,7 +54,7 @@ mysqldump -u### -p##### --databases --add-drop-database lportal > database.sql
 
 ### 変更を伴うJenkinsビルドの作成
 
-Liferayのローカルインストールを移行した後、 `portal-ext.properties`に変更してLiferay Cloud環境にもビルドを作成し、デプロイする必要があります。 ドキュメントライブラリストアの移行が必要ない場合は、環境に対する変更を展開する必要はありません。
+Liferay のローカルインストールを移行した後、 `portal-ext.properties`に変更して Liferay Cloud 環境にビルドを作成し、デプロイする必要もあります。 文書ライブラリストアを移行する必要がなかった場合は、環境に変更を導入する必要はありません。
 
 Gitがインストールされている端末でGitコマンドを実行し、変更内容を送信します。
 
@@ -67,7 +67,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 1. 変更内容とメッセージを添えてコミットしてください。
 
     ```bash
-    git commit -m "DXPクラウドマイグレーション ステージ2"
+    git commit -m "Liferay Cloud Migration Stage 2"
     ```
 
 1. 変更をGitHubにプッシュします。
@@ -80,33 +80,34 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 ### ビルドを選択した環境にデプロイする
 
-最後に、 [Liferay Cloud Console](https://console.liferay.cloud/) を使用して、完成したビルドを選択した環境にデプロイします。
+最後に、 [Liferay Cloud Console](https://console.liferay.cloud/) を使って、完成したビルドを選択した環境にデプロイします。
 
-1. Liferay Cloud Consoleで、Buildsページに移動します（ページ上部のリンクを使用します）。
+1. Liferay Cloud Console で Builds ページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、[アクション]メニューから **Deploy build to** をクリックします。
+1. リストの中から前回作成したビルドを探し、「Actions」メニューから「**Deploy build to**」をクリックします。
 
     ![ビルドのActionsメニューでデプロイします。](./creating-data-backup-files/images/01.png)
 
 1. ビルドをデプロイする環境を選択します（例： `acme-dev`）。
 
-1. 以下の情報を読み、確認ボックスを選択して、展開結果を確認します。
+1. 以下の情報を読み、確認ボックスを選択して、展開結果を確認してください。
 
     ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./creating-data-backup-files/images/02.png)
 
 1. **Deploy Build** をクリックします。
 
-ビルドは選択した環境にデプロイされ、 `portal-ext.properties` への変更は `liferay` サービス再始動の際に適用されます。
+ビルドは選択した環境にデプロイされ、 `portal-ext.properties` の変更は `liferay` サービスが再起動したときに適用されます。
 
 ```{important}
-[バックアップからデータをリストアする](../platform-services/backup-service/restoring-data-from-a-backup.md)場合、ある環境のバックアップが動作するように、Liferay Cloud上のすべての環境が同じドキュメントライブラリの実装を使用する必要があります。ビルドをすべての環境に配備して、すべての環境で移行したドキュメントライブラリストアが正しく使用されていることを確認する必要があります。
+Liferay Cloud上のすべての環境は、ドキュメントライブラリに同じ実装を使用して、ある環境からのバックアップを[他の環境にリストア](../platform-services/backup-service/restoring-data-from-a-backup.md)しても動作するようにする必要があります。ビルドをすべての環境にデプロイして、すべての環境で移行したドキュメントライブラリストアが正しく使用されることを確認する必要があります。
+```
 ```
 
 ## ドキュメントライブラリの圧縮
 
 文書ライブラリのあるサーバーで、以下のコマンドを実行し、アップロード用に文書ライブラリを圧縮します。
 
-**Linux、MacOSの場合**(2コマンド)。
+**Linux、MacOSの場合** (2コマンド)。
 
 ```bash
 cd $LIFERAY_HOME/data
@@ -116,7 +117,7 @@ cd $LIFERAY_HOME/data
 tar -czvf volume.tgz document_library
 ```
 
-**Windowsの場合**(3コマンド)。
+**Windowsの場合** （3コマンド）。
 
 ```
 cd $LIFERAY_HOME\data
@@ -130,8 +131,8 @@ cd $LIFERAY_HOME\data
 7za a volume.tgz volume.tar
 ```
 
-これで、 `volume.tgz`という圧縮されたドキュメントライブラリのアーカイブができました。
+これで、 `volume.tgz`という名前の圧縮されたドキュメントライブラリのアーカイブができました。
 
 ## 次のステップ
 
-これで、2つのファイル（`database.gz` と `volume.tgz`）ができ、Liferay Cloud 環境に適用する準備が整いました。 次に、これらのファイルを使って、 [データのバックアップ](./uploading-and-restoring-the-data-backup.md) をアップロードし、リストアすることになります。
+これで、2つのファイル（`database.gz` と `volume.tgz`）ができ、Liferay Cloud 環境に適用する準備が整いました。 次に、 [これらのファイルを使って、データのバックアップ](./uploading-and-restoring-the-data-backup.md) をアップロードし、リストアします。

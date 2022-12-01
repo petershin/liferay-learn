@@ -1,6 +1,6 @@
 # クロスリージョンディザスタ リカバリの設定
 
-Liferay Cloudは、大規模なインシデントの場合にお客様が障害復旧（DR）手順を利用するための2つの方法を提供します：自動障害復旧と地域間障害復旧。 障害復旧シナリオに対するLiferay Cloudのアプローチについては、 [障害復旧の概要](./disaster-recovery-overview.md)を参照してください。
+Liferay Cloudは、大規模なインシデントが発生した場合に、お客様がディザスターリカバリー（DR）手順を利用するための2つの方法を提供します。自動ディザスターリカバリー」と「クロスリージョンディザスターリカバリー」です。 Liferay Cloud のディザスターリカバリーシナリオに対するアプローチは、 [ディザスターリカバリーの概要](./disaster-recovery-overview.md)で詳しく確認することができます。
 
 ここでは、地域間の災害時にデータを手動で回復する方法をご紹介します。 これらの手順は、同じリージョン内の3つのゾーンすべてに同時に妥協がある場合にのみ必要です。
 
@@ -10,13 +10,13 @@ Liferay Cloudは、大規模なインシデントの場合にお客様が障害�
 
 ## 初期設定
 
-Liferayは、地域をまたいだ災害を管理するために、専用のDXPクラウド環境を提供しています。 この例では、本番環境が **europe-west2** リージョンに格納されており、リージョンが危険にさらされていると想定しています。 本番環境でのダウンタイムとデータ損失を防ぐには、ディザスタリカバリ環境を、 **us-west1** などの運用領域外にシフトする必要があります。 したがって、この5番目の障害復旧（DRに短縮された）環境は、インシデント中に生成された新しいユーザーデータを格納するバックアップとして機能します。
+Liferayは、地域をまたいだ災害を管理するために、専用のLiferay Cloud環境を提供しています。 この例では、本番環境が **europe-west2** リージョンに格納されており、リージョンが危険にさらされていると想定しています。 本番環境でのダウンタイムとデータ損失を防ぐには、ディザスタリカバリ環境を、 **us-west1** などの運用領域外にシフトする必要があります。 したがって、この5番目の障害復旧（DRに短縮された）環境は、インシデント中に生成された新しいユーザーデータを格納するバックアップとして機能します。
 
-障害復旧環境のセットアップを希望するLiferay Cloudのお客様は、DR環境をプロビジョニングするために、営業担当者に連絡する必要があります。 この新しい環境は、他の利用可能な環境 (例えば、 `dev`、 `infra`、 `uat`、および `prd`) とともに表示されます。
+Liferay Cloud のお客様がディザスターリカバリー環境を構築する場合、DR 環境のプロビジョニングを担当する営業担当者にご連絡ください。 この新しい環境は、他の利用可能な環境 (例えば、 `dev`、 `infra`、 `uat`、および `prd`) とともに表示されます。
 
 ![災害復旧環境を作成したら、他の環境と同じようにそれを選択できます。](./configuring-cross-region-disaster-recovery/images/01.png)
 
-Liferay Cloudシステム管理者は、DR環境と本番環境の両方に対する完全な管理権限を持っている必要があります。
+Liferay Cloud のシステム管理者は、DR 環境と本番環境の両方について完全な管理者権限を持っている必要があります。
 
 ### DR環境でのVPN設定の確認
 
@@ -30,9 +30,9 @@ Liferay Cloudシステム管理者は、DR環境と本番環境の両方に対�
 
     * **VPNタイプ** ：OpenVPN
     * **サーバーアドレス** ：サーバーアドレス。
-    * **アカウント名** ：管理者のメールアドレスです。
+    * **Account name** ：管理者のメールアドレスです。
     * **Password** ：管理者のパスワードです。
-    * **証明書** : 証明書のコードです。
+    * **Certificate** : 証明書のコードです。
     * **転送IP** ：転送IPアドレス。
     * **転送ポート** ：転送ポート番号。
     * **ローカルホスト名** ：VPNのホスト名。
@@ -44,7 +44,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 ### 最新の安定したビルドを本番環境からDR環境にデプロイする
 
-次に、最新の安定したビルドを本番環境でDR環境にデプロイする必要があります。 そのためには、 [Liferay Cloud展開ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)で説明したのと同じ手順に従ってください。
+次に、最新の安定したビルドを本番環境でDR環境にデプロイする必要があります。 [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)で説明したのと同じ手順を実行します。
 
 ### ディザスタリカバリへの自動バックアップリストアの設定
 
@@ -52,7 +52,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 まず、本番環境のマスタートークンを取得します（これには、 `liferay` サービスシェルにアクセスするための管理者権限が必要です）：
 
-1. Liferay Cloudコンソールで、本番環境&rarr; `liferay`のサービスページに移動します。
+1. Liferay Cloud コンソールで、本番環境に移動します &rarr; `liferay` サービスページです。
 
 1. **Shell** タブをクリックします。
 
@@ -70,7 +70,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 * **LCP** BACKUP **RESTORE_SCHEDULE** : 自動バックアップの頻度を定義する [cronスケジュール](https://crontab.guru/) の値。 詳細については、 [Scheduling Automated Backups and Cleanups](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) を参照してください。
 
-この値をDR環境の [secret](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) として設定します。
+この値をDR環境の [シークレット](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) として設定します。
 
 * **LCP** EXTERNAL **PROJECT** MASTER **TOKEN** ：本番環境のマスタートークン
 
@@ -86,7 +86,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 地域間でのインシデントの際には、以下の手順に従ってください：
 
-1. [データベース復元スケジュールを無効にします。](#disable-the-database-restoration-schedule)
+1. [データベース復元スケジュールの無効化](#disable-the-database-restoration-schedule)
 1. [最新の本番データをDR環境にコピーします。](#copy-latest-production-data-to-the-dr-environment)
 1. [DR環境のVPNステータスの確認とインデックスの再構築を行います。](#verify-the-dr-environment-s-vpn-status-and-reindex)
 1. [カスタムドメイントラフィックをDR環境に送信します。](#direct-custom-domain-traffic-to-the-dr-environment)
@@ -99,7 +99,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 アクセス可能な状態で復元スケジュールを無効にするには、以下の手順に従ってください：
 
-1. Liferay Cloudコンソールで、DR環境 &rarr; Backup serviceページ &rarr; 環境変数に移動します。
+1. Liferay Cloud Consoleで、DR環境 &rarr; Backup serviceページ &rarr; Environment Variablesに移動します。
 
 1. 目のアイコンをクリックすると、 `LCP_BACKUP_RESTORE_SCHEDULE` の変数の値が表示されます：
 
@@ -138,11 +138,11 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
     ![DR環境のVPNステータスをチェックして、正しく接続されていることを確認します。](./configuring-cross-region-disaster-recovery/images/05.png)
 
-    適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [Liferay CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
+    適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは、 [Liferay Cloud に VPN サーバーを接続する](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
 
 1. DXPインスタンスにログインします（カスタムドメインはまだDR環境を指していないため、IPアドレスを使用します）。
 
-1. **グローバルメニュー**( (![Applications Menu icon](./configuring-cross-region-disaster-recovery/images/06.png) ) &rarr; [**コントロールパネル**] &rarr; [**検索**] に移動します。
+1. [**グローバルメニュー**](![Applications Menu icon](./configuring-cross-region-disaster-recovery/images/06.png) ) &rarr; [**コントロールパネル**]**&rarr;**[検索]* に移動します。
 
 1. ［**すべてインデックスを再構築**］ をクリックします。
 
@@ -166,7 +166,7 @@ DR環境でのWebサーバーサービスのカスタムドメインは、元の
 
 リージョンインシデントが終了したら、元のリージョンの本番環境（この例では **europe-west2**）に戻す必要があります。 次の手順を実行します：
 
-1. [データ作成を凍結させます。](#put-a-freeze-on-data-creation)
+1. [データ作成の凍結](#put-a-freeze-on-data-creation)
 1. [DR環境の手動バックアップを作成します。](#create-a-manual-backup-of-the-dr-environment)
 1. [手動バックアップを本番環境に復元します。](#restore-the-manual-backup-to-production)
 1. [VPNステータスの確認とインデックスの再作成を行います。](#verify-vpn-status-and-reindex)
@@ -208,7 +208,7 @@ DR環境から通常の本番環境にデータを復元します。
 
 1. 本番環境の ［**設定**］ &rarr; ［**VPN**］ ページに移動して、VPNが本番環境に接続されていることを確認します。
 
-   適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは [Liferay CloudへのVPNサーバーの接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
+   適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは、 [Liferay Cloud に VPN サーバーを接続する](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
 
 1. DXPインスタンスにログインします（カスタムドメインはDR環境を指しているため、IPアドレスを使用します）。
 
@@ -218,7 +218,7 @@ DR環境から通常の本番環境にデータを復元します。
 
 インデックスの再構築が完了するまでしばらく待ちます。
 
-### サーバーのカスタムトラフィックを本番環境に復元する
+### サーバーのカスタムトラフィックを本番環境に復元します。
 
 インシデント中にWebサーバーサービスがすべてのトラフィックをDR環境にリダイレクトしたため、すべてのトラフィックが元の本番環境にリダイレクトされるように、これらの設定を再度更新する必要があります。
 
@@ -243,10 +243,10 @@ DR環境から通常の本番環境にデータを復元します。
 
 `LCP_BACKUP_RESTORE_SCHEDULE` 環境変数を使用して、インシデントの前にDR環境に定期的に復元していた場合は、この変数を再度復元して、復元スケジュールを再開します：
 
-1. DXPクラウドのコンソールで、[DR環境] &rarr; [バックアップサービスページ] &rarr; [環境変数]に移動します。
+1. Liferay Cloudコンソールで、DR環境 &rarr; Backup serviceページ &rarr; Environment Variablesに移動します。
 
 1. `LCP_BACKUP_RESTORE_SCHEDULE` 環境変数を追加し, [削除した際に](#disable-the-database-restoration-schedule) メモした値を復元します。
 
 1. 変更を保存します。
 
-これで、Liferay Cloud環境は通常の操作を再開することができます。
+これで、Liferay Cloud 環境は通常の運用を再開できます。

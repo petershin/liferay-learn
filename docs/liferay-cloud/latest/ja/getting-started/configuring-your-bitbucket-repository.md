@@ -1,9 +1,9 @@
 # Bitbucket リポジトリの設定
 
-Liferay Cloudオンボーディングメールを受信すると、 `［dxpcloud］` 組織でホストされているGitHubリポジトリがプロビジョニングされます。 このリポジトリは、チームの個別のプライベートLiferay Cloud開発リポジトリのテンプレートで、通常は10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
+Liferay Cloud のオンボーディングメールを受け取ると、 `dxpcloud` の組織でホストされている GitHub リポジトリがプロビジョニングされます。 このリポジトリは、チームの独立したプライベートなLiferay Cloud開発リポジトリのテンプレートであり、通常10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
 
 1. プロビジョニングされたリポジトリを独自のプライベートリポジトリに転送します。
-1. プライベートリポジトリとLiferay CloudのJenkins(CI)サービスをWebhookで連携させます。
+1. Webhookを使用して、自社のプライベートリポジトリとLiferay CloudのJenkins（CI）サービスを連携させます。
 
 プロビジョニングされたリポジトリはGitHubにありますが、Jenkinsサービスのバージョン3.2.0以降ではBitBucketリポジトリに転送できます。 これは、BitBucket リポジトリへの管理者アクセス権で行う必要があります。
 
@@ -13,7 +13,7 @@ Liferay Cloudオンボーディングメールを受信すると、 `［dxpcloud
 
 ## Jenkinsサービスの準備
 
-すでにDXPクラウドのインスタンスで [version 4.x.x services](../reference/understanding-service-stack-versions.md) を使用している場合は、JenkinsサービスはすでにBitbucketと互換性があります。 アップグレードの詳細については、 [Liferay Cloudスタックのアップグレード](../reference/upgrading-your-liferay-cloud-stack.md) を参照してください。
+[バージョン 4.x.x サービス](../reference/understanding-service-stack-versions.md) を既に Liferay Cloud インスタンスで使用している場合、Jenkins サービスは既に Bitbucket と互換性があります。 アップグレードの詳細については、 [Liferay Cloud Stack のアップグレード](../reference/upgrading-your-liferay-cloud-stack.md) を参照してください。
 
 version 3.x.xのサービスを使用している場合は、 `［LCP.json］` で、 `［ci］` サービスを確認し、以下のJenkinsサービス以上のものを実行していることを確認してください：
 
@@ -32,7 +32,7 @@ liferaycloud/jenkins:2.222.1-3.2.0
 1. Jenkinsサービスをデプロイします。
 
 ```{note}
-Jenkinsfileをカスタマイズしている場合は、こちらのガイドに従って [Default Jenkinsfileの拡張](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) を行ってください。
+Jenkinsfileをカスタマイズしている場合は、こちらのガイドに従って [Default Jenkinsfileの拡張](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) _ を行ってください。
 ```
 
 ## Bitbucketリポジトリの作成
@@ -110,7 +110,7 @@ Jenkinsfileをカスタマイズしている場合は、こちらのガイドに
 
 ## ブランチタイプと敬称の確認
 
-Liferay Cloudがブランチに正しくリンクできるようにするためには、リポジトリで使用されているブランチ敬称の完全なリストをLiferay Cloudに提供する必要があります。 リポジトリで使用されるブランチタイプには、それぞれ独自の敬称があり、リポジトリの設定で定義されています。
+Liferay Cloud があなたのブランチに適切にリンクできるようにするには、あなたのリポジトリで使用されているブランチプレフィックスの完全なリストを提供する必要があります。 リポジトリで使用されるブランチタイプには、それぞれ独自の敬称があり、リポジトリの設定で定義されています。
 
 [the Bitbucket website](https://bitbucket.org) で、メニューの左側の ［**Repository settings**］ &rarr; ［**Branching model**］ をクリックします。 これにより、 **Branching model** のページが表示され、各ブランチの敬称が記載されています。 これらの各敬称をメモして、 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI環境変数に追加してください。
 
@@ -120,7 +120,7 @@ Liferay Cloudがブランチに正しくリンクできるようにするため�
 
 最後に、新しいリポジトリを指すようにJenkinsサービスの環境変数を設定します：
 
-1. Liferay Cloudコンソールにログインし、 `［infra］` 環境でJenkinsサービスに移動します。
+1. Liferay Cloud Console にログインし、 `infra` 環境で Jenkins サービスに移動します。
 
 1. ［**環境変数**］ タブに移動します。
 
@@ -151,7 +151,7 @@ Liferay Cloudがブランチに正しくリンクできるようにするため�
 
 ## ビルドの確認
 
-プッシュされたブランチとプルリクエストは、Liferay Cloudコンソールの ［**Builds**］ タブから表示またはデプロイできるビルドをトリガーする必要があります。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
+プッシュされたブランチやプルリクエストは、Liferay Cloud Console の **Builds** タブから確認したりデプロイしたりできるビルドのトリガーとなります。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
 
 ### プッシュされたブランチからのビルドの確認
 
@@ -169,7 +169,7 @@ Liferay Cloudがブランチに正しくリンクできるようにするため�
     git push bitbucket branch-name
     ```
 
-1. Liferay Cloud コンソールの **Builds** ページに移動します。
+1. Liferay Cloud Console の **Builds** ページに移動します。
 
 1. **Builds** ページで、プッシュされたブランチのビルドが表示されることを確認します。
 
@@ -181,7 +181,7 @@ Liferay Cloudがブランチに正しくリンクできるようにするため�
 
 1. プルリクエストに対して新しいビルドが作成されていることを確認します。
 
-1. Liferay Cloud コンソールの ［**Builds**］ ページに移動します。
+1. Liferay Cloud Console の **Builds** ページに移動します。
 
 1. ブランチのリンクをクリックして、適切なビルドでコミットします。
 

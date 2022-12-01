@@ -1,6 +1,6 @@
-# Liferay Cloudでのクラスタリングのセットアップ
+# Liferay Cloudのクラスタリングの設定
 
-この記事では、Liferay CloudでLiferay DXPインスタンスのクラスタリングを設定するために必要な手順の概要を説明します。
+この記事では、Liferay Cloud の Liferay DXP インスタンスにクラスタリングを設定するために必要な手順の概要を説明します。
 
 **内容：**
 
@@ -11,7 +11,7 @@
 
 ## クラスタリング環境変数を有効にする
 
-Liferay Cloudコンソールで目的の環境から開始します。 次に、 `［Services］`から `［liferay］`に移動して、 `［環境変数］`をクリックします。 `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` 変数が `true`に設定されていることを確認します。 これは、イメージの起動プロセスに、クラスタリング設定をLiferay DXPに追加するように指示します。
+Liferay Cloud Console で目的の環境から起動します。 次に、 `［Services］`から `［liferay］`に移動して、 `［環境変数］`をクリックします。 `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` 変数が `true`に設定されていることを確認します。 これは、イメージの起動プロセスに、クラスタリング設定をLiferay DXPに追加するように指示します。
 
 ![LCP **PROJECT** LIFERAY **CLUSTER** ENABLEDの設定](./setting-up-clustering-in-liferay-cloud/images/01.png)
 
@@ -46,13 +46,13 @@ Liferay DXPインスタンスのノード数を増やすと、プロジェクト
 
 ## クラスタリングポータルプロパティの追加
 
-デフォルトでは、Liferay Cloudでクラスタリングを有効にするために追加のポータルプロパティは必要ありません。 クラスタリングをセットアップするために必要な設定は、Liferay DXPサービスの起動時に、Dockerイメージ内の `portal-clu.properties` および `unicast.xml` ファイルにすでにコピーされています。
+デフォルトでは、Liferay Cloud でクラスタリングを有効にするために、追加のポータルプロパティは必要ありません。 クラスタリングをセットアップするために必要な設定は、Liferay DXPサービスの起動時に、Dockerイメージ内の `portal-clu.properties` および `unicast.xml` ファイルにすでにコピーされています。
 
-ただし、クラスタリング用に追加のポータルプロパティが必要な場合は、プロパティをリポジトリに追加できます。 クラスタリング固有のポータルプロパティを上書きするには、選択した環境に適した `コンフィグ` フォルダ内の `portal-clu.properties` ファイルに追加します。 DXPサービスの設定の展開の詳細は、 [Liferay DXPサービス設定](./configuring-the-liferay-dxp-service.md)を参照してください。
+ただし、クラスタリング用に追加のポータルプロパティが必要な場合は、プロパティをリポジトリに追加できます。 クラスタリング固有のポータルプロパティを上書きするには、選択した環境に適した `コンフィグ` フォルダ内の `portal-clu.properties` ファイルに追加します。 Liferay サービスの設定のデプロイについては、 [Liferay DXP サービスの設定](./configuring-the-liferay-dxp-service.md) を参照してください。
 
 ## デプロイと確認
 
-選択した環境に設定の変更をデプロイして、クラスタリングが有効になっていることを確認します。 詳細は、 [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。
+選択した環境に設定の変更をデプロイして、クラスタリングが有効になっていることを確認します。 詳しくは、 [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) をご覧ください。
 
 クラスタリングが正しく機能しているかどうかを確認するには、Liferay DXPインスタンスのログで、 `JGroupsReceiver` クラスからの `Accepted View` メッセージを確認します。
 
@@ -70,5 +70,5 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 ## 追加情報
 
 * [オートスケーリング](../manage-and-optimize/auto-scaling.md)
-* [Liferay DXPサービスの紹介](./introduction-to-the-liferay-dxp-service.md)
+* [Liferay DXPサービスの紹介](../using-the-liferay-dxp-service.md)
 * [Liferay DXPサービスの設定　](./configuring-the-liferay-dxp-service.md)

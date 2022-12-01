@@ -1,6 +1,6 @@
 # Liferay DXPサービスの設定　
 
-Liferay DXPを設定するには、 [DXPシステム設定](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/system-settings.html) や、 [config](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) と [propertyファイル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) を使用するなど、いくつかの方法があります。 Liferay CloudのLiferay DXPインスタンスのDXPプロパティおよび設定ファイルは、リポジトリのLiferay DXPサービスディレクトリにある`configs/`フォルダのいずれかに配置することでデプロイされます。
+Liferay DXPを設定するには、 [DXPシステム設定](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/system-settings.html) や、 [config](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) と [propertyファイル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) を使用するなど、いくつかの方法があります。 Liferay Cloud の Liferay DXP インスタンスの DXP プロパティと設定ファイルは、リポジトリ内の Liferay DXP サービスディレクトリの `configs/` フォルダーのいずれかに配置されることでデプロイされます。
 
 ```
 liferay
@@ -16,14 +16,14 @@ liferay
 `common/`ディレクトリを除き、特定の環境フォルダ（`dev`、`uat`、`prod`など）に追加された変更は、対応する環境にデプロイするときに **のみ** 伝播されます。 `common/`ディレクトリに追加された変更は、ターゲットのデプロイ環境に関係なく、 **常に** デプロイされます。 これは、すべてのサービスにおいて、 `configs/` ディレクトリ内のすべてのサブフォルダに適用されます。
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合、これらの設定ファイルは適切な`lcp/liferay/config/{ENV}/`フォルダに属しています。 バージョンの確認方法については， [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
+バージョン3.x.xのサービスを使用している場合、これらの設定ファイルは適切な`lcp/liferay/config/{ENV}/`フォルダに属しています。 バージョンの確認方法については， [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) _を参照してください。
 ```
 
 ## ポータルプロパティ
 
 [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) は、 `portal-ext.properties` ファイルに保存されたプロパティです。 これらは、Liferay DXP環境の設定に使用されます。
 
-オンプレミスのLiferay DXPインスタンスの場合、このファイルは `$LIFERAY_HOME`の中に属します。 Liferay Cloudを使用する場合、ポータルプロパティファイルを適切な `configs/{ENV}` フォルダに配置して、デプロイ時にLiferay DXPインスタンスの `$LIFERAY_HOME` にコピーします。
+オンプレミスのLiferay DXPインスタンスの場合、このファイルは `$LIFERAY_HOME`の中に属します。 Liferay Cloud を使用する場合、ポータルプロパティファイルを適切な `configs/{ENV}/` フォルダに置き、デプロイ時に Liferay DXP インスタンスの `$LIFERAY_HOME` にコピーされるようにします。
 
 例えば、開発環境のプロパティは、 `configs/common` ディレクトリのプロパティファイルと、 `configs/dev` ディレクトリのプロパティから構成されています。 同名のファイルがある場合は、環境固有のディレクトリにあるファイルが、 `共通の` ディレクトリにあるファイルを上書きします。
 
@@ -75,7 +75,7 @@ liferay
 
 OSGi構成（`.cfg` または `.config` ファイル）は、Liferay DXPでOSGiコンポーネントを構成するために使用されます。
 
-これらの構成ファイルは、 `$LIFERAY_HOME`内の `osgi/configs/` フォルダに属しています。 Liferay Cloudを使用する場合、これらのファイルを適切な `config` フォルダに配置して、デプロイ時にLiferay DXPインスタンスの `configs/{ENV}/osgi` にコピーします。
+これらの構成ファイルは、 `$LIFERAY_HOME`内の `osgi/configs/` フォルダに属しています。 Liferay Cloud を使用する場合、これらのファイルを適切な `configs/{ENV}/osgi/` フォルダに配置し、デプロイ時に Liferay DXP インスタンスの `/osgi/configs` にコピーされるようにします。
 
 ```{note}
 バージョン3.x.xのサービスを使用している場合、OSGiの設定ファイルはLiferayサービスディレクトリ内の適切な`config/{ENV}/`フォルダに属します。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
@@ -86,24 +86,23 @@ OSGi構成（`.cfg` または `.config` ファイル）は、Liferay DXPでOSGi�
 適切な環境の `liferay/configs/{ENV}` フォルダにファイルをデプロイして、LiferayサービスのTomcatサーバーを設定し、設定ファイルを上書きします。 例えば、Liferayコンテナのファイルシステムにある `{TOMCAT HOME}/conf/web.xml` ファイルを上書きするには、カスタマイズしたファイルをリポジトリの適切な `liferay/configs/{ENV}/tomcat/conf/` フォルダに配置して、変更をデプロイします。
 
 ```{note}
-DXPクラウドのLiferayコンテナには、一般的な`tomcat`フォルダと、バージョン管理された「tomcat-x.x.x」フォルダの2つのtomcatフォルダが存在します。 `tomcat`フォルダは、バージョン管理された`tomcat-x.x.x`フォルダへのシンボリックリンクを持っているので、一般的な`tomcat`フォルダ内のファイルを上書きすると、新しいファイルが両方のフォルダに反映されるようになっています。
+Liferay Cloud の Liferay コンテナ内には、一般的な `tomcat` フォルダと、バージョン管理された `tomcat-x.x.x` フォルダの 2 つの tomcat フォルダが存在します。 `tomcat`フォルダは、バージョン管理された`tomcat-x.x.x`フォルダへのシンボリックリンクを持っているので、一般的な`tomcat`フォルダ内のファイルを上書きすると、新しいファイルが両方のフォルダに反映されるようになっています。
 ```
 
 ```{warning}
-デフォルトのTomcatの設定を上書きする際には、Liferay CloudのLiferayサービスは、クラウドプラットフォーム上の閉じられたネットワークに存在することに留意してください。 オンプレミスのLiferayインストールで変更可能なネットワーク構成の中には、クラウド環境ではデフォルト値から変更できないものや、お客様の環境で問題が発生する可能性のあるものがあります。
+Tomcatのデフォルト設定を上書きする場合、Liferay CloudのLiferayサービスは、Cloudプラットフォーム上の閉じたネットワークに存在することに留意してください。 オンプレミスのLiferayインストールで変更可能なネットワーク構成の中には、クラウド環境ではデフォルト値から変更できないものや、お客様の環境で問題が発生する可能性のあるものがあります。
 ```
 
 ## 環境変数
 
-Liferay CloudのLiferayサービスでは、JVMメモリ設定やデータベース接続設定など、オンプレミスインスタンスと異なる一部の構成の代わりに、[環境変数](../reference/defining-environment-variables.md)（または[シークレット](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)）を使用します。 環境変数は、 [override or replace portal properties](./liferay-service-environment-variables.md#overriding-portal-properties) にも使用できます。 
+Liferay CloudのLiferayサービスは、JVMのメモリ設定やデータベース接続設定など、オンプレミスインスタンスと異なる一部の設定の代わりに、 [環境変数](../reference/defining-environment-variables.md) （または [シークレット](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)）を使用します。 環境変数は、
+[override or replace portal properties](./liferay-service-environment-variables.md#overriding-portal-properties) にも使用できます。 
 
 詳しくは、 [Liferayサービス環境変数](./liferay-service-environment-variables.md) を参照してください。
-
-
 
 ## 追加情報
 
 * [Liferay DXPサービスの紹介](./introduction-to-the-liferay-dxp-service.md)
-* [Liferay Cloudでのクラスタリングの有効化](./setting-up-clustering-in-liferay-cloud.md)
+* [Liferay Cloudでクラスタリングを有効にする](./setting-up-clustering-in-liferay-cloud.md)
 * [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html)
 * [Liferayサービス環境変数](./liferay-service-environment-variables.md)

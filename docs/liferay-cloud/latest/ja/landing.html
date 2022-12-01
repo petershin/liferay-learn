@@ -1,195 +1,199 @@
 <script type="module">
-	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+   import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
 
-	const page = new Vue({
-		el: '#landingPage',
-		data: {
-			cards: [
-				{
-					icon: '#getting-started-logo',
-					sectionName: 'はじめに',
-					sectionURL: 'getting-started.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'はじめに',
-							url: 'getting-started.html'
-						},
-						{
-							name: '開発要件',
-							url: 'getting-started/development-requirements.html'
-						},
-						{
-							name: 'GitHubリポジトリの設定',
-							url: 'getting-started/configuring-your-github-repository.html'
-						}
-					]
-				},
-				{
-					icon: '#site-building-logo',
-					sectionName: 'Liferay DXPサービスの使用',
-					sectionURL: 'using-the-liferay-dxp-service.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Liferay DXPサービスの設定',
-							url: 'using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.html'
-						},
-						{
-							name: 'MySQLクライアントの使用',
-							url: 'using-the-liferay-dxp-service/using-the-mysql-client.html'
-						},
-					]
-				},
-				{
-					icon: '#process-automation-logo',
-					sectionName: 'ビルドとデプロイ',
-					sectionURL: 'build-and-deploy.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Liferay Cloud デプロイメントワークフローの概要',
-							url: 'build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html'
-						},
-						{
-							name: 'Liferay Cloudコンソールによる変更の展開',
-							url: 'build-and-deploy/deploying-changes-via-the-liferay-cloud-console.html'
-						},
-						{
-							name: '永続的なファイルストレージボリュームを設定する',
-							url: 'build-and-deploy/configuring-persistent-file-storage-volumes.html'
-						},
-					]
-				},
-				{
-					icon: '#manage-and-optimize-logo',
-					sectionName: '管理・最適化',
-					sectionURL: 'manage-and-optimize.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'オートスケーリング',
-							url: 'manage-and-optimize/auto-scaling.html'
-						},
-						{
-							name: 'リアルタイムアラート',
-							url: 'manage-and-optimize/real-time-alerts.html'
-						},
-						{
-							name: '環境のチームとロール',
-							url: 'manage-and-optimize/environment-teams-and-roles.html'
-						},
-					]
-				},
-				{
-					icon: '#liferay-internals-logo',
-					sectionName: 'プラットフォームサービス',
-					sectionURL: 'platform-services.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'バックアップサービスの概要',
-							url: 'platform-services/backup-service/backup-service-overview.html'
-						},
-						{
-							name: '継続的インテグレーション',
-							url: 'platform-services/continuous-integration.html'
-						},
-						{
-							name: 'データベースサービス(MySQL)',
-							url: 'platform-services/database-service/database-service.html'
-						},
-					]
-				},
-				{
-					icon: '#installation-and-upgrades-logo',
-					sectionName: 'インフラストラクチャと運用',
-					sectionURL: 'infrastructure-and-operations.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'カスタムドメイン',
-							url: 'infrastructure-and-operations/networking/custom-domains.html'
-						},
-						{
-							name: 'VPNインテグレーションの概要',
-							url: 'infrastructure-and-operations/networking/vpn-integration-overview.html'
-						},
-						{
-							name: 'Liferay CloudでのSSOの使用',
-							url: 'infrastructure-and-operations/security/using-sso-with-liferay-cloud.html'
-						},
-					]
-				},
-				{
-					icon: '#migration-logo',
-					sectionName: 'DXPクラウドへの移行',
-					sectionURL: 'migrating-to-liferay-cloud.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'ステージ1：DXPバージョンのマッチング',
-							url: 'migrating-to-liferay-cloud/matching-dxp-versions.html'
-						},
-						{
-							name: 'ステージ2：データバックアップファイルの作成',
-							url: 'migrating-to-liferay-cloud/creating-data-backup-files.html'
-						},
-						{
-							name: 'ステージ3：データバックアップのアップロードとリストア',
-							url: 'migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.html'
-						},
-						{
-							name: 'ステージ4：DXPの設定とカスタマイズの移行',
-							url: 'migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.html'
-						}
-					]
-				},
-				{
-					icon: '#developing-applications-logo',
-					sectionName: 'トラブルシューティング',
-					sectionURL: 'troubleshooting.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'Log Management',
-							url: 'troubleshooting/log-management.html'
-						},
-						{
-							name: 'シェルアクセス',
-							url: 'troubleshooting/shell-access.html'
-						},
-						{
-							name: 'ディザスタ リカバリの概要',
-							url: 'troubleshooting/disaster-recovery-overview.html'
-						},
-					]
-				},
-				{
-					icon: '#using-search-logo',
-					sectionName: 'リファレンス',
-					sectionURL: 'reference.html',
-					showAll: false,
-					subsections: [
-						{
-							name: 'LCP.jsonによるコンフィギュレーション',
-							url: 'reference/configuration-via-lcp-json.html'
-						},
-						{
-							name: '高可用性サブスクリプションへのアップグレード',
-							url: 'reference/upgrading-to-a-high-availability-subscription.html'
-						},
-						{
-							name: 'DXPクラウドスタックのアップグレード',
-							url: 'reference/upgrading-your-liferay-cloud-stack.html'
-						},
-						{
-							name: 'バージョン4におけるLiferay Cloudプロジェクトの変更',
-							url: 'reference/liferay-cloud-project-changes-in-version-4.html'
-						}
-					]
-				},
-			]
-		}
-	})
+   const page = new Vue({
+      el: '#landingPage',
+      data: {
+         cards: [
+            {
+               icon: '#getting-started-logo',
+               sectionName: 'はじめに',
+               sectionURL: 'getting-started.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'はじめに',
+                     url: 'getting-started.html'
+                  },
+                  {
+                     name: '開発要件',
+                     url: 'getting-started/development-requirements.html'
+                  },
+                  {
+                     name: 'GitHubリポジトリの設定',
+                     url: 'getting-started/configuring-your-github-repository.html'
+                  }
+               ]
+            },
+            {
+               icon: '#site-building-logo',
+               sectionName: 'Liferay DXPサービスの使用',
+               sectionURL: 'using-the-liferay-dxp-service.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Liferay DXPサービスの設定',
+                     url: 'using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.html'
+                  },
+                  {
+                     name: 'Liferay Cloudへの移行',
+                     url: 'migrating-to-liferay-cloud.html'
+                  },
+                  {
+                     name: '前提条件',
+                     url: 'using-the-liferay-dxp-service/using-the-mysql-client.html'
+                  },
+               ]
+            },
+            {
+               icon: '#process-automation-logo',
+               sectionName: 'ビルドとデプロイ',
+               sectionURL: 'build-and-deploy.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Liferay Cloud 導入ワークフローの概要',
+                     url: 'build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html'
+                  },
+                  {
+                     name: 'Liferay Cloud Consoleを使った変更のデプロイメント',
+                     url: 'build-and-deploy/deploying-changes-via-the-liferay-cloud-console.html'
+                  },
+                  {
+                     name: '永続的なファイルストレージボリュームを設定する',
+                     url: 'build-and-deploy/configuring-persistent-file-storage-volumes.html'
+                  },
+               ]
+            },
+            {
+               icon: '#manage-and-optimize-logo',
+               sectionName: '管理・最適化',
+               sectionURL: 'manage-and-optimize.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'オートスケーリング',
+                     url: 'manage-and-optimize/auto-scaling.html'
+                  },
+                  {
+                     name: 'リアルタイムアラート',
+                     url: 'manage-and-optimize/real-time-alerts.html'
+                  },
+                  {
+                     name: '環境のチームとロール',
+                     url: 'manage-and-optimize/environment-teams-and-roles.html'
+                  },
+               ]
+            },
+            {
+               icon: '#liferay-internals-logo',
+               sectionName: 'プラットフォームサービス',
+               sectionURL: 'platform-services.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'バックアップサービスの概要',
+                     url: 'platform-services/backup-service/backup-service-overview.html'
+                  },
+                  {
+                     name: '継続的インテグレーション',
+                     url: 'platform-services/continuous-integration.html'
+                  },
+                  {
+                     name: 'データベースサービス(MySQL)',
+                     url: 'platform-services/database-service/database-service.html'
+                  },
+               ]
+            },
+            {
+               icon: '#installation-and-upgrades-logo',
+               sectionName: 'インフラストラクチャーと運用',
+               sectionURL: 'infrastructure-and-operations.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'カスタムドメイン',
+                     url: 'infrastructure-and-operations/networking/custom-domains.html'
+                  },
+                  {
+                     name: 'VPNインテグレーションの概要',
+                     url: 'infrastructure-and-operations/networking/vpn-integration-overview.html'
+                  },
+                  {
+                     name: 'Liferay CloudでSSOを使用する',
+                     url: 'infrastructure-and-operations/security/using-sso-with-liferay-cloud.html'
+                  },
+               ]
+            },
+            {
+               icon: '#migration-logo',
+               sectionName: 'Liferay Cloudへの移行',
+               sectionURL: 'migrating-to-liferay-cloud.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'ステージ1：DXPバージョンのマッチング',
+                     url: 'migrating-to-liferay-cloud/matching-dxp-versions.html'
+                  },
+                  {
+                     name: 'ステージ2：データバックアップファイルの作成',
+                     url: 'migrating-to-liferay-cloud/creating-data-backup-files.html'
+                  },
+                  {
+                     name: 'ステージ3：データバックアップのアップロードとリストア',
+                     url: 'migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.html'
+                  },
+                  {
+                     name: 'ステージ4：DXPの設定とカスタマイズの移行',
+                     url: 'migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.html'
+                  }
+               ]
+            },
+            {
+               icon: '#developing-applications-logo',
+               sectionName: 'トラブルシューティング',
+               sectionURL: 'troubleshooting.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'Liferay Cloud サービスのログを読む',
+                     url: 'troubleshooting/reading-liferay-cloud-service-logs.html'
+                  },
+                  {
+                     name: 'シェルアクセス',
+                     url: 'troubleshooting/shell-access.html'
+                  },
+                  {
+                     name: 'ディザスタ リカバリの概要',
+                     url: 'troubleshooting/disaster-recovery-overview.html'
+                  },
+               ]
+            },
+            {
+               icon: '#using-search-logo',
+               sectionName: 'リファレンス',
+               sectionURL: 'reference.html',
+               showAll: false,
+               subsections: [
+                  {
+                     name: 'LCP.jsonによるコンフィギュレーション',
+                     url: 'reference/configuration-via-lcp-json.html'
+                  },
+                  {
+                     name: '高可用性サブスクリプションへのアップグレード',
+                     url: 'reference/upgrading-to-a-high-availability-subscription.html'
+                  },
+                  {
+                     name: 'Liferayクラウドスタックのアップグレード',
+                     url: 'reference/upgrading-your-liferay-cloud-stack.html'
+                  },
+                  {
+                     name: 'Liferay Cloud プロジェクト バージョン 4 での変更点',
+                     url: 'reference/liferay-cloud-project-changes-in-version-4.html'
+                  }
+               ]
+            },
+         ]
+      }
+   })
 </script>

@@ -8,14 +8,14 @@ Ingress Load Balancerは、TLS（1.0から1.2）プロトコルを使用した�
 
 ```json
 {
-  "id":"webserver",
-  "loadBalancer":{
+  "id": "webserver",
+  "loadBalancer": {
     "cdn": true,
-    "targetPort":80,
-    "customDomains":["acme.liferay.cloud"],
-    "ssl":{
-      "key":"...",
-      "crt":"..."
+    "targetPort": 80,
+    "customDomains": ["acme.liferay.cloud"],
+    "ssl": {
+      "key": "...",
+      "crt": "..."
     }
   }
 }
@@ -23,14 +23,14 @@ Ingress Load Balancerは、TLS（1.0から1.2）プロトコルを使用した�
 
 ## CDN
 
-Liferayのコンテンツ配信ネットワーク（CDN）は、Liferay Cloudで提供される組み込み機能です。 このCDNは静的コンテンツをグローバルにキャッシュし、配信速度を大幅に向上させます。 デフォルトでは、 `dev` 環境を除くすべての環境で有効になっています。 `LCP.json` ファイルで）サービスのCDNを有効または無効にするには、 `cdn` を `loadbalancer` オブジェクト内で設定することで可能です。
+Liferayのコンテンツデリバリーネットワーク（CDN）は、Liferay Cloudで提供される組み込み機能です。 このCDNは静的コンテンツをグローバルにキャッシュし、配信速度を大幅に向上させます。 デフォルトでは、 `dev` 環境を除くすべての環境で有効になっています。 `loadbalancer` オブジェクト内の `cdn` の値を設定することで、あるサービス（その `LCP.json` ファイル）に対して CDN を有効または無効にすることが可能です。
 
 ```json
 {
-    "loadBalancer":{
+    "loadBalancer": {
         "cdn": true
-    }.
-←クリック｝
+    }
+}
 ```
 
 ![CDNのステータスは [ネットワーク]ページに表示されます。](./load-balancer/images/02.png)
@@ -43,9 +43,9 @@ Liferayのコンテンツ配信ネットワーク（CDN）は、Liferay Cloudで
 
 CDNは、静的コンテンツをユーザーに配信する際のレイテンシを減らすことでパフォーマンスを向上させます。 しかし、キャッシュが更新される前に、コンテンツの有効性が失われた状態でユーザーに配信されてしまうことがあります。
 
-CDNキャッシュをクリアしてコンテンツを強制的に再取得する必要がある場合は、Liferay Cloudコンソールから手動でクリアすることができます：
+CDNキャッシュをクリアして強制的にコンテンツを再取得する必要がある場合、Liferay Cloudコンソールから手動でクリアすることができます。
 
-1. Liferay Cloudコンソールにログインし、目的の環境に移動します。
+1. Liferay Cloud のコンソールにログインし、該当する環境に移動します。
 
 1. 左側のメニューから ［**Network**］ をクリックします。
 
@@ -67,10 +67,10 @@ CDNキャッシュを頻繁にクリアすると、サーバーのパフォー�
 
 ## ポート
 
-ロードバランサーのサービスエンドポイントがどの内部ポート(`［targetPort］`)を経由するかを設定できます。 Liferay Cloudは、提供するサービスに適したポートを自動的に設定します。
+ロードバランサーのサービスエンドポイントがどの内部ポート(`［targetPort］`)を経由するかを設定できます。 Liferay Cloud は、提供するサービスに応じた正しいポートを自動的に設定します。
 
 ```json
-"targetPort "を指定します。3000
+"targetPort": 3000
 ```
 
 ![ロードバランサーは、ポート構成を示しています。](./load-balancer/images/05.png)
@@ -81,34 +81,34 @@ CDNキャッシュを頻繁にクリアすると、サーバーのパフォー�
 
 - `<SERVICE-NAME>-<PROJECT-NAME>-<ENVIRONMENT-NAME>.lfr.cloud`
 
-`.lfr.cloud` でLiferay Cloudのインフラストラクチャによって作成されたドメインは、ネットワークページのSSL証明書セクションに表示されないワイルドカード証明書によってカバーされています。
+Liferay Cloud のインフラストラクチャで作成されたドメイン `.lfr.cloud` は、Network ページの SSL 証明書セクションに表示されないワイルドカード証明書によってカバーされています。
 
-コンソールまたは `LCP.json`を介して追加されたすべてのカスタムドメインの場合、Liferay Cloudは [Let's Encrypt](https://letsencrypt.org/) に到達して、自動的に更新され、かつ、作成したすべてのカスタムドメインをカバーする証明書を取得します。
+コンソールまたは `LCP.json`を通じて追加されたすべてのカスタムドメインについて、Liferay Cloud は [Let's Encrypt](https://letsencrypt.org/) に連絡し、自動的に更新され、作成したすべてのカスタムドメインをカバーする証明書を取得します。
 
 ### カスタムSSL証明書の追加
 
-独自のSSL証明書を追加して、作成したカスタムドメインをカバーすることもできます。 Let's Encrypt が提供する SSL 証明書（Liferay Cloud コンソールで追加したカスタムドメイン用）を使用するか、または `ウェブサーバー` サービスの `LCP.json` ファイルで秘密の値を参照して、一つまたは複数のカスタム証明書を定義することも可能です。 両方の場所に証明書が存在する場合は、 `LCP.json` ファイルで定義されたカスタム証明書が優先されます。
+独自のSSL証明書を追加して、作成したカスタムドメインをカバーすることもできます。 Let's Encryptが提供するSSL証明書（Liferay Cloudコンソールで追加したカスタムドメイン用）を使用するか、 `Webサーバー` サービスの `LCP.json` ファイルでシークレット値を参照し、一つ以上のカスタム証明書を定義することが可能です。 両方の場所に証明書が存在する場合は、 `LCP.json` ファイルで定義されたカスタム証明書が優先されます。
 
-カスタム証明書を作成する時、Liferay Cloudはカプセル化境界を含む [Base64](https://tools.ietf.org/html/rfc4648#section-4) エンコーディングを使用した適切なPEM形式での鍵と証明書のみを受け入れるということに注意してください。
+カスタム証明書を作成する場合、Liferay Cloudは適切なPEMフォーマットで [Base64](https://tools.ietf.org/html/rfc4648#section-4) エンコーディングされたキーと証明書しか受け付けないことに注意してください。これはカプセル化境界を含む必要があります。
 
-`LCP.json` ファイルにSSL証明書を1枚追加する場合。
+`LCP.json` ファイルに単一のSSL証明書を追加する場合。
 
-1. 証明書の [秘密変数](../security/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) を選択した環境に追加し、 `キー` と `crt` を設定します。
+1. 証明書の `key` と `crt` の値について、 [secret 変数](../security/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) を選択した環境に追加します。
 
-1. プロジェクトリポジトリの `weberver/LCP.json` ファイルに、 `ssl` オブジェクトを `loadbalancer` オブジェクトの中に追加してください。 `key` and `crt` values that [reference the keys for the secrets you added](../security/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json) :
+1. プロジェクトリポジトリの `webserver/LCP.json` ファイルに、 `loadbalancer` オブジェクトの内部に `ssl` オブジェクトを追加し、 `key` と `crt` の値を追加します。 [追加した秘密のキーを参照します](../security/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json) :
 
 ```json
 {
-    "loadbalancer"。{
-        "ssl"。{
-            "key":"@ssl-key-secret",
-            "crt":"@ssl-crt-secret"
-        }.
+    "loadbalancer": {
+        "ssl": {
+            "key": "@ssl-key-secret",
+            "crt": "@ssl-crt-secret"
+        }
     }
 }
 ```
 
-`ssl` オブジェクトを `LCP.json` ファイルで使用すると、この環境で使用するすべてのカスタムドメインにマップする単一のカスタム SSL 証明書が作成されます。
+`LCP.json` ファイルで `ssl` オブジェクトを使用すると、この環境で使用するすべてのカスタムドメインにマッピングされる単一のカスタム SSL 証明書が作成されます。
 
 ### 複数のSSL証明書をカスタムドメインにマッピングする
 
@@ -118,26 +118,25 @@ CDNキャッシュを頻繁にクリアすると、サーバーのパフォー�
 
 ```json
 {
-    "loadbalancer"。{
-        "certs": { 
- "certs"。[
+    "loadbalancer": {
+        "certs": [
             {
-                "customDomains":["acme.liferay.cloud"],
-                "key":"...",
-                "crt":"..."
+                "customDomains": ["acme.liferay.cloud"],
+                "key": "...",
+                "crt": "..."
             },
             {
-                "customDomains":["acme2.liferay.cloud"],
-                "key":"...",
-                "crt":"..."
+                "customDomains": ["acme2.liferay.cloud"],
+                "key": "...",
+                "crt": "..."
             }
-        ]です。
-    ]をクリックします。
-]をクリックします。
+        ]
+    }
+}
 ```
 
 ```{note}
-複数のSSL証明書をカスタムドメインにマッピングするには、［webserver］サービスの［LCP.json］ファイルに［certs］プロパティを追加する必要があります。 Liferay Cloudコンソールでカスタムドメインを追加すると、すべてのカスタムドメインが1つの証明書にマッピングされます。
+複数のSSL証明書をカスタムドメインにマッピングするには、［webserver］サービスの［LCP.json］ファイルに［certs］プロパティを追加する必要があります。 Liferay Cloudコンソールからカスタムドメインを追加すると、代わりにすべてのカスタムドメインが1つの証明書にマッピングされます。
 ```
 
 ### SSL証明書の生成
@@ -192,17 +191,17 @@ base64encodedcertificate
 
 [ネットワーク]ページには、サービスごとに最大1つのカスタム証明書が表示されます。 詳細は、 [カスタムドメイン](./custom-domains.md)参照してください。
 
-![Liferay Cloudは、カスタムドメインをカバーするSSL証明書のステータスを示しています。](./load-balancer/images/06.png)
+![Liferay Cloud は、カスタムドメインをカバーする SSL 証明書のステータスを表示します。](./load-balancer/images/06.png)
 
 ## 環境変数リファレンス
 
-| 名前         | 値                                  | 説明                                                                                                                                                                            |
-|:---------- |:---------------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `クーデター`    | false                              | CDNはデフォルトで無効になっています。 設定を`true`にすることで有効にできます。                                                                                                                                  |
-| `カスタムドメイン` | ["example.com", "www.example.com"] | カスタムドメインの名前。 複数をリストできます。                                                                                                                                                      |
-| `ターゲットポート` | 3000                               | ロードバランサーのポート番号                                                                                                                                                                |
-| `キー`       |                                    | Base64形式のSSL証明書のキー。 これを [`ssl`](#adding-custom-ssl-certificates) オブジェクト、または [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) オブジェクトにグループ化します （複数の証明書をリストするために）。  |
-| `クルト`      |                                    | Base64形式のSSL証明書のcrt。 これを [`ssl`](#adding-custom-ssl-certificates) オブジェクト、または [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) オブジェクトにグループ化します （複数の証明書をリストするために）。 |
+| 名前              | 値                                  | 説明                                                                                                                                                                            |
+|:--------------- |:---------------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cdn`           | false                              | CDNはデフォルトで無効になっています。 設定を`true`にすることで有効にできます。                                                                                                                                  |
+| `customDomains` | ["example.com", "www.example.com"] | カスタムドメインの名前。 複数をリストできます。                                                                                                                                                      |
+| `targetPort`    | 3000                               | ロードバランサーのポート番号                                                                                                                                                                |
+| `key`           |                                    | Base64形式のSSL証明書のキー。 これを [`ssl`](#adding-custom-ssl-certificates) オブジェクト、または [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) オブジェクトにグループ化します （複数の証明書をリストするために）。  |
+| `crt`           |                                    | Base64形式のSSL証明書のcrt。 これを [`ssl`](#adding-custom-ssl-certificates) オブジェクト、または [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) オブジェクトにグループ化します （複数の証明書をリストするために）。 |
 
 ## 追加情報
 

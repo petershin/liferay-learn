@@ -10,6 +10,7 @@ toc:
 - ./build-and-deploy/configuring-persistent-file-storage-volumes.md
 - ./build-and-deploy/ignoring-files-and-folders.md
 ---
+
 # ビルドとデプロイ
 
 ```{toctree}
@@ -26,13 +27,13 @@ build-and-deploy/configuring-persistent-file-storage-volumes.md
 build-and-deploy/ignoring-files-and-folders.md
 ```
 
-- [Liferay Cloud デプロイメントワークフローの概要](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+- [Liferay Cloud 導入ワークフローの概要](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
 
-## Liferay Cloudへのデプロイ
+## Liferay Cloudへのデプロイメント
 
 - [デプロイタイプについて](./build-and-deploy/understanding-deployment-types)
 - [デプロイメント戦略について](./build-and-deploy/understanding-deployment-strategies)
-- [Liferay Cloudコンソールによる変更の展開](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
+- [Liferay Cloud Consoleを使った変更のデプロイメント](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
 - [CLIツールによる変更点のデプロイ](./build-and-deploy/deploying-changes-via-the-cli-tool)
 - [CIサービスのビルドを自動的にデプロイする](./build-and-deploy/automatically-deploying-ci-service-builds)
 - [Jenkinsステージの再起動](./build-and-deploy/restarting-jenkins-stages)

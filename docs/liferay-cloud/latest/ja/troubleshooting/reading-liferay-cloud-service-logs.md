@@ -1,12 +1,10 @@
-# Liferay Cloudのサービスログを読む
+# Liferay Cloud サービスのログを読む
 
-環境ログは、プロジェクトにおける技術的な問題を診断し、解決するために非常に重要です。 Liferay Cloudでは、ユーザーがLiferay CloudのコンソールやOS端末からアクセスしてダウンロードできる様々な環境ログを提供しています。
-
-<a name="log-types" />
+環境ログは、プロジェクトにおける技術的な問題を診断し、解決するために非常に重要です。 Liferay Cloud では、ユーザーが Liferay Cloud コンソールや OS ターミナルからアクセスし、ダウンロードできる様々な環境ログが提供されています。
 
 ## ログの種類
 
-Liferay Cloudでは、環境サービスに対して3種類のログを提供しています：
+Liferay Cloud では、環境サービスに対して 3 種類のログを提供しています。
 
 * **Build Logs** ：これらのログは、アプリケーションの起動時に生成されるビルド情報を一覧表示します。 ビルド情報の例としては、レジストリからDockerイメージが引き出されたとき、デプロイが進行中のとき、ビルドが成功したときなどがあります。
 
@@ -14,19 +12,17 @@ Liferay Cloudでは、環境サービスに対して3種類のログを提供し
 
 * **Application Logs** ：これらのログは、アプリケーションが実行され、ユーザーがアクセスした後に生成されたランタイム情報をリストアップします。
 
-<a name="log-structure" />
-
 ## ログ構造
 
-Liferay Cloudのログは、文脈に沿った追加情報を提供する特定の構造に準拠しています。 例として、以下のログメッセージを参照してください：
+Liferay Cloud のログは、追加の文脈情報を与える特定の構造に準拠しています。 例として、以下のログメッセージを参照してください：
 
 ```log
 Jun 29 10:07:46.585 build-214 [webserver-699bf65bfb-4w8pl] [WARNING] 179/170746 (13) : api/backend2 changed its IP from 10.0.17.186 to 10.0.26.120 by DNS cache.
 ```
 
-Liferay Cloudの多くのログには、このメッセージが直接サービスの出力からではなく、Liferay Cloudのインフラから来たことを示すラベル（この例では、 `[WARNING]`）が付いています。 ログには、`[LIFERAY]`のように、Liferay Cloudのインフラに由来するが、サービスに関連するラベルを付けることもできます。 サービスの出力から直接取得されるログには、ラベルがありません。
+Liferay Cloud の多くのログには、このメッセージがサービスの出力から直接ではなく、Liferay Cloud のインフラから来たことを示すラベル（この例では `[WARNING]`）があります。 ログは、Liferay Cloud インフラストラクチャから来るが、サービスに関連するラベルを持つこともできます。例えば、 `[LIFERAY]`。 サービスの出力から直接取得されるログには、ラベルがありません。
 
-さらに、これらのコンポーネントはLiferay Cloudのログメッセージに常に存在しています：
+さらに、これらのコンポーネントは、Liferay Cloudのあらゆるログメッセージに常に存在します。
 
 * **タイムスタンプ** : この例では、 `Jun 29 10:07:46.585`となっています。
 
@@ -39,8 +35,6 @@ Liferay Cloudの多くのログには、このメッセージが直接サービ�
 ![インスタンスのドロップダウンメニューをクリックすると、すべてのインスタンスが表示されます](./reading-liferay-cloud-service-logs/images/01.png)
 
 インスタンスIDの形式は、サービスがどのような配布タイプ（展デプロイまたはステートフルセット）として構成されているかによって異なります。 詳細は、 [デプロイタイプについて](../build-and-deploy/understanding-deployment-types.md) を参照してください。
-
-<a name="instance-id-for-deployment-type-logs" />
 
 ### 配布タイプログのインスタンスID
 
@@ -58,8 +52,6 @@ Jun 29 10:07:57.102 build-214 [liferay-7485669bdd-7ktfl] [LIFERAY] Executing 010
 
 * ランダムに生成された **コンテナID** ：この例では、 `7ktfl`となっています。 サービスが起動するたびに新しいコンテナが作成されるため（例えば、新しいビルドをデプロイした後サービスが再起動した場合など）、新しいコンテナIDが生成されます。 バージョンIDが変更されない場合でも、再起動すると新しいコンテナIDが生成されることに注意してください（例えば、 [ライブネスやレディネスプローブの失敗](../troubleshooting/self-healing.md) が再起動をトリガーした場合など）。
 
-<a name="instance-id-for-stateful-set-type-logs" />
-
 ### ステートフルセットタイプログのインスタンスID
 
 ステートフルセットタイプのログは、インスタンスIDが小さく、一貫性があります。 以下はステートフルセットタイプサービスのログメッセージの例です：
@@ -76,11 +68,9 @@ Jun 29 07:44:44.676 build-214 [search-0] #  - Creating and Starting rollup jobs 
 
 ステートフルセットタイプのサービスのインスタンスID全体は、サービスの各ノードで常に同じものが使用されます。 これにより、サービスが再びデプロイされた後でも、同じインスタンスIDを使用して、同じ [ボリューム](../build-and-deploy/configuring-persistent-file-storage-volumes.md)を持つクラスタ内のノードを確実に識別することができます。
 
-<a name="accessing-logs-via-the-dxp-cloud-console" />
+## Liferay Cloud Consoleからログにアクセスする
 
-## Liferay Cloudコンソールを介したログへのアクセス
-
-Liferay Cloudのコンソールから環境サービスログにアクセスするには、以下の手順に従ってください：
+Liferay Cloud コンソールから環境サービスログにアクセスするには、以下の手順に従います。
 
 1. プロジェクト環境に移動します。
 
@@ -95,8 +85,6 @@ Liferay Cloudのコンソールから環境サービスログにアクセスす�
 また、各サービスのログは、各サービスの専用ページの **ログ** タブでご覧いただけます。
 
 ![図2：各サービスの専用ページの［Logs］タブから、各サービスのログにアクセスし、ダウンロードすることができます。](./reading-liferay-cloud-service-logs/images/03.png)
-
-<a name="accessing-logs-via-the-terminal" />
 
 ## ターミナルからログにアクセスする
 
@@ -119,8 +107,6 @@ lcp log -p <environment-id>
 ```shell
 lcp log -p <environment-id> -s <service-id>
 ```
-
-<a name="additional-information" />
 
 ## 追加情報
 

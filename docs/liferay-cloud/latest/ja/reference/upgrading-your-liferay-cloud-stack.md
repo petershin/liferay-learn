@@ -1,12 +1,12 @@
-# DXPクラウドスタックのアップグレード
+# Liferayクラウドスタックのアップグレード
 
-Liferay Cloudバージョン4の新しい構造を使用するようにリポジトリをアップグレードすると、リポジトリ内でLiferayワークスペースを活用し、サービスを最新の状態に保ち、さまざまな新機能や更新された機能を使用できます。
+リポジトリをアップグレードしてLiferay Cloudバージョン4の新しい構造を使用することで、リポジトリ内でLiferay Workspaceを活用し、サービスを最新の状態に保ち、様々な新機能や更新機能を使用することができます。
 
 新しいリポジトリ構造へのアップグレードには、 [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) の使用が含まれます。
 
 ## アップグレードの準備
 
-Liferay Cloudスタックのバージョン4.x.xにアップグレードするには、現在のサービスが3.x.xである必要があります。 現在のバージョンを確認するには、リポジトリでgradle.propertiesファイルを見つけます。 バージョン4.x.xにアップグレードする前のリポジトリは、このような構造になっています：
+Liferay Cloud スタックのバージョン 4.x.x にアップグレードするためには、現在のサービスが 3.x.x であることが必要です。 現在のバージョンを確認するには、リポジトリでgradle.propertiesファイルを見つけます。 バージョン4.x.xにアップグレードする前のリポジトリは、このような構造になっています：
 
 ```
 repository
@@ -40,14 +40,14 @@ Dockerイメージ名の末尾にある数字は、使用しているLiferay Clo
 次に、Gitリポジトリがクリーンなブランチ上にあることを確認します。 アップグレードスクリプトは、以前にコミットされていないファイルをコミットし、 `upgrade-workspace`と呼ばれる新しいブランチをチェックアウトします。
 
 ```{important}
-すでに `upgrade-workspace` ブランチがある場合、スクリプトはそのブランチの作成をスキップし、現在のブランチで作業を行います。
+すでに `upgrade-workspace` ブランチがある場合は、スクリプトはそのブランチの作成をスキップし、現在のブランチで作業します。
 ```
 
 ## アップグレードスクリプトの実行
 
 アップグレードするには、次の手順を実行します：
 
-1. [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) をダウンロードし、ローカルのLiferay Cloudリポジトリのルートに抽出します：
+1. [アップグレードスクリプト](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) をダウンロードし、ローカルの Liferay Cloud リポジトリのルートに解凍してください。
 
     ```bash
     curl -L https://github.com/LiferayCloud/stack-upgrade/archive/release.zip -O
@@ -121,7 +121,7 @@ Dockerイメージ名の末尾にある数字は、使用しているLiferay Clo
 
 ## CIサービスの環境変数を確認する
 
-プロジェクトの `ci/LCP.json` ファイル内の環境変数は、サービススタックのアップグレード完了後に異なる動作をする可能性があります。 アップグレードしたプロジェクトを続行する前に、 `ci` サービスの環境変数が正しい設定を反映していることを確認してください。
+サービススタックのアップグレードを完了すると、プロジェクトの `ci/LCP.json` ファイル内の環境変数が異なる動作をするようになります。 アップグレードしたプロジェクトを続行する前に、 `ci` サービスの環境変数が正しい設定を反映していることを確認してください。
 
 ### リポジトリ統合変数の確認
 
@@ -172,9 +172,13 @@ Dockerイメージ名の末尾にある数字は、使用しているLiferay Clo
     lcp deploy --project=<project-name> --environment=infra
 ```
 
-また、 [開発ワークフロー](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) に従って、Liferay Cloud コンソールからビルドとして変更をデプロイすることも可能です。
+あるいは、 [開発ワークフロー](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) に従って、Liferay Cloud コンソールからビルドとして変更をデプロイすることもできます。
 
-その後、 [新しいサービスバージョンを](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) 開発環境にデプロイしたり、Liferay Cloudサービスの新しいバージョンの新機能を試したりすることができます。 詳細は、[変更点の説明 ](./liferay-cloud-project-changes-in-version-4.md)ご覧ください。
+</a> その後、新しいサービスバージョン
+
+を開発環境にデプロイしたり、Liferay Cloud サービスの新バージョンの新機能の一部を試したりすることができます。 詳細は、[変更点の説明 ](./liferay-cloud-project-changes-in-version-4.md)ご覧ください。</p> 
+
+
 
 ## 追加情報
 

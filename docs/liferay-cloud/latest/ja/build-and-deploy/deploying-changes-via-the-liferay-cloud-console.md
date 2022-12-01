@@ -1,16 +1,16 @@
-# Liferay Cloudコンソールによる変更の展開
+# Liferay Cloud Consoleを使った変更のデプロイメント
 
-このチュートリアルでは、Liferayサービスにポータル・プロパティを追加し、プル・リクエストでCIビルドをトリガーし、Liferay Cloudコンソールを介して `dev` 環境に新しいビルドをデプロイするプロセスを説明します。
+このチュートリアルでは、Liferay サービスにポータルのプロパティを追加し、プルリクエストで CI ビルドをトリガーし、Liferay Cloud コンソールから `dev` 環境に新しいビルドをデプロイする手順について説明します。
 
 始めるためには、プロジェクトのCIサービスと統合されたコードホスティングサービスと、プロジェクトのリポジトリのローカルな作業コピーが必要です。
 
 ```{note}
-別のデプロイメントワークフローについては、[CLIツールによる変更のデプロイ](./deploying-changes-via-the-cli-tool.md) を参照して、Liferay Cloud Platform CLIツールを使用してプロジェクト環境にローカルな変更をデプロイする方法について学んでください。
+別のデプロイメントワークフローについては、[CLIツールによる変更のデプロイ](./deploying-changes-via-the-cli-tool.md)_を参照して、Liferay Cloud Platform CLIツールを使用してプロジェクト環境にローカルな変更をデプロイする方法について学んでください。
 ```
 
 * [Liferayサービスへのポータル・プロパティの追加](#adding-a-portal-property-to-the-liferay-service)
 * [GitHubを使ったJenkinsビルドの実行](#triggering-a-jenkins-build-with-github)
-* [Liferay Cloudコンソールによる新規ビルドのデプロイメント](#deploying-your-new-build-via-the-dxp-cloud-console)
+* [Liferay Cloud Console を使って新しいビルドをデプロイする](#deploying-your-new-build-via-the-liferay-cloud-console)
 * [サンプルデプロイメントの検証](#verifying-your-sample-deployment)
 
 ## Liferayサービスへのポータル・プロパティの追加
@@ -32,7 +32,7 @@
    ```
 
    ```{note}
-   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev` となります。 ディレクトリ構造の違いについては [バージョン4におけるLiferay Cloudプロジェクトの変更](../reference/liferay-cloud-project-changes-in-version-4.md) サービスのバージョンの確認方法については [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) をご参照ください。
+   バージョン3.x.xのサービスを使用している場合は、適切なフォルダパスは、`lcp/liferay/deploy/dev`となります。 ディレクトリ構造の違いについては [Liferay Cloud プロジェクト バージョン 4 での変更点](../reference/liferay-cloud-project-changes-in-version-4.md) _ を、サービスのバージョンの確認方法については [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) _ を参照ください。
    ```
 
 1. 以下のコマンドで、 `portal-env.properties` ファイルに変更を追加し、コミットします。
@@ -65,11 +65,11 @@
 
    ![プロジェクトのJenkinsページから詳細なログを見ることができます。](./deploying-changes-via-the-liferay-cloud-console/images/03.png)
 
-## Liferay Cloudコンソールによる新規ビルドのデプロイメント
+## Liferay Cloud Console を使って新しいビルドをデプロイする
 
-新しいビルドの準備ができたら、Liferay Cloudコンソールからプロジェクトの `dev` 環境にデプロイします。
+新しいビルドの準備ができたら、Liferay Cloud コンソールからプロジェクトの `dev` 環境にデプロイしてください。
 
-1. Liferay Cloudコンソールで、プロジェクトの **Builds** ページに移動します。 このページは、どのプロジェクト環境からでもアクセスできます。
+1. Liferay Cloud コンソールで、プロジェクトの **Builds** ページに移動します。 このページは、どのプロジェクト環境からでもアクセスできます。
 
 1. デプロイしたいビルドの ［**Actions**］ ボタン（⋮）をクリックし、 ［**Deploy Build To...**］ を選択します。
 
@@ -97,9 +97,9 @@
 
 1. プロジェクトの `dev` の環境に移動します。
 
-1. **Web Server** サービスのページにアクセスし、その URL をクリックして、 `dev` 環境の DXP インスタンスにアクセスします：`https://webserver-<project-name>-dev.lfr.cloud/`。
+1. **Web Server** サービスのページにアクセスし、その URL をクリックして `dev` 環境の Liferay インスタンスにアクセスします。 `https://webserver-<project-name>-dev.lfr.cloud/`.
 
-   ![開発環境のDXPインスタンスにアクセスするために、WebサーバのURLをクリックします。](./deploying-changes-via-the-liferay-cloud-console/images/08.png)
+   ![Web Server urlをクリックし、開発環境のLiferayインスタンスにアクセスします。](./deploying-changes-via-the-liferay-cloud-console/images/08.png)
 
 1. ホームページの下部にWebサーバーのノードが表示されていることを確認します。
 
@@ -107,7 +107,7 @@
 
 ## 追加情報
 
-* [DXPクラウド開発ワークフローの概要](./overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloud 開発ワークフローの概要](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLIツールによる変更点のデプロイ](./deploying-changes-via-the-cli-tool.md)
 * [自動デプロイメントの設定](./automatically-deploying-ci-service-builds.md)
-* [Liferay DXPサービスの設定　](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Liferay サービスを設定する](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)

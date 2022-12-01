@@ -148,6 +148,6 @@ System objects have their own default fields, though there is some overlap with 
 
 ## Additional Information
 
-* [Creating Objects](./creating-objects.md)
+* [Creating Objects](../creating-objects.md)
 * [Adding Fields to Objects](../fields/adding-fields-to-objects.md)
 * [Expression Builder Validations Reference](./expression-builder-validations-reference.md)

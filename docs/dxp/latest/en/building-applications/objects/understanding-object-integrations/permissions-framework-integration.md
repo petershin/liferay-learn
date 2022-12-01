@@ -57,7 +57,7 @@ Follow these steps:
 
 1. Navigate to the desired custom Object.
 
-1. Click on the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired entity and select *Permissions*.
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired entity and select *Permissions*.
 
    ![Click the Actions button for the desired entity and select Permissions.](./permissions-framework-integration/images/01.png)
 
@@ -76,4 +76,3 @@ Follow these steps:
 * [Understanding Object Integrations](../understanding-object-integrations.md)
 * [Objects Overview](../../objects.md)
 * [Creating Objects](../creating-and-managing-objects/creating-objects.md)
-* [Managing Objects](../creating-and-managing-objects/managing-objects.md)

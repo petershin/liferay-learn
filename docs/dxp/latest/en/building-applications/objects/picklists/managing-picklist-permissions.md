@@ -50,7 +50,7 @@ Follow these steps to manage permissions for individual Picklists:
 
 1. Open the *Picklists* application via the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)).
 
-1. Click on the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired Picklist and select *Permissions*.
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired Picklist and select *Permissions*.
 
    ![Click the Actions button for the desired Picklist and select Permissions.](./managing-picklist-permissions/images/02.png)
 

@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-Liferay Objects provides development capabilities in the Liferay UI. Using Objects, you can build fully integrated Liferay applications without writing any code or manually deploying modules. This process includes [creating](#creating-object-drafts) an initial draft of the object definition, [editing](#editing-object-drafts) the draft, and finally [publishing](#publishing-object-drafts) it to create the new application. Publishing an object draft creates a fully integrated Liferay application that can be [managed and extended](./managing-objects.md) at any time via the Objects admin page.
+Liferay Objects provides development capabilities in the Liferay UI. Using Objects, you can build fully integrated Liferay applications without writing any code or manually deploying modules. This process includes [creating](#creating-object-drafts) an initial draft of the object definition, [editing](#editing-object-drafts) the draft, and finally [publishing](#publishing-object-drafts) it to create the new application. Publishing an object draft creates a fully integrated Liferay application that can be managed and extended at any time via the Objects admin page.
 
 ## Creating Object Drafts
 
@@ -44,17 +44,17 @@ Follow these steps to edit the object draft:
 
    ![Object features and configuration options are organized into eight tabs.](./creating-objects/images/03.png)
 
-1. Go to the *Fields* tab to add custom fields. Each field represents a database column for storing specific types of values. See [Adding Fields to Objects](./adding-fields-to-objects.md) for more information.
+1. Go to the *Fields* tab to add custom fields. Each field represents a database column for storing specific types of values. See [Adding Fields to Objects](./fields/adding-fields-to-objects.md) for more information.
 
    By default, all objects include these system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status.
 
    ![Add fields to the object from the Fields tab.](./creating-objects/images/04.png)
 
-1. (Optional) Go to the *Relationships* tab to add relationships. Relationships are connections between object definitions that you can use to link their entries. See [Defining Object Relationships](./defining-object-relationships.md) for more information.
+1. (Optional) Go to the *Relationships* tab to add relationships. Relationships are connections between object definitions that you can use to link their entries. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information.
 
    ![Add relationships to the object from the Relationships tab.](./creating-objects/images/05.png)
 
-1. (Optional) Go to the *Layouts* tab to add layouts. Object layouts determine how fields and relationships are displayed when creating and viewing object entries. See [Designing Object Layouts](./designing-object-layouts.md) for more information.
+1. (Optional) Go to the *Layouts* tab to add layouts. Object layouts determine how fields and relationships are displayed when creating and viewing object entries. See [Designing Object Layouts](./layouts/designing-object-layouts.md) for more information.
 
    ```{note}
    If you do not add a custom layout and set it as default, the object uses an automatically generated layout for its entries. This layout has a single tab that displays all object fields in alphabetical order and does not display relationships. To display relationships, you must create a custom layout with a dedicated relationships tab.
@@ -62,19 +62,19 @@ Follow these steps to edit the object draft:
 
    ![Add custom layouts to the object from the Layouts tab.](./creating-objects/images/06.png)
 
-1. (Optional) Go to the Actions tab to add custom actions. Each action defines an operation that runs automatically according to a set trigger. See [Defining Object Actions](./defining-object-actions.md) for more information.
+1. (Optional) Go to the Actions tab to add custom actions. Each action defines an operation that runs automatically according to a set trigger. See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
 
    ![Add custom actions to the object from the Actions tab.](./creating-objects/images/07.png)
 
-1. (Optional) Go to the Views tab to add custom views. Object views determine how entries are displayed in the object's application page. See [Designing Object Views](./designing-object-views.md) for more information.
+1. (Optional) Go to the Views tab to add custom views. Object views determine how entries are displayed in the object's application page. See [Designing Object Views](./views/designing-object-views.md) for more information.
 
    ![Add custom views to the object from the Views tab.](./creating-objects/images/08.png)
 
-1. (Optional) Go to the Validations tab to add validations. Each validation sets rules for determining valid field entries. See [Adding Custom Validations](./adding-custom-validations.md)
+1. (Optional) Go to the Validations tab to add validations. Each validation sets rules for determining valid field entries. See [Adding Custom Validations](./validations/adding-custom-validations.md)
 
    ![Add custom validations to the object from the Validations tab.](./creating-objects/images/09.png)
 
-1. (Optional) If you've added a state field to the draft, go to the State Manager tab to define its flow. See [Adding and Managing Custom States](./adding-and-managing-custom-states.md) for more information.
+1. (Optional) If you've added a state field to the draft, go to the State Manager tab to define its flow. See [Adding and Managing Custom States](./fields/adding-and-managing-custom-states.md) for more information.
 
    ![Define flows for state fields in the State Manager tab.](./creating-objects/images/10.png)
 
@@ -94,7 +94,7 @@ Follow these steps to edit the object draft:
 
    **Site**: When scoped by Site, the object's data is stored per Site.
 
-1. (Optional) Select a Panel Category Key to determine where the definition is displayed in the Liferay UI.
+1. (Optional) Select a Panel Category Key to determine where the definition appears in the Liferay UI.
 
    For company-scoped objects, select tab and category in the Global Menu (![Global Menu](../../../images/icon-applications-menu.png)).
 
@@ -163,7 +163,6 @@ For Liferay 7.4 U25/GA25 and earlier versions, users cannot delete published obj
 ## Additional Information
 
 * [Objects Overview](../../objects.md)
-* [Adding Fields to Objects](./adding-fields-to-objects.md)
-* [Defining Object Relationships](./defining-object-relationships.md)
-* [Designing Object Layouts](./designing-object-layouts.md)
-* [Managing Objects](./managing-objects.md)
+* [Adding Fields to Objects](./fields/adding-fields-to-objects.md)
+* [Defining Object Relationships](./relationships/defining-object-relationships.md)
+* [Designing Object Layouts](./layouts/designing-object-layouts.md)

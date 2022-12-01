@@ -8,19 +8,19 @@ Picklists is an application for creating standard lists of values that are under
 
 Follow these steps to create a Picklist:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click on *Picklists*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
-1. Click on the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
    ![Click the Add button to create a new Picklist.](./using-picklists/images/01.png)
 
-1. Enter a *Name* for the Picklist, and click on *Save*. This value identifies the list in the Liferay UI and can be localized after creation.
+1. Enter a *Name* for the Picklist, and click *Save*. This value identifies the list in the Liferay UI and can be localized after creation.
 
-1. Click on the new Picklist to edit it.
+1. Click the new Picklist to edit it.
 
 1. Under Items, click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
-   ![Click on the Add button to add a new item to the Picklist.](./using-picklists/images/02.png)
+   ![Click the Add button to add a new item to the Picklist.](./using-picklists/images/02.png)
 
 1. In the modal window, enter a *Name* and *Key* for the item.
 
@@ -32,7 +32,7 @@ Follow these steps to create a Picklist:
    Once created, an Item's key cannot be changed, but you can edit its name or delete it at any time.
    ```
 
-   ![Enter a name and key, and then click on Save.](./using-picklists/images/03.png)
+   ![Enter a name and key, and then click Save.](./using-picklists/images/03.png)
 
 1. Click *Save*. This immediately updates the Picklist with the new item.
 
@@ -42,7 +42,7 @@ Follow these steps to create a Picklist:
 
 ## Adding Picklist Fields to Objects
 
-Once a list is created, you can select it when creating Object fields. Select the *Picklist* field type and choose the desired list. See [Adding Fields to Objects](../creating-and-managing-objects/adding-fields-to-objects.md) for more information.
+Once a list is created, you can select it when creating Object fields. Select the *Picklist* field type and choose the desired list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) for more information.
 
 ![Users can select the Picklist when creating new Object fields.](./using-picklists/images/05.png)
 
@@ -81,5 +81,5 @@ When making POST, PATCH, and PUT API calls for Objects that include a Picklist f
 
 ## Additional Information
 
-* [Adding Fields to Objects](../creating-and-managing-objects/adding-fields-to-objects.md)
+* [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md)
 * [Managing Picklist Permissions](./managing-picklist-permissions.md)

@@ -21,11 +21,11 @@ Relationships add fields and tables to object definitions for relating their ent
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card}
+:::{grid-item-card} Defining Object Relationships
 :link: ./relationships/defining-object-relationships.md
 :::
 
-:::{grid-item-card}
+:::{grid-item-card} Removing Relationships
 :link: ./relationships/removing-relationships.md
 :::
 ::::

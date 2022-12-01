@@ -91,7 +91,7 @@ All the capabilities from Forms can be leveraged to insert data into specific ob
 
 ### Objects Relationships
 
-You can solve complex use cases with [object relationships](../building-applications/objects/creating-and-managing-objects/defining-object-relationships.md), easy way to relate objects with not only custom objects, but also native objects shipped with Liferay, such as Blog entries or web content.
+You can solve complex use cases with [object relationships](../building-applications/objects/creating-and-managing-objects/relationships/defining-object-relationships.md), easy way to relate objects with not only custom objects, but also native objects shipped with Liferay, such as Blog entries or web content.
 
 ### Objects Integration with DXP Frameworks
 

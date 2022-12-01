@@ -1,7 +1,7 @@
 ---
 toc:
 - ./fields/adding-fields-to-objects.md
-- ./adding-and-managing-custom-states.md
+- ./fields/adding-and-managing-custom-states.md
 - ./fields/aggregation-fields.md
 - ./fields/attachment-fields.md
 ---
@@ -20,7 +20,7 @@ fields/attachment-fields.md
 
 Object fields are data definitions that represent database columns and store different types of values. All objects include default system fields, but you can [add custom fields](./fields/adding-fields-to-objects.md) to both draft and published objects.
 
-When you [publish](../creating-objects.md#publishing-object-drafts) an object draft, Liferay creates an initial database table that includes all fields and relationships in the draft at the time of publishing. Fields and relationships added after publishing are added to a side table (i.e., `[Initial_Table_Name]_x`).
+When you [publish](./creating-objects.md#publishing-object-drafts) an object draft, Liferay creates an initial database table that includes all fields and relationships in the draft at the time of publishing. Fields and relationships added after publishing are added to a side table (i.e., `[Initial_Table_Name]_x`).
 
 ![All objects include default system fields, but you can add custom fields.](./fields/images/01.png)
 

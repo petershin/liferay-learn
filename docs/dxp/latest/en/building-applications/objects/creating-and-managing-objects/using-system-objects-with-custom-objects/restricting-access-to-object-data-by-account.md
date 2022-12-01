@@ -12,7 +12,7 @@ Follow these steps to use accounts to restrict access to custom Object entries:
 
 1. Begin editing the Account system object.
 
-1. Add a *One to Many* or *Many to Many* relationship, relating the Account object to the desired custom object. See [Defining Object Relationships](../defining-object-relationships.md) for more information.
+1. Add a *One to Many* or *Many to Many* relationship, relating the Account object to the desired custom object. See [Defining Object Relationships](../relationships/defining-object-relationships.md) for more information.
 
    ![Relate the Account system object to the desired custom object.](./restricting-access-to-object-data-by-account/images/02.png)
 
@@ -30,5 +30,5 @@ This adds a new mandatory account selection field to the object, so anyone addin
 
 * [Accounts](../../../../users-and-permissions/accounts.md)
 * [Extending System Objects](../extending-system-objects.md)
-* [Defining Object Relationships](../defining-object-relationships.md)
+* [Defining Object Relationships](../relationships/defining-object-relationships.md)
 * [Accessing Accounts Data from Custom Objects](./accessing-accounts-data-from-custom-objects.md)

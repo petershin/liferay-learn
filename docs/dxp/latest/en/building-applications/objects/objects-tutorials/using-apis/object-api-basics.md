@@ -15,7 +15,7 @@ For a complete list of APIs generated for both Site and Company Objects, see [Ob
 
 Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) a basic Object for this tutorial:
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
 1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and enter these values:
 

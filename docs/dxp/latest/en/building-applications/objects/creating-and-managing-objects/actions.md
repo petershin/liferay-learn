@@ -14,7 +14,9 @@ actions/understanding-action-types.md
 
 Actions define custom operations triggered by object entry events. While an action is active, Liferay listens for when users add, delete, or update entries and then performs the set action.
 
-Liferay provides four action types:
+![Add actions to object definitions.](./actions/images/01.png)
+
+Liferay provides these action types:
 
 | Action Type | Description |
 | :--- | :--- |
@@ -22,8 +24,6 @@ Liferay provides four action types:
 | [Groovy Script](./actions/understanding-action-types.md#groovy-script-actions) | Execute custom [Groovy](https://groovy-lang.org/) scripts. |
 | [Notification](./actions/understanding-action-types.md#notification-actions) | Send email notifications using a predefined template. |
 | [Add an Object Entry](./actions/understanding-action-types.md#add-an-object-entry-actions) | Create entries in an active object. |
-
-![Add actions to object definitions.](./actions/images/01.png)
 
 ::::{grid} 2
 :gutter: 3 3 3 3

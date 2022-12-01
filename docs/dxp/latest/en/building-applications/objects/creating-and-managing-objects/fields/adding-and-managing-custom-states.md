@@ -14,7 +14,7 @@ Follow these steps to use a picklist to add custom states for an object's entrie
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
-1. Create a picklist with the desired items. These items define object entry states. See [Creating a Picklist](../actions/defining-object-actions/images/07.png../picklists/using-picklists.md#creating-a-picklist) for more detailed steps.
+1. Create a picklist with the desired items. These items define object entry states. See [Creating a Picklist](../../picklists/using-picklists.md#creating-a-picklist) for more detailed steps.
 
    ```{note}
    You can add, remove, or edit picklist items for both draft and published object definitions at any time.

@@ -13,11 +13,11 @@ The chart is configured to call the Object via Headless API every five seconds, 
 
 Then, follow these steps to add the `/o/c/*` URL pattern to the *Default Portal CORS Configuration*:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Security Tools*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Security Tools*.
 
 1. Go to the *Portal Cross-Origin Resource Sharing (CORS)* tab and click *Default Portal CORS Configuration*.
 
-   ![Click on Default Portal CORS Configuration](./using-object-data-with-react-charts/images/02.png)
+   ![Click Default Portal CORS Configuration](./using-object-data-with-react-charts/images/02.png)
 
 1. Add a *URL Pattern* with the `/o/c/*` value and click *Save*. This enables CORS for all Object APIs.
 
@@ -25,7 +25,7 @@ Then, follow these steps to add the `/o/c/*` URL pattern to the *Default Portal 
 
 ## Creating an Object for the React Chart
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
 1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) and enter these values:
 
@@ -39,7 +39,7 @@ Then, follow these steps to add the `/o/c/*` URL pattern to the *Default Portal 
    The provided React app uses these values.
    ```
 
-1. Select the new *Object* draft, click on the *Field* tab, and add these *fields*:
+1. Select the new *Object* draft, click the *Field* tab, and add these *fields*:
 
    | Label | Field Name | Type | Required |
    | :--- | :--- | :--- | :--- |

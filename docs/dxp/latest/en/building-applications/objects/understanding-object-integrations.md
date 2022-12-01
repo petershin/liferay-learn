@@ -18,9 +18,9 @@ Published custom Objects are integrated with Liferay's core frameworks, so you c
 
 | Framework | Description |
 | :--- | :--- |
-| Asset | Use the [Attachment field](../objects/understanding-object-field-types.md#attachment) to upload files to your instance's document library. |
+| Asset | Use the [Attachment field](./creating-and-managing-objects/fields/attachment-fields.md) to upload files to your instance's document library. |
 | Audit | Use the [Audit application](./creating-and-managing-objects/auditing-object-definition-events.md) to review Object events with their user and resource info. |
-| Categorization | Add categorization tools to custom Object layouts so users can add [tags and categories](./creating-and-managing-objects/designing-object-layouts.md#adding-categorization) to entries. |
+| Categorization | Add categorization tools to custom Object layouts so users can add [tags and categories](./creating-and-managing-objects/layouts/designing-object-layouts.md#adding-categorization) to entries. |
 | Headless | Liferay generates a [headless endpoint](./understanding-object-integrations/headless-framework-integration.md) for each published Object, so you can make REST calls. <!-- TASK: Add GraphQL when supported.--> |
 | Info Framework | Use Object data with [Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md), [Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), [Navigation Menus](../../site-building/site-navigation/using-the-navigation-menus-application.md). Liferay also creates a [Collection Provider](../../content-authoring-and-management/collections-and-collection-pages.md) for displaying its entries. |
 | Localization | Localize fields for Object definitions to better serve your global users. |

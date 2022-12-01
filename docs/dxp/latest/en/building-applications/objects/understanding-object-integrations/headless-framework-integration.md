@@ -6,7 +6,7 @@ When you publish an Object, Liferay automatically generates REST APIs for it. Th
 
 All Objects use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/timeoffrequests`). Each Object entry schema includes all of the Object's fields and relationships.
 
-You can view and test an Object's APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). REST APIs are listed under *REST Applications*. <!--TASK: uncomment when GraphQL APIs are supported, "Click on *GraphQL* to access Liferay's [Graph*i*QL](https://github.com/graphql/graphiql) browser."-->
+You can view and test an Object's APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). REST APIs are listed under *REST Applications*. <!--TASK: uncomment when GraphQL APIs are supported, "Click *GraphQL* to access Liferay's [Graph*i*QL](https://github.com/graphql/graphiql) browser."-->
 
 See [Using APIs](../objects-tutorials/using-apis.md) for related Object tutorials.
 

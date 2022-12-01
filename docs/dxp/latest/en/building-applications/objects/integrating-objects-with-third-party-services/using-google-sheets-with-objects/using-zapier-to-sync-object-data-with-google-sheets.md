@@ -28,7 +28,7 @@ Follow these steps to sync Object data to a Google Sheet:
 
    ![Copy the generated webhook URL.](./using-zapier-to-sync-object-data-with-google-sheets/images/04.png)
 
-1. In your Liferay instance, use the copied URL to [define an Object action](../../creating-and-managing-objects/defining-object-actions.md) that sends a request to the webhook endpoint whenever a new Object entry is added.
+1. In your Liferay instance, use the copied URL to [define an Object action](../../creating-and-managing-objects/actions/defining-object-actions.md) that sends a request to the webhook endpoint whenever a new Object entry is added.
 
    ![Define an action that sends a request to the webhook endpoint whenever an entry is added.](./using-zapier-to-sync-object-data-with-google-sheets/images/05.png)
 

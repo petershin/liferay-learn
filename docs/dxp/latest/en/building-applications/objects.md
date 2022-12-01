@@ -7,7 +7,6 @@ toc:
 - ./objects/displaying-object-entries.md
 - ./objects/enabling-workflows-for-objects.md
 - ./objects/picklists.md
-- ./objects/understanding-object-field-types.md
 - ./objects/understanding-object-integrations.md
 - ./objects/objects-application-permissions.md
 - ./objects/integrating-objects-with-third-party-services.md
@@ -24,7 +23,6 @@ objects/deploying-object-widgets-to-sites.md
 objects/displaying-object-entries.md
 objects/enabling-workflows-for-objects.md
 objects/picklists.md
-objects/understanding-object-field-types.md
 objects/understanding-object-integrations.md
 objects/objects-application-permissions.md
 objects/integrating-objects-with-third-party-services.md
@@ -34,7 +32,7 @@ objects/integrating-objects-with-third-party-services.md
 
 With Liferay Objects, you can build and deliver applications without having to write code or deploy modules. Each application built with Objects is integrated with Liferay's core frameworks, so you can quickly develop and manage flexible solutions that adapt Liferay DXP to your business needs while maintaining a seamless user experience.
 
-When creating Objects, users can define data [fields](./objects/creating-and-managing-objects/adding-fields-to-objects.md), complex [relationships](./objects/creating-and-managing-objects/defining-object-relationships.md) between Objects entries, and custom [actions](./objects/creating-and-managing-objects/defining-object-actions.md) that are triggered under specified conditions. You can also design [layouts](./objects/creating-and-managing-objects/designing-object-layouts.md) and [views](./objects/creating-and-managing-objects/designing-object-views.md) to determine how fields and relationships are displayed during entry creation and in the Object's application page.
+When creating Objects, users can define data [fields](./objects/creating-and-managing-objects/fields.md), complex [relationships](./objects/creating-and-managing-objects/relationships.md) between Objects entries, and custom [actions](./objects/creating-and-managing-objects/actions.md) that are triggered under specified conditions. You can also design [layouts](./objects/creating-and-managing-objects/layouts.md) and [views](./objects/creating-and-managing-objects/views.md) to determine how fields and relationships are displayed during entry creation and in the Object's application page.
 
 Before publishing, you can scope each Object's data to Company or Site and determine where it's displayed in the Liferay UI.
 

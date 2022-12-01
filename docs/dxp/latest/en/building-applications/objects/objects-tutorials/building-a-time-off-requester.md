@@ -19,7 +19,7 @@ Because of limitations with extending system Objects, you must create an Employe
 
 Your Picklist represents company departments:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click on the *Control Panel* tab, and go to *Picklists*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
 1. Click the *Add* button (![Add Button](../../../images/icon-add.png)), enter *Department* for name, and click *Save*.
 
@@ -31,7 +31,7 @@ You can now use the Picklist as a field in the Time Off Request Object.
 
 ## Adding a Time Off Request Object
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click on the *Control Panel* tab, and go to *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
 1. Click the *Add* button ( ![Add Button](../../../images/icon-actions.png) ) and enter these values.
 
@@ -41,7 +41,7 @@ You can now use the Picklist as a field in the Time Off Request Object.
    | Plural Label | Time Off Requests |
    | Object Name | TimeOffRequest |
 
-1. Select the *Object*, click on the *Fields* tab, and add these four *fields*.
+1. Select the *Object*, click the *Fields* tab, and add these four *fields*.
 
    | Label | Field Name | Type | Picklist | Required |
    | :--- | :--- | :--- | :--- | :--- |
@@ -61,7 +61,7 @@ You can now use the Picklist as a field in the Time Off Request Object.
    | Then | Webhook |
    | URL | Enter a test webhook URL from either your app or a site like, https://webhook.site. |
 
-   This action sends data to an external system whenever Time Off Request entries are added. See [Defining Actions](../creating-and-managing-objects/defining-object-actions.md) for more information.
+   This action sends data to an external system whenever Time Off Request entries are added. See [Defining Actions](../creating-and-managing-objects/actions/defining-object-actions.md) for more information.
 
    ![Create a webhook action that's triggered after requests are added.](./building-a-time-off-requester/images/04.png)
 
@@ -79,7 +79,7 @@ Next, you'll create an Employee Object and relate it to the Time Off Request Obj
 
 ## Adding an Employee Object
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click on the *Control Panel* tab, and go to *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
 1. Click the *Add* button ( ![Add Button](../../../images/icon-actions.png) ) and enter these values.
 
@@ -89,7 +89,7 @@ Next, you'll create an Employee Object and relate it to the Time Off Request Obj
    | Plural Label | Employees |
    | Object Name | Employee |
 
-1. Select the *Object*, click on the *Fields* tab, and add these *fields*.
+1. Select the *Object*, click the *Fields* tab, and add these *fields*.
 
    | Label | Field Name | Type | Required |
    | :--- | :--- | :--- | :--- |
@@ -230,7 +230,7 @@ This adds three entries to the Employee Object.
 
 Follow these steps to add request entries via the Liferay UI:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click on the *Applications* tab, and select *Time Off Requests*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and select *Time Off Requests*.
 
 1. Click the *Add* button (![Add Button](../../../images/icon-actions.png)) and fill out the form
 
@@ -238,7 +238,7 @@ Follow these steps to add request entries via the Liferay UI:
 
 After saving an entry, you see the entry's edit screen. To add more entries, return to the Time Off Requests main page. When time requests are added, the Object's webhook is triggered and posts the entry's data to the set URL.
 
-Once requests are added and related to employee entries, you can view them in the Employees application. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click on the *Control Panel* tab, and select *Employees*. Select the related *entry* and click the *Time Off Requests* tab.
+Once requests are added and related to employee entries, you can view them in the Employees application. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Employees*. Select the related *entry* and click the *Time Off Requests* tab.
 
 ![View an employee's related requests in the Time Off Requests tab.](./building-a-time-off-requester/images/12.png)
 

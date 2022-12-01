@@ -10,7 +10,7 @@ Widget data is saved and displayed according to the Object's scope.
 
 ## Showing and Hiding Object Widgets
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click on *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
 1. Select the desired *Object*.
 

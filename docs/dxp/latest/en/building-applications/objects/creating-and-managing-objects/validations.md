@@ -1,7 +1,7 @@
 ---
 toc:
 - ./validations/adding-custom-validations.md
-- ./validations/expressions-builder-validations-reference.md
+- ./validations/expression-builder-validations-reference.md
 ---
 # Validations
 
@@ -9,7 +9,7 @@ toc:
 :maxdepth: 3
 
 validations/adding-custom-validations.md
-validations/expressions-builder-validations-reference.md
+validations/expression-builder-validations-reference.md
 ```
 
 {bdg-secondary}`Available Liferay 7.4+`
@@ -26,6 +26,6 @@ Object validations set rules for determining valid field entries and are defined
 :::
 
 :::{grid-item-card} Expressions Builder Validations Reference
-:link: ./validations/expressions-builder-validations-reference.md
+:link: ./validations/expression-builder-validations-reference.md
 :::
 ::::

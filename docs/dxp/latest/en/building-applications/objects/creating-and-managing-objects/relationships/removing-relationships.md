@@ -23,4 +23,4 @@ Follow these steps to remove relationships from published object definitions:
 ## Additional Information
 
 * [Creating Objects](../creating-objects.md)
-* [Defining Object Relationships](.defining-object-relationships.md)
+* [Defining Object Relationships](./defining-object-relationships.md)

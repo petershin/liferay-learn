@@ -16,7 +16,7 @@ When relating a custom object to the Accounts and Postal Address system objects,
 
 Follow these steps to set up relationships for accessing Account and Postal Address entries from your custom object:
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
 1. Begin editing the *Accounts* object.
 
@@ -50,7 +50,7 @@ Follow these steps to set up relationships for accessing Account and Postal Addr
 
 1. Click *Save*.
 
-1. Add the relationship fields to the custom object's default layout and view. See [Designing Object Layouts](../designing-object-layouts.md) and [Designing Object Views](../designing-object-views.md) for detailed instructions.
+1. Add the relationship fields to the custom object's default layout and view. See [Designing Object Layouts](../layouts/designing-object-layouts.md) and [Designing Object Views](../views/designing-object-views.md) for detailed instructions.
 
    ![Add the relationship fields to the custom object's default layout and view.](./accessing-accounts-data-from-custom-objects/images/04.png)
 
@@ -68,5 +68,5 @@ To do this, begin editing the desired object definition, go to the *Details* tab
 
 * [Accounts](../../../../users-and-permissions/accounts.md)
 * [Extending System Objects](../extending-system-objects.md)
-* [Defining Object Relationships](../defining-object-relationships.md)
+* [Defining Object Relationships](../relationships/defining-object-relationships.md)
 * [Restricting Access to Object Data by Account](./restricting-access-to-object-data-by-account.md)

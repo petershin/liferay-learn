@@ -66,7 +66,7 @@ This creates a blank layout to which you can add [field](#adding-field-tabs) and
 
 1. After adding the desired tabs, *save* your changes to the layout.
 
-After adding a field tab, you can add categorization tools to it so end users can apply tags and categories to object entries. See [Adding Categorization to Field Tabs](./adding-categorization-to-field-tabs.md) for more information.
+After adding a field tab, you can add categorization tools to it so end users can apply tags and categories to object entries. See [Adding Categorization to Field Tabs](./adding-categorization-to-fields-tabs.md) for more information.
 
 ## Adding Relationship Tabs
 

@@ -4,11 +4,11 @@ Widget templates are used to customize the appearance and functionality of vario
 
 ## Creating a Widget Template
 
-Follow these steps to create a widget template
+Follow these steps to create a widget template:
 
-1. From the Product Menu, click _Site Builder_ → _Widget Templates._
+1. From the Product Menu, click _Design_ &rarr; _Templates_ &rarr; the _Widget Templates_ tab at the top of the page.
 
-    ![The Widget Template page.](./styling-widgets-with-widget-templates/images/01.png)
+    ![The Widget Templates page.](./styling-widgets-with-widget-templates/images/01.png)
 
 1. Click the _Add_ (![Add icon](../../../images/icon-add.png)) button, then select which widget to create a widget template for (e.g., _Asset Publisher_).
 
@@ -16,7 +16,7 @@ Follow these steps to create a widget template
 
 1. Add a name for your widget template.
 
-1. Under the _Script_ section, click into the body of the template editor.
+1. Click into the body of the template editor.
 
 1. Click one of the fields in the _Fields_ menu to insert that field into the editor. The value of the field will be displayed when your widget template is used.
 
@@ -34,7 +34,7 @@ Once you have a widget template ready for a widget on one of your pages, follow 
 
 1. Find the Display Template drop-down menu, and select the name of the desired template.
 
-    ![The Display Template drop-down box in the Asset Publisher configuration.](./styling-widgets-with-widget-templates/images/03.png)
+    ![Select your widget template from the Display Template drop-down menu in the corresponding widget's configuration.](./styling-widgets-with-widget-templates/images/03.png)
 
     ```{note}
     This drop-down menu is on the default tab, Setup, for most widgets. For the Asset Publisher widget, this setting is found under the Display Settings tab.
@@ -42,6 +42,6 @@ Once you have a widget template ready for a widget on one of your pages, follow 
 
 1. Click _Save._
 
-    <!-- screenshot -->
+    ![After you save your widget's configuration to use your widget template, it uses your template for its display.](./styling-widgets-with-widget-templates/images/04.png)
 
 The widget has been modified to use a custom appearance. By using more advanced widget template scripts, you can further enhance the capabilities of your widgets.

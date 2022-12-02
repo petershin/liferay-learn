@@ -164,7 +164,7 @@ function generate_sphinx_input {
 	done
 
 	#
-	# Sync the liferay-portal/readme/BREAKING_CHANGES.markdown file
+	# Sync with liferay-portal/readme/BREAKING_CHANGES.markdown.
 	#
 
 	curl https://raw.githubusercontent.com/liferay/liferay-portal/${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/readme/BREAKING_CHANGES.markdown -O

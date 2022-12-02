@@ -78,17 +78,17 @@ The contents list includes four UI elements:
 
 In the list of contents are the following columns:
 
-| Column                | Description                                                                                                                             |
-|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| Title                 | The content's title.                                                                                                           |
-| Author                | The content's author.                                                                                                        |
-| Type                  | The content type: web content article, document {bdg-secondary}`7.4+`, or blogs entry {bdg-secondary}`7.4 U23+/GA23+`         |
+| Column                | Description                                                                                                               |
+| :-------------------- | :------------------------------------------------------------------------------------------------------------------------ |
+| Title                 | The content's title.                                                                                                      |
+| Author                | The content's author.                                                                                                     |
+| Type                  | The content type: web content article, document {bdg-secondary}`7.4+`, or blogs entry {bdg-secondary}`7.4 U23+/GA23+`     |
 | Subtype               | The content [subtype](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). |
-| Site or Asset Library | The location of the content item in the Liferay instance.                                                                     |
-| Status                | The workflow statuses for each content item.                                                                                   |
-| Vocabulary (x-axis)   | The categories applied to the content item from the content audit tool's [x-axis vocabulary](#content-audit-tool).                |
-| Vocabulary (y-axis)   | The categories applied to the content item from the content audit tool's [y-axis vocabulary](#content-audit-tool).                |
-| Modified Date         | The content's last modified date                                                                                        |
+| Site or Asset Library | The location of the content item in the Liferay instance.                                                                 |
+| Status                | The workflow statuses for each content item.                                                                              |
+| Vocabulary (x-axis)   | The categories applied to the content item from the content audit tool's [x-axis vocabulary](#content-audit-tool).        |
+| Vocabulary (y-axis)   | The categories applied to the content item from the content audit tool's [y-axis vocabulary](#content-audit-tool).        |
+| Modified Date         | The content's last modified date                                                                                          |
 
 The content list uses the *Page* icon ( ![Page Icon](../../images/icon-page.png) ) to identify assets that have a [display page template](../../site-building/displaying-content/using-display-page-templates.md).
 
@@ -125,7 +125,7 @@ When you close the dashboard page, the default filter and sorting option are res
 From the *Filter and Order* drop-down menu, you can choose these options:
 
 | Filter                | Description                                                                                                                                                                                                                  |
-|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Categories            | Filters using one or more [categories](../tags-and-categories/organizing-content-with-categories-and-tags.md) from your vocabularies.                                                                                        |
 | Site or Asset Library | Filters by site or asset library.                                                                                                                                                                                            |
 | Type                  | Filters by content type and subtype, including out-of-the-box and custom subtypes.                                                                                                                                           |
@@ -158,13 +158,27 @@ The info sidebar provides access to actions and metadata for your selected asset
 
 This table lists available metadata and actions for different asset types.
 
-| Asset Type                                          | Metadata/Action                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|:----------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Web Content                                         | <ul><li>Title</li><li>Type {bdg-secondary}`7.4 U44+/GA44+`</li><li>Subtype </li><li>Version</li><li>Status</li><li>Author</li><li>Preview Image {bdg-secondary}`7.4 U42+/GA42+`</li><li>Languages Translated Into</li><li>Display Date</li><li>Creation Date</li><li>Modified Date</li><li>ID</li><li>Subscribe {bdg-secondary}`7.4 U42+/GA42+`</li></ul>                                                                                       |
-| Documents and Media {bdg-secondary}`7.4 U23+/GA23+` | <ul><li>Title</li><li>URL</li><li>WebDAV URL {bdg-secondary}`7.4 U42+/GA42+`</li><li>Filename</li><li>Type {bdg-secondary}`7.4 U44+/GA44+`</li><li>Subtype</li><li>MIME Type {bdg-secondary}`7.4 U44+/GA44+`</li><li>Version</li><li>Status</li><li>Author</li><li>Preview Image</li><li>Download</li><li>Share {bdg-secondary}`7.4 U42+/GA42+`</li><li>Extension</li><li>Size</li><li>Creation Date</li><li>Modified Date</li><li>ID</li></ul> |
-| Blog Entries                                               | <ul><li>Title</li><li>Type</li><li>Version</li><li>Status</li><li>Author</li><li>Preview Image {bdg-secondary}`7.4 U42+/GA42+`</li><li>Share {bdg-secondary}`7.4 U42+/GA42+`</li><li>Display Date</li><li>Creation Date</li><li>Modified Date</li><li>ID</li></ul>                                                                                                                                                                                                                        |
+| Asset Type                                          | Metadata/Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Web Content                                         | <ul><li>Title</li><li>Type {bdg-secondary}`7.4 U44+/GA44+`</li><li>Subtype </li><li>Version (current active version)</li><li>Status</li><li>Author</li><li>Preview Image {bdg-secondary}`7.4 U42+/GA42+`</li><li>Languages Translated Into</li><li>Display Date</li><li>Creation Date</li><li>Modified Date</li><li>ID</li><li>Subscribe {bdg-secondary}`7.4 U42+/GA42+`</li><li>Versions (Click to view the version history){bdg-secondary}`7.4 U53+/GA53+`</li></ul>                                                                                                                          |
+| Documents and Media {bdg-secondary}`7.4 U23+/GA23+` | <ul><li>Title</li><li>URL</li><li>WebDAV URL {bdg-secondary}`7.4 U42+/GA42+`</li><li>Filename</li><li>Type {bdg-secondary}`7.4 U44+/GA44+`</li><li>Subtype</li><li>MIME Type [{bdg-secondary}`7.4 U44+/GA44+`](https://www.packmile.com/bhive/)</li><li>Version (current active version)</li><li>Status</li><li>Author</li><li>Preview Image</li><li>Download</li><li>Share {bdg-secondary}`7.4 U42+/GA42+`</li><li>Extension</li><li>Size</li><li>Creation Date</li><li>Modified Date</li><li>ID</li><li>Versions (Click to view the version history){bdg-secondary}`7.4 U53+/GA53+`</li></ul> |
+| Blog Entries                                        | <ul><li>Title</li><li>Type</li><li>Version (current active version)</li><li>Status</li><li>Author</li><li>Preview Image {bdg-secondary}`7.4 U42+/GA42+`</li><li>Share {bdg-secondary}`7.4 U42+/GA42+`</li><li>Display Date</li><li>Creation Date</li><li>Modified Date</li><li>ID</li></ul>                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                  
 
 ![The content info sidebar provides metadata and actions for your content.](./content-dashboard-interface/images/10.png)
+
+### Version History
+
+{bdg-secondary}`Available 7.4 U53+/GA53+`
+
+Documents and media and web content have their version history displayed in the content info panel. To view the version history, click on the *Info* (![Information](../../images/icon-information.png)) icon for a content dashboard item to open the info panel and navigate to the *Versions* tab.
+
+The *Versions* tab lists up to 10 available versions for an item. If there are more versions, you can view them by clicking on the *View More* button.
+
+Each version has actions associated with it. Click on the *Actions* button (![Actions Button](../../images/icon-actions.png)) button next to a version to view the available actions.
+
+* ***Preview*** - Preview the web content or document.
+* ***Compare To***  - Compare the selected version with any of the other versions. This opens a new page that shows additions, deletions and formatting changes between versions.
+* ***Expire*** - Expire a version and activate the next available version. For instance, if there are two versions, 1.2 and 1.1, and if you expire 1.2, 1.1 becomes the active version.
 
 ## Additional Information
 

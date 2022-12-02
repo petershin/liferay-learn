@@ -2,6 +2,8 @@
 
 > Available: Liferay DXP/Portal 7.3+
 
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/8N6djs7Gcs4
+
 Publications provides a convenient and flexible way for you and your teams to develop, track, and publish changes to your DXP instance. When enabled, Publications is activated globally and can be accessed anywhere to edit supported entities.
 
 ```{important}

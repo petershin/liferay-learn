@@ -1,29 +1,28 @@
 ---
 toc:
 - ./building-applications/objects.md
+- ./building-applications/client-extensions.md
 - ./building-applications/developing-a-javascript-application.md
-- ../headless-delivery/apis-with-rest-builder.md
+  - ../headless-delivery/apis-with-rest-builder.md
 - ./building-applications/developing-a-java-web-application.md
 - ./building-applications/core-frameworks.md
 - ./building-applications/data-frameworks.md
-- ./building-applications/remote-apps.md
 - ./building-applications/tooling.md
 - ./building-applications/reference.md
 - ./building-applications/app-builder.md
 ---
-
 # アプリケーションの構築
 
 ```{toctree}
 :maxdepth: 4
 
 building-applications/objects.md
+building-applications/client-extensions.md
 building-applications/developing-a-javascript-application.md
 ../headless-delivery/apis-with-rest-builder.md
 building-applications/developing-a-java-web-application.md
 building-applications/core-frameworks.md
 building-applications/data-frameworks.md
-building-applications/remote-apps.md
 building-applications/tooling.md
 building-applications/reference.md
 building-applications/app-builder.md

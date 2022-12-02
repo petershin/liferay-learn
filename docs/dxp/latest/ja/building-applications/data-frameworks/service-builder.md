@@ -4,7 +4,6 @@ toc:
 - ./service-builder/defining-entities.md
 - ./service-builder/business-logic-with-service-builder.md
 ---
-
 # サービスビルダー
 
 ```{toctree}

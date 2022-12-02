@@ -12,7 +12,6 @@ toc:
 - ./objects/objects-application-permissions.md
 - ./objects/integrating-objects-with-third-party-services.md
 ---
-
 # オブジェクト
 
 ```{toctree}
@@ -43,11 +42,11 @@ Liferay Objectを使用すると、コードを記述したりモジュールを
 
 すべてのオブジェクトは[ワークフロー](./objects/enabling-workflows-for-objects.md)と統合されているため、定義されたレビューおよび承認プロセスを通じてオブジェクトエントリーの作成をガイドできます。  オブジェクトは、[フォーム](objects/using-forms-with-objects.md)とも統合されているため、オブジェクトフィールドにマップし、オブジェクトエントリーを作成するためのユーザー入力を受け取るフォームを設計できます。
 
-エントリーが作成されると、Liferayの情報フレームワークを活用して、動的なユーザーエクスペリエンスを作成し、ページフラグメントと表示ページテンプレートを使用して[オブジェクトエントリーを表示](./objects/displaying-object-entries.md)できます。 Liferay DXP 7.4 U1とLiferay Portal 7.4 GA5では、[オブジェクトをウィジェットとしてサイトページ](./objects/deploying-objects-to-sites.md)にデプロイすることも可能です。
+エントリーが作成されると、Liferayの情報フレームワークを活用して、動的なユーザーエクスペリエンスを作成し、ページフラグメントと表示ページテンプレートを使用して[オブジェクトエントリーを表示](./objects/displaying-object-entries.md)できます。 Liferay DXP 7.4 U1とLiferay Portal 7.4 GA5では、[オブジェクトをウィジェットとしてサイトページ](./objects/deploying-object-widgets-to-sites.md)にデプロイすることも可能です。
 
 すべてのオブジェクトはLiferayの[権限設定フレームワーク](./objects/understanding-object-integrations/permissions-framework-integration.md)と統合されているため、アプリケーションとリソースの権限を割り当てて、オブジェクトとそのエントリーへのアクセスを管理できます。 範囲指定と合わせ、ロールベースのアクセス制御を行うことで、データを保護し、適切なユーザーのみがデータにアクセスできるようにすることができます。
 
-With Objects, you can also extend and configure [system services](./objects/creating-and-managing-objects/extending-system-objects.md) registered with the Objects framework. This includes adding custom relationships and actions. <!--TASK: Add fields when ready.-->
+Objects を使用すると、Objects フレームワークに登録されている [システムサービス](./objects/creating-and-managing-objects/extending-system-objects.md) を拡張して設定することもできます。 これには、カスタムのリレーションシップやアクションを追加することも含まれます。 <!--TASK: Add fields when ready.-->
 
 カスタムアプリケーションの構築を開始するには [オブジェクトの作成](./objects/creating-and-managing-objects/creating-objects.md) を参照し、オブジェクトがLiferayのコアフレームワークをどのように活用するかについて確認するには[Understanding Object Integrations](./objects/understanding-object-integrations.md)を参照してください。
 

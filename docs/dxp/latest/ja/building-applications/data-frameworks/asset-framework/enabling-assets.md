@@ -9,7 +9,7 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 
 次に、以下の手順を実行します。
 
-1. [Enabling Assets](./liferay-s5e6.zip)  をダウンロードし、解凍してください。
+1. [アセットの有効化](./liferay-s5e6.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
@@ -53,11 +53,11 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 
 このチュートリアルでは、すでに検索が有効になっているサービスビルダーアプリケーションがあることを前提に説明します。 アプリケーションには最低限必要です。
 
-`*SearchRegistrar.java` - アプリケーションのエンティティに対して検索サービスを検索フレームワークに登録します（例： `com.acme.s5e6.search.S5E6SearchRegistrar.java` Javaクラス ）。
+`*SearchRegistrar.java` - アプリケーションのエンティティに対して、サーチフレームワークにサーチサービスを登録する（例： `com.acme.s5e6.search.S5E6SearchRegistrar.java` クラス）。
 
-`*ModelIndexerWriterContributor.java` - エントリの再インデックスおよびバッチ再インデックスの動作を設定します（例： `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` Javaクラス ）。
+`*ModelIndexerWriterContributor.java` - エントリーの再インデックス付けおよび一括再インデックス付けの動作を設定する（例： `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` class）。
 
-`*ModelSummaryContributor.java` - エントリーの結果サマリーを構築します（例： `com.acme.s5e6.search.S5E6EntryModelSummaryContributor.java` Javaクラス ）。
+`*ModelSummaryContributor.java` - エントリーの結果サマリーを構築する（例： `com.acme.s5e6.search.S5E6EntryModelSummaryContributor.java` クラス）。
 
 検索を有効にする方法については、検索の使用の [開発者ガイド](../../../using-search/developer-guide.md)を参照してください。
 

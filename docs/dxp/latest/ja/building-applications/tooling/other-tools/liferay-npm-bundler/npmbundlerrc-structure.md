@@ -2,7 +2,7 @@
 
 liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォルダーに配置された `.npmbundlerrc` ファイルを介して構成されます。 完全な構成を手動で作成するか、（Babelを介して）構成プリセットを拡張できます。
 
-デフォルトプリセットがliferay-npm-bundlerを構成する方法については、 [default preset reference](./how-the-default-preset-configures-the-liferay-npm-bundler.md) を参照してください。 
+デフォルトプリセットがliferay-npm-bundlerを構成する方法については、 [default preset reference](./how-the-default-preset-configures-the-liferay-npm-bundler.md) を参照してください。
 
 ## 構造
 
@@ -104,7 +104,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 ```
 
 ```{note}
-上記のすべての定義形式（「*」、「some-package-name」、「some-package-name @ version」）が必要なわけではありません。 ほとんどの場合、ワイルドカード定義（ 「* 」）で十分です。 ワイルドカード以外の形式（「some-package-name」と「some-package-name @ version」）は、ワイルドカード定義が提供するよりも具体的な構成を必要とするパッケージのまれな例外です。
+上記のすべての定義形式（`*`、`some-package-name`、`some-package-name@version`）が必要なわけではありません。 ほとんどの場合、ワイルドカード定義（ 「* 」）で十分です。 ワイルドカード以外の形式（`some-package-name` と`some-package-name@version` ）は、ワイルドカード定義が提供するよりも具体的な構成を必要とするパッケージのまれな例外です。
 ```
 
 ### 標準構成オプション
@@ -218,7 +218,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 
 ### OSGiバンドル作成オプション
 
-バージョン2.2.0以降、liferay-npm-bundlerはウィジェットOSGiバンドルを作成できます。 OSGiバンドル作成の構成オプションは次のとおりです：
+バージョン2.2.0以降、liferay-npm-bundlerはウィジェットOSGiバンドルを作成できます。
 
 * **create-jar** ：真の値に設定すると、OSGiバンドルが作成されます。 `true`に設定すると、すべてのサブオプションはデフォルト値を取ります。 オブジェクトが渡されると、各サブオプションを個別に構成できます。 これをビルドフラグとして渡すこともできます： `$ liferay-npm-bundler --create-` または `$ liferay-npm-bundler -j`。 デフォルト値は `false`です。
 
@@ -276,7 +276,7 @@ liferay-npm-bundlerは、ウィジェットプロジェクトのルートフォ�
 }
 ```
 
-* **create-jar.features.localization：** バンドルに使用するL10Nファイルを指定します。 デフォルト値は、そのベース名を持つプロパティファイルが存在する場合、 `features/localization/Language` です。それ以外の場合、デフォルトは `undefined`です。
+* **create-jar.features.localization.L10Nファイルを指定します。** バンドルに使用する L10N ファイルを指定します。 デフォルト値は、そのベース名を持つプロパティファイルが存在する場合、 `features/localization/Language` です。それ以外の場合、デフォルトは `undefined`です。
 
 ```json
 {

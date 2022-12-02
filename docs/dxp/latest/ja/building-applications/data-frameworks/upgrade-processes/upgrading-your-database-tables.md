@@ -62,7 +62,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. Liferayにログインし、*［コントロールパネル］* &rarr; *［Gogo Shell］*でGogoシェルコンソールに移動します。
+1. Liferayにログインし、 ［**コントロールパネル**］ &rarr; ［**Gogo Shell**］ でGogoシェルコンソールに移動します。
 
 1. `upgrade:list com.acme.p5d2.service`というコマンドを入力し、2.0.0へのアップグレードが可能であることを確認します。
 

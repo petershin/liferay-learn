@@ -9,4 +9,4 @@
 * [`sass-loader`](https://github.com/liferay/liferay-js-toolkit/tree/master/packages/liferay-npm-bundler-loader-sass-loader) ：ソースファイルで `node-sass` または `sass` を実行するため、静的CSSファイルを生成できます。 `style-loader`の前にチェーンできます。
 * [`style-loader`](https://github.com/liferay/liferay-js-toolkit/tree/master/packages/liferay-npm-bundler-loader-style-loader) ：CSSファイルをJavaScriptモジュールに変換します。読み込まれると、CSSコンテンツがDOMに挿入されます。 次に、 `require()`呼び出しでCSSファイルを含めることができます。
 
-liferay-npm-bundlerのローダーの使用例については、[liferay-js-toolkit loaders showcase](https://github.com/izaera/liferay-js-toolkit-showcase/tree/loaders)を参照してください。 デフォルトのローダーが要件を満たしていない場合は、[Creating Custom Loaders for the Bundler](../../creating-custom-loaders-for-the-liferay-npm-bundler.md) <!-- JR: Broken link, not sure where it is supposed to redirect to. --> の手順に従って、独自のローダーを作成してください。
+liferay-npm-bundlerのローダーの使用例については、 [liferay-js-toolkit loaders showcase](https://github.com/izaera/liferay-js-toolkit-showcase/tree/loaders) を参照してください。 デフォルトのローダーが要件を満たさない場合は、 [Creating Custom Loaders for Bundler](https://help.liferay.com/hc/ja/articles/360037662951-Creating-Custom-Loaders-for-the-liferay-npm-bundler) の説明に従って、独自のローダーを作成することができます。

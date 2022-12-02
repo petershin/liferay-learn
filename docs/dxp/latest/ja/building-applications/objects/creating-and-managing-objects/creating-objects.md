@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay 7.4以降で利用可能`
 
-Liferay Objectは、Liferay UIの開発機能を提供します。 オブジェクトポートレットを使用すると、コードを記述したり、モジュールを手動でデプロイしたりすることなく、完全に統合されたLiferayアプリケーションを構築できます。 このプロセスには、オブジェクトの初期ドラフトの [作成](#creating-object-drafts) 、オブジェクトドラフトの [編集](#editing-object-drafts) 、最後にドラフトを [公開](#publishing-object-drafts) して新しいアプリケーションを作成することが含まれます。 オブジェクトドラフトを公開すると、完全に統合されたLiferayアプリケーションが作成され、オブジェクトポートレットを介していつでも[管理および拡張](./managing-objects.md)できます。
+Liferay Objectは、Liferay UIの開発機能を提供します。オブジェクトを使用することで、コードを書いたり、モジュールを手動でデプロイすることなく、完全に統合されたLiferayアプリケーションを構築することができます。このプロセスでは、オブジェクト定義の初期ドラフトを [作成](#creating-object-drafts) 、ドラフトを [編集](#editing-object-drafts) したあと、最後に [公開](#publishing-object-drafts) して新しいアプリケーションを作成します。オブジェクトドラフトを公開すると、完全に統合されたLiferayアプリケーションが作成され、Object管理ページを通じていつでも[管理と拡張](./managing-objects.md)が可能です。
 
 ## オブジェクトドラフトの作成
 
@@ -20,22 +20,11 @@ Liferay Objectは、Liferay UIの開発機能を提供します。 オブジェ�
    
    **オブジェクト名** : オブジェクトの `定義.名` を決定し、オブジェクトが公開された後は変更できないようにする。
    
-   <!--TASK: when released, uncomment and update img & alt text 
-
-   **Storage Type** : Determines whether the Object's data is stored in Liferay (**Default**) or in an external system (**Salesforce**).
-
-   ```{important}
-   Selecting an external system imposes limitations on Object customization. 
-   
-   Currently, Liferay only supports Salesforce for external storage. See [Using the Salesforce Storage Type](../integrating-objects-with-third-party-services/storing-object-data-in-an-external-system/using-the-salesforce-storage-type.md) for more information.
-   ```
-   -->
-   
    ![オブジェクトドラフトの「ラベル」「複数形ラベル」「名前」を入力します。](./creating-objects/images/01.png)
 
 1. ［**Save**］ をクリックします。
 
-保存されると、設定やデータ要素のない空白のオブジェクトドラフトが作成されます。 下書きは、Objects管理画面でシステムオブジェクトと一緒に表示することができます。 </a> 作成プロセスを終了するには、 ドラフトを編集し、 [](#publishing-object-drafts) それをLiferayインスタンスに公開する必要があります。</p> 
+保存されると、設定やデータ要素のない空白のオブジェクトドラフトが作成されます。下書きは、Object管理画面でシステムオブジェクトと一緒に表示できます。作成プロセスを終了するには、ドラフトを [編集](#editing-object-drafts) し、Liferayインスタンスに [公開](#publishing-object-drafts) する必要があります。
 
 ![新しいオブジェクトのドラフトは、Objects adminで確認できます。](./creating-objects/images/02.png)
 
@@ -43,9 +32,12 @@ Liferay Objectは、Liferay UIの開発機能を提供します。 オブジェ�
 
 オブジェクトを公開する前に、要素の追加や設定を行うことができます。 これには、フィールドの追加、バリデーションの定義、データのスコープの設定などが含まれます。
 
+
+
 ```{note}
 フィールド、リレーションシップ、レイアウトを追加するたびに、オブジェクトドラフトが自動的に保存されます。 ただし、「詳細」タブで保存していない変更は、他のタブに移動すると失われます。
 ```
+
 
 以下の手順でオブジェクトドラフトを編集します。
 
@@ -66,10 +58,13 @@ Liferay Objectは、Liferay UIの開発機能を提供します。 オブジェ�
    ![リレーションシップタブからオブジェクトにリレーションシップを追加する。](./creating-objects/images/05.png)
 
 1. (オプション)**レイアウト** タブに移動してレイアウトを追加します。 オブジェクトレイアウトは、オブジェクトエントリを作成したり表示したりする際に、フィールドやリレーションシップをどのように表示するかを決定します。 詳細については、[オブジェクトレイアウトの設計](./designing-object-layouts.md)を参照してください。 
+   
+   
 
    ```{note}
    カスタムレイアウトを追加せず、デフォルトとして設定した場合、オブジェクトはそのエントリに自動生成されたレイアウトを使用します。 このレイアウトでは、すべてのオブジェクト・フィールドがアルファベット順に表示される1つのタブがあり、リレーションシップは表示されません。 リレーションシップを表示するには、専用のリレーションシップタブを使用してカスタムレイアウトを作成する必要があります。
    ```
+
 
 ![レイアウトタブから、オブジェクトにカスタムレイアウトを追加します。](./creating-objects/images/06.png)
 

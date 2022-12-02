@@ -8,7 +8,6 @@ toc:
 - ./data-frameworks/service-builder.md
 - ./data-frameworks/upgrade-processes.md
 ---
-
 # データフレームワーク
 
 ```{toctree}

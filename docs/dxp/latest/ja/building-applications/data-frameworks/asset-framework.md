@@ -2,7 +2,6 @@
 toc:
 - ./asset-framework/enabling-assets.md
 ---
-
 # アセットフレームワーク
 
 ```{toctree}

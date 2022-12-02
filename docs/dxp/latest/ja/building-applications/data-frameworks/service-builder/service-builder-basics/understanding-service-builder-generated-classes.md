@@ -143,7 +143,7 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
     ```
 
 
-    出力:
+    Output:
 
     ```
     > Task :w9b7-service:buildService
@@ -171,9 +171,9 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+Then, follow these steps:
 
-1. サンプルをビルドしてデプロイします。
+1. Build and deploy the example.
 
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)

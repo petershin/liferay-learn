@@ -46,7 +46,7 @@ Liferay DXPで実行するコードを作成するには、それをデプロイ
 
 ## Liferay WorkspaceでThemes Generatorを使用する
 
-Liferay Themes Generatorは、サイトのルックアンドフィールを変更するテーマを作成するためのnode.jsベースのツールです。 これらのプロジェクトは、Liferay Workspaceで管理することもできます。 テーマプロジェクトは、Bladeを使用するか手動で作成できます。
+Liferay Themes Generatorは、サイトのルック＆フィールを変更するためのテーマを作成するためのnode.jsベースのツールです。 これらのプロジェクトは、Liferay Workspaceで管理することもできます。 テーマプロジェクトは、Bladeを使用するか手動で作成できます。
 
 Bladeを使用してTheme Generatorプロジェクトを作成するには、次のコマンドを使用します。
 

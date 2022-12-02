@@ -11,7 +11,7 @@ On top of that, you need a model to perform a [similarity search](https://www.el
 
 Choose from one of two sentence transformer providers that can be configured to work with Liferay's search index documents: [txtai](https://neuml.github.io/txtai/) and [Hugging Face](https://huggingface.co/).
 
-#### Configure and Run txtai
+## Configure and Run txtai
 
 ```{note} 
 The txtai configuration here is intended for demonstration. Please read the [txtai documentation](https://neuml.github.io/txtai/) to learn more.
@@ -71,7 +71,7 @@ Before saving the configuration, click the Test Configuration button to ensure t
 
 This example setup is intended for demonstration. See the [txtai documentation](https://github.com/neuml/txtai) to find the setup that meets your need (e.g., running a GPU [container](https://neuml.github.io/txtai/cloud/) for increased performance).
 
-#### Using the Hugging Face Inference API
+## Using the Hugging Face Inference API
 
 To use Hugging Face as the sentence transformer provider, create a [Hugging Face account](https://huggingface.co/join).
 
@@ -91,7 +91,6 @@ Once you have an account,
    **Model Timeout:** Set the time (in seconds) to wait for the model to be loaded before timing out. Hugging Face allows you to pin models in memory to avoid repeated time-consuming loading of models.
    **Enable GPU:** Enable GPU for the sentence transformer. This speeds up the transformation but requires a paid plan with Hugging Face. Check the Hugging Face documentation for more information.
 
-Before saving the configuration, click the Test Configuration button to ensure that Liferay can connect with the Hugging Face Inference API and that the settings it's using are in harmony.
+Before saving the configuration, click the _Test Configuration_ button to ensure that Liferay can connect with the Hugging Face Inference API and that the settings it's using are in harmony.
 
-### Re-Index the Text Embeddings
 

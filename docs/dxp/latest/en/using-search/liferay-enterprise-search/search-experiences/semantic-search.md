@@ -1,6 +1,6 @@
 ---
 toc:
-- ./semantic-search/setting-up-a-sentence-tranformer-provider.md
+- ./semantic-search/setting-up-a-sentence-transformer-provider.md
 - ./semantic-search/adding-a-search-blueprint-for-semantic-search.md
 ---
 
@@ -11,44 +11,23 @@ toc:
 ```{toctree}
 :maxdepth: 1
 
-semantic-search/setting-up-a-sentence-tranformer-provider.md
+semantic-search/setting-up-a-sentence-transformer-provider.md
 semantic-search/adding-a-search-blueprint-for-semantic-search.md
 ```
 
-<!-- Questions and comments:
-
-1. Are the vector representations (the text embeddings) stored in the transformer service? I don't see anything in the returned documents, and I saw txtai munching a lot of data as I added Liferay Learn articles via the ingester, so I am guessing the answer is "yes". So I cannot really say that the transformed text embeddings are indexed with the Liferay documents. Might want to get a good diagram prepared for this.
-   Yes, they are stored. The output of this transformation process is stored in the index document for each supported and configured type in Elasticsearch.
-
-   The field is names as vector_embedding_<dimension>_<languageid>. If you don't see that in your documents in Elasticsearch, something is wrong with your setup.
-
-2. I hate calling these things text embeddings, as a noun. They're the vector representations of the text as produced by the text embedding transformation technique (I think; obviously I could be very wrong). But, if that's the dumb jargon someone came up with and everyone uses, I guess we'll go with it.
-
-   just catching one line there, of your feelings towards the word "embedding": I'd be more than happy to read language that makes sense easier, but this is an established term on this field. That's why, in my opinion, it should be made clear at least somewhere in the beginning that what we are doing is creating "text embedding". Maybe then once explaining what that is (vectors or strictly spoken: one embedding is one vector). That is created from a (configurable) text sample representing the indexed asset. To be exact, we are using sentence transformers and we should be talking about "sentence embedding" but I'm fine with "text embedding" because it makes more sense in this context.
-
-   Also, it's non plural because only one embedding is created per document (at least at the moment)
-
-   "Sentence" is just to make distinction to the v1 of this technique: "word embedding" which worked word wise. While speaking of "sentence" as the unit of transformation might sound not exactly correct the text samples actually rely on sentence boundaries. At least in this implementation here.
-
-3. Our descriptions don't include any indication of which document fields are processed by the transformer. Are we only talking about content, content_xx_XX, or is it some kind of amalgamation of all the text fields in a document? Something else?
-   title + content, or subject + body in case of MBMessage. But depending on the configured char length and the length of the title/subject, there may be no characters used from the "content/body"-->
-
-
-<!-- The Intro still needs lots of work--skip it for now and start with Enabling Semantic Search -->
 ```{important}
 Setting up a seamlessly effective semantic search experience is heavily dependent on using a model trained and fine-tuned to your specific content. The example configuration here can provide modestly improved results for most content, but is not intended to provide a production-ready semantic search solution.
 ```
 
-Defines both semantic and lexical search https://en.wikipedia.org/wiki/Semantic_search
+<!--didn't go with the "feel good" example since I think it's best to be unique from txtai--if this one's not good we can steal from them, after confirming it's okay-->
+Semantic search evaluates the intent behind a searched phrase. A good semantic search matches "Liferay Releases Search Experiences for 7.3" with the phrase "what's new in tech?." A lexical search, matching the users keywords to the indexed text fields, cannot provide this result. You need semantic search.
 
-Ideally, searching for "tech news" returns a document with a field containing the text "During economic downturns Linux distros gain on traditionally dominant operating system vendors." No amount of processing in a traditional search can provide this result. For this you need semantic search.
-
-The best search knows not only the words you type into the search bar, but also the intent behind the words. Even sophisticated lexical searches like Liferay's (as powered by Elasticsearch) cannot do this, although it fakes it pretty well by applying inventive techniques like 
+Even sophisticated lexical searches like Liferay's (as powered by Elasticsearch) cannot match the user's intent with indexed documents, even with inventive techniques like
 - analysis to tokenize the keywords and document fields.
 - fuzziness and slop to enable imprecise matching.
 - stemming to break words down into their roots to allow synonym matching.
 - stop words to ignore insignificant words.
-Adding these techniques to process the tokenized keywords and document fields can be enough for many search needs. If you add  Liferay DXP's Synonym Sets to this capability you can even make sure that the search returns results matching synonymous terms that wouldn't be caught by stemming: for example, set _doctor_ as synonymous with _medical_. All these techniques are designed to make a search better answer the question "what did you mean by that?", but they're orthogonal to the question at best. Semantic search greatly closes the gap between what a lexical search can accomplish and what the user really wants from the search: processing not just the words of the search, but the intent behind it.
+Adding these techniques to process the tokenized keywords and document fields can be enough for many search needs. but they're orthogonal to the question at best. Semantic search greatly closes the gap between what a lexical search can accomplish and what the user really wants from the search: processing not just the words of the search, but the intent behind it.
 
 <!-- If we get specific we better be able to deliver this result. -->
 
@@ -58,24 +37,29 @@ With this initial release, Administrators can enable an additional content proce
 
 To enable semantic search in Liferay,
 
-1. Choose a trained model or create your own.
-1. Enable a sentence transformer provider and configure it in Liferay.
-1. Re-index the text embeddings.
-1. Create a Search Blueprint to perform a similarity search between the vectorized search terms and documents.
+1. [Choose a trained model or create your own.](#choosing-a-trained-model)
+1. [Enable a sentence transformer provider and configure it in Liferay.](./semantic-search/setting-up-a-sentence-transformer-provider.md)
+1. [Re-index the text embeddings.](#re-indexing-the-text-embeddings)
+1. [Create a Search Blueprint to perform a similarity search between the vectorized search terms and documents.](./semantic-search/adding-a-search-blueprint-for-semantic-search.md)
 
 
-query account for the dense vector field containing the text embedding that is the natural language representation of the words.
-1. Create a search blueprint using the necessary Search Experiences elements.
-
-```{important} 
-You must re-index if ...
-```
 
 ### Choosing a Trained Model
 
 It should be mentioned somewhere that customers can use pretrained models or train/fine-tune their own. Fine tuning pretrained models is probably the easiest and fastest way to best possible experience (over training from scratch) but there are good pretrained models to start with. Hugging Face hub provides a big collection of pre-trained, domain specific models too2.
 This link should give some initial ideas for choosing a pretrained model https://www.sbert.net/docs/pretrained_models.html
 In development I actually used this model: sentence-transformers/msmarco-distilbert-base-dot-prod-v3. Maybe it could be here as an option of a good generic model
+
+### Re-Indexing the Text Embeddings
+
+The text embeddings must be re-indexed in these cases:
+
+1. You're upgrading from before U47.
+1. You change the index settings in the Semantic Search configuration of System or Instance Settings.
+
+To re-index the text embeddings, use the Index Actions screen and click the _Reindex_ button for just the models you are enabling in the Asset Entry Class Names setting of the Semantic Search System or Instance Settings.
+
+<!-- As of 12/1/2022 the Reindex Text Embeddings action is still present in Index Actions. Is it staying? Document if it is. -->
 
 <!-- Terrible section name--revisit -->
 ## Configuring Semantic Search in System or Instance Settings
@@ -86,7 +70,7 @@ The Sentence Transformer Settings are covered in [Enabling Semantic Search](#ena
 
 The Index Settings include the following:
 
-**Max Character Count:** 500 Set the maximum number of characters to be sent to the sentence transformer. By default up to 500 characters are sent to be transformed into their vector representations.
+**Max Character Count:** 500 Set the maximum number of characters to be sent to the sentence transformer. By default up to 500 characters are sent to be transformed into their vector representations. The ideal value here depends on which [sentence transformer provider](./semantic-search/setting-up-a-sentence-transformer-provider.md) you're using.
 
 **Text Truncation Strategy:** Beginning Select from which portion of the text the sample for the sentence transformer should be taken from. This setting applies only if the text is longer than the maximum character count. Choose from Beginning (the default), Middle, or End.
 
@@ -99,6 +83,10 @@ Only Basic Web Content is currently supported.
 ```
 
 **Language IDs:** Select the languages and localizations to be transformed. By default all listed languages are selected: Arabic (Saudi Arabia), Catalan (Spain), Chinese (China), Dutch (Netherlands), English (United States), Finnish (Finland), French (France), German (Germany), Hungarian (Hungary), Japanese (Japan), Portuguese (Brazil), Spanish (Spain), and Swedish (Sweden). Select multiple languages from the list using _Ctrl + Click_.
+
+```{warning}
+Enabling a language doesn't guarantee that the sentence embedding is created for the language. The language must be available in the site. If a language is enabled in System/Instance Settings, and available in the site, but there is no translation for a given piece of content, the default translation is used to create the text embeddings.
+```
 
 The Search Settings include the following:
 
@@ -117,8 +105,14 @@ Semantic search impacts the Liferay search at both index time and search time, i
 During the indexing phase, 
 
 * Standard processing occurs:
-  * Content in Liferay is sent to the search engine where it's processed according to its data type: text is analyzed appropriately and stored in the index.
-* Additional Semantic Search processing occurs:
+  * [LIFERAY] Content in Liferay is sent to the search engine where it's processed according to its data type: text is analyzed appropriately and stored in the index.
+* [LIFERAY] Additional Semantic Search processing occurs:
+   * Following the configuration in System/Instance Settings, the text snippet is sent by Liferay to the sentence transformer. 
+      * The Max Character Count and Text Truncation Strategy determine the snippet sent to the sentence transformer.
+      * Liferay selects the title and content for Blogs Entries, Knowledge Base Articles, Wiki Pages, Basic Web Content Articles. For Message Boards Messages, the title and subject fields are processed.
+  * [SENTENCE TRANSFORMER] First the snippet is processed according the configured model, which tokenizes the snippet according to its parameter. For the BERT models often used, 512 is the maximum number of tokens the models will handle. This is influenced by the number of characters set in the Semantic Search &rarr; Max Character Count setting in System/Instance Settings.
+  * [SENTENCE TRANSFORMER] Text embedding occurs, and a vector representation is created based on the model used the by the transformer. 
+  * [LIFERAY] The result of the text embedding process is stored in the [Liferay Company Index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) as a [dense_vector](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/dense-vector.html) field for each document[^1].
   * Following the configuration in System/Instance Settings, the text snippet is sent to the sentence transformer, text embedding occurs, and a vector representation is created based on the model used the by the transformer. The result of the text embedding process is stored in the [Liferay Company Index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) as a [dense_vector](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/dense-vector.html) field for each document[^1].
 
 [^1]: To inspect the [mapping](../../search-administration-and-tuning/search-administration.md#field-mappings) for these transformer-produced dense vector fields, open the Control Panel &rarr; Search &rarr; Field Mappings. Copy the mappings into a file and search for *dense_vector*.
@@ -132,35 +126,3 @@ During the search phase,
 
 
 <!-- TODO: Quickly follow this documentation with a more robust example article, configuring the ootb element differently and including Petteri's more complicated custom element? -->
-
-
-<!-- COMMENTS BELOW, DON'TBOTHER READING
-depending on data set and the model, can improve the results, but...
-
-there's another element Search with Sentence Embedding taht may be in producst or may just doc it (really complicated, more on the true semantic side instead of a rescore
-
-see the blueprint on the ticket, may or may not be included in the product
-### Specify a Pre-Trained Model
-
-Semantic Search: User story has steps on using the ingester module to index from Liferay Learn and HC to get data, how to set up text AI using docker. See the confluence page (tibor linked in DM) for links to other articles to familiarize myself. Sys Settings > Semantic Search setting
-
-set the transformer txtai or HF (need account and access token)
-
-needs the model pre-trained by someone else (this is also hugging face; need an account), sending them a sentence and getting back vectors. the model used in our config must support feature extraction
-
-for HF enter the model (there will be a selector)
-
-the number of dimensions setting is needed for txtai or HF: to figure out how many dimensions they produce there's a test to perform in HF; test columns is the number of dimensions. it's important to get it right.
-
-There will be a "test connection" button in system setting
-
-Only certain asset types are supported as per the config (no custom structures, commerce stuff, objects)
-
-Search time cache timeout so the provider is not hit for multiple repeated searches over and over. No index time caching.
-
-send a sentence get back a vector/ 500 max char count by default, beginning of the content by default
-
-
-
-Use txtai for testing
--->

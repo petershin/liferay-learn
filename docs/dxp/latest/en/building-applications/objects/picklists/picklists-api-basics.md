@@ -27,7 +27,7 @@ Once Liferay is running,
 
    The JSON response shows a new picklist has been added:
 
-   ```bash
+   ```json
    "dateCreated" : "2022-11-17T18:42:13Z",
    "dateModified" : "2022-11-17T18:42:13Z",
    "id" : 47502,
@@ -38,7 +38,7 @@ Once Liferay is running,
    }
    ```
 
-1. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Picklists*. The new picklist is displayed.
+1. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Picklists*. The new picklist appears.
 
    ![See that a new picklist has been added.](./picklists-api-basics/images/01.png)
 
@@ -48,7 +48,7 @@ Once Liferay is running,
    javac -classpath .:* *.java
    ```
 
-1. Run the `ListTypeDefinition_POST_ToInstance.java` class with the following command:
+1. Run the `ListTypeDefinition_POST_ToInstance.java` class: 
 
    ```bash
    java -classpath .:* ListTypeDefinition_POST_ToInstance
@@ -56,7 +56,7 @@ Once Liferay is running,
 
 ## Examine the cURL Command
 
-The `ListTypeDefinition_POST_ToInstance.sh` script calls the REST service with a cURL command.
+The `ListTypeDefinition_POST_ToInstance.sh` script calls the REST service using cURL.
 
 ```{literalinclude} ./picklists-api-basics/resources/liferay-v3n6.zip/curl/ListTypeDefinition_POST_ToInstance.sh
    :language: bash
@@ -80,7 +80,7 @@ The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `ListTypeDefinition_POST_ToInstance.java` class adds a picklist by calling the list type related services.
+The `ListTypeDefinition_POST_ToInstance.java` class adds a picklist by calling the `ListType`-related services.
 
 ```{literalinclude} ./picklists-api-basics/resources/liferay-v3n6.zip/java/ListTypeDefinition_POST_ToInstance.java
    :dedent: 1
@@ -96,13 +96,13 @@ This class invokes the REST service using three lines of code:
 | `ListTypeDefinitionResource listTypeDefinitionResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `ListTypeDefinitionResource` service instance. |
 | `ListTypeDefinition listTypeDefinitionResource = listTypeDefinitionResource.postListTypeDefinition(...);` | Calls the `listTypeDefinitionResource.postListTypeDefinition` method and passes the data to post. |
 
-Note that the project includes the `com.liferay.headless.admin.list.type.client` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
+Note that the project includes the `com.liferay.headless.admin.list.type.client` file as a dependency. You can find client JAR dependency information for all REST applications in your installation's API explorer at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
 ```{note}
 The `main` method's comment demonstrates running the class.
 ```
 
-The other Java classes are similar, but call different `ListTypeDefinitionResource` methods.
+The other Java classes similarly call different `ListTypeDefinitionResource` methods.
 
 ```{important}
 See [ListTypeDefinitionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-list-type/headless-admin-list-type-client/src/main/java/com/liferay/headless/admin/list/type/client/resource/v1_0/ListTypeDefinitionResource.java) for service details.
@@ -222,7 +222,7 @@ Code:
 
 ## Put a Picklist
 
-Completely overwrite an existing picklist with cURL and Java put commands. Replace `1234` with your picklist's ID.
+Completely overwrite an existing picklist with cURL and Java `put` commands. Replace `1234` with your picklist's ID.
 
 ### ListTypeDefinition_PUT_ById.sh
 
@@ -256,7 +256,7 @@ Code:
 
 ## Delete a Picklist
 
-Delete an existing picklist with cURL and Java delete commands. Replace `1234` with your picklist's ID.
+Delete an existing picklist with cURL and Java `delete` commands. Replace `1234` with your picklist's ID.
 
 ### ListTypeDefinition_DELETE_ById.sh
 
@@ -290,7 +290,7 @@ Code:
 
 ## Picklist Entry Services
 
-After creating a picklist, use the following services to create and manage picklist entries. The cURL commands and Java classes for `ListTypeEntry` work similarly to `ListTypeDefinition`. Some services require passing the picklist ID.
+After creating a picklist, use the services below to create and manage picklist entries. The cURL commands and Java classes for `ListTypeEntry` work like `ListTypeDefinition`. Some services require passing the picklist ID.
 
 | Files | Description |
 | :---- | :---------- |
@@ -300,4 +300,4 @@ After creating a picklist, use the following services to create and manage pickl
 | `ListTypeEntry_POST_ToListTypeDefinition.[java\|sh]` | Post an entry to a picklist.  |
 | `ListTypeEntry_PUT_ById.[java\|sh]` | Put a picklist entry. |
 
-The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) lists all of the `ListTypeDefinition` and `ListTypeEntry` services and schemas and has an interface to test each service.
+The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all `ListTypeDefinition` and `ListTypeEntry` services and schemas and has an interface to test each service.

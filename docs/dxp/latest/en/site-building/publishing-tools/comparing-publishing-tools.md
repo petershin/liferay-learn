@@ -1,8 +1,8 @@
 # Comparing Publishing Tools
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/xPVWyMrTa3k
-
 Liferay provides two publishing tools for content creation and site building: Publications and Staging. Publications is recommended over Staging in nearly all use cases because it provides a superior collaboration experience and greater integration with other Liferay features. The one exception is if you need to host your working and production environments on separate servers. For this you must use Remote Live Staging.
+
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/xPVWyMrTa3k
 
 ## Publications
 

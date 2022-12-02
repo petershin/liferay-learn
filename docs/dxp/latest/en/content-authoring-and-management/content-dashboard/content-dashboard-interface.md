@@ -174,11 +174,13 @@ Documents and media and web content have their version history displayed in the 
 
 The *Versions* tab lists up to 10 available versions for an item. If there are more versions, you can view them by clicking on the *View More* button.
 
-Each version has actions associated with it. Click on the *Actions* button (![Actions Button](../../images/icon-actions.png)) button next to a version to view the available actions.
+Each version displays the author that created the version, the time when it was created, and a changelog. There are also actions associated with a version. Click on the *Actions* button (![Actions Button](../../images/icon-actions.png)) button next to a version to view the available actions.
 
 * ***Preview*** - Preview the web content or document.
-* ***Compare To***  - Compare the selected version with any of the other versions. This opens a new page that shows additions, deletions and formatting changes between versions.
+* ***Compare To***  - Compare the selected version with any of the other versions. This opens a new page that shows additions, deletions and formatting changes between versions. This action is available only when there are two or more active versions.
 * ***Expire*** - Expire a version and activate the next available version. For instance, if there are two versions, 1.2 and 1.1, and if you expire 1.2, 1.1 becomes the active version.
+
+![Click on the Versions tab to view the version history for a content dashboard item.](./content-dashboard-interface/images/11.png)
 
 ## Additional Information
 

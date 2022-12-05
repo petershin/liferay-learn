@@ -2,25 +2,25 @@
 
 {bdg-secondary}`Available Liferay 7.4 U27+/GA27+`
 
-With Objects, you can add validations for both custom and system fields. Validations set rules used for determining valid field entries and are defined using either [Groovy](https://groovy-lang.org/) scripts or Liferay's [expression builder](./expression-builder-validations-reference.md). Each validation has its own trigger, conditions, and error text, which you can set via the Objects UI. When triggered, the validation checks for valid field entries according to your defined conditions and displays your error text for invalid entries.
+Validations set rules for determining valid field entries. Each validation has its own trigger, conditions, and error text, which you can set via the Objects UI. You can define validations using [Groovy scripts](#using-groovy-validations) or [Liferay expressions](#using-expression-builder-validations).
 
-![Create validations for custom and system Object fields.](./adding-custom-validations/images/01.png)
+![Create validations for custom and system object fields.](./adding-custom-validations/images/01.png)
 
 ```{important}
-Currently, Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
+Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
 ```
 
-Follow these steps to add a custom validation:
+Follow these steps to add a validation:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
+1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
-1. Begin editing an Object definition.
+1. Begin editing an object definition.
 
    ```{note}
-   Beginning with Liferay 7.4 U38+/GA38+, you can add custom validations to system Objects.
+   For Liferay 7.4 U38+/GA38+, you can add custom validations to system objects.
    ```
 
-1. Go to the *Validations* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Go to the *Validations* tab and click the *Add* button ( ![Add Button](../../../../images/icon-add.png) ).
 
 1. Enter a *label* and select a validation type: *Groovy* or *Expression Builder*.
 
@@ -42,25 +42,23 @@ Follow these steps to add a custom validation:
    Conditions can include multiple fields and functions for complex validations.
    ```
 
-1. Enter a localizable *error message*. This message is displayed whenever the validation is triggered and field entries do not meet one or more of the defined conditions.
+1. Enter a localizable *error message*. This message appears whenever the validation is triggered and field entries do not meet one or more of the defined conditions.
 
 1. Go to the *Basic Info* tab and *activate* the validation.
 
-1. Select a *Trigger Event* to determine when the validation is run for field entries.
+1. Select a *Trigger Event* to determine when the validation runs.
 
-   ```{note}
    Each validation can only have one trigger event.
-   ```
 
    ![Activate the validation and set a trigger event.](./adding-custom-validations/images/04.png)
 
 1. Click *Save*.
 
-Once activated, the validation is run for all new Object entries.
+Once activated, the validation runs for all new object entries.
 
 ## Using Groovy Validations
 
-The Groovy validation type supports all standard Groovy Script capabilities. However, when defining Groovy conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
+Groovy validations support all standard [Groovy Script](https://groovy-lang.org/) capabilities. However, when defining conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
 
 ![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/05.png)
 
@@ -68,19 +66,19 @@ For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://doc
 
 ## Using Expression Builder Validations
 
-The Expression Builder type provides predefined fields, operators, and functions that you can access in the Elements side panel. Clicking an element adds it to the conditions editor. These functions return a Boolean value. See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for a complete list of provided operators and functions.
+Expression Builder provides predefined fields, operators, and functions that you can access in the Elements side panel. Clicking an element adds it to the conditions editor. These functions return a Boolean value. See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for a complete list of provided operators and functions.
 
 ```{important}
-Expression Builder validations can only be used with text, numeric, date, and boolean field types.
+You can only use Expression Builder validations with text, numeric, date, and boolean field types.
 ```
 
 ![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/06.png)
 
 For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax when you click *Save*. If the expression is invalid, Liferay shows an error message.
 
-## Expression Builder Operators
+### Expression Builder Operators
 
-The following table lists available operators for Expression Builder validations:
+This table lists available operators for Expression Builder validations:
 
 | Operator | Description |
 | :--- | :--- |
@@ -91,9 +89,9 @@ The following table lists available operators for Expression Builder validations
 | Plus ( `+` ) | Mathematical operator for addition |
 | Multiply ( `*` ) | Mathematical operator for multiplication |
 
-## Expression Builder Functions
+### Expression Builder Functions
 
-The following table lists available Expression Builder functions with their compatible field types.
+This table lists available Expression Builder functions with their compatible field types:
 
 | Operator | Text Fields | Numeric Fields | Date Fields |
 | :--- | :--- | :--- | :--- |
@@ -123,9 +121,9 @@ The following table lists available Expression Builder functions with their comp
 
 {bdg-secondary}`For 7.4 U41+/GA41+`
 
-When constructing conditions, you can use any of the Object's custom or system fields. You can also select from relationship fields on the 'one' side of a relationship.
+When constructing conditions, you can use any of the object's custom or system fields. You can also select from relationship fields on the child side of a one-to-many relationship.
 
-The following table lists all default fields available for custom Objects:
+The following table lists all default fields available for custom objects:
 
 | Field | Description |
 | :--- | :--- |
@@ -136,7 +134,7 @@ The following table lists all default fields available for custom Objects:
 | `lastPublishDate` | Date when the entry was last published |
 | `modifiedDate` | Date when the entry was last modified |
 | `mvccVersion` | MVCC version of the entry |
-| `objectDefinitionId` | ID of the entry's Object |
+| `objectDefinitionId` | ID of the entry's object |
 | `objectEntryId` | ID for the entry |
 | `status` | Workflow status for the entry |
 | `statusByUserId` | ID of the assigned user in Workflow |
@@ -146,10 +144,10 @@ The following table lists all default fields available for custom Objects:
 | `userName` | User name of the entry's author |
 | `uuid` | Unique universal ID for the entry |
 
-System Objects have their own default fields, though there is some overlap with the above chart.
+System objects have their own default fields, though there is some overlap with the above chart.
 
 ## Additional Information
 
 * [Creating Objects](./creating-objects.md)
-* [Adding Fields to Objects](./adding-fields-to-objects.md)
+* [Adding Fields to Objects](../fields/adding-fields-to-objects.md)
 * [Expression Builder Validations Reference](./expression-builder-validations-reference.md)

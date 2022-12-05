@@ -1,6 +1,6 @@
 # Managing Data Sources
 
-After [connecting data sources](../connecting-data-sources.md) to your workspace, you can view and make changes to them from the settings page. Navigate to *Settings* &rarr; *Workspace Data* &rarr; *Data Sources*. 
+After [connecting Liferay DXP](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) to your workspace, you can view and make changes to them from the settings page. Navigate to *Settings* &rarr; *Workspace Data* &rarr; *Data Sources*. 
 
 ![See the list of connected data sources in settings.](./managing-data-sources/images/01.png)
 

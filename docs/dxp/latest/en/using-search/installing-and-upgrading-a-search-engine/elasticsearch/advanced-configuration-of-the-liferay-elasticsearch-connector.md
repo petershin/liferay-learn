@@ -19,6 +19,8 @@ Think of the available configuration options as being divided into two groups: t
 
 ### Adding Index Configurations
 
+{bdg-link-warning}`Requires Re-Index <../../search-administration-and-tuning/search-administration.md#index-actions>`
+
 The `additionalIndexConfigurations` configuration defines extra settings (in JSON or YAML) that are applied to each [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) (i.e., each Liferay Virtual Instance's index) when it's created. For example, you can create custom analyzers and filters using this setting. For a complete list of available settings, see the [Elasticsearch reference](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html).
 
 Here's an example that shows how to configure [analysis](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-analysis.html) that can be applied to a field or a dynamic template (see [below](#overriding-type-mappings) for an example application to a dynamic template).
@@ -46,6 +48,8 @@ Here's an example that shows how to configure [analysis](https://www.elastic.co/
 ```
 
 ### Adding Type Mappings
+
+{bdg-link-warning}`Requires Re-Index <../../search-administration-and-tuning/search-administration.md#index-actions>`
 
 `additionalTypeMappings` defines extra mappings for indexing data into each [company and system indexes](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) (i.e., each Liferay Virtual Instance's index). These are applied when the index is created. Add the mappings using JSON syntax. For more information see [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping.html) and [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-put-mapping.html). Use `additionalTypeMappings` for new field (`properties`) mappings and new dynamic templates, but don't try to override existing mappings. If any of the mappings set here overlap with existing mappings, index creation fails. Use `overrideTypeMappings` to replace default mappings.
 
@@ -86,6 +90,8 @@ See [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping-t
 The above example shows how a `fooName` field might be added to Liferay's type mapping. Because `fooName` is not an existing property in the mapping, it works fine. If you try to override an existing property mapping, index creation fails. Instead use the `overrideTypeMappings` setting to override `properties` in the mapping.
 
 ### Overriding Type Mappings
+
+{bdg-link-warning}`Requires Re-Index <../../search-administration-and-tuning/search-administration.md#index-actions>`
 
 Use `overrideTypeMappings` to override Liferay's default type mappings and exert control over how data is indexed into the [company and system indexes](../../search-administration-and-tuning/elasticsearch-indexes-reference.md). This is an advanced feature that should be used only if strictly necessary. If you set this value, the default mappings used to define the Liferay Document Type in Liferay source code (for example, `liferay-type-mappings.json`) are ignored entirely, so include the whole mappings definition in this property, not just the segment you're modifying.
 

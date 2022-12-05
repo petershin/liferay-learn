@@ -354,6 +354,6 @@ futureDates(<dateField>, startsFrom, responseDate, years, 0, endsOn, responseDat
 
 ## Additional Information
 
-* [Creating Objects](./creating-objects.md)
-* [Adding Fields to Objects](./adding-fields-to-objects.md)
-* [Adding Custom Validations](./adding-custom-validations.md)
+* [Creating Objects](../creating-objects.md)
+* [Adding Fields to Objects](../fields/adding-fields-to-objects.md)
+* [Adding Custom Validations](../validations/adding-custom-validations.md)

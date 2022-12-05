@@ -1,10 +1,10 @@
 # Adding and Managing Custom States
 
-{bdg-secondary}`Available Liferay 7.4 U41+ and GA41+`
+{bdg-secondary}`Available Liferay 7.4 U41+/GA41+`
 
 Some use cases may require assigning multiple states to an object entry at the same time. For example, when building an Order application, you may need to assign and manage order, payment, and delivery statuses for the same entry, each with its own flow and associated business logic. Using Liferay picklists with custom objects, you can achieve this functionality.
 
-With [picklists](../picklists.md), you can define lists of strings and use them as object fields to define custom states for entries. Once added to an object definition, you can design the flow for each state and use [validations](./adding-custom-validations.md) and [actions](./defining-object-actions.md) to add custom business logic for different states. These custom states can also be used alongside [workflow statuses](../enabling-workflows-for-objects.md) to define more complex review and approval processes.
+With [picklists](../../picklists.md), you can define lists of strings and use them as object fields to define custom states for entries. Once added to an object definition, you can design the flow for each state and use [validations](../validations/adding-custom-validations.md) and [actions](../actions/defining-object-actions.md) to add custom business logic for different states. These custom states can also be used alongside [workflow statuses](../../enabling-workflows-for-objects.md) to define more complex review and approval processes.
 
 ![Use picklists to add custom states to object definitions.](./adding-and-managing-custom-states/images/01.png)
 
@@ -12,9 +12,9 @@ With [picklists](../picklists.md), you can define lists of strings and use them 
 
 Follow these steps to use a picklist to add custom states for an object's entries:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Picklists*.
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
-1. Create a picklist with the desired items. These items define object entry states. See [Creating a Picklist](../picklists/using-picklists.md#creating-a-picklist) for more detailed steps.
+1. Create a picklist with the desired items. These items define object entry states. See [Creating a Picklist](../actions/defining-object-actions/images/07.png../picklists/using-picklists.md#creating-a-picklist) for more detailed steps.
 
    ```{note}
    You can add, remove, or edit picklist items for both draft and published object definitions at any time.
@@ -22,11 +22,11 @@ Follow these steps to use a picklist to add custom states for an object's entrie
 
    ![Create a picklist with the desired items.](./adding-and-managing-custom-states/images/02.png)
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
 1. Begin editing the desired custom object.
 
-1. Go to the *Fields* tab and click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Go to the *Fields* tab and click the *Add* button (![Add Button](../../../../images/icon-add.png)).
 
    ![Begin adding a field to the object definition.](./adding-and-managing-custom-states/images/03.png)
 
@@ -72,6 +72,6 @@ Once saved, users can only transition an entry's state according to your defined
 
 ## Additional Information
 
-* [Picklists](../picklists.md)
-* [Adding Fields to Objects](./adding-fields-to-objects.md)
-* [Understanding Object Field Types](../understanding-object-field-types.md)
+* [Picklists](../../picklists.md)
+* [Fields](../fields.md)
+* [Adding Fields to Objects](../fields/adding-fields-to-objects.md)

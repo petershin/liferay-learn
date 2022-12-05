@@ -1,6 +1,7 @@
 ---
 toc:
 - ./fields/adding-fields-to-objects.md
+- ./adding-and-managing-custom-states.md
 - ./fields/aggregation-fields.md
 - ./fields/attachment-fields.md
 ---
@@ -10,6 +11,7 @@ toc:
 :maxdepth: 3
 
 fields/adding-fields-to-objects.md
+fields/adding-and-managing-custom-states.md
 fields/aggregation-fields.md
 fields/attachment-fields.md
 ```
@@ -45,6 +47,10 @@ Liferay provides these field types that correspond to specific data types in the
 
 :::{grid-item-card} Adding Fields to Objects
 :link: ./fields/adding-fields-to-objects.md
+:::
+
+:::{grid-item-card} Adding and Managing Custom States
+:link: ./fields/adding-and-managing-custom-states.md
 :::
 
 :::{grid-item-card} Aggregation Fields

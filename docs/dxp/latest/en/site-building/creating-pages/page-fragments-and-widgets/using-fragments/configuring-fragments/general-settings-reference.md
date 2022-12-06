@@ -27,7 +27,7 @@ Follow these steps to access a fragment's *General* menu:
 | Hide Fragment | Check the box to hide the fragment for different viewports. See [Configuring Fragment Visibility](../configuring-fragment-visibility.md) to learn more about how this setting interacts with Page viewports. |
 
 ### Frame
-<!--CONFIRM-->
+
 | Field | Description |
 | :--- | :--- |
 | Width/Height | Determine the default height and width of the fragment's frame. |
@@ -52,7 +52,6 @@ Follow these steps to access a fragment's *General* menu:
 | Justify Content (*for Flex Row*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the row are justified: *Start*, *Center*, *End*, *Between*, or *Around*. |
 | Container Width | Determine whether the Container uses a *Fluid* or *Fixed Width*. |
 
-
 ## Grid Options
 
 | Field | Description |
@@ -75,7 +74,9 @@ Follow these steps to access a fragment's *General* menu:
 | Field | Description |
 | :--- | :--- |
 | Image Size | Determine the image's size: Fit or Original Size. |
+
 <!--CLARIFY: how does this setting relate to the Image Source settings?-->
+
 ## Dropdown Options
 
 | Field | Description |
@@ -107,6 +108,7 @@ Follow these steps to access a fragment's *General* menu:
 | Field | Description |
 | :--- | :--- |
 | Image Size | Determine the image's size: Fit or Original Size. |
+
 <!--CLARIFY: how does this setting relate to the Image Source settings?-->
 
 ## Separator Options
@@ -231,7 +233,7 @@ Form fragments include the following unique configuration options. To access the
 | Justify Content (*for Flex Row*) | Determine how elements in the row are justified: *Start*, *Center*, *End*, *Between*, or *Around*. |
 | Container Width | Determine whether the Container uses a *Fluid* or *Fixed Width*. |
 
-### Other Fragment Components
+### Other Form Fragment Configurations
 
 | Field | Description |
 | :--- | :--- |

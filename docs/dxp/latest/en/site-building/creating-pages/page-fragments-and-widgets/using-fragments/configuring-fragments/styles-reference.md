@@ -82,7 +82,7 @@ Determine the width, radius, and color of the fragment's border.
 | :--- | :--- |
 | Border Width ( ![Border Width](../../../../../images/icon-border-width.png) ) | Sets the width of an element's four borders. Click the *Units* button ( ![Units](../../../../../images/icon-code.png) ) to select the desired unit for the border width (e.g., `px`, `rem`). Click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ) to revert the field to its initial value. |
 | Border Radius ( ![Border Radius](../../../../../images/icon-corner-radius.png) ) | Defines the radius of the element's corners and allows you to add rounded corners. |
-| Border Color ( ![Border Color](../../../../../images/icon-color-circle.png) ) | Sets the color of an element's four borders. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. <!--CONFIRM WITH ECHO TEAM THAT THIS IS APPROPRIATE TO SAY. SHOULD WE JUST POINT TO STYLE BOOKS?--> |
+| Border Color ( ![Border Color](../../../../../images/icon-color-circle.png) ) | Sets the color of an element's four borders. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
 
 ![Determine the width, radius, and color of the fragment's border.](./styles-reference/images/05.png)
 

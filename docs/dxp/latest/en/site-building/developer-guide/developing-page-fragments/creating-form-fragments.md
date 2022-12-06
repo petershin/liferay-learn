@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Liferay provides [Form Component fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) for building forms in content pages. You can map these fragments to custom  field to create engaging displays for If needed, you can create additional form fragments to achieve _.
+Liferay provides [Form Component fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) for building forms in content pages. If needed, you can create additional form fragments to achieve the desired design and functionality for your forms.
 
 Follow these steps to create form fragments via the Liferay UI:
 
@@ -16,7 +16,7 @@ Follow these steps to create form fragments via the Liferay UI:
 
 1. Enter a *name*
 
-1. Select the *field types* you want the fragment to support.
+1. Select the *field types* you want the fragment to allow.
 
    If you select CAPTCHA, you cannot select other field types. Otherwise, you can select any combination of fields.
 
@@ -61,54 +61,54 @@ The rest of fragment creation follows the same process as creating a basic fragm
 
 ## Using the `input` Variable with Form Fragments
 
-Form fragments include the `input` variable for use with each fragment's JavaScript and FreeMarker code. This variable includes predefined properties that you can use to map the fragment to configurations in object fields.
+Form fragments include the `input` variable for use with each fragment's JavaScript and FreeMarker code. This variable contains the necessary properties for configuring the fragment.
 
 ## Input Variable Properties Reference
-<!-- TASK: Clarify with SME, Do these properties and attributes 'determine' or 'indicate'? -->
+
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `type` | `string` | Determines the type of field mapped to the input. |
-| `name` | `string` | Determines the name of the input. |
-| `required` | `boolean` | Determines whether the input is required. |
-| `value` | `string` | Determines the initial value of the input. <!--TASK: Clarify with SME, "Might be present if users have tried to submit a form and it failed"--> |
-| `label` | `string` | Determines the input's label. |
-| `showLabel` | `string` | Determines whether the label is visible to users. |
-| `errorMessage` | `string` | Lists backend errors when a form is submitted.<!--TASK: Clarify with SME--> |
-| `helpText` | `string` | Determines a message for helping users fill out the form field. If undefined, this field is empty. |
-| `showHelpText` | `boolean` | Determines whether the help text is visible to users. |
-| `attributes` | `object` | Adds options to the fragment for specific input types. |
+| `type` | `string` | Field type mapped to the input. |
+| `name` | `string` | Input's name. |
+| `required` | `boolean` | Whether the input is required. |
+| `value` | `string` | Field's value. |
+| `label` | `string` | Input's label. |
+| `showLabel` | `string` | Whether the label is visible to users. |
+| `errorMessage` | `string` | Form submission errors. |
+| `helpText` | `string` | UI help message for the form field. If undefined, this property is empty. |
+| `showHelpText` | `boolean` | Whether the help text is visible to users. |
+| `attributes` | `object` | Options added to the fragment for specific input types. |
 
 ### Attributes for `file` Input
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `allowedFileExtensions` | `string` | Adds display text for allowed file types. |
-| `maxFileSize` | `number` | Sets the maximum upload size in megabytes. |
-| `selectFromDocumentLibrary` | `boolean` | Determines whether users can select files from the document library. When enabled, this field provides a document library file descriptor to the fragment's input. <!--TASK: Clarify with SME--> |
-| `selectFromDocumentLibraryURL` | `string` or `undefined` | If `selectFromDocumentLibrary` is true, this property contains the URL that renders the corresponding `ItemSelector`. |
+| `allowedFileExtensions` | `string` | UI text indicating allowed file extensions. |
+| `maxFileSize` | `number` | Maximum upload size in megabytes. |
+| `selectFromDocumentLibrary` | `boolean` | Whether users can select files from the document library. This is set in the object's [attachment field](../../../building-applications/objects/creating-and-managing-objects/fields.md). |
+| `selectFromDocumentLibraryURL` | `string` or `undefined` | If `selectFromDocumentLibrary` is true, this property contains the URL for rendering the corresponding `ItemSelector`. |
 
 ### Attributes for `number` Input
-<!--TASK: Clarify with SME, What does `number | undefined` mean?-->
+
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `dataType` | `integer` or `decimal` | Determines whether to allow integer or decimal numbers. |
-| `max` | `number` or `undefined` | Sets the maximum number allowed. |
-| `min` | `number` or `undefined` | Sets the minimum number allowed. |
-| `step` | `string` or `undefined` | Sets the maximum precision allowed for decimals. |
+| `dataType` | `integer` or `decimal` | Whether to allow integer or decimal numbers. |
+| `max` | `number` or `undefined` | Maximum number allowed. |
+| `min` | `number` or `undefined` | Minimum number allowed. |
+| `step` | `string` or `undefined` | String value that can be used with the HTML input "step" attribute to indicate the maximum precision that is allowed. |
 
 ### Attributes for `relationship` Input
-<!--TASK: Clarify with SME, Could you explain these attributes a bit more?-->
+
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `relationshipLabelFieldName` | `string` | Determines the name of the field used as the label for each option. |
-| `relationshipValueFieldName` | `string` | Determines the name of the field used as a value for each option. |
-| `relationshipURL` | `string` | Determines the URL used to fetch options from the API. The API response uses Liferay's headless list format, including pagination. You can pass additional parameters to query the response. |
+| `relationshipLabelFieldName` | `string` | Field name of the related object used as the label. |
+| `relationshipValueFieldName` | `string` | Field name of the related object used as the value. |
+| `relationshipURL` | `string` | URL used to fetch options from the API. The API response uses Liferay's headless list format, including pagination. You can pass additional parameters to query the response. |
 
 ### Attributes for `select` Input
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `options` | `Array<{label: string, value: string}>` | Determines the list of available options. |
+| `options` | `Array<{label: string, value: string}>` | List of available options. |
 
 ## Additional Information
 

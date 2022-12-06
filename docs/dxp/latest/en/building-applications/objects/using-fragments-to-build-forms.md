@@ -36,7 +36,7 @@ Form fragments only support custom objects. To avoid clutter, Liferay hides the 
 
 1. Remove non-mandatory fields that you don't want in the form.
 
-1. Drag and drop form fragments to reorganize them.
+1. Drag and drop form fragments to reorganize them. By default, form elements are organized alphabetically.
 
 1. (Optional) Add basic fragments to the form container. You can use basic components (e.g., grids, separators, paragraphs, images) to provide structure and style to your form container.
 

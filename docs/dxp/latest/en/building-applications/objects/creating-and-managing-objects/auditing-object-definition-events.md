@@ -6,7 +6,7 @@ The Objects application is integrated with Liferay's Audit framework, so you can
 
 To access the Audit application, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Audit*.
 
-![Click Audit in the Control Panel to view events related to Object definitions.](./auditing-object-definition-events/images/01.png)
+![Click Audit in the Control Panel to view events related to object definitions.](./auditing-object-definition-events/images/01.png)
 
 The table includes the following columns:
 

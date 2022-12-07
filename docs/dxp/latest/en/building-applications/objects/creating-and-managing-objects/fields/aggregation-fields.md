@@ -2,9 +2,9 @@
 
 {bdg-secondary}`Available Liferay 7.4 U47+/GA47+`
 
-Aggregation fields perform basic calculations using entries from a relationship table. Available [aggregation functions](#functions-reference) include *count*, *sum*, *average*, *min*, and *max*. Each function determines how values are calculated for the field. The resulting values are read-only.
+Aggregation fields perform basic calculations on the entries from a relationship table and display the resulting values. Available [aggregation functions](#functions-reference) include count, sum, average, min, and max. Each function determines how values are calculated for the field. Aggregation field values are read-only.
 
-To add aggregation fields to an object, it must be on the parent side of a one-to-many relationship or on either side of a many-to-many relationship. Also, the related object must have a numeric field (i.e., integer, long integer, decimal, or precision decimal) to use the sum, average, min, and max functions.
+To include aggregation fields, an object must be on the parent side of a one-to-many relationship or on either side of a many-to-many relationship. The related object must have a numeric field (i.e., integer, long integer, decimal, or precision decimal) to use the sum, average, min, and max functions.
 
 After adding an aggregation field, you can add [filters](#using-aggregation-filters) to it. These filters can use date, integer, or picklist fields in the related object to limit the entries included in the calculation. Only entries that meet all filter criteria are included in the aggregation field's calculations.
 
@@ -14,15 +14,15 @@ Aggregation fields have these available functions:
 
 | Function | Description |
 | :--- | :--- |
-| Count | Counts how many entries relate to the current entry. To do this, it checks the entry's relationship table, counts related entries, and displays the total. |
-| Sum | Checks an entry's relationship table, retrieves a numeric value from its related entries, adds them together, and displays the sum. |
-| Average | Checks an entry's relationship table, retrieves a numeric value from its related entries, calculates their average, and displays the value. |
-| Min | Checks an entry's relationship table, retrieves a numeric value from its related entries, and displays the lowest value. |
-| Max | Checks an entry's relationship table, retrieves a numeric value from its related entries, and displays the highest value. |
+| Count | Checks how many entries relate to the current entry and displays the total. |
+| Sum | Retrieves a numeric value from each related entry and calculates the sum. |
+| Average | Retrieves a numeric value from each related entry and calculates the average. |
+| Min | Retrieves a numeric value from each related entry and calculates the lowest value. |
+| Max | Retrieves a numeric value from each related entry and calculates the highest value. |
 
 ![Aggregation fields can use the count, sum, average, min, or max functions.](./aggregation-fields/images/01.png)
 
-To understand how these functions work, consider a scenario with two insurance objects: one for creating policies and one for creating claims. If you relate the policy object to the claims object in a one-to-many relationship, you can add aggregation fields to the policy object that perform these functions.
+Consider a scenario with two insurance objects: policies and claims. If you relate the policy object to the claims object in a one-to-many relationship, you can add these aggregation fields to the policy object:
 
 * Count: Count the number of claims related to each policy.
 * Sum: Calculate and display the total monetary value of claims related to each policy.
@@ -36,15 +36,15 @@ To understand how these functions work, consider a scenario with two insurance o
 
 1. Under Filters, click the *Add* button (![Add Button](../../../../images/icon-add.png))
 
-1. Select a *field* to filter by. Available options include date, integer, and picklist fields in the related object.
+1. Select a field to filter by. Available options include date, integer, and picklist fields in the related object.
 
-1. Select a *filter type*. This determines how the filter uses the selected field. Available options depend on the selected field.
+1. Select a *Filter Type* to determine how the filter uses the selected field. Available options depend on the selected field.
 
-   For date fields, select *Range* and enter a *start date* and *end date*.
+   For date fields, select *Range* and enter a start date and end date.
 
-   For picklist fields, select *Exclude* or *Include* and check the desired *picklist values*.
+   For picklist fields, select *Exclude* or *Include* and check the desired picklist values.
 
-   For integer fields, select *Is Equal To* or *Is Not Equal To* and enter a *whole number*.
+   For integer fields, select *Is Equal To* or *Is Not Equal To* and enter a whole number.
 
 1. Click *Save*.
 

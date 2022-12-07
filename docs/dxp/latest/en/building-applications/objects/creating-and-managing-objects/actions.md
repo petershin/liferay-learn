@@ -12,7 +12,7 @@ actions/defining-object-actions.md
 actions/understanding-action-types.md
 ```
 
-Actions define custom operations triggered by object entry events. While an action is active, Liferay listens for when users add, delete, or update entries and then performs the set action.
+Actions define custom operations triggered by object entry events. Liferay listens for the event---whether add, delete, or update---and executes the operation.
 
 ![Add actions to object definitions.](./actions/images/01.png)
 

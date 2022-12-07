@@ -23,13 +23,10 @@ When extending system objects, you can add [fields](#adding-fields), [relationsh
 
 ## Adding Fields
 
-You can add fields to system objects to define additional database columns. These fields are added to a separate database table that uses the service's original table name with `_x` appended to it (e.g., `AccountEntry_x`). System objects support all available [field types](./fields.md). Since system objects do not support custom layouts or views, you can only access these custom fields via Headless APIs. See [Adding Fields to Objects](./fields/adding-fields-to-objects.md) for more information.
+You can add fields to system objects. The additional database columns are added to a separate database table that uses the service's original table name with `_x` appended to it (e.g., `AccountEntry_x`). System objects support all available [field types](./fields.md). Since system objects do not support custom layouts or views, you can only access these custom fields via Headless APIs. See [Adding Fields to Objects](./fields/adding-fields-to-objects.md) for more information.
 
 ```{note}
-Liferay also provides the [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) application [Expando](../../data-frameworks/expando-framework/accessing-custom-fields-with-expando.md) framework for extending system applications. However, consider these factors when determining which method to use:
-
-* Objects does not support these fields, so you cannot use them with object [relationships](#adding-relationships), [actions](#adding-actions), or [validations](#adding-validations).
-* While objects provides more field options and capabilities, it does not support as many system applications as Custom Fields and the Expando framework.
+Liferay's [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) application is for adding fields to most Liferay system applications using the [Expando](../../data-frameworks/expando-framework/accessing-custom-fields-with-expando.md) framework. Objects does not support the Expando-based custom fields, so you cannot use them with Objects features (e.g., [relationships](#adding-relationships), [actions](#adding-actions), and [validations](#adding-validations)).
 ```
 
 ## Adding Relationships
@@ -42,7 +39,7 @@ Since system objects don't support [custom layouts](./layouts/designing-object-l
 
 ## Adding Actions
 
-You can add custom actions to system objects that are triggered when entries are added, updated, or removed. Currently, system objects support [Webhook](./actions/defining-object-actions.md#webhook-actions), [Groovy Script](./actions/defining-object-actions.md#groovy-script-actions), and [Notification](./actions/defining-object-actions.md#notification-actions) actions. See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
+You can add custom actions to system objects that are triggered when entries are added, updated, or removed. System objects support [Webhook](./actions/defining-object-actions.md#webhook-actions), [Groovy Script](./actions/defining-object-actions.md#groovy-script-actions), and [Notification](./actions/defining-object-actions.md#notification-actions) actions. [Add an Object Entry](./actions/defining-object-actions.md#add-an-object-entry-actions) actions are not supported in system objects. See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
 
 ## Adding Validations
 

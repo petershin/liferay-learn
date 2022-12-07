@@ -10,17 +10,17 @@ You can reactivate any inactive object to make it and its data available for use
 Deactivating an object does not affect its data; it only prevents users from accessing it until the object is reactivated.
 ```
 
-Follow these steps to deactivate or activate a custom object.
+To deactivate or activate a custom object,
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+1. Open the Global Menu (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Click the desired custom *object*.
+1. Click the desired custom object.
 
    You cannot deactivate system objects.
 
 1. Under Object Data in the Details tab, toggle the switch to *Active* or *Inactive*.
 
-    ![Switch the object to Activate or Inactive.](./activating-and-deactivating-objects/images/01.png)
+    ![Switch the object to Active or Inactive.](./activating-and-deactivating-objects/images/01.png)
 
 1. Click *Save*.
 

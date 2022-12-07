@@ -17,7 +17,7 @@ Groovy script actions are only available for Liferay Experience Cloud Self-Manag
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-*Webhook* actions deliver a data payload to a set URL. When you select this action type, you must enter the target URL. If applicable, you can also enter a secret.
+*Webhook* actions deliver a data payload to a set URL. You must enter the target URL. If applicable, enter a secret.
 
 ![Enter a webhook URL and secret.](./understanding-action-types/images/01.png)
 
@@ -25,7 +25,7 @@ Groovy script actions are only available for Liferay Experience Cloud Self-Manag
 
 {bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`
 
-*Groovy Script* actions execute custom Groovy scripts. When you select this action type, enter your script into the provided code window. For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay displays an error message.
+*Groovy Script* actions execute Groovy scripts. Enter your script into the provided code window. For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to validate your Groovy script syntax when you click *Save*. If the script is invalid, Liferay displays an error message.
 
 ![Enter your Groovy script.](./understanding-action-types/images/02.png)
 
@@ -33,9 +33,9 @@ Groovy script actions are only available for Liferay Experience Cloud Self-Manag
 
 {bdg-secondary}`Available Liferay 7.4 U32+ and GA32+`
 
-Use *Notification* actions to automate email notifications for Object events. To use this action type, your instance must have a [configured mail server](../../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) and at least one [notification template](../../../../process-automation/notifications/creating-notification-templates.md).
+Use *Notification* actions to automate email notifications for Object events. Your instance requires a [configured mail server](../../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) and at least one [notification template](../../../../process-automation/notifications/creating-notification-templates.md).
 
-When you select this action type, you must select a notification template. This template determines the sender, recipient, and content for each email.
+A notification template is required to determine the sender, recipient, and content for each email.
 
 ![Select a notification template.](./understanding-action-types/images/03.png)
 
@@ -43,7 +43,7 @@ When you select this action type, you must select a notification template. This 
 
 {bdg-secondary}`Available Liferay 7.4 U33+ and GA33+`
 
-*Add an Object Entry* actions create entries in a specified Object. When you select this action type, you must choose an active Object. If the Object includes any required fields, you must also set predefined values for the new entries. You can enter these values directly or use expression builder to set values dynamically. If desired, you can also set values for non-mandatory fields.
+*Add an Object Entry* actions create entries in the specified Object. You must choose an active Object. If the Object includes any required fields, you must set predefined values for the new entries. Enter these values directly or use the expression builder to set values dynamically. You can set values for non-mandatory fields if desired.
 
 ![Select an active Object and enter predefined values for the created entries.](./understanding-action-types/images/04.png)
 

@@ -1,14 +1,17 @@
 # Changing Your Site's Appearance
 
-Changing the site logo, favicon, and theme are some of first look and feel areas you may want to change. Themes are used to set the overall look and feel for your Site. A Site's Pages can be configured to use any theme that has been deployed to your DXP instance.
+Changing the site logo, favicon, and theme are some of first look and feel areas you may want to change. Themes are used to set the overall look and feel for your site. A site's pages can be configured to use any theme that has been deployed to your DXP instance.
 
-The DXP Docker image has the _Classic_ theme available by default. In this example, we deploy a new simple theme and then show you how to switch from one theme to another.
+The DXP Docker image has the *Classic* theme available by default. In this example, we deploy a new simple theme and then show you how to switch from one theme to another.
 
 ## Changing Your Site's Favicon
 
 Configure your site's favicon from the *Pages* page:
 
-1. With your Liferay instance running, open your browser to `ltthps://localhost:8080` and [log in as an administrator](./introduction-to-the-admin-account.md).
+```{include} /_snippets/run-liferay-portal.md
+```
+
+Then, follow these steps:
 
 1. In the _Site Menu_ on the left side of the screen, navigate to _Site Builder_ → _Pages_.
 
@@ -49,7 +52,7 @@ Then, follow these steps:
     docker cp liferay-5b2v-theme.war docker-container:path-to-deploy-folder
     ```
 
-This will load the sample theme into your DXP instance. You can check your console for the following message to confirm that the theme successfully deployed:
+This loads the sample theme into your DXP instance. You can check your console for the following message to confirm that the theme successfully deployed:
 
 ```
 2020-03-11 17:06:35.601 INFO  [fileinstall-/opt/liferay/osgi/war][BundleStartStopLogger:39] STARTED liferay-5b2v-theme_1.0.0 [1112]
@@ -57,11 +60,11 @@ This will load the sample theme into your DXP instance. You can check your conso
 
 ### Change Your Site's Theme
 
-Configure the Pages for your Site to use the deployed theme:
+Configure the pages for your site to use the deployed theme:
 
 1. Open your browser to `https://localhost:8080` and [log in as an administrator](./introduction-to-the-admin-account.md).
 
-1. In the _Site Menu_ on the left side of the screen, navigate to _Site Builder_ → _Pages_.
+1. In the *Site Menu* on the left side of the screen, navigate to *Site Builder* → *Pages*.
 
 1. Click the *Actions* button (![Action Button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
 
@@ -69,21 +72,21 @@ Configure the Pages for your Site to use the deployed theme:
 
 1. Click the arrow to expand the *Look And Feel* section.
 
-1. Scroll down and click the _Change Current Theme_ button:
+1. Scroll down and click the *Change Current Theme* button:
 
     ![Click Change Current Theme to select a new theme.](./changing-your-sites-appearance/images/03.png)
 
-1. Select the deployed sample theme, _Acme Sample Blue Theme._
+1. Select the deployed sample theme, *Acme Sample Blue Theme.*
 
-1. Navigate back to the home page for your Site to confirm that the theme has changed. The background for the content section of your Site is now blue.
+1. Navigate back to the home page for your site to confirm that the theme has changed. The background for the content section of your site is now blue.
 
     ![The home page has a different color background after changing the theme.](./changing-your-sites-appearance/images/04.png)
 
-Your Site's theme has been updated.
+Your site's theme has been updated.
 
 ### What's Next
 
-For a full length overview of how you can manage your Site's appearance, see [Managing Your Site's Appearance](../site-building/site-appearance/site-appearance.md).
+For a full length overview of how you can manage your site's appearance, see [Managing Your Site's Appearance](../site-building/site-appearance/site-appearance.md).
 
 There are many themes available on the [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md) that can be used to quickly achieve a professional look and feel.
 

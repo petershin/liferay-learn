@@ -2,18 +2,14 @@
 
 Changing the site logo, favicon, and theme are some of first look and feel areas you may want to change. Themes are used to set the overall look and feel for your site. A site's pages can be configured to use any theme that has been deployed to your DXP instance.
 
-The DXP Docker image has the *Classic* theme available by default. In this example, we deploy a new simple theme and then show you how to switch from one theme to another.
-
 ## Changing Your Site's Favicon
-
-Configure your site's favicon from the *Pages* page:
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+Then, follow these steps to change your site's favicon:
 
-1. In the _Site Menu_ on the left side of the screen, navigate to _Site Builder_ → _Pages_.
+1. In the _Site Menu_ on the left side of the screen, navigate to *Site Builder* &rarr; *Pages*.
 
 1. Click the *Actions* button (![Action Button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
 
@@ -30,6 +26,8 @@ Then, follow these steps:
 Your site uses the chosen image for its favicon.
 
 ## Changing Your Site's Theme
+
+The DXP Docker image has the *Classic* theme available by default. In this example, we deploy a new simple theme and then show you how to switch from one theme to another.
 
 ### Deploy a New Theme
 
@@ -64,7 +62,7 @@ Configure the pages for your site to use the deployed theme:
 
 1. Open your browser to `https://localhost:8080` and [log in as an administrator](./introduction-to-the-admin-account.md).
 
-1. In the *Site Menu* on the left side of the screen, navigate to *Site Builder* → *Pages*.
+1. In the *Site Menu* on the left side of the screen, navigate to *Site Builder* &rarr; *Pages*.
 
 1. Click the *Actions* button (![Action Button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
 

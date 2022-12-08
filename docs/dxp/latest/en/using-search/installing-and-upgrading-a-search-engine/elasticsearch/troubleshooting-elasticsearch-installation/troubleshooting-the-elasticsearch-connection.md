@@ -98,7 +98,7 @@ On Liferay 7.3 and 7.4, the [Elasticsearch 7](https://help.liferay.com/hc/en-us/
 [2021-06-04T18:09:11,925][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [es-node1] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=0.0.0.0/0.0.0.0:9200, remoteAddress=/192.168.0.17:41104}
 ```
 
-On a Liferay 7.0-7.2, the [Elasticsearch 6/7](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.2-Elasticsearch) log prints
+On Liferay 7.0-7.2, the [Elasticsearch 6/7](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.2-Elasticsearch) log prints
 
 ```
 [2021-06-04T18:11:13,045][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] received plaintext traffic on an encrypted channel, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:34346}
@@ -337,7 +337,7 @@ See the [Monitoring Elasticsearch](../liferay-enterprise-search/monitoring-elast
 
 ## IOException: Data Isn't an Object ID
 
-When the `.p12` file was generated using `keytool` by a JDK from a higher major version than the Liferay JDK, this error can appear in Liferay's log: 
+When the `.p12` file was generated (using `keytool`) by a JDK from a higher major version than the Liferay JDK, this error can appear in Liferay's log: 
 
 ```
 09:30:55,298 ERROR [ServerService Thread Pool -- 106][ElasticsearchConnectionManager:93] bundle com.liferay.portal.search.elasticsearch7.impl:5.0.17 (670)[com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager(1656)] : The activate method has thrown an exception

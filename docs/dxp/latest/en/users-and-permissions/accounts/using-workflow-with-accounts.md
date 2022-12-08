@@ -1,37 +1,35 @@
 # Using Workflow with Accounts
 
-{bdg-secondary}`Available: Liferay DXP 7.4 U49+/Liferay Portal 7.4 GA49+`
+{bdg-secondary}`Available Liferay 7.4 U49+/GA49+`
 
-Accounts are fully integrated with Liferay's [workflow engine](../../process-automation/workflow/introduction-to-workflow.md). You can enable an approval workflow process for account creation.
+Accounts are fully integrated with Liferay's [workflow engine](../../process-automation/workflow/introduction-to-workflow.md) so you can enable an approval process for account creation.
 
-## Enabling a Workflow
+To enable a workflow for Accounts,
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Applications* &rarr; *Workflow* &rarr; *Process Builder*. Click the *Configurations* tab. Click *Edit* for Account Entry.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab &rarr; *Process Builder*.
 
-1. Use the drop-down menu and select a specific workflow (e.g. Single Approver). Click *Save*.
+1. Go to the *Configurations* tab and click *Edit* for Account Entry.
 
-   ![Use the drop-down menu and select Single Approver.](./using-workflow-with-accounts/images/01.png)
+1. Use the drop-down menu to select a *workflow*.
 
-   Workflow has now been enabled for accounts.
+   See [Workflow Designer Overview](../../process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) to learn about designing custom workflows.
 
-## Creating an Account
+   ![Use the drop-down menu to select a workflow.](./using-workflow-with-accounts/images/01.png)
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*. 
+1. Click *Save*.
 
-1. Click the Add icon (![Add icon](../../images/icon-add.png)). Give the account a name and set up the account according to your use case. Click *Save*.
+The workflow is now active. New accounts must go through the defined approval process before they are activated.
 
-1. Go back to the list of accounts. Click *Filter and Order* and select *Pending*. The account you just created is in pending state and only becomes active once the account is approved.
+When [creating an account](../accounts.md#creating-an-account), its status is set to Pending and reviewers are notified.
 
-1. Login as a user with approval privileges. Open your *Personal Menu* and click Notifications. Notice that there is a new notification.
+![Designated reviewers are notified of new accounts.](./using-workflow-with-accounts/images/02.png)
 
-   ![Open the personal menu and see the new notification.](./using-workflow-with-accounts/images/02.png)
+Reviewers can approve or reject the pending account. See [Reviewing Assets](../../process-automation/workflow/using-workflows/reviewing-assets.md) for more information on the review process.
 
-1. Click on the new notification to review the account in the workflow. You can also click *My Workflow Tasks* and find the pending notification. Review the pending workflow and choose to approve or reject the new account.
+![Reviewers can approve or reject accounts.](./using-workflow-with-accounts/images/03.png)
 
-1. Click the Actions icon (![Actions icon](../../images/icon-actions.png)) and click *approve*. Add a comment if you like and click *Done*.
+## Additional Information
 
-   ![Click the actions icon and click approve.](./using-workflow-with-accounts/images/03.png)
-
-   The account is now approved.
-
-Note in this example, John is set to be the reviewer of the single approver workflow. See [Workflow Designer Overview](../../process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) to learn more about defining your workflow process.
+* [Creating Accounts](../accounts.md#creating-an-account)
+* [Workflow Designer Overview](../../process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md)
+* [Reviewing Assets](../../process-automation/workflow/using-workflows/reviewing-assets.md)

@@ -4,6 +4,28 @@ Changing the site logo, favicon, and theme are some of first look and feel areas
 
 The DXP Docker image has the _Classic_ theme available by default. In this example, we deploy a new simple theme and then show you how to switch from one theme to another.
 
+## Changing Your Site's Favicon
+
+Configure your site's favicon from the *Pages* page:
+
+1. With your Liferay instance running, open your browser to `ltthps://localhost:8080` and [log in as an administrator](./introduction-to-the-admin-account.md).
+
+1. In the _Site Menu_ on the left side of the screen, navigate to _Site Builder_ → _Pages_.
+
+1. Click the *Actions* button (![Action Button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
+
+    ![Open the Pages screen, click the Actions button in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
+
+1. In the *Favicon* section, click the *Change Favicon* button.
+
+    ![Click the Change Favicon button to choose your site's new favicon.](./changing-your-sites-appearance/images/02.png)
+
+1. Upload a new file for your site's favicon, or use an existing image already uploaded.
+
+1. Click *Save*.
+
+Your site uses the chosen image for its favicon.
+
 ## Changing Your Site's Theme
 
 ### Deploy a New Theme
@@ -37,7 +59,7 @@ This will load the sample theme into your DXP instance. You can check your conso
 
 Configure the Pages for your Site to use the deployed theme:
 
-1. Open your browser to `https://localhost:8080` and [login as an administrator](./introduction-to-the-admin-account.md).
+1. Open your browser to `https://localhost:8080` and [log in as an administrator](./introduction-to-the-admin-account.md).
 
 1. In the _Site Menu_ on the left side of the screen, navigate to _Site Builder_ → _Pages_.
 
@@ -45,15 +67,17 @@ Configure the Pages for your Site to use the deployed theme:
 
     ![Open the Pages screen, click the Actions button in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
+1. Click the arrow to expand the *Look And Feel* section.
+
 1. Scroll down and click the _Change Current Theme_ button:
 
-    ![Click Change Current Theme to select a new theme.](./changing-your-sites-appearance/images/02.png)
+    ![Click Change Current Theme to select a new theme.](./changing-your-sites-appearance/images/03.png)
 
 1. Select the deployed sample theme, _Acme Sample Blue Theme._
 
 1. Navigate back to the home page for your Site to confirm that the theme has changed. The background for the content section of your Site is now blue.
 
-    ![The home page has a different color background after changing the theme.](./changing-your-sites-appearance/images/03.png)
+    ![The home page has a different color background after changing the theme.](./changing-your-sites-appearance/images/04.png)
 
 Your Site's theme has been updated.
 
@@ -66,9 +90,5 @@ There are many themes available on the [Liferay Marketplace](../system-administr
 You can also learn how to [create your own theme](../site-building/site-appearance/themes/introduction-to-themes.md).
 
 <!-- ## Changing Your Site's Logo
-
-Coming soon!
-
-## Changing Your Site's Favicon
 
 Coming soon! -->

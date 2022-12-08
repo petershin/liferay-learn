@@ -14,7 +14,7 @@ To add an action,
    For Liferay 7.4 U22+ and GA22+, you can add actions to system objects.
    ```
 
-1. Go to the *Actions* tab and click the *Add* button ( ![Add Button](../../../../images/icon-add.png) ).
+1. Go to the *Actions* tab and click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
 
 1. In the Basic Info tab, enter a *Name* and *Description* for the action.
 
@@ -34,7 +34,7 @@ To add an action,
 
    ![Determine when the action is performed.](./defining-object-actions/images/03.png)
 
-1. (Optional) Enable a Condition to control whether the action is triggered. Click the *Code* button ( ![Code](../../../../images/icon-code.png) ) to view available expressions.
+1. (Optional) Enable a Condition upon which the action is triggered. Click the *Code* button ( ![Code](../../../../images/icon-code.png) ) to view available expressions.
 
    On Liferay 7.4 U33+ and GA33+, Liferay validates your expression syntax when you click *Done*. If the expression is invalid, Liferay displays an error message.
 
@@ -46,7 +46,7 @@ To add an action,
 
 Once created, the action is active and triggered according to your configuration.
 
-You can deactivate an action from its *Basic Info* tab. Toggle the *Active* switch and click *Save*.
+You can deactivate an action from its Basic Info tab. Toggle the *Active* switch and click *Save*.
 
 ![Toggle the Active switch to deactivate the action.](./defining-object-actions/images/05.png)
 

@@ -21,7 +21,7 @@ Field types have been added and improved as part of the move to Data Engine:
 
 ## Child Structures are Replaced by Structure Fieldsets
 
-Structures backed by DDM could include child structures that inherited all the parent's fields and settings. This relationship no longer exists in Liferay 7.4, because you can now create fieldsets, which similarly allow you to create reusable fieldsets for your structures. Fieldsets improve the editing experience since they allow you to see what the structure will look like as you edit.
+Structures backed by DDM could include child structures that inherited all the parent's fields and settings. This relationship no longer exists in Liferay 7.4 because you can now create fieldsets, with which you can create reusable fieldsets for your structures. Fieldsets improve the editing experience since you can see what the structure looks like as you edit.
 
 ```{warning}
 - A fieldset is reusable across multiple structures. Editing it within a single structure causes changes to all the structures at once.
@@ -39,11 +39,11 @@ To work with fieldsets,
 
 ![Use structures or dedicated fieldsets in your structure.](./whats-new-with-web-content-structures-in-7-4/images/07.png)
 
-When you begin creating a new structure, any existing fieldset or structure will be available to select in the Fieldsets tab. The Basic Web Content structure is included as a fieldset out-of-the-box.
+When you begin creating a new structure, any existing fieldset or structure can be selected in the Fieldsets tab. The Basic Web Content structure is included as a fieldset out-of-the-box.
 
 ## Structure Definition Source Changes
 
-Structures in DE are represented by JSON (it was XML in DDM). Instead of allowing source editing in the Web Content Structures UI, you can now import and export the structure definition to work with the structure's source JSON locally.
+Structures in DE are represented by JSON (it was XML in DDM). Rather than editing code in the Web Content Structures UI, you can now import and export the structure definition to work with the structure's source JSON locally.
 
 ```{warning} 
 Be careful working with the JSON structure source as it can be more complicated than it appears at first glance. For example, when adding a field to the structure, you must update both the `dataDefinitionFields` array and the `defaultDataLayout` element. 
@@ -80,7 +80,7 @@ To import a new structure,
 
 ## Flexible Structure Layout
 
-Previously, structure fields could be ordered on the form, and nested to create a hierarchical view of the form. The Data Engine representation of the structure adds the ability to define columns.
+Previously, structure fields could be ordered on the form and nested to create a hierarchical view of the form. The Data Engine representation of the structure adds the ability to define columns.
 
 ![Create a structure with two columns per row.](./whats-new-with-web-content-structures-in-7-4/images/08.png)
 

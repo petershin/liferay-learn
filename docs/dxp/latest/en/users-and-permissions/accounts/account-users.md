@@ -2,6 +2,10 @@
 
 {bdg-secondary}`Available 7.4+`
 
+```{note}
+The inviting a new user by email functionality is in Liferay DXP 7.4 U55/Liferay Portal 7.4 GA55
+```
+
 Account Users are User accounts that are associated with a Business Account or a Person Account.
 
 ## Adding a New Account User
@@ -51,6 +55,28 @@ To associate an existing user to a Personal Account,
 1. Click the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the account you want to edit and click _Edit_. 
 
 1. Under the User section, click the _Assign_ button and select a user. Click the _Choose_ button.
+
+## Inviting a New User by Email
+
+You can invite a new user to an account by email. Liferay will send an automated invitation email to the person you specify to create a user account and be associated with an account.
+
+1. Make sure you have already [Configured Mail](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) for your Liferay instance.
+
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*. 
+
+1. Select the account you want to invite a new user to. Click the *Users* tab. 
+
+1. Click the _Add_ icon (![Add icon](../../images/icon-add.png)) and click *Invite Users*. A new window will pop open.
+
+1. Input the email address of the person you want to invite. Make sure to type a comma or press enter to input the email address. Input a role for this new user (e.g. Account Administrator, Buyer, Order Manager, etc.). Click *Invite*.
+
+   ![Input an email address and role for the new user.](./account-users/images/02.png)
+
+1. An email invitation is sent. The person can now click *Create Account* in the email to register for a new user account on the Liferay instance.
+
+   ![The person receives an email invitation to create a new user account.](./account-users/images/03.png)
+
+1. Upon user account creation, the new user will be associated with the account and have the assigned account role.
 
 ## Editing an Account User
 
@@ -102,7 +128,7 @@ To see a deactivated User, click the *Filter and Order* drop-down menu and click
 
 1. Click the inactive User's _Options_ icon (![Options icon](../../images/icon-actions.png)) and click *Delete*
 
-   ![Select the inactive user and click Delete.](./account-users/images/02.png)
+   ![Select the inactive user and click Delete.](./account-users/images/04.png)
 
 1. Click *OK* on the pop-up form to confirm your decision. The Account User is now deleted.
 

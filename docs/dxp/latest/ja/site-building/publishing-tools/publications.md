@@ -3,11 +3,12 @@ toc:
 - ./publications/enabling-publications.md
 - ./publications/creating-and-managing-publications.md
 - ./publications/making-and-publishing-changes.md
+- ./publications/using-workflow-with-publications.md
 - ./publications/collaborating-on-publications.md
 - ./publications/resolving-conflicts.md
 - ./publications/reverting-changes.md
+- ./publications/publications-permissions.md
 ---
-
 # パブリケーション
 
 ```{toctree}
@@ -16,9 +17,11 @@ toc:
 publications/enabling-publications.md
 publications/creating-and-managing-publications.md
 publications/making-and-publishing-changes.md
+publications/using-workflow-with-publications.md
 publications/collaborating-on-publications.md
 publications/resolving-conflicts.md
 publications/reverting-changes.md
+publications/publications-permissions.md
 ```
 
 > 対応可能：Liferay DXP/Portal 7.3以降

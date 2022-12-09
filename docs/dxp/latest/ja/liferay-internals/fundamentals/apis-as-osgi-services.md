@@ -20,9 +20,9 @@ APIと実装に関する懸念事項を異なるモジュールに分離する�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to start the example modules:
+次に、以下の手順を実行します。
 
-1. Download and unzip `liferay-p9g2.zip`.
+1. `liferay-p9g2.zip` をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/fundamentals/liferay-p9g2.zip -O
@@ -122,25 +122,26 @@ APIは、次の2つのステップで作成します。
 ### インターフェースパッケージをエクスポートする
 
 APIモジュールの`bnd.bnd`ファイルは、モジュールを記述し、`com.acme.p9g2`インターフェースパッケージをエクスポートします。
+
 ```{literalinclude} ./apis-as-osgi-services/resources/liferay-p9g2.zip/p9g2-api/bnd.bnd
 ```
 
-The [package export](./exporting-packages.md) shares the `Greeter` interface with other modules.
+[パッケージエクスポート](./exporting-packages.md) は `Greeter`インターフェイスを他のモジュールと共有します。
 
-The `Greeter` service type is available to implement and use.
+`Greeter`のサービスタイプを実装して利用することができます。
 
-## Create the Implementation
+## 実装を作成する
 
-The example implementation module contains a concrete Java class that provides the `Greeter` capability. Here are the implementation steps.
+サンプルの実装モジュールは`Greeter`の機能を提供する具体的なJavaクラスを含みます。以下は、実装の手順です。
 
-* [Add the Component Annotion Class](#add-the-component-annotation)
-* [Implement the Interface](#implement-the-interface)
-* [Add a Dependency on the API](#add-a-dependency-on-the-api)
-* [Examine the Module JAR](#examine-the-module-jar)
+* [コンポーネントアノテーションクラスの追加](#add-the-component-annotation)
+* [インターフェースの実装](#implement-the-interface)
+* [APIへの依存関係の追加](#add-a-dependency-on-the-api)
+* [モジュールJARを調べる](#examine-the-module-jar)
 
-### Add the Component Annotation
+### コンポーネントアノテーションの追加
 
-The `P9G2Greeter` class implements the `Greeter` interface:
+`P9G2Greeter`クラスは`Greeter`インターフェースを実装しています。
 
 ```{literalinclude} ./apis-as-osgi-services/resources/liferay-p9g2.zip/p9g2-impl/src/main/java/com/acme/p9g2/internal/P9G2Greeter.java
 :language: java

@@ -77,7 +77,7 @@ DXPは、アプリケーションサーバー上で実行されるWebアプリ�
 * [JavaScriptアプリケーション\（テンプレート、ルーター、およびリソース\）](../building-applications/developing-a-javascript-application/using-react.md)
 * [JSPのカスタマイゼーション](./extending-liferay/customizing-jsps.md)
 * [ポートレット\（テンプレート、コントローラー、およびリソース\）](../building-applications/developing-a-java-web-application/reference/portlets.md)
-* [ポートレットフィルター](./extending-liferay/portlet-filters/auditing-portlet-activity-with-a-portlet-filter.md)
+* [ポートレットフィルター](./extending-liferay/auditing-portlet-activity-with-a-portlet-filter.md)
 * [テーマ](../site-building/site-appearance/themes/introduction-to-themes.md)
 
 次の図は、ランタイム環境でのこれらのコンポーネントタイプを示しています。
@@ -86,9 +86,9 @@ DXPは、アプリケーションサーバー上で実行されるWebアプリ�
 
 ランタイム環境は、コンポーネントのオンザフライでの追加、置換、およびカスタマイズをサポートしています。 これにより、次のシナリオが可能になります。
 
-**置換：**`ServiceC Impl 2`コンポーネントのランクが既存のコンポーネント`ServiceC Impl 1`よりも高い場合、`ServiceC Impl 2`が使用されます。
+**置換：** `ServiceC Impl 2`コンポーネントのランクが既存のコンポーネント`ServiceC Impl 1`よりも高い場合、`ServiceC Impl 2`が使用されます。
 
-**カスタマイゼーション：**`PortletAフィルター`は、`PortletA`で行われる要求と応答をインターセプトして変更し、`PortletA`が表示するコンテンツに影響を与えます。
+**カスタマイゼーション：** `PortletAフィルター`は、`PortletA`で行われる要求と応答をインターセプトして変更し、`PortletA`が表示するコンテンツに影響を与えます。
 
 コンポーネントWARおよび[モジュールJARプロジェクト](./fundamentals/module-projects.md)は、 [OSGiバンドル](https://www.osgi.org/) (モジュール)としてインストールされます。 LiferayのOSGiフレームワークは、モジュールのライフサイクルを定義し、依存関係を適用し、クラスの読み込み構造を定義し、モジュールとコンポーネントを管理するためのAPIとCLI（[Felix Gogo シェル](./fundamentals/using-an-osgi-service.md)）を提供します。 コアは、[ポータルプロパティファイル](../installation-and-upgrades/reference/portal-properties.md)と[システム設定](../system-administration/configuring-liferay/system-settings.md)を介して構成されます。
 

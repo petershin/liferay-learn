@@ -9,7 +9,7 @@
 
 次の手順を実行します。
 
-1. [Product API Basics](./liferay-z8v2.zip)をダウンロードし解凍します。
+1. [Product API Basics](./liferay-z8v2.zip) をダウンロードし解凍します。
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O
@@ -226,7 +226,7 @@ Liferay インスタンスの `Product` オブジェクトが JSON でリスト�
 | name:asc                      | 名前の昇順で並べ替える                             |
 | createDate:desc,name:desc | 最初にcreateDateの降順でソートし、次にnameの降順でソートします。 |
 
-詳しくは、 [API クエリパラメータ](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) をお読みください。
+詳しくは、 [API クエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をお読みください。
 
 ## 製品を入手する
 

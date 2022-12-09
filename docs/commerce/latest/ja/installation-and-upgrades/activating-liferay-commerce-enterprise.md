@@ -126,12 +126,12 @@ XMLファイルをDXPインスタンスの [`${liferay.home}/deploy`](https://le
 
 XMLファイルをコンテナの`/opt/liferay/deploy`フォルダにコピーします。 アクティベーションキーの処理中、Liferayはこのファイルを `opt/liferay/osgi/modules`フォルダに移動させ、ライセンスファイル(`.li`を`opt/liferay/data/license`フォルダに生成します。 Dockerコンテナへのファイルのデプロイについては、 [Providing Files to a Container](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.html?highlight=opt) を参照してください。
 
-#### Liferay Cloudへのデプロイ
+#### Liferay Cloudへのデプロイメント
 
-プロジェクトのセントラルGitリポジトリ内の [`liferay/configs/{ENV}/deploy/`](https://learn.liferay.com/liferay-cloud/latest/ja/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境のLiferayサービスへのファイルのデプロイに関する詳細は、 [Overview of Liferay Cloud Deployment Workflow](https://learn.liferay.com/liferay-cloud/latest/ja/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) を参照してください。
+プロジェクトのセントラルGitリポジトリ内の [`liferay/configs/{ENV}/deploy/`](https://learn.liferay.com/liferay-cloud/latest/ja/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境の Liferay サービスへのファイルのデプロイについては、 [Liferay Cloud デプロイメントワークフローの概要](https://learn.liferay.com/liferay-cloud/latest/ja/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) を参照してください。
 
 ```{important}
-Liferay Cloud契約でCommerceを購入した場合、アクティベーションキーはLiferay Cloudチームがクラウド基盤で管理しますので、ご自身でキーを管理する必要はありません。 ただし、既存のLiferay CloudプロジェクトにCommerceを追加する場合は、自分でライセンスをデプロイする必要があります。
+Liferay Cloudの契約でCommerceを購入した場合、アクティベーションキーはLiferay Cloudチームがクラウド基盤を通じて管理するため、お客様自身で管理する必要はありません。 ただし、既存のLiferay CloudプロジェクトにCommerceを追加する場合は、ライセンスを自分で手動でデプロイする必要があります。
 ```
 
 #### デプロイの確認
@@ -171,9 +171,9 @@ Liferay Commerceエンタープライズを再起動するには、まずサー�
 
 期限切れのXMLキーを`opt/liferay/osgi/modules`フォルダから削除し、期限切れのライセンスファイルは `opt/liferay/data/licenses`フォルダから削除します。 次に、新しいアクティベーションキーを、コンテナ内の `/opt/liferay/deploy`フォルダに追加します。
 
-#### Liferay CloudプロジェクトでのLiferayサービスの更新
+#### Liferay Cloud プロジェクトで Liferay サービスを更新する
 
-Liferay CloudチームがDXPとCommerceの両方のライセンスを管理しているため、ユーザーが自分で更新する必要はありません。
+DXPとCommerceのライセンスはLiferay Cloudチームが管理しており、ユーザーが自分で手動で更新する必要はありません。
 
 ## 追加情報
 

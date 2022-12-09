@@ -46,7 +46,7 @@ Liferay DXPソースコードのカスタマイズはサポートされていな
 1. ［**Source Code Access**］ タブを選択します。
 1. 「+」ボタンをクリックします。 ソースコードへのアクセスフォームが表示されます。
 1. 要求された情報を入力します。必ずその人の姓名を含めてください。
-1. ［**送信**］ をクリックします 。
+1. ［**Submit**］ をクリックします 。
 
 ```{note}
 他のプロジェクトチームメンバーに代わってアクセスリクエストを送信できます。
@@ -79,16 +79,14 @@ GitHubのユーザー名を変更すると、リポジトリへのアクセス�
 GitHubユーザーのリポジトリアクセスを削除する方法は次のとおりです。
 
 1. [ヘルプセンター](https://help.liferay.com/hc/ja/) で、
-［Projects］ページに移動します。
+[Projects](https://customer.liferay.com/project-details?_ga=2.57624622.528260345.1619731014-1356934316.1588162379) ページに移動します。
    
-   1 DXPプロジェクトを選択します。
-1 ［**Source Code Access**］ タブを選択します。
-1 ユーザーのGitHub情報を展開します。
-1 ［**Delete**］ をクリックします。 
+1. DXPプロジェクトを選択します。
+1. ［**Source Code Access**］ タブを選択します。
+1. ユーザーのGitHub情報を展開します。
+1. ［**Delete**］ をクリックします。
 
 ユーザーのリポジトリアクセスが削除されます。
-
-
 
 ## プライバシー
 
@@ -106,19 +104,17 @@ GitHubユーザーのリポジトリアクセスを削除する方法は次の�
 | wikiの編集            | (3)    |
 
 
-（**1）問題とコメントについて：** ソースコードリポジトリで発生した問題をクローズし、未回答のままにします。 Liferayソフトウェアに問題がある場合は、ヘルプセンターで [サポートチケットを作成](https://help.liferay.com/hc/ja/requests/new) してLiferayサポートチームにお知らせください。 
+**(1) 問題とコメントについて：** ソースコードリポジトリで発生した問題をクローズし、未回答のままにします。 Liferayソフトウェアに問題がある場合は、ヘルプセンターで [サポートチケットを作成](https://help.liferay.com/hc/ja/requests/new) してLiferayサポートチームにお知らせください。 
 
-（**2）コード投稿について：** パブリックLiferay Portalリポジトリ（<https://github.com/liferay/liferay-portal>）でコードを投稿できます。 承認された投稿は、次のLiferay DXPリリースに含まれます。 
+**(2) コード投稿について：** パブリックLiferay Portalリポジトリ（<https://github.com/liferay/liferay-portal>）でコードを投稿できます。 承認された投稿は、次のLiferay DXPリリースに含まれます。 
 
-（**3）Wikiについて：** Liferay DXPの公式ドキュメンテーションは<https://learn.liferay.com>にあり、サポートナレッジベースは [ヘルプセンター](https://help.liferay.com/hc/ja/) にあります。 `liferay-dxp`リポジトリのwikiは使用していません。  記事の変更を提案したり、トピックに関するドキュメントをリクエストする場合は、ヘルプセンターで [サポートチケットを作成](https://help.liferay.com/hc/ja/requests/new) してLiferayサポートチームにお知らせください。
-
-
+**(3) Wikiについて：** Liferay DXPの公式ドキュメンテーションは<https://learn.liferay.com>にあり、サポートナレッジベースは [ヘルプセンター](https://help.liferay.com/hc/ja/) にあります。 `liferay-dxp`リポジトリのwikiは使用していません。  記事の変更を提案したり、トピックに関するドキュメントをリクエストする場合は、ヘルプセンターで [サポートチケットを作成](https://help.liferay.com/hc/ja/requests/new) してLiferayサポートチームにお知らせください。
 
 ## 追加情報
 
-* [ライフレイでのオープンソースについて](https://liferay.dev/open-source)
-* [GitHubとGitの概要](https://help.github.com/en/github/getting-started-with-github)
-* [GitHubで情報を検索する](https://help.github.com/en/github/searching-for-information-on-github)
-* [GitHub上でリポジトリを複製する](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github)
-* [フォークを使って作業する](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
-* [プロジェクトをフォークする](https://guides.github.com/activities/forking/)
+* [About Open Source at Liferay](https://liferay.dev/open-source)
+* [Getting Started with GitHub and Git](https://help.github.com/en/github/getting-started-with-github)
+* [Searching for Information on GitHub](https://help.github.com/en/github/searching-for-information-on-github)
+* [Cloning a Repository on GitHub](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github)
+* [Working with Forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
+* [Forking Projects](https://guides.github.com/activities/forking/)

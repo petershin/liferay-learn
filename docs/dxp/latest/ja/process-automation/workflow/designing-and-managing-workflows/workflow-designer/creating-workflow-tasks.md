@@ -38,18 +38,18 @@
 1. ノードに **Review** と名前を付けます。
 1. 通知を追加します。
 
-    * **名前** : レビュー通知
+    * **［Name**］ ：Review Notification
     * **［Template Language**］ : Freemarker
     * **［Templates**］ : 次のFreemarkerの通知を入力します： `${userName} sent you a ${entryType} for review in the workflow`
     * **［Notification Type**］ : 複数選択フィールドで、 **Email** および **ユーザー通知** を選択します。
     * **［Execution Type**］ : ［On Assignment］
-    * **受信者の種類** : タスク担当者
+    * **［Recipient Type**］ : ［Task Assignees］
 
     ![アセットがレビューの準備ができたことを知らせるメールとユーザー通知を送信するためのタスクノードの通知設定を行います。](./creating-workflow-tasks/images/02.png)
 
 1. 別の通知を追加します。
 
-   * **名前:** レビュー完了通知
+   * **［名前］:**［レビュー完了通知］
    * **［テンプレート言語］:**［Freemarker］
    * **［テンプレート］:** 次のFreemarkerの通知を入力します： `Your submission was reviewed<#if taskComments?has_content> and the reviewer applied the following ${taskComments}</#if>.`
    * **［通知タイプ］:**［メール］
@@ -96,7 +96,7 @@
 1. ノードに **Update** と名前を付けます。
 1. ここで、 **通知** を追加します。
 
-   * **名前:** 作成者への修正通知
+   * **［名前］:** 作成者への修正通知
    * **［テンプレート言語］:** Freemarker
    * **［テンプレート］:** 次のFreemarkerの通知を入力します：`Your submission was rejected by ${userName}; please modify and resubmit.`
    * **［通知タイプ**］ : 複数選択フィールドで、 **メール** および **ユーザー通知** を選択します。
@@ -132,7 +132,7 @@
 
 ## 追加情報
 
-* [ワークフローのアクティブ化](../../using-workflows/activating-workflow.md)
+* [ワークフローの有効化](../../using-workflows/activating-workflow.md)
 * [ワークフローノード](./workflow-nodes.md)
 * [ワークフローのアクションと通知の設定](./configuring-workflow-actions-and-notifications.md)
 * [タスクノードの割り当て](./assigning-task-nodes.md)

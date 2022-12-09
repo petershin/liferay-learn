@@ -8,15 +8,15 @@
 
 ## ノードの種類
 
-| ノード                    | Description                                                               |
-|:---------------------- |:------------------------------------------------------------------------- |
-| タスク                    | **タスク** ノードは、ワークフローのタスクとその担当者を示します。                                          |
-| フォークと結合                | **フォーク** と **結合** は、複数のレビュアが並行して実行できるようにレビュープロセスを分割し、レビューが完了したら再び結合するためのペアノードです。 |
-| XOR 結合                 | **XOR 結合** ノードでは、並列レビュアのいずれかからのトランジションが呼び出されている限り、ワークフローを続行できます。             |
-| 条件                     | **条件** ノードは、レビュープロセスを進める前の条件を設定します。                                          |
-| Start (Automatic Copy) | **開始** ノードはワークフローを開始します。                                                     |
-| End (Automatic Copy)   | デフォルトの **終了** ノードでは、ワークフローのステータスが 「**承認済み**」 に設定されます。                             |
-| ステータス                  | **ステータス** ノードは、レビュープロセスを特定のモード、または状態にします。 開始ノードと終了ノードは、特別なタイプのステータスノードです。    |
+| ノード     | Description                                                               |
+|:------- |:------------------------------------------------------------------------- |
+| タスク     | **タスク** ノードは、ワークフローのタスクとその担当者を示します。                                          |
+| フォークと結合 | **フォーク** と **結合** は、複数のレビュアが並行して実行できるようにレビュープロセスを分割し、レビューが完了したら再び結合するためのペアノードです。 |
+| XOR 結合  | **XOR 結合** ノードでは、並列レビュアのいずれかからのトランジションが呼び出されている限り、ワークフローを続行できます。             |
+| 条件      | **条件** ノードは、レビュープロセスを進める前の条件を設定します。                                          |
+| 開始      | **開始** ノードはワークフローを開始します。                                                     |
+| 終了      | デフォルトの **終了** ノードでは、ワークフローのステータスが 「**承認済み**」 に設定されます。                             |
+| 状態      | **ステータス** ノードは、レビュープロセスを特定のモード、または状態にします。 開始ノードと終了ノードは、特別なタイプのステータスノードです。    |
 
 ### 開始ノードと終了ノード
 
@@ -46,7 +46,7 @@ WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("expired
 
 **条件** ノードは、アセットやその実行コンテキストをチェックし、その結果に応じて、適切なトランジションに送ります。 このノードでは、トランジションの1つに値を設定するスクリプトが必要です。
 
-[Category Specific Definition](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml) は、対象となるアセットを調べ、その[アセットカテゴリー](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md)を取得し、初期の`returnValue`を設定するスクリプトです。 その後、そのアセットが **legal** カテゴリでマークされているかどうかを確認します。 マークされていない場合は、 **コンテンツレビュー**（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、 **法務レビュー**（ワークフローのlegal-reviewタスク）を通過します。
+[Category Specific Definition](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml) では、当該アセットを検索し、その [アセットカテゴリー](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md)を取得し、初期値 `returnValue`を設定するスクリプトを使用しています。 その後、そのアセットが **legal** カテゴリでマークされているかどうかを確認します。 マークされていない場合は、 **コンテンツレビュー**（ワークフローのcontent-reviewタスク）を通過し、マークされている場合は、 **法務レビュー**（ワークフローのlegal-reviewタスク）を通過します。
 
 ### タスクノード
 

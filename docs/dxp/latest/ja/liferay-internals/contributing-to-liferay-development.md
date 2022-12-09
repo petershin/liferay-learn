@@ -4,7 +4,6 @@ toc:
 - ./contributing-to-liferay-development/building-liferay-source.md
 - ./contributing-to-liferay-development/organizing-the-source.md
 ---
-
 # Liferay開発への貢献
 
 ```{toctree}

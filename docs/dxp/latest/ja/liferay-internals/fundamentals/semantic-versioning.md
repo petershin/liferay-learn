@@ -28,7 +28,7 @@ DXPは何百もの独立したOSGiモジュールを含むモジュラープラ�
 ./gradlew baseline
 ```
 
-この Baseline Gradle Pluginは、デフォルトでは[Liferay Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)では提供されていません。
+このBaseline Gradle Pluginプラグインは、 [Liferay Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md) ではデフォルトで提供されていません。
 
 `baseline`コマンドを実行すると、プラグインは新しいモジュールのエクスポートされたパブリックAPIを最新のリリースされた非スナップショットモジュールと比較します。 変更がある場合は、OSGiセマンティックバージョニングルールを使用して、最小の新しいバージョンを計算します。 新しいモジュールのバージョンが低い場合、エラーがスローされます。
 

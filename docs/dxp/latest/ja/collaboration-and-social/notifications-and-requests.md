@@ -11,7 +11,7 @@ notifications-and-requests/user-guide.md
 ```
 
 ユーザーガイド
---------------
+-------------
 
 通知とリクエスト
 

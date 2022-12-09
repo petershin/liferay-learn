@@ -1,15 +1,18 @@
-# commerce通知キューの設定
+# コマース通知キューの設定
 
-イベントによって通知がトリガーされると（注文など）、通知はチャネルの［**通知キュー**］タブに記録されます。 デフォルトでは、Liferay Commerceインスタンスは、通知が15分ごとに送信されたかどうかを確認し、43200分（30日）後に未送信の通知を削除します。
+チャネルイベントが通知をトリガーすると、Commerce はチャネルの通知キュータブに `Unsent` というステータスでログを記録します。 デフォルトでは、Liferayは15分ごとにキューに入った通知をチェックし、 `Unsent` のステータスがあれば送信します。 しかし、43200分（30日）後に通知が `Unsent` のステータスになると、Liferayはそれを削除します。
 
-**チェック** と **削除** 間隔を変更するには：
+キューに入った通知の送信と削除の間隔を変更することができます。
 
-1. ［**コントロールパネル**］ → ［**設定**］ → ［**システム設定**］ に移動します。
-1. ［**注文**］ をクリックしてから、 ［**commerce Notification Queue**］ をクリックします。 デフォルト値は分単位でリストされています。 必要に応じて、［チェック間隔］と［間隔削除］の値を変更します。
+1. **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** &rarr; **システム設定** に移動します。
 
-    ![間隔の変更](./configuring-the-commerce-notification-queue/images/01.png)
+1. **オーダー** をクリックし、 **コマース通知キュー** を選択します。
 
-1. 完了したら、 ［**保存**] をクリックします。
+1. **Notification Queue Entry Check Interval** と **Notification Queue Entry Delete Interval** のフィールドに新しい値を入力します。 値は分単位で設定される（例：15＝15分）。
+
+   ![Notification Queue Entry Check and Delete Intervalsのデフォルト値を変更する。](./configuring-the-commerce-notification-queue/images/01.png)
+
+1. ［**Save**］ をクリックします。
 
 ## 追加情報
 

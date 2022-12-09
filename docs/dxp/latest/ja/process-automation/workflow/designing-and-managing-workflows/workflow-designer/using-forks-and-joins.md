@@ -31,7 +31,7 @@
 
 ## 追加情報
 
-* [ワークフローのアクティブ化](../../using-workflows/activating-workflow.md)
+* [ワークフローの有効化](../../using-workflows/activating-workflow.md)
 * [ワークフローノード](./workflow-nodes.md)
 * [ワークフロータスクの作成](./creating-workflow-tasks.md)
 * [条件ノードの使用](./using-condition-nodes.md)

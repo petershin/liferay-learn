@@ -8,7 +8,7 @@ Gogoシェルは、開発環境のコマンドラインからのみ実行して�
 
 ## 前提条件
 
-コマンドラインでGogoシェルを使用するには、サーバーが開発者モードで動作している必要があります。 サーバーの開発者モードを有効にするには、デベロッパー・スタジオで有効にするか、または以下の[ポータルプロパティ](../../../installation-and-upgrades/reference/portal-properties.md)を設定します。
+コマンドラインでGogoシェルを使用するには、サーバーが開発者モードで動作している必要があります。 サーバーのDeveloper Modeを有効にするには、Developer Studioで、または次のように設定します。 [Portal Property](../../../installation-and-upgrades/reference/portal-properties.md):
 
 ```properties
 include-and-override=portal-developer.properties
@@ -23,8 +23,8 @@ include-and-override=portal-developer.properties
 Blade CLIを使って個々のコマンドを実行することができます。
 
 ```bash
-blade sh ［Gogo shell command］
-blade sh ［another Gogo shell command］
+blade sh [Gogo shell command]
+blade sh [another Gogo shell command]
 ...
 ```
 

@@ -6,9 +6,8 @@ toc:
 - ./extending-liferay/overriding-global-language-translations.md
 - ./extending-liferay/overriding-module-language-translations.md
 - ./extending-liferay/overriding-osgi-services.md
-- ./extending-liferay/portlet-filters.md
+- ./extending-liferay/auditing-portlet-activity-with-a-portlet-filter.md
 ---
-
 # Liferayの拡張
 
 ```{toctree}
@@ -20,7 +19,7 @@ extending-liferay/customizing-jsps.md
 extending-liferay/overriding-global-language-translations.md
 extending-liferay/overriding-module-language-translations.md
 extending-liferay/overriding-osgi-services.md
-extending-liferay/portlet-filters.md
+extending-liferay/auditing-portlet-activity-with-a-portlet-filter.md
 ```
 
 Liferay DXP/Portalは高度なカスタマイズが可能です。 モジュール式のアーキテクチャには、APIを使って動的に拡張したりオーバーライドしたりできるコンポーネントが含まれています。

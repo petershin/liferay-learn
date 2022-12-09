@@ -53,7 +53,7 @@ Docker Hubは、Linux上のTomcatにバンドルされた [Liferay DXP](https://
     メモリ、CPU、およびその他のDockerコンテナリソースは構成可能です。 上記の `-m 8g`コマンド引数は、コンテナのメモリ制限を8ギガバイトに設定します。 詳細については、 [Dockerランタイムオプション](https://docs.docker.com/config/containers/resource_constraints/) を参照してください。
     ```
 
-1. メールアドレス（_test@liferay.com_）とパスワード（_test_）を使って、`<http://localhost:8080>`でLiferayにサインインします。 プロンプトが表示されたら、パスワードを変更します。
+1. メールアドレス（**test@liferay.com**）とパスワード（**test**）を使って、`<http://localhost:8080>`でLiferayにサインインします。 プロンプトが表示されたら、パスワードを変更します。
 
     ![こちらはLiferayのランディングページです。](./using-liferay-docker-images/images/01.png)
 

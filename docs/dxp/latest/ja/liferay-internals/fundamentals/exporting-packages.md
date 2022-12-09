@@ -14,7 +14,7 @@ OSGiでは、パッケージはデフォルトでプライベートです。 他
     Export-Package: com.liferay.petra.io,com.liferay.petra.io.unsync
     ```
 
-[Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)またはLiferay Developer Studioを使用して作成された[ワークスペース](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)ベースのプロジェクトには [Bnd](http://bnd.bndtools.org/) があります。 Bndは、OSGiヘッダを`bnd.bnd`ファイルからモジュールJARの`META-INF/MANIFEST.MF`ファイルにプロパゲートします。
+[Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)またはLiferay Developer Studioで作成した[ワークスペース](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)ベースのプロジェクトには、 [Bnd](http://bnd.bndtools.org/) があります。Bndは、OSGiヘッダを`bnd.bnd`ファイルからモジュールJARの`META-INF/MANIFEST.MF`ファイルにプロパゲートします。
 
 ```{important}
 同じパッケージを複数のJARにエクスポートしないでください。 異なるモジュールから同じパッケージをエクスポートすると、予測できない副作用を伴う「分割パッケージ」の問題が発生します。

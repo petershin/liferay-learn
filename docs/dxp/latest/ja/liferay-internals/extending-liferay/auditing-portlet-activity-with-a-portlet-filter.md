@@ -36,10 +36,10 @@
 
 Then, follow these step to download, build, and deploy the sample Portlet Filter to the new docker container:
 
-1. サンプルモジュールをダウンロードして解凍します。
+1. Download and unzip the example module.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/portlet-filters/liferay-b4k8.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/liferay-b4k8.zip -O
    ```
 
    ```bash
@@ -194,5 +194,5 @@ public class B4K8PortletFilter implements RenderFilter {
 
 ## 追加情報
 
-* [ポートレット](../../../building-applications/developing-a-java-web-application/reference/portlets.md)
+* [Portlets](../../../building-applications/developing-a-java-web-application/reference/portlets.md)
 <!--TASK: Add link to Using Portlet Filters article when finished -->

@@ -9,7 +9,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 
 次に、以下の手順を実行します。
 
-1. [Categories and Vocabulary API Basics](./liferay-f5w3.zip) をダウンロードし、解凍してください。
+1. [カテゴリーとボキャブラリAPIの基本](./liferay-f5w3.zip) をダウンロードして解凍します。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories/developer-guide/liferay-f5w3.zip -O
@@ -32,13 +32,13 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
     ```bash
     "availableLanguages" : [ "en-US" ],
     "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20129,
-    "name" : "Test Test",
-    "profileURL" : "/web/test"
+      "additionalName" : "",
+      "contentType" : "UserAccount",
+      "familyName" : "Test",
+      "givenName" : "Test",
+      "id" : 20129,
+      "name" : "Test Test",
+      "profileURL" : "/web/test"
     },
     "dateCreated" : "2021-09-09T21:03:15Z",
     "dateModified" : "2021-09-09T21:03:15Z",

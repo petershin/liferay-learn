@@ -17,7 +17,7 @@ Import-Package: javax.portlet,com.liferay.portal.kernel.util
 
 ## パッケージの自動インポート
 
-チュートリアル例（[モジュールプロジェクト](./module-projects.md)を参照）の[ワークスペース](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)ベースのプロジェクト、または[Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)またはLiferay Developer Studioを使用して作成されたプロジェクトは [Bnd](http://bnd.bndtools.org/) を使用します。 GradleプラグインはBndを呼び出し、BndはGradleの依存関係を読み取り、インポートを解決できます。 プロジェクトのJARをビルドすると、Bndはモジュールが使用するパッケージを検出し、`META-INF/MANIFEST.MF`ファイルを生成し、パッケージを`Import-Package`ヘッダに割り当てます。 その意味で、パッケージのインポートは自動的に行われます。なぜなら、依存関係を定義する必要があるのは、1か所（ビルドスクリプト）だけだからです。
+[ワークスペース](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)-チュートリアルの例にあるプロジェクト（ [モジュールプロジェクト](./module-projects.md)を参照）、または [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md) や Liferay Developer Studio で作成したものを [Bnd](http://bnd.bndtools.org/) で使用します。 GradleプラグインはBndを呼び出し、BndはGradleの依存関係を読み取り、インポートを解決できます。 プロジェクトのJARをビルドすると、Bndはモジュールが使用するパッケージを検出し、`META-INF/MANIFEST.MF`ファイルを生成し、パッケージを`Import-Package`ヘッダに割り当てます。 その意味で、パッケージのインポートは自動的に行われます。なぜなら、依存関係を定義する必要があるのは、1か所（ビルドスクリプト）だけだからです。
 
 ```{note}
 Liferayのプロジェクトテンプレートは、 [サードパーティのGradleプラグイン](https://github.com/TomDmitriev/gradle-bundle-plugin) を使用してBndを呼び出します。

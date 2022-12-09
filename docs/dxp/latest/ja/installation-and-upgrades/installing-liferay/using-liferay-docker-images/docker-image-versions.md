@@ -6,7 +6,7 @@ Liferay Docker イメージタグは、Liferay ソフトウェアのバージョ
 
 例えば、Liferay DXP 7.4.13 Update 15 や Liferay Portal 7.4.3.15 GA15 は、このパターンに従っています。 詳しくは、 [Liferayソフトウェアバージョン](../../reference/liferay-software-versions.md) をご覧ください。
 
-Liferay Docker イメージタグは *full* image versions と *simple* image versions を使用します。
+Liferay Docker イメージタグは **full** image versions と **simple** image versions を使用します。
 
 フルイメージバージョンは、コンテナ（OS、スクリプト、ツールなど）の変更に基づくセマンティックバージョンである。 これらのバージョンは `d`で始まり、メジャー、マイナー、マイクロの各バージョン番号を持ち、タイムスタンプで終わります (例: `7.4.13-u15-d2.0.23-20220310153349`).
 
@@ -16,7 +16,7 @@ Liferay Docker イメージタグは *full* image versions と *simple* image ve
 
 フルイメージバージョンを使用するタグは、静的で明示的にバージョン管理されているため、推奨されています。
 
-簡易画像版を使用するタグは、便宜上提供しているに過ぎない。 これらは、Liferay ソフトウェアのバージョンで利用可能な *最新のイメージを表しています*。
+簡易画像版を使用するタグは、便宜上提供しているに過ぎない。 これらは、Liferay ソフトウェアのバージョンで利用可能な **最新のイメージを表しています** 。
 
 例えば、本稿執筆時点で入手可能なDXP 7.4イメージに使用されているフルバージョンとシンプルバージョンのタグは以下のとおりです。
 

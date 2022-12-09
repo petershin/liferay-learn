@@ -6,7 +6,6 @@ toc:
 - ./installing-liferay/using-liferay-docker-images.md
 - ./installing-liferay/installing-liferay-on-an-application-server.md
 ---
-
 # Liferayのインストール
 
 ```{toctree}
@@ -32,9 +31,9 @@ Liferay Tomcatバンドルは、任意のサーバーに抽出、構成、およ
 もちろん、オンプレミスでサポートされている任意のアプリケーションサーバーにLiferayをいつでもインストールできます。
 
 ```{note}
-エンタープライズサブスクライバーは、Liferay Cloud上で [Liferay DXPをサービスとしてデプロイ](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html) できます。 Liferay Cloudは、インフラストラクチャコスト（ハードウェア、電気料金）を削減し、より多くの顧客を処理するために迅速に拡張し、市場投入までの時間を短縮し、使用方法も簡単です。
+エンタープライズ契約者は、Liferay Cloud上で [サービスとしてのLiferay DXPをデプロイ](https://learn.liferay.com/liferay-cloud/latest/ja/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html) できます。 Liferay Cloudは、インフラコスト（ハードウェア、電気代）を削減し、より多くの顧客を処理するために高速に拡張し、市場投入までの時間を短縮し、簡単に使用することができます。
 
-DXPクラウドにご興味のある方は、Liferay Cloud [製品情報](https://www.liferay.com/products/liferay-cloud) をご覧いただくか、Liferayの担当者にお問い合わせください。
+Liferay Cloudにご興味のある方は、Liferay Cloud [製品情報](https://www.liferay.com/products/dxp-cloud) をご覧いただくか、Liferayの担当者にお問い合わせください。
 ```
 
 自分のマシンでLiferayを開発したい場合は、次の便利なオプションを検討してください。
@@ -69,7 +68,7 @@ Liferayは、 [サポートされている任意のアプリケーションサ�
 
 Liferayをインストールした後、 [Liferayのセットアップ](./setting-up-liferay.md) に進み、次のオプションを構成します。
 
-* Search (Automatic Copy)
+* 検索
 * ローカライズ
 * メール
 * ファイル ストレージ

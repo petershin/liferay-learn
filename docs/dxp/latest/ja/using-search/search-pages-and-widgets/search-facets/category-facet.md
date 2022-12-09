@@ -1,6 +1,6 @@
 # カテゴリファセット
 
-Category Facetは、検索クエリのキーワードに合致するカテゴリに分類されたアセットの検索結果を絞り込みます。 マッチング結果の各カテゴリは、ファセット項として集約される。
+Category Facetは、検索クエリのキーワードに合致するカテゴリに分類されたアセットの検索結果を絞り込みます。 各マッチング結果のカテゴリは、ファセット項として集約される。
 
 ![カテゴリファセットの結果の例。](./category-facet/images/02.png)
 
@@ -12,7 +12,7 @@ Category Facet を設定するには、Facet の **Options** メニュー (![Opt
 
 最初に表示されるのは「ディスプレイ設定」です。
 
-**表示テンプレート。** **Default** , **Cloud Layout** , **Compact Layout** , **Label Layout** , **Vocabulary Layout**(7.4 Update/GA 47+ で使用可能) から選択します。 Defaultレイアウトでは、各項目の横にチェックボックスが表示されますが、Compactレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。 [Vocabulary Layout](#display-facet-terms-categories-by-vocabulary) には、ファセット用語（カテゴリー）が語彙ごとに整理されて表示されます。
+**表示テンプレート。****Default** , **Cloud Layout** , **Compact Layout** , **Label Layout** , **Vocabulary Layout**(7.4 Update/GA 48+ で使用可能) から選択します。 Defaultレイアウトでは、各項目の横にチェックボックスが表示されますが、Compactレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。 [Vocabulary Layout](#display-facet-terms-categories-by-vocabulary) には、ファセット用語（カテゴリー）が語彙ごとに整理されて表示されます。
 
 ［詳細設定］セクションには、追加のオプションが含まれています。
 
@@ -30,9 +30,9 @@ Category Facet を設定するには、Facet の **Options** メニュー (![Opt
 
 ### 語彙によるファセット用語の表示とフィルタリング
 
-{bdg-secondary}`7.4 U47+とGA47+`
+{bdg-secondary}`7.4 U48+およびGA48+`
 
-デフォルトでは、Category Facetウィジェットは、サイト内のすべての語彙から一致する結果のカテゴリを収集し、フラットなリストで表示します。 Update 47の機能強化により、新たな表示やフィルタリングの動作が可能になりました。
+デフォルトでは、Category Facetウィジェットは、サイト内のすべての語彙から一致する結果のカテゴリを収集し、フラットなリストで表示します。 Update 48の機能強化により、新たな表示やフィルタリングの動作が可能になりました。
 
 #### ファセット用語（カテゴリー）を語彙で表示する
 
@@ -45,16 +45,16 @@ Category Facetの設定画面でVocabulary Layoutを選択することで、カ�
 ファセットに表示する語彙とカテゴリーを選択する。 これを有効にするには、システム設定 &rarr; 検索 &rarr; カテゴリファセットフィールドの設定を、デフォルトフィールド `assetCategoryIds`、から `assetVocabularyCategoryIds` フィールドに切り替えてください。 この設定は、Category Facetで集計を作成するために使用されるフィールドを指定します。 `assetVocabularyCategoryIds` を設定すると、Category Facetウィジェットの設定画面内の語彙の設定が有効になります。
 
 ```{important}
-7.4 Update/GA 47以前のLiferayのバージョンやアップデートからアップグレードする場合で、システム内に既に分類されたアセットがある場合は、検索ドキュメントに必要な `assetVocabularyCategoryIds` フィールドを含めるために完全な再インデックス化を実行してください。
+7.4 Update/GA 48以前のLiferayのバージョンやアップデートからアップグレードする場合で、システム内に既に分類されたアセットがある場合は、検索ドキュメントに必要な `assetVocabularyCategoryIds` フィールドを含めるためにフルリインデックスを実行します。
 ```
 
 ![語彙を選択する。](./category-facet/images/06.png)
 
-この動作により、強力な検索ファセット体験を提供できます。使用例として、 [以下の例](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) をご覧ください。
+この動作により、強力な検索ファセット体験を提供することができます。 [以下の使用例](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) をご参照ください。
 
 ## 例ボキャブラリーを使ったCategory Facetでの階層的なフィルタリング体験の作成
 
-自動車部品を購入するためのcommerceポータルを検討する。 各パーツは、異なるボキャブラリーで分類された商材である。
+自動車部品を購入するためのコマースポータルを検討する。 各パーツは、異なるボキャブラリーで分類された商材である。
 
 - ボキャブラリー車両システム
   
@@ -73,13 +73,14 @@ Category Facetの設定画面でVocabulary Layoutを選択することで、カ�
      - プレミアム
    - 標準
 
-ユーザーが「エンジン」と「排気系」を選択した場合、どちらかのカテゴリーに該当する製品が表示されることを期待します。 そして、「品質」の語彙から「プレミアム」を選択すると、エンジンや排気系の高級自動車部品だけに絞られることが予想される。 7.4 Update/GA 47時点では、すぐにでも実現可能です。
+ユーザーが「エンジン」と「排気系」を選択した場合、どちらかのカテゴリーに該当する製品が表示されることを期待します。 そして、「品質」の語彙から「プレミアム」を選択すると、エンジンや排気系の高級自動車部品だけに絞られることが予想される。 7.4 Update/GA 48時点では、すぐにでも実現可能です。
 
 上記のユースケースを構成するために
 
 1. Global Menu &rarr; Control Panel &rarr; Sites から新しいサイトを作成します。 プロンプトが表示されたら、Miniumサイトテンプレートを選択します。
 1. サイト名をFooとし、 **Add** をクリックします。
 1. Globalサイトのメニュー &rarr; Categorization &rarr; Categoriesに移動します。 Qualityという語彙を追加し、2つのカテゴリを作成します。PremiumとStandardの2つのカテゴリを作成する。 
+   
 
    ```{importan}
    Fooサイトのサイトカテゴリではなく、Globalサイトのグローバルカテゴリを作成する必要があります。
@@ -88,6 +89,7 @@ Category Facetの設定画面でVocabulary Layoutを選択することで、カ�
    ```{note}
    サイトの初期化時にサイト テンプレートによって作成された既存の語彙があります (サイトの名前にちなんで Foo と名付けられました)。構築する例に合わせ、_Vehicle Systems_ という名前を付けて、カテゴリをより明確にした方が良いでしょう (例: Brake System)。 ただし、Foo語彙のカテゴリは既存のCommerce製品から参照されるため、編集することはできません。 
    ```
+
 
 ![グローバルサイトにQuality vocabularyを作成します。](./category-facet/images/07.png)
 

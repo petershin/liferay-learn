@@ -1,50 +1,78 @@
 # 通知テンプレート変数リファレンスガイド
 
-電子メール通知テンプレートを作成するときに、電子メールコンテンツの **電子メール設定** および **ボディ** フィールドにキー値の代わりとして変数を挿入できます。 キーの値には、顧客の名前、注文ID、出荷先と請求先住所、注文のアイテムのリストが含まれます。
+通知テンプレートを作成する際、変数を使用して、トリガーとなるチャネルイベントのデータを動的にメールフィールドに入力することができます。 通知テンプレート **タイプ** を選択し、その変数を表示します。 これは、どのチャンネルイベントが通知をトリガーするかを決定します。
 
-![これらの変数を［メールの本文］フィールドで使用します。](./notification-template-variables-reference-guide/images/02.png)
+![通知テンプレートの種類を選択します。](./notification-template-variables-reference-guide/images/01.png)
 
-使用可能な変数を表示するには、最初に通知テンプレート種別を選択して有効にします。
+タイプを選択した後、 **メール設定** と **メールコンテンツ** のセクションで **用語の定義** を展開すると、その変数とその説明を表示することができます。 例えば、お客様の名前、注文ID、配送先住所、請求先住所、注文商品リストなどです。
 
-![最初に［通知テンプレート種別］を選択します。](./notification-template-variables-reference-guide/images/01.png)
-
-テンプレートタイプを選択したら、［**用語の定義**］ドロップダウンメニューを展開します。
+![これらの変数をメール本文で使用します。](./notification-template-variables-reference-guide/images/02.png)
 
 ## メール設定
 
-![これらの変数を［Eメール設定］フィールドで使用します。](./notification-template-variables-reference-guide/images/03.png)
+![電子メール設定フィールドでこれらの変数を使用します。](./notification-template-variables-reference-guide/images/03.png)
 
-次の変数を使用して、送信者と受信者のメール設定フィールドに入力できます。
-
-| 値                                | Description   |
+| 値                                | 説明            |
 |:-------------------------------- |:------------- |
 | [%ACCOUNT_ROLE_ORDER_MANAGER%] | アカウント注文マネージャー |
 | [%ORDER_CREATOR%]                | 発注したユーザー      |
 | [%ACCOUNT_ROLE_ADMINISTRATOR%] | アカウント管理者      |
 | [%USER_GROUP_NAME%]            | ユーザーグループサイト   |
 
-## ［注文］
+## オーダーベース通知のテンプレートタイプ
 
-![これらの変数を使用する注文メール。](./notification-template-variables-reference-guide/images/05.png)
+![これらの変数を使用して、電子メール通知に注文関連情報を含めることができます。](./notification-template-variables-reference-guide/images/04.png)
 
-次の変数は、注文タイプのメール通知テンプレートで使用できます。
+チャネルには、注文イベントに対する6種類の通知テンプレートがあります。
 
-| 値                            | 説明                   |
-|:---------------------------- |:-------------------- |
-| [%ORDER_ITEMS%]              | 注文に含まれるすべての商品を含むテーブル |
-| [%ORDER_SHIPPING_ADDRESS%] | 注文の配送先住所             |
-| [%ORDER_BILLING_ADDRESS%]  | 注文の請求先住所             |
-| [%ORDER_ID%]                 | 注文ID                 |
+1. 注文済み
+1. 注文処理
+1. 注文は出荷待ちです
+1. 注文を一部出荷しました
+1. 注文を出荷しました
+1. 注文が完了しました
 
-## 変更通知を受け取る（購読する）
+| 値                                     | 説明                   |
+|:------------------------------------- |:-------------------- |
+| [%ORDER_ITEMS%]                       | 注文の全項目をリストアップした表     |
+| [%ORDER_SHIPPING_ADDRESS%]          | 注文の配送先住所             |
+| [%ORDER_BILLING_ADDRESS%]           | 注文の請求先住所             |
+| [%ORDER_ID%]                          | 注文ID                 |
+| [%ORDER_TOTAL%]                       | ご注文の税別合計金額           |
+| [%ORDER_DATE%]                        | 注文した日付               |
+| [%ORDER_CURRENCY_SYMBOL%]           | 注文の通貨記号（例：$、£）。      |
+| [%ORDER_SHIPPING_WITH_TAX_TOTAL%] | ご注文時の送料（税込み）合計       |
+| [%ORDER_EXTERNAL_REFERENCE_CODE%]   | 注文の外部参照コード           |
+| [%ORDER_URL%]                         | ご注文のURL              |
+| [%PAYMENT_TERMS_DESCRIPTION%]       | 注文書に添付された支払条件        |
+| [%ORDER_PAYMENT_METHOD%]            | 注文の支払い方法             |
+| [%ORDER_TAX_TOTAL%]                 | ご注文時の消費税総額           |
+| [%ORDER_WITH_TAX_TOTAL%]            | ご注文の税込み合計金額          |
+| [%ORDER_CREATOR_USER_FIRST_NAME%] | 注文を作成したユーザーのファーストネーム |
+| [%ORDER_SHIPPING_OPTION%]           | 注文の配送オプション           |
+| [%ORDER_CREATOR_USER_LAST_NAME%]  | 注文を作成したユーザーのラストネーム   |
+| [%DELIVERY_TERMS_DESCRIPTION%]      | 注文書に添付された納品条件        |
+| [%ORDER_CREATOR%]                     | 発注したユーザー             |
+| [%ORDER_CURRENCY_CODE%]             | 注文の通貨コード（例：USD、GBP）  |
+| [%ORDER_CREATOR_USER_TITLE%]        | 注文を作成したユーザーの肩書き      |
+| [%ORDER_SHIPPING_TOTAL%]            | ご注文時の送料（税別）の合計額      |
 
-![この変数をサブスクリプションに使用します。](./notification-template-variables-reference-guide/images/04.png)
+## 購読型通知テンプレートの種類
 
-次の変数は、サブスクリプションタイプのメール通知テンプレートで使用できます。
+![これらの変数を使用して、電子メール通知に購読関連の情報を含めることができます。](./notification-template-variables-reference-guide/images/05.png)
 
-| 値                | 説明  |
-|:---------------- |:--- |
-| [%PRODUCT_NAME%] | 商品名 |
+チャンネルには、サブスクリプションイベントのための4種類の通知テンプレートがあります。
+
+1. サブスクリプションを更新しました
+1. サブスクリプションが有効になりました
+1. サブスクリプションが中断されました
+1. サブスクリプションがキャンセルされました
+
+| 値                 | 説明       |
+|:----------------- |:-------- |
+| [%PRODUCT_NAME%]  | 製品名      |
+| [%ORDER_CREATOR%] | 発注したユーザー |
+| [%ORDER_ID%]      | 注文ID     |
 
 ## 追加情報
 

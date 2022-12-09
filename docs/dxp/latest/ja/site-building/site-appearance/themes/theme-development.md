@@ -1,8 +1,8 @@
 ---
 toc:
-- ./theme-development/getting-started.md
-- ./theme-development/working-with-templates.md
-- ./theme-development/bundling-resources.md
+- ./theme-development/getting-started.mdを参照してください。
+- ./theme-development/working-with-templates.md。
+- ./theme-development/bundling-resources.md。
 ---
 # テーマ開発
 
@@ -21,15 +21,11 @@ theme-development/bundling-resources.md
 :link: ./theme-development/getting-started.md
 :::
 
-:::{grid-item-card} スタイリング (近日公開！)
-:link: ./theme-development/styling.md
-:::
-
 :::{grid-item-card} テンプレートでの作業
 :link: ./theme-development/working-with-templates.md
 :::
 
 :::{grid-item-card} ビルドリソース
 :link: ./theme-development/bundling-resources.md
-:::  
+:::
 ::::

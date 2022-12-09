@@ -62,7 +62,7 @@ setting-up-liferay/tuning-your-jvm.md
 * [Liferayの調整](#tune-liferay)
 * [JNDIのセットアップ](#setting-up-jndi)
 
-上記の各タスクは、以下の説明にリンクしており、該当する記事への参照も含まれています。 最初のタスクは、本番用のLiferayインスタンスには不可欠です。 お使いのシステムにも適用される*その他のセットアップタスク*を調べてください。 タスクを完了するときは、必ず上記のチェックリストを見直すようにしてください。
+上記の各タスクは、以下の説明にリンクしており、該当する記事への参照も含まれています。 最初のタスクは、本番用のLiferayインスタンスには不可欠です。 お使いのシステムにも適用される **その他のセットアップタスク** を調べてください。 タスクを完了するときは、必ず上記のチェックリストを見直すようにしてください。
 
 ## Liferayの有効化
 
@@ -92,7 +92,7 @@ Liferay DXPを使用している場合は、[アクティベーションキー�
 * [ユーザー認証](./securing-liferay/authentication-basics.md)の定義
 * ユーザーを特定のサイト、[ロール](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)、および[ユーザーグループ](../users-and-permissions/user-groups.md)に自動的に関連付けるための設定。
 
-詳細は、 [ユーザー](../system-administration/configuring-liferay/virtual-instances/users.md) 、[ユーザー認証](../system-administration/configuring-liferay/virtual-instances/user-authentication.md)、および[Adding Custom Fields For Users](../users-and-permissions/users/adding-custom-fields-to-users.md)を参照してください。
+詳細は、 [ユーザー](../system-administration/configuring-liferay/virtual-instances/users.md) 、[ユーザー認証](../system-administration/configuring-liferay/virtual-instances/user-authentication.md)、および[ユーザーへのカスタムフィールドの追加](../users-and-permissions/users/adding-custom-fields-to-users.md)を参照してください。
 
 ## ファイルストレージの設定
 

@@ -1,26 +1,24 @@
 # パブリケーションでのコラボレーション
 
-> Liferay DXP 7.4以降で利用可能
+{bdg-secondary}`Liferay 7.4以降で利用可能`
 
 デフォルトでは、パブリケーションには制作者のみがアクセスできます。 ただし、パブリケーションの制作者は、他のユーザーを招待して、パブリケーションを表示、編集、および公開することができます。 進行中、スケジュール済み、および公開済みのパブリケーションにユーザーを追加できます。
 
 ユーザーをパブリケーションに招待したら、統合コメント機能を使用して、寄稿者間のコラボレーションを促進できます。
 
-<a name="inviting-users-to-a-publication" />
-
 ## パブリケーションにユーザーを招待する
 
 次の手順に従って、ユーザーをパブリケーションでの共同作業に招待します。
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**Applications**］ タブをクリックして、 ［**Publications**］ に移動します。
+1. **グローバルメニュー**( ![Global Menu](../../../images/icon-applications-menu.png) ) を開き、 **アプリケーション** タブをクリックし、 **出版物** に進みます。
 
-1. 目的のパブリケーションの **アクション** ボタン![Actions Button](../../../images/icon-actions.png)をクリックし、 ［**Invite Users**］ を選択します。
+1. 目的の出版物の **アクション** ボタン( ![Actions Button](../../../images/icon-actions.png) )をクリックし、 **ユーザー招待** を選択します。
 
-   ![パブリケーションのアクションボタンをクリックして、［ユーザーを招待］を選択します。](./collaborating-on-publications/images/01.png)
+   ![PublicationのActionsボタンをクリックし、Invite Usersを選択します。](./collaborating-on-publications/images/01.png)
 
-   または、目的のパブリケーションをクリックしてから、 ［**ユーザーを招待**］ ボタンをクリックします。
+   または、目的の出版物をクリックし、 **Invite Users** ボタンをクリックします。
 
-   ![パブリケーションの［Changes］ページで、［ユーザーを招待］ボタンをクリックします。](./collaborating-on-publications/images/02.png)
+   ![出版物変更ページで、「ユーザーを招待する」ボタンをクリックします。](./collaborating-on-publications/images/02.png)
 
    ```{note}
    これは、公開されたパブリケーションにユーザーを招待する唯一の方法です。
@@ -36,29 +34,25 @@
 
    ![目的のユーザーを検索して選択します。](./collaborating-on-publications/images/04.png)
 
-1. ［**Send**］ をクリックして、ユーザーをパブリケーションに追加します。
+1. **送信** をクリックして、ユーザーを出版物に追加します。
 
 招待されたユーザーには通知が届き、パブリケーションでの共同作業を開始できます。
-
-<a name="commenting-on-a-publication" />
 
 ## パブリケーションにコメントする
 
 共同作業を行うユーザーは、［Changes］ページからパブリケーションにコメントを追加できます。 各コメントは、それらが作成されたパブリケーションにスコープされます。
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**Applications**］ タブをクリックして、 ［**Publications**］ に移動します。
+1. **グローバルメニュー**( ![Global Menu](../../../images/icon-applications-menu.png) ) を開き、 **アプリケーション** タブをクリックし、 **出版物** に進みます。
 
-1. 目的のパブリケーションをクリックします。
+1. 目的の **出版物** をクリックします。
 
-1. コメントボタン（![Comments Button](../../../images/icon-comments-w.png)）をクリックします。
+1. **コメント** ボタン ( ![Comments Button](../../../images/icon-comments-w.png) ) をクリックします。
 
-1. チャットウィンドウでコメントを入力し、 ［**Reply**］ をクリックします。
+1. チャットウィンドウで、コメントを入力し、 **返信** をクリックします。
 
-   ![［コメント］ボタンをクリックしてコメントを入力し、［返信］をクリックします。](./collaborating-on-publications/images/05.png)
+   ![コメントボタンをクリックし、コメントを入力し、返信をクリックします。](./collaborating-on-publications/images/05.png)
 
 共同作業しているすべてのユーザーにコメントが通知され、返信することもできます。
-
-<a name="removing-users-from-a-publication" />
 
 ## パブリケーションからユーザーを削除する
 
@@ -66,13 +60,11 @@
 
 1. 目的のパブリケーションの ［**Invite Users**］ モーダルウィンドウを開きます。
 
-1. 目的のユーザーのドロップダウンメニューをクリックし、 ［**Remove**］ を選択します。
+1. 目的のユーザーのドロップダウンメニューをクリックし、 **削除** を選択します。
 
    ![［権限］ドロップダウンメニューを開き、［削除］を選択します。](./collaborating-on-publications/images/06.png)
 
 1. ［**Save**］ をクリックします。
-
-<a name="additional-information" />
 
 ## 追加情報
 

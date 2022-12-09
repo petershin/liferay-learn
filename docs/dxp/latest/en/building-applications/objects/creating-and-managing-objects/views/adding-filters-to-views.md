@@ -8,7 +8,7 @@ Follow these steps:
 
 1. Begin editing the desired view and go to the *Filters* tab.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../../../images/icon-add.png)).
 
 1. Select a *field* to filter by.
 

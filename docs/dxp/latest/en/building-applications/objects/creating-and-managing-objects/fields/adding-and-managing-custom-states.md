@@ -4,13 +4,11 @@
 
 Some use cases may require assigning multiple states to an object entry at the same time. For example, when building an Order application, you may need to assign and manage order, payment, and delivery statuses for the same entry, each with its own flow and associated business logic. Using Liferay picklists with custom objects, you can achieve this functionality.
 
-With [picklists](../../picklists.md), you can define lists of strings and use them as object fields to define custom states for entries. Once added to an object definition, you can design the flow for each state and use [validations](../validations/adding-custom-validations.md) and [actions](../actions/defining-object-actions.md) to add custom business logic for different states. These custom states can also be used alongside [workflow statuses](../../enabling-workflows-for-objects.md) to define more complex review and approval processes.
+With [picklists](../../picklists.md), you can define lists of strings and use them as object fields to define custom states for entries. Once added to an object definition, you can design the flow for each state and use [validations](../validations/adding-custom-validations.md) and [actions](../actions/defining-object-actions.md) to add business logic for different states. States can also be used alongside [workflow statuses](../../enabling-workflows-for-objects.md) to define more complex review and approval processes.
 
 ![Use picklists to add custom states to object definitions.](./adding-and-managing-custom-states/images/01.png)
 
 ## Adding a State Field to Object Definitions
-
-Follow these steps to use a picklist to add custom states for an object's entries:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
@@ -26,7 +24,7 @@ Follow these steps to use a picklist to add custom states for an object's entrie
 
 1. Begin editing the desired custom object.
 
-1. Go to the *Fields* tab and click the *Add* button (![Add Button](../../../../images/icon-add.png)).
+1. Go to the *Fields* tab and click *Add* (![Add Button](../../../../images/icon-add.png)).
 
    ![Begin adding a field to the object definition.](./adding-and-managing-custom-states/images/03.png)
 
@@ -37,7 +35,7 @@ Follow these steps to use a picklist to add custom states for an object's entrie
 1. Toggle *Mark as State*.
 
    ```{note}
-   State fields are automatically set to *mandatory*, and you cannot change them to optional.
+   State fields are set automatically to *mandatory*, and you cannot change them to optional.
    ```
 
 1. Select a *Default Value* for the state field.

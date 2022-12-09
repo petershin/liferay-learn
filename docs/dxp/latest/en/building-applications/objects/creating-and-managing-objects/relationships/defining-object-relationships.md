@@ -2,13 +2,13 @@
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-Relationships add fields and tables to object definitions for relating their entries with one another. Follow these steps to add relationships to object definitions:
+Relationships add fields and tables to object definitions for relating their entries to one another. Follow these steps to add relationships to object definitions:
 
 1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
 1. Begin editing the desired object definition.
 
-1. Go to the *Relationships* tab and click the *Add* button ( ![Add Button](../../../../images/icon-add.png) ).
+1. Go to the *Relationships* tab and click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
 
    ![Enter a label and name, and select both a relationship type and the desired object.](./defining-object-relationships/images/01.png)
 
@@ -38,10 +38,10 @@ Relationships add fields and tables to object definitions for relating their ent
 
 Once saved, you can use the relationship to relate entries.
 
-you can edit the relationship to configure its [deletion type](#configuring-deletion-type) or make it [mandatory](#making-relationship-fields-mandatory).
+You can edit the relationship to configure its [deletion type](#configuring-deletion-type) or make it [mandatory](#making-relationship-fields-mandatory).
 
 ```{important}
-Relationship fields automatically appear in a custom object's default layout. Displaying relationship tables requires a custom layout with a [Relationships tab](../layouts/designing-object-layouts.md#adding-relationships-tabs). This tab lists all entries related to the current entry. System objects do not support custom layouts, so they cannot display relationship fields or tables. You can only access their relationship fields via REST APIs. See [Designing Object Layouts](../layouts/designing-object-layouts.md) for more information.
+Relationship fields automatically appear in an object's default layout. Displaying relationship tables requires a custom layout with a [Relationships tab](../layouts/designing-object-layouts.md#adding-relationships-tabs). This tab lists all entries related to the current entry. System objects do not support custom layouts, so they cannot display relationship fields or tables. You can only access their relationship fields via REST APIs. See [Designing Object Layouts](../layouts/designing-object-layouts.md) for more information.
 ```
 
 ## Configuring Deletion Type
@@ -66,7 +66,7 @@ In some scenarios, you may want to make relationship fields mandatory. For examp
 
 Follow these steps to make a relationship field mandatory:
 
-1. Begin editing the *object* with the desired relationship field.
+1. Begin editing the *object* containing the desired relationship field.
 
 1. Go to the *Fields* tab and begin editing the *relationship field*.
 

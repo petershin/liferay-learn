@@ -20,7 +20,7 @@ Follow these steps to add a validation:
    For Liferay 7.4 U38+/GA38+, you can add custom validations to system objects.
    ```
 
-1. Go to the *Validations* tab and click the *Add* button ( ![Add Button](../../../../images/icon-add.png) ).
+1. Go to the *Validations* tab and click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
 
 1. Enter a *label* and select a validation type: *Groovy* or *Expression Builder*.
 
@@ -58,7 +58,7 @@ Once activated, the validation runs for all new object entries.
 
 ## Using Groovy Validations
 
-Groovy validations support all standard [Groovy Script](https://groovy-lang.org/) capabilities. However, when defining conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
+Groovy validations support all standard [Groovy Script](https://groovy-lang.org/) capabilities. When defining conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
 
 ![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/05.png)
 
@@ -74,7 +74,7 @@ You can only use Expression Builder validations with text, numeric, date, and bo
 
 ![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/06.png)
 
-For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax when you click *Save*. If the expression is invalid, Liferay shows an error message.
+For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax when you click Save. If the expression is invalid, Liferay shows an error message.
 
 ### Expression Builder Operators
 
@@ -123,7 +123,7 @@ This table lists available Expression Builder functions with their compatible fi
 
 When constructing conditions, you can use any of the object's custom or system fields. You can also select from relationship fields on the child side of a one-to-many relationship.
 
-The following table lists all default fields available for custom objects:
+Below are all default fields available for custom objects:
 
 | Field | Description |
 | :--- | :--- |

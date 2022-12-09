@@ -25,7 +25,7 @@ Groovy script actions are only available for Liferay Experience Cloud Self-Manag
 
 {bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`
 
-*Groovy Script* actions execute Groovy scripts. Enter your script into the provided code window. For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to validate your Groovy script syntax when you click *Save*. If the script is invalid, Liferay displays an error message.
+*Groovy Script* actions execute Groovy scripts. Enter your script into the provided code window. For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to validate your Groovy script syntax when you click Save. If the script is invalid, Liferay displays an error message.
 
 ![Enter your Groovy script.](./understanding-action-types/images/02.png)
 

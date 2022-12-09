@@ -10,7 +10,7 @@ After adding an aggregation field, you can add [filters](#using-aggregation-filt
 
 ## Functions Reference
 
-Aggregation fields have these available functions:
+Aggregation fields can have these functions:
 
 | Function | Description |
 | :--- | :--- |

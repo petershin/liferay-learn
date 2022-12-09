@@ -4,9 +4,9 @@
 
 With custom views, you can set a default sorting for tables. Follow these steps:
 
-1. Begin editing the desired *view* and go to the *Default Sort* tab.
+1. Begin editing the desired view and go to the *Default Sort* tab.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../../../images/icon-add.png)).
 
 1. Select a *column* and *sorting* order (i.e., ascending or descending).
 

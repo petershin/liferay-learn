@@ -2,7 +2,7 @@
 
 {bdg-secondary}`For Liferay 7.4 U31+/GA31+`
 
-Layouts define how fields and relationships appear when creating and editing object entries. Each layout can include multiple tabs with different elements that are available during or after entry creation. When designing a layout, there are two types of tabs:
+Layouts define how fields and relationships appear when creating and editing object entries. Each layout can include multiple tabs containing different elements that appear during or after entry creation. When designing a layout, there are two types of tabs:
 
 * [Field tabs](#adding-field-tabs) can display fields created directly in an object definition or inherited from a one-to-many relationship.
 
@@ -24,7 +24,7 @@ The first tab must be a field tab. This tab must include all mandatory object fi
    System objects do not support custom layouts. See [Extending System Objects](../extending-system-objects.md) for more information.
    ```
 
-1. Go to the *Layouts* tab and click the *Add* button (![Add Button](../../../../images/icon-add.png)).
+1. Go to the *Layouts* tab and click *Add* (![Add Button](../../../../images/icon-add.png)).
 
 1. Enter a *Name* and click *Save*.
 
@@ -34,7 +34,7 @@ This creates a blank layout to which you can add [field](#adding-field-tabs) and
 
 ## Adding Field Tabs
 
-1. Begin editing the desired layout, go to the *Layout* tab, and click *Add Tab*.
+1. Go to the *Layout* tab, and click *Add Tab*.
 
    ![Go to the Layout tab and click Add Tab.](./designing-object-layouts/images/02.png)
 
@@ -46,7 +46,7 @@ This creates a blank layout to which you can add [field](#adding-field-tabs) and
 
 1. Click *Add Block*, enter a *Label*, and click *Save*.
 
-   This creates a subsection that you can add fields to. The label determines the section's display name in the Liferay UI.
+   This creates a subsection for adding fields. The label determines the section's display name in the Liferay UI.
 
    Repeat this step to add multiple blocks to the same tab.
 
@@ -60,21 +60,21 @@ This creates a blank layout to which you can add [field](#adding-field-tabs) and
 
    ![Add fields to the block.](./designing-object-layouts/images/06.png)
 
-1. Use the toggle switch to make a block *collapsible*.
+1. Use the toggle switch to make a block collapsible.
 
    ![Use the toggle switch to make a block collapsible.](./designing-object-layouts/images/07.png)
 
-1. After adding the desired tabs, *save* your changes to the layout.
+1. After adding the desired tabs, save your changes to the layout.
 
 After adding a field tab, you can add categorization tools to it so end users can apply tags and categories to object entries. See [Adding Categorization to Field Tabs](./adding-categorization-to-fields-tabs.md) for more information.
 
 ## Adding Relationship Tabs
 
-1. Begin editing the desired layout, go to the *Layout* tab, and click *Add Tab*.
+1. Edit the desired layout, go to the *Layout* tab, and click *Add Tab*.
 
    ![Select the desired layout, go to the Layout tab, and click Add Tab.](./designing-object-layouts/images/08.png)
 
-1. Enter a *Label*, select the *Relationships* type, and select a the *relationship table* you want to display in the tab.
+1. Enter a *Label*, select the *Relationships* type, and select the *relationship table* you want to display in the tab.
 
    The label determines the tab's display name in the Liferay UI.
 
@@ -84,15 +84,15 @@ After adding a field tab, you can add categorization tools to it so end users ca
 
    ![Add relationship tabs to the layout.](./designing-object-layouts/images/10.png)
 
-1. After adding the desired tabs, *save* your changes to the layout.
+1. After adding the desired tabs, save your changes to the layout.
 
 ```{important}
-If the object has a many-to-many relationship with itself, you can add two relationship tabs to its layout. Each tab corresponds to one side of the relationship. For example, consider a ticket object that relates multiple tickets with one another. You can define two relationship tabs for keeping track of tickets and their dependencies. One tab would list all tickets that the current ticket depends on, while the other tab would list all tickets that depend on the current ticket. See [Defining Object Relationships](../relationships/defining-object-relationships.md) for more information.
+If the object has a many-to-many relationship with itself, you can add two relationship tabs to its layout. Each tab corresponds to one side of the relationship. For example, consider a ticket object that relates multiple tickets to one another. You can define two relationship tabs for keeping track of tickets and their dependencies. One tab would list all tickets that the current ticket depends on, while the other tab would list all tickets that depend on the current ticket. See [Defining Object Relationships](../relationships/defining-object-relationships.md) for more information.
 ```
 
 ## Selecting a Default Layout
 
-Once you've designed your custom layout, you can set it as the object's default layout. This ensures it is used for creating and editing the object's entries. Otherwise, the object uses the autogenerated layout.
+Once you've designed your layout, you can set it as the object's default layout. This ensures it is used for creating and editing the object's entries. Otherwise, the object uses the autogenerated layout.
 
 Follow these steps:
 

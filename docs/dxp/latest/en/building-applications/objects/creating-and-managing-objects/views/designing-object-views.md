@@ -10,7 +10,7 @@ Follow these steps:
 
 1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
-1. Begin editing a custom object definition, go to the *Views* tab, and click the *Add* button ( ![Add Button](../../../../images/icon-add.png) ).
+1. Begin editing a custom object definition, go to the *Views* tab, and click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
 
    ```{note}
    System objects do not support custom views. See [Extending System Objects](../extending-system-objects.md) for more information.
@@ -20,7 +20,7 @@ Follow these steps:
 
    ![Enter a name and click Save.](./designing-object-views/images/02.png)
 
-1. Click the new *view* to begin editing it.
+1. Click the new view to begin editing it.
 
 1. In the Basic Info tab, check *Mark as Default* to set it as the default view for the object definition.
 
@@ -45,7 +45,7 @@ Once saved, the view table displays the selected fields. If desired, you can als
 ![The view table only displays the selected fields.](./designing-object-views/images/05.png)
 
 ```{tip}
-For 7.4 U21+, you can duplicate a view by clicking its *Actions* button ( ![Actions Button](../../../../images/icon-actions.png) ) and selecting *Duplicate*. This creates a complete copy of the original view with "(Copy)" appended to it's name. 
+For 7.4 U21+, you can duplicate a view by clicking its Actions button ( ![Actions Button](../../../../images/icon-actions.png) ) and selecting *Duplicate*. This creates a complete copy of the original view with "(Copy)" appended to it's name. 
 ```
 
 ## Additional Information

@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference). By default, all custom objects include the following system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status. But you can add custom fields at any time.
+Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference). By default, all objects include the following system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status. But you can add new fields at any time.
 
 Follow these steps:
 
@@ -25,12 +25,12 @@ Follow these steps:
    **Field Name**: This value determines the field's name in the back-end and uses camel case. Once a field is published, this value cannot be changed.
 
    ```{note}
-   Some field names are reserved by Liferay and cannot be used for custom fields. See [Reserved Field Names](#reserved-field-names) for more information. 
+   Some field names are reserved by Liferay and cannot be used. See [Reserved Field Names](#reserved-field-names) for more information. 
    ```
 
 1. Select a field *Type*. Some field types include additional configuration options (e.g., Picklist, Attachment). See [Field Type Reference](#field-types-ui-reference) below for a basic overview of each type, or see [Fields](../fields.md) for more detailed information.
 
-   In some cases, these options are available during field creation (e.g., Picklist, Attachment), while others are only available after field creation (e.g., Text, Long Text). See  for more information.
+   In some cases, these options are available during field creation (e.g., Picklist, Attachment), while others are only available after field creation (e.g., Text, Long Text). 
 
 1. Determine whether the field is *Mandatory*.
 
@@ -77,7 +77,7 @@ The following field names are reserved by Liferay and cannot be used. If users a
 | `companyId` | Portal instance where the entry was created. |
 | `createDate` | When the entry was created. |
 | `externalReferenceCode` | External reference code for the entry. |
-| `groupId` | Site ID in where the entry was created. |
+| `groupId` | Site ID where the entry was created. |
 | `lastPublishDate` | Date when the entry was last published. |
 | `modifiedDate` | Date when the entry was last modified. |
 | `mvccVersion` | MVCC version of the entry. |

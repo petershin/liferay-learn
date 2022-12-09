@@ -32,7 +32,7 @@ Liferay provides these field types that correspond to specific data types in the
 | [Attachment](./fields/attachment-fields.md) | Relationship > Long | Stores files; by default, uploaded files can be no larger than 100 MB; this field supports all file types accepted by [Documents and Media](../../../content-authoring-and-management/documents-and-media.md). |
 | Boolean | Boolean | Stores true or false values |
 | Date | Date | Stores date values |
-| Decimal (_previously Double_) | Double | Stores a decimal number value with a limit of 16 digits, whether before or after the decimal. <br><br> Example: `999.9999999999999` (16 digits total) |
+| Decimal (_previously Double_) | Double | Stores a decimal number value with a limit of 16 digits. <br><br> Example: `999.9999999999999` (16 digits total) |
 | Integer | Integer | Stores an integer up to nine digits in length. <br><br> Maximum value: `2147483647` <br><br> Minimum value: `-2147483648` |
 | Long Integer (_previously Long_) | Long | Stores a large integer up to 16 digits in length. <br><br> Maximum value: `9007199254740991` <br><br> Minimum value: `-9007199254740991` |
 | Long Text (_previously Clob_) | Clob | Stores a text box value that supports up to 65,000 characters; after creating a Long Text field, you can configure it to limit the number of characters allowed. |

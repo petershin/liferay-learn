@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4 U5+/GA9+`
 
-With Liferay Objects, you can import and export object definitions as `.json` files. This provides flexibility during application development, enabling users to easily migrate objects between Liferay environments.
+You can import and export object definitions as `.json` files. This makes it easy to migrate objects between Liferay environments.
 
 ```{important}
 Objects does not support exporting and importing relationships. All other object elements and configurations are supported (e.g., scope, fields, layouts, actions).
@@ -16,7 +16,7 @@ Objects does not support exporting and importing relationships. All other object
 
    ![Click the Actions button for the desired object and select Export as JSON.](./exporting-and-importing-object-definitions/images/01.png)
 
-1. Click *Save* in the dialog window to begin downloading the object definition as a JSON file.
+1. Click *Save* in the dialog window to download the object definition as a JSON file.
 
 Once exported, you can import the object definition into compatible Liferay environments.
 

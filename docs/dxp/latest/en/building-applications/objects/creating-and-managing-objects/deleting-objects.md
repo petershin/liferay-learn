@@ -10,7 +10,7 @@ For versions before Liferay 7.4 U26/GA26, users cannot delete [published object 
 
 If a definition has active relationships, you must remove them before you can delete the definition. See [Removing Relationships](./relationships/removing-relationships.md) for more information.
 
-   ![You must remove all active relationships before deleting an object definition.](./deleting-objects/images/01.png)
+![You must remove all active relationships before deleting an object definition.](./deleting-objects/images/01.png)
 
 To delete the definition,
 

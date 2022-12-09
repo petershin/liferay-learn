@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available in Liferay Cloud 5.x.x`
 
-Liferay Cloud includes a web application firewall called [ModSecurity](https://github.com/SpiderLabs/ModSecurity). It inspects requests sent to the web server in real time, against a predefined set of custom rules. This step prevents typical web application L7 attacks, like XSS, SQL Injection, and other forms of hijacking attempts that might lead to loss of sensitive information.
+Liferay Cloud includes a web application firewall called [ModSecurity](https://github.com/SpiderLabs/ModSecurity). It inspects requests sent to the web server against a predefined set of custom rules. This step prevents typical web application real time L7 attacks, like XSS, SQL Injection, and other forms of hijacking attempts that might lead to loss of sensitive information.
 
 Liferay Cloud includes additional network security features, including a [private network](../networking/private-network.md), public [load balancer](../networking/load-balancer.md) ([Layer 7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)), and [CDN](../networking/load-balancer.md#cdn).
 
@@ -34,7 +34,7 @@ To enable ModSecurity, set the value of `LCP_WEBSERVER_MODSECURITY` to `On` or `
 
 The default ModSecurity settings are recommended. To override the default configuration, create a `modsecurity.conf` file in your project repository's `webserver/configs/{ENV}/modsec/` directory. You must provide all necessary configurations, because it completely overrides Liferay Cloud's default `modsecurity.conf`.
 
-Copy [this example of recommended settings](https://github.com/SpiderLabs/ModSecurity/blob/v3/master/modsecurity.conf-recommended) as a starting point for your own `modsecurity.conf` file. However, if you use this file, replace the line `SecRuleEngine DetectionOnly` with this line:
+Copy [this example of recommended settings](https://github.com/SpiderLabs/ModSecurity/blob/v3/master/modsecurity.conf-recommended) as a starting point for your own `modsecurity.conf` file. If you use this file, replace the line `SecRuleEngine DetectionOnly` with this line:
 
 ```
 SecRuleEngine ${LCP_WEBSERVER_MODSECURITY}
@@ -66,7 +66,7 @@ To add the OWASP CRS to ModSecurity,
 
 1. Commit the files to your repository and [deploy the changes](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).
 
-The rule set can be interpreted once you [enable ModSecurity](#enabling-modsecurity).
+The rule set is interpreted once you [enable ModSecurity](#enabling-modsecurity).
 
 ## Using ModSecurity Audit Logs
 

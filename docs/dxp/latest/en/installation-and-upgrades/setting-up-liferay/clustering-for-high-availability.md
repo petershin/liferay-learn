@@ -36,6 +36,10 @@ Here is what's required to create an effectively functional DXP cluster.
 
 1. [Cluster Link configured to enable communication and cache replication across all nodes](./clustering-for-high-availability/configuring-cluster-link.md)
 
+```{note}
+Make sure to start your nodes sequentially so that the master node is selected correctly and to avoid concurrency issues. 
+```
+
 After you've configured your DXP cluster, you can deploy applications to it and continue improving user experiences. Please see [Maintaining Clustered Installations](../maintaining-a-liferay-installation/maintaining-clustered-installations.md) for more information.
 
 ## What's Next

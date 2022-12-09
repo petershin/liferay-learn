@@ -16,7 +16,7 @@ Follow these steps to create a Widget Template:
    In the Global Site, you can view sample widget templates. These sample templates differ from the default templates already configured in the apps.
    ```
 
-1. Click the *Add* button ( ![Add Button](../../../../images/icon-add.png) ) and select the type of template to create.
+1. Click *Add* ( ![Add Button](../../../../images/icon-add.png) ) and select the type of template to create.
 
    ![Click on Design and Widget templates.](./creating-a-widget-template/images/01.png)
 

@@ -10,7 +10,7 @@ You can use widget templates to customize the appearance and functionality of ou
 
    ![Access the Widget Templates page from the Templates application.](./styling-widgets-with-widget-templates/images/01.png)
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) and select a widget for the template (e.g., Asset Publisher).
+1. Click *Add* (![Add Button](../../../images/icon-add.png)) and select a widget for the template (e.g., Asset Publisher).
 
    ![The Widget Template creation page provides controls to easily add fields or variables to use.](./styling-widgets-with-widget-templates/images/02.png)
 
@@ -35,7 +35,7 @@ This creates a new widget template, which you can apply to the corresponding typ
    ![Select your widget template from the Display Template drop-down menu in the corresponding widget's configuration.](./styling-widgets-with-widget-templates/images/03.png)
 
    ```{note}
-   This drop-down menu is on the default tab, Setup, for most widgets. For the Asset Publisher widget, this setting is found under the Display Settings tab.
+   This drop-down menu is on the default tab, Setup, for most widgets. For the Asset Publisher widget, this setting is under the Display Settings tab.
    ```
 
 1. Click *Save*.

@@ -1,41 +1,50 @@
 # Styling Widgets with Widget Templates
 
-Widget templates are used to customize the appearance and functionality of out-of-the-box widgets, such as the *Asset Publisher* and *Media Gallery* widgets.
+You can use widget templates to customize the appearance and functionality of out-of-the-box widgets, such as the *Asset Publisher* and *Media Gallery* widgets.
 
 ## Creating a Widget Template
 
-1. From the Site Menu ![Site Menu](../../../images/icon-product-menu.png), click *Design* &rarr; *Templates*.
+1. From the *Site Menu* ![Site Menu](../../../images/icon-product-menu.png), click *Design* &rarr; *Templates*.
 
-1. Select the *Widget Templates* tab at the top of the page.
+1. Go to the *Widget Templates* tab.
 
-    ![Access the Widget Templates page from the Templates application.](./styling-widgets-with-widget-templates/images/01.png)
+   ![Access the Widget Templates page from the Templates application.](./styling-widgets-with-widget-templates/images/01.png)
 
-1. Click the *Add* (![Add icon](../../../images/icon-add.png)) button, then select which widget to create a widget template for (e.g., Asset Publisher).
+1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) and select a widget for the template (e.g., Asset Publisher).
 
-    ![The Widget Template creation page provides controls to easily add fields or variables to use.](./styling-widgets-with-widget-templates/images/02.png)
+   ![The Widget Template creation page provides controls to easily add fields or variables to use.](./styling-widgets-with-widget-templates/images/02.png)
 
 1. Add a name for your widget template.
 
-1. Enter the desired content for your widget template. You can click any of the entries in the menu on the right side of the screen to insert a field, variable, or utility into the editor (or start typing a field name starting with `${` to see suggestions as you type).
+1. Enter your FreeMarker script into the template editor. You can use the Elements side panel ( ![Elements](../../../images/icon-list-ul.png) ) to add fields, variables, and utilities to your template. Alternatively, you can type `${` to see field suggestions.
 
-1. Click *Save* to complete the template.
+   ```{note}
+   For Liferay DXP/Portal 7.4+, widget templates only support FreeMarker. Velocity is no longer supported.
+   ```
+
+1. Click *Save*.
 
 This creates a new widget template, which you can apply to the corresponding type of widget on a page.
 
 ## Applying a Widget Template
 
-1. Click the Actions (![Actions icon](../../../images/icon-actions.png)) icon on the appropriate widget, then click *Configuration.*
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the appropriate widget, then click *Configuration.*
 
-1. Find the Display Template drop-down menu, and select the name of the desired template.
+1. Find the Display Template drop-down menu and select the desired template.
 
-    ![Select your widget template from the Display Template drop-down menu in the corresponding widget's configuration.](./styling-widgets-with-widget-templates/images/03.png)
+   ![Select your widget template from the Display Template drop-down menu in the corresponding widget's configuration.](./styling-widgets-with-widget-templates/images/03.png)
 
-    ```{note}
-    This drop-down menu is on the default tab, Setup, for most widgets. For the Asset Publisher widget, this setting is found under the Display Settings tab.
-    ```
+   ```{note}
+   This drop-down menu is on the default tab, Setup, for most widgets. For the Asset Publisher widget, this setting is found under the Display Settings tab.
+   ```
 
-1. Click *Save.*
+1. Click *Save*.
 
-    ![After you save your widget's configuration to use your widget template, it uses your template for its display.](./styling-widgets-with-widget-templates/images/04.png)
+   ![After you save your widget's configuration to use your widget template, it uses your template for its display.](./styling-widgets-with-widget-templates/images/04.png)
 
-The widget has been modified to use a custom appearance. By using more advanced widget template scripts, you can further enhance the capabilities of your widgets.
+The widget now uses the custom template. By using more advanced widget template scripts, you can further enhance the capabilities of your widgets.
+
+## Additional Information
+
+* [Creating a Widget Template](../../creating-pages/using-widget-pages/styling-widgets/creating-a-widget-template.md)
+* [Configuring Widget Look and Feel](../../creating-pages/using-widget-pages/styling-widgets/configuring-widget-look-and-feel.md)

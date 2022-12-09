@@ -197,15 +197,15 @@ Name                          | Default Value              | Description |
 `LCP_BACKUP_CLEANUP_SCHEDULE` | 0 1 * * * | This variable schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). Cleanups remove all backups that exceed the backup retention period. |
 `LCP_BACKUP_CREATE_SCHEDULE`  | `[5-55][0-1] * * *`     | This variable schedules automated backups using [cron scheduling syntax](https://crontab.guru/). In versions `3.2.1` and above of the backup service, if no value is specified then a random default will be created. |
 `LCP_BACKUP_RESTORE_SCHEDULE` | N/A | This variable schedules automated restores using [cron scheduling syntax](https://crontab.guru/). Intended for use with [Disaster Recovery environments](../../troubleshooting/configuring-cross-region-disaster-recovery.md). |
-`LCP_BACKUP_RESTORE_STRATEGY` | `OVERWRITE` | Determines whether to use a fresh database instance and volume for backup restores instead of taking down the existing instances immediately. Set the value to `PREPARE_AND_SWAP` to use this strategy. |
+`LCP_BACKUP_RESTORE_STRATEGY` | `OVERWRITE` | By default, existing instances are taken down immediately. To start a fresh database instance and volume before taking down existing instances, use the `PREPARE_AND_SWAP` strategy. |
 `LCP_BACKUP_RETENTION_PERIOD` | `30`                       | This variable determines which backups are removed during scheduled cleanups. Select the number of days backups are retained before being removed by cleanups. The maximum retention period is 30 days. |
 `LCP_DATABASE_SERVICE`        | `database`                 | The database service's ID. |
 `LCP_DBNAME`                  | `lportal`                  | The database name. |
 `LCP_DEBUG_LOG`               | `false`                    | Enables debug logging for the Backup service. Set to `true` or `false`. |
-`LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES` | `6` | The maximum amount of automatic retries when uploading a backup if it fails. If the upload fails beyond this limit, then the upload is aborted and it may start over completely (up to two times). |
-`LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY` | `64` | The delay (in seconds) before retrying a backup upload if it fails. This delay is used for each of the possible retries (up to the limit set by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`). |
-`LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` | `3` | This multiplies the delay set by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY` on each subsequent retry. |
-`LCP_GCP_STORAGE_UPLOAD_TIMEOUT` | `6000` | The maximum delay time (in seconds) between backup upload requests (or retries). This limits the amount that the multiplier set by `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` can increase the delay time. |
+`LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES` | `6` | The maximum amount of times to retry uploading a backup if it fails. After this limit, the upload is aborted and may start over completely (up to two times). |
+`LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY` | `64` | The delay (in seconds) between each of the retries configured by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`). |
+`LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` | `3` | Multiplies the delay set by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY` on each subsequent retry. |
+`LCP_GCP_STORAGE_UPLOAD_TIMEOUT` | `6000` | The maximum delay time (in seconds) between backup upload requests (or retries). This sets an upper limit to the amount that `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` can increase the delay time. |
 `LCP_MASTER_USER_NAME`        | `dxpcloud`                 | The master username. |
 `LCP_MASTER_USER_PASSWORD`    | `LCP_PROJECT_MASTER_TOKEN` | The master password. |
 

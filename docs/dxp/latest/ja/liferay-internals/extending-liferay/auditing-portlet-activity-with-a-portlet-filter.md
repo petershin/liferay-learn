@@ -31,12 +31,13 @@
 次の例では、`RenderFilter`を使用して、ブログポートレットのレンダリングフェーズを監査します。
 
 ## サンプルのポートレットフィルターをデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these step to download, build, and deploy the sample Portlet Filter to the new docker container:
+次に、以下の手順で、サンプルのポートレットフィルタをダウンロードし、ビルドして、新しいドッカーコンテナにデプロイしてください。
 
-1. Download and unzip the example module.
+1. サンプルモジュールをダウンロードして解凍します。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/liferay-b4k8.zip -O

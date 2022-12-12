@@ -22,12 +22,12 @@ Liferay Cloudサブスクリプションをアップグレードする最初の�
 
 ```
 {
-    "kind":"Deployment",
-    "id":"liferay",
-    "image":"liferaycloud/liferay-dxp:7.2-4.2.1",
-    "memory"。8192、
-    "cpu":8、
-    "scale"。2,
+    "kind": "Deployment",
+    "id": "liferay",
+    "image": "liferaycloud/liferay-dxp:7.2-4.2.1",
+    "memory": 8192,
+    "cpu": 8,
+    "scale": 2,
     ...
 }
 ```
@@ -44,12 +44,12 @@ Liferay Cloud チームは、サブスクリプションをアップグレード
 
 ```
 {
-    "kind":"Deployment",
-    "id":"webserver",
-    "image":"liferaycloud/nginx:1.16.1-4.1.1",
-    "memory"。512、
-    "cpu":2、
-    "スケール"。2、
+    "kind": "Deployment",
+    "id": "webserver",
+    "image": "liferaycloud/nginx:1.16.1-4.1.1",
+    "memory": 512,
+    "cpu": 2,
+    "scale": 2,
     ...
 }
 ```
@@ -60,13 +60,13 @@ Liferay Cloud チームは、サブスクリプションをアップグレード
 
 ```
 {
-    "kind":"StatefulSet",
-    "id":"search",
-    "image":"liferaycloud/elasticsearch:6.8.13-4.1.1",
-    "memory"。8192、
-    "cpu":8、
-    "scale"。3、
-    "podManagementPolicy":"Parallel"、
+    "kind": "StatefulSet",
+    "id": "search",
+    "image": "liferaycloud/elasticsearch:6.8.13-4.1.1",
+    "memory": 8192,
+    "cpu": 8,
+    "scale": 3,
+    "podManagementPolicy": "Parallel",
     ...
 }
 ```

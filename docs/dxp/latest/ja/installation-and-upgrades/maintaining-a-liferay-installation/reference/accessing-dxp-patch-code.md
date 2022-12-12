@@ -112,9 +112,9 @@ GitHubユーザーのリポジトリアクセスを削除する方法は次の�
 
 ## 追加情報
 
-* [About Open Source at Liferay](https://liferay.dev/open-source)
-* [Getting Started with GitHub and Git](https://help.github.com/en/github/getting-started-with-github)
-* [Searching for Information on GitHub](https://help.github.com/en/github/searching-for-information-on-github)
-* [Cloning a Repository on GitHub](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github)
-* [Working with Forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
-* [Forking Projects](https://guides.github.com/activities/forking/)
+* [ライフレイでのオープンソースについて](https://liferay.dev/open-source)
+* [GitHubとGitの概要](https://help.github.com/en/github/getting-started-with-github)
+* [GitHubで情報を検索する](https://help.github.com/en/github/searching-for-information-on-github)
+* [GitHub上でリポジトリを複製する](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github)
+* [フォークを使って作業する](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)
+* [プロジェクトをフォークする](https://guides.github.com/activities/forking/)

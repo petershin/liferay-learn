@@ -168,12 +168,13 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
 ## 新しいサービスメソッドのテスト
 
 次に、モジュールをデプロイして、新しいサービスをテストします。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+次に、以下の手順に従います。
 
-1. Build and deploy the example.
+1. サンプルをビルドしてデプロイします。
 
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)

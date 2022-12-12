@@ -10,7 +10,7 @@
 
 ## 前提条件
 
-[Mercanet](https://documentation.mercanet.bnpparibas.net/index.php?title=Obtenir **sa** cl%C3%A9_secr%C3%A8te#) ) を使用するようにストアを設定する前に、以下を生成する必要があります。
+[Mercanet](https://documentation.mercanet.bnpparibas.net/index.php?title=Obtenir_sa_cl%C3%A9_secr%C3%A8te#) を使用するようにストアを設定する前に、以下を生成する必要があります。
 
 1. MercanetのマーチャントID
 1. シークレットキー

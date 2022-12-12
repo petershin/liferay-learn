@@ -2,10 +2,6 @@
 
 Here's how to install, configure, and start Elasticsearch on-premises.
 
-```{important}
-The Sidecar Elasticsearch server bundled with Liferay 7.3 and early Liferay 7.4 versions (through Liferay DXP 7.4 U16/Liferay Portal 7.4 GA16) uses the Elasticsearch OSS distribution. Do not install the OSS version for production. To run Liferay securely with Elasticsearch, you must install the Basic level of Elasticsearch at a minimum. See [Elastic's subscriptions page](https://www.elastic.co/subscriptions) for more information.
-```
-
 ```{note}
 If you have Elasticsearch indexes used for primary data storage (storing data not backed by a database) you can bring that data into your new Elasticsearch cluster using the [snapshot and restore approach](./upgrading-elasticsearch/backing-up-elasticsearch.md). Liferay's own Search Tuning indexes (for Result Rankings and Synyonyms) are primary storage indexes on Liferay DXP 7.2 and 7.3.
 ```
@@ -35,7 +31,7 @@ sysctl -w vm.max_map_count=262144
 
 ## Install Elasticsearch
 
-1. Download an Elasticsearch archive (not the OSS version) from [Elastic's website](https://www.elastic.co).
+1. Download an Elasticsearch archive from [Elastic's website](https://www.elastic.co).
 
     ```{important}
     Download the latest Elasticsearch archive [compatible with your Liferay version](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors).

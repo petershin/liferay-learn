@@ -2,7 +2,7 @@
 
 {bdg-secondary}`For Liferay 7.4 U37+/GA37+`
 
-Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in your content page. To open the content page editor, go to a content page and click the *Edit* button ( ![Edit icon](../../../images/icon-edit.png) ). This reveals the editing toolbar and sidebar, which contain tools and components for building your content pages.
+Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in a content page. To open the content page editor, go to a content page and click the *Edit* button ( ![Edit icon](../../../images/icon-edit.png) ). This reveals the editing toolbar and sidebar, which contain tools and components for building content pages.
 
 - [Editing Toolbar](#editing-toolbar)
 - [Editing Sidebar](#editing-sidebar)
@@ -21,7 +21,7 @@ Using the Experience drop-down menu, you can create copies of the current page t
 
 ### Translations
 
-Click the *language flag* to access the translation drop-down menu. Here, you can view the status of active languages for a page, as well as switch between languages to view and edit translations directly. See [Configuring Site Languages](../../site-settings/site-localization.md) for more information.
+Click the language flag to access the translation drop-down menu. Here, you can view the status of active languages for a page, as well as switch between languages to view and edit translations directly. See [Configuring Site Languages](../../site-settings/site-localization.md) for more information.
 
 If you use [experiences](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) for content page personalization, you can configure the Experience using the languages available for your site. See [Managing Experience Localization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md#managing-experience-localization) for more information.
 
@@ -35,7 +35,7 @@ The [Fragments and Widgets](#fragments-and-widgets) and [Page Design Options](#p
 
 ### Edit History
 
-Click the *History* button ( ![History Button](./../../../images/icon-time.png) ) to view changes made during your current edit session. You can use this history to reserve or restore changes. Alternatively, you can click the *undo* and *redo* buttons.
+Click the History button ( ![History Button](./../../../images/icon-time.png) ) to view changes made during your current edit session. You can use this history to reserve or restore changes. Alternatively, you can click the Undo and Redo buttons.
 
 ![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/03.png)
 
@@ -52,15 +52,15 @@ The editing options available in the content page sidebar depend on the editing 
 
 ### Toggle Sidebars
 
-Click the *Toggle Sidebars* button ( ![Toggle Sidebars](../../../images/icon-view.png) ) to hide the editing sidebars and preview your page. Additionally, you can click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) in the Application Bar and select *Preview in a New Tab* to see the current page experience and language in a new tab.
+Click the Toggle Sidebars button ( ![Toggle Sidebars](../../../images/icon-view.png) ) to hide the editing sidebars and preview your page. Click the Actions button ( ![Actions Button](../../../images/icon-actions.png) ) in the Application Bar and select *Preview in a New Tab* to see the current page experience and language in a new tab.
 
 ### Create Page Template
 
-Click the *Page Template* button ( ![Page Template](../../../images/icon-page-template.png) ) to create a [page template](../adding-pages/creating-a-page-template.md) based on the current page design.
+Click the Page Template button ( ![Page Template](../../../images/icon-page-template.png) ) to create a [page template](../adding-pages/creating-a-page-template.md) based on the current page design.
 
 ### Publish
 
-By default, publishing makes your changes live immediately. However, if you've enabled a custom [Workflow](../../../process-automation/workflow/introduction-to-workflow.md) to direct the review and publishing process, clicking Publish initiates your defined procedure.
+By default, publishing makes your changes live immediately. However, if [Workflow process](../../../process-automation/workflow/introduction-to-workflow.md) is configured to direct the review and publishing process, clicking Publish initiates your defined procedure.
 
 ## Editing Sidebar
 
@@ -78,17 +78,17 @@ Depending on your selected editing mode, you can access these panels in the edit
 
 In the Fragments and Widgets panel ( ![Fragments and Widgets icon](../../../images/icon-plus.png) ), you can access both out-of-the-box and custom page elements.
 
-**Fragments**: Fragments are extensible, reusable, drag-and-drop elements that serve as the primary building blocks for content pages. Examples include layout elements, videos, and banner images with text overlay. See [Using Fragments](../page-fragments-and-widgets/using-fragments.md) to learn more about Liferay's out-of-the-box fragments or [Developing Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn how to create your own.
+**Fragments**: Fragments are extensible, reusable, drag-and-drop elements that serve as the primary building blocks for content pages. Examples include layout elements, videos, and banner images with text overlay. See [Using Fragments](../page-fragments-and-widgets/using-fragments.md) to learn more about the out-of-the-box fragments or [Developing Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn how to create your own.
 
 **Widgets**: Widgets are [applications](../../../building-applications.md) that add dynamic functionality to a page. Examples include blogs, message boards, and calendars. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
 
 ```{tip}
-Beginning with Liferay 7.4 U37/GA37, you can click the *Order* button ( ![Order Button](../../../images/icon-order.png) ) to reorder sets of fragments and widgets. Also, you can click the *Star* button ( ![Star Button](../../../images/icon-star.png) ) to add a fragment or widget to your list of favorite elements.
+Beginning with Liferay 7.4 U37/GA37, click the Order button ( ![Order Button](../../../images/icon-order.png) ) to reorder sets of fragments and widgets. Click the Star button ( ![Star Button](../../../images/icon-star.png) ) to add a fragment or widget to your list of favorite elements.
 ```
 
 ### Browser
 
-In the Browser panel ( ![Browser](../../../images/icon-hierarchy.png) ), you can view, organize, and manage all elements in the page. Elements are displayed in a hierarchy. For Liferay 7.4 U37/GA37+, you can drag and drop elements in the Browser panel to reorganize them or double click elements to rename them. If you select an element, you can access its settings in the configuration side panel. You can also select fragment sub-elements to access additional settings. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
+Use the Browser panel ( ![Browser](../../../images/icon-hierarchy.png) ) to view, organize, and manage all elements in the page. Elements are displayed in a hierarchy. For Liferay 7.4 U37/GA37+, you can drag and drop elements in the Browser panel to reorganize them or double click elements to rename them. Selecting an element opens its settings in the configuration side panel. Select a fragment's sub-elements to access additional settings. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
 ```{note}
 When editing a content page, header and footer elements are not included in the Browser panel. You can only edit these elements in [master page templates](../defining-headers-and-footers/master-page-templates.md).
@@ -104,7 +104,7 @@ Besides collections, mapped content is not listed in the Page Content panel. The
 
 ### Page Design Options
 
-In the Page Design Options panel ( ![Page Design Options](../../../images/icon-format.png) ), you can change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). You can also access additional Look and Feel configurations, including [browser-based client extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md).
+Open the Page Design Options panel ( ![Page Design Options](../../../images/icon-format.png) ) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click the Cog button ( ![Cog Button](../../../images/icon-cog3.png) ) to access additional Look and Feel options, including [browser-based client extensions](https://github.com/building-applications/client-extensions/browser-based-client-extensions.md).
 
 ### Comments
 
@@ -123,7 +123,7 @@ In the Selection panel ( ![Selection](../../../images/icon-pages-tree.png) ), yo
 ![Selection shows you a hierarchy of your page and contents.](./content-page-editor-ui-reference/images/06.png)
 
 ```{note}
-A page's header and footer are not listed in the Selection panel hierarchy. This is because you can only modify them in the [master page template](../defining-headers-and-footers/master-page-templates.md).
+A page's header and footer are not listed in the Selection panel hierarchy, because you can only modify them in the [master page template](../defining-headers-and-footers/master-page-templates.md).
 ```
 
 ### Contents

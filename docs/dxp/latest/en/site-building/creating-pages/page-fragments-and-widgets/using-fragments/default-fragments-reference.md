@@ -54,17 +54,17 @@ These are simple design elements that add basic functionality to a page. Example
 
 {bdg-secondary}`For Liferay 7.4 U45+/GA45+`
 
-Use Form Component fragments to build forms in content pages. These fragments only support custom objects. To access them, you must have at least one published object. See [Using Fragments to Build Forms](../../../../building-applications/objects/using-fragments-to-build-forms.md) for more information on using them.
+Use Form Components fragments to build forms in content pages. These fragments only support custom objects. To access them, you must have at least one published object. See [Using Fragments to Build Forms](../../../../building-applications/objects/using-fragments-to-build-forms.md) for more information.
 
 | Fragment | Description |
 | :--- | :--- |
-| Form Container | Adds a container for building forms in content pages. Once added, you must map the container to a custom object. This automatically populates the container with form fragments for each field in the selected object. You can then manually add or remove fragments from the container. You can also set a custom success text for form submissions. You can only place other form components in a mapped form container. |
+| Form Container | Adds a container for building forms in content pages. Once added, you must map the container to a custom object. The container automatically populates with with form fragments for each field in the object. You can manually add or remove fragments from the container, and set a custom success text for form submissions. You can only place other form components in a mapped form container. |
 | CAPTCHA | Adds CAPTCHA confirmation to a form container. Once added, the form container requires human verification for submissions. |
 | Checkbox | Adds a checkbox to the form container that you can map to boolean fields. |
 | Date | Adds a field that you can map to custom date fields. |
 | File Upload | Adds a file upload button that you can map to [attachment fields](../../../../building-applications/objects/understanding-object-field-types.md#attachment). The mapped attachment field determines how files are uploaded. By default, this fragment displays supported file extensions. |
-| Numeric Input | Adds a field that you can map to custom numeric fields (i.e., integer, long integer, decimal, and precision decimal). During configuration, you can set a placeholder value and help text. |
-| Select from List | Adds a dropdown menu that you can map to custom picklist and relationship fields. If the mapped field includes more than 10 options, the dropdown menu also includes a search bar for querying options. |
+| Numeric Input | Adds a field that you can map to custom numeric fields (i.e., integer, long integer, decimal, and precision decimal). You can set a placeholder value and help text. |
+| Select from List | Adds a drop-down menu that you can map to custom picklist and relationship fields. If the mapped field includes more than 10 options, the drop-down menu also includes a search bar for querying options. |
 | Text Input | Adds a field that you can map to text fields (i.e., text, long text, rich text). |
 | Submit Button | Adds a button for submitting the form entry. Every form container must include a submit button. |
 
@@ -72,7 +72,7 @@ Use Form Component fragments to build forms in content pages. These fragments on
 
 {bdg-secondary}`For Liferay 7.3+`
 
-Use *Content Display* fragments to display site content individually or as part of a Collection. You can also add page elements for rating or flagging page content. DXP includes the following Content Display fragments.
+Use Content Display fragments to display site content individually or as part of a Collection. You can also add page elements for rating or flagging page content. DXP includes the following Content Display fragments.
 
 | Fragment | Description |
 | :--- | :--- |
@@ -81,7 +81,7 @@ Use *Content Display* fragments to display site content individually or as part 
 | Content Ratings | Adds an element for rating a content item. |
 | Collection Filter (Available 7.4+) | Adds an element for filtering a collection display using a vocabulary or category. |
 | Applied Filters (Available 7.4+) | Adds an element for displaying and managing filters applied to a collection display. |
-| Collection Display | Displays manually and dynamically defined collections, as well as collections defined by a collection provider. You can configure whether the collection is displayed in a *grid*, or with a list *template* (i.e., bordered, bulleted, inline, numbered, and unstyled). See [Displaying Collections](../../../displaying-content/additional-content-display-options/displaying-collections.md) for more information. |
+| Collection Display | Displays manually and dynamically defined collections, as well as collections defined by a collection provider. You can configure whether the collection is displayed in a grid, or with a list template (i.e., bordered, bulleted, inline, numbered, and unstyled). See [Displaying Collections](../../../displaying-content/additional-content-display-options/displaying-collections.md) for more information. |
 
 <!--| Knowledge Base Article Navigation (Available 7.4 U_+/GA_+) | |-->
 

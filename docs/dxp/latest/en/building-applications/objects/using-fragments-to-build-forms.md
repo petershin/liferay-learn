@@ -2,20 +2,20 @@
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Liferay provides form fragments for building forms in content pages. To build a form, you must first add a form container to a content page or page template and map it to a published object. This automatically populates the form container with fragments mapped to each object field. If desired, you can manually organize, remove, or add fragments. Once published, end users can use them to create object entries.
+Liferay includes form fragments for building object forms in content pages. To build a form, add a form container to a content page or page template and map it to a published object. The container automatically populates fragments mapped to each object field. You can manually organize, remove, or add fragments. Once published, end users can create object entries using the form.
 
 Building forms in content pages has the following requirements:
 
 * Form fragments can only be placed in a mapped form container.
 * Every form fragment in the form container must map to an object field to prevent data loss.
-* Form containers must include fragments for all mandatory object fields.
+* The form container must include fragments for all mandatory object fields.
 * Mandatory form fragments must be visible.
-* Form containers must include a visible submit button.
+* The form container must include a visible submit button.
 
-By default, Liferay includes the [form components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components) fragment set, but you can create your own. See [Creating Form Fragments](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md) for more information.
+By default, Liferay includes the [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components) fragment set, but you can create your own. See [Creating Form Fragments](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md) for more information.
 
 ```{important}
-Form fragments only support custom objects. To avoid clutter, Liferay hides the default form components set in the UI until you have at least one published object. Once published, users with access to the object can view and use the form components set. See [Creating Objects](../objects/creating-and-managing-objects/creating-objects.md) for more information.
+Form fragments can only be used with custom objects. Therefore, Liferay hides the Form Components fragment set until you have at least one published object. Once published, users with access to the object can view and use the Form Components fragments. See [Creating Objects](../objects/creating-and-managing-objects/creating-objects.md) for more information.
 ```
 
 ## Creating a Form
@@ -26,9 +26,9 @@ Form fragments only support custom objects. To avoid clutter, Liferay hides the 
 
 1. (Optional) Design a layout using fragments. See [Building Responsive Layouts with Fragments](../../site-building/optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) for more information.
 
-1. Add the *form container* fragment to the page and map it to an object.
+1. Add the *Form Container* fragment to the page and map it to an object.
 
-   This automatically populates the container with fragments for all object fields and lists them in alphabetical order. All mandatory object fields are marked as required automatically.
+   The container automatically populates with fragments for all object fields and lists them in alphabetical order. Mandatory object fields are marked as required automatically.
 
    The form container also includes a *Submit* button.
 
@@ -45,7 +45,7 @@ Form fragments only support custom objects. To avoid clutter, Liferay hides the 
 1. Configure the fragments. Form fragments include both [standard](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md) and [unique](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options) configuration options.
 
    ```{note}
-   Form fragment configuration options are only available after mapping the fragment to an object field.
+   Form fragment configuration options become available after mapping the fragment to an object field.
    ```
 
    ![Configure the form fragments.](./using-fragments-to-build-forms/images/03.png)

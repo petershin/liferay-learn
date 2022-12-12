@@ -2,45 +2,45 @@
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Liferay provides [Form Component fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) for building forms in content pages. If needed, you can create additional form fragments to achieve the desired design and functionality for your forms.
+The [Form Components fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) are for building your object's forms in a content page. If Liferay's form fragments don't satisfy your use case, create your own to achieve the desired design and functionality for your forms.
 
-Follow these steps to create form fragments via the Liferay UI:
+To create form fragments,
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ), expand *Design*, and go to *Fragments*.
 
-1. Click the *Plus* button ( ![Plus Button](../../../images/icon-plus.png) ) to create a *Fragment Set* for organizing your form fragments.  
+1. Click the *Plus* button ( ![Plus Button](../../../images/icon-plus.png) ) to create a *Fragment Set* for organizing your form fragments.
 
 1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ), select the *Form Fragment* type, and click *Next*.
 
    ![Select the Form Fragment type and click Next.](./creating-form-fragments/images/01.png)
 
-1. Enter a *name*
+1. Enter a name.
 
-1. Select the *field types* you want the fragment to allow.
+1. Select the field types to allow in the fragment.
 
    If you select CAPTCHA, you cannot select other field types. Otherwise, you can select any combination of fields.
 
-   ![Select the field types you want the fragment to support.](./creating-form-fragments/images/02.png)
+   ![Select the field types the fragment supports.](./creating-form-fragments/images/02.png)
 
 1. Click *Add*. This creates a draft fragment and redirects you to the fragment edit page.
 
-1. In the *Code* tab, add *HTML*, *CSS*, and *JavaScript* for your fragment.
+1. In the Code tab, add *HTML*, *CSS*, and *JavaScript* for your fragment.
 
    ![In the Code tab, add HTML, CSS, and JavaScript for your fragment.](./creating-form-fragments/images/03.png)
 
-1. (Optional) In the *Configuration* tab, use JSON to configure the fragment and add options to it.
+1. (Optional) In the Configuration tab, use JSON to configure the fragment and add options to it.
 
    ![In the Configuration tab, use JSON to configure the fragment and add options to it](./creating-form-fragments/images/04.png)
 
 1. Click *Publish*.
 
-You can now use your form fragment to build forms in content pages. See [Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md) for more information.
+Now use your form fragment to build forms in content pages. See [Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md) for more information.
 
-If you are using the Fragments Toolkit, you can select the fragment type when running `yarn run add-fragment`.
+If using the Fragments Toolkit, you can select the fragment type when running `yarn run add-fragment`.
 
 ![Select the fragment type when using the Fragments Toolkit.](./creating-form-fragments/images/05.png)
 
-To specify which field types the fragment supports, you must add the `fieldTypes` property to `typeOptions` in the `fragment.json`. Enter the desired field types as an array, for example:
+To specify the supported field types, add the `fieldTypes` property to `typeOptions` in the `fragment.json`. Enter the field types as an array:
 
 ```json
 {
@@ -57,11 +57,11 @@ To specify which field types the fragment supports, you must add the `fieldTypes
 }
 ```
 
-The rest of fragment creation follows the same process as creating a basic fragment. See [Using the Fragments Toolkit](./using-the-fragments-toolkit.md) for more information about creating and deploying basic fragments.
+After that, follow the same process as when creating a basic fragment. See [Using the Fragments Toolkit](./using-the-fragments-toolkit.md) for more information about creating and deploying basic fragments.
 
 ## Using the `input` Variable with Form Fragments
 
-Form fragments include the `input` variable for use with each fragment's JavaScript and FreeMarker code. This variable contains the necessary properties for configuring the fragment.
+Form fragments include the `input` variable for use with each fragment's JavaScript and FreeMarker code. This variable contains the properties for configuring the fragment.
 
 ## Input Variable Properties Reference
 
@@ -72,7 +72,7 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 | `required` | `boolean` | Whether the input is required. |
 | `value` | `string` | Field's value. |
 | `label` | `string` | Input's label. |
-| `showLabel` | `string` | Whether the label is visible to users. |
+| `showLabel` | `boolean` | Whether the label is visible to users. |
 | `errorMessage` | `string` | Form submission errors. |
 | `helpText` | `string` | UI help message for the form field. If undefined, this property is empty. |
 | `showHelpText` | `boolean` | Whether the help text is visible to users. |
@@ -82,8 +82,8 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `allowedFileExtensions` | `string` | UI text indicating allowed file extensions. |
-| `maxFileSize` | `number` | Maximum upload size in megabytes. |
+| `allowedFileExtensions` | `string` | Allowed file extensions. If Show Supported File Info is enabled, the allowed extensions are displayed in the field's help text. |
+| `maxFileSize` | `number` | Maximum upload size in megabytes. If Show Supported File Info is enabled, the maximum allowed size is displayed in the field's help text. |
 | `selectFromDocumentLibrary` | `boolean` | Whether users can select files from the document library. This is set in the object's [attachment field](../../../building-applications/objects/creating-and-managing-objects/fields.md). |
 | `selectFromDocumentLibraryURL` | `string` or `undefined` | If `selectFromDocumentLibrary` is true, this property contains the URL for rendering the corresponding `ItemSelector`. |
 
@@ -94,7 +94,7 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 | `dataType` | `integer` or `decimal` | Whether to allow integer or decimal numbers. |
 | `max` | `number` or `undefined` | Maximum number allowed. |
 | `min` | `number` or `undefined` | Minimum number allowed. |
-| `step` | `string` or `undefined` | String value that can be used with the HTML input "step" attribute to indicate the maximum precision that is allowed. |
+| `step` | `string` or `undefined` | String value that can be used with the HTML input "step" attribute to indicate the maximum allowed precision. |
 
 ### Attributes for `relationship` Input
 
@@ -102,7 +102,7 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 | :--- | :--- | :--- |
 | `relationshipLabelFieldName` | `string` | Field name of the related object used as the label. |
 | `relationshipValueFieldName` | `string` | Field name of the related object used as the value. |
-| `relationshipURL` | `string` | URL used to fetch options from the API. The API response uses Liferay's headless list format, including pagination. You can pass additional parameters to query the response. |
+| `relationshipURL` | `string` | URL used to fetch options from the API. The API response uses Liferay's headless list format, including pagination. Pass additional parameters to query the response. |
 
 ### Attributes for `select` Input
 

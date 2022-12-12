@@ -18,13 +18,13 @@ configuring-fragments/fragment-sub-elements-reference.md
 configuring-fragments/localizing-fragment-configuration-fields.md
 ```
 
-Liferay provides configuration options for fragments and their sub-elements. Available options can vary, though some are common to all. To view available configuration options, begin editing a page or template and open the *Browser* panel (![Browser](../../../../images/icon-hierarchy.png)) in the sidebar menu. Then, click the fragment or sub-element you want to configure. Available configuration options are grouped into three tabs: General, Styles, and Advanced.
+You can configure fragments and their sub-elements. Available options can vary, though some are common to all. To view available configuration options, begin editing a page or template and open the *Browser* panel (![Browser](../../../../images/icon-hierarchy.png)) in the sidebar menu. Then, click the fragment or sub-element to configure. Available configuration options are grouped into three tabs: General, Styles, and Advanced.
 
 ![Available configuration options are grouped into three tabs.](./configuring-fragments/images/01.png)
 
-Some of these configurations are scoped to the specific viewport where they're made. This means you can configure fragments for specific devices to ensure page content is displayed in the most suitable way. See [Building a Responsive Site](../../../optimizing-sites/building-a-responsive-site.md) for more information.
+Some configurations are scoped to the specific viewport where they're made, so you can configure fragments for specific devices to ensure page content is displayed in the most suitable way. See [Building a Responsive Site](../../../optimizing-sites/building-a-responsive-site.md) for more information.
 
-To better serve your global users, you can also localize some fragment configuration fields. See [Localizing Fragment Configuration Fields](./configuring-fragments/localizing-fragment-configuration-fields.md) for more information.
+You can localize some fragment configuration fields. See [Localizing Fragment Configuration Fields](./configuring-fragments/localizing-fragment-configuration-fields.md) for more information.
 
 ## General
 
@@ -32,7 +32,7 @@ The General tab includes both standard configuration options (e.g., visibility a
 
 ## Styles
 
-The Styles tab includes standard options for configuring a fragment's style. This includes a fragment's dimensions, background, borders, and more. See [Configuring Fragment Styles](./configuring-fragments/styles-reference.md) for more information on available style configurations.
+The Styles tab includes standard options for configuring a fragment's style, including a fragment's dimensions, background, borders, and more. See [Configuring Fragment Styles](./configuring-fragments/styles-reference.md) for more information on available style configurations.
 
 ## Advanced
 

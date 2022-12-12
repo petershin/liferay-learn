@@ -1,24 +1,20 @@
 # Styles Reference
 
-Liferay page fragments include convenient style settings so you can configure their look and feel via the Liferay UI. Many of these options correspond to CSS classes and have defined tokens supported by Style Books. See [General Settings Reference](./general-settings-reference.md) and [Fragment Sub-Elements Reference](./fragment-sub-elements-reference.md) for additional fragment configuration options.
+All fragments have a Styles settings section except for the Collection Display fragment. Use the style settings to configure your fragments' look and feel. Many of these options correspond to CSS classes and have defined tokens supported by style books. See [General Settings Reference](./general-settings-reference.md) and [Fragment Sub-Elements Reference](./fragment-sub-elements-reference.md) for additional fragment configuration options.
 
 ```{note}
-By default, Liferay applies style configurations to the entire fragment. This means elements contained in the fragment inherit these changes if their CSS allows it; otherwise, the inner elements are ignored. If desired, you can create and configure custom fragments to only apply style changes to some inner elements. See [Applying Styles to Fragments](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information.
+By default, style configurations apply to the entire fragment, so all elements in the fragment inherit these changes if their CSS allows it; otherwise, the inner elements are ignored. You can configure custom fragments to only apply style changes to some inner elements. See [Applying Styles to Fragments](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information.
 ```
 
-Follow these steps to access a fragment's *Styles* menu:
+To access a fragment's Styles menu,
 
 1. Begin editing a page or template that supports fragments.
 
-1. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired *fragment*.
+1. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired fragment.
 
-   Alternatively, you can click the desired fragment in the page or template to open this menu.
+   Alternatively, click the desired fragment in the page or template.
 
 1. Click the *Styles* tab in the Page Elements side menu.
-
-   ```{note}
-   All fragments have Styles settings except for the Collection Display fragment.
-   ```
 
 ![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
 
@@ -32,11 +28,11 @@ For Liferay 7.4 U31+/GA31+, you can configure fragment styles for individual vie
 
 {bdg-secondary}`For Liferay 7.4 U47+/GA47+`
 
-Click the button for the spacing dimension you want to configure. The inner buttons determine the fragment's *padding*, while the outer buttons determine its *margins*. In this context, *padding* refers to the space between a fragment's frame and its content, while *margin* refers to the space between the fragment's frame and the end of its surrounding context.
+Click the button for the spacing dimension to configure. The inner buttons determine the fragment's padding, while the outer buttons determine its margins. In this context, *padding* refers to the space between a fragment's frame and its content, while *margin* refers to the space between the fragment's frame and the end of its surrounding context.
 
 ![When you click any of the regions, choose the desired spacing from the list of sizes shown.](./styles-reference/images/02.png)
 
-Clicking one of the padding or margin buttons opens a menu where you can select from existing tokens or enter a custom value. The predefined tokens come from the numbered *Spacer* fields in the style book's [Spacing](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) category. If you enter a custom value, you can select the unit used for it (e.g., `px`, `rem`). During configuration, you can also click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ) to restore the field to its initial value.
+Clicking the padding or margin buttons opens a menu where you can select from existing tokens or enter a custom value. The predefined tokens come from the numbered Spacer fields in the style book's [Spacing](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) category. If you enter a custom value, select its unit (e.g., `px`, `rem`). To restore the field to its initial value, click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ).
 
 ```{note}
 For 7.4 U46/GA46 and earlier versions, if your style book uses a unit other than pixel to define spacing values (e.g., `rem`), they are converted to pixels during fragment configuration.
@@ -80,7 +76,7 @@ Determine the width, radius, and color of the fragment's border.
 
 | Field | Description |
 | :--- | :--- |
-| Border Width ( ![Border Width](../../../../../images/icon-border-width.png) ) | Sets the width of an element's four borders. Click the *Units* button ( ![Units](../../../../../images/icon-code.png) ) to select the desired unit for the border width (e.g., `px`, `rem`). Click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ) to revert the field to its initial value. |
+| Border Width ( ![Border Width](../../../../../images/icon-border-width.png) ) | Sets the width of an element's four borders. Click the *Units* button ( ![Units](../../../../../images/icon-code.png) ) to select border width unit (e.g., `px`, `rem`). Click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ) to revert the field to its initial value. |
 | Border Radius ( ![Border Radius](../../../../../images/icon-corner-radius.png) ) | Defines the radius of the element's corners and allows you to add rounded corners. |
 | Border Color ( ![Border Color](../../../../../images/icon-color-circle.png) ) | Sets the color of an element's four borders. The available color palette can be configured by the fragment developer. See [Fragment Configuration Types Reference](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) for more information. |
 
@@ -93,13 +89,13 @@ Set the fragment's opacity and determine whether it has a shadow.
 | Field | Description |
 | :--- | :--- |
 | Opacity | Sets the transparency level; 100 is default and 0 is transparent. |
-| Shadow ( ![Shadow](../../../../../images/icon-shadow.png) ) | Adds a shadow around the box; can choose from a small, medium, or large shadow. |
+| Shadow ( ![Shadow](../../../../../images/icon-shadow.png) ) | Adds a shadow around the box. Choose from a small, medium, or large shadow. |
 
 ![Set the fragment's opacity and determine whether it has a shadow.](./styles-reference/images/06.png)
 
 ## Liferay 7.4 U20 and Older
 
-For 7.4 U20/GA20 and earlier versions, spacing configurations are divided into the *Margin* and *Padding* sections.
+For 7.4 U20/GA20 and earlier versions, spacing configurations are divided into the Margin and Padding sections.
 
 ### Margin
 

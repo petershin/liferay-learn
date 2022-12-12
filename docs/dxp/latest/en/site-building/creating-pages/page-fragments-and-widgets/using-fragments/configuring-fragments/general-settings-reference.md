@@ -1,20 +1,16 @@
 # General Settings Reference
 
-Nearly all fragments include General settings. Some of these options are standard (e.g., visibility and frame), while others are unique to each fragment. The following reference only includes fragments with General settings.
+All fragments have General settings except for the HTML, Paragraph, Separator, and Social fragments. Some of these options are standard (e.g., visibility and frame), while others are unique to each fragment. The following reference only includes fragments with General settings.
 
-Follow these steps to access a fragment's *General* menu:
+Follow these steps to access a fragment's General settings:
 
 1. Begin editing a page or template that supports fragments.
 
-1. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired *fragment*.
+1. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired fragment.
 
-   Alternatively, you can click the desired fragment in the page or template to open this menu.
+   Alternatively, click the desired fragment in the page or template.
 
 1. Click the *General* tab in the Page Elements side panel.
-
-   ```{note}
-   All fragments have General settings except for the HTML, Paragraph, Separator, and Social fragments.
-   ```
 
 ![Select a fragment to access its General settings in the Page Element side panel.](./general-settings-reference/images/01.png)
 
@@ -39,18 +35,18 @@ Follow these steps to access a fragment's *General* menu:
 
 | Field | Description |
 | :--- | :--- |
-| Link | Determine if the Container links to a *URL*, *Page*, or *Mapped URL*; this setting determines which of the following fields are available. |
+| Link | Determine if the Container links to a URL, Page, or Mapped URL; this setting determines which of the following fields are available. |
 | URL (*for URL*) | Enter a localizable URL for the Container. To set a URL for other languages, first switch the language for the page or template via the editing bar. Then, enter the desired URL. |
 | Page (*for Page*) | Select a Liferay Page for the Container. |
 | Item (*for Mapped URL*) | Select an item from Documents and Media, Web Content, Blogs, or Categories. The selected item provides fields for mapping. |
 | Field (*for Mapped URL*) | Select the URL field you want to map to the Container. Selecting a valid field automatically populates the *URL* field. |
 | URL (*for Mapped URL*) | This field is auto-populated with the selected *Field* URL. |
 | Open in New Tab | Determine whether the link is opened in a new tab. |
-| Content Display | Determine whether the Container's content is displayed in a *Block*, *Flex Row*, or *Flex Column*; the flex options have additional configurations. |
-| Flex Wrap (*for Flex Row or Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Configure wrapping for flex rows and columns: *No Wrap*, *Wrap*, or *Wrap Reverse*. |
-| Align Items (*for Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the column are aligned: *Start*, *Center*, *End*, *Stretch*, or *Baseline*.  |
-| Justify Content (*for Flex Row*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the row are justified: *Start*, *Center*, *End*, *Between*, or *Around*. |
-| Container Width | Determine whether the Container uses a *Fluid* or *Fixed Width*. |
+| Content Display | Determine whether the Container's content is displayed in a Block, Flex Row, or Flex Column; the flex options have additional configurations. |
+| Flex Wrap (*for Flex Row or Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Configure wrapping for flex rows and columns: No Wrap, Wrap, or Wrap Reverse. |
+| Align Items (*for Flex Column*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the column are aligned: Start, Center, End, Stretch, or Baseline.  |
+| Justify Content (*for Flex Row*) {bdg-secondary}`7.4 U19+/GA19+` | Determine how elements in the row are justified: Start, Center, End, Between, or Around. |
+| Container Width | Determine whether the Container uses a Fluid or Fixed Width. |
 
 ## Grid Options
 
@@ -217,21 +213,21 @@ This fragment is only displayed when a filter is applied to the target collectio
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Form fragments include the following unique configuration options. To access them, you must first map the fragment to an object field.
+Form fragments include unique configuration options. To access them, you must map the fragment to an object field.
 
 ### Form Container
 
 | Field | Description |
 | :--- | :--- |
 | Content Type | Select a custom object. This maps the form container and its fragments to the selected object. You can only map a form container to one object at a time. |
-| Success Message | Determine whether the form submission success message is *embedded* in the current page or redirects users to a *Liferay page* or *external URL*. |
-| Success Text (*for Embedded*) | Enter a localizable success text for the embedded success message. |
-| Preview Success State (*for Embedded*) | Toggle the form container state to preview the embedded success message. |
-| Content Display | Determine whether the Container's content is displayed in a *Block*, *Flex Row*, or *Flex Column*; the flex options have additional configurations. |
-| Flex Wrap (*for Flex Row or Flex Column*) | Configure wrapping for flex rows and columns: *No Wrap*, *Wrap*, or *Wrap Reverse*. |
-| Align Items (*for Flex Column*) | Determine how elements in the column are aligned: *Start*, *Center*, *End*, *Stretch*, or *Baseline*.  |
-| Justify Content (*for Flex Row*) | Determine how elements in the row are justified: *Start*, *Center*, *End*, *Between*, or *Around*. |
-| Container Width | Determine whether the Container uses a *Fluid* or *Fixed Width*. |
+| Success Message | Determine whether the form submission success message is embedded in the current page or redirects users to a Liferay page or external URL. |
+| Success Text (*for Embedded*) | Enter a localizable success message. |
+| Preview Success State (*for Embedded*) | Preview the embedded success message. |
+| Content Display | Determine whether the Container's content is displayed in a Block, Flex Row, or Flex Column; the flex options have additional configurations. |
+| Flex Wrap (*for Flex Row or Flex Column*) | Configure wrapping for flex rows and columns: No Wrap, Wrap, or Wrap Reverse. |
+| Align Items (*for Flex Column*) | Determine how elements in the column are aligned: Start, Center, End, Stretch, or Baseline.  |
+| Justify Content (*for Flex Row*) | Determine how elements in the row are justified: Start, Center, End, Between, or Around. |
+| Container Width | Determine whether the Container uses a Fluid or Fixed Width. |
 
 ### Other Form Fragment Configurations
 

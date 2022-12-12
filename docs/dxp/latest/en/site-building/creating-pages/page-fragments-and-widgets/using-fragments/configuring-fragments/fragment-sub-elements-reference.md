@@ -1,6 +1,6 @@
 # Fragment Sub-Elements Reference
 
-In addition to [General](./general-settings-reference.md) and [Style](./styles-reference.md) settings, many fragments include sub-elements with their own configuration options. To access these options, begin editing a page or template ( ![Edit Icon](../../../../../images/icon-edit.png) ), click the desired *fragment*, and select one of its sub-elements in the Browser ( ![Browser Icon](../../../../../images/icon-hierarchy.png) ) sidebar menu.
+In addition to [General](./general-settings-reference.md) and [Style](./styles-reference.md) settings, many fragments include sub-elements with their own configuration options. To access these options, begin editing a page or template ( ![Edit Icon](../../../../../images/icon-edit.png) ), click the desired fragment, and select one of its sub-elements in the Browser ( ![Browser Icon](../../../../../images/icon-hierarchy.png) ) sidebar menu.
 
 ![Many fragments include sub-elements with their own configuration options.](./fragment-sub-elements-reference/images/01.png)
 
@@ -13,8 +13,6 @@ Available options depend on the sub-element's type and are organized into tabs: 
 | Link Element ( ![Link Icon](../../../../../images/icon-link.png) ) | &#10004; | | &#10004; |
 | HTML Element ( ![HTML Icon](../../../../../images/icon-code.png) ) | &#10004; | | |
 | Image Element ( ![Image Icon](../../../../../images/icon-picture.png) ) | | &#10004; | &#10004; |
-
-The following reference lists available options in each tab.
 
 ## Mapping Settings
 

@@ -2,27 +2,23 @@
 
 {bdg-secondary}`Available 7.4 U37+/GA37+`
 
-Most of Liferay's default fragments include advanced settings. With them, you can add custom CSS to a fragment, configure whether its contents are searchable, and more.
+All Liferay's default fragments include advanced settings except for the Collection Display fragment. Advanced settings can add custom CSS to a fragment, configure whether its contents are searchable, and more.
 
 ```{note}
-Configuring advanced settings for a fragment requires the *Update - Advanced Options* permission for the page.
+Configuring a framgent's advanced settings requires the *Update - Advanced Options* permission for the page.
 ```
 
-Follow these steps to access a fragment's advanced settings:
+To access a fragment's advanced settings,
 
 1. Begin editing a page or template that supports fragments.
 
-1. Open the *Browser* side panel (![Browser](../../../../../images/icon-hierarchy.png)), go to the *Page Elements* tab, and select the desired *fragment*.
+1. Open the *Browser* side panel (![Browser](../../../../../images/icon-hierarchy.png)), go to the *Page Elements* tab, and select the desired fragment.
 
-   Alternatively, you can click the desired fragment in the page or template to open this menu.
+   Alternatively, click the desired fragment in the page or template.
 
 1. Click the *Advanced* tab in the Page Elements side menu.
 
-   ```{note}
-   All default fragments have advanced settings except for the Collection Display fragment.
-   ```
-
-![Access a fragment's Advanced settings in the Page Elements side menu.](./advanced-settings-reference/images/01.png)
+![Access a fragment's advanced settings in the Page Elements side menu.](./advanced-settings-reference/images/01.png)
 
 ## Standard Advanced Settings
 
@@ -30,7 +26,7 @@ All default fragments with advanced settings have the following options.
 
 ### Hide from Site Search Results
 
-Determine whether to hide the fragment's content from search results in your site. Hiding fragment content can help reduce irrelevant and redundant search results. If the selected fragment contains child fragments, they inherit its configuration.
+Specify whether to hide the fragment's content from search results in your site. Hiding fragment content can reduce irrelevant and redundant search results. If the selected fragment contains child fragments, they inherit its configuration.
 
 ![Determine whether to hide the fragment's content from search results in your site.](./advanced-settings-reference/images/02.png)
 
@@ -58,7 +54,7 @@ Add custom CSS to fragments using the *Custom CSS* text box. By default, this te
 }
 ```
 
-When the page renders, `[$FRAGMENT_CLASS$]` is replaced with the fragment's back-end class name (e.g., `lfr-layout-structure-item-01d752e4-32e3-ed4a-9cd6-fcaf483d0c34`).
+When the page renders, `[$FRAGMENT_CLASS$]` is replaced with the fragment's class name (e.g., `lfr-layout-structure-item-01d752e4-32e3-ed4a-9cd6-fcaf483d0c34`).
 
 ```{tip}
 Click the *Expand* icon ( ![Expand](../../../../../images/icon-expand.png) ) to open a modal window and give yourself more room when editing the fragment's CSS.
@@ -76,7 +72,7 @@ You can also use variables in your custom CSS that come from the [style book](..
 
 ### CSS Classes
 
-Use the *CSS Classes* field to add classes for use in the [Custom CSS](#custom-css) field. When adding multiple classes, separate each class with a space, comma, or line break. You can use these classes for other fragments on the same page. Suggestions for existing classes appear while you type.
+Use the *CSS Classes* field to add classes for use in [Custom CSS](#custom-css). When adding multiple classes, separate each with a space, comma, or line break. You can use these classes for other fragments on the same page. Suggestions for existing classes appear while you type.
 
 ![Entering custom CSS classes in this field makes them appear as suggestions in the advanced settings for other fragments on the same page.](./advanced-settings-reference/images/04.png)
 
@@ -86,11 +82,11 @@ Only CSS classes that you have added yourself appear as suggestions in the CSS C
 
 ## Advanced Container Settings
 
-In addition to the [standard advanced settings](#standard-advanced-settings), container fragments include the following options.
+Container fragments include some advanced settings in addition to the [standard ones](#standard-advanced-settings).
 
 ### HTML Tag
 
-Choose the HTML tag generated for the container fragment: `div`, `header`, `nav`, `section`, `article`, `main`, `aside`, or `footer`. These tags can help web scrapers, browsers, and site renderers to more easily find and retrieve what kind of content is on the page. The selected tag only applies to the selected container itself and does not apply to nested fragments or content.
+Choose the HTML tag generated for the container fragment: `div`, `header`, `nav`, `section`, `article`, `main`, `aside`, or `footer`. These tags help web scrapers, browsers, and site renderers more easily find and retrieve what kind of content is on the page. The selected tag only applies to the selected container itself and does not apply to nested fragments or content.
 
 ![You can choose which HTML tag is used for container fragments in the Advanced Settings tab.](./advanced-settings-reference/images/05.png)
 
@@ -98,7 +94,7 @@ Choose the HTML tag generated for the container fragment: `div`, `header`, `nav`
 
 {bdg-secondary}`Available 7.4 U37+/GA37+`
 
-By default, Liferay automatically renders all containers in a page. However, you can set the container's [`content-visibility`](https://drafts.csswg.org/css-contain/#propdef-content-visibility) property to `auto`, so its elements are only rendered when needed. This can improve the page's load performance.
+By default, Liferay automatically renders all containers in a page. However, setting the container's [`content-visibility`](https://drafts.csswg.org/css-contain/#propdef-content-visibility) property to `auto` causes elements to render only when needed. This can improve the page's load performance.
 
 ![Improve page load performance by setting the container's content-visibility to auto.](./advanced-settings-reference/images/06.png)
 

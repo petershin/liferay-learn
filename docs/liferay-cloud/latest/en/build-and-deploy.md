@@ -30,11 +30,11 @@ build-and-deploy/ignoring-files-and-folders.md
 
 ## Deploying to Liferay Cloud
 
-- [Understanding Deployment Types](./build-and-deploy/understanding-deployment-types)
-- [Understanding Deployment Strategies](./build-and-deploy/understanding-deployment-strategies)
-- [Deploying Changes via the Liferay Cloud Console](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
-- [Deploying Changes via the CLI Tool](./build-and-deploy/deploying-changes-via-the-cli-tool)
-- [Automatically Deploying CI Service Builds](./build-and-deploy/automatically-deploying-ci-service-builds)
-- [Restarting Jenkins Stages](./build-and-deploy/restarting-jenkins-stages)
-- [Configuring Persistent File Storage Volumes](./build-and-deploy/configuring-persistent-file-storage-volumes)
-- [Ignoring Files and Folders](./build-and-deploy/ignoring-files-and-folders)
+- [Understanding Deployment Types](./build-and-deploy/understanding-deployment-types.md)
+- [Understanding Deployment Strategies](./build-and-deploy/understanding-deployment-strategies.md)
+- [Deploying Changes via the Liferay Cloud Console](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
+- [Deploying Changes via the CLI Tool](./build-and-deploy/deploying-changes-via-the-cli-tool.md)
+- [Automatically Deploying CI Service Builds](./build-and-deploy/automatically-deploying-ci-service-builds.md)
+- [Restarting Jenkins Stages](./build-and-deploy/restarting-jenkins-stages.md)
+- [Configuring Persistent File Storage Volumes](./build-and-deploy/configuring-persistent-file-storage-volumes.md)
+- [Ignoring Files and Folders](./build-and-deploy/ignoring-files-and-folders.md)

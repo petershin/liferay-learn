@@ -123,14 +123,15 @@ To configure the use case above,
    - Click the *plus icon* at the top of the page (![Plus](../../../images/icon-plus.png)).
    - Drag a *Category Facet* widget directly above or below the existing one.
    - Open the *Widget Configuration* screen (![App Options](../../../images/icon-app-options.png)).
+   - Open the Display Template selector and choose _Vocabulary Layout_.
    - Change the Category Parameter Name to _foocategories_.
    - Click the _Select Vocabularies_ radio button. Expand _Global_ and select _Foo_.
    - Click _Save_.
 
-1. Using a similar procedure, configure the original Category Facet widget to display only the Quality vocabulary's categories. Since you already changed the new Category Facet widget's Category Parameter Name, you can leave the default value in the existing widget.
+1. Using a similar procedure, configure the original Category Facet widget to display only the Quality vocabulary's categories and use the Vocabulary Layout template. Since you already changed the new Category Facet widget's Category Parameter Name, you can leave the default value in the existing widget.
 
 1. Refresh the page. Selecting the Brake System and Suspension categories in the Category Facet widget showing the Foo vocabulary ensures that the displayed products match the category of Brake System OR Suspension.
 
    Selecting Standard from the Category Facet showing the Quality categories narrows the results to only those products categorized as Brake System OR Suspension AND Standard.
 
-<!-- Animated GIF? -->
+![Configure hierarchic filtering in the Category Facet.](./category-facet/images/10.png)

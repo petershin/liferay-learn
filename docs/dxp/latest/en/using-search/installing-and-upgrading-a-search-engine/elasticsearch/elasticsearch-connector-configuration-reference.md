@@ -39,7 +39,7 @@ Deploy configuration files to `[Liferay_Home]/osgi/configs` and a listener auto-
 | Username | <details><summary>`username="elastic"`</summary>Set the user name for authenticating to Elasticsearch if Authentication Enabled is checked.</details> | Liferay 7.3+ |
 | Password | <details><summary>`password=""`</summary>Set the password for authenticating to Elasticsearch if Authentication Enabled is checked.</details> | Liferay 7.3+ |
 | Http SSL Enabled | <details><summary>`httpSSLEnabled="false"`</summary>Enable or disable TLS/SSL.</details> | Liferay 7.3+ |
-| Truststore Type | <details><summary>`truststoreType="pkcs12"`</summary>Set the truststore type if HTTP SSL Enabled is checked.</details> | Liferay 7.3+ |
+| Truststore Type | <details><summary>`truststoreType="pkcs12"`</summary>If HTTP SSL is enabled, set the truststore type. Choose a [format supported by your JDK version](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) (e.g., `jks` or `pkcs12`).</details> | Liferay 7.3+ |
 | Truststore Path | <details><summary>`truststorePath="/path/to/localhost.p12"`</summary>Set the path to the truststore file if HTTP SSL Enabled is checked.</details> | Liferay 7.3+ |
 | Truststore Password | <details><summary>`truststorePassword=""`</summary>Set the password to the truststore if HTTP SSL Enabled is checked.</details> | Liferay 7.3+ |
 | | <a href="#elasticsearch-connections-settings" id="elasticsearch-connections-settings">ELASTICSEARCH CONNECTIONS SETTINGS</a> |

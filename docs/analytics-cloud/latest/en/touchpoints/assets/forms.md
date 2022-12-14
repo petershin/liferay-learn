@@ -76,14 +76,6 @@ View a stacked bar graph of the Page's submissions by operating system (grouped 
 
 Click Web Browser to see a donut chart displaying up to the top eight web browsers over the selected time period. If applicable, remaining web browsers are aggregated in the ninth donut segment.
 
-## Form Abandonment
-
-Form Abandonment chart displays a bar graph. For the first row Step 1, the blue bar represents the portion of your visitors that abandoned the form without any interaction. Note that if your form has multiple steps there is a new row for each step followed by the input fields in that step.
-
-![Form Abandonment charts help to breakdown user interactions with specific elements on a form.](forms/images/06.png)
-
-For each input field, the blue bar represents the portion of visitors that abandoned the form at that particular field. This is useful information to have to diagnose potential issues with your forms. For example, in the image above, no visitor abandoned the form when entering their first and last name. But some abandoned the form when entering their email. With your own forms, use this analytics data to remove any input fields that seem to cause frequent form abandonment.
-
 ## Asset Appears On
 
 The Asset Appears On table includes a Page Name and URL. Like any Page data in Analytics Cloud, only Pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual Page with the Asset on it. Instead, it leads to the Page Analytics view of the Page. From there you can click the URL to the actual Page.

@@ -63,7 +63,7 @@ Analytics Cloud shows you these things about your assets:
 
 * For blogs, number of views, reading time, comments, ratings
 * For documents and media, number of downloads, previews, comments, ratings
-* For forms, number of submissions, views, abandonment percentage, completion times
+* For forms, number of submissions, views, completion times
 * For other web content, number of views
 
 ## Analytics About the People Interacting With Your Site

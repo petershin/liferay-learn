@@ -1,6 +1,6 @@
 # Changing Your Site's Appearance
 
-Liferay includes multiple feature for customizing your site's appearance, so you can create engaging and cohesive user experiences. Your site's favicon and theme are two of the first elements you may want to change. Themes set a default look and feel for your site, while the favicon is an icon that identifies your site in the user's browser tab.
+Liferay has many ways to customize your site's appearance. Your site's favicon and theme are two of the first elements you may want to change. Themes set a default look and feel for your site, while the favicon is an icon that identifies your site in the user's browser tab.
 
 ## Changing Your Site's Favicon
 
@@ -13,11 +13,11 @@ Then, follow these steps:
 
 1. Click the *Actions* button (![Action Button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
 
-    ![Open the Pages application, click the Actions button in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
+   ![Open the Pages application, click the Actions button in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
 1. Under Favicon, click *Change Favicon*.
 
-    ![Click the Change Favicon button.](./changing-your-sites-appearance/images/02.png)
+   ![Click the Change Favicon button.](./changing-your-sites-appearance/images/02.png)
 
 1. Select or upload an image.
 
@@ -27,7 +27,7 @@ Your site uses the chosen image for its favicon.
 
 ## Changing Your Site's Theme
 
-By default, Liferay instances include the *Classic* theme, but you can deploy and use custom themes.
+By default, Liferay instances use the Classic theme, but you can deploy and use custom themes.
 
 ### Deploy a New Theme
 
@@ -42,7 +42,7 @@ By default, Liferay instances include the *Classic* theme, but you can deploy an
     <!-- ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq) -->
 
     ```bash
-    docker cp liferay-5b2v-theme.war docker-container:path-to-deploy-folder
+    docker cp liferay-5b2v-theme.war docker-container:[path-to-deploy-folder]
     ```
 
 This loads the sample theme into your DXP instance. You can check your console for the following message to confirm the theme successfully deployed:
@@ -59,13 +59,13 @@ This loads the sample theme into your DXP instance. You can check your console f
 
 1. Click the *Actions* button (![Action Button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
 
-    ![Open the Pages screen, click the Actions button in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
+   ![Open the Pages screen, click the Actions button in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
 1. Expand the *Look And Feel* section and click *Change Current Theme*:
 
-    ![Click Change Current Theme to select a new theme.](./changing-your-sites-appearance/images/03.png)
+   ![Click Change Current Theme to select a new theme.](./changing-your-sites-appearance/images/03.png)
 
-1. Select the sample theme, *Acme Sample Blue Theme*.
+1. Select the sample theme: *Acme Sample Blue Theme*.
 
 1. Click *Save*.
 

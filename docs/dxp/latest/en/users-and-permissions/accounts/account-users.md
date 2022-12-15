@@ -2,7 +2,7 @@
 
 {bdg-secondary}`For Liferay 7.4 U55+/GA55+`
 
-Once you've created an account, you can manually associate existing users with it. Alternatively, you can create and associate users with an account simultaneously using the Account Users application. Here you can also manage all users associated with accounts.
+Once you've created an account, you can associate existing users with it manually. Alternatively, you can create and associate users with an account simultaneously using the Account Users application. Here you can also manage all users associated with accounts.
 
 ```{note}
 For Liferay 7.4 U20/GA20 and earlier versions, you can only create users for accounts via the Account Users application. You cannot associate users created in the Users and Organizations application with accounts.
@@ -12,7 +12,7 @@ For Liferay 7.4 U20/GA20 and earlier versions, you can only create users for acc
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Account Users*.
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
 1. Select an *account* to associate with user.
 
@@ -40,29 +40,25 @@ To set user passwords manually,
 
 ### Associating an Existing User to a Business Account
 
-To associate an existing user to a business account,
-
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Accounts*.
 
-1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) of the account you want to edit and click *Manage Users*.
+1. Pick an account to edit and click its *Actions* button (![Actions Button](../../images/icon-actions.png)) &rarr; *Manage Users*.
 
-1. Click the *Add* icon and select a user to assign to the account.
+1. Click *Add* and select a user to assign to the account.
 
 ### Associating an Existing User to a Personal Account
 
-To associate an existing user to a personal account,
-
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Accounts*.
 
-1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) of the account you want to edit and click *Edit*.
+1. Pick an account to edit and click its *Actions* button (![Actions Button](../../images/icon-actions.png)) &rarr; *Edit*.
 
-1. Under the User section, click the *Assign* button and select a user. Click the *Choose* button.
+1. Under the User section, click *Assign* and select a user. Click *Choose*.
 
 ## Inviting a New User by Email
 
 {bdg-secondary}`Available 7.4 U55+/GA55+`
 
-You can invite users to an account by email. Liferay sends an automated invitation email to the person you specify to create a user account and be associated with an account.
+You can invite users to an account by email. Liferay sends an automated invitation email to the person you specify to create a new user and be associated with an account.
 
 1. Make sure you have already [configured mail](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) for your Liferay instance.
 
@@ -70,27 +66,27 @@ You can invite users to an account by email. Liferay sends an automated invitati
 
 1. Select the *account* you want to invite users to and go to the *Users* tab.
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)) and select *Invite Users*.
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *Invite Users*.
 
-1. Input the email address of the person you want to invite and press enter. If desired, you can add multiple addresses.
+1. Enter the email address of the person you want to invite and press enter. If desired, you can add multiple addresses.
 
-1. (Optional) Input and select the account roles you want to assign to the user (e.g., Account Administrator, Buyer, Order Manager, etc.).
+1. (Optional) Enter and select the account roles you want to assign to the user (e.g., Account Administrator, Buyer, Order Manager, etc.).
 
    ```{tip}
-   Liferay applies selected roles are to all emails in the invite entry. If desired, you can click *Add Entry* to create additional invite entries for assigning different roles to emails.
+   Liferay applies selected roles to all emails in the invite entry. If desired, you can click *Add Entry* to create additional invite entries for assigning different roles to emails.
    ```
 
 1. Click *Invite*.
 
    ![Input an email address and role for the new user.](./account-users/images/02.png)
 
-Liferay sends an invite to the included email addresses. Each recipient can click *Create Account* in the email to register for a new user account on the Liferay instance. Upon creation, the user is associated with the account and has the assigned account role.
+Liferay sends an invitation to the included email addresses. Each recipient can click Create Account in the email to register for a new user on the Liferay instance. Upon creation, the user is associated with the account and has the assigned account role.
 
 ![The person receives an email invitation to create a new user account.](./account-users/images/03.png)
 
 ## Editing an Account User
 
-1. In Account Users, click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired user.
+1. In Account Users, pick a user and click its *Actions* button (![Actions Button](../../images/icon-actions.png)). 
 
 1. Click *Edit*.
 
@@ -118,11 +114,11 @@ Deleting an account user is a two-step process that involves deactivating the us
 
 ### Deactivating an Account User
 
-Deactivating prevents the account user from logging in, but still preserves the user's data and information.
+Deactivating prevents the account user from logging in, but preserves the user's data and information.
 
-1. In Account Users, click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired user.
+1. In Account Users, pick a user and click its *Actions* button (![Actions Button](../../images/icon-actions.png)). 
 
-1. Click *Deactivate* and click the *OK* button to confirm your change.
+1. Click *Deactivate* and click *OK* to confirm your change.
 
 The account user is now deactivated.
 

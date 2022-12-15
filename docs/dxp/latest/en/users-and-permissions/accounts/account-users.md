@@ -1,95 +1,105 @@
 # Account Users
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`For Liferay 7.4 U55+/GA55+`
+
+Once you've created an account, you can manually associate existing users with it. Alternatively, you can create and associate users with an account simultaneously using the Account Users application. Here you can also manage all users associated with accounts.
 
 ```{note}
-The inviting a new user by email functionality is in Liferay DXP 7.4 U55/Liferay Portal 7.4 GA55
+For Liferay 7.4 U20/GA20 and earlier versions, you can only create users for accounts via the Account Users application. You cannot associate users created in the Users and Organizations application with accounts.
 ```
 
-Account Users are User accounts that are associated with a Business Account or a Person Account.
+## Adding Account Users
 
-## Adding a New Account User
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Account Users*.
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Account Users*.
+1. Click the *Add* button (![Add Button](../../images/icon-add.png)).
 
-1. Click the _Add_ icon (![Add icon](../../images/icon-add.png)) to create a new Account User. 
+1. Select an *account* to associate with user.
 
-1. Select the Account to associate with User. 
-
-1. Fill in the necessary information for this new User.
+1. Fill in the necessary information for this new user.
 
    ![Fill in the account user's information.](./account-users/images/01.png)
 
-   Click the *Save* button to save the new account user.
-
-```{note}
-If you are using a version before Liferay DXP 7.4 U21 or Liferay Portal 7.4 GA21, Users for Accounts can only be created within this *Account Users* interface. A regular DXP User that is created in the *Users and Organizations* interface cannot be associated with any Accounts. However, an Account User can be managed and edited from *Users and Organizations* after creation.
-```
+1. Click *Save*.
 
 ### Setting a Password for an Account User
 
-When you create an Account User, Liferay DXP generates a password for the User, using the [mail server](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) to send an email message with the User's new password.
+When you create a user account, Liferay generates a password and sends it to the user via email using the configured [mail server](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md).
 
-If you haven't set up a mail server, set a password manually for the User.
+To set user passwords manually,
 
-1. In Account Users, click on the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the Account User you want to edit.
+1. In Account Users, click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired user and select *Edit*.
 
-1. Under the General tab, click *Password*. Set a password and click *Save*.
+1. In the General tab, click *Password*.
+
+1. Enter a password.
+
+1. Determine whether to require password reset.
+
+1. Click *Save*.
 
 ### Associating an Existing User to a Business Account
 
-To associate an existing user to a Business Account,
+To associate an existing user to a business account,
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Accounts*.
 
-1. Click the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the account you want to edit and click _Manage Users_. 
+1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) of the account you want to edit and click *Manage Users*.
 
-1. Click the _Add_ icon and select a user to assign to the account. 
+1. Click the *Add* icon and select a user to assign to the account.
 
 ### Associating an Existing User to a Personal Account
 
-To associate an existing user to a Personal Account,
+To associate an existing user to a personal account,
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Accounts*.
 
-1. Click the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the account you want to edit and click _Edit_. 
+1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) of the account you want to edit and click *Edit*.
 
-1. Under the User section, click the _Assign_ button and select a user. Click the _Choose_ button.
+1. Under the User section, click the *Assign* button and select a user. Click the *Choose* button.
 
 ## Inviting a New User by Email
 
-You can invite a new user to an account by email. Liferay will send an automated invitation email to the person you specify to create a user account and be associated with an account.
+{bdg-secondary}`Available 7.4 U55+/GA55+`
 
-1. Make sure you have already [Configured Mail](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) for your Liferay instance.
+You can invite users to an account by email. Liferay sends an automated invitation email to the person you specify to create a user account and be associated with an account.
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*. 
+1. Make sure you have already [configured mail](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) for your Liferay instance.
 
-1. Select the account you want to invite a new user to. Click the *Users* tab. 
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Accounts*.
 
-1. Click the _Add_ icon (![Add icon](../../images/icon-add.png)) and click *Invite Users*. A new window will pop open.
+1. Select the *account* you want to invite users to and go to the *Users* tab.
 
-1. Input the email address of the person you want to invite. Make sure to type a comma or press enter to input the email address. Input a role for this new user (e.g. Account Administrator, Buyer, Order Manager, etc.). Click *Invite*.
+1. Click the *Add* button (![Add Button](../../images/icon-add.png)) and select *Invite Users*.
+
+1. Input the email address of the person you want to invite and press enter. If desired, you can add multiple addresses.
+
+1. (Optional) Input and select the account roles you want to assign to the user (e.g., Account Administrator, Buyer, Order Manager, etc.).
+
+   ```{tip}
+   Liferay applies selected roles are to all emails in the invite entry. If desired, you can click *Add Entry* to create additional invite entries for assigning different roles to emails.
+   ```
+
+1. Click *Invite*.
 
    ![Input an email address and role for the new user.](./account-users/images/02.png)
 
-1. An email invitation is sent. The person can now click *Create Account* in the email to register for a new user account on the Liferay instance.
+Liferay sends an invite to the included email addresses. Each recipient can click *Create Account* in the email to register for a new user account on the Liferay instance. Upon creation, the user is associated with the account and has the assigned account role.
 
-   ![The person receives an email invitation to create a new user account.](./account-users/images/03.png)
-
-1. Upon user account creation, the new user will be associated with the account and have the assigned account role.
+![The person receives an email invitation to create a new user account.](./account-users/images/03.png)
 
 ## Editing an Account User
 
-1. In Account Users, click the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the account user you want to edit.
+1. In Account Users, click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired user.
 
-1. Click *Edit* to see the Edit User page.
+1. Click *Edit*.
 
-The following options are available in the Edit User page:
+The following options are available:
 
 | General Tab | Description |
 | :--- | :--- |
 | Information | Edit or change the user's personal information. |
-| Accounts | View or modify the User's associated accounts. |
+| Accounts | View or modify the user's associated accounts. |
 | Password | Add or change the user's password. |
 
 | Contact Tab | Description |
@@ -104,38 +114,42 @@ The following options are available in the Edit User page:
 
 ## Deactivating and Deleting an Account User
 
-Deleting an Account User is a two-step process: 
-
-* You may decide that you want to keep the Account User after all.
-* There may be user data that is tied with [legal requirements](../managing-user-data.md) you need to address. 
-* You may require more time to review a User's account before deletion.
-
-For these reasons and more you must first deactivate an Account User before deleting an Account User.
+Deleting an account user is a two-step process that involves deactivating the user and then deleting it. This is because you may want to deactivate a user and still have time to review its data before deletion (e.g., due to [legal requirements](../managing-user-data.md)).
 
 ### Deactivating an Account User
 
-Deactivating an Account User prevents the User from logging in, but still preserves the User's data and information. 
+Deactivating prevents the account user from logging in, but still preserves the user's data and information.
 
-1. In Account Users, click the _Options_ icon (![Options icon](../../images/icon-actions.png)) of the account user you want to edit.
+1. In Account Users, click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired user.
 
-1. Click *Deactivate* and click the *OK* button to confirm your change. The Account User is now deactivated. 
+1. Click *Deactivate* and click the *OK* button to confirm your change.
 
-To see a deactivated User, click the *Filter and Order* drop-down menu and click *Inactive* under Filter by Status. You can click a User's Options icon (![Options icon](../../images/icon-actions.png)) and click *Activate* to reactivate the User.
+The account user is now deactivated.
+
+To see a deactivated user, click the *Filter and Order* drop-down menu and select *Inactive* under Filter by Status. You can click a user's *Actions* button (![Actions Button](../../images/icon-actions.png)) and click *Activate* to reactivate it.
 
 ### Deleting an Account User
 
 1. In Account Users, click the *Filter and Order* drop-down menu and click *Inactive* under Filter by Status.
 
-1. Click the inactive User's _Options_ icon (![Options icon](../../images/icon-actions.png)) and click *Delete*
+1. Click the inactive user's *Actions* button (![Actions Button](../../images/icon-actions.png)) and select *Delete*
 
    ![Select the inactive user and click Delete.](./account-users/images/04.png)
 
-1. Click *OK* on the pop-up form to confirm your decision. The Account User is now deleted.
+1. Click *OK* on the pop-up form to confirm your decision. The account user is now deleted.
 
 ## Impersonating an Account User
 
-You can impersonate Account Users to view the system as they would see it. This can be used to diagnose permission issues an administrator can't see, such as making sure a User doesn't have access to restricted data. Only Users with this permission can impersonate a different User.
+You can impersonate account users to view the system as they would see it. This can be used to diagnose permission issues an administrator can't see, such as making sure a user doesn't have access to restricted data. Only users with this permission can impersonate a different user.
 
-1. In Account Users, click the Account User's _Options_ icon (![Options icon](../../images/icon-actions.png)).
+1. In Account Users, click the user's *Actions* button (![Actions Button](../../images/icon-actions.png)).
 
-2. Click *Impersonate User* and a new window opens with you logged in as that Account User.
+1. Select *Impersonate User*.
+
+A new window opens with you logged in as the selected account user.
+
+## Additional Information
+
+* [Accounts](../accounts.md)
+* [Account Roles](./account-roles.md)
+* [Understanding Users](../users/understanding-users.md)

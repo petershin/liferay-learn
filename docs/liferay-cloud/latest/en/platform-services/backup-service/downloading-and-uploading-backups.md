@@ -1,6 +1,6 @@
 # Downloading and Uploading Backups
 
-The Liferay Cloud backup service creates backups of an environment's database and the full contents of the `LIFERAY_HOME/data` folder. This content is stored as archive files (`.gz` and `.tgz` respectively) and can be downloaded via the Liferay Cloud console.
+The Liferay Cloud backup service creates backups of an environment's database and the full contents of the Liferay instance's `LIFERAY_HOME/data` folder. This content is stored as archive files (`.gz` and `.tgz` respectively) and can be downloaded via the Liferay Cloud console.
 
 Users can also download or upload environment backups [using the Liferay Cloud Console](#uploading-backups-via-the-console), or through [Backup APIs](#backup-service-apis).
 
@@ -38,7 +38,7 @@ Table and column names are treated with case sensitivity in Liferay Cloud. If yo
 
 You can also upload a backup to your project through the *Backups* page in your chosen environment.
 
-Before you can upload a backup to Liferay Cloud, you must compress the database dump and document library in separate archives. See [Preparing the Database and Document Library for Upload](#preparing-the-database-and-document-library-for-upload) for more information on preparing for the upload for an on-premises environment.
+Before you can upload a backup to Liferay Cloud, you must compress the database dump and document library in separate archives. See [Preparing the Database and Document Library for Upload](#preparing-the-database-and-document-library-for-upload) for more information on preparing them for an on-premises environment.
 
 ```{warning}
 Once an upload is initiated, the Backup service is unavailable to generate or restore other backups until the upload is completed.
@@ -180,14 +180,14 @@ To upload a backup of your environment to Liferay Cloud, you must have the datab
 
 ### Creating the Database File
 
-To create a MySQL dump (as a `.sql` script) and compress it into a `.gz` archive, run the following commands:
+To create a MySQL dump (as a `.sql` script) and compress it into a `.gz` archive, run these commands:
 
 ```bash
 mysqldump -uroot -ppassword --add-drop-database --databases lportal | gzip -c | cat > database.gz
 ```
 
 ```{note}
-If your Backup service is not updated to at least version `4.2`, then you must also run the following command to convert the archive to a `.tgz` file: `tar zcvf database.tgz database.gz`. Then use the resulting `.tgz` archive to upload.
+If your Backup service is not updated to at least version `4.2`, you must also run the following command to convert the archive to a `.tgz` file: `tar zcvf database.tgz database.gz`. Then use the resulting `.tgz` archive to upload.
 ```
 
 The `databases` and `add-drop-database` options are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
@@ -207,8 +207,6 @@ USE `lportal`;
 ```
 
 ### Creating the Volume File
-
-The document library must also be compressed to a format that you can upload.
 
 ```{tip}
 If permissions are not already configured for Liferay Cloud when you upload a backup, then restoring the backup to your environments afterward can take longer to complete. To avoid long restore times, navigate to your `LIFERAY_HOME` folder and run this command before compressing the document library: `chown -R 1000:1000 data/document_library/`.

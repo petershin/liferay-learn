@@ -28,15 +28,27 @@ Collect the information from the provider. You'll need it create the provider co
 
 Liferay seeks feedback on a new interface for a provider connection. For this reason, there are two ways to create the connection: the standard way and the new way. 
 
-**New OpenID Connect Provider Connection for OAuth 2.0**
+### New OpenID Connect Provider Connection for OAuth 2.0**
 
 This interface is for those who want granular control over their client connection. All configuration is done through the provider's Well-Known Configuration Endpoint, as defined in the [OpenID Connect configuration specification](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest). 
 
-1. Go to the Global Menu &rarr; Security &rarr; OAuth Client Administration. 
+1. Go to the Global Menu &rarr; Control Panel &rarr; Security &rarr; OAuth Client Administration. 
 
-1. There are two tabs. The first is for authorization servers that have a Well Known URI. The second is for authorization servers without a Well Known URI. Choose the appropriate tab and click *Add* (![Add Button](../../../images/icon-add.png)). 
+1. There are two tabs. The first creates a client for an authorization server. The second is for authorization servers without a Well Known URI. You'll always use the first tab; you'll only use the second tab to create a "pseudo" well-known URI for a server that doesn't have one. 
 
-1. If you have the authorization server's Well Known URI, paste it into the Well Known URI field. For example, Google's is https://accounts.google.com/.well-known/openid-configuration. 
+**If you do not have a well-known URI,** 
+
+1. Go to the second tab and click *Add* (![Add Button](../../../images/icon-add.png)).
+
+1. Enter the authorization server metadata from your provider. Be sure that the `issuer` field has a value in the JSON. This generates a "local" well-known URI when click Save. 
+
+1. Click *Save*. You're returned to the OAuth Client Administration page, where you can see the URI that was generated. Copy this URI to your clipboard; you'll use this URI in the next step. 
+
+**If you have a well-known URI,**
+
+1. On the first tab, click *Add* (![Add Button](../../../images/icon-add.png)). 
+
+1. Paste the authorization server's Well Known URI into the Well Known URI field. For example, Google's is https://accounts.google.com/.well-known/openid-configuration. If you generated one as above, paste it here.
 
 1. Most of the time, this is all you need to do. If you don't have a Well Known URI, use the fields below to configure the connection. When finished, click *Save*. 
 
@@ -48,7 +60,7 @@ The other fields on the form are for specific configuration generated with the p
 
 **OAuth Client Default Token Request Parameters:** If you have Liferay applications that do not specify [token request parameters](https://www.iana.org/assignments/oauth-parameters) themselves, specify the default parameters in JSON format for using this OAuth client here. Custom parameter values must be a JSON array of strings. 
 
-**Standard OpenID Connect Provider Connection**
+### Standard OpenID Connect Provider Connection
 
 Go to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO* and select ***OpenID Connect Provider*** under the *System Scope*.
 

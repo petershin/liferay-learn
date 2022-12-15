@@ -12,6 +12,10 @@ Before you create your data backup files, you must arrange a window to freeze th
 
 ## Convert the Database to MySQL
 
+```{warning}
+Table and column names are treated with case sensitivity in Liferay Cloud. Make sure all of your own references to your database's tables or columns adhere to the same capitalization.
+```
+
 Make sure your database is compatible with MySQL 5.7. You can use a tool like [DBeaver](https://dbeaver.io/) to convert other database formats to MySQL.
 
 Coordinate with your database administrator before and after the conversion to ensure data integrity. Test the converted database by [connecting it to a local Liferay installation](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/configuring-a-database.html) before proceeding.

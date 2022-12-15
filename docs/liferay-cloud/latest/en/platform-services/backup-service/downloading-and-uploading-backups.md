@@ -32,6 +32,10 @@ Only administrators for the chosen environment can download backups from the Bac
 
 ## Uploading Backups via the Console
 
+```{warning}
+Table and column names are treated with case sensitivity in Liferay Cloud. If you have made any modifications to your database, make sure all of your own references to the tables or columns adhere to the same capitalization.
+```
+
 You can also upload a backup to your project through the *Backups* page in your chosen environment.
 
 Before you can upload a backup to Liferay Cloud, you must compress the database dump and document library in separate archives. See [Preparing the Database and Document Library for Upload](#preparing-the-database-and-document-library-for-upload) for more information on preparing for the upload for an on-premises environment.

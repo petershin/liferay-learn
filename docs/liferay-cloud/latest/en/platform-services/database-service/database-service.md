@@ -1,6 +1,6 @@
 # Database Service (MySQL)
 
-The database service (MySQL) is a distributed relational database service that simplifies the setup, operation, and scaling of your applications. It's a private service inside your application environment and can only communicate with your other services, not the public internet.
+The database service (MySQL) is a distributed relational database service that simplifies the setup, operation, and scaling of your applications. It's a private service inside your application environment and can only communicate with your other services, not the public internet. The database in Liferay Cloud treats table and column names with case sensitivity.
 
 ![The database service is one of several services available in Liferay Cloud.](./database-service/images/01.png)
 

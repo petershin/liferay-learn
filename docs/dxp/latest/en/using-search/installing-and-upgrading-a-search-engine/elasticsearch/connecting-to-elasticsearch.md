@@ -11,7 +11,7 @@ Notable installation and configuration procedure differences are presented here.
 Stop each Liferay server node before configuring the connection.
 ```
 
-If you're on Liferay 7.2, skip to [Liferay 7.2: Installing Elasticsearch 7 Connector](#liferay-7-2-installing-elasticsearch-7-connector).
+If you're on Liferay 7.2, skip to [Liferay 7.2: Installing Elasticsearch 7 Connector](#liferay-72-installing-elasticsearch-7-connector).
 
 ## Configuring the Connector
 
@@ -202,6 +202,6 @@ Now that Liferay is connected to Elasticsearch, you can start using Elasticsearc
 * [Securing Elasticsearch](./securing-elasticsearch.md)
 * [Elasticsearch Connector Settings](./elasticsearch-connector-configuration-reference.md)
 * [Using the Sidecar or Embedded Elasticsearch](./using-the-sidecar-or-embedded-elasticsearch.md)
-* [Liferay Enterprise Search](../../liferay-enterprise-search.html)
+* [Liferay Enterprise Search](../../liferay-enterprise-search.md)
 * [Search Pages](../../search-pages-and-widgets/working-with-search-pages/search-pages.md)
-* [Administering and Tuning Search](../../search-administration-and-tuning.html)
+* [Administering and Tuning Search](../../search-administration-and-tuning.md)

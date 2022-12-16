@@ -94,10 +94,8 @@ Here's a comparison between the embedded and sidecar Elasticsearch servers.
 | Not supported for production  | Not supported for production |
 | No special steps required for any app server | [Some app servers](#app-server-differences) require additional steps |
 
-
 ## Troubleshooting the Sidecar/Embedded Elasticsearch
-
-### Elasticsearch Sidecar Could Not Be Started
+./elasticsearchBe Started
 
 These errors indicate problems with the Elasticsearch Sidecar installation at startup:
 
@@ -143,9 +141,14 @@ Caused by: org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgume
 ```
 
 To resolve errors like these,
+
 1. Stop Liferay.
+
 1. Delete  `[Liferay Home]/elasticsearch-sidecar/` or `[Liferay Home]/elasticsearch7`. This folder holds the Sidecar Elasticsearch runtime.
+
 1. Delete `[Liferay Home]/data/elasticsearch7`. This folder holds the index data.
+
 1. Restart Liferay.
-1. The Portal will download and extract the Elasticsearch runtime at startup [on select App Servers](../using-the-sidecar-or-embedded-elasticsearch.html#embedded-versus-sidecar) (e.g, Tomcat).
+
+1. The Portal will download and extract the Elasticsearch runtime at startup [on select App Servers](./using-the-sidecar-or-embedded-elasticsearch.md#embedded-versus-sidecar) (e.g, Tomcat).
 

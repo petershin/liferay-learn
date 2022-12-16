@@ -13,18 +13,18 @@ troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-con
 troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
 ```
 
-Liferay is full of configurations, and Elasticsearch is full of configurations. Whenever you [connect such products](./getting-started-with-elasticsearch.md), you can run into difficulty along the way. 
+Liferay and Elasticsearch are complex systems full of configurations. When [connecting them](./getting-started-with-elasticsearch.md), you can run into difficulty along the way. Included below are techniques for troubleshooting.
 
-Included below are techniques that can aid your troubleshooting work. To learn about some of the errors you might experience and how to solve them, see
+To learn about some common issues and how to solve them, see
 
 - [Troubleshooting the Elasticsearch Connection](./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md)
 - [Troubleshooting Elasticsearch: Common Issues](./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md)
 
-To troubleshoot the sidecar Elasticsearch server bundled with Liferay, see [Troubleshooting the Sidecar/Embedded Elasticsearch](./using-the-sidecar-or-embedded-elasticsearch.md#troubleshooting-the-sidecar-embedded-elasticsearch)
+To troubleshoot the sidecar Elasticsearch server bundled with Liferay, see [Troubleshooting the Sidecar/Embedded Elasticsearch](./using-the-sidecar-or-embedded-elasticsearch.md#troubleshooting-the-sidecar-embedded-elasticsearch).
 
 ## Inspecting the Search Bar's Elasticsearch Query
 
-Liferay's search infrastructure generates a large Elasticsearch request when a user searches from the Search Bar widget. To inspect the query that's sent to Elasticsearch, use the Search Insights widget. For more information see [Search Insights](../search-pages-and-widgets/search-insights.md).
+Liferay's search infrastructure generates a large Elasticsearch request whenever users search from the Search Bar widget. To inspect the query sent to Elasticsearch, use the Search Insights widget. For more information see [Search Insights](../../search-pages-and-widgets/search-insights.md).
 
 ## Inspecting any Liferay-Generated Elasticsearch Query
 

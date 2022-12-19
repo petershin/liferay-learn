@@ -2,15 +2,15 @@
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Liferay includes form fragments for building object forms in content pages. To build a form, add a form container to a content page or page template and map it to a published object. The container automatically populates fragments mapped to each object field. You can manually organize, remove, or add fragments. Once published, end users can create object entries using the form.
+Liferay includes form fragments for building object forms in content pages. To build a form, add a form container to a content page or page template and map it to a published object. The container automatically populates fragments mapped to each object field. You can organize, remove, or add fragments manually. Once published, end users can create object entries using the form.
 
-Building forms in content pages has the following requirements:
+To build forms in content pages, you must 
 
-* Form fragments can only be placed in a mapped form container.
-* Every form fragment in the form container must map to an object field to prevent data loss.
-* The form container must include fragments for all mandatory object fields.
-* Mandatory form fragments must be visible.
-* The form container must include a visible submit button.
+* Place form fragments only in a mapped form container.
+* Map every form fragment in the form to an object field to prevent data loss.
+* Include fragments in the form container for all mandatory object fields.
+* Make mandatory form fragments visible.
+* Include a visible submit button in the form container.
 
 By default, Liferay includes the [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components) fragment set, but you can create your own. See [Creating Form Fragments](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md) for more information.
 
@@ -28,9 +28,7 @@ Form fragments can only be used with custom objects. Therefore, Liferay hides th
 
 1. Add the *Form Container* fragment to the page and map it to an object.
 
-   The container automatically populates with fragments for all object fields and lists them in alphabetical order. Mandatory object fields are marked as required automatically.
-
-   The form container also includes a *Submit* button.
+   The container automatically generates a Submit button and fragments for all object fields. They appear in alphabetical order. Mandatory fields are marked accordingly.
 
    ![Add the form container and map it to an object.](./using-fragments-to-build-forms/images/01.png)
 

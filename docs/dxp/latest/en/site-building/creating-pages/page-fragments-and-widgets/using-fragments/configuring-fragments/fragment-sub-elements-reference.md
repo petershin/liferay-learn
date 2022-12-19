@@ -37,7 +37,7 @@ Configure the image displayed in the selected image element.
 | Image Description (*for Direct*) | Enter a localizable image description. To set a description for other languages, first switch the language for the page or template via the editing bar. Then, enter the desired text. See [Localizing Fragment Configuration Fields](./localizing-fragment-configuration-fields.md) for more information. |
 | Item (*for Mapping*) | Select an asset from Documents and Media, Web Content, Blogs, or Categories. The selected asset provides fields for mapping. |
 | Field (*for Mapping*) | Map the image element to the desired field from the selected item. |
-| Enable Lazy Loading | Enable [lazy loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading) to only render the image when needed. While enabled, offscreen images are not loaded during the page's initial rendering. This can shorten the critical rendering path and improve page load times. By default, lazy loading is disabled. |
+| Enable Lazy Loading | Enable [lazy loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading) to render the image only when needed. While enabled, off screen images are not loaded during the page's initial rendering. This can shorten the critical rendering path and improve page load times. By default, lazy loading is disabled. |
 
 ![Access a sub-element's Image Source settings in the Browser panel of the editing sidebar menu.](./fragment-sub-elements-reference/images/03.png)
 

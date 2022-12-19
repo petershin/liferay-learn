@@ -3,7 +3,7 @@
 All fragments have a Styles settings section except for the Collection Display fragment. Use the style settings to configure your fragments' look and feel. Many of these options correspond to CSS classes and have defined tokens supported by style books. See [General Settings Reference](./general-settings-reference.md) and [Fragment Sub-Elements Reference](./fragment-sub-elements-reference.md) for additional fragment configuration options.
 
 ```{note}
-By default, style configurations apply to the entire fragment, so all elements in the fragment inherit these changes if their CSS allows it; otherwise, the inner elements are ignored. You can configure custom fragments to only apply style changes to some inner elements. See [Applying Styles to Fragments](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information.
+By default, style configurations apply to the entire fragment, so all elements in the fragment inherit these changes if their CSS allows it; otherwise, the inner elements are ignored. You can configure custom fragments to apply style changes only to some inner elements. See [Applying Styles to Fragments](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information.
 ```
 
 To access a fragment's Styles menu,
@@ -32,7 +32,7 @@ Click the button for the spacing dimension to configure. The inner buttons deter
 
 ![When you click any of the regions, choose the desired spacing from the list of sizes shown.](./styles-reference/images/02.png)
 
-Clicking the padding or margin buttons opens a menu where you can select from existing tokens or enter a custom value. The predefined tokens come from the numbered Spacer fields in the style book's [Spacing](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) category. If you enter a custom value, select its unit (e.g., `px`, `rem`). To restore the field to its initial value, click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ).
+Clicking the padding or margin buttons lets you select from existing tokens or enter a custom value. The predefined tokens come from the numbered Spacer fields in the style book's [Spacing](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) category. If you enter a custom value, select its unit (e.g., `px`, `rem`). To restore the field to its initial value, click the *Reset* button ( ![Reset](../../../../../images/icon-restore.png) ).
 
 ```{note}
 For 7.4 U46/GA46 and earlier versions, if your style book uses a unit other than pixel to define spacing values (e.g., `rem`), they are converted to pixels during fragment configuration.

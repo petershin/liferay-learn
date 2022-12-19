@@ -18,7 +18,7 @@ configuring-fragments/fragment-sub-elements-reference.md
 configuring-fragments/localizing-fragment-configuration-fields.md
 ```
 
-You can configure fragments and their sub-elements. Available options can vary, though some are common to all. To view available configuration options, begin editing a page or template and open the *Browser* panel (![Browser](../../../../images/icon-hierarchy.png)) in the sidebar menu. Then, click the fragment or sub-element to configure. Available configuration options are grouped into three tabs: General, Styles, and Advanced.
+You can configure fragments and their sub-elements. Available options can vary, though some are common to all. To view available configuration options, begin editing a page or template and open the *Browser* panel (![Browser](../../../../images/icon-hierarchy.png)) in the sidebar menu. Then click the fragment or sub-element to configure. Available configuration options appear in three tabs: General, Styles, and Advanced.
 
 ![Available configuration options are grouped into three tabs.](./configuring-fragments/images/01.png)
 
@@ -28,7 +28,7 @@ You can localize some fragment configuration fields. See [Localizing Fragment Co
 
 ## General
 
-The General tab includes both standard configuration options (e.g., visibility and frame) as well as options unique to each fragment. See [General Settings Reference](./configuring-fragments/general-settings-reference.md) for more information.
+The General tab includes both standard configuration options (e.g., visibility and frame) and options unique to each fragment. See [General Settings Reference](./configuring-fragments/general-settings-reference.md) for more information.
 
 ## Styles
 

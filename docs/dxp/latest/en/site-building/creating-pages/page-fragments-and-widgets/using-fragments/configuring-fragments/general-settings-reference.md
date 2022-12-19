@@ -73,7 +73,7 @@ Follow these steps to access a fragment's General settings:
 
 <!--CLARIFY: how does this setting relate to the Image Source settings?-->
 
-## Dropdown Options
+## Drop-down Options
 
 | Field | Description |
 | :--- | :--- |

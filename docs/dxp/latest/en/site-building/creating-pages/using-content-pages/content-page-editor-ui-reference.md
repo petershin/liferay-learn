@@ -2,7 +2,7 @@
 
 {bdg-secondary}`For Liferay 7.4 U37+/GA37+`
 
-Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in a content page. To open the content page editor, go to a content page and click the *Edit* button ( ![Edit icon](../../../images/icon-edit.png) ). This reveals the editing toolbar and sidebar, which contain tools and components for building content pages.
+Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in a content page. To open the content page editor, go to a content page and click *Edit* (![Edit icon](../../../images/icon-edit.png) ). This reveals the editing toolbar and sidebar, which contain tools and components for building content pages.
 
 - [Editing Toolbar](#editing-toolbar)
 - [Editing Sidebar](#editing-sidebar)
@@ -27,7 +27,7 @@ If you use [experiences](../../personalizing-site-experience/experience-personal
 
 ### Device Display
 
-Click the device icons to access Liferay's responsive layout editor. Here you can configure your page for different screen sizes. Available display options include Desktop ( ![Desktop](../../../images/icon-display.png) ), Tablet ( ![Tablet](../../../images/icon-tablet-portrait.png) ), Landscape Phone ( ![Landscape Phone](../../../images/icon-mobile-landscape.png) ), and Portrait Phone ( ![Portrait Phone](../../../images/icon-mobile-portrait.png) ). While editing the tablet and phone layouts, you can manually adjust the screen size using the resize handlebar. See [Building Responsive Layouts](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) for more information.
+Click the device icons to access Liferay's responsive layout editor. Here you can configure your page for different screen sizes. Available display options include Desktop ( ![Desktop](../../../images/icon-display.png) ), Tablet ( ![Tablet](../../../images/icon-tablet-portrait.png) ), Landscape Phone ( ![Landscape Phone](../../../images/icon-mobile-landscape.png) ), and Portrait Phone ( ![Portrait Phone](../../../images/icon-mobile-portrait.png) ). While editing the tablet and phone layouts, you can adjust the screen size manually using the resize handlebar. See [Building Responsive Layouts](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) for more information.
 
 ```{note}
 The [Fragments and Widgets](#fragments-and-widgets) and [Page Design Options](#page-design-options) panel are only available in the desktop layout.
@@ -35,7 +35,7 @@ The [Fragments and Widgets](#fragments-and-widgets) and [Page Design Options](#p
 
 ### Edit History
 
-Click the History button ( ![History Button](./../../../images/icon-time.png) ) to view changes made during your current edit session. You can use this history to reserve or restore changes. Alternatively, you can click the Undo and Redo buttons.
+Click the *History* button (![History Button](./../../../images/icon-time.png) ) to view changes made during your current edit session. You can use this history to reserve or restore changes. Alternatively, you can click the Undo and Redo buttons.
 
 ![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/03.png)
 
@@ -83,7 +83,7 @@ In the Fragments and Widgets panel ( ![Fragments and Widgets icon](../../../imag
 **Widgets**: Widgets are [applications](../../../building-applications.md) that add dynamic functionality to a page. Examples include blogs, message boards, and calendars. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
 
 ```{tip}
-Beginning with Liferay 7.4 U37/GA37, click the Order button ( ![Order Button](../../../images/icon-order.png) ) to reorder sets of fragments and widgets. Click the Star button ( ![Star Button](../../../images/icon-star.png) ) to add a fragment or widget to your list of favorite elements.
+Beginning with Liferay 7.4 U37/GA37, click the Order button (![Order Button](../../../images/icon-order.png)) to reorder sets of fragments and widgets. Click the Star button (![Star Button](../../../images/icon-star.png)) to add a fragment or widget to your list of favorite elements.
 ```
 
 ### Browser
@@ -118,7 +118,7 @@ For versions prior to 7.3, comments are disabled by default. To enable page comm
 
 {bdg-secondary}`For Liferay 7.3`
 
-In the Selection panel ( ![Selection](../../../images/icon-pages-tree.png) ), you can view a hierarchical outline of all page elements, as well as select, configure, or remove those elements. Similarly, clicking any element on the page while in the Design mode opens the Selection panel and highlights the selected page element in the hierarchy. When an element is selected, you can access its General, Styles, and Link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
+In the Selection panel (![Selection](../../../images/icon-pages-tree.png)), you can view a hierarchical outline of all page elements, as well as select, configure, or remove those elements. Similarly, clicking any element on the page while in the Design mode opens the Selection panel and highlights the selected page element in the hierarchy. When an element is selected, you can access its General, Styles, and Link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
 ![Selection shows you a hierarchy of your page and contents.](./content-page-editor-ui-reference/images/06.png)
 
@@ -130,7 +130,7 @@ A page's header and footer are not listed in the Selection panel hierarchy, beca
 
 {bdg-secondary}`For Liferay 7.3`
 
-In the Contents panel ( ![Contents](../../../images/icon-list-ul.png) ), you can view, edit, and manage all web content on the page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
+In the Contents panel (![Contents](../../../images/icon-list-ul.png)), you can view, edit, and manage all web content on the page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
 
 ## Additional Information
 

@@ -8,9 +8,9 @@ To create form fragments,
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ), expand *Design*, and go to *Fragments*.
 
-1. Click the *Plus* button ( ![Plus Button](../../../images/icon-plus.png) ) to create a *Fragment Set* for organizing your form fragments.
+1. Click *Plus* (![Plus Button](../../../images/icon-plus.png)) to create a Fragment Set for organizing your form fragments.
 
-1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ), select the *Form Fragment* type, and click *Next*.
+1. Click *Add* (![Add Button](../../../images/icon-add.png)), select the *Form Fragment* type, and click *Next*.
 
    ![Select the Form Fragment type and click Next.](./creating-form-fragments/images/01.png)
 
@@ -22,9 +22,9 @@ To create form fragments,
 
    ![Select the field types the fragment supports.](./creating-form-fragments/images/02.png)
 
-1. Click *Add*. This creates a draft fragment and redirects you to the fragment edit page.
+1. Click *Add*. This creates a draft fragment and directs you to the fragment edit page.
 
-1. In the Code tab, add *HTML*, *CSS*, and *JavaScript* for your fragment.
+1. In the Code tab, add HTML, CSS, and JavaScript for your fragment.
 
    ![In the Code tab, add HTML, CSS, and JavaScript for your fragment.](./creating-form-fragments/images/03.png)
 
@@ -83,7 +83,7 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | `allowedFileExtensions` | `string` | Allowed file extensions. If Show Supported File Info is enabled, the allowed extensions are displayed in the field's help text. |
-| `maxFileSize` | `number` | Maximum upload size in megabytes. If Show Supported File Info is enabled, the maximum allowed size is displayed in the field's help text. |
+| `maxFileSize` | `number` | Maximum upload size in megabytes. If Show Supported File Info is enabled, the maximum allowed size appears in the field's help text. |
 | `selectFromDocumentLibrary` | `boolean` | Whether users can select files from the document library. This is set in the object's [attachment field](../../../building-applications/objects/creating-and-managing-objects/fields.md). |
 | `selectFromDocumentLibraryURL` | `string` or `undefined` | If `selectFromDocumentLibrary` is true, this property contains the URL for rendering the corresponding `ItemSelector`. |
 

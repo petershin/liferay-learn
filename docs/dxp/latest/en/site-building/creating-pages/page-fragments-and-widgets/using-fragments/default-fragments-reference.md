@@ -22,7 +22,7 @@ Available configuration options vary by fragment and fragment sub-element. See [
 
 {bdg-secondary}`For Liferay 7.3+`
 
-*Layout Elements* define drop zones that you can use to design page and template layouts. By Default, Liferay includes two Layout Elements: *Containers* and *Grids*.
+*Layout Elements* define drop zones for designing page and template layouts. By Default, Liferay includes two Layout Elements: *Containers* and *Grids*.
 
 | Fragment | Description |
 | :--- | :--- |
@@ -37,7 +37,7 @@ These are simple design elements that add basic functionality to a page. Example
 | :--- | :--- |
 | Button | Adds a [link element](./configuring-fragments/fragment-sub-elements-reference.md) with five available button types: Primary, Secondary, Link, Outline Primary, and Outline Secondary. |
 | Card | Adds [image](./configuring-fragments/fragment-sub-elements-reference.md), [rich text](./configuring-fragments/fragment-sub-elements-reference.md), and [link](./configuring-fragments/fragment-sub-elements-reference.md) elements arranged as a display card. |
-| Dropdown {bdg-secondary}`7.4+` | Adds a [simple text element](./configuring-fragments/fragment-sub-elements-reference.md) and drop zone. You can drag-and-drop other fragments and widgets into the drop zone to create an advanced drop-down menu. |
+| Drop-down {bdg-secondary}`7.4+` | Adds a [simple text element](./configuring-fragments/fragment-sub-elements-reference.md) and drop zone. You can drag-and-drop other fragments and widgets into the drop zone to create an advanced drop-down menu. |
 | External Video {bdg-secondary}`7.4+` | Embeds an external video in a page or template. Supported video sources include YouTube, Facebook, Twitch, Vimeo, and videos stored in Documents and Media. See [Embedding Videos](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) for more information. |
 | Heading | Adds a [simple text element](./configuring-fragments/fragment-sub-elements-reference.md) that can be configured to use H1-H6 style. |
 | HTML | Adds an editable [HTML element](./configuring-fragments/fragment-sub-elements-reference.md). Double-clicking the element opens a modal window where you can edit its content using HTML syntax. |
@@ -58,7 +58,7 @@ Use Form Components fragments to build forms in content pages. These fragments o
 
 | Fragment | Description |
 | :--- | :--- |
-| Form Container | Adds a container for building forms in content pages. Once added, you must map the container to a custom object. The container automatically populates with with form fragments for each field in the object. You can manually add or remove fragments from the container, and set a custom success text for form submissions. You can only place other form components in a mapped form container. |
+| Form Container | Adds a container for building forms in content pages. Once added, you must map the container to a custom object. The container automatically generates form fragments for each field in the object. You can add or remove fragments from the container and set a custom success message for form submissions. You can only place other form components in a mapped form container. |
 | CAPTCHA | Adds CAPTCHA confirmation to a form container. Once added, the form container requires human verification for submissions. |
 | Checkbox | Adds a checkbox to the form container that you can map to boolean fields. |
 | Date | Adds a field that you can map to custom date fields. |
@@ -72,7 +72,7 @@ Use Form Components fragments to build forms in content pages. These fragments o
 
 {bdg-secondary}`For Liferay 7.3+`
 
-Use Content Display fragments to display site content individually or as part of a Collection. You can also add page elements for rating or flagging page content. DXP includes the following Content Display fragments.
+Use Content Display fragments to display site content individually or as part of a Collection. You can also add page elements for rating or flagging page content. DXP includes the following Content Display fragments:
 
 | Fragment | Description |
 | :--- | :--- |

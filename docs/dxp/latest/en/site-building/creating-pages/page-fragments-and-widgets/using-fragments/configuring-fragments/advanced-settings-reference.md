@@ -5,7 +5,7 @@
 All Liferay's default fragments include advanced settings except for the Collection Display fragment. Advanced settings can add custom CSS to a fragment, configure whether its contents are searchable, and more.
 
 ```{note}
-Configuring a framgent's advanced settings requires the *Update - Advanced Options* permission for the page.
+Configuring a framgent's advanced settings requires the Update - Advanced Options permission for the page.
 ```
 
 To access a fragment's advanced settings,
@@ -34,7 +34,7 @@ Specify whether to hide the fragment's content from search results in your site.
 
 {bdg-secondary}`Available 7.4 U34+/GA34+`
 
-Add custom CSS to fragments using the *Custom CSS* text box. By default, this text box contains this placeholder:
+Add CSS to fragments using the *Custom CSS* text box. By default, this text box contains this placeholder:
 
 ```css
 .[$FRAGMENT_CLASS$] {
@@ -82,11 +82,11 @@ Only CSS classes that you have added yourself appear as suggestions in the CSS C
 
 ## Advanced Container Settings
 
-Container fragments include some advanced settings in addition to the [standard ones](#standard-advanced-settings).
+Container fragments include [standard ones](#standard-advanced-settings) and advanced settings.
 
 ### HTML Tag
 
-Choose the HTML tag generated for the container fragment: `div`, `header`, `nav`, `section`, `article`, `main`, `aside`, or `footer`. These tags help web scrapers, browsers, and site renderers more easily find and retrieve what kind of content is on the page. The selected tag only applies to the selected container itself and does not apply to nested fragments or content.
+Choose the HTML tag generated for the container fragment: `div`, `header`, `nav`, `section`, `article`, `main`, `aside`, or `footer`. These tags help web scrapers, browsers, and site renderers find and retrieve page content more easily. The selected tag only applies to the selected container itself and does not apply to nested fragments or content.
 
 ![You can choose which HTML tag is used for container fragments in the Advanced Settings tab.](./advanced-settings-reference/images/05.png)
 

@@ -5,14 +5,8 @@ Solr is a popular enterprise search platform built on Apache Lucene. It's reliab
 These instructions describe installing Solr 8 for the [compatible Liferay versions](https://help.liferay.com/hc/en-us/articles/360016511651-Search-Engine-Compatibility-Matrix). If installing Solr 7, adjust the version name as necessary.
 
 ```{important}
--  There are important limitations when using Solr. Read [Solr Limitations](./solr-limitations.md) before installing.
+There are important limitations when using Solr. Read [Solr Limitations](./solr-limitations.md) before installing.
 ```
-
-As you proceed, remember these terms: 
-
-*Solr Home*: Refers to `solr-[version]/server/solr/`, the main Solr configuration directory. This is where the Liferay core will be configured.
-
-*Liferay Home*: The root folder of your Liferay installation. It contains the `osgi`, `deploy`, `data`, and `license` folders, among others.
 
 ## Compatibility
 
@@ -25,17 +19,10 @@ Before installing the Liferay Connector to Solr, you must blacklist or otherwise
 - the modules for certain DXP features that only work with Elasticsearch
 - the Liferay Connector to Elasticsearch's modules
 
-```{tip}
-Use the Gogo shell command `lb [substring-to-search] -s` to search for modules deployed to the OSGi runtime and list them by their Symbolic Name. The Symbolic Name is the value to enter in the `blacklistBundleSymbolicNames` property.
-
-The following command returns the list of modules that must be blacklisted:
-
-`lb -s | grep 'search' | grep 'elasticsearch|tuning'`
-```
-
 ### Blacklisting Elasticsearch-Only Features
 
-If you're a Liferay DXP customer you should use the blacklist feature to disable the Elasticsearch-only features. CE users can also use this approach:
+<!-- Can we clean this up? Sounds wonky with the CE/DXP differentiation -->
+If you're a Liferay DXP customer, use the blacklist feature to disable Elasticsearch-only features. CE users can also use this approach:
 
 1. Create a configuration file named
 
@@ -47,22 +34,27 @@ If you're a Liferay DXP customer you should use the blacklist feature to disable
 
    ```properties
    blacklistBundleSymbolicNames=[\
-	    "com.liferay.portal.search.elasticsearch6.api",\
-	    "com.liferay.portal.search.elasticsearch6.impl",\
-	    "com.liferay.portal.search.elasticsearch6.spi",\
-	    "com.liferay.portal.search.elasticsearch7.api",\
-	    "com.liferay.portal.search.elasticsearch7.impl",\
-	    "com.liferay.portal.search.elasticsearch7.spi",\
-	    "com.liferay.portal.search.tuning.rankings.web",\
-	    "com.liferay.portal.search.tuning.synonyms.web",\
-	    "com.liferay.portal.search.tuning.web",\
-	    "com.liferay.portal.search.tuning.web.api"\
+      "com.liferay.portal.search.elasticsearch7.api",\
+      "com.liferay.portal.search.elasticsearch7.impl",\
+      "com.liferay.portal.search.elasticsearch7.spi",\
+      "com.liferay.portal.search.elasticsearch.monitoring.web",\
+      "com.liferay.search.experiences.api",\
+      "com.liferay.search.experiences.lang",\
+      "com.liferay.search.experiences.rest.api",\
+      "com.liferay.search.experiences.rest.client",\
+      "com.liferay.search.experiences.rest.impl",\
+      "com.liferay.search.experiences.service",\
+      "com.liferay.search.experiences.web"\
    ]
    ```
 
-1. Place the file in `Liferay Home/osgi/configs`. 
+   These modules are for the [Elasticsearch 7 search engine connector](../elasticsearch/installing-elasticsearch.md), the [Elasticsearch monitoring functionality](../../liferay-enterprise-search/monitoring-elasticsearch.md), and the [Search Experiences application suite](../../liferay-enterprise-search/search-experiences.md). Other [incompatible features](./solr-limitations.md) detect the search engine dynamically and are disabled automatically when you install Solr.
+
+1. Place the file in Liferay's `osgi/configs` folder.
 
 ### Stopping the Modules with Elasticsearch-Only Features
+
+<!--Verify the accuracy of this in 7.4-ever-->
 
 The App Manager and Gogo shell rely on the `osgi/state` folder to "remember" the state of the bundle. If you delete this folder (recommended during [patching Liferay DXP](../../../installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)) the Elasticsearch connector is reinstalled and started automatically. Liferay CE users can use the blacklist approach or disable the Elasticsearch and search tuning modules in the App Manager or the Gogo shell. 
 
@@ -74,6 +66,7 @@ To disable via App Manager,
 
 To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) to stop the Elasticsearch and search tuning modules,
 
+<!-- lb -s | grep 'commerce.elasticsearch|search.elasticsearch|search.experiences|search.tuning'-->
 1. Enter `lb -s | grep 'search' | grep 'elasticsearch|tuning'`
 
    You'll see several active bundles for the connector to Elasticsearch and the search tuning modules.
@@ -82,6 +75,7 @@ To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-
 
 ## Downloading the Solr Connector
 
+<!--How do Solr users get a hold of the right LPKG? This is in flux-->
 To install the Liferay Connector to Solr [7 or 8], navigate to [Liferay Marketplace](https://web.liferay.com/marketplace/) and download the app version that corresponds to your Liferay version.
 
    - **Liferay CE:**
@@ -96,7 +90,9 @@ Refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en
 
 ## Installing and Configuring Solr
 
-**Before proceeding, stop the Liferay instance.**
+```{important}
+Before proceeding, stop Liferay.
+```
 
 To install and properly configure Solr for Liferay:
 
@@ -104,7 +100,7 @@ To install and properly configure Solr for Liferay:
    - Liferay 7.1-7.3: [Solr 8.6.3](https://archive.apache.org/dist/lucene/solr/8.6.3/) 
    - Liferay 7.1-7.2: [Solr 7.5.0](http://archive.apache.org/dist/lucene/solr/7.5.0/)
 
-1. Navigate to Solr Home (`solr-[version]/server/solr`) and create a new folder called `liferay`.
+1. Navigate to `solr-[version]/server/solr` and create a new folder called `liferay`.
 
 1. Create two new subfolders: `liferay/conf` and `liferay/data`.
 

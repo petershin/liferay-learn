@@ -1,8 +1,6 @@
 # Solr Limitations 
 
-```{important}
-Liferay's Solr support is deprecated. Please plan to migrate to [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md).
-```
+Liferay's Solr support is limited. Some Liferay features and APIs cannot be used when you choose Solr as the search engine. Install [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) for the best experience.
 
 ## Search Results Quality
 

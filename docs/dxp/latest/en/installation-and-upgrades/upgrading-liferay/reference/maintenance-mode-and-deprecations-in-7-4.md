@@ -59,7 +59,6 @@ Here are the features deprecated in 7.4:
 | Polls | Removed | Replaced by [Forms/Forms Reports](../../../process-automation/forms/sharing-forms-and-managing-submissions/form-reports.md). |
 | Search widget (classic) | Bundled | Deprecated in 7.1. It is replaced by the [Search widgets](../../../using-search/search-pages-and-widgets/search-results/search-results.md). |
 | SOAP Web Services | Bundled (disabled by default) | Replaced by JSON web services, REST services, and GraphQL services. |
-| Solr Connector | Removed | Deprecated in 7.3. It is replaced by Elasticsearch. |
 | Theme: Hello World | Archived | Deprecated in 7.3. There is no direct replacement. |
 | Web Content Search widget | Archived |  |
 
@@ -77,6 +76,7 @@ Here are the features moved to Maintenance Mode in 7.4:
 | Feature | Notes |
 | :------ | :---- |
 | Kaleo Forms | To be replaced replaced by business processes for [Liferay Objects](../../../building-applications/objects.md). |
+| Solr Connector | Limited support. [Use Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md) if possible. |
 
 ```{note}
 Liferay continues to improve Import/Export and Staging, particularly for Remote Live Staging in scenarios that require content to be created in one environment and consumed in another. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.

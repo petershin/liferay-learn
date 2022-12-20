@@ -55,7 +55,6 @@ Here are the features deprecated in 7.3:
 | Screens | Github - iOS: [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0), Android: [5.1.0](https://github.com/liferay/liferay-screens/releases/tag/5.1.0-android) |  Use the [Mobile SDK](https://help.liferay.com/hc/en-us/articles/360020447511-Mobile-SDK) and the [Headless APIs](../../../headless-delivery/using-liferay-as-a-headless-platform.md). |
 | Search widget (classic) in *Tools* category | Bundled | Deprecated in 7.1. Replaced by the [Search widgets](../../../using-search/search-pages-and-widgets/search-results/search-results.md) in the *Search* category. |
 | SOAP Web Services | Bundled (disabled) | The Axis Servlet (e.g., publishes services to `http://localhost:8080/api/axis/`) can be enabled with this Portal Property setting `axis.servlet.enabled`. Liferay `*SOAP` classes are deprecated. |
-| Solr | Marketplace | Replaced by Elasticsearch. |
 | Theme: Fjord | Archived | No direct replacement. |
 | Theme: Hello World | Bundled | No direct replacement. |
 | Theme: Porygon | Archived | No direct replacement. |

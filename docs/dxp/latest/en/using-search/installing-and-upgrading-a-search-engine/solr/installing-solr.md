@@ -2,12 +2,10 @@
 
 Solr is a popular enterprise search platform built on Apache Lucene. It's reliable, scalable, and fault tolerant. Read more about it [here](http://lucene.apache.org/solr/).
 
-These instructions describe installing Solr 8 for Liferay 7.1 through 7.3. They apply equally to installing Solr 7 for Liferay 7.1-7.2, but some adjustments for version name may be necessary.
+These instructions describe installing Solr 8 for the [compatible Liferay versions](https://help.liferay.com/hc/en-us/articles/360016511651-Search-Engine-Compatibility-Matrix). If installing Solr 7, adjust the version name as necessary.
 
 ```{important}
--  Liferay's Solr support is deprecated; Solr 8 is the last supported Solr version. Please plan to migrate to [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md).
-
--  There are important limitations to be aware of when installing Solr. Read [Solr Limitations](./solr-limitations.md) before proceeding with the installation.
+-  There are important limitations when using Solr. Read [Solr Limitations](./solr-limitations.md) before installing.
 ```
 
 As you proceed, remember these terms: 

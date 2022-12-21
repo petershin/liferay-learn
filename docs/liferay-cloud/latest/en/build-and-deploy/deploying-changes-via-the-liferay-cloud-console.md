@@ -9,7 +9,7 @@ For an alternative deployment workflow, see [Deploying Changes via the CLI Tool]
 ```
 
 * [Adding a Portal Property to the Liferay Service](#adding-a-portal-property-to-the-liferay-service)
-* [Triggering a Jenkins Build with GitHub](#triggering-a-jenkins-build-with-github)
+* [Triggering a Jenkins Build with a Pull Request](#triggering-a-jenkins-build-with-a-pull-request)
 * [Deploying Your New Build via the Liferay Cloud Console](#deploying-your-new-build-via-the-liferay-cloud-console)
 * [Verifying Your Sample Deployment](#verifying-your-sample-deployment)
 

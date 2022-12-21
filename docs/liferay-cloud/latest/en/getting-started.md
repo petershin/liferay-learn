@@ -36,7 +36,7 @@ Liferay Cloud accelerates application development and deployment by providing a 
 
 Every Liferay Cloud project comes with:
 
-* [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-ci-cd)
+* [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-cicd)
 * [Application Development Tools](#application-development-tools)
 * [Insightful Monitoring](#insightful-monitoring)
 

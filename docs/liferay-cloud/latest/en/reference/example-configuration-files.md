@@ -4,7 +4,7 @@ Different services in Liferay Cloud (such as the [search](../platform-services/s
 
 ## Web Server Service Configuration (nginx.conf)
 
-The web server service uses an [Nginx](link) server to manage web traffic. Here is an example `nginx.conf` file:
+The web server service uses an [Nginx](https://docs.nginx.com/) server to manage web traffic. Here is an example `nginx.conf` file:
 
 ```{literalinclude} ./example-configuration-files/resources/nginx.conf
 :lines: 1-81

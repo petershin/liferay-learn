@@ -1,6 +1,6 @@
 # Liferay Service Environment Variables
 
-The Liferay service has a [range of environment variables](#environoment-variables-reference) that are used to configure the service, its connection to other services, and the DXP installation itself. You can use Liferay Cloud-specific environment variables, or you can define variables that override DXP [portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html).
+The Liferay service has a [range of environment variables](#environment-variables-reference) that are used to configure the service, its connection to other services, and the DXP installation itself. You can use Liferay Cloud-specific environment variables, or you can define variables that override DXP [portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html).
 
 ## Overriding Portal Properties
 

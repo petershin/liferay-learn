@@ -36,7 +36,7 @@ Perform these steps to update and deploy changes in your project repository:
 
 1. Find the tag for the version of Liferay you are updating to on [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags).
 
-1. In your repository, change the value of the `liferay.workspace.docker.image.liferay` property in [`liferay/gradle.properties`](./introduction-to-the-liferay-dxp-service.md#choosing-a-version) to the new version's tag:
+1. In your repository, change the value of the `liferay.workspace.docker.image.liferay` property in [`liferay/gradle.properties`](../using-the-liferay-dxp-service.md#choosing-a-version) to the new version's tag:
 
     ```properties
     liferay.workspace.docker.image.liferay=liferay/dxp:7.3.10-ga1
@@ -52,7 +52,7 @@ Perform these steps to update and deploy changes in your project repository:
 
 1. [Deploy the change](./deploying-to-the-liferay-service.md) to the desired environment's `liferay` service.
 
-1. For versions 7.3+ of DXP, if you do not intend to allow modules to upgrade when upgrading to new fix packs or service packs in the future, then remove the `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` environment variable [you previously added](#enabling-module-upgrades-for-dxp) to the Liferay service's Environment Variables page.
+1. For versions 7.3+ of DXP, if you do not intend to allow modules to upgrade when upgrading to new fix packs or service packs in the future, then remove the `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` environment variable [you previously added](#enabling-module-upgrades-for-dxp-73) to the Liferay service's Environment Variables page.
 
 Once you have deployed the changes, the `liferay` service restarts and begins any upgrade steps necessary to complete the update.
 
@@ -106,7 +106,7 @@ Follow these steps:
 
 1. [Deploy the changes](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) one more time.
 
-1. For versions 7.3+ of DXP, if you do not intend to allow modules to upgrade when upgrading to new fix packs or service packs in the future, then remove the `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` environment variable [you previously added](#enabling-module-upgrades-for-dxp) to the Liferay service's Environment Variables page.
+1. For versions 7.3+ of DXP, if you do not intend to allow modules to upgrade when upgrading to new fix packs or service packs in the future, then remove the `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` environment variable [you previously added](#enabling-module-upgrades-for-dxp-73) to the Liferay service's Environment Variables page.
 
 The updated `liferay` service starts back up with the desired number of nodes after the final deployment.
 

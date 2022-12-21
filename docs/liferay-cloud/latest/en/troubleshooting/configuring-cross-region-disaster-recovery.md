@@ -87,8 +87,11 @@ Continuing the example above, assume that the Production environment hosted in t
 During a cross-region incident, follow these steps:
 
 1. [Disable the Database Restoration Schedule](#disable-the-database-restoration-schedule)
+
 1. [Copy Latest Production Data to the DR Environment](#copy-latest-production-data-to-the-dr-environment)
-1. [Verify the DR Environment's VPN Status and Reindex](#verify-the-dr-environment-s-vpn-status-and-reindex)
+
+1. [Verify the DR Environment's VPN Status and Reindex](#verify-the-dr-environments-vpn-status-and-reindex)
+
 1. [Direct Custom Domain Traffic to the DR Environment](#direct-custom-domain-traffic-to-the-dr-environment)
 
 ### Disable the Database Restoration Schedule
@@ -120,6 +123,7 @@ If you were using the `LCP_BACKUP_RESTORE_SCHEDULE` environment variable to regu
 Follow these steps to restore the latest stable backup of Production to the DR environment:
 
 1. In the DR environment, click the *Backups* tab.
+
 1. Click the tab corresponding to the Production environment.
 
     ```{note}
@@ -153,9 +157,13 @@ Allow some time for the reindex to complete.
 The web server service's custom domain in the DR environment must match the original Production environment's. You must also delete that configuration from the Production environment: 
 
 1. In the DR environment, select *Services* in the left menu.
+
 1. Click *webserver* in the list of Services.
+
 1. Click the *Custom Domains* tab and configure the custom domain to match that of the Production environment.
+
 1. Navigate to the same settings in the Production environment and remove the custom domain configuration.
+
 1. Update the DNS records and add the custom domain to the DR environment. For more information, see [Custom Domains](../infrastructure-and-operations/networking/custom-domains.md).
 
 This causes all traffic to go to the DR environment.
@@ -167,10 +175,15 @@ This causes all traffic to go to the DR environment.
 Once the regional incident is over, you must shift back to the original region's Production environment (*europe-west2* in the example). Follow these steps:
 
 1. [Put a Freeze on Data Creation](#put-a-freeze-on-data-creation)
+
 1. [Create a Manual Backup of the DR Environment](#create-a-manual-backup-of-the-dr-environment)
+
 1. [Restore the Manual Backup to Production](#restore-the-manual-backup-to-production)
+
 1. [Verify VPN Status and Reindex](#verify-vpn-status-and-reindex)
+
 1. [Restore Server Custom Traffic to Production](#restore-server-custom-traffic-to-production)
+
 1. [Restore the Database Restoration Schedule](#restore-the-database-restoration-schedule)
 
 ### Put a Freeze on Data Creation
@@ -182,6 +195,7 @@ To prevent data loss from recent changes when you switch back to your normal pro
 During the incident, the DR environment functions as the Production environment and therefore contains all new data generated during the disaster event. To preserve this data, you must back up the DR environment: 
 
 1. In the DR environment, click *Backups* in the menu on the left.
+
 1. Click *Backup Now*.
 
 ![Create a manual backup of the DR environment.](./configuring-cross-region-disaster-recovery/images/08.png)
@@ -191,6 +205,7 @@ During the incident, the DR environment functions as the Production environment 
 Restore the data from your DR environment back to your normal production environment:
 
 1. In the DR environment, click *Backups* in the menu on the left.
+
 1. Click the tab corresponding to the DR environment.
 
     ```{note}
@@ -198,6 +213,7 @@ Restore the data from your DR environment back to your normal production environ
     ```
 
 1. For the most recent backup (the one you just created), click the *Actions* button (![Actions](./configuring-cross-region-disaster-recovery/images/03.png)) and select *Restore*.
+
 1. Select the Production environment and click *Deploy Build*.
 
 ![Deploy the backup to the Production environment.](./configuring-cross-region-disaster-recovery/images/09.png)
@@ -223,7 +239,9 @@ Allow some time for the reindex to complete.
 Because the webserver service redirected all traffic to the DR environment during the incident, these settings must be updated again so that all traffic is redirected back to the original Production environment.
 
 1. Navigate to _Services_ on the left menu.
+
 1. Click on _webserver_ in the list of Services.
+
 1. Click the _Custom Domains_ tab.
 
    ![Remove the custom domain from the DR environment.](./configuring-cross-region-disaster-recovery/images/10.png)
@@ -235,6 +253,7 @@ Because the webserver service redirected all traffic to the DR environment durin
     ```
 
 1. Update the DNS records and add the custom domain back to the Production environment. For more information, see [Custom Domains](../infrastructure-and-operations/networking/custom-domains.md).
+
 1. Click _Update Custom Domain_.
 
 Traffic should now be directed back to the original Production environment. If you do not use automatically scheduled database restores to your DR environment, the disaster recovery process is complete.

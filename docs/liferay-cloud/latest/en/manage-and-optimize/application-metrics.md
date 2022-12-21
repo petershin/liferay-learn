@@ -99,6 +99,6 @@ Log in with your Dynatrace credentials to check log trails and create custom das
 
 ## Additional Information
 
-* [Introduction to the Liferay DXP Service](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
+* [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Real-Time Alerts](./real-time-alerts.md)
 * [Quotas](./quotas.md)

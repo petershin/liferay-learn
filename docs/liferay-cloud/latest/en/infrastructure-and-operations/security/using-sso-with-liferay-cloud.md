@@ -21,7 +21,7 @@ Client who wish to enable SSO for their Liferay Cloud project will need to provi
 | Field | Description |
 | :--- | :--- |
 | IdP Issuer | The name of the identity issuer; usually the `EntityID` attribute of the `EntityDescriptor` Metadata |
-| IdP Single Sign-On URL | Request endpoint that will receive the SAML Authentication Request (example: <http://adfs.customer.com/saml/sso)> |
+| IdP Single Sign-On URL | Request endpoint that will receive the SAML Authentication Request (example: `<http://adfs.customer.com/saml/sso)>` |
 | IdP Signature Certificate | Public Key Certificate of the IdP to the SAML message and assertion signatures |
 | IdP Single Sign-On HTTP Method (Request Binding) | The HTTP method supported by the customer’s Identity Provider to receive the Authentication Requests; the only valid answers are `POST` (the default) and `GET` |
 | Sign Requests | Set to `TRUE` if the SAML requests sent to the Customer’s Identity Provider should be signed; otherwise set to `FALSE` |
@@ -33,11 +33,11 @@ Clients using Microsoft ADFS should pay attention to the following settings whic
 
 | Field | Description |
 | :--- | :--- |
-| IdP Issuer URI |Located in the General tab's _Federation Service identifier_ and has a default value of <http://domain/adfs/services/trust> |
-| IdP Single Sign-On URL | Default setting is `/adfs/ls`. Example: <http://adfs.example.com/adfs/ls/> |
+| IdP Issuer URI |Located in the General tab's _Federation Service identifier_ and has a default value of `<http://domain/adfs/services/trust>` |
+| IdP Single Sign-On URL | Default setting is `/adfs/ls`. Example: `<http://adfs.example.com/adfs/ls/>` |
 | IdP Signing Certificate | A DER encoded binary X.509 certificate file |
 
-Once the IdP metadata has been generated, [open a ticket with the Liferay Cloud team](https://help.liferay.com/hc/). IdP metadata can be transmitted in the form of either an XML file or a URL endpoint (<https://localhost:8080/c/saml/metadata> is a basic example).
+Once the IdP metadata has been generated, [open a ticket with the Liferay Cloud team](https://help.liferay.com/hc/). IdP metadata can be transmitted in the form of either an XML file or a URL endpoint (`<https://localhost:8080/c/saml/metadata>` is a basic example).
 
 ### Liferay Cloud Team Imports Provided IdP Data and Provides Service Provider Metadata
 

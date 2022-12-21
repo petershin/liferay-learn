@@ -161,7 +161,7 @@ If you are using version 3.x.x services, then licenses instead belong in the `lc
 
 ## Additional Information
 
-* [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
+* [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
 * [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLI Tool](../reference/command-line-tool.md)

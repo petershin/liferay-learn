@@ -5,7 +5,7 @@ Getting started with Liferay Cloud involves ensuring all accounts, environments,
 - [Check Setup Emails](#check-setup-emails)
 - [Access the Liferay Cloud Console](#access-the-liferay-cloud-console)
 - [Access the Provisioned Project Source Code](#access-the-provisioned-project-source-code)
-- [Log in to Your CI and Liferay Services](#log-in-to-your-ci-and-dxp-services)
+- [Log in to Your CI and Liferay Services](#log-in-to-your-ci-and-liferay-services)
 - [Verify Setup](#verifying-setup)
 
 ## Check Setup Emails

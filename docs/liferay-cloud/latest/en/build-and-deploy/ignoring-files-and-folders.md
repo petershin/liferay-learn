@@ -41,5 +41,5 @@ If a file or folder has been deployed and administrators want to ignore it later
 
 ## Additional Information
 
-* [Introduction to the Liferay Service](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
+* [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Configuring the Liferay Service](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)

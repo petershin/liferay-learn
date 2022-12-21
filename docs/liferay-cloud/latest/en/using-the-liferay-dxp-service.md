@@ -16,7 +16,7 @@ The Liferay service is the heartbeat of any project. It runs the application's L
 
 The Liferay service in Liferay Cloud can be used in many of the same ways as an on-premise instance of Liferay DXP. However, there are also several differences in configuration and development workflow when working with an instance in Liferay Cloud.
 
-See the [Liferay service limitations](../reference/platform-limitations.md#liferay-service) for more information.
+See the [Liferay service limitations](./reference/platform-limitations.md#liferay-service) for more information.
 
 * [Choosing a Version](#choosing-a-version)
 * [Deployment (Customization, Patching, and Licensing)](#deployment-customization-patching-and-licensing)
@@ -53,13 +53,13 @@ Deploying custom additions to Liferay DXP involves adding the new module, licens
 
 With the exception of the `common/` directory, changes added to an environment-specific folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to a `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to all subfolders within the `configs/` directory, for all services.
 
-Because the Liferay service provides many more means of customization compared to other services (such as adding hotfixes, building your module's source code), there are several more considerations to make when deploying the service. See [Deploying to the Liferay Service](./deploying-to-the-liferay-service.md) for more information. Additionally, see [Overview of the Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) for more information on how the deployment workflow in general. For a tutorial on deploying to Liferay Cloud, see [Deploying Changes via the DCP Cloud Console](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md).
+Because the Liferay service provides many more means of customization compared to other services (such as adding hotfixes, building your module's source code), there are several more considerations to make when deploying the service. See [Deploying to the Liferay Service](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) for more information. Additionally, see [Overview of the Deployment Workflow](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) for more information on how the deployment workflow in general. For a tutorial on deploying to Liferay Cloud, see [Deploying Changes via the DCP Cloud Console](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md).
 
 ## Configuration
 
-Applying configurations to the Liferay service, like `portal.properties` changes, requires adding them to the Git repository and pushing the changes to Git. For more information on adding these configuration files, see [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md).
+Applying configurations to the Liferay service, like `portal.properties` changes, requires adding them to the Git repository and pushing the changes to Git. For more information on adding these configuration files, see [Configuring the Liferay DXP Service](./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md).
 
-Environment variables are also used to configure the Liferay service and, in some cases, override portal properties. See [Liferay Service Environment Variables](./liferay-service-environment-variables.md) for more information.
+Environment variables are also used to configure the Liferay service and, in some cases, override portal properties. See [Liferay Service Environment Variables](./using-the-liferay-dxp-service/liferay-service-environment-variables.md) for more information.
 
 ## Hot Deploy
 
@@ -71,7 +71,7 @@ Using hot deploy in Liferay Cloud is *not* recommended because any customization
 
 ## Enabling Clustering
 
-Clustering Liferay DXP in Liferay Cloud is a very simplified process compared to doing so in Liferay DXP. Support for clustering is available and enabled out-of-the-box in Liferay Cloud. Additional configurations for clustering behavior and scale does require a few extra steps. See [Setting Up Clustering in Liferay Cloud](./setting-up-clustering-in-liferay-cloud.md) for more information.
+Clustering Liferay DXP in Liferay Cloud is a very simplified process compared to doing so in Liferay DXP. Support for clustering is available and enabled out-of-the-box in Liferay Cloud. Additional configurations for clustering behavior and scale does require a few extra steps. See [Setting Up Clustering in Liferay Cloud](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) for more information.
 
 ## Running Scripts
 

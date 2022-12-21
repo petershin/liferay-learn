@@ -32,7 +32,7 @@ Take note of this information for future steps.
 
 ## Clone the Liferay Cloud Repository
 
-Liferay Cloud provides a repository on [GitHub](https://github.com/) together with your project. You must have a clone of the repository locally to make configurations to some files in your project, such as each service's [LCP.json file](../reference/configuration-via-lcp-json.html).
+Liferay Cloud provides a repository on [GitHub](https://github.com/) together with your project. You must have a clone of the repository locally to make configurations to some files in your project, such as each service's [LCP.json file](../reference/configuration-via-lcp-json.md).
 
 If you have not already cloned the repository, then use any terminal with [Git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to clone it locally:
 

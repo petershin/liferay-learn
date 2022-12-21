@@ -15,7 +15,7 @@ For every connection configured in this private network, you must specify these 
 `external`: Whether your connection is available to external connections. The default value `false` restricts the connection to internal Liferay Cloud connections.
 
 ```{tip}
-If you expose a connection to external connections, then you may need to troubleshoot the connection using your service's shell. See [Shell Access](../../troubleshooting/shell-access.md)_ for more information.
+If you expose a connection to external connections, then you may need to troubleshoot the connection using your service's shell. See [Shell Access](../../troubleshooting/shell-access.md) for more information.
 ```
 
 Here's an example configuration: 

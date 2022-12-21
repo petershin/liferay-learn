@@ -5,7 +5,7 @@ The ability to quickly diagnose and resolve technical issues is vital. Familiari
 * [Application Metrics](#application-metrics)
 * [Real-Time Alerts](#real-time-alerts)
 * [Environment Activities](#environment-activities)
-* [Environment Logs](#environment-service-logs)
+* [Environment Logs](#environment-logs)
 * [Shell Access](#shell-access)
 * [Self-Healing](#self-healing)
 * [Disaster Recovery](#disaster-recovery)
@@ -25,7 +25,7 @@ With Liferay Cloud’s built-in monitoring, users can track resources used by ea
 
 Metrics are available for the default Liferay Cloud stack services: Webserver, Liferay, Search, Database, and Backup. CI metrics are also available in the infra environment.
 
-![Figure 1: View application metrics via the Monitoring page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/01.png)
+![View application metrics via the Monitoring page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/01.png)
 
 Users can also integrate [Dynatrace’s](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) advanced performance monitoring with production environments.
 
@@ -37,7 +37,7 @@ Liferay Cloud can alert system administrators of unexpected behaviors in a proje
 
 View all environment alerts and set alert preferences via the Liferay Cloud console.
 
-![Figure 2: View and manage alerts via the Alerts page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/02.png)
+![View and manage alerts via the Alerts page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/02.png)
 
 See [Real-Time Alerts](../manage-and-optimize/real-time-alerts.md) for more information.
 
@@ -47,7 +47,7 @@ Users can monitor environment activities via the Liferay Cloud console, where th
 
 View the status of builds, deployments, service activities, and more to help troubleshoot environment issues.
 
-![Figure 3: View environment activities from the Liferay Cloud console](./troubleshooting-tools-and-resources/images/03.png)
+![View environment activities from the Liferay Cloud console](./troubleshooting-tools-and-resources/images/03.png)
 
 See [Team Activities](../manage-and-optimize/team-activities.md) for more information.
 
@@ -61,7 +61,7 @@ Application, status, and build logs are provided for each Liferay Cloud Service:
 * **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster.
 * **Build Logs**: These logs list build information generated as the application boots up.
 
-![Figure 4: View logs via the Logs page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/04.png)
+![View logs via the Logs page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/04.png)
 
 See [Log Management](./reading-liferay-cloud-service-logs.md) for more information.
 
@@ -71,7 +71,7 @@ Command-line tools in the Liferay Cloud console contribute to the developer's wo
 
 When troubleshooting issues, use the shell access tool to look inside your applications and see details not easily spotted in logs.
 
-![Figure 5: Use the shell access tool in the Liferay Cloud console to see what's going on inside your application.](./troubleshooting-tools-and-resources/images/05.png)
+![Use the shell access tool in the Liferay Cloud console to see what's going on inside your application.](./troubleshooting-tools-and-resources/images/05.png)
 
 The shell is accessible in most services, including the `liferay`, `search`, and `webserver` services. It can be used to access the server's file system directly and run commands for troubleshooting purposes.
 
@@ -112,7 +112,7 @@ Users can view the status of Liferay Cloud Platform systems, planned maintenance
 
 To receive notifications of changes in the Cloud Platform's status, click on *Subscribe to Updates*, and select your preferred method of notification.
 
-![Figure 6: View the status of Liferay Cloud Platform systems.](./troubleshooting-tools-and-resources/images/06.png)
+![View the status of Liferay Cloud Platform systems.](./troubleshooting-tools-and-resources/images/06.png)
 
 See [Liferay Cloud Platform Status](./liferay-cloud-platform-status) for more information.
 
@@ -122,15 +122,15 @@ Support Access is an optional environment setting that expedites troubleshooting
 
 By default, Support Access is enabled in each project environment, though administrators can disable it from the *Settings* page.
 
-![Figure 07: Environment administrators can enable or disable Support Access in the Settings page](./troubleshooting-tools-and-resources/images/07.png)
+![Environment administrators can enable or disable Support Access in the Settings page](./troubleshooting-tools-and-resources/images/07.png)
 
 See [Support Access](./support-access.md) for more information.
 
 ## Help Center
 
-If you have questions not answered by Liferay Cloud [Documentation](https://learn.liferay.com/liferay-cloud-latest/) or would like to report an issue, sign in to the Liferay [Help Center](https://help.liferay.com/) to view subscription-only resources or submit a ticket.
+If you have questions not answered by Liferay Cloud [Documentation](https://learn.liferay.com/liferay-cloud/latest/en/index.html) or would like to report an issue, sign in to the Liferay [Help Center](https://help.liferay.com/) to view subscription-only resources or submit a ticket.
 
-![Figure 08: View subscription-only resources or submit a ticket via the Liferay Help Center page](./troubleshooting-tools-and-resources/images/08.png)
+![View subscription-only resources or submit a ticket via the Liferay Help Center page](./troubleshooting-tools-and-resources/images/08.png)
 
 From here, users can access the Liferay Cloud [Knowledge Base](https://help.liferay.com/hc/en-us/categories/360001132872), [Product Support](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview), and [Announcements](https://help.liferay.com/hc/en-us/categories/360001192512).
 

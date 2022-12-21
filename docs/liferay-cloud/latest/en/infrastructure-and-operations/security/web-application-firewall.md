@@ -72,7 +72,7 @@ The rule set is interpreted once you [enable ModSecurity](#enabling-modsecurity)
 
 When [enabled](#enabling-modsecurity), ModSecurity automatically generates audit logs, recording detailed information for all transactions. To view the logged information, open the `modsec_audit.log` file in your web server's `/var/log` directory.
 
-If you [configure ModSecurity by providing your own `modsecurity.conf` file](#changing-modsecurity-s-configuration), you can log the information in the web server's console (where you can download it) instead of `modsec_audit.log`. Change this line in your `modsecurity.conf` file:
+If you [configure ModSecurity by providing your own `modsecurity.conf` file](#changing-modsecuritys-configuration), you can log the information in the web server's console (where you can download it) instead of `modsec_audit.log`. Change this line in your `modsecurity.conf` file:
 
 ```
 SecAuditLog /var/log/modsec_audit.log

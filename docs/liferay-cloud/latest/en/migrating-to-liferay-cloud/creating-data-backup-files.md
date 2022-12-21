@@ -12,13 +12,25 @@ Before you create your data backup files, you must arrange a window to freeze th
 
 ## Convert the Database to MySQL
 
-```{warning}
-Table and column names are treated with case sensitivity in Liferay Cloud. Make sure all of your own references to your database's tables or columns adhere to the same capitalization.
-```
-
 Make sure your database is compatible with MySQL 5.7. You can use a tool like [DBeaver](https://dbeaver.io/) to convert other database formats to MySQL.
 
 Coordinate with your database administrator before and after the conversion to ensure data integrity. Test the converted database by [connecting it to a local Liferay installation](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/configuring-a-database.html) before proceeding.
+
+### Ensuring Correct Table Capitalization
+
+Database table and column names are treated with case sensitivity in Liferay Cloud, and table names must be in Pascal case. Depending on the operating system and database type your environment used when your Liferay database was created, the tables may have names all in lower case, which are not recognized by Cloud infrastructure. For example, MySQL is case-sensitive in Linux by default, but not in Windows or MacOS (where Liferay may generate tables with all lower case names).
+
+Before you create a database dump, ensure that your database's tables have Pascal case capitalization. If they are not in Pascal case (i.e., all in lower case), you must convert them manually or with a script. You must also ensure that any of your own code that references the table names reflects the updated capitalization.
+
+For example, if the tables have names all lower case, then convert these names like this:
+
+* *accountentry* &rarr; *AccountEntry*
+
+* *cpdefinition* &rarr; *CPDefinition*
+
+* *trashentry* &rarr; *TrashEntry*
+
+You can use a [`RENAME TABLE`](https://dev.mysql.com/doc/refman/5.7/en/rename-table.html) command in MySQL to change a table's name. Please [submit a Support ticket](https://help.liferay.com) if you need assistance adjusting your table names.
 
 ## Create a Database Dump
 

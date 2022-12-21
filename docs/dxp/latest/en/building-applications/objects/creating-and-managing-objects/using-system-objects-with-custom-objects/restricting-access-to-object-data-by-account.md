@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4 U34+/GA34+`
 
-In scenarios with multiple business [accounts](../../../../users-and-permissions/accounts.md), you may want to restrict access to object entries by account. To do this, your custom object must have an active [relationship](../defining-object-relationships.md) with the Account system object, and you must configure the custom object to use this relationship for restricting entry data. Once set up, anyone adding entries to the custom object must select an account. This account becomes the entry's owner, so only account members can access it.
+In scenarios with multiple business [accounts](../../../../users-and-permissions/accounts.md), you may want to restrict access to object entries by account. To do this, your custom object must have an active [relationship](../defining-object-relationships.md) with the Account system object, and you must configure the custom object to use this relationship for restricting entry data. Once set up, anyone adding entries to the custom object must select an account. This account becomes the entry's owner. See [Account Restriction and User Roles](#account-restriction-and-user-roles) for an overview of how different types of roles relate to account restriction.
 
 ![Restrict access to custom object entries by account.](./restricting-access-to-object-data-by-account/images/01.png)
 
@@ -24,7 +24,21 @@ Follow these steps to use accounts to restrict access to custom Object entries:
 
 1. Click *Save*.
 
-This adds a new mandatory account selection field to the object, so anyone adding an entry must select an account. Available options are determined by the user's account memberships. Once set, only members of the selected account can access the entry.
+This adds a new mandatory account selection field to the object, so anyone adding an entry must select an account. Available options are determined by the user's account memberships. After entry creation, this relationship field value cannot be changed. The selected account becomes the entry's owner, and access to the data is determined by [user's roles](#account-restriction-and-user-roles).
+
+## Account Restriction and User Roles
+
+After restricting object data by account, data appears according to the user's roles. Users with regular roles can access all object data, while users with organization and account roles can only access data for their respective accounts.
+
+| Role Type | Description of Relationship |
+| :--- | :--- |
+| Regular Roles | Grant access to all object data. Access is not restricted by the user's account or organization roles. <!--ALT: Access is not restricted by the user's account or organization roles. Users with regular role permissions can access all of the object's data.-->  |
+| Organization Roles | Grant access to data for all accounts that belong to the organization. Access is restricted by an organization's accounts. <!--ALT: Access is restricted by an organization's accounts. Users with organization role permissions can access object data for all accounts belonging to the organization.--> |
+| Account Roles | Grant access to object data for an individual account. Access is limited by account. <!--ALT: Access is limited by account. Users with account role permissions can only access object data belonging to their specific accounts.--> |
+
+```{important}
+Account restriction does not support the Account Member and Organization User roles. These roles do not automatically grant access to related object data.
+```
 
 ## Additional Information
 
@@ -32,3 +46,4 @@ This adds a new mandatory account selection field to the object, so anyone addin
 * [Extending System Objects](../extending-system-objects.md)
 * [Defining Object Relationships](../relationships/defining-object-relationships.md)
 * [Accessing Accounts Data from Custom Objects](./accessing-accounts-data-from-custom-objects.md)
+* [Understanding Roles and Permissions](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

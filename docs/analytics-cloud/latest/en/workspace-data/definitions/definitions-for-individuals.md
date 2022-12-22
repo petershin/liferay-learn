@@ -8,4 +8,4 @@ To view a list of these attributes, navigate to *Settings* &rarr; *Workspace Dat
 
 All the different attributes for individuals are listed. Some attributes may be defined by more than one data source. 
 
-You can choose specific attributes for [creating segments](../../people/segments/creating-segments.md) or [creating a specific breakdown for individuals](../../people/individuals/individuals-dashboard.html#breakdown).
+You can choose specific attributes for [creating segments](../../people/segments/creating-segments.md) or [creating a specific breakdown for individuals](../../people/individuals/individuals-dashboard.md#breakdown).

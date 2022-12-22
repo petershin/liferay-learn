@@ -85,7 +85,7 @@ Your Liferay DXP installation must meet the following fix pack minimum requireme
 
 1. Make sure to [connect with a Liferay DXP 7.0 or 7.1 instance].
 
-1. Follow the steps for [adding a Liferay DXP data source](../getting-started/connecting-data-sources/connecting-liferay-dxp-using-oauth.md).
+1. Follow the steps for [adding a Liferay DXP data source](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
 1. If the error persists, make sure JSON web services are enabled on your DXP instance. They're enabled by default. If you disabled them using a [portal property](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) setting json.web.service.enabled=false (e.g., set in a [portal-ext.properties file](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)), delete the setting or set the property value to true.
 

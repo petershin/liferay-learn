@@ -54,8 +54,9 @@ Liferay DXP/Portal 7.4+では、メタデータを使用してオーバーライ
 この例では、`home`言語ファイル設定を次のように変更します。
 
 ```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
-:language:件のプロパティ
+:language: properties
 ```
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
@@ -108,7 +109,7 @@ Liferay DXP/Portal 7.4+では、メタデータを使用してオーバーライ
 オーバーライドしたい翻訳ファイルを選択します。 サンプルモジュールは、`home`言語ファイルをオーバーライドします。
 
 ```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
-:language:件のプロパティ
+:language: properties
 ```
 
 ```{important}
@@ -163,7 +164,7 @@ Provide-Capability:\
 この例では、`publish`言語ファイル設定を次のように変更します。
 
 ```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/resources/content/Language_en_US.properties
-:language:件のプロパティ
+:language: properties
 ```
 
 サンプルをデプロイする方法は次のとおりです。

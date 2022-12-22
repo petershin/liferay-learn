@@ -67,7 +67,7 @@ Analytics Cloudとの統合により、機械学習を活用した詳細なデ�
 
 ![プレビューパネルからさまざまなエクスペリエンスをプレビューできます。](./personalizing-site-experience/images/04.png)
 
-:::{grid} 2
+::::{grid} 2
 :gutter: 3 3 3 3
 
 :::{grid-item-card} セグメンテーション
@@ -83,5 +83,6 @@ Analytics Cloudとの統合により、機械学習を活用した詳細なデ�
 :::
 
 :::{grid-item-card} 自動化されたライブチャットシステムの実現
-:link: ./personalizing-site-experience/enabling-automated-live-chat-systems.md ::  
+:link: ./personalizing-site-experience/enabling-automated-live-chat-systems.md
 :::
+::::

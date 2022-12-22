@@ -148,7 +148,7 @@ src
 
 In `grant-type-authorization-code`, the first step is handled by the `Authorize.js` file. A request for authorization is made when the *Authorize* button is clicked.
 
-```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/components/Authorize.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/components/Authorize.js
 :language: javascript
 :lines: 6-18
 ```
@@ -157,14 +157,14 @@ In addition to the standard `clientId` and `clientSecret`, a `redirectUri` is al
 
 Clicking *Get Authorization Code* calls the `getCode` function to parse the authorization code. Then it can be passed in the access token request.
 
-```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/components/Authorize.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/components/Authorize.js
 :language: javascript
 :lines: 20-26
 ```
 
 Clicking *Get Token* calls the `getAuthToken` function in the `Requests.js` file.
 
-```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/utils/Requests.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/utils/Requests.js
 :language: javascript
 :lines: 3-29
 ```
@@ -186,7 +186,7 @@ The `Users.js` file parses the response for the `access_token`.
 
 Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
 
-```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/utils/Requests.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/utils/Requests.js
 :language: javascript
 :lines: 31-42
 ```
@@ -197,7 +197,7 @@ The access token is passed in the header of the API request as an `'Authorizatio
 
 In `grant-type-client-credentials`, the `Request.js` file's `getAuthToken` function is called when the *Get Token* button is clicked.
 
-```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-client-credentials/utils/Requests.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-client-credentials/utils/Requests.js
 :language: javascript
 :lines: 3-27
 ```
@@ -208,7 +208,7 @@ The `Users.js` file parses the response for the `access_token`.
 
 Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
 
-```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-client-credentials/utils/Requests.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-client-credentials/utils/Requests.js
 :language: javascript
 :lines: 29-40
 ```
@@ -219,7 +219,7 @@ The access token is passed along in the header of the API request as an `'Author
 
 In `grant-type-password`, the `Request.js` file's `getAuthToken` function is called when the *Get Token* button is clicked.
 
-```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-password/utils/Requests.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-password/utils/Requests.js
 :language: javascript
 :lines: 3-29
 ```
@@ -230,7 +230,7 @@ The `Users.js` file parses the response for the `access_token`.
 
 Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
 
-```{literalinclude} ./securing-your-app-with-oauth2/resources/liferay-c2b6-overlay/src/grant-type-password/utils/Requests.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-password/utils/Requests.js
 :language: javascript
 :lines: 31-42
 ```

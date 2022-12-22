@@ -68,7 +68,7 @@ h5v7-remote-app
 
 ### Understanding the `index.js` File
 
-   ```{literalinclude} ./creating-a-basic-custom-element-application/resources/liferay-h5v7.zip/h5v7-remote-app/src/index.js
+   ```{literalinclude} ./creating-a-basic-custom-element/resources/liferay-h5v7.zip/h5v7-remote-app/src/index.js
        :language: js
    ```
 

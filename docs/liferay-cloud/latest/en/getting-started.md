@@ -84,7 +84,7 @@ Keep track of application deployments and performance with real-time build and [
 
 ## Insightful Monitoring
 
-Liferay Cloud delivers [application metrics](./manage-and-optimize/application-metrics.md) so IT teams can understand the health and compute requirements of their sites over time. Administrators can also use out-of-the-box [Dynatrace integration](./manage-and-optimize/application-metrics.md#advanced-application-metrics-on-production) to quickly understand CPU and memory usage, data transfer rates, and more.
+Liferay Cloud delivers [application metrics](./manage-and-optimize/application-metrics.md) so IT teams can understand the health and compute requirements of their sites over time. Administrators can also use out-of-the-box [Dynatrace integration](./manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) to quickly understand CPU and memory usage, data transfer rates, and more.
 
 ![Use a variety of metrics to keep tabs on your Liferay Cloud services, including your Liferay DXP instances.](./getting-started/images/07.png)
 

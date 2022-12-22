@@ -184,7 +184,7 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
 
 ## Analyzing the Route Code
 
-```{literalinclude} ./using-routes-with-a-basic-remote-app/resources/liferay-j1v3.zip/j1v3-remote-app/src/index.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/index.js
     :language: js
     :lines: 1-34
 ```

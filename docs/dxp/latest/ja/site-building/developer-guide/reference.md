@@ -17,6 +17,7 @@ reference/fragments.md
 
 :::{grid-item-card} Fragments Toolkit コマンドリファレンス
 :link: ./reference/fragments/fragments-toolkit-command-reference.md ::.Fragments-Toolkitのコマンドリファレンスです。
+:::
 
 :::{grid-item-card} ページフラグメントエディタインタフェースリファレンス
 :link: ./reference/fragments/page-fragment-editor-interface-reference.md

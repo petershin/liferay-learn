@@ -123,13 +123,13 @@ Liferay Cloud コンソールまたはバックアップサービスの `LCP.jso
 バックアップの作成と削除の頻度を決定することは、データの保護とストレージの最適化に役立ちます。 **本番環境のみスケジュールされたバックアップを行うことができます。**
 
 ```{warning}
-Liferayインスタンス上でデータが能動的に変更されている間に作成されたバックアップは、一貫性のないデータを作成する危険性があります。データの不整合のリスクを軽減するために、アクティビティが少ない時間帯にバックアップを作成するように、バックアップスケジュールを設定します。 完全に一貫したバックアップを行うためには、データベース管理者と調整して、 [手動バックアップ](./backup-service-overview.md#creating-a-manual-backup) を行っている間は更新をフリーズするようにしてください。
+ Liferayインスタンス上でデータが能動的に変更されている間に作成されたバックアップは、一貫性のないデータを作成する危険性があります。データの不整合のリスクを軽減するために、アクティビティが少ない時間帯にバックアップを作成するように、バックアップスケジュールを設定します。 完全に一貫したバックアップを行うためには、データベース管理者と調整して、[手動バックアップ](./backup-service-overview.md#creating-a-manual-backup)を行っている間は更新をフリーズするようにしてください。
 ```
 
 自動バックアップのスケジュールを設定するには、2つの方法があります。
 
 * [コンソール経由](#configuring-the-schedule-via-the-console)
-* [環境変数の使用](#configuring-the-schedule-using-environment-variables)
+* [環境変数の利用](#configuring-the-schedule-using-environment-variables)
 
 ### コンソールでスケジュールを設定する
 
@@ -192,21 +192,26 @@ Liferay Cloud コンソールから環境変数を設定し、後で `backup/LCP
 
 ## 環境変数リファレンス
 
-| 名前                            | デフォルト値                     | 説明                                                                                                                                                                                          |
-|:----------------------------- |:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `LCP_BACKUP_CLEANUP_SCHEDULE` | 0 1 * *** | この変数は、 [Cronスケジューリングシンタックス](https://crontab.guru/) を使って、自動クリーニングをスケジュールします。 クリーンアップでは、バックアップ保持期間を超えたバックアップをすべて削除します。                                                                         |
-| `LCP_BACKUP_CREATE_SCHEDULE`  | `[5-55][0-1] * * *`        | この変数は、 [Cronスケジューリングシンタックス](https://crontab.guru/) を使用して、自動バックアップをスケジュールします。 バックアップサービスのバージョン `3.2.1` 以降では、値を指定しない場合、ランダムなデフォルト値が作成されます。                                                     |
-| `LCP_BACKUP_RESTORE_SCHEDULE` | 該当なし                       | この変数は、 [Cronスケジューリングシンタックス](https://crontab.guru/) を使用して、自動復元をスケジュールします。 [Disaster Recovery environments](../../troubleshooting/configuring-cross-region-disaster-recovery.md)での使用を目的としています。 |
-| `LCP_BACKUP_RETENTION_PERIOD` | `30`                       | この変数は、スケジュールされたクリーンアップでどのバックアップを削除するかを決定します。 クリーンアップによって削除される前にバックアップを保持する日数を選択します。 最大保存期間は30日です。                                                                                           |
-| `LCP_DATABASE_SERVICE`        | `database`                 | データベースサービスのID。                                                                                                                                                                              |
-| `LCP_DBNAME`                  | `lportal`                  | データベース名。                                                                                                                                                                                    |
-| `LCP_DEBUG_LOG`               | `false`                    | Backupサービスのデバッグログを有効にします。 `true` または `false`に設定します。                                                                                                                                         |
-| `LCP_MASTER_USER_NAME`        | `dxpcloud`                 | マスターユーザー名です。                                                                                                                                                                                |
-| `LCP_MASTER_USER_PASSWORD`    | `LCP_PROJECT_MASTER_TOKEN` | マスターパスワードです。                                                                                                                                                                                |
+| 名前                                              | デフォルト値                     | 説明                                                                                                                                                                                          |
+|:----------------------------------------------- |:-------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `LCP_BACKUP_CLEANUP_SCHEDULE`                   | 0 1 * *** | この変数は、 [Cronスケジューリングシンタックス](https://crontab.guru/) を使って、自動クリーニングをスケジュールします。 クリーンアップでは、バックアップ保持期間を超えたバックアップをすべて削除します。                                                                         |
+| `LCP_BACKUP_CREATE_SCHEDULE`                    | `[5-55][0-1] * * *`        | この変数は、 [Cronスケジューリングシンタックス](https://crontab.guru/) を使用して、自動バックアップをスケジュールします。 バックアップサービスのバージョン `3.2.1` 以降では、値が指定されていない場合、ランダムなデフォルトが作成されます。                                                   |
+| `LCP_BACKUP_RESTORE_SCHEDULE`                   | 該当なし                       | この変数は、 [Cronスケジューリングシンタックス](https://crontab.guru/) を使用して、自動復元をスケジュールします。 [Disaster Recovery environments](../../troubleshooting/configuring-cross-region-disaster-recovery.md)での使用を目的としています。 |
+| `LCP_BACKUP_RESTORE_STRATEGY`                   | `OVERWRITE`                | デフォルトでは、既存のインスタンスは直ちに停止されます。 既存のインスタンスを停止する前に、新しいデータベースインスタンスとボリュームを起動するには、 `PREPARE_AND_SWAP` 戦略を使用します。                                                                                    |
+| `LCP_BACKUP_RETENTION_PERIOD`                   | `30`                       | この変数は、スケジュールされたクリーンアップでどのバックアップを削除するかを決定します。 クリーンアップによって削除される前にバックアップを保持する日数を選択します。 最大保存期間は30日です。                                                                                           |
+| `LCP_DATABASE_SERVICE`                          | `database`                 | データベースサービスのID。                                                                                                                                                                              |
+| `LCP_DBNAME`                                    | `lportal`                  | データベース名。                                                                                                                                                                                    |
+| `LCP_DEBUG_LOG`                                 | `false`                    | Backupサービスのデバッグログを有効にします。 `true` または `false`に設定します。                                                                                                                                         |
+| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`            | `6`                        | バックアップのアップロードに失敗した場合に再試行する回数の最大値です。 この制限を超えると、アップロードは中断され、完全にやり直しになることがあります（最大2回まで）。                                                                                                        |
+| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY`        | `64`                       | `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`)で設定された各リトライ間の遅延時間（秒単位）。                                                                                                                                |
+| `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` | `3`                        | `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY` で設定された遅延時間を、その後の再試行ごとに乗算します。                                                                                                                       |
+| `LCP_GCP_STORAGE_UPLOAD_TIMEOUT`                | `6000`                     | バックアップアップロード要求（または再試行）間の最大遅延時間（秒）。 `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` が遅延時間を増加できる量の上限を設定します。                                                                                   |
+| `LCP_MASTER_USER_NAME`                          | `dxpcloud`                 | マスターユーザー名。                                                                                                                                                                                  |
+| `LCP_MASTER_USER_PASSWORD`                      | `LCP_PROJECT_MASTER_TOKEN` | マスターパスワード。                                                                                                                                                                                  |
 
 ## 追加情報
 
 * [バックアップのダウンロードとアップロード](./downloading-and-uploading-backups.md)
 * [バックアップページからのデータの復元](./restoring-data-from-a-backup.md)
-* [LCP.jsonによるコンフィギュレーション](../../reference/configuration-via-lcp-json.md)
+* [LCP.jsonを介した設定](../../reference/configuration-via-lcp-json.md)
 * [データベースサービス(MySQL)](../database-service/database-service.md)

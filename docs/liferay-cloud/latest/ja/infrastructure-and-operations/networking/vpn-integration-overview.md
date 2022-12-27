@@ -22,7 +22,7 @@ VPN接続が設定されると、環境のログページで、ドロップダ�
 契約者は、Liferay Cloudのコンソール設定画面から、希望する環境のプロトコル（IPSecまたはOpenVPN）のいずれかを選択して接続を実行することができます。 コンソールUIでは、接続に任意の数の転送ポートを設定できます。
 
 ```{note}
-IPsecサーバで `IKEv2` プロトコルを使用すると、`MSCHAPv2` または `TLS` 認証プロトコルを使用することができます。 詳しくは、[IPsecサーバーの基本設定](./configuring-a-vpn-server.md#basic-setup-for-an-ipsec-server) をご覧ください。
+IPsecサーバで `IKEv2` プロトコルを使用すると、`MSCHAPv2` または `TLS` 認証プロトコルを使用することができます。 詳しくは、 [IPsecサーバーの基本設定](./configuring-a-vpn-server.md#basic-setup-for-an-ipsec-server) をご覧ください。
 ```
 
 詳しくは、 [Liferay Cloud に VPN サーバーを接続する](./connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。

@@ -117,11 +117,10 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
 
 1. もう一度[変更内容をデプロイします](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)。
 
-1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの「環境変数」ページで以前に追加した<1>`LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。</p></li> </ol> 
+1. DXPのバージョン7.3+の場合、今後新しいフィックスパックやサービスパックへのアップグレード時にモジュールのアップグレードを許可しないつもりであれば、Liferayサービスの「環境変数」ページで
+[以前に追加した](#enabling-module-upgrades-for-dxp) `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 環境変数を削除します。
    
    更新された `liferay` サービスは、最終的なデプロイメントの後、希望する数のノードで再起動します。
-   
-   
 
 ## 追加情報
 

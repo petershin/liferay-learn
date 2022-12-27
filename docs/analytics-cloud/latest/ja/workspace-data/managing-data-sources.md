@@ -1,6 +1,6 @@
 # データソースの管理
 
-ワークスペースに[データソースを接続](../connecting-data-sources.md)した後、設定ページからデータソースを表示し、変更を加えることができます。 ［**設定**］ &rarr; ［**ワークスペースデータ**］ &rarr; ［**データソース**］ へ移動します。
+[Liferay DXP](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) をワークスペースに接続した後、設定ページから閲覧・変更することができます。 ［**設定**］ &rarr; ［**ワークスペースデータ**］ &rarr; ［**データソース**］ へ移動します。
 
 ![設定で接続されているデータソースのリストを見ることができます。](./managing-data-sources/images/01.png)
 

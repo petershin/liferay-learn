@@ -2,7 +2,7 @@
 
 Liferay Cloud バックアップサービスは、環境のデータベースと `LIFERAY_HOME/data` フォルダーの全内容のバックアップを作成します。 このコンテンツはアーカイブファイル（それぞれ`.gz` と `.tgz` ）として保存されており、Liferay Cloud コンソールからダウンロードすることができます。
 
-ユーザーは、[Liferay Cloud Console](#uploading-backups-via-the-console)を使用して、または[Backup API](#backup-service-apis) を介して、環境のバックアップ
+ユーザーは、 [Liferay Cloud Console](#uploading-backups-via-the-console) を使用して、または [Backup API](#backup-service-apis) を介して、環境のバックアップ
 をダウンロードまたはアップロードすることもできます。
 
 ```{note}

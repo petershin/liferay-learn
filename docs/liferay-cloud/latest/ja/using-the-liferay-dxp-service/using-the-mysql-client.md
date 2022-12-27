@@ -15,7 +15,7 @@ Liferayサービスを通じてMySQLクライアントを使用する前に、�
 | **データベース** | liferaycloud/database:3.2.8                     |
 | **DXP (7.0を使用)** | liferaycloud/liferay-dxp:7.0.10-ga1-fp90-3.0.19 |
 | **DXP（7.1を使用)** | liferaycloud/liferay-dxp-7.1.10-ga1-fp17-3.0.19 |
-| **DXP（7.2を使用)**| liferaycloud/liferay-dxp-7.2.10-sp1-fp4-3.0.19  |
+| **DXP（7.2を使用)** | liferaycloud/liferay-dxp-7.2.10-sp1-fp4-3.0.19  |
 
 ```{warning}
 データベースイメージを MySQL クライアントをサポートするバージョンにアップグレードすると、データベースの読み取り専用ユーザが初期化されます。 アップグレード前にこのユーザーのパスワードを設定しなかった場合、デフォルトのパスワードが使用され、後で変更することはできません。 詳しくは、 [読み取り専用データベースのパスワード変更](#changing-the-read-only-database-password) を参照してください。

@@ -21,7 +21,7 @@ Liferay Cloud で開発するためのローカル環境を構築するために
   * [GitLab](https://gitlab.com/)
 
 ```{note}
-Liferay Cloudには、 [Liferay Workspace](https://help.liferay.com/hc/ja/articles/360029147471-Liferay-Workspace) と同様の前提条件があります。[Liferay Dev Studio](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191007&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191038)、 [Maven](https://help.liferay.com/hc/en-us/articles/360017885592-Maven-Workspace)、または[Liferay IntelliJ Plugin](https://plugins.jetbrains.com/plugin/10739-liferay-intellij-plugin)でLiferay Workspaceを作成し慣れた開発者は、必要なツールのほとんどをすでにセットアップしています。
+Liferay Cloudには、 [Liferay Workspace](https://help.liferay.com/hc/ja/articles/360029147471-Liferay-Workspace) と同様の前提条件があります。 [Liferay Dev Studio](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191007&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191038) 、 [Maven](https://help.liferay.com/hc/ja/articles/360017885592-Maven-Workspace) 、または [Liferay IntelliJ Plugin](https://plugins.jetbrains.com/plugin/10739-liferay-intellij-plugin) でLiferay Workspaceを作成し慣れた開発者は、必要なツールのほとんどをすでにセットアップしています。
 ```
 
 ## 追加情報

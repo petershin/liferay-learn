@@ -4,6 +4,8 @@
 
 また、カスタムSQLスクリプトを使用して、データ復元の一環としてデータベースの追加更新を行うこともできます。
 
+バックアップからデータを復元すると、データベースサービスやそれに依存するサービス（Liferayを含む）がダウンします。 ただし、バックアップサービスのバージョンが `5.x.x`以上の場合は、デフォルトの `OVERWRITE` restore behavior を `PREPARE_AND_SWAP`に変更することでダウンタイムを最小化することが可能です。 これは、別の新鮮なデータベースインスタンスとボリュームを開始し、準備ができたときにのみ新しいインスタンスに切り替えます。 [`LCP_BACKUP_RESTORE_STRATEGY` 環境変数](./backup-service-overview.md#environment-variables-reference) に `PREPARE_AND_SWAP` を設定すると、このストラテジーを使用することができます。
+
 バックアップページの詳細は、 [バックアップサービス](./backup-service-overview.md) および [バックアップのダウンロードとアップロード](./downloading-and-uploading-backups.md) を参照してください。
 
 ```{important}
@@ -68,7 +70,7 @@ SQLスクリプトでサポートされているフォーマットは以下の�
 SQLスクリプトを適切な、環境固有の `backup/configs/{ENV}/scripts/` フォルダに入れます。
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合は、SQLスクリプトは適切な`lcp/backup/script/{ENV}/`フォルダに置かれます。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../../reference/understanding-service-stack-versions.md) を参照してください。
+バージョン3.x.xのサービスを使用している場合は、SQLスクリプトは適切な`lcp/backup/script/{ENV}/`フォルダに置かれます。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../../reference/understanding-service-stack-versions.md) _を参照してください。
 ```
 
 ### データの復元の実行

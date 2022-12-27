@@ -10,7 +10,6 @@ toc:
 - ./build-and-deploy/configuring-persistent-file-storage-volumes.md
 - ./build-and-deploy/ignoring-files-and-folders.md
 ---
-
 # ビルドとデプロイ
 
 ```{toctree}
@@ -31,11 +30,11 @@ build-and-deploy/ignoring-files-and-folders.md
 
 ## Liferay Cloudへのデプロイメント
 
-- [デプロイタイプについて](./build-and-deploy/understanding-deployment-types)
-- [デプロイメント戦略について](./build-and-deploy/understanding-deployment-strategies)
-- [Liferay Cloud Consoleを使った変更のデプロイメント](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
-- [CLIツールによる変更点のデプロイ](./build-and-deploy/deploying-changes-via-the-cli-tool)
-- [CIサービスのビルドを自動的にデプロイする](./build-and-deploy/automatically-deploying-ci-service-builds)
-- [Jenkinsステージの再起動](./build-and-deploy/restarting-jenkins-stages)
-- [永続的なファイルストレージボリュームを設定する](./build-and-deploy/configuring-persistent-file-storage-volumes)
-- [ファイルやフォルダーを無視する](./build-and-deploy/ignoring-files-and-folders)
+- [デプロイタイプについて](./build-and-deploy/understanding-deployment-types.md)
+- [デプロイメント戦略について](./build-and-deploy/understanding-deployment-strategies.md)
+- [Liferay Cloud Consoleを使った変更のデプロイメント](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
+- [CLIツールによる変更点のデプロイ](./build-and-deploy/deploying-changes-via-the-cli-tool.md)
+- [CIサービスのビルドを自動的にデプロイする](./build-and-deploy/automatically-deploying-ci-service-builds.md)
+- [Jenkinsステージの再起動](./build-and-deploy/restarting-jenkins-stages.md)
+- [永続的なファイルストレージボリュームの構成](./build-and-deploy/configuring-persistent-file-storage-volumes.md)
+- [ファイルとフォルダを無視する](./build-and-deploy/ignoring-files-and-folders.md)

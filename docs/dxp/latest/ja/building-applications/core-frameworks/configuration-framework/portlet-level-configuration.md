@@ -7,12 +7,13 @@
 ポートレットのルック&フィールがユーザーによって実装および設定されている場合、アプリケーションの構成はオーバーライドされることに注意してください。 詳細については、 [ポートレットのルック&フィール](../../developing-a-java-web-application/using-mvc/portlet-preferences.md)を参照してください。
 
 ## サンプルコードを参照する
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [ローカライズされたメッセージの共有](./liferay-x7y2.zip) をダウンロードして、解凍します。
+1. [Sharing Localized Messages](./liferay-x7y2.zip) をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-x7y2.zip -O
@@ -71,9 +72,9 @@
 
 詳細については、 [構成インターフェースを作成する](./setting-and-accessing-configurations.html#Creating-the-Configuration-Interface) を参照してください。
 
-## 構成Bean宣言を追加する
-
-`ConfigurationProvider`と同様に、`PortletDisplay`は、構成クラスを登録するために構成Bean宣言ファイルを必要とします。 詳細については、 [構成Bean宣言](./setting-and-accessing-configurations.html#Create-a-Configuration-Bean-Declaration) を参照してください。
+```{note}
+DXP 7.4 U51 または Portal 7.4 GA51 より前の Liferay バージョンでは、`ConfigurationBeanDeclaration` が必要です。 [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeanandeclaration-with-previous-versions-of-liferay) を参照してください。
+```
 
 ## PortletDisplayで構成を読み取る
 
@@ -88,7 +89,7 @@
 
 ## ポートレットのルック&フィールを設定する
 
-ポートレットにポートレットのルック&フィールを設定するには、構成JSPファイルと構成アクションもアプリケーションに追加する必要があります。 これらのファイルがポートレットでどのように機能するかについて詳しくは、[ポートレットのルック&フィール](../../developing-a-java-web-application/using-mvc/portlet-preferences.md)を参照してください。
+ポートレットにポートレットのルック&フィールを設定するには、構成JSPファイルと構成アクションもアプリケーションに追加する必要があります。 これらのファイルがポートレットでどのように機能するかについて詳しくは、 [ポートレットのルック&フィール](../../developing-a-java-web-application/using-mvc/portlet-preferences.md) を参照してください。
 
 ## 関連情報
 

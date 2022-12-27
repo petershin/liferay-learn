@@ -1,52 +1,60 @@
 # カスタムステートの追加と管理
 
-{bdg-secondary}`利用可能な Liferay 7.4 U41+ および GA41+`
+{bdg-secondary}`利用可能な Liferay 7.4 U41+/GA41+`
 
 ユースケースによっては、1つのオブジェクトエントリに複数の状態を同時に割り当てる必要がある場合があります。 例えば、Order アプリケーションを構築する場合、同じ項目に対して、注文、支払い、配送の各ステータスを割り当て、管理する必要があります。 Liferayのpicklistとカスタムオブジェクトを使うことで、この機能を実現することができます。
 
-[選択リスト](../picklists.md) では、文字列のリストを定義して、それをオブジェクトフィールドとして使用し、エントリーのカスタム状態を定義することができます。 オブジェクト定義に追加すると、各状態のフローを設計し、 [バリデーション](./adding-custom-validations.md) と [アクション](./defining-object-actions.md) を使用して、異なる状態のためのカスタムビジネスロジックを追加することができます。 これらのカスタムステートを [ワークフローステータス](../enabling-workflows-for-objects.md) と共に使用することで、より複雑なレビューと承認プロセスを定義することも可能です。
+[候補リスト](../../picklists.md)では、文字列のリストを定義し、それをオブジェクトフィールドとして使用して、エントリーのカスタムステートを定義することができます。オブジェクト定義に追加すると、各状態のフローを設計し、 [バリデーション](../validations/adding-custom-validations.md) と [アクション](../actions/defining-object-actions.md) を使用して、異なる状態のビジネスロジックを追加することができます。また、ステートを[ワークフローのステータス](../../enabling-workflows-for-objects.md)と一緒に使用することで、より複雑なレビューと承認のプロセスを定義できます。
 
 ![ピックリストを使用して、オブジェクト定義にカスタムステートを追加します。](./adding-and-managing-custom-states/images/01.png)
 
+
+
 ## オブジェクト定義に状態フィールドを追加する
 
-以下の手順で、ピックリストを使用して、オブジェクトの項目にカスタムステートを追加します。
+1. **グローバルメニュー**(![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** タブを開き、 **ピックリスト** をクリックします。
 
-1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** タブをクリックし、 **ピックリスト** に進みます。
-
-1. 必要な項目でピックリストを作成します。 これらの項目は、オブジェクトのエントリー状態を定義する。 詳しい手順については、 [ピックリストの作成](../picklists/using-picklists.md#creating-a-picklist) を参照してください。
+1. 必要な項目でピックリストを作成します。 これらの項目は、オブジェクトのエントリー状態を定義する。 詳しい手順については、 [ピックリストの作成](../../picklists/using-picklists.md#creating-a-picklist) を参照してください。 
+   
+   
 
    ```{note}
    ドラフトとパブリッシュされたオブジェクト定義の両方について、いつでもピックリストの項目を追加、削除、編集することができます。
    ```
 
-   ![必要な項目でピックリストを作成します。](./adding-and-managing-custom-states/images/02.png)
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**オブジェクト**］ に進みます。
+![必要な項目でピックリストを作成します。](./adding-and-managing-custom-states/images/02.png)
+
+1. **グローバルメニュー**（![Global Menu](../../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**オブジェクト**］ をクリックします。
 
 1. 目的のカスタムオブジェクトの編集を開始します。
 
-1. **Fields** タブを開き、 **Add** ボタン (![Add Button](../../../images/icon-add.png)) をクリックします。
-
+1. **Fields** タブを開き、 **Add**(![Add Button](../../../../images/icon-add.png)) をクリックします。
+   
    ![オブジェクト定義へのフィールドの追加を開始します。](./adding-and-managing-custom-states/images/03.png)
 
 1. **ラベル** と **項目名** を入力します。
 
 1. **ピックリストの種類** を選択し、必要なリストを選択します。
 
-1. Toggle **Mark as State** .
+1. Toggle **Mark as State** . 
+   
+   
 
    ```{note}
-   Stateフィールドは自動的に*mandatory*に設定され、Optionalに変更することはできません。
+   Stateフィールドは自動的に*mandatory*に設定され、オプションに変更することはできません。
    ```
 
-1. state フィールドの **Default Value** を選択します。
 
+1. state フィールドの **Default Value** を選択します。
+   
    ![ピックリストを選択し、「状態としてマーク」を切り替えて、フィールドのデフォルト値を設定します。](./adding-and-managing-custom-states/images/04.png)
 
 1. ［**Save**］ をクリックします。
 
 定義にフィールドを追加した後、 [フロー](#setting-up-a-flow-for-state-fields) を設定し、各状態でどのトランジションが利用できるかを決定することができます。
+
+
 
 ## ステートフィールドのフローを設定する
 
@@ -55,13 +63,13 @@
 以下の手順で、状態フィールドのカスタムフローを設定します。
 
 1. カスタムオブジェクトの編集中に、 **State Manager** タブを開き、必要な **state フィールド** を選択します。
-
+   
    ![ステート・マネージャー]タブで、ステート・フィールドのフローを設定します。](./adding-and-managing-custom-states/images/05.png)
 
-1. Next Status]でドロップダウンメニューをクリックし、各状態で利用可能なトランジションを決定するためのボックスにチェックを入れます。
-
+1. 次の状態]でドロップダウンメニューをクリックし、各状態で利用可能なトランジションを決定するためのボックスにチェックを入れます。
+   
    1つの状態に対して、任意の数の遷移を選択することができます。
-
+   
    ![状態間の利用可能な遷移を決定する。](./adding-and-managing-custom-states/images/06.png)
 
 1. ［**Save**］ をクリックします。
@@ -70,8 +78,10 @@
 
 ![カスタムフローを設定すると、各ステートで利用可能なトランジションが決定されます。](./adding-and-managing-custom-states/images/07.png)
 
+
+
 ## 追加情報
 
-* [選択リスト](../picklists.md)
-* [オブジェクトへのフィールドの追加](./adding-fields-to-objects.md)
-* [オブジェクトの項目種類について](../understanding-object-field-types.md)
+* [候補リスト](../../picklists.md)
+* [項目](../fields.md)
+* [オブジェクトへのフィールドの追加](../fields/adding-fields-to-objects.md)

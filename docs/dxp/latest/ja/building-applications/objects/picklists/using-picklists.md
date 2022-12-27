@@ -8,19 +8,19 @@
 
 以下の手順に従って、選択リストを作成します。
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動し、 ［**選択リスト**］ をクリックします。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** タブを開き、 **ピックリスト** をクリックします。
 
-1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
+1. ［**追加**］ ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
 
    ![追加ボタンをクリックして、新しい選択リストを作成します。](./using-picklists/images/01.png)
 
-1. 選択リストに ［**Name**］ を入力し、 ［**Save**］ をクリックします。 この値は、Liferay UIでリストを識別し、作成後にローカライズできます。
+1. ピックリストの **名前** を入力し、 **保存** をクリックします。 この値は、Liferay UIでリストを識別し、作成後にローカライズできます。
 
-1. 新しい［選択リスト］ をクリックして編集します。
+1. 新しいピックリストをクリックして編集します。
 
 1. ［Items］の下にある、 ［**追加**］ ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
 
-   ![追加ボタンをクリックして、新しいアイテムを選択リストに追加します。](./using-picklists/images/02.png)
+   ![[追加] ボタンをクリックすると、ピックリストに新しい項目が追加されます。](./using-picklists/images/02.png)
 
 1. モーダルウィンドウで、アイテムの ［**Name**］ と ［**Key**］ を入力します。
 
@@ -32,7 +32,7 @@
    作成したアイテムのキーは変更できませんが、名前の編集や削除はいつでもできます。
    ```
 
-   ![名前とキーを入力し、［保存］をクリックします。](./using-picklists/images/03.png)
+   ![名前とキーを入力し、 [保存]をクリックします。](./using-picklists/images/03.png)
 
 1. ［**Save**］ をクリックします。 これにより、新しいアイテムで選択リストがすぐに更新されます。
 
@@ -42,7 +42,7 @@
 
 ## オブジェクトへの選択リストフィールドの追加
 
-リストが作成されると、オブジェクトフィールドを作成する際に選択することができます。 **選択リスト** フィールドタイプを選択し、必要なリストを選択します。 詳細については、 [オブジェクトへのフィールドの追加](../creating-and-managing-objects/adding-fields-to-objects.md) を参照してください。
+リストが作成されると、オブジェクトフィールドを作成する際に選択することができます。 **選択リスト** フィールドタイプを選択し、必要なリストを選択します。 詳細については、 [オブジェクトへのフィールドの追加](../creating-and-managing-objects/fields/adding-fields-to-objects.md) を参照してください。
 
 ![ユーザーは、新しいオブジェクトフィールドを作成するときに選択リストを選択できます。](./using-picklists/images/05.png)
 
@@ -81,5 +81,5 @@ Picklist フィールドを含む Object に対して POST、PATCH、および P
 
 ## 追加情報
 
-* [オブジェクトへのフィールドの追加](../creating-and-managing-objects/adding-fields-to-objects.md)
+* [オブジェクトへのフィールドの追加](../creating-and-managing-objects/fields/adding-fields-to-objects.md)
 * [選択リスト権限の管理](./managing-picklist-permissions.md)

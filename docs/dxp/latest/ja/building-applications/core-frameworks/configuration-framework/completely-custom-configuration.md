@@ -3,12 +3,13 @@
 [構成インターフェースを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface) すると、構成UIが自動的に生成されます。 ただし、構成に完全にカスタムのUIが必要な場合もあります。 たとえば、Liferayの構成管理を使用する代わりに、プログラムで構成を処理するよう計画している場合などです。 または、完全にカスタムのUIを作成する柔軟性が必要な場合もあります。 その方法は以下の通りです。
 
 ## サンプルプロジェクトを参照する
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [完全カスタム設定](./liferay-u2g5.zip) をダウンロードし、解凍してください。
+1. [Completely Custom Configuration](./liferay-u2g5.zip)  をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
@@ -53,13 +54,8 @@
 
 `@ExtendedObjectClassDefinition`アノテーションでは、`generateUI`が`false`に設定されていることに注意してください。 これにより、構成UIが自動生成されなくなります。
 
-## 構成Bean宣言を追加する
-
-構成クラスを`ConfigurationBeanDeclaration`に登録します。 これにより、システムは構成の変更が発生したときにそれを追跡できます。
-
-```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/settings/definition/U2G5WebConfigurationBeanDeclaration.java
-:language: java
-:lines: 9-18
+```{note}
+DXP 7.4 U51 または Portal 7.4 GA51 より前の Liferay バージョンでは、`ConfigurationBeanDeclaration` が必要です。 [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeanandeclaration-with-previous-versions-of-liferay) を参照してください。
 ```
 
 ## 設定画面を実装する

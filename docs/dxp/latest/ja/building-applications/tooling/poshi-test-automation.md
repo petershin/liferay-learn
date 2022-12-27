@@ -4,7 +4,6 @@ toc:
 - ./poshi-test-automation/getting-started.md
 - ./poshi-test-automation/poshi-resources.md
 ---
-
 # Poshiテストオートメーション
 
 ```{toctree}
@@ -15,7 +14,7 @@ poshi-test-automation/getting-started.md
 poshi-test-automation/poshi-resources.md
 ```
 
-Poshiは、シンプルで理解しやすく、開発経験がなくても始められるテストオートメーションフレームワークです。 Poshiテストは、ユーザーがサイト内を移動する際の動作をシミュレートするために記述することができます。 [Poshi は、ブラウザオートメーションのための最も人気のあるオープンソースツールの1つである Selenium WebDriver](https://www.selenium.dev/documentation/) 上に構築された Groovy ライクなスクリプト構文を使用しています。
+Poshiは、シンプルで理解しやすく、開発経験がなくても始められるテストオートメーションフレームワークです。 Poshiテストは、ユーザーがサイト内を移動する際の動作をシミュレートするために記述することができます。 Poshi は、ブラウザオートメーションのための最も人気のあるオープンソースツールの1つである [Selenium WebDriver](https://www.selenium.dev/documentation/) 上に構築された Groovy ライクなスクリプト構文を使用しています。
 
 ::::{grid} 2
 :gutter: 3 3 3 3

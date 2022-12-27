@@ -28,7 +28,7 @@
 
     ![WebhooksのURLをコピーします。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/06.png)
 
-1. Liferayインスタンスでは、コピーしたURLを使って [オブジェクトアクションを定義し、新しいオブジェクトエントリーが追加されるたびにwebhookエンドポイントにリクエストを送ります](../../creating-and-managing-objects/defining-object-actions.md) 。
+1. Liferayインスタンスでは、コピーしたURLを使って [オブジェクトアクションを定義し](../../creating-and-managing-objects/actions/defining-object-actions.md)、新しいオブジェクトエントリーが追加されるたびにwebhookエンドポイントにリクエストを送ります。
 
     ![エントリーが追加されるたびに、webhookエンドポイントにリクエストを送信するアクションを定義します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/07.png)
 

@@ -2,7 +2,7 @@
 
 {bdg-secondary}`利用可能な Liferay 7.4 U34+/GA34+`
 
-複数のビジネスアカウント [](../../../../users-and-permissions/accounts.md)があるシナリオでは、アカウントごとにオブジェクトエントリへのアクセスを制限することができます。 これを行うには、カスタム・オブジェクトが Account システム・オブジェクトとアクティブな [リレーションシップ](../defining-object-relationships.md) を持っている必要があり、入力データの制限にこのリレーションシップを使用するようにカスタム・オブジェクトを構成する必要があります。 設定が完了すると、カスタムオブジェクトにエントリーを追加する人は、アカウントを選択する必要があります。 このアカウントがエントリーのオーナーとなり、アカウントのメンバーのみがアクセスできるようになります。
+複数のビジネスアカウント [アカウント](../../../../users-and-permissions/accounts.md)があるシナリオでは、アカウントごとにオブジェクトエントリへのアクセスを制限することができます。 これを行うには、カスタム・オブジェクトが Account システム・オブジェクトとアクティブな [リレーションシップ](../defining-object-relationships.md) を持っている必要があり、入力データの制限にこのリレーションシップを使用するようにカスタム・オブジェクトを構成する必要があります。 設定が完了すると、カスタムオブジェクトにエントリーを追加する人は、アカウントを選択する必要があります。 このアカウントがエントリーのオーナーとなり、アカウントのメンバーのみがアクセスできるようになります。
 
 ![カスタムオブジェクトエントリへのアクセスをアカウントごとに制限することができます。](./restricting-access-to-object-data-by-account/images/01.png)
 
@@ -12,7 +12,7 @@
 
 1. Accountシステム・オブジェクトの編集を開始します。
 
-1. **一対多** または **多対多** のリレーションシップを追加し、Account オブジェクトを目的のカスタムオブジェクトに関連付けます。 詳細については、[オブジェクトリレーションシップの定義](../defining-object-relationships.md)を参照してください。
+1. **一対多** または **多対多** のリレーションシップを追加し、Account オブジェクトを目的のカスタムオブジェクトに関連付けます。 詳細については、[オブジェクトリレーションシップの定義](../relationships/defining-object-relationships.md)を参照してください。
 
    ![Accountシステム・オブジェクトを目的のカスタム・オブジェクトに関連付けます。](./restricting-access-to-object-data-by-account/images/02.png)
 
@@ -30,5 +30,5 @@
 
 * [アカウント](../../../../users-and-permissions/accounts.md)
 * [システムオブジェクトの拡張](../extending-system-objects.md)
-* [オブジェクトリレーションの定義](../defining-object-relationships.md)
+* [オブジェクトリレーションの定義](../relationships/defining-object-relationships.md)
 * [カスタムオブジェクトからアカウントデータにアクセスする](./accessing-accounts-data-from-custom-objects.md)

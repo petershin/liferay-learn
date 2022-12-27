@@ -14,7 +14,7 @@
 
 次に、下記の手順で、3つのオブジェクトを[作成](../../creating-and-managing-objects/creating-objects.md)します。
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**オブジェクト**］ に移動します。
+1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブで ［**オブジェクト**］ をクリックします。
 
 1. 3つのオブジェクトドラフトを作成します。
 
@@ -148,9 +148,9 @@ unzip liferay-w4s7.zip
    {
      "id" : 41979,
      ...
-     "name"： "Baker 3"
-     "r_ableToBaker_c_ableId"：41969
-}
+     "name" : "Baker 3"
+     "r_ableToBaker_c_ableId" : 41969
+   }
    ```
 
 1. `Baker`エントリーIDをパラメータとして、`Charlie_POST_ToCompany`を実行します。

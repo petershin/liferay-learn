@@ -55,7 +55,7 @@ Poshi Standaloneのgradleプロジェクトをセットアップします。
 テストケースファイルでのユーザー行動をスクリプトします。
 :::
 
-:::{grid-item-card} 構文の検証
+:::{grid-item-card} シンタックス バリデーション
 :link: ./getting-started/syntax-validation.md
 
 構文を確認してから、テストを実行します。
@@ -67,10 +67,11 @@ Poshi Standaloneのgradleプロジェクトをセットアップします。
 Poshiテストの実行
 :::
 
-:::{grid-item-card} テスト結果とPoshiのデバッグについて
+:::{grid-item-card} テスト結果の理解とデバッグ Poshi
 :link: ./getting-started/understanding-test-results-and-debugging-tests.md
 
 テスト実行における失敗をデバッグします。
+
 :::
 
 ::::

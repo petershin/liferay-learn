@@ -28,7 +28,7 @@
 
    ![生成されたWebhookのURLをコピーしてください。](./using-integrately-to-sync-object-data-with-google-sheets/images/05.png)
 
-1. Liferayインスタンスでは、コピーしたURLを使って [オブジェクトアクションを定義し](../../creating-and-managing-objects/defining-object-actions.md)、新しいオブジェクトエントリーが追加されるたびにwebhookエンドポイントにリクエストを送ります。
+1. Liferayインスタンスでは、コピーしたURLを使って [オブジェクトアクションを定義し](../../creating-and-managing-objects/actions/defining-object-actions.md)、新しいオブジェクトエントリーが追加されるたびにwebhookエンドポイントにリクエストを送ります。
 
    ![エントリーが追加されるたびに、webhookエンドポイントにリクエストを送信するアクションを定義します。](./using-integrately-to-sync-object-data-with-google-sheets/images/06.png)
 

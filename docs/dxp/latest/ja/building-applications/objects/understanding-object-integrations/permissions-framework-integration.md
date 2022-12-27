@@ -45,7 +45,7 @@
 | 削除   | オブジェクトエントリーを削除します          |
 | 権限設定 | 個々のオブジェクトエントリーの権限を表示・変更します |
 | 更新   | オブジェクトエントリーを更新します          |
-| 表示   | オブジェクトエントリーを表示します          |
+| 参照   | オブジェクトエントリーを表示します          |
 
 ## 個々のオブジェクトエンティティに対する権限の管理
 
@@ -57,7 +57,7 @@
 
 1. 目的のカスタムオブジェクトに移動します。
 
-1. 目的のエンティティの **アクション** ボタン（![Actions Button](../../../images/icon-actions.png)）をクリックし、 ［**Permissions**］ を選択してください。
+1. 目的のエンティティの **Actions** ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 **Permissions** を選択します。
 
    ![目的のエンティティのアクションボタンをクリックし、［権限］を選択します。](./permissions-framework-integration/images/01.png)
 
@@ -76,4 +76,3 @@
 * [オブジェクト統合を理解する](../understanding-object-integrations.md)
 * [オブジェクト](../../objects.md)
 * [オブジェクトの作成](../creating-and-managing-objects/creating-objects.md)
-* [オブジェクトの管理](../creating-and-managing-objects/managing-objects.md)

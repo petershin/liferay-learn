@@ -22,16 +22,15 @@ poshi-basics/poshi-layers
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Poshiのメリット
+:::{grid-item-card} ポシの利点
 :link: ./poshi-basics/poshi-advantages.md
 
 Poshiの特徴についてご紹介します。
 :::
 
-:::{grid-item-card} Poshiのレイヤー
+:::{grid-item-card} Poshi レイヤー
 :link: ./poshi-basics/poshi-layers.md
 
 Poshiを構成するさまざまな層について学ぶことができます。
 :::
-
 ::::

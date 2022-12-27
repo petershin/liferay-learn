@@ -3,12 +3,13 @@
 [構成インターフェイスを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface) すると、構成UIが自動的に生成されます。  ただし、UIのルックアンドフィールをカスタマイズしたい場合もあります。 たとえば、会社のデザインの美的感覚に一致するようにUIを変更するとします。 ` ConfigurationFormRenderer`の実装でこれを行う方法は次のとおりです。
 
 ## サンプルプロジェクトを参照する
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [Configuration Form Renderer](./liferay-b7r2.zip) をダウンロードし、解凍します。
+1. [Configuration Form Renderer](./liferay-b7r2.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
@@ -53,13 +54,8 @@
 
 `ConfigurationFormRenderer`を使用する場合、[生成されたUIを非表示にする](./hiding-the-configuration-ui.md)ために`generateUI`アノテーションは必要ないことに注意してください。
 
-## 構成Bean宣言を追加する
-
-構成クラスを`ConfigurationBeanDeclaration`クラスに登録します。 これにより、システムは構成の変更が発生したときにそれを追跡できます。
-
-```{literalinclude} ./configuration-form-renderer/resources/liferay-b7r2.zip/b7r2-web/src/main/java/com/acme/b7r2/web/internal/settings/definition/B7R2WebConfigurationBeanDeclaration.java
-:language: java
-:lines: 10-18
+```{note}
+DXP 7.4 U51 または Portal 7.4 GA51 より前の Liferay バージョンでは、`ConfigurationBeanDeclaration` が必要です。 ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeanandeclaration-with-previous-versions-of-liferay) を参照してください。
 ```
 
 ## Configuration Form Rendererを実装する

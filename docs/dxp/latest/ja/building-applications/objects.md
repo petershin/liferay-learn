@@ -3,11 +3,11 @@ toc:
 - ./objects/creating-and-managing-objects.md
 - ./objects/objects-tutorials.md
 - ./objects/using-forms-with-objects.md
+- ./objects/using-fragments-to-build-forms.md
 - ./objects/deploying-object-widgets-to-sites.md
 - ./objects/displaying-object-entries.md
 - ./objects/enabling-workflows-for-objects.md
 - ./objects/picklists.md
-- ./objects/understanding-object-field-types.md
 - ./objects/understanding-object-integrations.md
 - ./objects/objects-application-permissions.md
 - ./objects/integrating-objects-with-third-party-services.md
@@ -20,11 +20,11 @@ toc:
 objects/creating-and-managing-objects.md
 objects/objects-tutorials.md
 objects/using-forms-with-objects.md
+objects/using-fragments-to-build-forms.md
 objects/deploying-object-widgets-to-sites.md
 objects/displaying-object-entries.md
 objects/enabling-workflows-for-objects.md
 objects/picklists.md
-objects/understanding-object-field-types.md
 objects/understanding-object-integrations.md
 objects/objects-application-permissions.md
 objects/integrating-objects-with-third-party-services.md
@@ -34,7 +34,7 @@ objects/integrating-objects-with-third-party-services.md
 
 Liferay Objectを使用すると、コードを記述したりモジュールをデプロイしたりすることなく、アプリケーションを構築して提供できます。 オブジェクトで構築された各アプリケーションはLiferayのコアフレームワークと統合されているため、シームレスなユーザーエクスペリエンスを維持しながら、Liferay DXPをビジネスニーズに適応させた柔軟なソリューションを迅速に開発・管理することが可能です。
 
-オブジェクトを作成する際、ユーザーはデータ[フィールド](./objects/creating-and-managing-objects/adding-fields-to-objects.md)、複雑な[オブジェクトのエントリ間の関係](./objects/creating-and-managing-objects/defining-object-relationships.md) 、特定の条件下で発動するカスタム[アクション](./objects/creating-and-managing-objects/defining-object-actions.md)を定義することができます。 また、[レイアウト](./objects/creating-and-managing-objects/designing-object-layouts.md)および[ビュー](./objects/creating-and-managing-objects/designing-object-views.md)を設計して、エントリ作成時およびオブジェクトのアプリケーションページでフィールドとリレーションを表示する方法を決定することも可能です。
+Object の作成時に、そのデータ [フィールド](./objects/creating-and-managing-objects/fields.md)を定義し、他の Object エントリに [リレーションシップ](./objects/creating-and-managing-objects/relationships.md) を追加し、特定の条件下で [アクション](./objects/creating-and-managing-objects/actions.md) をトリガーすることができます。 また、[レイアウト](./objects/creating-and-managing-objects/layouts.md)および[ビュー](./objects/creating-and-managing-objects/views.md)を設計して、エントリ作成時およびオブジェクトのアプリケーションページでフィールドとリレーションを表示する方法を決定することも可能です。
 
 公開する前に、各オブジェクトのデータを会社またはサイトにスコープし、Liferay UIのどこに表示されるかを決定できます。
 

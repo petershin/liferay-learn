@@ -1,20 +1,19 @@
 ---
 toc:
 - ./creating-and-managing-objects/creating-objects.md
-- ./creating-and-managing-objects/managing-objects.md
-- ./creating-and-managing-objects/adding-fields-to-objects.md
-- ./creating-and-managing-objects/defining-object-relationships.md
-- ./creating-and-managing-objects/defining-object-actions.md
-- ./creating-and-managing-objects/designing-object-layouts.md
-- ./creating-and-managing-objects/designing-object-views.md
-- ./creating-and-managing-objects/adding-custom-validations.md
-- ./creating-and-managing-objects/adding-and-managing-custom-states.md
-- ./creating-and-managing-objects/exporting-and-importing-object-structures.md
-- ./creating-and-managing-objects/expression-builder-validations-reference.md
+- ./creating-and-managing-objects/extending-system-objects.md
+- ./creating-and-managing-objects/fields.md
+- ./creating-and-managing-objects/relationships.md
+- ./creating-and-managing-objects/actions.md
+- ./creating-and-managing-objects/layouts.md
+- ./creating-and-managing-objects/views.md
+- ./creating-and-managing-objects/validations.md
 - ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
+- ./creating-and-managing-objects/activating-and-deactivating-objects.md
+- ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
 - ./creating-and-managing-objects/auditing-object-definition-events.md
+- ./creating-and-managing-objects/deleting-objects.md
 ---
-
 # オブジェクトの作成と管理
 
 ```{toctree}
@@ -22,32 +21,79 @@ toc:
 
 creating-and-managing-objects/creating-objects.md
 creating-and-managing-objects/extending-system-objects.md
-creating-and-managing-objects/managing-objects.md
-creating-and-managing-objects/adding-fields-to-objects.md
-creating-and-managing-objects/defining-object-relationships.md
-creating-and-managing-objects/defining-object-actions.md
-creating-and-managing-objects/designing-object-layouts.md
-creating-and-managing-objects/designing-object-views.md
-creating-and-managing-objects/adding-custom-validations.md
-creating-and-managing-objects/adding-and-managing-custom-states.md
-creating-and-managing-objects/exporting-and-importing-object-structures.md
-creating-and-managing-objects/expression-builder-validations-reference.md
+creating-and-managing-objects/fields.md
+creating-and-managing-objects/relationships.md
+creating-and-managing-objects/actions.md
+creating-and-managing-objects/layouts.md
+creating-and-managing-objects/views.md
+creating-and-managing-objects/validations.md
 creating-and-managing-objects/using-system-objects-with-custom-objects.md
+creating-and-managing-objects/activating-and-deactivating-objects.md
+creating-and-managing-objects/exporting-and-importing-object-definitions.md
 creating-and-managing-objects/auditing-object-definition-events.md
+creating-and-managing-objects/deleting-objects.md
 ```
 
 {bdg-secondary}`Liferay DXP/Portal 7.4以降で利用可能`
 
-Liferay Objectでは、コードを記述することなくビジネスニーズを満たすカスタムアプリケーションを[作成](./creating-and-managing-objects/creating-objects.md)するための便利なUIを提供します。 また、Objects を使用して、システム Objects とカスタム Objects の両方を[管理および拡張](./creating-and-managing-objects/managing-objects.md) することができます。これには、 [フィールド](./creating-and-managing-objects/adding-fields-to-objects.md)、 [リレーション](./creating-and-managing-objects/defining-object-relationships.md)、 [アクション](./creating-and-managing-objects/defining-object-actions.md)、 [レイアウト](creating-and-managing-objects/designing-object-layouts.md)、 [ビュー](./creating-and-managing-objects/designing-object-views.md)を追加することが含まれます。
+Liferay Objectでは、コードを記述することなくビジネスニーズを満たすカスタムアプリケーションを[作成](./creating-and-managing-objects/creating-objects.md)するための便利なUIを提供します。 また、オブジェクトを使用して、システムオブジェクトとカスタムオブジェクトの両方を管理および拡張することができます。 これには、 [フィールド](./creating-and-managing-objects/fields.md), [リレーション](./creating-and-managing-objects/relationships.md), [アクション](./creating-and-managing-objects/actions.md), [レイアウト](./creating-and-managing-objects/layouts.md), [ビュー](./creating-and-managing-objects/views.md), [バリデーション](./creating-and-managing-objects/validations.md), [カスタムステート](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md)を追加することが含まれます。 オブジェクト定義に関連するこれらの操作やその他の操作を実行するために必要な権限については、 [Objects Application Permissions](../objects-application-permissions.md) を参照してください。
 
 ```{note}
-カスタムフィールド、レイアウト、およびビューは、システムオブジェクトではサポートされていません。
+システムオブジェクトはオブジェクトフレームワークと統合されたデフォルトのLiferayアプリケーションであり、カスタムオブジェクトはユーザーが作成し公開する定義です。
 ```
 
-```{raw} html
-:file: ../../landingpage_template.html
-```
+::::{grid} 2
+:gutter: 3 3 3 3
 
-```{raw} html
-:file: creating-and-managing-objects/landing.html
-```
+:::{grid-item-card} オブジェクトの作成
+:link: ./creating-and-managing-objects/creating-objects.md
+:::
+
+:::{grid-item-card} システムオブジェクトの拡張
+:link: ./creating-and-managing-objects/extending-system-objects.md
+:::
+
+:::{grid-item-card} Fields
+:link: ./creating-and-managing-objects/fields.md
+:::
+
+:::{grid-item-card} 関係
+:link: ./creating-and-managing-objects/relationships.md
+:::
+
+:::{grid-item-card} アクション
+:link: ./creating-and-managing-objects/actions.md
+:::
+
+:::{grid-item-card} レイアウト
+:link: ./creating-and-managing-objects/layouts.md
+:::
+
+:::{grid-item-card} ビュー
+:link: ./creating-and-managing-objects/views.md
+:::
+
+:::{grid-item-card} 検証
+:link: ./creating-and-managing-objects/validations.md
+:::
+
+:::{grid-item-card} システムオブジェクトとカスタムオブジェクトの使用
+:link: ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
+:::
+
+:::{grid-item-card} オブジェクトのアクティブ化と非アクティブ化
+:link: ./creating and-managing-objects/activating and-deactivating-objects.md
+:::
+
+:::{grid-item-card} オブジェクト定義のエクスポートとインポート
+:link: ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
+:::
+
+:::{grid-item-card} 監査オブジェクト定義イベント
+:link: ./creating and-managing-objects/auditing-object-definition-events.md
+:::
+
+:::{grid-item-card} オブジェクトの削除
+:link: ./creating-and-managing-objects/deleting-objects.md
+:::
+::::

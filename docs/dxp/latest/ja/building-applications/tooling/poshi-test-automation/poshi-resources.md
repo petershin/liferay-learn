@@ -27,7 +27,7 @@ poshi-resources/using-poshi-resources.md
 プロジェクトにPoshiリソースを設定します。
 :::
 
-:::{grid-item-card} Poshiのリソースの使用
+:::{grid-item-card} Poshi リソースの使用
 :link: ./poshi-resources/using-poshi-resources.md
 
 Poshiのリソースの使用方法。

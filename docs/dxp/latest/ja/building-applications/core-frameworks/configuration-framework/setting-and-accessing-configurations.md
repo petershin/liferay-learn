@@ -3,12 +3,13 @@
 Liferayの構成フレームワークを使用して、MVCポートレットの設定UIを追加できます。
 
 ## サンプルポートレットを参照する
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [構成の設定とアクセス](./liferay-n2f3.zip) をダウンロードして、解凍します。
+1. [Setting and Accessing Configurations](./liferay-n2f3.zip) をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
@@ -93,17 +94,6 @@ IDには、構成インターフェイスの完全修飾クラス名（FQCN）�
 
     構成オブジェクトがリクエストオブジェクトに追加され、アプリケーションのJSPのリクエストから読み取ることができるようになりました。
 
-## 構成Bean宣言を作成する
-
-`ConfigurationProvider`を使用するには、構成クラスも`ConfigurationBeanDeclaration`に登録する必要があります。 これにより、システムは構成の変更が発生したときにそれを追跡できます。
-
-```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/settings/definition/N2F3WebConfigurationBeanDeclaration.java
-:language: java
-:lines: 9-18
-```
-
-このクラスには、アプリケーションの構成インターフェイスのクラスを返すメソッドが1つあります。
-
 ## JSPから構成にアクセスする
 
 1. 次のimportステートメントは、構成インターフェイスをJSPに追加します。
@@ -140,6 +130,29 @@ required = false)
 ![フォントファミリーがドロップダウン選択になりました。](./setting-and-accessing-configurations/images/03.png)
 
 これで、フォントファミリー属性はドロップダウン選択になります。
+
+## Liferay の以前のバージョンでの ConfigurationBeanDeclaration。
+
+```{important}
+Liferay DXP 7.4 U51+ と Liferay Portal 7.4 GA51+ では、`ConfigurationBeanDeclaration`クラスは必要ありません。 Configuration Provider API には、configration インターフェースが自動的に登録される。
+```
+
+Liferay 7.4 Update/GA 51 以前のバージョンでは、Configuration Provider API で使用するために `ConfigurationBeanDeclaration`で設定クラスを登録する必要があります。 `ConfigurationBeanDeclaration` クラスには、構成インターフェースクラスを返すメソッドが1つあります。 これは、システムが設定の変更を随時把握するのに役立ちます。 例えば、N2F3ポートレットの場合、以下のようなクラスを作成します。
+
+```java
+@Component(service = ConfigurationBeanDeclaration.class)
+public class N2F3WebConfigurationBeanDeclaration
+    implements ConfigurationBeanDeclaration {
+
+    @Override
+    public Class<?> getConfigurationBeanClass() {
+        return N2F3WebConfiguration.class;
+    }
+
+}
+```
+
+この例では、クラスを `com.acme.n2f3.web.internal.settings.definition` パッケージに配置します。
 
 ## さらなるカスタマイゼーション
 

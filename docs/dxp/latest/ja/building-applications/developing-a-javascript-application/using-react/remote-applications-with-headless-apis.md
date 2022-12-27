@@ -9,33 +9,30 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従って、`/o/c/*` URLパターンを **Default Portal CORS Configuration** に追加してください。
+次に、以下の手順に従って、 `/o/c/*`URLパターンを ［**Default Portal CORS Configuration**］ に追加してください。 **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**システム設定**］ &rarr; ［**セキュリティツール**］ に移動します。
 
-1. グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、**コントロールパネル**タブをクリックして、**システム設定** &rarr; **セキュリティツール** に移動する。
+1. ［**Portal Cross-Origin Resource Sharing (CORS**)］ タブで、 ［**Default Portal CORS Configuration**］ をクリックしてください。
 
-1. **Portal Cross-Origin Resource Sharing (CORS)** タブに移動し、**Default Portal CORS Configuration** をクリックします。
+1. ［**URL Pattern**］ に`/o/c/*`の値を追加し、 ［**保存**］ をクリックします。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
 
-1. URLパターン**を `/o/c/*` の値で追加し、**保存** をクリックします。これにより、すべてのオブジェクトAPIでCORSが有効になります。
-
-   ![オブジェクトAPI用の`/o/c/*` URLパターンを追加します](./remote-applications-with-headless-apis/images/01.png)。
+   ![Add the /o/c/* URL Pattern for Object APIs.](./remote-applications-with-headless-apis/images/01.png)
 
 ## CRUDアプリケーション用のオブジェクトを作成する
 
-1. [グローバルメニュー](../../../images/icon-applications-menu.png) を開き、[コントロールパネル](**Control Panel) タブをクリックし、[オブジェクト](**Objects) に進みます。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**オブジェクト**］ に移動します。
 
-1. **追加** ボタン(![ボタンの追加](../../../images/icon-add.png))をクリックし、以下の値を入力します。
+1. **追加** ボタン (![追加ボタン](../../../images/icon-add.png)) をクリックし、下記の値を入力します。
 
-   | フィールド | 値
+   | 項目 | 値 |
    | :--- | :--- |
    | ラベル | J4X7-Object |
-   | 複数形のラベル | J4X7-Object |
-   | 名前 | J4X7-Object |
+   | 複数形のラベル | J4X7-Objects |
+   | 名前 | J4X7Object |
 
    ```{note}
-   提供されたReactアプリケーションでは、これらの値を使用しています。
+   提供されたReactアプリケーションがこの値を使用します。
    ```
 
-www.DeepL.com/Translator（無料版）で翻訳しました。
 1. 新しい **オブジェクト** ドラフトを選択し、 ［**フィールド**］ タブをクリックして、これらの **フィールド** を追加します。
 
    | ラベル | 項目名 | 種類   |
@@ -124,7 +121,7 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
 ```
 
 ```{note}
-ここでは、デモのために基本認証を使用しています。 本番環境では、[OAuth 2.0](../../../headless-delivery/using-oauth2.md) を用いてユーザーを認証する必要があります。
+ここでは、デモのために基本認証を使用しています。 本番環境では、[OAuth 2.0](../../../headless-delivery/using-oauth2.md) を用いてユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
 ```
 
 ### フォームの実装
@@ -141,4 +138,5 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
 
 ## 追加情報
 
-[基本的なカスタム要素の作成](../../client-extensions/browser-based-client-extensions/tutorials/creating-a-basic-custom-element.md) [ヘッドレスフレームワークの統合](../../objects/understanding-object-integrations/headless-framework-integration.md)
+[基本的なカスタム要素の作成](../../client-extensions/browser-based-client-extensions/tutorials/creating-a-basic-custom-element.md) 
+[ヘッドレスフレームワークの統合](../../objects/understanding-object-integrations/headless-framework-integration.md)

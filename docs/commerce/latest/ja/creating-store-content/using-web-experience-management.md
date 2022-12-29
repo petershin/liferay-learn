@@ -1,9 +1,9 @@
 ---
 toc:
-  - ../../../../dxp/latest/ja/site-building/developer-guide/developing-page-fragments/developing-fragments-intro.md
-  - ../../../../dxp/latest/ja/site-building/creating-pages/page-fragments-and-widgets/using-fragments.md
-  - ../../../../dxp/latest/ja/site-building/site-navigation.md
-  - ../../../../dxp/latest/ja/site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md
+- ../../../../dxp/latest/ja/site-building/developer-guide/developing-page-fragments/developing-fragments-intro.md
+- ../../../../dxp/latest/ja/site-building/creating-pages/page-fragments-and-widgets/using-fragments.md
+- ../../../../dxp/latest/ja/site-building/site-navigation.md
+- ../../../../dxp/latest/ja/site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md
 - ./using-web-experience-management/enabling-commerce-products-as-related-assets.md
 ---
 

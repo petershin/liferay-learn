@@ -16,7 +16,7 @@
 
 1. フラグメントの **オプション** ボタン（![Options Button](../../../../images/icon-app-options.png)）をクリックして、 ［**構成を保存**］ を選択します。
 
-   ![フラグメントのオプションメニューを開き、［構成を保存］を選択します。](./saving-fragment-compositions/images/01.png)
+   ![フラグメントのオプションメニューを開き、［構成を保存］を選択します。](./saving-fragment-compositions/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. フラグメントの名前を入力します。
 
@@ -54,7 +54,7 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 
 このステップバイステップの例では、入れ子になったコンテナフラグメントを使用してバナースタイルコンポジションを作成する方法を紹介します。 また、この例では、コンポジションを保存し、スタイルブックでその設定を調整する方法を説明しています。
 
-![コンテナフラグメントを用いたフラグメント構成例](./saving-fragment-compositions/images/04.png)
+![コンテナフラグメントを用いたフラグメント構成例](./saving-fragment-compositions/images/04.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 * [ステップ1：新しいコンテントページを作成する](#step-1-creating-a-new-content-page) 。
 * [ステップ2：コンテナフラグメントを設定する](#step-2-configuring-the-container-fragment) 。
@@ -75,7 +75,7 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 
 1. コンテントページのサイドバーから、 **フラグメントとウィジェット**(![Fragments and Widgets](../../../../images/icon-cards2.png)) を選び、 ［**コンテナ**］ フラグメントをデフォルトのドロップゾーンの上にドラッグ＆ドロップしてください。
 
-    ![コンテナフラグメントをコンテントページのドロップゾーンの上にドラッグ＆ドロップします。](./saving-fragment-compositions/images/05.png)
+    ![コンテナフラグメントをコンテントページのドロップゾーンの上にドラッグ＆ドロップします。](./saving-fragment-compositions/images/05.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. ［コンテナ］フラグメントをクリックし、 **セレクション**(![Selection](../../../../images/icon-pages-tree.png)) パネルで、 ［**Styles**］ をクリックしてください。
 
@@ -83,33 +83,33 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 
 1. ［Styles］エリアの ［**背景色**］ セレクタで、グレー色の値として `200` （B）を選択します。
 
-    ![コンテナフラグメントのパッディングと背景色の値を定義します。](./saving-fragment-compositions/images/06.png)
+    ![コンテナフラグメントのパッディングと背景色の値を定義します。](./saving-fragment-compositions/images/06.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. **フラグメントとウィジェット**(![Fragments and Widgets](../../../../images/icon-cards2.png)) を選択し、新しいコンテナフラグメントを既存のコンテナの上にドロップしてください。 これにより、 **セレクション**(![Selection](../../../../images/icon-pages-tree.png)) パネルをクリックしたときに表示される入れ子になったコンテナコンポジションが作成されます。
 
-    ![新規のコンテナフラグメントを前のコンテナフラグメントの上にドラッグ＆ドロップします。](./saving-fragment-compositions/images/07.gif)
+    ![新規のコンテナフラグメントを前のコンテナフラグメントの上にドラッグ＆ドロップします。](./saving-fragment-compositions/images/07.gif) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. フラグメントとウィジェット(![Fragments and Widgets](../../../../images/icon-cards2.png)) パネルの［基本コンポーネント］で、 **見出し** フラグメントをコンポジションの内側のコンテナの中にドラッグ＆ドロップします。
 
-    ![見出しフラグメントを内側のコンテナフラグメントの中にドラッグ＆ドロップします。](./saving-fragment-compositions/images/08.png)
+    ![見出しフラグメントを内側のコンテナフラグメントの中にドラッグ＆ドロップします。](./saving-fragment-compositions/images/08.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. ［**Paragraph**］ フラグメントを見出しのすぐ下にドラッグ＆ドロップします。 コンポジション内のパラグラフを選択し、 ［**Styles**］ セクションで、 ［**上マージン**］ で`3`を選択します。
 
-    ![説明文フラグメントを見出しフラグメントのすぐ下にドラッグ＆ドロップします。](./saving-fragment-compositions/images/09.png)
+    ![説明文フラグメントを見出しフラグメントのすぐ下にドラッグ＆ドロップします。](./saving-fragment-compositions/images/09.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. セレクション(![Selection](../../../../images/icon-pages-tree.png))パネルから、内側のコンテナをクリックします。 ［**一般**］ タブで、ユーザーがこの領域をクリックしたときにリダイレクトさせるURLを入力します。
 
-    ![内側のコンテナフラグメントのターゲットとなるリンクやページを定義します。](./saving-fragment-compositions/images/10.png)
+    ![内側のコンテナフラグメントのターゲットとなるリンクやページを定義します。](./saving-fragment-compositions/images/10.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. フラグメントとウィジェット(![Fragments and Widgets](../../../../images/icon-cards2.png))パネルの［基本コンポーネント］で、 ［**Button**］ フラグメントをコンポジション内の段落のすぐ下にドラッグ＆ドロップします。
 
 1. ［**Button**］ を選択し、［Styles］セクションで ［**上マージン**］ を `3`にセットします。 ［**一般**］ セクションで、 ［**タイプ**］ ドロップダウンメニューをクリックし、 ［**リンク**］ を選択します。
 
-    ![ボタンのフラグメントタイプとトップマージンを設定します。](./saving-fragment-compositions/images/11.png)
+    ![ボタンのフラグメントタイプとトップマージンを設定します。](./saving-fragment-compositions/images/11.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. セレクション(![Selection](../../../../images/icon-pages-tree.png))パネルで、ボタンフラグメントの ［**link**］ をクリックします。 ［リンク］セクションで、ユーザーがボタンをクリックしたときにリダイレクトさせるURLを入力します。
 
-    ![ボタンのフラグメントターゲットリンクを設定します。](./saving-fragment-compositions/images/12.png)
+    ![ボタンのフラグメントターゲットリンクを設定します。](./saving-fragment-compositions/images/12.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ```{note}
 コンテントページを公開する必要はありません。 コンテントページで進行中の作業は、自動的に下書きとして保存されます。
@@ -119,7 +119,7 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 
 上記の手順に従って、コンポジションを新しいフラグメントとして保存します。
 
-![コンテナオプションメニューからフラグメントコンポジションを保存します。](./saving-fragment-compositions/images/13.png)
+![コンテナオプションメニューからフラグメントコンポジションを保存します。](./saving-fragment-compositions/images/13.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ### ステップ4：スタイルブックでデフォルトのコンテナ幅を設定する
 
@@ -135,11 +135,11 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 
 1. スタイルエリアで、 ［**コンテナの幅**］ プロパティを ［**固定幅**］ に設定します。
 
-    ![内側のコンテナフラグメントの幅設定を固定幅に変更します。](./saving-fragment-compositions/images/15.png)
+    ![内側のコンテナフラグメントの幅設定を固定幅に変更します。](./saving-fragment-compositions/images/15.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. **ページデザインオプション** パネル（A）をクリックし、 ［**スタイルブック**］ セクション（B）で、アクティブなスタイルブック（C）を確認します。
 
-    ![コンテントページで使用されているデフォルトのスタイルブックを確認します。](./saving-fragment-compositions/images/16.png)
+    ![コンテントページで使用されているデフォルトのスタイルブックを確認します。](./saving-fragment-compositions/images/16.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. サイトメニューの ［**デザイン**］ &rarr; ［**Style Books**］ に移動してください。
 
@@ -173,11 +173,11 @@ Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き�
 
 1. スタイルセクションで、 ［**コンテンツの表示**］ ドロップダウンメニューをクリックし、利用可能な ［**Flex**］ オプションから一つを選択します。
 
-    ![Flexの表示オプションを使用してスタイルを設定するページ要素をグループ化したコンテナを選択します。](./saving-fragment-compositions/images/20.png)
+    ![Flexの表示オプションを使用してスタイルを設定するページ要素をグループ化したコンテナを選択します。](./saving-fragment-compositions/images/20.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. ［**Align Items**］ と ［**Justify Content**］ の設定をお好みで設定してください。
 
-    ![項目の整列とコンテンツの両端揃えの設定をお好みで行ってください。](./saving-fragment-compositions/images/21.gif)
+    ![項目の整列とコンテンツの両端揃えの設定をお好みで行ってください。](./saving-fragment-compositions/images/21.gif) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ## 追加情報
 

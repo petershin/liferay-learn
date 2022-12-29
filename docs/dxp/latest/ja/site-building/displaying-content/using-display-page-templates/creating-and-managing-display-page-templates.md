@@ -30,7 +30,7 @@
 
 1. [コンテンツページ](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md)と同じインターフェースとページ要素を使用してテンプレートを設計します。
 
-   ![フラグメントとウィジェットを使ってテンプレートを構築します。](./creating-and-managing-display-page-templates/images/04.png)
+   ![フラグメントとウィジェットを使ってテンプレートを構築します。](./creating-and-managing-display-page-templates/images/04.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. ページ要素を追加したら、編集可能なフィールドをダブルクリックして、 [map](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) コンテンツ構造のフィールド（例：タイトル、説明）に追加することができます。 マップされたフィールドは紫の輪郭で示されます。
 
@@ -38,7 +38,7 @@
    表示ページテンプレートのSEOおよびOpen Graphの設定を行う際に、マッピングされたフィールドを使用することができます。 詳しくは、[SEOとOpen Graphの設定](./configuring-seo-and-open-graph.md)をご覧ください。
    ```
 
-   ![ページ要素を構造体フィールドにマッピングする。](./creating-and-managing-display-page-templates/images/05.png)
+   ![ページ要素を構造体フィールドにマッピングする。](./creating-and-managing-display-page-templates/images/05.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. 公開前に、 [プレビュー機能](#preview-the-display-page-template-content-mappings) (available 7.4+) を使って、既存のコンテンツとの編集可能フィールドのマッピングをプレビューすることができます。
 
@@ -54,11 +54,11 @@
 
 アプリケーションメニューから、 **Preview With** ドロップダウンメニューをクリックし、コンテンツアイテムを選択することができます。 項目が表示されない場合は、「**他の項目を選択する**」 をクリックし、目的のコンテンツを参照します。 これにより、フィールドマッピングに従って、テンプレートにコンテンツデータが動的に入力されます。
 
-![表示ページテンプレートのプレビューに使用するコンテンツを選択します。](./creating-and-managing-display-page-templates/images/07.png)
+![表示ページテンプレートのプレビューに使用するコンテンツを選択します。](./creating-and-managing-display-page-templates/images/07.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 または、表示ページテンプレートエディターから、 **プレビュー**(![Preview](../../../images/icon-preview.png)) ボタンをクリックし、プレビューしたいコンテンツを選択します。
 
-![プレビューボタンをクリックすると、表示ページテンプレートのマッピングをプレビューすることができます。](./creating-and-managing-display-page-templates/images/08.png)
+![プレビューボタンをクリックすると、表示ページテンプレートのマッピングをプレビューすることができます。](./creating-and-managing-display-page-templates/images/08.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ## 表示ページテンプレートの使用量の表示
 

@@ -2,9 +2,7 @@
 
 コンテントページを作成する際、あなたとあなたのチームはLiferayのページコメント機能を使用して共同作業を行うことができます。 コメントは、Liferay DXP 7.3以降では標準で有効になっていますが、Liferay DXP 7.2ではデフォルトで無効になっています。 詳しくは、 [Enabling Comments](#enabling-comments) を参照してください。
 
-![ページコメントを使用して共同作業します。](./using-page-comments/images/01.png)
-
-<a name="adding-page-comments" />
+![ページコメントを使用して共同作業します。](./using-page-comments/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ## ページコメントの追加
 
@@ -16,7 +14,7 @@
 
    または、目的のページ要素を選択して、そのコメントアイコンをクリックすることもできます。 クリックすると、コメントパネルが開きます。
 
-   ![ページ要素のコメントアイコンをクリックします。](./using-page-comments/images/02.png)
+   ![ページ要素のコメントアイコンをクリックします。](./using-page-comments/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
    ```{note}
    [フラグメントのサブ要素](../page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md)、コンテナ、またはグリッドにコメントを追加することはできません。 
@@ -26,19 +24,17 @@
 
 コメントを追加したら、 **アクション** ボタン（![Actions Button](../../../images/icon-actions.png)）を使用してコメントを **編集** または **削除** できます。 ユーザーはそれに返信を追加することもできます。
 
-![コメントを編集、削除、または返信します。](./using-page-comments/images/03.png)
+![コメントを編集、削除、または返信します。](./using-page-comments/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ```{note}
 コメントを削除すると、コメントへのすべての返信が削除されます。
 ```
 
-<a name="reviewing-page-comments" />
-
 ## ページコメントの確認
 
 コメントがページフラグメントまたはウィジェットに追加されると、コメントサイドパネルでそれらを確認できます。
 
-![コメントサイドパネルでページのコメントを確認します。](./using-page-comments/images/04.png)
+![コメントサイドパネルでページのコメントを確認します。](./using-page-comments/images/04.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 共同作業する場合、 ［**解決する**］ ボタン（![Resolve Button](../../../images/icon-resolve.png)）をクリックして、コメントを解決済みとしてマークできます。 デフォルトでは、解決されたコメントとその返信は非表示になります。 ただし、 ［**解決済みコメントの表示**］ をオンにすると、解決済みのコメントを表示できます。
 
@@ -46,9 +42,7 @@
 
 解決されたコメントを表示しているときに、緑色の ［**解決する**］ ボタンをクリックしてコメントを再度開くことができます。
 
-![解決されたコメントを表示して再度開きます。](using-page-comments/images/06.png)
-
-<a name="enabling-comments" />
+![解決されたコメントを表示して再度開きます。](using-page-comments/images/06.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ## コメントの有効化
 
@@ -65,8 +59,6 @@
 ```{note}
 これにより、すべてのインスタンスでコンテントページのコメントが有効になります。 これをインスタンスごとに制御するには、*Instance Settings*（*システム設定*ではなく） で同じ設定に移動します。
 ```
-
-<a name="additional-information" />
 
 ## 追加情報
 

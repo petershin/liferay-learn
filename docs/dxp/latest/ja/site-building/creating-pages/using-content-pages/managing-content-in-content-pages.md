@@ -1,8 +1,8 @@
 # コンテントページのコンテンツの管理
 <!-- Alt: Managing Content in Pages and Templates... If renamed, relocate to Displaying Content.-->
-ウィジェットセクションは、[ウィジェットページの **追加** メニュー](../using-widget-pages/adding-widgets-to-a-page.md)と同じように機能します。使用可能なウィジェットの完全なリストが表示され、それらをページに追加できます。主な違いは、コンテントページではウィジェットの主な設定オプションしか使用できないことです。
+コンテントページとテンプレートを編集または作成する場合、それらに追加されたドキュメント、Webコンテンツ記事、コレクション、またはインラインテキストをすばやく表示および編集できます。 これを行うには、編集サイドバーの **ブラウザ** パネル（![Browser](../../../images/icon-browser.png)）を開き、 ［**ページコンテンツ**］ タブをクリックします。
 
-![ブラウザパネルを開き、［ページコンテンツ］タブをクリックします。](./managing-content-in-content-pages/images/01.png)
+![ブラウザパネルを開き、［ページコンテンツ］タブをクリックします。](./managing-content-in-content-pages/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ［ページコンテンツ］タブには、フラグメントとサポートされているウィジェット（つまり、アセットパブリッシャーとWebコンテンツの表示）を使用して追加されたすべてのコンテンツが一覧表示されます。 これには、フラグメントに直接追加されたコンテンツと、フラグメント要素にマップされたコンテンツが含まれます。
 
@@ -32,8 +32,6 @@
    インラインテキストを編集するには、*インラインコンテンツの編集*権限が必要です。
    ```
 
-<a name="for-liferay-dxpportal-73" />
-
 ## Liferay DXP/Portal 7.3の場合
 
 Liferay DXP/Portal 7.3の場合、 **コンテンツ** パネル（![Contents](../../../images/icon-list-ul.png)）のフラグメントとウィジェットを使用して展開されたWebコンテンツを確認できます。
@@ -53,8 +51,6 @@ Liferay DXP/Portal 7.3の場合、 **コンテンツ** パネル（![Contents](.
     * **編集** ：Webコンテンツを編集します
     * **権限設定** ：Webコンテンツの権限を更新します
     * **利用数を表示** ：Webコンテンツがサイトで使用されている場所を確認します
-
-<a name="additional-information" />
 
 ## 追加情報
 

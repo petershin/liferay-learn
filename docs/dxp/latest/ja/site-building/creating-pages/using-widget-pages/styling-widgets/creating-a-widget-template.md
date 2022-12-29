@@ -10,13 +10,13 @@ Liferay DXP/Portal 7.4+ では、Widget テンプレートは FreeMarker のみ�
 
 1. ウィジェットテンプレートを作成したいサイトへ移動します。
 
-1. サイトメニューを開く ![サイトメニュー](../../../../images/icon-product-menu.png) をクリックし、 **Design** &rarr; **Templates** &rarr; **Widget Templates** .
+1. **サイトメニュー**（ ![サイトメニュー](../../../../images/icon-product-menu.png) ) をクリックし、 **Design** &rarr; **Templates** &rarr; **Widget Templates** .
 
    ```{note}
    グローバルサイトでは、ウィジェットのサンプルテンプレートを見ることができます。 これらのサンプルテンプレートは、すでにアプリに設定されているデフォルトのテンプレートとは異なります。
    ```
 
-1. **追加** ボタン(![Add Button](../../../../images/icon-add.png))をクリックし、作成するテンプレートの種類を選択します。
+1. **追加**( ![Add Button](../../../../images/icon-add.png) ) をクリックし、作成するテンプレートの種類を選択します。
 
    ![デザインとウィジェットのテンプレートをクリックします。](./creating-a-widget-template/images/01.png)
 
@@ -24,9 +24,9 @@ Liferay DXP/Portal 7.4+ では、Widget テンプレートは FreeMarker のみ�
 
 1. エディターでテンプレートをデザインします。
 
-   **Elements** サイドパネル(![Elements](../../../../images/icon-list-ul.png))で、利用可能なウィジェットフィールドから選択することができます。 すべてのウィジェットに共通するフィールドもあれば、選択したウィジェットタイプに固有のフィールドもあります。
+   **Elements** サイドパネル( ![Elements](../../../../images/icon-list-ul.png) )では、利用可能なウィジェットフィールド、変数、ユーティリティから選択することができます。 すべてのウィジェットに共通する要素もあれば、選択したウィジェットタイプに固有の要素もあります。
 
-   ![フィールド要素を用いてテンプレートを設計する。](./creating-a-widget-template/images/02.png)
+   ![フィールド要素を使用してテンプレートを設計します。](./creating-a-widget-template/images/02.png)
 
 1. (オプション)**詳細** サイドパネル (![Details](../../../../images/icon-cog3.png)) で、 **説明** を入力し、 **画像** をテンプレートのために選択します。
 

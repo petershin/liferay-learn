@@ -7,16 +7,16 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. Categories and Vocabulary API Basics](./liferay-p7s4.zip) をダウンロードし、解凍してください。
+1. [Categories and Vocabulary API Basics](./liferay-p7s4.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/site-building/site-navigation/developer-guide/liferay-p7s4.zip -O
    ```
 
    ```bash
-   liferay-p7s4.zipを解凍してください。
+   unzip liferay-p7s4.zip
    ```
 
 2. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
@@ -38,16 +38,16 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
     "id" : 20129,
     "name" : "Test Test"
     },
-    "dateCreated" : "2021-09-09T21:31Z", "dateCreated" :"2021-09-09T21:41:31Z",
+    "dateCreated" : "2021-09-09T21:41:31Z",
     "dateModified" : "2021-09-09T21:41:31Z",
     "id" : 40131,
     "name" : "Foo",
-    「navigationMenuItems」 : [ ],
-    「siteId」 : 20125
+    "navigationMenuItems" : [ ],
+    "siteId" : 20125
 
     ```
 
-4. *［Administration Menu］* &rarr; *［サイトビルダー］* &rarr; *［Navigation Menus］*に移動して、ナビゲーションメニューアプリケーションに移動します。 新しいナビゲーションメニューが追加されたことを確認してください。
+4. ［**Administration Menu**］ &rarr; ［**サイトビルダー**］ &rarr; ［**Navigation Menus**］ に移動して、ナビゲーションメニューアプリケーションに移動します。 新しいナビゲーションメニューが追加されたことを確認してください。
 
     ![新しいナビゲーションメニューが追加されたことを確認してください。](./navigation-menu-api-basics/images/01.png)
 
@@ -82,7 +82,7 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
 | `-u "test@liferay.com:learn"`                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -99,11 +99,11 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                                   | 説明                                                                     |
-|:---------------------------------------------------------------------------------------- |:---------------------------------------------------------------------- |
-| `NavigationMenuResource.Builder builder = ...`                                           | `Builder`を取得し、`NavigationMenuResource`サービスインスタンスを生成します。                |
-| `NavigationMenuResource navigationMenuResource = builder.authentication(...).build()です。` | 基本認証を指定し、`NavigationMenuResource`サービスインスタンスを生成します。                     |
-| `NavigationMenu navigationMenu = navigationMenuResource.postSiteNavigationMenu(...);`    | `navigationMenuResource.postSiteNavigationMenu`メソッドを呼び出し、投稿するデータを渡します。 |
+| 行（省略形）                                                                                 | 説明                                                                     |
+|:-------------------------------------------------------------------------------------- |:---------------------------------------------------------------------- |
+| `NavigationMenuResource.Builder builder = ...`                                         | `Builder`を取得し、`NavigationMenuResource`サービスインスタンスを生成します。                |
+| `NavigationMenuResource navigationMenuResource = builder.authentication(...).build();` | 基本認証を指定し、`NavigationMenuResource`サービスインスタンスを生成します。                     |
+| `NavigationMenu navigationMenu = navigationMenuResource.postSiteNavigationMenu(...);`  | `navigationMenuResource.postSiteNavigationMenu`メソッドを呼び出し、投稿するデータを渡します。 |
 
 プロジェクトには、依存関係として`com.liferay.headless.delivery.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 

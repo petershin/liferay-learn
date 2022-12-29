@@ -24,7 +24,7 @@ using-content-pages/content-page-editor-ui-reference.md
 
 コンテントページを編集する場合、 **サイトビルダー** を介して変更が行われ、下書きとして保存されます。 本番環境に影響を与えることなく、現在の編集セッションで行った変更を確認したり、元に戻したり、やり直したりすることができます。 準備ができたら、変更をすぐに公開するか、カスタム [ワークフロー](../../process-automation/workflow/introduction-to-workflow.md) を有効にして、レビューと公開のプロセスを指示します。 ページ要素に[コメント](./using-content-pages/using-page-comments.md)を追加して、チームメンバーと共同作業することもできます。
 
-![コンテントページを編集する場合、すべての変更はサイトビルダーを介して行われます。](./using-content-pages/images/01.png)
+![コンテントページを編集する場合、すべての変更はサイトビルダーを介して行われます。](./using-content-pages/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 コンテントページのフラグメントとウィジェットを使って、Webコンテンツやドキュメントなどを表示することができます。 また、ページフィールドにマッピングされたコンテンツも含めて、閲覧、編集、管理することができます。 詳細については、 [コンテントページのコンテンツの管理](./using-content-pages/managing-content-in-content-pages.md) を参照してください。
 
@@ -62,5 +62,5 @@ using-content-pages/content-page-editor-ui-reference.md
 
 :::{grid-item-card} コンテンツページエディタ UI リファレンス
 :link: ./using-content-pages/content-page-editor-ui-reference.md
-::: 
+:::
 ::::

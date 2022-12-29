@@ -3,6 +3,7 @@ toc:
 - ./segmentation/creating-and-managing-user-segments.md
 - ./segmentation/segmentation-by-geolocation.md
 - ./segmentation/getting-analytics-for-user-segments.md
+- ./segmentation/segments-admin-settings.md
 - ./segmentation/segments-editor-ui-reference.md
 ---
 # セグメンテーション
@@ -13,6 +14,7 @@ toc:
 segmentation/creating-and-managing-user-segments.md
 segmentation/segmentation-by-geolocation.md
 segmentation/getting-analytics-for-user-segments.md
+segmentation/segments-admin-settings.md
 segmentation/segments-editor-ui-reference.md
 ```
 
@@ -31,7 +33,11 @@ segmentation/segments-editor-ui-reference.md
 :link: ./segmentation/getting-analytics-for-user-segments.md
 :::
 
+:::{grid-item-card} セグメント管理設定
+:link: ./segmentation/segments-admin-settings.md
+:::
+
 :::{grid-item-card} セグメントエディターUIリファレンス
-:link: ./segmentation/segments-editor-ui-reference.md
-:::  
+:link: ./segmentation/segments-editor-ui-reference.md 
+:::
 ::::

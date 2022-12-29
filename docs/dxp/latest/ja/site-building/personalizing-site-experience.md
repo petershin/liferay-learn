@@ -5,7 +5,6 @@ toc:
 - ./personalizing-site-experience/migration-from-audience-targeting.md
 - ./personalizing-site-experience/enabling-automated-live-chat-systems.md
 ---
-
 # サイトエクスペリエンスのパーソナライズ
 
 ```{toctree}
@@ -47,7 +46,7 @@ Analytics Cloudとの統合により、機械学習を活用した詳細なデ�
 
 コンテントページのパーソナライゼーションを行うと、ページの閲覧者に基づいてページレイアウトとコンテンツが動的に変化します。 ページを表示しているユーザーのユーザーセグメント基準に基づいて、さまざまなテキスト、画像、ウィジェット、さらにはさまざまなレイアウトを提供する[コンテントページ](./creating-pages/using-content-pages.md)の*エクスペリエンス*を作成できます。 詳細は、 [コンテンツページのパーソナライゼーション](./personalizing-site-experience/experience-personalization/content-page-personalization.md) を参照してください。
 
-![ユーザーのさまざまなセグメントに固有のエクスペリエンスを作成できます。](./personalizing-site-experience/images/02.png)
+![ユーザーのさまざまなセグメントに固有のエクスペリエンスを作成できます。](./personalizing-site-experience/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ### コレクション
 

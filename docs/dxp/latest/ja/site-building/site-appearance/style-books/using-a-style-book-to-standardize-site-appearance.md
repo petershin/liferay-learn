@@ -22,11 +22,11 @@ Liferay 7.4 U10+ と GA14+ からは、すべてのサイトに *Styles from The
 
 1. ［**Style Book**］ タブをクリックして開きます。
 
-    ![ [スタイルブック]タブを開き、リストから目的のスタイルブックを選択します。](./using-a-style-book-to-standardize-site-appearance/images/01.png)
+    ![[スタイルブック]タブを開き、リストから目的のスタイルブックを選択します。](./using-a-style-book-to-standardize-site-appearance/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. リストから目的のスタイルブックを選択します。
 
-1. ［**Publish**］ をクリックします。
+1. ［**公開**］ をクリックします。
 
 このページは、新しいスタイルブックを使用して公開されます。
 
@@ -74,7 +74,7 @@ Liferay 7.4 U10+ と GA14+ からは、すべてのサイトに *Styles from The
 
 * テキストボックスに希望の色の16進コードを入力すると、任意の色に変更することができます。
 
-* **Value from Stylebook** ボタンをクリックすると、あらかじめ定義された色のメニューが表示され、その中から選択することができます。 カスタマイズできる一般的なカテゴリーから、それぞれ色を選んで再利用することができます。
+****Value from Stylebook** ボタンをクリックすると、あらかじめ定義された色のメニューが表示され、その中から選択することができます。 カスタマイズできる一般的なカテゴリーから、それぞれ色を選んで再利用することができます。
 
 ![どのカラーオプションでも、色を変更するためのオプションがいくつか用意されています。](./using-a-style-book-to-standardize-site-appearance/images/05.png)
 
@@ -141,4 +141,4 @@ Spacingカテゴリのオプションを使用して、ページの主要な要�
 ## 追加情報
 
 * [スタイルブックトークンの定義](./developer-guide/style-book-token-definitions.md)
-* [スタイルブックに新しいトークンセットを追加する](./developer-guide/adding-a-new-token-set-for-your-style-book.md)
+* [Adding a New Token Set for Your Style Book](./developer-guide/adding-a-new-token-set-for-your-style-book.md)

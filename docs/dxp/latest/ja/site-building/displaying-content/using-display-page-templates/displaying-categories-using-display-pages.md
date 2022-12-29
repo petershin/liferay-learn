@@ -11,7 +11,7 @@
 - [カテゴリ用の表示ページテンプレート](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md) を作成し、このテンプレートをデフォルトとして設定します。
 - [カテゴリを作成または編集する](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md)際に、お好みの表示ページテンプレートを選択してください。
 
-また、複数のカテゴリに一度に表示ページテンプレートを割り当てることも可能です。［サイト管理］&rarr; ［**カテゴリー設定**］&rarr;［**カテゴリ**］で、アップデートしたいカテゴリをチェックし、ページ(![Page](../../../images/icon-page.png))アイコンをクリックするか、上部のアクション(![Actions](../../../images/icon-actions.png)) メニューから、［**表示ページテンプレートを割り当て**］を選択します。
+また、複数のカテゴリに一度に表示ページテンプレートを割り当てることも可能です。 サイト管理&rarr; ［**カテゴリー設定**］ &rarr; ［**カテゴリ**］ で、アップデートしたいカテゴリをチェックし、ページ (![Page](../../../images/icon-page.png)) アイコンをクリックするか、上部のアクション (![Actions](../../../images/icon-actions.png)) メニューから、 ［**Assign Display Page Template**］ を選択します。
 
 ![Actionsメニューで表示ページテンプレートをデフォルトに設定します。](./displaying-categories-using-display-pages/images/07.png)
 
@@ -76,7 +76,7 @@ Liferay DXP 7.4から、表示ページテンプレートにコンテンツの�
 1. マッピングエリアと ［**ソース**］ ドロップダウンメニューで、 ［**カテゴリ**］ がまだ選択されていない場合は、選択します。
 1. ［**フィールド**］ ドロップダウンメニューをクリックし、 ［**名前**］(C) を選択して、カテゴリの名前とカードをマップします。
 
-   ![カードフラグメントを使用して、表示ページテンプレートのカテゴリフィールドをマッピングします。](./displaying-categories-using-display-pages/images/03.png)
+   ![カードフラグメントを使用して、表示ページテンプレートのカテゴリフィールドをマッピングします。](./displaying-categories-using-display-pages/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. カード説明とカード画像についても、同様のマッピング作業を繰り返します。 このリストでは、この例におけるカードフラグメントからカテゴリフィールドへのマッピングをまとめています。
 

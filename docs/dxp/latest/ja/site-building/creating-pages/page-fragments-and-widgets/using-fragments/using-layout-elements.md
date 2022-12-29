@@ -1,33 +1,39 @@
 # レイアウト要素の使用
 
-> 利用可能：Liferay Portal 7.3 GA2以降、以前は **パネル** および **行** を含むレイアウトと呼ばれていました。
+{bdg-secondary}`For Liferay 7.4 U22+/GA22+`
 
-**レイアウト要素** は、ページとテンプレートのレイアウトを設計するために使用できるドロップゾーンを定義します。 デフォルトでは、Liferayには [**コンテナ**](#containers) と [**グリッド**](#grids) の2つのレイアウト要素が含まれています。 追加すると、ウィジェットやその他のフラグメントをこれらのドロップゾーンにドラッグアンドドロップでき、さらにコンテナやグリッドを追加することで、さらに複雑なレイアウトを作成できます。 レイアウトを設計した後、レイアウト構成を保存して、他のページやテンプレートで再利用できます。 詳細については、 [フラグメント構成の保存](./saving-fragment-compositions.md) を参照してください。
+レイアウト要素とは、ページやテンプレートのレイアウトを設計するためのドロップゾーンを定義するものです。 デフォルトでは、Liferayは2つのレイアウトエレメントを含んでいます。 [Containers](#containers) と [Grids](#grids) 。 このドロップゾーンにウィジェットやフラグメントをドラッグ＆ドロップすることで、コンテナやグリッドを追加し、より複雑なレイアウトを作成することができます。 レイアウト設計後、レイアウト構成を保存して、他のページやテンプレートで再利用することができます。 詳細については、 [フラグメント構成の保存](./saving-fragment-compositions.md) を参照してください。
 
-フラグメントに対応している新しいページまたはテンプレートを作成すると、デフォルトのドロップゾーンが表示されます。 この領域には任意のフラグメントを追加できますが、コンテナフラグメントをコンポジションの最初の要素として使用すると、重要な利点があります。
+![コンテナとグリッドのフラグメントは、ページのレイアウトをデザインするためのものです。](./using-layout-elements/images/01.png)
 
-* [高度なコンポジション](./saving-fragment-compositions.md#creating-advanced-compositions-with-the-container-fragment) の **Flex** ディスプレイプロパティを含む、ページデザインのレイアウトコントロールの強化（Liferay DXP 7.4以降）
-* 他のページやテンプレートでコンポジションをすばやく[保存して再利用](./saving-fragment-compositions.md)する機能
-* フラグメントコンポジションにURLまたはページリダイレクトを追加する機能
-* [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)を活用してサイトの外観を標準化する機能
+フラグメントをサポートする新しいページやテンプレートを作成すると、デフォルトのドロップゾーンが表示されます。 この領域には任意のフラグメントを追加できますが、コンテナフラグメントをコンポジションの最初の要素として使用することには重要な利点があります。
 
-コンテナを追加したら、グリッドフラグメントを使用して、さまざまなビューポートのコンテンツレイアウトをカスタマイズできます。 詳細については、 [グリッドフラグメントを使用したレスポンシブレイアウトの構築](./../../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) を参照してください。
+* [高度なコンポジション用のフレックス表示プロパティを含む、ページデザインに対するより大きなレイアウト制御](./saving-fragment-compositions.md#creating-advanced-compositions-with-the-container-fragment) (Liferay DXP 7.4+)。
+* [](./saving-fragment-compositions.md) のコンポジションを保存し、他のページやテンプレートで素早く再利用することができます。
+* フラグメント・コンポジションにURLやページのリダイレクトを追加する。
+* [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を活用し、サイトの外観を標準化する。
 
-<a name="containers" />
+コンテナを追加したら、グリッドフラグメントを使用して、異なるビューポート用にコンテンツのレイアウトをカスタマイズすることができます。 詳細については、 [グリッドフラグメントを使用したレスポンシブレイアウトの構築](./../../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) を参照してください。
+
+```{tip}
+コンテナやグリッドに要素をドラッグ＆ドロップすると、Liferayはドロップゾーンをハイライト表示し、配置場所を示します。 一度追加した要素は、ブラウザのサイドパネル（( ![Browser](../../../../images/icon-hierarchy.png) ) ）にドラッグ＆ドロップして並べ替えができます。
+```
 
 ## コンテナ
-<!--TASK: Add Image-->
-コンテナフラグメントは、構成可能なドロップゾーンをコンテントページに追加します。 各コンテナには、標準の[一般](./configuring-fragments/general-settings-reference.md)オプションと[スタイル](./configuring-fragments/styles-reference.md)オプションが含まれています。 幅を設定してリンクを追加することもできます。 詳細については、 [Container Options](./configuring-fragments/general-settings-reference.md#container-options) を参照してください。
 
-<a name="grids" />
+> 旧称： **パネル**
+
+コンテナフラグメントは、設定可能なドロップゾーンをコンテンツページに追加します。 標準的な設定オプションに加え、コンテナのHTMLタグ、表示構造などを設定できます。 詳しくは、 [フラグメントの設定](./configuring-fragments.md) を参照してください。
+
+![コンテナには、標準的な構成オプションと独自の構成オプションがあります。](./using-layout-elements/images/02.png)
 
 ## グリッド
-<!--TASK: Add Image-->
-グリッドフラグメントは、ページまたはテンプレートに複数のドロップゾーンモジュールを追加します。 これらのモジュールは、水平および垂直に配置できます。
 
-標準の[一般](./configuring-fragments/general-settings-reference.md)および[スタイル](./configuring-fragments/styles-reference.md)オプションに加えて、各グリッドのモジュール数、行ごとのモジュール数、および各モジュールのコンテンツの垂直位置を決定できます。 各モジュールの幅を手動で調整し、モジュール間のパッディングを追加または削除することもできます。 詳細については、 [Grid Options](./configuring-fragments/general-settings-reference.md#grid-options) を参照してください。
+> 旧称： **行数：**
 
-<a name="additional-information" />
+グリッドフラグメントは、ページやテンプレートに複数のドロップゾーンモジュールを追加します。 これらのモジュールは、水平および垂直に配置できます。 標準的な設定オプションに加え、各グリッドのモジュール数、1行あたりのモジュール数、各モジュールのコンテンツの垂直方向の配置を決定することができます。 各モジュールの幅を手動で調整し、モジュール間のパディングを追加・削除することができます。 詳しくは、 [フラグメントの設定](./configuring-fragments.md) を参照してください。
+
+![グリッドには、標準的な構成オプションと独自の構成オプションがあります。](./using-layout-elements/images/03.png)
 
 ## 追加情報
 

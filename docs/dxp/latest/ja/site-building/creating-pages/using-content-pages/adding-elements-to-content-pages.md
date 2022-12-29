@@ -1,38 +1,32 @@
 # コンテンツページへの要素の追加
 
-[コンテントページを作成](../adding-pages/adding-a-page-to-a-site.md)したら、ページウィジェットとフラグメントを追加して、ページのコンテンツとストラクチャーを定義できます。
+[コンテンツページ](../adding-pages/adding-a-page-to-a-site.md)を作成したら、ウィジェットやフラグメントを追加して、ページのコンテンツや構造を定義することができます。
 
-1. サイトメニューの下のから ［**サイトビルダー**］ &rarr; ［**ページ**］ に移動します。
+エレメントを追加するには
 
-1. 新しいページを追加したいレベルで **追加**(![Add Page](../../../images/icon-plus.png))をクリックし、 ［**Add Page**］ を選択します。
+1. コンテンツページに移動し、 **編集** ボタン ( ![Edit Button](../../../images/icon-edit.png) ) をクリックします。 これにより、コンテンツページエディタ（ [）](./content-page-editor-ui-reference.md)が開きます。
 
-    ![新規コンテンツページの追加から始めます。](adding-elements-to-content-pages/images/01.png)
+1. **Fragments and Widgets**( ![Fragments and Widgets](../../../images/icon-plus.png) ) のサイドパネルを開き、必要な要素をページ上にドラッグします。
 
-1. **空白** テンプレート、または既存のテンプレートのいずれかを選択します。
+   フラグメントとウィジェットのタブを閲覧したり、検索フィールドを使って特定の要素を探すことができます。
 
-1. ページの追加ダイアログで、ページの **名前** を入力します。
+   ![編集サイドバーからフラグメントやウィジェットを追加できます。](adding-elements-to-content-pages/images/01.png)
 
-1. または、既存のコンテンツページの **アクション** メニュー (![Actions](../../../images/icon-actions.png)) をクリックし、 ［**編集**］ を選択してください。
+1. (オプション) 要素を追加した後、 **ブラウザ** パネル ( ![Browser](../../../images/icon-hierarchy.png) ) を開き、ページに追加したすべての要素を表示および管理します。 Liferay 7.4 U37/GA37+では、ブラウザパネルで要素をドラッグ＆ドロップして再編成したり、要素をダブルクリックして名前を変更したりすることができます。
 
-    ![フラグメントやウィジェットを編集エリアにドロップすることで、既存のコンテンツページを編集することができます。](adding-elements-to-content-pages/images/02.png)
+   ![ページに追加されたすべての要素を「ブラウザ」パネルで表示・管理します。](adding-elements-to-content-pages/images/02.png)
 
-1. コンテントページのサイドバーから、 ［**フラグメントとウィジェット**］(![Fragments and Widgets](../../../images/icon-cards2.png)) を選択し、コンテンツの[フラグメント](../page-fragments-and-widgets/using-fragments.md)と[ウィジェット](./using-widgets-on-a-content-page.md)の追加を開始します。 コンポーネントをブラウズするか、 **検索** フィールドを使って特定の要素を見つけることができます。
+1. 設定]サイドバーで各ページ要素を選択し、設定する。 詳しくは、 [フラグメントの設定](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) を参照してください。
 
-    ![コンテンツページのサイドバーから、フラグメントとウィジェットを追加します。](adding-elements-to-content-pages/images/03.png)
+   ![設定]サイドバーで各ページ要素を選択し、設定する。](adding-elements-to-content-pages/images/03.png)
 
-    ```{note}
-    新しいコンテンツページは空で始まり、*下書き*ステータスになります。 公開するまで、ページは表示されません。
-    ```
+1. ［**公開**］ をクリックします。
 
-1. フラグメントとウィジェットの外観と内容の詳細設定を設定します。 詳細については、 [フラグメントの設定](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) を参照してください。
+   デフォルトでは、公開すると変更がすぐに公開されます。 ただし、 [ワークフロー](../../../process-automation/workflow/introduction-to-workflow.md) を使用してレビューと出版プロセスを指示している場合、Publish をクリックすると、定義された手順が開始されます。
 
-    ```{tip}
-    コンテンツページで進行中の作業は自動的に保存されます。
-    ```
-
-1. 右上の ［**公開**］ ボタンをクリックして、更新を本番環境ページで利用できるようにします。
-
-<a name="related-information" />
+```{note}
+ページの編集中、Liferayは自動的に下書きとして進行状況を保存します。
+```
 
 ## 関連情報
 

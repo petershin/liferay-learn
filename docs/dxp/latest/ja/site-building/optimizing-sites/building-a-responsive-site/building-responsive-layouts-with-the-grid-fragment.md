@@ -4,17 +4,15 @@
 
 Liferay DXPではデフォルトで[レスポンシブデザインが使用](./building-a-responsive-site.md)されますが、コンテンツレイアウトをさらに細かく制御したい場合があります。 コンテントページで[グリッドフラグメント](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md)を使用することにより、デスクトップデバイスとモバイルデバイスのさまざまなスクリーンサイズに対してコンテンツレイアウトを正確に制御できます。 [コンテントページを編集する](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)場合、［デバイス表示］セクション（C）でグリッドフラグメント（A）を使用してコンテンツの外枠を描き、さまざまなターゲットデバイス用にカスタマイズされたレイアウトスタイル（B）を定義できます。 たとえば、1行のモジュール数をカスタマイズしたり、グリッドパッディングオプションをスマートフォンサイズの画面専用にカスタマイズすることが可能です。
 
-![グリッドフラグメントを使用すると、さまざまなスクリーンサイズのレイアウトオプションをカスタマイズできます。](./building-responsive-layouts-with-the-grid-fragment/images/04.png)
+![グリッドフラグメントを使用すると、さまざまなスクリーンサイズのレイアウトオプションをカスタマイズできます。](./building-responsive-layouts-with-the-grid-fragment/images/04.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 次の例を考えてみましょう。 保険会社のWebサイトのサービスセクションに、潜在的な顧客を対象としたサービスの概要を提供します。 このセクションでは、3つのモジュールのグリッドフラグメント（B）内に一連のカードフラグメント（A）を使用して、3つの異なるサービスに関する情報を含めます。
 
-![グリッドフラグメントを他のフラグメントと組み合わせて、コンテンツレイアウトをカスタマイズできます。](./building-responsive-layouts-with-the-grid-fragment/images/01.png)
+![グリッドフラグメントを他のフラグメントと組み合わせて、コンテンツレイアウトをカスタマイズできます。](./building-responsive-layouts-with-the-grid-fragment/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
-コンピューターからこの「サービス」コンテンツページにアクセスすると、グリッドレイアウトに期待される結果が表示されます。 ただし、スマートフォンからページにアクセスすると、各カードフラグメントのテキストの量（C）とグリッドのパッディングサイズ（D）の関係で、適切な結果とはなりません。 グリッドフラグメントスタイルを使用すると、各モジュールに表示するカードの数をカスタマイズしたり、さまざまなスクリーンサイズで最高の表示エクスペリエンスが得られるようにスタイルを変更したりできます。
+コンピューターからこの 'サービス' コンテントページにアクセスすると、グリッドレイアウトに期待される結果が表示されます。 ただし、スマートフォンからページにアクセスすると、各カードフラグメントのテキストの量（C）とグリッドのパッディングサイズ（D）の関係で、適切な結果とはなりません。 グリッドフラグメントスタイルを使用すると、各モジュールに表示するカードの数をカスタマイズしたり、さまざまなスクリーンサイズで最高の表示エクスペリエンスが得られるようにスタイルを変更したりできます。
 
 ![デフォルトのグリッドレイアウトスタイルは、スマートフォンのスクリーンサイズに最適化されていません。](./building-responsive-layouts-with-the-grid-fragment/images/02.png)
-
-<a name="modifying-the-layout-of-the-grid-fragment" />
 
 ## グリッドフラグメントのレイアウトの変更
 
@@ -28,18 +26,16 @@ Liferay DXPではデフォルトで[レスポンシブデザインが使用](./b
 1. 編集サイドバーの ［**Styles**］ 列で、スクリーンサイズに適したレイアウトオプションを選択します。  たとえば、 ［**スマホ（縦**）］ レイアウトオプションでは、行ごとに1つのモジュールを設定した方がはるかに効果的です。
 1. ターゲットのスクリーンサイズの画像 **解像度** を構成する（Liferay DXP 7.4以降で使用可能）か、デフォルトの ［**Auto**］ オプションのままにして[アダプティブメディア](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md)を使用します。
 
-    ![ターゲットスクリーンサイズの画像解像度を選択するか、［Auto］オプションのままにしてアダプティブメディアを使用します。](./building-responsive-layouts-with-the-grid-fragment/images/05.png)
+    ![ターゲットスクリーンサイズの画像解像度を選択するか、［Auto］オプションのままにしてアダプティブメディアを使用します。](./building-responsive-layouts-with-the-grid-fragment/images/05.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. ［**公開**］ をクリックします。
-1. 必要に応じて、メインツールバーの ［**シミュレーション**］（![Simulation](../../../images/icon-simulation.png)）ボタンをクリックして、ターゲットデバイスでの変更を確認します。
+1. 必要に応じて、メインツールバーの **シミュレーション**（![Simulation](../../../images/icon-simulation.png)）ボタンをクリックして、ターゲットデバイスでの変更を確認します。
 
-    ![コンテンツページエディタの［Device Display］および［Styles］オプションを使用して、グリッドフラグメントのレイアウトをカスタマイズします。](./building-responsive-layouts-with-the-grid-fragment/images/03.gif)
+    ![コンテンツページエディタの［Device Display］および［Styles］オプションを使用して、グリッドフラグメントのレイアウトをカスタマイズします。](./building-responsive-layouts-with-the-grid-fragment/images/03.gif) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 ```{tip}
-選択したグリッドフラグメント構成を保存して、他のコンテンツページで再利用できます。 詳細については、 [フラグメント構成の保存](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md) を参照してください。
+選択したグリッドフラグメント設定を保存して、他のコンテンツページで再利用できます。 詳細については、 [フラグメント構成の保存](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md) を参照してください。
 ```
-
-<a name="additional-information" />
 
 ## 追加情報
 

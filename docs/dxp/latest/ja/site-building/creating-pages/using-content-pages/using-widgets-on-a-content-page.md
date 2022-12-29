@@ -50,7 +50,7 @@ Liferay Portal 7.3 GA2以降、コンテンツページからウィジェット�
 
 
 ```{note}
- [ページテンプレート](../adding-pages/creating-a-page-template.md) に基づいてページを作成すると、権限もコピーされます。 マスターページの権限は、ページではなく、[マスターページ](../defining-headers and footers/managing-master-page-templates.md) で設定されます。
+ [ページテンプレート](../adding-pages/creating-a-page-template.md) に基づいてページを作成すると、権限もコピーされます。 マスターページの権限は、ページではなく、[マスターページ](../defining-headers-and-footers/managing-master-page-templates.md) で設定されます。
 ```
 <a name="content-page-limitations-for-widgets" />
 

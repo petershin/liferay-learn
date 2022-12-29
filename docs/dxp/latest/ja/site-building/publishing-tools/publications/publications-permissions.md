@@ -28,7 +28,7 @@ Publications は Liferay のパーミッションのフレームワークと連�
 |:--------------- |:---------------------------------------------------------------------------------------------------------------------------- |
 | コントロールパネルへのアクセス | グローバルメニュー（ ![Global Menu](../../../images/icon-applications-menu.png) ）から「Publications」アプリケーションにアクセスします。                     |
 | ページに追加する        | 該当なし                                                                                                                         |
-| 設定              | [](./enabling-publications.md) Publications と Sandbox Only モードの有効・無効を設定します。                                                  |
+| 設定              | [Enable or disable](./enabling-publications.md) Publications と Sandbox Only モードの有効・無効を設定します。                                                  |
 | 権限の設定           | Publicationsアプリケーションの権限を表示、変更することができます。                                                                                      |
 | 表示設定            | 該当なし                                                                                                                         |
 | 表示              | グローバルメニュー（ ![Global Menu](../../../images/icon-applications-menu.png) ）で「Publications」アプリケーションを表示し、「Publications」バーにアクセスします。 |

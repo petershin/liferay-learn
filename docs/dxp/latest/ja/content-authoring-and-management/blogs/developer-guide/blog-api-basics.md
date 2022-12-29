@@ -11,7 +11,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 
 次に、以下の手順を実行します。
 
-1. [Blog API Basics](./liferay-r3g4.zip) をダウンロードし、解凍してください。.
+1. [Blog API Basics](./liferay-r3g4.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/blogs/developer-guide/liferay-r3g4.zip -O
@@ -93,7 +93,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 | `-u "test@liferay.com:learn"`                                               | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。

@@ -9,7 +9,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 
 次に、以下の手順を実行します。
 
-1. [カテゴリーとボキャブラリAPIの基本](./liferay-f5w3.zip) をダウンロードして解凍します。
+1. [Categories and Vocabulary API Basics](./liferay-f5w3.zip)  をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories/developer-guide/liferay-f5w3.zip -O
@@ -84,7 +84,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 | `-u "test@liferay.com:learn"`                                                             | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。

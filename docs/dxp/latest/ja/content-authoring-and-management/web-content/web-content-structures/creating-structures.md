@@ -22,7 +22,7 @@
 ```
 
 ```{tip}
-Webコンテンツとストラクチャーの追加設定オプション（例： [カスタムストラクチャーキーの設定を有効にする](./whats-new-with-web-content-structures-in-7-4.md#setting-the-structure-key) ）については、［システム設定］&rarr; ［コンテンツとデータ］&rarr; ［Webコンテンツ］&rarr; ［管理］をご覧ください。
+Web Content と Structures のその他の設定オプション（例： [enable setting custom Structure Key](./whats-new-with-web-content-structures-in-7-4.md#setting-the-web-content-structure-key) ）については、システム設定 &rarr; コンテンツとデータ &rarr; Web Content &rarr; 管理をご覧下さい。
 ```
 
 ## ストラクチャー項目

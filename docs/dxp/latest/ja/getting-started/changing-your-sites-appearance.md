@@ -1,33 +1,50 @@
 # サイトの外観を変更する
 
-サイトのロゴ、ファビコン、テーマの変更は、最初に変更したいルックアンドフィールの一部です。 テーマは、サイトの全体的なルックアンドフィールを設定するために使用されます。 サイトのページは、DXPインスタンスに展開されているテーマを使用するように設定できます。
+Liferayには、サイトの外観をカスタマイズする方法がたくさんあります。 サイトのファビコンとテーマは、最初に変更した方がよい要素です。 テーマはサイトのデフォルトのルック＆フィールを設定し、ファビコンはユーザーのブラウザーのタブでサイトを識別するためのアイコンです。
 
-DXP Docker イメージでは、 **Classic** テーマがデフォルトで利用可能です。 この例では、新しいシンプルなテーマをデプロイしてから、テーマを切り替える方法を示します。
-
-## サイトのテーマを変更する
-
-### 新しいテーマをデプロイする
+## サイトのファビコンを変更する
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. Download the WAR containing the [Acme Sample Blue Theme](./liferay-5b2v-theme.war) :
+1. **サイトメニュー**(![Site Menu](../images/icon-product-menu.png))を開き、 **サイトビルダー** &rarr; **ページ** に移動します。
 
-    ```bash
+1. アプリケーションバーにある **アクション** ボタン(![Action Button](../images/icon-actions.png))をクリックし、 **設定** を選択します。
+
+   ![Pagesアプリケーションを開き、アプリケーションバーのアクションボタンをクリックし、設定を選択します。](./changing-your-sites-appearance/images/01.png)
+
+1. ［お気に入りアイコン］で **お気に入りアイコンの変更** をクリックします。
+
+   ![お気に入りアイコンの変更をクリックします。](./changing-your-sites-appearance/images/02.png)
+
+1. 画像を選択またはアップロードします。
+
+1. ［**保存**］をクリックします。
+
+サイトでは、選択した画像がお気に入りのアイコンとして使用されます。
+
+## サイトのテーマを変更する
+
+デフォルトでは、Liferayインスタンスは標準テーマを使用しますが、カスタムテーマをデプロイして使用することもできます。
+
+### 新しいテーマをデプロイする. [Acme Sample Blue Theme](./liferay-5b2v-theme.war) を含むWARをダウンロードします。
+
+    ``bash
     curl https://learn.liferay.com/dxp/latest/en/getting-started/changing-your-sites-appearance/liferay-5b2v-theme.war -O
     ```
 
 1. テーマを含むWARをデプロイします。
 
+
     <!-- ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq) -->
 
     ```bash
-    docker cp liferay-5b2v-theme.war docker-container:path-to-deploy-folder
+    docker cp liferay-5b2v-theme.war docker-container:[path-to-deploy-folder]
     ```
 
-これにより、DXPインスタンスにサンプルテーマが読み込まれます。 コンソールで次のメッセージを確認して、テーマが正常にデプロイされたことを確認できます。
+これにより、サンプルのテーマがDXPインスタンスにロードされます。 コンソールで以下のメッセージを確認することで、テーマが正常にデプロイされたことを確認することができます。
 
 ```
 2020-03-11 17:06:35.601 INFO  [fileinstall-/opt/liferay/osgi/war][BundleStartStopLogger:39] STARTED liferay-5b2v-theme_1.0.0 [1112]
@@ -35,40 +52,35 @@ DXP Docker イメージでは、 **Classic** テーマがデフォルトで利�
 
 ### サイトのテーマを変更する
 
-デプロイされたテーマを使用するようにサイトのページを設定します。
+1. ブラウザーを開き、 `https://localhost:8080` と [管理者としてログイン](./introduction-to-the-admin-account.md).
 
-1. ブラウザで` https:// localhost:8080にアクセスし、` [管理者としてログイン](./introduction-to-the-admin-account.md) します。
+1. *サイトメニュー* (![Site Menu](../images/icon-product-menu.png)) を開き、 *サイトビルダー* &rarr; *ページ*に進みます。
 
-1. 画面の左側には **サイトメニュー** で、 ［**サイトビルダー**］ → ［**Pages**］ に移動します。
+1. アプリケーションバーの*アクション*ボタン（![Action Button](../images/icon-actions.png)）をクリックし、*［Configuration］*を選択します。
 
-1. アプリケーションバーの **アクション** ボタン (![Action Button](../images/icon-actions.png)) をクリックし、 **コンフィグレーション** を選択します。
+   ![ページ画面を開き、アプリケーションバーの［アクション］ボタンをクリックし、［設定］を選択します。](./changing-your-sites-appearance/images/01.png)
 
-    ![ページ画面を開き、アプリケーションバーの［アクション］ボタンをクリックし、［設定］を選択します。](./changing-your-sites-appearance/images/01.png)
+1. *Look And Feel* セクションを展開し、 *Change Current Theme*をクリックします。
 
-1. スクロールダウンして、 ［**Change Current Theme**］ ボタンをクリックします。
+   ![現在のテーマを変更する］をクリックして、新しいテーマを選択します。](./changing-your-sites-appearance/images/03.png)
 
-    ![現在のテーマを変更する］をクリックして、新しいテーマを選択します。](./changing-your-sites-appearance/images/02.png)
+1. サンプルテーマを選択します。 *Acme Sample Blue Theme*.
 
-1. デプロイされたサンプルテーマ、 **Acme Sample Blue Theme** を選択します。
+1. *[保存]* をクリックします。
 
-1. サイトのホームページに戻り、テーマが変更されたことを確認します。 サイトのコンテンツセクションの背景が青色になりました。
+トップページに移動して、背景色が青になったことを確認します。
 
-    ![テーマを変更すると、ホームページの背景色が変わります。](./changing-your-sites-appearance/images/03.png)
+![背景色が青になったことを確認する。](./changing-your-sites-appearance/images/04.png)
 
-サイトのテーマが更新されました。
+## 次のステップ
 
-### 次のステップ
-
-サイトの外観を管理する方法の全容については、[Managing Your Site's Appearance](../site-building/site-appearance/site-appearance.md)を参照してください。
+さらに、 [スタイルブック](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を使ってデザイン要素をさらにカスタマイズしたり、 [マスターページテンプレート](../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) を使ってコンテンツページのヘッダーとフッターをデザインすることができます。 サイトの外観のカスタマイズの概要については、 [Site Appearance](../site-building/site-appearance/site-appearance.md) を参照してください。
 
 [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md) には、プロフェッショナルなルックアンドフィールを素早く実現するためのテーマが多数用意されています。
 
 また、 [独自のテーマを作成する方法](../site-building/site-appearance/themes/introduction-to-themes.md)も紹介されています。
 
+
 <!-- ## Changing Your Site's Logo
-
-Coming soon!
-
-## Changing Your Site's Favicon
 
 Coming soon! -->

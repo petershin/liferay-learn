@@ -82,7 +82,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 | `-u "test@liferay.com:learn"`                                                | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -160,7 +160,7 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 次のcURLまたはJavaコマンドを使用して、特定のタグを取得します。 `1234`をタグのIDに置き換えてください。
 
 ```{tip}
-``Keywords_GET_FromSite.[java|sh]``を使用して、サイトの``Keyword`` IDを取得します。
+``Keywords_GET_FromSite.[java|sh]`` を使用して、サイトの ``Keyword`` IDを取得します。
 ```
 
 ### Keyword_GET_ById.sh

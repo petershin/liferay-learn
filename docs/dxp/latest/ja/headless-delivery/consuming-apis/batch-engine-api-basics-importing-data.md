@@ -14,7 +14,7 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 1. [Batch Engine API Basics](./liferay-g4j2.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/liferay-g4j2.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
    ```
 
    ```bash
@@ -96,7 +96,7 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
    java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"name\": \"Able\", \"type\": \"business\"}, {\"name\": \"Baker\", \"type\": \"guest\"}]" ImportTask_POST_ToInstance
    ```
 
-   JSONレスポンスから、インポートタスクの `id` に注目してください。
+   JSONレスポンスからインポートタスクの `id` に注目してください。
 
 1. `ImportTask_GET_ById` クラスを実行します。 `1234` をインポートタスクのIDに置き換えてください。 `executeStatus` が `COMPLETED`と表示されたら、上記の手順でデータを確認することができます。
 
@@ -123,7 +123,7 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 | `-u "test@liferay.com:learn"`                                                                                     | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。
+ここでは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 Oauth2を使用したReactアプリケーションのサンプルは、[Securing Your App with OAuth2](../using-oauth2/securing-your-app-with-oauth2.md) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -140,12 +140,12 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略） | 説明
-| :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
-| `ImportTaskResource.Builder builder = ...` | `ImportTaskResource` サービスインスタンスを生成するための `Builder` を取得します。             |
-| `ImportTaskResource importTaskResource = builder.authentication(...).build();` | 基本認証を指定して、`ImportTaskResource` サービスインスタンスを生成します。|
-| `importTaskResource.postImportTask(...);` | `importTaskResource.postImportTask` メソッドを呼び出して、データを post に渡します。    |
-                                                                                                                                        |
+| 行（省略形）                                     | 説明                                                                                                                                                                                                     |
+|:------------------------------------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `ImportTaskResource.Builder builder = ...` | `ImportTaskResource` サービスインスタンスを生成するための Builder を取得する。             |
+| `ImportTaskResource importTaskResource = builder.authentication(...).build();` | 基本認証を指定し、 `ImportTaskResource` サービスインスタンスを生成します。 |
+| `importTaskResource.postImportTask(...);`  | `importTaskResource.postImportTask` メソッドを呼び出し、postにデータを渡す。                                                                                                                                             |
+
 プロジェクトには、依存関係として`com.liferay.headless.batch.engine.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
 ```{note}
@@ -198,7 +198,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ## サイトへのデータ取り込み
 
-以下のcURLまたはJavaコマンドを実行することで、サイトにデータをインポートすることができます。 この例では、ブログの記事をサイトにインポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` をそれに置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータとインポートするデータも更新する必要があります。
+以下のcURLまたはJavaコマンドを実行することで、サイトにデータをインポートすることができます。 この例では、ブログの記事をサイトにインポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` をそれに置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータとインポートするデータも更新する必要があります。
 
 ### ImportTask_POST_ToSite.sh
 
@@ -268,7 +268,7 @@ Batch Engineを使用して既存のデータを完全に上書きするには�
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_PUT_ById
 ```
 
-例えば、既存の `アカウント` のデータを上書きしたい場合は、 `1234` と `5678` を既存のアカウントの ID に置き換えます。
+例えば、既存の `Account` のデータを上書きする場合、 `1234` と `5678` を既存の Account の ID に置き換えます。
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\" :1234, \"name\": \"Bar\", \"type\": \"business\"}, {\"id\": 5678, \"name\": \"Goo\", \"type\": \"guest\"}]" ImportTask_PUT_ById
@@ -358,7 +358,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
+[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
 
 ## 追加情報
 

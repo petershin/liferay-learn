@@ -13,7 +13,7 @@ LiferayのHeadless Deliveryアプリケーションは、[ドキュメントと�
 
 次に、以下の手順を実行します。
 
-1. [example project](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip) をダウンロードし、解凍してください。:
+1. [example project](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip) をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
@@ -107,7 +107,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | `-u "test@liferay.com:learn"`                                           | 基本認証の資格情報。                                                           |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、[OAuth 2.0](./../../headless-delivery/using-oauth2/using-oauth2.md) を使ってユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、[OAuth 2.0](./../../headless-delivery/using-oauth2/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
 ```
 
 `Document`および`DocumentFolder` RESTサービスの他のcURLコマンドは、同様の引数を使用します。

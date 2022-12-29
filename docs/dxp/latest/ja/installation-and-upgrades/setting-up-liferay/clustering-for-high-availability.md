@@ -5,7 +5,6 @@ toc:
 - ./clustering-for-high-availability/configuring-cluster-link.md
 - ./clustering-for-high-availability/configuring-unicast-over-tcp.md
 ---
-
 # 高可用性のクラスタリング
 
 ```{toctree}
@@ -36,6 +35,10 @@ Liferay DXPは、複数のマシンのクラスター（水平クラスター）
 1. オプションでクラスター化されている [検索エンジン（DXPの外部で実行）](../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 
 1. [すべてのノード間で通信とキャッシュレプリケーションを有効にするように構成されたクラスターリンク](./clustering-for-high-availability/configuring-cluster-link.md)
+
+```{note}
+並行処理の問題がなく、マスターノードが正しく選択されていることを確認するために、ノードを順次起動してください。
+```
 
 DXPクラスターを構成したら、それにアプリケーションをデプロイし、ユーザーエクスペリエンスを引き続き改善できます。 詳細は、 [クラスター化されたインストールの維持](../maintaining-a-liferay-installation/maintaining-clustered-installations.md) を参照してください。
 

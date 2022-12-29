@@ -15,7 +15,7 @@ Liferay DXPのすぐに使えるナビゲーションは、 **個人用メニュ
 * [ページの追加](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
 * [コンテンツを作成する](../content-authoring-and-management.md)
 * [サイトメンバーシップの管理](../site-building/sites/site-membership/adding-members-to-sites.md)
-* [サイトの動作と機能の設定と最適化](../site-building.md)
+* [サイトの動作と機能の設定と最適化](../site-building.html)
 * など・・・
 
 ## アプリケーションバー
@@ -74,7 +74,7 @@ DXPの **グローバルメニュー** には、 **アプリケーションメ�
 
 インターフェイスの右側の **グローバルメニュー** の ［**Applications**］ タブまたは ［**Control Panel**］ タブから、利用可能な他のサイトに移動することもできます。
 
-### アプリケーションメニュー
+### グローバルメニュー
 
 **アプリケーションメニュー** には、Liferay DXPサーバー内のさまざまなアプリケーションを管理するためのさまざまなリンクが含まれています。
 
@@ -84,15 +84,15 @@ DXPの **グローバルメニュー** には、 **アプリケーションメ�
 
 * [コンテンツダッシュボード](../content-authoring-and-management/content-dashboard.md)
 * [ワークフロー](../process-automation/workflow/introduction-to-workflow.md)
-* [リモートアプリケーション](../building-applications/remote-apps.md)
+* [リモートアプリケーション](../building-applications/client-extensions/browser-based-client-extensions.md#custom-element-client-extensions)
 
-### commerceメニュー
+### コマースメニュー
 
 Liferay 7.3 CE GA6およびLiferay DXP 7.3 GA1以降、Liferay Commerce 3.0はLiferay Portal 7.3 CE GA6およびLiferay DXP 7.3 GA1にバンドルされるようになりました。
 
-![commerceメニューには、すべてのストア機能が含まれています。](./navigating-dxp/images/03.png)
+![コマースメニューには、すべてのストア機能が含まれています。](./navigating-dxp/images/03.png)
 
-**commerce** メニューから管理できる機能は次のとおりです。
+**コマース** メニューから管理できる機能は次のとおりです。
 
 * [新しいカタログを作成する](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html)
 * [新しいチャンネルを作成する](https://learn.liferay.com/commerce/latest/ja/starting-a-store/channels/managing-channels.html)

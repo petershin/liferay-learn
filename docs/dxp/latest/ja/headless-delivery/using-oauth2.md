@@ -3,6 +3,7 @@ toc:
 - ./using-oauth2/creating-oauth2-applications.md
 - ./using-oauth2/authorizing-account-access-with-oauth2.md
 - ./using-oauth2/oauth2-scopes.md
+- ./using-oauth2/using-oauth2-to-authorize-users.md
 ---
 # OAuth 2.0を使用する
 
@@ -12,6 +13,7 @@ toc:
 using-oauth2/creating-oauth2-applications.md
 using-oauth2/authorizing-account-access-with-oauth2.md
 using-oauth2/oauth2-scopes.md
+using-oauth2/using-oauth2-to-authorize-users.md
 ```
 
 OAuth 2.0は業界標準の認証プロトコルです。 ユーザーは、LiferayベースのWebサイトから選択した認証情報をさまざまなクライアントとシームレスに共有できます。 OAuth 2.0は、ユーザーが所有するリソース（メールアドレス、ユーザープロフィール画像、またはアカウント関連のもの）やその他の許可されたリソースの一部に対して、パスワードなしでアクセスすることを許可します。 OAuth 2.0の設計はHTTPSを介してすべての認証トランスポートを暗号化し、システム間で渡されるデータが傍受されるのを防ぎます。
@@ -66,4 +68,9 @@ OAuth 2.0の仕組みは次のとおりです。
 
 **コールバックURI：** リダイレクトエンドポイントURIとも呼ばれます。 承認が完了すると、承認サーバー（Liferay）がクライアントをこの場所に送信します。
 
-OAuth 2.0の設定を開始する準備はできましたか？ 次のステップは、[アプリケーションの作成](./using-oauth2/creating-oauth2-applications.md)です。
+## 次のステップ
+
+* [OAuth2アプリケーションの作成](./using-oauth2/creating-oauth2-applications.md)
+* [OAuth2によるアカウントアクセスの承認](./using-oauth2/authorizing-account-access-with-oauth2.md)
+* [OAuth 2のスコープ](./using-oauth2/oauth2-scopes.md)
+* [OAuth2によるユーザーの認証](./using-oauth2/using-oauth2-to-authorize-users.md)

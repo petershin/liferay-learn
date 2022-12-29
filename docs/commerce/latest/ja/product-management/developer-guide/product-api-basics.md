@@ -1,15 +1,15 @@
 # 製品APIの基本
 
-アプリケーションメニューから製品を管理することができますが、LiferayのREST APIを使用することもできます。これらのサービスを呼び出して、製品を作成・管理します。
+アプリケーションメニューから製品を管理することができますが、LiferayのREST APIを使用することもできます。 これらのサービスを呼び出して、製品を作成・管理します。
 
 ## 製品の追加
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次の手順を実行します。
+次に、以下の手順を実行します。
 
-1. [Product API Basics](./liferay-z8v2.zip) をダウンロードし解凍します。
+1. [Product API Basics](./liferay-z8v2.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O
@@ -19,11 +19,11 @@
    unzip liferay-z8v2.zip
    ```
 
-1. 製品はカタログにスコープされ、カタログIDは必須パラメータの1つとなります。*グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［commerce］* &rarr; *［Catalogs］*を開きます。商品を追加するカタログを選択し、商品名の横にあるIDをメモしてください。
+1. 製品はカタログにスコープされ、カタログIDは必須パラメータの1つである。 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Catalogs** を開きます。 商品を追加するカタログを選択し、商品名の横にあるIDをメモしてください。
 
    ![カタログの名前の横にある、カタログのIDをメモしてください。](./product-api-basics/images/01.png)
 
-1. cURLスクリプトを使用して、新しい製品をカタログに追加します。コマンドラインで、`curl`フォルダに移動します。`Product_POST_ToCatalog.sh` スクリプトを、カタログIDをパラメータとして実行します。
+1. cURLスクリプトを使用して、新しい製品をカタログに追加します。 コマンドラインで、`curl`フォルダに移動します。 `Product_POST_ToCatalog.sh` スクリプトを、カタログIDをパラメータとして実行します。
 
    ```bash
    ./Product_POST_ToCatalog.sh 1234
@@ -94,17 +94,17 @@
    }
    ```
 
-1. *グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *［commerce］* &rarr; *［Products］*に移動して確認してください。新しい製品が追加されたことを確認します。
+1. **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Products** に移動して確認してください。 新しい製品が追加されたことを確認する。
 
-   ![新しい製品が追加されたことを確認します。](./product-api-basics/images/02.png)
+   ![新しい製品が追加されたことを確認する。](./product-api-basics/images/02.png)
 
-1. また、Javaクライアントを使用してRESTサービスを呼び出すことができます。 `curl` フォルダから、 `java` フォルダに移動します。 ソースファイルをコンパイルします。
+1. また、Javaクライアントを使用してThe RESTサービスを呼び出すことができます。 `curl` フォルダから、 `java` フォルダに移動します。 ソースファイルをコンパイルします。
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. `Product_POST_ToCatalog` クラスを実行します。`catalogId` の値を、お使いのカタログのIDに置き換えてください。
+1. `Product_POST_ToCatalog` クラスを実行します。 `catalogId` の値を、お使いのカタログのIDに置き換えてください。
 
    ```bash
    java -classpath .:* -DcatalogId=1234 Product_POST_ToCatalog
@@ -129,7 +129,7 @@
 | `-u "test@liferay.com:learn"`                                                                                                   | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -202,17 +202,17 @@ java -classpath .:* Products_GET_FromInstance
 
 Liferay インスタンスの `Product` オブジェクトが JSON でリストアップされます。
 
-このAPIでは、商品のフィルタリング、ページ送り、検索、ソートを行うためのパラメータも受け付けます。 詳しくは、 [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) メソッドをご覧ください。 クエリでは、以下の［製品］フィールドを使用して、結果のフィルタリング、検索、並べ替えを行うことができます。
+このAPIでは、商品のフィルタリング、ページ送り、検索、ソートを行うためのパラメータも受け付ける。 詳しくは、 [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) メソッドをご覧ください。 クエリでは、以下のProductフィールドを使用して、結果のフィルタリング、検索、並べ替えを行うことができます。
 
-* categoryIds
-* channelId
-* statusCode
-* customFields
+* カテゴリーId
+* チャネルID
+* ステータスコード
+* カスタムフィールド
 * createDate
 * modifiedDate
 * catalogId
-* name
-* productType
+* 名前
+* プロダクトタイプ
 
 | フィルタークエリ                            | 説明                             |
 |:----------------------------------- |:------------------------------ |
@@ -222,9 +222,9 @@ Liferay インスタンスの `Product` オブジェクトが JSON でリスト�
 
 | ソートクエリ                     | 説明                                      |
 |:-------------------------- |:--------------------------------------- |
-| createDate:desc              | createDateの降順でソートします。                   |
-| name:asc                      | 名前の昇順で並べ替える                             |
-| createDate:desc,name:desc | 最初にcreateDateの降順でソートし、次にnameの降順でソートします。 |
+| createDate:降順              | createDateの降順でソートします。                   |
+| 名前：昇順                      | 名前の昇順で並べ替える                             |
+| createDate:desc、name:desc。 | 最初にcreateDateの降順でソートし、次にnameの降順でソートします。 |
 
 詳しくは、 [API クエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をお読みください。
 
@@ -233,7 +233,7 @@ Liferay インスタンスの `Product` オブジェクトが JSON でリスト�
 以下のcURLまたはJavaコマンドで、特定の製品を取得します。 `1234` を製品のIDに置き換えてください。
 
 ```{tip}
-``Products_GET_FromInstance.[java|sh]`` を使用して、すべての製品のリストを取得し、特に必要な製品の `productId` をメモしてください。
+Products_GET_FromInstance.[java|sh]`` を使用して、すべての製品のリストを取得し、特に必要な製品の `productId` をメモしてください。
 ```
 
 ### Product_GET_ById.sh

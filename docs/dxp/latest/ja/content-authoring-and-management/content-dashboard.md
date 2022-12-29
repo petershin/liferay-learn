@@ -15,7 +15,7 @@ content-dashboard/exporting-the-assets-list-to-a-spreadsheet.md
 ```
 
 ```{note}
-この機能は、[Elasticsearchのみ](../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md) で動作します。
+この機能は、 [Elasticsearch](../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md) のみで機能します。
 ```
 
 * [コンテンツダッシュボードについて](./content-dashboard/about-the-content-dashboard.md)

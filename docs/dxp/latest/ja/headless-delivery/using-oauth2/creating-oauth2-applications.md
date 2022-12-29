@@ -14,8 +14,6 @@ OAuth 2.0を使用して承認できるアプリケーションがある場合�
 
 <a name="oauth2-administration-reference" />
 
-<a name="oauth2-administration-reference" />
-
 ## OAuth2管理リファレンス
 
 **Name：** アプリケーションにわかりやすいタイトルを付けます。

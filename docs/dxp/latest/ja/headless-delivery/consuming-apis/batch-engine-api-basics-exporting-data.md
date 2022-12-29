@@ -14,7 +14,7 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 1. [Batch Engine API Basics](./liferay-g4j2.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/liferay-g4j2.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
    ```
 
    ```bash
@@ -71,7 +71,7 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 
    `executeStatus` が `COMPLETED`であれば、エクスポートされたデータをダウンロードすることができます。 そうでない場合は、再度コマンドを実行し、タスクの実行が終了したことを確認します。 `executeStatus` が `FAILED`を示している場合、何が問題だったのかを理解するために `errorMessage` フィールドをチェックしてください。
 
-1. `executeStatus` が `COMPLETED`になったら、 `ExportTaskContent_GET_ById.sh` スクリプトを実行して `1234` をエクスポートタスクの ID に置き換えると、エクスポートしたデータをダウンロードすることができ ます。
+1. `executeStatus` が `COMPLETED`になったら、 `ExportTaskContent_GET_ById.sh` スクリプトを実行し、 `1234` をエクスポートタスクの ID に置き換えれば、エクスポートしたデータをダウンロードすることができ ます。
 
    ```bash
    ./ExportTaskContent_GET_ById.sh 1234
@@ -79,7 +79,7 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 
    これは、エクスポートされたデータを `.zip` ファイルとして、カレントディレクトリにダウンロードします。 それを取り出し、適切なアプリケーションを使用してデータを表示する。
 
-1. また、Javaクライアントを使用して、The RESTサービスを呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 ソースファイルをコンパイルします。
+1. また、Javaクライアントを使用してThe RESTサービスを呼び出すことができます。 `curl` フォルダから、 `java` フォルダに移動します。 ソースファイルをコンパイルします。
 
    ```bash
    javac -classpath .:* *.java
@@ -129,7 +129,7 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 | `-u "test@liferay.com:learn"`                                                | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。
+ここでは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。 Oauth2を利用したReactアプリケーションのサンプルは、[Using OAuth2 to Authorize Users](../using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 ## Javaクラスを調べる
@@ -144,11 +144,11 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略） | 説明
-| :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
-| `ExportTaskResource.Builder builder = ...` | `ExportTaskResource` サービスインスタンスを生成するための `Builder` を取得します。             |
-| `ExportTaskResource exportTaskResource = builder.authentication(...).build();` | 基本認証を指定し、`ExportTaskResource` サービスインスタンスを生成します。|
-| `exportTaskResource.postExportTask(...);` | `exportTaskResource.postExportTask` メソッドを呼び出して、データをpostに渡します。    |
+| 行（省略形）                                     | 説明                                                                                                                                                                                                     |
+|:------------------------------------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `ExportTaskResource.Builder builder = ...` | `ExportTaskResource サービスインスタンスを生成するための Builder を取得する。`              |
+| `ExportTaskResource exportTaskResource = builder.authentication(...).build();` | 基本認証を指定し、 `ExportTaskResource` サービスインスタンスを生成します。 |
+| `exportTaskResource.postExportTask(...);`  | `exportTaskResource.postExportTask` メソッドを呼び出し、データをpostに渡します。                                                                                                                                           |
 
 プロジェクトには、依存関係として`com.liferay.headless.batch.engine.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
@@ -202,7 +202,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTask_GET_ById
 
 ## サイトからのデータのエクスポート
 
-以下のcURLまたはJavaコマンドを実行することで、サイトからデータをエクスポートすることができます。 以下の例では、あるサイトからブログ記事をエクスポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` をそれに置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータも更新する必要があります。
+以下のcURLまたはJavaコマンドを実行することで、サイトからデータをエクスポートすることができます。 以下の例では、あるサイトからブログ記事をエクスポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` をそれに置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータも更新する必要があります。
 
 ### ExportTask_POST_ToSite.sh
 
@@ -241,7 +241,7 @@ java -classpath .:* -DsiteId=1234 -DclassName=com.liferay.headless.delivery.dto.
 ```
 
 ```{note}
-第2パラメータは `json` で、エクスポートされるデータの出力形式を表す。 また、ここでは `jsonl` と `csv` を使用することができる。 CSVを利用する場合は、エクスポートしたいフィールドをカンマ区切りの文字列で指定し、 `exportTaskResource.postExportTask()` メソッドの5番目のパラメータとして渡すことが必須となります。
+第2パラメータは `json` で、エクスポートされるデータの出力形式を表す。 また、ここでは `jsonl` と `csv` を使用することができる。 CSVを使う場合は、エクスポートしたいフィールドをカンマ区切りの文字列で指定し、 `exportTaskResource.postExportTask()` メソッドの5番目のパラメータとして渡すことが必須となります。
 ```
 
 JSONレスポンスには、新しく作成されたエクスポートタスクの情報が表示されます。 `id` に注意して、その `executeStatus`を追跡してください。 完了後、 `ExportTaskContent_GET_ById.[java|sh]` をエクスポートタスクIDで実行すると、データをダウンロードすることができます。
@@ -280,7 +280,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
+[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
 
 ## 追加情報
 

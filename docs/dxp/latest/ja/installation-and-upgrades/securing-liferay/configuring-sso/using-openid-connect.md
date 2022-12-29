@@ -28,15 +28,27 @@ OpenID Connectを使用するには、まずプロバイダーにクライアン
 
 Liferay は、プロバイダ接続のための新しいインターフェースに関するフィードバックを求めています。 このため、接続の作成方法には、標準的な方法と新しい方法の2つがあります。
 
-**OAuth 2.0に対応した新しいOpenID Connectプロバイダ接続を追加しました。**
+### OAuth 2.0に対応した新しいOpenID Connectプロバイダ接続**。
 
 このインターフェースは、クライアント接続をきめ細かく制御したい人向けです。 すべての設定は、 [OpenID Connect 設定仕様](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest) で定義されている、プロバイダの Well-Known Configuration Endpoint を通して行われます。
 
-1. Global Menu &rarr; Security &rarr; OAuth Client Administrationにアクセスします。
+1. グローバルメニュー &rarr; コントロールパネル &rarr; セキュリティ &rarr; OAuth クライアント管理 にアクセスします。
 
-1. 2つのタブがあります。 1つ目は、Well Known URIを持つ認可サーバーの場合です。 2つ目は、Well Known URIを持たない認可サーバーの場合である。 適切なタブを選択し、 **Add**(![Add Button](../../../images/icon-add.png)) をクリックします。
+1. 2つのタブがあります。 1つ目は、認可サーバーのクライアントを作成します。 2つ目は、Well Known URIを持たない認可サーバーの場合である。 最初のタブは常に使用します。2番目のタブは、よく知られたURIを持たないサーバーのために「擬似的な」よく知られたURIを作成する場合にのみ使用します。
 
-1. 認証サーバーの Well Known URI があれば、それを Well Known URI フィールドに貼り付けます。 例えば、Googleの場合は、https://accounts.google.com/.well-known/openid-configuration。
+**よく知られたURIがない場合。**
+
+1. 2つ目のタブで、 **Add**(![Add Button](../../../images/icon-add.png)) をクリックします。
+
+1. プロバイダーからの認証サーバーのメタデータを入力します。 JSON の `issuer` フィールドに値があることを確認してください。 これにより、「保存」をクリックすると、「ローカル」なよく知られたURIが生成されます。
+
+1. ［**Save**］ をクリックします。 OAuth Client Administrationページに戻り、生成されたURIを確認することができます。 このURIをクリップボードにコピーします。次のステップでこのURIを使用します。
+
+**よく知られたURIがある場合。**
+
+1. 最初のタブで、 **Add** (![Add Button](../../../images/icon-add.png)) をクリックします。
+
+1. 認証サーバーの Well Known URI を Well Known URI 欄に貼り付けます。 例えば、Googleの場合は、https://accounts.google.com/.well-known/openid-configuration。 上記のように生成した場合は、ここに貼り付けてください。
 
 1. たいていの場合、これだけでいいのです。 Well Known URIをお持ちでない場合は、以下のフィールドを使用して接続を設定します。 完了したら、 ［**Save**］ をクリックします。
 
@@ -48,9 +60,9 @@ Liferay は、プロバイダ接続のための新しいインターフェース
 
 **OAuthクライアントデフォルトトークンリクエストパラメータ。** [トークン要求パラメータ](https://www.iana.org/assignments/oauth-parameters) 自身を指定しない Liferay アプリケーションがある場合、ここでこの OAuth クライアントを使用するためのデフォルトパラメータを JSON 形式で指定します。 カスタムパラメータ値は、文字列のJSON配列である必要があります。
 
-**標準的なOpenID Connectプロバイダ接続**
+### 標準的なOpenID Connectプロバイダ接続
 
-［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**System Scope**］ の下の ***［OpenID Connect Provider**］*を選択します。
+［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**System Scope**］ の下の ***［OpenID Connect Provider**］* を選択します。
 
 ![［System Settings］メニューでOpenID構成を検索する。](using-openid-connect/images/01.png)
 
@@ -89,7 +101,7 @@ com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConn
 
 ## OpenID Connect認証の有効化
 
-1. ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**Virtual Instance Scope**］ の下の ***［OpenId Connect**］*を選択します。
+1. ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**Virtual Instance Scope**］ の下の ***［OpenId Connect**］* を選択します。
 
     ![インスタンス設定でOpenID Connect認証を有効にする。](using-openid-connect/images/02.png)
 

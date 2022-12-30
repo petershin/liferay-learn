@@ -11,7 +11,7 @@
 
 次に、以下の手順を実行します。
 
-1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。
+1. [Accounts API Basics](./liferay-t5p9.zip)  をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -43,7 +43,7 @@
 
     ```
 
-1. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 新しいアカウントが追加されたことを確認してください。
+1. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 新しいアカウントが追加されたことを確認してください。
 
    ![新しいアカウントが追加されたことを確認します。](./accounts-api-basics/images/01.png)
 
@@ -78,7 +78,7 @@
 | `-u "test@liferay.com:learn"`                                 | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](./../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/introduction-to-using-oauth2.md)でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](./../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/introduction-to-using-oauth2.md)でユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -97,7 +97,7 @@
 
 | 行（省略形）                                                                   | 説明                                                     |
 |:------------------------------------------------------------------------ |:------------------------------------------------------ |
-| `AccountResource.Builder builder = ...`                                  | ` AccountResourc`サービスインスタンスを生成するための`Builder`を取得します。    |
+| `AccountResource.Builder builder = ...`                                  | `AccountResourc`サービスインスタンスを生成するための`Builder`を取得します。    |
 | `AccountResource accountResource = builder.authentication(...).build();` | ベーシック認証を指定し、 `AccountResource` サービスインスタンスを生成します。       |
 | `Account account = accountResource.postAccount(...);`                    | `accountResource.postAccount` メソッドを呼び出し、データをpostに渡します。 |
 

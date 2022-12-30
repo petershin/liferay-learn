@@ -11,7 +11,7 @@
 
 次に、以下の手順を実行します。
 
-1. [User Account API Basics](./liferay-y6q4.zip) をダウンロードし、解凍してください。
+1. [User Account API Basics](./liferay-y6q4.zip)  をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-y6q4.zip -O
@@ -113,7 +113,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | `-u "test@liferay.com:learn"`                                                                                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2/using-oauth2.md) を使ってユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。

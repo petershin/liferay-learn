@@ -38,23 +38,23 @@
 1. ノードに **Review** と名前を付けます。
 1. 通知を追加します。
 
-    * **［Name**］ ：Review Notification
-    * **［Template Language**］ : Freemarker
-    * **［Templates**］ : 次のFreemarkerの通知を入力します： `${userName} sent you a ${entryType} for review in the workflow`
-    * **［Notification Type**］ : 複数選択フィールドで、 **Email** および **ユーザー通知** を選択します。
-    * **［Execution Type**］ : ［On Assignment］
-    * **［Recipient Type**］ : ［Task Assignees］
+    * ［**Name**］ ：Review Notification
+    * ［**Template Language**］ : Freemarker
+    * ［**Templates**］ : 次のFreemarkerの通知を入力します： `${userName} sent you a ${entryType} for review in the workflow`
+    * ［**Notification Type**］ : 複数選択フィールドで、 **Email** および **ユーザー通知** を選択します。
+    * ［**Execution Type**］ : ［On Assignment］
+    * ［**Recipient Type**］ : ［Task Assignees］
 
     ![アセットがレビューの準備ができたことを知らせるメールとユーザー通知を送信するためのタスクノードの通知設定を行います。](./creating-workflow-tasks/images/02.png)
 
 1. 別の通知を追加します。
 
-   * **［名前］:**［レビュー完了通知］
-   * **［テンプレート言語］:**［Freemarker］
-   * **［テンプレート］:** 次のFreemarkerの通知を入力します： `Your submission was reviewed<#if taskComments?has_content> and the reviewer applied the following ${taskComments}</#if>.`
-   * **［通知タイプ］:**［メール］
-   * **［実行の種類］:**［処理終了時］
-   * **［受信者の種類］:**［アセット作成者］
+   * ［**名前］:**［レビュー完了通知］
+   * ［**テンプレート言語］:**［Freemarker］
+   * ［**テンプレート］:** 次のFreemarkerの通知を入力します： `Your submission was reviewed<#if taskComments?has_content> and the reviewer applied the following ${taskComments}</#if>.`
+   * ［**通知タイプ］:**［メール］
+   * ［**実行の種類］:**［処理終了時］
+   * ［**受信者の種類］:**［アセット作成者］
 
 1. 通知を終了したら、戻る矢印（![Back](../../../../images/icon-angle-left.png)）または ［**保存**］（以前のバージョンのワークフローデザイナーを使用する場合）をクリックします。
 1. ［**割り当て**］ を追加します。 レビュータスクは、ロール、ロール種類、特定のユーザー、またはリソースアクションに割り当てることができます。 この例では、レビュータスクをロール種類に割り当てます。 これらのロールを選択し、新しいロールを追加する必要があるたびに、 ［**新規セクション**］ をクリックします。

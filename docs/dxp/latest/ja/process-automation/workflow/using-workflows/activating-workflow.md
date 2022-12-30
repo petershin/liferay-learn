@@ -3,7 +3,7 @@
 DXPインスタンス全体または特定のサイトのみで、アセットタイプのワークフロープロセスを有効化できます。 ワークフロープロセスが **Wikiページ** などの特定のアセットタイプのインスタンス全体で有効化されると、 **Wikiページ** が作成されたサイトに関係なく、公開するために送信されたすべての **Wikiページ** はレビュープロセスを通過する必要があります。
 
 ```{warning}
-ワークフローは [パブリケーション](../../../site-building/publishing-tools/publications.md) と共に使用することはできません。
+Liferay 7.3 では、ワークフローは [パブリケーション](../../../site-building/publishing-tools/publications.md) と共に使用することはできません。
 ```
 
 個々のサイトでワークフローの有効・無効を設定することができます。 デフォルトでは、ワークフローはサイトで無効になっています。
@@ -21,7 +21,7 @@ DXPインスタンス全体または特定のサイトのみで、アセット�
     ![ナレッジベースの記事のインスタンス全体でワークフローを有効化する](./activating-workflow/images/03.png)
 
 1. このアセットタイプに必要なワークフローを選択します（［**Single Approver**］ は追加設定なしで使用できます）。
-1. ［**Save**］ をクリックします。
+1. ［**保存**］ をクリックします。
 1. ワークフローを必要とする他のすべてのアセットタイプについて繰り返します。
 
 ## サイトでのワークフローの有効化
@@ -123,28 +123,29 @@ DXPインスタンス全体または特定のサイトのみで、アセット�
 
 情報を送信する前に、フォームの承認が必要になりました。
 
+
 <!-- Leaving this commented out until Staging materials are pushed up.
 ## Page Variations
 
-In a [staged environment](https://help.liferay.com/hc/en-us/articles/360029041851-Staging-Content), you can activate workflow for **Page Variations** .
+In a [staged environment](https://help.liferay.com/hc/en-us/articles/360029041851-Staging-Content), you can activate workflow for _Page Variations_.
 
-As a prerequisite, [Staging](https://help.liferay.com/hc/articles/360029041811-Enabling-Staging)**and**[Page Versioning](https://help.liferay.com/hc/articles/360028721532-Enabling-Page-Versioning-and-Staged-Content) have been enabled.
+As a prerequisite, [Staging](https://help.liferay.com/hc/articles/360029041811-Enabling-Staging) **and** [Page Versioning](https://help.liferay.com/hc/articles/360028721532-Enabling-Page-Versioning-and-Staged-Content) have been enabled.
 
-When a Page Variation or Site Page Variation is created, its creator must click **Submit for Publication** at the top of the page, and the variation must be approved in the workflow before it can be published to the live Site.
+When a Page Variation or Site Page Variation is created, its creator must click _Submit for Publication_ at the top of the page, and the variation must be approved in the workflow before it can be published to the live Site.
 
 To enable a workflow for Page Variations:
 
-1. Navigate to the **Site Administration** menu for your site.
+1. Navigate to the _Site Administration_ menu for your site.
 1. Verify that the Staging has been enabled for this site.
 
     ![Verify that the site is now staged.](./activating-workflow/images/11.png)
 
-1. Click **Configuration** &rarr; **Workflow** .
-1. Select the workflow desired for **Page Revision** .
+1. Click _Configuration_ &rarr; _Workflow_.
+1. Select the workflow desired for _Page Revision_.
 
     ![Verify that the site is now staged.](./activating-workflow/images/12.png)
 
-1. Click **Save** .
+1. Click _Save_.
 
 Page revisions now have to go through the workflow process.
 

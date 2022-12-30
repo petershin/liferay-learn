@@ -3,12 +3,13 @@
 アプリケーションメニューから [アカウントユーザー](../accounts/account-users.md) と [アカウントロール](../accounts/account-roles.md) を管理することができますが、LiferayのREST APIを利用することもできます。 これらのサービスを呼び出して、アカウントユーザーとロールの作成と管理を行います。
 
 ## アカウントユーザーの追加
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。.
+1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -20,7 +21,7 @@
 
 1. アカウントIDの一覧を取得するには、 [Accounts_GET_FromInstance](./accounts-api-basics.html#get-an-account) リソースを使用します。 ユーザーを追加したいアカウントIDをメモしてください。
 
-1. cURLスクリプトを使用して、新しいアカウントユーザーをアカウントに追加します。 コマンドラインで、 `curl` フォルダに移動します。 アカウントIDをパラメータとして、 `AccountUser_POST_ToAccount.sh` スクリプトを実行します。
+1. cURLスクリプトを使用して、新しいアカウントユーザーをアカウントに追加します。 コマンドラインで、`curl`フォルダに移動します。 アカウントIDをパラメータとして、 `AccountUser_POST_ToAccount.sh` スクリプトを実行します。
 
    ```bash
    ./AccountUser_POST_ToAccount.sh 1234
@@ -112,7 +113,7 @@
 | `-u "test@liferay.com:learn"`                                                                                                                | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモンストレーションの目的で基本認証を使用しています。 本番環境では、 [OAuth2](./../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/introduction-to-using-oauth2.md)でユーザーを認証する必要があります。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -131,7 +132,7 @@
 
 | 行（省略形）                                                                           | 説明                                                                    |
 |:-------------------------------------------------------------------------------- |:--------------------------------------------------------------------- |
-| `UserAccountResource.Builder builder = ...`                                      | ` UserAccountResource `サービスインスタンスを生成するための`Builder`を取得します。             |
+| `UserAccountResource.Builder builder = ...`                                      | `UserAccountResource ` サービスインスタンスを生成するための`Builder`を取得します。             |
 | `UserAccountResource userAccountResource = builder.authentication(...).build();` | ベーシック認証を指定し、 `UserAccountResource` サービスインスタンスを生成します。                  |
 | `UserAccount userAccount = userAccountResource.postAccountUserAccount(...);`     | `userAccountResource.postAccountUserAccount` メソッドを呼び出し、データをpostに渡します。 |
 
@@ -153,7 +154,7 @@
 
 以下のcURLまたはJavaコマンドを実行すると、アカウントのユーザーを一覧表示できます。 上記と同様に、 `1234` をアカウントのIDに置き換えてください。
 
-### AccountUsers **GET** FromAccount.sh
+### AccountUsers_GET_FromAccount.sh
 
 コマンド:
 
@@ -167,7 +168,7 @@
    :language: bash
 ```
 
-### AccountUsers **GET** FromAccount.java
+### AccountUsers_GET_FromAccount.java
 
 コマンド:
 
@@ -189,7 +190,7 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
 
 特定のアカウントに対して新しいアカウントロールを作成します。 なお、 `1234` は、アカウントのIDに置き換えてください。
 
-### AccountRole **POST** ToAccount.sh
+### AccountRole_POST_ToAccount.sh
 
 コマンド:
 
@@ -203,7 +204,7 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
    :language: bash
 ```
 
-### AccountRole **POST** ToAccount.java
+### AccountRole_POST_ToAccount.java
 
 コマンド:
 
@@ -223,7 +224,7 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
 
 ユーザーを特定のアカウントロールに関連付けることができます。 `1234` をアカウントのIDに置き換えてください。 お使いのアカウントのロールのIDを`5678` に置き換えます。 `9012` は、アカウントユーザーのIDに置き換えてください。
 
-### AccountRole **POST** UserAssociation.sh
+### AccountRole_POST_UserAssociation.sh
 
 コマンド:
 
@@ -237,7 +238,7 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
    :language: bash
 ```
 
-### AccountRole **POST** UserAssociation.java
+### AccountRole_POST_UserAssociation.java
 
 コマンド：
 
@@ -255,9 +256,9 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
 
 ## アカウントからのアカウントロールの取得
 
-以下のcURLまたはJavaコマンドを実行することで、Accountのアカウントロールsを一覧表示することができます。 `1234` をアカウントのIDに置き換えてください。
+以下のcURLまたはJavaコマンドを実行することで、アカウントのアカウントロールを一覧表示することができます。 `1234` をアカウントのIDに置き換えてください。
 
-### AccountRoles **GET** FromAccount.sh
+### AccountRoles_GET_FromAccount.sh
 
 コマンド:
 
@@ -271,7 +272,7 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
    :language: bash
 ```
 
-### AccountRoles **GET** FromAccount.java
+### AccountRoles_GET_FromAccount.java
 
 コマンド:
 
@@ -293,7 +294,7 @@ java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
 
 特定のアカウントユーザーからアカウントロールの関連付けを削除します。 `1234` をアカウントのIDに置き換えてください。 お使いのアカウントのロールのIDを`5678` に置き換えます。 `9012` は、アカウントユーザーのIDに置き換えてください。
 
-### AccountRole **DELETE** UserAssociation.sh
+### AccountRole_DELETE_UserAssociation.sh
 
 コマンド:
 
@@ -307,7 +308,7 @@ java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
    :language: bash
 ```
 
-### AccountRole **DELETE** UserAssociation.java
+### AccountRole_DELETE_UserAssociation.java
 
 コマンド
 
@@ -323,4 +324,4 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
    :lines: 8-19
 ```
 
-[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェイスがあります。
+[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。

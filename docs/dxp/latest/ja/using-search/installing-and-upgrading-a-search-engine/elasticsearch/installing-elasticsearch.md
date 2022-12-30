@@ -2,10 +2,6 @@
 
 オンプレミスでElasticsearchをインストール、設定、起動する方法は次のとおりです。
 
-```{important}
-Liferay 7.3 および Liferay 7.4 の初期バージョン（Liferay DXP 7.4 U16/Liferay Portal 7.4 GA16 まで）にバンドルされている Sidecar Elasticsearch サーバは、Elasticsearch OSS ディストリビューションを使用しています。 OSS版を本番用にインストールしないでください。 LiferayをElasticsearchで安全に運用するためには、最低でもElasticsearchのBasicレベルをインストールする必要があります。 詳細は、 [Elasticのサブスクリプションページ](https://www.elastic.co/subscriptions) をご覧ください。
-```
-
 ```{note}
 Elasticsearchのインデックスをプライマリデータストレージとして使用している場合（データベースによってバックアップされていないデータを保存）、[Elasticsearchのバックアップ](./upgrading-elasticsearch/backing-up-elasticsearch.md) を使用してそのデータを新しいElasticsearchクラスタに取り込むことが可能です。 Liferay独自の検索の調整インデックス(結果ランキングとSynyonyms用)は、Liferay DXP7.2と7.3のプライマリーストレージのインデックスです。
 ```
@@ -35,7 +31,7 @@ sysctl -w vm.max_map_count=262144
 
 ## Elasticsearchのインストール
 
-1. [ElasticのWebサイト](https://www.elastic.co) からElasticsearchアーカイブ（OSSバージョンではない）をダウンロードします。
+1. Elasticsearchのアーカイブを [Elasticのウェブサイト](https://www.elastic.co) からダウンロードしてください。
 
     ```{important}
     [お使いのLiferayのバージョンと互換性のある](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors) 最新のElasticsearchアーカイブをダウンロードしてください。

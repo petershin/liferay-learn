@@ -244,7 +244,7 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 * クライアントのバージョン：7.17.1
 * 有効な接続：1
 * 稼働状態：緑
-* 接続ID：\_REMOTE\_
+* 接続ID： \_REMOTE\_
 * 接続タイプ：読み取り/書き込み
 * クラスター名：LiferayElasticsearchCluster
 * ノード：1

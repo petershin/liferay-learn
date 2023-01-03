@@ -19,7 +19,7 @@ Then follow these steps:
    unzip liferay-w6c8.zip
    ```
 
-1. To create an order, there are three required parameters. One, is the ID of the account that creates the order. Second, is the ID of the channel in which you create the order. Third, is the currency code of the currency used.  
+1. There are three required parameters to create an order. One, is the ID of the account that creates the order. Second, is the ID of the channel in which you create the order. Third, is the currency code of the currency used.  
 
    To get the account ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Control Panel* &rarr; *Accounts*. Find the account and copy the ID present next to it. Alternatively, you can select the account and copy the ID from the *Account ID* field.
 

@@ -21,15 +21,15 @@ Then follow these steps:
 
 1. To create an order, there are three required parameters. One, is the account that creates the order. Second, is the channel in which you create the order. Third, you must also specify the currency code of the currency used.  
 
-To get the ID of an account, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Control Panel* &rarr; *Accounts*. Find the account and copy the ID present next to it. You can also select the account and copy the account ID from the *Account ID* field.
+   To get the ID of an account, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Control Panel* &rarr; *Accounts*. Find the account and copy the ID present next to it. You can also select the account and copy the account ID from the *Account ID* field.
 
    ![Note down the ID of the account.](./order-api-basics/images/01.png)
 
-To find the ID of a channel, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Channels*. Select the channel where you'll add orders and note down the ID present next to its name.
+   To find the ID of a channel, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Channels*. Select the channel where you'll add orders and note down the ID present next to its name.
 
    ![Note down the ID of the channel present next to its name.](./order-api-basics/images/02.png)
 
-1. Use the cURL script to add a new order to the channel. On the command line, navigate to the `curl` folder. Execute the `Order_POST_ToChannel.sh` script with the account ID, channel ID and currency code as parameters.
+1. Use the cURL script to add a new order to the channel. On the command line, navigate to the `curl` folder. Execute the `Order_POST_ToChannel.sh` script with the appropriate values for account ID, channel ID and currency code.
 
    ```bash
    ./Order_POST_ToChannel.sh 1234 5678 USD
@@ -189,7 +189,7 @@ The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `Order_POST_ToChannel.java` class adds a product by calling the order related service.
+The `Order_POST_ToChannel.java` class adds a order by calling the order related service.
 
 ```{literalinclude} ./order-api-basics/resources/liferay-w6c8.zip/java/Order_POST_ToChannel.java
    :dedent: 1
@@ -255,38 +255,49 @@ Code:
 
 The `Order` objects of your Liferay instance are listed in JSON.
 
-This API also accepts parameters to filter, paginate, search, and sort the products. See the [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) method for more information. You can use the following Product fields in your queries to filter, search, and sort the results.
+This API also accepts parameters to filter, paginate, search, and sort the orders. See the [`getOrdersPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java#L43-L46) method for more information. You can use the following `Order` fields in your queries to filter, search, and sort the results.
 
-* categoryIds
+* accountId
 * channelId
-* statusCode
-* customFields
+* orderStatus
+* orderId
 * createDate
 * modifiedDate
-* catalogId
-* name
-* productType
+* orderDate
 
-| Filter Query                       | Description                              |
-| :--------------------------------- | :--------------------------------------- |
-| productType eq 'simple'            | Product type equals simple               |
-| contains(name, 'Bar')              | Product name contains Bar                |
-| customFields/sampleSize eq '100.0' | Custom field named sampleSize equals 100 |
+| Filter Query                               | Description                                                                                                                                 |
+| :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| `orderId eq 45958`                         | Order ID equals 45958                                                                                                                       |
+| `createDate gt 2022-12-31T12:00:00Z`       | Order create date greater than 31st December 2022 12:00:00                                                                                  |
+| `orderStatus/any(x:(x eq 10) or (x eq 1))` | Order status equals processing (10) or pending (1). The term `any` means that at least one of the following expressions must return `true`. |
 
-| Sort Query                | Description                                                                            |
-| :------------------------ | :------------------------------------------------------------------------------------- |
-| createDate:desc           | Sort by createDate in the descending order                                             |
-| name:asc                  | Sort by name in the ascending order                                                    |
-| createDate:desc,name:desc | Sort by createDate in the descending order first, then by name in the descending order |
+The `accountId` and `orderStatus` filter fields are collection fields and the format to filter them is different. To filter by `orderStatus`, you must use its associated integer value. See the table below for the different order statuses and their corresponding integer values.
+
+| Order Status      | Integer Value |
+| :---------------- | :------------ |
+| Open              | 2             |
+| In Progress       | 6             |
+| Pending           | 1             |
+| Processing        | 10            |
+| Shipped           | 15            |
+| Completed         | 0             |
+| Cancelled         | 8             |
+| Partially Shipped | 14            |
+| On Hold           | 20            |
+
+| Sort Query                          | Description                                                                                    |
+| :---------------------------------- | :--------------------------------------------------------------------------------------------- |
+| `createDate:desc`                   | Sort by createDate in the descending order                                                     |
+| `createDate:desc,modifiedDate:desc` | Sort by createDate in the descending order first, then by modifiedDate in the descending order |
 
 Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.
 
 ## Get an Order
 
-Get a specific order with the following cURL or Java command. Replace `1234` with the product's ID.
+Get a specific order with the following cURL or Java command. Replace `1234` with the order's ID.
 
 ```{tip}
-Use `Orders_GET_FromInstance.[java|sh]` to get a list of all products, and note the `productId` of the product you want specifically.
+Use `Orders_GET_FromInstance.[java|sh]` to get a list of all orders, and note the `id` of the order you want specifically.
 ```
 
 ### Order_GET_ById.sh
@@ -308,7 +319,7 @@ Code:
 Command:
 
 ```bash
-java -classpath .:* -DproductId=1234 Order_GET_ById
+java -classpath .:* -DorderId=1234 Order_GET_ById
 ```
 
 Code:
@@ -319,11 +330,11 @@ Code:
    :lines: 8-18
 ```
 
-The `Product` fields are listed in JSON.
+The `Order` fields are listed in JSON.
 
-## Patch a Product
+## Patch an Order
 
-Update an existing product with the following cURL and Java commands. Replace `1234` with your product's ID.
+Update an existing order with the following cURL and Java commands. Replace `1234` with your order's ID.
 
 ### Order_PATCH_ById.sh
 
@@ -344,7 +355,7 @@ Code:
 Command:
 
 ```bash
-java -classpath .:* -DproductId=1234 Order_PATCH_ById
+java -classpath .:* -DorderId=1234 Order_PATCH_ById
 ```
 
 Code:
@@ -355,9 +366,9 @@ Code:
    :lines: 11-29
 ```
 
-## Delete a Product
+## Delete an Order
 
-Delete an existing product with the following cURL and Java commands. Replace `1234` with your product's ID.
+Delete an existing order with the following cURL and Java commands. Replace `1234` with your order's ID.
 
 ### Order_DELETE_ById.sh
 
@@ -378,7 +389,7 @@ Code:
 Command
 
 ```bash
-java -classpath .:* -DproductId=1234 Order_DELETE_ById
+java -classpath .:* -DorderId=1234 Order_DELETE_ById
 ```
 
 Code:
@@ -386,7 +397,7 @@ Code:
 ```{literalinclude} ./order-api-basics/resources/liferay-w6c8.zip/java/Order_DELETE_ById.java
    :dedent: 1
    :language: java
-   :lines: 8-17
+   :lines: 8-16
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists all of the `Product` services and schemas and has an interface to try out each service.
+The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists all of the `Order` services and schemas and has an interface to try out each service.

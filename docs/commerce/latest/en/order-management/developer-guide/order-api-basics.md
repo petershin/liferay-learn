@@ -19,13 +19,13 @@ Then follow these steps:
    unzip liferay-w6c8.zip
    ```
 
-1. To create an order, there are three required parameters. One, is the account that creates the order. Second, is the channel in which you create the order. Third, you must also specify the currency code of the currency used.  
+1. To create an order, there are three required parameters. One, is the ID of the account that creates the order. Second, is the ID of the channel in which you create the order. Third, is the currency code of the currency used.  
 
-   To get the ID of an account, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Control Panel* &rarr; *Accounts*. Find the account and copy the ID present next to it. You can also select the account and copy the account ID from the *Account ID* field.
+   To get the account ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Control Panel* &rarr; *Accounts*. Find the account and copy the ID present next to it. Alternatively, you can select the account and copy the ID from the *Account ID* field.
 
    ![Note down the ID of the account.](./order-api-basics/images/01.png)
 
-   To find the ID of a channel, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Channels*. Select the channel where you'll add orders and note down the ID present next to its name.
+   To get the channel ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Channels*. Select the channel where you'll add orders and note down the ID present next to its name.
 
    ![Note down the ID of the channel present next to its name.](./order-api-basics/images/02.png)
 
@@ -189,7 +189,7 @@ The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `Order_POST_ToChannel.java` class adds a order by calling the order related service.
+The `Order_POST_ToChannel.java` class adds an order by calling the order related service.
 
 ```{literalinclude} ./order-api-basics/resources/liferay-w6c8.zip/java/Order_POST_ToChannel.java
    :dedent: 1
@@ -265,13 +265,14 @@ This API also accepts parameters to filter, paginate, search, and sort the order
 * modifiedDate
 * orderDate
 
-| Filter Query                               | Description                                                                                                                                 |
-| :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| `orderId eq 45958`                         | Order ID equals 45958                                                                                                                       |
-| `createDate gt 2022-12-31T12:00:00Z`       | Order create date greater than 31st December 2022 12:00:00                                                                                  |
-| `orderStatus/any(x:(x eq 10) or (x eq 1))` | Order status equals processing (10) or pending (1). The term `any` means that at least one of the following expressions must return `true`. |
+| Filter Query                                    | Description                                                                                                                                      |
+| :---------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `orderId eq 45958`                              | Order ID equals 45958                                                                                                                            |
+| `createDate gt 2022-12-31T12:00:00Z`            | Order create date greater than 31st December 2022 12:00:00                                                                                       |
+| `orderStatus/any(x:(x eq 10) or (x eq 1))`      | Order status equals processing (10) or pending (1). The term `any` specifies that at least one of the subsequent expressions must return `true`. |
+| `accountId/any(x:(x eq 44170) or (x eq 44178))` | Account ID equals `44170` or `44178`. The term `any` specifies that at least one of the subsequent expressions must return `true`.               |
 
-The `accountId` and `orderStatus` filter fields are collection fields and the format to filter them is different. To filter by `orderStatus`, you must use its associated integer value. See the table below for the different order statuses and their corresponding integer values.
+To filter by `orderStatus`, you must use its associated integer value. See the table below for the different order statuses and their corresponding integer values.
 
 | Order Status      | Integer Value |
 | :---------------- | :------------ |

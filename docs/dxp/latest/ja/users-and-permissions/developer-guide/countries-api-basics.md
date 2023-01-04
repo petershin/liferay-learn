@@ -78,7 +78,7 @@ Liferay の Rest API を使用して、国を作成および管理します。
 | `-u "test@liferay.com:learn"`                                                                     | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、【OAuth2を使ってユーザーを認証する】(../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。

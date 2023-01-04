@@ -9,7 +9,7 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
 次に、以下の手順を実行します。
 
-1. [Setting and Accessing Configurations](./liferay-n2f3.zip) をダウンロードし、解凍してください。
+1. [構成の設定とアクセス](./liferay-n2f3.zip) をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O

@@ -129,7 +129,7 @@
 | `-u "test@liferay.com:learn"`                                                                                                   | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -204,15 +204,15 @@ Liferay インスタンスの `Product` オブジェクトが JSON でリスト�
 
 このAPIでは、商品のフィルタリング、ページ送り、検索、ソートを行うためのパラメータも受け付ける。 詳しくは、 [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) メソッドをご覧ください。 クエリでは、以下のProductフィールドを使用して、結果のフィルタリング、検索、並べ替えを行うことができます。
 
-* カテゴリーId
-* チャネルID
-* ステータスコード
-* カスタムフィールド
+* categoryIds
+* channelId
+* statusCode
+* customFields
 * createDate
 * modifiedDate
 * catalogId
-* 名前
-* プロダクトタイプ
+* name
+* productType
 
 | フィルタークエリ                            | 説明                             |
 |:----------------------------------- |:------------------------------ |
@@ -222,9 +222,9 @@ Liferay インスタンスの `Product` オブジェクトが JSON でリスト�
 
 | ソートクエリ                     | 説明                                      |
 |:-------------------------- |:--------------------------------------- |
-| createDate:降順              | createDateの降順でソートします。                   |
-| 名前：昇順                      | 名前の昇順で並べ替える                             |
-| createDate:desc、name:desc。 | 最初にcreateDateの降順でソートし、次にnameの降順でソートします。 |
+| createDate:desc              | createDateの降順でソートします。                   |
+| name:asc                      | 名前の昇順で並べ替える                             |
+| createDate:desc,name:desc | 最初にcreateDateの降順でソートし、次にnameの降順でソートします。 |
 
 詳しくは、 [API クエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をお読みください。
 
@@ -233,7 +233,7 @@ Liferay インスタンスの `Product` オブジェクトが JSON でリスト�
 以下のcURLまたはJavaコマンドで、特定の製品を取得します。 `1234` を製品のIDに置き換えてください。
 
 ```{tip}
-Products_GET_FromInstance.[java|sh]`` を使用して、すべての製品のリストを取得し、特に必要な製品の `productId` をメモしてください。
+``Products_GET_FromInstance.[java|sh]`` を使用して、すべての製品のリストを取得し、特に必要な製品の `productId` をメモしてください。
 ```
 
 ### Product_GET_ById.sh

@@ -49,12 +49,12 @@
 
 1. 別の通知を追加します。
 
-   * ［**名前］:**［レビュー完了通知］
-   * ［**テンプレート言語］:**［Freemarker］
-   * ［**テンプレート］:** 次のFreemarkerの通知を入力します： `Your submission was reviewed<#if taskComments?has_content> and the reviewer applied the following ${taskComments}</#if>.`
-   * ［**通知タイプ］:**［メール］
-   * ［**実行の種類］:**［処理終了時］
-   * ［**受信者の種類］:**［アセット作成者］
+   * ［**名前**］:［レビュー完了通知］
+   * ［**テンプレート言語**］:［Freemarker］
+   * ［**テンプレート**］:** 次のFreemarkerの通知を入力します： `Your submission was reviewed<#if taskComments?has_content> and the reviewer applied the following ${taskComments}</#if>.`
+   * ［**通知タイプ**］:［メール］
+   * ［**実行の種類**］:［処理終了時］
+   * ［**受信者の種類**］:［アセット作成者］
 
 1. 通知を終了したら、戻る矢印（![Back](../../../../images/icon-angle-left.png)）または ［**保存**］（以前のバージョンのワークフローデザイナーを使用する場合）をクリックします。
 1. ［**割り当て**］ を追加します。 レビュータスクは、ロール、ロール種類、特定のユーザー、またはリソースアクションに割り当てることができます。 この例では、レビュータスクをロール種類に割り当てます。 これらのロールを選択し、新しいロールを追加する必要があるたびに、 ［**新規セクション**］ をクリックします。

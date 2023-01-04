@@ -54,4 +54,5 @@ poshi-layers/variables.md
 
 パスやマクロを具体的かつ再利用可能にする
 :::
+
 ::::

@@ -141,4 +141,4 @@ Spacingカテゴリのオプションを使用して、ページの主要な要�
 ## 追加情報
 
 * [スタイルブックトークンの定義](./developer-guide/style-book-token-definitions.md)
-* [Adding a New Token Set for Your Style Book](./developer-guide/adding-a-new-token-set-for-your-style-book.md)
+* [スタイルブックに新しいトークンセットを追加する](./developer-guide/adding-a-new-token-set-for-your-style-book.md)

@@ -23,7 +23,7 @@ Postal Address オブジェクトは、アカウントアドレスを格納す�
 
 ## フィールドの追加
 
-システムオブジェクトにフィールドを追加することができます。 追加のデータベースカラムは、サービスの元のテーブル名に `_x` を付加したものを使用する別のデータベーステーブルに追加されます（例: `AccountEntry_x`）。 システムオブジェクトは、利用可能なすべてのフィールドタイプ（ [）をサポートしています](./fields.md)。 システムオブジェクトはカスタムレイアウトやビューをサポートしないため、これらのカスタムフィールドにはヘッドレスAPIを介してのみアクセスできます。 詳細については、[オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md)を参照してください。
+システムオブジェクトにフィールドを追加することができます。 追加のデータベースカラムは、サービスの元のテーブル名に `_x` を付加したものを使用する別のデータベーステーブルに追加されます（例: `AccountEntry_x`）。 システムオブジェクトは、利用可能なすべてのフィールドタイプ [をサポートしています](./fields.md)。 システムオブジェクトはカスタムレイアウトやビューをサポートしないため、これらのカスタムフィールドにはヘッドレスAPIを介してのみアクセスできます。 詳細については、[オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md)を参照してください。
 
 ```{note}
 Liferay の [Custom Fields](../../system-administration/configuring-liferay/adding-custom-fields.md) アプリケーションは [Expando](../../data-frameworks/expando-framework/accessing-custom-fields-with-expando.md) フレームワークを使ったほとんどの Liferay システムアプリケーションへのフィールド追加用のものです。 Objects は Expando ベースのカスタム フィールドをサポートしていないため、Objects 機能 ( [relationships](#adding-relationships) , [actions](#adding-actions) , および [validations](#adding-validations) など) で使用することはでき ません。

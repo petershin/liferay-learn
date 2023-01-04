@@ -9,7 +9,7 @@
 
 次に、以下の手順を実行します。
 
-1. [Completely Custom Configuration](./liferay-u2g5.zip)  をダウンロードし、解凍してください。
+1. [完全カスタム設定](./liferay-u2g5.zip)  をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O

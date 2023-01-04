@@ -13,7 +13,7 @@
 
 次に、以下の手順を実行します。
 
-1. [Sharing Localized Messages](./liferay-x7y2.zip) をダウンロードし、解凍してください。
+1. [ローカライズされたメッセージの共有](./liferay-x7y2.zip) をダウンロードし、解凍してください。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-x7y2.zip -O

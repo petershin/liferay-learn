@@ -80,6 +80,31 @@ Run the Liferay Theme Generator with these steps:
 
 The theme is then generated and placed inside of a folder named after the ID you have chosen. You can now build and deploy it to your DXP instance by running `gulp deploy` from the theme's base folder.
 
+### Disabling Dart SASS
+
+When you run `gulp build` or `gulp deploy` on a theme created with the theme generator, you may encounter errors, including this message:
+
+```
+Error: compound selectors may no longer be extended.
+```
+
+This error occurs because the theme generator uses [Dart SASS](https://sass-lang.com/dart-sass), but some environments still rely on features used with the deprecated [LibSass](https://sass-lang.com/blog/libsass-is-deprecated).
+
+You can configure your theme to disable Dart SASS and avoid this error. Open the `package.json` file within your theme, and add the `dartSass` and `node-sass` properties (without removing other properties already present):
+
+```json
+"liferaytheme": {
+    "sassOptions": {
+        "dartSass": false
+    },
+    "devDependencies": {
+        "node-sass": "7.0.1"
+    }
+}
+```
+
+Then run `npm install` to install LibSass. This solves the errors caused by LibSass features the next time you run a gulp build.
+
 ## Using Blade to Create a Theme
 
 Coming soon!

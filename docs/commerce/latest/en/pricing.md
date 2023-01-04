@@ -9,6 +9,7 @@ toc:
 - ./pricing/using-price-modifiers.md
 - ./pricing/promoting-products.md
 - ./pricing/configuring-taxes.md
+- ./pricing/developer-guide.md
 ---
 # Pricing
 
@@ -24,6 +25,7 @@ pricing/using-gross-and-net-price-types.md
 pricing/using-price-modifiers.md
 pricing/promoting-products.md
 pricing/configuring-taxes.md
+pricing/developer-guide.md
 ```
 
 ```{raw} html

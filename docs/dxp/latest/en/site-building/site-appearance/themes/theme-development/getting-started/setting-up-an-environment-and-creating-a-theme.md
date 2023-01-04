@@ -105,10 +105,7 @@ You can configure your theme to disable Dart SASS and avoid this error. Open the
 
 Then run `npm install` to install LibSass. This solves the errors caused by LibSass features the next time you run a gulp build.
 
-## Using Blade to Create a Theme
-
-Coming soon!
-<!-- Link to Theme Templates documentation when available-->
+<!-- Add Using Blade to Create a Theme section, with a link to Theme Templates documentation when available-->
 
 ## Additional Information
 

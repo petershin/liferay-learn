@@ -1,6 +1,6 @@
 # Setting Up an Environment and Creating a Theme
 
-Creating a theme is the first step in theme development. Once you have your own theme, you can deploy it to your Liferay DXP instance, and use it for [various Site customizations](../../introduction-to-themes.md#developing-themes).
+Creating a theme is the first step in theme development. Once you have your own theme, you can deploy it to your Liferay DXP instance, and use it for [various site customizations](../../introduction-to-themes.md#developing-themes).
 
 ## Using the Liferay Theme Generator
 
@@ -13,7 +13,7 @@ Older versions of the Liferay Theme Generator can be used to generate themes for
 ### Installation
 
 ```{note}
-Node and NPM are both required for developing themes with the Liferay Theme Generator. Check the [Node Compatibility Matrix](../../../../../building-applications/tooling/reference/node-version-information.md) to ensure you have the correct versions of these installed for your version of Liferay.
+Node and NPM are both required for developing themes with the Liferay Theme Generator. Check the [Node Compatibility Matrix](../../../../../building-applications/tooling/reference/node-version-information.md) to ensure you have the correct versions of these installed for your Liferay version.
 ```
 
 If you have not already done so, install the Liferay Theme Generator with this command:
@@ -22,7 +22,7 @@ If you have not already done so, install the Liferay Theme Generator with this c
 npm install -g generator-liferay-theme@10.x.x
 ```
 
-Install the Yeoman and Gulp dependencies with this command:
+Install the Yeoman and gulp dependencies with this command:
 
 ```bash
 npm install -g yo gulp
@@ -39,7 +39,7 @@ Run the Liferay Theme Generator with these steps:
     ```
 
     ```{important}
-    You can add the name of a base theme to this command to base your new theme off of it. For example, running `yo liferay-theme:classic` will base your new theme off of DXP's Classic theme.
+    You can add the name of a base theme to this command to base your new theme off of it. For example, running `yo liferay-theme:classic` bases your new theme off of DXP's Classic theme.
     ```
     <!-- Add link to an explanation of choosing (and changing) the base theme when available.-->
 
@@ -49,7 +49,7 @@ Run the Liferay Theme Generator with these steps:
     ? What would you like to call your theme? (My Liferay Theme)
     ```
 
-1. Type an ID for your theme at the prompt. When the theme is generated, the ID will determine the name of the folder that your theme is built inside of. You can also press Enter to use a default ID based on the name.
+1. Type an ID for your theme at the prompt. When the theme is generated, the ID determines the name of the folder that your theme is built inside of. You can also press Enter to use a default ID based on the name.
 
     ```
     ? What id would you like to give to your theme? (my-liferay-theme)
@@ -65,7 +65,7 @@ Run the Liferay Theme Generator with these steps:
 
 1. Answer whether you would like to add Font Awesome as an available font for your theme at the prompt.
 
-1. After the theme has been generated, complete the process by using the arrow keys to select the appropriate deployment type for your theme. You can choose to deploy with a local app server, Docker container, or other URL.
+1. After the theme is generated, complete the process by using the arrow keys to select the appropriate deployment type for your theme. You can choose to deploy with a local app server, Docker container, or other URL.
 
     ```
     ? Select your deployment strategy (Use arrow keys)

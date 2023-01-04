@@ -119,39 +119,39 @@ The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `PriceList_POST_ToCatalog.java` class adds a price list by calling the order related service.
+The `PriceList_POST_ToCatalog.java` class adds a price list by calling the price list related service.
 
 ```{literalinclude} ./price-list-api-basics/resources/liferay-c2v4.zip/java/PriceList_POST_ToCatalog.java
    :dedent: 1
    :language: java
-   :lines: 9-28
+   :lines: 9-27
 ```
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated)                                                   | Description                                                                      |
-| :------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
-| `OrderResource.Builder builder = ...`                                | Gets a `Builder` for generating a `OrderResource` service instance.              |
-| `OrderResource orderResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `OrderResource` service instance. |
-| `orderResource.postOrder(...);`                                      | Calls the `orderResource.postOrder` method and passes the data to post.          |
+| Line (abbreviated)                                                           | Description                                                                          |
+| :--------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
+| `PriceListResource.Builder builder = ...`                                    | Gets a `Builder` for generating a `PriceListResource` service instance.              |
+| `PriceListResource priceListResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `PriceListResource` service instance. |
+| `priceListResource.postPriceList(...);`                                      | Calls the `priceListResource.postPriceList` method and passes the data to post.      |
 
-Note that the project includes the `com.liferay.headless.commerce.admin.order.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
+Note that the project includes the `com.liferay.headless.commerce.admin.pricing.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
 ```{note}
 The `main` method's comment demonstrates running the class.
 ```
 
-The other example Java classes are similar to this one, but call different `OrderResource` methods.
+The other example Java classes are similar to this one, but call different `PriceListResource` methods.
 
 ```{important}
-See [OrderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java) for service details.
+See [PriceListResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-pricing-client/src/main/java/com/liferay/headless/commerce/admin/pricing/client/resource/v2_0/PriceListResource.java) for service details.
 ```
 
-Below are examples of calling other `Order` REST services using cURL and Java.
+Below are examples of calling other `PriceList` REST services using cURL and Java.
 
 ## Get Price Lists from Instance
 
-You can list all orders from your Liferay instance by executing the following cURL or Java command.
+You can list all price lists from your Liferay instance by executing the following cURL or Java command.
 
 ### PriceLists_GET_FromInstance.sh
 
@@ -180,54 +180,44 @@ Code:
 ```{literalinclude} ./price-list-api-basics/resources/liferay-c2v4.zip/java/PriceLists_GET_FromInstance.java
    :dedent: 1
    :language: java
-   :lines: 9-18
+   :lines: 11-22
 ```
 
-The `Order` objects of your Liferay instance are listed in JSON.
+The `PriceList` objects of your Liferay instance are listed in JSON.
 
-This API also accepts parameters to filter, paginate, search, and sort the orders. See the [`getOrdersPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java#L43-L46) method for more information. You can use the following `Order` fields in your queries to filter, search, and sort the results.
+This API also accepts parameters to filter, paginate, search, and sort the price lists. See the [`getPriceListsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-pricing-client/src/main/java/com/liferay/headless/commerce/admin/pricing/client/resource/v2_0/PriceListResource.java#L43-#L46) method for more information. You can use the following `PriceList` fields in your queries to filter, search, and sort the results.
 
 * accountId
+* accountGroupId
+* catalogId
 * channelId
-* orderStatus
-* orderId
+* orderTypeId
+* name
+* catalogBasePriceList
+* type
 * createDate
-* modifiedDate
-* orderDate
 
-| Filter Query                               | Description                                                                                                                                 |
-| :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| `orderId eq 45958`                         | Order ID equals 45958                                                                                                                       |
-| `createDate gt 2022-12-31T12:00:00Z`       | Order create date greater than 31st December 2022 12:00:00                                                                                  |
-| `orderStatus/any(x:(x eq 10) or (x eq 1))` | Order status equals processing (10) or pending (1). The term `any` means that at least one of the following expressions must return `true`. |
+| Filter Query                                     | Description                                                                                                                              |
+| :----------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| `name eq 'Able'`                                 | Price list name equals Able                                                                                                              |
+| `createDate gt 2022-12-31T12:00:00Z`             | Price list create date greater than 31st December 2022 12:00:00                                                                          |
+| `catalogId/any(x:(x eq 43956) and (x ne 43199))` | Catalog ID equals 43956 and not equal to 43199. The term `any` means that at least one of the subsequent expressions must return `true`. |
 
-The `accountId` and `orderStatus` filter fields are collection fields and the format to filter them is different. To filter by `orderStatus`, you must use its associated integer value. See the table below for the different order statuses and their corresponding integer values.
+The `accountId`, `accountGroupId`, `catalogId`, `channelId`, and `orderTypeId` filter fields are collection fields. These filters must be used as shown in the third row of the table above.
 
-| Order Status      | Integer Value |
-| :---------------- | :------------ |
-| Open              | 2             |
-| In Progress       | 6             |
-| Pending           | 1             |
-| Processing        | 10            |
-| Shipped           | 15            |
-| Completed         | 0             |
-| Cancelled         | 8             |
-| Partially Shipped | 14            |
-| On Hold           | 20            |
-
-| Sort Query                          | Description                                                                                    |
-| :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| `createDate:desc`                   | Sort by createDate in the descending order                                                     |
-| `createDate:desc,modifiedDate:desc` | Sort by createDate in the descending order first, then by modifiedDate in the descending order |
+| Sort Query                  | Description                                                                            |
+| :-------------------------- | :------------------------------------------------------------------------------------- |
+| `createDate:desc`           | Sort by createDate in the descending order                                             |
+| `createDate:desc,type:desc` | Sort by createDate in the descending order first, then by type in the descending order |
 
 Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.
 
 ## Get a Price List
 
-Get a specific order with the following cURL or Java command. Replace `1234` with the order's ID.
+Get a specific price list with the following cURL or Java command. Replace `1234` with the price list's ID.
 
 ```{tip}
-Use `Orders_GET_FromInstance.[java|sh]` to get a list of all orders, and note the `id` of the order you want specifically.
+Use `PriceLists_GET_FromInstance.[java|sh]` to get a list of all price lists, and note the `id` of the price list you want specifically.
 ```
 
 ### PriceList_GET_ById.sh
@@ -249,7 +239,7 @@ Code:
 Command:
 
 ```bash
-java -classpath .:* -DorderId=1234 PriceList_GET_ById
+java -classpath .:* -DpriceListId=1234 PriceList_GET_ById
 ```
 
 Code:
@@ -260,11 +250,11 @@ Code:
    :lines: 8-18
 ```
 
-The `Order` fields are listed in JSON.
+The `PriceList` fields are listed in JSON.
 
 ## Patch a Price List
 
-Update an existing order with the following cURL and Java commands. Replace `1234` with your order's ID.
+Update an existing price list with the following cURL and Java commands. Replace `1234` with your price list's ID.
 
 ### PriceList_PATCH_ById.sh
 
@@ -285,7 +275,7 @@ Code:
 Command:
 
 ```bash
-java -classpath .:* -DorderId=1234 PriceList_PATCH_ById
+java -classpath .:* -DpriceListId=1234 PriceList_PATCH_ById
 ```
 
 Code:
@@ -293,12 +283,12 @@ Code:
 ```{literalinclude} ./price-list-api-basics/resources/liferay-c2v4.zip/java/PriceList_PATCH_ById.java
    :dedent: 1
    :language: java
-   :lines: 11-29
+   :lines: 9-23
 ```
 
 ## Delete a Price List
 
-Delete an existing order with the following cURL and Java commands. Replace `1234` with your order's ID.
+Delete an existing price list with the following cURL and Java commands. Replace `1234` with your price list's ID.
 
 ### PriceList_DELETE_ById.sh
 
@@ -319,7 +309,7 @@ Code:
 Command
 
 ```bash
-java -classpath .:* -DorderId=1234 PriceList_DELETE_ById
+java -classpath .:* -DpriceListId=1234 PriceList_DELETE_ById
 ```
 
 Code:
@@ -327,7 +317,7 @@ Code:
 ```{literalinclude} ./price-list-api-basics/resources/liferay-c2v4.zip/java/PriceList_DELETE_ById.java
    :dedent: 1
    :language: java
-   :lines: 8-16
+   :lines: 8-17
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists all of the `Order` services and schemas and has an interface to try out each service.
+The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists all of the `PriceList` services and schemas and has an interface to try out each service.

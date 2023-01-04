@@ -88,7 +88,7 @@ When you run `gulp build` or `gulp deploy` on a theme created with the theme gen
 Error: compound selectors may no longer be extended.
 ```
 
-This error occurs because the theme generator uses [Dart SASS](https://sass-lang.com/dart-sass), but some environments still rely on features used with the deprecated [LibSass](https://sass-lang.com/blog/libsass-is-deprecated).
+This error occurs because the theme generator uses [Dart SASS](https://sass-lang.com/dart-sass) as of Liferay 7.3+, but some environments still rely on features used with the deprecated [LibSass](https://sass-lang.com/blog/libsass-is-deprecated).
 
 You can configure your theme to disable Dart SASS and avoid this error. Open the `package.json` file within your theme, and add the `dartSass` and `node-sass` properties (without removing other properties already present):
 

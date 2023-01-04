@@ -1,13 +1,13 @@
 # Order API Basics
 
-You can manage orders from the Applications menu, but you can also use Liferay’s REST APIs. Call these services to create and manage orders.
+You can manage orders from the Applications menu or with REST APIs. Call the [headless-admin-commerce-order](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-order/v1.0/openapi.json) services to create and manage orders.
 
 ## Adding an Order
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then follow these steps:
+Once Liferay is running,
 
 1. Download and unzip [Order API Basics](./liferay-w6c8.zip).
 
@@ -19,17 +19,17 @@ Then follow these steps:
    unzip liferay-w6c8.zip
    ```
 
-1. There are three required parameters to create an order. One, is the ID of the account that creates the order. Second, is the ID of the channel in which you create the order. Third, is the currency code of the currency used.  
+1. Three parameters are required to create an order: the ID of the account that creates the order, the ID of the channel in which you create the order, and the [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) (e.g., USD) of the currency used.
 
-   To get the account ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Control Panel* &rarr; *Accounts*. Find the account and copy the ID present next to it. Alternatively, you can select the account and copy the ID from the *Account ID* field.
+   To get the account ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Accounts*. Find the account and copy its ID. Alternatively, select the account and copy the *Account ID*.
 
-   ![Note down the ID of the account.](./order-api-basics/images/01.png)
+   ![Copy the account ID.](./order-api-basics/images/01.png)
 
-   To get the channel ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Channels*. Select the channel where you'll add orders and note down the ID present next to its name.
+   To get the channel ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Channels*. Select the channel where you'll add orders and copy its ID.
 
-   ![Note down the ID of the channel present next to its name.](./order-api-basics/images/02.png)
+   ![Copy the channel ID.](./order-api-basics/images/02.png)
 
-1. Use the cURL script to add a new order to the channel. On the command line, navigate to the `curl` folder. Execute the `Order_POST_ToChannel.sh` script with the appropriate values for account ID, channel ID and currency code.
+1. Use the cURL script to add a new order to the channel. On the command line, navigate to the `curl` folder. Execute the `Order_POST_ToChannel.sh` script with the appropriate values for account ID, channel ID, and currency code.
 
    ```bash
    ./Order_POST_ToChannel.sh 1234 5678 USD
@@ -147,17 +147,17 @@ Then follow these steps:
    }
    ```
 
-1. Verify this by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and navigating to *Commerce* &rarr; *Orders*. See that a new order has been added.
+1. Navigate to *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; *Commerce* &rarr; *Orders*. The new order appears.
 
-   ![See that a new order has been added.](./order-api-basics/images/03.png)
+   ![Confirm that a new order was added.](./order-api-basics/images/03.png)
 
-1. You can also call the REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
+1. Alternatively, call the REST service using the Java client. Navigate into the `java` folder and compile the source files:
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `Order_POST_ToChannel` class. Replace the `accountId`, `channelId` and `currenyCode` with the appropriate values.
+1. Run the `Order_POST_ToChannel` class, replacing `accountId`, `channelId`, and `currenyCode` with the appropriate values.
 
    ```bash
    java -classpath .:* -DaccountId=1234 -DchannelId=5678 -DcurrencyCode=Foo Order_POST_ToChannel
@@ -175,21 +175,21 @@ Here are the command's arguments:
 
 | Arguments                                                                     | Description                                         |
 | :---------------------------------------------------------------------------- | :-------------------------------------------------- |
-| `-H "Content-Type: application/json"`                                         | Indicates that the request body format is JSON.     |
-| `-X POST`                                                                     | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/headless-commerce-admin-order/v1.0/orders"`         | The REST service endpoint                           |
-| `-d "{\"accountId\": ${1}, \"channelId\": ${2}, \"currencyCode\": \"${3}\"}"` | The data to post                                    |
-| `-u "test@liferay.com:learn"`                                                 | Basic authentication credentials                    |
+| `-H "Content-Type: application/json"`                                         | Set the request body format to JSON.     |
+| `-X POST`                                                                     | Set the HTTP method to invoke at the specified endpoint. |
+| `"http://localhost:8080/o/headless-commerce-admin-order/v1.0/orders"`         | Specify the REST service endpoint.                           |
+| `-d "{\"accountId\": ${1}, \"channelId\": ${2}, \"currencyCode\": \"${3}\"}"` | Enter the data to post.                                    |
+| `-u "test@liferay.com:learn"`                                                 | Enter basic authentication credentials.                    |
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application that utilizes OAuth2.
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
 ```
 
 The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `Order_POST_ToChannel.java` class adds an order by calling the order related service.
+The `Order_POST_ToChannel.java` class adds an order by calling the order related services.
 
 ```{literalinclude} ./order-api-basics/resources/liferay-w6c8.zip/java/Order_POST_ToChannel.java
    :dedent: 1
@@ -201,17 +201,17 @@ This class invokes the REST service using only three lines of code:
 
 | Line (abbreviated)                                                   | Description                                                                      |
 | :------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
-| `OrderResource.Builder builder = ...`                                | Gets a `Builder` for generating a `OrderResource` service instance.              |
-| `OrderResource orderResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `OrderResource` service instance. |
-| `orderResource.postOrder(...);`                                      | Calls the `orderResource.postOrder` method and passes the data to post.          |
+| `OrderResource.Builder builder = ...`                                | Get a `Builder` for generating an `OrderResource` service instance. |
+| `OrderResource orderResource = builder.authentication(...).build();` | Use basic authentication and generate an `OrderResource` service instance. |
+| `orderResource.postOrder(...);`                                      | Call the `orderResource.postOrder` method and pass the data to post. |
 
-Note that the project includes the `com.liferay.headless.commerce.admin.order.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
+Note that the project includes the `com.liferay.headless.commerce.admin.order.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
 ```{note}
 The `main` method's comment demonstrates running the class.
 ```
 
-The other example Java classes are similar to this one, but call different `OrderResource` methods.
+The other example Java classes call different `OrderResource` methods.
 
 ```{important}
 See [OrderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java) for service details.
@@ -221,7 +221,7 @@ Below are examples of calling other `Order` REST services using cURL and Java.
 
 ## Get Orders from Instance
 
-You can list all orders from your Liferay instance by executing the following cURL or Java command.
+You can list all orders from your Liferay instance with a cURL or Java command.
 
 ### Orders_GET_FromInstance.sh
 
@@ -253,9 +253,11 @@ Code:
    :lines: 9-18
 ```
 
-The `Order` objects of your Liferay instance are listed in JSON.
+The instance's `Order` objects are listed in JSON.
 
-This API also accepts parameters to filter, paginate, search, and sort the orders. See the [`getOrdersPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java#L43-L46) method for more information. You can use the following `Order` fields in your queries to filter, search, and sort the results.
+### Filtering, Paginating, Searching, and Sorting Orders
+
+Orders returned by this API can be filtered, paginated, searched, and sorted. See the [`getOrdersPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java#L43-L46) method for more information. Use the following `Order` fields to filter, search, and sort the results.
 
 * accountId
 * channelId
@@ -265,14 +267,14 @@ This API also accepts parameters to filter, paginate, search, and sort the order
 * modifiedDate
 * orderDate
 
-| Filter Query                                    | Description                                                                                                                                      |
-| :---------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `orderId eq 45958`                              | Order ID equals 45958                                                                                                                            |
-| `createDate gt 2022-12-31T12:00:00Z`            | Order create date greater than 31st December 2022 12:00:00                                                                                       |
-| `orderStatus/any(x:(x eq 10) or (x eq 1))`      | Order status equals processing (10) or pending (1). The term `any` specifies that at least one of the subsequent expressions must return `true`. |
-| `accountId/any(x:(x eq 44170) or (x eq 44178))` | Account ID equals `44170` or `44178`. The term `any` specifies that at least one of the subsequent expressions must return `true`.               |
+| Filter Query                                  | Description                                                                                    |
+| :-------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| `orderId eq 45958`                              | The order ID must equal 45958. |
+| `createDate gt 2022-12-31T12:00:00Z`            | The order create date must be greater than 31st December 2022 12:00:00. |
+| `orderStatus/any(x:(x eq 10) or (x eq 1))`      | The order status must be either processing (10) or pending (1). The term `any` specifies that at least one of the subsequent expressions must return `true`. |
+| `accountId/any(x:(x eq 44170) or (x eq 44178))` | The account ID must equal `44170` or `44178`. The term `any` specifies that at least one of the subsequent expressions must return `true`. |
 
-To filter by `orderStatus`, you must use its associated integer value. See the table below for the different order statuses and their corresponding integer values.
+To filter by `orderStatus`, you must use its associated integer value. The table below maps each the order status to its integer value.
 
 | Order Status      | Integer Value |
 | :---------------- | :------------ |
@@ -286,16 +288,16 @@ To filter by `orderStatus`, you must use its associated integer value. See the t
 | Partially Shipped | 14            |
 | On Hold           | 20            |
 
-| Sort Query                          | Description                                                                                    |
-| :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| `createDate:desc`                   | Sort by createDate in the descending order                                                     |
-| `createDate:desc,modifiedDate:desc` | Sort by createDate in the descending order first, then by modifiedDate in the descending order |
+| Sort Query                          | Description                                                                           |
+| :---------------------------------- | :------------------------------------------------------------------------------------ |
+| `createDate:desc`                   | Sort by `createDate` in descending order. |
+| `createDate:desc,modifiedDate:desc` | Sort by `createDate` in descending order first, then by `modifiedDate` in descending order. |
 
 Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.
 
 ## Get an Order
 
-Get a specific order with the following cURL or Java command. Replace `1234` with the order's ID.
+Get a specific order with cURL and Java `get` commands. Replace `1234` with the order's ID.
 
 ```{tip}
 Use `Orders_GET_FromInstance.[java|sh]` to get a list of all orders, and note the `id` of the order you want specifically.
@@ -335,7 +337,7 @@ The `Order` fields are listed in JSON.
 
 ## Patch an Order
 
-Update an existing order with the following cURL and Java commands. Replace `1234` with your order's ID.
+Update an existing order with cURL and Java `patch` commands. Replace `1234` with your order's ID.
 
 ### Order_PATCH_ById.sh
 
@@ -369,7 +371,7 @@ Code:
 
 ## Delete an Order
 
-Delete an existing order with the following cURL and Java commands. Replace `1234` with your order's ID.
+Delete an existing order with cURL and Java `delete` commands. Replace `1234` with your order's ID.
 
 ### Order_DELETE_ById.sh
 
@@ -401,4 +403,4 @@ Code:
    :lines: 8-16
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists all of the `Order` services and schemas and has an interface to try out each service.
+The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists the `Order` services and schemas and has an interface to test each service.

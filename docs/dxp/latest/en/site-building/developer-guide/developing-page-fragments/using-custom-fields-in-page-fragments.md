@@ -29,7 +29,14 @@ Toggling a page's `showFooter` value to true or false shows or hides the footer,
 ![Using page custom field values, display or hide your HTML footer content on the page.](./using-custom-fields-in-page-fragments/images/01.png)
 
 To access custom fields for users, use `user.getExpandoBridge().getAttribute("ATTRIBUTE_NAME")`. Guest users may not have a value for the custom field. In this case, attempting to retrieve a custom field value for a guest user causes an error when viewing the page. Make sure to consider guest user access when developing fragments with user custom fields.
-<!-- Can we show a quick snippet that checks whether the user in the session is authenticated before retrieving the use custom field value? -->
+
+You can add FreeMarker code like this to check whether the value exists before using it:
+
+```
+[#if user.getExpandoBridge().getAttribute("showFooter")??]
+    ...
+[#/if]
+```
 
 ## Additional Information
 

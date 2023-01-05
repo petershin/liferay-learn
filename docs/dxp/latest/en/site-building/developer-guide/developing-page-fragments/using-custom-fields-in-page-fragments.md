@@ -8,9 +8,7 @@ layout.getExpandoBridge().getAttribute("ATTRIBUTE_NAME")
 
 Replace `layout` with `user` to retrieve user custom fields.
 
-The example below uses a page custom field to alter the page behavior.
-
-After [adding a `showFooter` custom field to pages](../../../system-administration/configuring-liferay/adding-custom-fields.md), [add or edit a page fragment](./using-the-fragments-editor.md) by opening the fragments editor from Site Menu &rarr; Fragments.
+To use a page custom field in a fragment, first [add the custom field](../../../system-administration/configuring-liferay/adding-custom-fields.md), then add or edit a page fragment via the fragments editor, from the Site Menu &rarr; Fragments.
 
 This example HTML uses the custom field `showFooter` to show or hide the placeholder `footer` element on a page:
 

@@ -21,7 +21,7 @@ Your current DXP installation's OSGi configurations (7.0+) and properties (such 
 
 1. Replace the new installation's `[Liferay Home]/data` folder with the `[Liferay Home]/data` folder from your backup.
 
-1. Set up the [File Store (Document Library)](../../system-administration/file-storage.md) by copying it from your [backup](../maintaining-a-liferay-installation/backing-up.md) to the new installation and or configuring the new installation to use it via a [`.config` file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files).
+1. Set up the [File Store (Document Library)](../../system-administration/file-storage.md) by copying it from your [backup](../maintaining-a-liferay-installation/backing-up.md) to the new installation and or configuring the new installation to use it via a [`.config` file](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files).
 
 ## Updating Settings For the Database Upgrade
 
@@ -51,19 +51,19 @@ See the [Database Templates](../reference/database-templates.md) for more driver
 ## Migrating Portal Properties
 
 ```{important}
-If you've overridden the `locales` [Portal Property](../../../installation-and-upgrades/reference/portal-properties.md), override it in the new installation before upgrading. This assures upgrading data for all of your locales.
+If you've overridden the `locales` [Portal Property](../../installation-and-upgrades/reference/portal-properties.md), override it in the new installation before upgrading. This assures upgrading data for all of your locales.
 ```
 
 The properties discussed here can be updated after database upgrade. Migrating properties involves these actions:
 
 * Updating your `liferay.home` property, if you changed it
-* Using [Blade CLI](../../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md) to report property changes
+* Using [Blade CLI](../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md) to report property changes
 * Converting properties to OSGi configurations
 * Special property migration considerations
 
 ### Using Blade CLI to Report Incompatible Properties
 
-The [Blade CLI](../../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md) tool's `upgradeProps` command reports changes between portal properties files. The tool reports these types of changes.
+The [Blade CLI](../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md) tool's `upgradeProps` command reports changes between portal properties files. The tool reports these types of changes.
 
 * Properties that cause exceptions, if not updated.
 * Properties moved to a module `portal.properties` file.
@@ -99,7 +99,7 @@ web.server.protocol
 
 ### Converting Properties to OSGi Configurations
 
-Properties in modularized features have changed and are now deployed in [OSGi configuration files](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) (OSGi Config Admin).
+Properties in modularized features have changed and are now deployed in [OSGi configuration files](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) (OSGi Config Admin).
 
 For example, in 6.2, the Simple File Store used this portal property to specify the store root directory:
 
@@ -116,7 +116,7 @@ rootDir="{document_library_path}"
 Put the `.config` files in a folder called `[Liferay Home]/osgi/configs`.
 
 ```{tip}
-The Control Panel's *System Settings* screens (under *Configuration*) manage the OSGi Config Admin values. These screens are the most accurate way to create ``.config`` files. Find the screen that configures the feature you want to configure, click *Save*, and then use the options button to [export the screen's configuration](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) to a `.config` file.
+The Control Panel's *System Settings* screens (under *Configuration*) manage the OSGi Config Admin values. These screens are the most accurate way to create ``.config`` files. Find the screen that configures the feature you want to configure, click *Save*, and then use the options button to [export the screen's configuration](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) to a `.config` file.
 ```
 
 ### Special Property Migration Considerations

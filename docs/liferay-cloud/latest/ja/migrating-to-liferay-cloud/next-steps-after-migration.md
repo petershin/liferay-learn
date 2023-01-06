@@ -52,7 +52,7 @@ Liferay Cloudはデフォルトで、同一リージョン内の [自動ディ�
 
 * [`ウェブサーバー` サービス](../platform-services/web-server-service.md) は、お客様の Liferay Cloud サービスとインターネットの残りの部分との間のゲートウェイを提供します。 Liferayインスタンスがサービスするパフォーマンスやリクエストの種類によっては、 [のタイムアウトやリトライ回数](../platform-services/web-server-service.md#environment-variables) を微調整して、期待通りにリクエストが処理されるようにしたい場合があります。
 
-* [` <a href="./uploading-and-restoring-the-data-backup.md">データベース サービス は、先に移行 でアップロードしたデータベースを安全に提供します。`](../platform-services/database-service/database-service.md)</a> メンテナンスのためのダウンタイムの影響を軽減するために、お好みの [データベースメンテナンスウィンドウ](../platform-services/database-service/database-service.md#database-maintenance-window-variables) を設定するとよいでしょう。
+* [`データベース`サービス](../platform-services/database-service/database-service.md)は、[先に移行でアップロードした]データベースを安全に提供します。メンテナンスのためのダウンタイムの影響を軽減するために、お好みの[データベースメンテナンスウィンドウ](../platform-services/database-service/database-service.md#database-maintenance-window-variables)を設定するとよいでしょう。
 
 ## アプリケーションパフォーマンスの最適化およびチューニング
 

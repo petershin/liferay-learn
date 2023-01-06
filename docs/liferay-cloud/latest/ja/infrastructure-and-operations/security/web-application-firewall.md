@@ -25,7 +25,7 @@ ModSecurityはデフォルトで無効になっています。 これを有効�
 * **DetectionOnly** : ModSecurity を有効にします。 ルールは処理されるが、破壊的なアクションは実行されない（ブロック、拒否、ドロップ、許可、プロキシ、リダイレクト）。
 
 ```{tip}
-環境変数 `LCP_WEBSERVER_MODSECURITY` は ModSecurity 自身の [`SecRuleEngine` ディレクティブ] と同等です (https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine)．
+環境変数`LCP_WEBSERVER_MODSECURITY` は ModSecurity自身の[`SecRuleEngine`ディレクティブ](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine)と同等です。
 ```
 
 ModSecurity を有効にするには、 `LCP_WEBSERVER_MODSECURITY` の値を `On` または `DetectionOnly`に設定し、 [変更をデプロイします。](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).
@@ -72,7 +72,7 @@ ModSecurityにOWASP CRSを追加するには。
 
 [を有効にすると、](#enabling-modsecurity) 、ModSecurity は自動的に監査ログを生成し、すべてのトランザクションの詳細情報を記録します。 ログに記録された情報を見るには、Web サーバーの `/var/log` ディレクトリにある `modsec_audit.log` ファイルを開いてください。
 
-[](#changing-modsecurity-s-configuration) 独自の modsecurity.conf ファイルを提供して ModSecurity を設定する場合、 modsec_audit.log の代わりに、Web サーバのコンソール (ダウンロードできる場所) に情報を記録することが可能です。 `` `` `modsecurity.conf` ファイル内のこの行を変更してください。
+[独自の`modsecurity.conf`ファイルを提供してModSecurityを設定する](#changing-modsecurity-s-configuration)場合、 `modsec_audit.log`の代わりに、Webサーバのコンソール（ダウンロードできる場所）に情報を記録することが可能です。`modsecurity.conf`ファイル内のこの行を変更してください。
 
 ```
 SecAuditLog /var/log/modsec_audit.log

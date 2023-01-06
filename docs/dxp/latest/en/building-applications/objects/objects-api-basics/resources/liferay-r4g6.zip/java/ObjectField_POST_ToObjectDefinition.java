@@ -21,8 +21,6 @@ public class ObjectField_POST_ToObjectDefinition {
 				new ObjectField() {
 					{
 						businessType = ObjectField.BusinessType.create("Text");
-						indexed = false;
-						indexedAsKeyword = false;
 						label = Collections.singletonMap("en_US", "Able");
 						name = "able";
 						required = false;

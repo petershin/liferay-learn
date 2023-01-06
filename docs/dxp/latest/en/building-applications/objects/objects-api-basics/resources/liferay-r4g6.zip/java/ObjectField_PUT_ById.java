@@ -20,8 +20,6 @@ public class ObjectField_PUT_ById {
 			new ObjectField() {
 				{
 					businessType = ObjectField.BusinessType.create("Text");
-					indexed = false;
-					indexedAsKeyword = false;
 					label = Collections.singletonMap("en_US", "Charlie");
 					name = "charlie";
 					required = false;

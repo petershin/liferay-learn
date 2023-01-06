@@ -1,6 +1,6 @@
 # Solr Limitations 
 
-Liferay's Solr support is limited. Some Liferay features and APIs cannot be used when you choose Solr as the search engine. Install [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) for the best experience.
+Liferay's Solr implementation has limitations. Some Liferay features and APIs cannot be used when you choose Solr as the search engine. Install [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) for the best experience.
 
 ## Search Results Quality
 

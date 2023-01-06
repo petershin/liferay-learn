@@ -13,8 +13,6 @@ There are important limitations when using Solr. Read [Solr Limitations](./solr-
 See the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for detailed information on the compatible Solr and Liferay versions by patch level.
 
 ## Disabling Elasticsearch-Only Features
-<!-- TODO: add information about the enterprise search property that can potentially do most of the work. -->
-<!-- this info should cover 7.2-7.4 -->
 
 Before installing the Liferay Connector to Solr, you must blacklist or otherwise disable
 
@@ -23,11 +21,13 @@ Before installing the Liferay Connector to Solr, you must blacklist or otherwise
 
 ### Blacklisting Elasticsearch-Only Features
 
-<!-- Can we clean this up? Can we just recommend blacklisting and get rid of the other options (App Manager and Gogo Shell)? Sounds strange with the CE/DXP differentiation. -->
-If you're a Liferay DXP customer, use the blacklist feature to disable Elasticsearch-only features. CE users can also use this approach:
+```{tip}
+On Liferay DXP 7.4, use the `enterprise.product.enterprise.search.enabled=false` portal property to disable all Liferay Enterprise Search features, which are available only with Elasticsearch. See [Activating Liferay Enterprise Search](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
+```
 
-<!-- name is different, document all versions -->
-1. Create a configuration file. The name depends on your Liferay version:
+Use the blacklist feature to disable Elasticsearch-only features.
+
+1. Create a blacklist [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). The name depends on your Liferay version:
 
    For Liferay 7.4, create
 
@@ -41,34 +41,22 @@ If you're a Liferay DXP customer, use the blacklist feature to disable Elasticse
    com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config
    ```
 
-1. For Liferay 7.4, give it these contents:
+1. For Liferay 7.4, give the blacklist configuration file these contents:
 
-   <!--provide the blacklist for 7.3 as well, probably 7.2 as well if we can make this good for 7.2-7.4 -->
    ```properties
    blacklistBundleSymbolicNames=[\
       "com.liferay.portal.search.elasticsearch7.api",\
       "com.liferay.portal.search.elasticsearch7.impl",\
       "com.liferay.portal.search.elasticsearch7.spi",\
-      "com.liferay.portal.search.elasticsearch.monitoring.web",\
-      "com.liferay.search.experiences.api",\
-      "com.liferay.search.experiences.lang",\
-      "com.liferay.search.experiences.rest.api",\
-      "com.liferay.search.experiences.rest.client",\
-      "com.liferay.search.experiences.rest.impl",\
-      "com.liferay.search.experiences.service",\
-      "com.liferay.search.experiences.web"\
    ]
    ```
-   These modules are for the [Elasticsearch 7 search engine connector](../elasticsearch/installing-elasticsearch.md), the [Elasticsearch monitoring functionality](../../liferay-enterprise-search/monitoring-elasticsearch.md), and the [Search Experiences application suite](../../liferay-enterprise-search/search-experiences.md). Other [incompatible features](./solr-limitations.md) detect the search engine dynamically and are disabled automatically when you install Solr.
+
+   This configuration disables the [Elasticsearch 7 search engine connector's](../elasticsearch/installing-elasticsearch.md) modules. [Liferay Enterprise Search](../../liferay-enterprise-search.md) modules are disabled using the `enterprise.product.enterprise.search.enabled=false` property. Other [incompatible features](./solr-limitations.md) detect the search engine dynamically and are disabled automatically when you install Solr.
 
    For Liferay 7.2 and 7.3, give it these contents:
 
-   <!-- We should probably add the search experiences modules since it's technically possible that they're present on 7.3 -->
    ```properties
    blacklistBundleSymbolicNames=[\
-      "com.liferay.portal.search.elasticsearch6.api",\
-      "com.liferay.portal.search.elasticsearch6.impl",\
-      "com.liferay.portal.search.elasticsearch6.spi",\
       "com.liferay.portal.search.elasticsearch7.api",\
       "com.liferay.portal.search.elasticsearch7.impl",\
       "com.liferay.portal.search.elasticsearch7.spi",\
@@ -83,30 +71,24 @@ If you're a Liferay DXP customer, use the blacklist feature to disable Elasticse
 
 ### Stopping the Modules with Elasticsearch-Only Features
 
-<!--Verify the accuracy of this in 7.4-ever. When would the state folder be deleted? Can we just document blacklisting and get rid of all this? -->
+The App Manager and Gogo shell rely on the `osgi/state` folder to "remember" the state of the bundle. If you delete this folder (recommended during [patching Liferay DXP](../../../installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)) the Elasticsearch connector is reinstalled and started automatically. The blacklist approach is thus more reliable.
 
-The App Manager and Gogo shell rely on the `osgi/state` folder to "remember" the state of the bundle. If you delete this folder (recommended during [patching Liferay DXP](../../../installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)) the Elasticsearch connector is reinstalled and started automatically. Liferay CE users can use the blacklist approach or disable the Elasticsearch and search tuning modules in the App Manager or the Gogo shell. 
-
-<!--TODO: If we keep this stuff, these instructions would need to be augmented for the 7.4 stuff like search experiences. -->
-To disable via App Manager,
+To disable modules via App Manager,
 
 1. Navigate to Control Panel &rarr; App Manager.
 
-1. Once in the App Manager, search for *elasticsearch*. Find the Liferay Connector to Elasticsearch 6/7 modules and open the Actions (![Actions](../../../images/icon-actions.png)) menu. Choose _Deactivate_.  This leaves the bundle installed, but stops it in the OSGi runtime. Do the same for the search tuning modules.
+1. Once in the App Manager, search for the modules listed in the blacklisting configuration above. Find the modules and open the Actions (![Actions](../../../images/icon-actions.png)) menu. Choose _Deactivate_.  This leaves the bundle installed, but stops it in the OSGi runtime.
 
-To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) to stop the Elasticsearch and search tuning modules,
+To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) to stop the Elasticsearch-dependent modules, first compile the list of modules to disable. See the blacklisting instruction above for each module's bundle symbolic names. Once you're at the Gogo shell,
 
-1. Enter `lb -s | grep 'search' | grep 'elasticsearch|tuning'`
+1. Enter `lb -s [bundle.symbolic.name]`
 
-   You'll see several active bundles for the connector to Elasticsearch and the search tuning modules.
-
-1. For each bundle listed enter `stop [bundle ID]`.
+1. For each bundle enter `stop [bundle ID]`.
 
 ## Downloading the Solr Connector
 
-<!-- TODO: Document how Solr users get a hold of the right LPKG? This is in flux but we really can't publish without it.-->
-<!-- Note, when I install the connector before Solr is running, I get exceptions in Liferay's log that no live Solr servers are available. Should we say something about that? -->
-To install the Liferay Connector to Solr [7 or 8], navigate to [Liferay Marketplace](https://web.liferay.com/marketplace/) and download the app version that corresponds to your Liferay version.
+<!-- TODO: Document how Solr users get a hold of the right LPKG. This is in flux but we really can't publish without it.-->
+To download the Liferay Connector to Solr [7 or 8], navigate to [Liferay Marketplace](https://web.liferay.com/marketplace/) and download the app version that corresponds to your Liferay version.
 
    - **Liferay CE:**
       - [Liferay CE Connector to Solr 8](https://web.liferay.com/marketplace/-/mp/application/181462322)
@@ -137,9 +119,9 @@ To install and properly configure Solr for Liferay:
 <!--TODO: verify that this stays the same after getting a hold of the LPKG -->
 1. Open the Liferay Connector to Solr 8's LPKG file with an archive manager.
 
-   Next open the `Liferay Connector to Solr 7/8 - Impl.lpkg`.
+   Next open the `Liferay Connector to Solr 8 - Impl.lpkg`.
 
-   Finally, open the `com.liferay.portal.search.solr7/8.impl.jar` file, and extract 
+   Finally, open the `com.liferay.portal.search.solr8.impl.jar` file, and extract 
 
    ```
    META-INF/resources/solrconfig.xml
@@ -321,10 +303,6 @@ There's only one thing left to do: specify the client type as *CLOUD* in Liferay
 ## Solr Connector Configuration Reference
 
 <!-- TODO: these settings need to be properly documented like the Elasticsearch ones are. -->
-```{note}
-The Solr Connector properties apply equally to the Solr 7 and Solr 8 connectors. Substitue `solr7` in the config file name (instead of `solr8`). In System Settings, see the entries starting with _Solr 7_.
-```
-
 Below are the default configurations along with settings that become available (in the System Settings Search category, or configurable by `.config` file) when you install the Solr connector application. These settings accept a limited set of values: 
 
 **Configuration File:** `com.liferay.portal.search.solr8.configuration.SolrConfiguration.config` \
@@ -363,4 +341,3 @@ verifyServerCertificate=B"true"
 verifyServerName=B"true"
 ```
 
-Now you can configure Liferay for Solr and Solr for Liferay.

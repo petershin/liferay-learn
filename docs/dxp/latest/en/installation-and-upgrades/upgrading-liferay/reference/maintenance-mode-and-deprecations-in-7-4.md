@@ -76,7 +76,7 @@ Here are the features moved to Maintenance Mode in 7.4:
 | Feature | Notes |
 | :------ | :---- |
 | Kaleo Forms | To be replaced replaced by business processes for [Liferay Objects](../../../building-applications/objects.md). |
-| Solr Connector | Limited support. [Use Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md) if possible. |
+| Solr Connector | [Use Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md) if possible. |
 
 ```{note}
 Liferay continues to improve Import/Export and Staging, particularly for Remote Live Staging in scenarios that require content to be created in one environment and consumed in another. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.

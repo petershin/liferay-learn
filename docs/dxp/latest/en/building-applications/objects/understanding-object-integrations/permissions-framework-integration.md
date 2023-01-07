@@ -1,70 +1,74 @@
 # Permissions Framework Integration
 
-> Available: Liferay DXP/Portal 7.4+
+{bdg-secondary}`Available Liferay 7.4+`
 
-When an Object is created, it is integrated automatically with Liferay's Permissions framework. This means you can assign [application](#application-permissions) and [resource](#resource-permissions) permissions to manage user access to individual Objects and their entries. With role-based access control, you can ensure only appropriate users can view and use your application's data.
+When you publish an object, it is integrated automatically with Liferay's Permissions framework. This means you can use [application](#application-permissions) and [resource](#resource-permissions) permissions to manage user access to an object and its entries. With role-based access control, you can ensure only appropriate users can view and use your application's data.
 
-When defining role permissions, active Objects appear according to their scope and panel category key.
+When defining role permissions, active objects appear according to their scope and panel category key.
+
+```{note}
+For objects scoped to *Site*, you can determine whether permissions are granted for all sites or only specific sites.
+```
+
+```{important}
+Account and organization roles are only supported in objects with account restriction enabled. Otherwise, you can only use regular and site roles for assigning object permissions. See [Account Restriction and User Roles](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md#account-restriction-and-user-roles) for more information.
+```
 
 ## Application Permissions
 
-Application permissions grant permission to perform general application-related operations and do not include [resource-related permissions](#resource-permissions).
-
-Custom Objects include the following standard application permissions according to their defined scope.
+Application permissions grant access to the published object itself and do not include [resource-related permissions](#resource-permissions). Each object includes these standard application permissions according to their defined scope:
 
 | Permission | Description |
 | :--- | :--- |
-| Access in Control Panel (*Company Scope Only*) | Access the Object in the Global Menu |
-| Access in Site and Asset Library Administration (*Site Scope Only*) | Access the Object in the Site Menu or Asset Library |
-| Configuration | View and set the Object's configuration options |
-| Permissions | View and modify the Object's permissions |
-| Preferences | View and set the Object's preferences |
-| View | View the Object's application page |
-
-```{note}
-For Objects scoped to *Site*, you can also determine whether an application or resource permission is granted for all Sites or only specific Sites.
-```
+| Access in Control Panel (*Company Scope Only*) | Access the object in the Global Menu ( ![Global Menu](../../../images/icon-applications-menu.png) ). |
+| Access in Site and Asset Library Administration (*Site Scope Only*) | Access the object in the Site Menu ( ![Site Menu](../../../images/icon-product-menu.png) ) or Asset Library. |
+| Configuration | N/A |
+| Permissions | View and modify application permissions for the object. |
+| Preferences | N/A |
+| View | View the object's application page. |
 
 ## Resource Permissions
 
-Resource permissions grant specific abilities related to application resources. Some of these permissions grant permission to perform [operations on database entities](#actions-on-database-entities) (i.e., model resources). Others grant permission to perform [resource-related operations](#resource-related-actions) in an application context (e.g., create a new resource entity).
+Resource permissions grant access to view and act on resources in the object application. Some of these permissions [relate to creating object entries](#creating-entries), while others are for [performing actions on existing entries](#acting-on-existing-entries) (e.g., edit, delete).
 
-Each Object also has the following resource permissions.
-
-### Resource-Related Actions
+### Creating Entries
 
 | Permission | Description |
 | :--- | :--- |
-| Add Object Entry | Create an Object entry |
-| Permissions | View and manage permissions related to Object entries |
+| Add Object Entry | Create an entry. |
+| Permissions | View and manage permissions related to creating entries. |
 
-### Actions on Database Entities
+### Acting on Existing Entries
 
 | Permission | Description |
 | :--- | :--- |
-| Delete | Delete an Object entry |
-| Permissions | View and modify permissions for individual Object entries |
-| Update | Update an Object entry |
-| View | View an Object entry |
+| Delete | Delete entries. |
+| Permissions | View and modify permissions for individual entries. |
+| Update | Update entries. |
+| View | View entries. |
+
+```{note}
+When users create object entries, they are automatically assigned the owner role for their entries. This role includes the above permissions.
+```
 
 ## Managing Permissions for Individual Object Entities
 
-> Available Liferay DXP 7.4 U10+ and Liferay Portal 7.4 GA14+
+{bdg-secondary}`For 7.4 U10+/GA14+`
 
-With custom Objects, you can manage permissions for individual database entities to control access to Object data.
+With custom objects, you can manage permissions for individual database entities to control access to object data.
 
 Follow these steps:
 
-1. Navigate to the desired custom Object.
+1. Navigate to the desired custom object.
 
 1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired entity and select *Permissions*.
 
    ![Click the Actions button for the desired entity and select Permissions.](./permissions-framework-integration/images/01.png)
 
-1. Use the checkboxes to grant [database entity](#actions-on-database-entities) permissions to the desired desired roles.
+1. Use the checkboxes to grant permissions to [act on the entry](#acting-on-existing-entries) permissions to the desired roles.
 
    ```{note}
-   Permissions defined at the Roles admin level override permissions defined at the entity level.
+   Permissions defined in the Roles admin override permissions defined at the entity level.
    ```
 
    ![Use the checkboxes to assign permissions to the desired roles.](./permissions-framework-integration/images/02.png)
@@ -76,3 +80,4 @@ Follow these steps:
 * [Understanding Object Integrations](../understanding-object-integrations.md)
 * [Objects Overview](../../objects.md)
 * [Creating Objects](../creating-and-managing-objects/creating-objects.md)
+* [Restricting Access to Object Data by Account](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md)

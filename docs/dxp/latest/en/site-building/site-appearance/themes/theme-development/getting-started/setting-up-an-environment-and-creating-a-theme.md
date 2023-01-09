@@ -13,7 +13,7 @@ Older versions of the Liferay Theme Generator can be used to generate themes for
 ### Installation
 
 ```{note}
-Node and NPM are both required for developing themes with the Liferay Theme Generator. Check the [Node Compatibility Matrix](../../../../../building-applications/tooling/reference/node-version-information.md) to ensure you have the correct versions of these installed for your Liferay version.
+Node and NPM are both required for developing themes with the Liferay Theme Generator. Check the [Node compatibility matrix](../../../../../building-applications/tooling/reference/node-version-information.md) to ensure you have the correct versions of these installed for your Liferay version.
 ```
 
 If you have not already done so, install the Liferay Theme Generator with this command:
@@ -65,7 +65,7 @@ Run the Liferay Theme Generator with these steps:
 
 1. Answer whether you would like to add Font Awesome as an available font for your theme at the prompt.
 
-1. After the theme is generated, complete the process by using the arrow keys to select the appropriate deployment type for your theme. You can choose to deploy with a local app server, Docker container, or other URL.
+1. After the theme is generated, complete the process by using the arrow keys to select the appropriate deployment type for your theme: deploy with a local app server, Docker container, or other URL.
 
     ```
     ? Select your deployment strategy (Use arrow keys)
@@ -82,7 +82,7 @@ The theme is then generated and placed inside of a folder named after the ID you
 
 ### Disabling Dart SASS
 
-When you run `gulp build` or `gulp deploy` on a theme created with the theme generator, you may encounter errors, including this message:
+When you run `gulp build` or `gulp deploy` on a theme created with the theme generator, you may encounter errors, including
 
 ```
 Error: compound selectors may no longer be extended.
@@ -90,7 +90,7 @@ Error: compound selectors may no longer be extended.
 
 This error occurs because the theme generator uses [Dart SASS](https://sass-lang.com/dart-sass) as of Liferay 7.3+, but some environments still rely on features used with the deprecated [LibSass](https://sass-lang.com/blog/libsass-is-deprecated).
 
-You can configure your theme to disable Dart SASS and avoid this error. Open the `package.json` file within your theme, and add the `dartSass` and `node-sass` properties (without removing other properties already present):
+Disable Dart SASS in your theme to avoid this error. Add these `dartSass` and `node-sass` properties to the theme's `package.json` (without removing existing properties):
 
 ```json
 "liferaytheme": {
@@ -103,7 +103,7 @@ You can configure your theme to disable Dart SASS and avoid this error. Open the
 }
 ```
 
-Then run `npm install` to install LibSass. This solves the errors caused by LibSass features the next time you run a gulp build.
+Run `npm install` to install LibSass. The next time you build with gulp, the errors caused by LibSass disappear.
 
 <!-- Add Using Blade to Create a Theme section, with a link to Theme Templates documentation when available-->
 

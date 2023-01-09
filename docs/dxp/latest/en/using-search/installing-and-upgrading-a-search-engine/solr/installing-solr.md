@@ -22,11 +22,24 @@ Before installing the Liferay Connector to Solr, you must blacklist or otherwise
 
 ### Blacklisting Elasticsearch-Only Features
 
-```{tip}
-On Liferay DXP 7.4, use the `enterprise.product.enterprise.search.enabled=false` portal property to disable all Liferay Enterprise Search features, which are compatible only with Elasticsearch. See [Activating Liferay Enterprise Search](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
-```
 
 To blacklist Elasticsearch-only features,
+
+1. On Liferay DXP 7.4, use a portal property or Docker environment variable to disable several Elasticsearch-dependent modules:
+
+   Add this property to `portal-ext.properties`:
+
+   ```properties
+   enterprise.product.enterprise.search.enabled=false
+   ```
+
+   Set this Docker environment variables:
+
+   ```properties
+   LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_ENTEPRISE_PERIOD_SEARCH_PERIOD_ENABLED=false
+   ```
+
+   Once set, all Liferay Enterprise Search features are disabled. See [Activating Liferay Enterprise Search](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
 
 1. Create a blacklist [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). The name depends on your Liferay version:
 
@@ -197,19 +210,22 @@ It's most common to make your edits to the Solr connector's default configuratio
    com.liferay.portal.search.solr8.configuration.SolrConfiguration.config
    ```
 
-   Alternatively, configure Solr from the Solr 8 System Settings entry in Control Panel &rarr; Configuration &rarr; System Settings.
+   After the initial configuration file is deployed and Liferay's connection to Solr is active, you can update the configuration from the Solr 8 System Settings entry in Control Panel &rarr; Configuration &rarr; System Settings.
 
-   ![You can configure Solr from Liferay's System Settings application. This is most useful during development and testing.](./installing-solr/images/02.png)
+   ![Configuring Solr from Liferay's System Settings application is most useful during development and testing.](./installing-solr/images/02.png)
 
 1. Once the app LPKG is downloaded, copy it to Liferay's `osgi/marketplace` folder and place its configuration files in `osgi/configs`.
 
 1. Start Liferay.
 
-1. Re-index your Liferay data into Solr. Open the Global Menu and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. In the Index Actions pane, click *Execute* next to the Reindex Search Indexes option.
+1. Verify the Solr connection in Liferay. Open the Global Menu and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search* and make sure the connection is active.
+
+   ![Verify the Solr connection in the search administration console.](./installing-solr/images/01.png)
+
+1. Re-index your Liferay data into Solr. Open the Global Menu and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. In the Index Actions pane, click *Execute* next to the Re-index Search Indexes option.
 
    Re-index the spell check indexes too.
 
-   ![Verify the Solr connection in the search administration console.](./installing-solr/images/01.png)
 
 ## High Availability with SolrCloud
 

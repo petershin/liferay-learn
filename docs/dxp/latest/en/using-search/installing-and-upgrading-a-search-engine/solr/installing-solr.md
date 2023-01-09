@@ -1,4 +1,5 @@
 # Installing Solr 
+<!--TODO: add an availability badge: 7.2, 7.3, and 7.4 U60+/GA60+ -->
 
 Solr is a popular enterprise search platform built on Apache Lucene. It's reliable, scalable, and fault tolerant. Read more about it [here](http://lucene.apache.org/solr/).
 
@@ -22,10 +23,10 @@ Before installing the Liferay Connector to Solr, you must blacklist or otherwise
 ### Blacklisting Elasticsearch-Only Features
 
 ```{tip}
-On Liferay DXP 7.4, use the `enterprise.product.enterprise.search.enabled=false` portal property to disable all Liferay Enterprise Search features, which are available only with Elasticsearch. See [Activating Liferay Enterprise Search](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
+On Liferay DXP 7.4, use the `enterprise.product.enterprise.search.enabled=false` portal property to disable all Liferay Enterprise Search features, which are compatible only with Elasticsearch. See [Activating Liferay Enterprise Search](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
 ```
 
-Use the blacklist feature to disable Elasticsearch-only features.
+To blacklist Elasticsearch-only features,
 
 1. Create a blacklist [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). The name depends on your Liferay version:
 
@@ -71,7 +72,7 @@ Use the blacklist feature to disable Elasticsearch-only features.
 
 ### Stopping the Modules with Elasticsearch-Only Features
 
-The App Manager and Gogo shell rely on the `osgi/state` folder to "remember" the state of the bundle. If you delete this folder (recommended during [patching Liferay DXP](../../../installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)) the Elasticsearch connector is reinstalled and started automatically. The blacklist approach is thus more reliable.
+The App Manager and Gogo shell rely on the `osgi/state` folder to remember the state of the bundle. If you delete this folder (recommended during [patching Liferay DXP](../../../installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)) the Elasticsearch connector is reinstalled and started automatically. The [blacklist approach](#blacklisting-elasticsearch-only-features) is thus more reliable.
 
 To disable modules via App Manager,
 
@@ -79,11 +80,13 @@ To disable modules via App Manager,
 
 1. Once in the App Manager, search for the modules listed in the blacklisting configuration above. Find the modules and open the Actions (![Actions](../../../images/icon-actions.png)) menu. Choose _Deactivate_.  This leaves the bundle installed, but stops it in the OSGi runtime.
 
-To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) to stop the Elasticsearch-dependent modules, first compile the list of modules to disable. See the blacklisting instruction above for each module's bundle symbolic names. Once you're at the Gogo shell,
+To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) to stop the Elasticsearch-dependent modules, first compile the list of modules to disable. See the [blacklisting instructions above](#blacklisting-elasticsearch-only-features) for each module's bundle symbolic name. Once you're at the Gogo shell,
 
-1. Enter `lb -s [bundle.symbolic.name]`
+1. Enter `lb -s [bundle.symbolic.name]`.
 
-1. For each bundle enter `stop [bundle ID]`.
+1. Enter `stop [bundle ID]`.
+
+1. Repeat for each module.
 
 ## Downloading the Solr Connector
 
@@ -99,6 +102,10 @@ To download the Liferay Connector to Solr [7 or 8], navigate to [Liferay Marketp
       - [Liferay Connector to Solr 7](https://web.liferay.com/marketplace/-/mp/application/117931595)
 
 Refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for the compatible application versions for your Liferay version and patch level.
+
+```{warning}
+Do not install the Solr connector into Liferay until the [configurations are in place](#installing-and-configuring-the-solr-connector) and [Solr is running](#installing-and-configuring-solr)
+```
 
 ## Installing and Configuring Solr
 
@@ -186,23 +193,23 @@ It's most common to make your edits to the Solr connector's default configuratio
 
 1. Name the file 
 
-```
-com.liferay.portal.search.solr8.configuration.SolrConfiguration.config
-```
+   ```
+   com.liferay.portal.search.solr8.configuration.SolrConfiguration.config
+   ```
 
-   You can alternatively use the UI for configuring the connector. Find the Solr 8 System Settings entry in Control Panel &rarr; Configuration &rarr; System Settings.
+   Alternatively, configure Solr from the Solr 8 System Settings entry in Control Panel &rarr; Configuration &rarr; System Settings.
 
    ![You can configure Solr from Liferay's System Settings application. This is most useful during development and testing.](./installing-solr/images/02.png)
 
-1. Once the app LPKG is downloaded, copy it to Liferay's `osgi/marketplace` and put any configuration files in `osgi/configs`.
+1. Once the app LPKG is downloaded, copy it to Liferay's `osgi/marketplace` folder and place its configuration files in `osgi/configs`.
 
 1. Start Liferay.
 
-1. Re-index your Liferay data into Solr. Open the Global Menu and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. In the Index Actions pane, click *Execute* next to the *Reindex search indexes* option.
+1. Re-index your Liferay data into Solr. Open the Global Menu and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. In the Index Actions pane, click *Execute* next to the Reindex Search Indexes option.
 
    Re-index the spell check indexes too.
 
-   ![The Solr connection can be verified in the Search administration console.](./installing-solr/images/01.png)
+   ![Verify the Solr connection in the search administration console.](./installing-solr/images/01.png)
 
 ## High Availability with SolrCloud
 
@@ -255,7 +262,7 @@ The steps included here should be considered the bare minimum of what must be do
     SolrCloud example running, please visit http://localhost:8983/solr
     ```
 
-Now you have a new collection called *liferay* in your local SolrCloud cluster.  Verify its status by running the *status* command:
+Now you have a new collection called *liferay* in your local SolrCloud cluster. Verify its status by running the *status* command:
 
 ```bash
 ./bin/solr status
@@ -288,7 +295,7 @@ To stop Solr while running in SolrCloud mode, use the *stop* command, like this:
 
 ## Configure the Solr Connector for SolrCloud
 
-There's only one thing left to do: specify the client type as *CLOUD* in Liferay's Solr connector.
+To support SolrCloud in Liferay, specify the client type as *CLOUD* in Liferay's Solr connector.
 
 1. From System Settings or your OSGi configuration file, set the *Client Type* to *CLOUD*.
 
@@ -296,7 +303,7 @@ There's only one thing left to do: specify the client type as *CLOUD* in Liferay
    clientType="CLOUD"
    ```
 
-1. Start Liferay if it's not running already. If this is the first time starting after installing the Solr connector LPKG, follow the instructions in the log to restart Liferay again.
+1. Start Liferay. If this is the first time starting after installing the Solr connector LPKG, follow the instructions in the log to restart Liferay again.
 
 ![From the Solr System Settings entry, set the Client Type to Cloud.](./installing-solr/images/03.png)
 

@@ -10,7 +10,7 @@ Primary badge:
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge displayType="primary" label="8" />
+    <clay:badge label="8" />
 
     <div>Primary</div>
 </div>

@@ -18,10 +18,10 @@ Primary button with label:
 
 ```jsp
 <div class="col">
-    <clay:button label="Secondary" style="secondary" />
+    <clay:button displayType="secondary" label="Secondary" />
 </div>
 <div class="col">
-    <clay:button ariaLabel="Wiki" icon="wiki" style="secondary" />
+    <clay:button ariaLabel="Wiki" displayType="secondary" icon="wiki" />
 </div>
 ```
 
@@ -31,10 +31,10 @@ Primary button with label:
 
 ```jsp
 <div class="col">
-    <clay:button label="Borderless" style="borderless" />
+    <clay:button displayType="borderless" label="Borderless" />
 </div>
 <div class="col">
-    <clay:button ariaLabel="Page Template" icon="page-template" style="borderless" />
+    <clay:button ariaLabel="Page Template" displayType="borderless" icon="page-template" />
 </div>
 ```
 
@@ -44,10 +44,10 @@ Primary button with label:
 
 ```jsp
 <div class="col">
-    <clay:button label="Link" style="link" />
+    <clay:button displayType="link" label="Link" />
 </div>
 <div class="col">
-    <clay:button ariaLabel="Add Role" icon="add-role" style="link" />
+    <clay:button ariaLabel="Add Role" displayType="link" icon="add-role" />
 </div>
 ```
 
@@ -87,7 +87,7 @@ Button with icon and text:
 Button with monospaced text:
 
 ```jsp
-<clay:button icon="indent-less" monospaced="<%= true %>" style="secondary" />
+<clay:button displayType="secondary" icon="indent-less" monospaced="<%= true %>" />
 ```
 
 ![Buttons can display monospaced text.](./clay-buttons/images/08.png)
@@ -103,7 +103,7 @@ Block level button:
 Plus button:
 
 ```jsp
-<clay:button icon="plus" monospaced="<%= true %>" style="secondary" />
+<clay:button displayType="secondary" icon="plus" monospaced="<%= true %>" />
 ```
 
 ![A plus button is used for add actions in an app.](./clay-buttons/images/10.png)
@@ -111,7 +111,7 @@ Plus button:
 Action button:
 
 ```jsp
-<clay:button icon="ellipsis-v" monospaced="<%= true %>" style="borderless" />
+<clay:button displayType="borderless" icon="ellipsis-v" monospaced="<%= true %>" />
  ```
  
 ![An action button is used to display actions menus.](./clay-buttons/images/11.png)

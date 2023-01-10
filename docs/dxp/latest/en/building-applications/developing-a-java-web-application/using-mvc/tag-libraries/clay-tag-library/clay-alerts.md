@@ -11,7 +11,7 @@ Danger alert (embedded):
 ```jsp
 <clay:alert
 	message="This is an error message."
-	style="danger"
+	displayType="danger"
 	title="Error"
 />
 ```
@@ -23,7 +23,7 @@ Success alert (embedded):
 ```jsp
 <clay:alert
 	message="This is a success message."
-	style="success"
+	displayType="success"
 	title="Success"
 />
 ```
@@ -35,6 +35,7 @@ Info alert (embedded):
 ```jsp
 <clay:alert
 	message="This is an info message."
+	displayType="info"
 	title="Info"
 />
 ```
@@ -46,7 +47,7 @@ Warning alert (embedded):
 ```jsp
 <clay:alert
 	message="This is a warning message."
-	style="warning"
+	displayType="warning"
 	title="Warning"
 />
 ```
@@ -62,7 +63,7 @@ Danger alert (stripe):
 ```jsp
 <clay:stripe
 	message="This is an error message."
-	style="danger"
+	displayType="danger"
 	title="Error"
 />
 ```
@@ -74,7 +75,7 @@ Success alert (stripe):
 ```jsp
 <clay:stripe
 	message="This is a success message."
-	style="success"
+	displayType="success"
 	title="Success"
 />
 ```
@@ -86,6 +87,7 @@ Info alert (stripe):
 ```jsp
 <clay:stripe
 	message="This is an info message."
+	displayType="info"
 	title="Info"
 />
 ```
@@ -97,7 +99,7 @@ Warning alert (stripe):
 ```jsp
 <clay:stripe
 	message="This is a warning message."
-	style="warning"
+	displayType="warning"
 	title="Warning"
 />
 ```

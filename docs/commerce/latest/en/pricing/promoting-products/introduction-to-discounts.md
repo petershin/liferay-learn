@@ -46,13 +46,37 @@ After applying the coupon code, you can view the updated prices in the order sum
 
 ![You can view the updated prices in the order summary section.](./introduction-to-discounts/images/04.png)
 
+## Expiration Date
+
+You can configure discounts to have expiration dates that coincide with promotional efforts.
+
+![Configure the expiration date for a discount to coincide with a promotion.](./introduction-to-discounts/images/05.png)
+
+## Discount Rules
+
+You can define rules that specify requirements to qualify for a discount. There are three rules available out-of-the-box:
+
+| Rule                      | Description                                                                                         |
+| :------------------------ | :-------------------------------------------------------------------------------------------------- |
+| Cart Total                | Cart subtotal must meet a minimum threshold to receive the discount.                                |
+| Has all of these products | Orders must include all specified products in order to receive the discount.                        |
+| Has one of these products | Orders must contain at least one product from a list of specified products to receive the discount. |
+
+You can add discount rules in the *Rules* section. Developers can also [implement new discount rules](../../developer-guide/promotions/adding-a-new-discount-rule-type.md).
+
+![Add a discount rule.](./introduction-to-discounts/images/06.png)
+
+When using either *Has all of these products* or *Has one of these products* rules, select which products in the catalog are eligible for the discount.
+
+![The available discount rule types.](./introduction-to-discounts/images/07.png)
+
 ## Discount Levels
 
 You can create discounts at multiple levels for all discounts based on percentages. For instance, you can create a level 1 discount offering 20% off and then offer an additional 5% off if the cart value exceeds 50$. To create this on a Minium site,
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Discounts*.
 
-1. Click the *Add* (![Add button](../images/icon-add.png)) button and enter the following information.
+1. Click the *Add* (![Add button](../../images/icon-add.png)) button and enter the following information.
 
    **Name:** U-Joint Clearance
 
@@ -87,30 +111,6 @@ You can create discounts at multiple levels for all discounts based on percentag
 1. Click *Publish*.
 
 Go to your site and open the product page for u-joint. It should have a base discount of 20% applied to it. Now, add more units to your cart so that the total exceeds 50$. Check the price again to verify the additional discount applied to your cart.
-
-## Expiration Date
-
-You can configure discounts to have expiration dates that coincide with promotional efforts.
-
-![Configure the expiration date for a discount to coincide with a promotion.](./introduction-to-discounts/images/05.png)
-
-## Discount Rules
-
-You can define rules that specify requirements to qualify for a discount. There are three rules available out-of-the-box:
-
-| Rule                      | Description                                                                                         |
-| :------------------------ | :-------------------------------------------------------------------------------------------------- |
-| Cart Total                | Cart subtotal must meet a minimum threshold to receive the discount.                                |
-| Has all of these products | Orders must include all specified products in order to receive the discount.                        |
-| Has one of these products | Orders must contain at least one product from a list of specified products to receive the discount. |
-
-You can add discount rules in the *Rules* section. Developers can also [implement new discount rules](../../developer-guide/promotions/adding-a-new-discount-rule-type.md).
-
-![Add a discount rule.](./introduction-to-discounts/images/06.png)
-
-When using either *Has all of these products* or *Has one of these products* rules, select which products in the catalog are eligible for the discount.
-
-![The available discount rule types.](./introduction-to-discounts/images/07.png)
 
 ## What's Next
 

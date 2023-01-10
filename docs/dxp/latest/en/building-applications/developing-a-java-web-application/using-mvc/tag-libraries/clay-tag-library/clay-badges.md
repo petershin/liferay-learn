@@ -10,7 +10,7 @@ Primary badge:
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="8" />
+    <clay:badge displayType="primary" label="8" />
 
     <div>Primary</div>
 </div>
@@ -22,7 +22,7 @@ Secondary badge:
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="87" style="secondary" />
+    <clay:badge displayType="secondary" label="87" />
 
     <div>Secondary</div>
 </div>
@@ -34,7 +34,7 @@ Info badge:
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="91" style="info" />
+    <clay:badge displayType="info" label="91" />
 
     <div>Info</div>
 </div>
@@ -46,7 +46,7 @@ Error badge:
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="130" style="danger" />
+    <clay:badge displayType="danger" label="130" />
 
     <div>Error</div>
 </div>
@@ -58,7 +58,7 @@ Success badge:
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="1111" style="success" />
+    <clay:badge displayType="success" label="1111" />
 
     <div>Success</div>
 </div>
@@ -70,7 +70,7 @@ Warning badge:
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="21" style="warning" />
+    <clay:badge displayType="warning" label="21" />
 
     <div>Warning</div>
 </div>

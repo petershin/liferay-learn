@@ -150,5 +150,5 @@ To resolve errors like these,
 
 1. Restart Liferay.
 
-1. The Portal will download and extract the Elasticsearch runtime at startup [on select App Servers](./using-the-sidecar-or-embedded-elasticsearch.md#embedded-versus-sidecar) (e.g, Tomcat).
+1. The Portal downloads and extracts the Elasticsearch runtime at startup [on select App Servers](./using-the-sidecar-or-embedded-elasticsearch.md#embedded-versus-sidecar) (e.g, Tomcat).
 

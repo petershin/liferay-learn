@@ -38,7 +38,7 @@ docker network inspect bridge
 
 ## Configuration File Names
 
-When you have problems connecting Liferay to Elasticsearch (perhaps seeing `NoNodeAvailableException` messages in the Liferay log), one of the first steps to take is confirming that the configuration files are named properly. Unrecognizable configuration files aren't processed and resulting errors can vary.
+When you have problems connecting Liferay to Elasticsearch (perhaps seeing `NoNodeAvailableException` messages in the Liferay log), one of the first steps to take is confirming properly named configuration files. Unrecognizable configuration files aren't processed, and resulting errors can vary.
 
 ## Disable Elasticsearch Deprecation Logging
 

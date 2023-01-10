@@ -245,7 +245,7 @@ A corresponding Elasticsearch error appears with Liferay 7.0-7.2 when connecting
 [2021-06-07T18:19:49,623][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:41820}
 ```
 
-Make sure all nodes in your stack (e.g., Liferay, Elasticsearch, and Kibana) are using certificates signed by the same Certificate Authority (CA) and the certificate (public key) of the CA is present in the client's environment. For example, make sure the `sslTruststorePath` or `sslCertificateAuthoritiesPath` settings are configured according the [Securing Elasticsearch documentation](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2).
+Make sure all nodes in your stack (e.g., Liferay, Elasticsearch, and Kibana) use certificates signed by the same Certificate Authority (CA) and the certificate (public key) of the CA is present in the client's environment. For example, make sure the `sslTruststorePath` or `sslCertificateAuthoritiesPath` settings are configured according the [Securing Elasticsearch documentation](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2).
 
 ```{tip}
 Open the certificate files and find the "Issuer Name" or "Issued by" entry. These entries hold information about the issuer CA.
@@ -292,7 +292,7 @@ A corresponding Kibana error can appear:
  error  [13:24:57.089] [error][client][connection] Error: 139942872246080:error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1544:SSL alert number 46
 ```
 
-These errors indicate that the Kibana server is using a self-signed certificate and the CA is not present in the client's truststore file (Liferay DXP is the client, through the LES Monitoring app). The JDK's `cacerts` file is the default truststore.
+These errors indicate that the Kibana server has a self-signed certificate and the CA is not present in the client's truststore file (Liferay DXP is the client, through the LES Monitoring app). The JDK's `cacerts` file is the default truststore.
 
 Because you're using the Monitoring portlet in Liferay as a proxy to Kibana's UI and using a self-signed certificate, you must configure the application server's startup JVM parameters to trust Kibana's certificate. There are two approaches, demonstrated with Tomcat here:
 
@@ -304,7 +304,7 @@ Because you're using the Monitoring portlet in Liferay as a proxy to Kibana's UI
 
 1. A better way is to make a copy of the default `cacerts` file, import the certificate without private key, then configure the application server to use the custom truststore file:
 
-   * Copy the default `cacerts` file from the Liferay JVM (located in `JAVA_HOME/jre/lib/security` in JDK 8 or in `JAVA_HOME/lib/security` in JDK 11), and rename it `cacerts-custom.jks`.
+   * Copy the default `cacerts` file from the Liferay JVM (located in `JAVA_HOME/jre/lib/security` in JDK 8 or in `JAVA_HOME/lib/security` in JDK 11) and rename it `cacerts-custom.jks`.
    * Extract the certificate of the CA without the private key using `openssl` (if you only have a single `.p12` file like `elastic-stack-ca.p12`)
    * Import the certificate into your custom JKS file using Java's `keytool`
    * Configure Tomcat to use the custom truststore:
@@ -333,8 +333,7 @@ javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
 javax.net.ssl.SSLException: No PSK available. Unable to resume.
 ```
 
-<!-- I think we want at least a brief description of the problem. -->
-See the [Monitoring Elasticsearch](../../../liferay-enterprise-search/monitoring-elasticsearch.md#troubleshooting-the-monitoring-setup) article.
+See [Monitoring Elasticsearch](../../../liferay-enterprise-search/monitoring-elasticsearch.md#troubleshooting-the-monitoring-setup).
 
 ## IOException: Data Isn't an Object ID
 
@@ -408,7 +407,7 @@ Make sure that the CA's certificate that signed the Elasticsearch node certifica
 
 You can also see these errors if the CA certificate (public key) is not present in the node certificate. In this case add it using Java's `keytool` or other tools like `openssl`, depending on the format of the CA certificate and node certificates (PKCS#12 or PEM).
 
-For example, if you have your CA's certificate (public key) and private key in `ca.p12` and your node certificate is `elastic-nodes.p12`, you can do the following,
+For example, if you have your CA's certificate (public key) and private key in `ca.p12` and your node certificate is `elastic-nodes.p12`, follow these steps:
 
 1. Export the public key of the CA without the private key:
 

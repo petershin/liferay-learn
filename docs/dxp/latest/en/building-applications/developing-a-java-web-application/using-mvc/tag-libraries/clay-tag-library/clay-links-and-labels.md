@@ -10,15 +10,15 @@ The Liferay Clay taglibs provide a few different labels for your app. Use the `c
 
 The Liferay Clay labels come in four different colors: dark-blue for info, light-gray for status, orange for pending, red for rejected, and green for approved.
 
-Info labels are dark-blue, and since they stand out a bit more than status labels, they are best for conveying general information. To use an info label, set the `style` attribute to `info`:
+Info labels are dark-blue, and since they stand out a bit more than status labels, they are best for conveying general information. To use an info label, set the `displayType` attribute to `info`:
 
 ```jsp
-<clay:label label="Label text" style="info" />
+<clay:label displayType="info" label="Label text" />
 ```
 
 ![Info labels convey general information.](./clay-links-and-labels/images/01.png)
 
-Status labels are light-gray, and due to their neutral color, they are best for conveying basic information. Status labels are the default label and therefore require no `style` attribute:
+Status labels are light-gray, and due to their neutral color, they are best for conveying basic information. Status labels are the default label and therefore require no `displayType` attribute:
 
 ```jsp
 <clay:label label="Status" />
@@ -26,26 +26,26 @@ Status labels are light-gray, and due to their neutral color, they are best for 
 
 ![Status labels are the least flashy and best for displaying basic information.](./clay-links-and-labels/images/02.png)
 
-Warning labels are orange, and due to their color, they are best for conveying a warning message. To use a warning label, set the `style` attribute to `warning`:
+Warning labels are orange, and due to their color, they are best for conveying a warning message. To use a warning label, set the `displayType` attribute to `warning`:
 
 ```jsp
-<clay:label label="Pending" style="warning" />
+<clay:label displayType="warning" label="Pending" />
 ```
 
 ![Warning labels notify the user of issues, but nothing app breaking.](./clay-links-and-labels/images/03.png)
 
-Danger labels are red and indicate that something is wrong or has failed. To use a danger label, set the `style` attribute to `danger`:
+Danger labels are red and indicate that something is wrong or has failed. To use a danger label, set the `displayType` attribute to `danger`:
 
 ```jsp
-<clay:label label="Rejected" style="danger" />
+<clay:label displayType="danger" label="Rejected" />
 ```
 
 ![Danger labels convey a sense of urgency that must be addressed.](./clay-links-and-labels/images/04.png)
 
-Success labels are green and indicate that something has completed successfully. To use a success label, set the `style` attribute to `success`:
+Success labels are green and indicate that something has completed successfully. To use a success label, set the `displayType` attribute to `success`:
 
 ```jsp
-<clay:label label="Approved" style="success" />
+<clay:label displayType="success" label="Approved" />
 ```
 
 ![Success labels indicate a successful action.](./clay-links-and-labels/images/05.png)
@@ -53,7 +53,7 @@ Success labels are green and indicate that something has completed successfully.
 Labels can also be bigger. Set the `size` attribute to `lg` to display large labels:
 
 ```jsp
-<clay:label label="Approved" size="lg" style="success" />
+<clay:label displayType="success" label="Approved" size="lg" />
 ```
 
 ### Removable Labels

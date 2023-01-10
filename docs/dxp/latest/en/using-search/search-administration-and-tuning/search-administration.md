@@ -38,9 +38,9 @@ Beginning in Liferay 7.4, Server Administrators can also limit the scope of the 
 [Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) are re-indexed via the application's dedicated settings menu. In the Global Menu, click _Metrics_ in the Applications &rarr; Workflow section, then open the Settings window (![Options](../../images/icon-actions.png)). See [Re-Indexing Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) for more information.
 ```
 
-### Re-Indexing All Assets
+### Re-Indexing All Content
 
-When you re-index all assets, the system and company indexes are dropped and recreated from the database. Elasticsearch's log prints `update_mapping` messages:
+When you perform a full re-index, all search engine documents in the [system and company indexes](./elasticsearch-indexes-reference.md) are dropped and recreated from the database. Elasticsearch's log prints `update_mapping` messages:
 
 ```json
 {"type": "server", "timestamp": "2023-01-10T14:33:04,513Z", "level": "INFO", "component": "o.e.c.m.MetadataMappingService", "cluster.name": "LiferayElasticsearchCluster", "node.name": "lr-es", "message": "[liferay-20097/mc59Scl8TJeuvcDR3y2W-g] update_mapping [LiferayDocumentType]", "cluster.uuid": "QnWxrpxaSUKF2upHDNWKkQ", "node.id": "thpwCzS_TvGgfVxQ-P_l9g"
@@ -55,9 +55,16 @@ In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, Liferay's log displays when 
 2023-01-09 20:45:00.986 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:76] Finished reindexing company 20097
 ```
 
-### Re-Indexing Individual Asset Types
+On earlier updates (Liferay 7.4 U44/GA44 and below; DXP 7.3 U13 and below) and Liferay Portal 7.3, enable these [logging configurations](../../system-administration/using-the-server-administration-panel/configuring-logging.md) to see similar information:
 
-When you re-index an individual asset, the index documents representing the asset's entities are dropped and recreated from the database. Elasticsearch's log prints an `update_mapping` message:
+| Logger Category | Level |
+| :-------------- | :---- |
+| com.liferay.portal.search.internal.background.task.ReindexStatusMessageSenderImpl | DEBUG |
+| com.liferay.portal.search.internal.SearchEngineInitializer | INFO |
+
+### Re-Indexing Individual Types
+
+When you re-index an individual type (e.g., `com.liferay.account.model.AccountEntry`), the index documents representing the entities are dropped and recreated from the database. Elasticsearch's log prints an `update_mapping` message:
 
 ```json
 {"type": "server", "timestamp": "2023-01-10T14:38:12,302Z", "level": "INFO", "component": "o.e.c.m.MetadataMappingService", "cluster.name": "LiferayElasticsearchCluster", "node.name": "lr-es", "message": "[liferay-20097/mc59Scl8TJeuvcDR3y2W-g] update_mapping [LiferayDocumentType]", "cluster.uuid": "QnWxrpxaSUKF2upHDNWKkQ", "node.id": "thpwCzS_TvGgfVxQ-P_l9g"
@@ -72,7 +79,7 @@ In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, Liferay's log displays when 
 
 ### Re-Indexing Spell Check Dictionaries
 
-When you re-index the spell check dictionaries, the content of Liferay's dictionary file for each language (e.g., `com/liferay/portal/search/dependencies/spellchecker/en_US.txt`) is re-indexed for the system and company index. Elasticsearch's log prints an `update_mapping` message:
+When you re-index the spell check dictionaries, the content of Liferay's dictionary file for each language (e.g., `com/liferay/portal/search/dependencies/spellchecker/en_US.txt`) is re-indexed for the [system and company index](./elasticsearch-indexes-reference.md). Elasticsearch's log prints an `update_mapping` message:
 
 ```json
 {"type": "server", "timestamp": "2023-01-10T14:33:14,991Z", "level": "INFO", "component": "o.e.c.m.MetadataMappingService", "cluster.name": "LiferayElasticsearchCluster", "node.name": "lr-es", "message": "[liferay-0/9ZIx-bT6TyiekzarKELQkA] update_mapping [LiferayDocumentType]", "cluster.uuid": "QnWxrpxaSUKF2upHDNWKkQ", "node.id": "thpwCzS_TvGgfVxQ-P_l9g"  }

@@ -33,7 +33,7 @@ Stickers can be positioned in any corner of a div. Indicate their position with 
 
 	<img class="aspect-ratio-item-fluid" src="/images/thumbnail_hot_air_ballon.jpg" />
 
-	<clay:sticker label="PDF" position="top-left" style="danger" />
+	<clay:sticker displayType="danger" label="PDF" position="top-left" />
 </div>
 ```
 

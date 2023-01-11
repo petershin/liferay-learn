@@ -49,7 +49,7 @@ The default Liferay DXP 7.3 indexes in your installation approximate the list be
 
 If you have a [Liferay Commerce](https://www.liferay.com/products/commerce) subscription and it is activated in your installation, you also have these indexes:
 
-| Index ID                                                     | Index Type | Index Purpose |
+| Index Name                                                   | Index Type | Index Purpose |
 | :--- | :--- | :--- |
 | liferay-20101-commerce-ml-forecast                           | App Index  | Store data about Liferay Commerce's machine learning capabilities. |
 | liferay-20101-product-content-commerce-ml-recommendation     | App Index  | Store data about Liferay Commerce's recommendation services. |

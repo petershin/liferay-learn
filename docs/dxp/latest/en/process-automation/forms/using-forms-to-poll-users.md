@@ -26,6 +26,11 @@ Enabling Limit to One Submission per User also requires that Users are authentic
 
 ![The User can no longer submit the form but can see the form report on currently submitted data.](./using-forms-to-poll-users/images/03.png)
 
+
+When you limit users to one submission, you can also set the warning message's header and body content. Otherwise, the default message appears when the user views the form after submitting:
+
+![Configure the warning message when limiting submissions to one per user.](./using-forms-to-poll-users/images/05.png)
+
 ### Add an Expiration Date
 
 By default, forms never expire. If you disable the Never Expire setting, you can then set the date when the form expires. After this date, no submissions are allowed. Form users see an expiration notification when accessing the form.

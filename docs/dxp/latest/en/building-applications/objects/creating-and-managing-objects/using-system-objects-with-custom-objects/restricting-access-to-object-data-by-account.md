@@ -6,13 +6,17 @@ In scenarios with multiple business [accounts](../../../../users-and-permissions
 
 ![Restrict access to custom object entries by account.](./restricting-access-to-object-data-by-account/images/01.png)
 
-Follow these steps to restrict access to entries by account:
+```{important}
+You can only configure account restriction for draft objects. After [publishing](../creating-objects.md#publishing-object-drafts), you cannot change these settings.
+```
+
+Follow these steps to set up account restriction:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
 1. Begin editing the Account system object.
 
-1. Add a *One to Many* or *Many to Many* relationship, relating the Account object to the desired custom object. See [Defining Object Relationships](../relationships/defining-object-relationships.md) for more information.
+1. Add a *One to Many* relationship that relates the Account object to the desired draft object. See [Defining Object Relationships](../relationships/defining-object-relationships.md) for more information.
 
    ![Relate the Account system object to the desired custom object.](./restricting-access-to-object-data-by-account/images/02.png)
 
@@ -24,17 +28,17 @@ Follow these steps to restrict access to entries by account:
 
 1. Click *Save*.
 
-This adds a new mandatory account selection field to the object, so anyone adding an entry must select an account. Available accounts are determined by each user's permissions. After entry creation, the selected account becomes the entry's owner and cannot be changed.
+This make the account relationship field mandatory, so users must select an account when creating entries. Available account options are determined by each user's [permissions](#account-restriction-and-user-roles). After entry creation, the selected account becomes the entry's owner and cannot be changed.
 
 ## Account Restriction and User Roles
 
-After restricting object data by account, entries appear according to the user's permissions. Users with regular roles can access all object data, while users with organization and account roles can only access data for their respective accounts.
+After restricting object data by account, entries appear according to the user's permissions. Permissions at the regular role scope apply to all object data, while permissions at the organization or account scope apply to specific accounts. For example, if a user has a regular role with the view permission, then the user can view all data from all accounts. However, if a user only has an account role with the view permission, then the user can only view object data associated with their account.
 
-| Role Type | Access |
+| Permission Scope | Description |
 | :--- | :--- |
-| Regular Roles | Access all object data. Access is not restricted by the user's account or organization roles. |
-| Organization Roles | Access object data for accounts that belong to the organization and sub-organizations. Access is restricted by an organization's accounts. |
-| Account Roles | Access object data for an account. Access is limited by account. |
+| Regular Role | Apply to all object data without being restricted by account or organization role permissions. |
+| Organization Role | Apply to object data for specific accounts associated with an organization and its sub-organizations. |
+| Account Role | Apply to object data for a specific account. |
 
 When setting up roles for account restriction, consider these factors:
 
@@ -45,20 +49,24 @@ When setting up roles for account restriction, consider these factors:
 * To use organization and account roles to access a custom object, users must have a separate regular role that grants access to the application in either the Global Menu (if company-scoped) or Site Menu (if site-scoped). See [Object Application Permissions](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) for more information.
 
 ```{important}
-Account and organization roles are only supported in objects with account restriction enabled. However, account restriction does not support the Account Member and Organization User roles. These roles do not automatically grant access to related object data.
+Account and organization roles are only supported in objects with account restriction enabled.
+
+Account restriction does not support the default Account Member and Organization User roles. These roles do not automatically grant access to related object data.
 ```
 
 ## Example Use Case: Insurance Claims
 
 Consider an insurance scenario where you need a way for business account users to open claims without seeing claims made by other accounts. Customer success managers must be able to review claims made by the accounts they service, whether based on region, industry, or policy type. Finally, your claims manager must be able to oversee all claims.
 
-To achieve this, you can create a Claims custom object with account restriction enabled. Then create organizations for grouping your CSMs and associate each organization with the appropriate business accounts. Finally, you can create the following [account](#account-role), [organization](#organization-role), and [regular](#regular-role) roles and assign them to the appropriate users. Since the Claims object is company-scoped, account and organization users must also have a separate regular role that grants the `Portal: View Control Panel Menu` and `Claims: Access in Control Panel` permissions.
+To achieve this, you can create a Claims custom object with account restriction enabled. Then create organizations for grouping your CSMs and associate each organization with the appropriate business accounts. Finally, you can create the following [account](#account-role), [organization](#organization-role), and [regular](#regular-role) roles and assign them to the appropriate users. Since the Claims object is company-scoped, account and organization users must also have a separate regular role that grants the `Portal: View Control Panel Menu` and `Claims: Access in Control Panel` permissions. For convenience, you can assign these permissions to the default User role.
 
 ```{note}
 In this scenario, each role can create claim entries, but granting that permission is not necessary for the organization and regular roles.
 ```
 
 ### Account Role
+
+This role grants account users full permission to create and manage object data for an account.
 
 | Permission | Description |
 | :--- | :--- |
@@ -69,7 +77,13 @@ In this scenario, each role can create claim entries, but granting that permissi
 | Claims > Claim: View | View object entries. |
 | Claims > Claims: Add Object Entry | Create an object entry. |
 
+```{tip}
+Users can have different account roles in different accounts.
+```
+
 ### Organization Role
+
+This role grants organization users full permission to create and manage object data for all accounts associated with the organization and its sub-organizations.
 
 | Permission | Description |
 | :--- | :--- |
@@ -83,6 +97,8 @@ In this scenario, each role can create claim entries, but granting that permissi
 | User and Organizations > Organization: Manage Suborganizations Accounts | View accounts associated with suborganizations. |
 
 ### Regular Role
+
+This role grants users full permission to create and manage object data for all accounts.
 
 | Permission | Description |
 | :--- | :--- |

@@ -94,7 +94,7 @@ Follow these steps to edit the object draft:
 
    **Site**: When scoped by Site, the object's data is stored per Site.
 
-1. (Optional) Select a Panel Category Key to determine where the definition appears in the Liferay UI.
+1. Select a Panel Category Key to determine where the definition appears in the Liferay UI.
 
    For company-scoped objects, select tab and category in the Global Menu (![Global Menu](../../../images/icon-applications-menu.png)).
 
@@ -104,7 +104,7 @@ Follow these steps to edit the object draft:
 
    ![Select a scope and panel category key for the object.](./creating-objects/images/13.png)
 
-1. (Optional) Determine whether to limit restrict access to object entries by account. This option is only available if the object has a relationship with the Account system object. See [Restricting Access to Object Data by Account](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) for more information.
+1. (Optional) Determine whether to restrict access to object entries by account. This option is only available if the object is on the child side of a one-to-many relationship with the Account system object. Also, you can only configure this setting before publishing your object. See [Restricting Access to Object Data by Account](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) for more information.
 
    ![Determine whether to limit restrict access to object entries by account.](./creating-objects/images/14.png)
 

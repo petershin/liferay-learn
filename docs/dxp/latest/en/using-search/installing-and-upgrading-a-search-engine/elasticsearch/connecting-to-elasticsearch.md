@@ -171,7 +171,7 @@ On Liferay 7.3+, Re-index the [Workflow Metrics](../../../process-automation/wor
 1. Click _Reindex All_. Repeat this operation for each Virtual Instance in your system.
 
 ```{note}
-If you have Elasticsearch indexes used for primary data storage (storing data not backed by a database) you can bring that data into your new Elasticsearch cluster using the [snapshot and restore approach](./upgrading-elasticsearch/backing-up-elasticsearch.md). Liferay's own Search Tuning indexes (for Result Rankings and Synyonyms) are primary storage indexes.
+If you have Elasticsearch indexes used for primary data storage (storing data not backed by a database) you can bring that data into your new Elasticsearch cluster using the [snapshot and restore approach](./upgrading-elasticsearch/backing-up-elasticsearch.md). In Liferay 7.2 and 7.3, Liferay's own Search Tuning indexes (for Result Rankings and Synyonyms) were primary storage indexes. In 7.4 these indexes are backed by database tables.
 ```
 
 In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, enhanced logging is enabled so you can know when the re-index starts and finishes for system and company indexes. For example,

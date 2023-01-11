@@ -39,8 +39,8 @@ The default Liferay DXP 7.3 indexes in your installation approximate the list be
 | :--- | :--- | :--- |
 | liferay-0                                             | System Index  | Searching in the System Settings application |
 | liferay-20101                                         | Company Index | Searching the indexed assets of the Liferay DXP Virtual Instance |
-| liferay-20101-search-tuning-rankings                  | App Index     | Primary data storage for the Result Rankings application |
-| liferay-20101-search-tuning-synonyms                  | App Index     | Primary data storage for the Synonym Sets application for the given virtual instance |
+| liferay-20101-search-tuning-rankings                  | App Index     | Storage for the Result Rankings application |
+| liferay-20101-search-tuning-synonyms                  | App Index     | Storage for the Synonym Sets application for the given virtual instance |
 | liferay-20101-workflow-metrics-instances              | App Index     | Store data about Workflow Instances for the Workflow Metrics application |
 | liferay-20101-workflow-metrics-nodes                  | App Index     | Store data about Workflow Nodes for the Workflow Metrics application |
 | liferay-20101-workflow-metrics-processes              | App Index     | Store data about Workflow Processes for the Workflow Metrics application |

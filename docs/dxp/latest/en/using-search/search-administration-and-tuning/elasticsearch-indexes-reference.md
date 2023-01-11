@@ -10,7 +10,7 @@ Liferay 7.2 index names are more complex, as patches have introduced changes to 
 
 The default Liferay DXP 7.4 indexes in your installation approximate the list below (subject to change). The default global *Index Name Prefix* is `liferay-`: it can be changed in the Elasticsearch 7 connector configuration. `20097` is the generated `companyId` of a given Company in your database. It is displayed as Instance ID in the UI and represents a [Virtual Instance](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md).
 
-| Index ID                                                  | Index Type    | Index Purpose |
+| Index Name                                                | Index Type    | Index Purpose |
 | :--- | :--- | :--- |
 | liferay-0                                                 | System Index  | Search in the System Settings application. |
 | liferay-20097                                             | Company Index | Search the indexed content of the Liferay DXP Virtual Instance. |
@@ -33,7 +33,7 @@ The default Liferay DXP 7.4 indexes in your installation approximate the list be
 
 The default Liferay DXP 7.3 indexes in your installation approximate the list below (subject to change). The default global *Index Name Prefix* is `liferay-`: it can be changed in the Elasticsearch 7 connector configuration. `20101` is the generated `companyId` of a given Company in your database. It is displayed as Instance ID in the UI and represents a [Virtual Instance](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md).
 
-| Index ID                                            | Index Type    | Index Purpose |
+| Index Name                                          | Index Type    | Index Purpose |
 | :--- | :--- | :--- |
 | liferay-0                                           | System Index  | Store data for searching in the System Settings application. |
 | liferay-20101                                       | Company Index | Store data for searching the indexed content of the Liferay DXP Virtual Instance. |

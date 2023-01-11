@@ -103,6 +103,27 @@ To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-
 
 ## Downloading the Solr Connector
 
+1. Go to Control Panel &rarr; Marketplace &rarr; Store. Sign in.
+1. Grant access to the app.
+1. Search for Solr 8 and click on the app corresponding to your Liferay installation:
+
+   | Liferay Flavor | Solr Connector Name |
+   | :------------- | :------------------ |
+   | Liferay Portal/Community Edition | Liferay CE Connector to Solr 8 |
+   | Liferay DXP | Liferay Connector to Solr 8 |
+
+1. Click the _Free_ button in the app's landing page.
+1. Choose a project if it exists, or add one.
+1. Agree to the conditions and click _Purchase_.
+1. Navigate to your Liferay account login page and sign in: <https://web.liferay.com/c/portal/login?p_l_id=73285537>.
+1. Click the hamburger menu at the top right of the page, then click _Account Home_.
+1. Click _Apps_, then click the project where you purchased the app.
+1. Find the app (e.g., Liferay Connector to Solr 8) and click on it.
+1. Click _Past Versions_ and choose the [right connector for your Liferay version](https://help.liferay.com/hc/en-us/articles/360016511651).
+1. Click _App_ to download the app's LPKG file.
+
+<!-- direct link to the versions page of the Liferay Connector to Solr 8 app--someone could just change the user name, log in, and skip a few steps? https://web.liferay.com/web/russell.bohl/apps/-/marketplace_apps/182518167/versions -->
+
 <!-- TODO: Document how Solr users get a hold of the right LPKG. This is in flux but we really can't publish without it.-->
 To download the Liferay Connector to Solr [7 or 8], navigate to [Liferay Marketplace](https://web.liferay.com/marketplace/) and download the app version that corresponds to your Liferay version.
 

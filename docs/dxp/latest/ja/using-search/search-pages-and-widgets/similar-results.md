@@ -2,7 +2,7 @@
 
 {bdg-primary}`サブスクリプション`
 
-{bdg-link-secondary}`DXP 7.3 および 7.4 にバンドル、DXP 7.2 SP2 /FP5 用 LiferayLiferay マーケットプレイス<https://web.liferay.com/marketplace/-/mp/application/172465398>`。
+{bdg-link-secondary}`[DXP 7.3 および 7.4 にバンドル、DXP 7.2 SP2 /FP5 用 LiferayLiferay マーケットプレイス](https://web.liferay.com/marketplace/-/mp/application/172465398)`。
 
 類似結果ウィジェットには、ページで選択された **メインアセット** に類似した検索結果が表示されます。
 

@@ -1,6 +1,6 @@
 # Monitoring Elasticsearch
 
-{bdg-link-primary}`LES Subscription <./activating-liferay-enterprise-search.md>`
+{bdg-link-primary}`[LES Subscription](./activating-liferay-enterprise-search.md)`
 
 If you have a Liferay Enterprise Search (LES) [subscription](https://www.liferay.com/products/dxp/enterprise-search), you can integrate Elastic's [Kibana monitoring UI](https://www.elastic.co/guide/en/kibana/7.x/introduction.html) with Liferay DXP, so your monitoring activities can be done within Liferay itself.
 

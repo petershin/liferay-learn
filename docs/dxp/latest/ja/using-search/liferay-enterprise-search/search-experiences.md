@@ -10,7 +10,7 @@ toc:
 ---
 # Search Experiences
 
-{bdg-link-secondary}`利用可能な Liferay DXP 7.4 Update 5+; 7.3 Update 6+ <#getting-liferay-search-experiences>`
+{bdg-link-secondary}`[利用可能な Liferay DXP 7.4 Update 5+; 7.3 Update 6+](#getting-liferay-search-experiences)`
 
 ```{toctree}
 :maxdepth: 1

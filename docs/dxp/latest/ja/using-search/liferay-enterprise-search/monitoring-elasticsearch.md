@@ -1,6 +1,6 @@
 # Elasticsearchのモニタリング
 
-{bdg-link-primary}`LES サブスクリプション <./activating-liferay-enterprise-search.md>`
+{bdg-link-primary}`[LES サブスクリプション](./activating-liferay-enterprise-search.md)`
 
 Liferay Enterprise Search（LES）の [サブスクリプション](https://www.liferay.com/products/dxp/enterprise-search) をお持ちの場合は、Elasticの [KibanaモニタリングUI](https://www.elastic.co/guide/en/kibana/7.x/introduction.html) をLiferay DXPと統合できるため、Liferay自体の中でモニタリングアクティビティを実行できます。
 

@@ -2,7 +2,7 @@
 
 {bdg-primary}`Subscription`
 
-{bdg-link-secondary}`Bundled with DXP 7.3 and 7.4; Liferay Marketplace for DXP 7.2 SP2+/FP5+ <https://web.liferay.com/marketplace/-/mp/application/172465398>`
+{bdg-link-secondary}`[Bundled with DXP 7.3 and 7.4; Liferay Marketplace for DXP 7.2 SP2+/FP5+](https://web.liferay.com/marketplace/-/mp/application/172465398)`
 
 ```{note}
 This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).

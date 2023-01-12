@@ -184,7 +184,7 @@ The Query String query should not be used if the value being passed is coming fr
 
 ## Boosting Matches to Nested Fields
 
-> Availability: 7.2 FP10+, 7.3 FP1/SP1+
+{bdg-secondary}`Available 7.2 FP10+, 7.3 FP1+, 7.4 (all updates)`
 
 As described in [Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-ddm-fields), DDM Fields became [nested fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) as of Liferay 7.2 SP3+/FP8+ (and on all Liferay 7.3 versions). On the latest Fix Pack and GA release of 7.2 and 7.3, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for these nested fields.
 
@@ -200,7 +200,7 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
             - **Type:** `Boolean`
             - **Field Label:** `Boost?`
         - Field 2:
-            - **Type:** `Text Box`
+            - **Type:** `Text`
             - **Field Label:** `Content`
     - Save the Structure.
 
@@ -222,7 +222,7 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
 
     **Checkpoint:** Because of the exact match to the content field, the Not Boosted Web Content appears before the Boosted Web Content.
 
-1. In the Kibana Dev Tools console, or from the CLI via cURL, execute a GET request to find DDM fields with `Boost` in the field name:
+1. In the Kibana Dev Tools console, or from the CLI via cURL, execute a GET request to find nested DDM fields with `ddm__*` in the field name:
 
     ```json
     GET liferay-20097/_search
@@ -231,7 +231,7 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
         "nested": {
           "path": "ddmFieldArray",
           "query": {
-            "wildcard":  { "ddmFieldArray.ddmFieldName": "ddm__*Boost*" }
+            "wildcard":  { "ddmFieldArray.ddmFieldName": "ddm__*" }
           }
         }
       }
@@ -240,17 +240,19 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
 
     Replace the `20097` with the `companyId` of your [Virtual Instance](../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md).
 
-1. In the Elasticsearch response, find and copy the `ddmFieldArray` with its nested Boost field:
+1. In the Elasticsearch response, find and copy the `ddmFieldArray` with the boolean field. Look for _Boolean_ or _Checkbox_ in the field name. For example,
+<!-- Edited, because there's no ddmfieldName with Boost in it as we had documented, but there is a Checkbox -->
 
-    ```json
-    "ddmFieldArray" : [
-                {
-                  "ddmFieldName" : "ddm__keyword__39707__Boost_en_US",
-                  "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-                  "ddmFieldValueKeyword_en_US" : "true",
-                  "ddmFieldValueKeyword_en_US_String_sortable" : "true"
-                }
-    ```
+   ```json
+   "ddmFieldArray" : [
+               {
+                 "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
+                 "ddmFieldValueKeyword_en_US" : "true",
+                 "ddmFieldValueKeyword_en_US_String_sortable" : "true",
+                 "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
+               }
+             ],
+   ```
 
 1. Go to the search page and add three Custom Filters using the Elasticsearch response data:
 
@@ -264,14 +266,20 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
         - **Filter Field:** `ddmFieldArray.ddmFieldName`
         - **Filter Query Type:** `Match`
         - **Occur:** `should`
-        - **Value:** `ddm__keyword__39707__Boost_en_US`
+        - **Value:** `ddm__keyword__44012__Checkbox08350381_en_US`
         - **Parent Query Name:** `parent_query`
+        - **Custom Parameter Name:** `cparam`
     - Filter 3, the child match query for the value of `true` in the Boost field:
         - **Filter Field:** `ddmFieldArray.ddmFieldValueKeyword_en_US`
         - **Filter Value:** `true`
         - **Filter Query Type:** `Match`
         - **Occur:** `should`
         - **Parent Query Name:** `parent_query`
+        - **Custom Parameter Name:** `cparam`
+
+      ```{important}
+      This example only uses custom filters to match and boost one nested field. Therefore the custom parameter isn't needed. To set up custom filters on multiple nested fields in the same page, you must configure separate custom parameter names for each child query. Otherwise, filtering on the same nested field (e.g., `ddmFieldArray.ddmFieldValueKeyword_en_US`) causes the filters to collide.
+      ```
 
 1. Now repeat the search for _test content_ and verify that the Boosted Web Content appears above the Not Boosted Web Content.
 

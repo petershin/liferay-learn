@@ -83,7 +83,7 @@ To find the fields you can filter by in the Custom Filter widget, Users with the
 
 ## Finding and Using Nested Fields
 
-> Availability: 7.2 FP10+, 7.3 FP1/SP1+
+{bdg-secondary}`Available 7.2 FP10+, 7.3 FP1+, 7.4 (all updates)`
 
 As described in [Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-ddm-fields), DDM Fields became [nested fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) as of Liferay 7.2 SP3+/FP8+ (and on all Liferay 7.3 versions). On the latest Fix Pack and GA release of 7.2 and 7.3, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for these nested fields.
 
@@ -131,6 +131,10 @@ The document returned has a `ddmFieldArray` object with nested content:
 ```
 
 Using one of these fields in a Custom Filter configuration requires three custom filter widgets.  A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is added for wrapping the required child queries: one child query matches the field's name, the other the value.
+
+```{important}
+If you require custom filters on multiple nested fields in the same page, you must configure separate custom parameter names for each child query. See [Custom Filter Examples](./custom-filter-examples.md#boosting-matches-to-nested-fields) for an example. 
+```
 
 See [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) for an example showing the use of a DDM Structure field with the Custom Filter widget.
 

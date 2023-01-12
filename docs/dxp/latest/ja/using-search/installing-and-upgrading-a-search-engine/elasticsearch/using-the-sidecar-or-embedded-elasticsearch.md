@@ -33,21 +33,23 @@ Elasticsearchサーバーには、次のURLからアクセスできます。
 
 ```{note}
 本番環境でサポートされている構成ではありませんが、KibanaをインストールしてバンドルされているElasticsearchサーバーを監視することは、開発やテストの際に役立ちます。 
-- Liferay 7.3では、 [KibanaがビルトしたOSSのみ](https://www.elastic.co/downloads/kibana-oss) をインストールします。
+- Liferay 7.3では、[KibanaがビルトしたOSSのみ](https://www.elastic.co/downloads/kibana-oss)をインストールします。
 - Liferay DXP 7.4 U17以降とLiferay Portal 7.4 GA17以降では、無料版の [Kibana](https://www.elastic.co/downloads/past-releases#kibana) をインストールしてください。
+
+設定にエラーが発生した場合のトラブルシューティングの項目](#error-connecting-to-the-sidecar-elasticsearch-from-kibana)をご覧ください。
 ```
 
 HSQLのような組み込みデータベースを本番環境で実行したり、バンドルされたElasticsearchサーバーを本番環境で実行したりしないでください。 代わりに、Elasticsearchをスタンドアロンサーバーまたはサーバーノードのクラスターとしてリモートモードで実行します。
 
 ```{important}
-検索の調整アプリの [同義語セット](using-search/search-administration-and-tuning/synonym-sets.md) と [結果ランキング](using-search/search-administration-and-tuning/result-rankings.md) は、Liferay 7.2 と 7.3 で主要データストレージとして検索インデックスを使用しました。 これらのアプリのデータは、Liferayのデータベースには保存されていません。 そのため、Liferay 7.2や7.3でサイドカーやEmbedded モードのElasticsearchを使用中に同義語セットや結果ランキングを設定した場合、リモートElasticsearchサーバーに切り替えて再インデックス化しても、それらの設定は復元 _されません_ 。 その代わり、同義語セットと結果ランキングをリモートのElasticsearchクラスタに手動で取り込む必要があります。 Elasticの [スナップショットと復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) 機能を使ってこれらのインデックスを保持する方法については、[アップグレードガイド](../elasticsearch/upgrading-elasticsearch.md)で詳細を確認してください。
+検索の調整アプリの [同義語セット](using-search/search-administration-and-tuning/synonym-sets.md) と [結果ランキング](using-search/search-administration-and-tuning/result-rankings.md) は、Liferay 7.2 と 7.3 で主要データストレージとして検索インデックスを使用しました。 これらのアプリのデータは、Liferayのデータベースには保存されていません。 そのため、Liferay 7.2や7.3でサイドカーやEmbedded モードのElasticsearchを使用中に同義語セットや結果ランキングを設定した場合、リモートElasticsearchサーバーに切り替えて再インデックス化しても、それらの設定は復元 _されません_ 。 その代わり、同義語セットと結果ランキングをリモートのElasticsearchクラスタに手動で取り込む必要があります。 Elasticの[スナップショットと復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html)機能を使ってこれらのインデックスを保持する方法については、[アップグレードガイド](../elasticsearch/upgrading-elasticsearch.md)で詳細を確認してください。
 ```
 
 ## バンドルされているElasticsearchサーバーのユースケース
 
 デフォルトのElasticsearchサーバー（サイドカーおよびEmbedded）の一般的な使用法は次のとおりです。
 
-* カスタムの [検索機能とインデックスコード](../../developer-guide.html) のテスト
+* カスタムの[検索機能とインデックスコード](../../developer-guide.html)のテスト
 * Kibanaを介してElasticsearchで直接クエリを実行して検索クエリを開発する
 * [検索の調整](../../search-administration-and-tuning.md)機能のテスト
 * [検索ウィジェット](../../search-pages-and-widgets.md)の調査と設定
@@ -69,7 +71,7 @@ Liferay 7.4 (DXP、Portal)、Liferay DXP 7.3、Liferay Portal 7.3 GA4+ では、
 | Wildfly：7.3以降            | サイドカー               | &#10008; | &#10008; (自動ダウンロードされました) |
 | WebSphere：7.3以降          | サイドカー               | &#10008; | &#10004;                 |
 | Weblogic：7.3以降           | サイドカー               | &#10008; | &#10004;                 |
-| **すべてのフレーバー：7.2/7.3 GA3-** | **埋め込み** | &#10004; | &#10008;                 |
+| _すべてのフレーバー：7.2/7.3 GA3-_ | _埋め込み_              | &#10004; | &#10008;                 |
 
 Tomcat以外のアプリケーションサーバーのバンドルをダウンロードした場合、サーバーを起動すると、Elasticsearchディストリビューションがオンザフライでダウンロードされ、サイドカーサーバーとして起動されます。
 
@@ -90,4 +92,63 @@ ElasticsearchサーバーのEmbeddedモードとサイドカーモードの比�
 | <http://localhost:9200>で実行します         | <http://localhost:9201>で実行します                                                                                                  |
 | すべてのLiferayディストリビューションに事前インストールされています | 常に事前インストールされているわけではありません                                                                                                       |
 | 本番環境ではサポートされていません                     | 本番環境ではサポートされていません                                                                                                              |
-| アプリサーバーに特別な手順は必要ありません                 | [一部のアプリサーバー](#app-server-differences) では追加の手順が必要です                                                                              |
+| アプリサーバーに特別な手順は必要ありません                 | [一部のアプリサーバー](#app-server-differences)では追加の手順が必要です                                                                              |
+
+## Sidecar/Embedded Elasticsearchのトラブルシューティング
+./elasticsearchBe Started
+
+これらのエラーは、起動時のElasticsearch Sidecarのインストールに問題があることを示しています。
+
+```
+2022-03-02 17:32:22.952 ERROR [main][ElasticsearchConnectionManager:81] Elasticsearch sidecar could not be started. Search will be unavailable. Manual installation of Elasticsearch and activation of remote mode is recommended.
+```
+
+```
+2022-03-04 10:41:13.249 ERROR [com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarMainProcessCallable@3da0921a[-Xms1g -Xmx1g -XX:+AlwaysPreTouch -Des.path.conf=/home/tibusz/liferay/bundles/master/tomcat-9.0.56/temp/sidecar5219314832153809763/config -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dio.netty.allocator.type=unpooled -Dio.netty.allocator.numDirectArenas=0 -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/home/tibusz/liferay/bundles/master/tomcat-9.0.56/temp/sidecar5219314832153809763 -Djava.security.policy=jar:file:/home/tibusz/liferay/bundles/master/osgi/state/org.eclipse.osgi/257/0/bundleFile!/META-INF/sidecar.policy -Djna.nosys=true]-][Sidecar:198] Abort subprocess piping
+java.io.InvalidClassException: org.elasticsearch.ElasticsearchException; local class incompatible: stream classdesc serialVersionUID = 4568865521165719982, local class serialVersionUID = -7656133510021522625
+    at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:689) ~[?:?]
+```
+
+```
+2022-03-04 10:41:30.191 ERROR [main][SidecarManager:93] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.34 (257)[com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager(973)] : The activate method has thrown an exception 
+java.util.concurrent.CancellationException: null
+    at java.util.concurrent.FutureTask.report(FutureTask.java:121) ~[?:?]
+    at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+    at com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar._waitForPublishedAddress(Sidecar.java:591) ~[?:?]
+```
+
+```
+2022-03-04 10:41:30.162 WARN  [com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarMainProcessCallable@3da0921a[-Xms1g -Xmx1g -XX:+AlwaysPreTouch -Des.path.conf=/home/tibusz/liferay/bundles/master/tomcat-9.0.56/temp/sidecar5219314832153809763/config -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dio.netty.allocator.type=unpooled -Dio.netty.allocator.numDirectArenas=0 -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/home/tibusz/liferay/bundles/master/tomcat-9.0.56/temp/sidecar5219314832153809763 -Djava.security.policy=jar:file:/home/tibusz/liferay/bundles/master/osgi/state/org.eclipse.osgi/257/0/bundleFile!/META-INF/sidecar.policy -Djna.nosys=true]-][Sidecar:632] Sidecar Elasticsearch process is aborted
+java.util.concurrent.ExecutionException: com.liferay.petra.process.TerminationProcessException: Subprocess terminated with exit code 130
+    at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+    at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+    at com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar$RestartFutureListener.complete(Sidecar.java:628) [bundleFile:?]
+    at com.liferay.petra.concurrent.DefaultNoticeableFuture$OnceFutureListener.complete(DefaultNoticeableFuture.java:111) [com.liferay.petra.concurrent.jar:?]
+    at com.liferay.petra.concurrent.DefaultNoticeableFuture.done(DefaultNoticeableFuture.java:85) [com.liferay.petra.concurrent.jar:?]
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:381) [?:?]
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:250) [?:?]
+    at com.liferay.petra.concurrent.DefaultNoticeableFuture.setException(DefaultNoticeableFuture.java:79) [com.liferay.petra.concurrent.jar:?]
+    at java.util.concurrent.FutureTask.run(FutureTask.java:269) [?:?]
+    at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: com.liferay.petra.process.TerminationProcessException: Subprocess terminated with exit code 130
+    at com.liferay.petra.process.local.LocalProcessExecutor$SubprocessReactor.call(LocalProcessExecutor.java:309) ~[com.liferay.petra.process.jar:?]
+    at com.liferay.petra.process.local.LocalProcessExecutor$SubprocessReactor.call(LocalProcessExecutor.java:161) ~[com.liferay.petra.process.jar:?]
+    at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+```
+
+```
+Caused by: org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgumentException: Could not load codec 'Lucene87'.  Did you forget to add lucene-backward-codecs.jar?
+```
+
+このようなエラーを解決するには
+
+1. Liferayを停止します。
+
+1. `[Liferay Home]/elasticsearch-sidecar/` または `[Liferay Home]/elasticsearch7`を削除してください。 Sidecar Elasticsearch ランタイムを格納するフォルダです。
+
+1. Delete `[Liferay Home]/data/elasticsearch7`. インデックスデータを格納するフォルダーです。
+
+1. Liferayを再起動します。
+
+1. Portalは、起動時にElasticsearchランタイムをダウンロードし抽出します [選択したApp Servers](./using-the-sidecar-or-embedded-elasticsearch.md#embedded-versus-sidecar) (例: Tomcat)上で行います。
+

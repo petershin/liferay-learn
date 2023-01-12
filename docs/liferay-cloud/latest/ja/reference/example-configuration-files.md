@@ -4,7 +4,7 @@ Liferay Cloud の異なるサービス（ [search](../platform-services/search-s
 
 ## ウェブサーバサービスの設定 (nginx.conf)
 
-ウェブサーバーサービスは、 [Nginx](link) サーバーを使用して、ウェブのトラフィックを管理します。 以下は、 `nginx.conf` ファイルの例です。
+ウェブサーバーサービスは、 [Nginx](https://docs.nginx.com/) サーバーを使用して、ウェブのトラフィックを管理します。 以下は、 `nginx.conf` ファイルの例です。
 
 ```{literalinclude} ./example-configuration-files/resources/nginx.conf
 :lines: 1-81

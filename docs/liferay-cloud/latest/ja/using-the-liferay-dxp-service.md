@@ -16,7 +16,7 @@ Liferayのサービスは、あらゆるプロジェクトの心臓部です。 
 
 Liferay CloudのLiferayサービスは、オンプレミスのLiferay DXPのインスタンスと多くの点で同じように使用することができます。 しかし、Liferay Cloudのインスタンスで作業する場合、設定や開発ワークフローにいくつかの違いがあります。
 
-詳しくは、 [Liferay service limitations](../reference/platform-limitations.md#liferay-service) を参照してください。
+詳しくは、 [Liferay service limitations](./reference/platform-limitations.md#liferay-service) を参照してください。
 
 * [バージョンの選択](#choosing-a-version)
 * [デプロイメント（カスタマイズ、パッチ適用、ライセンス）](#deployment-customization-patching-and-licensing)
@@ -40,10 +40,10 @@ liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-sp2-202005120922
 ```
 
 ```{note}
-もしあなたの Liferay Cloud スタックがまだ 4.x.x にアップデートされていない場合、デフォルトではこのバージョンはリポジトリのルートにある `gradle.properties` ファイルに格納されます。 この場合、`liferay.workspace.lcp.liferay.image`プロパティでバージョンを定義します（メジャーバージョンとは別に定義する必要はありません）。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+もしあなたの Liferay Cloud スタックがまだ 4.x.x にアップデートされていない場合、デフォルトではこのバージョンはリポジトリのルートにある `gradle.properties` ファイルに格納されます。 この場合、`liferay.workspace.lcp.liferay.image`プロパティでバージョンを定義します（メジャーバージョンとは別に定義する必要はありません）。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_を参照してください。
 ```
 
-[Services Changelog](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) for Liferay Cloud で、新リリースごとのリファレンスを確認することができます。 新しい各サービスアップデートには、インスタンスに使用できるDockerイメージが含まれています。 また、 [Docker HubのDXPタグ](https://hub.docker.com/r/liferay/dxp/tags?page=1) を直接確認して、使用するDockerイメージ名を探すこともできます。
+[Services Changelog](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) for Liferay Cloud で、新リリースごとのリファレンスを確認することができます。 新しい各サービスアップデートには、インスタンスに使用できるDockerイメージが含まれています。 また、[Docker HubのDXPタグ](https://hub.docker.com/r/liferay/dxp/tags?page=1)を直接確認して、使用するDockerイメージ名を探すこともできます。
 
 リリースメモに記載されている新しいバージョンを使用して、Dockerイメージの値を更新します。 新しいDockerイメージは、インスタンスの起動時、または次回リポジトリからLiferayサービスをデプロイするときに使用されます。 新しいリリースのDockerイメージを使用して、他のサービスのプロパティをアップグレードすることもできます。
 
@@ -51,15 +51,15 @@ liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-sp2-202005120922
 
 Liferay DXPへのカスタム追加の導入には、Gitリポジトリの適切な場所への新しいモジュール、ライセンス、またはホットフィックスの追加が含まれます。
 
-`common/`ディレクトリを除き、特定の環境フォルダ（`dev`、`uat`、`prod`など）に追加された変更は、対応する環境にデプロイするときに **のみ** 伝播されます。 `common/`ディレクトリに追加された変更は、ターゲットのデプロイ環境に関係なく、 **常に** デプロイされます。 これは、すべてのサービスにおいて、 `configs/` ディレクトリ内のすべてのサブフォルダに適用されます。
+`common/`ディレクトリを除き、特定の環境フォルダ（`dev`、`uat`、`prod`など）に追加された変更は、対応する環境にデプロイするときに_のみ_伝播されます。 `common/`ディレクトリに追加された変更は、ターゲットのデプロイ環境に関係なく、_常に_デプロイされます。 これは、すべてのサービスにおいて、 `configs/` ディレクトリ内のすべてのサブフォルダに適用されます。
 
-Liferayサービスは、他のサービスに比べて多くのカスタマイゼーション（ホットフィックスの追加、モジュールのソースコードの構築など）を提供しているため、サービスをデプロイする際には、いくつかの考慮すべき点があります。 詳しくは [Deploying to the Liferay Service](./deploying-to-the-liferay-service.md) を参照してください。 また、一般的なデプロイメントワークフローについては、 [Overview of Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。 Liferay Cloud へのデプロイのチュートリアルについては、 [Deploying Changes via DCP Cloud Console](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)をご覧ください。
+Liferayサービスは、他のサービスに比べて多くのカスタマイゼーション（ホットフィックスの追加、モジュールのソースコードの構築など）を提供しているため、サービスをデプロイする際には、いくつかの考慮すべき点があります。 詳しくは [Deploying to the Liferay Service](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) を参照してください。 また、一般的なデプロイメントワークフローについては、 [Overview of Deployment Workflow](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。 Liferay Cloud へのデプロイのチュートリアルについては、 [Deploying Changes via DCP Cloud Console](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)をご覧ください。
 
 ## 設定
 
-`portal.properties` 変更など、Liferayサービスに設定を適用するには、Gitリポジトリに設定を追加し、変更をGitにプッシュする必要があります。 これらの設定ファイルの追加の詳細は、 [Liferay DXPサービスの設定](./configuring-the-liferay-dxp-service.md)参照してください。
+`portal.properties` 変更など、Liferayサービスに設定を適用するには、Gitリポジトリに設定を追加し、変更をGitにプッシュする必要があります。 これらの設定ファイルの追加の詳細は、 [Liferay DXPサービスの設定](./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)参照してください。
 
-環境変数は、Liferayサービスの設定にも使用され、場合によってはポータルのプロパティをオーバーライドすることもあります。 詳しくは、 [Liferay Service Environment Variables](./liferay-service-environment-variables.md) を参照してください。
+環境変数は、Liferayサービスの設定にも使用され、場合によってはポータルのプロパティをオーバーライドすることもあります。 詳しくは、 [Liferay Service Environment Variables](./using-the-liferay-dxp-service/liferay-service-environment-variables.md) を参照してください。
 
 ## ホットデプロイ
 
@@ -71,7 +71,7 @@ Liferay Cloudでホットデプロイを使用することは *not* 推奨され
 
 ## クラスタリングを有効にする
 
-Liferay DXP を Liferay Cloud でクラスタリングすることは、Liferay DXP で行うのに比べて非常に簡素化されたプロセスです。 Liferay Cloudでは、クラスタリングのサポートが利用可能で、すぐに有効になります。 クラスタリングの動作とスケールのための追加の設定には、いくつかの追加の手順が必要です。 詳しくは、 [Liferay Cloud でクラスタリングを設定する](./setting-up-clustering-in-liferay-cloud.md) を参照してください。
+Liferay DXP を Liferay Cloud でクラスタリングすることは、Liferay DXP で行うのに比べて非常に簡素化されたプロセスです。 Liferay Cloudでは、クラスタリングのサポートが利用可能で、すぐに有効になります。 クラスタリングの動作とスケールのための追加の設定には、いくつかの追加の手順が必要です。 詳しくは、 [Liferay Cloud でクラスタリングを設定する](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) を参照してください。
 
 ## スクリプトの実行
 
@@ -92,14 +92,14 @@ liferay
 ```
 
 ```{note}
-バージョン3.x.xのサービスを使用している場合、スクリプトは代わりにリポジトリの `lcp/liferay/script/` フォルダに入ります。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
+バージョン3.x.xのサービスを使用している場合、スクリプトは代わりにリポジトリの `lcp/liferay/script/` フォルダに入ります。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_を参照してください。
 ```
 
 ## 制限事項
 
 Liferay DXPには、コンテンツを構築、管理、Webにデプロイするための強力な機能が多数搭載されています。 しかし、それらの機能の中には、Liferay Cloudで利用できないものもあります。
 
-* [Remote Staging](https://learn.liferay.com/dxp/latest/ja/site-building/publishing-tools/staging/configuring-remote-live-staging.html) は、現在 Liferay Cloud ではサポートされていません。 オンプレミスインストールから Liferay Cloud に移行するユーザーは、Staging 機能を継続して使用するために Local Staging に変換する必要があります。
+* [Remote Staging](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) は、現在 Liferay Cloud ではサポートされていません。 オンプレミスインストールから Liferay Cloud に移行するユーザーは、Staging 機能を継続して使用するために Local Staging に変換する必要があります。
 
 ## 追加情報
 

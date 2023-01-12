@@ -5,7 +5,7 @@ Liferay Cloudは、堅牢で信頼性が高く、管理しやすいLiferay DXP�
 ![Liferay Cloudと統合された主要なサービスやコンポーネントは、ここにその接続先が表示されています。](./liferay-cloud-infrastructure/images/01.png)
 
 ```{note}
-プライベートクラスターサブスクリプションには、ビルトインの[Webアプリケーションファイアウォール](../infrastructure-and-operations/security/web-application-firewall.md) も含まれています。 ただし、これは [共有クラスタでは利用できない](./platform-limitations.md#security) です。
+プライベートクラスターサブスクリプションには、ビルトインの[Webアプリケーションファイアウォール](../infrastructure and-operations/security/web-application-firewall.md) も含まれています。 ただし、これは[共有クラスタでは利用できない](./platform-limitations.md#security)です。
 ```
 
 各コンポーネントの説明は以下のリストを参照してください。
@@ -30,7 +30,7 @@ Liferay Cloud は、サービスイメージとバージョン（タグとして
 
 ## DDoSプロテクション
 
-Liferay Cloudは、分散型サービス妨害（DDoS）攻撃からの保護を内蔵しています。 また、 [GCP POPネットワーク](https://peering.google.com/#/infrastructure) を使用して、受信トラフィックが殺到しないように環境を保護し、世界中のエンドユーザーにコンテンツを安全かつ安定的に配信しています。
+Liferay Cloudは、分散型サービス妨害（DDoS）攻撃からの保護を内蔵しています。 また、[GCP POPネットワーク](https://peering.google.com/#/infrastructure) を使用して、受信トラフィックが殺到しないように環境を保護し、世界中のエンドユーザーにコンテンツを安全かつ安定的に配信しています。
 
 ## HTTP(S) ロードバランサー
 
@@ -46,7 +46,7 @@ Liferay Cloud は、HTTP(S) のトラフィックを複数のインスタンス�
 
 [Liferay DXP](https://www.liferay.com/products/dxp) は、さまざまなアプリケーションからのデータやサービスを、1つの中央ユーザー・インターフェース・プラットフォームに接続し、編成し、統合しています。 Liferay Cloudは、クラウド上のDXPインスタンスに対して、迅速かつ信頼性の高い実装を提供します。 [Webサーバーサービス](#web-server) は、DXPへのすべてのHTTP(S)トラフィックのエントリーポイントとゲートウェイを提供します。
 
-設定や任意のカスタムモジュールを追加して、 [独自のプロジェクトリポジトリ](#repository-integration) にすることで、Liferayサービスは通常のDXPインストールと同様に高度なカスタマイズが可能です。 詳しくは、 [Liferay サービス入門](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md) をご覧ください。
+設定や任意のカスタムモジュールを[独自のプロジェクトリポジトリ](#repository-integration)に追加することで、Liferayサービスは通常のDXPインストールと同様に高度なカスタマイズが可能です。詳しくは、 [Liferayサービスについて](../using-the-liferay-dxp-service.md)をご覧ください。
 
 ## 検索
 
@@ -74,18 +74,18 @@ Liferay Cloud は、Liferay DXP の Database サービスのコピーとボリ�
 
 ## CIサーバー
 
-Liferay Cloudは、開発中のお客様のプロジェクトのビルドとデプロイのプロセスを自動化します。 プロジェクトが [顧客のリポジトリ](#repository-integration) に結びついている状態で、Jenkinsをウェブフックで使用し、新しいコミットやプルリクエストを自動的にあらゆる環境にデプロイ可能なビルドに変換します。 このサービスは、特別な独立した `インフラ` 環境の中に存在しており、通常のユーザーはアクセスできません。 また、Liferay CloudはCloudコンソールでお客様にJenkinsビルドの詳細を表示するダッシュボードを提供します。
+Liferay Cloudは、開発中のお客様のプロジェクトのビルドとデプロイのプロセスを自動化します。 プロジェクトが [顧客のリポジトリ](#repository-integration)に結びついている状態で、Jenkinsをウェブフックで使用し、新しいコミットやプルリクエストを自動的にあらゆる環境にデプロイ可能なビルドに変換します。 このサービスは、特別な独立した `インフラ` 環境の中に存在しており、通常のユーザーはアクセスできません。 また、Liferay CloudはCloudコンソールでお客様にJenkinsビルドの詳細を表示するダッシュボードを提供します。
 
 Jenkinsのビルドに使用するCIサービスは、Liferay Cloudのメインサービスの一つとして提供されており、お客様はこのサービスを設定し、必要に応じてJenkinsパイプラインをカスタマイズすることも可能です。 詳しくは [継続的インテグレーション](../platform-services/continuous-integration.md) を参照してください。
 
 ## CLIツール
 
-Liferay Cloudでは、CLI Toolを使用することで、その環境やサービスに対して様々な管理作業を行うことが可能です。 このアプリケーションは、お客様のすべてのプロジェクトに使用できる中央のインターフェースとして機能し、HTTP(S)トラフィックにアクセスできます。 詳しくは、 [コマンドラインツール](./command-line-tool.md) 参照してください。
+Liferay Cloudでは、CLI Toolを使用することで、その環境やサービスに対して様々な管理作業を行うことが可能です。 このアプリケーションは、お客様のすべてのプロジェクトに使用できる中央のインターフェースとして機能し、HTTP(S)トラフィックにアクセスできます。 詳しくは、 [Command-line Tool](./command-line-tool.md) 参照してください。
 
 ## アンチウイルス
 
-Liferay Cloud は、 [ClamAV](https://www.clamav.net/) を使用して、トロイの木馬、ウイルス、マルウェア、その他の悪意のある脅威を自動的に検出します。 このエンジンは、クラウド内のバックグラウンドサービスとして動作しており、ユーザーや他のサービスからはアクセスできないようになっています。 Liferay Cloudの各クラスタには、アンチウィルスのインスタンスが1つずつ稼働しています。
+Liferay Cloud は、 [ClamAV](https://www.clamav.net/)を使用して、トロイの木馬、ウイルス、マルウェア、その他の悪意のある脅威を自動的に検出します。 このエンジンは、クラウド内のバックグラウンドサービスとして動作しており、ユーザーや他のサービスからはアクセスできないようになっています。 Liferay Cloudの各クラスタには、アンチウィルスのインスタンスが1つずつ稼働しています。
 
 ## 侵入検知システム
 
-Liferay Cloud は、 [Threat Stack](https://www.threatstack.com/cloud-security-platform/intrusion-detection) を使用して、そのコンポーネント内の侵入を自動的に検出します。 このシステムも内蔵の [ウイルス対策ソフト](#antivirus) と同様にバックグラウンドサービスとして動作しており、ユーザーや他のサービスからはアクセスできないようになっています。 Liferay Cloud の各クラスタには 1 つのインスタンスがあります。
+Liferay Cloud は、 [Threat Stack](https://www.threatstack.com/cloud-security-platform/intrusion-detection)を使用して、そのコンポーネント内の侵入を自動的に検出します。 このシステムも内蔵の [ウイルス対策ソフト](#antivirus)と同様にバックグラウンドサービスとして動作しており、ユーザーや他のサービスからはアクセスできないようになっています。 Liferay Cloud の各クラスタには 1 つのインスタンスがあります。

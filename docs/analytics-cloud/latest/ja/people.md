@@ -3,7 +3,7 @@ toc:
 - ./people/individuals.md
 - ./people/segments.md
 ---
-# ユーザー
+# 人
 
 ```{toctree}
 :maxdepth: 3
@@ -12,22 +12,23 @@ people/individuals.md
 people/segments.md
 ```
 
-個々のユーザーとユーザーの集合体をよりよく理解することが、優れたサービスを提供するための鍵となります。 Analytics Cloudは、両方をよりよく理解するためのツールを提供します。 Liferay DXPのユーザーデータを利用した堅牢な [訪問者プロフィール](./people/individuals/individual-profiles.md) を構築することで、顧客が誰であるかについて広範な詳細を把握することができます。 個々のプロファイルがお客様のサイトと相互作用すると、Analytics Cloudは継続的に個々のプロファイルをベースに構築し、ユーザーの [の関心事](./workspace-data/definitions/managing-interest-topics.html#understanding-interests) や行動を理解するのに役立ちます。 これらすべてが、最終的にはユーザーのニーズを満たし、それを超える行動をとるための手助けとなります。
+個々のユーザーとユーザー全体をよりよく理解することが、優れたサービスを提供するための鍵です。 Analytics Cloudは、その両方をよりよく理解するためのツールを提供します。 Liferay DXPのユーザーデータを利用した堅牢な [Individual Profiles](./people/individuals/individual-profiles.md) を構築することで、顧客が誰であるかについて広範な詳細を把握することができます。 個々のプロフィールがお客様のサイトと相互作用すると、Analytics Cloudは継続的に個々のプロフィールを構築し、ユーザーの [関心](./workspace-data/definitions/managing-interest-topics.md#understanding-interests) と行動を理解するのに役立ちます。 これらのことは、最終的にユーザーのニーズを満たすため、またニーズを超えるために、より良いアクションを起こすことを支援します。
 
 ![個人プロファイルの概要では、ユーザーの行動をしっかりと見ることができます。](./people/images/01.png)
 
-[セグメント](./people/segments/segments.md) では、共通のプロパティや行動に基づいてグループ化を作成して定義することで、ユーザーを集計して見ることができます。 特定のトピックに興味を持っているユーザー、特定の業界で働いているユーザー、またはその両方を含むセグメントを作成することができます。 Analytics Cloudのセグメンテーションツールは、Liferay DXPの [パーソナライゼーションオプション](./optimization/personalizing-content-with-segments.md)と直接統合します。 これにより、ユーザーを理解するだけでなく、サイトの経験をユーザーのニーズに合わせて調整することができます。
+[セグメント](./people/segments/segments.md)では、共通のプロパティや行動に基づいたグループ化を作成・定義することで、ユーザーを総体的に見ることができます。特定のトピックに関心のあるユーザー、特定の業界で働くユーザー、またはその両方を含むセグメントを作成することができます。Analytics CloudのSegmentationツールは、[Liferay DXPの
+Personalizationオプション](./optimization/personalizing-content-with-segments.md)と直接統合されています。これにより、ユーザーを理解するだけでなく、ユーザーのニーズに合わせてサイト体験をカスタマイズすることができます。
 
-![セグメントの作成は直感的でパワフルです。](./people/images/02.png)
+![セグメントの作成は、直感的でパワフルです。](./people/images/02.png)
 
-堅牢な個人プロファイルと柔軟なセグメント構築を組み合わせることで、Analytics Cloudはユーザーに素晴らしい体験を提供することができます。
+堅牢な個別プロファイルと柔軟なセグメント構築を組み合わせることで、Analytics Cloudはユーザーに優れた体験を提供することを可能にします。
 
 ## 次のステップ
 
 ### 個人
 
 - [個人ダッシュボード](./people/individuals/individuals-dashboard.md)
-- [訪問者プロフィール](./people/individuals/individual-profiles.md)
+- [個人プロフィール](./people/individuals/individual-profiles.md)
 
 ### セグメント
 

@@ -2,30 +2,30 @@
 
 {bdg-secondary}`Liferay Cloud 5.x.x`で利用可能です。
 
-Liferay Cloud には [ModSecurity](https://github.com/SpiderLabs/ModSecurity) という Web アプリケーションファイアウォールが含まれています。 ウェブサーバーに送信されたリクエストを、あらかじめ定義されたカスタムルールと照らし合わせて検査します。 このステップでは、XSS、SQLインジェクションなどの典型的なWebアプリケーションのリアルタイムL7攻撃や、機密情報の損失につながる可能性のあるその他の形式の乗っ取りを防止します。
+Liferay Cloud には [ModSecurity](https://github.com/SpiderLabs/ModSecurity)という Web アプリケーションファイアウォールが含まれています。 ウェブサーバーに送信されたリクエストを、あらかじめ定義されたカスタムルールと照らし合わせて検査します。 このステップでは、XSS、SQLインジェクションなどの典型的なWebアプリケーションのリアルタイムL7攻撃や、機密情報の損失につながる可能性のあるその他の形式の乗っ取りを防止します。
 
-Liferay Cloud には、 [プライベートネットワーク](../networking/private-network.md)、パブリック [ロードバランサー](../networking/load-balancer.md) ( [レイヤー7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) ) 、 [CDN](../networking/load-balancer.md#cdn) などのネットワークセキュリティ機能が追加され ています。
+Liferay Cloud には、 [プライベートネットワーク](../networking/private-network.md)、パブリック [ロードバランサー](../networking/load-balancer.md) ([レイヤー7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)) 、 [CDN](../networking/load-balancer.md#cdn)などのネットワークセキュリティ機能が追加され ています。
 
 ![図1：Webアプリケーションファイアウォールは一般的な攻撃から保護します。](./web-application-firewall/images/01.png)
 
 ```{note}
-カスタムファイアウォールルールは、 [共有クラスタサブスクリプション](../../reference/platform-limitations.md#security) では使用できません。
+共有クラスタサブスクリプション] では、カスタムファイアウォールルールは使用できません (../../reference/platform-limitations.md#security).
 ```
 
 ## ModSecurityの有効化
 
-ModSecurityはデフォルトで無効になっています。 これを有効にするには、 `LCP_WEBSERVER_MODSECURITY` [環境変数](../../platform-services/web-server-service.md#environment-variables) を、プロジェクトリポジトリの `webserver/LCP.json` ファイルに追加してください。 攻撃検知ルールは、ModSecurityが有効な場合のみ処理されます。 [独自のルールを追加する必要があります](#adding-attack-detection-rules) .
+ModSecurityはデフォルトで無効になっています。 これを有効にするには、 `LCP_WEBSERVER_MODSECURITY` [環境変数](../../platform-services/web-server-service.md#environment-variables) を、プロジェクトリポジトリの `webserver/LCP.json` ファイルに追加してください。 攻撃検知ルールは、ModSecurityが有効な場合のみ処理されます。 [独自のルールを追加する必要があります](#adding-attack-detection-rules).
 
 これらの値は、 `LCP_WEBSERVER_MODSECURITY`で許可されています。
 
-* **On** : ModSecurityを有効にします。 攻撃検知ルールが処理される。
+* **On**: ModSecurityを有効にします。 攻撃検知ルールが処理される。
 
-* **Off** : ModSecurity を無効にします。 ルールが処理されない。
+* **Off**: ModSecurity を無効にします。 ルールが処理されない。
 
-* **DetectionOnly** : ModSecurity を有効にします。 ルールは処理されるが、破壊的なアクションは実行されない（ブロック、拒否、ドロップ、許可、プロキシ、リダイレクト）。
+* **DetectionOnly**: ModSecurity を有効にします。 ルールは処理されるが、破壊的なアクションは実行されない（ブロック、拒否、ドロップ、許可、プロキシ、リダイレクト）。
 
 ```{tip}
-環境変数`LCP_WEBSERVER_MODSECURITY` は ModSecurity自身の[`SecRuleEngine`ディレクティブ](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine)と同等です。
+環境変数 `LCP_WEBSERVER_MODSECURITY` は ModSecurity 自身の [`SecRuleEngine` ディレクティブ] と同等です (https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine)．
 ```
 
 ModSecurity を有効にするには、 `LCP_WEBSERVER_MODSECURITY` の値を `On` または `DetectionOnly`に設定し、 [変更をデプロイします。](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).
@@ -48,7 +48,7 @@ SecRuleEngine ${LCP_WEBSERVER_MODSECURITY}
 
 ### OWASP ModSecurity コアルールセット
 
-OWASP FoundationのModSecurity Core Rule Set（CRS）は、Liferay Cloudでの使用を推奨しています。 OWASP CRS [はこちらからダウンロードできます](https://coreruleset.org/installation/) .
+OWASP FoundationのModSecurity Core Rule Set（CRS）は、Liferay Cloudでの使用を推奨しています。 OWASP CRS [はこちらからダウンロードできます](https://coreruleset.org/installation/).
 
 ModSecurityにOWASP CRSを追加するには。
 
@@ -66,13 +66,13 @@ ModSecurityにOWASP CRSを追加するには。
 
 1. ファイルをリポジトリにコミットし、 [変更をデプロイします。](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).
 
-ルールセットは、 [ModSecurity](#enabling-modsecurity) を有効にした時点で解釈されます。
+ルールセットは、 [ModSecurity](#enabling-modsecurity)を有効にした時点で解釈されます。
 
 ## ModSecurity監査ログの使用
 
-[を有効にすると、](#enabling-modsecurity) 、ModSecurity は自動的に監査ログを生成し、すべてのトランザクションの詳細情報を記録します。 ログに記録された情報を見るには、Web サーバーの `/var/log` ディレクトリにある `modsec_audit.log` ファイルを開いてください。
+[を有効にすると、](#enabling-modsecurity)、ModSecurity は自動的に監査ログを生成し、すべてのトランザクションの詳細情報を記録します。 ログに記録された情報を見るには、Web サーバーの `/var/log` ディレクトリにある `modsec_audit.log` ファイルを開いてください。
 
-[独自の`modsecurity.conf`ファイルを提供してModSecurityを設定する](#changing-modsecurity-s-configuration)場合、 `modsec_audit.log`の代わりに、Webサーバのコンソール（ダウンロードできる場所）に情報を記録することが可能です。`modsecurity.conf`ファイル内のこの行を変更してください。
+[](#changing-modsecuritys-configuration)独自の modsecurity.conf ファイルを提供して ModSecurity を設定する場合、 modsec_audit.log の代わりに、Web サーバのコンソール (ダウンロードできる場所) に情報を記録することが可能です。 `` `` `modsecurity.conf` ファイル内のこの行を変更してください。
 
 ```
 SecAuditLog /var/log/modsec_audit.log

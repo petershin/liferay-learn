@@ -1,63 +1,46 @@
+---
+toc:
+- ./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
+- ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
+---
 # Elasticsearchインストールのトラブルシューティング
 
-リモートモードで[LiferayにElasticsearch](./getting-started-with-elasticsearch.md)をセットアップしたが、LiferayがElasticsearchに接続していない場合は、次のことを確認してください。
+```{toctree}
+:maxdepth: 1
 
-## クラスター名
-
-`elasticsearch.yml`の`cluster.name`プロパティの値は、Liferay Elasticsearchコネクターで設定された`clusterName`プロパティと一致する必要があります。
-
-## トランスポートアドレス
-
-Elasticsearchコネクター設定の`transportAddresses`プロパティの値には、Elasticsearchノードが実行されている有効なホストとポートが少なくとも1つ含まれている必要があります。 Liferayを組み込みモードで実行していて、スタンドアロンのElasticsearchノードまたはクラスターを起動すると、ポート`9300`が占有されていることが検出され、ポート`9301`に切り替わります。 その後、LiferayのElasticsearchコネクターをリモートモードに設定すると、引き続きデフォルトのポート（`9300`）でElasticsearchを検索します。 クラスターのマスターノードとデータノードのアドレスがすべて記載されていることを確認してください。
-
-[Elasticsearchへの接続](./connecting-to-elasticsearch.md) では、コネクター設定オプションについて詳しく説明しています。
-
-## ネットワークホストアドレス
-
-Liferay 7.3+では、バンドルされているElasticsearchサーバー（サイドカー）はデフォルトでポート`9201`で実行されます。 これは、ElasticsearchのデフォルトのHTTPポート（`9200`）を使用してリモートのElasticsearchインストールの`networkHostAddress`を設定しても、競合が発生しないことを意味します。 トランスポートアドレスと同様に、クラスターのすべてのマスターノードとデータノードのアドレスがすべて記載されていることを確認してください。
-
-## クラスタースニッフィング（追加設定）
-
-Elasticsearchクラスターは複数のノード [タイプ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node) を持つことができます。  Elasticsearchコネクターでデフォルトで有効になっている [クラスタースニッフィング](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html) は、`transportAddresses`プロパティで設定された`data`ノードを検索します。 使用可能なものがない場合、コネクターはコンソールログに`NoNodeAvailableException`をスローする可能性があります。 クラスタースニッフィングを有効のままにする場合は、少なくとも1つの`data`ノードのトランスポートアドレスを常に「スニッフィング可能」に設定して、このエラーを回避します。
-
-クラスタースニッフィングを無効にするには、`clientTransportSniff=false`を`.config`ファイルに追加するか、［システム設定］の［クライアント・トランスポート・スニフ］プロパティの選択を解除します。
-
-## [Docker] 接続が拒否されました。
-
-Liferay DXPコンテナは、接続を確立するためにElasticsearch IPを認識する必要があります。 Elasticsearchコンテナ名をElasticsearchサーバーのホストIPアドレスにマップする`/etc/hosts/`エントリを追加します。 これは、次のような引数を渡すことで、`docker run`フェーズ中に確立できます。
-
-```bash
---add-host elasticsearch:[IP address]
+troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
+troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
 ```
 
-実行中のすべてのコンテナのIPアドレスを取得するには、
+LiferayとElasticsearchは、設定に満ちた複雑なシステムです。 [それらをつなぐと](./getting-started-with-elasticsearch.md)、途中で困難にぶつかることがあります。 以下に、トラブルシューティングのテクニックを紹介します。
 
-```bash
-Dockerネットワークはブリッジを実行します。
+よくある問題とその解決方法については、以下をご覧ください。
+
+- [Elasticsearch接続のトラブルシューティング](./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md)
+- [Elasticsearchのトラブルシューティング。よくある問題](./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md)
+
+Liferayにバンドルされているsidecar Elasticsearchサーバーのトラブルシューティングは、 [Troubleshooting the Sidecar/Embedded Elasticsearch](./using-the-sidecar-or-embedded-elasticsearch.md#troubleshooting-the-sidecar-embedded-elasticsearch)をご覧ください。
+
+## 検索バーのElasticsearchクエリを検査する
+
+Liferayの検索インフラは、ユーザーがSearch Barウィジェットから検索するたびに、大きなElasticsearchのリクエストを生成します。 Elasticsearchに送信されたクエリを検査するには、Search Insightsウィジェットを使用します。 詳しくは、 [Search Insights](../../search-pages-and-widgets/search-insights.md)をご覧ください。
+
+## Liferayが生成したElasticsearchクエリを検査する
+
+Liferay によって生成された Elasticsearch クエリを検査するには、 `com.liferay.portal.search.elasticsearch7.internal.ElasticsearchIndexSearcher` のログレベルを `INFO` レベルに [Server Administration Log Levels UI](../../../system-administration/using-the-server-administration-panel/configuring-logging.md)を使って設定します。
+
+```{tip}
+Liferay 7.1-7.2 で、デフォルトでバンドルされている Elasticsearch 6 への Connector を使用している場合、パッケージ名のバージョン番号を `7` から `6` に変更します。
 ```
 
-## 設定ファイル名
+## 詳細なSSLログを有効にする
 
-LiferayをElasticsearchに接続する際に問題が発生した場合（おそらくLiferayログに`NoNodeAvailableException`メッセージが表示されます）、最初に実行する手順の1つは、設定ファイルに適切な名前が付けられていることを確認することです。 認識できない設定ファイルは処理されません。 結果として生じるエラーは様々です。
+暗号化関連のトラブルシューティングを行うには、冗長なSSLロギングを有効にしてください。
 
-## Elasticsearchの非推奨ログを無効にする
+Liferayの場合、アプリケーションサーバーのJVMで `-Djavax.net.debug=ssl:handshake:verbose` を設定してください。 Tomcat では、 `setenv.sh`の `CATALINA_OPTS` にオプションが追加されています。
 
-LiferayのElasticsearchコネクターで使用されるElasticsearch APIが廃止予定になる場合があります。 Liferayに必要な機能に影響がない場合でも、以下の警告ログメッセージが表示される可能性があります。
-
-```
-[2019-07-16T14:47:05,779][WARN ][o.e.d.c.j.Joda           ] [
-ode_name]'y' year should be replaced with 'u'. Use 'y' for year-of-era. Prefix your date format with '8' to use the new specifier.
-[2019-07-16T14:47:06,007][WARN ][o.e.d.c.s.Settings       ] [
-ode_name][xpack.ssl.certificate] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
-[2019-07-16T14:47:06,007][WARN ][o.e.d.c.s.Settings       ] [
-ode_name][xpack.ssl.certificate_authorities] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
-[2019-07-16T14:47:06,008][WARN ][o.e.d.c.s.Settings       ] [
-ode_name][xpack.ssl.key] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
-[2019-07-16T14:47:06,463][WARN ][o.e.d.x.c.s.SSLService   ] [
-ode_name]SSL configuration [xpack.http.ssl] relies upon fallback to another configuration for [key configuration, trust configuration], which is deprecated.
-[2019-07-16T14:47:06,464][WARN ][o.e.d.x.c.s.SSLService   ] [
-ode_name]SSL configuration [xpack.security.transport.ssl.] relies upon fallback to another configuration for [key configuration, trust configuration], which is deprecated.
-1. 07-16T14:47:05,779][WARN ][o.e.d.c.j.Joda           ] [
+```properties
+CATALINA_OPTS="$CATALINA_OPTS -Djavax.net.debug=ssl:handshake:verbose"
 ```
 
-これらの警告は機能上の問題を示すものではなく、無効にすることができます（方法については、 [Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/logging.html#deprecation-logging) を参照してください）。
+Elasticsearchの場合、 `[Elasticsearch Home/]config/jvm.options`の末尾に `-Djavax.net.debug=ssl:handshake:verbose` を追加してください。

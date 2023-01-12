@@ -12,7 +12,7 @@ Liferay Cloud プロジェクトで SSO を有効にするには、次の手順�
 
 1. [Liferay Cloud チームへの IdP メタデータの提供](#provide-identity-provider-metadata-to-the-liferay-cloud-team)
 1. [Liferay Cloud チームは、提供された IdP データをインポートし、サービスプロバイダ (SP) メタデータを提供します。](#liferay-cloud-team-imports-provided-idp-data-and-provides-service-provider-metadata)
-1. [Liferay Cloud チームが提供する SP メタデータをインポートする。](#import-sp-metadata-provided-by-the-liferay-cloud-team)
+1. [Liferay Cloud チームが提供する SP メタデータのインポート](#import-sp-metadata-provided-by-the-liferay-cloud-team)
 
 ### Liferay CloudチームにIdentity Provider Metadataを提供する。
 
@@ -21,7 +21,7 @@ Liferay Cloud プロジェクトで SSO を有効にしたいクライアント�
 | 項目                                 | 説明                                                                                                                            |
 |:---------------------------------- |:----------------------------------------------------------------------------------------------------------------------------- |
 | IdP発行者                             | ID発行者の名前。通常、 `EntityDescriptor` メタデータの `EntityID` 属性                                                                          |
-| IdPシングルサインオンURL                    | SAML認証を受信するリクエストエンドポイント(例：<http://adfs.customer.com/saml/sso)>                                                                |
+| IdPシングルサインオンURL                    | SAML 認証リクエストを受け取るリクエストエンドポイント（例： `<http://adfs.customer.com/saml/sso)>`                                                 |
 | IdP署名証明書                           | SAMLメッセージおよびアサーション署名へのIdPの公開鍵証明書                                                                                              |
 | IdPシングルサインオンHTTPメソッド（リクエストバインディング） | 認証要求を受信するために顧客のIDプロバイダーによってサポートされるHTTPメソッド。 有効な回答は `POST` （デフォルト）と `GET`のみです。                                                 |
 | 署名リクエスト                            | 顧客のIDプロバイダーに送信されたSAMLリクエストに署名する必要がある場合は、 `TRUE`に 設定します。 それ以外の場合は `FALSE`に設定します。                                               |
@@ -31,13 +31,13 @@ Liferay Cloud プロジェクトで SSO を有効にしたいクライアント�
 
 Microsoft ADFSを使用するクライアントは、SAMLを使用してSSOを設定するために必要な次の設定に注意する必要があります。
 
-| 項目              | 説明                                                                           |
-|:--------------- |:---------------------------------------------------------------------------- |
-| IdP発行者URI       | ［全般］タブの **フェデレーションサービス識別子** にあり、デフォルト値は <http://domain/adfs/services/trust>です。 |
-| IdPシングルサインオンURL | デフォルトは、 `/adfs/ls`。 例： <http://adfs.example.com/adfs/ls/>                    |
-| IdP署名証明書        | DERエンコードされたバイナリX.509証明書ファイル                                                  |
+| 項目              | 説明                                                                                       |
+|:--------------- |:---------------------------------------------------------------------------------------- |
+| IdP発行者URI       | Generalタブの _フェデレーションサービス識別子_ にあり、デフォルト値は `<http://domain/adfs/services/trust>`である。 |
+| IdPシングルサインオンURL | デフォルト設定は `/ adfs/ls`です。 例） `<http://adfs.example.com/adfs/ls/>`                    |
+| IdP署名証明書        | DERエンコードされたバイナリX.509証明書ファイル                                                              |
 
-IdP メタデータが生成されたら、 [Liferay Cloud チームにチケットを開きます。](https://help.liferay.com/hc/) . IdPメタデータは、XMLファイルまたはURLエンドポイント（<https://localhost:8080/c/saml/metadata> が基本例）のいずれかの形式で送信することができる。
+IdP メタデータが生成されたら、 [Liferay Cloud チームにチケットを開きます。](https://help.liferay.com/hc/). IdPメタデータは、XMLファイルまたはURLエンドポイント（`<https://localhost:8080/c/saml/metadata>` が基本例）のいずれかの形式で送信することができる。
 
 ### Liferay Cloud チームは、提供された IdP データをインポートし、サービスプロバイダのメタデータを提供します。
 
@@ -62,21 +62,21 @@ SSOを有効にすると、適切なアイデンティティプロバイダー�
 
 SSOを使用してLiferay Cloudにログインする場合。
 
-1. <https://console.liferay.cloud/login>に移動します。
-1. ［**Login via SSO**］をクリックします 。
+1. <https://console.liferay.cloud/login> に移動します。
+1. ［_Login via SSO_］をクリックします 。
 
    ![ログインページ](./using-sso-with-liferay-cloud/images/01.png)
 
-1. ［**組織ID**］ フィールドに ［**会社名**］ を入力します。
-1. ［**続行**］をクリックします。
+1. _［組織ID］_ フィールドに **［会社名］**を入力します。
+1. ［ _続行_］をクリックします。
 
     ```{note}
     組織のSSOで既に認証されている場合は、次の手順を実行する必要がない場合があります。
     ```
 
-1. ［**Email Address**］ フィールドに **Email Address** を入力します。 これは、会社のデータベースまたはディレクトリサービス（LDAPやADFSなど）に保存されているメールアドレスと同じである必要があります。
-1. ［**Password**］ フィールドに **パスワード** を入力します。 これは、会社のデータベースまたはディレクトリサービスに保存されているメールアドレスに関連付けられているパスワードと同じである必要があります。
-1. ［**Log in**］をクリックします。
+1. _［Email Address］_ フィールドに **Email Address**を入力します。 これは、会社のデータベースまたはディレクトリサービス（LDAPやADFSなど）に保存されているメールアドレスと同じである必要があります。
+1. _［Password］_ フィールドに **パスワード**を入力します。 これは、会社のデータベースまたはディレクトリサービスに保存されているメールアドレスに関連付けられているパスワードと同じである必要があります。
+1. ［ _Log in_ ］をクリックします。
 
 ログインすると、ユーザーはすべてのプロジェクトと環境を確認できます。
 

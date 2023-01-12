@@ -1,72 +1,72 @@
 # 個人ダッシュボード
 
-Individuals dashboardでは、訪問者やサイトの利用状況に関する幅広い分析データを提供しています。
+Individuals（インディビジュアルズ）ダッシュボードは、あなたのサイトへの訪問者とその関わり方に関する幅広い分析データを提供します。
 
 ダッシュボードを表示するには
 
-1. メニューの **メンバー** のセクションにある［ Individual］ をクリックします。
+1. メニューの「人」セクションの「 _個人」_ をクリックします。
 
-1. ［**Overview**］ タブをクリックします（Individualsをクリックすると、このタブがデフォルトで選択されます）。
+1. _Overview_ タブをクリックします（Individualをクリックすると、デフォルトでこのタブが選択されます）。
 
-Individuals Dashboardには、以下のパネルがあります。
+Individuals ダッシュボードには、以下のパネルがあります。
 
-* [Current Totals](#current-totals)
-* [充実化したプロファイル](#enriched-profiles)
-* [有効な個人](#active-individuals)
-* [Interests](#interests)
+* [現在の総計](#current-totals)
+* [エンリッチド・プロファイル](#enriched-profiles)
+* [アクティブな個人](#active-individuals)
+* [趣味・関心事](#interests)
 * [内訳](#breakdown)
 
-## Current Totals
+## 現在の総計
 
-Current Totalsパネルには、Analytics Cloudによって追跡された既知および匿名の個人の合計数が表示されます。
+現在の合計］パネルには、Analytics Cloudによって追跡された個人の合計数（既知および匿名）が表示されます。
 
-![Current Totalsパネルには、サイトへの訪問者の合計数が表示されます。](./individuals-dashboard/images/01.png)
+![現在の集計」パネルには、サイトへの訪問者の合計数が表示されます。](./individuals-dashboard/images/01.png)
 
-メールアドレスが匿名の個人と一致した場合、その個人は既知のものとみなされます。
+匿名の個人とメールアドレスが一致した場合、その個人は既知であるとみなされます。
 
-また、パネルには、過去30日と比較した総数の変化率も表示されます。
+パネルには、前30日間と比較した総数の変化率も表示されます。
 
-## 充実化したプロファイル
+## エンリッチド・プロファイル
 
-Enriched Profilesパネルには、過去30日以内にエンリッチされた個人の合計数が表示されます。
+Enriched Profilesパネルには、過去30日以内にエンリッチされた個人の総数が表示されます。
 
-![Enriched Profilesパネルには、エンリッチメントを受けた個人の総数が表示されます。](./individuals-dashboard/images/02.png)
+![Enriched Profiles パネルは、エンリッチされた個人の総数を表示します。](./individuals-dashboard/images/02.png)
 
 例えば、 [DXP](../../getting-started/syncing-sites-and-contacts.md)から連絡先データを同期させた場合などです。
 
-## 有効な個人
+## アクティブな個人
 
-Active Individualsパネルには、選択した期間中にお客様のサイトにアクセスした既知および匿名の個人に関する情報が表示されます。
+アクティブな個人」パネルには、選択した期間にあなたのサイトと相互作用した既知の個人と匿名の個人の両方に関する情報が表示されます。
 
-![Active Individualsパネルには、本サイトにアクセスしたことのある個人を時系列で表示しています。](./individuals-dashboard/images/03.png)
+![アクティブな個人」パネルでは、本サイトと交流のあった個人を時系列でグラフ化しています。](./individuals-dashboard/images/03.png)
 
-日、週、月に基づいてデータを視覚化することを選択します。 データは、時間の範囲でフィルタリングすることができます。直近24時間、直近7日、直近30日、直近90日。 **More Preset Periods** をクリックすると、追加の時間範囲が表示されます。 **期間を指定** をクリックすると、任意の開始日と終了日でフィルタリングすることができます。
+日、週、月単位でデータの可視化を選択できます。 データは、時間の範囲でフィルタリングすることができます。過去24時間、過去7日間、過去30日間、過去90日間。 *More Preset Periods* をクリックすると、その他の時間帯が表示されます。 *Custom Range* をクリックすると、任意の開始日と終了日でフィルターをかけることができます。
 
-## Interests
+## 趣味・関心事
 
-Interestsパネルでは、人気のあったトピックのトップ5を紹介しています。
+Interestsパネルでは、人気の高いトピックトップ5を紹介しています。
 
-![Interestsパネルでは、人気のあるトピックのチャートが表示されます。](./individuals-dashboard/images/04.png)
+![Interestsパネルでは、人気のあるトピックをチャートで紹介しています。](./individuals-dashboard/images/04.png)
 
-これらのトピックは、ページのHTMLのtitle、description、keywordタグから導き出されます。
+これらのトピックは、ページのHTMLのタイトルタグ、説明タグ、キーワードタグから導き出されます。
 
-興味のあるトピックの全リストを表示するには、パネル内の **View All Interests** をクリックします。 または、ページ上部の［Interests］タブをクリックします。
+興味のあるトピックの全リストを表示するには、パネル内の *View All Interests* をクリックします。 または、ページ上部の「インタレスト」タブをクリックします。
 
-Interestsの詳細については、 [Understanding Interests](../../workspace-data/definitions/managing-interest-topics.html#understanding-interests) を参照してください。
+インタレストについて詳しく知りたい方は、 [Understanding Interest](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests)をご覧ください。
 
 ## 内訳
 
-Breakdownパネルは、選択されたユーザーの属性に基づいて分布情報を表示します。
+ブレイクダウンパネルは、個人の選択された属性に基づく分布情報を表示します。
 
-![Breakdownパネルは、選択された属性に基づいてディストリビューション情報を表示します。](./individuals-dashboard/images/05.png)
+![ブレイクダウンパネルは、選択された属性に基づく分布情報を表示します。](./individuals-dashboard/images/05.png)
 
-パネルには最大で10種類の属性を追加することができます。 新たな内訳を追加するには
+パネルに最大10種類の属性を追加することができます。 新しい内訳を追加する場合。
 
 1. パネルの右上にあるプラス記号をクリックします。
 
-1. ドロップダウンメニューで属性を選択します。
+1. ドロップダウンメニューで、属性を選択します。
 
-1. 内訳の名前を入力し、 ［**保存**］ をクリックします。
+1. 内訳の名称を入力し、 *保存*をクリックします。
 
-追加属性の内訳を表示するには、 **Explore Breakdown** をクリックしてください。 または、ページ上部の［**Distribution**］タブをクリックします。
+追加属性の内訳を見るには、 *Explore Breakdown*をクリックします。 または、ページ上部にある「 _Distribution_ 」タブをクリックします。
 

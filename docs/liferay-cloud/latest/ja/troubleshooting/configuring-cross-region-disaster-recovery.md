@@ -10,7 +10,7 @@ Liferay Cloudは、大規模なインシデントが発生した場合に、お�
 
 ## 初期設定
 
-Liferayは、地域をまたいだ災害を管理するために、専用のLiferay Cloud環境を提供しています。 この例では、本番環境が **europe-west2** リージョンに格納されており、リージョンが危険にさらされていると想定しています。 本番環境でのダウンタイムとデータ損失を防ぐには、ディザスタリカバリ環境を、 **us-west1** などの運用領域外にシフトする必要があります。 したがって、この5番目の障害復旧（DRに短縮された）環境は、インシデント中に生成された新しいユーザーデータを格納するバックアップとして機能します。
+Liferayは、地域をまたいだ災害を管理するために、専用のLiferay Cloud環境を提供しています。 この例では、本番環境が *europe-west2* リージョンに格納されており、リージョンが危険にさらされていると想定しています。 本番環境でのダウンタイムとデータ損失を防ぐには、ディザスタリカバリ環境を、 *us-west1*などの運用領域外にシフトする必要があります。 したがって、この5番目の障害復旧（DRに短縮された）環境は、インシデント中に生成された新しいユーザーデータを格納するバックアップとして機能します。
 
 Liferay Cloud のお客様がディザスターリカバリー環境を構築する場合、DR 環境のプロビジョニングを担当する営業担当者にご連絡ください。 この新しい環境は、他の利用可能な環境 (例えば、 `dev`、 `infra`、 `uat`、および `prd`) とともに表示されます。
 
@@ -24,21 +24,21 @@ Liferay Cloud のシステム管理者は、DR 環境と本番環境の両方に
 
 2つの環境が接続されていることを確認するには：
 
-1. 左側のメニューで、DR環境の[**設定**]タブをクリックします。
+1. 左側のメニューで、DR環境の[ *設定* ]タブをクリックします。
 
 1. VPNセクションで、以下の情報を入力します：
 
-    * **VPNタイプ** ：OpenVPN
-    * **サーバーアドレス** ：サーバーアドレス。
-    * **Account name** ：管理者のメールアドレスです。
-    * **Password** ：管理者のパスワードです。
-    * **Certificate** : 証明書のコードです。
-    * **転送IP** ：転送IPアドレス。
-    * **転送ポート** ：転送ポート番号。
-    * **ローカルホスト名** ：VPNのホスト名。
-    * **ローカルポート** ：ローカルポート番号。
+    * **VPNタイプ**：OpenVPN
+    * **サーバーアドレス**：サーバーアドレス。
+    * **Account name**：管理者のメールアドレスです。
+    * ** Password **：管理者のパスワードです。
+    * **Certificate**: 証明書のコードです。
+    * **転送IP**：転送IPアドレス。
+    * **転送ポート**：転送ポート番号。
+    * **ローカルホスト名**：VPNのホスト名。
+    * **ローカルポート**：ローカルポート番号。
 
-1. ［**Connect VPN**］をクリックします。
+1. ［ *Connect VPN*］をクリックします。
 
 VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md)を参照してください。
 
@@ -54,7 +54,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 1. Liferay Cloud コンソールで、本番環境に移動します &rarr; `liferay` サービスページです。
 
-1. **Shell** タブをクリックします。
+1. *Shell*タブをクリックします。
 
 1. 次のコマンドを実行して、環境のマスタートークンを取得します：
 
@@ -66,13 +66,13 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 本番環境のマスタートークンを取得したら、DR環境で [環境変数](../reference/defining-environment-variables.md)を設定します。
 
-* **LCP** EXTERNAL **PROJECT_ID** ：本番環境のプロジェクトID（たとえば、 `acme-prd`）
+* **LCP_EXTERNAL_PROJECT_ID**：本番環境のプロジェクトID（たとえば、 `acme-prd`）
 
-* **LCP** BACKUP **RESTORE_SCHEDULE** : 自動バックアップの頻度を定義する [cronスケジュール](https://crontab.guru/) の値。 詳細については、 [Scheduling Automated Backups and Cleanups](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) を参照してください。
+* **LCP_BACKUP_RESTORE_SCHEDULE**: 自動バックアップの頻度を定義する [cronスケジュール](https://crontab.guru/) の値。 詳細については、 [Scheduling Automated Backups and Cleanups](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) を参照してください。
 
 この値をDR環境の [シークレット](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) として設定します。
 
-* **LCP** EXTERNAL **PROJECT** MASTER **TOKEN** ：本番環境のマスタートークン
+* **LCP_EXTERNAL_PROJECT_MASTER_TOKEN**：本番環境のマスタートークン
 
 ```{warning}
 これらの環境変数は、本番環境ではなく、ディザスターリカバリー環境で設定してください。 これらの変数を本番環境で設定すると、バックアップが予期せず本番環境にリストアされることがあります。
@@ -82,14 +82,17 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 ## インシデント中
 
-上記の例を続けて、 **europe-west2** リージョンでホストされている本番環境が、現地時間の午後2時に1時間ごとにバックアップされるようにスケジュールされていると想定します。 このシナリオでは、現地時間の午後2時30分に地域が危険にさらされます。 その間の30分間はバックアップが生成されていないため、データベースとドキュメントのバックアップを本番環境から障害復旧環境に復元する必要があります。 最後の安定した環境は、午後2時に作成されたバージョンです。
+上記の例を続けて、 *europe-west2* リージョンでホストされている本番環境が、現地時間の午後2時に1時間ごとにバックアップされるようにスケジュールされていると想定します。 このシナリオでは、現地時間の午後2時30分に地域が危険にさらされます。 その間の30分間はバックアップが生成されていないため、データベースとドキュメントのバックアップを本番環境から障害復旧環境に復元する必要があります。 最後の安定した環境は、午後2時に作成されたバージョンです。
 
 地域間でのインシデントの際には、以下の手順に従ってください：
 
 1. [データベース復元スケジュールの無効化](#disable-the-database-restoration-schedule)
-1. [最新の本番データをDR環境にコピーします。](#copy-latest-production-data-to-the-dr-environment)
-1. [DR環境のVPNステータスの確認とインデックスの再構築を行います。](#verify-the-dr-environment-s-vpn-status-and-reindex)
-1. [カスタムドメイントラフィックをDR環境に送信します。](#direct-custom-domain-traffic-to-the-dr-environment)
+
+1. [最新の本番データをDR環境にコピーする](#copy-latest-production-data-to-the-dr-environment)
+
+1. [DR環境のVPNステータスの確認とインデックスの再作成](#verify-the-dr-environments-vpn-status-and-reindex)
+
+1. [カスタムドメイントラフィックをDR環境に送信する](#direct-custom-domain-traffic-to-the-dr-environment)
 
 ### データベース復元スケジュールの無効化
 
@@ -99,7 +102,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 アクセス可能な状態で復元スケジュールを無効にするには、以下の手順に従ってください：
 
-1. Liferay Cloud Consoleで、DR環境 &rarr; Backup serviceページ &rarr; Environment Variablesに移動します。
+1. Liferay Cloud Console で、DR 環境 &rarr; Backup service ページ &rarr; Environment Variables に移動します。
 
 1. 目のアイコンをクリックすると、 `LCP_BACKUP_RESTORE_SCHEDULE` の変数の値が表示されます：
 
@@ -119,14 +122,15 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 次の手順に従って、本番環境の最新の安定したバックアップをDR環境に復元します：
 
-1. DR環境で、[**バックアップ**]タブをクリックします。
+1. DR環境で、[ *バックアップ* ]タブをクリックします。
+
 1. 本番環境に対応するタブをクリックします。
 
     ```{note}
     バックアップ履歴では、バックアップが2つのタブに一覧表示されます。 1つはDR環境用、もう1つは本番環境用です。
     ```
 
-1. [**アクション**]ボタン（![Actions](./configuring-cross-region-disaster-recovery/images/03.png)）をクリックして、本番環境の最新の安定したバックアップを取得し、[**復元**]を選択します。
+1. [ *アクション* ]ボタン（![Actions](./configuring-cross-region-disaster-recovery/images/03.png)）をクリックして、本番環境の最新の安定したバックアップを取得し、[*復元*]を選択します。
 
     ![最新の安定したバックアップを本番環境からDR環境に復元します。](./configuring-cross-region-disaster-recovery/images/04.png)
 
@@ -134,7 +138,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 次に、以下の手順でDR環境がトラフィックを受信できる状態にします：
 
-1. DR環境の ［**設定**］ &rarr; ［**VPN**］ ページに移動して、VPNがDR環境に接続されていることを確認します。
+1. DR環境の _［設定］_ &rarr; _［VPN］_ ページに移動して、VPNがDR環境に接続されていることを確認します。
 
     ![DR環境のVPNステータスをチェックして、正しく接続されていることを確認します。](./configuring-cross-region-disaster-recovery/images/05.png)
 
@@ -142,9 +146,9 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 1. DXPインスタンスにログインします（カスタムドメインはまだDR環境を指していないため、IPアドレスを使用します）。
 
-1. [**グローバルメニュー**](![Applications Menu icon](./configuring-cross-region-disaster-recovery/images/06.png) ) &rarr; [**コントロールパネル**]**&rarr;**[検索]* に移動します。
+1. *[グローバルメニュー]* (![Applications Menu icon](./configuring-cross-region-disaster-recovery/images/06.png)) &rarr; *[コントロールパネル]** &rarr; <0>[検索]*に移動します。
 
-1. ［**すべてインデックスを再構築**］ をクリックします。
+1. *［すべてインデックスを再構築］*をクリックします。
 
 インデックスの再構築が完了するまでしばらく待ちます。
 
@@ -152,10 +156,14 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 DR環境でのWebサーバーサービスのカスタムドメインは、元の本番環境のものと一致する必要があります。 また、その設定を実稼働環境から削除する必要もあります：
 
-1. DR環境では、左側のメニューで ［**Services**］ を選択します。
-1. サービスのリストで ［**webserver**］ をクリックします。
-1. [**Custom Domains**]タブをクリックし、本番環境のドメインと一致するようにカスタムドメインを設定します。
+1. DR環境では、左側のメニューで *［Services］* を選択します。
+
+1. サービスのリストで *［webserver］* をクリックします。
+
+1. [ *Custom Domains* ]タブをクリックし、本番環境のドメインと一致するようにカスタムドメインを設定します。
+
 1. 本番環境で同じ設定に移動し、カスタムドメイン設定を削除します。
+
 1. DNSレコードを更新し、カスタムドメインをDR環境に追加します。 詳細は、 [カスタムドメイン](../infrastructure-and-operations/networking/custom-domains.md)を参照してください。
 
 これにより、すべてのトラフィックがDR環境に送られます。
@@ -164,14 +172,19 @@ DR環境でのWebサーバーサービスのカスタムドメインは、元の
 
 ## インシデント後の回復
 
-リージョンインシデントが終了したら、元のリージョンの本番環境（この例では **europe-west2**）に戻す必要があります。 次の手順を実行します：
+リージョンインシデントが終了したら、元のリージョンの本番環境（この例では*europe-west2* ）に戻す必要があります。 次の手順を実行します：
 
 1. [データ作成の凍結](#put-a-freeze-on-data-creation)
-1. [DR環境の手動バックアップを作成します。](#create-a-manual-backup-of-the-dr-environment)
-1. [手動バックアップを本番環境に復元します。](#restore-the-manual-backup-to-production)
-1. [VPNステータスの確認とインデックスの再作成を行います。](#verify-vpn-status-and-reindex)
+
+1. [DR環境の手動バックアップを作成する](#create-a-manual-backup-of-the-dr-environment)
+
+1. [本番環境への手動バックアップの復元](#restore-the-manual-backup-to-production)
+
+1. [VPNステータスの確認とインデックスの再作成](#verify-vpn-status-and-reindex)
+
 1. [サーバーのカスタムトラフィックを本番環境に復元します。](#restore-server-custom-traffic-to-production)
-1. [データベース復元スケジュールを復元します。](#restore-the-database-restoration-schedule)
+
+1. [データベース復元スケジュールを復元する](#restore-the-database-restoration-schedule)
 
 ### データ作成の凍結
 
@@ -181,8 +194,9 @@ DR環境でのWebサーバーサービスのカスタムドメインは、元の
 
 インシデント中、DR環境は本番環境として機能するため、障害時に生成された新しいデータが含まれます。 このデータを保持するには、DR環境をバックアップする必要があります：
 
-1. DR環境では、左側のメニューで[**Backups**]をクリックします。
-1. ［**Backup Now**］ をクリックします。
+1. DR環境では、左側のメニューで[ *Backups* ]をクリックします。
+
+1. *［Backup Now］* をクリックします。
 
 ![DR環境の手動バックアップを作成します。](./configuring-cross-region-disaster-recovery/images/08.png)
 
@@ -190,15 +204,17 @@ DR環境でのWebサーバーサービスのカスタムドメインは、元の
 
 DR環境から通常の本番環境にデータを復元します。
 
-1. DR環境では、左側のメニューで[**Backups**]をクリックします。
+1. DR環境では、左側のメニューで[ *Backups* ]をクリックします。
+
 1. DR環境に対応するタブをクリックします。
 
     ```{note}
     バックアップ履歴では、バックアップが2つのタブに一覧表示されます。 1つはDR環境用、もう1つは本番環境用です。
     ```
 
-1. 最新のバックアップ（作成したばかりのバックアップ）の場合は、[**アクション**]ボタン（![Actions](./configuring-cross-region-disaster-recovery/images/03.png)）をクリックし［**復元**]を選択します。
-1. 本番環境を選択し、[**Deploy Build**]をクリックします。
+1. 最新のバックアップ（作成したばかりのバックアップ）の場合は、[ *アクション* ]ボタン（![Actions](./configuring-cross-region-disaster-recovery/images/03.png)）をクリックし［*復元*]を選択します。
+
+1. 本番環境を選択し、[ *Deploy Build*]をクリックします。
 
 ![バックアップを本番環境にデプロイします。](./configuring-cross-region-disaster-recovery/images/09.png)
 
@@ -206,15 +222,15 @@ DR環境から通常の本番環境にデータを復元します。
 
 以下の手順で、本番環境がトラフィックの受信の準備ができていることを確認してください：
 
-1. 本番環境の ［**設定**］ &rarr; ［**VPN**］ ページに移動して、VPNが本番環境に接続されていることを確認します。
+1. 本番環境の_［設定］_ &rarr; _［VPN］_ ページに移動して、VPNが本番環境に接続されていることを確認します。
 
    適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは、 [Liferay Cloud に VPN サーバーを接続する](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
 
 1. DXPインスタンスにログインします（カスタムドメインはDR環境を指しているため、IPアドレスを使用します）。
 
-1. ［**グローバルメニュー**］ &rarr; ［**コントロールパネル**］ &rarr; ［**検索**］ に移動します。
+1. *［グローバルメニュー］* &rarr; *［コントロールパネル］* &rarr; *［検索］*に移動します。
 
-1. ［**すべてインデックスを再構築**］ をクリックします。
+1. *［すべてインデックスを再構築］*をクリックします。
 
 インデックスの再構築が完了するまでしばらく待ちます。
 
@@ -222,9 +238,11 @@ DR環境から通常の本番環境にデータを復元します。
 
 インシデント中にWebサーバーサービスがすべてのトラフィックをDR環境にリダイレクトしたため、すべてのトラフィックが元の本番環境にリダイレクトされるように、これらの設定を再度更新する必要があります。
 
-1. 左メニューの ［**サービス**］ に移動します。
-1. サービスのリストで ［**webserver**］ クリックします。
-1. ［**Custom Domains**］ タブをクリックします。
+1. 左メニューの _［サービス］_ に移動します。
+
+1. サービスのリストで _［webserver］_ クリックします。
+
+1. _［Custom Domains］_タブをクリックします。
 
    ![DR環境からカスタムドメインを削除します。](./configuring-cross-region-disaster-recovery/images/10.png)
 
@@ -235,7 +253,8 @@ DR環境から通常の本番環境にデータを復元します。
     ```
 
 1. DNSレコードを更新し、カスタムドメインを本番環境に戻します。 詳細は、 [カスタムドメイン](../infrastructure-and-operations/networking/custom-domains.md)を参照してください。
-1. ［**カスタムドメインの更新**］ をクリックします。
+
+1. _［カスタムドメインの更新］_をクリックします。
 
 これでトラフィックは元の本番環境に戻されます。 DR環境に自動的にスケジュールされたデータベースの復元を使用しない場合、災害復旧プロセスは完了します。
 
@@ -245,7 +264,7 @@ DR環境から通常の本番環境にデータを復元します。
 
 1. Liferay Cloudコンソールで、DR環境 &rarr; Backup serviceページ &rarr; Environment Variablesに移動します。
 
-1. `LCP_BACKUP_RESTORE_SCHEDULE` 環境変数を追加し, [削除した際に](#disable-the-database-restoration-schedule) メモした値を復元します。
+1. `LCP_BACKUP_RESTORE_SCHEDULE` 環境変数を追加し, [削除した際に](#disable-the-database-restoration-schedule)メモした値を復元します。
 
 1. 変更を保存します。
 

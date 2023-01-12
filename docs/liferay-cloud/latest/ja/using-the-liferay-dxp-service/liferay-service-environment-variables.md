@@ -1,6 +1,6 @@
 # Liferayサービス環境変数
 
-Liferayサービスには [環境変数の範囲](#environoment-variables-reference) があり、サービスや他のサービスへの接続、DXPのインストール自体を設定するために使用されます。 Liferay Cloud 固有の環境変数を使用するか、DXP [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) を上書きする変数を定義することができます。
+Liferayサービスには [環境変数の範囲](#environment-variables-reference) があり、サービスや他のサービスへの接続、DXPのインストール自体を設定するために使用されます。 Liferay Cloud 固有の環境変数を使用するか、DXP [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html)を上書きする変数を定義することができます。
 
 ## ポータルプロパティのオーバーライド
 
@@ -20,7 +20,7 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 
 * 前方に `LIFERAY_` という接頭語を付けなければなりません。
 
-* 大文字、数字、アンダースコア（`_`）のみで構成されていなければなりません。 この制約に当てはまらない文字は、対応する [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) または [Unicode](https://unicode-table.com/en/) エンドポイントに変換しなければなりません（10進数に変換）。
+* 大文字、数字、アンダースコア（`_`）のみで構成されていなければなりません。 この制約に当てはまらない文字は、対応する [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) または [Unicode](https://unicode-table.com/en/)エンドポイントに変換しなければなりません（10進数に変換）。
 
 これらの要件を満たすためには、すべてのポータルプロパティをこのフォーマットに変換する必要があります。 これにより、Liferay Cloud はフルネームを適切に認識し、対応するポータルプロパティにマッチングさせることができます。
 
@@ -50,7 +50,7 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 | `LIFERAY_JVM_OPTS`                     | `-Xms4096m -Xmx12288m` | JVMオプションは`CATALINA_OPTS` に追加されて、デフォルトの推奨オプションをオーバーライドします。 推奨は、 `-Xms` をLiferayサービスの利用可能なメモリの25%に設定し、 `-Xmx` を75%に設定することです。 |
 
 ```{note}
-まだバージョン `3.x.x` のサービスを使用している場合は、JVM オプションを指定するのに `LIFERAY_JVM_OPTS` の代わりに `LIFERAY_JAVA_OPTS` を使用してください。 バージョン確認の詳細については、 [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
+まだバージョン `3.x.x` のサービスを使用している場合は、JVM オプションを指定するのに `LIFERAY_JVM_OPTS` の代わりに `LIFERAY_JAVA_OPTS` を使用してください。 バージョンの確認方法については，[Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
 ### シークレット
@@ -59,7 +59,7 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 
 | 名前                                           | デフォルト値 | 説明                                                                                                                                         |
 |:-------------------------------------------- |:------ |:------------------------------------------------------------------------------------------------------------------------------------------ |
-| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        |        | Dynatraceアカウントの ［**Deploy Dynatrace**］ &rarr; ［**Start installation**］ &rarr; ［**Set up PaaS monitoring**］ &rarr; ［**Installer Download**］ にある文字列です。 |
+| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        |        | Dynatraceアカウントの*［Deploy Dynatrace］* &rarr; *［Start installation］* &rarr; *［Set up PaaS monitoring］* &rarr; *［Installer Download］*にある文字列です。 |
 | `LCP_SECRET_DATABASE_NAME`                   |        | データベース接続（jdbc、jdbc ping、および読み取り専用のユーザー接続）に使用されるデータベース名です。                                                                                  |
 | `LCP_SECRET_DATABASE_PASSWORD`               |        | jdbc（およびjdbc ping）の設定にのみ使用されるデータベースのパスワードです。                                                                                               |
 | `LCP_SECRET_DATABASE_READONLY_USER`          |        | 読み取り専用ユーザーのユーザー名です。                                                                                                                        |

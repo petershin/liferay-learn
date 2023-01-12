@@ -36,7 +36,7 @@ Liferay Cloudは、完全なDevOps CI/CD戦略、ツール、ワークフロー�
 
 Liferay Cloudのプロジェクトには必ず付属しています。
 
-* [CI/CDの組み込みによる開発の加速化](#accelerated-development-with-built-in-ci-cd)
+* [組み込みCI/CDによる開発の加速](#accelerated-development-with-built-in-cicd)
 * [アプリケーション開発ツール](#application-development-tools)
 * [洞察に満ちたモニタリング](#insightful-monitoring)
 
@@ -56,7 +56,7 @@ Liferay Cloudは、セキュリティに配慮して設計されています。 
 
 ## 高可用性、スケーラビリティ、およびパフォーマンス
 
-[クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) と [ロードバランシング](./infrastructure-and-operations/networking/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 Liferay Cloudは、高可用性を確保するため、マルチリージョンアーキテクチャでデータを配信しています。
+[クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) と [ロードバランシング](./infrastructure-and-operations/networking/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 Liferay Cloudは、高可用性を確保するため、マルチリージョンアーキテクチャでデータを配信します。
 
 [オートスケーリング](./manage-and-optimize/auto-scaling.md) は、予期しないトラフィックスパイクによって安定したパフォーマンスを維持するために、帯域幅とコンピューティング容量が動的に追加されることを保証します。 同様に、アクティビティが少ない期間に、不要なリソースを縮小できます。 チームはインスタンスの使用状況に関する自動通知と電子メールアラートを受信するので、自信を持ってリソースを管理できます。
 
@@ -68,9 +68,9 @@ Liferay Cloudは、セキュリティに配慮して設計されています。 
 
 ![管理者は、リアルタイムのアラートを設定することができます。](./getting-started/images/04.png)
 
-## CI/CDの組み込みによる開発の加速化
+## 組み込みCI/CDによる開発の加速
 
-すぐに使えるCI/CD戦略で、アプリケーションをより速く提供します。 [GithubとJenkins](./platform-services/continuous-integration.md) 統合により、それぞれの新しいコミットまたはプル要求ごとに、 [本番環境または非本番環境](./getting-started/understanding-liferay-cloud-environments.md)にデプロイできるビルドをトリガーできます。
+すぐに使用できる完全に実現されたCI/CD戦略を使用して、アプリケーションをより迅速に提供します。 [GithubとJenkins](./platform-services/continuous-integration.md) 統合により、それぞれの新しいコミットまたはプル要求ごとに、 [本番環境または非本番環境](./getting-started/understanding-liferay-cloud-environments.md)にデプロイできるビルドをトリガーできます。
 
 これらの堅牢なシステムにより、フォールトトレラントプロセスの作成が可能になり、組織固有のニーズを満たし、一般的なサーバーの問題が発生したときにそれを検出して修復します。 これにより、小さなプログラミングエラーが蓄積してサーバーがクラッシュするのを防ぐことができます。
 
@@ -84,13 +84,13 @@ Liferay Cloudは、セキュリティに配慮して設計されています。 
 
 ## 洞察に満ちたモニタリング
 
-Liferay Cloud は、 [アプリケーションメトリクス](./manage-and-optimize/application-metrics.md) を提供するため、IT チームはサイトの健全性とコンピューティング要件を長期的に把握することができます。 管理者は、すぐに使用できる [Dynatrace統合](./manage-and-optimize/application-metrics.md#advanced-application-metrics-on-production) を使用して、CPUとメモリの使用状況、データ転送速度などをすばやく理解することもできます。
+Liferay Cloud は、 [アプリケーションメトリクス](./manage-and-optimize/application-metrics.md) を提供するため、IT チームはサイトの健全性とコンピューティング要件を長期的に把握することができます。 管理者は、すぐに使用できる [Dynatrace統合](./manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) を使用して、CPUとメモリの使用状況、データ転送速度などをすばやく理解することもできます。
 
 ![Liferay DXPインスタンスを含むLiferay Cloudサービスを監視するために、様々なメトリクスを使用します。](./getting-started/images/07.png)
 
 ## 追加情報
 
 * [開発要件](./getting-started/development-requirements.md)
-* [Github リポジトリの設定](./getting-started/configuring-your-github-repository.md)
+* [Githubリポジトリの構成](./getting-started/configuring-your-github-repository.md)
 * [Liferay Cloud 導入ワークフローの概要](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Liferay Cloud Consoleを使った変更のデプロイメント](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)

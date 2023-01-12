@@ -2,12 +2,12 @@
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-When you publish an object, it is integrated automatically with Liferay's Permissions framework. This means you can use [application](#application-permissions) and [resource](#resource-permissions) permissions to manage user access to an object and its entries. With role-based access control, you can ensure only appropriate users can view and use your application's data.
+Objects are integrated automatically with Liferay's permissions framework. You can manage user access to an object and its entries with [application](#application-permissions) and [resource](#resource-permissions) permissions. With role-based access control, you can ensure only appropriate users view and use your application's data.
 
 When defining role permissions, active objects appear according to their scope and panel category key.
 
 ```{note}
-For objects scoped to *Site*, you can determine whether permissions are granted for all sites or only specific sites.
+For site-scoped objects, you can determine whether permissions are granted for all sites or only specific sites.
 ```
 
 ```{important}
@@ -48,7 +48,7 @@ Resource permissions grant access to view and act on resources in the object app
 | View | View entries. |
 
 ```{note}
-When users create object entries, they are automatically assigned the owner role for their entries. This role includes the above permissions.
+When users create object entries, they are assigned the owner role for their entries automatically, which includes the above permissions.
 ```
 
 ## Managing Permissions for Individual Object Entities
@@ -68,7 +68,7 @@ Follow these steps:
 1. Use the checkboxes to grant permissions to [act on the entry](#acting-on-existing-entries) permissions to the desired roles.
 
    ```{note}
-   Permissions defined in the Roles admin override permissions defined at the entity level.
+   Permissions defined in the Roles administrative application override permissions defined at the entity level.
    ```
 
    ![Use the checkboxes to assign permissions to the desired roles.](./permissions-framework-integration/images/02.png)

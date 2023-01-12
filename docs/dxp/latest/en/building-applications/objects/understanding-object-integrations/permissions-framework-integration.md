@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-Objects are integrated automatically with Liferay's permissions framework. You can manage user access to an object and its entries with [application](#application-permissions) and [resource](#resource-permissions) permissions. With role-based access control, you can ensure only appropriate users view and use your application's data.
+Published objects are integrated automatically with Liferay's permissions framework. You can manage user access to an object and its entries with [application](#application-permissions) and [resource](#resource-permissions) permissions. With role-based access control, you can ensure only appropriate users view and use your application's data.
 
 When defining role permissions, active objects appear according to their scope and panel category key.
 

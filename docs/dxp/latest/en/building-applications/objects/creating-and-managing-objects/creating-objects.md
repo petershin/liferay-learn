@@ -4,6 +4,10 @@
 
 Liferay Objects provides development capabilities in the Liferay UI. Using Objects, you can build fully integrated Liferay applications without writing any code or manually deploying modules. This process includes [creating](#creating-object-drafts) an initial draft of the object definition, [editing](#editing-object-drafts) the draft, and finally [publishing](#publishing-object-drafts) it to create the new application. Publishing an object draft creates a fully integrated Liferay application that can be managed and extended at any time via the Objects admin page.
 
+```{important}
+Liferay creates database tables when you publish object definitions, so you cannot use Objects concurrently with the high security database practices described in the [Database Configurations](../../../installation-and-upgrades/reference/database-configurations.md#high-security-database-user-practices) article.
+```
+
 ## Creating Object Drafts
 
 Object drafts are application templates that store the necessary data for creating an object application. Follow these steps to create an object draft:

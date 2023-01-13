@@ -84,7 +84,7 @@ In the list of contents are the following columns:
 | Author                | The content's author.                                                                                                     |
 | Type                  | The content type: web content article, document {bdg-secondary}`7.4+`, or blogs entry {bdg-secondary}`7.4 U23+/GA23+`     |
 | Subtype               | The content [subtype](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). |
-| Site or Asset Library | The location of the content item in the Liferay instance.                                                                 |
+| Site or Asset Library | The content item's location in the Liferay instance.                                                                 |
 | Status                | The workflow statuses for each content item.                                                                              |
 | Vocabulary (x-axis)   | The categories applied to the content item from the content audit tool's [x-axis vocabulary](#content-audit-tool).        |
 | Vocabulary (y-axis)   | The categories applied to the content item from the content audit tool's [y-axis vocabulary](#content-audit-tool).        |
@@ -170,15 +170,17 @@ This table lists available metadata and actions for different asset types.
 
 {bdg-secondary}`Available 7.4 U53+/GA53+`
 
-The Content Info panel displays the version history for assets from Web Content and Documents and Media. To view the version history, click the *Info* button (![Info Button](../../images/icon-information.png)) for a content item and go to the *Versions* tab.
+The Content Info panel displays the version history for assets from Web Content and Documents and Media. To view the version history, click *Info* (![Info Button](../../images/icon-information.png)) for a content item and go to the *Versions* tab.
 
-This tab lists up to 10 available versions for the item. If there are more versions, you can view them by clicking the *View More* button.
+This tab lists up to 10 available versions for the item. If there are more versions, you can view them by clicking the View More button.
 
-Each version displays the author of the version, the time of its creation, and a changelog. You can click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for a version to access these actions:
+Each version displays the author of the version, the time of its creation, and a changelog. You can click the Actions button (![Actions Button](../../images/icon-actions.png)) for a version to access these actions:
 
-* ***Preview*** - Preview the web content or document.
-* ***Compare To***  - Compare the selected version with another version. This opens a new page that shows additions, deletions and formatting changes between versions. This action is available only when there are two or more active versions.
-* ***Expire*** - Expire a version and activate the next available version. For instance, if there are two versions, 1.2 and 1.1, and you expire 1.2, 1.1 becomes the active version.
+**Preview:** Show the rendered web content or document.
+
+**Compare To:**  Show the difference between the selected version and another version. This opens a new page that shows additions, deletions and formatting changes between versions. This action is available only when there are two or more active versions.
+
+**Expire:** Deactivate a version and activate the next available version. For instance, if there are two versions, 1.2 and 1.1, and you expire 1.2, 1.1 becomes the active version.
 
 ![Click the Versions tab to view the version history for a content dashboard item.](./content-dashboard-interface/images/11.png)
 

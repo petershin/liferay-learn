@@ -39,7 +39,7 @@ Run the Liferay Theme Generator with these steps:
     ```
 
     ```{important}
-    You can add the name of a base theme to this command to base your new theme off of it. For example, running `yo liferay-theme:classic` bases your new theme off of DXP's Classic theme.
+    You can add the name of a base theme to this command to use it as the basis for your new theme. For example, running `yo liferay-theme:classic` bases your new theme on DXP's Classic theme.
     ```
     <!-- Add link to an explanation of choosing (and changing) the base theme when available.-->
 
@@ -49,7 +49,7 @@ Run the Liferay Theme Generator with these steps:
     ? What would you like to call your theme? (My Liferay Theme)
     ```
 
-1. Type an ID for your theme at the prompt. When the theme is generated, the ID determines the name of the folder that your theme is built inside of. You can also press Enter to use a default ID based on the name.
+1. Type an ID for your theme at the prompt. When the theme is generated, the ID determines the name of the folder where your theme is built. You can also press Enter to use a default ID based on the name.
 
     ```
     ? What id would you like to give to your theme? (my-liferay-theme)
@@ -103,7 +103,7 @@ Disable Dart SASS in your theme to avoid this error. Add these `dartSass` and `n
 }
 ```
 
-Run `npm install` to install LibSass. The next time you build with gulp, the errors caused by LibSass disappear.
+Run `npm install` to install LibSass. The next time you build with gulp, the errors caused by Dart SASS disappear.
 
 <!-- Add Using Blade to Create a Theme section, with a link to Theme Templates documentation when available-->
 

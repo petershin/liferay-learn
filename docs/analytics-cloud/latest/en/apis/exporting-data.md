@@ -1,18 +1,18 @@
 # Exporting Data
 
-Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals/individuals-dashboard.md). Analytics data can also be fetched and exported with the use of Analytics Cloud's APIs. Specifically, you can fetch  individual data, segment data, or page data.
+Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals/individuals-dashboard.md). Analytics data can also be fetched and exported with the use of Analytics Cloud's APIs. Specifically, you can fetch individual data, segment data, or page data.
 
 ## Requesting a Data Export
 
 1. Take note of your workspace's access token. See [Authentication](authentication.md) to generate or get an access token.
 
-1. The data request takes the following type of format:
+1. The data request takes the following format:
 
    ```
-   curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/export/{type}?fromDate={ISO 8601 date and time}&toDate={ISO 8601 date and time}
+   curl -H "Authorization: Bearer [token]" -L https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
    ```
 
-   Replace `{token}` with your specific access token. Replace `{type}` with either **individual**, **page**, or **segment**. Give a start date and time by replacing `{ISO 8601 date and time}` after `fromDate=`. Give an end date and time by replacing `{ISO 8601 date and time}` after `toDate=`. Make sure to use the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date and time format. Note that the start date and time and end date and time are required in the request.
+   Replace `[token]` with your specific access token. Replace `[type]` with either **individual**, **page**, or **segment**. Give a start date and time by replacing `[ISO 8601 date and time]` after `fromDate=`. Give an end date and time by replacing `[ISO 8601 date and time]` after `toDate=`. Make sure to use the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date and time format. Note that the start date and time and end date and time are required in the request.
 
    For example, a request for page data might look like this:
 
@@ -20,7 +20,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
    curl -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z'
    ```
 
-2. Upon requesting the data, you will see a message like this:
+2. After requesting the data, a message like this appears:
 
    ```json
    {"fromDate":"2022-01-01T00:00:01.000Z","createdDate":"2022-06-29T17:50:46.824Z","toDate":"2022-01-05T23:59:59.000Z","message":"A new data export file for this date range and type will be created. Please come back later.","type":"PAGE","status":"PENDING"}%   
@@ -28,9 +28,9 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
 
    It may take some time (i.e. a few minutes to a few hours) for the request to finish processing depending on the size of the data being fetched.
 
-3. Run the same command again and the data will be returned in your terminal window. Note, that if the request is still processing, you will see a message with `"status":"RUNNING"` and to check again later. 
+3. Run the same command again and the data is returned in your terminal window. Note that if the request is still processing, a message with `"status":"RUNNING"` appears. Check again later. 
 
-   If you wish to download the data as a JSON file, add `>> {filename.json}` to the end of the request. For example:
+   If you wish to download the data as a JSON file, add `>> [filename.json]` to the end of the request. For example:
 
    ```
    curl -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z' >> page-data.json

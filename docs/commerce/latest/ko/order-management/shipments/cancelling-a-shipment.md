@@ -1,0 +1,35 @@
+# 배송 취소
+
+구매자가 주문을 취소하는 경우 [배송](../orders/processing-an-order.md)전에</a> 판매자는
+Commerce에서 배송을 취소할 수 있습니다. 선적 취소는 주문을 종료하는 것이 **** 아니라는 점에 유의하십시오. 주문 상태 관리는 제어판의 _주문_ 메뉴에서 수행됩니다.</p> 
+
+배송을 취소하려면:
+
+1. _제어판_ → _상거래_ → _배송_로 이동합니다.
+2. 취소할 배송 옆에 있는 _점 3개 아이콘_ 을 클릭합니다(예: _42498_).
+   
+   ![삭제 버튼](./cancelling-a-shipment/images/01.png)
+
+3. _삭제_을 클릭합니다.
+
+4. 확인 창에서 _확인_ 을 클릭합니다.
+
+배송이 취소되었습니다.
+
+![배송이 삭제되었습니다.](./cancelling-a-shipment/images/02.png)
+
+배송을 취소하면 [_주문_ 메뉴](../orders/orders-menu-reference-guide.md)의 _전송_ 탭에서 상태가 변경됩니다.
+
+![업데이트된 전송 탭](./cancelling-a-shipment/images/03.png)
+
+새 배송이 동일한 주문에서 [생성](./creating-a-shipment.md) 인 경우 새 배송 번호가 생성됩니다(예: _42888_).
+
+
+
+## 추가 정보
+
+* [선적 소개](./introduction-to-shipments.md)
+* [주문 처리](../orders/processing-an-order.md)
+* [배송 만들기](./creating-a-shipment.md)
+* [주문 메뉴 참조 가이드](../orders/orders-menu-reference-guide.md)
+* [주문 정보](../orders/order-information.md)

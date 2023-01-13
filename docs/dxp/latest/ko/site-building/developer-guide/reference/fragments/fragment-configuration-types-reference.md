@@ -1,0 +1,456 @@
+# 조각 구성 유형 참조
+
+이 참조는 프래그먼트에 사용 가능한 구성 유형을 나열합니다. 프래그먼트를 구성 가능하게 만드는 방법에 대한 자세한 내용은 [프래그먼트에 구성 옵션 추가](../../developing-page-fragments/adding-configuration-options-to-fragments.md) 을 참조하십시오.
+
+구현할 수 있는 구성 가능한 조각 유형은 다음과 같습니다.
+
+- `checkbox`
+- `colorPicker` (Liferay 7.4 이상 사용 가능)
+- `colorPalette`
+- `itemSelector` (Liferay 7.3 이상 사용 가능)
+- `select`
+- `text`
+- `videoSelector` (Liferay 7.4 이상 사용 가능)
+- `collectionSelector` (Liferay 7.3 이상 사용 가능)
+
+```{note}
+FreeMarker 컨텍스트에 삽입된 구성 값은 JSON 파일에 지정된 정의된 'datatype' 값을 따릅니다. 예를 들어 `dataType`이 문자열인 경우 `configuration.[name-value]?is_string`은 `true`입니다.
+```
+
+## 확인란 구성
+
+이 JSON 구성은 부울 값 선택이 필요한 경우에 구현할 수 있는 확인란을 만듭니다.
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "hideBody",
+                    "label": "Hide Body",
+                    "description": "hide-body",
+                    "type": "checkbox",
+                    "defaultValue": false
+                }
+                ...
+            ]
+        }
+    ]
+}
+```
+
+![확인란 구성은 부울 선택이 필요할 때 유용합니다.](./fragment-configuration-types-reference/images/01.png)
+
+## 색상 선택기 구성
+
+{bdg-secondary}`사용 가능한 Liferay 7.4+`
+
+색상 선택기 JSON 구성은 모든 색상을 선택할 수 있는 유연한 색상 선택기를 만듭니다. 다음 방법 중 하나를 사용하여 색상을 선택할 수 있습니다.
+
+* 왼쪽에 있는 색상을 클릭하여 색상 선택기를 열어 색상을 선택합니다.
+
+* 텍스트 상자에 색상의 16진수 코드를 입력합니다.
+
+* Stylebook</em> 의 *값 버튼을 클릭하여 현재 사용 중인 [스타일 북](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)에서 정의된 색상을 선택할 사전 정의된 색상 메뉴를 엽니다. 그러면 단추를 다시 눌러 연결을 해제할 때까지 필드 값이 선택한 토큰에 연결됩니다. 토큰 값의 연결을 해제하면 선택한 색상이 해당하는 16진수 코드 값으로 다시 변환됩니다.</p></li>
+
+* 색상 피커에 기본값이 정의되어 있지 않으면 *기본값* 드롭다운 메뉴를 클릭하여 현재 사용 중인 스타일 북에서 색상을 선택합니다. 이것은 값을 선택할 때 Stylebook의 값 단추와 동일하게 작동합니다.</ul>
+
+![색상 선택기 구성을 사용하면 색상 값을 직접 입력하거나 범위에서 선택하거나 스타일 북에서 선택할 수 있습니다.](./fragment-configuration-types-reference/images/02.png)
+
+```{note}
+사용 중인 테마에 [스타일 북에 대한 토큰 정의](../../../site-appearance/style-books/style-book-token-definitions.md)가 없는 경우 페이지의 색상 선택기 구성 [색상 팔레트](#color-palette 구성) 구성으로 대체됩니다.
+```
+
+이 JSON 구성은 `headingColor`이라는 색상 선택기 필드를 생성합니다.
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "headingColor",
+                    "label": "Heading Color",
+                    "description": "heading-color",
+                    "type": "colorPicker",
+                    "defaultValue": "#FF0000"
+                }
+                ...
+            ]
+        }
+    ]
+}
+```
+
+`colorPicker` 유형은 구성된 이름으로 선택한 색상 값을 보유하는 객체를 저장합니다. 다음과 같이 프래그먼트의 HTML에서 이 객체를 참조할 수 있습니다.
+
+```html
+<div class="fragment_69">
+    <h1 style="color: ${configuration.headingColor}">
+        This text's color is configurable.
+    </h1>
+</div>
+```
+
+조각이 렌더링되면 토큰 `${configuration.OBJECT_NAME}` 가 선택한 색상으로 대체됩니다. 색상이 선택되는 방식에 따라 값의 유형이 달라집니다.
+
+* 색상을 직접 선택한 경우 해당 16진수 코드 값으로 대체됩니다.
+* 현재 스타일 북에서 색상을 선택한 경우 연결된 토큰에 대한 CSS 변수(예: `var(--danger)`)로 대체됩니다.
+* 현재 테마에 사용할 토큰 정의가 없는 경우(따라서 [색상 팔레트](#color-palette-configuration) 이 대신 사용됨) CSS 색상(예: `rgb(255, 0, 0)`)으로 대체됩니다.
+
+## 색상 팔레트 구성
+
+색상표 JSON 구성은 색상을 선택해야 하는 경우에 구현할 수 있는 색상 선택기를 만듭니다. [color picker 구성](#color-picker-configuration)과 달리 현재 사용하고 있는 [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)의 색상 체계에 구성된 테마 색상을 기반으로 한 옵션만 제공합니다.
+
+이 구성은 `textColor`이라는 색상 팔레트 필드를 만듭니다.
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "textColor",
+                    "label": "Text color",
+                    "type": "colorPalette",
+                    "dataType": "object",
+                    "defaultValue": {
+                        "cssClass": "white",
+                        "rgbValue": "rgb(255,255,255)"
+                    }
+                }
+                ...
+            ]
+        }
+    ]
+}
+```
+
+`colorPalette` 유형은 `cssClass` 및 `rgbValue`의 두 값을 가진 객체를 저장합니다.
+
+예를 들어 위의 스니펫을 구현하면 다음과 같이 FreeMarker 컨텍스트에서 사용할 수 있습니다.
+
+```html
+<h3 class="text-${configuration.textColor.cssClass}">Example</h3>
+```
+
+흰색을 선택하는 경우 `h3` 태그 제목에는 클래스 `text-white'`이 있습니다.
+
+![색상 팔레트 구성은 색상 선택이 필요할 때 유용합니다.](./fragment-configuration-types-reference/images/03.png)
+
+## 항목 선택기 구성
+
+{bdg-secondary}`사용 가능한 Liferay 7.3+`
+
+이 구성은 조각에 포함할 하나의 기존 콘텐츠(기본적으로 웹 콘텐츠 기사, 블로그 항목 또는 문서)를 선택하기 위한 선택기를 만듭니다.
+
+```json
+{
+"fieldSets": [{
+    "fields": [{
+        "label": "select-content",
+        "name": "itemSelector1",
+        "type": "itemSelector",
+        "typeOptions": {
+            "enableSelectTemplate": true
+        }
+    }]
+}]
+}
+```
+
+작성자가 특정 유형의 콘텐츠만 선택할 수 있는 고급 구성을 제공할 수 있습니다. 아래 구성은 웹 콘텐츠 기사만 선택할 수 있도록 지정합니다. 선택적 `itemSubtype` 속성은 선택한 웹 콘텐츠 기사가 선택될 구조 `article-structure-key-15` 을 사용해야 함을 지정합니다.
+
+```json
+{
+"fieldSets": [{
+    "fields": [{
+        "label": "select-content",
+        "name": "itemSelector1",
+        "type": "itemSelector",
+        "typeOptions": {
+    "itemType" : "com.liferay.journal.model.JournalArticle",
+    "itemSubtype": "article-structure-key-15"
+        }
+    }]
+}]
+}
+```
+
+이 예에서는 구조 `metadataset-structure-key-2` 를 사용하는 `img` 또는 `jpg` MIME 유형의 문서만 선택할 수 있도록 지정합니다.
+
+```json
+{
+"fieldSets": [{
+    "fields": [{
+        "label": "select-content",
+        "name": "itemSelector1",
+        "type": "itemSelector",
+        "typeOptions": {
+    "itemType" : "com.liferay.portal.kernel.repository.model.FileEntry",
+    "itemSubtype": "metadataset-structure-key-2",
+    "mimeTypes": ["img/jpg"]
+        }
+    }]
+}]
+}
+```
+
+이 예에서는 블로그 항목만 선택할 수 있도록 지정합니다.
+
+```json
+{
+"fieldSets": [{
+    "fields": [{
+        "label": "select-content",
+        "name": "itemSelector1",
+        "type": "itemSelector",
+        "typeOptions": {
+    "itemType" : "com.liferay.blogs.model.BlogsEntry",
+        }
+    }]
+}]
+}
+```
+
+그런 다음 웹 콘텐츠 기사에 대한 이 HTML 스니펫을 사용하여 프래그먼트의 콘텐츠를 렌더링할 수 있습니다.
+
+```markup
+<div class="fragment_name">
+  [#if configuration.itemSelector1.content??]
+       ${configuration.itemSelector1.content}
+  [/#if]
+</div>
+```
+
+콘텐츠의 특정 부분에 액세스해야 하는 경우 키 `[name-of-field]Object` (아래 예에서는`itemSelector1Object` ) 아래 조각의 Java 객체에 액세스할 수도 있습니다. 이 예는 웹 콘텐츠 기사의 제목, 설명 및 본문을 렌더링합니다.
+
+```markup
+<div class="fragment_name">
+  [#if configuration.itemSelector1.content??]
+    ${itemSelector1Object.getTitle()}
+    ${itemSelector1Object.getDescription()}
+    ${itemSelector1Object.getContent()}
+  [/#if]
+</div>
+```
+
+![항목 선택기 구성은 기존 콘텐츠를 표시하는 옵션 선택이 필요할 때 유용합니다.](./fragment-configuration-types-reference/images/04.png)
+
+## 구성 선택
+
+이 JSON 구성은 미리 정의된 옵션을 선택해야 하는 경우에 구현할 수 있는 선택기를 만듭니다.
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "numberOfFeatures",
+                    "label": "Number Of Features",
+                    "description": "number-of-features",
+                    "type": "select",
+                    "dataType": "int",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "1"},
+                            {"value": "2"},
+                            {"value": "3"}
+                        ]
+                    },
+                    "defaultValue": "3"
+                }
+                ...
+            ]
+        }
+    ]
+}
+```
+
+![선택 구성은 옵션 선택이 필요할 때 유용합니다.](./fragment-configuration-types-reference/images/05.png)
+
+## 텍스트 구성
+
+이 JSON 구성은 텍스트 옵션을 수동으로 입력해야 하는 경우에 구현할 수 있는 입력 텍스트 필드를 생성합니다.
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "buttonText",
+                    "label": "Button Text",
+                    "description": "button-text",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "Go Somewhere"
+                }
+                ...
+            ]
+        }
+    ]
+}
+```
+
+![텍스트 구성은 텍스트 입력 옵션이 필요할 때 유용합니다.](./fragment-configuration-types-reference/images/06.png)
+
+## 비디오 선택기
+
+{bdg-secondary}`사용 가능한 Liferay 7.4+`
+
+`videoSelector` 유형을 사용하여 비디오 선택기를 만들어 [외부 비디오](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) 조각을 다른 조각에 통합할 수 있습니다.
+
+```json
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "label": "My Video Selector",
+          "name": "myVideoConfig",
+          "type": "videoSelector"
+        }
+      ]
+    }
+  ]
+}
+```
+
+이것은 기본적으로 포함된 비디오가 있는 조각을 원할 때 유용합니다. 다음 JSON 구성 샘플은 카드 조각에 외부 비디오 선택기를 통합하는 방법을 보여줍니다.
+
+```json
+{
+"fieldSets": [
+    {
+        "fields": [
+            {
+                "label": "Video",
+                "name": "video",
+                "type": "videoSelector"
+            }
+        ]
+    },
+    {
+        "configurationRole": "style",
+        "fields": [
+            {
+                "dataType": "string",
+                "defaultValue": "w-100",
+                "label": "image-size",
+                "name": "imageSize",
+                "type": "select",
+                "typeOptions": {
+                    "validValues": [
+                        {
+                            "label": "fit",
+                            "value": "w-100"
+                        },
+                        {
+                            "label": "original-size",
+                            "value": "w-0"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+]
+}
+```
+
+![비디오 선택기를 사용하면 조각에 외부 비디오를 포함할 수 있습니다.](./fragment-configuration-types-reference/images/07.png)
+
+```{note}
+`videoSelector` 유형은 [외부 비디오](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video ) 조각이지만 [동영상 URL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) 조각은 아닙니다.
+```
+
+## 컬렉션 선택기
+
+{bdg-secondary}`사용 가능한 Liferay 7.3+`
+
+`collectionSelector` 구성 유형을 사용하여 [컬렉션](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) 또는 컬렉션 공급자를 포함하는 프래그먼트를 개발할 수 있습니다. 수동 및 동적 컬렉션 모두에서 `collectionSelector` 을 사용할 수 있습니다.
+
+```{note}
+개발자는 컬렉션 공급자를 사용하여 고급 기준으로 특정 컬렉션을 만들 수 있습니다. 자세히 알아보려면 [정보 목록 제공자 만들기](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider)에 대한 정보를 읽어보십시오. 프레임워크](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서.
+```
+
+다음 JSON 구성은 `collectionSelector`을 사용하는 방법을 보여줍니다.
+
+```json
+{ 
+    "fieldSets": [   
+        {            
+        "label": "Collection",            
+        "fields": [                
+            {                    
+                "name": "collection",                    
+                "type": "collectionSelector"                
+            }            
+        ]        
+        } 
+    ]
+}
+```
+
+다음 HTML 코드 샘플과 함께 이 조각 구성을 사용하여 컬렉션 항목을 나열할 수 있습니다. `collectionObjectList` 은 [콘텐츠 페이지 편집기](../../../creating-pages/using-content-pages/content-page-editor-ui-reference.md)에서 선택된 컬렉션을 나타냅니다.
+
+HTML에서 이 콜렉션을 참조하려면 JSON 구성에서 콜렉션 `이름` 과 `ObjectList` 접미부를 사용하십시오. 이전 JSON 코드 발췌에서 컬렉션 `이름` 은 `컬렉션` 이므로 HTML은 `collectionObjectList`를 사용하여 컬렉션을 참조합니다.
+
+```html
+<div class="fragment_310">
+ <h1>
+  List of Items:
+ </h1>
+  <ul>
+  [#if collectionObjectList??]
+   [#list collectionObjectList as item]
+    <li>${item.title}</li>
+   [/#list]
+  [/#if]
+  </ul>
+</div>
+```
+
+![컬렉션 구성을 사용하여 컬렉션 선택기로 프래그먼트를 개발할 수 있습니다.](./fragment-configuration-types-reference/images/08.png)
+
+`collectionSelector` 구성에서 `itemType` 을 사용하여 컬렉션 선택기를 필터링할 수도 있습니다. 예를 들어 웹 콘텐츠와 블로그를 포함하여 다른 컬렉션이 있는 경우 블로그 컬렉션만 표시하도록 컬렉션 선택기를 제한할 수 있습니다. 이 JSON 샘플은 이 구성을 보여줍니다.
+
+```json
+{ 
+ "fieldSets": [   
+  {            
+   "label": "Collection",            
+   "fields": [                
+    {                    
+     "name": "collection",                    
+     "type": "collectionSelector",
+     "typeOptions": {
+      "itemType": "com.liferay.blogs.model.BlogsEntry"
+               }
+    }            
+   ]        
+  } 
+ ]
+}
+```
+
+이 샘플 구성을 사용하면 컬렉션 유형이 자산이기 때문에 웹 콘텐츠와 블로그를 모두 포함하는 컬렉션이 컬렉션 선택기에서 필터링됩니다.
+
+![웹 콘텐츠 및 블로그 항목을 포함하는 컬렉션은 자산 유형에 해당합니다.](./fragment-configuration-types-reference/images/09.png)
+
+```{tip}
+`itemTime` 외에도 구성에서 `itemSubtype`을 지정할 수 있습니다. `itemSubtype`은 자산 `classPK`에 해당합니다.
+```
+
+## 추가 정보
+
+- [조각 개발](../../developing-page-fragments/developing-fragments-intro.md)
+- [단편별 태그 참조](./fragment-specific-tags-reference.md)
+- [페이지 조각 편집기 인터페이스 참조](./page-fragment-editor-interface-reference.md)
+- [Style Book을 사용하여 사이트 모양 표준화](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)

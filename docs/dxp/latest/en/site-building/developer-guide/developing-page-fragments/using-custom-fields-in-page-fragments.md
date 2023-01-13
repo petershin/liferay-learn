@@ -2,7 +2,7 @@
 
 If you've added [custom fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) to Liferay's users or pages, you can access them in fragments. To get the value of a page custom field, use
 
-```html
+```ftl
 layout.getExpandoBridge().getAttribute("ATTRIBUTE_NAME")
 ```
 
@@ -10,7 +10,7 @@ To use a page custom field in a fragment, first [add the custom field](../../../
 
 This example HTML uses the custom field `showFooter` to show or hide the placeholder `footer` element on a page:
 
-```html
+```ftl
 [#assign showFooter = layout.getExpandoBridge().getAttribute("showFooter")]
 
 [#if showFooter]
@@ -26,7 +26,7 @@ Toggling a page's `showFooter` value to true or false shows or hides the footer,
 
 To access custom fields for users, use
 
-```html
+```ftl
 user.getExpandoBridge().getAttribute("ATTRIBUTE_NAME")
 ```
 
@@ -34,7 +34,7 @@ Guest users may not have a value for the custom field. In this case, attempting 
 
 You can add FreeMarker code like this to check whether the value exists before using it:
 
-```
+```ftl
 [#if user.getExpandoBridge().getAttribute("showFooter")??]
     ...
 [#/if]

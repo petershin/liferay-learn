@@ -32,7 +32,7 @@ This makes the account relationship field mandatory, so users must select an acc
 
 ## Account Restriction and User Roles
 
-After restricting object data by account, entries appear according to the user's permissions. Permissions at the regular role scope apply to all object data, while permissions at the organization or account scope apply to specific accounts. For example, if a user has a regular role with the view permission, then the user can view all data from all accounts. However, if a user only has an account role with the view permission, then the user can only view object data associated with their account.
+After restricting object data by account, entries appear according to the user's permissions. Permissions at the regular role scope apply to all object data, while permissions at the organization or account scope apply to specific accounts. For example, if users have a regular role with the view permission, they can view all data from all accounts. However, if users only have an account role with the view permission, they can only view object data associated with their accounts.
 
 | Permission Scope | Description |
 | :--- | :--- |
@@ -51,7 +51,7 @@ When setting up roles for account restriction, consider these factors:
 ```{important}
 Account and organization roles are only supported in objects with account restriction enabled.
 
-Account restriction does not support the default Account Member and Organization User roles. These roles do not automatically grant access to related object data.
+Account restriction does not support the default Account Member and Organization user roles. These roles do not automatically grant access to related object data.
 ```
 
 ## Example Use Case: Insurance Claims
@@ -62,7 +62,7 @@ Consider an insurance scenario with these requirements:
 - Customer success managers (CSMs) must review claims made by the accounts they manage.
 - A claims manager must oversee all claims.
 
-To achieve this, [create a Claims object](../creating-objects.md) with account restriction enabled. Then [create organizations](../../../../users-and-permissions/organizations/creating-and-managing-organizations.md#adding-organizations) for grouping CSMs and [associate each organization](../../../../users-and-permissions/accounts.md#organizations-tab) with the appropriate business accounts. Create the following [account](#account-role), [organization](#organization-role), and [regular](#regular-role) roles and [assign them](../../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md) to the appropriate users. Since the Claims object is company-scoped, account and organization users must also have a separate regular role that grants the `Portal: View Control Panel Menu` and `Claims: Access in Control Panel` permissions. For convenience, you can assign these permissions to the default User role.
+To achieve this, [create a Claims object](../creating-objects.md) with account restriction enabled. Then [create organizations](../../../../users-and-permissions/organizations/creating-and-managing-organizations.md#adding-organizations) for grouping CSMs and [associate each organization](../../../../users-and-permissions/accounts.md#organizations-tab) with the appropriate business accounts. Create the following [account](#account-role), [organization](#organization-role), and [regular](#regular-role) roles and [assign them](../../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md) to the appropriate users. Since the Claims object is company-scoped, account and organization users must also have a separate regular role that grants the `Portal: View Control Panel Menu` and `Claims: Access in Control Panel` permissions. For convenience, you can assign these permissions to the default user role.
 
 ```{note}
 In this example, each role can create claim entries, but granting that permission is not necessary for the organization and regular roles.

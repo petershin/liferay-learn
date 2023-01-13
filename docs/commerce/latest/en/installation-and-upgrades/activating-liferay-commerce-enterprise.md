@@ -3,7 +3,7 @@
 Starting with Liferay DXP/Portal 7.3, Commerce ships with all Liferay bundles and Docker containers and does not require separate installation. However, to access and use the enterprise features of Commerce, the process differs depending on the DXP version you're running. For Liferay DXP 7.4 GA1+, all Commerce modules are enabled by default and ready for use. For DXP 7.3 FP3/SP2+, Commerce is activated using a [portal property](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html), while earlier versions use a Commerce license file. This property doesn't affect Liferay Portal bundles/images since they don't include the enterprise features.
 
 ```{important}
-In Liferay 7.4 U48+/GA48+, the portal property for disabling Commerce modules (`enterprise.product.commerce.enabled`) is no longer available. This is because Commerce features are now available and supported for all customers with valid DXP 7.4 subscriptions and disabling Commerce can cause inconsistencies with other Liferay DXP modules.
+In Liferay 7.4 U48+/GA48+, the portal property for disabling Commerce modules (`enterprise.product.commerce.enabled`) was removed. Commerce features are now available and supported for all customers with valid DXP 7.4 subscriptions. Disabling Commerce can cause inconsistencies with other Liferay DXP modules.
 ```
 
 ## Disabling Liferay Commerce Enterprise for Liferay DXP 7.4 GA1+
@@ -46,7 +46,7 @@ LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=false
 
 See [Configuring Containers](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties) for more information.
 
-If successful, the Commerce modules no longer appear in the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)).
+If successful, the Commerce modules no longer appear in the Global Menu (![Global Menu](../images/icon-applications-menu.png)).
 
 ## Activating Liferay Commerce Enterprise for Liferay DXP 7.3 FP3/SP3+
 
@@ -84,7 +84,7 @@ LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=true
 
 ### Verifying Successful Activation
 
-To verify the property has been added successfully, start your Liferay DXP instance and open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)). If successful, you can view and access Commerce modules in the *Commerce* tab. Alternatively, you can open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Server Administration* &rarr; *Properties* &rarr; *Portal Properties*. The new property should be listed along with other properties.
+To verify the property was added successfully, start Liferay DXP and open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). If successful, you can view and access Commerce modules in the Commerce tab. Alternatively, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Server Administration* &rarr; *Properties* &rarr; *Portal Properties*. The new property appears with other properties.
 
 ## Activating Liferay Commerce Enterprise for Liferay DXP 7.1-7.3 FP2
 
@@ -151,9 +151,9 @@ Verify your key has successfully deployed via the console:
 
 ### Updating an Expired Commerce Enterprise License
 
-Commerce Enterprise licenses are only valid for a set period of time based on the terms of a user's subscription. When a license nears expiration (i.e., < 30 days for most licenses, < 7 days for a 30 day license), a warning message is displayed in Commerce applications for Administrators. A license has a 2 day grace period after its given expiration date before it expires.
+Commerce Enterprise licenses are only valid for a set period of time based on the terms of a user's subscription. When a license nears expiration (i.e., < 30 days for most licenses, < 7 days for a 30 day license), a warning message appears in Commerce applications for administrators. A license has a 2 day grace period after its given expiration date before it expires.
 
-If a license expires, the Commerce modules remain activated, though it is no longer usable in the UI and does not allow API calls until the license is updated. A notification is displayed on Commerce applications for all users, indicating the Commerce application is unavailable. Administrators are asked to update the license, while other users are asked to contact their administrator.
+If a license expires, the Commerce modules remain activated, but are no longer usable in the UI, nor are API calls allowed until the license is updated. A notification appears on Commerce applications for all users, indicating the Commerce application is unavailable. Administrators are asked to update the license, while other users are asked to contact their administrator.
 
 The console also displays an error message during server restart:
 
@@ -161,7 +161,7 @@ The console also displays an error message during server restart:
    ERROR [main][LicenseManager:?] Liferay Commerce license is expired
    ```
 
-In order to reactivate Liferay Commerce Enterprise, first remove the expired files from the server, and then [deploy](#deploying-commerce-activation-keys) your new key.
+To reactivate Liferay Commerce Enterprise, first remove the expired files from the server, and then [deploy](#deploying-commerce-activation-keys) your new key.
 
    ```{tip}
    You can remove and add activation keys while the server is running.

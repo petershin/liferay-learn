@@ -30,7 +30,7 @@ Redeploy your application and the configuration UI is now under *Content and Dat
 
 If you prefer your own section and category, you can create them by implementing the `ConfigurationCategory` interface.
 
-If you followed the example project in [Setting and Accessing Configurations](./setting-and-accessing-configurations), this code can be added to the application's `configuration` folder. This is the same folder that holds the configuration interface Java file. The code below creates a foobar section and a foobar category:
+If you followed the example project in [Setting and Accessing Configurations](./setting-and-accessing-configurations.md), this code can be added to the application's `configuration` folder. This is the same folder that holds the configuration interface Java file. The code below creates a foobar section and a foobar category:
 
 ```java
 package com.acme.n2f3.web.internal.configuration;

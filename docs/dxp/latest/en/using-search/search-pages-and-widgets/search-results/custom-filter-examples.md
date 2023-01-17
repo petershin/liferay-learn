@@ -278,7 +278,7 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
         - **Custom Parameter Name:** `cparam`
 
       ```{important}
-      This example only uses custom filters to match and boost one nested field. Therefore the custom parameter isn't needed. To set up custom filters on multiple nested fields in the same page, you must configure separate custom parameter names for each child query. Otherwise, filtering on the same nested field (e.g., `ddmFieldArray.ddmFieldValueKeyword_en_US`) causes the filters to collide.
+      This example uses custom filters on just one nested field. Therefore the custom parameter in the child queries (`cparam`) isn't technically required. To set up custom filters on multiple nested fields in the same page, you must configure custom parameter names for the child queries, as demonstrated in this example. Adding filters for a second nested field would require two child custom filters sharing a different custom parameter name (e.g., `cparam2`).
       ```
 
 1. Now repeat the search for _test content_ and verify that the Boosted Web Content appears above the Not Boosted Web Content.

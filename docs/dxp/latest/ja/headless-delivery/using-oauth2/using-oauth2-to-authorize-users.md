@@ -7,35 +7,35 @@ OAuth 2.0の認証プロトコルを使用してLiferayのヘッドレスREST AP
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-1. *グローバルメニュー* (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、*［コントロールパネル］* &rarr; *［セキュリティ］* &rarr; *［OAuth 2 管理］*に移動します。
+1. **グローバルメニュー**(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ &rarr; ［**セキュリティ**］ &rarr; ［**OAuth 2 管理**］ に移動します。
 
-1. *追加* (![アイコンの追加](../../images/icon-add.png))をクリックして、新規のOAuth2アプリケーションを作成します。
+1. **追加**(![アイコンの追加](../../images/icon-add.png))をクリックして、新規のOAuth2アプリケーションを作成します。
 
-1. アプリケーションに名前をつけます（例：foo）。 WebサイトのURLを`http://localhost:3000`に、コールバックURIを`http://localhost:3000/grant-type-authorization-code`に設定します。 ［*保存*］をクリックします。
+1. アプリケーションに名前をつけます（例：foo）。 WebサイトのURLを`http://localhost:3000`に、コールバックURIを`http://localhost:3000/grant-type-authorization-code`に設定します。 ［**保存**］をクリックします。
 
    ![OAuth2アプリケーションの新規作成フォームに必要事項を入力します。](./using-oauth2-to-authorize-users/images/01.png)
 
-1. クライアントIDとクライアントシークレットをクリップボードにコピーします。 クライアントシークレットを取得するには、*［編集］*をクリックします。 ポップアップウィンドウから値をコピーします。
+1. クライアントIDとクライアントシークレットをクリップボードにコピーします。 クライアントシークレットを取得するには、 ［**編集**］ をクリックします。 ポップアップウィンドウから値をコピーします。
 
    これらの値は、サンプルのReactアプリで後ほど必要になります。
    
 
    ![LIFERAY.HEADLESS.ADMIN.USERの読み取り権限を有効にします。](./using-oauth2-to-authorize-users/images/02.png)
 
-   *［Save］* をクリックします。 OAuth2アプリケーションに、管理者ユーザーAPIカテゴリの読み取り権限が付与されました。
+   ［**Save**］ をクリックします。 OAuth2アプリケーションに、管理者ユーザーAPIカテゴリの読み取り権限が付与されました。
 
-1. 次に、*グローバルメニュー* (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、*［コントロールパネル］*タブをクリックして、*［システム設定］* &rarr; *［セキュリティツール］*に移動します。
+1. 次に、 **グローバルメニュー**(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブをクリックして、 ［**システム設定**］ &rarr; ［**セキュリティツール**］ に移動します。
 
-1. *［Portal Cross-Origin Resource Sharing (CORS)］*タブで、 *［Default Portal CORS Configuration］*をクリックしてください。
+1. ［**Portal Cross-Origin Resource Sharing (CORS**)］ タブで、 ［**Default Portal CORS Configuration**］ をクリックしてください。
 
-1. *［URLパターン］*に`/o/headless-admin-user/*`という値を追加し、*［保存］*をクリックします。 これにより、APIの`headless-admin-user`カテゴリーのCORSが有効になります。
+1. ［**URLパターン**］ に`/o/headless-admin-user/*`という値を追加し、 ［**保存**］ をクリックします。 これにより、APIの`headless-admin-user`カテゴリーのCORSが有効になります。
 
 ## サンプルReactアプリのデプロイ
 
-1. [OAuth2 React App](./liferay-c2b6.zip)をダウンロードし、解凍してください。
+1. [OAuth2 React App](./liferay-c2b6.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/liferay-c2b6.zip -O
    ```
 
    ```bash
@@ -74,25 +74,25 @@ OAuth 2.0の認証プロトコルを使用してLiferayのヘッドレスREST AP
 
 認可コードフローでは、アプリに許可を与える前に、ユーザーが認証情報でログインし、認可を承認する必要があります。 他のフローでは、この追加ステップを回避することができます。
 
-1. <http://localhost:3000>で動作しているReactアプリを開き、ページ上部の *Authorization Code Flow* をクリックします。 *Authorize*をクリックします。
+1. <http://localhost:3000>で動作しているReactアプリを開き、ページ上部の **Authorization Code Flow** をクリックします。 **Authorize** をクリックします。
 
    ![認証コードフローで、［認証］ボタンをクリックします。](./using-oauth2-to-authorize-users/images/03.png)
 
-1. まだログインしていない場合、認証ページに飛ぶ前にLiferayのログインページにリダイレクトされます。 ユーザー名とパスワード（例： *test@liferay.com:learn*）を入力し、 *サインイン*をクリックします。 認証ページで、 *認証する*をクリックします。 すでにログインしている場合は、直接認証ページに移動します。
+1. まだログインしていない場合、認証ページに飛ぶ前にLiferayのログインページにリダイレクトされます。 ユーザー名とパスワード（例： **test@liferay.com:learn**）を入力し、 **サインイン** をクリックします。 認証ページで、 **認証する** をクリックします。 すでにログインしている場合は、直接認証ページに移動します。
 
-1. Reactアプリにリダイレクトされます。 *Get Authorization Code*をクリックし、 *Get Token*をクリックします。 アプリケーションは Liferay にアクセストークンを要求します。
+1. Reactアプリにリダイレクトされます。 **Get Authorization Code** をクリックし、 **Get Token** をクリックします。 アプリケーションは Liferay にアクセストークンを要求します。
 
-1. *Get Users*をクリックします。 React アプリは、トークン・ベースの認証を使用して Liferay に REST API 呼び出しを行い、Liferay ユーザーのリストを返します。
+1. **Get Users** をクリックします。 React アプリは、トークン・ベースの認証を使用して Liferay に REST API 呼び出しを行い、Liferay ユーザーのリストを返します。
 
 ### クライアントクレデンシャルフロー
 
 クライアント認証フローは、通常、サーバー間のやり取りに使用され、ユーザーは関与しない。
 
-1. <http://localhost:3000>で実行中のReactアプリを開き、ページ上部の *Client Credentials Flow* をクリックします。
+1. <http://localhost:3000>で実行中のReactアプリを開き、ページ上部の **Client Credentials Flow** をクリックします。
 
-1. *Get Token*をクリックします。 アプリケーションは Liferay にアクセストークンを要求します。
+1. **Get Token** をクリックします。 アプリケーションは Liferay にアクセストークンを要求します。
 
-1. *Get Users*をクリックします。 React アプリは、トークン・ベースの認証を使用して Liferay に REST API 呼び出しを行い、Liferay ユーザーのリストを返します。
+1. **Get Users** をクリックします。 React アプリは、トークン・ベースの認証を使用して Liferay に REST API 呼び出しを行い、Liferay ユーザーのリストを返します。
 
 ### パスワードの流れ
 
@@ -102,11 +102,11 @@ OAuth 2.0の認証プロトコルを使用してLiferayのヘッドレスREST AP
 パスワードフローでは、ユーザー名とパスワードはアプリケーションに直接公開されます。 そのため、ユーザーはアプリケーションを信頼する必要があります。 APIリクエストでユーザー名とパスワードを渡すこともリスクを伴います。 パスワードフローを使用することは推奨されません。
 ```
 
-1. <http://localhost:3000>で動作しているReactアプリを開き、ページ上部の *パスワードフロー* をクリックします。
+1. <http://localhost:3000>で動作しているReactアプリを開き、ページ上部の **パスワードフロー** をクリックします。
 
-1. *Get Token*をクリックします。 アプリケーションは Liferay にアクセストークンを要求します。
+1. **Get Token** をクリックします。 アプリケーションは Liferay にアクセストークンを要求します。
 
-1. *Get Users*をクリックします。 React アプリは、トークン・ベースの認証を使用して Liferay に REST API 呼び出しを行い、Liferay ユーザーのリストを返します。
+1. **Get Users** をクリックします。 React アプリは、トークン・ベースの認証を使用して Liferay に REST API 呼び出しを行い、Liferay ユーザーのリストを返します。
 
 ## コードを調べる
 
@@ -145,7 +145,7 @@ src
 
 ### 承認 補助金の種類
 
-`grant-type-authorization-code`では、最初のステップは `Authorize.js` ファイルによって処理される。 *Authorize* ボタンをクリックすると、認証要求が行われます。
+`grant-type-authorization-code`では、最初のステップは `Authorize.js` ファイルによって処理される。 **Authorize** ボタンをクリックすると、認証要求が行われます。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/components/Authorize.js
 :language: javascript
@@ -154,14 +154,14 @@ src
 
 標準の `clientId` と `clientSecret`に加えて、 `redirectUri` も `config.js` ファイルに必要です。 アプリケーションを認証した後、Liferayサーバーはユーザーをアプリの認証コードフローページにリダイレクトさせます。 リダイレクトと同時に、ワンタイム認証コードがURL内でアプリに引き渡されます（例： `http://localhost:3000/grant-type-authorization-code?code={code}`）。
 
-*Get Authorization Code* をクリックすると、 `getCode` 関数が呼び出され、認証コードが解析されます。 そして、アクセストークンのリクエストで渡すことができる。
+**Get Authorization Code** をクリックすると、 `getCode` 関数が呼び出され、認証コードが解析されます。 そして、アクセストークンのリクエストで渡すことができる。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/components/Authorize.js
 :language: javascript
 :lines: 20-26
 ```
 
-*Get Token* をクリックすると、 `Requests.js` ファイル内の `getAuthToken` 関数が呼び出されます。
+**Get Token** をクリックすると、 `Requests.js` ファイル内の `getAuthToken` 関数が呼び出されます。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/utils/Requests.js
 :language: javascript
@@ -183,7 +183,7 @@ src
 
 `Users.js` ファイルは、 `access_token`のレスポンスを解析しています。
 
-最後に、 *Get Users* をクリックすると、 `Requests.js` ファイル内の `getUsers` 関数が呼び出されます。
+最後に、 **Get Users** をクリックすると、 `Requests.js` ファイル内の `getUsers` 関数が呼び出されます。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/utils/Requests.js
 :language: javascript
@@ -194,7 +194,7 @@ src
 
 ### クライアント認証情報 グラントタイプ
 
-`grant-type-client-credentials`において、 `Request.js` ファイルの `getAuthToken` 関数は、 *Get Token* ボタンがクリックされたときに呼び出されます。
+`grant-type-client-credentials`において、 `Request.js` ファイルの `getAuthToken` 関数は、 **Get Token** ボタンがクリックされたときに呼び出されます。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-client-credentials/utils/Requests.js
 :language: javascript
@@ -205,7 +205,7 @@ src
 
 `Users.js` ファイルは、 `access_token`のレスポンスを解析しています。
 
-最後に、 *Get Users* をクリックすると、 `Requests.js` ファイル内の `getUsers` 関数が呼び出されます。
+最後に、 **Get Users** をクリックすると、 `Requests.js` ファイル内の `getUsers` 関数が呼び出されます。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-client-credentials/utils/Requests.js
 :language: javascript
@@ -216,7 +216,7 @@ src
 
 ### パスワード付与の種類
 
-`grant-type-password`において、 `Request.js` ファイルの `getAuthToken` 関数は、 *Get Token* ボタンがクリックされたときに呼び出されます。
+`grant-type-password`において、 `Request.js` ファイルの `getAuthToken` 関数は、 **Get Token** ボタンがクリックされたときに呼び出されます。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-password/utils/Requests.js
 :language: javascript
@@ -227,7 +227,7 @@ src
 
 `Users.js` ファイルは、 `access_token`のレスポンスを解析しています。
 
-最後に、 *Get Users* をクリックすると、 `Requests.js` ファイル内の `getUsers` 関数が呼び出されます。
+最後に、 **Get Users** をクリックすると、 `Requests.js` ファイル内の `getUsers` 関数が呼び出されます。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-password/utils/Requests.js
 :language: javascript

@@ -121,21 +121,21 @@ File sizes after gzip:
 
 次に、以下の手順を実行します。
 
-1. *サイトメニュー* (![Site Menu](../../../../images/icon-product-menu.png)) を開き、 *コンテンツ & データ*を展開し、 *ドキュメントとメディア*に進みます。
+1. **サイトメニュー**(![Site Menu](../../../../images/icon-product-menu.png)) を開き、 **コンテンツ & データ** を展開し、 **ドキュメントとメディア** に進みます。
 
-1. *追加* ボタン (![Add Button](../../../../images/icon-add.png)) をクリックし、 *複数ファイルのアップロード*を選択します。
+1. **追加** ボタン (![Add Button](../../../../images/icon-add.png)) をクリックし、 **複数ファイルのアップロード** を選択します。
 
 1. `.js` と `.css` のファイルをアップロードエリアにドラッグ＆ドロップしてください。
    
-   または、 *Select Files* を使ってアップロードすることもできます。
+   または、 **Select Files** を使ってアップロードすることもできます。
    
    ![.js と .css ファイルを Liferay Document Library にアップロードします。](./creating-a-basic-custom-element/images/02.png)
 
-1. *Publish*をクリックします。
+1. **Publish** をクリックします。
 
 これにより、ファイルがドキュメントライブラリに追加され、リモートアプリケーションを作成するために使用する一意のURLが割り当てられます。
 
-各ファイルのURLを表示するには、*情報*アイコン (![Info Icon](../../../../images/icon-information.png))をクリックし、ファイルを選択します。次の手順で使用するため、各ファイルの*WebDAV URL*をコピーし、保存してください。
+各ファイルのURLを表示するには、 **情報** アイコン (![Info Icon](../../../../images/icon-information.png))をクリックし、ファイルを選択します。次の手順で使用するため、各ファイルの **WebDAV URL** をコピーし、保存してください。
 
 ![各ファイルのWebDAV URLをコピーします。](./creating-a-basic-custom-element/images/03.png)
 
@@ -146,9 +146,9 @@ File sizes after gzip:
 
 ## Liferayにアプリケーションを登録する
 
-1. *グローバルメニュー* (![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 *アプリケーション* タブをクリックし、 *リモートアプリ*に進みます。
+1. **グローバルメニュー**(![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 **アプリケーション** タブをクリックし、 **リモートアプリ** に進みます。
 
-1. *追加* ボタン (![Add Button](../../../../images/icon-add.png)) をクリックします。
+1. **追加** ボタン (![Add Button](../../../../images/icon-add.png)) をクリックします。
 
 1. これらの値を入力します。
 
@@ -163,7 +163,7 @@ File sizes after gzip:
    | ポートレットカテゴリ名 | リモートアプリ                 |
 
    
-   1. *保存*をクリックします。
+   1. **保存** をクリックします。
 
 保存すると、LiferayはH5V7-Remote-Appという名前のウィジェットを作成し、他のページウィジェットのようにサイトのページに配置することができるようになります。 選択したポートレットカテゴリ名の下に表示されるウィジェットです。
 

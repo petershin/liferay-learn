@@ -10,7 +10,7 @@
 
 これらの値を求めるには、パッチングツールを使用します。
 
-1. こちらの手順 [](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) に従って、移行したいインストールにパッチングツールをインストールします。
+1. [こちら](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html)の手順に従って、移行したいインストールにパッチングツールをインストールします。
 
 1. 任意のコマンドラインツールでパッチングツールフォルダーに移動します。
 
@@ -42,11 +42,11 @@ git clone https://github.com/dxpcloud/acme
 
 ## リポジトリ内の Liferay DXP イメージを更新する
 
-次に、以前 [クローンしたリポジトリにある Liferay DXP イメージを更新します](#clone-the-liferay-cloud-repository)。 このため、Liferayインストールのバージョン情報と互換性のあるDockerイメージを見つける必要があります。
+次に、以前 [クローンしたリポジトリにある Liferay DXP イメージを更新します](#clone-the-liferay-cloud-repository) 。 このため、Liferayインストールのバージョン情報と互換性のあるDockerイメージを見つける必要があります。
 
 1. Docker Hub の [Liferay DXP images](https://hub.docker.com/r/liferay/dxp/tags) ページにアクセスします。
 
-1. *フィルタタグ* フィールドを使い、メジャーバージョンとフィックスパック番号を用いて画像のリストをフィルタリングします。 [以前に見つけた](#find-liferay-version-information) （例えば `7.2.10-dxp-5`のような形式です）。 このDockerイメージ名をコピーしてください。
+1. **フィルタタグ** フィールドを使い、メジャーバージョンとフィックスパック番号を用いて画像のリストをフィルタリングします。 [以前に見つけた](#find-liferay-version-information) （例えば `7.2.10-dxp-5`のような形式です）。 このDockerイメージ名をコピーしてください。
 
     ![Filter Tagsフィールドを使用して、Liferay DXPイメージのリストをお探しのメジャーバージョンに絞り込みます。](./matching-dxp-versions/images/02.png)
 
@@ -70,13 +70,13 @@ git clone https://github.com/dxpcloud/acme
 
 次に、リポジトリ内の Liferay サービスの `LCP.json` ファイルにある Liferay サービスのイメージを更新してください。 このため、Liferayのインストールバージョンと互換性のある最新のDockerイメージを見つける必要があります。
 
-1. Liferay Cloud の [Services Changelog](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) ページにアクセスします。
+1. Liferay Cloud の [Services Changelog](https://help.liferay.com/hc/ja/sections/360006251311-Services-Changelog) ページにアクセスします。
 
 1. リストの一番上にある最新のサービス更新をクリックします。
 
     ![最新のサービス更新のリンクをクリックし、お使いの環境が最新のものであることを確認します。](./matching-dxp-versions/images/03.png)
 
-1. ページに記載されている **Liferay** のサービス画像を探してください。 オンプレミスの Liferay インストールの *メジャーバージョン* に一致するイメージ名をコピーしてください。
+1. ページに記載されている **Liferay** のサービス画像を探してください。 オンプレミスの Liferay インストールの **メジャーバージョン** に一致するイメージ名をコピーしてください。
 
     ![表示された Liferay サービスイメージの中から、お使いの Liferay インストールのメジャーバージョンに合うものを選びます。](./matching-dxp-versions/images/04.png)
 
@@ -94,7 +94,7 @@ git clone https://github.com/dxpcloud/acme
 
 ## Hotfixの情報を追加する
 
-また、[オンプレミスでインストールしたパッチ](#find-liferay-version-information)のhotfix情報をCIサービスの `LCP.json` ファイルに追加する必要があります。
+また、 [オンプレミスでインストールしたパッチ](#find-liferay-version-information) のhotfix情報をCIサービスの `LCP.json` ファイルに追加する必要があります。
 
 1. インストールされているパッチの一覧を確認するには、 `./patching-tool.sh info` コマンドを `$LIFERAY_HOME/patching-tool` フォルダから再度実行してください。
    
@@ -150,7 +150,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
 
 1. Liferay Cloud Console で Builds ページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、「Actions」メニューから「 *Deploy build to*」をクリックします。
+1. リストの中から前回作成したビルドを探し、「Actions」メニューから「**Deploy build to**」をクリックします。
    
    ![ビルドのActionsメニューでデプロイします。](./matching-dxp-versions/images/06.png)
 
@@ -160,7 +160,7 @@ Gitがインストールされている端末でGitコマンドを実行し、�
    
    ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイしてください。](./matching-dxp-versions/images/07.png)
 
-1. *Deploy Build*をクリックします。
+1. **Deploy Build** をクリックします。
 
 ビルドは選択した環境にデプロイされ、サービス起動時に正しいバージョンが適用されます。
 

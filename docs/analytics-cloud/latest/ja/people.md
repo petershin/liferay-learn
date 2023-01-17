@@ -12,7 +12,7 @@ people/individuals.md
 people/segments.md
 ```
 
-個々のユーザーとユーザー全体をよりよく理解することが、優れたサービスを提供するための鍵です。 Analytics Cloudは、その両方をよりよく理解するためのツールを提供します。 Liferay DXPのユーザーデータを利用した堅牢な [Individual Profiles](./people/individuals/individual-profiles.md) を構築することで、顧客が誰であるかについて広範な詳細を把握することができます。 個々のプロフィールがお客様のサイトと相互作用すると、Analytics Cloudは継続的に個々のプロフィールを構築し、ユーザーの [関心](./workspace-data/definitions/managing-interest-topics.md#understanding-interests) と行動を理解するのに役立ちます。 これらのことは、最終的にユーザーのニーズを満たすため、またニーズを超えるために、より良いアクションを起こすことを支援します。
+個々のユーザーとユーザー全体をよりよく理解することが、優れたサービスを提供するための鍵です。 Analytics Cloudは、その両方をよりよく理解するためのツールを提供します。 Liferay DXPのユーザーデータを利用した堅牢な [訪問者プロフィール](./people/individuals/individual-profiles.md) を構築することで、顧客が誰であるかについて広範な詳細を把握することができます。 個々のプロフィールがお客様のサイトと相互作用すると、Analytics Cloudは継続的に個々のプロフィールを構築し、ユーザーの [関心](./workspace-data/definitions/managing-interest-topics.md#understanding-interests) と行動を理解するのに役立ちます。 これらのことは、最終的にユーザーのニーズを満たすため、またニーズを超えるために、より良いアクションを起こすことを支援します。
 
 ![個人プロファイルの概要では、ユーザーの行動をしっかりと見ることができます。](./people/images/01.png)
 

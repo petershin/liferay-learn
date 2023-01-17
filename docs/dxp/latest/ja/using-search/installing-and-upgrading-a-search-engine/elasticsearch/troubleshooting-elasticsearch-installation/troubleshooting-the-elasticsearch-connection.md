@@ -92,13 +92,13 @@ Liferay 7.0-7.2 では、このエラーはより一般的な `org.elasticsearch
 
 Elasticsearchのログには、関連するエラーが表示されます。
 
-Liferay 7.3 と 7.4 では、 [Elasticsearch 7](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.4) のログが出力されます。
+Liferay 7.3 と 7.4 では、 [Elasticsearch 7](https://help.liferay.com/hc/ja/articles/360016511651#Liferay-DXP-7.4) のログが出力されます。
 
 ```
 [2021-06-04T18:09:11,925][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [es-node1] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=0.0.0.0/0.0.0.0:9200, remoteAddress=/192.168.0.17:41104}
 ```
 
-Liferay 7.0-7.2 では、 [Elasticsearch 6/7](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.2-Elasticsearch) のログが出力されます。
+Liferay 7.0-7.2 では、 [Elasticsearch 6/7](https://help.liferay.com/hc/ja/articles/360016511651#Liferay-DXP-7.2-Elasticsearch) のログが出力されます。
 
 ```
 [2021-06-04T18:11:13,045][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] received plaintext traffic on an encrypted channel, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:34346}
@@ -108,7 +108,7 @@ Elasticsearchの警告は、サーバーが暗号化されたチャンネルで�
 
 `elasticsearch.yml` ファイルに `xpack.security.*` プロパティがトランスポート層および/またはhttp層に設定されている場合（ `xpack.security.enabled: true`も参照）、ElasticsearchはX-Pack Securityを有効にしています。 したがって、Liferay のコネクタもそれに応じて設定する必要があります。
 
-正しいコネクタの構成については、 [Securing Elasticsearch](../securing-elasticsearch.md) を参照してください。
+正しいコネクタの構成については、 [Elasticsearchの保護](../securing-elasticsearch.md) を参照してください。
 
 ## Elasticsearchのホスト名が証明書のDNS名と一致しない
 
@@ -219,7 +219,7 @@ Liferay 7.0-7.2 では、エラーは `org.elasticsearch.client.transport.NoNode
 [2021-06-07T17:48:31,554][WARN ][o.e.t.TcpTransport       ] [es-node1] SSL/TLS request received but SSL/TLS is not enabled on this node, got (16,3,3,1), [Netty4TcpChannel{localAddress=/192.168.0.17:9300, remoteAddress=/192.168.0.17:40646}], closing connection
 ```
 
-`elasticsearch.yml` を開き、 `xpack.security.enabled` が `false になっていないことを確認する`. [Securing Elasticsearch](../securing-elasticsearch.md) の記事に従って、HTTP層とTransport層が暗号化通信を使用するように設定されていることを確認してください。
+`elasticsearch.yml` を開き、 `xpack.security.enabled` が `false になっていないことを確認する`. [Elasticsearchの保護](../securing-elasticsearch.md) の記事に従って、HTTP層とTransport層が暗号化通信を使用するように設定されていることを確認してください。
 
 ## LiferayとElasticsearchが異なる認証局で署名された証明書を使用している
 
@@ -244,7 +244,7 @@ Liferay 7.0-7.2 で TCP 経由でサーバーに接続すると、対応する E
 [2021-06-07T18:19:49,623][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:41820}
 ```
 
-スタック内のすべてのノード（Liferay、Elasticsearch、Kibanaなど）が同じ認証局（CA）で署名された証明書を使用しており、そのCAの証明書（公開鍵）がクライアントの環境に存在することを確認してください。 例えば、 `sslTruststorePath` や `sslCertificateAuthoritiesPath` の設定が [Securing Elasticsearch documentation](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2)に従って設定されていることを確認してください。
+スタック内のすべてのノード（Liferay、Elasticsearch、Kibanaなど）が同じ認証局（CA）で署名された証明書を使用しており、そのCAの証明書（公開鍵）がクライアントの環境に存在することを確認してください。 例えば、 `sslTruststorePath` や `sslCertificateAuthoritiesPath` の設定が [Securing Elasticsearch documentation](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2) に従って設定されていることを確認してください。
 
 ```{tip}
 証明書ファイルを開き、「Issuer Name」または「Issued by」の項目を見つけます。 これらのエントリは、発行者 CA に関する情報を保持する。
@@ -332,7 +332,7 @@ javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
 javax.net.ssl.SSLException: No PSK available. Unable to resume.
 ```
 
-[Elasticsearchのモニタリング](../../../liferay-enterprise-search/monitoring-elasticsearch.md#troubleshooting-the-monitoring-setup)を参照してください。
+[Elasticsearchのモニタリング](../../../liferay-enterprise-search/monitoring-elasticsearch.md#troubleshooting-the-monitoring-setup) を参照してください。
 
 ## IOExceptionデータがオブジェクトIDでない
 
@@ -389,7 +389,7 @@ javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.pro
 ```{warning}
 本番環境では、SSL検証モードを「none」に設定したままにしないでください。
 
-SSL検証モードの設定については、[Elasticsearchドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html#transport-tls-ssl-settings)をお読みください。
+SSL検証モードの設定については、 [Elasticsearchドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html#transport-tls-ssl-settings) をお読みください。
 ```
 
 LiferayとElasticsearchのノード間でも同様の問題が発生することがあります。 Liferayは、Elasticsearchノードの証明書が信頼できないCAによって署名されている場合（例えば、自己署名証明書を使用している場合）、このようなエラーを投げます。

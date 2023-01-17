@@ -14,7 +14,7 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 1. [Batch Engine API Basics](./liferay-g4j2.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/liferay-g4j2.zip -O
    ```
 
    ```bash
@@ -123,7 +123,7 @@ LiferayのHeadless Batch Engineは、データのインポートとエクスポ�
 | `-u "test@liferay.com:learn"`                                                                                     | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 Oauth2を使用したReactアプリケーションのサンプルは、[Securing Your App with OAuth2](../using-oauth2/securing-your-app-with-oauth2.md) をご覧ください。
+ここでは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 Oauth2を使用したReactアプリケーションのサンプルは、[Securing Your App with OAuth2](../using-oauth2/securing-your-app-with-oauth2.md) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -198,7 +198,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ## サイトへのデータ取り込み
 
-以下のcURLまたはJavaコマンドを実行することで、サイトにデータをインポートすることができます。 この例では、ブログの記事をサイトにインポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` をそれに置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータとインポートするデータも更新する必要があります。
+以下のcURLまたはJavaコマンドを実行することで、サイトにデータをインポートすることができます。 この例では、ブログの記事をサイトにインポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` をそれに置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータとインポートするデータも更新する必要があります。
 
 ### ImportTask_POST_ToSite.sh
 
@@ -358,7 +358,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
+[API Explorer](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
 
 ## 追加情報
 

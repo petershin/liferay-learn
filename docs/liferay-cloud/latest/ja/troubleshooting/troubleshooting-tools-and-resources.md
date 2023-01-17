@@ -16,7 +16,7 @@
 これらのツールやリソースを使用することで、プロジェクト活動の追跡、サービスの設定、技術的な問題の解決などが可能になります。
 
 ```{note}
-詳細については、Liferayとの法的契約に従うものとします。 法的な契約やサービスについては、[Liferay Legal](https://www.liferay.com/legal)のページを参照してください。
+詳細については、Liferayとの法的契約に従うものとします。 法的な契約やサービスについては、 [Liferay Legal](https://www.liferay.com/legal) のページを参照してください。
 ```
 
 ## アプリケーションメトリクス
@@ -27,7 +27,7 @@ Liferay Cloudに組み込まれたモニタリング機能により、ユーザ�
 
 ![Liferay Cloud コンソールの Monitoring ページからアプリケーションメトリクスを表示します。](./troubleshooting-tools-and-resources/images/01.png)
 
-ユーザーは、[Dynatrace](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only)の高度なパフォーマンス・モニタリングを本番環境に統合することもできます。
+ユーザーは、 [Dynatrace](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) の高度なパフォーマンス・モニタリングを本番環境に統合することもできます。
 
 詳しくは、 [アプリケーションメトリクス](../manage-and-optimize/application-metrics.md) を参照してください。
 
@@ -39,17 +39,17 @@ Liferay Cloudコンソールからすべての環境アラートを表示し、�
 
 ![Liferay CloudコンソールのAlertsページでアラートを表示、管理します。](./troubleshooting-tools-and-resources/images/02.png)
 
-詳しくは [Real-Time Alerts](../manage-and-optimize/real-time-alerts.md) をご覧ください。
+詳しくは [リアルタイムアラート](../manage-and-optimize/real-time-alerts.md) をご覧ください。
 
 ## 環境アクティビティ
 
-ユーザーは、Liferay Cloud コンソールから環境のアクティビティを監視することができます。 *ビルドとデプロイメント* と *一般的な活動*。
+ユーザーは、Liferay Cloud コンソールから環境のアクティビティを監視することができます。 **ビルドとデプロイメント** と **一般的な活動** 。
 
 ビルド、デプロイメント、サービスアクティビティなどのステータスを確認し、環境問題のトラブルシューティングに役立てることができます。
 
 ![Liferay Cloudのコンソールから環境のアクティビティを表示します。](./troubleshooting-tools-and-resources/images/03.png)
 
-詳しくは [Team Activities](../manage-and-optimize/team-activities.md) をご覧ください。
+詳しくは [チーム活動](../manage-and-optimize/team-activities.md) をご覧ください。
 
 ## 環境ログ
 
@@ -57,9 +57,9 @@ Liferay Cloudコンソールからすべての環境アラートを表示し、�
 
 アプリケーションログ、ステータスログ、ビルドログは、Liferay Cloud Serviceごとに提供されます。
 
-* **Application Logs**：これらのログは、アプリケーションが実行され、ユーザーがアクセスした後に生成されたランタイム情報をリストアップします。
-* **Application Logs**：これらのログは、アプリケーションが実行され、ユーザーがアクセスした後に生成されたランタイム情報をリストアップします。
-* **Build Logs**：これらのログは、アプリケーションの起動時に生成されるビルド情報を一覧表示します。
+* **Application Logs** ：これらのログは、アプリケーションが実行され、ユーザーがアクセスした後に生成されたランタイム情報をリストアップします。
+* **Application Logs** ：これらのログは、アプリケーションが実行され、ユーザーがアクセスした後に生成されたランタイム情報をリストアップします。
+* **Build Logs** ：これらのログは、アプリケーションの起動時に生成されるビルド情報を一覧表示します。
 
 ![Liferay Cloud コンソールの Logs ページからログを表示します。](./troubleshooting-tools-and-resources/images/04.png)
 
@@ -81,7 +81,7 @@ Liferay Cloudコンソールのコマンドラインツールは、スピード�
 curl -v [address]
 ```
 
-詳しくは [Shell Access](./shell-access.md) をご覧ください。
+詳しくは [シェルアクセス](./shell-access.md) をご覧ください。
 
 ## セルフヒーリング
 
@@ -89,8 +89,8 @@ Liferay Cloudの自己修復機能は、サービスやアプリケーション�
 
 Liferay Cloud では、アプリケーションを管理するために組み合わせて使用する 2 つのプローブが用意されています。
 
-* **Liveness Probe**：サービスが実行されているかどうかを示すプローブです。
-* **Readiness Probe**：サービスがリクエストを受信する準備ができているかどうかを示すプローブです。
+* **Liveness Probe** ：サービスが実行されているかどうかを示すプローブです。
+* **Readiness Probe** ：サービスがリクエストを受信する準備ができているかどうかを示すプローブです。
 
 各プローブの設定については、「 [セルフヒーリング](./self-healing.md) 」を参照してください。
 
@@ -110,7 +110,7 @@ Liferay Cloudの自動ディザスターリカバリー戦略は、同一地域�
 
 ユーザーは、 [Liferay Cloud Platform](https://status.liferay.cloud/) ステータス ページから、Liferay Cloud Platform システムのステータス、計画されたメンテナンス ウィンドウ、およびインシデントの履歴を確認できます。
 
-クラウドプラットフォームのステータス変更の通知を受け取るには、 *Subscribe to Updates*をクリックし、希望する通知方法を選択してください。
+クラウドプラットフォームのステータス変更の通知を受け取るには、 **Subscribe to Updates** をクリックし、希望する通知方法を選択してください。
 
 ![Liferay Cloud Platformシステムのステータスを表示します。](./troubleshooting-tools-and-resources/images/06.png)
 
@@ -120,33 +120,33 @@ Liferay Cloudの自動ディザスターリカバリー戦略は、同一地域�
 
 サポートアクセスは、LiferayのエンジニアがLiferay Cloudのプロジェクト環境に直接アクセスすることで、トラブルシューティングを迅速に行うための環境設定です（オプション）。
 
-デフォルトでは、サポートアクセスは各プロジェクト環境で有効になっていますが、管理者は *設定* ページから無効にすることができます。
+デフォルトでは、サポートアクセスは各プロジェクト環境で有効になっていますが、管理者は **設定** ページから無効にすることができます。
 
 ![環境管理者は、設定ページでサポートアクセスを有効化または無効化することができます。](./troubleshooting-tools-and-resources/images/07.png)
 
-詳しくは、 [Support Access](./support-access.md) をご覧ください。
+詳しくは、 [サポートアクセス](./support-access.md) をご覧ください。
 
 ## ヘルプセンター
 
-Liferay Cloud [Documentation](https://learn.liferay.com/liferay-cloud/latest/en/index.html) で回答されていない質問がある場合、または問題を報告したい場合は、Liferay [Help Center](https://help.liferay.com/) にサインインしてサブスクリプション専用のリソースを閲覧するか、チケットを送信してください。
+Liferay Cloud [Documentation](https://learn.liferay.com/liferay-cloud/latest/ja/index.html) で回答されていない質問がある場合、または問題を報告したい場合は、Liferay [Help Center](https://help.liferay.com/) にサインインしてサブスクリプション専用のリソースを閲覧するか、チケットを送信してください。
 
 ![Liferayヘルプセンターのページから、サブスクリプション専用のリソースを閲覧したり、チケットを送信することができます。](./troubleshooting-tools-and-resources/images/08.png)
 
-ここから、Liferay Cloud [ナレッジベース](https://help.liferay.com/hc/en-us/categories/360001132872)、 [製品サポート](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)、 [お知らせ](https://help.liferay.com/hc/en-us/categories/360001192512)にアクセスすることができます。
+ここから、Liferay Cloud [ナレッジベース](https://help.liferay.com/hc/ja/categories/360001132872) 、 [製品サポート](https://help.liferay.com/hc/ja/articles/360030208451-DXP-Cloud-Support-Overview) 、 [お知らせ](https://help.liferay.com/hc/ja/categories/360001192512) にアクセスすることができます。
 
-ユーザーは、最新の Liferay Cloud [Help Center Updates](https://www.liferay.com/web/l/subscribe-to-liferay-dxp-cloud-updates)のメール通知を受け取るために登録することもできます。 これらのアップデートには、新しいプラットフォームのリリース、サービスアップデート、セキュリティアラートやパッチなどが含まれます。
+ユーザーは、最新の Liferay Cloud [Help Center Updates](https://www.liferay.com/web/l/subscribe-to-liferay-dxp-cloud-updates) のメール通知を受け取るために登録することもできます。 これらのアップデートには、新しいプラットフォームのリリース、サービスアップデート、セキュリティアラートやパッチなどが含まれます。
 
 ```{note}
 Liferay Cloud の通知は、Liferay Enterprise サブスクリプションが有効なお客様のみに配信されます。
 ```
 
-追加のサポートについては、ユーザーはLiferayのグローバルな [サポートセンター](https://help.liferay.com/hc/en-us/articles/360017784212?_ga=2.254167624.1908736764.1562000563-1350017715.1560788053) に電話で問い合わせるか、 [ヘルプセンター](https://help.liferay.com/) のページからチケットを提出することができます。
+追加のサポートについては、ユーザーはLiferayのグローバルな [サポートセンター](https://help.liferay.com/hc/ja/articles/360017784212?_ga=2.254167624.1908736764.1562000563-1350017715.1560788053) に電話で問い合わせるか、 [ヘルプセンター](https://help.liferay.com/) のページからチケットを提出することができます。
 
 チケットを提出する際には、現在使用しているビルドイメージ、直面している動作や問題、問題を再現するための手順、実際の動作と期待される動作の両方の説明などの情報を提供してください。
 
 ## 追加情報
 
-* [Liferayクラウドサポートの概要](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
-* [Liferay Cloud ナレッジベース](https://help.liferay.com/hc/en-us/categories/360001132872)
-* [Liferay Cloudのお知らせ](https://help.liferay.com/hc/en-us/categories/360001192512)
+* [Liferayクラウドサポートの概要](https://help.liferay.com/hc/ja/articles/360030208451-DXP-Cloud-Support-Overview)
+* [Liferay Cloud ナレッジベース](https://help.liferay.com/hc/ja/categories/360001132872)
+* [Liferay Cloudのお知らせ](https://help.liferay.com/hc/ja/categories/360001192512)
 * [サポートアクセス](./support-access.md)

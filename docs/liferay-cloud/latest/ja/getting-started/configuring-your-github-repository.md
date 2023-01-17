@@ -69,7 +69,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 `LCP_CI_SCM_TOKEN` の値には、GitHub組織用に作成した個人用アクセストークンを使用します。 このトークンの作成とアクセスの手順については、 [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line) を参照してください。
 
-作成されたパーソナルアクセストークンは、 **repo** と **admin:repo** **hook***のすべてのスコープパーミッションにチェックが入っている必要があります。*admin:repo_hook** scope permissions specifically は、リポジトリが Liferay Cloud と正常に統合された後、 [automatic web hook management](#personal-access-token-usage) を無効にすれば、後で削除することができます。
+作成されたパーソナルアクセストークンは、 **repo** と **admin:repo****hook****のすべてのスコープパーミッションにチェックが入っている必要があります。** admin:repo_hook** scope permissions specifically は、リポジトリが Liferay Cloud と正常に統合された後、 [automatic web hook management](#personal-access-token-usage) を無効にすれば、後で削除することができます。
 
 ![PATが正常に使用できるように、正しい権限を確認してください。](./configuring-your-github-repository/images/05.png)
 

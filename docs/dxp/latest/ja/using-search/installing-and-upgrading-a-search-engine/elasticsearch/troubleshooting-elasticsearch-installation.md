@@ -19,11 +19,11 @@ LiferayとElasticsearchは、設定に満ちた複雑なシステムです。 [�
 - [Elasticsearch接続のトラブルシューティング](./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md)
 - [Elasticsearchのトラブルシューティング。よくある問題](./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md)
 
-Liferayにバンドルされているsidecar Elasticsearchサーバーのトラブルシューティングは、 [Troubleshooting the Sidecar/Embedded Elasticsearch](./using-the-sidecar-or-embedded-elasticsearch.md#troubleshooting-the-sidecar-embedded-elasticsearch)をご覧ください。
+Liferayにバンドルされているsidecar Elasticsearchサーバーのトラブルシューティングは、 [Troubleshooting the Sidecar/Embedded Elasticsearch](./using-the-sidecar-or-embedded-elasticsearch.md#troubleshooting-the-sidecar-embedded-elasticsearch) をご覧ください。
 
 ## 検索バーのElasticsearchクエリを検査する
 
-Liferayの検索インフラは、ユーザーがSearch Barウィジェットから検索するたびに、大きなElasticsearchのリクエストを生成します。 Elasticsearchに送信されたクエリを検査するには、Search Insightsウィジェットを使用します。 詳しくは、 [Search Insights](../../search-pages-and-widgets/search-insights.md)をご覧ください。
+Liferayの検索インフラは、ユーザーがSearch Barウィジェットから検索するたびに、大きなElasticsearchのリクエストを生成します。 Elasticsearchに送信されたクエリを検査するには、Search Insightsウィジェットを使用します。 詳しくは、 [検索インサイト](../../search-pages-and-widgets/search-insights.md) をご覧ください。
 
 ## Liferayが生成したElasticsearchクエリを検査する
 

@@ -22,9 +22,7 @@ Analytics Cloudは、サイト全体の包括的なレポートを提供する[�
 
 ![タッチポイント」メニューでは、「サイト」「ページ」「アセット」に関する情報にアクセスできます。](./touchpoints/images/01.png)
 
-Touchpoints へのナビゲーションは、まず [Sites Dashboard](./touchpoints/sites-dashboard.md)から始まります。 Touchpointsでは、その他のページや資産の分析も可能です。
-
-
+Touchpoints へのナビゲーションは、まず [サイトダッシュボード](./touchpoints/sites-dashboard.md) から始まります。 Touchpointsでは、その他のページや資産の分析も可能です。
 
 ## ページデータの表示
 
@@ -54,17 +52,13 @@ Touchpoints へのナビゲーションは、まず [Sites Dashboard](./touchpoi
 * より多くのプリセット期間（昨日、過去28日間、過去180日間、過去1年間）
 * カスタムレンジ
 
-
-
 ```{note}
-ページデータは、canonical URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [DXP でカスタムカノニカル URL を設定する方法](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) について詳しく説明します。
+ページデータは、canonical URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [DXP でカスタムカノニカル URL を設定する方法](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) について詳しく説明します。
 ```
-
 
 1つのページの詳細な指標を表示するには、表中のそのページをクリックします。 詳しくは、 [Page Analytics](./touchpoints/pages/pages.md) をご覧ください。
 
 ![Visitor Behaviorパネルでは、一定期間の詳細な統計情報を表示します。](./touchpoints/images/03.png)
-
 
 
 ## アセットデータを探す
@@ -92,20 +86,14 @@ Touchpoints へのナビゲーションは、まず [Sites Dashboard](./touchpoi
 
 資産の種類によって、リストが分かれていることを忘れないでください。 各アセットタイプのメトリクスの詳細については、この後の記事で説明します。
 
-
-
 ## 次のステップ
 
 - [サイトダッシュボード](./touchpoints/sites-dashboard.md)
-
-
 
 ### ページ
 
 - [ページ](./touchpoints/pages/pages.md)
 - [パス](./touchpoints/pages/paths.md)
-
-
 
 ### 資産
 
@@ -115,8 +103,6 @@ Touchpoints へのナビゲーションは、まず [Sites Dashboard](./touchpoi
 - [フォーム](./touchpoints/assets/forms.md)
 - [ドキュメントとメディア](./touchpoints/assets/documents-and-media.md)
 - [カスタムアセットのトラッキング](./touchpoints/assets/tracking-custom-assets.md)
-
-
 
 ### イベント情報
 

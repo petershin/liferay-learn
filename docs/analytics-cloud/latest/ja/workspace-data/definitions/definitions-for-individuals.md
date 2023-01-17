@@ -8,4 +8,4 @@
 
 個人のさまざまな属性がすべて一覧表示されます。 一部の属性は、複数のデータソースで定義されている場合があります。
 
-[セグメントの作成](../../people/segments/creating-segments.md) や [個人の特定の内訳の作成](../../people/individuals/individuals-dashboard.md#breakdown)など、特定の属性を選択することができます。
+[セグメントの作成](../../people/segments/creating-segments.md) や [個人の特定の内訳の作成](../../people/individuals/individuals-dashboard.md#breakdown) など、特定の属性を選択することができます。

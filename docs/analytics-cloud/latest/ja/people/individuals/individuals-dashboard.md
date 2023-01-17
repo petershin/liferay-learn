@@ -52,7 +52,7 @@ Interestsパネルでは、人気の高いトピックトップ5を紹介して�
 
 興味のあるトピックの全リストを表示するには、パネル内の *View All Interests* をクリックします。 または、ページ上部の「インタレスト」タブをクリックします。
 
-インタレストについて詳しく知りたい方は、 [Understanding Interest](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests)をご覧ください。
+インタレストについて詳しく知りたい方は、 [Understanding Interest](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests) をご覧ください。
 
 ## 内訳
 

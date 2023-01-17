@@ -73,9 +73,9 @@ Each task includes these fields for entering Liferay and Salesforce credentials.
 | `SalesForceToken`    | Salesforce OAuth API token  |
 
 ```{note}
-You can filter data from Salesforce so that only the newly modified or created records are imported. To do this, you must set the `deltamins` parameter in your job configuration. This parameter specifies how many minutes before the last run newly created or modified records are queried and imported.
+You can filter data from Salesforce so that only the newly modified or created records are imported. To do this, you must set the `deltamins` parameter in your job configuration. This parameter specifies how many minutes before the last run Liferay queries for new or modified records.
 
-For instance, if `deltamins = 20` and `lastRunDate = 01/12/2022 12:00:00`, then only records modified after `01/12/2022 11:40:00` or above are retrieved from Salesforce. If records already exist, Liferay’s import strategy updates them if needed and only inserts new records. 
+For instance, if `deltamins = 20` and `lastRunDate = 01/12/2022 12:00:00`, then only records created or modified after `01/12/2022 11:40:00` are retrieved from Salesforce. If records already exist, Liferay’s import strategy updates them if needed and only inserts new records. 
 ```
 
 ### Products Reference

@@ -3,7 +3,7 @@
 Each portal instance can be a SAML provider, either an Identity Provider (IdP) or a Service Provider (SP). Whichever role your DXP instance fills, you can configure it in the same place. 
 
 ```{warning}
-The Instance Settings user interface is auto-generated and doesn't provide field validation and other features that make it easier to configure SAML. Please use the [SAML Admin](./saml-admin.md) interface to configure your SAML instance. The Instance Settings interface is documented here for advanced users who want to use it to create a [configuration file](./saml-configuration-reference.md).
+The Instance Settings user interface is auto-generated and doesn't provide field validation and other features that make it easier to configure SAML. Please use the [SAML Admin](./saml-admin.md) interface to configure your SAML instance. The Instance Settings interface is documented here for advanced users who want to use it to create a [configuration file](./saml-settings.md).
 ```
 
 1. Go to _Control Panel_ &rarr; _Instance Settings_ &rarr; _Security_ &rarr; _SSO_ &rarr; _SAML Provider Configuration_. 

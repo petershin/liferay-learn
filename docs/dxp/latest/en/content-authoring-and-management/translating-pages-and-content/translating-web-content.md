@@ -7,13 +7,13 @@ Liferay provides integrated tools for translating Web Content articles, so you c
 If desired, you can [enable a custom workflow](./enabling-workflows-for-translations.md) to direct the review and publishing process for translations.
 
 ```{note}
-The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
+The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
 ```
 
 ## Manually Translating Content
 
 ```{note}
-To manually translate Web Content, users must have either *View* and *Update* permissions for the asset or Translation permissions for one or more languages. See [Managing Permissions for Translation](./managing-permissions-for-translation.md) for more information.
+To manually translate Web Content, users must have either *View* and *Update* permissions for the asset or Translation permissions for one or more languages. See [Managing Permissions for Translation](./managing-translation-permissions.md) for more information.
 ```
 
 Follow these steps to manually translate Web Content:

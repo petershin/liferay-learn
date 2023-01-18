@@ -8,13 +8,13 @@ Liferayは、Webコンテンツの記事を翻訳するための統合ツール�
 を有効](./enabling-workflows-for-translations.md)にして、翻訳のレビューと公開プロセスを指示することができます。 
 
 ```{note}
-翻訳可能な言語は、インスタンスのローカライズ設定により決定されます。 詳しくは、[Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) と [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) を参照してください。
+翻訳可能な言語は、インスタンスのローカライズ設定により決定されます。 詳しくは、[Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) と [Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md) を参照してください。
 ```
 
 ## 手動でコンテンツを翻訳する
 
 ```{note}
-手動でWebコンテンツを翻訳するには、ユーザーが資産のいずれかの*ビュー*と*更新*のアクセス権を持っている必要がありますまたは1つ以上の言語のための翻訳アクセス権。 詳しくは、[翻訳に関する権限の管理](./managing-permissions-for-translation.md)をご覧ください。
+手動でWebコンテンツを翻訳するには、ユーザーが資産のいずれかの*ビュー*と*更新*のアクセス権を持っている必要がありますまたは1つ以上の言語のための翻訳アクセス権。 詳しくは、[翻訳に関する権限の管理](./managing-translation-permissions.md)をご覧ください。
 ```
 
 Webコンテンツを手動で翻訳するには、次の手順に従います。

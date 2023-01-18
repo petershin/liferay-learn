@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available 7.4+`
 
-You can create different Account Roles and define specific permissions for each one. Then assign these Roles to different [Account Users](./accounts/account-users.md) to grant appropriate access to their [Accounts](../accounts.md). 
+You can create different Account Roles and define specific permissions for each one. Then assign these Roles to different [Account Users](./account-users.md) to grant appropriate access to their [Accounts](../accounts.md). 
 
 Note that account roles are assigned to a user for each specific account. This offers great flexibility in managing users. For example, a user might have a "Buyer" role for account "A" but not have that role for account "B". To learn more more about permissions and how roles inherit permissions, see [Defining Role Permissions](../roles-and-permissions/defining-role-permissions.md).
 

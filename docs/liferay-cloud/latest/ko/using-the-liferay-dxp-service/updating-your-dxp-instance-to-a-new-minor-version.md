@@ -7,7 +7,7 @@ Liferay DXP 설치를 정기적으로 업데이트하는 것은 Liferay Cloud �
 ```
 
 ```{note}
-[hotfix](../../../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and- 이전/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes), [다음 단계](./deploying-to-the-liferay-service.md#deploying-hotfixes)를 따릅니다. 대신에.
+[hotfix](../../../../dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes), [다음 단계](./deploying-to-the-liferay-service.md#deploying-hotfixes)를 따릅니다. 대신에.
 ```
 
 ## DXP 7.3+에 대한 모듈 업그레이드 활성화
@@ -80,7 +80,7 @@ Liferay DXP에 대한 부 버전 업데이트도 프로젝트 저장소를 변�
     liferay.workspace.docker.image.liferay=liferay/dxp:7.3.10-ga1
     ```
 
-1. [배포 전략을](../build-and-deploy/understanding-deployment-strategies.md) 에서 `로 설정하고 <code>liferay/LCP.json`에서</code> 을 재생성합니다.
+1. `liferay/LCP.json`에서 [배포 전략](../build-and-deploy/understanding-deployment-strategies.md)을 `Recreate`로 설정합니다.
 
     ```json
     {

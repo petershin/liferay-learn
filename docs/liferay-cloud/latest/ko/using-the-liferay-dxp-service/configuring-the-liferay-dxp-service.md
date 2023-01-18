@@ -13,10 +13,10 @@ liferay
 └── LCP.json
 ```
 
-`common/` 디렉토리를 제외하고 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때 _만_ 전파됩니다. `common</em> ` 디렉토리에 추가된 변경 사항은 대상 배포 환경에 관계없이 항상 _배포됩니다. 이것은 모든 서비스에 대해 `configs/` 디렉토리 내의 모든 하위 폴더에 적용됩니다.</p>
+`common/` 디렉토리를 제외하고 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때만 _전파됩니다. `common/` 디렉토리에 추가된 변경 사항은 대상 배포 환경에 관계없이 _항상_ 배포됩니다. 이것은 모든 서비스에 대해 `configs/` 디렉토리 내의 모든 하위 폴더에 적용됩니다.
 
 ```{note}
-버전 3.xx 서비스를 사용하는 경우 이러한 구성 파일은 대신 적절한 `lcp/liferay/config/{ENV}/` 폴더에 속합니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](../reference/understanding-service-stack-versions.md)_를 참조하세요.
+버전 3.xx 서비스를 사용하는 경우 이러한 구성 파일은 대신 적절한 `lcp/liferay/config/{ENV}/` 폴더에 속합니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](../reference/understanding-service-stack-versions.md) 를 참조하세요.
 ```
 
 ## 문맥 재산
@@ -83,7 +83,7 @@ OSGi 구성(`.cfg` 또는 `.config` 파일)은 Liferay DXP에서 OSGi 구성 요
 
 ## 톰캣 구성
 
-구성 파일을 재정의하려면 적절한 환경의 `liferay/configs/{ENV}` 폴더에 파일을 배포하여 Liferay 서비스의 Tomcat 서버를 구성하십시오. 예를 들어 사용자 지정 파일을 리포지토리의 적절한{TOMCAT HOME}liferay</code> configs{ENV}`tomcat/conf/ <code>폴더에 배치` 변화.
+구성 파일을 재정의하도록 적절한 환경의 `liferay/configs/{ENV}` 폴더에 파일을 배포하여 Liferay 서비스의 Tomcat 서버를 구성합니다. 예를 들어 다음 위치의 적절한 `liferay/configs/{ENV}/tomcat/conf/` 폴더에 사용자 지정된 파일을 배치하여 Liferay 컨테이너의 파일 시스템에서 `{TOMCAT HOME}/conf/web.xml` 파일을 재정의할 수 있습니다. 리포지토리 및 변경 사항 배포.
 
 ```{note}
 Liferay Cloud의 Liferay 컨테이너에는 일반 `tomcat` 폴더와 버전 폴더(`tomcat-xxx`)라는 두 개의 tomcat 폴더가 있습니다. `tomcat` 폴더에는 버전이 지정된 `tomcat-xxx` 폴더에 대한 심볼릭 링크가 있으므로 일반 `tomcat` 폴더의 파일을 재정의하면 새 파일이 두 폴더 모두에 반영됩니다.

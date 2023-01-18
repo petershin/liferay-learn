@@ -113,7 +113,7 @@ bin/elasticsearch-plugin list
 
 ### 웹서버 구성 재정의
 
-`liferay.conf` 파일을 `webserver/configs/{ENV}/conf.d/`에 추가하여 `webserver` 서비스의 루트 위치를 사용자 정의할 수 있습니다. 이는 웹서버 `서비스 이미지의 컨테이너에서 사용할 수 있는 기본 <code>` </code> 을 재정의합니다. Liferay Cloud Console에서 셸에 액세스하여 루트 위치를 사용자 정의할 때 기본 `liferay.conf` 파일을 참조로 확인합니다.
+`liferay.conf` 파일을 `webserver/configs/{ENV}/conf.d/`에 추가하여 `webserver` 서비스의 루트 위치를 사용자 정의할 수 있습니다. 이는 `webserver` 서비스 이미지의 컨테이너에서 사용할 수 있는 기본 `liferay.conf`를 재정의합니다. 루트 위치를 사용자 정의할 때 기본 `liferay.conf` 파일을 참조로 보려면 Liferay Cloud Console에서 셸에 액세스하십시오.
 
 ```{warning}
 이 파일이 특히 기본 `liferay.conf`를 재정의하도록 `liferay.conf` 이외의 파일 이름을 사용하여 루트 위치를 사용자 정의하지 마십시오. 그렇지 않으면 컨테이너에 두 파일이 함께 존재하고 두 개의 루트 위치가 발견되어 오류가 발생할 수 있습니다.

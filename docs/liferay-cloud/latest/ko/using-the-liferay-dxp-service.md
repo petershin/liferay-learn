@@ -53,11 +53,9 @@ Liferay Cloud에 대한 [서비스 변경 로그](https://help.liferay.com/hc/en
 
 Liferay DXP에 사용자 지정 추가 사항을 배포하려면 새 모듈, 라이선스 또는 핫픽스를 Git 리포지토리의 적절한 위치에 추가해야 합니다.
 
-`common/` 디렉토리를 제외하고 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때 _만_ 전파됩니다. `common</em> ` 디렉토리에 추가된 변경 사항은 대상 배포 환경에 관계없이 항상 _배포됩니다. 이것은 모든 서비스에 대해 `configs/` 디렉토리 내의 모든 하위 폴더에 적용됩니다.</p> 
+`common/` 디렉토리를 제외하고 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때만 _전파됩니다. `common/` 디렉토리에 추가된 변경 사항은 대상 배포 환경에 관계없이 _항상_ 배포됩니다. 이것은 모든 서비스에 대해 `configs/` 디렉토리 내의 모든 하위 폴더에 적용됩니다.
 
-Liferay 서비스는 다른 서비스(예: 핫픽스 추가, 모듈의 소스 코드 빌드)에 비해 더 많은 사용자 정의 수단을 제공하므로 서비스를 배포할 때 몇 가지 더 고려해야 할 사항이 있습니다. 자세한 내용은 [Liferay 서비스](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) 에 배포를 참조하십시오. 또한 일반적인 배포 워크플로 방법에 대한 자세한 내용은 [배포 워크플로 개요](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 을 참조하십시오. Liferay Cloud에 배포하는 방법에 대한 자습서는 [DCP Cloud Console을 통해 변경 사항 배포](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)을 참조하십시오.
-
-
+Liferay 서비스는 다른 서비스(예: 핫픽스 추가, 모듈의 소스 코드 빌드)에 비해 더 많은 사용자 지정 수단을 제공하므로 서비스를 배포할 때 몇 가지 더 고려해야 할 사항이 있습니다. 자세한 내용은 [Liferay 서비스에 배포](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md)를 참조하십시오. 또한 일반적인 배포 워크플로 방법에 대한 자세한 내용은 [배포 워크플로 개요](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)를 참조하세요. Liferay Cloud에 배포하는 방법에 대한 자습서는 [DCP Cloud Console을 통해 변경 사항 배포](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)를 참조하십시오.
 
 ## 설정
 
@@ -65,34 +63,23 @@ Liferay 서비스는 다른 서비스(예: 핫픽스 추가, 모듈의 소스 �
 
 환경 변수는 Liferay 서비스를 구성하고 경우에 따라 포털 속성을 재정의하는 데에도 사용됩니다. 자세한 내용은 [Liferay 서비스 환경 변수](./using-the-liferay-dxp-service/liferay-service-environment-variables.md) 을 참조하십시오.
 
-
-
 ## 뜨거운 배치하십시요
 
 Liferay DXP UI를 통해 핫 배포를 수행할 수 있습니다. 이렇게 하려면 제어판 → 앱 → 앱 관리자로 이동합니다. 그런 다음 오른쪽 상단 모서리에 있는 점을 클릭하고 '업로드'를 클릭합니다. 이 화면에서 배포 및 설치할 로컬 파일 시스템의 파일을 선택할 수 있습니다.
-
-
 
 ```{note}
 Liferay Cloud에서 핫 배포를 사용하는 것은 권장되지 않습니다. 이 방법으로 배포된 모든 사용자 정의는 후속 Liferay 서비스 배포 시 손실되기 때문입니다.
 ```
 
-
-
-
 ## 클러스터링 활성화
 
 Liferay Cloud에서 Liferay DXP를 클러스터링하는 것은 Liferay DXP에서 클러스터링하는 것과 비교하여 프로세스가 매우 간단합니다. 클러스터링 지원이 가능하며 Liferay Cloud에서 즉시 사용 가능합니다. 클러스터링 동작 및 확장을 위한 추가 구성에는 몇 가지 추가 단계가 필요합니다. 자세한 내용은 [Liferay Cloud](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) 에서 클러스터링 설정을 참조하십시오.
-
-
 
 ## 스크립트 실행
 
 `configs/{ENV}/scripts` 폴더에 있는 `.sh` 파일은 서비스 시작 전에 자동으로 실행됩니다. 보다 광범위한 사용자 정의를 위해 스크립트를 사용할 수 있습니다. 그러나 그렇게 할 때 주의하십시오. 이것은 Liferay DXP를 사용자 정의하는 가장 강력한 방법이며 원하지 않는 부작용을 일으킬 수 있습니다.
 
 예를 들어 모든 로그 파일을 제거하는 스크립트를 포함하려면 프로젝트의 Git 리포지토리 내의 다음 디렉터리 구조에 배치합니다.
-
-
 
 ```
 liferay
@@ -106,15 +93,9 @@ liferay
             └── remove-log-files.sh
 ```
 
-
-
-
 ```{note}
-버전 3.xx 서비스를 사용하는 경우 스크립트는 대신 리포지토리의 `lcp/liferay/script/` 폴더에 속합니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](../reference/understanding-service-stack-versions.md)_를 참조하세요.
+버전 3.xx 서비스를 사용하는 경우 스크립트는 대신 리포지토리의 `lcp/liferay/script/` 폴더에 속합니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](../reference/understanding-service-stack-versions.md) 를 참조하세요.
 ```
-
-
-
 
 ## 제한 사항
 
@@ -122,16 +103,12 @@ Liferay DXP에는 콘텐츠를 구축, 관리 및 웹에 배포할 수 있는 �
 
 * [Remote Staging](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) 은 현재 Liferay Cloud에서 지원되지 않습니다. 온프레미스 설치에서 Liferay Cloud로 마이그레이션하는 사용자는 스테이징 기능을 계속 사용하려면 로컬 스테이징으로 전환해야 합니다.
 
-
-
 ## 추가 정보
 
 * [Liferay 서비스에 배포](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md)
 * [Liferay 클라우드 서비스에 로그인](getting-started/logging-into-your-liferay-cloud-services.md)
 * [Liferay DXP 서비스 구성](./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
 * [DCP 클라우드 콘솔을 통해 변경 사항 배포](build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
-
-
 
 ```{toctree}
 :maxdepth: 1
@@ -145,15 +122,9 @@ using-the-liferay-dxp-service/using-the-mysql-client.md
 using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
 ```
 
-
-
-
 ```{raw} html
 :file: landingpage_template.html
 ```
-
-
-
 
 ```{raw} html
 :file: using-the-liferay-dxp-service/landing.html

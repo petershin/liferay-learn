@@ -13,7 +13,7 @@ liferay
 └── LCP.json
 ```
 
-With the exception of the `common/` directory, changes added to an environment-specific folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to a `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to all subfolders within the `configs/` directory, for all services.
+`common/` 디렉토리를 제외하고 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때만 _전파됩니다. `common/` 디렉토리에 추가된 변경 사항은 대상 배포 환경에 관계없이 _항상_ 배포됩니다. 이것은 모든 서비스에 대해 `configs/` 디렉토리 내의 모든 하위 폴더에 적용됩니다.
 
 ```{note}
 If you are using version 3.x.x services, then these configuration files instead belong in the appropriate `lcp/liferay/config/{ENV}/` folder. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_ for more information on checking the version.

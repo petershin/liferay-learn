@@ -14,10 +14,10 @@
 
 ## 백업 페이지에서 환경 복원
 
-각 환경의 *백업* 페이지에는 수행된 모든 최근 백업 목록이 있습니다(자동 및 수동). 이 페이지에서 환경으로 백업을 복원하면 각 서비스에서 사용하는 데이터가 복원되지만 각 서비스에서 사용 중인 빌드 또는 *이미지는 변경되지*.
+각 환경의 *백업* 페이지에는 수행된 모든 최근 백업 목록이 있습니다(자동 및 수동). 이 페이지에서 환경으로 백업을 복원하면 각 서비스에서 사용하는 데이터가 복원되지만 각 서비스에서 사용 중인 빌드 또는 *이미지는 변경되지*
 
 ```{warning}
-복원 중인 백업의 `backup` 서비스 버전은 성공적으로 완료되도록 복원하기 전에 대상 환경과 일치해야 합니다. Liferay [수정 팩 수준](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier. html) 또한 일치하지 않는 데이터베이스 스키마로 인해 오류가 발생하지 않도록 일치해야 합니다. 환경에 현재 배포된 빌드와 다른 빌드가 필요한 백업을 복원하는 경우 [적절한 빌드 배포](../../build-and-deploy/overview-of-the-liferay-cloud-deployment -workflow.md) 복원을 시작하기 *전*.
+복원 중인 백업의 `backup` 서비스 버전은 성공적으로 완료되도록 복원하기 전에 대상 환경과 일치해야 합니다. Liferay [수정 팩 수준](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) 또한 일치하지 않는 데이터베이스 스키마로 인해 오류가 발생하지 않도록 일치해야 합니다. 환경에 현재 배포된 빌드와 다른 빌드가 필요한 백업을 복원하는 경우 [적절한 빌드 배포](../../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 복원을 시작하기 *전*.
 ```
 
 백업에서 환경을 복원하려면 다음 단계를 따르십시오.
@@ -70,7 +70,7 @@ SQL 스크립트에는 다음 형식이 지원됩니다.
 SQL 스크립트를 적절한 환경별 `backup/configs/{ENV}/scripts/` 폴더에 배치합니다.
 
 ```{note}
-버전 3.xx 서비스를 사용하는 경우 SQL 스크립트는 대신 적절한 `lcp/backup/script/{ENV}/` 폴더에 속합니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](../../reference/understanding-service-stack-versions.md)_를 참조하세요.
+버전 3.xx 서비스를 사용하는 경우 SQL 스크립트는 대신 적절한 `lcp/backup/script/{ENV}/` 폴더에 속합니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](../../reference/understanding-service-stack-versions.md) 를 참조하세요.
 ```
 
 ### 데이터 복원 수행

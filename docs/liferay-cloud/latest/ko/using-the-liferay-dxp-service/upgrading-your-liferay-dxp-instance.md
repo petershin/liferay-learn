@@ -235,8 +235,7 @@ Liferay DXP의 새 버전을 반영하도록 필요에 따라 다음 위치를 �
 
 1. 아직 로그인하지 않은 경우 Liferay Cloud 콘솔에 로그인합니다.
 
-1. 백업을</a>에 업로드한 환경
-으로 이동한 다음 사이드 메뉴에서 _백업_ 을 클릭합니다.</p></li> 
+1. [백업을 업로드한](#upload-the-document-library-and-database) 환경으로 이동한 다음 사이드 메뉴에서 _Backups_를 클릭합니다.
    
    1 목록에서 백업을 선택한 다음 해당 백업에 대한 작업 메뉴에서 _복원을_ 로 클릭합니다.
   
@@ -247,13 +246,10 @@ Liferay DXP의 새 버전을 반영하도록 필요에 따라 다음 위치를 �
   ![백업을 배포할 환경을 선택합니다.](./upgrading-your-liferay-dxp-instance/images/06.png)
 
 1 _환경으로 복원_을 클릭합니다. 
-  
-  
 
     ```{note}
     백업이 배포되는 동안 선택한 환경을 사용할 수 없습니다.
     ```
-</ol> 
 
 <!-- I'd also want to know if there is a zero downtime way to do an upgrade - because that's one of the next questions I would ask if I put myself in the shoes of someone trying to run a prod and business critical env. We may not be ready to say anything about that - but just a thought to put in your mind as potentially a future iteration of this - or let's say if we find out that you CAN do a zero downtime upgrade using a DR environment, then we should update this article to say so. An example:
 
@@ -262,8 +258,6 @@ Upgrading the liferay service requires a database upgrade and restoring the life
 -->
 
 축하합니다! DXP 데이터베이스를 새 버전으로 업그레이드하고 선택한 환경에 배포했습니다. 필요에 따라 동일한 백업을 다른 환경으로 [](#restore-the-backup) 할 수도 있습니다.
-
-
 
 ## 추가 정보
 

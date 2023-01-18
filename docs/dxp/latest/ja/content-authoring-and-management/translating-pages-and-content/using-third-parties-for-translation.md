@@ -90,7 +90,7 @@ Microsoft Translatorを有効にするには、Microsoft Azureのアカウント
    
 
    ```{note}
-   翻訳可能な言語は、インスタンスのローカライズ設定により決定されます。 詳しくは、[Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) と [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) を参照してください。
+   翻訳可能な言語は、インスタンスのローカライズ設定により決定されます。 詳しくは、[Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) と [Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md) を参照してください。
    ```
 
 

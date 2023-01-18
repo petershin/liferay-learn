@@ -2,7 +2,7 @@
 
 > Available for Liferay 7.4+
 
-With Liferay's Documents and Media application, you can save references to videos hosted on external platforms. These references can then be used to [embed videos](./embedding-videos-into-liferay-assets-and-pages.md) into Liferay assets or Site Pages. YouTube, Facebook, Vimeo, and Twitch are supported out of the box, but you can extend this feature to support custom video sources. <!--TASK: link to dev article once merged, "[support custom video sources](./creating-custom-video-shortcut-providers.md)"-->
+With Liferay's Documents and Media application, you can save references to videos hosted on external platforms. These references can then be used to [embed videos](./embedding-videos-into-liferay-assets-and-pages.md) into Liferay assets or Site Pages. YouTube, Facebook, Vimeo, and Twitch are supported out of the box, but you can extend this feature to [support custom video sources](../developer-guide/creating-video-shortcut-providers.md).
 
 Follow these steps to create an external video shortcut:
 
@@ -12,33 +12,33 @@ Follow these steps to create an external video shortcut:
    Shortcuts created in a Site are scoped to that Site, while shortcuts created in an Asset Library can be shared across multiple Sites. See [Asset Libraries Overview](../../asset-libraries/asset-libraries-overview.md) for more information.
    ```
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)), and select *External Video Shortcut*.
+2. Click the *Add* button (![Add Button](../../../images/icon-add.png)), and select *External Video Shortcut*.
 
    ![Add a new External Video Shortcut.](./creating-external-video-shortcuts/images/01.png)
 
-1. Enter a video URL from a supported platform: YouTube, Vimeo, Facebook, or Twitch.
+3. Enter a video URL from a supported platform: YouTube, Vimeo, Facebook, or Twitch.
 
    Videos from YouTube and Vimeo display a URL thumbnail. Facebook and Twitch videos do not.
 
    ![Enter a Video URL.](./creating-external-video-shortcuts/images/02.png)
 
-1. Enter a title for the shortcut.
+4. Enter a title for the shortcut.
 
    This field is auto-populated for YouTube and Vimeo. Facebook and Twitch require manual input.
 
-1. (Optional) Select a Display Page Template for the video.
+5. (Optional) Select a Display Page Template for the video.
 
    The selected template displays the video at a unique friendly URL and defines the display page's layout. See [Creating and Managing Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md) for more information.
 
    ![Select a Display Page Template for the video.](./creating-external-video-shortcuts/images/03.png)
 
-1. (Optional) Categorize the video shortcut using [tags and categories](../../tags-and-categories/organizing-content-with-categories-and-tags.md).
+6. (Optional) Categorize the video shortcut using [tags and categories](../../tags-and-categories/organizing-content-with-categories-and-tags.md).
 
-1. (Optional) Select related assets for the video shortcut.
+7. (Optional) Select related assets for the video shortcut.
 
-1. (Optional) Configure permissions for the video shortcut.
+8. (Optional) Configure permissions for the video shortcut.
 
-1. Click *Publish* when finished.
+9. Click *Publish* when finished.
 
    You can view and manage external video shortcuts like any other Documents and Media asset:
 

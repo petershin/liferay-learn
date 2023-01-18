@@ -1,6 +1,6 @@
 # Publishing Content With Display Pages
 
-You can use display page templates to create reusable dynamic designs for displaying content items at their friendly URLs. After [designing the template](./creating-and-managing-display-page-templates.md), you can make it the default template for displaying its content type, or manually configure only some of your content items to use it. Once set, users can view the content item's display page by visiting its friendly URL. The content is rendered dynamically according to your template design and mappings. See [Using Display Page Templates](./using-display-page-templates.md) for more information.
+You can use display page templates to create reusable dynamic designs for displaying content items at their friendly URLs. After [designing the template](./creating-and-managing-display-page-templates.md), you can make it the default template for displaying its content type, or manually configure only some of your content items to use it. Once set, users can view the content item's display page by visiting its friendly URL. The content is rendered dynamically according to your template design and mappings. See [Using Display Page Templates](../using-display-page-templates.md) for more information.
 
 ```{note}
 Even though you can create multiple display page templates for the same content type, you can select only one default template. To use an alternative template as the default, you must assign the template to content items individually.

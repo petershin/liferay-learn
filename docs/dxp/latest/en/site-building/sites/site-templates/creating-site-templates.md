@@ -3,7 +3,7 @@
 With Site Templates, you can design and configure templates for creating Sites. Each template is built using the same tools as Sites.
 
 ```{tip}
-Site Templates are primarily intended for maintaining Pages across multiple Sites. If you need to create and maintain Web Content and other assets across Sites, use [Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md). Also, if automatic propagation is not necessary for your use case, you can [export and import](./exporting-importing-site-pages-and-content.md) Site data to transfer it between environments.
+Site Templates are primarily intended for maintaining Pages across multiple Sites. If you need to create and maintain Web Content and other assets across Sites, use [Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md). Also, if automatic propagation is not necessary for your use case, you can [export and import](./exporting-importing-site-templates.md) Site data to transfer it between environments.
 ```
 
 Follow these steps to create a Site Template:

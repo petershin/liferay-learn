@@ -102,7 +102,7 @@ DXPは、アプリケーションサーバー上で実行されるWebアプリ�
 
 ![ローカルアプリケーションおよびリモートアプリケーションは、REST Web APIを介してサービスを呼び出すことができます。 Javaベースのポートレットは、Java APIを介してサービスを呼び出すこともできます。](./architecture/images/03.png)
 
-Liferayサービスは、 [サービスビルダー](../building-applications/data-frameworks/service-builder.md) を使用して構築され、[REST Builder](../../headless-delivery/apis-with-rest-builder.md)を使用してREST-fulになります。 サービスは簡単に[オーバーライドしたり拡張する](./extending-liferay/overriding-osgi-services.md)こともできます。
+Liferayサービスは、 [サービスビルダー](../building-applications/data-frameworks/service-builder.md) を使用して構築され、[REST Builder](../headless-delivery/apis-with-rest-builder.md)を使用してREST-fulになります。 サービスは簡単に[オーバーライドしたり拡張する](./extending-liferay/overriding-osgi-services.md)こともできます。
 
 WebベースのUIにより、コンテンツとサービスの機能がブラウザで利用できるようになります。
 

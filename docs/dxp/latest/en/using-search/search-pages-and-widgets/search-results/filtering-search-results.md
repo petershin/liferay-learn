@@ -89,48 +89,22 @@ As described in [Accessing Nested DDM Fields](../search-facets/custom-facet.md#a
 
 To find DDM fields in existing documents in the index,
 
-```json
-GET liferay-20097/_search
-{
-  "query": {
-    "nested": {
-      "path": "ddmFieldArray",
-      "query": {
-        "wildcard":  { "ddmFieldArray.ddmFieldName": "ddm__*" }
-      }
-    }
-  }
-}
-```
+1. Enable _Display Results in Document Form_ in the Search Results widget's configuration, then search for a result that uses the nested field.
 
-Replace the Company Id---`20097`---in the index name parameter to match your instance's value.
-
-The document returned has a `ddmFieldArray` object with nested content:
+1. Expand the _Details_ view of the result, then find its `ddmFieldArray` field and copy its value. For example, 
 
 ```json
- "ddmFieldArray" : [
-    {
-      "ddmFieldName" : "ddm__keyword__40806__Textb5mx_en_US",
-      "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-      "ddmFieldValueKeyword_en_US_String_sortable" : "some text has been entered",
-      "ddmFieldValueKeyword_en_US" : "some text has been entered"
-    },
-    {
-      "ddmFieldName" : "ddm__keyword__40806__Selectjdw0_en_US",
-      "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-      "ddmFieldValueKeyword_en_US_String_sortable" : "option 3",
-      "ddmFieldValueKeyword_en_US" : "value 3"
-    },
-    {
-      "ddmFieldName" : "ddm__keyword__40806__Boolean15cg_en_US",
-      "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-      "ddmFieldValueKeyword_en_US" : "true",
-      "ddmFieldValueKeyword_en_US_String_sortable" : "true"
-    }
-  ],
-```
+   "ddmFieldArray" : [
+               {
+                 "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
+                 "ddmFieldValueKeyword_en_US" : "true",
+                 "ddmFieldValueKeyword_en_US_String_sortable" : "true",
+                 "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
+               }
+             ],
+    ```
 
-Using one of these fields in a Custom Filter configuration requires three custom filter widgets.  A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is added for wrapping the required child queries: one child query matches the field's name, the other the value.
+Using a nested field in a Custom Filter configuration requires three custom filter widgets.  A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is added for wrapping the required child queries: one child query matches the field's name, the other the value.
 
 ```{important}
 If you require custom filters on multiple nested fields in the same page, you must configure separate custom parameter names for each child query. See [Custom Filter Examples](./custom-filter-examples.md#boosting-matches-to-nested-fields) for an example. 

@@ -222,28 +222,11 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
 
     **Checkpoint:** Because of the exact match to the content field, the Not Boosted Web Content appears before the Boosted Web Content.
 
-1. In the Kibana Dev Tools console, or from the CLI via cURL, execute a GET request to find nested DDM fields with `ddm__*` in the field name:
+1. Enable _Display Results in Document Form_ in the Search Results widget's configuration.
 
-    ```json
-    GET liferay-20097/_search
-    {
-      "query": {
-        "nested": {
-          "path": "ddmFieldArray",
-          "query": {
-            "wildcard":  { "ddmFieldArray.ddmFieldName": "ddm__*" }
-          }
-        }
-      }
-    }
-    ```
+1. Find the `ddmFieldArray` field and copy its value. For example, 
 
-    Replace the `20097` with the `companyId` of your [Virtual Instance](../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md).
-
-1. In the Elasticsearch response, find and copy the `ddmFieldArray` with the boolean field. Look for _Boolean_ or _Checkbox_ in the field name. For example,
-<!-- Edited, because there's no ddmfieldName with Boost in it as we had documented, but there is a Checkbox -->
-
-   ```json
+```json
    "ddmFieldArray" : [
                {
                  "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
@@ -252,7 +235,7 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
                  "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
                }
              ],
-   ```
+    ```
 
 1. Go to the search page and add three Custom Filters using the Elasticsearch response data:
 

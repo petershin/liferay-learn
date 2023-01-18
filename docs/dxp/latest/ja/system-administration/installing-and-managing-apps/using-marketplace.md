@@ -87,7 +87,7 @@ DXP Tomcatバンドルを使用している場合は、マーケットプレイ�
 
 1. [マーケットプレイスプラグイン](https://www.liferay.com/marketplace/download) をダウンロードします。
 
-2. プラグイン（`.lpkg`ファイル）を、[Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md)の`deploy`フォルダにコピーするか、または[アプリケーションマネージャ](./managing-apps/using-the-app-manager.md)を使用してインストールすることにより、デプロイします。
+2. プラグイン（`.lpkg`ファイル）を、[Liferay Home](../../installation-and-upgrades/reference/liferay-home.md)の`deploy`フォルダにコピーするか、または[アプリケーションマネージャ](./managing-apps/using-the-app-manager.md)を使用してインストールすることにより、デプロイします。
 
 これで、マーケットプレイスがコントロールパネルで使用できるようになりました。
 

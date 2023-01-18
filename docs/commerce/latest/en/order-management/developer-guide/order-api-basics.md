@@ -19,13 +19,13 @@ Once Liferay is running,
    unzip liferay-w6c8.zip
    ```
 
-1. Three parameters are required to create an order: the ID of the account that creates the order, the ID of the channel in which you create the order, and the [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) (e.g., USD) of the currency used.
+1. Three parameters are required to create an order: an account ID, a channel ID, and the [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) (e.g., USD) of the currency used.
 
    To get the account ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Accounts*. Find the account and copy its ID. Alternatively, select the account and copy the *Account ID*.
 
    ![Copy the account ID.](./order-api-basics/images/01.png)
 
-   To get the channel ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Channels*. Select the channel where you'll add orders and copy its ID.
+   To get the channel ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Channels*. Select the channel where you'll add orders and copy its ID.
 
    ![Copy the channel ID.](./order-api-basics/images/02.png)
 
@@ -35,7 +35,7 @@ Once Liferay is running,
    ./Order_POST_ToChannel.sh 1234 5678 USD
    ```
 
-   The JSON response shows a new order has been added:
+   The JSON response shows a new order has been added for that account and channel:
 
    ```bash
    {
@@ -257,7 +257,7 @@ The instance's `Order` objects are listed in JSON.
 
 ### Filtering, Paginating, Searching, and Sorting Orders
 
-Orders returned by this API can be filtered, paginated, searched, and sorted. See the [`getOrdersPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java#L43-L46) method for more information. Use the following `Order` fields to filter, search, and sort the results.
+Orders returned by this API can be filtered, paginated, searched, and sorted. See the [`getOrdersPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java#L43-L46) method for more information. Use the following `Order` fields to filter, search, and sort the results:
 
 * accountId
 * channelId
@@ -333,7 +333,7 @@ Code:
    :lines: 8-18
 ```
 
-The `Order` fields are listed in JSON.
+The `Order` fields are formatted in JSON.
 
 ## Patch an Order
 
@@ -403,4 +403,4 @@ Code:
    :lines: 8-16
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists the `Order` services and schemas and has an interface to test each service.
+The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `Order` services and schemas and has an interface to test each service.

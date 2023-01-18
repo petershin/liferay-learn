@@ -23,7 +23,7 @@ using-display-page-templates/configuring-seo-and-open-graph.md
 
 ![専用URLでコンテンツを表示するための表示ページテンプレートを作成します。](./using-display-page-templates/images/01.png)
 
-表示ページのテンプレートを作成する場合、まずコンテンツの種類（Webコンテンツの記事、文書、ブログのエントリなど）を選択します。 これは、どのコンテンツが表示ページのレンダリングにテンプレートを使用できるかを決定するものです。 そして、コンテンツページと同じUIやデザイン要素を用いて、テンプレートをデザインすることができます。 つまり、ページ [フラグメント](../creating-pages/page-fragments-and-widgets/using-fragments.md) と [ウィジェット](../creating-pages/using-content-pages/using-widgets-on-a-content-page.md) を使って、コンテンツフィールドにマッピングする動的な表示を構築し、追加機能を統合することができるのです。 さらに、 [SEO設定](./configuring-seo-and-open-graph.md) を定義することで、ページの検索順位を向上させることも可能です。
+表示ページのテンプレートを作成する場合、まずコンテンツの種類（Webコンテンツの記事、文書、ブログのエントリなど）を選択します。 これは、どのコンテンツが表示ページのレンダリングにテンプレートを使用できるかを決定するものです。 そして、コンテンツページと同じUIやデザイン要素を用いて、テンプレートをデザインすることができます。 つまり、ページ [フラグメント](../creating-pages/page-fragments-and-widgets/using-fragments.md) と [ウィジェット](../creating-pages/using-content-pages/using-widgets-on-a-content-page.md) を使って、コンテンツフィールドにマッピングする動的な表示を構築し、追加機能を統合することができるのです。 さらに、 [SEO設定](./using-display-page-templates/configuring-seo-and-open-graph.md) を定義することで、ページの検索順位を向上させることも可能です。
 
 テンプレートを設計した後、そのコンテンツタイプを表示するためのデフォルトテンプレートとしたり、一部のコンテンツアイテムのみ使用するよう手動で設定することができます。 設定すると、ユーザーはそのコンテンツアイテムのフレンドリーURLにアクセスすることで、その表示ページを見ることができます。 コンテンツは、テンプレートのデザインに応じて動的にレンダリングされます。
 

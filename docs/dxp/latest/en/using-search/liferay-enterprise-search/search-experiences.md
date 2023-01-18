@@ -53,7 +53,7 @@ Liferay Search Experiences is available to Liferay DXP customers with a [Liferay
 
 | Version Availability | Installation Method | Fix Delivery Method |
 | :---- | :---- | :---- |
-| DXP 7.4 Update 5+ | [Bundled and Activated](activating-liferay-enterprise-search.md) | [DXP Updates](../../../installation-and-upgrades/maintaining-a-liferay-installation/updating-liferay.md) |
+| DXP 7.4 Update 5+ | [Bundled and Activated](activating-liferay-enterprise-search.md) | [DXP Updates](../../installation-and-upgrades/maintaining-a-liferay-installation/updating-liferay.md) |
 | DXP 7.3 Update 6+ | [Downloaded](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3) and Installed (steps below) | App Releases |
 
 

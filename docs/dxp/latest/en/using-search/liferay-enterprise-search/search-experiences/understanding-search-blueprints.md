@@ -23,7 +23,7 @@ Simply put, Blueprints are comprised of Elements, with some additional configura
 
 To create a Blueprint, start with the use case you have in mind. What do you need to change about the default search page experience? Then look at the provided Elements and see if they can be used to start building your customization. Once you've planned the Blueprint, it's time to create it.
 
-For more details see [Creating and Managing Blueprints](./creating-and-managing-search-blueprints.md) and [Planning a Blueprint](./planning-a-blueprint.md).
+For more details see [Creating and Managing Blueprints](./creating-and-managing-search-blueprints.md).
 
 ## What Can I Do in the Blueprints UI?
 

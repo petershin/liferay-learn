@@ -12,7 +12,7 @@ To create Search Blueprints,
 
 1. In the New Search Blueprint window, give the Blueprint a name (required) and a description (optional).
 
-1. Depending on your [Blueprint plan](./planning-a-blueprint.md), next you'll use these menus to continue building the [Blueprint](./understanding-search-blueprints.md#what-is-a-blueprint):
+1. Depending on your Blueprint plan, next you'll use these menus to continue building the [Blueprint](./understanding-search-blueprints.md#what-is-a-blueprint):
 
    - [Query Builder](#using-the-query-builder): in the Query Elements section, add new query clauses to the search by choosing or composing Elements for the Blueprint. In the Query Settings section, configure additional settings for the query (like which asset and object types to search).
 

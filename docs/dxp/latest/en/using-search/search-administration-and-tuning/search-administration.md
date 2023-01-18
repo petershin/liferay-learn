@@ -35,7 +35,7 @@ Beginning in Liferay 7.4, Server Administrators can also limit the scope of the 
    ![Select the instances to re-index.](./search-administration/images/03.png)
 
 ```{note}
-[Workflow Metrics](../process-automation/workflow/using-workflows/using-workflow-metrics.md) are re-indexed via the application's dedicated settings menu. In the Global Menu, click _Metrics_ in the Applications &rarr; Workflow section, then open the Settings window (![Options](../../images/icon-actions.png)). See [Re-Indexing Workflow Metrics](../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) for more information.
+[Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) are re-indexed via the application's dedicated settings menu. In the Global Menu, click _Metrics_ in the Applications &rarr; Workflow section, then open the Settings window (![Options](../../images/icon-actions.png)). See [Re-Indexing Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) for more information.
 ```
 
 ## Field Mappings

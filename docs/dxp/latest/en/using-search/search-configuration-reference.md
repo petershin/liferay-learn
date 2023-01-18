@@ -46,7 +46,7 @@ For dedicated coverage of the search widgets, see [Search Pages and Widgets](./g
 
 ## Site Scoped Search Configuration
 
-By the strict definition of [Site Scoped Configuration](../../system-administration/configuring-liferay/understanding-configuration-scope.md), search doesn't have any. However, [Search Pages](./search-pages-and-widgets/working-with-search-pages/search-pages.md) influence Site-specific search behavior. Commonly, Search Pages contain search widgets configured to search for all content within a particular Site.
+By the strict definition of [Site Scoped Configuration](../system-administration/configuring-liferay/understanding-configuration-scope.md), search doesn't have any. However, [Search Pages](./search-pages-and-widgets/working-with-search-pages/search-pages.md) influence Site-specific search behavior. Commonly, Search Pages contain search widgets configured to search for all content within a particular Site.
 
 ![Configure the scope of a search.](./search-configuration-reference/images/04.png)
 
@@ -66,7 +66,7 @@ See [Configuring the Search Bar](../getting-started/searching-for-content.md#con
 
 ## Instance Scoped Search Configuration
 
-Search does not have any Instance scoped entries in the [Instance Settings](../../system-administration/configuring-liferay/understanding-configuration-scope.md#system-settings-and-instance-settings) panel. However, there are entries for configuring the instance-wide default [widget template](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) for many search widgets. Just enter the Site ID where the template is defined (often this will be the Global site's ID, found in its Site Settings panel) and the Widget Template ID, found in the Site Menu &rarr; Design &rarr; Widget Templates.
+Search does not have any Instance scoped entries in the [Instance Settings](../system-administration/configuring-liferay/understanding-configuration-scope.md#system-settings-and-instance-settings) panel. However, there are entries for configuring the instance-wide default [widget template](../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) for many search widgets. Just enter the Site ID where the template is defined (often this will be the Global site's ID, found in its Site Settings panel) and the Widget Template ID, found in the Site Menu &rarr; Design &rarr; Widget Templates.
 
 The only instance scoped configurations for search are the entries in the Global Menu &rarr; Applications &rarr; Search Tuning:
 

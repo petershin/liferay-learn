@@ -174,7 +174,7 @@ On Liferay 7.3+, Re-index the [Workflow Metrics](../../../process-automation/wor
 If you have Elasticsearch indexes used for primary data storage (storing data not backed by a database) you can bring that data into your new Elasticsearch cluster using the [snapshot and restore approach](./upgrading-elasticsearch/backing-up-elasticsearch.md). Liferay's own Search Tuning indexes (for Result Rankings and Synyonyms) are primary storage indexes.
 ```
 
-In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, enhanced logging is enabled so you can know when the re-index started and finished on the system and company indexes. For example,
+In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, enhanced logging is enabled so you can know when the re-index starts and finishes for system and company indexes. For example,
 
 ```bash
 2023-01-09 20:44:17.730 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:57] Start reindexing company 0
@@ -182,6 +182,7 @@ In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, enhanced logging is enabled 
 2023-01-09 20:44:53.677 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:57] Start reindexing company 20097
 2023-01-09 20:45:00.986 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:76] Finished reindexing company 20097
 ```
+
 Now Liferay is indexing content into your remote Elasticsearch 7 installation.
 
 ## Available Liferay Elasticsearch Connectors

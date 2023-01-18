@@ -107,7 +107,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | `-u "test@liferay.com:learn"`                                           | 基本認証の資格情報。                                                           |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、[OAuth 2.0](./../../headless-delivery/using-oauth2/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
+ここでは、デモのためにベーシック認証を使用しています。 本番環境では、[OAuth 2.0](../../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
 ```
 
 `Document`および`DocumentFolder` RESTサービスの他のcURLコマンドは、同様の引数を使用します。

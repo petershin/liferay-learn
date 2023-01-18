@@ -32,7 +32,7 @@ Liferay [Workflow](../process-automation/workflow/using-workflows/activating-wor
 
 [ドキュメントとメディアの統合を設定すると、アップロードまたは更新時にファイルのプレビュー](./documents-and-media/devops/configuring-documents-and-media-previews.md) を自動的に生成することができます。
 
-ドキュメントやメディアに追加されたファイルは、添付ファイルをサポートするアプリケーション（Webコンテンツ、メッセージボードなど）のほか、ページフラグメントやウィジェット（ [Media Gallery](./documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget.md)など）でも表示することが可能です。
+ドキュメントやメディアに追加されたファイルは、添付ファイルをサポートするアプリケーション（Webコンテンツ、メッセージボードなど）のほか、ページフラグメントやウィジェット（ [Media Gallery](./documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget)など）でも表示することが可能です。
 
 必要であれば、 [エクスポート](../site-building/sites/exporting-importing-site-pages-and-content.md) Documents と Media assets を Liferay Archive (`LAR`) ファイルとしてエクスポートすることが可能です。 これらのファイルは、バックアップとして使用したり、アセットを別のサイトまたはアセットライブラリにインポートするために使用できます。
 

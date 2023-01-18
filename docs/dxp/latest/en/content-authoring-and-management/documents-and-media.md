@@ -32,7 +32,7 @@ Enable Liferay [Workflow](../process-automation/workflow/using-workflows/activat
 
 You can configure Documents and Media integrations to [automatically generate previews](./documents-and-media/devops/configuring-documents-and-media-previews.md) for files when uploaded or updated.
 
-Files added to Documents and Media can be displayed in applications that support attachments (e.g., Web Content, Message Boards), as well as Page Fragments and widgets (e.g., [Media Gallery](./documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget.md)).
+Files added to Documents and Media can be displayed in applications that support attachments (e.g., Web Content, Message Boards), as well as Page Fragments and widgets (e.g., [Media Gallery](./documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget)).
 
 If desired, you can [export](../site-building/sites/exporting-importing-site-pages-and-content.md) Documents and Media assets as Liferay Archive (`LAR`) files. These files can be used as backups or to import your assets into another Site or Asset Library.
 

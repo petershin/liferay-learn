@@ -104,7 +104,7 @@ Besides collections, mapped content is not listed in the Page Content panel. The
 
 ### Page Design Options
 
-Open the Page Design Options panel ( ![Page Design Options](../../../images/icon-format.png) ) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click the Cog button ( ![Cog Button](../../../images/icon-cog3.png) ) to access additional Look and Feel options, including [browser-based client extensions](https://github.com/building-applications/client-extensions/browser-based-client-extensions.md).
+Open the Page Design Options panel ( ![Page Design Options](../../../images/icon-format.png) ) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click the Cog button ( ![Cog Button](../../../images/icon-cog3.png) ) to access additional Look and Feel options, including [browser-based client extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md).
 
 ### Comments
 

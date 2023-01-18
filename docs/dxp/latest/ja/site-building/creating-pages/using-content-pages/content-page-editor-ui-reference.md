@@ -104,7 +104,7 @@ Liferay 7.4 U37/GA37から、順序ボタン（！ [順序ボタン](../../../im
 
 ### ページデザインオプション
 
-ページデザインオプションパネル( ![Page Design Options](../../../images/icon-format.png) )を開き、ページの [マスターページテンプレート](../defining-headers-and-footers/managing-master-page-templates.md) または [スタイルブック](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)を変更します。 コグボタン ( ![Cog Button](../../../images/icon-cog3.png) ) をクリックすると、 [ブラウザベースのクライアント拡張機能](https://github.com/building-applications/client-extensions/browser-based-client-extensions.md) を含む、その他のルック＆フィールオプションにアクセスできます。
+ページデザインオプションパネル( ![Page Design Options](../../../images/icon-format.png) )を開き、ページの [マスターページテンプレート](../defining-headers-and-footers/managing-master-page-templates.md) または [スタイルブック](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)を変更します。 コグボタン ( ![Cog Button](../../../images/icon-cog3.png) ) をクリックすると、 [ブラウザベースのクライアント拡張機能](../../../building-applications/client-extensions/browser-based-client-extensions.md) を含む、その他のルック＆フィールオプションにアクセスできます。
 
 ### 掲示板のディスカッション
 

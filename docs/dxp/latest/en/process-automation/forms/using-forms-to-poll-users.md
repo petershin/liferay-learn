@@ -26,8 +26,7 @@ Enabling Limit to One Submission per User also requires that Users are authentic
 
 ![The User can no longer submit the form but can see the form report on currently submitted data.](./using-forms-to-poll-users/images/03.png)
 
-
-As of Liferay U49+/GA49+, you set the associated warning message's header and body content. Otherwise, the default message appears when the user views the form after submitting:
+When a user views the form after submitting, Liferay displays a message. For Liferay U49+/GA49+, you can customize the header and body content for this message. Otherwise, the default message appears:
 
 ![Configure the warning message when limiting submissions to one per user.](./using-forms-to-poll-users/images/05.png)
 

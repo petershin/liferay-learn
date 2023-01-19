@@ -27,8 +27,6 @@ docker cp ~/path/to/com.liferay.portal.search.elasticsearch7.configuration.Elast
 
 Alternatively, you can configure the connector in the user interface. In the Global Menu (![Global Menu](../../../images/icon-applications-menu.png)), go to Control Panel &rarr; System Settings and open the _Search_ category. The entry is called Elasticsearch 7.
 
-> In Liferay 7.2, The Control Panel is in the Product Menu (![Product Menu](../../../images/icon-product-menu.png)).
-
 A simple Liferay 7.3+ connector configuration enables production mode (`productionModeEnabled="true"`) and sets the URL to each Elasticsearch node (`networkHostAddresses=["http://es-node:9200"]`).
 
 1. Create the following configuration file:
@@ -40,7 +38,7 @@ A simple Liferay 7.3+ connector configuration enables production mode (`producti
 1. Specify the configuration properties in the `.config` file. Here's an example that includes [security properties](./securing-elasticsearch.md) commented out (note that you'd need to use `https` network host addresses when encryption is enabled):
 
     ```properties
-    # In CE/DXP7.3+, productionModeEnabled replaces operationMode (deprecated):
+    # In CE/DXP 7.3+, productionModeEnabled replaces operationMode (deprecated):
     productionModeEnabled=B"true"
     networkHostAddresses=["http://es-node1:9200","http://es-node3:9201","http://es-node3:9202"]
     # In CE/DXP 7.3+ the security settings are included in the ElasticsearchConfiguration
@@ -62,7 +60,6 @@ A simple Liferay 7.3+ connector configuration enables production mode (`producti
     ```
 
 1. Place the `.config` file in your `[Liferay Home]/osgi/configs` folder.
-
 
 ```{tip}
 The connectors contain many configuration settings. See the [Elasticsearch Connector Settings](./elasticsearch-connector-configuration-reference.md) for their definitions. Most of the configurations correspond to settings available in [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index.html).
@@ -171,7 +168,7 @@ On Liferay 7.3+, Re-index the [Workflow Metrics](../../../process-automation/wor
 1. Click _Reindex All_. Repeat this operation for each Virtual Instance in your system.
 
 ```{note}
-If you have Elasticsearch indexes used for primary data storage (storing data not backed by a database) you can bring that data into your new Elasticsearch cluster using the [snapshot and restore approach](./upgrading-elasticsearch/backing-up-elasticsearch.md). In Liferay 7.2 and 7.3, Liferay's own Search Tuning indexes (for Result Rankings and Synyonyms) were primary storage indexes. In 7.4 these indexes are backed by database tables.
+If you use Elasticsearch indexes for primary data storage (storing data not backed by a database) you can bring that data into your new Elasticsearch cluster using the [snapshot and restore approach](./upgrading-elasticsearch/backing-up-elasticsearch.md). In Liferay 7.2 and 7.3, Liferay's own Search Tuning indexes for Result Rankings and Synonyms are primary storage indexes. In 7.4, these indexes are backed by database tables.
 ```
 
 In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, enhanced logging is enabled so you can know when the re-index starts and finishes for system and company indexes. For example,

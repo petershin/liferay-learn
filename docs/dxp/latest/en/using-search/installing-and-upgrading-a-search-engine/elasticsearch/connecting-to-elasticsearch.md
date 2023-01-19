@@ -1,9 +1,6 @@
 # Connecting to Elasticsearch
 
-After [setting up Elasticsearch](./installing-elasticsearch.md), you must connect Liferay to it using the Liferay Connector to Elasticsearch. Connection steps depend on the [connector](#available-liferay-elasticsearch-connectors) you're configuring:
-
-* Liferay 7.3: Liferay Connector to Elasticsearch is included in the Liferay DXP 7.3 and CE 7.3 GA4+. It's also available on [Liferay Marketplace](../../../system-administration/installing-and-managing-apps/using-marketplace.md).
-* Liferay 7.2: Liferay Connector to Elasticsearch is available on [Liferay Marketplace](../../../system-administration/installing-and-managing-apps/using-marketplace.md).
+After [setting up Elasticsearch](./installing-elasticsearch.md), you must connect Liferay to it using the Liferay Connector to Elasticsearch. Connection steps depend on the connector you're configuring. See [Available Liferay Elasticsearch Connectors](#available-liferay-elasticsearch-connectors) for reference.
 
 Notable installation and configuration procedure differences are presented here. 
 

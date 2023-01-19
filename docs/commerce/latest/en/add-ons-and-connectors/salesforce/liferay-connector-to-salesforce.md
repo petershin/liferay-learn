@@ -10,7 +10,7 @@ Once deployed, Liferay automatically creates job scheduler tasks for each Talend
 
 ## Supported Entities
 
-The following chart lists supported Salesforce entities with their Liferay counterparts. Currently, you can only import Salesforce data to Liferay.
+The following chart shows supported Salesforce entities with their Liferay counterparts. Currently, you can only import Salesforce data to Liferay.
 
 | Salesforce       | Liferay     |
 | :--------------- | :---------- |
@@ -24,7 +24,7 @@ The following chart lists supported Salesforce entities with their Liferay count
 | OrderItem        | Order Item  |
 
 ```{note}
-There is no equivalent entity for Liferay's product catalogs in Salesforce. Importing Salesforce products to Liferay requires a catalog with its externalReferenceCode set to `SALESFORCE`. If one does not exist, Liferay automatically creates the catalog and uses it to store imported products.
+There is no equivalent entity for Liferay's product catalogs in Salesforce. Importing Salesforce products to Liferay requires a catalog with its externalReferenceCode set to `SALESFORCE`. If one does not exist, Liferay creates the catalog automatically and uses it to store imported products.
 ```
 
 ## Deploying the Connector to Liferay DXP
@@ -35,14 +35,14 @@ There is no equivalent entity for Liferay's product catalogs in Salesforce. Impo
 
 1. Verify these messages appear in the application server console:
 
-   ```bash
+   ```log
    Processing Liferay Connector to Salesforce 1.0.0.lpkg
    The portal instance needs to be restarted to complete the installation of file:/Users/able/bundles/osgi/marketplace/Liferay%20Connector%20to%20Salesforce%20-%20Impl.lpkg
    ```
 
 1. Restart your Liferay DXP instance.
 
-1. After restarting, confirm if the deployment was successful by opening the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigating to *Control Panel* &rarr; *Job Scheduler*.
+1. After restarting, confirm the deployment was successful by opening the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigating to *Control Panel* &rarr; *Job Scheduler*.
 
    If successful, you should see four new job scheduler tasks.
 
@@ -52,10 +52,10 @@ There is no equivalent entity for Liferay's product catalogs in Salesforce. Impo
 
 ## Configuring the Job Scheduler Tasks
 
-Upon creation, the settings editor for each Talend job scheduler task is automatically populated with default context parameters. You can use these parameters to provide necessary credentials and to modify each task's behavior in runtime.
+Upon creation, the settings editor for each Talend job scheduler task is populated with default context parameters automatically. You can use these parameters to provide necessary credentials and to modify each task's behavior at run time.
 
 ```{warning}
-Be careful when removing parameters from the settings editor. If you leave a key with a blank value, it disappears when saving the settings. If you lose the key-value pairs, they can't be restored, and you'll have to recreate the task.
+Be careful when removing parameters from the settings editor. If a key's value is blank, it disappears when saving the settings. If you lose the key-value pairs, they can't be restored, and you'll have to recreate the task.
 ```
 
 ### Credentials Reference
@@ -73,9 +73,9 @@ Each task includes these fields for entering Liferay and Salesforce credentials.
 | `SalesForceToken`    | Salesforce OAuth API token  |
 
 ```{note}
-You can filter data from Salesforce so that only the newly modified or created records are imported. To do this, you must set the `deltamins` parameter in your job configuration. This parameter specifies how many minutes before the last run Liferay queries for new or modified records.
+You can filter data from Salesforce so that only the newly modified or created records are imported. To do this, you must set the `deltamins` parameter in your job configuration. This parameter specifies the minutes between checks for new or modified records.
 
-For instance, if `deltamins = 20` and `lastRunDate = 01/12/2022 12:00:00`, then only records created or modified after `01/12/2022 11:40:00` are retrieved from Salesforce. If records already exist, Liferay’s import strategy updates them if needed and only inserts new records. 
+For instance, if `deltamins = 20` and `lastRunDate = 01/12/2022 12:00:00`, only records created or modified after `01/12/2022 11:40:00` are retrieved from Salesforce. If records already exist, Liferay’s import strategy updates them if needed and only inserts new records. 
 ```
 
 ### Products Reference
@@ -87,12 +87,12 @@ For instance, if `deltamins = 20` and `lastRunDate = 01/12/2022 12:00:00`, then 
 | `catalogDefaultCurrency`       | Default currency for the catalog                                                                 | `USD`                       |
 | `catalogDefaultLanguage`       | Default language for the catalog                                                                 | `en_US`                     |
 | `catalogId`                    | ID of the catalog for storing Salesforce data                                                    | Determined during execution |
-| `allowBackOrder`               | Boolean value that determines if a product supports back orders when stock runs out              | `true`                      |
-| `displayAvailability`          | Boolean value that determines if a product displays its availability on the product details page | `false`                     |
+| `allowBackOrder`               | Boolean value defining whether a product supports back orders when stock runs out              | `true`                      |
+| `displayAvailability`          | Boolean value defining whether a product displays its availability on the product details page | `false`                     |
 | `productType`                  | Product type used when creating all products                                                     | `simple`                    |
-| `freeShipping`                 | Boolean value that determines if a product supports free shipping or not                         | `false`                     |
-| `shippable`                    | Boolean value that determines if a product is shippable or not                                   | `true`                      |
-| `shippingSeparately`           | Boolean value that determines if a product supports separate shipping or not                     | `true`                      |
+| `freeShipping`                 | Boolean value defining whether a product supports free shipping                              | `false`                     |
+| `shippable`                    | Boolean value defining whether a product can be shipped                                          | `true`                      |
+| `shippingSeparately`           | Boolean value defining whether a product supports separate shipping                            | `true`                      |
 
 ### Price List Reference
 
@@ -100,10 +100,10 @@ For instance, if `deltamins = 20` and `lastRunDate = 01/12/2022 12:00:00`, then 
 | :---------------- | :--------------------------------------------------------------------------------------- | :------------ |
 | `catalogId`       | ID of the catalog to associate with the price list                                       | `0`           |
 | `currencyCode`    | Default currency code for the price list                                                 | `USD`         |
-| `neverExpire`     | Boolean to determine if the price list expires or not                                    | `true`        |
+| `neverExpire`     | Boolean defining whether the price list expires                                          | `true`        |
 | `priority`        | Determines the priority of the price list when there are multiple applicable price lists | `0`           |
-| `hasTierPrice`    | Boolean to determine if the price list contains tiered prices                            | `false`       |
-| `standardPrice`   | Boolean to determine if the price list contains standard prices                          | `false`       |
+| `hasTierPrice`    | Boolean defining whether the price list contains tiered prices                            | `false`       |
+| `standardPrice`   | Boolean defining whether the price list contains standard prices                          | `false`       |
 
 ### Accounts Reference
 
@@ -117,7 +117,7 @@ For instance, if `deltamins = 20` and `lastRunDate = 01/12/2022 12:00:00`, then 
 
 | Context Parameter           | Description                                                                                                                                                                | Default Value                                                                                                                                                                                                                  |
 | :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `channelId`                 | ID of the channel to import orders to                                                                                                                                      | Copy the channel ID from the UI. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Channels*. Select the desired channel and copy the ID present next to the name. |
+| `channelId`                 | ID channel where orders are imported                                                                                                                                      | Copy the channel ID from the UI. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Channels*. Select a channel and copy the ID present next to the name. |
 | `defaultCurrency`           | Default currency for orders                                                                                                                                                | `USD`                                                                                                                                                                                                                          |
 | `statusMapping_null`        | The status mapping for order statuses. It must use this syntax: `statusMapping_SalesforceStatusName=LiferayStatusCode (e.g., statusMapping_Activated=5)`                   | `5`                                                                                                                                                                                                                            |
 | `paymentStatusMapping_null` | The status mapping for order payment statuses. It must use this syntax: `paymentStatusMapping_SalesforceStatusName=LiferayStatusCode (e.g., paymentStatusMapping_Payed=2)` | `2`                                                                                                                                                                                                                            |

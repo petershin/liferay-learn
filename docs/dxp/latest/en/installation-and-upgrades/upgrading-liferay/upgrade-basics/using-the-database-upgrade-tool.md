@@ -73,6 +73,21 @@ If you installed the new Liferay release on an application server, create a `[Li
     echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties
     ```
 
+### Batch Insert Property
+
+Optionally, enable the batch insert property for your JDBC configuration in the `portal-upgrade-database.properties` file. This improves performance by batching insert statements for faster execution. See the table below for your vendor's property parameters. Note, this feature is not available for DB2 and Oracle databases.
+
+| Database Provider | Property |
+| :---------- | :------------- |
+| MariaDB | `rewriteBatchedStatements=true` |
+| MySQL | `rewriteBatchedStatements=true` |
+| PostgreSQL | `reWriteBatchedInserts=true`  |
+| SQL Server | `useBulkCopyForBatchInsert=true` |
+
+```{note}
+This batch insert property is already added in the [`portal-upgrade-database.properties`](https://github.com/liferay/liferay-portal/blob/master/modules/util/portal-tools-db-upgrade-client/properties/portal-upgrade-database.properties) file for Liferay DXP 7.4 U60+ or Liferay Portal 7.4 GA60+.
+```
+
 ## Running the Upgrade Tool
 
 The upgrade tool is configured via its command line interface, or by [using properties files](../reference/database-upgrade-tool-reference.md#manual-configuration).

@@ -123,6 +123,10 @@ If your Liferay server has instances, sites, pages, or versioned content items (
 
 Adjusting your database for upgrade operations (more data writes than in production) improves database upgrade performance. See [Database Tuning for Upgrades](./upgrade-stability-and-performance/database-tuning-for-upgrades.md) for details.
 
+### Enable Batch Insert
+
+[Enable batch insert](./upgrade-basics/using-the-database-upgrade-tool.md#batch-insert-property) for faster execution.
+
 ## Executing the Database Upgrade
 
 Here are two ways to upgrade your Liferay database:

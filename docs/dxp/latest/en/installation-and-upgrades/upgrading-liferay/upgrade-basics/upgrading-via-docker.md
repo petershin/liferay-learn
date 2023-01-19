@@ -79,6 +79,8 @@ Here are the steps for upgrading with a Docker image:
 
 1. Make sure you're using the JDBC database driver your database vendor recommends. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in [`new-version/files/portal-ext.properties`](../../reference/portal-properties.md) and replace the MySQL JDBC driver JAR your app server uses. See [Database Drivers](../migrating-configurations-and-properties.md#database-drivers) for more details.
 
+1. Optionally, [enable batch insert](./using-the-database-upgrade-tool.md#batch-insert-property) by adding the JDBC property to your `portal-ext.properties` file.
+
 1. Run the Docker image [mounted](../../installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md) to your new version folder using the following command. Substitute the image name, tag, and environment values as needed.
 
     ```bash

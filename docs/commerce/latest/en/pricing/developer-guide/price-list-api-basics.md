@@ -21,7 +21,7 @@ Once Liferay is running,
 
 1. Price lists are scoped to catalogs, so you need the catalog ID to create one.
 
-   To get a catalog's ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the desired catalog and copy its ID.
+   To get a catalog's ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select a catalog and copy its ID.
 
    ![Copy the catalog ID.](./price-list-api-basics/images/01.png)
 
@@ -183,7 +183,7 @@ Code:
    :lines: 11-22
 ```
 
-The instance's `PriceList` objects are listed in JSON.
+The instance's `PriceList` objects are formatted in JSON.
 
 ### Filtering, Paginating, Searching, and Sorting Price Lists
 
@@ -322,4 +322,4 @@ Code:
    :lines: 8-17
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists the `PriceList` services and schemas and has an interface to test each service.
+The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `PriceList` services and schemas and has an interface to test each service.

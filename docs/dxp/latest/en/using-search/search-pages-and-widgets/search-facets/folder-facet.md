@@ -22,4 +22,6 @@ The Advanced Configuration section contains additional options:
 
 **Display Frequencies:** Choose whether or not to display the term frequencies.
 
+**Order Terms By:** For Liferay 7.4 U44+/GA44+, you can choose the facet term sorting strategy: Term Frequency Descending (default), Term Frequency Ascending, Term Value Ascending, or Term Value Descending. The default strategy, Term Frequency Descending, orders facet terms from most matches to least. The term value options let you instead order facet terms alphabetically.
+
 Once finished, click the *Save* button.

@@ -1,8 +1,6 @@
 # Using the Script Engine in Workflow
 
-Liferay's [workflow engine](../introduction-to-workflow.md) can be scripted using Groovy scripts embedded in [XML workflow definitions](./crafting-xml-workflow-definitions.md) and run during workflow execution.
-
-Here are the workflow scripting topics:
+Add Groovy scripts to [your XML workflow definition](./crafting-xml-workflow-definitions.md) to inject logic and access Liferay's Java services in your workflow. Scripts are run during workflow execution.
 
 * [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)
 * [Using Predefined Variables](#predefined-variables)
@@ -11,28 +9,45 @@ Here are the workflow scripting topics:
 
 ## Adding Scripts to Workflow Nodes
 
-Workflow scripts can be invoked from actions in these workflow node types:
+Workflow scripts can be invoked from `<actions>` in these workflow node types:
 
 * `<fork>`
 * `<join>`
 * `<state>`
 * `<task>`
 
-Here's the format for an action that invokes a script:
+In addition, you can add scripts directly to `<condition>` nodes, as the [example below](#script-example) demonstrates. See [Creating a Condition Evaluator](./creating-a-condition-evaluator.md) to learn about writing your condition logic in Java.
+
+An action invokes a script like this:
 
 ```xml
 <actions>
-<action>
-    <script>
-        <![CDATA[script code goes here]]>
-    </script>
-    <script-language>groovy</script-language>
-</action>
-...
+    <action>
+        <script>
+            <![CDATA[script code goes here]]>
+        </script>
+        <script-language>groovy</script-language>
+    </action>
+    ...
+</actions>
+```
+Instead of writing the logic directly in a `<script>` element, you can write an [`ActionExecutor`](./creating-an-action-executor.md) Java class, then call it in the workflow definition. In the workflow definition, set the language to `java` and call the `ActionExecutor`:
+
+```xml
+<actions>
+   <action>
+      <name>reject</name>
+      <script>
+         <![CDATA[com.acme.e5c9.internal.kaleo.runtime.action.executor.E5C9ActionExecutor]]>
+      </script>
+      <script-language>java</script-language>
+      <execution-type>onAssignment</execution-type>
+   </action>
+   ...
 </actions>
 ```
 
-One common operation is to set the workflow status. For example, this script sets the workflow status to *approved*.
+One common script operation is to set the workflow status. For example, this script sets the workflow status to *approved*.
 
 ```groovy
 <script>
@@ -56,13 +71,13 @@ These variables are available from anywhere that you can run a workflow script:
 
 | Variable | Description | Usage |
 | :--- | :--- | :--- |
-| `kaleoInstanceToken` ([`KaleoInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoInstanceToken.java)) |  A workflow instance and corresponding instance token (the `KaleoInstanceToken`) are created each time a User clicks _Submit for Publication_. | Use the injected token to retrieve its ID by calling `kaleoInstanceToken.getKaleoInstanceTokenId()`. This is often passed as a method parameter in a script. |
-| `userId` | The `userId` returned is context dependent. | Technically, the logic works like this: if the `KaleoTaskInstanceToken.getcompletionUserId()` is null, check `KaleoTaskInstanceToken.getUserId()`. If that's null too, call `KaleoInstanceToken.getUserId()`. It's the ID of the last User to intervene in the workflow at the time the script is run. In the `created` node, this would be the User that clicked _Submit for Publication_, whereas it's the ID of the reviewer upon exit of the `review` node of the Single Approver definition. |
+| `kaleoInstanceToken` ([`KaleoInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoInstanceToken.java)) |  A workflow instance and corresponding instance token (the `KaleoInstanceToken`) are created each time a user clicks _Submit for Publication_. | Use the injected token to retrieve its ID by calling `kaleoInstanceToken.getKaleoInstanceTokenId()`. This is often passed as a method parameter in a script. |
+| `userId` | The `userId` returned is context dependent. | Technically, the logic works like this: if the `KaleoTaskInstanceToken.getcompletionUserId()` is null, check `KaleoTaskInstanceToken.getUserId()`. If that's null too, call `KaleoInstanceToken.getUserId()`. It's the ID of the last user to intervene in the workflow at the time the script is run. In the `created` node, this would be the user that clicked _Submit for Publication_, whereas it's the ID of the reviewer upon exit of the `review` node of the Single Approver definition. |
 | `workflowContext` (`Map<String, Serializable>`) | The workflow context contains information you can use in scripts. | The context is typically passed as a parameter, but all of the `WorkflowContext`'s attributes are available in the script as well. The workflow context in the script is context dependent. If a call to `ExecutionContext.getWorkflowContext()` comes back null, then the workflow context is obtained by `KaleoInstanceModel.getWorkflowContext()`. |
 
 ### Variables Injected into Task Nodes
 
-These variables are injected into Task Nodes:
+These variables are injected into task nodes:
 
 | Variable | Description | Usage |
 | :--- | :--- | :--- |
@@ -75,11 +90,11 @@ These variables are injected into Task Nodes:
 
 At virtually any point in a workflow, you can use Liferay's script engine to access workflow APIs or other Liferay APIs. Here are a few practical ways you can use workflow scripts:
 
-* Getting a list of Users who have a specific Role
+* Getting a list of users who have a specific role
 * Sending an email to the designated content approver with a list of people to contact if he is unable to review the content
-* Creating an alert to be displayed in the Alerts portlet for any User assigned to approve content
+* Creating an alert to be displayed in the Alerts portlet for any user assigned to approve content
 
-The following workflow script is written using Groovy and is used with a `Condition` Node. The script uses Liferay's [asset framework](../../../building-applications/data-frameworks/assets.md) to determine an asset's category and uses the category to determine the correct approval process automatically. If the asset is in the `legal` category, it is sent to the `Legal Review` task upon submission. Otherwise, the asset is sent to the `Default Review` task.
+The following workflow script is written using Groovy and is used with a condition node. The script uses Liferay's [asset framework](../../../building-applications/data-frameworks/assets.md) to determine an asset's category and uses the category to determine the correct approval process automatically. If the asset is in the `legal` category, it is sent to the `Legal Review` task upon submission. Otherwise, the asset is sent to the `Default Review` task.
 
 ```groovy
 <script>
@@ -134,7 +149,7 @@ The following workflow script is written using Groovy and is used with a `Condit
 ```
 
 ```{note}
-A Condition node script's `returnValue` variable must be a valid transition name to determine the next task or state.
+A condition node script's `returnValue` variable must be a valid transition name to determine the next task or state.
 
 For Liferay Portal, a valid transition name is the transition's `<name>` element value as entered in the XML file or in the source view of the Process Builder. For Liferay DXP, when you view the source of the definition in the Process Builder, you must instead use the value of the transition ID as specified in the transition's `<id>` element.
 ```
@@ -199,5 +214,7 @@ Liferay's Kaleo Workflow Engine and Liferay's Script Engine makes for a powerful
 ## Additional Information
 
 * [Introduction to Workflow](../introduction-to-workflow.md)
+* [Creating an Action Executor](./creating-an-action-executor.md)
+* [Creating a Condition Evaluator](./creating-a-condition-evaluator.md)
 * [Running Scripts From the Script Console](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md)
 * [Script Examples](../../../system-administration/using-the-script-engine/script-examples.md)

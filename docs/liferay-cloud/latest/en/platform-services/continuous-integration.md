@@ -122,7 +122,7 @@ Name                                          | Default Value   | Description |
 `LCP_CI_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds are stored |
 `LCP_CI_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that are stored |
 `LCP_CI_BUILD_TIMEOUT_MINUTES`        | `30`            | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline  |
-`LCP_CI_DEPLOY_BRANCH`                |                 | Branch used for [automatic deployment](../build-and-deploy/automatically-deploying-ci-service-builds.md). If this variable is not set to a valid branch name, then automatic deployment is disabled. |
+`LCP_CI_DEPLOY_BRANCH`                | `develop`       | Branch used for [automatic deployment](../build-and-deploy/automatically-deploying-ci-service-builds.md). If this variable is not set to a valid branch name, then automatic deployment is disabled. |
 `LCP_CI_DEPLOY_TARGET`                |                 | Sets the environment [automatic deployment](../build-and-deploy/automatically-deploying-ci-service-builds.md) will deploy to. Only used if `LCP_CI_DEPLOY_BRANCH` is set. |
 `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}`   |                 | The name of a hotfix (without the `.zip` extension) for CI to apply automatically when deploying the Liferay service. Replace `{ENV}` with the environment name (in all-caps), or `COMMON`. |
 `LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20`            | Set the number of recent builds for which *stashes* are preserved. Stashes cannot be preserved for more builds than allowed by the `LCP_CI_ARTIFACT_NUM_TO_KEEP` variable. |

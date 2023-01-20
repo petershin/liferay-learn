@@ -32,6 +32,8 @@ Advanced Configuration contains additional options:
 
 **Frequency Threshold:** Set the minimum frequency required for terms to appear in the list of facet terms. For example, if the frequency threshold of a facet is set to 3, terms with two matching results don't appear in the term result list.
 
+**Order Terms By:** For Liferay 7.4 U60+/GA60+, you can choose the facet term sorting strategy: Term Frequency Descending (default) or Term Frequency Ascending. Term Frequency Descending is the default and orders facet terms from most matches to least.
+
 **Display Frequencies:** Choose whether or not to display the term frequencies.
 
 **Federated Search Key:** Enter the key of an alternate Search this widget is participating on. If not set, this widget participates on the default search. This value is typically the name of an application-defined index.

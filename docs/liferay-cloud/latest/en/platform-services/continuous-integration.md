@@ -1,15 +1,15 @@
 # Continuous Integration
 
-Liferay Cloud uses [Jenkins](https://jenkins.io/) to power its continuous integration infrastructure service. When you send a pull request or push a commit to one of your pre-configured GitHub branches, an automatic and configurable build will be triggered.
+Liferay Cloud uses [Jenkins](https://jenkins.io/) to power its continuous integration infrastructure service. When you send a pull request or push a commit to one of your pre-configured GitHub branches, an automatic and configurable build is triggered.
 
 ```{note}
 Liferay Cloud customers (using the `customer` login) have permissions to manage and review their builds, but do not have full administrative privileges.
 ```
 
-By default, this automated build will compile code and can be configured to execute tests. Liferay Cloud will build your services and show their status on your environment's Builds page. If the tests fail, you can check the Jenkins dashboard and logs at `https://ci-companyname-infra.lfr.cloud`.
+By default, this automated build compiles code and it can be configured to execute tests. Liferay Cloud builds your services and shows their status on your environment's Builds page. If the tests fail, you can check the Jenkins dashboard and logs at `https://ci-companyname-infra.lfr.cloud`.
 
 ```{note}
-Continuous integration only works if you deploy from GitHub, GitLab, or Bitbucket, not the CLI.
+Continuous integration only works if you deploy from GitHub, GitLab, or Bitbucket, *not* the CLI.
 ```
 
 See the [CI service limitations](../reference/platform-limitations.md#continuous-integration-service) for more information.
@@ -20,19 +20,19 @@ Starting with CI service version `liferaycloud/jenkins:2.222.1-3.2.0`, a default
 
 The default Jenkinsfile encapsulates all the logic that was previously stored on the Jenkinsfile and moves it to a Jenkins plugin. This means that all bug fixes, security fixes, and improvements can be applied without requiring any CI configuration.
 
-Apart from that, a powerful set of extension points are now provided to customize every step of the CI pipeline.
+Additionally, a powerful set of extension points are available to customize every step of the CI pipeline.
 
 ### Enable the Default Jenkinsfile
 
-If your project is already updated to [version 4.x.x](../reference/understanding-service-stack-versions.md), then these steps are already complete. Otherwise, enable the default Jenkinsfile by performing the following steps:
+If your project is already updated to [version 4.x.x](../reference/understanding-service-stack-versions.md), these steps are already complete. Otherwise, enable the default Jenkinsfile by performing the following steps in your project's repository:
 
-1. Update your CI service to version `liferaycloud/jenkins:2.222.1-3.2.0`
+1. Update your CI service to version `liferaycloud/jenkins:2.222.1-3.2.0`.
 
-1. Delete the `Jenkinsfile` located on the root folder
+1. Delete the `Jenkinsfile` located in the root folder.
 
-1. Add the following environment variable: `LCP_CI_USE_DEFAULT_JENKINSFILE: true`
+1. Add the following environment variable to the CI service's `LCP.json` file: `LCP_CI_USE_DEFAULT_JENKINSFILE: true`.
 
-1. Deploy Jenkins service
+1. [Deploy the CI service](../build-and-deploy/deploying-changes-via-the-cli-tool.md).
 
 ### Extending the Default Jenkinsfile
 
@@ -56,16 +56,11 @@ Here is a basic overview of the steps in the CI build process:
 
 1. Load `ci/Jenkinsfile-before-cloud-deploy`, if it exists.
 
-1. Optionally deploy the build to an environment in the cloud, depending on if
-   the current branch has been specified as the deploy branch. This is
-   configured through the `LCP_CI_DEPLOY_BRANCH` environment variable. The
-   `LCP_CI_DEPLOY_TARGET` environment variable specifies which environment to deploy
-   to.
+1. Optionally deploy the build to an environment in the cloud, depending on if the current branch has been specified as the deploy branch. This is configured via the `LCP_CI_DEPLOY_BRANCH` environment variable. The `LCP_CI_DEPLOY_TARGET` environment variable specifies which environment to deploy to.
 
-1. Load `ci/Jenkinsfile-after-all`, if it exists. This will run when all steps are done.
+1. Load `ci/Jenkinsfile-after-all`, if it exists. This runs when all of the build steps are done.
 
-1. Load `ci/Jenkinsfile-post-always`, if it exists. This will run both when the
-   build fails and when it succeeds.
+1. Load `ci/Jenkinsfile-post-always`, if it exists. This runs no matter whether the build succeeds or fails.
 
 ```{note}
 If you are using version 3.x.x services, then these extensions to the Jenkinsfile are located in the `lcp/ci/` folder instead. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.

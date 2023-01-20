@@ -176,7 +176,7 @@ If you have Elasticsearch indexes used for primary data storage (storing data no
 
 In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, enhanced logging is enabled so you can know when the re-index starts and finishes for system and company indexes. For example,
 
-```bash
+```log
 2023-01-09 20:44:17.730 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:57] Start reindexing company 0
 2023-01-09 20:44:53.677 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:76] Finished reindexing company 0
 2023-01-09 20:44:53.677 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:57] Start reindexing company 20097

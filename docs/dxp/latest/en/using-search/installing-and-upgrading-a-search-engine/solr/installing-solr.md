@@ -1,5 +1,6 @@
 # Installing Solr 
-<!--TODO: add an availability badge: 7.2, 7.3, and 7.4 U60+/GA60+ -->
+
+{bdg-secondary}`7.2-7.3 (CE, DXP); 7.4 DXP U60+`
 
 Solr is a popular enterprise search platform built on Apache Lucene. It's reliable, scalable, and fault tolerant. Read more about it [here](http://lucene.apache.org/solr/).
 
@@ -65,9 +66,9 @@ To blacklist Elasticsearch-only features,
    ]
    ```
 
-   This configuration disables the [Elasticsearch 7 search engine connector's](../elasticsearch/installing-elasticsearch.md) modules. [Liferay Enterprise Search](../../liferay-enterprise-search.md) modules are disabled using the `enterprise.product.enterprise.search.enabled=false` property. Other [incompatible features](./solr-limitations.md) detect the search engine dynamically and are disabled automatically when you install Solr.
+   This configuration disables the [Elasticsearch 7 search engine connector's](../elasticsearch/installing-elasticsearch.md) modules. [Liferay Enterprise Search](../../liferay-enterprise-search.md) modules are disabled using the `enterprise.product.enterprise.search.enabled=false` property. Other [incompatible features](./solr-limitations.md) are disabled automatically when you install Solr.
 
-   For Liferay 7.2 and 7.3, give it these contents:
+   For Liferay 7.2 and 7.3, use these properties:
 
    ```properties
    blacklistBundleSymbolicNames=[\
@@ -103,7 +104,9 @@ To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-
 
 ## Downloading the Solr Connector
 
-1. Go to Control Panel &rarr; Marketplace &rarr; Store. Sign in.
+If you haven't already purchased the connector to Solr (don't worry, it's free),
+
+1. In a running Liferay, go to Control Panel &rarr; Marketplace &rarr; Store. Sign in.
 1. Grant access to the app.
 1. Search for Solr 8 and click on the app corresponding to your Liferay installation:
 
@@ -115,25 +118,15 @@ To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-
 1. Click the _Free_ button in the app's landing page.
 1. Choose a project if it exists, or add one.
 1. Agree to the conditions and click _Purchase_.
-1. Navigate to your Liferay account login page and sign in: <https://web.liferay.com/c/portal/login?p_l_id=73285537>.
-1. Click the hamburger menu at the top right of the page, then click _Account Home_.
-1. Click _Apps_, then click the project where you purchased the app.
-1. Find the app (e.g., Liferay Connector to Solr 8) and click on it.
-1. Click _Past Versions_ and choose the [right connector for your Liferay version](https://help.liferay.com/hc/en-us/articles/360016511651).
+
+One the app is purchased, download the LPKG file from the Past Versions page. 
+
+1. Substitute your <https://liferay.com> `user.name` in the following URL:
+
+   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions>
+   DXP: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions>
+
 1. Click _App_ to download the app's LPKG file.
-
-<!-- direct link to the versions page of the Liferay Connector to Solr 8 app--someone could just change the user name, log in, and skip a few steps? https://web.liferay.com/web/russell.bohl/apps/-/marketplace_apps/182518167/versions -->
-
-<!-- TODO: Document how Solr users get a hold of the right LPKG. This is in flux but we really can't publish without it.-->
-To download the Liferay Connector to Solr [7 or 8], navigate to [Liferay Marketplace](https://web.liferay.com/marketplace/) and download the app version that corresponds to your Liferay version.
-
-   - **Liferay CE:**
-      - [Liferay CE Connector to Solr 8](https://web.liferay.com/marketplace/-/mp/application/181462322)
-      - [Liferay CE Connector to Solr 7](https://web.liferay.com/marketplace/-/mp/application/118014614)
-
-   - **Liferay DXP:**
-      - [Liferay Connector to Solr 8](https://web.liferay.com/marketplace/-/mp/application/181462183)
-      - [Liferay Connector to Solr 7](https://web.liferay.com/marketplace/-/mp/application/117931595)
 
 Refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for the compatible application versions for your Liferay version and patch level.
 
@@ -157,7 +150,6 @@ To install and properly configure Solr for Liferay:
 
 1. Copy the contents of `configsets/_default/conf` to the `liferay/conf` folder.
 
-<!--TODO: verify that this stays the same after getting a hold of the LPKG -->
 1. Open the Liferay Connector to Solr 8's LPKG file with an archive manager.
 
    Next open the `Liferay Connector to Solr 8 - Impl.lpkg`.
@@ -346,7 +338,6 @@ To support SolrCloud in Liferay, specify the client type as *CLOUD* in Liferay's
 
 ## Solr Connector Configuration Reference
 
-<!-- TODO: these settings need to be properly documented like the Elasticsearch ones are. -->
 Below are the default configurations along with settings that become available (in the System Settings Search category, or configurable by `.config` file) when you install the Solr connector application. These settings accept a limited set of values: 
 
 **Configuration File:** `com.liferay.portal.search.solr8.configuration.SolrConfiguration.config` \

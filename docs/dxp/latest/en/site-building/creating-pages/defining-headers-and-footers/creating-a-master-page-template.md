@@ -6,10 +6,10 @@ Although Portal includes default Master Page Templates that you can use to defin
 
 Follow these steps to create a Master Page Template:
 
-1. Open Product Menu and go to Site &rarr; *Design* &rarr; *Page Templates*.
-1. Under the Masters tab, click *Add* (![Add](./../../../images/icon-add.png) to create a new Master Page Template.
+1. Open Product Menu and go to *Design* &rarr; *Page Templates*.
+1. Under the Masters tab, click *Add* (![Add](./../../../images/icon-add.png)) to create a new Master Page Template.
 1. Enter the *Name* of your new Master Page Template.
-1. Click *Fragments and Widgets* (![Fragments and Widgets](./../../../images/icon-add-widget.png)) on the sidebar and add Fragments for the common elements that you require.
+1. In *Fragments and Widgets* (![Fragments and Widgets](./../../../images/icon-add-widget.png)) on the sidebar, add Fragments for the common elements that you require.
 
     ![Add the Master Page Template's common elements from the Footers and Navigation Bars sections.](./creating-a-master-page-template/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
@@ -25,7 +25,7 @@ Follow these steps to create a Master Page Template:
     ![Check and uncheck Fragments from the Allowed Fragments dialog to specify whether they can be added to a page that uses this Master Page Template.](./creating-a-master-page-template/images/04.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
 1. Click *Save* to close the *Allowed Fragments* dialog.
-1. To preview your Content Page, click the *Preview* button (![Preview](../../../images/icon-preview.png)).
+1. To preview your Content Page, click the *Actions* icon (![Actions](../../../images/icon-actions.png)) -> Preview in a New Tab.
 1. Click *Publish Master* to create the Master Page Template.
 
 You can revert any action using the *Undo* (![Preview](../../../images/icon-undo.png)) or *Redo* (![Preview](../../../images/icon-redo.png)) buttons, or you can return to a previous version of your edits using the *History* (![Preview](../../../images/icon-time.png)) button.

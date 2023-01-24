@@ -36,7 +36,7 @@ From having top-tier SEO, to understanding and acting on your site's content, to
 :::
 
 :::{grid-item-card} Using the Redirection Tool
-:link: ./site-settings/managing-site-urls/using-the-redirection-tool.md
+:link: ./site-settings/managing-site-urls/setting-up-redirects-and-404-tracking.md
 :::
 
 :::{grid-item-card} Configuring SEO and Open Graph for Display Page Templates

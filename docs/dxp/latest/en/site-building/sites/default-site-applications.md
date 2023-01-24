@@ -64,7 +64,7 @@ When you use an application in a Site, the application's data is restricted to t
 | Application | Description |
 | :--- | :--- |
 | [Site Settings](../site-settings/site-settings-ui-reference.md) | Access configuration options for the Site. |
-| [Redirection](../site-settings/managing-site-urls/using-the-redirection-tool.md) | Add and manage HTTP redirects and track 404 errors. |
+| [Redirection](../site-settings/managing-site-urls/setting-up-redirects-and-404-tracking.md) | Add and manage HTTP redirects and track 404 errors. |
 | [Workflow](../../process-automation/workflow.md) | Design and enable custom workflows for guiding the review and approval process for content publishing. |
 
 ## Publishing

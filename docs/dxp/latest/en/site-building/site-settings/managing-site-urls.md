@@ -2,7 +2,7 @@
 toc:
 - ./managing-site-urls/configuring-your-sites-friendly-url.md
 - ./managing-site-urls/configuring-virtual-hosts-site-urls.md
-- ./managing-site-urls/using-the-redirection-tool.md
+- ./managing-site-urls/setting-up-redirects-and-404-tracking.md
 - ./managing-site-urls/using-pattern-redirects.md
 ---
 # Managing Site URLs
@@ -12,7 +12,7 @@ toc:
 
 managing-site-urls/configuring-your-sites-friendly-url.md
 managing-site-urls/configuring-virtual-hosts-site-urls.md
-managing-site-urls/using-the-redirection-tool.md
+managing-site-urls/setting-up-redirects-and-404-tracking.md
 managing-site-urls/using-pattern-redirects.md
 
 ```
@@ -35,13 +35,13 @@ You can also configure friendly URLs for pages and documents. See [Configuring Y
 
 Set up URL redirects for your sites to avoid 404s and improve user experience. With Liferay DXP, you can define two types of redirects: alias redirects and pattern redirects.
 
-**Alias Redirects**: These redirects explicitly define an absolute source URL and an absolute destination URL. For this reason, they are more predictable and recommended in most use cases. See [Using the Redirection Tool](./managing-site-urls/using-the-redirection-tool.md) for instructions on setting up alias redirects for your site.
+**Alias Redirects**: These redirects explicitly define an absolute source URL and an absolute destination URL. For this reason, they are more predictable and recommended in most use cases. See [Using Alias Redirects](./managing-site-urls/setting-up-redirects-and-404-tracking/using-alias-redirects.md) for instructions on setting up alias redirects for your site.
 
-**Pattern Redirects** {bdg-secondary}`7.4 U42+/GA42+`: These redirects use regular expressions to define patterns for source URLs and their replacements. For this reason, they are best used to match families of URLs quickly. However, depending on the regular expression, they can be slower than alias redirects and result in more URL matches than intended. See [Using Pattern Redirects](./managing-site-urls/using-pattern-redirects.md) for more information on setting them up for your site.
+**Pattern Redirects** {bdg-secondary}`7.4 U42+/GA42+`: These redirects use regular expressions to define patterns for source URLs and their replacements. For this reason, they are best used to match families of URLs quickly. However, depending on the regular expression, they can be slower than alias redirects and result in more URL matches than intended. See [Using Pattern Redirects](./managing-site-urls/setting-up-redirects-and-404-tracking/using-pattern-redirects.md) for more information on setting them up for your site.
 
 ## 404 URLs
 
-Use the Redirection tool to track and manage Site requests leading to 404 errors. When enabled, Liferay DXP catalogs each 404 error, so you can assess and quickly resolve any issues. See [Using the Redirection Tool](./managing-site-urls/using-the-redirection-tool.md) for more information and available configuration options.
+Use the Redirection tool to track and manage Site requests leading to 404 errors. When enabled, Liferay DXP catalogs each 404 error, so you can assess and quickly resolve any issues. See [Tracking 404 URLs](./managing-site-urls/setting-up-redirects-and-404-tracking/tracking-404-urls.md) for more information and available configuration options.
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -54,11 +54,7 @@ Use the Redirection tool to track and manage Site requests leading to 404 errors
 :link: ./managing-site-urls/configuring-virtual-hosts-site-urls.md
 :::
 
-:::{grid-item-card} Using the Redirection Tool
-:link: ./managing-site-urls/using-the-redirection-tool.md
-:::
-
-:::{grid-item-card} Using Pattern Redirects
-:link: ./managing-site-urls/using-pattern-redirects.md
+:::{grid-item-card} Setting Up Redirects and 404 Tracking
+:link: ./managing-site-urls/setting-up-redirects-and-404-tracking.md
 :::
 ::::

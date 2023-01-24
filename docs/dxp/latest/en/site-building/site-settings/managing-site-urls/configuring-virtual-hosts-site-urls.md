@@ -33,4 +33,4 @@ Your site is now accessible using the configured domain.
 ## Additional Information
 
 * [Configuring Your Site's Friendly URL](./configuring-your-sites-friendly-url.md)
-* [Using the Redirection Tool](./using-the-redirection-tool.md)
+* [Setting Up Redirects and 404 Tracking](./setting-up-redirects-and-404-tracking.md)

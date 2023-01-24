@@ -34,6 +34,10 @@ Also, depending on the regular expression you use, pattern redirects can be slow
 
 1. Click *Save*.
 
+```{warning}
+Avoid creating circular redirects. These are easy to create when defining redirects for content friendly URLs (e.g. redirecting between different friendly URLs for the same content). Liferay cannot reliably detect these loops.
+```
+
 ## Understanding Pattern Redirects
 
 When a user attempts to access the source URL, Liferay tests the patterns against the layout friendly URL in the order specified. The matching process roughly follows these rules:

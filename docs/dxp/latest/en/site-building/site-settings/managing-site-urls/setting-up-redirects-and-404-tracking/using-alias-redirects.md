@@ -42,11 +42,13 @@ If you need to perform bulk redirects, see [Using Pattern Redirects](./using-pat
 
 1. When finished, click *Create* to save the redirect.
 
-Once saved, Liferay validates your configuration. If other redirects point to your specified source URL, Liferay notifies you and asks whether you want to update the existing redirects to avoid a redirect chain.
+Once saved, Liferay validates your configuration. If other redirects point to your specified source URL, Liferay notifies you and asks whether you want to update the existing redirects to avoid a redirect chain. To help reduce conflicts, Liferay also prevents users from defining multiple alias redirects for the same source URL and from directly redirecting URLs to themselves.
 
 ![Liferay helps you avoid creating redirect chains.](./using-alias-redirects/images/06.png)
 
-Liferay also returns an error if you attempt to create multiple redirects for the same source URL, or if your specified source and destination URLs would result in a redirect loop.
+```{warning}
+Avoid creating circular redirects. These are easy to create when defining redirects for content friendly URLs (e.g. redirecting between different friendly URLs for the same content). Liferay cannot reliably detect these loops.
+```
 
 ## Editing and Removing Alias Redirects
 

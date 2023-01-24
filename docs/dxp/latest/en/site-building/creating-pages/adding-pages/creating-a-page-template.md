@@ -16,7 +16,7 @@ For Liferay DXP 7.4+, Page Template Collections are called Page Template Sets in
 
 The steps below show how to create and use Widget and Content Page Templates.
 
-1. Open the Product Menu and go to *Site Builder* &rarr; *Pages*.
+1. Open the Product Menu and go to *Design* &rarr; *Page Templates*.
 
 1. Select the *Page Templates* tab.
 

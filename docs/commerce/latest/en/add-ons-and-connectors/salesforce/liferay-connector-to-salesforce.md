@@ -2,7 +2,7 @@
 
 {bdg-primary}`Subscription`
 
-{bdg-secondary}`Available Liferay DXP 7.4 U46+`
+{bdg-secondary}`Available Liferay DXP 7.4 U35+`
 
 The Liferay Connector to Salesforce uses [Talend](https://help.talend.com/home) job designs and Liferay's [Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) to import data from Salesforce to Liferay DXP. You can [download](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) the connector and deploy it to your Liferay instance as an `.lpkg` file. This file contains Talend jobs that map Salesforce data fields to Liferay data fields.
 

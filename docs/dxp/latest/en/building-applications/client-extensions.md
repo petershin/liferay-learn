@@ -1,5 +1,6 @@
 ---
 toc:
+  - ./client-extensions/working-with-client-extensions.md
   - ./client-extensions/browser-based-client-extensions.md
 uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 ---
@@ -8,6 +9,7 @@ uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 ```{toctree}
 :maxdepth: 4
 
+client-extensions/working-with-client-extensions.md
 client-extensions/browser-based-client-extensions.md
 ```
 
@@ -101,6 +103,7 @@ Deploying custom services gives you much more power to implement customizations 
 
 ## Additional Information
 
+* [Working with Client Extensions](./client-extensions/working-with-client-extensions.md)
 * [Creating Your First Client Extension](./client-extensions/browser-based-client-extensions/tutorials/creating-your-first-javascript-client-extension.md)
 * [Browser-Based Client Extensions](./client-extensions/browser-based-client-extensions.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

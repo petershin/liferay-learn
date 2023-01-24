@@ -57,7 +57,7 @@ Liferay's publishing tools support the following types of pages and content:
 | :--- | :--- | :--- |
 | Blogs | &#10004; | &#10004; |
 | Commerce Entities | &#10008; | &#10008; |
-| Content Pages | &#10004; | &#10004; |
+| Content Pages | &#10004; | &#10008; |
 | Custom Objects | &#10008; | &#10008; |
 | Documents and Media | &#10004; | &#10004; |
 | Forms | &#10004; | &#10004; |

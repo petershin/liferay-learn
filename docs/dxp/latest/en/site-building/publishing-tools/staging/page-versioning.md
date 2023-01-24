@@ -1,24 +1,24 @@
 # Page Versioning
 
-With Page Versioning enabled, you and your team can work in parallel on multiple versions of your Site's Pages. Different versions are called *variations*, which you can create and manage for Widget Pages and Content Pages via the Staging bar. Page versioning maintains a history that you can use to revert changes made to your staged Pages to earlier versions if needed.
+With Page Versioning enabled, you and your team can work in parallel on multiple versions of your site's pages. Different versions are called *variations*, which you can create and manage for widget pages via the Staging bar. Page versioning maintains a history that you can use to revert changes made to your staged pages to earlier versions if needed.
 
 ```{note}
-Starting with Liferay DXP 7.4, 7.3 Fix Pack 1, and 7.2 Fix Pack 11, you can create variations in Widget Pages and Content Pages. In previous Liferay DXP versions, you could create variations only on Widget Pages. To learn more about variations in these types of pages, see [Types of Variations](#types-of-variations).
+Staging only supports variations and page history for widget pages. For content page versioning, use Publications. See [Comparing Publishing Tools](../comparing-publishing-tools.md) for more information.
 ```
 
-You can enable Page versioning for your Pages during initial setup or anytime afterward via the *Staging Configuration* page. Once enabled, you can create, merge, and publish variations for individual Pages or groups of Pages. You can also manage variation permissions for different User Roles.
+You can enable page versioning for your pages during initial setup or anytime afterward via the *Staging Configuration* page. Once enabled, you can create, merge, and publish variations for individual pages or groups of pages. You can also manage variation permissions for different User Roles.
 
 ```{important}
-If you use Page Versioning and later disable it, the history of Page versions is removed and only the latest published Page versions are preserved. This is true for both Local Live and Remote Live Staging.
+If you use page versioning and later disable it, the history of page versions is removed and only the latest published page versions are preserved. This is true for both Local Live and Remote Live Staging.
 ```
 
 ## Types of Variations
 
 Staging provides two types of variations:
 
-* **Site Pages Variation**: This type groups changes for multiple Site Pages into a single variation. They can include both Widget Pages and Content Pages.
+* **Site Pages Variation**: This type groups changes for multiple site pages into a single variation.
 
-* **Page Variations**: This type is for creating variations of an individual Page. They are created within Site Pages Variations and are only available for Widget Pages.
+* **Page Variations**: This type is for creating variations of an individual page. They are created within site pages variations.
 
    ```{note}
    When you import a widget page to a site with page variations enabled, the page is imported as a new variation of the site page's main variation.
@@ -26,19 +26,19 @@ Staging provides two types of variations:
    For content pages, use [Experiences](../../../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md) to create alternative page versions.
    ```
 
-Both variation types only affect Pages and do not affect your Site's content, since all variations in your staging Site share the same content. That said, each variation can use and configure the same content or applications in different ways, and each Site Pages Variation can include different Pages.
+Both variation types only affect pages and do not affect your site's content, since all variations in your staging site share the same content. That said, each variation can use and configure the same content or applications in different ways, and each site pages variation can include different pages.
 
-Also, Page metadata is not versioned (e.g., layout type, friendly URL). This means changes to metadata are applied to all variations. For example, if a Page template is modified, those modifications are propagated to all Pages configured to inherit changes from the template.
+Also, page metadata is not versioned (e.g., layout type, friendly URL). This means changes to metadata are applied to all variations. For example, if a page template is modified, those modifications are propagated to all pages configured to inherit changes from the template.
 
 ```{important}
-Page templates are not recognized by the Staging framework. This means that existing Page templates are not viewable or editable on a staged Site. If they're created on a staged Site, they are lost if staging is disabled.
+Page templates are not recognized by the Staging framework. This means that existing page templates are not viewable or editable on a staged site. If they're created on a staged site, they are lost if staging is disabled.
 ```
 
 ## Creating Variations
 
-Follow these steps to create new variations of a Page or group of Pages:
+Follow these steps to create new variations of a page or group of pages:
 
-1. Click the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar, and select *Site Pages Variation* (for Widget Pages or Content Pages) or *Page Variations* (for Widget Pages only).
+1. Click the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar, and select *Site Pages Variation* or *Page Variations*.
 
    ![Click the Actions button in the Staging bar and select the variation type you want to create.](./page-versioning/images/03.png)
 
@@ -50,31 +50,31 @@ Follow these steps to create new variations of a Page or group of Pages:
 
    ![Enter a name and description for your new variation.](./page-versioning/images/05.png)
 
-   For Site Pages Variations, you can select from the following options to determine if your new variation copies Pages from existing variations:
+   For site pages variations, you can select from the following options to determine if your new variation copies pages from existing variations:
 
-   * **All Site Pages Variations**: Copy all Pages from existing Site Pages Variations.
+   * **All Site Pages Variations**: Copy all pages from existing site pages variations.
 
-   * **None (Empty Site Pages Variation)**: Create a new, empty Site Pages Variation.
+   * **None (Empty Site Pages Variation)**: Create a new, empty site pages variation.
 
-   * **[Existing Variations]**: Copy all Pages from a single Site Pages Variation.
+   * **[Existing Variations]**: Copy all pages from a single site pages variation.
 
-   ![Determine whether your new Site Pages Variation copies Pages from existing variations](./page-versioning/images/06.png)
+   ![Determine whether your new site pages variation copies pages from existing variations](./page-versioning/images/06.png)
 
    ```{note}
-   If you decide to copy Pages from an existing variation, only the latest version marked as ready for publishing is copied.
+   If you decide to copy pages from an existing variation, only the latest version marked as ready for publishing is copied.
    ```
 
 1. Click *Add* to create your new variation.
 
-Once created, you can switch between each version of a Page or group of Pages via the drop-down menus in the Staging bar. For more information, see [Site Staging UI Reference](./site-staging-ui-reference.md).
+Once created, you can switch between each version of a page or group of pages via the drop-down menus in the Staging bar. For more information, see [Site Staging UI Reference](./site-staging-ui-reference.md).
 
-![You can switch between each version of a Page or group of Pages via the drop-down menus in the Staging bar](./page-versioning/images/02.png)
+![You can switch between each version of a page or group of pages via the drop-down menus in the Staging bar](./page-versioning/images/02.png)
 
 ## Merging Variations
 
-You can merge two Site Pages Variations. This adds all Pages and Page Variations into a Site Pages Variation without affecting or overwriting its content.
+You can merge two site pages variations. This adds all pages and page variations into a site pages variation without affecting or overwriting its content.
 
-1. Click the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar, and select Site Pages Variation.
+1. Click the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar, and select *Site Pages Variation*.
 
    ![Select Site Pages Variation.](./page-versioning/images/07.png)
 
@@ -86,7 +86,7 @@ You can merge two Site Pages Variations. This adds all Pages and Page Variations
 
    ![Select the variation you want to merge on top of the base variation.](./page-versioning/images/09.png)
 
-When two variations of Site Pages are merged, new Pages that don't exist in the base variation are added to it. And if a Page exists in both variations, and at least one version of the Page is marked as ready for publishing, the latest version marked as ready is added as a new variation for its corresponding Page in the base variation. Older variations not marked as ready for publishing are not copied.
+When two variations of site pages are merged, new pages that don't exist in the base variation are added to it. And if a page exists in both variations, and at least one version of the page is marked as ready for publishing, the latest version marked as ready is added as a new variation for its corresponding page in the base variation. Older variations not marked as ready for publishing are not copied.
 
 ## Managing Variation Permissions
 

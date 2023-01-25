@@ -1,5 +1,4 @@
 import com.liferay.object.admin.rest.client.dto.v1_0.ObjectDefinition;
-import com.liferay.object.admin.rest.client.dto.v1_0.ObjectField;
 import com.liferay.object.admin.rest.client.resource.v1_0.ObjectDefinitionResource;
 
 import java.util.Collections;

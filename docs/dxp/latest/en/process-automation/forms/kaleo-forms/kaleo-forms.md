@@ -1,5 +1,9 @@
 # Kaleo Forms
 
+```{important}
+Kaleo Forms is in [maintenance mode](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) in Liferay 7.4. Use [Objects](../../../building-applications/objects.md) if possible.
+```
+
 Liferay's *Kaleo Forms* solution combines the features of *Workflow Designer* and *Dynamic Data Lists* to create form-based business processes. With it, you can integrate forms with workflow tasks to create conference room checkout forms, support ticket processes, and more.
 
 * [Kaleo Forms](#kaleo-forms)

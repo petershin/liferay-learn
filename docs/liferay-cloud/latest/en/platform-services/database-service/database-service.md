@@ -1,6 +1,6 @@
 # Database Service (MySQL)
 
-The database service (MySQL) is a distributed relational database that simplifies the setup, operation, and scaling of your applications. It's a private service inside your application environment and it can only communicate with your other services, not the public internet. The database in Liferay Cloud treats table and column names with case sensitivity.
+The MySQL database service is a distributed relational database that simplifies the setup, operation, and scaling of your applications. It's a private service inside your application environment. It can only communicate with your other services, not the public internet. The database in Liferay Cloud treats table and column names with case sensitivity.
 
 ![The database service is one of several services available in Liferay Cloud.](./database-service/images/01.png)
 
@@ -10,7 +10,7 @@ See the [Database service limitations](../../reference/platform-limitations.md#d
 
 You can set these environment variables to configure the database service. When setting `LCP_MASTER_USER_NAME`, `LCP_MASTER_USER_PASSWORD`, and `LCP_DBNAME`, make sure to use the same values for other services that depend on the database service (e.g., the backup and Liferay services).
 
-You should set these variables before the first deployment. If a build is generated with new values for these variables, subsequent deployments will fail. It may be viable in a development environment to delete services and update the `LCP.json` file with new values for these variables, but this isn't viable in a production environment.
+You should set these variables before the first deployment. If a build is generated with new values, subsequent deployments will fail. During development you can delete services and update the `LCP.json` file with new values for these variables, but this isn't viable in a production environment.
 
 Name                       | Default Value              | Description      |
 :--- | :--- | :--- |

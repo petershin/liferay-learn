@@ -18,11 +18,11 @@ Coordinate with your database administrator before and after the conversion to e
 
 ### Ensuring Correct Table Capitalization
 
-Database table and column names are treated with case sensitivity in Liferay Cloud, and table names must be in Pascal case. Depending on the operating system and database type your environment used when your Liferay database was created, the tables may have names all in lower case, which are not recognized by Cloud infrastructure. For example, MySQL is case-sensitive in Linux by default, but not in Windows or MacOS (where Liferay may generate tables with all lower case names).
+Database table and column names are treated with case sensitivity in Liferay Cloud, and table names must be in Pascal case. If the table names were created in lower case, they're unrecognizable by Liferay Cloud. This can happen with certain operating system and database combinations. For example, MySQL is case-sensitive in Linux by default, but not in Windows or MacOS (where Liferay may generate tables with all lower case names).
 
-Before you create a database dump, ensure that your database's tables have Pascal case capitalization. If they are not in Pascal case (i.e., all in lower case), you must convert them manually or with a script. You must also ensure that any of your own code that references the table names reflects the updated capitalization.
+Before you create a database dump, ensure that your database's tables have Pascal case capitalization. If not (i.e., they're all in lower case), you must convert them to Pascal case manually or with a script. You must also ensure that any of your own code that references the table names reflects the updated capitalization.
 
-For example, if the tables have names all lower case, then convert these names like this:
+For example, convert these lower case table names:
 
 * *accountentry* &rarr; *AccountEntry*
 

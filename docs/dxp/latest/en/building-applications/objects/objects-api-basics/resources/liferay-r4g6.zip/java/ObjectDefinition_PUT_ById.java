@@ -23,15 +23,9 @@ public class ObjectDefinition_PUT_ById {
 				Long.valueOf(System.getProperty("objectDefinitionId")),
 				new ObjectDefinition() {
 					{
-						active = false;
 						label = Collections.singletonMap("en_US", "Goo");
 						name = "Goo";
-						objectFields = new ObjectField[] {
-							new ObjectField() {
-							}
-						};
 						pluralLabel = Collections.singletonMap("en_US", "Goos");
-						portlet = false;
 						scope = "company";
 					}
 				});

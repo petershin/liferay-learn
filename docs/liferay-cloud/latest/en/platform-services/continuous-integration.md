@@ -6,7 +6,7 @@ Liferay Cloud uses [Jenkins](https://jenkins.io/) to power its continuous integr
 Liferay Cloud customers (using the `customer` login) have permissions to manage and review their builds, but do not have full administrative privileges.
 ```
 
-By default, this automated build compiles code and it can be configured to execute tests. Liferay Cloud builds your services and shows their status on your environment's Builds page. If the tests fail, you can check the Jenkins dashboard and logs at `https://ci-companyname-infra.lfr.cloud`.
+By default, this automated build compiles code and can be configured to execute tests. Liferay Cloud builds your services and shows their status on your environment's Builds page. If the tests fail, you can check the Jenkins dashboard and logs at `https://ci-companyname-infra.lfr.cloud`.
 
 ```{note}
 Continuous integration only works if you deploy from GitHub, GitLab, or Bitbucket, *not* the CLI.
@@ -16,15 +16,15 @@ See the [CI service limitations](../reference/platform-limitations.md#continuous
 
 ## Using the Default Jenkinsfile
 
-Starting with CI service version `liferaycloud/jenkins:2.222.1-3.2.0`, a default Jenkinsfile is available when it is not overridden. The default Jenkinsfile is always available for use for projects [using version 4.x.x services](../reference/understanding-service-stack-versions.md).
+Starting with CI service version `liferaycloud/jenkins:2.222.1-3.2.0`, a default Jenkinsfile is available when it is not overridden. The default Jenkinsfile is always available for projects [using version 4.x.x services](../reference/understanding-service-stack-versions.md).
 
 The default Jenkinsfile encapsulates all the logic that was previously stored on the Jenkinsfile and moves it to a Jenkins plugin. This means that all bug fixes, security fixes, and improvements can be applied without requiring any CI configuration.
 
-Additionally, a powerful set of extension points are available to customize every step of the CI pipeline.
+Additionally, extension points are available to customize every step of the CI pipeline.
 
 ### Enable the Default Jenkinsfile
 
-If your project is already updated to [version 4.x.x](../reference/understanding-service-stack-versions.md), these steps are already complete. Otherwise, enable the default Jenkinsfile by performing the following steps in your project's repository:
+If your project is updated to [version 4.x.x](../reference/understanding-service-stack-versions.md), the default Jenkinsfile is already enabled. Otherwise, follow these steps in your project's repository:
 
 1. Update your CI service to version `liferaycloud/jenkins:2.222.1-3.2.0`.
 
@@ -56,11 +56,11 @@ Here is a basic overview of the steps in the CI build process:
 
 1. Load `ci/Jenkinsfile-before-cloud-deploy`, if it exists.
 
-1. Optionally deploy the build to an environment in the cloud, depending on if the current branch has been specified as the deploy branch. This is configured via the `LCP_CI_DEPLOY_BRANCH` environment variable. The `LCP_CI_DEPLOY_TARGET` environment variable specifies which environment to deploy to.
+1. If the current branch is the deploy branch, you can deploy the build to an environment in the cloud. The `LCP_CI_DEPLOY_BRANCH` environment variable sets the deploy branch, while `LCP_CI_DEPLOY_TARGET` specifies the deployment environment.
 
-1. Load `ci/Jenkinsfile-after-all`, if it exists. This runs when all of the build steps are done.
+1. Load `ci/Jenkinsfile-after-all`, if it exists. This runs when all build steps are completed.
 
-1. Load `ci/Jenkinsfile-post-always`, if it exists. This runs no matter whether the build succeeds or fails.
+1. Load `ci/Jenkinsfile-post-always`, if it exists. This runs whether the build succeeds or fails.
 
 ```{note}
 If you are using version 3.x.x services, then these extensions to the Jenkinsfile are located in the `lcp/ci/` folder instead. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
@@ -117,7 +117,7 @@ Name                                          | Default Value   | Description |
 `LCP_CI_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds are stored |
 `LCP_CI_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that are stored |
 `LCP_CI_BUILD_TIMEOUT_MINUTES`        | `30`            | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline  |
-`LCP_CI_DEPLOY_BRANCH`                | `develop`       | Branch used for [automatic deployment](../build-and-deploy/automatically-deploying-ci-service-builds.md). If this variable is not set to a valid branch name, then automatic deployment is disabled. |
+`LCP_CI_DEPLOY_BRANCH`                | `develop`       | Specify the branch to use for [automatic deployment](../build-and-deploy/automatically-deploying-ci-service-builds.md). If not set to a valid branch name, automatic deployment is disabled. |
 `LCP_CI_DEPLOY_TARGET`                |                 | Sets the environment [automatic deployment](../build-and-deploy/automatically-deploying-ci-service-builds.md) will deploy to. Only used if `LCP_CI_DEPLOY_BRANCH` is set. |
 `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}`   |                 | The name of a hotfix (without the `.zip` extension) for CI to apply automatically when deploying the Liferay service. Replace `{ENV}` with the environment name (in all-caps), or `COMMON`. |
 `LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20`            | Set the number of recent builds for which *stashes* are preserved. Stashes cannot be preserved for more builds than allowed by the `LCP_CI_ARTIFACT_NUM_TO_KEEP` variable. |

@@ -45,7 +45,7 @@ However, if your organization requires limiting Liferay DXP database user permis
 
 #### High Security Database User Practices
 
-Your organization may have more stringent security policies that require limiting database Liferay DXP database user permissions once the database is initialized. If permissions for Select, Insert, Update and Delete operations are the only ones allowed for the user, you must initialize and maintain the database manually. Here's what's recommended to accomplish this:
+Your organization may have more stringent security policies that require limiting Liferay DXP database user permissions once the database is initialized. If permissions for Select, Insert, Update and Delete operations are the only ones allowed for the user, you must initialize and maintain the database manually. Here's what's recommended to accomplish this:
 
 1. Grant full rights for the Liferay DXP database user to do anything to the database.
 
@@ -54,7 +54,13 @@ Your organization may have more stringent security policies that require limitin
 1. Once the database has been populated with the Liferay DXP tables, remove all permissions from the Liferay DXP database user except permissions to perform Select, Insert, Update and Delete operations.
 
 ```{warning}
-There are some caveats to running Liferay DXP with these constraints. For example, since Liferay creates database tables when you publish object definitions, you cannot use Objects concurrently with these constraints. Many plugins also create new tables when they’re deployed. Additionally, you must manually run the database upgrade function to upgrade Liferay DXP. If the Liferay DXP database user does not have adequate rights to create/modify/drop tables in the database, you must grant those rights to that user before deploying one of these plugins or starting the Liferay DXP upgrade. Once the tables are created or the upgrade completes, you can remove those rights until the next deploy or upgrade. If your team creates plugins that create their own tables, you must similarly grant temporary rights to the Liferay DXP database user before deploying the plugin. Finally, you cannot use these high security configurations with [Objects](../../building-applications/objects.md), since Liferay creates database tables when you [publish object definitions](../../building-applications/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) for more information.
+Some Liferay events precipitate database actions (e.g., creating and dropping tables) that are not compatible with these high security steps. These events require that the Liferay database user has full permissions on the database.
+
+| Event | How to Proceed | 
+| :---- | :---------- | 
+| [Publishing Object Definitions](../../building-applications/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) | Do not use Objects unless the Liferay database user has full database permissions. |
+| Deploying plugins that create tables | Before deploying, grant full rights to the Liferay database user, then re-secure the database once deployed. |
+| Upgrading Liferay | Before upgrading, grant full rights to the Liferay database user, then re-secure the database once upgraded. |
 ```
 
 ### Configure the Query Result Sort Order (Optional)

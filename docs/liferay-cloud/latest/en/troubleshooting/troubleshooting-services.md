@@ -112,10 +112,10 @@ If liveness or readiness probe failures are not causing the service restarts, or
 
 ## Accessing a Site with a CDN Causes JavaScript Errors
 
-If you are using a third-party CDN (such as [Cloudflare](https://www.cloudflare.com/)) that can sort query strings, this sorting can cause issues when accessing a site with a custom domain name, such as failing to load jQuery. This can cause the site to not load properly, resulting in JavaScript console errors that look like this:
+Some third-party CDNs can sort query strings (such as [Cloudflare](https://www.cloudflare.com/)). Sorting can cause issues when accessing a site with a custom domain name, such as failing to load jQuery. This can cause the site to not load properly, resulting in JavaScript console errors like this:
 
-![If your CDN sorts query strings, then this may result in JavaScript errors that appear to indicate jQuery failing to load.](./troubleshooting-services/images/02.png)
+![If your CDN sorts query strings, jQuery can fail to load.](./troubleshooting-services/images/02.png)
 
-To fix these errors, disable the query string sorting with your CDN. See your CDN's documentation for steps on doing this (e.g., [Cloudflare's Query String Sort documentation](https://support.cloudflare.com/hc/en-us/articles/206776797-Understanding-Query-String-Sort#4bJ4dl4TLlJR8NECznXDnI)).
+To fix these errors, disable the query string sorting with your CDN. See your CDN's documentation for exact steps (e.g., [Cloudflare's Query String Sort documentation](https://support.cloudflare.com/hc/en-us/articles/206776797-Understanding-Query-String-Sort#4bJ4dl4TLlJR8NECznXDnI)).
 
-If the errors still persist with the sorting disabled, please contact [Liferay Cloud Support](https://help.liferay.com/hc/en-us) for further assistance.
+If the errors persist with sorting disabled, contact [Liferay Cloud Support](https://help.liferay.com/hc/en-us) for assistance.

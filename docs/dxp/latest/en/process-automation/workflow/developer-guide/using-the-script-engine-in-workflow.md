@@ -9,16 +9,16 @@ Add Groovy scripts to [your XML workflow definition](./crafting-xml-workflow-def
 
 ## Adding Scripts to Workflow Nodes
 
-Workflow scripts can be invoked from `<actions>` in these workflow node types:
+You can invoke Workflow scripts from `<actions>` in these workflow node types:
 
 * `<fork>`
 * `<join>`
 * `<state>`
 * `<task>`
 
-In addition, you can add scripts directly to `<condition>` nodes, as the [example below](#script-example) demonstrates. See [Creating a Condition Evaluator](./creating-a-condition-evaluator.md) to learn about writing your condition logic in Java.
+Additionally, you can add scripts directly to `<condition>` nodes, as the [example below](#script-example) demonstrates. See [Creating a Condition Evaluator](./creating-a-condition-evaluator.md) to learn about writing condition logic in Java.
 
-An action invokes a script like this:
+Actions invoke a script like this:
 
 ```xml
 <actions>
@@ -31,7 +31,8 @@ An action invokes a script like this:
     ...
 </actions>
 ```
-Instead of writing the logic directly in a `<script>` element, you can write an [`ActionExecutor`](./creating-an-action-executor.md) Java class, then call it in the workflow definition. In the workflow definition, set the language to `java` and call the `ActionExecutor`:
+
+Instead of writing the logic directly in a `<script>` element, you can write an [`ActionExecutor`](./creating-an-action-executor.md) Java class and call it in the workflow definition. In the workflow definition, set the language to `java` and call the `ActionExecutor`:
 
 ```xml
 <actions>

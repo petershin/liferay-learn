@@ -28,6 +28,10 @@ Collect the information from the provider. You'll need it create the provider co
 
 Liferay seeks feedback on a new interface for a provider connection. For this reason, there are two ways to create the connection: the standard way and the new way. 
 
+```{important}
+To provide a smooth transition to the new provider as it is developed, Liferay converts and syncs the OpenID Connect configuration between the two interfaces. 
+```
+
 ### New OpenID Connect Provider Connection for OAuth 2.0**
 
 This interface is for those who want granular control over their client connection. All configuration is done through the provider's Well-Known Configuration Endpoint, as defined in the [OpenID Connect configuration specification](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest). 

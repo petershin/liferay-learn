@@ -1,4 +1,4 @@
-# Installing Solr 
+# Installing Solr
 
 {bdg-secondary}`7.2-7.3 (CE, DXP); 7.4 DXP U60+`
 
@@ -23,7 +23,6 @@ Before installing the Liferay Connector to Solr, you must blacklist or otherwise
 
 ### Blacklisting Elasticsearch-Only Features
 
-
 To blacklist Elasticsearch-only features,
 
 1. On Liferay DXP 7.4, use a portal property or Docker environment variable to disable several Elasticsearch-dependent modules:
@@ -40,7 +39,7 @@ To blacklist Elasticsearch-only features,
    LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_ENTEPRISE_PERIOD_SEARCH_PERIOD_ENABLED=false
    ```
 
-   Once set, all Liferay Enterprise Search features are disabled. See [Activating Liferay Enterprise Search](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
+   This disables all Liferay Enterprise Search features. See [Activating Liferay Enterprise Search](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
 
 1. Create a blacklist [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). The name depends on your Liferay version:
 
@@ -66,7 +65,7 @@ To blacklist Elasticsearch-only features,
    ]
    ```
 
-   This configuration disables the [Elasticsearch 7 search engine connector's](../elasticsearch/installing-elasticsearch.md) modules. [Liferay Enterprise Search](../../liferay-enterprise-search.md) modules are disabled using the `enterprise.product.enterprise.search.enabled=false` property. Other [incompatible features](./solr-limitations.md) are disabled automatically when you install Solr.
+   This configuration disables the [Elasticsearch 7 search engine connector's](../elasticsearch/installing-elasticsearch.md) modules. Using the `enterprise.product.enterprise.search.enabled=false` property disables [Liferay Enterprise Search](../../liferay-enterprise-search.md) modules. Installing Solr automatically disables other [incompatible features](./solr-limitations.md).
 
    For Liferay 7.2 and 7.3, use these properties:
 
@@ -92,7 +91,7 @@ To disable modules via App Manager,
 
 1. Navigate to Control Panel &rarr; App Manager.
 
-1. Once in the App Manager, search for the modules listed in the blacklisting configuration above. Find the modules and open the Actions (![Actions](../../../images/icon-actions.png)) menu. Choose _Deactivate_.  This leaves the bundle installed, but stops it in the OSGi runtime.
+1. Search for the modules listed in the blacklisting configuration above. Find the modules and open the Actions (![Actions](../../../images/icon-actions.png)) menu. Choose *Deactivate*.  This leaves the bundle installed, but stops it in the OSGi runtime.
 
 To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) to stop the Elasticsearch-dependent modules, first compile the list of modules to disable. See the [blacklisting instructions above](#blacklisting-elasticsearch-only-features) for each module's bundle symbolic name. Once you're at the Gogo shell,
 
@@ -104,10 +103,12 @@ To use the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-
 
 ## Downloading the Solr Connector
 
-If you haven't already purchased the connector to Solr (don't worry, it's free),
+If you haven't already acquired the connector to Solr,
 
 1. In a running Liferay, go to Control Panel &rarr; Marketplace &rarr; Store. Sign in.
+
 1. Grant access to the app.
+
 1. Search for Solr 8 and click on the app corresponding to your Liferay installation:
 
    | Liferay Flavor | Solr Connector Name |
@@ -115,18 +116,20 @@ If you haven't already purchased the connector to Solr (don't worry, it's free),
    | Liferay Portal/Community Edition | Liferay CE Connector to Solr 8 |
    | Liferay DXP | Liferay Connector to Solr 8 |
 
-1. Click the _Free_ button in the app's landing page.
-1. Choose a project if it exists, or add one.
-1. Agree to the conditions and click _Purchase_.
+1. Click the *Free* button in the app's landing page.
 
-One the app is purchased, download the LPKG file from the Past Versions page. 
+1. Choose a project if it exists, or add one.
+
+1. Agree to the conditions and click *Purchase*.
+
+One the app is purchased, download the LPKG file from the Past Versions page.
 
 1. Substitute your <https://liferay.com> `user.name` in the following URL:
 
    CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions>
    DXP: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions>
 
-1. Click _App_ to download the app's LPKG file.
+1. Click *App* to download the app's LPKG file.
 
 Refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for the compatible application versions for your Liferay version and patch level.
 
@@ -144,7 +147,7 @@ To install and properly configure Solr for Liferay:
 
 1. Download a [compatible](https://help.liferay.com/hc/en-us/articles/360016511651) Solr server and unzip it.
 
-1. Navigate to `solr-[version]/server/solr`. 
+1. Navigate to `solr-[version]/server/solr`.
 
 1. Create a new folder called `liferay`, then create two subfolders: `liferay/conf` and `liferay/data`.
 
@@ -154,7 +157,7 @@ To install and properly configure Solr for Liferay:
 
    Next open the `Liferay Connector to Solr 8 - Impl.lpkg`.
 
-   Finally, open the `com.liferay.portal.search.solr8.impl.jar` file, and extract 
+   Finally, open the `com.liferay.portal.search.solr8.impl.jar` file, and extract
 
    ```
    META-INF/resources/solrconfig.xml
@@ -213,11 +216,11 @@ Solr is now installed and started. Next configure and install the Solr connector
 
 ## Installing and Configuring the Solr Connector
 
-Once the connector is installed, the default configuration works for a test installation because the default values in the Liferay Connector to Solr match Solr's own defaults. See the [Configuration Reference](#solr-connector-configuration-reference) for the complete list of available settings. At a minimum, the read and write URLs must be configured for the connector in production environments.
+Once the connector is installed, the default configuration works for a test installation because the default values in the Liferay Connector to Solr match Solr's own defaults. See the [Configuration Reference](#solr-connector-configuration-reference) for the complete list of available settings. At a minimum, you must configure the read and write URLs for the connector in production environments.
 
-It's most common to make your edits to the Solr connector's default configurations using a configuration file deployed to Liferay's `osgi/configs` folder: 
+It is most common to make your edits to the Solr connector's default configurations using a configuration file deployed to Liferay's `osgi/configs` folder:
 
-1. Name the file 
+1. Name the file
 
    ```
    com.liferay.portal.search.solr8.configuration.SolrConfiguration.config
@@ -227,7 +230,7 @@ It's most common to make your edits to the Solr connector's default configuratio
 
    ![Configuring Solr from Liferay's System Settings application is most useful during development and testing.](./installing-solr/images/02.png)
 
-1. Once the app LPKG is downloaded, copy it to Liferay's `osgi/marketplace` folder and place its configuration files in `osgi/configs`.
+1. Once the app LPKG download is complete, copy it to Liferay's `osgi/marketplace` folder and place its configuration files in `osgi/configs`.
 
 1. Start Liferay.
 
@@ -239,12 +242,11 @@ It's most common to make your edits to the Solr connector's default configuratio
 
    Re-index the spell check indexes too.
 
-
 ## High Availability with SolrCloud
 
 Use SolrCloud if you need a cluster of Solr servers. Note that to use SolrCloud in production, you should set up an [external ZooKeeper ensemble](https://cwiki.apache.org/confluence/display/solr/Setting+Up+an+External+ZooKeeper+Ensemble). [ZooKeeper](http://zookeeper.apache.org/) is a centralized coordination service for managing distributed systems like your SolrCloud cluster.
 
-The steps included here should be considered the bare minimum of what must be done to configure SolrCloud with Liferay. For example, these instructions cover configuring SolrCloud on a single machine, whereas a production environment would feature multiple physical or virtual machines. These instructions also assume you've followed the earlier section on *Installing and Configuring Solr*. Refer to the [SolrCloud guide for more information](https://cwiki.apache.org/confluence/display/solr/SolrCloud).
+The steps included here are the bare minimum of what you must do to configure SolrCloud with Liferay. For example, these instructions cover configuring SolrCloud on a single machine, whereas a production environment would feature multiple physical or virtual machines. These instructions also assume you've followed the earlier section on *Installing and Configuring Solr*. Refer to the [SolrCloud guide for more information](https://cwiki.apache.org/confluence/display/solr/SolrCloud).
 
 1. Stop the Solr server if it's running.
 
@@ -256,7 +258,7 @@ The steps included here should be considered the bare minimum of what must be do
 
    The `configset/liferay_configs` folder contains the SolrCloud Liferay collection configuration and is uploaded to ZooKeeper. When you copy the `conf` folder from the `liferay` server configured earlier, you use the `schema.xml` and `solrconfig.xml` files provided with the Liferay Solr Adapter.
 
-1. Launch an interactive SolrCloud session to configure your SolrCloud cluster. From the Solr installation root, run 
+1. Launch an interactive SolrCloud session to configure your SolrCloud cluster. From the Solr installation root, run
 
    ```bash
    ./bin/solr -e cloud
@@ -264,8 +266,8 @@ The steps included here should be considered the bare minimum of what must be do
 
 1. Complete the setup wizard. These steps demonstrate creating a two-node cluster:
 
-    -  Enter `2` for the number of nodes.
-    -  Specify ports `8983` and `7574` (the defaults). Both nodes are started with the start commands printed in the log:
+    - Enter `2` for the number of nodes.
+    - Specify ports `8983` and `7574` (the defaults). Both nodes are started with the start commands printed in the log:
 
        ```
        Starting up Solr on port 8983 using command:
@@ -282,16 +284,16 @@ The steps included here should be considered the bare minimum of what must be do
        Started Solr server on port 7574 (pid=9026). Happy searching!
        ```
 
-    -  Name the collection *liferay*.
-    -  Split the collection into two shards.
-    -  Specify two replicas per shard.
-    -  When prompted to choose a configuration, enter *liferay_configs*. You should see a log message that concludes like this when the cluster has been started:
+    - Name the collection *liferay*.
+    - Split the collection into two shards.
+    - Specify two replicas per shard.
+    - When prompted to choose a configuration, enter *liferay_configs*. You should see a log message that concludes like this when the cluster has been started:
 
     ```bash
     SolrCloud example running, please visit http://localhost:8983/solr
     ```
 
-Now you have a new collection called *liferay* in your local SolrCloud cluster. Verify its status by running the *status* command:
+Now you have a new collection called *liferay* in your local SolrCloud cluster. Verify its status by running the `status` command:
 
 ```bash
 ./bin/solr status
@@ -316,7 +318,7 @@ Solr process 725273 running on port 8983
 ...
 ```
 
-To stop Solr while running in SolrCloud mode, use the *stop* command, like this:
+To stop Solr while running in SolrCloud mode, use the `stop` command, like this:
 
 ```bash
 ./bin/solr stop -all
@@ -332,16 +334,18 @@ To support SolrCloud in Liferay, specify the client type as *CLOUD* in Liferay's
    clientType="CLOUD"
    ```
 
-1. Start Liferay. If this is the first time starting after installing the Solr connector LPKG, follow the instructions in the log to restart Liferay again.
+1. Start Liferay. If this is the first time starting after installing the Solr connector LPKG, follow the instructions in the log to restart Liferay.
 
 ![From the Solr System Settings entry, set the Client Type to Cloud.](./installing-solr/images/03.png)
 
 ## Solr Connector Configuration Reference
 
-Below are the default configurations along with settings that become available (in the System Settings Search category, or configurable by `.config` file) when you install the Solr connector application. These settings accept a limited set of values: 
+Below are the default configurations along with settings that become available (in the System Settings Search category, or configurable by `.config` file) when you install the Solr connector application. These settings accept a limited set of values:
 
 **Configuration File:** `com.liferay.portal.search.solr8.configuration.SolrConfiguration.config` \
-**System Settings Entry:** _Solr 8_
+
+**System Settings Entry:** *Solr 8*
+
 ```properties
 authenticationMode=["BASIC" or "CERT"]
 clientType=["REPLICATED" or "CLOUD"]
@@ -353,7 +357,8 @@ zkHost="localhost:9983"
 ```
 
 **Configuration File:** `com.liferay.portal.search.solr8.configuration.SolrHttpClientFactoryConfiguration.config` \
-**System Settings Entry:** _Solr 8 HTTP Client Factory_
+
+**System Settings Entry:** *Solr 8 HTTP Client Factory*
 
 ```properties
 basicAuthPassword="solr"
@@ -363,7 +368,8 @@ maxTotalConnections="20"
 ```
 
 **Configuration File:** `com.liferay.portal.search.solr8.configuration.SolrSSLSocketFactoryConfiguration.config` \
-**System Settings Entry:** _Solr 8 SSL Factory_
+
+**System Settings Entry:** *Solr 8 SSL Factory*
 
 ```properties
 keyStorePassword="secret"
@@ -375,4 +381,3 @@ trustStoreType="JKS"
 verifyServerCertificate=B"true"
 verifyServerName=B"true"
 ```
-

@@ -1,22 +1,22 @@
 # Low Stock Action
 
-Low stock actions are performed when the product inventory falls below a specific threshold.  There's one low stock action available out-of-the-box (*Set as Unpublished*), that removes the product from the store when its inventory falls below the threshold. You can also create custom low stock actions. See [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) for more information.
+Low stock actions trigger when SKU inventory falls below a specific threshold. By default, Liferay includes the *Set as Unpublished* low stock action, which removes the product from the store when its inventory falls below the threshold. You can also create custom low stock actions. See [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) for more information.
 
-To set up a low stock action for a product:
+To set up a low stock action for a product,
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and navigate to *Commerce* &rarr; *Products*.
 
-1. Click on the desired product and navigate to the *Configuration* tab.
+1. Click the desired *product* and navigate to the *Configuration* tab.
 
 1. Under the inventory section, select a *Low Stock Action* from the dropdown menu.
 
-1. Enter a *Low Stock Threshold* to determine the trigger quantity for the action.
+1. Enter a *Low Stock Threshold* to determine the quantity that triggers the action.
 
-   ![Select a low stock action and set the quantity for it to trigger.](./low-stock-action/images/01.png)
+   ![Select a low stock action and set the quantity that triggers the action.](./low-stock-action/images/01.png)
 
 1. Click *Publish*.
 
-Once configured, the selected low stock action is triggered whenever the product inventory falls below the set threshold.
+Once configured, the low stock action runs whenever the product inventory falls below the set threshold.
 
 ## Commerce 2.1 and Below
 

@@ -59,7 +59,7 @@ If you installed the new Liferay release on an application server, create a `[Li
     `rootDir="data/document_library"`
     ```
 
-1. Use your database vendor's recommended JDBC database driver. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in your [`portal-ext.properties`](../../reference/portal-properties.md) file and replace the MySQL JDBC driver JAR your app server uses. See [Database Drivers](../migrating-configurations-and-properties.md#database-drivers) for more details.
+1. Use your database vendor's recommended JDBC driver. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in your [`portal-ext.properties`](../../reference/portal-properties.md) file and replace the MySQL JDBC driver JAR your app server uses. See [Database Drivers](../migrating-configurations-and-properties.md#database-drivers) for more details.
 
     You can configure the upgrade by answering the upgrade tool prompts or by [using upgrade properties files](../reference/database-upgrade-tool-reference.md#manual-configuration). 
 
@@ -67,7 +67,7 @@ If you installed the new Liferay release on an application server, create a `[Li
     If you're [upgrading to a new Liferay Docker image](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md), make sure to specify your database connection using [Portal Properties](../../reference/portal-properties.md) files instead of Docker env variables. The [Portal Properties reference](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) lists Portal Properties that correspond with each Liferay Env variable.
     ```
 
-1. Optionally, enable [upgrade reporting](../reference/upgrade-reports.md) to log the environment, changes, and more to a report.
+1. (Optional) Enable [upgrade reporting](../reference/upgrade-reports.md) to log the environment, changes, and more to a report.
 
     ```bash
     echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties
@@ -75,7 +75,7 @@ If you installed the new Liferay release on an application server, create a `[Li
 
 ### Batch Insert Property
 
-Optionally, enable the batch insert property for your JDBC configuration in the `portal-upgrade-database.properties` file. This improves performance by batching insert statements for faster execution. See the table below for your vendor's property parameters. Note, this feature is not available for DB2 and Oracle databases.
+You can enable the batch insert property for your JDBC configuration in the `portal-upgrade-database.properties` file. This improves performance by batching insert statements for faster execution. See the table below for your vendor's property parameters. This feature is not available for DB2 and Oracle databases.
 
 | Database Provider | Property |
 | :---------- | :------------- |
@@ -85,7 +85,7 @@ Optionally, enable the batch insert property for your JDBC configuration in the 
 | SQL Server | `useBulkCopyForBatchInsert=true` |
 
 ```{note}
-This batch insert property is already added in the [`portal-upgrade-database.properties`](https://github.com/liferay/liferay-portal/blob/master/modules/util/portal-tools-db-upgrade-client/properties/portal-upgrade-database.properties) file for Liferay DXP 7.4 U60+ or Liferay Portal 7.4 GA60+.
+The batch insert property is included in the [`portal-upgrade-database.properties`](https://github.com/liferay/liferay-portal/blob/master/modules/util/portal-tools-db-upgrade-client/properties/portal-upgrade-database.properties) file for Liferay 7.4 U60+/GA60+.
 ```
 
 ## Running the Upgrade Tool

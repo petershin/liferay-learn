@@ -1,14 +1,14 @@
 # Site Staging UI Reference
 
-After enabling Local or Remote Live Staging for your site, most page configuration options are only accessible in your Staging environment. This prevents users from directly editing Live pages.
+After enabling Local or Remote Live Staging for your site, most page configuration options are only accessible in your Staging environment. This prevents users from directly editing live pages.
 
-Also, once staging is enabled, you can access additional options in your Staging environment. These options are in the *Staging Bar*, *Publish to Live* menu, and *Staging page*.
+Once staging is enabled, additional options appear in your Staging environment. These options are in the Staging Bar, Publish to Live menu, and Staging Page.
 
 ## Staging Bar and Editing Tools
 
-When Staging is enabled for a site, you can access additional options via the Staging Bar on each of your site's pages. In this bar, you can toggle between Staging and Live environments, as well as click on *Publish to Live* for staged pages.
+When Staging is enabled for a site, you can access additional options via the staging bar on each of your site's pages. In this bar, you can toggle between Staging and Live environments, and click on *Publish to Live* for staged pages.
 
-![When Staging is enabled for a site, you can access the Staging Bar on each of your site's pages.](./site-staging-ui-reference/images/01.png)
+![When Staging is enabled for a site, you can access the staging bar on each of your site's pages.](./site-staging-ui-reference/images/01.png)
 
 The following table and pictures describe the staging bar options and editing tools for widget pages:
 
@@ -21,7 +21,7 @@ The following table and pictures describe the staging bar options and editing to
 | *Ready for Publish Process* | <ul><li>Click on *Ready for Publish Process* to change the page's status from *Draft* to *Ready for Publish Process*.</li><li>Click *Publish to Live* to configure and initiate publishing for your changes.</li><li>When you publish a page to Live, only the version marked as *Ready for Publish Process* is published.</li></ul> | 5 |
 | Edit Content | Use the *Add* button in the Liferay application bar to edit your Widgets. | 6 |
 
-![Using the Staging Bar and editing tools in widget pages.](./site-staging-ui-reference/images/02.png)
+![Use the staging bar and editing tools in widget pages.](./site-staging-ui-reference/images/02.png)
 
 ## Publish to Live
 
@@ -38,7 +38,7 @@ When you click on *Publish to Live*, a modal window appears with additional opti
 **Pages to Publish**: View the number of pages included in your current publish process.
 
 ```{note}
-This displays the number of page deletions tracked by the Staging framework. Keep in mind that this number counts the page deletions on the Staging site, not how many pages will be deleted on the on the Live site. There could be an inconsistency between the number of page deletions to be published and the actual number of pages present on either of the Staging and Live sites.
+This displays the number of page deletions tracked by the Staging framework. This number counts the page deletions on the Staging site, not how many pages will be deleted on the on the Live site. There can be inconsistency between the number of page deletions to be published and the actual number of pages present on either of the Staging and Live sites.
 ```
 
 When ready, click on *Publish to Live* to initiate publishing.
@@ -63,9 +63,9 @@ Custom advanced settings are divided into the following sections:
 
 ![Select whether you want to Delete Application Data Before Importing and whether you want to Replicate Individual Deletions.](./site-staging-ui-reference/images/07.png)
 
-**Pages**: Select which page set variation and individual pages you want to publish, as well as the look and feel of your selected pages. You can also select whether to *Delete Missing Pages*, which deletes all pages from the Live site that are not present on the Staging site. If you choose a page to be published from the pages menu, the widgets and their references are always published.
+**Pages**: Select which page set variation and individual pages to publish, as well as the look and feel of your selected pages. You can also select *Delete Missing Pages*, which deletes all pages from the Live site that are not present on the Staging site. If you choose a page to be published from the pages menu, the widgets and their references are always published.
 
-![Select which page set variation and individual pages you want to publish, as well as the look and feel of your selected pages.](./site-staging-ui-reference/images/08.png)
+![Select which page set variation and individual pages to publish, as well as the look and feel of selected pages.](./site-staging-ui-reference/images/08.png)
 
 If you want to publish pages with a custom theme, you must check the Theme Settings option under the *Look and Feel* heading for your staging configuration. Otherwise, the default theme is applied.
 
@@ -104,7 +104,7 @@ When ready, click on *Publish to Live* to initiate publishing.
 
 Once you've enabled Staging, the options available from the *Publishing* tab are modified. When in the Live environment, you can only access the *Export* feature. When in the Staging environment, you can only access the *Import* and *Staging* features.
 
-You can also access new options in the Staging page: view publishing *processes*, create and manage *publish templates*, and modify or disable Staging for your site.
+You can also access new options in the Staging page: view publishing processes, create and manage publish templates, and modify or disable Staging for your site.
 
 ![You can also access new options in the Staging page.](./site-staging-ui-reference/images/12.png)
 
@@ -130,7 +130,7 @@ From here, you can create and manage templates for frequent publishing configura
 
 ![Create and manage templates for frequent publishing configurations.](./site-staging-ui-reference/images/15.png)
 
-You can also use a template when publishing a page or content using the *Publish to Live* button in the Staging Bar. See [Advanced Publishing](#advanced-publishing) for more information.
+You can use a template when publishing a page or content using the *Publish to Live* button in the Staging Bar. See [Advanced Publishing](#advanced-publishing) for more information.
 
 ### Staging Configuration
 

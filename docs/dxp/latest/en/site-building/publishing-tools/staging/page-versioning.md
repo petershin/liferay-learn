@@ -1,12 +1,12 @@
 # Page Versioning
 
-With Page Versioning enabled, you and your team can work in parallel on multiple versions of your site's pages. Different versions are called *variations*, which you can create and manage for widget pages via the Staging bar. Page versioning maintains a history that you can use to revert changes made to your staged pages to earlier versions if needed.
+With Page Versioning enabled, you and your team can work in parallel on multiple versions of your site's widget pages. These versions are called *variations*, which are you create and manage via the Staging bar. Page versioning maintains a history, and you can revert changes made to your staged pages to earlier versions if needed.
 
 ```{note}
 Staging only supports variations and page history for widget pages. For content page versioning, use Publications. See [Comparing Publishing Tools](../comparing-publishing-tools.md) for more information.
 ```
 
-You can enable page versioning for your pages during initial setup or anytime afterward via the *Staging Configuration* page. Once enabled, you can create, merge, and publish variations for individual pages or groups of pages. You can also manage variation permissions for different User Roles.
+Enable page versioning during initial page setup or anytime afterward via the Staging Configuration page. Once enabled, you can create, merge, and publish variations for individual pages or groups of pages. You can also manage variation permissions for different user roles.
 
 ```{important}
 If you use page versioning and later disable it, the history of page versions is removed and only the latest published page versions are preserved. This is true for both Local Live and Remote Live Staging.
@@ -16,9 +16,9 @@ If you use page versioning and later disable it, the history of page versions is
 
 Staging provides two types of variations:
 
-* **Site Pages Variation**: This type groups changes for multiple site pages into a single variation.
+* **Site Pages Variation**: Group changes for multiple site pages into a single variation.
 
-* **Page Variations**: This type is for creating variations of an individual page. They are created within site pages variations.
+* **Page Variations**: Create variations of an individual page. They are created within site pages variations.
 
    ```{note}
    When you import a widget page to a site with page variations enabled, the page is imported as a new variation of the site page's main variation.

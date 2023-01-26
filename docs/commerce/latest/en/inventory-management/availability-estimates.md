@@ -1,8 +1,8 @@
 # Availability Estimates
 
-If a product runs out of stock, you can provide an estimate to customers for when it becomes available again. If you're using an accelerator like Minium or Speedwell, three availability estimates are automatically created.
+If a product runs out of stock, you can provide an estimate to customers for when it becomes available again. If you're using an accelerator like Minium or Speedwell, three availability estimates are automatically created. Otherwise, you can create your own.
 
-To create your own availability estimates:
+## Creating Availability Estimates
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and navigate to *Commerce* &rarr; *Availability Estimates*.
 
@@ -10,7 +10,7 @@ To create your own availability estimates:
 
     ![Click the Add button to create a new availability estimate.](./availability-estimates/images/01.png)
 
-1. Enter a *Title*. This should denote the estimated time before the product becomes available again (for instance: 3-5 days, 3-4 weeks, 2-3 months).
+1. Enter a *Title*. This should denote the estimated time before the product becomes available again (e.g., 3-5 days, 3-4 weeks, 2-3 months).
 
 1. Enter a *Priority* to determine the display order of the estimate.
 

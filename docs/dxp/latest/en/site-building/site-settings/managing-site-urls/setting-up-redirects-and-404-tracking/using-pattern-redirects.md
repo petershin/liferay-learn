@@ -2,12 +2,12 @@
 
 {bdg-secondary}`Available 7.4 U48+/GA48+`
 
-Pattern redirects use regular expressions to define patterns for multiple source URLs and their replacements. For this reason, they are best used when you have large groups of URLs that you need to map to new URLs. While you can set up bulk redirects using a web server like Nginx or Apache, Liferay provides this capability out of the box, so you can set up pattern redirects directly in Liferay DXP.
+Pattern redirects use regular expressions to define patterns for multiple source URLs and their replacements. For this reason, they are best used when you have large groups of URLs to map to new URLs. You can set up bulk redirects using a web server like Nginx or Apache, but Liferay provides this out of the box, so you can set up pattern redirects directly in Liferay.
 
 ```{important}
-Liferay interprets redirect patterns as friendly URLs based on the current site's friendly URL. For this reason, you cannot use redirect patterns with non-friendly URLs (e.g., virtual host names, port numbers) or redirect users to pages outside of the current site.
+Because Liferay interprets redirect patterns as friendly URLs based on the current site's friendly URL, you cannot use redirect patterns with non-friendly URLs (e.g., virtual host names, port numbers) or redirect to pages outside of the current site.
 
-Also, depending on the regular expression you use, pattern redirects can be slower than [alias redirects](./using-alias-redirects.md) and result in more URL matches than intended. For these reasons, alias redirects are recommended in most use cases. See [Setting Up Redirects and 404 Tracking](../setting-up-redirects-and-404-tracking.md) for more information.
+Depending on the regular expression you use, pattern redirects can be slower than [alias redirects](./using-alias-redirects.md) and result in more URL matches than intended. For these reasons, alias redirects are recommended when possible. See [Setting Up Redirects and 404 Tracking](../setting-up-redirects-and-404-tracking.md) for more information.
 ```
 
 ## Creating Pattern Redirects
@@ -18,17 +18,17 @@ Also, depending on the regular expression you use, pattern redirects can be slow
 
    ![Go to the Patterns tab in the Redirection application.](./using-pattern-redirects/images/01.png)
 
-1. In the Pattern field, enter a regular expression to use for the source URL. The regular expression is implicitly anchored to the beginning of each page's friendly URL (e.g., `/home` is equivalent to `^/home` in regex).
+1. In the Pattern field, enter a regular expression for the source URL. It's implicitly anchored to the beginning of each page's friendly URL, so `/home` is equivalent to `^/home` in regex.
 
-   Liferay supports all operations provided by the Java regular expression package. See official [JDK documentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html) for more information.
+   Liferay supports all operations provided by the Java regular expression package. See the [JDK documentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html) for more information.
 
 1. Enter a destination URL.
 
-   ![Enter source and destination URLs for your redirect patterns.](./using-pattern-redirects/images/02.png)
-
    ```{tip}
-   If desired, you can use references to capture groups of URLs in the replacement pattern. For example, in the following image, the `$1` value is replaced with the group of values captured by the `(\d+)` regular expression.
+   You can use references to capture groups of URLs in the replacement pattern. For example, in the following image, the `$1` value is replaced with the group of values captured by the `(\d+)` regular expression.
    ```
+
+   ![Enter source and destination URLs for your redirect patterns.](./using-pattern-redirects/images/02.png)
 
 1. (Optional) Click the *Plus* button to add multiple redirect patterns for the site.
 

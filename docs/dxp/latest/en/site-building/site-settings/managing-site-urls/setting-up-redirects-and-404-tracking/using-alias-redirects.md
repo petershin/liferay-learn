@@ -1,12 +1,10 @@
 # Using Alias Redirects
 
-Alias redirects explicitly define absolute source and destination URLs. For this reason, they are more predictable and recommended in most use cases. When creating them, you can make alias redirects permanent (301) or temporary (302). Both automatically direct users to a specified destination, but they each have unique implications for your Site.
+Alias redirects explicitly define absolute source and destination URLs. Because of their predictability, alias redirects are recommended for most use cases. You can make alias redirects permanent (301) or temporary (302). Both types automatically direct users to a specified destination, but they each have unique implications for your site. Consider which type is best for your situation.
 
-Before creating an alias redirect, consider which type is best for your situation.
+**Permanent**: Use a 301 code to inform search engines and other tools accessing your site that the requested resource has been permanently relocated. Search engines will replace the old URL with the new destination in search results, and browsers will cache the new destination for an indeterminate amount of time. A 301 code should only be used when you intend to use the destination URL indefinitely. This improves SEO and helps avoid unintended caching.
 
-**Permanent**: Use a 301 code to inform search engines and other tools accessing your Site that the requested resource has been permanently relocated. Search engines will replace the old URL with the new destination in search results, and browsers will cache the new destination for an indeterminate amount of time. A 301 code should only be used when you intend to use the destination URL indefinitely. This improves SEO and helps avoid unintended caching.
-
-**Temporary**: Use a 302 code to inform search engines and other tools accessing your Site that the requested resource is temporarily moved. A 302 code is useful when you want to conduct A/B testing or redirect traffic while fixing a problem, without impacting your Site ranking. Liferay uses 302 codes by default.
+**Temporary**: Use a 302 code to inform search engines and other tools accessing your site that the requested resource is temporarily moved. A 302 code is useful when you want to conduct A/B testing or redirect traffic while fixing a problem, without impacting your site ranking. Liferay uses 302 codes by default.
 
 See [Optimizing Sites](../../../optimizing-sites.md) to learn more about the implications of each redirect type for SEO. Also, see [A/B Testing](../../../optimizing-sites/ab-testing/ab-testing.md) to learn about using 302 codes when testing.
 
@@ -52,7 +50,7 @@ Avoid creating circular redirects. These are easy to create when defining redire
 
 ## Editing and Removing Alias Redirects
 
-Once you've successfully added a URL redirect, you can edit or remove it at any time by clicking on its *Actions* button (![Actions button](../../../../images/icon-actions.png)) and selecting *Edit* or *Delete*.
+Once you've added a URL redirect, edit or remove it at any time by clicking its *Actions* button (![Actions button](../../../../images/icon-actions.png)) and selecting *Edit* or *Delete*.
 
 ![You can edit or remove a redirect at any time.](./using-alias-redirects/images/07.png)
 

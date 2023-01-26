@@ -28,20 +28,16 @@ inventory-management/product-inventory-configuration-reference-guide.md
 
 {bdg-secondary}`Available Commerce 2.1+`
 
-Liferay's inventory management tools can suit a wide range of commerce use cases starting with a single storefront having one warehouse to multiple sales channels having geographically distributed warehouses.
+Liferay's inventory management tools can support a wide range of commerce use cases, from a single storefront with one warehouse to multiple sales channels with geographically distributed warehouses.
 
-Here are the inventory management features:
+Here are Liferay's inventory management features:
 
 * Create and manage warehouses
 * Set availability estimates
 * Configure low stock actions
-* Set inventory by warehouse
+* Set SKU inventory by warehouse
 
-You can use the inventory management system to track your entire inventory in a single place. The system tracks inventory by SKU. See [Using the Inventory Management System](./inventory-management/using-the-inventory-management-system.md) for more information.
-
-```{important}
-Each product in the inventory must be associated to at least one SKU.
-```
+You can use the inventory management system to track your inventory in a single place. See [Using the Inventory Management System](./inventory-management/using-the-inventory-management-system.md) for more information.
 
 ## Warehouses
 
@@ -54,6 +50,10 @@ For a store to accept orders, the related channel must have a warehouse associat
 ## Setting Inventory by Warehouse
 
 In Liferay, inventory is managed per SKU. Read [Setting Inventory by Warehouse](./inventory-management/setting-inventory-by-warehouse.md) for more information.
+
+```{important}
+Each product in the inventory must be associated to at least one SKU.
+```
 
 ## Low Stock Actions
 

@@ -1,42 +1,42 @@
 # Inventory Management Reference Guide
 
-To access the inventory settings, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
+To access inventory settings, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
 ![Navigate to the inventory settings from the Global Menu.](./inventory-management-reference-guide/images/01.png)
 
-The page displays product variants identified by their SKU code and their availability data.
+The page displays product SKUs and their availability.
 
-![The first page tracks all the SKUs in the catalog and displays their availability data.](./inventory-management-reference-guide/images/02.png)
+![This page tracks all catalog SKUs and displays their availability.](./inventory-management-reference-guide/images/02.png)
 
-| Field     | Description                                                                                                                                                                                                                                           |
-| :-------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SKU       | The main identifier inside the inventory system.                                                                                                                                                                                                      |
-| On Hand   | The total number of units for a given SKU aggregating all the quantities available from all the warehouses.                                                                                                                                           |
-| Available | The number of units for a given SKU that are purchaseable. Liferay uses the following calculation: [Quantity Available] = [Quantity on Hand] - [Quantity on Order] - [Safety Stock Quantity].                                                         |
-| On Order  | The number of units for a given SKU allocated to open orders. These quantities are consumed when an order is shipped.                                                                                                                                 |
-| Incoming  | The number of units coming in for the given SKU at a future date (in the form of a replenishment), but not yet received. Values are informative only and not based on any calculations. Administrators can use it to keep track of future quantities. |
+| Field     | Description                                                                                                                                                                                               |
+| :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SKU       | Primary identifier for the inventory system.                                                                                                                                                              |
+| On Hand   | Total number of available units for an SKU from all warehouses.                                                                                                                                           |
+| Available | Number of purchaseable units for an SKU. Liferay uses the following calculation: [Quantity Available] = [Quantity on Hand] - [Quantity on Order] - [Safety Stock Quantity].                               |
+| On Order  | Number of units allocated to open orders for an SKU. These quantities are consumed when an order is shipped.                                                                                              |
+| Incoming  | Number of units scheduled as replenishment for an SKU, but not yet received. Values are informative only and not based on any calculations. Administrators can use it to keep track of future quantities. |
 
-## SKU
+## SKU Details
 
 When viewing an individual SKU, there are four tabs: *Overview*, *On Order*, *Incoming*, and *Changelog*.
 
 ### Overview
 
-The *Overview* tab displays a summary of the inventory across all warehouses.
+The *Overview* tab displays a summary of the SKU's inventory across all warehouses.
 
 ![The Overview tab displays a summary of the inventory across all warehouses.](./inventory-management-reference-guide/images/03.png)
 
-| Field        | Description                                                              |
-| :----------- | :----------------------------------------------------------------------- |
-| Warehouse    | List of warehouses where the SKU is present.                             |
-| On Hand      | The number of units in possession including the safety stock.            |
-| Safety Stock | The number of units reserved as safety stock.                            |
-| Available    | The number of units that are purchaseable.                               |
-| Incoming     | The number of units that are coming into the warehouse at a future date. |
+| Field        | Description                                                |
+| :----------- | :--------------------------------------------------------- |
+| Warehouse    | List of warehouses with the SKU.                           |
+| On Hand      | Number of units in possession, including the safety stock. |
+| Safety Stock | Number of units reserved as safety stock.                  |
+| Available    | Number of units that are purchaseable.                     |
+| Incoming     | Number of incoming units scheduled for a warehouse.        |
 
-Click *Add* (![Add Icon](../images/icon-add.png)) to update inventory or to transfer inventory between warehouses.
+Click the *Add* button (![Add Button](../images/icon-add.png)) to update inventory or transfer inventory between warehouses.
 
-![Add your inventory or transfer inventory between warehouses.](./inventory-management-reference-guide/images/04.png)
+![Add inventory or transfer inventory between warehouses.](./inventory-management-reference-guide/images/04.png)
 
 ### On Order
 
@@ -46,23 +46,23 @@ The *On Order* tab displays a list of accounts that have placed an order for thi
 
 ### Incoming
 
-The *Incoming* tab lists warehouses with the quantities of the SKU that will arrive on a future date as replenishment.
+The *Incoming* tab lists warehouses with scheduled inventory replenishment for the SKU.
 
-![The Incoming tab lists warehouses with the quantities of the SKU that will arrive on a future date as replenishment.](./inventory-management-reference-guide/images/06.png)
+![The Incoming tab lists warehouses with scheduled inventory replenishment for the SKU.](./inventory-management-reference-guide/images/06.png)
 
-Click the *Add* (![Add Icon](../images/icon-add.png)) button to create an incoming entry for the selected SKU.
+Click the *Add* button (![Add Button](../images/icon-add.png)) to create an incoming entry for the selected SKU.
 
 ![Add a quantity for a particular warehouse.](./inventory-management-reference-guide/images/07.png)
 
 | Field                  | Description                                        |
 | :--------------------- | :------------------------------------------------- |
-| Quantity               | The quantity of items incoming.                    |
-| Destination            | The warehouse where the incoming items are stored. |
-| Expected Delivery Date | The scheduled date of delivery.                    |
+| Quantity               | Quantity of items incoming.                    |
+| Destination            | Warehouse where the incoming items are stored. |
+| Expected Delivery Date | Scheduled date of delivery.                    |
 
 ### Changelog
 
-See [Viewing Inventory Changes](./using-the-inventory-management-system.md#viewing-inventory-changes) for more information.
+See [Viewing Inventory Changes](./using-the-inventory-management-system.md#viewing-inventory-changes) for details.
 
 ## Commerce 2.1 and Below
 

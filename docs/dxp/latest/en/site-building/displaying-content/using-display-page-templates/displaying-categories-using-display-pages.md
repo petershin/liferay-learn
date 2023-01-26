@@ -46,7 +46,7 @@ Create the Categories if they do not exist yet, and include the information you 
 
 Starting with Liferay DXP 7.4, the Display Page Template includes an option to use Categories as the Content Type.
 
-1. Go to *Site Administration* &rarr; *Design* &rarr; *Page Templates*.
+1. Open the *Product Menu* &rarr; *Design* &rarr; *Page Templates*.
 1. Click *Display Page Templates* and click the *Add* (![Add Image](../../../images/icon-add.png)) button.
 1. Select the Master Page Template you want to use for this Display Page Template.
 
@@ -72,9 +72,9 @@ This example shows how to map the Category fields using a [Card Fragment](../../
 
 1. Drag and drop a Container Fragment to the default drop zone.
 1. On top of the Container Fragment, drag and drop a new Card Fragment.
-1. Click on the *Selection* menu (A) and then click the Card's title (B) to open the Mapping options.
-1. In the Mapping area and the *Source* drop-down menu, select *Category* if it's not selected already.
-1. Click the *Field* drop-down menu and select *Name* (C) to map your Category's name to the Card's title.
+1. Click on the *Browser* (![Browser](../../../images/icon-hierarchy.png))button and then click the Card's title to open the Mapping options.
+1. In the Mapping tab, click the *Source* drop-down menu and select *Category*
+1. Click the *Field* drop-down menu and select *Name* to map your Category's name to the Card's title.
 
    ![Map the Category fields in the Display Page Template using a Card Fragment.](./displaying-categories-using-display-pages/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
@@ -89,7 +89,7 @@ This example shows how to map the Category fields using a [Card Fragment](../../
 
    ![Set the Display Page Template as default using the Actions menu.](./displaying-categories-using-display-pages/images/04.png)
 
-1. Go to *Site Administration* &rarr; *Categorization* &rarr; *Categories* and select the Vocabulary with the Categories from [Step 1](#step-1-creating-and-editing-the-categories).
+1. In the Product Menu (![Product Menu](../../../images/icon-menu.png)), go to *Categorization* &rarr; *Categories* and select the Vocabulary with the Categories from [Step 1](#step-1-creating-and-editing-the-categories).
 1. On any Category, click the *Actions* (![Actions](../../../images/icon-actions.png)) menu and select *View Display Page*.
 
    ![Open the Display Page for one of the categories using the Actions Menu option.](./displaying-categories-using-display-pages/images/05.png)

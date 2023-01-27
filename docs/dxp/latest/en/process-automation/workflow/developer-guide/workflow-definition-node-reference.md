@@ -230,3 +230,4 @@ Here's the `content-review` task from the Category Specific Approval workflow, w
 
 * [Crafting XML Workflow Definitions](./crafting-xml-workflow-definitions.md)
 * [Workflow Task Node Reference](./workflow-task-node-reference.md)
+* [Workflow Notification Template Variables](../../developer-guide/workflow-notification-template-variables.md)

@@ -1,6 +1,6 @@
 # Workflow Notification Template Variables
 
-> Availability: Liferay CE/DXP 7.3+
+{bdg-secondary}`Liferay 7.3+`
 
 Some variables are auto-injected into the workflow notification context. These are handy to use in your workflow notification templates.
 

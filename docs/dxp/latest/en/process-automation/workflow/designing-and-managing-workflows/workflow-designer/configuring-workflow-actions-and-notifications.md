@@ -66,6 +66,8 @@ Follow the steps below:
 1. Enter a message in the _Template_ field:
     * `Your submission was rejected by ${userName}, please modify and resubmit.`
 
+   See [Workflow Notification Template Variables](../../developer-guide/workflow-notification-template-variables.md) to learn about the injected template variables.
+
 1. Select the Notification Type(s):
 
     * Email
@@ -82,6 +84,7 @@ Notifications on the Update node have been added.
 
 ## Additional Information
 
+* [Workflow Notification Template Variables](../../developer-guide/workflow-notification-template-variables.md)
 * [Creating Workflow Tasks](./creating-workflow-tasks.md)
 * [Using Forks and Joins](./using-forks-and-joins.md)
 * [Using Condition Nodes](./using-condition-nodes.md)

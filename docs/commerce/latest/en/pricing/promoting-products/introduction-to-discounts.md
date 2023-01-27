@@ -54,7 +54,7 @@ When using either *Has all of these products* or *Has one of these products* rul
 
 ## Discount Levels
 
-See [Using Discount Levels](./discount-levels.md) for more information.
+See [Using Discount Levels](./using-discount-levels.md) for more information.
 
 ## Additional Information
 

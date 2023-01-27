@@ -2,6 +2,7 @@
 toc:
 - ./promoting-products/introduction-to-discounts.md
 - ./promoting-products/creating-a-discount.md
+- ./promoting-products/using-discount-levels.md
 - ./promoting-products/introduction-to-promotions.md
 - ./promoting-products/using-the-promotion-base-list.md
 - ./promoting-products/creating-a-promotion.md
@@ -17,6 +18,7 @@ toc:
 
 promoting-products/introduction-to-discounts.md
 promoting-products/creating-a-discount.md
+promoting-products/using-discount-levels.md
 promoting-products/introduction-to-promotions.md
 promoting-products/using-the-promotion-base-list.md
 promoting-products/creating-a-promotion.md
@@ -35,6 +37,10 @@ promoting-products/product-recommendations.md
 
 :::{grid-item-card}  Creating a Discount
 :link: ./promoting-products/creating-a-discount.md
+:::
+
+:::{grid-item-card}  Using Discount Levels
+:link: ./promoting-products/using-discount-levels.md
 :::
 
 :::{grid-item-card}  Introduction to Promotions

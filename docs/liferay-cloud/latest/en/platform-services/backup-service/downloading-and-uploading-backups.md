@@ -33,7 +33,7 @@ Only administrators for the chosen environment can download backups from the Bac
 ## Uploading Backups via the Console
 
 ```{warning}
-Database table and column names are treated with case sensitivity in Liferay Cloud. Ensure that the table names are in Pascal case before uploading your database. See [Ensuring Correct Table Capitalization](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) for more information.
+Database table and column names are case sensitive in Liferay Cloud. Ensure that the table names are in Pascal case before uploading your database. See [Ensuring Correct Table Capitalization](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) for more information.
 ```
 
 You can also upload a backup to your project through the *Backups* page in your chosen environment.

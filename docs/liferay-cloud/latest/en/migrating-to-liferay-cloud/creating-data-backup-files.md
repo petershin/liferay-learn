@@ -18,7 +18,7 @@ Coordinate with your database administrator before and after the conversion to e
 
 ### Ensuring Correct Table Capitalization
 
-Database table and column names are treated with case sensitivity in Liferay Cloud, and table names must be in Pascal case. If the table names were created in lower case, they're unrecognizable by Liferay Cloud. This can happen with certain operating system and database combinations. For example, MySQL is case-sensitive in Linux by default, but not in Windows or MacOS (where Liferay may generate tables with all lower case names).
+Database table and column names are case sensitive in Liferay Cloud, and table names must be in Pascal case. If the table names were created in lower case, they're unrecognizable by Liferay Cloud. This can happen with certain operating system and database combinations. For example, MySQL is case-sensitive in Linux by default, but not in Windows or MacOS (where Liferay may generate tables with all lower case names).
 
 Before you create a database dump, ensure that your database's tables have Pascal case capitalization. If not (i.e., they're all in lower case), you must convert them to Pascal case manually or with a script. You must also ensure that any of your own code that references the table names reflects the updated capitalization.
 
@@ -30,7 +30,7 @@ For example, convert these lower case table names:
 
 * *trashentry* &rarr; *TrashEntry*
 
-You can use a [`RENAME TABLE`](https://dev.mysql.com/doc/refman/5.7/en/rename-table.html) command in MySQL to change a table's name. Please [submit a Support ticket](https://help.liferay.com) if you need assistance adjusting your table names.
+You can use the [`RENAME TABLE`](https://dev.mysql.com/doc/refman/5.7/en/rename-table.html) command in MySQL to change a table's name. Please [submit a Support ticket](https://help.liferay.com) if you need assistance adjusting your table names.
 
 ## Create a Database Dump
 

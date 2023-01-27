@@ -54,7 +54,7 @@ Your organization may have more stringent security policies that require limitin
 1. Once the database has been populated with the Liferay DXP tables, remove all permissions from the Liferay DXP database user except permissions to perform Select, Insert, Update and Delete operations.
 
 ```{warning}
-Some Liferay events precipitate database actions (e.g., creating and dropping tables) that are not compatible with these high security steps. These events require that the Liferay database user has full permissions on the database.
+Some Liferay events cause database actions (e.g., creating and dropping tables) that are not compatible with these high security steps. These events require that the Liferay database user has full permissions on the database.
 
 | Event | How to Proceed | 
 | :---- | :---------- | 

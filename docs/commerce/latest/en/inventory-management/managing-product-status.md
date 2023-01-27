@@ -1,58 +1,64 @@
 # Managing Product Status
 
-Liferay offers two different ways to manage the status of your products by either **expiring** or **unpublishing** them.
+When editing products, you can schedule them to expire or manually unpublish them to remove them from your store catalog.
 
-You can set a predefined date for expiring a product. After the date passes, the product is in the *Expired* status. It is no longer available to purchase in the storefront or visible in the search results. You can configure the expiration date for the entire product (all SKUs) or for a particular SKU.
+## Setting Product Expiration Dates
 
-Unpublishing a product converts it into a *Draft* status and removes the product from search results. You can also unpublish products based on inventory levels using a low stock action. See [Low Stock Action](./low-stock-action.md) for more information .
+Set expiration dates for products or individual SKUs. While expired, the product SKUs are removed from your store catalog and are no longer available for purchase or visible in search results.
 
-## Setting a Product as Expired
+```{note}
+Setting an expiration date at the product level applies it to all of the product's SKUs. 
+```
 
-To expire a product:
+Follow these steps:
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) menu and navigate to *Commerce* &rarr; *Products*.
 
-1. Click on a product.
+1. Click a product.
 
-1. Uncheck the *Never Expire* checkbox in the *Schedule* section. This configuration affects all the SKUs of the product.
+1. Under *Schedule*, uncheck *Never Expire*. This configuration affects all of the product's SKUs.
 
-1. Enter a future expiration date and time. All times are set based on the time zone of the instance.
+1. Enter an expiration date and time.
 
-   ![Setting a product's expiration date.](./managing-product-publication/images/01.png)
+   ![Set the product's expiration date.](./managing-product-status/images/01.png)
 
-   You can view or change the instance time zone by opening the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and going to *Control Panel* &rarr; *Instance Settings*. Then, navigate to *Localization* &rarr; *Time Zone*.
+   ```{tip}
+   Expiration dates and times are based on the Liferay instance's time zone.To view or change the time zone, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings*. Then, navigate to *Localization* &rarr; *Time Zone*.
+   ```
 
 1. Click *Publish*.
 
-After making the changes, it may take some time to remove the product from the catalog. This is due to the default check interval being 15 minutes. You change this by opening the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigating to *Control Panel* &rarr; *System Settings*. Once there, navigate to *Catalog* &rarr; *Products*. Change the *Check Interval* value and click *Save*.
+Once a product reaches its expiration date and time, it remains active until Liferay's next check interval. The default interval is 15 minutes, but you can configure this via system settings. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings*. Once there, navigate to *Catalog* &rarr; *Products*. Change the *Check Interval* value and click *Save*.
 
-After the expiration date, the product isn't returned when searching on the *Catalog* page. You can also expire individual SKUs and set replacements for them. Read Replacement Products for more information.
+After expiring, the product's SKUs no longer appear in the store's catalog and cannot be purchased. To learn how to set expiration dates for individual SKUs along with replacements, see [Replacement Products](../pricing/promoting-products/replacement-products.md).
 
-![The product has a status of Expired after passing the expiration date.](./managing-product-publication/images/02.png)
+![The product has a status of Expired after passing the expiration date.](./managing-product-status/images/02.png)
 
 You can change the product visibility by entering a new expiration date and republishing the product.
 
 ## Setting a Product as Draft
 
-You may need to set a product as draft if you want to make any changes to it. After verifying the information added, you can publish the product to display it back in the storefront.
+If desired, you can manually unpublish a product to set its status to *draft*. While a draft, the product's SKUs no longer appear in the store's catalog and cannot be purchased. This is useful when you want to edit a product without making your changes immediately available to end users. You can also unpublish products based on inventory levels using a low stock action. See [Low Stock Action](./low-stock-action.md) for more information .
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) menu and navigate to *Commerce* &rarr; *Products*.
+Follow these steps to manually unpublish a product:
 
-1. Click on a product.
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
-1. Click the *Actions* (![Actions](../images/icon-actions.png)) icon next to the *Publish* button and select *Save as Draft*.
+1. Click a product.
 
-1. Click *OK* to confirm the removal of the product from the catalog page.
+1. Click the *Actions* button (![Actions Button](../images/icon-actions.png)) next to the Publish button and select *Convert to Draft*.
 
-![Select Save as Draft to convert the product into draft status.](./managing-product-publication/images/03.png)
+   ![Select Save as Draft to convert the product into draft status.](./managing-product-status/images/03.png)
 
-You cannot search for the product or view it in the storefront after setting it to the draft status.
+1. Click *OK* to confirm.
 
-![The product has a status of Draft after converting it.](./managing-product-publication/images/04.png)
+This removes the product from your store's catalog page so customers cannot view, purchase, or search for it.
+
+![The product has a status of Draft after converting it.](./managing-product-status/images/04.png)
 
 If you have an approval workflow in place to publish products, you must go through it to publish the product again. If you want to remove the product from the storefront and publish it back again without going through the approval workflow, you can uncheck the *Published* checkbox and click *Publish*.
 
-![Unchecking the published checkbox to remove the product from the storefront.](./managing-product-publication/images/05.png)
+![Unchecking the published checkbox to remove the product from the storefront.](./managing-product-status/images/05.png)
 
 ## Commerce 2.1 and Below
 
@@ -68,13 +74,13 @@ To expire a product:
 
 1. Enter a future expiration date and time. All times are set using the GMT time zone.
 
-    ![Setting a Product's Expiration Date](./managing-product-publication/images/01.png)
+    ![Setting a Product's Expiration Date](./managing-product-status/images/01.png)
 
 1. Click *Publish*.
 
 After making the changes, it may take some time to remove the product from the catalog. This is due to the default check interval being 15 minutes. You change this by opening the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigating to *Control Panel* &rarr; *System Settings*. Once there, go to *Catalog* &rarr; *Products*. Change the *Check Interval* value and click *Save*.
 
-![The product has a status of Expired after passing the expiration date.](./managing-product-publication/images/06.png)
+![The product has a status of Expired after passing the expiration date.](./managing-product-status/images/06.png)
 
 You can change the product visibility by entering a new expiration date and republishing the product.
 
@@ -88,11 +94,11 @@ You can change the product visibility by entering a new expiration date and repu
 
 You cannot search for the product or view it in the storefront after setting it to the draft status.
 
-![The product has a status of Draft after converting it.](./managing-product-publication/images/04.png)
+![The product has a status of Draft after converting it.](./managing-product-status/images/04.png)
 
 If you have an approval workflow in place to publish products, you must go through it to publish the product again. If you want to remove the product from the storefront and publish it back again without going through the approval workflow, you can uncheck the *Published* checkbox and click *Publish*.
 
-![Unchecking the published checkbox to remove the product from the storefront.](./managing-product-publication/images/05.png)
+![Unchecking the published checkbox to remove the product from the storefront.](./managing-product-status/images/05.png)
 
 ## Additional Information
 

@@ -56,7 +56,7 @@ From the Application Menu, you can click the *Preview With* drop-down menu and c
 
 ![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/07.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
-Alternatively, from the display page template editor, click the *Preview* (![Preview](../../../images/icon-preview.png)) button and choose the content you want to preview.
+Alternatively, from the display page template editor, click the *Actions* menu(![Actions menu](../../../images/icon-actions.png)) button and choose *Preview in a New Tab*.
 
 ![Click the Preview button to preview your display page template mappings.](./creating-and-managing-display-page-templates/images/08.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 

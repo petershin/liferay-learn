@@ -54,45 +54,7 @@ When using either *Has all of these products* or *Has one of these products* rul
 
 ## Discount Levels
 
-You can create discount levels for applying multiple discounts to products and orders. Commerce applies these discounts consecutively according to their level. For instance, you can create a level 1 discount offering 20% off and then create a level 2 discount that offers an additional 5% off if the cart value exceeds 50$. To do this on a Minium site,
-
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Discounts*.
-
-1. Click the *Add* (![Add button](../../images/icon-add.png)) button and enter the following information.
-
-   **Name:** U-Joint Clearance
-
-   **Type:** Percentage
-
-   **Apply To:** Products
-
-1. Click *Submit*. This opens a new page with options to configure the discount.
-
-1. Enter the *Amount* as 20 and keep the default *Level* value (L1).
-
-1. In the *Products* section, search for *U-Joint* and click *Select*.
-
-1. Enable the discount using the *Active* toggle.
-
-1. Click *Publish*. This creates the base discount of 20% for the product (U-Joint)
-
-1. Return to the Discounts application page and repeat steps 2-3 to create another discount with a different name.
-
-1. Enter the *Amount* as 5, and set the *Level* to L2.
-
-1. In the *Products* section, search for *U-Joint* and click *Select*.
-
-1. In the *Rules* section, click the *Add* (![Add button](../../images/icon-add.png)) button.
-
-1. Enter a name and set the type to *Cart Total*.
-
-1. Click *Submit*.
-
-1. Edit the rule and set the *Cart Total Minimum Amount* to 50$ and click *Save*.
-
-1. Click *Publish*.
-
-Go to your site and open the product page for u-joint. It should have a base discount of 20% applied to it. Now, add more units to your cart so that the total exceeds 50$. Check the price again to verify the additional discount applied to your cart.
+See [Using Discount Levels](./discount-levels.md) for more information.
 
 ## Additional Information
 

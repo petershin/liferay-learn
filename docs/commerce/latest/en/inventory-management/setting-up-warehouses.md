@@ -1,8 +1,8 @@
 # Setting Up Warehouses
 
-Warehouses represent physical locations where you store product inventory. To activate a warehouse, you must set its geolocation. The Fedex shipping method uses the geolocation to calculate shipping costs. Read [Using the Fedex Shipping Method](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md) for more information.  
+Warehouses represent physical locations where you store product inventory. To activate a warehouse, you must set its geolocation. The Fedex shipping method uses this geolocation to calculate shipping costs. Read [Using the Fedex Shipping Method](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md) for more information.  
 
-You can serve a single channel with multiple warehouses or use a single warehouse to serve multiple channels. When using the *Minium* or *Speedwell* accelerators, three sample warehouses serve one channel.
+You can use a single warehouse to serve multiple channels or serve a single channel with multiple warehouses. When using the *Minium* or *Speedwell* accelerators, three sample warehouses serve one channel.
 
 ```{note}
 Before creating a warehouse, you must enable the applicable country and region of the warehouse. See [Adding Regions](../store-management/adding-regions.md) for more information.
@@ -10,9 +10,7 @@ Before creating a warehouse, you must enable the applicable country and region o
 
 ## Adding a Warehouse
 
-To add a new warehouse,
-
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and navigate to *Commerce* &rarr; *Warehouses*.
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Warehouses*.
 
 1. Click the *Add* button (![Add Button](../images/icon-add.png)).
 
@@ -22,47 +20,31 @@ To add a new warehouse,
 
 1. Click *Submit*.
 
-   This creates the new warehouse. You can now add its address, geolocation and activate it.
+   This creates the new inactive warehouse. You can now add its address, geolocation and activate it.
 
    ![Enter details for the new warehouse and activate it.](./setting-up-warehouses/images/02.png)
 
-1. In the *Details* section, you can change the name or add an optional description.
+1. (Optional) Edit the name and add a description.
 
-1. To activate the warehouse, switch the toggle to *Active*. Ensure that you enter its geolocation before activation.
+1. Enter the latitude and longitude values for the warehouse in the Geolocation section.
 
-1. Enter the latitude and longitude values for the warehouse in the *Geolocation* section.
+   Alternatively, you can configure the [Bing Geocoder](#using-bing-geocoder-to-set-a-warehouses-geolocation) to automatically generate a warehouse's geolocation based on the warehouse's address.
 
-1. Enter an address for the warehouse in the *Address* section.
+1. Enter an address for the warehouse in the Address section.
 
-   Alternatively, you can configure the [Bing Geocoder](#using-bing-geocoder-to-set-a-warehouses-geolocation) to automatically generate a warehouse's geolocation. To use this feature, the warehouse must have an address.
+1. Switch the toggle to *Active*.
 
-1. Click on the *Eligibility* tab to associate the warehouse to a specific channel or all available channels. If you want to associate the warehouse to a specific channel, click the *Specific Channels* radio button, enter a channel name and click *Select*. The associated warehouses determine the product inventory for a channel.
+   ```{important}
+   You must set the geolocation before you can activate the warehouse.
+   ```
+
+1. Click the *Eligibility* tab and associate the warehouse to a specific channel or all available channels. This determines the product inventory for a channel.
+
+   If you want to associate the warehouse to a specific channel, click the *Specific Channels* radio button, enter a channel name and click *Select*.
 
    ![Associate the warehouse to all available channels or specific channels.](./setting-up-warehouses/images/03.png)
 
 1. Click *Save*.
-
-### Liferay DXP 7.4 U46/GA46 and Below
-
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and navigate to *Commerce* &rarr; *Warehouses*.
-
-1. Click the *Add* button (![Add Button](../images/icon-add.png)).
-
-   ![Click the Add button to create a new Warehouse.](./setting-up-warehouses/images/04.png)
-
-1. In the Details section, enter a *Name* and *Description* (optional).
-
-   ![Enter details for the new warehouse and activate it.](./setting-up-warehouses/images/05.png)
-
-1. To activate the warehouse, switch the toggle to *Active*. Ensure that you enter its geolocation before activation.
-
-1. In the *Channels* section, use the checkbox to associate the warehouse to a channel. The associated warehouses determine the product inventory for a channel.
-
-1. Enter an address for the warehouse in the *Address* section.
-
-1. Enter the latitude and longitude values for the warehouse in the *Geolocation* section.
-
-See [below](#using-bing-geocoder-to-set-a-warehouses-geolocation) to learn how to use the Bing Geocoder to automatically generate a warehouse's geolocation.
 
 ## Using Bing Geocoder to Set a Warehouse's Geolocation
 
@@ -74,13 +56,37 @@ Then, follow these steps to configure the Bing Geocoder for your instance:
 
 1. Enter your *API Key*.
 
-   ![Enter your API key for the Bing Maps API.](./setting-up-warehouses/images/06.png)
+   ![Enter your API key for the Bing Maps API.](./setting-up-warehouses/images/04.png)
 
 1. Click *Save*.
 
-Once the geocoder is configured, you can generate warehouse geolocations for any warehouse with an address. Simply navigate to the warehouses page, click on the *Actions* button (![Actions Button](../images/icon-actions.png)) for the desired warehouse, and click on *Geolocate*. The geocoder converts the address into latitude and longitude coordinates.
+Once the geocoder is configured, you can generate warehouse geolocations for any warehouse with an address. Navigate to the warehouses page, click the *Actions* button (![Actions Button](../images/icon-actions.png)) for the desired warehouse, and select *Geolocate*. The geocoder converts the address into latitude and longitude coordinates.
 
-<!-- There's a bug currently due to which the geolocate option is missing. Have to add an image when it is fixed. -->
+![Click the Actions button for the desired warehouse and select Geolocate.](./setting-up-warehouses/images/05.png)
+
+## Liferay 7.4 U46/GA46 and Below
+
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and navigate to *Commerce* &rarr; *Warehouses*.
+
+1. Click the *Add* button (![Add Button](../images/icon-add.png)).
+
+   ![Click the Add button to create a new Warehouse.](./setting-up-warehouses/images/06.png)
+
+1. In the Details section, enter a *Name* and *Description* (optional).
+
+   ![Enter details for the new warehouse and activate it.](./setting-up-warehouses/images/07.png)
+
+1. To activate the warehouse, switch the toggle to *Active*. Ensure that you enter its geolocation before activation.
+
+1. In the *Channels* section, use the checkbox to associate the warehouse to a channel. The associated warehouses determine the product inventory for a channel.
+
+1. Enter an address for the warehouse in the *Address* section.
+
+1. Enter the latitude and longitude values for the warehouse in the *Geolocation* section.
+
+   Alternatively, see [Using Bing Geocoder to Set a Warehouse's Geolocation](#using-bing-geocoder-to-set-a-warehouses-geolocation) to learn how to automatically generate a warehouse's geolocation.
+
+1. Click *Save*.
 
 ## Commerce 2.1 and Below
 
@@ -106,7 +112,7 @@ To add a new warehouse:
    * **Latitude**: 36.282974
    * **Longitude**: -115.136
 
-    ![Configuring the newly created warehouse.](./setting-up-warehouses/images/07.png)
+    ![Configuring the newly created warehouse.](./setting-up-warehouses/images/08.png)
 
 1. Click *Save* when finished.
 

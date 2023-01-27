@@ -1,31 +1,29 @@
 # Using the Inventory Management System
 
-You can manage the entire inventory for your Liferay instance using the inventory management system.
-
-Here are the features of the inventory management system that you can use for an SKU:
+You can use Liferay's inventory management system to manage inventory for product SKUs in your instance. This system provides these features for managing SKUs:
 
 * Add inventory
 * View orders
 * Add a safety stock
 * View historical changes
 
-Inventory management is closely tied to the warehouses, from where you can view the available stock in each warehouse.
+Before adding inventory for a product SKU, you must create at least one warehouse for storing the inventory. See [Setting Up Warehouses](./setting-up-warehouses.md) for more information.
 
-You can access the inventory page by opening the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigating to  *Commerce* &rarr; *Inventory*.
+To access the inventory page, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
 ```{note}
 If you're using Commerce 2.0 or 2.1, the *Inventory Management* option is located in the *Control Panel*.
 ```
 
-## Adding an Inventory Item
+## Adding Inventory for SKUs
 
-Inventory is tracked at the SKU level. You can add multiple SKUs to the inventory and ensure that there is enough quantity available for each SKU.
+Inventory is tracked at the SKU level. When creating an inventory entry, you must specify an SKU, warehouse, and quantity. Without an SKU, you cannot add inventory to a product.
 
-To add an inventory item:
+Follow these steps:
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
-1. Click the Add(![Add Icon](../images/icon-add.png)) button and enter the following information:
+1. Click the *Add* button (![Add Button](../images/icon-add.png)) and enter an SKU, warehouse, and quanity. For example,
 
    * **SKU**: CHINAWARE-GRAY
    * **Warehouse**: United States - Southwest
@@ -35,23 +33,23 @@ To add an inventory item:
 
 1. Click *Submit*.
 
-This adds inventory for the SKU in the selected warehouse. Ensure that you enter a valid SKU in the SKU field.
+This adds inventory for the SKU in the selected warehouse.
 
-```{important}
-Each product in the inventory must be associated to at least one SKU.
+```{tip}
+You can add inventory for an SKU while editing the SKU in the Products application. See [Adding SKU Inventory](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md#adding-sku-inventory) for more information.
 ```
 
 ## Setting a Safety Stock
 
-Safety stock is product inventory that is physically located in a warehouse but is set aside and made unavailable for sale. This could be for situations like shipping delays, supply chain interruptions, selling in a different channel, or a number of other reasons. Safety stock quantity reduces the available inventory for the selected warehouse.
+Safety stock is product inventory in a warehouse that is set aside and made unavailable for sale. This could be for situations like shipping delays, supply chain interruptions, selling in a different channel, or a number of other reasons. Safety stock quantity reduces the available inventory for the selected warehouse.
 
-To set a safety stock quantity:
+To set a safety stock quantity,
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
-1. Click on an SKU.
+1. Click an *SKU*.
 
-1. Click the *Actions* (![Actions](../images/icon-actions.png)) icon next to the warehouse and select *Edit*.
+1. Click the *Actions* button (![Actions Button](../images/icon-actions.png)) next to the warehouse and select *Edit*.
 
 1. Enter a value in the *Safety Stock Quantity* field.
 
@@ -59,33 +57,33 @@ To set a safety stock quantity:
 
 1. Click *Save* when finished.
 
-The number of units that are available gets reduced once a safety stock is set. You can verify this in the *Available* column.
+The number of available units is reduced by the safety stock quantity. You can verify this in the *Available* column.
 
-![Setting a safety stock quantity reduces the available stock in that warehouse.](./using-the-inventory-management-system/images/03.png)
+![Setting a safety stock quantity reduces available stock in a warehouse.](./using-the-inventory-management-system/images/03.png)
 
 ## Viewing a SKU on Order
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
-1. Click on an SKU.
+1. Click an *SKU*.
 
-1. Click on the *On Order* tab.
+1. Click the *On Order* tab.
 
    ![View all orders that include the selected SKU.](./using-the-inventory-management-system/images/04.png)
 
-This page lists all orders that include the selected SKU. You can view the account that placed the order, the order ID, quantity and expiration date.
+This page lists all orders that include the selected SKU. You can view the account that placed the order, the order ID, quantity, and expiration date.
 
 ## Adding Incoming Stock
 
-Incoming stock refers to stock that gets added to the inventory at a future date. You can add incoming stock quantities and its expected delivery date for an SKU.
+Incoming stock is SKU inventory scheduled to arrive at a warehouse on a future date. You can add incoming stock quantities and expected delivery dates.
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
-1. Click on an SKU.
+1. Click an *SKU*.
 
 1. Click the *Incoming* tab.
 
-1. Click the (![Add Icon](../images/icon-add.png)) icon and enter the following information:
+1. Click the *Add* button (![Add Button](../images/icon-add.png)) and enter a quantity, destination warehouse, and expected delivery date. For example,
 
     * **Quantity**: 20
     * **Destination**: United States - Northeast
@@ -101,15 +99,15 @@ After adding the incoming stock, it appears under the *Incoming* column in the *
 
 ## Viewing Inventory Changes
 
-You can view changes in inventory for an SKU in the *Changelog* page. To view this:
+You can view changes in inventory for an SKU in the *Changelog* page.
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
-1. Click on an SKU.
+1. Click an *SKU*.
 
 1. Click the *Changelog* tab.
 
-You can view the following information in the changelog.
+You can view this information in the changelog:
 
 * The units of an SKU booked to fulfil an order after placing it.
 * The units of an SKU removed from inventory after creating a shipment and committing the amount booked previously.

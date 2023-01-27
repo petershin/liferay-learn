@@ -19,7 +19,7 @@ Navigate to the _Global Applications_ menu &rarr; _Commerce_. Administrators can
 * [Bill of Materials](../product-management/creating-and-managing-products/products/managing-boms.md)
 * [Subscriptions](../order-management/subscriptions/managing-subscriptions.md)
 * [Currencies](./currencies/adding-a-new-currency.md)
-* [Inventory](../inventory-management/introduction-to-managing-inventory.md)
+* [Inventory](../inventory-management.md)
 * [Warehouses](../inventory-management/warehouse-reference-guide.md)
 * [Availability Estimates](../inventory-management/availability-estimates.md)
 

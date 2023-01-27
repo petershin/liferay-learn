@@ -53,6 +53,6 @@ Inventory Management applications reference the following resources:
 
 ## Additional Information
 
-* [Introduction to Managing Inventory](../../inventory-management/introduction-to-managing-inventory.md)
+* [Inventory Management](../../inventory-management.md)
 * [Inventory Management Reference Guide](../../inventory-management/inventory-management-reference-guide.md)
 * [Warehouse Reference Guide](../../inventory-management/warehouse-reference-guide.md)

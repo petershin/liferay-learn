@@ -18,7 +18,7 @@ If you're using Commerce 2.0 or 2.1, the warehouse settings are located in the *
 
 ## Channels
 
-You can set the warehouse to serve all the available channels or select specific ones. To do this, click on the *Eligibility* tab and click on the *Specific Channels* radio button. Search for a channel and click *Select*.
+You can set the warehouse to serve all the available channels or select specific ones. To do this, click the *Eligibility* tab and select the *Specific Channels* radio button. Then, search for a channel and click *Select*.
 
 ![Set the warehouse to serve all available channels or select specific ones.](./warehouse-reference-guide/images/02.png)
 
@@ -43,8 +43,8 @@ Under the *Channels* section, you can view the available channels that the wareh
 | Street 3    | Third line of address                         |
 | Country     | Dropdown menu to select a country             |
 | Region      | Dropdown menu to select the state or province |
-| Postal Code | Field to enter the postal code                |
-| City        | Field to enter the city                       |
+| Postal Code | Field for postal code                         |
+| City        | Field for city                                |
 
 ## Geolocation
 

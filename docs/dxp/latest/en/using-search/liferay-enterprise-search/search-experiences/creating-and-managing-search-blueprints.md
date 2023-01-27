@@ -180,11 +180,13 @@ To import a Blueprint's JSON definition,
 
 There's a preview sidebar that's handy for examining the results of a search backed by the Blueprint in progress. Access the preview by clicking the _Preview_ button from the Edit Blueprint screen.
 
-![Preview a Blueprint before putting it in action.](./creating-and-managing-search-blueprints/images/02.png)
+![Preview a Blueprint before putting it in action.](./creating-and-managing-search-blueprints/images/14.png)
 
-There's more functionality in this screen than first meets the eye:
+There are several pieces of functionality in this screen:
 
-- Click _View Raw Response_ to see the entire search response string. This is the same string you can see in the [Search Insights](../../search-pages-and-widgets/search-insights.md) widget on the Search page. The response is opened in a Raw Response modal and can be copied to the clipboard or downloaded as a JSON file.
+- For 7.4 U52+, you can click _View Raw Request_ to see the entire search request string. From the Raw Request modal you can copy the request to the clipboard or download it as a JSON file. This is the same request seen in the [Search Insights](../../search-pages-and-widgets/search-insights.md) widget on the search page. 
+
+- Click _View Raw Response_ to see the entire search response string. From the Raw Response modal you can copy the response to the clipboard or downloaded as a JSON file. This is the same string you can see in the [Search Insights](../../search-pages-and-widgets/search-insights.md) widget on the search page.
 
    ![View the raw response string returned from Elasticsearch.](./creating-and-managing-search-blueprints/images/11.png)
 

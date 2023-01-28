@@ -14,7 +14,7 @@ Using Liferay Navigation Menus application, you can create a navigation menu any
 
 The Menu Display Fragment appears under the Fragments and Widget section of your Content Page. You add and configure this Fragment as with other Fragments in your Content Pages. For more information, see [Adding Elements to Content Pages](../creating-pages/using-content-pages/adding-elements-to-content-pages.md) and [Configuring Fragments](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md).
 
-![The Menu Display Fragment appears under the Fragments and Widget section of your Content Page.](./configuring-menu-displays/images/06.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![The Menu Display Fragment appears under the Fragments and Widget section of your Content Page.](./configuring-menu-displays/images/06.png) 
 
 You can build the hierarchy of pages and subpages in the Menu Display Fragment using two methods: 
 

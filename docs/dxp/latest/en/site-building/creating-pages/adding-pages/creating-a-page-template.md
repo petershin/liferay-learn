@@ -24,7 +24,7 @@ The steps below show how to create and use Widget and Content Page Templates.
 
     ![Creating a new Page Template Set.](./creating-a-page-template/images/02.png)
 
-1. Click the *Plus* icon (![Add Page Template](../../../images/icon-add.png)) and select either *Widget Page Template* or *Content Page Template*. You can edit the Page Template at any time by clicking the *Actions* icon (![Actions](../../../images/icon-actions.png)) next to the Page Template in the Set and selecting *Edit*.
+1. Click the *Plus* icon (![Add Page Template](../../../images/icon-add.png)) and select either *Widget Page Template* or *Content Page Template*. You can edit the Page Template at any time by clicking the *Actions* button (![Actions](../../../images/icon-actions.png)) next to the Page Template in the Set and selecting *Edit*.
 
 1. Enter a Name.
 
@@ -38,9 +38,9 @@ You can also create a Page Template from a page while you are editing it. The ne
 
 Follow these steps to make a Page Template from a page:
 
-1. While editing the page, click the *Actions* icon (![Actions](../../../images/icon-actions.png)) and select *Convert to Page Template*
+1. While editing the page, click the *Actions* button (![Actions](../../../images/icon-actions.png)) and select *Convert to Page Template*
 
-    ![Click Convert to Page Template in the Actions menu to turn the page you are editing into a new Page Template.](./creating-a-page-template/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Click Convert to Page Template in the Actions menu to turn the page you are editing into a new Page Template.](./creating-a-page-template/images/03.png) 
 
 1. In the modal that appears on the screen, select an existing page set or select *Save in New Set* to create a new Page Template Set for the Page Template.
 

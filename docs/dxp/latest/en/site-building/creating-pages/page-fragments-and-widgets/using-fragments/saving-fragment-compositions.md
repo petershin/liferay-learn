@@ -16,7 +16,7 @@ Follow these steps to save a Fragment composition:
 
 1. Click the Fragment's *Options* button (![Options Button](../../../../images/icon-app-options.png)) and select *Save Composition*.
 
-   ![Open the Fragment's Options menu and select Save Composition.](./saving-fragment-compositions/images/01.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+   ![Open the Fragment's Options menu and select Save Composition.](./saving-fragment-compositions/images/01.png)
 
 1. Enter a Name for the Fragment.
 
@@ -54,7 +54,7 @@ The latest version of the [Liferay Fragments Toolkit](../../../developer-guide/r
 
 This step-by-step example shows you how to create a banner-style composition using nested Container Fragments. The example also illustrates how to save the composition and adjust its settings in the Style Book.
 
-![Example of a sample Fragment composition using the Container Fragment](./saving-fragment-compositions/images/04.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![Example of a sample Fragment composition using the Container Fragment](./saving-fragment-compositions/images/04.png)
 
 * [Step 1: Creating a New Content Page](#step-1-creating-a-new-content-page).
 * [Step 2: Configuring the Container Fragment](#step-2-configuring-the-container-fragment).
@@ -75,7 +75,7 @@ This step-by-step example shows you how to create a banner-style composition usi
 
 1. From the Content Page sidebar, select *Fragments and Widgets* (![Fragments and Widgets](../../../../images/icon-plus.png)) and drag and drop the *Container* Fragment over the default drop-zone.
 
-    ![Drag and drop the Container Fragment on top of the Content Page drop zone.](./saving-fragment-compositions/images/05.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Drag and drop the Container Fragment on top of the Content Page drop zone.](./saving-fragment-compositions/images/05.png)
 
 1. Click the Container Fragment and in the *Configuration* panel, click the *Styles* tab.
 
@@ -83,22 +83,22 @@ This step-by-step example shows you how to create a banner-style composition usi
 
 1. In the *Background* panel, use the *Value from Style Book* button to select a *Gray 200*.
 
-    ![Define the Padding and Background Color value of the Container Fragment.](./saving-fragment-compositions/images/06.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Define the Padding and Background Color value of the Container Fragment.](./saving-fragment-compositions/images/06.png)
 
 1. Select *Fragments and Widgets* (![Fragments and Widgets](../../../../images/icon-plus.png)) and drop a new Container Fragment over the existing one. This creates a nested Container composition that appears when you click on the *Browser* (![Browser](../../../../images/icon-hierarchy.png)) button.
 
 
 1. From the Fragments and Widgets (![Fragments and Widgets](../../../../images/icon-plus.png)) panel, under Basic Components, drag and drop a *Heading* Fragment inside the inner Container in the composition.
 
-    ![Drag and drop a Heading Fragment inside the inner Container Fragment.](./saving-fragment-compositions/images/08.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Drag and drop a Heading Fragment inside the inner Container Fragment.](./saving-fragment-compositions/images/08.png)
 
 1. Drag and drop a *Paragraph* Fragment right below the Heading. Select the Paragraph in the composition and under the *Styles* section, choose a *Margin Top* of `3`.
 
-    ![Drag and drop a Paragraph Fragment right under the Heading Fragment.](./saving-fragment-compositions/images/09.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Drag and drop a Paragraph Fragment right under the Heading Fragment.](./saving-fragment-compositions/images/09.png)
 
 1. From the Selection (![Selection](../../../../images/icon-pages-tree.png)) panel, click the inner Container. Under the *General* tab, type the URL where you want to redirect users when they click on this area.
 
-    ![Define a target link or Page for the inner Container Fragment.](./saving-fragment-compositions/images/10.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Define a target link or Page for the inner Container Fragment.](./saving-fragment-compositions/images/10.png)
 
 1. From the Fragments and Widgets (![Fragments and Widgets](../../../../images/icon-plus.png)) panel, under Basic Components, drag and drop a *Button* Fragment in the composition, right below the paragraph.
 
@@ -106,7 +106,7 @@ This step-by-step example shows you how to create a banner-style composition usi
 
 1. In the *Browser* (![Browser](../../../../images/icon-hierarchy.png)) panel, click the *link* for the Button Fragment. Under the Link section, type the URL you want to redirect users when they click the button.
 
-    ![Configure the button Fragment type and top margin.](./saving-fragment-compositions/images/11.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Configure the button Fragment type and top margin.](./saving-fragment-compositions/images/11.png)
 
 ```{note}
 You don't need to Publish the Content Page. In-progress work on a Content Page is automatically saved as a draft.
@@ -116,7 +116,7 @@ You don't need to Publish the Content Page. In-progress work on a Content Page i
 
 Follow the above steps to save the composition as a new fragment.
 
-![Saving your Fragment Composition from the Container Option menu.](./saving-fragment-compositions/images/12.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![Saving your Fragment Composition from the Container Option menu.](./saving-fragment-compositions/images/12.png)
 
 ### Step 4: Setting the Default Container Width in the Style Book
 
@@ -132,11 +132,11 @@ To avoid breaking your Site layout configuration, use a test environment when wo
 
 1. In the *General* tab, set the *Container Width* property to *Fixed Width*.
 
-    ![Change the inner Container Fragment width setting to Fixed Width.](./saving-fragment-compositions/images/15.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Change the inner Container Fragment width setting to Fixed Width.](./saving-fragment-compositions/images/15.png)
 
 1. Click the *Page Design Options* (![Page Design Options](../../../../images/icon-format.png))  and under the *Style Book* section, verify the active Style Book.
 
-    ![Verify the default Style Book in use for the Content Page.](./saving-fragment-compositions/images/16.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Verify the default Style Book in use for the Content Page.](./saving-fragment-compositions/images/16.png)
 
 1. Under the Site Menu, go to *Design* &rarr; *Style Books*.
 
@@ -172,7 +172,7 @@ When you configure one or more Containers inside another Container Fragment, you
 
 1. Set the *Align Items* and *Justify Content* settings to your preference.
 
-    ![Select the Container grouping the page elements you want to style using the Flex display options.](./saving-fragment-compositions/images/20.png)<!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Select the Container grouping the page elements you want to style using the Flex display options.](./saving-fragment-compositions/images/20.png)
 
 ## Additional Information
 

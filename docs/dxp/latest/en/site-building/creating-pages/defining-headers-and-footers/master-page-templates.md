@@ -10,7 +10,7 @@ Master Page Templates provide a way to define elements common to every page (e.g
 
 Building a Master Page Template is similar to the process of creating a Content Page. A Master Page Template can contain any number of Page Fragments, like a Content Page. However, a Master Page Template differs in that it has one key area defined, called a *Drop Zone*, that specifies where you can place Page Fragments. This area can't be removed, but it can be placed somewhere else in the page layout. You can also define which Page Fragments can be added to the Drop Zone. A typical use case for a Master Page Template is to have a Header, a Footer, and a Drop Zone. See [Creating a Master Page Template](./creating-a-master-page-template.md) for more information.
 
-![A typical use case for a Master Page Template has a Header, a Drop Zone, and a Footer](./master-page-templates/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![A typical use case for a Master Page Template has a Header, a Drop Zone, and a Footer](./master-page-templates/images/02.png) 
 
 ## Additional Information
 

@@ -10,7 +10,7 @@ To select Assets to publish in the *Asset Publisher* widget,
 
 1. Click the *Actions* menu (![Click on the Options button at the top-right corner of the widget for configuration.](../../../images/icon-options.png)) at the top-right corner of the Asset Publisher Widget.
 
-    ![Click the Actions menu to access the Asset Publisher Configuration options.](./selecting-assets-in-the-asset-publisher-widget/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Click the Actions menu to access the Asset Publisher Configuration options.](./selecting-assets-in-the-asset-publisher-widget/images/01.png) 
 
 1. Select *Configuration* to display the Configuration dialog.
 

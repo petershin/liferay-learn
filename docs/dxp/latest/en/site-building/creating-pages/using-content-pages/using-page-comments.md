@@ -2,8 +2,7 @@
 
 When building Content Pages, you and your team can collaborate using  Liferay's Page Comments feature. While Comments are enabled out-of-the-box in Liferay DXP 7.3+, they are disabled by default in Liferay DXP 7.2. See [Enabling Comments](#enabling-comments) to learn more.
 
-![Use Page Comments to collaborate.](./using-page-comments/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
-
+![Use Page Comments to collaborate.](./using-page-comments/images/01.png) 
 ## Adding Page Comments
 
 Follow these steps to add Page Comments:
@@ -14,7 +13,7 @@ Follow these steps to add Page Comments:
 
    Alternatively, you can select the desired Page element and click its Comments icon. This opens the Comments panel.
 
-   ![Click the Comments icon for the Page element.](./using-page-comments/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+   ![Click the Comments icon for the Page element.](./using-page-comments/images/02.png) 
 
    ```{note}
    Comments cannot be added to [Fragment sub-elements](../page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md), Containers, or Grids. 
@@ -24,7 +23,7 @@ Follow these steps to add Page Comments:
 
 After a comment is added, you can *edit* or *delete* the comment via its *Actions* button (![Actions Button](../../../images/icon-actions.png)). Users can also add replies to it.
 
-![Edit, delete, or reply to comments.](./using-page-comments/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![Edit, delete, or reply to comments.](./using-page-comments/images/03.png) 
 
 ```{note}
 Deleting a comment removes all replies to it.
@@ -34,7 +33,7 @@ Deleting a comment removes all replies to it.
 
 Once comments are added to a Page Fragment or Widget, you can review them in the Comments side panel.
 
-![Review Page comments in the Comments side panel.](./using-page-comments/images/04.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![Review Page comments in the Comments side panel.](./using-page-comments/images/04.png)
 
 When collaborating, you can mark a comment as resolved by clicking on its *Resolve* button (![Resolve Button](../../../images/icon-resolve.png)). By default, resolved comments and their replies are hidden. However, you can view resolved comments by checking *Show Resolved Comments*.
 
@@ -42,7 +41,7 @@ When collaborating, you can mark a comment as resolved by clicking on its *Resol
 
 While viewing resolved comments, you can reopen a comment by clicking its green *Resolve* button.
 
-![View and reopen resolved comments.](using-page-comments/images/06.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![View and reopen resolved comments.](using-page-comments/images/06.png) 
 
 ## Enabling Comments
 

@@ -39,7 +39,7 @@ You can change the Master Page Template of a Page in the [Content Page Editor](.
 1. In the Editing Sidebar, click the *Page Design* menu (![Page Design menu](../../../images/icon-format.png)).
 1. Under the Masters section, click the *Master Page Template* you want to use.
 
-   ![Click the Master Page Template you want to use through the Page Design menu.](./managing-master-page-templates/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+   ![Click the Master Page Template you want to use through the Page Design menu.](./managing-master-page-templates/images/03.png) 
 
 ## Changing a Master Page Template's Look and Feel
 
@@ -53,7 +53,7 @@ To manage a Master Page Templates's Look and Feel and other options, follow thes
 
 1. Click the *Page Design* menu (![Page Design menu](../../../images/icon-format.png)) &rarr; *More Page Design Options*(![More Page Design Options](../../../images/icon-cog3.png))
 
-   ![Click More Page Design Options to access the Master Page Template General Options](./managing-master-page-templates/images/06.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+   ![Click More Page Design Options to access the Master Page Template General Options](./managing-master-page-templates/images/06.png) 
 
 1. In the *Look and Feel* tab, is where the styling of the Master Page Template can be tailored to your needs. 
 

@@ -22,11 +22,28 @@ If desired, you can display hidden attachment field folders in Documents and Med
 
 After creating an attachment field, you can configure it in these ways:
 
-| Field | Description |
+| Configuration | Description |
 | :--- | :--- |
 | Accepted File Extensions | Enter a list of accepted file extensions to determine the type of files users can upload to the field. Each extension must be separated by commas. Attachment fields support all file types accepted by [Documents and Media](../../../../content-authoring-and-management/documents-and-media.md). |
 | Maximum File Size | Enter the maximum file size accepted by the field. The default value is 100 MB. If desired, you can set the value to 0 to use the server's Overall Maximum Upload Request Size property. |
 | Storage Folder (*for Show Files in Documents and Media*) | Enter a folder name to determine where uploaded files are stored in Documents and Media. By default, the folder uses the object definition's name (e.g., `/Employee`, `/TimeOffRequest`). |
+
+## Using Attachment Fields with APIs
+
+When using headless APIs to add or update entries that include attachment fields, the attachment field must use the ID of an existing file in Liferay's document library. You cannot upload a file when making the API call.
+
+For this reason, first upload the desired file to the document library, retrieve its ID, and pass the ID in the API call using this syntax: `"[attachmentField]": [FileEntryId]`.
+
+### Example
+
+```bash
+curl -X "POST" "http://localhost:8080/o/c/objectName?restrictFields=actions" \
+     -H 'Content-Type: application/json' \
+     -u 'test@liferay.com:test' \
+     -d $'{
+  "document": 12345
+}'
+```
 
 ## Additional Information
 

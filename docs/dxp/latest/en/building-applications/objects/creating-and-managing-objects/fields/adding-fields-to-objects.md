@@ -48,7 +48,7 @@ You can remove fields from object drafts at any time. However, you cannot remove
 
 ## Field Types UI Reference
 
-{bdg-secondary}`For 7.4 U24+/GA24+`
+{bdg-secondary}`For 7.4 U56+/GA56+`
 
 | Type | Description |
 | :--- | :--- |
@@ -60,6 +60,7 @@ You can remove fields from object drafts at any time. However, you cannot remove
 | Integer | Stores an integer up to 9 digits in length. |
 | Long Integer (*previously Long*) | Stores a large integer up to 16 digits in length. |
 | Long Text (*previously Clob*) | Stores a text box value that supports up to 65,000 characters; after creating a Long Text field, you can configure it to limit the number of characters allowed. |
+| Multiselect Picklist | Stores one or more string values from a picklist. See [Picklists](../../picklists.md) for more information. |
 | Picklist | Stores a picklist string value. See [Picklists](../../picklists.md) for more information. |
 | Precision Decimal (*previously BigDecimal*) | Stores a high-precision decimal number without rounding. |
 | Relationship | Stores the numeric ID for all related object entries. Objects automatically adds relationship fields to objects on the child side of a One to Many relationship. See [Defining Object Relationships](../relationships/defining-object-relationships.md) for more information. |

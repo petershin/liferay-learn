@@ -16,7 +16,7 @@ fields/aggregation-fields.md
 fields/attachment-fields.md
 ```
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Available Liferay 7.4 U56+/GA56+`
 
 Object fields are data definitions that represent database columns and store different types of values. All objects include default system fields, but you can [add custom fields](./fields/adding-fields-to-objects.md) to both draft and published objects.
 
@@ -36,7 +36,8 @@ Liferay provides these field types that correspond to specific data types in the
 | Integer | Integer | Stores an integer up to nine digits in length. <br><br> Maximum value: `2147483647` <br><br> Minimum value: `-2147483648` |
 | Long Integer (_previously Long_) | Long | Stores a large integer up to 16 digits in length. <br><br> Maximum value: `9007199254740991` <br><br> Minimum value: `-9007199254740991` |
 | Long Text (_previously Clob_) | Clob | Stores a text box value that supports up to 65,000 characters; after creating a Long Text field, you can configure it to limit the number of characters allowed. |
-| Picklist | String | Stores a [Picklist](../picklists.md) string value. |
+| Multiselect Picklist | String | Stores one or more string values from a [picklist](../picklists.md). |
+| Picklist | String | Stores one string value from a [picklist](../picklists.md). |
 | Precision Decimal (_previously BigDecimal_) | BigDecimal | Stores a high-precision decimal number without rounding and supports up to 16 decimal digits. <br><br> Maximum Value: `99999999999999.9999999999999999` <br><br> Minimum value: `-99999999999999.9999999999999999` |
 | Relationship | Long | Stores the numeric ID for all related object entries. Objects automatically adds relationship fields to objects on the child side of a One to Many relationship. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information. |
 | Rich Text | Clob | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio). |

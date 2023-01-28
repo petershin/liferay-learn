@@ -1,6 +1,6 @@
 # Using Picklists
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.4+`
+{bdg-secondary}`Available Liferay 7.4+`
 
 Picklists is an application for creating standard lists of values that are understood across the Liferay Portal. The process of creating a Picklist includes creating the initial list and adding items to it. Once these values are defined, they can be used in supported applications.
 
@@ -42,7 +42,9 @@ Follow these steps to create a Picklist:
 
 ## Adding Picklist Fields to Objects
 
-Once a list is created, you can select it when creating Object fields. Select the *Picklist* field type and choose the desired list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) for more information.
+{bdg-secondary}`For 7.4 U56+/GA56+`
+
+Once a list is created, you can select it when creating Object fields. Select the *Picklist* or *Multiselect Picklist* field type and choose the desired list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) for more information.
 
 ![Users can select the Picklist when creating new Object fields.](./using-picklists/images/05.png)
 
@@ -62,20 +64,39 @@ Liferay provides headless APIs for creating and managing Picklists. You can view
 
 ![Access Picklist APIs under headless-admin-list-type](./using-picklists/images/07.png)
 
-With them, you can perform CRUD operations for both Picklist Definitions (`ListTypeDefinition`) and Picklist Entries (`ListTypeEntry`).
+With them, you can perform CRUD operations for both Picklist Definitions (`ListTypeDefinition`) and Picklist Entries (`ListTypeEntry`). See [Picklist API Basics](./picklists-api-basics.md) for more information.
 
 ## Picklist Fields in Object API Calls
 
-{bdg-secondary}`For 7.4+ U1+/GA5+`
+{bdg-secondary}`For 7.4 U56+/GA56+`
 
-When making POST, PATCH, and PUT API calls for Objects that include a Picklist field, you must use the following format.
+When making POST, PATCH, and PUT API calls for Objects that include a Picklist field, you must use the following formats.
+
+### Picklist Field Type
 
 ```json
 { 
       "picklistExample": {
-        "key": "secondOption",
-        "name": "Second Option"
+        "key": "firstOption",
+        "name": "First Option"
       }
+}
+```
+
+### Multiselect Picklist Field Type
+
+```json
+{ 
+      "picklistExample": [
+        {
+          "key": "firstOption",
+          "name": "First Option"
+        },
+        {
+          "key": "secondOption",
+          "name": "Second Option"
+        }
+      ]
 }
 ```
 
@@ -83,3 +104,4 @@ When making POST, PATCH, and PUT API calls for Objects that include a Picklist f
 
 * [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md)
 * [Managing Picklist Permissions](./managing-picklist-permissions.md)
+* [Picklist API Basics](./picklists-api-basics.md)

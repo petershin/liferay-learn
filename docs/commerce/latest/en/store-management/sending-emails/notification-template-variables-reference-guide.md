@@ -12,12 +12,12 @@ After selecting a type, you can view its variables and their descriptions by exp
 
 ![Use these variables in the Email Settings field.](./notification-template-variables-reference-guide/images/03.png)
 
-| Variable                       | Description                     |
-| :----------------------------- | :------------------------------ |
-| [%ACCOUNT_ROLE_ORDER_MANAGER%] | Account Order Manager           |
-| [%ORDER_CREATOR%]              | The user that created the order |
-| [%ACCOUNT_ROLE_ADMINISTRATOR%] | Account Administrator           |
-| [%USER_GROUP_NAME%]            | User Group Name                 |
+| Variable                       | Description                                                                                                                                                                      |
+| :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [%ACCOUNT_ROLE_ORDER_MANAGER%] | The order manager(s) linked to the account that placed the order                                                                                                                 |
+| [%ORDER_CREATOR%]              | The user that created the order                                                                                                                                                  |
+| [%ACCOUNT_ROLE_ADMINISTRATOR%] | The account administrator(s) linked to the account that placed the order                                                                                                         |
+| [%USER_GROUP_NAME%]            | The name of a user group. Replace `NAME` with the user group name. For instance, if the user group name is User Group A, then the variable must be `[%USER_GROUP_User Group A%]` |
 
 ## Order Based Notification Template Types
 

@@ -9,7 +9,7 @@ The Custom Filter widget is a powerful aid to your search tuning efforts. Withou
 - [Excluding Content from Search Results](#excluding-certain-content)
 - [Boosting Content in Search Results](#boosting-fields)
 - [Filtering by multiple Site IDs](#filtering-by-site-id)
-- [Using Elasticsearch's Query String query](#complex-filter-with-query-string) 
+- [Using Elasticsearch's Query String query](#complex-filter-with-query-string)
 - [Boosting Matches to Nested Fields](#boosting-matches-to-nested-fields)
 
 See [Filtering Search Results](./filtering-search-results.md) for a detailed explanation of the Custom Filter widget.
@@ -67,14 +67,14 @@ The Date Range query option in the [Custom Filter widget's configuration form](f
 Results created in the last year are boosted as a result of this Custom Filter. To see this in action create two blogs about three minutes apart with the following title and content:
 
 | Blog 1 | Blog 2 |
-| :----- | :----- | 
+| :----- | :----- |
 | Title: `liferay dxp` | Title: `liferay dxp` |
 | Content: `liferay dxp`| Content: `liferay` |
 
 When you search for `dxp` the earlier blog will be higher in the Search Results because it has the searched keyword more frequently, and both were created in the last year so they were boosted equally.
 
 Immediately after creating the second blog post, configure the Custom Filter's Filter Value with `[now-2m now]`--this value may need to be adjusted.
- 
+
 Search again, and the order of the blogs in Search Results will now show the later blog first (as long as the newer blog was created within the configured time range, and the older blog was not).
 
 See the [Elasticsearch date-math documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/common-options.html#date-math) to understand more about how to specify the ranges.
@@ -109,7 +109,7 @@ To boost any content that's tagged, regardless of what the tag value is, configu
 
 **Boost:** `100`
 
-If a document matching the query is tagged, it contains a `assetTagNames` field. The Exists query matches on any value for the field. 
+If a document matching the query is tagged, it contains a `assetTagNames` field. The Exists query matches on any value for the field.
 
 ## Filtering by Site ID
 
@@ -163,8 +163,8 @@ Importantly, the filters by `groupId` declare the `SiteBoolQuery` as the parent 
 
 Sometimes you can avoid the need for multiple queries (as in the [Filtering by Site ID](#filtering-by-site-id) example), by using the [Query String query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html). The below configuration demonstrates how you can use only one Custom Filter widget to constrain the search to
 
-* Match Documents and Media files with `pdf` or `jpg` extensions OR
-* Match Web Content Articles
+- Match Documents and Media files with `pdf` or `jpg` extensions OR
+- Match Web Content Articles
 
 Configure the Custom Filter widget like this:
 
@@ -190,7 +190,7 @@ As described in [Accessing Nested DDM Fields](../search-facets/custom-facet.md#a
 
 Using a [nested field](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) in a Custom Filter configuration requires three Custom Filter widgets on the search page. A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) that wraps the required child queries is added in one of the widgets: one child query matches the field's name, the other the value.
 
-This example demonstrates adding a boost for matches to a certain DDM Structure field. 
+This example demonstrates adding a boost for matches to a certain DDM Structure field.
 
 1. Create a [Structure](../../../content-authoring-and-management/web-content/web-content-structures/creating-structures.md):
     - In the Site menu, go to Content & Data &rarr; Web Content.
@@ -224,9 +224,9 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
 
 1. Enable _Display Results in Document Form_ in the Search Results widget's configuration.
 
-1. Find the `ddmFieldArray` field and copy its value. For example, 
+1. Find the `ddmFieldArray` field and copy its value. For example,
 
-```json
+   ```json
    "ddmFieldArray" : [
                {
                  "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
@@ -234,8 +234,8 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
                  "ddmFieldValueKeyword_en_US_String_sortable" : "true",
                  "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
                }
-             ],
-    ```
+            ],
+   ```
 
 1. Go to the search page and add three Custom Filters using the Elasticsearch response data:
 
@@ -261,7 +261,7 @@ This example demonstrates adding a boost for matches to a certain DDM Structure 
         - **Custom Parameter Name:** `cparam`
 
       ```{important}
-      This example uses custom filters on just one nested field. Therefore the custom parameter in the child queries (`cparam`) isn't technically required. To set up custom filters on multiple nested fields in the same page, you must configure custom parameter names for the child queries, as demonstrated in this example. Adding filters for a second nested field would require two child custom filters sharing a different custom parameter name (e.g., `cparam2`).
+      This example uses custom filters on just one nested field, so the custom parameter in the child queries (`cparam`) isn't technically required. To set up custom filters on multiple nested fields in the same page, you must configure custom parameter names for the child queries, as demonstrated in this example. Adding filters for a second nested field requires two child custom filters sharing a different custom parameter name (e.g., `cparam2`).
       ```
 
 1. Now repeat the search for _test content_ and verify that the Boosted Web Content appears above the Not Boosted Web Content.
@@ -273,4 +273,3 @@ The boost value often needs tuning to meet your needs. Use the Search Insights w
 - [Filtering Search Results](./filtering-search-results.md)
 - [Result Rankings](../../search-administration-and-tuning/result-rankings.md)
 - [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md)
-

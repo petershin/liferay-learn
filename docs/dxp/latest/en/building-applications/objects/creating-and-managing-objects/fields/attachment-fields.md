@@ -30,9 +30,9 @@ After creating an attachment field, you can configure it in these ways:
 
 ## Using Attachment Fields with APIs
 
-API calls for adding or updating entries that include attachment fields must use the ID of an existing file in [Liferay's document library](../../../../content-authoring-and-management/documents-and-media/developer-guide/document-api-basics.md). You cannot upload a file when making an API call for object entries.
+A file must exist in Liferay before you can add it to an object entry's attachment field using the headless API. First use the [document library APIs](../../../../content-authoring-and-management/documents-and-media/developer-guide/document-api-basics.md) to upload the file and retrieve its ID.
 
-Retrieve the file's ID and pass it in the API call using this syntax: `"[attachmentField]": [FileEntryId]`.
+Pass the ID in the objects API call using this syntax: `"[attachmentField]": [FileEntryId]`.
 
 ### Example
 

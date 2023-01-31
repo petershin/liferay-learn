@@ -18,7 +18,7 @@ The Advanced Configuration section contains additional options:
 
 **Frequency Threshold:** Set the minimum frequency required for terms to appear in the list of facet terms. For example, if the frequency threshold of a facet is set to `3`, a term with two matching results does not appear in the facet's term result list.
 
-**Order Terms By:** For Liferay 7.4 U63+/GA63+, you can choose a facet term sorting strategy: Term Frequency Descending or Term Frequency Ascending. Term Frequency Descending orders facet terms from most matches to least. By default, facet terms are displayed statically, in the order the timer periods were defined in the configuration.
+**Order Terms By:** For Liferay 7.4 U63+/GA63+, you can choose a facet term sorting strategy: Term Frequency Descending or Term Frequency Ascending. Term Frequency Descending orders facet terms from most matches to least. By default, facet terms appear statically in the order the timer periods configuration.
 
 In Ranges Configuration, you can modify, delete, or create time ranges:
 
@@ -38,9 +38,9 @@ But you are not limited to ending the range to now. Instead of `*`, you can spec
 
 For example, to set up a range from 12 months ago to one month ago, 
 
-1.  Click the plus button in one of the existing ranges.
+1. Click the plus button in one of the existing ranges.
 
-1.  Give it the label **Past 1-12 Months**.
+1. Give it the label **Past 1-12 Months**.
 
 1. Give it a Range value of 
 

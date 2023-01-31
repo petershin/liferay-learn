@@ -28,7 +28,7 @@ To achieve AND style selection between facet widgets, you must configure a diffe
 
 **Display Frequencies:** Choose whether to display the term frequencies.
 
-**Order Terms By:** For Liferay 7.4 U56+/GA56+, you can choose the facet term sorting strategy: Term Frequency Descending (default), Term Frequency Ascending, Term Value Ascending, or Term Value Descending. Term Frequency Descending is the default and orders facet terms from most matches to least. The term value options order facet terms alphabetically.
+**Order Terms By:** For Liferay 7.4 U56+/GA56+, you can choose the facet term sorting strategy: Term Frequency Descending (default), Term Frequency Ascending, Term Value Ascending, or Term Value Descending. The default sorting orders facet terms from most matches to least. Term value options order facet terms alphabetically.
 
 ### Displaying and Filtering Facet Terms by Vocabulary
 

@@ -44,7 +44,7 @@ Follow these steps to create a Picklist:
 
 {bdg-secondary}`For 7.4 U56+/GA56+`
 
-Once a list is created, you can select it when creating Object fields. Select the *Picklist* or *Multiselect Picklist* field type and choose the desired list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) for more information.
+After creating a list, you can select it when creating Object fields. Select the *Picklist* or *Multiselect Picklist* field type and choose the list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) for more information.
 
 ![Users can select the Picklist when creating new Object fields.](./using-picklists/images/05.png)
 
@@ -70,7 +70,7 @@ With them, you can perform CRUD operations for both Picklist Definitions (`ListT
 
 {bdg-secondary}`For 7.4 U56+/GA56+`
 
-When making POST, PATCH, and PUT API calls for Objects that include a Picklist field, you must use the following formats.
+When making POST, PATCH, and PUT API calls for Objects that include a Picklist field, you must use the following request payload formats for Picklists and Multiselect Picklists, respectively.
 
 ### Picklist Field Type
 

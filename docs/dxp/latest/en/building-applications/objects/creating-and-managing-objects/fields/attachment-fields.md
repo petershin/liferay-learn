@@ -30,14 +30,16 @@ After creating an attachment field, you can configure it in these ways:
 
 ## Using Attachment Fields with APIs
 
-When using headless APIs to add or update entries that include attachment fields, the attachment field must use the ID of an existing file in Liferay's document library. You cannot upload a file when making the API call.
+API calls for adding or updating entries that include attachment fields must use the ID of an existing file in [Liferay's document library](../../../../content-authoring-and-management/documents-and-media/developer-guide/document-api-basics.md). You cannot upload a file when making an API call for object entries.
 
-For this reason, first upload the desired file to the document library, retrieve its ID, and pass the ID in the API call using this syntax: `"[attachmentField]": [FileEntryId]`.
+Retrieve the file's ID and pass it in the API call using this syntax: `"[attachmentField]": [FileEntryId]`.
 
 ### Example
 
+The following example adds an entry to an object named `timeOffRequest`. It adds a file with the ID `12345` to the attachment field `document`.
+
 ```bash
-curl -X "POST" "http://localhost:8080/o/c/objectName?restrictFields=actions" \
+curl -X "POST" "http://localhost:8080/o/c/timeOffRequest?restrictFields=actions" \
      -H 'Content-Type: application/json' \
      -u 'test@liferay.com:test' \
      -d $'{

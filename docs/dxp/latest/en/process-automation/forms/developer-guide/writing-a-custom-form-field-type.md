@@ -31,7 +31,7 @@ To see how custom form fields work, deploy an example and then add some form dat
 
 Then, follow these steps:
 
-1. Download and unzip [the Custom Form Field Type project](./writing-a-custom-form-field-type/resources/liferay-c2p9.zip).
+1. Download and unzip the Custom Form Field Type project.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O

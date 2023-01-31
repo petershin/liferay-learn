@@ -1,58 +1,62 @@
-# Liferay Connector to Mulesoft
+# Liferay Connector to MuleSoft
 
 {bdg-primary}`Subscription`
 
-The Liferay Connector to Mulesoft connects Liferay DXP to other platforms and services in the Mulesoft ecosystem. In this article, you'll learn the basic design of Liferay's Mulesoft connector and how to configure and set it up for a basic flow.
-
+The Liferay Connector to MuleSoft connects Liferay DXP to other platforms and services in the MuleSoft ecosystem. Learn the basics of the connector's design, as well as how to configure it and set up for a basic flow.
+<!-- Comment: As a reader, I'm left wondering where to get the Liferay Connector to MuleSoft and how to install it. Having looked at this material before, I know it's available [here](https://github.com/liferay/liferay-etl-mulesoft#readme), but we should make that information available to users on Liferay Learn, probably in a separate article (due to length). You could have four articles: Liferay Connector to MuleSoft (section intro), Installing the Connector, Configuring the Connector, Designing Mule Flows. -->
 ## Prerequisites
 
-You should be already familiar with Mule and Anypoint Studio. To learn about Anypoint Studio, consider completing an [Anypoint Studio](https://developer.mulesoft.com/tutorials-and-howtos) tutorial. You should know about Mule Concepts, Elements in a Mule Flow, and Global Elements. For connector prerequisites, check the [Release Notes](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/release-notes.adoc).
+Before proceeding, you should be familiar with Mule and Anypoint Studio concepts, such as Mule flows and global elements. To learn more, see [MuleSoft's official documentation](https://docs.mulesoft.com/general/) and consider completing an [Anypoint Studio tutorial](https://developer.mulesoft.com/tutorials-and-howtos).
+
+For connector prerequisites, see Liferay's [Release Notes](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/release-notes.adoc).
 
 ## Liferay Connector Design
-
-Liferay Connector uses OpenAPI 3.0 documents that describe all Liferay APIs. You can view them in [Swagger Hub](https://app.swaggerhub.com/organizations/liferayinc). Each OpenAPI document is also deployed dynamically in your Liferay instance under the following schema:
+<!-- Comment: Previously, BChan instructed us to direct users to http://[host]:[port]/o/api instead of SwaggerHub, since it is guaranteed to be up to date. This would also apply to other mentions of SwaggerHub in the article. -->
+The Liferay connector uses OpenAPI 3.0 documents that describe Liferay's APIs and are available in [SwaggerHub](https://app.swaggerhub.com/organizations/liferayinc). Each OpenAPI document is also deployed dynamically in your Liferay instance under the following schema:
 
 ```bash
 http://[host]:[port]/o/[headless-api-app-name]/[version]/openapi.json
 ```
 
-This OpenAPI document is generated based on the RESTful web services deployed, so it is the most current and accurate description of your APIs. You can learn more about Liferay APIs [here](https://help.liferay.com/hc/en-us/articles/360021024051-Get-Started-Discover-the-API).
+These documents are generated based on your deployed RESTful web services, so they are the most current and accurate descriptions of your APIs. You can learn more about Liferay APIs [here](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis.html).
 
-Once you specify an OpenAPI document endpoint, the connector automatically configures the paths, path/query parameters and entity metadata defined in the OpenAPI document. Liferay Connector works with any OpenAPI 3.0 document that follows Liferay standards and supports all Liferay APIs.
+Once you specify an OpenAPI document endpoint, the connector automatically configures the paths, path/query parameters, and entity metadata defined in the OpenAPI document. The Liferay connector works with any OpenAPI 3.0 document that follows Liferay standards and supports all Liferay APIs.
 
 ## Connector Configuration
 
-To configure the Liferay Connector, you must
+To configure the connector,
 
 * Select an authentication method and enter the required authentication parameters.
 
 * Specify an OpenAPI document endpoint.
 
-You can choose between *Basic* and *OAuth2* authentication methods. Read [Making Authenticated Requests](https://help.liferay.com/hc/en-us/articles/360021024071-Making-Authenticated-Requests) for more information.
+### Authentication
+<!-- Comment: In our API tutorials, we say that basic auth is used for demonstration purposes and that users should use OAut2 for authenticating users in production. Would the same "best practice" recommendation apply here? -->
+You can choose between *Basic* and *OAuth2* authentication methods. See [Using OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) for more information.
 
-* **Basic Authentication** - Enter a *User name* and *Password*.
+* **Basic Authentication**: Enter a user name and password.
 
-* **OAuth2** - Enter a *Client Key* and *Client Secret*.
+* **OAuth2**: Enter a client key and client secret.
 
 If you're using OAuth2, you must set up OAuth2 authorization in your Liferay instance first by following the instructions [here](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/creating-oauth2-applications.html).
 
 ![Set the Client Profile as Headless Server in the OAuth2 configuration.](./liferay-connector-to-mulesoft/images/01.png)
 
-Liferay supports the OAuth 2.0 Client Credentials grant type. Select *Headless Server* from the *Client Profile* dropdown. Liferay generates a *Client ID* (*Consumer Key*) and *Client Secret* (*Consumer Secret*) to use while configuring the connector. Before you can start using endpoints with OAuth2 authorization you must also enable [scopes](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/oauth2-scopes.html). Select the desired scope and check the authorization options you need, such as *everything*, *everything.write* or *everything.read*.
+Liferay supports the OAuth 2.0 Client Credentials grant type. Select *Headless Server* from the Client Profile dropdown. Liferay generates a client ID (consumer key) and client secret (consumer secret) to use while configuring the connector. Before you can start using endpoints with OAuth2 authorization you must also enable [scopes](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/oauth2-scopes.html). Select the desired scope and check the authorization options you need, such as *everything*, *everything.write* or *everything.read*.
 
-## Specify OpenAPI Document
+### Specify OpenAPI Document
 
-Once authorized, you can specify the Liferay API you want to use. Specify the OpenAPI document endpoint that describes the API you want. For instance, the below endpoint is that of the Commerce Admin Catalog API.
+Once authorized, set an OpenAPI document endpoint to specify the Liferay API you want to use. For example, this document is for the Commerce Admin Catalog API:
 
 ```bash
 http://[host]:[port]/o/headless-commerce-admin-catalog/v1.0/openapi.json
 ```
 
-Enter it into the *OpenAPI Spec URL* field of the `Liferay_Config` global element.
+To set this value, enter the document endpoint into the *OpenAPI Spec URL* field of the `Liferay_Config` global element.
 
 ![Enter the OpenAPI document endpoint in the Open API Spec URL field.](./liferay-connector-to-mulesoft/images/02.png)
 
-You can also do the same using XML configuration. Navigate to the *Global Elements* section, right click on *Liferay Config* and select *Go to XML*.
+You can also do this using XML configuration. Navigate to the *Global Elements* section, right click *Liferay Config* and select *Go to XML*.
 
 * Configuration example using Basic authentication
 
@@ -70,18 +74,20 @@ You can also do the same using XML configuration. Navigate to the *Global Elemen
  </liferay:config>
 ```
 
-Click on *Test Connection*. If it is successful, you can start building flows using the Liferay Connector.
+Click *Test Connection*. If it is successful, you can start building flows using the Liferay Connector.
 
 ## Operations
-
-Now that you've created your Mule project and imported and configured the Liferay Mulesoft Connector, you can start building Mule flows. Four operations are available after defining the OpenAPI endpoint.
+<!--Q: Where did the article previously explain how to 'import' the connector? -->
+Now that you've created your Mule project and imported and configured the Liferay MuleSoft Connector, you can start building Mule flows. Four operations are available after defining the OpenAPI endpoint.
 
 * Create Records
 * Delete Records
 * Get Records
 * Update Records
 
-Each operation implements and exposes different parts of the specified OpenAPI document. If you're working with large data sets, you probably don't want to handle records one at a time. To process these quickly, you can use Liferay's Batch operations. They enable you to submit large amount of data in batches that results in much faster execution time.
+Each operation implements and exposes different parts of the specified OpenAPI document.
+
+If you're working with large data sets, you probably don't want to handle records one at a time. To process these quickly, you can use Liferay's batch operations. They enable you to submit large amounts of data in batches that results in faster execution.
 
 ### Create Records Operation
 
@@ -100,9 +106,9 @@ Next, you must specify the input parameters. Input parameters support all Lifera
 | Path Params    | Object | Map with path parameter values                                      | Yes (if required by endpoint) |
 | Query Params   | Object | Map with query parameter values                                     | No                            |
 
-Use [Liferay's SwaggerHub](https://app.swaggerhub.com/organizations/liferayinc) as a reference for the different operations supported by the Liferay Mulesoft connector. You can also use the OpenAPI document from the endpoint you defined in the connector configuration, but you lose the intuitive UI offered by SwaggerHub.
+Use [Liferay's SwaggerHub](https://app.swaggerhub.com/organizations/liferayinc) as a reference for the different operations supported by the Liferay MuleSoft connector. You can also use the OpenAPI document from the endpoint you defined in the connector configuration, but you lose the intuitive UI offered by SwaggerHub.
 
-![The products endpoint is used in a flow that imports products from Salesforce into Liferay DXP..](./liferay-connector-to-mulesoft/images/04.png)
+![Use the products endpoint in flows that import products from Salesforce to Liferay.](./liferay-connector-to-mulesoft/images/04.png)
 
 You can follow the same steps as above to configure and use the other operations in your flow.
 
@@ -110,7 +116,7 @@ You can follow the same steps as above to configure and use the other operations
 
 The Batch Export operation allows you to get all records of a specified entity with a single request. This is useful when the number of records are very high. In case the number of records are low, you can use the *Get Records* operation.
 
-![Using the Batch - Export Records operation to export records in batch.](./liferay-connector-to-mulesoft/images/05.png)
+![Use the Batch - Export Records operation to export multiple records.](./liferay-connector-to-mulesoft/images/05.png)
 
 To configure a batch export operation, first select the entity you want to export using the *Class name* drop-down. Once selected, the connector dynamically generates related output metadata. If desired, you can use the *Field names* input to specify which fields are included in the exported entity. Field names must be separated using commas. You can also specify a *Site ID* parameter if it is required by the batch processing logic.
 
@@ -140,10 +146,10 @@ Similar to configuring batch exports, first use the *Class name* drop-down to se
 If you've used the *Transform Message* module to map entity fields between source and destination systems, you can leave the *Field name mappings* field empty.
 ```
 
-| Parameter name      | Type   | Description                                   | Required |
-| :------------------ | :----- | :-------------------------------------------- | :------- |
-| Class name          | String | The classname of the imported entity          | Yes      |
-| Field name mappings | Object | Populated with field name mapping definitions | No       |
-| Records             | Object | JSON array of entity objects                  | Yes      |
+| Parameter name      | Type   | Description                                    | Required |
+| :------------------ | :----- | :--------------------------------------------- | :------- |
+| Class name          | String | The class name of the imported entity.         | Yes      |
+| Field name mappings | Object | Populated with field name mapping definitions. | No       |
+| Records             | Object | JSON array of entity objects.                  | Yes      |
 
-To view all available operations and related input parameters, check out [Liferay Mulesoft Connector Technical Reference](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc).
+To view all available operations and related input parameters, check out [Liferay MuleSoft Connector Technical Reference](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc).

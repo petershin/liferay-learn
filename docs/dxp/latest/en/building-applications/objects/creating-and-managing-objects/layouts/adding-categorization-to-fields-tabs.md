@@ -12,9 +12,11 @@ You can add categorization blocks to [fields tabs](./designing-object-layouts.md
    System objects do not support custom layouts. See [Extending System Objects](../extending-system-objects.md) for more information.
    ```
 
-1. Go to the *Layouts* tab and select the desired layout.
+1. In the Details tab, enable categorization and click *Save*.
 
-   ![Go to the Layouts tab and select the desired layout.](./adding-categorization-to-fields-tabs/images/01.png)
+   ![Enable categorization.](./adding-categorization-to-fields-tabs/images/01.png)
+
+1. Go to the *Layouts* tab and select the desired layout.
 
 1. Go to the *Layout* tab, click the *Actions* button (![Actions Button](../../../../images/icon-actions.png)) for the desired [Fields tab](./designing-object-layouts.md#fields-tabs), and select *Add Categorization*.
 
@@ -44,4 +46,4 @@ Visibility and permissions can affect how the categorization block appears.
 
 * [Creating Objects](../creating-objects.md)
 * [Designing Object Layouts](./designing-object-layouts.md)
-* [Designing Object Views](../views/designing-object-views.md)
+* [Adding Comments to Fields Tabs](./adding-comments-to-fields-tabs.md)

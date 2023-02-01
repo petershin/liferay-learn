@@ -302,7 +302,7 @@ Congratulations! You've exchanged messages asynchronously between two classes.
 
 Now that you're familiar with asynchronous messaging, you can tune it for optimal performance. Learn how at [Tuning Messaging Performance](./tuning-messaging-performance.md).
 
-If you want to explore synchronous messaging using *default* and *direct* modes, see [Using Direct Synchronous Messaging](./using-direct-synchronous-messaging.md) and [Using Default Synchronous Messaging](./using-default-synchronous-messaging.md) for details.
+If you want to explore synchronous messaging using *default* and *direct* modes, see [Using Direct Synchronous Messaging in Previous Versions](./using-direct-synchronous-messaging-in-previous-versions.md) and [Using Default Synchronous Messaging in Previous Versions](./using-default-synchronous-messaging-in-previous-versions.md) for details.
 
 ## Additional Information
 

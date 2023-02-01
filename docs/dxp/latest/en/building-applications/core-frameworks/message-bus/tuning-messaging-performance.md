@@ -20,7 +20,7 @@ You can send messages in different ways using the applicable destination types.
 
 **Destination Type Compatibility**
 
-Below is each destination type's compatibility with [asynchronous messaging](./using-asynchronous-messaging.md), [default synchronous messaging](./using-default-synchronous-messaging.md), and [direct synchronous messaging](./using-direct-synchronous-messaging.md).
+Below is each destination type's compatibility with [asynchronous messaging](./using-asynchronous-messaging.md), [default synchronous messaging](./using-default-synchronous-messaging-in-previous-versions.md), and [direct synchronous messaging](./using-direct-synchronous-messaging-in-previous-versions.md).
 
 | Destination Type | Asynchronous Messaging | Default Synchronous Messaging | Direct Synchronous Messaging |
 | :---| :--- | :---- | :--- |
@@ -314,5 +314,5 @@ Now you know how to monitor messaging at a destination and adjust destination se
 ## Additional Information
 
 * [Using Asynchronous Messaging](./using-asynchronous-messaging.md)
-* [Using Default Synchronous Messaging](./using-default-synchronous-messaging.md)
-* [Using Direct Synchronous Messaging](./using-direct-synchronous-messaging.md)
+* [Using Default Synchronous Messaging in Previous Versions](./using-default-synchronous-messaging-in-previous-versions.md)
+* [Using Direct Synchronous Messaging in Previous Versions](./using-direct-synchronous-messaging-in-previous-versions.md)

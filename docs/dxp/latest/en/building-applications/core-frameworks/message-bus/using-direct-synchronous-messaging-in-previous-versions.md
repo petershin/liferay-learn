@@ -1,4 +1,8 @@
-# Using Direct Synchronous Messaging
+# Using Direct Synchronous Messaging in Previous Versions
+
+```{important}
+Synchronous messaging was removed and is no longer supported for Liferay DXP 7.4 U49/Liferay Portal 7.4 GA49 and above.
+```
 
 Direct synchronous messaging is the easiest way to block processing until all listeners receive a message. You call the `SynchronousMessageSender`'s `send(String, Message)` method and pass in a destination name and message instance. The `SynchronousMessageSender` uses the current thread to process message reception directly in each of the destination's registered message listeners. When listener processing completes, execution continues in the class that called the `send(String, Message)` method. This example demonstrates using direct synchronous messaging.
 
@@ -143,7 +147,7 @@ Congratulations! You know how to use direct synchronous messaging.
 
 ## What's Next
 
-If you want to explore synchronous messaging using *default* mode, see [Using Default Synchronous Messaging](./using-default-synchronous-messaging.md).
+If you want to explore synchronous messaging using *default* mode, see [Using Default Synchronous Messaging in Previous Versions](./using-default-synchronous-messaging-in-previous-versions.md).
 
 If you want to continue processing immediately after sending a message, see [Using Asynchronous Messaging](./using-asynchronous-messaging.md).
 

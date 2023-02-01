@@ -1,4 +1,8 @@
-# Using Default Synchronous Messaging
+# Using Default Synchronous Messaging in Previous Versions
+
+```{important}
+Synchronous messaging was removed and is no longer supported for Liferay DXP 7.4 U49/Liferay Portal 7.4 GA49 and above.
+```
 
 In default synchronous messaging, the sender blocks while a Message Bus thread dispatches the message to registered message listeners. The sender unblocks when either a response message is received or the sender thread times out.
 
@@ -233,7 +237,7 @@ Congratulations on sending messages synchronously with a timeout.
 
 ## What's Next
 
-If you want to explore synchronous messaging using *direct* mode, see [Using Direct Synchronous Messaging](./using-direct-synchronous-messaging.md).
+If you want to explore synchronous messaging using *direct* mode, see [Using Direct Synchronous Messaging in Previous Versions](./using-direct-synchronous-messaging-in-previous-versions.md).
 
 If you want to continue processing immediately after sending a message, see [Using Asynchronous Messaging](./using-asynchronous-messaging.md).
 

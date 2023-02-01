@@ -2,8 +2,8 @@
 toc:
 - ./message-bus/listening-for-messages.md
 - ./message-bus/using-asynchronous-messaging.md
-- ./message-bus/using-default-synchronous-messaging.md
-- ./message-bus/using-direct-synchronous-messaging.md
+- ./message-bus/using-default-synchronous-messaging-in-previous-versions.md
+- ./message-bus/using-direct-synchronous-messaging-in-previous-versions.md
 - ./message-bus/listening-for-registration-events.md
 - ./message-bus/tuning-messaging-performance.md
 ---
@@ -14,8 +14,8 @@ toc:
 
 message-bus/listening-for-messages.md
 message-bus/using-asynchronous-messaging.md
-message-bus/using-default-synchronous-messaging.md
-message-bus/using-direct-synchronous-messaging.md
+message-bus/using-default-synchronous-messaging-in-previous-versions.md
+message-bus/using-direct-synchronous-messaging-in-previous-versions.md
 message-bus/listening-for-registration-events.md
 message-bus/tuning-messaging-performance.md
 ```
@@ -49,6 +49,10 @@ The message sender is only concerned with using Message Bus to send the message 
 
 Message Bus sends messages synchronously and asynchronously.
 
+```{important}
+Synchronous messaging was removed and is no longer supported for Liferay DXP 7.4 U49/Liferay Portal 7.4 GA49 and above.
+```
+
 **Synchronous Messaging:** The sender blocks after sending a message. When the sender's condition (determined by the sender type) is met, the sender unblocks and continues processing.
 
 **Asynchronous Messaging:** The sender immediately continues processing after sending a message.
@@ -57,9 +61,9 @@ The following topics cover both ways of messaging:
 
 * [Using Asynchronous Messaging](./message-bus/using-asynchronous-messaging.md) shows how to configure a destination and send messages asynchronously to it. This is the simplest way to send messages.
 
-* [Using Default Synchronous Messaging](./message-bus/using-default-synchronous-messaging.md) demonstrates a message sender blocking until one listener responds to the message *or*, if no listener responds, until the message times out.
+* [Using Default Synchronous Messaging in Previous Versions](./message-bus/using-default-synchronous-messaging-in-previous-versions.md) demonstrates a message sender blocking until one listener responds to the message *or*, if no listener responds, until the message times out.
 
-* [Using Direct Synchronous Messaging](./message-bus/using-default-synchronous-messaging.md) shows a message sender blocking on sending a message until *all* listeners receive the message.
+* [Using Direct Synchronous Messaging in Previous Versions](./message-bus/using-default-synchronous-messaging-in-previous-versions.md) shows a message sender blocking on sending a message until *all* listeners receive the message.
 
 ## Tuning Performance
 

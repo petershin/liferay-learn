@@ -108,7 +108,7 @@ Follow these steps to edit the object draft:
 
    ![Select a scope and panel category key for the object.](./creating-objects/images/13.png)
 
-1. (Optional) Determine whether to restrict access to object entries by account. This option only appears if the object is on the child side of a one-to-many relationship with the Account system object. You can only configure this setting before publishing your object. See [Restricting Access to Object Data by Account](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) for more information.
+1. Determine whether to restrict access to object entries by account. This option is only available if the object is on the child side of a one-to-many relationship with the Account system object. You can only configure this setting before publishing your object. See [Restricting Access to Object Data by Account](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) for more information.
 
    ![Determine whether to limit restrict access to object entries by account.](./creating-objects/images/14.png)
 
@@ -116,7 +116,11 @@ Follow these steps to edit the object draft:
 
    When enabled, users can deploy the object to a page as a widget. See [Deploying Object Widgets in Sites](../deploying-object-widgets-to-sites.md) for more information.
 
-   ![Determine whether to show or hide the object's widget.](./creating-objects/images/15.png)
+1. Enable/Disable categorization for custom layouts. See [Adding Categorization to Fields Tabs](./layouts/adding-categorization-to-fields-tabs.md) for more information <!--REFINE-->
+
+1. Enable comments for object entries. See [Adding Comments to Fields Tabs](./layouts/adding-comments-to-fields-tabs.md) for more information <!--REFINE-->
+
+1. Enable history for object entries. You can only configure this setting before publishing your object. <!--REFINE-->
 
 1. Click *Save*.
 

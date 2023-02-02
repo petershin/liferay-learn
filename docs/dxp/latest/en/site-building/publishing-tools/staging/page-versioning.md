@@ -36,9 +36,7 @@ Page templates are not recognized by the Staging framework. This means that exis
 
 ## Creating Variations
 
-Follow these steps to create new variations of a page or group of pages:
-
-1. Click the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar, and select *Site Pages Variation* or *Page Variations*.
+1. Click the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the Staging bar and select *Site Pages Variation* or *Page Variations*.
 
    ![Click the Actions button in the Staging bar and select the variation type you want to create.](./page-versioning/images/03.png)
 

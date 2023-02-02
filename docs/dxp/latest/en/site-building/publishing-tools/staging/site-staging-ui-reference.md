@@ -6,7 +6,7 @@ Once staging is enabled, additional options appear in your Staging environment. 
 
 ## Staging Bar and Editing Tools
 
-When Staging is enabled for a site, you can access additional options via the staging bar on each of your site's pages. In this bar, you can toggle between Staging and Live environments, and click on *Publish to Live* for staged pages.
+When Staging is enabled for a site, you can access additional options via the staging bar on each of your site's pages. In this bar, you can toggle between Staging and Live environments and click on *Publish to Live* for staged pages.
 
 ![When Staging is enabled for a site, you can access the staging bar on each of your site's pages.](./site-staging-ui-reference/images/01.png)
 
@@ -94,7 +94,7 @@ By default, content displayed using the following widgets is always included in 
 
 ![Select whether to include permissions for the pages and widgets when your changes are published.](./site-staging-ui-reference/images/10.png)
 
-Instead of manually configuring advanced options every time you publish a page or content, you can save your staging configuration as a [*publish template*](#publish-templates) for future use. To view and select a saved template for your publish process, click on the *Publish Templates* tab.
+Instead of configuring advanced options manually every time you publish a page or content, you can save your staging configuration as a [*publish template*](#publish-templates) for future use. To view and select a saved template for your publish process, click on the *Publish Templates* tab.
 
 ![To view and select a saved template for your publish process, click on the Publish Templates tab.](./site-staging-ui-reference/images/11.png)
 
@@ -122,7 +122,7 @@ In the *Scheduled* tab, you can view all scheduled publishing processes.
 
 ### Publish Templates
 
-If you regularly create similar staging configurations, you can create your own *publish templates* to save time. To create a template, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the *Application* bar of the *Staging* page. Then, select *Publish Templates*.
+If you regularly create similar staging configurations, you can create your own *publish templates* to save time. To create a template, click *Actions* ( ![Actions button](../../../images/icon-actions.png) ) in the *Application* bar of the *Staging* page. Then select *Publish Templates*.
 
 ![Click on the Actions button in the Application bar of the Staging page.](./site-staging-ui-reference/images/14.png)
 
@@ -134,7 +134,7 @@ You can use a template when publishing a page or content using the *Publish to L
 
 ### Staging Configuration
 
-After setting up Staging, you can access the Staging Configuration page by clicking on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) in the *Application* bar of the *Staging* page. Then, select *Staging Configuration*.
+After setting up Staging, you can access the Staging Configuration page by clicking *Actions* ( ![Actions button](../../../images/icon-actions.png) ) in the *Application* bar of the *Staging* page. Then, select *Staging Configuration*.
 
 ![Click on the Actions button in the Application bar of the Staging page to access Staging Configuration.](./site-staging-ui-reference/images/16.png)
 

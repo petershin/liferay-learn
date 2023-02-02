@@ -76,6 +76,12 @@ Follow these steps:
 
    ![Map fragment elements to Object fields to dynamically populate Display Pages for individual entries.](./displaying-object-entries/images/08.png)
 
+1. Add the Page Comments widget so end users can comment on entry display pages.
+
+   ```{note}
+   If comments are disabled for the object definition, the widget is hidden in the display page. The widget only appears when comments are enabled.
+   ```
+
 1. When finished, click *Publish*.
 
 1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for your template and select *Mark as Default*.
@@ -83,6 +89,16 @@ Follow these steps:
    This template is now used to render the Object's entries whenever users visit their friendly URLs.
 
    ![Click the Actions button for the template and select Mark as Default.](./displaying-object-entries/images/09.png)
+
+### Enabling Comments
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+
+1. Begin editing the desired object definition.
+
+1. In the details tab, enable comments and click *Save*.
+
+   ![Enable comments.](./displaying-object-entries/images/10.png)
 
 ## Creating Information Templates for Objects
 
@@ -92,29 +108,29 @@ Follow these steps:
 
 1. Enter a *name* and select the desired *Object*.
 
-   ![Enter a name and select the desired Object.](./displaying-object-entries/images/10.png)
+   ![Enter a name and select the desired Object.](./displaying-object-entries/images/11.png)
 
 1. Click *Save*. This redirects you to the template design page.
 
 1. (Optional) Click the Actions button (![Actions Button](../../images/icon-actions.png)) in the Application Bar, select *Import Script*, and choose an `.ftl` file to import. This replaces the current template with the file's FreeMarker script.
 
-   ![Import script from an .ftl file.](./displaying-object-entries/images/11.png)
+   ![Import script from an .ftl file.](./displaying-object-entries/images/12.png)
 
 1. Use [FreeMarker](https://freemarker.apache.org) to design your template.
 
    In the *Elements* side panel (![Elements](../../images/icon-list-ul.png)), you can access available fields from the selected Object's structure.
 
-   ![Select from available fields in the Object's structure.](./displaying-object-entries/images/12.png)
+   ![Select from available fields in the Object's structure.](./displaying-object-entries/images/13.png)
 
 1. (Optional) Add a description or image to the template in the Properties side panel (![Properties](../../images/icon-cog3.png)).
 
-   ![Add a description or image in the Properties panel.](./displaying-object-entries/images/13.png)
+   ![Add a description or image in the Properties panel.](./displaying-object-entries/images/14.png)
 
 1. Click *Save* when finished.
 
 You can now select from the template when mapping Object entries to fragment fields.
 
-![Select the template when mapping fragment elements.](./displaying-object-entries/images/14.png)
+![Select the template when mapping fragment elements.](./displaying-object-entries/images/15.png)
 
 ## Adding Entries to Navigation Menus
 

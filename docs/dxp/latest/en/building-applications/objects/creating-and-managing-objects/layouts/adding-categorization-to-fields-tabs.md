@@ -46,4 +46,3 @@ Visibility and permissions can affect how the categorization block appears.
 
 * [Creating Objects](../creating-objects.md)
 * [Designing Object Layouts](./designing-object-layouts.md)
-* [Adding Comments to Fields Tabs](./adding-comments-to-fields-tabs.md)

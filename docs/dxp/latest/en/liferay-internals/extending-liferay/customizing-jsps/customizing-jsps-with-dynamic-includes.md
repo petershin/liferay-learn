@@ -12,14 +12,14 @@ and more. The example project demonstrates how to inject content with a dynamic 
 
 Then, follow these steps:
 
-1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q3.zip).
+1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q3.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
    ```
 
    ```bash
-   unzip liferay-n3q3.zip
+   unzip liferay-n3q9.zip
    ```
 
 1. From the module root, build and deploy.
@@ -41,11 +41,11 @@ Then, follow these steps:
 
 1. Verify that the example module works. Open your browser to `https://localhost:8080`.
 
-1. Navigate to a Site page and click the Edit icon (![Edit icon](../../../images/icon-edit.png)). Add the N3Q3 Baker Portlet to the page. The widget can be found under Sample widgets.
+1. Navigate to a Site page and click the Edit icon (![Edit icon](../../../images/icon-edit.png)). Add the N3Q9 Baker Portlet to the page. The widget can be found under Sample widgets.
 
-   ![Add the N3Q3 Baker Portlet to a Site page.](./customizing-jsps-with-dynamic-includes/images/01.png)
+   ![Add the N3Q9 Baker Portlet to a Site page.](./customizing-jsps-with-dynamic-includes/images/01.png)
 
-   Note, the first two lines come from the N3Q3 Baker Portlet but the third line is injected from N3Q3 Able module's dynamic include.
+   Note, the first two lines come from the N3Q9 Baker Portlet but the third line is injected from N3Q9 Able module's dynamic include.
 
 ## Implement the Dynamic Include
 
@@ -74,7 +74,7 @@ Then, follow these steps:
 
 ## Insert the Dynamic Include
 
-Add the `liferay-util:dynamic-include` tag where you want the dynamic include to be injected. In the sample, the tag is added to the bottom of N3Q3 Baker Portlet's `view.jsp`.
+Add the `liferay-util:dynamic-include` tag where you want the dynamic include to be injected. In the sample, the tag is added to the bottom of N3Q9 Baker Portlet's `view.jsp`.
 
 ```{literalinclude} ./customizing-jsps-with-dynamic-includes/resources/liferay-n3q9.zip/n3q9-baker-web/src/main/resources/META-INF/resources/view.jsp
    :language: jsp

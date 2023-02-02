@@ -8,14 +8,14 @@
 
 次に、以下の手順に従います。
 
-1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q3.zip) .
+1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip) .
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q3.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
    ```
 
    ```bash
-   unzip liferay-n3q3.zip
+   unzip liferay-n3q9.zip
    ```
 
 1. モジュールのルートから、ビルドおよびデプロイします。
@@ -37,11 +37,11 @@
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
-1. サイトページに移動し、編集アイコン(![Edit icon](../../../images/icon-edit.png))をクリックします。 N3Q3 Bakerポートレットをページに追加します。 ウィジェットは、サンプルウィジェットの下にあります。
+1. サイトページに移動し、編集アイコン(![Edit icon](../../../images/icon-edit.png))をクリックします。 N3Q9 Bakerポートレットをページに追加します。 ウィジェットは、サンプルウィジェットの下にあります。
 
-   ![N3Q3 Bakerポートレットをサイトページに追加します。](./customizing-jsps-with-dynamic-includes/images/01.png)
+   ![N3Q9 Bakerポートレットをサイトページに追加します。](./customizing-jsps-with-dynamic-includes/images/01.png)
 
-   最初の2行はN3Q3 Bakerポートレットからですが、3行目はN3Q3 Ableモジュールのdynamic includeから挿入されることに注意してください。
+   最初の2行はN3Q9 Bakerポートレットからですが、3行目はN3Q9 Ableモジュールのdynamic includeから挿入されることに注意してください。
 
 ## Dynamic Includeを実装する
 
@@ -70,7 +70,7 @@
 
 ## Dynamic Includeを挿入する
 
-`liferay-util:dynamic-include`タグをdynamic includeを挿入したい場所に追加します。 サンプルでは、N3Q3 Bakerポートレットの`view.jsp`のボトムにタグを追加しています。
+`liferay-util:dynamic-include`タグをdynamic includeを挿入したい場所に追加します。 サンプルでは、N3Q9 Bakerポートレットの`view.jsp`のボトムにタグを追加しています。
 
 ```{literalinclude} ./customizing-jsps-with-dynamic-includes/resources/liferay-n3q9.zip/n3q9-baker-web/src/main/resources/META-INF/resources/view.jsp
    :language: jsp

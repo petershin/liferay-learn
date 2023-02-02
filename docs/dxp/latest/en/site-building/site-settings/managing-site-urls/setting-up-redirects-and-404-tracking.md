@@ -16,7 +16,7 @@ setting-up-redirects-and-404-tracking/tracking-404-urls.md
 
 {bdg-secondary}`7.4+`
 
-Maintaining URL integrity is important for any Site. Liferay's *Redirection* tool provides a convenient and integrated way to manage HTTP redirects and track 404 errors for individual sites. Use it to avoid and fix broken links, improving both user experience and site SEO.
+Maintaining URL integrity is important for any site. Liferay's *Redirection* tool provides a convenient and integrated way to manage HTTP redirects and track 404 errors for individual sites. Use it to avoid and fix broken links, improving both user experience and site SEO.
 
 To access the application, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Configuration* &rarr; *Redirection*.
 

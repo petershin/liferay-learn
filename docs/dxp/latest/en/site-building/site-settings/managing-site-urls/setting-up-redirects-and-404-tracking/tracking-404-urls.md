@@ -18,31 +18,29 @@ By default, this page displays all active URLs by number in descending order.
 
 ## Ignore/Unignore 404 URLs
 
-You can determine whether a URL is active or ignored by clicking its *Actions* button (![Actions button](../../../../images/icon-actions.png)) and selecting *Ignore*/*Unignore*. When ignored, the URL is hidden in the default *Active* view, though you can change its status at any time.
+Define a URL as active or ignored by clicking its *Actions* button (![Actions button](../../../../images/icon-actions.png)) and selecting *Ignore*/*Unignore*. When ignored, the URL is hidden in the default Active view, though you can change its status at any time.
 
 ![You can determine whether a URL is active or ignored.](./tracking-404-urls/images/03.png)
 
 ## Creating Redirects for 404 URLs
 
-You can quickly create an alias redirect for a 404 URL by clicking its *Actions* button (![Actions button](../../../../images/icon-actions.png)) and selecting *Create Redirect*. This directs you to the *New Redirect* screen where the source URL is prefilled with the selected 404. Finish filling out the form, and click *Create* to save the new redirect.
+Create an alias redirect for a 404 URL by clicking its *Actions* button (![Actions button](../../../../images/icon-actions.png)) and selecting *Create Redirect*. This shows a form with the source URL pre-filled with the selected 404. Finish filling out the form and click *Create* to save the new redirect.
 
 ![Create redirects for 404 URLs.](./tracking-404-urls/images/04.png)
 
 ## Configuring 404 Settings
 
-You can determine how long 404 URLs are retained between requests, the maximum number of 404 URLs stored in your database, and the interval between 404 URL checks.
+You can configure how long 404 URLs are retained between requests, the maximum number of 404 URLs stored in your database, and the interval between 404 URL checks.
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Pages* &rarr; *Redirection* under Virtual Instance Scope.
 
-By default, the *404 URL Maximum Age* is set to 30 days, the *Maximum Number of 404 URLs* is set to 1000 entries, and the system checks for 404 URLs every 24 hours.
+By default, the 404 URL Maximum Age is set to 30 days, the Maximum Number of 404 URLs is set to 1000 entries, and the system checks for 404 URLs every 24 hours.
 
 ![Determine how long and how many 404 URLs are retained](./tracking-404-urls/images/05.png)
 
 ## Enabling 404 Tracking
 
 {bdg-secondary}`Available 7.4+`
-
-Follow these steps to enable background 404 tracking and activate the 404 URLs tab:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Pages* &rarr; *Redirection*.
 

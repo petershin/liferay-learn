@@ -48,17 +48,17 @@ Follow these steps to edit the object draft:
 
    ![Object features and configuration options are organized into eight tabs.](./creating-objects/images/03.png)
 
-1. Go to the *Fields* tab to add custom fields. Each field represents a database column for storing specific types of values. See [Adding Fields to Objects](./fields/adding-fields-to-objects.md) for more information.
+1. Go to the *Fields* tab to add custom fields. Each field represents a database column for storing specific types of values. See [Adding Fields to Objects](./fields/adding-fields-to-objects.md).
 
    By default, all objects include these system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status.
 
    ![Add fields to the object from the Fields tab.](./creating-objects/images/04.png)
 
-1. (Optional) Go to the *Relationships* tab to add relationships. Relationships are connections between object definitions that you can use to link their entries. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information.
+1. (Optional) Go to the *Relationships* tab to add relationships. Relationships are connections between object definitions that you can use to link their entries. See [Defining Object Relationships](./relationships/defining-object-relationships.md).
 
    ![Add relationships to the object from the Relationships tab.](./creating-objects/images/05.png)
 
-1. (Optional) Go to the *Layouts* tab to add layouts. Object layouts determine how fields and relationships are displayed when creating and viewing object entries. See [Designing Object Layouts](./layouts/designing-object-layouts.md) for more information.
+1. (Optional) Go to the *Layouts* tab to add layouts. Object layouts determine how fields and relationships are displayed when creating and viewing object entries. See [Designing Object Layouts](./layouts/designing-object-layouts.md).
 
    ```{note}
    If you do not add a custom layout and set it as default, the object uses an automatically generated layout for its entries. This layout has a single tab that displays all object fields in alphabetical order and does not display relationships. To display relationships, you must create a custom layout with a dedicated relationships tab.
@@ -66,19 +66,19 @@ Follow these steps to edit the object draft:
 
    ![Add custom layouts to the object from the Layouts tab.](./creating-objects/images/06.png)
 
-1. (Optional) Go to the Actions tab to add custom actions. Each action defines an operation that runs automatically according to a set trigger. See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
+1. (Optional) Go to the Actions tab to add custom actions. Each action defines an operation that runs automatically according to a set trigger. See [Defining Object Actions](./actions/defining-object-actions.md).
 
    ![Add custom actions to the object from the Actions tab.](./creating-objects/images/07.png)
 
-1. (Optional) Go to the Views tab to add custom views. Object views determine how entries are displayed in the object's application page. See [Designing Object Views](./views/designing-object-views.md) for more information.
+1. (Optional) Go to the Views tab to add custom views. Object views determine how entries are displayed in the object's application page. See [Designing Object Views](./views/designing-object-views.md).
 
    ![Add custom views to the object from the Views tab.](./creating-objects/images/08.png)
 
-1. (Optional) Go to the Validations tab to add validations. Each validation sets rules for determining valid field entries. See [Adding Custom Validations](./validations/adding-custom-validations.md)
+1. (Optional) Go to the Validations tab to add validations. Each validation sets rules for determining valid field entries. See [Adding Custom Validations](./validations/adding-custom-validations.md).
 
    ![Add custom validations to the object from the Validations tab.](./creating-objects/images/09.png)
 
-1. (Optional) If you've added a state field to the draft, go to the State Manager tab to define its flow. See [Adding and Managing Custom States](./fields/adding-and-managing-custom-states.md) for more information.
+1. (Optional) If you've added a state field to the draft, go to the State Manager tab to define its flow. See [Adding and Managing Custom States](./fields/adding-and-managing-custom-states.md).
 
    ![Define flows for state fields in the State Manager tab.](./creating-objects/images/10.png)
 
@@ -88,7 +88,7 @@ Follow these steps to edit the object draft:
 
    ![Change the name, label and plural label for the object.](./creating-objects/images/11.png)
 
-1. (Optional) Select an Entry Title. This determines the field used to identify object entries in the UI. By default, objects use the ID field.
+1. Select an Entry Title. This determines the field used to identify the object's entries in the UI (e.g., relationship fields). By default, objects use the ID field.
 
    ![Once a field is added to an object, you can select it as the Entry Title.](./creating-objects/images/12.png)
 
@@ -108,19 +108,27 @@ Follow these steps to edit the object draft:
 
    ![Select a scope and panel category key for the object.](./creating-objects/images/13.png)
 
-1. Determine whether to restrict access to object entries by account. This option is only available if the object is on the child side of a one-to-many relationship with the Account system object. You can only configure this setting before publishing your object. See [Restricting Access to Object Data by Account](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) for more information.
+1. Configure account restriction to restrict access to object entries by account. You can only configure this setting before publishing.
+
+   This option is only available if the object is on the child side of a one-to-many relationship with the Account system object. See [Restricting Access to Object Data by Account](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md).
 
    ![Determine whether to limit restrict access to object entries by account.](./creating-objects/images/14.png)
 
-1. Determine whether to show or hide the object's widget in sites.
+1. Show or hide the object's page widget in sites.
 
-   When enabled, users can deploy the object to a page as a widget. See [Deploying Object Widgets in Sites](../deploying-object-widgets-to-sites.md) for more information.
+   While enabled, you can deploy the object's widget to pages. See [Deploying Object Widgets in Sites](../deploying-object-widgets-to-sites.md).
 
-1. Enable/Disable categorization for custom layouts. See [Adding Categorization to Fields Tabs](./layouts/adding-categorization-to-fields-tabs.md) for more information <!--REFINE-->
+1. Enable or disable categorization for custom layouts.
 
-1. Enable comments for object entries. See [Adding Comments to Fields Tabs](./layouts/adding-comments-to-fields-tabs.md) for more information <!--REFINE-->
+   While enabled, you can add categorization blocks to fields tabs in custom layouts. See [Adding Categorization to Fields Tabs](./layouts/adding-categorization-to-fields-tabs.md).
 
-1. Enable history for object entries. You can only configure this setting before publishing your object. <!--REFINE-->
+1. Enable or disable comments for object display pages.
+
+   While enabled, you can use the Page Comments widget in entry display pages. See [Creating Display Page Templates for Objects](../displaying-object-entries.md#creating-display-page-templates-for-objects).
+
+1. Enable or disable history for object entries. You can only configure this setting before publishing.
+
+   While enabled, object entry events appear in the Audit application. See [Auditing Object Events](./auditing-object-events.md).
 
 1. Click *Save*.
 

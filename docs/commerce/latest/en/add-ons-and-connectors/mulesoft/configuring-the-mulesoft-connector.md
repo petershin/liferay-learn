@@ -1,6 +1,6 @@
-# Configuring the Mulesoft Connector
+# Configuring the MuleSoft Connector
 
-Liferay's connector to Mulesoft uses OpenAPI 3.0 documents that describe Liferay's APIs. Each OpenAPI document is deployed dynamically in your Liferay instance under the following schema:
+Liferay's connector to MuleSoft uses OpenAPI 3.0 documents that describe Liferay's APIs. Each OpenAPI document is deployed dynamically in your Liferay instance under the following schema:
 
 ```bash
 http://[host]:[port]/o/[headless-api-app-name]/[version]/openapi.json
@@ -14,7 +14,7 @@ Once you specify an OpenAPI document endpoint, the connector automatically confi
 
 To add the connector to your Mule project, click on *Search in Exchange* in the Mule Palette and search for *Liferay*. Click on the connector and click *Add*. Then, click *Finish*. The connector is now available in your Mule Palette.
 
-![Set the Client Profile as Headless Server in the OAuth2 configuration.](./configuring-the-mulesoft-connector/images/01_01.gif)
+![Set the Client Profile as Headless Server in the OAuth2 configuration.](./configuring-the-mulesoft-connector/images/01.gif)
 
 To configure the connector,
 

@@ -13,7 +13,7 @@ If you're working with large data sets, you probably don't want to handle record
 
 ## Create Records Operation
 
-This operation exposes all endpoints handled by the HTTP POST method for the chosen OpenAPI 3.0 document. The SwaggerHub UI shows all available path parameters, request body structures, and possible responses.
+This operation exposes all endpoints handled by the HTTP POST method for the chosen OpenAPI 3.0 document. The API Explorer shows all available path parameters and request body structures.
 
 ![The products endpoint creates a new product using HTTP POST.](./designing-mule-flows/images/01.png)
 
@@ -28,7 +28,7 @@ Next, you must specify the input parameters. Input parameters support all Lifera
 | Path Params    | Object | Map with path parameter values                                      | Yes (if required by endpoint) |
 | Query Params   | Object | Map with query parameter values                                     | No                            |
 
-Use [Liferay's SwaggerHub](https://app.swaggerhub.com/organizations/liferayinc) as a reference for the different operations supported by the Liferay MuleSoft connector. You can also use the OpenAPI document from the endpoint you defined in the connector configuration, but you lose the intuitive UI offered by SwaggerHub.
+Use Liferay's API Explorer at `http://[host]:[port]/o/api` as a reference for the different operations supported by the Liferay MuleSoft connector. You can also use the OpenAPI document from the endpoint you defined in the connector configuration, but you lose the intuitive UI offered by the API Explorer.
 
 ![Use the products endpoint in flows that import products from Salesforce to Liferay.](./designing-mule-flows/images/02.png)
 
@@ -78,4 +78,4 @@ To view all available operations and related input parameters, check out [Lifera
 
 ## Additional Information
 
-* [Configuring the Mulesoft Connector](./configuring-the-mulesoft-connector.md)\
+* [Configuring the MuleSoft Connector](./configuring-the-mulesoft-connector.md)\

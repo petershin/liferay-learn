@@ -12,17 +12,17 @@ The page displays product SKUs and their availability.
 | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SKU       | Primary identifier for the inventory system.                                                                                                                                                              |
 | On Hand   | Total number of available units for an SKU from all warehouses.                                                                                                                                           |
-| Available | Number of purchaseable units for an SKU. Liferay uses the following calculation: [Quantity Available] = [Quantity on Hand] - [Quantity on Order] - [Safety Stock Quantity].                               |
+| Available | Number of purchaseable units for an SKU. Liferay's calculation: [Quantity Available] = [Quantity on Hand] - [Quantity on Order] - [Safety Stock Quantity].                               |
 | On Order  | Number of units allocated to open orders for an SKU. These quantities are consumed when an order is shipped.                                                                                              |
 | Incoming  | Number of units scheduled as replenishment for an SKU, but not yet received. Values are informative only and not based on any calculations. Administrators can use it to keep track of future quantities. |
 
 ## SKU Details
 
-When viewing an individual SKU, there are four tabs: *Overview*, *On Order*, *Incoming*, and *Changelog*.
+When viewing an individual SKU, there are four tabs: Overview, On Order, Incoming, and Changelog.
 
 ### Overview
 
-The *Overview* tab displays a summary of the SKU's inventory across all warehouses.
+The Overview tab displays a summary of the SKU's inventory across all warehouses.
 
 ![The Overview tab displays a summary of the inventory across all warehouses.](./inventory-management-reference-guide/images/03.png)
 
@@ -34,23 +34,23 @@ The *Overview* tab displays a summary of the SKU's inventory across all warehous
 | Available    | Number of units that are purchaseable.                     |
 | Incoming     | Number of incoming units scheduled for a warehouse.        |
 
-Click the *Add* button (![Add Button](../images/icon-add.png)) to update inventory or transfer inventory between warehouses.
+Click *Add* (![Add Button](../images/icon-add.png)) to update inventory or transfer inventory between warehouses.
 
 ![Add inventory or transfer inventory between warehouses.](./inventory-management-reference-guide/images/04.png)
 
 ### On Order
 
-The *On Order* tab displays a list of accounts that have placed an order for this SKU. The tab also displays the Order ID, the quantities ordered, and the expiration date.
+The On Order tab displays a list of accounts that have placed an order for this SKU. The tab also displays the Order ID, the quantities ordered, and the expiration date.
 
 ![The On Order tab lists the accounts that have placed an order for the selected SKU.](./inventory-management-reference-guide/images/05.png)
 
 ### Incoming
 
-The *Incoming* tab lists warehouses with scheduled inventory replenishment for the SKU.
+The Incoming tab lists warehouses with scheduled inventory replenishment for the SKU.
 
 ![The Incoming tab lists warehouses with scheduled inventory replenishment for the SKU.](./inventory-management-reference-guide/images/06.png)
 
-Click the *Add* button (![Add Button](../images/icon-add.png)) to create an incoming entry for the selected SKU.
+Click *Add* (![Add Button](../images/icon-add.png)) to create an incoming entry for the selected SKU.
 
 ![Add a quantity for a particular warehouse.](./inventory-management-reference-guide/images/07.png)
 
@@ -66,7 +66,7 @@ See [Viewing Inventory Changes](./using-the-inventory-management-system.md#viewi
 
 ## Commerce 2.1 and Below
 
-The inventory settings are located in the *Control Panel*. To access it, navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Inventory*.
+The inventory settings are located in the Control Panel. To access it, navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Inventory*.
 
 ## Additional Information
 

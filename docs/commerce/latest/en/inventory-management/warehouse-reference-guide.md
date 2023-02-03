@@ -24,7 +24,7 @@ You can set the warehouse to serve all the available channels or select specific
 
 ### Liferay DXP 7.4 U46/GA46 and Below
 
-Under the *Channels* section, you can view the available channels that the warehouse can serve. Use the checkbox to select the desired channels.
+Under *Channels*, you can view the available channels that the warehouse can serve. Use the checkbox to select the desired channels.
 
 ![Check the channels that the warehouse must serve.](./warehouse-reference-guide/images/03.png)
 
@@ -42,13 +42,13 @@ Under the *Channels* section, you can view the available channels that the wareh
 | Street 2    | Second line of address                        |
 | Street 3    | Third line of address                         |
 | Country     | Dropdown menu to select a country             |
-| Region      | Dropdown menu to select the state or province |
+| Region      | Drop-down menu to select the state or province |
 | Postal Code | Field for postal code                         |
 | City        | Field for city                                |
 
 ## Geolocation
 
-![Set the warehouses's geolocation.](./warehouse-reference-guide/images/05.png)
+![Set the warehouses' geolocation.](./warehouse-reference-guide/images/05.png)
 
 | Field     | Description                           |
 | :-------- | :------------------------------------ |

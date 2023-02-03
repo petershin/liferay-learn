@@ -1,14 +1,14 @@
 # Low Stock Action
 
-Low stock actions trigger when SKU inventory falls below a specific threshold. By default, Liferay includes the *Set as Unpublished* low stock action, which removes the product from the store when its inventory falls below the threshold. You can also create custom low stock actions. See [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) for more information.
+Low stock actions trigger when SKU inventory falls below a specific threshold. By default, Liferay includes the Set as Unpublished low stock action, which removes the product from the store when its inventory falls below the threshold. You can also create custom low stock actions. See [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) for more information.
 
 To set up a low stock action for a product,
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), and navigate to *Commerce* &rarr; *Products*.
 
-1. Click the desired *product* and navigate to the *Configuration* tab.
+1. Select a product and navigate to the *Configuration* tab.
 
-1. Under the inventory section, select a *Low Stock Action* from the dropdown menu.
+1. Under the inventory section, select a *Low Stock Action* from the drop-down menu.
 
 1. Enter a *Low Stock Threshold* to determine the quantity that triggers the action.
 
@@ -20,7 +20,7 @@ Once configured, the low stock action runs whenever the product inventory falls 
 
 ## Commerce 2.1 and Below
 
-To configure a low stock action:
+To configure a low stock action,
 
 1. Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Products*.
 

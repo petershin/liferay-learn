@@ -18,21 +18,21 @@ To access the inventory configuration options for a product,
 | :----------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Inventory Engine         | Select an inventory engine; can be customized using an extension point.                                                                                            |
 | Availability Estimate    | Select the duration to replenish the product inventory when stock runs out.                                                                                        |
-| Display Availability     | Activate to display that a product is available to buy.                                                                                                            |
-| Display Stock Quantity   | Activate to display the number of units available to buy.                                                                                                          |
+| Display Availability     | Activate to show that a product is available to buy.                                                                                                               |
+| Display Stock Quantity   | Activate to show the number of units available to buy.                                                                                                             |
 | Low Stock Threshold      | Set the minimum available stock for continuing to fulfill product orders. This is also the threshold for triggering the low stock action.                          |
 | Low Stock Action         | Select an action to perform when the stock reaches the low stock threshold.                                                                                        |
-| Allow Back Orders        | Activate to allow customers to purchase products that are unavailable due to low stock.                                                                            |
+| Allow Back Orders        | Activate to allow the purchase of products unavailable due to low stock.                                                                                           |
 | Minimum Order Quantity   | Set the minimum number of items an order must include to be purchaseable.                                                                                          |
 | Maximum Order Quantity   | Set the maximum number of items an order can contain to be purchaseable.                                                                                           |
 | Allowed Order Quantities | Set the specific product quantity that the order should contain to be purchaseable. For example, entering 2 allows buyers to purchase only 2 units of the product. |
-| Multiple Order Quantity  | Enter a number to only permit order quantities that are multiples of it.                                                                                           |
+| Multiple Order Quantity  | Enter a number that limits orders to particular quantities of this product.                                                                                        |
 
 ## Commerce 2.0 and Below
 
 To access the inventory configuration options for a product, navigate to a its *Configuration* tab and click on *Inventory* from the left menu.
 
-![The available configuration options for the selected product.](./product-inventory-configuration-reference-guide/images/03.png)
+![The Configuration tab shows available inventory options for the selected product.](./product-inventory-configuration-reference-guide/images/03.png)
 
 ## Additional Information
 

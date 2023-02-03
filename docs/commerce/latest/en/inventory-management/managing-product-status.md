@@ -1,6 +1,6 @@
 # Managing Product Status
 
-When editing products, you can schedule them to expire or manually unpublish them to remove them from your store catalog.
+When editing products, you can schedule them to expire or unpublish them manually to remove them from your store catalog.
 
 ## Setting Product Expiration Dates
 
@@ -16,7 +16,7 @@ Follow these steps:
 
 1. Click a product.
 
-1. Under *Schedule*, uncheck *Never Expire*. This configuration affects all of the product's SKUs.
+1. Under Schedule, uncheck *Never Expire*. This configuration affects all of the product's SKUs.
 
 1. Enter an expiration date and time.
 
@@ -38,7 +38,7 @@ You can change the product visibility by entering a new expiration date and repu
 
 ## Setting a Product as Draft
 
-If desired, you can manually unpublish a product to set its status to *draft*. While a draft, the product's SKUs no longer appear in the store's catalog and cannot be purchased. This is useful when you want to edit a product without making your changes immediately available to end users. You can also unpublish products based on inventory levels using a low stock action. See [Low Stock Action](./low-stock-action.md) for more information .
+If desired, you can unpublish a product manually to set its status to *draft*. While a draft, the product's SKUs no longer appear in the store's catalog and cannot be purchased. This is useful when you want to edit a product without making your changes immediately available to end users. You can also unpublish products based on inventory levels using a low stock action. See [Low Stock Action](./low-stock-action.md) for more information .
 
 Follow these steps to manually unpublish a product:
 
@@ -64,7 +64,7 @@ If you have an approval workflow in place to publish products, you must go throu
 
 ### Setting a Product as Expired
 
-To expire a product:
+To expire a product,
 
 1. Navigate to *Control Panel* &rarr; *Commerce* &rarr; *Products*.
 
@@ -74,11 +74,11 @@ To expire a product:
 
 1. Enter a future expiration date and time. All times are set using the GMT time zone.
 
-    ![Setting a Product's Expiration Date](./managing-product-status/images/01.png)
+    ![Set the Product's Expiration Date.](./managing-product-status/images/01.png)
 
 1. Click *Publish*.
 
-After making the changes, it may take some time to remove the product from the catalog. This is due to the default check interval being 15 minutes. You change this by opening the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigating to *Control Panel* &rarr; *System Settings*. Once there, go to *Catalog* &rarr; *Products*. Change the *Check Interval* value and click *Save*.
+After making the changes, it may take some time to remove the product from the catalog, because the default check interval is 15 minutes. You change this by opening the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigating to *Control Panel* &rarr; *System Settings*. Once there, go to *Catalog* &rarr; *Products*. Change the *Check Interval* value and click *Save*.
 
 ![The product has a status of Expired after passing the expiration date.](./managing-product-status/images/06.png)
 
@@ -88,7 +88,7 @@ You can change the product visibility by entering a new expiration date and repu
 
 1. Navigate to *Control Panel* &rarr; *Commerce* &rarr; *Products*.
 
-1. Click on a product.
+1. Click a product.
 
 1. Click on *Save as Draft*.
 

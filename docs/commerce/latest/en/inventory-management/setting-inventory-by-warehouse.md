@@ -1,6 +1,6 @@
 # Setting Inventory by Warehouse
 
-Stores with multiple warehouses can manage product inventory on a per warehouse basis. The *Inventory* menu is where you can manage the number of products available to buy in each warehouse.
+Stores with multiple warehouses can manage product inventory on a per warehouse basis. The Inventory menu is where you can manage the number of products available to buy in each warehouse.
 
 To set inventory by warehouse,
 
@@ -24,7 +24,7 @@ Each warehouse now has the correct quantity available for sale.
 
 ## Transferring Stock Between Warehouses
 
-If your store has multiple warehouses, you can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected on the *Inventory* page.
+If your store has multiple warehouses, you can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected on the Inventory page.
 
 To transfer stock between warehouses,
 
@@ -32,11 +32,11 @@ To transfer stock between warehouses,
 
 1. Click an SKU.
 
-1. Click the *Add* button (![Add Button](../images/icon-add.png)), then select *Create a Transfer*.
+1. Click *Add* (![Add Button](../images/icon-add.png)), then select *Create a Transfer*.
 
    ![You can transfer stock from one warehouse to another.](./setting-inventory-by-warehouse/images/02.png)
 
-1. Enter a quanity, source, and destination.
+1. Enter a quantity, source, and destination.
 
    This example transfers 40 units of the selected SKU from the United States - Southwest warehouse to the United States - Northwest warehouse:
 
@@ -52,7 +52,7 @@ Inventory for each warehouse is now updated.
 
 ## Commerce 2.1 and Below
 
-To set inventory by warehouse:
+To set inventory by warehouse,
 
 1. Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Products*.
 
@@ -76,7 +76,7 @@ Each warehouse now has the correct quantity available for sale.
 
 If a store has more than one [warehouse](./setting-up-warehouses.md), users can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected on the *Inventory* page.
 
-To transfer stock between warehouses:
+To transfer stock between warehouses,
 
 1. Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Inventory*.
 

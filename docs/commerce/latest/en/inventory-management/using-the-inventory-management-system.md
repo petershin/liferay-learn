@@ -12,7 +12,7 @@ Before adding inventory for a product SKU, you must create at least one warehous
 To access the inventory page, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
 ```{note}
-If you're using Commerce 2.0 or 2.1, the *Inventory Management* option is located in the *Control Panel*.
+If you're using Commerce 2.0 or 2.1, the Inventory Management option is located in the Control Panel.
 ```
 
 ## Adding Inventory for SKUs
@@ -23,7 +23,7 @@ Follow these steps:
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
-1. Click the *Add* button (![Add Button](../images/icon-add.png)) and enter an SKU, warehouse, and quanity. For example,
+1. Click *Add* (![Add Button](../images/icon-add.png)) and enter an SKU, warehouse, and quantity. For example,
 
    * **SKU**: CHINAWARE-GRAY
    * **Warehouse**: United States - Southwest
@@ -49,7 +49,7 @@ To set a safety stock quantity,
 
 1. Click an *SKU*.
 
-1. Click the *Actions* button (![Actions Button](../images/icon-actions.png)) next to the warehouse and select *Edit*.
+1. Click *Actions* (![Actions Button](../images/icon-actions.png)) next to the warehouse and select *Edit*.
 
 1. Enter a value in the *Safety Stock Quantity* field.
 
@@ -57,7 +57,7 @@ To set a safety stock quantity,
 
 1. Click *Save* when finished.
 
-The number of available units is reduced by the safety stock quantity. You can verify this in the *Available* column.
+The number of available units is reduced by the safety stock quantity. You can verify this in the Available column.
 
 ![Setting a safety stock quantity reduces available stock in a warehouse.](./using-the-inventory-management-system/images/03.png)
 
@@ -83,7 +83,7 @@ Incoming stock is SKU inventory scheduled to arrive at a warehouse on a future d
 
 1. Click the *Incoming* tab.
 
-1. Click the *Add* button (![Add Button](../images/icon-add.png)) and enter a quantity, destination warehouse, and expected delivery date. For example,
+1. Click *Add* (![Add Button](../images/icon-add.png)) and enter a quantity, destination warehouse, and expected delivery date. For example,
 
     * **Quantity**: 20
     * **Destination**: United States - Northeast
@@ -93,13 +93,13 @@ Incoming stock is SKU inventory scheduled to arrive at a warehouse on a future d
 
 1. Click *Submit*.
 
-After adding the incoming stock, it appears under the *Incoming* column in the *Overview* page.
+After adding the incoming stock, it appears under the Incoming column on the Overview page.
 
 ![The incoming stock quantity appears on the SKU's Overview page.](./using-the-inventory-management-system/images/06.png)
 
 ## Viewing Inventory Changes
 
-You can view changes in inventory for an SKU in the *Changelog* page.
+You can view changes in inventory for an SKU in the Changelog page.
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
@@ -109,12 +109,12 @@ You can view changes in inventory for an SKU in the *Changelog* page.
 
 You can view this information in the changelog:
 
-* The units of an SKU booked to fulfil an order after placing it.
+* The units of an SKU booked to fulfill an order after placing it.
 * The units of an SKU removed from inventory after creating a shipment and committing the amount booked previously.
 * The units of an SKU added to the inventory of a warehouse.
 * The units of an SKU moved between warehouses.
 * The units of an SKU returned after cancelling a shipment.
-* Any updates to an SKU in the inventory.
+* Updates to an SKU in the inventory.
 
 ![View different events associated to the inventory of the selected SKU.](./using-the-inventory-management-system/images/07.png)
 

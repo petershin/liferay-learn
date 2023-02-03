@@ -58,7 +58,7 @@ Follow these steps to manually create a Product SKU for individual Option values
 
 ## Adding SKU Inventory
 
-If Allow Back Orders is enabled for the Product, all published SKUs with a set base price are immediately available to Customers for purchase in the Product Details widget. However, if Allow Back Orders is disabled, you must first add inventory to the SKUs to make them available for purchase. See [Inventory Management](../../../inventory-management.md) for more information.
+If Allow Back Orders is enabled for the product, all published SKUs with a set base price are available to Customers immediately for purchase in the Product Details widget. However, if Allow Back Orders is disabled, you must first add inventory to the SKUs to make them available for purchase. See [Inventory Management](../../../inventory-management.md) for more information.
 
 ![Add inventory for each Product SKU.](./creating-skus-for-product-variants/images/06.png)
 

@@ -26,7 +26,7 @@ The GraphQL request:
 ```graphql
 query {
 	countries {
-	   actions
+	  actions
 		items {
 		   a2
 		   name
@@ -112,6 +112,108 @@ The JSON response:
   "totalCount" : 247
 }%             
 ```
+
+## Filter Parameter
+
+Use this parameter to filter your API responses. Note, not all API endpoints support the `filter` parameter. The endpoints that support it have `filter` listed as an optional parameter in the [API Explorer](./consuming-rest-services.md). For example, you can filter blog postings by title (e.g. `headline eq 'Able'`).
+
+### REST API Example
+
+The cURL request:
+
+```bash
+curl \
+	"http://localhost:8080/o/headless-delivery/v1.0/sites/20121/blog-postings?fields=articleBody,headline&filter=headline%20eq%20%27Able%27" \
+	-u "test@liferay.com:learn"
+```
+
+### GraphQL API Example
+
+The GraphQL request:
+
+```graphql
+query {
+  blogPostings(filter:"headline eq 'Able'",siteKey:"20121")
+	{page
+     items {
+  		articleBody
+  		headline
+  }
+  }
+}
+```
+
+The JSON response:
+
+```json
+"data": {
+  "blogPostings": {
+    "page": 1,
+    "items": [
+      {
+        "articleBody": "<p>Able able able</p>",
+        "headline": "Able"
+      }
+    ]
+  }
+}
+```
+
+```{note}
+As noted above, not all fields support the filtering parameter. Filtering can be applied to fields that are indexed as keywords and not text. To find content by terms contained in fields indexed as text, use the [search](#search-parameter) parameter instead.
+```
+
+Different operators can be used in the filtering parameter. 
+
+**Comparison Operators**
+
+| Operator | Description | Example |
+| :--- | :--- | :--- |
+| `eq` | Equal | `addressLocality eq 'Redmond'` |
+|  | Equal null | `addressLocality eq null` |
+| `ne` | Not equal | `addressLocality ne 'London'` |
+|  | Equal null | `addressLocality ne null` |
+| `gt` | Greater than | `price gt 20` |
+| `ge` | Great than or equal | `price ge 10` |
+| `lt` | Less than | `dateCreated lt 2018-02-13T12:33:12Z` |
+| `le` | Less than or equal | `dateCreated le 2012-05-29T09:13:28Z` |
+
+**Logical Operators**
+
+| Operator | Description | Example |
+| :--- | :--- | :--- |
+| `and`| Logical and | `price le 200 and price gt 3.5` |
+| `or` | Logical or | `price le 3.5 or price gt 200` |
+| `not` | Logical not | `not (price le 3.5)` |
+
+Note, the `not` operator needs a space character after it.
+
+**Grouping Operator**
+
+| Operator | Description | Example |
+| :--- | :--- | :--- |
+| `( )` | Precedence grouping | `(price eq 5) or (addressLocality eq 'London')` |
+
+**String Functions**
+
+| Function | Description | Example |
+| :--- | :--- | :--- |
+| `contains` | Contains | `contains(title,'edmon')` |
+| `startswith` | Starts with | `startswith(addressLocality, 'Lond')` |
+
+**Lambda Operators**
+
+Lambda operators evaluate a boolean expression on a collection (e.g, keywords). They must be prepended with a navigation path that identifies a collection.
+
+| Lambda Operator | Description | Example |
+| :--- | :--- | :--- |
+| `any` | Any | `keywords/any(k:contains(k,'news'))` |
+
+The `any` operator applies a boolean expression to each collection element and evaluates to `true` if the expression is true for any element.
+
+**Operator Combindations and OData Syntax**
+
+Syntax examples and other operator combinations are covered in the [OData standard reference](https://docs.oasis-open.org/odata/odata/v4.01/csprd06/part1-protocol/odata-v4.01-csprd06-part1-protocol.html#sec_BuiltinFilterOperations).
 
 ## Flatten Parameter
 
@@ -426,3 +528,9 @@ The JSON response:
   "totalCount" : 247
 }%      
 ```
+
+Note, not all API endpoints support the `sort` parameter. The endpoints that support it have `sort` listed as an optional parameter in the [API Explorer](./consuming-rest-services.md).
+
+To sort by more than one parameter, separate the parameter names by commas and put them in order of priority. For example, to sort first by title and then by creation date, append `sort=title,dataCreated` to the request.
+
+To specifiy a descending order for only one parameter, you must explicitly specify ascending sort order (`:asc`) for the other parameters. For example, `sort=headline:desc,dateCreated:asc`.

@@ -31,7 +31,7 @@ To set up account restriction,
 
 1. Click *Save*.
 
-This makes the account relationship field mandatory, so users must select an account when creating entries. Available account options are determined by each user's [permissions](#account-restriction-and-user-roles). After entry creation, the selected account becomes the entry's owner and cannot be changed.
+This makes the account relationship field mandatory, so users must select an account when creating entries. Available account options are determined by each user's permissions. See [Account Restriction and User Roles](#account-restriction-and-user-roles) for guidance on configuring role permissions while account restriction is enabled. After entry creation, the selected account becomes the entry's owner and cannot be changed.
 
 ## Account Restriction and User Roles
 
@@ -47,9 +47,9 @@ When setting up roles for account restriction, consider these factors:
 
 * Regular roles must have the `Accounts > Account Entry: View` permission to create object entries. This is because regular roles are not associated with accounts or organizations. Without this permission, users with the regular role cannot select an account during entry creation.
 
-* Organization roles must have these permissions to create object entries: `User and Organizations > Organization: Manage Accounts` and `User and Organizations > Organization: Manage Suborganizations Accounts`. Without these, users with the organization role cannot select an account during entry creation.
+* Organization roles must have these permissions to create object entries: `User and Organizations > Organization: Manage Accounts` and `User and Organizations > Organization: Manage Suborganizations Accounts`. Without these permissions, users with the organization role cannot select an account during entry creation.
 
-* To use organization and account roles to access a custom object, users must have a separate regular role that grants access to the application in either the Global Menu (if company-scoped) or Site Menu (if site-scoped). See [Object Application Permissions](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) for more information.
+* To use organization and account roles to access a custom object, users must have a separate regular role that grants the `Access in Control Panel` permission (company-scoped) or `Access in Site`  permission (site-scoped). See [Object Application Permissions](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) for more information.
 
 ```{important}
 Account and organization roles are only supported in objects with account restriction enabled.
@@ -61,11 +61,13 @@ Account restriction does not support the default Account Member and Organization
 
 Consider an insurance scenario with these requirements:
 
-- Business account users must open claims without seeing claims made by other accounts. 
-- Customer success managers (CSMs) must review claims made by the accounts they manage.
-- A claims manager must oversee all claims.
+* Business account users must open claims without seeing claims made by other accounts.
 
-To achieve this, [create a Claims object](../creating-objects.md) with account restriction enabled. Then [create organizations](../../../../users-and-permissions/organizations/creating-and-managing-organizations.md#adding-organizations) for grouping CSMs and [associate each organization](../../../../users-and-permissions/accounts.md#organizations-tab) with the appropriate business accounts. Create the following [account](#account-role), [organization](#organization-role), and [regular](#regular-role) roles and [assign them](../../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md) to the appropriate users. Since the Claims object is company-scoped, account and organization users must also have a separate regular role that grants the `Portal: View Control Panel Menu` and `Claims: Access in Control Panel` permissions. For convenience, you can assign these permissions to the default user role.
+* Customer success managers (CSMs) must review claims made by the accounts they manage.
+
+* A claims manager must oversee all claims.
+
+To achieve this, [create a Claims object](../creating-objects.md) with account restriction enabled. Then [create organizations](../../../../users-and-permissions/organizations/creating-and-managing-organizations.md#adding-organizations) for grouping CSMs and [associate each organization](../../../../users-and-permissions/accounts.md#organizations-tab) with the appropriate business accounts. Finally, create the following [account](#account-role), [organization](#organization-role), and [regular](#regular-role) roles and [assign them](../../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md) to the appropriate users. Since the Claims object is company-scoped, account and organization users must also have a separate regular role that grants the `Portal: View Control Panel Menu` and `Claims: Access in Control Panel` permissions. For convenience, you can assign these permissions to the default user role.
 
 ```{note}
 In this example, each role can create claim entries, but granting that permission is not necessary for the organization and regular roles.
@@ -81,11 +83,10 @@ Grant account users permission to create and manage the account's object data.
 | Claims > Claim: Delete | Delete object entries. |
 | Claims > Claim: Permissions | View and modify permissions for individual object entries. |
 | Claims > Claim: Update | Update object entries. |
-| Claims > Claim: View | View object entries. |
 | Claims > Claims: Add Object Entry | Create an object entry. |
 
-```{tip}
-Users can have different account roles in different accounts.
+```{important}
+Do not assign the `Claims > Claim: View` resource permission to account roles. This can interfere with standard role behaviors.
 ```
 
 ### Organization Role

@@ -50,9 +50,10 @@ The *Variant Report* panel provides a detailed breakdown of each variant and how
 Below are the metrics reported for each variant:
 
 **Median:** The middle number in the set of sample values. This estimates a typical user's behavior.
+
 **Confidence Interval:** The range of values expected to contain the true mean of the population. For example, a 95% confidence interval is a range of values that the system is 95% sure contains the true mean. This gives the range of possible values that seem plausible for the measured goal.
 
-**Improvement:** The relative improvement from the control group. This metric may also be known as Lift. For example, assume the control page has a 15% retention rate. The improvement calculation would be `((16 - 15) / 15) = ~6.67%` improvement.
+**Improvement:** The relative improvement from the control group. This metric may also be known as Lift. For example, assume the control page has a 15% retention rate and the variant page has a 16% retention rate. The improvement calculation would be `((16 - 15) / 15) = ~6.67%` improvement.
 
 This lets you know the impact of a change. If there is only a small improvement, it may not be worth implementing that change.
 
@@ -91,8 +92,7 @@ When a test is running, you can terminate it by selecting *Terminate Test* from 
 ![Click on Terminate Test to end a running test.](a-b-testing/images/07.png)
 
 ```{important}
-Traffic Expectations
-A/B Testing is currently optimized for public facing websites and expects large amounts of traffic (i.e. several thousand hits a day). You can perform A/B Testing for an internal website or portal, but it may take significantly longer for the test to finish.
+Large amounts of traffic (i.e. several thousand hits a day) is expected for an A/B test to run successfully. Therefore, public facing sites may be more suitable for testing. It may take significantly longer for a test to finish for an internal website or portal.
 ```
 
 ### Winner Declared

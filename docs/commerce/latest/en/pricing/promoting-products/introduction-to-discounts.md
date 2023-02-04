@@ -54,9 +54,14 @@ When using either *Has all of these products* or *Has one of these products* rul
 
 ## Discount Levels
 
-See [Using Discount Levels](./using-discount-levels.md) for more information.
+You can create discount levels for applying multiple discounts to products and orders. Commerce applies these discounts consecutively. See [Using Discount Levels](./using-discount-levels.md) for more information.
+
+## Overriding Discounts
+
+When editing price entries, you can set alternative discounts that override those set in the Discounts application. These discounts use the percentage type. However, they do not support rules or eligibility restrictions. If you want to maintain restrictions, do not use discount overrides.
 
 ## Additional Information
 
 * [Introduction to Pricing](../introduction-to-pricing.md)
 * [Creating a Discount](./creating-a-discount.md)
+* [Using Discount Levels](./using-discount-levels.md)

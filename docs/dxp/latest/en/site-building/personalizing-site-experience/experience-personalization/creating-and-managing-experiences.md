@@ -1,59 +1,51 @@
 # Creating and Managing Experiences
 
-{bdg-secondary}`Some experiences functionality is available in Liferay 7.4+, 7.3 Fix Pack 1+, and 7.2 Fix Pack 11+ only`
+{bdg-secondary}`Available Liferay 7.4+, 7.3 FP1+, and 7.2 FP11+`
 
-You can customize your content page to different groups of users using *Experiences*. To learn about Liferay DXP Experiences, see [Content Page Personalization](./content-page-personalization.md).
+You can customize your content page to different groups of users using *Experiences*. See [Content Page Personalization](./content-page-personalization.md) to learn how experiences can contribute to site personalization.
 
-## Creating a New Content Page Experience
+## Creating Experiences
 
-1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages*.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Site Builder* &rarr; *Pages*.
 
-1. Click the *Actions* (![Actions](../../../images/icon-actions.png)) menu and select *Edit*, or [create a new content page](../../creating-pages/using-content-pages.md).
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for an content page and select *Edit*. Alternatively, [create a content page](../../creating-pages/using-content-pages.md).
 
-1. At the top of the page, for the *Experience* click on *Default* to open the experience selection dialog.
+1. Open the Experience drop-down menu and click *New Experience*.
 
-1. Click the Actions (![Actions](../../../images/icon-actions.png)) menu and select *Edit*, or [create a new Content Page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md).
+   ![Open the Experience drop-down menu and click New Experience.](./creating-and-managing-experiences/images/01.png)
 
-1. At the top of the page, for the Experience click *Default* to open the experience selection dialog.
+1. Enter a name for the experience and select the audience segment you want to target. Alternatively, [create a segment](../segmentation/creating-and-managing-user-segments.md).
 
-    ![Click on Experience to select your experience or click New Experience to create a new one.](./creating-and-managing-experiences/images/01.png)
+   By default, new experiences target the *Anyone* segment (i.e., all site visitors).
 
-1. Click *New Experience*.
+1. Design the content page to determine the information and layout that appears for the targeted segment.
 
-1. Enter a name for the Experience and select the Segment for the audience you want to target, or [create a New Segment](../segmentation/creating-and-managing-user-segments.md) {bdg-secondary}`Available in Liferay DXP 7.2 Fix Pack 1+ and Liferay Portal 7.2 CE GA2+.`
+1. Open the Experience drop-down menu and click the *Up* (![Up](../../../images/icon-angle-up.png)) or *Down* (![Down](../../../images/icon-angle-down.png)) buttons to set the experience's priority.
 
-    ```{note}
-    New experiences are assigned to the *Anyone* Segment by default and target all website visitors.
-    ```
-
-1. Edit your content page with the information and layout you want to show to the selected segment.
-
-1. Using the Up (![Up](../../../images/icon-angle-up.png)) and Down (![Down](../../../images/icon-angle-down.png)) controls, move the Experience in the list to set its precedence (see [Understanding How Experiences Work](./content-page-personalization.md#understanding-how-experiences-work) for more information).
+   Site visitors see the highest ranking experience for their segment. See [Understanding How Experiences Work](./content-page-personalization.md#understanding-how-experiences-work) for more information.
 
 1. Click *Publish*.
 
-The default version of the page appears for everyone except for members of the selected segment, who see a version of the site for their defined segment.
+## Managing Experiences
 
-## Managing Content Page Experiences
-
-When you edit a content page, you can click on the experience to manage the options for that page.
+When you edit a content page, you can click the experience to manage the options for that page.
 
 ![You can add, edit, delete, or change priority for Experiences.](./creating-and-managing-experiences/images/03.png)
 
-1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages*.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Site Builder* &rarr; *Pages*.
 
-1. Click the *Actions* (![Actions](../../../images/icon-actions.png)) menu and select *Edit*.
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for a content page and select *Edit*.
 
-1. Click on the experience you want to manage. From here you can
+1. Open the Experience drop-down menu. From here,
 
-   - Set the experience priority, using the Up (![Up](../../../images/icon-angle-up.png)) and Down (![Down](../../../images/icon-angle-down.png)) controls.
-   - Edit (![Edit](../../../images/icon-edit.png)) the experience's name or the selected segment.
-   - Duplicate (![Duplicate](../../../images/icon-copy.png)) the experience {bdg-secondary}`Available in Liferay DXP 7.4+, 7.3 Fix Pack 1+, and 7.2 Fix Pack 11+.`
-   - Delete (![Delete](../../../images/icon-delete.png)) the Experience.
+   * Set the experience priority, using the Up (![Up](../../../images/icon-angle-up.png)) and Down (![Down](../../../images/icon-angle-down.png)) controls.
+   * Edit (![Edit](../../../images/icon-edit.png)) the experience's name or the selected segment.
+   * Duplicate (![Duplicate](../../../images/icon-copy.png)) the experience.
+   * Delete (![Delete](../../../images/icon-delete.png)) the Experience.
 
-    ```{important}
-    The order of your Experiences in the Experience selector determines the Experience precedence. See *Understanding How Experiences Work* in [Content Page Personalization](./content-page-personalization.md) for more information.
-    ```
+   ```{important}
+   The order of experiences in the drop-down menu determines their priority. See [Understanding How Experiences Work](./content-page-personalization.md#understanding-how-experiences-work) for more information.
+   ```
 
 ## Related Information
 

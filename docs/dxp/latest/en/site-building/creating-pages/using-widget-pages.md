@@ -1,18 +1,20 @@
 ---
 toc:
-  - ./using-widget-pages/adding-widgets-to-a-page.md
-  - ./using-widget-pages/configuring-widgets.md
-  - ./using-widget-pages/styling-widgets.md
-uuid: ffee7ddb-76fd-477c-9426-76ca6ab6203c
+- ./using-widget-pages/adding-widgets-to-a-page.md
+- ./using-widget-pages/converting-widget-pages-to-content-pages.md
+- ./using-widget-pages/enabling-user-personalization-of-widget-pages.md
+- uuid: ffee7ddb-76fd-477c-9426-76ca6ab6203c
 ---
 # Using Widget Pages
+
+A Widget Page is a page with a set layout that allows widgets (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page.
 
 ```{toctree}
 :maxdepth: 3
 
 using-widget-pages/adding-widgets-to-a-page.md
-using-widget-pages/configuring-widgets.md
-using-widget-pages/styling-widgets.md
+using-widget-pages/converting-widget-pages-to-content-pages.md
+using-widget-pages/enabling-user-personalization-of-widget-pages.md
 ```
 
 ```{raw} html

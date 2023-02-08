@@ -34,12 +34,12 @@ Follow these steps to save a Fragment composition:
 
 1. Click *Save*.
 
-The saved Fragment composition is listed in the *Fragments* panel under the selected Fragment Set. You can add it to a Page or Template like other Fragments.
+The saved Fragment composition appears in the *Fragments* panel under the selected Fragment Set. You can add it to a Page or Template like other Fragments.
 
 To view and manage saved compositions, open the *Site Menu* and go to *Design* &rarr; *Fragments*.
 
 ```{note}
-In Liferay DXP 7.1 and 7.2, open the *Product Menu*, and go to *Site* → *Site Builder* → *Page Fragments*.
+In Liferay DXP 7.1 and 7.2, open the *Product Menu*, and go to *Site* &rarr; *Site Builder* &rarr; *Page Fragments*.
 ```
 
 From here, you can rename saved compositions, change their thumbnail image, or export them as a `.zip` file, move them between Sets, or delete them. See [Managing Fragments](./managing-fragments.md) for more information.
@@ -104,7 +104,7 @@ This step-by-step example shows you how to create a banner-style composition usi
 
 1. Select the _Button_ and under the Styles section, set a *Margin Top* of `3`. Under the *General* section, click the *Type* drop-down menu and choose _Link_.
 
-1. In the *Browser* (![Browser](../../../../images/icon-hierarchy.png)) panel, click the *link* for the Button Fragment. Under the Link section, type the URL you want to redirect users when they click the button.
+1. In the Browser (![Browser](../../../../images/icon-hierarchy.png)) panel, click the *link* for the Button Fragment. Under the Link section, type the URL you want to redirect users when they click the button.
 
     ![Configure the button Fragment type and top margin.](./saving-fragment-compositions/images/11.png)
 
@@ -130,11 +130,11 @@ To avoid breaking your Site layout configuration, use a test environment when wo
 
 1. Click the *Browser* (![Browser](../../../../images/icon-hierarchy.png)) button, then click the inner Container Fragment.
 
-1. In the *General* tab, set the *Container Width* property to *Fixed Width*.
+1. In the General tab, set the *Container Width* property to *Fixed Width*.
 
     ![Change the inner Container Fragment width setting to Fixed Width.](./saving-fragment-compositions/images/15.png)
 
-1. Click the *Page Design Options* (![Page Design Options](../../../../images/icon-format.png))  and under the *Style Book* section, verify the active Style Book.
+1. Click the *Page Design Options* (![Page Design Options](../../../../images/icon-format.png))  and under the Style Book section, verify the active Style Book.
 
     ![Verify the default Style Book in use for the Content Page.](./saving-fragment-compositions/images/16.png)
 

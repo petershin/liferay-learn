@@ -18,7 +18,7 @@ To select Assets to publish in the *Asset Publisher* widget,
 
     ![The configuration window has different Asset Selection options under the Setup tab.](selecting-assets-in-the-asset-publisher-widget/images/02.png)
 
-1. Optionally, when [Dynamic](#dynamic) and [Manual](#manual) Asset selection options are selected, a new collection can be created by clicking *Create a collection from this configuration*. This will save the configuration as a new [Collection](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md).
+1. Optionally, when [Dynamic](#dynamic) and [Manual](#manual) Asset selection options are selected, a new collection can be created by clicking *Create a collection from this configuration*. This saves the configuration as a new [Collection](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
 1. Once you've selected your Assets and configured the widget, click *Save*.
 
@@ -34,7 +34,7 @@ You can use different options to select the Assets in the Asset Publisher dialog
 
 Select this option to choose from your previously saved Collections or Collection Providers. To learn more about Collections, read [About Collections and Collection Pages](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md). 
 
- 1. Under the Select Collection section, click *Select*.
+ 1. Under Select Collection, click *Select*.
  1. Select either the *Collections* or *Collections Providers* tab
  1. Choose one of your exiting Collections or Collection Providers.
  1. Click *Save*.
@@ -42,7 +42,7 @@ Select this option to choose from your previously saved Collections or Collectio
  ![Click Select and choose from your saved Collections.](selecting-assets-in-the-asset-publisher-widget/images/04.png)
 
  ```{note}
-Collection Providers is a new feature in Liferay DXP 7.3+ that allows developers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
+Developers can use Collection Providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
 ```
 
 ### Dynamic

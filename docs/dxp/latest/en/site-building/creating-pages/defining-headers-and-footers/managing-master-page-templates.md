@@ -4,7 +4,7 @@
 
 To manage a Master Page Template, follow these steps:
 
-1. Open the Product Menu, go to *Design* &rarr; *Page Templates*
+1. Open the Product Menu and go to *Design* &rarr; *Page Templates*
 1. Select the *Masters* tab.
 1. Open the *Actions* (![Actions](./../../../images/icon-actions.png)) Menu for a Master Page Template and select one of the options. 
 
@@ -35,7 +35,7 @@ After changes are made and published, they are propagated to all pages that use 
 You can change the Master Page Template of a Page in the [Content Page Editor](../using-content-pages/content-page-editor-ui-reference.md). Follow these steps:
 
 1. Navigate to the Page where you want to change the Master Page Template.
-1. Click on the *Edit* icon (![Edit icon](../../../images/icon-edit.png))
+1. Click *Edit* (![Edit icon](../../../images/icon-edit.png))
 1. In the Editing Sidebar, click the *Page Design* menu (![Page Design menu](../../../images/icon-format.png)).
 1. Under the Masters section, click the *Master Page Template* you want to use.
 
@@ -45,7 +45,7 @@ You can change the Master Page Template of a Page in the [Content Page Editor](.
 
 To manage a Master Page Templates's Look and Feel and other options, follow these steps:
 
-1. Open the Product Menu, go to *Design* &rarr; *Page Templates*
+1. Open the Product Menu, go to *Design* &rarr; *Page Templates*.
 
 1. Select the *Masters* tab.
 
@@ -55,26 +55,26 @@ To manage a Master Page Templates's Look and Feel and other options, follow thes
 
    ![Click More Page Design Options to access the Master Page Template General Options](./managing-master-page-templates/images/06.png) 
 
-1. In the *Look and Feel* tab, is where the styling of the Master Page Template can be tailored to your needs. 
+1. In the Look and Feel tab, is where the styling of the Master Page Template can be tailored to your needs. 
 
     ![Select a new Master Page Template from the available options.](./managing-master-page-templates/images/05.png)
 
-**Favicon:** Change the default Favicon applied from the theme
+**Favicon:** Change the default Favicon applied from the theme.
 
-**Style Book:** Change the default Style Book applied from the theme
+**Style Book:** Change the default Style Book applied from the theme.
 
-**Theme:** Select whether to use theme from *Pages* of a Site or select a specific Theme for the current Master Page Template.
+**Theme:** Select whether to use theme from pages of a site or select a specific theme for the current Master Page Template.
 
 **Settings:** Toggles to determine whether to show aspects of the theme such as the Footer and Header Search bar. Custom CSS can also be applied is loaded after the theme.
 
 **Theme CSS Client Extension:** Add [Theme CSS Client Extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS from a theme without deploying an entire theme. 
 
-**CSS Client Extensions:** Add [CSS Client Extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md#css-client-extensions) to override CSS styling of a Content Page that uses the Master Page Template.
+**CSS Client Extensions:** Add [CSS Client Extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md#css-client-extensions) to override CSS styling of a content page that uses the Master Page Template.
 
 **JavaScript Code and JavaScript Client Extension:** In the *Advanced* tab, JavaScript code can be added that is executed at the bottom of the page. [JavaScript Client Extentions](../../../building-applications/client-extensions/browser-based-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this Master Page template is visited.
 
 ```{note}
-A theme is applied to a Content Page through a Master Page Template. When a Master Page Template is applied to a Content Page, the look and feel of the Content Page is defined by the Master Page Template.
+A theme is applied to a content page through a Master Page Template. When a Master Page Template is applied to a content page, the look and feel of the content page is defined by the Master Page Template.
 ```
 
 ## Additional Information

@@ -1,6 +1,6 @@
 # Creating a Page Template
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
 Page Templates help you efficiently create pages based on predefined layouts and content. There are several basic page templates available out-of-the-box.
 
@@ -24,7 +24,7 @@ The steps below show how to create and use Widget and Content Page Templates.
 
     ![Creating a new Page Template Set.](./creating-a-page-template/images/02.png)
 
-1. Click the *Plus* icon (![Add Page Template](../../../images/icon-add.png)) and select either *Widget Page Template* or *Content Page Template*. You can edit the Page Template at any time by clicking the *Actions* button (![Actions](../../../images/icon-actions.png)) next to the Page Template in the Set and selecting *Edit*.
+1. Click *Add* (![Add Page Template](../../../images/icon-add.png)) and select either *Widget Page Template* or *Content Page Template*. You can edit the Page Template at any time by clicking the *Actions* button (![Actions](../../../images/icon-actions.png)) next to the Page Template in the Set and selecting *Edit*.
 
 1. Enter a Name.
 

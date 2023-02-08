@@ -4,7 +4,7 @@ When editing or creating Content Pages and Templates, you can quickly view and e
 
 ![Open the Browser panel and click the Page Content tab.](./managing-content-in-content-pages/images/01.png)
 
-The Page Content panel lists all content added using Fragments and supported widgets (i.e., Asset Publisher and Web Content Display). This includes content added to Fragments directly and those mapped to Fragment elements.
+The Page Content panel shows all content added using Fragments and supported widgets (i.e., Asset Publisher and Web Content Display). This includes content added to Fragments directly and those mapped to Fragment elements.
 
 ```{important}
 Contents displayed in an Asset Publisher using Dynamic or Collection selection are not listed in the Page Content tab. Also, background images are not listed, except for Container background images.

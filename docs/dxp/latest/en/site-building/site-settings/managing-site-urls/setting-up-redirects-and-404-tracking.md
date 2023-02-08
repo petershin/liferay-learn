@@ -14,7 +14,7 @@ setting-up-redirects-and-404-tracking/using-pattern-redirects.md
 setting-up-redirects-and-404-tracking/tracking-404-urls.md
 ```
 
-{bdg-secondary}`7.4+`
+{bdg-secondary}`7.4 U48+/GA48+`
 
 Maintaining URL integrity is important for any site. Liferay's *Redirection* tool provides a convenient and integrated way to manage HTTP redirects and track 404 errors for individual sites. Use it to avoid and fix broken links, improving both user experience and site SEO.
 
@@ -40,14 +40,14 @@ In the Redirection application, you can view and manage site requests that resul
 :gutter: 3 3 3 3
 
 :::{grid-item-card} Using Alias Redirects
-:link: ./setting-up-redirects-and-404-tracking/.md
+:link: ./setting-up-redirects-and-404-tracking/using-alias-redirects.md
 :::
 
 :::{grid-item-card} Using Pattern Redirects
-:link: ./setting-up-redirects-and-404-tracking/.md
+:link: ./setting-up-redirects-and-404-tracking/using-pattern-redirects.md
 :::
 
 :::{grid-item-card} Tracking 404 URLs
-:link: ./setting-up-redirects-and-404-tracking/.md
+:link: ./setting-up-redirects-and-404-tracking/tracking-404-urls.md
 :::
 ::::

@@ -12,6 +12,7 @@ For example, the language aware sorting behavior in Liferay relies on the collat
 
 Liferay's Solr integration has limitations. Elasticsearch is required to use the following features:
 
+* [Liferay Objects](../../../building-applications/objects.md)
 * [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html)
 * [Workflow Metrics](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
 * [Custom Filter search widget](../../search-pages-and-widgets/search-results/filtering-search-results.md)

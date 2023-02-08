@@ -42,7 +42,7 @@ Roles have scope, so they apply at different levels.
 
 <!-- ripped out row from above table as per LRODCS-8188: | A single Account | Account   | Control Panel &rarr; Accounts &rarr; Accounts (Select Account) &rarr; Roles | Individual Account Members -->
 
-Individual [Users](./../users/understanding-users.md) can be manually assigned to Roles. This method is less efficient than using collections of Users. Users can also be [automatically](../../system-administration/virtual-instances/configuring-a-virtual-instance-users.md#default-user-associations) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
+Individual [Users](./../users/understanding-users.md) can be manually assigned to Roles. This method is less efficient than using collections of Users. Users can also be [automatically](../../system-administration/configuring-liferay/virtual-instances/users.md#default-user-associations) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
 
 ### Regular Roles
 
@@ -69,11 +69,11 @@ Permissions are created by developers of applications. They define actions Users
 
 ### Application Scoped Permissions
 
-Permissions can be granted on each widget instance that's placed on a page in Liferay DXP, and each administrative application in the Site Menu &rarr; Content and Data section. See [Widget Permissions](./../../site-building/widget-permissions.md) for details.
+Permissions can be granted on each widget instance that's placed on a page in Liferay DXP, and each administrative application in the Site Menu &rarr; Content and Data section. See [Widget Permissions](./../../site-building/creating-pages/using-widget-pages/configuring-widgets/setting-widget-permissions.md) for details.
 
 ### Asset Scoped Permissions
 
-Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See [Widget Permissions](./../../site-building/widget-permissions.md) for details.
+Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See [Widget Permissions](./../../site-building/creating-pages/using-widget-pages/configuring-widgets/setting-widget-permissions.md) for details.
 
 ## Related Topics
 

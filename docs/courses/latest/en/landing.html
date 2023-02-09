@@ -1,0 +1,23 @@
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					icon: '#developing-applications-logo',
+					sectionName: 'Certified Liferay Administrator',
+					sectionURL: 'certified-liferay-administrator.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Users, Accounts, Organizations, and Permissions ',
+							url: 'certified-liferay-administrator/users-accounts-organizations.html'
+						},
+					]
+				},
+			]
+		}
+	})
+</script>

@@ -77,7 +77,7 @@ Values in this field typically match the name of an application-defined index.
 
 ## Finding Fields
 
-To find the fields you can filter by in the Custom Filter widget, Users with the proper permissions can navigate to _Control Panel_ &rarr; _Configuration_ &rarr; _Search_.  From there, open the Field Mappings tab and browse the mappings for the `liferay-[companyId]` index. Scroll to the [`properties`](https://www.elastic.co/guide/en/elasticsearch/reference/current/properties.html) section of the mapping.
+To find the fields you can filter by in the Custom Filter widget, users with the proper permissions can navigate to _Control Panel_ &rarr; _Configuration_ &rarr; _Search_.  From there, open the Field Mappings tab and browse the mappings for the `liferay-[companyId]` index. Scroll to the [`properties`](https://www.elastic.co/guide/en/elasticsearch/reference/current/properties.html) section of the mapping.
 
 ![Browse the field mappings to find Liferay DXP's indexed fields.](./filtering-search-results/images/04.png)
 

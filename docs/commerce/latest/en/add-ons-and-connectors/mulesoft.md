@@ -14,7 +14,7 @@ mulesoft/designing-mule-flows.md
 
 {bdg-primary}`Subscription`
 
-The [Liferay Connector to MuleSoft](https://www.mulesoft.com/exchange/com.liferay/com.liferay.mule/minor/1.1/) connects Liferay DXP to other platforms and services in the MuleSoft ecosystem. You can access the connector both from Anypoint Studio or Anypoint Design Center. Learn the basics of the connector's design, and how to configure it and set up for a basic flow.
+The [Liferay Connector to MuleSoft](https://www.mulesoft.com/exchange/com.liferay/com.liferay.mule/minor/1.1/) connects Liferay DXP to other platforms and services in the MuleSoft ecosystem. You can access the connector via Anypoint Studio or Anypoint Design Center. Learn the basics of the connector's design, as well as how to configure it and set up for a basic flow.
 
 ## Prerequisites
 

@@ -12,7 +12,7 @@ Discounts are price reductions you can apply to products and orders to offer inc
 | Subtotal        | Applies to order subtotals, usually before applying taxes and other fees.                                                                                     |
 | Total           | Applies to order totals.                                                                                                                                      |
 
-Once created, you can determine which channels, accounts, and order types are eligible for receiving the discount and define rules to specify requirements for qualifying. By default, Commerce applies discounts automatically, but you can make them available to customers as coupon codes. Also, when configuring discounts, you can schedule when they take effect and expire.
+Once created, you can both determine which channels, accounts, and order types are eligible for receiving the discount and define rules to specify requirements for qualifying. By default, Commerce applies discounts automatically, but you can make them available to customers as coupon codes. Also, when configuring discounts, you can schedule when they take effect and expire.
 
 See [Creating Discounts](./creating-a-discount.md) to get started or [Introduction to Pricing](../introduction-to-pricing.md) to learn how discounts contribute to Commerce's pricing engine.
 
@@ -48,7 +48,7 @@ You can define rules that specify requirements to qualify for a discount. There 
 
 You can add discount rules in the *Rules* section. Developers can also [implement new discount rules](../../developer-guide/promotions/adding-a-new-discount-rule-type.md).
 
-When using either *Has all of these products* or *Has one of these products* rules, select which products in the catalog are eligible for the discount.
+When using *Has all of these products* or *Has one of these products* rules, select which products in the catalog are eligible for the discount.
 
 ![The available discount rule types.](./introduction-to-discounts/images/05.png)
 

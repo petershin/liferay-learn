@@ -1,6 +1,6 @@
 # Using Discount Levels
 
-You can create discount levels for applying multiple discounts to products and orders. Commerce applies these discounts consecutively according to their level. For example, if you create a level 1 discount offering 20% off and a level 2 discount offering an additional 5% off if the cart value exceeds 50$, the level 1 discount is applied first, and the level two discount is applied second if applicable.
+You can create discount levels to apply multiple discounts to products and orders. Commerce applies these discounts consecutively according to their rank. For example, if you create a level 1 discount offering 20% off and a level 2 discount offering an additional 5% off if the cart value exceeds 50$, the level 1 discount is applied first, and if applicable, the level two discount is applied second.
 
 To add discount levels on a Minium site,
 
@@ -8,7 +8,7 @@ To add discount levels on a Minium site,
 
    ![Open the Global Menu and navigate to the Discounts application.](./using-discount-levels/images/01.png)
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)) and enter this information:
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and enter this information:
 
    **Name:** U-Joint Clearance
 
@@ -34,7 +34,7 @@ To add discount levels on a Minium site,
 
 1. In the Products section, search for U-Joint and click *Select*.
 
-1. In the Rules section, click the *Add* button (![Add Button](../../images/icon-add.png)) and enter this information:
+1. In the Rules section, click *Add* (![Add Button](../../images/icon-add.png)) and enter this information:
 
    **Name**: Cart Total Exceeds $50
 

@@ -30,13 +30,13 @@ After creating an attachment field, you can configure it in these ways:
 
 ## Using Attachment Fields with APIs
 
-A file must exist in Liferay before you can add it to an object entry's attachment field using the headless API. First use the [document library APIs](../../../../content-authoring-and-management/documents-and-media/developer-guide/document-api-basics.md) to upload the file and retrieve its ID.
+A file must exist in Liferay before you can add it to an object entry's attachment field using the headless API. Use the [document library APIs](../../../../content-authoring-and-management/documents-and-media/developer-guide/document-api-basics.md) to upload the file and retrieve its ID.
 
 Pass the ID in the objects API call using this syntax: `"[attachmentField]": [FileEntryId]`.
 
 ### Example
 
-The following example adds an entry to an object named `timeOffRequest`. It adds a file with the ID `12345` to the attachment field `document`.
+The example below adds an entry to an object named `timeOffRequest`. It adds a file with the ID `12345` to the attachment field `document`.
 
 ```bash
 curl -X "POST" "http://localhost:8080/o/c/timeOffRequest?restrictFields=actions" \

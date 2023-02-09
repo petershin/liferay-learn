@@ -64,7 +64,7 @@ Liferay provides headless APIs for creating and managing Picklists. You can view
 
 ![Access Picklist APIs under headless-admin-list-type](./using-picklists/images/07.png)
 
-With them, you can perform CRUD operations for both Picklist Definitions (`ListTypeDefinition`) and Picklist Entries (`ListTypeEntry`). See [Picklist API Basics](./picklists-api-basics.md) for more information.
+With Picklist APIs, you can perform CRUD operations for both Picklist Definitions (`ListTypeDefinition`) and Picklist Entries (`ListTypeEntry`). See [Picklist API Basics](./picklists-api-basics.md) for more information.
 
 ## Picklist Fields in Object API Calls
 

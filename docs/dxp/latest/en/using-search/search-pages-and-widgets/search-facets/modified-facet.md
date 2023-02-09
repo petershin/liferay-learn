@@ -16,7 +16,7 @@ To configure the Modified Facet, open the Options menu (![Click on the options i
 
 The Advanced Configuration section contains additional options: 
 
-**Frequency Threshold:** Set the minimum frequency required for terms to appear in the list of facet terms. For example, if the frequency threshold of a facet is set to `3`, a term with two matching results does not appear in the facet's term result list.
+**Frequency Threshold:** Set the minimum frequency required for terms to appear in the list of facet terms. For example, if the frequency threshold of a facet is set to `3`, a term with two matching results is omitted in the facet's term result list.
 
 **Order Terms By:** For Liferay 7.4 U63+/GA63+, you can choose a facet term sorting strategy: Term Frequency Descending or Term Frequency Ascending. Term Frequency Descending orders facet terms from most matches to least. By default, facet terms appear statically in the order the timer periods configuration.
 

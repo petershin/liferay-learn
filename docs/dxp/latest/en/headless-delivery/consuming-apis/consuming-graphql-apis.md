@@ -44,7 +44,7 @@ You can also discover your local installation's APIs by requesting the schema di
 
 
 This URL does not require authentication, but it's quite cumbersome to manage the returned schema. For this reason, it's better to use the included GraphQL client.
-   ```
+```
 
 ![The included GraphQL client has a schema documentation browser.](./consuming-graphql-apis/images/01.png)
 

@@ -95,7 +95,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 
    ![페이지 조각에 구성 옵션을 추가합니다.](./using-the-fragments-editor/images/06.png)
 
-   ```{tip}
+    ```{tip}
     JSON의 'fields' 객체와 함께 모든 필드 세트에 'configurationRole' 값을 추가하여 연결된 필드가 표시되는 탭을 지정할 수 있습니다. 값을 '스타일'로 설정하여 스타일 탭에 필드를 표시하거나 '고급'으로 설정하여 고급 탭에 표시합니다(*Liferay DXP 버전 U23+ 또는 GA23+*에서만). `configurationRole`이 설정되지 않은 경우 기본적으로 일반 탭에 나타납니다.
     ```
 

@@ -95,7 +95,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
    ![ページ フラグメントに構成オプションを追加します。](./using-the-fragments-editor/images/06.png)
 
-   ```{tip}
+    ```{tip}
     JSONの `fields` オブジェクトと一緒に）どのフィールドセットにも `configurationRole` 値を追加して、関連するフィールドがどのタブに表示されるかを指定することができます。 値を `styles` に設定すると、フィールドが Styles タブに表示され、`advanced` に設定すると Advanced タブに表示されます (*Liferay DXP バージョン U23+ または GA23+* のみ)。 もし `configurationRole` が設定されていない場合は、デフォルトで General タブに表示されます。
     ```
 

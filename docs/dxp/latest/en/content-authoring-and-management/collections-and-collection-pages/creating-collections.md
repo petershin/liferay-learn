@@ -83,7 +83,7 @@ While Documents and Media and Web Content folders can be added to a collection, 
 
    ```{note}
    The Content Recommendation option is available when you connect the DXP instance to Analytics Cloud and synchronize the content.
-    ```
+   ```
 
    **Ordering:** Items in the collection appear using the order criteria you define here.
 

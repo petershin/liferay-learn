@@ -75,4 +75,4 @@ curl localhost:8080/o/headless-admin-user/v1.0/sites/20122
 
 ```{important}
 서비스 액세스 정책은 모든 API가 단일 엔드포인트에 통합되기 때문에 헤드리스 REST API만큼 쉽게 GraphQL API를 구별할 수 없습니다. 따라서 이와 같이 GraphQL 액세스 권한을 여는 경우 경우에 따라 작동할 수 있지만 실수로 너무 많은 데이터에 대한 액세스 권한을 부여할 수 있으므로 일반적으로 권장되지 않습니다.
-   ```
+```

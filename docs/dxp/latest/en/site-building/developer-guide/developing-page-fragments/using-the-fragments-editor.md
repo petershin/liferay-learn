@@ -97,7 +97,7 @@ Follow these steps to create a Fragment:
 
    ![Add configuration options to a Page Fragment.](./using-the-fragments-editor/images/06.png)
 
-   ```{tip}
+    ```{tip}
     You can add a `configurationRole` value to any field set (alongside the `fields` object in the JSON) to specify which tab the associated fields appear in. Set the value as `styles` to make the fields appear in the Styles tab, or set it to `advanced` to make them appear in the Advanced tab (*only in Liferay DXP versions U23+ or GA23+*). If no `configurationRole` is set, then they appear in the General tab by default.
     ```
 

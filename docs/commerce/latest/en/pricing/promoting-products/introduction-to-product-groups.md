@@ -105,7 +105,7 @@ To link a Price List to a Product Group, you must first create a Price List and 
     The amount mentioned in a Price Modifier is not considered as a discount. For instance, if you select the Percentage modifier and set the amount to 10, it raises the price of the product by 10%. To reduce the price, use a negative percentage.
     ```
 
-     ```{important}
+    ```{important}
     If there are two Price Lists that target the same product, you must create the new price list with a higher priority for the changes to take effect.
     ```
 

@@ -44,7 +44,7 @@ Select this option to choose from your previously saved Collections or Collectio
 
  ![Click Select and choose from your saved Collections.](selecting-assets-in-the-asset-publisher-widget/images/04.png)
 
- ```{note}
+```{note}
 Developers can use Collection Providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
 ```
 

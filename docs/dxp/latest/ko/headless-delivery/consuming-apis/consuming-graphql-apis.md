@@ -41,7 +41,7 @@ GraphQL API를 호출하려면 실행 중인 Liferay DXP가 필요합니다.
 
 
 이 URL은 인증이 필요하지 않지만 반환된 스키마를 관리하기가 상당히 번거롭습니다. 이러한 이유로 포함된 GraphQL 클라이언트를 사용하는 것이 좋습니다.
-   ```
+```
 
 ![포함된 GraphQL 클라이언트에는 스키마 문서 브라우저가 있습니다.](./consuming-graphql-apis/images/01.png)
 

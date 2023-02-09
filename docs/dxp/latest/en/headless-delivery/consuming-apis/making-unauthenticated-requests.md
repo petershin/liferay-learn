@@ -78,4 +78,4 @@ You can apply this pattern to open access to any headless REST API. Leverage the
 
 ```{important}
 Service Access Policies can't discriminate between GraphQL APIs as easily as Headless REST APIs, since all the APIs are consolidated under a single endpoint. So while opening up GraphQL access like this may work in some cases, it isn't generally recommended, because you might accidently grant access to too much data.
-   ```
+```

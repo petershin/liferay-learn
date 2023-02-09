@@ -115,7 +115,13 @@ The JSON response:
 
 ## Filter Parameter
 
-Use this parameter to filter your API responses. Note, not all API endpoints support the `filter` parameter. The endpoints that support it have `filter` listed as an optional parameter in the [API Explorer](./consuming-rest-services.md). For example, you can filter blog postings by title (e.g. `headline eq 'Able'`).
+You can filter the response for API endpoints with `filter` listed as an optional parameter. For example, you can filter blog postings by title (e.g. `headline eq 'Able'`).
+
+Use the [API Explorer](./consuming-rest-services.md) to discover an API's parameters.
+
+```{note}
+Only fields indexed as a keyword support filtering. To find content by text fields, use the [search](#search-parameter) parameter instead.
+```
 
 ### REST API Example
 
@@ -159,11 +165,7 @@ The JSON response:
 }
 ```
 
-```{note}
-As noted above, not all fields support the filtering parameter. Filtering can be applied to fields that are indexed as keywords and not text. To find content by terms contained in fields indexed as text, use the [search](#search-parameter) parameter instead.
-```
-
-Different operators can be used in the filtering parameter. 
+Various operators can be used for filtering. 
 
 **Comparison Operators**
 
@@ -186,7 +188,7 @@ Different operators can be used in the filtering parameter.
 | `or` | Logical or | `price le 3.5 or price gt 200` |
 | `not` | Logical not | `not (price le 3.5)` |
 
-Note, the `not` operator needs a space character after it.
+The `not` operator needs a space character after it.
 
 **Grouping Operator**
 
@@ -203,7 +205,7 @@ Note, the `not` operator needs a space character after it.
 
 **Lambda Operators**
 
-Lambda operators evaluate a boolean expression on a collection (e.g, keywords). They must be prepended with a navigation path that identifies a collection.
+Lambda operators evaluate a boolean expression on a collection field (e.g, a resource's `keywords`). They must be prepended with a navigation path that identifies a collection.
 
 | Lambda Operator | Description | Example |
 | :--- | :--- | :--- |
@@ -211,7 +213,7 @@ Lambda operators evaluate a boolean expression on a collection (e.g, keywords). 
 
 The `any` operator applies a boolean expression to each collection element and evaluates to `true` if the expression is true for any element.
 
-**Operator Combindations and OData Syntax**
+**Operator Combinations and OData Syntax**
 
 Syntax examples and other operator combinations are covered in the [OData standard reference](https://docs.oasis-open.org/odata/odata/v4.01/csprd06/part1-protocol/odata-v4.01-csprd06-part1-protocol.html#sec_BuiltinFilterOperations).
 
@@ -423,7 +425,13 @@ The JSON response:
 
 ## Sort Parameter
 
-Use this parameter to specify how you want to sort the items returned (i.e `asc` ascending or `desc` descending order). For example, sort the countries API by name in descending order.
+You can sort the response for API endpoints with `sort` listed as an optional parameter. Sort in ascending (`asc`) or descending (`desc`) order. Use the [API Explorer](./consuming-rest-services.md) to discover an API's parameters.
+
+To sort by more than one parameter, separate parameter names by a comma and order them by priority. For example, to sort first by title and then by creation date, append `sort=title,dataCreated` to the request.
+
+To specify a descending order for only one parameter, you must explicitly specify ascending sort order (`:asc`) for the other parameters. For example, `sort=headline:desc,dateCreated:asc`.
+
+The examples below sort the countries API response by name in descending order.
 
 ### REST API Example
 
@@ -529,8 +537,3 @@ The JSON response:
 }%      
 ```
 
-Note, not all API endpoints support the `sort` parameter. The endpoints that support it have `sort` listed as an optional parameter in the [API Explorer](./consuming-rest-services.md).
-
-To sort by more than one parameter, separate the parameter names by commas and put them in order of priority. For example, to sort first by title and then by creation date, append `sort=title,dataCreated` to the request.
-
-To specifiy a descending order for only one parameter, you must explicitly specify ascending sort order (`:asc`) for the other parameters. For example, `sort=headline:desc,dateCreated:asc`.

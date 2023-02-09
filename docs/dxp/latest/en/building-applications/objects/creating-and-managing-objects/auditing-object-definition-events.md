@@ -13,7 +13,7 @@ The Audit application lists events in a table with these columns:
 | User ID | Acting user's ID. |
 | User Name | Acting user's name. |
 | Resource ID | Affected resource's ID. |
-| Resource Name | Affected resource's name. Events for object entries include the definition's ID (e.g., `ObjectDefinition#44168`). |
+| Resource Name | Affected resource's name, including its ID (e.g., `ObjectDefinition#44168`). |
 | Resource Action | Action performed (`ADD`, `UPDATE`, or `DELETE`). |
 | Client IP | IP address responsible for the action. |
 | Create Date | When the event record was created. |
@@ -34,9 +34,9 @@ Follow these steps:
 
 1. Begin editing the desired object definition draft.
 
-1. In the details tab, enable entry history and click *Save*.
+1. In the Details tab, enable entry history and click *Save*.
 
-   ![Enable entry history.](./displaying-object-entries/images/03.png)
+   ![Enable entry history.](./auditing-object-definition-events/images/03.png)
 
 ## Additional Information
 

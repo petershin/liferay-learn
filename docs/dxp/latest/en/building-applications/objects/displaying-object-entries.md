@@ -79,7 +79,7 @@ Follow these steps:
 1. Add the Page Comments widget so end users can comment on entry display pages.
 
    ```{note}
-   If comments are disabled for the object definition, the widget is hidden in the display page. The widget only appears when comments are enabled.
+   You must enable comments for the object definition. Otherwise, the widget is hidden in the display page.
    ```
 
 1. When finished, click *Publish*.
@@ -96,7 +96,7 @@ Follow these steps:
 
 1. Begin editing the desired object definition.
 
-1. In the details tab, enable comments and click *Save*.
+1. In the Details tab, enable comments and click *Save*.
 
    ![Enable comments.](./displaying-object-entries/images/10.png)
 

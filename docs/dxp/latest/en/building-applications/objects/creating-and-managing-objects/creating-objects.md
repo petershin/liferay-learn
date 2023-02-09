@@ -114,9 +114,9 @@ Follow these steps to edit the object draft:
 
    ![Determine whether to limit restrict access to object entries by account.](./creating-objects/images/14.png)
 
-1. Show or hide the object's page widget in sites.
+1. Show or hide the object's page widget.
 
-   While enabled, you can deploy the object's widget to pages. See [Deploying Object Widgets in Sites](../deploying-object-widgets-to-sites.md).
+   While enabled, you can add the object's widget to site pages. See [Deploying Object Widgets in Sites](../deploying-object-widgets-to-sites.md).
 
 1. Enable or disable categorization for custom layouts.
 

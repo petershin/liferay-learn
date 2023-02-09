@@ -37,5 +37,5 @@ Liferay [사용자 그룹](../../users-and-permissions/user-groups/creating-and-
 ## 추가 정보
 
 * [사이트 구축 소개](../introduction-to-site-building.md)
-* [위치 템플렛](./site-templates.md)
+* [사이트 템플렛](./site-templates.md)
 * [사이트에 구성원 추가](./site-membership/adding-members-to-sites.md)

@@ -26,12 +26,13 @@ Groovy 작업 논리를 워크플로 정의 `<script>` 요소에 직접 작성�
 먼저 작동 중인 `ActionExecutor`을 배포하고 관찰합니다.
 
 ## 작업 실행자 배포
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the Acme E5C9 Implementation project.
+1. Acme E5C9 구현 프로젝트를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/process-automation/workflow/developer-guide/liferay-e5c9.zip -O

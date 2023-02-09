@@ -112,7 +112,7 @@ _성공 페이지_ 은 양식 제출자가 양식 끝에 도달했고 양식이 
 
 ![복제 양식 생성](./creating-forms/images/05.png)
 
-## 무엇 향후 계획
+## 다음
 
 * [양식 공유](../sharing-forms-and-managing-submissions/sharing-forms.md)
 * [양식 항목 관리](../sharing-forms-and-managing-submissions/managing-form-entries.md)

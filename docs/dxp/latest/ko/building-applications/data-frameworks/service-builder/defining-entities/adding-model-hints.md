@@ -83,7 +83,7 @@ Spring을 종속성 주입기로 선택한 경우 Service Builder는 서비스 �
 </model-hints>
 ```
 
-루트 수준 요소는 `model-hints`입니다. 모델 엔터티는 `모델 힌트` 요소의 `개의 모델` 하위 요소로 표시됩니다. 각 `모델` 요소에는 완전한 클래스 이름을 지정하는 `이름` 속성이 있어야 합니다. 모델에는 엔터티의 열을 나타내는 필드</code> 요소가 `개 있습니다. 마지막으로 <code>필드` 요소에는 이름과 유형이 있어야 합니다. 각 `필드` 요소의 이름 및 유형은 서비스 모듈의 `service.xml` 파일에 있는 엔터티 열에 대해 지정된 이름 및 유형에 매핑됩니다. Service Builder는 `service.xml`을 기반으로 이러한 모든 요소를 생성합니다.
+루트 수준 요소는 `model-hints`입니다. 모델 엔티티는 `model-hints` 요소의 `model` 하위 요소로 표현됩니다. 각 `model` 요소에는 정규화된 클래스 이름을 지정하는 `name` 속성이 있어야 합니다. 모델에는 항목의 열을 나타내는 'field' 요소가 있습니다. 마지막으로 `field` 요소에는 이름과 유형이 있어야 합니다. 각 `field` 요소의 이름과 유형은 서비스 모듈의 `service.xml` 파일에서 엔티티 열에 대해 지정된 이름과 유형에 매핑됩니다. Service Builder는 `service.xml`을 기반으로 이러한 모든 요소를 생성합니다.
 
 필드에 힌트를 추가하려면 `힌트` 하위 요소를 추가하십시오. 예를 들어 `디스플레이 너비 힌트` 을 추가하여 필드를 표시하는 데 사용할 픽셀 너비를 지정할 수 있습니다. 기본 픽셀 너비는 `350`입니다. 50픽셀이 있는 `문자열` 필드를 표시하려면 `display-width` 라는 이름의 `힌트` 요소를 중첩하고 `50`값을 지정할 수 있습니다.
 
@@ -131,7 +131,7 @@ aui taglib는 완전히 지원되며 더 이상 사용되지 않는 AlloyUI(Java
 양식에서 Clay 및 aui 태그를 혼합하여 사용할 수 있습니다. 그러나 모델 힌트는 aui 태그에만 영향을 미칩니다.
 ```
 
-Liferay DXP/Portal에는 자체 모델 힌트 파일 [`portal-model-hints.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-model-hints.xml)이 있습니다. `portal-impl.jar`의 `META-INF` 폴더에 있습니다. 이 파일에는 많은 힌트 예제가 포함되어 있으므로 portlet-model-hints.xml `` 파일을 생성할 때 참조할 수 있습니다.
+Liferay DXP/Portal에는 자체 모델 힌트 파일[`portal-model-hints.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META- INF/portal-model-hints.xml). `portal-impl.jar`의 `META-INF` 폴더에 있습니다. 이 파일에는 많은 힌트 예제가 포함되어 있으므로 `portlet-model-hints.xml` 파일을 생성할 때 참조할 수 있습니다.
 
 ## 기본 힌트
 

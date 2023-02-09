@@ -9,17 +9,11 @@ Microsoft Azure Blob Storage는 DXP의 Azure Blob Storage Store에서 파일을 
 그런 다음 다음을 수행하여 Liferay 인스턴스에 대한 연결을 활성화하십시오.
 
 * [제어판을 통해 파일 저장 방법 구성](#configuring-the-store)
-* Azure Blog Storage</a> 을 기본 스토리지 방법으로 사용하도록
-`dl.store.impl` 포털 속성을 설정합니다.</li> </ul> 
-  
-  
+* [`dl.store.impl` 포털 속성을 Azure Blog Storage 사용](#setting-azure-blog-storage-as-default-store)을 기본 스토리지 방법으로 설정
 
 ```{warning}
 문서 라이브러리에서 데이터베이스 트랜잭션 롤백이 발생하면 트랜잭션의 파일 시스템 변경 사항이 취소되지 않습니다. 문서 라이브러리 파일과 파일 시스템 저장소의 파일 간에 불일치가 발생할 수 있으며 수동 동기화가 필요할 수 있습니다. DBStore를 제외한 모든 DXP 스토어는 이 제한에 취약합니다.
 ```
-
-
-
 
 ## 상점 구성
 
@@ -39,20 +33,15 @@ Microsoft Azure Blob Storage는 DXP의 Azure Blob Storage Store에서 파일을 
 
 Azure Blob 저장소 저장소를 구성한 후에는 기본 파일 저장소 시스템으로 설정할 수 있습니다.
 
-
-
 ## Azure Blog Storage를 기본 저장소로 설정
 
 Azure Blog Storage를 Liferay 인스턴스의 기본 저장소로 사용하려면 다음 단계를 따르세요.
 
 1. 인스턴스의 [`Portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) 파일에 다음 속성을 추가합니다. 
-   
-   
 
    ```properties
    dl.store.impl=com.liferay.portal.store.azure.AzureStore
    ```
-
 
 `portal-ext.properties` 파일이 없으면 위의 값으로 새 파일을 만들고 인스턴스의 [`[LIFERAY_HOME]`](../../../installation-and-upgrades/reference/liferay-home.md) 또는 `[USER_HOME]` 폴더에 추가합니다.
 
@@ -62,14 +51,9 @@ Azure Blog Storage를 Liferay 인스턴스의 기본 저장소로 사용하려�
 
 다시 시작하면 구성된 Azure Blob Storage 컨테이너가 인스턴스의 기본 저장소가 됩니다.
 
-
-
 ```{important}
 클러스터 환경에서 Azure Blob Storage 저장소를 사용하는 경우 모든 노드의 구성이 동일해야 합니다. 특히 시스템 설정의 `portal-ext.properties` 파일과 Azure Blob Storage 저장소 설정이 동일한지 확인하십시오. 
 ```
-
-
-
 
 ## 추가 정보
 

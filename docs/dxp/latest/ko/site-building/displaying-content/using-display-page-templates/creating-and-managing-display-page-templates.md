@@ -32,27 +32,19 @@
 
    ![프래그먼트와 위젯을 사용하여 템플릿을 빌드합니다.](./creating-and-managing-display-page-templates/images/04.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
-1. 페이지 요소를 추가했으면 편집 가능한 필드를 두</a>
-수 있습니다. 매핑된 필드는 보라색 윤곽선으로 표시됩니다. 
-   
-   
+1. 페이지 요소를 추가하면 [지도](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference. md#mapping-settings) 편집 가능한 필드를 두 번 클릭하여 콘텐츠 구조 필드(예: 제목, 설명)에 추가합니다. 매핑된 필드는 보라색 윤곽선으로 표시됩니다.
 
    ```{tip}
    디스플레이 페이지 템플릿에 대한 SEO 및 Open Graph 설정을 구성할 때 매핑된 필드를 사용할 수 있습니다. 자세한 내용은 [SEO 및 Open Graph 구성](./configuring-seo-and-open-graph.md)을 참조하세요.
    ```
-</p> 
 
-![페이지 요소를 구조 필드에 매핑합니다.](./creating-and-managing-display-page-templates/images/05.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+   ![페이지 요소를 구조 필드에 매핑합니다.](./creating-and-managing-display-page-templates/images/05.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 
-</li> 
+1. 게시하기 전에 [미리보기 기능](#preview-the-display-page-template-content-mappings) (7.4 이상에서 사용 가능)을 사용하여 기존 콘텐츠와 편집 가능한 필드 매핑을 미리 볼 수 있습니다.
 
-1 게시하기 전에 [미리보기 기능](#preview-the-display-page-template-content-mappings) (7.4 이상에서 사용 가능)을 사용하여 기존 콘텐츠와 편집 가능한 필드 매핑을 미리 볼 수 있습니다.
-
-1 완료되면 *게시* 을 클릭하여 작업을 저장합니다.</ol> 
+1. 완료되면 *게시*를 클릭하여 작업을 저장합니다. 
 
 이제 템플릿을 사용하여 [를](./publishing-content-with-display-pages.md)할 수 있습니다.
-
-
 
 ### 디스플레이 페이지 템플릿 콘텐츠 매핑 미리보기
 
@@ -96,8 +88,6 @@
 1. *확인*을 클릭합니다.
 
 콘텐츠를 새 표시 페이지 템플릿에 할당하는 경우 콘텐츠가 예상대로 표시되는지 확인하십시오. 콘텐츠를 미리 보고 표시하려면 [디스플레이 페이지로 콘텐츠 게시](./publishing-content-with-display-pages.md)을 참조하십시오.
-
-
 
 ## 추가 정보
 

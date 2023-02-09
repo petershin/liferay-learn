@@ -11,7 +11,7 @@ Liferay Commerce 번들을 사용하려면 다음 단계를 따르십시오.
     * (구독자) [기업 다운로드](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)
     * [커뮤니티 다운로드 페이지](https://www.liferay.com/downloads-community)
 
-1. 대상 위치에 번들의 압축을 풉니다.
+1. 대상 사이트에 번들의 압축을 풉니다.
 
 1. Tomcat 번들 시작
     * `$CATALINA_HOME/bin`로 이동합니다.

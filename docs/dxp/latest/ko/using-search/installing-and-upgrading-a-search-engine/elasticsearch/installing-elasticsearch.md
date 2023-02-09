@@ -163,12 +163,9 @@ Elasticsearch가 시작되고 상태 메시지 중 하나에 전송 주소가 �
 
 Liferay 7.2를 실행 중인 경우 `TransportService` 상태 메시지의 `publish_address` 주소를 기록하십시오. 이 주소에서 Elasticsearch에 연결하도록 Liferay 서버를 구성해야 합니다.
 
-Elasticsearch는 Liferay</a>에서
-개의 연결을 준비합니다.</p> 
+Elasticsearch는 [Liferay로부터의 연결](./connecting-to-elasticsearch.md)에 대한 준비가 되어 있습니다.
 
 프로덕션에서 실행 중인 경우 [Liferay와 Elasticsearch](./securing-elasticsearch.md)간의 보안 통신.
-
-
 
 ## 추가 주제
 

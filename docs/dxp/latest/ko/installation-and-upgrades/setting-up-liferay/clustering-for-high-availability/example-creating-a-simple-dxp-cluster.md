@@ -108,7 +108,7 @@ Elasticsearch 서버 생성 및 구성:
 
 [구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) 을 사용하여 각 DXP 노드에 대해 Elasticsearch를 구성합니다.
 
-1. 구성 파일 위치를 만듭니다.
+1. 구성 파일 사이트를 만듭니다.
 
     ```bash
     mkdir -p dxp-1/files/osgi/configs dxp-2/files/osgi/configs
@@ -273,7 +273,7 @@ DXP 콘텐츠 인덱싱 시작:
 
 작동하는 DXP 클러스터를 만든 것을 축하합니다!
 
-## 무엇 향후 계획
+## 다음
 
 DXP 클러스터에 대해 [데이터베이스](./database-configuration-for-cluster-nodes.md) 을 구성합니다.
 

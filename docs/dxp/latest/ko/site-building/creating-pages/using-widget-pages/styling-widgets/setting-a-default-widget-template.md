@@ -21,7 +21,7 @@
 
 1.  *세부 정보* 을 열고 *템플릿 키를 찾습니다.* - `LANGUAGE-ICON-FTL`
 
-  ![시스템 설정에 템플릿 키를 찾을 수 있는 위치가 표시됩니다.](./setting-a-default-widget-template/images/02.png)
+  ![시스템 설정에 템플릿 키를 찾을 수 있는 사이트가 표시됩니다.](./setting-a-default-widget-template/images/02.png)
 
 이제 ID가 있으므로 시스템 설정에서 템플릿을 변경할 수 있습니다.
 

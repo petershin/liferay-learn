@@ -50,7 +50,7 @@ NPM 및 Yarn은 의존하는 툴킷 및 모듈을 설치하는 데 사용할 패
 Fragments Toolkit의 `liferay-fragments` 명령은 Fragments 프로젝트를 생성하기 위한 인터페이스를 시작합니다.
 
 ```{warning}
-조각 프로젝트를 중첩하지 마십시오. 기존 Fragments 프로젝트 외부의 자체 위치에 새 Fragments 프로젝트를 만들어야 합니다.
+조각 프로젝트를 중첩하지 마십시오. 기존 Fragments 프로젝트 외부의 자체 사이트에 새 Fragments 프로젝트를 만들어야 합니다.
 ```
 
 `liferay-x2y6` 프로젝트 폴더에 있으면 종료합니다(예: `cd ..`).
@@ -109,12 +109,13 @@ Fragments 프로젝트 생성을 축하합니다!
 생성기는 프로젝트 이름에서 파생된 폴더에 각 프로젝트를 만듭니다. 예를 들어 프로젝트 이름을 `Sample Liferay Fragments`로 지정했으므로 생성기는 `sample-liferay-fragments`이라는 프로젝트 폴더를 생성했습니다.
 
 ## 샘플 조각 세트 가져오기
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to import the sample Fragment Set to Liferay:
+그런 다음 다음 단계에 따라 샘플 조각 세트를 Liferay로 가져옵니다.
 
-1. Import the Fragment Set to your Liferay instance invoking the `yarn run import` command in the project's root folder (e.g., `sample-liferay-fragments`). Alternatively, you can [import the Fragment Set manually](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
+1. 프로젝트의 루트 폴더(예: `sample-liferay-fragments`)에서 `yarn run import` 명령을 호출하여 Fragment Set을 Liferay 인스턴스로 가져옵니다. 또는 [Fragment Set을 수동으로 가져오기](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md)할 수 있습니다.
 
     ```bash
     cd sample-liferay-fragments

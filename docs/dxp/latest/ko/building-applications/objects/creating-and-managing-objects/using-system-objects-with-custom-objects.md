@@ -21,6 +21,5 @@ using-system-objects-with-custom-objects/restricting-access-to-object-data-by-ac
 
 :::{grid-item-card} 계정별 개체 데이터에 대한 액세스 제한
 :link: ./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md
-:::  
-:
 :::
+::::

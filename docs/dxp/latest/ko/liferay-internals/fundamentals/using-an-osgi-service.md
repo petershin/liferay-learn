@@ -30,12 +30,13 @@ OSGi 서비스를 만드는 방법에 대한 지침은 [OSGi 서비스로서의 
 ```
 
 ## Gogo 셸 명령 예제 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip `liferay-j1h1.zip`.
+1. `liferay-j1h1.zip`을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-j1h1.zip -O

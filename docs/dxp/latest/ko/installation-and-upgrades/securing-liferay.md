@@ -38,20 +38,14 @@ Liferay DXP 인증은 유연합니다. 기본적으로 사용자는 데이터베
 
 * [다단계 인증](./securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md)을 구성할 수 있습니다.
 * [SSO를 사용하여](./securing-liferay/configuring-sso.md) 인증을 관리할 수 있습니다.
-* </a>
-통합되어 포털 데이터베이스를 사용하는 대신 사용자를 검증할 수도 있습니다.</li> 
-  
-  * 게스트 계정 생성은 [꺼짐](./securing-liferay/authentication-basics.md#disabling-guest-account-creation)수 있습니다.</ul> 
+* Liferay는 [LDAP와 통합](../users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)하여 포털을 사용하는 대신 사용자를 검증할 수도 있습니다. 데이터 베이스.
+* 게스트 계정 생성은 [해제](./securing-liferay/authentication-basics.md#disabling-guest-account-creation)할 수 있습니다.
 
 자세한 내용은 [인증 기본 사항](./securing-liferay/authentication-basics.md)을 참조하십시오.
-
-
 
 ## 권한
 
 Liferay DXP에는 강력한 역할 기반 액세스 제어(RBAC) 시스템이 있습니다. 사이트, 팀, 사용자 그룹 또는 조직에 사용자를 할당할 수 있습니다. 사용자 정의 역할을 생성할 수 있고, 이러한 역할에 권한을 할당할 수 있으며, 해당 역할을 사용자에게 할당할 수 있습니다. 역할은 사이트, 조직 또는 전역과 같은 특정 컨텍스트에서만 적용되도록 범위가 지정됩니다. 자세한 내용은 [역할 및 권한](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) 을 참조하십시오.
-
-
 
 ## 웹 서비스 보안
 
@@ -62,8 +56,6 @@ Liferay 웹 서비스에는 보안 및 인증에 대한 다층적이고 구성 �
 * [Cross-Origin Resource Sharing](./securing-liferay/securing-web-services/setting-up-cors.md) 구성은 신뢰할 수 있는 소스에서만 리소스 검색을 활성화할 수 있습니다.
 
 자세한 내용은 [웹 서비스 보안 소개](./securing-liferay/securing-web-services.md) 을 참조하십시오.
-
-
 
 ## 미세 조정 보안
 
@@ -76,22 +68,15 @@ Liferay 웹 서비스에는 보안 및 인증에 대한 다층적이고 구성 �
 
 이러한 기능은 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)을 사용하여 구성할 수 있습니다.
 
-
-
 ```{warning}
 Liferay Portal의 철학은 "기본적으로 보안"입니다. 보안 관련 기본값 또는 화이트리스트를 수정할 때 상당한 주의를 기울이십시오. 이러한 작업은 잘못된 보안 구성 및 안전하지 않은 배포로 이어질 수 있습니다.
 ```
-
-
-
 
 ## 추가 정보
 
 Liferay Portal 설치 보안에 대한 자세한 내용은 [보안 설명](https://www.liferay.com/security), [커뮤니티 보안 팀](https://portal.liferay.dev/people/community-security-team)및 해당 페이지에 나열된 리소스를 참조하십시오.
 
 [Liferay Marketplace](https://www.liferay.com/marketplace)에서 사용할 수 있는 추가 보안 플러그인이 있습니다.
-
-
 
 ## 다음 단계
 

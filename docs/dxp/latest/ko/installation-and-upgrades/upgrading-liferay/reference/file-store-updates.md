@@ -32,6 +32,6 @@ CMIS Store는 7.0.10 수정팩 14에서 더 이상 사용되지 않으며 DXP 7.
 
 ## 시스템 설정에서 파일 저장소 구성
 
-DXP 7.0부터 문서 저장소 유형별 구성(예: 단순 파일 저장소, 고급 파일 저장소, S3 등에 특정)은 제어판에서 _구성_ → _시스템 설정_ → _파일 저장소_또는 OSGi 구성 파일(`.config` 파일)을 사용합니다. 유형별 구성은 더 이상 `portal-ext.properties`을 사용하여 수행되지 않습니다. 데이터베이스를 업그레이드한 후 [시스템 설정](../../../system-administration/file-storage.md)에서 파일 저장소를 구성하십시오.
+DXP 7.0부터 문서 저장소 유형별 구성(예: 단순 파일 저장소, 고급 파일 저장소, S3 등에 특정)은 제어판에서 _구성_ → _시스템 설정_ → _파일 저장소_ 또는 OSGi 구성 파일(`.config` 파일)을 사용합니다. 유형별 구성은 더 이상 `portal-ext.properties`을 사용하여 수행되지 않습니다. 데이터베이스를 업그레이드한 후 [시스템 설정](../../../system-administration/file-storage.md)에서 파일 저장소를 구성하십시오.
 
 저장소 구성에 대한 자세한 내용은 [File Storage 구성](../../../system-administration/file-storage.md) 을 참조하십시오.

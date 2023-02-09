@@ -1,6 +1,6 @@
 # TCP를 통한 유니캐스트 구성
 
-네트워크 구성 또는 클러스터 노드 간의 지리적 거리로 인해 [UDP 멀티캐스트 클러스터링](./configuring-cluster-link.md#using-multicast-over-udp)을 사용할 수 없는 경우 TCP 유니캐스트를 구성할 수 있습니다. 노드를 분리하는 방화벽이 있거나 노드가 다른 지리적 위치에 있는 경우 이를 사용해야 합니다.
+네트워크 구성 또는 클러스터 노드 간의 지리적 거리로 인해 [UDP 멀티캐스트 클러스터링](./configuring-cluster-link.md#using-multicast-over-udp)을 사용할 수 없는 경우 TCP 유니캐스트를 구성할 수 있습니다. 노드를 분리하는 방화벽이 있거나 노드가 다른 지리적 사이트에 있는 경우 이를 사용해야 합니다.
 
 ## 유니캐스트 구성
 
@@ -24,7 +24,7 @@
     어떤 것을 선택해야 할지 잘 모르겠다면 TCPPing을 사용하십시오. 나머지 단계에서는 TCPPing을 사용합니다. 다른 것에 대한 자세한 내용은 [Alternative Discovery Protocols](#alternative-discovery-protocols) 을 참조하십시오.
     <!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. jrhoun -->
 
-1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com . liferay . portal . cluster . multiple -[version]에서 <code>tcp.xml` 파일을 추출합니다. jar/lib / jgroups -[version]. Final . jar/tcp.xml</code> DXP 웹 응용 프로그램의 `WEB-INF/classes에 있는 <code>jgroups` 이라는 폴더와 같이 DXP에 액세스할 수 있는 위치에</code> 폴더.
+1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com . liferay . portal . cluster . multiple 에서 `tcp.xml` 파일을 추출합니다. [version]. jar/lib / jgroups - [version]. Final . jar/tcp.xml`을 DXP 웹의 `jgroups`라는 폴더와 같이 DXP에 액세스할 수 있는 사이트로 애플리케이션의 `WEB-INF/classes` 폴더.
 
     ```
     WEB-INF/classes/jgroups/tcp.xml
@@ -61,7 +61,7 @@
         -Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]
         ```
 
-1. `tcp.xml` 파일을 각 노드의 동일한 위치에 복사하고 TCP 바인드 포트를 각 노드에서 사용하지 않는 포트로 설정해야 합니다. JVM 인수를 참조해야 합니다. 예를 들어 IP 주소가 `192.168.224.155`인 노드에서 다음과 같이 TCPPing을 구성합니다.
+1. `tcp.xml` 파일을 각 노드의 동일한 사이트에 복사하고 TCP 바인드 포트를 각 노드에서 사용하지 않는 포트로 설정해야 합니다. JVM 인수를 참조해야 합니다. 예를 들어 IP 주소가 `192.168.224.155`인 노드에서 다음과 같이 TCPPing을 구성합니다.
 
     ```xml
     <TCP bind_port="7800"/>
@@ -135,9 +135,9 @@ JGroups는 Rackspace Ping, BPing, File Ping 등을 포함하여 클러스터 구
     -Djgroups.bind_addr=[node_ip_address]
     ```
 
-1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com . liferay . portal . cluster . multiple -[version]에서 <code>tcp.xml` 파일을 추출합니다. jar/lib / jgroups -[version]. Final . jar/tcp.xml</code> DXP 웹 응용 프로그램의 `WEB-INF/classes에 있는 <code>jgroups` 이라는 폴더와 같이 DXP에 액세스할 수 있는 위치에</code> 폴더.
+1. `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com . liferay . portal . cluster . multiple 에서 `tcp.xml` 파일을 추출합니다. [version]. jar/lib / jgroups - [version]. Final . jar/tcp.xml`을 DXP 웹의 `jgroups`라는 폴더와 같이 DXP에 액세스할 수 있는 사이트로 애플리케이션의 `WEB-INF/classes` 폴더.
 
-1. 동일한 위치에 `tcp.xml` 의 복사본을 만들고 두 파일의 이름을 변경하여 하나는 제어 채널용으로, 다른 하나는 전송 채널용으로 지정합니다. 예를 들어 다음 파일 이름을 사용할 수 있습니다.
+1. 동일한 사이트에 `tcp.xml` 의 복사본을 만들고 두 파일의 이름을 변경하여 하나는 제어 채널용으로, 다른 하나는 전송 채널용으로 지정합니다. 예를 들어 다음 파일 이름을 사용할 수 있습니다.
 
     * `tcp-control.xml`
     * `tcp-transport.xml`

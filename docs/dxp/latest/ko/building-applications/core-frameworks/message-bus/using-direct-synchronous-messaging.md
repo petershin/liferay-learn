@@ -5,12 +5,13 @@
 ## 다이렉트 동기 메시지 보내기
 
 예제 프로젝트에서는 `SynchronousMessageSender` 을 사용하여 두 수신기에 직접 메시지를 보냅니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
@@ -140,9 +141,9 @@ Then, follow these steps:
 
 축하합니다! 직접 동기식 메시징을 사용하는 방법을 알고 있습니다.
 
-## 무엇 향후 계획
+## 다음
 
-기본 *모드를 사용하여 동기식 메시징을 탐색하려면 [기본 동기식 메시징 사용</em> 을 참조](./using-default-synchronous-messaging.md).</p>
+*기본* 모드를 사용하여 동기식 메시징을 탐색하려면 [기본 동기식 메시징 사용](./using-default-synchronous-messaging.md)을 참조하세요.
 
 메시지를 보낸 후 즉시 처리를 계속하려면 [비동기 메시징 사용](./using-asynchronous-messaging.md)을 참조하십시오.
 

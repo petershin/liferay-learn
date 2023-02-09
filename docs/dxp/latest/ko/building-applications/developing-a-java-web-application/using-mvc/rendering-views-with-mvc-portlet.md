@@ -11,12 +11,13 @@
 ## 여러 보기가 있는 MVC 포틀릿 배포
 
 다음은 예제 포틀릿을 배치하고 보기 사이를 탐색하는 방법입니다. 학습 목적으로 포틀릿은 `mvcPath` 매개변수 값을 기록합니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-c8m3.zip -O
@@ -131,7 +132,7 @@ View 2 템플릿 `view2.jsp` 도 포틀릿 렌더링 URL을 사용하여 `view1.
 
 View 1로의 왕복을 구현합니다.
 
-## 무엇 향후 계획
+## 다음
 
 이제 포틀릿 보기를 렌더링하는 방법을 알았습니다. 다음으로, 포틀릿에서 조치를 수행하거나 별도의 `RenderCommand` 클래스를 사용하여 보기를 렌더링할 수 있습니다.
 

@@ -7,12 +7,13 @@
 ## 작업을 처리하는 MVC 포틀릿 배포
 
 예제 MVC 포틀릿에는 별도의 포틀릿 메서드에 매핑되는 세 개의 포틀릿 작업 URL이 있습니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to deploy the portlet and trigger its actions:
+그런 다음 다음 단계에 따라 포틀릿을 배포하고 작업을 트리거합니다.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
@@ -152,7 +153,7 @@ JSP 작업 URL:
 
 `nameForTheDoSomethingMoreMethod` 이라는 포틀릿 매개변수는 조치 URL과 메소드 사이의 느슨한 결합을 제공합니다. 예를 들어 메서드 이름을 변경하거나 `@ProcessAction(name = "nameForTheDoSomethingMoreMethod")` 주석을 다른 메서드에 할당할 수 있습니다.
 
-## 무엇 향후 계획
+## 다음
 
 이제 작업 URL을 사용하는 방법을 알았으므로 작업 메서드 작성에 집중할 수 있습니다. 또는 [MVCActionCommand 클래스](./mvc-action-command.md)을 사용하여 조사할 수 있습니다. 또는 다른 포틀릿 단계 처리를 탐색할 준비가 되었으면 [MVCRenderCommand](./mvc-render-command.md) 및 [MVCResourceCommand](./mvc-resource-command.md) 클래스 사용을 살펴보십시오.
 

@@ -3,7 +3,7 @@
 사이트에서 동일한 일련의 작업(사이트의 Wiki 콘텐츠 조정, 게시판 스레드 관리, 블로그 작성, 사이트의 특정 페이지 편집 등)을 수행하는 *임시* 사용자 그룹이 있는 경우 다음을 수행할 수 있습니다. 사이트 팀으로 구성한 다음 다양한 사이트별 기능에 대한 팀 권한을 할당합니다. 사이트 팀은 단일 사이트 내에서 권한을 관리하는 데 선호되는 방법입니다. 사이트 팀에 할당된 권한은 해당 사이트에만 적용됩니다.
 
 ```{note}
-Liferay Portal 인스턴스의 여러 사이트 또는 조직에서 사용할 사용자 그룹에 대한 권한을 생성하고 적용하려면 사용자를 [사용자 그룹](../../../users-and-permissions/user -groups/creating-and-managing-user-groups.md) 및 [Roles]을 통해 사용자 그룹 권한 할당(../../../users-and-permissions/roles-and-permissions/understanding-roles-and -권한.md).
+Liferay Portal 인스턴스의 여러 사이트 또는 조직에서 사용할 사용자 그룹에 대한 권한을 생성하고 적용하려면 사용자를 [사용자 그룹](../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) 및 [Roles]을 통해 사용자 그룹 권한 할당(../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md).
 ```
 
 아래 단계에서는 다음 주제를 다룹니다.

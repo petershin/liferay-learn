@@ -39,9 +39,7 @@ Liferay의 [Custom Fields](../../../system-administration/configuring-liferay/ad
 
 ## 작업 추가
 
-항목이 추가, 업데이트 또는 제거될 때 트리거되는 시스템 개체에 사용자 지정 작업을 추가할 수 있습니다. 시스템 객체는 Webhook</a>[개, Groovy Script](./actions/defining-object-actions.md#webhook-actions)[개, Notification](./actions/defining-object-actions.md#groovy-script-actions) 작업
-개를 지원합니다. [개체 항목 추가](./actions/defining-object-actions.md#add-an-object-entry-actions) 작업은 시스템 개체에서 지원되지 않습니다. 자세한 내용은 [개체 작업 정의](./actions/defining-object-actions.md) 을 참조하십시오.</p> 
-
+항목이 추가, 업데이트 또는 제거될 때 트리거되는 시스템 개체에 사용자 지정 작업을 추가할 수 있습니다. 시스템 개체는 [Webhook](./actions/defining-object-actions.md#webhook-actions), [Groovy 스크립트](./actions/defining-object-actions.md#groovy-script-actions) 및 [ 알림](./actions/defining-object-actions.md#notification-actions) 작업. [개체 항목 추가](./actions/defining-object-actions.md#add-an-object-entry-actions) 작업은 시스템 개체에서 지원되지 않습니다. 자세한 내용은 [개체 작업 정의](./actions/defining-object-actions.md)를 참조하십시오. 
 
 
 ## 유효성 검사 추가

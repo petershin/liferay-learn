@@ -68,6 +68,6 @@ Service Builder는 *entity*, *finder*및 *Hibernate*의 세 가지 수준에서 
 
 Service Builder는 데이터베이스 지속성 코드 생성과 관련된 많은 공통 작업을 자동화하지만 사용자 지정 SQL 쿼리 생성을 방해하지는 않습니다. XML 파일에서 사용자 지정 SQL 쿼리를 정의하고 쿼리를 실행하는 파인더 메서드를 구현할 수 있습니다. 할 일이 있다면 Service Builder가 방해가 되지 않습니다. 또한 동적 쿼리를 사용하여 Hibernate의 기준 API에 액세스할 수 있습니다.
 
-## 무엇 향후 계획
+## 다음
 
 Service Builder는 Liferay DXP 및 해당 응용 프로그램 전체에서 독점적으로 사용되므로 충분히 테스트되고 강력합니다. 초기 개발 시간과 프로젝트를 유지 관리, 확장 또는 사용자 지정하는 데 소요되는 시간 모두에서 많은 개발 시간을 절약할 수 있습니다. 시작하려면 [Service Builder Basics](./service-builder/service-builder-basics.md)부터 시작하십시오.

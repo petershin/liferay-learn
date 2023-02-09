@@ -12,7 +12,10 @@ Liferay Commerce를 사용하면 카탈로그, 가격표 및 채널에서 서로
 
 ```{note}
 *Global Menu*의 *Commerce* 탭에 있는 *Currencies* 페이지를 통해 사용 가능한 통화를 볼 수 있습니다. 여기에서 통화를 편집, 우선 순위 지정, 추가/제거 및 활성화/비활성화할 수 있습니다. 자세한 내용은 [통화 참조](./currencies-reference.md) 및 [새 통화 추가](./adding-a-new-currency.md)를 참조하세요.
-```<!-- Update article once \[COMMERCE-5171\](https://issues.liferay.com/browse/COMMERCE-5171) is implemented. It removes Catalog Currency and uses the Base Price List currency alone as currency basis. -->## 추가 정보
+```
+<!-- Update article once \[COMMERCE-5171\](https://issues.liferay.com/browse/COMMERCE-5171) is implemented. It removes Catalog Currency and uses the Base Price List currency alone as currency basis. -->
+
+## 추가 정보
 
 * [새 통화 추가](./adding-a-new-currency.md)
 * [환율 관리](./managing-exchange-rates.md)

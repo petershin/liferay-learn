@@ -148,11 +148,9 @@ Liferay는 다른 시스템과 통합할 수 있습니다. 예를 들어 LDAP와
 
 최적의 성능을 위해 Liferay의 JVM, 연결 풀 등을 조정하십시오. 자세한 내용은 [튜닝 Liferay](./setting-up-liferay/tuning-liferay.md) 및 [JVM](./setting-up-liferay/tuning-your-jvm.md) 튜닝을 참조하십시오.
 
-## 무엇 향후 계획
+## 다음
 
-Liferay DXP를 사용</a>수행하십시오. 그런 다음 [인스턴스 구성](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) 및 위에 나열된 다른 [설정 작업](#setup-tasks) 을 계속합니다.</p> 
-
-
+Liferay DXP를 사용 중이고 [활성화](./setting-up-liferay/activating-liferay-dxp.md)하지 않은 경우 먼저 활성화하십시오. 그런 다음 [인스턴스 구성](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) 및 위에 나열된 다른 [설정 작업](#setup-tasks)을 계속 진행합니다.
 
 ```{important}
 프로덕션으로 이동하기 전에 설치 및 데이터 백업 프로세스를 구성하십시오. 자세한 내용은 [백업](./maintaining-a-liferay-installation/backing-up.md)을 참조하십시오.

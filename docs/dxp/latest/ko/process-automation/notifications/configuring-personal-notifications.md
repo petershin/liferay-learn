@@ -12,7 +12,7 @@ Liferay는 통합 알림 도구를 제공하므로 플랫폼 이벤트에 대해
 
    ![애플리케이션 표시줄에서 작업 버튼을 클릭하고 구성을 선택합니다.](./configuring-personal-notifications/images/02.png)
 
-   또는 알림 위젯이 배포되는 모든 위치에서 이러한 설정에 액세스할 수 있습니다. 위젯의 *옵션* 버튼(![Options Button](../../images/icon-widget-options.png))을 클릭하고 *구성*을 선택합니다.
+   또는 알림 위젯이 배포되는 모든 사이트에서 이러한 설정에 액세스할 수 있습니다. 위젯의 *옵션* 버튼(![Options Button](../../images/icon-widget-options.png))을 클릭하고 *구성*을 선택합니다.
 
    ![알림 위젯의 옵션 버튼을 클릭하고 구성을 선택합니다.](./configuring-personal-notifications/images/03.png)
 

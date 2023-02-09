@@ -95,6 +95,5 @@ Liferay Objects는 코드를 작성하지 않고도 비즈니스 요구 사항�
 
 :::{grid-item-card} 개체 삭제
 :link: ./creating-and-managing-objects/deleting-objects.md
-:::  
-:
 :::
+::::

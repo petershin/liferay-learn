@@ -46,7 +46,7 @@ creating-and-managing-forms/forms-permissions-reference.md
 - [도움말 텍스트 및 미리 정의된 값 제공](./creating-and-managing-forms/providing-help-text-and-predefined-values.md)
 - [조건부 필드로 양식 작성](./creating-and-managing-forms/building-forms-with-conditional-fields.md)
 - [검증 및 마스킹](./creating-and-managing-forms/validating-text-and-numeric-field-entries.md)
-- [검색 위치 필드 사용](./creating-and-managing-forms/using-the-search-location-field.md)
+- [검색 사이트 필드 사용](./creating-and-managing-forms/using-the-search-location-field.md)
 - [양식 번역](./creating-and-managing-forms/translating-forms.md)
 - [자동 저장 동작 사용자 지정](./creating-and-managing-forms/customizing-auto-save-behavior.md)
 - [양식 내보내기 및 가져오기](./creating-and-managing-forms/exporting-and-importing-forms.md)

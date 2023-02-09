@@ -13,12 +13,13 @@
 ## 예제 배포
 
 이 섹션에서는 Liferay Commerce 인스턴스에서 예제 주문 유효성 검사기를 시작하고 실행합니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the [Acme Commerce Order Validator](./liferay-n9b2.zip).
+1. [Acme Commerce Order Validator](./liferay-n9b2.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-n9b2.zip -O

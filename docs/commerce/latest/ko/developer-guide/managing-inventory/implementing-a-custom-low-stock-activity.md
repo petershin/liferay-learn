@@ -15,12 +15,13 @@
 ## 예제 배포
 
 이 섹션에서는 Liferay Commerce 인스턴스에서 낮은 재고 활동을 시작하고 실행하는 예제를 얻을 것입니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the [Acme Commerce Low Stock Activity](./liferay-j1e4.zip).
+1. [Acme Commerce 낮은 재고 활동](./liferay-j1e4.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/managing-inventory/liferay-j1e4.zip -O
@@ -89,7 +90,7 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
 public void execute(CPInstance cpInstance) throws PortalException;
 ```
 
-> 이 메서드는 사용자 지정 활동에 대한 비즈니스 논리가 구현되는 위치입니다.
+> 이 메서드는 사용자 지정 활동에 대한 비즈니스 논리가 구현되는 사이트입니다.
 
 ```java
 public String getKey();

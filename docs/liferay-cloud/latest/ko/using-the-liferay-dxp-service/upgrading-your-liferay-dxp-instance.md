@@ -29,7 +29,7 @@ Liferay Cloud에서 환경을 업그레이드하려면 업그레이드된 데이
 업그레이드 절차를 시작하기 전에 다음 전제 조건을 충족하십시오.
 
 * [로컬에서 사용 가능한 MySQL 설치](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
-* [업그레이드하려는 DXP 버전에 대한 Liferay DXP](https://customer.liferay.com/en_US/downloads) 번들을 다운로드했습니다. 이 번들을 선택한 위치로 추출하십시오.
+* [업그레이드하려는 DXP 버전에 대한 Liferay DXP](https://customer.liferay.com/en_US/downloads) 번들을 다운로드했습니다. 이 번들을 선택한 사이트로 추출하십시오.
 
 ```{important}
 이전 번들을 재사용하는 대신 업그레이드용 새 번들을 다운로드하십시오. 이전 사용 데이터는 데이터 업그레이드를 방해할 수 있습니다.
@@ -51,7 +51,7 @@ Liferay Cloud에서 환경을 업그레이드하려면 업그레이드된 데이
 
 ## 데이터 추출 및 가져오기
 
-다음 단계는 다운로드한 아카이브에서 데이터를 추출하고 업그레이드에 필요한 위치로 데이터를 이동하는 것입니다.
+다음 단계는 다운로드한 아카이브에서 데이터를 추출하고 업그레이드에 필요한 사이트로 데이터를 이동하는 것입니다.
 
 ### 데이터 볼륨 추출
 
@@ -67,7 +67,7 @@ Liferay Cloud에서 환경을 업그레이드하려면 업그레이드된 데이
 
 ### 데이터베이스 추출 및 가져오기
 
-다운로드한 데이터베이스 아카이브( `backup-db-<PROJECT_NAME>-prd-`&lt;BACKUP_ID&gt;위치에서 명령 프롬프트를 열고 다음 단계를 수행하여 이를 MySQL로 가져옵니다.
+다운로드한 데이터베이스 아카이브( `backup-db-<PROJECT_NAME>-prd-`&lt;BACKUP_ID&gt;사이트에서 명령 프롬프트를 열고 다음 단계를 수행하여 이를 MySQL로 가져옵니다.
 
 1. 데이터베이스 아카이브를 추출합니다.
 
@@ -221,7 +221,7 @@ Checking to see if all upgrades have completed... done.
 
 업그레이드된 데이터베이스가 올바르게 작동하도록 환경에서 사용하는 Liferay 이미지 버전을 업데이트해야 합니다.
 
-Liferay DXP의 새 버전을 반영하도록 필요에 따라 다음 위치를 업데이트합니다.
+Liferay DXP의 새 버전을 반영하도록 필요에 따라 다음 사이트를 업데이트합니다.
 
 * `liferay/LCP.json`의 `이미지` 속성. [Services Changelogs](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) 에서 업데이트된 이미지를 확인하고 업그레이드된 DXP 버전이 이미지의 버전과 일치하는지 확인합니다(예: `7.2` in `liferaycloud/liferay-dxp:7.2-4.0.7`).
 

@@ -9,32 +9,33 @@
 ```
 
 ## Liferay 인스턴스 설정
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) a basic Object for this tutorial:
+그런 다음 다음 단계에 따라 이 자습서의 기본 객체를 [만들기](../../creating-and-managing-objects/creating-objects.md)하십시오.
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and enter these values:
+1. *추가* 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Able` |
-   | Plural Label | `Ables` |
-   | Name | `Able` |
+    | 필드 | 가치 |
+    | :--- | :--- |
+    | 라벨 | '가능' |
+    | 복수 레이블 | '에이블스' |
+    | 이름 | '가능' |
 
-1. Select the new *Object* draft, go to the *Fields* tab, and add a single text field:
+1. 새 *개체* 초안을 선택하고 *필드* 탭으로 이동한 다음 단일 텍스트 필드를 추가합니다.
 
-   | Label | Field Name | Type | Required |
-   | :--- | :--- | :--- | :--- |
-   | Name | name | Text | &#10004; |
+    | 라벨 | 필드명 | 유형 | 필수 |
+    | :--- | :--- | :--- | :--- |
+    | 이름 | 이름 | 텍스트 | &#10004; |
 
-1. Go to the *Details* tab and click *Publish*.
+1. *세부 정보* 탭으로 이동하여 *게시*를 클릭합니다.
 
-   ```{important}
-   For this tutorial, you must use the above values.
-   ```
+    ```{중요}
+    이 자습서에서는 위의 값을 사용해야 합니다.
+    ```
 
 [Publishing an Object](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 은 데이터 수신 및 저장을 위한 새로운 애플리케이션을 생성하고 활성화합니다. 이제 Headless API를 통해 액세스할 수 있습니다.
 

@@ -85,10 +85,7 @@
 
 ### OpenOffice 또는 LibreOffice를 Web Content Display와 통합
 
-Liferay Portal 인스턴스와 OpenOffice 또는</a>
-활성화하면 콘텐츠에 대한 문서 변환을 활성화할 수 있습니다. 이 통합을 통해 사용자는 다양한 형식으로 콘텐츠를 다운로드할 수 있습니다. 웹 콘텐츠 표시 위젯에 대한 [*사용자 도구*](#user-tools) 구성에서 사용 가능한 형식을 선택해야 합니다.</p> 
-
-
+Liferay Portal에서 [OpenOffice 또는 LibreOffice 통합을 활성화](../../../content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration.md)하는 경우 예를 들어 콘텐츠에 대한 문서 변환을 활성화할 수 있습니다. 이 통합을 통해 사용자는 다양한 형식으로 콘텐츠를 다운로드할 수 있습니다. 웹 콘텐츠 표시 위젯에 대한 [*사용자 도구*](#user-tools) 구성에서 사용 가능한 형식을 선택해야 합니다.
 
 ## 관련 정보
 

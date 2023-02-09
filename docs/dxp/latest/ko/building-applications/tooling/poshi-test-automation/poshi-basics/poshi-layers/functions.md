@@ -39,4 +39,4 @@ function click {
 Click(locator1 = "//button[contains(.,'Edit')]");
 ```
 
-기능은 Poshi 독립형에서 쉽게 사용할 수 있습니다. 사용 가능한 기능은 Liferay Portal 소스</a>의 기능 디렉토리에서 찾을 수 있습니다.</p>
+기능은 Poshi 독립형에서 쉽게 사용할 수 있습니다. 사용 가능한 기능은 [Liferay Portal 소스의 기능 디렉토리](https://github.com/liferay/liferay-portal/tree/master/portal-web/test/functional/com/liferay/portalweb/functions)에서 찾을 수 있습니다. 

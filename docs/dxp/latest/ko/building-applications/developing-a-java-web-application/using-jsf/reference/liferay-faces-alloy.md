@@ -1,9 +1,10 @@
 # Liferay 얼굴 합금
 
-Liferay Faces Alloy는</code> `로 배포됩니다. Liferay Faces Alloy를 포틀릿 프로젝트에 대한 종속성으로 추가하여 JSF 개발과 일관된 방식으로 AlloyUI를 사용할 수 있습니다. </p>
+Liferay Faces Alloy는 `.jar` 파일로 배포됩니다. Liferay Faces Alloy를 포틀릿 프로젝트에 대한 종속성으로 추가하여 JSF 개발과 일관된 방식으로 AlloyUI를 사용할 수 있습니다.
 
-<pre><code class="{note}">AlloyUI는 Liferay DXP 7.2에서 더 이상 사용되지 않습니다.
-`</pre>
+```{note}
+AlloyUI는 Liferay DXP 7.2에서 더 이상 사용되지 않습니다.
+```
 
 Liferay IDE/Developer Studio에서 JSF 포틀릿을 생성하는 동안 포틀릿의 JSF 구성 요소 제품군을 선택할 수 있습니다. 옵션에는 *JSF 표준*, [*ICEfaces*](http://www.icesoft.org/java/projects/ICEfaces/overview.jsf), [*PrimeFaces*](http://primefaces.org/), [*RichFaces*](http://richfaces.jboss.org/)및 *Liferay Faces Alloy*가 포함됩니다.
 

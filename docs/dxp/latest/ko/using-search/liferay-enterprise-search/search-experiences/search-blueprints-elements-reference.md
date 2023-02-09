@@ -8,7 +8,7 @@
 
 Blueprints &rarr; 쿼리 요소 화면에서 작업하는 동안 요소에 대한 쿼리 구성 JSON을 보려면 작업 아이콘(![Actions](../../../images/icon-actions.png)) &rarr; 요소 JSON 보기를 클릭합니다.
 
-블루프린트의 제목 표시줄에 있는 토글 스위치를 사용하여 블루프린트에서 각 요소를 비활성화하거나 활성화할 수 있습니다. Blueprint에서 요소를 간소화하여 보기 위해 요소의 제목 표시줄에 있는 아래쪽 화살표 아이콘(![Down Arrow Icon](../../../images/icon-angle-down.png))을 사용하여 요소의 콘텐츠를 축소할 수 있습니다.
+블루프린트의 제목 표시줄에 있는 토글 스사이트를 사용하여 블루프린트에서 각 요소를 비활성화하거나 활성화할 수 있습니다. Blueprint에서 요소를 간소화하여 보기 위해 요소의 제목 표시줄에 있는 아래쪽 화살표 아이콘(![Down Arrow Icon](../../../images/icon-angle-down.png))을 사용하여 요소의 콘텐츠를 축소할 수 있습니다.
 
 각 요소에는 구성 옵션이 있으며, 그 중 다수는 Elasticsearch [Query DSL 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl.html)에 정의된 쿼리 속성에 직접적으로 해당합니다. 특정 쿼리 유형에 대한 링크는 아래에 적절하게 제공됩니다.
 
@@ -165,11 +165,11 @@ _외부 참조:_ 자세한 내용은 Elasticsearch [함수 점수 쿼리](https:
 
 가우시안 함수로 검색 사용자에게 더 가까운 콘텐츠를 부스트합니다.
 
-Boost Proximity 요소는 [ipstack](https://ipstack.com) 서비스를 사용하여 문서에서 [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) 필드로 표시된 사용자 위치에 더 가까운 검색 결과를 향상시킵니다.
+Boost Proximity 요소는 [ipstack](https://ipstack.com) 서비스를 사용하여 문서에서 [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) 필드로 표시된 사용자 사이트에 더 가까운 검색 결과를 향상시킵니다.
 
-ipstack 서비스 및 Boost Proximity Element와 함께 작동하려면 검색 문서에 [geopoint 필드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) 이 있어야 합니다. Liferay에는 기존 자산에 사용자 정의 필드로 추가할 수 있는 호환 가능한 지리적 위치 필드가 포함되어 있습니다.
+ipstack 서비스 및 Boost Proximity Element와 함께 작동하려면 검색 문서에 [geopoint 필드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) 이 있어야 합니다. Liferay에는 기존 자산에 사용자 정의 필드로 추가할 수 있는 호환 가능한 지리적 사이트 필드가 포함되어 있습니다.
 
-ipstack 서비스 설정, 사용자 정의 지리적 위치 필드 사용, Blueprint에 Boost Proximity 요소 추가에 대한 자세한 내용은 [검색 경험 개인화](./personalizing-the-search-experience.md) 을 참조하십시오.
+ipstack 서비스 설정, 사용자 정의 지리적 사이트 필드 사용, Blueprint에 Boost Proximity 요소 추가에 대한 자세한 내용은 [검색 경험 개인화](./personalizing-the-search-experience.md) 을 참조하십시오.
 
 ### 부스트 태그 콘텐츠
 

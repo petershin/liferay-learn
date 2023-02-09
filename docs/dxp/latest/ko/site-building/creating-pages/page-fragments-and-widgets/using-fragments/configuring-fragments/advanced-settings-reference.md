@@ -60,10 +60,7 @@ framgent의 고급 설정을 구성하려면 페이지에 대한 업데이트 - 
 *확장* 아이콘( ![Expand](../../../../../images/icon-expand.png) )을 클릭하여 모달 창을 열고 프래그먼트의 CSS를 편집할 때 더 많은 공간을 확보하십시오.
 ```
 
-현재 사용 중인</a>
-가져온 맞춤 CSS의 변수를 사용할 수도 있습니다. 이 예에서는 스타일 책의 정보 색상(진한 파란색으로 정의됨)을 사용하여 조각의 배경색을 설정합니다.</p> 
-
-
+[스타일 북](../../../../site-appearance/style-books/using-a-style-book-to-standardize- site-appearance.md)를 현재 사용 중입니다. 이 예에서는 스타일 책의 정보 색상(진한 파란색으로 정의됨)을 사용하여 조각의 배경색을 설정합니다.
 
 ```css
 .[$FRAGMENT_CLASS$] {
@@ -71,9 +68,7 @@ framgent의 고급 설정을 구성하려면 페이지에 대한 업데이트 - 
 }
 ```
 
-
 ![스타일 북의 변수를 사용하여 특정 조각에 대한 CSS를 미세 조정할 수 있습니다.](./advanced-settings-reference/images/03.png)
-
 
 
 ### CSS 클래스
@@ -82,28 +77,19 @@ framgent의 고급 설정을 구성하려면 페이지에 대한 업데이트 - 
 
 ![이 필드에 사용자 정의 CSS 클래스를 입력하면 동일한 페이지의 다른 부분에 대한 고급 설정에서 제안으로 표시됩니다.](./advanced-settings-reference/images/04.png)
 
-
-
 ```{note}
 직접 추가한 CSS 클래스만 CSS 클래스 텍스트 상자에 제안으로 표시됩니다. 기존 클래스 또는 변수(예: `[$FRAGMENT_CLASS$]`)는 표시되지 않으며 이 필드에 추가할 필요가 없습니다.
 ```
 
-
-
-
 ## 고급 컨테이너 설정
 
 컨테이너 조각에는 [표준 항목](#standard-advanced-settings) 및 고급 설정이 포함됩니다.
-
-
 
 ### HTML 태그
 
 컨테이너 조각에 대해 생성된 HTML 태그를 선택합니다: `div`, `header`, `nav`, `section`, `article`, `main`, `aside`또는 `footer`. 이러한 태그는 웹 스크레이퍼, 브라우저 및 사이트 렌더러가 페이지 콘텐츠를 더 쉽게 찾고 검색하는 데 도움이 됩니다. 선택한 태그는 선택한 컨테이너 자체에만 적용되며 중첩된 조각이나 콘텐츠에는 적용되지 않습니다.
 
 ![고급 설정 탭에서 컨테이너 조각에 사용되는 HTML 태그를 선택할 수 있습니다.](./advanced-settings-reference/images/05.png)
-
-
 
 ### 콘텐츠 가시성을 자동으로 설정
 
@@ -112,8 +98,6 @@ framgent의 고급 설정을 구성하려면 페이지에 대한 업데이트 - 
 기본적으로 Liferay는 페이지의 모든 컨테이너를 자동으로 렌더링합니다. 그러나 컨테이너의 [`content-visibility`](https://drafts.csswg.org/css-contain/#propdef-content-visibility) 속성을 `auto` 로 설정하면 요소가 필요할 때만 렌더링됩니다. 이렇게 하면 페이지의 로드 성능이 향상될 수 있습니다.
 
 ![컨테이너의 콘텐츠 가시성을 자동으로 설정하여 페이지 로드 성능을 개선합니다.](./advanced-settings-reference/images/06.png)
-
-
 
 ## 추가 정보
 

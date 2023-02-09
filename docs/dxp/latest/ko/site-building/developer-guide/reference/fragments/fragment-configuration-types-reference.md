@@ -52,9 +52,7 @@ FreeMarker 컨텍스트에 삽입된 구성 값은 JSON 파일에 지정된 정�
 
 * 텍스트 상자에 색상의 16진수 코드를 입력합니다.
 
-* Stylebook</em> 의 *값 버튼을 클릭하여 현재 사용 중인 [스타일 북](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)에서 정의된 색상을 선택할 사전 정의된 색상 메뉴를 엽니다. 그러면 단추를 다시 눌러 연결을 해제할 때까지 필드 값이 선택한 토큰에 연결됩니다. 토큰 값의 연결을 해제하면 선택한 색상이 해당하는 16진수 코드 값으로 다시 변환됩니다.</p></li>
-
-* 색상 피커에 기본값이 정의되어 있지 않으면 *기본값* 드롭다운 메뉴를 클릭하여 현재 사용 중인 스타일 북에서 색상을 선택합니다. 이것은 값을 선택할 때 Stylebook의 값 단추와 동일하게 작동합니다.</ul>
+* *스타일북의 값* 버튼을 클릭하여 현재 사용 중인 [스타일북](../../../site-appearance/style-books/using-a에서 정의된 사전 정의된 색상 메뉴를 엽니다. -style-book-to-standardize-site-appearance.md). 그러면 단추를 다시 눌러 연결을 해제할 때까지 필드 값이 선택한 토큰에 연결됩니다. 토큰 값의 연결을 해제하면 선택한 색상이 해당하는 16진수 코드 값으로 다시 변환됩니다.
 
 ![색상 선택기 구성을 사용하면 색상 값을 직접 입력하거나 범위에서 선택하거나 스타일 북에서 선택할 수 있습니다.](./fragment-configuration-types-reference/images/02.png)
 

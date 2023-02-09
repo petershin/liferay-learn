@@ -18,6 +18,6 @@ webpack이 단일 JS 번들 파일을 생성하는 동안 liferay-npm-bundler는
 * `sources`: 처리할 소스 파일이 포함된 폴더
 * `규칙`: 로더, 옵션(해당되는 경우) 및 처리할 파일을 결정하는 정규식.
 
-구성 요구 사항 및 옵션에 대한 자세한 내용은 [](./npmbundlerrc-structure.md#package-processing-options) ``하세요.
+구성 요구 사항 및 옵션에 대한 자세한 내용은 [`.npmbundlerrc`의 구조 이해](./npmbundlerrc-structure.md#package-processing-options)를 참조하세요.
 
 로더는 체인으로 연결할 수 있습니다. 로더는 `use` 속성에 나열된 순서대로 파일을 처리합니다. 파일은 첫 번째 로더로 전달되고, 처리되고, 다음 로더로 전송되는 식으로 규칙에 의해 파일이 처리될 때까지 계속됩니다. sass-loader를 사용하여 SASS 파일을 CSS로 변환한 다음 style-loader를 사용하여 JavaScript 모듈로 변환하는 것과 같은 복잡한 프로세스를 실행할 수 있습니다. 규칙이 적용되면 liferay-npm-bundler는 번들러 플러그인의 pre, post 및 babel 단계를 계속합니다.

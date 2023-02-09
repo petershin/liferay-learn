@@ -8,22 +8,21 @@
 
 Tomcat에 설치하려면 DXP WAR 설치, 종속성 설치, Tomcat 구성 및 DXP 배포가 필요합니다. 데이터베이스 및 메일 서버 연결도 구성해야 합니다.
 
-이를 수행하는 가장 간단하고 쉬운 방법은 Liferay Liferay-Tomcat [번들을 다운로드하고 여기에서 종속성, 스크립트 및](../installing-a-liferay-tomcat-bundle.md)</code> `아래 설명된 위치로 복사하는 것입니다. 그렇지 않으면 종속성을 다운로드하고 수동으로 Tomcat을 구성할 수 있습니다.</p>
+이를 수행하는 가장 간단하고 쉬운 방법은 [Liferay Liferay-Tomcat](../installing-a-liferay-tomcat-bundle.md) 번들을 다운로드하고 여기에서 종속성, 스크립트 및 `ROOT.xml`을 복사하는 것입니다. 아래에 설명된 사이트로. 그렇지 않으면 종속성을 다운로드하고 수동으로 Tomcat을 구성할 수 있습니다.
 
-<h2 spaces-before="0">전제 조건</h2>
+## 전제 조건
 
-<p spaces-before="0">Tomcat을 구성하는 방법에 관계없이 <a href="https://customer.liferay.com/downloads">도움말 센터</a> (구독) 또는 <a href="https://www.liferay.com/downloads-community">Liferay 커뮤니티 다운로드</a>에서 이러한 파일을 다운로드하여 설치해야 합니다.</p>
+Tomcat을 어떻게 구성하든 [도움말 센터](https://customer.liferay.com/downloads)(구독) 또는 [Liferay 커뮤니티 다운로드](https://www .liferay.com/downloads-community):
 
-<ul>
-<li>DXP 전쟁 파일</li>
-<li>OSGi 종속성 ZIP 파일</li>
-<li>종속성 ZIP 파일(DXP 7.3 이하)</li>
-</ul>
+* DXP 전쟁 파일
+* OSGi 종속성 ZIP 파일
+* 종속성 ZIP 파일(DXP 7.3 이하)
 
-<p spaces-before="0">Java JDK 8 또는 11이 필요합니다.</p>
+Java JDK 8 또는 11이 필요합니다.
 
-<pre><code class="{note}">지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)를 참조하십시오.  권장 JVM 설정은 [JVM 구성](../../reference/jvm-configuration.md)을 참조하십시오.
-`</pre>
+```{note}
+지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)를 참조하십시오. 권장 JVM 설정은 [JVM 구성](../../reference/jvm-configuration.md)을 참조하십시오.
+```
 
 Tomcat 서버 상위 폴더는 [*Liferay Home*](../../reference/liferay-home.md)입니다. `$TOMCAT_HOME` 는 Tomcat 서버 폴더를 나타냅니다. 일반적으로 이름은 `tomcat-[version]` 또는 `apache-tomcat-[version]`입니다.
 
@@ -59,7 +58,7 @@ DXP를 실행하도록 Tomcat을 구성하는 작업에는 다음 작업이 포�
 
 1. `setenv.bat`, `setenv.sh`,  `startup.bat`, `startup.sh`, `shutdown.bat`및 `shutdown.sh` 파일을 DXP 번들에서 `$CATALINA_BASE/bin` 로 복사합니다. 폴더. 그렇지 않으면  `setenv.bat` 및 `setenv.sh` 스크립트를 작성하십시오.
 
-1. `setenv.sh` 스크립트는 Tomcat의 서블릿 컨테이너인 Catalina에 대한 JVM 옵션을 설정합니다. 이러한 옵션 중에는 Java 런타임 환경의 위치가 있습니다. 서버에서 이 환경을 전역적으로 사용할 수 없는 경우 Tomcat이 실행될 수 있도록 `setenv.sh` 스크립트에서 해당 위치를 설정합니다. `JAVA_HOME` 환경 변수를 DXP 지원 JRE로 지정하여 이를 수행하십시오.
+1. `setenv.sh` 스크립트는 Tomcat의 서블릿 컨테이너인 Catalina에 대한 JVM 옵션을 설정합니다. 이러한 옵션 중에는 Java 런타임 환경의 사이트가 있습니다. 서버에서 이 환경을 전역적으로 사용할 수 없는 경우 Tomcat이 실행될 수 있도록 `setenv.sh` 스크립트에서 해당 사이트를 설정합니다. `JAVA_HOME` 환경 변수를 DXP 지원 JRE로 지정하여 이를 수행하십시오.
 
     ```bash
     export JAVA_HOME=/usr/lib/jvm/java-8-jdk
@@ -98,7 +97,7 @@ DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵�
 
 Tomcat 구성을 계속하십시오.
 
-1. Liferay-Tomcat 번들이 있는 경우 `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 파일을 애플리케이션 서버의 해당 위치에 복사합니다. 파일 경로가 없으면 생성하고 `ROOT.xml` 파일을 생성합니다.
+1. Liferay-Tomcat 번들이 있는 경우 `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 파일을 애플리케이션 서버의 해당 사이트에 복사합니다. 파일 경로가 없으면 생성하고 `ROOT.xml` 파일을 생성합니다.
 
     `ROOT.xml` 파일은 DXP에 대한 웹 애플리케이션 컨텍스트를 지정합니다. 예를 들어,
 
@@ -184,7 +183,7 @@ XML 파일 이름을 변경하여 기본 Liferay Portal 웹 컨텍스트를 변�
     </init-param>
     ```
 
-6. `$CATALINA_HOME/conf/web.xml`에서 애플리케이션 서버가 애플리케이션의 JAR 및 클래스에 있는 주석과 같은 추가 메타데이터를 찾아야 하는지 여부를 지정합니다. web-app</code> 요소의 속성 `를 <code>으로 설정하면 metadata-complete="true"` 으로 애플리케이션 서버에 추가 메타데이터가 없음을 알립니다. 애플리케이션 서버는 이 설정으로 더 빠르게 시작됩니다. 기본값은 추가 메타데이터를 확인하는 것입니다.
+6. `$CATALINA_HOME/conf/web.xml`에서 응용 프로그램 서버가 응용 프로그램의 JAR 및 클래스에 있는 주석과 같은 추가 메타데이터를 찾아야 하는지 여부를 지정합니다. `web-app` 요소의 속성 `metadata-complete="true"`를 설정하면 응용 프로그램 서버에 추가 메타데이터가 없음을 알립니다. 애플리케이션 서버는 이 설정으로 더 빠르게 시작됩니다. 기본값은 추가 메타데이터를 확인하는 것입니다.
 
 7. Unix, Linux 또는 Mac OS를 사용하는 경우 각 폴더에서 다음 명령을 실행하여 `$CATALINA_HOME/bin` 및 `$CATALINA_BASE/bin` 폴더의 셸 스크립트를 실행 가능하게 만듭니다.
 

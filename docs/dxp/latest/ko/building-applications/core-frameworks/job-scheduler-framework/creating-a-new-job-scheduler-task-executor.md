@@ -6,7 +6,7 @@
 
 1. **OSGI 구성 요소**: `@Component` 주석을 사용하여 모듈을 OSGi 프레임워크 내의 구성 요소로 선언합니다.
 
-1. **서비스**:</code> `내에서 모듈을 <code>DispatchTaskExecutor.class` 서비스로 식별합니다.
+1. **서비스**: `@Component` 주석 내에서 모듈을 `DispatchTaskExecutor.class` 서비스로 식별합니다.
 
 1. **OSGi 속성**: `@Component` 주석에 다음 속성을 추가합니다.
 
@@ -43,12 +43,13 @@
 다음 샘플 모듈은 사용자 정의 Job Scheduler Task Executor를 생성하고 Liferay 인스턴스에 배포하는 방법을 보여줍니다.
 
 ## 샘플 작업 스케줄러 태스크 실행자 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to download, build, and deploy the sample Job Scheduler Task Executor to the new Docker container:
+그런 다음 다음 단계에 따라 샘플 Job Scheduler Task Executor를 다운로드, 빌드 및 새 Docker 컨테이너에 배포합니다.
 
-1. Download and unzip the example module.
+1. 예제 모듈을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/liferay-s7a3.zip -O

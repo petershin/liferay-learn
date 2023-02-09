@@ -2,7 +2,7 @@
 
 Liferay DXP/Portal 7.4에서 모듈 언어 키는 `Portal-language-lang`이라는 모듈로 중앙 집중화되었습니다.
 
-소스 위치:
+소스 사이트:
 
 [`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang)
 

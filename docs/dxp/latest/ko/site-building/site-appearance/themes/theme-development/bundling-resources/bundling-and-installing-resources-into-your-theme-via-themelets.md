@@ -20,7 +20,7 @@ npm install -g yo gulp
 
 Liferay 테마 생성기를 사용하여 themelet을 생성합니다.
 
-1. themelet을 만들려는 파일 위치에서 다음 명령을 실행합니다.
+1. themelet을 만들려는 파일 사이트에서 다음 명령을 실행합니다.
 
     ```bash
     yo liferay-theme:themelet

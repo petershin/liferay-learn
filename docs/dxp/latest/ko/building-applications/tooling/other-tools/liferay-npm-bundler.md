@@ -75,6 +75,5 @@ liferay-npm-bundler/bundler-migration-guide.md
 
 :::{grid-item-card} 번들러 마이그레이션 가이드
 :link: ./liferay-npm-bundler/bundler-migration-guide.md
-:::  
-:
 :::
+::::

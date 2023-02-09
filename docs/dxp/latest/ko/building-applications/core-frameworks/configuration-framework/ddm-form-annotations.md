@@ -3,12 +3,13 @@
 자동 생성된 [구성 인터페이스](./setting-and-accessing-configurations.html#creating-the-configuration-interface) UI는 일부 구성에 대해 너무 단순할 수 있습니다. DDM(Dynamic Data Mapping) 양식 주석을 사용하여 레이아웃의 UI를 사용자 정의할 수 있습니다.
 
 ## 샘플 구성 UI 보기
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [DDM Form Annotations](./liferay-v1d9.zip)
+1. [DDM 양식 주석](./liferay-v1d9.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-v3d9.zip -O

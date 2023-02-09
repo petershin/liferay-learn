@@ -3,12 +3,13 @@
 애플리케이션 메뉴 또는 REST API를 사용하여 [선택 목록 생성 및 관리](./using-picklists.md) 을 수행할 수 있습니다. [`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) 서비스를 호출하여 선택 목록을 만들고 관리합니다.
 
 ## 선택 목록 추가
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Once Liferay is running,
+Liferay가 실행되면,
 
-1. Download and unzip [Picklists API Basics](./liferay-v3n6.zip).
+1. [Picklists API 기본 사항](./liferay-v3n6.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/picklists/liferay-v3n6.zip -O

@@ -73,22 +73,15 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 1. 아카이브 관리자로 추출된 JAR 파일을 열고 `META-INF/mappings`로 이동합니다.
 1. `liferay-type-mappings.json` 이라는 파일이 필요한 리소스입니다. 파일 시스템에 압축을 풉니다.
 
-소스 코드에서 매핑을 가져오려면 Liferay DXP 소스 코드 액세스</a>이
-
-인 경우,</p> 
+소스 코드에서 매핑을 가져오려면 [Liferay DXP 소스 코드 액세스](https://help.liferay.com/hc/en-us/articles/360045389291)가 있는 경우,
 
 1. 소스 코드 저장소에 대한 액세스 권한이 있으면 위 문서의 단계에 따라 수정팩 레벨에 대한 태그를 찾으십시오.
 1. `module/apps/portal-search-elasticsearch(6 또는 7)/portal-search-elasticsearch(6 또는 7)-impl/src/main/resources/META-INF/mappings`로 이동합니다.
 1. 여기에서 언급된 JSON 파일(`liferay-type-mappings.json`)을 찾을 수 있습니다.
 
-
-
 ```{warning}
 인덱스 매핑 및 설정은 버전 간에 변경될 수 있으며 때로는 마이너 버전 내에서(수정 팩 또는 서비스 팩을 통해) 변경될 수 있습니다. 새 패치 수준으로 업그레이드하거나 이동할 때 필요에 따라 매핑 및 설정에 대한 사용자 지정을 검토하고 조정해야 합니다. 또한 Liferay의 검색 팀은 향후 버전에서 즉시 사용 가능한 더 많은 언어에 대한 지원을 추가하여 사용자 지정이 필요하지 않도록 할 계획입니다.
 ```
-
-
-
 
 ### 언어 추가
 
@@ -97,8 +90,6 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 1. Elasticsearch 연결의 시스템 설정 항목---Elasticsearch 6/7로 이동합니다.
 
 1. 추가 색인 구성 필드에 `분석` 블록을 추가합니다. 
-   
-   
 
    ```json
    {
@@ -143,19 +134,13 @@ Liferay DXP 번들에서 매핑을 얻으려면,
    }
    ```
 
-
 이 구성에 설정을 추가하면 기본 인덱스 설정에서 사용할 수 있는 설정이 증가합니다. 소스 코드의 `index-settings.json` 파일에서 기본 JSON 설정을 찾습니다. 여기서 새 필터 `my-synonym-filter-fr`을 사용하는 `custom_liferay_analyzer_fr` 이라는 새 분석기를 생성합니다. `동의어` 배열은 현재 비어 있습니다. UI를 통해 생성된 동의어 집합이 여기에 표시됩니다.
 
 1. Override Type Mappings 필드를 사용하여 사용자 지정 분석기(`custom_liferay_analyzer_fr`)를 사용하도록 `template_fr` 동적 필드에 대한 분석기를 변경합니다. 
-   
-   
 
    ```{important}
    이 예는 간결함을 위해 잘렸습니다. 유형 매핑 재정의는 Liferay의 기본 유형 매핑을 완전히 재정의하고 무시하므로 재정의된 부분뿐만 아니라 전체 매핑 파일을 제공해야 합니다.   
    ```
-
-
-
 
    ```json
     {
@@ -179,17 +164,13 @@ Liferay DXP 번들에서 매핑을 얻으려면,
             // (...)
    ```
 
-
 여기서 중요한 변경 사항은 기본 할당 분석기(`french`)가 사용자 지정 분석기 `custom_liferay_analyzer_fr`으로 대체되었다는 것입니다.
 
 1. 변경 사항을 구성에 저장하십시오. 
-   
-   
 
    ```{tip}
    Sidecar Elasticsearch 서버를 사용하는 경우 콘솔에 오류가 표시될 수 있습니다. 문제를 해결하려면 Liferay DXP를 다시 시작하십시오.
    ```
-
 
 1. 이제 시스템 설정 &rarr; 검색 &rarr; 동의어로 이동합니다.
 
@@ -211,5 +192,5 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 
 1. 영어 및 프랑스어 번역으로 또 다른 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 _logement_ 을 추가합니다.
 
-1. 프랑스어 로캘로 전환하고 _maison_을 검색합니다. 두 기사 모두 반환됩니다.
+1. 프랑스어 로캘로 전환하고 _maison_ 을 검색합니다. 두 기사 모두 반환됩니다.
 

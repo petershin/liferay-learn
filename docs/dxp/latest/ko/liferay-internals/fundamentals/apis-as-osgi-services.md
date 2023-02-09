@@ -199,7 +199,7 @@ Service-Component: OSGI-INF/com.acme.p9g2.internal.P9G2Greeter.xml
 
 ## 결론
 
-귀하는 *정의* Greeter</code> 라는 서비스 기능을 `제공했으며 <em x-id="3">``서비스 구성 요소에서</em> 제공했습니다. <code>그리터` 서비스가 시행됩니다. 클라이언트는 서비스에 어떻게 액세스하고 사용합니까? [Using an OSGi Service](./using-an-osgi-service.md)에 설명되어 있습니다.
+'Greeter'라는 서비스 기능을 *정의*하고 이를 'P9G2Greeter'라는 서비스 구성요소에 *제공*했습니다. '그리터' 서비스가 진행됩니다. 클라이언트는 서비스에 어떻게 액세스하고 사용합니까? [OSGi 서비스 사용](./using-an-osgi-service.md)에 설명되어 있습니다.
 
 ## 추가 정보
 

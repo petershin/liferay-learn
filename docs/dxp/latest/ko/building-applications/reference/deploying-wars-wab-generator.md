@@ -10,9 +10,9 @@ Liferay DXP는 Java EE 스타일 WAR 배포를 위한 OSGi 웹 애플리케이�
 
 Liferay는 WAB 생성기에 의해 자동 생성된 WAB의 사용만 지원합니다. WAB 생성기는 배포 중에 기존 WAR 스타일 플러그인을 WAB로 변환합니다. 그렇다면 WAB Generator는 WAR 파일을 WAB로 변환하기 위해 정확히 어떤 작업을 수행합니까?
 
-WAB 생성기는 플러그인 WAR의 JSP, 설명자 파일 및 클래스( `WEB-INF/classes` 및 포함된 JAR)에서 참조되는 패키지를 감지합니다. 디스크립터 파일에는 `web.xml`, `liferay-web.xml`, `portlet.xml`, `liferay-portlet.xml`및 `liferay-hook.xml`가 포함됩니다. WAB 생성기는 감지된 패키지가 플러그인의 `WEB-INF/classes` 폴더에 있는지 또는 `WEB-INF/lib` 폴더에 포함된 JAR에 있는지 확인합니다. 두 위치에서 찾을 수 없는 패키지는 WAB의 `META-INF/MANIFEST.MF` 파일에 있는 `Import-Package` OSGi 헤더에 추가됩니다.
+WAB 생성기는 플러그인 WAR의 JSP, 설명자 파일 및 클래스( `WEB-INF/classes` 및 포함된 JAR)에서 참조되는 패키지를 감지합니다. 디스크립터 파일에는 `web.xml`, `liferay-web.xml`, `portlet.xml`, `liferay-portlet.xml`및 `liferay-hook.xml`가 포함됩니다. WAB 생성기는 감지된 패키지가 플러그인의 `WEB-INF/classes` 폴더에 있는지 또는 `WEB-INF/lib` 폴더에 포함된 JAR에 있는지 확인합니다. 두 사이트에서 찾을 수 없는 패키지는 WAB의 `META-INF/MANIFEST.MF` 파일에 있는 `Import-Package` OSGi 헤더에 추가됩니다.
 
-다음 유형의 위치에서만 참조되는 패키지를 가져오려면 `Import-Package` OSGi 헤더를 플러그인의 `WEB-INF/liferay-plugin-package.properties` 파일에 추가하고 패키지를 해당 헤더의 값 목록:
+다음 유형의 사이트에서만 참조되는 패키지를 가져오려면 `Import-Package` OSGi 헤더를 플러그인의 `WEB-INF/liferay-plugin-package.properties` 파일에 추가하고 패키지를 해당 헤더의 값 목록:
 
 * 인식할 수 없는 설명자 파일
 * 사용자 지정 또는 인식되지 않는 설명자 요소 또는 속성

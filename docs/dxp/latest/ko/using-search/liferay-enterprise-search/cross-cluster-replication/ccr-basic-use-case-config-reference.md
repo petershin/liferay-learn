@@ -141,7 +141,7 @@ sslKeystorePath="/PATH/TO/elastic-nodes.p12"
 
 ## 리더 Elasticsearch 클러스터 노드 구성
 
-위치: `ES_LEADER_HOME/config`
+사이트: `ES_LEADER_HOME/config`
 
 파일 이름: `elasticsearch.yml`
 
@@ -176,7 +176,7 @@ xpack.monitoring.collection.enabled: true
 
 ## 추종자 Elasticsearch 클러스터 노드 구성
 
-위치: `ES_FOLLOWER_HOME/config`
+사이트: `ES_FOLLOWER_HOME/config`
 
 파일 이름: `elasticsearch.yml`
 

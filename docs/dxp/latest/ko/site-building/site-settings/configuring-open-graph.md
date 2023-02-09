@@ -28,7 +28,7 @@ Open Graph `<meta>` 태그는 인증되지 않은 사용자에게만 페이지 �
 
 1. 기본 `og:image` 구성을 미리 봅니다.
 
-   이미지의 비율은 공유 위치에 따라 변경될 수 있습니다.
+   이미지의 비율은 공유 사이트에 따라 변경될 수 있습니다.
 
    ![기본 Open Graph 구성을 미리 봅니다.](./configuring-open-graph/images/03.png)
 

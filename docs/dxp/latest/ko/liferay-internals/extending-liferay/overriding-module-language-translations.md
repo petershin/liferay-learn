@@ -60,7 +60,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 예를 들어 블로그 웹 버전 5.0.36 모듈은 `com.liferay.blogs.web-5.0.36.jar`에 있습니다.
 
-모듈을 찾을 수 있는 위치는 다음과 같습니다.
+모듈을 찾을 수 있는 사이트는 다음과 같습니다.
 
 * Liferay의 [넥서스 저장소](https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/)
 * `[Liferay Home]/osgi/modules`
@@ -74,9 +74,9 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip `liferay-e6u7.zip`.
+1. `liferay-e6u7.zip`을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O

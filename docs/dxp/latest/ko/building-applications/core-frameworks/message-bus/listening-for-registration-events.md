@@ -12,12 +12,13 @@
 ## 예제에서 이벤트 트리거
 
 대상 등록 수신기, 메시지 수신기 등록 수신기 및 수신 중인 이벤트를 트리거하는 클래스를 배포합니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-s3z9.zip -O
@@ -167,7 +168,7 @@ Message Bus는 [`MessageListener`](https://github.com/liferay/liferay-portal/blo
 
 축하합니다! 모든 메시지 버스 이벤트 리스너 및 대상 이벤트 리스너 이벤트를 트리거했습니다.
 
-## 무엇 향후 계획
+## 다음
 
 이제 이러한 Message Bus 이벤트를 수신하는 방법을 알았 [새](./tuning-messaging-performance.md) 에서 메시지를 수신하거나 새 등록 관련 활동에 대한 응답으로 메시징 환경을 조정할 수 있습니다.
 

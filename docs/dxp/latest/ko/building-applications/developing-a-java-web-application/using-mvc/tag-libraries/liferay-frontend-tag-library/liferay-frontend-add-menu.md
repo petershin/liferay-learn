@@ -43,7 +43,7 @@
 </liferay-frontend:add-menu>
 ```
 
-![추가 버튼 패턴은 <code>추가 메뉴</code> 태그와 하나 이상의 <code>추가 메뉴 항목</code> 태그로 구성됩니다.](./liferay-frontend-add-menu/images/02.png)
+![추가 버튼 패턴은 `add-menu` 태그와 하나 이상의 `add-menu-item` 태그로 구성됩니다.](./liferay-frontend-add-menu/images/02.png)
 
 위의 예에서는 사용 가능한 속성 중 일부를 사용합니다. 태그에 사용할 수 있는 속성의 전체 목록은 [추가 메뉴](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/add-menu.html) 및 [추가 메뉴 항목](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/add-menu-item.html) taglibdocs를 참조하십시오.
 

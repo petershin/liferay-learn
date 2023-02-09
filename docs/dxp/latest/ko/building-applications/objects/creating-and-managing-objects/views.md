@@ -41,6 +41,5 @@ views/adding-filters-to-views.md
 
 :::{grid-item-card} 보기에 필터 추가
 :link: ./views/adding-filters-to-views.md
-:::  
-:
 :::
+::::

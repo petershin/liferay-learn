@@ -11,12 +11,13 @@
 ## 기본 동기 메시지 보내기
 
 예제 프로젝트는 기본 모드에서 `SynchronousMessageSender` 을 사용하여 메시지를 보내고 응답을 기다립니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-m4q7.zip -O
@@ -113,7 +114,7 @@ Then, follow these steps:
 
 두 구성자는 모두 [`구성 요소`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 클래스입니다. 그들은 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 사용하여 `DestinationFactory` 인스턴스를 주입합니다.
 
-`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 *직렬* 대상을 생성합니다. 마지막으로 ``(BundleContext)</code> 메소드는 BundleContext `을 사용하여 OSGi 서비스에 <a href="https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java"><code>Destination`</a> 를 등록합니다.
+`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/ kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/ kernel/messaging/DestinationConfiguration.java) *직렬* 대상을 생성합니다. 마지막으로 `_activate(BundleContext)` 메서드는 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/ Portal/kernel/messaging/Destination.java) 'BundleContext'를 사용하는 OSGi 서비스에서.
 
 ```{warning}
 기본 동기식 메시징과 함께 직렬 또는 병렬 대상만 사용하십시오. `DestinationConfiguration`의 `createSerialDestinationConfiguration(String)` 및 `createParallelDestinationConfiguration(String)` 메서드를 호출하여 만들 수 있습니다.
@@ -230,9 +231,9 @@ Then, follow these steps:
 
 시간 초과와 동시에 메시지를 보내는 것을 축하합니다.
 
-## 무엇 향후 계획
+## 다음
 
-직접 *모드를 사용하여 동기식 메시징을 탐색하려면 [직접 동기식 메시징 사용</em> 을 참조](./using-direct-synchronous-messaging.md).</p>
+*직접* 모드를 사용하여 동기 메시징을 탐색하려면 [직접 동기 메시징 사용](./using-direct-synchronous-messaging.md)을 참조하세요.
 
 메시지를 보낸 후 즉시 처리를 계속하려면 [비동기 메시징 사용](./using-asynchronous-messaging.md)을 참조하십시오.
 

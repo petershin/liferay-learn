@@ -1,45 +1,30 @@
 # 생성된 클래스 이해 및 확장
 
-Service Builder는 엔터티</a> 에 대한
-
-개의 테이블과 엔터티에 대한 모델, 지속성 및 서비스 클래스를 모두 생성합니다. 여기서는 `W9B7Entry`이라는 엔티티에 대해 생성된 클래스를 검사합니다. 그런 다음 새 메서드로 로컬 서비스를 확장하고 호출합니다.</p> 
+Service Builder는 [엔터티에 대한 테이블](./generating-model-persistence-and-service-code.md)과 이에 대한 모델, 지속성 및 서비스 클래스를 모두 생성합니다. 여기서는 `W9B7Entry`라는 엔티티에 대해 생성된 클래스를 검사합니다. 그런 다음 새 메서드로 로컬 서비스를 확장하고 호출합니다.
 
 예제 프로젝트를 다운로드하고 압축을 풀어 시작하십시오.
-
-
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
 ```
 
-
-
-
 ```bash
 unzip liferay-w9b7.zip
 ```
 
-
 `w9b7-service/service.xml` 파일을 검사합니다.
-
-
 
 ```{literalinclude} ./understanding-service-builder-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
 :language: xml
 ```
 
-
 `package-path="com.acme.w9b7"` 설정은 클래스가 `-api` 모듈 및 `-service` 모듈의 `com/acme/w9b7` 패키지 경로에 생성되도록 지정합니다. 유일한 엔터티는 `W9B7Entry`입니다. 로컬 서비스(DXP/Portal과 동일한 JVM에서 액세스할 수 있는 서비스)는 있지만 원격 서비스는 없습니다.
 
 생성된 클래스를 확인하십시오.
 
-
-
 ## 생성된 클래스 목록
 
 각 모듈의 `com/acme/w9b7` 패키지 폴더에는 Service Builder에서 생성한 Java 클래스가 포함되어 있습니다. 파일 구조에 나타나는 모듈 클래스는 다음과 같습니다.
-
-
 
 ```
 w9b7-api/src/main/java/com/acme/w9b7
@@ -79,28 +64,30 @@ w9b7-service/src/main/java/com/acme/w9b7
             └── W9B7EntryPersistenceImpl.java
 ```
 
-
 `W9B7EntryImpl.java` 및 `W9B7EntryLocalServiceImpl.java` 클래스는 수정할 수 있는 유일한 클래스입니다. 생성된 다른 클래스를 수정하지 마십시오. 서비스 빌더는 서비스 빌더가 실행될 때마다 콘텐츠를 재생성합니다.
-
-
 
 ```{note}
 엔터티에 대해 원격 서비스를 활성화(즉, `remote-service="true"`)하여 서비스 작성기를 실행하면 서비스 작성기는 수정 가능한 원격 서비스 구현 클래스(예: `W9B7EntryServiceImpl.java`)를 포함하여 원격 서비스 클래스를 생성합니다.
 ```
 
-
 API 클래스부터 시작하여 모든 클래스에 대해 설명합니다.
-
-
 
 ## API 클래스
 
 API 클래스는 공용 인터페이스, 유틸리티 및 상수를 정의합니다.
 
-래퍼, `W9B7Entry`을 래핑합니다. 이 클래스는 엔터티</a>을 사용자 정의하기 위해 으로 확장됩니다.</td> </tr> 
-
-</tbody> </table> 
-
+| API 클래스 | 설명 |
+| :-------- | :---------- |
+| `W9B7엔트리` | 'W9B7Entry' 모델 인터페이스; 'W9B7EntryModel'을 확장합니다. |
+| `W9B7엔트리모델` | 기본 모델 인터페이스. 이 인터페이스와 해당 `W9B7EntryModelImpl` 구현은 Service Builder가 생성하는 기본 속성 접근자에 대한 컨테이너 역할만 합니다. 모든 헬퍼 메소드와 모든 애플리케이션 로직은 `W9B7EntryImpl`에 추가되어야 합니다. |
+| `W9B7EntrySoap` | 'W9B7EntryModelImpl'과 유사한 SOAP 모델. 'W9B7EntrySoap'은 직렬화 가능합니다. 'W9B7Entry'를 구현하지 않습니다. |
+| `W9B7EntryTable` | 엔터티의 테이블을 나타냅니다. |
+| 'W9B7EntryWrapper' | 래퍼, 'W9B7Entry'를 래핑합니다. 이 클래스는 [엔터티 사용자 정의](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)로 확장됩니다. |
+| 'W9B7EntryPersistence' | `create`, `remove`, `countAll`, `find`, `findAll` 등과 같은 엔터티에 대한 CRUD 메서드를 정의하는 지속성 인터페이스 |
+| `W9B7EntryUtil` | 'W9B7EntryPersistenceImpl'을 래핑하고 CRUD 작업을 위해 데이터베이스에 대한 직접 액세스를 제공하는 지속성 유틸리티 클래스입니다. 이 유틸리티는 서비스 계층에서만 사용해야 합니다. 포틀릿 클래스에서 [`@Reference` 주석](../../../../liferay-internals/fundamentals/using-an-osgi-service. md). |
+| `W9B7EntryLocalService` | 로컬 서비스 인터페이스. |
+| `W9B7EntryLocalServiceUtil` | `W9B7EntryLocalServiceImpl`을 래핑하는 로컬 서비스 유틸리티 클래스입니다. |
+| `W9B7EntryLocalServiceWrapper` | 'W9B7EntryLocalService'를 구현하는 로컬 서비스 래퍼입니다. 이 클래스는 [엔터티의 로컬 서비스 사용자 지정](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)으로 확장됩니다. |
 
 
 ## 구현 클래스
@@ -145,36 +132,23 @@ API 클래스는 공용 인터페이스, 유틸리티 및 상수를 정의합니
     }
     ```
 
-
 기본 클래스의 `w9b7EntryPersistence` 필드와 `counterLocalService` 필드를 사용하여 카운터 서비스에서 생성된 ID로 `W9B7Entry` 인스턴스를 생성합니다. 설명과 이름이 항목에 지정된 다음 `w9b7EntryPersistence.update` 메서드 호출을 통해 항목이 유지됩니다. 
-
-
 
     ```{note}
     서비스 빌더에서 생성한 'W9B7EntryLocalServiceBaseImpl.java'와 같은 기본 클래스는 애플리케이션에서 사용하기 위한 유용한 필드와 메서드를 제공합니다.
     ```
 
-
 1. 서비스 빌더를 실행합니다. 
-   
-   
 
     ```bash
     cd w9b7-service
     ```
 
-
-
-
     ```bash
     ../gradlew buildService
     ```
 
-
     Output:
-    
-
-
 
     ```
     > Task :w9b7-service:buildService
@@ -186,7 +160,6 @@ API 클래스는 공용 인터페이스, 유틸리티 및 상수를 정의합니
     Writing src/main/resources/service.properties
     ```
 
-
 Service Builder는 새로운 로컬 서비스 메서드 구현을 지원하도록 로컬 서비스 API를 업데이트했습니다.
 
 1. `w9b7-api` 모듈의 `W9B7EntryLocalService` 클래스에서 새 메소드 서명을 확인하십시오. 
@@ -196,51 +169,37 @@ Service Builder는 새로운 로컬 서비스 메서드 구현을 지원하도�
     public W9B7Entry addW9B7Entry(String description, String name) throws PortalException;
     ```
 
-
 새 방법을 모듈과 함께 게시할 수 있습니다.
-
-
 
 ## 새로운 서비스 방법 테스트
 
 모듈을 배포하고 새 서비스를 테스트할 때입니다.
 
 ```{include} /_snippets/run-liferay-portal.md
-
-
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Build and deploy the example.
+1. 예제를 빌드하고 배포합니다.
 
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-
-
-
     ```{note}
     이 명령은 모듈 JAR을 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
     ```
 
-
 1. Docker 컨테이너 콘솔에서 배포를 확인합니다. 
-   
-   
 
     ```bash
     STARTED com.acme.w9b7.api_1.0.0
     STARTED com.acme.w9b7.service_1.0.0
     ```
 
-
 1. 제어판 → 서버 관리 → 스크립트에서 스크립트 콘솔로 이동합니다.
 
 1. 다음 스크립트를 실행하여 새 방법을 통해 항목을 추가하십시오. 
-   
-   
 
     ```groovy
     import com.acme.w9b7.service.W9B7EntryLocalServiceUtil;
@@ -254,22 +213,16 @@ Then, follow these steps:
     }
     ```
 
-
 산출량: 
-
-
 
     ```
     {w9b7EntryId=1234, description=Remove clutter from your desk., name=Straighten Desk}
     ```
 
-
 항목은 JSON 형식으로 인쇄됩니다.
 
 축하합니다! 새 서비스 방법을 성공적으로 추가했습니다.
 
+## 다음
 
-
-## 무엇 향후 계획
-
-이제 Service Builder에서 생성</a>클래스와 로컬 서비스 메서드를 추가하는 방법을 이해 포틀릿에서 서비스를 호출하는 방법을 배울 수 있습니다.</p>
+이제 Service Builder에서 생성한 클래스와 로컬 서비스 메서드를 추가하는 방법을 이해했으므로 [포틀릿에서 서비스를 호출](./invoking-a-service-locally.md)하는 방법을 배울 수 있습니다.

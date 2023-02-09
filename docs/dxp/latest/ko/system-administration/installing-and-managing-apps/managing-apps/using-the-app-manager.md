@@ -27,15 +27,11 @@
 
 ## 앱 설치
 
-앱 관리자는 로컬 컴퓨터에서 로컬 또는 원격 DXP 서버로 다운로드</a>
-설치하는 편리한 방법입니다.</p> 
-
-
+앱 관리자는 로컬 컴퓨터에서 로컬 또는 원격 DXP 서버로 [다운로드된 앱](../installing-apps/downloading-apps.md)을 설치하는 편리한 방법입니다. 
 
 ```{important}
 프로덕션 등급 환경에서 앱을 설치 및 제거하려면 [서버 시작을 사용하여](../../../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time. md#startup) 앱 관리자를 사용하는 대신.
 ```
-
 
 앱 관리자를 사용하여 앱을 설치하는 단계는 다음과 같습니다.
 
@@ -47,22 +43,15 @@
 
 앱은 [자동 배포](../installing-apps.md#installing-apps-via-the-file-system)을 통해 설치됩니다. 설치가 완료되면 대화 상자를 닫으면 시작할 준비가 된 것입니다!
 
-
-
 ## 앱 제거
 
 앱을 제거하면 비활성화되고(활성 상태인 경우) 활성화할 수 없게 됩니다.
-
-
 
 ```{note}
 App Manager의 제거, 재설치 및 재활성화 기능에는 알려진 문제가 [LPS-102506](https://issues.liferay.com/browse/LPS-102506). 이 문제를 해결하려면 [블랙리스트 사용](./blacklisting-apps.md)을 사용하여 설치된 앱을 비활성화하세요.
 ```
 
-
 축하합니다! 앱 관리자를 사용하여 애플리케이션 배포를 검사하고 관리할 수 있습니다.
-
-
 
 ## 추가 정보
 

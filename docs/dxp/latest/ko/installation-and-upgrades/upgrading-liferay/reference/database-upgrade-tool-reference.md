@@ -86,7 +86,7 @@ Please enter your database host (localhost):
 
 도구가 생성하는 것보다 더 많은 값을 설정하도록 업그레이드 도구를 미리 구성할 수도 있습니다. `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client/` 에서 다음 파일을 사용하여 코어 업그레이드를 수동으로 구성합니다.
 
-* `app-server.properties`: 서버 위치 및 라이브러리를 지정합니다.
+* `app-server.properties`: 서버 사이트 및 라이브러리를 지정합니다.
 * `portal-upgrade-database.properties`: 데이터베이스 연결을 구성합니다.
 * `portal-upgrade-ext.properties`: 업그레이드에 필요한 나머지 포털 속성을 설정합니다. 현재 DXP 서버를 복제하기 위해 현재 포털 속성(데이터베이스 속성 제외)을 이 파일에 복사할 수 있습니다. 현재 속성을 사용하기 전에 현재 DXP 버전 [에 맞게 업데이트해야](./preparing-a-new-application-server.md#migrate-your-portal-properties).
 

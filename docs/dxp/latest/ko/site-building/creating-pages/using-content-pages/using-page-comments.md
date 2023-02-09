@@ -22,7 +22,7 @@
 
 1. 사이드 패널에 댓글을 입력하고 *댓글*을 클릭합니다.
 
-댓글이 추가된 후 *작업* 버튼(</em> )을 통해 댓글을 *수정* 또는 *삭제할![Actions Button](../../../images/icon-actions.png)있습니다. 사용자는 답글을 추가할 수도 있습니다.</p>
+댓글을 추가한 후 *작업* 버튼(![작업 버튼](../../../images/icon-actions.png))을 통해 댓글을 *편집* 또는 *삭제*할 수 있습니다. 사용자는 답글을 추가할 수도 있습니다.
 
 ![주석을 편집, 삭제 또는 회신합니다.](./using-page-comments/images/03.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
 

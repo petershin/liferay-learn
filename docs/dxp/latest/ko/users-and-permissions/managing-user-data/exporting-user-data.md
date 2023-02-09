@@ -72,10 +72,10 @@
 </model>
 ```
 
-이 예에서 사용자 Jane Slaughter는 메시지 보드 메시지 게시물을 만들었고 그녀의 사용자 정보는</code> 의 데이터베이스 테이블에 기록되었습니다.</p>
+이 예에서 사용자 Jane Slaughter는 Message Boards Message 게시물을 작성했고 그녀의 사용자 정보는 `MBMessage` 모델의 데이터베이스 테이블에 기록되었습니다.
 
-<p spaces-before="0">이것은 실제로 블로그 항목에 대한 설명과 일치합니다.</p>
+이것은 실제로 블로그 항목에 대한 설명과 일치합니다.
 
-<p spaces-before="0"><img src="./exporting-user-data/images/03.png" alt="블로그 게시물에 대한 댓글은 사용자 관련 데이터입니다." /></p>
+![블로그 게시물에 대한 댓글은 사용자 관련 데이터입니다.](./exporting-user-data/images/03.png)
 
-<p spaces-before="0">사용자 데이터 내보내기는 사이트 소유자와 사용자에게 사이트에 포함된 개인 데이터의 양을 알려줍니다.</p>
+사용자 데이터 내보내기는 사이트 소유자와 사용자에게 사이트에 포함된 개인 데이터의 양을 알려줍니다.

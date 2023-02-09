@@ -15,12 +15,13 @@
 ## 예제 배포
 
 이 섹션에서는 Liferay Commerce 인스턴스에서 실행되는 체크아웃 단계의 예를 살펴보겠습니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the [Acme Commerce Checkout Step](./liferay-n8n6.zip).
+1. [Acme Commerce 결제 단계](./liferay-n8n6.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-n8n6.zip -O

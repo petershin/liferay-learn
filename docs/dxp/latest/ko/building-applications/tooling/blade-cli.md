@@ -27,6 +27,5 @@ blade-cli/troubleshooting-blade-cli.md
 
 :::{grid-item-card} 블레이드 CLI 문제 해결
 :link: ./liferay-workspace/blade-cli/troubleshooting-blade-cli.md
-:::  
-:
 :::
+::::

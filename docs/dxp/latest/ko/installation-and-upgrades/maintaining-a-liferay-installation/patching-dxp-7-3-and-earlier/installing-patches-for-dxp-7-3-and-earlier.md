@@ -102,7 +102,7 @@ DXP 번들을 패치하는 경우 아래의 기본 패치 단계를 계속하십
     rm -rf work/*
     ```
 
-    애플리케이션 서버 캐시를 삭제하십시오. 캐시를 찾을 수 있는 위치에 대해서는 응용 프로그램 서버 공급업체의 설명서를 참조하십시오.
+    애플리케이션 서버 캐시를 삭제하십시오. 캐시를 찾을 수 있는 사이트에 대해서는 응용 프로그램 서버 공급업체의 설명서를 참조하십시오.
 
     ```{note}
     모듈의 변경 사항이 내부에만 있는 경우 변경 사항은 OSGi 프레임워크에 보이지 않고 모듈이 설치된 상태로 유지되며 모듈의 상태가 지속됩니다. 다음 DXP 시작 전에 OSGi 번들 상태 정보를 지우면 해당 모듈이 적절한 상태로 다시 설치됩니다.
@@ -133,7 +133,7 @@ DXP 번들을 패치하는 경우 아래의 기본 패치 단계를 계속하십
 
     `LIFERAY_` OR `IX_` 으로 시작하는 인덱스만 업데이트됩니다. 사용자 정의 인덱스가 이 명명 규칙을 사용하지 않는지 확인하십시오.
 
-1. 응용 프로그램 서버에 DXP 7.3을 다시 설치하는 경우 패치가 적용된 DXP 응용 프로그램을 [임시 위치](#preparing-to-patch-dxp-on-an-application-server) 에서 다시 `.war` 파일로 압축하고 파일을 응용 프로그램 서버에 복사합니다. 애플리케이션 서버에 대한 [DXP 설치 지침](../../installing-liferay/installing-liferay-on-an-application-server.md) 을 참조하십시오.
+1. 응용 프로그램 서버에 DXP 7.3을 다시 설치하는 경우 패치가 적용된 DXP 응용 프로그램을 [임시 사이트](#preparing-to-patch-dxp-on-an-application-server) 에서 다시 `.war` 파일로 압축하고 파일을 응용 프로그램 서버에 복사합니다. 애플리케이션 서버에 대한 [DXP 설치 지침](../../installing-liferay/installing-liferay-on-an-application-server.md) 을 참조하십시오.
 
 1. 애플리케이션 서버를 다시 시작하십시오.
 
@@ -147,7 +147,7 @@ DXP 번들을 패치하는 경우 아래의 기본 패치 단계를 계속하십
 
 응용 프로그램 서버에 DXP를 설치한 경우 다음과 같이 준비하십시오.
 
-1. DXP 7.3을 패치하고 `.war` 파일로 배포된 경우 패치를 위해 임시 위치에 `.war`의 압축을 풉니다.
+1. DXP 7.3을 패치하고 `.war` 파일로 배포된 경우 패치를 위해 임시 사이트에 `.war`의 압축을 풉니다.
 
 1. 아직 설치하지 않은 경우 [패칭 도구 설치](../reference/installing-the-patching-tool.md).
 
@@ -158,7 +158,7 @@ DXP 번들을 패치하는 경우 아래의 기본 패치 단계를 계속하십
     ./patching-tool.sh 자동 검색
     ```
 
-1. DXP 7.3을 패치하는 경우 Patching Tool의 `war.path` 속성(예: in `default.properties`)을 압축 해제된 DXP `.war` 위치로 설정합니다.
+1. DXP 7.3을 패치하는 경우 Patching Tool의 `war.path` 속성(예: in `default.properties`)을 압축 해제된 DXP `.war` 사이트로 설정합니다.
 
 1. 이전 섹션의 [패치 단계](#basic-patching-steps) 을 계속하십시오.
 

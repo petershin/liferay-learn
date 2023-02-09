@@ -33,6 +33,5 @@ bundler-migration-guide/migrating-to-the-new-mode.md
 
 :::{grid-item-card} liferay-npm-bundler의 새 모드를 사용하도록 프로젝트 마이그레이션
 :link: ./bundler-migration-guide/migrating-to-the-new-mode.md
-:::  
-:
 :::
+::::

@@ -9,12 +9,13 @@ Liferay DXP 7.4+의 경우 조각 컬렉션을 Liferay UI에서 조각 세트라
 ```
 
 ## 자동 배포 가능한 단편 세트 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to auto-deploy an example fragment set:
+그런 다음 다음 단계에 따라 예제 프래그먼트 세트를 자동 배포합니다.
 
-1. Download and unzip the [example auto-deployable fragment set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip):
+1. [예제 자동 배포 가능 프래그먼트 세트](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip)를 다운로드하고 압축을 풉니다. ):
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O

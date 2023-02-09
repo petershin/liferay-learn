@@ -271,7 +271,7 @@ GraphQL 엔드포인트 코드와 JAX-RS 애플리케이션 코드는 각각 `gr
 마지막 단계는 정의한 각 API에 대한 논리를 정의하는 것입니다. `impl` 모듈 내에서 `rest-openapi.yaml` 에서 정의한 스키마 이름(이 예에서는 `FooResourceImpl.java` 및 `GooResourceImpl.java`)을 기반으로 구현이 진행되는 Java 자원 클래스를 찾으십시오.
 
 ```{tip}
-구현을 위한 클래스의 위치는 `rest-config.yaml` 파일에서 `apiPackagePath`에 대해 정의한 값에 따라 다릅니다. 해당 경로를 따른 다음 그 안에 있는 `internal/resource/<version>/`로 이동합니다. 이 예제와 동일한 경로를 사용한 경우 파일은 `src/main/java/com/acme/headless/r3b2/internal/resource/v1_0/`에 있습니다.
+구현을 위한 클래스의 사이트는 `rest-config.yaml` 파일에서 `apiPackagePath`에 대해 정의한 값에 따라 다릅니다. 해당 경로를 따른 다음 그 안에 있는 `internal/resource/<version>/`로 이동합니다. 이 예제와 동일한 경로를 사용한 경우 파일은 `src/main/java/com/acme/headless/r3b2/internal/resource/v1_0/`에 있습니다.
 ```
 
 구현 클래스(`[SchemaName]ResourceImpl`)는 기본 클래스(`Base[SchemaName]ResourceImpl`) 옆에 있습니다. 구현 클래스를 여십시오. 이것은 단지 예일 뿐이므로 이 구현은 미리 채워진 `HashTable`을 사용하고 `getFoo` 메서드는 일치하는 `fooId`을 사용하여 `HashTable` 에서 제품을 반환합니다. 전체 구현은 프로젝트의 `FooResourceImpl.java` 을 참조하십시오.

@@ -8,12 +8,13 @@
 먼저 작동 중인 `ConditionEvaluator`을 배포하고 관찰합니다.
 
 ## 조건 평가자 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the Acme R6J9 Implementation project.
+1. Acme R6J9 구현 프로젝트를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/process-automation/workflow/developer-guide/liferay-r6j9.zip -O

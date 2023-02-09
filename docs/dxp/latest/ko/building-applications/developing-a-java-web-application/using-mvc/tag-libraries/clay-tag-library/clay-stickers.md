@@ -26,7 +26,7 @@
 
 ![원 스티커를 가질 수도 있습니다.](./clay-stickers/images/03.png)
 
-스티커는 div의 모든 모서리에 배치할 수 있습니다. `위치` 속성으로 위치를 나타냅니다: `top-left`, `bottom-left`, `top-right`, or `bottom-right`:
+스티커는 div의 모든 모서리에 배치할 수 있습니다. `사이트` 속성으로 사이트를 나타냅니다: `top-left`, `bottom-left`, `top-right`, or `bottom-right`:
 
 ```jsp
 <div class="aspect-ratio">
@@ -37,7 +37,7 @@
 </div>
 ```
 
-![컨테이너 내에서 스티커의 위치를 지정할 수 있습니다.](./clay-stickers/images/04.png)
+![컨테이너 내에서 스티커의 사이트를 지정할 수 있습니다.](./clay-stickers/images/04.png)
 
 이제 앱에서 Clay 스티커를 사용하는 방법을 알았습니다!
 

@@ -3,12 +3,13 @@
 Liferay의 REST API는 Liferay의 탐색 메뉴에 대한 서비스를 제공합니다. API를 사용하여 탐색 메뉴를 만들고 편집할 수 있습니다. 새 탐색 메뉴를 추가하는 예를 살펴보는 것부터 시작하십시오.
 
 ## 탐색 메뉴 추가
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Categories and Vocabulary API Basics](./liferay-p7s4.zip).
+1. [Categories and Vocabulary API Basics](./liferay-p7s4.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/site-building/site-navigation/developer-guide/liferay-p7s4.zip -O

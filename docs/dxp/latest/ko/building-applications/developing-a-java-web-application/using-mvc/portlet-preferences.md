@@ -5,12 +5,13 @@
 포틀릿 환경 설정은 애플리케이션 구성과 별도로 저장되는 속성입니다. 자세한 내용은 [포틀릿 레벨 구성](../../core-frameworks/configuration-framework/portlet-level-configuration.md)을 참조하십시오.
 
 ## 샘플 구현 보기
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p1z2.zip -O

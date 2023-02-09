@@ -9,12 +9,13 @@ Liferay DXP는 기본적으로 50개 언어를 지원합니다. 각 로캘에는
 ```
 
 ## 샘플 프로젝트 보기
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Automatically Generating Translations](./liferay-m7d6.zip).
+1. [번역 자동 생성](./liferay-m7d6.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/localization/liferay-m7d6.zip -O

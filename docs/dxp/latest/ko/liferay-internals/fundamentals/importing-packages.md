@@ -1,6 +1,6 @@
 # 패키지 가져오기
 
-다른 모듈에서 제공하는 기능이 필요한 위치에 있는 경우가 많습니다. 이 기능에 액세스하려면 다른 모듈에서 모듈의 클래스 경로로 패키지를 가져와야 합니다. 이를 위해서는 다른 모듈이 원하는 기능이 포함된 패키지를 이미 [내보낸](./exporting-packages.md) 패키지가 있어야 합니다. OSGi 프레임워크는 패키지를 가져오기 모듈의 클래스 경로에 연결합니다. 모듈 JAR의 `META-INF/MANIFEST.MF` 파일은 `Import-Package` OSGi 헤더를 사용하여 패키지를 가져옵니다.
+다른 모듈에서 제공하는 기능이 필요한 사이트에 있는 경우가 많습니다. 이 기능에 액세스하려면 다른 모듈에서 모듈의 클래스 경로로 패키지를 가져와야 합니다. 이를 위해서는 다른 모듈이 원하는 기능이 포함된 패키지를 이미 [내보낸](./exporting-packages.md) 패키지가 있어야 합니다. OSGi 프레임워크는 패키지를 가져오기 모듈의 클래스 경로에 연결합니다. 모듈 JAR의 `META-INF/MANIFEST.MF` 파일은 `Import-Package` OSGi 헤더를 사용하여 패키지를 가져옵니다.
 
 ```properties
 Import-Package: javax.portlet,com.liferay.portal.kernel.util
@@ -46,7 +46,7 @@ Import-Package: com.liferay.portal.kernel.service;version="[4.3,5)"
 
 ## 수동 패키지 가져오기
 
-모듈이 다음 위치에서만 클래스를 참조하는 경우 수동으로 패키지 가져오기를 추가해야 합니다.
+모듈이 다음 사이트에서만 클래스를 참조하는 경우 수동으로 패키지 가져오기를 추가해야 합니다.
 
 * 인식할 수 없는 설명자 파일
 * 사용자 지정 또는 인식되지 않는 설명자 요소 또는 속성
@@ -71,7 +71,7 @@ Import-Package: [... existing package list,][add the package here]
 
 ### 자바 API 패키지
 
-Java 포틀릿과 같은 Java API용 패키지는 [의미론적으로 버전이 지정되지 않지만](./semantic-versioning.md) [휴대용 Java 계약](https://www.osgi.org/portable-java-contract-definitions/)이 있습니다. 각 API의 계약은 만족하는 JSR을 지정합니다. 이러한 API를 사용하는 모듈은 API 계약에 대한 요구 사항을 지정해야 합니다. 계약 요구 사항은 가져온 API 패키지와 모듈의 관계를 정의합니다. 실행 중인 시스템이 정확한</em> 을 제공하지 *경우 모듈이 확인되지 않습니다. 누락된 패키지를 해결하는 것이 실행 중에 비호환성 오류를 처리하는 것보다 낫습니다.</p>
+Java Portlet과 같은 Java API용 패키지는 [의미상 버전 관리](./semantic-versioning.md)가 아니지만 [이식 가능한 Java 계약](https://www.osgi.org/portable-java-contract- 정의/). 각 API의 계약은 만족하는 JSR을 지정합니다. 이러한 API를 사용하는 모듈은 API 계약에 대한 요구 사항을 지정해야 합니다. 계약 요구 사항은 가져온 API 패키지와 모듈의 관계를 정의합니다. 실행 중인 시스템이 정확한 계약을 제공하지 *않으면* 모듈이 확인되지 않습니다. 누락된 패키지를 해결하는 것이 실행 중에 비호환성 오류를 처리하는 것보다 낫습니다.
 
 [Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)기반 프로젝트는 Portable Java Contracts를 자동으로 지정합니다! 예를 들어 모듈이 Java Portlet API를 사용하고 Java Portlet 2.0 아티팩트에 대해 컴파일하는 경우 패키지에 대한 계약 요구 사항이 모듈의 매니페스트에 추가됩니다.
 

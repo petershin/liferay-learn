@@ -30,11 +30,7 @@ MFA(Multi-Factor Authentication)는 모든 Analytics Cloud 사용자에게 필�
 
     ![마침 버튼을 클릭하여 프로세스를 마칩니다.](./multi-factor-authentication/images/05.png)
 
-2. 인증 시 Analytics Cloud 시작 페이지로 이동합니다. 여기에서 Liferay</a>
-
-연결할 수 있습니다.</p></li> </ol> 
-   
-   
+2. 인증 시 Analytics Cloud 시작 페이지로 이동합니다. 여기에서 [Liferay DXP를 Analytics Cloud에 연결](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)할 수 있습니다.
 
 ## MFA 도움말
 

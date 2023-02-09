@@ -1,6 +1,6 @@
 # 구성 범위 이해
 
-Liferay DXP의 서비스 및 응용 프로그램에 대한 설정은 시스템, 가상 인스턴스, 사이트 또는 위젯의 네 가지 수준 또는 _범위_중 하나에 적용됩니다. 시스템 설정에서 만든 설정은 시스템 범위 수준에서 설정됩니다. 시스템 이외의 레이블이 지정된 범위의 경우 시스템 설정 값이 기본값으로 사용됩니다. 즉, 시스템 전체 구성이 재정의되는 위치를 식별합니다. 진정한 시스템 범위 구성(카테고리의 _System Scope_ 머리글 아래에 있는 구성)은 어디에서도 재정의되지 않습니다.
+Liferay DXP의 서비스 및 응용 프로그램에 대한 설정은 시스템, 가상 인스턴스, 사이트 또는 위젯의 네 가지 수준 또는 _범위_중 하나에 적용됩니다. 시스템 설정에서 만든 설정은 시스템 범위 수준에서 설정됩니다. 시스템 이외의 레이블이 지정된 범위의 경우 시스템 설정 값이 기본값으로 사용됩니다. 즉, 시스템 전체 구성이 재정의되는 사이트를 식별합니다. 진정한 시스템 범위 구성(카테고리의 _System Scope_ 머리글 아래에 있는 구성)은 어디에서도 재정의되지 않습니다.
 
 <!-- Ideally, I think it would be more helpful for the below image to be a diagram that represents the relationship scopes have to one another. -->
 ![일부 시스템 설정 범주에는 여러 범위의 항목이 있습니다.](./understanding-configuration-scope/images/02.png)

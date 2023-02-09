@@ -33,14 +33,11 @@
 
 ![언어 설정이 현지화된 인증된 사용자는 해당 언어로 양식을 볼 수 있습니다.](./translating-forms/images/04.png)
 
-Liferay DXP 페이지</a>의
-양식 위젯에서 액세스하면 양식이 자동으로 사용자 언어로 표시됩니다. 사용자가 선택한 언어로 사용 가능한 번역이 없는 경우 양식의 기본 언어가 표시됩니다.</p> 
-
-
+[Liferay DXP 페이지의 양식 위젯](../sharing-forms-and-managing-submissions/sharing-forms.md)에서 액세스하면 양식이 자동으로 사용자의 언어로 표시됩니다. 사용자가 선택한 언어로 사용 가능한 번역이 없는 경우 양식의 기본 언어가 표시됩니다.
 
 ## 번역된 양식 레코드 보기
 
-Liferay 7.4부터 각 양식 레코드의 언어는 관리자를 위해 두 위치에 기록됩니다. [내보낸 양식 데이터](exporting-and-importing-forms.md) 및 양식의 항목 보기 화면 내에서.
+Liferay 7.4부터 각 양식 레코드의 언어는 관리자를 위해 두 사이트에 기록됩니다. [내보낸 양식 데이터](exporting-and-importing-forms.md) 및 양식의 항목 보기 화면 내에서.
 
 Liferay Forms 애플리케이션에서 항목과 해당 언어를 보려면,
 
@@ -48,8 +45,6 @@ Liferay Forms 애플리케이션에서 항목과 해당 언어를 보려면,
 1. 양식에 대한 작업(![Actions](../../../images/icon-actions.png)) 메뉴를 열고 _항목 보기_를 클릭합니다.
    
    ![관리자는 양식 레코드 언어를 쉽게 볼 수 있습니다.](./translating-forms/images/05.png)
-
-
 
 ## 추가 정보
 

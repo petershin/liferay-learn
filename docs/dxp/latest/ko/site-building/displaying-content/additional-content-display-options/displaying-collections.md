@@ -52,7 +52,7 @@
 
 1. 아이콘(![Add widget icon](../../../images/icon-cards2.png))을 클릭하여 Fragments and Widgets 패널을 엽니다.
 
-1. Fragments 메뉴의 *Content Display* 범주에서 *Collection Display* 조각을 페이지의 위치로 드래그합니다.
+1. Fragments 메뉴의 *Content Display* 범주에서 *Collection Display* 조각을 페이지의 사이트로 드래그합니다.
 
 1. Collection Display 조각을 클릭하여 *Selection* 패널에 구성을 표시합니다.
 

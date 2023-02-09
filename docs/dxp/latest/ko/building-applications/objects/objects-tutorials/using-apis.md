@@ -33,6 +33,5 @@ using-apis/using-aggregation-terms-with-rest-apis.md
 
 :::{grid-item-card} REST API에서 집계 용어 사용
 :link: ./using-apis/using-aggregation-terms-with-rest-apis.md
-:::  
-:
 :::
+::::

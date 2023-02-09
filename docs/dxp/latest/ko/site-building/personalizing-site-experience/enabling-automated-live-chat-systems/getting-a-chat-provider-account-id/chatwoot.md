@@ -16,8 +16,6 @@
 
 1. *구성* 메뉴 탭을 클릭합니다.
 
-    `websiteToken`에 대한 필드 값을 찾습니다. 이 값은 스크린샷에 강조</a>
+    `websiteToken`의 필드 값을 찾습니다. 이 값은 스크린샷에 강조 표시되어 있으며 Liferay 인스턴스와 [자동 라이브 채팅 통합을 활성화](../../enabling-automated-live-chat-systems.md)하기 위한 채팅 제공자 계정 ID로 사용할 수 있습니다.
 
-    활성화하기 위해 채팅 제공자 계정 ID로 사용할 수 있습니다.</p> 
-   
-   ![구성 메뉴 탭을 클릭하여 계정 ID를 찾으십시오.](./chatwoot/images/03.png)</li> </ol>
+    ![구성 메뉴 탭을 클릭하여 계정 ID를 찾으십시오.](./chatwoot/images/03.png)

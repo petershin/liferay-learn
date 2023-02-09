@@ -25,7 +25,7 @@ segmentation/segments-editor-ui-reference.md
 :link: ./segmentation/creating-and-managing-user-segments.md
 :::
 
-:::{grid-item-card} 지리적 위치별 세분화
+:::{grid-item-card} 지리적 사이트별 세분화
 :link: ./segmentation/segmentation-by-geolocation.md
 :::
 

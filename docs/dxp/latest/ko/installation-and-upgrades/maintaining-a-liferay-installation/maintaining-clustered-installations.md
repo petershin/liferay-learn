@@ -37,11 +37,10 @@ maintaining-clustered-installations/blue-green-deployments.md
 | 포털 속성 변경                                            | &#10004; | &#10004; |
 | 구성 관리 파일을 통한 시스템 설정 변경                              | &#10004; | &#10004; |
 
-[<a name="one">1</a>] Blue-Green을 사용한 활성화 키 업데이트는 가상 클러스터 활성화 키에 대해서만 지원됩니다. 자세한 내용은 Liferay DXP 및 Liferay Commerce</a> 용
-가상 클러스터 활성화 키를 참조하십시오.</p> 
+[<a name="one">1</a>] Blue-Green을 사용한 활성화 키 업데이트는 가상 클러스터 활성화 키에 대해서만 지원됩니다. 자세한 내용은 [Liferay DXP 및 Liferay Commerce용 가상 클러스터 활성화 키](https://help.liferay.com/hc/en-us/articles/4402390080141)를 참조하십시오.
 
-[<a name="two">
-</a>] 이전 버전과 호환되지 않는 데이터 및 데이터 스키마 변경에는 다음이 포함되지만 이에 국한되지는 않습니다.
+[<a name="two">2</a>] 데이터 및 데이터 스키마 변경 사항
+이전 버전과 호환되지만 다음이 포함되지만 이에 국한되지는 않습니다.
 
 * 기존 열의 데이터 수정
 * 열 삭제
@@ -60,8 +59,6 @@ maintaining-clustered-installations/blue-green-deployments.md
 * `com.liferay.portal.cache.multiple.*`
 * `com.liferay.portal.scheduler.multiple`
 * `com.liferay.portal.scheduler.multiple.*`
-
-
 
 ## 추가 정보
 

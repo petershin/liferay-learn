@@ -5,12 +5,13 @@
 애플리케이션을 업그레이드하려면 데이터베이스 테이블을 변경해야 할 수 있습니다. Liferay의 업그레이드 프레임워크를 사용하면 이러한 변경을 쉽게 수행할 수 있습니다. 이 업그레이드 프로세스를 보려면 샘플 프로젝트를 배포하십시오. 이전 버전의 Liferay는 [모듈](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 에 대한 업그레이드 프로세스 생성을 참조하십시오.
 
 ## 버전 1.0.0 배포
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Upgrading Your Database Tables](./liferay-p5d2.zip).
+1. [데이터베이스 테이블 업그레이드](./liferay-p5d2.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-p5d2.zip -O

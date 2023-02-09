@@ -17,7 +17,7 @@ _Message Boards_ 앱 사용을 시작하는 가장 빠른 방법은 위젯을 [�
    
    ![애플리케이션 추가 메뉴를 사용하여 게시판 위젯을 추가합니다.](./getting-started-with-message-boards/images/06.png)
 
-1. _Message Boards_ 위젯을 페이지의 원하는 위치로 끌어다 놓습니다.
+1. _Message Boards_ 위젯을 페이지의 원하는 사이트로 끌어다 놓습니다.
    
    ![포럼 페이지에 게시판 앱을 배포합니다.](./getting-started-with-message-boards/images/04.png)
 
@@ -25,7 +25,7 @@ _Message Boards_ 앱 사용을 시작하는 가장 빠른 방법은 위젯을 [�
 
 
 
-## 무엇 향후 계획
+## 다음
 
 게시판 애플리케이션의 기능을 사용하는 방법을 알아보세요.
 

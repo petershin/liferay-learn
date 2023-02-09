@@ -179,7 +179,7 @@ App Builder의 내부에서 Data Engine은 Data Engine을 사용하여 애플리
 -   구분 기호
 -   서식 있는 텍스트 필드
 -   이미지 필드
--   지리적 위치 필드
+-   지리적 사이트 필드
 -   색상 필드
 
 ## 양식
@@ -222,9 +222,9 @@ App Builder의 내부에서 Data Engine은 Data Engine을 사용하여 애플리
 
 ### 단계별 성과
 
-각 단계에서 발생한 SLA 위반 수와 단계의 평균 완료 시간을 확인하여 프로세스의 병목 현상이 있는 위치를 식별합니다. 
+각 단계에서 발생한 SLA 위반 수와 단계의 평균 완료 시간을 확인하여 프로세스의 병목 현상이 있는 사이트를 식별합니다. 
 
-![Performance by Step은 병목 현상이 있는 위치를 보여줍니다.](./whats-new-73/images/27.png)
+![Performance by Step은 병목 현상이 있는 사이트를 보여줍니다.](./whats-new-73/images/27.png)
 
 ### 일괄 작업
 

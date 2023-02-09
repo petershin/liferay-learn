@@ -4,27 +4,22 @@
 
 ## 워크플로 정의 게시 권한
 
-워크플로 정의를 편집하거나 게시할 수 있는 권한이 있는 사용자는 워크플로에 [Groovy 스크립트](../../../system-administration/using-the-script-engine.md) 을 추가할 수 있습니다. 스크립팅 엔진에 대한 액세스는 서버의 JVM(Java Virtual Machine)에 대한 액세스를 의미합니다. 따라서 게시(또는 편집</a>
-포함된 데이터와 같이 JVM 범위 내의 모든 데이터에 액세스할 수 있습니다.</p> 
+워크플로 정의를 편집하거나 게시할 권한이 있는 사용자는 [Groovy 스크립트](../../../system-administration/using-the-script-engine.md)를 워크플로에 추가할 수 있습니다. 스크립팅 엔진에 대한 액세스는 서버의 JVM(Java Virtual Machine)에 대한 액세스를 의미합니다. 따라서 게시(또는 편집) 권한이 있는 사용자는 별도의 [가상 인스턴스](../../../system-administration/configuring-liferay/ 가상 인스턴스/이해 가상 가상 인스턴스.md) Liferay DXP.
 
 이 광범위한 액세스로 인해 워크플로 정의를 생성하거나 편집할 수 있는 권한은 기본 가상 인스턴스의 일반 관리자로 제한됩니다. Liferay DXP 고객의 경우 사용자(예: 사이트 관리자)는 Kaleo Designer 및 Kaleo Forms Admin 애플리케이션에 대한 액세스 권한으로 워크플로우를 편집하고 게시할 수도 있습니다.
 
 이러한 역할을 가진 사용자에게 추가 가상 인스턴스에서 워크플로 게시 액세스 권한을 부여하려면
 
-1. 이러한 관리자</a>에게 부여하는 액세스 권한을 이해해야 합니다.</li> 
-   
-   1 제어판 &rarr; 시스템 설정 &rarr; 워크플로 &rarr; 워크플로 정의로 이동합니다.
-1 _관리자가 워크플로를 게시하고 편집할 수 있도록 허용_설정 상자를 선택합니다.</ol> 
-
+1. [이 관리자에게 부여하는 액세스 권한](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)을 이해해야 합니다.
+1. 제어판 &rarr; 시스템 설정 &rarr; 워크플로 &rarr; 워크플로 정의로 이동합니다.
+1. 제어판으로 이동합니다. 시스템 설정 &rarr; 작업 흐름 &rarr; 워크플로우 정의.
 ![관리자가 워크플로 정의를 게시하고 편집하려면 먼저 명시적 권한을 부여해야 합니다.](./managing-workflows/images/06.png)
 
 이는 시스템에 추가된 가상 인스턴스에만 적용됩니다. 기본 가상 인스턴스는 Control Panel &rarr; Workflow &rarr; Process Builder를 통해 일반 관리자에게, Kaleo Forms Admin 애플리케이션을 통해 Liferay DXP 가입자에게 즉시 사용 가능한 워크플로 게시 액세스를 제공합니다.
 
-
-
 ## 새 워크플로 정의 업로드
 
-워크플로 프로세스 정의는 Liferay [에 내장</code> ](./building-workflows.md) `업로드될 수 있습니다. DXP 워크플로 정의는 <code>XML` 형식으로 작성됩니다. 자세한 내용은 [XML 워크플로우 정의 작성 소개](../developer-guide/crafting-xml-workflow-definitions.md) 을 참조하십시오.
+워크플로 프로세스 정의는 [Liferay에 내장](./building-workflows.md)하거나 `XML` 형식으로 업로드할 수 있습니다. DXP 작업 흐름 정의는 `XML` 형식으로 작성됩니다. 자세한 내용은 [XML 워크플로 정의 만들기 소개](../developer-guide/crafting-xml-workflow-definitions.md)를 참조하세요.
 
 새 정의를 업로드하려면:
 
@@ -42,20 +37,16 @@
 
 새로 추가된 정의는 워크플로 프로세스로 사용할 준비가 되었습니다.
 
-
-
 ## 워크플로우 정의 편집
 
 워크플로우 편집하기:
 
 1. _제어판_ &rarr; _워크플로_ &rarr; _프로세스 빌더_로 이동합니다.
-1. 워크플로에 대해 _작업_ 버튼(![Actions](../../../images/icon-actions.png))을 클릭한 다음 _편집_를 클릭합니다.
+1. 워크플로에 대해 _작업_ 버튼(![Actions](../../../images/icon-actions.png))을 클릭한 다음 _편집_ 를 클릭합니다.
    
    ![정의 편집](./managing-workflows/images/03.png)
 
 워크플로 정의에 대한 변경 사항은 _세부 정보_ 및 _개정 내역_ 메뉴에서 추적됩니다.
-
-
 
 ### 워크플로우 개정 보기 및 복원
 
@@ -70,8 +61,6 @@
 
 1. 편집이 필요한 경우 편집하고 *업데이트*을 클릭합니다. 이렇게 하면 워크플로의 다른 버전이 생성됩니다.
 
-
-
 ## 워크플로 정의 삭제
 
 워크플로에는 두 가지 상태가 있습니다.
@@ -85,15 +74,13 @@ _게시됨_ 워크플로 정의는 현재 자산 유형과 연결된 경우 삭�
 
 1. 자산 유형의 워크플로를 비활성화하려면 각 자산 유형에 대해 [워크플로 활성화](../using-workflows/activating-workflow.md) 문서에 있는 단계를 반대로 하고 _워크플로 없음_을 선택합니다.
 1. _제어판_ &rarr; _워크플로_ &rarr; _프로세스 빌더_로 이동합니다.
-1. 워크플로에 대해 _작업_ 버튼(![Actions](../../../images/icon-actions.png))을 클릭한 다음 _게시 취소_를 클릭합니다.
+1. 워크플로에 대해 _작업_ 버튼(![Actions](../../../images/icon-actions.png))을 클릭한 다음 _게시 취소_ 를 클릭합니다.
    
    ![워크플로 게시 취소](./managing-workflows/images/04.png)
 
-1. 선택한 정의는 이제 _Unpublished_ 섹션에 있습니다. 워크플로에 대해 _작업_ 버튼(![Actions](../../../images/icon-actions.png))을 클릭한 다음 _삭제_를 클릭합니다.
+1. 선택한 정의는 이제 _Unpublished_ 섹션에 있습니다. 워크플로에 대해 _작업_ 버튼(![Actions](../../../images/icon-actions.png))을 클릭한 다음 _삭제_ 를 클릭합니다.
    
    ![워크플로우 삭제](./managing-workflows/images/05.png)
-
-
 
 ## 추가 정보
 

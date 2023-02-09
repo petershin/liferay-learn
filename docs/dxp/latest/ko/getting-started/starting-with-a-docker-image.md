@@ -48,7 +48,7 @@ Liferay DXP는 상업적으로 지원되고 전 세계에서 사용되는 기업
 
 1. 이메일 주소 _test@liferay.com_ 와 암호 _test_을 사용하여 `<http://localhost:8080>` 에서 Liferay에 로그인합니다. 메시지가 표시되면 암호를 변경합니다.
 
-## 무엇 향후 계획
+## 다음
 
 시작하기 연습을 계속하고 [관리자 계정](./introduction-to-the-admin-account.md)을 사용하여 처음으로 로그인하는 방법을 알아보세요.
 

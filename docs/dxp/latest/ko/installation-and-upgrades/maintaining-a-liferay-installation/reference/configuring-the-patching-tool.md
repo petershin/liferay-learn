@@ -31,7 +31,7 @@ Patching Tool의 `auto-discovery` 명령은 DXP 파일을 검색하고 해당 �
     ./patching-tool.sh auto-discovery
     ```
 
-    [Liferay Home](../../reference/liferay-home.md) 이 다른 위치에 있는 경우 명령에 대한 Liferay Home 경로를 지정합니다.
+    [Liferay Home](../../reference/liferay-home.md) 이 다른 사이트에 있는 경우 명령에 대한 Liferay Home 경로를 지정합니다.
 
     ```bash
     ./patching-tool.sh auto-discovery [path to Liferay Home]
@@ -86,16 +86,16 @@ Product information:
 
 | 재산                                  | 묘사                                                                                                                                                                     |
 |:----------------------------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `global.lib.path`                   | 전역 클래스 경로에 `.jar` 파일을 저장할 위치를 지정합니다. 힌트: `portal-kernel.jar` 은 전역 클래스 경로에 있습니다.<br><br>DXP 7.2에서 `global.lib.path` 는 `patching.mode` 이 `바이너리`인 경우에만 사용됩니다. |
+| `global.lib.path`                   | 전역 클래스 경로에 `.jar` 파일을 저장할 사이트를 지정합니다. 힌트: `portal-kernel.jar` 은 전역 클래스 경로에 있습니다.<br><br>DXP 7.2에서 `global.lib.path` 는 `patching.mode` 이 `바이너리`인 경우에만 사용됩니다. |
 | `liferay.home`                      | 일반적으로 DXP의 `osgi` 및 `도구` 폴더의 상위 폴더인 [Liferay Home](../../reference/liferay-home.md) 폴더를 지정합니다.                                                                         |
 | `module.framework.core.path`        | DXP의 `osgi/core` 폴더 경로.                                                                                                                                                |
 | `module.framework.marketplace.path` | DXP의 `osgi/marketplace` 폴더 경로.                                                                                                                                         |
 | `module.framework.modules.path`     | DXP의 `osgi/modules` 폴더 경로.                                                                                                                                             |
 | `module.framework.portal.path`      | DXP의 `osgi/portal` 폴더 경로.                                                                                                                                              |
 | `module.framework.static.path`      | DXP의 `osgi/static` 폴더 경로.                                                                                                                                              |
-| `patches.folder`                    | 패치를 저장할 위치를 지정합니다. 기본 위치는 `./patches`입니다.                                                                                                                              |
+| `patches.folder`                    | 패치를 저장할 사이트를 지정합니다. 기본 사이트는 `./patches`입니다.                                                                                                                              |
 | `패칭 모드` **(DXP 2.0 전용)**            | 패치에는 업데이트된 바이너리 및 소스 파일이 포함되어 있습니다. 모드는 적용할 파일 형식을 결정합니다.<br><br>* `바이너리` (기본값): DXP 설치 업데이트용.<br>* `소스`: DXP를 확장하는 소스 트리 업데이트용.                     |
-| `소스.경로` **(DXP 2.0만 해당)**           | DXP 소스 트리 위치를 지정합니다. `source.path` 은 `패치 모드` 이 `소스`인 경우에만 사용됩니다.                                                                                                       |
+| `소스.경로` **(DXP 2.0만 해당)**           | DXP 소스 트리 사이트를 지정합니다. `source.path` 은 `패치 모드` 이 `소스`인 경우에만 사용됩니다.                                                                                                       |
 | `war.path`                          | DXP 웹 응용 프로그램의 경로(분할된 폴더 구조 또는 `.war` 파일의 경로)를 지정합니다.                                                                                                                  |
 
 ### 프록시 설정

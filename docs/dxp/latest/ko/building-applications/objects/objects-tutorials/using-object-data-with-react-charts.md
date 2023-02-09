@@ -7,36 +7,37 @@
 ![React 차트와 함께 Liferay 개체를 사용하여 데이터 대시보드를 위한 동적 시각적 개체를 만듭니다.](./using-object-data-with-react-charts/images/01.gif)
 
 ## Liferay DXP 설정
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps to add the `/o/c/*` URL pattern to the *Default Portal CORS Configuration*:
+그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 *기본 포털 CORS 구성*에 추가합니다.
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Security Tools*.
+1. *전역 메뉴*(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 *보안 도구를 클릭합니다*.
 
-1. Go to the *Portal Cross-Origin Resource Sharing (CORS)* tab and click *Default Portal CORS Configuration*.
+1. *Portal CORS(Cross-Origin Resource Sharing)* 탭으로 이동하고 *Default Portal CORS Configuration*을 클릭합니다.
 
-   ![Click Default Portal CORS Configuration](./using-object-data-with-react-charts/images/02.png)
+    ![기본 포털 CORS 구성 클릭](./using-object-data-with-react-charts/images/02.png)
 
-1. Add a *URL Pattern* with the `/o/c/*` value and click *Save*. This enables CORS for all Object APIs.
+1. `/o/c/*` 값으로 *URL 패턴*을 추가하고 *저장*을 클릭합니다. 이렇게 하면 모든 개체 API에 대해 CORS가 활성화됩니다.
 
-   ![Add the /o/c/* URL Pattern for Object APIs.](./using-object-data-with-react-charts/images/03.png)
+    ![객체 API에 대한 /o/c/* URL 패턴을 추가합니다.](./using-object-data-with-react-charts/images/03.png)
 
-## Creating an Object for the React Chart
+## React 차트용 개체 만들기
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+1. *Global Menu*(![Global Menu](../../../images/icon-applications-menu.png))를 열고 *Control Panel* 탭으로 이동한 다음 *Objects*를 클릭합니다. .
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) and enter these values:
+1. *추가* 버튼(![추가 버튼](../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | X3J8-Object |
-   | Plural Label | X3J8-Objects |
-   | Name | X3J8Object |
+    | 필드 | 가치 |
+    | :--- | :--- |
+    | 라벨 | X3J8-객체 |
+    | 복수 레이블 | X3J8-객체 |
+    | 이름 | X3J8객체 |
 
-   ```{note}
-   The provided React app uses these values.
-   ```
+    ```{note}
+    제공된 React 앱은 이러한 값을 사용합니다.
+    ```
 
 1. 새 *개체* 초안을 선택하고 *필드* 탭을 클릭한 다음 다음 *필드*를 추가합니다.
 
@@ -156,7 +157,7 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
 
    문서 라이브러리에 업로드하면 원격 앱을 만드는 데 사용할 고유한 WebDAV URL이 파일에 할당됩니다.
 
-1. *정보* 아이콘(![Info Icon](../../../images/icon-information.png))을 클릭하고 **된 파일을 선택합니다.
+1. *정보* 아이콘(![정보 아이콘](../../../images/icon-information.png))을 클릭하고 *업로드된 파일*을 선택합니다.
 
 1. 파일의 *WebDAV URL* 을 복사하고 다음 단계에서 사용할 수 있도록 저장합니다.
 

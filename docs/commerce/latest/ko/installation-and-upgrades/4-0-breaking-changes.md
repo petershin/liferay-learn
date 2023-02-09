@@ -162,31 +162,21 @@
 
   * `commerce-frontend-js` 모듈은 이제 콘텐츠(특히 `MiniCart` 통합에 필요한 `MiniCartContext` )의 제어된 액세스 및 노출을 허용하는 적절한 인터페이스와 함께 노출됩니다.
 
-  * </a>
-
-되어 있습니다.</p></li> </ul></li> </ul> 
-    
-    
+  * MiniCart 구성 요소의 유용성과 확장성은 [여기](https://issues.liferay.com/browse/LRDOCS-9462)에 설명되어 있습니다. 
 
 ### 영향을 받는 사람은 누구입니까?
 
 이전 `MiniCartTag`에 의존하거나 확장하는 개발자.
 
-
-
 ### 이렇게 변경된 이유는 무엇입니까?
 
 구성 요소 확장성을 지원하기 위해 Liferay DXP 표준과 일치합니다.
-
-
 
 ## CommerceCountry 및 CommerceRegion 제거됨
 
 * **날짜:** 2021-Mar-02
 
 * **JIRA 티켓:** [LPS-125991](https://issues.liferay.com/browse/LPS-125991)
-
-
 
 ### 무엇이 바뀌었나요?
 
@@ -218,33 +208,23 @@
 
   * `getWarehouseCountries`
 
-
-
 ### 누가 영향을 받습니까?
 
 이러한 모델 및 서비스를 참조하거나 사용하는 사람.
-
-
 
 ### 내 코드를 어떻게 업데이트해야 합니까?
 
 `CommerceCountry` 및/또는 `CommerceRegion` 에 대한 모든 명시적 참조를 새 해당 모델 및 서비스로 업데이트하십시오.
 
-
-
 ### 이렇게 변경된 이유는 무엇입니까?
 
 이 변경 사항은 Liferay Portal에서 중복 모델 및 서비스를 제거합니다.
-
-
 
 ## 미니 비교 위젯 + 미니 비교 구성 요소
 
 * **날짜:** 2021-Mar-26
 
 * **JIRA 티켓:** [COMMERCE-2909](https://issues.liferay.com/browse/COMMERCE-2909)
-
-
 
 ### 무엇이 바뀌었나요?
 
@@ -254,23 +234,17 @@
 
 * JSP를 통해 렌더링하도록 `CompareCheckboxTag` 을 리팩토링했습니다. JSP는 차례로 `CompareCheckbox` React 구성 요소를 렌더링합니다.
   
-    * **사용되지 않음** 및 **는</code> commerce-frontend-taglib `<code>` ** 이전 Soy/MetalJS 구현을 제거했습니다.
-
-
+   * **'commerce-frontend-taglib' 모듈에서 'CompareCheckbox'의 이전 Soy/MetalJS 구현이 더 이상 사용되지 않고 **제거되었습니다**.
 
 ### 누가 영향을 받습니까?
 
 MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하는 개발자.
-
-
 
 ### 이렇게 변경된 이유는 무엇입니까?
 
 * Soy/MetalJS 지원 중단으로 인해
 
 * Liferay DXP와 일치하여 상거래에서 Liferay 클래식 테마를 지원하여 향후 DXP WEM 통합을 위한 길을 닦습니다.
-
-
 
 ## 개선된 계정 선택기
 
@@ -278,21 +252,15 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **JIRA 티켓:** [COMMERCE-5888](https://issues.liferay.com/browse/COMMERCE-6315)
 
-
-
 ### 무엇이 바뀌었나요?
 
 * JSP를 통해 렌더링하고 `IncludeTag`에서 확장하도록 `AccountSelectorTag` 을 리팩토링했습니다. JSP는 Soy/MetalJS에서 마이그레이션된 `AccountSelector` React 구성 요소를 수화하고 렌더링합니다.
 
 * Commerce Headless API를 통해 런타임 수명 주기 동안 전달된 계정/주문 변경 사항에 대해 다른 구성 요소에 알리기 위해 이벤트 이름을 변경했습니다.
 
-
-
 ### 영향을 받는 사람은 누구입니까?
 
 관련 태그로 이전 Soy/MetalJS 구성 요소를 사용하거나 확장하는 개발자.
-
-
 
 ### 이렇게 변경된 이유는 무엇입니까?
 
@@ -300,15 +268,11 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * Liferay DXP와 일치하여 상거래에서 Liferay 클래식 테마를 지원하여 향후 DXP WEM 통합을 위한 길을 닦습니다.
 
-
-
 ## Storefront의 제품 카드 및 제품 렌더링 전략
 
 * **날짜:** 2021-Apr-27
 
 * **JIRA 티켓:** [COMMERCE-5889](https://issues.liferay.com/browse/COMMERCE-5889)
-
-
 
 ### 무엇이 바뀌었나요?
 
@@ -320,23 +284,21 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
   * 구현은 이제 `commerce-product-content-web` 모듈에 있으며 `CPContentRenderer` 재정의, JSP 재정의 또는 Liferay Dynamic Include를 통해 확장 가능합니다.
 
-  * **사용되지 않음** 및 **제거됨** commerce-frontend-taglib 모듈에서 `제품 카드의 이전 Soy/</strong>구현이` 사용되지 않음</strong> 및 **제거되었습니다 **.</p></li> 
+  * **더 이상 사용되지 않음** 및 **제거됨** `commerce-frontend-taglib` 모듈에서 제품 카드의 이전 Soy/MetalJS 구현이 **더 이상 사용되지 않음** 및 **제거됨**되었습니다.
     
-      * `commerce-theme-minium-impl` 모듈에 있는 이전 Minium 관련 `</strong>`은 **사용되지 않고** 제거되었습니다 **.</p></li> </ul></li> 
+  * `commerce-theme-minium-impl` 모듈에 있는 이전 Minium 전용 `CPContentRenderer`는 **지원 중단**되고 **제거되었습니다**.
     
-    * JSP를 통해 렌더링하도록 `AddToCartTag` 을 리팩터링했으며 이제 `IncludeTag`에서 확장합니다. JSP는 차례로 `QuantitySelector` React 구성 요소를 포함하여 `AddToCart` React 구성 요소를 렌더링합니다.
+  * JSP를 통해 렌더링하도록 `AddToCartTag` 을 리팩터링했으며 이제 `IncludeTag`에서 확장합니다. JSP는 차례로 `QuantitySelector` React 구성 요소를 포함하여 `AddToCart` React 구성 요소를 렌더링합니다.
   
-    * **Deprecated** 및 **는 `commerce-frontend-taglib` 모듈에서 `` ** 의 이전 Soy/MetalJS 구현을 제거했습니다.
+ * ** 'commerce-frontend-taglib' 모듈에서 'AddToCartButton'의 이전 Soy/MetalJS 구현이 더 이상 사용되지 않고 **제거되었습니다**.
 
   * **Deprecated** 및 **는 `commerce-frontend-taglib` 모듈에서 `QuantitySelector` 의 이전 Soy/MetalJS 구현을** 제거했습니다.
 
-  * **Deprecated** 및 **는 `commerce-frontend-taglib` ** ``.
+  * **'commerce-frontend-taglib' 모듈에서 이전 'QuantitySelectorTag'가 더 이상 사용되지 않고 **제거되었습니다**.
 
 * `PriceTag` 은 JSP를 통해 렌더링하도록 리팩터링되었으며 이제 `IncludeTag`에서 확장됩니다. JSP는 올바르게 구조화된 템플릿(SEO용)을 렌더링하고 최종적으로 `Price` React 구성 요소(사용자 페이지 랜딩용)를 렌더링합니다.
   
-    * **사용되지 않음** 및 **는 `commerce-frontend-taglib` 모듈에서 `Price</strong> 의 이전 Soy/` 구현을 제거했습니다.</li> </ul></li> </ul> 
-    
-    
+* **'commerce-frontend-taglib' 모듈에서 'Price'의 이전 Soy/MetalJS 구현이 더 이상 사용되지 않고 **제거되었습니다**.
 
 ### 영향을 받는 사람은 누구입니까?
 
@@ -350,15 +312,11 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * Soy/MetalJS `PriceTag` 및 `Price*`.
 
-
-
 ### 이렇게 변경된 이유는 무엇입니까?
 
 * Soy/MetalJS 지원 중단으로 인해
 
 * Liferay DXP와 일치하여 상거래에서 Liferay 클래식 테마를 지원하여 향후 DXP WEM 통합을 위한 길을 닦습니다.
-
-
 
 ## *ServiceImpl 클래스에서 AddOrUpdate와 Upsert를 사용하도록 메서드 이름 표준화
 
@@ -366,25 +324,17 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **JIRA 티켓:** [COMMERCE-6095](https://issues.liferay.com/browse/COMMERCE-6095)
 
-
-
 ### 무엇이 바뀌었나요?
 
 이름이 `upsert*` 인 Commerce `*ServiceImpl` 클래스의 모든 메소드는 이제 `addOrUpdate*`로 이름이 변경되었습니다.
-
-
 
 ### 영향을 받는 사람은 누구입니까?
 
 `*ServiceImpl` `upsert*` 방법을 사용하는 개발자는 해당 방법 `addOrUpdate*`를 사용해야 합니다.
 
-
-
 ### 이렇게 변경된 이유는 무엇입니까?
 
 이 변경으로 Liferay의 소스 형식이 위의 방법에 도입되었습니다.
-
-
 
 ## BOM 기능이 Shop by Diagram 기능으로 대체됨
 
@@ -392,25 +342,17 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **JIRA 티켓:** [COMMERCE-3030](https://issues.liferay.com/browse/COMMERCE-3030)
 
-
-
 ### 무엇이 바뀌었나요?
 
 Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 항목이 존재하지 않고 다이어그램이라는 새 제품 유형이 있음을 의미합니다.
-
-
 
 ### 영향을 받는 사람은 누구입니까?
 
 상점에 대한 다이어그램을 작성해야 하는 제품 전문가는 다이어그램 제품 유형으로 제품을 작성할 필요가 없습니다.
 
-
-
 ### 이렇게 변경된 이유는 무엇입니까?
 
 이 변경으로 BOM 문제가 수정되고 예비 부품 사용 사례가 더 잘 충족됩니다.
-
-
 
 ## 계정 위젯을 제거하여 더 이상 Liferay Commerce의 모듈이 아닙니다.
 
@@ -418,13 +360,9 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **JIRA 티켓:** [COMMERCE-7288](https://issues.liferay.com/browse/COMMERCE-7288)
 
-
-
 ### 무엇이 바뀌었나요?
 
 계정 위젯은 상거래 계정 위젯을 대체합니다. 실행 중인 기존 시스템의 모든 인스턴스가 업데이트되었습니다.
-
-
 
 ### 영향을 받는 사람은 누구입니까?
 
@@ -432,21 +370,15 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * 다른 위젯을 사용하여 계정을 관리할 최종 사용자(계정 관리자).
 
-
-
 ### 이렇게 변경된 이유는 무엇입니까?
 
 이 변경은 상거래 계정에서 계정으로의 마이그레이션을 준수하기 위해 필요했습니다.
-
-
 
 ## 리팩토링 CommerceOrderLocalServiceImpl
 
 * **날짜:** 2022-2-16
 
 * **JIRA 티켓:** [COMMERCE-8440](https://issues.liferay.com/browse/COMMERCE-8440)
-
-
 
 ### 무엇이 바뀌었나요?
 
@@ -460,13 +392,9 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * `updateUser` 메서드를 제거했습니다.
 
-
-
 ### 영향을 받는 사람은 누구입니까?
 
 코드에서 이러한 메서드를 호출하는 개발자.
-
-
 
 ### 내 코드를 어떻게 업데이트해야 합니까?
 
@@ -480,21 +408,15 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * `userId` , `userName` 를 `commerceOrder.setUserId(long userId)` , `commerceOrder.setUserName(String userName)` 로 설정한 후 `updateCommerceOrder(CommerceOrder commerceOrder)` 메소드를 사용하여 사용자 정보를 업데이트합니다.
 
-
-
 ### 이렇게 변경된 이유는 무엇입니까?
 
 이 변경은 클래스 `CommerceOrderLocalServiceImpl`을 정리하기 위해 도입되었습니다.
-
-
 
 ## commerce-service service.xml에서 CommerceOrder 구체화
 
 * **날짜:** 2022년 4월 13일
 
 * **JIRA 티켓:** [COMMERCE-8408](https://issues.liferay.com/browse/COMMERCE-8408)
-
-
 
 ### 무엇이 바뀌었나요?
 
@@ -506,13 +428,9 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * `CommerceOrderLocalService` 및 `CommerceOrderService`에서 `updateCommerceOrderPrices` 메서드에 대한 매개변수 재정렬.
 
-
-
 ### 누가 영향을 받습니까?
 
 코드에서 이러한 메서드를 호출하는 개발자.
-
-
 
 ### 내 코드를 어떻게 업데이트해야 합니까?
 
@@ -524,13 +442,9 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * 매개 변수가 새로운 `updateCommerceOrderPrices` 메서드와 올바르게 정렬되었는지 확인합니다.
 
-
-
 ### 이렇게 변경된 이유는 무엇입니까?
 
 이 변경으로 엔티티 `CommerceOrder` in `commerce-service` `service.xml`가 정리됩니다.
-
-
 
 ## CPContentHelper 및 CPContentHelperImpl 리팩터링
 
@@ -538,27 +452,19 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **JIRA 티켓:** [COMMERCE-7830](https://issues.liferay.com/browse/COMMERCE-7830)
 
-
-
 ### 무엇이 바뀌었나요?
 
 * `CPContentHelper.java` 및 `CPContentHelperImpl.java`에서 메소드 서명 변경: 
     * `getReplacementCommerceProductFriendlyURL(long cProductId, String cpIntanceUuid, ThemeDisplay themeDisplay)` to `getReplacementCommerceProductFriendlyURL(CPSku cpSku, ThemeDisplay themeDisplay)`
 * `CPContentHelper.java` 및 `CPContentHelperImpl.java` 에서 `getCPAttachmentFileEntries()` 메서드의 이름을 `getCPMedias()`로 변경했습니다.
 
-
-
 ### 영향을 받는 사람은 누구입니까?
 
 이는 코드에서 이러한 메서드를 참조하거나 사용하는 모든 개발자에게 영향을 미칩니다.
 
-
-
 ### 내 코드를 어떻게 업데이트해야 합니까?
 
 위 방법의 모든 참조 및 사용법을 새 방법으로 바꿉니다.
-
-
 
 ### 이렇게 변경된 이유는 무엇입니까?
 

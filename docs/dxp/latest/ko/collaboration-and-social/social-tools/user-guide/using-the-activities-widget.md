@@ -12,7 +12,7 @@ _Activities 위젯 사용을 시작하려면:
 
     ![활동 위젯 추가](./using-the-activities-widget/images/02.png)
 
-1. _활동_ 위젯을 페이지의 원하는 위치로 끌어다 놓습니다.
+1. _활동_ 위젯을 페이지의 원하는 사이트로 끌어다 놓습니다.
 
 ![커뮤니티 사이트 활동](./using-the-activities-widget/images/01.png)
 

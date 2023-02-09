@@ -14,82 +14,64 @@ Linux 및 Mac 운영 체제용 Blade CLI 설치는 한 줄 명령입니다.
 curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/installers/local | sh
 ```
 
-설치가 완료되면 `블레이드가 성공적으로 설치되었습니다.` 메시지가 나타납니다. 새 명령줄을 열고 `blade`을 입력합니다. 명령을 찾을 수 없음 오류가 발생하면 경로</code>
+설치가 완료되면 `블레이드가 성공적으로 설치되었습니다` 메시지가 나타납니다. 새 명령줄을 열고 `blade`를 입력합니다. 명령을 찾을 수 없음 오류가 발생하면 [경로에 `blade` 명령을 추가해야 합니다](./troubleshooting-blade-cli.md#the-blade-command-is-not-available-in-my-cli ).
 
- `추가해야</a>.</p>
+### 그래픽 설치 프로그램에서 설치
 
-<h3 spaces-before="0">그래픽 설치 프로그램에서 설치</h3>
+설치 프로그램이 더 편하다면 최신 [Liferay 프로젝트 SDK 설치 프로그램](https://github.com/liferay/liferay-ide/releases/)을 다운로드하여 실행하세요.
 
-<p spaces-before="0">설치 프로그램이 더 편하다면 최신 <a href="https://github.com/liferay/liferay-ide/releases/">Liferay 프로젝트 SDK 설치 프로그램</a> 을 다운로드하여 실행하십시오.</p>
+1. Java 런타임을 선택합니다. 이것은 자동 감지되어야 합니다.
 
-<ol start="1">
-<li><p spaces-before="0">Java 런타임을 선택하십시오. 이것은 자동 감지되어야 합니다.</p>
+    ![Liferay Workspace 설치 프로그램이 설치된 JDK를 자동 감지합니다.](./installing-and-updating-blade-cli/images/01.png)
 
-<p spaces-before="3"><img src="./installing-and-updating-blade-cli/images/01.png" alt="Liferay Workspace 설치 프로그램은 설치된 JDK를 자동 감지합니다." /></p></li>
-<li><p spaces-before="0">소개가 끝나면 <em x-id="3">다음</em>을 클릭합니다.</p></li>
-<li><p spaces-before="0">설치 중에 <a href="../liferay-workspace/what-is-liferay-workspace.md">Liferay Workspace</a> 을 초기화할 수 있습니다. Liferay Workspace는 Liferay 프로젝트를 관리할 시스템의 환경(폴더 집합)입니다. 지금 초기화하려면 위치를 설정하십시오.</p>
+1. 소개가 끝나면 *다음*을 클릭합니다.
 
-<p spaces-before="3"><img src="./installing-and-updating-blade-cli/images/02.png" alt="Liferay Workspace는 Liferay 프로젝트를 관리하는 파일 시스템의 폴더 세트입니다." /></p></li>
-<li><p spaces-before="0">Liferay Workspace를 초기화하는 경우 다음으로 Liferay DXP 또는 Community Edition을 선택해야 합니다.</p>
+1. 설치 중에 [Liferay Workspace](../liferay-workspace/what-is-liferay-workspace.md)를 초기화할 수 있습니다. Liferay Workspace는 Liferay 프로젝트를 관리할 시스템의 환경(폴더 집합)입니다. 지금 초기화하려면 사이트를 설정하십시오.
 
-<p spaces-before="3"><img src="./installing-and-updating-blade-cli/images/03.png" alt="설치 프로그램의 기본값은 Community Edition이지만 DXP를 선택할 수 있습니다." /></p>
+    ![Liferay Workspace는 Liferay 프로젝트를 관리하는 파일 시스템의 폴더 집합입니다.](./installing-and-updating-blade-cli/images/02.png)
 
-<p spaces-before="3">제품 유형을 선택하고 <em x-id="3">다음</em>을 클릭합니다.</p></li>
-<li><p spaces-before="0">Blade CLI를 설치하려면 <em x-id="3">다음</em> 을 클릭하십시오.</p></li>
-</ol>
+1. Liferay Workspace를 초기화하는 경우 다음으로 Liferay DXP 또는 Community Edition을 선택해야 합니다.
 
-<p spaces-before="0">Windows 환경에서 <code>blade` 명령은 Windows에서 자동으로 경로에 추가되거나 Mac 및 Linux에서 `bash` 또는 `zsh` 를 사용하는 경우에 추가됩니다. 자세한 내용은 [Blade CLI](./troubleshooting-blade-cli.md) 문제 해결을 참조하십시오.</p> 
+    ![설치 프로그램의 기본값은 Community Edition이지만 DXP를 선택할 수 있습니다.](./installing-and-updating-blade-cli/images/03.png)
 
+    제품 유형을 선택하고 *다음*을 클릭합니다.
 
+1. *다음*을 클릭하여 블레이드 CLI를 설치합니다.
+
+Windows 환경에서 `blade` 명령은 Windows에서 또는 Mac 및 Linux에서 `bash` 또는 `zsh`를 사용하는 경우 경로에 자동으로 추가됩니다. 자세한 내용은 [Troubleshooting Blade CLI](./troubleshooting-blade-cli.md)를 참조하십시오. 
 
 ## 프록시 구성
 
 프록시 서버 뒤에 있는 경우 CLI에서 구성할 수 있습니다.
 
-
-
 ```bash
 jpm command --jvmargs "-Dhttp(s).proxyHost=[your proxy host] -Dhttp(s).proxyPort=[your proxy port]" jpm
 ```
 
-
 이제 Blade는 인터넷에서 Liferay 샘플 및 템플릿에 액세스할 때 프록시 서버를 사용할 수 있습니다.
-
-
 
 ## 블레이드 CLI 업데이트
 
 Blade CLI를 사용하면 업데이트가 있는지 확인합니다. 업데이트가 있는 경우 명령이 완료되면 다음 메시지가 표시됩니다.
-
-
 
 ```bash
 Update available 3.9.1 -> 3.9.2
 Run `blade update` to install
 ```
 
-
 Blade를 업데이트하려면 다음 명령을 실행하십시오.
-
-
 
 ```bash
 blade update
 ```
 
-
 최첨단 기능을 원하는 경우 선택적으로 더 자주 업데이트되는 스냅샷 버전으로 전환할 수 있습니다.
-
-
 
 ```bash
 blade update -s
 ```
 
-
 스냅샷 버전은 불안정할 수 있으므로 위험을 감수하고 사용하십시오.
-
-
 
 ## 블레이드 명령
 

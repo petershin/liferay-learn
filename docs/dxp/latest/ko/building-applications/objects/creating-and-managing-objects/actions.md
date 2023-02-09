@@ -34,6 +34,5 @@ Liferay는 다음 작업 유형을 제공합니다.
 
 :::{grid-item-card} 동작 유형 이해
 :link: ./actions/understanding-action-types.md
-:::  
-:
 :::
+::::

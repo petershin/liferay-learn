@@ -100,7 +100,7 @@ Liferay DXP/Portal 7.4+의 404 URL 탭에 액세스하려면 먼저 [404 추적�
 
 ### 404 URL 무시/무시
 
-*동작* 버튼(![Actions button](../../../images/icon-actions.png))을 클릭하고 *무시*</em>*선택하여 URL이 활성인지 또는 무시되는지 확인할 수 있습니다. 무시하면 언제든지 상태를 변경할 수 있지만 URL은 기본 *활성* 보기에서 숨겨집니다.</p>
+*작업* 버튼(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 *무시*/*를 선택하여 URL이 활성인지 또는 무시되는지 확인할 수 있습니다. 무시*. 무시하면 언제든지 URL 상태를 변경할 수 있지만 기본 *활성* 보기에서 URL이 숨겨집니다.
 
 ![URL이 활성인지 아니면 무시되는지 확인할 수 있습니다.](./using-the-redirection-tool/images/12.png)
 

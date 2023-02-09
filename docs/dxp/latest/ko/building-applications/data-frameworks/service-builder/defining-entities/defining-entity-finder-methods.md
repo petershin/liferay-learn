@@ -14,7 +14,7 @@ Finder는 쉽게 만들 수 있습니다.
 </finder> 
 ```
 
-위의 예는 가장 간단한 파인더 중 하나이며 다중 테넌시를 지원하는 경우 항상 추가해야 하는 것입니다. 이 파인더는 애플리케이션이 배치된 사이트에 속하는 객체 모음을 반환합니다. Service Builder는 `*Persistence` 및 `*PersistenceImpl` 클래스의 엔터티에 대한 찾기 관련 메서드(예: `fetchByGroupId`, `findByGroupId`, `removeByGroupId`, `countByGroupId`)를 생성합니다. 이러한 클래스 중 첫 번째는 인터페이스입니다. 두 번째는 구현입니다. 예를 들어, Liferay의 블로그 애플리케이션은 [`blogs-api/src/main/java/com/liferay/blogs/service/persistence`](https://github.com/liferay/liferay-portal/tree/master/modules/apps/blogs/blogs-api/src/main/java/com/liferay/blogs/service/persistence) 폴더에 있는 `-Persistence` 클래스와 `-PersistenceImpl 폴더에서 엔티티 찾기 메서드를 생성합니다. <a href="https://github.com/liferay/liferay-portal/tree/master/modules/apps/blogs/blogs-service/src/main/java/com/liferay/blogs/service/persistence/impl"><code>blogs-service/src/main/java/com/liferay/blogs/service/persistence/impl`</a> 폴더의</code> 개 클래스.
+위의 예는 가장 간단한 파인더 중 하나이며 다중 테넌시를 지원하는 경우 항상 추가해야 하는 것입니다. 이 파인더는 애플리케이션이 배치된 사이트에 속하는 객체 모음을 반환합니다. Service Builder는 `*Persistence` 및 `*PersistenceImpl` 클래스의 엔터티에 대한 찾기 관련 메서드(예: `fetchByGroupId`, `findByGroupId`, `removeByGroupId`, `countByGroupId`)를 생성합니다. 이러한 클래스 중 첫 번째는 인터페이스입니다. 두 번째는 구현입니다. 예를 들어 Liferay의 블로그 애플리케이션은 [`blogs-api/src/main/java/com/liferay/blogs/service/persistence`](https://github.com/liferay/liferay-portal/tree/master/modules/apps/blogs/blogs-api/src/main/java/com/liferay/blogs/service/persistence) 폴더와 [ `blogs-service/src/main/java/com/liferay/blogs/service/persistence/impl`](https://github.com/liferay/liferay-portal/tree/master/modules/apps/blogs/blogs-service/src/main/java/com/liferay/blogs/service/persistence/impl) 폴더.
 
 그러나 하나의 열로 찾는 것으로 제한되지 않습니다. 다중 열 파인더를 만들 수 있습니다.
 

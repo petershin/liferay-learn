@@ -52,17 +52,13 @@ Elasticsearch로 전송된 Liferay 쿼리를 다시 채점하기 위해 Learning
 
 1. Liferay는 쿼리를 Elasticsearch로 보내고 검색 엔진의 관련성 알고리즘을 사용하여 평소와 같이 처음 1000개의 결과를 검색합니다.
 
-1. 상위 1000</a>결과는 검색 적중으로 반환되지 않지만 Elasticsearch에서 [재점수](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-request-body.html#request-body-search-rescore) 재점수 기능
+1. 상위 1000개 결과는 검색 히트로 반환되지 않지만 [재점수](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-request)를 위해 Elasticsearch에서 사용됩니다. -body.html#request-body-search-rescore) [재점수 기능](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model. html#rescore-top-n-with-sltr).
 
-을 통해 사용됩니다.</p></li> 
-   
-   1 결과는 [SLTR 쿼리](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html)에 의해 다시 채점되며 여기에는 재채점에 사용할 키워드 및 훈련된 모델이 포함됩니다.
+1. 결과는 [SLTR 쿼리](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html)에 의해 다시 채점되며 여기에는 재채점에 사용할 키워드 및 훈련된 모델이 포함됩니다.
 
-1 훈련된 모델이 결과의 순위를 다시 지정하면 Liferay의 [검색 결과](../search-pages-and-widgets/search-results/search-results.md) 에 새로운 순서로 반환됩니다.</ol> 
+1. 훈련된 모델이 결과의 순위를 다시 지정하면 Liferay의 [검색 결과]( ../search-pages-and-widgets/search-results/search-results.md)에 새로운 순서로 반환됩니다.
 
-위의 정렬된 목록의 하위 글머리 기호에 불과하지만 이 패러다임 작업의 대부분은 훈련된 모델을 만들고 연마하는 것입니다. 여기에서는 범위를 벗어나지만 아래는 Liferay 쿼리에서 기계 학습의 마법을 조율하기 위해 모든 부분을 제자리에 가져오는 데 도움이 됩니다. 다음은 _모델 교육_을 구성하는 요소에 대한 간략한 개요입니다.
-
-
+위의 정렬된 목록의 하위 글머리 기호에 불과하지만 이 패러다임 작업의 대부분은 훈련된 모델을 만들고 연마하는 것입니다. 여기에서는 범위를 벗어나지만 아래는 Liferay 쿼리에서 기계 학습의 마법을 조율하기 위해 모든 부분을 제자리에 가져오는 데 도움이 됩니다. 다음은 _모델 교육_ 을 구성하는 요소에 대한 간략한 개요입니다.
 
 ## 모델 교육
 
@@ -80,61 +76,42 @@ Elasticsearch로 전송된 Liferay 쿼리를 다시 채점하기 위해 Learning
 
 시작하기 전에 Liferay와 통신하는 원격 [Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch.html) 클러스터가 있어야 합니다. 자세한 내용은 [검색 엔진 호환성 매트릭스를 참조하십시오](https://help.liferay.com/hc/en-us/articles/360016511651).
 
-
-
 ```{tip}
 [Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md)을 사용하여 가장 일반적인 쿼리를 검색합니다(이는 Learning to Rank 모델을 생성할 쿼리를 결정하는 한 가지 방법일 수 있음). .
 ```
-
-
-
 
 ## 1단계: Elasticsearch에 Learning to Ranking 플러그인 설치
 
 Learning to Rank 플러그인 설치에 대한 자세한 내용은 [Elasticsearch Learning to Rank 플러그인 설명서](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/#installing) 을 참조하십시오.
 
 
-
 ```{warning}
 Elasticsearch 7.14+와 함께 Liferay DXP 7.2를 실행하는 경우 플러그인을 설치하기 전에 JDK8 또는 JDK11(Liferay 설치에서 사용 중인 것)로 컴파일해야 합니다. 필요한 단계 및 추가 배경 정보는 [이 문서](https://help.liferay.com/hc/en-us/articles/5194953858701)를 참조하십시오.
 ```
 
-
 설치하는 플러그인 버전에 따라 다음과 같은 명령을 실행하게 됩니다.
-
-
 
 ```bash
 ./bin/elasticsearch-plugin install https://github.com/o19s/elasticsearch-learning-to-rank/releases/download/v1.5.7-es7.13.4/ltr-plugin-v1.5.7-es7.13.4.zip
 ```
 
-
-Elasticsearch 클러스터</a>에서 X-Pack 보안을 사용하는 경우 [추가 단계가 있을 수 있습니다.](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/x-pack.html)</p> 
-
-
+[Elasticsearch 클러스터에서 X-Pack 보안](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)을 사용하는 경우 [추가 단계가 있을 수 있습니다.](https:// elasticsearch-learning-to-rank.readthedocs.io/en/latest/x-pack.html)
 
 ## 2단계: 모델 교육 및 업로드
 
 학습 모델에 대한 자세한 지침은 이 가이드의 범위를 벗어납니다. 이를 위해서는 적절한 도구와 모델을 추천할 수 있는 데이터 과학자의 개입이 필요합니다. 당신에게 맞는 것을 사용하십시오. 그렇게 하면 좋은 검색 결과를 생성하는 모델을 생성하기 위해 선택한 교육 도구에서 사용할 수 있는 [판단 목록](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#judgments-expression-of-the-ideal-ordering) 및 [기능 세트](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/building-features.html) 을 컴파일하게 될 것입니다. 모델이 있으면 Learning to Rank 플러그인에 업로드하십시오.
-
-
 
 ## 3단계: Learning to Ranking Plugin에 모델 업로드
 
 `POST` 요청을 사용하여 모델을 업로드하지만 먼저 Learning to Rank 플러그인에 업로드된 기능 세트와 `_ltr` 인덱스가 있는지 확인해야 합니다. Kibana를 사용하여( [LES 모니터링 위젯](./monitoring-elasticsearch.md)을 통해) 이러한 작업을 더 쉽게 만드십시오.
 
 1. `_ltr` 인덱스가 아직 없는 경우 새로 만듭니다. 
-   
-   
 
    ```json
    PUT _ltr
    ```
 
-
 1. `_ltr` 인덱스에 기능 세트를 추가합니다. 이 예에서 세트는 `liferay`이라고 합니다. 
-   
-   
 
    ```json
    POST _ltr/_featureset/liferay
@@ -180,12 +157,9 @@ Elasticsearch 클러스터</a>에서 X-Pack 보안을 사용하는 경우 [추�
    }
    ```
 
-
 필수이므로 여기에 사용된 구문을 기록해 두십시오.
 
 1. 학습된 모델을 기능 세트에 추가합니다. 
-   
-   
 
    ```json
    POST _ltr/_featureset/liferay/_createmodel
@@ -204,17 +178,11 @@ Elasticsearch 클러스터</a>에서 X-Pack 보안을 사용하는 경우 [추�
    }
     ```
 
-
 Liferay 자체에서 할 일이 많지 않기 때문에 이것은 매우 높은 수준의 지침 세트입니다. 필요한 사항에 대해 자세히 알아보려면 [Learning to Rank 플러그인 설명서](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/index.html)을 참조하십시오.
-
-
 
 ```{tip}
 그 판단 목록을 계속 수정하십시오!
 ```
-
-
-
 
 ## 4단계: 학습 순위 지정 활성화
 

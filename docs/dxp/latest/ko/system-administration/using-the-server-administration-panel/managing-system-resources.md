@@ -17,7 +17,7 @@
 
 **가비지 수집기 실행:** 가비지 수집기를 실행하여 메모리를 해제하도록 JVM에 지시합니다.
 
-**스레드 덤프 생성:** 교착 상태의 존재와 위치를 확인하기 위해 나중에 조사할 스레드 덤프를 생성합니다. 이는 성능 테스트 중에 먼저 `com.liferay.server.admin.web.internal.portlet.action.EditServerMVCActionCommand` 에 대한 로거 범주를 추가하고 `INFO`으로 설정하는 경우 유용할 수 있습니다.
+**스레드 덤프 생성:** 교착 상태의 존재와 사이트를 확인하기 위해 나중에 조사할 스레드 덤프를 생성합니다. 이는 성능 테스트 중에 먼저 `com.liferay.server.admin.web.internal.portlet.action.EditServerMVCActionCommand` 에 대한 로거 범주를 추가하고 `INFO`으로 설정하는 경우 유용할 수 있습니다.
 
 **이 VM에서 캐시한 콘텐츠 지우기:** 로컬 캐시에 저장된 콘텐츠를 지웁니다. 클러스터된 Ehcache가 아닌 로컬 JVM 범위 Ehcache 콘텐츠만 지워집니다. [1](#one)
 

@@ -72,9 +72,9 @@
 
    ![필드 탭으로 이동하여 관계 필드 편집을 시작합니다.](./defining-object-relationships/images/04.png)
 
-1. *필수* 스위치를 토글합니다.
+1. *필수* 스사이트를 토글합니다.
 
-   ![필수 스위치를 전환합니다.](./defining-object-relationships/images/05.png)
+   ![필수 스사이트를 전환합니다.](./defining-object-relationships/images/05.png)
 
 1. *저장*을 클릭합니다.
 

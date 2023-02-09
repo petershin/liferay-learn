@@ -53,7 +53,7 @@
 1. *변경 사항 재설정*을 클릭합니다.
 
    ```{warning}
-   변경 사항 재설정은 **사이트 페이지에 대한 모든 변경 사항을 직접 되돌립니다**. 이로 인해 데이터가 손실될 수 있습니다. 조심해서 진행해라.
+   변경 사항 재설정은 **사이트 페이지에 대한 모든 변경 사항을 직접 되돌립니다**. 이로 인해 데이터가 손실될 수 있습니다. 진행하실때 주의하십시오.
    ```
 
 
@@ -73,5 +73,5 @@ After encountering a conflict, follow these steps to restore automatic propagati
 
 ## 추가 정보
 
-* [위치 템플렛](../site-templates.md)
+* [사이트 템플렛](../site-templates.md)
 * [사이트 템플릿 전파 구성](./configuring-site-template-propagation.md)

@@ -58,7 +58,7 @@ PortletMVC4Spring 애플리케이션에는 `WEB-INF` 폴더에 이러한 설명�
 </context-param>
 ```
 
-`<servlet/>` 및 `<servlet-mapping/>` 요소는 서블릿과 뷰의 내부 위치를 설정합니다.
+`<servlet/>` 및 `<servlet-mapping/>` 요소는 서블릿과 뷰의 내부 사이트를 설정합니다.
 
 ```xml
 <servlet>
@@ -375,10 +375,9 @@ Import-Package: com.liferay.portal.webserver,\
 com.liferay.portal.kernel.servlet.filters.invoker
 ```
 
-포틀릿 애플리케이션 WAR 파일을 배치할 때 [WAB Generator](../../../reference/deploying-wars-wab-generator.md) 은 지정된 OSGi 메타데이터를 Liferay의 런타임 프레임워크에 배치된 결과 웹 애플리케이션 번들(WAB)에 추가합니다.
-`liferay-plugin-package-2.dtd[version]파일</a> 는 <code>` </code> 을 설명합니다. </p> 
+포틀릿 애플리케이션 WAR 파일을 배포할 때 [WAB 생성기](../../../reference/deploying-wars-wab-generator.md)는 지정된 OSGi 메타데이터를 결과 웹 애플리케이션 번들(WAB)에 추가합니다. Liferay의 런타임 프레임워크에 배포됩니다.
 
-
+[`liferay-plugin-package-[버전].dtd` 파일](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html)은 `liferay-plugin-package.properties` 파일.
 
 ## 추가 정보
 

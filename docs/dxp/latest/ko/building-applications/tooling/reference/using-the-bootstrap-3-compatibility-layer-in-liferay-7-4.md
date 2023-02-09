@@ -28,12 +28,9 @@ yarn add @liferay/bs3-bs4-compat
 
 ## 프로젝트에서 호환성 계층 사용
 
-호환성 계층을 사용하려면 프로젝트의 `clay.scss` 파일로 가져와야 합니다(7.4</a>으로
-업그레이드의 일부로 포함된 테마가 아닌 경우).</p> 
+호환성 레이어를 사용하려면 프로젝트의 `clay.scss` 파일로 가져와야 합니다(이미 [7.4로 업그레이드](../../../site-building/site-appearance/themes/upgrading-a-theme.md)).
 
 아틀라스 테마 변수가 필요한 경우 프로젝트의 `src/css/clay.scss` 파일에 다음을 추가합니다.
-
-
 
 ```css
 @import 'clay/atlas';
@@ -45,10 +42,7 @@ yarn add @liferay/bs3-bs4-compat
 @import '@liferay/bs3-bs4-compat/scss/components';
 ```
 
-
-아틀라스 테마 변수가 필요하지 않다면 프로젝트의</strong> src/css/ ** `파일에 대신 추가`:</p> 
-
-
+아틀라스 테마 변수가 **필요하지** 않은 경우 대신 프로젝트의 `src/css/clay.scss` 파일에 다음을 추가하십시오.
 
 ```css
 @import 'clay/base';
@@ -58,10 +52,7 @@ yarn add @liferay/bs3-bs4-compat
 @import '@liferay/bs3-bs4-compat/scss/components';
 ```
 
-
 이제 부트스트랩 3 호환성 레이어가 테마에 포함되어 있으므로 Liferay DXP 7.4 GA1에서 작동합니다. 다음 작업은 부트스트랩 3에 대한 종속성을 제거할 수 있도록 프로젝트의 코드를 변경하는 것입니다. 
-
-
 
 ## 추가 정보
 

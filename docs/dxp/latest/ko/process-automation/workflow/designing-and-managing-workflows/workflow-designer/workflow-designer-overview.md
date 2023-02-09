@@ -2,17 +2,14 @@
 
 {bdg-primary}`구독`
 
-Process Builder의 워크플로 디자이너는 워크플로 프로세스 정의를 만들기 위한 그래픽 인터페이스입니다. 편리한 끌어서 놓기 인터페이스를 사용하면 XML 정의를 직접 작성하는 것보다 작업 흐름 설계가 더 쉬워</a>
- 제어판 &rarr; 워크플로 &rarr; 프로세스 빌더에서 액세스할 수 있습니다.</p> 
+Process Builder의 워크플로 디자이너는 워크플로 프로세스 정의를 만들기 위한 그래픽 인터페이스입니다. 편리한 끌어서 놓기 인터페이스를 사용하면 [XML 정의를 직접 작성](../../developer-guide/crafting-xml-workflow-definitions)하는 것보다 작업 흐름 설계가 더 쉬워집니다. 제어판에서 액세스할 수 있습니다 &rarr; 작업 흐름 &rarr; 프로세스 빌더.
 
 ![노드를 디자이너 캔버스로 끌어다 놓습니다.](./workflow-designer-overview/images/01.png)
-
 
 
 ```{tip}
 또는 Process Builder의 소스 보기에서 XML 정의를 작성하거나 업로드할 수 있습니다. [워크플로우 관리](../managing-workflows.md#uploading-a-new-workflow-definition)를 참조하십시오.
 ```
-
 
 워크플로 디자이너는 [개 워크플로 노드](./workflow-nodes.md) 유형을 모두 지원합니다.
 
@@ -32,7 +29,6 @@ Process Builder의 워크플로 디자이너는 워크플로 프로세스 정의
 * [단일 승인자 정의](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml)
 
 
-
 ## 워크플로우 구축
 
 워크플로를 구축하려면 전역 메뉴(![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; 제어판 &rarr; 프로세스 빌더로 이동합니다.
@@ -44,8 +40,6 @@ Process Builder의 워크플로 디자이너는 워크플로 프로세스 정의
 [워크플로 전환](./workflow-transitions.md) 각 노드를 연결하여 검토 프로세스에서 원하는 흐름을 생성합니다. 첫 번째 노드를 종료하면 전환으로 표시된 다음 노드로 처리가 계속됩니다.
 
 워크플로우에서 작업할 준비가 되셨습니까? 다음 단계는 [워크플로 작업 만들기](./creating-workflow-tasks.md)입니다.
-
-
 
 ## 워크플로 현지화
 
@@ -71,8 +65,6 @@ Liferay 7.4 U20부터 UI에 나타나는 워크플로 텍스트는 번역 가능
 1. 워크플로를 저장합니다.
 
 워크플로 정의가 게시되고 [자산](../../using-workflows/activating-workflow.md)에 연결되면 워크플로 작업 담당자와 같은 참가자가 자신의 언어로 워크플로와 상호 작용합니다.
-
-
 
 ## 추가 정보
 

@@ -16,7 +16,7 @@ JDK를 선택하려면 [Liferay DXP 호환성 매트릭스](https://help.liferay
 | 힙 크기    | `-Xms2560m -Xmx2560m`                     | 부정   | 기본 최소 및 최대 크기는 필요에 맞게 조정할 수 있지만 JVM이 동적으로 조정되지 않도록 동일한 최소(`-Xms`) 및 최대(`-Xmx`) 크기를 설정해야 합니다.                                                                                                                                            |
 | Log4j   | `-Dlog4j2.formatMsgNoLookups=true`        | 그렇다* | 2.15.0 이전의 Log4j 버전은 LDAP JNDI 구문 분석기를 통한 RCE(원격 코드 실행) 취약점의 영향을 받습니다. 자세한 내용은 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) 을 참조하십시오. \*Liferay DXP 7.4 GA1 및 Liferay PORTAL 7.4 GA1 - GA3에서 보안 취약점을 해결하려면 이 설정이 필요합니다. |
 
-지원되는 애플리케이션 서버에 대한 Liferay 설치 문서는 이러한 설정을 적용할 위치를 설명합니다. 기사 링크는 다음과 같습니다.
+지원되는 애플리케이션 서버에 대한 Liferay 설치 문서는 이러한 설정을 적용할 사이트를 설명합니다. 기사 링크는 다음과 같습니다.
 
 * [수코양이](../installing-liferay/installing-liferay-on-an-application-server/installing-on-tomcat.md)
 * [와일드플라이](../installing-liferay/installing-liferay-on-an-application-server/installing-on-wildfly.md)

@@ -7,12 +7,13 @@ MVC 리소스 명령을 사용하는 예제 포틀릿을 배포한 다음 검사
 ## MVC 리소스 명령 호출
 
 예제 포틀릿은 MVC 리소스 명령을 사용하여 간단한 파일을 다운로드합니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p8v5.zip -O
@@ -125,7 +126,7 @@ MVC 리소스 명령 클래스는 [`MVCResourceCommand`](https://github.com/life
 
 뷰의 *다운로드* 링크를 클릭하면 `P8V5DownloadMVCResourceCommand`의 `serveResource` 메서드가 호출됩니다.
 
-## 무엇 향후 계획
+## 다음
 
 이제 MVC 리소스 명령을 사용하는 방법을 알게 되었습니다. 포틀릿의 컨텐츠를 현지화하려면 [현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)을 참조하십시오. 모델, 지속성 및 서비스 계층을 개발할 준비가 되었으면 [Service Builder](../../data-frameworks/service-builder.md)을 방문하십시오.
 

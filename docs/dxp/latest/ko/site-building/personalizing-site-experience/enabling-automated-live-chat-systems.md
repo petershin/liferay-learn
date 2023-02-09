@@ -28,7 +28,7 @@ Click To Chat을 활성화하려면 *인스턴스 설정*로 이동하십시오.
 
 1. 인스턴스에 대해 Click to Chat을 활성화하려면 *Enable Click to Chat* 토글을 전환합니다.
 
-    ![Click to Chat을 활성화하려면 스위치를 켭니다.](./enabling-automated-live-chat-systems/images/04.png)
+    ![Click to Chat을 활성화하려면 스사이트를 켭니다.](./enabling-automated-live-chat-systems/images/04.png)
 
 1. 활성화되면 [사이트 설정](../site-settings.md) 전략을 선택해야 합니다. 사이트 설정 전략은 주어진 [Liferay 인스턴스](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)에 존재하는 사이트에서 Click to Chat이 활성화되는 방식을 결정합니다.
 

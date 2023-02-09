@@ -42,21 +42,17 @@
 
 1. 개체에 대해 이전 관계에 대해 수행한 것과 동일한 *사용자 개체* 을 선택합니다.
 
-1. 매개변수에 대해 이전에 생성한 계정 개체</em> 과 사용자 정의 개체의 *관계를 선택합니다.</p>
+1. Parameter에서 이전에 생성한 사용자 정의 개체의 *계정 개체와의 관계*를 선택합니다.
 
    이는 우편 주소 항목이 특정 계정으로 범위가 지정되기 때문에 필요합니다. 이 매개변수는 사용 가능한 주소가 계정 관계의 필드 값에 따라 달라지는 종속 관계를 설정합니다.
 
-   ![우편 주소 개체에서 사용자 정의 개체로 일대다 관계를 만들고 사용자 정의 개체의 계정 관계를 매개 변수로 사용합니다.](./accessing-accounts-data-from-custom-objects/images/03.png)</li>
+   ![우편 주소 개체에서 사용자 정의 개체로 일대다 관계를 만들고 사용자 정의 개체의 계정 관계를 매개변수로 사용합니다.](./accessing-accounts-data-from-custom-objects/images/03. png)
 
-1
+1. *저장*을 클릭합니다.
 
-*저장*을 클릭합니다.
+1. 사용자 정의 개체의 기본 레이아웃 및 보기에 관계 필드를 추가합니다. 자세한 지침은 [개체 레이아웃 디자인](../layouts/designing-object-layouts.md) 및 [개체 보기 디자인](../views/designing-object-views.md) 을 참조하십시오.
 
-1
-
-사용자 정의 개체의 기본 레이아웃 및 보기에 관계 필드를 추가합니다. 자세한 지침은 [개체 레이아웃 디자인](../layouts/designing-object-layouts.md) 및 [개체 보기 디자인](../views/designing-object-views.md) 을 참조하십시오.
-
-   ![사용자 정의 개체의 기본 레이아웃 및 보기에 관계 필드를 추가합니다.](./accessing-accounts-data-from-custom-objects/images/04.png)</ol>
+   ![사용자 정의 개체의 기본 레이아웃 및 보기에 관계 필드를 추가합니다.](./accessing-accounts-data-from-custom-objects/images/04.png)
 
 일단 추가되면 사용자는 사용자 정의 개체에서 사용 가능한 계정과 주소 중에서 선택할 수 있습니다. 사용 가능한 계정 옵션은 사용자의 계정 멤버십에 따라 다르며 사용 가능한 주소는 선택한 계정에 따라 다릅니다.
 

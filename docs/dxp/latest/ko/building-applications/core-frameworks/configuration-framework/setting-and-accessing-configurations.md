@@ -3,12 +3,13 @@
 Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정 UI를 추가할 수 있습니다.
 
 ## 예제 포틀릿 보기
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Setting and Accessing Configurations](./liferay-n2f3.zip).
+1. [설정 및 액세스 구성](./liferay-n2f3.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O

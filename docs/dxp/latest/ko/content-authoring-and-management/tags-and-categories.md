@@ -25,7 +25,7 @@ tags-and-categories/developer-guide.md
 - [범주 및 태그로 콘텐츠 구성](./tags-and-categories/organizing-content-with-categories-and-tags.md)
 - [콘텐츠 태깅 및 태그 관리](./tags-and-categories/tagging-content-and-managing-tags.md)
 - [콘텐츠의 범주 및 어휘 정의](./tags-and-categories/defining-categories-and-vocabularies-for-content.md)
-- [위치 정보 자산](./tags-and-categories/geolocating-assets.md)
+- [사이트 정보 자산](./tags-and-categories/geolocating-assets.md)
 - [세션 속성 어휘](./tags-and-categories/session-property-vocabularies.md)
 
 ## 자동 태그 추가

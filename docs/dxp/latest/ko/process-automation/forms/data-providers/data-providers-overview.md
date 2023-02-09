@@ -92,7 +92,7 @@ REST 서비스의 응답을 필터링하도록 REST 서비스의 경로 또는 �
 
 `restcountries.com` 데이터 공급자를 사용하는 경우 사용자에게 국가 이름이 표시되고 숫자 국가 코드는 데이터베이스에 저장됩니다.
 
-## 무엇 향후 계획
+## 다음
 
 * [REST 데이터 공급자를 사용하여 양식 옵션 채우기](./using-the-rest-data-provider-to-populate-form-options.md)
 * [자동 채우기 규칙 사용](../form-rules/using-the-autofill-rule.md)

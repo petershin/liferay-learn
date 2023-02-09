@@ -1,6 +1,6 @@
 # 버전 4의 Liferay Cloud 프로젝트 변경 사항
 
-Liferay Cloud 스택의 버전 3.x와 4.x 간에 서비스에 대해 Docker 이미지 버전이 정의되는 위치, 리포지토리의 구조 및 `Jenkinsfiles` 이 사용되는 방법을 포함하여 몇 가지 변경 사항이 있습니다.
+Liferay Cloud 스택의 버전 3.x와 4.x 간에 서비스에 대해 Docker 이미지 버전이 정의되는 사이트, 리포지토리의 구조 및 `Jenkinsfiles` 이 사용되는 방법을 포함하여 몇 가지 변경 사항이 있습니다.
 
 **컨텐츠:**
 
@@ -33,7 +33,7 @@ Liferay Cloud Stack 버전 4로 업그레이드하면 모든 서비스의 Docker
 
 다음 표에는 `liferay` 서비스 구성의 새로운 구성이 요약되어 있습니다.
 
-| **파일**                      | **3.x에서의 위치**              | **4.x에서의 위치**                       |
+| **파일**                      | **3.x에서의 사이트**              | **4.x에서의 사이트**                       |
 |:--------------------------- |:-------------------------- |:----------------------------------- |
 | 배포용 파일                      | lcp/liferay/deploy/{ENV}/  | liferay/configs/{ENV}/deploy/       |
 | OSGi 구성 파일(.cfg 또는 .config) | lcp/liferay/config/{ENV}/  | liferay/configs/{ENV}/osgi/configs/ |
@@ -56,7 +56,7 @@ Liferay Cloud Stack 버전 4로 업그레이드하면 모든 서비스의 Docker
 
 `검색` 서비스 내의 모든 구성은 이제 환경별 `구성` 디렉토리에 속합니다. `검색` 서비스 구성의 새 조직은 다음 표를 참조하세요.
 
-| **파일**                       | **3.x에서의 위치**      | **4.x에서의 위치**     |
+| **파일**                       | **3.x에서의 사이트**      | **4.x에서의 사이트**     |
 |:---------------------------- |:------------------ |:----------------- |
 | Elasticsearch 구성             | lcp/검색/구성/{ENV}/   | 검색/구성/{ENV}/구성/   |
 | 사용자 지정 셸 스크립트                | lcp/검색/스크립트/{ENV}/ | 검색/구성/{ENV}/스크립트/ |
@@ -101,7 +101,7 @@ bin/elasticsearch-plugin list
 
 `webserver` 서비스 구성의 새 조직은 다음 표를 참조하십시오.
 
-| **파일**  | **3.x에서의 위치**               | **4.x에서의 위치**              |
+| **파일**  | **3.x에서의 사이트**               | **4.x에서의 사이트**              |
 |:------- |:--------------------------- |:-------------------------- |
 | 웹서버 구성  | lcp/webserver/config/{ENV}/ | 웹서버/configs/{ENV}/conf.d/  |
 | 맞춤 스크립트 | lcp/webserver/script/{ENV}/ | 웹서버/configs/{ENV}/scripts/ |
@@ -113,12 +113,12 @@ bin/elasticsearch-plugin list
 
 ### 웹서버 구성 재정의
 
-`liferay.conf` 파일을 `webserver/configs/{ENV}/conf.d/`에 추가하여 `webserver` 서비스의 루트 위치를 사용자 정의할 수 있습니다. 이는 `webserver` 서비스 이미지의 컨테이너에서 사용할 수 있는 기본 `liferay.conf`를 재정의합니다. 루트 위치를 사용자 정의할 때 기본 `liferay.conf` 파일을 참조로 보려면 Liferay Cloud Console에서 셸에 액세스하십시오.
+`liferay.conf` 파일을 `webserver/configs/{ENV}/conf.d/`에 추가하여 `webserver` 서비스의 루트 사이트를 사용자 정의할 수 있습니다. 이는 `webserver` 서비스 이미지의 컨테이너에서 사용할 수 있는 기본 `liferay.conf`를 재정의합니다. 루트 사이트를 사용자 정의할 때 기본 `liferay.conf` 파일을 참조로 보려면 Liferay Cloud Console에서 셸에 액세스하십시오.
 
 ```{warning}
-이 파일이 특히 기본 `liferay.conf`를 재정의하도록 `liferay.conf` 이외의 파일 이름을 사용하여 루트 위치를 사용자 정의하지 마십시오. 그렇지 않으면 컨테이너에 두 파일이 함께 존재하고 두 개의 루트 위치가 발견되어 오류가 발생할 수 있습니다.
+이 파일이 특히 기본 `liferay.conf`를 재정의하도록 `liferay.conf` 이외의 파일 이름을 사용하여 루트 사이트를 사용자 정의하지 마십시오. 그렇지 않으면 컨테이너에 두 파일이 함께 존재하고 두 개의 루트 사이트가 발견되어 오류가 발생할 수 있습니다.
 
-다른 파일 이름은 대신 웹 서버의 추가 위치를 정의하는 데 사용됩니다.
+다른 파일 이름은 대신 웹 서버의 추가 사이트를 정의하는 데 사용됩니다.
 ```
 
 `nginx.conf` 파일을 `webserver/configs/{ENV}/`에 추가하여 기본 NGINX 구성을 재정의할 수도 있습니다. 이를 사용하여 웹 서버의 동작을 추가로 정의할 수 있습니다. 자세한 내용은 [공식 NGINX 문서](https://docs.nginx.com/nginx/admin-guide/basic-functionality/managing-configuration-files/) 를 참조하십시오.
@@ -127,7 +127,7 @@ bin/elasticsearch-plugin list
 
 사용자 정의 정적 컨텐츠를 추가하려면 이 파일을 `webserver/configs/{ENV}/public/`에 배치하십시오. Liferay Cloud는 이 공용 폴더를 찾아 그 안의 모든 파일을 `/var/www/html`에 복사합니다.
 
-공용 폴더를 구성하려면 `conf.d` 폴더 내에 추가 위치를 추가해야 합니다. 예를 들어 `.html` 파일(예: `index.html`)을 새 `webserver/configs/{ENV}/public/static` 폴더에 추가하려면 고유한 `.conf` 구성 파일을 `webserver/configs에 추가합니다. /{ENV}/conf.d` 다음 내용:
+공용 폴더를 구성하려면 `conf.d` 폴더 내에 추가 사이트를 추가해야 합니다. 예를 들어 `.html` 파일(예: `index.html`)을 새 `webserver/configs/{ENV}/public/static` 폴더에 추가하려면 고유한 `.conf` 구성 파일을 `webserver/configs에 추가합니다. /{ENV}/conf.d` 다음 내용:
 
 ```apacheconf
 location /static/ {
@@ -139,7 +139,7 @@ location /static/ {
 
 `backup` 서비스 내의 모든 구성은 이제 환경별 `configs` 디렉토리에 속합니다. 이것은 주로 사용자 정의 SQL 스크립트와 관련이 있습니다.
 
-| **파일**          | **3.x에서의 위치**            | **4.x에서의 위치**        |
+| **파일**          | **3.x에서의 사이트**            | **4.x에서의 사이트**        |
 |:--------------- |:------------------------ |:-------------------- |
 | 사용자 지정 SQL 스크립트 | lcp/backup/script/{ENV}/ | 백업/구성/{ENV}/scripts/ |
 

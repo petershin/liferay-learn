@@ -83,7 +83,7 @@ Then, follow these steps to deploy an example to see how Fragment configuration 
 
 Liferay의 내장 [Fragments Editor](./using-the-fragments-editor.md) 또는 텍스트 파일에서 Fragment의 구성 옵션을 편집할 수 있습니다.
 
-**조각 편집기 사용:** UI에서 [조각 편집기로 조각을 편집</em> ](./using-the-fragments-editor.md) 구성 *탭을 클릭합니다. Fragment의 구성이 편집기에 나타납니다.</p>
+**Fragments Editor 사용:** UI에서 [Fragments Editor](./using-the-fragments-editor.md)로 Fragment를 편집하고 *Configuration* 탭을 클릭합니다. Fragment의 구성이 편집기에 나타납니다.
 
 **조각 구성 파일 편집:** 조각 파일이 없는 경우 조각의 작업 메뉴를 열고 *내보내기*를 클릭하여 조각에서 파일을 내보냅니다. Fragment의 `fragment.json` 파일에 있는 `configurationPath` 필드(선택 사항)는 구성 `.json` 파일을 지정합니다. 구성 파일이 없는 경우 구성 파일을 만들고 `configurationPath` 필드를 구성 파일 이름으로 설정합니다.
 
@@ -234,27 +234,19 @@ Fragments Editor는 유효할 때까지 구성을 저장하지 않습니다. 미
 
 이제 업데이트를 테스트할 수 있습니다.
 
-1. 콘텐츠 페이지에 반영되도록 변경 사항을 전파합니다. </em>카드에 대해 *Actions* (![Action Icon](../../../images/icon-actions.png))를 클릭하고  *View Usages를 선택합니다.</p></li>
+1. 콘텐츠 페이지에 반영되도록 변경 사항을 전파합니다. C7F8 카드에 대해 *작업*(![작업 아이콘](../../../images/icon-actions.png))을 클릭하고 *사용 보기*를 선택합니다.
 
-1
-
-콘텐츠 페이지의 확인란을 선택하고 (![propagate button](../../../images/icon-propagate.png)) 버튼을 클릭합니다.
+1. 콘텐츠 페이지의 확인란을 선택하고 (![propagate button](../../../images/icon-propagate.png)) 버튼을 클릭합니다.
 
     ![구성 가능한 조각은 조각의 모양과 느낌을 수정하는 옵션을 제공합니다.](./adding-configuration-options-to-fragments/images/04.png)
 
-1
+1. 콘텐츠 페이지로 돌아가서 다시 한 번 (![Edit icon](../../../images/icon-edit-pencil.png)) 아이콘을 클릭하여 콘텐츠 페이지를 편집합니다.
 
-콘텐츠 페이지로 돌아가서 다시 한 번 (![Edit icon](../../../images/icon-edit-pencil.png)) 아이콘을 클릭하여 콘텐츠 페이지를 편집합니다.
+1. *C7F8 카드* 을 다시 선택하면 오른쪽에 선택 패널이 표시됩니다.
 
-1
+1. *일반* 탭에서 *설명 표시* 확인란을 선택/선택 취소하여 카드의 텍스트를 표시하거나 숨깁니다.
 
-*C7F8 카드* 을 다시 선택하면 오른쪽에 선택 패널이 표시됩니다.
-
-1
-
-*일반* 탭에서 *설명 표시* 확인란을 선택/선택 취소하여 카드의 텍스트를 표시하거나 숨깁니다.
-
-    ![프래그먼트에 대해 원하는 만큼의 구성 옵션을 가질 수 있습니다.](./adding-configuration-options-to-fragments/images/05.png)</ol>
+    ![조각에 대해 원하는 만큼 구성 옵션을 가질 수 있습니다.](./adding-configuration-options-to-fragments/images/05.png)
 
 엄청난! 이제 조각에 구성 옵션을 추가하는 방법을 알았습니다. 더 많은 구성 예는 [Fragment Configuration Types](../reference/fragments/fragment-configuration-types-reference.md)을 참조하십시오.
 

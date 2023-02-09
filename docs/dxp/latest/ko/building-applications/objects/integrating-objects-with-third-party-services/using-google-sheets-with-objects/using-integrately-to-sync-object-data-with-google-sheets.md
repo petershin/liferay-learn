@@ -22,7 +22,7 @@
 
 1. 자동화의 트리거 및 작업을 정의하고 *이동*을 클릭합니다.
 
-   ![흐름을 정의하고 *이동을 클릭합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/04.png)
+   ![트리거 유형을 선택하세요.](./using-ifttt-to-sync-object-data-with-google-sheets/images/04.png)
 
 1. 생성된 *webhook URL*을 복사합니다.
 

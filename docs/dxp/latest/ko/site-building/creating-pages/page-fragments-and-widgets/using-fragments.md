@@ -34,9 +34,9 @@ using-fragments/propagating-fragment-changes.md
 
 ![프래그먼트로 콘텐츠 페이지 및 템플릿을 구축합니다.](./using-fragments/images/01.png)
 
-Liferay는 즉시 사용 가능한 다양한 프래그먼트를 제공하지만 페이지 프래그먼트 편집기 [또는 [프래그먼트 툴킷](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md) 을 사용하여 사용자 정의](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md)를 개발할 수 있습니다. 또한</a>
+Liferay는 즉시 사용 가능한 다양한 프래그먼트를 제공하지만 [페이지 프래그먼트 편집기](../../developer-guide/reference/fragments/page-fragment-editor-interface- reference.md) 또는 [Fragments Toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md). 또한 [Liferay 위젯 포함](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#inclusive-widgets-within-a-fragment)을 프래그먼트에 포함하거나 편집 가능한 필드를 추가할 수 있습니다. . 자세한 내용은 [페이지 조각 개발](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)을 참조하세요.
 
-조각에 포함하거나 편집 가능한 필드를 추가할 수 있습니다. 자세한 내용은 [페이지 조각 개발](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) 을 참조하십시오.</p> 
+모든 페이지 조각은 더 쉽게 관리하고 사용할 수 있도록 관련 조각을 그룹화하는 세트로 구성됩니다. 각 프래그먼트 세트는 모든 프래그먼트에 액세스할 수 있는 공통 리소스를 포함할 수 있습니다. 자세한 내용은 [페이지 조각에 기본 리소스 포함](../../developer-guide/developing-page-fragments/using-default-resources-with-fragments.md)을 참조하세요.
 
 모든 페이지 조각은 더 쉽게 관리하고 사용할 수 있도록 관련 조각을 그룹화하는 세트로 구성됩니다. 각 프래그먼트 세트는 모든 프래그먼트에 액세스할 수 있는 공통 리소스를 포함할 수 있습니다. 자세한 내용은 [페이지 조각에 기본 리소스 포함](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md) 을 참조하십시오.
 

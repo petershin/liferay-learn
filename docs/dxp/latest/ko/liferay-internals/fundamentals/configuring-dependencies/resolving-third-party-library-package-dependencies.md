@@ -42,7 +42,7 @@
 ```{note}
 WAR 파일에 [Liferay가 이미 내보낸](../../reference/exported-third-party-packages.md) 타사 패키지의 다른 버전이 필요한 경우 [`Import-Package :` 목록](../importing-packages.md). 해당 패키지가 OSGi 모듈에 있으면 배포합니다.
 
-Liferay DXP는 WAR을 배포할 때 이를 [WAB](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.war.html)으로 변환하고 이미 내보낸 타사 JAR을 제거합니다. 배포 시 WAB에서 벗어납니다. Liferay 내보내기와 다른 버전을 강제로 배포하려면 해당 패키지의 비 OSGi JAR 이름을 [WAB 생성기가 제외하는 JAR](../../../building-applications/reference/jars-excluded-from -wabs.md) 및 [JAR 포함](#embedding-a-library)을 프로젝트에 포함합니다.
+Liferay DXP는 WAR을 배포할 때 이를 [WAB](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.war.html)으로 변환하고 이미 내보낸 타사 JAR을 제거합니다. 배포 시 WAB에서 벗어납니다. Liferay 내보내기와 다른 버전을 강제로 배포하려면 해당 패키지의 비 OSGi JAR 이름을 [WAB 생성기가 제외하는 JAR](../../../building-applications/reference/jars-excluded-from-wabs.md) 및 [JAR 포함](#embedding-a-library)을 프로젝트에 포함합니다.
 ```
 
 축하합니다! 비 OSGi JAR에서 패키지에 대한 종속성을 해결했습니다.

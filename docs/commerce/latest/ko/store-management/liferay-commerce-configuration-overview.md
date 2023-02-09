@@ -25,11 +25,11 @@ _글로벌 애플리케이션_ 메뉴 &rarr; _상거래_로 이동합니다. 관
 
 ## Liferay Commerce 2.1 이하
 
-Liferay Commerce 2.1 구성은 Liferay _제품 메뉴_의 여러 위치로 나뉩니다. Commerce _Control Panel_ 드롭다운에는</em> Commerce 설치에 전역적으로 _적용되는 구성 및 설정이 포함되어 있습니다. 상거래 _사이트 메뉴_ 드롭다운에는 특정 상점 사이트로 범위가 지정된 구성 및 설정이 포함되어 있습니다.</p>
+Liferay Commerce 2.1 구성은 Liferay _제품 메뉴_에서 여러 위치로 나뉩니다. Commerce _Control Panel_ 드롭다운에는 Liferay Commerce 설치에 _globally_를 적용하는 구성 및 설정이 포함되어 있습니다. Commerce_Site Menu_ 드롭다운에는 특정 상점 사이트로 범위가 지정된 구성 및 설정이 포함되어 있습니다.
 
 ### 상거래 제어판
 
-_제어판_ → _상거래_으로 이동합니다. 다음 구성을 변경하면 상점 사이트 전체에 적용됩니다.
+_제어판_ → _상거래_ 으로 이동합니다. 다음 구성을 변경하면 상점 사이트 전체에 적용됩니다.
 
 ![글로벌 상거래 설정](./liferay-commerce-configuration-overview/images/01.png)
 
@@ -53,7 +53,7 @@ _제어판_ → _상거래_으로 이동합니다. 다음 구성을 변경하면
 
 다음 구성은 선택한 매장 사이트로 범위가 지정됩니다. 여기서의 변경 사항은 동일한 Liferay Commerce 인스턴스에서 호스팅되는 다른 상점에 적용되지 않습니다.
 
-_제어판_ → _매장 사이트_ → _상거래_로 이동합니다.
+_제어판_ → _매장 사이트_ → _상거래_ 로 이동합니다.
 
 ![최소 전체 사이트 설정](./liferay-commerce-configuration-overview/images/03.png)
 

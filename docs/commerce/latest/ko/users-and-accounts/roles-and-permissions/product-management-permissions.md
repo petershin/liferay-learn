@@ -56,7 +56,7 @@ Liferay Commerce를 사용하면 전역 메뉴(![Global Menu](../../images/icon-
 
 **Commerce Pricing** ( [제품 그룹](./pricing-permissions.md) 및 제품에 나열됨, 이전에는 제어판 > 일반 권한에 나열됨): 이러한 권한은 제품 그룹 애플리케이션에서 리소스 관련 작업을 수행할 수 있는 기능을 부여합니다. 제품 그룹 엔터티는 가격 목록 및 할인을 쉽게 적용할 수 있도록 관련 제품을 그룹화하는 데 사용됩니다.
 
-**상업 창고** (제품, [배송](./order-management-permissions.md) 및 [창고](./inventory-management-permissions.md)아래에 나열됨): 이 권한은 창고 엔터티에서 작업을 수행할 수 있는 기능을 부여합니다. 각 웨어하우스는 제품 재고를 저장하고 채널에 연결되며 주소 및 지리적 위치와 함께 물리적 위치를 나타냅니다.
+**상업 창고** (제품, [배송](./order-management-permissions.md) 및 [창고](./inventory-management-permissions.md)아래에 나열됨): 이 권한은 창고 엔터티에서 작업을 수행할 수 있는 기능을 부여합니다. 각 웨어하우스는 제품 재고를 저장하고 채널에 연결되며 주소 및 지리적 사이트와 함께 물리적 사이트를 나타냅니다.
 
 **Commerce BOM** (Shop by Diagram Admin에 나열됨, 이전에는 제어판 > 일반 권한에 나열됨): 이 권한은 Shop by Diagram 애플리케이션에서 리소스 관련 작업을 수행할 수 있는 기능을 부여합니다. BOM 리소스 엔터티는 개체 구성 요소를 제품 SKU에 매핑하는 다이어그램입니다.
 

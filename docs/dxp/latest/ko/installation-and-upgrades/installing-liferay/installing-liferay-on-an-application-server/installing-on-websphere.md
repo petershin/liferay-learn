@@ -33,12 +33,12 @@ Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. JDK를 선택하려�
 응용 프로그램 서버 바이너리가 설치되면 *프로필 관리 도구* 을 시작하여 DXP에 적합한 프로필을 만듭니다.
 
 1. *생성...*을 클릭하고 *응용 프로그램 서버*을 선택한 다음 *다음*을 클릭합니다.
-1. *고급* 프로필 생성 옵션을 클릭한 후 *다음*을 클릭합니다. 고급 프로필을 사용하여 프로필의 위치와 프로필, 노드 및 호스트의 이름과 같은 설정 값을 지정하고 특정 포트를 할당하거나 선택적으로 관리 콘솔 및 샘플 애플리케이션을 배포할지 여부를 선택하고 웹을 추가할지 여부를 선택합니다. IBM HTTP Server에 대한 서버 정의. 이러한 옵션에 대한 자세한 내용은 WebSphere 설명서를 참조하십시오.
+1. *고급* 프로필 생성 옵션을 클릭한 후 *다음*을 클릭합니다. 고급 프로필을 사용하여 프로필의 사이트와 프로필, 노드 및 호스트의 이름과 같은 설정 값을 지정하고 특정 포트를 할당하거나 선택적으로 관리 콘솔 및 샘플 애플리케이션을 배포할지 여부를 선택하고 웹을 추가할지 여부를 선택합니다. IBM HTTP Server에 대한 서버 정의. 이러한 옵션에 대한 자세한 내용은 WebSphere 설명서를 참조하십시오.
 
     ![그림 1: 고유한 설정을 지정하려면 고급 프로필 옵션을 선택합니다.](./installing-on-websphere/images/01.png)
 
 1. *관리 콘솔 배치*상자를 선택하십시오. 이를 통해 애플리케이션 서버 작업을 위한 웹 기반 UI를 사용할 수 있습니다. 기본 응용 프로그램을 건너뜁니다. (개발 머신에만 설치하십시오.) *다음*을 클릭합니다.
-1. 프로필 이름과 위치를 설정합니다. 환경에 적합한 성능 조정 설정을 지정하십시오.
+1. 프로필 이름과 사이트를 설정합니다. 환경에 적합한 성능 조정 설정을 지정하십시오.
 
    ```{note}
    성능 조정 설정에 대한 자세한 내용은 WebSphere 설명서를 참조하십시오. *다음*을 클릭합니다.
@@ -153,7 +153,7 @@ com.ibm.ws.exception.RuntimeWarning: com.ibm.ws.webcontainer.exception.WebAppNot
 ## 종속성 설치
 
 1. OSGi Dependencies ZIP 파일의 압축을 풀고 내용물을 `[Liferay Home]/osgi` 폴더에 넣습니다(아직 없는 경우 이 폴더를 만듭니다). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
-1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 DXP WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 DXP WAR을 임의의 위치에 압축 해제하고 데이터베이스 공급업체의 JDBC JAR 파일을 분해된 DXP WAR의 `WEB-INF/shielded-container- lib` 폴더에 넣고 DXP WAR을 다시 압축합니다.
+1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 DXP WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 DXP WAR을 임의의 사이트에 압축 해제하고 데이터베이스 공급업체의 JDBC JAR 파일을 분해된 DXP WAR의 `WEB-INF/shielded-container- lib` 폴더에 넣고 DXP WAR을 다시 압축합니다.
 
     지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 을 참조하십시오.
 
@@ -162,7 +162,7 @@ Hypersonic 데이터베이스는 DXP와 함께 번들로 제공되며 테스트 
 ```
 
 ```{note}
-DXP 7.3 및 이전 버전의 경우 종속성 ZIP 파일의 압축을 풀고 해당 콘텐츠를 WebSphere 애플리케이션 서버의 `[설치 위치]/WebSphere/AppServer/lib/ext` 폴더에 넣습니다. 데이터베이스 벤더의 JDBC JAR 파일도 해당 폴더에 배치하십시오.
+DXP 7.3 및 이전 버전의 경우 종속성 ZIP 파일의 압축을 풀고 해당 콘텐츠를 WebSphere 애플리케이션 서버의 `[설치 사이트]/WebSphere/AppServer/lib/ext` 폴더에 넣습니다. 데이터베이스 벤더의 JDBC JAR 파일도 해당 폴더에 배치하십시오.
 ```
 
 ## Elasticsearch 설치
@@ -175,27 +175,22 @@ Liferay DXP가 구성되고(Elasticsearch 커넥터에 `.config` 파일 사용) 
 
 DXP의 `portlet.jar` (버전 3)은 버전 2.0과 역호환됩니다. DXP 7.4 `.war` 에는 `portlet.jar` 이 포함되어 있으며 이전 DXP 버전의 종속성 ZIP에도 포함되어 있습니다. WebSphere의 `portlet.jar` 버전 2.0을 재정의해야 합니다.
 
-1. `[설치 위치]/WebSphere/AppServer/profiles/your-profile/` 폴더에서 `app_shared_libraries`이라는 폴더를 만듭니다.
+1. `[설치 사이트]/WebSphere/AppServer/profiles/your-profile/` 폴더에서 `app_shared_libraries`이라는 폴더를 만듭니다.
 
 1. DXP WAR(7.4+) 또는 `[Install Location]/WebSphere/AppServer/lib/ext` 폴더에서 생성한 `app_shared_libraries` 폴더로 DXP `portlet.jar` 을 복사합니다.
 
-1. 서버 관련 공유 라이브러리</a>을 사용하여
-에 대한 IBM의 단계를 따르십시오. 4d단계에서 먼저 로컬 클래스 로더로 로드된 *클래스(parent_Last)* 을 선택해야 합니다.</p></li> 
-   
-   1 구성을 저장합니다.</ol> 
+1. [서버 관련 공유 라이브러리 사용](https://www.ibm.com/support/pages/best-practice-using-common-application-files#usingserver)에 대한 IBM의 단계를 따릅니다. 4d단계에서 *로컬 클래스 로더로 로드된 클래스 먼저(parent_Last)*를 선택해야 합니다.
 
-
+1. 구성을 저장합니다.
 
 ### DXP Portlet.jar이 먼저 로드되었는지 확인
 
 DXP의 `portlet.jar` 을 서버 관련 공유 라이브러리에 배치하는 것 외에도 `config.ini` 파일이 먼저 로드되도록 구성합니다.
 
-1. `[설치 위치]/WebSphere/AppServer/configuration/config.ini` 파일을 엽니다.
+1. `[설치 사이트]/WebSphere/AppServer/configuration/config.ini` 파일을 엽니다.
 1. 특성 `com.ibm.CORBA,com.ibm`을 찾으십시오.
 1. 속성 `javax.portlet,javax.portlet.filter,javax.portlet.annotations` 뒤 `com.ibm.CORBA` 및 앞 `com.ibm`을 삽입하십시오.
 1. 파일을 저장합니다.
-
-
 
 ### 종속성 체크포인트
 
@@ -205,24 +200,19 @@ DXP의 `portlet.jar` 을 서버 관련 공유 라이브러리에 배치하는 �
 
 애플리케이션 서버 프로파일을 시작하십시오.
 
-
-
 ## 데이터베이스 구성
 
 DXP에는 시연용으로 적합하지만 생산에 사용해서는 안 되는 Hypersonic 데이터베이스가 내장되어 있습니다. 데모 목적 외에도 모든 기능을 갖춘 지원되는 RDBMS를 사용하는 것이 좋습니다. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md) 을 참조하십시오.
 
 Liferay DXP는 DXP의 내장 데이터 소스(권장)를 사용하거나 앱 서버에서 생성한 데이터 소스를 사용하여 데이터베이스에 연결할 수 있습니다.
 
-DXP를 처음 실행할 때 데이터베이스로 DXP의 내장 데이터 소스를 구성하려면 [설정 마법사](../running-liferay-for-the-first-time.md)를 사용하십시오. 또는 데이터베이스의 데이터베이스 템플릿 을 기반으로 [`</a> ` 파일](../../reference/portal-properties.md) 에서 데이터 소스를 구성할 수 있습니다.</p> 
+DXP를 처음 실행할 때 데이터베이스와 함께 DXP의 내장 데이터 소스를 구성하려면 [설정 마법사](../running-liferay-for-the-first-time.md)를 사용하십시오. 또는 [데이터베이스 템플릿](../../reference/에 따라 [`portal-ext.properties` 파일](../../reference/portal-properties.md)에서 데이터 소스를 구성할 수 있습니다. database-templates.md)를 데이터베이스용으로 사용할 수 있습니다.
 
 WebSphere를 사용하여 데이터베이스 연결을 관리하는 경우 아래 지침을 따르십시오. 그렇지 않으면 DXP의 내장 데이터 소스를 사용하려는 경우 이 섹션을 건너뛰십시오.
-
-
 
 ```{warning}
 Liferay는 데모 목적으로 기본적으로 HSQL을 사용합니다. Liferay DXP의 프로덕션 인스턴스에서 HSQL을 사용해서는 *안* 됩니다.
 ```
-
 
 ![그림 3: WebSphere JDBC 공급자](./installing-on-websphere/images/03.png)
 
@@ -232,7 +222,7 @@ Liferay는 데모 목적으로 기본적으로 HSQL을 사용합니다. Liferay 
 1. *자원 &rarr; JDBC 제공자*를 클릭하십시오.
 1. 범위를 선택한 다음 *New*을 클릭합니다.
 1. 데이터베이스 유형, 제공자 유형 및 구현 유형을 선택하십시오. 미리 정의된 데이터베이스를 선택하면 마법사가 이름 및 설명 필드를 자동으로 채웁니다. 원하는 데이터베이스가 나열되지 않으면 *데이터베이스 유형* 필드에서 *사용자 정의* 을 선택한 다음 *구현 클래스 이름*를 입력하십시오. 예를 들어 MySQL을 사용하는 경우 *데이터베이스 유형* &rarr; *사용자 정의*를 선택한 다음 `com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource` in *구현 클래스 이름*을 입력합니다. *다음*을 클릭합니다.
-1. 클래스 경로 설정에서 모든 텍스트를 지웁니다. 필요한 JAR은 이미 서버의 클래스 경로 위치에 복사되었습니다. *다음*을 클릭합니다.
+1. 클래스 경로 설정에서 모든 텍스트를 지웁니다. 필요한 JAR은 이미 서버의 클래스 경로 사이트에 복사되었습니다. *다음*을 클릭합니다.
 1. 설정을 검토하고 *마침*을 클릭합니다. 최종 구성은 다음과 같아야 합니다.
    
    ![그림 4: 완료된 JDBC 제공자 구성.](./installing-on-websphere/images/04.png)
@@ -253,41 +243,30 @@ Liferay는 데모 목적으로 기본적으로 HSQL을 사용합니다. Liferay 
 
 1. *확인* 을 클릭하고 마스터 구성에 저장합니다.
 1. *url* 속성에 대해 다른 필터 검색을 수행합니다. 이 속성에 데이터베이스를 가리키는 값을 지정하십시오. 예를 들어 MySQL URL은 다음과 같습니다. 
-   
 
    ```properties
    jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
    ```
 
-
-
-
    ```{tip}
    더 많은 예제 URL은 [데이터베이스 템플릿](../../reference/database-templates.md)의 `jdbc.default.url` 값을 참조하세요.
    ```
-
 
 *확인* 을 클릭하고 마스터 구성에 저장합니다.
 
 1. *암호* 속성에 대해 다른 필터 검색을 수행합니다. 이 특성의 값으로 이전에 추가한 사용자 ID의 비밀번호를 입력하십시오. *확인* 을 클릭하고 마스터 구성에 저장합니다.
 1. 이동 경로 추적에서 데이터 소스 페이지를 클릭하여 데이터 소스 페이지로 돌아갑니다. *테스트 연결* 버튼을 사용하여 이 시점까지 구성을 확인합니다.
 1. **[Liferay_Home]**의 `portal-ext.properties` 파일에서 데이터 소스를 지정하십시오. 예를 들어, 
-   
 
     ```properties
     jdbc.default.jndi.name=jdbc/LiferayPool
     ```
-
-
-
 
 ## 메일 구성
 
 DXP의 내장 메일 세션을 사용하는 경우 이 섹션을 건너뜁니다. DXP의 내장 메일 세션을 사용하는 방법에 대해서는 [메일 구성](../../setting-up-liferay/configuring-mail.md) 기사를 참조하십시오.
 
 WebSphere를 사용하여 메일 세션을 관리하려면 다음 단계를 따르십시오.
-
-
 
 ### WebSphere 관리 메일 세션 생성
 
@@ -303,34 +282,25 @@ WebSphere를 사용하여 메일 세션을 관리하려면 다음 단계를 따�
 1. *적용*을 클릭합니다.
 
 1. Liferay Home의 `portal-ext.properties` 파일에서 메일 세션을 지정합니다. 예를 들어, 
-   
 
     ```properties
     mail.session.jndi.name=mail/MailSession
     ```
 
-
 메일 서버에서 SSL 인증서를 검색하여 WebSphere의 신뢰 저장소에 추가해야 할 수도 있습니다. 이에 대한 지시사항은 WebSphere 문서를 참조하십시오.
-
-
 
 ### WebSphere 메일 공급자 확인
 
 메일 세션이 올바르게 구성되었는지 확인하기 위해 WAR이 배포되고 서버가 시작되고 사용자가 시스템 관리자로 로그인한 후 이를 테스트하는 여러 가지 방법이 있습니다. 유효성을 검사하는 빠른 방법 중 하나는 유효한 이메일 계정으로 새 사용자를 생성하는 것입니다. 새로 생성된 사용자는 이메일 알림을 받아야 합니다. 로그에는 나열된 올바른 포트 번호로 SMTP 서버가 핑되었음을 표시해야 합니다.
 
-
-
 ## HTTP 세션에 대한 쿠키 활성화
 
 WebSphere는 기본적으로 쿠키를 HTTPS 세션으로 제한합니다. HTTP를 사용하는 경우 사용자가 DXP에 로그인할 수 없으며 콘솔에 다음 오류가 표시됩니다.
-
-
 
 ```
 20:07:14,021 WARN  [WebContainer : 1][SecurityPortletContainerWrapper:341]
 User 0 is not allowed to access URL http://localhost:9081/web/guest/home and portlet com_liferay_login_web_portlet_LoginPortlet
 ```
-
 
 이것은 DXP가 HTTP를 사용할 때 HTTPS 쿠키를 사용할 수 없기 때문에 발생합니다. 최종 결과는 페이지를 새로 고칠 때마다 새 세션이 생성된다는 것입니다. WebSphere에서 이 문제를 해결하려면 다음 단계를 따르십시오.
 
@@ -339,8 +309,6 @@ User 0 is not allowed to access URL http://localhost:9081/web/guest/home and por
 1. *적용*을 클릭합니다.
 1. *저장*을 클릭합니다.
 
-
-
 ## DXP 배포
 
 1. WebSphere 관리 콘솔에서 *애플리케이션* &rarr; *새 애플리케이션* &rarr; *새 엔터프라이즈 애플리케이션*을 클릭하십시오.
@@ -348,52 +316,38 @@ User 0 is not allowed to access URL http://localhost:9081/web/guest/home and por
 1. *빠른 경로* 을 선택한 상태로 두고 *다음*을 클릭합니다. *Distribute Application* 이 선택되었는지 확인하고 *Next* 을 다시 클릭합니다.
 1. DXP가 배포될 WebSphere 런타임 및/또는 클러스터를 선택합니다. *다음*을 클릭합니다.
 1. DXP를 배포할 가상 호스트를 선택하고 *다음*을 클릭합니다.
-1. DXP를 루트 컨텍스트(`</em>에 매핑하고`다음을 클릭 *.</li> 
-   
-   1 원하는 *metadata-complete 속성* 설정을 선택하고 *다음*을 클릭합니다.
-1 설정이 올바른지 확인하고 *마침*을 클릭합니다.
-1 DXP가 설치되면 *마스터 구성에 저장*을 클릭합니다.
+1. DXP를 루트 컨텍스트(`/`)에 매핑하고 *다음*을 클릭합니다. 
+1. 원하는 *metadata-complete 속성* 설정을 선택하고 *다음*을 클릭합니다.
+1. 설정이 올바른지 확인하고 *마침*을 클릭합니다.
+1. DXP가 설치되면 *마스터 구성에 저장*을 클릭합니다.
   
-  ![그림 7: 배포하기 전에 배포 옵션을 검토합니다.](./installing-on-websphere/images/07.png)</ol> 
+  ![그림 7: 배포하기 전에 배포 옵션을 검토합니다.](./installing-on-websphere/images/07.png)
 
 DXP가 설치되었습니다. DXP를 시작하기 전에 몇 가지 필수 단계가 더 있습니다.
-
-
 
 ## JSP 컴파일을 위한 JDK 버전 설정
 
 DXP에서는 JSP가 Java 8 바이트코드 형식으로 컴파일되어야 합니다. WebSphere가 이 작업을 수행하도록 하려면 DXP `.war` 파일을 배포한 후 WebSphere를 종료하십시오. `WEB_INF` 폴더로 이동하여 다음 설정을 `ibm-web-ext.xml` 또는 대부분의 경우 `ibm-web-ext.xmi` 파일에 추가하십시오.
 
-
-
 ```xml
 <jsp-attribute name="jdkSourceLevel" value="18" />
 ```
 
-
-`ibm-web-ext.xmi` 파일의 정확한 경로는 WebSphere 설치 위치 및 DXP 버전에 따라 다르지만 다음은 예입니다.
-
-
+`ibm-web-ext.xmi` 파일의 정확한 경로는 WebSphere 설치 사이트 및 DXP 버전에 따라 다르지만 다음은 예입니다.
 
 ```bash
 /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/localhostNode01Cell/applications/liferayXX.ear/deployments/liferayXX/liferayXX.war/WEB-INF/ibm-web-ext.xmi
 ```
 
-
 DXP `.war` 은 `ibm-web-ext.xmi` 파일과 함께 사전 패키징되어 제공됩니다. 이 형식은 기능적으로 `.xml` 와 동일하며 WebSphere는 두 형식을 모두 인식합니다. WebSphere가 JSP를 컴파일하는 방법에 대한 일반적인 정보는 [WebSphere Application Server 9.0.0.x](https://www.ibm.com/support/knowledgecenter/en/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/rweb_jspengine.html)에 대한 IBM의 공식 문서를 참조하십시오.
-
-
 
 ## DXP 시작하기
 
 1. [설정 마법사](../running-liferay-for-the-first-time.md)를 사용하려면 다음 단계로 건너뜁니다. 그러나 WebSphere의 데이터 소스 및 메일 세션을 사용 중이고 설치 마법사를 건너뛰려면 `portal-ext.properties` 파일에서 이 포털 특성을 설정하십시오. 
-   
-   
 
     ```properties
     setup.wizard.enabled=false
     ```
-
 
 1. 애플리케이션 서버를 시작하십시오.
 
@@ -401,8 +355,6 @@ DXP `.war` 은 `ibm-web-ext.xmi` 파일과 함께 사전 패키징되어 제공�
 1. DXP의 설정 마법사에서 데이터베이스 유형을 선택하고 구성합니다. *마침*을 클릭합니다. 그런 다음 DXP는 데이터베이스에 필요한 테이블을 생성합니다.
 
 DXP를 배포한 후 `PhaseOptimizer`과 관련된 아래와 같은 과도한 경고 및 로그 메시지가 있을 수 있습니다. 이들은 양성이며 무시할 수 있습니다. 과도한 무해한 로그 메시지를 방지하려면 앱 서버의 로깅 수준 또는 로그 필터를 조정해야 합니다.
-
-
 
 ```
 |     May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
@@ -414,12 +366,9 @@ DXP를 배포한 후 `PhaseOptimizer`과 관련된 아래와 같은 과도한 �
 |     current AST contains: [ES3 keywords as identifiers, getters, reserved words as properties, setters, string continuation, trailing comma, array pattern rest, arrow function, binary literal, block-scoped function declaration, class, computed property, const declaration, default parameter, destructuring, extended object literal, for-of loop, generator, let declaration, member declaration, new.target, octal literal, RegExp flag 'u', RegExp flag 'y', rest parameter, spread expression, super, template literal, exponent operator (**), async function, trailing comma in param list, object literals with spread, object pattern rest]
 ```
 
-
 Liferay DXP Enterprise 구독이 있는 경우 DXP는 활성화 키를 요청합니다. 자세한 내용은 [Liferay DXP](../../setting-up-liferay/activating-liferay-dxp.md) 활성화를 참조하십시오.
 
 축하합니다! WebSphere에서 Liferay DXP를 실행하고 있습니다.
-
-
 
 ## 다음 단계
 

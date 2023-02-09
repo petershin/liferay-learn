@@ -18,9 +18,9 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the [Acme Commerce Payment Method](./liferay-b1c3.zip).
+1. [Acme Commerce 결제 수단](./liferay-b1c3.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-b1c3.zip -O

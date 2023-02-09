@@ -17,7 +17,7 @@ Admin 사용자는 Liferay Commerce의 새 설치에서 기본적으로 생성�
 
 ## 관리 사용자 구성
 
-1. _사용자 관리_ 메뉴를 클릭하고 _계정 설정_으로 이동합니다.
+1. _사용자 관리_ 메뉴를 클릭하고 _계정 설정_ 으로 이동합니다.
 
     ![계정 설정](./introduction-to-the-admin-account/images/06.png "계정 설정")
 
@@ -30,7 +30,7 @@ Admin 사용자는 Liferay Commerce의 새 설치에서 기본적으로 생성�
 ### 로그인 비밀번호 변경
 
 1. 왼쪽 탐색 메뉴에서 _비밀번호_ 을 클릭합니다.
-1. _현재 암호_ 를 입력하고 _새 암호_를 입력하십시오.
+1. _현재 암호_ 를 입력하고 _새 암호_ 를 입력하십시오.
 
     ![비밀번호 설정](./introduction-to-the-admin-account/images/04.png "비밀번호 설정")
 
@@ -42,7 +42,7 @@ Admin 사용자는 Liferay Commerce의 새 설치에서 기본적으로 생성�
 
 계정에서 로그아웃하려면:
 
-1. _사용자 관리_ 메뉴를 클릭한 후 _로그아웃_을 클릭합니다.
+1. _사용자 관리_ 메뉴를 클릭한 후 _로그아웃_ 을 클릭합니다.
 
     ![로그아웃](./introduction-to-the-admin-account/images/08.png "로그아웃")
 
@@ -61,9 +61,9 @@ Admin 사용자는 Liferay Commerce의 새 설치에서 기본적으로 생성�
 
 ### 관리 사용자 구성
 
-1. _제품 메뉴_ 을 열고 _계정 메뉴로 __.*> 내 계정</em> _계정 설정>.</p>
+1. _제품 메뉴_ 를 열고 계정 메뉴 -> 내 계정 -> 계정 설정으로 이동합니다.
 
-    ![계정 설정](./introduction-to-the-admin-account/images/02.png "계정 설정")</li> </ol>
+    ![계정 설정](./introduction-to-the-admin-account/images/02.png "계정 설정")
 
 #### 계정 정보 변경
 
@@ -73,24 +73,22 @@ Admin 사용자는 Liferay Commerce의 새 설치에서 기본적으로 생성�
 
 #### 로그인 비밀번호 변경
 
-1. _제품 메뉴_ 을 __계정 메뉴로_합니다.*> 내 계정</em> _계정 설정_ >> _.</li>
-1
-_현재 암호_ 를 입력하고 _새 암호_를 입력하십시오.
+1. _제품 메뉴_를 열고 _계정 메뉴_ -> _내 계정_ -> _계정 설정_ -> _비밀번호_로 이동합니다.
+1. _현재 비밀번호_를 입력하고 _새 비밀번호_를 제공하십시오.
 
-    ![비밀번호 설정](./introduction-to-the-admin-account/images/04.png "비밀번호 설정")
+     ![암호 설정](./introduction-to-the-admin-account/images/04.png "암호 설정")
 
-    ```{note}
-    이 화면에서 '비밀번호 알림 질문'도 업데이트할 수 있습니다.
-    ```
-</ol>
+     ```{참고}
+     이 화면에서 '비밀번호 알림 질문'도 업데이트할 수 있습니다.
+     ```
 
 #### 로그아웃
 
 계정에서 로그아웃하려면:
 
-1. _제품 메뉴_ 열기 및 _계정 메뉴로_</em>> 로그아웃 _.</p>
+1. _제품 메뉴_를 열고 _계정 메뉴_ -> _로그아웃_으로 이동합니다.
 
-    ![로그아웃](./introduction-to-the-admin-account/images/05.png "로그아웃")</li> </ol>
+    ![로그아웃](./introduction-to-the-admin-account/images/05.png "로그아웃")
 
 ## 추가 정보
 

@@ -12,6 +12,6 @@
 
 * [데이터베이스 업그레이드 도구 사용](../../upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md): 데이터베이스 업그레이드 도구를 사용하여 데이터베이스를 업그레이드하는 것은 컨테이너화되지 않은 Liferay 설치에서 수행되어야 합니다. 업그레이드가 완료되면 새 Liferay Docker 컨테이너를 가리킬 수 있습니다. 복잡하거나 더 큰 데이터 세트가 있거나 많은 사용자 정의가 있는 DXP 환경 및 포털 환경은 Database Upgrade Tool을 사용하여 업그레이드해야 합니다.
 
-## 무엇 향후 계획
+## 다음
 
 [업그레이드 기본 사항](../../upgrading-liferay/upgrade-basics.md)을 읽고 시작하십시오. 그런 다음 새 컨테이너에서 자동 업그레이드를 사용하는 데 관심이 있는 경우 [Docker](../../upgrading-liferay/upgrade-basics/upgrading-via-docker.md)을 통한 업그레이드를 참조하십시오. 사용자 환경에서 데이터베이스 업그레이드 도구를 사용해야 하는 경우 [데이터베이스 업그레이드 도구 사용](../../upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md)을 참조하십시오.

@@ -1,6 +1,6 @@
 # 역할에 사용자 할당
 
-Role의 할당 UI 위치는 [Role의 범위](./understanding-roles-and-permissions.md#roles-and-scope)에 해당합니다.
+Role의 할당 UI 사이트는 [Role의 범위](./understanding-roles-and-permissions.md#roles-and-scope)에 해당합니다.
 
 ## 일정한 역할
 
@@ -45,7 +45,7 @@ Role의 할당 UI 위치는 [Role의 범위](./understanding-roles-and-permissio
 ![사이트 메뉴의 People &rarr; Memberships 섹션 내에서 사이트 역할을 할당합니다.](./assigning-users-to-roles/images/01.png)
 
 ```{note}
-Liferay CE 7.3.1 GA2 및 Liferay DXP 7.2 SP3+부터 사이트 역할을 [사용자 세그먼트](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user -세그먼트.md). 자세한 내용은 [사용자 세그먼트에 역할 할당](./assigning-roles-to-user-segments.md)을 참조하십시오.
+Liferay CE 7.3.1 GA2 및 Liferay DXP 7.2 SP3+부터 사이트 역할을 [사용자 세그먼트](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md). 자세한 내용은 [사용자 세그먼트에 역할 할당](./assigning-roles-to-user-segments.md)을 참조하십시오.
 ```
 
 ## 조직 역할

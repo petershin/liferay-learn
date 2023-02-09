@@ -34,19 +34,12 @@ Solr 커넥터도 HTTP를 통해 통신하기 때문에 동일한 요구 사항�
 
 ## 검색 엔진 공급업체 및 버전 선택
 
-Elasticsearch는 Liferay를 사용한 검색 및 인덱싱에 권장되는 검색 엔진입니다. Solr는 더 이상 사용되지</a>
-
-</p> 
-
-
+Elasticsearch는 Liferay를 사용한 검색 및 인덱싱에 권장되는 검색 엔진입니다. Solr는 지원 중단될 예정이며 [제한 사항](./solr/solr-limitations.md)이 있습니다.
 
 ```{important}
 지원되는 정확한 버전을 찾으려면 항상 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651)를 참조하십시오.
 ```
 
-
-
-
-## 무엇 향후 계획
+## 다음
 
 [Elasticsearch](./elasticsearch/getting-started-with-elasticsearch.md) 설치를 권장합니다. Solr(더 이상 사용되지 않음)를 사용해야 하는 경우 [Solr 설치](./solr/installing-solr.md)을 참조하십시오.

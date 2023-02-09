@@ -3,12 +3,13 @@
 [구성 인터페이스를 생성하면](./setting-and-accessing-configurations.html#creating-the-configuration-interface)구성 UI가 자동으로 생성됩니다. 그러나 경우에 따라 UI의 모양과 느낌을 사용자 지정해야 합니다. 예를 들어 회사의 디자인 미학과 일치하도록 UI를 수정하려고 합니다. `ConfigurationFormRenderer` 구현으로 수행하는 방법은 다음과 같습니다.
 
 ## 예제 프로젝트 보기
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Configuration Form Renderer](./liferay-b7r2.zip).
+1. [구성 양식 렌더러](./liferay-b7r2.zip)를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O

@@ -193,7 +193,7 @@ Elasticsearch에 대한 번들 커넥터가 설치에 항상 최선의 선택은
 
 호환 가능한 Elasticsearch 버전 및 필요한 패치 수준을 포함한 자세한 호환성 정보는 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651)을 참조하십시오.
 
-## 무엇 향후 계획
+## 다음
 
 이제 Liferay가 Elasticsearch에 연결되었으므로 Elasticsearch를 사용할 수 있습니다. 프로덕션의 경우 Liferay와 Elasticsearch 서버 간의 통신을 보호해야 합니다. 자세한 내용은 [Elasticsearch 보안](./securing-elasticsearch.md) 을 참조하십시오.
 

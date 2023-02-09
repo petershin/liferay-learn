@@ -1,14 +1,14 @@
 # 현지화된 메시지 공유
 
-응용 프로그램에서 작업할 때 각각 고유한 언어 키가 있는 여러 모듈이 있을 수 있습니다. 다양한 언어 속성 파일을 다른 위치에 유지하는 대신 한 위치로 통합합니다. 이 예제 프로젝트는 여러 모듈에서 언어 키를 공유하는 방법을 보여줍니다.
+응용 프로그램에서 작업할 때 각각 고유한 언어 키가 있는 여러 모듈이 있을 수 있습니다. 다양한 언어 속성 파일을 다른 사이트에 유지하는 대신 한 사이트로 통합합니다. 이 예제 프로젝트는 여러 모듈에서 언어 키를 공유하는 방법을 보여줍니다.
 
 ## 튜토리얼 코드 실행
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O

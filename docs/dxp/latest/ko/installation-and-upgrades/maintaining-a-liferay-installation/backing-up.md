@@ -20,7 +20,7 @@ Liferay Home 폴더에는 다음 파일이 포함되어 있으므로 백업하�
 
 * **포털 속성 및 시스템 속성:** Liferay Home 폴더는 DXP [포털 속성 파일](../reference/portal-properties.md) (예: `portal-ext.properties`, `Portal-setup-wizard.properties`등) 및 DXP [시스템 속성 파일](../reference/system-properties.md) 를 저장합니다. (예: `system-ext.properties`).
 
-* **`/data` 폴더:** DXP는 Liferay Home의 `/data` 폴더에 구성 파일, 검색 색인 및 캐시 정보를 저장합니다. `/data/document_library` 폴더는 [Simple File System Store](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)의 기본 스토리지 구성 위치입니다. [고급 파일 시스템 저장소](../../system-administration/file-storage.md) 에는 저장소 위치를 명시적으로 설정해야 합니다.
+* **`/data` 폴더:** DXP는 Liferay Home의 `/data` 폴더에 구성 파일, 검색 색인 및 캐시 정보를 저장합니다. `/data/document_library` 폴더는 [Simple File System Store](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)의 기본 스토리지 구성 사이트입니다. [고급 파일 시스템 저장소](../../system-administration/file-storage.md) 에는 저장소 사이트를 명시적으로 설정해야 합니다.
 
 * **`/license` 폴더(가입):** Liferay Enterprise 가입에 대한 활성화 키를 보관합니다.
 
@@ -35,7 +35,7 @@ Liferay Docker 이미지를 사용 중이고 바인드 마운트를 통해 사�
 Git, BitBucket, Subversion 또는 CVS와 같은 소스 제어 리포지토리를 사용하는 것은 Liferay Home 폴더를 백업하는 좋은 방법입니다.
 
 ```{important}
-파일 저장소(문서 라이브러리)를 `[Liferay Home]/data` 하위 폴더 이외의 위치로 구성한 경우 해당 위치를 백업하십시오.
+파일 저장소(문서 라이브러리)를 `[Liferay Home]/data` 하위 폴더 이외의 사이트로 구성한 경우 해당 사이트를 백업하십시오.
 ```
 
 ## 애플리케이션 서버
@@ -60,19 +60,13 @@ mysqldump --databases my-liferay-database > my-liferay-database-backup.sql
 
 ## 수색 색인
 
-항상 [검색 색인을 백업하십시오](./../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md). 대부분의 Liferay 데이터는 전체 재색인으로 데이터베이스에서 복원할 수 있지만 검색 색인은 일부 응용 프로그램</a>에서
+항상 [검색 인덱스 백업](./../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md). 대부분의 Liferay 데이터는 전체 재색인으로 데이터베이스에서 복원할 수 있지만 검색 색인은 [일부 응용 프로그램의 기본 저장소](../../using-search/installing-and-upgrading-a-search- engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage). 인덱스 백업에 실패하면 이러한 응용 프로그램에 대한 전체 데이터 손실이 발생할 수 있습니다.
 
-기본 저장소로 사용됩니다. 인덱스 백업에 실패하면 이러한 응용 프로그램에 대한 전체 데이터 손실이 발생할 수 있습니다.</p> 
-
-또한 대용량 데이터 세트가 있는 사용자는 백업에서 복원할 때 모든 콘텐츠와 자산을 다시 인덱싱하지 않아도 됩니다. 검색 인덱스를 저장하는 별도의 [Elasticsearch 또는 Solr](../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md) 환경이 있는 경우 검색 데이터를 백업하는 것이 가장 쉽습니다. 자세한 내용은 검색 엔진의 백업/복원 설명서를 따르십시오(예</a>).</p> 
-
-
+또한 대용량 데이터 세트가 있는 사용자는 백업에서 복원할 때 모든 콘텐츠와 자산을 다시 인덱싱하지 않아도 됩니다. 별도의 [Elasticsearch 또는 Solr](../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md ) 검색 색인을 저장하는 환경. 자세한 내용은 검색 엔진의 백업/복원 설명서를 따르십시오(예: Elasticsearch의 [스냅샷 및 복원 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore. HTML)).
 
 ## 소스 코드
 
 DXP를 확장했거나 플러그인을 작성한 경우 Git 또는 BitBucket과 같은 소스 코드 저장소에 저장해야 합니다. 진행 중인 작업을 보존하려면 소스 코드 리포지토리를 정기적으로 백업해야 합니다.
-
-
 
 ## 결론
 

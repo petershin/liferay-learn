@@ -131,7 +131,7 @@
    renderRequest.setAttribute(F5D5WebKeys.ITEM_SELECTOR_URL, itemSelectorURL);
    ```
 
-   `view.jsp` 파일은 프런트 엔드 코드가 정의된 위치입니다. Java 클래스의 `render` 메서드에 있는 `renderRequest` 객체는 나중에 JSP 파일로 전달됩니다. 컨트롤러(포틀릿 클래스)와 보기(JSP) 모두에서 URL을 일관되게 식별하려면 상수를 사용하십시오.
+   `view.jsp` 파일은 프런트 엔드 코드가 정의된 사이트입니다. Java 클래스의 `render` 메서드에 있는 `renderRequest` 객체는 나중에 JSP 파일로 전달됩니다. 컨트롤러(포틀릿 클래스)와 보기(JSP) 모두에서 URL을 일관되게 식별하려면 상수를 사용하십시오.
 
 1. 마지막으로 코드가 실행되면 `MVCPortlet`의 `렌더링` 메서드를 호출하여 렌더링 프로세스를 계속합니다.
 

@@ -119,6 +119,6 @@ Note that only users with the requisite permissions have the ability to create t
 
 여기에 귀하의 순위, 그들이 질문한 질문의 수 및 이러한 각 질문의 목록이 표시됩니다.
 
-## 무엇 향후 계획
+## 다음
 
 * [질문 앱 구성](./configuring-the-questions-app.md)

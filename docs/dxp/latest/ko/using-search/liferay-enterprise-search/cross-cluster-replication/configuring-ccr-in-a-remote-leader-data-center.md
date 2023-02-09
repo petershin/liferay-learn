@@ -8,7 +8,7 @@
 
 ## 원격 리더 Elasticsearch 클러스터 구성
 
-예제 설정에서 구성할 첫 번째 Elasticsearch 클러스터는 CCR 관련 구성이 없는 프로덕션 모드 클러스터입니다. 별도의 위치에 있는 Liferay DXP 노드의 쓰기 요청과 함께 로컬 Liferay DXP 노드에서 읽기 및 쓰기를 수락합니다. 데이터 센터.
+예제 설정에서 구성할 첫 번째 Elasticsearch 클러스터는 CCR 관련 구성이 없는 프로덕션 모드 클러스터입니다. 별도의 사이트에 있는 Liferay DXP 노드의 쓰기 요청과 함께 로컬 Liferay DXP 노드에서 읽기 및 쓰기를 수락합니다. 데이터 센터.
 
 1. `elasticsearch.yml`을 구성합니다.
 
@@ -144,4 +144,4 @@ Kibana가 원격/리더 Elasticsearch 클러스터에 연결된 경우 Managemen
 
 ![Kibana 7에서 리더 인덱스를 검사합니다.](./configuring-ccr-in-a-remote-leader-data-center/images/01.png)
 
-원격/리더 Elasticsearch 서버를 포함하는 데이터 센터가 가동되고 실행되면 로컬</a>설정할 준비가 된 것입니다.</p>
+원격/리더 Elasticsearch 서버가 포함된 데이터 센터가 가동되고 실행되면 [로컬/팔로어 데이터 센터](./configuring-ccr-in-a-local-follower-data-center.md ).

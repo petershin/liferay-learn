@@ -12,6 +12,6 @@ Liferay의 [`PasswordPoliciesConfigurationModelListener`](https://github.com/lif
 
 * 구성 모델 리스너는 시스템, 인스턴스 및 사이트 설정 구성 변경 시 트리거 및 확인합니다.
 * 구성 모델 리스너는 서버가 이미 시작되고 리스너가 등록될 때 구성 파일이 배포될 때 트리거됩니다.
-* 구성 모델 수신기는</em> 시작 전에 인스턴스 *에 배포된 구성 파일에 대해 트리거하지 않습니다.</li> </ul>
+* 구성 모델 리스너는 시작 *전에* 인스턴스에 배포된 구성 파일에 대해 트리거되지 않습니다.
 
 모델 리스너에 대한 자세한 내용은 [모델 리스너 만들기](../../../liferay-internals/extending-liferay/creating-a-model-listener.md) 을 참조하십시오.

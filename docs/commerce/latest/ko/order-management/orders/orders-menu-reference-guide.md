@@ -1,12 +1,12 @@
 # 주문 메뉴 참조 가이드
 
-주문은 _주문_ 메뉴에서 관리자가 [조회하고](./processing-an-order.md) 관리할 수 있습니다. _주문_ 메뉴에 액세스하려면 _글로벌 애플리케이션_ 버튼 &rarr; _상거래_ &rarr; _주문_를 클릭하십시오.
+주문은 _주문_ 메뉴에서 관리자가 [조회하고](./processing-an-order.md) 관리할 수 있습니다. _주문_ 메뉴에 액세스하려면 _글로벌 애플리케이션_ 버튼 &rarr; _상거래_ &rarr; _주문_ 를 클릭하십시오.
 
 ![글로벌 애플리케이션의 주문 메뉴로 이동합니다.](./orders-menu-reference-guide/images/11.png)
 
 ## 상거래 2.1 이하
 
-_주문_ 메뉴에 액세스하려면 _제어판_ &rarr; _상거래_ &rarr; _주문_로 이동합니다.
+_주문_ 메뉴에 액세스하려면 _제어판_ &rarr; _상거래_ &rarr; _주문_ 로 이동합니다.
 
 상단에는 5개의 탭이 있습니다. _모두_, _열기_, _보류_, _처리_, _완료_.
 
@@ -92,12 +92,9 @@ _Pending_ 탭은 주문을 보관하는 장소 역할을 합니다. 이는 모�
 
 ### 전송됨
 
-이 탭에서 주문 활동은 판매자 측에서만 이루어집니다. 판매자는 주문 상태</a> (수동 또는 자동화를 통해)을 "_To Transmit_" 상태에서 다른 주문 상태로 변경하여 _Pending_ 주문을
-로 전송합니다. 이 시점에서 주문은 _전송됨_ 탭으로 이동하고 구성된 경우 Microsoft의 Dynamics GP, Oracle의 NetSuite 또는 SAP와 같은 외부 시스템으로 전송됩니다. 그런 다음 판매자는 주문한 제품을 구매자에게 배송할 수 있습니다. 업데이트된 [주문 상태](./order-management-statuses-reference-guide.md), [배송 정보](../shipments/introduction-to-shipments.md) 및 예상 도착 시간과 같은 추가 정보가 주문에 추가될 수도 있습니다.</p> 
+이 탭에서 주문 활동은 전적으로 판매자 측에서만 이루어집니다. 판매자가 [주문 상태 변경](./processing-an-order.md#commerce-20-and-below)(수동 또는 자동화를 통해)을 통해 _Pending_ 주문을 "_To Transmit_" 상태에서 다른 주문 상태로 전송합니다. . 이 시점에서 주문은 _Transmitted_ 탭으로 이동하고 구성된 경우 Microsoft의 Dynamics GP, Oracle의 NetSuite 또는 SAP와 같은 외부 시스템으로 전송됩니다. 그런 다음 판매자는 주문한 제품을 구매자에게 배송할 수 있습니다. 업데이트된 [주문 상태](./order-management-statuses-reference-guide.md), [배송 정보](../shipments/introduction-to-shipments.md)와 같은 추가 정보가 주문에 추가될 수도 있습니다. md) 및 예상 도착 시간.
 
 ![전송 탭](./orders-menu-reference-guide/images/04.png "전송 탭")
-
-
 
 ## 추가 정보
 

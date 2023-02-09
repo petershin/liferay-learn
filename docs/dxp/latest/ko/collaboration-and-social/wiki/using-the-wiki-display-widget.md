@@ -8,7 +8,7 @@
 
     ![Wiki 표시 위젯 추가](./using-the-wiki-display-widget/images/01.png)
 
-1. _Wiki Display_ 위젯을 사이트 페이지의 원하는 위치로 끌어다 놓습니다. _Wiki_ 위젯과 달리 여러 _Wiki Display_ 위젯을 페이지에 배포할 수 있습니다.
+1. _Wiki Display_ 위젯을 사이트 페이지의 원하는 사이트로 끌어다 놓습니다. _Wiki_ 위젯과 달리 여러 _Wiki Display_ 위젯을 페이지에 배포할 수 있습니다.
 
     ![사이트 페이지의 여러 Wiki 표시 위젯](./using-the-wiki-display-widget/images/02.png)
 

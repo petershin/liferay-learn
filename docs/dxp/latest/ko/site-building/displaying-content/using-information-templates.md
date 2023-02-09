@@ -2,17 +2,11 @@
 
 {bdg-secondary}`가능 7.4+`
 
-정보 템플릿을 사용하면 Info Framework를 구현하는 모든 항목 유형에 대해 FreeMarker</a> 템플릿을
-개 생성할 수 있습니다. 지원되는 항목 유형에는 웹 콘텐츠, 문서, 자산, 블로그, 범주 및 개체가 포함됩니다. 일단 생성되면 조각 필드를 템플릿에 매핑하여 콘텐츠 페이지 및 디스플레이 페이지에서 항목이 렌더링되는 방식을 결정할 수 있습니다. 이렇게 하면 사이트에 일관된 스타일을 구현하는 데 도움이 됩니다.</p> 
-
-
+정보 템플릿을 사용하면 Info Framework를 구현하는 모든 항목 유형에 대한 [FreeMarker](https://freemarker.apache.org/) 템플릿을 만들 수 있습니다. 지원되는 항목 유형에는 웹 콘텐츠, 문서, 자산, 블로그, 범주 및 개체가 포함됩니다. 일단 생성되면 조각 필드를 템플릿에 매핑하여 콘텐츠 페이지 및 디스플레이 페이지에서 항목이 렌더링되는 방식을 결정할 수 있습니다. 이렇게 하면 사이트에 일관된 스타일을 구현하는 데 도움이 됩니다.
 
 ```{important}
-정보 템플릿은 조각에서만 사용할 수 있으며 위젯에서는 사용할 수 없습니다. 위젯에 표시되는 웹 콘텐츠용 FreeMarker 템플릿을 디자인하려면 [웹 콘텐츠 템플릿](../../content-authoring-and-management/web-content/web-content-templates/creating-web- 콘텐츠 템플릿.md).
+정보 템플릿은 조각에서만 사용할 수 있으며 위젯에서는 사용할 수 없습니다. 위젯에 표시되는 웹 콘텐츠용 FreeMarker 템플릿을 디자인하려면 [웹 콘텐츠 템플릿](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md).
 ```
-
-
-
 
 ## 정보 템플릿 생성
 
@@ -28,29 +22,23 @@
 
 1. *저장*을 클릭합니다. 이렇게 하면 템플릿 디자인 페이지로 리디렉션됩니다.
 
-1. (선택 사항) </code> `에서 기존 FreeMarker 스크립트를</a> 가져옵니다.</p></li>
-<li><p spaces-before="0">FreeMarker를 사용하여 템플릿을 디자인합니다.</p>
+1. (선택 사항) `.ftl` 파일에서 기존 FreeMarker 스크립트를 [가져오기](#importing-and-exporting-scripts)합니다.
 
-<p spaces-before="3">편집기에서 <code>${` 을 입력하면 자동 완성 기능을 사용할 수 있습니다.</p> 
+1. FreeMarker를 사용하여 템플릿을 디자인합니다.
    
    *요소* 측면 패널(![Elements](../../images/icon-list-ul.png))에서 선택한 항목 유형의 구조에서 사용 가능한 필드에 빠르게 액세스할 수 있습니다.
    
    ![FreeMarker 및 요소 측면 패널에서 사용 가능한 필드를 사용하여 템플릿을 디자인합니다.](./using-information-templates/images/02.png) 
-   
-   
 
    ```{note}
    요소 측면 패널에는 템플릿 기반 필드(예: 저널 기사 템플릿, 정보 템플릿)가 포함되지 않습니다. 이는 무한 루프를 방지하기 위한 것입니다.
    ```
-</li> 
 
-1 (선택 사항) 속성 측면 패널(![Properties](../../images/icon-cog3.png))의 템플릿에 *설명* 또는 *이미지* 을 추가합니다.
+1. (선택 사항) 속성 측면 패널(![Properties](../../images/icon-cog3.png))의 템플릿에 *설명* 또는 *이미지* 을 추가합니다.
 
-1 완료되면 *저장* 을 클릭합니다.</ol> 
+1. 완료되면 *저장*을 클릭합니다.
 
 생성된 정보 템플릿은 텍스트 및 서식 있는 텍스트와 같이 매핑할 수 있는 [개의 하위 요소](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md) 이 있는 콘텐츠 표시 조각 및 기타 조각에서 사용할 수 있습니다. 선택한 경우 콘텐츠 페이지 및 표시 페이지 템플릿에서 항목이 렌더링되는 방식을 결정합니다.
-
-
 
 ## 스크립트 가져오기 및 내보내기
 
@@ -67,8 +55,6 @@
 내보낼 때 현재 FreeMarker 스크립트는 `script.ftl` 파일로 저장됩니다.
 
 가져올 때 선택한 파일이 템플릿의 현재 FreeMarker 스크립트를 대체합니다.
-
-
 
 ## 정보 템플릿 관리
 
@@ -88,14 +74,9 @@
 
 ![템플릿을 LAR 파일로 내보내고 가져옵니다.](./using-information-templates/images/05.png)
 
-
-
 ```{note}
 기본적으로 정보 템플릿 내보내기에는 위젯 템플릿이 포함됩니다. 그러나 LAR 파일에 포함되는 템플릿을 구성할 수 있습니다.
 ```
-
-
-
 
 ## 추가 정보
 

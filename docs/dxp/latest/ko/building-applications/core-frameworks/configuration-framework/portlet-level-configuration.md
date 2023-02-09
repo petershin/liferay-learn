@@ -7,12 +7,13 @@
 사용자가 포틀릿 환경 설정을 구현하고 설정한 경우 애플리케이션의 구성이 무시됩니다. 자세한 내용은 [포틀릿 기본 설정](../../developing-a-java-web-application/using-mvc/portlet-preferences.md) 을 참조하십시오.
 
 ## 예제 코드 보기
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Sharing Localized Messages](./liferay-x7y2.zip).
+1. [현지화된 메시지 공유](./liferay-x7y2.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-x7y2.zip -O
@@ -77,26 +78,18 @@ DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'Configuration
 
 ## PortletDisplay로 구성 읽기
 
-구성 공급자 API</a>에서 구성 값을 읽는
-과 유사하게 포틀릿 디스플레이 API를 사용하여 애플리케이션의 구성 값에 액세스할 수 있습니다.</p> 
-
-
+[구성 공급자 API에서 구성 값 읽기](./setting-and-accessing-configurations.html#Reading-the-Configuration-from-the-Application)와 유사하게 포틀릿을 사용하여 애플리케이션의 구성 값에 액세스할 수 있습니다. 디스플레이 API.
 
 ```{literalinclude} ./portlet-level-configuration/resources/liferay-x7y2.zip/x7y2-web/src/main/java/com/acme/x7y2/web/internal/portlet/X7Y2Portlet.java
 :language: java
 :lines: 20-63
 ```
 
-
 `X7Y2PortletInstanceConfiguration` 메소드는 `PortletDisplay` 을 사용하여 포틀릿 인스턴스 구성을 얻습니다. `render()` 메소드는 JSP 파일의 요청에서 읽을 수 있도록 요청 객체에 구성을 추가합니다.
-
-
 
 ## 포틀릿 기본 설정 지정
 
 포틀릿이 포틀릿 환경 설정을 가지려면 애플리케이션에 구성 JSP 파일 및 구성 조치도 추가해야 합니다. 이러한 파일이 포틀릿에서 작동하는 방식에 대해 자세히 알아보려면 [포틀릿 환경 설정](../../developing-a-java-web-application/using-mvc/portlet-preferences.md)을 참조하십시오.
-
-
 
 ## 관련 정보
 

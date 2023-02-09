@@ -74,7 +74,7 @@ Liferay 세그먼트를 컬렉션과 연결하여 [세그먼트 구성](../../si
 
 ### Asset Publisher 구성을 콘텐츠 세트로 변환
 
-Asset Publisher를 통해 완벽하고 선별된 콘텐츠 목록을 만들기 위해 이미 많은 작업을 수행했을 수 있지만 이제 작업을 복제하지 않고 다른 위치에 해당 목록을 표시하려고 합니다. 콘텐츠 세트로 그렇게 할 수 있습니다. 자세한 내용은 [Asset Publisher 구성을 콘텐츠 세트로 변환](./creating-collections.md#converting-asset-publisher-configurations-to-content-sets) 기사를 읽어보십시오.
+Asset Publisher를 통해 완벽하고 선별된 콘텐츠 목록을 만들기 위해 이미 많은 작업을 수행했을 수 있지만 이제 작업을 복제하지 않고 다른 사이트에 해당 목록을 표시하려고 합니다. 콘텐츠 세트로 그렇게 할 수 있습니다. 자세한 내용은 [Asset Publisher 구성을 콘텐츠 세트로 변환](./creating-collections.md#converting-asset-publisher-configurations-to-content-sets) 기사를 읽어보십시오.
 
 ## 관련 정보
 

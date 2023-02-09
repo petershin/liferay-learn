@@ -8,17 +8,13 @@
 
 Liferay Portal이 구축되면 최신 버전의 플랫폼을 사용하여 버그를 재현할 수 있는지 확인하십시오. 종종 Liferay Portal의 개발 빌드에서 버그가 이미 해결되었습니다. 또한 마스터 브랜치에 대해 풀 요청을 발행해야 합니다. 다른 지점에 대한 풀 요청은 허용되지 않습니다.
 
-버그가 있을 수 있는 위치를 찾을 수 있는지 알아보려면 Liferay Portal의 기본 코드 구조를 알아보세요. Liferay Portal은 매우 큰 제품이며 특정 기능에 대한 코드가 있는 위치를 찾는 것이 처음에는 어려울 수 있습니다. 그러나 코드는 잘 정의된 패턴을 따르며 해당 패턴이 학습되면 코드 영역을 매우 쉽게 찾을 수 있습니다. 자세한 내용은 [소스 구성 방법](./organizing-the-source.md)을 참조하십시오.
+버그가 있을 수 있는 사이트를 찾을 수 있는지 알아보려면 Liferay Portal의 기본 코드 구조를 알아보세요. Liferay Portal은 매우 큰 제품이며 특정 기능에 대한 코드가 있는 사이트를 찾는 것이 처음에는 어려울 수 있습니다. 그러나 코드는 잘 정의된 패턴을 따르며 해당 패턴이 학습되면 코드 영역을 매우 쉽게 찾을 수 있습니다. 자세한 내용은 [소스 구성 방법](./organizing-the-source.md)을 참조하십시오.
 
 버그를 수정하고 Liferay를 다시 빌드하고 다시 시작하여 수정했는지 확인하십시오! 그렇지 않다면 고칠 때까지 계속 반복하십시오. 절대적으로 필요한 것보다 더 많은 코드를 건드리지 마십시오.
 
-코드 변경을 git 저장소에 커밋하고 Github</a>의 기본
-
-liferay-portal 저장소에 대해 풀 요청을 발행합니다.</p> 
+코드 변경 사항을 git 리포지토리에 커밋하고 기본 [Github의 liferay-portal 리포지토리](https://github.com/liferay/liferay-portal)에 대해 풀 요청을 발행합니다.
 
 [issues.liferay.com](https://issues.liferay.com/secure/Dashboard.jspa) 의 버그 보고서에서 Contribute Solution을 클릭하여 문제를 해결하고 끌어오기 요청을 기록했음을 문서화하고 커뮤니티에 환원한 것을 축하합니다! 자세한 내용은 [Building Liferay Source](./building-liferay-source.md)을 참조하십시오.
-
-
 
 ## 새로운 기능 제공
 

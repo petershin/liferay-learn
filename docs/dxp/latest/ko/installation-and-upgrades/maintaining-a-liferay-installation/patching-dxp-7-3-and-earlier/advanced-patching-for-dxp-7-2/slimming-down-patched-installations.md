@@ -17,13 +17,13 @@ Liferay DXP 7.2에서 패치 정보는 기본적으로 설치 시 패치 파일�
 
 ## 설치에서 패치 파일 분리
 
-패치 도구의 `별도` 명령은 기본 위치(웹 응용 프로그램의 `WEB-INF` 폴더)에서 패치 파일을 추출하고 ZIP 파일로 패키징합니다. 명령은 다음과 같습니다.
+패치 도구의 `별도` 명령은 기본 사이트(웹 응용 프로그램의 `WEB-INF` 폴더)에서 패치 파일을 추출하고 ZIP 파일로 패키징합니다. 명령은 다음과 같습니다.
 
 ```bash
 ./patching-tool.sh separate [separation_name]
 ```
 
-이 명령은 패치 파일을 패치 파일 기본 위치에서 패치 도구의 `패치` 폴더에 있는 `` [separation-name]파일로 이동합니다. ZIP 파일을 다른 위치에 저장하여 설치 크기를 줄이십시오.
+이 명령은 패치 파일을 패치 파일 기본 사이트에서 Patching Tool의 `patches` 폴더에 있는 `liferay-patching-files-[separation-name].zip` 파일로 이동합니다. ZIP 파일을 다른 사이트에 저장하여 설치 크기를 줄이십시오.
 
 **경고:** 이러한 방식으로 DXP가 패치에서 분리되면 다음 패치 도구 명령만 사용할 수 있습니다.
 
@@ -43,12 +43,15 @@ and run patching-tool setup.
 
 DXP를 다시 패치해야 할 경우 분리된 패치 파일을 복원해야 합니다.
 
-1. `` [separation-name]</code> `복사합니다.</p></li>
-<li><p spaces-before="0">다음 명령을 실행합니다.
-<pre><code class="bash">    ./patching-tool.sh setup
-`</pre>
+1. `liferay-patching-files-[separation-name].zip`을 패치 도구의 `patches` 폴더에 다시 복사합니다.
 
-패치 파일은 설치 패치 파일 기본 위치로 복원됩니다. 모든 패치 도구 명령을 사용할 수 있습니다.
+1. 다음 명령을 실행합니다.
+
+    ```bash
+    ./patching-tool.sh setup
+    ```
+
+패치 파일은 설치 패치 파일 기본 사이트로 복원됩니다. 모든 패치 도구 명령을 사용할 수 있습니다.
 
 이제 DXP 설치가 불필요한 공간을 차지하지 않도록 패치 파일을 저장하는 방법을 알게 되었습니다. 그리고 새 패치를 설치할 수 있도록 패치 파일을 복원하는 방법도 알고 있습니다.
 

@@ -27,6 +27,5 @@ validations/expression-builder-validations-reference.md
 
 :::{grid-item-card} 표현식 작성기 유효성 검사 참조
 :link: ./validations/expression-builder-validations-reference.md
-:::  
-:
 :::
+::::

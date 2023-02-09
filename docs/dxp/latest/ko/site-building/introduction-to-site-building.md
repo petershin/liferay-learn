@@ -12,7 +12,7 @@ Liferay DXP에는 [사이트 구축](./sites/adding-a-site.md) 및 [페이지 �
 
 페이지도 마찬가지로 유연합니다. 여러 페이지 유형이 있습니다. 기존 [페이지 유형](./creating-pages/understanding-pages/understanding-pages.md) 에서 페이지를 만들거나 기본 [페이지 템플릿](./creating-pages/adding-pages/creating-a-page-template.md)중 하나 또는 직접 만든 페이지 템플릿에서 페이지를 만듭니다.
 
-사이트 및 페이지는 계층적으로 구성할 수 있습니다. 상위 사이트 또는 페이지에 대해 원하는 만큼 중첩 페이지(하위 페이지)와 중첩 사이트 [](./sites/site-hierarchies.md) (하위 사이트)를 원하는 만큼 추가할 수 있습니다. 다양한 조직, 직원 등을 위해 Liferay DXP 인스턴스 전체에 여러 사이트를 가질 수 있습니다. 가져오기 및 내보내기 옵션 [을 사용하여 사이트 간에 콘텐츠와 페이지를 공유할 수도](./sites/exporting-importing-site-pages-and-content.md).
+사이트 및 페이지는 계층적으로 구성할 수 있습니다. 상위 사이트 또는 페이지에 대해 원하는 만큼 중첩 페이지(하위 페이지)와 중첩 사이트 [](./sites/site-hierarchies.md) (하위 사이트)를 원하는 만큼 추가할 수 있습니다. 다양한 조직, 직원 등을 위해 Liferay DXP 인스턴스 전체에 여러 사이트를 가질 수 있습니다. 가져오기 및 내보내기 옵션 [을 사용하여 사이트 간에 콘텐츠와 페이지를 공유할 수도](./sites/exporting-importing-site-pages-and-content.md)있습니다.
 
 페이지 및 사이트 [탐색](./site-navigation/using-the-navigation-menus-application.md) 동작 구성은 직관적이고 유연합니다. 페이지를 만들 때 탐색 메뉴에 페이지를 자동으로 추가할 수 있습니다. 원하는 경우 페이지를 숨기거나 페이지 권한을 구성하여 사용자 액세스를 제한할 수 있습니다.
 
@@ -40,11 +40,7 @@ Liferay DXP의 [Personalization and Segmentation](./personalizing-site-experienc
 
 사이트의 모양, 동작 및 기능을 수정하는 데 사용할 수 있는 많은 [설정](./site-settings/site-settings-ui-reference.md) 이 있습니다. [사이트와 해당 콘텐츠는 필요에 따라 여러 언어로 쉽게](./site-settings/site-localization.md) 할 수 있습니다.
 
-사이트의 모양과 느낌은 다른 테마를 사용하여 [변경할 수 있습니다](../getting-started/changing-your-sites-appearance.md). 테마는 [](../system-administration/installing-and-managing-apps/using-marketplace.md)Marketplace</a>에서 다운로드하여 배포하거나
-
-직접 테마를 만들 수 있습니다. 테마는 사이트의 전반적인 모양과 느낌을 결정하고 FreeMarker 템플릿을 통해 페이지의 CSS, JavaScript 및 HTML을 정의합니다.  FreeMarker는 표준 HTML 요소를 결합하고 변수, 조건문, 루핑 등의 추가 이점을 제공합니다. 자세한 내용은 [테마 개발](./developer-guide.md) 을 참조하십시오.</p> 
-
-
+사이트의 모양과 느낌은 [다른 테마를 사용하여 변경할 수 있습니다](../getting-started/change-your-sites-appearance.md). 테마는 [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md)에서 다운로드하여 배포하거나 [직접 테마를 생성](./site-appearance/ themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md). 테마는 사이트의 전반적인 모양과 느낌을 결정하고 FreeMarker 템플릿을 통해 페이지의 CSS, JavaScript 및 HTML을 정의합니다. FreeMarker는 표준 HTML 요소를 결합하고 변수, 조건문, 루핑 등의 추가 이점을 제공합니다. 자세한 내용은 [테마 개발하기](./developer-guide.md)를 참조하세요.
 
 ## 사이트 최적화
 

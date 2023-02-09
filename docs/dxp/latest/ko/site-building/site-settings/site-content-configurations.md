@@ -33,7 +33,7 @@ site-content-configurations/securing-site-documents-content.md
 :link: ./site-content-configurations/managing-content-sharing-across-sites.md
 :::
 
-:::{grid-item-card} 자산에 대한 지리적 위치 구성
+:::{grid-item-card} 자산에 대한 지리적 사이트 구성
 :link: ./site-content-configurations/configuring-geolocation-for-assets.md
 :::
 

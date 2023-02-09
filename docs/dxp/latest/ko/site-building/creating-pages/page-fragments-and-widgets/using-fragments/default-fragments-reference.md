@@ -31,12 +31,24 @@ Liferay는 즉시 사용 가능한 다양한 조각을 제공하므로 솔루션
 
 ## 기본 컴포넌트
 
-페이지에 기본 기능을 추가하는 단순한 디자인 요소입니다. 예를 들면 버튼, 머리글 및 탭이 있습니다. 이러한 구성 요소를 사용하여 페이지를 하나씩 구축할 수 있습니다. DXP에는 다음과 같은 기본 구성 요소가 포함됩니다.
-이미지</a>[개, 리치 텍스트 [](./configuring-fragments/fragment-sub-elements-reference.md), 링크](./configuring-fragments/fragment-sub-elements-reference.md) 요소 개를 디스플레이 카드로 추가합니다.</td> </tr> 
+페이지에 기본 기능을 추가하는 단순한 디자인 요소입니다. 예를 들면 버튼, 머리글 및 탭이 있습니다. 이러한 구성 요소를 사용하여 페이지를 하나씩 구축할 수 있습니다. DXP에는 다음과 같은 기본 구성 요소가 포함됩니다. 
 
-</tbody> </table> 
-
-
+| 조각 | 설명 |
+| :--- | :--- |
+| 버튼 | 사용 가능한 5가지 버튼 유형(기본, 보조, 링크, 개요 기본 및 개요 보조)이 있는 [링크 요소](./configuring-fragments/fragment-sub-elements-reference.md)를 추가합니다. |
+| 카드 | [이미지](./configuring-fragments/fragment-sub-elements-reference.md), [서식 있는 텍스트](./configuring-fragments/fragment-sub-elements-reference.md) 및 [링크](를 추가합니다. /configuring-fragments/fragment-sub-elements-reference.md) 요소가 디스플레이 카드로 정렬됩니다. |
+| 드롭다운 {bdg-secondary}`7.4+` | [단순 텍스트 요소](./configuring-fragments/fragment-sub-elements-reference.md) 및 놓기 영역을 추가합니다. 고급 드롭다운 메뉴를 생성하기 위해 다른 프래그먼트와 위젯을 드롭 영역으로 끌어다 놓을 수 있습니다. |
+| 외부 비디오 {bdg-secondary}`7.4+` | 페이지 또는 템플릿에 외부 비디오를 포함합니다. 지원되는 비디오 소스에는 YouTube, Facebook, Twitch, Vimeo 및 문서 및 미디어에 저장된 비디오가 포함됩니다. [동영상 삽입](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md)을 참조하십시오. 자세한 내용은. |
+| 제목 | H1-H6 스타일을 사용하도록 구성할 수 있는 [단순 텍스트 요소](./configuring-fragments/fragment-sub-elements-reference.md)를 추가합니다. |
+| HTML | 편집 가능한 [HTML 요소](./configuring-fragments/fragment-sub-elements-reference.md)를 추가합니다. 요소를 두 번 클릭하면 HTML 구문을 사용하여 콘텐츠를 편집할 수 있는 모달 창이 열립니다. |
+| 이미지 | 구성 가능한 [이미지 요소](./configuring-fragments/fragment-sub-elements-reference.md)를 추가합니다. 구성할 때 이미지의 원래 크기를 사용할지 또는 상황에 맞게 조정할지 결정하십시오. |
+| 단락 | [서식 있는 텍스트 요소](./configuring-fragments/fragment-sub-elements-reference.md)를 추가합니다. 편집할 때 조각의 텍스트를 강조 표시하여 추가 서식 옵션에 액세스합니다. |
+| 분리기 | 페이지 요소 사이에 수평선을 추가합니다. 간격과 색상을 구성할 수 있습니다. |
+| 슬라이더 | 슬라이드로 그룹화되는 [서식 있는 텍스트](./configuring-fragments/fragment-sub-elements-reference.md) 오버레이가 있는 여러 [이미지](./configuring-fragments/fragment-sub-elements-reference.md)를 추가합니다. . 사용자는 각 슬라이드를 수동으로 순환할 수 있습니다. |
+| 소셜 | 각 플랫폼의 페이지에 연결할 수 있는 Facebook, Twitter 및 LinkedIn 아이콘이 있는 [이미지 요소](./configuring-fragments/fragment-sub-elements-reference.md)를 추가합니다. |
+| 스페이서 | 페이지의 조각 사이에 가로 공백을 추가합니다. 높이를 구성할 수 있습니다. |
+| 탭 | [간단한 텍스트 요소](./configuring-fragments/fragment-sub-elements-reference.md)가 있는 여러 탭과 위젯 및 기타 조각을 추가하기 위한 개별 드롭 영역을 추가합니다. |
+| 비디오 URL(이전의 *비디오 조각*) | 페이지 또는 템플릿에 Youtube 또는 문서 및 미디어의 비디오를 포함합니다. 비디오를 자동 재생, 반복 또는 음소거로 설정할 수 있습니다. 최종 사용자에게 비디오 컨트롤을 숨길 수도 있습니다. [동영상 삽입](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md)을 참조하십시오. 자세한 내용은. | 
 
 ## 양식 컴포넌트
 
@@ -55,9 +67,6 @@ Liferay는 즉시 사용 가능한 다양한 조각을 제공하므로 솔루션
 | 목록에서 선택 | 사용자 정의 선택 목록 및 관계 필드에 매핑할 수 있는 드롭다운 메뉴를 추가합니다. 매핑된 필드에 10개 이상의 옵션이 포함된 경우 드롭다운 메뉴에는 쿼리 옵션에 대한 검색 표시줄도 포함됩니다.                                                                                                  |
 | 텍스트 입력  | 텍스트 필드(예: 텍스트, 긴 텍스트, 서식 있는 텍스트)에 매핑할 수 있는 필드를 추가합니다.                                                                                                                                                         |
 | 제출 버튼   | 양식 항목을 제출하기 위한 버튼을 추가합니다. 모든 양식 컨테이너에는 제출 버튼이 포함되어야 합니다.                                                                                                                                                      |
-
-
-
 
 ## 컨텐츠 디스플레이
 
@@ -84,21 +93,13 @@ Liferay는 즉시 사용 가능한 다양한 조각을 제공하므로 솔루션
 |:-------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 쿠키 배너 간단 | 사이트 쿠키를 허용하기 위해 [개의 서식 있는 텍스트](./configuring-fragments/fragment-sub-elements-reference.md) 및 [링크](./configuring-fragments/fragment-sub-elements-reference.md) 요소를 추가합니다. |
 
-
-
-
 ## 추천 컨텐츠
 
 추천 콘텐츠 조각은 여러 구성 요소로 구성된 복잡한 페이지 요소입니다. 조각의 레이아웃을 미리 보려면 조각 및 위젯 패널에서 *카드 보기* ( ![Card View](../../../../images/icon-cards2.png) )로 전환합니다. Liferay에는 다음과 같은 주요 콘텐츠 조각이 포함되어 있습니다.
 
-
-
 ```{note}
 Liferay DXP/Portal 7.3의 경우 각 조각의 *정보* 아이콘(![Information](../../../../images/icon-information.png)) 위로 마우스를 가져가 레이아웃을 미리 볼 수 있습니다.
 ```
-
-
-
 
 ### 배너
 
@@ -106,23 +107,17 @@ Liferay DXP/Portal 7.3의 경우 각 조각의 *정보* 아이콘(![Information]
 
 ![클릭 유도문안 배너를 만들기 위해 콘텐츠 페이지에 텍스트 및 링크 요소를 추가합니다.](./default-fragments-reference/images/01.png)
 
-
-
 ### 특징
 
 *기능* 조각을 사용하여 주요 기능을 홍보하기 위해 콘텐츠 페이지에 텍스트, 이미지 및 링크 요소를 추가합니다. DXP에는 다음 레이아웃이 포함됩니다.
 
 ![주요 기능 홍보를 위해 콘텐츠 페이지에 텍스트, 이미지 및 링크 요소 추가](./default-fragments-reference/images/02.png)
 
-
-
 ### 하이라이트
 
 *Highlights* 조각을 사용하여 이미지, 텍스트 및 링크 요소를 콘텐츠 페이지에 추가하여 강조 표시합니다. DXP는 다음과 같은 레이아웃을 제공합니다.
 
 ![하이라이트를 위해 콘텐츠 페이지에 이미지, 텍스트 및 링크 요소를 추가합니다.](./default-fragments-reference/images/03.png)
-
-
 
 ## 푸터
 
@@ -132,8 +127,6 @@ Liferay DXP/Portal 7.3의 경우 각 조각의 *정보* 아이콘(![Information]
 
 ![콘텐츠 페이지의 마스터 페이지 템플릿에 사용자 지정 바닥글을 추가합니다.](./default-fragments-reference/images/04.png)
 
-
-
 ## 내비게이션 바
 
 {bdg-secondary}`사용 가능한 Liferay 7.3+`
@@ -141,8 +134,6 @@ Liferay DXP/Portal 7.3의 경우 각 조각의 *정보* 아이콘(![Information]
 *탐색 표시줄* 조각을 사용하여 [마스터 페이지 템플릿](../../defining-headers-and-footers/master-page-templates.md)에 사용자 지정 머리글을 추가합니다. 각 탐색 모음에는 탐색 메뉴, 로그인 링크 및 로고의 이미지 요소가 포함되어 있습니다. Liferay는 탐색 모음 조각에 대해 다음과 같은 레이아웃을 제공합니다.
 
 ![콘텐츠 페이지의 마스터 페이지 템플릿에 사용자 지정 머리글을 추가합니다.](./default-fragments-reference/images/05.png)
-
-
 
 ## 메뉴 표시
 

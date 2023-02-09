@@ -3,12 +3,13 @@
 DXP/Portal에 내장되어 있거나, 타사에서 정의했거나, 사용자가 만든 메시지 버스 대상으로 전송된 메시지를 수신할 수 있습니다. 동일한 대상으로 전송된 메시지는 일반적으로 유사한 이벤트 유형이나 주제와 같은 공통점이 있습니다. 여기서는 `DestinationNames.DOCUMENT_LIBRARY_PDF_PROCESSOR`이라는 대상에서 수신된 메시지를 수신 대기하는 클래스를 배포합니다. 문서 및 미디어는 업로드된 모든 PDF 파일을 처리한 후 이 대상으로 메시지를 보냅니다.
 
 ## 예제 메시지 리스너 실행
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the [example project](dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3a4.zip):
+1. [예제 프로젝트](dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3a4.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3a4.zip -O

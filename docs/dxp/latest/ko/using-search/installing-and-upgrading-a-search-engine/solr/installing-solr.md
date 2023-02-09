@@ -66,9 +66,7 @@ Liferay DXP 고객인 경우 블랙리스트 기능을 사용하여 Elasticsearc
 
 ### Elasticsearch 전용 기능으로 모듈 중지
 
-App Manager 및 Gogo 셸은 번들의 상태를 "기억"하기 위해 `osgi/state` 폴더에 의존합니다. 이 폴더를 삭제하면</a>
-
-패치하는 동안 권장됨) Elasticsearch 커넥터가 다시 설치되고 자동으로 시작됩니다. Liferay CE 사용자는 블랙리스트 접근 방식을 사용하거나 App Manager 또는 Gogo 셸에서 Elasticsearch 및 검색 튜닝 모듈을 비활성화할 수 있습니다. </p> 
+App Manager 및 Gogo 셸은 번들의 상태를 "기억"하기 위해 `osgi/state` 폴더에 의존합니다. 이 폴더를 삭제하면([Liferay DXP 패치](../../../installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md 중에 권장됨) )) Elasticsearch 커넥터가 다시 설치되고 자동으로 시작됩니다. Liferay CE 사용자는 블랙리스트 접근 방식을 사용하거나 App Manager 또는 Gogo 셸에서 Elasticsearch 및 검색 튜닝 모듈을 비활성화할 수 있습니다.
 
 앱 관리자를 통해 비활성화하려면,
 
@@ -84,8 +82,6 @@ App Manager 및 Gogo 셸은 번들의 상태를 "기억"하기 위해 `osgi/stat
 
 1. 나열된 각 번들에 대해 `stop [bundle ID]`을 입력하십시오.
 
-
-
 ## Solr 커넥터 다운로드
 
 Solr[7 또는 8]에 Liferay 커넥터를 설치하려면 [Liferay Marketplace](https://web.liferay.com/marketplace/) 로 이동하여 Liferay 버전에 해당하는 앱 버전을 다운로드합니다.
@@ -100,8 +96,6 @@ Solr[7 또는 8]에 Liferay 커넥터를 설치하려면 [Liferay Marketplace](h
       - [Solr 7에 대한 Liferay 커넥터](https://web.liferay.com/marketplace/-/mp/application/117931595)
 
 Liferay 버전 및 패치 수준에 대한 호환되는 응용 프로그램 버전은 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 을 참조하십시오.
-
-
 
 ## Solr 설치 및 구성
 
@@ -121,40 +115,29 @@ Liferay용 Solr을 설치하고 적절하게 구성하려면:
 
 1. 아카이브 관리자를 사용하여 Solr 8의 LPKG 파일에 대한 Liferay 커넥터를 엽니다.
    
-   다음으로 Solr 7/8 - Impl.lpkg</code>에 대한 `Liferay 커넥터를 엽니다.</p>
+   다음으로 'Liferay Connector to Solr 7/8 - Impl.lpkg'를 엽니다.
 
-<p spaces-before="3">마지막으로 <code>com.liferay.portal.search.solr7/8.impl.jar` 파일을 열고 압축을 풉니다. 
-   
-   
+   마지막으로 `com.liferay.portal.search.solr7/8.impl.jar` 파일을 열고 압축을 풉니다.
 
    ```
    META-INF/resources/solrconfig.xml
    ```
 
-
 그리고 
-
-
 
    ```
    META-INF/resources/schema.xml
    ```
 
-
 에 
-
-
 
    ```
    Solr_Home/liferay/conf
    ```
 
-
 이것은 현재 `solrconfig.xml` 및 `schema.xml` 파일을 Solr에 Liferay에서 오는 데이터를 인덱싱하는 방법을 알려주는 파일로 대체합니다.
 
 1. `Solr_Home/liferay` 에 `core.properties` 파일을 생성하고 다음 구성을 추가합니다. 
-   
-   
 
    ```properties
    config=solrconfig.xml
@@ -163,10 +146,7 @@ Liferay용 Solr을 설치하고 적절하게 구성하려면:
    schema=schema.xml
    ```
 
-
 1. 체크포인트: 이제 `Solr_Home/liferay` 폴더의 구조는 다음과 같습니다. 
-   
-   
 
    ```bash
    liferay
@@ -184,21 +164,15 @@ Liferay용 Solr을 설치하고 적절하게 구성하려면:
    └── data
    ```
 
-
 1. Solr 설치의 최상위 폴더(`solr-[version]`)에서 다음을 입력하여 Solr 서버를 시작합니다. 
-   
-   
 
    ```bash
    ./bin/solr start -f
    ```
 
-
 1. Solr 서버는 기본적으로 포트 `8983` 에서 수신 대기합니다. <http://localhost:8983/solr/#/~cores> ( `localhost` 을 호스트로 사용하여 로컬에서 테스트한다고 가정)으로 이동하고 `liferay` 코어를 사용할 수 있는지 확인합니다.
 
 이제 Solr이 설치되고 시작됩니다. 다음으로 Liferay용 Solr 커넥터를 구성하고 설치합니다.
-
-
 
 ## Solr 커넥터 설치 및 구성
 
@@ -208,22 +182,15 @@ Solr에 대한 Liferay 커넥터의 기본 구성이 Solr의 자체 기본값과
 
 1. 파일 이름 지정 
 
-
-
 ```
 com.liferay.portal.search.solr8.configuration.SolrConfiguration.config
 ```
 
-
     or
-    
-
-
 
 ```
 com.liferay.portal.search.solr7.configuration.SolrConfiguration.config
 ```
-
 
 또는 커넥터 구성을 위해 UI를 사용할 수 있습니다. 제어판 &rarr; 구성 &rarr; 시스템 설정에서 Solr 7 시스템 설정 항목을 찾습니다.
 
@@ -238,8 +205,6 @@ com.liferay.portal.search.solr7.configuration.SolrConfiguration.config
    맞춤법 검사 색인도 다시 색인화합니다.
    
    ![Solr 연결은 검색 관리 콘솔에서 확인할 수 있습니다.](./installing-solr/images/01.png)
-
-
 
 ## SolrCloud를 통한 고가용성
 
@@ -258,13 +223,10 @@ Solr 서버 클러스터가 필요한 경우 SolrCloud를 사용하십시오. �
    `configset/liferay_configs` 폴더에는 SolrCloud Liferay 컬렉션 구성이 포함되어 있으며 ZooKeeper에 업로드됩니다. 앞서 구성한 `liferay` 서버에서 `conf` 폴더를 복사할 때 Liferay Solr Adapter와 함께 제공되는 `schema.xml` 및 `solrconfig.xml` 파일을 사용합니다.
 
 1. 대화형 SolrCloud 세션을 시작하여 SolrCloud 클러스터를 구성합니다. 
-   
-   
 
    ```bash
    ./bin/solr -e cloud
    ```
-
 
 1. 설정 마법사를 완료합니다. 다음 단계는 2노드 클러스터 생성을 보여줍니다.
 
@@ -288,31 +250,23 @@ Solr 서버 클러스터가 필요한 경우 SolrCloud를 사용하십시오. �
        Started Solr server on port 7574 (pid=9026). Happy searching!
        ```
 
-
     -  컬렉션 이름을 *liferay*로 지정합니다.
 
     -  컬렉션을 두 개의 샤드로 나눕니다.
     -  샤드당 두 개의 복제본을 지정합니다.
     -  구성을 선택하라는 메시지가 표시되면 *liferay_configs*을 입력합니다. 클러스터가 시작되면 다음과 같이 결론을 내리는 로그 메시지가 표시되어야 합니다. 
-      
 
     ```bash
     SolrCloud example running, please visit http://localhost:8983/solr
     ```
 
-
 이제 로컬 SolrCloud 클러스터에 *liferay* 이라는 새 컬렉션이 있습니다.  *status* 명령을 실행하여 상태를 확인합니다.
-
-
 
 ```bash
 ./bin/solr status
 ```
 
-
 로그 출력에는 노드가 발견되었음을 알리고 각 노드에 대한 정보가 나열됩니다.
-
-
 
 ```
 Found 2 Solr nodes: 
@@ -331,51 +285,36 @@ Solr process 223597 running on port 8983
 ...
 ```
 
-
 SolrCloud 모드에서 실행하는 동안 Solr를 중지하려면 다음과 같이 *stop* 명령을 사용하십시오.
-
-
 
 ```bash
 ./bin/solr stop -all
 ```
-
-
-
 
 ## SolrCloud용 Solr 커넥터 구성
 
 남은 작업은 하나뿐입니다. Liferay의 Solr 커넥터에서 클라이언트 유형을 *CLOUD* 로 지정하십시오.
 
 1. 시스템 설정 또는 OSGi 구성 파일에서 *Client Type* 을 *CLOUD*으로 설정합니다. 
-   
-   
 
    ```properties
    clientType="CLOUD"
    ```
 
-
 1. 아직 실행 중이 아니면 Liferay를 시작합니다. Solr 커넥터 LPKG를 설치한 후 처음 시작하는 경우 로그의 지침에 따라 Liferay를 다시 시작하십시오.
 
 ![Solr 시스템 설정 항목에서 클라이언트 유형을 클라우드로 설정합니다.](./installing-solr/images/03.png)
 
-
-
 ## Solr 커넥터 구성 참조
-
-
 
 ```{note}
 Solr 커넥터 속성은 Solr 7 및 Solr 8 커넥터에 동일하게 적용됩니다. 구성 파일 이름에서 `solr8` 대신 `solr7`을 대체하십시오. 시스템 설정에서 _Solr 7_로 시작하는 항목을 참조하십시오.
 ```
 
-
 다음은 Solr 커넥터 응용 프로그램을 설치할 때 사용할 수 있는 설정과 함께 기본 구성입니다(시스템 설정 검색 범주에서 또는 `.config` 파일로 구성 가능). 이러한 설정은 제한된 값 집합을 허용합니다. 
 
 **구성 파일:** `com.liferay.portal.search.solr8.configuration.SolrConfiguration.config` \
 **시스템 설정 항목:** _Solr 8_
-
 
 ```properties
 authenticationMode=["BASIC" or "CERT"]
@@ -387,11 +326,8 @@ writeURL="http://localhost:8983/solr/liferay"
 zkHost="localhost:9983"
 ```
 
-
 **구성 파일:** `com.liferay.portal.search.solr8.configuration.SolrHttpClientFactoryConfiguration.config` \
 **시스템 설정 항목:** _Solr 8 HTTP 클라이언트 팩토리_
-
-
 
 ```properties
 basicAuthPassword="solr"
@@ -400,11 +336,8 @@ defaultMaxConnectionsPerRoute="20"
 maxTotalConnections="20"
 ```
 
-
 **구성 파일:** `com.liferay.portal.search.solr8.configuration.SolrSSLSocketFactoryConfiguration.config` \
 **시스템 설정 항목:** _Solr 8 SSL Factory_
-
-
 
 ```properties
 keyStorePassword="secret"
@@ -416,6 +349,5 @@ trustStoreType="JKS"
 verifyServerCertificate=B"true"
 verifyServerName=B"true"
 ```
-
 
 이제 Liferay for Solr 및 Solr for Liferay를 구성할 수 있습니다. Solr은 [deprecated](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md)이라는 것을 기억하십시오. Solr를 사용하도록 제한되지 않았거나 이미 Solr 전문가라면 Elasticsearch를 사용하세요.

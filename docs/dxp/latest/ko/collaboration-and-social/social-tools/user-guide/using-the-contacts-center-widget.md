@@ -15,7 +15,7 @@
 
     ![컨택 센터 위젯 추가](./using-the-contacts-center-widget/images/12.png)
 
-1. _Contacts Center_ 위젯을 페이지의 원하는 위치로 끌어다 놓습니다.
+1. _Contacts Center_ 위젯을 페이지의 원하는 사이트로 끌어다 놓습니다.
 
     ![컨택 센터 위젯](./using-the-contacts-center-widget/images/02.png)
 

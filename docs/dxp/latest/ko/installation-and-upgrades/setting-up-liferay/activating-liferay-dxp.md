@@ -53,9 +53,11 @@ Liferay DXP 7.2 이하 버전에서 LCS(Liferay Connected Services)를 사용하
 
 1. `[Liferay Home]/data/license` 폴더의 _내용_ 을 삭제하고 폴더는 보존하십시오.
 
-1. </code> [Liferay Home]/osgi</code> `에서 <code>activation-key-1.xml[...]파일을 모두 제거합니다.</p></li>
-<li><p spaces-before="0">애플리케이션 서버를 시작하십시오.</p></li>
-<li><p spaces-before="0">새 활성화 키 파일을 <code>[Liferay Home]/deploy` 폴더에 복사합니다.
+1. `[Liferay Home]/osgi/modules` 폴더에서 `activation-key-[...].xml` 파일을 모두 제거합니다.
+
+1. 애플리케이션 서버를 시작합니다.
+
+1. 새 활성화 키 파일을 `[Liferay Home]/deploy` 폴더에 복사합니다.
 
 DXP 콘솔 메시지가 등록을 확인합니다.
 

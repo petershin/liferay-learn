@@ -115,7 +115,7 @@ TLS(전송 계층 보안)를 활성화하려면 노드 인증서 및 키를 생�
     elastic-nodes.key
     ```
 
-1. 파일을 각 Elasticsearch 노드의 동일한 폴더와 각 Liferay 서버 노드의 적절한 위치에 복사합니다.
+1. 파일을 각 Elasticsearch 노드의 동일한 폴더와 각 Liferay 서버 노드의 적절한 사이트에 복사합니다.
 
 인증서와 키는 Elasticsearch 구성에서 사용할 준비가 되었습니다.
 

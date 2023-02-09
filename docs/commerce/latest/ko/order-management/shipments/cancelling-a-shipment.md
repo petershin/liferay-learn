@@ -1,7 +1,6 @@
 # 배송 취소
 
-구매자가 주문을 취소하는 경우 [배송](../orders/processing-an-order.md)전에</a> 판매자는
-Commerce에서 배송을 취소할 수 있습니다. 선적 취소는 주문을 종료하는 것이 **** 아니라는 점에 유의하십시오. 주문 상태 관리는 제어판의 _주문_ 메뉴에서 수행됩니다.</p> 
+구매자가 [배송](./introduction-to-shipments.md) 전에 [주문](../orders/processing-an-order.md)을 취소하는 경우 판매자는 Liferay Commerce에서 배송을 취소할 수 있습니다. 배송을 취소해도 주문이 닫히는 것은 **아닙니다**. 주문 상태 관리는 제어판의 _주문_ 메뉴에서 수행됩니다.
 
 배송을 취소하려면:
 
@@ -23,8 +22,6 @@ Commerce에서 배송을 취소할 수 있습니다. 선적 취소는 주문을 
 ![업데이트된 전송 탭](./cancelling-a-shipment/images/03.png)
 
 새 배송이 동일한 주문에서 [생성](./creating-a-shipment.md) 인 경우 새 배송 번호가 생성됩니다(예: _42888_).
-
-
 
 ## 추가 정보
 

@@ -432,14 +432,14 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 
 `*ControlMenuEntry` API를 사용하여 포함된 사용자 지정 고정 막대가 있는 개발자는 컨트롤 메뉴에 새로 포함된 확장 지점을 사용하여 구성 요소를 삽입할 수 있습니다.
 
-메뉴를 삽입하는 코드를 `DynamicInclude` 구성 요소로 이동하고 적절한 위치에 등록합니다.
+메뉴를 삽입하는 코드를 `DynamicInclude` 구성 요소로 이동하고 적절한 사이트에 등록합니다.
 
 - 제어 메뉴 이전: `com.liferay.product.navigation.taglib#/page.jsp#pre`사용
 - 컨트롤 메뉴 이후: `com.liferay.product.navigation.taglib#/page.jsp#post`사용
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이 변경은 액세스 가능성을 개선하고 최상위 메뉴 위치 지정 및 제어에 필요한 논리를 단순화하기 위해 이루어졌습니다. 일반적인 시각적 결함을 피하는 보다 정확하고 예상되는 마크업을 제공합니다.
+이 변경은 액세스 가능성을 개선하고 최상위 메뉴 사이트 지정 및 제어에 필요한 논리를 단순화하기 위해 이루어졌습니다. 일반적인 시각적 결함을 피하는 보다 정확하고 예상되는 마크업을 제공합니다.
 
 ---------------------------------------
 
@@ -939,7 +939,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 이는 포털 속성 설정이 `view.count.enabled=false` 또는 `buffered.increment.enabled=false`인 모든 사용자에게 영향을 미칩니다.
 
-이는 포털 속성 설정 `view.count.enabled[SomeEntity]=false` (초기 7.3 버전) 또는 `buffered.increment.enabled[SomeEntity]=false 7.2 포털(7.2 포털)을 사용하여 일부 엔티티(예: <code>` </code>)에 대한 조회수를 비활성화한 모든 사람에게 영향을 미칩니다 .
+이것은 초기 7.3 버전에서 포털 속성 설정 `view.count.enabled[SomeEntity]=false` 또는 `buffered.increment.enabled[SomeEntity]=false`를 사용하여 일부 엔티티(예: `SomeEntity`)에 대한 조회수를 비활성화한 모든 사람에게 영향을 미칩니다. 7.2 포털에서.
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 

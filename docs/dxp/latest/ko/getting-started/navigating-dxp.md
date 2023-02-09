@@ -86,7 +86,7 @@ _애플리케이션 메뉴_ 에는 Liferay DXP 서버 내에서 다양한 애플
 * [워크플로우](../process-automation/workflow/introduction-to-workflow.md)
 * [원격 앱](../building-applications/client-extensions/browser-based-client-extensions.md#custom-element-client-extensions)
 
-### 커머스 메뉴
+### 제어판
 
 Liferay 7.3 CE GA6 및 Liferay DXP 7.3 GA1부터 Liferay Commerce 3.0은 이제 Liferay Portal 7.3 CE GA6 및 Liferay DXP 7.3 GA1과 함께 번들로 제공됩니다.
 
@@ -122,7 +122,7 @@ Liferay DXP 7.3 이전 버전에서는 전역 메뉴의 내용이 화면 왼쪽�
 
 ![DXP 7.1 및 7.2의 제어판은 사이트 메뉴 위에 있습니다.](./navigating-dxp/images/06.png)
 
-## 무엇 향후 계획
+## 다음
 
 시작하기 연습을 계속하고 [첫 번째 사이트 만들기](./creating-your-first-site.md)에 대해 알아보십시오.
 

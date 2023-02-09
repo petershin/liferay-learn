@@ -97,21 +97,14 @@ Liferay 회사 인덱스(예: `liferay-20097`)로 인덱싱된 자산은 `ModelS
 
 ## 예 2: Liferay 회사 인덱스 및 추가 인덱스 검색
 
-Liferay의 회사 인덱스(예: `liferay-20098</a> )의 결과 집합과`</code> 의 Elasticsearch 클러스터 [(이 예에서는](../../installing-and-upgrading-a-search-engine/elasticsearch.md) liferay-
+Liferay 회사 색인(예: `liferay-20098`)의 결과 집합과 일부 대체 색인의 결과 집합을 표시하는 [검색 페이지](../working-with-search-pages/search-pages.md)를 설정합니다. [Liferay의 Elasticsearch 클러스터](../../installing-and-upgrading-a-search-engine/elasticsearch.md)에서 관심 대상(이 예에서는 데모용으로 'liferay-0' 사용):
 
- `을 사용하여 데모 목적):</p>
+1. 이러한 위젯을 [_Low Level Search_ 라는 새 페이지]( ./../../../site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page)에 추가합니다. .md):
 
-<ol start="1">
-<li>이 위젯을 <em x-id="4">Low Level Search</em></a>라는 <a href="./../../../site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.md">개의 새 페이지에 추가합니다. </li>
-</ol>
-
-<ul>
-<li>하나의 하위 수준 검색 옵션</li>
-<li>두 개의 <a href="../../getting-started/searching-for-content.md#using-the-search-bar">검색 막대</a></li>
-<li>두 개의 <a href="./configuring-the-search-results-widget.md">검색 결과</a></li>
-<li>하나 <a href="./filtering-search-results.md">사용자 정의 필터</a>
-<pre><code class="{tip}">   1-2-1 열(50/50) [페이지 레이아웃](./../../../site-building/creating-pages/page-settings/configuring-individual-pages.md#page- 레이아웃)이 이 예에서는 편리합니다.
-`</pre></li> </ul> 
+    * 하나의 하위 수준 검색 옵션
+    * 2개의 [검색창](../../getting-started/searching-for-content.md#using-the-search-bar)
+    * 2개의 [검색 결과](./configuring-the-search-results-widget.md)
+    * [맞춤 필터](./filtering-search-results.md) 1개
 
 1. 위젯을 구성합니다.
 
@@ -125,13 +118,9 @@ Liferay의 회사 인덱스(예: `liferay-20098</a> )의 결과 집합과`</code
    | 검색창(두 번째)   | **보이지 않음:** `참`<br />**연합 검색 키:** `liferay-0`                                                                                                  | 사용자 입력에는 하나의 검색 표시줄만 사용되므로 이 표시줄은 보이지 않아야 합니다. 중요한 것은 두 검색 표시줄 위젯에서 키워드 매개변수 이름의 기본값을 그대로 두었다는 것입니다. 이 검색 표시줄은 페이지에 표시되는 검색 표시줄과 매개변수를 공유하기 때문에 사용자가 입력한 검색어를 수집할 수 있습니다. |
    | 커스텀 필터      | **필터 필드:** `title_en_US`<br />**발생:** `should`<br />**맞춤 매개변수 이름:**`q`<br />**보이지 않음:** `true`<br />**통합 검색 키:** `liferay-0` | 사용자 정의 필터 위젯은 `liferay-0` 인덱스의 제목 필드와 일치해야 합니다. 더 많은 필터가 필요한 경우 페이지에 더 많은 사용자 정의 필터 위젯을 추가하십시오.                                                                           |
 
-   
-   
-
    ```{important}
    검색 표시줄의 키워드 매개변수 이름 설정의 기본값과 일치하도록 사용자 정의 매개변수 이름을 `q`로 설정합니다. 일치하는 매개변수는 검색창에 입력된 사용자의 키워드가 사용자 정의 필터 위젯에 적용되도록 합니다. 검색창의 Keywords Parameter Name에 사용자 정의 값이 설정되어 있으면 `q` 대신 해당 값을 사용하십시오.
    ```
-
 
 하위 수준 검색 페이지 기능을 테스트하려면
 

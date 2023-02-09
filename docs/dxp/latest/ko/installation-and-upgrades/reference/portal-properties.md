@@ -2,7 +2,7 @@
 
 구성 옵션은 *포털 속성*, 속성 파일에서 읽은 이름/값 쌍 세트 및 서버 시작 시 Docker 환경 변수를 사용하여 지정됩니다. [기본값](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 은 `portal-impl.jar/portal.properties` 파일에 지정됩니다.
 
-일부 속성은 사용자 인터페이스(UI)를 통해 변경할 수 있지만 다른 속성은 속성 파일 또는 Docker 환경 변수에서만 변경할 수 있습니다. 여기에는 데이터베이스 연결, [Liferay Home 폴더의 위치 선언,](./liferay-home.md) 사용자 인증 방법 변경 [이메일 주소 대신 화면 이름 사용](../securing-liferay/authentication-basics.md#configuring-authentication-type-using-properties) 이 포함됩니다.
+일부 속성은 사용자 인터페이스(UI)를 통해 변경할 수 있지만 다른 속성은 속성 파일 또는 Docker 환경 변수에서만 변경할 수 있습니다. 여기에는 데이터베이스 연결, [Liferay Home 폴더의 사이트 선언,](./liferay-home.md) 사용자 인증 방법 변경 [이메일 주소 대신 화면 이름 사용](../securing-liferay/authentication-basics.md#configuring-authentication-type-using-properties) 이 포함됩니다.
 
 Liferay 설치는 속성 파일을 사용합니다. 규칙에 따라 기본 속성 값을 재정의하려면 [`[Liferay Home]`](./liferay-home.md) 폴더 또는 `[USER_HOME]` 폴더에 `Portal-ext.properties` 을 생성해야 합니다. 신규 또는 수정된 속성 파일을 적용하려면 DXP를 다시 시작해야 합니다.
 
@@ -51,9 +51,9 @@ jdbc.default.password=123456
 
 데이터베이스 구성에 대한 자세한 내용은 [데이터베이스 구성](./database-configurations.md) 및 [데이터베이스 템플릿](./database-templates.md)을 참조하십시오.
 
-### Liferay 홈 위치 설정
+### Liferay 홈 사이트 설정
 
-일부 애플리케이션 서버(예: WebLogic)는 DXP WAR 파일을 배포하기 전에 [Liferay 홈 위치를 사용자 지정해야](../installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md#declare-the-liferay-home-folder). [`liferay.home`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Liferay%20Home) 속성은 위치를 설정합니다.
+일부 애플리케이션 서버(예: WebLogic)는 DXP WAR 파일을 배포하기 전에 [Liferay 홈 사이트를 사용자 지정해야](../installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md#declare-the-liferay-home-folder). [`liferay.home`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Liferay%20Home) 속성은 사이트를 설정합니다.
 
 ```properties
 liferay.home=/home/jbloggs/liferay

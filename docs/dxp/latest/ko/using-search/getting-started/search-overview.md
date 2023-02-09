@@ -57,6 +57,6 @@
 
 자세한 내용은 [개발자 안내서](../developer-guide.md) 을 참조하십시오.
 
-## 무엇 향후 계획
+## 다음
 
 [콘텐츠 검색](./searching-for-content.md)을 통해 검색 기능을 살펴보세요. 프로덕션용 검색을 구성할 준비가 되면 [Elasticsearch 시작하기](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md)을 참조하십시오.

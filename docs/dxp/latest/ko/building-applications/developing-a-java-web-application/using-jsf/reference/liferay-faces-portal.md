@@ -1,8 +1,8 @@
 # Liferay 얼굴 포털
 
-*Liferay Faces Portal* 은</code> `로 배포됩니다. Liferay Faces Portal을 포틀릿 프로젝트에 대한 종속성으로 추가하여 Liferay 관련 유틸리티 및 UI 구성 요소를 사용할 수 있습니다. Liferay Faces Portal이 JSF 포틀릿 프로젝트에 포함된 경우 <code>com.liferay.faces.portal.[version].jar` 파일은 포틀릿의 라이브러리에 있습니다.
+*Liferay Faces Portal*은 `.jar` 파일로 배포됩니다. Liferay Faces Portal을 포틀릿 프로젝트에 대한 종속성으로 추가하여 Liferay 관련 유틸리티 및 UI 구성 요소를 사용할 수 있습니다. Liferay Faces Portal이 JSF 포틀릿 프로젝트에 포함된 경우 `com.liferay.faces.portal.[version].jar` 파일은 포틀릿의 라이브러리에 있습니다.
 
-![구성한 JSF UI 구성 요소 제품군을 기반으로 JSF 포틀릿에 필요한 <code>.jar</code> 파일이 다운로드됩니다.](./liferay-faces-portal/images/01.png)
+![구성한 JSF UI 구성 요소 제품군을 기반으로 JSF 포틀릿에 필요한 `.jar` 파일이 다운로드됩니다.](./liferay-faces-portal/images/01.png)
 
 Liferay Faces Portal에 포함된 일부 기능은 다음과 같습니다.
 

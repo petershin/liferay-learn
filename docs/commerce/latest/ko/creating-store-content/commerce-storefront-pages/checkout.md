@@ -16,7 +16,7 @@
 
 ![주문에 적합한 배송 방법을 선택합니다.](./checkout/images/03.png)
 
-_배송방법_ in _사이트관리_ → _상업_ → _설정_></em>_ 자세한 내용은 [정액 배송 방법 사용](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) 을 참조하십시오.</p>
+구매자가 사용할 수 있는 배송 방법은 _사이트 관리_ → _상거래_ → _설정_ -> _배송 방법_에서 _배송 방법_을 변경하여 구성합니다. 자세한 내용은 [정액 배송 방법 사용](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)을 참조하세요.
 
 ## 청구 주소 입력
 

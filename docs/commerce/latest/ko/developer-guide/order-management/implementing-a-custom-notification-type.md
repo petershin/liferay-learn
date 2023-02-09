@@ -13,12 +13,13 @@
 위의 다이어그램은 유형 *G2F3 Shipment Created*의 알림 템플릿을 보여줍니다. 이것은 새로운 선적 생성을 위해 트리거됩니다. 배송을 생성하는 동안 알림 템플릿에 언급된 대로 수취인에게 알림이 전송됩니다. 템플릿의 받는 사람, 제목 및 본문 필드에 와일드카드를 사용할 수 있으며 보내기 전에 해결됩니다.
 
 ## 알림 유형 배포 및 언어 키 추가
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the Acme Commerce Notification Type.
+1. Acme Commerce 알림 유형을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip

@@ -2,19 +2,13 @@
 
 JVM(Java Virtual Machine) 조정은 주로 Java 힙 및 비힙 설정 조정과 가비지 수집 구성에 중점을 둡니다. 성능이 좋은 설정을 찾는 것은 시스템의 부하와 하드웨어에 따라 다릅니다. 여기에서 설명하는 설정은 JVM 조정을 위한 시작점으로 사용할 수 있습니다.
 
-예제 Oracle JVM 설정을 JVM 설정에 적용할 수 있습니다. 호환되는 JVM에</a>
-
-참조하십시오.</p> 
-
-
+예제 Oracle JVM 설정을 JVM 설정에 적용할 수 있습니다. 호환되는 JVM에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)를 참조하십시오.
 
 ## 힙 및 비힙 공간 설정
 
 JVM의 메모리는 힙 및 비힙 공간으로 구성됩니다. 힙에는 Young Generation 객체를 위한 공간과 Old Generation 객체를 위한 공간이 있습니다. 정적 콘텐츠 및 JIT(Just-In-Time) 컴파일 Java 코드는 힙이 아닌 기본 공간에 저장됩니다. 다음은 구성 예입니다.
 
 **메모리 설정 예**
-
-
 
 ``` 
 -Xms2560m -Xmx2560m 
@@ -37,22 +31,13 @@ JVM의 메모리는 힙 및 비힙 공간으로 구성됩니다. 힙에는 Young
 | `-XX:InitialCodeCacheSize=64m`  | JIT 컴파일 코드를 위한 초기 공간. 코드 캐시가 너무 작으면(`48m` 이 기본값임) JIT가 고주파 방법을 최적화할 수 없기 때문에 성능이 저하됩니다. |
 | `-XX:ReservedCodeCacheSize=96m` | JIT 컴파일 코드를 위한 최대 공간.                                                                   |
 
-
-
-
 ```{Note}
 JVM이 동적으로 조정하지 않도록 최소(`-Xms`) 및 최대(`-Xmx`) 힙 크기를 동일한 값으로 설정하십시오.
 ```
 
-
-
-
 ```{warning}
 JVM 힙에 32g 이상을 할당하지 마십시오. 힙 크기는 사용 가능한 CPU 리소스의 속도와 양에 비례해야 합니다.
 ```
-
-
-
 
 ## 생존자 공간 설정
 
@@ -60,12 +45,9 @@ JVM 힙에 32g 이상을 할당하지 마십시오. 힙 크기는 사용 가능�
 
 **생존자 설정 예시**
 
-
-
 ```
 -XX:SurvivorRatio=16 -XX:TargetSurvivorRatio=50 -XX:MaxTenuringThreshold=15
 ```
-
 
 **생존자 설정 설명**
 
@@ -75,14 +57,9 @@ JVM 힙에 32g 이상을 할당하지 마십시오. 힙 크기는 사용 가능�
 | `-XX:TargetSurvivorRatio=50`  | 각 Eden 가비지 수집 후 서바이버 공간의 50%를 사용하도록 JVM에 지시합니다.         |
 | `-XX:MaxTenuringThreshold=15` | 구세대 공간으로 승격되기 전에 최대 15개의 가비지 수집을 위해 생존자를 생존자 공간에 유지합니다. |
 
-
-
-
 ## 가비지 수집 구성
 
 적절한 가비지 수집기(GC) 알고리즘을 선택하면 Liferay 인스턴스 응답성을 개선하는 데 도움이 됩니다.
-
-
 
 ### Java 8의 가비지 컬렉션
 
@@ -90,15 +67,12 @@ JVM 힙에 32g 이상을 할당하지 마십시오. 힙 크기는 사용 가능�
 
 **GC 설정 예**
 
-
-
 ```
 -XX:+UseParNewGC -XX:ParallelGCThreads=16
 -XX:+UseConcMarkSweepGC
 -XX:+CMSParallelRemarkEnabled -XX:+CMSCompactWhenClearAllSoftRefs
 -XX:CMSInitiatingOccupancyFraction=85 -XX:+CMSScavengeBeforeRemark
 ```
-
 
 **GC 설정 설명**
 
@@ -112,71 +86,47 @@ JVM 힙에 32g 이상을 할당하지 마십시오. 힙 크기는 사용 가능�
 | `-XX:CMSInitiatingOccupancyFraction=85` | 구세대 공간의 이 비율이 점유되면 CMS를 시작합니다.                                                                                                         |
 | `-XX:+CMSScavengeBeforeRemark`          | CMS의 객체를 다시 표시하기 전에 Eden GC를 실행하십시오.                                                                                                   |
 
-
-
-
 ```{note}
 G1(Garbage-First)과 같은 추가 "새로운" 알고리즘이 있지만 G1에 대한 Liferay Engineering의 테스트에서는 성능이 향상되지 않는 것으로 나타났습니다. 애플리케이션 성능이 다를 수 있으므로 테스트 및 튜닝 계획에 G1을 추가해야 합니다.
 ```
-
-
-
 
 ### Java 11의 가비지 컬렉션
 
 CMS 및 ParNew 알고리즘은 Java 11에서 더 이상 사용되지 않으므로 G1(Garbage-First) 알고리즘을 사용하십시오. 기본적으로 활성화되어 있습니다. G1의 기본 설정으로 테스트를 시작합니다.
 
-
-
 ## 큰 페이지 사용 고려
 
 큰 힙 크기(예: 4GB 이상)가 필요한 시스템에서는 큰 페이지 크기를 사용하는 것이 좋습니다.
-
-
 
 ### 컴퓨터에서 큰 페이지 구성
 
 다음은 Linux에서 대형 페이지("대형 페이지"라고도 함)를 구성하는 방법입니다.
 
 1. 하드웨어 사양 및 응용 프로그램 프로필에 따라 사용할 페이지 수를 결정합니다. Linux에서 다음 명령을 실행하여 페이지 크기를 보고합니다. 
-   
-   
 
     ```bash
     cat /proc/meminfo | grep Hugepagesize
     ```
 
-
 결과: 
-
-
 
     ```properties
     Hugepagesize = 2048 kB
     ```
 
-
 1. 활성화할 페이지 수를 설정합니다. Linux에서 `/etc/sysctl.conf` 파일을 편집하고 `vm.nr_hugepages` 을 페이지 수로 설정합니다. 예를 들어, 
-   
-   
 
     ```properties
     vm.nr_hugepages = 10
     ```
 
-
 1. 페이지를 활성화합니다. Linux에서 다음을 실행합니다. 
-   
-   
 
     ```bash
     sysctl -p
     ```
 
-
 1. 컴퓨터를 다시 시작하십시오.
-
-
 
 ### JVM에서 대형 페이지 구성
 
@@ -184,12 +134,9 @@ CMS 및 ParNew 알고리즘은 Java 11에서 더 이상 사용되지 않으므�
 
 **큰 페이지 설정 예**
 
-
-
 ```
 -XX:+UseLargePages -XX:LargePageSizeInBytes=256m
 ```
-
 
 **큰 페이지 설정 설명**
 
@@ -198,10 +145,7 @@ CMS 및 ParNew 알고리즘은 Java 11에서 더 이상 사용되지 않으므�
 | `-XX:+UseLargePages`            | 큰 페이지를 활성화합니다.                                                                                             |
 | `-XX:LargePageSizeInBytes=256m` | 총 대형 페이지 크기( `cat /proc/meminfo`, 계산 `HugePages_Total * Hugepagesize`)가 JVM의 모든 메모리 사용량을 포함할 수 있는지 확인하십시오. |
 
-
 하드웨어 사양 및 응용 프로그램 프로필에 따라 페이지 크기를 조정하십시오.
-
-
 
 ## 결론
 

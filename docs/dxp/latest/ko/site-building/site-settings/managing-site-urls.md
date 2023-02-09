@@ -28,7 +28,7 @@ Liferay 서버에 대한 가상 호스트를 구성하여 도메인 이름(예: 
 사용자가 사이트에 빠르게 액세스할 수 있도록 친근한 URL을 정의하십시오. Liferay 서버의 각 친숙한 URL은 고유해야 하며 `https://[server:port]/web` (예: `https://localhost:8080/web/hello-world/`)에 추가됩니다. 자세한 내용은 [사이트의 친숙한 URL 구성](./managing-site-urls/configuring-your-sites-friendly-url.md) 을 참조하십시오.
 
 ```{note}
-페이지 및 문서에 대해 친숙한 URL을 구성할 수도 있습니다. [페이지의 친숙한 URL 구성](../creating-pages/page-settings/configuring-your-pages-friendly-url.md) 및 [문서 URL 구성](../../content-authoring-and -management/documents-and-media/uploading-and-managing/configuring-document-urls.md)를 참조하십시오.
+페이지 및 문서에 대해 친숙한 URL을 구성할 수도 있습니다. [페이지의 친숙한 URL 구성](../creating-pages/page-settings/configuring-your-pages-friendly-url.md) 및 [문서 URL 구성](../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md)를 참조하십시오.
 ```
 
 ## 사이트 리디렉션

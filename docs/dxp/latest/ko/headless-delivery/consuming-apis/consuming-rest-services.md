@@ -21,7 +21,7 @@ Liferay DXP의 REST 서비스는 다음 URL에 게시됩니다.
 http[s]://[hostname]:[port]/o/api
 ```
 
-Docker 인스턴스에서 다음 위치에서 찾을 수 있습니다.
+Docker 인스턴스에서 다음 사이트에서 찾을 수 있습니다.
 
 ```
 http://localhost:8080/o/api

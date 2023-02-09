@@ -90,27 +90,17 @@ DXP 7.2 SP2 이하에서 7.3으로 업그레이드하면 새 DXP 인덱스가 �
 
 > 가용성: Liferay DXP 7.3 GA1+와 함께 제공, [유사한 결과](https://web.liferay.com/marketplace/-/mp/application/172465398) Marketplace 앱을 통해 Liferay DXP 7.2 SP2+에 설치 가능
 
-유사한 결과 위젯은 페이지의 기본 자산과 유사한 자산 모음을 표시합니다. 위젯은 URL을 사용하여 기본 자산 표시를 결정하고 이 쿼리</a> 과 같은 Elasticsearch의
-
-을 활용하여 추가 자산을 찾습니다. 기본 자산은 표시 위젯(예: 블로그 위젯) 또는 자산 게시자를 사용하여 표시할 수 있습니다.</p> 
+유사한 결과 위젯은 페이지의 기본 자산과 유사한 자산 모음을 표시합니다. 위젯은 URL을 사용하여 기본 자산 표시를 결정하고 Elasticsearch의 [이 쿼리와 비슷함](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html)을 활용합니다. 추가 자산을 찾을 수 있습니다. 기본 자산은 표시 위젯(예: 블로그 위젯) 또는 자산 게시자를 사용하여 표시할 수 있습니다.
 
 유사한 결과의 첫 번째 버전은 블로그, 게시판, 문서 및 위키를 지원합니다. 추가 자산 유형(네이티브 및 사용자 지정 자산 모두)에 대한 지원은 [확장점](../developer-guide/writing-a-similar-results-contributor.md)을 구현하여 가능합니다. 문서 유사성을 결정하는 데 사용되는 논리는 Elasticsearch의 More Like This [쿼리 매개변수](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html)에 따라 구성할 수 있습니다. 
 
 자세한 내용은 [유사한 결과](../search-pages-and-widgets/similar-results.md) 을 참조하십시오.
 
-
-
 ## 튜닝 검색
-
-
 
 > **가입자**
 
-
-
 ### 검색 조정: 결과 순위
-
-
 
 > 가용성: 라이프레이 DXP 7.2 SP1+, 라이프레이 DXP 7.3 GA1+
 
@@ -120,39 +110,23 @@ DXP 7.2 SP2 이하에서 7.3으로 업그레이드하면 새 DXP 인덱스가 �
 1. 결과 목록에서 결과를 숨길 수 있습니다. 이 기능은 오래되었거나 관련이 없는 결과를 제거하는 데 사용할 수 있습니다.
 1. 별칭은 동일한 사용자 지정 고정 및 숨겨진 결과를 대체 검색 쿼리에 적용합니다. 예를 들어 "디지털 경험 플랫폼" 쿼리에 대해 고정 및 숨겨진 결과로 결과 순위가 생성된 경우 별칭 "portal" 및 "dxp"를 추가하면 동일한 고정 및 숨겨진 결과가 적용됩니다.
 
-
-
 ### 튜닝 검색: 동의어
-
-
 
 > 가용성: 라이프레이 DXP 7.2 SP1+, 라이프레이 DXP 7.3 GA1+
 
-동의어는 검색 시 동의어 쿼리에 동등한 가중치를 부여하여 비슷한 의미의 쿼리를 연결합니다. 예를 들어 "휴대 전화", "휴대 전화" 및 "손 전화"라는 검색어는 동일한 의미를 가지며 상호 교환하여 사용할 수 있습니다. 이 세 가지 쿼리로 동의어 집합을 정의하면 "휴대 전화" 또는 "손 전화"라는 단어가 포함된 "휴대 전화" 문서를 검색하는 사용자가 표시됩니다. Elastic</a>의 동의어 문서를 참조하세요.</p> 
-
-
+동의어는 검색 시 동의어 쿼리에 동등한 가중치를 부여하여 비슷한 의미의 쿼리를 연결합니다. 예를 들어 "휴대 전화", "휴대 전화" 및 "손 전화"라는 검색어는 동일한 의미를 가지며 상호 교환하여 사용할 수 있습니다. 이 세 가지 쿼리로 동의어 집합을 정의하면 "휴대 전화" 또는 "손 전화"라는 단어가 포함된 "휴대 전화" 문서를 검색하는 사용자가 표시됩니다. [Elastic의 동의어 문서](https://www.elastic.co/guide/en/elasticsearch/guide/current/synonyms.html)를 참조하세요.
 
 ## Liferay 엔터프라이즈 검색(LES)
 
-
-
 > **[LES 가입자](https://www.liferay.com/products/dxp/enterprise-search)**
 
-
-
 ### 클러스터 간 복제(LES)
-
-
 
 > 가용성: [Liferay Enterprise 검색 클러스터 간 복제](../liferay-enterprise-search/cross-cluster-replication/cross-cluster-replication.md) 애플리케이션을 통한 Liferay DXP 7.2 SP3+, Liferay DXP 7.3 GA1+.
 
 클러스터 간 복제 애플리케이션은 재해 복구(고가용성) 및 지리적 근접성 성능 최적화를 위해 원격 데이터 센터 간에 Elasticsearch 클러스터를 복제합니다. 활성-수동 모델을 사용하여 분산 클러스터 간에 검색 인덱스를 복제하는 Elasticsearch의 [클러스터 간 복제](https://www.elastic.co/guide/en/elasticsearch/reference/7.9/xpack-ccr.html) 기능을 활용합니다. 모든 DXP 노드에 대한 모든 쓰기 작업은 단일 리더 인덱스로 라우팅되는 반면, 각 DXP 클러스터 노드는 모든 팔로워 인덱스에서 읽도록 구성할 수 있습니다.
 
-
-
 ### 순위 학습(LES)
-
-
 
 > 가용성: Liferay DXP 7.2 SP2+, Liferay DXP 7.3 GA1+, [Liferay Enterprise 검색 학습을 통해](https://web.liferay.com/marketplace/-/mp/application/170666298) 순위 애플리케이션.
 
@@ -165,8 +139,6 @@ LTR(Learning to Rank)은 기계 학습(ML) 모델을 적용하여 검색 결과�
 
 판단 목록은 모델 교육에 정보를 제공하고 안내하는 진실의 출처입니다. 사용자가 검색 쿼리를 제출하면 LTR은 검색 엔진에서 반환된 처음 _x_ 개의 결과(기본적으로 처음 1,000개의 결과)를 가져온 다음 목록을 반환하기 전에 학습된 모델을 사용하여 해당 결과의 점수를 다시 매기고 재정렬합니다. 사용자에게.
 
-
-
 ### LES 애플리케이션의 이름이 변경됨
 
 Liferay CE/DXP 7.3 릴리스에 명시적으로 연결되어 있지는 않지만 이러한 앱은 기능을 더 잘 반영하고 LES 앱으로서의 정체성을 강조하기 위해 이름이 변경되었습니다.
@@ -178,16 +150,9 @@ Liferay CE/DXP 7.3 릴리스에 명시적으로 연결되어 있지는 않지만
 | 기계 학습을 사용하여 검색 알고리즘 최적화 | 순위를 매기는 Elasticsearch 학습에 대한 Liferay 커넥터       | Liferay Enterprise 검색 순위 학습 |
 | 원격 데이터 센터에서 인덱스 복제      | NA(새 앱)                                        | Liferay 엔터프라이즈 검색 클러스터 간 복제 |
 
-
-
-
 ## 발달
 
-
-
 ### 새 인덱스 설정 기여자 확장 지점
-
-
 
 > 가용성: Liferay CE 7.3 GA6+, Liferay DXP 7.3 GA1+
 
@@ -197,11 +162,7 @@ Elasticsearch 버전에 구애받지 않는 `IndexSettingsContributor` 이 추�
 * `com.liferay.portal.search.spi.settings.IndexSettingsHelper.java`
 * `com.liferay.portal.search.spi.settings.TypeMappingsHelper.java`
 
-
-
 ### 사이드카 Elasticsearch 7이 번들로 제공됨
-
-
 
 > 가용성: Liferay CE 7.3 GA4+, Liferay DXP 7.3 GA1+
 
@@ -209,13 +170,9 @@ Elasticsearch의 호환 버전은 Liferay CE/DXP 7.3+ Tomcat 번들과 함께 �
 
 사이드카 Elasticsearch 서버는 처음 시작할 때 자동으로 다운로드됩니다. 배포에서 사이드카 서버를 다운로드할 수 없는 경우 [Elasticsearch를 원격 서버로 설치합니다](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md).
 
-
-
 ## DXP 7.3으로 업그레이드
 
 이전 DXP 버전에서 7.3으로 업그레이드하려면 [REST 클라이언트](#the-elasticsearch-7-connector-is-based-on-the-rest-client)로 전환하기 때문에 몇 가지 특별한 단계가 필요합니다. 업그레이드 과정에 도움이 되는 중요한 정보는 [업그레이드 설명서](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md) 을 참조하십시오.
-
-
 
 ## 관련 항목
 

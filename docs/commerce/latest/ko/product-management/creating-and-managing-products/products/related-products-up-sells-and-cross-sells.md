@@ -41,11 +41,11 @@
     ![관련 메뉴](./related-products-up-sells-and-cross-sells/images/02.png)
 
 1. 하나 이상의 관계를 추가하려면 (+) 버튼을 클릭합니다. 이 예에서는 _Brake Rotors_ 및 _Brake Fluid_을 선택합니다.
-1. _추가_을 클릭합니다.
+1. _추가_ 을 클릭합니다.
 
     ![두 개의 제품 추가](./related-products-up-sells-and-cross-sells/images/04.png)
 
-이 두 제품은 이제 _브레이크 패드_과 연결됩니다. 이 관계는 단방향입니다. 즉, _Brake Pads_ 을 보면 새로운 상품 관계가 보이지만 _Brake Rotors_ 또는 _Brake Fluid_ 상품을 보면 _Brake Pads_ 이</em> 가 아닌 _이 관련 상품으로 나열됩니다.</p>
+이 두 제품은 이제 _브레이크 패드_와 연결됩니다. 이 관계는 단방향입니다. 즉, _Brake Pads_를 볼 때 새로운 제품 관계가 표시되지만 _Brake Rotors_ 또는 _Brake Fluid_ 제품을 볼 때 _Brake Pads_는 관련 제품으로 나열되지 _않습니다_.
 
 제품 관계가 생성되면 관계를 표시하도록 제품 게시자 위젯을 구성합니다.
 
@@ -101,7 +101,7 @@
 
     ![두 개의 제품 추가](./related-products-up-sells-and-cross-sells/images/04.png)
 
-이 두 제품은 이제 _브레이크 패드_과 연결됩니다. 이 관계는 단방향입니다. 즉, _Brake Pads_ 을 보면 새로운 상품 관계가 보이지만 _Brake Rotors_ 또는 _Brake Fluid_ 상품을 보면 _Brake Pads_ 이</em> 가 아닌 _이 관련 상품으로 나열됩니다.</p>
+이 두 제품은 이제 _브레이크 패드_와 연결됩니다. 이 관계는 단방향입니다. 즉, _Brake Pads_를 볼 때 새로운 제품 관계가 표시되지만 _Brake Rotors_ 또는 _Brake Fluid_ 제품을 볼 때 _Brake Pads_는 관련 제품으로 나열되지 _않습니다_.
 
 제품 관계가 생성되면 관계를 표시하도록 제품 게시자 위젯을 구성합니다.
 

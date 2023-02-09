@@ -1,6 +1,6 @@
 # Liferay 서비스에 배포
 
-다른 서비스와 마찬가지로 사용자 지정 추가 배포에는 구성 또는 파일을 Git 리포지토리의 적절한 위치에 추가하는 작업이 포함됩니다. 그러나 Liferay 서비스 배포는 다른 서비스 배포와 약간 다릅니다.
+다른 서비스와 마찬가지로 사용자 지정 추가 배포에는 구성 또는 파일을 Git 리포지토리의 적절한 사이트에 추가하는 작업이 포함됩니다. 그러나 Liferay 서비스 배포는 다른 서비스 배포와 약간 다릅니다.
 
 Liferay 서비스는 [Liferay 작업 공간](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 을 사용하여 배포 가능한 파일 [](#deploying-themes-portlets-and-osgi-modules), 소스 코드 [](#building-and-deploying-source-code)등을 추가할 수 있는 더 많은 옵션을 제공합니다. 이들은 [CI 빌드](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)에 쉽게 포함되지만 [CLI 도구](../reference/command-line-tool.md)를 사용하는 경우에는 특히 Liferay 서비스에 [추가 단계](#cli-tool-deployment) 가 필요합니다.
 

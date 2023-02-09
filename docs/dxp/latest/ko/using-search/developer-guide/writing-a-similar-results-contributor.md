@@ -17,12 +17,13 @@
 1. [**추가 정보**](#additional-information)
 
 ## 예제 배포
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps to get an example `SimilarResultsContributor` up and running on your Liferay DXP instance:
+그런 다음 다음 단계에 따라 Liferay DXP 인스턴스에서 예시 `SimilarResultsContributor`를 시작하고 실행합니다.
 
-1. Download and unzip [Acme Similar Results Contributor](./liferay-r1s1.zip).
+1. [Acme 유사한 결과 기여자](./liferay-r1s1.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-r1s1.zip -O

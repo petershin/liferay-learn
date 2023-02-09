@@ -52,7 +52,7 @@
 [세션 속성](./segments-editor-ui-reference.md#session-properties)의 경우 [세션 속성 어휘](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)을 사용하여 미리 정의된 값 목록을 구성할 수 있습니다. 이 옵션은 세그먼트 정의 작업을 용이하게 하고 수동 입력 오류를 제거합니다.
 
 ```{note}
-Liferay DXP 7.4 U42+/GA42+부터 지리적 위치별로 세그먼트를 생성할 수 있습니다. 자세한 내용은 [Geolocation별 세분화](./segmentation-by-geolocation.md)를 참조하세요.
+Liferay DXP 7.4 U42+/GA42+부터 지리적 사이트별로 세그먼트를 생성할 수 있습니다. 자세한 내용은 [Geolocation별 세분화](./segmentation-by-geolocation.md)를 참조하세요.
 ```
 
 편집할 때 기준을 충족하는 구성원 수가 조건 영역 상단에 나타납니다. *회원 보기* 을 클릭하면 목록을 볼 수 있습니다. 이렇게 하면 세그먼트를 올바르게 정의하고 있는지 확인할 수 있습니다.

@@ -16,8 +16,6 @@
 
 4. *설치*을 클릭하십시오.
 
-    아래 스크린샷에서 강조 표시된 부분은 Liferay 채팅 공급자 계정 ID로 사용됩니다.  이 부분을 선택하여 복사하고 이를 채팅 제공자 계정 ID로 사용하여</a>
+    아래 스크린샷에서 강조 표시된 부분은 Liferay 채팅 공급자 계정 ID로 사용됩니다. 이 부분을 선택하고 복사하여 채팅 제공자 계정 ID로 사용하여 Liferay 인스턴스와 [자동 라이브 채팅 통합을 활성화](../../enabling-automated-live-chat-systems.md)하십시오.
 
-    활성화하십시오.</p> 
-   
-   ![Liferay 채팅 제공자 계정 ID의 이 부분을 복사하여 채팅 제공자 ID로 사용합니다.](./jivochat/images/03.png)</li> </ol>
+    ![채팅 제공자 ID로 사용하려면 Liferay 채팅 제공자 계정 ID의 이 부분을 복사하십시오.](./jivochat/images/03.png)

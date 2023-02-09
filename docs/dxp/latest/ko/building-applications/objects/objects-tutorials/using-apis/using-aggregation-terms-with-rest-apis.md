@@ -2,39 +2,39 @@
 
 REST API를 사용하여 개체 항목을 쿼리할 때 개체의 필드를 항목 데이터 집계를 위한 패싯 기준으로 사용할 수 있습니다. 이렇게 하려면 `aggregationTerms` 매개변수를 GET 요청에 추가하고 패싯 기준으로 사용할 데이터 필드를 지정하십시오. 이러한 기준에는 사용자 정의 필드, 기본 시스템 필드 또는 관계 필드가 포함될 수 있습니다. 그런 다음 요청 응답은 지정된 데이터 패싯을 단일 `패싯` 블록으로 그룹화합니다.
 
-여기에서는 기본 사용자 지정 개체와 함께</code> ``변수를 사용합니다.</p>
+여기서는 기본 사용자 지정 객체와 함께 `aggregatedTerms` 매개변수를 사용합니다.
 
-<p spaces-before="0">진행하기 전에 <a href="#setting-up-a-liferay-instance">설정</a> 새 Liferay DXP/Portal 7.4 인스턴스 및 <a href="#preparing-the-sample-code">준비</a> 제공된 튜토리얼 코드.</p>
+진행하기 전에 새 Liferay DXP/Portal 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance)하고 제공된 자습서 코드를 [준비](#preparing-the-sample-code)하십시오.
 
-<h2 spaces-before="0">Liferay 인스턴스 설정</h2>
+## Liferay 인스턴스 설정
 
-<p spaces-before="0">```{include} /_snippets/run-liferay-portal.md</p>
+```{include} /_snippets/run-liferay-portal.md
+```
 
-<pre><code>
-Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) a basic Object for this tutorial:
+그런 다음 다음 단계에 따라 이 자습서의 기본 객체를 [만들기](../../creating-and-managing-objects/creating-objects.md)하십시오.
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and enter these values:
+1. *추가* 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Able` |
-   | Plural Label | `Ables` |
-   | Name | `Able` |
+    | 필드 | 가치 |
+    | :--- | :--- |
+    | 라벨 | '가능' |
+    | 복수 레이블 | '에이블스' |
+    | 이름 | '가능' |
 
-1. Select the new *Object* draft, go to the *Fields* tab, and add the following text fields:
+1. 새 *개체* 초안을 선택하고 *필드* 탭으로 이동한 후 다음 텍스트 필드를 추가합니다.
 
-   | Label | Field Name | Type | Required |
-   | :--- | :--- | :--- | :--- |
-   | Name | name | Text | &#10004; |
-   | Description | description | Text |  |
+    | 라벨 | 필드명 | 유형 | 필수 |
+    | :--- | :--- | :--- | :--- |
+    | 이름 | 이름 | 텍스트 | &#10004; |
+    | 설명 | 설명 | 텍스트 | |
 
-1. Go to the *Details* tab and click [*Publish*](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts).
+1. *세부 정보* 탭으로 이동하고 [*게시*](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)를 클릭합니다.
 
-   ```{important}
-   For this tutorial, you must use the above values.
-``</pre>
+    ```{important}
+    이 자습서에서는 위의 값을 사용해야 합니다.
+    ```
 
 게시되면 헤드리스 API를 통해 개체에 액세스할 수 있습니다.
 

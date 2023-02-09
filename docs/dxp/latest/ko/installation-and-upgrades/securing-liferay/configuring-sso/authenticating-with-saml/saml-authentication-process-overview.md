@@ -16,7 +16,7 @@ Liferay가 IdP인 경우 IdP는 SSO URL을 시작했습니다.
 
 * 경로를 `/c/portal/saml/sso`로 지정해야 합니다.
 * 이전에 구성된 SPC(Service Provider Connection)에 대한 식별자인 `entityId` 매개변수를 포함해야 합니다.
-* 인증 성공 시 사용자가 리디렉션되는 URL 인코딩 값을 포함하는 `RelayState` 매개변수를 포함할 수 있습니다. 이 URL은 원하는 SPC의 위치를 가리켜야 합니다( [SAML 2.0 표준 섹션 3.4.3](https://docs.oasis-open.org/security/saml/v2.0/saml-bindings-2.0-os.pdf)에 따라 이 값 *는 길이가 80바이트를 초과해서는 안 됩니다*. SSO가 실행된 후 랜딩 페이지를 지정하는 것이 유용합니다.
+* 인증 성공 시 사용자가 리디렉션되는 URL 인코딩 값을 포함하는 `RelayState` 매개변수를 포함할 수 있습니다. 이 URL은 원하는 SPC의 사이트를 가리켜야 합니다( [SAML 2.0 표준 섹션 3.4.3](https://docs.oasis-open.org/security/saml/v2.0/saml-bindings-2.0-os.pdf)에 따라 이 값 *는 길이가 80바이트를 초과해서는 안 됩니다*. SSO가 실행된 후 랜딩 페이지를 지정하는 것이 유용합니다.
 
 비Liferay IdP(Siteminder, ADFS 등)의 경우 IdP 시작 SSO URL 구성에 대한 공급업체의 설명서를 참조하십시오.
 

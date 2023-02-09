@@ -16,7 +16,7 @@
 컨테이너를 추가한 후에는 그리드 조각을 사용하여 다양한 뷰포트에 대한 콘텐츠 레이아웃을 사용자 지정할 수 있습니다. 자세한 내용은 [그리드 조각](./../../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) 로 반응형 레이아웃 구축을 참조하십시오.
 
 ```{tip}
-요소를 컨테이너나 그리드로 드래그 앤 드롭할 때 Liferay는 배치할 위치를 나타내기 위해 드롭 영역을 강조 표시합니다. 추가한 후에는 브라우저 측면 패널( ![Browser](../../../../images/icon-hierarchy.png) )에서 요소를 드래그 앤 드롭하여 재정렬할 수 있습니다.
+요소를 컨테이너나 그리드로 드래그 앤 드롭할 때 Liferay는 배치할 사이트를 나타내기 위해 드롭 영역을 강조 표시합니다. 추가한 후에는 브라우저 측면 패널( ![Browser](../../../../images/icon-hierarchy.png) )에서 요소를 드래그 앤 드롭하여 재정렬할 수 있습니다.
 ```
 
 ## 컨테이너

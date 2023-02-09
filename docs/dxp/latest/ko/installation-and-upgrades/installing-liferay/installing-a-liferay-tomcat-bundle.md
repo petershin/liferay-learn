@@ -29,7 +29,7 @@ Java JDK 8 또는 11이 필요합니다. JDK를 선택하려면 [호환성 매�
 
 ## 설치하십시요
 
-번들을 호스트의 위치로 추출하십시오. 이 위치를 [Liferay Home](../reference/liferay-home.md)이라고 합니다.
+번들을 호스트의 사이트로 추출하십시오. 이 사이트를 [Liferay Home](../reference/liferay-home.md)이라고 합니다.
 
 축하합니다! Liferay를 설치했습니다. 이를 위해 데이터베이스를 구성할 때입니다.
 

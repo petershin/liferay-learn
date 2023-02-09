@@ -73,7 +73,7 @@ Liferay에는 사이트의 모양을 사용자 지정하는 다양한 방법이 
 
 ![이제 배경색이 파란색인지 확인합니다.](./changing-your-sites-appearance/images/04.png)
 
-## 무엇 향후 계획
+## 다음
 
 또한 [개의 스타일 책](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 을 사용하여 디자인 요소를 추가로 사용자 지정하고 [마스터 페이지 템플릿](../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) 을 사용하여 콘텐츠 페이지의 머리글과 바닥글을 디자인할 수 있습니다. 사이트의 모양과 느낌을 사용자 정의하는 전체 개요는 [사이트 모양](../site-building/site-appearance/site-appearance.md) 을 참조하십시오.
 

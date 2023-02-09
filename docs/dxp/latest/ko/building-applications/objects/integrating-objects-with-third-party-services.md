@@ -17,6 +17,5 @@ integrating-objects-with-third-party-services/using-google-sheets-with-objects.m
 
 :::{grid-item-card} 개체와 함께 Google 스프레드시트 사용
 :link: ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
-:::  
-:
 :::
+::::

@@ -72,17 +72,17 @@ Liferay Cloud에서 배포를 시작하기 전에 올바른 환경과 서비스�
 
 모든 환경 초대를 수락한 후 누락된 환경이 있으면 Liferay 지원 팀에 문의하십시오.
 
-### 환경 위치 확인
+### 환경 사이트 확인
 
-각 환경의 위치가 팀에서 요청한 위치와 일치하는지 확인합니다.
+각 환경의 사이트가 팀에서 요청한 사이트와 일치하는지 확인합니다.
 
-모든 환경 위치는 Liferay Cloud Console [홈 페이지](https://console.liferay.cloud/projects)에 나열되어 있습니다.
+모든 환경 사이트는 Liferay Cloud Console [홈 페이지](https://console.liferay.cloud/projects)에 나열되어 있습니다.
 
-*개요* 페이지 또는 *설정* 페이지로 이동하여 환경의 위치를 볼 수도 있습니다.
+*개요* 페이지 또는 *설정* 페이지로 이동하여 환경의 사이트를 볼 수도 있습니다.
 
-![그림 4: 개요 페이지에서 환경의 위치를 봅니다.](./initial-setup-overview/images/04.png)
+![그림 4: 개요 페이지에서 환경의 사이트를 봅니다.](./initial-setup-overview/images/04.png)
 
-환경 위치가 팀에서 요청한 위치와 일치하지 않는 경우 [Liferay 지원팀](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)에 문의하십시오.
+환경 사이트가 팀에서 요청한 사이트와 일치하지 않는 경우 [Liferay 지원팀](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)에 문의하십시오.
 
 ### 클라우드 스택 서비스 확인
 

@@ -7,12 +7,13 @@ MVC 작업 명령을 사용하는 예제 포틀릿을 배포한 다음 검사합
 ## 포틀릿의 MVC 작업 명령 호출
 
 예제 포틀릿의 두 가지 작업은 호출되는 MVC 작업 명령 클래스 및 메서드를 나타내는 메시지를 기록합니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to deploy the portlet and trigger its actions:
+그런 다음 다음 단계에 따라 포틀릿을 배포하고 작업을 트리거합니다.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-l6y9.zip -O
@@ -132,11 +133,11 @@ MVC Action Command 클래스는 [`MVCActionCommand`](https://github.com/liferay/
 )
 ```
 
-`DoL6Y9BakerMVCActionCommand` 은 `DoL6Y9AbleMVCActionCommand` 과 유사하지만 이름에 `Baker` 또는 `baker` 대신 `Able` 또는 ``이 포함되어 있습니다.
+`DoL6Y9BakerMVCActionCommand`는 이름이 `Able` 또는 `able` 대신 `Baker` 또는 `baker`를 포함한다는 점을 제외하면 `DoL6Y9AbleMVCActionCommand`와 유사합니다.
 
 다음으로 포틀릿의 JSP가 UI 구성 요소 작업을 명령에 매핑하는 방법을 확인합니다.
 
-## 무엇 향후 계획
+## 다음
 
 이제 MVC 작업 명령을 사용하는 방법을 알았으므로 [MVC 렌더링 명령](./mvc-render-command.md) 및 [MVC 리소스 명령](./mvc-resource-command.md)을 확인하고 싶을 수 있습니다. 앱의 콘텐츠 현지화를 시작하려면 [현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)을 참조하십시오. 모델, 지속성 및 서비스 계층 개발을 시작할 준비가 되었으면 [Service Builder](../../data-frameworks/service-builder.md)을 방문하십시오.
 

@@ -80,7 +80,7 @@ Service Builder는 `src/main/resources/sql` 폴더에서 생성하는 다음 SQL
 * `tables.sql`
 
 ```{note}
-생성된 SQL 스크립트 폴더 위치는 구성 가능합니다. 예를 들어 Gradle을 사용하는 경우 아래 예에서 `databaseNameMaxLength` 설정이 적용되는 것과 동일한 방식으로 프로젝트의 Gradle `build.gradle` 파일에서 `sqlDir` 설정을 정의할 수 있습니다. 
+생성된 SQL 스크립트 폴더 사이트는 구성 가능합니다. 예를 들어 Gradle을 사용하는 경우 아래 예에서 `databaseNameMaxLength` 설정이 적용되는 것과 동일한 방식으로 프로젝트의 Gradle `build.gradle` 파일에서 `sqlDir` 설정을 정의할 수 있습니다. 
 ```
 
 Service Builder는 SQL 스크립트를 사용하여 service.xml `이 정의하는 모든 엔터티에 대한 데이터베이스 테이블을 생성`. 데이터베이스 테이블 이름에는 생성될 때 앞에 추가된 네임스페이스가 있습니다. 예제 네임스페이스 값이 `GB`이므로 엔티티에 대해 생성된 데이터베이스 테이블 이름은 접두어로 `GB__` 으로 시작합니다. 각 Service Builder 프로젝트의 네임스페이스는 고유해야 합니다. 별도의 플러그인은 별도의 네임스페이스를 사용해야 하며 Liferay 엔터티(예: `사용자` 또는 `그룹`)에서 이미 사용하는 네임스페이스를 사용해서는 안 됩니다. 이미 사용 중인 네임스페이스를 보려면 Liferay 데이터베이스의 테이블 이름을 확인하십시오.

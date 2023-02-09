@@ -8,9 +8,7 @@ Liferay의 Solr 지원은 더 이상 사용되지 않습니다. [Elasticsearch](
 
 Elasticsearch 관련 API 및 매핑은 Liferay의 검색 기능에서 활용되고 있습니다. 이러한 기능 중 일부는 Solr에 포함되어 있지 않기 때문에 Solr를 Liferay의 검색 엔진으로 사용할 때 검색 결과의 품질이 낮을 것으로 예상됩니다.
 
-예를 들어, Liferay의 언어 인식 정렬 동작은 Elasticsearch</a>의ICU 분석 플러그인 때문에 존재하는 대조 규칙에만 의존합니다. Solr에서 검색할 때 특히 필드 값에 분음 기호가 포함된 경우 최적이 아닌 일부 정렬 동작이 예상됩니다.</p> 
-
-
+예를 들어 Liferay의 언어 인식 정렬 동작은 [Elasticsearch의 ICU 분석 플러그인](https://www.elastic.co/guide/en/elasticsearch/plugins/7.x/ 때문에 존재하는 조합 규칙에만 의존합니다. analysis-icu-collation-keyword-field.html). Solr에서 검색할 때 특히 필드 값에 분음 기호가 포함된 경우 최적이 아닌 일부 정렬 동작이 예상됩니다.
 
 ## 최종 사용자 기능 제한
 
@@ -29,8 +27,6 @@ Liferay의 Solr 통합에는 제한이 있습니다. 다음 기능을 사용하�
    * 경험 검색
    * 순위 학습
    * 모니터링
-
-
 
 ## 개발자 기능 제한
 
@@ -63,8 +59,6 @@ Liferay의 Solr 통합에는 제한이 있습니다. 다음 기능을 사용하�
         * `MultisearchSearchRequest`
     * `SuggestSearchRequest`
   * `com.liferay.portal.search.engine.adapter.snapshot.*`
-
-
 
 ```{note}
 Liferay Commerce에는 Elasticsearch 커넥터에서만 사용할 수 있는 'TermsSetFilter' 구현이 필요합니다.

@@ -5,16 +5,17 @@ Liferay Forms 필드는 [데이터 공급자](../data-providers/data-providers-o
 REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확장점을 사용하여 고유한 확장 지점을 만드십시오.
 
 ```{note}
-여기에서 시연한 예제 데이터 공급자는 [GeoDataSource™ 위치 검색 웹 서비스](https://www.geodatasource.com/web-service/location-search)에서 XML 데이터를 사용합니다. Liferay 직원의 API 키는 이 샘플에 하드 코딩되어 있습니다. 샘플을 남용하지 마십시오. 프로덕션 환경에서는 절대 사용하지 마십시오.
+여기에서 시연한 예제 데이터 공급자는 [GeoDataSource™ 사이트 검색 웹 서비스](https://www.geodatasource.com/web-service/location-search)에서 XML 데이터를 사용합니다. Liferay 직원의 API 키는 이 샘플에 하드 코딩되어 있습니다. 샘플을 남용하지 마십시오. 프로덕션 환경에서는 절대 사용하지 마십시오.
 ```
 
 ## 사용자 지정 데이터 공급자 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the Acme XML Data Provider.
+1. Acme XML 데이터 공급자를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-b4d8.zip -O
@@ -54,7 +55,7 @@ Then, follow these steps:
 
    1. 구성:
       - **이름:** Cites Near Diamond Bar, CA(미국)
-      - **설명:** GeoDataSource 위치 검색--Liferay 본사에서 20km 이내의 도시를 가져옵니다.
+      - **설명:** GeoDataSource 사이트 검색--Liferay 본사에서 20km 이내의 도시를 가져옵니다.
       - **출력**
          - **라벨:** 도시
          - **경로:** 도시
@@ -284,7 +285,7 @@ import com.liferay.portal.kernel.util.Http;
 
 1. 데이터 공급자의 인스턴스를 추가합니다.
       - **이름: Pernambuco(브라질), Recife 근처의** 인용
-      - **설명:** GeoDataSource 위치 검색--Liferay의 브라질 사무소에서 20km 이내의 도시를 가져옵니다.
+      - **설명:** GeoDataSource 사이트 검색--Liferay의 브라질 사무소에서 20km 이내의 도시를 가져옵니다.
       - **URL:**
         ```
         https://api.geodatasource.com/cities?key=LAOOBDZVQ5Z9HHYC4OCXHTGZGQLENMNA&format=xml&lat=-8.0342896&lng=-34.9239708

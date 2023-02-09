@@ -5,34 +5,35 @@
 [개체 생성 및 게시](../../objects/creating-and-managing-objects/creating-objects.md)후에 헤드리스 REST API가 자동으로 생성됩니다. 여기에서 이러한 끝점을 통합하여 간단한 CRUD(생성, 읽기, 업데이트 및 삭제) 원격 애플리케이션을 만드는 방법을 볼 수 있습니다.
 
 ## Liferay DXP 설정
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps to add the `/o/c/*` URL pattern to the *Default Portal CORS Configuration*:
+그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 *기본 포털 CORS 구성*에 추가합니다.
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Security Tools*.
+1. *전역 메뉴*(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 *제어판* 탭을 클릭한 다음 *시스템 설정으로 이동합니다. * ~ *보안 도구*.
 
-1. Go to the *Portal Cross-Origin Resource Sharing (CORS)* tab and click *Default Portal CORS Configuration*.
+1. *Portal CORS(Cross-Origin Resource Sharing)* 탭으로 이동하고 *Default Portal CORS Configuration*을 클릭합니다.
 
-1. Add a *URL Pattern* with the `/o/c/*` value and click *Save*. This enables CORS for all Object APIs.
+1. `/o/c/*` 값으로 *URL 패턴*을 추가하고 *저장*을 클릭합니다. 이렇게 하면 모든 개체 API에 대해 CORS가 활성화됩니다.
 
-   ![Add the /o/c/* URL Pattern for Object APIs.](./remote-applications-with-headless-apis/images/01.png)
+    ![객체 API에 대한 /o/c/* URL 패턴을 추가합니다.](./remote-applications-with-headless-apis/images/01.png)
 
-## Creating an Object for the CRUD Application
+## CRUD 애플리케이션을 위한 객체 생성
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
+1. *Global Menu*(![Global Menu](../../../images/icon-applications-menu.png))를 열고 *Control Panel* 탭을 클릭한 다음 *Objects*로 이동합니다. .
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) and enter these values:
+1. *추가* 버튼(![추가 버튼](../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | J4X7-Object |
-   | Plural Label | J4X7-Objects |
-   | Name | J4X7Object |
+    | 필드 | 가치 |
+    | :--- | :--- |
+    | 라벨 | J4X7-객체 |
+    | 복수 라벨 | J4X7-객체 |
+    | 이름 | J4X7객체 |
 
-   ```{note}
-   The provided React application uses these values.
-   ```
+    ```{note}
+    제공된 React 애플리케이션은 이러한 값을 사용합니다.
+    ```
 
 1. 새 *개체* 초안을 선택하고 *필드* 탭을 클릭한 다음 다음 *필드*를 추가합니다.
 

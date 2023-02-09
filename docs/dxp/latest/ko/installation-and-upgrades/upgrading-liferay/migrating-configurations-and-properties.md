@@ -21,11 +21,7 @@
 
 1. 새 설치의 `[Liferay Home]/data` 폴더를 백업의 `[Liferay Home]/data` 폴더로 교체합니다.
 
-1. [파일 저장소(문서 라이브러리)](../../../system-administration/file-storage.md) 를 백업에서
-
-새 설치로 복사하거나 [`</a>` 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 을 통해 사용하도록 새 설치를 구성하여 설정합니다.</p></li> </ol> 
-   
-   
+1. [백업](../maintaining-a-liferay-installation/에서 복사하여 [파일 저장소(문서 라이브러리)](../../system-administration/file-storage.md)를 설정합니다. backup-up.md)를 새 설치로 저장하거나 [`.config` 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)을 통해 새 설치를 사용하도록 구성 ).
 
 ## 데이터베이스 업그레이드를 위한 설정 업데이트
 
@@ -36,14 +32,9 @@ DXP 및 일부 Marketplace 앱의 업그레이드 프로세스는 포털 속성 
 * [데이터베이스 드라이버](#database-drivers)
 * 문서 라이브러리 저장소 구현 이름( [파일 저장소 업데이트](./reference/file-store-updates.md#updating-the-store-implementation-class-name)참조)
 
-
-
 ```{important}
 필요한 설정 업데이트에 대한 Marketplace 앱 및 사용자 정의 코드를 확인하십시오.
 ```
-
-
-
 
 ### 데이터베이스 드라이버
 
@@ -51,25 +42,17 @@ DXP 및 일부 Marketplace 앱의 업그레이드 프로세스는 포털 속성 
 
 MySQL 예시:
 
-
-
 ```properties
 jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
 ```
 
-
 더 많은 드라이버 예제는 [데이터베이스 템플릿](../reference/database-templates.md) 을 참조하십시오.
 
-
-
 ## 포털 속성 마이그레이션
-
-
 
 ```{important}
 `로케일` [포털 속성](../../../installation-and-upgrades/reference/portal-properties.md)을 재정의한 경우 업그레이드하기 전에 새 설치에서 재정의합니다. 이렇게 하면 모든 로케일에 대한 데이터 업그레이드가 보장됩니다.
 ```
-
 
 여기에서 설명하는 속성은 데이터베이스 업그레이드 후 업데이트할 수 있습니다. 속성 마이그레이션에는 다음 작업이 포함됩니다.
 
@@ -77,8 +60,6 @@ jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
 * [Blade CLI](../../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md) 을 사용하여 속성 변경 보고
 * 특성을 OSGi 구성으로 변환
 * 특수 속성 마이그레이션 고려 사항
-
-
 
 ### 블레이드 CLI를 사용하여 호환되지 않는 속성 보고
 
@@ -93,16 +74,11 @@ jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
 
 `블레이드 upgradeProps` 명령 형식:
 
-
-
 ```bash
 blade upgradeProps -p {old_liferay_home_path}/portal-ext.properties -d {new_liferay_home_path}
 ```
 
-
 다음은 `blade upgradeProps` 명령을 실행한 결과의 예입니다.
-
-
 
 ```
 ...
@@ -121,41 +97,27 @@ web.server.protocol
 ...
 ```
 
-
-
-
 ### 속성을 OSGi 구성으로 변환
 
 모듈화된 기능의 속성이 변경되었으며 이제 [OSGi 구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) (OSGi 구성 관리자)에 배포됩니다.
 
 예를 들어 6.2에서 단순 파일 저장소는 이 포털 속성을 사용하여 저장소 루트 디렉터리를 지정했습니다.
 
-
-
 ```properties
 dl.store.file.system.root.dir=${liferay.home}/data/document_library
 ```
 
-
 이제 저장소는 다음과 같은 설정으로 루트 디렉토리를 지정하는 `com.liferay.portal.store.file.system.configuration.FileSystemStoreConfiguration.config` 이라는 `.config` 파일에 구성됩니다.
-
-
 
 ```properties
 rootDir="{document_library_path}"
 ```
 
-
 `.config` 파일을 `[Liferay Home]/osgi/configs`폴더에 넣습니다.
-
-
 
 ```{tip}
 제어판의 *시스템 설정* 화면(*구성* 아래)은 OSGi 구성 관리 값을 관리합니다. 이 화면은 ``.config`` 파일을 만드는 가장 정확한 방법입니다. 구성하려는 기능을 구성하는 화면을 찾아 *저장*을 클릭한 다음 옵션 버튼을 사용하여 [화면의 구성 내보내기](../../../system-administration/configuring-liferay/configuration- files-and-factories/using-configuration-files.md)를 `.config` 파일로 복사합니다.
 ```
-
-
-
 
 ### 특수 속성 마이그레이션 고려 사항
 
@@ -170,22 +132,14 @@ rootDir="{document_library_path}"
 1. [7.4](./reference/default-setting-changes-in-7-4.md), [7.3](./reference/default-setting-changes-in-7-3.md)및 [7.2](./reference/default-setting-changes-in-7-2.md)에서 기본 포털 속성 변경 사항을 검사합니다.
 
 1. Liferay의 이미지 스프라이트 프레임워크는 7.2부터 사용되지 않으며 기본적으로 비활성화되어 있습니다. 프레임워크에는 이미지 스프라이트용 스캔 플러그인이 필요합니다. 프레임워크를 사용하지 않으면 이미지 스프라이트를 스캔할 필요가 없습니다. 프레임워크를 직접 사용하는 경우 [`portal-ext.properties`](../reference/portal-properties.md) 파일에서 다음 설정으로 기본 `sprite.enabled` 포털 속성(7.2 이후) 값을 재정의하여 활성화합니다. 
-   
-   
 
     ```properties
     sprite.enabled=true
     ```
 
-
-
-
    ```{note}
    원하는 프레임워크를 사용하여 이미지 스프라이트를 빌드하고 플러그인에 배포할 수 있습니다.
    ```
-
-
-
 
 ## 다음 단계
 

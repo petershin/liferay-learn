@@ -47,6 +47,6 @@ Elasticsearch에 대한 커넥터는 Liferay와 함께 번들로 제공됩니다
 
 프로덕션에서는 Liferay와 Elasticsearch의 통신을 보호해야 합니다. [Elasticsearch 보안](./securing-elasticsearch.md) 에서는 인증 및 암호화를 구성하는 방법을 설명하고 Liferay Enterprise Search Monitoring에 필요한 PEM 인증서를 사용하는 방법을 보여줍니다.
 
-## 무엇 향후 계획
+## 다음
 
 [Elasticsearch 설치](./installing-elasticsearch.md) 에서는 각 수동 설치 및 구성 단계를 설명합니다. 이러한 단계는 Docker에서 실행하는 경우에도 이해하는 데 도움이 됩니다. Docker에서 Elasticsearch 및 Liferay를 실행하는 것으로 시작하려면 [연습: Docker를 사용하여 Liferay 및 Elasticsearch 실행](./exercise-run-liferay-and-elasticsearch-using-docker.md)을 참조하십시오.

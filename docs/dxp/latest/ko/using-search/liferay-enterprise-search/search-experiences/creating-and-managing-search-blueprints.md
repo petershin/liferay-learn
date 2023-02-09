@@ -76,7 +76,7 @@ CRUD 옵션 외에도 검색 청사진은 [가져오기 및 내보내기](#impor
 * `com.liferay.knowledge.base.model.KBArticle`
 * `com. liferay.wiki.model.WikiPage`
 
-지리적 위치 기능을 제공하는 요소(예: Boost Proximity)와 같은 기타 요소에는 추가 설정이 필요합니다. 자세한 내용은 [요소 참조](./search-blueprints-elements-reference.md)를 참조하세요.
+지리적 사이트 기능을 제공하는 요소(예: Boost Proximity)와 같은 기타 요소에는 추가 설정이 필요합니다. 자세한 내용은 [요소 참조](./search-blueprints-elements-reference.md)를 참조하세요.
 ```
 
 요소를 추가한 후 청사진을 저장해야 합니다.
@@ -200,32 +200,28 @@ CRUD 옵션 외에도 검색 청사진은 [가져오기 및 내보내기](#impor
 
 예를 들어,
 
-1. _관리_이라는 범주</a> 을 가진 새로운
-
-어휘를 추가합니다.</p></li> 
+1. _administrative_ 라는 새 [카테고리가 있는 어휘](../../../content-authoring-and-management/tags-and-categories.md)를 추가합니다. 
    
-   1 두 개의 새로운 [웹 콘텐츠 기사 추가](../../../content-authoring-and-management/web-content/web-content-articles.md); 둘 다 제목 필드에 _테스트_ 이 있는지 확인하십시오. 그 중 하나를 생성한 범주에 연결합니다.
+1. 두 개의 새로운 [웹 콘텐츠 기사 추가](../../../content-authoring-and-management/web-content/web-content-articles.md); 둘 다 제목 필드에 _테스트_ 이 있는지 확인하십시오. 그 중 하나를 생성한 범주에 연결합니다.
 
-1 새 청사진을 만들고 Conditional Element _Hide Contents in a Category for Guest Users_을 추가합니다. 생성한 카테고리에 대한 자산 카테고리 ID가 필요하지만 미리보기 창에서 찾을 수 있습니다.
+1. 새 청사진을 만들고 Conditional Element _Hide Contents in a Category for Guest Users_을 추가합니다. 생성한 카테고리에 대한 자산 카테고리 ID가 필요하지만 미리보기 창에서 찾을 수 있습니다.
 
-1 미리보기에서 _관리_ 을 검색합니다. 범주가 있는 웹 콘텐츠 문서의 문서를 확장한 다음 `assetCategoryId` (예: 43013)을 찾습니다.
+1. 미리보기에서 _관리_ 을 검색합니다. 범주가 있는 웹 콘텐츠 문서의 문서를 확장한 다음 `assetCategoryId` (예: 43013)을 찾습니다.
 
-1 요소 구성에서 ID를 사용하십시오.
+1. 요소 구성에서 ID를 사용하십시오.
 
-1 미리보기 사이드바의 속성 모달을 열고 다음을 입력합니다.
+1. 미리보기 사이드바의 속성 모달을 열고 다음을 입력합니다.
   
   키: `user.is_signed_in`
   
   값: `거짓`
 
-1 _Done_ 을 클릭한 다음 _test_을 검색하십시오.</ol> 
+1. _Done_ 을 클릭한 다음 _test_을 검색하십시오.</ol> 
 
 이제 분류되지 않은 웹 콘텐츠 기사만 반환됩니다. 다른 하나는 검색 사용자가 게스트인 것처럼 검색을 작동하게 하는 검색 컨텍스트 속성 때문에 숨겨졌습니다.
 
 이 예제에서는 컨텍스트 변수 `user.is_signed_in`을 읽는 요소를 사용합니다. 값을 수동으로 설정하여 Blueprint가 특정 동작을 보여줄 수 있도록 기존 값을 재정의합니다. 값이 검색 컨텍스트에 이미 존재하므로 수동으로 설정하는 것은 선택 사항입니다. 다른 요소에는 일반 검색 요청 컨텍스트 내에 존재하지 않는 필수 맞춤 매개변수가 있습니다. 미리보기 사이드바에서 블루프린트를 테스트하든 검색 페이지에서 사용할 블루프린트를 설정하든 요소/블루프린트가 제대로 작동하려면 검색 컨텍스트에 수동으로 전달해야 합니다.
 
-
-
-## 무엇 향후 계획
+## 다음
 
 - [검색 페이지에서 검색 청사진 사용](using-a-search-blueprint-on-a-search-page.md)

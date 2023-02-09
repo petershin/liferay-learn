@@ -38,9 +38,9 @@ OSGi 서비스를 재정의하려면 다음 단계를 따르세요.
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the example modules.
+1. 예제 모듈을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-s1j6.zip -O
@@ -81,16 +81,13 @@ Then, follow these steps:
    true
    ```
 
-제공된 `api` 은 제공된 `포틀릿`</code>`의해 구현되는 OSGi 서비스 유형을 정의합니다. 이제 모든 것이 배포되었으므로 재정의 작동 방식을 실험할 수 있습니다.</p>
+제공된 `api`는 제공된 `portlet`에서 사용되는 `able.impl` 모듈에 의해 구현되는 OSGi 서비스 유형을 정의합니다. 이제 모든 것이 배포되었으므로 재정의 작동 방식을 실험할 수 있습니다.
 
-<h2 spaces-before="0">OSGi 서비스 및 참조 세부 정보 수집</h2>
+## OSGi 서비스 및 참조 정보 수집
 
-<p spaces-before="0">재정의하려는 서비스를 식별했으면 <code>scr:info` Gogo Shell 명령을 사용하여 필수 서비스 및 참조 세부 정보를 수집합니다. 이 예에서는</code> `를 재정의하려고 합니다.</p>
+재정의하려는 서비스를 식별했으면 `scr:info` Gogo Shell 명령을 사용하여 필수 서비스 및 참조 세부 정보를 수집합니다. 이 예에서는 `able.impl` 서비스를 재정의하려고 합니다.
 
-<p spaces-before="0">서비스 세부 정보를 수집하려면 다음 명령을 실행합니다.</p>
-
-<pre><code class="shell">scr:info com.acme.s1j6.able.internal.S1J6AbleImpl
-`</pre>
+서비스 세부 정보를 수집하려면 다음 명령을 실행합니다.
 
 ```shell
 Component Description: com.acme.s1j6.able.internal.S1J6AbleImpl

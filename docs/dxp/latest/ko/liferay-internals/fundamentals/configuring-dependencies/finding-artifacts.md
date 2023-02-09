@@ -23,7 +23,7 @@ Bundle-Version: [version]
 Liferay DXP 수정 팩의 아티팩트는 Liferay DXP 설치 아티팩트를 재정의합니다. 수정팩의 `binaries` 폴더에는 하위 폴더의 아티팩트가 포함되어 있습니다. 프로젝트에 수정팩에서 제공하는 아티팩트가 필요한 경우 종속성을 선언할 때 수정팩에서 버전을 선언하십시오.
 ```
 
-핵심 Liferay 아티팩트를 찾을 수 있는 위치는 다음과 같습니다.
+핵심 Liferay 아티팩트를 찾을 수 있는 사이트는 다음과 같습니다.
 
 | 파일                     | 그룹 ID                | 인공물 식별                      | 버전                     | 기원                                                |
 |:---------------------- |:-------------------- |:--------------------------- |:---------------------- |:------------------------------------------------- |
@@ -75,11 +75,11 @@ App Manager는 배포된 모듈에 대한 최상의 정보를 제공합니다.
 
 1. 표시 이름(예: `Apache Aries CDI`) 또는 키워드로 모듈을 검색합니다. 결과에서 모듈 번호를 기록해 둡니다. 다음 단계에서 사용할 수 있습니다. 아래 예는 Liferay 알림 API 모듈 번호 `47`을 보여줍니다.
 
-    ![이 Gogo 명령의 결과는 모듈 번호가 <code>47</code>임을 보여줍니다.](./finding-artifacts/images/04.png)
+    ![이 Gogo 명령의 결과는 모듈의 번호가 `47`임을 보여줍니다.](./finding-artifacts/images/04.png)
 
 1. 매니페스트 헤더를 표시하려면 모듈 번호와 함께 `headers` 명령을 사용하십시오. `Bundle-Vendor` 또는 `Implementation-Vendor` 값에 유의하십시오. 이후 단계에서 이를 아티팩트 그룹과 일치시킵니다.
 
-    ![<code>headers</code> 명령을 실행한 결과에는 모듈의 공급업체 이름과 번들 버전이 표시됩니다.](./finding-artifacts/images/05.png)
+    ![`headers` 명령을 실행한 결과에는 모듈의 공급업체 이름과 번들 버전이 표시됩니다.](./finding-artifacts/images/05.png)
 
 1. [Maven Central](https://search.maven.org/) 또는 [MVNRepository](https://mvnrepository.com)에서 아티팩트 ID로 모듈을 검색합니다.
 
@@ -127,7 +127,7 @@ Javadoc에서 Liferay 앱 모듈의 속성을 찾으려면 다음 단계를 따�
 필요한 Liferay 아티팩트의 버전을 결정하려면 위의 지침을 따르십시오.
 ```
 
-## 무엇 향후 계획
+## 다음
 
 아티팩트의 속성을 알았으므로 이제 아티팩트에 대한 종속성을 구성할 수 있습니다. 자세한 내용은 [종속성 지정](./specifying-dependencies.md) 을 참조하십시오.
 

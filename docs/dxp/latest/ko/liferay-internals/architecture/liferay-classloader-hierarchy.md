@@ -47,7 +47,7 @@ DXP의 클래스 로더에는 계층 구조가 있으며 다음 컨텍스트에�
 
 ## 웹 애플리케이션 클래스로딩 관점
 
-애플리케이션 서버는 Liferay DXP와 같은 웹 애플리케이션이 클래스와 리소스를 검색하는 위치와 순서를 지정합니다. [Apache Tomcat](https://tomcat.apache.org/tomcat-9.0-doc/class-loader-howto.html) 과 같은 애플리케이션 서버는 다음과 같은 기본 검색 순서를 적용합니다.
+애플리케이션 서버는 Liferay DXP와 같은 웹 애플리케이션이 클래스와 리소스를 검색하는 사이트와 순서를 지정합니다. [Apache Tomcat](https://tomcat.apache.org/tomcat-9.0-doc/class-loader-howto.html) 과 같은 애플리케이션 서버는 다음과 같은 기본 검색 순서를 적용합니다.
 
 1. 부트스트랩 클래스
 1. 웹앱의 `WEB-INF/classes`

@@ -3,12 +3,13 @@
 Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메시지 보드 등)은 즉시 자산을 사용할 수 있습니다. [자산 게시자 위젯](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) 을 사용하여 자산을 게시하거나 [자산 라이브러리](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)를 생성할 수도 있습니다. [Service Builder](../service-builder.md)의 도움으로 맞춤형 애플리케이션을 자산화할 수 있습니다. 자세한 방법은 아래 샘플 프로젝트를 참조하십시오.
 
 ## 샘플 코드 받기
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Enabling Assets](./liferay-s5e6.zip).
+1. [Enabling Assets](./liferay-s5e6.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O

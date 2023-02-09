@@ -142,16 +142,17 @@ The `build.gradle` file specifies the module's dependencies.
 ```
 
 이는 API 모듈과 동일한 구조(빌드 스크립트, `bnd.bnd` 구성 파일 및 구현 클래스)를 가집니다. 유일한 차이점은 파일 내용입니다. `bnd.bnd` 파일은 약간 다릅니다.
+
 ```{literalinclude} ./osgi-and-modularity/resources/liferay-r9u2.zip/r9u2-impl/bnd.bnd
 ```
 
-The bundle name, symbolic name, and version are all set similarly to the API. 
+번들 이름, 기호 이름 및 버전은 모두 API와 유사하게 설정됩니다.
 
-Finally, there's no `Export-Package` declaration. A client (which is the project's third module) just wants to use the API: it doesn't care how its implementation works as long as the API returns what it's supposed to return. The client, then, only needs to declare a dependency on the API; the service registry injects the appropriate implementation at run time. 
+마지막으로 `Export-Package` 선언이 없습니다. 클라이언트(프로젝트의 세 번째 모듈)는 API를 사용하기를 원할 뿐입니다. API가 반환해야 하는 것을 반환하는 한 클라이언트는 구현이 어떻게 작동하는지 신경 쓰지 않습니다. 그러면 클라이언트는 API에 대한 종속성을 선언하기만 하면 됩니다. 서비스 레지스트리는 런타임에 적절한 구현을 삽입합니다.
 
-Pretty cool, eh? 
+아주 멋지죠?
 
-All that's left, then, is the class that provides the implementation:
+이제 남은 것은 구현을 제공하는 클래스뿐입니다.
 
 ```{literalinclude} ./osgi-and-modularity/resources/liferay-r9u2.zip/r9u2-impl/src/main/java/com/acme/r9u2/internal/R9U2Greeter.java
 :language: java
@@ -191,12 +192,13 @@ All that's left, then, is the class that provides the implementation:
 ```
 
 다시 말하지만 빌드 스크립트, `bnd.bnd` 파일 및 Java 클래스가 있습니다. 이 모듈의 `bnd.bnd` 파일은 공급자의 파일과 거의 동일합니다.
+
 ```{literalinclude} ./osgi-and-modularity/resources/liferay-r9u2.zip/r9u2-osgi-commands/bnd.bnd
 ```
 
-There's nothing new here: you declare the same things you declared for the provider. 
+여기에는 새로운 것이 없습니다. 공급자에 대해 선언한 것과 동일한 항목을 선언합니다.
 
-The client module depends on the API module and the `release.portal.api` artifact. Here's the `r9u2-osgi-commands` module's `build.gradle` file:
+클라이언트 모듈은 API 모듈과 `release.portal.api` 아티팩트에 의존합니다. 다음은 `r9u2-osgi-commands` 모듈의 `build.gradle` 파일입니다.
 
 ```{literalinclude} ./osgi-and-modularity/resources/liferay-r9u2.zip/r9u2-osgi-commands/build.gradle
 :language: groovy

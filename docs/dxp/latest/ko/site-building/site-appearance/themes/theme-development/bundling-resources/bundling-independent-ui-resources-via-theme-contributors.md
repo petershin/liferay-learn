@@ -9,12 +9,13 @@ Liferay Portal/DXP의 많은 메뉴는 [Site Menu](../../../../../getting-starte
 사이트 메뉴와 같은 표준 UI 구성 요소를 편집하거나 스타일을 지정하려면 테마 기여자와 함께 변경 사항을 배포해야 합니다. 테마 기여자를 사용하여 새 UI 구성요소 또는 스타일을 추가할 수도 있습니다.
 
 ## 간단한 테마 기여자 배포
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps to deploy the example theme contributor:
+그런 다음 다음 단계에 따라 예제 테마 기여자를 배포합니다.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/site-building/site-appearance/themes/theme-development/bundling-resources/bundling-independent-ui-resources-via-theme-contributors/liferay-w9m6.zip -O
@@ -59,24 +60,25 @@ Then, follow these steps to deploy the example theme contributor:
 ### 테마 기여자 속성 검사
 
 테마 제공자의 프로젝트에는 구성을 위해 필요한 속성이 `bnd.bnd` 파일에 추가되어 있습니다.
+
 ```{literalinclude} ./bundling-independent-ui-resources-via-theme-contributors/resources/liferay-w9m6.zip/w9m6-web/bnd.bnd
 ```
 
-A theme contributor's `bnd.bnd` file must have these properties for it to function:
+테마 제공자의 `bnd.bnd` 파일이 작동하려면 다음과 같은 속성이 있어야 합니다.
 
-`Web-ContextPath`: sets the context for your theme contributor's resources. In the example module, the context path is `w9m6-web`.
+`Web-ContextPath`: 테마 기여자의 리소스에 대한 컨텍스트를 설정합니다. 예제 모듈에서 컨텍스트 경로는 `w9m6-web`입니다.
 
-`Liferay-Theme-Contributor-Type`: indicates that your module adds a theme contributor. This property can be any arbitrary value. The example module uses the value `CSS`.
+`Liferay-Theme-Contributor-Type`: 모듈이 테마 기여자를 추가함을 나타냅니다. 이 속성은 임의의 값이 될 수 있습니다. 예제 모듈은 `CSS` 값을 사용합니다.
 
-`Liferay-Theme-Contributor-Weight`: configures the weight of your theme contributor's styles versus other contributors. Lower values are given higher priority to override styles from other contributors. The example module uses a weight of `1` to guarantee that the style has the highest priority of any theme contributor.
+`Liferay-Theme-Contributor-Weight`: 다른 기여자와 비교하여 테마 기여자의 스타일 가중치를 구성합니다. 다른 기여자의 스타일을 재정의하기 위해 값이 낮을수록 우선 순위가 높아집니다. 예제 모듈은 '1'의 가중치를 사용하여 스타일이 테마 기여자 중 가장 높은 우선순위를 갖도록 보장합니다.
 
-Once the `bnd.bnd` file has the necessary properties, the module needs only have the desired customizations.
+`bnd.bnd` 파일에 필요한 속성이 있으면 모듈에 원하는 사용자 정의만 있으면 됩니다.
 
-### Examine the Style Customizations
+### 스타일 사용자 정의 검토
 
-Any desired CSS or JavaScript files must be added to subfolders within the module. CSS files belong in a `src/main/resources/META-INF/resources/css/` subfolder, and JavaScript files belong in a `src/main/resources/META-INF/resources/js/` subfolder.
+원하는 CSS 또는 JavaScript 파일을 모듈 내의 하위 폴더에 추가해야 합니다. CSS 파일은 `src/main/resources/META-INF/resources/css/` 하위 폴더에 속하고 JavaScript 파일은 `src/main/resources/META-INF/resources/js/` 하위 폴더에 속합니다.
 
-The example theme contributor uses a simple CSS style change to make each page's background blue. This is done with a [`custom.css`](./bundling-independent-ui-resources-via-theme-contributors/resources/liferay-w9m6.zip/w9m6-web/src/main/resources/META-INF/resources/custom.css) file in `src/main/resources/META-INF/resources/`:
+예제 테마 기여자는 간단한 CSS 스타일 변경을 사용하여 각 페이지의 배경을 파란색으로 만듭니다. 이것은 [`custom.css`](./bundling-independent-ui-resources-via-theme-contributors/resources/liferay-w9m6.zip/w9m6-web/src/main/resources/META-INF /resources/custom.css) `src/main/resources/META-INF/resources/` 파일:
 
 ```css
 body, #wrapper {

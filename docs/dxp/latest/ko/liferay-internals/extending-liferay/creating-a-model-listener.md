@@ -14,12 +14,13 @@
 1. [배포 및 테스트](#deploy-and-test)
 
 ## 실행 중인 모델 리스너 검사
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to deploy an example model listener for the `JournalArticle` model:
+그런 다음 다음 단계에 따라 `JournalArticle` 모델에 대한 예제 모델 수신기를 배포합니다.
 
-1. Download and unzip `Acme Model Listener`.
+1. 'Acme Model Listener'를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-n4g6.zip -O

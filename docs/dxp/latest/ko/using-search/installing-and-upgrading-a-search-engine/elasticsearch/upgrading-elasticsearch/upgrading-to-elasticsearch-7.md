@@ -40,28 +40,19 @@ Elasticsearch를 업그레이드하기 전에 기존 데이터를 백업하십�
 
 롤링 재시작 적격 버전(`6.8.x`)을 사용하는 경우 [롤링 업그레이드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) 을 수행하는 것이 Elasticsearch 클러스터를 업그레이드하는 데 권장되는 방법입니다. 그렇지 않으면 [전체 클러스터 다시 시작 업그레이드 ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/restart-upgrade.html) 가이드를 따르십시오.
 
-새 Elasticsearch 서버를 설치했고 업그레이드 전 데이터를 인덱싱하려는 경우 Liferay [데이터베이스가 업그레이드되면](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md) [트리거하여 대부분의](#restart-liferay-and-re-index)인덱스를 복원할 수 있습니다. 그러나 검색 튜닝(결과 순위 및 동의어) 인덱스 및 데이터베이스 저장소에서 지원하지 않는 모든 사용자 지정 인덱스는 업그레이드 전 인덱스</a>의
-
-스냅샷에서 복원해야 합니다.</p> 
-
-
+새 Elasticsearch 서버를 설치했고 사전 업그레이드 데이터를 인덱싱하려는 경우 UI에서 한 번 [re-index](#restart-liferay-and-re-index)를 트리거하여 대부분의 Liferay 인덱스를 복원할 수 있습니다. Liferay [데이터베이스가 업그레이드되었습니다](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md). 그러나 검색 조정(결과 순위 및 동의어) 인덱스 및 데이터베이스 저장소에서 지원하지 않는 모든 사용자 지정 인덱스는 [사전 업그레이드 인덱스의 스냅샷](./backing-up-elasticsearch.md#backing-up- 및-복원-인덱스-사용-주-스토리지).
 
 ## Elasticsearch 6 블랙리스트 작성
 
 이것은 Liferay 7.2를 실행하는 경우에만 필요합니다. 
 
 1.  이름이 지정된 구성 파일을 만듭니다. 
-   
-   
 
     ```bash
     com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config
     ```
 
-
 1.  다음 내용을 제공하십시오. 
-   
-   
 
     ```properties
     blacklistBundleSymbolicNames=[ \
@@ -74,10 +65,7 @@ Elasticsearch를 업그레이드하기 전에 기존 데이터를 백업하십�
     ]
     ```
 
-
 1. 파일을 서버의 `배포` 폴더에 복사하여 배포합니다. 
-
-
 
 ## Liferay를 다시 시작하고 색인을 다시 생성하십시오.
 
@@ -90,8 +78,6 @@ Liferay가 Elasticsearch 클러스터와 연결되면 Liferay를 다시 시작�
 1. [Workflow Metrics indexes](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics)을 다시 인덱싱합니다. 전역 메뉴(![Global Menu](../../../../images/icon-applications-menu.png))에서 *Applications* &rarr; *Workflow---Metrics*로 이동합니다. 설정 메뉴(![Options](../../../../images/icon-options.png) 및 클릭 *모두 재인덱싱*. 각 가상 인스턴스에 대해 프로세스를 반복합니다.
 
 이렇게 하면 Liferay 데이터베이스에 저장된 데이터에서 빌드된 인덱스가 복원됩니다. 기본 스토리지로 사용되는 인덱스를 복원하려면 [Elasticsearch 백업](./backing-up-elasticsearch.md)을 참조하십시오.
-
-
 
 ## Liferay 7.2: Elasticsearch 6으로 되돌리기
 

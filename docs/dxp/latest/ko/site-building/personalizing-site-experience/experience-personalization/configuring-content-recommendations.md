@@ -38,29 +38,19 @@ Analytics Cloud를 Liferay DXP에 연결하고 사이트 콘텐츠를 동기화�
 
     ![콘텐츠 추천을 위해 선택적으로 동적 컬렉션의 필터를 사용할 수 있습니다.](./configuring-content-recommendations/images/04.png)
 
-- 콘텐츠 권장 사항을 특정 사용자 그룹(예: "독일의 웹사이트 방문자")에게 타겟팅하려는 경우 Personalized Variations</a>을 사용하여 동적 컬렉션을 세그먼트
-과 결합할 수 있습니다.</p> 
+- 콘텐츠 권장 사항을 특정 사용자 그룹(예: "독일의 웹사이트 방문자")에게 타겟팅하려는 경우 동적 컬렉션을 [개인화된 변형 사용](./personalizing-collections.md) 세그먼트와 결합할 수 있습니다.
   
-  ![특정 사용자 세그먼트에 대한 콘텐츠 추천 컬렉션 사용자 정의](./configuring-content-recommendations/images/05.png)</li> </ul> 
-  
-  
+  ![특정 사용자 세그먼트에 대한 콘텐츠 추천 컬렉션 사용자 정의](./configuring-content-recommendations/images/05.png)
 
 ## 동적 컬렉션 표시
 
-컬렉션 또는 콘텐츠 세트를 표시하는 방법은 Liferay DXP 버전에 따라 다릅니다. Liferay [7.2에서는 Asset Publisher를 사용하여 디스플레이 페이지에 콘텐츠 세트를](#display-the-collection-or-content-set-in-a-display-page-using-the-asset-publisher) 합니다. DXP 7.3+에서는 Asset Publisher 외에도 Collection Display Fragment 또는 Collection Page</a>을 사용하여 Collection의 콘텐츠 를 표시할 수 있습니다.</p> 
-
-
+컬렉션 또는 콘텐츠 세트를 표시하는 방법은 Liferay DXP 버전에 따라 다릅니다. Liferay DXP 7.2에서는 Asset Publisher를 사용하여 [디스플레이 페이지에 콘텐츠 세트 표시](#display-the-collection-or-content-set-in-a-display-page-using-the-asset-publisher) . DXP 7.3+에서는 Asset Publisher 외에도 [컬렉션 표시 조각 또는 컬렉션 페이지를 사용하여](#display-the-collection-using-a-collection-display-fragment-or-a -컬렉션 페이지).
 
 ```{note}
 컬렉션은 Liferay DXP 7.2에서 콘텐츠 세트로 명명됩니다.
 ```
 
-
-
-
 ### 컬렉션 표시 조각 또는 컬렉션 페이지를 사용하여 컬렉션 표시
-
-
 
 > 라이프레이 DXP 7.3+
 
@@ -68,11 +58,7 @@ Collection Display Fragment는 Collection을 표시하는 Fragment 유형입니�
 
 컬렉션 페이지는 컬렉션에 연결된 페이지 유형입니다. 컬렉션 페이지를 사용하여 컬렉션을 표시하려면 [컬렉션 표시](../../displaying-content/additional-content-display-options/displaying-collections.md) 항목의 [컬렉션 페이지에 컬렉션 표시](../../displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) 섹션을 참조하십시오.
 
-
-
 ### Asset Publisher를 사용하여 디스플레이 페이지에 컬렉션 또는 콘텐츠 세트 표시
-
-
 
 > 라이프레이 DXP 7.2+
 
@@ -80,8 +66,6 @@ Collection Display Fragment는 Collection을 표시하는 Fragment 유형입니�
 
 1. [디스플레이 페이지 템플릿 만들기](../../displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).
 1. 컬렉션(Liferay 7.3+) 또는 콘텐츠 세트(Liferay 7.2)로 Asset Publisher를 구성합니다. 자세한 내용은 [컬렉션 표시](../../displaying-content/additional-content-display-options/displaying-collections.md) 을 참조하십시오.
-
-
 
 ## 관련 정보
 

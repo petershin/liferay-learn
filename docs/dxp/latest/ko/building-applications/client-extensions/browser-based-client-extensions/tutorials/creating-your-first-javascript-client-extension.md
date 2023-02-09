@@ -2,7 +2,7 @@
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U45+/GA45+`
 
-기본 JavaScript 클라이언트 확장은 고유한 클라이언트 확장 개발을 시작하기에 좋은 위치입니다. JS 클라이언트 확장을 사용하여 Liferay 코드에 대한 종속성이나 테마 개발에 대한 걱정 없이 Liferay의 모든 페이지에서 자체 JavaScript를 실행할 수 있습니다. [블레이드 CLI](../../../tooling/blade-cli.md) 을 사용하여 클라이언트 확장을 생성, 빌드 및 배포합니다.
+기본 JavaScript 클라이언트 확장은 고유한 클라이언트 확장 개발을 시작하기에 좋은 사이트입니다. JS 클라이언트 확장을 사용하여 Liferay 코드에 대한 종속성이나 테마 개발에 대한 걱정 없이 Liferay의 모든 페이지에서 자체 JavaScript를 실행할 수 있습니다. [블레이드 CLI](../../../tooling/blade-cli.md) 을 사용하여 클라이언트 확장을 생성, 빌드 및 배포합니다.
 
 ## 전제 조건
 

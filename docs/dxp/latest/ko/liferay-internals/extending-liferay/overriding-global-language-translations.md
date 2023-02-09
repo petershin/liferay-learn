@@ -56,12 +56,13 @@ Liferay DXP/Portal 7.4+에서는 메타데이터를 사용하여 재정의를 �
 ```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
 :language: properties
 ```
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to deploy the example:
+그런 다음 다음 단계에 따라 예제를 배포합니다.
 
-1. Download and unzip the `liferay-i2f4.zip` example project.
+1. `liferay-i2f4.zip` 예제 프로젝트를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-i2f4.zip -O

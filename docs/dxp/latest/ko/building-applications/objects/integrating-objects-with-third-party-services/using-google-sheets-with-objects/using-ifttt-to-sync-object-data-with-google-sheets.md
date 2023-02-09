@@ -56,7 +56,7 @@
 
     ![검토하고 마침을 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/11.png)
 
-1. 프로세스를 완료하면 *애플릿* 이 이미 연결된 **상태입니다.
+1. 프로세스를 마치면 *애플릿*이 이미 *연결*된 것입니다.
 
     ![검토하고 마침을 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/12.png)
 

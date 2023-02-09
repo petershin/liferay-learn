@@ -7,7 +7,7 @@
 
 Liferay DXP: 릴리스 정보는 [고객 포털의 Liferay DXP 릴리스 정보 페이지](https://customer.liferay.com/dxp-release-notes)에서 확인할 수 있습니다.
 
-Liferay Portal: 릴리스 정보는 Liferay 커뮤니티 사이트에서 [릴리스 발표 블로그](https://liferay.dev/blogs/-/blogs)로 제공됩니다. 예를 들어 [Liferay Portal 7.4 GA43 릴리스 발표](https://liferay.dev/blogs/-/blogs/liferay-portal-7-4-ga43-and-liferay-commerce-4-0-ga43- 풀어 주다).
+Liferay Portal: 릴리스 정보는 Liferay 커뮤니티 사이트에서 [릴리스 발표 블로그](https://liferay.dev/blogs/-/blogs)로 제공됩니다. 예를 들어 [Liferay Portal 7.4 GA43 릴리스 발표](https://liferay.dev/blogs/-/blogs/liferay-portal-7-4-ga43-and-liferay-commerce-4-0-ga43-release).
 ```
 
 ## Elasticsearch 7 통합

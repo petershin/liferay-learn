@@ -13,12 +13,13 @@
 스토리지 어댑터의 작동 방식을 보려면 예제를 배포한 다음 예제 어댑터를 사용하여 일부 양식 데이터를 추가하십시오.
 
 ### 예제 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [the DDM Storage Adapter project](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip).
+1. [DDM 스토리지 어댑터 프로젝트](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
@@ -48,13 +49,13 @@ Then, follow these steps:
 
 1. 브라우저에서 <http://localhost:8080>로 엽니다.
 
-1. _사이트 메뉴_ &rarr; _콘텐츠 & 데이터_ &rarr; _양식_의 Forms 애플리케이션으로 이동합니다.
+1. _사이트 메뉴_ &rarr; _콘텐츠 & 데이터_ &rarr; _양식_ 의 Forms 애플리케이션으로 이동합니다.
 
 1. *추가* 버튼(![Add](./../../../images/icon-add.png))을 클릭하여 양식 작성기를 엽니다.
 
 1. Form Builder 보기에서 *옵션* 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 *설정* 창을 엽니다.
 
-1. *스토리지 유형 선택*에서 *R2F1 동적 데이터 매핑 스토리지 어댑터* 유형을 선택하고 _완료_를 클릭합니다.
+1. *스토리지 유형 선택*에서 *R2F1 동적 데이터 매핑 스토리지 어댑터* 유형을 선택하고 _완료_ 를 클릭합니다.
 
 1. 양식에 [텍스트 필드](../creating-and-managing-forms/creating-forms.md) 을 추가하고 양식을 게시한 다음 몇 번 제출하십시오.
 
@@ -156,7 +157,7 @@ private static final Log _log = LogFactoryUtil.getLog(
 
 ### 파일 삭제 구현
 
-1. 파일이 저장되는 위치를 제어할 수 있도록 전용 변수 `_PATHNAME` 을 설정합니다. 여기서 경로는 Docker 컨테이너의 Liferay 설치 위치를 가리킵니다.
+1. 파일이 저장되는 사이트를 제어할 수 있도록 전용 변수 `_PATHNAME` 을 설정합니다. 여기서 경로는 Docker 컨테이너의 Liferay 설치 사이트를 가리킵니다.
 
    ```java
    private static final String _PATHNAME = "/opt/liferay/form-records";

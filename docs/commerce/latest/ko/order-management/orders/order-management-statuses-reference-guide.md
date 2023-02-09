@@ -10,9 +10,7 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 
 ## 주문 상태.
 
-*주문 상태* 는 주문 수명 주기 [에서 주문이 어디에 있는지에 대한 정보를 제공](./order-life-cycle.md). [**는](./orders-menu-reference-guide.md#open)[***</a></a>*</em>](./orders-menu-reference-guide.md)
-*.</p> 
-
+*주문 상태*는 [주문 수명 주기](./order-life-cycle.md)에서 주문이 어디에 있는지에 대한 정보를 제공합니다. 각 주문 상태는 다음 [*주문* 메뉴](./orders-menu-reference-guide.md) 탭 중 하나에 표시됩니다. [*열기*](./orders-menu-reference-guide.md#open) , [*보류 중*](./orders-menu-reference-guide.md#pending) 또는 [*전송됨*](./orders-menu-reference-guide.md#transmitted).
 
 
 ### 열려있는
@@ -26,9 +24,6 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 | 열려있는   | 하나 이상의 제품이 장바구니에 추가되었습니다. 주문이 체크아웃 프로세스에 있을 수 있습니다( *주문 요약* 페이지까지). |
 | 진도안에   | 주문이 *주문요약* 페이지를 넘어 결제단계까지 체크아웃 과정을 거쳐 진행되었습니다.                      |
 
-
-
-
 ### 미정
 
 *Pending* 탭에는 *To Transmit*이라는 한 가지 주문 상태가 있습니다.
@@ -38,9 +33,6 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 | 주문 상태. | 묘사                               |
 |:------ |:-------------------------------- |
 | 전송하기   | 구매자가 주문을 했지만 판매자가 아직 전송하지 않았습니다. |
-
-
-
 
 ### 전송됨
 
@@ -52,7 +44,7 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 |:------ |:--------------------------------------------------------------------------------------------------------------------------------------------- |
 | 전송됨    | 추가 상태 업데이트 없이 주문이 [전송](./processing-an-order.md#commerce-20-and-below)되었습니다. (전송된 주문의 기본 주문 상태입니다.)                                           |
 | 수행 대기  | 주문이 [전송되고](./processing-an-order.md#commerce-20-and-below) 결제가 확인되었지만 운송업체에서 아직 [배송](../shipments/introduction-to-shipments.md) 준비가 되지 않았습니다. |
-| 집화 대기  | 주문이 준비되었으며( [개 배송됨](../shipments/introduction-to-shipments.md)가능) 판매자가 지정한 위치에서 구매자가 픽업하기를 기다리고 있습니다.                                         |
+| 집화 대기  | 주문이 준비되었으며( [개 배송됨](../shipments/introduction-to-shipments.md)가능) 판매자가 지정한 사이트에서 구매자가 픽업하기를 기다리고 있습니다.                                         |
 | 배송 대기  | 주문이 [배송](../shipments/introduction-to-shipments.md)준비되었으며 배송업체에서 픽업 및 배송을 기다리고 있습니다.                                                          |
 | 부분 환불  | 판매자가 주문 총액보다 적은 금액으로 구매자에게 환불했습니다.                                                                                                            |
 | 부분 배송  | 주문한 제품 중 일부만 [배송](../shipments/introduction-to-shipments.md)되었습니다.                                                                            |
@@ -62,9 +54,6 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 | 취소 된   | 판매자가 주문을 취소했습니다.                                                                                                                              |
 | 거절됨    | 주문이 [배송](../shipments/introduction-to-shipments.md)되었지만 구매자가 수령을 거부했습니다.                                                                      |
 | 논쟁     | 구매자가 지불 거래에 대한 분쟁 해결을 시작했습니다(예: PayPal을 통해).                                                                                                  |
-
-
-
 
 ## 결제 상태
 
@@ -78,14 +67,9 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 | 유급의   | [주문](./processing-an-order.md) 에 대한 결제가 판매자에게 접수되었습니다.                                                                                                                                                     |
 | 미정    | [주문](./processing-an-order.md) 에 대한 결제가 접수되지 않았거나 승인되지 않았습니다. (우편환, 구매주문서 등 오프라인 결제수단의 경우, 아직 입금 또는 확인이 되지 않았거나, 결제 상태가 업데이트되지 않은 경우일 수 있습니다. 구매자가 결제 프로세스를 중지하는 경우 PayPal과 같은 온라인 결제 수단의 경우도 해당될 수 있습니다.) |
 
-
-
-
 ## 워크플로우 상태
 
-*워크플로 상태* 는 주문이 두 개의 [주문 워크플로](../order-workflows/introduction-to-order-workflows.md)중 하나에 있는 위치에 대한 정보를 제공합니다.
-
-
+*워크플로 상태* 는 주문이 두 개의 [주문 워크플로](../order-workflows/introduction-to-order-workflows.md)중 하나에 있는 사이트에 대한 정보를 제공합니다.
 
 ### 열려있는
 
@@ -99,9 +83,6 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 | 미정       | 카트(주문)가 검토 및 [승인](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)을 위해 제출되었지만 아직 구매자가 승인하지 않았습니다.           |
 | 승인되는     | 구매자가 주문을 검토하고 [승인](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) 했으며 이제 주문을 결제할 수 있습니다.                  |
 
-
-
-
 ### 미정
 
 * *보류* 탭의 작업 흐름 상태* 은 [*전송 작업 흐름*](../order-workflows/introduction-to-order-workflows.md#transmission-workflow-seller-side-order-approval-only)을 통한 주문의 진행 상황을 나타냅니다. 이 주문 워크플로에는 *대기 중* 및 *승인됨*의 두 가지 워크플로 상태가 있습니다.
@@ -112,9 +93,6 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 |:-------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 미정       | 주문이 접수되었지만 아직 판매자가 [승인](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) 하지 않았습니다.                                                                                             |
 | 승인되는     | 판매자가 주문을 검토하고 [승인](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) 했으며 이제 주문이 [전송될 수 있습니다](./processing-an-order.md#commerce-20-and-below). (참고: 이 워크플로 상태는 *전송됨* 탭에도 나타납니다.) |
-
-
-
 
 ## 추가 정보
 

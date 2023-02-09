@@ -43,15 +43,13 @@ Fix Pack, Security Fix Pack 및 Service Pack 이미지는 [Slim Bundles](../../m
     ├───patching
     └───scripts
     ```
+   그런 다음 호스트 폴더를 컨테이너의 `/mnt/liferay` 폴더에 마운트](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) 당신의`run` 명령.
 
-    그런 다음 호스트 폴더를 컨테이너의
-/mnt/</code> `</a> ` `합니다.
-<pre><code class="bash">    docker run ... -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
-`</pre></p></li> </ol> 
+    ```bash
+    docker run ... -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
+    ```
 
 DXP는 아티팩트와 파일을 사용하여 새 컨테이너에서 실행됩니다.
-
-
 
 ## 패치 설치
 
@@ -83,86 +81,59 @@ DXP는 아티팩트와 파일을 사용하여 새 컨테이너에서 실행됩�
 
 1. [컨테이너를 다시 시작하십시오](../using-liferay-docker-images.md#restartings-a-container).
 
-
-
 ### 새 컨테이너에 설치
 
 새 컨테이너에 패치를 설치하는 단계는 다음과 같습니다.
 
 1. 호스트 폴더와 `patching`이라는 하위 폴더를 만듭니다. 
-   
-   
 
     ```bash
     mkdir -p [host folder]/patching
     ```
 
-
 1. [패치를 다운로드하고](https://customer.liferay.com/downloads) [호스트 폴더]/patching `폴더에 복사`. 예를 들어, 
-   
-   
 
    ```bash
    cp ~/[patch file] [host folder]/patching
    ```
 
-
 1. [실행 중인 경우 현재 DXP 컨테이너](../using-liferay-docker-images.md#stopping-a-container)을 중지합니다.
 
 1. 패치 파일의 폴더를 컨테이너의 `/mnt/liferay/patching` 폴더에 매핑하는 바인드 마운트가 있는 컨테이너를 만듭니다. 이 예제의 패치 파일은 `patching`폴더에 있으므로 [마운트](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) 의 상위 폴더(`[호스트 폴더]`)를 컨테이너의 `/mnt/liferay` 폴더에 바인딩할 수 있습니다. 이렇게 하면 DXP에 적용하기 위해 패치에 액세스할 수 있습니다. 
-   
-   
 
     ```bash
     docker run ... -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
     ```
 
-
-
-
     ```{note}
     바인드 마운트 지정에 대한 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md)을 참조하세요.
     ```
 
-
 Patching Tool이 패치를 설치하고 DXP가 실행됩니다.
-
-
 
 ```{important}
 패치 도구가 `[패치 파일]이 패치 도구 버전 [x.y.z]과 호환되지 않습니다`라는 메시지를 보고하면 최신 패치 도구를 설치하십시오. 자세한 내용은 [패치 도구 설치](#installing-the-patching-tool)를 참조하세요.
 ```
-
-
-
 
 ## 패치 되돌리기
 
 컨테이너에서 패치를 되돌리거나 패치가 적용된 컨테이너에 다른 패치를 설치하려면 컨테이너를 제거하고 새 컨테이너를 만들어야 합니다.
 
 1. [컨테이너](../using-liferay-docker-images.md#stopping-a-container)을 중지합니다. 
-   
-   
 
     ```bash
     docker stop [container]
     ```
 
-
 1. [컨테이너의 아티팩트 및 파일을](../../maintaining-a-liferay-installation/backing-up.md) 백업합니다.
 
 1. 용기를 제거하십시오. 
-   
-   
 
     ```bash
     docker rm [container]
     ```
 
-
 1. 이전에 사용한 `docker run` 인수를 사용하여 동일한 이미지 또는 호환되는 수정 팩 레벨이 있는 이미지에서 새 컨테이너를 작성하십시오. 볼륨 또는 [bind mount](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay)을 통해 원하는 패치를 적용하십시오.
-
-
 
 ## 패치 도구 업데이트
 
@@ -173,19 +144,14 @@ Patching Tool이 패치를 설치하고 DXP가 실행됩니다.
 1. [고객 포털](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191019&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191066)에서 최신 패칭 도구를 다운로드하십시오.
 
 1. Patching Tool ZIP 파일 이름에 이 형식이 없으면 `patching-tool-xyzzip` 해당 형식을 사용하도록 이름을 바꿉니다. 예를 들어, 
-   
-   
 
     ```bash
     mv patching-tool.zip patching-tool-2.0.15.zip
     ```
 
-
 1. 패치 도구 ZIP 파일을 컨테이너의 `/mnt/liferay/patching` 폴더를 통해 컨테이너에 설치합니다. 이는 [핫픽스 및 보안 수정 팩이 설치된 것과 같은 방식입니다](#installing-a-hotfix-or-security-fix-pack).
 
 컨테이너를 다시 시작하거나 새 컨테이너를 실행할 때 컨테이너 진입점은 새 패치 도구를 설치합니다.
-
-
 
 ## 패치용 데이터베이스 업그레이드
 
@@ -198,8 +164,6 @@ Patching Tool이 패치를 설치하고 DXP가 실행됩니다.
 1. 데이터베이스 업그레이드 도구를 사용하여 데이터베이스를 업그레이드하십시오. 자세한 내용은 [데이터베이스 업그레이드 도구 사용](../../upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md) 을 참조하십시오.
 
 데이터베이스가 업그레이드된 후 해당 데이터베이스를 사용하는 컨테이너를 실행하십시오.
-
-
 
 ## 추가 정보
 

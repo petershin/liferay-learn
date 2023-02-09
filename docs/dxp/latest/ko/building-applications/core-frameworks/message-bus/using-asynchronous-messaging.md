@@ -11,12 +11,13 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
 다른 클래스(메시지 수신기)가 수신하는 직렬 대상으로 메시지를 보내는 것으로 시작합니다.
 
 ## 메시지를 보내다
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, start with sending a message in an example project.
+그런 다음 예제 프로젝트에서 메시지를 보내는 것으로 시작합니다.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-n8k5.zip -O
@@ -300,7 +301,7 @@ OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.
 
 축하합니다! 두 클래스 간에 비동기적으로 메시지를 교환했습니다.
 
-## 무엇 향후 계획
+## 다음
 
 이제 비동기 메시징에 익숙해졌으므로 최적의 성능을 위해 조정할 수 있습니다. [메시징 성능 조정](./tuning-messaging-performance.md)에서 방법을 알아보십시오.
 

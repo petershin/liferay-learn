@@ -12,7 +12,7 @@
 
 1. *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *Control Panel* 탭으로 이동하여 *Objects*을 클릭합니다.
 
-1. 원하는 개체에 대해 *작업* 버튼(![Action Button](../../../images/icon-actions.png))을 클릭하고 **으로 내보내기를 선택합니다.
+1. 원하는 객체의 *Actions* 버튼(![Action Button](../../../images/icon-actions.png))을 클릭하고 *JSON으로 내보내기*를 선택합니다.
 
    ![원하는 개체에 대한 작업 버튼을 클릭하고 JSON으로 내보내기를 선택합니다.](./exporting-and-importing-object-definitions/images/01.png)
 

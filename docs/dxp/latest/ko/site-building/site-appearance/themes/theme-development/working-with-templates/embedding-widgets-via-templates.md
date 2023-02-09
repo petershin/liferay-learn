@@ -15,7 +15,7 @@
 
 포틀릿 정의에서 위젯의 `javax.portlet.name` 값을 사용하여 포틀릿 이름을 제공하십시오. `com.liferay.portlet.instanceable` 속성이 `false`로 설정되지 않은 경우 인스턴스 ID도 제공해야 합니다.
 
-예를 들어 이 매크로는 템플릿 파일에서 선택한 위치에 탐색 메뉴를 포함합니다.
+예를 들어 이 매크로는 템플릿 파일에서 선택한 사이트에 탐색 메뉴를 포함합니다.
 
 ```
 <@liferay_portlet["runtime"]
@@ -23,6 +23,6 @@
 />
 ```
 
-포함된 위젯을 템플릿에 추가했으면 `gulp deploy` 을 실행하여 변경 사항으로 테마를 빌드합니다. 배포된 테마는 이제 선택한 위치에 포함된 위젯을 포함합니다.
+포함된 위젯을 템플릿에 추가했으면 `gulp deploy` 을 실행하여 변경 사항으로 테마를 빌드합니다. 배포된 테마는 이제 선택한 사이트에 포함된 위젯을 포함합니다.
 
 <!-- When available, add more information referencing article as to embedding widgets by function (developer tutorial) -->

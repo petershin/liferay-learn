@@ -116,12 +116,9 @@ public class HelloWorldPortlet extends MVCPortlet {
 <a href="<%= view2URL %>">Go to View 2</a>
 ```
 
-사용자가 링크를 클릭하면 포틀릿은 `mvcPath` 요청 매개변수를 수신하고 `렌더링` 메소드에서 제어 논리를 처리합니다. 자세한 내용은 MVC 포틀릿</a> 을 사용한
-렌더링 보기를 참조하십시오.</p> 
+사용자가 링크를 클릭하면 포틀릿은 `mvcPath` 요청 매개변수를 수신하고 `render` 메소드에서 제어 로직을 처리합니다. 자세한 내용은 [MVC 포틀릿으로 보기 렌더링](./using-mvc/rendering-views-with-mvc-portlet.md)을 참조하십시오.
 
-
-
-## 무엇 향후 계획
+## 다음
 
 보시다시피 Liferay의 MVC 포틀릿 프레임워크는 잘 구성된 컨트롤러 계층을 제공합니다. MVC 포틀릿 기본 사항을 배우려면 다음 자습서로 시작하십시오.
 

@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.4 U36+ 및 GA36+`
 
-검색창 제안은 Liferay의 검색창 위젯에</em> 기능을 입력할 때 _개의 검색을 추가합니다. </p>
+검색창 제안은 Liferay의 검색창 위젯에 _입력과 동시에 검색_ 기능을 추가합니다.
 
 ![드롭다운 목록에서 결과를 선택하거나 평소와 같이 검색을 실행합니다.](./configuring-search-bar-suggestions/images/01.gif)
 

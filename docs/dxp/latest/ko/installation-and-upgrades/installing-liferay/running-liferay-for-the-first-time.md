@@ -1,39 +1,28 @@
 # 처음으로 Liferay 실행
 
-Liferay DXP</a> [](./installing-a-liferay-tomcat-bundle.md#installing)
-된 것입니다.</p> 
-
-
+[Liferay DXP/Portal 설치](./installing-a-liferay-tomcat-bundle.md#installing) 및 [데이터베이스 구성](./configuring-a-database.md)을 완료하면 실행할 준비가 되었습니다.
 
 ## 서버 시작
 
 1. 애플리케이션 서버와 함께 번들로 제공되는 시작 스크립트를 실행하십시오. Tomcat 번들 예: 
-   
 
     ```bash
     ./liferay-dxp-version/tomcat-version/bin/startup.sh
     ```
 
-
-
-
     ```{note}
     기본적으로 DXP는 `[Liferay Home]/logs`에 로그 파일을 기록합니다.
     ```
 
-
-    The Setup Wizard appears in your web browser at `http://localhost:8080`.
+    설정 마법사가 웹 브라우저의 `http://localhost:8080`에 나타납니다.
     
-    ![On completing startup, DXP launches a web browser that displays the Basic Configuration page.](./running-liferay-for-the-first-time/images/01.png)
-    
+     ![시작 완료 시 DXP는 기본 구성 페이지를 표시하는 웹 브라우저를 시작합니다.](./running-liferay-for-the-first-time/images/01.png)
 
 1. 포털의 *이름*, *기본 언어* 및 *시간대*를 설정합니다.
 
 1. *관리자 사용자* 이름, 성 및 이메일 주소를 설정합니다.
 
 1. *데이터베이스* 섹션에서 *변경* 을 클릭하여 데이터베이스 양식을 표시하십시오. 
-   
-   
 
     ```{warning}
     프로덕션 등급 Liferay DXP 인스턴스에서 HSQL을 사용하지 마십시오.
@@ -62,41 +51,27 @@ Liferay DXP Enterprise 구독이 있는 경우 DXP는 활성화 키를 요청합
 
 마지막으로 DXP는 서버를 다시 시작하라는 메시지를 표시합니다.
 
-
-
 ## 서버 다시 시작
 
 애플리케이션 서버와 함께 번들로 제공되는 종료 및 시작 스크립트를 사용하여 서버를 다시 시작하십시오. Tomcat 예제 명령:
 
-
-
 ### 폐쇄
-
-
 
 ```bash
 ./liferay-dxp-version/tomcat-version/bin/shutdown.sh
 ```
 
-
-
-
 ### 시작
-
-
 
 ```bash
 ./liferay-dxp-version/tomcat-version/bin/startup.sh
 ```
-
 
 DXP는 설치 마법사에서 지정한 데이터베이스 및 포털 구성 값을 사용하여 초기화합니다. DXP 홈 페이지는 `http://localhost:8080`에 나타납니다.
 
 ![DXP를 구성하고 서버를 다시 시작하면 DXP 홈 페이지가 나타나고 로그인할 준비가 된 것입니다!](./running-liferay-for-the-first-time/images/03.png)
 
 축하합니다! 온프레미스 Liferay DXP 인스턴스를 시작했습니다.
-
-
 
 ## 다음 단계
 

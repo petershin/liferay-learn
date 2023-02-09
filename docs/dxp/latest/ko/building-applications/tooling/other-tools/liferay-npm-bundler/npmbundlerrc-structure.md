@@ -242,7 +242,7 @@ liferay-npm-bundler는 위젯 프로젝트의 루트 폴더에 있는 `.npmbundl
 }
 ```
 
-* **create-jar.output-dir:** 최종 JAR을 배치할 위치를 지정합니다.
+* **create-jar.output-dir:** 최종 JAR을 배치할 사이트를 지정합니다.
 
 ```json
 {

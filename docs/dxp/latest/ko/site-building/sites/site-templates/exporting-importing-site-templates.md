@@ -76,6 +76,6 @@
 
 ## 추가 정보
 
-* [위치 템플렛](../site-templates.md)
+* [사이트 템플렛](../site-templates.md)
 * [사이트 템플릿 만들기](./creating-site-templates.md)
 * [사이트 페이지 및 콘텐츠 내보내기 및 가져오기](../exporting-importing-site-pages-and-content.md)

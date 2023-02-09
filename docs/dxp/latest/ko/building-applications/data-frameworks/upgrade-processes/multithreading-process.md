@@ -5,12 +5,13 @@
 귀하의 [업그레이드 프로세스](../upgrade-processes.md) 에는 대규모 데이터 세트에 대한 복잡한 변경이 포함될 수 있습니다. 성능이 중요한 경우 응용 프로그램의 `UpgradeProcess` 클래스에서 `processConcurrently()` 메서드를 사용하십시오. 이 방법은 여러 스레드에서 실행되며 업그레이드 시간을 단축할 수 있습니다.
 
 ## 버전 1.0.0 배포
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Multithreading Process](./liferay-j7z3.zip).
+1. [멀티스레딩 프로세스](./liferay-j7z3.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O

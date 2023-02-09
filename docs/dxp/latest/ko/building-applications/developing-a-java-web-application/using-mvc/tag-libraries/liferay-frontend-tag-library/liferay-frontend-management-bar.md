@@ -12,17 +12,17 @@ Liferay Front-end Management Bar는 @product-ver@부터 더 이상 사용되지 
 
 [`<liferay-frontend:management-bar-buttons>` 태그](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/management-bar-buttons.html) 는 관리 표시줄의 버튼 요소를 래핑합니다.
 
-![<code>management-bar-buttons</code> 태그에는 관리 표시줄의 기본 버튼이 포함되어 있습니다.](./liferay-frontend-management-bar/images/02.png)
+![`management-bar-buttons` 태그에는 관리 표시줄의 기본 버튼이 포함되어 있습니다.](./liferay-frontend-management-bar/images/02.png)
 
 [`<liferay-frontend:management-bar-sidenav-toggler-button>` 태그](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/management-bar-sidenav-toggler-button.html)  는 정보 버튼에 대한 슬라이드 아웃 탐색을 구현합니다.
 
 [`<liferay-frontend:management-bar-display-buttons>` 태그](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/management-bar-display-buttons.html) 는 앱의 디스플레이 스타일 옵션을 렌더링합니다.
 
-![<code>management-bar-display-buttons</code> 태그에는 콘텐츠의 표시 옵션이 포함되어 있습니다.](./liferay-frontend-management-bar/images/03.png)
+![`management-bar-display-buttons` 태그에는 콘텐츠의 표시 옵션이 포함되어 있습니다.](./liferay-frontend-management-bar/images/03.png)
 
 [`<liferay-frontend:management-bar-filters>` 태그](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/management-bar-filters.html) 는 앱의 필터링 옵션을 래핑합니다. 이 필터는 모든 제어판 응용 프로그램에 포함되어야 합니다. 필터링 옵션에는 정렬 기준, 정렬 순서 등이 포함될 수 있습니다.
 
-![<code>management-bar-filters</code> 태그에는 콘텐츠 필터링 옵션이 포함되어 있습니다.](./liferay-frontend-management-bar/images/04.png)
+![`management-bar-filters` 태그에는 콘텐츠 필터링 옵션이 포함되어 있습니다.](./liferay-frontend-management-bar/images/04.png)
 
 마지막으로 [`<liferay-frontend:management-bar-action-buttons>` 태그](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/management-bar-action-buttons.html) 는 선택한 항목에 대해 실행할 수 있는 작업을 래핑합니다. 페이지 사이에서 여러 항목을 선택할 수 있습니다. 관리 표시줄은 선택한 항목의 수를 추적합니다.
 

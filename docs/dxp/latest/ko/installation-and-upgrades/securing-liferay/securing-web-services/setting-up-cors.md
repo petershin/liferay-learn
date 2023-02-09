@@ -2,12 +2,9 @@
 
 CORS는 Cross-Origin Resource Sharing의 약자입니다. Origin은 다른 도메인에 있는 웹 서버이고 Resource는 이미지, PDF 또는 HTML 파일과 같이 서버에 저장된 일부 자산입니다. 경우에 따라 다른 오리진에 저장된 리소스를 요청해야 합니다. 이를 교차 출처 요청이라고 하며 웹 서버에는 이러한 요청을 허용하거나 거부하는 정책이 있습니다.
 
-예를 들어 브라우저 자체는 크로스 사이트</a>
-을 완화하는 데 도움이 되는 스크립트의 교차 출처 AJAX 스타일 요청을 허용하지 않습니다. 이러한 API는 *동일한 출처* 정책을 따릅니다. 그러나 특정 리소스의 경우 Liferay DXP가 다른 출처에 서비스를 제공하도록 허용하는 것이 편리할 수 있습니다.</p> 
+예를 들어 브라우저 자체는 [교차 사이트 스크립팅](https://en.wikipedia.org/wiki/Cross-site_scripting) 공격을 완화하는 데 도움이 되는 스크립트의 교차 출처 AJAX 스타일 요청을 허용하지 않습니다. 이러한 API는 *동일한 출처* 정책을 따릅니다. 그러나 특정 리소스의 경우 Liferay DXP가 다른 출처에 서비스를 제공하도록 허용하는 것이 편리할 수 있습니다.
 
 예를 들어 Docs & Media에서 이미지를 관리하는 경우 교차 원본 요청을 허용할 수 있습니다. Liferay Portal 또는 JAX-RS 애플리케이션 리소스에서 일치하는 URL에 대해 CORS를 활성화할 수 있습니다.
-
-
 
 ## Liferay DXP 서비스용 CORS 활성화
 
@@ -17,8 +14,6 @@ CORS는 Cross-Origin Resource Sharing의 약자입니다. Origin은 다른 도�
 1. 양식의 필드를 작성하십시오. 완료되면 *저장*을 클릭합니다.
    
    ![그림 1: CORS 시스템 설정은 Liferay 서비스용 CORS 헤더를 구성하는 방법을 제공합니다.](./setting-up-cors/images/01.png)
-
-
 
 ### 포털 CORS 구성 참조
 
@@ -43,8 +38,6 @@ CORS는 Cross-Origin Resource Sharing의 약자입니다. Origin은 다른 도�
    
    ![그림 2: CORS 웹 컨텍스트에 대한 별도의 시스템 설정 범주가 있습니다.](./setting-up-cors/images/02.png)
 
-
-
 ### JAX-RS CORS 구성 참조
 
 | 설정                    | 묘사                                                                                                                                                                                                                                                                                                                                                    |
@@ -55,8 +48,6 @@ CORS는 Cross-Origin Resource Sharing의 약자입니다. Origin은 다른 도�
 
 
 JAX-RS<!-- future link required --> 개발자는 `@CORS` 주석을 사용하여 배포된 애플리케이션에 대한 정책을 설정할 수 있습니다.
-
-
 
 ## 추가 정보
 

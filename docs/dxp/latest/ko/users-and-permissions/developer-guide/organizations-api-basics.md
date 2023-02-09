@@ -3,12 +3,13 @@
 애플리케이션 메뉴에서 [조직 생성 및 관리](../organizations/creating-and-managing-organizations.md) 를 할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 조직을 관리하려면 이러한 서비스를 호출하십시오.
 
 ## 조직 추가
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Organizations API Basics](./liferay-w2h3.zip).
+1. [Organizations API 기본 사항](./liferay-w2h3.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O

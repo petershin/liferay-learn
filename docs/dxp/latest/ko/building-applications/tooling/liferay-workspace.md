@@ -45,6 +45,5 @@ liferay-workspace/configuring-liferay-workspace.md
 
 :::{grid-item-card} Liferay Workspace 구성
 :link: ./liferay-workspace/configuring-liferay-workspace.md
-:::  
-:
 :::
+::::

@@ -84,7 +84,7 @@
 | 작성자             | 콘텐츠 작성자입니다.                                                                                                     |
 | 유형              | 콘텐츠 유형: 웹 콘텐츠 기사, 문서 {bdg-secondary}`7.4+`또는 블로그 항목 {bdg-secondary}`7.4 U23+/GA23+`                             |
 | 특수형             | 콘텐츠 [하위 유형](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). |
-| 사이트 혹은 애셋 라이브러리 | Liferay 인스턴스에서 콘텐츠 항목의 위치입니다.                                                                                   |
+| 사이트 혹은 애셋 라이브러리 | Liferay 인스턴스에서 콘텐츠 항목의 사이트입니다.                                                                                   |
 | 상태              | 각 콘텐츠 항목에 대한 워크플로 상태입니다.                                                                                        |
 | 어휘(x축)          | 콘텐츠 감사 도구의 [x축 어휘](#content-audit-tool)에서 콘텐츠 항목에 적용되는 카테고리입니다.                                                 |
 | 어휘(y축)          | 콘텐츠 감사 도구의 [y축 어휘](#content-audit-tool)에서 콘텐츠 항목에 적용된 카테고리입니다.                                                  |

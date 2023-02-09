@@ -9,12 +9,13 @@ Service Builder 서비스는 선언적 서비스(DS) 구성 요소이므로 컨�
 여기서는 [포틀릿](../../../developing-a-java-web-application/reference/portlets.md) DS 구성 요소에서 Service Builder 서비스를 호출합니다. 새 항목을 추가하기 위한 양식이 있는 예제 포틀릿 애플리케이션을 사용합니다. 양식은 JSP(JavaServer Page)에 있습니다. 양식을 제출하면 포틀릿이 트리거되어 항목을 만들고 유지하기 위한 서비스를 호출합니다.
 
 ## 포틀릿에서 서비스 호출
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-t2p5.zip -O
@@ -134,9 +135,9 @@ JSP는 다음 태그 라이브러리의 태그를 사용합니다.
 
 페이지의 *Add T2P5 Entry* 섹션은 항목을 추가하기 위한 양식을 제공합니다. `<portlet:defineObjects />` 태그는 템플릿에서 표준 포틀릿 개체를 사용할 수 있도록 합니다. `aui` 태그는 이러한 개체를 사용합니다.
 
-`<portlet:actionURL name="addT2P5Entry" var="addT2P5EntryURL" />` 태그는 `addT2P5EntryURL` 변수를 `addT2P5Entry`이라는 포틀릿 작업에 매핑합니다. 이 `actionURL` 과 함께 `ActionRequest` 을 제출하면 포틀릿의 메소드 `addT2P5Entry` 가 호출됩니다. 왜냐하면 이것이 actionUrl</code> 이름 ```맵핑되기 때문입니다.</p>
+`<portlet:actionURL name="addT2P5Entry" var="addT2P5EntryURL" />` 태그는 `addT2P5EntryURL` 변수를 `addT2P5Entry`라는 포틀릿 작업에 매핑합니다. 이 `actionURL`로 `ActionRequest`를 제출하면 `actionUrl` 이름 `addT2P5Entry`에 맵핑되기 때문에 포틀릿의 메소드 `addT2P5Entry`를 호출합니다.
 
-<p spaces-before="0"><code><aui:form>` 는 항목 이름 및 설명에 대한 텍스트 필드를 렌더링합니다. 양식을 제출하면 해당 값이 `ActionRequest` 과 함께 포틀릿 메소드에 전달됩니다.
+`<aui:form>`은 항목 이름 및 설명에 대한 텍스트 필드를 렌더링합니다. 양식을 제출하면 해당 값이 'ActionRequest'와 함께 포틀릿 메소드에 전달됩니다.
 
 ```{note}
 포틀릿 작업에 대한 자세한 내용은 [MVC 포틀릿으로 작업 호출](../../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md)을 참조하세요. ).
@@ -146,12 +147,9 @@ JSP는 다음 태그 라이브러리의 태그를 사용합니다.
 
 포틀릿 애플리케이션에서 Service Builder 서비스를 호출했습니다. 이러한 서비스는 MVC Portlet에서 사용하기 쉽습니다.
 
-## 무엇 향후 계획
+## 다음
 
-이제 Service Builder 기본 사항을 알았 [엔터티 간의 관계 생성, 엔터티](../defining-entities.md) , 쿼리 지원 등을 탐색할 수 있습니다. 또는 Service Builder</a>을 사용하여
-Business Logic에 뛰어들 수 있습니다.</p> 
-
-
+이제 Service Builder 기본 사항을 알았으므로 [Defining Entities](../defining-entities.md)를 탐색하여 엔터티 간의 관계를 생성하고, 엔터티를 지역화하고, 쿼리를 지원하는 등의 작업을 수행할 수 있습니다. 또는 [Service Builder를 사용한 비즈니스 로직](../business-logic-with-service-builder.md)에 대해 자세히 알아볼 수 있습니다.
 
 ## 추가 정보
 

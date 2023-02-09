@@ -8,7 +8,7 @@
 
 * **Google Cloud Natural Language Text Auto Tagging**: [Google Cloud Natural Language API](https://cloud.google.com/natural-language/) 를 사용하여 콘텐츠를 분석하고 자동으로 태그를 지정합니다.
 
-* **OpenNLP 텍스트 자동 태그 지정**: 오픈 소스 [Apache OpenNLP](https://opennlp.apache.org/) 라이브러리를 사용하여 포털 콘텐츠를 분석하고 자동으로 태그를 지정합니다. 위치 이름 찾기, 조직 찾기 및 개인 이름 찾기의 세 가지 모델이 사용됩니다.
+* **OpenNLP 텍스트 자동 태그 지정**: 오픈 소스 [Apache OpenNLP](https://opennlp.apache.org/) 라이브러리를 사용하여 포털 콘텐츠를 분석하고 자동으로 태그를 지정합니다. 사이트 이름 찾기, 조직 찾기 및 개인 이름 찾기의 세 가지 모델이 사용됩니다.
 
 ```{tip}
 정확성이 제한될 수 있으므로 이 공급자를 주의하여 사용하십시오.

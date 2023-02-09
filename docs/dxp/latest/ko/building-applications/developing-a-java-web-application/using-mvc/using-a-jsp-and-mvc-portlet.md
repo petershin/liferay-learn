@@ -9,12 +9,13 @@ W3E7 예제 애플리케이션은 이 접근 방식을 보여줍니다.
 애플리케이션에는 마크업 컨텐츠가 있는 JSP와 JSP를 렌더링하는 `MVCPortlet` 클래스가 있습니다. 예제를 배포하고 검토하여 MVC 포틀릿과 함께 JSP를 사용하여 애플리케이션을 만드는 방법을 알아봅니다.
 
 ## 간단한 MVC 포틀릿 모듈 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to deploy the example:
+그런 다음 다음 단계에 따라 예제를 배포합니다.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-w3e7.zip -O
@@ -103,7 +104,7 @@ Then, follow these steps to deploy the example:
 [OSGi 서비스 속성 맵에 대한 포틀릿 설명자](../reference/portlet-descriptor-to-osgi-service-property-map.md)는 OSGi 구성 요소 속성 값이 기존 포틀릿 설명자에 매핑되는 방법을 지정합니다.
 ```
 
-## 무엇 향후 계획
+## 다음
 
 축하합니다! JSP와 하나의 간단한 Java 클래스를 사용하여 웹 애플리케이션을 만들었습니다. 여기에서 갈 수 있는 방향이 많이 있습니다. 더 많은 보기를 추가하려면 [MVC 포틀릿](./rendering-views-with-mvc-portlet.md)을 사용한 렌더링 보기를 참조하십시오. 애플리케이션에 작업을 추가하려면 [MVC 작업 명령](./mvc-action-command.md)을 참조하십시오. 또는 [Service Builder](../../data-frameworks/service-builder.md)을 사용하여 백엔드 데이터 모델을 구현합니다.
 

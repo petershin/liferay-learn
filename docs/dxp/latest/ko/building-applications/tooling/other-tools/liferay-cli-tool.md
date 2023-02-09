@@ -22,7 +22,7 @@ CLI 도구를 전체적으로 설치하지 않으려면 `npx`를 사용하여 �
 
 `liferay new` 명령을 사용하여 새 [Remote App](../../remote-apps/remote-apps-tutorials/creating-a-basic-remote-app.md) 또는 Liferay Platform 프로젝트를 만듭니다.
 
-1. 터미널을 열고 프로젝트를 생성할 위치로 이동합니다. 다음 명령을 실행합니다.
+1. 터미널을 열고 프로젝트를 생성할 사이트로 이동합니다. 다음 명령을 실행합니다.
 
     ```bash
     liferay new [project-name]
@@ -84,7 +84,7 @@ CLI 도구로 생성된 프로젝트 내에서 `liferay build`에 대한 별칭�
 liferay deploy
 ```
 
-이 작업을 처음 실행하면 배포할 수 있도록 Liferay 설치 디렉터리를 요청하고 응답을 프로젝트 폴더의 `.liferay.json` 파일에 저장합니다. 배포 위치를 변경하려면 이 파일에 구성된 디렉터리를 변경합니다.
+이 작업을 처음 실행하면 배포할 수 있도록 Liferay 설치 디렉터리를 요청하고 응답을 프로젝트 폴더의 `.liferay.json` 파일에 저장합니다. 배포 사이트를 변경하려면 이 파일에 구성된 디렉터리를 변경합니다.
 
 ## 프로젝트의 빌드 파일 지우기
 

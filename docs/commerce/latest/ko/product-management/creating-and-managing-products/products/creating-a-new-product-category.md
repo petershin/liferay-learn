@@ -124,6 +124,6 @@
 
 1. _저장_ 을 클릭하여 변경 사항을 적용합니다. 나중에 언제든지 기본 보기로 다시 변경할 수 있습니다.
 
-## 무엇 향후 계획
+## 다음
 
 * [제품 범주로 카탈로그 구성](./organizing-your-catalog-with-product-categories.md)

@@ -35,9 +35,9 @@ y7g4-api
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-api/bnd.bnd
 ```
 
-The `Bundle-` headers describe the module artifact. The `Export-Package` header specifies the API packages to publish. See [Module Projects](../../../../liferay-internals/fundamentals/module-projects.md) for details on bnd metadata and how it's used.
+`Bundle-` 헤더는 모듈 아티팩트를 설명합니다. 'Export-Package' 헤더는 게시할 API 패키지를 지정합니다. bnd 메타데이터 및 사용 방법에 대한 자세한 내용은 [모듈 프로젝트](../../../../liferay-internals/fundamentals/module-projects.md)를 참조하세요.
 
-The `build.gradle` file declares the module's dependency on DXP/Portal.
+`build.gradle` 파일은 DXP/Portal에 대한 모듈의 종속성을 선언합니다.
 
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-api/build.gradle
 :language: groovy
@@ -60,13 +60,13 @@ y7g4-service
 
 Once again, the `Bundle-` headers describe the module artifact. Service metadata and a directive follow.
 
-| Metadata | Description |
+| 메타데이터 | 설명 |
 | :------- | :---------- |
-| `Liferay-Require-SchemaVersion: 1.0.0` | Your application's data schema version. When you release application versions that have database schema changes, you'll increment the version. |
-| `Liferay-Service: true` | The module provides a Liferay Service. |
-| `-dsannotations-options: inherit` | OSGi service component classes inherit [OSGi Declarative Services](../../../../liferay-internals/fundamentals/apis-as-osgi-services.md) annotations from their class hierarchy. For example, extension classes can access all the services that ancestor fields reference via the `@Reference` annotation. |
+| `Liferay-Require-SchemaVersion: 1.0.0` | 애플리케이션의 데이터 스키마 버전입니다. 데이터베이스 스키마가 변경된 애플리케이션 버전을 릴리스하면 버전이 증가합니다. |
+| `Liferay 서비스: true` | 이 모듈은 Liferay 서비스를 제공합니다. |
+| `-dsannotations-options: 상속` | OSGi 서비스 구성 요소 클래스는 클래스 계층에서 [OSGi 선언 서비스](../../../../liferay-internals/fundamentals/apis-as-osgi-services.md) 주석을 상속합니다. 예를 들어 확장 클래스는 상위 필드가 `@Reference` 주석을 통해 참조하는 모든 서비스에 액세스할 수 있습니다. |
 
-Here's the `build.gradle` file:
+다음은 `build.gradle` 파일입니다.
 
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-service/build.gradle
 :language: groovy
@@ -82,46 +82,46 @@ Here's the `build.gradle` file:
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-service/service.xml
 ```
 
-This file defines a `Y7G4Entry` model that has an ID (the primary key), name, and description.
+이 파일은 ID(기본 키), 이름 및 설명이 있는 `Y7G4Entry` 모델을 정의합니다.
 
-### `service-builder` Element
+### `service-builder` 요소
 
-The `service-builder` element attributes affect all model entities in the `service.xml` file.
+`service-builder` 요소 속성은 `service.xml` 파일의 모든 모델 엔티티에 영향을 미칩니다.
 
-| `service-builder` attribute | Description |
+| `서비스 빌더` 속성 | 설명 |
 | :-------------------------- | :---------- |
-| `dependency-injector` | Declares the dependency injector type. Declarative Services (`ds`) is the default. |
-| `package-path` | Declares the leading package path for the generated classes. |
-| `short-no-such-exception-enabled` | If set to `true`, use a truncated version of the entity name in `NoSuchY7G4EntryException` messages; otherwise use the complete entity name. |
+| `의존성 인젝터` | 종속성 주입기 유형을 선언합니다. 선언적 서비스(`ds`)가 기본값입니다. |
+| `패키지 경로` | 생성된 클래스의 선행 패키지 경로를 선언합니다. |
+| `짧은-no-such-exception-enabled` | 'true'로 설정하면 'NoSuchY7G4EntryException' 메시지에서 잘린 버전의 엔티티 이름을 사용합니다. 그렇지 않으면 완전한 엔티티 이름을 사용하십시오. |
 
-### `namespace` Element
+### `네임스페이스` 요소
 
-The global `namespace` element specifies the prefix for all the model entity database tables.
+전역 `네임스페이스` 요소는 모든 모델 엔터티 데이터베이스 테이블의 접두사를 지정합니다.
 
-### `entity` Element
+### `entity` 요소
 
-`entity` elements define model database tables and service types.
+'entity' 요소는 모델 데이터베이스 테이블 및 서비스 유형을 정의합니다.
 
-| `entity` attributes | Description |
+| `entity` 속성 | 설명 |
 | :------------------ | :---------- |
-| `name` | The entity's name. Service Builder generates an entity table using the naming format `[namespace]_[name]` (for example, `Y7G4_Y7G4Entry`). |
-| `local-service` | If `true`, generate service classes to call from within the JVM. |
-| `remote-service` | If `true`, generate service classes, including web services classes, to call from outside of the JVM. |
+| `이름` | 엔터티의 이름입니다. Service Builder는 명명 형식 `[namespace]_[name]`(예: `Y7G4_Y7G4Entry`)을 사용하여 항목 테이블을 생성합니다. |
+| `로컬 서비스` | `true`인 경우 JVM 내에서 호출할 서비스 클래스를 생성합니다. |
+| `원격 서비스` | `true`인 경우 웹 서비스 클래스를 포함한 서비스 클래스를 생성하여 JVM 외부에서 호출합니다. |
 
-### `column` Elements
-Each `column` element defines a column in the entity's table. Here are the `Y7G4Entry` entity column elements:
+### `열` 요소
+각 `column` 요소는 엔티티 테이블의 열을 정의합니다. 다음은 'Y7G4Entry' 항목 열 요소입니다.
 
-| Column | Description |
+| 칼럼 | 설명 |
 | :----- | :---------- |
-| `y7g4EntryId` | the model instance's ID (long integer) and primary key. |
-| `name` | the instance's name (string). |
-| `description` | the instance's description (string). |
+| `y7g4EntryId` | 모델 인스턴스의 ID(긴 정수) 및 기본 키. |
+| `이름` | 인스턴스의 이름(문자열). |
+| `설명` | 인스턴스의 설명(문자열). |
 
-For more information on `service.xml` elements, see the [Liferay Service Builder DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html).
+`service.xml` 요소에 대한 자세한 내용은 [Liferay Service Builder DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html)를 참조하세요. .
 
-## Generate the Persistence Code
+## 지속성 코드 생성
 
-Invoke Service Builder to generate persistence code and database scripts.
+서비스 빌더를 호출하여 지속성 코드 및 데이터베이스 스크립트를 생성합니다.
 
 ```bash
 cd liferay-y7g4
@@ -435,7 +435,7 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 1. 데이터베이스에 `Y7G4Entry` 을 추가했습니다.
 1. 데이터베이스에서 모든 `Y7G4Entry` 인스턴스를 가져와 인쇄했습니다.
 
-## 무엇 향후 계획
+## 다음
 
 이제 모델을 정의하고 이에 대한 지속성 코드 및 서비스 코드를 생성하는 방법을 알았으므로 생성된 서비스 클래스를 검사해야 합니다. [생성된 클래스 이해 및 확장](./understanding-service-builder-generated-classes.md)에서 계속하십시오.
 

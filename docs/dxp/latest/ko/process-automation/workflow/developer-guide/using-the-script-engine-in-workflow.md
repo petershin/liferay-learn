@@ -52,7 +52,7 @@ Liferay의 [워크플로 엔진](../introduction-to-workflow.md) 은 [XML 워크
 
 ### 모든 노드 유형에 공통되는 변수
 
-이러한 변수는 워크플로 스크립트를 실행할 수 있는 모든 위치에서 사용할 수 있습니다.
+이러한 변수는 워크플로 스크립트를 실행할 수 있는 모든 사이트에서 사용할 수 있습니다.
 
 | 변하기 쉬운                                                                                                                                                                                                                                                              | 묘사                                                                              | 용법                                                                                                                                                                                                                                                                                                |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -63,11 +63,13 @@ Liferay의 [워크플로 엔진](../introduction-to-workflow.md) 은 [XML 워크
 ### 태스크 노드에 주입된 변수
 
 이러한 변수는 태스크 노드에 주입됩니다.
-작업 타이머</a> 이 인 경우 `kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`을 호출하여 ID를 가져옵니다.</td> 
 
-</tr> </tbody> </table> 
-
-
+| 변수 | 설명 | 사용법 |
+| :--- | :--- | :--- |
+| `kaleoTaskInstanceToken`([`KaleoTaskInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/ main/java/com/liferay/portal/workflow/kaleo/model/KaleoTaskInstanceToken.java)) | 작업의 토큰 자체는 워크플로 스크립트에서 사용할 수 있습니다. | 프로그래밍 방식 할당과 같은 다른 유용한 프로그래밍 방식 워크플로 활동에 사용하기 위해 ID를 가져오는 데 사용합니다. |
+| `taskName` (`String`) 작업 자체 이름에 액세스할 수 있습니다(`KaleoTak.getName()`과 동일하게 반환됨). | |
+| `workflowTaskAssignees`(`목록<`[`WorkflowTaskAssignee`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/ 작업 흐름/WorkflowTaskAssignee.java)`>`) | 작업 담당자를 나열합니다. | |
+| `kaleoTimerInstanceToken`([`KaleoTimerInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/ main/java/com/liferay/portal/workflow/kaleo/model/KaleoTimerInstanceToken.java)) | [작업 타이머](./workflow-task-node-reference.md)가 있는 경우 `kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`를 호출하여 해당 ID를 가져옵니다. | | |
 
 ## 스크립트 예
 
@@ -78,8 +80,6 @@ Liferay의 [워크플로 엔진](../introduction-to-workflow.md) 은 [XML 워크
 * 컨텐츠 승인에 할당된 모든 사용자에 대해 경고 포틀릿에 표시할 경고 생성
 
 다음 워크플로 스크립트는 Groovy를 사용하여 작성되었으며 `조건` 노드와 함께 사용됩니다. 이 스크립트는 Liferay의 [자산 프레임워크](../../../building-applications/data-frameworks/assets.md) 을 사용하여 자산의 범주를 결정하고 범주를 사용하여 올바른 승인 프로세스를 자동으로 결정합니다. 자산이 `법적` 범주에 있는 경우 제출 시 `법적 검토` 작업으로 전송됩니다. 그렇지 않으면 자산이 `기본 검토` 작업으로 전송됩니다.
-
-
 
 ```groovy
 <script>
@@ -133,27 +133,19 @@ Liferay의 [워크플로 엔진](../introduction-to-workflow.md) 은 [XML 워크
 <script-language>groovy</script-language>
 ```
 
-
-
-
 ```{note}
 조건 노드 스크립트의 'returnValue' 변수는 다음 작업 또는 상태를 결정하는 유효한 전환 이름이어야 합니다.
 
 Liferay Portal의 경우 유효한 전환 이름은 XML 파일 또는 Process Builder의 소스 보기에 입력된 전환의 `<name>` 요소 값입니다. Liferay DXP의 경우 Process Builder에서 정의 소스를 볼 때 전환의 `<id>` 요소에 지정된 전환 ID 값을 대신 사용해야 합니다.
 ```
 
-
 다운로드 가능한 워크플로 스크립트 예제에 대한 링크는 [Crafting Workflow Definitions](./crafting-xml-workflow-definitions.md) 을 참조하십시오.
-
-
 
 ## OSGi 서비스 호출
 
 [서비스 추적기](../../../building-applications/core-frameworks/dependency-injection.md) 은 사용 가능한 OSGi 서비스를 검색합니다. Service Tracker가 해당 서비스에 대해 null을 반환하면 해당 서비스를 사용할 수 없으며 응답으로 적절한 조치를 취할 수 있습니다.
 
 다음은 `JournalArticleLocalService` 을 사용하여 기사 수를 가져오는 Groovy로 작성된 워크플로 스크립트입니다.
-
-
 
 ```groovy
 import com.liferay.journal.model.JournalArticle;
@@ -196,19 +188,13 @@ finally {
 }
 ```
 
-
 스크립트는 스크립트를 실행하는 클래스의 OSGi 번들을 사용하여 서비스를 추적합니다. `com.liferay.portal.scripting.groovy.internal.GroovyExecutor` 인스턴스가 스크립트를 실행하므로 인스턴스의 번들이 서비스를 추적하는 데 사용됩니다.
-
-
 
 ```groovy
 Bundle bundle = FrameworkUtil.getBundle(GroovyExecutor.class);
 ```
 
-
 Liferay의 Kaleo 워크플로 엔진과 Liferay의 스크립트 엔진은 강력한 조합을 만듭니다. 권한을 구성할 때 워크플로 정의 내에서 잘못 작성되거나 악의적으로 작성된 스크립트의 잠재적인 결과에 유의하십시오.
-
-
 
 ## 추가 정보
 

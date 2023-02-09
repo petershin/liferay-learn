@@ -15,7 +15,7 @@ understanding-pages/other-page-types.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} 이해 페이지
+:::{grid-item-card} 페이지 이해
 :link: ./understanding-pages/understanding-pages.md
 :::
 

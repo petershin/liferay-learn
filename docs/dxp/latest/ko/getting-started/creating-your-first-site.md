@@ -38,7 +38,7 @@
 
 ![커뮤니티 사이트 - 홈 페이지](./creating-your-first-site/images/04.png)
 
-## 무엇 향후 계획
+## 다음
 
 [사이트 테마 변경](./changing-your-sites-appearance.md)을 통해 사이트의 모양과 느낌을 변경하는 방법을 학습하여 시작하기 가이드를 계속하십시오.
 

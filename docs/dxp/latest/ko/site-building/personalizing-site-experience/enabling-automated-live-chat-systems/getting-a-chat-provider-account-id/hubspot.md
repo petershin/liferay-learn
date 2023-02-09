@@ -32,4 +32,4 @@ Hubspot 계정에 로그인되어 있는 동안:
 
 ## 결론
 
-사용자 계정 ID와 API</a> 이 있으면 인스턴스에서 라이브 채팅을 활성화할 때 채팅 제공자 계정 ID로 사용할 수 있도록 결합하십시오. 채팅 제공자 계정 ID는 `[Hubspot 계정 ID]/[Hubspot API 토큰]`형식을 따릅니다.</p>
+사용자 계정 ID와 API 토큰이 있으면 Liferay로 [라이브 채팅을 활성화](../../enabling-automated-live-chat-systems.md)할 때 채팅 제공자 계정 ID로 사용할 수 있도록 결합하십시오. 사례. 채팅 제공자 계정 ID는 `[Hubspot 계정 ID]/[Hubspot API 토큰]` 형식을 따릅니다.

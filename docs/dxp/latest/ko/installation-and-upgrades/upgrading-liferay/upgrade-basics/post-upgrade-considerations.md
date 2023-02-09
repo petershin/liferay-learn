@@ -64,11 +64,7 @@ Unable to add the journal article image {filename} into the file repository
 
 ## 유지 관리 모드에서 사용 중단 및 기능 설명
 
-아직 수행하지 않은 경우 유지 관리 모드</a> 의
-
-사용 중단 및 기능을 검토하고 Liferay 인스턴스에 미치는 영향을 처리할 계획을 세우십시오.</p> 
-
-
+아직 수행하지 않은 경우 [유지 관리 모드의 사용 중단 및 기능](../reference/maintenance-mode-and-deprecations-in-7-3.md)을 검토하고 Liferay에 미치는 영향을 처리할 계획을 세우십시오. 사례.
 
 ## 사용되지 않는 데이터 제거
 
@@ -77,7 +73,6 @@ Unable to add the journal article image {filename} into the file repository
 * 더 이상 사용되지 않는 Liferay 앱 또는 모듈의 데이터. [데이터 정리](../reference/data-cleanup.md) 도구는 이를 제거합니다.
 
 * 사용 가능한 Liferay 앱 및 모듈에서 더 이상 사용되지 않는 데이터. [데이터 제거](../reference/data-removal.md) 도구는 이를 제거합니다.
-
 
 
 ## 결론

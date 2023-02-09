@@ -95,7 +95,7 @@ public boolean evaluate(
     throws PortalException;
 ```
 
-> 이 방법은 할인 규칙이 적용되는 시기를 평가하기 위한 비즈니스 논리를 구현하는 위치입니다.
+> 이 방법은 할인 규칙이 적용되는 시기를 평가하기 위한 비즈니스 논리를 구현하는 사이트입니다.
 
 ```java
 public String getKey();

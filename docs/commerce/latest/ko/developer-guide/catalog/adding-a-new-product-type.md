@@ -15,12 +15,13 @@
 ## 예제 배포
 
 이 섹션에서는 Liferay Commerce 인스턴스에서 예제 제품 유형을 시작하고 실행합니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the [Acme Commerce Product Type](./liferay-c1n4.zip).
+1.[Acme Commerce 제품 유형](./liferay-c1n4.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/catalog/liferay-c1n4.zip -O
@@ -46,7 +47,7 @@ Then, follow these steps:
     STARTED com.acme.c1n4.web_1.0.0
     ```
 
-1. 예제 제품 유형이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 응용 프로그램 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _Commerce_ → _Products_로 이동합니다. 그런 다음 (+) 아이콘을 클릭하여 새 제품을 추가합니다. 새 제품 유형("예")이 선택할 수 있는 유형 목록에 표시됩니다.
+1. 예제 제품 유형이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 응용 프로그램 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _Commerce_ → _Products_ 로 이동합니다. 그런 다음 (+) 아이콘을 클릭하여 새 제품을 추가합니다. 새 제품 유형("예")이 선택할 수 있는 유형 목록에 표시됩니다.
 
 ```{note}
 Liferay Commerce 2.1 및 이전 버전에서는 *제어판* → *상거래* → *제품*으로 이동하여 제품 페이지를 찾습니다.
@@ -96,7 +97,7 @@ public class C1N4CPType implements CPType {
 public void deleteCPDefinition(long cpDefinitionId) throws PortalException;
 ```
 
-> 이 메서드는 제품 유형에 대한 사용자 지정 삭제 논리가 추가되는 위치입니다.
+> 이 메서드는 제품 유형에 대한 사용자 지정 삭제 논리가 추가되는 사이트입니다.
 
 ```java
 public String getLabel(Locale locale);
@@ -128,7 +129,7 @@ public class C1N4ScreenNavigationEntry
 
 > Liferay Commerce가 기존 화면과 별도의 화면으로 구분할 수 있도록 내비게이션 화면 클래스에 고유한 키를 제공하는 것이 중요합니다. 이미 사용 중인 키를 재사용하면 기존의 연결된 내비게이션 화면이 무시됩니다.
 > 
-> `screen.navigation.category.order` 및 `screen.navigation.entry.order` 값은 이 화면이 나타날 제품 유형 화면의 위치를 결정합니다. 예를 들어, 세부 정보 화면 클래스</a> 의 에는 이러한 값이 10으로 설정되어 있습니다. 11로 설정하면 사용자 지정 화면이 목록에서 그 뒤에 나타납니다.</p> </blockquote> 
+> `screen.navigation.category.order` 및 `screen.navigation.entry.order` 값은 이 화면이 나타날 제품 유형 화면의 사이트를 결정합니다. 예를 들어, 세부 정보 화면 클래스</a> 의 에는 이러한 값이 10으로 설정되어 있습니다. 11로 설정하면 사용자 지정 화면이 목록에서 그 뒤에 나타납니다.</p> </blockquote> 
 > 
 > ### `ScreenNavigationCategory` 인터페이스 검토
 > 
@@ -150,7 +151,7 @@ public class C1N4ScreenNavigationEntry
 > public String getScreenNavigationKey();
 > ```
 > 
-> > 이것은 Liferay에서 화면이 나타나야 하는 위치를 나타내는 키를 반환합니다. 제품의 다른 화면에 제대로 표시되도록 문자열 값 `"cp.definition.general"` 을 반환합니다.
+> > 이것은 Liferay에서 화면이 나타나야 하는 사이트를 나타내는 키를 반환합니다. 제품의 다른 화면에 제대로 표시되도록 문자열 값 `"cp.definition.general"` 을 반환합니다.
 > 
 > ### `ScreenNavigationEntry` 인터페이스 검토
 > 

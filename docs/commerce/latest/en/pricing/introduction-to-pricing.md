@@ -60,7 +60,7 @@ When calculating an SKU's unit price, the pricing engine searches for eligible c
 
 * If an entry for the SKU exists, the algorithm applies any existing price modifiers to it and uses the total for the SKU's unit price.
 
-* If no entry for the SKU exists, then the engine uses the SKU's base price and applies modifiers from the highest priority price list. The total is the SKU's unit price.
+* If no entry for the SKU exists, the engine uses the SKU's base price and applies modifiers from the highest priority price list. The total is the SKU's unit price.
 
    ```{note}
    The engine only searches the highest priority list and does not search for the SKU in lower priority lists. This is to avoid applying prices from different price lists to SKUs in the same catalog.
@@ -84,7 +84,7 @@ After calculating the SKU's unit price, the pricing engine calculates the SKU's 
 
 ### Calculating an SKU's Final Price
 
-After calculating the unit and promotion prices, the pricing engine compares them and selects the lower price. The pricing algorithm then searches for all applicable discounts and applies them to that price. The total is the SKU's final price, that is, the price used by the customer to purchase the product.
+After calculating the unit and promotion prices, the pricing engine compares them and selects the lower price. The pricing algorithm then searches for all applicable discounts and applies them to that price. The total is the SKU's final price: the price the customer pays to purchase the product.
 
 ## How the Pricing Engine Calculates Order Prices
 

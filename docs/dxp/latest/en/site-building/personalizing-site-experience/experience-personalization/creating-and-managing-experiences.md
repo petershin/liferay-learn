@@ -2,15 +2,15 @@
 
 {bdg-secondary}`Available Liferay 7.4+, 7.3 FP1+, and 7.2 FP11+`
 
-You can customize your content page to different groups of users using *Experiences*. See [Content Page Personalization](./content-page-personalization.md) to learn how experiences can contribute to site personalization.
+You can customize your content page for different groups of users using *Experiences*. See [Content Page Personalization](./content-page-personalization.md) to learn how experiences can contribute to site personalization.
 
 ## Creating Experiences
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Site Builder* &rarr; *Pages*.
 
-1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for an content page and select *Edit*. Alternatively, [create a content page](../../creating-pages/using-content-pages.md).
+1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for an content page and select *Edit*. Alternatively, [create a content page](../../creating-pages/using-content-pages.md).
 
-1. Open the Experience drop-down menu and click *New Experience*.
+1. Open the *Experience* drop-down menu and click *New Experience*.
 
    ![Open the Experience drop-down menu and click New Experience.](./creating-and-managing-experiences/images/01.png)
 
@@ -20,7 +20,7 @@ You can customize your content page to different groups of users using *Experien
 
 1. Design the content page to determine the information and layout that appears for the targeted segment.
 
-1. Open the Experience drop-down menu and click the *Up* (![Up](../../../images/icon-angle-up.png)) or *Down* (![Down](../../../images/icon-angle-down.png)) buttons to set the experience's priority.
+1. Open the *Experience* drop-down menu and click the *Up* (![Up](../../../images/icon-angle-up.png)) or *Down* (![Down](../../../images/icon-angle-down.png)) buttons to set the experience's priority.
 
    Site visitors see the highest ranking experience for their segment. See [Understanding How Experiences Work](./content-page-personalization.md#understanding-how-experiences-work) for more information.
 
@@ -34,9 +34,9 @@ When you edit a content page, you can click the experience to manage the options
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Site Builder* &rarr; *Pages*.
 
-1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for a content page and select *Edit*.
+1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for a content page and select *Edit*.
 
-1. Open the Experience drop-down menu. From here,
+1. Open the *Experience* drop-down menu. From here,
 
    * Set the experience priority, using the Up (![Up](../../../images/icon-angle-up.png)) and Down (![Down](../../../images/icon-angle-down.png)) controls.
    * Edit (![Edit](../../../images/icon-edit.png)) the experience's name or the selected segment.

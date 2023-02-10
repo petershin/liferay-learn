@@ -34,11 +34,11 @@ You can follow the above steps to configure and use other operations in your flo
 
 ## Batch Export Operation
 
-This operation allows you to get all records of a specified entity with a single request. This is useful when the number of records are very high. If the number of records are low, you can use the *Get Records* operation.
+With this operation you can get all records of a specified entity with a single request. This is useful when you have a lot of records. When there are only a few records, use the *Get Records* operation.
 
 ![Use the Batch - Export Records operation to export multiple records.](./designing-mule-flows/images/03.png)
 
-To configure a batch export operation, first select the entity you want to export using the *Class name* drop-down. Once selected, the connector dynamically generates related output metadata. If desired, you can use the *Field names* input to specify the fields to include in the exported entity. Field names must be separated using commas. You can also specify a *Site ID* parameter if required by the batch processing logic.
+To configure a batch export operation, select the entity you want to export using the Class name drop-down. Once selected, the connector dynamically generates related output metadata. If desired, you can use the Field names input to specify the fields to include in the exported entity. Field names must be separated using commas. You can also specify a *Site ID* parameter if required by the batch processing logic.
 
 | Parameter name | Type   | Description                                                                                                                                                               | Required |
 | :------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------- |
@@ -46,11 +46,11 @@ To configure a batch export operation, first select the entity you want to expor
 | Site ID        | String | The [siteId](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) query parameter | No       |
 | Field names    | String | Comma separated list of exported entity fields                                                                                                                            | No       |
 
-Executing this flow results in a JSON array of products that is ready for transformation and loading into another application.
+Executing this flow results in a JSON array that is ready for transformation and loading into another application.
 
 ## Batch Import Operations
 
-There are three batch import operations available: create, delete, and update. Each operation imports a set of entities, but Liferay's batch engine processes them differently. The following example shows a batch import create operation.
+There are three available batch import operations: create, delete, and update. Each operation imports a set of entities, but Liferay's batch engine processes them differently. The image below shows a batch import create operation.
 
 ![Use the Batch - Import Records operation to import bulk records.](./designing-mule-flows/images/04.png)
 

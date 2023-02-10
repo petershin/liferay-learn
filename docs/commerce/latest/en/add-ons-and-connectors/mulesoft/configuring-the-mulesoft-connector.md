@@ -22,13 +22,11 @@ Before configuring the connector, you must add it to your Mule project:
 
 1. Click *Finish*.
 
-The connector is now available in your Mule project.
+The connector now appears in your Mule project.
 
 ![Set the Client Profile as Headless Server in the OAuth2 configuration.](./configuring-the-mulesoft-connector/images/01.gif)
 
 ## Connector Configuration
-
-To configure the Liferay connector,
 
 1. Select an authentication method and enter the required parameters.
 
@@ -42,7 +40,7 @@ Choose between *Basic* and *OAuth2* authentication methods.
 
 **OAuth2**: Enter a client key and client secret.
 
-For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). Basic authentication is only provided for basic testing and demonstration.
+For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). Basic authentication is provided only for basic testing and demonstration.
 
 When setting up OAuth2 in Liferay, select *Headless Server* for Client Profile. Liferay generates a client ID (consumer key) and client secret (consumer secret) for use in the connector.
 

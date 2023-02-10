@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Available Liferay 7.4 U47+/GA47+`
 
-The Objects application is integrated with Liferay's Audit framework, so you can track events for both object definitions and entries. To access the Audit application, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Audit*.
+The Objects application is integrated with Liferay's Audit framework, so you can track events for object definitions and entries. To access the Audit application, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Audit*.
 
 ![Click Audit in the Control Panel to view events related to object definitions.](./auditing-object-definition-events/images/01.png)
 
@@ -32,7 +32,7 @@ Follow these steps:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Begin editing the desired object definition draft.
+1. Edit an object definition draft.
 
 1. In the Details tab, enable entry history and click *Save*.
 

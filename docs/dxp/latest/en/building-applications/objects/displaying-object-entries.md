@@ -94,7 +94,7 @@ Follow these steps:
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Begin editing the desired object definition.
+1. Edit an object definition.
 
 1. In the Details tab, enable comments and click *Save*.
 
@@ -104,7 +104,7 @@ Follow these steps:
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and go to *Design* &rarr; *Templates* &rarr; *Information Templates*.
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png))
+1. Click *Add* (![Add Button](../../images/icon-add.png))
 
 1. Enter a *name* and select the desired *Object*.
 
@@ -112,7 +112,7 @@ Follow these steps:
 
 1. Click *Save*. This redirects you to the template design page.
 
-1. (Optional) Click the Actions button (![Actions Button](../../images/icon-actions.png)) in the Application Bar, select *Import Script*, and choose an `.ftl` file to import. This replaces the current template with the file's FreeMarker script.
+1. (Optional) Click Actions (![Actions Button](../../images/icon-actions.png)) in the Application Bar, select *Import Script*, and choose an `.ftl` file to import. This replaces the current template with the file's FreeMarker script.
 
    ![Import script from an .ftl file.](./displaying-object-entries/images/12.png)
 
@@ -134,7 +134,7 @@ You can now select from the template when mapping Object entries to fragment fie
 
 ## Adding Entries to Navigation Menus
 
-Since Objects are integrated with the info framework, you can add Object entries to navigation menus to provide quick access. All published Objects are automatically listed as available sources for menu elements. See [Using the Navigation Menus Application](../../site-building/site-navigation/using-the-navigation-menus-application.md) for more information.
+Since Objects are integrated with the info framework, you can add Object entries to navigation menus to provide quick access. All published Objects automatically appear as available sources for menu elements. See [Using the Navigation Menus Application](../../site-building/site-navigation/using-the-navigation-menus-application.md) for more information.
 
 ## Additional Information
 

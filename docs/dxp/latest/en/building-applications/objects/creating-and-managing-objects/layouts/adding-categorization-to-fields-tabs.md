@@ -16,9 +16,9 @@ You can add categorization blocks to [fields tabs](./designing-object-layouts.md
 
    ![Enable categorization.](./adding-categorization-to-fields-tabs/images/01.png)
 
-1. Go to the *Layouts* tab and select the desired layout.
+1. Click the *Layouts* tab and select the desired layout.
 
-1. Go to the *Layout* tab, click the *Actions* button (![Actions Button](../../../../images/icon-actions.png)) for the desired [Fields tab](./designing-object-layouts.md#fields-tabs), and select *Add Categorization*.
+1. Go to the *Layout* tab, click *Actions* (![Actions Button](../../../../images/icon-actions.png)) for the desired [Fields tab](./designing-object-layouts.md#fields-tabs), and select *Add Categorization*.
 
    ![Click the Actions button and select Add Categorization.](./adding-categorization-to-fields-tabs/images/02.png)
 

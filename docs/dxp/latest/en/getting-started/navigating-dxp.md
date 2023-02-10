@@ -96,7 +96,7 @@ Here are some functions that can be managed from the _Commerce_ menu:
 
 * [Creating a New Catalog](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html)
 * [Creating a New Channel](https://learn.liferay.com/commerce/latest/en/starting-a-store/channels/managing-channels.html)
-* [Manage Inventory](https://learn.liferay.com/commerce/latest/en/product-management/managing-inventory/introduction-to-managing-inventory.html)
+* [Manage Inventory](https://learn.liferay.com/commerce/latest/en/inventory-management.html)
 * [Process Orders](https://learn.liferay.com/commerce/latest/en/order-management/orders/processing-an-order.html)
 * And more..
 

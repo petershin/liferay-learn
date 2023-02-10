@@ -23,6 +23,6 @@ PayPal을 사용하도록 상점을 구성하기 전에 PayPal 클라이언트 I
 다른 결제 방법 추가에 대한 자세한 내용은 다음과 같습니다.
 
 * [새 통화 추가](../currencies/adding-a-new-currency.md)
-* [Authorize.net](./authorize.net.md)
+* [Authorize.net](./authorize-net.md)
 * [Mercanet](./mercanet.md)
 * [구독 버튼으로 반복 결제 실패 재시도](https://developer.paypal.com/docs/paypal-payments-standard/integration-guide/reattempt-failed-payment/)

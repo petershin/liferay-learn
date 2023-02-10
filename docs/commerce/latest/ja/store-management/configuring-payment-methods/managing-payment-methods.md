@@ -34,7 +34,7 @@ Liferay Commerceの支払い方法は、[チャネル](../../store-management/ch
 
 各支払方法を有効にする方法については、対応する記事を参照してください。
 
-* [Authorize.net](./authorize.net.md)
+* [Authorize.net](./authorize-net.md)
 * [Mercanet](./mercanet.md)
 * [郵便為替](./money-orders.md)
 * [PayPal](./paypal.md)

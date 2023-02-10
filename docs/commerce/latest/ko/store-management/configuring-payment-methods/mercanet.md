@@ -48,5 +48,5 @@ _유로_ 이 이제 기본 통화로 설정됩니다.
 ## 추가 정보
 
 * [새 통화 추가](../currencies/adding-a-new-currency.md)
-* [Authorize.Net](./authorize.net.md)
+* [Authorize.Net](./authorize-net.md)
 * [PayPal](./paypal.md)

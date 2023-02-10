@@ -15,12 +15,12 @@ To activate Authorize.net as a payment method:
 
 1. Navigate to _Control Panel_ → Commerce → _Channels_.
 
-    ![Commerce Channels](./authorize.net/images/03.png)
+    ![Commerce Channels](./authorize-net/images/03.png)
 
 1. Click on the desired Channel.
 1. Scroll down then click _Edit_ next to Authorize.net.
 
-    ![Click Edit to begin configuring Authorize.net](./authorize.net/images/04.png)
+    ![Click Edit to begin configuring Authorize.net](./authorize-net/images/04.png)
 
 1. Switch the _Active_ Toggle to _Yes_.
 1. Click the _Configuration_ tab.
@@ -36,7 +36,7 @@ To activate Authorize.net as a payment method:
     * _Require CAPTCHA_
     * _Require Card Code Verification_
 
-     ![Authorize.Net Settings](./authorize.net/images/01.png)
+     ![Authorize.Net Settings](./authorize-net/images/01.png)
 
 1. Click _Save_.
 1. Click the _3-dot icon_ next to _Authorize.Net_ then _Activate_.
@@ -47,7 +47,7 @@ Once finished, Authorize.Net is now enabled.
 
 1. Navigate to _Site Administration → Commerce → Settings → Payment Methods_.
 
-    ![Authorize.Net Settings](./authorize.net/images/05.png)
+    ![Authorize.Net Settings](./authorize-net/images/05.png)
 
 1. Click the Add (+) button then _Authorize.Net_.
 1. Click _Configuration_.
@@ -63,7 +63,7 @@ Once finished, Authorize.Net is now enabled.
     * _Require CAPTCHA_
     * _Require Card Code Verification_
 
-       ![Authorize.Net Settings](./authorize.net/images/02.png)
+       ![Authorize.Net Settings](./authorize-net/images/02.png)
 
 1. Click _Save_.
 1. Click the _3-dot icon_ next to _Authorize.Net_ then _Activate_.

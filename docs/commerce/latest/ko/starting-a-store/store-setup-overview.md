@@ -44,7 +44,7 @@ Liferay Commerce는 여러 제3자 결제 프로세서에 대한 지원을 제�
 
 * [결제](../store-management/configuring-payment-methods.md)
 * [결제 수단 관리](../store-management/configuring-payment-methods/managing-payment-methods.md)
-* [Authorize.net](../store-management/configuring-payment-methods/authorize.net.md)
+* [Authorize.net](../store-management/configuring-payment-methods/authorize-net.md)
 * [PayPal](../store-management/configuring-payment-methods/mercanet.md)
 * [Mercanet](../store-management/configuring-payment-methods/mercanet.md)
 * [우편환](../store-management/configuring-payment-methods/mercanet.md)

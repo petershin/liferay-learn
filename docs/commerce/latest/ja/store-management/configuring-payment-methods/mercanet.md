@@ -48,5 +48,5 @@ Mercanetがストアで有効になりました。
 ## 追加情報
 
 * [新しい通貨の追加](../currencies/adding-a-new-currency.md)
-* [Authorize.net](./authorize.net.md)
+* [Authorize.net](./authorize-net.md)
 * [PayPal](./paypal.md)

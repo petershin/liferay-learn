@@ -1,7 +1,7 @@
 ---
 toc:
 - ./configuring-payment-methods/managing-payment-methods.md
-- ./configuring-payment-methods/authorize.net.md
+- ./configuring-payment-methods/authorize-net.md
 - ./configuring-payment-methods/mercanet.md
 - ./configuring-payment-methods/money-orders.md
 - ./configuring-payment-methods/paypal.md
@@ -12,7 +12,7 @@ toc:
 :maxdepth: 1
 
 configuring-payment-methods/managing-payment-methods.md
-configuring-payment-methods/authorize.net.md
+configuring-payment-methods/authorize-net.md
 configuring-payment-methods/mercanet.md
 configuring-payment-methods/money-orders.md
 configuring-payment-methods/paypal.md

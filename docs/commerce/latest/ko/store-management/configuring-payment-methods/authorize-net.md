@@ -15,12 +15,12 @@ Authorize.net을 결제 수단으로 활성화하려면:
 
 1. _제어판_ → 상거래 → _채널_으로 이동합니다.
 
-    ![커머스 채널](./authorize.net/images/03.png)
+    ![커머스 채널](./authorize-net/images/03.png)
 
 1. 원하는 채널을 클릭합니다.
 1. 아래로 스크롤한 다음 Authorize.net 옆에 있는 _편집_ 을 클릭합니다.
 
-    ![편집을 클릭하여 Authorize.net 구성을 시작합니다.](./authorize.net/images/04.png)
+    ![편집을 클릭하여 Authorize.net 구성을 시작합니다.](./authorize-net/images/04.png)
 
 1. _활성_ 토글을 _예_으로 전환합니다.
 1. _구성_ 탭을 클릭합니다.
@@ -36,7 +36,7 @@ Authorize.net을 결제 수단으로 활성화하려면:
     * _CAPTCHA 필요_
     * _카드 코드 확인 필요_
 
-     ![Authorize.Net 설정](./authorize.net/images/01.png)
+     ![Authorize.Net 설정](./authorize-net/images/01.png)
 
 1. _저장_을 클릭합니다.
 1. _Authorize.Net_ 옆에 있는 _점 3개 아이콘_ 을 클릭한 다음 _활성화_를 클릭합니다.
@@ -47,7 +47,7 @@ Authorize.net을 결제 수단으로 활성화하려면:
 
 1. _사이트 관리 → 상거래 → 설정 → 지불 방법_으로 이동합니다.
 
-    ![Authorize.Net 설정](./authorize.net/images/05.png)
+    ![Authorize.Net 설정](./authorize-net/images/05.png)
 
 1. 추가(+) 버튼을 클릭한 다음 _Authorize.Net_을 클릭합니다.
 1. _구성_을 클릭합니다.
@@ -63,7 +63,7 @@ Authorize.net을 결제 수단으로 활성화하려면:
     * _CAPTCHA 필요_
     * _카드 코드 확인 필요_
 
-       ![Authorize.Net 설정](./authorize.net/images/02.png)
+       ![Authorize.Net 설정](./authorize-net/images/02.png)
 
 1. _저장_을 클릭합니다.
 1. _Authorize.Net_ 옆에 있는 _점 3개 아이콘_ 을 클릭한 다음 _활성화_를 클릭합니다.

@@ -23,6 +23,6 @@ PayPalがストアで有効になりました。
 他の支払方法の追加に関する詳細は次のとおりです。
 
 * [新しい通貨の追加](../currencies/adding-a-new-currency.md)
-* [Authorize.net](./authorize.net.md)
+* [Authorize.net](./authorize-net.md)
 * [Mercanet](./mercanet.md)
 * [失敗した支払を再試行する](https://developer.paypal.com/docs/paypal-payments-standard/integration-guide/reattempt-failed-payment/)

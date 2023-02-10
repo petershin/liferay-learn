@@ -34,7 +34,7 @@
 
 각 결제 방법을 활성화하는 방법은 해당 문서를 참조하십시오.
 
-* [Authorize.net](./authorize.net.md)
+* [Authorize.net](./authorize-net.md)
 * [Mercanet](./mercanet.md)
 * [우편환](./money-orders.md)
 * [PayPal](./paypal.md)

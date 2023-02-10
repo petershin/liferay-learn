@@ -44,7 +44,7 @@ Liferay Commerceは、複数のサードパーティの支払い処理業者に�
 
 * [支払い](../store-management/configuring-payment-methods.md)
 * [支払い方法の管理](../store-management/configuring-payment-methods/managing-payment-methods.md)
-* [Authorize.net](../store-management/configuring-payment-methods/authorize.net.md)
+* [Authorize.net](../store-management/configuring-payment-methods/authorize-net.md)
 * [PayPal](../store-management/configuring-payment-methods/mercanet.md)
 * [Mercanet](../store-management/configuring-payment-methods/mercanet.md)
 * [郵便為替](../store-management/configuring-payment-methods/mercanet.md)

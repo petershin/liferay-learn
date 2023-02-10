@@ -53,4 +53,4 @@ liferay-npm-bundler 2.x를 사용하도록 Angular 프로젝트를 마이그레�
 ## 관련 정보
 
 * [AMD용 npm 모듈 포맷](../how-the-bundler-formats-js-modules.md)
-* [liferay-npm-bundler 1.x와 2.x 사이에 변경된 사항](../changes-between-bundler-1.x-and-2.x.md)
+* [liferay-npm-bundler 1.x와 2.x 사이에 변경된 사항](../changes-between-bundler-1-x-and-2-x.md)

@@ -17,7 +17,7 @@ other-tools/liferay-npm-bundler.md
 
 * [Liferay npm 번들러](./other-tools/liferay-npm-bundler/liferay-npm-bundler-intro.md)
 * [번들러 로더 이해](./other-tools/liferay-npm-bundler/understanding-bundler-loaders.md)
-* [번들러 1.x와 2.x 간의 변경 사항](./other-tools/liferay-npm-bundler/changes-between-bundler-1.x-and-2.x.md)
+* [번들러 1.x와 2.x 간의 변경 사항](./other-tools/liferay-npm-bundler/changes-between-bundler-1-x-and-2-x.md)
 * [기본 번들러 로더](./other-tools/liferay-npm-bundler/default-bundler-loaders.md)
 * [Liferay 및 로더 구성을 내보내는 방법](./other-tools/liferay-npm-bundler/how-liferay-amd-loader-configuration-is-exported.md)
 * [포털이 npm 패키지를 게시하는 방법](./other-tools/liferay-npm-bundler/how-portal-publishes-npm-packages.md)

@@ -40,15 +40,15 @@ Liferay Commerce 2.1以下をインストールする前に、お使いのイン
 
 ### Dockerイメージを使ったインストール
 
-Dockerを使用してLiferay Commerceをインストールします。 詳細は、[Liferay Commerce Dockerイメージの使用](./installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md)を参照してください。
+Dockerを使用してLiferay Commerceをインストールします。 詳細は、[Liferay Commerce Dockerイメージの使用](./installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md)を参照してください。
 
 ### バンドルを使ったインストール
 
-[Liferay Community Downloads](https://commerce.liferay.dev/download) ページのバンドルを使用してLiferay Commerceをインストールします。 詳細は、 [Liferay Commerce Tomcatバンドルの使用](./installing-commerce-2.1-and-below/using-the-liferay-commerce-tomcat-bundle.md) を参照してください。
+[Liferay Community Downloads](https://commerce.liferay.dev/download) ページのバンドルを使用してLiferay Commerceをインストールします。 詳細は、 [Liferay Commerce Tomcatバンドルの使用](./installing-commerce-2-1-and-below/using-the-liferay-commerce-tomcat-bundle.md) を参照してください。
 
 ### 既存のLiferay DXPインストールを利用したインストール
 
-`LPKG` ファイルを既存のLiferay DXPインストールに展開して、Liferay Commerceをインストールします。 詳細は、[Liferay Commerceを既存のLiferayインストールにデプロイする](./installing-commerce-2.1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md)を参照してください。
+`LPKG` ファイルを既存のLiferay DXPインストールに展開して、Liferay Commerceをインストールします。 詳細は、[Liferay Commerceを既存のLiferayインストールにデプロイする](./installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md)を参照してください。
 
 ## 追加情報
 

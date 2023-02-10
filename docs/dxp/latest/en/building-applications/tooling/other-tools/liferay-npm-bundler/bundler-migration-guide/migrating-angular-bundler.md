@@ -53,4 +53,4 @@ Great! Your project is migrated to use liferay-npm-bundler 2.x.
 ## Related Information
 
 * [Formatting Your npm Modules for AMD](../how-the-bundler-formats-js-modules.md)
-* [What Changed between liferay-npm-bundler 1.x and 2.x](../changes-between-bundler-1.x-and-2.x.md)
+* [What Changed between liferay-npm-bundler 1.x and 2.x](../changes-between-bundler-1-x-and-2-x.md)

@@ -74,7 +74,7 @@ Using the example above, for each group of canonical URLs referring to the same 
 The OSGi bundle ID (598 in the example) is removed and module is replaced by `resolved-module`.
 ```
 
-Next you can learn how the bundler (since version 2.0.0) isolates package dependencies. See [What Changed Between liferay-npm-bundler 1.x and 2.x](./changes-between-bundler-1.x-and-2.x.md) for more information on why this change was made. 
+Next you can learn how the bundler (since version 2.0.0) isolates package dependencies. See [What Changed Between liferay-npm-bundler 1.x and 2.x](./changes-between-bundler-1-x-and-2-x.md) for more information on why this change was made. 
 
 ## Isolated Package Dependencies
 

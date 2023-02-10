@@ -74,7 +74,7 @@ OSGiバンドルID（598）は異なる場合があります。
 OSGiバンドルID（例では598）は削除され、モジュールは「resolved-module」に置き換えられます。
 ```
 
-次に、バンドラー（バージョン2.0.0以降）がパッケージの依存関係を分離する方法を学びます。 この変更が行われた理由の詳細については、[What Changed Between liferay-npm-bundler 1.x and 2.x](./changes-between-bundler-1.x-and-2.x.md)参照してください。
+次に、バンドラー（バージョン2.0.0以降）がパッケージの依存関係を分離する方法を学びます。 この変更が行われた理由の詳細については、[What Changed Between liferay-npm-bundler 1.x and 2.x](./changes-between-bundler-1-x-and-2-x.md)参照してください。
 
 ## 分離されたパッケージの依存関係
 

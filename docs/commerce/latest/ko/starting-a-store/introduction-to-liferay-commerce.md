@@ -65,5 +65,5 @@ Mulesoft 커넥터, Talend 구성 요소를 통해 또는 Salesforce, SAP ERP(_�
 ## 다음 단계
 
 * [설치 개요](../installation-and-upgrades/installation-overview.md)
-* [Liferay Commerce Docker 이미지 사용](../installation-and-upgrades/installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md)
+* [Liferay Commerce Docker 이미지 사용](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md)
 * [Miniium Accelerator를 사용하여 완전한 B2B 사이트 설정](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)

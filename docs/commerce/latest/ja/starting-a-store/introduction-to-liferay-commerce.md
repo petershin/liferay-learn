@@ -12,7 +12,7 @@ Liferay Commerce へようこそ！  Liferay Commerceは、あらゆるB2B組織
 * [APIと統合](#apis-and-integrations)
 * [次のステップ](#next-steps)
 
-開始する準備は整いましたか？ [ Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md) してLiferay Commerce **を迅速に起動します** 。
+開始する準備は整いましたか？ [ Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md) してLiferay Commerce **を迅速に起動します** 。
 
 ## 最新のストアフロントページとコンテンツ管理
 
@@ -63,5 +63,5 @@ Mulesoftコネクタ、Talendコンポーネント、またはSalesforce、SAP E
 ## 次のステップ
 
 * [インストールの概要](../installation-and-upgrades/installation-overview.md)
-* [Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md)
+* [Liferay Commerce Dockerイメージの使用](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md)
 * [Minium Acceleratorを使用して完全なB2Bサイトをセットアップ](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)

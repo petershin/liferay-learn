@@ -2,7 +2,7 @@
 toc:
 - ./liferay-npm-bundler/liferay-npm-bundler-intro.md
 - ./liferay-npm-bundler/understanding-bundler-loaders.md
-- ./liferay-npm-bundler/changes-between-bundler-1.x-and-2.x.md
+- ./liferay-npm-bundler/changes-between-bundler-1-x-and-2-x.md
 - ./liferay-npm-bundler/default-bundler-loaders.md
 - ./liferay-npm-bundler/how-liferay-amd-loader-configuration-is-exported.md
 - ./liferay-npm-bundler/how-portal-publishes-npm-packages.md
@@ -19,7 +19,7 @@ toc:
 
 liferay-npm-bundler/liferay-npm-bundler-intro.md
 liferay-npm-bundler/understanding-bundler-loaders.md
-liferay-npm-bundler/changes-between-bundler-1.x-and-2.x.md
+liferay-npm-bundler/changes-between-bundler-1-x-and-2-x.md
 liferay-npm-bundler/default-bundler-loaders.md
 liferay-npm-bundler/how-liferay-amd-loader-configuration-is-exported.md
 liferay-npm-bundler/how-portal-publishes-npm-packages.md
@@ -42,7 +42,7 @@ liferay-npm-bundler/bundler-migration-guide.md
 :::
 
 :::{grid-item-card} Changes Between Bundler 1.x and 2.x
-:link: ./liferay-npm-bundler/changes-between-bundler-1.x-and-2.x.md
+:link: ./liferay-npm-bundler/changes-between-bundler-1-x-and-2-x.md
 :::
 
 :::{grid-item-card} Default Bundler Loaders

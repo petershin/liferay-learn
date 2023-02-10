@@ -17,7 +17,7 @@ other-tools/liferay-npm-bundler.md
 
 * [Liferay npmバンドラー](./other-tools/liferay-npm-bundler/liferay-npm-bundler-intro.md)
 * [バンドラーローダーについて](./other-tools/liferay-npm-bundler/understanding-bundler-loaders.md)
-* [Bundler 1.xと2.xの間の変更点](./other-tools/liferay-npm-bundler/changes-between-bundler-1.x-and-2.x.md)
+* [Bundler 1.xと2.xの間の変更点](./other-tools/liferay-npm-bundler/changes-between-bundler-1-x-and-2-x.md)
 * [デフォルトのバンドラーローダー](./other-tools/liferay-npm-bundler/default-bundler-loaders.md)
 * [Liferayとローダー構成のエクスポート方法](./other-tools/liferay-npm-bundler/how-liferay-amd-loader-configuration-is-exported.md)
 * [ポータルがnpmパッケージを公開する方法](./other-tools/liferay-npm-bundler/how-portal-publishes-npm-packages.md)

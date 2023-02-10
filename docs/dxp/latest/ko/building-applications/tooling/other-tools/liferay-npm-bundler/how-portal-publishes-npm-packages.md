@@ -74,7 +74,7 @@ OSGi 번들 ID(598)는 다를 수 있습니다.
 OSGi 번들 ID(예제에서는 598)가 제거되고 모듈이 'resolved-module'로 대체됩니다.
 ```
 
-다음으로 번들러(버전 2.0.0부터)가 패키지 종속성을 분리하는 방법을 배울 수 있습니다. 이 변경이 이루어진 이유에 대한 자세한 내용은 [What Changed Between liferay-npm-bundler 1.x and 2.x](./changes-between-bundler-1.x-and-2.x.md) 을 참조하십시오.
+다음으로 번들러(버전 2.0.0부터)가 패키지 종속성을 분리하는 방법을 배울 수 있습니다. 이 변경이 이루어진 이유에 대한 자세한 내용은 [What Changed Between liferay-npm-bundler 1.x and 2.x](./changes-between-bundler-1-x-and-2-x.md) 을 참조하십시오.
 
 ## 격리된 패키지 종속성
 

@@ -1,17 +1,17 @@
 ---
 toc:
-- ./installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md
-- ./installing-commerce-2.1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md
-- ./installing-commerce-2.1-and-below/using-the-liferay-commerce-tomcat-bundle.md
+- ./installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md
+- ./installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md
+- ./installing-commerce-2-1-and-below/using-the-liferay-commerce-tomcat-bundle.md
 ---
 # Commerce 2.1 이하 설치
 
 ```{toctree}
 :maxdepth: 1
 
-installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md
-installing-commerce-2.1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md
-installing-commerce-2.1-and-below/using-the-liferay-commerce-tomcat-bundle.md
+installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md
+installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md
+installing-commerce-2-1-and-below/using-the-liferay-commerce-tomcat-bundle.md
 ```
 
 ```{raw} html
@@ -19,5 +19,5 @@ installing-commerce-2.1-and-below/using-the-liferay-commerce-tomcat-bundle.md
 ```
 
 ```{raw} html
-:file: installing-commerce-2.1-and-below/landing.html
+:file: installing-commerce-2-1-and-below/landing.html
 ```

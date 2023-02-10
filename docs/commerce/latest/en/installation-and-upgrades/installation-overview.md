@@ -43,15 +43,15 @@ Before installing Liferay Commerce 2.1 and below, review the system requirements
 
 ### Installing Using a Docker Image
 
-Install Liferay Commerce using Docker. See [Using Liferay Commerce Docker Image](./installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md) for more information.
+Install Liferay Commerce using Docker. See [Using Liferay Commerce Docker Image](./installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md) for more information.
 
 ### Installing Using a Bundle
 
-Install Liferay Commerce using a bundle from the [Liferay Community Downloads](https://commerce.liferay.dev/download) page. See [Using the Liferay Commerce Tomcat Bundle](./installing-commerce-2.1-and-below/using-the-liferay-commerce-tomcat-bundle.md) for more information.
+Install Liferay Commerce using a bundle from the [Liferay Community Downloads](https://commerce.liferay.dev/download) page. See [Using the Liferay Commerce Tomcat Bundle](./installing-commerce-2-1-and-below/using-the-liferay-commerce-tomcat-bundle.md) for more information.
 
 ### Installing Using an Existing Liferay DXP Installation
 
-Install Liferay Commerce by deploying the `LPKG` file to your preexisting Liferay DXP installation. See [Deploying Liferay Commerce to an Existing Installation](./installing-commerce-2.1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md) for more information.
+Install Liferay Commerce by deploying the `LPKG` file to your preexisting Liferay DXP installation. See [Deploying Liferay Commerce to an Existing Installation](./installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md) for more information.
 
 ## Additional Information
 

@@ -17,7 +17,7 @@ other-tools/liferay-npm-bundler.md
 
 * [Liferay npm Bundler](./other-tools/liferay-npm-bundler/liferay-npm-bundler-intro.md)
 * [Understanding Bundler Loaders](./other-tools/liferay-npm-bundler/understanding-bundler-loaders.md)
-* [Changes Between Bundler 1.x and 2.x](./other-tools/liferay-npm-bundler/changes-between-bundler-1.x-and-2.x.md)
+* [Changes Between Bundler 1.x and 2.x](./other-tools/liferay-npm-bundler/changes-between-bundler-1-x-and-2-x.md)
 * [Default Bundler Loaders](./other-tools/liferay-npm-bundler/default-bundler-loaders.md)
 * [How Liferay and Loader Configuration is Exported](./other-tools/liferay-npm-bundler/how-liferay-amd-loader-configuration-is-exported.md)
 * [How Portal Publishes npm Packages](./other-tools/liferay-npm-bundler/how-portal-publishes-npm-packages.md)

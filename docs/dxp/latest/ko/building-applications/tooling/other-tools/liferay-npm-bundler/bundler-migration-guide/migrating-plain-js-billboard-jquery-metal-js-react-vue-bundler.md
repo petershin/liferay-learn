@@ -48,4 +48,4 @@
 
 ## 관련 정보
 
-* [AMD](../how-the-bundler-formats-js-modules.md)용 npm 모듈 포맷<!-- * \[Using the NPMResolver API in Your Portlets\](/docs/7-2/frameworks/-/knowledge_base/f/using-the-npmresolver-api-in-your-portlets) TODO: Update link-->* [liferay-npm-bundler 1.x와 2.x 사이에 변경된 사항](../changes-between-bundler-1.x-and-2.x.md)
+* [AMD](../how-the-bundler-formats-js-modules.md)용 npm 모듈 포맷<!-- * \[Using the NPMResolver API in Your Portlets\](/docs/7-2/frameworks/-/knowledge_base/f/using-the-npmresolver-api-in-your-portlets) TODO: Update link-->* [liferay-npm-bundler 1.x와 2.x 사이에 변경된 사항](../changes-between-bundler-1-x-and-2-x.md)

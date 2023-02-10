@@ -108,6 +108,6 @@ PunchOut2Go에 대한 커넥터가 활성화된 체크아웃 프로세스는 동
 
 ## 추가 정보
 
-* [기존 Liferay 설치에 Liferay Commerce 배포](../../installation-and-upgrades/installing-commerce-2.1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md)
+* [기존 Liferay 설치에 Liferay Commerce 배포](../../installation-and-upgrades/installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md)
 * [Liferay Commerce Enterprise 활성화](../../installation-and-upgrades/activating-liferay-commerce-enterprise.md)
 * [PunchOut2Go 참조 가이드에 대한 Liferay Commerce 커넥터](./liferay-commerce-connector-to-punchout2go-reference-guide.md)

@@ -40,15 +40,15 @@ Liferay Commerce 2.1 이하를 설치하기 전에 설치 버전에 해당하는
 
 ### Docker 이미지를 사용하여 설치
 
-Docker를 사용하여 Liferay Commerce를 설치합니다. 자세한 내용은 [Liferay Commerce Docker 이미지 사용](./installing-commerce-2.1-and-below/using-the-liferay-commerce-docker-image.md) 을 참조하십시오.
+Docker를 사용하여 Liferay Commerce를 설치합니다. 자세한 내용은 [Liferay Commerce Docker 이미지 사용](./installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md) 을 참조하십시오.
 
 ### 번들을 사용하여 설치
 
-[Liferay Community Downloads](https://commerce.liferay.dev/download) 페이지의 번들을 사용하여 Liferay Commerce를 설치합니다. 자세한 내용은 [Liferay Commerce Tomcat 번들 사용](./installing-commerce-2.1-and-below/using-the-liferay-commerce-tomcat-bundle.md) 을 참조하십시오.
+[Liferay Community Downloads](https://commerce.liferay.dev/download) 페이지의 번들을 사용하여 Liferay Commerce를 설치합니다. 자세한 내용은 [Liferay Commerce Tomcat 번들 사용](./installing-commerce-2-1-and-below/using-the-liferay-commerce-tomcat-bundle.md) 을 참조하십시오.
 
 ### 기존 Liferay DXP 설치를 사용하여 설치
 
-기존 Liferay DXP 설치에 `LPKG` 파일을 배포하여 Liferay Commerce를 설치합니다. 자세한 내용은 [기존 설치에 Liferay Commerce 배포](./installing-commerce-2.1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md) 을 참조하십시오.
+기존 Liferay DXP 설치에 `LPKG` 파일을 배포하여 Liferay Commerce를 설치합니다. 자세한 내용은 [기존 설치에 Liferay Commerce 배포](./installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md) 을 참조하십시오.
 
 ## 추가 정보
 

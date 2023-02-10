@@ -15,7 +15,7 @@ After selecting a type, you can view its variables and their descriptions by exp
 | Variable                       | Description                                                                                                                                      |
 | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
 | [%ACCOUNT_ROLE_ORDER_MANAGER%] | Order manager(s) for the account that placed the order                                                                                           |
-| [%ORDER_CREATOR%]              | User that created the order                                                                                                                      |
+| [%ORDER_CREATOR%]              | User who created the order                                                                                                                      |
 | [%ACCOUNT_ROLE_ADMINISTRATOR%] | Account administrator(s) for the account that placed the order                                                                                   |
 | [%USER_GROUP_NAME%]            | Name of a user group. Replace `NAME` with the user group name (e.g., for user group Sales Consultants, enter `[%USER_GROUP_Sales Consultants%]`) |
 
@@ -53,13 +53,13 @@ Channels have six types of notification templates for order events:
 | [%ORDER_PAYMENT_METHOD%]          | Order's payment method                         |
 | [%ORDER_TAX_TOTAL%]               | Total tax for the order                        |
 | [%ORDER_WITH_TAX_TOTAL%]          | Total amount for the order including tax       |
-| [%ORDER_CREATOR_USER_FIRST_NAME%] | First name of the user that created the order  |
+| [%ORDER_CREATOR_USER_FIRST_NAME%] | First name of the user who created the order  |
 | [%ORDER_SHIPPING_OPTION%]         | Order's shipping option                        |
-| [%ORDER_CREATOR_USER_LAST_NAME%]  | Last name of the user that created the order   |
+| [%ORDER_CREATOR_USER_LAST_NAME%]  | Last name of the user who created the order   |
 | [%DELIVERY_TERMS_DESCRIPTION%]    | Delivery terms attached to the order           |
-| [%ORDER_CREATOR%]                 | User that created the order                    |
+| [%ORDER_CREATOR%]                 | User who created the order                    |
 | [%ORDER_CURRENCY_CODE%]           | Currency code of the order (Example: USD, GBP) |
-| [%ORDER_CREATOR_USER_TITLE%]      | Title of the user that created the order       |
+| [%ORDER_CREATOR_USER_TITLE%]      | Title of the user who created the order       |
 | [%ORDER_SHIPPING_TOTAL%]          | Order's total shipping cost excluding tax      |
 
 ## Subscription Based Notification Template Types
@@ -79,7 +79,7 @@ Channels have four types of notification templates for subscription events:
 | Variable          | Description                 |
 | :---------------- | :-------------------------- |
 | [%PRODUCT_NAME%]  | Product Name                |
-| [%ORDER_CREATOR%] | User that created the order |
+| [%ORDER_CREATOR%] | User who created the order |
 | [%ORDER_ID%]      | Order ID                    |
 
 ## Additional Information

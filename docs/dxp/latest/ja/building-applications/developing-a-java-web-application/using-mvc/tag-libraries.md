@@ -1,7 +1,7 @@
 ---
 toc:
-- ./tag-libraries/liferay-theme-objects-for-Jsps.md
-- ./tag-libraries/liferay-portlet-objects-for-Jsps.md
+- ./tag-libraries/liferay-theme-objects-for-jsps.md
+- ./tag-libraries/liferay-portlet-objects-for-jsps.md
 - ./tag-libraries/alloy-ui-aui-tag-library.md
 - ./tag-libraries/clay-tag-library.md
 - ./tag-libraries/liferay-ui-tag-library.md
@@ -15,8 +15,8 @@ toc:
 ```{toctree}
 :maxdepth: 3
 
-tag-libraries/liferay-theme-objects-for-Jsps.md
-tag-libraries/liferay-portlet-objects-for-Jsps.md
+tag-libraries/liferay-theme-objects-for-jsps.md
+tag-libraries/liferay-portlet-objects-for-jsps.md
 tag-libraries/alloy-ui-aui-tag-library.md
 tag-libraries/clay-tag-library.md
 tag-libraries/liferay-ui-tag-library.md

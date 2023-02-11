@@ -1,6 +1,6 @@
 # JSP용 Liferay 포틀릿 개체
 
-JSP에서 `<liferay-portlet:defineObjects>` 태그를 발견했을 수 있습니다.  [theme:defineObjects](./liferay-theme-objects-for-Jsps.md)  태그와 마찬가지로 JSP에 이 태그를 포함하면 포틀릿에 대한 유용한 정보를 반환하는 여러 변수에 액세스할 수 있습니다. JSR-286 사양은 포틀릿에 대한 네 가지 수명 주기 메서드(processAction, processEvent, render 및 serveResource)를 정의합니다. `<portlet:defineObjects/>` 태그로 정의된 일부 변수는 JSP가 포틀릿 라이프사이클의 적절한 단계 중에 포함된 경우에만 JSP에서 사용할 수 있습니다. 이러한 개체는 아래 표에 설명되어 있습니다.
+JSP에서 `<liferay-portlet:defineObjects>` 태그를 발견했을 수 있습니다.  [theme:defineObjects](./liferay-theme-objects-for-jsps.md)  태그와 마찬가지로 JSP에 이 태그를 포함하면 포틀릿에 대한 유용한 정보를 반환하는 여러 변수에 액세스할 수 있습니다. JSR-286 사양은 포틀릿에 대한 네 가지 수명 주기 메서드(processAction, processEvent, render 및 serveResource)를 정의합니다. `<portlet:defineObjects/>` 태그로 정의된 일부 변수는 JSP가 포틀릿 라이프사이클의 적절한 단계 중에 포함된 경우에만 JSP에서 사용할 수 있습니다. 이러한 개체는 아래 표에 설명되어 있습니다.
 
 | 개체 | 설명 |
 | :--- | :--- |

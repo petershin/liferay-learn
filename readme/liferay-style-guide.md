@@ -60,7 +60,12 @@ We expend much effort to unify the voice of Liferay's documentation. To make man
 
 ### Friendly
 
-Prose should be friendly and welcoming. Liferay integrates with many products and services, and they should all be treated equally. Liferay is never compared to any other product in the documentation, and care should be taken not to assume the use of any particular integration product. For example, if a configuration is given for MySQL or for Tomcat, it should be given for every other database or application server Liferay supports. 
+Prose should be friendly and welcoming. Liferay integrates with many products and services, and they should all be treated equally. Liferay is never compared to any other product in the documentation, and care should be taken not to assume the use of any particular integration product. Give examples as generically as possible. For example, 
+
+> To finish setting up the Foo Engine, set `-Djavax.net.fooey=fooey:verbose` in the Application Server's JVM. In Tomcat, the option is added to `CATALINA_OPTS` in `setenv.sh`: 
+> ```
+> CATALINA_OPTS="$CATALINA_OPTS -Djavax.net.fooey=fooey:verbose"
+> ```
 
 With that said, we avoid documenting other products. For example, in clustering articles, we document what's necessary for configuring Liferay to work in a clustered environment, and we avoid documenting app server configurations beyond our own Docker containers. 
 
@@ -273,7 +278,7 @@ The default HSQL database is stored in `[Liferay Home]/data`.
 
 #### Images and Visual Aids
 
-For images that are reused across multiple articles (like icons), there is a shared `images` folder in the root of each product's documentation section.
+Some images are reused across multiple articles (like icons). There is a shared `images` folder in the root of each product's English language documentation section.
 
 Use one of these prefixes as a naming convention:
 
@@ -401,7 +406,7 @@ Never use meta-information, or information about the documentation. For example,
 - This series of tutorials walks you
 - At Liferay, we
 
-This is all filler and unnecessary. Keep pronouns strictly to you and don't mention articles, their sections, or their format. 
+This is all filler and unnecessary. Keep pronouns strictly to *you* and don't mention articles, their sections, or their format. 
 
 #### Cross Links
 
@@ -439,7 +444,7 @@ Clicking the button gives you these options:
 
 #### Never Project Roles
 
-Organizations are different. Workflows are different. Roles are different. Never project a role onto your reader when the second person pronoun *you* (or the "understood you") should suffice. For example, never do this:
+We never know the background of the reader. Some are individuals; some are within organizations. Roles within these constructs differ, as do their workflows. Never project a role, title, or job description onto your reader when the second person pronoun *you* (or the "understood you") should suffice. For example, never do this:
 
 - Administrators can create the directory...
 - Marketers can use Fragments to...
@@ -477,7 +482,7 @@ It's hard to keep terminology consistent, so when we find an inconsistency in th
 
 **Common Examples**
 | Wrong                     | Right |
-| :--- | :--- | :--- |
+| :--- | :--- | 
 | backend                   | back-end        |
 | frontend                  | front-end       |
 | Javascript (or JS or js)  | JavaScript      |
@@ -503,10 +508,10 @@ The sentence above has the same meaning with or without *any*, so it can be remo
 Be careful with the noun form of verb-adverb. The verb-adverb is two words (the verb and the adverb); the noun is one: 
 
 |  **Verb-Adverb**     |   **Noun** |
-| :--- | :--- | :--- |
-|  to break (how?) down |  here's a quick breakdown   |
-|  to set (how?) up     |  it's a simple setup routine|
-|  to log (how?) in     |  never give away your login |
+| :--- | :--- | 
+|  to break (how?) down |  here's a quick breakdown      |
+|  to set (how?) up     |  it's a graphical setup routine|
+|  to log (how?) in     |  never give away your login    |
 
 #### If/Then
 
@@ -517,7 +522,7 @@ In the BASIC programming language, an *if* statement needs a *then*. In language
 Do your best not to break up verb construction. For example, 
 
 |  **Original**                          |   **Preferred**                      |
-| :--- | :--- | :--- |
+| :--- | :--- | 
 |  to dynamically display different pages |  to display different pages dynamically |
 |  can optimally be surrounded by         |  can surround optimally                 |
 
@@ -541,7 +546,7 @@ In other words, never name an introduction *Introduction to....*
 
 Each feature article should be as standalone as possible. Never assume the reader has (or might have) read another article on the same topic. If it's helpful to link to another article, definitely do it, but avoid language like this:
 
-*You may have noticed this thing when [doing this other thing in this other article]. Here's how it works.*
+*You may have noticed the Big Red Button at the bottom of the screen in the article on Foos. Here's what it does.*
 
 Instead, do this:
 

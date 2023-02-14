@@ -1,0 +1,134 @@
+# Sorting Results in a Search Blueprint
+
+Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-oconfiguration) to a Search Blueprint to control the order of search results. Go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new Blueprint or open an existing one, then click the _Configuration_ tab. Enter your JSON into the Sort Configuration text area.
+
+```{important}
+* Do not use both the [Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorts on a search page. Consistent behavior cannot be guaranteed if you combine sorts from the Sort widget and a search blueprint's sort configuration.
+
+* The examples here are simple. A robust sort configuration should consider all scenarios, such as what happens when a search result document does not contain the sort field. In that case, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
+
+   See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html) for more details.
+```
+
+## Example 1: Sorting by Title
+
+At its most basic, a sort configuration is a JSON element with a `sorts` array and a single field with an ascending (`asc`) or descending (`desc`) strategy declared.
+
+```json
+{
+   "sorts": [
+      {
+         "title_sortable": "desc"
+      }
+   ]
+}
+```
+
+<!-- Question: Should we warn about the multiple similar field names trap (title_sortable, title_en_US_sortable, localized_title_en_us_sortable, etc.)? Something like the below warning text?-->
+```{warning}
+There can be similarly named field variations. Make sure you're using the correct to capture each entity being searched. For example, `title_en_US_sortable`, `localized_title_en_US_sortable`, etc.
+```
+
+## Example 2: Sorting by a Nested DDM Field
+
+Web Content (DDM) Structure fields are indexed as nested fields in the search engine document. 
+
+When viewing the document, you can see the nested properties in the `ddmFieldArray`:
+
+```json
+"ddmFieldArray" : [
+          {
+            "ddmFieldName" : "ddm__keyword__30805__department_en_US",
+            "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
+            "ddmFieldValueKeyword_en_US" : "true",
+            "ddmFieldValueKeyword_en_US_String_sortable" : "true"
+          }
+```
+
+```{tip}
+Enable the Search Results widget configuration [_Display Results in Document Form_](../../search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#inspecting-search-engine-documents) to see the results as they're indexed in the search engine. Click the _Details_ tab to expand each result.
+```
+
+For a nested field, the sort configuration's field declaration is more complicated:
+
+```json
+{
+   "sorts": [
+      {
+         "ddmFieldArray.ddmFieldValueKeyword_en_US_String_sortable": {
+            "nested": {
+               "nested_path": "ddmFieldArray",
+               "nested_filter": {
+                  "term": {
+                     "ddmFieldArray.ddmFieldName": {
+                        "value": "ddm__keyword__30805__department_en_US"
+                     }
+                  }
+               }
+            },
+            "order": "asc"
+         }
+      }
+   ]
+}
+```
+
+## Example 3: Sorting by an Objects Field with Empty Search Enabled
+
+When a search page is displaying all of a site's results by default (e.g., Allow Empty Searches is enabled in the Search Options widget), you can define a different sorting strategy for the empty search versus when the user enters search keywords. For example, you can sort from most searched (using a field called `hitCount`) to least in the empty search, but sort by relevance for a keyword search.
+
+<!--Can you do this hitCount sort in real life? Someone might expect this is a realistic result but I'm not sure if it works with Objects ootb-->
+
+Object entry fields are indexed as nested fields in the search engine document. 
+
+When viewing the document, you can see the nested properties of an Object in the `nestedFieldArray`:
+
+```json
+"nestedFieldArray" : [
+            {
+              "fieldName" : "hitCount",
+              "valueFieldName" : "value_long",
+              "value_long" : 26
+            }
+```
+
+Example configuration:
+
+```json
+{
+   "sorts": [
+      {
+         "${keywords}nestedFieldArray.value_long": {
+            "nested": {
+               "nested_path": "nestedFieldArray",
+               "nested_filter": {
+                  "term": {
+                     "nestedFieldArray.fieldName": "hitCount"
+                  }
+               }
+            },
+            "order": "desc"
+         }
+      }
+   ]
+} 
+```
+
+The above example uses a nested Objects field, but the same principle applies when using a non-nested field like `modified`:
+
+```json
+{
+   "sorts": [
+      {
+         "${keywords}modified": "desc"
+      }
+   ]
+} 
+```
+
+With empty search enabled and no keywords in the request, the sort in the configuration applies. If keywords are present, the sort's field name is not found and the custom sort is ignored. Sorting falls back to the default sort by relevance.
+
+## Additional Information
+
+- [Search Blueprints Configuration Reference](search-blueprints-configuration-reference.md)
+- [Sorting Search Results](../../search-pages-and-widgets/search-results/sorting-search-results.md)

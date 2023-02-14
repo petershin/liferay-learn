@@ -86,7 +86,7 @@ Grant account users permission to create and manage the account's object data.
 | Claims > Claims: Add Object Entry | Create an object entry. |
 
 ```{important}
-Do not assign the `Claims > Claim: View` resource permission to account roles. This can interfere with standard role behaviors.
+Do not assign the `Claims > Claim: View` resource permission to account roles. This can interfere with standard role behaviors. Also, when a user is a member of multiple accounts with different account roles and object permissions, these permissions apply to each account the user belongs to.
 ```
 
 ### Organization Role

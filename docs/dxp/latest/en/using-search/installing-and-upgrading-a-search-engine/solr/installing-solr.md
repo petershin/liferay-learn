@@ -17,18 +17,58 @@ There are important limitations when using Solr. Read [Solr Limitations](./solr-
 
 See the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for detailed information on the compatible Solr and Liferay versions by patch level.
 
+## Downloading the Solr Connector
+
+If you haven't already acquired the connector to Solr,
+
+1. In a running Liferay, go to Control Panel &rarr; Marketplace &rarr; Store. Sign in.
+
+1. Grant access to the app.
+
+1. Search for Solr 8 and select the app corresponding to your Liferay installation:
+
+   | Liferay Flavor | Solr Connector Name |
+   | :------------- | :------------------ |
+   | Liferay Portal/Community Edition | Liferay CE Connector to Solr 8 |
+   | Liferay DXP | Liferay Connector to Solr 8 |
+
+1. Click the *Free* button in the app's landing page.
+
+1. Choose a project if it exists, or add one.
+
+1. Agree to the conditions and click *Purchase*.
+
+After purchase, download the LPKG file from the Past Versions page.
+
+1. Substitute your <https://liferay.com> `user.name` in the following URL:
+
+   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions>
+   DXP: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions>
+
+1. Click *App* to download the app's LPKG file.
+
+Refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for the compatible application versions for your Liferay version and patch level.
+
+```{warning}
+Do not install the Solr connector into a running Liferay until the [blacklist](#disabling-elasticsearch-only-features) and [connector](#installing-and-configuring-the-solr-connector) configurations are in place and [Solr is running](#installing-and-configuring-solr).
+```
+
 ## Disabling Elasticsearch-Only Features
 
-Before installing the Liferay Connector to Solr, you must blacklist or otherwise disable
+When installing the Liferay Connector to Solr, you must blacklist or otherwise disable
 
 - the modules for certain DXP features that only work with Elasticsearch
 - the Liferay Connector to Elasticsearch's modules
 
 ### Blacklisting Elasticsearch-Only Features
 
+```{important}
+Before proceeding, stop Liferay.
+```
+
 To blacklist Elasticsearch-only features,
 
-1. On Liferay DXP 7.4, use a portal property or Docker environment variable to disable several Elasticsearch-dependent modules:
+1. On Liferay DXP 7.4, use a portal property or Docker environment variable to disable all [Liferay Enterprise Search](../../liferay-enterprise-search.md) features:
 
    Add this property to `portal-ext.properties`:
 
@@ -36,13 +76,13 @@ To blacklist Elasticsearch-only features,
    enterprise.product.enterprise.search.enabled=false
    ```
 
-   Set this Docker environment variables:
+   Set this Docker environment variable:
 
    ```properties
    LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_ENTEPRISE_PERIOD_SEARCH_PERIOD_ENABLED=false
    ```
 
-   This disables all Liferay Enterprise Search features. See [Activating Liferay Enterprise Search](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
+   See [Activating Liferay Enterprise Search](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
 
 1. Create a blacklist [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). The name depends on your Liferay version:
 
@@ -106,47 +146,7 @@ To use stop the Elasticsearch-dependent modules with the [Felix Gogo shell](../.
 
 1. Repeat for each module.
 
-## Downloading the Solr Connector
-
-If you haven't already acquired the connector to Solr,
-
-1. In a running Liferay, go to Control Panel &rarr; Marketplace &rarr; Store. Sign in.
-
-1. Grant access to the app.
-
-1. Search for Solr 8 and select the app corresponding to your Liferay installation:
-
-   | Liferay Flavor | Solr Connector Name |
-   | :------------- | :------------------ |
-   | Liferay Portal/Community Edition | Liferay CE Connector to Solr 8 |
-   | Liferay DXP | Liferay Connector to Solr 8 |
-
-1. Click the *Free* button in the app's landing page.
-
-1. Choose a project if it exists, or add one.
-
-1. Agree to the conditions and click *Purchase*.
-
-After purchase, download the LPKG file from the Past Versions page.
-
-1. Substitute your <https://liferay.com> `user.name` in the following URL:
-
-   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions>
-   DXP: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions>
-
-1. Click *App* to download the app's LPKG file.
-
-Refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for the compatible application versions for your Liferay version and patch level.
-
-```{warning}
-Do not install the Solr connector into Liferay until the [configurations are in place](#installing-and-configuring-the-solr-connector) and [Solr is running](#installing-and-configuring-solr)
-```
-
 ## Installing and Configuring Solr
-
-```{important}
-Before proceeding, stop Liferay.
-```
 
 To install and configure Solr for Liferay,
 
@@ -217,11 +217,15 @@ To install and configure Solr for Liferay,
 
 1. The Solr server listens on port `8983` by default. Navigate to <http://localhost:8983/solr/#/~cores> (assuming you're testing locally with `localhost` as your host), and confirm that the `liferay` core is available.
 
-Solr is now installed and started. Next configure and install the Solr connector for Liferay.
+Solr is now installed and started. Next install and configure the Solr connector for Liferay.
 
 ## Installing and Configuring the Solr Connector
 
-Once the connector is installed, the default configuration works for a test installation because the default values in the Liferay Connector to Solr match Solr's own defaults. See the [Configuration Reference](#solr-connector-configuration-reference) for the complete list of available settings. At a minimum, you must configure the read and write URLs for the connector in production environments.
+```{important}
+Before proceeding, stop Liferay.
+```
+
+Once the connector to Solr is installed, the default configuration works for a test installation because the default values in the Liferay Connector to Solr match Solr's own defaults. See the [Configuration Reference](#solr-connector-configuration-reference) for the complete list of available settings. At a minimum, you must configure the read and write URLs for the connector in production environments.
 
 It is most common to make your edits to the Solr connector's default configurations using a configuration file deployed to Liferay's `osgi/configs` folder:
 

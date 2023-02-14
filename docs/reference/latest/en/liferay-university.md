@@ -1,6 +1,6 @@
 # Liferay University
 
-This page serves as an archive and index of videos that were previously hosted on Liferay University. As of February 28, 2023 Liferay University has been sunset and is no longer operational. However, we have taken the initiative to preserve the videos here for your continued viewing convenience. 
+This page serves as an archive and index of videos that were previously hosted on Liferay University. As of February 28, 2023 Liferay University is no longer operational. However, we have taken the initiative to preserve the videos here for your continued viewing convenience. 
 
 ## 7.4 Courses and Modules
 

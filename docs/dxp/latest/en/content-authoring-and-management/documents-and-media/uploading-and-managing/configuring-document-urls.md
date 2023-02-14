@@ -78,4 +78,4 @@ All file friendly URLs lead to latest version of the file. If you want to access
 * [Documents and Media Overview](../documents-and-media-overview.md)
 * [Uploading Files](./uploading-files.md)
 * [Configuring Your Site's Friendly URL](../../../site-building/site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
-* [Configuring Your Page's Friendly URL](../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
+* [Configuring Your Page's Friendly URL](../../../site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md)

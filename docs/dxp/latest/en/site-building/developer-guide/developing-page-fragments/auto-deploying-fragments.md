@@ -95,7 +95,7 @@ Both keys in this JSON file are optional. In your `liferay-deploy-fragments.json
 ```
 
 ```{warning}
-Importing fragments [with resources](./including-default-resources-in-fragments.md) is not supported if you are making them available at the system level.
+Importing fragments [with resources](./including-default-resources-with-fragments.md) is not supported if you are making them available at the system level.
 ```
 
 ```{note}

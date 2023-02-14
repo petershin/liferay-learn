@@ -5,10 +5,14 @@ uuid: 8be1370c-e992-44c5-bbf5-63c3016c54c7
 
 Add Groovy scripts to [your XML workflow definition](./crafting-xml-workflow-definitions.md) to inject logic and access Liferay's Java services in your workflow. Scripts run during workflow execution.
 
-* [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)
-* [Using Predefined Variables](#predefined-variables)
-* [Script Example](#script-example)
-* [Calling OSGi Services](#calling-osgi-services)
+- [Using the Script Engine in Workflow](#using-the-script-engine-in-workflow)
+  - [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)
+  - [Predefined Variables](#predefined-variables)
+    - [Variables Common to All Node Types](#variables-common-to-all-node-types)
+    - [Variables Injected into Task Nodes](#variables-injected-into-task-nodes)
+  - [Script Example](#script-example)
+  - [Calling OSGi Services](#calling-osgi-services)
+  - [Additional Information](#additional-information)
 
 ## Adding Scripts to Workflow Nodes
 
@@ -98,7 +102,7 @@ At virtually any point in a workflow, you can use Liferay's script engine to acc
 * Sending an email to the designated content approver with a list of people to contact if he is unable to review the content
 * Creating an alert to be displayed in the Alerts portlet for any user assigned to approve content
 
-The following workflow script is written using Groovy and is used with a condition node. The script uses Liferay's [asset framework](../../../building-applications/data-frameworks/assets.md) to determine an asset's category and uses the category to determine the correct approval process automatically. If the asset is in the `legal` category, it is sent to the `Legal Review` task upon submission. Otherwise, the asset is sent to the `Default Review` task.
+The following workflow script is written using Groovy and is used with a condition node. The script uses Liferay's [asset framework](../../../building-applications/data-frameworks/asset-framework.md) to determine an asset's category and uses the category to determine the correct approval process automatically. If the asset is in the `legal` category, it is sent to the `Legal Review` task upon submission. Otherwise, the asset is sent to the `Default Review` task.
 
 ```groovy
 <script>

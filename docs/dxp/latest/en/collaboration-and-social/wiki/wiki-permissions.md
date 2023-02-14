@@ -19,7 +19,7 @@ The available _wiki node_ permissions are:
 | Permission | Description |
 | :--- | :--- |
 | Add Page | Grants users the ability to add a wiki page to the node |
-| Import | Grants users the ability to import wiki pages as a `.lar` file; see [Exporting and Importing a Wiki](./exporting-and-importing-a-wiki.md) |
+| Import | Grants users the ability to import wiki pages as a `.lar` file; see [Exporting and Importing a Wiki](../../site-building/creating-pages/using-widget-pages/configuring-widgets/exporting-importing-widget-data.md) |
 | Delete | Grants users the ability to delete a _Wiki Node_ |
 | Permissions | Grants users the ability to view a wiki node's permissions |
 | Update | Grants users the ability to modify the _Wiki Node_ |

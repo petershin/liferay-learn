@@ -55,7 +55,7 @@ Follow these steps to import a Site Template:
 
    ![Configure and begin the import process.](./exporting-importing-site-templates/images/04.png)
 
-Once complete, you can use the imported Site Template to [create Sites](../creating-sites.md).
+Once complete, you can use the imported Site Template to [create Sites](../adding-a-site.md).
 
 ## Bulk Export/Import
 

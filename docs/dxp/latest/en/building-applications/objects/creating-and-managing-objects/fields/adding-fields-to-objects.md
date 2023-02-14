@@ -14,7 +14,7 @@ Follow these steps:
 1. Begin editing the desired object definition.
 
    ```{note}
-   For 7.4 U47+/GA47+, you can add fields to system objects and access them via Headless APIs. See [Extending System Objects](./extending-system-objects.md) for more information.
+   For 7.4 U47+/GA47+, you can add fields to system objects and access them via Headless APIs. See [Extending System Objects](../extending-system-objects.md) for more information.
    ```
 
 1. Go to the *Fields* tab and click the *Add* button (![Add Button](../../../../images/icon-add.png)).

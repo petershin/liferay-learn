@@ -44,10 +44,6 @@ Each file version has an Actions menu (![Actions](../../../../images/icon-action
 
 You can manage files using WebDAV and continue to track version history. To learn more, see [Accessing Documents with WebDAV](../accessing-documents-with-webdav.md).
 
-## Using Liferay Sync
-
-You can manage files using Liferay Sync and continue to track version history. To learn more, see [Setting up on DXP](../liferay-sync/setting-up-on-dxp/installation.md).
-
 ## Additional Information
 
 * [Permissions and Documents](./permissions-and-documents.md)

@@ -21,7 +21,7 @@ Starting with Liferay 7.2+, behavior-based rules are managed using Analytics Clo
 
 Before migrating to Liferay 7.2+, evaluate any Audience Targeting custom rules with consideration to newer Liferay Segmentation functionality. Start by checking how the [Liferay Segments' properties](../segmentation/segments-editor-ui-reference.md) can replace your Audience Targeting custom rules.
 
-If you need to re-implement a rule entirely, follow the information in [Introduction to Segmentation Development](../developer-guide/introduction-to-segmentation-development.md).
+If you need to re-implement a rule entirely, follow the information in [Creating and Managing User Segments](../segmentation/creating-and-managing-user-segments.md).
 
 ## Migrating Display Properties
 

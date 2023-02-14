@@ -49,7 +49,7 @@ If you haven't already, follow these steps to configure your Liferay servers for
    ![Update the remote instance's Tunnel Authentication Verifier Configuration via the Control Panel.](./configuring-remote-live-staging/images/01.png)
 
    ```{note}
-   While it is enabled by default, ensure each Liferay server's tunneling servlet [authentication verifier](../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md) is enabled.
+   While it is enabled by default, ensure each Liferay server's tunneling servlet [authentication verifier](../../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md) is enabled.
    ```
 
    Alternatively, you can write this configuration into an OSGi file in your Liferay instance (e.g., `osgi/configs/com.liferay.portal.security.auth.verifier.tunnel.module.configuration.TunnelAuthVerifierConfiguration-default.config`):
@@ -61,7 +61,7 @@ If you haven't already, follow these steps to configure your Liferay servers for
    urlsIncludes=/api/liferay/do
    ```
 
-1. Restart both Liferay servers to implement your changes.
+2. Restart both Liferay servers to implement your changes.
 
 Once restarted, both servers are ready for Staging configuration.
 

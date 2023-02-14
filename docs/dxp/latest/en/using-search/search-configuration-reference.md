@@ -65,7 +65,7 @@ If the destination Search Page has a Search Bar widget instance in addition to a
 Conversely, searching from a Search Bar widget instance on other pages honors their configurations, even if they differ from the header Search Bar configuration.
 ```
 
-See [Configuring the Search Bar](../getting-started/searching-for-content.md#configuring-the-search-bar) for more information.
+See [Configuring the Search Bar](./getting-started/searching-for-content.md#configuring-the-search-bar) for more information.
 
 ## Instance Scoped Search Configuration
 
@@ -79,7 +79,7 @@ The only instance scoped configurations for search are the entries in the Global
 
 ## System Scoped Search Configuration
 
-System scoped search configurations are primarily found in [System Settings](../../system-administration/configuring-liferay/system-settings.md).
+System scoped search configurations are primarily found in [System Settings](../system-administration/configuring-liferay/system-settings.md).
 
 1. In the Global Menu, go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
 
@@ -111,7 +111,7 @@ The Default Keyword Query entry contains one setting:
 
 **Configuration File:** `com.liferay.portal.search.configuration.DefaultSearchResultPermissionFilterConfiguration.config`
 
-The Default Search Result Permission Filter entry allows configuration of *post-filtering permission checking* (database permission checking that occurs after the results are returned from the search index). Read [Final Permissions Checking](../search-pages-and-widgets/search-results/search-results-behavior.md#final-permissions-checking) for more information on these settings:
+The Default Search Result Permission Filter entry allows configuration of *post-filtering permission checking* (database permission checking that occurs after the results are returned from the search index). Read [Final Permissions Checking](./search-pages-and-widgets/search-results/search-results-behavior.md#final-permissions-checking) for more information on these settings:
 
 * **`permissionFilteredSearchResultAccurateCountThreshold`**
 
@@ -151,7 +151,7 @@ Configure the buffering of index requests:
 
 **Configuration File:** `com.liferay.portal.search.configuration.QueryPreProcessConfiguration.config`
 
-This entry has one repeatable property (use array syntax if you're defining via [OSGi configuration file](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)):
+This entry has one repeatable property (use array syntax if you're defining via [OSGi configuration file](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)):
 
 **`fieldNamePatterns`**: Fields with names matching the patterns set here are treated as non-analyzed keyword fields. Instead of scored full text queries, matching is performed by non-scored wildcard queries. This is a resource intensive operation that degrades search engine performance as indexes grow larger. For substring matching, relying on the [ngram tokenizer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) usually performs better.
 
@@ -167,8 +167,7 @@ This entry contains only one property:
 
 **Configuration File:** `com.liferay.portal.search.configuration.SearchEngineHelperConfiguration.config`
 
-This entry has one repeatable property (use array syntax if you're defining via
-[OSGi configuration file](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)):
+This entry has one repeatable property (use array syntax if you're defining via [OSGi configuration file](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)):
 
 **`excludedEntryClassNames`**: Exclude an asset type from being searched in the catchall query constructed for the Search application. For example, fields of the Organization asset must be indexed to be searchable from the Users and Organizations application, but should not be searched in the Search application. Thus, Organizations are added to `excludedEntryClassNames`.
 
@@ -204,7 +203,7 @@ You can use the Elasticsearch Monitoring configuration if you have deployed the 
 
 **Configuration File:** `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`
 
-Configure the connection between Liferay and Elasticsearch 7. See [Configuring the Connector](../installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch.md#configuring-the-connector) for detailed coverage of these properties.
+Configure the connection between Liferay and Elasticsearch 7. See [Configuring the Connector](./installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch.md#configuring-the-connector) for detailed coverage of these properties.
 
 ### Elasticsearch Connections
 
@@ -230,7 +229,7 @@ This entry contains one property:
 
 **Configuration File:** `com.liferay.portal.search.tuning.synonyms.web.internal.configuration.SynonymsConfiguration.config`
 
-This entry has one repeatable property (use array syntax if you're defining via [OSGi configuration file](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)):
+This entry has one repeatable property (use array syntax if you're defining via [OSGi configuration file](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)):
 
 **`synyonymFilterNames`**: Set the synonym filter names to apply. These filters must be defined in the Elasticsearch Index Settings. See [Creating New Synonym Language Filters](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters).
 

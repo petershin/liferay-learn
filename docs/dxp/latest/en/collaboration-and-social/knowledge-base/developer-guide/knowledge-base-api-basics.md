@@ -327,4 +327,4 @@ The cURL commands and Java classes for Knowledge Base folders works in the same 
 | `KnowledgeBaseFolder_PUT_ToSite.[java\|sh]` | Put a Knowledge Base folder by ID. |
 | `KnowledgeBaseFolders_GET_FromSite.[java\|sh]` | Get a list of Knowledge Base folders from a site. |
 
-The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `KnowledgeBaseArticle` and `KnowledgeBaseFolder` services and schemas and has an interface to try out each service.
+The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `KnowledgeBaseArticle` and `KnowledgeBaseFolder` services and schemas and has an interface to try out each service.

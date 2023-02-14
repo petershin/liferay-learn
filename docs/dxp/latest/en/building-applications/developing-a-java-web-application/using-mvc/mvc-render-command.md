@@ -151,6 +151,7 @@ Now you know how to implement render logic in MVC Render Command classes. Next, 
 
 ## Additional Information
 
+* [Using MVC](../using-mvc.md)
 * [MVC Resource Command](./mvc-resource-command.md)
 * [MVC Action Command](./mvc-action-command.md)
 * [Using Localized Messages in an MVC Portlet](./using-localized-messages-in-an-mvc-portlet.md)

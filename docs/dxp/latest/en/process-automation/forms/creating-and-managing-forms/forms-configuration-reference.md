@@ -29,7 +29,7 @@ To access the Settings menu, choose the desired form (for example, _Guest Survey
 | General | CAPTCHA | Require answering CAPTCHA questions when submitting the form. |
 | General | Save Answers Automatically | Autosave the form periodically as the respondent fills it out. |
 | General | Select a Storage Type | Set the [storage adapter](../developer-guide/understanding-form-storage-adapters.md) for managing submitted records; not editable after the form is saved. |
-| General | Select a [Workflow](./advanced-forms-usage/using-forms-with-a-workflow.md) | Select a workflow definition to review the form submission; workflow is deactivated by default. |
+| General | Select a [Workflow](../sharing-forms-and-managing-submissions/using-forms-with-a-workflow.md) | Select a workflow definition to review the form submission; workflow is deactivated by default. |
 | Personalization | Redirect URL on Success | Specify a redirect URL once the form is submitted successfully. |
 | Personalization | Submit Button Label | Change the label of the Submit button to something more appropriate for your specific use case (e.g, _Vote_ or _Register_). |
 | Notifications | Send an Email Notification for Each Entry | Specify whether an [email notification](../sharing-forms-and-managing-submissions/configuring-form-notifications.md) sent to the form creator each time a form record is submitted. |

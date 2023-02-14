@@ -52,7 +52,7 @@ Now you must find the default Site ID:
 
 ## Make the Service Call Using Credentials with Access to the Data
 
-Now you have everything you need to make the call. All web services must be accessed using credentials that have access to the data you're requesting. The simplest way is to use Basic Auth, which passes credential data in the URL. Since this is insecure, you should only use this method during development. For production, your application should authorize users via [OAuth2](../using-oauth2/using-oauth2.md).
+Now you have everything you need to make the call. All web services must be accessed using credentials that have access to the data you're requesting. The simplest way is to use Basic Auth, which passes credential data in the URL. Since this is insecure, you should only use this method during development. For production, your application should authorize users via [OAuth2](../using-oauth2.md).
 
 The examples below use [cURL](https://curl.haxx.se).
 

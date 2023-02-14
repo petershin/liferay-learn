@@ -144,4 +144,3 @@ These options modify the style for the default types of buttons. You can customi
 ## Additional Information
 
 * [Style Book Token Definitions](./developer-guide/style-book-token-definitions.md)
-* [Adding a New Token Set for Your Style Book](./developer-guide/adding-a-new-token-set-for-your-style-book.md)

@@ -138,4 +138,3 @@ Now you know how to use MVC Resource Commands. If you want to localize your port
 * [Using MVC](../using-mvc.md)
 * [MVC Render Command](./mvc-render-command.md)
 * [MVC Action Command](./mvc-action-command.md)
-* [Overriding MVC Commands](../../../liferay-internals/extending-liferay/overriding-mvc-commands.md)

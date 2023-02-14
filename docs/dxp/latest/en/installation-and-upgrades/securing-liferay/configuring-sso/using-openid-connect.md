@@ -3,7 +3,7 @@ uuid: af832712-a9a1-46aa-ac8d-754cbd7656af
 ---
 # Using OpenID Connect
 
-OpenID Connect is a lightweight authentication layer that enables users to authenticate using accounts they have on other systems. It's built on top of the [OAuth 2.0](../../../headless-delivery/using-oauth2/using-oauth2.md) authorization protocol. By using OpenID Connect, you *delegate* user authentication to other providers, making it easy for users with existing accounts to authenticate to your Liferay installation.
+OpenID Connect is a lightweight authentication layer that enables users to authenticate using accounts they have on other systems. It's built on top of the [OAuth 2.0](../../../headless-delivery/using-oauth2.md) authorization protocol. By using OpenID Connect, you *delegate* user authentication to other providers, making it easy for users with existing accounts to authenticate to your Liferay installation.
 
 ```{note}
 You can add multiple providers to your installation, but Liferay DXP can't be an OpenID Connect provider.

@@ -60,7 +60,7 @@ Follow these steps to manually translate Content Page experiences:
 ## Exporting and Importing Translations
 
 ```{note}
-To export pages for translation or import XLIFF translations, you must have *View* and *Update* permissions for the selected page. See [Managing Permissions for Translation](./managing-permissions-for-translation.md) for more information.
+To export pages for translation or import XLIFF translations, you must have *View* and *Update* permissions for the selected page. [Managing Translation Permissions](./managing-translation-permissions.md) for more information.
 ```
 
 With Liferay, you can export Content Page experiences for translation as `.xliff` or `.xlf` files. You can send these files to translators and then import the translations together as a `.zip` file or individually as `.xliff` or `.xlf` files.

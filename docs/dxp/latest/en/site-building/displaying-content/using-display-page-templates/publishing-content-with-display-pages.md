@@ -65,5 +65,5 @@ Once set, Liferay uses the template to display the content item at its unique fr
 
 ## Additional Information
 
-* [Using Display Page Templates](./using-display-page-templates.md)
+* [Using Display Page Templates](../using-display-page-templates.md)
 * [Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)

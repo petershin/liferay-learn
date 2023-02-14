@@ -6,18 +6,18 @@ uuid: b033d85b-20dd-49ae-a1fb-9b651afe621a
 All fragments have a Styles settings section except for the Collection Display fragment. Use the style settings to configure your fragments' look and feel. Many of these options correspond to CSS classes and have defined tokens supported by style books. See [General Settings Reference](./general-settings-reference.md) and [Fragment Sub-Elements Reference](./fragment-sub-elements-reference.md) for additional fragment configuration options.
 
 ```{note}
-By default, style configurations apply to the entire fragment, so all elements in the fragment inherit these changes if their CSS allows it; otherwise, the inner elements are ignored. You can configure custom fragments to apply style changes only to some inner elements. See [Applying Styles to Fragments](../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information.
+By default, style configurations apply to the entire fragment, so all elements in the fragment inherit these changes if their CSS allows it; otherwise, the inner elements are ignored. You can configure custom fragments to apply style changes only to some inner elements. See [Applying Styles to Fragments](../../../../developer-guide/developing-page-fragments/applying-styles-to-fragments.md) for more information.
 ```
 
 To access a fragment's Styles menu,
 
 1. Begin editing a page or template that supports fragments.
 
-1. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired fragment.
+2. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired fragment.
 
    Alternatively, click the desired fragment in the page or template.
 
-1. Click the *Styles* tab in the Page Elements side menu.
+3. Click the *Styles* tab in the Page Elements side menu.
 
 ![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
 

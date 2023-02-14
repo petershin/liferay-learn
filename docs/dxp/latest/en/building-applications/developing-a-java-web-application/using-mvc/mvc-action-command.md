@@ -146,6 +146,6 @@ Now that you know how to use MVC Action Commands, you may want to check out [MVC
 
 ## Additional Information
 
+* [Using MVC](../using-mvc.md)
 * [MVC Render Command](./mvc-render-command.md)
 * [MVC Resource Command](./mvc-resource-command.md)
-* [Overriding MVC Commands](../../../liferay-internals/extending-liferay/overriding-mvc-commands.md)

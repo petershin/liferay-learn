@@ -18,7 +18,7 @@ Here's example sidecar server output:
   "cluster_name" : "LiferayElasticsearchCluster",
   "cluster_uuid" : "_lcJyLZXQ2WY5No5oW8edg",
   "version" : {
-    "number" : "7.17.0",
+    "number" : "7.17.9",
     "build_flavor" : "unknown",
     "build_type" : "unknown",
     "build_hash" : "bee86328705acaa9a6daede7140defd4d9ec56bd",

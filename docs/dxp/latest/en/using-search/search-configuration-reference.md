@@ -245,7 +245,7 @@ See the dedicated [Search Administration and Tuning](./search-administration-and
 Information about the search engine connection(s) is displayed here. For example,
 
 * Search Engine Vendor: Elasticsearch
-* Client Version: 7.17.1
+* Client Version: 7.16.3
 * Active Connections: 1
 * Health: Green
 * Connection ID: \_REMOTE\_
@@ -253,7 +253,7 @@ Information about the search engine connection(s) is displayed here. For example
 * Cluster Name: LiferayElasticsearchCluster
 * Nodes: 1
 * Node Name: lr-es
-* Node Version: 7.15.1
+* Node Version: 7.17.9
 
 #### Index Actions
 

@@ -110,42 +110,44 @@ function generate_sphinx_input {
 
 	for docs_dir_name in $(find ../docs -maxdepth 4 -mindepth 4 -type f -name "contents.rst" -printf "%h\n")
 	do
-		if [[ "${docs_dir_name}" != *"/ko" ]]
+		if [[ "${docs_dir_name}" == *"/ko" ]]
 		then
-			local product_version_language_dir_name=$(get_product_version_language_dir_name)
+			continue
+		fi
 
-			mkdir -p build/input/"${product_version_language_dir_name}"
+		local product_version_language_dir_name=$(get_product_version_language_dir_name)
 
-			local product_version_english_dir_name=$(get_product_version_language_dir_name | sed 's@/[^/]*$@/en@')
+		mkdir -p build/input/"${product_version_language_dir_name}"
 
-			cp -R docs/* build/input/"${product_version_language_dir_name}"
+		local product_version_english_dir_name=$(get_product_version_language_dir_name | sed 's@/[^/]*$@/en@')
 
-			if [[ "${1}" == *".md" ]]
-			then
-				pushd ../docs
+		cp -R docs/* build/input/"${product_version_language_dir_name}"
 
-				for article_file_name in $(find "${product_version_language_dir_name}" -name "${1}")
-				do
-					rsync -a ${product_version_language_dir_name}/*.* ${product_version_english_dir_name}/images ../site/build/input/${product_version_language_dir_name}
+		if [[ "${1}" == *".md" ]]
+		then
+			pushd ../docs
 
-					local article_dir_name=$(dirname ${article_file_name} | sed "s,${product_version_language_dir_name},,g")
+			for article_file_name in $(find "${product_version_language_dir_name}" -name "${1}")
+			do
+				rsync -a ${product_version_language_dir_name}/*.* ${product_version_english_dir_name}/images ../site/build/input/${product_version_language_dir_name}
 
-					mkdir -p ../site/build/input/${product_version_language_dir_name}/${article_dir_name}
+				local article_dir_name=$(dirname ${article_file_name} | sed "s,${product_version_language_dir_name},,g")
 
-					cp ${article_file_name} ../site/build/input/${product_version_language_dir_name}/${article_dir_name}
+				mkdir -p ../site/build/input/${product_version_language_dir_name}/${article_dir_name}
 
-					if [[ -n $(find ${product_version_english_dir_name}/${article_dir_name} -name $(basename -s .md ${article_file_name}) -type d) ]]
-					then
-						rsync -a ${product_version_english_dir_name}${article_dir_name}/$(basename -s .md ${article_file_name})/* ../site/build/input/${product_version_language_dir_name}/${article_dir_name}/$(basename -s .md ${article_file_name})
-					fi
-				done
+				cp ${article_file_name} ../site/build/input/${product_version_language_dir_name}/${article_dir_name}
 
-				pushd ../site
-			else
-				rsync -a --exclude "*.md" --exclude "*.rst" --ignore-existing ../docs/"${product_version_english_dir_name}"/* build/input/"${product_version_language_dir_name}"/
+				if [[ -n $(find ${product_version_english_dir_name}/${article_dir_name} -name $(basename -s .md ${article_file_name}) -type d) ]]
+				then
+					rsync -a ${product_version_english_dir_name}${article_dir_name}/$(basename -s .md ${article_file_name})/* ../site/build/input/${product_version_language_dir_name}/${article_dir_name}/$(basename -s .md ${article_file_name})
+				fi
+			done
 
-				cp -R ../docs/"${product_version_language_dir_name}"/* build/input/"${product_version_language_dir_name}"
-			fi
+			pushd ../site
+		else
+			rsync -a --exclude "*.md" --exclude "*.rst" --ignore-existing ../docs/"${product_version_english_dir_name}"/* build/input/"${product_version_language_dir_name}"/
+
+			cp -R ../docs/"${product_version_language_dir_name}"/* build/input/"${product_version_language_dir_name}"
 		fi
 	done
 
@@ -178,57 +180,59 @@ function generate_sphinx_input {
 function generate_static_html {
 	for docs_dir_name in $(find build/input -maxdepth 4 -mindepth 4 -type f -name "contents.rst" -printf "%h\n" )
 	do
-		if [[ "${docs_dir_name}" != *"/ko" ]]
+		if [[ "${docs_dir_name}" == *"/ko" ]]
 		then
-			local product_version_language_dir_name=$(get_product_version_language_dir_name)
-
-			echo "Generating static HTML for $(get_product_version_language_dir_name)."
-
-			#
-			# Use Sphinx to generate static HTML for each product, version, and language.
-			#
-
-			sphinx-build -M html "build/input/${product_version_language_dir_name}" "build/output/${product_version_language_dir_name}"
-
-			mv -f build/output/"${product_version_language_dir_name}"/html/* build/output/"${product_version_language_dir_name}"
-
-			#
-			# Fix broken links.
-			#
-
-			for html_file_name in $(find build/output/"${product_version_language_dir_name}" -name *.html -type f)
-			do
-				sed -i '/github\.com\/liferay\/liferay\-learn/ ! s/.md"/.html"/g' ${html_file_name}
-				sed -i 's/.md#/.html#/g' ${html_file_name}
-			done
-
-			#
-			# Make ZIP files.
-			#
-
-			for zip_dir_name in $(find build/input/"${product_version_language_dir_name}" -name *.zip -type d)
-			do
-				pushd "${zip_dir_name}"
-
-				local zip_file_name=$(basename "${zip_dir_name}")
-
-				7z a ${zip_file_name} ../${zip_file_name}\
-
-				7z rn ${zip_file_name} ${zip_file_name} ${zip_file_name%.*}
-
-				local output_dir_name=$(dirname "${zip_dir_name}")
-
-				output_dir_name=$(dirname "${output_dir_name}")
-				output_dir_name=$(dirname "${output_dir_name}")
-				output_dir_name=${output_dir_name/input/output}
-
-				popd
-
-				mkdir -p "${output_dir_name}"
-
-				mv "${zip_dir_name}"/"${zip_file_name}" "${output_dir_name}"
-			done
+			continue
 		fi
+
+		local product_version_language_dir_name=$(get_product_version_language_dir_name)
+
+		echo "Generating static HTML for $(get_product_version_language_dir_name)."
+
+		#
+		# Use Sphinx to generate static HTML for each product, version, and language.
+		#
+
+		sphinx-build -M html "build/input/${product_version_language_dir_name}" "build/output/${product_version_language_dir_name}"
+
+		mv -f build/output/"${product_version_language_dir_name}"/html/* build/output/"${product_version_language_dir_name}"
+
+		#
+		# Fix broken links.
+		#
+
+		for html_file_name in $(find build/output/"${product_version_language_dir_name}" -name *.html -type f)
+		do
+			sed -i '/github\.com\/liferay\/liferay\-learn/ ! s/.md"/.html"/g' ${html_file_name}
+			sed -i 's/.md#/.html#/g' ${html_file_name}
+		done
+
+		#
+		# Make ZIP files.
+		#
+
+		for zip_dir_name in $(find build/input/"${product_version_language_dir_name}" -name *.zip -type d)
+		do
+			pushd "${zip_dir_name}"
+
+			local zip_file_name=$(basename "${zip_dir_name}")
+
+			7z a ${zip_file_name} ../${zip_file_name}\
+
+			7z rn ${zip_file_name} ${zip_file_name} ${zip_file_name%.*}
+
+			local output_dir_name=$(dirname "${zip_dir_name}")
+
+			output_dir_name=$(dirname "${output_dir_name}")
+			output_dir_name=$(dirname "${output_dir_name}")
+			output_dir_name=${output_dir_name/input/output}
+
+			popd
+
+			mkdir -p "${output_dir_name}"
+
+			mv "${zip_dir_name}"/"${zip_file_name}" "${output_dir_name}"
+		done
 	done
 
 	#

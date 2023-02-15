@@ -58,11 +58,11 @@ New users can also be added within organizations.
 
 1. Add the following user:
 
-   * Screen Name: `alan`
-   * Email Address: `alan@delectablebonsai.com`
-   * First Name: `Alan`
-   * Last Name: `Adams`
-   * Job Title: `Sales & Marketing Manager`
+   * Screen Name: `lily`
+   * Email Address: `lily@delectablebonsai.com`
+   * First Name: `Lily`
+   * Last Name: `Lewis`
+   * Job Title: `Account Rep`
 
    Click _Save_ at the bottom of the page.
 

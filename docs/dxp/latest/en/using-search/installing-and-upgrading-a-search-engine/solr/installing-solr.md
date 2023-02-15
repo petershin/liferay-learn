@@ -128,24 +128,6 @@ To blacklist Elasticsearch-only features,
 
 1. Place the file in Liferay's `osgi/configs` folder.
 
-### Stopping the Modules with Elasticsearch-Only Features
-
-The App Manager and Gogo shell rely on the `osgi/state` folder to remember the state of the bundle. If you delete this folder (recommended during [patching Liferay DXP](../../../installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)) the Elasticsearch connector is reinstalled and started automatically. The [blacklist approach](#blacklisting-elasticsearch-only-features) is thus more reliable.
-
-To disable modules via App Manager,
-
-1. Navigate to Control Panel &rarr; App Manager.
-
-1. Search for the modules listed in the blacklisting configuration above. Find the modules and open their Actions (![Actions](../../../images/icon-actions.png)) menus. Choose *Deactivate*.  This leaves the bundle installed, but stops it in the OSGi runtime.
-
-To use stop the Elasticsearch-dependent modules with the [Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md), first compile the list of modules to disable. See the [blacklisting instructions above](#blacklisting-elasticsearch-only-features) for each module's bundle symbolic name. Once you're at the Gogo shell,
-
-1. Enter `lb -s [bundle.symbolic.name]`.
-
-1. Enter `stop [bundle ID]`.
-
-1. Repeat for each module.
-
 ## Installing and Configuring Solr
 
 To install and configure Solr for Liferay,
@@ -239,7 +221,7 @@ It is most common to make your edits to the Solr connector's default configurati
 
    ![Configuring Solr from Liferay's System Settings application is most useful during development and testing.](./installing-solr/images/02.png)
 
-1. Once the app LPKG download is complete, copy it to Liferay's `osgi/marketplace` folder and place its configuration files in `osgi/configs`.
+1. Copy the Solr connector LPKG you [downloaded](#downloading-the-solr-connector) to Liferay's `osgi/marketplace` folder and place its configuration files in `osgi/configs`.
 
 1. Start Liferay.
 

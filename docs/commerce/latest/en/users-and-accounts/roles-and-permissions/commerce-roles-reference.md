@@ -131,6 +131,87 @@ You can use this role to oversee all the purchases made in the Account. If a Buy
 | Open Carts > Commerce Orders: Manage Order Payment Terms             | Ability to manage the Payment Terms of an Order                                                            |
 | Open Carts > Commerce Orders: View Billing Address                   | Ability to view the billing address of an Order                                                            |
 
+## Roles created by Site Initializers - Minium and Speedwell
+
+### Sales Agent
+
+The Sales Agent is a regular role in Liferay and assignees are able to manage any account assigned to the role without granting administrative permissions. You can find it under the *Regular Roles* tab.
+
+| Permissions                                                       | Description                                                                          |
+| :---------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
+| Accounts > Account Entry: Manage Organizations                    | Ability to add or remove organizations                                               |
+| Accounts > Account Entry: Manage Users                            | Ability to add or remove user§s                                                      |
+| Open Carts > Commerce Order: Add Order                            | Ability to add an order to the account that the agent's organization is a member of. |
+| Open Carts > Commerce Order: Check Out Open Orders                | Ability to complete the checkout process for orders                                  |
+| Open Carts > Commerce Order: View Open Orders                     | Ability to view all open orders                                                      |
+| Users and Organizations > Organization: Manage Available Accounts | Ability to manage accounts that the sales agent's organization is a member of.       |
+
+### Discount Manager
+
+> Regular Role
+
+The Discount Manager role grants permissions to create, update, and delete Discounts in Liferay Commerce. Since Commerce Discounts can target different parts of an order and use different eligibility rules, there are a lot of possible permission configurations for a Discount Manager.
+
+| Permissions                                                 | Description                                                      |
+| :---------------------------------------------------------- | :--------------------------------------------------------------- |
+| Catalogs > Commerce Catalog: View                           | Ability to view catalogs                                         |
+| Portal: View Control Panel Menu                             | Ability to access the Global Menu                                |
+| Price Lists: Access in Control Panel                        | Ability to access the Price Lists application in the Global Menu |
+| Price Lists > Commerce Price List: Delete                   | Ability to delete price list entries                             |
+| Price Lists > Commerce Price List: Update                   | Ability to modify price list entries                             |
+| Price Lists > Commerce Price List: View                     | Ability to view price list entries                               |
+| Price Lists > Commerce Price Lists: Add Commerce Price List | Ability to add price list entries                                |
+| Promotions: Access in Control Panel                         | Ability to access to Promotions application in the Global Menu   |
+
+### Category Manager
+
+The category manager role grants permissions to create categories and vocabularies in Liferay. The category manager can also access and manage product catalogs.
+
+> Regular Role
+
+| Permissions                                                 | Description                                                               |
+| :---------------------------------------------------------- | :------------------------------------------------------------------------ |
+| Catalogs: Access in Control Panel                           | Ability to access the Catalogs application in the Global Menu             |
+| Catalogs > Commerce Catalog: Update                         | Ability to update product catalogs                                        |
+| Catalogs > Commerce Catalog: View                           | Ability to view product catalogs                                          |
+| Catalogs > Commerce Catalogs: Add Commerce Catalog          | Ability to add new product catalogs                                       |
+| Categories: Access in Site and Asset Library administration | Ability to access categories in the Site and Asset Library administration |
+| Categories: View                                            | Ability to view categories                                                |
+| Categories > Asset Categories: Add Category                 | Ability to add categories                                                 |
+| Categories > Asset Categories: Add Vocabulary               | Ability to add vocabularies                                               |
+| Portal: View Control Panel Menu                             | Ability to access the Global Menu                                         |
+| Products: Access in Control Panel                           | Ability to access the Products application in the Global Menu             |
+
+### Operations Manager
+
+> Regular Role
+
+The operations manager role grants permissions to manage accounts of an account group, inventory, shipments, and orders.
+
+| Permissions                                                  | Description                                                                                                |
+| :----------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| Account Groups > Commerce Accounts: Manage All Accounts      | Ability to manage accounts of an account group                                                             |
+| Inventory: Access in Control Panel                           | Ability to access the Inventory application in the Global Menu                                             |
+| Open Carts > Commerce Orders: Manage Order Delivery Terms    | Ability to manage the delivery terms of an order                                                           |
+| Open Carts > Commerce Orders: Manage Order Payment Terms     | Ability to manage the payment terms of an order                                                            |
+| Open Carts > Commerce Orders: Manage Orders                  | Ability to change order details, such as mailing and billing addresses; ability to add a note to the order |
+| Orders: Access in Control Panel                              | Ability to access the Orders application in the Global Menu                                                |
+| Portal: View Control Panel Menu                              | Ability to access the Global Menu                                                                          |
+| Shipments: Access in Control Panel                           | Ability to access the Shipments application in the Global Menu                                             |
+| Shipments > Commerce Shipments: Manage Shipments             | Ability to access and modify shipments entities                                                            |
+| Subscriptions: Access in Control Panel                       | Ability to access the subscriptions application in the Global Menu                                         |
+| Subscriptions > Commerce Subscriptions: Manage Subscriptions | Ability to access and modify subscriptions                                                                 |
+| Warehouses > Commerce Inventories: Manage Inventory          | Ability to access and modify inventory linked to a warehouse                                               |
+
+### Punch Out
+
+> Site Role
+
+| Permissions                                         | Description                                         |
+| :-------------------------------------------------- | :-------------------------------------------------- |
+| Open Carts > Commerce Orders: Check Out Open Orders | Ability to complete the checkout process for Orders |
+| Open Carts > Commerce Orders: View Open Orders      | Ability to view all open Orders                     |
+
 ## Custom Roles
 
 The following list includes common custom roles you may want to create for your own Commerce instance. These roles can be created in the same way as other DXP roles. See [Creating and Managing Roles](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) and [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) for more information
@@ -157,35 +238,6 @@ To do this, open the *Global Menu* (![Global Menu](../../images/icon-application
 ```{note}
 If you'd like your Catalog Manager to manage Products within a Catalog without the ability to modify the Catalog itself, remove the `Catalogs: Access in Control Panel` and `Catalogs: View` permissions.
 ```
-
-### Discount Manager
-
-> Regular Role
-
-The Discount Manager role grants permissions to create, update, and delete Discounts in Liferay Commerce. Since Commerce Discounts can target different parts of an order and use different eligibility rules, there are a lot of possible permission configurations for a Discount Manager. The following configuration grants access to all Discount options.
-
-| Permissions                                                      | Description                                                                  |
-| :--------------------------------------------------------------- | :--------------------------------------------------------------------------- |
-| Account Groups: View                                             | Ability to view the Account Groups application                               |
-| Account Groups > Commerce Accounts: Manage All Accounts          | Necessary to access the Account Groups application                           |
-| Account Groups > Commerce Accounts: View Commerce Account Groups | Ability to view existing Account Groups                                      |
-| Catalogs: View                                                   | Ability to view the Catalogs application                                     |
-| Catalogs > Commerce Catalogs: View Commerce Catalogs             | Ability to view related resources in the Catalogs application                |
-| Channels: View                                                   | Ability to view the Channels application                                     |
-| Channels > Commerce Channels: View Commerce Channels             | Ability to view related resources in the Channels application                |
-| Discounts: Access in Control Panel                               | Ability to access the Discounts application in the Global Menu               |
-| Discounts: Permissions                                           | Ability to view and modify resource permissions in the Discounts application |
-| Discounts: View                                                  | Ability to view the Discounts application                                    |
-| Discounts > Commerce Discount: Delete                            | Ability to delete Discount entities                                          |
-| Discounts > Commerce Discount: Permissions                       | Ability to view and modify permissions for Discount entities                 |
-| Discounts > Commerce Discount: Update                            | Ability to modify Discount entities                                          |
-| Discounts > Commerce Discount: View                              | Ability to view Discount entities                                            |
-| Discounts > Commerce Discounts: Add Discount                     | Ability to create Discount entities in the Discounts application.            |
-| Discounts > Commerce Discounts: View Discounts                   | Ability to view existing Discount entities in the Discounts application      |
-| Currencies > Commerce Currencies: Manage Currencies              | Ability to access and modify Currency entities                               |
-| Portal: View Control Panel Menu                                  | Ability to access the Global Menu                                            |
-| Price Lists: Access in Control Panel                             | Ability to access the Price Lists application in the Global Menu             |
-| Product Groups: View                                             | Ability to view Product Group entities                                       |
 
 ### Inventory Manager
 

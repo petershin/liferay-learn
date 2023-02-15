@@ -2,6 +2,7 @@
 toc:
   - ./publications/enabling-publications.md
   - ./publications/creating-and-managing-publications.md
+  - ./publications/using-publication-templates.md
   - ./publications/making-and-publishing-changes.md
   - ./publications/using-workflow-with-publications.md
   - ./publications/collaborating-on-publications.md
@@ -17,6 +18,7 @@ uuid: 8e7e004e-c872-4b7d-af1d-0d2eec5210b1
 
 publications/enabling-publications.md
 publications/creating-and-managing-publications.md
+publications/using-publication-templates.md
 publications/making-and-publishing-changes.md
 publications/using-workflow-with-publications.md
 publications/collaborating-on-publications.md
@@ -25,7 +27,7 @@ publications/reverting-changes.md
 publications/publications-permissions.md
 ```
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
 You can use *Publications* to develop, track, and publish changes across your DXP instance. It works by creating a database column to determine which version of your content is displayed on your live Sites. With it, Users create separate *publications* to group their changes into publishable blocks.
 

@@ -17,23 +17,23 @@ Before upgrading your Liferay version, ensure you've published all active public
 
 ## Creating a New Publication
 
-Follow these steps to create a new publication.
-
-1. Click on the Publications *drop-down menu*, and select *Create New Publication*.
+1. Click the Publications *drop-down menu*, and select *Create New Publication*.
 
    ![Click Create New Publication in the Publications drop-down menu.](./creating-and-managing-publications/images/01.png)
 
-   Alternatively, open the Publications application and click on the *Add* button ( ![Add button](../../../images/icon-add.png) ) in the *Ongoing* tab.
+   Alternatively, open the Publications application and click the *Add* button ( ![Add button](../../../images/icon-add.png) ) in the *Ongoing* tab.
 
 1. Enter a *name* and *description* for the publication.
+
+   Alternatively, select a [publication template](./using-publication-templates.md) to auto populate these fields.
 
    ```{note}
    Publication names do not need to be unique. However, using unique names is recommended for organization.
    ```
 
-1. Click on *Create*.
+1. Click *Create*.
 
-![Enter a name and description for your publication, and click on Create.](./creating-and-managing-publications/images/02.png)
+![Enter a name and description for your publication, and click Create.](./creating-and-managing-publications/images/02.png)
 
 Once the publication is created, you can begin adding changes to it. See [Making and Publishing Changes](./making-and-publishing-changes.md) to learn more about the editing and publishing process.
 
@@ -47,7 +47,7 @@ In the *Ongoing* tab, you can view a table of all active, unpublished publicatio
 
 ![The Ongoing tab lists all active, unpublished publications.](./creating-and-managing-publications/images/03.png)
 
-From here, you can click on a publication's *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) to perform the following actions.
+From here, you can click a publication's *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) to perform the following actions.
 
 **Work on Publication**: Select the publication to add changes to it. Once selected, you can easily toggle between the publication and production via the Publications drop-down menu. See [Making Changes in a Publication](./making-and-publishing-changes.md#making-changes-in-a-publication) for more information.
 
@@ -57,7 +57,7 @@ From here, you can click on a publication's *Actions* button ( ![Actions button]
 
 **Invite Users**: Invite users to collaborate on the publication. See [Collaborating on Publications](./collaborating-on-publications.md) for more information.
 
-**Publish**: Begin the publishing process for the publication. This redirects users to the publishing page, where they can resolve conflicts. If there are no conflicts, they can then click on *Publish* to make their changes live. See [Publishing Changes](./making-and-publishing-changes.md#publishing-changes) and [Resolving Conflicts](./resolving-conflicts.md) for more information.
+**Publish**: Begin the publishing process for the publication. This redirects users to the publishing page, where they can resolve conflicts. If there are no conflicts, they can then click *Publish* to make their changes live. See [Publishing Changes](./making-and-publishing-changes.md#publishing-changes) and [Resolving Conflicts](./resolving-conflicts.md) for more information.
 
 **Schedule**: Schedule the publication's changes to be applied to production. See [Publishing Changes](./making-and-publishing-changes.md#publishing-changes) for more information.
 
@@ -75,7 +75,7 @@ In the *Schedule* tab, you can view a table of all scheduled publications that y
 
 ![The Schedule tab lists all scheduled publications for your instance.](./creating-and-managing-publications/images/04.png)
 
-Once scheduled, changes cannot be added to a publication. However, you can click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for a scheduled publication to perform the following actions:
+Once scheduled, changes cannot be added to a publication. However, you can click the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for a scheduled publication to perform the following actions:
 
 **Unschedule**: Cancel the scheduled publishing and return the publication to the *In Progress* status.
 

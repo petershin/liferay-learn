@@ -45,7 +45,7 @@ If you've enabled Sandbox Only and don't want users to work in production, ensur
 
 ## Resource Permissions
 
-Resource permissions grant access to view and act on resources in the Publications application. Some of these permissions [relate to creating publications](#publications-related-to-creating-publications), while others are for [performing actions on existing publications](#publication-for-performing-actions-on-existing-publications) (e.g., edit, delete, publish).
+Resource permissions grant access to view and act on resources in the Publications application. Some of these permissions [relate to creating publications](#publications-creating-publications), while others are for [performing actions on existing publications](#publication-acting-on-existing-publications) (e.g., edit, delete, publish).
 
 ### Publications (Creating Publications)
 

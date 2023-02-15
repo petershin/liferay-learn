@@ -217,10 +217,6 @@ It is most common to make your edits to the Solr connector's default configurati
    com.liferay.portal.search.solr8.configuration.SolrConfiguration.config
    ```
 
-   After the initial configuration file is deployed and Liferay's connection to Solr is active, you can update the configuration from the Solr 8 System Settings entry in Control Panel &rarr; Configuration &rarr; System Settings.
-
-   ![Configuring Solr from Liferay's System Settings application is most useful during development and testing.](./installing-solr/images/02.png)
-
 1. Copy the Solr connector LPKG you [downloaded](#downloading-the-solr-connector) to Liferay's `osgi/marketplace` folder and place its configuration files in `osgi/configs`.
 
 1. Start Liferay.
@@ -330,6 +326,10 @@ To support SolrCloud in Liferay, specify the client type as *CLOUD* in Liferay's
 ![From the Solr System Settings entry, set the Client Type to Cloud.](./installing-solr/images/03.png)
 
 ## Solr Connector Configuration Reference
+
+In addition to using configuration files, you can update the Solr 8 configuration using System Settings.
+
+![Configuring Solr from Liferay's System Settings application is most useful during development and testing.](./installing-solr/images/02.png)
 
 Below are the default configurations along with settings that become available (in the System Settings Search category or configurable by `.config` file) when you install the Solr connector application. These settings accept a limited set of values:
 

@@ -8,7 +8,7 @@ function main {
 	local necessay_packages=(generator-liferay-fragments generator-liferay-js generator-liferay-theme yarn yo)
 	local missing_packages=()
 
-	npm list --depth=0 -g ${necessay_packages[@]} > $tmp_packages_file
+	npm list --depth=0 --global ${necessay_packages[@]} > $tmp_packages_file
 
 	for index in ${!necessay_packages[@]}; do
 		package=${necessay_packages[$index]}

@@ -49,12 +49,14 @@ When setting up roles for account restriction, consider these factors:
 
 * Organization roles must have these permissions to create object entries: `User and Organizations > Organization: Manage Accounts` and `User and Organizations > Organization: Manage Suborganizations Accounts`. Without these permissions, users with the organization role cannot select an account during entry creation.
 
-* To use organization and account roles to access a custom object, users must have a separate regular role that grants the `Access in Control Panel` permission (company-scoped) or `Access in Site`  permission (site-scoped). See [Object Application Permissions](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) for more information.
+* For organization and account role users to access a custom object, they must have a separate regular role granting the `Access in Control Panel` (company-scoped) or `Access in Site` permission (site-scoped). See [Object Application Permissions](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) for more information.
 
 ```{important}
 Account and organization roles are only supported in objects with account restriction enabled.
 
 Account restriction does not support the default Account Member and Organization user roles. These roles do not automatically grant access to related object data.
+
+When a user is a member of multiple accounts with different account roles and object permissions, these permissions apply to each account the user belongs to.
 ```
 
 ## Example Use Case: Insurance Claims
@@ -67,7 +69,7 @@ Consider an insurance scenario with these requirements:
 
 * A claims manager must oversee all claims.
 
-To achieve this, [create a Claims object](../creating-objects.md) with account restriction enabled. Then [create organizations](../../../../users-and-permissions/organizations/creating-and-managing-organizations.md#adding-organizations) for grouping CSMs and [associate each organization](../../../../users-and-permissions/accounts.md#organizations-tab) with the appropriate business accounts. Finally, create the following [account](#account-role), [organization](#organization-role), and [regular](#regular-role) roles and [assign them](../../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md) to the appropriate users. Since the Claims object is company-scoped, account and organization users must also have a separate regular role that grants the `Portal: View Control Panel Menu` and `Claims: Access in Control Panel` permissions. For convenience, you can assign these permissions to the default user role.
+To achieve this, create a Claims object with account restriction enabled. Then create organizations for grouping CSMs and associate each organization with the appropriate business accounts. Finally, create the following [account](#account-role), [organization](#organization-role), and [regular](#regular-role) roles and assign them to the appropriate users. Since the Claims object is company-scoped, account and organization users must also have a separate regular role that grants the `Portal: View Control Panel Menu` and `Claims: Access in Control Panel` permissions. For convenience, you can assign these permissions to the default user role.
 
 ```{note}
 In this example, each role can create claim entries, but granting that permission is not necessary for the organization and regular roles.
@@ -86,7 +88,7 @@ Grant account users permission to create and manage the account's object data.
 | Claims > Claims: Add Object Entry | Create an object entry. |
 
 ```{important}
-Do not assign the `Claims > Claim: View` resource permission to account roles. This can interfere with standard role behaviors. Also, when a user is a member of multiple accounts with different account roles and object permissions, these permissions apply to each account the user belongs to.
+Do not assign the `Claims > Claim: View` resource permission to account roles. This permission can interfere with standard role behaviors.
 ```
 
 ### Organization Role

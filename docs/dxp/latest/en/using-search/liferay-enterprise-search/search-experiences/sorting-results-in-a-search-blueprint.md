@@ -1,6 +1,8 @@
 # Sorting Results in a Search Blueprint
 
-Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-oconfiguration) to a Search Blueprint to control the order of search results. Go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new Blueprint or open an existing one, then click the _Configuration_ tab. Enter your JSON into the Sort Configuration text area.
+Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-oconfiguration) to a search blueprint to control the order of search results. Go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new blueprint or open an existing one, then click the _Configuration_ tab. Enter your JSON into the Sort Configuration text area.
+
+![Enter JSON to sort a blueprint's results.](./sorting-results-in-a-search-blueprint/images/01.png)
 
 ```{important}
 * Do not use both the [Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorts on a search page. Consistent behavior cannot be guaranteed if you combine sorts from the Sort widget and a search blueprint's sort configuration.
@@ -29,9 +31,9 @@ At its most basic, a sort configuration is a JSON element with a `sorts` array a
 There can be similarly named field variations. Make sure you're using the correct to capture each entity being searched. For example, `title_en_US_sortable`, `localized_title_en_US_sortable`, etc.
 ```
 
-## Example 2: Sorting by a Nested DDM Field
+## Example 2: Sorting by a Structure Field
 
-Web Content (DDM) Structure fields are indexed as nested fields in the search engine document. 
+Web Content Structure fields are indexed as nested fields in the search engine document. 
 
 When viewing the document, you can see the nested properties in the `ddmFieldArray`:
 
@@ -46,7 +48,19 @@ When viewing the document, you can see the nested properties in the `ddmFieldArr
 ```
 
 ```{tip}
-Enable the Search Results widget configuration [_Display Results in Document Form_](../../search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#inspecting-search-engine-documents) to see the results as they're indexed in the search engine. Click the _Details_ tab to expand each result.
+To view the document with its nested fields, 
+
+1. Enable fetching the document `_source`. Click the blueprint's _Configuration_ tab, then enter this JSON into the Advanced Configuration box:
+
+    ```json
+    {
+       "source": {
+          "fetchSource": true
+       }
+    }
+    ```
+
+1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields. 
 ```
 
 For a nested field, the sort configuration's field declaration is more complicated:
@@ -92,6 +106,21 @@ When viewing the document, you can see the nested properties of an Object in the
             }
 ```
 
+```{tip}
+To view the document with its nested fields, 
+
+1. Enable fetching the document `_source`. Click the blueprint's _Configuration_ tab, then enter this JSON into the Advanced Configuration box:
+
+    ```json
+    {
+       "source": {
+          "fetchSource": true
+       }
+    }
+    ```
+
+1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields. 
+```
 Example configuration:
 
 ```json

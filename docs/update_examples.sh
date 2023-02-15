@@ -20,11 +20,14 @@ function copy_template {
 		then
 			cp -fr _template/java/* ${zip_dir_name}
 
-			if [ -n "$(grep release.dxp.api $(echo ${gradle_build_file_name}))" ]
+			if [ ! $(git ls-files ${zip_dir_name}/gradle.properties) ]
 			then
-				echo -ne "liferay.workspace.product=${LIFERAY_LEARN_DXP_WORKSPACE_TOKEN}" > ${zip_dir_name}/gradle.properties
-			else
-				echo -ne "liferay.workspace.product=${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN_VALUE}" > ${zip_dir_name}/gradle.properties
+				if [ -n "$(grep release.dxp.api $(echo ${gradle_build_file_name}))" ]
+				then
+					echo -ne "liferay.workspace.product=${LIFERAY_LEARN_DXP_WORKSPACE_TOKEN}" > ${zip_dir_name}/gradle.properties
+				else
+					echo -ne "liferay.workspace.product=${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN_VALUE}" > ${zip_dir_name}/gradle.properties
+				fi
 			fi
 
 			pushd ${zip_dir_name}

@@ -1,6 +1,6 @@
 ---
 toc:
-- ./certified-liferay-administrator.md
+- ./liferay-administrator.md
 ---
 # Liferay Courses
 

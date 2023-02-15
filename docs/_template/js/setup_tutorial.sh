@@ -2,33 +2,34 @@
 
 function main {
 	echo "Checking dependencies..."
+	echo ""
 
-	local tmp_packages_file="$(mktemp -d)/packages"
-
-	local necessay_packages=(generator-liferay-fragments generator-liferay-js generator-liferay-theme yarn yo)
 	local missing_packages=()
 
-	npm list --depth=0 --global ${necessay_packages[@]} > $tmp_packages_file
+	local required_packages=(generator-liferay-fragments generator-liferay-js generator-liferay-theme yarn yo)
+	local temp_file="$(mktemp)"
 
-	for index in ${!necessay_packages[@]}; do
-		package=${necessay_packages[$index]}
+	npm list --depth=0 --global ${required_packages[@]} > ${temp_file}
+
+	for index in ${!required_packages[@]}
+	do
+		package=${required_packages[${index}]}
 	
-		grep " ${package}@" $tmp_packages_file
+		grep " ${package}@" ${temp_file}
 
 		if [ $? -gt 0 ]
 		then
-			missing_packages+=( $package )
+			missing_packages+=(${package})
 		fi
 	done
 
-	rm $tmp_packages_file
-	echo ""
+	rm ${temp_file}
 
 	if [ ${#missing_packages[@]} -gt 0 ]
 	then
 		echo "Some tutorial dependencies are missing. Run this command:"
 		echo ""
-		echo "	npm install -g ${missing_packages[@]}"
+		echo "	npm install --global ${missing_packages[@]}"
 
 		exit 1;
 	fi

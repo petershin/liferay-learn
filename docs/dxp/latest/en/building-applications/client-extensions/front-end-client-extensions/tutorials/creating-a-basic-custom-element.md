@@ -173,7 +173,7 @@ Once saved, Liferay creates a widget named H5V7-Remote-App, which you can deploy
 
 ## Additional Information
 
-* [Browser-Based Client Extensions](../../browser-based-client-extensions.md)
+* [Front-end Client Extensions](../../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
 * [Using Routes with Custom Elements](./using-routes-with-custom-elements.md)
 * [Remote Applications UI Reference](../remote-applications-ui-reference.md)

@@ -1,7 +1,9 @@
 ---
 toc:
   - ./client-extensions/working-with-client-extensions.md
-  - ./client-extensions/browser-based-client-extensions.md
+  - ./client-extensions/front-end-client-extensions.md
+  - ./client-extensions/back-end-client-extensions.md
+  - ./client-extensions/configuration-client-extensions.md
 uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 ---
 # Client Extensions
@@ -10,7 +12,9 @@ uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 :maxdepth: 4
 
 client-extensions/working-with-client-extensions.md
-client-extensions/browser-based-client-extensions.md
+client-extensions/front-end-client-extensions.md
+client-extensions/back-end-client-extensions.md
+client-extensions/configuration-client-extensions.md
 ```
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
@@ -26,7 +30,7 @@ With client extensions, you can
 * Apply [custom JavaScript or CSS](#browser-based-client-extensions) to your pages without needing to rely on any specific code in Liferay
 * Embed applications hosted remotely into a [custom element](./client-extensions/browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a page in Liferay
 * Simplify your process to apply programmatically the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-as-code)
-* Call [custom services](#custom-service-client-extensions) or [functions](#lambda-client-extensions) running outside of Liferay, such as an external feed or even a custom authentication server, using the programming languages or technologies of your choice
+* Call [custom services](#custom-service-client-extensions) or [functions](#lambda-client-extensions) running outside of Liferay, such as an external RSS feed, using the programming languages or technologies of your choice
 
 ## Types of Client Extensions
 
@@ -40,6 +44,22 @@ These types of client extensions are available for extending Liferay's appearanc
 * [Data Connector Client Extensions](#data-connector-client-extensions)
 * [Lambda Client Extensions](#lambda-client-extensions)
 * [Custom Service Client Extensions](#custom-service-client-extensions)
+
+### Styling, Branding, and Front-end Resources
+
+Styling and front-end are good for styling and your front of the end
+
+**Styling**: 
+
+**
+
+See [Browser-Based Client Extensions](link) for more information.
+
+### Back-end and Business Logic
+
+
+
+### Configurations and Object Models
 
 ### Browser-Based Client Extensions
 

@@ -1,3 +1,6 @@
+---
+uuid: 4ed1ea2d-8680-46b9-8f45-9db81b74794b
+---
 # Portlets
 
 Liferay DXP started off as a portal server for Java-based web applications called *portlets* (see [JSR 168](https://jcp.org/en/jsr/detail?id=168), [JSR-286](https://jcp.org/en/jsr/detail?id=286), and [JSR-362](https://jcp.org/en/jsr/detail?id=362)). Portlets process requests and generate responses like any other web application. One key difference, however, between portlets and other web apps is that portlets run in a portion of the web page. When you're writing a portlet application, you need only worry about that application: the rest of the page---the navigation, the top banner, and other global components of the interface---is handled by other components. Portlets run only in a portal server. They use the portal's existing support for user management, authentication, permissions, page management, and more. This frees you to focus on developing the portlet's core functionality. In many ways, writing your application as a portlet is easier than writing a standalone application.

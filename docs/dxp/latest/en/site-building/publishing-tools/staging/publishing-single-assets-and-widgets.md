@@ -1,3 +1,6 @@
+---
+uuid: 221b8182-7251-4a9a-ac11-2c4a6ca93d20
+---
 # Publishing Single Assets and Widgets
 
 You can publish single assets and widgets when needed without going through the entire publishing process. This is much faster than publishing all content at once.

@@ -1,3 +1,6 @@
+---
+uuid: a41444d3-6932-44f5-823f-aa1ecaed6a08
+---
 # Using Multi-Factor Authentication
 
 To enhance your installation's security, you should disable less secure, one-factor forms of authentication, such as Basic Auth, Digest Auth, and WebDAV. You can do this by configuring their [Authentication Verifiers](../securing-web-services/using-authentication-verifiers.md). Note that if you disable WebDAV, this also disables features you might be using: 

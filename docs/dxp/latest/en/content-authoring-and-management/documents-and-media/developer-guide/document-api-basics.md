@@ -1,3 +1,6 @@
+---
+uuid: 87084148-5102-4d8d-b55c-9efa57a7a2b4
+---
 # Document API Basics
 
 Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add documents and folders, list their information, modify them, delete them and more. Here you'll call those services using cURL commands and Java classes.

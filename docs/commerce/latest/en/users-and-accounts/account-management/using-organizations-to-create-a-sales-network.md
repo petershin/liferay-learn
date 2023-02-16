@@ -1,3 +1,6 @@
+---
+uuid: 10a15339-46aa-4791-8c94-48218ba1d708
+---
 # Using Organizations to Create a Sales Network
 
 The organizational structure of B2B sales networks can be mirrored in Liferay Commerce using the Organizations feature. Organizations are hierarchical arrangements of Users that can model real-world organizational hierarchies that enable distributed and simplified management of Users, Roles, Permissions and Accounts.

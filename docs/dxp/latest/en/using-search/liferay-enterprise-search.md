@@ -1,10 +1,11 @@
 ---
 toc:
-- ./liferay-enterprise-search/activating-liferay-enterprise-search.md
-- ./liferay-enterprise-search/cross-cluster-replication.md
-- ./liferay-enterprise-search/learning-to-rank.md
-- ./liferay-enterprise-search/monitoring-elasticsearch.md
-- ./liferay-enterprise-search/search-experiences.md
+  - ./liferay-enterprise-search/activating-liferay-enterprise-search.md
+  - ./liferay-enterprise-search/cross-cluster-replication.md
+  - ./liferay-enterprise-search/learning-to-rank.md
+  - ./liferay-enterprise-search/monitoring-elasticsearch.md
+  - ./liferay-enterprise-search/search-experiences.md
+uuid: 23aa16e5-08ba-4fb6-bd49-a9370017ba3c
 ---
 # Liferay Enterprise Search
 

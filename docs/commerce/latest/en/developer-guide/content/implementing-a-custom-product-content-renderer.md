@@ -1,3 +1,6 @@
+---
+uuid: c90cd50c-a74f-43f5-bd7e-b8eb7e296dba
+---
 # Implementing a Custom Product Content Renderer
 
 This tutorial will show you how to add a custom product content renderer by implementing the [CPContentRenderer](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/render/CPContentRenderer.java) interface.

@@ -1,3 +1,6 @@
+---
+uuid: 802fd9ad-1042-4876-9987-0cf5ac1b30db
+---
 # Implementing a Custom Order Rule
 
 You can configure Order Rules in Liferay for orders that meet a specific condition. The Minimum Order Amount rule is available out-of-the-box. It prevents checkout of orders below a specific value. To add a new Order Rule, you must implement the [`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java) interface. See [Order Rules](https://learn.liferay.com/commerce/latest/en/order-management/order-rules.html) for more information.

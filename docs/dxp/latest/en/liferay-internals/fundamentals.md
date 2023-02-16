@@ -1,13 +1,14 @@
 ---
 toc:
-- ./fundamentals/module-projects.md
-- ./fundamentals/apis-as-osgi-services.md
-- ./fundamentals/using-an-osgi-service.md
-- ./fundamentals/importing-packages.md
-- ./fundamentals/exporting-packages.md
-- ./fundamentals/semantic-versioning.md
-- ./fundamentals/configuring-dependencies.md
-- ./fundamentals/using-the-gogo-shell.md
+  - ./fundamentals/module-projects.md
+  - ./fundamentals/apis-as-osgi-services.md
+  - ./fundamentals/using-an-osgi-service.md
+  - ./fundamentals/importing-packages.md
+  - ./fundamentals/exporting-packages.md
+  - ./fundamentals/semantic-versioning.md
+  - ./fundamentals/configuring-dependencies.md
+  - ./fundamentals/using-the-gogo-shell.md
+uuid: 1e42d71d-b924-4680-976c-80cb85414045
 ---
 # Fundamentals
 

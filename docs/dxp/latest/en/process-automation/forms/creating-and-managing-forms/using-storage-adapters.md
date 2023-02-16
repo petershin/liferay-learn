@@ -1,3 +1,6 @@
+---
+uuid: 80472478-cf6a-4483-8673-fedf6ffdd0c0
+---
 # Using Storage Adapters
 
 When a User adds a form record, Liferay routes the processing of the request through a [storage adapter](../developer-guide/understanding-form-storage-adapters.md) API. The same is true for the other *CRUD* operations performed on form entries (read, update, and delete). The default implementation of the storage service translates the forms into JSON for storage in the Liferay database.

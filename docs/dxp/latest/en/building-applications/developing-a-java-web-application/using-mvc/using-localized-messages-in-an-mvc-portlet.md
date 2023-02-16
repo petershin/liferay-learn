@@ -1,3 +1,6 @@
+---
+uuid: 6988987b-e241-4f0f-9313-d188108b30a9
+---
 # Using Localized Messages in an MVC Portlet
 
 Liferay's localization framework is for creating localized messages in your MVC Portlet. 

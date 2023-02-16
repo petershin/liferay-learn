@@ -1,3 +1,6 @@
+---
+uuid: 011f7d87-9c5a-40d0-bd92-a300dc8174a4
+---
 # Using the Iframe Widget
 
 The *Iframe* widget creates an [iframe](https://www.w3schools.com/html/html_iframe.asp) that can embed and display a web page.

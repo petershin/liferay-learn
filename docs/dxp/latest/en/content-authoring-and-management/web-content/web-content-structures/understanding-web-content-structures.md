@@ -1,3 +1,6 @@
+---
+uuid: b0e28948-2c6e-4024-8d51-0b19da27dc41
+---
 # Understanding Web Content Structures
 
 Web Content Structures are the building blocks for Web Content Articles. They determine the information you can include when writing Web Content. Structures provide these key benefits:

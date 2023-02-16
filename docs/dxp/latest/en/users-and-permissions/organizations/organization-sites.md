@@ -1,3 +1,6 @@
+---
+uuid: 82a08097-d17c-4cf1-93bd-3a3c6052d4a9
+---
 # Organization Sites
 
 Liferay [Organizations](./understanding-organizations.md) enable distributed User management, providing a convenient way to organize and manage instance users and roles to reflect your organizational hierarchy. Once an organization is created, you can also enable a dedicated Site for your Organization to facilitate distributed portal administration. This feature is available for both parent and child Organizations, so you can quickly create a hierarchy of Sites with content created, administered, and tailored specifically to each group's needs.

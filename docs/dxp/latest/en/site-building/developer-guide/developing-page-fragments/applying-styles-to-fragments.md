@@ -1,3 +1,6 @@
+---
+uuid: 0602f11c-7650-4bc4-9071-79c6d8162689
+---
 # Applying Styles to Fragments
 
 When you add a fragment to a page, you can use the sidebar menu to configure the fragment, including [the *Styles* configuration tab](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles).

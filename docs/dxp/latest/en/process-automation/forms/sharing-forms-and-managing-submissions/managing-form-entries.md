@@ -1,3 +1,6 @@
+---
+uuid: bacf780d-4652-4516-814f-cc08bd1b05c4
+---
 # Managing Form Entries
 
 Once users begin submitting form entries, you can access the form entry data through the UI or export the data to a different file format for further analysis and review.

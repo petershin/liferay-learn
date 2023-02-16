@@ -1,3 +1,6 @@
+---
+uuid: b7a70e09-bbdd-474e-a652-a748e83d1f56
+---
 # Definitions for Events
 
 Analytics Cloud tracks default and custom events that occur on your DXP instance. To view and manage how these events are defined, navigate to *Settings* &rarr; *Workspace Data* &rarr; *Definitions* &rarr; *Events*.

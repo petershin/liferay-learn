@@ -1,3 +1,6 @@
+---
+uuid: 231895b7-3e9b-42d4-a89f-91d2e8e9f3ac
+---
 # Auto Tagging Images
 
 Once [asset auto tagging has been enabled](./configuring-asset-auto-tagging.md), you can also enable image auto tagging. Image auto tagging tags images uploaded to the Documents and Media Library.

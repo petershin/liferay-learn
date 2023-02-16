@@ -1,3 +1,6 @@
+---
+uuid: f7f14ea8-09b1-439e-8ca5-a265eb762cd3
+---
 # Asset Libraries Overview
 
 {bdg-secondary}`Available 7.3+`

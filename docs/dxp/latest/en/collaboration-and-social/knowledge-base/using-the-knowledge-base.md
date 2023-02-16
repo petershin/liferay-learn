@@ -1,3 +1,6 @@
+---
+uuid: c238b010-11ee-4e13-9c13-aefe24e0e04e
+---
 # Using the Knowledge Base
 
 The Knowledge Base app can be used to display professional product documentation or form complete books or guides. You can even import article source files written in Markdown. It's [workflow-enabled](../../process-automation/workflow/introduction-to-workflow.md), so you can require articles to be approved before publication. Additionally, you can create [article templates](./knowledge-base-templates.md) that help Users follow a common outline.

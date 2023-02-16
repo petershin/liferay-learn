@@ -1,11 +1,12 @@
 ---
 toc:
-- ./tooling/developer-tools-overview.md
-- ./tooling/liferay-workspace.md
-- ./tooling/blade-cli.md
-- ./tooling/poshi-test-automation.md
-- ./tooling/other-tools.md
-- ./tooling/reference.md
+  - ./tooling/developer-tools-overview.md
+  - ./tooling/liferay-workspace.md
+  - ./tooling/blade-cli.md
+  - ./tooling/poshi-test-automation.md
+  - ./tooling/other-tools.md
+  - ./tooling/reference.md
+uuid: 61624733-2570-4d8a-873b-d66a51539bf0
 ---
 # Tooling
 

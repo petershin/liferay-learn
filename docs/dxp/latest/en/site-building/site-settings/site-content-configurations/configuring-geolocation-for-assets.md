@@ -1,3 +1,6 @@
+---
+uuid: 5870418b-597c-4930-9bf5-b92373c9b811
+---
 # Configuring Geolocation for Assets
 
 <!-- This article could use an introductory paragraph that answers: what geolocated assets are - IDEALLY we present a screenshot of an asset being displayed in liferay that shows geolocation data included. This gives the reader a sense of what this article is helping them accomplish. -->

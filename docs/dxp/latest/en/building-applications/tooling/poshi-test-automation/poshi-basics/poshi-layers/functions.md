@@ -1,3 +1,6 @@
+---
+uuid: f363e565-84a2-42d9-b970-19ee69e885d7
+---
 # Functions
 
 In Poshi, Functions handle extra WebDriver commands that an element might require to interact with a page object or element. Functions combine the basic methods defined in the `BaseWebDriverImpl` layer to create reusable functions for test cases, no Java experience required.

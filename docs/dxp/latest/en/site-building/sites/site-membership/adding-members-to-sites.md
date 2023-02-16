@@ -1,3 +1,6 @@
+---
+uuid: 4a8ab5d6-2313-492e-898c-d97915d55e2c
+---
 # Adding Members to Sites
 
 Users and Sites are central concepts in Liferay DXP. Sites are where all your content and pages are stored, and Users access and create that content. While User management is covered in depth in [User Management](../../../users-and-permissions.md), there are some configuration options specific to Site management and assigning Users to sites that are relevant here:

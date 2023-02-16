@@ -1,15 +1,16 @@
 ---
 toc:
-- ./troubleshooting/troubleshooting-tools-and-resources.md
-- ./troubleshooting/reading-liferay-cloud-service-logs.md
-- ./troubleshooting/shell-access.md
-- ./troubleshooting/troubleshooting-services.md
-- ./troubleshooting/disaster-recovery-overview.md
-- ./troubleshooting/configuring-cross-region-disaster-recovery.md
-- ./troubleshooting/self-healing.md
-- ./troubleshooting/support-access.md
-- ./troubleshooting/liferay-cloud-platform-status.md
-- ./troubleshooting/creating-thread-and-heap-dumps.md
+  - ./troubleshooting/troubleshooting-tools-and-resources.md
+  - ./troubleshooting/reading-liferay-cloud-service-logs.md
+  - ./troubleshooting/shell-access.md
+  - ./troubleshooting/troubleshooting-services.md
+  - ./troubleshooting/disaster-recovery-overview.md
+  - ./troubleshooting/configuring-cross-region-disaster-recovery.md
+  - ./troubleshooting/self-healing.md
+  - ./troubleshooting/support-access.md
+  - ./troubleshooting/liferay-cloud-platform-status.md
+  - ./troubleshooting/creating-thread-and-heap-dumps.md
+uuid: 5f119685-91e2-497e-8164-f0d184b7a31e
 ---
 # Troubleshooting
 

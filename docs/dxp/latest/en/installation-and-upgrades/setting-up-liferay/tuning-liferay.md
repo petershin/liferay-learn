@@ -1,3 +1,6 @@
+---
+uuid: e7861fdf-af3c-4417-8451-8943af4be312
+---
 # Tuning Liferay
 
 There are several ways to tune Liferay's performance. This involves configuring the Java Virtual Machine and frameworks that support the Liferay application, monitoring performance and resources, and adjusting settings to meet your needs. Here's an overview of the tuning topics.

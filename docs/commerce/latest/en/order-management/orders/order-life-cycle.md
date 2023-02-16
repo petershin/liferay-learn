@@ -1,3 +1,6 @@
+---
+uuid: 6802182a-3eaa-4f2a-b077-6a938299f497
+---
 # Order Life Cycle
 
 An Order stores data regarding a potential or past transaction. This article provides an overview of the order life cycle from open cart to [fulfilled order](../shipments/introduction-to-shipments.md).

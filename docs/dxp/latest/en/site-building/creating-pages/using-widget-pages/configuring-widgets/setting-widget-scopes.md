@@ -1,3 +1,6 @@
+---
+uuid: b9aa51ac-0913-4b11-9169-01464403ec4c
+---
 # Setting Widget Scopes
 
 By default, Liferay's page widgets are *scoped* by site. This means all widget instances in a site share the same data and display the same content. For example, adding the Message Boards widget to two pages in the same site creates two copies of the same widget, because they use the same data. Adding the Message Boards widget to two different sites creates two different Message Boards with different data.

@@ -1,3 +1,6 @@
+---
+uuid: e09e6426-cf53-4f80-9b94-11cfb1c5849f
+---
 #  Third Party
 
 The Third Party category specifies the maps API provider for geolocalized assets.  Choose OpenStreetMap or Google Maps as the maps API provider. 

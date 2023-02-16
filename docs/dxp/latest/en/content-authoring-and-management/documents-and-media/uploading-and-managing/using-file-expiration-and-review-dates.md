@@ -1,3 +1,6 @@
+---
+uuid: e1939cff-f7e7-4ecd-bce2-6234a8ae0696
+---
 # Using File Expiration and Review Dates
 
 > Available: Liferay DXP/Portal 7.4+

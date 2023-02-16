@@ -1,3 +1,6 @@
+---
+uuid: c33e0579-b6a5-4758-a82a-53f903d5d483
+---
 # Developing Fragments
 
 Page Fragments are the building blocks for [Content Pages](../../creating-pages/understanding-pages/understanding-pages.md#content-pages). They're made from the three components of web pages: CSS, HTML, and JavaScript. To create a page you combine multiple fragments, and together they create the design for the page and its functionality. Fragments can make up a larger page element (such as cards or paragraph elements), or they can stand alone on their own (such as a banner).

@@ -1,3 +1,6 @@
+---
+uuid: 4dce9846-b0c7-445c-a91f-ca119a14f4e7
+---
 # Exporting and Importing Forms
 
 You can export all your forms as a `LAR` file and then import them into a different Site for reuse.

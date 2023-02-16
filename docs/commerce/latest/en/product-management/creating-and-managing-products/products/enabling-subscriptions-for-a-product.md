@@ -1,3 +1,6 @@
+---
+uuid: b72b20b6-d0f9-45e8-8dff-478f938a0585
+---
 # Enabling Subscriptions for a Product
 
 With Liferay Commerce, you can create and manage subscriptions for [Simple](../product-types/creating-a-simple-product.md), [Grouped](../product-types/creating-a-grouped-product.md), and [Virtual](../product-types/creating-a-virtual-product.md) Products. Examples of subscriptions include magazines, renewable service contracts, and automatic ordering for regularly consumed items. Commerce provides *Payment* and *Delivery* subscriptions out of the box.

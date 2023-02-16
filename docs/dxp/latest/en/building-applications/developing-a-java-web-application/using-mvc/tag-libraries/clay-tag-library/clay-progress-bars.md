@@ -1,3 +1,6 @@
+---
+uuid: 055adb41-ee9d-4321-96e6-848c11f26e2f
+---
 # Clay Progress Bars
 
 You can add progress bars to your app with the `clay:progressbar` tag. These indicate the completion percentage of a task and come in three status styles: `default` (blue), `warning` (red), and `complete` (green with checkmark). You can provide a minimum value (`minValue`) and a maximum value (`maxValue`).

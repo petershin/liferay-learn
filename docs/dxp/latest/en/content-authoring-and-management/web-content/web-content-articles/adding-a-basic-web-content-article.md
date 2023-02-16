@@ -1,3 +1,6 @@
+---
+uuid: 89efcf46-c68b-42f1-b33e-f41ba46002f2
+---
 # Adding a Basic Web Content Article
 
 Web content is one of the most practical and essential methods for creating site content. Web content articles can be displayed through [widgets](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), [Fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).

@@ -1,3 +1,6 @@
+---
+uuid: 0d9f3586-afcf-4f31-a85a-9382965f9405
+---
 # Disabling All or Portions of the Management Bar
 
 When there are no search results to display, you should disable all the Management Bar's buttons, except the sidenav toggler button. 

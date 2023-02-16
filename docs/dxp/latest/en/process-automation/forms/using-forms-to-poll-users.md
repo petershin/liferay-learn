@@ -1,3 +1,6 @@
+---
+uuid: 1f2bb9d9-cace-4b58-9ba5-2b5c48762c92
+---
 # Using Forms to Poll Users
 
 In previous versions of Liferay, Site Administrators had access to a dedicated Polls application in the Site Administration &rarr; Content and Data menu. This application was [deprecated in Liferay 7.3](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-3) and [removed in Liferay 7.4](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-4).

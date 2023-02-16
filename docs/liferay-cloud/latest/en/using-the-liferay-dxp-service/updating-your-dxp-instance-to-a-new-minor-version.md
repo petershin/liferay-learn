@@ -1,3 +1,6 @@
+---
+uuid: b704f84a-8cc9-429a-acde-06e029072ab2
+---
 # Updating Your DXP Instance to a New Minor Version
 
 Regularly updating your Liferay DXP installation is an important part of maintaining your Liferay Cloud environment. Use the available tags on the [Liferay DXP Docker Hub page](https://hub.docker.com/r/liferay/dxp/tags) to update and deploy your service.

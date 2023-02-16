@@ -1,3 +1,6 @@
+---
+uuid: 33fd3f69-e426-4f9f-9a87-3bcd8ad31812
+---
 # Creating Your First Site
 
 Sites are collections of pages that contain and display content. This article walks through creating a new Site based on an existing out-of-the-box template.

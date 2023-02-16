@@ -1,3 +1,6 @@
+---
+uuid: 49c12327-bef8-4556-a046-8315f09b54fe
+---
 # A/B Testing
 
 > Available in Liferay DXP 7.2 SP1+.

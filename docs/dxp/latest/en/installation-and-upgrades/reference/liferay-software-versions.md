@@ -1,3 +1,6 @@
+---
+uuid: df14572b-9b55-454b-81ac-77267bc84fb4
+---
 # Liferay Software Versions
 
 Starting with Liferay 7.4, Liferay adopted a rolling release model for delivering updates and fixes. This means Liferay 7.4 is a long living release with many releases for the foreseeable future. To indicate versions, Liferay Portal and Liferay DXP use the following scheme:

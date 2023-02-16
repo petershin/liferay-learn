@@ -1,3 +1,6 @@
+---
+uuid: a55dfe92-804f-441e-8244-26a342ee33f9
+---
 # Adding a Virtual Instance
 
 Before you do anything in Liferay DXP to add a Virtual Instance, you must configure its domain name in your network to point to your installed Liferay DXP system. 

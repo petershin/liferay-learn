@@ -1,3 +1,6 @@
+---
+uuid: 8976db69-45ce-47b6-b13f-90820a7599e4
+---
 # Managing BOMs
 
 > Subscription Required

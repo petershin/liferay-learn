@@ -1,3 +1,6 @@
+---
+uuid: e56c7a54-cf20-4aab-b425-967b296ac03a
+---
 # Liferay Cloud Version 5 Changes
 
 Liferay Cloud version 5 comes with several changes and new features:

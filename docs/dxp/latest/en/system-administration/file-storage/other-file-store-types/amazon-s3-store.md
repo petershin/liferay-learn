@@ -1,3 +1,6 @@
+---
+uuid: 6abef168-1381-46ae-b190-a9ff7c096d2d
+---
 # Amazon Simple Storage Service
 
 Amazon's simple storage service (S3) is a cloud-based storage solution that DXP's S3 Store uses to seamlessly store files to the cloud. Once you have an AWS account and have created an S3 _bucket_, you can configure the S3 store.

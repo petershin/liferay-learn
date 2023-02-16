@@ -1,3 +1,6 @@
+---
+uuid: 5733b2c8-4f29-4cd8-8307-7737aed1786d
+---
 # Managing Staging Permissions
 
 With Staging, you can manage User permissions that deal directly with Staging and Page versioning.

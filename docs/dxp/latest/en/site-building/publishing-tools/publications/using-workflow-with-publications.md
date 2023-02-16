@@ -1,3 +1,6 @@
+---
+uuid: 49935b09-39cf-4f23-b8e0-aad6cc621a44
+---
 # Using Workflow with Publications
 
 {bdg-secondary}`7.4 U44+/GA44+`

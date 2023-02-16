@@ -1,3 +1,6 @@
+---
+uuid: 2256d5d4-29de-4f28-9236-26159c675d8a
+---
 # Upgrading Search Infrastructure
 
 While upgrading Liferay, you must account for the search experience when using Elasticsearch. The exact steps depend on your existing search engine installation and Liferay version, but you should start by [backing up your existing indexes](./backing-up-elasticsearch.md).

@@ -1,3 +1,6 @@
+---
+uuid: c3d3cfc7-1cd9-4a07-91a3-4a2f6ed6ecb2
+---
 # Upgrading Your Liferay DXP Instance
 
 Liferay periodically releases new minor and major versions of Liferay DXP that include security and bug fixes, as well as enhancements. To upgrade to a new major Liferay DXP version increment, you must upgrade the DXP database.

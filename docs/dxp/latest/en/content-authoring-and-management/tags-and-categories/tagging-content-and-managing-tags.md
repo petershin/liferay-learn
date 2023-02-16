@@ -1,3 +1,6 @@
+---
+uuid: 48295c24-00df-4baf-a05e-25f531a5cb70
+---
 # Tagging Content and Managing Tags
 
 Tags are keywords you can use to organize your assets and describe specific information about its content. Tags tell website visitors what the content is about so they can find relevant information through search or navigation. For more information about Tags in Liferay DXP and the different usage scenarios, see [Organizing Content with Categories and Tags](./organizing-content-with-categories-and-tags.md).

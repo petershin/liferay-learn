@@ -1,3 +1,6 @@
+---
+uuid: 7b76cd72-98a7-4a03-b248-e06112eb6c04
+---
 # Tags API Basics
 
 Liferay's REST APIs provide services for Liferay DXP/Portal's tags. You can create and edit tags with the API. Start by seeing an example of adding a new tag. Note that in Liferay's codebase, tags are called keywords.

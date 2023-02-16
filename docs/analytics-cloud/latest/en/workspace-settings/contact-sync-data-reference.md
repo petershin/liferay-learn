@@ -1,3 +1,6 @@
+---
+uuid: d8c3adfd-711a-486b-b4c6-7d1a27a569d2
+---
 # Contact Sync Data Reference
 
 When you [Sync Contacts](../getting-started/syncing-sites-and-contacts.md) from your Liferay Instance, different fields can be chosen from the Contacts table and the User table.

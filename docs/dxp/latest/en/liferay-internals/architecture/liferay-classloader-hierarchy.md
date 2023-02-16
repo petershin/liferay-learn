@@ -1,3 +1,6 @@
+---
+uuid: a1e975ed-602a-4b5e-a1b9-b9215e2bcd79
+---
 # Liferay Classloader Hierarchy
 
 All Liferay DXP/Portal applications live in an OSGi container. DXP/Portal is a web application deployed on your application server. Its Module Framework bundles (modules) live in the OSGi container and have classloaders. All the classloaders from Java's Bootstrap classloader to classloaders for bundle classes and JSPs are part of a hierarchy.

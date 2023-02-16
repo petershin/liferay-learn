@@ -1,3 +1,6 @@
+---
+uuid: 2865b1f7-0d24-498a-9b81-08eb24712ac9
+---
 # Managing Master Page Templates
 
 > Available: Liferay DXP/Portal 7.3+

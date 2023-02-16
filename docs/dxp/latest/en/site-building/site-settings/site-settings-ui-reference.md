@@ -1,3 +1,6 @@
+---
+uuid: 044fab43-2666-4c99-ae59-e5c60fdc7516
+---
 # Site Settings UI Reference
 
 Starting with Liferay DXP 7.4, the Site Settings application layout is consistent with other configuration areas, such as Instance Settings or System Settings.

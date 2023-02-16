@@ -1,3 +1,6 @@
+---
+uuid: 8d985b23-4e66-4697-86b4-c56a5ee3656d
+---
 #  User Authentication
 
 The User Authentication settings define how Users can authenticate, the various authentication methods that are required for them, and the screen names and email addresses that are reserved and can't be registered by Users. 

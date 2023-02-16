@@ -1,3 +1,6 @@
+---
+uuid: 5f4f0e2b-c34b-449a-822b-ec85347bcc82
+---
 # Using Job Scheduler
 
 [Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a flexible framework built on Liferay's scheduler engine for running and scheduling business logic. This framework uses the `DispatchTaskExecutor` interface to define templates with custom logic that you can use to [create tasks](#adding-a-new-job-scheduler-task) via the Control Panel. You can configure its behavior and execution [schedule](#scheduling-the-job-scheduler-task) after creating the Job Scheduler task.

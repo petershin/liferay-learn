@@ -1,3 +1,6 @@
+---
+uuid: 3520c731-c420-4e54-8f98-1a3869176676
+---
 # DBStore
 
 DBStore stores files to the DXP database as blobs. DBStore doesn't have the transaction rollback vulnerabilities that the file-based store types (Simple, Advanced, S3) have.

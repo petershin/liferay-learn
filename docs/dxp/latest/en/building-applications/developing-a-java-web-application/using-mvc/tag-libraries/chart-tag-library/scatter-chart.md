@@ -1,3 +1,6 @@
+---
+uuid: 505e9719-a1db-4793-aad3-00031f72cd42
+---
 # Scatter Charts
 
 Scatter charts contain multiple sets of data. A scatter chart models the data as individual points. Each data series (created with the `addColumns()` method) is defined with a new instance of the  [`MultiValueColumn` object](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html), which takes an ID and a set of values. Follow these steps to configure your portlet to use scatter charts. 

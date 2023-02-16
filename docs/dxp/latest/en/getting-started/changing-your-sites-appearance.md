@@ -1,3 +1,6 @@
+---
+uuid: 6169fc69-527b-4f9d-82d3-6e503510b928
+---
 # Changing Your Site's Appearance
 
 Liferay has many ways to customize your site's appearance. Your site's favicon and theme are two of the first elements you may want to change. Themes set a default look and feel for your site, while the favicon is an icon that identifies your site in the user's browser tab.

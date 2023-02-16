@@ -1,3 +1,6 @@
+---
+uuid: e44144a6-b2f6-450c-8c1b-2e15a9b6351b
+---
 # Contributing Custom Content to the Similar Results Widget
 
 > **Subscribers**

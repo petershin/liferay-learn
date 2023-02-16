@@ -1,3 +1,6 @@
+---
+uuid: 9dfe31fc-21aa-4a5a-b9ff-8038c9e928d9
+---
 # Accessing EE Plugins During a Trial Period
 
 If you are evaluating DXP during a trial period, you can access certain EE plugins.

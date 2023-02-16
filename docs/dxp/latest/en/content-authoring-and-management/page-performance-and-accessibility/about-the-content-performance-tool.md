@@ -1,3 +1,6 @@
+---
+uuid: e6b5ad05-44cf-43de-9b3c-d082683a47e0
+---
 # About the Content Performance Tool
 
 > Available: Liferay DXP/Portal 7.3+. Some Content Performance options are only available starting with Liferay DXP/Portal 7.4.

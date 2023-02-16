@@ -1,3 +1,6 @@
+---
+uuid: 52fccdbc-556d-40a3-992e-e0eba8ee0542
+---
 # Creating and Managing Roles
 
 Once you [understand](./understanding-roles-and-permissions.md) Roles and permissions, its time to create the Roles you need to empower your Users to work within your Liferay DXP solution.

@@ -1,3 +1,6 @@
+---
+uuid: 1fe6f487-899f-4d93-b472-9e37f9597409
+---
 # Page Versioning
 
 With Page Versioning enabled, you and your team can work in parallel on multiple versions of your site's widget pages. These versions are called *variations*, which are you create and manage via the Staging bar. Page versioning maintains a history, and you can revert changes made to your staged pages to earlier versions if needed.

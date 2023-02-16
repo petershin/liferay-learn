@@ -1,3 +1,6 @@
+---
+uuid: 168f1d5f-2551-4b23-a8b5-5735fe16ae44
+---
 # Troubleshooting Upgrades
 
 Skipping an upgrade step or creating custom references to the Liferay database, can cause upgrade issues. The following questions and answers address some common situations.

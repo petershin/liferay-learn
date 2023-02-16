@@ -1,3 +1,6 @@
+---
+uuid: adfd0b75-2a15-4b64-8d27-ea2746d25357
+---
 # Segments Admin Settings
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.3+`

@@ -1,3 +1,6 @@
+---
+uuid: 59a4900d-9ed9-4881-b147-797be3ee9542
+---
 # Using Pabbly to Sync Object Data with Google Sheets
 
 {bdg-secondary}`Available 7.4+`

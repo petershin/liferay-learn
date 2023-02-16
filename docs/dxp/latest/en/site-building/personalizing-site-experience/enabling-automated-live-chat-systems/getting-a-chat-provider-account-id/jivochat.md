@@ -1,3 +1,6 @@
+---
+uuid: 59092568-23c3-4d0c-9ebf-3dd9189edddc
+---
 # JivoChat
 
 [JivoChat](https://jivochat.com/) is a messaging platform that connects teams to users across platforms. [You can integrate](../../enabling-automated-live-chat-systems.md) your JivoChat account ID  with your Liferay instance.

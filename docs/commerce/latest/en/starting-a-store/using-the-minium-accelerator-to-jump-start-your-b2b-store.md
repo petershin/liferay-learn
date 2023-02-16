@@ -1,3 +1,6 @@
+---
+uuid: f502b0b3-6d73-4def-811a-8d8a5e1677f3
+---
 # Using the Minium Accelerator to Jump-Start Your B2B Store
 
 Minium is a Liferay Commerce [Accelerator](./accelerators.md) that quickly and easily sets up a business-to-business (B2B) store designed to meet the needs of a manufacturer, showcasing a modern B2B digital commerce experience. It is designed with features that make the experience as smooth as possible by having elements that are both functional and elegant.

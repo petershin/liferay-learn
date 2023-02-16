@@ -1,3 +1,6 @@
+---
+uuid: 355cd01a-1910-4066-8b7f-fff359cc14f5
+---
 # Using the Notification Queue
 
 {bdg-secondary}`Available Liferay 7.4 U34+ and GA34+`

@@ -1,3 +1,6 @@
+---
+uuid: 38a0b5f5-1a85-4c13-9592-14891fd631cf
+---
 # Search Results
 
 Search results should be easy to navigate, sort, and filter. Give your users an optimal search experience by understanding the default search experience and the many configuration options at your disposal.

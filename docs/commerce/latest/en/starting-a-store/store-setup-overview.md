@@ -1,3 +1,6 @@
+---
+uuid: 2c1c1fa2-205d-4867-a52e-23177c13da25
+---
 # Store Setup Overview
 
 ## Introduction

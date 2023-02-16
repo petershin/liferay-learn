@@ -1,12 +1,14 @@
 ---
 toc:
-- ./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md
-- ./using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version.md
-- ./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
-- ./using-the-liferay-dxp-service/liferay-service-environment-variables.md
-- ./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
-- ./using-the-liferay-dxp-service/using-the-mysql-client.md
-- ./using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
+  - ./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md
+  - >-
+    ./using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version.md
+  - ./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
+  - ./using-the-liferay-dxp-service/liferay-service-environment-variables.md
+  - ./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
+  - ./using-the-liferay-dxp-service/using-the-mysql-client.md
+  - ./using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
+uuid: 01625ffe-bb32-4fe9-bfde-9f3adbb3f2de
 ---
 # Using the Liferay DXP Service
 

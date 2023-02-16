@@ -1,3 +1,6 @@
+---
+uuid: 215707ed-204c-40f6-afb4-35001e424801
+---
 # SAML Admin
 
 The SAML Admin panel is the best place to configure your SAML instance. Use it instead of Instance Settings to streamline your SAML administration experience. 

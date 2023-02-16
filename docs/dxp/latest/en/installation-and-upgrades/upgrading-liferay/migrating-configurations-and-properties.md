@@ -1,3 +1,6 @@
+---
+uuid: 5063468f-80eb-433a-b78c-86e154032f63
+---
 # Migrating Configurations and Properties
 
 Your current DXP installation's OSGi configurations (7.0+) and properties (such as [portal properties](../reference/portal-properties.md) and [system properties](../reference/system-properties.md)) set up your DXP instance to fit your needs. To use these settings in your new DXP instance, you must migrate them to your new Liferay Home and update them.

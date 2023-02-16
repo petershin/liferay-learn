@@ -1,3 +1,6 @@
+---
+uuid: d9770501-7a33-41c2-98b0-c76c95efd662
+---
 # Adding Configuration Options to Fragments
 
 > Available: Liferay DXP 7.2 SP1+

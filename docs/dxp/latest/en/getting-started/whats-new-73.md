@@ -1,3 +1,6 @@
+---
+uuid: 63c82b65-7cd8-4808-9b79-2b34df0cb94d
+---
 # What's New in Liferay DXP 7.3
 
 The latest release of Liferay DXP includes many significant new features and improvements. These features will enhance how you build your site, analyze your site's traffic, manage documents, and create the applications you need. Liferay DXP 7.3 includes App Builder, Master Pages, Asset Libraries, and more.

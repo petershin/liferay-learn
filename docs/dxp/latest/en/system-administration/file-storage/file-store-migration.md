@@ -1,3 +1,6 @@
+---
+uuid: 80c79219-9a0c-456c-9977-9c70b80550e4
+---
 # File Store Migration
 
 Files can be migrated from one file store type to another. Here are some migration scenarios:

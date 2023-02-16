@@ -1,3 +1,6 @@
+---
+uuid: 17c3bbf3-f921-4d12-9144-d811c31a2a83
+---
 # Creating a New Job Scheduler Task Executor
 
 Each Job Scheduler Task is created by implementing the `DispatchTaskExecutor` interface and can execute any logic. While Liferay DXP provides multiple out-of-the-box executors, you can create your own. Once created and deployed, you can add Job Scheduler Tasks to a Liferay instance.

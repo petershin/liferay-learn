@@ -1,3 +1,6 @@
+---
+uuid: c85f3045-c786-448a-aef9-2388660b7397
+---
 # Configuring Open Graph
 
 > Available: Liferay DXP/Portal 7.3+

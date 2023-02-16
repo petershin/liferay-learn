@@ -1,3 +1,6 @@
+---
+uuid: f96d3598-f85e-4a03-a5fc-5f56e1c0a52d
+---
 # Changing Site Membership Type
 
 A Site's membership type determines how freely users may join your Site. There are three types of site membership:

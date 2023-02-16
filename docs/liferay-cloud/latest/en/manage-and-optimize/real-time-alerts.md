@@ -1,3 +1,6 @@
+---
+uuid: c2b99308-d48e-44cc-88cb-fa619178b7b1
+---
 # Real-Time Alerts
 
 Liferay Cloud can alert system administrators of unexpected behaviors in a project. Examples of unexpected behaviors include auto-scaling events, higher than expected memory consumption, reaching the allotted CPU quota, and database connection issues.

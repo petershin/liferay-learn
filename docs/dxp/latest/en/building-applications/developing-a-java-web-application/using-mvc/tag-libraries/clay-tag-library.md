@@ -1,17 +1,18 @@
 ---
 toc:
-- ./clay-tag-library/clay-alerts.md
-- ./clay-tag-library/clay-badges.md
-- ./clay-tag-library/clay-buttons.md
-- ./clay-tag-library/clay-cards.md
-- ./clay-tag-library/clay-dropdown-and-action-menus.md
-- ./clay-tag-library/clay-form-elements.md
-- ./clay-tag-library/clay-icons.md
-- ./clay-tag-library/clay-links-and-labels.md
-- ./clay-tag-library/clay-management-toolbar.md
-- ./clay-tag-library/clay-navigation-bars.md
-- ./clay-tag-library/clay-progress-bars.md
-- ./clay-tag-library/clay-stickers.md
+  - ./clay-tag-library/clay-alerts.md
+  - ./clay-tag-library/clay-badges.md
+  - ./clay-tag-library/clay-buttons.md
+  - ./clay-tag-library/clay-cards.md
+  - ./clay-tag-library/clay-dropdown-and-action-menus.md
+  - ./clay-tag-library/clay-form-elements.md
+  - ./clay-tag-library/clay-icons.md
+  - ./clay-tag-library/clay-links-and-labels.md
+  - ./clay-tag-library/clay-management-toolbar.md
+  - ./clay-tag-library/clay-navigation-bars.md
+  - ./clay-tag-library/clay-progress-bars.md
+  - ./clay-tag-library/clay-stickers.md
+uuid: 86e12690-c1b4-4cc9-963f-121244fa81a1
 ---
 # Clay Tag Library
 

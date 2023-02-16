@@ -1,3 +1,6 @@
+---
+uuid: 99d6e4ad-c817-483d-b895-7d16b71fa15e
+---
 # Writing a Custom Data Provider
 
 Liferay Forms fields can be populated using a [Data Provider](../data-providers/data-providers-overview.md). Out of the box, there's a REST Data Provider that provides a flexible way to consume data from most REST endpoints. See [Using the REST Data Provider to Populate Form Options](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) to learn more.

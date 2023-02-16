@@ -1,3 +1,6 @@
+---
+uuid: 087b7e11-85d3-4ffb-885a-769537857403
+---
 # Reusing Sets of Form Elements
 
 Forms often request the same sets of information, such as name, birthday, and address. Rather than adding these fields for every new form, you can group elements as a set to be reused. Element Sets include the layout and configuration of the fields.

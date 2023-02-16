@@ -1,3 +1,6 @@
+---
+uuid: 23655577-c85a-49c7-8a0c-3a6beb1803ce
+---
 # Configuring the Search Results Widget
 
 Configure the Search Results widget by opening its options menu (![Options](../../../images/icon-app-options.png)) and selecting *Configuration*. 

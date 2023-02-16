@@ -1,3 +1,6 @@
+---
+uuid: 76d9acad-74ab-4f1e-bde1-80b1d6979344
+---
 # Creating Teams for Sites
 
 If you have an *ad hoc* group of Users who perform the same set of tasks in a Site (moderating a site's Wiki content, managing Message Boards threads, writing blogs, editing a specific page in the Site, etc.), you can organize them into Site Teams, and then assign the team permissions for various Site-specific functions. Site Teams are the preferred method for administering permissions within a single Site. The permissions assigned to a Site Team only apply to that Site.

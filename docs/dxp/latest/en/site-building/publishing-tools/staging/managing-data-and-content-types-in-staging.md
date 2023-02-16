@@ -1,3 +1,6 @@
+---
+uuid: fa9b419d-3b2f-45c7-b641-b6fcbaf0f946
+---
 # Managing Data and Content Types in Staging
 
 Liferay DXP's Staging tool provides ways to manage available application data and content types both during initial configuration and the publishing process. Because there can be so many relationships between applications and types of content, be sure to consider how they reference each other in your database before deciding to stage or unstage any categories.

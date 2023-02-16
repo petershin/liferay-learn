@@ -1,3 +1,6 @@
+---
+uuid: cf9fc063-2c0e-44a6-a620-013cb367dbe5
+---
 # Setting a Search Query
 
 The search query parameter can vary from site to site. For example, a URL might look like `www.example.com/?s=test` where `s` is the parameter, or `www.example.com/?search=test` where `search` is the parameter. You can define up to five search query parameters in settings.

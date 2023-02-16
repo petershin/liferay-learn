@@ -1,3 +1,6 @@
+---
+uuid: d09834c8-8e44-4e27-8ee6-99e5edf91350
+---
 # Using Widgets on a Content Page
 <!--TASK: Reconsider-->
 The Widgets section functions just like the [*Add* menu on a Widget Page](../using-widget-pages/adding-widgets-to-a-page.md). The full list of available widgets appears, and you can add them to the page. The main difference is that only the main configuration options for Widgets are available on Content Pages.

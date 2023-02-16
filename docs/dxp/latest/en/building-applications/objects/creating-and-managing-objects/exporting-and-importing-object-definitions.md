@@ -1,3 +1,6 @@
+---
+uuid: 50529940-7894-40c7-b819-25f3f2a83930
+---
 # Exporting and Importing Object Definitions
 
 {bdg-secondary}`Available Liferay 7.4 U5+/GA9+`

@@ -1,3 +1,6 @@
+---
+uuid: 7b3a2c98-4dcc-4e82-814d-d50ba40070c5
+---
 # API Query Parameters
 
 Whether you consume [REST APIs](./consuming-rest-services.md) or [GraphQL APIs](./consuming-graphql-apis.md), different query parameters are available to help you filter the responses.

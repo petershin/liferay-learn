@@ -1,3 +1,6 @@
+---
+uuid: aa109d64-1aae-4b1e-a0f9-f71442424b41
+---
 # Adaptive Media Configuration Reference
 
 To access the Adaptive Media, navigate to the _Global Menu_ &rarr; _Control Panel_ &rarr; _Adaptive Media_.

@@ -1,3 +1,6 @@
+---
+uuid: f1cec033-e3ec-4ead-b0ea-948c3039e704
+---
 # Upgrade Reports
 
 When you upgrade data, it's important to know the changes made and any issues that occurred. The [Database Upgrade Tool](../upgrade-basics/using-the-database-upgrade-tool.md) captures this information in reports that include these details:

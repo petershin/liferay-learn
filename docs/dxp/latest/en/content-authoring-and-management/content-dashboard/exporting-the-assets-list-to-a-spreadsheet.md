@@ -1,3 +1,6 @@
+---
+uuid: 1553a9b8-a964-40db-abd2-ee882863bfd9
+---
 # Exporting Assets List To a Spreadsheet
 
 The Content Dashboard can export a spreadsheet (`.xls` file) of content related metadata for further analysis.

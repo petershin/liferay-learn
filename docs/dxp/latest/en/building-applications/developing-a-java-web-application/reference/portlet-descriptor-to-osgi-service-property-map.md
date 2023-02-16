@@ -1,3 +1,6 @@
+---
+uuid: 7aa868e1-a76c-4582-a829-b320f433e5b8
+---
 # Portlet Descriptor to OSGi Service Property Map
 
 Here's a map of portlet XML descriptor values to OSGi service properties for publishing OSGi Portlets. The properties centralize and simplify portlet configuration. They are typically represented as key-value pairs or, more generally, as a Map-like object.

@@ -1,3 +1,6 @@
+---
+uuid: c7a591b4-31a6-48a9-8215-dfa1546f5306
+---
 # 3.0 Release Notes
 
 ## Release Highlights

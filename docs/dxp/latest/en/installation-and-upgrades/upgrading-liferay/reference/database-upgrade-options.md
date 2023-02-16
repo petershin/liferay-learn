@@ -1,3 +1,6 @@
+---
+uuid: 28674b1f-8928-4fb9-b2de-c9ca4621cad1
+---
 # Database Upgrade Options
 
 When a release, update, or fix pack has database schema changes, it's helpful to know the options for applying the changes. Here you'll find the database upgrade options for each schema change level and learn the general steps for using each upgrade option with your DXP/Portal installation type.

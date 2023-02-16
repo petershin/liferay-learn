@@ -1,3 +1,6 @@
+---
+uuid: 4c8433f2-471e-43d4-accb-1cab8782818a
+---
 # Enabling Liferay's REST Connector to SharePoint
 
 > Requires DXP Subscription; Compatible with SharePoint 2016 and SharePoint Online

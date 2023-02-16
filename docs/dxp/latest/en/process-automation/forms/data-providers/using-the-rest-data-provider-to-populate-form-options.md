@@ -1,3 +1,6 @@
+---
+uuid: ccb8e4fc-fb48-469d-8231-0319b68fee3c
+---
 # Using the REST Data Provider to Populate Form Options
 
 _Select from List_ fields can hold many options. Those options can be automatically supplied by using the JSON web services registered in Liferay DXP or any other third party REST web service. To learn more about data providers in general, see [Data Providers Overview](./data-providers-overview.md). To apply a REST data provider to a form, you'll learn how to invoke a JSON web service, configure the data provider to pull from it, and use the data provider in a form.

@@ -1,3 +1,6 @@
+---
+uuid: 28fd229f-2eb5-4c12-bc0b-cc33b2a0e859
+---
 # Style Book Token Definitions
 
 > Available: Liferay DXP/Portal 7.3+

@@ -1,3 +1,6 @@
+---
+uuid: f8136c65-4eb7-48df-8755-0c3403f505ff
+---
 # Using Wish Lists
 
 Liferay Commerce comes with wish lists out-of-the-box. Wish lists make it easy to save products for purchase later.

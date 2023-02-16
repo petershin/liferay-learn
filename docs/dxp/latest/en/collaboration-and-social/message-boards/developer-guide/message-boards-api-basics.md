@@ -1,3 +1,6 @@
+---
+uuid: 4d8d0578-afe3-4e20-9271-c4305b501e19
+---
 # Message Boards API Basics
 
 Liferay's Headless Delivery application provides REST services for the [Message Boards](../../message-boards.md) application. With these services, you can add message board categories, threads, and messages, list their information, modify their content, or remove them altogether. Here you'll call those services using cURL commands and Java classes.

@@ -1,3 +1,6 @@
+---
+uuid: 347c3cdf-6bc3-4c21-96ae-c91561f6e1c1
+---
 # Organizing the Source 
 
 It is important to have a solid understanding of how the Liferay source is organized when working on fixing a bug or adding a new feature to the product. The Liferay Source can also be a great source of reference when building custom projects because it provides a complete implementation of the various frameworks provided by the platform.

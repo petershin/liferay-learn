@@ -1,3 +1,6 @@
+---
+uuid: ae040dc4-fc1c-4c4c-9a80-ca3d3b80828f
+---
 # Using Liferay Util Param
 
 The param tag lets you set a parameter for an [included JSP page](./liferay-util-include.md). This configuration requires two JSPs. JSP A, the main view of the app, includes JSP B and sets its parameter value. This lets you dynamically set content when you include the JSP. 

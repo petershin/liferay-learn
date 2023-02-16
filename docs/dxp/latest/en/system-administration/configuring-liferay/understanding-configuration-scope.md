@@ -1,3 +1,6 @@
+---
+uuid: 3ce2c2d2-33b4-4fcd-aa03-ca36796b733e
+---
 # Understanding Configuration Scope
 
 Settings for Liferay DXP's services and applications are applied at one of four levels, or _scopes_: System, Virtual Instance, Site, or Widget. Settings made in System Settings are set at a system-scoped level. For scopes labeled other than System, the System Settings values act as defaults. In other words, they identify where the system-wide configuration is overridden. True system-scoped configurations (those under a category's _System Scope_ heading) are not overridden anywhere.

@@ -1,3 +1,6 @@
+---
+uuid: e7769e8b-2afa-411c-bb53-413bddea507e
+---
 # Configuring Menu Displays
 
 To display and configure a [Menu Display](./using-the-navigation-menus-application.md), you can use the [Menu Display Fragment](../creating-pages/building-and-managing-content-pages/page-fragments-user-interface-reference.md#menu-display) or Menu Display Widget. With either of these two options, you can define the menu display options, levels, and behavior for your Site.

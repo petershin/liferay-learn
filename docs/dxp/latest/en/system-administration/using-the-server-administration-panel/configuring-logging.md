@@ -1,3 +1,6 @@
+---
+uuid: fd3a9ef8-8e66-4f1d-84fa-2d8b7bfb31bf
+---
 # Configuring Logging
 
 In the Server Administration panel's Log Levels tab, you can set logging levels for classes and packages in Liferay DXP's class hierarchy and add custom objects to be similarly managed using the Server Administration logging UI. Changes to the log level near the top of the class hierarchy (such as at `com.liferay`) also change log levels for all the classes under that hierarchy. Modifications unnecessarily high in the hierarchy generate too many messages to be useful.

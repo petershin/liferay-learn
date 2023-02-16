@@ -1,9 +1,10 @@
 ---
 toc:
-- ./app-builder/creating-a-standard-application.md
-- ./app-builder/creating-a-workflow-powered-application.md
-- ./app-builder/creating-the-role-change-request-object.md
-- ./app-builder/creating-the-role-change-request-app.md
+  - ./app-builder/creating-a-standard-application.md
+  - ./app-builder/creating-a-workflow-powered-application.md
+  - ./app-builder/creating-the-role-change-request-object.md
+  - ./app-builder/creating-the-role-change-request-app.md
+uuid: f36da885-6c54-454e-8380-ef4fc63247ef
 ---
 # App Builder
 

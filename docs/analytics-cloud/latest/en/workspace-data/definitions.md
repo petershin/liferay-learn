@@ -1,10 +1,11 @@
 ---
 toc:
-- ./definitions/definitions-for-individuals.md
-- ./definitions/definitions-for-events.md
-- ./definitions/definitions-for-event-attributes.md
-- ./definitions/setting-a-search-query.md
-- ./definitions/managing-interest-topics.md
+  - ./definitions/definitions-for-individuals.md
+  - ./definitions/definitions-for-events.md
+  - ./definitions/definitions-for-event-attributes.md
+  - ./definitions/setting-a-search-query.md
+  - ./definitions/managing-interest-topics.md
+uuid: 315c5e65-f7cf-4462-b4e8-cd2382a53747
 ---
 # Definitions
 

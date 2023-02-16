@@ -1,3 +1,6 @@
+---
+uuid: 7a80a00f-a02e-4ab8-b33c-0e90452ddb4a
+---
 # PortletMVC4Spring Annotations
 
 PortletMVC4Spring provides several annotations for mapping requests to controller classes and controller methods.  

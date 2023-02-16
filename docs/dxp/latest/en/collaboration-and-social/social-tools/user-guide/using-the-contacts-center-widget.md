@@ -1,3 +1,6 @@
+---
+uuid: fc02ffe8-2f66-4f62-a073-f22eccddb11e
+---
 # Using the Contacts Center Widget
 
  The _Contacts Center_ widget lets users form these connection types:

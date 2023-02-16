@@ -1,3 +1,6 @@
+---
+uuid: 173b877c-0cd6-491d-9af3-25b8b494422f
+---
 # Activating and Deactivating Objects
 
 By default, objects are *Activated* and available for use when they're first [published](./creating-objects.md#publishing-object-drafts). While active, users can access the object and its entries via the Liferay UI and Headless API calls. However, you can deactivate custom objects at any time.

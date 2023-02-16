@@ -1,7 +1,8 @@
 ---
 toc:
-- ./people/individuals.md
-- ./people/segments.md
+  - ./people/individuals.md
+  - ./people/segments.md
+uuid: c9996921-e3b8-49a6-b5d7-37238284f7ad
 ---
 # People
 

@@ -1,3 +1,6 @@
+---
+uuid: 7ef2146d-569b-4f6a-9f59-0553602c825b
+---
 # Configuring Liferay Workspace
 
 ```{warning}

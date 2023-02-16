@@ -1,3 +1,6 @@
+---
+uuid: 0f7ea016-9380-4326-b8b7-c1a297d56d0a
+---
 # Authorize.net
 
 This article details how to enable Authorize.Net as a payment method. [Authorize.Net](https://www.authorize.net/about-us/) is a subsidiary of Visa and a provider of payment gateway services that manages the submission of billions of transactions to processing networks on behalf of merchant customers.

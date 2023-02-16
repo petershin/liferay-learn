@@ -1,3 +1,6 @@
+---
+uuid: 23945a81-3dac-4a80-a0e3-a05b113bba7e
+---
 # Creating Notification Templates
 
 {bdg-secondary}`Available Liferay 7.4 U46+/GA46+`

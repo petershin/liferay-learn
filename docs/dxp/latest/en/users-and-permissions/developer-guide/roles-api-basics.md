@@ -1,3 +1,6 @@
+---
+uuid: ed3e08d0-1622-4147-b84c-1d07b4187a86
+---
 # Roles API Basics
 
 You can [Create and Manage Roles](../roles-and-permissions/creating-and-managing-roles.md) from the Application menu, but you can also use Liferay's REST APIs. Call these services to manage Roles.

@@ -1,3 +1,6 @@
+---
+uuid: 8db76b2e-6b09-488e-9e76-82d23b028cca
+---
 # Headless Framework Integration
 
 > Available: Liferay DXP/Portal 7.4+

@@ -1,3 +1,6 @@
+---
+uuid: 5c7a4ac5-4515-4b0a-b70e-ebb942b49545
+---
 # Configuring a Liferay Docker Container
 
 Creating and deploying containers is an important part of the modern developer workflow. Liferay Workspace makes it easy to use Docker containers both for development and for creating wholly contained working configurations. 

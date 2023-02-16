@@ -1,3 +1,6 @@
+---
+uuid: f2ee978a-5ef7-473c-b968-e16decbb98f2
+---
 # Elasticsearch Connector Configuration Reference
 
 > The configuration information here applies to the latest available (bundled or through Marketplace) version of the Elasticsearch 6 and Elasticsearch 7 connectors for Liferay Portal 7.2-7.4 CE and for Liferay DXP 7.2-7.4. Appropriate information about the exact GA/Service Pack/Fix Pack and Marketplace versions are provided where needed.

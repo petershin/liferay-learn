@@ -1,3 +1,6 @@
+---
+uuid: 97065f32-200b-43a4-a29d-5408a8416e47
+---
 # Poshi Advantages
 
 ## Simplified Syntax

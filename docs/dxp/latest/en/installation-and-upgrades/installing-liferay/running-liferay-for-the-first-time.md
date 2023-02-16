@@ -1,3 +1,6 @@
+---
+uuid: 38b72371-1f59-4cf5-9fe8-8fc22539b8b3
+---
 # Running Liferay for the First Time
 
 Once you've [installed Liferay DXP/Portal](./installing-a-liferay-tomcat-bundle.md#installing) and [configured a database](./configuring-a-database.md) for it, it is ready to run.

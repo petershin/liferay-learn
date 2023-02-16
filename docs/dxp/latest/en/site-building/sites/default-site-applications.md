@@ -1,3 +1,6 @@
+---
+uuid: 9ea6fa61-0863-4b79-9508-5bf127cdb023
+---
 # Default Site Applications
 
 All Sites include the following core applications for building personalized digital experiences. You can access them via the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)). The *Site Menu* can also include custom applications created with Objects. See [Creating Objects](../../building-applications/objects/creating-and-managing-objects/creating-objects.md) for more information.

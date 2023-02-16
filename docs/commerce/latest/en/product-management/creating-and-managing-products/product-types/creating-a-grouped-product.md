@@ -1,3 +1,6 @@
+---
+uuid: 11482d3d-77fc-4e6a-a026-04166690dbfa
+---
 # Creating a Grouped Product
 
 In Liferay Commerce, a Grouped Product consists of two or more Products from a Catalog that are sold together as a pre-defined set, either for customer convenience or to offer a special price. Grouped Products are tracked in inventory and can include any type of Products (i.e., Simple, Grouped, Virtual). For example, consider a wholesale furniture distributor. While furniture items can be purchased separately, the distributor can group related products together into a furniture set, either for customer convenience, or to offer special deals.

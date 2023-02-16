@@ -1,3 +1,6 @@
+---
+uuid: c9f7b4dc-b9d1-4074-a9d5-27722506b2de
+---
 # Workflow Metrics: Reports
 
 {bdg-primary}`Subscription`

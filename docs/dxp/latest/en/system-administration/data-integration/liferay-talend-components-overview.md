@@ -1,3 +1,6 @@
+---
+uuid: 302d9606-5f66-4fa6-8dbf-21cd578cf472
+---
 # Liferay Talend Components Overview
 
 {bdg-warning}`Unsupported`

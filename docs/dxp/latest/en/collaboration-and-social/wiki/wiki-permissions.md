@@ -1,3 +1,6 @@
+---
+uuid: e7e2cf39-dda0-4ccc-868e-aad6b0878b3d
+---
 # Wiki Permissions Reference
 
 This article documents permissions in the _Wiki_ widget and serves as a reference when assigning permissions to users and roles. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).

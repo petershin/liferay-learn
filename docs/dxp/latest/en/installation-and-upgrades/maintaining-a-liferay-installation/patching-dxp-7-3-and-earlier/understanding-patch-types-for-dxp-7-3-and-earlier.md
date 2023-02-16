@@ -1,3 +1,6 @@
+---
+uuid: 1f1244a8-31a3-4286-aad2-883043ab20cc
+---
 # Understanding Patch Types
 
 > Subscribers

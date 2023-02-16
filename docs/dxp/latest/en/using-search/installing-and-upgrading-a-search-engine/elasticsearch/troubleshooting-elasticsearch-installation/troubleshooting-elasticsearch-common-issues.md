@@ -1,3 +1,6 @@
+---
+uuid: 1d1a8618-5531-4c24-837e-bfecea9c1263
+---
 # Troubleshooting Elasticsearch: Common Issues
 
 Listed here are some common issues you may encounter while configuring Elasticsearch and Liferay. Additional connection-specific errors are discussed in [Troubleshooting the Elasticsearch Connection](./troubleshooting-the-elasticsearch-connection.md).

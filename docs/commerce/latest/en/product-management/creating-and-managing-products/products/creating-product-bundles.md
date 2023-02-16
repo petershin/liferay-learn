@@ -1,3 +1,6 @@
+---
+uuid: 37565173-62c1-4e72-8f2a-9cf503e85881
+---
 # Creating Product Bundles
 
 Liferay Commerce supports the creation of *Product bundles* using [Product Options](./using-product-options.md). With Options, you can define values that link the current Product with other SKUs, whether Simple, Virtual, or Grouped. Once defined, customers can select different Option values when adding the Product to their cart.

@@ -1,3 +1,6 @@
+---
+uuid: 7a0e16df-8768-499c-aa23-f033f973ee70
+---
 # Configuring SEO and Open Graph
 
 > Available DXP/Portal 7.3+

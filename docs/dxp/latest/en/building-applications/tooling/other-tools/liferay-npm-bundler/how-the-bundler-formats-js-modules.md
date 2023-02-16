@@ -1,3 +1,6 @@
+---
+uuid: 65cb6b45-7e7f-4def-b51b-a06c0b5a3c3f
+---
 # How JavaScript Modules are Formatted for AMD
 
 Liferay AMD Loader is based on the [AMD specification](https://github.com/amdjs/amdjs-api/wiki/AMD). All modules inside an npm OSGi bundle must be in AMD format. This is done for [CommonJS](http://www.commonjs.org/) modules by wrapping the module code inside a `define` call. The liferay-npm-bundler helps automate this process by wrapping the module for you. You can learn more about the structure below in [OSGi Bundles and npm Package Structure](./the-structure-of-osgi-bundles-containing-npm-packages.md).

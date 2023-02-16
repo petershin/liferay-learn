@@ -1,3 +1,6 @@
+---
+uuid: 9f2acbd9-e1a8-4c62-8786-9cc7ab738f46
+---
 # Using Batch APIs
 
 When you publish an Object, Liferay automatically generates REST APIs for it. These include the batch APIs for bulk POST, PUT, and DELETE operations. Here you'll use cURL commands to call these batch APIs for a custom Object.

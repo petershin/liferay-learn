@@ -1,3 +1,6 @@
+---
+uuid: aedfff98-59cf-4d1b-a773-74df3db8842f
+---
 # Sorting Entity Instances
 
 Often, you want to retrieve multiple instances of a given entity and list them in a particular order. The `service.xml` file lets you specify the default order of your entities. 

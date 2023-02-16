@@ -1,3 +1,6 @@
+---
+uuid: c6a4ba2a-1514-4f03-968f-5ac275b48d74
+---
 # Consuming REST Services
 
 Liferay DXP contains REST services for most of its applications. These services are fully [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery) compliant. Here, you'll learn how to consume them. This takes only three steps:

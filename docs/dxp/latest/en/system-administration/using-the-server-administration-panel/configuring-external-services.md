@@ -1,3 +1,6 @@
+---
+uuid: 66b6adc7-587c-4fac-a62e-9a0f87f869f1
+---
 # Configuring External Services
 
 Liferay provides integration with external services for converting files and generating file previews. Three of these services can be enabled in the Server Administration settings: [ImageMagick](https://www.imagemagick.org/script/index.php), [Ghostscript](https://www.ghostscript.com/), and [Xuggler](http://www.xuggle.com/xuggler/).

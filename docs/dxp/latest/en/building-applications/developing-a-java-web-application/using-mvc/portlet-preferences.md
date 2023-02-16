@@ -1,3 +1,6 @@
+---
+uuid: af4bea97-8fdd-4592-a5fe-f8ebde55a1d9
+---
 # Portlet Preferences
 
 You can give administrators and users a way to customize a portlet with portlet preferences. Portlet preferences can be added to any MVC Portlet to give users a UI to access and set their preferences.

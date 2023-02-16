@@ -1,3 +1,6 @@
+---
+uuid: 27debb98-57fb-4464-8d8e-ee2cc812d68e
+---
 # Database Tuning for Upgrades
 
 Performing an upgrade impacts the database differently from daily running in production. Because of this, you should tune your database for the upgrade process before you run it, and then re-apply your production settings after the upgrade completes.

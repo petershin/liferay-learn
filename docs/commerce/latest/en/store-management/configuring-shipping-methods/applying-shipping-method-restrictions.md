@@ -1,3 +1,6 @@
+---
+uuid: 4982da46-46d9-4f42-bcb0-fb6c6a695193
+---
 # Applying Shipping Method Restrictions
 
 You may need to apply a shipping restriction for your store to specific countries or regions. This means these countries are not available during the checkout process. These restrictions will apply to all shipping options for a particular shipping method. For example, restrictions applied to the _Flat Rate_ shipping method will not apply to the _Variable Rates_ shipping method.

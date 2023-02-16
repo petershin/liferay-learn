@@ -1,3 +1,6 @@
+---
+uuid: 515ce7b8-bd3f-4267-af81-ae4b30265966
+---
 # Validation and Masking
 
 Certain Forms fields can be validated (Text, Date, and Numeric fields) and masked (Numeric fields) to ensure User input is valid.

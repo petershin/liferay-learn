@@ -1,3 +1,6 @@
+---
+uuid: ee3a8169-8408-4c36-afbc-9976f0ef3866
+---
 # Stage 2: Creating Data Backup Files
 
 Now that the Liferay versions match between your on-premises and Liferay Cloud environments, you must prepare the data from your installation for migration. This stage of migration involves creating a database dump, migrating the document library store, and compressing the document library into an archive.

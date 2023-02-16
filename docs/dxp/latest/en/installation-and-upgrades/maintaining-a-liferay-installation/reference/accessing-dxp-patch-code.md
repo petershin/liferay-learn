@@ -1,3 +1,6 @@
+---
+uuid: a047c502-cf80-4e98-811a-8858ae5c9bc6
+---
 # Accessing DXP Patch Code
 
 > Subscribers

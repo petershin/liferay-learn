@@ -1,3 +1,6 @@
+---
+uuid: fb25cc6c-1fca-4728-a1f0-6eadca26ded7
+---
 # Managing Site Membership and Permissions with User Groups
 
 You can use User Groups to manage Site membership, Roles, and permissions.

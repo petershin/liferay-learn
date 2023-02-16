@@ -1,3 +1,6 @@
+---
+uuid: b688041a-0a2f-4b4f-a149-f49915433003
+---
 # Using the Database Upgrade Tool
 
 The Liferay Database Upgrade Tool is a client program for upgrading Liferay DXP and Liferay Portal databases offline.

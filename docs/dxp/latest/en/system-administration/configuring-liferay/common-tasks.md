@@ -1,3 +1,6 @@
+---
+uuid: f91c3832-fbd1-4bec-b437-c56e880f8ee0
+---
 # Common Tasks
 
 * [Enabling OpenOffice / LibreOffice](../../content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration.md)

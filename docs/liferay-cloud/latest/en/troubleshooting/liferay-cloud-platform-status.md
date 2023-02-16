@@ -1,3 +1,6 @@
+---
+uuid: 1b7118e9-a23d-4466-a018-d327bb1f7cc0
+---
 # Liferay Cloud Platform Status
 
 The Liferay Cloud Platform is comprised of multiple systems. Users can view the status of Liferay Cloud Platform systems, incident history, and planned maintenance windows via the [Liferay Cloud Platform](https://status.liferay.cloud/) status page.

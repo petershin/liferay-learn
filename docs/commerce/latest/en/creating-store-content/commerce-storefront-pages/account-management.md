@@ -1,3 +1,6 @@
+---
+uuid: 3287d792-b6df-4de6-ae07-6813800f0993
+---
 # Account Management
 
 The Account Management page is where Store administrators and Account Managers manage Users and Accounts. Users may be invited to the store and assigned account-specific roles (Buyer, Sales Manager, Account Manager, and Sales Agent). Accounts may also be created on this page.

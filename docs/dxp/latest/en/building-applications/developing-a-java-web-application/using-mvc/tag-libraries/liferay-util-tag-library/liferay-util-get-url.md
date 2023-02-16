@@ -1,3 +1,6 @@
+---
+uuid: 0a9fce93-544f-4ed2-b18f-28cc83f602df
+---
 # Using Liferay Util Get URL
 
 The get URL tag scrapes the URL provided by the `url` attribute. If a value is provided for the `var` attribute, the content from the screen scrape is scoped to that variable. Otherwise, the scraped content is displayed where the taglib is used.

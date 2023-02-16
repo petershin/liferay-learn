@@ -1,3 +1,6 @@
+---
+uuid: 14155784-a114-48f6-b28a-6efc9bf094c4
+---
 # Creating and Editing Documents with Microsoft Office 365
 
 You can use Office 365&trade; to create and edit text documents, spreadsheets, or presentations for storage in the Documents and Media library. When you finish your Office 365&trade; editing session, you must check in the document to save the changes in the Documents and Media Library.

@@ -1,3 +1,6 @@
+---
+uuid: c397de6c-7c21-4848-ba18-9630e5f0ac06
+---
 # Configuration Model Listener Reference
 
 Use model listeners in your [own configurations](../configuration-framework.md) to listen for events and execute code in response. Creating a model listener requires only three steps:

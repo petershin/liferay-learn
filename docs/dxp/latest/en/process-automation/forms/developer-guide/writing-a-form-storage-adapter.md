@@ -1,3 +1,6 @@
+---
+uuid: 5182d438-665e-4abd-8377-5157e8c0ae14
+---
 # Writing a Form Storage Adapter
 
 > Available: Liferay DXP 7.3 and Liferay DXP 7.2 versions that include the fix for [LPS-97208](https://issues.liferay.com/browse/LPS-97208) (planned for Liferay DXP 7.2 SP3).

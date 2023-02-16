@@ -1,3 +1,6 @@
+---
+uuid: e2f8a404-253c-4e37-b851-8d347abbd608
+---
 # Enabling Antivirus Scanning for Uploaded Files
 
 > Available: DXP 7.3 SP 1+, Portal 7.3 GA7+, and DXP 7.2 FP 9+

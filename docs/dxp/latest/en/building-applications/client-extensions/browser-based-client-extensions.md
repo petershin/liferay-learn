@@ -1,8 +1,10 @@
 ---
 toc:
-- ./browser-based-client-extensions/tutorials.md
-- ./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
-- ./browser-based-client-extensions/remote-applications-ui-reference.md
+  - ./browser-based-client-extensions/tutorials.md
+  - >-
+    ./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
+  - ./browser-based-client-extensions/remote-applications-ui-reference.md
+uuid: fcdeefe5-64f7-451c-8981-41e1a04290d6
 ---
 # Browser-Based Client Extensions
 

@@ -1,8 +1,9 @@
 ---
 toc:
-- ./reference/portletmvc4spring-project-anatomy.md
-- ./reference/portletmvc4spring-annotations.md
-- ./reference/portletmvc4spring-configuration-files.md
+  - ./reference/portletmvc4spring-project-anatomy.md
+  - ./reference/portletmvc4spring-annotations.md
+  - ./reference/portletmvc4spring-configuration-files.md
+uuid: fc236507-2ec3-43a7-a0db-30a57f069f26
 ---
 # Reference
 

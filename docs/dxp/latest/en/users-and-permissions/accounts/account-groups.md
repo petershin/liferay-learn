@@ -1,3 +1,6 @@
+---
+uuid: 63659b1a-c2f3-4184-8dd4-86580c57a141
+---
 # Account Groups
 
 {bdg-secondary}`Available 7.4+`

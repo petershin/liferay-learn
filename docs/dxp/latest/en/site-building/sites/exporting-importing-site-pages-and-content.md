@@ -1,3 +1,6 @@
+---
+uuid: e253af5f-e55d-45f1-a5a9-577d5e8b8443
+---
 # Exporting/Importing Site Pages and Content
 
 Liferay Sites include the Export/Import applications for extracting and transferring Site data as Liferay Archive (LAR) files. You can access these tools at the Site level.

@@ -1,3 +1,6 @@
+---
+uuid: 6188e9d8-e22d-4018-8451-902a83a1cbc1
+---
 # Configuring a Password Policy
 
 Password policies enhance the security of your installation. You can use the default policy that ships with Liferay (modified or as is), or you can create your own policies. Policies can be assigned to Users or Organizations.

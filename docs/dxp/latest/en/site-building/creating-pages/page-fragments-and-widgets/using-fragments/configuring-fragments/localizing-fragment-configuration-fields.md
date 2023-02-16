@@ -1,3 +1,6 @@
+---
+uuid: 1cc044aa-72de-46fe-bfc4-af1ee6f72098
+---
 # Localizing Fragment Configuration Fields
 
 > Available: Liferay DXP/Portal 7.4+

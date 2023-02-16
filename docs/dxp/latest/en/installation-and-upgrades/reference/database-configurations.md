@@ -1,3 +1,6 @@
+---
+uuid: 1ad4c7f0-4666-4cae-868a-63be6308923f
+---
 # Database Configuration
 
 By default for demonstration purposes, Liferay DXP/Portal is configured to use an embedded HSQL database. Beyond demonstration purposes, we recommend using a full-featured, supported RDBMS, such as:

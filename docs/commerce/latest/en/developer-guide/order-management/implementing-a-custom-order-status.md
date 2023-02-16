@@ -1,3 +1,6 @@
+---
+uuid: f5f0bf88-833e-41e7-aca2-f53633deff36
+---
 # Implementing a Custom Order Status
 
 You can add a custom order status by implementing the `CommerceOrderStatus` interface. The Commerce Order Engine provides a standard order flow out-of-the-box, but you can customize it to fit your needs.

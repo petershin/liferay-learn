@@ -1,3 +1,6 @@
+---
+uuid: 60a378a0-9189-420a-b25f-59842b2e20a9
+---
 # Documents and Media
 
 Documents and Media files are assets you want site users to look at or download. Analytics Cloud provides insights on user engagement with your Documents and Media assets.

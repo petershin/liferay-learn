@@ -1,11 +1,12 @@
 ---
 toc:
-- ./architecture/liferay-classloader-hierarchy.md
-- ./architecture/the-benefits-of-modularity.md
-- ./architecture/osgi-and-modularity.md
-- ./architecture/module-lifecycle.md
-- ./architecture/bundle-classloading-flow.md
-- ./architecture/ui-architecture.md
+  - ./architecture/liferay-classloader-hierarchy.md
+  - ./architecture/the-benefits-of-modularity.md
+  - ./architecture/osgi-and-modularity.md
+  - ./architecture/module-lifecycle.md
+  - ./architecture/bundle-classloading-flow.md
+  - ./architecture/ui-architecture.md
+uuid: 22e59b20-bf0e-452f-8bd3-7e2f6581fa2c
 ---
 # Architecture
 

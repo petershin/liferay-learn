@@ -1,3 +1,6 @@
+---
+uuid: 3e980d49-875d-4e8c-8339-e7545fa300ee
+---
 # Portlet IDs
 
 Below is a listing of the portlet IDs for the default portlets in Liferay DXP. You  can use these IDs to embed portlets in your theme's  sitemap.

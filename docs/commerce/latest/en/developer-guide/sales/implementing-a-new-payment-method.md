@@ -1,3 +1,6 @@
+---
+uuid: 6bf6c000-6c5c-4832-a3df-8ed3e3de85d8
+---
 # Implementing a New Payment Method
 
 This tutorial will show you how to add a new payment method by implementing the [CommercePaymentMethod](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java) interface.

@@ -1,3 +1,6 @@
+---
+uuid: 916eefbc-9005-49f4-ac8e-3c3b4b4258dc
+---
 # Enabling CAPTCHA on Form Submissions
 
 [CAPTCHA](https://en.wikipedia.org/wiki/CAPTCHA) can be enabled to deter automated form submissions.

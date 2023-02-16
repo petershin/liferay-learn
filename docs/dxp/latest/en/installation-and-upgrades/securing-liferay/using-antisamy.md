@@ -1,3 +1,6 @@
+---
+uuid: fd568c50-034f-4866-a95a-e5edefbbc61c
+---
 # AntiSamy
 
 Liferay DXP includes an [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project)  module that protects against user-entered malicious code. If your site allows users to post content in message boards, blogs, or other applications, these posts could include malicious code. The AntiSamy module filters HTML/CSS fragments and removes suspect JavaScript code from them. 

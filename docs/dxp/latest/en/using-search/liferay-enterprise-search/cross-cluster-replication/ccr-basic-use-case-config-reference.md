@@ -1,3 +1,6 @@
+---
+uuid: a5a7dcd8-a7e1-4ffc-99df-d7ce752ba146
+---
 # Configuring CCR: Settings Reference
 
 To help with the CCR configuration process, the example configurations from the step-by-step instructions in this guide are collected here. These configuration are made as generic as possible, but you must adjust paths, ports, etc. to match your environment. In addition, you must perform certain steps manually to complete the installation, so these cannot replace the step-by-step instructions.

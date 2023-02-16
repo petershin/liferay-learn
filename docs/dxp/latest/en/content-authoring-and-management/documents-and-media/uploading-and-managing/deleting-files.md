@@ -1,3 +1,6 @@
+---
+uuid: eaf4ad1a-53ef-47a1-aaad-049fd486675d
+---
 # Deleting Files
 
 The *Documents and Media* application allows for easy deletion of files.

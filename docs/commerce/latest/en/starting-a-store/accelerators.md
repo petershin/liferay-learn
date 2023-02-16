@@ -1,3 +1,6 @@
+---
+uuid: e7d45e6f-c7f9-4727-a8fb-fe098b12bdf9
+---
 # Accelerators
 
 Liferay Commerce Accelerators make building stores and exploring Liferay Commerce fast and easy.

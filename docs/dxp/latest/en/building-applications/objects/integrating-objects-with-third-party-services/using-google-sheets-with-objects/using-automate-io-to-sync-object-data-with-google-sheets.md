@@ -1,3 +1,6 @@
+---
+uuid: cdc62d39-936c-4e58-aff8-cddcc9eff4e5
+---
 # Using Automate.io to Sync Object Data with Google Sheets
 
 {bdg-secondary}`Available 7.4+`

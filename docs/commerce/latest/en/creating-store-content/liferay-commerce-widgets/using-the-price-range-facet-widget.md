@@ -1,3 +1,6 @@
+---
+uuid: fe9b88c4-d2b4-48e7-99e4-20249d110845
+---
 # Using the Price Range Facet Widget
 
 Liferay Commerce includes the *Price Range Facet* widget for quickly filtering Product search results by price. To use this widget, ensure the Commerce Search Results widget is also deployed to the desired page.

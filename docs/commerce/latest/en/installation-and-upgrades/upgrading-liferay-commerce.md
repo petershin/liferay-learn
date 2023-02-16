@@ -1,3 +1,6 @@
+---
+uuid: 76e7db9a-508e-4c44-b57c-28f3c0ea718a
+---
 # Upgrading Liferay Commerce
 
 To enhance the quality of your experience with Liferay Commerce, Liferay provides periodic product upgrades with bug fixes and new features. Users should consider regularly updating to the latest release.

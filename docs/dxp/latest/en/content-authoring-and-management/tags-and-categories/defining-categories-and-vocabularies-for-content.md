@@ -1,3 +1,6 @@
+---
+uuid: c0a8aff1-1aba-4014-8688-7c4db8d71eeb
+---
 # Defining Categories and Vocabularies for Content
 
 Using Categories, you can group similar assets and organize your content. Along with [Tags](./tagging-content-and-managing-tags.md), Categories help people find relevant information through search or navigation. For more information about Categories in Liferay DXP and the different usage scenarios, see [Organizing Content with Categories and Tags](organizing-content-with-categories-and-tags.md).

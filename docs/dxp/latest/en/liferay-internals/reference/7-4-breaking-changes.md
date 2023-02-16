@@ -1,3 +1,6 @@
+---
+uuid: 9b2c9b01-3a91-48da-b947-8225fc78f9b2
+---
 # 7.4 Breaking Changes
 
 Read about 7.4 Breaking Changes directly in the [Liferay source code](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/readme/BREAKING_CHANGES.markdown.). 

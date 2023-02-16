@@ -1,3 +1,6 @@
+---
+uuid: 1b5cc2d4-cca5-4949-8de6-0ddb4bb37787
+---
 # Liferay npm Bundler
 
 The liferay-npm-bundler is a bundler (like [Webpack](https://webpack.github.io/) or [Browserify](http://browserify.org/)) that targets Liferay Portal as a platform and assumes you're using your npm packages from widgets (as opposed to typical web applications).

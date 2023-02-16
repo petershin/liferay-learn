@@ -1,3 +1,6 @@
+---
+uuid: 807f6b22-c079-41e4-ac6c-38c2bf46e44b
+---
 # Managing Translation Permissions
 
 The required permissions for translating Content Pages and Web Content depend on the translation method:

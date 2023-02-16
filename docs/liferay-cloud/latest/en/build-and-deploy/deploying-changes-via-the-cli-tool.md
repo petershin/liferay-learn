@@ -1,3 +1,6 @@
+---
+uuid: 92d2c151-9db3-4b3e-a8f3-fd6ff298592a
+---
 # Deploying Changes via the CLI Tool
 
 With the CLI tool, you can directly deploy local project changes without triggering a Jenkins build or using the Liferay Cloud Console. This tutorial walks through the process of adding a portal property to the Liferay service and deploying it to the `dev` using the CLI tool.

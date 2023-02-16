@@ -1,3 +1,6 @@
+---
+uuid: 5aad8656-6334-4204-84fb-9b86f995ea61
+---
 # Knowledge Base Display Widget
 
 With the Knowledge Base Display widget, you can display published Knowledge Base articles on a Widget or Content Page. By default, this widget displays articles from the Knowledge Base’s Home folder. However, you can customize which articles are included and how they're displayed.

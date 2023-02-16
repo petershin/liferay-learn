@@ -1,3 +1,6 @@
+---
+uuid: cf41c5f8-33f0-469f-9af8-b63d4046eed4
+---
 # Configuring a Product Placeholder Image
 
 Products in a catalog that do not have an associated [product image](../creating-and-managing-products/products/product-images.md) use a placeholder image until one is configured. The default placeholder image is defined for each catalog.

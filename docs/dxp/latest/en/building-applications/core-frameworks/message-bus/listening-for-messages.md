@@ -1,3 +1,6 @@
+---
+uuid: 3f2dc65f-de85-45dc-8f66-97c548ffe966
+---
 # Listening for Messages
 
 You can listen for messages sent to any registered Message Bus destination, whether it's built-in to DXP/Portal, defined by third-parties, or created by you. Messages sent to the same destination typically have something in common, such as a similar event type or topic. Here you'll deploy a class that listens for messages received at a destination called `DestinationNames.DOCUMENT_LIBRARY_PDF_PROCESSOR`. Documents and Media sends a message to this destination after processing every uploaded PDF file.

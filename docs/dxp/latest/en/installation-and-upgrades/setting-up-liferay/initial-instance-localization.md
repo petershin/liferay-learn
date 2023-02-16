@@ -1,3 +1,6 @@
+---
+uuid: b294a353-4b9f-4b52-bcea-5463f3a1272b
+---
 # Initial Instance Localization
 
 Liferay DXP supports localization by language, time zone, and more. The English (US) language translation and GMT time zone are the defaults, but DXP has over 40 translations and can be set to any time zone. Localization is scoped for virtual instances, widgets in each instance, and individual users. As you set up DXP, you can configure the virtual instance default language and time zone using these interfaces:

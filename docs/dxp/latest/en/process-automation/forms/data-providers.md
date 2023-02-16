@@ -1,7 +1,8 @@
 ---
 toc:
-- ./data-providers/data-providers-overview.md
-- ./data-providers/using-the-rest-data-provider-to-populate-form-options.md
+  - ./data-providers/data-providers-overview.md
+  - ./data-providers/using-the-rest-data-provider-to-populate-form-options.md
+uuid: b2feb00f-ef6e-4822-b35d-ebffb4ddc645
 ---
 # Data Providers
 

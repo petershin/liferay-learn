@@ -1,3 +1,6 @@
+---
+uuid: 0ddaf309-493f-48f8-ac47-36fc6d76bfce
+---
 # Setting and Accessing Configurations
 
 You can use Liferay's configuration framework to add a settings UI for a MVC Portlet.

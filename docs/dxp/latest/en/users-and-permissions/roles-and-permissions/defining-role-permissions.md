@@ -1,3 +1,6 @@
+---
+uuid: 913c58d5-7a6f-4e04-8157-968d037321ed
+---
 # Defining Role Permissions
 
 Roles collect permissions, so when Users are given a Role, they inherit all Role's permissions.

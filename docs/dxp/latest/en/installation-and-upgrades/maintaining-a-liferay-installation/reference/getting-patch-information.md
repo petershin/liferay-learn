@@ -1,3 +1,6 @@
+---
+uuid: 2a33f177-db70-42db-add8-66e659743c15
+---
 # Getting Patch Information
 
 > Subscribers

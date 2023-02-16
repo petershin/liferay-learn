@@ -1,3 +1,6 @@
+---
+uuid: 43925e7a-6986-4b9b-b701-7d255937c850
+---
 # Moderating Message Boards
 
 _Message Boards_ includes features that enable effective forum moderation. This includes thread locking, thread moving and merging, user bans, and thread flagging. Users with the appropriately designated permissions are able to use these tools. See the [Message Boards Permissions Reference](./message-boards-permissions-reference.md) for more information on assigning _Message Boards_ permissions to a role. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).

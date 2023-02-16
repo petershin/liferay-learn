@@ -1,3 +1,6 @@
+---
+uuid: 46c7dc12-df1b-47d3-9292-40f292b8f8be
+---
 # 4.0 Breaking Changes
 
 This document presents a chronological list of changes that break existing functionality, APIs, or contracts with third party Liferay Commerce developers or users in Commerce 4.0. We try our best to minimize these disruptions, but sometimes they are unavoidable.

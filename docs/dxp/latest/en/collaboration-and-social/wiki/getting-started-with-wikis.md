@@ -1,3 +1,6 @@
+---
+uuid: c65a019b-11e8-4835-b702-ccddca27cf8f
+---
 # Getting Started with Wikis
 
 The _Wiki_ application includes a rich-text WYSIWYG editor, version tracking, and the ability to create multiple wiki nodes. Wikis are integrated with Liferay DXP's users and permissions.

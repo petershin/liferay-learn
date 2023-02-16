@@ -1,3 +1,6 @@
+---
+uuid: 6dc6b34a-ae3a-4b67-9d83-a11424b9fda2
+---
 # Migrating to Segmentation and Personalization
 
 Starting with Liferay 7.2, Segmentation and Personalization functionality was integrated into the core product. Users of Audience Targeting must migrate their Audience Targeting segments to the core Liferay Segmentation.

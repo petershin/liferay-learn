@@ -1,3 +1,6 @@
+---
+uuid: ffbbefb9-eab8-46b8-80c6-4589698e76e8
+---
 # Installing Solr
 
 {bdg-secondary}`7.2-7.3 (CE, DXP); 7.4 DXP U60+`

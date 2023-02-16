@@ -1,3 +1,6 @@
+---
+uuid: c9510a79-6e06-424a-86dc-99df9fdda568
+---
 # Batch Engine API Basics - Importing Data
 
 Liferay's Headless Batch Engine provides REST APIs to import and export data. Call these services to import data to Liferay.

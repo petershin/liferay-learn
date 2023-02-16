@@ -1,3 +1,6 @@
+---
+uuid: 614388d7-baa8-4f35-bc08-8f0917730fb9
+---
 # Managing Data Definitions
 
 There are several ways to manage your data definitions: edit, manage templates, configure permissions, copy, or delete. To begin managing your data definitions,

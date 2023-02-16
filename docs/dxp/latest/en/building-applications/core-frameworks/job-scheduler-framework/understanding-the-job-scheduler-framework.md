@@ -1,3 +1,6 @@
+---
+uuid: b3d03520-8ea9-4eb3-bb02-b868d05f08cf
+---
 # Understanding the Job Scheduler Framework
 
 Liferay Job Scheduler is a flexible framework built on top of Liferay's Scheduler Engine. You can use it to add, execute, and schedule tasks containing any custom logic across a Liferay instance.

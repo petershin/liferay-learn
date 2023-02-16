@@ -1,3 +1,6 @@
+---
+uuid: ac5e5ddc-ee51-48a5-86ac-ac47e6a0ea0e
+---
 # Defining Fragment Drop Zones
 
 Drop zones are integral to building your Content Pages. With them, you can create unique Page layouts and dynamic displays by defining areas within Fragments where Users can drag and drop other Fragments and widgets.

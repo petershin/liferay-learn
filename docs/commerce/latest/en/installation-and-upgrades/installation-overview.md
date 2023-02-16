@@ -1,3 +1,6 @@
+---
+uuid: 1561a5a9-08fd-4c84-9420-eda3aad08612
+---
 # Installation Overview
 
 Liferay Commerce is a digital commerce platform built on Liferay DXP. This article outlines prerequisites and available options for installing, deploying, and maintaining Liferay Commerce.

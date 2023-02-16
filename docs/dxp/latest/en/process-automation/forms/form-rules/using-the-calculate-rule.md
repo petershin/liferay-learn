@@ -1,3 +1,6 @@
+---
+uuid: 4c3b494d-4b0e-4b3c-beb5-849d5937a0fe
+---
 # Using the Calculate Rule
 
 Users can create Calculate rules that populate a numeric field by calculating its value based on other fields. For example, a Calculate rule can calculate a camp or conference's total registration costs by multiplying the number of attendees and the registration fee (17 people at $130 each).

@@ -1,3 +1,6 @@
+---
+uuid: c4e47a2c-c991-4614-9864-12e5498b5f26
+---
 # Default Roles Reference
 
 All roles available in a Liferay DXP installation can be viewed in the Roles administrative application, organized by scope. Navigate there using Control Panel &rarr; Users &rarr; Roles. Roles that are available out of the box are described in detail below.

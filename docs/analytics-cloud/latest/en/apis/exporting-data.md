@@ -1,3 +1,6 @@
+---
+uuid: 0ae4dfb4-7b8b-4658-a573-cd97a9a039a3
+---
 # Exporting Data
 
 Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals/individuals-dashboard.md). Analytics data can also be fetched and exported with the use of Analytics Cloud's APIs. Specifically, you can fetch individual data, segment data, or page data.

@@ -1,3 +1,6 @@
+---
+uuid: 1828fa85-4a75-4a69-8fee-193d4e4a02ae
+---
 # Creating a Discount
 
 Follow the steps below to create a discount by selecting the discount type, the target customers, and setting the discount rates. Once the discount has been created, specify additional conditions to qualify for the discount.

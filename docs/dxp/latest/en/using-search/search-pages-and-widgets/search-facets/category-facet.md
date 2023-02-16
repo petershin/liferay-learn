@@ -1,3 +1,6 @@
+---
+uuid: f25e9daa-89c4-4444-a177-8686c5fbbede
+---
 # Category Facet
 
 The Category Facet narrows search results for categorized assets that match the search query keywords. Each matching result's categories are aggregated as facet terms.

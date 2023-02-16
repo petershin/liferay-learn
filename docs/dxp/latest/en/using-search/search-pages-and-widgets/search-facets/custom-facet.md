@@ -1,3 +1,6 @@
+---
+uuid: bfc953a5-54eb-4324-bce7-30c888cdf1e9
+---
 # Custom Facet
 
 The Custom Facet is unique among the out-of-the-box search facets. Rather than group results by a single static field (like the modified date or the asset type), you use a Custom Facet to choose which field to group results by. You can create an entirely new facet with much more customization.

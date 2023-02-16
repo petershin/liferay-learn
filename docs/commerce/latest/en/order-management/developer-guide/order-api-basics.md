@@ -1,3 +1,6 @@
+---
+uuid: ef23f20a-459f-48da-9a67-a28188507237
+---
 # Order API Basics
 
 You can manage orders from the Applications menu or with REST APIs. Call the [headless-admin-commerce-order](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-order/v1.0/openapi.json) services to create and manage orders.

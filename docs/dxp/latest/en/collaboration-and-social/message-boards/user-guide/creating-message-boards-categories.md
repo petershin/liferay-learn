@@ -1,3 +1,6 @@
+---
+uuid: d0473bf2-fcb4-49b0-a5f9-61dbe5108a82
+---
 # Creating Message Boards Categories
 
 Message Boards Categories organize threads by topic. Only authenticated users with the [requisite permissions](./message-boards-permissions-reference.md) (at minimum, _Add Category_, _Add Subcategory_) have the ability to create categories. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).

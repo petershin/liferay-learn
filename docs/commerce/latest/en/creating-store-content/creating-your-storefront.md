@@ -1,3 +1,6 @@
+---
+uuid: 1b9deb22-6be0-4ca3-892f-837bafa06bd5
+---
 # Creating Your Storefront
 
 Building a store in Liferay Commerce requires more than a complete catalog. Store administrators building a storefront from scratch will need to add a series of pages to display and sell their products. This article serves as a reference for pages that may be created for a functional storefront.

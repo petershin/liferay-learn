@@ -1,3 +1,6 @@
+---
+uuid: 4d5d41de-a415-4692-bd2d-0df8e24870cd
+---
 # Site Facet
 
 The Site Facet narrows search results down to those existing in a certain Site. Each Site with content matching the searched keyword appears as a facet term.

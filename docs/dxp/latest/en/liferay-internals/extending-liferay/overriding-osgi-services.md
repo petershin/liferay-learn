@@ -1,3 +1,6 @@
+---
+uuid: 7cf8e51f-d86a-47cc-b73e-57451fe3a75c
+---
 # Overriding OSGi Services
 
 Liferay's OSGi container is a dynamic environment in which services can be added, removed, or overridden as needed. This framework registers Liferay components with the OSGi service registry, each with their own availability, ranking, and attributes. Together, these details determine how components bind to the services they reference.

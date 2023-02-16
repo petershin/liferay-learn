@@ -1,3 +1,6 @@
+---
+uuid: 5765e758-24d7-4a22-b7b3-e2227357dd61
+---
 # Using Discount Levels
 
 You can create discount levels to apply multiple discounts to products and orders. Commerce applies these discounts consecutively according to their rank. For example, if you create a level 1 discount offering 20% off and a level 2 discount offering an additional 5% off if the cart value exceeds 50$, the level 1 discount is applied first, and if applicable, the level two discount is applied second.

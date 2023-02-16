@@ -1,3 +1,6 @@
+---
+uuid: fd004b31-bf92-45da-a5af-8e9b98b2a7ea
+---
 # Blog Permissions Reference
 
 <!-- Really missing an introductory statement here -->

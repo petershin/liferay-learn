@@ -1,3 +1,6 @@
+---
+uuid: 4963c6cc-80ff-4e9e-886a-863578e3a24a
+---
 # Creating Web Content Templates
 
 Web Content Templates use the FreeMarker Template Language (FTL) to determine how content fields are rendered on a Page. Each Template can be associated with a Web Content [Structure](../web-content-structures/creating-structures.md), or even [embedded in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates).

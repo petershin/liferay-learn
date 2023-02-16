@@ -1,3 +1,6 @@
+---
+uuid: e0bf2e22-26a9-46b7-938f-bdd99a927652
+---
 # Troubleshooting Services
 
 Services are the core of a Liferay Cloud environment. This article covers troubleshooting techniques that can be used to investigate and address issues that may arise with Liferay Cloud services.

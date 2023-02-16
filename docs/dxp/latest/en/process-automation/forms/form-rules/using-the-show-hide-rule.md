@@ -1,3 +1,6 @@
+---
+uuid: ddb716bb-9c60-42a2-8623-d616e1f36a76
+---
 # Using the Show-Hide Rule
 
 Users can use a _Show_ action show a field if a condition is met. Otherwise, this field is hidden.

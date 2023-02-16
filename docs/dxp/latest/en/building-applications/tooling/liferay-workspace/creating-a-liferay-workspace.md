@@ -1,3 +1,6 @@
+---
+uuid: 1f1d5bcc-8399-4967-9473-88b1a2b7b668
+---
 # Creating A Liferay Workspace
 
 You can create a Liferay Workspace manually or with [Blade CLI](../blade-cli/installing-and-updating-blade-cli.md). 

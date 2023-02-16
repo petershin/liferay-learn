@@ -1,3 +1,6 @@
+---
+uuid: 19408d83-8bf3-49e0-80dd-473d93a50972
+---
 # Liferay UI Icon Lists
 
 An icon list displays icons in a horizontal list, instead of in a pop-up navigation menu like an [icon menu](https://help.liferay.com/hc/en-us/articles/360029145151-Liferay-UI-Icon-Menus). You can see an example of an icon list menu in a message board thread. The thread's actions are visible at all times for administrators:

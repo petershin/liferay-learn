@@ -1,3 +1,6 @@
+---
+uuid: 68a2bccb-1648-4004-a654-fb0b72b40c0b
+---
 # Using Liferay Util Dynamic Include
 
 The dynamic include tag lets you specify a point or points in a JSP or theme where a developer can inject additional HTML, resources, or functionality, using the `DynamicIncludeRegistry`. You can read more about the OSGi Service Registry [here](http://docs.spring.io/osgi/docs/current/reference/html/service-registry.html). The `key` attribute identifies the extension point. See [Dynamic Includes](https://help.liferay.com/hc/en-us/articles/360018165711-Dynamic-Includes) for example configurations that use dynamic include extension points to inject additional functionality.

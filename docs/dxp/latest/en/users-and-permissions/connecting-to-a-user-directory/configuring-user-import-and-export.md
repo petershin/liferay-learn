@@ -1,3 +1,6 @@
+---
+uuid: 98c5b2c7-a2ee-4dd1-a053-de3c69d694ba
+---
 # Configuring User Import and Export
 
 The import/export settings configure mappings between LDAP and Liferay to match users between the two systems.

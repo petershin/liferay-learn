@@ -1,3 +1,6 @@
+---
+uuid: e3852b4a-f53d-43b2-835e-e75bcd9469df
+---
 # Custom Filter Examples
 
 ```{note}

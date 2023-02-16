@@ -1,3 +1,6 @@
+---
+uuid: 140481e5-ef85-44c8-be4f-7ce2ff6c7e1b
+---
 # Categories and Vocabulary API Basics
 
 Liferay's REST APIs provide services for Liferay's categories and vocabularies functionality. You can create and edit vocabularies with the API. You can also associate and edit categories with the API. Start by seeing an example of adding a new vocabulary.

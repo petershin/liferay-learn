@@ -1,3 +1,6 @@
+---
+uuid: b88a58c3-84bd-4d35-bcf5-ce7bb202cdf2
+---
 # Price List API Basics
 
 You can manage price lists from the Applications menu or with REST APIs. Call the [headless-admin-commerce-pricing](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-pricing/v2.0/openapi.json) services to create and manage price lists.

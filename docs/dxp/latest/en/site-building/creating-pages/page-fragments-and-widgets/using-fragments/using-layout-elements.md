@@ -1,3 +1,6 @@
+---
+uuid: ea588e15-3ace-4843-a66b-8d3f61f86f27
+---
 # Using Layout Elements
 
 {bdg-secondary}`For Liferay 7.4 U22+/GA22+`

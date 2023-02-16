@@ -1,3 +1,6 @@
+---
+uuid: 2f4f6c73-afbf-4ede-bc9e-02638081493e
+---
 # Creating and Managing Organizations
 
 If you're not sure what Organizations are or whether you need them, start [here](./understanding-organizations.md).

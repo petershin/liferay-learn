@@ -1,3 +1,6 @@
+---
+uuid: 8d257002-3c90-4810-82a1-17ae741c33c4
+---
 # Using the Fragments Toolkit
 
 The Fragments Toolkit helps you develop and manage Fragments locally, using your favorite tools. Here you'll use the toolkit to generate a Fragments Project with sample Fragments, deploy it, and add your own Fragments Set to it.

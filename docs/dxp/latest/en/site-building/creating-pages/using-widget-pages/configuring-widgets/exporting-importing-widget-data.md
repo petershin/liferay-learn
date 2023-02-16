@@ -1,3 +1,6 @@
+---
+uuid: 78bd1ead-9c98-45bb-b4b1-1aeef4eb8d89
+---
 # Exporting/Importing Widget Data
 
 You may need to export data from a specific widget instance, without regard to content on the rest of the Site. There are many widgets that let you export or import their data individually:

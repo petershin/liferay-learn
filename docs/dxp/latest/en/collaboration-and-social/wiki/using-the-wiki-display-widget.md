@@ -1,3 +1,6 @@
+---
+uuid: 2d9afe45-4910-447c-bfcf-0fe667e0ccd8
+---
 # Using the Wiki Display Widget
 
 Users can use the  _Wiki Display_ widget to highlight a specific wiki page regardless of whether it is a top level page or a child page. To use the _Wiki Display_ widget:

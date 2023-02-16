@@ -1,3 +1,6 @@
+---
+uuid: eac9c112-377f-4106-8800-041f96c3de1f
+---
 # Logging into Your Liferay Cloud Services
 
 By default, login is required to directly access the web interfaces for the Liferay and Infrastructure services. Login credentials for these services are typically provided in an initial onboarding email - but may be located in the Liferay Cloud Console if needed.

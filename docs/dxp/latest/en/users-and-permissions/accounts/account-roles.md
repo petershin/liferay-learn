@@ -1,3 +1,6 @@
+---
+uuid: e951d3e7-bb17-46e0-8244-1131bff58dbc
+---
 # Account Roles
 
 {bdg-secondary}`Available 7.4+`

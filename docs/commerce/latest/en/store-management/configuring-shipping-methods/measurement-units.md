@@ -1,3 +1,6 @@
+---
+uuid: 363825b9-729e-4cae-bffa-f628b1e1cafa
+---
 # Measurement Units
 
 Liferay Commerce comes with a number of common measurement units already defined, but if you or your shipping provider use different units, you will need to change the default settings.

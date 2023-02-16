@@ -1,3 +1,6 @@
+---
+uuid: 9071aff1-f19f-4c53-a279-f19fd76847f1
+---
 # Configuring Search Bar Suggestions
 
 {bdg-secondary}`7.4 U36+ and GA36+`

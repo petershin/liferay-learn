@@ -1,3 +1,6 @@
+---
+uuid: 1c613c9c-ccac-4e1c-8ca5-e9d7657c7e9a
+---
 # Using Staging in Asset Libraries
 
 > Staging is supported for Asset Libraries since Liferay DXP 7.4 and 7.3.10 FP1.

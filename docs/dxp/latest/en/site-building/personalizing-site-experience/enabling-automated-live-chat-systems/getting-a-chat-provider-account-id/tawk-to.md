@@ -1,3 +1,6 @@
+---
+uuid: 4d289ff9-f053-432d-a371-bc59425ed03e
+---
 # Tawk.to
 
 [Tawk.to](https://www.tawk.to/) is a live chat and customer support platform. This article documents how to locate your Tawk.to account ID in order to [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.

@@ -1,3 +1,6 @@
+---
+uuid: 1788f599-55b3-411f-ab2f-cced07cc130a
+---
 # Importing Packages
 
 You often find yourself in a position of needing functionality provided by another module. To access this functionality, you must import packages from other modules into your module's classpath. This requires that those other modules have already [exported](./exporting-packages.md) their packages containing the functionality you want. The OSGi framework wires the packages to the importing module's classpath. The module JAR's `META-INF/MANIFEST.MF` file uses the `Import-Package` OSGi header to import packages.

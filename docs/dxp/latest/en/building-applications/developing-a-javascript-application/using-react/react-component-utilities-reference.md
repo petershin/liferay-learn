@@ -1,3 +1,6 @@
+---
+uuid: d66ef78a-2134-40c5-b9bd-d944b315fc07
+---
 # React Component Utilities Reference
 
 Several useful tools are available to help you build high-performance components and applications in Liferay DXP using React: 

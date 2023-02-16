@@ -1,3 +1,6 @@
+---
+uuid: 6bba97de-2acf-4832-8ce6-d9762c669846
+---
 # Liferay Front-end Management Bar
 
 The Management Bar gives administrators control over search container results. It lets you filter, sort, and choose a display style for search results, so you can quickly identify the document, web content, asset entry, or whatever you're looking for in your app. The Management Bar is fully customizable, so you can implement all the controls, or just the ones your app requires. 

@@ -1,3 +1,6 @@
+---
+uuid: b4b9a8dd-d8ed-4daa-8121-04179acda003
+---
 # Liferay Faces Version Scheme
 
 In this article, you'll learn which Liferay Faces artifacts should be used with your portlet and explore the Liferay Faces versioning scheme by discovering what each component of a version means. Once you have the versioning scheme mastered, you can view several example configurations.

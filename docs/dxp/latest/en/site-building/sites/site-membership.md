@@ -1,8 +1,9 @@
 ---
 toc:
-- ./site-membership/adding-members-to-sites.md
-- ./site-membership/inviting-members-to-your-site.md
-- ./site-membership/creating-teams-for-sites.md
+  - ./site-membership/adding-members-to-sites.md
+  - ./site-membership/inviting-members-to-your-site.md
+  - ./site-membership/creating-teams-for-sites.md
+uuid: 2b8ce2bf-6358-4e6f-941a-cb1c847515f8
 ---
 
 # Site Membership

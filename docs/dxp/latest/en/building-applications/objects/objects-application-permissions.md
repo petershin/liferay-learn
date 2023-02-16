@@ -1,3 +1,6 @@
+---
+uuid: 0a1454d8-6845-4d3e-9186-9fb06e2b21e1
+---
 # Objects Application Permissions
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.4+`

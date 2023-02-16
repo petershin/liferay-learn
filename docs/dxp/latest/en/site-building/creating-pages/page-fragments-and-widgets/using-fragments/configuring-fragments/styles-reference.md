@@ -1,3 +1,6 @@
+---
+uuid: b033d85b-20dd-49ae-a1fb-9b651afe621a
+---
 # Styles Reference
 
 All fragments have a Styles settings section except for the Collection Display fragment. Use the style settings to configure your fragments' look and feel. Many of these options correspond to CSS classes and have defined tokens supported by style books. See [General Settings Reference](./general-settings-reference.md) and [Fragment Sub-Elements Reference](./fragment-sub-elements-reference.md) for additional fragment configuration options.

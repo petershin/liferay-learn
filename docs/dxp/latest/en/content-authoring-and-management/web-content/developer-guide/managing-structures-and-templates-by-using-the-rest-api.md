@@ -1,3 +1,6 @@
+---
+uuid: ad9381e2-7fcf-4448-8028-59ed858e80c0
+---
 # Managing Structures and Templates by Using the REST API
 
 Web Content Structures define the information included in a Web Content article. Structures facilitate creating and managing Web Content, while ensuring that the content includes all the required information. You can associate a Structure with a Web Content Template. A Template determines how content fields are rendered on a Page. The following table summarizes the available options using the Liferay DXP REST API with Web Content Structures and Templates:

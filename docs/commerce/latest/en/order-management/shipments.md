@@ -1,9 +1,10 @@
 ---
 toc:
-- ./shipments/introduction-to-shipments.md
-- ./shipments/creating-a-shipment.md
-- ./shipments/cancelling-a-shipment.md
-- ./shipments/shipments-management-reference-guide.md
+  - ./shipments/introduction-to-shipments.md
+  - ./shipments/creating-a-shipment.md
+  - ./shipments/cancelling-a-shipment.md
+  - ./shipments/shipments-management-reference-guide.md
+uuid: f16181cf-fbd3-44b0-98fc-9ad41ad1b6b2
 ---
 # Shipments
 

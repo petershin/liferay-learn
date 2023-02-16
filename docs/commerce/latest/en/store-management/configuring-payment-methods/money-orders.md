@@ -1,3 +1,6 @@
+---
+uuid: 46f5ef38-ffbb-41ff-94e1-474a03efb2df
+---
 # Money Orders
 
 Liferay Commerce has the option to enable sellers to accept money orders as a form of payment. Once this payment method is activated, buyers will be able to use money orders to complete the purchasing process. Sellers are encouraged to define and publish their store's policy on whether to accept money orders.

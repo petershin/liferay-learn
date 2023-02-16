@@ -1,3 +1,6 @@
+---
+uuid: 67aa8f06-901d-407a-ab74-6eea33f6a228
+---
 # Migrating Your Project to Use liferay-npm-bundler's New Mode
 
 Since [issue #303](https://github.com/liferay/liferay-js-toolkit/issues/303), two modes of operation are available for the liferay-npm-bundler. You can preprocess files before the bundler runs, or you can use the bundler to handle the entire process, similar to webpack (processing source files via a set of rules). Follow these steps to migrate your project to use the new configuration mode, so the bundler can handle the entire process:

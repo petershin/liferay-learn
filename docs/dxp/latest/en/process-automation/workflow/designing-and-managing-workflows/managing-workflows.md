@@ -1,3 +1,6 @@
+---
+uuid: eddbe111-ab34-4cdf-b3d9-84ddfb3f7f60
+---
 # Managing Workflows
 
 With the workflow framework, Users manage asset publication in custom-built workflow processes. Users with permission to access workflow process definitions in the Control Panel can upload new workflow definitions, edit existing definitions, and delete definitions for processes no longer in use.

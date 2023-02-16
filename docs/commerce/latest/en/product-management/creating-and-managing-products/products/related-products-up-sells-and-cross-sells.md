@@ -1,3 +1,6 @@
+---
+uuid: 6b2e1fd0-e4dd-49a6-9dda-439655ac47ae
+---
 # Related Products, Up-Sells, and Cross-Sells
 
 Product relations can be used to connect products. Once connected, a product displays the links to other products. Every related product must be assigned to a Product Relation Type. These products can then be displayed by a Product Publisher widget configured to source data from the appropriate type.

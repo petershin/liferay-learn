@@ -1,6 +1,7 @@
 ---
 toc:
-- ./notifications-and-requests/user-guide.md
+  - ./notifications-and-requests/user-guide.md
+uuid: f2c5cee3-c553-42b7-96db-6cd10cd667ab
 ---
 # Notifications and Requests
 

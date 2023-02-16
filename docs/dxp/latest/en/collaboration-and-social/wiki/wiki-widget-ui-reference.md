@@ -1,3 +1,6 @@
+---
+uuid: 8fdda3fd-ca81-4dc8-9955-952166f4e111
+---
 # Wiki Widget UI Reference
 
 ## FrontPage

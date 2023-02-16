@@ -1,3 +1,6 @@
+---
+uuid: 7da80e15-5bb6-4751-ad80-fa8465581172
+---
 # Converting Widget Pages to Content Pages
 
 In previous versions, Widget Pages provided exclusive features, such as custom layouts and customizable columns. Many of these exclusive features are available on [Content Pages](../../using-content-pages.md) in 7.3, so in most cases, you'll want to create a Content Page.

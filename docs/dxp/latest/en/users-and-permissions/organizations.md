@@ -1,11 +1,12 @@
 ---
 toc:
-- ./organizations/understanding-organizations.md
-- ./organizations/creating-and-managing-organizations.md
-- ./organizations/adding-users-to-organizations.md
-- ./organizations/organization-roles.md
-- ./organizations/organization-sites.md
-- ./organizations/adding-a-new-organization-type.md
+  - ./organizations/understanding-organizations.md
+  - ./organizations/creating-and-managing-organizations.md
+  - ./organizations/adding-users-to-organizations.md
+  - ./organizations/organization-roles.md
+  - ./organizations/organization-sites.md
+  - ./organizations/adding-a-new-organization-type.md
+uuid: df9deaa0-6c5c-4e14-b5e0-e8f7be03a21e
 ---
 # Organizations
 

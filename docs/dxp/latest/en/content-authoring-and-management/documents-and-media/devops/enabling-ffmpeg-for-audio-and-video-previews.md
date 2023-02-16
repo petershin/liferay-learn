@@ -1,3 +1,6 @@
+---
+uuid: 1c2204f6-6176-4b25-96f7-357d793a489a
+---
 # Enabling FFmpeg for Audio and Video Previews
 
 Documents and Media provides integration with the [FFmpeg](http://ffmpeg.org/) multimedia framework for generating audio and video file previews. To use this integration, you must first install FFmpeg on your server. If you're working in a clustered environment, FFmpeg must be installed on each node.

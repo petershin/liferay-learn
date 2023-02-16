@@ -1,3 +1,6 @@
+---
+uuid: aacb0f64-befc-459b-8164-2632904cd071
+---
 # Filtering Collections on a Page
 
 To improve the experience for Users viewing Collections on your Site, you can add Page Fragments to filter content in those Collections. For example, you can add a Fragment that can be used to search for and filter displayed Collections content using keywords.

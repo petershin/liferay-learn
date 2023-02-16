@@ -1,6 +1,7 @@
 ---
 toc:
-- ./developer-guide/navigation-menu-api-basics.md
+  - ./developer-guide/navigation-menu-api-basics.md
+uuid: 2d17a5b9-2bca-487c-8df0-eaf1997fcbaf
 ---
 # Developer Guide
 

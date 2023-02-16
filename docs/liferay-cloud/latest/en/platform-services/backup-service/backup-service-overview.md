@@ -1,3 +1,6 @@
+---
+uuid: 0222fcde-32b7-495c-ace6-a2b7ca5eeeb1
+---
 # Backup Service Overview
 
 Maintaining regular backups is vital to protecting your project's data. The Liferay Cloud backup service stores iterations of environment data that can be used to restore your environments if needed. These backups include both the Liferay DXP Database and the full contents of the `[LIFERAY_HOME]/data` folder.

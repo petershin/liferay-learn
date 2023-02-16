@@ -1,3 +1,6 @@
+---
+uuid: 86aa1e45-d0fc-4c9a-8117-df6ddae1ce23
+---
 # Liferay Front-end Info Bar
 
 An info bar provides a button that toggles the visibility of additional sidebar information. This is perfect for providing more detailed metadata for a search result, such as the file size, type, URL, etc. 

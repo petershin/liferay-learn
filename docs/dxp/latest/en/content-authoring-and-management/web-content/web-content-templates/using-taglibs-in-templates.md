@@ -1,3 +1,6 @@
+---
+uuid: eccdd0ca-296f-46eb-a737-fe3100650be6
+---
 # Using Taglibs in Templates
 
 Liferay's taglibs are accessible when developing templates in FreeMarker. There is no need to instantiate these taglibs within your FreeMarker template; they're already provided for you automatically. You can access these taglibs by indicating the TLD's file name with underscores.

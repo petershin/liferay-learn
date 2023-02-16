@@ -1,6 +1,7 @@
 ---
 toc:
-- ./terms-and-conditions/payment-and-delivery-terms.md
+  - ./terms-and-conditions/payment-and-delivery-terms.md
+uuid: 440da427-547a-47ab-96f6-6d2da05a1eb5
 ---
 # Terms and Conditions
 

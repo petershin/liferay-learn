@@ -1,3 +1,6 @@
+---
+uuid: 751d6c2f-cfdb-4517-b506-4e3fe453be0c
+---
 # Configuring Templates
 
 Once you've configured a widget, *Configuration Templates* can save those settings in a reusable template.

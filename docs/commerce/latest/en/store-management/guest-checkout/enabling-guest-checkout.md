@@ -1,3 +1,6 @@
+---
+uuid: 60aa69ac-1b1c-4c4a-ba6e-4525d3756162
+---
 # Enabling Guest Checkout
 
 Guest checkout functionality can be enabled on a per-[channel](../../store-management/channels/introduction-to-channels.md) basis and allows users to submit orders without a registered account on the site.

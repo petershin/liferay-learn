@@ -1,3 +1,6 @@
+---
+uuid: 32a5f0dd-4431-4261-b354-efe41ffd6b04
+---
 # Introduction to Pricing
 
 Liferay provides a robust pricing system to fine-tune product prices. You can define multiple price entries for a single product SKU and determine which accounts, account groups, and channels are eligible to receive each price. If multiple price entities exist for the same SKU, the Commerce pricing engine calculates which entities should be used for each channel customer.

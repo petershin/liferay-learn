@@ -1,3 +1,6 @@
+---
+uuid: 481ee5b0-0ab8-4cb6-831b-2f30348ad736
+---
 # Adding Validation Rules
 
 When defining Fragment [configuration options](./adding-configuration-options-to-fragments.md), you can add `validation` properties to `text` type fields that determine rules for valid entries. Determine what type of data each field accepts by specifying the rule's type: `text`, `number`, `email`, `url`, or `pattern`. You can also add custom error messages to notify users of invalid entries.

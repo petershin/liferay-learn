@@ -1,3 +1,6 @@
+---
+uuid: b2f71d60-7c6b-4be7-94fd-d8ea048c6dbf
+---
 # Exporting and Importing Page Templates
 
 Sometimes it's easier to edit templates in a code editor. Once you've [created a Page Template](./creating-a-page-template.md), you can [export](../../sites/exporting-importing-site-pages-and-content.md) it, edit it locally in the editor of your choice, and then import the template back into Liferay. You can import the template into any Site on the system.

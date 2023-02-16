@@ -1,3 +1,6 @@
+---
+uuid: 126f5043-1583-44d6-8c52-5ad20143645e
+---
 # Getting Started with Blogs
 
 The Blogs application's editor has a complete set of WYSIWYG controls that appear when and where you need them. You can also switch to source mode to edit your content's HTML code.

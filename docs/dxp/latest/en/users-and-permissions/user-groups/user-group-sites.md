@@ -1,3 +1,6 @@
+---
+uuid: e72acc56-5d21-4ae6-af45-ab835f46d9f2
+---
 # User Group Sites
 
 With User Group Sites, you can create pages that are added automatically to each member’s [personal Site](../../site-building/sites/personal-sites.md). These pages are organized into two [page sets](../../site-building/creating-pages/understanding-pages/understanding-pages.md#page-sets), *My Profile* (public) and *My Dashboard* (private), just like personal Sites. If users belong to multiple User Groups, all pages from those groups are also added to their Sites.

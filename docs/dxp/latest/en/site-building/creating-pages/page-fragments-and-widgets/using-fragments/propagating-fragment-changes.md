@@ -1,3 +1,6 @@
+---
+uuid: b55c944a-3f81-4047-8166-7e87357dcc8f
+---
 # Propagating Fragment Changes
 
 By default, [changes](../../../developer-guide/developing-page-fragments/using-the-fragments-editor.md) made to a custom fragment's code are not propagated to deployed instances of the fragment. Using Fragment Propagation, you can propagate changes to fragment instances in one of two ways:

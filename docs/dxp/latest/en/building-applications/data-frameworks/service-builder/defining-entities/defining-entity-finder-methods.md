@@ -1,3 +1,6 @@
+---
+uuid: c4959577-5cab-4945-a4f5-6a98b89eae41
+---
 # Defining Entity Finder Methods
 
 Finder methods retrieve entity objects from the database based on specified parameters. For each finder defined, Service Builder generates several methods to fetch, find, remove, and count entity instances based on the finder's parameters.

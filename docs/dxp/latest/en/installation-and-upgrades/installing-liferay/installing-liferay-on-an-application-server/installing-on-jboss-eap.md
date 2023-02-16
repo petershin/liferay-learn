@@ -1,3 +1,6 @@
+---
+uuid: 7096601d-1346-4385-847b-eebba5fa3d2a
+---
 # Installing on JBoss EAP
 
 Installing on JBoss EAP requires installing the DXP WAR, installing dependencies, configuring JBoss, and deploying DXP on JBoss. You must also configure your database and mail server connections.

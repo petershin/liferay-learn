@@ -1,3 +1,6 @@
+---
+uuid: 801605ca-3141-4ae8-a3e7-685dc76003dc
+---
 # Enabling Search Suggestions
 
 Search terms can be suggested to users when their initial queries can be improved. Spell check settings allow administrators to configure the Search application so that if a user types a search term that doesn't return many results (for example, a slightly misspelled word), the user can be prompted to improve the search.

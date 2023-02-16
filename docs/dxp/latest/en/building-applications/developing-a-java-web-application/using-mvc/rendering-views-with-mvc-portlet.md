@@ -1,3 +1,6 @@
+---
+uuid: 1cf70b36-f1d5-450f-a37a-501d5ea112a9
+---
 # Rendering Views with MVC Portlet
 
 If you want users to access your portlet's views, you must implement navigation to them. Portlet render URLs help you do this.

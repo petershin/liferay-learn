@@ -1,8 +1,9 @@
 ---
 toc:
-- ./auto-tagging/configuring-asset-auto-tagging.md
-- ./auto-tagging/auto-tagging-assets.md
-- ./auto-tagging/auto-tagging-images.md
+  - ./auto-tagging/configuring-asset-auto-tagging.md
+  - ./auto-tagging/auto-tagging-assets.md
+  - ./auto-tagging/auto-tagging-images.md
+uuid: a9274b09-7106-430d-927f-26472612acd4
 ---
 # Auto Tagging
 

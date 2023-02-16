@@ -1,3 +1,6 @@
+---
+uuid: 42732290-c0a8-4101-b7a2-b39b69b5a661
+---
 # Configuring the Questions App
 
 > Available: Liferay DXP/Portal 7.3+

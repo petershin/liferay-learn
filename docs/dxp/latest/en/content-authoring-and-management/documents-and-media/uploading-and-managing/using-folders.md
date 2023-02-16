@@ -1,3 +1,6 @@
+---
+uuid: 4e440ea1-b447-4c5f-90e6-09a3ce0bbfcd
+---
 # Using Folders
 
 By default, uploaded files are stored in the Documents and Media root folder (i.e., *Home*), but you can create additional folders to organize and manage your files. Each folder can have its own workflow configuration, so you can define review and approval processes for its files. You can also configure a folder's permissions to ensure only authorized users can access its files.

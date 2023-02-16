@@ -1,3 +1,6 @@
+---
+uuid: 4e9635e0-da20-405e-bdd2-bac46e420006
+---
 # Refreshing Charts to Reflect Real Time Data
 
 The polling interval property is an optional property for all charts. It specifies the time in milliseconds for the chart's data to refresh. You can use this for charts that receive any kind of real time data, such as a JSON file that changes periodically. This ensures that the chart is up to date, reflecting the most recent data. Follow these steps to configure your chart to use real  time data. 

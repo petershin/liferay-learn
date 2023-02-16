@@ -1,3 +1,6 @@
+---
+uuid: 49f9c4cd-4251-4581-b783-01459f3c0a6d
+---
 # Translating Forms
 
 Forms can be be translated and presented in any language that is currently enabled on the current site.

@@ -1,3 +1,6 @@
+---
+uuid: dcb71149-fcc2-4d97-bd48-bedc5599bd7b
+---
 # Creating Site Templates
 
 With Site Templates, you can design and configure templates for creating Sites. Each template is built using the same tools as Sites.

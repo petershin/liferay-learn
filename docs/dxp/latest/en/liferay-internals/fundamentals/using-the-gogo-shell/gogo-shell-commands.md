@@ -1,3 +1,6 @@
+---
+uuid: 33e6f40d-9441-4f57-9f01-c9d57d879830
+---
 # Gogo Shell Commands
 
 The Gogo shell executes [Felix Gogo basic commands](https://felix.apache.org/documentation/subprojects/apache-felix-gogo.html#basic-commands) and Liferay commands. The Gogo shell is accessible in the [Control Panel](../using-the-gogo-shell.md) (recommended) and from the [command line](./command-line-gogo-shell.md).

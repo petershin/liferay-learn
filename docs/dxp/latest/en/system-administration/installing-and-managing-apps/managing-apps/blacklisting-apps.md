@@ -1,3 +1,6 @@
+---
+uuid: 98851b77-68b0-43e7-b45c-c0bbb4b8b4a8
+---
 # Blacklisting Apps
 
 The bundle blacklist is a convenient way to uninstall or reinstall multiple apps, OSGi bundles (modules), and WAR plugins at once. It saves you the trouble of managing app, module, and plugin installations individually with the [Application Manager](./using-the-app-manager.md) or [Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md).

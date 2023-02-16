@@ -1,3 +1,6 @@
+---
+uuid: f43802af-9346-4b4d-9807-5a486fd25851
+---
 # Tidio
 
 [Tidio](https://www.tidio.com/) is a customer engagement platform. This article documents how to locate your Tidio account ID in order to [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.

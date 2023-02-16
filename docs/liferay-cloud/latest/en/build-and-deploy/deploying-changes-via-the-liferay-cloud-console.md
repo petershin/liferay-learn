@@ -1,3 +1,6 @@
+---
+uuid: a7f057ee-86ce-4536-8963-8df663d6a550
+---
 # Deploying Changes via the Liferay Cloud Console
 
 This tutorial walks through the process of adding a portal property to the Liferay service, triggering a CI build with a pull request, and deploying the new build to the `dev` environment via the Liferay Cloud console.

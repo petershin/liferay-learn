@@ -1,3 +1,6 @@
+---
+uuid: a2b63605-3b0a-4c85-bc9e-4d922cb5e803
+---
 # Pages
 
 Analytics Cloud does the following for pages:

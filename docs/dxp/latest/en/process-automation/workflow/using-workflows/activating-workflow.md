@@ -1,3 +1,6 @@
+---
+uuid: bdd9b477-1b21-4cd2-b570-82526be8310a
+---
 # Activating Workflow
 
 You can activate a workflow process for an asset type either across the DXP instance or only on a specific site. When a workflow process is activated across the instance for a particular asset type such as _Wiki Pages_, all _Wiki Page_ submitted for publication must go through the review process regardless of which Site the _Wiki Page_ is created on.

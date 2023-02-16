@@ -1,3 +1,6 @@
+---
+uuid: e4a8777d-6a83-482b-9287-2e2f946ebcb1
+---
 # Configuring a Shutdown Event
 
 In the Shutdown tab you can initiate a graceful shutdown event, warning Users of the impending shutdown and instructing them to save any work in progress.

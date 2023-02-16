@@ -1,3 +1,6 @@
+---
+uuid: 38ed33c5-d05d-4681-87aa-d4db9b0a5de7
+---
 # Step Charts
 
 Step charts contain multiple sets of data. A step chart steps between the points of data, resembling steps. Each data series (created with the `addColumns()` method) is defined with a new instance of the [`MultiValueColumn` object](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html), which takes an ID and a set of values. Follow these steps to configure your portlet to use step charts. 

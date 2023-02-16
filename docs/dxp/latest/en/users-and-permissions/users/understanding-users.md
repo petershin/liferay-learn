@@ -1,3 +1,6 @@
+---
+uuid: 17f12eab-a31f-4a56-aa1b-66968f4ca524
+---
 # Understanding Users
 
 Every person who accesses a Liferay site is considered a User. Unauthenticated Users are considered *Guest* users. Liferay ships out-of-the-box with a default Admin user who has complete control of and access to the system. [Roles and Permissions](../roles-and-permissions.md) govern what users are able to see and do on a site.

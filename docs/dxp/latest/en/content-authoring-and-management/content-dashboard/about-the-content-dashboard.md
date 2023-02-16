@@ -1,3 +1,6 @@
+---
+uuid: d8a467c6-4972-4426-8ee3-9f7d8a8d077a
+---
 # About the Content Dashboard
 
 {bdg-secondary}`Available 7.3+`

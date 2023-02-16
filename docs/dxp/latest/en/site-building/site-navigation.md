@@ -1,11 +1,12 @@
 ---
 toc:
-- ./site-navigation/managing-site-navigation.md
-- ./site-navigation/managing-page-hierarchies.md
-- ./site-navigation/using-the-navigation-menus-application.md
-- ./site-navigation/configuring-menu-displays.md
-- ./site-navigation/navigation-menu-element-types.md
-- ./site-navigation/developer-guide.md
+  - ./site-navigation/managing-site-navigation.md
+  - ./site-navigation/managing-page-hierarchies.md
+  - ./site-navigation/using-the-navigation-menus-application.md
+  - ./site-navigation/configuring-menu-displays.md
+  - ./site-navigation/navigation-menu-element-types.md
+  - ./site-navigation/developer-guide.md
+uuid: e2304f66-dc1a-4a87-96f5-dbec9d0e90ba
 ---
 # Site Navigation
 

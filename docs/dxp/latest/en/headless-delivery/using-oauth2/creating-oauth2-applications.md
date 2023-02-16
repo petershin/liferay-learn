@@ -1,3 +1,6 @@
+---
+uuid: 5483687c-1ac3-42aa-8bed-f11b3e98e124
+---
 # Creating an OAuth2 Application
 
 When you have an application that can use OAuth 2.0 for authorization, you must register that application so Liferay can recognize it. Do this by accessing *Control Panel* &rarr; *Security* &rarr; *OAuth2 Administration*:

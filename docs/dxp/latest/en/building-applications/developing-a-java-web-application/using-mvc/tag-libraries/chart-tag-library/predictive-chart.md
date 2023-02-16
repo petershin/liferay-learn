@@ -1,3 +1,6 @@
+---
+uuid: 45ea401f-1a7a-40e3-b866-b4520272b0e1
+---
 # Predictive Charts
 
 Predictive charts let you visualize current data along with predicted/forecasted data within a given value range. 

@@ -1,3 +1,6 @@
+---
+uuid: 8195f470-74b8-4fc2-b073-b76d894b69de
+---
 # Information Security and Liferay Cloud
 
 Liferay takes security on the cloud very seriously and has published the following documents on our compliance with the **SOC 2** and **ISO 27001:2013** standards:

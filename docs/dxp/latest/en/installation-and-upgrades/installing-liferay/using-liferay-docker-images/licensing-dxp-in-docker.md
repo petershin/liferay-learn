@@ -1,3 +1,6 @@
+---
+uuid: 9ae8e21e-9b48-41de-890c-7954dcce91a5
+---
 # Licensing DXP in Docker
 
 If you're using a DXP trial license that's expiring or you have a new license (activation key) you must install, you can replace your container's existing license.

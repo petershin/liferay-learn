@@ -1,3 +1,6 @@
+---
+uuid: 976ee872-ee10-4266-bd21-c9e2af7caa8e
+---
 # Analyze SEO and Accessibility on Pages
 
 Starting with Liferay DXP 7.4, you can use the Page Audit tool to examine your Pages' SEO and accessibility. The Page Audit tool uses the [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) service, providing specific recommendations for Liferay DXP. Using this tool, content authors can

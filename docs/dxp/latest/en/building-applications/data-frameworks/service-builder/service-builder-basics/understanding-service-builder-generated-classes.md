@@ -1,3 +1,6 @@
+---
+uuid: 8eee6c96-e82a-48c6-9c5d-3d6effe116fc
+---
 # Understanding and Extending Generated Classes
 
 Service Builder generates both [tables for your entity](./generating-model-persistence-and-service-code.md) and model, persistence, and service classes for it. Here you'll examine generated classes for an entity called `W9B7Entry`. Then you'll extend the local service with a new method and invoke it.

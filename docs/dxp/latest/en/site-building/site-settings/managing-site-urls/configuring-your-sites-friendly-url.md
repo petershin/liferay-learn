@@ -1,3 +1,6 @@
+---
+uuid: b65d9176-d694-4e53-8c3d-973fd6942ae8
+---
 # Configuring Your Site's Friendly URL
 
 Friendly URLs are readable URLs that can helps Users quickly access your Site. Each URL must be unique and is appended to `https://localhost:8080/web` (e.g., `https://localhost:8080/web/helloworld/`).

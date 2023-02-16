@@ -1,15 +1,16 @@
 ---
 toc:
-- ./building-applications/objects.md
-- ./building-applications/client-extensions.md
-- ./building-applications/developing-a-javascript-application.md
-- ../headless-delivery/apis-with-rest-builder.md
-- ./building-applications/developing-a-java-web-application.md
-- ./building-applications/core-frameworks.md
-- ./building-applications/data-frameworks.md
-- ./building-applications/tooling.md
-- ./building-applications/reference.md
-- ./building-applications/app-builder.md
+  - ./building-applications/objects.md
+  - ./building-applications/client-extensions.md
+  - ./building-applications/developing-a-javascript-application.md
+  - ../headless-delivery/apis-with-rest-builder.md
+  - ./building-applications/developing-a-java-web-application.md
+  - ./building-applications/core-frameworks.md
+  - ./building-applications/data-frameworks.md
+  - ./building-applications/tooling.md
+  - ./building-applications/reference.md
+  - ./building-applications/app-builder.md
+uuid: c7a717b4-ea54-4ca6-a16a-51f3e0f47d24
 ---
 # Building Applications
 

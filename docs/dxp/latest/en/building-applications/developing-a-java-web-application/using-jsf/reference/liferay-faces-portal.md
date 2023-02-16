@@ -1,3 +1,6 @@
+---
+uuid: db19b696-e7eb-4139-b1dc-c0a6ec227508
+---
 # Liferay Faces Portal
 
 *Liferay Faces Portal* is distributed in a `.jar` file. You can add Liferay Faces Portal as a dependency for your portlet projects to use its Liferay-specific utilities and UI components. When Liferay Faces Portal is included in a JSF portlet project, the `com.liferay.faces.portal.[version].jar` file resides in the portlet's library. 

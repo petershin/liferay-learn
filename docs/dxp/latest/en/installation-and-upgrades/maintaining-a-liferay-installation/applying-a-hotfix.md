@@ -1,3 +1,6 @@
+---
+uuid: b0511389-8705-4aec-bc17-45037ffda907
+---
 # Applying a Hotfix
 
 > Subscribers

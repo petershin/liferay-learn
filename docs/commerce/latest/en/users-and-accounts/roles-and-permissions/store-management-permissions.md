@@ -1,3 +1,6 @@
+---
+uuid: 84713499-7e9d-416a-b4d8-16dcd2c01e11
+---
 # Store Management Permissions
 
 With Liferay Commerce, you can use permissions to control access to Store Management applications and resources in the Commerce tab of the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).

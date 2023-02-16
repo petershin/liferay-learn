@@ -1,3 +1,6 @@
+---
+uuid: ceae734b-a5ed-49d9-b6e1-53787cae0827
+---
 # Renamed Language Keys
 
 In Liferay DXP/Portal 7.4, module language keys were centralized to a module called `portal-language-lang`.

@@ -1,3 +1,6 @@
+---
+uuid: 31826e0e-7cb4-4fe1-a2e1-2b8cbba20584
+---
 # Adding Custom Fields to Users
 
 Many of Liferay's assets and resources can be extended with new fields. This includes adding custom fields for Users:

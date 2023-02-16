@@ -1,3 +1,6 @@
+---
+uuid: ac38ca74-9c95-45b3-8b68-38e30f092d9d
+---
 # Bundle Classloading Flow
 
 The OSGi container searches several places for imported classes. It's important to know where it looks and in what order. Liferay DXP's classloading flow for OSGi bundles follows the OSGi Core specification. It's straightforward, but complex. The figure below illustrates the flow and this article walks you through it.

@@ -1,3 +1,6 @@
+---
+uuid: e6870a35-63d8-4fad-bb7f-2f23fb686735
+---
 # Developing a Custom Form Field for Liferay 7.2
 
 React-based custom form fields can be developed for Liferay 7.3 and Liferay 7.4. See [Writing Custom Form Field Types](./writing-a-custom-form-field-type.md) to learn how. Liferay 7.2 used a different front-end technology, based on MetalJS and Soy closure templates. In this tutorial you can learn to adapt the React-based Acme C2P9 Slider field to run on a Liferay 7.2 installation.

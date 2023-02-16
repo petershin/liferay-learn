@@ -1,3 +1,6 @@
+---
+uuid: 2103c41d-cd3d-453e-82c1-41d9b89f61a6
+---
 # Using IFTTT to Sync Object Data with Google Sheets
 
 {bdg-secondary}`Available 7.4+`

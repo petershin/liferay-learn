@@ -1,3 +1,6 @@
+---
+uuid: 535a42e3-120a-4acd-af2c-5fc2d27ad25e
+---
 # Installing on WebSphere
 
 Installing Liferay DXP on WebSphere requires installing the DXP WAR, installing dependencies, configuring WebSphere, and starting DXP. You must also configure your database and mail server connections.

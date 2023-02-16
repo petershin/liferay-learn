@@ -1,3 +1,6 @@
+---
+uuid: af07d3f7-bdca-4cf8-b7b8-d4825fa17beb
+---
 # Installing Patches
 
 > Subscribers

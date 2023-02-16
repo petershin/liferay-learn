@@ -1,3 +1,6 @@
+---
+uuid: 7a310b3a-7526-46a2-92a2-6bddd422593b
+---
 # Reviewing A/B Test Results and Publishing Test Variants
 
 When the A/B Test finishes, you can find the test results in Analytics Cloud and Liferay DXP. Analytics Cloud declares a winning variant when the *Confidence Level Required* is achieved during the duration of the test. To understand how to configure the *Confidence Level Required* for your test, see [Creating A/B Tests](./creating-ab-tests.md).

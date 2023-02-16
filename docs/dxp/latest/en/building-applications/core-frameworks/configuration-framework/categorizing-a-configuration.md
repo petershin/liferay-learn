@@ -1,3 +1,6 @@
+---
+uuid: fb7b68cb-a0a1-4a22-9234-208053f927a7
+---
 # Categorizing a Configuration
 
 When you register a configuration interface, the UI for your application is generated in *System Settings* &rarr; *Platform* &rarr; *Third Party*. If you prefer a different section and category for where your application's settings UI shows up, this can easily be changed.

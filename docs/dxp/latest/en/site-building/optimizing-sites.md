@@ -1,7 +1,8 @@
 ---
 toc:
-- ./optimizing-sites/ab-testing.md
-- ./optimizing-sites/building-a-responsive-site.md
+  - ./optimizing-sites/ab-testing.md
+  - ./optimizing-sites/building-a-responsive-site.md
+uuid: 47e6759b-9bcb-432b-9707-129c368e99c5
 ---
 # Optimizing Sites
 

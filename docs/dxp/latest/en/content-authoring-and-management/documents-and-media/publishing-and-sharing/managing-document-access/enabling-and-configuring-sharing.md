@@ -1,3 +1,6 @@
+---
+uuid: 1209e284-6e69-4465-a67e-6a41e36249be
+---
 # Enabling and Configuring Sharing
 
 The Sharing configuration allows users to [share files](./sharing-documents-with-other-users.md) with each other. You can enable file sharing at the Global, Virtual Instance, and Site scopes.

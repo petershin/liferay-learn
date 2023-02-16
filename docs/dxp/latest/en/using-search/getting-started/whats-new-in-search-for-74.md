@@ -1,3 +1,6 @@
+---
+uuid: c1d207df-f471-4cc9-82d8-1ab0e2b06d86
+---
 # What's New in Search for 7.4?
 
 There are several highlights and new features added to Liferay's search infrastructure for the 7.4 release. New features include those added to the product for Liferay CE 7.4 GA4 and Liferay DXP 7.4 GA1.

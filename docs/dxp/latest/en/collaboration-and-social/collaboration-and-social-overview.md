@@ -1,3 +1,6 @@
+---
+uuid: 99380259-0083-47d6-87f1-3eebd553a6e3
+---
 # Collaboration and Social Overview
 
 Liferay DXP empowers users to build robust communities with flexible, social, and extensible collaborative applications.

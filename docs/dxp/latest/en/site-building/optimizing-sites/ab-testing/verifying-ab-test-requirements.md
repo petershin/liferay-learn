@@ -1,3 +1,6 @@
+---
+uuid: 7d675204-2a69-4cb9-b315-cfaad4ad9c4f
+---
 # Verifying A/B Test Requirements
 
 Before running A/B Testing on your Content pages, you must verify these requirements are met:

@@ -1,8 +1,9 @@
 ---
 toc:
-- ./service-builder-basics/generating-model-persistence-and-service-code.md
-- ./service-builder-basics/understanding-service-builder-generated-classes.md
-- ./service-builder-basics/invoking-a-service-locally.md
+  - ./service-builder-basics/generating-model-persistence-and-service-code.md
+  - ./service-builder-basics/understanding-service-builder-generated-classes.md
+  - ./service-builder-basics/invoking-a-service-locally.md
+uuid: 25a6e49f-8a47-47d9-af43-78bec99b94a0
 ---
 # Service Builder Basics
 

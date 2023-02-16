@@ -1,3 +1,6 @@
+---
+uuid: df175a66-7f33-40e4-9e81-ffe60649e0db
+---
 # Clay Badges
 
 Badges help highlight important information such as notifications or new and unread messages. Badges have circular borders and are only used to specify a number. This covers the different types of Clay badges you can add to your app.

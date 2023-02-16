@@ -1,3 +1,6 @@
+---
+uuid: 334acff2-757a-42bf-9d77-b4e4c076c961
+---
 # Portlet Level Configuration
 
 With the configuration framework, you can set your [application's configuration for different levels of scope](./scoping-configurations.md). Where Instance and Site-scoped configurations use `ConfigurationProvider`, portlet scoped configurations use `PortletDisplay` as shown in the example below. 

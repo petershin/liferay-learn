@@ -1,3 +1,6 @@
+---
+uuid: 84769714-2ab1-41d9-90b6-c550f4d00ab1
+---
 # Configuring Role and Team Defaults for Site Members
 
 You can configure the default Roles and Teams you assign to new Site members.

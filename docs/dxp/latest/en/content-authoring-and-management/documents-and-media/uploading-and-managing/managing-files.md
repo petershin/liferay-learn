@@ -1,3 +1,6 @@
+---
+uuid: 7630fcb9-2bb3-43a5-bfbe-7f41c9f35a3f
+---
 # Managing Files
 
 Once you've added files to your document library, you can manage them via the Documents and Media UI. To access management actions for a file, you can select it or click it's *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ).

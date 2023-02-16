@@ -1,10 +1,11 @@
 ---
 toc:
-- ./reference/installing-the-patching-tool.md
-- ./reference/configuring-the-patching-tool.md
-- ./reference/getting-patch-information.md
-- ./reference/uninstalling-patches.md
-- ./reference/accessing-dxp-patch-code.md
+  - ./reference/installing-the-patching-tool.md
+  - ./reference/configuring-the-patching-tool.md
+  - ./reference/getting-patch-information.md
+  - ./reference/uninstalling-patches.md
+  - ./reference/accessing-dxp-patch-code.md
+uuid: df104aab-da60-4bfc-adcc-886b6ac1ee9d
 ---
  # Reference
 

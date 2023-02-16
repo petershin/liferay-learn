@@ -1,3 +1,6 @@
+---
+uuid: cf990294-69dd-461c-b88d-f1b4ba1401a3
+---
 # Accessing Accounts Data from Custom Objects
 
 {bdg-secondary}`Available Liferay 7.4 U35+/GA35+`

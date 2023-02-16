@@ -1,3 +1,6 @@
+---
+uuid: eb06ddb0-3d98-451a-be8a-5ce221f0733c
+---
 # Using a Custom Service
 
 Liferay Cloud allows you to run more than just the standard set of services provided out-of-the-box. You can also create and deploy a custom service to run any new processes within the Liferay Cloud infrastructure. Customers who wish to enable the use custom services on their Liferay Cloud environments must first contact their sales representative in order to enable this functionality and ensure that their environments are provisioned accordingly.

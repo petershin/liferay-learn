@@ -1,3 +1,6 @@
+---
+uuid: ea95d607-f1bc-41a3-8b75-fd3a7948d971
+---
 # Hiding the Configuration UI
 
 Liferay generates a configuration UI automatically after a [configuration interface deploys](./setting-and-accessing-configurations.html#creating-the-configuration-interface). But you may have certain use cases where you want to hide the UI. For example, you don't want an administrator to have access to a specific configuration or you want to hide the configuration based on certain criteria. To hide the configuration UI, you have two different options:

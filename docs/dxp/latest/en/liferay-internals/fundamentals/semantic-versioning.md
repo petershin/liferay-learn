@@ -1,3 +1,6 @@
+---
+uuid: cf8996d2-c3bf-46f9-b752-76c524df2100
+---
 # Semantic Versioning
 
 [Semantic Versioning](https://semver.org) is a three tiered versioning system for incrementing version numbers based on the degree of API change made in a releasable software component. It's a standard for communicating programmatic compatibility of a package or module for dependent consumers and API implementations. If a package is programmatically (i.e., semantically) incompatible with a project, [Bnd](http://bnd.bndtools.org) (used when building [Liferay generated module projects](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)) fails that project's build immediately.

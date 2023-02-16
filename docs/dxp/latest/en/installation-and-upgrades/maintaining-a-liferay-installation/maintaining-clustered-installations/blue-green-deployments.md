@@ -1,3 +1,6 @@
+---
+uuid: cef0cdea-8cec-4292-8311-1d85db1987d4
+---
 # Blue-Green Deployments
 
 Blue-green is a deployment technique in which you duplicate your production environment (the *blue* environment) and modify the duplicate (the *green* environment) with software and data changes. When you've successfully tested the green environment, you cut users over from the blue environment to the green environment. Blue-green eliminates system down time.

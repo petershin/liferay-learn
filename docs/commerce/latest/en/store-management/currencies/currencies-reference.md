@@ -1,3 +1,6 @@
+---
+uuid: 870af26f-34d4-4e72-8d86-8d392b0e257c
+---
 # Currencies Reference
 
 Liferay Commerce has several currencies pre-configured and ready to use. Each store must have a primary currency enabled, to be able to process orders. This article serves as a reference for the metadata associated with each currency.

@@ -1,3 +1,6 @@
+---
+uuid: 9778bcfd-d931-4e86-b284-f8e6af59e4ee
+---
 # Configuring Mentions
 
 Mentions are enabled by the _Mentions_ app. By default, the _Mentions_ app is enabled globally. However, this can be enabled or disabled either globally or per Site.

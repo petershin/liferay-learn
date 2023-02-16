@@ -1,3 +1,6 @@
+---
+uuid: 63716171-76b7-4d2f-805c-2fb962d4a27b
+---
 # Using the Promotion Base List
 
 When you create a new Catalog, a new *Promotion Base List* is automatically created. You cannot control the Eligibility or add any Price Modifiers for a Promotion Base List. You can only use it to add specific entries that you want to target with a promotional price.

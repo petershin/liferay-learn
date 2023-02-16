@@ -1,3 +1,6 @@
+---
+uuid: 9e5ee650-0218-45f2-9ab8-597398a6e16d
+---
 # Providing Help Text and Predefined Values
 
 Form fields can be configured to have help text, placeholder text, and predefined values that assist users in understanding and filling out a form.

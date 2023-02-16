@@ -1,9 +1,10 @@
 ---
 toc:
-- ./search-administration-and-tuning/synonym-sets.md
-- ./search-administration-and-tuning/result-rankings.md
-- ./search-administration-and-tuning/elasticsearch-indexes-reference.md
-- ./search-administration-and-tuning/search-administration.md
+  - ./search-administration-and-tuning/synonym-sets.md
+  - ./search-administration-and-tuning/result-rankings.md
+  - ./search-administration-and-tuning/elasticsearch-indexes-reference.md
+  - ./search-administration-and-tuning/search-administration.md
+uuid: c7d1b6cf-3532-4e80-9215-5c16a16ea495
 ---
 # Search Administration and Tuning
 

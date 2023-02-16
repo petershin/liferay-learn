@@ -1,3 +1,6 @@
+---
+uuid: 357d9fa7-1cc8-499a-9770-c6ac607c6444
+---
 # Adding Blog Entries
 
 Blog entries are scoped to Sites. By default, only authenticated users have the ability to create blog entries. See the [Blogs Permissions Reference](./blog-permissions-reference.md) for more information.

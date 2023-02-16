@@ -1,3 +1,6 @@
+---
+uuid: d4b017d7-5b14-467c-8122-9d2b28ae6c31
+---
 # Message Boards Permissions Reference
 
 This article documents permissions in the _Message Boards_ widget and serves as a reference when assigning permissions to users and roles. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).

@@ -1,3 +1,6 @@
+---
+uuid: 87ede542-aa28-453d-9229-0a53f3d77b38
+---
 # Running Scripts in Containers
 
 If there's more that you want to do in the Liferay container beyond setting up Tomcat and Liferay files, deploying arifacts, and applying patches, you can use scripts. The container scans for scripts in specific folders at several points in its [lifecycle](./container-lifecycle-and-api.md). The following table describes the script insertion points.

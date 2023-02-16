@@ -1,10 +1,11 @@
 ---
 toc:
-- ./using-content-pages/adding-elements-to-content-pages.md
-- ./using-content-pages/managing-content-in-content-pages.md
-- ./using-content-pages/using-widgets-on-a-content-page.md
-- ./using-content-pages/using-page-comments.md
-- ./using-content-pages/content-page-editor-ui-reference.md
+  - ./using-content-pages/adding-elements-to-content-pages.md
+  - ./using-content-pages/managing-content-in-content-pages.md
+  - ./using-content-pages/using-widgets-on-a-content-page.md
+  - ./using-content-pages/using-page-comments.md
+  - ./using-content-pages/content-page-editor-ui-reference.md
+uuid: 6f904c1b-7c0a-409d-b8aa-8f22d75fd8f9
 ---
 # Using Content Pages
 

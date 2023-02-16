@@ -1,3 +1,6 @@
+---
+uuid: ddd2d6a4-0c4a-4122-9bfc-1a22b4d36554
+---
 # Approving or Rejecting Orders in Order Workflows
 
 [Order workflows](./introduction-to-order-workflows.md), when enabled, empower the buyer or seller to require internal prior approval for an order before it can be [processed](../orders/processing-an-order.md). This article documents how to approve or reject an order when *Buyer Order Approval Workflow* or *Seller Order Acceptance Workflow* is enabled with the out-of-the-box *Single Approver (Version 1)* option.

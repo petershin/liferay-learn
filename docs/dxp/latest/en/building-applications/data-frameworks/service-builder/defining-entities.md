@@ -1,12 +1,13 @@
 ---
 toc:
-- ./defining-entities/configuring-global-service-options.md
-- ./defining-entities/defining-entity-columns.md
-- ./defining-entities/modifying-database-fields-in-development.md
-- ./defining-entities/defining-entity-relationships.md
-- ./defining-entities/sorting-entity-instances.md
-- ./defining-entities/defining-entity-finder-methods.md
-- ./defining-entities/adding-model-hints.md
+  - ./defining-entities/configuring-global-service-options.md
+  - ./defining-entities/defining-entity-columns.md
+  - ./defining-entities/modifying-database-fields-in-development.md
+  - ./defining-entities/defining-entity-relationships.md
+  - ./defining-entities/sorting-entity-instances.md
+  - ./defining-entities/defining-entity-finder-methods.md
+  - ./defining-entities/adding-model-hints.md
+uuid: 1dfdaf8e-4022-4376-a028-8fe2d1feaef1
 ---
 # Defining Entities
 

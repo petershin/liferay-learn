@@ -1,3 +1,6 @@
+---
+uuid: 6f30fd39-4b22-4b88-aeae-38b9b61c4627
+---
 # Finding Artifacts
 
 To use external artifacts in your project, you must configure their dependencies in your `build.gradle` [Gradle](https://gradle.org/) script. 

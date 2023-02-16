@@ -1,3 +1,6 @@
+---
+uuid: e9f00b33-68bd-44c4-af55-b59e63982942
+---
 # 3.0 Breaking Changes
 
 This is a chronological list of changes that break existing functionality, APIs, or contracts with third party Liferay Commerce developers or Users in Commerce 3.0. We try our best to minimize these disruptions, but sometimes they are unavoidable.

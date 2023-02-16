@@ -1,8 +1,9 @@
 ---
 toc:
-- objects-tutorials/building-a-time-off-requester.md
-- objects-tutorials/using-object-data-with-react-charts.md
-- objects-tutorials/using-apis.md
+  - objects-tutorials/building-a-time-off-requester.md
+  - objects-tutorials/using-object-data-with-react-charts.md
+  - objects-tutorials/using-apis.md
+uuid: 3c459cba-c6fe-4ea2-8792-dcc61df842b4
 ---
 # Objects Tutorials
 

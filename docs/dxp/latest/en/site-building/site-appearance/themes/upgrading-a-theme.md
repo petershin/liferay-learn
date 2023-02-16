@@ -1,3 +1,6 @@
+---
+uuid: 0fb8fded-821e-40da-aa4b-d551f9eea563
+---
 # Upgrading a Theme
 
 Themes developed for previous versions of Liferay DXP must be upgraded in order to be deployed to a new version. The `gulp upgrade` task updates Liferay version references and theme dependencies. This allows you to deploy your theme to newer versions of Liferay.

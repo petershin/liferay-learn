@@ -1,3 +1,6 @@
+---
+uuid: ff12f679-5b33-4023-bdaa-1254cd74e415
+---
 # Creating Code with Liferay Workspace
 
 Liferay Workspace is the developer's tool for creating and managing Liferay development projects. 

@@ -1,3 +1,6 @@
+---
+uuid: 0bb26a1d-668e-4d08-b3ac-8d5adbb59b81
+---
 # Creating Category Display Pages
 
 You can link Categories to Widget Pages to create and manage pages at scale in Liferay Commerce. Rather than managing one page for every category, you can define a single template to be used across all categories with Category Display pages. Once the pages are created, users can make use of built-in or custom widgets and fragments to display details pertaining to a specific category. This is useful when you have many categories in your store and want to manage them efficiently.

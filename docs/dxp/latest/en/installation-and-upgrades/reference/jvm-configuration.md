@@ -1,3 +1,6 @@
+---
+uuid: 34581f39-bde2-4e5f-8317-cafa6de7eae0
+---
 # JVM Configuration
 
 Liferay DXP/Portal requires a Java JDK 8 or 11 and requires specific JVM option settings. There are also recommended settings specific to JDK 11 and recommended baseline memory settings. Here you'll learn about all of these settings and see them demonstrated in an example Tomcat script.

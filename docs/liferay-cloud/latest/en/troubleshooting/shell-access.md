@@ -1,3 +1,6 @@
+---
+uuid: f07a9783-3f56-478b-b4b4-570606f04f29
+---
 # Shell Access
 
 The command-line tools in Liferay Cloud contribute to the developer's workflow by delivering speed, control, traceability, scripting, and automation capabilities. Shell access makes it simpler to see what's going on inside your application. For example, you can use the shell to look for side effects not easily spotted in the logs. You can also call functions for data population or report generation that are meant to run only once. 

@@ -1,3 +1,6 @@
+---
+uuid: 200d8582-24d6-4c35-a50b-ddb0b4b7c8b1
+---
 # Monitoring Elasticsearch
 
 {bdg-link-primary}`[LES Subscription](./activating-liferay-enterprise-search.md)`

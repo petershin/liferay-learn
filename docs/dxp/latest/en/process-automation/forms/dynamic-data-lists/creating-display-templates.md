@@ -1,3 +1,6 @@
+---
+uuid: 6ed76ee8-6546-4f94-8cef-e4333e8ae4c7
+---
 # Creating Display Templates
 
 For every data definition, you can create as many displays as you need. If you’ve created a Form Template that doesn’t show all the fields of a particular data definition in the data list’s form view, you probably don’t want to display those fields in the list view, either. Modify the list view using Display Templates.

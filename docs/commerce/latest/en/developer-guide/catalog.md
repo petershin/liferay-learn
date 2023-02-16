@@ -1,6 +1,7 @@
 ---
 toc:
-- ./catalog/adding-a-new-product-type.md
+  - ./catalog/adding-a-new-product-type.md
+uuid: 3a135226-f6d5-4f90-950a-ef675b92c6b9
 ---
 # Catalog
 

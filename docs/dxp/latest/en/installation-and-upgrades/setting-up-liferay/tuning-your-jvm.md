@@ -1,3 +1,6 @@
+---
+uuid: fdc5de1c-d77b-40b7-b595-3904e8624afa
+---
 # Tuning Your JVM
 
 Java Virtual Machine (JVM) tuning primarily focuses on adjusting Java heap and non-heap settings and configuring garbage collection. Finding settings that perform well for you depend on your system's load and your hardware. The settings discussed here can be used as a starting point for tuning your JVM. 

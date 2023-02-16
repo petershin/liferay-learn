@@ -1,3 +1,6 @@
+---
+uuid: 665d0c03-9f34-426c-a2b1-4146546397e3
+---
 # Defining Metadata Sets
 
 With Documents and Media, you can define reusable groups of metadata fields that can be added to custom Document Types. Once created, these Metadata Sets can be selected while [creating or editing a Document Type](./defining-document-types.md) and are added after any fields defined directly in the Document Type form.

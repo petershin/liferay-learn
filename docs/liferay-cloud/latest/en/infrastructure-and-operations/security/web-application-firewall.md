@@ -1,3 +1,6 @@
+---
+uuid: 4f659a0a-7b7b-4798-8c88-21222e42ab81
+---
 # Web Application Firewall
 
 {bdg-secondary}`Available in Liferay Cloud 5.x.x`

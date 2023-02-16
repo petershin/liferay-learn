@@ -1,10 +1,11 @@
 ---
 toc:
-- ./security/information-security-and-liferay-cloud.md
-- ./security/authentication.md
-- ./security/using-sso-with-liferay-cloud.md
-- ./security/web-application-firewall.md
-- ./security/managing-secure-environment-variables-with-secrets.md
+  - ./security/information-security-and-liferay-cloud.md
+  - ./security/authentication.md
+  - ./security/using-sso-with-liferay-cloud.md
+  - ./security/web-application-firewall.md
+  - ./security/managing-secure-environment-variables-with-secrets.md
+uuid: 0be8348b-e1be-4c3a-af4b-3c47f60bbeb5
 ---
 # Security
 

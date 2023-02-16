@@ -1,3 +1,6 @@
+---
+uuid: 670a21c8-0d74-4320-be35-3f6b066dbfa5
+---
 # Clay Form Elements
 
 The Liferay Clay tag library provides several tags for creating form elements. An example of each tag is shown below.

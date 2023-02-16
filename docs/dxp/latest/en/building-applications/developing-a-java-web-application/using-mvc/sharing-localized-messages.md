@@ -1,3 +1,6 @@
+---
+uuid: a972fb77-595a-41c9-a027-f6ac5b9708ff
+---
 # Sharing Localized Messages
 
 As you work on an application you might have multiple modules, each of which has its own language keys. Instead of maintaining various language properties files in different places, consolidate them into one place. This example project demonstrates how language keys can be shared across different modules.

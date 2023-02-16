@@ -1,3 +1,6 @@
+---
+uuid: b8e8d8ce-6974-445c-98e8-8d28e59655bb
+---
 # Adding Organizations to Accounts
 
 Organizations can be added to an Account to simplify the management and administration of accounts. To learn more about using Organizations with Accounts see [Using Organizations to Create a Sales Network](./using-organizations-to-create-a-sales-network.md).

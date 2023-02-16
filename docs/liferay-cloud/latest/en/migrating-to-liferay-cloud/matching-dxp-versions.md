@@ -1,3 +1,6 @@
+---
+uuid: ddb2c5da-3501-4616-a2bb-5126c89f91e0
+---
 # Stage 1: Matching DXP Versions
 
 The first stage of migration is to configure the Liferay service running on Liferay Cloud to run the same version of the installation you want to migrate.

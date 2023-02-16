@@ -1,3 +1,6 @@
+---
+uuid: 940e6f69-6de5-43b9-a97b-d4f8d06ea38b
+---
 # Search
 
 You can use the Search page to find content available on a Liferay site. This can be web content, knowledge base articles, documents, images, products, etc. The Search page contains a search bar and several facet widgets that you can use to refine your searches.

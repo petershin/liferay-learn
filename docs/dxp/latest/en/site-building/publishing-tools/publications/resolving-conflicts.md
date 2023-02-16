@@ -1,3 +1,6 @@
+---
+uuid: b1426540-9d0f-4387-b7fa-3dc44336cb94
+---
 # Resolving Conflicts
 
 When you begin the publishing process, Liferay performs a compatibility check to determine if there are any conflicts between your publication and production. While some conflicts can be resolved automatically, others require manual resolution. Resolving all conflicts is necessary for publishing changes.

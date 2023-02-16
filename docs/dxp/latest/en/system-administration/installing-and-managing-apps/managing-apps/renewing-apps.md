@@ -1,3 +1,6 @@
+---
+uuid: b02f1f57-5603-4ceb-a3fd-d54160238504
+---
 # Renewing Apps
 
 To continue using a purchased app whose license has expired, you must renew your app subscription.

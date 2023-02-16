@@ -1,3 +1,6 @@
+---
+uuid: dc4b8d4e-4fe6-4564-a262-50e737599648
+---
 # Blacklisting OSGi Components
 
 The Component Blacklist is a convenient way to manage multiple [OSGi Declarative Service Components](https://help.liferay.com/hc/articles/360028846452-Declarative-Services) (components). The list is an [OSGi configuration](../../configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) that DXP uses to disable components. These lists save you the trouble of modifying them individually with the [Application Manager](./using-the-app-manager.md) or [Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md).

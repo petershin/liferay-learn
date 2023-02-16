@@ -1,3 +1,6 @@
+---
+uuid: cbb2da02-f99f-4ae9-a7a6-67b75a555e86
+---
 # Managing Picklist Permissions
 
 Picklist is integrated with Liferay's permissions framework. This means you can assign [application](#application-permissions) and [resource](#resource-permissions) permissions to user Roles to determine which users have access to the Picklists application and its data.

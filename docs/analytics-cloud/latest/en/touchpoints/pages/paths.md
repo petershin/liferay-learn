@@ -1,3 +1,6 @@
+---
+uuid: d05594ae-9ab2-442c-a894-cb28372fe1da
+---
 # Paths
 
 Path Analytics identify where visitors to your site most commonly originate. Knowing how your users are coming to your site's pages and assets can empower you to better tailor your site's content to meeting your users' needs.

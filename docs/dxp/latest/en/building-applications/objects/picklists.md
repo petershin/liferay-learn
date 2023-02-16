@@ -1,8 +1,9 @@
 ---
 toc:
-- ./picklists/using-picklists.md
-- ./picklists/managing-picklist-permissions.md
-- ./picklists/picklists-api-basics.md
+  - ./picklists/using-picklists.md
+  - ./picklists/managing-picklist-permissions.md
+  - ./picklists/picklists-api-basics.md
+uuid: 15762235-5051-4cbf-82ad-ddd513651f27
 ---
 # Picklists
 

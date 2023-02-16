@@ -1,3 +1,6 @@
+---
+uuid: fecd1346-1741-44bc-9b6e-9283b985e476
+---
 # SAML Settings
 
 Many of the same fields appear in both the Service Provider and the Identity Provider configurations. Here's a reference. 

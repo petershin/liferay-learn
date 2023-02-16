@@ -1,3 +1,6 @@
+---
+uuid: 6591c565-168f-4ba3-8a17-a2145f238291
+---
 # Consuming GraphQL APIs
 
 Liferay DXP contains [GraphQL](https://graphql.org) APIs for most of its applications. Here, you'll learn how to consume them. This takes only three steps:

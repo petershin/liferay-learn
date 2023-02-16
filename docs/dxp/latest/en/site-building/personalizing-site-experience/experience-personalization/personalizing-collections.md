@@ -1,3 +1,6 @@
+---
+uuid: 5f12dd5f-aceb-4923-b761-bcb2906d8b9a
+---
 # Personalizing Collections
 
 {bdg-secondary}`Available Liferay Portal 7.3 GA6 / DXP 7.3+`

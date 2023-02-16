@@ -1,3 +1,6 @@
+---
+uuid: 2ba86999-7423-4c2f-8e1f-3a15020df7ea
+---
 # Geolocating Assets
 
 Geolocation adds the geographic coordinates where an asset was created as metadata to an asset. This feature is provided as an optional field which can be included in a [Web Content structure](../web-content/web-content-structures/understanding-web-content-structures.md), Dynamic Data List field, or a Documents and Media [Document Type](../documents-and-media/uploading-and-managing/managing-metadata/defining-document-types.md) or a [Metadata Set](../documents-and-media/uploading-and-managing/managing-metadata/defining-metadata-sets.md).

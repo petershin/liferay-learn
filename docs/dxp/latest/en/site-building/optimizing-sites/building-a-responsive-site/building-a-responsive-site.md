@@ -1,3 +1,6 @@
+---
+uuid: 2f42e314-5e3b-4a42-8ca2-aec8521e51b3
+---
 # Building a Responsive Site Overview
 <!--TASK: Restructure article to include Content Page and Template information. Structure article with two main categories: Widget pages vs Content Pages/Templates. Use viewports language. -->
 More than half of all page views in the world come from mobile devices like phones and tablets. Any site should look as good when viewed by a mobile device as it does on a desktop. Liferay DXP can help you provide the best experience possible no matter what device visits your site.

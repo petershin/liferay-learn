@@ -1,3 +1,6 @@
+---
+uuid: 27b4b659-cde2-487f-981e-5a49c6e11390
+---
 # Introduction to Liferay Commerce
 
 Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform built from the ground up to meet the challenging and complex needs of any B2B organization. Using the enterprise foundation of Liferay DXP, Liferay Commerce has the power and flexibility of fully integrated web content management and industry leading portal capabilities. Click [here](https://learn.liferay.com/dxp/latest/en/getting-started.html) to learn more about Liferay DXP.

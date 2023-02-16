@@ -1,3 +1,6 @@
+---
+uuid: a65ac178-39f9-452e-b92d-fe4337740941
+---
 # Lists
 
 The Lists Page provides customers access to the _Wish Lists_ and _Wish List Contents_ widgets.

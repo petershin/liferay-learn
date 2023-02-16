@@ -1,3 +1,6 @@
+---
+uuid: fe17d654-83a9-4091-b7d8-aa94645dba83
+---
 # Using the Require Rule
 
 Use a _Require_ rule to make a field required based on one or more conditions. Require Rules work in association with other Rules, such as the _Show_ Rule.

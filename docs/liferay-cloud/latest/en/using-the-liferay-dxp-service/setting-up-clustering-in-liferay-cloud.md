@@ -1,3 +1,6 @@
+---
+uuid: 5ce6a26d-ef5c-4919-bf23-0567fadc595a
+---
 # Setting Up Clustering in Liferay Cloud
 
 This article outlines the steps necessary to configure clustering for your Liferay DXP instance in Liferay Cloud.

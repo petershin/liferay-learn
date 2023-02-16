@@ -1,3 +1,6 @@
+---
+uuid: 27134ffc-6d69-4466-bdd2-1688321591dc
+---
 # Understanding Virtual Instances
 
 Liferay DXP can host multiple "portals" on one installation. These are called Virtual Instances. Each Virtual Instance has completely separate data and configurations. Each is accessed via a unique domain name and for all intents and purposes, is a separate Liferay-based implementation that shares an installation with additional instances.

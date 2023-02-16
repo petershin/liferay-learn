@@ -1,3 +1,6 @@
+---
+uuid: fc5b7f3d-4051-493f-9950-1fd90a270997
+---
 # Completely Custom Configuration
 
 A configuration UI is generated automatically when you [create a configuration interface](./setting-and-accessing-configurations.html#creating-the-configuration-interface). But in some cases you want a completely custom UI for your configuration. For example, you plan to handle the configuration programmatically instead of using Liferay's Configuration Admin. Or maybe you want the flexibility of creating a completely custom UI. Here's how to do it. 

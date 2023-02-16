@@ -1,3 +1,6 @@
+---
+uuid: ac9d4543-911c-416a-aebb-141bff48c560
+---
 # Invoking Actions with MVC Portlet
 
 A portlet's [*Action phase*](../reference/portlets.md#portlet-phases) applies state changes. You can bind your portlet's action-handling methods to UI components using *portlet action URLs*. They are `portlet:actionURL` JSP tags that map the user's request to a portlet method for performing an action.

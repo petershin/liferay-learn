@@ -1,3 +1,6 @@
+---
+uuid: e5607063-8779-4bc8-b793-424f1744b72e
+---
 # Picklists API Basics
 
 You can [Create and Manage Picklists](./using-picklists.md) from the Applications menu or with REST APIs. Call the [`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) services to create and manage picklists.

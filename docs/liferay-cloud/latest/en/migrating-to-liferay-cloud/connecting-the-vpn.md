@@ -1,3 +1,6 @@
+---
+uuid: 2aa9f681-e540-4cbd-bc1e-e45d14243e25
+---
 # Stage 7: Connecting the VPN
 
 If required for your development environment, the last stage of migration is to connect your Cloud environment to your private network. This involves configuring (or updating) your VPN server and then setting up the connection on the Liferay Cloud console.

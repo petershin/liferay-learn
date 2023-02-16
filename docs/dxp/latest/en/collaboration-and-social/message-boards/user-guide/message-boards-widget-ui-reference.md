@@ -1,3 +1,6 @@
+---
+uuid: 8c5583c9-f6a2-4144-a248-ec675c85c461
+---
 # Message Boards Widget UI Reference
 
 ## Categories

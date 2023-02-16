@@ -1,3 +1,6 @@
+---
+uuid: 61ceeffc-f4d1-4ed7-b6da-b6ed011dd710
+---
 # Enabling User Personalization of Widget Pages
 
 Administrators can designate some or all of the sections (rows and columns of the page layout) of a Widget Page as customizable for site members. Page customizations are only visible to the user who made the customizations. The steps below cover these topics:

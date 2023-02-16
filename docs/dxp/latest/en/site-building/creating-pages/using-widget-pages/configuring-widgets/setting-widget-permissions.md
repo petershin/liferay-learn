@@ -1,3 +1,6 @@
+---
+uuid: b9eead1c-5b9a-4c1c-8fdf-7e69598ccb13
+---
 # Setting Widget Permissions
 
 All of Liferay's widgets support Liferay DXP robust, fine-grained permissions system. Some higher level permissions can be configured in the permissions tab of the widget's configuration dialog box. You can grant Roles permission to:

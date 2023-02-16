@@ -1,8 +1,9 @@
 ---
 toc:
-- ./multi-factor-authentication/using-multi-factor-authentication.md
-- ./multi-factor-authentication/multi-factor-authentication-checkers.md
-- ./multi-factor-authentication/fast-identity-online-2.md
+  - ./multi-factor-authentication/using-multi-factor-authentication.md
+  - ./multi-factor-authentication/multi-factor-authentication-checkers.md
+  - ./multi-factor-authentication/fast-identity-online-2.md
+uuid: 43faeea6-c18d-4c09-9928-534f43c2d852
 ---
 # Multi-Factor Authentication
 

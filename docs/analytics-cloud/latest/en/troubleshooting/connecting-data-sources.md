@@ -1,3 +1,6 @@
+---
+uuid: 83679f16-fcde-44fb-8f26-138e6743f4fe
+---
 # Connecting Data Sources
 
 Misconfigured environments or data sources can prevent or disrupt access to Liferay DXP data sources. Here's how to troubleshoot DXP data source issues.

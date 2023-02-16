@@ -1,3 +1,6 @@
+---
+uuid: 8cbc471e-0e49-46d0-83eb-43bb7f76fb71
+---
 # Example: Removing Intermediate Journal Article Versions
 
 These instructions and code samples demonstrate removing intermediate Journal Article versions. In the [script console](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md), you can remove unneeded object versions by executing Java or Groovy code.

@@ -1,3 +1,6 @@
+---
+uuid: f18c8ee5-1b73-4b7b-a801-ff03367d3ecc
+---
 # 7.3 Breaking Changes
 
 This document presents a chronological list of changes that break existing functionality, APIs, or contracts with third party Liferay developers or users. We try our best to minimize these disruptions, but sometimes they are unavoidable.

@@ -1,3 +1,6 @@
+---
+uuid: 90e51a81-18ae-42b7-aa08-e802b6618597
+---
 # Configuring Hreflang Meta Data
 
 Hreflang tags are HTML attributes used to identify the language and geographic region targeted by alternative versions of a Site Page. In some cases, these attributes can help search engines serve the correct version of a Page to users and contribute to SEO. By default, Liferay DXP populates Page hreflang meta data with all available languages in the Site.

@@ -1,3 +1,6 @@
+---
+uuid: 90269336-ec82-4a38-8c0e-0eaeccf73cb6
+---
 # Creating Form Templates
 
 Form Templates control how the data entry form appears for a data definition. To create a new Form Template,

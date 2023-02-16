@@ -1,3 +1,6 @@
+---
+uuid: a377dc50-ffcb-4414-993c-e6652bda455a
+---
 # Downloading Apps
 
 When you purchase an app via the [Liferay Marketplace website](https://web.liferay.com/marketplace), you can download the app via its receipt or your Liferay.com account. Each Marketplace app is distributed as an LPKG package (`.lpkg` file). The LPKG contains Marketplace metadata and the files the app needs to run.

@@ -1,3 +1,6 @@
+---
+uuid: 17dfab4d-3c5f-4001-8a65-38a34170aa61
+---
 # Permissions Framework Integration
 
 {bdg-secondary}`Available Liferay 7.4+`

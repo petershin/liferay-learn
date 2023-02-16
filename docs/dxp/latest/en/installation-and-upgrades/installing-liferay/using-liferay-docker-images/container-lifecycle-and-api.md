@@ -1,3 +1,6 @@
+---
+uuid: 9c32fff4-b91e-426f-b893-9948928cbab3
+---
 # Container Lifecycle and API
 
 At a high level, the container starts Tomcat with Liferay deployed on it. Additionally, however, the container entry point provides an API for executing these use cases:

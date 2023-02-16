@@ -1,7 +1,8 @@
 ---
 toc:
-- ./layouts/designing-object-layouts.md
-- ./layouts/adding-categorization-to-fields-tabs.md
+  - ./layouts/designing-object-layouts.md
+  - ./layouts/adding-categorization-to-fields-tabs.md
+uuid: 58e2dabf-bba1-4ca3-86bc-ac41df5e31e9
 ---
 # Layouts
 

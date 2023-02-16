@@ -1,3 +1,6 @@
+---
+uuid: 45d54720-7041-4f76-99d4-ee047db20d7c
+---
 # What is Liferay Workspace? 
 
 Liferay Workspace is a set of folders and Gradle scripts that represents the Liferay-opinionated way of handling a full development life cycle:

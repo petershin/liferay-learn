@@ -1,3 +1,6 @@
+---
+uuid: c07d8cff-6631-422b-a824-52ad0df6d049
+---
 # Adding Addresses to an Account
 
 This article documents how to update an account's billing and shipping addresses using either the _Account Management_ widget or the _Control Panel_.

@@ -1,3 +1,6 @@
+---
+uuid: 7884dc32-865a-4652-a98c-13a6bc55c05c
+---
 # Liferay Commerce Fix Delivery Method
 
 > Subscription Required

@@ -1,3 +1,6 @@
+---
+uuid: 53339b3a-4391-4aeb-b133-0e60220029e5
+---
 # Using the Flat Rate Shipping Method
 
 Buyers can choose a flat rate shipping option to ship any product. By creating multiple flat rate options, you can give customers choices of cost, speed, or security.

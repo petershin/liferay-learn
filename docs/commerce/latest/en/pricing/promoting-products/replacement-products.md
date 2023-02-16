@@ -1,3 +1,6 @@
+---
+uuid: 69358ea2-9c07-4b02-bd45-dbd729effa3b
+---
 # Replacement Products
 
 Products undergo a life cycle after which they reach end-of-life (EOL). Some products are discontinued completely while others can have a replacement, to bring newer and better variants to the buyers. Using *Replacement Products*, you can direct buyers to the replacement and curb potential loss.

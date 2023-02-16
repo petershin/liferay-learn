@@ -1,3 +1,6 @@
+---
+uuid: 1cb72f4e-3406-4a9f-9583-33ab4dd7b17d
+---
 # Implementing an Item Selector
 
 Item selectors are pop-up dialogs for selecting assets, such as documents, videos, or users.

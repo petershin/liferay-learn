@@ -1,3 +1,6 @@
+---
+uuid: ee4ef207-d58a-4840-af34-f74fb4a031dc
+---
 # Filtering Search Results
 
 ```{note}

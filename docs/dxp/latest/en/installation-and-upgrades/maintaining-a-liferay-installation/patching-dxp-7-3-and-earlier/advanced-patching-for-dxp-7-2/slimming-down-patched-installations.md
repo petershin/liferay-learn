@@ -1,3 +1,6 @@
+---
+uuid: 43932285-5780-45e0-8e81-a7043de356df
+---
 # Slimming Down Patched Installations
 
 > Subscribers

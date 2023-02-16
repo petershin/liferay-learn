@@ -1,3 +1,6 @@
+---
+uuid: 394bfac1-4f63-4799-bb0e-46e9c988512f
+---
 # Using the Fragments Editor
 
 Liferay DXP includes a built-in [editor](../reference/fragments/page-fragment-editor-interface-reference.md) for developing Content Page Fragments. To access the editor, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*. From here, you can view, manage, and create Fragments and  Fragment Sets.

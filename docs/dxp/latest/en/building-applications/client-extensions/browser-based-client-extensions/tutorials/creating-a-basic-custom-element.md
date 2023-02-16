@@ -1,3 +1,6 @@
+---
+uuid: fdced878-aea0-40b8-9959-828e9787d373
+---
 # Creating a Basic Custom Element
 
 {bdg-secondary}`Available Liferay 7.4+`

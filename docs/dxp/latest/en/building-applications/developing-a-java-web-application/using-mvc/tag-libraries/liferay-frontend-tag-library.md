@@ -1,11 +1,12 @@
 ---
 toc:
-- ./liferay-frontend-tag-library/liferay-frontend-add-menu.md
-- ./liferay-frontend-tag-library/liferay-frontend-cards.md
-- ./liferay-frontend-tag-library/liferay-frontend-info-bar.md
-- ./liferay-frontend-tag-library/liferay-frontend-management-bar.md
-- ./liferay-frontend-tag-library/including-actions-in-the-management-bar.md
-- ./liferay-frontend-tag-library/disabling-the-management-bar.md
+  - ./liferay-frontend-tag-library/liferay-frontend-add-menu.md
+  - ./liferay-frontend-tag-library/liferay-frontend-cards.md
+  - ./liferay-frontend-tag-library/liferay-frontend-info-bar.md
+  - ./liferay-frontend-tag-library/liferay-frontend-management-bar.md
+  - ./liferay-frontend-tag-library/including-actions-in-the-management-bar.md
+  - ./liferay-frontend-tag-library/disabling-the-management-bar.md
+uuid: b077083c-6519-4399-9ba9-e770e28b0ce2
 ---
 # Liferay Frontend Tag Library
 

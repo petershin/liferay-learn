@@ -1,3 +1,6 @@
+---
+uuid: f493139b-1b71-4983-8751-4d48ea127256
+---
 # Liferay Home
 
 *Liferay Home* is the folder from which Liferay DXP/Portal launches applications, reads and applies configurations, loads JAR files, generates logs, and more.

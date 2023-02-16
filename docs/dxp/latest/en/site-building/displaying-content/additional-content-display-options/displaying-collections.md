@@ -1,3 +1,6 @@
+---
+uuid: 54108c82-b29d-4dcc-8734-ea3d941f4328
+---
 # Displaying Collections
 
 {bdg-secondary}`Available Liferay Portal 7.4 GA6+, DXP 7.3 GA1+`

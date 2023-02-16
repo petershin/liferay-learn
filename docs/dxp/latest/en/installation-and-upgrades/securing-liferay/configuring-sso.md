@@ -1,11 +1,12 @@
 ---
 toc:
-- ./configuring-sso/token-based-authentication.md
-- ./configuring-sso/authenticating-with-saml.md
-- ./configuring-sso/using-openam.md
-- ./configuring-sso/using-openid-connect.md
-- ./configuring-sso/authenticating-with-cas.md
-- ./configuring-sso/authenticating-with-kerberos.md
+  - ./configuring-sso/token-based-authentication.md
+  - ./configuring-sso/authenticating-with-saml.md
+  - ./configuring-sso/using-openam.md
+  - ./configuring-sso/using-openid-connect.md
+  - ./configuring-sso/authenticating-with-cas.md
+  - ./configuring-sso/authenticating-with-kerberos.md
+uuid: ac3296b7-70b3-47db-b0fd-e57a1b1280fb
 ---
 # Configuring Single Sign-On
 

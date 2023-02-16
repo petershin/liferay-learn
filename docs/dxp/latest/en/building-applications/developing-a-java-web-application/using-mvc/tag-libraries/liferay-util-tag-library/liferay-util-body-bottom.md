@@ -1,3 +1,6 @@
+---
+uuid: 7cb51055-eed6-48ae-90dd-41a0d0edd10d
+---
 # Using Liferay Util Body Bottom
 
 The body bottom tag is not a self-closing tag. It lets you add additional HTML or scripts to the bottom of the `body` tag. content placed between the opening and closing of this tag is passed to the [body_bottom.jsp](https://github.com/liferay/liferay-portal/blob/7.2.x/portal-web/docroot/html/common/themes/body_bottom.jsp#L26-L31) and outputs in this JSP. 

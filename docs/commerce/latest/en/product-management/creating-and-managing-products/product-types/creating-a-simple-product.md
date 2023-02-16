@@ -1,3 +1,6 @@
+---
+uuid: d611a7fa-2ba9-479b-a5e2-f07ce8ab15e5
+---
 # Creating a Simple Product
 
 A Simple Product is any physical product for which inventory is tracked. Products are added to a store's catalog and include a name and description. Products can be further defined by applying product options, generating SKUs, images, specifications, and categorizations.

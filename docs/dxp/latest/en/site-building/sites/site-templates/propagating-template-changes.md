@@ -1,3 +1,6 @@
+---
+uuid: 90b72e72-7d53-4a6c-b39c-e50b46174004
+---
 # Propagating Template Changes
 
 When Site Template propagation is enabled, you can make changes to the template's Pages and automatically propagate those changes to connected Sites. However, making changes to a Site Page inherited from a template prevents the propagation of template changes to that Page. To restore propagation for the Page, you must discard changes made to it in the Site. If you've edited multiple inherited Pages and you'd like to restore propagation from the Site Template, you must reset changes for each one individually.

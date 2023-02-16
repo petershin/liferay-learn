@@ -1,3 +1,6 @@
+---
+uuid: 3caf47dd-49d5-477c-8334-7a985adc57b2
+---
 # Creating a Promotion
 
 You can follow the steps below to create a *Promotion* that reduces the price of all products in the *Catalog* by 20% on the 4th of July. All *Accounts*, *Account Groups*, *Channels*, and *Order Types* are eligible for this promotion.

@@ -1,3 +1,6 @@
+---
+uuid: 8136d085-b98f-4c40-87ef-3a9d1e2dbebe
+---
 # Bundling Independent UI Resources via Theme Contributors
 
 Theme contributors are modules that contain CSS and JavaScript resources and apply them to every page. They are independent from specific themes, and you can configure them to override specific styles from themes or even each other. Use [themelets](./bundling-and-installing-resources-into-your-theme-via-themelets.md) instead if you want to include separate UI resources on a page and include them in specific themes.

@@ -1,3 +1,6 @@
+---
+uuid: 37ef6012-3c3a-4c1e-9c6e-aee0a893784d
+---
 # Individuals Dashboard
 
 The Individuals dashboard provides a broad range of analytics data about your visitors and how they interact with your Site.

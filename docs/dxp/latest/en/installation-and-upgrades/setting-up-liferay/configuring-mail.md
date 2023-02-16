@@ -1,7 +1,8 @@
 ---
 toc:
-- ./configuring-mail/configuring-default-email-senders.md
-- ./configuring-mail/alternative-email-configuration-methods.md
+  - ./configuring-mail/configuring-default-email-senders.md
+  - ./configuring-mail/alternative-email-configuration-methods.md
+uuid: 072db382-871c-474e-bdf9-ddf2a541ba30
 ---
 # Configuring Mail
 

@@ -1,3 +1,6 @@
+---
+uuid: 77433c79-7e0f-484e-9c6d-0065fb08a548
+---
 # Creating Product Display Pages
 
 With Liferay Commerce, you can link individual store products with Site pages to create dedicated display pages for each product. Quickly design layouts using out-of-the-box or custom widgets and fragments to display product details.

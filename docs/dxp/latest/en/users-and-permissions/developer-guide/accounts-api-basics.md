@@ -1,3 +1,6 @@
+---
+uuid: e1ce4744-5752-45b8-821c-a43bddfd2e48
+---
 # Accounts API Basics
 
 > Available: Liferay DXP/Portal 7.4+

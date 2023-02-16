@@ -1,3 +1,6 @@
+---
+uuid: 1ee2361d-9abc-4416-997e-16a80bdd9aa1
+---
 # Upgrading to a High Availability Subscription
 
 In many cases, the standard subscription plan for Liferay Cloud is sufficient to ensure quality performance for a live project. As your needs change, you may need to upgrade your subscription plan to increase the resources allocated to your environments.

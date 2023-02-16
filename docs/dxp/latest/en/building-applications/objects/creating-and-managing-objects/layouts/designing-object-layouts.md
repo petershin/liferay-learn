@@ -1,3 +1,6 @@
+---
+uuid: 5a11638f-6897-4900-ab14-4a38a25cff46
+---
 # Designing Object Layouts
 
 {bdg-secondary}`For Liferay 7.4 U31+/GA31+`

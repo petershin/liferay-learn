@@ -1,3 +1,6 @@
+---
+uuid: e1c9c81a-e2a8-492a-b61e-f3eb7b4c6d52
+---
 # Configuring Documents and Media Previews
 
 By default, Liferay DXP uses [PDFBox](https://pdfbox.apache.org) to generate previews for files added to the Document Library. This is because PDFBox is the only 100% Java-based tool that can be distributed with DXP.

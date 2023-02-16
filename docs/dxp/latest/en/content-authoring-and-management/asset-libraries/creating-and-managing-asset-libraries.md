@@ -1,3 +1,6 @@
+---
+uuid: 496aabce-cd8b-4877-8319-e41aa125c812
+---
 # Creating and Managing Asset Libraries
 
 > Available: Liferay DXP/Portal 7.3+

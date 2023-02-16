@@ -1,3 +1,6 @@
+---
+uuid: dc1f2a74-8d1b-475f-ba5e-a4d98d9f25c8
+---
 # Using a Search Blueprint on a Search Page
 
 By default, a search page does not have a [search blueprint](./understanding-search-blueprints.md) associated with it. A blueprint must be applied to a [search page](../../search-pages-and-widgets/working-with-search-pages.md) to affect the Liferay search experience. If a site has multiple search pages, follow the steps below on each page that should use a blueprint, as each must be configured separately. You can use different blueprints on each page, if desired.

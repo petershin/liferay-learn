@@ -1,3 +1,6 @@
+---
+uuid: 665b7f45-4148-469f-8f93-571c38d4f168
+---
 # Auto Tagging Assets
 
 You can manually tag most assets, such as Message Boards, Blogs, Documents, Images, and Web Content Articles. You can tag certain assets, however, automatically when they are created. Tags applied automatically are in only English.

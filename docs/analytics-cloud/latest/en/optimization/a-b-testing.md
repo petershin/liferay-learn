@@ -1,3 +1,6 @@
+---
+uuid: 551f4c6e-7cc4-4b94-b46f-681f15d265a0
+---
 # A/B Testing
 
 A/B Testing evaluates the effectiveness of Content Pages by testing multiple versions/layouts of the Page at once. This is done by creating Page Variants of the original Page, testing the Page with a goal (e.g., clicks), and publishing the most effective Variant. You can learn more about creating an A/B test and configuring it for a Content Page in Liferay DXP's [A/B Testing documentation](https://learn.liferay.com/dxp/latest/en/site-building/optimizing-sites/ab-testing/ab-testing.html).

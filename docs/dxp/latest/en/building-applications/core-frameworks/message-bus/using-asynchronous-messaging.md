@@ -1,3 +1,6 @@
+---
+uuid: b4190d14-da78-4536-9fe7-e6e73dc53b9d
+---
 # Using Asynchronous Messaging
 
 Message Bus's asynchronous option provides "fire and forget" behavior; send a message and continue processing without waiting for a response.

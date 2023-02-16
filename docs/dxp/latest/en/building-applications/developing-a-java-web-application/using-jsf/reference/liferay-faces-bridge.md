@@ -1,3 +1,6 @@
+---
+uuid: 863eae7c-f289-40bd-938d-6bfd3047ee69
+---
 # Liferay Faces Bridge
 
 Liferay Faces Bridge enables you to deploy JSF web apps as portlets without writing portlet-specific code. It also contains innovative features that make it possible to leverage the power of JSF 2.x inside a portlet application.

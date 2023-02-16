@@ -1,11 +1,12 @@
 ---
 toc:
-- ./configuring-shipping-methods/using-the-fedex-shipping-method.md
-- ./configuring-shipping-methods/using-the-flat-rate-shipping-method.md
-- ./configuring-shipping-methods/using-the-variable-rate-shipping-method.md
-- ./configuring-shipping-methods/applying-shipping-method-restrictions.md
-- ./configuring-shipping-methods/measurement-units.md
-- ./configuring-shipping-methods/shipping-method-reference.md
+  - ./configuring-shipping-methods/using-the-fedex-shipping-method.md
+  - ./configuring-shipping-methods/using-the-flat-rate-shipping-method.md
+  - ./configuring-shipping-methods/using-the-variable-rate-shipping-method.md
+  - ./configuring-shipping-methods/applying-shipping-method-restrictions.md
+  - ./configuring-shipping-methods/measurement-units.md
+  - ./configuring-shipping-methods/shipping-method-reference.md
+uuid: 7ea82dcc-326a-460f-8276-a6dd36ebc75d
 ---
 # Configuring Shipping Methods
 

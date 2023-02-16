@@ -1,3 +1,6 @@
+---
+uuid: 9c605bf4-a130-4723-93e3-04c2f725098b
+---
 # Managing Elements
 
 To create new Elements, click the Add (![Add](../../../../images/icon-add.png)) button. See [Creating Elements](./creating-elements.md) for more details.

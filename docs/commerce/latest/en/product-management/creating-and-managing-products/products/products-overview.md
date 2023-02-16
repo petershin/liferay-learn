@@ -1,3 +1,6 @@
+---
+uuid: 73654a1e-ea9b-45d3-bc12-a8e57a1afac3
+---
 # Products Overview
 
 Liferay Commerce provides three out-of-the-box Product types: [Simple](../product-types/creating-a-simple-product.md), [Grouped](../product-types/creating-a-simple-product.md), and [Virtual](../product-types/creating-a-simple-product.md). Each Product type is stored in a [Catalog](../../catalogs/creating-a-new-catalog.md) and assigned a default SKU at creation. By default, all Products are visible in a Catalog and across all Channels. However, you can control Product visibility by determining which Channels or Accounts are eligible to view it. After creation, each Product can also be assigned multiple [SKUs](./creating-skus-for-product-variants.md) to represent Product variants.

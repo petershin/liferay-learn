@@ -1,3 +1,6 @@
+---
+uuid: 7674a634-411c-4e00-99ea-0eaa927bc2cc
+---
 # Creating A Path File
 
 ## Test Scenario

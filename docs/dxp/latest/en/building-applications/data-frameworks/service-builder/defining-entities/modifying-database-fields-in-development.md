@@ -1,3 +1,6 @@
+---
+uuid: c4270633-fe9a-4998-8e5b-56ab635206bf
+---
 # Modifying Database Fields in Development
 
 As you develop an application, you might need to add fields to your database. This is a normal process of iterative development: you get an idea for a new feature, or it's suggested to you, and that feature requires additional data in the database. **New fields added to `service.xml` are not automatically added to the database.** To add the fields, you must do one of two things: 

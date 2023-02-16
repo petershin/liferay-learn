@@ -1,3 +1,6 @@
+---
+uuid: c5e81d72-7ffb-489a-b710-eceb42f4e0f0
+---
 # Maintenance Mode and Deprecations in 7.2
 
 With each new DXP release, a feature may not warrant continued enhancements or may become obsolete. Stopping enhancements for a feature puts it in *Maintenance Mode*.

@@ -1,3 +1,6 @@
+---
+uuid: 0683bfca-d23c-44ff-97ae-a7762a414350
+---
 # OSGi and Modularity
 
 Modularity makes writing software, especially as a team, fun! Here are some benefits to modular development on Liferay:

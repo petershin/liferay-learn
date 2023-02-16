@@ -1,3 +1,6 @@
+---
+uuid: 0bf8520a-45b6-4c15-bae8-7893fd7dbc39
+---
 # Enabling Assets
 
 Many of Liferay's applications (e.g. Blogs, Documents and Media, Message Boards, etc.) are asset-enabled out of the box. You can publish assets with the [Asset Publisher widget](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) or even create [Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md). With the help of [Service Builder](../service-builder.md), you can asset-enable your custom application. See the sample project below to learn how.

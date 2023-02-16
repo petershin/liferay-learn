@@ -1,3 +1,6 @@
+---
+uuid: 96e2eee9-a25b-4ca1-b210-dff9c28569d4
+---
 # Email Settings
 
 The Email configuration is where you configure email notifications at the Virtual Instance scope. Open the Control Panel and navigate to *Configuration* &rarr; *Instance Settings* and select the *Email* category under the PLATFORM section. The Email configuration contains six entries:

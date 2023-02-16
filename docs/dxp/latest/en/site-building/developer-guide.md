@@ -1,7 +1,8 @@
 ---
 toc:
-- ./developer-guide/developing-page-fragments.md
-- ./developer-guide/reference.md
+  - ./developer-guide/developing-page-fragments.md
+  - ./developer-guide/reference.md
+uuid: eba4e055-8176-45d6-bdb0-ffdc71d1fa05
 ---
 # Developer Guide
 

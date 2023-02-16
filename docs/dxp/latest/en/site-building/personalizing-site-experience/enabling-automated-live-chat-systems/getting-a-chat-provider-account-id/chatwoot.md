@@ -1,3 +1,6 @@
+---
+uuid: 9825aba1-35cd-43a8-a8ea-893a99e20fe3
+---
 # Chatwoot
 
 [Chatwoot](https://www.chatwoot.com/) is an open-source customer communication platform. This article documents how to locate your Chatwoot account ID in order to [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.

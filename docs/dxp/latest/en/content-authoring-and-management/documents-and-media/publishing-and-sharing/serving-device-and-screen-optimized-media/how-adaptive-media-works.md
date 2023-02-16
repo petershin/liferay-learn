@@ -1,3 +1,6 @@
+---
+uuid: 516dc7a3-dac5-411e-96f6-0abc8e916604
+---
 # How Adaptive Media Works
 <!--TASK: Use as section intro, Adaptive Media. -->
 Media providers must consider differences between devices (phones, laptops, tablets, etc.) when delivering content; not just their screen sizes but also their bandwidth and processing capabilities. Adaptive Media can control image quality and dynamically adjusts uploaded media to best fit the screen being used.

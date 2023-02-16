@@ -1,3 +1,6 @@
+---
+uuid: 919ea794-c5a8-486d-b1df-f91d13bc8e1a
+---
 # Using Page Comments
 
 When building Content Pages, you and your team can collaborate using  Liferay's Page Comments feature. While Comments are enabled out-of-the-box in Liferay DXP 7.3+, they are disabled by default in Liferay DXP 7.2. See [Enabling Comments](#enabling-comments) to learn more.

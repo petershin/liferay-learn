@@ -1,7 +1,8 @@
 ---
 toc:
-- ./style-books/using-a-style-book-to-standardize-site-appearance.md
-- ./style-books/developer-guide.md
+  - ./style-books/using-a-style-book-to-standardize-site-appearance.md
+  - ./style-books/developer-guide.md
+uuid: bee0cd20-1630-41b4-ab3d-6e749149c4d5
 ---
 # Style Books
 

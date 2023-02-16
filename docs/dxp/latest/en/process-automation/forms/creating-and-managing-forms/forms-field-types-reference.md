@@ -1,3 +1,6 @@
+---
+uuid: 688e2663-172f-4285-a138-e937991470ae
+---
 # Forms Field Types Reference
 
 The Liferay Forms application contains lots of field types and elements to add to your forms. To discover the available elements,

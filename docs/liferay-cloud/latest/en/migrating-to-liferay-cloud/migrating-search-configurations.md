@@ -1,3 +1,6 @@
+---
+uuid: c1d63ad1-c9f2-4025-ba63-ef36731b6fc3
+---
 # Stage 6: Migrating Search Configurations
 
 Now that your web server configurations are deployed to Liferay Cloud, the next stage of migration is to migrate your search configurations. This involves migrating your search engine to Elasticsearch (if needed), and deploying all of your Elasticsearch configuration files and plugins to your Liferay Cloud environments.

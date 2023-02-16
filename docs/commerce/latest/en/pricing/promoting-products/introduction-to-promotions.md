@@ -1,3 +1,6 @@
+---
+uuid: c582b721-c48a-41bb-a76a-dfe0257ce31d
+---
 # Introduction to Promotions
 
 You can create *Promotions* in Liferay to offer promotional pricing to all customers or a set of customers. A Promotion visually shows the difference between a product's list price and its promotion price. This is useful to highlight the discount a customer is receiving and to support multiple prices for individuals or groups of customers.

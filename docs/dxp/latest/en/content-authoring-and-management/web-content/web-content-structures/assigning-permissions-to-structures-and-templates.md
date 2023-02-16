@@ -1,3 +1,6 @@
+---
+uuid: 54b92a15-9854-49d9-bef3-ff6e74f53c9b
+---
 # Assigning Permissions to Web Content Structures and Templates
 
 Structures and Web Content Templates provide direct access to Liferay's API. To avoid unauthorized or unintended access to Liferay DXP functionality, you should configure permissions for Structures and Web Content Templates.

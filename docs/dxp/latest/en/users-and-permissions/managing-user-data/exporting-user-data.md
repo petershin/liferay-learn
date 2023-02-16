@@ -1,3 +1,6 @@
+---
+uuid: 40327c08-ac25-41dd-b79a-465857f3bcfe
+---
 # Exporting User Data
 
 One of the General Data Protection Regulation's (GDPR) tenets is that Users have a right to _data portability_.

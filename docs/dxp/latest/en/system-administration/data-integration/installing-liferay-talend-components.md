@@ -1,3 +1,6 @@
+---
+uuid: d9c2bf46-3dc8-45df-a382-31243afd00fc
+---
 # Installing Liferay Talend Components
 
 {bdg-warning}`Unsupported`

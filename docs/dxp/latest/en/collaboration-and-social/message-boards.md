@@ -1,7 +1,8 @@
 ---
 toc:
-- ./message-boards/user-guide.md
-- ./message-boards/developer-guide.md
+  - ./message-boards/user-guide.md
+  - ./message-boards/developer-guide.md
+uuid: fcdb1a27-c25a-417d-8a2c-bf4d2a15aa45
 ---
 # Message Boards
 

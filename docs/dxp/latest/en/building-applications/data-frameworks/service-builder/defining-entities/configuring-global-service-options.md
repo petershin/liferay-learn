@@ -1,3 +1,6 @@
+---
+uuid: 4073b2f5-ecb6-44d9-80e1-5e4cabf8ce91
+---
 # Configuring Global Service Options
 
 A service's global options apply to all its entities. Here are the options:

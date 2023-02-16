@@ -1,3 +1,6 @@
+---
+uuid: 0800d6b6-65f3-403c-b9d0-2986f95239e8
+---
 # Configuring Persistent File Storage Volumes
 
 Administrators can configure the volumes for their services in Liferay Cloud depending on their deployment type (`Deployment` or `StatefulSet`). Volumes can be stored either with persistent shared storage (NFS) or with dedicated storage (SSD), depending on the deployment type. This article documents how to configure volumes via a service's `LCP.json` file. See [Understanding Deployment Types](./understanding-deployment-types.md) for more information on deployment types.

@@ -1,3 +1,6 @@
+---
+uuid: 5e95a054-5432-4645-aafe-b57d6d9c0220
+---
 # Navigating DXP
 
 Liferay DXP's out-of-the-box navigation is organized into three major areas: _Personal Menu_, _Global Menu_, and _Site Menu_.

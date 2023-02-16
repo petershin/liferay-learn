@@ -1,3 +1,6 @@
+---
+uuid: 3c74d619-bfc3-4747-88d1-a993b4ff48ac
+---
 # Notification Template Variables Reference Guide
 
 When creating notification templates, you can use variables to populate email fields dynamically with data from the triggering channel event. Select a notification template *Type* to view its variables. This determines which channel events trigger the notification.

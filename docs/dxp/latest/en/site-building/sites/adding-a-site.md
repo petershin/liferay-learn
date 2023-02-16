@@ -1,3 +1,6 @@
+---
+uuid: 33c781c1-c24e-44fe-8efc-90c0327abc3f
+---
 # Adding a Site
 
 Sites are customizable spaces for building personalized digital experiences. Follow these steps to create a basic Site in your Liferay instance:

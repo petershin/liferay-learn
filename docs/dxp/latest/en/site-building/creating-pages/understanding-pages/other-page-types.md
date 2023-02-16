@@ -1,3 +1,6 @@
+---
+uuid: 688335ec-a749-4c33-a940-0b19dd493a9f
+---
 # Other Page Types
 
 [Content Pages](../using-content-pages.md) are the most commonly used page type, but other page types are available for certain use cases.

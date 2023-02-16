@@ -1,3 +1,6 @@
+---
+uuid: c38833db-0ea1-4875-9554-ae470fb66f0f
+---
 # Creating Mobile Device Rules
 
 > Mobile Device Rules is available for Liferay 7.2 and prior only because Liferay Mobile Device Detection Lite is deprecated in 7.3.

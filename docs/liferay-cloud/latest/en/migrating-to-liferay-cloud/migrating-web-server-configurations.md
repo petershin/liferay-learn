@@ -1,3 +1,6 @@
+---
+uuid: 0681da6b-9aa6-4143-a616-e2f23dbb9930
+---
 # Stage 5: Migrating Web Server Configurations
 
 Now that your Liferay configurations and customizations are deployed to Liferay Cloud, the next stage is to migrate your web server configurations. This involves migrating your web server to Nginx (if needed), and deploying all of your Nginx configuration files and customizations (shell scripts and static content) to your Liferay Cloud environments.

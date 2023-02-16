@@ -1,3 +1,6 @@
+---
+uuid: 50b81649-004c-4a44-aab7-3378907b3136
+---
 # Deploying WARs (WAB Generator)
 
 You can create applications as Java EE-style Web Application ARchive (WAR) artifacts or as Java ARchive (JAR) OSGi bundle artifacts. Bean Portlets, PortletMVC4Spring Portlets, and JSF Portlets must be packaged as WARs because their frameworks expect a WAR layout and require Java EE resources such as the `WEB-INF/web.xml` descriptor.

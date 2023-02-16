@@ -1,3 +1,6 @@
+---
+uuid: 8a5e8c61-c8ea-487e-8915-76250452165d
+---
 # Using Liferay Util Whitespace Remover
 
 The whitespace remover tag removes line breaks and tabs from code blocks included between the opening and closing of the tag. Below is an example configuration for the `<liferay-util:whitespace-remover>` tag:

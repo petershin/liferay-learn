@@ -1,3 +1,6 @@
+---
+uuid: 74755e99-2693-4dfb-94d7-2ccfdd317bc9
+---
 # Configuration
 
 In order to give test writers easy access to commonly used functions, paths, or macros, Poshi resources were created to store existing Poshi files as dependencies. These resources can be loaded in a Poshi project as a Gradle dependency through the Poshi Runner Resources Gradle Plugin and can be used apart from the local Poshi files on the file system.

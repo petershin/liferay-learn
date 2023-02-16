@@ -1,3 +1,6 @@
+---
+uuid: 3de2268a-455a-4b8f-be7b-284ea1c1d267
+---
 # Creating Objects
 
 {bdg-secondary}`Available Liferay 7.4+`

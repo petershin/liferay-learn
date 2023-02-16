@@ -1,3 +1,6 @@
+---
+uuid: ca35aef2-9175-4567-a1b7-a37762d13bea
+---
 # Managing Subscriptions
 
 Subscriptions are a special type of recurring order and are managed differently from [regular orders](../orders/processing-an-order.md). All orders, including Subscriptions, are accepted and processed in the [Orders Menu](../orders/orders-menu-reference-guide.md). However, once a *Subscription* order has been accepted, it is displayed in the [Subscriptions menu](./subscription-administration-reference-guide.md).

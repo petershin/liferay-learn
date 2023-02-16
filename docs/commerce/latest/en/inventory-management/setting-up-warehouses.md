@@ -1,3 +1,6 @@
+---
+uuid: 13fbac2c-d863-4d3b-b480-e0e09bb7cfe5
+---
 # Setting Up Warehouses
 
 Warehouses represent physical locations where you store product inventory. To activate a warehouse, you must set its geolocation. The Fedex shipping method uses this geolocation to calculate shipping costs. Read [Using the Fedex Shipping Method](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md) for more information. 

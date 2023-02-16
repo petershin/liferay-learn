@@ -1,3 +1,6 @@
+---
+uuid: fe7aed42-f846-4664-804e-26a3cbb0ffed
+---
 # Stage 4: Migrating DXP Configurations and Customizations
 
 Now that your database and document library are applied to your Liferay Cloud environment, the next stage of migration is to migrate your on-premises Liferay installation's configurations and custom code. This involves organizing property files, OSGi configurations, and custom modules, themes, and WAR files to the appropriate folders before deployment.

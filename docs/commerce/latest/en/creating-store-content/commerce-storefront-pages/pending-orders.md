@@ -1,3 +1,6 @@
+---
+uuid: 9b6dcbc5-90d0-4604-bbb1-cbca0c74d32c
+---
 # Pending Orders
 
 The Pending Orders page is a page where order managers can view all incomplete orders associated with an account; an incomplete order contains items in the cart but has not been through the checkout process. In addition, the Pending Orders page contains the _Add Order_ button to allow order managers to create multiple orders at the same time.

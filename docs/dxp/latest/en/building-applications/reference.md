@@ -1,7 +1,8 @@
 ---
 toc:
-- ./reference/deploying-wars-wab-generator.md
-- ./reference/jars-excluded-from-wabs.md
+  - ./reference/deploying-wars-wab-generator.md
+  - ./reference/jars-excluded-from-wabs.md
+uuid: 08200cb0-3359-46b9-9644-1b20bc683fd1
 ---
 # Reference
 

@@ -1,3 +1,6 @@
+---
+uuid: c87c6277-5ccb-48a9-acae-314e8d503925
+---
 # Configuring Product Visibility Using Channels
 
 By default, Products are visible across all channels, but visibility can be limited to specific channels.

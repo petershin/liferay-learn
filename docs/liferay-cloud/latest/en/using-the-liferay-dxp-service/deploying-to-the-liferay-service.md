@@ -1,3 +1,6 @@
+---
+uuid: 5cc0862d-ae06-4a61-ac47-953fd1e914c3
+---
 # Deploying to the Liferay Service
 
 As with other services, deploying custom additions involves adding your configurations or files to the appropriate locations in your Git repository. However, deploying the Liferay service slightly differs from deploying other services.

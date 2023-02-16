@@ -1,3 +1,6 @@
+---
+uuid: 2c706859-b73d-41ec-a5a2-b6ca6d3c367c
+---
 # Command-Line Tool
 
 The CLI tool can be used to view and manage your Liferay Cloud services. Once installed, you can run `lcp --help` in your terminal to view available actions.

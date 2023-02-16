@@ -1,3 +1,6 @@
+---
+uuid: 1442acca-16ef-4fed-9c74-10c9326da8ee
+---
 # Setting a Default Widget Template
 
 You can change the widget template for individual widgets through their own configuration, however you can also configure a default widget template to apply to all widgets of a particular type. To do this, go to *Control Panel* &rarr; *System Settings*. In System Settings you can find a configuration for every widget in Liferay DXP. Widgets that support widget templates have a *Display Style Group ID* and a *Display Style* option.

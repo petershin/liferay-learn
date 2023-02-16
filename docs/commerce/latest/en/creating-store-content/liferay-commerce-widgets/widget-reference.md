@@ -1,3 +1,6 @@
+---
+uuid: 8e51f1b3-37a7-492f-bd49-d174d33265e8
+---
 # Widget Reference
 
 Widgets are building blocks you can use to add content and dynamic functionality to your Commerce Site. While Liferay DXP includes a wide variety of generic widgets, it also includes dedicated Commerce widgets that you can use to build the desired shopping experience for your customers.

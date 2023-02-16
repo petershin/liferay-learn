@@ -1,3 +1,6 @@
+---
+uuid: 27d84d36-4247-4676-b017-68ea909b808c
+---
 # Using Authentication Verifiers
 
 Authentication Verifiers authenticate remote invocations of Liferay Portal's API in a centralized and extensible way. They have two main responsibilities:

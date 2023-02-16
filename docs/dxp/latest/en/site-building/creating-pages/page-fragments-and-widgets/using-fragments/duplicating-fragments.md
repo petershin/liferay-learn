@@ -1,3 +1,6 @@
+---
+uuid: 106045b9-f08f-46d3-b2e1-81ffcdec053d
+---
 # Duplicating Fragments
 
 When building a Page or Template with Fragments, you can duplicate configured Fragments to save time. A duplicated Fragment includes the original Fragment's settings, including its mappings and other customizations.

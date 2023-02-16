@@ -1,3 +1,6 @@
+---
+uuid: db948885-2616-4756-8f8a-bdb6c4982f95
+---
 # MVC Render Command
 
 MVC Render Commands are classes that handle which page to render. They are invoked by `MVCPortlet` render URLs and requests. If your render logic is simple you can [implement all of it in your portlet class](./rendering-views-with-mvc-portlet.md). If your render logic is complex or you want clean separation between render paths, use MVC Render Commands.

@@ -1,3 +1,6 @@
+---
+uuid: 792fe30d-65cb-4c3e-8ea6-a97cde3dc4cd
+---
 # Changing Your Database Password
 
 Changing the MySQL password for your [`database` service](./database-service.md) also affects the other services that must connect to the database.

@@ -1,3 +1,6 @@
+---
+uuid: 4554a488-5db0-4353-b9d0-a9af05b41200
+---
 # Adding Custom Validations
 
 {bdg-secondary}`Available Liferay 7.4 U27+/GA27+`

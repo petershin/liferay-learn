@@ -1,3 +1,6 @@
+---
+uuid: f271b7fd-93dd-4692-acce-35d1d8ed2973
+---
 # Configuring Individual Pages
 
 You can configure individual Pages to meet your needs. All changes made in this way are scoped to the selected Page.

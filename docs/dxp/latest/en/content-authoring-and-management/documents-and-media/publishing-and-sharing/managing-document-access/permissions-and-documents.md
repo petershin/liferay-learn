@@ -1,3 +1,6 @@
+---
+uuid: 96523e51-1fed-4796-9e53-d593ac3a4fdd
+---
 # Permissions and Documents
 
 You can give permissions to an individual file, to an entire folder, or to a specific file type. See [Understanding Roles and Permissions](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) to learn more about how Roles and Permissions work in a Liferay installation.

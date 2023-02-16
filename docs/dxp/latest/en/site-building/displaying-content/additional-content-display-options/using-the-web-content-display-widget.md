@@ -1,3 +1,6 @@
+---
+uuid: a0ed0240-bce1-4e6c-97b9-bf75491b83e9
+---
 # Using the Web Content Display Widget
 
 After you create a [Web Content Article](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md), the quickest way to display it on a page is the Web Content Display widget. Once a Web 

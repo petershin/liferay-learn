@@ -1,3 +1,6 @@
+---
+uuid: 8be1370c-e992-44c5-bbf5-63c3016c54c7
+---
 # Using the Script Engine in Workflow
 
 Add Groovy scripts to [your XML workflow definition](./crafting-xml-workflow-definitions.md) to inject logic and access Liferay's Java services in your workflow. Scripts run during workflow execution.

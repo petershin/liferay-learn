@@ -1,3 +1,6 @@
+---
+uuid: 03f943b2-4ddc-429b-892b-04d286110198
+---
 # Organization Roles
 
 Liferay [Organizations](./understanding-organizations.md) provide a convenient way to implement distributed User management. With them, you can use Organization-scoped Roles to assign standard permissions to all members of an Organization, as well as assign more specialized permissions to Users based on their specific responsibilities. Doing this can save you time and help ensure that your portal design corresponds to your real-world hierarchy.

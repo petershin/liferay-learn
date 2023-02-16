@@ -1,3 +1,6 @@
+---
+uuid: 39ecfecd-cca1-48e1-9f71-607b5d643658
+---
 # Pricing Permissions
 
 With Liferay Commerce, you can use permissions to control access to Pricing applications and resources in the Commerce tab of the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).

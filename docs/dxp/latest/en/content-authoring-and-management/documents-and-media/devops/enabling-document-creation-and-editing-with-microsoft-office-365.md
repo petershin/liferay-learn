@@ -1,3 +1,6 @@
+---
+uuid: 571fd02d-3c00-4ecb-93fe-b3f5666f3418
+---
 # Enabling Document Creation and Editing with Microsoft Office 365
 
 Before you can use Office 365&trade; to create and edit Documents and Media files, you must configure DXP to connect with an application in the [Azure portal](https://portal.azure.com). You must have administrator rights to perform the following steps.

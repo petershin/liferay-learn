@@ -1,3 +1,6 @@
+---
+uuid: 6eaf7105-208e-4ae8-8063-676555925a89
+---
 # Forms Permissions Reference
 
 This article serves as a guide for all permissions associated with the Forms application.

@@ -1,3 +1,6 @@
+---
+uuid: 580c1f2e-e0bf-4618-834e-9969a2e37c73
+---
 # Multithreading Process
 
 {bdg-secondary}`Available Liferay DXP 7.4 U10+ or Liferay Portal 7.4 GA14+`

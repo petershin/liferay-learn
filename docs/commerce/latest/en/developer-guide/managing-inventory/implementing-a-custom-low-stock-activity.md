@@ -1,3 +1,6 @@
+---
+uuid: e5148e0b-fc9a-4587-b71c-9bfe09c383cf
+---
 # Implementing a Custom Low Stock Activity
 
 This tutorial will show you how to add a custom low stock activity by implementing the [CommerceLowStockActivity](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivity.java) interface.

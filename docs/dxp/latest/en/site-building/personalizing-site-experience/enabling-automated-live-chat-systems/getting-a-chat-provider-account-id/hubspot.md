@@ -1,3 +1,6 @@
+---
+uuid: 11528b7a-fea8-47e1-b45c-a7e5306d70d6
+---
 # Hubspot 
 
 [Hubspot](https://www.hubspot.com/) is a CRM platform that includes Live Chat functionality. Enabling integration with Hubspot requires the creation of a live chat and a combination of two values that can be retrieved from your Hubspot account: your Hubspot User Account ID and the Hubspot API Token.

@@ -1,3 +1,6 @@
+---
+uuid: 2227325d-e1f4-40a9-a6e1-0d967469d4f1
+---
 # Using Default Synchronous Messaging in Previous Versions
 
 ```{important}

@@ -1,3 +1,6 @@
+---
+uuid: e9cc0647-a7c4-4080-8042-5839ca068c5e
+---
 # Syncing Sites and Contacts
 
 Now that you've [Connected Liferay DXP to Analytics Cloud](./connecting-liferay-dxp-to-analytics-cloud.md), it's time to sync your site and your contacts.

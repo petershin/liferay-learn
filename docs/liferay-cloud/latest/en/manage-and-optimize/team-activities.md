@@ -1,3 +1,6 @@
+---
+uuid: d6ffd6f9-4bcb-462b-8907-292a91843f90
+---
 # Team Activities
 
 Keeping track of activities within each project environment is essential. With Liferay Cloud, you can monitor builds, deployments, and other project activities via the web console.

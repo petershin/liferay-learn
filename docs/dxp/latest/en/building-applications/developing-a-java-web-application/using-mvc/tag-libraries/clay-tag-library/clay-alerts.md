@@ -1,3 +1,6 @@
+---
+uuid: f63154c3-7b4b-4fa6-b0f6-444c5ad9ff60
+---
 # Clay Alerts
 
 Clay alerts come in two types: embedded and stripe. Both types, along with several examples of each, are shown below.

@@ -1,3 +1,6 @@
+---
+uuid: 42fbd9f9-009e-4d57-84d1-f84b8a1dd2c4
+---
 # Understanding Recommendation Types
 
 {bdg-primary}`Subscription`

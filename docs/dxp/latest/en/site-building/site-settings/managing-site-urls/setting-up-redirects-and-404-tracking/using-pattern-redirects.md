@@ -1,3 +1,6 @@
+---
+uuid: 86f08f77-e511-4054-86eb-13cf4b3dd3ba
+---
 # Using Pattern Redirects
 
 {bdg-secondary}`Available 7.4 U48+/GA48+`

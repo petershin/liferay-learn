@@ -1,3 +1,6 @@
+---
+uuid: 22635fa9-bca6-427c-8e6d-ab9f22b5c4c7
+---
 # Creating a Page Template
 
 {bdg-secondary}`Available: Liferay DXP/Portal 7.3+`

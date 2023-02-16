@@ -1,3 +1,6 @@
+---
+uuid: dc8ee310-4205-482c-822e-478894958c14
+---
 # Script Examples
 
 Here are some examples to help you use scripts in DXP. Most of the examples originated from the Liferay blog post [5 Tips to Improve Usage of the Liferay Script Console](https://liferay.dev/blogs/-/blogs/5-tips-to-improve-usage-of-the-liferay-script-console).

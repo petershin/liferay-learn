@@ -1,3 +1,6 @@
+---
+uuid: 79062d46-c0e5-4b76-9328-d41e94d115fd
+---
 # Application Metrics
 
 With Liferay Cloud's built-in monitoring, you can track resources used by each environment service. These application metrics include memory and CPU usage, as well as network data transfer. Metrics are available for the default Liferay Cloud stack services: Webserver, Liferay, Search, Database, and Backup.

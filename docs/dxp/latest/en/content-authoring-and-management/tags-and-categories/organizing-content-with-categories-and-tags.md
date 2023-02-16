@@ -1,3 +1,6 @@
+---
+uuid: fee5ac12-a246-455e-8776-ded55393ba20
+---
 # Organizing Content with Categories and Tags
 
 Categories and Tags are two essential tools for helping users find content through search or navigation.

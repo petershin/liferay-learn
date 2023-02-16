@@ -1,3 +1,6 @@
+---
+uuid: 9dd9b762-7fff-4d85-b6fc-9c96e0b07387
+---
 # Configuring SAML at the System Level
 
 Before allowing any portal instances to enable SAML authentication, you should configure it at the system level so those instances have a foundation from which to work. For example, you wouldn't want to have portal instances configuring SAML and then find you must move the key store from the file system into the document library. This creates a configuration headache for everybody. It's better to configure your system level options first. 

@@ -1,16 +1,17 @@
 ---
 toc:
-- ./reference/liferay-cloud-infrastructure.md
-- ./reference/configuration-via-lcp-json.md
-- ./reference/understanding-service-stack-versions.md
-- ./reference/upgrading-your-liferay-cloud-stack.md
-- ./reference/liferay-cloud-version-5-changes.md
-- ./reference/liferay-cloud-project-changes-in-version-4.md
-- ./reference/upgrading-to-a-high-availability-subscription.md
-- ./reference/command-line-tool.md
-- ./reference/defining-environment-variables.md
-- ./reference/platform-limitations.md
-- ./reference/example-configuration-files.md
+  - ./reference/liferay-cloud-infrastructure.md
+  - ./reference/configuration-via-lcp-json.md
+  - ./reference/understanding-service-stack-versions.md
+  - ./reference/upgrading-your-liferay-cloud-stack.md
+  - ./reference/liferay-cloud-version-5-changes.md
+  - ./reference/liferay-cloud-project-changes-in-version-4.md
+  - ./reference/upgrading-to-a-high-availability-subscription.md
+  - ./reference/command-line-tool.md
+  - ./reference/defining-environment-variables.md
+  - ./reference/platform-limitations.md
+  - ./reference/example-configuration-files.md
+uuid: f3b8e497-1332-43e9-98c7-b654c048bb99
 ---
 # Reference
 

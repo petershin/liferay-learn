@@ -1,3 +1,6 @@
+---
+uuid: c26398d0-352b-400d-b6dd-3cae31d35f21
+---
 # Orders Menu Reference Guide
 
 Orders can be [viewed and managed](./processing-an-order.md) by an administrator in the _Orders_ menu. To access the _Orders_ menu, click the _Global Applications_ button &rarr; _Commerce_ &rarr; _Orders_.

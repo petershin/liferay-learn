@@ -1,3 +1,6 @@
+---
+uuid: 006b0310-6569-4a27-ae00-16eff89bde5a
+---
 # Creating a Workflow Powered Application
 
 > **Subscribers**

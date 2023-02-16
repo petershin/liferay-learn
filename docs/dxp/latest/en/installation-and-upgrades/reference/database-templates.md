@@ -1,3 +1,6 @@
+---
+uuid: 8a42c39d-cacd-4f87-85d0-351a778b7ff8
+---
 # Database Templates
 
 Below are templates (example [portal properties](./portal-properties.md) and [Docker environment variables](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file)) for configuring various databases as a built-in data source for Liferay DXP.

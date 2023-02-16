@@ -1,3 +1,6 @@
+---
+uuid: cbe0c574-b1eb-42ff-a018-99167277e9fe
+---
 # Solr Limitations 
 
 Liferay's Solr implementation has limitations. Some Liferay features and APIs cannot be used when you choose Solr as the search engine. Install [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) for the best experience.

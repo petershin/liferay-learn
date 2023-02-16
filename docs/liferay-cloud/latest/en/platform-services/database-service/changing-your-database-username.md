@@ -1,3 +1,6 @@
+---
+uuid: 27a5817f-b99c-4a95-a49d-cf6182a0c4ee
+---
 # Changing Your Database Username
 
 The MySQL username is defined by the `lcp-secret-database-user` secret and can be changed at any time. When this value is changed, a user with the new credentials is created in your database, and the previous username is removed when the service restarts.

@@ -1,3 +1,6 @@
+---
+uuid: d1a3b011-1eb7-4a09-a379-847e3fdbaf69
+---
 # Managing the Knowledge Base
 
 You can manage the Knowledge Base from the Knowledge Base app. To navigate to the app, click the _Menu_ icon (![Menu icon](../../images/icon-menu.png)) and navigate to *Content and Data* &rarr; *Knowledge Base.*

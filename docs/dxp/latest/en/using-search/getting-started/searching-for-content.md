@@ -1,3 +1,6 @@
+---
+uuid: 97837f94-619a-4ac0-9b0c-bf9dca31e748
+---
 # Searching for Content
 
 All indexed content (a.k.a. _assets_ in Liferay DXP) can be returned as search results. [Custom content can also be indexed](https://help.liferay.com/hc/en-us/articles/360032260612-Model-Entity-Indexing-Framework), so your installation might have additional asset types beyond the ones included by default. The following image shows an example of the different types of content that is indexed in Liferay DXP:

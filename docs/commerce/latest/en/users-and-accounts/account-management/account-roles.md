@@ -1,3 +1,6 @@
+---
+uuid: d15388f9-2684-40e5-951c-81f85283a320
+---
 # Account Roles
 
 Account roles are sets of permissions that grant users specific abilities within an Account context. These roles can be used to delegate Account responsibilities, or paired with Commerce Site roles to implement a complete purchase workflow for Business Accounts.

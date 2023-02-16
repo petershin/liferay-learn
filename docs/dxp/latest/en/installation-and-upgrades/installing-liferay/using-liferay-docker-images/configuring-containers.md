@@ -1,3 +1,6 @@
+---
+uuid: 0d7aecc8-8a30-495a-a806-80366b3f1bcc
+---
 # Configuring Containers
 
 Everything that is configurable in a Liferay installation is configurable in a Liferay Docker container.

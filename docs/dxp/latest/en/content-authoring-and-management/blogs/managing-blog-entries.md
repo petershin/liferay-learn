@@ -1,3 +1,6 @@
+---
+uuid: 857b463d-fe27-4a03-bca1-22a5b8a76bd7
+---
 # Managing Blog Entries
 
 Bloggers and blog administrators manage blog entries using the _Blogs_ application in the _Site Administration_ menu. To access this app, click the Product Menu button (![Menu](../../images/icon-product-menu.png)) to open the product menu and select _Content & Data_ &rarr; _Blogs_.

@@ -1,3 +1,6 @@
+---
+uuid: f4edcb34-81e1-49ea-b947-b2d9ef9c07c8
+---
 # Specifications
 
 A specification stores a single piece of Product information. This can be the Product’s dimensions, color, weight, capacity, or any other attribute. These details can help customers when comparing similar Products.

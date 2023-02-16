@@ -1,3 +1,6 @@
+---
+uuid: 661057a9-df62-4261-b780-c746e3cd058e
+---
 # Managing Data Sources
 
 After [connecting Liferay DXP](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) to your workspace, you can view and make changes to them from the settings page. Navigate to *Settings* &rarr; *Workspace Data* &rarr; *Data Sources*. 

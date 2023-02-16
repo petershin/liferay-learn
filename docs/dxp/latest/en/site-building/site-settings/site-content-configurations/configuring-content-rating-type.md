@@ -1,3 +1,6 @@
+---
+uuid: f317a968-ef20-4832-b0e5-983f13339582
+---
 # Configuring Content Rating Type
 
 [Ratings](../../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) can be represented by different types of icons/labels (like, stacked stars, stars, and thumbs ups). You can configure these rating types for the following applications:

@@ -1,3 +1,6 @@
+---
+uuid: dfcdf8e5-e176-4db6-9c11-8957f37d8dc2
+---
 # Liferay Cloud Project Changes in Version 4
 
 Several changes are made between version 3.x and 4.x of the Liferay Cloud stack, including where Docker image versions are defined for your services, the structure of the repository, and how `Jenkinsfiles` are used.

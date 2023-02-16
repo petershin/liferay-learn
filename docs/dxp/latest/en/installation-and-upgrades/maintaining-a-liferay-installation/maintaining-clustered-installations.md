@@ -1,7 +1,8 @@
 ---
 toc:
-- ./maintaining-clustered-installations/rolling-restarts.md
-- ./maintaining-clustered-installations/blue-green-deployments.md
+  - ./maintaining-clustered-installations/rolling-restarts.md
+  - ./maintaining-clustered-installations/blue-green-deployments.md
+uuid: fa193b8b-5382-4cdd-9616-9796d38a4b11
 ---
 # Maintaining Clustered Installations
 

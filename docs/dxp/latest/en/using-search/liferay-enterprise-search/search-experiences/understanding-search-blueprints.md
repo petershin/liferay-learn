@@ -1,3 +1,6 @@
+---
+uuid: f6f1c0fc-108d-42eb-810a-447630e0b7b9
+---
 # Understanding Search Blueprints
 
 Search Blueprints is the first feature of the Search Experiences toolset. Use Blueprints to tailor the search page experience to your users' needs, without deploying any custom code. With Blueprints you can

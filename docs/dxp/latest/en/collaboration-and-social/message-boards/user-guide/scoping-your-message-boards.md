@@ -1,3 +1,6 @@
+---
+uuid: 52ad5ac0-c5f0-4146-9a0c-d49b53f05b1a
+---
 # Scoping Your Message Boards
 
  Multiple message boards can be created and managed on the same DXP instance at the same time. This can be accomplished by scoping each message board to a particular scope. The [Global, Site, or Page Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope) are available. The following sections show administrators how to setup _Message Boards_ in each of these scopes.

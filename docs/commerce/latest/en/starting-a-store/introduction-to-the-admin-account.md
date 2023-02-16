@@ -1,3 +1,6 @@
+---
+uuid: 27fc8cca-93df-4670-8300-34f00abf9177
+---
 # Introduction to the Admin Account
 
 The Admin user is created by default in any new installation of Liferay Commerce and has full permissions to modify every facet of a Liferay Commerce instance. The Admin user can create, modify, and delete sites, pages, users, accounts, catalogs and products, and perform all store and site administrative tasks.

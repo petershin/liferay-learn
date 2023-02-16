@@ -1,8 +1,9 @@
 ---
 toc:
-- ./content-dashboard/about-the-content-dashboard.md
-- ./content-dashboard/content-dashboard-interface.md
-- ./content-dashboard/exporting-the-assets-list-to-a-spreadsheet.md
+  - ./content-dashboard/about-the-content-dashboard.md
+  - ./content-dashboard/content-dashboard-interface.md
+  - ./content-dashboard/exporting-the-assets-list-to-a-spreadsheet.md
+uuid: 3973639d-af75-493d-9fbd-2b9ff4cd2854
 ---
 # Content Dashboard
 

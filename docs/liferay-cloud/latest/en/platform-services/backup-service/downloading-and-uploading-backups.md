@@ -1,3 +1,6 @@
+---
+uuid: 06ef4848-7a9b-4281-92e6-f145c80fd215
+---
 # Downloading and Uploading Backups
 
 The Liferay Cloud backup service creates backups of an environment's database and the full contents of the Liferay instance's `LIFERAY_HOME/data` folder. This content is stored as archive files (`.gz` and `.tgz` respectively) and can be downloaded via the Liferay Cloud console.

@@ -1,3 +1,6 @@
+---
+uuid: 28ec84a2-e8ed-4564-84eb-d8289a5c1139
+---
 # Manually Migrating from Audience Targeting
 
 Due to the similarities between Audience Targeting user segments and Liferay 7.2+ Segments, most of your configuration is automatically transferred into Liferay Segmentation during the upgrade (see [Migrating User Segments](./migrating-user-segments.md) for more information.) However, some Audience Targeting rules do not have a direct equivalent in Liferay 7.2+ Segmentation. You can find the recommended solution for each rule type here.

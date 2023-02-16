@@ -1,6 +1,7 @@
 ---
 toc:
-- ./getting-started/setting-up-an-environment-and-creating-a-theme.md
+  - ./getting-started/setting-up-an-environment-and-creating-a-theme.md
+uuid: ec5e1564-a946-47fb-bda7-cf2fc3917cf8
 ---
 # Getting Started
 

@@ -1,3 +1,6 @@
+---
+uuid: 2bc23521-81a7-40c4-b83a-4a6a10d9b1a5
+---
 # Regions API Basics
 
 {bdg-secondary}`Available Liferay 7.4 U24+ and GA24+`

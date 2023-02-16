@@ -1,3 +1,6 @@
+---
+uuid: ccd6fab7-17fd-409e-b9d9-0bb02fb239c2
+---
 # Sites and Site Types
 
 ## Sites

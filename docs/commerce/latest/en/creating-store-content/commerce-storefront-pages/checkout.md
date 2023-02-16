@@ -1,3 +1,6 @@
+---
+uuid: f66ef395-f882-427d-ab4a-76686c1117a8
+---
 # Checkout
 
 The Checkout page contains the _Checkout_ widget. It becomes active once a buyer clicks _Checkout_ to submit an order. You can also implement a custom checkout step using extension points. See [Implementing a Custom Checkout Step](../../developer-guide/implementing-a-custom-checkout-step.md) for more information.

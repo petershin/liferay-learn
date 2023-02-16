@@ -1,3 +1,6 @@
+---
+uuid: 3615f3c0-721f-4ba5-abf8-f1d19826a20a
+---
 # Sharing Widgets with Other Sites
 
 You can share widgets with other Sites by embedding an instance of a widget running on your Site into another website, such as Facebook, OpenSocial and Netvibes. This opens up a whole new avenue of exposure to your website that you would not have had otherwise.

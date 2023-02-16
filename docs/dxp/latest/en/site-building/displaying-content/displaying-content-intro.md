@@ -1,3 +1,6 @@
+---
+uuid: 08679d43-33a0-4bea-bc81-55787660f171
+---
 # Displaying Content
 
 You can display content in various ways. The option you choose depends on the type of asset you want to display, how many assets you want to display at once, and how you want your content to be viewed. Four key options are available: the Collection Display Fragment, the Web Content Display widget, the Asset Publisher widget, and Display Page Templates. The table below compares the key behaviors of these display options:

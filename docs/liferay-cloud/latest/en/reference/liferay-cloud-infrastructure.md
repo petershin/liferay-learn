@@ -1,3 +1,6 @@
+---
+uuid: 5ae20076-8a81-4c51-bf80-04d4db024bd6
+---
 # Liferay Cloud Infrastructure
 
 Liferay Cloud is a flexible platform that combines a collection of key components to provide a robust, reliable, and manageable Liferay DXP implementation. This diagram shows how all of these components fit together to complete this implementation:

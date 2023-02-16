@@ -1,3 +1,6 @@
+---
+uuid: 1db3c97d-8112-4575-8420-20d641a3eedf
+---
 # Enabling Document Creation and Editing with Google Drive
 
 Liferay DXP provides integration with Google Drive so you can create and edit Google Docs, Sheets, and Slides via the Documents and Media application. When adding or editing one of these document types, you're redirected to Google's external editor where you can compose your file.

@@ -1,3 +1,6 @@
+---
+uuid: 7624c5b4-f26a-48bd-a496-fedabde8452e
+---
 # Adding Custom Fields
 
 Many of Liferay's assets and resources can be extended with custom fields. Adding custom fields can give you greater control and flexibility over your Site. Here are all the different places custom fields can be used:

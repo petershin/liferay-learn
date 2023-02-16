@@ -1,3 +1,6 @@
+---
+uuid: 75d0f713-0c4c-46ae-8761-21a0878077cf
+---
 # Creating and Managing Search Blueprints
 
 [Search Blueprints](./understanding-search-blueprints.md) are created, updated, and deleted using an administrative application in the Global Menu. Open the Global menu's Applications section and find the Search Experiences category. If you already have a Blueprint and want to apply it's functionality in a Liferay [Search Page](../../search-pages-and-widgets/working-with-search-pages.md), see [Using a Search Blueprint on a Search Page](using-a-search-blueprint-on-a-search-page.md).

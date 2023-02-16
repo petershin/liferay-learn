@@ -1,3 +1,6 @@
+---
+uuid: 108e2423-cc6f-4442-9797-f6ce5bcfdbd9
+---
 # Account Users and Roles APIs
 
 You can manage [Account Users](../accounts/account-users.md) and [Account Roles](../accounts/account-roles.md) from the Applications menu, but you can also use Liferay's REST APIs. Call these services to create and manage Account Users and Roles.

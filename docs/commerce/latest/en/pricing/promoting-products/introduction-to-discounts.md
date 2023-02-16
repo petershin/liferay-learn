@@ -1,3 +1,6 @@
+---
+uuid: 4ab79dc2-0190-49a2-8197-807d1ae40bf8
+---
 # Introduction to Discounts
 
 Discounts are price reductions you can apply to products and orders to offer incentives to customers. When creating a discount, you determine whether to reduce the set price by a percentage or flat rate and set the discount's scope:

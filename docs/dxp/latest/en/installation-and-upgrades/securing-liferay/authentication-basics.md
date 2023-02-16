@@ -1,3 +1,6 @@
+---
+uuid: f5ccd64e-f615-4141-bbb5-eff00cdcf1ca
+---
 # Authentication Basics
 
 By default, Liferay DXP uses the *Sign In* widget to authenticate users.

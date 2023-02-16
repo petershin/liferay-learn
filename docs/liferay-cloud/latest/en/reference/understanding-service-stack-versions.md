@@ -1,3 +1,6 @@
+---
+uuid: 82bcaf14-42ec-400b-ad60-d5be361e2d20
+---
 # Understanding Service Stack Versions
 
 The Liferay Cloud service stack represents the major version of all of the services in your Liferay Cloud environment. Each individual service may have a different minor version, but they all share the service stack version (e.g., version 4.x.x). New service stack versions generally introduce a variety of new features (such as the addition of a default Jenkinsfile, and a new repository structure in [version 4.x.x](./liferay-cloud-project-changes-in-version-4.md)).

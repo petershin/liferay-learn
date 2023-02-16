@@ -1,3 +1,6 @@
+---
+uuid: cf8367f8-a297-4fe1-be3c-9ea3437f06f5
+---
 # Crafting XML Workflow Definitions
 
 All Workflow definitions in Liferay DXP are written in XML format. To craft your own workflow definition, remember that definitions should reflect real life approval processes.

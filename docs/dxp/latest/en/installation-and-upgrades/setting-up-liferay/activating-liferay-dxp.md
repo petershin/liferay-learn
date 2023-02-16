@@ -1,3 +1,6 @@
+---
+uuid: b3193095-c153-4a56-964b-9ee100a85c97
+---
 # Activating Liferay DXP
 
 > Subscription Required

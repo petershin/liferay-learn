@@ -1,12 +1,13 @@
 ---
 toc:
-- ./sites/adding-a-site.md
-- ./sites/site-templates.md
-- ./sites/site-hierarchies.md
-- ./sites/site-membership.md
-- ./sites/personal-sites.md
-- ./sites/exporting-importing-site-pages-and-content.md
-- ./sites/default-site-applications.md
+  - ./sites/adding-a-site.md
+  - ./sites/site-templates.md
+  - ./sites/site-hierarchies.md
+  - ./sites/site-membership.md
+  - ./sites/personal-sites.md
+  - ./sites/exporting-importing-site-pages-and-content.md
+  - ./sites/default-site-applications.md
+uuid: 0a0ae4c3-008d-4a10-a8a8-03769e8bb589
 ---
 
 # Sites

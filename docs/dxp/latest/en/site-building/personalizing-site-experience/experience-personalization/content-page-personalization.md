@@ -1,3 +1,6 @@
+---
+uuid: b66e7700-fcc7-4ce5-9d78-3277c88ab557
+---
 # Content Page Personalization
 
 You can tailor your Content Page to different groups of users, providing each group a personalized experience, rather than a generic one. You can also leverage Content Page personalization to conduct A/B Testing (for more information, see [Content Page Experiences and A/B Testing](#content-page-experiences-and-ab-testing)).

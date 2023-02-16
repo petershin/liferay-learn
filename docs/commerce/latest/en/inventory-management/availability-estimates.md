@@ -1,3 +1,6 @@
+---
+uuid: 2a2d3e75-7ee7-4d83-ab03-6af9ab18227b
+---
 # Availability Estimates
 
 If a product runs out of stock, you can provide an estimate to customers for when it becomes available again. If you're using an accelerator like Minium or Speedwell, three availability estimates are automatically created. Otherwise, you can create your own.

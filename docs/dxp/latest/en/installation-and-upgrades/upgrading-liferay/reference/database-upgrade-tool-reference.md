@@ -1,3 +1,6 @@
+---
+uuid: 8d057d63-5edc-481f-b55d-ccfa3cb388fa
+---
 # Database Upgrade Tool Reference
 
 Here's an overview of Liferay's upgrade tool. 

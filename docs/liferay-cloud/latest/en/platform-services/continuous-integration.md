@@ -1,3 +1,6 @@
+---
+uuid: 7c189c0f-2937-4adf-b0a6-d7e1741c3cd8
+---
 # Continuous Integration
 
 Liferay Cloud uses [Jenkins](https://jenkins.io/) to power its continuous integration infrastructure service. When you send a pull request or push a commit to one of your pre-configured GitHub branches, an automatic and configurable build is triggered.

@@ -1,3 +1,6 @@
+---
+uuid: 29ca8a76-5840-4706-8e2d-48a5e0c9d576
+---
 # Creating SharePoint Repositories in Documents and Media
 
 Once you've added a [SharePoint OAuth2 configuration](./enabling-liferays-rest-connector-to-sharepoint.md#adding-a-sharepoint-oauth2-configuration), you can use it to create repositories in Documents and Media that are mounted to SharePoint libraries.

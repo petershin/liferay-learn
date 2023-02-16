@@ -1,3 +1,6 @@
+---
+uuid: 70975d5e-ed43-4541-a72a-698234c05b5a
+---
 # Running Scripts From the Script Console
 
 The Script Console provides a single view for executing Groovy scripts and printing their output. It has predefined variables that facilitate working with widgets and users. The following topics get you started with the Script Console:

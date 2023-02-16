@@ -1,3 +1,6 @@
+---
+uuid: ff808648-0541-424c-b35b-dab20e241790
+---
 # Exercise: Run Liferay and Elasticsearch Using Docker
 
 > Applies to: Liferay DXP 7.3+

@@ -1,8 +1,9 @@
 ---
 toc:
-- ./managing-user-data/exporting-user-data.md
-- ./managing-user-data/sanitizing-user-data.md
-- ./managing-user-data/configuring-the-anonymous-user.md
+  - ./managing-user-data/exporting-user-data.md
+  - ./managing-user-data/sanitizing-user-data.md
+  - ./managing-user-data/configuring-the-anonymous-user.md
+uuid: 2ab639a3-b972-4418-9fa5-db5958090d7a
 ---
 # Managing User Data (GDPR)
 

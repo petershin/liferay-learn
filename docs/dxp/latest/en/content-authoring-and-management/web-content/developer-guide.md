@@ -1,8 +1,9 @@
 ---
 toc:
-- ./developer-guide/web-content-api-basics.md
-- ./developer-guide/advanced-web-content-api.md
-- ./developer-guide/managing-structures-and-templates-by-using-the-rest-api.md
+  - ./developer-guide/web-content-api-basics.md
+  - ./developer-guide/advanced-web-content-api.md
+  - ./developer-guide/managing-structures-and-templates-by-using-the-rest-api.md
+uuid: 25f21282-93fb-4c6a-be52-36f58b4a5dba
 ---
 # Developer Guide
 

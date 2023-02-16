@@ -1,3 +1,6 @@
+---
+uuid: 7fe6add6-690d-4c05-be41-81a2563f9570
+---
 # Introduction to Site Building
 
 Sites are a fundamental component of Liferay DXP. Essentially, a Site is a collection of pages that contains content applications that provide additional functionality. Many applications are available for use out-of-the-box.

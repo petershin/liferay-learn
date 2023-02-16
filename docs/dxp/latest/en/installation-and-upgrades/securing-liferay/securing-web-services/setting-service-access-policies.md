@@ -1,3 +1,6 @@
+---
+uuid: 483ba459-311b-4825-9fbd-b4e549c2823c
+---
 # Setting Service Access Policies
 
 *Service Access Policies* define what services or service methods can be invoked remotely. You can apply many of them at once to produce a combined effect. They are the [second layer of security](../securing-web-services.md) (after IP permissions) for web services. Custom service access policies can be created by portal administrators. They are applied by the portal's token authenticator (OAuth 2).

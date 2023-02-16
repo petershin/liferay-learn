@@ -1,3 +1,6 @@
+---
+uuid: 160b7d94-be20-4dfe-ba58-3eb11a34c47b
+---
 # Search Administration
 
 In *Control Panel* &rarr; *Configuration* &rarr; *Search* there are three administrative UIs: Connections, Index Actions, and Field Mappings. Connections shows you the search engines your installation is connected to, Index Actions is an interface for re-indexing, and Field Mappings display fields mapped from Liferay to your search index. 

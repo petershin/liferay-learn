@@ -1,3 +1,6 @@
+---
+uuid: 416c822a-d934-4fda-b909-e50557b8560d
+---
 # Syntax Validation
 
 The Poshi Standalone grade projects includes a validation task that can be used to check your code for syntax errors before running your test. To use this, simply run `./gradlew validatePoshi` on your root directory. If there are no errors, the command runs successfully indicated by the message:

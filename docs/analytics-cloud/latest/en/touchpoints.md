@@ -1,9 +1,10 @@
 ---
 toc:
-- ./touchpoints/sites-dashboard.md
-- ./touchpoints/pages.md
-- ./touchpoints/assets.md
-- ./touchpoints/events.md
+  - ./touchpoints/sites-dashboard.md
+  - ./touchpoints/pages.md
+  - ./touchpoints/assets.md
+  - ./touchpoints/events.md
+uuid: bcc57d13-682f-4e91-be8f-126b66328b61
 ---
 # Touchpoints
 

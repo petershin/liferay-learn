@@ -1,3 +1,6 @@
+---
+uuid: c6b83a2d-2bd3-4920-a139-2460a51e4c3f
+---
 # PortletMVC4Spring Project Anatomy
 
 PortletMVC4Spring portlets are packaged in WARs. Liferay provides Maven archetypes for creating projects configured to use JSP/JSPX and Thymeleaf templates. Their commands are listed below. The PortletMVC4Spring project structure follows the commands. 

@@ -1,3 +1,6 @@
+---
+uuid: 5d8d254a-1f19-450c-9b59-2c0b677888ae
+---
 # Configuring Fragment Visibility
 
 > Available: Liferay DXP/Portal 7.4+

@@ -1,3 +1,6 @@
+---
+uuid: af979474-02fa-4010-b25e-48a570d2ee06
+---
 # Creating and Editing Documents with Google Drive
 
 You can use Google Docs&trade; to create and edit text documents, spreadsheets, or presentations for storage in the Docs and Media library. When you finish your Google Docs&trade; editing session, your changes are automatically saved in the Documents and Media Library.

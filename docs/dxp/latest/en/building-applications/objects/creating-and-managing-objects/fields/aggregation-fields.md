@@ -1,3 +1,6 @@
+---
+uuid: 7ec3ffc3-f645-4ee8-86bd-ab6f8697dc3d
+---
 # Aggregation Fields
 
 {bdg-secondary}`Available Liferay 7.4 U47+/GA47+`

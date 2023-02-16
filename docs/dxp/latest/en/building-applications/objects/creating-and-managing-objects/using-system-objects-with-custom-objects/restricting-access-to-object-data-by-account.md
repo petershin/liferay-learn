@@ -1,3 +1,6 @@
+---
+uuid: 6b1067a0-7fae-4b4b-9e1a-497dd002b824
+---
 # Restricting Access to Object Data by Account
 
 {bdg-secondary}`Available Liferay 7.4 U58+/GA58+`

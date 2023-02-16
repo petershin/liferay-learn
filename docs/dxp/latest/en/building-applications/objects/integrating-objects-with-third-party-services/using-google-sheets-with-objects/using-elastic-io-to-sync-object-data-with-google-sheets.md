@@ -1,3 +1,6 @@
+---
+uuid: b1218b8d-8422-4454-b8c5-de3f1658f52d
+---
 # Using Elastic.io to Sync Object Data with Google Sheets
 
 {bdg-secondary}`Available 7.4+`

@@ -1,3 +1,6 @@
+---
+uuid: c1c04525-0b10-4388-b0a1-c3e7f633c303
+---
 # Starting with a Docker Image
 
 The latest versions of Liferay are available as Docker images. Follow these steps to download, launch, and begin touring the latest releases of Liferay.

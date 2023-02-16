@@ -1,3 +1,6 @@
+---
+uuid: db94b834-100e-44a6-8d45-0f1ab870f547
+---
 # Segmentation By Geolocation
 
 {bdg-secondary}`Available Liferay DXP 7.4 U44+/GA44+`

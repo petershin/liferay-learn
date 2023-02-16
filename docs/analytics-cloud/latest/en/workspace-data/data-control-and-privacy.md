@@ -1,3 +1,6 @@
+---
+uuid: 02db589d-875c-4d46-a44a-2007e096c382
+---
 # Data Control and Privacy
 
 Analytics Cloud provides administrative tools for managing individual data and privacy. To access the tools, click *Settings* &rarr; *Data Control & Privacy*.

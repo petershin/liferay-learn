@@ -1,3 +1,6 @@
+---
+uuid: a70883f3-ee19-487b-9e30-8f989d1afea9
+---
 # Deactivating a Country for Billing or Shipping
 
 Some stores may need to deactivate a country for shipping or billing purposes.

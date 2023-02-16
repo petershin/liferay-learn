@@ -1,3 +1,6 @@
+---
+uuid: 2fd49e7d-5de5-410c-9534-8f5de1ee20a1
+---
 # Changing Language Translations
 
 > Available: Liferay DXP 7.4 U4/Liferay Portal 7.4 GA8. 

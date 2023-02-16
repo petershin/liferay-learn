@@ -1,7 +1,8 @@
 ---
 toc:
-- ./understanding-pages/understanding-pages.md
-- ./understanding-pages/other-page-types.md
+  - ./understanding-pages/understanding-pages.md
+  - ./understanding-pages/other-page-types.md
+uuid: e59d275d-b4e5-48f5-9847-d5baeb39e357
 ---
 # Understanding Pages
 

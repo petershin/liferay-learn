@@ -1,3 +1,6 @@
+---
+uuid: 87abd88b-e917-4702-9da3-b517bdbffcad
+---
 # Configuring Widget Look and Feel
 
 To access the look and feel configuration menu of any widget, follow these steps:

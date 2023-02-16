@@ -1,3 +1,6 @@
+---
+uuid: f1a2934c-dd74-4a1f-b578-d52c3c2bfbc8
+---
 # Simple File System Store
 
 Simple File System Store is the default file store type. It uses a file system (local or a mounted share) to store files. If Simple File System Store is used in a clustered environment, its the folder must be accessible to all cluster nodes, handle concurrent requests, and support file locking. We recommend using a [Storage Area Network](https://en.wikipedia.org/wiki/Storage_area_network) or a clustered file system.

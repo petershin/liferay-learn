@@ -1,3 +1,6 @@
+---
+uuid: 9080abb4-fd9f-4be0-94e0-a2cf87d67272
+---
 # Using the Mini Cart Widget
 
 Liferay Commerce comes with a *Mini Cart* widget that provides a quick overview of the current cart status.

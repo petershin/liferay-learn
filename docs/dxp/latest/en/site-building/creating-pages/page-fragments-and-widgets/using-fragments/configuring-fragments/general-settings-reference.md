@@ -1,3 +1,6 @@
+---
+uuid: 7a1e3483-b9f1-4f6b-b8b5-37530967ff43
+---
 # General Settings Reference
 
 All fragments have General settings except for the HTML, Paragraph, Separator, and Social fragments. Some of these options are standard (e.g., visibility and frame), while others are unique to each fragment. The following reference only includes fragments with General settings.

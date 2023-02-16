@@ -1,6 +1,7 @@
 ---
 toc:
-- ./reference/cdi-portlet-predefined-beans.md
+  - ./reference/cdi-portlet-predefined-beans.md
+uuid: b835453a-37bc-4855-8779-0ce0302910de
 ---
 # Reference
 

@@ -1,3 +1,6 @@
+---
+uuid: 61a1386a-d0f5-4c0d-ae8a-9cd6e61252a9
+---
 # Enabling OpenOffice / LibreOffice Integration
 
 [OpenOffice](https://www.openoffice.org/) and [LibreOffice](https://www.libreoffice.org/) are open source productivity suites that you can integrate with Liferay. By default Liferay includes [PDFBox](https://pdfbox.apache.org/), which generates automatic previews for limited file types. However, you can integrate either of these suites for additional functionality, such as document conversion. The desired service must be installed on the server before it the Liferay integration can be enabled.

@@ -1,3 +1,6 @@
+---
+uuid: f1e685a5-2fbd-4b1c-8398-f7f3973d6171
+---
 # Example: Creating a Simple DXP Cluster
 
 A fast, easy way to learn DXP clustering is to set up a two node DXP cluster environment on one machine using [Docker containers](https://docs.docker.com/get-started/overview/). Here you'll create two DXP server containers along with server containers for a database, search engine, and file store.

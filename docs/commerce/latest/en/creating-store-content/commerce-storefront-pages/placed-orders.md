@@ -1,3 +1,6 @@
+---
+uuid: 5040b574-e762-4c90-ba82-4593d4a7f451
+---
 # Placed Orders
 
 The Placed Orders page is a required page that displays all orders that have completed the checkout process per **account** regardless of order status. The page uses the _Orders_ widget.

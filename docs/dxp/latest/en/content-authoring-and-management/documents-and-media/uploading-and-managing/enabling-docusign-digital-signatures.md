@@ -1,3 +1,6 @@
+---
+uuid: 0eada971-da6d-4bd2-9b62-a5a1f472c30b
+---
 # Enabling DocuSign Digital Signatures
 
 > Available: Liferay Portal 7.4 GA3+

@@ -1,6 +1,7 @@
 ---
 toc:
-- ./social-tools/user-guide.md
+  - ./social-tools/user-guide.md
+uuid: 2bf5cd10-f1a1-41fc-bbab-8a80b653e8ac
 ---
 # Social Tools
 

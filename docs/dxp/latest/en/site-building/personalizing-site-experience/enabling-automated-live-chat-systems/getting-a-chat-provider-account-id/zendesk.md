@@ -1,3 +1,6 @@
+---
+uuid: 5a4dd1b6-be3e-415e-ba58-68388d33a2fd
+---
 # Zendesk
 
 [Zendesk](https://www.zendesk.com/) is an customer service platform. This article documents how to locate your Zendesk account ID in order to [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.

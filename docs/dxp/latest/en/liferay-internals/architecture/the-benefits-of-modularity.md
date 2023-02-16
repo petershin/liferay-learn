@@ -1,3 +1,6 @@
+---
+uuid: c7c34070-343b-460c-bda8-beb7f3f10714
+---
 # The Benefits of Modularity
 
 Dictionary.com defines [modularity](http://www.dictionary.com/browse/modularity) as *the use of individually distinct functional units, as in assembling an electronic or mechanical system.* The distinct functional units are called *modules*.

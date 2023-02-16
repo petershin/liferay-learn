@@ -1,3 +1,6 @@
+---
+uuid: 52556bc8-a31b-4331-bcd7-317428006384
+---
 # Extending System Objects
 
 {bdg-secondary}`Available Liferay 7.4 U46+/GA46+`

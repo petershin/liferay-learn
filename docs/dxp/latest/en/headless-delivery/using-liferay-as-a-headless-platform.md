@@ -1,3 +1,6 @@
+---
+uuid: 9ad8032d-4264-4f26-8ac3-b09b3ee2ffad
+---
 # Using Liferay as a Headless Platform
 
 Liferay provides a suite of APIs that perform the same kinds of actions available in the web interface. This is essential when you must get data in a machine-readable format, for example in writing mobile applications, custom web applications, or automated processes. While taking more effort than the out-of-the-box interface, it comes with even more power to get things done.

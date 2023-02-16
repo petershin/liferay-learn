@@ -1,3 +1,6 @@
+---
+uuid: aff8d726-8efe-41e6-bef8-6d3831ea94b1
+---
 # Uploading Files
 
 With Documents and Media, you can upload any type of file to your Liferay instance's [file store](../../../system-administration/file-storage.md) or connected repositories. Once uploaded, Users with the requisite [permissions](../publishing-and-sharing/managing-document-access/documents-and-media-permissions-reference.md) can view, edit, download, or share uploaded files.

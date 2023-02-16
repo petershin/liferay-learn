@@ -1,3 +1,6 @@
+---
+uuid: 522fc1b1-ab1d-4126-b828-98e1e1e805bd
+---
 # Remote Applications with Headless APIs
 
 {bdg-secondary}`Available 7.4+`

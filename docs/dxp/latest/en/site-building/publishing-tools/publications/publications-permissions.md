@@ -1,3 +1,6 @@
+---
+uuid: a417583a-73dd-4548-bab9-cf4fca0b52f3
+---
 # Publications Permissions
 
 {bdg-secondary}`7.4+`

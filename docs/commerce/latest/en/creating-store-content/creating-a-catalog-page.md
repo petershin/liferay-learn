@@ -1,3 +1,6 @@
+---
+uuid: dca021a7-5bb4-43b4-93f6-158869d9c29a
+---
 # Creating a Catalog Page
 
 The [Catalog](./commerce-storefront-pages/catalog.md) page is the primary way for customers to browse, search, and select Channel Products. The following widgets are recommended for the Catalog page: _Search Bar_, _Options Facets_, _Specification Facet_, _Category Facet_, _Sort_, and _Search Results_. To learn more about these and other Commerce widgets, see [Widget Reference](./liferay-commerce-widgets/widget-reference.md).

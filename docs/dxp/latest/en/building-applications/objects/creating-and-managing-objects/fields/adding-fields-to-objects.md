@@ -1,3 +1,6 @@
+---
+uuid: c41d47fa-26bc-460b-b688-d1e3b7bcd123
+---
 # Adding Fields to Objects
 
 {bdg-secondary}`Available Liferay 7.4+`

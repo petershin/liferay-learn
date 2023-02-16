@@ -1,3 +1,6 @@
+---
+uuid: 98705353-bd7c-4a77-abf0-f51f482c1bcf
+---
 # APIs as OSGi Services
 
 After you've learned what a [module](./module-projects.md) is and how to deploy one, you can use modules to define APIs and implement them. Liferay APIs are [OSGi services](https://enroute.osgi.org/), defined by Java interfaces and implemented by concrete Java classes.

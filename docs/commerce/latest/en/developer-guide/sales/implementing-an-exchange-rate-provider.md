@@ -1,3 +1,6 @@
+---
+uuid: 8dc5fcc1-b974-448d-ab57-1d232556b27a
+---
 # Implementing a Custom Exchange Rate Provider
 
 This tutorial will show you how to add a custom exchange rate provider by implementing the [ExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/util/ExchangeRateProvider.java) interface.

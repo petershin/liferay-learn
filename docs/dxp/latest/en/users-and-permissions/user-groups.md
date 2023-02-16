@@ -1,8 +1,9 @@
 ---
 toc:
-- ./user-groups/creating-and-managing-user-groups.md
-- ./user-groups/managing-site-membership-and-permissions-with-user-groups.md
-- ./user-groups/user-group-sites.md
+  - ./user-groups/creating-and-managing-user-groups.md
+  - ./user-groups/managing-site-membership-and-permissions-with-user-groups.md
+  - ./user-groups/user-group-sites.md
+uuid: 05b4ba7c-f676-49f4-9518-23c1b68f244f
 ---
 # User Groups
 

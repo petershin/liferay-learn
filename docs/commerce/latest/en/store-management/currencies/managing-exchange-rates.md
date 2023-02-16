@@ -1,3 +1,6 @@
+---
+uuid: 01bdecdc-95a9-4cb4-b242-211377a449a2
+---
 # Managing Exchange Rates
 
 Exchange rates can be manually managed or automatically updated by an online service. To ensure that the store has the most recent exchange rates, administrators can enable an automatic currency conversion.

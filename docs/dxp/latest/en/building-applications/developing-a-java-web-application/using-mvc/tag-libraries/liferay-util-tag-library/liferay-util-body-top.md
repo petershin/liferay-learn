@@ -1,3 +1,6 @@
+---
+uuid: 7f212db2-9eae-4d40-9b94-46fe7b481d4b
+---
 # Using Liferay Util Body Top
 
 The body top tag is not a self-closing tag. The content placed between the opening and closing of this tag is moved to the top of the `body` tag. When something is passed using this taglib, the  [body_top.jsp](https://github.com/liferay/liferay-portal/blob/7.2.x/portal-web/docroot/html/common/themes/body_top.jsp#L25-L31) is passed markup and outputs in this JSP.

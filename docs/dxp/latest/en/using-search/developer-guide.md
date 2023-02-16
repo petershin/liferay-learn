@@ -1,7 +1,8 @@
 ---
 toc:
-- ./developer-guide/writing-a-similar-results-contributor.md
-- ./developer-guide/apis.md
+  - ./developer-guide/writing-a-similar-results-contributor.md
+  - ./developer-guide/apis.md
+uuid: 14f72e64-7789-49bc-b658-36935d888251
 ---
 # Developer Guide
 

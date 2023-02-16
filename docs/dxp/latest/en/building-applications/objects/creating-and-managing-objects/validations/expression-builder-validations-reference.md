@@ -1,3 +1,6 @@
+---
+uuid: 2ef89ecc-8c75-43e3-86c1-420d6bbc3a25
+---
 # Expression Builder Validations Reference
 
 {bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`

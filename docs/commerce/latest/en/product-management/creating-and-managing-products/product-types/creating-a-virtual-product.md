@@ -1,3 +1,6 @@
+---
+uuid: afa7fd7a-5a8e-48ab-af8f-b8ef9a2664f1
+---
 # Creating a Virtual Product
 
 In Liferay Commerce, a Virtual Product is any non-tangible product that can be downloaded by customers. Examples include videos, electronic publications, warranties, and service contracts. Like other Product types, they are assigned inventory and can be sold individually, or as part of a [Product bundle](../products/creating-product-bundles.md) or [Grouped Product](./creating-a-grouped-product.md). For Virtual Products, you can also determine the download's terms of use, duration of availability, maximum number of customer downloads, and whether there's a download sample.

@@ -1,3 +1,6 @@
+---
+uuid: 989c86ff-35da-4569-900a-aa77fa559b39
+---
 # Recycle Bin Overview
 
 An integrated Recycle Bin can temporarily store content and data you want to remove from your instance before making that removal permanent. By default, the Recycle Bin is enabled instance-wide, but you can disable it at any time for individual Sites.

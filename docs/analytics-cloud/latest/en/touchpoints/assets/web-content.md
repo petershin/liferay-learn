@@ -1,3 +1,6 @@
+---
+uuid: 81304039-f329-43a0-bfe0-8666f6ae66d3
+---
 # Web Content
 
 [Web Content Articles](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html) are important assets for presenting site visitors with information. Analytics Cloud gives you important insights into how site users are engaging with your content.

@@ -1,3 +1,6 @@
+---
+uuid: 24cb1057-51ec-429c-b8d8-e70ae6592e23
+---
 # Modified Facet
 
 The Modified Facet narrows search results down to those that match the searched keyword and results that were created or modified during a certain time period.

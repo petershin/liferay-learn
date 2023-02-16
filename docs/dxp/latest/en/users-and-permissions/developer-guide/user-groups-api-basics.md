@@ -1,3 +1,6 @@
+---
+uuid: f0969089-1b37-4dd6-952e-e6a98f2502da
+---
 # User Groups API Basics
 
 You can [Create and Manage User Groups](../user-groups/creating-and-managing-user-groups.md) from the Application menu, but you can also use Liferay's REST APIs. Call these services to manage user groups.

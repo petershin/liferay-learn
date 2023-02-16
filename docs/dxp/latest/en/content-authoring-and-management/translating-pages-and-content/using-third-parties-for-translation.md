@@ -1,3 +1,6 @@
+---
+uuid: 1b4947c4-5862-41d9-87ff-4e8bb5c8837a
+---
 # Using Third Parties for Translation
 
 {bdg-secondary}`Available Liferay 7.4 U15+ and GA15+`

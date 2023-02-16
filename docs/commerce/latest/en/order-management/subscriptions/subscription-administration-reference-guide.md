@@ -1,3 +1,6 @@
+---
+uuid: 29dc41d5-9bde-4c82-9448-f71219d6b489
+---
 # Subscription Administration Reference Guide
 
 Subscriptions are [managed](./managing-subscriptions.md) in the _Subscriptions_ menu in the _Global Applications_. This article describes the various functions and fields available in the _Subscriptions_ menu.

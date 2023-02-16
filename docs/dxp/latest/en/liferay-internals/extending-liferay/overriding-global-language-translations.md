@@ -1,3 +1,6 @@
+---
+uuid: 0e974ead-9e19-4ded-8b82-1e63c54fc2fc
+---
 # Overriding Global Language Translations
 
 Liferay DXP/Portal implements headings, labels, and messages for the default locale and many other locales using language translations. You can override these translations for any of the locales using new language translation values in a module.

@@ -1,3 +1,6 @@
+---
+uuid: a0d991e3-b1bc-4295-9ea9-ea975e420b46
+---
 # Tag Facet
 
 The Tag Facet narrows search results for any assets with tags that match the search keyword. Each match appears as a facet term.

@@ -1,3 +1,6 @@
+---
+uuid: 0d637a64-1025-43af-8ef7-9277264239a7
+---
 # Creating Deployment Environments
 
 There comes a point when your code is ready to share. For that, you must build an environment. In the corporate world, there are usually three environments: 

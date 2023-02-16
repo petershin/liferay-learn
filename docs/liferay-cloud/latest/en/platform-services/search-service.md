@@ -1,3 +1,6 @@
+---
+uuid: 5390699e-f4c8-4e8c-a3ac-1347298fc209
+---
 # Search Service (Elasticsearch)
 
 The Elasticsearch service is the text search engine for your Liferay DXP application. It's a private service that only communicates with the other services in your application, not with the outside internet.

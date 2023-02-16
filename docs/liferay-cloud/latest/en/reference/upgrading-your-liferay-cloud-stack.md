@@ -1,3 +1,6 @@
+---
+uuid: 6a301c61-93f6-4e6f-bba8-33437f602635
+---
 # Upgrading Your Liferay Cloud Stack
 
 Upgrading your repository to use the new structure in Liferay Cloud version 4 allows you to take advantage of Liferay Workspace within your repository, keep your services up to date, and use a range of new and updated features.

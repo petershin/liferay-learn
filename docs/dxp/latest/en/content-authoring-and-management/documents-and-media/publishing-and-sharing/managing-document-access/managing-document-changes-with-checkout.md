@@ -1,3 +1,6 @@
+---
+uuid: 8387ea84-8b44-4087-91db-deab5debc60c
+---
 # Managing Document Changes with Checkout
 
 When you check out a document in the Document Library, only you can make changes to it until you check it back in. This prevents conflicting edits on the same document by multiple users. When you check out a file, you can download it, replace it, move it to another Document Library folder, check it in, or cancel the checkout. Checking in a file also increments its version, which tracks changes.

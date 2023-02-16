@@ -1,3 +1,6 @@
+---
+uuid: 3a95e148-966a-4c7b-afc8-139791a1fca3
+---
 # Understanding Deployment Strategies
 
 The deployment strategy of a service determines how new versions will be initialized. Liferay Cloud provides two deployment strategies for its services: `RollingUpdate` and `Recreate`.

@@ -1,3 +1,6 @@
+---
+uuid: bd156517-f9c8-423e-929b-2beeb4d90d3c
+---
 # Generating Model, Persistence, and Service Code
 
 Service Builder makes it easy to define models and generate model, persistence, and service code for them. You'll experience this by defining a model called `Y7G4Entry` and generating code using Service Builder. Then you'll deploy your code to DXP and invoke a service that uses the code.

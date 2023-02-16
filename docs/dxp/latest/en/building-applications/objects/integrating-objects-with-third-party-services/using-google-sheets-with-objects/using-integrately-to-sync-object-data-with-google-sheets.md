@@ -1,3 +1,6 @@
+---
+uuid: c5fc43c9-42d0-4381-9d92-34fa93b25bcf
+---
 # Using Integrately to Sync Object Data with Google Sheets
 
 {bdg-secondary}`Available 7.4+`

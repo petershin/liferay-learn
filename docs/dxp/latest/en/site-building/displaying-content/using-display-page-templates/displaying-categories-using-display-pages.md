@@ -1,3 +1,6 @@
+---
+uuid: 2849d9bf-58a7-491b-9d34-df14fe15388e
+---
 # Displaying Categories using Display Pages
 
 {bdg-secondary}`Available: Liferay DXP/Portal 7.4+.`

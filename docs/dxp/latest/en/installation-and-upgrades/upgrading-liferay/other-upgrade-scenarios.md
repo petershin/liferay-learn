@@ -1,7 +1,9 @@
 ---
 toc:
-- ./../maintaining-a-liferay-installation/maintaining-clustered-installations.md
-- ./other-upgrade-scenarios/upgrading-a-sharded-environment.md
+  - >-
+    ./../maintaining-a-liferay-installation/maintaining-clustered-installations.md
+  - ./other-upgrade-scenarios/upgrading-a-sharded-environment.md
+uuid: 85c4eff3-6e08-4465-bf5a-c602ce9902fb
 ---
 # Other Upgrade Scenarios
 

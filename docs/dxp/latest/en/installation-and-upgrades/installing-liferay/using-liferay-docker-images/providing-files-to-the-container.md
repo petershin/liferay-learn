@@ -1,3 +1,6 @@
+---
+uuid: 4418f4d0-284a-4366-af8d-1458ca1cf598
+---
 # Providing Files to the Container
 
 The Liferay container uses the files you provide to execute the following use cases:

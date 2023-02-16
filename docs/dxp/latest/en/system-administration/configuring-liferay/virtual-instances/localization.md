@@ -1,3 +1,6 @@
+---
+uuid: efb7e684-d539-4e93-b6c8-6d64b4f53fd7
+---
 # Localization
 
 The Localization category contains these entries:

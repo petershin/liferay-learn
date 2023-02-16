@@ -1,3 +1,6 @@
+---
+uuid: 7a25f911-e061-4a44-84e1-09bf79db288a
+---
 # Configuring Catalog Permissions
 
 Catalog permissions determine which users can see and modify catalogs and their related products. Admin users have these permissions by default and these permissions can be added to new roles that have been added to the system.

@@ -1,3 +1,6 @@
+---
+uuid: 880fcb38-3db4-406a-a02d-7bfdff98f043
+---
 # Navigation Menu API Basics
 
 Liferay's REST APIs provide services for Liferay's navigation menus. You can create and edit navigation menus with the API. Start by seeing an example of adding a new navigation menu.

@@ -1,3 +1,6 @@
+---
+uuid: 75ebda3c-3714-4a2a-a07e-84ae00599ff9
+---
 # Setting Up JNDI on Tomcat
 
 {bdg-secondary}`Applicable for Liferay DXP 7.4+ or Liferay Portal 7.4+`

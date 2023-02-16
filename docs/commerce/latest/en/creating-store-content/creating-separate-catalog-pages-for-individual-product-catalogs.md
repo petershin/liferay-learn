@@ -1,3 +1,6 @@
+---
+uuid: 72290da2-2b25-4aae-b83a-0e21520e2230
+---
 # Creating Separate Catalog Pages for Individual Product Catalogs
 
 Your storefront can contain products from multiple catalogs. Liferay stores Products in Catalogs and displays them in your storefront using a *Catalog Page*. See [Creating a Catalog Page](./creating-a-catalog-page.md) for more information. Since different catalogs can contain different kinds of products, you can differentiate them using multiple Catalog Pages.

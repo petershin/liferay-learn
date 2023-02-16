@@ -1,3 +1,6 @@
+---
+uuid: 4a13235b-413d-4b27-ad0b-3e1f3eda5a12
+---
 # Adding Products to a Price List
 
 Once you've created a [Price List](./creating-a-price-list.md), create price entries to add Product SKUs to it. These entries are used when determining a Product's unit price and override an SKU's base price for eligible customers.

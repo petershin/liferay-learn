@@ -1,3 +1,6 @@
+---
+uuid: 08bd5570-7c04-424b-97aa-de1bcedd5d3c
+---
 # IBM Cloud Object Storage
 
 Liferay DXP implements IBM’s [Cloud Object Storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) store with the S3 compatibility layer so that it uses the same configuration as the AWS S3 store. Once you've set up your IBM account and created a bucket, you're ready to configure your instance's S3 Store.

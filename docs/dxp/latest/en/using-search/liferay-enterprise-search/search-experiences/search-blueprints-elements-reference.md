@@ -1,3 +1,6 @@
+---
+uuid: 0c38a48d-209a-428e-9d6c-72b0d8a52646
+---
 # Search Blueprints Elements Reference
 
 Elements are one of the fundamental building blocks of a [Search Blueprint](understanding-search-blueprints.md#what-is-a-blueprint). To explore all the available Elements, navigate to the Global Menu (![Global](../../../images/icon-applications-menu.png)) &rarr; Applications &rarr; Blueprints. Open the Elements tab, find an Element of interest, and click on it. You'll see the full JSON representation of the Element.

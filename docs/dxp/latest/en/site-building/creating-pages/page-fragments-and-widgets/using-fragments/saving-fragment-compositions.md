@@ -1,3 +1,6 @@
+---
+uuid: e6e7bd72-a79e-420a-be70-04c947330763
+---
 # Saving Fragment Compositions
 
 Layout and composition are the foundation of your Page design. When you get this right, your Pages are easier to read and navigate, resulting in a richer and more consistent user experience. Using the Container and Grid layout elements, you can define drop zones, create a complex composition, and then save your composition as a new Fragment. It can then be reused in other Pages and Templates that support Fragments.

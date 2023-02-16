@@ -1,3 +1,6 @@
+---
+uuid: f6802b83-5cfc-4a6d-b694-9929f6e2699e
+---
 # Shop by Diagram
 
 {bdg-primary}`Subscription`

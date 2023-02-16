@@ -1,3 +1,6 @@
+---
+uuid: 7466aaad-9beb-47b5-9a79-9d85dad0a8b4
+---
 # Using Poshi Resources
 
 Once the Poshi resources jar file is loaded onto your Poshi project, you are now able to use Liferay's commonly used functions, paths, and macros. To distinguish between files from the Poshi resources jar file and those from the local file system, use the following name spaces.

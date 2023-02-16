@@ -1,8 +1,9 @@
 ---
 toc:
-- ./localization/adding-a-language.md
-- ./localization/automatically-generating-translations.md
-- ./localization/reference.md
+  - ./localization/adding-a-language.md
+  - ./localization/automatically-generating-translations.md
+  - ./localization/reference.md
+uuid: 042d2a32-637e-4e6f-b427-7fe8657f2710
 ---
 # Localization
 

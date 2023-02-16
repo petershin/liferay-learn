@@ -1,3 +1,6 @@
+---
+uuid: cea22d75-c0cb-4779-aa96-a46146e5b201
+---
 # Channels Reference Guide
 
 > Commerce 2.1+

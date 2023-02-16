@@ -1,3 +1,6 @@
+---
+uuid: ecd1e007-fed9-43d2-9ece-555400785952
+---
 # Message Boards Configuration Reference
 
 This article documents configuration settings available in the _Message Boards_ app. To view the _Message Boards_ app's Configuration screen:

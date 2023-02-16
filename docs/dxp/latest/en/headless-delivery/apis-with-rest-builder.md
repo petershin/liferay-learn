@@ -1,6 +1,8 @@
 ---
 toc:
-- ./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
+  - >-
+    ./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
+uuid: 1cd3cf62-1959-472f-a21f-ee5293e91c54
 ---
 # APIs with REST Builder
 

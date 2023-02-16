@@ -1,3 +1,6 @@
+---
+uuid: 70d64dba-0479-4d06-a593-ba19ecd27eae
+---
 # Setting Rates for Tax Calculations
 
 Liferay Commerce includes built-in tools for defining and applying tax rates to Product and shipping costs. These rates are calculated using configurable Tax Engines and are added to [Tax Categories](./creating-tax-categories.md). You can then [apply tax rates](./applying-tax-rates.md) to Channel Products and shipping costs by assigning the Tax Category to them.

@@ -1,3 +1,6 @@
+---
+uuid: f5b4dd39-457e-4cca-b99f-9dd99a0fff8c
+---
 # Removing Relationships
 
 {bdg-secondary}`Available Liferay 7.4 U26+/GA26+`

@@ -1,3 +1,6 @@
+---
+uuid: be0bd2e9-fb25-4210-b5a4-16563713ae7a
+---
 # Clay Labels and Links
 
 Liferay Clay taglibs provide tags for creating labels and links in your app. Both of these elements are covered below.

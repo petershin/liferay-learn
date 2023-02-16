@@ -1,3 +1,6 @@
+---
+uuid: 5ac040c5-195f-48d2-812e-0e024637d1c5
+---
 # Deleting Objects
 
 {bdg-secondary}`Available Liferay 7.4 U26+ and GA26+`

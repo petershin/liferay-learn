@@ -1,3 +1,6 @@
+---
+uuid: 06add195-7711-4d96-bbb9-57560e5b9ce1
+---
 # Using the Recycle Bin
 
 Recycle Bin functionality is available for the following assets:

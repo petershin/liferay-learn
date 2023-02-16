@@ -1,3 +1,6 @@
+---
+uuid: 8fb569a3-303a-4845-970b-f5d7d8423142
+---
 # Configuring the Recycle Bin
 
 The Recycle Bin supports instance-wide scope or Site-specific scope. By default, the Recycle Bin is enabled instance-wide.

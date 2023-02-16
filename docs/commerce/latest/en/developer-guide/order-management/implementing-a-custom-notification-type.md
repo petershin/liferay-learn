@@ -1,3 +1,6 @@
+---
+uuid: 147dfb06-9bea-43fd-a872-10039ca73c04
+---
 # Implementing a Custom Notification Type
 
 You can configure Liferay Commerce to send email notifications for a variety of event triggers in your store. When there's no out-of-the-box notification trigger that fits your needs, you can implement your own. 

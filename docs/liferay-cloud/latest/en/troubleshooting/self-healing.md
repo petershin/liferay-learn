@@ -1,3 +1,6 @@
+---
+uuid: 6a527df3-5d56-4647-85a2-278add6b72cb
+---
 # Self-Healing
 
 The self-healing functionality of Liferay Cloud detects if a service or application has become unresponsive and automatically initiates procedures to recover the unresponsive service. The platform uses probes to monitor the services.

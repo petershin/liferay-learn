@@ -1,3 +1,6 @@
+---
+uuid: 7b752df8-69b3-4430-8460-a044a155f464
+---
 # Clay Management Toolbar
 
 The Management Toolbar gives administrators control over search container results in their apps. It lets you filter, sort, and choose a view type for search results, so you can quickly identify the document, web content, asset entry, or whatever you're looking for. The Management Toolbar is fully customizable, so you can implement all the controls or just the ones your app requires. 

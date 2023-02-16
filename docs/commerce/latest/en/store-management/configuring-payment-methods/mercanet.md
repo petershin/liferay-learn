@@ -1,3 +1,6 @@
+---
+uuid: acb33a41-7083-4874-8e8e-f6aa1d284b2c
+---
 # Mercanet
 
 This article details how to enable Mercanet as a payment method. Because Mercanet accepts **only EUR**, the store's primary currency must be EUR.

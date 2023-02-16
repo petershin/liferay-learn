@@ -1,3 +1,6 @@
+---
+uuid: 686de7ce-4bdf-420f-af40-065b8b2173e3
+---
 # Configuring Default Email Senders
 
 By default, emails sent by Liferay DXP use the name and email address as the default admin user. This behavior can be configured for each of the different email types.

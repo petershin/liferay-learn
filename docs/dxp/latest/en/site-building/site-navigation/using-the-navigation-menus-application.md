@@ -1,3 +1,6 @@
+---
+uuid: c3705221-e68c-4c52-99aa-617e5b365956
+---
 # Using the Navigation Menus Application
 
 The Navigation Menus application is used to create custom menus for Site Pages and content. With it, you can determine which elements are included in a menu, and how they're organized. Once created, you can display your custom menus using [Page Fragments](../creating-pages/page-fragments-and-widgets/using-fragments.md) or [Widgets](../creating-pages/using-widget-pages/adding-widgets-to-a-page.md).

@@ -1,3 +1,6 @@
+---
+uuid: a2e1b165-0eab-4626-ba37-87109871a413
+---
 # Authentication
 
 This article documents the two types of authentication requests used by Liferay Cloud.

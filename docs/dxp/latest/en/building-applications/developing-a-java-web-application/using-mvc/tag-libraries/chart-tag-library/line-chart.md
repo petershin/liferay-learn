@@ -1,3 +1,6 @@
+---
+uuid: 657b9ab0-95da-4bae-a439-b4c60f6c5d45
+---
 # Line Charts
 
 Line charts contain multiple sets of data. A Line chart displays the data linearly. Each data series (created with the `addColumns()` method) is defined with a new instance of the  [`MultiValueColumn` object](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html), which takes an ID and a set of values. Follow these steps to configure your portlet to use line charts. 

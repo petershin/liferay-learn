@@ -1,3 +1,6 @@
+---
+uuid: e936c7a0-cfb6-41c2-ad5c-ff687fa9bce8
+---
 # Upgrading to a New Docker Image
 
 As new Liferay versions are released as Docker images, you can upgrade to them. [Upgrade Basics](../../upgrading-liferay/upgrade-basics.md) describes the process.

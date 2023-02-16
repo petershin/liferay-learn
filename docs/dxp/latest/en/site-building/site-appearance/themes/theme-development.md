@@ -1,8 +1,9 @@
 ---
 toc:
-- ./theme-development/getting-started.md
-- ./theme-development/working-with-templates.md
-- ./theme-development/bundling-resources.md
+  - ./theme-development/getting-started.md
+  - ./theme-development/working-with-templates.md
+  - ./theme-development/bundling-resources.md
+uuid: e7038c92-9621-4117-8e02-841150cc9bb3
 ---
 # Theme Development
 

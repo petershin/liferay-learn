@@ -1,3 +1,6 @@
+---
+uuid: 69f3fd6d-cc4a-4e49-a547-a629debd09dd
+---
 # Adding a New Analytics Service
 
 Liferay DXP includes support for Google Analytics and Piwik for analyzing traffic on your Site. If you require a different analytics service, you can add it for your Site. Follow these steps to enable a new analytics service:

@@ -1,3 +1,6 @@
+---
+uuid: 269282da-7ca5-4497-a2ea-c87312f51dca
+---
 # Adding Model Hints
 
 Once you've used Service Builder to define model entities, you may want to refine how users enter that data. Model hints specify entity data restrictions and other formatting. For example, model hints can define a calendar field with dates selectable in the future only.

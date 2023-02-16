@@ -1,3 +1,6 @@
+---
+uuid: 3dcb176e-6a50-4150-97ad-e40f83663c8b
+---
 # Developer Guide
 
 ```{toctree}

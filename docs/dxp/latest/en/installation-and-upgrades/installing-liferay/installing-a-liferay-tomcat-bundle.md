@@ -1,3 +1,6 @@
+---
+uuid: dda1b7ff-a93d-425e-b603-68c2680cc607
+---
 # Installing a Liferay-Tomcat Bundle
 
 The Tomcat Bundle includes the Apache Tomcat application server with Liferay DXP/Portal pre-deployed. It's the easiest, fastest way to install Liferay on premises.

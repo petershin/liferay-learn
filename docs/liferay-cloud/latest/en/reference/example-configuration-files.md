@@ -1,3 +1,6 @@
+---
+uuid: d12d6ecd-c85d-4b73-ba13-101961c4555d
+---
 # Example Configuration Files
 
 Different services in Liferay Cloud (such as the [search](../platform-services/search-service.md) and [web server](../platform-services/web-server-service.md) services) use configuration files to perform what you might be used to handling differently in an on-premises environment. Here are some example resources you can use as a starting point to see what these files look like when you are getting started with Liferay Cloud.

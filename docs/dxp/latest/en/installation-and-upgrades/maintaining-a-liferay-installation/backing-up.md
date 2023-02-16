@@ -1,3 +1,6 @@
+---
+uuid: bf88d1be-6f7e-4488-9afa-a0197ad45136
+---
 # Backing Up
 
 Once you have your DXP installation running, you should implement a comprehensive backup plan that accounts for unforeseen events. Backup copies are also valuable for testing updates (e.g., DXP upgrades, new plugins, and more).

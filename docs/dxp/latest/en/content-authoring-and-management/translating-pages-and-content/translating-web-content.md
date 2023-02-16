@@ -1,3 +1,6 @@
+---
+uuid: 6f717fa5-9cf3-426e-9df3-b59517a62dc7
+---
 # Translating Web Content
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.3+`

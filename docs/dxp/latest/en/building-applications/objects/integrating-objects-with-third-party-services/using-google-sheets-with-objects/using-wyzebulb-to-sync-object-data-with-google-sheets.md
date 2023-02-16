@@ -1,3 +1,6 @@
+---
+uuid: 7fad70a6-d75c-4284-84f3-6447aadb2049
+---
 # Using Wyzebulb to Sync Object Data with Google Sheets
 
 {bdg-secondary}`Available 7.4+`

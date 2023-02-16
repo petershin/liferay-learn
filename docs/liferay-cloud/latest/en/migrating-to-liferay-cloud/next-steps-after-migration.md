@@ -1,3 +1,6 @@
+---
+uuid: e9b5fd5d-8acd-41fe-83f0-472a585b76c6
+---
 # Stage 8: Next Steps After Migration
 
 Congratulations! If you have completed all of the previous stages in this section, then you have successfully migrated your on-premises Liferay DXP installation to Liferay Cloud!

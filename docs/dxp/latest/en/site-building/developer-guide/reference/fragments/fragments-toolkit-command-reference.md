@@ -1,3 +1,6 @@
+---
+uuid: afe56739-fa42-4145-a09a-24c56a0b9ec8
+---
 # Fragments Toolkit Command Reference
 
 The [Fragments Toolkit](../../developing-page-fragments/using-the-fragments-toolkit.md) can connect to your currently running Liferay DXP instance to import and export fragments. You can even have Fragments that you create with the toolkit imported into Portal automatically. These commands are available:

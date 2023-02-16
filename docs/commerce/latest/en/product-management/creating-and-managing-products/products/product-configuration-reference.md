@@ -1,3 +1,6 @@
+---
+uuid: d0c86b06-4702-4a9b-92a8-f0b7e731f7c2
+---
 # Product Configuration Reference
 
 <!--TASK: Add Intro-->

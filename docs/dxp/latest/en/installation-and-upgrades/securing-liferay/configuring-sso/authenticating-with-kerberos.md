@@ -1,3 +1,6 @@
+---
+uuid: d3514308-54b6-4670-825f-35d510f05256
+---
 # Authenticating with Kerberos
 
 You can use Kerberos to authenticate Microsoft Windows&trade; accounts with Liferay DXP. This is done by using a combination of Liferay DXP's LDAP support and a web server that supports the Kerberos protocol.

@@ -1,3 +1,6 @@
+---
+uuid: 8f6bab5b-dfbf-4f29-a9a8-4e03f0873ecf
+---
 # Making Unauthenticated Requests
 
 By default, Liferay DXP restricts API access for the sake of security, requiring authentication in order to get a valid response. However, in certain cases it may make sense to open up an API for guest access.

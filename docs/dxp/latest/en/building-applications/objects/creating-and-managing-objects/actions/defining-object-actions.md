@@ -1,3 +1,6 @@
+---
+uuid: 196c7b9c-e63b-4072-a33f-71cb75361fc2
+---
 # Defining Object Actions
 
 {bdg-secondary}`Available Liferay 7.4 U33+/GA33+`

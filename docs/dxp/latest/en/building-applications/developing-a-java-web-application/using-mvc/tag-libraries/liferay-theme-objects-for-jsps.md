@@ -1,3 +1,6 @@
+---
+uuid: e07529bb-90f1-4981-9d70-25f01c7257a5
+---
 # Liferay Theme Objects For JSPs
 
 When you include the `<liferay-theme:defineObjects>` tag in your JSP, you gain  access to several Liferay theme objects via variables. These objects are  described in the table below:

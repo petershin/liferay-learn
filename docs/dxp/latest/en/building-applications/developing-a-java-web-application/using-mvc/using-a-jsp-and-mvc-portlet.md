@@ -1,3 +1,6 @@
+---
+uuid: 8eeb7aa6-4e09-4eea-a891-751afab6112b
+---
 # Using a JSP and MVC Portlet
 
 An easy way to start developing a web application is to add markup to a JSP file and render it using a portlet Java class.

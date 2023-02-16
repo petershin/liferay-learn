@@ -1,3 +1,6 @@
+---
+uuid: 907b18e2-959f-470d-8e36-282851d177d7
+---
 # Upgrading Modules Using Gogo Shell
 
 To troubleshoot upgrade issues with particular modules, it may be necessary to test and perform upgrades on a per-module basis, instead of en-masse. Liferay has Gogo shell commands for upgrading and verifying individual modules.

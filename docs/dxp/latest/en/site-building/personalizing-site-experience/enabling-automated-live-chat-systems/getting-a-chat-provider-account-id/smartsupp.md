@@ -1,3 +1,6 @@
+---
+uuid: 257e8025-fdff-4f31-88a5-2b711284016c
+---
 # Smartsupp
 
 [Smartsupp](https://www.smartsupp.com/) is multi-channel customer communication platform. This article documents how to locate your Smartsupp account ID in order to [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.

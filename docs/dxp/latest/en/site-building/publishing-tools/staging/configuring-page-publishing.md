@@ -1,3 +1,6 @@
+---
+uuid: 05580c2e-64a1-4fed-a212-aaaaa811ed6d
+---
 # Configuring Page Publishing
 
 By default, publishing a child page to Live also publishes its parent pages. This prevents orphaned pages. Always publishing parent pages to Live, however, can affect performance and prematurely publish the changes to parent pages. If desired, you can configure this behavior to only publish your selected pages, instead of always including parent pages.

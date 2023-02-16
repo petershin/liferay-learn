@@ -1,3 +1,6 @@
+---
+uuid: cf0952a4-8f95-4ad5-ba49-91ab9e84e9fe
+---
 # Creating an Action Executor
 
 Workflow nodes can contain `<action>` elements that execute custom logic via [Groovy scripts](./using-the-script-engine-in-workflow.md).

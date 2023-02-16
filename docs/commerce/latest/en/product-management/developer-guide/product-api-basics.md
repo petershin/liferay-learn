@@ -1,3 +1,6 @@
+---
+uuid: 35ec5e41-96da-4193-9084-17ef41489063
+---
 # Product API Basics
 
 You can manage products from the Applications menu, but you can also use Liferay’s REST APIs. Call these services to create and manage products.

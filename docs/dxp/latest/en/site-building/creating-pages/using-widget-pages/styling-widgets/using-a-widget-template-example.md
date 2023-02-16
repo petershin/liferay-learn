@@ -1,3 +1,6 @@
+---
+uuid: 0c693fc3-55b5-4767-9a9c-e13529a85aae
+---
 # Using a Widget Template Example
 
 Widget Templates are a great tool for customizing how widgets look and feel on your site.

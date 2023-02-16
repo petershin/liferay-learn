@@ -1,3 +1,6 @@
+---
+uuid: 648d34f3-b6f8-4569-93a2-92ce758dc3b4
+---
 # Using Picklists
 
 {bdg-secondary}`Available Liferay 7.4+`

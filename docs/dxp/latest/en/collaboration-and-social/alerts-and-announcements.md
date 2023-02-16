@@ -1,6 +1,7 @@
 ---
 toc:
-- ./alerts-and-announcements/sending-alerts-and-announcements.md
+  - ./alerts-and-announcements/sending-alerts-and-announcements.md
+uuid: 2cc94cb8-39aa-433d-9b15-57a0ba7e9292
 ---
 # Alerts and Announcements
 

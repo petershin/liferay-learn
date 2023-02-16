@@ -1,3 +1,6 @@
+---
+uuid: e1341d2b-d8f6-485d-b8c3-f8f781202d25
+---
 # Creating Form Fragments
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`

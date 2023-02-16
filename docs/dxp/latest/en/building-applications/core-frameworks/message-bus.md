@@ -1,11 +1,12 @@
 ---
 toc:
-- ./message-bus/listening-for-messages.md
-- ./message-bus/using-asynchronous-messaging.md
-- ./message-bus/using-default-synchronous-messaging-in-previous-versions.md
-- ./message-bus/using-direct-synchronous-messaging-in-previous-versions.md
-- ./message-bus/listening-for-registration-events.md
-- ./message-bus/tuning-messaging-performance.md
+  - ./message-bus/listening-for-messages.md
+  - ./message-bus/using-asynchronous-messaging.md
+  - ./message-bus/using-default-synchronous-messaging-in-previous-versions.md
+  - ./message-bus/using-direct-synchronous-messaging-in-previous-versions.md
+  - ./message-bus/listening-for-registration-events.md
+  - ./message-bus/tuning-messaging-performance.md
+uuid: 057c9607-a1e7-4f8c-8442-e22eef0138a5
 ---
 # Message Bus
 

@@ -1,3 +1,6 @@
+---
+uuid: ce4f21a1-f104-4587-aaff-2d7af1b10139
+---
 # Creating Structures
 
 Follow these steps to create a Structure:

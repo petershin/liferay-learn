@@ -1,3 +1,6 @@
+---
+uuid: 5a7cb3ee-21ea-4d58-ab1b-1d4d9af4916f
+---
 # Session Property Vocabularies
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.3+`

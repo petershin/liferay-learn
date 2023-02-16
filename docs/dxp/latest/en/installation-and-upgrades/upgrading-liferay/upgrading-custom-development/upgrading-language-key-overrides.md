@@ -1,3 +1,6 @@
+---
+uuid: d370ab5a-f863-4b48-b4c7-0bf953d0dd6a
+---
 # Upgrading Language Key Overrides
 
 In Liferay DXP/Portal 7.4, Liferay module language keys were moved to the Liferay Portal Language module. Many keys were renamed. If you're overriding a renamed language key, you must update the key name in your module.

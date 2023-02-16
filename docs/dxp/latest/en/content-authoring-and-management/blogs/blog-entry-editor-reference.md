@@ -1,3 +1,6 @@
+---
+uuid: 4337d59d-0f46-4b82-9409-023aa20a7b6b
+---
 # Blog Entry Editor Reference
 
 The blog entry editor provides context appropriate editing tools for formatting text, managing images, tables, and other rich features. Users are able to switch to code view to directly edit the content’s HTML. All draft entries are automatically saved every 25 seconds.

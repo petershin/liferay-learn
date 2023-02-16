@@ -1,3 +1,6 @@
+---
+uuid: 4aff4fb2-9f73-400d-963b-1d4cbd91d891
+---
 # Authenticating with CAS (Central Authentication Service)
 
 ```{important}

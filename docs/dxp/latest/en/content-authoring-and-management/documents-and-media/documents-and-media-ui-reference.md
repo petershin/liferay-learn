@@ -1,3 +1,6 @@
+---
+uuid: ef280e48-9b38-4f8d-8c33-e001c671a9c7
+---
 # Documents and Media UI Reference
 
 The Documents and Media application is used to store, view, and manage files for your Liferay DXP instance. It's available in all Sites and can be enabled for [Asset Libraries](../asset-libraries/asset-libraries-overview.md).

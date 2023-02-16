@@ -1,12 +1,14 @@
 ---
 toc:
-- ./maintaining-a-liferay-installation/backing-up.md
-- ./maintaining-a-liferay-installation/updating-liferay.md
-- ./maintaining-a-liferay-installation/updating-previous-versions-of-liferay.md
-- ./maintaining-a-liferay-installation/applying-a-hotfix.md
-- ./maintaining-a-liferay-installation/maintaining-clustered-installations.md
-- ./maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md
-- ./maintaining-a-liferay-installation/reference.md
+  - ./maintaining-a-liferay-installation/backing-up.md
+  - ./maintaining-a-liferay-installation/updating-liferay.md
+  - >-
+    ./maintaining-a-liferay-installation/updating-previous-versions-of-liferay.md
+  - ./maintaining-a-liferay-installation/applying-a-hotfix.md
+  - ./maintaining-a-liferay-installation/maintaining-clustered-installations.md
+  - ./maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md
+  - ./maintaining-a-liferay-installation/reference.md
+uuid: 3278d640-0c76-48fc-83c4-08476c90411a
 ---
 # Maintaining a Liferay Installation
 

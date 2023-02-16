@@ -1,3 +1,6 @@
+---
+uuid: 451a029f-4b51-4f0b-ad9f-5cc5b61b1321
+---
 # Multi-Factor Authentication
 
 Multi-factor authentication (MFA) is required for all Analytics Cloud users. This additional layer of security helps to protect users from cyberattacks such as phishing and man-in-the-middle (MITM) attacks.

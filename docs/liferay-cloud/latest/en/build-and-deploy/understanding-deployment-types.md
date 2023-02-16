@@ -1,3 +1,6 @@
+---
+uuid: 925c6ffe-5305-404c-b509-34b8b096ec9c
+---
 # Understanding Deployment Types
 
 The deployment type of a service determines many different facets of how the service functions, including performance, memory usage, and access to files or volumes. Liferay Cloud provides two deployment types for its services: `Deployment` and `StatefulSet`.

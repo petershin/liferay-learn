@@ -1,12 +1,13 @@
 ---
 toc:
-- ./workspace-settings/managing-users.md
-- ./workspace-settings/managing-properties.md
-- ./workspace-settings/tracking-usage.md
-- ./workspace-settings/managing-workspaces.md
-- ./workspace-settings/multi-factor-authentication.md
-- ./workspace-settings/scoping-sites-and-individuals-using-properties.md
-- ./workspace-settings/contact-sync-data-reference.md
+  - ./workspace-settings/managing-users.md
+  - ./workspace-settings/managing-properties.md
+  - ./workspace-settings/tracking-usage.md
+  - ./workspace-settings/managing-workspaces.md
+  - ./workspace-settings/multi-factor-authentication.md
+  - ./workspace-settings/scoping-sites-and-individuals-using-properties.md
+  - ./workspace-settings/contact-sync-data-reference.md
+uuid: 94021e7e-e0c0-4586-8a67-469ddddecd50
 ---
 # Workspace Settings
 

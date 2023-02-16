@@ -1,3 +1,6 @@
+---
+uuid: 16455895-2b77-463c-bc0c-ed767b740b02
+---
 # Using Routes with Custom Elements
 
 {bdg-secondary}`Available Liferay 7.4+`

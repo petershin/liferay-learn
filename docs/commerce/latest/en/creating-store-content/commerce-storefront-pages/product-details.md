@@ -1,3 +1,6 @@
+---
+uuid: 54662e04-b6e9-4013-a403-a20aeb306132
+---
 # Product Details
 
 The Product Details page displays important information of a product. The Product Details page can contain information such as a short description about the product, its specifications, and product images. The Product Details page may also contain links to [related products](../../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md).

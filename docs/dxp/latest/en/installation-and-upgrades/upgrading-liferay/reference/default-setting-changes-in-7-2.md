@@ -1,3 +1,6 @@
+---
+uuid: e45e645c-c070-49d1-81a6-30379aa8cd0e
+---
 # Default Setting Changes in 7.2
 
 Most new versions of Liferay include changes to the default settings. If you rely on the defaults from your old version, you should review the changes and decide to keep the defaults from your old version or accept the defaults of the new.

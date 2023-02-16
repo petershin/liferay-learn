@@ -1,3 +1,6 @@
+---
+uuid: e97f576f-2c3b-433a-bcda-2cdbffa0ad79
+---
 # Creating a Price List
 
 Price Lists are entities for creating and storing SKU price entries that target specific Accounts and Channels. These entries are used when determining a Product's unit price and override or modify Base Price List entries for eligible customers. You can also define custom [Price Modifiers](./using-price-modifiers.md) for each Price List.

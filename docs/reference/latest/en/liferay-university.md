@@ -1,3 +1,6 @@
+---
+uuid: 22d3101d-e411-429b-b0e0-3c9408f0670a
+---
 # Liferay University
 
 This page serves as an archive and index of videos that were previously hosted on Liferay University. As of February 28, 2023 Liferay University is no longer operational. However, we have taken the initiative to preserve the videos here for your continued viewing convenience. 

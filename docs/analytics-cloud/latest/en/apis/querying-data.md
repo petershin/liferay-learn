@@ -1,3 +1,6 @@
+---
+uuid: bd2dad66-a3dc-47c2-b5d7-91a0c7fcadce
+---
 # Querying Data
 
 The root endpoint of Liferay Analytics Cloud is <https://analytics.liferay.com/api/reports>. You can get the list of all data types endpoints by requesting a GET to the above URL. Try with curl

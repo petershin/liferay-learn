@@ -1,3 +1,6 @@
+---
+uuid: 7c2a9226-d83e-4727-bf52-72974c1645f9
+---
 # Using Liferay Util Buffer
 
 The buffer tag is not a self-closing tag. The content placed between the opening and closing of this tag is saved to a buffer and its output is assigned to the Java variable declared with the tag's `var` attribute. The output is returned as a String, letting you post-process it. For example, you can use this to [override a JSP's existing contents](https://help.liferay.com/hc/en-us/articles/360029122451-JSP-Overrides-Using-OSGi-Fragments). 

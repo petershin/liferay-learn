@@ -1,3 +1,6 @@
+---
+uuid: da11494c-c781-41b6-8b91-4e4d117851c3
+---
 # Creating a Master Page Template
 
 > Available: Liferay DXP/Portal 7.3+

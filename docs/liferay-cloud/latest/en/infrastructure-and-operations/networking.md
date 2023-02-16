@@ -1,11 +1,12 @@
 ---
 toc:
-- ./networking/private-network.md
-- ./networking/vpn-integration-overview.md
-- ./networking/configuring-a-vpn-server.md
-- ./networking/connecting-a-vpn-server-to-liferay-cloud.md
-- ./networking/custom-domains.md
-- ./networking/load-balancer.md
+  - ./networking/private-network.md
+  - ./networking/vpn-integration-overview.md
+  - ./networking/configuring-a-vpn-server.md
+  - ./networking/connecting-a-vpn-server-to-liferay-cloud.md
+  - ./networking/custom-domains.md
+  - ./networking/load-balancer.md
+uuid: b7876b94-de3c-4a47-9aef-a6276f068518
 ---
 # Networking
 

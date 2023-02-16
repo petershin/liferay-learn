@@ -1,3 +1,6 @@
+---
+uuid: 441c07d0-8ab3-4a39-82e6-3702dcf45e22
+---
 # Enabling Publications
 
 > Available: Liferay DXP/Portal 7.3+

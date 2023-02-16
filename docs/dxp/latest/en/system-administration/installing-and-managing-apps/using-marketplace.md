@@ -1,3 +1,6 @@
+---
+uuid: 4c738c97-2353-451e-bef7-f3c9361e1b4a
+---
 # Using Marketplace
 
 Liferay Marketplace is a hub for sharing, browsing, and downloading apps. Marketplace leverages the entire Liferay ecosystem to release and share apps in a user-friendly, one-stop shop.

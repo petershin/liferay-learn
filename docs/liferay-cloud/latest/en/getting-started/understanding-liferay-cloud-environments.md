@@ -1,3 +1,6 @@
+---
+uuid: 05b875de-ea99-47d9-885d-424b25a25a85
+---
 # Understanding Liferay Cloud Environments
 
 A Liferay Cloud project can have multiple environments, each for a different purpose (e.g., development, staging, production, etc.). Each environment has a unique name that is the project ID plus the environment ID. For example, the staging and production environments for a project named *acme* can be named *acme-uat* and *acme-prd*, respectively.

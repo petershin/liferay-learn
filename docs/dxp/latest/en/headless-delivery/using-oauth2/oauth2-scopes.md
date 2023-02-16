@@ -1,3 +1,6 @@
+---
+uuid: e5376c2e-4ff3-4412-9977-c5e3499c9a12
+---
 # OAuth 2 Scopes
 
 In OAuth 2.0, applications are granted access to limited subsets of user data. These are called *scopes* (not to be confused with Liferay scopes). They are created in two ways:

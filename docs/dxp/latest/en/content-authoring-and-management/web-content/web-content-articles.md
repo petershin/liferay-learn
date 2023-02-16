@@ -1,7 +1,8 @@
 ---
 toc:
-- ./web-content-articles/adding-a-basic-web-content-article.md
-- ./web-content-articles/filtering-and-sorting-web-content-articles.md
+  - ./web-content-articles/adding-a-basic-web-content-article.md
+  - ./web-content-articles/filtering-and-sorting-web-content-articles.md
+uuid: 37e47bd5-4bf0-4194-932f-f4076c16d1e6
 ---
 # Web Content Articles
 

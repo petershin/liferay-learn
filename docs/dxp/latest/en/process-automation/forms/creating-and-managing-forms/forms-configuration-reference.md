@@ -1,3 +1,6 @@
+---
+uuid: bbfca008-42a3-4c93-af71-b520df343a4f
+---
 # Forms Configuration Reference
 
 Here's an overview of all the Forms configurations so you can quickly find a configuration you need.

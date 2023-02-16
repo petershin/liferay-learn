@@ -1,3 +1,6 @@
+---
+uuid: 78742a71-a87c-49a6-9d9b-f27d1425fb54
+---
 # Using Factory Configuration
 
 Most Liferay DXP System Settings allow just one set of configurations for an entry. To change the configuration, you update the single configuration form, and it applies throughout the [affected configuration scope](../understanding-configuration-scope.md). Less commonly, a configuration supports multiple entries that simultaneously coexist: these are called *factory configurations*. For factory configurations, each configuration set provides a unique configuration. A common usage is for configuring system-scoped connections to third party servers (e.g., LDAP and Elasticsearch). Since each connection to these servers requires unique configuration values, a factory configuration is used to make it possible.

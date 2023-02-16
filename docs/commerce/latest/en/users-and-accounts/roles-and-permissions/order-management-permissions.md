@@ -1,3 +1,6 @@
+---
+uuid: 49578273-d710-4230-9997-9e62279a3c5e
+---
 # Order Management Permissions
 
 With Liferay Commerce, you can use permissions to control access to Order Management applications and resources in the Commerce tab of the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).

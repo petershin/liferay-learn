@@ -1,3 +1,6 @@
+---
+uuid: 1e9eb25c-6a52-4a6e-af8d-46cca514e7d2
+---
 # Defining Entity Relationships
 
 Relationships between database entities or Java objects are necessary for most applications. Take Liferay's Message Boards application as an example. Each Message Board message belongs to a specific Message Board thread. A Message Board thread might also belong to a specific Message Board category. 

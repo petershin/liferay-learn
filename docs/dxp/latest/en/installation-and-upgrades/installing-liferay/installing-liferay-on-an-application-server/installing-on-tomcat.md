@@ -1,3 +1,6 @@
+---
+uuid: 14f37389-738c-415b-840c-e405e65fe58a
+---
 # Installing on Tomcat
 
 ```{important}

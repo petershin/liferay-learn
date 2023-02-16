@@ -1,9 +1,10 @@
 ---
 toc:
-- ./apis/authentication.md
-- ./apis/querying-data.md
-- ./apis/exporting-data.md
-- ./apis/resource-types-and-structure.md
+  - ./apis/authentication.md
+  - ./apis/querying-data.md
+  - ./apis/exporting-data.md
+  - ./apis/resource-types-and-structure.md
+uuid: 41697836-f8f5-40a5-83d8-93c85c186be8
 ---
 # APIs
 

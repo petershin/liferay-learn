@@ -1,3 +1,6 @@
+---
+uuid: 2c430054-bc69-4108-9abe-aa3f7b1ccb85
+---
 # Using the Variable Rate Shipping Method
 
 Variable rate shipping allows shipping costs to be calculated using three factors: weight, order subtotal (cost before shipping, taxes, and discounts), and a configurable flat rate. The store administrator may configure the weighting of each factor in the shipping calculation.

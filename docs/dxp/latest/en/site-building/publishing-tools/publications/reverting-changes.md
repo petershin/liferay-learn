@@ -1,3 +1,6 @@
+---
+uuid: 32c58f12-9408-4ccd-bd8f-5c100c0e99e6
+---
 # Reverting Changes
 
 Liferay Publications maintains a history of all published changes. You can use this publishing history to easily create publications that revert earlier changes to production. While reverting a publication, you can also make additional changes.

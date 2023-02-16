@@ -1,3 +1,6 @@
+---
+uuid: 92b925e3-498f-4d02-be44-40d5252f30e1
+---
 # Upgrading Your Database Tables
 
 {bdg-secondary}`Available Liferay DXP 7.4 U10+ or Liferay Portal 7.4 GA14+`

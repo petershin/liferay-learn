@@ -1,3 +1,6 @@
+---
+uuid: a572a158-c2f6-4816-a7ab-71e7e838c1c6
+---
 # Job Scheduler UI Reference
 
 ## Job Scheduler Triggers

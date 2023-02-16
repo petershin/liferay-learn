@@ -1,3 +1,6 @@
+---
+uuid: 0b2eff48-8918-4c7c-acbb-70da473ed8a5
+---
 # Invoking a Service Locally
 
 Service Builder services that are deployed to DXP/Portal can be invoked from other classes in the same JVM. These services are *local* to the classes.

@@ -1,3 +1,6 @@
+---
+uuid: f4d0e616-3513-4e2d-bebe-ab55ebe28774
+---
 # Automatically Deploying CI Service Builds
 
 With Liferay Cloud, you can use webhooks to automatically trigger Jenkins builds for changes pushed or merged to your project's Git repository (e.g., [GitHub](../getting-started/configuring-your-github-repository.md#integrating-with-the-jenkins-service), [Bitbucket](../getting-started/configuring-your-bitbucket-repository.md#connecting-bitbucket-to-your-jenkins-service), [GitLab](../getting-started/configuring-your-gitlab-repository.md#connecting-gitlab-to-your-jenkins-service)). These builds can then be manually deployed to project environments via the Liferay Cloud Console. Alternatively, you can speed up the deployment process by configuring the CI service to automatically deploy successful builds from a specific branch to a specified environment.

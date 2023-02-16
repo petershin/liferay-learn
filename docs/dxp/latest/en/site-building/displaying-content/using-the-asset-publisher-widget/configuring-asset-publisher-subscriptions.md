@@ -1,3 +1,6 @@
+---
+uuid: bb97bf36-80c8-4194-a570-3af8075cc697
+---
 # Configuring Asset Publisher Subscriptions
 
 The Asset Publisher supports two kinds of subscriptions: email subscriptions and RSS feed subscriptions.

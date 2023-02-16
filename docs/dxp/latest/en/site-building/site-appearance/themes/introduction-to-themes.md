@@ -1,3 +1,6 @@
+---
+uuid: 522406ee-cb1d-4784-897f-8d5e40f991c8
+---
 # Introduction to Themes
 
 Themes customize the default look and feel of your Site. They allow you to define the style and visual identity of your brand or label across your whole Site.

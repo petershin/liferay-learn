@@ -1,3 +1,6 @@
+---
+uuid: 5e55290c-97ec-4400-92ea-d9270143c7d8
+---
 # Introduction to the Admin Account
 
 The Admin User account is created by default in any new installation of Liferay DXP and has full permissions to modify every facet of a Liferay DXP instance. The Admin User can create, modify, and delete Sites, Users, pages, and perform all Site administrative tasks.

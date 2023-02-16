@@ -1,3 +1,6 @@
+---
+uuid: 34e47420-af8c-4c3d-9312-53a4e25a0737
+---
 # Inventory Management Permissions
 
 With Liferay Commerce, you can use permissions to control access to Inventory Management applications and resources in the Commerce tab of the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).

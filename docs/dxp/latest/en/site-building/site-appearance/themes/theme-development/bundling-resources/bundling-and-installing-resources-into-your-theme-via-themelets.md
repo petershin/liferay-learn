@@ -1,3 +1,6 @@
+---
+uuid: caa4e7b7-d76f-4bb4-8198-843afc7fd6ce
+---
 # Bundling and Installing Resources into Your Theme via Themelets
 
 Themelets are small, modular pieces of code that you can reuse in multiple themes. Unlike themes themselves, themelets may only contain the files with your changes. You can use themelets to change all kinds of style or functionality that you would normally define as part of a theme.

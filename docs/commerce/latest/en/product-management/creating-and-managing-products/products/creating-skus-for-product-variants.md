@@ -1,3 +1,6 @@
+---
+uuid: 0fba1f8c-2ddd-4ac2-907e-4789108f581b
+---
 # Creating SKUs for Product Variants
 
 With Liferay Commerce, you can add multiple SKUs to a Product to represent Product variants. To do this, the Product must have at least one [Option](../products/using-product-options.md) with *SKU Contributor* enabled. You can then manually or automatically create multiple active SKUs for a Product using the Option's defined values. Once created, each SKU represents a purchasable version of the Product that's displayed in the Product Details widget.

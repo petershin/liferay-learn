@@ -1,3 +1,6 @@
+---
+uuid: e93a282f-3af0-4df8-b8ee-443721cd8bbc
+---
 # Organizations API Basics
 
 You can [Create and Manage Organizations](../organizations/creating-and-managing-organizations.md) from the Application menu, but you can also use Liferay's REST APIs. Call these services to manage organizations.

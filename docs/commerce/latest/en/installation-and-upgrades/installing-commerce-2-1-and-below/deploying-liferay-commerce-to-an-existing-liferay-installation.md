@@ -1,3 +1,6 @@
+---
+uuid: 468e4ed9-1296-40e1-a69b-8f04b1148a11
+---
 # Deploying Liferay Commerce to an Existing Liferay Installation
 
 This article documents how to deploy Liferay Commerce to an existing Liferay DXP instance. Because Liferay Commerce is built on Liferay DXP, it is necessary to have an existing DXP 7.1 or 7.2 instance running. Prior to following this guide, please review System Requirements.

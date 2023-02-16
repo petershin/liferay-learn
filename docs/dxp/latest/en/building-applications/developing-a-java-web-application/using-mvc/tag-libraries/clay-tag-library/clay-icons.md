@@ -1,3 +1,6 @@
+---
+uuid: 9c9044f6-6452-4dc1-a9e5-78c82b054f1f
+---
 # Clay Icons
 
 The Liferay Clay taglibs provide several icons that you can use in your apps. Use the `clay:icon` tag and specify the icon with the `symbol` attribute:

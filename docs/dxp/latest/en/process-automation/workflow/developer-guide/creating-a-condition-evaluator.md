@@ -1,3 +1,6 @@
+---
+uuid: fa29b986-d19b-4a50-aac7-6bfcf0f205a3
+---
 # Creating a Condition Evaluator
 
 A Workflow [condition node](../designing-and-managing-workflows/workflow-designer/using-condition-nodes.md) uses a Groovy script to determine the proper transition a workflow item traverses. Instead of writing logic in Groovy directly in a workflow definition `<script>` element, you can deploy Java logic by implementing the `ConditionEvaluator` interface. 

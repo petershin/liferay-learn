@@ -1,16 +1,17 @@
 ---
 toc:
-- ./objects/creating-and-managing-objects.md
-- ./objects/objects-tutorials.md
-- ./objects/using-forms-with-objects.md
-- ./objects/using-fragments-to-build-forms.md
-- ./objects/deploying-object-widgets-to-sites.md
-- ./objects/displaying-object-entries.md
-- ./objects/enabling-workflows-for-objects.md
-- ./objects/picklists.md
-- ./objects/understanding-object-integrations.md
-- ./objects/objects-application-permissions.md
-- ./objects/integrating-objects-with-third-party-services.md
+  - ./objects/creating-and-managing-objects.md
+  - ./objects/objects-tutorials.md
+  - ./objects/using-forms-with-objects.md
+  - ./objects/using-fragments-to-build-forms.md
+  - ./objects/deploying-object-widgets-to-sites.md
+  - ./objects/displaying-object-entries.md
+  - ./objects/enabling-workflows-for-objects.md
+  - ./objects/picklists.md
+  - ./objects/understanding-object-integrations.md
+  - ./objects/objects-application-permissions.md
+  - ./objects/integrating-objects-with-third-party-services.md
+uuid: 58767c90-dc9b-4aad-b650-b6beb9dcce77
 ---
 # Objects
 

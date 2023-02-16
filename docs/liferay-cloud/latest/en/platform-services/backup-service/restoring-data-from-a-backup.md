@@ -1,3 +1,6 @@
+---
+uuid: b323c5f9-5ba1-4468-8b8c-5c16c36b3078
+---
 # Restoring Data from a Backup
 
 During project development, there may be times when you need to restore data or roll back the project to an earlier state. Restoring a backup to an environment restores the data for each service, but it does *not* change the build the environment is using.

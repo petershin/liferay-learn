@@ -1,3 +1,6 @@
+---
+uuid: f2b9e469-c8cc-44ca-a7e6-cff4d6dbe2b4
+---
 # Translating Content Pages
 
 {bdg-secondary}`Available Liferay 7.4 U15+ and GA15+`

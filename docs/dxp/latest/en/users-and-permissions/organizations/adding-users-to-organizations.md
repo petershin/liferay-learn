@@ -1,3 +1,6 @@
+---
+uuid: 25c27048-c3c2-4591-837d-4b8b19010b77
+---
 # Adding Users to Organizations
 
 With Liferay [Organizations](./understanding-organizations.md), you can manage Users and permissions to model your real-life organizational hierarchy, which can then be quickly implemented in [Organization Sites](./organization-sites.md). You can either assign existing portal Users to an Organization, or create new Users with a specific Organization affiliation.

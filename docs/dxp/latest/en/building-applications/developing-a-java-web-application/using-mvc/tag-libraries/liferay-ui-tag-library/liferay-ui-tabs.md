@@ -1,3 +1,6 @@
+---
+uuid: 28f0a880-33b1-48fe-bb1c-044574fa513e
+---
 # Liferay UI Tabs
 
 Tabs create dividers that organize content into individual sections. Content can be embedded or included from another JSP. 

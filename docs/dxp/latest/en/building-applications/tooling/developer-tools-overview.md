@@ -1,3 +1,6 @@
+---
+uuid: ed5d9ac8-33ab-479d-b091-8ee0d7328832
+---
 # Developer Tools Overview
 
 Liferay provides a variety of developer tools that include standard build scripting, lightweight CLI utilities, and full IDE based on Eclipse. This is to serve all developers, whether you're just starting out or have been writing code for many years. All of Liferay's development tools work on Linux, Mac, and Windows platforms.

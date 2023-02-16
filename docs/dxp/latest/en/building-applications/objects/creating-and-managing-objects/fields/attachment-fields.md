@@ -1,3 +1,6 @@
+---
+uuid: 2fa3dbf3-29fb-47bc-82c0-81dde1b08003
+---
 # Attachment Fields
 
 Attachment fields are for uploading files to your instance's [Document Library](../../../../system-administration/file-storage.md). When uploaded, the file is linked to the entry's attachment field, and each field can only be linked to one file at a time. A file inherits its scope from the object definition (i.e., company or site). Once attached, you can view an object entry to download the file or remove it from the field. Beginning with 7.4 U45/GA45, you can also download entry attachments from the [object's application page](../views/designing-object-views.md).

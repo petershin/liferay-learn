@@ -1,3 +1,6 @@
+---
+uuid: fab040c9-9f5b-4d50-993f-b796ecf72a20
+---
 # Liferay Faces Alloy
 
 Liferay Faces Alloy is distributed in a `.jar` file. You can add Liferay Faces Alloy as a dependency to your portlet projects, to use AlloyUI in a way that is consistent with JSF development. 

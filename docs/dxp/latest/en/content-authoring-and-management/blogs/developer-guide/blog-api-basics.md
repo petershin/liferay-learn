@@ -1,3 +1,6 @@
+---
+uuid: e4700cd7-9a0b-43df-b750-22d86f7bf3a7
+---
 # Blog API Basics
 
 Liferay's REST API's provide services for adding, modifying, and deleting blog posts and images. 

@@ -1,3 +1,6 @@
+---
+uuid: df1d2c24-ffa5-4676-9cec-d8a77d8ba3ea
+---
 # Using the Inventory Management System
 
 You can use Liferay's inventory management system to manage inventory for product SKUs in your instance. This system provides these features for managing SKUs:

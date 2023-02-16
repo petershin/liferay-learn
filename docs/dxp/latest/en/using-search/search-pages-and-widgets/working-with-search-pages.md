@@ -1,8 +1,9 @@
 ---
 toc:
-- ./working-with-search-pages/search-pages.md
-- ./working-with-search-pages/creating-a-search-page.md
-- ./working-with-search-pages/using-a-search-page-template.md
+  - ./working-with-search-pages/search-pages.md
+  - ./working-with-search-pages/creating-a-search-page.md
+  - ./working-with-search-pages/using-a-search-page-template.md
+uuid: 6fee9aa1-ef99-4c9a-af28-6789728ce4fe
 ---
 # Working with Search Pages
 

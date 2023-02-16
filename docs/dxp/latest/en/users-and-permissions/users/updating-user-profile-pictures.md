@@ -1,3 +1,6 @@
+---
+uuid: 2a8e22cc-86d5-4d2b-8e80-8d8791f1b947
+---
 # Updating User Profile Pictures
 
 Users have profile pictures. Administrative Users can upload images in the Edit User form, and Users can update their own account information, including profile image.

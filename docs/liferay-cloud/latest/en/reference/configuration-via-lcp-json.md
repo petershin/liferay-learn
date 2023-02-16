@@ -1,3 +1,6 @@
+---
+uuid: 06e5f4cf-f80e-4ba3-b0fb-df7058b8b4bb
+---
 # Configuration via LCP.json
 
 Each service in your Liferay Cloud environments has an `LCP.json` file that you can use to configure the service. You can configure properties like the service ID, memory, number of CPUs, environment variables, volumes, and much more.

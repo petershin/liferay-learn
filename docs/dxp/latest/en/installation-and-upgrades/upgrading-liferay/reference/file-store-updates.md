@@ -1,3 +1,6 @@
+---
+uuid: 6f89f6d8-6fe5-4daf-823a-693f30c90826
+---
 # File Store Updates
 
 File store options and configuration values changed in Liferay DXP 7.0. If you're on 7.0 or earlier and are affected by these changes, you must update your file store _before_ upgrading your DXP database.

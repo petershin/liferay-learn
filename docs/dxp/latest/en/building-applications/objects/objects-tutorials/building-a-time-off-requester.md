@@ -1,3 +1,6 @@
+---
+uuid: 859fbb23-6865-49ab-93a3-8ef9b6362ec5
+---
 # Building a Time Off Requester
 
 > Available: Liferay DXP/Portal 7.4+

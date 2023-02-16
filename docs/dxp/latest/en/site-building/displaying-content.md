@@ -1,10 +1,11 @@
 ---
 toc:
-- ./displaying-content/displaying-content-intro.md
-- ./displaying-content/using-the-asset-publisher-widget.md
-- ./displaying-content/using-display-page-templates.md
-- ./displaying-content/additional-content-display-options.md
-- ./displaying-content/using-information-templates.md
+  - ./displaying-content/displaying-content-intro.md
+  - ./displaying-content/using-the-asset-publisher-widget.md
+  - ./displaying-content/using-display-page-templates.md
+  - ./displaying-content/additional-content-display-options.md
+  - ./displaying-content/using-information-templates.md
+uuid: c3605866-6611-43cb-85f3-0f2853f6b5f4
 ---
 # Displaying Content
 

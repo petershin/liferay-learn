@@ -1,3 +1,6 @@
+---
+uuid: 6a7f98e6-5edb-4bda-8cce-9aedcdc28216
+---
 # Site Appearance
 
 The design and functionality of a Liferay site can be adjusted and customized through a variety of complementary mechanisms. This table summarizes and contrasts which Liferay functions and tools can be used to achieve common tasks and goals:

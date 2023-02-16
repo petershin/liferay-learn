@@ -1,3 +1,6 @@
+---
+uuid: 2043c5f9-9d15-4617-a6e3-c5c6a88f1944
+---
 # Order Management Statuses Reference Guide
 
 > Liferay Commerce 2.0

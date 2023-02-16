@@ -1,3 +1,6 @@
+---
+uuid: 2594cf03-2494-497d-abb7-2eec5494ddba
+---
 # Catalog
 
 The Catalog page is the primary way for users to browse, search, and select Channel Products. Both the Minium and Speedwell accelerators include the following widgets in their Catalog pages:

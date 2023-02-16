@@ -1,3 +1,6 @@
+---
+uuid: 4e674e72-10be-403f-a38d-3fb01d5bd7d3
+---
 # Defining Document Types
 
 In Liferay, Document Types are templates used for uploading files and categorizing them in Documents and Media. These templates are created using metadata fields and provide additional, searchable information for uploaded files.

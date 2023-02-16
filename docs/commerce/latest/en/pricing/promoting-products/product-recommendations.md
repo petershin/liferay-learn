@@ -1,7 +1,8 @@
 ---
 toc:
-- ./product-recommendations/using-product-recommendations.md
-- ./product-recommendations/understanding-recommendation-types.md
+  - ./product-recommendations/using-product-recommendations.md
+  - ./product-recommendations/understanding-recommendation-types.md
+uuid: d483669d-426f-464f-9cc7-7329e66b3f99
 ---
 # Product Recommendations
 

@@ -1,3 +1,6 @@
+---
+uuid: 18145a4a-781e-4d15-93de-17683b8b2bad
+---
 # Using Zapier to Sync Object Data with Google Sheets
 
 {bdg-secondary}`Available 7.4+`

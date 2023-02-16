@@ -1,3 +1,6 @@
+---
+uuid: 4eea6cd8-f95c-428d-9b9f-ee2292b0e675
+---
 # Understanding Action Types
 
 Actions define custom operations triggered by object entry events. Liferay Objects provides four action types:

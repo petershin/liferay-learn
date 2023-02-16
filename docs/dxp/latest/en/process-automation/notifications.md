@@ -1,8 +1,9 @@
 ---
 toc:
-- ./notifications/configuring-personal-notifications.md
-- ./notifications/creating-notification-templates.md
-- ./notifications/using-the-notification-queue.md
+  - ./notifications/configuring-personal-notifications.md
+  - ./notifications/creating-notification-templates.md
+  - ./notifications/using-the-notification-queue.md
+uuid: 40b42b3f-1d9b-4dd8-882d-a490ae43d603
 ---
 # Notifications
 

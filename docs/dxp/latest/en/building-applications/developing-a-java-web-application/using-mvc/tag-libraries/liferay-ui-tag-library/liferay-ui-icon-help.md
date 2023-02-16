@@ -1,3 +1,6 @@
+---
+uuid: 63421f0b-800a-49b9-8fc0-e84486a09389
+---
 # Liferay UI Icon Help
 
 The icon help tag lets you communicate additional information to your users in an unobtrusive way. It renders as an iconic question mark that provides more information through a pop-up tooltip on mouse over. You can see an example of this in the Control Panel:

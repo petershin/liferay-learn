@@ -1,3 +1,6 @@
+---
+uuid: 5d20bacf-bf93-4c17-86b7-fc55128da63d
+---
 # Accessing Documents with WebDAV
 
 You can access the Document Library from your desktop file manager via [WebDAV](https://en.wikipedia.org/wiki/WebDAV). WebDAV is a protocol based on HTTP for managing files stored on web servers. WebDAV is supported by most major operating systems and desktop environments, including Linux, macOS, and Windows.

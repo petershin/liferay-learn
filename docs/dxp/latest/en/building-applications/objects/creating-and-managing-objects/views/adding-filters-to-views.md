@@ -1,3 +1,6 @@
+---
+uuid: a86d41a7-27d7-48a2-8ef2-5969338ddb94
+---
 # Adding Filters to Views
 
 {bdg-secondary}`Available Liferay 7.4 U27+/GA27+`

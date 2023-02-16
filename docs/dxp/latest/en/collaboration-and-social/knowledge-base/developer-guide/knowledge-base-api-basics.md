@@ -1,3 +1,6 @@
+---
+uuid: 7120df4a-f22d-42fd-b574-db3dae8faa2b
+---
 # Knowledge Base API Basics
 
 You can [Create Knowledge Base Articles](../creating-knowledge-base-articles.md) and [Manage the Knowledge Base](../managing-the-knowledge-base.md) with Liferay's Knowledge Base app, but you can also use Liferay's REST APIs. Call these services to create and manage content for your Knowledge Base.

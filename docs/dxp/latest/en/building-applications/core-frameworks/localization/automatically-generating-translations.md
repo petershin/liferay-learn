@@ -1,3 +1,6 @@
+---
+uuid: 1108d1e5-8dc4-419f-bba3-c034dfc8e109
+---
 # Automatically Generating Translations
 
 Liferay DXP supports 50 languages out-of-the-box. Each locale has its own [language properties file](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-language/portal-language-lang/src/main/resources/content) containing keys for its language.

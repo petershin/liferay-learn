@@ -1,3 +1,6 @@
+---
+uuid: 902440c2-2660-44bf-ae5a-71f48dbd32d3
+---
 # Exporting Packages
 
 In OSGi, packages are private by default. You must explicitly exporting a package so other modules can [import](./importing-packages.md) and use them.

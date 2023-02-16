@@ -1,3 +1,6 @@
+---
+uuid: 0a9b9626-48a2-44e9-b120-0b1d55516f62
+---
 # Communication Between Widgets
 
 Portlet widgets can communicate with each other using public render parameters and events. Some Liferay portlets provide a configuration UI to help you get the most out of this communication mechanism. To access your portlet's configuration window, follow the steps below:

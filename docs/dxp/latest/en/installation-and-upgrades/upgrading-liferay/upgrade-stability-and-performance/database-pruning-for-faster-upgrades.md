@@ -1,3 +1,6 @@
+---
+uuid: 5e0538ca-4c57-47b5-9639-d1509bc73220
+---
 # Database Pruning for Faster Upgrades
 
 The more data you have the longer your data upgrade takes. Unneeded site data is a common occurrence. Pruning the database of unneeded data improves upgrade process performance.

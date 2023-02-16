@@ -1,3 +1,6 @@
+---
+uuid: 76092f1f-0ab1-4a37-8eb7-6cba62db0477
+---
 # Using Variables
 
 Though not a Poshi layer, variables are a large part of Poshi tests. Variables, like in other programming languages, are used to store data which can be referenced and reused in tests, macros, and paths. Using variables in path and macro files make them both specific and reusable.

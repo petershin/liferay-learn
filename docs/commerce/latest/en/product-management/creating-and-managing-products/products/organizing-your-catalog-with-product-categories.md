@@ -1,3 +1,6 @@
+---
+uuid: 6fbdb7a7-ce62-47c9-9828-1d76476f0cac
+---
 # Organizing Your Catalog with Product Categories
 
 Products can be organized into Categories. These groupings allow multiple products to be grouped and handled collectively. Product categories can be used to apply discounts or other offers to a set of products, to assist buyers in finding products, or to promote certain products to a specified account or account group.

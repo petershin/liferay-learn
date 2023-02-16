@@ -1,3 +1,6 @@
+---
+uuid: f5191198-3483-40bb-aac1-27b05522db38
+---
 # Aggregating Resource Bundles
 
 When working with a module that shares localized messages, the bnd header must specify the resource bundles you want to associate with the module. Liferay provides a bnd instruction that automatically specifies the necessary parameters for aggregating the resource bundles.

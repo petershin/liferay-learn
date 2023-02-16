@@ -1,3 +1,6 @@
+---
+uuid: a9b635be-f464-4e24-b726-6b8f24fd40c3
+---
 # Defining Object Relationships
 
 {bdg-secondary}`Available Liferay 7.4+`

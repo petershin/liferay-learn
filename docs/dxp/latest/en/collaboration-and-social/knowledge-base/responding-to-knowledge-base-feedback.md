@@ -1,3 +1,6 @@
+---
+uuid: 24c2f691-1998-4f23-acc3-99ae1c1959c2
+---
 # Responding to Knowledge Base Feedback
 
 The Suggestions tab shows feedback on articles. You can mark progress on addressing the feedback. 

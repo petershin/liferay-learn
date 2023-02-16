@@ -1,3 +1,6 @@
+---
+uuid: e2f67a34-9bb4-43d5-8b66-9adb75caaa52
+---
 # Creating a Shipment
 
 Creating a shipment is integrated with the [_Orders_ menu](../orders/orders-menu-reference-guide.md). You can also [manage all shipments](./introduction-to-shipments.md) in the _Shipments_ menu once an order is in the [_Processing_ phase](../orders/processing-an-order.md).

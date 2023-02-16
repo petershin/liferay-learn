@@ -1,3 +1,6 @@
+---
+uuid: f96c5490-e5f3-44cc-ab84-061874af7d47
+---
 # Search Insights
 
 > **This feature is intended for testing and development only** \

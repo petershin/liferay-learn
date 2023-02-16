@@ -1,3 +1,6 @@
+---
+uuid: 60d170f7-8a25-41bf-8f88-d3b9b0a9e8aa
+---
 #  Instance Configuration
 
 The Instance Configuration settings define the configuration information for the virtual instance, from its appearance to the Terms of Use your Users agree to the first time they sign in. Access the Instance Configuration settings from the Control Panel's *Configuration* &rarr; *Instance Settings* section, and select the *Instance Configuration* category under *PLATFORM*. The Instance Configuration contains four entries:

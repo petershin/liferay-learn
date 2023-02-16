@@ -1,3 +1,6 @@
+---
+uuid: 46de0952-d1da-4d67-83c4-398c31f2eb34
+---
 # Setting Up CORS
 
 CORS stands for Cross-Origin Resource Sharing. An Origin is a web server at a different domain, and a Resource is some asset stored on the server, like an image, PDF, or HTML file. Sometimes you must request resources stored on another origin. This is called a cross-origin request, and web servers have policies to allow or deny such requests.

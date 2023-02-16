@@ -1,14 +1,15 @@
 ---
 toc:
-- ./inventory-management/setting-up-warehouses.md
-- ./inventory-management/setting-inventory-by-warehouse.md
-- ./inventory-management/low-stock-action.md
-- ./inventory-management/availability-estimates.md
-- ./inventory-management/managing-product-publication.md
-- ./inventory-management/using-the-inventory-management-system.md
-- ./inventory-management/inventory-management-reference-guide.md
-- ./inventory-management/warehouse-reference-guide.md
-- ./inventory-management/product-inventory-configuration-reference-guide.md
+  - ./inventory-management/setting-up-warehouses.md
+  - ./inventory-management/setting-inventory-by-warehouse.md
+  - ./inventory-management/low-stock-action.md
+  - ./inventory-management/availability-estimates.md
+  - ./inventory-management/managing-product-publication.md
+  - ./inventory-management/using-the-inventory-management-system.md
+  - ./inventory-management/inventory-management-reference-guide.md
+  - ./inventory-management/warehouse-reference-guide.md
+  - ./inventory-management/product-inventory-configuration-reference-guide.md
+uuid: 0af96bfe-53b9-4ae1-bd1f-a372afb783a2
 ---
 # Inventory Management
 

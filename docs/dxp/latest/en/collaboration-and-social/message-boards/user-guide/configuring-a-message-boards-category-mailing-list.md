@@ -1,3 +1,6 @@
+---
+uuid: 8eb437b5-27a9-43ad-ab68-e27f318ffec6
+---
 # Configuring a Message Boards Category Mailing List
 
 This article documents how to configure a mailing list for a message board category in a **site-scoped** or **page-scoped message board**. See the [Scoping Your Message Boards](./scoping-your-message-boards.md) article to learn how to use scopes. Globally scoped messages boards do not support subscriptions and mailing lists. Any category in a message board can have its own mailing list.

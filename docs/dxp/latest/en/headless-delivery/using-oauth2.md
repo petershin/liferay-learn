@@ -1,9 +1,10 @@
 ---
 toc:
-- ./using-oauth2/creating-oauth2-applications.md
-- ./using-oauth2/authorizing-account-access-with-oauth2.md
-- ./using-oauth2/oauth2-scopes.md
-- ./using-oauth2/using-oauth2-to-authorize-users.md
+  - ./using-oauth2/creating-oauth2-applications.md
+  - ./using-oauth2/authorizing-account-access-with-oauth2.md
+  - ./using-oauth2/oauth2-scopes.md
+  - ./using-oauth2/using-oauth2-to-authorize-users.md
+uuid: 49b73bad-0882-42c4-a5b6-42b0f1dd6e74
 ---
 # Using OAuth 2.0
 

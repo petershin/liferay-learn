@@ -1,3 +1,6 @@
+---
+uuid: b9b38050-9b86-42e1-862b-11ddbeae8c04
+---
 # Installing on WildFly
 
 Installing on WildFly requires installing the DXP WAR, installing dependencies, configuring WildFly, and deploying DXP on WildFly. You must also configure your database and mail server connections.

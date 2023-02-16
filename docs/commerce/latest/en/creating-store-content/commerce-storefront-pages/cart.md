@@ -1,3 +1,6 @@
+---
+uuid: 0987ded7-c37d-4f9a-8b0f-6c51e7890a10
+---
 # Cart
 
 You can use the Cart page to manage the contents of your cart. There are three associated widgets: _Cart_, _Cart Summary_, _Mini Cart_.

@@ -1,3 +1,6 @@
+---
+uuid: 630e4176-d453-436c-978a-0f1fad059614
+---
 # Configuring Site Template Propagation
 
 {bdg-secondary}`Available for Liferay 7.4 U23+ and GA23+`

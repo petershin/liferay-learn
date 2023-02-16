@@ -1,3 +1,6 @@
+---
+uuid: 3a9bf74d-b5e1-4a88-a483-bf77bcdaa8b0
+---
 # Troubleshooting Blade CLI
 
 If Blade CLI isn't working as expected, you may find answers here.

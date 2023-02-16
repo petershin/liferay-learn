@@ -1,3 +1,6 @@
+---
+uuid: fc207835-2243-4f2b-858f-67cfff5a1b3f
+---
 # Commerce Roles Reference
 
 Liferay includes four [out-of-the-box roles](#out-of-the-box-roles) for Commerce: Account Administrator, Account Member, Buyer, and Order Manager. While these roles are configured to model some common roles, you can create additional account roles or modify the out-of-the-box ones to better suit your use case. Some [common custom roles](#custom-roles) include Catalog Manager, Inventory Manager, Shipment Manager, Instance Order Manager, and Discount Manager.

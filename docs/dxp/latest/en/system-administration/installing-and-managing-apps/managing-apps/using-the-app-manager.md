@@ -1,3 +1,6 @@
+---
+uuid: e31f4484-117a-455f-81c5-a6d0fe780bcb
+---
 # Using the App Manager
 
 The App Manager is a Control Panel screen where you can install, uninstall, activate, and deactivate apps in your DXP installation. You can also use it to inspect details for installed apps (and their modules and OSGi components).

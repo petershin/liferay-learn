@@ -1,3 +1,6 @@
+---
+uuid: 214e29d5-25cf-4f48-84c6-6bb9853af7ae
+---
 # Reading Liferay Cloud Service Logs
 
 Environment logs are crucial for diagnosing and resolving technical issues in a project. Liferay Cloud provides a variety of environment logs that users can access and download via the Liferay Cloud console or OS terminal.

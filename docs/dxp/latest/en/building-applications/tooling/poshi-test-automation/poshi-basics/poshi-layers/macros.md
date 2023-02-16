@@ -1,3 +1,6 @@
+---
+uuid: 042cc0b5-fa06-4cac-8a46-a6c31a1fcd96
+---
 # Macros
 
 A macro is a set of functions that perform a task. Macros are where locators (paths) and functions are brought together to script interactions that a user performs on the system being tested. Anything from clicking on a button, to performing navigations, to asserting information, or even sending API calls to improve test setup speed can be scripted on the macro layer.

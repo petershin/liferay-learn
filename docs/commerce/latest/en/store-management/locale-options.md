@@ -1,3 +1,6 @@
+---
+uuid: 7da47fe2-45b8-43dd-a303-75d7c59cb919
+---
 # Locale Options
 
 Liferay Commerce can be configured to work in different regions and languages. See the following articles to learn how to configure a store for regional variances in language, currency, and measurement units.

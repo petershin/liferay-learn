@@ -1,3 +1,6 @@
+---
+uuid: 8c466215-f3d5-4dd0-840d-e685e0965869
+---
 # Type Facet
 
 The Type Facet narrows search results down to those associated with a certain Asset Type. Each Type with content matching the searched keyword appears as a facet term.

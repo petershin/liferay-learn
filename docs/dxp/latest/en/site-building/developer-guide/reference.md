@@ -1,6 +1,7 @@
 ---
 toc:
-- ./reference/fragments.md
+  - ./reference/fragments.md
+uuid: 42e875fb-1775-4761-9667-03336f89948e
 ---
 # Developer Reference
 

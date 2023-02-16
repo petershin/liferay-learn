@@ -1,3 +1,6 @@
+---
+uuid: 13f8ecf5-b505-4bf8-a48e-955a22fd3579
+---
 # Analyze Content Metrics Using the Content Performance Tool
 
 {bdg-secondary}`Available 7.3+`

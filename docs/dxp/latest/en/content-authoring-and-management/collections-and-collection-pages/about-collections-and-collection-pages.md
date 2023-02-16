@@ -1,3 +1,6 @@
+---
+uuid: ddacd910-361b-4e3f-a44f-8d8c33a01b13
+---
 # About Collections and Collection Pages
 
 ```{note}

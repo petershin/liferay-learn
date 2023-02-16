@@ -1,3 +1,6 @@
+---
+uuid: 35ccf513-05ef-4bb7-80ec-e12b8a494cf5
+---
 # Managing Structures
 
 You can manage Structures from the Structures Page: 

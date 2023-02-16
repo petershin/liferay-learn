@@ -1,9 +1,10 @@
 ---
 toc:
-- ./site-templates/creating-site-templates.md
-- ./site-templates/propagating-template-changes.md
-- ./site-templates/configuring-site-template-propagation.md
-- ./site-templates/exporting-importing-site-templates.md
+  - ./site-templates/creating-site-templates.md
+  - ./site-templates/propagating-template-changes.md
+  - ./site-templates/configuring-site-template-propagation.md
+  - ./site-templates/exporting-importing-site-templates.md
+uuid: 7306854f-8c76-4c95-946f-9930a0f477f4
 ---
 
 # Site Templates

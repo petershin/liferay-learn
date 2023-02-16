@@ -1,3 +1,6 @@
+---
+uuid: 4508a099-3d2e-4f66-bbe7-c2485a8ff534
+---
 # Example: Using Hidden Fields with Form Rules
 
 Configure Forms fields as hidden in the Advanced configuration tab.

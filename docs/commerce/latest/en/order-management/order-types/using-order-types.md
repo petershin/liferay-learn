@@ -1,3 +1,6 @@
+---
+uuid: f77b7956-57a1-4169-95e9-cb3070b91c57
+---
 # Using Order Types
 
 {bdg-secondary}`Available Liferay DXP 7.4 U4+/GA8+`

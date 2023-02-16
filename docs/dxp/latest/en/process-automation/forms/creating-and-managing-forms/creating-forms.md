@@ -1,3 +1,6 @@
+---
+uuid: 9f7e56f6-8749-4533-b4b9-b53f37b9f711
+---
 # Creating Forms
 
 You can create multi-field forms with the _Forms_ application. Only authenticated users with the requisite [Process Automation Permissions](./forms-permissions-reference.md) can create forms. At minimum, they should have permission to access the _Site Administration_ menu and the _Forms_ application.) To learn more about DXP Roles and Permissions, see [Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md).

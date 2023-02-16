@@ -1,3 +1,6 @@
+---
+uuid: a0ed43be-a68b-4d44-b0cf-533ebedb1d39
+---
 # Scoping Configurations
 
 In Liferay DXP, you can set an application's configuration to different levels of scope: System, Instance, Site, or Portlet. For example, if you create an application to have instance scoped configuration, the application can be independently configured for each instance you have set up in your Liferay DXP installation. This is useful because it gives more flexibility and control to each user. For example administrators of a DXP instance can set a configuration for their own instance that is independent from other instances. 

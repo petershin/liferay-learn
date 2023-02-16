@@ -1,3 +1,6 @@
+---
+uuid: 65704381-034b-4b0a-820b-27f8e2a0d321
+---
 # Subscribing to a Message Board
 
 Users can receive email updates and in-product notifications by subscribing to a Message Board. By default, users are automatically subscribed to any threads they create and can opt in to subscribe to categories or specific threads via email or RSS feed.

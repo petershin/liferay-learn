@@ -1,9 +1,10 @@
 ---
 toc:
-- ./views/designing-object-views.md
-- ./views/renaming-table-columns.md
-- ./views/setting-a-default-sorting.md
-- ./views/adding-filters-to-views.md
+  - ./views/designing-object-views.md
+  - ./views/renaming-table-columns.md
+  - ./views/setting-a-default-sorting.md
+  - ./views/adding-filters-to-views.md
+uuid: c6bcae5f-e1d4-4c1a-873f-96c671c0b72d
 ---
 # Views
 

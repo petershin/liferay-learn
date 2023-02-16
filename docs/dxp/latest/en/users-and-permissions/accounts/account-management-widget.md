@@ -1,3 +1,6 @@
+---
+uuid: 8a69237f-c976-4650-ba2e-b1ec5811d8b0
+---
 # Account Management Widget
 
 {bdg-secondary}`Available 7.4+`

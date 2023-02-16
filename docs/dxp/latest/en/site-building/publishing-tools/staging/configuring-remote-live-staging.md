@@ -1,3 +1,6 @@
+---
+uuid: faa4a458-c7c6-4b61-a08f-37cb58873c58
+---
 # Configuring Remote Live Staging
 
 With *Remote Live Staging*, your Staging and Live environments are hosted on separate Liferay servers. When enabled, the Site or Asset Library used to configure Staging becomes your Staging environment, and the remote server becomes your Live environment.

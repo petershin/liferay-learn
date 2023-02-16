@@ -1,3 +1,6 @@
+---
+uuid: 3056a005-50ba-48b3-97f3-a9269046aa02
+---
 # Workflow Nodes
 
 {bdg-primary}`Subscription`

@@ -1,3 +1,6 @@
+---
+uuid: be2bff09-68e0-4244-bc08-04313e122389
+---
 # Creating Workflow Tasks
 
 {bdg-primary}`Subscription`

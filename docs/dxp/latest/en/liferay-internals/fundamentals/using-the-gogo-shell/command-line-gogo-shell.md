@@ -1,3 +1,6 @@
+---
+uuid: be96c5c8-da3a-4744-b632-91826069ac3f
+---
 # Command Line Gogo Shell
 
 If you're in a development environment, you can interact with the module framework locally from the command line.

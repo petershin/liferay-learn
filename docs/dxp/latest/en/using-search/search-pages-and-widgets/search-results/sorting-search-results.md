@@ -1,3 +1,6 @@
+---
+uuid: 8068b0aa-71c6-4041-bf2d-cf5816f6616e
+---
 # Sorting Search Results
 
 Search results displayed in the [Search Results](./search-results.md) widget are ordered by [relevance score](./search-results.md#search-results-relevance) (as calculated by the [search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) by default. With the Sort widget, users can control the order of returned results.

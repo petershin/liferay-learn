@@ -1,3 +1,6 @@
+---
+uuid: 4593fe68-5c0b-4f77-acaa-89242206a999
+---
 # Scoping Your Wikis
 
 Besides using [Wiki Nodes](./creating-a-node.md) to organize your content, you can scope a wiki to the [Global, Site, or Page Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope).

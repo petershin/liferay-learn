@@ -1,3 +1,6 @@
+---
+uuid: 34cbf298-c1aa-4094-afb4-badbbcedfd08
+---
 # Building Liferay Source 
 
 This section aims to provide instructions for building Liferay Portal from source as quickly as possible. Using a nightly snapshot bundle no longer requires a full build using *ant all* which will save a lot of time when building Liferay Portal.

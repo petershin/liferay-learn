@@ -1,3 +1,6 @@
+---
+uuid: 3edd7157-64cc-42bc-adb3-df1340ac0abc
+---
 # Applying Tax Rates
 
 Once you've [added tax rates](./setting-rates-for-tax-calculations.md) to a Tax Category, you can apply those rates to Channel Products and shipping costs by assigning the Tax Category to them. When assigned, all applicable tax rates are calculated individually and added to the order's total. This includes rates created using the same or different tax engines.

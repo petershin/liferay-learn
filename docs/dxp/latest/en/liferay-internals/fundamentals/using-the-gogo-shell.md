@@ -1,7 +1,8 @@
 ---
 toc:
-- ./using-the-gogo-shell/command-line-gogo-shell.md
-- ./using-the-gogo-shell/gogo-shell-commands.md
+  - ./using-the-gogo-shell/command-line-gogo-shell.md
+  - ./using-the-gogo-shell/gogo-shell-commands.md
+uuid: 23a63181-fd00-4907-9d98-b6c8ae33a3aa
 ---
 # Using the Gogo Shell
 

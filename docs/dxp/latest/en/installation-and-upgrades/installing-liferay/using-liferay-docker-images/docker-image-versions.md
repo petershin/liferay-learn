@@ -1,3 +1,6 @@
+---
+uuid: 2d9de0cd-3019-4b68-8ac1-5d024a2dd39c
+---
 # Docker Image Versions
 
 Liferay Docker image tags begin with a Liferay software version and end with an image version.

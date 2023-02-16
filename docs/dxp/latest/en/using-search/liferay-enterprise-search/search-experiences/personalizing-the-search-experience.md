@@ -1,3 +1,6 @@
+---
+uuid: fedf1e88-d26f-4015-b97e-3dd10e9da657
+---
 # Personalizing the Search Experience
 
 One of the premier use cases for Search Experiences and Search Blueprints in particular is to personalize Liferay's [search results](../../search-pages-and-widgets/search-results.md). With a personalized search experience, each User sees results depending on the particular details of his or her context. There are currently Elements for making your Blueprint react to the answers of contextual questions like

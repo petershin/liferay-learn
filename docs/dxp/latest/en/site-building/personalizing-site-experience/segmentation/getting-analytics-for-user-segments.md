@@ -1,3 +1,6 @@
+---
+uuid: 0197638f-9c5e-4c05-89e8-5abd815ddd50
+---
 # Getting Analytics for User Segments
 
 > **Subscribers**

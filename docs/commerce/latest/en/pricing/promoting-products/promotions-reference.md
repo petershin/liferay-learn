@@ -1,3 +1,6 @@
+---
+uuid: f3403be8-b40e-40dd-abd1-612452b9b7cd
+---
 # Promotions Reference
 
 | **Field**         | **Description**                                                                                                                                                                                     |

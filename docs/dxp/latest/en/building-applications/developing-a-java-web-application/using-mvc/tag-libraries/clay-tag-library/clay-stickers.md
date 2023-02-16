@@ -1,3 +1,6 @@
+---
+uuid: d66ecb33-bb56-4acd-bc05-465cbc8e4179
+---
 # Clay Stickers
 
 Whereas badges display numbers and labels display short information, stickers are small visual indicators of the content (usually the content type). They can include a small label or a Liferay icon, and they come in two shapes: circle and square.

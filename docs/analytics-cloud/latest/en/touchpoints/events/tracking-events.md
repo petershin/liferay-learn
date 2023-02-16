@@ -1,3 +1,6 @@
+---
+uuid: 20a0a668-b4e6-44d5-8fee-7738d9f81c8a
+---
 # Tracking Events
 
 You can track events for analysis by adding JavaScript code to your Liferay DXP site pages. The code you add interacts with Analytic Cloud's APIs to capture what users are doing on your website. These events can be analyzed with the [Events Analysis](./events-analysis.md) tool.

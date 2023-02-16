@@ -1,6 +1,7 @@
 ---
 toc:
-- ./client-extensions/browser-based-client-extensions.md
+  - ./client-extensions/browser-based-client-extensions.md
+uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 ---
 # Client Extensions
 

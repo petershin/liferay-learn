@@ -1,3 +1,6 @@
+---
+uuid: 63cf5a65-e211-4000-851a-f4bac83af29a
+---
 # Sharing Documents with Other Users
 
 Using DXP's _Documents and Media_ app, users can share files directly with each other.

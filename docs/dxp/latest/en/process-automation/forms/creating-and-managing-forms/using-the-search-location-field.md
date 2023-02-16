@@ -1,3 +1,6 @@
+---
+uuid: 7c97700f-226e-498c-973c-435c7d442d46
+---
 # Using the Search Location Field
 
 Use a Search Location field so a user can interact with Google's Maps JavaScript API and Google Places API, selecting a location and getting these fields autofilled in the form:

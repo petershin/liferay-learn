@@ -1,3 +1,6 @@
+---
+uuid: 8b9099c6-0666-4218-acc1-2a72b40ae63a
+---
 # Updating Page Permissions
 
 By default, when Users join a Site, they can see all of its Pages. However, you can configure permissions for individual Pages to restrict access based on User [roles](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md).

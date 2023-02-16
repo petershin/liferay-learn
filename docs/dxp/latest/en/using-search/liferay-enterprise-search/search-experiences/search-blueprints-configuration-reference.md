@@ -1,3 +1,6 @@
+---
+uuid: ef70f47a-a2c2-4371-95e0-e11c5107c60e
+---
 # Search Blueprints Configuration Reference
 
 The Search Blueprints user interface has a Query Builder for creating Blueprints. Beyond adding Elements and configuring the query settings, there are additional configurations that are important for many Blueprints use cases. To work with these configurations go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new Blueprint or open an existing one, then click the _Configuration_ tab.

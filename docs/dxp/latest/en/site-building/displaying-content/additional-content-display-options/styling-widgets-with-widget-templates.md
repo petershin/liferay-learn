@@ -1,3 +1,6 @@
+---
+uuid: b9f37076-eb4e-4bb1-9a5c-5d3f0ddd8365
+---
 # Styling Widgets with Widget Templates
 
 You can use widget templates to customize the appearance and functionality of out-of-the-box widgets, such as the *Asset Publisher* and *Media Gallery* widgets.

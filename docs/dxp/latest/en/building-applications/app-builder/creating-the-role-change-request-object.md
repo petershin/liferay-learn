@@ -1,3 +1,6 @@
+---
+uuid: 5a4f730a-3513-4b23-8028-9225b31bad16
+---
 # Creating the Role Change Request Object
 
 > **Subscribers**

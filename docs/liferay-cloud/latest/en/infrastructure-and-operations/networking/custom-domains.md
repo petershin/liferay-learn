@@ -1,3 +1,6 @@
+---
+uuid: 92fd5ebb-a898-4a13-8c28-f2316ecd5146
+---
 # Custom Domains
 
 With Liferay Cloud, you can connect custom domains to environment services with a DNS provider.

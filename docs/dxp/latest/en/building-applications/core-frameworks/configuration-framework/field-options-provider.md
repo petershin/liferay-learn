@@ -1,3 +1,6 @@
+---
+uuid: d1805133-04db-40d4-9015-db658865487e
+---
 # Field Options Provider
 
 You can populate a [drop-down list manually](./setting-and-accessing-configurations.html#implementing-a-dropdown-selection-ui) in the `@Meta.AD` annotation of the configuration interface. But you can also populate the option labels and values automatically with the `ConfigurationFieldOptionsProvider` class. This is useful when you want to populate a drop-down list dynamically. For example, you can fetch a list of objects from a web service or iterate through a database to populate the drop-down list dynamically.

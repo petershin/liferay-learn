@@ -1,3 +1,6 @@
+---
+uuid: a589043d-4c05-4e8d-aff1-b506f874c279
+---
 # Using the FedEx Shipping Method
 
 > Subscription Required

@@ -1,3 +1,6 @@
+---
+uuid: bf481358-5a1a-45af-ab98-a03bddd3044a
+---
 # Displaying Object Entries
 
 {bdg-secondary}`Available 7.4+`

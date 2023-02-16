@@ -1,3 +1,6 @@
+---
+uuid: aeb570f9-a273-4db9-a225-6f06ec47d435
+---
 # Managing System Resources
 
 The Server Administration panel's Resources tab contains several features, all related to low-level monitoring and management of the system's resources:

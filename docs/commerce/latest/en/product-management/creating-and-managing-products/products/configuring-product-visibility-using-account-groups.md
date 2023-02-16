@@ -1,3 +1,6 @@
+---
+uuid: bf59d25e-877d-46d3-9ed3-77bf7019d145
+---
 # Configuring Product Visibility Using Account Groups
 
 By default, all products are visible in a Catalog. However, users can limit a product's visibility based on a user's association with an Account Group.

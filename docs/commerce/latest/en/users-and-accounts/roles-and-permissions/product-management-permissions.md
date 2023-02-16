@@ -1,3 +1,6 @@
+---
+uuid: f8b4fee9-6224-4517-98cb-5f64bd020dac
+---
 # Product Management Permissions
 
 With Liferay Commerce, you can use permissions to control access to Product Management applications and resources in the Commerce tab of the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).

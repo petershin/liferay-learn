@@ -1,6 +1,7 @@
 ---
 toc:
-- ./upgrading-custom-development/upgrading-language-key-overrides.md
+  - ./upgrading-custom-development/upgrading-language-key-overrides.md
+uuid: 06ea079b-c884-4a99-9fb3-ed9735192ea3
 ---
 # Upgrading Custom Development
 

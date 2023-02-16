@@ -1,6 +1,7 @@
 ---
 toc:
-- ./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
+  - ./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
+uuid: eaf9a214-8e50-4e0e-a818-e96a21098e2e
 ---
 # Enabling Automated Live Chat Systems
 

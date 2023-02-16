@@ -1,3 +1,6 @@
+---
+uuid: 8ab41411-16bc-4600-96bd-0808f9459d1f
+---
 # Payment and Delivery Terms
 
 {bdg-secondary}`Available Liferay DXP 7.4 U16+/GA16+`

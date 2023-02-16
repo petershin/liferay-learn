@@ -1,3 +1,6 @@
+---
+uuid: f7f6cc00-f0b7-4f30-9599-96cd842e7d18
+---
 # Database Service (MySQL)
 
 The MySQL database service is a distributed relational database that simplifies the setup, operation, and scaling of your applications. It's a private service inside your application environment. It can only communicate with your other services, not the public internet. The database in Liferay Cloud has case sensitive table and column names.

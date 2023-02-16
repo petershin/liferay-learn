@@ -1,3 +1,6 @@
+---
+uuid: 4d839db3-cb3a-4d88-852e-2c866358fa06
+---
 # Overriding Module Language Translations in Earlier Versions
 
 ```{important}

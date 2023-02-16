@@ -1,3 +1,6 @@
+---
+uuid: 08551a7a-13f0-45a3-bf77-00edce3d61ed
+---
 # Using Alias Redirects
 
 Alias redirects define absolute source and destination URLs explicitly. Because of their predictability, alias redirects are recommended for most use cases. You can make alias redirects permanent (301) or temporary (302). Both types direct users automatically to a specified destination, but they each have unique implications for your site. Consider which type is best for your situation.

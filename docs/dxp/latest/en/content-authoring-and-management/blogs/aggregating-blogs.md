@@ -1,3 +1,6 @@
+---
+uuid: 64517334-c722-4110-ad54-a5c67b95a3f4
+---
 # Aggregating Blogs
 
 The Blogs Aggregator widget publishes blogs entries from multiple blog sources. 

@@ -1,3 +1,6 @@
+---
+uuid: 1e8a26fa-4f14-4dec-ab42-c4b5e2121e6c
+---
 # Creating a Contributed Fragment Set
 
 Contributed Fragment Sets are deployable modules containing Page Fragments. Fragments in a contributed Set can be used just like regular Fragments, but aren't contained in the database and can't be modified directly through the UI. If you're running Liferay 7.3+, it's better to use [Automatically deployed Fragments](./auto-deploying-fragments.md) created in compressed ZIP Sets. You can create these [with your own tools](./using-the-fragments-toolkit.md#fragment-set-structure) or the [Liferay Fragments Toolkit](./using-the-fragments-toolkit.md), and they can be modified from the UI and can include image resources.

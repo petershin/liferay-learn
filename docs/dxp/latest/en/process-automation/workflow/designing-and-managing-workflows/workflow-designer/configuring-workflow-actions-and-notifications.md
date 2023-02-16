@@ -1,3 +1,6 @@
+---
+uuid: 811680aa-eb5f-4386-a8d2-be8e613b92a0
+---
 # Configuring Workflow Actions and Notifications
 
 {bdg-primary}`Subscription`

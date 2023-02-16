@@ -1,3 +1,6 @@
+---
+uuid: 9b0b0453-53f8-49ce-8169-c8a25cedf7bf
+---
 # Data Removal
 
 {bdg-secondary}`Available 7.4+`

@@ -1,3 +1,6 @@
+---
+uuid: 4d712f4d-f49f-4132-bf0d-0bc60a5d279d
+---
 # Adding Categorization to Fields Tabs
 
 {bdg-secondary}`Available Liferay 7.4 U31+ and GA31+`

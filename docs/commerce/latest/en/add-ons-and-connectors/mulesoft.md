@@ -1,7 +1,8 @@
 ---
 toc:
-- ./mulesoft/configuring-the-mulesoft-connector.md
-- ./mulesoft/designing-mule-flows.md
+  - ./mulesoft/configuring-the-mulesoft-connector.md
+  - ./mulesoft/designing-mule-flows.md
+uuid: 95cd6d1b-29ed-46f0-b93f-44690499b22e
 ---
 # Mulesoft
 

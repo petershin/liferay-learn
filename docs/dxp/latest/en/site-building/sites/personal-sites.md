@@ -1,3 +1,6 @@
+---
+uuid: 418acf83-334e-48a2-95a2-473e6974ddb1
+---
 # Personal Sites
 
 By default, Liferay generates a personal Site for every User. Each Site includes two [page sets](../creating-pages/understanding-pages/understanding-pages.md#page-sets): My Profile (public) and My Dashboard (private). Each User is the sole member of their personal Site and can use it to display and manage their content.

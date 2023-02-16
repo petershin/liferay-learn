@@ -1,3 +1,6 @@
+---
+uuid: a266c23a-5c23-4de6-a818-21e83f79cb1e
+---
 # Configuring Document URLs
 
 {bdg-secondary}`Available Liferay 7.4 U27+/GA27+`

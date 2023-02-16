@@ -1,3 +1,6 @@
+---
+uuid: a164df22-46f5-4b1f-9ec5-ed18c3466897
+---
 # Using Workflow with Documents and Media
 
 Documents and Media is fully integrated with Liferay's [workflow engine](../../../process-automation/workflow/introduction-to-workflow.md). This means you can define custom review and approval processes for your files. In addition to standard workflow capabilities, Documents and Media also supports using multiple workflows. You can set a default workflow for all document types and configure individual folders to use alternative workflows for specific document types.

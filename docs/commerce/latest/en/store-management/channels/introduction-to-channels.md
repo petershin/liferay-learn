@@ -1,3 +1,6 @@
+---
+uuid: 56a6bf7f-dae7-4eca-be67-bb024050cc76
+---
 # Introduction to Channels
 
 Channels represent a place where products are sold, whether that's a Liferay Commerce based customer portal, a B2B marketplace, or back office phone sales. By connecting sales channels to Liferay Commerce, sellers can manage product content, inventory, orders, and fulfillment across multiple channels in a single place.

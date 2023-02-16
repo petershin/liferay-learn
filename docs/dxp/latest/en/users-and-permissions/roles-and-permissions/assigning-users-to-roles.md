@@ -1,3 +1,6 @@
+---
+uuid: 02aa1e2d-bde7-4e9f-b412-3fcc362928a8
+---
 # Assigning Users to Roles
 
 The location of a Role's assignment UI corresponds with the [Role's scope](./understanding-roles-and-permissions.md#roles-and-scope).

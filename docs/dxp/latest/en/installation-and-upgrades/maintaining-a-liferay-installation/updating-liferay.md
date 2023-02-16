@@ -1,3 +1,6 @@
+---
+uuid: 4d20fe60-3b13-472c-bad5-d287bd8f7b66
+---
 # Updating Liferay
 
 {bdg-secondary}`For Liferay DXP 7.3 SP3+ and 7.4 GA1+`

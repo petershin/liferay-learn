@@ -1,13 +1,14 @@
 ---
 toc:
-- ./site-settings/site-users.md
-- ./site-settings/managing-site-urls.md
-- ./site-settings/site-content-configurations.md
-- ./site-settings/site-localization.md
-- ./site-settings/adding-a-new-analytics-service.md
-- ./site-settings/configuring-open-graph.md
-- ./site-settings/configuring-hreflang-meta-data.md
-- ./site-settings/site-settings-ui-reference.md
+  - ./site-settings/site-users.md
+  - ./site-settings/managing-site-urls.md
+  - ./site-settings/site-content-configurations.md
+  - ./site-settings/site-localization.md
+  - ./site-settings/adding-a-new-analytics-service.md
+  - ./site-settings/configuring-open-graph.md
+  - ./site-settings/configuring-hreflang-meta-data.md
+  - ./site-settings/site-settings-ui-reference.md
+uuid: dbe928b5-d2e2-4db2-9369-f5fd818ab422
 ---
 # Site Settings
 

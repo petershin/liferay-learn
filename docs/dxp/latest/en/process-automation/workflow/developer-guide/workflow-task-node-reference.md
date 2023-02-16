@@ -1,3 +1,6 @@
+---
+uuid: e7efd454-e2cb-44e8-949d-8aff5238e78a
+---
 # Workflow Task Node Reference
 
 As the name implies, tasks are the part of the workflow where *work* is done. Tasks must be assigned to Users, who review the submitted asset and decide if an asset from the workflow is acceptable for publication or needs more work.

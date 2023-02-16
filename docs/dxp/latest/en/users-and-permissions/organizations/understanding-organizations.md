@@ -1,3 +1,6 @@
+---
+uuid: 124bef82-1c37-4113-b6d9-d57d9a3a1f44
+---
 # Understanding Organizations
 
 Liferay Organizations can enable distributed User and Site management that reflects real world organizational hierarchies. Organizations can nest to an unlimited number of hierarchical levels. Consider a typical organization chart:

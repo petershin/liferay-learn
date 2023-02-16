@@ -1,8 +1,9 @@
 ---
 toc:
-- ./file-storage/enabling-antivirus-scanning-for-uploaded-files.md
-- ./file-storage/file-store-migration.md
-- ./file-storage/other-file-store-types.md
+  - ./file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+  - ./file-storage/file-store-migration.md
+  - ./file-storage/other-file-store-types.md
+uuid: 201a8ff1-83ef-4ead-9589-6dede6aac8c0
 ---
 # File Storage
 

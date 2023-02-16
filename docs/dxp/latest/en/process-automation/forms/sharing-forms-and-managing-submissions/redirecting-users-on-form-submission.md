@@ -1,3 +1,6 @@
+---
+uuid: addc9a35-1b1c-4722-b36c-dc8771b803af
+---
 # Redirecting Users on Form Submission
 
 By default, when a user submits a form response, they are directed to a [success page](../creating-and-managing-forms/creating-forms.md#adding-a-success-page). This behavior can be configured to instead redirect a user to a specific URL after submitting a form response.

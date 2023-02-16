@@ -1,3 +1,6 @@
+---
+uuid: 7bfea6ff-af10-4c9d-9fc0-aa74091013bd
+---
 # PortletMVC4Spring Configuration Files
 
 A PortletMVC4Spring application has these descriptors, Spring contexts, and properties files in its `WEB-INF` folder: 

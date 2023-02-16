@@ -1,3 +1,6 @@
+---
+uuid: 78c03919-e92c-4dce-896f-735fb1be9e01
+---
 # Testcases
 
 A testcase file in Poshi is a collection of test scenarios grouped in blocks of code called test blocks. The three main test blocks: `setUp`, `test`, and `tearDown`, are made up of multiple macros which describe the different user- and system-interactions making up the test scenario.

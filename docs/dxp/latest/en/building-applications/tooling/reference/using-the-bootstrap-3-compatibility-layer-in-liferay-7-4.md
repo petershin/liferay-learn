@@ -1,3 +1,6 @@
+---
+uuid: 48c598d5-1f05-4078-8c65-f0ce19d6349d
+---
 # Using the Bootstrap 3 Compatibility Layer in Liferay 7.4
 
 As of Liferay DXP 7.4 GA1, the [Bootstrap 3](https://getbootstrap.com/) compatibility layer is removed from the built-in packages in Liferay front-end applications. If you are upgrading from a previous version, you must include the compatibility layer as an external package for any of your projects that depend on Bootstrap 3 for their CSS code.

@@ -1,3 +1,6 @@
+---
+uuid: 6849209a-3a99-4ea4-92e6-eace728b8e5e
+---
 # Module Projects
 
 Liferay applications and customizations are [OSGi modules](https://www.osgi.org/resources/what-is-osgi/): `.jar` files containing Java code and some extra configuration for publishing and consuming APIs.

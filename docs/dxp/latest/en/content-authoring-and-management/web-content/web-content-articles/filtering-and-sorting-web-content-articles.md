@@ -1,3 +1,6 @@
+---
+uuid: c423446a-0ecb-4cf4-b455-93be58860e71
+---
 # Filtering and Sorting Web Content Articles
 
 By default, the Web Content application (*Site Menu* &rarr; *Content & Data* &rarr; *Web Content*) shows a list of all the Web Content Articles you can access. When you work with many items, the filtering and sorting options can help you find and review this content list faster.

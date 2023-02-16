@@ -1,3 +1,6 @@
+---
+uuid: f5450059-a6a6-4686-9b07-c3b12df4f469
+---
 # Configuring Content Recommendations
 
 As users browse your Liferay DXP site and interact with your content, Liferay Analytics Cloud automatically generates and ranks topics of interest based on their browsing behavior. You can use these interests to recommend related content that your users are more likely to buy or consume. For more information about content recommendations, see [Understanding Content Recommendations](./understanding-content-recommendations.md).

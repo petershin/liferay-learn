@@ -1,3 +1,6 @@
+---
+uuid: 162231c1-b834-4c59-a0f0-a66f97ae056e
+---
 # Default Bundler Loaders
 
 Several [loaders](./understanding-bundler-loaders.md) are available for the liferay-npm-bundler by default:

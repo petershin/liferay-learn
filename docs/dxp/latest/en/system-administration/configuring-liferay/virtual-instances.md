@@ -1,16 +1,17 @@
 ---
 toc:
-- ./virtual-instances/understanding-virtual-instances.md
-- ./virtual-instances/adding-a-virtual-instance.md
-- ./virtual-instances/instance-configuration.md
-- ./virtual-instances/users.md
-- ./virtual-instances/user-authentication.md
-- ./virtual-instances/email-settings.md
-- ./virtual-instances/analytics.md
-- ./virtual-instances/localization.md
-- ./virtual-instances/infrastructure.md
-- ./virtual-instances/third-party.md
-- ./virtual-instances/redirect-urls.md
+  - ./virtual-instances/understanding-virtual-instances.md
+  - ./virtual-instances/adding-a-virtual-instance.md
+  - ./virtual-instances/instance-configuration.md
+  - ./virtual-instances/users.md
+  - ./virtual-instances/user-authentication.md
+  - ./virtual-instances/email-settings.md
+  - ./virtual-instances/analytics.md
+  - ./virtual-instances/localization.md
+  - ./virtual-instances/infrastructure.md
+  - ./virtual-instances/third-party.md
+  - ./virtual-instances/redirect-urls.md
+uuid: 30c545cd-892f-4b63-8120-d611f16d6689
 ---
 # Virtual Instances
 

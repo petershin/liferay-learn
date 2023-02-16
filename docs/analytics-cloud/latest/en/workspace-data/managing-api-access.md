@@ -1,3 +1,6 @@
+---
+uuid: e357e639-06dd-492b-b1f0-31f0cff9eef3
+---
 # Managing API Access
 
 Utilizing the Analytics Cloud API requires the use of an access token. This can be found and managed under *Settings* &rarr; *Workspace Data* &rarr; *APIs*.

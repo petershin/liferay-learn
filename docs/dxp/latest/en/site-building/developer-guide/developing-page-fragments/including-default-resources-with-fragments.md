@@ -1,3 +1,6 @@
+---
+uuid: ea5a94dc-2b89-487d-bc51-6a6eaa6f2938
+---
 # Including Default Resources in Fragments
 
 You can include images (e.g. `.gif`, `.jpg`, `.jpeg`, or `.png`) in your Fragment Sets for your Fragments to use. Keeping images with your Fragments, rather than in other applications, like [Documents and Media](../../../content-authoring-and-management/documents-and-media.md), is a convenience. Here you'll learn how to include image resources in your Fragment Sets and use image resources in your Fragments.

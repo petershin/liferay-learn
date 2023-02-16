@@ -1,3 +1,6 @@
+---
+uuid: 4c7b7f3d-e928-4e7f-8c98-6989f8def625
+---
 # Restarting Jenkins Stages
 
 The CI service can be configured to preserve Jenkins stashes. You can then use the stashes to restart specific stages in a Jenkins build.

@@ -1,3 +1,6 @@
+---
+uuid: c938bebd-e338-4173-9be3-cf1d6dc90f17
+---
 # Publishing Documents
 
 Liferay makes it easy to publish and showcase documents and other types of media files. As you begin [uploading media files](../uploading-and-managing/uploading-files.md), you probably want to start sharing them on your site.

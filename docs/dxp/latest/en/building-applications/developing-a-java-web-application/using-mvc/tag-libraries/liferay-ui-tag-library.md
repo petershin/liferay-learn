@@ -1,10 +1,11 @@
 ---
 toc:
-- ./liferay-ui-tag-library/liferay-ui-icons.md
-- ./liferay-ui-tag-library/liferay-ui-icon-lists.md
-- ./liferay-ui-tag-library/liferay-ui-icon-menus.md
-- ./liferay-ui-tag-library/liferay-ui-tabs.md
-- ./liferay-ui-tag-library/liferay-ui-icon-help.md
+  - ./liferay-ui-tag-library/liferay-ui-icons.md
+  - ./liferay-ui-tag-library/liferay-ui-icon-lists.md
+  - ./liferay-ui-tag-library/liferay-ui-icon-menus.md
+  - ./liferay-ui-tag-library/liferay-ui-tabs.md
+  - ./liferay-ui-tag-library/liferay-ui-icon-help.md
+uuid: 5e3db580-1995-4ca9-9b00-f4f1cc103b49
 ---
 # Liferay UI Tag Library
 

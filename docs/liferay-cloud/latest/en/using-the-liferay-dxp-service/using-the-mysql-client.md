@@ -1,3 +1,6 @@
+---
+uuid: fa9c0cd6-ff6b-4672-816a-9d93243dede3
+---
 # Using the MySQL Client
 
 Viewing data in the database is sometimes necessary to troubleshoot an issue with your application or do custom development. In order to access the database, you must use a built-in MySQL client to interface directly with the database. This feature is available in up-to-date versions of Liferay Cloud, and can be accessed in a few short steps.

@@ -1,3 +1,6 @@
+---
+uuid: fe400129-039c-4362-af69-bda679064baf
+---
 # Understanding Low Level Search Options
 
 > Low level search works only with [Elasticsearch](../../installing-and-upgrading-a-search-engine/elasticsearch.html).

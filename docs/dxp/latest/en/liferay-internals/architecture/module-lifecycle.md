@@ -1,3 +1,6 @@
+---
+uuid: 74ada4bb-3d44-4b45-b577-4637dc6dc50e
+---
 # Module Life Cycle
 
 In OSGi, all components, Java classes, resources, and descriptors are deployed via modules (OSGi bundles). The `MANIFEST.MF` file describes the module's physical characteristics, such as the packages it exports and imports. The module's component description files specify its functional characteristics (i.e., the services its components offer and consume). Modules and their components also have their own life cycles and administrative APIs. Declarative Services and shell tools give you fine-grained control over module and component deployment.

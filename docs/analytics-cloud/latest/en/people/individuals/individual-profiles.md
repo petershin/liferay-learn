@@ -1,3 +1,6 @@
+---
+uuid: de574698-98c8-4818-afcc-4e82e637a98f
+---
 # Individual Profiles
 
 Many individuals visit your sites. Learning who they are and their activities and interests helps you improve business with them. Individual profiles help your Sales, Customer Service, and Customer Relations teams work personally with them. The profiles help you gain more context on what people do on your websites and their interests, so you can communicate with them intelligently according to their needs.

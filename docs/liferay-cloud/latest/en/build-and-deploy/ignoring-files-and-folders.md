@@ -1,3 +1,6 @@
+---
+uuid: 7aa7bd7f-5fe7-4766-80ca-422d5d8230eb
+---
 # Ignoring Files and Folders
 
 Liferay Cloud allows subscribers to determine which files and folders should be ignored before deploying a service. This is done by creating a `.lcpignore` file and placed inside the top level of the project folder (for example: `/etc/lfrlearn/` where `lfrlearn` is the project name). By placing the file here, the **ignore** rules can be shared with other users.

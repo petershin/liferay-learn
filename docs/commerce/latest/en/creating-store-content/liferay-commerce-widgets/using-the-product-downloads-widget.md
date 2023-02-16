@@ -1,3 +1,6 @@
+---
+uuid: 859b9c22-352f-46af-a07b-7ab8e085c05d
+---
 # Using the Product Downloads Widget
 
 Liferay Commerce includes the *Product Downloads* widget to access and download digital assets purchased as [Virtual Products](../../product-management/creating-and-managing-products/product-types/creating-a-virtual-product.md).

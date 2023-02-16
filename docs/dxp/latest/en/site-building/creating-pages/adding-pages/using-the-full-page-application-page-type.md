@@ -1,3 +1,6 @@
+---
+uuid: d3d3b087-cf75-4ab5-a288-06f4018e0ad4
+---
 # Using the Full Page Application Page Type
 
 Follow these steps to create and configure a Full Page Application Page:

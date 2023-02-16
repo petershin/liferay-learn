@@ -1,9 +1,10 @@
 ---
 toc:
-- ./fields/adding-fields-to-objects.md
-- ./fields/adding-and-managing-custom-states.md
-- ./fields/aggregation-fields.md
-- ./fields/attachment-fields.md
+  - ./fields/adding-fields-to-objects.md
+  - ./fields/adding-and-managing-custom-states.md
+  - ./fields/aggregation-fields.md
+  - ./fields/attachment-fields.md
+uuid: 4ba9b571-6b88-4ab0-940a-b406a95caa75
 ---
 # Fields
 

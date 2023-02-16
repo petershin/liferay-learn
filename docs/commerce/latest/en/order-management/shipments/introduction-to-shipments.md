@@ -1,3 +1,6 @@
+---
+uuid: 0537448e-7932-4d1e-8039-f59b1de64521
+---
 # Introduction to Shipments
 
 You can create *Shipments* when an order is in the [processing](../orders/processing-an-order.md) stage. Once you create a shipment, you are taken to the Shipments page where you can manage shipments and finish processing the order.

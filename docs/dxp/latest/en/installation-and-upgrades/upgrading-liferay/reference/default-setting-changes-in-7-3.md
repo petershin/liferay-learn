@@ -1,3 +1,6 @@
+---
+uuid: 823f56c9-d537-4d38-b08f-5dbcce6107e4
+---
 # Default Setting Changes in 7.3
 
 Most new versions of Liferay DXP include changes to the default settings. If you rely on the defaults from your old version, you should review the changes and decide to keep the defaults from your old version or accept the defaults of the new.

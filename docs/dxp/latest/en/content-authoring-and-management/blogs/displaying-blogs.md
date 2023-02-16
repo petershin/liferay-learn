@@ -1,3 +1,6 @@
+---
+uuid: 7f36774b-50b3-439e-8651-f43fe33d6113
+---
 # Displaying Blogs
 
 Liferay provides two methods for displaying blog entries: [display page templates](#using-display-page-templates) and the [Blogs widget](#using-the-blogs-widget).

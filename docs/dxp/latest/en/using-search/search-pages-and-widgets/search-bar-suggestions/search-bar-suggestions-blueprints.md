@@ -1,3 +1,6 @@
+---
+uuid: 2de44205-0b3c-41b3-857b-3a60fc40ec81
+---
 # Search Bar Suggestions Blueprints
 
 {bdg-primary}`Subscription`

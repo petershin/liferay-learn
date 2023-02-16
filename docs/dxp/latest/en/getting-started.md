@@ -1,15 +1,16 @@
 ---
 toc:
-- ./getting-started/whats-new-74.md
-- ./getting-started/starting-with-a-docker-image.md
-- ./getting-started/introduction-to-the-admin-account.md
-- ./getting-started/navigating-dxp.md
-- ./getting-started/creating-your-first-site.md
-- ./getting-started/changing-your-sites-appearance.md
-- ./getting-started/whats-new-73.md
+  - ./getting-started/whats-new-74.md
+  - ./getting-started/starting-with-a-docker-image.md
+  - ./getting-started/introduction-to-the-admin-account.md
+  - ./getting-started/navigating-dxp.md
+  - ./getting-started/creating-your-first-site.md
+  - ./getting-started/changing-your-sites-appearance.md
+  - ./getting-started/whats-new-73.md
 myst:
   html_meta:
-    "documentation-type": "user-guide"
+    documentation-type: user-guide
+uuid: c96cc8c7-5d35-4e57-8f90-38c90df80816
 ---
 
 # Getting Started

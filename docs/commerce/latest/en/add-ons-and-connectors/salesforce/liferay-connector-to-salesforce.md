@@ -1,3 +1,6 @@
+---
+uuid: 2ea1982c-6ad1-4c7e-b3fa-5d35df475d84
+---
 # Liferay Connector to Salesforce
 
 {bdg-primary}`Subscription`

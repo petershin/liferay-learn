@@ -1,10 +1,11 @@
 ---
 toc:
-- ./authenticating-with-saml/saml-authentication-process-overview.md
-- ./authenticating-with-saml/configuring-saml-at-the-system-level.md
-- ./authenticating-with-saml/saml-admin.md
-- ./authenticating-with-saml/configuring-saml-at-the-instance-level.md
-- ./authenticating-with-saml/saml-settings.md
+  - ./authenticating-with-saml/saml-authentication-process-overview.md
+  - ./authenticating-with-saml/configuring-saml-at-the-system-level.md
+  - ./authenticating-with-saml/saml-admin.md
+  - ./authenticating-with-saml/configuring-saml-at-the-instance-level.md
+  - ./authenticating-with-saml/saml-settings.md
+uuid: 30e4f185-5f4b-4e4f-81f7-48b5a59f7111
 ---
 # Authenticating with SAML
 

@@ -1,3 +1,6 @@
+---
+uuid: 4daac6e1-ef15-4f09-988a-08fadc0cb841
+---
 # Best Practices for Using Fragment Configurations
 
 When you are creating page fragments for your site with your own [configurations](./adding-configuration-options-to-fragments.md), it's your responsibility to use them in their HTML presentation safely and effectively. Here are some techniques that you can use to make your fragments more effective and robust.

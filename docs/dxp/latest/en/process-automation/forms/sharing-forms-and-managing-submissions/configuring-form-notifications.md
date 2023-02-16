@@ -1,3 +1,6 @@
+---
+uuid: d64f6d5c-2d5f-4a2d-8f73-91f1e45552af
+---
 # Configuring Form Notifications
 
 You can configure the Forms app to send a notification email each time a form entry is submitted. If you have [enabled workflow for the form](./using-forms-with-a-workflow.md), you may not need to configure the Forms app to generate a notification.

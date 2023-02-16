@@ -1,3 +1,6 @@
+---
+uuid: 7de0146e-dcec-4da0-9956-36d9e97af032
+---
 # User Account API Basics
 
 You can [Add and manage Users](../users/adding-and-managing-users.md) from the Control Panel, but you can also use Liferay's REST APIs. You can call these services to add, edit, delete Users.

@@ -1,6 +1,7 @@
 ---
 toc:
-- ./asset-framework/enabling-assets.md
+  - ./asset-framework/enabling-assets.md
+uuid: f905ecfc-8570-43f9-b00d-891be0948e09
 ---
 # Asset Framework
 

@@ -1,3 +1,6 @@
+---
+uuid: 8ec528c8-06fc-423d-b55b-8bf1a6ae3c53
+---
 # Managing Users
 
 If you are the workspace Owner or have been assigned the Admin permission, you can invite and manage users. Here’s how to bring up the User Management page:

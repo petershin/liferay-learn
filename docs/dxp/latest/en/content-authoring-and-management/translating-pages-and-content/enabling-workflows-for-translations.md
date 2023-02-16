@@ -1,3 +1,6 @@
+---
+uuid: 7b2c7380-a5c5-4cbe-82c9-8ed132a95694
+---
 # Enabling Workflows for Translations
 
 You can enable a [custom workflow](../../process-automation/workflow/introduction-to-workflow.md) for translation processes to guide the review and publishing process.

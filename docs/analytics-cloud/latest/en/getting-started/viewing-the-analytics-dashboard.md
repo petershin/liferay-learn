@@ -1,3 +1,6 @@
+---
+uuid: 1f7b693c-0b64-4c16-965b-4cb85875e0f4
+---
 # Viewing the Analytics Dashboard
 
 Once your [Liferay site and contacts are synced](syncing-sites-and-contacts.md), Analytics Cloud automatically begins tracking visitors to your site and how they're interacting with your site's content. The next steps are to explore the different tools available through the navigation menu on the left.

@@ -1,3 +1,6 @@
+---
+uuid: 0e27e0a4-29ba-4665-aae5-bd41983bb687
+---
 # Folder Facet
 
 The Folder Facet narrows search results down to content found in specific Asset Folders. Note that the search match is not for folder names but for content found inside of the folders.

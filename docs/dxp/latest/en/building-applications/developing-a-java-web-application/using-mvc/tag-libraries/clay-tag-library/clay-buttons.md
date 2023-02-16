@@ -1,3 +1,6 @@
+---
+uuid: 012a0e1d-613e-4c2a-9412-572a69030d8e
+---
 # Clay Buttons
 
 Buttons come in several types and variations. This tutorial covers the different styles and variations of buttons you can create with the Clay taglibs.

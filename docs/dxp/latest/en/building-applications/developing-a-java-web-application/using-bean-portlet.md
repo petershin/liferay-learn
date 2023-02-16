@@ -1,6 +1,7 @@
 ---
 toc:
-- ./using-bean-portlet/reference.md
+  - ./using-bean-portlet/reference.md
+uuid: 6cec1865-dfc5-42fc-928b-8a21c6c3a69d
 ---
 # Using Bean Portlet
 

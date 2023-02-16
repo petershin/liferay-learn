@@ -1,3 +1,6 @@
+---
+uuid: 27515ec7-8ccf-47a2-8d05-2c42298aecf1
+---
 # Support Access
 
 Support Access is an optional setting that expedites troubleshooting by giving Liferay engineers direct access to a Liferay Cloud project environment. Liferay Cloud administrators can enable or disable Support Access for individual project environments.

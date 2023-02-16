@@ -1,3 +1,6 @@
+---
+uuid: 29626af1-b570-4047-aafb-5034fda73d16
+---
 # Connecting to an LDAP Directory
 
 Lightweight Directory Access Protocol (LDAP) servers are common user stores for Liferay DXP. You can configure LDAP at the system scope in System Settings or at the instance scope in Instance settings. Users can be imported from or exported to LDAP.

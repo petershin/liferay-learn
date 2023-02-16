@@ -1,3 +1,6 @@
+---
+uuid: 6acc24e1-484c-451c-a981-8ea572fdca78
+---
 # Definitions for Event Attributes
 
 Event attributes are the metadata that provide context for events. Different attributes are associated with default and custom events. Global attributes are attributes that are associated with all types of events. Other attributes may only be associated with certain types of events. To view and manage event attributes, navigate to *Settings* &rarr; *Workspace Data* &rarr; *Definitions* &rarr; *Event Attributes*.

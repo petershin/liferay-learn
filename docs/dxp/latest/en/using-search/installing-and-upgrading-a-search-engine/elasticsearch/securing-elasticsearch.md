@@ -1,3 +1,6 @@
+---
+uuid: 7c6bc451-0760-4e1e-849c-4fb5af9657b7
+---
 # Securing Elasticsearch
 
 The very first thing you must do to secure Elasticsearch is [enable X-Pack Security](#enable-x-pack-security). After that you can begin configuring authentication and encrypted communication.

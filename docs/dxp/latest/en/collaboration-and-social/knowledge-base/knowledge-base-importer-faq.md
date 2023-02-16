@@ -1,3 +1,6 @@
+---
+uuid: db496c5f-6ac0-456c-9492-ab886019b3b4
+---
 # Knowledge Base Importer FAQs
 
 **What happens when I import an existing article?**

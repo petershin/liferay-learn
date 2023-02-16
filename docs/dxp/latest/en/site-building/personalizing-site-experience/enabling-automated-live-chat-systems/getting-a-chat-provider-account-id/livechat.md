@@ -1,3 +1,6 @@
+---
+uuid: 6f73f42b-df65-41a7-8d09-70e64a3a133f
+---
 # LiveChat
 
 [LiveChat](https://www.livechat.com/) is a messaging platform that connects teams to users across platforms. This article documents how to locate your LiveChat account ID in order to [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.

@@ -1,3 +1,6 @@
+---
+uuid: 851dfc82-0b7d-4b00-a0a4-4b3909303ece
+---
 # LivePerson
 
 [LivePerson](https://www.liveperson.com/) is an AI powered chatbot platform. This article documents how to locate your LivePerson account ID in order to [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.

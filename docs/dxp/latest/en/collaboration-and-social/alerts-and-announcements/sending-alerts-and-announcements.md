@@ -1,3 +1,6 @@
+---
+uuid: 0f0c5e1b-c558-4a96-ad52-a8cd437e4fdc
+---
 # Sending Alerts and Announcements
 
 You can use the Alerts widget or the Announcements widget to broadcast important information. 

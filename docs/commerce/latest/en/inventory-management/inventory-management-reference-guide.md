@@ -1,3 +1,6 @@
+---
+uuid: 4e7bfc7c-9c60-4ab1-b148-5af137667ceb
+---
 # Inventory Management Reference Guide
 
 To access inventory settings, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.

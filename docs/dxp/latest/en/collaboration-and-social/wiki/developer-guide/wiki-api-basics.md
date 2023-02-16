@@ -1,3 +1,6 @@
+---
+uuid: 438fdca1-dbbf-46d4-8973-4edb3ac6ec6a
+---
 # Wiki API Basics
 
 Liferay's Headless Delivery application provides REST services for the [Wiki](../getting-started-with-wikis.md) application. With these services, you can add Wiki nodes and pages, list their information, modify their content, or remove them altogether. Here you'll call those services using cURL commands and Java classes.

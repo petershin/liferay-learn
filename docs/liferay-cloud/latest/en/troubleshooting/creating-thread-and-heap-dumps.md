@@ -1,3 +1,6 @@
+---
+uuid: 87fc3b35-c7e9-4adb-b7c3-4807b1c7215c
+---
 # Creating Thread and Heap Dumps
 
 When you are experiencing issues with your `liferay` service's performance, you may need to take thread or heap dumps to help you or Liferay Cloud Support optimize your instance or troubleshoot problems.

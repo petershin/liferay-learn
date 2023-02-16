@@ -1,3 +1,6 @@
+---
+uuid: 82c7868e-57c1-4c44-aa05-de7494779fbd
+---
 # System Properties
 
 Liferay DXP/Portal runs in the application server's JVM. System properties can be passed directly to the JVM as arguments to `java` in the format `-D[name1]=[value1]` or can be loaded using DXP System Properties files. System properties differ from [Portal Properties](./portal-properties.md) because they're available to the application server and all of its applications.

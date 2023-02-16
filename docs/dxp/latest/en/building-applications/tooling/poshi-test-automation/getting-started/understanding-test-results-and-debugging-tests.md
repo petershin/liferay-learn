@@ -1,3 +1,6 @@
+---
+uuid: cc1b6ea9-407d-4c55-9a45-34a205411d3b
+---
 # Understanding Test Results and Debugging Tests
 
 Poshi tests are run on the terminal or command line. When a test run is completed there are multiple ways to view the test results and diagnose test issues.

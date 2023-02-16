@@ -1,3 +1,6 @@
+---
+uuid: 56f75c04-f12d-4ca2-82b6-b94e9c201e06
+---
 # Importing Knowledge Base Articles
 
 The Knowledge Base app can import articles in bulk. This lets you have a process where articles are prepared ahead of time before they’re published. Articles are imported into the Knowledge Base as [Markdown](http://commonmark.org/) files. Markdown is a text-only file format that is easy to read, yet supports all the things you’d need to do to format your articles.

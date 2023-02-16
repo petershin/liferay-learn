@@ -1,3 +1,6 @@
+---
+uuid: bce2f5ae-9950-4e1b-ac76-5a7d7de6ee79
+---
 # Page Fragment Editor Interface Reference
 
 The Page Fragment editor's interface is organized into two tabs:

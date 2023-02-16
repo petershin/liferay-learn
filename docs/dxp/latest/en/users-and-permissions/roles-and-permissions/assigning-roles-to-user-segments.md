@@ -1,3 +1,6 @@
+---
+uuid: 1027ea78-102b-444b-8a99-cc54d7290a8a
+---
 # Assigning Roles to User Segments
 
 > Available: Liferay DXP 7.2 SP2+, Liferay CE 7.3.1 GA2

@@ -1,3 +1,6 @@
+---
+uuid: 24d79833-a3e6-4af6-a1d1-4c60370878b7
+---
 # Cross-Cluster Replication
 
 > **Liferay Enterprise Search (LES) Subscribers**

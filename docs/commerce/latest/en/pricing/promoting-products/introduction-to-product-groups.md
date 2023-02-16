@@ -1,3 +1,6 @@
+---
+uuid: aa12ca7c-9806-414a-9e6b-d403131e089c
+---
 # Introduction to Product Groups
 
 Product Groups are static groups of products you can use for targeted discounts or pricing. Product Groups are ideal in two scenarios:

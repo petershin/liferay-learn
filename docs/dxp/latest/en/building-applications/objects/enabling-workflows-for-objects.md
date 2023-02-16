@@ -1,3 +1,6 @@
+---
+uuid: ca5013e4-22f9-4579-a747-9608f04748ec
+---
 # Enabling Workflow for Objects
 
 > Available: Liferay DXP/Portal 7.4+

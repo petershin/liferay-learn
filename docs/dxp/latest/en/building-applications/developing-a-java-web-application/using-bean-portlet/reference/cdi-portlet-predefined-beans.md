@@ -1,3 +1,6 @@
+---
+uuid: 56490db7-0eaf-4c1d-8f77-793270e916e2
+---
 # CDI Portlet Predefined Beans
 
 Liferay DXP provides injectable portlet artifacts for CDI called Portlet Predefined Beans, as specified by [JSR 362](https://jcp.org/en/jsr/detail?id=362).  There are two types of predefined beans:

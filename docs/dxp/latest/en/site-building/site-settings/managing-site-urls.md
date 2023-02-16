@@ -1,9 +1,10 @@
 ---
 toc:
-- ./managing-site-urls/configuring-your-sites-friendly-url.md
-- ./managing-site-urls/configuring-virtual-hosts-site-urls.md
-- ./managing-site-urls/setting-up-redirects-and-404-tracking.md
-- ./managing-site-urls/using-pattern-redirects.md
+  - ./managing-site-urls/configuring-your-sites-friendly-url.md
+  - ./managing-site-urls/configuring-virtual-hosts-site-urls.md
+  - ./managing-site-urls/setting-up-redirects-and-404-tracking.md
+  - ./managing-site-urls/using-pattern-redirects.md
+uuid: e4e2e951-db91-4d5e-982c-049b5e03be42
 ---
 # Managing Site URLs
 

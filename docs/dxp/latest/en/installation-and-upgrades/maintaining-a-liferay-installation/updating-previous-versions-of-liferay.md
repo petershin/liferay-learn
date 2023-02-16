@@ -1,3 +1,6 @@
+---
+uuid: cb197c2b-720b-41d8-a7d7-0db63b0fc0c7
+---
 # Updating Previous Versions of Liferay
 
 Staying current with updates gives you the best security and quality. 

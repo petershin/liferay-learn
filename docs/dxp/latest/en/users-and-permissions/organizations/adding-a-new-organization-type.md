@@ -1,3 +1,6 @@
+---
+uuid: 49947c76-32de-48a9-b6e8-7f9281ff8732
+---
 # Adding a New Organization Type
 
 By default, Liferay DXP only includes the *Organization* type. You can configure the existing type or add additional types in System Settings &rarr; Users &rarr; Organization Type. There are two main reasons to configure Organization types:

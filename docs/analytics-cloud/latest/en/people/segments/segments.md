@@ -1,3 +1,6 @@
+---
+uuid: 9438dbbf-0a67-4531-bff7-4ec226860725
+---
 # Segments
 
 Segments aggregate Individuals based on common attributes and behavior. For example, you can create a Segment that contains users interested in a given topic, work in a specific industry, or both. Analytics Cloud analyzes and profiles Segments. You can then integrate your Analytics Cloud Segments with personalization in Liferay DXP, so you can deliver content of interest to each Segment via Liferay DXP.

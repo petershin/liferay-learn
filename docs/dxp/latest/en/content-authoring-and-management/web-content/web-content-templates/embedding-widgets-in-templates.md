@@ -1,3 +1,6 @@
+---
+uuid: 639e26cd-ceb4-4590-a380-56777ab455a1
+---
 # Embedding Widgets in Templates
 
 You can embed widgets in web content templates: it doesn't matter whether they're core apps, custom apps, instanceable, or non-instanceable. Below is an example of embedding a Web Content widget in FreeMarker:

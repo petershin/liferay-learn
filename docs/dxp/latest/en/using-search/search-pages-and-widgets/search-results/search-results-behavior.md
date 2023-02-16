@@ -1,3 +1,6 @@
+---
+uuid: fb5824c6-339d-46be-b697-12497bf052ba
+---
 # Search Results Behavior
 
 Previously, you [learned](./configuring-the-search-results-widget.md) how to display search results. There are additional Search Results concepts and configurations that can enhance your search results:

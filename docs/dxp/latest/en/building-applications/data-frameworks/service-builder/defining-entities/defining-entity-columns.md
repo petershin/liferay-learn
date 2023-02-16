@@ -1,3 +1,6 @@
+---
+uuid: 60e756cb-8c09-4781-9ed4-34720ab6c046
+---
 # Defining Entity Columns
 
 An entity's columns represent its attributes. These attributes map table fields to Java object fields. 

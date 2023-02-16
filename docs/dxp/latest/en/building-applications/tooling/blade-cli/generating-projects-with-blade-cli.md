@@ -1,3 +1,6 @@
+---
+uuid: aad6a3dd-a85c-4c81-8612-eeeebf94a387
+---
 # Generating Projects with Blade CLI
 
 Blade CLI exists to create, build, and deploy Liferay projects in Liferay Workspaces. Once created, these projects can be imported into an IDE or worked on directly. Here you'll learn the various ways in which you can create and manage Liferay projects.

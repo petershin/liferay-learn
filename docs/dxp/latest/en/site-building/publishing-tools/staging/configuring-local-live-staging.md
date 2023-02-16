@@ -1,3 +1,6 @@
+---
+uuid: 5e770ae2-ffb6-4d25-9be2-00770fed680d
+---
 # Configuring Local Live Staging
 
 With Local Live Staging, both your Staging and Live environments are hosted on the same Liferay server. When enabled, Liferay DXP creates a local clone of your Site or Asset Library that serves as the Staging environment, while the original becomes your Live environment. Both environments share the same JVM, database, selected application data, and configurations (e.g., portal properties).

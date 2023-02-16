@@ -1,3 +1,6 @@
+---
+uuid: ba706231-8ef6-48b1-9673-c6167e21157e
+---
 # Writing a Custom Form Field Type
 
 The Forms application contains many highly configurable [field types out-of-the-box](../creating-and-managing-forms/forms-field-types-reference.md). Most use cases are met with one of the existing field types. If your use case can't be met with the default field types, you can create your own.

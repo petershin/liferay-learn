@@ -1,9 +1,10 @@
 ---
 toc:
-- ./personalizing-site-experience/segmentation.md
-- ./personalizing-site-experience/experience-personalization.md
-- ./personalizing-site-experience/migration-from-audience-targeting.md
-- ./personalizing-site-experience/enabling-automated-live-chat-systems.md
+  - ./personalizing-site-experience/segmentation.md
+  - ./personalizing-site-experience/experience-personalization.md
+  - ./personalizing-site-experience/migration-from-audience-targeting.md
+  - ./personalizing-site-experience/enabling-automated-live-chat-systems.md
+uuid: 7ce0d5f8-e933-4eb3-8fe4-7588d0b00244
 ---
 # Personalizing Site Experience
 

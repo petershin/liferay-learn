@@ -1,3 +1,6 @@
+---
+uuid: e1ab00dc-e1b1-411f-98fc-5f25cc6d9d1d
+---
 # Listening for Registration Events
 
 The messaging API supports listening for destination and message listener registration events. Here are some reasons to listen for these events:

@@ -1,12 +1,13 @@
 ---
 toc:
-- ./roles-and-permissions/commerce-roles-reference.md
-- ./roles-and-permissions/order-management-permissions.md
-- ./roles-and-permissions/inventory-management-permissions.md
-- ./roles-and-permissions/pricing-permissions.md
-- ./roles-and-permissions/product-management-permissions.md
-- ./roles-and-permissions/store-management-permissions.md
-- ./roles-and-permissions/settings-permissions.md
+  - ./roles-and-permissions/commerce-roles-reference.md
+  - ./roles-and-permissions/order-management-permissions.md
+  - ./roles-and-permissions/inventory-management-permissions.md
+  - ./roles-and-permissions/pricing-permissions.md
+  - ./roles-and-permissions/product-management-permissions.md
+  - ./roles-and-permissions/store-management-permissions.md
+  - ./roles-and-permissions/settings-permissions.md
+uuid: 432b5916-84ef-41e7-8edf-03250e41e66c
 ---
 # Roles and Permissions
 

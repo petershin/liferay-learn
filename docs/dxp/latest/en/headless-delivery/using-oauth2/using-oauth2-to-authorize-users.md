@@ -1,3 +1,6 @@
+---
+uuid: 17432a1c-b6fa-438a-b8bc-68be9d678ab9
+---
 # Using OAuth2 to Authorize Users
 
 You can create applications that access Liferay's headless REST APIs using the OAuth 2.0 authorization protocol. The provided sample React app demonstrates three different OAuth2 token-based authentication flows: authorization code flow, client credentials flow, and password flow. For more details on the OAuth2 Administration panel see [Creating an OAuth2 Application](./creating-oauth2-applications.md)

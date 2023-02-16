@@ -1,3 +1,6 @@
+---
+uuid: 4a0b1b87-a50c-4d82-97ed-68f46190d9a5
+---
 # Environment Teams and Roles
 
 Administrators can manage team members and roles in each project environment using the Liferay Cloud Console. Each environment can have unique members, and each member can have different roles in different environments.

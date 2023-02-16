@@ -1,3 +1,6 @@
+---
+uuid: 5be48c83-41dd-4328-9b25-ddb2fff80d82
+---
 # Understanding the Currency Hierarchy
 
 With Liferay Commerce, you can use different currencies across Catalogs, Price Lists, and Channels. Each currency has its own role in the Commerce currency hierarchy.

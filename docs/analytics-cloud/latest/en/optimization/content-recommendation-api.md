@@ -1,3 +1,6 @@
+---
+uuid: e3d77570-ea06-4243-8ed2-755929164c06
+---
 # Content Recommendation API
 
 The Content Recommendation API in Liferay Analytics Cloud suggests content based on user interactions with content in a Liferay DXP instance. This is possible because once Liferay DXP is connected to Analytics Cloud, it sends interaction events each time a user visits a page. Each of those events contains information about the content the user consumes. Analytics Cloud collects and processes this information.

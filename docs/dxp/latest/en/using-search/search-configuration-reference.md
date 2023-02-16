@@ -1,3 +1,6 @@
+---
+uuid: 6d30909a-5198-437c-b3b5-1fc61cc705fc
+---
 # Search Configuration Reference
 
 Search in Liferay DXP can be configured in lots of ways. Once you understand the concept of [configuration scope](../system-administration/configuring-liferay/understanding-configuration-scope.md), you'll understand where to find a certain configuration screen.

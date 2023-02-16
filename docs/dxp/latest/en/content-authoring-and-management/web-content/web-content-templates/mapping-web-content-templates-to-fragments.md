@@ -1,3 +1,6 @@
+---
+uuid: 209ff36f-8908-444d-be4b-1d293af9c4ee
+---
 # Mapping Web Content Templates to Fragments
 <!--TASK: Relocate to section on Web Content Templates, since this is done on the Web Content side. -->
 By default, you can map [Web Content Structure](../../../content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures.md) fields holding a single value (such as Date, Numeric, Image, Number, or Text) to Fragments. For multi-value fields (such as Select from List, Radio Button, or HTML) you must first render the field using a [Web Content Template](../../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md); then you can map the Template to a Fragment.

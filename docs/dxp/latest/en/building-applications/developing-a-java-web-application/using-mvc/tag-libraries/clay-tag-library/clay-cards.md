@@ -1,3 +1,6 @@
+---
+uuid: 75a9490e-50eb-4876-a45c-db1f92219846
+---
 # Clay Cards
 
 Cards visually represent data. Use them for images, document libraries, user profiles and more. There are four main types of Cards:

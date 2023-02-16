@@ -1,3 +1,6 @@
+---
+uuid: a718baa0-5df4-414c-aab6-7411e9d75967
+---
 # Sanitizing User Data
 
 One of the technically challenging requirements of the General Data Protection Regulation (GDPR) is _the right to be forgotten_. The purpose here is not to go into the details of this requirement, but to show two pieces of functionality that can assist you in satisfying the requirement: Personal Data Erasure and Data Anonymization.

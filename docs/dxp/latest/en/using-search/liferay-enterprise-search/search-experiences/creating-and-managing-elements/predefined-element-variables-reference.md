@@ -1,3 +1,6 @@
+---
+uuid: 496a6651-e3f5-4ff2-8754-6362d84e366a
+---
 # Predefined Element Variables Reference
 
 To add a predefined variable to the element in the Element Source editor, place the cursor where the variable will be, then click on the variable in the left hand sidebar to have it inserted. In the Custom JSON Element you must type the variable directly into the editor. The syntax for each variable appears in the table below.

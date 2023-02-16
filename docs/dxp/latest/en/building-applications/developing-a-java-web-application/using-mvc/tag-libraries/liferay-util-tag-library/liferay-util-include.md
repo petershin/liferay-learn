@@ -1,3 +1,6 @@
+---
+uuid: ee81e1d4-c265-485d-826d-4c6f539b84d9
+---
 # Using Liferay Util Include
 
 The include tag lets you include other JSP files in your portlet's JSP, theme, or web content. This can increase readability as well as provide separation of concerns for JSP files. 

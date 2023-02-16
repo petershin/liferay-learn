@@ -1,3 +1,6 @@
+---
+uuid: e2b6162b-7544-4631-9043-ee79851e4c50
+---
 # Configuring SAML at the Instance Level
 
 Each portal instance can be a SAML provider, either an Identity Provider (IdP) or a Service Provider (SP). Whichever role your DXP instance fills, you can configure it in the same place. 

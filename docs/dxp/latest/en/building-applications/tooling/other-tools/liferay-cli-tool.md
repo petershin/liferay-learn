@@ -1,3 +1,6 @@
+---
+uuid: fcbb7849-0fc9-472f-98f9-b2d1d416b299
+---
 # Liferay CLI Tool
 
 The Liferay CLI tool makes it easy to create [Angular](https://angular.io/), JavaScript, [React](https://reactjs.org/), shared bundle, or [Vue.js](https://vuejs.org/) projects to interface with Liferay's REST and GraphQL services. Using a `liferay` command, you can generate, build, and deploy projects.

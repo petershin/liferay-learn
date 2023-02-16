@@ -1,3 +1,6 @@
+---
+uuid: 6a806e17-5e0c-4a78-a022-2bf7f8b4a532
+---
 # Adding Image Resolutions
 
 By default, DXP contains two Image Resolutions: a Preview and Thumbnail. You can always add more Image Resolutions, such as resolutions to cover common device sizes like mobile phones, tablets, laptops, and desktops. For example, if most users use one device (e.g., all Intranet users have the same company mobile phone), you can create a resolution to target that device. Note that generating more images requires additional computational resources and storage space.

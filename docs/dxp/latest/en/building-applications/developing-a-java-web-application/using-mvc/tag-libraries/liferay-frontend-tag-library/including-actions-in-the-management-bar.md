@@ -1,3 +1,6 @@
+---
+uuid: 29320505-34a4-4b94-a722-edd865bd5689
+---
 # Including Actions in the Management Bar
 
 While an actions menu is typically included with each search container result, you can also include these actions in the management bar. This keeps everything organized within the same UI. This update adds a checkbox next to each search container result, as well as adds one in the management bar itself to select all results. The actions are displayed when a checkbox is checked---individual or select all---and hidden from view otherwise. 

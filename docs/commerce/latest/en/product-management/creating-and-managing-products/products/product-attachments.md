@@ -1,3 +1,6 @@
+---
+uuid: 79d98d0b-81cf-4e52-891a-4d528dcbc3b1
+---
 # Product Attachments
 
 Catalog managers can upload a downloadable document for a product which often provides additional information that is not already in the product's description or specifications. You can upload multiple attachments especially if there are more than one SKU (product variant).

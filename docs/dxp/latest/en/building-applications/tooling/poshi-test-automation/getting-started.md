@@ -1,15 +1,16 @@
 ---
 toc:
-- ./getting-started/setup.md
-- ./getting-started/creating-a-path-file.md
-- ./getting-started/creating-a-macro-file.md
-- ./getting-started/creating-a-testcase-file.md
-- ./getting-started/syntax-validation.md
-- ./getting-started/running-a-test.md
-- ./getting-started/understanding-test-results-and-debugging-tests.md
+  - ./getting-started/setup.md
+  - ./getting-started/creating-a-path-file.md
+  - ./getting-started/creating-a-macro-file.md
+  - ./getting-started/creating-a-testcase-file.md
+  - ./getting-started/syntax-validation.md
+  - ./getting-started/running-a-test.md
+  - ./getting-started/understanding-test-results-and-debugging-tests.md
 myst:
   html_meta:
-    "documentation-type": "user-guide"
+    documentation-type: user-guide
+uuid: e089bd08-a0c4-4b74-b0fa-5e533cdfb7c3
 ---
 
 # Getting Started

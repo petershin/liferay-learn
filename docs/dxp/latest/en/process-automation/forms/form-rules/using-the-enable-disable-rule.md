@@ -1,3 +1,6 @@
+---
+uuid: 8f3f7109-493b-40cb-9dfe-b2cde9b9f0f6
+---
 # Using the Enable-Disable Rule
 
 An enable/disable Rule makes a field editable based on one or more conditions. This is useful for entering optional information or gathering data from only users who fall under a particular group. For example, a campsite or a doctor's office might ask people to list medications or allergies that might affect treatment. This field is editable only if the user selects Yes.

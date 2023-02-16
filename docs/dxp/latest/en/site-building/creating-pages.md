@@ -1,12 +1,13 @@
 ---
 toc:
-- ./creating-pages/understanding-pages.md
-- ./creating-pages/adding-pages.md
-- ./creating-pages/using-content-pages.md
-- ./creating-pages/defining-headers-and-footers.md
-- ./creating-pages/using-widget-pages.md
-- ./creating-pages/page-fragments-and-widgets.md
-- ./creating-pages/page-settings.md
+  - ./creating-pages/understanding-pages.md
+  - ./creating-pages/adding-pages.md
+  - ./creating-pages/using-content-pages.md
+  - ./creating-pages/defining-headers-and-footers.md
+  - ./creating-pages/using-widget-pages.md
+  - ./creating-pages/page-fragments-and-widgets.md
+  - ./creating-pages/page-settings.md
+uuid: 2bb5e389-2ced-48e3-b571-11a9b1d920ba
 ---
 # Creating Pages
 

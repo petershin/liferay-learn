@@ -1,3 +1,6 @@
+---
+uuid: 052e918e-b986-4d62-bab5-7b8348af80f0
+---
 # Fragment Sub-Elements Reference
 
 In addition to [General](./general-settings-reference.md) and [Style](./styles-reference.md) settings, many fragments include sub-elements with their own configuration options. To access these options, begin editing a page or template ( ![Edit Icon](../../../../../images/icon-edit.png) ), click the desired fragment, and select one of its sub-elements in the Browser ( ![Browser Icon](../../../../../images/icon-hierarchy.png) ) sidebar menu.

@@ -1,3 +1,6 @@
+---
+uuid: d94161ac-2456-4c2c-814b-1211ff270f94
+---
 # Enabling Optimization of Animated GIFs
 <!--TASK: Relocate to Adaptive Media section. -->
 To scale animated GIFs, Adaptive Media uses an external tool called [Gifsicle](https://www.lcdf.org/gifsicle/). If Gifsicle isn't installed and `image/gif` is included as a supported MIME type, Adaptive Media scales only one frame of the GIF, making a static GIF.

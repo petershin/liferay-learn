@@ -1,3 +1,6 @@
+---
+uuid: a12bf6d3-19e0-43bf-89af-f0aa614040be
+---
 # Clay Navigation Bars
 
 Similar to dropdown menus, navigation bars display a list of navigation items. The key difference is navigation bars are displayed in a horizontal bar with all navigation items visible at all times. The navigation bar also indicates the  active navigation item with an underline. Navigation bars come in two styles: white background with dark-grey text (default) and dark-grey background with white text (inverted).

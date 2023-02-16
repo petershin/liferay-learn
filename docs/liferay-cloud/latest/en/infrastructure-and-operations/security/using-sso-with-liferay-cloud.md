@@ -1,3 +1,6 @@
+---
+uuid: d229293d-6125-4a3e-a1a0-c07d4cc406ad
+---
 # Using SSO with Liferay Cloud
 
 Customers may use their SAML 2.0 compliant Single Sign-On Identity Providers to authenticate Users to the Liferay Cloud platform. This document will detail the process to enable this integration.

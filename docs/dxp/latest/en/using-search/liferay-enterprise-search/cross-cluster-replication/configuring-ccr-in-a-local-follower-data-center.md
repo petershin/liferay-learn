@@ -1,3 +1,6 @@
+---
+uuid: 05eb7be9-f2fd-4fd4-9371-81350dade69d
+---
 # Configuring CCR in a Local Follower Data Center
 
 > First [configure CCR in the remote/leader data center](./configuring-ccr-in-a-remote-leader-data-center.md) before following the steps below.

@@ -1,3 +1,6 @@
+---
+uuid: a183700b-eb36-4394-9874-f73dffb80096
+---
 # API Headers Reference
 
 This article documents the available headers you can use when making Headless API requests:

@@ -1,3 +1,6 @@
+---
+uuid: 47fd87dc-1f9d-4686-ba19-15ca4c1bb276
+---
 # Fixing a Bug or Contributing a New Feature
 
 The first thing to do in learning to fix bugs or contributing a feature is to become familiar with how to build the system. The Liferay Portal build system now includes an option for using nightly snapshot bundles as opposed to using a full build via ant all. This significantly cuts down on the amount of time needed to build the system. *ant all* can sometimes take 15-30 minutes to build a working system whereas using a snapshot takes only a few minutes. 

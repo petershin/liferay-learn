@@ -1,3 +1,6 @@
+---
+uuid: 8178cf07-89c7-4402-9749-26662c566c46
+---
 # Creating a Node
 
 As more wiki pages are created in a single DXP site, creating additional wiki nodes can provide a loose structure to organize your wiki pages accordingly. Users can create a nodes to segment articles that cover different topics.

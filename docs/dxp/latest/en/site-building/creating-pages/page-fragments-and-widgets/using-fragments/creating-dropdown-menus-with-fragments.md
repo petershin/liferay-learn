@@ -1,3 +1,6 @@
+---
+uuid: 83f18292-8fdd-4d16-9f4d-0d065e4b0aca
+---
 # Creating Dropdown Menus with Fragments
 
 > Available: Liferay DXP/Portal 7.4+.

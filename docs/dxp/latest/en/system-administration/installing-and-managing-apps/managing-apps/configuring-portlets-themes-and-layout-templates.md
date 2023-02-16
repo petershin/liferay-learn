@@ -1,3 +1,6 @@
+---
+uuid: 25a60020-a4cc-419b-a7f6-6a29d84c5f9f
+---
 # Configuring Portlets, Themes,  and Layout Templates
 
 The Components listing is the easiest way to configure [portlets](https://help.liferay.com/hc/articles/360029046351-Introduction-to-Portlets), [themes](https://help.liferay.com/hc/articles/360035581011-UI-Architecture#themes), and [layout templates](https://help.liferay.com/hc/articles/360028726612-Layout-Templates). In the Components UI, you can enable/disable them and configure permissions on them.

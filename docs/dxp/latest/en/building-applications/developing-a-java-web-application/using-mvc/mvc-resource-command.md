@@ -1,3 +1,6 @@
+---
+uuid: e6e8ec72-27f5-435f-b1b1-afcb8e7d5412
+---
 # MVC Resource Command
 
 MVC Resource Command classes retrieve resources: images, XML, or any other kind of resource from a DXP/Portal instance without triggering any actions or renders. Requests or portlet resource URLs invoke MVC Resource Commands.

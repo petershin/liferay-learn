@@ -1,3 +1,6 @@
+---
+uuid: 53a0a394-0d8e-4fb4-873d-5525eca75a75
+---
 # Adding a New Product Data Source for the Product Publisher Widget
 
 This tutorial will show you how to add a new product data source by implementing the `CPDataSource` interface.

@@ -1,3 +1,6 @@
+---
+uuid: cb8a508a-6b39-4825-9f15-4c49128a0f97
+---
 # Getting Started with Elasticsearch
 
 > **Compatibility:** See the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for details on the compatible Elasticsearch versions, available Liferay connectors, and required Liferay patch levels.

@@ -1,3 +1,6 @@
+---
+uuid: f75c3e38-f15b-495b-9384-e1ea4a767771
+---
 # Managing Fragments
 
 Liferay DXP provides tools for managing fragments in the Liferay UI. With out-of-the-box tools, you can quickly edit fragment code, export/import fragment sets between sites, and more.

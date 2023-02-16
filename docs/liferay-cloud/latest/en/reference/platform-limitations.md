@@ -1,3 +1,6 @@
+---
+uuid: e2f145ad-3da7-43cf-9ecb-cd5c6f8131ed
+---
 # Platform Limitations
 
 Liferay Cloud and its services have some notable limitations. Many of these limitations may vary due to your specific level of subscription. Other limitations may change over time as changes are made to Liferay Cloud's infrastructure.

@@ -1,3 +1,6 @@
+---
+uuid: 4a7a87dc-3a2f-400b-86da-01f120be5b60
+---
 # Using the Liferay Commerce Docker Image
 
 The latest version Liferay Commerce is available as a docker image. Follow these steps to download the latest Docker image release of Liferay Commerce and get started.

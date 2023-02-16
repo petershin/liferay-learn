@@ -1,3 +1,6 @@
+---
+uuid: dfc5950d-dd88-430a-9c9b-2c322e1953da
+---
 # Implementing a Custom Checkout Step
 
 This tutorial will show you how to add a custom checkout step by implementing the [CommerceCheckoutStep](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/util/CommerceCheckoutStep.java) interface.

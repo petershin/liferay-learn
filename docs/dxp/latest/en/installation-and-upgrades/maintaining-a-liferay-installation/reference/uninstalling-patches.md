@@ -1,3 +1,6 @@
+---
+uuid: 662b5906-ac09-4a5c-898b-6825637789d0
+---
 # Uninstalling Patches
 
 > Subscribers

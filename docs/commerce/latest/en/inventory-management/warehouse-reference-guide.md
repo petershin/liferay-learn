@@ -1,3 +1,6 @@
+---
+uuid: a3fa7293-cbde-44fb-8a6f-aaa94b054309
+---
 # Warehouse Reference Guide
 
 To manage warehouses, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Warehouses*.

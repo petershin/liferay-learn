@@ -1,13 +1,14 @@
 ---
 toc:
-- ./search-results/search-results.md
-- ./search-results/configuring-the-search-results-widget.md
-- ./search-results/sorting-search-results.md
-- ./search-results/filtering-search-results.md
-- ./search-results/enabling-search-suggestions.md
-- ./search-results/search-results-behavior.md
-- ./search-results/understanding-low-level-search-options.md
-- ./search-results/custom-filter-examples.md
+  - ./search-results/search-results.md
+  - ./search-results/configuring-the-search-results-widget.md
+  - ./search-results/sorting-search-results.md
+  - ./search-results/filtering-search-results.md
+  - ./search-results/enabling-search-suggestions.md
+  - ./search-results/search-results-behavior.md
+  - ./search-results/understanding-low-level-search-options.md
+  - ./search-results/custom-filter-examples.md
+uuid: 3807715d-17cd-42ef-8143-32d7626d79a6
 ---
 # Search Results
 

@@ -1,3 +1,6 @@
+---
+uuid: 5c5f9eaa-753c-41ad-9fe7-afdd9b2bffd7
+---
 # Token-based Single Sign On Authentication
 
 Token-based SSO authentication was introduced in Liferay Portal 7.0 to standardize support for Shibboleth, SiteMinder, Oracle OAM, and any SSO product that works by propagating a token via one of the following mechanisms:

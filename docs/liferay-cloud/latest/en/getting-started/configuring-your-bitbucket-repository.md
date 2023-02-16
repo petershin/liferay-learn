@@ -1,3 +1,6 @@
+---
+uuid: 4cc9c375-56da-4f38-83d3-7f0c9a58840c
+---
 # Configuring Your Bitbucket Repository
 
 Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must:

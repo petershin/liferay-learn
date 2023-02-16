@@ -1,3 +1,6 @@
+---
+uuid: 0fe8df51-9ca7-448a-af84-924d788e79ac
+---
 # Securing Site Documents Content
 
 By default, your Site's Documents and Media files and folders are not visible in the web server directory index, so you can't view them through the browser. To enable browsing a Site's documents through the web server directory index, you can enable this setting for your Site.

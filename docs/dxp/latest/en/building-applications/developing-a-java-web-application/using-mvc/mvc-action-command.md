@@ -1,3 +1,6 @@
+---
+uuid: ab6ec89f-7268-490d-8293-271ea453179d
+---
 # MVC Action Command
 
 MVC Action Commands handle actions as separate classes. With Action Commands, you can organize action logic in `MVCPortlet`s that have many actions. Action URLs in the portlet's JSPs invoke a designated MVC Action Command class.

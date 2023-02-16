@@ -1,3 +1,6 @@
+---
+uuid: 42d0d78f-d8fe-461f-8d48-a3376b49ed44
+---
 # Creating a Widget Template
 
 Widget Templates use [FreeMarker](https://freemarker.apache.org/) to determine how widgets are rendered in Site Pages. Each template is designed for a specific widget type and can be selected while configuring the widget in a Page.

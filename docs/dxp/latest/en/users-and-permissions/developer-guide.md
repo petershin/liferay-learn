@@ -1,14 +1,15 @@
 ---
 toc:
-- ./developer-guide/adding-the-uad-framework.md
-- ./developer-guide/accounts-api-basics.md
-- ./developer-guide/account-users-and-roles-apis.md
-- ./developer-guide/user-account-api-basics.md
-- ./developer-guide/organizations-api-basics.md
-- ./developer-guide/roles-api-basics.md
-- ./developer-guide/user-groups-api-basics.md
-- ./developer-guide/countries-api-basics.md
-- ./developer-guide/regions-api-basics.md
+  - ./developer-guide/adding-the-uad-framework.md
+  - ./developer-guide/accounts-api-basics.md
+  - ./developer-guide/account-users-and-roles-apis.md
+  - ./developer-guide/user-account-api-basics.md
+  - ./developer-guide/organizations-api-basics.md
+  - ./developer-guide/roles-api-basics.md
+  - ./developer-guide/user-groups-api-basics.md
+  - ./developer-guide/countries-api-basics.md
+  - ./developer-guide/regions-api-basics.md
+uuid: 60c3cef4-580c-44d6-b7eb-6d5a1697f4a8
 ---
 # Developer Guide
 

@@ -1,3 +1,6 @@
+---
+uuid: b889ae6a-5685-4991-8beb-d53f5761794d
+---
 # Adding and Managing Users
 
 Core user management activities include adding, editing, and deleting users. These activities are typically restricted to Administrative users.

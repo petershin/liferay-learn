@@ -1,3 +1,6 @@
+---
+uuid: 86d92a49-c9a6-4d2f-8ed8-faf4aab615c2
+---
 # Other Knowledge Base Widgets
 
 There are other Knowledge Base widgets you can add to pages besides the [Knowledge Base Display widget](knowledge-base-display-widget.md):

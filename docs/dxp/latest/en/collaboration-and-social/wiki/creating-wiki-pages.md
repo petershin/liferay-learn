@@ -1,3 +1,6 @@
+---
+uuid: 5257b2ec-69e8-4192-89a7-6143a5a25922
+---
 # Creating Wiki Pages
 
 The _Wiki_ widget starts with a default wiki page called _FrontPage_. Users can edit this page to make their first wiki page.

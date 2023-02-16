@@ -1,3 +1,6 @@
+---
+uuid: c0d3cf57-eadd-4ed4-81a1-63d0ea3e492e
+---
 # Authentication
 
 In order for developers to call any of the API endpoints provided, they need to first create a personal access token by accessing their Liferay Analytics Cloud workspace.

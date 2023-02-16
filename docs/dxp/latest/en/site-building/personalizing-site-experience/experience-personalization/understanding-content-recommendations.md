@@ -1,3 +1,6 @@
+---
+uuid: a065fcab-d416-4c48-8603-8b4d82d83db9
+---
 # Understanding Content Recommendations
 
 When users visit your website, they interact with your content and show different behaviors depending on their interests. Liferay DXP, in combination with [Liferay Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html), can analyze this browsing behavior and show relevant content for your users. This can be useful to promote certain products or content that your users are more likely to buy or consume. For example, when a user visits your online store and shows interest in a particular type of product, you can use content recommendations to show the user similar products or related product promotions.

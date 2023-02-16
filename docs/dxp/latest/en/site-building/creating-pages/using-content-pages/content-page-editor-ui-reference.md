@@ -1,3 +1,6 @@
+---
+uuid: 7546c519-0350-4811-9577-635d4d1cddec
+---
 # Content Page Editor UI Reference
 
 {bdg-secondary}`For Liferay 7.4 U37+/GA37+`

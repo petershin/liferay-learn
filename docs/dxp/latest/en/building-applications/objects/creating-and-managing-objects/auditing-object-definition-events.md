@@ -1,3 +1,6 @@
+---
+uuid: a4cb2ac1-d3b7-4956-b2ea-c4cc0d30eb1a
+---
 # Auditing Object Definition Events
 
 {bdg-secondary}`Available Liferay 7.4 U47+/GA47+`

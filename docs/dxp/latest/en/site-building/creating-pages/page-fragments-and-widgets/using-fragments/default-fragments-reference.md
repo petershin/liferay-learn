@@ -1,3 +1,6 @@
+---
+uuid: 1e13195e-4d93-4d50-bc15-910ece4d4e8d
+---
 # Default Fragments Reference
 
 Liferay provides a variety of fragments out-of-the-box, so you can start building your solution right away. To view available fragments, begin editing a content page or page template. While editing, open the *Fragment and Widgets* tab (![Fragments and Widgets](../../../../images/icon-plus.png)) in the editing sidebar menu.

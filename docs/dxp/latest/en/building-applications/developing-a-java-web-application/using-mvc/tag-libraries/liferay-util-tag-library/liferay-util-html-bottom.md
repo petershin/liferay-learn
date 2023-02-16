@@ -1,3 +1,6 @@
+---
+uuid: 9a50ba04-13b4-41d6-8e3d-ff292ad5ce94
+---
 # Using Liferay Util HTML Bottom
 
 The HTML bottom tag is not a self-closing tag. Content placed between the opening and closing of this tag is moved to the bottom of the `<html>` tag. When something is passed using this taglib, the [bottom.jsp](https://github.com/liferay/liferay-portal/blob/master/portal-web/docroot/html/common/themes/bottom.jsp#L53-L59) is passed markup and outputs in this JSP. 

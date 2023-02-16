@@ -1,3 +1,6 @@
+---
+uuid: 93b2ddec-51f7-453e-adfb-8561f2121134
+---
 # Tracking Usage
 
 Analytics Cloud plans are limited by the total amount of [Individuals](../people/individuals/individual-profiles.md) and [Page Views](../touchpoints/pages/pages.md) synced from data sources. When either limit is exceeded, Analytics Cloud users are prompted to upgrade your plan or purchase add-ons to accommodate the additional usage.

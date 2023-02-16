@@ -1,3 +1,6 @@
+---
+uuid: a9386598-fc8a-4ffc-ac4e-46deaf6ecdfe
+---
 # Setting Storage Quotas for Documents and Media
 
 You can define storage quotas in Documents and Media by enabling the `data.limit.dl.storage.max.size` portal property. Once you define a value for this property, upload attempts exceeding the defined quota fail and display an error message. This quota applies specifically to Documents and Media and users of its APIs (e.g. message boards attachments, blogs images).

@@ -1,3 +1,6 @@
+---
+uuid: 3b4fac54-c4f1-4bc3-9a8e-af19101daf0e
+---
 # Creating Knowledge Base Articles
 
 The Knowledge Base app contains everything you need to create a repository of articles. You can create articles by authoring them in the app's WYSIWYG editor or by importing them from Markdown files (`.markdown`, `.md`) in a ZIP archive. The sections below cover both ways of creating articles.

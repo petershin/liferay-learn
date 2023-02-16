@@ -1,3 +1,6 @@
+---
+uuid: 93ff7948-40f9-4ee7-84bd-e503c775e9f8
+---
 # Scoping Sites and Individuals Using Properties
 
 A Property allows you to define and associate a label to a single or multiple sites. This allows you to aggregate the analytics data for all associated sites with the Property on a single dashboard. This is particularly useful if you have multiple sites in your DXP instance and would like to analyze them as a single site.

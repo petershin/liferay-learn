@@ -1,6 +1,7 @@
 ---
 toc:
-- ./using-jsf/reference.md
+  - ./using-jsf/reference.md
+uuid: 25a38d54-4ab8-4d5c-a9fc-4dc5b07d88a8
 ---
 # Using JSF
 

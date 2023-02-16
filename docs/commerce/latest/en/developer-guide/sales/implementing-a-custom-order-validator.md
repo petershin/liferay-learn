@@ -1,3 +1,6 @@
+---
+uuid: df90bbcd-2089-484a-8118-ce44f5bb7910
+---
 # Implementing a Custom Order Validator
 
 This tutorial will show you how to add a custom order validator by implementing the [CommerceOrderValidator](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java) interface.

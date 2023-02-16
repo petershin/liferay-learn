@@ -1,3 +1,6 @@
+---
+uuid: 389a9113-3e8c-48a5-8f8a-892f83858f3a
+---
 # Implementing a New Tax Engine
 
 This tutorial will show you how to add a new tax engine by implementing the [CommerceTaxEngine](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxEngine.java) interface.

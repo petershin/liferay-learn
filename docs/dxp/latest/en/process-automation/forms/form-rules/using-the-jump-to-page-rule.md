@@ -1,3 +1,6 @@
+---
+uuid: 4a3bae9e-336d-4fdb-9c22-59e3b3e546d2
+---
 # Using the Jump to Page Rule
 
 Use a Jump to Page rule to navigate automatically to a specific page in the form based on one or more conditions. This is useful if some pages do not apply to all the form's users. Even fields marked as required on the skipped pages can be successfully skipped using this rule.

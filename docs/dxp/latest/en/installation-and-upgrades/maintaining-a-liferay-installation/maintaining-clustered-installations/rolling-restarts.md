@@ -1,3 +1,6 @@
+---
+uuid: cab559e7-b4f9-4046-83ce-f2a94a3a326b
+---
 # Performing Rolling Restarts
 
 The rolling restart cluster maintenance process involves shutting down and updating nodes one at a time (while the other nodes are running) until they're all updated. This method maximizes uptime while you update your cluster. Rolling restarts can be used in container and image based environments.

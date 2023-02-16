@@ -1,3 +1,6 @@
+---
+uuid: 4648b6f5-1af3-4f08-ad40-9fce06bf1d22
+---
 # Configuring the Patching Tool
 
 > Subscribers

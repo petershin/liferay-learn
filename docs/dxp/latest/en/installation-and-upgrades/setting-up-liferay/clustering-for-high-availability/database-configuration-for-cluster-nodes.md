@@ -1,3 +1,6 @@
+---
+uuid: f1547302-f5a0-4ae5-8c99-6f7d8dd1632e
+---
 # Database Configuration for Cluster Nodes
 
 At minimum, nodes in a DXP cluster must be [configured to share the same database](./example-creating-a-simple-dxp-cluster.md#configure-cluster-link-and-the-other-server-connections) (or database cluster) in order to function. Optimizations discussed here can further improve database performance for a DXP cluster and should be considered with consideration for your usage of DXP and expected transaction volume.

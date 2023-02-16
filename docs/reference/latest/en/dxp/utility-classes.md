@@ -1,3 +1,6 @@
+---
+uuid: df777326-d719-4eeb-b493-44daddf94039
+---
 # Utility Classes
 
 [Util-Bridges](javadocs/util-bridges/index.html)

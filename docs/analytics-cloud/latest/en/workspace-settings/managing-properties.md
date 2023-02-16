@@ -1,3 +1,6 @@
+---
+uuid: 27746b9f-4e37-4a0e-8b49-20c4f223442b
+---
 # Managing Properties
 
 After [Creating a Property](../workspace-settings/scoping-sites-and-individuals-using-properties.md#creating-a-property) it can be managed and modified from the Workspace Settings section of Analytics Cloud. Navigate to *Settings* &rarr; *Workspace Settings* &rarr; *Properties*.

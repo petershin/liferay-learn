@@ -1,3 +1,6 @@
+---
+uuid: b9ffc0aa-aaf4-4019-92dc-e573a01af389
+---
 # Migrating an Angular Project to Use Liferay npm Bundler 2.x
 
 Follow these steps to migrate your Angular project to use liferay-npm-bundler 2.x. While liferay-npm-bundler 1.x relied on Babel to perform some transformation steps, these transformations are now automatically applied in version 2.x. Therefore, you should remove Babel from your project:

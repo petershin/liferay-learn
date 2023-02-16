@@ -1,3 +1,6 @@
+---
+uuid: 0a493b13-8edf-46af-bb07-94d4fdcf218d
+---
 # Using Price Tiers
 
 With Liferay Commerce, you can use *Price Tiers* to offer price reductions based on the quantity of a product ordered. Prices set this way take precedence for associated users when the specified minimum quantity is met.

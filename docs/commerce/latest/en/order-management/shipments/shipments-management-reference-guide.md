@@ -1,3 +1,6 @@
+---
+uuid: ed8260ed-492f-44a3-a97a-494b3bc10ddf
+---
 # Shipments Management Reference Guide
 
 This guide documents all the features in _Shipments Management_ menu. To access _Shipments Management_, navigate to the _Global Applications_ &rarr; _Shipments_.

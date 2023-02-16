@@ -1,3 +1,6 @@
+---
+uuid: ece95c64-ba3c-46ad-8343-5ebdeee906db
+---
 # Managing Payment Methods
 
 Payment methods in Liferay Commerce scoped by [channel](../../store-management/channels/introduction-to-channels.md) and store [site](../../starting-a-store/sites-and-site-types.md). If a Liferay Commerce instance has more than one storefront hosted on the same instance, administrators can use different payment methods on each site.

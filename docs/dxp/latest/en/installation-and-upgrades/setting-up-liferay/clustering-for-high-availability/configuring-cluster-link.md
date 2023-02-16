@@ -1,3 +1,6 @@
+---
+uuid: 63fe3469-67c3-48da-86fe-b4fb8cdf50c2
+---
 # Configuring Cluster Link
 
 Enabling Cluster Link activates distributed caching. The cache is distributed across multiple Liferay DXP nodes running concurrently. Cluster Link uses [Ehcache](http://www.ehcache.org) replication. The Ehcache global settings are in the [`portal.properties` file](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Ehcache).

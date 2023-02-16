@@ -1,3 +1,6 @@
+---
+uuid: 1b15f720-c5bd-4b3e-81cc-5dce130a4156
+---
 # Using Forms with Objects
 
 {bdg-secondary}`Available Liferay DXP 7.4+`

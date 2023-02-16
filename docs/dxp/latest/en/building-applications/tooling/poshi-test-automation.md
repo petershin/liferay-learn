@@ -1,8 +1,9 @@
 ---
 toc:
-- ./poshi-test-automation/poshi-basics.md
-- ./poshi-test-automation/getting-started.md
-- ./poshi-test-automation/poshi-resources.md
+  - ./poshi-test-automation/poshi-basics.md
+  - ./poshi-test-automation/getting-started.md
+  - ./poshi-test-automation/poshi-resources.md
+uuid: 852c92b3-d1d3-4acf-863b-e7a84bf64921
 ---
 # Poshi Test Automation
 

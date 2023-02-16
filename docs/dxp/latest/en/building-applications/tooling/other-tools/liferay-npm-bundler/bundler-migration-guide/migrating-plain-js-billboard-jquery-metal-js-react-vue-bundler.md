@@ -1,3 +1,6 @@
+---
+uuid: 93d457e7-711c-48dd-bf1b-cb4b07c3a84a
+---
 # Migrating a Plain JavaScript, Billboard JS, JQuery, Metal JS, React, or Vue JS Project to Use Liferay npm Bundler 2.x
 
 Follow these steps to migrate the framework projects shown below to use liferay-npm-bundler 2.x:

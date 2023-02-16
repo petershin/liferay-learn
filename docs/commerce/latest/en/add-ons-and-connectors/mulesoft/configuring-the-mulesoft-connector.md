@@ -1,3 +1,6 @@
+---
+uuid: f509b90c-62b3-47a5-80f1-b938f281693c
+---
 # Configuring the MuleSoft Connector
 
 Liferay's connector to MuleSoft uses OpenAPI 3.0 documents that describe Liferay's APIs. Each OpenAPI document is deployed dynamically in your Liferay instance under the following schema:

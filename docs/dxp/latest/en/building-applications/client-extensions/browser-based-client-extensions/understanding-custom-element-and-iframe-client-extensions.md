@@ -1,3 +1,6 @@
+---
+uuid: 0431a9b6-857c-42b4-a5e8-8fc7aba71321
+---
 # Understanding Custom Element and IFrame Client Extensions
 
 Custom Element and IFrame client extensions use Liferay's front-end infrastructure to register applications with Liferay and render them as page widgets. The [custom element](#using-the-custom-element-type) and [iframe](#using-the-iframe-type) types determine how the application is registered with Liferay and rendered in site pages.

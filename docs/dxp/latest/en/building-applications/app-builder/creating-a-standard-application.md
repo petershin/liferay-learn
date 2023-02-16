@@ -1,3 +1,6 @@
+---
+uuid: 9531d450-4715-4d54-90e6-2e8e52b8c452
+---
 # Creating a Standard Application
 
 To create applications based on a custom object takes four steps: create the object, create at least one form view, create at least one table view, and deploy the application.

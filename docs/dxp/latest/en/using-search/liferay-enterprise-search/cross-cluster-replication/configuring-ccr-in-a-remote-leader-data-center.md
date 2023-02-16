@@ -1,3 +1,6 @@
+---
+uuid: 22049b42-b6bb-44d8-bb85-c73b339aa9ed
+---
 # Configuring CCR In a Remote Leader Data Center
 
 > Ensure you have completed the necessary [prerequisite steps](./configuring-an-example-ccr-installation-replicating-between-data-centers.md) before following the steps below.

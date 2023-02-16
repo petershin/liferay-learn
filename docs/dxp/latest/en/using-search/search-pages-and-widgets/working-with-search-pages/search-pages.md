@@ -1,3 +1,6 @@
+---
+uuid: eff7bb59-bc7e-48cf-8a23-90c3b7db2e3c
+---
 # Search Pages
 
 Access the default search page at [`localhost:8080/web/guest/search`](http://localhost:8080/web/guest/search). If you have a running Liferay DXP with some content in it, you can navigate there and execute a search. By default, this page is a hidden page in the default site. Users are routed to this hidden page when they enter search terms in a *Search Bar* widget. The search page is also where users browse search results.

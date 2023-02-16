@@ -1,3 +1,6 @@
+---
+uuid: 4f90f25f-2ba2-4e23-8689-aabcda7e2f01
+---
 # Account Users
 
 {bdg-secondary}`For Liferay 7.4 U55+/GA55+`

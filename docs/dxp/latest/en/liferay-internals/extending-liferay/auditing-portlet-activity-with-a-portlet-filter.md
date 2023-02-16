@@ -1,3 +1,6 @@
+---
+uuid: a8dd9eb8-f44a-4cc3-8425-1685472c0119
+---
 # Auditing Portlet Activity with Portlet Filters
 
 Portlet filters intercept requests and responses at the start of each [portlet request processing phase](../../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) so you can add functionality there. This makes them useful for auditing portlet activities during their render, action, event, and resource serving phases.

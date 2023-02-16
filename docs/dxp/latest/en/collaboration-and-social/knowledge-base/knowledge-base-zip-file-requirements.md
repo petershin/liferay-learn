@@ -1,3 +1,6 @@
+---
+uuid: 72d26f27-3427-4202-8049-266170d9d287
+---
 # Knowledge Base ZIP File Requirements
 
 The Knowledge Base importer supports article hierarchies, so Markdown files can be specified anywhere in the ZIP file’s directory structure. They can be nested in any number of folders. Image files are the only files supported for attachments.

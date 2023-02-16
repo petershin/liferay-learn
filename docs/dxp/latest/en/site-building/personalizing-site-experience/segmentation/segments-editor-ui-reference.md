@@ -1,3 +1,6 @@
+---
+uuid: 12082068-33ec-40bc-aa4f-aced8a430727
+---
 # Segments Editor UI Reference
 
 An overview of the Segments editor UI is discussed here. To access the Segments editor follow these steps:

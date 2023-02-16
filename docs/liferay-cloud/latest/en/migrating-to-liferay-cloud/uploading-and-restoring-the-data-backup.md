@@ -1,3 +1,6 @@
+---
+uuid: 80e4d534-5071-4f22-b00f-2a463d8e3e9b
+---
 # Stage 3: Uploading and Restoring the Data Backup
 
 With your Liferay DXP database and document library in a compatible format, the next stage is to upload them together as a single backup to Liferay Cloud and restore them to your chosen environment.

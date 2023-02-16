@@ -1,3 +1,6 @@
+---
+uuid: 23fd9ec3-6981-429b-adf7-60f62aea992e
+---
 # Using Price Modifiers
 
 Price modifiers are defined at the Price List level and modify the price of list entities according to set conditions. <!--TASK: Improve introduction-->

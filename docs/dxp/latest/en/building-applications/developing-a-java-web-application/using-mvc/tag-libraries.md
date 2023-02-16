@@ -1,13 +1,14 @@
 ---
 toc:
-- ./tag-libraries/liferay-theme-objects-for-jsps.md
-- ./tag-libraries/liferay-portlet-objects-for-jsps.md
-- ./tag-libraries/alloy-ui-aui-tag-library.md
-- ./tag-libraries/clay-tag-library.md
-- ./tag-libraries/liferay-ui-tag-library.md
-- ./tag-libraries/liferay-frontend-tag-library.md
-- ./tag-libraries/liferay-util-tag-library.md
-- ./tag-libraries/chart-tag-library.md
+  - ./tag-libraries/liferay-theme-objects-for-jsps.md
+  - ./tag-libraries/liferay-portlet-objects-for-jsps.md
+  - ./tag-libraries/alloy-ui-aui-tag-library.md
+  - ./tag-libraries/clay-tag-library.md
+  - ./tag-libraries/liferay-ui-tag-library.md
+  - ./tag-libraries/liferay-frontend-tag-library.md
+  - ./tag-libraries/liferay-util-tag-library.md
+  - ./tag-libraries/chart-tag-library.md
+uuid: 11d2f646-ea56-4082-b445-5ec635402e12
 ---
 # Tag Libraries
 

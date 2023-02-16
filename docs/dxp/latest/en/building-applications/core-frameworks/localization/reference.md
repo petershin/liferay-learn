@@ -1,6 +1,7 @@
 ---
 toc:
-- ./reference/aggregating-resource-bundles.md
+  - ./reference/aggregating-resource-bundles.md
+uuid: d4b2031e-72d1-4776-8d21-71990e49e8db
 ---
 # Reference
 

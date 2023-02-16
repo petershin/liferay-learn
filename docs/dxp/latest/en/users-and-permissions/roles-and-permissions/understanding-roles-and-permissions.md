@@ -1,3 +1,6 @@
+---
+uuid: e72503a9-5db0-479f-acf5-d427238bbeb6
+---
 # Understanding Roles and Permissions
 
 To get things done in Liferay DXP, [Users](./../users/understanding-users.md) must have the proper permissions. Roles join Users with permissions. Most administrative work for Roles and permissions is done in *Control Panel* &rarr; *Users* &rarr; *Roles*.

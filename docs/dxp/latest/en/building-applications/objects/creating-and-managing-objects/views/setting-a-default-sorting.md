@@ -1,3 +1,6 @@
+---
+uuid: 5113dd1c-ff37-4164-9bd5-a8fbbdd0a853
+---
 # Setting a Default Sorting
 
 {bdg-secondary}`Available Liferay 7.4 U18+/GA18+`

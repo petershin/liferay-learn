@@ -1,3 +1,6 @@
+---
+uuid: 35f429b3-aadb-4c7f-844f-e389410ea935
+---
 # Backing Up Elasticsearch
 
 [Elasticsearch replicas](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html#index-modules-settings) protect against a node going down, but they won't help you with a catastrophic failure. Only good backup practices can help you then.

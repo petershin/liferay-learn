@@ -1,3 +1,6 @@
+---
+uuid: 6d60e7cc-9027-4ff5-9ee1-7fe2b33dbbd0
+---
 # Google Cloud Storage
 
 > Available for Liferay DXP 7.3 SP3+ and 7.4+

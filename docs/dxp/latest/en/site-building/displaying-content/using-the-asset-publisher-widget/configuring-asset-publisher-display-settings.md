@@ -1,3 +1,6 @@
+---
+uuid: 9f1cbdb2-18da-4237-aef5-f72d57311d41
+---
 # Configuring the Asset Publisher Display Settings
 
 Once you've [selected your assets](./selecting-assets-in-the-asset-publisher-widget.md) for the Asset Publisher, you can configure several display settings to specify how users view your content. Follow these steps:

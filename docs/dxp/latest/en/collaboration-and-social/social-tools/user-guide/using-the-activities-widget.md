@@ -1,3 +1,6 @@
+---
+uuid: d33da32d-a914-438b-b5f9-55a1e28dbbb2
+---
 # Using the Activities Widget
 
 The _Activities_ widget is used to track user activities on a site.

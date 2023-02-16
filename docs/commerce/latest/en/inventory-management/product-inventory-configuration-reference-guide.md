@@ -1,3 +1,6 @@
+---
+uuid: 8261e382-868c-427a-9795-5b1e9028a46a
+---
 # Product Inventory Configuration Reference Guide
 
 You can configure products in the catalog to display inventory data in the storefront. There are two options available to display inventory data: *Display Availability* and *Display Stock Quantity*. When the stock quantity is above the low stock threshold, it shows *Available* and when the stock quantity is less than the low stock threshold, it shows *Unavailable*. You can also select the inventory engine, availability estimate, enable back-orders, set the maximum number of orders, and more.

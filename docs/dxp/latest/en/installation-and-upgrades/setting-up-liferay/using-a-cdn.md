@@ -1,3 +1,6 @@
+---
+uuid: 1cc142a8-cca9-4d6b-b035-e8a6498807b3
+---
 # Using a CDN
 
 A Content Delivery Network (CDN) is a distributed infrastructure for caching static, file-based content. When visitors hit your site, your static content is loaded from the server closest to them, speeding up requests.

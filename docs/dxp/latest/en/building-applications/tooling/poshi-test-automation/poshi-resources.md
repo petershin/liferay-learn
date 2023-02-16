@@ -1,10 +1,11 @@
 ---
 toc:
-- ./poshi-resources/configuration.md
-- ./poshi-resources/using-poshi-resources.md
+  - ./poshi-resources/configuration.md
+  - ./poshi-resources/using-poshi-resources.md
 myst:
   html_meta:
-    "documentation-type": "user-guide"
+    documentation-type: user-guide
+uuid: 1e57c9cf-7fc2-4157-b013-ff645bc0d31e
 ---
 
 # Poshi Resources

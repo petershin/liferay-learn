@@ -1,3 +1,6 @@
+---
+uuid: 8d7aa25e-a7ee-4cce-91c8-fe111e98dc3c
+---
 # Account Addresses
 
 {bdg-secondary}`Available 7.4+`

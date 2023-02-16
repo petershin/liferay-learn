@@ -1,3 +1,6 @@
+---
+uuid: bcb71505-2900-4446-9723-d8d0d2e73ef0
+---
 # Working with Workflow Context
 
 [Workflows](../introduction-to-workflow.md) in Liferay are used as approval processes. At each step of the process, the workflow has certain data that's available in a `Map<String, Serializable>` object referred to in your scripts and custom code as `workflowContext`. The workflow context information is important to the proper functionality of Liferay's workflow engine. Understanding it can help you determine how best to use it in your custom code and workflow scripts.

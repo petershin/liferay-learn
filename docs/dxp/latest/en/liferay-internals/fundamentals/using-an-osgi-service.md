@@ -1,3 +1,6 @@
+---
+uuid: 3117260b-5605-41b8-a18c-eab47c4373b4
+---
 # Using an OSGi Service
 
 Liferay APIs are readily available as OSGi services. You can access a service by creating a field of that service type and annotating the field with [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html), like this:

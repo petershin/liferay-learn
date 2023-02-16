@@ -1,3 +1,6 @@
+---
+uuid: 7bb10ad4-6e30-4077-b993-e61aa41c51ec
+---
 # Configuring Personal Notifications
 
 Liferay provides integrated notification tools, so you can ensure users are alerted to platform events. Users can customize which notifications they receive by enabling email, or website notifications for the desired applications. These settings are global in scope and determine the user's personal notifications for all Sites.

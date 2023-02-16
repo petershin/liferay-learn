@@ -1,3 +1,6 @@
+---
+uuid: fc8a75dd-423c-4e3a-8304-62ddac02f19b
+---
 # Configuring Cross-Region Disaster Recovery
 
 Liferay Cloud provides two ways for customers to take advantage of the Disaster Recovery (DR) procedure in the case of major incidents: Automatic Disaster Recovery and Cross-Region Disaster Recovery. Liferay Cloud's approaches to disaster recovery scenarios can be reviewed in greater detail in the [Disaster Recovery Overview](./disaster-recovery-overview.md).

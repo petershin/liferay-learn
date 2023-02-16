@@ -1,3 +1,6 @@
+---
+uuid: 994902c1-2766-446d-a67b-67f70565e3c1
+---
 # Portlet 3.0 API Opt In
 
 A portlet must specify version 3.0 to "opt in" to the Portlet 3.0 API. The 3.0 Portlet API version can be specified in the following ways.

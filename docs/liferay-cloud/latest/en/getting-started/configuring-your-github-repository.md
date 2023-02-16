@@ -1,3 +1,6 @@
+---
+uuid: 8e0d0a35-6a6a-4655-a4fd-d1b44821b4f5
+---
 # Configuring Your GitHub Repository
 
 Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must:

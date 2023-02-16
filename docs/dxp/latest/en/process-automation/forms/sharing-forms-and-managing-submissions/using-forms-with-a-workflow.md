@@ -1,3 +1,6 @@
+---
+uuid: 0c7c3a0f-b2e5-4ac6-b1c5-f017faf21df3
+---
 # Using Forms with a Workflow
 
 The _Forms_ application is integrated with the _Workflow_ application and therefore users can activate a workflow process for a form. This means that before a form's entry is accepted, it must first be approved. To enable a workflow process for a Form, see [Activating Workflow for Forms](../../workflow/using-workflows/activating-workflow.md#forms) for more information.

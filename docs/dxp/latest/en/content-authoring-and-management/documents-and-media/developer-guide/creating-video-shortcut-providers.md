@@ -1,3 +1,6 @@
+---
+uuid: dbd1936a-f1ce-4132-9aec-3752784c340b
+---
 # Creating Video Shortcut Providers
 
 > Available for Liferay DXP 7.4+

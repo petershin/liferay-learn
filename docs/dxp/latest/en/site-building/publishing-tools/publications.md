@@ -1,13 +1,14 @@
 ---
 toc:
-- ./publications/enabling-publications.md
-- ./publications/creating-and-managing-publications.md
-- ./publications/making-and-publishing-changes.md
-- ./publications/using-workflow-with-publications.md
-- ./publications/collaborating-on-publications.md
-- ./publications/resolving-conflicts.md
-- ./publications/reverting-changes.md
-- ./publications/publications-permissions.md
+  - ./publications/enabling-publications.md
+  - ./publications/creating-and-managing-publications.md
+  - ./publications/making-and-publishing-changes.md
+  - ./publications/using-workflow-with-publications.md
+  - ./publications/collaborating-on-publications.md
+  - ./publications/resolving-conflicts.md
+  - ./publications/reverting-changes.md
+  - ./publications/publications-permissions.md
+uuid: 8e7e004e-c872-4b7d-af1d-0d2eec5210b1
 ---
 # Publications
 

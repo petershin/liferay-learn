@@ -1,3 +1,6 @@
+---
+uuid: e47dcde6-3c25-4b7d-99f8-708797329f31
+---
 # Adding a New Currency
 
 Liferay Commerce pre-configures multiple currencies to be available for use, out-of-the-box. Store administrators can add a new currency if a desired currency is not already included. See the [Currencies Reference](./currencies-reference.md) on how to enter specific values in the correct format.

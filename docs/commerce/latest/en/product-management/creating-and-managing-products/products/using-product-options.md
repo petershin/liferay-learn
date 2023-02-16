@@ -1,3 +1,6 @@
+---
+uuid: 0d1d7d64-69cf-423d-b2d3-d1f9dd71afe0
+---
 # Using Product Options
 
 Product *Options* provide a convenient and flexible way to customize Products. With Options, you can add fields to Products sold in your Channel, allowing customers to choose from Product variants, bundles, and more.

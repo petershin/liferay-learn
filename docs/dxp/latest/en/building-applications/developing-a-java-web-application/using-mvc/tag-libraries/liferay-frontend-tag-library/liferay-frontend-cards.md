@@ -1,3 +1,6 @@
+---
+uuid: 56c3d63d-4412-4639-8966-7204940f65b5
+---
 # Liferay Front-end Cards
 
 If you have data you want to compare that's heavy on image usage, cards are the component for the job. Cards visually represent data in a minimal and compact format. Use them for images, document libraries, user profiles, and more. There are four main types of Cards:

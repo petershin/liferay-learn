@@ -1,3 +1,6 @@
+---
+uuid: 0a05f5f3-8ebd-4948-96dc-1da08e6a3ade
+---
 # Search Overview
 
 Search is a fundamental component of Liferay. Elasticsearch is bundled with Liferay for testing and development purposes. Production environments require Elasticsearch running on a remote server. [Getting Started with Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md) explains remote server setup. You can explore the search functionality immediately, however, using the bundled Elasticsearch engine.

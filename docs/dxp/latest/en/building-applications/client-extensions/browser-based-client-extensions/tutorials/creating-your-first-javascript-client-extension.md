@@ -1,3 +1,6 @@
+---
+uuid: e26e34b4-ca1b-490b-b911-4ef92ad123ea
+---
 # Creating Your First JavaScript Client Extension
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`

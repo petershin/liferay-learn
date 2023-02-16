@@ -1,3 +1,6 @@
+---
+uuid: eb7d2ded-21df-4d91-bdd2-b9d5abc18db1
+---
 # Private Network
 
 Every environment has its own private network. This lets services from the same environment communicate through multiple secure communication protocols without having to interact with the public internet. 

@@ -1,3 +1,6 @@
+---
+uuid: 628b00b5-e4a5-4c80-9e12-817b152749fe
+---
 # Using Notification Templates
 
 Email notifications are sent automatically to users based on events in the store. To send them, you must first create a *Notification Template*. Notification templates define the sender, trigger, and content of an email notification.

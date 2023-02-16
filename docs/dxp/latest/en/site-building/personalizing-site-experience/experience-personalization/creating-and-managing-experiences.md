@@ -1,3 +1,6 @@
+---
+uuid: cd5b1418-5edb-4225-93dc-7a6b3cca6341
+---
 # Creating and Managing Experiences
 
 {bdg-secondary}`Available Liferay 7.4+, 7.3 FP1+, and 7.2 FP11+`

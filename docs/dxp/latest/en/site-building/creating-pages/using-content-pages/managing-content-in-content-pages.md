@@ -1,3 +1,6 @@
+---
+uuid: 26a907e5-c7ed-4110-813f-779eacd72917
+---
 # Managing Content in Content Pages
 <!-- Alt: Managing Content in Pages and Templates... If renamed, relocate to Displaying Content.-->
 When editing or creating Content Pages and Templates, you can quickly view and edit any documents, Web Content articles, Collections, or inline text added to them. To do this, select the *Page Content* button (![Page Content](../../../images/icon-paperclip.png)) in the editing sidebar.

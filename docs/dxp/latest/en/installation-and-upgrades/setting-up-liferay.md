@@ -1,19 +1,23 @@
 ---
 toc:
-- ./setting-up-liferay/activating-liferay-dxp.md
-- ./../system-administration/configuring-liferay/virtual-instances/instance-configuration.md
-- ./setting-up-liferay/initial-instance-localization.md
-- ./setting-up-liferay/configuring-mail.md
-- ./../system-administration/configuring-liferay/virtual-instances/users.md
-- ./../system-administration/file-storage.md
-- ./../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
-- ./../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md
-- ./maintaining-a-liferay-installation/backing-up.md
-- ./../system-administration/installing-and-managing-apps.md
-- ./setting-up-liferay/using-a-cdn.md
-- ./setting-up-liferay/clustering-for-high-availability.md
-- ./setting-up-liferay/tuning-liferay.md
-- ./setting-up-liferay/tuning-your-jvm.md
+  - ./setting-up-liferay/activating-liferay-dxp.md
+  - >-
+    ./../system-administration/configuring-liferay/virtual-instances/instance-configuration.md
+  - ./setting-up-liferay/initial-instance-localization.md
+  - ./setting-up-liferay/configuring-mail.md
+  - ./../system-administration/configuring-liferay/virtual-instances/users.md
+  - ./../system-administration/file-storage.md
+  - >-
+    ./../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
+  - >-
+    ./../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md
+  - ./maintaining-a-liferay-installation/backing-up.md
+  - ./../system-administration/installing-and-managing-apps.md
+  - ./setting-up-liferay/using-a-cdn.md
+  - ./setting-up-liferay/clustering-for-high-availability.md
+  - ./setting-up-liferay/tuning-liferay.md
+  - ./setting-up-liferay/tuning-your-jvm.md
+uuid: f506ae5c-ac9e-4a52-9977-f345742f66d1
 ---
 # Setting Up Liferay
 

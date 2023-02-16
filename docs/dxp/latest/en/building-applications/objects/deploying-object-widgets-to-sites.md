@@ -1,3 +1,6 @@
+---
+uuid: 0c8f393f-6e5a-40ca-9de6-00c833d3dbe6
+---
 # Deploying Object Widgets to Sites
 
 > Available: Liferay DXP 7.4 U1/Liferay Portal 7.4 GA5

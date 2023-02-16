@@ -1,3 +1,6 @@
+---
+uuid: 1ebdc2b1-5f84-4fa8-8d27-43347b92ef01
+---
 # Managing Site Navigation
 
 Liferay provides powerful tools for creating and organizing pages. You can build everything from a simple, flat Site navigation to a complex hierarchical tree of sub-pages nested down many levels.

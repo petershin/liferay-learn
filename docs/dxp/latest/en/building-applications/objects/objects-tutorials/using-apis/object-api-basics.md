@@ -1,3 +1,6 @@
+---
+uuid: 7cbe4379-3bba-400e-8295-2b60e29e6f84
+---
 # Object API Basics
 
 When you publish an Object, Liferay automatically generates REST APIs for it. These APIs differ for Company and Site scoped Objects, but they all use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/timeoffrequests`). You can use these APIs to create, access, update, and remove Object entries.

@@ -1,3 +1,6 @@
+---
+uuid: 265b7264-198d-4640-8c2a-52681e2a7994
+---
 # Troubleshooting Tools and Resources
 
 The ability to quickly diagnose and resolve technical issues is vital. Familiarize yourself with the available tools and resources for troubleshooting problems in your Liferay Cloud projects:

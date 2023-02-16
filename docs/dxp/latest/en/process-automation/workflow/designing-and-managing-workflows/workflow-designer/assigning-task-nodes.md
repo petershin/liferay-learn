@@ -1,3 +1,6 @@
+---
+uuid: a9354b98-4d80-476d-ba76-92d35155654b
+---
 # Assigning Task Nodes
 
 {bdg-primary}`Subscription`

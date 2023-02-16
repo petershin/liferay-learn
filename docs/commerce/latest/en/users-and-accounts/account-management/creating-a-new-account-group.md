@@ -1,3 +1,6 @@
+---
+uuid: 884de1a4-e25d-4a6b-ae88-d836e716a105
+---
 # Creating a New Account Group
 
 Account Groups allow accounts to be grouped based on business criteria, such as grouping accounts by geographic region (US West Coast, the Midwest, and the South). Sellers may then apply discounts or target marketing campaigns to specific Account Groups.

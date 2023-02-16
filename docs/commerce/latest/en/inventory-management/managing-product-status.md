@@ -1,3 +1,6 @@
+---
+uuid: fcf788cc-51f4-4378-bdbc-dd49b749411c
+---
 # Managing Product Status
 
 When editing products, you can schedule them to expire or unpublish them manually to remove them from your store catalog.

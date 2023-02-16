@@ -1,3 +1,6 @@
+---
+uuid: adf1d7ba-725b-488d-92ac-f391cc15a929
+---
 # Node Version Information
 
 Liferay DXP uses [Node](https://nodejs.org/en/) (and [NPM](https://www.npmjs.com/)) for many different frontend components. Specifically, the [Liferay Theme Generator](../../../site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md) and Liferay's [JavaScript application tools](../../developing-a-javascript-application.md) require the use of NPM commands to build and deploy.

@@ -1,3 +1,6 @@
+---
+uuid: 5673b1a0-1aa1-444e-88ee-9f54f0c67608
+---
 # Setting Inventory by Warehouse
 
 Stores with multiple warehouses can manage product inventory on a per warehouse basis. The Inventory menu is where you can manage the number of products available to buy in each warehouse.

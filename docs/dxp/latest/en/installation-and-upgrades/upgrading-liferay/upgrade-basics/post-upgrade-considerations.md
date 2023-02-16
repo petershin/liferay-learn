@@ -1,3 +1,6 @@
+---
+uuid: 6a546d98-7607-4ec7-a296-44a49b825acd
+---
 # Post-Upgrade Considerations
 
 After upgrading the database, you should configure Liferay for production again and check up on feature changes that might affect your Liferay instance.

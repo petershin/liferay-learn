@@ -1,3 +1,6 @@
+---
+uuid: f8e95a71-2583-4bc4-8774-233c960c325d
+---
 # Using Information Templates
 
 {bdg-secondary}`Available 7.4+`

@@ -1,7 +1,8 @@
 ---
 toc:
-- ./users-and-accounts/roles-and-permissions.md
-- ./users-and-accounts/account-management.md
+  - ./users-and-accounts/roles-and-permissions.md
+  - ./users-and-accounts/account-management.md
+uuid: 16b894b1-a9dd-4ffe-87fb-fea68dc4eeea
 ---
 # Users and Accounts
 

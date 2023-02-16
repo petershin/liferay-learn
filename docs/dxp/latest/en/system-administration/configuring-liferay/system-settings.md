@@ -1,3 +1,6 @@
+---
+uuid: c2959d8f-59f6-4bc1-aa81-56481a7db23b
+---
 # System Settings
 
 You can make [System-scoped](./understanding-configuration-scope.md) configurations from Control Panel &rarr; Configuration &rarr; System Settings.

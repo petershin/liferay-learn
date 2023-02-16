@@ -1,3 +1,6 @@
+---
+uuid: d707078d-7914-4b2e-939f-6815445b80a6
+---
 # Activating Liferay Enterprise Search
 
 Starting with Liferay DXP 7.4, the Liferay Enterprise Search (LES) applications are included with all Liferay DXP bundles and Docker containers. To begin using LES, purchase an LES Add-On Subscription: start by contacting a Liferay sales representative or visit <https://www.liferay.com/contact-sales>.

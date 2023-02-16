@@ -1,3 +1,6 @@
+---
+uuid: 7f1a7c07-25fa-4764-9fe2-5567ed139255
+---
 # Relationship Types Reference
 
 Coming Soon!

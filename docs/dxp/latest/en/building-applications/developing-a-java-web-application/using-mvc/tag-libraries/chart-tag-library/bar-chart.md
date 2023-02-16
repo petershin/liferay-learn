@@ -1,3 +1,6 @@
+---
+uuid: 677fc52d-9ac8-4f04-b01d-f1fc0376cc0e
+---
 # Bar Charts
 
 Bar charts contain multiple sets of data. A bar chart models the data in bars. Each data series (created with the `addColumns()` method) is defined with a new instance of the [`MultiValueColumn` object](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html), which takes an ID and a set of values. Follow these steps to configure your portlet to use bar charts. 

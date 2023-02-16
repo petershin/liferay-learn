@@ -1,3 +1,6 @@
+---
+uuid: 901ea460-7e47-437e-ad83-17b6d94ae3b0
+---
 # Definitions for Individuals
 
 The data model for individuals is defined by the various attributes that get mapped when contact data is [synced from DXP](../../getting-started/syncing-sites-and-contacts.md).

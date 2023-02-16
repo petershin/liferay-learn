@@ -1,3 +1,6 @@
+---
+uuid: 04121e5f-5ea2-48a5-a47e-6c0bdf86da87
+---
 # Using Configuration Files
 
 [System Settings](../system-settings.md) provides a user interface for making system-scoped configuration changes and setting default configurations for other [scopes](../understanding-configuration-scope.md). The same configurations in the UI can be made via configuration file.

@@ -1,3 +1,6 @@
+---
+uuid: dc9c4147-24f9-4adb-9fc6-ac89d3dadb86
+---
 # Designing Object Views
 
 {bdg-secondary}`Available Liferay 7.4+`

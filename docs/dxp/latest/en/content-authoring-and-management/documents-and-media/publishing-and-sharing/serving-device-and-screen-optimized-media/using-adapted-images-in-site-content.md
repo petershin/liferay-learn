@@ -1,3 +1,6 @@
+---
+uuid: 949e8979-f069-4304-81d1-708d8b741e3d
+---
 # Using Adapted Images in Site Content
 
 Adaptive Media works in the background creating different resolutions for the images you upload to Liferay DXP. When Blog, Web Content, and Content Page creators use these images, Adaptive Media chooses the best resolution for the target screen size automatically. Adaptive Media identifies each adapted image in the content's HTML with a `data-fileentryid` attribute that is replaced with the latest adapted image when the user views the content. This lets Adaptive Media deliver the latest adapted images to your content, even if the content existed prior to those images.

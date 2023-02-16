@@ -1,3 +1,6 @@
+---
+uuid: 1263caa5-2cb7-4100-a801-0f9e13d3d153
+---
 # Configuring a VPN Server
 
 The following scenario walks through how to set up an IPsec or OpenVPN VPN server. Once a VPN server is configured, a secure connection can be established between an internal network and the production environment on Liferay Cloud. This example uses Ubuntu Server 18.0.4 as a proof of concept. Please read the [VPN Integration Overview](./vpn-integration-overview.md) article for an overview on Liferay Cloud's Client-to-Site VPNs functionality.

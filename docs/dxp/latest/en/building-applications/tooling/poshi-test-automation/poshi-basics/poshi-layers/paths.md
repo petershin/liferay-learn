@@ -1,3 +1,6 @@
+---
+uuid: 98bc10d9-e437-43f7-8a6b-f7588d84d938
+---
 # Paths
 
 A path is an element on a page that a test will interact with.  An element can be a button, text field, link, image, paragraph, or just about anything you would need to assert, click, or type into during a test. Each path is defined by the following:

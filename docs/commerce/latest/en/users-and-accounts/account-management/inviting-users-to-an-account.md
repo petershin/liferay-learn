@@ -1,3 +1,6 @@
+---
+uuid: e98ca6e7-ffe6-49da-936c-6d1b5a83b552
+---
 # Inviting Users to an Account
 
 This article documents how to invite users to an account. Corporate accounts can have more than one user assigned to handle various aspects of a transaction. There are two ways to add users to an account: using the _Account Management_ widget or using the _Control Panel_.

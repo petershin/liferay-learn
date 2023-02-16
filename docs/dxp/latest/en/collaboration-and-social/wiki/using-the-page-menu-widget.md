@@ -1,3 +1,6 @@
+---
+uuid: 3ab1a297-4c3c-44c1-a643-8902a0957257
+---
 # Using the Page Menu Widget
 
 The *Page Menu* widget presents links that can include links to other [Wiki Pages](./getting-started-with-wikis.md),other DXP site pages, Documents and Media assets, external websites, and more. Once you've added the widget to a Page, you need to configure which Wiki Page it uses and its sources for links. Follow these steps:

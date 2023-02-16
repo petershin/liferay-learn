@@ -1,3 +1,6 @@
+---
+uuid: 9c342e62-79cc-4b56-9bac-e1cc3e4aba35
+---
 # Understanding the npmbundlerrc Structure
 
 The liferay-npm-bundler is configured via a `.npmbundlerrc` file placed in the widget project's root folder. You can create a complete configuration manually or extend a configuration preset (via Babel).

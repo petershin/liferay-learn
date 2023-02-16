@@ -1,3 +1,6 @@
+---
+uuid: 9a8f421c-6518-4265-959a-1359b2220ede
+---
 # Knowledge Base System Settings
 
 Administrators can use the System Settings UI to set the Knowledge Base’s global configuration (across Sites). You can access this UI in *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Knowledge Base*. There are five sections of Knowledge Base configuration settings:

@@ -1,3 +1,6 @@
+---
+uuid: 0397412a-9f89-464c-9bba-f732178c228a
+---
 # Adding and Managing Custom States
 
 {bdg-secondary}`Available Liferay 7.4 U41+/GA41+`

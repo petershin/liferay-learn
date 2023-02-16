@@ -1,3 +1,6 @@
+---
+uuid: 79a0f05d-fdc2-4a0a-a705-1dc631124a89
+---
 # Managing Content Sharing Across Sites
 
 You can allow Liferay DXP child Sites to display content from parent Sites. This content includes

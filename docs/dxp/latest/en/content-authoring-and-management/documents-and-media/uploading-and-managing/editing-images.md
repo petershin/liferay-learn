@@ -1,3 +1,6 @@
+---
+uuid: 1ea4d152-3732-45a9-b3ca-bddf38ca983c
+---
 # Editing Images
 
 Liferay's Documents and Media includes a built-in image editor for cropping and rotating images without switching contexts.

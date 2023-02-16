@@ -1,9 +1,10 @@
 ---
 toc:
-- ./currencies/understanding-the-currency-hierarchy.md
-- ./currencies/adding-a-new-currency.md
-- ./currencies/managing-exchange-rates.md
-- ./currencies/currencies-reference.md
+  - ./currencies/understanding-the-currency-hierarchy.md
+  - ./currencies/adding-a-new-currency.md
+  - ./currencies/managing-exchange-rates.md
+  - ./currencies/currencies-reference.md
+uuid: 18c03a6c-efa9-4179-ae0a-65f0322fa512
 ---
 # Currencies
 

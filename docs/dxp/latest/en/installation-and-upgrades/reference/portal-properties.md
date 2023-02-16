@@ -1,3 +1,6 @@
+---
+uuid: 839c4246-8c00-4632-8134-66ba9fa66492
+---
 # Portal Properties
 
 Configuration options are specified using *Portal Properties*, sets of name/value pairs read from properties files and Docker environment variables on server startup. [Default values](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) are specified in the `portal-impl.jar/portal.properties` file.

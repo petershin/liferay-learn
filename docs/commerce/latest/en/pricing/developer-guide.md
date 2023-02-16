@@ -1,6 +1,7 @@
 ---
 toc:
-- ./developer-guide/price-list-api-basics.md
+  - ./developer-guide/price-list-api-basics.md
+uuid: 8a1fadec-1132-4cb2-8fca-3de56050d7bd
 ---
 # Developer Guide
 

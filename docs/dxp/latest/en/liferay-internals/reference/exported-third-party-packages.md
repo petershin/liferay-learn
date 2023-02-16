@@ -1,3 +1,6 @@
+---
+uuid: ebb2d53e-32d9-4ee6-a8de-4e833e24ee29
+---
 # Exported Third Party Packages
 
 Liferay provides over one-hundred third party Java packages at run time. The `com.liferay.portal.bootstrap` module exports the packages by specifying individual packages explicitly and groups of packages using globs. For example, here is an excerpt from [7.3.4-ga5](https://github.com/liferay/liferay-portal/blob/7.3.4-ga5/modules/core/portal-bootstrap/system.packages.extra.bnd)'s `Export-Package` declaration:

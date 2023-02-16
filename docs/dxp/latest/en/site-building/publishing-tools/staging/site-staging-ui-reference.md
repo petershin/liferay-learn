@@ -1,3 +1,6 @@
+---
+uuid: 1c97241d-4b80-4c13-b7b5-ab2f3fe8fac5
+---
 # Site Staging UI Reference
 
 After enabling Local or Remote Live Staging for your site, most page configuration options are only accessible in your Staging environment. This prevents users from directly editing live pages.

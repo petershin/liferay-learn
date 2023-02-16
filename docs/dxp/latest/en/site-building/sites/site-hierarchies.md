@@ -1,3 +1,6 @@
+---
+uuid: 96446801-dfc7-4c57-a007-4e6ea5c98c7b
+---
 # Site Hierarchies
 
 Sites can be organized hierarchically, just like Organizations, with child Sites. Organizing Sites hierarchically lets you share content between them easily. The difference between Sites and Organizations is that Sites organize pages, content, application data, and Users (via site memberships), whereas Organizations only group Users. Site hierarchy is discussed in more detail below.

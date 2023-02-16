@@ -1,3 +1,6 @@
+---
+uuid: 8622edb3-0879-46e4-a8f8-7a8d340d9af7
+---
 # Crisp
 
 [Crisp](https://crisp.chat/) is a multi-channel messaging platform. This article documents how to locate your Crisp account ID in order to [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance.

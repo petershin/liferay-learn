@@ -1,3 +1,6 @@
+---
+uuid: eae15fd7-7aca-42fc-9add-1382f30fb2c6
+---
 # Synonym Sets
 
 > **Subscribers**

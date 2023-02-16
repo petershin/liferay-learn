@@ -1,3 +1,6 @@
+---
+uuid: d499fa71-4265-4057-bb05-932408135840
+---
 # Workflow Notification Template Variables
 
 {bdg-secondary}`Liferay 7.3+`

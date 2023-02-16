@@ -1,3 +1,6 @@
+---
+uuid: e2a9ffa0-7bbb-4457-b2ab-73c520c79bc9
+---
 # Tracking 404 URLs
 
 With the Redirection application, you can view and manage site requests leading to 404 errors. While enabled, Liferay catalogs each error, so you can assess the cause of the errors and quickly resolve any issues. These URLs are preserved in your database according to your Redirection configurations.

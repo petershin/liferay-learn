@@ -1,3 +1,6 @@
+---
+uuid: 203b1f1f-1910-444c-88d9-70e1b7e11c5a
+---
 # Using the Questions App
 
 > Available: Liferay DXP/Portal 7.3+

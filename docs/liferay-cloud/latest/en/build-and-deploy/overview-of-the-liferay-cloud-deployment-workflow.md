@@ -1,3 +1,6 @@
+---
+uuid: dc78712a-aba2-48cd-9566-a6f9182726c7
+---
 # Overview of the Liferay Cloud Deployment Workflow
 
 Liferay Cloud provides a robust framework for achieving a highly efficient CI/CD strategy. With Git and Jenkins integrations, you can automatically trigger CI builds that you can then deploy to project environments. Alternatively, you can skip the CI service's build process altogether and directly deploy local changes to project environments using the [Command Line Interface](../reference/command-line-tool.md) (CLI) tool.

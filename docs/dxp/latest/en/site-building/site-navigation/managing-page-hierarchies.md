@@ -1,3 +1,6 @@
+---
+uuid: 548cc2b3-ef37-46e1-a9d3-eebdafd1921c
+---
 # Managing Page Hierarchies
 
 With Liferay, you can organize Pages into hierarchies to achieve the desired structure for your Site. This can be done by directly [adding child Pages](../creating-pages/adding-pages/adding-a-page-to-a-site.md#adding-a-child-page) to an existing Page or by reorganizing existing Pages into parent/child relationships.

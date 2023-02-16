@@ -1,3 +1,6 @@
+---
+uuid: a8159380-3119-46c5-be6e-d9e24e60c325
+---
 # Creating Your First CSS Client Extension
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`

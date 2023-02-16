@@ -1,8 +1,9 @@
 ---
 toc:
-- ./installing-and-managing-apps/using-marketplace.md
-- ./installing-and-managing-apps/installing-apps.md
-- ./installing-and-managing-apps/managing-apps.md
+  - ./installing-and-managing-apps/using-marketplace.md
+  - ./installing-and-managing-apps/installing-apps.md
+  - ./installing-and-managing-apps/managing-apps.md
+uuid: 9fecc8e8-63d9-4dfc-b766-2a514fb32a19
 ---
 # Installing and Managing Apps
 

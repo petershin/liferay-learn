@@ -1,3 +1,6 @@
+---
+uuid: 0532c178-21cd-48b9-8b50-6e16cca8ea39
+---
 # Mentioning Users
 
 Mentioning other users in a DXP asset draws their attention to a particular asset (for example, a message boards thread, blog post, or comment) by sending them a site and email notification and link. To "mention" other users, enter the `@` character in front of each user's user name (`@john.smith`) in a blog entry, [a message boards thread](../../message-boards/user-guide/creating-message-boards-threads.md), or comments in any app that supports comments.

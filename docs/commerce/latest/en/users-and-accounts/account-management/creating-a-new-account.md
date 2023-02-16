@@ -1,3 +1,6 @@
+---
+uuid: fa80109a-5094-4d8f-9072-5afe8ddd081d
+---
 # Creating a New Account
 
 There are two ways to create an account: 1) using the _Account Management_ widget and 2) through the _Control Panel_. Access to the _Control Panel_ is typically restricted to those with administrative permissions for the store or installation.

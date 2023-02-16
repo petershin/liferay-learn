@@ -1,7 +1,8 @@
 ---
 toc:
-- ./videos/creating-external-video-shortcuts.md
-- ./videos/embedding-videos-into-liferay-assets-and-pages.md
+  - ./videos/creating-external-video-shortcuts.md
+  - ./videos/embedding-videos-into-liferay-assets-and-pages.md
+uuid: c44a8072-674b-412a-8bfb-adeb7006a0a7
 ---
 # Videos
 

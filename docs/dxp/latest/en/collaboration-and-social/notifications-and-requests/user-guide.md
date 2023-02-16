@@ -1,8 +1,9 @@
 ---
 toc:
-- ./user-guide/mentioning-users.md
-- ./user-guide/managing-notifications-and-requests.md
-- ./user-guide/configuring-mentions.md
+  - ./user-guide/mentioning-users.md
+  - ./user-guide/managing-notifications-and-requests.md
+  - ./user-guide/configuring-mentions.md
+uuid: ac2ec179-b5ef-4166-85c1-8468b21ca7e2
 ---
 # User Guide
 

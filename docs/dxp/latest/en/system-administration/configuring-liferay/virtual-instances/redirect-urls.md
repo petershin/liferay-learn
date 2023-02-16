@@ -1,3 +1,6 @@
+---
+uuid: c446e0b5-61c8-46a1-a961-3436e30a14a4
+---
 # Redirect URLs
 
 {bdg-secondary}`Available 7.4+`

@@ -1,3 +1,6 @@
+---
+uuid: 8d140ed8-1f19-45c1-8fb2-fe4ebf3e5017
+---
 # Product Images
 
 Product images help to ensure that customers know what they are buying and increase the likelihood of a sale. Store administrators can upload images for each product variant (different SKUs).

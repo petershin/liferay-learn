@@ -1,3 +1,6 @@
+---
+uuid: 9aab8116-9767-4d13-be15-d5457771e6e3
+---
 # Adding Elements to Content Pages
 
 After you [create a content page](../adding-pages/adding-a-page-to-a-site.md), you can add widgets and fragments to define the page's content and structure.

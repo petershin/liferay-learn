@@ -1,3 +1,6 @@
+---
+uuid: 33131427-55cb-4704-8c01-9f72c5c674fa
+---
 # Linking to Files on Google Drive
 
 You can create files in your Document Library that link to files in Google Drive&trade; or images in Google Photos&trade;. To enable this functionality, see [Enabling Links to Google Drive Documents](../devops/google-drive-integration/enabling-links-to-google-drive-documents.md).

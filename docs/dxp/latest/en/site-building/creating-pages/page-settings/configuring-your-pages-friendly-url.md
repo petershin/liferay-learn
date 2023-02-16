@@ -1,3 +1,6 @@
+---
+uuid: aaa9de0f-6a67-46ae-8d09-1ea9139b8465
+---
 # Configuring Your Page's Friendly URL
 
 With Liferay DXP, you can set friendly URLs for each Page of your Site. These URLs make it easy to understand and recall your Page's address while providing key information to search engines and other tools crawling your Site.

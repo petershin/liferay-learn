@@ -1,3 +1,6 @@
+---
+uuid: c44fbb5a-5155-4b25-b97e-b574fb16f3d6
+---
 # Connecting Liferay DXP to Analytics Cloud
 
 To begin the setup process, there are a few requirements:

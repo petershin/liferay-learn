@@ -1,3 +1,6 @@
+---
+uuid: 76553d79-d3f4-43e1-bc3c-2bd87108b6ab
+---
 # What's New in Liferay DXP 7.4
 
 Liferay DXP 7.4 comes with enhanced functionality and exciting improvements that make it even easier for both technical and non-technical users to deliver and optimize digital experiences.

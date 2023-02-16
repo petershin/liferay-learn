@@ -1,3 +1,6 @@
+---
+uuid: f29af664-c61f-44f1-ad66-e68e6cb27ea4
+---
 # LDAP Configuration Reference
 
 To access LDAP configuration settings, navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *LDAP*. There are four categories on the left: Export, General, Import, and Servers.

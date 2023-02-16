@@ -1,3 +1,6 @@
+---
+uuid: e5ba6aa2-4c56-4e68-b515-32f05f9d4e93
+---
 # Collaborating on Publications
 
 {bdg-secondary}`Available Liferay 7.4+`

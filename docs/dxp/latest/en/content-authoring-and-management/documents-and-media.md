@@ -1,11 +1,12 @@
 ---
 toc:
-- ./documents-and-media/uploading-and-managing.md
-- ./documents-and-media/publishing-and-sharing.md
-- ./documents-and-media/videos.md
-- ./documents-and-media/developer-guide.md
-- ./documents-and-media/devops.md
-- ./documents-and-media/documents-and-media-ui-reference.md
+  - ./documents-and-media/uploading-and-managing.md
+  - ./documents-and-media/publishing-and-sharing.md
+  - ./documents-and-media/videos.md
+  - ./documents-and-media/developer-guide.md
+  - ./documents-and-media/devops.md
+  - ./documents-and-media/documents-and-media-ui-reference.md
+uuid: 908f0e78-1508-4322-85b0-1deb26a4ef4d
 ---
 # Documents and Media
 

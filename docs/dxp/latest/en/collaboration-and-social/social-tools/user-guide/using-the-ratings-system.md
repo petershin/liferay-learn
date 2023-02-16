@@ -1,3 +1,6 @@
+---
+uuid: 827a4b70-33a5-46df-96d9-b9a56ba41bdd
+---
 # Using the Ratings System
 
 Liferay DXP's asset framework <!-- TODO: Add link to asset framework article when available --> supports a content rating system that allows Users to rate or value content. Many of DXP's built-in content types have ratings enabled by default.

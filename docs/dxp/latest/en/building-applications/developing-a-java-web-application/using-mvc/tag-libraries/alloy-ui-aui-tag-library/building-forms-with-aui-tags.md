@@ -1,3 +1,6 @@
+---
+uuid: 889296d9-b14d-4532-9394-9af402a4e7db
+---
 # Building Forms with AUI Tags
 
 The [AUI tag library](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-frame.html) provides all the components you need to build forms for your applications. AUI tags provide many benefits to standard form elements, such as custom namespacing, localization, and even validation. They provide multiple attributes that let you create the experience you want for your users. 

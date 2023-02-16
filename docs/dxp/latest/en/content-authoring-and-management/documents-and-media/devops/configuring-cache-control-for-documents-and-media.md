@@ -1,3 +1,6 @@
+---
+uuid: c40b20e9-c296-4beb-9f33-62bb0ef39b9f
+---
 # Configuring Caching for Documents and Media
 
 {bdg-secondary}`Available Liferay 7.4 U21+ and GA21+`

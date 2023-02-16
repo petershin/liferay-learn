@@ -1,3 +1,6 @@
+---
+uuid: 00bb067c-b489-4ebd-9ba2-767303b21401
+---
 # Web Server Service (Nginx)
 
 The Nginx web server functions as a gateway from the open internet to your Liferay Cloud services. It handles all traffic from your users and acts as a high-performance web server. 

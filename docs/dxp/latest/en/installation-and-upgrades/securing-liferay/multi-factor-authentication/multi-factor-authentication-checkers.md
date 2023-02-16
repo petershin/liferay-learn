@@ -1,3 +1,6 @@
+---
+uuid: e7edfc11-93ed-4e10-a076-ae18944e8e05
+---
 # Multi-Factor Authentication Checkers
 
 Liferay DXP 7.4 ships with two additional factor checkers for Multi-Factor Authentication. Both of them are disabled by default, because they're only useful in particular circumstances. Once Multi-Factor Authentication is enabled, however, you can configure them. 

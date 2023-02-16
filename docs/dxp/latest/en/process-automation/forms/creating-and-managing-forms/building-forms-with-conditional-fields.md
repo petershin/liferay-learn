@@ -1,3 +1,6 @@
+---
+uuid: 1814bbe7-8be8-4190-b5f3-31196e7d2843
+---
 # Building Forms with Conditional Fields
 
 Forms can become dynamic forms where the answer to one question may allow the respondent to skip the next three questions, or require the respondent to answer additional questions. Thus, each field can become a conditional field. Once you have decided which fields are conditional, use a Form Rule to determine what happens based on the answer to that question (for example, skips page 3 and goes to page 4 on a multi-page form).

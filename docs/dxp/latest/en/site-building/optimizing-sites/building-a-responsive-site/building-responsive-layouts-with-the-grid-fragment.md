@@ -1,3 +1,6 @@
+---
+uuid: 7ff35121-6281-42cc-873d-c0a1c94d4eae
+---
 # Building Responsive Layouts with the Grid Fragment
 <!--TASK: Reconsider article.-->
 > Availability: Liferay DXP 7.3+.

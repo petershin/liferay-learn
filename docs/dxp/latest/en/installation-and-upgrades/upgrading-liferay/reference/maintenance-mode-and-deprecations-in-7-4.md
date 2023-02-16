@@ -1,3 +1,6 @@
+---
+uuid: bcaaeab9-3b46-4a48-8e84-64d84d2c6015
+---
 # Maintenance Mode and Deprecations in 7.4
 
 With each new Liferay DXP and Liferay Portal release, a feature may not warrant continued enhancements or may become obsolete. Stopping enhancements for a feature puts it in *Maintenance Mode*.

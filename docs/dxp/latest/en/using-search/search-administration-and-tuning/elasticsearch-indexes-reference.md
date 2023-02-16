@@ -1,3 +1,6 @@
+---
+uuid: 1d5da6cd-cdeb-4c72-836e-63462e4a86ad
+---
 # Elasticsearch Indexes Reference
 
 Liferay 7.3 and 7.4 each have a set of indexes created in Elasticsearch. Understanding these indexes and what they do can help you better configure and administer Liferay's Elasticsearch installation.

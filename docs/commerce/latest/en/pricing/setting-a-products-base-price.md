@@ -1,3 +1,6 @@
+---
+uuid: 765551fb-f76c-4fe8-9b30-35e25a0e8fc8
+---
 # Setting a Product's Base Price
 
 Product SKUs are created without a set base price. So, you'll need to add one before it's added to the Catalog's Base Price List. Once added, this price serves as the default price for the SKU when no overrides (e.g., other Price Lists or Promotions) are applied to it.

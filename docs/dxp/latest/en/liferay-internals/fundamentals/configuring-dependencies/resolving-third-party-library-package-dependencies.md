@@ -1,3 +1,6 @@
+---
+uuid: af1d4941-a445-4dfc-8ed4-6725bb064c62
+---
 # Resolving Third Party Library Package Dependencies
 
 An application can rely on multiple OSGi modules. Resolving their Java package dependencies can be challenging. In a perfect world, every package would be distributed in OSGi JARs, but many packages are only in traditional libraries (non-OSGi JARs). You can resolve dependencies on third party, non-OSGi JARs in several ways:

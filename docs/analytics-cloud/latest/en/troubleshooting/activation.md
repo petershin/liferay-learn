@@ -1,3 +1,6 @@
+---
+uuid: 40bac691-8262-4d0d-9f2b-7664e26f0fdb
+---
 # Activation
 
 There are a few steps that must be performed in order to begin using Analytics Cloud. If these steps have not yet been performed, you may encounter an error during the activation process. Below, we've listed the most common causes of errors during activation and their related resolutions.

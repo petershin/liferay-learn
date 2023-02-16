@@ -1,3 +1,6 @@
+---
+uuid: 7e291753-e031-4c4e-941c-f57237d178e4
+---
 # Installing and Updating Blade CLI
 
 Blade CLI can be installed through a command line interface or a graphical installer. If you're behind a proxy, once it's installed you can configure it to operate through the proxy. Blade CLI informs you when a new version is released, and you can upgrade from the CLI at any time.

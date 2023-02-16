@@ -1,3 +1,6 @@
+---
+uuid: e7464862-01ef-4ae1-82eb-152b40e026f6
+---
 # Reviewing Assets
 
 When an asset's workflow is [activated](./activating-workflow.md), one or more users must review it before publication. You can assign workflow review processes to specific users or to a particular Role (for example: Portal or Site Content Reviewer). In the latter case, anyone assigned to that Role may approve or reject the submission. For example, with the out-of-the-box _Single Approver_ process, the workflow tasks are assigned to a Portal or Site Content Reviewer or anyone with administrator rights.

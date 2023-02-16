@@ -1,3 +1,6 @@
+---
+uuid: 222923ee-e306-4c05-be8a-67dfefdcc2e9
+---
 # Using Liferay Util HTML Top
 
 The HTML top tag is not a self-closing tag. The content placed between the opening and closing of this tag is moved to the `<head>` tag. When something is passed using this taglib, the [top_head.jsp](https://github.com/liferay/liferay-portal/blob/master/portal-web/docroot/html/common/themes/top_head.jsp#L147-L153) is passed markup and outputs in this JSP. 

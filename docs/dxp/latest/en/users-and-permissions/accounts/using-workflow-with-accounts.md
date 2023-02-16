@@ -1,3 +1,6 @@
+---
+uuid: 1154e55c-8ca4-471a-b20c-04230bba01ab
+---
 # Using Workflow with Accounts
 
 {bdg-secondary}`Available Liferay 7.4 U49+/GA49+`

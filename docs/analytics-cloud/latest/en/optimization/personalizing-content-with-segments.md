@@ -1,3 +1,6 @@
+---
+uuid: 78e4d165-d44a-404f-8dda-280be29f745a
+---
 # Personalizing Content with Segments
 
 When used with Liferay DXP's personalization features, the full power of Analytics Cloud's Segments is realized. Personalization lets you target Liferay DXP content at specific Segments. For example, if you have a Segment for users in the finance industry, then you could use personalization to show them content on investing.

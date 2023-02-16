@@ -1,3 +1,6 @@
+---
+uuid: 46d35c26-a3bd-4862-bd28-a72a2caea135
+---
 # Advanced Configuration of the Liferay Elasticsearch Connector
 
 The [Elasticsearch connection](./connecting-to-elasticsearch.md) is configured using a [configuration file or via System Settings](./elasticsearch-connector-configuration-reference.md#configuration-files-and-system-settings-entries).

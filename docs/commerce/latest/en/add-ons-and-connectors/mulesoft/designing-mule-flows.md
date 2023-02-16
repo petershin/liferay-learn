@@ -1,3 +1,6 @@
+---
+uuid: c9dd54f1-6336-4066-be70-8054eeb54b32
+---
 # Designing Mule Flows
 
 After configuring the [Liferay Connector to MuleSoft](./configuring-the-mulesoft-connector.md), you can start building Mule flows. These operations are available for Liferay's OpenAPI endpoints.

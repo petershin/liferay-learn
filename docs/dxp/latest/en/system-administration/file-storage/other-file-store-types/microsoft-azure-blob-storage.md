@@ -1,3 +1,6 @@
+---
+uuid: 2e374c77-a095-4dcd-b6bd-5fd04c057df6
+---
 # Microsoft Azure Blob Storage Service
 
 > Available for 7.4+ and 7.3 FP2+  

@@ -1,10 +1,11 @@
 ---
 toc:
-- ./reference/7-4-breaking-changes.md
-- ./reference/7-3-breaking-changes.md
-- ./reference/7-2-breaking-changes.md
-- ./reference/exported-third-party-packages.md
-- ./reference/portal-developer-properties.md
+  - ./reference/7-4-breaking-changes.md
+  - ./reference/7-3-breaking-changes.md
+  - ./reference/7-2-breaking-changes.md
+  - ./reference/exported-third-party-packages.md
+  - ./reference/portal-developer-properties.md
+uuid: 6606d862-645f-4dfa-923d-cc44c49e50be
 ---
 # Reference
 

@@ -1,3 +1,6 @@
+---
+uuid: 0699fcf8-e695-4cad-af15-f136c02f4284
+---
 # VPN Integration Overview
 
 Liferay Cloud provides a VPN client-to-site connection that has port forwarding and redundant tunnels support. This feature is commonly used to connect a subscriber's production environment on Liferay Cloud to their internal network. For security and reliability, these VPN connections are segregated for each environment (production, staging, or development).

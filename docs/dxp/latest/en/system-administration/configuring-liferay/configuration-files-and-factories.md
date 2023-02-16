@@ -1,7 +1,8 @@
 ---
 toc:
-- ./configuration-files-and-factories/using-configuration-files.md
-- ./configuration-files-and-factories/using-factory-configuration.md
+  - ./configuration-files-and-factories/using-configuration-files.md
+  - ./configuration-files-and-factories/using-factory-configuration.md
+uuid: 8290874c-0ef6-4aa4-80b9-33d594745586
 ---
 # Configuration Files and Factories
 

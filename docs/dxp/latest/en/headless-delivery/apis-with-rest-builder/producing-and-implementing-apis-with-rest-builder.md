@@ -1,3 +1,6 @@
+---
+uuid: 6228294f-761c-4382-9c94-c2d7d0862446
+---
 # Producing and Implementing APIs with REST Builder
 
 With REST Builder, you can define the API you want to build, and REST Builder provides the framework and endpoints for you.

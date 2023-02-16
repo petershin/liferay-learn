@@ -1,3 +1,6 @@
+---
+uuid: 55828537-580c-403d-9e16-e178230bb2f7
+---
 # Using the Minimum Order Amount Rule
 
 {bdg-secondary}`Available Liferay DXP 7.4 U1+/GA5+`

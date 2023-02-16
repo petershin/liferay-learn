@@ -1,3 +1,6 @@
+---
+uuid: 43821e95-9e8e-4698-9e5d-57be3ee8a0e5
+---
 # Configuring the Anonymous User
 
 Internet users are increasingly and justifiably concerned about how their personal data is processed by the systems they use. Liferay is aware of the need for functionality to address User data management. [Deleting User data](./sanitizing-user-data.md#the-personal-data-erasure-screen) is the safest way to honor _right to be forgotten_ requests.

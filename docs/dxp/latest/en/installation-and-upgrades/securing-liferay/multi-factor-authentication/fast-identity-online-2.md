@@ -1,3 +1,6 @@
+---
+uuid: cc8123e1-6fc7-42fa-9244-40eda22d389c
+---
 # Fast IDentity Online 2
 
 > Available: Liferay DXP/Portal 7.4+

@@ -1,3 +1,6 @@
+---
+uuid: f9af2dbb-d7e3-4fd7-9ec5-ed59e29923fd
+---
 # Customizing Auto-Save Behavior
 
 The _Forms_ application automatically saves the form creation progress as you [create a form](./creating-forms.md). By default, a form's draft is auto-saved every minute.

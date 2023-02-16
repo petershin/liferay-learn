@@ -1,3 +1,6 @@
+---
+uuid: 3da8d7b8-d126-4161-905c-da4583620e0a
+---
 # Creating a Search Page
 
 You can create and configure a search page for your Site if you choose not to base it on an existing search page template. This approach is preferable if you do not want to share common elements of your Site's search page with search pages on other Sites.

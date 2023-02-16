@@ -1,3 +1,6 @@
+---
+uuid: 8aba958f-0074-4664-bacd-fb45d164632e
+---
 # Selecting Assets in the Asset Publisher Widget
 
 You can configure the Asset Publisher Widget to select Assets dynamically based on specific criteria, or manually, specifying exactly what assets to display. You can also display Assets from [Collections](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md).

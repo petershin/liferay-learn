@@ -1,3 +1,6 @@
+---
+uuid: 1411549b-f2fd-473e-b4ef-5f67aa7fdb5e
+---
 # Making and Publishing Changes
 
 > Available: Liferay DXP/Portal 7.3+

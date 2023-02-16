@@ -1,3 +1,6 @@
+---
+uuid: 2246ec82-1b99-4c94-a3ba-8a73f1c9ab46
+---
 # Managing Image Resolutions
 
 Users can manage Adaptive Media Image Resolutions and their resulting adapted images. For example, you can enable, disable, edit, and delete resolutions. You can also generate any adapted images that may be missing for a resolution.

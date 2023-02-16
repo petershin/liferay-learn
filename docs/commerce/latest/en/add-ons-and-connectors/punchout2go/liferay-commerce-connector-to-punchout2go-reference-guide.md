@@ -1,3 +1,6 @@
+---
+uuid: 2bd5a44d-96d2-4b55-907f-6df7caff0c11
+---
 # Liferay Commerce Connector to PunchOut2Go Reference Guide
 
 > Subscription Required

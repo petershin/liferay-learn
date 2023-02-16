@@ -1,3 +1,6 @@
+---
+uuid: 7ee439f6-c180-41b5-ab95-45d3a74a0909
+---
 # Managing Channels
 
 This article describes how to manage Channels in Liferay Commerce. To learn about the uses for Channels in Liferay Commerce, see: [Introduction to Channels](./introduction-to-channels.md) and the [Channels Reference Guide](./channels-reference-guide.md).

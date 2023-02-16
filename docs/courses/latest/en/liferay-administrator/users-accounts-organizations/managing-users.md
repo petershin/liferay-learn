@@ -6,17 +6,17 @@ Use Liferay to create and manage users for Delectable Bonsai. See [Create and Ma
 
 Change the default email configuration before creating users.
 
-1. Click on the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Under _Platform_, click _Email_. Click _Email Sender_.
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Under _Platform_, click _Email_. Click _Email Sender_.
 
-1. Change the name to _IT Department_ and address to _it@delectablebonsai.com_. Click _Save_.
+1. Change the name to _Support Desk_ and address to _support@delectablebonsai.com_. Click _Save_.
 
-See [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html) to use an external mail server.
+To use an external mail server, see [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html).
 
 ## Creating Users
 
-Up to this point, Kyle has been using the default Liferay admin account. Create some user accounts for Kyle and some of his coworkers. 
+Up to this point, Kyle has been using the default Liferay admin account. Create some user accounts for Kyle and some of his coworkers to use. 
 
-1. Click on the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Click _Add User_ (![Add icon](../../images/icon-add.png)).
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Click _Add User_ (![Add icon](../../images/icon-add.png)).
 
 1. Input the following:
 
@@ -28,7 +28,7 @@ Up to this point, Kyle has been using the default Liferay admin account. Create 
 
    Click _Save_. Kyle's account has been created.
 
-1. Create one more user account for Kyle's manager:
+1. Create a user account for Kyle's manager:
 
    * Screen Name: `marcus`
    * Email Address: `marcus@delectablebonsai.com`
@@ -62,13 +62,13 @@ New users can also be added within organizations.
    * Email Address: `lily@delectablebonsai.com`
    * First Name: `Lily`
    * Last Name: `Lewis`
-   * Job Title: `Account Rep`
+   * Job Title: `Account Manager`
 
    Click _Save_ at the bottom of the page.
 
-   The next step is to assigns different roles and permissions to users. See [Setting Roles and Permissions](./setting-roles-and-permissions.md).
+The next step is to assign different roles and permissions to each user. See [Setting Roles and Permissions](./setting-roles-and-permissions.md).
 
-   ## Relevant Documentation
-   - [Understanding Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/understanding-users.html)
-   - [Adding and Managing Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-and-managing-users.html)
-   - [Adding Users to Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/adding-users-to-organizations.html)
+## Relevant Documentation
+- [Understanding Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/understanding-users.html)
+- [Adding and Managing Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-and-managing-users.html)
+- [Adding Users to Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/adding-users-to-organizations.html)

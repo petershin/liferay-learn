@@ -19,9 +19,9 @@ users-accounts-organizations/working-with-accounts.md
 - [Creating Organizations](./users-accounts-organizations/creating-organizations.md)
 - [Managing Users](./users-accounts-organizations/managing-users.md)
 - [Setting Roles and Permissions](./users-accounts-organizations/setting-roles-and-permissions.md)
-- [Working with Accounts](./users-accounts-organizations/working-with-accounts.md.md)
+- [Working with Accounts](./users-accounts-organizations/working-with-accounts.md)
 
-The Liferay DXP instance is up and running. Kyle Klein has now been asked by his boss, Marcus Morgan to begin setting up Liferay as the new digital experience platform for Delectable Bonsai.
+The new Liferay DXP instance is up and running. Kyle Klein has been asked by his boss, Marcus Morgan to begin setting up Liferay as their new digital experience platform for Delectable Bonsai.
 
 At the end of this module, you will have four user accounts assigned across different organizations.
 

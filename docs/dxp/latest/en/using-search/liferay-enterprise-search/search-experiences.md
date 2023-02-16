@@ -7,11 +7,13 @@ toc:
   - ./search-experiences/search-blueprints-elements-reference.md
   - ./search-experiences/search-blueprints-configuration-reference.md
   - ./search-experiences/creating-and-managing-elements.md
+  - ./search-experiences/sorting-results-in-a-search-blueprint.md
 uuid: 4955593b-f8dd-4b87-bffa-6cb10c97e9e2
 ---
 # Search Experiences
 
-{bdg-link-secondary}`[Available Liferay DXP 7.4 Update 5+; 7.3 Update 6+](#getting-liferay-search-experiences)`
+{bdg-link-primary}`LES Subscription`
+{bdg-link-secondary}`DXP 7.4 U5+; 7.3 U6+`
 
 ```{toctree}
 :maxdepth: 1
@@ -23,9 +25,8 @@ search-experiences/personalizing-the-search-experience.md
 search-experiences/search-blueprints-elements-reference.md
 search-experiences/search-blueprints-configuration-reference.md
 search-experiences/creating-and-managing-elements.md
+search-experiences/sorting-results-in-a-search-blueprint.md
 ```
-
-> **Liferay Enterprise Search (LES) Subscribers**
 
 The Liferay Enterprise Search Experiences app includes a suite of features granting fine-grained control over the end user's search experience. As the search administrator you can use Search Experiences for search customizations varying in complexity:
 
@@ -47,6 +48,7 @@ Search Blueprints is the first feature in the Search Experiences application. To
   - [Creating Elements](./search-experiences/creating-and-managing-elements/creating-elements.md)
   - [Managing Elements](./search-experiences/creating-and-managing-elements/managing-elements.md)
   - [Predefined Element Variables Reference](./search-experiences/creating-and-managing-elements/predefined-element-variables-reference.md)
+- [Sorting Results in a Search Blueprint](./search-experiences/sorting-results-in-a-search-blueprint.md)
 
 ## Getting Liferay Search Experiences
 

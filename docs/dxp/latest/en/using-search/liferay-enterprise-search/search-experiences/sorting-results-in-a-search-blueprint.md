@@ -1,6 +1,6 @@
 # Sorting Results in a Search Blueprint
 
-Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-oconfiguration) to a search blueprint to control the order of search results. Go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new blueprint or open an existing one, then click the _Configuration_ tab. Enter your JSON into the Sort Configuration text area.
+Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-configuration) to a search blueprint to control the order of search results. Go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new blueprint or open an existing one, then click the _Configuration_ tab. Enter your JSON into the Sort Configuration text area.
 
 ![Enter JSON to sort a blueprint's results.](./sorting-results-in-a-search-blueprint/images/01.png)
 
@@ -20,15 +20,14 @@ At its most basic, a sort configuration is a JSON element with a `sorts` array a
 {
    "sorts": [
       {
-         "title_sortable": "desc"
+         "localized_title_en_US_sortable": "asc"
       }
    ]
 }
 ```
 
-<!-- Question: Should we warn about the multiple similar field names trap (title_sortable, title_en_US_sortable, localized_title_en_us_sortable, etc.)? Something like the below warning text?-->
 ```{warning}
-There can be similarly named field variations. Make sure you're using the correct to capture each entity being searched. For example, `title_en_US_sortable`, `localized_title_en_US_sortable`, etc.
+A search document can contain similarly named field variations, especially for localized text fields. When sorting, use a localized and sortable field such as `localized_title_en_US_sortable`. Check the document of each entity to find its available fields. For example, `title_sortable` is a common field, but the same entity may also contain `localized_title_en_US_sortable`. 
 ```
 
 ## Example 2: Sorting by a Structure Field
@@ -89,9 +88,7 @@ For a nested field, the sort configuration's field declaration is more complicat
 
 ## Example 3: Sorting by an Objects Field with Empty Search Enabled
 
-When a search page is displaying all of a site's results by default (e.g., Allow Empty Searches is enabled in the Search Options widget), you can define a different sorting strategy for the empty search versus when the user enters search keywords. For example, you can sort from most searched (using a field called `hitCount`) to least in the empty search, but sort by relevance for a keyword search.
-
-<!--Can you do this hitCount sort in real life? Someone might expect this is a realistic result but I'm not sure if it works with Objects ootb-->
+When a search page is displaying all of a site's results by default (e.g., Allow Empty Searches is enabled in the Search Options widget), you can define a different sorting strategy for the empty search versus when the user enters search keywords. For example, you can sort from most searched (using a field called `total`) to least in the empty search, but sort by relevance for a keyword search.
 
 Object entry fields are indexed as nested fields in the search engine document. 
 
@@ -100,9 +97,9 @@ When viewing the document, you can see the nested properties of an Object in the
 ```json
 "nestedFieldArray" : [
             {
-              "fieldName" : "hitCount",
-              "valueFieldName" : "value_long",
-              "value_long" : 26
+              "fieldName": "total",
+              "valueFieldName": "value_integer",
+              "value_integer": "8"
             }
 ```
 
@@ -121,18 +118,19 @@ To view the document with its nested fields,
 
 1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields. 
 ```
+
 Example configuration:
 
 ```json
 {
    "sorts": [
       {
-         "${keywords}nestedFieldArray.value_long": {
+         "${keywords}nestedFieldArray.value_integer": {
             "nested": {
                "nested_path": "nestedFieldArray",
                "nested_filter": {
                   "term": {
-                     "nestedFieldArray.fieldName": "hitCount"
+                     "nestedFieldArray.fieldName": "total"
                   }
                }
             },

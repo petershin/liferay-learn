@@ -62,7 +62,7 @@ Different people at Delectable Bonsai need different permissions based on their 
 
    ![Lily Lewis has access to documents and media](./setting-roles-and-permissions/images/01.png)
 
-The next step is working with accounts. See [Creating Accounts](./creating-accounts.md). 
+The next step is working with accounts. See [Working with Accounts](./working-with-accounts.md). 
 
 ## Relevant Documentation
 - [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)

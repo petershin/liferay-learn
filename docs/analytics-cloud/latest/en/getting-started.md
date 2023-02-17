@@ -23,21 +23,21 @@ Straight out-of-the-box, Analytics Cloud is built to access the wide range of da
 
 Here are some example use cases for using Analytics Cloud with Liferay DXP:
 
-| Liferay DXP Use Case | Analytics Cloud Example Application |
-| :--- | :--- |
-| Building a customer portal | Learn what articles and documents customers search for to know what type of customer support or knowledge base content to put in front of them |
-| Building a commerce site | See the products customers are viewing for future promotions or cross-selling |
-| Building a company intranet for your employees | Transform your intranet to a self-service portal by identifying and providing content important to individual employees and departments  |
+| Liferay DXP Use Case                           | Analytics Cloud Example Application                                                                                                            |
+| :--------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| Building a customer portal                     | Learn what articles and documents customers search for to know what type of customer support or knowledge base content to put in front of them |
+| Building a commerce site                       | See the products customers are viewing for future promotions or cross-selling                                                                  |
+| Building a company intranet for your employees | Transform your intranet to a self-service portal by identifying and providing content important to individual employees and departments        |
 
 Whether you want a bird's-eye view or a ground-level view of your data, Analytics Cloud's got you covered.
 
 ## Analytics About Your Site
 
-At a high level, Analytics Cloud reports aggregate data from your entire site in one comprehensive dashboard. As you [Build Sites](https://learn.liferay.com/dxp/latest/en/site-building/introduction-to-site-building.html) and [Create Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages.html) in Liferay DXP, you'll get a sense of the traffic flow to your site. You can see your most popular pages ranked. 
+At a high level, Analytics Cloud reports aggregate data from your entire site in one comprehensive dashboard. As you [Build Sites](https://learn.liferay.com/dxp/latest/en/site-building/introduction-to-site-building.html) and [Create Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages.html) in Liferay DXP, you'll get a sense of the traffic flow to your site. You can see your most popular pages ranked.
 
 ![The site-wide report gives you a bird's-eye view of your site's analytics.](./getting-started/images/01.png)
 
-Analytics Cloud shows you these site-wide things: 
+Analytics Cloud shows you these site-wide things:
 
 * The number of individuals visiting your site across time
 * A list of the most viewed pages
@@ -46,11 +46,11 @@ Analytics Cloud shows you these site-wide things:
 * Visitor location and device/browser type
 * Cohort analysis (a table showing what percent of a previous day's visitors return)
 
-For a ground-level view, Analytics Cloud provides detailed statistics for the various parts of your site. Sure, you can see how many individuals visit your page and how long they spend viewing your page, but Analytics Cloud goes way beyond that. Discover how people find your page through web searches, advertisements, e-mail links, and more. This is especially useful if you have purchased advertising and want to know if your marketing efforts are working. 
+For a ground-level view, Analytics Cloud provides detailed statistics for the various parts of your site. Sure, you can see how many individuals visit your page and how long they spend viewing your page, but Analytics Cloud goes way beyond that. Discover how people find your page through web searches, advertisements, e-mail links, and more. This is especially useful if you have purchased advertising and want to know if your marketing efforts are working.
 
 ![A page report gives you statistics for a specific page.](./getting-started/images/02.png)
 
-Analytics Cloud shows you these details: 
+Analytics Cloud shows you these details:
 
 * The number of individuals visiting the page over time
 * The percentage of the visitors that are known (i.e. contact info synced) and if any belong to a segment
@@ -60,7 +60,7 @@ The ground-level view also includes detailed analytics for content such as blog 
 
 ![View reports for your site content such as for blogs or forms.](./getting-started/images/03.png)
 
-Analytics Cloud shows you these things about your assets: 
+Analytics Cloud shows you these things about your assets:
 
 * For blogs, number of views, reading time, comments, ratings
 * For documents and media, number of downloads, previews, comments, ratings
@@ -73,7 +73,7 @@ Analytics Cloud shows you global data about your visitors. For example, see the 
 
 ![The people analytics shows the data about your visitors as whole.](./getting-started/images/04.png)
 
-Analytics Cloud shows you these things about individuals: 
+Analytics Cloud shows you these things about individuals:
 
 * Total number of individuals (both known and anonymous) in the last 30 days
 * The change across time of the number of individuals interacting with your site
@@ -84,7 +84,7 @@ People analytics also includes segment analytics. Segments are groupings of indi
 
 ![Segment analytics shows data about different groupings.](./getting-started/images/05.png)
 
-Analytics Cloud shows you these things about segments: 
+Analytics Cloud shows you these things about segments:
 
 * Total number of individuals in the segment across time
 * Percentage of individuals in the segment who have interacted with the site recently
@@ -96,11 +96,22 @@ Finally, for a ground-level view, Analytics Cloud can give detailed reports for 
 
 ![See detailed analytics for known individuals.](./getting-started/images/06.png)
 
-Analytics Cloud shows you these things about known individuals: 
+Analytics Cloud shows you these things about known individuals:
 
 * Recent interaction history, including a detailed site activity stream
 * Most popular interest topics of the individual
 * Any segment the individual belongs to
+
+## Analytics About the Commerce Transactions On Your Site
+
+Analytics Cloud comes with a Commerce dashboard that gives a high-level overview of the performance of your Commerce site. Analytics Cloud shows you these things about your Commerce site:
+
+* Total order value
+* Incomplete Orders
+* Average Order Value
+* Average Revenue Per Account
+
+![See a high-level overview of the performance of your Commerce site.](./getting-started/images/07.png)
 
 ## Setting Up Your Analytics Cloud
 

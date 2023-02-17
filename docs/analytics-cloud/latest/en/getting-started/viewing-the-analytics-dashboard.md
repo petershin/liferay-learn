@@ -32,7 +32,7 @@ For optimizing site content:
 
 As a workspace owner or admin, you can invite your colleagues to the workspace. Invited users can be configured to help set up and configure data sources, create segments, or view analytics reports.
 
-See [Managing Users](../../workspace-settings/managing-users.md) to learn more about adding users to your workspace.
+See [Managing Users](../workspace-settings/managing-users.md) to learn more about adding users to your workspace.
 
 ## Configure Settings for Your Workspace
 
@@ -44,7 +44,7 @@ Most of the important settings were configured when you created the workspace. H
 * Workspace Usage Monitoring
 * Workspace Settings
 
-Analytics data appears once your workspace is connected. For example, you can view site-specific analytics on the [Sites dashboard](../../touchpoints/sites-dashboard.md). To see more about your workspace settings, see [Managing Workspaces](../../workspace-settings/managing-workspaces.md). 
+Analytics data appears once your workspace is connected. For example, you can view site-specific analytics on the [Sites dashboard](../touchpoints/sites-dashboard.md). To see more about your workspace settings, see [Managing Workspaces](../workspace-settings/managing-workspaces.md). 
 
 ## Language Menu Option
 

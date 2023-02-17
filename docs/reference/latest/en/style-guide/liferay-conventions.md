@@ -1,3 +1,6 @@
+---
+uuid: 90581d66-91d9-4b24-bce9-7f6ab4d407c8
+---
 # Liferay Style Conventions
 
 Conventions are neither correct or incorrect; they are decisions that vary greatly in the industry. After much comparison and use, Liferay's documentation uses the conventions shown here. 

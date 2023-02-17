@@ -1,3 +1,6 @@
+---
+uuid: 337dd2e1-277b-488c-a7fa-61908b6e1ad1
+---
 # Liferay Phraseology
 
 Liferay's style phrases prose a certain way. Note that these are also conventions and neither correct nor incorrect; they are the way we have chosen to communicate based on our goals of being comprehensive, concise, and cohesive. 

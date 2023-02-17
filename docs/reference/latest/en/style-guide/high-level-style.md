@@ -1,3 +1,6 @@
+---
+uuid: 038e7ee0-c0d2-4cd9-9b42-1caadfd3e9dc
+---
 # Liferay High-Level Style
 
 There are five types of documentation: 

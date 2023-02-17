@@ -1,3 +1,6 @@
+---
+uuid: 1feadcd5-9dfb-4baf-90be-2f8035768623
+---
 # Liferay Documentation Format
 
 The format, or how a style of documentation is organized, is important to maintaining consistency of experience. As readers make more use of the documentation, the organization of how a feature is presented and described should become familiar. To make this possible, writers must adhere to format conventions. 

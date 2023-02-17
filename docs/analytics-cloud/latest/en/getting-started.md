@@ -11,7 +11,7 @@ uuid: 04d50515-b7e9-43d4-83d7-fff078917d16
 :maxdepth: 3
 
 getting-started/connecting-liferay-dxp-to-analytics-cloud.md
-getting-started/syncing-sites-and-contacts.md
+getting-started/syncing-sites-channels-and-contacts.md
 getting-started/viewing-the-analytics-dashboard.md
 ```
 

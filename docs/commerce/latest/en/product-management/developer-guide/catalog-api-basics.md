@@ -19,7 +19,7 @@ Once Liferay is running,
    unzip liferay-q2v8.zip
    ```
 
-1. Catalogs are scoped to your instance. Use the cURL script to add a new catalog. On the command line, navigate to the `curl` folder. Execute the `Catalog_POST_ToInstance.sh` script.
+1. Catalogs are scoped to an instance. Use the cURL script to add a new catalog. On the command line, navigate to the `curl` folder. Execute the `Catalog_POST_ToInstance.sh` script.
 
    ```bash
    ./Catalog_POST_ToInstance.sh
@@ -110,7 +110,7 @@ This class invokes the REST service using only three lines of code:
 | `CatalogResource catalogResource = builder.authentication(...).build();` | Use basic authentication and generate a `CatalogResource` service instance. |
 | `catalogResource.postCatalog(...);`                                      | Call the `catalogResource.postCatalog` method and pass the data to post.    |
 
-Note that the project includes the `com.liferay.headless.commerce.admin.catalog.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
+The project includes the `com.liferay.headless.commerce.admin.catalog.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
 ```{note}
 The `main` method's comment demonstrates running the class.

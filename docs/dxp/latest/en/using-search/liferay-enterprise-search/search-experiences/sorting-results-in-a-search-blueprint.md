@@ -5,16 +5,16 @@ Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-c
 ![Enter JSON to sort a blueprint's results.](./sorting-results-in-a-search-blueprint/images/01.png)
 
 ```{important}
-* Do not use both the [Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorts on a search page. Consistent behavior cannot be guaranteed if you combine sorts from the Sort widget and a search blueprint's sort configuration.
+* Do not use both the [Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorting on a search page. Consistent behavior cannot be guaranteed.
 
-* The examples here are simple. A robust sort configuration should consider all scenarios, such as what happens when a search result document does not contain the sort field. In that case, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
+* The examples here are simple. A robust sort configuration must consider all scenarios, such as what happens when a search result document does not contain the sort field. In that case, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
 
    See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html) for more details.
 ```
 
 ## Example 1: Sorting by Title
 
-At its most basic, a sort configuration is a JSON element with a `sorts` array and a single field with an ascending (`asc`) or descending (`desc`) strategy declared.
+A sort configuration is a JSON object with a `sorts` array defining the fields to sort by, either in ascending (`asc`) or descending (`desc`) order.
 
 ```json
 {
@@ -26,8 +26,10 @@ At its most basic, a sort configuration is a JSON element with a `sorts` array a
 }
 ```
 
-```{warning}
-A search document can contain similarly named field variations, especially for localized text fields. When sorting, use a localized and sortable field such as `localized_title_en_US_sortable`. Check the document of each entity to find its available fields. For example, `title_sortable` is a common field, but the same entity may also contain `localized_title_en_US_sortable`. 
+```{tip}
+* A search document can contain similarly named field variations, especially for localized text fields. Use a localized and sortable field such as `localized_title_en_US_sortable`. Check the document of each entity to find its available fields. For example, `title_sortable` is a common field, but the same entity may also contain `localized_title_en_US_sortable`.
+
+* To see a document's fields, click _Preview_ in the blueprint's toolbar, execute a search, and expand the fields for the result.
 ```
 
 ## Example 2: Sorting by a Structure Field
@@ -86,9 +88,7 @@ For a nested field, the sort configuration's field declaration is more complicat
 }
 ```
 
-## Example 3: Sorting by an Objects Field with Empty Search Enabled
-
-When a search page is displaying all of a site's results by default (e.g., Allow Empty Searches is enabled in the Search Options widget), you can define a different sorting strategy for the empty search versus when the user enters search keywords. For example, you can sort from most searched (using a field called `total`) to least in the empty search, but sort by relevance for a keyword search.
+## Example 3: Sorting by an Objects Field
 
 Object entry fields are indexed as nested fields in the search engine document. 
 
@@ -125,7 +125,7 @@ Example configuration:
 {
    "sorts": [
       {
-         "${keywords}nestedFieldArray.value_integer": {
+         "nestedFieldArray.value_integer": {
             "nested": {
                "nested_path": "nestedFieldArray",
                "nested_filter": {
@@ -140,20 +140,6 @@ Example configuration:
    ]
 } 
 ```
-
-The above example uses a nested Objects field, but the same principle applies when using a non-nested field like `modified`:
-
-```json
-{
-   "sorts": [
-      {
-         "${keywords}modified": "desc"
-      }
-   ]
-} 
-```
-
-With empty search enabled and no keywords in the request, the sort in the configuration applies. If keywords are present, the sort's field name is not found and the custom sort is ignored. Sorting falls back to the default sort by relevance.
 
 ## Additional Information
 

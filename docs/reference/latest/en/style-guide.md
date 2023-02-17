@@ -58,4 +58,3 @@ Additionally, the documentation has a single goal: to teach Liferay concepts as 
 ## You
 
 Despite all the effort we spend to define the different types of documentation described above, the standards you'll see below for making communication clear, and the workflow we use to ensure Liferay style is followed, we can never know if we're successful without you. The standards described here are the result of many years of defining, testing, and refining our content, but since no human is perfect, there are certainly ways they can be improved. If something isn't clear or doesn't sit right because of one of these standards, we encourage you to send us that feedback through [Liferay's Ask](https://liferay.dev/c/portal/login?redirect=https://liferay.dev/ask/questions/liferay-learn-feedback/new) application. 
-

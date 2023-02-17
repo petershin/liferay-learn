@@ -6,6 +6,9 @@ Contents
    :includehidden:
    :maxdepth: 6
 
+   dxp
+   style-guide
+
 Indices and tables
 ==================
 

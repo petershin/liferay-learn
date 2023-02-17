@@ -7,6 +7,8 @@ toc:
   - ./front-end-client-extensions/theme-css-client-extension-usage-and-properties.md
   - ./front-end-client-extensions/theme-favicon-client-extension-usage-and-properties.md
   - ./front-end-client-extensions/theme-sprite-map-client-extension-usage-and-properties.md
+  - ./front-end-client-extensions/custom-element-client-extension-usage-and-properties.md
+  - ./front-end-client-extensions/iframe-client-extension-usage-and-properties.md
   - ./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
   - ./front-end-client-extensions/remote-applications-ui-reference.md
 uuid: fcdeefe5-64f7-451c-8981-41e1a04290d6
@@ -23,6 +25,8 @@ front-end-client-extensions/css-client-extension-usage-and-properties.md
 front-end-client-extensions/theme-css-client-extension-usage-and-properties.md
 front-end-client-extensions/theme-favicon-client-extension-usage-and-properties.md
 front-end-client-extensions/theme-sprite-map-client-extension-usage-and-properties.md
+front-end-client-extensions/custom-element-client-extension-usage-and-properties.md
+front-end-client-extensions/iframe-client-extension-usage-and-properties.md
 front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
 front-end-client-extensions/remote-applications-ui-reference.md
 ```

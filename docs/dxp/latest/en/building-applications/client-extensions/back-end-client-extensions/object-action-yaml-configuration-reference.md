@@ -1,6 +1,6 @@
-# Object Action Client Extension Usage and Properties
+# Object Action YAML Configuration Reference
 
-Object action client extensions define external action handlers that you can link [Objects](link) to. You can configure your client extension as an object action, so that the defined object calls it when its event takes place.
+Here is a guide to setting up the definition for an object action client extension in your `client-extension.yaml` file.
 
 ## Usage Details
 
@@ -36,4 +36,4 @@ These properties are specific to object action client extensions:
 
 * [Back-end Client Extensions](../back-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [Workflow Action Client Extension Usage and Properties](./workflow-action-client-extension-usage-and-properties.md)
+* [Workflow Action YAML Configuration Reference](./workflow-action-yaml-configuration-reference.md)

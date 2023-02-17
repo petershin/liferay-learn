@@ -1,6 +1,6 @@
-# Theme JS Client Extension Usage and Properties
+# Theme JS YAML Configuration Reference
 
-You can use theme JS client extensions to provide global JavaScript libraries and logic throughout your Liferay instance (or virtual instance), in the same way you would add them with a [theme](link). When you deploy a JavaScript client extension to your Liferay instance and configure a page to use it, the JavaScript contained in it automatically runs each time you visit the page.
+Here is a guide to setting up the definition for a theme JS client extension in your `client-extension.yaml` file.
 
 ## Usage Details
 
@@ -32,4 +32,4 @@ See [Front-end Client Extension Properties](../front-end-client-extension-proper
 
 * [Front-end Client Extensions](../front-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [JavaScript Client Extension Properties and Usage](./javascript-client-extension-properties-and-usage.md)
+* [JavaScript YAML Configuration Reference](./javascript-yaml-configuration-reference.md)

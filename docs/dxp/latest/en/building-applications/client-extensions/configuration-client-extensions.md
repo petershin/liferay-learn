@@ -1,15 +1,15 @@
 ---
 toc:
-- ./configuration-client-extensions/oauth-user-agent-client-extension-usage-and-properties.md
-- ./configuration-client-extensions/oauth-headless-server-client-extension-usage-and-properties.md
+- ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
+- ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ---
 # Configuration Client Extensions
 
 ```{toctree}
 :maxdepth: 3
 
-configuration-client-extensions/oauth-user-agent-client-extension-usage-and-properties.md
-configuration-client-extensions/oauth-headless-server-client-extension-usage-and-properties.md
+configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
+configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ```
 
 You can deploy specific configurations to one or more Liferay instances with client extensions to simplify your work with Liferay. For example, you can use configuration client extensions to deploy OAuth2 authentication profiles to enable your other client extensions that require authentication.

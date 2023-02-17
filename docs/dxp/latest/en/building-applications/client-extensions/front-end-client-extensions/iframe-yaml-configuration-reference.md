@@ -1,4 +1,4 @@
-# IFrame Client Extension Usage and Properties
+# IFrame YAML Configuration Reference
 
 Here is a guide to setting up the definition for an IFrame client extension in your `client-extension.yaml` file.
 
@@ -32,4 +32,4 @@ These properties are specific to IFrame client extensions:
 
 * [Front-end Client Extensions](../front-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [Custom Element Client Extension Usage and Properties](./custom-element-client-extension-usage-and-properties.md)
+* [Custom Element YAML Configuration Reference](./custom-element-yaml-configuration-reference.md)

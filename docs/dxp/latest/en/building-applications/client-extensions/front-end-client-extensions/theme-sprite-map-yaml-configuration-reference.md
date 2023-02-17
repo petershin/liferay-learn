@@ -1,6 +1,6 @@
-# Theme Sprite Map Client Extension Usage and Properties
+# Theme Sprite Map YAML Configuration Reference
 
-You can use theme sprite map client extensions to override the sprite map for your site's pages in Liferay. Define the sprite map as a `.svg` image. The sprite map replaces the one used by your site's current theme.
+Here is a guide to setting up the definition for a theme sprite map client extension in your `client-extension.yaml` file.
 
 ## Usage Details
 

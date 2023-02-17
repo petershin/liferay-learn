@@ -1,6 +1,6 @@
-# Theme Favicon Client Extension Usage and Properties
+# Theme Favicon YAML Configuration Reference
 
-You can use client extensions to override the favicon for your pages in Liferay. When you deploy a theme favicon client extension, the icon file included with it becomes available for any page in Liferay. You can access it in a separate *Client Extensions* tab when you configure the favicon for a page from the Page Design Options menu.
+Here is a guide to setting up the definition for a theme favicon client extension in your `client-extension.yaml` file.
 
 ## Usage Details
 

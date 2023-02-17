@@ -1,6 +1,6 @@
-# OAuth Headless Server Client Extension Usage and Properties
+# OAuth Headless Server YAML Configuration Reference
 
-OAuth headless server client extensions define OAuth2 application profiles in Liferay that are pre-configured with a `Headless Server` client profile. This kind of authentication profile is required for API calls that are not triggered by a specific user. The client extension associates with a particular user account that is used for authentication.
+Here is a guide to setting up the definition for an OAuth headless server client extension in your `client-extension.yaml` file.
 
 ## Usage Details
 
@@ -8,7 +8,7 @@ Here is an example `client-extension.yaml` file with an OAuth headless server cl
 
 ```yaml
 yoke-oauth-headless-server:
-  type: oAuthApplicationHeadlessServer
+    type: oAuthApplicationHeadlessServer
 ```
 
 ## YAML Properties
@@ -28,4 +28,4 @@ These properties are specific to OAuth headless server client extensions:
 
 * [Back-end Client Extensions](../back-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [OAuth User Agent Client Extension Usage and Properties](./oauth-user agent-client-extension-usage-and-properties.md)
+* [OAuth User Agent YAML Configuration Reference](./oauth-user-agent-yaml-configuration-reference.md)

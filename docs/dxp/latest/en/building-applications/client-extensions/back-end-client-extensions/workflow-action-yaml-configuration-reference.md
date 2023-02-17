@@ -1,6 +1,6 @@
-# Workflow Action Client Extension Usage and Properties
+# Workflow Action YAML Configuration Reference
 
-Workflow action client extensions define external workflow action handlers that you can link to from [Liferay DXP workflows](link). You can configure a specific workflow event so that it calls your client extension.
+Here is a guide to setting up the definition for a workflow action client extension in your `client-extension.yaml` file.
 
 ## Usage Details
 
@@ -38,4 +38,4 @@ These properties are specific to workflow action client extensions:
 
 * [Back-end Client Extensions](../back-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [Object Action Client Extension Usage and Properties](./object-action-client-extension-usage-and-properties.md)
+* [Object Action YAML Configuration Reference](./object-action-yaml-configuration-reference.md)

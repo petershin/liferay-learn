@@ -1,17 +1,17 @@
 ---
 toc:
-- ./back-end-client-extensions/object-action-client-extension-usage-and-properties.md
-- ./back-end-client-extensions/workflow-action-client-extension-usage-and-properties.md
-- ./back-end-client-extensions/notification-type-client-extension-usage-and-properties.md
+- ./back-end-client-extensions/object-action-yaml-configuration-reference.md
+- ./back-end-client-extensions/workflow-action-yaml-configuration-reference.md
+- ./back-end-client-extensions/notification-type-yaml-configuration-reference.md
 ---
 # Back-End Client Extensions
 
 ```{toctree}
 :maxdepth: 3
 
-back-end-client-extensions/object-action-client-extension-usage-and-properties.md
-back-end-client-extensions/workflow-action-client-extension-usage-and-properties.md
-back-end-client-extensions/notification-type-client-extension-usage-and-properties.md
+back-end-client-extensions/object-action-yaml-configuration-reference.md
+back-end-client-extensions/workflow-action-yaml-configuration-reference.md
+back-end-client-extensions/notification-type-yaml-configuration-reference.md
 ```
 
 There are several types of client extensions that you can use to handle tasks outside of your Liferay instance, using your own code. You can write these types of client extensions using any method or type of code you want. Back-end client extensions are hosted outside of Liferay, and can be triggered by various cues from Liferay DXP itself.

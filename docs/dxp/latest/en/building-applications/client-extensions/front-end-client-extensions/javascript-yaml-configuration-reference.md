@@ -1,6 +1,6 @@
-# JavaScript Client Extension Usage and Properties
+# JavaScript YAML Configuration Reference
 
-You can use JavaScript client extensions to provide global JavaScript libraries and logic throughout your Liferay instance (or virtual instance). When you deploy a JavaScript client extension to your Liferay instance and configure a page to use it, the JavaScript contained in it automatically runs each time you visit the page. This allows you to add special functionality to your pages without the use of an OSGi module or theme.
+Here is a guide to setting up the definition for a JavaScript client extension in your `client-extension.yaml` file.
 
 ## Usage Details
 
@@ -29,4 +29,4 @@ These properties are specific to JavaScript client extensions:
 
 * [Front-end Client Extensions](../front-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [Theme JS Client Extension Properties and Usage](./theme-js-client-extension-properties-and-usage.md)
+* [Theme JS YAML Configuration Reference](./theme-js-yaml-configuration-reference.md)

@@ -1,6 +1,6 @@
-# OAuth User Agent Client Extension Usage and Properties
+# OAuth User Agent YAML Configuration Reference
 
-OAuth user agent client extensions define OAuth2 application profiles in Liferay that are pre-configured with a `User Agent Application` client profile. This kind of authentication profile is required for API calls that are triggered by a specific user (for example, making a REST call to a Liferay API using your other [back-end client extensions](./back-end-client-extensions.md)).
+Here is a guide to setting up the definition for an OAuth user agent client extension in your `client-extension.yaml` file.
 
 ## Usage Details
 
@@ -28,4 +28,4 @@ These properties are specific to OAuth user agent client extensions:
 
 * [Back-end Client Extensions](../back-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [OAuth Headless Server Client Extension Usage and Properties](./oauth-headless-server-client-extension-usage-and-properties.md)
+* [OAuth Headless Server YAML Configuration Reference](./oauth-headless-server-yaml-configuration-reference.md)

@@ -1,6 +1,6 @@
-# Theme CSS Client Extension Usage and Properties
+# Theme CSS YAML Configuration Reference
 
-Theme CSS client extensions are a way to introduce new CSS styling to your pages, using the same files as you would with a Liferay [theme](link). When you deploy a CSS client extension to your Liferay instance and configure a page to use it, the CSS contained in it adds to the styling present on the page, including theme and style book settings.
+Here is a guide to setting up the definition for a theme CSS client extension in your `client-extension.yaml` file.
 
 ## Usage Details
 
@@ -33,4 +33,4 @@ These properties are specific to theme CSS client extensions:
 
 * [Front-end Client Extensions](../front-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [CSS Client Extension Properties and Usage](./css-client-extension-properties-and-usage.md)
+* [CSS YAML Configuration Reference](./css-yaml-configuration-reference.md)

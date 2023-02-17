@@ -1,4 +1,4 @@
-# Custom Element Client Extension Usage and Properties
+# Custom Element YAML Configuration Reference
 
 Here is a guide to setting up the definition for a custom element client extension in your `client-extension.yaml` file.
 
@@ -44,4 +44,4 @@ These properties are specific to custom element client extensions:
 
 * [Front-end Client Extensions](../front-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [IFrame Client Extension Usage and Properties](./iframe-client-extension-usage-and-properties.md)
+* [IFrame YAML Configuration Reference](./iframe-yaml-configuration-reference.md)

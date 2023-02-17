@@ -20,12 +20,15 @@ The Liferay service in Liferay Cloud can be used in many of the same ways as an 
 
 See the [Liferay service limitations](./reference/platform-limitations.md#liferay-service) for more information.
 
-* [Choosing a Version](#choosing-a-version)
-* [Deployment (Customization, Patching, and Licensing)](#deployment-customization-patching-and-licensing)
-* [Configuration](#configuration)
-* [Hot Deploy](#hot-deploy)
-* [Enabling Clustering](#enabling-clustering)
-* [Running Scripts](#running-scripts)
+- [Using the Liferay DXP Service](#using-the-liferay-dxp-service)
+  - [Choosing a Version](#choosing-a-version)
+  - [Deployment (Customization, Patching, and Licensing)](#deployment-customization-patching-and-licensing)
+  - [Configuration](#configuration)
+  - [Hot Deploy](#hot-deploy)
+  - [Enabling Clustering](#enabling-clustering)
+  - [Running Scripts](#running-scripts)
+  - [Limitations](#limitations)
+  - [Additional Information](#additional-information)
 
 ## Choosing a Version
 
@@ -42,7 +45,7 @@ liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-sp2-202005120922
 ```
 
 ```{note}
-If your Liferay Cloud stack is not yet updated to 4.x.x, then by default, this version is instead located within a `gradle.properties` file at the root of the repository. In this case, define the version with the `liferay.workspace.lcp.liferay.image` property (which does not need to be defined separately from the major version). See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_ for more information on checking the version.
+If your Liferay Cloud stack is not yet updated to 4.x.x, then by default, this version is instead located within a `gradle.properties` file at the root of the repository. In this case, define the version with the `liferay.workspace.lcp.liferay.image` property (which does not need to be defined separately from the major version). See [Understanding Service Stack Versions](./reference/understanding-service-stack-versions.md)_ for more information on checking the version.
 ```
 
 You can check the [Services Changelog](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) for Liferay Cloud to see a reference for each new release. Each new Service update includes Docker images that you can use for your instance. You can also directly check the [DXP tags on Docker Hub](https://hub.docker.com/r/liferay/dxp/tags?page=1) to find the Docker image names to use.
@@ -94,7 +97,7 @@ liferay
 ```
 
 ```{note}
-If you are using version 3.x.x services, then scripts instead belong in the `lcp/liferay/script/` folder in the repository. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_ for more information on checking the version.
+If you are using version 3.x.x services, then scripts instead belong in the `lcp/liferay/script/` folder in the repository. See [Understanding Service Stack Versions](./reference/understanding-service-stack-versions.md)_ for more information on checking the version.
 ```
 
 ## Limitations

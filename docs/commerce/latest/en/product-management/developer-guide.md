@@ -1,6 +1,7 @@
 ---
 toc:
   - ./developer-guide/product-api-basics.md
+  - ./developer-guide/catalog-api-basics.md
 uuid: 3a9eb28c-fac3-4fa3-ae80-c059746bd38a
 ---
 # Developer Guide
@@ -9,6 +10,7 @@ uuid: 3a9eb28c-fac3-4fa3-ae80-c059746bd38a
 :maxdepth: 1
 
 developer-guide/product-api-basics.md
+developer-guide/catalog-api-basics.md
 ```
 
 ::::{grid} 2
@@ -16,5 +18,9 @@ developer-guide/product-api-basics.md
 
 :::{grid-item-card}  Product API Basics
 :link: ./developer-guide/product-api-basics.md
+:::
+
+:::{grid-item-card}  Catalog API Basics
+:link: ./developer-guide/catalog-api-basics.md
 :::
 ::::

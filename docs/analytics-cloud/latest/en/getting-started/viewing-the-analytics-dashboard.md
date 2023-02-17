@@ -3,7 +3,7 @@ uuid: 1f7b693c-0b64-4c16-965b-4cb85875e0f4
 ---
 # Viewing the Analytics Dashboard
 
-Once your [Liferay site and contacts are synced](syncing-sites-and-contacts.md), Analytics Cloud automatically begins tracking visitors to your site and how they're interacting with your site's content. The next steps are to explore the different tools available through the navigation menu on the left.
+Once your [data is synced](./connecting-liferay-dxp-to-analytics-cloud.md), Analytics Cloud automatically begins tracking visitors to your site and how they're interacting with your site's content. The next steps are to explore the different tools available through the navigation menu on the left.
 
 ![Explore the different tools through the left navigation.](viewing-the-analytics-dashboard/images/01.png)
 
@@ -22,6 +22,14 @@ For understanding your audience:
 
 ```{note}
 To explore analytics data based on segments, you must first [Create Segments](../people/segments/creating-segments.md). These are groups of individuals that are aggregated together based on attributes you select.
+```
+
+For understanding your Commerce data:
+
+* [Commerce Dashboard](../commerce/commerce-dashboard.md)
+
+```{note}
+To explore Commerce analytics data, you must sync Commerce channels with Analytics Cloud. See [Connecting Liferay DXP to Analytics Cloud](./connecting-liferay-dxp-to-analytics-cloud.md) for more information.
 ```
 
 For optimizing site content:

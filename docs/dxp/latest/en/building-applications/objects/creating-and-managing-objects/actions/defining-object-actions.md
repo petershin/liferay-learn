@@ -3,18 +3,18 @@ uuid: 196c7b9c-e63b-4072-a33f-71cb75361fc2
 ---
 # Defining Object Actions
 
-{bdg-secondary}`Available Liferay 7.4 U33+/GA33+`
+{bdg-secondary}`Available Liferay 7.4 U60+/GA60+`
 
-Actions define custom operations triggered by object entry events. Liferay listens for the event---add, delete, or update---and executes the operation.
+Object actions define operations that you can run manually or automatically for object entry events.
 
 To add an action,
 
-1. Open the Global Menu ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
+1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
 1. Begin editing an object definition.
 
    ```{note}
-   For Liferay 7.4 U22+ and GA22+, you can add actions to system objects.
+   For Liferay 7.4 U22+/GA22+, you can add actions to system objects.
    ```
 
 1. Go to the *Actions* tab and click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
@@ -27,23 +27,43 @@ To add an action,
 
    ![Go to the Action Builder tab to define a custom trigger, conditions, and action.](./defining-object-actions/images/02.png)
 
-1. Specify a Trigger event to determine when the action is performed.
+1. Specify a trigger event to determine when the action is performed.
 
    | Trigger | Description |
    | :--- | :--- |
    | On After Add| When an entry is added |
+   | On After Attachment Download | When an entry attachment is downloaded |
    | On After Delete | When an entry is deleted |
    | On After Update | When an entry is updated |
+   | Standalone | Triggered manually |
+
+   All triggers besides standalone are automatic. The standalone option defines a custom trigger for running any type of action manually. See [Using Manual Actions](./using-manual-actions.md) for more information on the standalone trigger.
 
    ![Determine when the action is performed.](./defining-object-actions/images/03.png)
 
-1. (Optional) Enable a Condition upon which the action is triggered. Click the *Code* button ( ![Code](../../../../images/icon-code.png) ) to view available expressions.
+1. (Optional) Enable a condition for automatic triggers. Click the *Code* button ( ![Code](../../../../images/icon-code.png) ) to view available expressions.
 
-   On Liferay 7.4 U33+ and GA33+, Liferay validates your expression syntax when you click *Done*. If the expression is invalid, Liferay displays an error message.
+   On Liferay 7.4 U33+/GA33+, Liferay validates the condition's syntax when you click *Done*. If the expression is invalid, Liferay displays an error message.
+
+   <!--TASK: See [Using Action Conditions]() for more information. -->
 
    ![Use expressions to set additional conditions for the trigger.](./defining-object-actions/images/04.png)
 
-1. For Action, select the type of action performed and fill out all additional fields. See [Understanding Action Types](./understanding-action-types.md#understanding-action-types) for more information.
+1. Select the type of action performed and fill out all additional fields.
+
+   | Type | Description |
+   | :--- | :--- |
+   | Add an Object Entry | Create entries in an active object. |
+   | Groovy Script | Execute custom [Groovy](https://groovy-lang.org/) scripts. |
+   | Notification | Send email notifications using a predefined template. |
+   | Update an Object Entry | Update fields in the current object entry. |
+   | Webhook | Deliver a payload to a URL. |
+
+   ```{important}
+   Groovy script actions are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
+   ```
+
+   See [Understanding Action Types](./understanding-action-types.md#understanding-action-types) for more information.
 
 1. Click *Save*.
 

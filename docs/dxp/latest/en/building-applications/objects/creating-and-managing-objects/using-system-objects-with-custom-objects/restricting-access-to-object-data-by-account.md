@@ -47,7 +47,7 @@ When setting up roles for account restriction, consider these factors:
 
 * Regular roles must have the `Accounts > Account Entry: View` permission to create object entries. This is because regular roles are not associated with accounts or organizations. Without this permission, users with the regular role cannot select an account during entry creation.
 
-* Organization roles must have these permissions to create object entries: `User and Organizations > Organization: Manage Accounts` and `User and Organizations > Organization: Manage Suborganizations Accounts`. Without these permissions, users with the organization role cannot select an account during entry creation.
+* Organization roles must have these permissions to create object entries: `Users and Organizations &rarr; Organization: Manage Accounts` and `Users and Organizations &rarr; Organization: Manage Suborganizations Accounts`. Without these permissions, users with the organization role cannot select an account during entry creation.
 
 * For organization and account role users to access a custom object, they must have a separate regular role granting the `Access in Control Panel` (company-scoped) or `Access in Site` permission (site-scoped). See [Object Application Permissions](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) for more information.
 
@@ -88,7 +88,7 @@ Grant account users permission to create and manage the account's object data.
 | Claims > Claims: Add Object Entry | Create an object entry. |
 
 ```{important}
-Do not assign the `Claims > Claim: View` resource permission to account roles. This permission can interfere with standard role behaviors.
+Do not assign the `Claims &rarr; Claim: View` resource permission to account roles. This permission can interfere with standard role behaviors.
 ```
 
 ### Organization Role

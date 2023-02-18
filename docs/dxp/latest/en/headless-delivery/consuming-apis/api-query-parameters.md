@@ -115,7 +115,7 @@ The JSON response:
 
 ## Filter Parameter
 
-You can filter the response for API endpoints with `filter` listed as an optional parameter. For example, you can filter blog postings by title (e.g. `headline eq 'Able'`).
+You can use the `filter` parameter to filter the response for API endpoints. For example, you can filter blog postings by title (e.g. `headline eq 'Able'`).
 
 Use the [API Explorer](./consuming-rest-services.md) to discover an API's parameters.
 
@@ -425,7 +425,7 @@ The JSON response:
 
 ## Sort Parameter
 
-You can sort the response for API endpoints with `sort` listed as an optional parameter. Sort in ascending (`asc`) or descending (`desc`) order. Use the [API Explorer](./consuming-rest-services.md) to discover an API's parameters.
+You can use the `sort` parameter to sort the response for API endpoints in ascending (`asc`) or descending (`desc`) order. Use the [API Explorer](./consuming-rest-services.md) to discover an API's parameters.
 
 To sort by more than one parameter, separate parameter names by a comma and order them by priority. For example, to sort first by title and then by creation date, append `sort=title,dataCreated` to the request.
 

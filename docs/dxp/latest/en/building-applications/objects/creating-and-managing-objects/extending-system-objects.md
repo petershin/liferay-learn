@@ -42,7 +42,7 @@ Since system objects don't support [custom layouts](./layouts/designing-object-l
 
 ## Adding Actions
 
-You can add custom actions to system objects that are triggered when entries are added, updated, or removed. System objects support [Webhook](./actions/defining-object-actions.md#webhook-actions), [Groovy Script](./actions/defining-object-actions.md#groovy-script-actions), and [Notification](./actions/defining-object-actions.md#notification-actions) actions. [Add an Object Entry](./actions/defining-object-actions.md#add-an-object-entry-actions) actions are not supported in system objects. See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
+You can add custom actions to system objects that are triggered when entries are added, updated, or removed. System objects support [Webhook](./actions/defining-object-actions.md#webhook), [Groovy Script](./actions/defining-object-actions.md#groovy-script), and [Notification](./actions/defining-object-actions.md#notification) actions. [Add Object Entry](./actions/defining-object-actions.md#add-an-object-entry) and [Update Object Entry](./actions/defining-object-actions.md#update-an-object-entry) actions are not supported in system objects. See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
 
 ## Adding Validations
 

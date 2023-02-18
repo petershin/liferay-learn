@@ -60,7 +60,7 @@ Different people at Delectable Bonsai need different permissions based on their 
 
 The next step is creating and managing accounts. See [Working with Accounts](./working-with-accounts.md). 
 
-## Relevant Documentation
+## Relevant Concepts
 - [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 - [Assigning Users to Roles](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/assigning-users-to-roles.html)
 - [Creating and Managing Roles](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html)

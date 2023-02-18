@@ -77,7 +77,7 @@ In addition to account roles, an account manager role can be assigned to a whole
 
 You have completed this module on users, accounts, organizations, and permissions. The next module is all about [User Data]().
 
-## Relevant Documentation
+## Relevant Concepts
 - [Accounts](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts.html)
 - [Account Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-users.html)
 - [Account Groups](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-groups.html)

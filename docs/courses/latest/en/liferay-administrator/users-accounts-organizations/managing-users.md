@@ -16,6 +16,10 @@ To use an external mail server, see [Configuring Mail](https://learn.liferay.com
 
 Up to this point, Kyle has been using the default Liferay admin account. Create some user accounts for Kyle and some of his coworkers to use. 
 
+```{warning}
+In a production environment, it is recommended not to use the default admin account, but to create admin accounts specific to your business.
+```
+
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Click _Add User_ (![Add icon](../../images/icon-add.png)).
 
 1. Input the following:
@@ -68,7 +72,7 @@ New users can also be added within organizations.
 
 The next step is to assign different roles and permissions to each user. See [Setting Roles and Permissions](./setting-roles-and-permissions.md).
 
-## Relevant Documentation
+## Relevant Concepts
 - [Understanding Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/understanding-users.html)
 - [Adding and Managing Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-and-managing-users.html)
 - [Adding Users to Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/adding-users-to-organizations.html)

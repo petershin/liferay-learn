@@ -45,6 +45,6 @@ Next, create an organizational site that will be used by the Sales & Marketing d
 
 The next step is creating and managing users. See [Managing Users](./managing-users.md).
 
-## Relevant Documentation
+## Relevant Concepts
 - [Understanding Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/understanding-organizations.html)
 - [Organization Sites](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/organization-sites.html)

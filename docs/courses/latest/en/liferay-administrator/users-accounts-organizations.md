@@ -21,10 +21,18 @@ users-accounts-organizations/working-with-accounts.md
 - [Setting Roles and Permissions](./users-accounts-organizations/setting-roles-and-permissions.md)
 - [Working with Accounts](./users-accounts-organizations/working-with-accounts.md)
 
-The new Liferay DXP instance is up and running. Kyle Klein has been asked by his boss, Marcus Morgan to begin setting up Liferay as their new digital experience platform for Delectable Bonsai.
+With your Liferay DXP environment configured and up and running, it is time to start creating users, organizations, and accounts. 
 
-At the end of this module, you will have four user accounts assigned across different organizations.
+By the end of this module, you will have four user accounts assigned across two different organizations. Each user will belong to their respective organization and be assigned appropriate permissions.
 
-![Organization chart with four differet users.](./users-accounts-organizations/images/01.png)
+![Organization chart with four different users.](./users-accounts-organizations/images/01.png)
+
+**Kyle Klein** - An IT staff who is tasked to help his company, Delectable Bonsai, get set up to use Liferay as their digital experience platform.
+
+**Marcus Morgan** - An IT manager and Kyle's boss. 
+
+**Lily Lewis** - An account manager for Marvelous Markets and staff member of Delectable Bonsai's sales & marketing department.
+
+**Noah Norman** - A store manager for Marvelous Markets NYC and the order approver for his staff who places orders from Delectable Bonsai.
 
 The first step is creating some organizations for users. See [Creating Organizations](./users-accounts-organizations/creating-organizations.md) and follow the steps.

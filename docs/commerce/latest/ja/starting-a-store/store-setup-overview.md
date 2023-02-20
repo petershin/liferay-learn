@@ -2,7 +2,7 @@
 
 ## 紹介
 
-この記事は、Liferay Commerceでストアを構築するのが初めてのユーザー向けにサンプルを提供することを目的としています。 Liferay Commerce（およびLiferay DXP）が適切にインストールされ、設定されていることを前提としています。 インストールの詳細は、[インストールの概要](../installation-and-upgrades/installation-overview.md) を参照してください。
+この記事は、Liferay Commerceでストアを構築するのが初めてのユーザー向けにサンプルを提供することを目的としています。 Liferay Commerce（およびLiferay DXP）が適切にインストールされ、設定されていることを前提としています。 インストールの詳細は、[インストールの概要](../installation-and-upgrades/installation-overview.md)を参照してください。
 
 ## ロードマップ
 
@@ -14,12 +14,12 @@
 ## ストア設定
 
 ```{note}
-[アクセラレータs](../starting-a-store/accelerators.md) は、ストアサイトの作成に使用することができます。 アクセラレータを使用して店舗サイトを作成すると、このセクションで述べた多くの設定が行われます。詳細は、[Minium Acceleratorを使用してB2Bストアをすぐに開始する](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) を参照してください。
+[Accelerator](../starting-a-store/accelerators.md) は、ストアサイトの作成に使用することができます。 アクセラレータを使用して店舗サイトを作成すると、このセクションで述べた多くの設定が行われます。詳細は、[Using the Minium Accelerator to Jump Start Your B2B Store](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) を参照してください。
 ```
 
 最初のストア設定は、[管理者アカウント](./introduction-to-the-admin-account.md)を使用して行います 。 Liferay Commerceの設定レイアウトと使用可能なオプションについては、[Liferay Commerceの設定の概要](../store-management/liferay-commerce-configuration-overview.md)をご覧ください。
 
-### グローバルcommerce設定の構成
+### グローバルコマース設定の構成
 
 Liferay Commerceのグローバル設定には、ストアのタイムゾーンと使用可能な言語の設定、地域や地域固有の計量単位の追加などがあります。 詳細は、次の記事をご覧ください。
 
@@ -32,9 +32,9 @@ Liferay Commerceのグローバル設定には、ストアのタイムゾーン�
 
 Liferay Commerceは、B2B、B2C、およびB2C-B2Bストアをサポートしています。 [サイトの種類](../starting-a-store/sites-and-site-types.md)によって、ストアのビジネスモデルが指定され、ストアフロントがアカウントとどのように連携するかが決まります。
 
-Liferay CommerceはLiferay DXP上に構築されています。 Liferay DXPサイトの機能の詳細は、 [Building a Site](https://learn.liferay.com/dxp/latest/ja/site-building/building-sites/adding-a-site.html) を参照してください。
+Liferay CommerceはLiferay DXP上に構築されています。 Liferay DXPサイトの機能の詳細は、[Building a Site](https://learn.liferay.com/dxp/latest/en/site-building/building-sites/adding-a-site.html)を参照してください。
 
-### ストアサイトのcommerce設定を構成する
+### ストアサイトのコマース設定を構成する
 
 次のセクションでは、ストアサイトに固有の構成について説明します。
 
@@ -72,13 +72,13 @@ Liferay Commerceには、送料を計算するためのいくつかのオプシ�
 
 ### カタログに商品を追加する
 
-商品を追加するときは、 **シンプル** 、 **グループ** 、 **仮想** の3つの商品タイプがあります。 詳細は、[商品タイプの概要](../product-management/creating-and-managing-products/product-types.md)を参照してください。
+商品を追加するときは、**シンプル**、**グループ**、**仮想**の3つの商品タイプがあります。 詳細は、[商品タイプの概要](../product-management/creating-and-managing-products/product-types.md)を参照してください。
 
 #### 商品情報の追加
 
 Liferay Commerceカタログは、さまざまな商品情報の保存と管理をサポートしています。 次の記事では、利用可能なオプションの一部を説明しています。
 
-* [商品オプション](../product-management/creating-and-managing-products/products/using-product-options.md)
+* [製品オプション](../product-management/creating-and-managing-products/products/using-product-options.md)
 * [商品仕様](../product-management/creating-and-managing-products/products/specifications.md)
 * [商品画像](../product-management/creating-and-managing-products/products/product-images.md)
 * [商品関連](../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)
@@ -96,7 +96,7 @@ Liferay Commerceカタログは、さまざまな商品情報の保存と管理�
 
 #### 在庫管理
 
-* [在庫管理の概要](../inventory-management/introduction-to-managing-inventory.md)
+* [在庫管理](../inventory-management.md)
 
 ## ストアフロントの作成
 

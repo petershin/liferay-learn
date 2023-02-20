@@ -1,14 +1,13 @@
 ---
 toc:
-- ./salesforce/liferay-commerce-connector-to-salesforce.md
+- ./salesforce/liferay-connector-to-salesforce.md
 ---
-
 # Salesforce
 
 ```{toctree}
 :maxdepth: 1
 
-salesforce/liferay-commerce-connector-to-salesforce.md
+salesforce/liferay-connector-to-salesforce.md
 ```
 
 ```{raw} html

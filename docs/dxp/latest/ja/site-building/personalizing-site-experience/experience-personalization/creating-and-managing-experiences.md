@@ -1,56 +1,54 @@
 # エクスペリエンスの作成と管理
 
-> 一部のエクスペリエンス機能は、Liferay 7.4以降、7.3フィックスパック1以降、および7.2フィックスパック11以降でのみ使用できます。
+{bdg-secondary}`利用可能な Liferay 7.4+, 7.3 FP1+, および 7.2 FP11+`
 
-**エクスペリエンス** を使用して、コンテンツページをさまざまなユーザーグループに合わせてカスタマイズできます。  Liferay DXPエクスペリエンスについては、 [コンテンツページのパーソナライゼーション](./content-page-personalization.md) を参照してください。
+*Experiences*を使って、ユーザーグループごとにコンテンツページをカスタマイズすることができます。 [コンテンツページのパーソナライゼーション](./content-page-personalization.md) を参照し、体験がサイトのパーソナライゼーションにどのように貢献できるかを学んでください。
 
-## 新しいコンテンツページエクスペリエンスの作成
+## クリエイション・エクスペリエンス
 
-1. ［**サイト管理**］ &rarr; ［**Site Builder**］ &rarr; ［**Pages**］ に移動します。
-1. アクション（![Actions](../../../images/icon-actions.png)）メニューをクリックして ［**編集**］ を選択するか、[新しいコンテントページを作成](../../creating-pages/using-content-pages.md)します。
-1. ページの上部にある ［**エクスペリエンス**］ で、 ［**デフォルト**］ をクリックしてエクスペリエンスの選択ダイアログを開きます。
+1. *サイトメニュー* ( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 *サイトビルダー* &rarr; *ページ*に進みます。
 
-1. アクション（![Actions](../../../images/icon-actions.png)）メニューをクリックして ［**編集**］ を選択するか、[新しいコンテンツページを作成](../../creating-pages/adding-pages/adding-a-page-to-a-site.md)します。
+1. コンテンツページの「 *アクション」* (![Actions Button](../../../images/icon-actions.png)) をクリックし、「 *編集」*を選択します。 または、 [コンテンツページ](../../creating-pages/using-content-pages.md)を作成します。
 
-1. ページの上部にある［エクスペリエンス］で、 ［**Default**］ をクリックしてエクスペリエンスの選択ダイアログを開きます。
+1. *エクスペリエンス* ドロップダウン メニューを開き、 *新規エクスペリエンス*をクリックします。
 
-    ![［エクスペリエンス］をクリックしてエクスペリエンスを選択するか、［新しいエクスペリエンス］をクリックして新しいエクスペリエンスを作成します。](./creating-and-managing-experiences/images/01.png)
-1. ［**New Experience**］ をクリックします。
+   ![エクスペリエンス] ドロップダウン メニューを開き、[新規エクスペリエンス] をクリックします。](./creating-and-managing-experiences/images/01.png)
 
-1. エクスペリエンスの名前を入力し、ターゲットとするオーディエンスのセグメントを選択するか、[新しいセグメントを作成](../segmentation/creating-and-managing-user-segments.md)します（Liferay DXP 7.2フィックスパック1以降およびLiferay Portal 7.2 CE GA2以降で利用可能）。
+1. エクスペリエンスの名前を入力し、ターゲットとするオーディエンスセグメントを選択します。 または、 [セグメントを作成する](../segmentation/creating-and-managing-user-segments.md)。
 
-    ```{note}
-    新しいエクスペリエンスはデフォルトで*Anyone*セグメントに割り当てられ、すべてのWebサイト訪問者を対象としています。
-    ```
+   デフォルトでは、新しいエクスペリエンスは、 *Anyone* （つまり、すべてのサイト訪問者）をターゲットとしています。
 
-1. 選択したセグメントに表示する情報とレイアウトを使用して、コンテンツページを編集します。
+1. ターゲットとするセグメントに対して、表示される情報やレイアウトを決定するためのコンテンツページの設計。
 
-1. 上（![Up](../../../images/icon-angle-up.png)）および下（![Down](../../../images/icon-angle-down.png)）コントロールを使用して、リスト内のエクスペリエンスを移動させて優先順位を設定します（詳細については、 [Understanding How Experiences Work](./content-page-personalization.md#understanding-how-experiences-work) を参照してください）。
-1. ［**公開**］ をクリックします。
+1. *エクスペリエンス* ドロップダウン メニューを開き、 *上* (![Up](../../../images/icon-angle-up.png)) または *下* (![Down](../../../images/icon-angle-down.png)) ボタンをクリックしてエクスペリエンスの優先順位を設定します。
 
-ページのデフォルトバージョンは、選択したセグメントのメンバーを除くすべての人に表示されます。メンバーには、定義されたセグメントのサイトのバージョンが表示されます。
+   サイト訪問者は、そのセグメントで最も高いランキングのエクスペリエンスを見ることができます。 詳しくは、 [Understanding How Experiences Work](./content-page-personalization.md#understanding-how-experiences-work) をご覧ください。
 
-## コンテンツページエクスペリエンスの管理
+1. *［Publish］*をクリックします。
 
-コンテントページを編集するとき、［エクスペリエンス］をクリックして、そのページのオプションを管理できます。
+## エクスペリエンスの管理
 
-![エクスペリエンスの優先度を追加、編集、削除、または変更できます。](./creating-and-managing-experiences/images/04.png)
+コンテンツページを編集する際、エクスペリエンスをクリックすると、そのページのオプションを管理することができます。
 
-1. ［**サイト管理**］ &rarr; ［**Site Builder**］ &rarr; ［**Pages**］ に移動します。
-2. アクション（![Actions](../../../images/icon-actions.png)）メニューをクリックし、 ［**編集**］ を選択します。
-3. 管理するエクスペリエンスをクリックします。 ここから以下のことを実行できます。
+![エクスペリエンスの優先度を追加、編集、削除、または変更できます。](./creating-and-managing-experiences/images/03.png)
 
-   - 上（![Up](../../../images/icon-angle-up.png)）および下（![Down](../../../images/icon-angle-down.png)）コントロールを使用して、エクスペリエンスの優先度を設定する。
-   - エクスペリエンスの名前または選択したセグメントの編集（![Edit](../../../images/icon-edit.png)）。
-   - エクスペリエンスの複製（![Duplicate](../../../images/icon-copy.png)）（Liferay DXP 7.4以降、7.3フィックスパック1以降、および7.2フィックスパック11以降で利用可能）。
-   - エクスペリエンスの![削除](../../../images/icon-delete.png)削除（）。
+1. *サイトメニュー* ( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 *サイトビルダー* &rarr; *ページ*にアクセスします。
 
-    ```{important}
-    エクスペリエンスセレクターでのエクスペリエンスの順序によって、エクスペリエンスの優先順位が決まります。 詳細については、 [コンテンツページのパーソナライゼーション](./content-page-personalization.md) の*Understanding How Experiences Work*を参照してください。
-    ```
+1. コンテンツページの「 *アクション」* (![Actions Button](../../../images/icon-actions.png)) をクリックし、「 *編集」*を選択します。
+
+1. *エクスペリエンス* ドロップダウン・メニューを開きます。 ここから
+
+   * 上 (![Up](../../../images/icon-angle-up.png)) と下 (![Down](../../../images/icon-angle-down.png)) のコントロールを使って、エクスペリエンスの優先順位を設定します。
+   * エクスペリエンスの名前または選択したセグメントを編集する（![Edit](../../../images/icon-edit.png)）。
+   * Duplicate (![Duplicate](../../../images/icon-copy.png)) the experience.
+   * エクスペリエンスの![削除](../../../images/icon-delete.png)削除（）。
+
+   ```{important}
+   ドロップダウンメニューの経験の順序は、優先順位を決定します。 詳しくは、【体験の仕組みを理解する】(./content-page-personalization.md#understanding-how-experiences-work)をご覧ください。
+   ```
 
 ## 関連情報
 
 - [コンテントページのパーソナライゼーション](./content-page-personalization.md)
-- [コレクションのパーソナライズ](./personalizing-collections.md)
+- [Personalizing Collections](./personalizing-collections.md)
 - [ユーザーセグメントの作成と管理](../segmentation/creating-and-managing-user-segments.md)

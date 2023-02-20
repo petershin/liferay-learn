@@ -1,105 +1,122 @@
 # 在庫管理システムの活用
 
-> 利用可能：Commerce 2.1以降
+Liferayの在庫管理システムを使用して、インスタンス内の製品SKUの在庫を管理することができます。 本システムは、SKUを管理するために、このような機能を備えています。
 
-Liferay Commerceの **在庫管理** システムは、ユーザーがLiferay Commerceのインスタンス全体の在庫を管理するための単一の場所です。
+* 在庫の追加
+* ご注文を見る
+* 安全在庫を追加する
+* 過去の変更履歴を見る
 
-ユーザーは、在庫商品の追加、特定のアイテム（SKU）の注文一覧の表示、予備在庫の指定、商品の変更履歴の表示などができます。 また、在庫管理は倉庫と連動しており、ここから各倉庫にある在庫を確認することもできます。
+商品SKUの在庫を追加する前に、在庫を保管するための倉庫を少なくとも1つ作成する必要があります。 詳しくは、 [Setting Up Warehouses](./setting-up-warehouses.md) をご覧ください。
 
-在庫を管理するには、 **グローバルアプリケーション** メニュー&rarr; ［**commerce**］ &rarr; ［**在庫**］ に移動します。
+インベントリーページにアクセスするには、 *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Inventory*に移動してください。
 
 ```{note}
-在庫管理は、Commerce 2.0または2.1を使用している場合、*コントロールパネル*にあります。
+Commerce 2.0 または 2.1 を使用している場合、在庫管理オプションはコントロールパネルにあります。
 ```
 
-## 在庫商品の追加
+## SKUの在庫を追加する
 
-各在庫商品は、SKUによって追跡されます。 ユーザーは、 **在庫管理** に複数のSKUを追加し、各SKUに十分な数量があることを確認することができます。
+在庫はSKUレベルで管理されます。 インベントリエントリーを作成する際には、SKU、倉庫、数量を指定する必要があります。 SKUがなければ、商品に在庫を追加することはできません。
 
-在庫商品を追加する：
+次の手順を実行します：
 
-1. ［**コントロールパネル**］ &rarr; ［**commerce**］ &rarr; ［**在庫**］ に移動します。
-1. （![Add Icon](../images/icon-add.png)）アイコンをクリックします。
-1. 次のように入力します：
+1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Inventory*に移動します。
 
-    * ［**SKU**］ : CHINAWARE-GRAY
-    * ［**Warehouse**］ : United States - Southwest
-    * ［**Quantity**］ ：120
+1. *追加* (![Add Button](../images/icon-add.png)) をクリックし、SKU、倉庫、数量を入力します。 例えば、
 
-    ![新しい在庫商品を追加します。](./using-the-inventory-management-system/images/01.png)
+   * **［SKU］**: CHINAWARE-GRAY
+   * **［Warehouse］**: United States - Southwest
+   * **［Quantity］**：120
 
-1. 完了したら、 ［**Submit**］ をクリックします。
+   ![新しい在庫商品のSKU、倉庫、数量を入力します。](./using-the-inventory-management-system/images/01.png)
 
-新しい在庫商品が追加されました。
+1. *［Submit］*をクリックします 。
 
-```{important}
-在庫の各商品は、少なくとも1つのSKUに関連付けられている必要があります。
+選択した倉庫のSKUの在庫を追加します。
+
+```{tip}
+商品アプリケーションでSKUを編集しているときに、SKUの在庫を追加することができます。 詳しくは、[SKU在庫の追加](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md#adding-sku-inventory) をご覧ください。
 ```
 
-## 予備在庫の設定
+## 安全在庫の設定
 
-予備在庫とは、物理的には倉庫にあるが、販売する商品とは別に確保しておく販売不可の商品の在庫のことです。 これは、見込み注文のためであったり、商品を別のチャネルで販売するためであったりします。 設定すると、設定された倉庫に対して、商品の利用可能な在庫が減ります。
+安全在庫とは、倉庫にある商品在庫のうち、販売できないように取り置かれたものです。 これは、出荷の遅れ、サプライチェーンの中断、異なるチャネルでの販売など、さまざまな理由が考えられます。 安全在庫量は、選択された倉庫の利用可能な在庫を減らすことができます。
 
-安全在庫量を設定する：
+安全在庫数量を設定する。
 
-1. SKU（12 PACKMOCHA）をクリックします。
-1. 3点アイコン（![Actions](../images/icon-actions.png)）をクリックし&rarr;倉庫の横にある ［**編集**］ をクリックします。
-1. 次のように入力します：
+1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Inventory*に移動します。
 
-   * [**Quantity on Hand**]: 40 (修正しない)
-   * [**Safety Stock Quantity**]: 5
+1. *SKU*をクリックしてください。
 
-    ![安全在庫量を設定します。](./using-the-inventory-management-system/images/02.png)
+1. 倉庫の横にある *アクション* (![Actions Button](../images/icon-actions.png)) をクリックし、 *編集*を選択します。
 
-1. 完了したら、 ［**Save**］ をクリックします。
-1. ウィンドウを閉じます。
+1. *安全在庫量* フィールドに値を入力します。
 
-安全在庫量が設定されると、 ［**Available**］ の欄にある数が減少します。
+   ![選択したSKUの安全在庫数量を設定する。](./using-the-inventory-management-system/images/02.png)
 
-![安全在庫量を設定することで、その倉庫の利用可能な在庫を減らすことができます。](./using-the-inventory-management-system/images/03.png)
+1. 完了したら、*[保存]*をクリックします。
 
-## 受注オーダーを確認する
+使用可能な個数は安全在庫量によって減少します。 Available欄で確認することができます。
 
-1. SKU (_MIN55681_)をクリックします。
-1. ［**On Order**］ タブをクリックします。
+![安全在庫量を設定することで、倉庫内の在庫を減らすことができます。](./using-the-inventory-management-system/images/03.png)
 
-    ![安全在庫量を設定することで、その倉庫の利用可能な在庫を減らすことができます。](./using-the-inventory-management-system/images/06.png)
+## 注文時のSKUを表示する
 
-ユーザーは、このSKUを含むすべての注文を見ることができます。
+1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Inventory*に移動します。
+
+1. *SKU*をクリックしてください。
+
+1. *[注文中]* タブをクリックします。
+
+   ![選択したSKUを含むすべての注文を表示します。](./using-the-inventory-management-system/images/04.png)
+
+このページでは、選択したSKUを含むすべての注文を一覧表示します。 注文したアカウント、注文ID、数量、有効期限を確認することができます。
 
 ## 入荷在庫の追加
 
-ストアマネージャーは入荷量や配達予定日を入力することができます。
+入荷予定品とは、将来的に倉庫に入荷する予定のSKU在庫のことです。 入荷予定数量や納期を追加することができます。
 
-1. SKUをクリックします。
-1. ［**入荷**］ タブをクリックします。
-1. （![Add Icon](../images/icon-add.png)）アイコンをクリックします。
-1. 次のように入力します：
+1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Inventory*に移動します。
 
-    * ［**Quantity**］ ：20
-    * ［**Destination**］ ：倉庫を選択します（米国北東部）
-    * ［**Expected Delivery Date**］ : 将来の日付を選択します (2020年7月1日)。
+1. *SKU*をクリックしてください。
 
-    ![入荷在庫を追加します。](./using-the-inventory-management-system/images/04.png)
+1. *[入荷]*タブをクリックします。
 
-1. 完了したら、 ［**Submit**］ をクリックします。
+1. *追加* (![Add Button](../images/icon-add.png)) をクリックし、数量、仕向け地倉庫、納品予定日を入力します。 例えば、
 
-入荷量が追加されると、 ［**概要**］ タブで更新されます。
+    * **［Quantity］**：20
+    * **目的地**: アメリカ合衆国 - 北東部
+    * **配信予定日**: 2022年11月20日（これは未来の日付です。）
 
-![入荷量は、SKUの［概要］タブで更新されます。](./using-the-inventory-management-system/images/05.png)
+   ![選択したSKUの入庫を追加する。](./using-the-inventory-management-system/images/05.png)
+
+1. *［Submit］*をクリックします 。
+
+入荷した在庫を追加すると、「概要」ページの「入荷」欄に表示されます。
+
+![入荷数量は、SKUの概要ページに表示されます。](./using-the-inventory-management-system/images/06.png)
 
 ## 在庫変更の確認
 
-チェンジログは次のイベントを追跡します。
+ChangelogページでSKUの在庫の変化を確認することができます。
 
-* 注文が行われると、注文を満たすために数量が予約（割り当て）されます。
-* 出荷が作成されると、以前に予約された数量が確定されます。以前に予約した総量を削除することにより、在庫が更新されます。
-* 在庫に数量が追加されたとき
-* 倉庫間で数量が移動したとき。
-* 出荷がキャンセルされた場合、以前に割り当てられた数量を返品する必要があります。
-* 在庫商品に対する更新アクション。
+1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Inventory*に移動します。
 
-![チェンジログは変更を追跡します。](./using-the-inventory-management-system/images/07.png)
+1. *SKU*をクリックしてください。
+
+1. *Changelog* タブをクリックします。
+
+この情報は、チェンジログで見ることができます。
+
+* 発注後、注文を満たすために予約されたSKUの単位。
+* 出荷を作成し、前回計上した金額をコミットした後、在庫から削除されたSKUの単位。
+* 倉庫の在庫に追加されたSKUの単位。
+* 倉庫間で移動したSKUの単位。
+* 出荷をキャンセルして返品されたSKUの個数。
+* インベントリ内のSKUの更新。
+
+![選択したSKUのインベントリに関連するさまざまなイベントを表示します。](./using-the-inventory-management-system/images/07.png)
 
 ## 追加情報
 

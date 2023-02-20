@@ -24,7 +24,7 @@ Liferay DXP 7.4は、強化された機能と大幅な改良が施されおり�
 
 ### コンテンツパフォーマンスツールでのトラフィック獲得チャネル
 
-[Content Performance Tool](../content-authoring-and-management/content-performance-panel/analyze-content-metrics-using-content-performance-panel.md) のトラフィック獲得チャネルは、 [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) のデータを使用しており、オーガニック検索、有料検索、ソーシャル・トラフィック、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
+[Content Performance Tool](../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md) のトラフィック獲得チャネルは、<0>Analytics Cloud</0> のデータを使用しており、オーガニック検索、有料検索、ソーシャル・トラフィック、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
 
 ![トラフィック獲得チャネルには、検索、ソーシャル、リファラルデータなどがあります。](./whats-new-74/images/09.png)
 
@@ -38,7 +38,7 @@ Liferay DXP 7.4は、強化された機能と大幅な改良が施されおり�
 
 ### ページ監査
 
-Liferay DXP 7.4からは、ページのSEOやアクセシビリティを監査するために、 [ページ監査ツール](../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md) を使用することができます。 ページ監査ツールは [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights) サービスを使用して、Liferay DXPに特定の推奨事項を提供します。  新しいページ監査ツールでは、ページが最高のパフォーマンス、アクセシビリティ、検索エンジンのメタデータ、およびSEOのプラクティスに準拠しているかどうかをチェックできます。
+Liferay DXP 7.4からは、ページのSEOやアクセシビリティを監査するために、 [ページ監査ツール](../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md) を使用することができます。 ページ監査ツールは[Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights)サービスを使用して、Liferay DXPに特定の推奨事項を提供します。  新しいページ監査ツールでは、ページが最高のパフォーマンス、アクセシビリティ、検索エンジンのメタデータ、およびSEOのプラクティスに準拠しているかどうかをチェックできます。
 
 ![Google PageSpeed Insightsの統合により、推奨事項を提供します。](./whats-new-74/images/02.png)
 
@@ -138,7 +138,7 @@ Infoフレームワークでコレクションプロバイダーを構築する�
 
 ### コンテンツページおよび表示ページテンプレートのアダプティブメディアのネイティブサポート
 
-[コンテントページの画像にアダプティブメディア](../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings) を使用し、ターゲットの画面サイズに基づいて画像の解像度を動的に調整することが可能になりました。 [アダプティブメディアに画像解像度を追加](../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/adding-image-resolutions.md)した後、コンテントページの画像の［Resolution］のドロップダウンメニューに解像度が表示されます。
+[コンテントページの画像にアダプティブメディア](../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings)を使用し、ターゲットの画面サイズに基づいて画像の解像度を動的に調整することが可能になりました。 [アダプティブメディアに画像解像度を追加](../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/adding-image-resolutions.md)した後、コンテントページの画像の［Resolution］のドロップダウンメニューに解像度が表示されます。
 
 ![アダプティブメディアでは、画面サイズに応じて画像の解像度を動的に調整できるようになりました。](./whats-new-74/images/13.gif)
 

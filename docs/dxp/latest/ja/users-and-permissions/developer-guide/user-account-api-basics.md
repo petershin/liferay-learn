@@ -11,10 +11,10 @@
 
 次に、以下の手順を実行します。
 
-1. [User Account API Basics](./liferay-y6q4.zip)  をダウンロードし、解凍してください。
+1. [User Account API Basics](./liferay-y6q4.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-y6q4.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6q4.zip -O
    ```
 
    ```bash
@@ -113,7 +113,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | `-u "test@liferay.com:learn"`                                                                                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、【OAuth2を使ったユーザー認証】(../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -145,7 +145,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 他のJavaクラスの例はこれと似ていますが、異なる `UserAccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
+サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他のUser RESTサービスを呼び出す例です。
@@ -192,13 +192,13 @@ JSON レスポンスには、そのインスタンスのすべての Users が�
 
 ### User_GET_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./User_GET_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/curl/User_GET_ById.sh
    :language: bash
@@ -206,13 +206,13 @@ JSON レスポンスには、そのインスタンスのすべての Users が�
 
 ### User_GET_ById.java
 
-コマンド:
+コマンド：
 
 ```bash 
 java -classpath .:* -DuserId=1234 User_GET_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/java/User_GET_ById.java
    :dedent: 1
@@ -228,13 +228,13 @@ User は JSON レスポンスで返されます。
 
 ### User_PATCH_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./User_PATCH_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/curl/User_PATCH_ById.sh
    :language: bash
@@ -242,13 +242,13 @@ User は JSON レスポンスで返されます。
 
 ### User_PATCH_ById.java
 
-コマンド:
+コマンド：
 
 ```bash 
 java -classpath .:* -DuserId=1234 User_PATCH_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/java/User_PATCH_ById.java
    :dedent: 1

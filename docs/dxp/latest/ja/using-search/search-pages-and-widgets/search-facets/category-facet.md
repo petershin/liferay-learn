@@ -6,27 +6,29 @@ Category Facetは、検索クエリのキーワードに合致するカテゴリ
 
 ## カテゴリファセットを設定する
 
-Category Facet を設定するには、Facet の **Options** メニュー (![Options](../../../images/icon-app-options.png)) を開き、 **Configuration** をクリックします。
+Category Facet を設定するには、Facet の _Options_ メニュー (![Options](../../../images/icon-app-options.png)) を開き、 *Configuration*をクリックします。
 
-![ [設定]オプションをクリックします。](./category-facet/images/03.png)
+![設定]オプションをクリックします。](./category-facet/images/03.png)
 
 最初に表示されるのは「ディスプレイ設定」です。
 
-**表示テンプレート。** **Default** , **Cloud Layout** , **Compact Layout** , **Label Layout** , **Vocabulary Layout**(7.4 Update/GA 48+ で使用可能) から選択します。 Defaultレイアウトでは、各項目の横にチェックボックスが表示されますが、Compactレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。 [Vocabulary Layout](#display-facet-terms-categories-by-vocabulary) には、ファセット用語（カテゴリー）が語彙ごとに整理されて表示されます。
+**表示テンプレート。** *Default*, *Cloud Layout*, *Compact Layout*, *Label Layout*, *Vocabulary Layout* (7.4 Update/GA 48+ で使用可能) から選択します。 Defaultレイアウトでは、各項目の横にチェックボックスが表示されますが、Compactレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。 [Vocabulary Layout](#display-facet-terms-categories-by-vocabulary) には、ファセット用語（カテゴリー）が語彙ごとに整理されて表示されます。
 
 ［詳細設定］セクションには、追加のオプションが含まれています。
 
-**Category Parameter Name（カテゴリー・パラメーター名）。** FacetのURLのパラメータ名を変更します。 デフォルトは **カテゴリ** 。
+**Category Parameter Name（カテゴリー・パラメーター名）。** FacetのURLのパラメータ名を変更します。 デフォルトは *カテゴリ*。
 
 ```{important}
-ファセットウィジェット間のANDスタイル選択を実現するためには、各ウィジェットに対して異なるカテゴリパラメータ名を設定する必要があります。 デフォルトでは、すべてのカテゴリファセットウィジェットは、このフィールドを_category_に設定します。 [以下の例](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) は、その使用例を示しています。 
+ファセットウィジェット間のANDスタイル選択を実現するためには、各ウィジェットに対して異なるカテゴリパラメータ名を設定する必要があります。 デフォルトでは、すべてのカテゴリファセットウィジェットは、このフィールドを_category_に設定します。 以下の例](#example-creating a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) は、その使用例を示しています。 
 ```
 
-**最大ターム数：** ファセットに一致する用語がいくつ見つかったかに関係なく、表示するファセット用語の最大数を設定します。
+**最大ターム数：**ファセットに一致する用語がいくつ見つかったかに関係なく、表示するファセット用語の最大数を設定します。
 
 **頻度しきい値（Frequency Threshold）。** ファセット用語リストに用語を表示するために必要な最小頻度を設定する。 たとえば、ファセットの頻度しきい値が3に設定されている場合、一致する結果が2件の用語は、用語結果リストに表示されない。
 
 **頻度を表示する。** 用語の頻度を表示するかどうかを選択します。
+
+**Order Terms By:** Liferay 7.4 U56+/GA56+では、ファセットのタームソート戦略を選択することができます。Term Frequency Descending（デフォルト）、Term Frequency Ascending、Term Value Ascending、またはTerm Value Descendingです。 デフォルトのソートでは、ファセット用語のマッチ数が多いものから少ないものへと並べ替えられます。 用語値オプションは、ファセット用語をアルファベット順に並べる。
 
 ### 語彙によるファセット用語の表示とフィルタリング
 
@@ -50,7 +52,7 @@ Category Facetの設定画面でVocabulary Layoutを選択することで、カ�
 
 ![語彙を選択する。](./category-facet/images/06.png)
 
-この動作により、強力な検索ファセット体験を提供することができます。 [以下の使用例](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) をご参照ください。
+この動作により、強力な検索ファセット体験を提供することができます。[以下の使用例](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies)をご参照ください。
 
 
 ## 例ボキャブラリーを使ったCategory Facetでの階層的なフィルタリング体験の作成
@@ -78,7 +80,7 @@ Category Facetの設定画面でVocabulary Layoutを選択することで、カ�
 上記のユースケースを構成するために
 
 1. Global Menu &rarr; Control Panel &rarr; Sites から新しいサイトを作成します。 プロンプトが表示されたら、Miniumサイトテンプレートを選択します。
-1. サイト名をFooとし、 **Add** をクリックします。
+1. サイト名をFooとし、 _Add_をクリックします。
 1. Globalサイトのメニュー &rarr; Categorization &rarr; Categoriesに移動します。 Qualityという語彙を追加し、2つのカテゴリを作成します。PremiumとStandardの2つのカテゴリを作成する。
 
    ```{important}
@@ -86,7 +88,7 @@ Category Facetの設定画面でVocabulary Layoutを選択することで、カ�
    ```
 
    ```{note}
-   サイトの初期化時にサイト テンプレートによって作成された既存の語彙があります (サイトの名前にちなんで Foo と名付けられました)。構築する例に合わせ、カテゴリをより明確にするために _Vehicle Systems_ と名付けた方が良いでしょう (例: ブレーキ システム)。 ただし、Foo語彙のカテゴリは既存のCommerce製品から参照されるため、編集することはできません。 
+   サイトの初期化時にサイト テンプレートによって作成された既存の語彙があります (サイトの名前にちなんで Foo と名付けられました)。構築する例に合わせ、_Vehicle Systems_ という名前を付けて、カテゴリをより明確にした方が良いでしょう (例: Brake System)。 ただし、Foo語彙のカテゴリは既存のCommerce製品から参照されるため、編集することはできません。 
    ```
 
    ![グローバルサイトにQuality vocabularyを作成します。](./category-facet/images/07.png)
@@ -98,7 +100,7 @@ Category Facetの設定画面でVocabulary Layoutを選択することで、カ�
    - プレミアムブレーキフルード
    - プレミアムブレーキパッド
 
-   など、いくつかの追加製品にStandardカテゴリーを追加する。
+   など、いくつかの追加製品にStandardカテゴリを追加します。
 
    - ABSセンサー
    - ブレーキフルード
@@ -120,13 +122,13 @@ Category Facetの設定画面でVocabulary Layoutを選択することで、カ�
 
 1. Fooサイトのホームページに、Foo語彙のカテゴリのみを表示するように設定されたCategory Facetウィジェットを追加します。
 
-   - ページ上部の **プラスアイコン**(![Plus](../../../images/icon-plus.png)) をクリックします。
-   - **Category Facet** ウィジェットを既存のウィジェットの直上または直下にドラッグします。
-   - **Widget Configuration** 画面(![App Options](../../../images/icon-app-options.png))を開いてください。
-   - 表示テンプレートのセレクタを開き、 **語彙レイアウト** を選択します。
-   - Category Parameter Name を **foocategories** に変更します。
-   - **Select Vocabularies** ラジオボタンをクリックします。 **Global** を展開し、 **Foo** を選択します。
-   - ［**保存**］ をクリックします。
+   - ページ上部の *プラスアイコン* (![Plus](../../../images/icon-plus.png)) をクリックします。
+   - *Category Facet* ウィジェットを既存のウィジェットの直上または直下にドラッグします。
+   - *Widget Configuration* 画面(![App Options](../../../images/icon-app-options.png))を開いてください。
+   - 表示テンプレートのセレクタを開き、 _語彙レイアウト_を選択します。
+   - Category Parameter Name を _foocategories_に変更します。
+   - _Select Vocabularies_ ラジオボタンをクリックします。 _Global_ を展開し、 _Foo_を選択します。
+   - _［保存］_ をクリックします。
 
 1. 同様の手順で、オリジナルのCategory Facetウィジェットを構成し、Qualityボキャブラリーのカテゴリのみを表示し、Vocabulary Layoutテンプレートを使用します。 新しいCategory FacetウィジェットのCategory Parameter Nameはすでに変更されているので、既存のウィジェットのデフォルト値のままでよい。
 

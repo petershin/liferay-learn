@@ -1,13 +1,13 @@
 # フォームを利用したユーザー調査
 
-Liferayの以前のバージョンでは、サイト管理者はサイト管理&rarr;コンテンツとデータメニューにある専用のPollsアプリケーションにアクセスすることができました。このアプリケーションは、 [Liferay 7.3](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-3) で非推奨となり、 [Liferay 7.4](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4) で削除されました。
+Liferayの以前のバージョンでは、サイト管理者はサイト管理 &rarr; コンテンツとデータメニューにある専用のPollsアプリケーションにアクセスすることができました。 [ [このアプリケーションは、Liferay 7.3](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-4) で非推奨となり、Liferay 7.4](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-3)で削除されました。
 
 Liferay Formsは、旧バージョンのLiferayでPollsアプリケーションが扱っていたユースケースを実現するために強化されました。 新しいポールを作成するには、ここで説明する機能を持つLiferay Formsを使用します。
 
 Liferay 7.2 &rarr; 7.3 &rarr; 7.4 のパスに沿ってアップグレードしている場合、Polls は自動的に Forms を使用するようにアップグレードされます。
 
 ```{note}
-フォームの設定の包括的なリストは、[フォームの設定リファレンス](creating-and-managing-forms/forms-configuration-reference.md)に含まれています。
+フォームの設定に関する包括的なリストは、[フォーム設定リファレンス](creating-and-managing-forms/forms-configuration-reference.md)に含まれています。
 ```
 
 ## 世論調査の作成
@@ -26,6 +26,10 @@ Liferay Formsで投票のような機能を有効にするために、フォー�
 
 ![ユーザーはフォームを送信できなくなりますが、現在送信されているデータに関するフォームレポートを見ることができます。](./using-forms-to-poll-users/images/03.png)
 
+ユーザーが送信後にフォームを表示すると、Liferayはメッセージを表示します。 Liferay U49+/GA49+ では、このメッセージのヘッダーとボディの内容をカスタマイズすることができます。 それ以外の場合は、デフォルトのメッセージが表示されます。
+
+![投稿を1ユーザーにつき1回に制限する場合の警告メッセージを設定します。](./using-forms-to-poll-users/images/05.png)
+
 ### 有効期限を追加する
 
 デフォルトでは、フォームの有効期限はありません。 Never Expireの設定を無効にした場合、フォームの有効期限を設定することができます。 この日を過ぎると、送信はできません。 フォームのユーザーには、フォームへのアクセス時に有効期限切れの通知が表示されます。
@@ -42,27 +46,27 @@ Liferay Formsで投票のような機能を有効にするために、フォー�
 
 フォームを使った投票を行うことで、サイト訪問者の興味を引くことができます。
 
-サイトメニューの **Forms** アプリケーションと、ページに追加する **Form** ウィジェットの2つのアプリケーションがポールを作成・表示します。
+サイトメニューの *Forms* アプリケーションと、ページに追加する *Form* ウィジェットの2つのアプリケーションがポールを作成・表示します。
 
-1. サイトメニューから、 **コンテンツ** &rarr; **世論調査** をご覧ください。
+1. サイトメニューから、 *コンテンツ* &rarr; *世論調査*をご覧ください。
 
 1. ![Add](../../images/icon-add.png) ボタンをクリックし、「タイトル」と「説明文」を記入してください。
 
 1. フォームが投票のように動作するように設定する：フォームの設定ウィンドウを開き、「送信」セクションに移動し、次のようにします。
 
-   - **回答者に結果の一部を表示する** : 有効
-   - **Limit to One Submission per User** : Enabled
-   - **Never Expire** : 希望する場合はチェックを外す（有効期限を設定する）。
+   - **回答者に結果の一部を表示する**: 有効
+   - **Limit to One Submission per User**: Enabled
+   - **Never Expire**: 希望する場合はチェックを外す（有効期限を設定する）。
 
 1. ここで、投票の質問を設定します。 フォームに複数行の必須テキストフィールドを追加します。
 
-   - **ラベル** 今回の訪問はいかがでしたか？
-   - **フィールドタイプ** 複数行
-   - **必須項目です。** 有効
+   -  **ラベル** 今回の訪問はいかがでしたか？
+   -  **フィールドタイプ** 複数行
+   -  **必須項目です。** 有効
 
-1. **Publish** をクリックすると、フォームがユーザーに公開されます。
+1. *Publish* をクリックすると、フォームがユーザーに公開されます。
 
-   フォームへのアクセスは、直接リンク、またはLiferayのページにフォームを表示させることで行います。 詳しくは、 [フォームの発行](creating-and-managing-forms/creating-forms.md#publishing-a-form) をご覧ください。
+   フォームへのアクセスは、直接リンクするか、Liferayのページにフォームを表示することで行います。 詳しくは、 [フォームの発行](creating-and-managing-forms/creating-forms.md#publishing-a-form) をご覧ください。
 
 ## 投票をフォームにアップグレードする
 

@@ -4,7 +4,7 @@
 
 ## 種類
 
-**プライマリボタン** ：最も重要なアクションに使用されます。 2つのプライマリボタンを一緒にしたり、互いに近くに配置することはできません。
+**プライマリボタン**：最も重要なアクションに使用されます。 2つのプライマリボタンを一緒にしたり、互いに近くに配置することはできません。
 
 ラベル付きのプライマリボタン：
 
@@ -14,40 +14,40 @@
 
 ![プライマリボタンは明るい青色で、ユーザーの注意を引きます。](./clay-buttons/images/01.png)
 
-**セカンダリボタン** ：セカンダリアクションに使用されます。 複数のセカンダリボタンを一緒に、または互いに近くに配置できます。
+**セカンダリボタン**：セカンダリアクションに使用されます。 複数のセカンダリボタンを一緒に、または互いに近くに配置できます。
 
 ```jsp
 <div class="col">
-    <clay:button label="Secondary" style="secondary" />
+    <clay:button displayType="secondary" label="Secondary" />
 </div>
 <div class="col">
-    <clay:button ariaLabel="Wiki" icon="wiki" style="secondary" />
+    <clay:button ariaLabel="Wiki" displayType="secondary" icon="wiki" />
 </div>
 ```
 
 ![セカンダリボタンは、プライマリボタンよりも注意を引くものではなく、セカンダリアクションを目的としています。](./clay-buttons/images/02.png)
 
-**ボーダレスボタン** ：ツールバーなど、セカンダリボタンがデザインに対して重すぎる場合に使用されます。 これにより、デザインがクリーンになります。
+**ボーダレスボタン**：ツールバーなど、セカンダリボタンがデザインに対して重すぎる場合に使用されます。 これにより、デザインがクリーンになります。
 
 ```jsp
 <div class="col">
-    <clay:button label="Borderless" style="borderless" />
+    <clay:button displayType="borderless" label="Borderless" />
 </div>
 <div class="col">
-    <clay:button ariaLabel="Page Template" icon="page-template" style="borderless" />
+    <clay:button ariaLabel="Page Template" displayType="borderless" icon="page-template" />
 </div>
 ```
 
 ![ボーダーレスボタンは、ボタンから暗いアウトラインを削除します。](./clay-buttons/images/03.png)
 
-**リンクボタン：** キャンセル操作に使用します。
+**リンクボタン：**キャンセル操作に使用します。
 
 ```jsp
 <div class="col">
-    <clay:button label="Link" style="link" />
+    <clay:button displayType="link" label="Link" />
 </div>
 <div class="col">
-    <clay:button ariaLabel="Add Role" icon="add-role" style="link" />
+    <clay:button ariaLabel="Add Role" displayType="link" icon="add-role" />
 </div>
 ```
 
@@ -87,7 +87,7 @@
 等幅テキストのボタン：
 
 ```jsp
-<clay:button icon="indent-less" monospaced="<%= true %>" style="secondary" />
+<clay:button displayType="secondary" icon="indent-less" monospaced="<%= true %>" />
 ```
 
 ![ボタンは等幅テキストを表示できます。](./clay-buttons/images/08.png)
@@ -103,7 +103,7 @@
 プラスボタン：
 
 ```jsp
-<clay:button icon="plus" monospaced="<%= true %>" style="secondary" />
+<clay:button displayType="secondary" icon="plus" monospaced="<%= true %>" />
 ```
 
 ![アプリでアクションを追加するには、プラスボタンを使用します。](./clay-buttons/images/10.png)
@@ -111,13 +111,13 @@
 アクションボタン：
 
 ```jsp
-<clay:button icon="ellipsis-v" monospaced="<%= true %>" style="borderless" />
+<clay:button displayType="borderless" icon="ellipsis-v" monospaced="<%= true %>" />
  ```
 
 ![アクションボタンは、アクションメニューを表示するために使用されます。](./clay-buttons/images/11.png)
 
 ## 関連トピック
 
-* [Clayアラート](./clay-alerts.md)
-* [Clayボタン](./clay-buttons.md)
-* [Clayラベルとリンク](./clay-links-and-labels.md)
+* [Clay Alerts](./clay-alerts.md)
+* [Clay Buttons](./clay-buttons.md)
+* [Clay Labels and Links](./clay-links-and-labels.md)

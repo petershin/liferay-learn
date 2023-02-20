@@ -1,30 +1,31 @@
 # Solrの制限事項
 
-```{important}
-LiferayのSolrサポートは非推奨です。 [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) への移行を検討してください。
-```
+LiferayのSolr実装には限界があります。 検索エンジンにSolrを選択した場合、Liferayの一部の機能やAPIが使用できません。 [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) をインストールすると、最高の体験ができます。
 
 ## 検索結果 品質
 
 Liferayの検索機能には、Elasticsearch固有のAPIとマッピングが活用されています。 これらの機能の一部はSolrに含まれていないため、SolrをLiferayの検索エンジンとして使用する場合、検索結果の品質が低下することが予想されます。
 
-例えば、Liferayの言語認識ソート動作は、Elasticsearch</a>からのICU Analysis Plugin のためだけに存在する照合ルールに依存しています。 Solrで検索する場合、特にフィールド値に発音区分符号が含まれていると、最適でないソート動作が予想されます。</p> 
-
-
+例えば、Liferayの言語認識ソート動作は、[ICU Analysis Plugin from Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/plugins/7.x/analysis-icu-collation-keyword-field.html) のためにのみ存在する照合ルールに依存しています。Solrで検索するとき、特にフィールド値が発音区分符号を含むとき、いくつかの非最適なソート動作が予想されます。
 
 ## エンドユーザー機能の制限
 
 LiferayのSolr統合には限界があります。 以下の機能を利用するためには、Elasticsearchが必要です。
 
-* [Liferay Commerce](https://learn.liferay.com/commerce/latest/ja/index.html)
+* [Liferay Object](../../../building-applications/objects.md)
+* [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html)
 * [ワークフロー統計情報](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
 * [カスタムフィルター検索ウィジェット](../../search-pages-and-widgets/search-results/filtering-search-results.md)
 * [低レベル検索オプションウィジェット](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md)
 * [検索のチューニング：検索結果のカスタマイズ](../../search-administration-and-tuning/result-rankings.md)
 * [検索チューニング：同義語](../../search-administration-and-tuning/synonym-sets.md)
 * [コンテンツダッシュボード](../../../content-authoring-and-management/content-dashboard.md)
-
-
+* [類似結果](../../search-pages-and-widgets/similar-results.md)
+* すべての [Liferay Enterprise Search](../../liferay-enterprise-search.md) アプリケーションを含みます。 
+     * クラスター横断レプリケーション
+   * 検索エクスペリエンス
+   * Learning to Rank
+   * モニタリング
 
 ## 開発者機能の制限
 
@@ -57,8 +58,6 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
         * `MultisearchSearchRequest`
     * `SuggestSearchRequest`
   * `com.liferay.portal.search.engine.adapter.snapshot.*`
-
-
 
 ```{note}
 Liferay Commerceは、Elasticsearchコネクタでのみ利用可能な `TermsSetFilter` の実装を必要とします。

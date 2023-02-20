@@ -36,20 +36,20 @@ optimizing-sites/building-a-responsive-site.md
 :::
 
 :::{grid-item-card} リダイレクトツールの使用
-:link: ./site-settings/managing-site-urls/using-the-redirection-tool.md
+:link: ./site-settings/managing-site-urls/setting-up-redirects-and-404-tracking.md
 :::
 
 :::{grid-item-card} 表示ページテンプレートのSEOとOpen Graphの設定
 :link: ./displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md
 :::
 
-:::{grid-item-card} サイト用Open Graphの設定
+:::{grid-item-card} サイト用オープングラフの設定
 :link: ./site-settings/configuring-open-graph.md
 :::
 
 :::{grid-item-card} Hreflangメタデータの設定
 :link: ./site-settings/configuring-hreflang-meta-data.md
-:::  
+:::
 ::::
 
 ## ページパフォーマンスとアクセシビリティ
@@ -61,13 +61,13 @@ optimizing-sites/building-a-responsive-site.md
 :link: ../content-authoring and-management/page-performance and-accessibility/about-the-content-performance-tool.md
 :::
 
-:::{grid-item-card} コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析
+:::{grid-item-card} Analyze Content Metrics Using Content Performance Tool
 :link: ../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
 :::
 
 :::{grid-item-card} SEOとアクセシビリティをページ上で分析する
 :link: ../content-authoring and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
-:::  
+:::
 ::::
 
 ## A/Bテスト
@@ -88,10 +88,10 @@ optimizing-sites/building-a-responsive-site.md
 :::
 
 :::{grid-item-card} A/Bテストの実行とモニタリング
-:link: ./optimizing-sites/ab-testing/running-and-monitoring-ab-tests.md
+:link: ./optimizing-sites/ab-testing/running and-monitoring-ab-tests.md
 :::
 
-:::{grid-item-card} A/Bテスト結果のレビューとテストバリアントの公開
+:::{grid-item-card} Reviewing A/B Test Results and Publishing Test Variants
 :link: ./optimizing-sites/ab-testing/reviewing-ab-test-results-and-publishing-test-variants.md
 :::  
 ::::
@@ -109,7 +109,7 @@ optimizing-sites/building-a-responsive-site.md
 :link: ./optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md
 :::
 
-:::{grid-item-card} グリッドフラグメントを使用したレスポンシブレイアウトの構築
+:::{grid-item-card} Building Responsive Layouts with Grid Fragment
 :link: ./optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
-:::  
+:::
 ::::

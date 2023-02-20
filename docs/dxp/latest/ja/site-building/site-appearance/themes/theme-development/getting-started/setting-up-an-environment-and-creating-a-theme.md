@@ -1,6 +1,6 @@
 # 環境の設定とテーマの作成
 
-テーマの作成は、テーマ開発の最初のステップです。 独自のテーマを作成したら、それをLiferay DXPインスタンスにデプロイして、さまざまなサイトのカスタマイズ</a>に使用できます。
+テーマの作成は、テーマ開発の最初のステップです。 自分のテーマができたら、それを Liferay DXP インスタンスにデプロイして、 [様々なサイトのカスタマイズに使うことができます](../../introduction-to-themes.md#developing-themes).
 
 ## Liferayテーマジェネレーターを使用する
 
@@ -13,7 +13,7 @@
 ### インストール
 
 ```{note}
-Liferayテーマジェネレータを使用してテーマを開発するには、ノードとNPMの両方が必要です。 [ノード互換性マトリクス](../../../../../building-applications/tooling/reference/node-version-information.md)をチェックして、ご使用のLiferayバージョンに対して正しいバージョンがインストールされていることを確認してください。 
+Liferayテーマジェネレータを使用してテーマを開発するには、ノードとNPMの両方が必要です。 Node compatibility matrix] (../../../../building-applications/tooling/reference/node-version-information.md) をチェックして、あなたのLiferayのバージョンに合ったバージョンがインストールされていることを確認してください。
 ```
 
 まだインストールしていない場合は、次のコマンドを使用してLiferayテーマジェネレーターをインストールします。
@@ -22,7 +22,7 @@ Liferayテーマジェネレータを使用してテーマを開発するには�
 npm install -g generator-liferay-theme@10.x.x
 ```
 
-次のコマンドを使用して、YeomanとGulpの依存関係をインストールします。
+このコマンドでYeomanとgulpの依存関係をインストールします。
 
 ```bash
 npm install -g yo gulp
@@ -39,14 +39,17 @@ npm install -g yo gulp
     ```
 
     ```{important}
-    このコマンドにベーステーマの名前を追加して、新しいテーマのベースにすることができます。 たとえば、 `yo liferay-theme:classic`を実行すると、DXPの標準テーマに基づいて新しいテーマが作成されます。
-    ``` <!-- Add link to an explanation of choosing (and changing) the base theme when available.-->1. プロンプトでテーマの名前を入力します。 デフォルトの「My Liferay Theme」を使用するには、Enterキーを押します。
+    このコマンドにベースとなるテーマ名を追加することで、新しいテーマのベースとして使用することができます。 例えば、`yo liferay-theme:classic` を実行すると、新しいテーマは DXP の Classic テーマをベースにしたものになります。
+    ```
+    <!-- Add link to an explanation of choosing (and changing) the base theme when available.-->
+
+1. プロンプトでテーマの名前を入力します。 デフォルトの"My Liferay Theme"を使用するには、Enterキーを押します。
 
     ```
     ? What would you like to call your theme? (My Liferay Theme)
     ```
 
-1. プロンプトでテーマのIDを入力します。 テーマが生成されると、IDによってテーマが組み込まれているフォルダの名前が決まります。 Enterキーを押して、名前に基づいたデフォルトIDを使用することもできます。
+1. プロンプトでテーマのIDを入力します。 テーマが生成されるとき、このIDによってテーマがビルドされるフォルダの名前が決定されます。 Enterキーを押して、名前に基づいたデフォルトIDを使用することもできます。
 
     ```
     ? What id would you like to give to your theme? (my-liferay-theme)
@@ -62,7 +65,7 @@ npm install -g yo gulp
 
 1. プロンプトで、テーマに使用できるフォントとしてFont Awesomeを追加するかどうかを答えます。
 
-1. テーマが生成されたら、矢印キーを使用してプロセスを完了し、テーマに適切なデプロイタイプを選択します。 デプロイには、ローカルのアプリケーションサーバー、Dockerコンテナ、またはその他のURLを選択できます。
+1. テーマが生成されたら、矢印キーを使って、ローカルアプリサーバー、Dockerコンテナ、その他のURLでデプロイするという、テーマに適したデプロイメントタイプを選択して、プロセスを完了します。
 
     ```
     ? Select your deployment strategy (Use arrow keys)
@@ -77,9 +80,32 @@ npm install -g yo gulp
 
 テーマが生成され、選択したIDにちなんで名付けられたフォルダ内に配置されます。 これで、テーマのベースフォルダから`gulp deploy`を実行することで、テーマをビルドしてDXPインスタンスにデプロイできます。
 
-## ブレードを使用したテーマの作成
+### Dart SASSの無効化
 
-近日公開！ <!-- Link to Theme Templates documentation when available-->
+テーマジェネレータで作成したテーマに対して `gulp build` または `gulp deploy` を実行すると、以下のようなエラーが発生する場合があります。
+
+```
+Error: compound selectors may no longer be extended.
+```
+
+このエラーは、テーマジェネレーターが [Dart SASS](https://sass-lang.com/dart-sass) を Liferay 7.3+ の時点で使用しているが、一部の環境ではまだ非推奨の [LibSass](https://sass-lang.com/blog/libsass-is-deprecated)で使用されている機能に依存しているために発生します。
+
+このエラーを回避するには、テーマでDart SASSを無効にします。 これらの `dartSass` と `node-sass` のプロパティを、テーマの `package.json` に追加します（既存のプロパティを削除しないこと）。
+
+```json
+"liferaytheme": {
+    "sassOptions": {
+        "dartSass": false
+    },
+    "devDependencies": {
+        "node-sass": "7.0.1"
+    }
+}
+```
+
+`npm install` を実行し、LibSass をインストールします。 次にgulpでビルドすると、Dart SASSによるエラーは消えます。
+
+<!-- Add Using Blade to Create a Theme section, with a link to Theme Templates documentation when available-->
 
 ## 追加情報
 

@@ -20,28 +20,28 @@
 
 **宛先タイプの互換性**
 
-以下は、[非同期メッセージング](./using-asynchronous-messaging.md)、[デフォルトの同期メッセージング](./using-default-synchronous-messaging.md)、および[直接同期メッセージング](./using-direct-synchronous-messaging.md)との各宛先タイプの互換性です。
+以下は、[非同期メッセージング](./using-asynchronous-messaging.md)、[デフォルトの同期メッセージング](./using-default-synchronous-messaging-in-previous-versions.md)、および[直接同期メッセージング](./using-direct-synchronous-messaging-in-previous-versions.md)との各宛先タイプの互換性です。
 
 | 宛先タイプ    | 非同期メッセージング | デフォルトの同期メッセージング | 直接同期メッセージング |
 |:-------- |:---------- |:--------------- |:----------- |
 | **パラレル** | はい         | はい              | いいえ         |
 | **シリアル** | はい         | はい              | いいえ         |
-| **同期** | いいえ        | いいえ             | はい          |
+| **同期**   | いいえ        | いいえ             | はい          |
 
 ここでは、サンプルプロジェクトのメッセージングパフォーマンスを調べることから始めます。 次に、APIを使用して宛先統計を取得し、宛先を設定します。 最後に、サンプルの宛先設定を再構成し、サンプルを再実行して、統計を調べます。
 
 ## サンプルプロジェクトでメッセージングを監視する
 
 サンプルプロジェクトは、宛先を作成し、メッセージリスナーを登録し、Gogoシェルコマンドを介して宛先統計を一覧表示します。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
+その後、以下の手順を実行してください。
 
-次に、以下の手順に従います。
-
-1. サンプルをダウンロードして解凍します。
+1. サンプルをダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O
     ```
 
     ```bash
@@ -157,8 +157,8 @@
 | 宛先設定         | APIメソッド                                                                                           |
 |:------------ |:------------------------------------------------------------------------------------------------- |
 | 宛先タイプ        | `Destination#getDestinationType()`                                                                |
-| 最大スレッドプールサイズ | `DestinationConfiguration#getWorkersMaxSize()` および `DestinationStatistic#getMaxThreadPoolSize()`  |
-| 最小スレッドプールサイズ | `DestinationConfiguration#getWorkersCoreSize()` および `DestinationStatistic#getMinThreadPoolSize()` |
+| 最大スレッドプールサイズ | `DestinationConfiguration#getWorkersMaxSize()` and `DestinationStatistic#getMaxThreadPoolSize()`  |
+| 最小スレッドプールサイズ | `DestinationConfiguration#getWorkersCoreSize()` and `DestinationStatistic#getMinThreadPoolSize()` |
 | メッセージキューのサイズ | `DestinationConfiguration#getMaximumQueueSize()`                                                  |
 
 **宛先統計：**
@@ -180,12 +180,12 @@
 
 シリアル宛先を使用していて、メッセージが一部のメッセージリスナーに十分な速度で到達しない場合は、最大スレッドプールサイズを増やすか（以下で説明します）、パラレル宛先タイプに切り替えてみてください。 メッセージバスは、スレッドプールのスレッドを使用して、パラレル宛先メッセージリスナーを同時に処理します。
 
-現在の [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) を必要なタイプの1つに置き換えることで、宛先タイプを切り替えることができます。 該当する`DestinationConfiguration`メソッドを使用して、新しいパラレルまたはシリアルの`DestinationConfiguration`を作成します。
+現在の[`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java)を必要なタイプの1つに置き換えることで、宛先タイプを切り替えることができます。 該当する`DestinationConfiguration`メソッドを使用して、新しいパラレルまたはシリアルの`DestinationConfiguration`を作成します。
 
 * `createParallelDestinationConfiguration(String)`
 * `createSerialDestinationConfiguration(String)`
 
-詳細については、 [サンプルの宛先を再構成する](#reconfigure-the-example-destination) を参照してください。
+詳細については、[サンプルの宛先を再構成する](#reconfigure-the-example-destination)を参照してください。
 
 ## メッセージキューとスレッドプールの構成
 
@@ -195,7 +195,7 @@
 
 メッセージバスは、宛先のスレッドプールからメッセージリスナー処理スレッドを引き出します。 プールには、開始サイズと最大サイズがあります。
 
-次の [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) メソッドを使用して、メッセージキューの最大サイズ、拒否された実行ハンドラー、スレッドプールの開始サイズ（コアサイズ）、およびスレッドプールの最大サイズを変更できます。
+次の[`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java)メソッドを使用して、メッセージキューの最大サイズ、拒否された実行ハンドラー、スレッドプールの開始サイズ（コアサイズ）、およびスレッドプールの最大サイズを変更できます。
 
 * `setMaximumQueueSize(int maximumQueueSize)`
 * `setRejectedExecutionHandler(RejectedExecutionHandler rejectedExecutionHandler)`
@@ -313,5 +313,5 @@ pending message count 0, sent message count 2
 ## 追加情報
 
 * [非同期メッセージングの使用](./using-asynchronous-messaging.md)
-* [デフォルトの同期メッセージングの使用](./using-default-synchronous-messaging.md)
-* [ダイレクト同期メッセージングの使用](./using-direct-synchronous-messaging.md)
+* [旧バージョンのデフォルトの同期メッセージングを使用する](./using-default-synchronous-messaging-in-previous-versions.md)
+* [旧バージョンでダイレクトシンクロナスメッセージを使用する場合](./using-direct-synchronous-messaging-in-previous-versions.md)

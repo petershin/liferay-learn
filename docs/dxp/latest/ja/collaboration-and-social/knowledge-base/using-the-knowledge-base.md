@@ -13,7 +13,7 @@
 
 ナレッジベースには、ページに追加できるウィジェットがいくつかあります。
 
-* [ナレッジベース表示](knowledge-base-display-widget.md)
+* [ナレッジベースの表示](knowledge-base-display-widget.md)
 * [ナレッジベース記事](other-knowledge-base-widgets.md#knowledge-base-article-widget)
 * [ナレッジベースセクション](other-knowledge-base-widgets.md#knowledge-base-section-widget)
 * [ナレッジベース検索](other-knowledge-base-widgets.md#knowledge-base-search-widget)

@@ -3,16 +3,16 @@
 サイトテンプレートでは、サイトを作成するためのテンプレートを設計し、設定することができます。 各テンプレートは、Sitesと同じツールを使って構築されています。
 
 ```{tip}
-サイトテンプレートは、主に複数のサイトにまたがるページを管理するためのものです。 Webコンテンツやその他のアセットをサイト間で作成・管理する必要がある場合は、[Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) を使用します。 また、自動伝播が必要ない場合は、サイトデータを環境間で転送するために、[export and import](./exporting-importing-site-templates.md) を行うことができます。
+サイトテンプレートは、主に複数のサイトにまたがるページを管理するためのものです。 Webコンテンツやその他のアセットをサイト間で作成・管理する必要がある場合は、「アセットライブラリ」（.../.../content-authoring and-management/asset-libraries/asset-libraries-overview.md） を使用します。 また、自動伝播が必要ない場合は、サイトデータを環境間で転送するために、[export and import](./exporting-importing-site-templates.md) を行うことができます。
 ```
 
 以下の手順で、サイトテンプレートを作成します。
 
-1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** を開き、 **サイトテンプレート** をクリックします。
+1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *コントロールパネル*を開き、 *サイトテンプレート*をクリックします。
 
-1. **追加** ボタン ![Add Button](../../../images/icon-add.png)をクリックします。
+1. *追加* ボタン ![Add Button](../../../images/icon-add.png)をクリックします。
 
-1. テンプレートには、 **名前** と **説明** を入力します。
+1. テンプレートには、 *名前* と *説明* を入力します。
 
 1. テンプレートがアクティブか非アクティブかを判断します。
 
@@ -20,17 +20,17 @@
 
 1. このテンプレートから継承したPageをユーザーが直接変更できるかどうかを決定します。
 
-1. **Ready for Propagation** を切り替えて、自動伝搬の有効/無効を切り替えます。
+1. *Ready for Propagation* を切り替えて、自動伝搬の有効/無効を切り替えます。
 
    自動伝播の詳細については、 [テンプレート変更の伝播](./propagating-template-changes.md) を参照してください。
 
    ![サイトテンプレートに名前を付けて設定する。](./creating-site-templates/images/01.png)
 
-1. ［**保存**］ をクリックします。
+1. *［Save］* をクリックします。
 
 一度保存すると、テンプレートを選択して編集を開始することができます。
 
-テンプレートをデザインするためのUIは、サイトをデザインするためのUIと同じです。 **サイトテンプレートメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開くだけで、利用可能なアプリケーションにアクセスし、スタイルブック、ページテンプレート、ページなどの追加を開始することができます。
+テンプレートをデザインするためのUIは、サイトをデザインするためのUIと同じです。 *サイトテンプレートメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開くだけで、利用可能なアプリケーションにアクセスでき、スタイルブック、ページテンプレート、ページなどの追加を開始することができます。
 
 ```{important}
 テンプレートから継承したページは、削除できません。 また、サイトレベルで子ページを直接追加することはできません。 これらは、サイトテンプレートでのみ追加・削除が可能です。
@@ -39,5 +39,5 @@
 ## 追加情報
 
 * [サイトテンプレート](../site-templates.md)
-* [テンプレートの変更を伝える](./propagating-template-changes.md)
+* [テンプレートの変更の伝達](./propagating-template-changes.md)
 * [サイトテンプレートプロパゲーションの設定](./configuring-site-template-propagation.md)

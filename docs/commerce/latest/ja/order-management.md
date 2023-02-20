@@ -8,8 +8,8 @@ toc:
 - ./order-management/order-rules.md
 - ./order-management/terms-and-conditions.md
 - ./order-management/order-importer.md
+- ./order-management/developer-guide.md
 ---
-
 # 注文管理
 
 ```{toctree}
@@ -23,6 +23,7 @@ order-management/order-types.md
 order-management/order-rules.md
 order-management/terms-and-conditions.md
 order-management/order-importer.md
+order-management/developer-guide.md
 ```
 
 ```{raw} html

@@ -10,7 +10,7 @@
 
 ## Liferayホームおよびアプリケーションサーバーファイルの移行
 
-1. [バックアップ](../maintaining-a-liferay-installation/backing-up.md)からインストールに追加および編集した [Liferayホームファイル](../maintaining-a-liferay-installation/backing-up.md#liferay-home) および [アプリケーションサーバーファイル](../maintaining-a-liferay-installation/backing-up.md#application-server) をマージします。 ファイルには次のものが含まれる場合がありますが、これらに限定されません。
+1. [バックアップ](../maintaining-a-liferay-installation/backing-up.md)からインストールに追加および編集した[Liferayホームファイル](../maintaining-a-liferay-installation/backing-up.md#liferay-home)および[アプリケーションサーバーファイル](../maintaining-a-liferay-installation/backing-up.md#application-server)をマージします。 ファイルには次のものが含まれる場合がありますが、これらに限定されません。
 
     * `/license/*`：アクティベーションキー。 (サブスクリプション)
     * `/log/*`：ログファイル。
@@ -21,16 +21,16 @@
 
 1. 新しいインストールの`［Liferay Home］/data`フォルダを、バックアップの`［Liferay Home］/data`フォルダと置き換えます。
 
-1. [ファイル ストア (ドキュメント ライブラリ)](../../../system-administration/file-storage.md)を、[バックアップ](../maintaining-a-liferay-installation/backing-up.md)から新しいインストールにコピーするか、または [`.config`ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) を介して使用するように新しいインストールを設定してセットアップします。
+1. [ファイル ストア (ドキュメント ライブラリ)](../../system-administration/file-storage.md)を、[バックアップ](../maintaining-a-liferay-installation/backing-up.md)から新しいインストールにコピーするか、または[`.config`ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)を介して使用するように新しいインストールを設定してセットアップします。
 
 ## データベースアップグレードの設定の更新
 
-DXPおよび一部のマーケットプレイスアプリのアップグレードプロセスでは、ポータルプロパティとOSGi構成を使用します。 カスタムコードのアップグレードプロセスでも、プロパティの更新と構成の更新が必要になる場合があります。 これらの設定と更新は、データベースのアップグレード **前** に行う必要があります。 その他の更新は、データベースのアップグレード後に行うことができます。
+DXPおよび一部のマーケットプレイスアプリのアップグレードプロセスでは、ポータルプロパティとOSGi構成を使用します。 カスタムコードのアップグレードプロセスでも、プロパティの更新と構成の更新が必要になる場合があります。 これらの設定と更新は、データベースのアップグレード_前_に行う必要があります。 その他の更新は、データベースのアップグレード後に行うことができます。
 
 DXPアップグレードプロセスに必要な設定の更新は次のとおりです。
 
 * [データベースドライバー](#database-drivers)
-* ドキュメントライブラリストアの実装名（ [Updating the File Store](./reference/file-store-updates.md#updating-the-store-implementation-class-name) を参照）
+* ドキュメントライブラリストアの実装名（[Updating the File Store](./reference/file-store-updates.md#updating-the-store-implementation-class-name)を参照）
 
 ```{important}
 マーケットプレイスアプリとカスタムコードで、必要な設定の更新を確認してください。
@@ -46,24 +46,24 @@ MySQLの例：
 jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
 ```
 
-その他のドライバーの例については、 [データベーステンプレート](../reference/database-templates.md) を参照してください。
+その他のドライバーの例については、[Database Templates](../reference/database-templates.md)を参照してください。
 
 ## ポータルプロパティの移行
 
 ```{important}
-`locales` [ポータルプロパティ](../../../installation-and-upgrades/reference/portal-properties.md)をオーバーライドした場合は、アップグレードする前に新しいインストールでそれをアップグレードしてください。 これにより、すべてのロケールのデータが確実にアップグレードされます。
+`locales` [ポータルプロパティ](../../installation-and-upgrades/reference/portal-properties.md)をオーバーライドした場合は、アップグレードする前に新しいインストールでそれをアップグレードしてください。 これにより、すべてのロケールのデータが確実にアップグレードされます。
 ```
 
 ここで説明するプロパティは、データベースのアップグレード後に更新できます。 プロパティの移行には、次のアクションが含まれます。
 
 * `liferay.home`プロパティを更新する（変更している場合）
-* [ブレードCLI](../../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md)を使用してプロパティの変更を報告する
+* [ブレードCLI](../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md)を使用してプロパティの変更を報告する
 * プロパティをOSGi構成に変換する
 * プロパティの移行に関する特別な考慮事項
 
 ### Blade CLIを使用して互換性のないプロパティを報告する
 
-[Blade CLI](../../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md)ツールの`upgradeProps`コマンドは、ポータルプロパティファイル間の変更を報告します。 このツールは、次のタイプの変更を報告します。
+[Blade CLI](../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md)ツールの`upgradeProps`コマンドは、ポータルプロパティファイル間の変更を報告します。 このツールは、次のタイプの変更を報告します。
 
 * 更新されていない場合に例外を発生させるプロパティ。
 * モジュールの`portal.properties`ファイルに移動されたプロパティ。
@@ -99,7 +99,7 @@ web.server.protocol
 
 ### プロパティをOSGi構成に変換する
 
-モジュール化された機能のプロパティが変更され、[OSGi構成ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)（OSGi構成管理）にデプロイされるようになりました。
+モジュール化された機能のプロパティが変更され、[OSGi構成ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)（OSGi構成管理）にデプロイされるようになりました。
 
 たとえば、6.2では、Simple File Storeがこのポータルプロパティを使用して、ストアのルートディレクトリを指定していました。
 
@@ -116,7 +116,7 @@ rootDir="{document_library_path}"
 `.config`ファイルを`［Liferay Home］/osgi/configs`というフォルダに配置します。
 
 ```{tip}
-コントロールパネルの［*System Settings*］画面（［*Configuration*］の下）は、OSGi構成管理の値を管理します。 これらの画面は`.config`ファイルを作成する最も正確な方法です。 構成する機能の構成画面を見つけて*保存*をクリックし、オプションボタンを使って [画面の設定をエクスポート](../../../system-administration/configuring-liferay/configuration-files and-factories/using-configuration-files.md) して `.config` ファイルに保存します。
+コントロールパネルの［*System Settings*］画面（［*Configuration*］の下）は、OSGi構成管理の値を管理します。 これらの画面は``.config``ファイルを作成する最も正確な方法です。 設定したい機能を設定している画面を見つけて *Save* をクリックし、オプションボタンを使って [画面の設定をエクスポートする] (../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) して `.config` ファイルに保存します。
 ```
 
 ### プロパティの移行に関する特別な考慮事項
@@ -125,7 +125,7 @@ rootDir="{document_library_path}"
 
 1. ファイルストア設定の更新については、[Updating the File Store](./reference/file-store-updates.md)で説明しています。
 
-1. Liferay Portal 6.1以前を使用している場合は、 [Liferay Portal 6.2で導入された新しいデフォルトにプロパティを適合](https://help.liferay.com/hc/ja/articles/360017903232-Upgrading-Liferay#review-the-liferay-62-properties-defaults) させてください。
+1. Liferay Portal 6.1以前を使用している場合は、[Liferay Portal 6.2で導入された新しいデフォルトにプロパティを適合](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay#review-the-liferay-62-properties-defaults)させてください。
 
 1. シャード化された環境がある場合は、[シャード化されていない環境を生成するようにアップグレードを構成](./other-upgrade-scenarios/upgrading-a-sharded-environment.md)します。
 

@@ -1,10 +1,14 @@
 # Liferay Commerceエンタープライズの有効化
 
-Liferay DXP/Portal 7.3から、CommerceはすべてのLiferayバンドルとDockerコンテナに同梱されているため、別途インストールする必要はありません。 ただし、Commerceのエンタープライズ機能にアクセスして利用するためには、実行するDXPのバージョンによって手順が異なります。 Liferay DXP 7.4 GA1では、すべてのCommerceモジュールがデフォルトで有効になっており、すぐに使用できます。 DXP 7.3 FP3/SP2以降では、Commerceは [portal property](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) を使用して有効化されますが、それ以前のバージョンではCommerceライセンスファイルが使用されます。 このプロパティは、Liferay Portalのバンドル/画像にはエンタープライズ機能が含まれていないため、影響を与えません。
+Liferay DXP/Portal 7.3から、CommerceはすべてのLiferayバンドルとDockerコンテナに同梱されているため、別途インストールする必要はありません。 ただし、Commerceのエンタープライズ機能にアクセスして利用するためには、実行するDXPのバージョンによって手順が異なります。 Liferay DXP 7.4 GA1では、すべてのCommerceモジュールがデフォルトで有効になっており、すぐに使用できます。 DXP 7.3 FP3/SP2以降では、Commerceは [portal property](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)を使用して有効化されますが、それ以前のバージョンではCommerceライセンスファイルが使用されます。 このプロパティは、Liferay Portalのバンドル/画像にはエンタープライズ機能が含まれていないため、影響を与えません。
+
+```{important}
+Liferay 7.4 U48+/GA48+ では、Commerce モジュールを無効にするためのポータルのプロパティ (`enterprise.product.commerce.enabled`) が削除されました。 DXP 7.4の有効なサブスクリプションをお持ちのすべてのお客様に、コマース機能が提供され、サポートされるようになりました。 Commerce を無効にすると、他の Liferay DXP モジュールとの間で不整合が発生することがあります。
+```
 
 ## Liferay DXP 7.4 GA1以降のLiferay Commerceエンタープライズの無効化
 
-{bdg-primary}`Liferay DXPとCommerceのサブスクリプションが必要`
+{bdg-primary}`Liferay DXP サブスクリプションが必要です`
 
 Liferay DXP 7.4 GA1では、すべてのCommerceモジュールがデフォルトで有効になっています。 ユーザーは、 `enterprise.product.commerce.enabled`ポータルプロパティを`false`に設定することで、これらを無効にすることができます。
 
@@ -21,7 +25,7 @@ enterprise.product.commerce.enabled=false
 `portal-ext.properties`ファイルが存在しない場合は、 `[LIFERAY_HOME]`または`[USER_HOME]`に作成してください。
 
 ```{note}
-バンドルにセットアップウィザードを使用した場合、ポータルプロパティは`[LIFERAY_HOME]`フォルダの中の`portal-setup-wizard.properties` にあります。 このファイルは `portal-ext.properties` ファイルよりも優先されるので、`enterprise.product.commerce.enabled` プロパティの値が競合していないことを確認してください。 詳しくは [ポータル・プロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) を参照してください。
+バンドルにセットアップウィザードを使用した場合、ポータルプロパティは`[LIFERAY_HOME]`フォルダの中の`portal-setup-wizard.properties` にあります。 このファイルは `portal-ext.properties` ファイルよりも優先されるので、`enterprise.product.commerce.enabled` プロパティの値が競合していないことを確認してください。 詳しくは[ポータル・プロパティ](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)を参照してください。
 ```
 
 ### DockerコンテナのCommerceの無効化
@@ -40,7 +44,7 @@ enterprise.product.commerce.enabled=false
 LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=false
 ```
 
-詳しくは、 [コンテナの設定](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties) を参照してください。
+詳しくは、[コンテナの設定](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties)を参照してください。
 
 正しく行われると、グローバルメニューにCommerceモジュールが表示されなくなります（![Global Menu](../images/icon-applications-menu.png)）。
 
@@ -80,7 +84,7 @@ LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=true
 
 ### 有効化の完了確認
 
-プロパティが正常に追加されたことを確認するには、Liferay DXPを開き、 **グローバルメニュー**(![Global Menu](../images/icon-applications-menu.png))をクリックします。 正常に追加されていれば、［**Commerce**］タブでCommerceモジュールを表示し、アクセスできます。 または、 **グローバルメニュー** を開いて［**コントロールパネル**］&rarr;［**サーバー管理**］&rarr; ［**プロパティ**］ &rarr; ［**ポータルプロパティ**］にアクセスできます。 新規プロパティは、他のプロパティと一緒にリストアップされているはずです。
+プロパティが正常に追加されたことを確認するために、Liferay DXP を起動し、グローバルメニュー (![Global Menu](../images/icon-applications-menu.png)) を開いてください。 正常に追加されていれば、［ Commerce］タブでCommerceモジュールを表示し、アクセスできます。 または、 *グローバルメニュー* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *コントロールパネル* &rarr; *サーバー管理* &rarr; *プロパティ* &rarr; *ポータルプロパティ*を開く。 新しいプロパティは、他のプロパティと一緒に表示されます。
 
 ## Liferay DXP 7.1-7.3 FP2用のLiferay Commerceエンタープライズの有効化
 
@@ -102,13 +106,13 @@ DXPとCommerceのアクティベーションキーは，両方とも同じ`licen
 
 ### Commerceのアクティベーションキーの入手
 
-Commerceサブスクリプションが [購入済](https://www.liferay.com/contact-sales) の場合は、以下のいずれかの方法でアクティベーションキーをダウンロードして入手できます。
+Commerceサブスクリプションが[購入済](https://www.liferay.com/contact-sales) の場合は、以下のいずれかの方法でアクティベーションキーをダウンロードして入手できます。
 
-* [ヘルプセンター](https://liferay-support.zendesk.com/agent/) チケットを **アクティベーションキー/Project Administration** コンポーネントを使って開きます。
+* [ヘルプセンター](https://liferay-support.zendesk.com/agent/)チケットを*アクティベーションキー/Project Administration*コンポーネントを使って開きます。
 
 * 各地域のプロビジョニングチーム（例：provisioning-[region]@liferay.com）にメールでリクエストを送信してください。
 
-* Commerceのアクティベーションキーは、 [こちら](https://customer.liferay.com/en_US/activation-key) からダウンロードできます。
+* Commerceのアクティベーションキーは、 [こちら](https://customer.liferay.com/en_US/activation-key)からダウンロードできます。
 
 ### Commerceのアクティベーションキーのデプロイ
 
@@ -120,15 +124,15 @@ Liferay 7.3 SP1では、Commerceを有効にした後、ユーザーはインス
 
 #### DXP Bundlesへのデプロイ
 
-XMLファイルをDXPインスタンスの [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーしてください。 アクティベーションキーの処理中、Liferayはこのファイルを `${liferay.home}/osgi/modules`フォルダに移動させ、ライセンスファイル(`.li`）`${liferay.home}/data/license`フォルダに生成します。 詳しくは、 [Liferay DXPの有効化](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html) をご覧ください。
+XMLファイルをDXPインスタンスの[`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーしてください。 アクティベーションキーの処理中、Liferayはこのファイルを `${liferay.home}/osgi/modules`フォルダに移動させ、ライセンスファイル(`.li`）`${liferay.home}/data/license`フォルダに生成します。 詳しくは、[Liferay DXPの有効化](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html)をご覧ください。
 
 #### Dockerコンテナへのデプロイ
 
-XMLファイルをコンテナの`/opt/liferay/deploy`フォルダにコピーします。 アクティベーションキーの処理中、Liferayはこのファイルを `opt/liferay/osgi/modules`フォルダに移動させ、ライセンスファイル(`.li`を`opt/liferay/data/license`フォルダに生成します。 Dockerコンテナへのファイルのデプロイについては、 [Providing Files to a Container](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.html?highlight=opt) を参照してください。
+XMLファイルをコンテナの`/opt/liferay/deploy`フォルダにコピーします。 アクティベーションキーの処理中、Liferayはこのファイルを `opt/liferay/osgi/modules`フォルダに移動させ、ライセンスファイル(`.li`を`opt/liferay/data/license`フォルダに生成します。 Dockerコンテナへのファイルのデプロイについては、[Providing Files to a Container](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.html?highlight=opt)を参照してください。
 
-#### Liferay Cloudへのデプロイメント
+#### Liferay Cloudへのデプロイ
 
-プロジェクトのセントラルGitリポジトリ内の [`liferay/configs/{ENV}/deploy/`](https://learn.liferay.com/liferay-cloud/latest/ja/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境の Liferay サービスへのファイルのデプロイについては、 [Liferay Cloud デプロイメントワークフローの概要](https://learn.liferay.com/liferay-cloud/latest/ja/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) を参照してください。
+プロジェクトのセントラルGitリポジトリ内の[`liferay/configs/{ENV}/deploy/`](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses)フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境の Liferay サービスへのファイルのデプロイについては、 [Liferay Cloud デプロイメントワークフローの概要](https://learn.liferay.com/liferay-cloud/latest/en/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) を参照してください。
 
 ```{important}
 Liferay Cloudの契約でCommerceを購入した場合、アクティベーションキーはLiferay Cloudチームがクラウド基盤を通じて管理するため、お客様自身で管理する必要はありません。 ただし、既存のLiferay CloudプロジェクトにCommerceを追加する場合は、ライセンスを自分で手動でデプロイする必要があります。
@@ -138,7 +142,7 @@ Liferay Cloudの契約でCommerceを購入した場合、アクティベーシ�
 
 キーが正常にデプロイされたことをコンソールで確認します。
 
-   ```
+   ```bash
    INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:271] Processing activation-key-commercesubscriptiondevelopment-1-developeractivationkeys.xml
    ...
    INFO  [fileinstall-directory-watcher][LicenseManager:?] Commerce Subscription Development license validation passed
@@ -147,17 +151,17 @@ Liferay Cloudの契約でCommerceを購入した場合、アクティベーシ�
 
 ### 期限切れのCommerceエンタープライズライセンスの更新
 
-Commerceエンタープライズのライセンスは、ユーザーのサブスクリプションの条件に基づいて、一定期間のみ有効となります。 ライセンスの有効期限が近づくと(i.e., < ほとんどのライセンスの場合は30日、< 30日のライセンスの場合は7日間)、管理者向けのCommerceアプリケーションに警告メッセージが表示されます。 ライセンスは、与えられた有効期限の後、2日間の猶予期間を経て失効します。
+Commerceエンタープライズのライセンスは、ユーザーのサブスクリプションの条件に基づいて、一定期間のみ有効となります。 ライセンスの有効期限が近づくと（例： < ほとんどのライセンスで30日、 < 30日ライセンスで7日）、管理者向けのCommerceアプリケーションに警告メッセージが表示されます。 ライセンスは、与えられた有効期限の後、2日間の猶予期間を経て失効します。
 
-ライセンスの有効期限が切れても、Commerceモジュールは有効なままですが、UIでは使用できなくなり、ライセンスが更新されるまではAPIの呼び出しもできなくなります。 すべてのユーザーのCommerceアプリケーションに、Commerceアプリケーションが利用できないことを示す通知が表示されます。 管理者はライセンスの更新を、その他のユーザーは管理者への問い合わせを求められます。
+ライセンスの有効期限が切れた場合、Commerceモジュールは有効なままですが、ライセンスが更新されるまでUIでの使用やAPIの呼び出しはできなくなります。 すべてのユーザーのCommerceアプリケーションに、Commerceアプリケーションが使用できないことを示す通知が表示されます。 管理者はライセンスの更新を、その他のユーザーは管理者への問い合わせを求められます。
 
 また、サーバーの再起動時に、コンソールにエラーメッセージが表示されます：
 
-   ```
+   ```bash
    ERROR [main][LicenseManager:?] Liferay Commerce license is expired
    ```
 
-Liferay Commerceエンタープライズを再起動するには、まずサーバーから期限切れのファイルを削除し、新しいキーを [デプロイ](#deploying-commerce-activation-keys) します。
+Liferay Commerce Enterprise を再アクティブ化するには、まずサーバーから期限切れのファイルを削除し、 [deploy](#deploying-commerce-activation-keys) 、新しいキーを使用します。
 
    ```{tip}
    アクティベーションキーの削除や追加は、サーバーの稼動中に行うことができます。
@@ -179,4 +183,4 @@ DXPとCommerceのライセンスはLiferay Cloudチームが管理しており�
 
 * [インストールの概要](./installation-overview.md)
 * [Liferay Commerceのアップグレード](./upgrading-liferay-commerce.md)
-* [プロキシサーバーを介したMarketplaceアプリの有効化](https://help.liferay.com/hc/ja/articles/360018427391)
+* [プロキシサーバーを介したMarketplaceアプリの有効化](https://help.liferay.com/hc/en-us/articles/360018427391)

@@ -36,7 +36,7 @@ creating-and-managing-objects/deleting-objects.md
 
 {bdg-secondary}`Liferay DXP/Portal 7.4以降で利用可能`
 
-Liferay Objectでは、コードを記述することなくビジネスニーズを満たすカスタムアプリケーションを[作成](./creating-and-managing-objects/creating-objects.md)するための便利なUIを提供します。 また、オブジェクトを使用して、システムオブジェクトとカスタムオブジェクトの両方を管理および拡張することができます。 これには、 [フィールド](./creating-and-managing-objects/fields.md), [リレーション](./creating-and-managing-objects/relationships.md), [アクション](./creating-and-managing-objects/actions.md), [レイアウト](./creating-and-managing-objects/layouts.md), [ビュー](./creating-and-managing-objects/views.md), [バリデーション](./creating-and-managing-objects/validations.md), [カスタムステート](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md)を追加することが含まれます。 オブジェクト定義に関連するこれらの操作やその他の操作を実行するために必要な権限については、 [Objects Application Permissions](../objects-application-permissions.md) を参照してください。
+Liferay Objectでは、コードを記述することなくビジネスニーズを満たすカスタムアプリケーションを[作成](./creating-and-managing-objects/creating-objects.md)するための便利なUIを提供します。 オブジェクトを使用して、システムオブジェクトとカスタムオブジェクトの両方を管理および拡張することもできます。 これには、[フィールド](./creating-and-managing-objects/fields.md)、[リレーションシップ](./creating-and-managing-objects/relationships.md)、[アクション](./creating-and-managing-objects/actions.md)、[レイアウト](./creating-and-managing-objects/layouts.md)、[ビュー](./creating-and-managing-objects/views.md)、[バリデーション](./creating-and-managing-objects/validations.md)、[カスタムステータス](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md)の追加が含まれます。 オブジェクト定義に関連するこれらの操作やその他の操作を実行するために必要な権限については、 [Objects Application Permissions](./objects-application-permissions.md) を参照してください。
 
 ```{note}
 システムオブジェクトはオブジェクトフレームワークと統合されたデフォルトのLiferayアプリケーションであり、カスタムオブジェクトはユーザーが作成し公開する定義です。
@@ -53,11 +53,11 @@ Liferay Objectでは、コードを記述することなくビジネスニーズ
 :link: ./creating-and-managing-objects/extending-system-objects.md
 :::
 
-:::{grid-item-card} Fields
+:::{grid-item-card} フィールド
 :link: ./creating-and-managing-objects/fields.md
 :::
 
-:::{grid-item-card} 関係
+:::{grid-item-card} リレーションシップ
 :link: ./creating-and-managing-objects/relationships.md
 :::
 
@@ -73,7 +73,7 @@ Liferay Objectでは、コードを記述することなくビジネスニーズ
 :link: ./creating-and-managing-objects/views.md
 :::
 
-:::{grid-item-card} 検証
+:::{grid-item-card} バリデーション
 :link: ./creating-and-managing-objects/validations.md
 :::
 
@@ -81,7 +81,7 @@ Liferay Objectでは、コードを記述することなくビジネスニーズ
 :link: ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
 :::
 
-:::{grid-item-card} オブジェクトのアクティブ化と非アクティブ化
+:::{grid-item-card} オブジェクトの有効化と無効化
 :link: ./creating and-managing-objects/activating and-deactivating-objects.md
 :::
 
@@ -89,11 +89,11 @@ Liferay Objectでは、コードを記述することなくビジネスニーズ
 :link: ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
 :::
 
-:::{grid-item-card} 監査オブジェクト定義イベント
+:::{grid-item-card} オブジェクト定義イベントの監査
 :link: ./creating and-managing-objects/auditing-object-definition-events.md
 :::
 
 :::{grid-item-card} オブジェクトの削除
 :link: ./creating-and-managing-objects/deleting-objects.md
-:::
+:::  
 ::::

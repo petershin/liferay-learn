@@ -22,7 +22,7 @@ documents-and-media/documents-and-media-ui-reference.md
 
 ドキュメントとメディアアプリケーションは、Liferayインスタンス内のファイルを保存および管理します。 これには、ドキュメントとメディアに直接アップロードされたファイルだけでなく、添付ファイルをサポートしているアプリケーションにアップロードされたファイルも含まれます。
 
-アップロードされたすべてのファイルは、指定された[ファイルストア](../system-administration/file-storage.md)に保存されます。 デフォルトでは、Documents and Media は [簡易ファイルシステムストア](../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) を使用しますが、別のファイルストア（例： [DBStore](../system-administration/file-storage/other-file-store-types/dbstore.md) , [Google Cloud Store](../system-administration/file-storage/other-file-store-types/google-cloud-storage.md), または [Amazon S3 Store](../system-administration/file-storage/other-file-store-types/amazon-s3-store.md)）を使用するようにインスタンスを構成することができま す。
+アップロードされたすべてのファイルは、指定された[ファイルストア](../system-administration/file-storage.md)に保存されます。 デフォルトでは、Documents and Media は [Simple File System Store](../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)を使用しますが、別のファイルストア（例： [DBStore](../system-administration/file-storage/other-file-store-types/dbstore.md), [Google Cloud Store](../system-administration/file-storage/other-file-store-types/google-cloud-storage.md), または [Amazon S3 Store](../system-administration/file-storage/other-file-store-types/amazon-s3-store.md)）を使用するようにインスタンスを構成することができま す。
 
 ![ドキュメントとメディアを使用して、Liferayインスタンスのファイルを保存、表示、および管理します。](./documents-and-media/images/01.png)
 
@@ -34,7 +34,7 @@ Liferay [Workflow](../process-automation/workflow/using-workflows/activating-wor
 
 ドキュメントやメディアに追加されたファイルは、添付ファイルをサポートするアプリケーション（Webコンテンツ、メッセージボードなど）のほか、ページフラグメントやウィジェット（ [Media Gallery](./documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget)など）でも表示することが可能です。
 
-必要であれば、 [エクスポート](../site-building/sites/exporting-importing-site-pages-and-content.md) Documents と Media assets を Liferay Archive (`LAR`) ファイルとしてエクスポートすることが可能です。 これらのファイルは、バックアップとして使用したり、アセットを別のサイトまたはアセットライブラリにインポートするために使用できます。
+必要であれば、 [](../site-building/sites/exporting-importing-site-pages-and-content.md) Documents と Media assets を Liferay Archive (`LAR`) ファイルとしてエクスポートすることが可能です。 これらのファイルは、バックアップとして使用したり、アセットを別のサイトまたはアセットライブラリにインポートするために使用できます。
 
 ```{tip}
 ドキュメントとメディアはすべてのサイトで利用でき、[アセットライブラリ](./asset-libraries/asset-libraries-overview.md)で有効にすることが可能です。 サイトにアップロードされたファイルはそのサイトにスコープされており、DXPインスタンス内の他のサイトから容易にアクセスすることはできません。 アセットライブラリにアップロードされたファイルはグローバルに利用可能であり、複数のサイトにリンクしてすぐにアクセスできます。

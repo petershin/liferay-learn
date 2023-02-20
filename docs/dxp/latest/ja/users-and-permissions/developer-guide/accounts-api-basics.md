@@ -11,10 +11,10 @@
 
 次に、以下の手順を実行します。
 
-1. [Accounts API Basics](./liferay-t5p9.zip)  をダウンロードし、解凍してください。
+1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
    ```
 
    ```bash
@@ -43,7 +43,7 @@
 
     ```
 
-1. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 新しいアカウントが追加されたことを確認してください。
+1. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 新しいアカウントが追加されたことを確認してください。
 
    ![新しいアカウントが追加されたことを確認します。](./accounts-api-basics/images/01.png)
 
@@ -78,7 +78,7 @@
 | `-u "test@liferay.com:learn"`                                 | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md)でユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、【OAuth2を使ったユーザー認証】(../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -97,7 +97,7 @@
 
 | 行（省略形）                                                                   | 説明                                                     |
 |:------------------------------------------------------------------------ |:------------------------------------------------------ |
-| `AccountResource.Builder builder = ...`                                  | `AccountResourc`サービスインスタンスを生成するための`Builder`を取得します。    |
+| `AccountResource.Builder builder = ...`                                  | ` AccountResourc`サービスインスタンスを生成するための`Builder`を取得します。    |
 | `AccountResource accountResource = builder.authentication(...).build();` | ベーシック認証を指定し、 `AccountResource` サービスインスタンスを生成します。       |
 | `Account account = accountResource.postAccount(...);`                    | `accountResource.postAccount` メソッドを呼び出し、データをpostに渡します。 |
 
@@ -110,7 +110,7 @@
 他のJavaクラスの例はこれと似ていますが、異なる `AccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
+サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の `Account` RESTサービスを呼び出す例です。
@@ -175,13 +175,13 @@ java -classpath .:* Accounts_GET_FromInstance
 
 ### Account_GET_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DaccountId=1234 Account_GET_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Account_GET_ById.java
    :dedent: 1
@@ -211,13 +211,13 @@ java -classpath .:* -DaccountId=1234 Account_GET_ById
 
 ### Account_PATCH_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DaccountId=1234 Account_PATCH_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Account_PATCH_ById.java
    :dedent: 1
@@ -245,13 +245,13 @@ java -classpath .:* -DaccountId=1234 Account_PATCH_ById
 
 ### Account_PUT_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DaccountId=1234 Account_PUT_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Account_PUT_ById.java
    :dedent: 1

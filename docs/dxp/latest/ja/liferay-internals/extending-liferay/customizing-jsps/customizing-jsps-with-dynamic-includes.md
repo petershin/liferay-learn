@@ -1,14 +1,15 @@
 # Dynamic Includesを用いたJSPのカスタマイズ
 
-[`liferay-util:dynamic-include`タグ](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html) は、コンテンツを挿入できるプレースホルダーです（JavaScriptコード、HTMLなど）。 サンプルプロジェクトでは、dynamic includeでコンテンツを挿入する方法を示しています。
+[`liferay-util:dynamic-include`タグ](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html)は、コンテンツを挿入できるプレースホルダーです（JavaScriptコード、HTMLなど）。 サンプルプロジェクトでは、dynamic includeでコンテンツを挿入する方法を示しています。
 
 ## サンプルプロジェクトをデプロイする
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順に従います:
 
-1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip) .
+1. [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
@@ -41,7 +42,7 @@
 
    ![N3Q9 Bakerポートレットをサイトページに追加します。](./customizing-jsps-with-dynamic-includes/images/01.png)
 
-   最初の2行はN3Q9 Bakerポートレットからですが、3行目はN3Q9 Ableモジュールのdynamic includeから挿入されることに注意してください。
+   最初の2行はN3Q9 Baker Portletから、3行目はN3Q9 Ableモジュールのダイナミックインクルードから注入されていることに注意してください。
 
 ## Dynamic Includeを実装する
 
@@ -70,7 +71,7 @@
 
 ## Dynamic Includeを挿入する
 
-`liferay-util:dynamic-include`タグをdynamic includeを挿入したい場所に追加します。 サンプルでは、N3Q9 Bakerポートレットの`view.jsp`のボトムにタグを追加しています。
+`liferay-util:dynamic-include`タグをdynamic includeを挿入したい場所に追加します。 サンプルでは、N3Q9 Baker Portletの `view.jsp`の一番下にタグを追加しています。
 
 ```{literalinclude} ./customizing-jsps-with-dynamic-includes/resources/liferay-n3q9.zip/n3q9-baker-web/src/main/resources/META-INF/resources/view.jsp
    :language: jsp

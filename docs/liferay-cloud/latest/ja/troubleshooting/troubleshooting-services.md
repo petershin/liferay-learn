@@ -4,9 +4,9 @@
 
 ## サービスが継続的に再起動する
 
-サービスが何度も再起動するのは、そのサービスの [活性または準備プローブ](./self-healing.md) に問題があることを示している可能性があります。 この現象が発生すると、ある環境の概要の ［**アクティビティ**］ パネルの ［**一般**］ タブに表示される場合があります。 <!-- Add screenshot if a way to easily reproduce this is available.-->
+サービスが何度も再起動するのは、そのサービスの [活性または準備プローブ](./self-healing.md) に問題があることを示している可能性があります。 この現象が発生すると、ある環境の概要の*［アクティビティ］* パネルの *［一般］* タブに表示される場合があります。 <!-- Add screenshot if a way to easily reproduce this is available.-->
 
-定期的に起こる **活性プローブの失敗** によって継続的に再起動されているサービスは、活性プローブが再起動をトリガーする前に、起動を完了していないことがあります。 **準備プローグの失敗** が起きた場合は、準備プローブが適切なレスポンスの取得に何度も連続して失敗したことを意味します（サービスが完全に開始された後の場合もあります）。
+定期的に起こる *活性プローブの失敗*によって継続的に再起動されているサービスは、活性プローブが再起動をトリガーする前に、起動を完了していないことがあります。 *準備プローグの失敗*が起きた場合は、準備プローブが適切なレスポンスの取得に何度も連続して失敗したことを意味します（サービスが完全に開始された後の場合もあります）。
 
 継続的に再起動するサービスを診断するには、以下の手順をお勧めします。
 
@@ -22,7 +22,7 @@
 たとえば、活性プローブの失敗メッセージは次のようなものです：
 
 ```
-Liveness probe failed: HTTP probe failed with statuscode: 500
+Livenessプローブに失敗しました。HTTPプローブに失敗しました。500
 ```
 
 ### プローブ構成の確認
@@ -36,14 +36,14 @@ Liveness probe failed: HTTP probe failed with statuscode: 500
 該当するプローブをクリックすると、その構成が表示されます：
 
 ```
-timeoutSeconds: 10
-httpGet: path: /c/portal/layout
-         port: 8080
+timeoutSeconds:10
+httpGet: path:/c/portal/layout
+         port:8080
 
-initialDelaySeconds: 120
-periodSeconds: 15
-failureThreshold: 3
-successThreshold: 3
+initialDelaySeconds:120
+periodSeconds:15
+failureThreshold:3
+successThreshold:3
 ```
 
 プローブの構成値（`パス` または `ポート`の 値）がご使用の環境にあっていない場合、プロジェクトのリポジトリのサービスの`LCP.json` ファイルで正しい値に調整してください。 このファイルをサービスに対応するディレクトリ（例： `liferay/`）で見つけ、 [テスト環境に変更をデプロイします](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)。
@@ -85,17 +85,16 @@ successThreshold: 3
 スタートアップの失敗を示すエラーメッセージが出ていないか、ログを確認してください。 起動時のログにエラーや問題が確認できれば、それが原因で1つまたは複数のプローブが失敗している可能性があるため、サービスの再起動が必要になります。
 
 ```{tip}
-Liferayサービスでは、再起動後の最初のログに下記のメッセージが表示されることを確認してください。
-`[LIFERAY] To SSH into this container, run: "docker exec -it liferay-<node-id> /bin/bash".`
+Liferay サービスでは、再起動後の最初のログにこのメッセージが表示されることを確認してください。`[LIFERAY] このコンテナに SSH で入るには、次のように実行します。"docker exec -it liferay-<node-id> /bin/bash".` を実行します。
 ```
 
-Liferayのスタートアップエラーの処理にサポートが必要な場合は、 [サポートに連絡してください](https://help.liferay.com/hc/en-us) 。
+Liferayのスタートアップエラーの処理にサポートが必要な場合は、[サポートに連絡してください](https://help.liferay.com/hc/en-us) 。
 
 ### プローブ構成の調整
 
 プローブの失敗の原因となるサービスの起動ログに明らかなエラーや問題がないにもかかわらず、サービスが再起動してしまう場合は、プローブの設定を調整する必要があるかもしれません。
 
-サービスの起動に時間がかかると、活性プローブが早期にタイムアウトし、サービスの再起動が必要になることがあります。 これは、プローブが故障して再起動するまでに、通常の起動ログがすべて表示されていない場合に起こります。 これは、サービスがすでに完全に開始された後に、 **準備** プローブが失敗した場合のケースでは通常ありません。
+サービスの起動に時間がかかると、活性プローブが早期にタイムアウトし、サービスの再起動が必要になることがあります。 これは、プローブが故障して再起動するまでに、通常の起動ログがすべて表示されていない場合に起こります。 これは、サービスがすでに完全に開始された後に、 *準備* プローブが失敗した場合のケースでは通常ありません。
 
 このような現象が発生する場合は、以下のいずれかをお試しください。
 
@@ -105,8 +104,18 @@ Liferayのスタートアップエラーの処理にサポートが必要な場�
 
 プローブの設定（サービスの `LCP.json` ファイル）でこれらの値を1つまたは複数増やし、速度低下によりサービスの再起動が発生している場合は、サービスに応じて適切に変更をデプロイします。 ただし、これらの値を恣意的に高く設定しないようにしてください。今後、サービスを再起動するたびに、変更内容がプローブに適用されるからです。
 
-詳細は、 [Using and Configuring Probes](./self-healing.md#using-and-configuring-probes) を参照してください。
+詳細は、[Using and Configuring Probes](./self-healing.md#using-and-configuring-probes)を参照してください。
 
 ### クラウドサポートへのお問い合わせ
 
 liveness または readiness probe の失敗がサービス再起動を引き起こしていない場合、またはこれらの方策で解決できない場合は、 [Liferay Cloud Support](https://help.liferay.com/hc/en-us) までお問い合わせください。
+
+## CDNを利用したサイトへのアクセスでJavaScriptエラーが発生する件
+
+サードパーティのCDNの中には、クエリ文字列をソートできるものがあります（ [Cloudflare](https://www.cloudflare.com/)など）。 カスタムドメイン名でサイトにアクセスした場合、ソートが原因で問題（jQueryの読み込みに失敗する等）が発生することがあります。 その結果、次のようなJavaScriptのコンソールエラーが発生することがあります。
+
+![CDNがクエリ文字列をソートする場合、jQueryの読み込みに失敗することがあります。](./troubleshooting-services/images/02.png)
+
+このような場合、サイトが正しく読み込まれないことがあります。 これらのエラーを修正するには、CDNのクエリ文字列のソートを無効にします。 正確な手順については、CDNのドキュメントを参照してください（例： [Cloudflare's Query String Sort documentation](https://support.cloudflare.com/hc/en-us/articles/206776797-Understanding-Query-String-Sort#4bJ4dl4TLlJR8NECznXDnI)）。
+
+ソートを無効にしてもエラーが発生する場合は、 [Liferay Cloud Support](https://help.liferay.com/hc/en-us) までお問い合わせください。

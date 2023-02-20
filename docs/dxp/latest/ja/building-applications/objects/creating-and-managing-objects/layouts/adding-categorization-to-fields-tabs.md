@@ -1,10 +1,10 @@
-# フィールドタブにカテゴリを追加する
+# フィールドタブへのカテゴリー設定の追加
 
-{bdg-secondary}`利用可能な Liferay 7.4 U31+ および GA31+`
+{bdg-secondary}`Liferay 7.4 U31以降およびGA31以降で利用可能`
 
-[フィールドタブ](./designing-object-layouts.md#fields-tabs) にカテゴライズブロックを追加することで、エンドユーザーがオブジェクトエントリにタグやカテゴリーを適用できるようになります。 次の手順を実行します：
+[フィールドタブ](./designing-object-layouts.md#fields-tabs)にカテゴリー設定ブロックを追加することで、エンドユーザーがオブジェクトエントリーにタグやカテゴリーを適用できるようになります。 次の手順を実行します：
 
-1. **グローバルメニュー**（![Global Menu](../../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**オブジェクト**］ をクリックします。
+1. *グローバルメニュー*（![Global Menu](../../../../images/icon-applications-menu.png)）を開き、*［コントロールパネル］*タブに移動して、*［オブジェクト］*をクリックします。
 
 1. 目的のオブジェクト定義の編集を開始します。
 
@@ -12,36 +12,37 @@
    システムオブジェクトは、カスタムレイアウトに対応していません。 詳しくは、[システムオブジェクトの拡張](../extending-system-objects.md)を参照してください。
    ```
 
-1. **Layouts** タブを開き、目的のレイアウトを選択します。
+1. 詳細]タブで、カテゴリ分けを有効にし、 *[保存]*をクリックします。
 
-   ![Go to the Layouts tab and select the desired layout.](./adding-categorization-to-fields-tabs/images/01.png)
+   ![カテゴリー分けを可能にする。](./adding-categorization-to-fields-tabs/images/01.png)
 
-1. **レイアウト** タブを開き、目的の **アクション** ボタン (![Actions Button](../../../../images/icon-actions.png)) をクリックし、 [フィールドタブ](./designing-object-layouts.md#fields-tabs) 、 **カテゴリの追加** を選択します。
+1. *Layouts* タブをクリックし、目的のレイアウトを選択します。
 
-   ![Click the Actions button and select Add Categorization.](./adding-categorization-to-fields-tabs/images/02.png)
+1. *レイアウト* タブをクリックし、目的の *アクション* (![Actions Button](../../../../images/icon-actions.png)) をクリックし、 [フィールドタブ](./designing-object-layouts.md#fields-tabs)、 *カテゴリー化の追加*を選択します。
 
-   これにより、カテゴリ分けツールにアクセスするためのタブに新しいブロックが追加されます。
+   ![アクションボタンをクリックし、［カテゴリー設定を追加］を選択します。](./adding-categorization-to-fields-tabs/images/02.png)
+
+   これにより、カテゴリー設定ツールにアクセスするためのタブに新しいブロックが追加されます。
 
    ```{important}
-   カテゴリ分けブロックは、1レイアウトにつき1つのタブにしか追加できません。
+   カテゴリー設定ブロックは、レイアウトごとに1つのタブにのみ追加できます。
    ```
 
-1. ブロックが **折り畳み式かどうかを判断する** .
+1. ブロックが*折りたたみ可能*かどうかを判断します。
 
-   ![ブロックが折りたたみ可能かどうかを判断する。](./adding-categorization-to-fields-tabs/images/03.png)
+   ![ブロックが折りたたみ可能かどうかを判断します。](./adding-categorization-to-fields-tabs/images/03.png)
 
-1. ［**Save**］ をクリックします。
+1. *［Save］* をクリックします。
 
-オブジェクトのエントリーを作成または編集する際に、ユーザーはタグやカテゴリーにアクセスし、適用することができるようになりました。
+オブジェクトのエントリーを作成または編集する際に、ユーザーはタグやカテゴリーにアクセスし、適用できるようになりました。
 
-![オブジェクトのエントリにアクセスし、タグやカテゴリを適用します。](./adding-categorization-to-fields-tabs/images/04.png)
+![オブジェクトのエントリーにアクセスし、タグやカテゴリーを適用します。](./adding-categorization-to-fields-tabs/images/04.png)
 
 ```{note}
-可視性と権限は、カテゴリ分けブロックの表示方法に影響を与えます。
+可視性と権限はカテゴリ設定ブロックの表示に影響します。
 ```
 
 ## 追加情報
 
 * [オブジェクトの作成](../creating-objects.md)
 * [オブジェクトレイアウトの設計](./designing-object-layouts.md)
-* [オブジェクトビューの設計](../views/designing-object-views.md)

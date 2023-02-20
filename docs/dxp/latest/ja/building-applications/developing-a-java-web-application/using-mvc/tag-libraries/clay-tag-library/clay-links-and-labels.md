@@ -10,15 +10,15 @@ Liferay Clay taglibは、アプリにいくつかの異なるラベルを提供�
 
 Liferay Clayのラベルには、情報を表す紺色、ステータスを表す薄い灰色、保留中を表すオレンジ、拒否を表す赤、承認を表す緑の5つの異なる色があります。
 
-情報ラベルは紺色で、ステータスラベルよりも少し目立つため、一般的な情報を伝えるのに最適です。 情報ラベルを使用するには、`style`属性を`info`に設定します。
+情報ラベルは紺色で、ステータスラベルよりも少し目立つため、一般的な情報を伝えるのに最適です。 情報ラベルを使用するには、 `displayType` 属性を `info`に設定する。
 
 ```jsp
-<clay:label label="Label text" style="info" />
+<clay:label displayType="info" label="Label text" />
 ```
 
 ![情報ラベルは一般的な情報を伝えます。](./clay-links-and-labels/images/01.png)
 
-ステータスラベルは薄い灰色で、中間色であるため、基本的な情報を伝えるのに最適です。 ステータスラベルはデフォルトのラベルであるため、`style`属性は必要ありません。
+ステータスラベルは薄い灰色で、中間色であるため、基本的な情報を伝えるのに最適です。 ステータス・ラベルはデフォルト・ラベルであるため、 `displayType` 属性は必要ない。
 
 ```jsp
 <clay:label label="Status" />
@@ -26,26 +26,26 @@ Liferay Clayのラベルには、情報を表す紺色、ステータスを表�
 
 ![ステータスラベルは、控え目な見た目なので、基本的な情報を表示するのに最適です。](./clay-links-and-labels/images/02.png)
 
-注意ラベルはオレンジ色で、その色合いから、警告メッセージを伝えるのに最適です。 注意ラベルを使用するには、`style`属性を`warning`に設定します。
+注意ラベルはオレンジ色で、その色合いから、警告メッセージを伝えるのに最適です。 警告ラベルを使用するには、 `displayType` 属性を `warning`に設定します。
 
 ```jsp
-<clay:label label="Pending" style="warning" />
+<clay:label displayType="warning" label="Pending" />
 ```
 
 ![注意ラベルはアプリの破損にはつながらない問題をユーザーに通知します。](./clay-links-and-labels/images/03.png)
 
-危険ラベルは赤色で、何かが間違っているか失敗したことを示します。 危険ラベルを使用するには、`style`属性を`danger`に設定します。
+危険ラベルは赤色で、何かが間違っているか失敗したことを示します。 危険ラベルを使用するには、 `displayType` 属性を `danger`に設定します。
 
 ```jsp
-<clay:label label="Rejected" style="danger" />
+<clay:label displayType="danger" label="Rejected" />
 ```
 
 ![危険ラベルは、対処しなければならない緊急事態を伝えます。](./clay-links-and-labels/images/04.png)
 
-成功ラベルは緑色で、何かが正常に完了したことを示します。 成功ラベルを使用するには、`style`属性を`success`に設定します。
+成功ラベルは緑色で、何かが正常に完了したことを示します。 成功ラベルを使用するには、 `displayType` 属性を `success`に設定します。
 
 ```jsp
-<clay:label label="Approved" style="success" />
+<clay:label displayType="success" label="Approved" />
 ```
 
 ![成功ラベルは、成功したアクションを示します。](./clay-links-and-labels/images/05.png)
@@ -53,7 +53,7 @@ Liferay Clayのラベルには、情報を表す紺色、ステータスを表�
 ラベルを大きくすることもできます。 大きなラベルを表示するには、`size`属性を`lg`に設定します。
 
 ```jsp
-<clay:label label="Approved" size="lg" style="success" />
+<clay:label displayType="success" label="Approved" size="lg" />
 ```
 
 ### 削除可能なラベル
@@ -90,6 +90,6 @@ Liferay Clayのラベルには、情報を表す紺色、ステータスを表�
 
 ## 関連トピック
 
-* [Clayバッジ](./clay-badges.md)
-* [Clayカード](./clay-cards.md)
-* [Clayフォーム要素](./clay-form-elements.md)
+* [Clay Badges](./clay-badges.md)
+* [Clay Cards](./clay-cards.md)
+* [Clay Form Elements](./clay-form-elements.md)

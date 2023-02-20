@@ -1,6 +1,6 @@
 # Minium Acceleratorを使用してB2Bストアをすぐに開始する
 
-MiniumはLiferay Commerceの[アクセラレータ](./accelerators.md)であり、メーカーのニーズを満たすように設計された企業間取引（B2B）ストアを迅速かつ簡単にセットアップし、最新のB2Bデジタルcommerceエクスペリエンスを提示します。 機能的でエレガントな要素を持つことで、可能な限りスムーズなエクスペリエンスを実現する機能を使用して設計されています。
+MiniumはLiferay Commerceの[アクセラレータ](./accelerators.md)であり、メーカーのニーズを満たすように設計された企業間取引（B2B）ストアを迅速かつ簡単にセットアップし、最新のB2Bデジタルコマースエクスペリエンスを提示します。 機能的でエレガントな要素を持つことで、可能な限りスムーズなエクスペリエンスを実現する機能を使用して設計されています。
 
 アクセラレータは、サイトページとサイトのデザイン、サンプルデータ、およびサイト構成の基本階層を1回の操作で提供することによって、これを実現します。 また、Miniumは、Liferay CommerceのB2Bアカウント管理機能を強調し、[アカウントロール](../users-and-accounts/account-management/account-roles.md)、[アカウントグループ](../users-and-accounts/account-management/creating-a-new-account-group.md)、および[注文ワークフロー](../order-management/order-workflows/introduction-to-order-workflows.md)を使用して、合理化されたアカウント管理とセルフサービスを可能にします。
 
@@ -10,7 +10,7 @@ MiniumはLiferay Commerceの[アクセラレータ](./accelerators.md)であり�
 
 ### ページ
 
-Miniumは、サイトに複数のページとウィジェットを作成し、購入者に完全なユーザーエクスペリエンスを提供します。 作成されたページの完全なリストを表示するには、 ［**サイトメニュー］ → ［ページ作成設定］ → ［ページ**］ に移動します。
+Miniumは、サイトに複数のページとウィジェットを作成し、購入者に完全なユーザーエクスペリエンスを提供します。 作成されたページの完全なリストを表示するには、*［サイトメニュー］ → ［ページ作成設定］ → ［ページ］*に移動します。
 
 ![Miniumページ](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/01.png)
 
@@ -34,17 +34,17 @@ Miniumのカタログには、事前定義されたいくつかのカテゴリ�
 
 ![事前設定カテゴリ](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/04.png)
 
-> カテゴリは **グローバル** スコープレベルで定義されていることに注意してください。 詳細は、[商品のカテゴリー](../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)を参照してください。
+> カテゴリは_グローバル_スコープレベルで定義されていることに注意してください。 詳細は、[商品のカテゴリー](../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)を参照してください。
 
 サンプル商品には、あらかじめ設定された[オプション](../product-management/creating-and-managing-products/products/using-product-options.md) 、[仕様](../product-management/creating-and-managing-products/products/specifications.md) 、および画像も付属しています。
 
 ![商品仕様](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/05.png)
 
-**サンプルデータはデモンストレーション用に追加されており、ストア管理者がストアサイトのベースとしてMiniumを使用する場合は、安全に削除できます。**
+_サンプルデータはデモンストレーション用に追加されており、ストア管理者がストアサイトのベースとしてMiniumを使用する場合は、安全に削除できます。_
 
 ## 検索
 
-Miniumを使用すると、購入者はカタログをすばやく簡単に検索できます。 オムニ検索バーに加えて、Miniumには検索バーを開くための特別なキーボードのショートカットがあります。 **カタログ** のメインページでスラッシュ（/）を押すと、検索バーが開き、フォーカスが移動します。
+Miniumを使用すると、購入者はカタログをすばやく簡単に検索できます。 オムニ検索バーに加えて、Miniumには検索バーを開くための特別なキーボードのショートカットがあります。 _カタログ_のメインページでスラッシュ（/）を押すと、検索バーが開き、フォーカスが移動します。
 
 ![スラッシュを使用した検索](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/06.png)
 
@@ -54,7 +54,7 @@ Miniumは、空白のサイトにはすぐに設定されない、他の多く�
 
 | 機能                                                                                                                    | 詳細                       |
 |:--------------------------------------------------------------------------------------------------------------------- |:------------------------ |
-| [倉庫](../inventory-management/setting-up-commerce-warehouses.md)                                                       | イタリア、米国北東部、米国南西部         |
+| [倉庫](../inventory-management/setting-up-warehouses.md)                                                                | イタリア、米国北東部、米国南西部         |
 | [サイトの種類](../starting-a-store/sites-and-site-types.md)                                                                 | B2B                      |
 | [配送方法オプション](../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)                  | 標準配送、速達配送                |
 | チャンネル                                                                                                                 | Miniumポータル               |

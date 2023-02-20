@@ -10,8 +10,8 @@ Clayアラートには、埋め込みとストライプの2つのタイプがあ
 
 ```jsp
 <clay:alert
+    displayType="danger"
     message="This is an error message."
-    style="danger"
     title="Error"
 />
 ```
@@ -22,8 +22,8 @@ Clayアラートには、埋め込みとストライプの2つのタイプがあ
 
 ```jsp
 <clay:alert
+    displayType="success"
     message="This is a success message."
-    style="success"
     title="Success"
 />
 ```
@@ -34,6 +34,7 @@ Clayアラートには、埋め込みとストライプの2つのタイプがあ
 
 ```jsp
 <clay:alert
+    displayType="info"
     message="This is an info message."
     title="Info"
 />
@@ -45,8 +46,8 @@ Clayアラートには、埋め込みとストライプの2つのタイプがあ
 
 ```jsp
 <clay:alert
+    displayType="warning"
     message="This is a warning message."
-    style="warning"
     title="Warning"
 />
 ```
@@ -55,14 +56,14 @@ Clayアラートには、埋め込みとストライプの2つのタイプがあ
 
 ## ストライプアラート
 
-ストライプアラートは、最後のナビゲーション要素（ヘッダまたはナビゲーションバーのいずれか）の下に配置され、通常は ［**保存**］ アクションで表示され、サーバーから受信したアクションのステータスを通知します。 埋め込みアラートとは異なり、ストライプアラートにはクローズアクションが必要です。 ストライプアラートは常にコンテナの全幅であり、すべてのコンテンツをその下にプッシュします。 次のストライプアラートは、Clay taglibを使用して作成できます。
+ストライプアラートは、最後のナビゲーション要素（ヘッダまたはナビゲーションバーのいずれか）の下に配置され、通常は*［保存］*アクションで表示され、サーバーから受信したアクションのステータスを通知します。 埋め込みアラートとは異なり、ストライプアラートにはクローズアクションが必要です。 ストライプアラートは常にコンテナの全幅であり、すべてのコンテンツをその下にプッシュします。 次のストライプアラートは、Clay taglibを使用して作成できます。
 
 危険アラート（ストライプ）：
 
 ```jsp
 <clay:stripe
+    displayType="danger"
     message="This is an error message."
-    style="danger"
     title="Error"
 />
 ```
@@ -73,8 +74,8 @@ Clayアラートには、埋め込みとストライプの2つのタイプがあ
 
 ```jsp
 <clay:stripe
+    displayType="success"
     message="This is a success message."
-    style="success"
     title="Success"
 />
 ```
@@ -85,6 +86,7 @@ Clayアラートには、埋め込みとストライプの2つのタイプがあ
 
 ```jsp
 <clay:stripe
+    displayType="info"
     message="This is an info message."
     title="Info"
 />
@@ -96,8 +98,8 @@ Clayアラートには、埋め込みとストライプの2つのタイプがあ
 
 ```jsp
 <clay:stripe
+    displayType="warning"
     message="This is a warning message."
-    style="warning"
     title="Warning"
 />
 ```
@@ -109,5 +111,5 @@ Clayアラートには、埋め込みとストライプの2つのタイプがあ
 ## 関連トピック
 
 * [Clayボタン](./clay-buttons.md)
-* [Clayフォーム要素](./clay-form-elements.md)
-* [Clayラベルとリンク](./clay-links-and-labels.md)
+* [Clay Form Elements](./clay-form-elements.md)
+* [Clay Labels and Links](./clay-links-and-labels.md)

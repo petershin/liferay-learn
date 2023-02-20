@@ -34,7 +34,7 @@ Liferay DXPは、パーソナライズされたエクスペリエンスを理解
 
 Liferay DXPインスタンスをLiferay Analytics Cloudと統合して、セグメントを強化します。 Analytics Cloudは、DXPをSalesforce（tm）およびその他のデータソースと統合して、ユーザーベースをさらに理解する方法を提供します。
 
-Analytics Cloudとの統合により、機械学習を活用した詳細なデータ分析機能が提供され、DXPサイトのすべてのページに対するユーザーの行動とエンゲージメントを理解するのに役立ちます。 Analytics Cloudを使用すると、ユーザーの行動や、標準コンテンツと対象コンテンツの両方との相互作用を確認できます。 詳細は、 [ユーザーセグメントの分析を取得する](./personalizing-site-experience/segmentation/getting-analytics-for-user-segments.md) を参照してください。
+Analytics Cloudとの統合により、機械学習を活用した詳細なデータ分析機能が提供され、DXPサイトのすべてのページに対するユーザーの行動とエンゲージメントを理解するのに役立ちます。 Analytics Cloudを使用すると、ユーザーの行動や、標準コンテンツと対象コンテンツの両方との相互作用を確認できます。 詳細は、[Getting Analytics for User Segments](./personalizing-site-experience/segmentation/getting-analytics-for-user-segments.md)を参照してください。
 
 ![Analytics Cloudを使用したサイトメトリクス。](./personalizing-site-experience/images/05.png)
 
@@ -44,9 +44,9 @@ Analytics Cloudとの統合により、機械学習を活用した詳細なデ�
 
 ### コンテントページ
 
-コンテントページのパーソナライゼーションを行うと、ページの閲覧者に基づいてページレイアウトとコンテンツが動的に変化します。 ページを表示しているユーザーのユーザーセグメント基準に基づいて、さまざまなテキスト、画像、ウィジェット、さらにはさまざまなレイアウトを提供する[コンテントページ](./creating-pages/using-content-pages.md)の*エクスペリエンス*を作成できます。 詳細は、 [コンテンツページのパーソナライゼーション](./personalizing-site-experience/experience-personalization/content-page-personalization.md) を参照してください。
+コンテントページのパーソナライゼーションを行うと、ページの閲覧者に基づいてページレイアウトとコンテンツが動的に変化します。 ページを表示しているユーザーのユーザーセグメント基準に基づいて、さまざまなテキスト、画像、ウィジェット、さらにはさまざまなレイアウトを提供する[コンテントページ](./creating-pages/using-content-pages.md)の*エクスペリエンス*を作成できます。 詳細は、[Content Page Personalization](./personalizing-site-experience/experience-personalization/content-page-personalization.md)を参照してください。
 
-![ユーザーのさまざまなセグメントに固有のエクスペリエンスを作成できます。](./personalizing-site-experience/images/02.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![ユーザーのさまざまなセグメントに固有のエクスペリエンスを作成できます。](./personalizing-site-experience/images/02.png)
 
 ### コレクション
 
@@ -81,7 +81,7 @@ Analytics Cloudとの統合により、機械学習を活用した詳細なデ�
 :link: ./personalizing-site-experience/migration-from-audience-targeting.md
 :::
 
-:::{grid-item-card} 自動化されたライブチャットシステムの実現
+:::{grid-item-card} 自動ライブチャットシステムの実現
 :link: ./personalizing-site-experience/enabling-automated-live-chat-systems.md
-:::
+:::  
 ::::

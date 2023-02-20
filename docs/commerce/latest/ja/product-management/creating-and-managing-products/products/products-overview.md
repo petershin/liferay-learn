@@ -22,7 +22,7 @@ Liferay Commerceでは、[ Simple](../product-types/creating-a-simple-product.md
 
 ![画像や添付ファイルを商品に直接追加します。](./products-overview/images/03.png)
 
-[images](./product-images.md) と[添付ファイル](./product-attachments.md) を商品に直接アップロードして、表示画像や商品のリソースとして利用できます。 サブスクリプションユーザーは、商品を部品表（BOM）ダイアグラムにマッピングして、顧客に商品のコンテキストを提供することもできます。 詳細は、 [BOMの管理](./managing-boms.md) を参照してください。
+[images](./product-images.md) と[添付ファイル](./product-attachments.md) を商品に直接アップロードして、表示画像や商品のリソースとして利用できます。 サブスクリプションユーザーは、商品を部品表（BOM）ダイアグラムにマッピングして、顧客に商品のコンテキストを提供することもできます。 詳細は、[Managing BOMs](./managing-boms.md)を参照してください。
 
 ![BOMダイアグラムを作成します。](./products-overview/images/04.png)
 
@@ -32,10 +32,10 @@ Simple、グループ化済み、および仮想商品に対して、 [購読リ
 
 ## 在庫ルール
 
-カスタム商品の[在庫ルール](../../../inventory-management/introduction-to-managing-inventory.md)を設定して、顧客が購入できる最大および最小数量を設定したり、チャネルがバックオーダーを受けるかどうかを決定したり、在庫が設定したしきい値を下回った場合の商品の販売方法を規定したりすることもできます。
+また、カスタム製品 [在庫ルール](../../../inventory-management.md) を設定して、顧客が購入できる最大量と最小量を設定したり、チャネルがバックオーダーを受け付けるかどうかを決定したり、在庫が設定した閾値を下回った場合に製品を販売する方法を管理することができます。
 
 ## 追加情報
 
-* [シンプル商品を作成する](../product-types/creating-a-simple-product.md)
+* [シンプル商品の作成](../product-types/creating-a-simple-product.md)
 * [グループ商品の作成](../product-types/creating-a-grouped-product.md)
 * [仮想商品の作成](../product-types/creating-a-virtual-product.md)

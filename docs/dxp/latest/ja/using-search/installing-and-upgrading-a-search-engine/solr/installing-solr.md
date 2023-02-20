@@ -1,24 +1,18 @@
 # Solrのインストール
 
-Solrは、Apache Luceneをベースに開発されたエンタープライズサーチプラットフォームとして人気があります。 信頼性、スケーラビリティ、フォールトトレラントに優れています。 詳しくは [こちら](http://lucene.apache.org/solr/) です。
+{bdg-secondary}`7.2-7.3 (CE、DXP); 7.4 DXP U60+`
 
-ここでは、Liferay 7.1～7.3用のSolr 8のインストールについて説明します。 これらはLiferay 7.1-7.2用のSolr 7をインストールする際にも同様に適用されますが、バージョン名の調整が必要な場合があります。
+Solrは、Apache Luceneをベースに開発されたエンタープライズサーチプラットフォームとして人気があります。 信頼性、スケーラビリティ、フォールトトレラントに優れています。 詳しくは [こちら](http://lucene.apache.org/solr/)です。
+
+この手順では、 [互換性のある Liferay バージョン用の Solr 8 のインストールについて説明します](https://help.liferay.com/hc/en-us/articles/360016511651-Search-Engine-Compatibility-Matrix). Solr 7をインストールする場合は、必要に応じてバージョン名を調整してください。
 
 ```{important}
-- LiferayのSolrサポートは非推奨で、Solr 8が最後にサポートされたSolrバージョンです。 [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) への移行を検討してください。
-
-- Solrをインストールする際には、注意すべき重要な制限事項があります。 インストールを進める前に、[Solrの制限事項](./solr-limitations.md)をお読みください。
+Solrを使用する場合、重要な制限があります。 インストールする前に、[Solr Limitations](./solr-limitations.md)をお読みください。
 ```
-
-これらの用語を覚えておいてください。
-
-**Solr Home** : Solrのメイン構成ディレクトリである `solr-[version]/server/solr/`を示します。 ここでは、Liferayコアの設定を行います。
-
-**Liferay Home** : Liferayインストールのルートフォルダ。 `osgi`, `deploy`, `data`, and `license` フォルダなどが含まれています。
 
 ## 互換性
 
-パッチレベルごとの互換性のあるSolrとLiferayのバージョンに関する詳細な情報については、 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
+パッチレベルごとの互換性のあるSolrとLiferayのバージョンに関する詳細な情報については、 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360016511651) を参照してください。
 
 ## Elasticsearchのみの機能を無効にする
 
@@ -27,116 +21,187 @@ Liferay Connector to Solrをインストールする前に、ブラックリス�
 - DXPの機能のうち、Elasticsearchでのみ動作するモジュール
 - Liferay Connector to Elasticsearchモジュールの組み合わせ
 
-```{tip}
-OSGiランタイムにデプロイされたモジュールを検索し、シンボリックネームでリストアップするには、Gogoシェルのコマンド `lb [substring-to-search] -s`を使用します。 シンボリックネームは、`blacklistBundleSymbolicNames`プロパティに入力する値です。
-
-以下のコマンドは、ブラックリストに登録しなければならないモジュールのリストを返します。
-
-  `lb -s | grep 'search' | grep 'elasticsearch|tuning'`
-```
-
 ### Elasticsearchのみの機能のブラックリスト化
 
-Liferay DXPをご利用の方は、ブラックリスト機能を使ってElasticsearchのみの機能を無効にしてください。 CEユーザーもこの方法を使うことができます。
+Elasticsearchのみの機能をブラックリスト化する場合。
 
-1. 以下の設定ファイルを作成します
+1. Liferay DXP 7.4 では、ポータルのプロパティまたは Docker 環境変数を使用して、いくつかの Elasticsearch 依存モジュールを無効にします。
+
+   このプロパティを `portal-ext.properties に追加する`:
+
+   ```properties
+   enterprise.product.enterprise.search.enabled=false
+   ```
+
+   このDocker環境変数を設定します。
+
+   ```properties
+   LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_ENTEPRISE_PERIOD_SEARCH_PERIOD_ENABLED=false
+   ```
+
+   これにより、Liferay Enterprise Searchの機能はすべて無効になります。 詳しくは、 [Liferay Enterprise Searchの有効化](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) をご覧ください。
+
+1. ブラックリストの作成 [設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). 名前はLiferayのバージョンに依存します。
+
+   Liferay 7.4 の場合、以下を作成します。
+
+   ```bash
+   com.liferay.portal.bundle.blacklist.internal.configuration.BundleBlacklistConfiguration.config
+   ```
+
+   Liferay 7.2 と 7.3 の場合、以下を作成します。
 
    ```bash
    com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config
    ```
 
-1. 以下のコンテンツを指定します
+1. Liferayのバージョンに応じた設定を入力します。
+
+   **Liferay DXP 7.4:**
 
    ```properties
    blacklistBundleSymbolicNames=[\
-        "com.liferay.portal.search.elasticsearch6.api",\
-        "com.liferay.portal.search.elasticsearch6.impl",\
-        "com.liferay.portal.search.elasticsearch6.spi",\
-        "com.liferay.portal.search.elasticsearch7.api",\
-        "com.liferay.portal.search.elasticsearch7.impl",\
-        "com.liferay.portal.search.elasticsearch7.spi",\
-        "com.liferay.portal.search.tuning.rankings.web",\
-        "com.liferay.portal.search.tuning.synonyms.web",\
-        "com.liferay.portal.search.tuning.web",\
-        "com.liferay.portal.search.tuning.web.api"\
+      "com.liferay.portal.search.elasticsearch7.api",\
+      "com.liferay.portal.search.elasticsearch7.impl",\
+      "com.liferay.portal.search.elasticsearch7.spi",\
    ]
    ```
 
-1. `Liferay Home/osgi/configs`に配置してください。
+   この設定は、 [Elasticsearch 7 search engine connector の](../elasticsearch/installing-elasticsearch.md) モジュールを無効化します。 `enterprise.product.enterprise.search.enabled=false` プロパティは、 [Liferay Enterprise Search](../../liferay-enterprise-search.md) モジュールを無効にします。 Solrをインストールすると、自動的に他の [非互換の機能が無効になります](./solr-limitations.md).
+
+   **Liferay 7.2および7.3。**
+
+   ```properties
+   blacklistBundleSymbolicNames=[\
+      "com.liferay.portal.search.elasticsearch7.api",\
+      "com.liferay.portal.search.elasticsearch7.impl",\
+      "com.liferay.portal.search.elasticsearch7.spi",\
+      "com.liferay.portal.search.tuning.rankings.web",\
+      "com.liferay.portal.search.tuning.synonyms.web",\
+      "com.liferay.portal.search.tuning.web",\
+      "com.liferay.portal.search.tuning.web.api"\
+   ]
+   ```
+
+1. Liferay の `osgi/configs` フォルダにファイルを配置します。
 
 ### Elasticsearchのみの機能を持つモジュールの停止
 
-アプリケーションマネージャとGogoシェルは、 `osgi/state` フォルダを頼りに、バンドルの状態を「記憶」しています。 このフォルダを削除すると（ [Liferay DXPのパッチ適用](../../../installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)時に推奨）、Elasticsearchコネクターが再インストールされ、自動的に起動されます。 Liferay CEのユーザーは、ブラックリスト方式を使用するか、App ManagerまたはGogoシェルでElasticsearchおよび検索チューニングモジュールを無効にすることができます。
+App Manager と Gogo シェルは、バンドルの状態を記憶するために `osgi/state` フォルダに依存しています。 このフォルダを削除すると（ [Liferay DXPのパッチ適用](../../../installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md)時に推奨）、Elasticsearchコネクターが再インストールされ、自動的に起動されます。 そのため、 [ブラックリストアプローチ](#blacklisting-elasticsearch-only-features) の方が信頼性が高い。
 
-アプリケーションマネージャで無効にするには
+App Managerでモジュールを無効化する場合。
 
-1. ［コントロールパネル］ &rarr; ［アプリ］ &rarr; ［アプリマネージャー］ に移動します。
+1. コントロールパネル &rarr; App Manager を開きます。
 
-1. アプリケーションマネージャで、 **elasticsearch** を検索します。 Elasticsearch 6/7モジュールへのLiferayコネクタを見つけて、［アクション（![Actions](../../../images/icon-actions.png)）］メニューを開きます。 **無効にする** を選択します。  これにより、バンドルはインストールされたままになりますが、OSGiランタイムでは停止されます。 検索チューニングモジュールも同様です。
+1. 上記のブラックリストの設定に記載されているモジュールを検索します。 モジュールを見つけて、そのアクション (![Actions](../../../images/icon-actions.png)) メニューを開きます。 *無効にする*を選択します。  これにより、バンドルはインストールされたままになりますが、OSGiランタイムでは停止されます。
 
-[Felix Gogo shellの](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) を使用して、Elasticsearchモジュールと検索の調整モジュールを停止する場合。
+[Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) で Elasticsearch 依存モジュールを停止するには、まず無効化するモジュールのリストをコンパイルします。各モジュールのバンドルシンボル名については、上記の[ブラックリストの説明](#blacklisting-elasticsearch-only-features)を参照してください。Gogo シェルに移動したら
 
-1. `lb -s | grep 'search' | grep 'elasticsearch|tuning'`を入力します。
+1. `lb -s [bundle.symbolic.name]`と入力してください。
 
-   Elasticsearchへのコネクタや検索チューニングモジュールなど、いくつかのアクティブなバンドルが表示されます。
+1. `stop [bundle ID] を入力`.
 
-1. リストアップされた各バンドルに対して、 `stop [bundle ID]`と入力します。
+1. 各モジュールで繰り返します。
+
+
 
 ## Solrコネクタのダウンロード
 
-Liferay Connector to Solr [7、8]をインストールするには、 [Liferay Marketplace](https://web.liferay.com/marketplace/) に移動し、Liferayのバージョンに対応するアプリのバージョンをダウンロードします。
+Solrへのコネクタをまだ取得していない場合。
 
-   - **Liferay CE：**
-      - [Liferay CE Connector to Solr 8](https://web.liferay.com/marketplace/-/mp/application/181462322)
-      - [Liferay CE Connector to Solr 7](https://web.liferay.com/marketplace/-/mp/application/118014614)
+1. Liferayが起動している状態で、コントロールパネル &rarr; Marketplace &rarr; Storeにアクセスします。 サインインしてください。
 
-   - **Liferay DXP：**
-      - [Liferay Connector to Solr 8](https://web.liferay.com/marketplace/-/mp/application/181462183)
-      - [Liferay Connector to Solr 7](https://web.liferay.com/marketplace/-/mp/application/117931595)
+1. アプリへのアクセス権を付与する。
 
-お使いのLiferayのバージョンとパッチレベルで互換性のあるアプリケーションのバージョンについては、 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
+1. Solr 8を検索し、Liferayのインストールに対応するアプリを選択します。
+
+
+   | Liferayフレーバー        | Solrコネクタ名                      |
+   |:------------------- |:------------------------------ |
+   | Liferayポータル/コミュニティ版 | Liferay CE Connector to Solr 8 |
+   | Liferay DXP         | Liferay Connector to Solr 8    |
+
+   
+   1. アプリのランディングページにある「 *Free* 」ボタンをクリックします。
+
+1. プロジェクトが存在する場合はそれを選択し、存在しない場合は追加します。
+
+1. 条件に同意して、 *購入*をクリックします。
+
+購入後、「過去のバージョン」のページからLPKGファイルをダウンロードしてください。
+
+1. 以下のURLの <https://liferay.com> `user.name` を代入してください。
+   
+   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions> DXP: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions>
+
+1. *App* をクリックし、アプリの LPKG ファイルをダウンロードします。
+
+お使いのLiferayのバージョンとパッチレベルで互換性のあるアプリケーションのバージョンについては、 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360016511651) を参照してください。
+
+
+
+```{warning}
+構成が整う](#installing and-configuring-the-solr-connector) と [Solr が動作する](#installing and-configuring-solr) まで、Liferay に Solr コネクタをインストールしないでください。
+```
+
+
+
 
 ## Solrのインストールと設定
 
-**先に進む前に、Liferayインスタンスを停止します。**
 
-Liferay用のSolrをインストールし、適切に設定するために。
 
-1. [互換性のある](https://help.liferay.com/hc/ja/articles/360016511651) Solrサーバーをダウンロードし、解凍します。 以下のリンクは便宜上のものであり、執筆時に互換性のある最新のSolrバージョンを表しています。 新しい互換性のあるバージョンがあるかどうかは、 [検索エンジン互換性マトリクス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。 このガイドでは、以下のバージョンを例に挙げています。
-   - Liferay 7.1-7.3： [Solr 8.6.3](https://archive.apache.org/dist/lucene/solr/8.6.3/) となります。
-   - Liferay 7.1-7.2： [Solr 7.5.0](http://archive.apache.org/dist/lucene/solr/7.5.0/) です。
+```{important}
+作業を進める前に、Liferay を停止してください。
+```
 
-1. Solrホーム（`solr-[version]/server/solr`）に移動し、 `liferay`という新しいフォルダを作成します。
 
-1. 2つの新しいサブフォルダーを作成します。 `liferay/conf` 、 `liferay/data`
+Solr for Liferayをインストールし、設定する。
 
-1. `Solr_Home/configsets/_default/conf` の内容を、 `Solr_Home/liferay/conf`にコピーします。
+1. [互換性のある](https://help.liferay.com/hc/en-us/articles/360016511651) Solrサーバーをダウンロードし、解凍します。
+
+1. `solr-[version]/server/solr`に移動します。
+
+1. `liferay` という新しいフォルダと、 `liferay/conf` と `liferay/data`という2つのサブフォルダを作成します。
+
+1. `configsets/_default/conf` の内容を `liferay/conf` フォルダにコピーします。
 
 1. Liferay Connector to Solr 8のLPKGファイルをアーカイブマネージャーで開きます。
 
-   次に、 `Liferay Connector to Solr 7/8 - Impl.lpkg`を開きます。
+1. `Liferay Connector to Solr 8 - Impl.lpkg`を開いてください。
 
-   最後に、 `com.liferay.portal.search.solr7/8.impl.jar` ファイルを開き、
+1. `com.liferay.portal.search.solr8.impl.jar` ファイルを開き、解凍します。 
+   
+   
 
    ```
    META-INF/resources/solrconfig.xml
    ```
 
-   および
+
+および 
+
+
 
    ```
    META-INF/resources/schema.xml
    ```
 
-   を以下に展開します。
+
+宛先 
+
+
 
    ```
-   Solr_Home/liferay/conf
+   liferay/conf
    ```
 
-   これは、現在の `solrconfig.xml` と `schema.xml` ファイルを、Liferayから来るデータをどのようにインデックスするかをSolrに伝えるもので置き換えます。
 
-1. `core.properties` ファイルを `Solr_Home/liferay` に作成し、この設定を追加します。
+これは、現在の `solrconfig.xml` と `schema.xml` ファイルを、Liferayから来るデータをどのようにインデックスするかをSolrに伝えるもので置き換えます。
+
+1. `liferay` フォルダに `core.properties` ファイルを作成し、この設定を追加します。 
+   
+   
 
    ```properties
    config=solrconfig.xml
@@ -145,7 +210,10 @@ Liferay用のSolrをインストールし、適切に設定するために。
    schema=schema.xml
    ```
 
-1. チェックポイント: `Solr_Home/liferay` フォルダがこのような構造になっていることを確認してください。
+
+1. チェックポイント： `liferay` フォルダがこのような構造になっていることを確認します。 
+   
+   
 
    ```bash
    liferay
@@ -163,75 +231,86 @@ Liferay用のSolrをインストールし、適切に設定するために。
    └── data
    ```
 
-1. Solrをインストールしたトップレベルのフォルダー（`solr-[version]`）から次のように入力して、Solrサーバーを起動します。
+
+1. Solrをインストールしたトップレベルのフォルダー（`solr-[version]`）から次のように入力して、Solrサーバーを起動します。 
+   
+   
 
    ```bash
    ./bin/solr start -f
    ```
 
+
 1. Solrサーバーは、デフォルトではポート `8983` で待機します。 <http://localhost:8983/solr/#/~cores> へ行きます。(ローカルでテストしていると仮定して`localhost` をホストとします） `liferay` コアが利用可能なことを確認します。
 
 これでSolrがインストールされ、起動しました。 次に、Liferay用のSolrコネクタを構成し、インストールします。
 
+
+
 ## Solrコネクタのインストールと設定
 
-Liferay Connector to Solrのデフォルト構成は、Solr自身のデフォルトと一致するため、デフォルトのコネクタ構成はテストインストールでも機能します。 利用可能な設定の完全なリストは、 [設定のリファレンス](#solr-connector-configuration-reference) を参照してください。 本番環境のコネクターでは、最低でも読み取り用と書き込み用のURLが設定されている必要があります。
+コネクタをインストールすると、Liferay Connector to Solr のデフォルト値が Solr 自身のデフォルト値と一致するため、テストインストールではデフォルトの構成が機能します。 利用可能な設定の完全なリストは、 [設定のリファレンス](#solr-connector-configuration-reference) を参照してください。 本番環境では、最低限、コネクタの読み取り用URLと書き込み用URLを設定する必要があります。
 
-本番環境では、 `Liferay_Home/osgi/configs` フォルダに配置された設定ファイルを使用して、Solrコネクタのデフォルト設定を編集するのが一般的です。
+Liferay の `osgi/configs` フォルダに配置された設定ファイルを使用して、Solr コネクタのデフォルト設定を編集するのが最も一般的な方法です。
 
-1. ファイルに名前を付けます。
+1. ファイルに名前を付けます。 
+   
+   
 
-```
-com.liferay.portal.search.solr8.configuration.SolrConfiguration.config
-```
+   ```
+   com.liferay.portal.search.solr8.configuration.SolrConfiguration.config
+   ```
 
 
-    または
+初期設定ファイルがデプロイされ、LiferayのSolrへの接続が有効になった後、コントロールパネル &rarr; Configuration &rarr; System SettingsにあるSolr 8 System Settingsエントリから設定を更新することができます。
 
-```
-com.liferay.portal.search.solr7.configuration.SolrConfiguration.config
-```
+![LiferayのSystem SettingsアプリケーションからSolrを設定することは、開発やテスト時に最も有用です。](./installing-solr/images/02.png)
 
-   また、UIを使ってコネクタを構成することもできます。 ［コントロールパネル］の &rarr; ［構成］ &rarr; ［システム設定］で、Solr 7システム設定のエントリーを見つけます。
-
-   ![Solrの設定は、Liferayのシステム設定アプリケーションから行うことができます。 これは、開発やテストの際に最も有効です。](./installing-solr/images/02.png)
-
-1. アプリのLPKGがダウンロードされたら、それを `Liferay_Home/osgi/marketplace` にコピーし、任意の設定ファイルを `Liferay_Home/osgi/configs`に置きます。
+1. アプリの LPKG のダウンロードが完了したら、それを Liferay の `osgi/marketplace` フォルダにコピーし、その設定ファイルを `osgi/configs`に配置します。
 
 1. Liferayを起動します。
 
-1. LiferayのデータをSolrに再インデックスします。 グローバルメニューを開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索**］ へ行きます。 ［インデックス アクション］ウィンドウで、 ［**実行**］ オプションの隣にある ［**すべての検索インデックスを再作成**］ をクリックします。
+1. LiferayでSolrの接続を確認する。 グローバルメニューを開き、 *コントロールパネル* &rarr; *設定* &rarr; *検索* に移動し、接続が有効であることを確認します。
+   
+   ![検索管理コンソールでSolrの接続を確認する。](./installing-solr/images/01.png)
 
+1. LiferayのデータをSolrに再インデックスします。 グローバルメニューを開き、 *［コントロールパネル］* &rarr; *［設定］* &rarr; *［検索］*へ行きます。 Index Actions] ペインで、[Re-index Search Indexes] オプションの横の *Execute* をクリックします。
+   
    スペルチェック用のインデックスも再作成してください。
 
-   ![Solrの接続は、Search管理コンソールで確認できます。](./installing-solr/images/01.png)
+
 
 ## SolrCloudによる高可用性
 
-Solrサーバーのクラスターが必要な場合は、SolrCloudを使用します。 なお、SolrCloudを実運用で使用するには、 [外部のZooKeeperアンサンブル](https://cwiki.apache.org/confluence/display/solr/Setting+Up+an+External+ZooKeeper+Ensemble) を設定する必要があります。 [ZooKeeper](http://zookeeper.apache.org/) は、SolrCloudクラスターのような分散システムを管理するための、集中型のコーディネーションサービスです。
+Solrサーバーのクラスターが必要な場合は、SolrCloudを使用します。 なお、SolrCloudを実運用で使用するには、 [外部のZooKeeperアンサンブル](https://cwiki.apache.org/confluence/display/solr/Setting+Up+an+External+ZooKeeper+Ensemble)を設定する必要があります。 [ZooKeeper](http://zookeeper.apache.org/) は、SolrCloudクラスターのような分散システムを管理するための、集中型のコーディネーションサービスです。
 
-ここで紹介する手順は、LiferayでSolrCloudを設定するために必要な最低限のものと考えてください。 例えば、ここでは1台のマシンでSolrCloudを構成する方法を説明していますが、本番環境では複数の物理マシンや仮想マシンを使用します。 ここでは、 **Solrのインストールと設定** のセクションに沿って説明しています。 詳しくは [SolrCloudガイドをご参照ください](https://cwiki.apache.org/confluence/display/solr/SolrCloud) .
+ここで紹介する手順は、SolrCloudをLiferayで設定するために必要な最低限のものです。 例えば、この手順では、1台のマシンでSolrCloudを構成することを説明します。 本番環境は、複数の物理マシンまたは仮想マシンを備えている必要があります。 また、この手順は、上記の *Installing and Configuring Solr* に従っていることを前提としています。 詳しくは [SolrCloudガイドをご参照ください](https://cwiki.apache.org/confluence/display/solr/SolrCloud).
 
 1. Solrサーバーが稼働している場合は停止します。
 
-1. `Solr_Home/configsets` フォルダに移動し、以下のフォルダを作成します。
+1. Solrインストール内の `configsets` フォルダに移動します (`solr-[version]/server/solr/configsets`)。
 
-   `liferay_configs`
+1. `liferay_configs`というフォルダを作成します。
 
-1. `conf` フォルダを、 `Solr_Home/liferay` から、先ほど作成した `liferay_configs` フォルダにコピーします。
-
+1. `conf` フォルダを `solr-[version]/server/solr/liferay` から先ほど作成した `liferay_configs` フォルダにコピーしてください。
+   
    `configset/liferay_configs` フォルダには、SolrCloudのLiferayコレクションの設定が含まれており、ZooKeeperにアップロードされます。 先に設定した `conf` フォルダを、 `liferay` サーバーからコピーする際には、Liferay Solr Adapterに付属する `schema.xml` と `solrconfig.xml` ファイルを使用します。
 
-1. インタラクティブなSolrCloudセッションを起動して、SolrCloudクラスターを構成します。
+1. インタラクティブなSolrCloudセッションを起動し、SolrCloudクラスターを設定します。 Solrのインストール・ルートから、以下を実行します。 
+   
+   
 
    ```bash
    ./bin/solr -e cloud
    ```
 
+
 1. セットアップ・ウィザードを完了する。 ここでは、2ノードのクラスターを作成する手順を説明します。
 
-    -  ノード数には `2` を入力してください。
-    -  ポートは `8983` と `7574` （デフォルト）を指定します。 両ノードは、ログに出力されるスタートコマンドで起動されます。
+    - ノード数には `2` を入力してください。
+    - ポートは `8983` と `7574` （デフォルト）を指定します。 両ノードは、ログに出力されるスタートコマンドで起動されます。 
+      
+      
 
        ```
        Starting up Solr on port 8983 using command:
@@ -248,33 +327,42 @@ Solrサーバーのクラスターが必要な場合は、SolrCloudを使用し�
        Started Solr server on port 7574 (pid=9026). Happy searching!
        ```
 
-    -  コレクション名 **liferay**
-    -  コレクションを2つのシャードに分割します。
-    -  シャードごとに2つのレプリカを指定します。
-    -  コンフィギュレーションを選択するプロンプトが表示されたら、 **liferay_configs** と入力します。 クラスタが起動すると、以下のようなログメッセージが表示されます。
+
+    - コレクション名 *liferay*
+
+    - コレクションを2つのシャードに分割します。
+    - シャードごとに2つのレプリカを指定します。
+    - コンフィギュレーションを選択するプロンプトが表示されたら、 *liferay_configs*と入力します。 クラスタが起動すると、以下のようなログメッセージが表示されます。 
+      
 
     ```bash
     SolrCloud example running, please visit http://localhost:8983/solr
     ```
 
-これで、ローカルのSolrCloudクラスターに **liferay** という新しいコレクションができました。 **status** コマンドを実行して、その状態を確認します。
+
+これで、ローカルのSolrCloudクラスターに *liferay* という新しいコレクションができました。 `status` コマンドを実行して、その状態を確認します。
+
+
 
 ```bash
 ./bin/solr status
 ```
 
+
 ログ出力では、ノードが見つかったことと、各ノードの情報が一覧表示されます。
+
+
 
 ```
 Found 2 Solr nodes: 
 
-Solr process 223597 running on port 8983
+Solr process 725273 running on port 8983
 {
-  "solr_home":"/home/user/liferay-bundles/solr8_7.3/solr-8.6.3/example/cloud/node1/solr",
-  "version":"8.6.3 e001c2221812a0ba9e9378855040ce72f93eced4 - jasongerlowski - 2020-10-03 18:12:03",
-  "startTime":"2021-03-23T18:26:45.450Z",
-  "uptime":"0 days, 0 hours, 25 minutes, 4 seconds",
-  "memory":"306.5 MB (%59.9) of 512 MB",
+  "solr_home":"/home/me/_temp/solr-8.11.2/example/cloud/node1/solr",
+  "version":"8.11.2 17dee71932c683e345508113523e764c3e4c80fa - mdrob - 2022-06-13 11:27:54",
+  "startTime":"2023-01-05T20:29:45.779Z",
+  "uptime":"0 days, 0 hours, 1 minutes, 29 seconds",
+  "memory":"99.6 MB (%19.4) of 512 MB",
   "cloud":{
     "ZooKeeper":"localhost:9983",
     "liveNodes":"2",
@@ -282,36 +370,47 @@ Solr process 223597 running on port 8983
 ...
 ```
 
-SolrCloudモードで実行中のSolrを停止するには、次のように **stop** コマンドを使用します。
+
+SolrCloudモードで実行中のSolrを停止するには、次のように `stop` コマンドを使用します。
+
+
 
 ```bash
 ./bin/solr stop -all
 ```
 
+
+
+
 ## SolrCloud用Solrコネクタの設定
 
-あとは、LiferayのSolrコネクタで、クライアントタイプを **CLOUD** と指定するだけです。
+Liferay で SolrCloud をサポートするには、Liferay の Solr コネクタでクライアントタイプを *CLOUD* と指定します。
 
-1. システム設定」またはOSGiの設定ファイルから、 **Client Type** を **CLOUD** に設定します。
+1. システム設定」またはOSGiの設定ファイルから、 *Client Type* を *CLOUD*に設定します。 
+   
+   
 
    ```properties
    clientType="CLOUD"
    ```
 
-1. Liferayが起動していない場合は、Liferayを起動します。 SolrコネクタLPKGをインストールした後に初めて起動した場合は、ログの指示に従ってLiferayを再起動してください。
+
+1. Liferayを起動します。 Solr コネクタ LPKG をインストールした後に初めて起動した場合は、ログに記載されている指示に従って Liferay を再起動してください。
 
 ![［Solr システム設定］のエントリーから、「Client Type」を「Cloud」に設定します。](./installing-solr/images/03.png)
 
+
+
 ## Solr コネクタ設定リファレンス
 
-```{note}
-Solr コネクタのプロパティは、Solr 7 および Solr 8 コネクタにも同様に適用されます。 設定ファイル名を（`solr8`ではなく）`solr7`に変更します。 システム設定で、_Solr 7_で始まるエントリを参照してください。
-```
+以下は、デフォルトの設定と、Solr コネクター・アプリケーションをインストールしたときに利用可能になる設定（システム設定検索カテゴリまたは `.config` ファイルで構成可能）です。 これらの設定は、限られた値を受け入れるものです。
 
-以下に、デフォルトの設定と、Solrコネクタ・アプリケーションをインストールしたときに利用可能になる設定（システム設定の検索カテゴリ、または `.config` ファイルで設定可能）を示します。 これらの設定は、限られた値を受け入れるものです。
+**設定ファイル：** `com.liferay.portal.search.solr8.configuration.SolrConfiguration.config`\
 
-**設定ファイル：** `com.liferay.portal.search.solr8.configuration.SolrConfiguration.config` \
-**システム設定のエントリ：** **Solr 8**
+**システム設定のエントリーです。** *Solr 8*
+
+
+
 ```properties
 authenticationMode=["BASIC" or "CERT"]
 clientType=["REPLICATED" or "CLOUD"]
@@ -322,8 +421,12 @@ writeURL="http://localhost:8983/solr/liferay"
 zkHost="localhost:9983"
 ```
 
-**設定ファイル：** `com.liferay.portal.search.solr8.configuration.SolrHttpClientFactoryConfiguration.config` \
-**システム設定エントリ：** **Solr 8 HTTPクライアントファクトリー**
+
+**設定ファイル：** `com.liferay.portal.search.solr8.configuration.SolrHttpClientFactoryConfiguration.config`\.
+
+**システム設定のエントリーです。** *Solr 8 HTTP Client Factory*
+
+
 
 ```properties
 basicAuthPassword="solr"
@@ -332,8 +435,12 @@ defaultMaxConnectionsPerRoute="20"
 maxTotalConnections="20"
 ```
 
-**設定ファイル：** `com.liferay.portal.search.solr8.configuration.SolrSSLSocketFactoryConfiguration.config` \
-**システム設定エントリ：** **Solr 8 SSLファクトリー**
+
+**設定ファイル：** `com.liferay.portal.search.solr8.configuration.SolrSSLSocketFactoryConfiguration.config`\.
+
+**システム設定のエントリーです。** *Solr 8 SSL Factory*
+
+
 
 ```properties
 keyStorePassword="secret"
@@ -345,5 +452,3 @@ trustStoreType="JKS"
 verifyServerCertificate=B"true"
 verifyServerName=B"true"
 ```
-
-これで、Liferay for SolrとSolr for Liferayの設定ができました。 Solrは [廃止予定](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md)なので、ご注意ください。 Solrを使うことに制約がない場合は、Elasticsearchを使ってください。

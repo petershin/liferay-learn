@@ -8,20 +8,20 @@
 * PostgreSQL
 
 ```{note}
-[Liferay DXP Compatibility Matrix](https://help.liferay.com/hc/ja/articles/360049238151) には、サポートされているデータベースとバージョンが一覧表示されています。
+[Liferay DXP Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151)には、サポートされているデータベースとバージョンが一覧表示されています。
 ```
 
 データベースに接続するには、次の手順が必要です。
 
 * [データベース設定](#database-configuration)
-* [JDBCコネクターのインストール](#installing-a-jdbc-connector)
-* [データソースの構成](#configure-a-data-source)
+* [JDBCコネクターのインストール](#install-a-jdbc-connector)
+* [データソースの構成](#configuring-a-data-source)
 
 ## データベース設定
 
 データベースを選択したら、次の手順に従って構成します。
 
-* [UTF-8に対応している空のデータベースを作成する](#creatre-a-blank-database-with-utf-8-support)
+* [UTF-8に対応している空のデータベースを作成する](#create-a-blank-database-with-utf-8-support)
 * [データベースユーザーアクセスを設定する](#configure-database-user-access)
 * [クエリ結果の並べ替え順序を設定する（オプション）](#configure-the-query-result-sort-order-optional)
 
@@ -45,19 +45,27 @@ Liferay DXPがデータを保持するには、データベースユーザーの
 
 #### 高セキュリティデータベースユーザーのプラクティス
 
-組織によっては、データベースの初期化後に、データベースLiferay DXPのデータベースユーザー権限を制限する必要がある、より厳格なセキュリティポリシーがある場合があります。 選択、挿入、更新、および削除操作の権限のみをユーザーに許可する場合は、データベースを手動で初期化および保守する必要があります。 これを実行するための推奨事項は次のとおりです。
+お客様の組織では、より厳しいセキュリティポリシーで、データベースが初期化された時点でLiferay DXPデータベースのユーザー権限を制限する必要があるかもしれません。 選択、挿入、更新、および削除操作の権限のみをユーザーに許可する場合は、データベースを手動で初期化および保守する必要があります。 これを実行するための推奨事項は次のとおりです。
 
 1. Liferay DXPデータベースユーザーにデータベースに対して行うための完全な権限を付与します。
+
 1. Liferay DXPをインストールして起動し、データベースに自動的にデータが入力されるようにします。
+
 1. データベースにLiferay DXPテーブルが挿入されたら、選択、挿入、更新、および削除操作を実行する権限を除き、Liferay DXPデータベースユーザーからすべての権限を削除します。
 
 ```{warning}
-これらの制約でLiferay DXPを実行する場合、いくつかの注意点があります。 多くのプラグインは、デプロイされると新しいテーブルを作成します。 さらに、Liferay DXPをアップグレードするには、データベースアップグレード機能を手動で実行する必要があります。 Liferay DXPデータベースユーザーがデータベース内のテーブルを作成、変更、削除するための適切な権限を持っていない場合は、これらのプラグインのいずれかをデプロイしたり、Liferay DXPのアップグレードを開始する前に、それらの権限をそのユーザーに付与する必要があります。 テーブルが作成されるか、アップグレードが完了すると、次のデプロイまたはアップグレードまでこれらの権限を削除できます。 チームが独自のテーブルを作成するプラグインを作成する場合は、プラグインをデプロイする前に、同様にLiferay DXPデータベースユーザーに一時的な権限を付与する必要があります。
+Liferayのイベントの中には、これらの高いセキュリティのステップと互換性のないデータベースアクション（例えば、テーブルの作成と削除）を引き起こすものがあります。 これらのイベントは、Liferayデータベースのユーザーがデータベースに対するフルパーミッションを持っていることを必要とします。
+
+| Event | How to Proceed | 
+| :---- | :---------- | 
+| [Publishing Object Definitions](./../building-applications/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) | Liferayデータベースユーザーが完全なデータベース権限を持っていない場合はObjectsを使用しないでください。 |
+| テーブルを作成するプラグインをデプロイする | デプロイする前に、Liferayデータベースユーザーに完全な権限を付与し、デプロイ後にデータベースを再セキュアにします。 |
+| Liferay をアップグレードする | アップグレードする前に、Liferay データベースユーザーに完全な権限を付与し、アップグレード後にデータベースを再セキュア化します。 |
 ```
 
 ### クエリ結果の並べ替え順序を設定する（オプション）
 
-すべてのデータベースには、結果をソートするためのデフォルトの順序があります（ [この記事](https://help.liferay.com/hc/ja/articles/360029315971-Sort-Order-Changed-with-a-Different-Database) を参照）。 この順序が気になる場合は、データベースベンダーのドキュメントを参照して並べ替え順序を確認し、必要に応じて、Liferay DXPエンティティに適したデフォルトのクエリ結果順序を使用するようにデータベースを構成してください。
+すべてのデータベースには、結果をソートするためのデフォルトの順序があります（[この記事](https://help.liferay.com/hc/en-us/articles/360029315971-Sort-Order-Changed-with-a-Different-Database)を参照）。 この順序が気になる場合は、データベースベンダーのドキュメントを参照して並べ替え順序を確認し、必要に応じて、Liferay DXPエンティティに適したデフォルトのクエリ結果順序を使用するようにデータベースを構成してください。
 
 データベースサーバー、データベース、およびデータベースユーザーを構成しました。 Liferay DXPがデータベースとの通信に使用するJDBCコネクターをインストールする準備が整いました。
 
@@ -76,7 +84,7 @@ OracleやDB2などの専用データベースに接続している場合は、�
 | データベース | コネクタ          | ベンダーサイト                                     | メモ                                                                                                                                                |
 |:------ |:------------- |:------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DB2    | `db2jcc4.jar` | [IBM](https://www.ibm.com/)                 | ` dbc2jcc`コネクターは3.72以降廃止されました。                                                                                                                    |
-| Oracle | `ojdbc8.jar`  | [Oracle](https://www.oracle.com/index.html) | [データ切り捨ての問題](https://issues.liferay.com/browse/LPS-79229) がCLOB列からデータを読み取って検出されたため、少なくともOracle 12.2.0.1.0 JDBC 4.2バージョンを備えた`ojdbc8.jar`ライブラリが必要です。 |
+| Oracle | `ojdbc8.jar`  | [Oracle](https://www.oracle.com/index.html) | [データ切り捨ての問題](https://issues.liferay.com/browse/LPS-79229)がCLOB列からデータを読み取って検出されたため、少なくともOracle 12.2.0.1.0 JDBC 4.2バージョンを備えた`ojdbc8.jar`ライブラリが必要です。 |
 
 ## データソースの構成
 
@@ -90,14 +98,14 @@ OracleやDB2などの専用データベースに接続している場合は、�
 
 ### Docker環境変数
 
-DXP環境変数をDockerイメージに渡すことで、組み込みのデータソース接続を構成できます。 例として、 [データベーステンプレート](./database-templates.md) を参照してください。
+DXP環境変数をDockerイメージに渡すことで、組み込みのデータソース接続を構成できます。 例として、[Database Templates](./database-templates.md)を参照してください。
 
 ### ポータルプロパティ
 
-[ポータルプロパティ](./portal-properties.md)ファイルを使用して、Liferay Tomcatバンドル、アプリケーションサーバーのインストール、またはDockerイメージでデータソース接続を構成できます。 例として、 [データベーステンプレート](./database-templates.md) を参照してください。
+[ポータルプロパティ](./portal-properties.md)ファイルを使用して、Liferay Tomcatバンドル、アプリケーションサーバーのインストール、またはDockerイメージでデータソース接続を構成できます。 例として、[Database Templates](./database-templates.md)を参照してください。
 
 ```{note}
-Dockerイメージでポータルプロパティファイルを使用するには、バインドマウントまたはボリュームを使用してファイルを渡す必要があります。 詳細については、 [コンテナへのファイルの提供](../installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md) を参照してください。
+Dockerイメージでポータルプロパティファイルを使用するには、バインドマウントまたはボリュームを使用してファイルを渡す必要があります。 詳細については、[Providing Files to the Container](../installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md)を参照してください。
 ```
 
 ### セットアップウィザード

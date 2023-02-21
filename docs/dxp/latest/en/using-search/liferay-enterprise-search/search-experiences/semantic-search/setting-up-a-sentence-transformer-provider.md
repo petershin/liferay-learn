@@ -1,4 +1,7 @@
-# Setting Up a Text Embedding Prodiver
+----
+uuid: a46cc468-a441-4a77-9628-b618b79d823b
+----
+# Setting Up a Text Embedding Provider
 
 A text embedding provider has two jobs:
 

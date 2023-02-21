@@ -1,7 +1,8 @@
 ---
 toc:
-- ./semantic-search/setting-up-a-sentence-transformer-provider.md
-- ./semantic-search/adding-a-search-blueprint-for-semantic-search.md
+  - ./semantic-search/setting-up-a-sentence-transformer-provider.md
+  - ./semantic-search/adding-a-search-blueprint-for-semantic-search.md
+uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 ---
 
 # Semantic Search

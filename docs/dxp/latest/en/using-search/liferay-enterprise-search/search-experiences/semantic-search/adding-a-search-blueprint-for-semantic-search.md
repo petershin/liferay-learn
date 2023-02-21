@@ -1,3 +1,6 @@
+----
+uuid: 714a2db2-830e-40a8-8f49-5da57a629ef1
+----
 # Adding a Search Blueprint for Semantic Search
 
 <!-- A user searching for this might be better served with a title like "Re-Scoring the Query with Text Embeddings". -->

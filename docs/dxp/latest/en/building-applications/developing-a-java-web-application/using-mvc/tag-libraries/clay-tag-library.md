@@ -63,6 +63,6 @@ Clay taglibs provide the following UI components for your apps:
 * [Management Toolbar](clay-tag-library/clay-management-toolbar.md)
 * [Navigation Bars](clay-tag-library/clay-navigation-bars.md)
 * [Progress Bars](clay-tag-library/clay-progress-bars.md)
-* [Stickers](clay-tag-library/clay-stickers.md  )
+* [Stickers](clay-tag-library/clay-stickers.md)
 
 This section covers how to create these components with the Clay taglibs. Each article contains a set of clay component examples along with a screenshot of the resulting UI.

@@ -72,7 +72,7 @@ Liferay 7.4 U34/GA34부터 표시 페이지 템플릿 프레임워크는 각 파
 
 ## 추가 정보
 
-* [문서 및 미디어 개요](../documents-and-media-overview.md)
+* [문서 및 미디어 개요](../../documents-and-media.md)
 * [파일 업로드](./uploading-files.md)
 * [사이트의 친숙한 URL 구성](../../../site-building/site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
 * [페이지의 친숙한 URL 구성](../creating-pages/page-settings/configuring-your-pages-friendly-url.md)

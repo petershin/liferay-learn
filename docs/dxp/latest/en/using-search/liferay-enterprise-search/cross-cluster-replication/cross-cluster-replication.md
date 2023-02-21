@@ -29,7 +29,7 @@ To set up Cross-Cluster Replication, you must
 ## Liferay DXP: Install the LES Cross-Cluster Replication Module
 
 ```{note}
-Starting with Liferay DXP 7.4, the Liferay Enterprise Search (LES) applications are included with all Liferay DXP bundles and Docker containers. Therefore, installing the module is unnecessary on Liferay DXP 7.4+. See [Activating LES](./activating-liferay-enterprise-search.md) for more information.
+Starting with Liferay DXP 7.4, the Liferay Enterprise Search (LES) applications are included with all Liferay DXP bundles and Docker containers. Therefore, installing the module is unnecessary on Liferay DXP 7.4+. See [Activating LES](../activating-liferay-enterprise-search.md) for more information.
 ```
 
 Liferay DXP nodes that read from a local cluster's follower indexes and write through a separate connection to the remote cluster's leader indexes must have the CCR module installed. For consistency and adaptability, it's best to install it on every node in the cluster. This module is available to download (as an LPKG file) with your LES subscription.

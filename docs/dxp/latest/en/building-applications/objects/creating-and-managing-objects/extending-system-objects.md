@@ -8,7 +8,7 @@ uuid: 52556bc8-a31b-4331-bcd7-317428006384
 With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, Postal Address, and User.
 
 ```{note}
-The Postal Address object is only used to store account addresses. For this reason, you can only relate it to custom objects that are related to the Accounts object. See [Using Accounts with Custom Objects](./using-accounts-with-custom-objects.md) for more information.
+The Postal Address object is only used to store account addresses. For this reason, you can only relate it to custom objects that are related to the Accounts object. See [Using System Accounts with Custom Objects](./using-system-objects-with-custom-objects.md) for more information.
 ```
 
 ![Extend system services integrated with the Objects Framework.](./extending-system-objects/images/01.png)

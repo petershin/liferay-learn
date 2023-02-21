@@ -65,7 +65,7 @@ In addition to columns for your entity's primary key and attributes, add portal 
 
 ## Workflow Fields
 
-You can support Liferay's [workflow system](https://learn.liferay.com/dxp/latest/en/process-automation/workflow/introduction-to-workflow.md) by adding the fields it needs to track an entity's progress:
+You can support Liferay's [workflow system](../../../../process-automation/workflow/introduction-to-workflow.md) by adding the fields it needs to track an entity's progress:
 
 ```xml
 <!-- Status fields -->

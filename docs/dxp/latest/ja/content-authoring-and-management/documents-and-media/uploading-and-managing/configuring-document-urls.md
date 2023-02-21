@@ -72,7 +72,7 @@ Liferay 7.4 U34/GA34から、表示ページテンプレートのフレームワ
 
 ## 追加情報
 
-* [ドキュメントとメディアの概要](../documents-and-media-overview.md)
+* [ドキュメントとメディアの概要](../../documents-and-media.md)
 * [ファイルのアップロード](./uploading-files.md)
 * [サイトのフレンドリURLを設定する](../../../site-building/site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
 * [ページのフレンドリURLの設定](../creating-pages/page-settings/configuring-your-pages-friendly-url.md)

@@ -131,7 +131,7 @@ Follow these steps to edit the object draft:
 
 1. Enable or disable history for object entries. You can only configure this setting before publishing.
 
-   While enabled, object entry events appear in the Audit application. See [Auditing Object Events](./auditing-object-events.md).
+   While enabled, object entry events appear in the Audit application. See [Auditing Object Definition Events](./auditing-object-definition-events.md).
 
 1. Click *Save*.
 

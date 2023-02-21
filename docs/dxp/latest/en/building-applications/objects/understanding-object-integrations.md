@@ -29,7 +29,7 @@ Published custom Objects are integrated with Liferay's core frameworks, so you c
 | Workflow | Enable custom workflows for Objects to direct the creation, review, and publishing of Object entries. |
 
 <!-- TASK: Add the following integrations when ready -->
-<!-- | Job Scheduler | Use the [Job Scheduler](../core-frameworks/dispatch-framework/using-job-scheduler.md) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |-->
+<!-- | Job Scheduler | Use the [Job Scheduler](../core-frameworks/job-scheduler-framework/using-job-scheduler.m) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |-->
 <!-- | Publications |  | -->
 
 ```{raw} html

@@ -569,8 +569,24 @@ Branches submitted for code review must contain only code changes--branches must
 
 > **Tip:** Use a dedicated branch (free of any new/modified articles) for your example code. However, if you've included article changes in your branch, back them up (e.g., copy the articles to your Desktop) and then remove them from your branch.
 
-### Submit Your Code 
+## Freezing a Code Sample to an Earlier Liferay Version
 
-Send a pull request to `jhinkey` (Jim Hinkey). He will review your code before sending it onward for final review and merging.
+On rare occasions, code that works on an earlier 7.4 update no longer compiles and runs on a later update. If there is continued value in the now-defunct tutorial and code sample, you can freeze the version used in the workspace to the latest version where the code is known to compile and run.
 
-Thanks for submitting your example to Liferay!
+1. In the `liferay-*.zip` root, create a `gradle.properties` with contents like this:
+
+   ```properties
+   liferay.workspace.product=portal-7.4-ga48
+   ```
+
+1. Force git to add the `gradle.properties` file to the index:
+
+   ```bash
+   git add -f -- gradle.properties`
+   ```
+
+1. Commit the file.
+
+Logic in the `update_examples.sh` file recognizes the existence of a `gradle.properties` file and skips its normal step of creating one on the fly using the value of `${LIFERAY_LEARN_WORKSPACE_TOKEN}`.
+
+

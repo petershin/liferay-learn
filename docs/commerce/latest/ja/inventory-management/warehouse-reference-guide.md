@@ -1,6 +1,6 @@
 # 倉庫リファレンスガイド
 
-倉庫を管理するには、 *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Warehouses*に移動してください。
+倉庫を管理するには、 **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Warehouses** に移動してください。
 
 ```{note}
 Commerce 2.0 または 2.1 を使用している場合、ウェアハウスの設定は *コントロールパネル* にあります。
@@ -18,13 +18,13 @@ Commerce 2.0 または 2.1 を使用している場合、ウェアハウスの�
 
 ## チャンネル
 
-ウェアハウスは、利用可能なすべてのチャンネルを提供するように設定するか、特定のチャンネルを選択することができます。 これを行うには、 *Eligibility* タブをクリックし、 *Specific Channels* ラジオボタンを選択します。 次に、チャンネルを検索して、 *Select*をクリックします。
+ウェアハウスは、利用可能なすべてのチャンネルを提供するように設定するか、特定のチャンネルを選択することができます。 これを行うには、 **Eligibility** タブをクリックし、 **Specific Channels** ラジオボタンを選択します。 次に、チャンネルを検索して、 **Select** をクリックします。
 
 ![ウェアハウスが利用可能なすべてのチャンネルを提供するか、特定のチャンネルを選択するかを設定します。](./warehouse-reference-guide/images/02.png)
 
 ### Liferay DXP 7.4 U46/GA46以下
 
-*Channels*の下で、ウェアハウスが提供できる利用可能なチャンネルを表示できます。 チェックボックスを使って、希望するチャンネルを選択します。
+**Channels** の下で、ウェアハウスが提供できる利用可能なチャンネルを表示できます。 チェックボックスを使って、希望するチャンネルを選択します。
 
 ![ウェアハウスが提供しなければならないチャンネルを確認する。](./warehouse-reference-guide/images/03.png)
 

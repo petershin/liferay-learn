@@ -4,7 +4,7 @@
 
 {bdg-secondary}`利用可能な Liferay DXP 7.4 U35+`
 
-Liferay Connector to Salesforceは、 [Talend](https://help.talend.com/home) ジョブデザインとLiferayの [Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を使用して、SalesforceからLiferay DXPにデータをインポートします。 [](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) コネクタをダウンロードし、 `.lpkg` ファイルとして Liferay インスタンスにデプロイすることができます。 このファイルには、SalesforceのデータフィールドをLiferayのデータフィールドにマッピングするTalendジョブが含まれています。
+Liferay Connector to Salesforceは、 [Talend](https://help.talend.com/home) ジョブデザインとLiferayの [Job Scheduler](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を使用して、SalesforceからLiferay DXPにデータをインポートします。 [ダウンロード](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) コネクタをダウンロードし、 `.lpkg` ファイルとして Liferay インスタンスにデプロイすることができます。 このファイルには、SalesforceのデータフィールドをLiferayのデータフィールドにマッピングするTalendジョブが含まれています。
 
 デプロイされると、Liferayは自動的にTalendの各ジョブに対してジョブスケジューラタスクを作成します。 その後、各タスクを手動で設定・実行したり、ジョブスケジューラーを使って特定の間隔で実行するようにスケジュールすることができます。
 
@@ -29,9 +29,9 @@ Liferayの製品カタログに相当するエンティティはSalesforceには
 
 ## Liferay DXP へのコネクタの展開
 
-1. [Liferay Marketplace](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)からコネクタをダウンロードします。
+1. [Liferay Marketplace](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) からコネクタをダウンロードします。
 
-1. `.lpkg` ファイルを DXP インスタンスの [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーします。
+1. `.lpkg` ファイルを DXP インスタンスの [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーします。
 
 1. これらのメッセージがアプリケーションサーバーのコンソールに表示されることを確認します。
 
@@ -42,7 +42,7 @@ Liferayの製品カタログに相当するエンティティはSalesforceには
 
 1. Liferay DXP インスタンスを再起動します。
 
-1. 再起動後、 *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Control Panel* &rarr; *Job Scheduler*に移動して、導入が正常に行われたことを確認します。
+1. 再起動後、 **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Control Panel** &rarr; **Job Scheduler** に移動して、導入が正常に行われたことを確認します。
 
    成功すると、4つの新しいジョブ・スケジューラー・タスクが表示されます。
 
@@ -117,7 +117,7 @@ Salesforceからのデータをフィルタリングして、新しく変更ま�
 
 | コンテキスト・パラメータ                | 説明                                                                                                                                    | デフォルト値                                                                                                                                                                  |
 |:--------------------------- |:------------------------------------------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `channelId`                 | 注文をインポートする ID チャンネル                                                                                                                   | UIからチャンネルIDをコピーする。 *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Channels*を表示します。 チャンネルを選択し、名前の横に表示されているIDをコピーしてください。 |
+| `channelId`                 | 注文をインポートする ID チャンネル                                                                                                                   | UIからチャンネルIDをコピーする。 **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Channels** を表示します。 チャンネルを選択し、名前の横に表示されているIDをコピーしてください。 |
 | `defaultCurrency`           | 注文のデフォルト通貨                                                                                                                            | `USD`                                                                                                                                                                   |
 | `statusMapping_null`        | 注文ステータスのマッピング。 この構文を使用する必要があります。 `statusMapping_SalesforceStatusName=LiferayStatusCode (例: statusMapping_Activated=5)`。               | `5`                                                                                                                                                                     |
 | `paymentStatusMapping_null` | 注文の支払いステータスのマッピング。 この構文を使用する必要があります: `paymentStatusMapping_SalesforceStatusName=LiferayStatusCode (例: paymentStatusMapping_Payed=2)`。 | `2`                                                                                                                                                                     |
@@ -128,7 +128,7 @@ Salesforceからのデータをフィルタリングして、新しく変更ま�
 
 ## ジョブスケジューラタスクの実行
 
-一度設定すれば、 *Run Now*をクリックして各タスクを手動で実行したり、自動的に実行されるようにスケジュールを組むことができます。 詳しくは、「 [ジョブスケジューラの使用」](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を参照してください。
+一度設定すれば、 **Run Now** をクリックして各タスクを手動で実行したり、自動的に実行されるようにスケジュールを組むことができます。 詳しくは、「 [ジョブスケジューラの使用」](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を参照してください。
 
 ```{important}
 これらのタスクを実行すると、リソースを大量に消費し、プラットフォームのパフォーマンスを低下させる可能性があります。 パフォーマンスへの影響を軽減するため、使用頻度の高い時間帯での実行は避けてください。
@@ -137,4 +137,4 @@ Salesforceからのデータをフィルタリングして、新しく変更ま�
 ## 追加情報
 
 * [Liferayマーケットプレイス](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)
-* [ジョブスケジューラーを使う](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)
+* [ジョブスケジューラーを使う](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)

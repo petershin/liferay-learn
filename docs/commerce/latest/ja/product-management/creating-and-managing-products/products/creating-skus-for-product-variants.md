@@ -1,6 +1,6 @@
 # 商品バリアントのSKU作成
 
-Liferay Commerceでは、複数のSKUを商品に追加して商品バリアントを表すことができます。 これを行うためには、商品には少なくとも1つの[オプション](../products/using-product-options.md)と*SKUコントリビューター*が有効になっている必要があります。 その後、オプションの定義された値を使用して、商品の複数の有効なSKUを手動または自動で作成することができます。 SKUが作成されると、各SKUは、商品詳細ウィジェットに表示される商品の購入可能なバージョンを表します。
+Liferay Commerceでは、複数のSKUを商品に追加して商品バリアントを表すことができます。 これを行うためには、商品には少なくとも1つの[オプション](../products/using-product-options.md)と **SKUコントリビューター** が有効になっている必要があります。 その後、オプションの定義された値を使用して、商品の複数の有効なSKUを手動または自動で作成することができます。 SKUが作成されると、各SKUは、商品詳細ウィジェットに表示される商品の購入可能なバージョンを表します。
 
 ![商品バリアントは、商品詳細ウィジェットに表示されます。](./creating-skus-for-product-variants/images/01.png)
 
@@ -16,19 +16,19 @@ Liferay Commerceでは、複数のSKUを商品に追加して商品バリアン�
 
 1つの商品に複数のSKUを生成して有効にするには、以下の手順に従ってください：
 
-1. *グローバルメニュー*（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 *［コマース］*タブをクリックして、 *［Products］*に移動します。
+1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コマース**］ タブをクリックして、 ［**Products**］ に移動します。
 
-1. SKUコントリビューターが有効になっているオプションが1つ以上ある商品をクリックして、［ *SKUs*］タブに移動します。
+1. SKUコントリビューターが有効になっているオプションが1つ以上ある商品をクリックして、［**SKUs**］タブに移動します。
 
-1. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックし、*［Generate All SKU Combinations］*を選択します。
+1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックし、 ［**Generate All SKU Combinations**］ を選択します。
 
    ![［SKUのすべての組み合わせを生成］を選択します。](./creating-skus-for-product-variants/images/02.png)
 
-   SKUはオプション値ごとに自動的に生成されます。 これらのSKUは、値の名前を使用し、基本価格や在庫なしで作成されます。 SKUを構成するには、SKUの*アクション*ボタン（![Actions Button](../../../images/icon-actions.png))をクリックし、*［編集］*を選択します。 詳しくは[SKU Fields Reference](#sku-fields-reference)を参照してください。
+   SKUはオプション値ごとに自動的に生成されます。 これらのSKUは、値の名前を使用し、基本価格や在庫なしで作成されます。 SKUを構成するには、SKUの **アクション** ボタン（![Actions Button](../../../images/icon-actions.png))をクリックし、 ［**編集**］ を選択します。 詳しくは [SKU Fields Reference](#sku-fields-reference) を参照してください。
 
    ![生成されたSKUを編集します。](./creating-skus-for-product-variants/images/03.png)
 
-1. 完了したら、*［Publish］*をクリックします。
+1. 完了したら、 ［**Publish**］ をクリックします。
 
 ```{important}
 在庫の各商品は、少なくとも1つのSKUに関連付けられている必要があります。
@@ -42,19 +42,19 @@ Liferay Commerceでは、複数のSKUを商品に追加して商品バリアン�
    SKUコントリビューターが有効になっている間は、手動で作成された各SKUをオプション値にマッピングする必要があります。
    ```
 
-1. *グローバルメニュー*（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 *［コマース］*タブをクリックして、 *［Products］*に移動します。
+1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コマース**］ タブをクリックして、 ［**Products**］ に移動します。
 
-1. SKUコントリビューターが有効になっているオプションが1つ以上ある商品をクリックして、［ *SKUs*］タブに移動します。
+1. SKUコントリビューターが有効になっているオプションが1つ以上ある商品をクリックして、［**SKUs**］タブに移動します。
 
-1. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックして、*［Add SKU］*を選択します。
+1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックして、 ［**Add SKU**］ を選択します。
 
    ![［SKUを追加］を選択します。](./creating-skus-for-product-variants/images/04.png)
 
-1. SKUのフィールドを設定します。 詳しくは[SKU Fields Reference](#sku-fields-reference)を参照してください。
+1. SKUのフィールドを設定します。 詳しくは [SKU Fields Reference](#sku-fields-reference) を参照してください。
 
    ![SKUの設定を行います。](./creating-skus-for-product-variants/images/05.png)
 
-1. 完了したら、*［Publish］*をクリックします。
+1. 完了したら、 ［**Publish**］ をクリックします。
 
 ## SKU在庫の追加
 

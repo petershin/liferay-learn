@@ -43,13 +43,13 @@ Liferayの在庫管理ツールは、1つの倉庫を持つ単一の店舗から
 
 倉庫とは、商品の在庫を管理し、注文に対応するために商品を調達するための物理的な場所を指します。 一つのSKUが複数の倉庫で販売されることもあり、在庫は倉庫単位で管理されます。
 
-在庫管理についての詳細は、[Setting Up Commerce Warehouses](./inventory-management/setting-up-warehouses.md)と[Warehouse Reference Guide](./inventory-management/warehouse-reference-guide.md)を参照してください。
+在庫管理についての詳細は、[Setting Up Commerce Warehouses](./inventory-management/setting-up-warehouses.md)と [倉庫リファレンスガイド](./inventory-management/warehouse-reference-guide.md) を参照してください。
 
 店舗が注文を受けるには、関連するチャンネルに倉庫が関連付けられている必要があります。 [チャネル入門](../store-management/channels/introduction-to-channels.md) を読んで、チャネルの仕組みを理解しましょう。
 
 ## 倉庫別の在庫の設定
 
-Liferayでは、在庫はSKU単位で管理されます。 詳しくは、 [Setting Inventory by Warehouse](./inventory-management/setting-inventory-by-warehouse.md) をお読みください。
+Liferayでは、在庫はSKU単位で管理されます。 詳しくは、 [倉庫別の在庫の設定](./inventory-management/setting-inventory-by-warehouse.md) をお読みください。
 
 ```{important}
 在庫の各商品は、少なくとも1つのSKUに関連付けられている必要があります。
@@ -57,7 +57,7 @@ Liferayでは、在庫はSKU単位で管理されます。 詳しくは、 [Sett
 
 ## 在庫数低下時のアクション
 
-在庫切れアクションは、商品の在庫が特定の閾値に達したときにアクションを実行します。 在庫が最小のしきい値に達したときに実行されるアクションの設定方法については、 [Low Stock Action](./inventory-management/low-stock-action.md) をお読みください。
+在庫切れアクションは、商品の在庫が特定の閾値に達したときにアクションを実行します。 在庫が最小のしきい値に達したときに実行されるアクションの設定方法については、 [在庫数低下時のアクション](./inventory-management/low-stock-action.md) をお読みください。
 
 独自のカスタムローストックアクションの作成に興味のある開発者は、 [カスタムローストックアクティビティの実装](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)をご覧ください。
 

@@ -1,16 +1,16 @@
 # 製品在庫構成リファレンスガイド
 
-カタログに掲載されている商品をストアフロントで在庫データを表示するように設定することができます。 在庫データの表示には、2つのオプションがあります。 *Display Availability* と *Display Stock Quantity*. 在庫数量が低在庫閾値以上の場合は、 *Available* と表示され、在庫数量が低在庫閾値以下の場合は、 *Unavailable*と表示されます。 また、在庫エンジンの選択、在庫予測、バックオーダーの有効化、最大注文数の設定などが可能です。
+カタログに掲載されている商品をストアフロントで在庫データを表示するように設定することができます。 在庫データの表示には、2つのオプションがあります。 **Display Availability** と **Display Stock Quantity** . 在庫数量が低在庫閾値以上の場合は、 **Available** と表示され、在庫数量が低在庫閾値以下の場合は、 **Unavailable** と表示されます。 また、在庫エンジンの選択、在庫予測、バックオーダーの有効化、最大注文数の設定などが可能です。
 
 ![在庫があるときとないときの商品の在庫状況を表示する。](./product-inventory-configuration-reference-guide/images/01.png)
 
 製品のインベントリ設定オプションにアクセスするには、次のようにします。
 
-1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Products*に移動します。
+1. **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Products** に移動します。
 
 1. 製品を選択します。
 
-1. *［設定］*タブをクリックします。
+1. ［**設定**］ タブをクリックします。
 
 ![選択した製品で利用可能な設定項目です。](./product-inventory-configuration-reference-guide/images/02.png)
 
@@ -30,9 +30,9 @@
 
 ## Commerce 2.0以前
 
-製品のインベントリ構成オプションにアクセスするには、その *構成* タブに移動し、左のメニューから *インベントリ* をクリックします。
+製品のインベントリ構成オプションにアクセスするには、その **構成** タブに移動し、左のメニューから **インベントリ** をクリックします。
 
-![[設定] タブには、選択した製品で利用可能なインベントリオプションが表示されます。](./product-inventory-configuration-reference-guide/images/03.png)
+![ [設定] タブには、選択した製品で利用可能なインベントリオプションが表示されます。](./product-inventory-configuration-reference-guide/images/03.png)
 
 ## 追加情報
 

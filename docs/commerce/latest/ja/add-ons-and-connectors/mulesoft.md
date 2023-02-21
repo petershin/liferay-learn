@@ -18,9 +18,9 @@ mulesoft/designing-mule-flows.md
 
 ## 前提条件
 
-先に進む前に、Mule フローやグローバル要素など、Mule および Anypoint Studio の概念に精通している必要があります。 詳細については、 [MuleSoft の公式ドキュメント](https://docs.mulesoft.com/general/) を参照し、 [Anypoint Studio チュートリアル](https://developer.mulesoft.com/tutorials-and-howtos)の受講をご検討ください。
+先に進む前に、Mule フローやグローバル要素など、Mule および Anypoint Studio の概念に精通している必要があります。 詳細については、 [MuleSoft の公式ドキュメント](https://docs.mulesoft.com/general/) を参照し、 [Anypoint Studio チュートリアル](https://developer.mulesoft.com/tutorials-and-howtos) の受講をご検討ください。
 
-コネクタの前提条件については、Liferay の [リリースノート](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/release-notes.adoc)を参照してください。
+コネクタの前提条件については、Liferay の [リリースノート](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/release-notes.adoc) を参照してください。
 
 ::::{grid} 2
 :gutter: 3 3 3 3

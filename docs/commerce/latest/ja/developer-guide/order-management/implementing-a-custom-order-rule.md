@@ -33,7 +33,7 @@ Liferayでは、特定の条件を満たした注文に対して注文ルール�
    STARTED com.acme.x9k1.impl_1.0.0
    ```
 
-1. 管理者としてログインし、 *グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コントロールパネル**］ &rarr; ［**言語オーバーライド**］ をクリックしてください。 **追加** ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下のキーを追加します。
+1. 管理者としてログインし、 **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コントロールパネル**］ &rarr; ［**言語オーバーライド**］ をクリックしてください。 **追加** ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下のキーを追加します。
 
    | 言語キー                        | 値          |
    |:--------------------------- |:---------- |
@@ -44,9 +44,9 @@ Liferayでは、特定の条件を満たした注文に対して注文ルール�
    Liferay DXP 7.4 U4以降、またはLiferay Portal 7.4 GA8以降の言語オーバーライドツールで言語キーを追加することができます。 以前のバージョンでは、ビルドとデプロイの前に、 `/src/main/resources/content/`の下に`Language.properties`ファイルを追加し、キーを指定する必要があります。
    ```
 
-1. *グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［*commerce*］ &rarr; ［*注文ルール*］ をクリックしてください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**注文ルール**］ をクリックしてください。
 
-1. *追加* ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下の情報を入力します。
+1. **追加** ボタン(![Add icon](../../images/icon-add.png))をクリックし、以下の情報を入力します。
 
    **名前：** Minimum Order Quantity - 3
 
@@ -56,19 +56,19 @@ Liferayでは、特定の条件を満たした注文に対して注文ルール�
 
    ![カスタム注文ルールの名前、説明、タイプを入力します。](./implementing-a-custom-order-rule/images/01.png)
 
-1. ［*Submit*］ をクリックします 。
+1. ［**Submit**］ をクリックします 。
 
-1. ［*Configuration*］ セクションで、 ［*Minimum Quantity*］ を_3_に設定します。
+1. ［**Configuration**］ セクションで、 ［**Minimum Quantity**］ を **3** に設定します。
 
 1. 新しい注文ルールを有効にするには、［アクティブ］トグルをクリックします。
 
    ![最小数を3に設定し、有効トグルを使用して新しい注文ルールを有効にします。](./implementing-a-custom-order-rule/images/02.png)
 
-1. ［*Publish*］ をクリックします。
+1. ［**Publish**］ をクリックします。
 
-1. *グローバルメニュー*(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［*コントロールパネル*］ &rarr; ［*サイト*］ をクリックし、新しいMiniumデモサイトを追加してください。
+1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コントロールパネル**］ &rarr; ［**サイト**］ をクリックし、新しいMiniumデモサイトを追加してください。
 
-1. バイヤーとしてログインし、商品をカートに追加します。 *Submit* をクリックしてチェックアウトします。
+1. バイヤーとしてログインし、商品をカートに追加します。 **Submit** をクリックしてチェックアウトします。
 
 注文数が3個以下の場合、警告メッセージが表示されます。 この条件を満たすまで、チェックアウトはできません。
 

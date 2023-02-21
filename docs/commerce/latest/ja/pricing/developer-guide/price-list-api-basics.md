@@ -9,7 +9,7 @@
 
 Liferayの実行後、
 
-1. Download and unzip [Price List API Basics](./liferay-c2v4.zip).
+1. Download and unzip [Price List API Basics](./liferay-c2v4.zip) .
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/pricing/developer-guide/liferay-c2v4.zip -O
@@ -21,7 +21,7 @@ Liferayの実行後、
 
 1. 価格表はカタログにスコープされているので、作成するにはカタログIDが必要です。
 
-   カタログの ID を取得するには、 *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Catalogs*に進みます。 カタログを選択し、そのIDをコピーする。
+   カタログの ID を取得するには、 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Catalogs** に進みます。 カタログを選択し、そのIDをコピーする。
 
    ![カタログIDをコピーする。](./price-list-api-basics/images/01.png)
 
@@ -77,7 +77,7 @@ Liferayの実行後、
    }
    ```
 
-1. 価格表の追加を確認するには、 *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Price Lists*に移動してください。 新しい価格表が表示されます。
+1. 価格表の追加を確認するには、 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Price Lists** に移動してください。 新しい価格表が表示されます。
 
    ![新しい価格表が追加されたことを確認する。](./price-list-api-basics/images/02.png)
 
@@ -112,7 +112,7 @@ Liferayの実行後、
 | `-u "test@liferay.com:learn"`                                                                                       | 基本認証の認証情報を入力します。                   |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html)をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -153,7 +153,7 @@ Liferayの実行後、
 
 cURL または Java コマンドで、Liferay インスタンスのすべての価格リストをリストアップします。
 
-### 価格リスト_GET_FromInstance.sh
+### PriceLists_GET_FromInstance.sh
 
 コマンド:
 
@@ -167,7 +167,7 @@ cURL または Java コマンドで、Liferay インスタンスのすべての�
    :language: bash
 ```
 
-### 価格リスト_GET_FromInstance.java
+### PriceLists_GET_FromInstance.java
 
 コマンド:
 
@@ -212,7 +212,7 @@ java -classpath .:* PriceLists_GET_FromInstance
 | `createDate:desc`           | createDateの降順でソートします。                   |
 | `createDate:desc,type:desc` | 最初にcreateDateの降順でソートし、次にtypeの降順でソートします。 |
 
-詳しくは、[APIクエリパラメーター](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html)をご参照ください。
+詳しくは、 [APIクエリパラメーター](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
 
 ## 価格表を見る
 
@@ -222,7 +222,7 @@ cURL または Java `get` コマンドで特定の価格表を取得します。
 価格リストのリストを取得するには `PriceLists_GET_FromInstance.[java|sh]` を使用し、特に必要な価格リストの `id` をメモしてください。
 ```
 
-### 価格表_GET_ById.sh
+### PriceList_GET_ById.sh
 
 コマンド：
 
@@ -322,4 +322,4 @@ java -classpath .:* -DpriceListId=1234 PriceList_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `PriceList` のサービスとスキーマが表示され、各サービスをテストするためのインターフェイスを備えています。
+[API Explorer](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `PriceList` のサービスとスキーマが表示され、各サービスをテストするためのインターフェイスを備えています。

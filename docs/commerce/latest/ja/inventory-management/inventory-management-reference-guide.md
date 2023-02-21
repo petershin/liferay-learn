@@ -1,6 +1,6 @@
 # 在庫管理リファレンスガイド
 
-インベントリ設定にアクセスするには、 *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Inventory*に移動してください。
+インベントリ設定にアクセスするには、 **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Inventory** に移動してください。
 
 ![グローバルメニューからインベントリ設定に移動します。](./inventory-management-reference-guide/images/01.png)
 
@@ -24,7 +24,7 @@
 
 概要]タブには、すべての倉庫にあるSKUの在庫の概要が表示されます。
 
-![概要]タブには、すべての倉庫の在庫の概要が表示されます。](./inventory-management-reference-guide/images/03.png)
+![[概要]タブには、すべての倉庫の在庫の概要が表示されます。](./inventory-management-reference-guide/images/03.png)
 
 | 項目     | 説明              |
 |:------ |:--------------- |
@@ -34,7 +34,7 @@
 | 設定可能一覧 | 購入可能なユニット数。     |
 | 受信     | 倉庫への入庫予定数。      |
 
-*追加* (![Add Button](../images/icon-add.png)) をクリックして、在庫を更新したり、倉庫間で在庫を移動したりします。
+**追加**(![Add Button](../images/icon-add.png)) をクリックして、在庫を更新したり、倉庫間で在庫を移動したりします。
 
 ![在庫の追加や倉庫間の在庫移動が可能。](./inventory-management-reference-guide/images/04.png)
 
@@ -48,9 +48,9 @@ On Orderタブには、このSKUに注文を出したアカウントのリスト
 
 入荷情報]タブには、SKUの在庫補充が予定されている倉庫がリストアップされます。
 
-![入荷情報]タブには、SKUの在庫補充が予定されている倉庫がリストアップされます。](./inventory-management-reference-guide/images/06.png)
+![[入荷情報]タブには、SKUの在庫補充が予定されている倉庫がリストアップされます。](./inventory-management-reference-guide/images/06.png)
 
-*追加* (![Add Button](../images/icon-add.png)) をクリックし、選択したSKUの入荷情報を作成します。
+**追加**(![Add Button](../images/icon-add.png)) をクリックし、選択したSKUの入荷情報を作成します。
 
 ![特定の倉庫の数量を追加します。](./inventory-management-reference-guide/images/07.png)
 
@@ -66,7 +66,7 @@ On Orderタブには、このSKUに注文を出したアカウントのリスト
 
 ## Commerce 2.1以前
 
-インベントリーの設定は、コントロールパネルにあります。 アクセスするには、 *コントロールパネル* &rarr; *コマース* &rarr; *インベントリ*に移動します。
+インベントリーの設定は、コントロールパネルにあります。 アクセスするには、 **コントロールパネル** &rarr; **コマース** &rarr; **インベントリ** に移動します。
 
 ## 追加情報
 

@@ -22,7 +22,7 @@
 
 ![クーポンコード機能をアクティブにし、この割引種類のクーポンコードを入力します。](./introduction-to-discounts/images/01.png)
 
-クーポンコードを受け付けるには、ストアの [チェックアウト](../../creating-store-content/commerce-storefront-pages/checkout.md) ページに *クーポンコード入力* ウィジェットを追加する必要があります。 チェックアウトページは、 [Minium site](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)ですぐに利用できます。
+クーポンコードを受け付けるには、ストアの [チェックアウト](../../creating-store-content/commerce-storefront-pages/checkout.md) ページに **クーポンコード入力** ウィジェットを追加する必要があります。 チェックアウトページは、 [Minium site](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)ですぐに利用できます。
 
 ![コマース・クーポンコードウィジェットをチェックアウトページに配置します。](./introduction-to-discounts/images/02.png)
 
@@ -46,9 +46,9 @@
 | これらの製品をすべて所有   | 割引を受けるには、注文に特定のすべての商品が含まれている必要があります。                  |
 | これらの製品のいずれかを所有 | 注文には、割引を受けるために、指定された商品のリストから少なくとも1つの商品が含まれている必要があります。 |
 
-*ルール* セクションで割引ルールを追加することができます。 また、開発者は可能 [新しい割引ルール実装](../../developer-guide/promotions/adding-a-new-discount-rule-type.md)することも可能です。
+**ルール** セクションで割引ルールを追加することができます。 また、開発者は可能 [新しい割引ルール実装](../../developer-guide/promotions/adding-a-new-discount-rule-type.md)することも可能です。
 
-*Has all of these products* または *Has one of these products* のルールを使用する場合、カタログ内のどの製品が割引の対象となるかを選択します。
+**Has all of these products** または **Has one of these products** のルールを使用する場合、カタログ内のどの製品が割引の対象となるかを選択します。
 
 ![利用可能な割引ルールの種類。](./introduction-to-discounts/images/05.png)
 

@@ -76,10 +76,10 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 
     **Hi,**
 
-    **[%SHIPMENT_CREATOR_NAME%]によって、新しい出荷が作成されました**
+    [**%SHIPMENT_CREATOR_NAME%]によって、新しい出荷が作成されました**
 
     **配送先住所:**
-    *[%ORDER_SHIPPING_ADDRESS%]*
+    [**%ORDER_SHIPPING_ADDRESS%**]
 
     **ありがとうございます。**
 

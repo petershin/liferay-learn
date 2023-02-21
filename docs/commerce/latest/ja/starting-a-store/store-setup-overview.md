@@ -14,7 +14,7 @@
 ## ストア設定
 
 ```{note}
-[Accelerator](../starting-a-store/accelerators.md) は、ストアサイトの作成に使用することができます。 アクセラレータを使用して店舗サイトを作成すると、このセクションで述べた多くの設定が行われます。詳細は、[Using the Minium Accelerator to Jump Start Your B2B Store](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) を参照してください。
+[Accelerator](../starting-a-store/accelerators.md) は、ストアサイトの作成に使用することができます。 アクセラレータを使用して店舗サイトを作成すると、このセクションで述べた多くの設定が行われます。詳細は、[Minium Acceleratorを使用してB2Bストアをすぐに開始する](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) を参照してください。
 ```
 
 最初のストア設定は、[管理者アカウント](./introduction-to-the-admin-account.md)を使用して行います 。 Liferay Commerceの設定レイアウトと使用可能なオプションについては、[Liferay Commerceの設定の概要](../store-management/liferay-commerce-configuration-overview.md)をご覧ください。
@@ -32,7 +32,7 @@ Liferay Commerceのグローバル設定には、ストアのタイムゾーン�
 
 Liferay Commerceは、B2B、B2C、およびB2C-B2Bストアをサポートしています。 [サイトの種類](../starting-a-store/sites-and-site-types.md)によって、ストアのビジネスモデルが指定され、ストアフロントがアカウントとどのように連携するかが決まります。
 
-Liferay CommerceはLiferay DXP上に構築されています。 Liferay DXPサイトの機能の詳細は、[Building a Site](https://learn.liferay.com/dxp/latest/en/site-building/building-sites/adding-a-site.html)を参照してください。
+Liferay CommerceはLiferay DXP上に構築されています。 Liferay DXPサイトの機能の詳細は、 [Building a Site](https://learn.liferay.com/dxp/latest/en/site-building/building-sites/adding-a-site.html) を参照してください。
 
 ### ストアサイトのコマース設定を構成する
 
@@ -72,7 +72,7 @@ Liferay Commerceには、送料を計算するためのいくつかのオプシ�
 
 ### カタログに商品を追加する
 
-商品を追加するときは、**シンプル**、**グループ**、**仮想**の3つの商品タイプがあります。 詳細は、[商品タイプの概要](../product-management/creating-and-managing-products/product-types.md)を参照してください。
+商品を追加するときは、 **シンプル** 、 **グループ** 、 **仮想** の3つの商品タイプがあります。 詳細は、[商品タイプの概要](../product-management/creating-and-managing-products/product-types.md)を参照してください。
 
 #### 商品情報の追加
 

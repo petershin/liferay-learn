@@ -107,7 +107,6 @@ DXP 7.1/7.2の適切なフィックスパックを実行したら、以下の手
 1. Liferay Commerceをダウンロードします。
 
     * Commerceエンタープライズは [ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) から入手できます。
-    * Commerce Communityは、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community) から入手できます。
 
 1. `LPKG`を`[Liferay Home]/deploy`フォルダにデプロイしてください。 Liferay DXPへのアプリケーションのデプロイについて詳しくは、 [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) をご覧ください。
 

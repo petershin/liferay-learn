@@ -7,17 +7,17 @@ Once a model is selected and the text embeddings are indexed, you must configure
 1. Create a blueprint to completely override Liferay's default search request, building one from scratch to execute a pure semantic search query, only using the text embeddings.
 1. Use the out-of-the-box Rescore by Text Embedding element to create a blueprint that executes the standard keyword-based query, then rescores the results with a similarity function between the text embeddings of the indexed dense_vector field and the embeddings of the search phrase.
 
-To build a semantic search experience leveraging the sentence embeddings created by the sentence transformer provider you configured, Liferay includes an out-of-the-box element (in 7.4 Update 50+) called Rescore by Text Embedding that re-scores the results of the original query using the text embedding value. Use the element to build a [search blueprint](./creating-and-managing-search-blueprints.md). With this element and the visual query builder in Blueprints, you can configure and test the search query to build the right semantic search solution.
+To build a semantic search experience leveraging the text embeddings created by the embedding provider you configured, Liferay includes an out-of-the-box element (in 7.4 Update 50+) called Rescore by Text Embedding that re-scores the results of the original query using the text embedding value. Use the element to build a [search blueprint](./creating-and-managing-search-blueprints.md). With this element and the visual query builder in Blueprints, you can configure and test the search query to build the right semantic search solution.
 
 <!-- For how it works: There's an ootb element rescore by text embedding, ping petteri: it rescores x results using a special function which uses the vector field. produce initial results by keyword, rescore them using the vector representations. the function can be chosen, dotProduct or cosin -->
 
 ```{important}
-The out-of-the-box Rescore by Text Embedding element (available in 7.4 Update 50+), when configured to work with a sentence transformer, can produce more targeted search results for some data sets. However, many semantic search solutions will require manual tweaking and perhaps new elements to achieve a robust search solution.
+The out-of-the-box Rescore by Text Embedding element (available in 7.4 Update 50+), when configured to work with an embedding provider, can produce more targeted search results for some data sets. However, many semantic search solutions will require manual tweaking and perhaps new elements to achieve a robust search solution.
 ```
 
 ![The Rescore by Text Embedding element brings basic semantic search to Liferay.](./semantic-search/images/01.png)
 
-This element is effective only if the sentence transformer is enabled and configured to operate on specific content types and languages. See the Search Experiences entry in System Settings to configure transformation.
+This element is effective only if the embedding provider is enabled and configured to operate on specific content types and languages. See the Search Experiences entry in System Settings to configure the embedding provider.
 
 ## Configuring the Rescore by Text Embedding Element
 

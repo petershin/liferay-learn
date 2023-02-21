@@ -19,6 +19,10 @@ See the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/a
 
 ## Downloading the Solr Connector
 
+```{warning}
+Do not install the Solr connector into a running Liferay until the [blacklist](#disabling-elasticsearch-only-features) and [connector](#installing-and-configuring-the-solr-connector) configurations are in place and [Solr is running](#installing-and-configuring-solr).
+```
+
 If you haven't already acquired the connector to Solr,
 
 1. In a running Liferay, go to Control Panel &rarr; Marketplace &rarr; Store. Sign in.
@@ -48,10 +52,6 @@ After purchase, download the LPKG file from the Past Versions page.
 1. Click *App* to download the app's LPKG file.
 
 Refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for the compatible application versions for your Liferay version and patch level.
-
-```{warning}
-Do not install the Solr connector into a running Liferay until the [blacklist](#disabling-elasticsearch-only-features) and [connector](#installing-and-configuring-the-solr-connector) configurations are in place and [Solr is running](#installing-and-configuring-solr).
-```
 
 ## Disabling Elasticsearch-Only Features
 

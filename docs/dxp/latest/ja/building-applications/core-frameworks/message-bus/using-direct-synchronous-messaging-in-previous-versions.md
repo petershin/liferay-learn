@@ -18,7 +18,7 @@
 1. サンプルをダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
+    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
     ```
 
     ```bash
@@ -98,9 +98,9 @@
    :lines: 15-42
 ```
 
-このコンフィギュレーターは[`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)クラスです。 これは、[`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html)アノテーションを使用して、`DestinationFactory`インスタンスを挿入します。
+このコンフィギュレーターは [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) クラスです。 これは、 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) アノテーションを使用して、`DestinationFactory`インスタンスを挿入します。
 
-`_activate(BundleContext)`メソッドは、[`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java)と[`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java)を使用して、`acme/x6n5_able`という名前の*同期*宛先を作成します。 同期宛先は、同期メッセージング用に最適化されています。 最後に、メソッドは`BundleContext`を使用して[`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)をOSGiサービスに登録します。
+`_activate(BundleContext)`メソッドは、 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) と [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) を使用して、`acme/x6n5_able`という名前の **同期** 宛先を作成します。 同期宛先は、同期メッセージング用に最適化されています。 最後に、メソッドは`BundleContext`を使用して [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) をOSGiサービスに登録します。
 
 `X6N5AbleMessagingConfigurator`が無効化されると、その`_deactivate()`メソッドは宛先サービスの登録を解除します。
 
@@ -113,7 +113,7 @@
    :lines: 12-37
 ```
 
-`X6N5BakerOSGiCommands`は、独自のクラスタイプのサービス`Component`です。 これは、`@Reference`アノテーションを使用して、*ダイレクト*モード（アノテーションの`target = "(mode=DIRECT)"`属性で指定）に設定された`SynchronousMessageSender`を挿入します。
+`X6N5BakerOSGiCommands`は、独自のクラスタイプのサービス`Component`です。 これは、`@Reference`アノテーションを使用して、 **ダイレクト** モード（アノテーションの`target = "(mode=DIRECT)"`属性で指定）に設定された`SynchronousMessageSender`を挿入します。
 
 ```{note}
 *ダイレクト*モードでは、`SynchronousMessageSender` `send`メソッドは、現在のスレッドがすべてのリスナーにメッセージを配信するまで、呼び出し元のクラスをブロックします。
@@ -121,11 +121,11 @@
 
 `X6N5BakerOSGiCommands`の`@Component`プロパティは、`sendMessage`と呼ばれるGogoシェルコマンド関数を`x6n5`スコープで定義します。 コマンドは`sendMessage(String)`メソッドにマッピングされ、入力`String`を受け取ります。
 
-`sendMessage(String)`メソッドは、Gogoシェルコマンドの`String`をペイロードとして使用して[`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java)を作成します。 `SynchronousMessageSender` `send(String, Message)`メソッドは、現在のスレッドを使用して、`acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)メッセージリスナーにメッセージを配信します。 スレッドがすべての[`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)でメッセージを処理するまで、実行は`X6N5BakerOSGiCommands`クラスでブロックされます。 その後、`X6N5BakerOSGiCommands` `sendMessage(String)`メソッドで実行が続行され、メッセージ応答がログに記録されます。
+`sendMessage(String)`メソッドは、Gogoシェルコマンドの`String`をペイロードとして使用して [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) を作成します。 `SynchronousMessageSender` `send(String, Message)`メソッドは、現在のスレッドを使用して、`acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) メッセージリスナーにメッセージを配信します。 スレッドがすべての [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) でメッセージを処理するまで、実行は`X6N5BakerOSGiCommands`クラスでブロックされます。 その後、`X6N5BakerOSGiCommands` `sendMessage(String)`メソッドで実行が続行され、メッセージ応答がログに記録されます。
 
 ## リスナーを調べる
 
-`x6n5-charlie-impl`モジュールの`X6N5CharlieMessageListener`クラスと`x6n5-dog-impl`モジュールの`X6N5DogMessageListener`クラスは、`acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)に送信されたメッセージをリッスンします。 [Listening for Messages](./listening-for-messages.md)に示されている方法と同じ方法で登録されます。
+`x6n5-charlie-impl`モジュールの`X6N5CharlieMessageListener`クラスと`x6n5-dog-impl`モジュールの`X6N5DogMessageListener`クラスは、`acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) に送信されたメッセージをリッスンします。 [メッセージを聞く](./listening-for-messages.md) に示されている方法と同じ方法で登録されます。
 
 `X6N5CharlieMessageListener`クラス：
 
@@ -147,9 +147,9 @@
 
 ## 次のステップ
 
-*デフォルトの* モードを使った同期メッセージングについて調べたい場合は、 [旧バージョンのデフォルトの同期メッセージングの使用](./using-default-synchronous-messaging-in-previous-versions.md)をご覧ください。
+**デフォルトの** モードを使った同期メッセージングについて調べたい場合は、 [旧バージョンのデフォルトの同期メッセージングの使用](./using-default-synchronous-messaging-in-previous-versions.md)をご覧ください。
 
-メッセージを送信した直後に処理を続行する場合は、[Using Asynchronous Messaging](./using-asynchronous-messaging.md)を参照してください。
+メッセージを送信した直後に処理を続行する場合は、 [非同期メッセージングの使用](./using-asynchronous-messaging.md) を参照してください。
 
 ## 追加情報
 

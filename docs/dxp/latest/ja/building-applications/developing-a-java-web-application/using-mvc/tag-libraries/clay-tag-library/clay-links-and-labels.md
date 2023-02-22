@@ -90,6 +90,6 @@ Liferay Clayのラベルには、情報を表す紺色、ステータスを表�
 
 ## 関連トピック
 
-* [Clay Badges](./clay-badges.md)
-* [Clay Cards](./clay-cards.md)
-* [Clay Form Elements](./clay-form-elements.md)
+* [Clayバッジ](./clay-badges.md)
+* [Clayカード](./clay-cards.md)
+* [Clayフォーム要素](./clay-form-elements.md)

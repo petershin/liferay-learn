@@ -48,7 +48,7 @@ LiferayオブジェクトはFormsアプリケーションと統合されてい�
    必須オブジェクトフィールドにマッピングされた場合、フォームフィールドは自動的に必須とマークされます。 [フォームルールを使用](../../process-automation/forms/form-rules/form-rules-overview.md)して、[必須フィールドを条件付きで非表示にする](../../process-automation/forms/form-rules/example-using-hidden-fields-with-form-rules.md)場合、その中に必ず適切なデータが入っていないとフォーム送信が失敗してしまいます。[定義済み値](../../process-automation/forms/creating-and-managing-forms/providing-help-text-and-predefined-values.md) と [autofill rule](../../process-automation/forms/form-rules/using-the-autofill-rule.md) は必須の非表示フィールドに正しく入力されるようにすることができます。
    ```
 
-   ![[詳細設定]タブで、目的のオブジェクトフィールドを選択します。](./using-forms-with-objects/images/02.png)
+   ![ [詳細設定]タブで、目的のオブジェクトフィールドを選択します。](./using-forms-with-objects/images/02.png)
 
 1. 希望するすべてのオブジェクトフィールドがフォームフィールドにマッピングされるまで、上記のプロセスを繰り返します。
 

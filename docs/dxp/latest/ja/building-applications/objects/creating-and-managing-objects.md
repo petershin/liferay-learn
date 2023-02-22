@@ -36,7 +36,7 @@ creating-and-managing-objects/deleting-objects.md
 
 {bdg-secondary}`Liferay DXP/Portal 7.4以降で利用可能`
 
-Liferay Objectでは、コードを記述することなくビジネスニーズを満たすカスタムアプリケーションを[作成](./creating-and-managing-objects/creating-objects.md)するための便利なUIを提供します。 オブジェクトを使用して、システムオブジェクトとカスタムオブジェクトの両方を管理および拡張することもできます。 これには、[フィールド](./creating-and-managing-objects/fields.md)、[リレーションシップ](./creating-and-managing-objects/relationships.md)、[アクション](./creating-and-managing-objects/actions.md)、[レイアウト](./creating-and-managing-objects/layouts.md)、[ビュー](./creating-and-managing-objects/views.md)、[バリデーション](./creating-and-managing-objects/validations.md)、[カスタムステータス](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md)の追加が含まれます。 オブジェクト定義に関連するこれらの操作やその他の操作を実行するために必要な権限については、 [Objects Application Permissions](./objects-application-permissions.md) を参照してください。
+Liferay Objectでは、コードを記述することなくビジネスニーズを満たすカスタムアプリケーションを[作成](./creating-and-managing-objects/creating-objects.md)するための便利なUIを提供します。 オブジェクトを使用して、システムオブジェクトとカスタムオブジェクトの両方を管理および拡張することもできます。 これには、[フィールド](./creating-and-managing-objects/fields.md)、[リレーションシップ](./creating-and-managing-objects/relationships.md)、[アクション](./creating-and-managing-objects/actions.md)、[レイアウト](./creating-and-managing-objects/layouts.md)、[ビュー](./creating-and-managing-objects/views.md)、[バリデーション](./creating-and-managing-objects/validations.md)、[カスタムステータス](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md)の追加が含まれます。 オブジェクト定義に関連するこれらの操作やその他の操作を実行するために必要な権限については、 [オブジェクトアプリケーションの権限](./objects-application-permissions.md) を参照してください。
 
 ```{note}
 システムオブジェクトはオブジェクトフレームワークと統合されたデフォルトのLiferayアプリケーションであり、カスタムオブジェクトはユーザーが作成し公開する定義です。

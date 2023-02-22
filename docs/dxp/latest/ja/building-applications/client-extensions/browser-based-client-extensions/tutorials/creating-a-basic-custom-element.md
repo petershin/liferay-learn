@@ -16,7 +16,7 @@
 カスタム要素クライアント拡張は、アプリケーションがどのように構築され、パッケージ化され、ホストされているかには関係ありません。 このチュートリアルは、カスタム要素アプリケーションのサンプルを作成する便利な方法のみを提供します。
 ```
 
-`create_remote_app.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/)、 [NPM](https://www.npmjs.com/)、および [YARN](https://classic.yarnpkg.com/)が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
+`create_remote_app.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/) 、 [NPM](https://www.npmjs.com/) 、および [YARN](https://classic.yarnpkg.com/) が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
 
 ## `create_remote_app.sh` スクリプトを実行します。
 
@@ -79,7 +79,7 @@ h5v7-remote-app
 
 ### Reactルーチンを理解する
 
-生成されたコードには、 `hello-world` (デフォルト)、 `hello-foo`、 `hello-bar`の3つのルートが含まれています。 ルートは、アプリケーションを実行する際に使用できる代替コードのセットです。 基本的な例として、 [Using Routes with Custom Elements](./using-routes-with-custom-elements.md) を参照してください。
+生成されたコードには、 `hello-world` (デフォルト)、 `hello-foo`、 `hello-bar`の3つのルートが含まれています。 ルートは、アプリケーションを実行する際に使用できる代替コードのセットです。 基本的な例として、 [カスタム要素でルートを使用する](./using-routes-with-custom-elements.md) を参照してください。
 
 ## Reactアプリケーションの構築
 
@@ -107,7 +107,7 @@ File sizes after gzip:
   121 B     build/static/css/main.9877909d.css
 ```
 
-これらのファイルは、Liferayからアクセス可能な場所に[ホストされている](#hosting-the-application-files)必要があります。これらは、リモートサーバーや、静的リソースの提供に最適化されたデータストレージシステムでホストすることができます。デモの目的で、この例ではLiferayのドキュメントライブラリにアップロードし、WebDAV URLを使ってホストしています。
+これらのファイルは、Liferayからアクセス可能な場所に [ホストされている](#hosting-the-application-files) 必要があります。これらは、リモートサーバーや、静的リソースの提供に最適化されたデータストレージシステムでホストすることができます。デモの目的で、この例ではLiferayのドキュメントライブラリにアップロードし、WebDAV URLを使ってホストしています。
 
 ```{tip}
 ビルドごとに一意のファイル名が生成されます。 カスタムアプリケーションをテストする場合、ビルド後に `.js` と `.css` ファイルを更新することを忘れないでください。

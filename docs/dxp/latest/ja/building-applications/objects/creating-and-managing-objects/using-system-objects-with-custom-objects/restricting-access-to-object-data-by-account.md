@@ -12,7 +12,7 @@
 
 アカウント制限を設定する場合。
 
-1. *グローバルメニュー*（![Global Menu](../../../../images/icon-applications-menu.png)）を開き、*［コントロールパネル］*タブに移動して、*［オブジェクト］*をクリックします。
+1. **グローバルメニュー**（![Global Menu](../../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**オブジェクト**］ をクリックします。
 
 1. アカウントシステムオブジェクトの編集を開始します。
 
@@ -22,13 +22,13 @@
 
 1. オブジェクトページに戻り、目的のカスタムオブジェクトの編集を開始します。
 
-1. 詳細]タブで、 *アカウント制限* を有効にし、使用するアカウント関係を選択します。
+1. 詳細]タブで、 **アカウント制限** を有効にし、使用するアカウント関係を選択します。
 
    ![アカウント制限をアクティブに切り替え、使用するアカウントリレーションシップを選択します。](./restricting-access-to-object-data-by-account/images/03.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
-これにより、アカウント関係フィールドが必須となり、ユーザーはエントリーを作成する際にアカウントを選択する必要があります。 利用可能なアカウントオプションは、各ユーザーの [パーミッション](#account-restriction-and-user-roles)によって決定されます。 エントリー作成後、選択されたアカウントはエントリーのオーナーとなり、変更することはできません。
+これにより、アカウント関係フィールドが必須となり、ユーザーはエントリーを作成する際にアカウントを選択する必要があります。 利用可能なアカウントオプションは、各ユーザーの [パーミッション](#account-restriction-and-user-roles) によって決定されます。 エントリー作成後、選択されたアカウントはエントリーのオーナーとなり、変更することはできません。
 
 ## アカウント制限とユーザーロール
 
@@ -42,9 +42,8 @@
 
 アカウント制限のためのロールを設定する場合、以下の点を考慮してください。
 
-* 通常のロールは、 `Accounts > Account Entry を持っている必要があります。オブジェクトエントリを作成するためのビュー` 権限が必要です。 これは、通常のロールがアカウントや組織と関連付けられていないためです。 このパーミッションがないと、通常のロールを持つユーザーは、エントリーの作成時にアカウントを選択することができません。
-
-* 組織ロールは、オブジェクトエントリを作成するためにこれらの権限を持っている必要があります。 `User and Organizations > 組織。Manage Accounts` and `User and Organizations > Organization:サブ組織のアカウント管理`. これがないと、組織ロールを持つユーザーは、エントリーの作成時にアカウントを選択することができません。
+* 標準ロールは、オブジェクトエントリーを作成するための`Accounts > Account Entry: View`権限を持っている必要があります。これは、標準ロールがアカウントや組織と関連付けられていないためです。この権限がないと、標準ロールを持つユーザーは、エントリーの作成時にアカウントを選択することができません。
+* 組織ロールは、オブジェクトエントリーを作成するために次の権限を持っている必要があります：`User and Organizations > Organization: Manage Accounts` and `User and Organizations > Organization: Manage Suborganizations Accounts`。この権限がないと、組織ロールを持つユーザーは、エントリーの作成時にアカウントを選択することができません。
 
 * 組織とアカウントのロールを使用してカスタムオブジェクトにアクセスするには、グローバルメニュー（company-scopedの場合）またはサイトメニュー（site-scopedの場合）のいずれかのアプリケーションへのアクセスを許可する別の通常ロールをユーザーが持っている必要があります。 詳しくは、 [Object Application Permissions](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) を参照してください。
 
@@ -62,7 +61,7 @@
 - カスタマーサクセスマネージャー（CSM）は、自分が管理しているアカウントからのクレームを確認する必要があります。
 - クレームマネージャーは、すべてのクレームを監督しなければなりません。
 
-これを実現するために、 [アカウント制限を有効にしたClaimsオブジェクト](../creating-objects.md) を作成します。 次に、 [CSM をグループ化するための組織](../../../../users-and-permissions/organizations/creating-and-managing-organizations.md#adding-organizations) を作成し、 [各組織](../../../../users-and-permissions/accounts.md#organizations-tab) を適切なビジネスアカウントと関連付けます。 次の [アカウント](#account-role)、 [組織](#organization-role)、 [通常](#regular-role) ロールを作成し、 [それらを](../../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md) 適切なユーザーに割り当てる。 Claimsオブジェクトはcompany-scopedなので、アカウントと組織のユーザーは、 `Portalを許可する別のレギュラーロールも持っている必要があります。View Control Panel Menu` および `Claims:Access in Control Panel` パーミッションが付与されます。 利便性のために、これらの権限をデフォルトのユーザー・ロールに割り当てることができます。
+これを実現するために、 [アカウント制限を有効にしたClaimsオブジェクト](../creating-objects.md) を作成します。 次に、 [CSM をグループ化するための組織](../../../../users-and-permissions/organizations/creating-and-managing-organizations.md#adding-organizations) を作成し、 [各組織](../../../../users-and-permissions/accounts.md#organizations-tab) を適切なビジネスアカウントと関連付けます。 次の [アカウント](#account-role) 、 [組織](#organization-role) 、 [通常](#regular-role) ロールを作成し、 [それらを](../../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md) 適切なユーザーに割り当てる。 Claimsオブジェクトはcompany-scopedなので、アカウントと組織のユーザーは、 `Portalを許可する別のレギュラーロールも持っている必要があります。View Control Panel Menu` および `Claims:Access in Control Panel` パーミッションが付与されます。 利便性のために、これらの権限をデフォルトのユーザー・ロールに割り当てることができます。
 
 ```{note}
 この例では、各ロールはクレーム項目を作成することができますが、組織と通常のロールにはその権限を付与する必要はありません。

@@ -2,9 +2,12 @@
 
 > 対応可能：Liferay DXP/Portal 7.4以降
 
-オブジェクトを公開すると、Liferayは自動的にそのためのREST APIを生成します。 これにより、カスタムオブジェクトにヘッドレスでアクセスできるようになり、CRUD操作を実行できるようになります。 オブジェクト用に生成されたAPIは、その範囲（つまり、CompanyまたはSite）によって異なります。<!--TASK: replace first sentence when GraphQL APIs are supported, "When you publish an Object, Liferay automatically generates both REST and \[GraphQL\](https://graphql.org) APIs for it."-->すべてのオブジェクトは、`c/[pluralobjectlabel]`命名パターン（`c/timeoffrequests`など）を使用します。 各オブジェクトエントリースキーマには、オブジェクトのすべてのフィールドとリレーションシップが含まれています。
+オブジェクトを公開すると、Liferayは自動的にそのためのREST APIを生成します。 これにより、カスタムオブジェクトにヘッドレスでアクセスできるようになり、CRUD操作を実行できるようになります。 オブジェクト用に生成されたAPIは、その範囲（つまり、CompanyまたはSite）によって異なります。 <!--TASK: replace first sentence when GraphQL APIs are supported, "When you publish an Object, Liferay automatically generates both REST and [GraphQL](https://graphql.org) APIs for it."-->
 
-オブジェクトのAPIは、Liferay API Explorerを介して`[server]:[port]/o/api`（例：`localhost:8080/o/api`）で表示およびテストできます。 REST APIは、*［REST Applications］*の下にリストされています。<!--TASK: uncomment when GraphQL APIs are supported, "Click *GraphQL* to access Liferay's \[Graph*i*QL\](https://github.com/graphql/graphiql) browser."-->関連するオブジェクトのチュートリアルについては、 [APIの使用](../objects-tutorials/using-apis.md) を参照してください。
+すべてのオブジェクトは、`c/[pluralobjectlabel]`命名パターン（`c/timeoffrequests`など）を使用します。 各オブジェクトエントリースキーマには、オブジェクトのすべてのフィールドとリレーションシップが含まれています。
+
+オブジェクトのAPIは、Liferay API Explorerを介して`[server]:[port]/o/api`（例：`localhost:8080/o/api`）で表示およびテストできます。 REST APIは、 ［**REST Applications**］ の下にリストされています。
+<!--TASK: uncomment when GraphQL APIs are supported, "Click *GraphQL* to access Liferay's [Graph*i*QL](https://github.com/graphql/graphiql) browser."--> 関連するオブジェクトのチュートリアルについては、 [APIの使用](../objects-tutorials/using-apis.md) を参照してください。
 
 ## オブジェクトREST APIs
 
@@ -70,4 +73,5 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 ## 追加情報
 
 * [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-* [APIの利用](../objects-tutorials/using-apis.md)<!--TASK: * \[Consuming GraphQL APIs\](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->
+* [APIの利用](../objects-tutorials/using-apis.md)
+<!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

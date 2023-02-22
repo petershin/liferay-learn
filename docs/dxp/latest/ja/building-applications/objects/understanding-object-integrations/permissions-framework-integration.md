@@ -11,17 +11,17 @@
 ```
 
 ```{important}
-アカウントと組織のロールは、アカウント制限が有効になっているオブジェクトでのみサポートされています。 それ以外の場合は、オブジェクトのパーミッションの割り当てに通常のロールとサイトロールのみを使用することができます。 詳細は、[アカウント制限とユーザーロール](../creating and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md#account-restriction and-user-roles) を参照してください。
+アカウントと組織のロールは、アカウント制限が有効になっているオブジェクトでのみサポートされています。 それ以外の場合は、オブジェクトのパーミッションの割り当てに通常のロールとサイトロールのみを使用することができます。 詳細は、 [アカウント制限とユーザーロール](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md#account-restriction-and-user-roles) を参照してください。
 ```
 
 ## アプリケーションの権限
 
-アプリケーションパーミッションは公開オブジェクト自体へのアクセスを許可するもので、 [リソース関連のパーミッションは含まれません](#resource-permissions). 各オブジェクトは、定義されたスコープに従って、これらの標準的なアプリケーションの許可を含んでいます。
+アプリケーションパーミッションは公開オブジェクト自体へのアクセスを許可するもので、 [リソース関連のパーミッションは含まれません](#resource-permissions) . 各オブジェクトは、定義されたスコープに従って、これらの標準的なアプリケーションの許可を含んでいます。
 
 | 権限                                | 説明                                                                                         |
 |:--------------------------------- |:------------------------------------------------------------------------------------------ |
-| コントロールパネルへのアクセス（*会社スコープのみ*）       | グローバルメニュー（ ![Global Menu](../../../images/icon-applications-menu.png) ）でオブジェクトにアクセスします。    |
-| サイトとアセットライブラリ管理にアクセス（*サイトスコープのみ*） | サイトメニュー（ ![Site Menu](../../../images/icon-product-menu.png) ）またはアセットライブラリでオブジェクトにアクセスします。 |
+| コントロールパネルへのアクセス（**会社スコープのみ**）       | グローバルメニュー（ ![Global Menu](../../../images/icon-applications-menu.png) ）でオブジェクトにアクセスします。    |
+| サイトとアセットライブラリ管理にアクセス（**サイトスコープのみ**） | サイトメニュー（ ![Site Menu](../../../images/icon-product-menu.png) ）またはアセットライブラリでオブジェクトにアクセスします。 |
 | 設定                                | 該当なし                                                                                       |
 | 権限の設定                             | オブジェクトのアプリケーションパーミッションの表示と変更。                                                              |
 | 表示設定                              | 該当なし                                                                                       |
@@ -29,7 +29,7 @@
 
 ## リソース権限
 
-リソースパーミッションは、オブジェクトアプリケーションのリソースを閲覧したり操作したりするためのアクセス権を付与します。これらのパーミッションの中には[オブジェクトエントリの作成に関連する](#creating-entries)ものもあれば、[既存のエントリに対するアクションを実行する](#acting-on-existing-entries)(例：編集、削除)ためのものものもあります。
+リソースパーミッションは、オブジェクトアプリケーションのリソースを閲覧したり操作したりするためのアクセス権を付与します。これらのパーミッションの中には [オブジェクトエントリの作成に関連する](#creating-entries) ものもあれば、 [既存のエントリに対するアクションを実行する](#acting-on-existing-entries) (例：編集、削除)ためのものものもあります。
 
 ### エントリーの作成
 
@@ -62,7 +62,7 @@
 
 1. 目的のカスタムオブジェクトに移動します。
 
-1. 目的のエンティティの *Actions* ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 *Permissions*を選択します。
+1. 目的のエンティティの **Actions** ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 **Permissions** を選択します。
    
    ![目的のエンティティのアクションボタンをクリックし、［権限］を選択します。](./permissions-framework-integration/images/01.png)
 
@@ -74,11 +74,11 @@
 
 ![チェックボックスを使用して、必要なロールに権限を割り当てることができます。](./permissions-framework-integration/images/02.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 ## 追加情報
 
 * [オブジェクト統合を理解する](../understanding-object-integrations.md)
-* [Objects](../../objects.md)
+* [オブジェクト](../../objects.md)
 * [オブジェクトの作成](../creating-and-managing-objects/creating-objects.md)
 * [アカウントによるオブジェクトデータへのアクセス制限](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md)

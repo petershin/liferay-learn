@@ -10,9 +10,9 @@ A text embedding provider has two jobs:
 
 The model you use is paramount: your vectorized data is only good as the model you choose.
 
-On top of that, you need a model to perform a [similarity search](https://www.elastic.co/blog/text-similarity-search-with-vectors-in-elasticsearch) of the search phrase embeddings and the document embeddings. Models are housed in Hugging Face even if you use txtai as the transformer.
+In addition, you need a model to perform a [similarity search](https://www.elastic.co/blog/text-similarity-search-with-vectors-in-elasticsearch) of the search phrase embeddings and the document embeddings. Models are housed in Hugging Face even if you use txtai as the embeddings provider.
 
-Choose from one of two text embedding providers that can be configured to work with Liferay's search index documents: [txtai](https://neuml.github.io/txtai/) and [Hugging Face](https://huggingface.co/).
+Choose a text embedding provider to work with Liferay's search index documents: [txtai](https://neuml.github.io/txtai/) and [Hugging Face](https://huggingface.co/).
 
 ## Configure and Run txtai
 
@@ -76,7 +76,9 @@ This example setup is intended for demonstration. See the [txtai documentation](
 
 ## Using the Hugging Face Inference API
 
-To use Hugging Face as the text embeddings provider, create a [Hugging Face account](https://huggingface.co/join).
+<!--Note that it's for dev/testing, use the inference endpoints for prod -->
+
+To use the Hugging Face Infewrence API as the text embeddings provider, create a [Hugging Face account](https://huggingface.co/join).
 
 Once you have an account,
 
@@ -96,4 +98,7 @@ Once you have an account,
 
 Before saving the configuration, click the _Test Configuration_ button to ensure that Liferay can connect with the Hugging Face Inference API and that the settings it's using are in harmony.
 
+## Using the Hugging Face Inference Endpoints
+
+TODO
 

@@ -21,7 +21,7 @@ The base price list stores the starting price entry for every product SKU in a c
 
 ### Base Promotion List
 
-The base promotion list stores base promotional price entries for all product SKUs in a catalog. When applied to an SKU, the base promotional price entry overrides its base price for all customers. This list is automatically created for every catalog and is available to all accounts and channels. See [Promotion Base List Reference](./promoting-products/promotion-base-list-reference.md) for more information.
+The base promotion list stores base promotional price entries for all product SKUs in a catalog. When applied to an SKU, the base promotional price entry overrides its base price for all customers. This list is automatically created for every catalog and is available to all accounts and channels. See [Promotion Base List Reference](./promoting-products/promotions-reference.md) for more information.
 
 ![The base promotion list stores base promotional price entries for all product SKUs in a catalog.](./introduction-to-pricing/images/03.png)
 

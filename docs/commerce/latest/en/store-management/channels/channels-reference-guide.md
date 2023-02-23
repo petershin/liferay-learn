@@ -77,7 +77,7 @@ See the [Configuring the Commerce Notification Queue](../../store-management/sen
 
 Notification Templates allow users to customize their email notifications and define the triggering events.
 
-To learn more about sending emails notifications, see [Store emails](../../store-management/sending-emails/store-emails.md).
+To learn more about sending emails notifications, see [Sending emails](../sending-emails.md).
 
 To learn more about creating and using notification templates, see [Using Notification Templates](../../store-management/sending-emails/using-notification-templates.md).
 

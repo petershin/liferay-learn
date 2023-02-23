@@ -48,7 +48,7 @@ Warehouses represent physical locations where you can manage product inventory a
 
 See [Setting Up Commerce Warehouses](./inventory-management/setting-up-warehouses.md) and [Warehouse Reference Guide](./inventory-management/warehouse-reference-guide.md) for more information on managing warehouses.
 
-For a store to accept orders, the related channel must have a warehouse associated with it. Read [Introduction to Channels](../store-management/channels/introduction-to-channels.md) to understand how channels work.
+For a store to accept orders, the related channel must have a warehouse associated with it. Read [Introduction to Channels](./store-management/channels/introduction-to-channels.md) to understand how channels work.
 
 ## Setting Inventory by Warehouse
 
@@ -62,7 +62,7 @@ Each product in the inventory must be associated to at least one SKU.
 
 A low stock action performs an action when available product inventory reaches a specific threshold. Read [Low Stock Action](./inventory-management/low-stock-action.md) to learn how to configure the action that is executed when inventory reaches a minimum threshold.
 
-Developers interested in creating their own custom low stock action can read [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md).
+Developers interested in creating their own custom low stock action can read [Implementing a Custom Low Stock Activity](./developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md).
 
 ## Availability Estimates
 

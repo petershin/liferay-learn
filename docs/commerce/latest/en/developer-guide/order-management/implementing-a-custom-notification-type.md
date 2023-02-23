@@ -5,7 +5,7 @@ uuid: 147dfb06-9bea-43fd-a872-10039ca73c04
 
 You can configure Liferay Commerce to send email notifications for a variety of event triggers in your store. When there's no out-of-the-box notification trigger that fits your needs, you can implement your own. 
 
-To add a new notification type, you must implement the `CommerceNotificationType` interface. See [Store Emails](../../store-management/sending-emails/store-emails.md) to learn how to set up a Notification Template and view the OOTB types available.
+To add a new notification type, you must implement the `CommerceNotificationType` interface. See [Sending Emails](../../store-management/sending-emails.md) to learn how to set up a Notification Template and view the OOTB types available.
 
 ## Overview of a Notification Type
 
@@ -111,12 +111,20 @@ This example consists of 7 main steps. First, you must annotate the class for OS
 
 After that, create a `ModelListener` for the `CommerceShipment` class. Next, review the `CommerceDefinitionTermContributor` interface. Finally, implement term contributors to resolve the wildcards for the new notification.
 
-* [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
-* [Review the CommerceNotificationType interface](#review-the-commercenotificationtype-interface)
-* [Complete the Notification Type](#complete-the-notification-type)
-* [Create a ModelListener for CommerceShipment](#create-a-modellistener-for-commerceshipment)
-* [Review the CommerceDefinitionTermContributor interface](#review-the-commercedefinitiontermcontributor-interface)
-* [omplete the Term Contributors](#complete-the-term-contributors)
+- [Implementing a Custom Notification Type](#implementing-a-custom-notification-type)
+  - [Overview of a Notification Type](#overview-of-a-notification-type)
+  - [Deploying the Notification Type and Adding Language Keys](#deploying-the-notification-type-and-adding-language-keys)
+  - [How the Custom Notification Type Works](#how-the-custom-notification-type-works)
+    - [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
+    - [Review the CommerceNotificationType interface](#review-the-commercenotificationtype-interface)
+    - [Complete the Notification Type](#complete-the-notification-type)
+    - [Create a ModelListener for CommerceShipment](#create-a-modellistener-for-commerceshipment)
+    - [Review the CommerceDefinitionTermContributor interface](#review-the-commercedefinitiontermcontributor-interface)
+    - [Complete the Term Contributors](#complete-the-term-contributors)
+      - [Implement the getFilledTerm method for the Body and Subject](#implement-the-getfilledterm-method-for-the-body-and-subject)
+      - [Implement the getFilledTerm method for the Recipient](#implement-the-getfilledterm-method-for-the-recipient)
+      - [Implement the getLabel and getTerms methods](#implement-the-getlabel-and-getterms-methods)
+  - [Conclusion](#conclusion)
 
 ### Annotate the class for OSGi Registration
 

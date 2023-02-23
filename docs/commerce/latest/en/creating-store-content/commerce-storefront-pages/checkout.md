@@ -3,7 +3,7 @@ uuid: f66ef395-f882-427d-ab4a-76686c1117a8
 ---
 # Checkout
 
-The Checkout page contains the _Checkout_ widget. It becomes active once a buyer clicks _Checkout_ to submit an order. You can also implement a custom checkout step using extension points. See [Implementing a Custom Checkout Step](../../developer-guide/implementing-a-custom-checkout-step.md) for more information.
+The Checkout page contains the _Checkout_ widget. It becomes active once a buyer clicks _Checkout_ to submit an order. You can also implement a custom checkout step using extension points. See [Implementing a Custom Checkout Step](../../developer-guide/sales/implementing-a-custom-checkout-step.md) for more information.
 
 ![When there's no active order, the Checkout widget is empty.](./checkout/images/01.png)
 
@@ -45,5 +45,5 @@ The *Checkout* widget supports Liferay's Adaptive Media out-of-the-box. See [Ser
 
 * [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
-* [Implementing a Custom Checkout Step](../../developer-guide/implementing-a-custom-checkout-step.md)
-* [Using the Flat Rate Shipping Method](../../store-managemen/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
+* [Implementing a Custom Checkout Step](../../developer-guide/sales/implementing-a-custom-checkout-step.md)
+* [Using the Flat Rate Shipping Method](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)

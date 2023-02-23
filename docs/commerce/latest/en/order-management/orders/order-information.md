@@ -33,7 +33,7 @@ The _Notes_ tab displays notes that have been previously added to an order and a
 
 ## Emails
 
-The _Emails_ tab contains all the [transactional emails](../../store-management/sending-emails/store-emails.md) sent by the Liferay Commerce instance.
+The _Emails_ tab contains all the [transactional emails](../../store-management/sending-emails.md) sent by the Liferay Commerce instance.
 
 ![Emails Tab](./order-information/images/05.png)
 
@@ -43,4 +43,4 @@ The _Emails_ tab contains all the [transactional emails](../../store-management/
 * [Orders Menu Reference Guide](./orders-menu-reference-guide.md)
 * [Managing Payment Methods](../../store-management/configuring-payment-methods/managing-payment-methods.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)
-* [Store Emails](../../store-management/sending-emails/store-emails.md)
+* [Sending Emails](../../store-management/sending-emails.md)

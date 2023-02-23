@@ -6,7 +6,7 @@ uuid: 7a25f911-e061-4a44-84e1-09bf79db288a
 Catalog permissions determine which users can see and modify catalogs and their related products. Admin users have these permissions by default and these permissions can be added to new roles that have been added to the system.
 
 ```{note}
-Individual product view permissions are managed by modifying the channels that they are available in. See [Configuring Product Visibility Using Channels](../store-management/channels/configuring-product-visibility-using-channels.md) to learn more.
+Individual product view permissions are managed by modifying the channels that they are available in. See [Configuring Product Visibility Using Channels](../../store-management/channels/configuring-product-visibility-using-channels.md) to learn more.
 ```
 
 ## Adding Catalog Management Permissions to an Existing Role

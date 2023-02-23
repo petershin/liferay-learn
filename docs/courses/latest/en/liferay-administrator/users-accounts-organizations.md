@@ -4,6 +4,7 @@ toc:
 - ./users-accounts-organizations/creating-users.md
 - ./users-accounts-organizations/setting-roles-and-permissions.md
 - ./users-accounts-organizations/working-with-accounts.md
+uuid: e300d45a-acd8-4206-8f7c-8f49ec3cc1f6
 ---
 # Users, Accounts, Organizations, and Permissions
 
@@ -16,23 +17,22 @@ users-accounts-organizations/setting-roles-and-permissions.md
 users-accounts-organizations/working-with-accounts.md
 ```
 
-- [Creating Organizations](./users-accounts-organizations/creating-organizations.md)
-- [Managing Users](./users-accounts-organizations/managing-users.md)
-- [Setting Roles and Permissions](./users-accounts-organizations/setting-roles-and-permissions.md)
-- [Working with Accounts](./users-accounts-organizations/working-with-accounts.md)
+<!-- Looking at the organization above, one thing strikes me: it's not a best practice to use the Omni Admin account to do much. The first step should be to have students create an administrative account for Kyle Klein first, and then use that account to do everything else. -Rich -->
 
 With your Liferay DXP environment configured and up and running, it is time to start creating users, organizations, and accounts. 
 
-By the end of this module, you will have four user accounts assigned across two different organizations. Each user will belong to their respective organization and be assigned appropriate permissions.
+Now you'll create four user accounts assigned across two different organizations. Users must belong to their respective organizations and be assigned appropriate permissions.
 
 ![Organization chart with four different users.](./users-accounts-organizations/images/01.png)
 
-**Kyle Klein** - An IT staff who is tasked to help his company, Delectable Bonsai, get set up to use Liferay as their digital experience platform.
+**Kyle Klein** - An IT staffer tasked to help his company, Delectable Bonsai, configure Liferay as their digital experience platform.
 
 **Marcus Morgan** - An IT manager and Kyle's boss. 
 
-**Lily Lewis** - An account manager for Marvelous Markets and staff member of Delectable Bonsai's sales & marketing department.
+**Lily Lewis** - An account manager for Marvelous Markets and staff member of Delectable Bonsai's Sales and Marketing department.
 
 **Noah Norman** - A store manager for Marvelous Markets NYC and the order approver for his staff who places orders from Delectable Bonsai.
 
-The first step is creating some organizations for users. See [Creating Organizations](./users-accounts-organizations/creating-organizations.md) and follow the steps.
+The first step is creating some organizations for users. Ready? 
+
+[Let's Go!](./users-accounts-organizations/creating-organizations.md)

@@ -7,6 +7,7 @@ toc:
   - ./workspace-settings/multi-factor-authentication.md
   - ./workspace-settings/scoping-sites-and-individuals-using-properties.md
   - ./workspace-settings/contact-sync-data-reference.md
+  - ./workspace-settings/connecting-older-versions-of-liferay-dxp.md
 uuid: 94021e7e-e0c0-4586-8a67-469ddddecd50
 ---
 # Workspace Settings
@@ -21,7 +22,7 @@ workspace-settings/managing-workspaces.md
 workspace-settings/multi-factor-authentication.md
 workspace-settings/scoping-sites-and-individuals-using-properties.md
 workspace-settings/contact-sync-data-reference.md
-
+workspace-settings/connecting-older-versions-of-liferay-dxp.md
 ```
 
 In settings, view and manage your Analytics Cloud workspace. Click the settings link at the bottom left of the UI.
@@ -43,3 +44,4 @@ Keep an eye on your [workspace data usage](./workspace-settings/tracking-usage.m
 - [Multi-Factor Authentication](./workspace-settings/multi-factor-authentication.md)
 - [Scoping Sites and Individuals Using Properties](./workspace-settings/scoping-sites-and-individuals-using-properties.md)
 - [Contact Sync Data Reference](./workspace-settings/contact-sync-data-reference.md)
+- [Connecting Older Versions of Liferay DXP](workspace-settings/connecting-older-versions-of-liferay-dxp.md)

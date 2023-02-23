@@ -1,6 +1,9 @@
+---
+uuid: 7436ab21-a451-4297-bdf9-1c14cf4a132f
+---
 # Catalog API Basics
 
-You can manage catalogs from the Applications menu or with REST APIs. Call the [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) services to create and manage catalogs.
+You can manage catalogs from the Applications menu or REST APIs. Call the [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) services to create and manage catalogs.
 
 ## Adding a Catalog
 

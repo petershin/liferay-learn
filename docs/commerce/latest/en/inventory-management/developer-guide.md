@@ -14,6 +14,6 @@ developer-guide/warehouse-api-basics.md
 :gutter: 3 3 3 3
 
 :::{grid-item-card} Warehouse API Basics
-:link: ./developer-guide/order-api-basics.md
+:link: ./developer-guide/warehouse-api-basics.md
 :::
 ::::

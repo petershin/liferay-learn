@@ -3,38 +3,60 @@ uuid: 61b2ba84-d187-4813-8c11-9ec579fd42ec
 ---
 # Liferay Commerce Configuration Overview
 
-Liferay Commerce 3.0's configurations are reached through the _Global Applications_ menu.
+You can find options to configure Commerce from the *Global Menu*.
 
-![Access Commerce 3.0 via the Global Application menu.](./liferay-commerce-configuration-overview/images/06.png)
+![Access Commerce via the Global Application menu.](./liferay-commerce-configuration-overview/images/01.png)
 
-Navigate to the _Global Applications_ menu &rarr; _Commerce_. Administrators can configure:
+Open the *Global Menu* and navigate to &rarr; *Commerce*. Administrators can configure:
 
-* [Channels](./channels/managing-channels.md)
+## Order Management
+
+* [Orders](../order-management/orders/orders-menu-reference-guide.md)
+* [Order Types](../order-management/order-types.md)
+* [Shipments](../order-management/shipments/introduction-to-shipments.md)
+* [Subscriptions](../order-management/subscriptions/managing-subscriptions.md)
+* [Terms and Conditions](../order-management/terms-and-conditions.md)
+
+## Inventory Management
+
+* [Inventory](../inventory-management.md)
+* [Warehouses](../inventory-management/warehouse-reference-guide.md)
+
+## Pricing
+
 * [Price Lists](../pricing/creating-a-price-list.md)
+* [Promotions](../pricing/promoting-products/introduction-to-promotions.md)
 * [Discounts](../pricing/promoting-products/introduction-to-discounts.md)
-* Promotions
-* Product Groups
+* [Product Groups](../pricing/promoting-products/introduction-to-product-groups.md)
+* [Tax Categories](../pricing/configuring-taxes.md)
+
+## Product Management
+
 * [Catalogs](../product-management/catalogs/creating-a-new-catalog.md)
 * [Products](../product-management/creating-and-managing-products/products/products-overview.md)
 * [Options](../product-management/creating-and-managing-products/products/using-product-options.md)
-* [Orders](../order-management/orders/orders-menu-reference-guide.md)
-* [Shipments](../order-management/shipments/introduction-to-shipments.md)
-* [Bill of Materials](../product-management/creating-and-managing-products/products/managing-boms.md)
-* [Subscriptions](../order-management/subscriptions/managing-subscriptions.md)
+* [Specifications](../product-management/creating-and-managing-products/products/specifications.md)
+
+## Store Management
+
+* [Channels](./channels/managing-channels.md)
 * [Currencies](./currencies/adding-a-new-currency.md)
-* [Inventory](../inventory-management.md)
-* [Warehouses](../inventory-management/warehouse-reference-guide.md)
+
+## Settings
+
 * [Availability Estimates](../inventory-management/availability-estimates.md)
+* [Countries](./countries-configuration-reference.md)
+* [Measurement Units](./configuring-shipping-methods/measurement-units.md)
 
 ## Liferay Commerce 2.1 and Below
 
-Liferay Commerce 2.1 configurations are divided into several locations in the Liferay _Product Menu_. The Commerce _Control Panel_ drop down contains configurations and settings that apply _globally_ to the Liferay Commerce installation. The Commerce _Site Menu_ drop down contains configurations and settings that are scoped to a specific store site.
+Liferay Commerce 2.1 configurations are divided into several locations in the Liferay *Product Menu*. The Commerce *Control Panel* drop down contains configurations and settings that apply *globally* to the Liferay Commerce installation. The Commerce *Site Menu* drop down contains configurations and settings that are scoped to a specific store site.
 
 ### Commerce Control Panel
 
-Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the follow configurations will apply across the store sites.
+Navigate to *Control Panel* &rarr; *Commerce*. Making changes to any of the following configurations applies across all sites.
 
-![Global Commerce Settings](./liferay-commerce-configuration-overview/images/01.png)
+![The Commerce global menu contains all the configuration options.](./liferay-commerce-configuration-overview/images/02.png)
 
 * [Channels](./channels/managing-channels.md)
 * [Price Lists](../pricing/creating-a-price-list.md)
@@ -42,7 +64,7 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 
 The Commerce Global Settings menu contains the following tabs:
 
-![Commerce Global Settings Tab](./liferay-commerce-configuration-overview/images/02.png)
+![You can find Settings under the Commerce global menu.](./liferay-commerce-configuration-overview/images/03.png)
 
 * [Availability Estimates](../inventory-management/availability-estimates.md)
 * [Adding a New Currency](./currencies/adding-a-new-currency.md)
@@ -52,13 +74,13 @@ The Commerce Global Settings menu contains the following tabs:
 
 ### Commerce Site Settings
 
-> Commerce 2.0 and below
+{bdg-secondary}`Commerce 2.0 and below`
 
 The following configurations are scoped to the selected store site. Changes here are not applied to other stores hosted on the same Liferay Commerce instance.
 
-Navigate to the _Control Panel_ → _Store Site_ → _Commerce_.
+Navigate to the *Control Panel* &rarr; *Store Site* &rarr; *Commerce*.
 
-![Minium Full Site Settings](./liferay-commerce-configuration-overview/images/03.png)
+![The settings for the Minium site are available on the left side menu.](./liferay-commerce-configuration-overview/images/04.png)
 
 The following site settings are found here:
 

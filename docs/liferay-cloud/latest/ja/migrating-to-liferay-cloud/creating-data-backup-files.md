@@ -14,7 +14,7 @@ Liferay Cloudサポートに連絡せずに次のステップでアップロー�
 
 データベースがMySQL 5.7と互換性があることを確認してください。 [DBeaver](https://dbeaver.io/) のようなツールを使用して、他のデータベース形式を MySQL に変換することができます。
 
-データの整合性を確保するため、変換の前後にデータベース管理者と調整します。 変換したデータベースをテストするには、 [ローカルの Liferay インストール](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/configuring-a-database.html) に接続してから次に進みます。
+データの整合性を確保するため、変換の前後にデータベース管理者と調整します。 変換したデータベースをテストするには、 [ローカルの Liferay インストール](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/configuring-a-database.html) に接続してから次に進みます。
 
 ### テーブルの正しいキャピタライゼーションの確保
 
@@ -24,11 +24,11 @@ Liferay Cloud ではデータベースのテーブルとカラム名は大文字
 
 例えば、これらの小文字のテーブル名を変換します。
 
-* *accountentry* &rarr; *AccountEntry*
+* **accountentry** &rarr; **AccountEntry**
 
-* *cpdefinition* &rarr; *CPDefinition*
+* **cpdefinition** &rarr; **CPDefinition**
 
-* *trashentry* &rarr; *TrashEntry*
+* **trashentry** &rarr; **TrashEntry**
 
 MySQL の [`RENAME TABLE`](https://dev.mysql.com/doc/refman/5.7/en/rename-table.html) コマンドを使用すると、テーブルの名前を変更することができます。 [テーブル名の調整についてサポートが必要な場合は、サポートチケット](https://help.liferay.com) を送信してください。
 
@@ -40,13 +40,13 @@ Windows（OS）をお使いの場合、圧縮ファイルのパック/アンパ�
 
 データベースがMySQL形式になったので、データベースサーバーで次のコマンドを実行します。 `#` をそれぞれデータベースユーザーとパスワードに、 `lportal` を必要に応じてデータベース名に置き換えてください。
 
-**Linux、MacOSの場合** (1コマンド)。
+**Linux、MacOSの場合**(1コマンド)。
 
 ```bash
 mysqldump -u### -p### --databases --add-drop-database lportal | gzip -c | cat > database.gz
 ```
 
-**Windowsの場合** （2コマンド）。
+**Windowsの場合**（2コマンド）。
 
 ```
 mysqldump -u### -p##### --databases --add-drop-database lportal > database.sql
@@ -63,10 +63,10 @@ mysqldump -u### -p##### --databases --add-drop-database lportal > database.sql
 ドキュメントライブラリがファイルシステムストアではないファイル保存方法（Amazon S3StoreやDBStoreなど）を使用している場合、先にファイルシステムストアに移行する必要があります。 Simple File System StoreまたはAdvanced File System Storeのいずれかを使用することができます。
 
 ```{important}
-Advanced File System Store](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/configuring-file-storage.html)では、より簡単に大規模なデータセットに拡張できるフォルダ構造を採用しています。 アドバンストファイルシステムストアへの移行は、長期的にドキュメントライブラリのより多くのファイルを収容するために推奨されており、あらゆる実稼働環境において**必須**です。
+[Advanced File System Store](https://learn.liferay.com/dxp/latest/ja/system-administration/file-storage/configuring-file-storage.html) では、より簡単に大規模なデータセットに拡張できるフォルダ構造を採用しています。 アドバンストファイルシステムストアへの移行は、長期的にドキュメントライブラリのより多くのファイルを収容するために推奨されており、あらゆる実稼働環境において**必須**です。
 ```
 
-文書ライブラリを移行する手順については、「 [ファイルストア移行」](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/file-store-migration.html) を参照してください。
+文書ライブラリを移行する手順については、「 [ファイルストア移行」](https://learn.liferay.com/dxp/latest/ja/system-administration/file-storage/file-store-migration.html) を参照してください。
 
 ### 変更を伴うJenkinsビルドの作成
 
@@ -100,7 +100,7 @@ Gitコマンドを実行し、Gitがインストールされている端末で�
 
 1. Liferay Cloud Consoleでビルドページに移動します（ページ上部のリンクを使用します）。
 
-1. リストの中から前回作成したビルドを探し、アクションメニューから*［Deploy build to］*をクリックします。
+1. リストの中から前回作成したビルドを探し、アクションメニューから ［**Deploy build to**］ をクリックします。
 
     ![ビルドのアクションメニューでデプロイします。](./creating-data-backup-files/images/01.png)
 
@@ -110,19 +110,19 @@ Gitコマンドを実行し、Gitがインストールされている端末で�
 
     ![チェックボックスにチェックを入れ、準備ができたらビルドをデプロイします。](./creating-data-backup-files/images/02.png)
 
-1. *［Deploy Build］*をクリックします。
+1. ［**Deploy Build**］ をクリックします。
 
 ビルドは選択した環境にデプロイされ、 `portal-ext.properties` の変更は `liferay` サービスが再起動したときに適用されます。
 
 ```{important}
-Liferay Cloud上のすべての環境は、ドキュメントライブラリに同じ実装を使用して、ある環境からのバックアップを他の環境にリストアしても動作するようにする必要があります(../platform-services/backup-service/restoring-data from-a-backup.md). ビルドをすべての環境に配備して、すべての環境で移行したドキュメントライブラリストアが正しく使用されることを確認する必要があります。
+[バックアップからデータをリストアする](../platform-services/backup-service/restoring-data-from-a-backup.md)場合、ある環境のバックアップが動作するように、DXP Cloud上のすべての環境が同じドキュメントライブラリの実装を使用する必要があります。ビルドをすべての環境に配備して、すべての環境で移行したドキュメントライブラリストアが正しく使用されていることを確認する必要があります。
 ```
 
 ## ドキュメントライブラリの圧縮
 
 文書ライブラリのあるサーバーで、以下のコマンドを実行し、アップロード用に文書ライブラリを圧縮します。
 
-**Linux、MacOSの場合** (2コマンド)。
+**Linux、MacOSの場合**(2コマンド)。
 
 ```bash
 cd $LIFERAY_HOME/data
@@ -132,7 +132,7 @@ cd $LIFERAY_HOME/data
 tar -czvf volume.tgz document_library
 ```
 
-**Windowsの場合** （3コマンド）。
+**Windowsの場合**（3コマンド）。
 
 ```
 cd $LIFERAY_HOME\data

@@ -30,10 +30,10 @@ Liferayクラウド環境のデータベースサービスは、定期メンテ�
 
 ### Google Cloud MySQL フラグ
 
-MySQLのフラグを環境変数として渡すことができます。 利用可能なフラグは、 [Google Cloud documentation](https://cloud.google.com/sql/docs/mysql/flags)に記載されています。 Liferay Cloud で動作させるには、各フラグの先頭に `LCP_GCP_DATABASE_FLAG_` を付加する必要があります。 以下は、開発環境でのデバッグに役立つ一般的なフラグですが、本番環境ではパフォーマンスに大きな影響を与えるため、使用しないでください。
+MySQLのフラグを環境変数として渡すことができます。 利用可能なフラグは、 [Google Cloud documentation](https://cloud.google.com/sql/docs/mysql/flags) に記載されています。 Liferay Cloud で動作させるには、各フラグの先頭に `LCP_GCP_DATABASE_FLAG_` を付加する必要があります。 以下は、開発環境でのデバッグに役立つ一般的なフラグですが、本番環境ではパフォーマンスに大きな影響を与えるため、使用しないでください。
 
 ```{warning}
-Googleのドキュメントに記載されているように、一部のデータベースフラグ設定はインスタンスの可用性または安定性に影響を与える可能性があります。 これらのフラグを使用する際は、Googleの[運用ガイドライン](https://cloud.google.com/sql/docs/mysql/operational-guidelines)に従って、十分に注意してください。
+Googleのドキュメントに記載されているように、一部のデータベースフラグ設定はインスタンスの可用性または安定性に影響を与える可能性があります。 これらのフラグを使用する際は、Googleの [運用ガイドライン](https://cloud.google.com/sql/docs/mysql/operational-guidelines) に従って、十分に注意してください。
 ```
 
 | 名前                                     | 許容値     | デフォルト値 |

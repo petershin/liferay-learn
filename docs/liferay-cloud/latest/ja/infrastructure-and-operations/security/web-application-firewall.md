@@ -9,7 +9,7 @@ Liferay Cloud には、 [プライベートネットワーク](../networking/pri
 ![図1：Webアプリケーションファイアウォールは一般的な攻撃から保護します。](./web-application-firewall/images/01.png)
 
 ```{note}
-[共有クラスタサブスクリプション](../../reference/platform-limitations.md#security)では、カスタムファイアウォールルールは使用できません。
+[共有クラスタサブスクリプション](../../reference/platform-limitations.md#security) では、カスタムファイアウォールルールは使用できません。
 ```
 
 ## ModSecurityの有効化
@@ -25,7 +25,7 @@ ModSecurityはデフォルトで無効になっています。 これを有効�
 * **DetectionOnly** : ModSecurity を有効にします。 ルールは処理されるが、破壊的なアクションは実行されない（ブロック、拒否、ドロップ、許可、プロキシ、リダイレクト）。
 
 ```{tip}
-環境変数`LCP_WEBSERVER_MODSECURITY` は ModSecurity自身の[`SecRuleEngine`ディレクティブ](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine)と同等です。
+環境変数`LCP_WEBSERVER_MODSECURITY` は ModSecurity自身の [`SecRuleEngine`ディレクティブ](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine) と同等です。
 ```
 
 ModSecurity を有効にするには、 `LCP_WEBSERVER_MODSECURITY` の値を `On` または `DetectionOnly`に設定し、 [変更をデプロイします。](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).

@@ -10,7 +10,7 @@
 
 これらの値を求めるには、パッチングツールを使用します。
 
-1. [こちら](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html)の手順に従って、移行したいインストールにパッチングツールをインストールします。
+1. [こちら](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) の手順に従って、移行したいインストールにパッチングツールをインストールします。
 
 1. 任意のコマンドラインツールでパッチングツールフォルダーに移動します。
 

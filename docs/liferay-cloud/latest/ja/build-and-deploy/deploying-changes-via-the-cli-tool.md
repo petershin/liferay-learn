@@ -8,7 +8,7 @@ CLIツールを使えば、Jenkinsのビルドをトリガーしたり、Liferay
 CLIツールはプロジェクトへの変更を素早くデプロイする方法を提供しますが、デプロイの大部分にはCIサービスとLiferay Cloudコンソールを使用することがベストプラクティスです。 方法は[Liferay Cloud Consoleを使った変更のデプロイ](./deploying-changes-via-the-liferay-cloud-console.md)を参照してください。
 ```
 
-プロジェクトでバージョン `3.x.x` のサービスを使用している場合、CLI ツールで変更をデプロイする前に、まず`LCP.json` ファイルを[準備する](#preparing-lcpjson-files-in-project-version-3)必要があります。
+プロジェクトでバージョン `3.x.x` のサービスを使用している場合、CLI ツールで変更をデプロイする前に、まず`LCP.json` ファイルを [準備する](#preparing-lcpjson-files-in-project-version-3) 必要があります。
 
 そうでなければ、このステップをスキップして、デプロイメントプロセスを開始することができます。
 

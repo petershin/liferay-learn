@@ -7,7 +7,7 @@ Liferay DXPのインストールを定期的にアップデートすることは
 ```
 
 ```{note}
-[ホットフィックス](../../../../dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes)をインストールしたい場合は、代わりに[この手順](./deploying-to-the-liferay-service.md#deploying-hotfixes)を実行してください。
+[ホットフィックス](../../../../dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes) をインストールしたい場合は、代わりに [この手順](./deploying-to-the-liferay-service.md#deploying-hotfixes) を実行してください。
 ```
 
 ## DXP 7.3+のモジュールアップグレードの有効化
@@ -29,7 +29,7 @@ Liferay DXPのインストールを定期的にアップデートすることは
 Liferay DXPのマイナーバージョンのアップデートには、プロジェクトのリポジトリの変更も必要です。
 
 ```{important}
-[クラスタリングサービス](./setting-up-clustering-in-liferay-cloud.md)を使用していて、Liferayデータベーススキーマを変更するバージョン（[サービスパック](../../../../dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)など）に更新する場合、[以下の手順]( #updating-to-a-new-service-pack-with-clustering-enabled )を実行してください
+[クラスタリングサービス](./setting-up-clustering-in-liferay-cloud.md)を使用していて、Liferayデータベーススキーマを変更するバージョン（ [サービスパック](../../../../dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) など）に更新する場合、 [以下の手順]( #updating-to-a-new-service-pack-with-clustering-enabled ) を実行してください
 ```
 
 以下の手順で、プロジェクトリポジトリの変更点を更新およびデプロイします。

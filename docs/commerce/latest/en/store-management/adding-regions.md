@@ -3,26 +3,34 @@ uuid: c61de976-8fb5-485d-af05-86baaab3f434
 ---
 # Adding Regions
 
-This article describes to how to add states, provinces, or other administrative regions in Liferay Commerce. By default the United States and Italy have all of their respective country's states and provinces listed in the _Countries_ settings.
+You can add states, provinces, or other administrative regions to countries in Liferay.
 
-1. Navigate to the _Control Panel_ → _Commerce_ → _Settings_.
-1. Click _Countries_.
-1. Click on a country (France in this example).
-1. Click _Regions_.
-1. Click the _blue (+)_ button to add a region.
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Commerce* &rarr; *Countries*.
+
+1. Click on a country (Ireland in this example).
+
+1. Click *Regions*.
+
+1. Click the *Add* (![Add](../images/icon-add.png)) button to add a region.
+
 1. Enter the following:
-    * **Name**: _Grand-Est_
-    * **Code**: _FR-GES_
-    * **Priority**: 6.0
-1. Switch the toggle to _Active_.
 
-    ![Adding the Grand-Est Region](./adding-regions/images/01.png)
-1. Click _Save_.
+   * **Name**: *Leinster*
+   * **Code**: *IE-L*
+   * **Priority**: 6.0
 
-The French region _Grand-Est_ is now added to the list of regions. _Grand-Est_ will appear in the Region list if France is chosen in the _Country_ field on the _Shipping Address_ page. Repeat these steps as necessary.
+1. Switch the toggle to *Active*.
+
+   ![Adding the Leinster region to Ireland.](./adding-regions/images/01.png)
+
+1. Click *Save*.
+
+Leinster has been added to the list of regions in Ireland. When you choose Ireland from the *Country* dropdown, Leinster appears in the *Region* dropdown on the Shipping Address Page. Repeat these steps to add all the regions for a country.
+
+![Leinster appears as a region in the dropdown while checking out.](./adding-regions/images/02.png)
 
 ## Additional Information
 
-**Note 1:** The values in the _Code_ field must follow the [ISO-3166-2](https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/ISO_3166-2.html) standard's format.
+**Note 1:** The values in the *Code* field must follow the [ISO-3166-2](https://www.iso.org/obp/ui/#search/code/) standard's format.
 
-**Note 2:** The priority field may be used to manually rank regions as needed.
+**Note 2:** You can use the priority field to manually rank regions if needed.

@@ -1,6 +1,6 @@
 # Liferay Elasticsearch コネクタの高度な設定
 
-[Elasticsearchの接続](./connecting-to-elasticsearch.md) は、設定ファイル [またはシステム設定](./elasticsearch-connector-configuration-reference.md#configuration-files-and-system-settings-entries)を使って設定します。
+[Elasticsearchの接続](./connecting-to-elasticsearch.md) は、設定ファイル [またはシステム設定](./elasticsearch-connector-configuration-reference.md#configuration-files-and-system-settings-entries) を使って設定します。
 
 Elasticsearchコネクタには多くの設定オプションが用意されています。ほとんどのElasticsearchの設定は、Liferayの似たような、あるいは同じ名前の設定によって構成することができます（例えば、 `httpSSLEnabled`）。 特別な設定が必要な場合は、 [詳細設定](./../elasticsearch/elasticsearch-connector-configuration-reference.md)を使用して、必要な設定オプションを追加してください。 これらの特別な設定のほとんどは、設定やマッピングを追加したり、オーバーライドしたりするものです。
 
@@ -21,9 +21,9 @@ Elasticsearchで設定可能なものは、Elasticsearchコネクターを使っ
 
 {bdg-link-warning}`再インデックスが必要です`
 
-`additionalIndexConfigurations` 設定は、 [会社インデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) （例：それぞれのLiferayの仮想インスタンスのインデックス）が作成されるときに、それぞれに適用される追加の設定（JSONやYAML）を定義します。 たとえば、この設定を使って、カスタムのアナライザーやフィルターを作成することができます。 使用可能な設定の完全なリストは、 [Elasticsearchのリファレンス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html)を参照してください。
+`additionalIndexConfigurations` 設定は、 [会社インデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) （例：それぞれのLiferayの仮想インスタンスのインデックス）が作成されるときに、それぞれに適用される追加の設定（JSONやYAML）を定義します。 たとえば、この設定を使って、カスタムのアナライザーやフィルターを作成することができます。 使用可能な設定の完全なリストは、 [Elasticsearchのリファレンス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html) を参照してください。
 
-ここでは、フィールドや動的テンプレートに適用できる[解析](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-analysis.html)の設定例を示します（動的テンプレートへの適用例は、[下](#overriding-type-mappings)を参照してください）。
+ここでは、フィールドや動的テンプレートに適用できる [解析](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-analysis.html) の設定例を示します（動的テンプレートへの適用例は、 [下](#overriding-type-mappings) を参照してください）。
 
 ```json
 {  
@@ -51,7 +51,7 @@ Elasticsearchで設定可能なものは、Elasticsearchコネクターを使っ
 
 {bdg-link-warning}`再インデックスが必要です`
 
-`additionalTypeMappings` は、各 [会社やシステムのインデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) （つまり、各Liferay仮想インスタンスのインデックス）にデータをインデックスするための追加マッピングを定義します。 これらは、インデックスの作成時に適用されます。 JSONの構文を使ってマッピングを追加します。 詳しくは、 [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping.html) と [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-put-mapping.html)をご覧ください。 新しいフィールド（`プロパティ`）のマッピングや新しいダイナミックテンプレートには `additionalTypeMappings` を使用し、既存のマッピングを上書きしないようにしてください。 ここで設定したマッピングが既存のマッピングと重なる場合は、インデックス作成に失敗します。 デフォルトのマッピングを置き換えるには、 `overrideTypeMappings` を使用します。
+`additionalTypeMappings` は、各 [会社やシステムのインデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) （つまり、各Liferay仮想インスタンスのインデックス）にデータをインデックスするための追加マッピングを定義します。 これらは、インデックスの作成時に適用されます。 JSONの構文を使ってマッピングを追加します。 詳しくは、 [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping.html) と [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-put-mapping.html) をご覧ください。 新しいフィールド（`プロパティ`）のマッピングや新しいダイナミックテンプレートには `additionalTypeMappings` を使用し、既存のマッピングを上書きしないようにしてください。 ここで設定したマッピングが既存のマッピングと重なる場合は、インデックス作成に失敗します。 デフォルトのマッピングを置き換えるには、 `overrideTypeMappings` を使用します。
 
 ダイナミックテンプレートと同様に、Liferayのタイプマッピングにサブフィールドマッピングを追加することができます。 これらは、Elasticsearchでは [プロパティ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/properties.html) と呼ばれています。
 
@@ -85,7 +85,7 @@ curl http://localhost:9200/liferay-20116/_mapping?pretty
 
 上記のURLでは、 `liferay-20116` がインデックス名です。 これを含めると、その名前のインデックスを作成するために使用されたマッピングを確認したいことになります。
 
-Elasticsearchのフィールドデータタイプの詳細については、[こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping-types.html) を参照してください。
+Elasticsearchのフィールドデータタイプの詳細については、 [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping-types.html) を参照してください。
 
 上の例では、Liferayのタイプマッピングに、 `fooName` フィールドを追加する方法を示しています。 `fooName` はマッピングの既存のプロパティではないため、正常に機能します。 既存のプロパティマッピングを上書きしようとすると、インデックス作成に失敗します。 代わりに、 `overrideTypeMappings` の設定を使用して、マッピングの `プロパティ` をオーバーライドします。
 

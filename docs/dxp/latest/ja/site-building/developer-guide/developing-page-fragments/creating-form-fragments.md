@@ -6,11 +6,11 @@
 
 フォームフラグメントを作成するため。
 
-1. *サイトメニュー* ( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 *デザイン*を展開し、 *フラグメント*へと進んでください。
+1. **サイトメニュー**( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 **デザイン** を展開し、 **フラグメント** へと進んでください。
 
-1. *Plus* (![Plus Button](../../../images/icon-plus.png)) をクリックすると、フォームフラグメントを整理するためのフラグメ ントセットが作成されます。
+1. **Plus**(![Plus Button](../../../images/icon-plus.png)) をクリックすると、フォームフラグメントを整理するためのフラグメ ントセットが作成されます。
 
-1. *追加* (![Add Button](../../../images/icon-add.png)) をクリックし、 *Form Fragment* タイプを選択し、 *Next*をクリックします。
+1. **追加**(![Add Button](../../../images/icon-add.png)) をクリックし、 **Form Fragment** タイプを選択し、 **Next** をクリックします。
 
    ![Form Fragmentの種類を選択し、Nextをクリックします。](./creating-form-fragments/images/01.png)
 
@@ -22,7 +22,7 @@
 
    ![フラグメントがサポートするフィールドタイプを選択します。](./creating-form-fragments/images/02.png)
 
-1. *［追加］*をクリックします。 これにより、フラグメントのドラフトが作成され、フラグメントの編集ページに移動します。
+1. ［**追加**］ をクリックします。 これにより、フラグメントのドラフトが作成され、フラグメントの編集ページに移動します。
 
 1. コード] タブで、フラグメントの HTML、CSS、JavaScript を追加します。
 
@@ -32,7 +32,7 @@
 
    ![Configuration タブで、JSON を使用してフラグメントを設定し、オプションを追加します。](./creating-form-fragments/images/04.png)
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
 次に、フォームフラグメントを使用して、コンテンツページにフォームを作成します。 詳しくは、 [フラグメントを使ってフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md) をご覧ください。
 

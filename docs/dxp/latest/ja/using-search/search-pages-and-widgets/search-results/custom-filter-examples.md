@@ -1,7 +1,7 @@
 # カスタムフィルターの例
 
 ```{note}
-この機能はElasticsearchでのみ動作します(../../installing and-upgrading-a-search-engine/solr/solr-limitations.md).
+この機能は [Elasticsearch でのみ](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md) で動作します。
 ```
 
 カスタムフィルターウィジェットは、検索チューニングを強力にサポートします。 カスタムコードを導入することなく、検索エンジンに送信されるクエリをコントロールすることができます。 ここでは、カスタムフィルターウィジェットへのアプローチ方法を理解するために、いくつかの一般的な使用例を紹介します。
@@ -44,15 +44,15 @@
 
 **発生:** `gif`
 
-この構成は、ドキュメントとメディア[`DLFileEntry`モデル](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-service/src/main/java/com/liferay/document/library/internal/search/spi/model/index/contributor/DLFileEntryModelDocumentContributor.java)からインデックス付けされた`extension`フィールドの存在を利用します。 これにより、値`gif`の`extention`フィールドを含む検索文書が検索結果に返されないようになります。
+この構成は、ドキュメントとメディア [`DLFileEntry`モデル](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-service/src/main/java/com/liferay/document/library/internal/search/spi/model/index/contributor/DLFileEntryModelDocumentContributor.java) からインデックス付けされた`extension`フィールドの存在を利用します。 これにより、値`gif`の`extention`フィールドを含む検索文書が検索結果に返されないようになります。
 
 ## ブーストフィールド
 
-特定のフィールドに基づいて特定のドキュメントを強化したいというニーズはよくありますが、「カスタムフィルタ」ウィジェットを使えば、簡単に実現できます。 ブースト値は、お客様のニーズに合わせてチューニングが必要な場合があります。 _スコアの説明を有効にする_ を有効にして 検索インサイト ウィジェットを使用し、ドキュメントがどのようにスコアリングされているかを調べ、ブースト値を微調整します。
+特定のフィールドに基づいて特定のドキュメントを強化したいというニーズはよくありますが、「カスタムフィルタ」ウィジェットを使えば、簡単に実現できます。 ブースト値は、お客様のニーズに合わせてチューニングが必要な場合があります。 **スコアの説明を有効にする** を有効にして 検索インサイト ウィジェットを使用し、ドキュメントがどのようにスコアリングされているかを調べ、ブースト値を微調整します。
 
 ### 日付の範囲による結果のブースト
 
-[カスタムフィルターウィジェットの設定フォーム](filtering-search-results.md#custom-filter-configuration)のDate Rangeクエリオプションは、[Elasticsearch Rangeクエリ](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html)に対応します。 過去1年以内に作成された結果をブーストするには、ページにカスタムフィルターを追加して、次のように設定します。
+[カスタムフィルターウィジェットの設定フォーム](filtering-search-results.md#custom-filter-configuration) のDate Rangeクエリオプションは、 [Elasticsearch Rangeクエリ](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html) に対応します。 過去1年以内に作成された結果をブーストするには、ページにカスタムフィルターを追加して、次のように設定します。
 
 **フィルタフィールド：** `createDate`
 
@@ -77,7 +77,7 @@
 
 もう一度検索すると、検索結果のブログの順番は、古いブログが最初に表示されます。（新しいブログが設定された時間範囲内に作成され、古いブログがそうでない場合）。
 
-範囲の指定方法については、[Elasticsearch date-math documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/common-options.html#date-math)を参照してください。
+範囲の指定方法については、 [Elasticsearch date-math documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/common-options.html#date-math) を参照してください。
 
 ### 指定フィールドへの一致をブースト
 
@@ -113,7 +113,7 @@
 
 ## サイトIDによるフィルタリング
 
-1つのページの検索で複数のサイトを検索する際に、すべてのサイトを検索しない設定はありません。 現在のサイトとすべての[サブサイト](../../../site-building/sites/site-hierarchies.md)からの結果を含めるには、検索バーのスコープを設定し、_すべて_に設定する必要があります。 その後、検索結果に含めるサイトの`groupId`をマッチさせるためのtermクエリを持つカスタムフィルターウィジェットが、それぞれの子クエリ句を集めることができるBoolクエリを持つ1つの親カスタムフィルターを使用します。 サイトのIDは、ドキュメントの検索の`groupId`フィールドです。
+1つのページの検索で複数のサイトを検索する際に、すべてのサイトを検索しない設定はありません。 現在のサイトとすべての[サブサイト](../../../site-building/sites/site-hierarchies.md)からの結果を含めるには、検索バーのスコープを設定し、 **すべて** に設定する必要があります。 その後、検索結果に含めるサイトの`groupId`をマッチさせるためのtermクエリを持つカスタムフィルターウィジェットが、それぞれの子クエリ句を集めることができるBoolクエリを持つ1つの親カスタムフィルターを使用します。 サイトのIDは、ドキュメントの検索の`groupId`フィールドです。
 
 1. 3つのサイトを作る：
    - 子サイトを持つ親サイトを1つ以上作成してください。
@@ -123,9 +123,9 @@
    サイトのグループIDを確認するには、サイトメニューのConfiguration > Settingsに移動します。 表示される `Site ID` は、Site をフィルタリングするために使用する `groupId` です。
    ```
 
-1. 各Siteに少なくとも1つのコンテンツ（Blog Entry）を作成し、それぞれに _Liferay_ という単語を入れてください。
+1. 各Siteに少なくとも1つのコンテンツ（Blog Entry）を作成し、それぞれに **Liferay** という単語を入れてください。
 
-1. 検索バーのスコープを _Everything_に設定します。
+1. 検索バーのスコープを **Everything** に設定します。
 
    > **チェックポイント：** 検索して、すべてのサイトのコンテンツが返されることを確認する
 
@@ -153,15 +153,15 @@
 
    上のスクリーンショットのコンテンツの例では、もうひとつカスタムフィルタが必要です。 フィルターの値を `38105`とすること以外は、上記と同じように設定します。
 
-   > **チェックポイント：** 再度検索を行い、指定したサイトのみのコンテンツが表示されることを確認します。 これは、検索結果が _Display Results in Document Form_に設定されている場合、詳細ビューを見てさらに確認することができます。
+   > **チェックポイント：** 再度検索を行い、指定したサイトのみのコンテンツが表示されることを確認します。 これは、検索結果が **Display Results in Document Form** に設定されている場合、詳細ビューを見てさらに確認することができます。
 
    ![含まれるサイトのコンテンツのみが表示されます。](./custom-filter-examples/images/02.png)
 
-重要なのは、`groupId`によるフィルタは、`SiteBoolQuery`を親クエリとして宣言していることです。 各サイトの子Termクエリの _should_ Occur句は、OR演算子として機能し、 `groupId`のいずれかがマッチした場合、そのコンテンツが［検索結果］ウィジェットに表示されるようになっています。
+重要なのは、`groupId`によるフィルタは、`SiteBoolQuery`を親クエリとして宣言していることです。 各サイトの子Termクエリの **should** Occur句は、OR演算子として機能し、 `groupId`のいずれかがマッチした場合、そのコンテンツが［検索結果］ウィジェットに表示されるようになっています。
 
 ## クエリ文字列による複合フィルタ
 
-[サイトIDによるフィルタリング](#filtering-by-site-id)の例のように、 [検索文字列クエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html)を使用することで、複数のクエリを必要としない場合があります。 以下の設定では、1つのカスタムフィルターウィジェットのみを使用して、検索対象を制限する方法を示しています。
+[サイトIDによるフィルタリング](#filtering-by-site-id) の例のように、 [検索文字列クエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html) を使用することで、複数のクエリを必要としない場合があります。 以下の設定では、1つのカスタムフィルターウィジェットのみを使用して、検索対象を制限する方法を示しています。
 
 - ドキュメントとメディアファイルを` pdf`または、`jpg`拡張子に一致させる。
 - ウェブコンテンツの記事に合わせる
@@ -186,16 +186,16 @@
 
 {bdg-secondary}`利用可能 7.2 FP10+、7.3 FP1+、7.4（すべてのアップデート）`
 
-[Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-ddm-fields)で説明されているように、Liferay 7.2 SP3 /FP8 (およびLiferay 7.3のすべてのバージョン)では、DDMフィールドは [ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) になりました。 7.2および7.3の最新のフィックスパックおよびGAリリースでは、これらのネストされたフィールドを考慮して、[Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) がサポートされています。
+[Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-ddm-fields) で説明されているように、Liferay 7.2 SP3 /FP8 (およびLiferay 7.3のすべてのバージョン)では、DDMフィールドは [ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) になりました。 7.2および7.3の最新のフィックスパックおよびGAリリースでは、これらのネストされたフィールドを考慮して、 [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) がサポートされています。
 
-カスタムフィルターの設定での[ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document)を使用すると、ページの検索に3つのカスタムフィルターウィジェットが必要になります。 必要な子クエリをラップする[ネストされたクエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) がウィジェットの1つに追加されます。1つの子クエリはフィールドの名前と一致し、もう1つは値と一致します。
+カスタムフィルターの設定での [ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) を使用すると、ページの検索に3つのカスタムフィルターウィジェットが必要になります。 必要な子クエリをラップする [ネストされたクエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) がウィジェットの1つに追加されます。1つの子クエリはフィールドの名前と一致し、もう1つは値と一致します。
 
 この例では、特定のDDMストラクチャー項目にマッチした場合のブーストを追加しています。
 
 1. [ストラクチャー](../../../content-authoring-and-management/web-content/web-content-structures/creating-structures.md)を作成します。
     - サイトメニューの［コンテンツ］ & ［データ］ &rarr; ［ウェブコンテンツ］に移動します。
-    - _ストラクチャー_ タブをクリックし、追加ボタン ![Add](../../../images/icon-add.png)をクリックします。
-    - ストラクチャーにタイトル（例： _Boosted Content_）とこれらのフィールドを与えます。
+    - **ストラクチャー** タブをクリックし、追加ボタン ![Add](../../../images/icon-add.png)をクリックします。
+    - ストラクチャーにタイトル（例： **Boosted Content**）とこれらのフィールドを与えます。
         - フィールド 1:
             - **タイプ：** `Boolean`
             - **フィールドラベル：** `Boost?`
@@ -218,11 +218,11 @@
     - **Boost?** `False`
     - **コンテンツ：** `テストコンテンツ`
 
-1. 検索ページに移動し、 _test content_と検索します。
+1. 検索ページに移動し、 **test content** と検索します。
 
     **チェックポイント：** コンテンツフィールドが完全に一致しているため、BoostedされていないWebコンテンツがBoostedされたWebコンテンツよりも先に表示されます。
 
-1. 検索結果ウィジェットの設定で、 _Display Results in Document Form_ を有効化する。
+1. 検索結果ウィジェットの設定で、 **Display Results in Document Form** を有効化する。
 
 1. `ddmFieldArray` フィールドを探し、その値をコピーします。 例:
 
@@ -264,9 +264,9 @@
       この例では、ネストした1つのフィールドに対してカスタムフィルタを使用しているので、子クエリのカスタムパラメータ(`cparam`)は実際には必要ありません。 同じページ内の複数のネストされたフィールドにカスタムフィルタを設定するには、この例で示すように、子クエリにカスタムパラメータ名を設定する必要があります。 2つ目のネストしたフィールドのフィルタを追加するには、異なるカスタムパラメータ名(例: `cparam2`)を共有する2つの子カスタムフィルタが必要です。
       ```
 
-1. ここで、 _test content_ の検索を繰り返し、BoostedされたウェブコンテンツがNot Boostedされていないウェブコンテンツの上に表示されることを確認します。
+1. ここで、 **test content** の検索を繰り返し、BoostedされたウェブコンテンツがNot Boostedされていないウェブコンテンツの上に表示されることを確認します。
 
-ブースト値は、お客様のニーズに合わせてチューニングが必要な場合があります。 検索インサイトウィジェットを使用し、_［スコアの説明を有効にする］_を有効にして、ドキュメントがどのようにスコアリングされているかを調べ、ブースト値を微調整します。
+ブースト値は、お客様のニーズに合わせてチューニングが必要な場合があります。 検索インサイトウィジェットを使用し、 ［**スコアの説明を有効にする**］ を有効にして、ドキュメントがどのようにスコアリングされているかを調べ、ブースト値を微調整します。
 
 ## 関連する内容
 

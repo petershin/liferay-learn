@@ -1,6 +1,6 @@
 # 検索管理
 
-*［コントロールパネル］* &rarr; *［設定］* &rarr; *［検索］*には、接続、アクションをインデックスする、フィールドマッピングの3つの管理用UIがあります。 接続は、あなたのインストールが接続されている検索エンジンを表示し、アクションをインデックスは、再インデックス化のためのインターフェースで、フィールドマッピングは、Liferay から検索インデックスにマッピングされたフィールドを表示します。
+［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索**］ には、接続、アクションをインデックスする、フィールドマッピングの3つの管理用UIがあります。 接続は、あなたのインストールが接続されている検索エンジンを表示し、アクションをインデックスは、再インデックス化のためのインターフェースで、フィールドマッピングは、Liferay から検索インデックスにマッピングされたフィールドを表示します。
 
 ![検索管理パネルには、3つの管理画面があります。](./search-administration/images/02.png)
 
@@ -12,7 +12,7 @@
 * クライアントのバージョン：7.17.1
 * 有効な接続：1
 * 稼働状態：緑
-* 接続ID：\_REMOTE\_
+* 接続ID：\ **REMOTE\**
 * 接続タイプ：読み取り/書き込み
 * クラスター名：LiferayElasticsearchCluster
 * ノード：1
@@ -35,7 +35,7 @@ Liferay 7.4 以降、サーバー管理者は再インデックスアクショ�
    ![インデックスを再作成するインスタンスを選択します。](./search-administration/images/03.png)
 
 ```{note}
-[ワークフローメトリクス](../../process-automation/workflow/using-workflow-metrics.md)は、アプリケーションの専用設定メニューから再インデックス化されます。 グローバルメニューの［アプリケーション］ &rarr; ［ワークフロー］セクションの［ _Metrics_  ］をクリックし、［設定］ウィンドウを開きます (![Options](../../images/icon-actions.png)). 詳細は、【ワークフローメトリクスの再インデックス化】(../../process-automation/workflow/using-workflow/using-workflow-metrics.md #re-indexing-workflow-metrics) を参照ください。
+[ワークフローメトリクス](../../process-automation/workflow/using-workflow-metrics.md)は、アプリケーションの専用設定メニューから再インデックス化されます。 グローバルメニューの［アプリケーション］ &rarr; ［ワークフロー］セクションの［ _Metrics_  ］をクリックし、［設定］ウィンドウを開きます (![Options](../../images/icon-actions.png)). 詳細は、[ワークフローメトリクスの再インデックス化](../../process-automation/workflow/using-workflow/using-workflow-metrics.md#re-indexing-workflow-metrics) を参照ください。
 ```
 
 ### 全コンテンツの再インデックス化

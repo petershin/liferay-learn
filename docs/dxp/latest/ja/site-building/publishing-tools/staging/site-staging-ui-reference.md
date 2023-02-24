@@ -14,8 +14,8 @@ Stagingを有効にすると、Staging環境に追加のオプションが表示
 
 | オプション           | ウィジェットページ                                       | # |
 |:--------------- |:----------------------------------------------- |:- |
-| *サイトページバリエーション* | <ul><li>ステージングされたサイトのページセットのバリエーションを、ドロップダウンメニューで切り替えることができます。</li><li>Staging Barの*Actions*ボタンをクリックし、*Site Pages Variation*を選択して、ページセットのバリエーションを管理・作成します。 詳細については、[Page Versioning](./page-versioning.md)を参照してください。</li></ul>                       | 1 |
-| *ページバリエーション*    | <ul><li>ドロップダウンメニューで、ステージングサイト内の1ページのバリエーションを切り替えられます。</li><li>Staging Barの*Actions*ボタンをクリックし、*Page Variations*を選択して、ページバリエーションを管理・作成します。 詳細については、[Page Versioning](./page-versioning.md)を参照してください。</li></ul>                       | 2 |
+| *サイトページバリエーション* | <ul><li>ステージングされたサイトのページセットのバリエーションを、ドロップダウンメニューで切り替えることができます。</li><li>Staging Barの*Actions*ボタンをクリックし、*Site Pages Variation*を選択して、ページセットのバリエーションを管理・作成します。 詳細については、 [ページバージョニング](./page-versioning.md) を参照してください。</li></ul>                       | 1 |
+| *ページバリエーション*    | <ul><li>ドロップダウンメニューで、ステージングサイト内の1ページのバリエーションを切り替えられます。</li><li>Staging Barの*Actions*ボタンをクリックし、*Page Variations*を選択して、ページバリエーションを管理・作成します。 詳細については、 [ページバージョニング](./page-versioning.md) を参照してください。</li></ul>                       | 2 |
 | *元に戻す/やり直す*     | <ul><li>Staging Barの*Actions*ボタンをクリックし、*Undo*/*Redo*を選択します。</li><li>ページを*Ready for Publish Process*としてマークすると、最近の変更を元に戻したり、やり直したりすることができなくなります。</li></ul>                       | 3 |
 | *履歴*            | <ul><li>Staging Barの*Actions*ボタンをクリックし、*History*を選択して、ページの改訂履歴を管理します。</li><li>ページを以前のバージョンに戻すには、復元したいページのバージョンの*アクション*ボタンをクリックし、*出版プロセスの準備としてマーク*を選択します。</li></ul>                       | 4 |
 | *公開処理可能*        | <ul><li>Ready for Publish Process*をクリックすると、ページのステータスが*Draft*から*Ready for Publish Process*に変更されます。</li><li>*本番環境に公開*をクリックして、変更の公開を構成および開始します。</li><li>Liveにページを公開すると、*Ready for Publish Process*と表示されたバージョンのみが公開されます。</li></ul>                       | 5 |
@@ -27,7 +27,7 @@ Stagingを有効にすると、Staging環境に追加のオプションが表示
 
 *［Publish to Live］*をクリックすると、公開プロセスを設定するための追加オプションを含むモーダルウィンドウが表示されます。 *［Simple］*または*［詳細設定］*設定を使用して公開できます。
 
-![[本番環境に公開]をクリックして、公開モーダルウィンドウにアクセスします。](./site-staging-ui-reference/images/03.png)
+![ [本番環境に公開]をクリックして、公開モーダルウィンドウにアクセスします。](./site-staging-ui-reference/images/03.png)
 
 ## シンプルな公開
 
@@ -43,7 +43,7 @@ Stagingフレームワークで追跡されたページ削除数を表示しま�
 
 準備ができたら、*［Publish to Live］*をクリックして公開を開始します。
 
-![[本番環境に公開]をクリックして、公開を開始します。](./site-staging-ui-reference/images/04.png)
+![ [本番環境に公開]をクリックして、公開を開始します。](./site-staging-ui-reference/images/04.png)
 
 ## 高度な公開
 
@@ -87,7 +87,7 @@ Stagingフレームワークで追跡されたページ削除数を表示しま�
 また、コンテンツタイプごとに*［Change］*をクリックして、*バージョン履歴*、*ボキャブラリ*、*プレビューとサムネイル表示*など、各タイプに含まれるアイテムやその他の設定を管理することもできます。 詳細は、[ステージングでのデータとコンテンツタイプの管理](./managing-data-and-content-types-in-staging.md)を参照してください。
 
 ```{important}
-デフォルトでは、動的データリスト(DDL)表示、フォーム、Webコンテンツの表示、およびWiki表示のウィジェットを使用して表示されるコンテンツは、公開プロセスに常に含まれています。 Liferay DXP/Portal 7.4以降では、この動作を無効にして、表示されるコンテンツが公開プロセスの構成に明示的に含まれている場合にのみ公開されるようにすることができます。 詳細については、[Configuring Automatic Publishing of Displayed Content](./configuring-automatic-publishing-of-displayed-content.md)を参照してください。
+デフォルトでは、動的データリスト(DDL)表示、フォーム、Webコンテンツの表示、およびWiki表示のウィジェットを使用して表示されるコンテンツは、公開プロセスに常に含まれています。 Liferay DXP/Portal 7.4以降では、この動作を無効にして、表示されるコンテンツが公開プロセスの構成に明示的に含まれている場合にのみ公開されるようにすることができます。 詳細については、 [表示されたコンテンツの自動公開の設定](./configuring-automatic-publishing-of-displayed-content.md) を参照してください。
 ```
 
 **Permissions**: 変更を公開する際に、ページやウィジェットのパーミッションを含めるかどうかを選択します。
@@ -130,7 +130,7 @@ Stagingフレームワークで追跡されたページ削除数を表示しま�
 
 ![頻繁に公開する設定のテンプレートを作成および管理します。](./site-staging-ui-reference/images/15.png)
 
-Staging Bar の *Publish to Live* ボタンを使ってページやコンテンツを公開する際に、テンプレートを使用することができます。 詳細は、[Advanced Publishing](#advanced-publishing)を参照してください。
+Staging Bar の *Publish to Live* ボタンを使ってページやコンテンツを公開する際に、テンプレートを使用することができます。 詳細は、 [Advanced Publishing](#advanced-publishing) を参照してください。
 
 ### ステージング設定
 

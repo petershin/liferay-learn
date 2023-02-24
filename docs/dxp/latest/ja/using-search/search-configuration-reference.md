@@ -17,7 +17,7 @@ Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](..
 
 ### 検索ウィジェット
 
-検索ウィジェットの詳細については、 [ページとウィジェットの検索](./getting-started/search-overview.md#search-pages-and-widgets)をご覧ください。
+検索ウィジェットの詳細については、 [ページとウィジェットの検索](./getting-started/search-overview.md#search-pages-and-widgets) をご覧ください。
 
 **検索結果**: 検索結果の表示方法を設定します。 詳しくは、 [検索結果の表示](./search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#displaying-search-results) をご覧ください。
 
@@ -66,7 +66,7 @@ Liferayのデフォルトテーマのように、検索先のページがテー�
 
 ## インスタンススコープの検索構成
 
-検索は、[インスタンス設定](../system-administration/configuring-liferay/understanding-configuration-scope.md#system-settings-and-instance-settings)パネルにインスタンススコープエントリを持ちません。 しかし、多くの検索ウィジェットのインスタンスワイドなデフォルトの [ウィジェットテンプレート](../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) を構成するためのエントリがあります。 テンプレートが定義されているサイトID（多くの場合、サイト設定パネルにあるグローバルサイトのID）と、サイトメニューの &rarr; デザイン &rarr; ウィジェットテンプレートにあるウィジェットテンプレートのIDを入力します。
+検索は、 [インスタンス設定](../system-administration/configuring-liferay/understanding-configuration-scope.md#system-settings-and-instance-settings) パネルにインスタンススコープエントリを持ちません。 しかし、多くの検索ウィジェットのインスタンスワイドなデフォルトの [ウィジェットテンプレート](../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) を構成するためのエントリがあります。 テンプレートが定義されているサイトID（多くの場合、サイト設定パネルにあるグローバルサイトのID）と、サイトメニューの &rarr; デザイン &rarr; ウィジェットテンプレートにあるウィジェットテンプレートのIDを入力します。
 
 検索に関するインスタンス・スコープの設定は、Global Menuの &rarr; Applications &rarr; Search Tuningのエントリーのみです。
 
@@ -148,7 +148,7 @@ Category Facet Fieldの項目には、1つの設定があります。Category Fa
 
 **設定ファイル：** `com.liferay.portal.search.configuration.config`
 
-このエントリは、1つの繰り返し可能なプロパティを持っています（ [OSGi構成ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)で定義している場合は、配列構文を使用します）。
+このエントリは、1つの繰り返し可能なプロパティを持っています（ [OSGi構成ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) で定義している場合は、配列構文を使用します）。
 
 **`fieldNamePatterns`**：ここで設定したパターンに一致する名前のフィールドは、分析されていないキーワードフィールドとして扱われます。 スコアリングされたフルテキストクエリの代わりに、スコアリングされていないワイルドカードクエリによってマッチングが行われます。 これはリソースを消費する操作で、インデックスが大きくなると検索エンジンのパフォーマンスが低下します。 部分文字列の照合では、 [ngram tokenizer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) に頼る方が、通常は良い結果が得られます。
 
@@ -226,15 +226,15 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 **設定ファイル：** `com.liferay.portal.search.tuning.synonyms.web.internal.configuration.config`です。
 
-このエントリは、1つの繰り返し可能なプロパティを持っています（ [OSGi構成ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)で定義している場合は、配列構文を使用します）。
+このエントリは、1つの繰り返し可能なプロパティを持っています（ [OSGi構成ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) で定義している場合は、配列構文を使用します）。
 
-**`synyonymFilterNames`**: 適用するシノニムフィルター名を設定します。 これらのフィルターはElasticsearch Index Settingsで定義する必要があります。 [Creating New Synonym Language Filters](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters)を参照してください。
+**`synyonymFilterNames`**: 適用するシノニムフィルター名を設定します。 これらのフィルターはElasticsearch Index Settingsで定義する必要があります。 [Creating New Synonym Language Filters](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters) を参照してください。
 
 ### 検索管理
 
 *［コントロールパネル］* &rarr; *［設定］* &rarr; *［検索］*には、接続、アクションをインデックスする、フィールドマッピングの3つの管理用UIがあります。
 
-詳しくは、専用の [Search Administration and Tuning](./search-administration-and-tuning.md) のドキュメントをご覧ください。
+詳しくは、専用の [検索管理とチューニング](./search-administration-and-tuning.md) のドキュメントをご覧ください。
 
 #### つながり
 
@@ -263,7 +263,7 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 ### ポータルプロパティ
 
-ポータルプロパティは、システムにも適用されます。 [Lucene検索](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search)ポータルプロパティは、低レベルの検索動作を構成します。 プロパティとその説明を見て、自分の検索条件に当てはまるかどうかを判断します。
+ポータルプロパティは、システムにも適用されます。 [Lucene検索](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) ポータルプロパティは、低レベルの検索動作を構成します。 プロパティとその説明を見て、自分の検索条件に当てはまるかどうかを判断します。
 
 ## 関連する内容
 

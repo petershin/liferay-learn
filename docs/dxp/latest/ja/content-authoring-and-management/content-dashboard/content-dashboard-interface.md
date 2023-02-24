@@ -10,7 +10,7 @@
 
 ![コンテンツダッシュボードのユーザーインターフェースは、主に3つのセクションから構成されています。](./content-dashboard-interface/images/01.png)
 
-ダッシュボードにアクセスするには、*グローバルメニュー*( !/../images/icon-applications-menu.png ) を開き、*アプリケーション*タブを開いて、*コンテンツダッシュボード*をクリックします。ここでは、ページ上部に［コンテンツ監査ツール］（#content-audit-tool）（1）、下部に［コンテンツリスト］（#contents-list）（2）が表示されます。コンテンツリストでは、コンテンツにカーソルを合わせて*Info*ボタン（ ![Info](../../images/icon-information.png) ）をクリックすると、[コンテンツ情報サイドバー](#content-info-sidebar) (3) にアクセスできます。または、コンテンツアイテムの*Actions*ボタン( ![Actions Button](../../images/icon-actions.png) )をクリックして、*Info*を選択することもできます。
+ダッシュボードにアクセスするには、 **グローバルメニュー**( !/../images/icon-applications-menu.png ) を開き、 **アプリケーション** タブを開いて、 **コンテンツダッシュボード** をクリックします。ここでは、ページ上部に［コンテンツ監査ツール］（#content-audit-tool）（1）、下部に［コンテンツリスト］（#contents-list）（2）が表示されます。コンテンツリストでは、コンテンツにカーソルを合わせて **Info** ボタン（ ![Info](../../images/icon-information.png) ）をクリックすると、 [コンテンツ情報サイドバー](#content-info-sidebar) (3) にアクセスできます。または、コンテンツアイテムの **Actions** ボタン( ![Actions Button](../../images/icon-actions.png) )をクリックして、 **Info** を選択することもできます。
 
 ```{note}
 インスタンスがAnalytics Cloudに接続されている場合、*View Metrics*を選択して、Content Performanceサイドパネルを開くこともできます。 詳しくは、[コンテンツパフォーマンスツールについて](../page-performance-and-accessibility/about-the-content-performance-tool.md) をご覧ください。
@@ -18,7 +18,7 @@
 
 ## コンテンツ監査ツール
 
-コンテンツ監査ツールは、 [コンテンツリスト](#contents-list) セクションのアセットをチャートで表示します。 このグラフは、選択した [ボキャブラリーとカテゴリ](#customizing-vocabularies-and-categories-for-the-content-audit-tool) のアセットの総数を表し、すべてのサイトとアセットライブラリーのアイテムを含めることができます。 ただし、チャートは現在のユーザーがアクセスできるデータのみ表示されます。 また、 [コンテンツリストフィルタ](#filtering-and-sorting-content-in-the-contents-list)を使って、チャート結果を制限することもできます。
+コンテンツ監査ツールは、 [コンテンツリスト](#contents-list) セクションのアセットをチャートで表示します。 このグラフは、選択した [ボキャブラリーとカテゴリ](#customizing-vocabularies-and-categories-for-the-content-audit-tool) のアセットの総数を表し、すべてのサイトとアセットライブラリーのアイテムを含めることができます。 ただし、チャートは現在のユーザーがアクセスできるデータのみ表示されます。 また、 [コンテンツリストフィルタ](#filtering-and-sorting-content-in-the-contents-list) を使って、チャート結果を制限することもできます。
 
 ![コンテンツ監査ツールは、コンテンツ一覧セクションのアセットをチャートで表示します。](./content-dashboard-interface/images/02.png)
 
@@ -43,19 +43,19 @@
 
 デフォルトでは、選択されたボキャブラリーの各カテゴリーのアセット数の合計が棒グラフで表示されます。 これらのボキャブラリーを変更すること。
 
-1. コンテンツ監査領域の *Configure* ボタン ( ![Configure Button](../../images/icon-settings.png) ) をクリックします。
+1. コンテンツ監査領域の **Configure** ボタン ( ![Configure Button](../../images/icon-settings.png) ) をクリックします。
 
-1. *左* と *右* の矢印ボタンで、チャートに表示するボキャブラリーを選択します。
+1. **左** と **右** の矢印ボタンで、チャートに表示するボキャブラリーを選択します。
    
    一度に使えるボキャブラリーは1つか2つだけです。 また、同じサイトのボキャブラリーしか組み合わせることができません。 ただし、グローバルボキャブラリーは、どのサイトのボキャブラリーでも使用可能です。
 
-1. *上* と *下* の矢印ボタンをクリックして、ボキャブラリーを順番に並べることができます。
+1. **上** と **下** の矢印ボタンをクリックして、ボキャブラリーを順番に並べることができます。
    
    このグラフでは、X軸に上の語彙を、Y軸に下の語彙を使用しています。
    
    ![コンテンツ監査表のボキャブラリーを選択します。](./content-dashboard-interface/images/04.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 ```{tip}
 Flip Axes* ボタン ( ![Flip Axes](../../images/icon-change.png) ) をクリックすると、X軸とY軸をすばやく切り替えることができます。
@@ -84,15 +84,15 @@ Flip Axes* ボタン ( ![Flip Axes](../../images/icon-change.png) ) をクリッ
 | タイトル            | コンテンツのタイトルです。                                                                                                     |
 | 作成者             | コンテンツの作者です。                                                                                                       |
 | 種類              | コンテンツタイプ：Webコンテンツ記事、文書 {bdg-secondary}`7.4+`、またはブログエントリー {bdg-secondary}`7.4 U23+/GA23+`                          |
-| サブタイプ           | コンテンツ [サブタイプ](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). |
+| サブタイプ           | コンテンツ [サブタイプ](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories) . |
 | サイトまたはアセットライブラリ | Liferay インスタンスにおけるコンテンツアイテムの位置。                                                                                   |
 | ステータス           | 各コンテンツのワークフローの状態です。                                                                                               |
-| ボキャブラリー(x軸)     | コンテンツ監査ツールの [x軸の語彙からコンテンツアイテムに適用されるカテゴリ](#content-audit-tool)。                                                    |
-| ボキャブラリー（Y軸）     | コンテンツ監査ツールの [y 軸の語彙からコンテンツアイテムに適用されるカテゴリ](#content-audit-tool)。                                                   |
+| ボキャブラリー(x軸)     | コンテンツ監査ツールの [x軸の語彙からコンテンツアイテムに適用されるカテゴリ](#content-audit-tool) 。                                                    |
+| ボキャブラリー（Y軸）     | コンテンツ監査ツールの [y 軸の語彙からコンテンツアイテムに適用されるカテゴリ](#content-audit-tool) 。                                                   |
 | 編集日時            | コンテンツの最終更新日                                                                                                       |
 
 
-コンテンツリストでは、 *ページ* アイコン ( ![Page Icon](../../images/icon-page.png) ) を使って、 [表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates.md)を持つアセットを識別します。
+コンテンツリストでは、 **ページ** アイコン ( ![Page Icon](../../images/icon-page.png) ) を使って、 [表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates.md)を持つアセットを識別します。
 
 リスト内のコンテンツにカーソルを合わせると、これらのアクションにアクセスできます。
 
@@ -100,15 +100,15 @@ Flip Axes* ボタン ( ![Flip Axes](../../images/icon-change.png) ) をクリッ
 
 * ** ( ![Edit](../../images/icon-edit.png) ) を編集します。コンテンツを編集モードで開きます。
 
-* *情報* ( ![Information](../../images/icon-information.png) ): [コンテンツ情報](#content-info-sidebar) サイドバーを開きます。
+* **情報**( ![Information](../../images/icon-information.png) ): [コンテンツ情報](#content-info-sidebar) サイドバーを開きます。
 
-* *View Metrics* ( ![View Metrics](../../images/icon-analytics.png) ) を表示します。 [コンテンツパフォーマンスパネルを開く](../page-performance-and-accessibility/about-the-content-performance-tool.md).
+* **View Metrics**( ![View Metrics](../../images/icon-analytics.png) ) を表示します。 [コンテンツパフォーマンスパネルを開く](../page-performance-and-accessibility/about-the-content-performance-tool.md).
   
   ![コンテンツ情報サイドバーとコンテンツパフォーマンスパネルは、「アクション」メニューまたは各コンテンツ行のアイコンからアクセスできます。](./content-dashboard-interface/images/06.png)
 
 ### コンテンツ一覧内のコンテンツの絞り込みとソート
 
-*Filter and Order* ドロップダウンメニューから、 [pre-defined filter](#filter-options-reference)を選択します。 また、タイトルや更新日時でコンテンツをソートすることも可能です。
+**Filter and Order** ドロップダウンメニューから、 [pre-defined filter](#filter-options-reference) を選択します。 また、タイトルや更新日時でコンテンツをソートすることも可能です。
 
 検索バーを使ってキーワードでコンテンツを絞り込むか、 [コンテンツ監査](#content-audit-tool) チャートでバーをクリックすると、選択したカテゴリーでコンテンツを絞り込むことができます。
 
@@ -124,7 +124,7 @@ Flip Axes* ボタン ( ![Flip Axes](../../images/icon-change.png) ) をクリッ
 
 {bdg-secondary}`7.4+用`
 
-*フィルターと並び替え*ドロップダウンメニューから、以下のオプションを選択することができます。
+**フィルターと並び替え** ドロップダウンメニューから、以下のオプションを選択することができます。
 
 | 絞り込み            | 説明                                                                                                               |
 |:--------------- |:---------------------------------------------------------------------------------------------------------------- |
@@ -151,15 +151,15 @@ Flip Axes* ボタン ( ![Flip Axes](../../images/icon-change.png) ) をクリッ
 
 | 例 | 次の項目で絞り込む | フィルターの例                           | コンテンツリストの結果                                     |
 |:- |:--------- |:--------------------------------- |:----------------------------------------------- |
-| A | カテゴリ      | カテゴリー：*Entrepreneur* および *Family* | *Entrepreneur* `および` Familyカテゴリーの両方に属しているアセットのみ |
-| B | 作成者       | 作成者：*Peter* および *Linda*           | *Peter* `または` *Linda* `または`両者が作成したアセット。         |
-| C | カテゴリー、作成者 | カテゴリーは*Entrepreneur*、作成者は*Linda*  | *Entrepreneur*カテゴリーにあり、`かつ`Lindaが作成したアセットのみ。    |
+| A | カテゴリ      | カテゴリー： **Entrepreneur** および **Family** | **Entrepreneur** `および` Familyカテゴリーの両方に属しているアセットのみ |
+| B | 作成者       | 作成者： **Peter** および **Linda** | **Peter** `または` **Linda** `または`両者が作成したアセット。         |
+| C | カテゴリー、作成者 | カテゴリーは **Entrepreneur** 、作成者は **Linda** | **Entrepreneur** カテゴリーにあり、`かつ`Lindaが作成したアセットのみ。    |
 
 ## コンテンツ情報サイドバー
 
-情報サイドバーでは、選択したアセットのアクションやメタデータにアクセスできます。 サイドバーを開くには、目的のアセットの *Actions* ボタン ( ![Actions Button](../../images/icon-actions.png) ) をクリックし、 *Info*を選択します。 または、アセットの上にカーソルを置いて、 *情報* ボタン ( ![Information Button](../../images/icon-information.png) ) をクリックすることもできます。
+情報サイドバーでは、選択したアセットのアクションやメタデータにアクセスできます。 サイドバーを開くには、目的のアセットの **Actions** ボタン ( ![Actions Button](../../images/icon-actions.png) ) をクリックし、 **Info** を選択します。 または、アセットの上にカーソルを置いて、 **情報** ボタン ( ![Information Button](../../images/icon-information.png) ) をクリックすることもできます。
 
-![情報]ボタンをクリックすると、コンテンツ情報サイドバーにアクセスできます。](./content-dashboard-interface/images/09.png)
+![[情報]ボタンをクリックすると、コンテンツ情報サイドバーにアクセスできます。](./content-dashboard-interface/images/09.png)
 
 この表は、アセットタイプごとに利用可能なメタデータとアクションの一覧です。
 
@@ -175,7 +175,7 @@ Flip Axes* ボタン ( ![Flip Axes](../../images/icon-change.png) ) をクリッ
 
 {bdg-secondary}`利用可能 7.4 U53+/GA53+`
 
-コンテンツ情報パネルには、Webコンテンツとドキュメントとメディアのアセットに関するバージョン履歴が表示されます。 バージョン履歴を見るには、コンテンツアイテムの *Info* (![Info Button](../../images/icon-information.png)) をクリックし、 *Versions* タブを表示させます。
+コンテンツ情報パネルには、Webコンテンツとドキュメントとメディアのアセットに関するバージョン履歴が表示されます。 バージョン履歴を見るには、コンテンツアイテムの **Info**(![Info Button](../../images/icon-information.png)) をクリックし、 **Versions** タブを表示させます。
 
 このタブには、そのアイテムで利用可能なバージョンが最大10個まで表示されます。 さらにバージョンがある場合は、「View More」ボタンをクリックすると表示されます。
 
@@ -183,7 +183,7 @@ Flip Axes* ボタン ( ![Flip Axes](../../images/icon-change.png) ) をクリッ
 
 **プレビューを表示します。** レンダリングされたWebコンテンツまたはドキュメントを表示します。
 
-**比較先**  選択したバージョンと別のバージョンとの差分を表示します。 バージョン間の追加、削除、書式の変更を表示する新しいページが表示されます。 このアクションは、アクティブなバージョンが2つ以上ある場合にのみ利用可能です。
+**比較先** 選択したバージョンと別のバージョンとの差分を表示します。 バージョン間の追加、削除、書式の変更を表示する新しいページが表示されます。 このアクションは、アクティブなバージョンが2つ以上ある場合にのみ利用可能です。
 
 **期限切れ。** あるバージョンを無効化し、次に利用可能なバージョンを有効化します。 例えば、1.2と1.1の2つのバージョンがあり、1.2を失効させた場合、1.1がアクティブバージョンとなります。
 
@@ -192,6 +192,6 @@ Flip Axes* ボタン ( ![Flip Axes](../../images/icon-change.png) ) をクリッ
 
 ## 追加情報
 
-* [About the Content Dashboard](./about-the-content-dashboard.md)
+* [コンテンツダッシュボードについて](./about-the-content-dashboard.md)
 * [コンテンツパフォーマンスツールの説明](../page-performance-and-accessibility/about-the-content-performance-tool.md)
 * [コンテンツのカテゴリとボキャブラリの定義](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)

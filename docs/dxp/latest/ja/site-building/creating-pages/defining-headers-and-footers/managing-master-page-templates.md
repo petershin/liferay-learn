@@ -4,27 +4,27 @@
 
 マスターページテンプレートを管理するには、次の手順に従います。
 
-1. 製品メニューを開き、 *Design* &rarr; *Page Templates*
-1. *Masters* タブを選択します。
-1. マスターページテンプレートの*アクション* (![Actions](./../../../images/icon-actions.png)) メニューを開き、いずれかのオプションを選択してください。
+1. 製品メニューを開き、 **Design** &rarr; **Page Templates**
+1. **Masters** タブを選択します。
+1. マスターページテンプレートの **アクション**(![Actions](./../../../images/icon-actions.png)) メニューを開き、いずれかのオプションを選択してください。
 
     ![マスターページテンプレートの管理は、ページテンプレートアプリケーションの「マスター」タブから「アクションメニュー」を開いて行ってください。](./managing-master-page-templates/images/01.png)
 
 **編集：** マスターページテンプレートを構成します。
 
-**サムネイルの変更：** *［マスター］*タブでマスターページテンプレートのカードに表示するサムネイル画像を選択します。
+**サムネイルの変更：**［**マスター**］ タブでマスターページテンプレートのカードに表示するサムネイル画像を選択します。
 
 **名前の変更：** マスターページテンプレートの名前を変更します。
 
 **コピーを作成：** マスターページテンプレートを複製します。 コピーでは、同じ名前の後に"Copy"を付けて使用します。
 
-**エクスポート：** マスターページテンプレートの定義をエクスポートしてダウンロードします。 マスターページテンプレートが *承認済み* の状態のときに使用できます。
+**エクスポート：** マスターページテンプレートの定義をエクスポートしてダウンロードします。 マスターページテンプレートが **承認済み** の状態のときに使用できます。
 
 **権限：** マスターページテンプレートの権限を定義します.
 
-**削除：** マスターページテンプレートを削除します。 各テンプレートにチェックを入れ、`X`をクリックするか、管理ツールバーから*削除*アクションを選択すると、複数のマスターページテンプレートを一度に削除することが可能です。
+**削除：** マスターページテンプレートを削除します。 各テンプレートにチェックを入れ、`X`をクリックするか、管理ツールバーから **削除** アクションを選択すると、複数のマスターページテンプレートを一度に削除することが可能です。
 
-**下書きの破棄：** マスターページの下書きを破棄する。 マスターページテンプレートが*下書き*の状態のときに使用できます。
+**下書きの破棄：** マスターページの下書きを破棄する。 マスターページテンプレートが **下書き** の状態のときに使用できます。
 
 ```{note}
 変更を加えて公開すると、マスターページテンプレートを使用しているすべてのページにプロパゲートします。
@@ -35,9 +35,9 @@
 ページのマスターページテンプレートは、[コンテントページエディタ](../using-content-pages/content-page-editor-ui-reference.md)で変更することができます。 次の手順を実行します：
 
 1. マスターページテンプレートを変更するページに移動します。
-1. *Edit* (![Edit icon](../../../images/icon-edit.png)) をクリックします。
-1. 編集サイドバーで、 *ページデザイン* メニュー (![Page Design menu](../../../images/icon-format.png)) をクリックします。
-1. ［Masters］セクションで、使用したい * ［マスターページテンプレート］* をクリックします。
+1. **Edit**(![Edit icon](../../../images/icon-edit.png)) をクリックします。
+1. 編集サイドバーで、 **ページデザイン** メニュー (![Page Design menu](../../../images/icon-format.png)) をクリックします。
+1. ［Masters］セクションで、使用したい ［**マスターページテンプレート**］ をクリックします。
 
    ![ページデザインメニューから、使用するマスターページテンプレートをクリックします。](./managing-master-page-templates/images/03.png)
 
@@ -45,13 +45,13 @@
 
 マスターページテンプレートのルック＆フィールやその他のオプションを管理するには、次の手順に従います。
 
-1. 製品メニューを開き、 *Design* &rarr; *Page Templates*.
+1. 製品メニューを開き、 **Design** &rarr; **Page Templates** .
 
-1. *Masters* タブを選択します。
+1. **Masters** タブを選択します。
 
-1. 設定したいマスターページテンプレートの *Actions* メニュー (![Actions](./../../../images/icon-actions.png)) &rarr; *Edit* を開いてください。
+1. 設定したいマスターページテンプレートの **Actions** メニュー (![Actions](./../../../images/icon-actions.png)) &rarr; **Edit** を開いてください。
 
-1. *ページデザイン* メニュー (![Page Design menu](../../../images/icon-format.png)) &rarr; *その他のページデザインオプション*(![More Page Design Options](../../../images/icon-cog3.png)) をクリックします。
+1. **ページデザイン** メニュー (![Page Design menu](../../../images/icon-format.png)) &rarr; **その他のページデザインオプション**(![More Page Design Options](../../../images/icon-cog3.png)) をクリックします。
 
    ![その他のページデザインオプションをクリックすると、マスターページテンプレートの一般的なオプションにアクセスできます。](./managing-master-page-templates/images/06.png)
 
@@ -71,7 +71,7 @@
 
 **CSSクライアントエクステンション** [CSS Client Extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md#css-client-extensions) を追加して、マスターページテンプレートを使用するコンテンツページの CSS スタイルを上書きします。
 
-**JavaScriptコードとJavaScriptクライアントエクステンションです。** *Advanced* タブでは、ページの下部で実行される JavaScript コードを追加することができます。 [JavaScript Client Extentions](../../../building-applications/client-extensions/browser-based-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページにアクセスした際に、JavaScriptを実行させることができます。
+**JavaScriptコードとJavaScriptクライアントエクステンションです。** **Advanced** タブでは、ページの下部で実行される JavaScript コードを追加することができます。 [JavaScript Client Extentions](../../../building-applications/client-extensions/browser-based-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページにアクセスした際に、JavaScriptを実行させることができます。
 
 ```{note}
 テーマは、マスターページテンプレートを介してコンテンツページに適用されます。 マスターページテンプレートをコンテンツページに適用すると、コンテンツページのルック＆フィールはマスターページテンプレートで定義されます。

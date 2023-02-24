@@ -1,10 +1,10 @@
 # 7.4のメンテナンスモードと非推奨
 
-新しいLiferay DXPやLiferay Portalのリリースごとに、機能の継続的な拡張が保証されない場合や、廃止される可能性があります。 機能の拡張を停止すると、その機能は*メンテナンスモード*に入ります。
+新しいLiferay DXPやLiferay Portalのリリースごとに、機能の継続的な拡張が保証されない場合や、廃止される可能性があります。 機能の拡張を停止すると、その機能は **メンテナンスモード** に入ります。
 
 **メンテナンスモード：** この機能はサポートされていますが、拡張は行われません。
 
-廃止された機能は最終的に削除されるか、より新しい、より優れた機能に置き換えられます。 廃止された機能のサポートを終了する前に、Liferayはそれを*廃止予定*とマークします。
+廃止された機能は最終的に削除されるか、より新しい、より優れた機能に置き換えられます。 廃止された機能のサポートを終了する前に、Liferayはそれを **廃止予定** とマークします。
 
 **廃止予定：** この機能は、次のマイナーバージョンのリリースでサポートされなくなります。 たとえば、7.4で廃止予定になった機能のサポートは、早ければ7.5で削除される可能性があります。
 
@@ -13,7 +13,7 @@
 ```
 
 ```{important}
-詳細は、[Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation)を参照してください。
+詳細は、 [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation) を参照してください。
 ```
 
 ## 廃止予定の機能の利用可能性
@@ -52,7 +52,7 @@
 | Liferay Mobile Device Detection Enterprise | アーカイブ済み                 | 7.2で廃止。 最新の定義については、51Degreesにお問い合わせください.                                                                                                                                                                                                              |
 | Liferay Screens                            | 削除。 7.3でリリースされた最終バージョン。 | 直接的な代替品はありませんが、Mobile SDKとHeadless APIがモバイルアプリケーションの開発をサポートします。                                                                                                                                                                                       |
 | Liferay SyncコネクターとSyncクライアント               | アーカイブ済み                 | 7.3で廃止。 直接の置換はありません。                                                                                                                                                                                                                                  |
-| ライブユーザー                                    | バンドル                    | 7.2で廃止。  [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html)によって置き換えられました。                                                                                                                                              |
+| ライブユーザー                                    | バンドル                    | 7.2で廃止。  [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) によって置き換えられました。                                                                                                                                              |
 | モバイルSDK                                    | 削除済み                    | [ヘッドレスデリバリー](../../../headless-delivery/using-liferay-as-a-headless-platform.md)に置き換えられました。                                                                                                                                                           |
 | NTLM                                       | アーカイブ済み                 | 7.2で廃止。 [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)に置き換えられました。 NTLMを使用してMicrosoft Windows™アカウントを認証している場合は、[Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)を使用するように切り替えてください。 |
 | OAuth 1.0a                                 | アーカイブ済み                 | 7.2で廃止。 これはLiferayコネクターからOAuth 2.0に置き換えられます。                                                                                                                                                                                                          |
@@ -66,8 +66,8 @@
 
 * [7.3の非推奨事項とメンテナンスモードに移行した機能](./maintenance-mode-and-deprecations-in-7-3.md)
 * [7.2の非推奨事項とメンテナンスモードに移行した機能](./maintenance-mode-and-deprecations-in-7-2.md)
-* [7.1の非推奨事項](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0の非推奨事項](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+* [7.1の非推奨事項](https://help.liferay.com/hc/ja/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+* [7.0の非推奨事項](https://help.liferay.com/hc/ja/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 ## 7.4でメンテナンスモードに移行された機能
 
@@ -79,7 +79,7 @@
 | Solrコネクター | [可能であれば、Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md) を使用してください。 |
 
 ```{note}
-Liferayは、インポート/エクスポートとステージング、特にコンテンツをある環境で作成し、別の環境で消費する必要があるシナリオでのリモートライブステージングを改善し続けています。 詳しくは、[Publishing Tools](../../../site-building/publishing-tools.md) をご覧ください。
+Liferayは、インポート/エクスポートとステージング、特にコンテンツをある環境で作成し、別の環境で消費する必要があるシナリオでのリモートライブステージングを改善し続けています。 詳しくは、 [公開ツール](../../../site-building/publishing-tools.md) をご覧ください。
 ```
 
 ## 追加情報

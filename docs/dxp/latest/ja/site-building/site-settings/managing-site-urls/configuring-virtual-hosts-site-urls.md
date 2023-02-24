@@ -6,7 +6,7 @@
 
 1. Liferay DXP 内で Site Menu (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *Configuration*を展開し、 *Site Settings* &rarr; *Site Configuration* &rarr; *Site URL*に進みます。
 
-   ![サイト構成]の[サイトのURL]に移動します。](./configuring-virtual-hosts-site-urls/images/01.png)
+   ![サイト構成]の [サイトのURL]に移動します。](./configuring-virtual-hosts-site-urls/images/01.png)
 
 1. *バーチャルホスト* フィールドに希望のドメインまたはサブドメインを入力します（例： `www.helloworld.com`, `http://developers.helloworld.com`)。
 

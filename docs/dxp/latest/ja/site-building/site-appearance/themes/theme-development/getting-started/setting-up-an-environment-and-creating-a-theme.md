@@ -1,6 +1,6 @@
 # 環境の設定とテーマの作成
 
-テーマの作成は、テーマ開発の最初のステップです。 自分のテーマができたら、それを Liferay DXP インスタンスにデプロイして、 [様々なサイトのカスタマイズに使うことができます](../../introduction-to-themes.md#developing-themes).
+テーマの作成は、テーマ開発の最初のステップです。 自分のテーマができたら、それを Liferay DXP インスタンスにデプロイして、 [様々なサイトのカスタマイズに使うことができます](../../introduction-to-themes.md#developing-themes) .
 
 ## Liferayテーマジェネレーターを使用する
 
@@ -13,7 +13,7 @@
 ### インストール
 
 ```{note}
-Liferayテーマジェネレータを使用してテーマを開発するには、ノードとNPMの両方が必要です。 Node compatibility matrix] (../../../../building-applications/tooling/reference/node-version-information.md) をチェックして、あなたのLiferayのバージョンに合ったバージョンがインストールされていることを確認してください。
+Liferayテーマジェネレータを使用してテーマを開発するには、ノードとNPMの両方が必要です。 [Node compatibility matrix](../../../../../building-applications/tooling/reference/node-version-information.md) をチェックして、あなたのLiferayのバージョンに合ったバージョンがインストールされていることを確認してください。
 ```
 
 まだインストールしていない場合は、次のコマンドを使用してLiferayテーマジェネレーターをインストールします。
@@ -88,7 +88,7 @@ npm install -g yo gulp
 Error: compound selectors may no longer be extended.
 ```
 
-このエラーは、テーマジェネレーターが [Dart SASS](https://sass-lang.com/dart-sass) を Liferay 7.3+ の時点で使用しているが、一部の環境ではまだ非推奨の [LibSass](https://sass-lang.com/blog/libsass-is-deprecated)で使用されている機能に依存しているために発生します。
+このエラーは、テーマジェネレーターが [Dart SASS](https://sass-lang.com/dart-sass) を Liferay 7.3+ の時点で使用しているが、一部の環境ではまだ非推奨の [LibSass](https://sass-lang.com/blog/libsass-is-deprecated) で使用されている機能に依存しているために発生します。
 
 このエラーを回避するには、テーマでDart SASSを無効にします。 これらの `dartSass` と `node-sass` のプロパティを、テーマの `package.json` に追加します（既存のプロパティを削除しないこと）。
 

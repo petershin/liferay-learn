@@ -6,10 +6,10 @@
 
 **Temporary**: 302コードを使用して、要求されたリソースが一時的に移動したことを、サイトにアクセスしている検索エンジンや他のツールに通知します。 302コードは、サイトのランキングに影響を与えずに、A/Bテストを実施したり、問題を修正しながらトラフィックをリダイレクトしたりしたい場合に有効です。 Liferay はデフォルトで 302 コードを使用します。
 
-SEOの各リダイレクトタイプの影響の詳細については、[Optimizing Sites](../../../optimizing-sites.md)を参照してください。 また、テスト時に302コードを使用する方法については、[A/B Testing](../../../optimizing-sites/ab-testing/ab-testing.md)を参照してください。
+SEOの各リダイレクトタイプの影響の詳細については、 [サイトの最適化](../../../optimizing-sites.md) を参照してください。 また、テスト時に302コードを使用する方法については、 [A/Bテスト](../../../optimizing-sites/ab-testing/ab-testing.md) を参照してください。
 
 ```{note}
-一括してリダイレクトを行う必要がある場合は、[Using Pattern Redirects](./using-pattern-redirects.md) を参照してください。
+一括してリダイレクトを行う必要がある場合は、 [パターンリダイレクトの利用](./using-pattern-redirects.md) を参照してください。
 ```
 
 ## エイリアスリダイレクトの作成
@@ -22,13 +22,13 @@ SEOの各リダイレクトタイプの影響の詳細については、[Optimiz
 
 1. *Source URL* フィールドに一意の相対 URL を入力し、リダイレクトのトリガーとなるリンクを決定します。 入力した値は、その上に表示されるベースURLに追加されます。
 
-   ![[ソースURL]フィールドに一意の相対URLを入力します。](./using-alias-redirects/images/02.png)
+   ![ [ソースURL]フィールドに一意の相対URLを入力します。](./using-alias-redirects/images/02.png)
 
 1. *［Destination URL］*フィールドに絶対URLを入力して、目的の宛先へのリンクを指定します。
 
    この宛先は内部または外部にすることができますが、常に絶対URLとして入力する必要があります。 また、 *Check URL* ボタン (![Check URL Button](../../../../images/icon-shortcut.png)) をクリックして、URLを確認することができます。
 
-   ![[行先URL]フィールドに絶対URLを入力します。](./using-alias-redirects/images/03.png)
+   ![ [行先URL]フィールドに絶対URLを入力します。](./using-alias-redirects/images/03.png)
 
 1. *Type* ドロップダウンメニューを使用して、リダイレクトを恒久的（301）または一時的（302）に定義します。
 

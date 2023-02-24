@@ -14,7 +14,7 @@
 1. [User Account API Basics](./liferay-y6q4.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6q4.zip -O
+   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-y6q4.zip -O
    ```
 
    ```bash
@@ -113,7 +113,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | `-u "test@liferay.com:learn"`                                                                                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、【OAuth2を使ったユーザー認証】(../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ったユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -145,7 +145,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 他のJavaクラスの例はこれと似ていますが、異なる `UserAccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
+サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他のUser RESTサービスを呼び出す例です。

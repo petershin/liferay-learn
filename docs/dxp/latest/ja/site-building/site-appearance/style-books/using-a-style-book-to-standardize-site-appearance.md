@@ -4,7 +4,7 @@
 
 *スタイルブック*は、ページ全体で一貫したエクスペリエンスを提供するためにサイトに適用される一連の視覚的なルールです。 これらのルールによって、要素（ウィジェットなど）間の間隔、色、フォントなど、サイトのさまざまな視覚的設定が決定まります。 これらの各設定は、スタイルブックを使用するすべてのページに等しく適用されます。
 
-サイトのページに割り当てるテーマによって、サイトのスタイルブックで利用可能な設定のカテゴリが決まります。 開発者は、スタイルブックを構成するための新しいオプションを使用してカテゴリをカスタマイズできます。 詳細については、[Style Book Token Definitions](./developer-guide/style-book-token-definitions.md)を参照してください。
+サイトのページに割り当てるテーマによって、サイトのスタイルブックで利用可能な設定のカテゴリが決まります。 開発者は、スタイルブックを構成するための新しいオプションを使用してカテゴリをカスタマイズできます。 詳細については、 [スタイルブックトークンの定義](./developer-guide/style-book-token-definitions.md) を参照してください。
 
 ## ページのスタイルブックの選択
 
@@ -22,7 +22,7 @@ Liferay 7.4 U10+ と GA14+ からは、すべてのサイトに *Styles from The
 
 1. *［Style Book］*タブをクリックして開きます。
 
-    ![[スタイルブック]タブを開き、リストから目的のスタイルブックを選択します。](./using-a-style-book-to-standardize-site-appearance/images/01.png)
+    ![ [スタイルブック]タブを開き、リストから目的のスタイルブックを選択します。](./using-a-style-book-to-standardize-site-appearance/images/01.png)
 
 1. リストから目的のスタイルブックを選択します。
 
@@ -42,9 +42,9 @@ Liferay 7.4 U10+ と GA14+ からは、すべてのサイトに *Styles from The
 
    ![利用可能なカテゴリのいずれかを選択し、スタイルブックをカスタマイズします。](./using-a-style-book-to-standardize-site-appearance/images/02.png)
 
-   これらのオプションは、サイトで使用されているテーマに基づいています。 デフォルトの標準テーマで使用可能なカテゴリの詳細については、[デフォルトの標準テーマのカテゴリ](#default-classic-theme-categories)を参照してください。
+   これらのオプションは、サイトで使用されているテーマに基づいています。 デフォルトの標準テーマで使用可能なカテゴリの詳細については、 [デフォルトの標準テーマのカテゴリ](#default-classic-theme-categories) を参照してください。
 
-1. 選択されたカテゴリの下にある提供されたフィールドのいずれかをカスタマイズします。 カラーフィールドは特に、 [複数の方法で色を選択することができます。](#customizing-your-style-book-s-colors).
+1. 選択されたカテゴリの下にある提供されたフィールドのいずれかをカスタマイズします。 カラーフィールドは特に、 [複数の方法で色を選択することができます。](#customizing-your-style-book-s-colors) .
 
 1. *［Publish］*をクリックします。
 
@@ -108,7 +108,7 @@ Liferay 7.4 U10+ と GA14+ からは、すべてのサイトに *Styles from The
 
 テーマで定義されているフォントと視覚要素に使用される色は、［色体系］カテゴリでカスタマイズできます。 通常、これは、ページの本文、背景、およびテキストの色を変更できることを意味します。
 
-![[色体系]カテゴリのオプションを使用して、ディスプレイまたはUI要素に使用される色を変更します。](./using-a-style-book-to-standardize-site-appearance/images/07.png)
+![ [色体系]カテゴリのオプションを使用して、ディスプレイまたはUI要素に使用される色を変更します。](./using-a-style-book-to-standardize-site-appearance/images/07.png)
 
 ```{note}
 アラート関連の要素（*成功*や*注意*など）の色を変更しても、各タイプのアラートは多くの色のうちのいずれかを使用する可能性があるため、サイトの着信アラートの色には影響しない場合があります。 アラートの色を完全にカスタマイズするには、カスタマイズ可能な色を定義して、独自のテーマのカテゴリで使用する必要があります。
@@ -122,7 +122,7 @@ Spacingカテゴリのオプションを使用して、ページの主要な要�
 
 これらのオプションは、サイトのすべてのページに表示される要素の色と間隔を変更します。 たとえば、*［本文の背景］*オプションは、すべてのページの背景色を変更します。
 
-![[一般]カテゴリの[本文の背景]オプションを使用して、サイトページの背景の色をカスタマイズします。](./using-a-style-book-to-standardize-site-appearance/images/08.png)
+![[一般]カテゴリの [本文の背景]オプションを使用して、サイトページの背景の色をカスタマイズします。](./using-a-style-book-to-standardize-site-appearance/images/08.png)
 
 ### レイアウト
 
@@ -136,9 +136,9 @@ Spacingカテゴリのオプションを使用して、ページの主要な要�
 
 これらのオプションは、デフォルトタイプのボタンのスタイルを変更します。 標準テーマで使用される各ボタンの背景色、前景色、および線の色をカスタマイズできます。
 
-![標準テーマを使用するときに、[Button Primary]で色を変更すると、すぐに使用できるウィジェットの多くの一般的なボタンに作用します。](./using-a-style-book-to-standardize-site-appearance/images/09.png)
+![標準テーマを使用するときに、 [Button Primary]で色を変更すると、すぐに使用できるウィジェットの多くの一般的なボタンに作用します。](./using-a-style-book-to-standardize-site-appearance/images/09.png)
 
 ## 追加情報
 
-* [Style Book Token Definitions](./developer-guide/style-book-token-definitions.md)
+* [スタイルブックトークンの定義](./developer-guide/style-book-token-definitions.md)
 * [スタイルブックに新しいトークンセットを追加する](./developer-guide/adding-a-new-token-set-for-your-style-book.md)

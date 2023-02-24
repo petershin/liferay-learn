@@ -90,7 +90,7 @@ DXPは、アプリケーションサーバー上で実行されるWebアプリ�
 
 **カスタマイゼーション：**`PortletAフィルター`は、`PortletA`で行われる要求と応答をインターセプトして変更し、`PortletA`が表示するコンテンツに影響を与えます。
 
-コンポーネントWARおよび[モジュールJARプロジェクト](./fundamentals/module-projects.md)は、[OSGiバンドル](https://www.osgi.org/) (モジュール)としてインストールされます。 LiferayのOSGiフレームワークは、モジュールのライフサイクルを定義し、依存関係を適用し、クラスの読み込み構造を定義し、モジュールとコンポーネントを管理するためのAPIとCLI（[Felix Gogo シェル](./fundamentals/using-an-osgi-service.md)）を提供します。 コアは、[ポータルプロパティファイル](../installation-and-upgrades/reference/portal-properties.md)と[システム設定](../system-administration/configuring-liferay/system-settings.md)を介して構成されます。
+コンポーネントWARおよび[モジュールJARプロジェクト](./fundamentals/module-projects.md)は、 [OSGiバンドル](https://www.osgi.org/) (モジュール)としてインストールされます。 LiferayのOSGiフレームワークは、モジュールのライフサイクルを定義し、依存関係を適用し、クラスの読み込み構造を定義し、モジュールとコンポーネントを管理するためのAPIとCLI（[Felix Gogo シェル](./fundamentals/using-an-osgi-service.md)）を提供します。 コアは、[ポータルプロパティファイル](../installation-and-upgrades/reference/portal-properties.md)と[システム設定](../system-administration/configuring-liferay/system-settings.md)を介して構成されます。
 
 サービスコンポーネントはビジネス機能を提供します。
 
@@ -98,11 +98,11 @@ DXPは、アプリケーションサーバー上で実行されるWebアプリ�
 
 ビジネスロジックは、コンポーネントランタイム環境にデプロイされたサービスに実装されます。 組み込みのコアサービスとフレームワークサービスは、[ユーザー](../users-and-permissions/users/understanding-users.md)、[ロール](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)、[Webコンテンツ](../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)、[ドキュメントとメディア](../content-authoring-and-management/documents-and-media.md)などのモデルで動作します。 カスタムサービスを通じて新しいモデルと機能を導入できます。 サービスコンポーネントは、依存性注入を介して相互にアクセスできます。
 
-フロントエンドアプリケーションは、サービスを呼び出して作業を行います。 Java APIを使用してサービスを直接呼び出すJavaベースのアプリケーションをデプロイすることができます。 DXPにデプロイされているかに関係なく、Webベース（Javaおよび非Java）のアプリケーションであれば、[OpenAPI](https://swagger.io/docs/specification/about/)標準に準拠した[REST API](../headless-delivery/consuming-apis/consuming-rest-services.md)、[GraphQL API](../headless-delivery/consuming-apis/consuming-graphql-apis.md)、シンプルなWeb/RESTサービスを含むWeb APIを利用できます。 次の図は、Liferayサービスを呼び出すアプリケーションと外部クライアントを示しています。
+フロントエンドアプリケーションは、サービスを呼び出して作業を行います。 Java APIを使用してサービスを直接呼び出すJavaベースのアプリケーションをデプロイすることができます。 DXPにデプロイされているかに関係なく、Webベース（Javaおよび非Java）のアプリケーションであれば、 [OpenAPI](https://swagger.io/docs/specification/about/) 標準に準拠した[REST API](../headless-delivery/consuming-apis/consuming-rest-services.md)、[GraphQL API](../headless-delivery/consuming-apis/consuming-graphql-apis.md)、シンプルなWeb/RESTサービスを含むWeb APIを利用できます。 次の図は、Liferayサービスを呼び出すアプリケーションと外部クライアントを示しています。
 
 ![ローカルアプリケーションおよびリモートアプリケーションは、REST Web APIを介してサービスを呼び出すことができます。 Javaベースのポートレットは、Java APIを介してサービスを呼び出すこともできます。](./architecture/images/03.png)
 
-Liferayサービスは、[Service Builder](../building-applications/data-frameworks/service-builder.md)を使用して構築され、[REST Builder](../headless-delivery/apis-with-rest-builder.md)を使用してREST-fulになります。 サービスは簡単に[オーバーライドしたり拡張する](./extending-liferay/overriding-osgi-services.md)こともできます。
+Liferayサービスは、 [サービスビルダー](../building-applications/data-frameworks/service-builder.md) を使用して構築され、[REST Builder](../headless-delivery/apis-with-rest-builder.md)を使用してREST-fulになります。 サービスは簡単に[オーバーライドしたり拡張する](./extending-liferay/overriding-osgi-services.md)こともできます。
 
 WebベースのUIにより、コンテンツとサービスの機能がブラウザで利用できるようになります。
 

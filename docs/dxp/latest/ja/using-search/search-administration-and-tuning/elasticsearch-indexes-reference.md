@@ -3,12 +3,12 @@
 Liferay 7.3 と 7.4 はそれぞれ Elasticsearch で作成されたインデックスのセットを持っています。 これらのインデックスとその機能を理解することは、LiferayのElasticsearchのインストールをより良く設定し、管理するのに役立ちます。
 
 ```{important}
-Liferay 7.2のインデックス名は、パッチによってインデックスの命名パターンに変更が加えられたため、より複雑になっています。 詳しくは、[マルチテナント・インデックス名](../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names)をご覧ください。
+Liferay 7.2のインデックス名は、パッチによってインデックスの命名パターンに変更が加えられたため、より複雑になっています。 詳しくは、 [マルチテナント・インデックス名](../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names) をご覧ください。
 ```
 
 ## Liferay 7.4 の Elasticsearch インデックス
 
-以下のリストは、Liferay DXP 7.4 のデフォルトの Elasticsearch インデックスに近似しています（変更される場合があります）。 デフォルトのグローバル *Index Name Prefix* は `liferay-`で、Elasticsearch 7 のコネクタ設定で変更可能です。 `20097` は、データベース内の指定された会社の生成された `companyId` である。  UIにインスタンスIDとして表示され、[仮想インスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)を表します。
+以下のリストは、Liferay DXP 7.4 のデフォルトの Elasticsearch インデックスに近似しています（変更される場合があります）。 デフォルトのグローバル **Index Name Prefix** は `liferay-`で、Elasticsearch 7 のコネクタ設定で変更可能です。 `20097` は、データベース内の指定された会社の生成された `companyId` である。  UIにインスタンスIDとして表示され、[仮想インスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)を表します。
 
 | インデックス名                                                      | インデックスタイプ  | インデックスの目的                                                 |
 |:------------------------------------------------------------ |:---------- |:--------------------------------------------------------- |
@@ -31,7 +31,7 @@ Liferay 7.2のインデックス名は、パッチによってインデックス
 
 ## Liferay 7.3 の Elasticsearch インデックス
 
-以下のリストは、Liferay DXP 7.3 のデフォルトの Elasticsearch インデックスに近いものです（変更される可能性があります）。 デフォルトのグローバル *Index Name Prefix* は `liferay-`で、Elasticsearch 7 のコネクタ設定で変更可能です。 `20101` は、データベース内の指定された会社の生成された `companyId` である。  UIにインスタンスIDとして表示され、[仮想インスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)を表します。
+以下のリストは、Liferay DXP 7.3 のデフォルトの Elasticsearch インデックスに近いものです（変更される可能性があります）。 デフォルトのグローバル **Index Name Prefix** は `liferay-`で、Elasticsearch 7 のコネクタ設定で変更可能です。 `20101` は、データベース内の指定された会社の生成された `companyId` である。  UIにインスタンスIDとして表示され、[仮想インスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)を表します。
 
 | インデックス名                                             | インデックスタイプ  | インデックスの目的                                                  |
 |:--------------------------------------------------- |:---------- |:---------------------------------------------------------- |

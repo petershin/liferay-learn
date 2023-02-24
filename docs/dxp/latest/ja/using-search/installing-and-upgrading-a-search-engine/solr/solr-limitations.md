@@ -6,14 +6,14 @@ LiferayのSolr実装には限界があります。 検索エンジンにSolrを�
 
 Liferayの検索機能には、Elasticsearch固有のAPIとマッピングが活用されています。 これらの機能の一部はSolrに含まれていないため、SolrをLiferayの検索エンジンとして使用する場合、検索結果の品質が低下することが予想されます。
 
-例えば、Liferayの言語認識ソート動作は、[ICU Analysis Plugin from Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/plugins/7.x/analysis-icu-collation-keyword-field.html) のためにのみ存在する照合ルールに依存しています。Solrで検索するとき、特にフィールド値が発音区分符号を含むとき、いくつかの非最適なソート動作が予想されます。
+例えば、Liferayの言語認識ソート動作は、 [ICU Analysis Plugin from Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/plugins/7.x/analysis-icu-collation-keyword-field.html) のためにのみ存在する照合ルールに依存しています。Solrで検索するとき、特にフィールド値が発音区分符号を含むとき、いくつかの非最適なソート動作が予想されます。
 
 ## エンドユーザー機能の制限
 
 LiferayのSolr統合には限界があります。 以下の機能を利用するためには、Elasticsearchが必要です。
 
 * [Liferay Object](../../../building-applications/objects.md)
-* [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html)
+* [Liferay Commerce](https://learn.liferay.com/commerce/latest/ja/index.html)
 * [ワークフロー統計情報](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
 * [カスタムフィルター検索ウィジェット](../../search-pages-and-widgets/search-results/filtering-search-results.md)
 * [低レベル検索オプションウィジェット](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md)

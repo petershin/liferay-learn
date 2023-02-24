@@ -9,10 +9,10 @@ Liferayのドキュメントとメディアアプリケーションを使用す�
 1. サイトまたはアセットライブラリでドキュメントとメディアアプリケーションに移動します。
 
    ```{note}
-   サイトで作成されたショートカットはそのサイトにスコープされますが、アセットライブラリで作成されたショートカットは複数のサイト間で共有できます。 詳しくは、[Asset Libraries Overview](../../asset-libraries/asset-libraries-overview.md)をご覧ください。
+   サイトで作成されたショートカットはそのサイトにスコープされますが、アセットライブラリで作成されたショートカットは複数のサイト間で共有できます。 詳しくは、 [アセットライブラリの概要](../../asset-libraries/asset-libraries-overview.md) をご覧ください。
    ```
 
-2. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックして、*［External Video Shortcut］*を選択します。
+2. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックして、 ［**External Video Shortcut**］ を選択します。
 
    ![新しい外部ビデオショートカットを追加します。](./creating-external-video-shortcuts/images/01.png)
 
@@ -38,13 +38,13 @@ Liferayのドキュメントとメディアアプリケーションを使用す�
 
 8. （オプション）ビデオショートカットの権限を構成します。
 
-9. 完了したら、*［Publish］*をクリックします。
+9. 完了したら、 ［**Publish**］ をクリックします。
 
    他のドキュメントとメディアアセットと同様に、外部のビデオショートカットを表示および管理できます。
 
    ![ドキュメントとメディアで外部ビデオショートカットを表示および管理します。](./creating-external-video-shortcuts/images/04.png)
 
-作成した外部ビデオショートカットは、ほとんどのLiferayアセットに埋め込むことができます。 詳しくは、 [Embedding Videos into Liferay Assets and Pages](./embedding-videos-into-liferay-assets-and-pages.md) をご覧ください。
+作成した外部ビデオショートカットは、ほとんどのLiferayアセットに埋め込むことができます。 詳しくは、 [Liferayアセットとページへの動画の埋め込み](./embedding-videos-into-liferay-assets-and-pages.md) をご覧ください。
 
 ## 追加情報
 

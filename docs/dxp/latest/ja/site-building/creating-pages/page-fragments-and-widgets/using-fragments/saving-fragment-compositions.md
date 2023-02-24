@@ -10,21 +10,21 @@
 
 1. 保存する構成を含むページまたはテンプレートの編集を開始します。
 
-1. 目的の*コンテナ*または*グリッド*をクリックします。
+1. 目的の **コンテナ** または **グリッド** をクリックします。
 
-   または、サイドバーメニューの*ブラウザ*パネル（![Browser](../../../../images/icon-hierarchy.png)）を開き、目的の*コンテナ*または*グリッド*を選択します。
+   または、サイドバーメニューの **ブラウザ** パネル（![Browser](../../../../images/icon-hierarchy.png)）を開き、目的の **コンテナ** または **グリッド** を選択します。
 
-1. フラグメントの*オプション*ボタン（![Options Button](../../../../images/icon-app-options.png)）をクリックして、*［構成を保存］*を選択します。
+1. フラグメントの **オプション** ボタン（![Options Button](../../../../images/icon-app-options.png)）をクリックして、 ［**構成を保存**］ を選択します。
 
    ![フラグメントのオプションメニューを開き、［構成を保存］を選択します。](./saving-fragment-compositions/images/01.png)
 
 1. フラグメントの名前を入力します。
 
-1. （オプション）新しいフラグメントの*サムネイル*と*説明*を追加します。
+1. （オプション）新しいフラグメントの **サムネイル** と **説明** を追加します。
 
-1. 構成の*インラインコンテンツ*（リンク、テキスト、画像など）を保存するかどうかを決定します
+1. 構成の **インラインコンテンツ**（リンク、テキスト、画像など）を保存するかどうかを決定します
 
-1. 構成の[*マッピング構成*](./configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)を保存するかどうかを決定します。
+1. 構成の [**マッピング構成**](./configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) を保存するかどうかを決定します。
 
 1. 新しいフラグメントに必要なフラグメントセットを選択します。
 
@@ -32,17 +32,17 @@
 
    ![表示されるダイアログにフラグメント構成の情報を入力します。](./saving-fragment-compositions/images/02.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
-保存したFragmentコンポジションは、 *Fragments* パネルで、選択したFragment Setの下に表示されます。 他のフラグメントと同様に、ページまたはテンプレートに追加できます。
+保存したFragmentコンポジションは、 **Fragments** パネルで、選択したFragment Setの下に表示されます。 他のフラグメントと同様に、ページまたはテンプレートに追加できます。
 
-保存した構成を表示および管理するには、*サイトメニュー*を開き、*［デザイン］* &rarr; *［フラグメント］*に移動します。
+保存した構成を表示および管理するには、 **サイトメニュー** を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。
 
 ```{note}
 Liferay DXP 7.1 と 7.2 では、*Product Menu* を開き、*Site* &rarr; *Site Builder* &rarr; *Page Fragments* に進んでください。
 ```
 
-ここから、保存した構成の名前を変更したり、サムネイル画像を変更したり、`.zip`ファイルとしてエクスポートしたり、セット間で移動したり、削除したりできます。  詳細は、[Managing Fragments](./managing-fragments.md)を参照してください。
+ここから、保存した構成の名前を変更したり、サムネイル画像を変更したり、`.zip`ファイルとしてエクスポートしたり、セット間で移動したり、削除したりできます。  詳細は、 [フラグメントの管理](./managing-fragments.md) を参照してください。
 
 ![保存したフラグメント構成はすぐに使用できます。](./saving-fragment-compositions/images/03.png)
 
@@ -56,55 +56,55 @@ Liferay DXP 7.1 と 7.2 では、*Product Menu* を開き、*Site* &rarr; *Site 
 
 ![コンテナフラグメントを用いたフラグメント構成例](./saving-fragment-compositions/images/04.png)
 
-* [ステップ1：新しいコンテントページを作成する](#step-1-creating-a-new-content-page)。
-* [ステップ2：コンテナフラグメントを設定する](#step-2-configuring-the-container-fragment)。
-* [ステップ3: フラグメントコンポジションを保存する](#step-3-saving-the-fragment-composition)。
-* [ステップ4：スタイルブックでコンテナ幅のデフォルトを設定する](#step-4-setting-the-default-container-width-in-the-style-book)。
+* [ステップ1：新しいコンテントページを作成する](#step-1-creating-a-new-content-page) 。
+* [ステップ2：コンテナフラグメントを設定する](#step-2-configuring-the-container-fragment) 。
+* [ステップ3: フラグメントコンポジションを保存する](#step-3-saving-the-fragment-composition) 。
+* [ステップ4：スタイルブックでコンテナ幅のデフォルトを設定する](#step-4-setting-the-default-container-width-in-the-style-book) 。
 
 ### ステップ1：新しいコンテントページを作成する。
 
-1. サイトメニューの下のから *［サイトビルダー］* &rarr; *［ページ］*に移動します。
+1. サイトメニューの下のから ［**サイトビルダー**］ &rarr; ［**ページ**］ に移動します。
 
-1. 新しいページを追加したいレベルで *追加* (![Add Page](../../../../images/icon-plus.png))をクリックし、 *［ページの追加］*を選択します。
+1. 新しいページを追加したいレベルで **追加**(![Add Page](../../../../images/icon-plus.png))をクリックし、 ［**ページの追加**］ を選択します。
 
-1. *空白*テンプレート、または既存のテンプレートのいずれかを選択します。
+1. **空白** テンプレート、または既存のテンプレートのいずれかを選択します。
 
-1. *ページの追加*ダイアログで、ページの*名前*を入力します。
+1. **ページの追加** ダイアログで、ページの **名前** を入力します。
 
 ### ステップ2：コンテナフラグメントの設定
 
-1. コンテントページのサイドバーから、 *フラグメントとウィジェット* (![Fragments and Widgets](../../../../images/icon-plus.png)) を選び、*［コンテナ］*フラグメントをデフォルトのドロップゾーンの上にドラッグ＆ドロップしてください。
+1. コンテントページのサイドバーから、 **フラグメントとウィジェット**(![Fragments and Widgets](../../../../images/icon-plus.png)) を選び、 ［**コンテナ**］ フラグメントをデフォルトのドロップゾーンの上にドラッグ＆ドロップしてください。
 
     ![コンテナフラグメントをコンテントページのドロップゾーンの上にドラッグ＆ドロップします。](./saving-fragment-compositions/images/05.png)
 
-1. Container Fragment をクリックし、 *Configuration* パネルで、 *Styles* タブをクリックします。
+1. Container Fragment をクリックし、 **Configuration** パネルで、 **Styles** タブをクリックします。
 
-1. *Spacing* パネルで、4つの Padding オプションを `5`に設定します。
+1. **Spacing** パネルで、4つの Padding オプションを `5`に設定します。
 
-1. *背景* パネルで、 *スタイルブックの値* ボタンを使って、 *グレー 200*を選択します。
+1. **背景** パネルで、 **スタイルブックの値** ボタンを使って、 **グレー 200** を選択します。
 
     ![コンテナフラグメントのパッディングと背景色の値を定義します。](./saving-fragment-compositions/images/06.png)
 
-1. *フラグメントとウィジェット* (![Fragments and Widgets](../../../../images/icon-plus.png)) を選択し、新しいコンテナフラグメントを既存のコンテナの上にドロップしてください。 これにより、 *Browser* (![Browser](../../../../images/icon-hierarchy.png)) ボタンをクリックしたときに表示されるネストされたContainerコンポジションが作成されます。
+1. **フラグメントとウィジェット**(![Fragments and Widgets](../../../../images/icon-plus.png)) を選択し、新しいコンテナフラグメントを既存のコンテナの上にドロップしてください。 これにより、 **Browser**(![Browser](../../../../images/icon-hierarchy.png)) ボタンをクリックしたときに表示されるネストされたContainerコンポジションが作成されます。
 
 
-1. フラグメントとウィジェット(![Fragments and Widgets](../../../../images/icon-plus.png)) パネルの［基本コンポーネント］で、 *見出し*フラグメントをコンポジションの内側のコンテナの中にドラッグ＆ドロップします。
+1. フラグメントとウィジェット(![Fragments and Widgets](../../../../images/icon-plus.png)) パネルの［基本コンポーネント］で、 **見出し** フラグメントをコンポジションの内側のコンテナの中にドラッグ＆ドロップします。
 
     ![見出しフラグメントを内側のコンテナフラグメントの中にドラッグ＆ドロップします。](./saving-fragment-compositions/images/08.png)
 
-1. *［Paragraph］*フラグメントを見出しのすぐ下にドラッグ＆ドロップします。 コンポジション内のパラグラフを選択し、 *［Styles］* セクションで、*［上マージン］*で`3`を選択します。
+1. ［**Paragraph**］ フラグメントを見出しのすぐ下にドラッグ＆ドロップします。 コンポジション内のパラグラフを選択し、 ［**Styles**］ セクションで、 ［**上マージン**］ で`3`を選択します。
 
     ![説明文フラグメントを見出しフラグメントのすぐ下にドラッグ＆ドロップします。](./saving-fragment-compositions/images/09.png)
 
-1. セレクション(![Selection](../../../../images/icon-pages-tree.png))パネルから、内側のコンテナをクリックします。 *［一般］* タブで、ユーザーがこの領域をクリックしたときにリダイレクトさせるURLを入力します。
+1. セレクション(![Selection](../../../../images/icon-pages-tree.png))パネルから、内側のコンテナをクリックします。 ［**一般**］ タブで、ユーザーがこの領域をクリックしたときにリダイレクトさせるURLを入力します。
 
     ![内側のコンテナフラグメントのターゲットとなるリンクやページを定義します。](./saving-fragment-compositions/images/10.png)
 
-1. フラグメントとウィジェット(![Fragments and Widgets](../../../../images/icon-plus.png))パネルの［基本コンポーネント］で、*［Button］*フラグメントをコンポジション内の段落のすぐ下にドラッグ＆ドロップします。
+1. フラグメントとウィジェット(![Fragments and Widgets](../../../../images/icon-plus.png))パネルの［基本コンポーネント］で、 ［**Button**］ フラグメントをコンポジション内の段落のすぐ下にドラッグ＆ドロップします。
 
-1. _［Button］_ を選択し、［Styles］セクションで *［上マージン］* を `3`にセットします。 *［一般］* セクションで、 *［タイプ］* ドロップダウンメニューをクリックし、 _［リンク］_ を選択します。
+1. ［**Button**］ を選択し、［Styles］セクションで ［**上マージン**］ を `3`にセットします。 ［**一般**］ セクションで、 ［**タイプ**］ ドロップダウンメニューをクリックし、 ［**リンク**］ を選択します。
 
-1. ブラウザ (![Browser](../../../../images/icon-hierarchy.png)) パネルで、Button Fragment の *リンク* をクリックします。 ［リンク］セクションで、ユーザーがボタンをクリックしたときにリダイレクトさせるURLを入力します。
+1. ブラウザ (![Browser](../../../../images/icon-hierarchy.png)) パネルで、Button Fragment の **リンク** をクリックします。 ［リンク］セクションで、ユーザーがボタンをクリックしたときにリダイレクトさせるURLを入力します。
 
     ![ボタンのフラグメントタイプとトップマージンを設定します。](./saving-fragment-compositions/images/11.png)
 
@@ -120,7 +120,7 @@ Liferay DXP 7.1 と 7.2 では、*Product Menu* を開き、*Site* &rarr; *Site 
 
 ### ステップ4：スタイルブックでデフォルトのコンテナ幅を設定する
 
-デフォルトでは、コンテナフラグメントは *［可変］*幅の設定を使用します。 デフォルトの設定を *［固定幅］*に変更し、同じスタイルブックに基づく他のコンテントページでこのプロパティを使用できるようにすることができます。 この例では、2つのコンテナを入れ子にしていますが、コンテナの最大幅をテキストで制限しながら、外側のコンテナをページの幅に適応させるように設定することができます。 Liferay DXPのスタイルブックについて詳しく知るには、[Using Style Book to Standardize Site Appearance](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)をお読みください。
+デフォルトでは、コンテナフラグメントは ［**可変**］ 幅の設定を使用します。 デフォルトの設定を ［**固定幅**］ に変更し、同じスタイルブックに基づく他のコンテントページでこのプロパティを使用できるようにすることができます。 この例では、2つのコンテナを入れ子にしていますが、コンテナの最大幅をテキストで制限しながら、外側のコンテナをページの幅に適応させるように設定することができます。 Liferay DXPのスタイルブックについて詳しく知るには、[Using Style Book to Standardize Site Appearance](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)をお読みください。
 
 ![コンテナの幅プロパティは、固定幅を使用するか、ページ幅に合わせるかを変更することができます。](./saving-fragment-compositions/images/14.gif)
 
@@ -128,55 +128,55 @@ Liferay DXP 7.1 と 7.2 では、*Product Menu* を開き、*Site* &rarr; *Site 
 サイトレイアウトの設定が壊れないように、スタイルブックを使用する際はテスト環境を使用してください。 本番環境用サイトでは、テスト目的でスタイルブックの設定を更新しないでください。
 ```
 
-1. *Browser* (![Browser](../../../../images/icon-hierarchy.png)) ボタンをクリックし、内側のContainer Fragmentをクリックします。
+1. **Browser**(![Browser](../../../../images/icon-hierarchy.png)) ボタンをクリックし、内側のContainer Fragmentをクリックします。
 
-1. General タブで、 *Container Width* プロパティを *Fixed Width*に設定します。
+1. General タブで、 **Container Width** プロパティを **Fixed Width** に設定します。
 
     ![内側のコンテナフラグメントの幅設定を固定幅に変更します。](./saving-fragment-compositions/images/15.png)
 
-1. *ページデザインオプション* (![Page Design Options](../../../../images/icon-format.png)) をクリックし、スタイルブックセクションで、アクティブなスタイルブックを確認します。
+1. **ページデザインオプション**(![Page Design Options](../../../../images/icon-format.png)) をクリックし、スタイルブックセクションで、アクティブなスタイルブックを確認します。
 
     ![コンテントページで使用されているデフォルトのスタイルブックを確認します。](./saving-fragment-compositions/images/16.png)
 
-1. サイトメニューの *［デザイン］* &rarr; *［Style Books］*に移動してください。
+1. サイトメニューの ［**デザイン**］ &rarr; ［**Style Books**］ に移動してください。
 
     ![サイトメニューとデザインセクションのスタイルブックページを開きます。](./saving-fragment-compositions/images/17.png)
 
-1. コンテントページに対応するスタイルブックの*アクション* (![Actions](../../../../images/icon-actions.png))メニューをクリックし、*［編集］*を選択します。
+1. コンテントページに対応するスタイルブックの **アクション**(![Actions](../../../../images/icon-actions.png))メニューをクリックし、 ［**編集**］ を選択します。
 
-1. スタイルブックエディタで、*［ページプレビュー］*ドロップダウンメニューからコンテントページを選択します。
+1. スタイルブックエディタで、 ［**ページプレビュー**］ ドロップダウンメニューからコンテントページを選択します。
 
     ![スタイルブックエディターのページプレビュードロップダウンメニューから、修正したいコンテントページを選択します。](./saving-fragment-compositions/images/18.png)
 
-1. 右側のドロップダウンメニューから *［レイアウト］* オプションを選択し、 *［特大］* オプションで固定幅要素の最大幅値（ピクセル単位）を設定します。
+1. 右側のドロップダウンメニューから ［**レイアウト**］ オプションを選択し、 ［**特大**］ オプションで固定幅要素の最大幅値（ピクセル単位）を設定します。
 
     ![スタイルブックレイアウトの設定で、特大オプションを変更し、コンテナフラグメントの最大幅を更新します。](./saving-fragment-compositions/images/19.png)
 
-1. *［公開］* をクリックすると、新しい設定でスタイルブックが更新されます。
+1. ［**公開**］ をクリックすると、新しい設定でスタイルブックが更新されます。
 
 ## コンテナフラグメントを使った高度なコンポジションの作成
 
 > 対応可能：Liferay DXP/Portal 7.4以降
 
-別のコンテナフラグメントの中に1つ以上のコンテナを構成する場合、 *Flex*表示を使用して、高度な表示オプションを定義することができます。
+別のコンテナフラグメントの中に1つ以上のコンテナを構成する場合、 **Flex** 表示を使用して、高度な表示オプションを定義することができます。
 
-1. サイトメニューの下のから *［サイトビルダー］* &rarr; *［ページ］*に移動します。
+1. サイトメニューの下のから ［**サイトビルダー**］ &rarr; ［**ページ**］ に移動します。
 
 1. [新しいコンテンツページを作成する](../../adding-pages/adding-a-page-to-a-site.md)か、コンテナベースのコンポジションで既存のページを開きます。 [この例](#example-creating-a-banner-composition) を使って、コンテナフラグメントを使った基本的なコンポジションを作成することができます。
 
-1. *Browser* (![Browser](../../../../images/icon-hierarchy.png)) ボタンをクリックします。
+1. **Browser**(![Browser](../../../../images/icon-hierarchy.png)) ボタンをクリックします。
 
 1. 高度なコンポジションを適用したい要素をグループ化したコンテナフラグメントを選択します。 例えば、フラグメントが入ったコンテナがある場合、外側のコンテナを選択します。
 
-1. スタイルセクションで、 *［コンテンツの表示］*ドロップダウンメニューをクリックし、利用可能な *［Flex］* オプションから一つを選択します。
+1. スタイルセクションで、 ［**コンテンツの表示**］ ドロップダウンメニューをクリックし、利用可能な ［**Flex**］ オプションから一つを選択します。
 
-1. *［Align Items］* と *［Justify Content］* の設定をお好みで設定してください。
+1. ［**Align Items**］ と ［**Justify Content**］ の設定をお好みで設定してください。
 
     ![Flexの表示オプションを使用してスタイルを設定するページ要素をグループ化したコンテナを選択します。](./saving-fragment-compositions/images/20.png)
 
 ## 追加情報
 
 * [フラグメントの使用](../using-fragments.md)
-* [Managing Fragments](./managing-fragments.md)
-* [Content Page Editor UI Reference](../../using-content-pages/content-page-editor-ui-reference.md)
+* [フラグメントの管理](./managing-fragments.md)
+* [コンテントページエディタUIリファレンス](../../using-content-pages/content-page-editor-ui-reference.md)
 * [グリッドフラグメントを使用したレスポンシブレイアウトの構築](../../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md)

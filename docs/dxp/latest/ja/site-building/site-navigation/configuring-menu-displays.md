@@ -12,7 +12,7 @@ Liferayを初めて使う人は、メニュー表示フラグメントを使っ�
 
 Liferay Navigation Menusアプリケーションを使用すると、コンテンツページの任意の場所にナビゲーションメニューを作成することができます。 このナビゲーションメニューは、サイトのページ階層、またはLiferayの [Navigation Menus Application](./using-the-navigation-menus-application.md)を使って定義したその他の階層をベースにしています。 また、メニューの表示スタイルのオプションや、ナビゲーションに含めるサブレベルの数を定義することもできます。
 
-メニュー表示フラグメント」は、コンテンツページのフラグメントとウィジェットの下に表示されます。 コンテンツページの他のフラグメントと同様に、このフラグメントを追加・設定します。 詳しくは、[Adding Elements to Content Pages](../creating-pages/using-content-pages/adding-elements-to-content-pages.md)および[Configuring Fragments](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)を参照してください。
+メニュー表示フラグメント」は、コンテンツページのフラグメントとウィジェットの下に表示されます。 コンテンツページの他のフラグメントと同様に、このフラグメントを追加・設定します。 詳しくは、 [コンテンツページへの要素の追加](../creating-pages/using-content-pages/adding-elements-to-content-pages.md) および [フラグメントの設定](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md) を参照してください。
 
 ![メニュー表示フラグメント」は、コンテンツページのフラグメントとウィジェットの下に表示されます。](./configuring-menu-displays/images/06.png)
 

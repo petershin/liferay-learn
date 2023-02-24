@@ -42,7 +42,7 @@
 
 1. モーダルウィンドウの右下にある「 *Add* 」ボタンをクリックします。
 
-   ![モーダルウィンドウの右下にある[追加]ボタンをクリックします](./page-versioning/images/04.png)
+   ![モーダルウィンドウの右下にある [追加]ボタンをクリックします](./page-versioning/images/04.png)
 
 1. 新しいバリエーションの*名前*と*説明*を入力します。 これらのフィールドは、バリエーションに合わせていつでも変更できます。
 
@@ -64,7 +64,7 @@
 
 1. *追加* をクリックして、新しいバリエーションを作成します。
 
-一度作成したページやページグループは、ステージングバーのドロップダウンメニューで各バージョンを切り替えることができます。 詳細については、[Site Staging UI Reference](./site-staging-ui-reference.md)を参照してください。
+一度作成したページやページグループは、ステージングバーのドロップダウンメニューで各バージョンを切り替えることができます。 詳細については、 [サイトステージングUIリファレンス](./site-staging-ui-reference.md) を参照してください。
 
 ![ステージングバーのドロップダウンメニューで、ページやページグループの各バージョンを切り替えることができます。](./page-versioning/images/02.png)
 
@@ -93,6 +93,6 @@
 ## 追加情報
 
 * [ステージングの概要](../staging.md)
-* [Configuring Local Live Staging](./configuring-local-live-staging.md)
-* [Configuring Remote Live Staging](./configuring-remote-live-staging.md)
+* [ローカル現行環境ステージングの設定](./configuring-local-live-staging.md)
+* [リモート本番環境ステージングの設定](./configuring-remote-live-staging.md)
 * [サイトステージングUIリファレンス](./site-staging-ui-reference.md)

@@ -49,7 +49,7 @@
 `data-lfr-styles` 属性は、フラグメントの編集にお好きな方法で追加してください。
 
 * **[フラグメントエディターを使う](./using-the-fragments-editor.md) UIで使う** : エディターのHTMLウィンドウで変更する
-* **[Fragments Toolkit の使用](./using-the-fragments-toolkit.md)** : フラグメントの `index.html` ファイルを変更する。
+* ** [Fragments Toolkit の使用](./using-the-fragments-toolkit.md**) : フラグメントの `index.html` ファイルを変更する。
 
 ## 追加情報
 

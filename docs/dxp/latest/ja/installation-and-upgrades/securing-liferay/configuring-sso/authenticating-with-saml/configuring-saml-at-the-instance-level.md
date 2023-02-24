@@ -3,12 +3,12 @@
 各ポータルインスタンスは、アイデンティティプロバイダ（IdP）またはサービスプロバイダ（SP）であるSAMLプロバイダになることができる。 DXPインスタンスがどのような役割を担っていても、同じ場所で設定することができます。
 
 ```{warning}
-Instance Settingsのユーザーインターフェースは自動生成され、SAMLの設定を容易にするフィールド検証やその他の機能は提供されない。 SAMLインスタンスを設定するには、[SAML Admin](./saml-admin.md) インターフェースを使用してください。 Instance Settingsインターフェイスを使用して[設定ファイル](./saml-settings.md)を作成したい上級者向けに、ここで文書化されています。
+Instance Settingsのユーザーインターフェースは自動生成され、SAMLの設定を容易にするフィールド検証やその他の機能は提供されない。 SAMLインスタンスを設定するには、 [SAML管理](./saml-admin.md) インターフェースを使用してください。 Instance Settingsインターフェイスを使用して[設定ファイル](./saml-settings.md)を作成したい上級者向けに、ここで文書化されています。
 ```
 
-1. _コントロールパネル_ &rarr; _インスタンス設定_ &rarr; _セキュリティ_ &rarr; _SSO_ &rarr; _SAML プロバイダ設定_.
+1. **コントロールパネル** &rarr; **インスタンス設定** &rarr; **セキュリティ** &rarr; **SSO** &rarr; **SAML プロバイダ設定** .
 
-1. フォームに必要事項を入力し、下部にある「 _Update_」をクリックします。
+1. フォームに必要事項を入力し、下部にある「**Update**」をクリックします。
 
 **Key Store Credential Password:** Key Store Credential Passwordは、キーストアへのアクセスに使用されます。
 

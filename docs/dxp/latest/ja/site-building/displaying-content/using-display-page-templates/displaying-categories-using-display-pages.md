@@ -11,7 +11,7 @@
 - [カテゴリ用の表示ページテンプレート](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md) を作成し、このテンプレートをデフォルトとして設定します。
 - [カテゴリを作成または編集する](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md)際に、お好みの表示ページテンプレートを選択してください。
 
-また、複数のカテゴリーに一度に「表示ページテンプレート」を割り当てることができます。サイト管理 &rarr; *Categorization* &rarr; *Categories* で、更新したいカテゴリーにチェックを入れ、ページ (![Page](../../../images/icon-page.png)) のアイコンをクリックするか、上部アクション (![Actions](../../../images/icon-actions.png)) メニューから *Assign Display Page Template* を選択してください。
+また、複数のカテゴリーに一度に「表示ページテンプレート」を割り当てることができます。サイト管理 &rarr; **Categorization** &rarr; **Categories** で、更新したいカテゴリーにチェックを入れ、ページ (![Page](../../../images/icon-page.png)) のアイコンをクリックするか、上部アクション (![Actions](../../../images/icon-actions.png)) メニューから **Assign Display Page Template** を選択してください。
 
 ![Actionsメニューで表示ページテンプレートをデフォルトに設定します。](./displaying-categories-using-display-pages/images/07.png)
 
@@ -21,9 +21,9 @@
 
 カテゴリを表示ページに表示する手順は次のとおりです。
 
-1. [表示したいカテゴリを作成および編集します](#step-1-creating-and-editing-the-categories)。
-1. [表示ページテンプレートを作成します](#step-2-creating-the-display-page-template)。
-1. [表示ページテンプレートを編集および公開します](#step-3-edit-and-publish-the-display-page-template)。
+1. [表示したいカテゴリを作成および編集します](#step-1-creating-and-editing-the-categories) 。
+1. [表示ページテンプレートを作成します](#step-2-creating-the-display-page-template) 。
+1. [表示ページテンプレートを編集および公開します](#step-3-edit-and-publish-the-display-page-template) 。
 
 ```{warning}
 次の例は、デフォルトの表示ページテンプレートを変更する方法です。 本番用サイトでの混乱を避けるため、この手順はテスト用サイトで行ってください。
@@ -33,48 +33,48 @@
 
 カテゴリがまだ存在しない場合は作成し、表示ページにマッピングしたい情報を記載します。 この例では、説明と画像を含む2つの新しいカテゴリを作成します。各カテゴリは、異なるサービスに対応しています。
 
-1. *自動車保険*という名前の[新規カテゴリーを作成します](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defininig-categories)。
-1. カテゴリアプリケーションで、新しいカテゴリの *Actions* （![Actions](../../../images/icon-actions.png)）メニューをクリックし、 *［編集］*を選択します。
-1. *［Details］* タブをクリックし、このカテゴリの *［Description］* を追加します。
+1. **自動車保険** という名前の [新規カテゴリーを作成します](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defininig-categories) 。
+1. カテゴリアプリケーションで、新しいカテゴリの **Actions**（![Actions](../../../images/icon-actions.png)）メニューをクリックし、 ［**編集**］ を選択します。
+1. ［**Details**］ タブをクリックし、このカテゴリの ［**Description**］ を追加します。
 
    ![カテゴリを編集し、説明を追加します。](./displaying-categories-using-display-pages/images/01.png)
 
-1. *［画像］* タブをクリックし、 *［画像の追加］* (![Add Image](../../../images/icon-add.png)) ボタンを使用して、カテゴリの画像を追加します。
-1. *［Details］* タブを再度クリックし、 *［保存］*をクリックします。
+1. ［**画像**］ タブをクリックし、 ［**画像の追加**］(![Add Image](../../../images/icon-add.png)) ボタンを使用して、カテゴリの画像を追加します。
+1. ［**Details**］ タブを再度クリックし、 ［**保存**］ をクリックします。
 
 ### ステップ２：表示ページテンプレートの作成
 
 Liferay DXP 7.4から、表示ページテンプレートにコンテンツの種類としてカテゴリを使用するオプションが追加されました。
 
-1. *Product Menu* &rarr; *Design* &rarr; *Page Templates*を開きます。
-1. *［表示ページテンプレート］* をクリックし、 *［追加］* (![Add Image](../../../images/icon-add.png)) ボタンをクリックします。
+1. **Product Menu** &rarr; **Design** &rarr; **Page Templates** を開きます。
+1. ［**表示ページテンプレート**］ をクリックし、 ［**追加**］(![Add Image](../../../images/icon-add.png)) ボタンをクリックします。
 1. この表示ページテンプレートに使用するマスターページテンプレートを選択します。
 
     ```{tip}
-    すべてのページやページテンプレートは、マスターページテンプレートを必要とします。 詳細については、[Master Page Templates](../../creating-pages/defining-headers-and-footers/master-page-templates.md)を参照してください。
+    すべてのページやページテンプレートは、マスターページテンプレートを必要とします。 詳細については、 [マスターページテンプレート](../../creating-pages/defining-headers-and-footers/master-page-templates.md) を参照してください。
     ```
 
-1. 表示ページテンプレートの *Name* を入力し、 *［Content Type］*のドロップダウンメニューで、 *［Category］*を選択してください。
+1. 表示ページテンプレートの **Name** を入力し、 ［**Content Type**］ のドロップダウンメニューで、 ［**Category**］ を選択してください。
 
-    ![新しい表示ページテンプレートのコンテンツタイプとして、[ナビゲーション]を選択します。](./displaying-categories-using-display-pages/images/02.png)
+    ![新しい表示ページテンプレートのコンテンツタイプとして、 [ナビゲーション]を選択します。](./displaying-categories-using-display-pages/images/02.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 ### ステップ３：表示ページテンプレートの編集と公開
 
 表示ページテンプレートを作成した後、コンポーネントマッピングとレイアウトを編集できます。
 
 ```{tip}
-表示ページテンプレートエディタは、コンテントページエディタのように機能します。 詳細については、[Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)を参照してください。
+表示ページテンプレートエディタは、コンテントページエディタのように機能します。 詳細については、 [コンテンツページへの要素の追加](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md) を参照してください。
 ```
 
 この例では、 [カードフラグメント](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md)を使用してカテゴリフィールドをマッピングする方法を示しています。
 
 1. コンテナフラグメントをデフォルトのドロップゾーンにドラッグアンドドロップします。
 1. コンテナフラグメントの上に、新しいカードフラグメントをドラッグアンドドロップします。
-1. *ブラウザ* (![Browser](../../../images/icon-hierarchy.png))ボタンをクリックし、カードのタイトルをクリックすると、マッピングのオプションが表示されます。
-1. マッピング」タブで、 *ソース* ドロップダウンメニューをクリックし、 *カテゴリ*を選択します。
-1. *Field* ドロップダウンメニューをクリックし、 *Name* を選択して、カテゴリの名前をカードのタイトルにマッピングします。
+1. **ブラウザ**(![Browser](../../../images/icon-hierarchy.png))ボタンをクリックし、カードのタイトルをクリックすると、マッピングのオプションが表示されます。
+1. マッピング」タブで、 **ソース** ドロップダウンメニューをクリックし、 **カテゴリ** を選択します。
+1. **Field** ドロップダウンメニューをクリックし、 **Name** を選択して、カテゴリの名前をカードのタイトルにマッピングします。
 
    ![カードフラグメントを使用して、表示ページテンプレートのカテゴリフィールドをマッピングします。](./displaying-categories-using-display-pages/images/03.png)
 
@@ -84,13 +84,13 @@ Liferay DXP 7.4から、表示ページテンプレートにコンテンツの�
     - コンテンツ &rarr; 説明
     - 画像 &rarr; メイン画像
 
-1. *［公開］*をクリックします。
-1. *表示ページテンプレート* リストで、新しい表示ページテンプレートの *［Actions］* (![Actions](../../../images/icon-actions.png)) メニューをクリックして *［Mark as Default］*を選択します。
+1. ［**公開**］ をクリックします。
+1. **表示ページテンプレート** リストで、新しい表示ページテンプレートの ［**Actions**］(![Actions](../../../images/icon-actions.png)) メニューをクリックして ［**Mark as Default**］ を選択します。
 
    ![Actionsメニューで表示ページテンプレートをデフォルトに設定します。](./displaying-categories-using-display-pages/images/04.png)
 
-1. Product Menu (![Product Menu](../../../images/icon-menu.png)) で、 *Categorization* &rarr; *Categories* を選択し、 [Step 1](#step-1-creating-and-editing-the-categories)から Category を持つ Vocabulary を選択します。
-1. 任意のカテゴリで、 *アクション* （![Actions](../../../images/icon-actions.png)）メニューをクリックし、 *［表示ページを表示］*を選択します。
+1. Product Menu (![Product Menu](../../../images/icon-menu.png)) で、 **Categorization** &rarr; **Categories** を選択し、 [Step 1](#step-1-creating-and-editing-the-categories) から Category を持つ Vocabulary を選択します。
+1. 任意のカテゴリで、 **アクション**（![Actions](../../../images/icon-actions.png)）メニューをクリックし、 ［**表示ページを表示**］ を選択します。
 
    ![Actionsメニューのオプションを使用して、いずれかのカテゴリの表示ページを開きます。](./displaying-categories-using-display-pages/images/05.png)
 
@@ -101,5 +101,5 @@ Liferay DXP 7.4から、表示ページテンプレートにコンテンツの�
 ## 関連情報
 
 - [表示ページテンプレートの作成と管理](./creating-and-managing-display-page-templates.md)
-- [Publishing Content With Display Pages](./publishing-content-with-display-pages.md)
+- [表示ページによるコンテンツの公開](./publishing-content-with-display-pages.md)
 - [コンテンツのカテゴリーとボキャブラリーを定義する](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md)。

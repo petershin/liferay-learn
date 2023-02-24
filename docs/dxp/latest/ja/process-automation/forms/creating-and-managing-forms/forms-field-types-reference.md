@@ -2,10 +2,10 @@
 
 Liferayフォームアプリケーションには、フォームに追加する多くの項目タイプと要素が含まれています。 利用可能な要素を発見するために
 
-1. _プロダクトメニュー_（![Product Menu](../../../images/icon-product-menu.png)）を開き、サイト管理メニューのコンパスアイコン（![Compass](../../../images/icon-compass.png)）をクリックします。 フォームを作成するサイトを選択します。
-1. _［コンテンツ & データ］_ &rarr; _ ［Form］_をクリックします。
-1. _追加_ボタン（![Add](../../../images/icon-add.png)）をクリックします。 フォームビルダービューが表示されます。
-1. _追加_ボタン（![Add](../../../images/icon-add.png)）をもう一度クリックして、_［要素を追加］_サイドバーを表示します（まだ開いていない場合）。
+1. **プロダクトメニュー**（![Product Menu](../../../images/icon-product-menu.png)）を開き、サイト管理メニューのコンパスアイコン（![Compass](../../../images/icon-compass.png)）をクリックします。 フォームを作成するサイトを選択します。
+1. ［**コンテンツ & データ**］ &rarr; ［**Form**］ をクリックします。
+1. **追加** ボタン（![Add](../../../images/icon-add.png)）をクリックします。 フォームビルダービューが表示されます。
+1. **追加** ボタン（![Add](../../../images/icon-add.png)）をもう一度クリックして、 ［**要素を追加**］ サイドバーを表示します（まだ開いていない場合）。
 
 ![多くの便利なフォーム要素があります。](./forms-field-types-reference/images/01.png)
 
@@ -17,7 +17,7 @@ Liferayフォームアプリケーションには、フォームに追加する�
 
 フォームビルダーで新しいフィールドを追加したり、既存のフィールドをクリックすると、フィールド設定エディタのサイドバーが表示されます。 使用できる設定オプションは、項目タイプによって異なります。
 
-すべてのフォームフィールドには、ベーシックとアドバンスの少なくとも2つの設定タイプがあります。 多くのフォームは、基本的な設定だけで [](../creating-and-managing-forms/creating-forms.md) 、以下のようなものが作成可能です。
+すべてのフォームフィールドには、基本と詳細の少なくとも2つの設定タイプがあります。多くのフォームは、基本的な設定だけで、以下のようなものが[作成](../creating-and-managing-forms/creating-forms.md)可能です。
 
 - label
 - [プレースホルダテキスト](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
@@ -46,7 +46,7 @@ Liferayフォームアプリケーションには、フォームに追加する�
 
 ### フィールド確認
 
-フィールド確認は、バージョン7.4以降のLiferayフォームでサポートされています。 確認フィールドは、フォームビルダーでフォーム本体に直接追加するフィールドではなく、1行のテキストまたは数値フィールドを _［確認が必要］_ に設定した場合にのみフォームに表示されます（フィールドの詳細設定セクションを使用）。 このフィールドでは、重要なデータを持つフィールドが正しく入力されるようにします（例えば、メールアドレスのフィールドなど）。
+フィールド確認は、バージョン7.4以降のLiferayフォームでサポートされています。 確認フィールドは、フォームビルダーでフォーム本体に直接追加するフィールドではなく、1行のテキストまたは数値フィールドを ［**確認が必要**］ に設定した場合にのみフォームに表示されます（フィールドの詳細設定セクションを使用）。 このフィールドでは、重要なデータを持つフィールドが正しく入力されるようにします（例えば、メールアドレスのフィールドなど）。
 
 ![確認フィールドは、ユーザーが正しい情報を入力していることを確認するのに役立ちます。](./forms-field-types-reference/images/21.png)
 
@@ -54,7 +54,7 @@ Liferayフォームアプリケーションには、フォームに追加する�
 
 **方向：** 垂直（デフォルト）または水平を選択して、確認フィールドを元のフィールドの下に表示するか、横に表示するかを決定します。
 
-**ラベル：** 元のフィールドラベルのプレフィックスを選択します。 デフォルト値はConfirmなので、Email Addressというフィールドの確認フィールドのラベルは、 _Confirm Email Address_となります。
+**ラベル：** 元のフィールドラベルのプレフィックスを選択します。 デフォルト値はConfirmなので、Email Addressというフィールドの確認フィールドのラベルは、 **Confirm Email Address** となります。
 
 **エラーメッセージ：** 確認するフィールドに応じて、より具体的なエラーメッセージを提供することができます。
 
@@ -143,8 +143,8 @@ Liferay 7.4で追加された、ユーザーが日付と時刻の両方を1つ�
 数値フィールドには、興味深い詳細なフィールド設定があります。
 
 - [**確認要求**](#field-confirmation) ユーザがデータを正しく入る性を保証します。
-- **[入力値の検証](./validating-text-and-numeric-field-entries.md)** ユーザーの入力を事前に設定された要件に制限します。 ![数値入力を検証します。](./forms-field-types-reference/images/25.png)
-- **[入力マスク](./validating-text-and-numeric-field-entries.md#masking-numeric-fields)** は、ユーザーが数値データを入力する際に、正しいフォーマットを表示させることができます。
+- [**入力値の検証](./validating-text-and-numeric-field-entries.md**) ユーザーの入力を事前に設定された要件に制限します。 ![数値入力を検証します。](./forms-field-types-reference/images/25.png)
+- [**入力マスク](./validating-text-and-numeric-field-entries.md#masking-numeric-fields**) は、ユーザーが数値データを入力する際に、正しいフォーマットを表示させることができます。
 
 ### アップロード
 
@@ -169,16 +169,16 @@ dl.show.hidden.mount.folders=true
 コントロールパネル：［システム設定］&rarr; ［フォーム（コンテンツとデータ）］ &rarr; ［フォーム］で、または、`com.liferay.dynamic.data.mapping.form.web.internal.configuration.DDMFormWebConfiguration.config`という名前の[設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を作成して、ゲストのアップロード動作を設定します。
 
 ```{tip}
-[インスタンススコープ](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions)でフォームアプリケーションを設定するには、Instance Settingsのフォームエントリーを使用します。
+[インスタンススコープ](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions) でフォームアプリケーションを設定するには、Instance Settingsのフォームエントリーを使用します。
 ```
 
 **Guest Upload File Extensions（`guestUploadFileExtensions`）：** 受け入れられるファイル拡張子のコンマ区切りリストを入力します。  デフォルトでは以下のリストがサポートされています：`doc`、`docx`、`jpeg`、`jpg`、`pdf`、`png`、`ppt`、`pptx`、`tiff`、`txt`、`xls`、および`xlsx`。
 
-**Guest Upload Maximum file Size（`guestUploadMaximumFileSize`）：**ゲストユーザがアップロードフィールドからアップロードできるファイルの最大サイズを設定します。 これは、ドキュメントとメディアアプリケーションの設定で、認証されたユーザーに対して設定され、システム全体の制限は、アップロードサーブレットリクエストシステム設定エントリーの［合計最大アップロードリクエストサイズ］というフィールドで定義されます。 デフォルトでは25MBに設定されています。
+**Guest Upload Maximum file Size（`guestUploadMaximumFileSize`）：** ゲストユーザがアップロードフィールドからアップロードできるファイルの最大サイズを設定します。 これは、ドキュメントとメディアアプリケーションの設定で、認証されたユーザーに対して設定され、システム全体の制限は、アップロードサーブレットリクエストシステム設定エントリーの［合計最大アップロードリクエストサイズ］というフィールドで定義されます。 デフォルトでは25MBに設定されています。
 
-**Maximum Repetitions for Upload Fields（`maximumRepetitionsForUploadFields`）：**フィールドが繰り返し可能に設定されている場合、ユーザーがフィールドをフォームに追加できる最大回数を設定します (ゲスト ユーザーとログインしたユーザーに同じように適用されます)。 デフォルトでは5に設定されています。
+**Maximum Repetitions for Upload Fields（`maximumRepetitionsForUploadFields`）：** フィールドが繰り返し可能に設定されている場合、ユーザーがフィールドをフォームに追加できる最大回数を設定します (ゲスト ユーザーとログインしたユーザーに同じように適用されます)。 デフォルトでは5に設定されています。
 
-**Maximum Submissions for Guest Upload Fields（`maximumSubmissionsForGuestUploadFields`）：**ゲストが使用可能なアップロード フィールドを含むフォームを、ゲスト ユーザーが送信できる最大回数を設定します。 ゲストユーザーのIPアドレスは、送信数の記録のために使用されます。 デフォルトでは5に設定されています。
+**Maximum Submissions for Guest Upload Fields（`maximumSubmissionsForGuestUploadFields`）：** ゲストが使用可能なアップロード フィールドを含むフォームを、ゲスト ユーザーが送信できる最大回数を設定します。 ゲストユーザーのIPアドレスは、送信数の記録のために使用されます。 デフォルトでは5に設定されています。
 
 ### 画像
 
@@ -190,7 +190,7 @@ dl.show.hidden.mount.folders=true
 ゲストユーザーは、画像へのアクセスやアップロードができません。 認証されたユーザーのみがフォームにアクセスできる場合を除き、このフィールドは使用しないでください。
 ```
 
-画像を追加した後、ユーザーは画像の追加フィールドである _説明_を記入することができます。 画像フィールドがオプションの場合、使い方は簡単で、画像もその説明も必要ありません。 ただし、他のフォームフィールドと同様に、画像フィールドは必須とマークすることができます。 画像フィールドが必須である場合、フォームビルダーは説明を必須とするか任意とするかを選択することができます。
+画像を追加した後、ユーザーは画像の追加フィールドである **説明** を記入することができます。 画像フィールドがオプションの場合、使い方は簡単で、画像もその説明も必要ありません。 ただし、他のフォームフィールドと同様に、画像フィールドは必須とマークすることができます。 画像フィールドが必須である場合、フォームビルダーは説明を必須とするか任意とするかを選択することができます。
 
 ![必須画像フィールドの説明フィールドは、必須または任意とすることができます。](./forms-field-types-reference/images/27.png)
 

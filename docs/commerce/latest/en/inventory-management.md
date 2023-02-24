@@ -9,6 +9,7 @@ toc:
   - ./inventory-management/inventory-management-reference-guide.md
   - ./inventory-management/warehouse-reference-guide.md
   - ./inventory-management/product-inventory-configuration-reference-guide.md
+  - ./inventory-management/developer-guide.md
 uuid: 0af96bfe-53b9-4ae1-bd1f-a372afb783a2
 ---
 # Inventory Management
@@ -25,6 +26,7 @@ inventory-management/using-the-inventory-management-system.md
 inventory-management/inventory-management-reference-guide.md
 inventory-management/warehouse-reference-guide.md
 inventory-management/product-inventory-configuration-reference-guide.md
+inventory-management/developer-guide.md
 ```
 
 {bdg-secondary}`Available Commerce 2.1+`
@@ -103,5 +105,9 @@ You can configure availability estimates for products that are out of stock. Thi
 
 :::{grid-item-card}  Product Inventory Configuration Reference Guide
 :link: ./inventory-management/product-inventory-configuration-reference-guide.md
+:::
+
+:::{grid-item-card}  Developer Guide
+:link: ./inventory-management/developer-guide.md
 :::
 ::::

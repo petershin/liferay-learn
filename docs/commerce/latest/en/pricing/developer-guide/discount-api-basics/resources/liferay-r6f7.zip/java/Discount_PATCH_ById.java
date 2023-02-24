@@ -17,9 +17,9 @@ public class Discount_PATCH_ById {
 			Long.valueOf(System.getProperty("discountId")),
 			new Discount() {
 				{
-               limitationType = "unlimited";
-               target = "subtotal";
-               title = "Bar";
+					limitationType = "unlimited";
+					target = "subtotal";
+					title = "Bar";
 				}
 			});
 	}

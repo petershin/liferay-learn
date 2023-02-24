@@ -17,11 +17,11 @@ public class Discount_POST_ToInstance {
 			discountResource.postDiscount(
 				new Discount() {
 					{
-                  level = "L1";
-                  limitationType = "unlimited";
-                  target = "products";
-                  title = "Foo";
-                  usePercentage = true;
+						level = "L1";
+						limitationType = "unlimited";
+						target = "products";
+						title = "Foo";
+						usePercentage = true;
 					}
 				}));
 	}

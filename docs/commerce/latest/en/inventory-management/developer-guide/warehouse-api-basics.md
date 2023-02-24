@@ -3,8 +3,6 @@ uuid: 021147ab-4848-499b-9ce7-d9930846c1c8
 ---
 # Warehouse API Basics
 
----
-
 You can manage warehouses from the Applications menu or REST APIs. Call the [headless-commerce-admin-inventory](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-inventory/v1.0/openapi.json) services to create and manage warehouses.
 
 ## Adding a Warehouse
@@ -77,7 +75,7 @@ Once Liferay is running,
    ![Confirm that a warehouse was added.](./warehouse-api-basics/images/01.png)
 
    ```{note}
-   A warehouse is always inactive at the time of creation. You must set its `latitude` and `longitude` coordinates before activating it.
+   The new warehouse is inactive. Set its `latitude` and `longitude` coordinates before activating it.
    ```
 
 1. Alternatively, call the REST service using the Java client. Navigate into the `java` folder and compile the source files:

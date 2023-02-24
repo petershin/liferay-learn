@@ -330,9 +330,9 @@ function move_reference_docs {
 	then
 		mv ./build/input/reference/latest/en/dxp/definitions ./build/output/reference/latest/en/dxp
 		mv ./build/input/reference/latest/en/dxp/javadocs ./build/output/reference/latest/en/dxp
-		mv ./build/input/reference/latest/en/portlet-api ./build/output/reference/latest/en/
 		mv ./build/input/reference/latest/en/dxp/propertiesdoc ./build/output/reference/latest/en/dxp
 		mv ./build/input/reference/latest/en/dxp/taglibs ./build/output/reference/latest/en/dxp
+		mv ./build/input/reference/latest/en/portlet-api ./build/output/reference/latest/en
 	fi
 }
 

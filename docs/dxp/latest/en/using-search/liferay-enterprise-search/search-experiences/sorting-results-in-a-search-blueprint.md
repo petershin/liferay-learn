@@ -1,3 +1,6 @@
+----
+uuid: b6d54fc8-344a-4595-954b-10be35f1ce47
+----
 # Sorting Results in a Search Blueprint
 
 Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-configuration) to a search blueprint to control the order of search results. Go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new blueprint or open an existing one, then click the _Configuration_ tab. Enter your JSON into the Sort Configuration text area.
@@ -20,7 +23,7 @@ A sort configuration is a JSON object with a `sorts` array defining the fields t
 {
    "sorts": [
       {
-         "localized_title_en_US_sortable": "asc"
+         "localized_title_${context.language_id}_sortable": "asc"
       }
    ]
 }
@@ -28,6 +31,8 @@ A sort configuration is a JSON object with a `sorts` array defining the fields t
 
 ```{tip}
 * A search document can contain similarly named field variations, especially for localized text fields. Use a localized and sortable field such as `localized_title_en_US_sortable`. Check the document of each entity to find its available fields. For example, `title_sortable` is a common field, but the same entity may also contain `localized_title_en_US_sortable`.
+
+* Instead of entering the language ID directly, use the `${context.language_id}` variable to dynamically populate the 4-letter language code (e.g., `en_US`) for the current language.
 
 * To see a document's fields, click _Preview_ in the blueprint's toolbar, execute a search, and expand the fields for the result.
 ```
@@ -70,13 +75,13 @@ For a nested field, the sort configuration's field declaration is more complicat
 {
    "sorts": [
       {
-         "ddmFieldArray.ddmFieldValueKeyword_en_US_String_sortable": {
+         "ddmFieldArray.ddmFieldValueKeyword_${context.language_id}_String_sortable": {
             "nested": {
                "nested_path": "ddmFieldArray",
                "nested_filter": {
                   "term": {
                      "ddmFieldArray.ddmFieldName": {
-                        "value": "ddm__keyword__30805__department_en_US"
+                        "value": "ddm__keyword__30805__department_${context.language_id}"
                      }
                   }
                }
@@ -119,7 +124,7 @@ To view the document with its nested fields,
 1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields. 
 ```
 
-Example configuration:
+Here's an example sort by an integer object field:
 
 ```json
 {

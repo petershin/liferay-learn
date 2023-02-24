@@ -124,5 +124,5 @@ The new warehouse is now active ready to use.
 ## Additional Information
 
 * [Adding Regions](../store-management/adding-regions.md)
-* [Deactivating a Country for Billing or Shipping](../store-management/deactivating-a-country-for-billing-or-shipping.md)
+* [Countries Configuration Reference](../store-management/countries-configuration-reference.md)
 * [Introduction to Channels](../store-management/channels/introduction-to-channels.md)

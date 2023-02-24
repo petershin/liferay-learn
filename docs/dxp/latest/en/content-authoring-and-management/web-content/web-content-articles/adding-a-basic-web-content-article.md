@@ -21,13 +21,33 @@ Each web content article is based on a structure that defines its available fiel
 
 1. When finished, click _Publish_.
 
-    ```{tip}
-    Use the _Preview_ (![Preview](../../../images/icon-preview.png)) button to verify how your content looks when using the Default Template and Display Page Template.
-
-    ![Preview content from Default Template and Display Page Template.](./adding-a-basic-web-content-article/images/03.png)
-    ```
-
 Congratulations! You have added a basic web content article to your Site. See [Using the Web Content Display Widget](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md) for more information on displaying this article on a page.
+
+## Previewing Web Content Articles
+
+You can preview your content using the selected default template or display page template before publishing, allowing you to make any necessary adjustments to ensure that your content appears as intended to your users.
+
+### Previewing a Web Content Article with a Template
+
+1. In the properties tab, select a template to preview the web content article
+
+1. Select the _Preview_ (![Preview](../../../images/icon-preview.png)) button.
+
+    ![The Default Template section of the properties tab.](./adding-a-basic-web-content-article/images/04.png)
+
+    ```{note}
+    Only web content articles that have been published or saved as a draft can be previewed.
+
+### Previewing a Web Content Articles with a Display Page
+
+1. In the properties tab, select a site and display page to preview the web content article.
+
+1. Select the _Preview_ button.
+
+    ![The Display Page Preview section of the properties tab](./adding-a-basic-web-content-article/images/05.png)
+
+    ```{note}
+    Selecting the _Preview_ button will save a draft of the web content article before displaying the preview.
 
 ## Properties Tab
 

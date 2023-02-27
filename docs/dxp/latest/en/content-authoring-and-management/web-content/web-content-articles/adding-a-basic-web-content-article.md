@@ -27,7 +27,7 @@ Congratulations! You have added a basic web content article to your Site. See [U
 
 You can preview your content using the selected default template or display page template before publishing, allowing you to make any necessary adjustments to ensure that your content appears as intended to your users.
 
-### Previewing a Web Content Article with a Template
+### Previewing a Web Content Article Using a Template
 
 1. In the properties tab, select a template to preview the web content article
 
@@ -38,7 +38,9 @@ You can preview your content using the selected default template or display page
     ```{note}
     Only web content articles that have been published or saved as a draft can be previewed.
 
-### Previewing a Web Content Articles with a Display Page
+### Previewing a Web Content Articles Using a Display Page
+
+Previewing web content using a display page template can be done from any site or asset library.
 
 1. In the properties tab, select a site and display page to preview the web content article.
 

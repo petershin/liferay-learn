@@ -3,7 +3,7 @@ uuid: b6d54fc8-344a-4595-954b-10be35f1ce47
 ----
 # Sorting Results in a Search Blueprint
 
-Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-configuration) to a search blueprint to control the order of search results. Go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new blueprint or open an existing one, then click the _Configuration_ tab. Enter your JSON into the Sort Configuration text area.
+Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-configuration) to a search blueprint to control the order of search results. Go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new blueprint or open an existing one, then click the _Configuration_ tab. Enter JSON into the Sort Configuration text area.
 
 ![Enter JSON to sort a blueprint's results.](./sorting-results-in-a-search-blueprint/images/01.png)
 
@@ -30,16 +30,16 @@ A sort configuration is a JSON object with a `sorts` array defining the fields t
 ```
 
 ```{tip}
-* A search document can contain similarly named field variations, especially for localized text fields. Use a localized and sortable field such as `localized_title_en_US_sortable`. Check the document of each entity to find its available fields. For example, `title_sortable` is a common field, but the same entity may also contain `localized_title_en_US_sortable`.
+* A search document can contain similarly named field variations, especially for localized text fields like `title`. Use a localized and sortable keyword variation of the field such as `localized_title_en_US_sortable`. Check the document of each entity to find its available fields. For example, `title_sortable` is a common field, but the same entity may also contain `localized_title_en_US_sortable`.
 
-* Instead of entering the language ID directly, use the `${context.language_id}` variable to dynamically populate the 4-letter language code (e.g., `en_US`) for the current language.
+* Instead of entering the language ID directly, use the `${context.language_id}` variable to auto-populate the 4-letter language code (e.g., `en_US`) with the current language.
 
 * To see a document's fields, click _Preview_ in the blueprint's toolbar, execute a search, and expand the fields for the result.
 ```
 
 ## Example 2: Sorting by a Structure Field
 
-Web Content Structure fields are indexed as nested fields in the search engine document. 
+[Web Content Structure](../../../content-authoring-and-management/web-content/web-content-structures.md) fields are indexed as nested fields in the search engine document.
 
 When viewing the document, you can see the nested properties in the `ddmFieldArray`:
 
@@ -54,7 +54,7 @@ When viewing the document, you can see the nested properties in the `ddmFieldArr
 ```
 
 ```{tip}
-To view the document with its nested fields, 
+To view the document with its nested fields,
 
 1. Enable fetching the document `_source`. Click the blueprint's _Configuration_ tab, then enter this JSON into the Advanced Configuration box:
 
@@ -66,7 +66,7 @@ To view the document with its nested fields,
     }
     ```
 
-1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields. 
+1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields.
 ```
 
 For a nested field, the sort configuration's field declaration is more complicated:
@@ -95,7 +95,7 @@ For a nested field, the sort configuration's field declaration is more complicat
 
 ## Example 3: Sorting by an Objects Field
 
-Object entry fields are indexed as nested fields in the search engine document. 
+[Object](../../../building-applications/objects.md) entry fields are indexed as nested fields in the search engine document.
 
 When viewing the document, you can see the nested properties of an Object in the `nestedFieldArray`:
 
@@ -109,7 +109,7 @@ When viewing the document, you can see the nested properties of an Object in the
 ```
 
 ```{tip}
-To view the document with its nested fields, 
+To view the document with its nested fields,
 
 1. Enable fetching the document `_source`. Click the blueprint's _Configuration_ tab, then enter this JSON into the Advanced Configuration box:
 
@@ -121,7 +121,7 @@ To view the document with its nested fields,
     }
     ```
 
-1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields. 
+1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields.
 ```
 
 Here's an example sort by an integer object field:
@@ -143,7 +143,7 @@ Here's an example sort by an integer object field:
          }
       }
    ]
-} 
+}
 ```
 
 ## Additional Information

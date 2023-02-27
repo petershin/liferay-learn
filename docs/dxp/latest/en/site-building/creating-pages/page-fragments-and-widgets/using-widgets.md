@@ -1,9 +1,9 @@
 ---
 toc:
-- ./using-widgets/default-widgets-reference.md
-- ./using-widgets/configuring-widgets.md
-- ./using-widgets/styling-widgets.md
-- uuid: 67fe596f-0b7c-40fe-93fb-1f68e4fad0a0
+   - ./using-widgets/default-widgets-reference.md
+   - ./using-widgets/configuring-widgets.md
+   - ./using-widgets/styling-widgets.md
+uuid: 67fe596f-0b7c-40fe-93fb-1f68e4fad0a0
 ---
 # Using Widgets
 

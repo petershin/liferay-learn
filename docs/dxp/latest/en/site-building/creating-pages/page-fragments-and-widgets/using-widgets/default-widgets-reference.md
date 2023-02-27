@@ -1,5 +1,5 @@
 ---
-- uuid: c3383629-2fc1-40b7-9f0c-521489143d86
+uuid: c3383629-2fc1-40b7-9f0c-521489143d86
 ---
 
 # Default Widgets Reference

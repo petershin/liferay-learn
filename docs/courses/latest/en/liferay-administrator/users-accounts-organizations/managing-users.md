@@ -5,20 +5,6 @@ uuid: 4214e7cf-2624-4d50-98ca-d3a02791742d
 
 Use Liferay to create and manage users for Delectable Bonsai. See [Create and Manage Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-and-managing-users.html) to learn more.
 
-## Instance Email Configuration
-
-Change the default email configuration before creating users.
-
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
-
-   * Under _Platform_, click _Email_. 
-   * Click _Email Sender_.
-
-1. Change the fields below: 
-   * Name: _Support Desk_ 
-   * Address: _support@delectablebonsai.com_. 
-   * Click _Save_.
-
 ## Creating Users
 
 Create an account for the IT manager.

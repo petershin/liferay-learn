@@ -7,31 +7,26 @@ Use Liferay to model Delectable Bonsai's organizational hierarchy. See [Understa
 
 ## Parent and Child Organizations
 
-1. Log into your Liferay instance with the default admin credentials. 
+1. Log into your Liferay instance with Kyle Klein's credentials. See [Creating an Administrator Account](../users-accounts-organizations.md#creating-an-administrator-account) if you still need to create his account. 
 
-<!-- Let's change this to Kyle's credentials. -Rich -->
+   * Email address: `kyle@delectablebonsai.com`
+   * Password: `learn`
 
-   * Email address: `test@liferay.com`
-   * Password: `test`
+2. Create a top level organization. 
 
-<!-- Let's create an easily followable format for these instructions. How about this as a rule: if there are more than two steps within a step, bullet them out: -->
-
-1. Create a top level organization. 
-
-   - Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. 
-   - Click the _Organizations_ tab. 
-   - Click _Add_ (![Add icon](../../images/icon-add.png)). 
-   - Enter `Delectable Bonsai` in the _Name_ field. 
-   - Click _Save_.
-
+   * Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. 
+   * Click the _Organizations_ tab. 
+   * Click _Add_ (![Add icon](../../images/icon-add.png)). 
+   * Enter `Delectable Bonsai` in the _Name_ field. 
+   * Click _Save_.
 
 1. Create a child organization. 
 
-   - Click _Back_ (![Back icon](../../images/icon-angle-left.png)) to return to the list of organizations. 
-   - Click on the Delectable Bonsai organization you just created. 
-   - Click _Add_ (![Add icon](../../images/icon-add.png)) and select _New Organization_. 
-   - Input `IT` in the _Name_ field. Note that under the parent organization section, Delectable Bonsai is selected. 
-   - Click _Save_.
+   * Click _Back_ (![Back icon](../../images/icon-angle-left.png)) to return to the list of organizations. 
+   * Click on the Delectable Bonsai organization you just created. 
+   * Click _Add_ (![Add icon](../../images/icon-add.png)) and select _New Organization_. 
+   * Input `IT` in the _Name_ field. Note that under the parent organization section, Delectable Bonsai is selected. 
+   * Click _Save_.
 
 1. Create another child organization called `Sales & Marketing` under the Delectable Bonsai parent organization using the steps above.
 
@@ -48,8 +43,8 @@ Next, create an organization site for the Sales & Marketing department to host a
 1. Click _Options_ (![Options icon](../../images/icon-actions.png)) for the Sales & Marketing child organization and click _Edit_.
 
 1. In the left navigation, click _Organization Site_. 
-   - Click the toggle to create the site. 
-   - Click _Save_. 
+   * Click the toggle to create the site. 
+   * Click _Save_. 
 
    A new organization site has been created.
 
@@ -63,21 +58,19 @@ Next, create an organization site for the Sales & Marketing department to host a
 
 1. Click _Add_ (![Add icon](../../images/icon-add.png)) and select _Page_. 
 
-   - Click _Blank_ to create a blank page. 
-   - Give the page the name _Sales & Marketing Blog_. 
-   - Click _Add_.
+   * Click _Blank_ to create a blank page. 
+   * Give the page the name _Sales & Marketing Blog_. 
+   * Click _Add_.
 
 1. In the left navigation, click _Plus_ (![Plus icon](../../images/icon-plus.png)) to see the Fragments and Widgets tools. 
 
-   - Click the _Widgets_ tab. 
-   - Add a Blogs widget by dragging it onto the page. The widget is in Collaboration. 
-   - Click _Publish_.
+   * Click the _Widgets_ tab. 
+   * Add a Blogs widget by dragging it onto the page. The widget is in Collaboration. 
+   * Click _Publish_.
 
 1. The Sales & Marketing organization site now has a page with Sales & Marketing blog postings for anyone that is part of the child organization to view. See [Getting Started with Blogs](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/getting-started-with-blogs.html) to learn more about blogs and blog entries.
 
 The next step is creating and managing users. See [Managing Users](./managing-users.md).
-
-<!-- Not sure if you want to reorder it so the whole Managing Users section happens before this one, or if you want to just do Kyle Klein as the administrator first. I'll leave that up to you for the next round. :-) -Rich --> 
 
 ## Relevant Concepts
 - [Understanding Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/understanding-organizations.html)

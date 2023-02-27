@@ -1,4 +1,4 @@
-package com.acme.b9f3.osgi.commands;
+package com.acme.b9f3.internal.osgi.commands;
 
 import com.liferay.petra.string.StringBundler;
 import com.liferay.petra.string.StringPool;

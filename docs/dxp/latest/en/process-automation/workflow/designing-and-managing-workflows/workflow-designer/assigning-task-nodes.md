@@ -57,7 +57,7 @@ You can determine the probable resource action name from the permissions screen 
 
 ## Scripted Assignments
 
-You can also use a script to manage the assignment. Here's the script for the Review task assignment in the Scripted Single Approver workflow definition (`single-approver-definition-scripted-assignment.xml`):
+You can also use a script to manage the assignment. Here's the script for the Review task assignment in the Scripted Single Approver workflow definition (`single-approver-scripted-assignment-workflow-definition.xml`):
 
 ```groovy
 import com.liferay.portal.kernel.model.Group;

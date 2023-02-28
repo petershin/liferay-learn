@@ -51,7 +51,7 @@ My Workflow Tasks 애플리케이션은 사용자의 개인 메뉴에서 액세�
 
 ## 스크립팅된 과제
 
-스크립트를 사용하여 과제를 관리할 수도 있습니다. 다음은 스크립팅된 단일 승인자 워크플로 정의(`single-approver-definition-scripted-assignment.xml`)의 검토 작업 할당에 대한 스크립트입니다.
+스크립트를 사용하여 과제를 관리할 수도 있습니다. 다음은 스크립팅된 단일 승인자 워크플로 정의(`single-approver-scripted-assignment-workflow-definition.xml`)의 검토 작업 할당에 대한 스크립트입니다.
 
 ```groovy
 import com.liferay.portal.kernel.model.Group;

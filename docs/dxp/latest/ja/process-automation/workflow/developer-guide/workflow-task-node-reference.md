@@ -68,7 +68,7 @@
 * リソースアクション
 * 特定のユーザー
 
-さらに、割り当てを定義するスクリプトを書くこともできます。 例として、 [single-approver-definition-scripted-assignment.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition-scripted-assignment.xml) をご覧ください。
+さらに、割り当てを定義するスクリプトを書くこともできます。 例として、 [single-approver-scripted-assignment-workflow-definition.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml) をご覧ください。
 
 ```xml
 <assignments>

@@ -18,10 +18,10 @@ DXPを使用しているサブスクライバーは、[グラフィカルデザ�
 
 デフォルトでは、唯一の承認者という1つのワークフロー定義のみがインストールされています。 また、Liferayのソースコードにもいくつか組み込まれています。 これらの定義は、ここで説明するすべての機能を理解する良い例となります。
 
-* [カテゴリー別](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-definition.xml)
-* [リーガルマーケティング](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/legal-marketing-definition.xml)
-* [唯一の承認者](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition.xml)
-* [唯一の承認者スクリプトでの割り当て](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition-scripted-assignment.xml)　以下では最もシンプルなワークフローである油井胃兪の承認者を使って、基本を学習します。 唯一の承認者のワークフローには、［開始］と［終了］の2つの必須ステータスが含まれており、それぞれ ［**作成済み**］ と ［**承認済み**］ という名前が付けられています。 また、 ［**レビュー**］ と ［**アップデート**］ という2つのタスクも含まれています。 これらのタスクは、 **承認** 、 **拒否** 、 **再送信** などの **アクション** を定義します。
+* [カテゴリー別](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml)
+* [リーガルマーケティング](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/legal-marketing-workflow-definition.xml)
+* [唯一の承認者](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml)
+* [唯一の承認者スクリプトでの割り当て](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml)　以下では最もシンプルなワークフローである油井胃兪の承認者を使って、基本を学習します。 唯一の承認者のワークフローには、［開始］と［終了］の2つの必須ステータスが含まれており、それぞれ ［**作成済み**］ と ［**承認済み**］ という名前が付けられています。 また、 ［**レビュー**］ と ［**アップデート**］ という2つのタスクも含まれています。 これらのタスクは、 **承認** 、 **拒否** 、 **再送信** などの **アクション** を定義します。
 
 ワークフローを構成しているコンポーネントに分解するときは、［ステータス］、［タスク］、［アクション］について考えます。 それらを定義したら、作業を開始する準備が整います。 これで、唯一の承認者のワークフローがどのように機能するかを確認して、すべてをまとめる準備が整いました。
 
@@ -52,7 +52,7 @@ DXPを使用しているサブスクライバーは、[グラフィカルデザ�
 
 ## 開始ノードと終了ノード
 
-各ワークフローの定義は、 **ステータスノード** で開始および終了します。 [唯一の承認者](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition.xml) から次のような **開始** ノードを作成します。
+各ワークフローの定義は、 **ステータスノード** で開始および終了します。 [唯一の承認者](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml) から次のような **開始** ノードを作成します。
 
 ```xml
 <state>

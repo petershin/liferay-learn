@@ -47,7 +47,7 @@ _노드_ 요소와 해당 하위 요소는 워크플로 정의를 구성하는 �
 
 _조건 노드_ 은 조건이 충족되는지 여부를 결정하고 충족되면 워크플로를 적절한 노드로 전환합니다. 예를 들어, 제출된 문서가 계약서인 경우 법무팀으로 보내야 합니다. 그렇지 않으면 마케팅 팀으로 이동합니다.
 
-다음은 [범주별 승인](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-definition.xml) 워크플로우 정의의 `결정 분기` 조건입니다.
+다음은 [범주별 승인](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml) 워크플로우 정의의 `결정 분기` 조건입니다.
 
 ```xml
 <condition>

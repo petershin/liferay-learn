@@ -18,10 +18,10 @@ DXP를 사용하는 구독자는 [그래픽 디자이너](../user-guide/workflow
 
 기본적으로 하나의 워크플로우 정의(단일 승인자)만 설치됩니다. Liferay 소스 코드에는 몇 가지가 더 포함되어 있습니다. 이러한 정의는 여기에 설명된 모든 기능의 좋은 예를 제공합니다.
 
-* [카테고리별](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-definition.xml)
-* [법률 마케팅](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/legal-marketing-definition.xml)
-* [단일 승인자](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition.xml)
-* [단일 승인자 스크립트 할당](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition-scripted-assignment.xml) 아래에서 가장 간단한 워크플로인 단일 승인자를 사용하여 기본 사항을 배웁니다. 단일 승인자 워크플로우에는 _생성됨_ 및 _승인됨_이라는 두 가지 필수 상태인 시작 및 종료가 포함됩니다. 또한 _리뷰_ 및 _업데이트_의 두 가지 작업이 포함되어 있습니다. 이러한 작업은 _승인_, _거부_및 _다시 제출_과 같은 _작업_을 정의합니다.
+* [카테고리별](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml)
+* [법률 마케팅](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/legal-marketing-workflow-definition.xml)
+* [단일 승인자](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml)
+* [단일 승인자 스크립트 할당](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml) 아래에서 가장 간단한 워크플로인 단일 승인자를 사용하여 기본 사항을 배웁니다. 단일 승인자 워크플로우에는 _생성됨_ 및 _승인됨_이라는 두 가지 필수 상태인 시작 및 종료가 포함됩니다. 또한 _리뷰_ 및 _업데이트_의 두 가지 작업이 포함되어 있습니다. 이러한 작업은 _승인_, _거부_및 _다시 제출_과 같은 _작업_을 정의합니다.
 
 워크플로를 구성 요소로 나눌 때 상태, 태스크 및 작업에 대해 생각하십시오. 정의를 마치면 작업할 준비가 된 것입니다. 이제 단일 승인자 워크플로가 작동하는 방식을 확인하여 모든 것을 통합할 준비가 되었습니다.
 
@@ -52,7 +52,7 @@ DXP를 사용하는 구독자는 [그래픽 디자이너](../user-guide/workflow
 
 ## 시작 및 종료 노드
 
-각 워크플로 정의는 _상태 노드_로 시작하고 끝납니다. [단일 승인자](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition.xml)에서 이와 같은 _시작_ 노드를 만듭니다.
+각 워크플로 정의는 _상태 노드_로 시작하고 끝납니다. [단일 승인자](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml)에서 이와 같은 _시작_ 노드를 만듭니다.
 
 ```xml
 <state>

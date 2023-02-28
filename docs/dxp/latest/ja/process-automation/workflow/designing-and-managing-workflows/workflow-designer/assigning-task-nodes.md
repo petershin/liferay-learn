@@ -50,7 +50,7 @@
 
 ## スクリプトでの割り当て
 
-また、スクリプトを使って割り当てを管理することもできます。 以下は、スクリプト化された唯一の承認者ワークフロー定義（`single-approver-definition-scripted-assignment.xml`）におけるレビュータスク割り当てのスクリプトです。
+また、スクリプトを使って割り当てを管理することもできます。 以下は、スクリプト化された唯一の承認者ワークフロー定義（`single-approver-scripted-assignment-workflow-definition.xml`）におけるレビュータスク割り当てのスクリプトです。
 
 ```groovy
 import com.liferay.portal.kernel.model.Group;

@@ -66,7 +66,7 @@
 * 리소스 작업
 * 특정 사용자
 
-또한 할당을 정의하는 스크립트를 작성할 수 있습니다. 예를 보려면 [single-approver-definition-scripted-assignment.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-definition-scripted-assignment.xml)을 참조하십시오.
+또한 할당을 정의하는 스크립트를 작성할 수 있습니다. 예를 보려면 [single-approver-scripted-assignment-workflow-definition.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml)을 참조하십시오.
 
 ```xml
 <assignments>

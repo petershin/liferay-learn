@@ -40,7 +40,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-contents" \
-	-d "{\"contentFields\": [{\"contentFieldValue\": {\"data\": \"<p>Foo</p>\"}, \"name\": \"content\"}], \"contentStructureId\": \"${contentStructuredId}\", \"title\": \"Able Article\"}" \
+	-d "{\"contentFields\": [{\"contentFieldValue\": {\"data\": \"<p>Foo</p>\"}, \"name\": \"content\"}], \"contentStructureId\": \"${contentStructuredId}\", \"title\": \"Able Content\"}" \
 	-u "test@liferay.com:learn"
 
 structuredContentFolderId=$(curl \
@@ -56,5 +56,5 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/headless-delivery/v1.0/structured-content-folders/${structuredContentFolderId}/structured-contents" \
-	-d "{\"contentFields\": [{\"contentFieldValue\": {\"data\": \"<p>Foo</p>\"}, \"name\": \"content\"}], \"contentStructureId\": \"${contentStructuredId}\", \"title\": \"Able Content Article\"}" \
+	-d "{\"contentFields\": [{\"contentFieldValue\": {\"data\": \"<p>Foo</p>\"}, \"name\": \"content\"}], \"contentStructureId\": \"${contentStructuredId}\", \"title\": \"Able Content\"}" \
 	-u "test@liferay.com:learn"

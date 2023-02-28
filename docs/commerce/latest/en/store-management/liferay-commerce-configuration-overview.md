@@ -45,7 +45,7 @@ Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) an
 ## Settings
 
 * [Availability Estimates](../inventory-management/availability-estimates.md)
-* [Countries](./countries-configuration-reference.md)
+* [Countries](./configuring-countries-and-regions.md)
 * [Measurement Units](./configuring-shipping-methods/measurement-units.md)
 
 ## Liferay Commerce 2.1 and Below
@@ -67,7 +67,7 @@ The Commerce Global Settings menu contains the following tabs:
 ![You can find Settings under the Commerce global menu.](./liferay-commerce-configuration-overview/images/03.png)
 
 * [Availability Estimates](../inventory-management/availability-estimates.md)
-* [Countries](./countries-configuration-reference.md)
+* [Countries](./configuring-countries-and-regions.md)
 * [Currencies](./currencies/adding-a-new-currency.md)
 * Default Images
 * [Measurement Units](./configuring-shipping-methods/measurement-units.md)

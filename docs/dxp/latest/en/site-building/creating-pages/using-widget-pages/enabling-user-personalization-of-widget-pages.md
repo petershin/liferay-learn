@@ -3,7 +3,7 @@ uuid: 61ceeffc-f4d1-4ed7-b6da-b6ed011dd710
 ---
 # Enabling User Personalization of Widget Pages
 
-Administrators can designate some or all of the sections (rows and columns of the page layout) of a Widget Page as customizable for site members. Page customizations are only visible to the user who made the customizations. The steps below cover these topics:
+Administrators can designate some or all sections (rows and columns of the page layout) of a Widget Page as customizable for site members. Page customizations only appear for the user who made the customizations. The steps below cover these topics:
 
 - [Enabling Page Customizations](#enabling-page-customizations)
 - [Customizing Pages](#customizing-pages)
@@ -11,15 +11,13 @@ Administrators can designate some or all of the sections (rows and columns of th
 
 ## Enabling Page Customizations
 
-To enable page customizations, follow these steps:
-
 1. Open the Liferay DXP Menu and go to *Site Builder* &rarr; *Pages* under your site's menu.
 
-1. Open the Actions menu next to the page you want to let Site members modify and select *Configure*.
+1. Open the *Actions* menu next to the page you want to let site members modify and select *Configure*.
 
 1. Select the *Advanced* tab at the top of the page and expand the *Customization Settings* panel.
 
-1. Toggle the *Customizable* option to Yes.
+1. Toggle the *Customizable* option to *Yes*.
 
     ![To enable page customizations, click on the Configure Page button next to the page, expand the Customization Settings area, and click on the Customizable button.](./personalizing-pages/images/01.png)
 
@@ -33,30 +31,30 @@ With customization activated for a page, site members can add apps to the custom
 - Configure applications
 
 ```{note}
-Site members can't change a non-instanceable app's configuration inside a customizable region since those apps are tied to the site they've been added to.
+Site members can't change a non-instanceable app's configuration inside a customizable region since those apps are tied to the site where they've been added.
 ```
 
-Site members have access to these contextual options from the page's *Options* menu (![Options](../../../../images/icon-options.png)) in the Control Menu:
+Site members have access to these contextual options from the page's Options menu (![Options](../../../../images/icon-options.png)) in the Control Menu:
 
-- *View Page without my customizations*: Displays the default page and hides the Add menu.
+**View Page without my customizations**: Displays the default page and hides the Add menu.
 
-- *Reset My Customizations*: Restores the customized page back to the default page, discarding any customizations.
+**Reset My Customizations**: Restores the customized page back to the default page, discarding any customizations.
 
-- *View My Customized Page*: Displays the page with the user's customizations and makes the Add menu available so users can add widgets to the page.
+**View My Customized Page**: Displays the page with the user's customizations and makes the Add menu available so users can add widgets to the page.
 
 ![Customizable areas are highlighted green when organizing apps on the page.](./personalizing-pages/images/02.png)
 
-Administrators of customizable pages have the same two views as Site members: the *default page* view and the *customized page* view. Changes they make to the non-customizable sections of the default page affect all users just like other pages, whereas changes they make to the customized sections affect only themselves and do *not* overwrite users' customizations.
+Administrators of customizable pages have the same two views as site members: the *default page* view and the *customized page* view. Changes they make to the non-customizable sections of the default page affect all users just like other pages, while changes they make to the customized sections affect only themselves and do *not* overwrite users' customizations.
 
 ## Granting Roles Permission to Customize Pages
 
-By default, site members can make page customizations but non-site members and guests can't. Administrators can update permissions for an existing Role or [create a new Role](../../../../users-and-permissions/roles-and-permissions/creating-and-managing-roles.md) and assign it to other users to give them the ability to customize pages. Follow these steps to grant a Role permissions to customize pages:
+By default, site members can make page customizations but non-site members and guests can't. Administrators can update permissions for an existing role or [create a new role](../../../../users-and-permissions/roles-and-permissions/creating-and-managing-roles.md) and assign it to other users to enable them to customize pages. Follow these steps to grant role permissions to customize pages:
 
 1. Open the Liferay DXP Menu and go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 
-1. Open the Actions menu for the Role and select *Edit*.
+1. Open the Actions menu for the role and select *Edit*.
 
-1. Click the *Define Permissions* tab for the Role and go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages* under Summary.
+1. Click the *Define Permissions* tab for the role and go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages* under Summary.
 
 1. Scroll down to the Page section under the *Resource Permissions* heading and check the *Customize* permission.
 

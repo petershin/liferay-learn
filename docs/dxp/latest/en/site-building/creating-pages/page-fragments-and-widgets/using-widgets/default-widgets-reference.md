@@ -4,9 +4,9 @@ uuid: c3383629-2fc1-40b7-9f0c-521489143d86
 
 # Default Widgets Reference
 
-Liferay provides a variety of widgets out-of-the-box, so you can start building your solution right away. Widgets can be placed on content pages, widget pages, and page templates. To view available widgets on a content page, begin editing a page and select *Fragment and Widgets* (![Fragments and Widgets](../../../../images/icon-plus.png)) in the editing sidebar menu and select the *Widgets* tab. To view available widgets on a widget page, click Add (![add](../../../../images/icon-plus.png)).
+Liferay provides a variety of widgets out-of-the-box, so you can start building your solution right away. Widgets can be placed on content pages, widget pages, and page templates. To view available widgets on a content page, begin editing a page and select *Fragments and Widgets* (![Fragments and Widgets](../../../../images/icon-plus.png)) in the editing sidebar menu and select the *Widgets* tab. To view available widgets on a widget page, click *Add* (![add](../../../../images/icon-plus.png)).
 
-Widgets are organized into the following sections:
+Widgets are organized into these sections:
 
 * [Highlighted](#highlighted)
 * [Accounts](#accounts)
@@ -23,7 +23,7 @@ Widgets are organized into the following sections:
 
 ## Highlighted
 
-Widgets in this section are commonly used widgets when building pages.
+Widgets here are commonly used widgets when building pages.
 
 | Widget | Description |
 | :--- | :--- |
@@ -147,7 +147,7 @@ Search widgets provides tailored search experiences that are customizable by you
 
 ## Social
 
-Social widgets create a social media experience with user sites.
+Social widgets create a social media experience on user sites.
 
 | Widget | Description |
 | :--- | :--- |
@@ -159,7 +159,7 @@ Social widgets create a social media experience with user sites.
 
 ## Tools
 
-Tool widgets provide widgets to the tailors a user's experience on the site.
+Tool widgets provide widgets to tailor a user's experience.
 
 | Widget | Description |
 | :--- | :--- |

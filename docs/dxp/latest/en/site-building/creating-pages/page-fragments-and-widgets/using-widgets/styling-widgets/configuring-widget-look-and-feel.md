@@ -3,9 +3,7 @@ uuid: 87abd88b-e917-4702-9da3-b517bdbffcad
 ---
 # Configuring Widget Look and Feel
 
-To access the look and feel configuration menu of any widget, follow these steps:
-
-1.  Click *Options* icon (![Actions Button](../../../../images/icon-actions.png)) in the top right corner of the widget.
+1.  Click *Options* (![Actions Button](../../../../images/icon-actions.png)) in the top right corner of the widget.
 
 1.  Select *Look and Feel Configuration*.
 
@@ -27,7 +25,7 @@ Look and Feel configuration options are not available for widgets on Content Pag
 
 On the General tab are the following options:
 
-**Use Custom Title** enables changes to your widget's title. The value in the title box is displayed on widget's decorator. The title is localizable, so you can provide translations of the title for different languages.
+**Use Custom Title** enables changes to your widget's title. The value in the title box appears on widget's decorator. The title is localizable, so you can provide translations of the title for different languages.
 
 **Application Decorators** gives you the choice between three decorators: *Barebone*, *Borderless*, and *Decorate*. The Decorate application decorator is the default.
 
@@ -39,19 +37,19 @@ Be careful about turning widget borders off; some themes assume widget borders a
 
 ## Text Styles
 
-*Text Styles* configure the format of the text that appears in the widget. The options include:
+*Text Styles* configure the format of the text that appears in the widget:
 
 **Font:** Choose various fonts. You can set the text to bold, italics, or both.
 
 **Size:** Set the font size anywhere from 0.1 em to 12 em. 1 em is the default.
 
-**Color:** Set to any six digit hex color code. Click on the text box to open the color palette.
+**Color:** Set to any six digit hex color code. Click the text box to open the color palette.
 
 **Alignment:** Set to *Left*, *Center*, *Right*, or *Justified*.
 
 **Text Decoration:** Set to *Underline*, *Overline*, or *Strikethrough*. The default text decoration is *None*.
 
-![The Text Styles tab lets you configure the format of the text that appears in the widget.](./configuring-widget-look-and-feel/images/02.png)
+![The Text Styles tab controls the format of the text that appears in the widget.](./configuring-widget-look-and-feel/images/02.png)
 
 **Word Spacing:** Set from -1 em to 0.95 em. 0 em is the default.
 
@@ -61,15 +59,15 @@ Be careful about turning widget borders off; some themes assume widget borders a
 
 ## Background Styles
 
-The Background Styles tab specifies the widget's background color. When you select the text space, you're given a color palette to choose your background color or you can manually enter any six digit hex color code.
+The Background Styles tab specifies the widget's background color. When you select the text space, you're given a color palette to choose your background color or you can enter any six digit hex color code manually.
 
 ![The Background Styles tab lets you specify the widget's background color.](./configuring-widget-look-and-feel/images/03.png)
 
 ## Border Styles
 
-The Border Styles tab, configures your widget's border width, style, and color. For each of these attributes, leave the *Same for All* selector enabled to apply the same settings to top, right, bottom, and left borders.
+The Border Styles tab configures your widget's border width, style, and color. For each of these attributes, leave the *Same for All* selector enabled to apply the same settings to top, right, bottom, and left borders.
 
-![The Border Styles tab lets you specify a border width, style, and color for each side of the widget.](./configuring-widget-look-and-feel/images/04.png)
+![The Border Styles tab controls specifying a border width, style, and color for each side of the widget.](./configuring-widget-look-and-feel/images/04.png)
 
 For border width, you can specify any % value, em value, or px value. For border style, you can select Dashed, Double, Dotted, Groove, Hidden, Inset, Outset, Ridge, or Solid. For border color, you can enter any six digit hex color code, just like for the text color and background color. You can also use the color palette.
 
@@ -77,7 +75,7 @@ For border width, you can specify any % value, em value, or px value. For border
 
 The Margin and Padding tab specifies margin and padding lengths for the edges of your widget. Just like for border styles, leave the *Same for All* selector enabled to apply the same settings to each side (top, right, bottom, and left) of the widget.
 
-![The Margin and Padding tab allows you to specify margin and padding lengths for the sides of your widget.](./configuring-widget-look-and-feel/images/05.png)
+![The Margin and Padding tab controls specifying margin and padding lengths for the sides of your widget.](./configuring-widget-look-and-feel/images/05.png)
 
 For both padding and margin, you can specify any % value, em value, or px value.
 
@@ -85,7 +83,7 @@ For both padding and margin, you can specify any % value, em value, or px value.
 
 The Advanced Styling tab displays current information about your widget, including your widget's Liferay ID and CSS classes.
 
-![Figure 6: The Advanced Styling tab displays your widget's Liferay ID and allows you to enter CSS code to customize the look and feel of your widget.](./configuring-widget-look-and-feel/images/06.png)
+![The Advanced Styling tab displays your widget's Liferay ID and allows you to enter CSS code to customize the look and feel of your widget.](./configuring-widget-look-and-feel/images/06.png)
 
 You can also enter custom CSS class names for your widget and custom CSS code. Clicking the *Add a CSS rule for just this portlet* or *Add a CSS rule for all portlets like this one* links adds the CSS code shells into your custom CSS text box.
 

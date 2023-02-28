@@ -3,11 +3,11 @@ uuid: 3615f3c0-721f-4ba5-abf8-f1d19826a20a
 ---
 # Sharing Widgets with Other Sites
 
-You can share widgets with other Sites by embedding an instance of a widget running on your Site into another website, such as Facebook, OpenSocial and Netvibes. This opens up a whole new avenue of exposure to your website that you would not have had otherwise.
+You can share widgets with other sites by embedding an instance of a widget running on your site into another website, such as Facebook, OpenSocial and Netvibes. This opens up a whole new avenue of exposure to your website that you would not have had otherwise.
 
-![The Sharing tab in your widget's Configuration menu lets you share your widget in a variety of ways.](./sharing-widgets-with-other-sites/images/01.png)
+![The Sharing tab in your widget's Configuration menu can share your widget in a variety of ways.](./sharing-widgets-with-other-sites/images/01.png)
 
-1. Click on the widget's *Options* icon (![Options](../../../../images/icon-app-options.png)) &rarr; *Configuration* &rarr; *Sharing*.
+1. Click the widget's *Options* icon (![Options](../../../../images/icon-app-options.png)) &rarr; *Configuration* &rarr; *Sharing*.
 
 1. There are three sub-tabs under sharing: Facebook, OpenSocial Gadget and Netvibes. Proceed according to the context you choose.
 
@@ -23,8 +23,8 @@ You can add any widget as a Facebook app. To do this, you must first get a devel
 
 1. Retrieve the *API Key*<!--[ include link -]()--> and the *Canvas Page URL*<!--[ include link -]()--> from Facebook. Copy and paste them on the Sharing tab.
 
-    ![The Sharing tab in your widget's Configuration menu lets you share your widget in a variety of ways.](./sharing-widgets-with-other-sites/images/02.png)
-  
+    ![The Sharing tab in your widget's Configuration menu can share your widget in a variety of ways.](./sharing-widgets-with-other-sites/images/02.png)
+
 1. Click *Save* and go back to the Facebook tab in Liferay DXP. You're given the *Callback URL*, which you can copy and paste into Facebook. When opening your app in Facebook, the correct callback URL is used to render the application.
 
 1. Optionally, enable the *Allow users to add [application-name] to Facebook*. Then you can navigate to your app's Options menu and select *Add to Facebook*.

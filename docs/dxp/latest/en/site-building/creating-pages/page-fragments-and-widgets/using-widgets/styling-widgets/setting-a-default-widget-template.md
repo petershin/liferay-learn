@@ -3,12 +3,13 @@ uuid: 1442acca-16ef-4fed-9c74-10c9326da8ee
 ---
 # Setting a Default Widget Template
 
-You can change the widget template for individual widgets through their own configuration, however you can also configure a default widget template to apply to all widgets of a particular type. To do this, go to *Control Panel* &rarr; *System Settings*. In System Settings you can find a configuration for every widget in Liferay DXP. Widgets that support widget templates have a *Display Style Group ID* and a *Display Style* option.
+You can change the widget template for individual widgets through their own configuration; however you can also configure a default widget template to apply to all widgets of a particular type. To do this, go to *Control Panel* &rarr; *System Settings*. In System Settings you can find a configuration for every widget in Liferay DXP. Widgets that support widget templates have a *Display Style Group ID* and a *Display Style* option.
 
-  ![The widget template configuration in System Settings lets you change the display style.](./setting-a-default-widget-template/images/01.png)
+  ![The widget template configuration in System Settings controls changing the display style.](./setting-a-default-widget-template/images/01.png)
 
-- **Display Style Group ID:** The Site ID where the widget template is located. For Global templates use 0 for the ID.
-- **Display Style:** The widget template's key.
+**Display Style Group ID:** The Site ID where the widget template is located. For Global templates use 0 for the ID.
+
+**Display Style:** The widget template's key.
 
 ```{note}
 To enter a Display Style, you first need the *Template Key* for the template you want to use. To get the Template Key, go to the *Application Display Template* list for a given Site and retrieve it from the widget template listing. Then enter the display style as `ddmTemplate_[template-key]`.
@@ -20,7 +21,7 @@ For example, configure the Language Selector widget templates like this:
 
 1.  Open the *Home* &rarr; *Design* &rarr; *Widget Templates*.
 
-1.  Click on the *Add icon* (![Add](../../../../images/icon-add.png)) and select the option *Language Selector Template*.
+1.  Click *Add* (![Add](../../../../images/icon-add.png)) and select the option *Language Selector Template*.
 
 1.  Open *Details* and find the *Template Key* - `LANGUAGE-ICON-FTL`
 

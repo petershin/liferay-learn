@@ -8,7 +8,7 @@ Warehouses represent physical locations where you store product inventory. To ac
 You can use a single warehouse to serve multiple channels or serve a single channel with multiple warehouses. When using the *Minium* or *Speedwell* accelerators, three sample warehouses serve one channel.
 
 ```{note}
-Before creating a warehouse, you must enable the applicable country and region of the warehouse. See [Adding Regions](../store-management/adding-regions.md) for more information.
+Before creating a warehouse, you must enable the applicable country and region of the warehouse. See [Adding Regions](../store-management/countries-configuration-reference.md#adding-regions) for more information.
 ```
 
 ## Adding a Warehouse
@@ -123,6 +123,6 @@ The new warehouse is now active ready to use.
 
 ## Additional Information
 
-* [Adding Regions](../store-management/adding-regions.md)
+* [Adding Regions](../store-management/countries-configuration-reference.md#adding-regions)
 * [Countries Configuration Reference](../store-management/countries-configuration-reference.md)
 * [Introduction to Channels](../store-management/channels/introduction-to-channels.md)

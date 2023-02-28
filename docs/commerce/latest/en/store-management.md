@@ -7,7 +7,6 @@ toc:
   - store-management/guest-checkout.md
   - store-management/sending-emails.md
   - store-management/liferay-commerce-configuration-overview.md
-  - store-management/adding-regions.md
   - store-management/locale-options.md
   - store-management/countries-configuration-reference.md
 uuid: 6cb314a2-f471-4faa-9ed5-844a673ec6ec
@@ -24,7 +23,6 @@ store-management/configuring-shipping-methods.md
 store-management/guest-checkout.md
 store-management/sending-emails.md
 store-management/liferay-commerce-configuration-overview.md
-store-management/adding-regions.md
 store-management/locale-options.md
 store-management/countries-configuration-reference.md
 

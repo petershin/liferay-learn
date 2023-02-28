@@ -41,7 +41,7 @@ By default, forms never expire. If you disable the Never Expire setting, you can
 
 ### Show Partial Results to Respondents
 
-Allow respondents to see aggregated data on the currently submitted form records. Respondents can view the current [Forms Report](../sharing-forms-and-managing-submissions/form-reports.md#show-partial-results-to-form-respondents) data for the form. Enabling this warns the user against submitting sensitive information.
+Allow respondents to see aggregated data on the currently submitted form records. Respondents can view the current [Forms Report](./sharing-forms-and-managing-submissions/form-reports.md#show-partial-results-to-form-respondents) data for the form. Enabling this warns the user against submitting sensitive information.
 
 ![Users are warned against sharing sensitive information.](./using-forms-to-poll-users/images/02.png)
 

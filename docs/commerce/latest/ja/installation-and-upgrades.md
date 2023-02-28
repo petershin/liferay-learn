@@ -6,7 +6,6 @@ toc:
 - ./installation-and-upgrades/maintenance-versions.md
 - ./installation-and-upgrades/3-0-release-notes.md
 - ./installation-and-upgrades/3-0-breaking-changes.md
-- ./installation-and-upgrades/4-0-breaking-changes.md
 - ./installation-and-upgrades/installing-commerce-2.1-and-below.md
 ---
 # インストールとアップグレード
@@ -20,7 +19,6 @@ installation-and-upgrades/upgrading-liferay-commerce.md
 installation-and-upgrades/maintenance-versions.md
 installation-and-upgrades/3-0-release-notes.md
 installation-and-upgrades/3-0-breaking-changes.md
-installation-and-upgrades/4-0-breaking-changes.md
 installation-and-upgrades/installing-commerce-2.1-and-below.md
 ```
 

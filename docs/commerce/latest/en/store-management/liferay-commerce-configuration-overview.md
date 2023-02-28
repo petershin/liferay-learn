@@ -3,11 +3,11 @@ uuid: 61b2ba84-d187-4813-8c11-9ec579fd42ec
 ---
 # Liferay Commerce Configuration Overview
 
-You can find options to configure Commerce from the *Global Menu*.
+You can find options to configure Commerce from the Global Menu.
 
 ![Access Commerce via the Global Application menu.](./liferay-commerce-configuration-overview/images/01.png)
 
-Open the *Global Menu* and navigate to &rarr; *Commerce*. Administrators can configure:
+Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and go to the *Commerce* tab. This tab includes the following applications.
 
 ## Order Management
 
@@ -67,9 +67,11 @@ The Commerce Global Settings menu contains the following tabs:
 ![You can find Settings under the Commerce global menu.](./liferay-commerce-configuration-overview/images/03.png)
 
 * [Availability Estimates](../inventory-management/availability-estimates.md)
-* [Adding a New Currency](./currencies/adding-a-new-currency.md)
+* [Countries](./countries-configuration-reference.md)
+* [Currencies](./currencies/adding-a-new-currency.md)
+* Default Images
 * [Measurement Units](./configuring-shipping-methods/measurement-units.md)
-* [Regions](./adding-regions.md)
+* Health Check
 * [Warehouses](../inventory-management/warehouse-reference-guide.md)
 
 ### Commerce Site Settings

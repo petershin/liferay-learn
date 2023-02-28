@@ -83,7 +83,7 @@ Gitコマンドを実行し、Gitがインストールされている端末で�
 1. 変更内容とメッセージをコミットします。
 
     ```bash
-    git commit -m "Liferay Cloud Migration Stage 2".
+    git commit -m "Liferay Cloud Migration Stage 2"
     ```
 
 1. 変更をGitHubにプッシュします。

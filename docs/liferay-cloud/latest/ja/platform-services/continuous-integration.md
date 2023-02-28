@@ -38,11 +38,11 @@ CIサービスのバージョン `［liferaycloud/jenkins:2.222.1-3.2.0］`か�
 
 デフォルトのJenkinsfileを拡張するには、プロジェクトリポジトリの `ci` フォルダに以下のファイルを追加します：
 
-- `Jenkinsfile-before-all（ジェンキンスファイル・ビフォア・オール`
-- `Jenkinsファイル（ビフォア・クラウド・ビルド`
-- `Jenkinsファイル（ビフォアクラウドデプロイ`
-- `Jenkinsfile-アフターオール`
-- `Jenkinsfile-post-always（ジェンキンスファイル・ポスト・アルウェイズ`
+- `Jenkinsfile-before-all`
+- `Jenkinsfile-before-cloud-build`
+- `Jenkinsfile-before-cloud-deploy`
+- `Jenkinsfile-after-all`
+- `Jenkinsfile-post-always`
 
 CIビルドプロセスのステップの基本的な概要は次のとおりです：
 

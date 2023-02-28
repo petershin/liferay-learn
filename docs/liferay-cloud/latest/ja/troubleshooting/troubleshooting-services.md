@@ -22,7 +22,7 @@
 たとえば、活性プローブの失敗メッセージは次のようなものです：
 
 ```
-Livenessプローブに失敗しました。HTTPプローブに失敗しました。500
+Liveness probe failed: HTTP probe failed with statuscode: 500
 ```
 
 ### プローブ構成の確認

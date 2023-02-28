@@ -42,7 +42,7 @@
     ```
 
 
-    The Docker container console shows that the module started.
+    Dockerコンテナコンソールに、モジュールが起動されたことが示されます。
 
     ```bash
     STARTED com.acme.n8k5.able.impl_1.0.0
@@ -59,7 +59,7 @@
     ```
 
 
-    The Docker container console shows that the module started.
+    Dockerコンテナコンソールに、モジュールが起動されたことが示されます。
 
     ```bash
     STARTED com.acme.n8k5.charlie.impl_1.0.0
@@ -76,7 +76,7 @@
     ```
 
 
-    In the Docker container console, confirm `N8K5Baker` sent a message, `N8K5CharlieMessageListener` received a message, and the `n8k5-baker-impl` module started.
+    Dockerコンテナコンソールで、`N8K5Baker` がメッセージを送信し、`N8K5CharlieMessageListener` がメッセージを受信し、`n8k5-baker-impl` モジュールが起動したことを確認してください。
 
    ```bash
    INFO  [pipe-start 2025][N8K5Baker:24] Sent message to acme/n8k5_able

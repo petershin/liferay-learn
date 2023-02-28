@@ -43,7 +43,7 @@ liferay
 
 ```
 include-and-override=/opt/liferay/portal-all.properties
-include-and-override=/opt/liferay/portal-env.properties。
+include-and-override=/opt/liferay/portal-env.properties
 ```
 
 そして、以下のような構造でプロパティを整理することができます：

@@ -12,7 +12,7 @@
 
 コンテンツタイプの開発者（Liferay DXPでは **アセット**）は、アセットの情報がどのようにインデックス付けされるか、およびその情報がどのように検索され、検索結果に返されるかについて、多くをコントロールします。 さらにコントロールするために、 **インデクサーポストプロセッサ** は、アセットのインデックス作成動作と、アセットを検索するための検索クエリの構築方法を変更できます。
 
-検索設定](../../search-administration-and-tuning.md)で行うほぼ全ての作業は、検索結果に影響を与えることに注意してください。特に[同義語セット](../ ../search-administration-and-tuning.md) と [Result Rankings](../../search-administration-and-tuning.md) は、検索結果に影響します。
+検索設定](../../search-administration-and-tuning.md)で行うほぼ全ての作業は、検索結果に影響を与えることに注意してください。特に[同義語セット](../../search-administration-and-tuning.md) と [Result Rankings](../../search-administration-and-tuning.md) は、検索結果に影響します。
 
 以下の概念は、設定の変更を開始する前に理解することが不可欠です。
 

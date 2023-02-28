@@ -26,7 +26,6 @@ import com.liferay.portal.search.searcher.SearchRequestBuilderFactory;
 import com.liferay.portal.search.searcher.SearchResponse;
 import com.liferay.portal.search.searcher.Searcher;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.osgi.service.component.annotations.Component;
@@ -81,8 +80,6 @@ public class B9F3OSGiCommands {
 
 		List<SearchHit> searchHitsList = searchHits.getSearchHits();
 
-		List<String> resultsList = new ArrayList<>(searchHitsList.size());
-
 		searchHitsList.forEach(
 			searchHit -> {
 				Document doc = searchHit.getDocument();
@@ -93,8 +90,6 @@ public class B9F3OSGiCommands {
 					StringBundler.concat(
 						"Document ", uid, " had a score of ",
 						searchHit.getScore()));
-
-				resultsList.add(uid);
 			});
 	}
 

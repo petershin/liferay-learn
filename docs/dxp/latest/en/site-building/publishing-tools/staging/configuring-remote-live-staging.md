@@ -61,7 +61,7 @@ If you haven't already, follow these steps to configure your Liferay servers for
    urlsIncludes=/api/liferay/do
    ```
 
-2. Restart both Liferay servers to implement your changes.
+1. Restart both Liferay servers to implement your changes.
 
 Once restarted, both servers are ready for Staging configuration.
 

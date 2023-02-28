@@ -111,20 +111,12 @@ This example consists of 7 main steps. First, you must annotate the class for OS
 
 After that, create a `ModelListener` for the `CommerceShipment` class. Next, review the `CommerceDefinitionTermContributor` interface. Finally, implement term contributors to resolve the wildcards for the new notification.
 
-- [Implementing a Custom Notification Type](#implementing-a-custom-notification-type)
-  - [Overview of a Notification Type](#overview-of-a-notification-type)
-  - [Deploying the Notification Type and Adding Language Keys](#deploying-the-notification-type-and-adding-language-keys)
-  - [How the Custom Notification Type Works](#how-the-custom-notification-type-works)
-    - [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
-    - [Review the CommerceNotificationType interface](#review-the-commercenotificationtype-interface)
-    - [Complete the Notification Type](#complete-the-notification-type)
-    - [Create a ModelListener for CommerceShipment](#create-a-modellistener-for-commerceshipment)
-    - [Review the CommerceDefinitionTermContributor interface](#review-the-commercedefinitiontermcontributor-interface)
-    - [Complete the Term Contributors](#complete-the-term-contributors)
-      - [Implement the getFilledTerm method for the Body and Subject](#implement-the-getfilledterm-method-for-the-body-and-subject)
-      - [Implement the getFilledTerm method for the Recipient](#implement-the-getfilledterm-method-for-the-recipient)
-      - [Implement the getLabel and getTerms methods](#implement-the-getlabel-and-getterms-methods)
-  - [Conclusion](#conclusion)
+* [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
+* [Review the CommerceNotificationType interface](#review-the-commercenotificationtype-interface)
+* [Complete the Notification Type](#complete-the-notification-type)
+* [Create a ModelListener for CommerceShipment](#create-a-modellistener-for-commerceshipment)
+* [Review the CommerceDefinitionTermContributor interface](#review-the-commercedefinitiontermcontributor-interface)
+* [Complete the Term Contributors](#complete-the-term-contributors)
 
 ### Annotate the class for OSGi Registration
 

@@ -5,10 +5,10 @@ uuid: 8be1370c-e992-44c5-bbf5-63c3016c54c7
 
 Add Groovy scripts to [your XML workflow definition](./crafting-xml-workflow-definitions.md) to inject logic and access Liferay's Java services in your workflow. Scripts run during workflow execution.
 
-- [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)
-- [Predefined Variables](#predefined-variables)
-- [Script Example](#script-example)
-- [Calling OSGi Services](#calling-osgi-services)
+* [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)
+* [Using Predefined Variables](#predefined-variables)
+* [Script Example](#script-example)
+* [Calling OSGi Services](#calling-osgi-services)
 
 ## Adding Scripts to Workflow Nodes
 

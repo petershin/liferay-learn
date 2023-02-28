@@ -21,7 +21,7 @@ Additionally, you can write a [script](../../developer-guide/using-the-script-en
 
 You can assign a workflow task to a _Resource Action_. Resource actions are operations performed by Users on an application or entity. For example, a User might have permission to update Message Boards Messages. This is called an UPDATE resource action, because the User can update the resource. If your workflow definition specifies the UPDATE action in an assignment, anyone with permission to update the asset type being processed in the workflow is assigned to the task. You can configure multiple assignments for a task.
 
-<!--To learn more about Resource Actions, refer to the developer tutorial on the permission system for a more detailed explanation.-->
+<!--To learn more about Resource Actions, refer to the developer tutorial on the [permission system](../../../../building-applications/permissions.md) for a more detailed explanation.-->
 
 Here's what the assignment looks like in the Source (Workflow XML) view:
 

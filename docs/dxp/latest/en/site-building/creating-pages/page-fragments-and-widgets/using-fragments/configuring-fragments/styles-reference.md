@@ -13,11 +13,11 @@ To access a fragment's Styles menu,
 
 1. Begin editing a page or template that supports fragments.
 
-2. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired fragment.
+1. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired fragment.
 
    Alternatively, click the desired fragment in the page or template.
 
-3. Click the *Styles* tab in the Page Elements side menu.
+1. Click the *Styles* tab in the Page Elements side menu.
 
 ![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
 

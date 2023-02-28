@@ -3,7 +3,7 @@ uuid: afb54da1-3e54-4d7b-9461-76b1d9e9aea0
 ---
 <!--- # Accounts
 
-If you have a [Salesforce data source](LINK), Analytics Cloud can import and analyze Salesforce account data. By combining Salesforce account data with data from other sources, Analytics Cloud presents a holistic view of the account and those in it.
+If you have a [Salesforce data source](../connecting-data-sources/adding-a-salesforce-data-source.md), Analytics Cloud can import and analyze Salesforce account data. By combining Salesforce account data with data from other sources, Analytics Cloud presents a holistic view of the account and those in it.
 
 To view account analytics, select Accounts from the left navigation panel. The accounts are displayed in a searchable table that lists the following data for each account:
 

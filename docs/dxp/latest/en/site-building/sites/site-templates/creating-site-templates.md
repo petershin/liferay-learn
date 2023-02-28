@@ -21,15 +21,15 @@ Follow these steps to create a Site Template:
 
    Only active templates are listed during [Site creation](../adding-a-site.md).
 
-2. Determine whether users can directly modify Pages inherited from this template.
+1. Determine whether users can directly modify Pages inherited from this template.
 
-3. Toggle *Ready for Propagation* to enable or disable automatic propagation.
+1. Toggle *Ready for Propagation* to enable or disable automatic propagation.
 
    See [Propagating Template Changes](./propagating-template-changes.md) to learn more about automatic propagation.
 
    ![Name and configure the Site Template.](./creating-site-templates/images/01.png)
 
-4. Click *Save*.
+1. Click *Save*.
 
 Once saved, you can select the template to begin editing it.
 

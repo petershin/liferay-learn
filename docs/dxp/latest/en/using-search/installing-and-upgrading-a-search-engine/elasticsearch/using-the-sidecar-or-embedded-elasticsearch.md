@@ -98,7 +98,6 @@ Here's a comparison between the embedded and sidecar Elasticsearch servers.
 | No special steps required for any app server | [Some app servers](#app-server-differences) require additional steps |
 
 ## Troubleshooting the Sidecar/Embedded Elasticsearch
-./elasticsearchBe Started
 
 These errors indicate problems with the Elasticsearch Sidecar installation at startup:
 

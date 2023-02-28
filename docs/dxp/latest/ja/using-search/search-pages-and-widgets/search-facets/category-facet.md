@@ -8,7 +8,7 @@ Category Facetは、検索クエリのキーワードに合致するカテゴリ
 
 Category Facet を設定するには、Facet の **Options** メニュー (![Options](../../../images/icon-app-options.png)) を開き、 **Configuration** をクリックします。
 
-![設定]オプションをクリックします。](./category-facet/images/03.png)
+![[設定]オプションをクリックします。](./category-facet/images/03.png)
 
 最初に表示されるのは「ディスプレイ設定」です。
 

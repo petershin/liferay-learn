@@ -19,8 +19,8 @@ public class Option_PATCH_ById {
 			Long.valueOf(System.getProperty("optionId")),
 			new Option() {
 				{
-               fieldType = Option.FieldType.RADIO;
-               key = "bar";
+					fieldType = Option.FieldType.RADIO;
+					key = "bar";
 					name = new HashMap<String, String>() {
 						{
 							put("en_US", "Bar");

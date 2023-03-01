@@ -24,8 +24,8 @@ The following code excerpt shows how to use this label to define drop zones with
    ```html
       <div class="tab-panel">
          [#list 0..configuration.numberOfTabs-1 as i]
-         <div aria-labelledby="tab${i+1}" class="tab-panel-item d-none" data-fragment-namespace="${fragmentEntryLinkNamespace}" id="tabPanel${i+1}" role="tabpanel" tabindex="0">
-            <lfr-drop-zone></lfr-drop-zone>
+         <div aria-labelledby="tab${i+1}-${fragmentEntryLinkNamespace}" class="d-none tab-panel-item" data-fragment-namespace="${fragmentEntryLinkNamespace}" id="tabPanel${i+1}-${fragmentEntryLinkNamespace}" role="tabpanel" tabindex="0">
+            <lfr-drop-zone data-lfr-drop-zone-id="${i+1}" data-lfr-priority="${i+1}"></lfr-drop-zone>
          </div>
          [/#list]
       </div>
@@ -37,9 +37,13 @@ This image shows the result in the Content Page editor sidebar:
 
 Once defined, you can drag and drop any Fragment or widget into the drop zone.
 
-```{tip}
-Drop zones do not have an ID. They are rendered in the order they are specified, and they cannot be moved manually. However, you can configure the order of [other elements in the Fragment](./setting-the-order-of-elements-in-a-fragment.md).
-```
+## Fragment Drop Zone IDs
+
+To ensure that fragments remain in their designated drop zones, drop zone IDs can be added using the `data-lfr-drop-zone-id` attribute. When drop zones are reordered or new drop zones are inserted between existing ones, using drop zone IDs ensures that fragments are kept in the original drop zone they were added to.
+
+If a drop zone that has a unique ID is deleted and then propagated, the dropzone and its content will be removed from the page. If a dropzone with the same ID is added back into the fragment, it will only retrieve the content of the dropzone in drafts that have not been published after the initial propagation. In published drafts, the dropzone will be considered a new dropzone.
+
+It is not mandatory to include drop zone IDs. Drop zones without an ID will continue to function as they did before and will be displayed in the order they are specified. If a fragment did not have IDs set in its drop zones, but new IDs are assigned to all of the drop zones, saved, and then propagated, the fragment should be propagated as before and, beginning with the initial propagation, the IDs should be retained.
 
 ## Additional Information
 

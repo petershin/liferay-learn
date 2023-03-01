@@ -9,12 +9,16 @@ The [Fragments Toolkit](../../developing-page-fragments/using-the-fragments-tool
 
 | Command | Description |
 | :--- | :--- |
+| `npm run add-collection` | Create a new collection to organize fragments. Referred as Fragment Sets in the platform. |
+| `npm run add-fragment` | Add a component, input, or React fragment to a new or existing collection. |
+| `npm run add-fragment-composition` | Add a new fragment composition to a new or existing collection. |
+| `npm run add-page-template` | Creates a new display page template, page template, or master page. |
+| `npm run build` | Compiles `.sass` or `.scss` file specified in `fragment.json`'s `cssPath` key, storing the compiled CSS code in `build/liferay-fragments`. Only compiled CSS is stored and no SCSS is saved in the database. External fragments should be stored in an external repository. |
+| `npm run compress` | Create a `.zip` file that can be manually imported into Portal. |
 | `npm run export` | Get collections and fragments from a running server |
 | `npm run import` | Send the collections and fragments from your current project to a running server. If your Fragment's configuration JSON (if available) is invalid, the import fails and provides an error message. |
-| `npm run import:watch` | Automatically import Collections and Fragments into Portal as they are created or modified |
-| `npm run preview` | Preview how a Fragment will look when it's imported. This renders a Fragment on a specified Liferay server without importing it. When changes are made to the fragment while it's previewed, changes are auto reloaded to rapidly display updates. Note, this is available for Liferay DXP
-  7.2 SP1+ and Liferay Portal 7.2 GA2+. You must install the [OAuth 2](https://web.liferay.com/marketplace/-/mp/application/109571986) plugin in your portal instance for this command to work properly. |
-| `npm run compress` | Create a `.zip` file that can be manually imported into Portal |
+| `npm run import:watch` | Automatically import Collections and Fragments into Portal as they are created or modified. |
+| `npm run preview` | Preview a Fragment before importing. Changes made to the fragment are auto-reloaded to display updates. Note that this feature is available for Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+, and requires the installation of the [OAuth 2](https://web.liferay.com/marketplace/-/mp/application/109571986) plugin in your portal instance. |
 
 ```{note}
 You can see all of the available tasks inside the `scripts` section in the Fragment Set project's `package.json`.

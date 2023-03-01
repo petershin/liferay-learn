@@ -183,7 +183,7 @@ Each Fragment Set uses this structure:
 
     * `configuration.json`(optional): a JSON file that defines the Fragment's configuration. See [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md) for more information.
 
-    * `fragment.json`: a text file that describes the Fragment.
+    * `fragment.json`: a JSON file that describes the Fragment.
 
         ```json
         {
@@ -193,16 +193,27 @@ Each Fragment Set uses this structure:
             "jsPath": "main.js",
             "name": "Fragment name",
             "type": "[component|react]"
+
+            // This configuration is optional and can be removed
+            "sass": {
+                "loadPaths": [
+                    "../../../node_modules"
+                ]
+            }
         }
         ```
 
-      Update the `*Path` properties with the names of your CSS, configuration, HTML, and JavaScript files.
+      Update the `*Path` properties in `fragment.json` with the names of your CSS, configuration, HTML, and JavaScript files.
 
-    * `index.html`: the HTML source for the Fragment.
+        * `styles.css`: the CSS source for the Fragment.
 
-    * `main.js`: the JavaScript source for the Fragment.
+        * `index.html`: the HTML source for the Fragment.
 
-    * `styles.css`: the CSS source for the Fragment.
+        * `main.js`: the JavaScript source for the Fragment.
+
+        ```{note}
+        In addition to pointing to a `.css` file, the `cssPath` key can also specify a `.scss` or `.sass` file.  You can also use external dependencies by adding `sass: {loadPaths:[]}}` in `fragment.json`.
+        ```
 
 * `resources/` (optional): a folder containing any additional images or files the Fragments need. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
 

@@ -23,17 +23,17 @@ Auto-scaling is now enabled, up to the default maximum of ten instances.
 
 ## Set the Maximum Number of Instances
 
-Marcus knows that traffic for the site at peak hours might require more than the default ten Liferay instances. He chooses to configure a maximum of 15 instances that auto-scaling can scale up to.
+Marcus knows that traffic for the site at peak hours might require more than the default ten Liferay instances. He chooses to configure a maximum of twelve instances that auto-scaling can scale up to.
 
 Set the maximum number of instances via the `maxInstances` property in your Liferay service's `LCP.json` file:
 
 1. In your project repository, navigate to the `liferay/` directory and open the `LCP.json` file.
 
-1. Set the `maxInstances` value to 15, within the `autoscale` JSON object:
+1. Set the `maxInstances` value to 12, within the `autoscale` JSON object:
 
     ```json
     "autoscale": {
-        "maxInstances": 15
+        "maxInstances": 12
     }
     ```
 
@@ -44,7 +44,7 @@ Set the maximum number of instances via the `maxInstances` property in your Life
     ```
 
     ```bash
-    git commit -m "Increase the maximum number of instances to 15."
+    git commit -m "Increase the maximum number of instances to 12."
     ```
 
     ```bash
@@ -73,7 +73,7 @@ Deploy the updated configuration to your production environment.
 
 1. Click *Deploy Build*.
 
-Once your services restart, auto-scaling is enabled, up to a maximum of 15 instances.
+Once your services restart, auto-scaling is enabled, up to a maximum of 12 instances.
 
 Next, you'll enable Dynatrace integration to keep track of your project's usage metrics.
 

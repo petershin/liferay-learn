@@ -120,7 +120,7 @@ In a larger B2B context with multiple accounts under the same entity, it may mak
 
    Lily Lewis is now an account manager for all accounts in the Marvelous Markets organization. The account manager can take actions, such as placing orders on behalf of account users. 
 
-Congratulations! You have completed this module on users, accounts, organizations, and permissions. The next module is all about [User Data]().
+Congratulations! You have completed this module on users, accounts, organizations, and permissions. 
 
 ## Relevant Concepts
 - [Accounts](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts.html)

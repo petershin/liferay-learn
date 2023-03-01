@@ -7,7 +7,7 @@ Use Liferay to model Delectable Bonsai's organizational hierarchy. See [Understa
 
 ## Parent and Child Organizations
 
-1. Log into your Liferay instance with Kyle Klein's credentials. See [Creating an Administrator Account](../users-accounts-organizations.md#creating-an-administrator-account) if you still need to create his account. 
+1. Log into your Liferay instance with Kyle Klein's credentials. 
 
    * Email address: `kyle@delectablebonsai.com`
    * Password: `learn`
@@ -70,7 +70,7 @@ Next, create an organization site for the Sales & Marketing department to host a
 
 1. The Sales & Marketing organization site now has a page with Sales & Marketing blog postings for anyone that is part of the child organization to view. See [Getting Started with Blogs](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/getting-started-with-blogs.html) to learn more about blogs and blog entries.
 
-The next step is creating and managing users. See [Managing Users](./managing-users.md).
+The next step is to assign different [roles and permissions](./setting-roles-and-permissions.md) to each user.
 
 ## Relevant Concepts
 - [Understanding Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/understanding-organizations.html)

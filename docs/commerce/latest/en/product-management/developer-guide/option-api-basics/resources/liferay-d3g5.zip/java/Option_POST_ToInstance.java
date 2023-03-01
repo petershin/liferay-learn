@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Option_POST_ToInstance {
 
 	/**
-	 * java -classpath .:* -DcatalogId=1234 Option_POST_ToInstance
+	 * java -classpath .:* Option_POST_ToInstance
 	 */
 	public static void main(String[] args) throws Exception {
 		OptionResource.Builder builder = OptionResource.builder();

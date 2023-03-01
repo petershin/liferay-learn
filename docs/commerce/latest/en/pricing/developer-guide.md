@@ -1,6 +1,7 @@
 ---
 toc:
   - ./developer-guide/price-list-api-basics.md
+  - ./developer-guide/discount-api-basics.md
 uuid: 8a1fadec-1132-4cb2-8fca-3de56050d7bd
 ---
 # Developer Guide
@@ -8,6 +9,7 @@ uuid: 8a1fadec-1132-4cb2-8fca-3de56050d7bd
 ```{toctree}
 :maxdepth: 1
 developer-guide/price-list-api-basics.md
+developer-guide/discount-api-basics.md
 ```
 
 ::::{grid} 2
@@ -15,5 +17,9 @@ developer-guide/price-list-api-basics.md
 
 :::{grid-item-card} Price List API Basics
 :link: ./developer-guide/price-list-api-basics.md
+:::
+
+:::{grid-item-card} Discount API Basics
+:link: ./developer-guide/discount-api-basics.md
 :::
 ::::

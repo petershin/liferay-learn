@@ -21,11 +21,11 @@ public class Term_POST_ToInstance {
 					{
 						label = new HashMap<String, String>() {
 							{
-								put("en_US", "Bar");
+								put("en_US", "Foo");
 							}
 						};
-						name = "bar";
-						priority = 1D;
+						name = "foo";
+						priority = 0D;
 						type = "payment-terms";
 					}
 				}));

@@ -132,7 +132,7 @@ This class invokes the REST service using only three lines of code:
 | `WarehouseResource warehouseResource = builder.authentication(...).build();` | Use basic authentication and generate a `WarehouseResource` service instance. |
 | `warehouseResource.postWarehouse(...);`                                      | Call the `warehouseResource.postWarehouse` method and pass the data to post.  |
 
-The project includes the `com.liferay.headless.commerce.admin.inventory.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
+The project includes the `com.liferay.headless.commerce.admin.inventory.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API Explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
 ```{note}
 The `main` method's comment demonstrates running the class.
@@ -184,7 +184,7 @@ The instance's `Warehouse` objects are formatted in JSON.
 
 ### Filtering, Paginating, and Sorting Warehouses
 
-This API also accepts parameters to filter, paginate, and sort the warehouses. See the [`getWarehousesPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-inventory-client/src/main/java/com/liferay/headless/commerce/admin/inventory/client/resource/v1_0/WarehouseResource.java#L43-#L45) method for more information. You can use the following `Warehouse` fields in your queries to filter, and sort the results.
+This API also accepts parameters to filter, paginate, and sort the warehouses. See the [`getWarehousesPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-inventory-client/src/main/java/com/liferay/headless/commerce/admin/inventory/client/resource/v1_0/WarehouseResource.java#L43-#L45) method for more information. You can use the following `Warehouse` fields in your queries to filter and sort the results.
 
 * active
 * city
@@ -213,7 +213,7 @@ Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-del
 Get a specific warehouse with cURL or Java `get` commands. Replace `1234` with the warehouse's ID.
 
 ```{tip}
-Use `Warehouses_GET_FromInstance.[java|sh]` to get a list of all warehouses, and note the `id` of the warehouse you want specifically.
+Use `Warehouses_GET_FromInstance.[java|sh]` to get a list of all warehouses and note the `id` of the warehouse you want specifically.
 ```
 
 ### Warehouse_GET_ById.sh

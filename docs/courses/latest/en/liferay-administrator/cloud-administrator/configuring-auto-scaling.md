@@ -3,7 +3,7 @@ uuid: 31cea680-b175-419d-b30f-d17851d3c89e
 ---
 # Configuring Auto-scaling
 
-Now that Marcus has enabled clustering with a minimum number of nodes, he can set up auto-scaling for the production environment for better flexibility handling site traffic.
+Now that Marcus has enabled clustering with a minimum number of nodes, he can set up auto-scaling for the production environment for better flexibility handling site traffic in peak hours.
 
 ## Enable Auto-scaling in the Console
 

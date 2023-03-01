@@ -3,7 +3,7 @@ uuid: c1dd2bde-e995-4b03-88e1-8e15adeb7b17
 ---
 # Setting Up Clustering for the Liferay Service
 
-Marcus knows that their website needs clustering for the Liferay service so that it can handle higher traffic more reliably. He sets up the initial clustering configuration for the project's production environment.
+Marcus knows that the Delectable Bonsai website needs clustering for the Liferay service so that it can handle higher traffic more reliably. He sets up the initial clustering configuration for the project's production environment.
 
 ## Set the Clustering Properties in LCP.json
 

@@ -3,7 +3,7 @@ uuid: b55694af-20da-4436-a2ed-429b6bfb9c59
 ---
 # Setting Up the GitHub Repository
 
-Before configuring the Delectable Bonsai project on Liferay Cloud, Marcus takes some time to set up the project's Git repository to make sure he can push and deploy code and configurations.
+Before configuring the Delectable Bonsai project on Liferay Cloud, Marcus takes some time to set up the project's Git repository to make sure he can push and deploy configurations as an administrator. Kyle waits for him to set up the GitHub repository and creates his own fork, too, so that he can deploy configurations or code changes as well.
 
 Set up the repository and complete your first push to ensure it's working.
 

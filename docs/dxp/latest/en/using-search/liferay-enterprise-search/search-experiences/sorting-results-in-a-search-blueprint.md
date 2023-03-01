@@ -1,16 +1,22 @@
-----
+---
 uuid: b6d54fc8-344a-4595-954b-10be35f1ce47
-----
+---
 # Sorting Results in a Search Blueprint
 
-Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-configuration) to a search blueprint to control the order of search results. Go to the Global Menu &rarr; Applications &rarr; Blueprints. Add a new blueprint or open an existing one, then click the _Configuration_ tab. Enter JSON into the Sort Configuration text area.
+Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-configuration) to search blueprints to control the order of search results:
+
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to *Applications* tab, and click *Blueprints*.
+
+1. [Create a blueprint](./creating-and-managing-search-blueprints.md) or open an existing one.
+
+1. Click the *Configuration* tab and enter JSON into the Sort Configuration text area.
 
 ![Enter JSON to sort a blueprint's results.](./sorting-results-in-a-search-blueprint/images/01.png)
 
 ```{important}
-* Do not use both the [Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorting on a search page. Consistent behavior cannot be guaranteed.
+* Avoid using both the [Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorting on a search page. Liferay cannot guarantee consistent behavior.
 
-* The examples here are simple. A robust sort configuration must consider all scenarios, such as what happens when a search result document does not contain the sort field. In that case, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
+* The following examples are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
 
    See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html) for more details.
 ```
@@ -34,14 +40,14 @@ A sort configuration is a JSON object with a `sorts` array defining the fields t
 
 * Instead of entering the language ID directly, use the `${context.language_id}` variable to auto-populate the 4-letter language code (e.g., `en_US`) with the current language.
 
-* To see a document's fields, click _Preview_ in the blueprint's toolbar, execute a search, and expand the fields for the result.
+* To see a document's fields, click _Preview_ in the blueprint's toolbar, execute a search, and expand the fields for their results.
 ```
 
 ## Example 2: Sorting by a Structure Field
 
 [Web Content Structure](../../../content-authoring-and-management/web-content/web-content-structures.md) fields are indexed as nested fields in the search engine document.
 
-When viewing the document, you can see the nested properties in the `ddmFieldArray`:
+When viewing the document, nested properties appear under `ddmFieldArray`:
 
 ```json
 "ddmFieldArray" : [
@@ -51,12 +57,13 @@ When viewing the document, you can see the nested properties in the `ddmFieldArr
             "ddmFieldValueKeyword_en_US" : "true",
             "ddmFieldValueKeyword_en_US_String_sortable" : "true"
           }
+]
 ```
 
 ```{tip}
 To view the document with its nested fields,
 
-1. Enable fetching the document `_source`. Click the blueprint's _Configuration_ tab, then enter this JSON into the Advanced Configuration box:
+1. Enable fetching the document `_source` by going to the blueprint's _Configuration_ tab and entering this JSON into the Advanced Configuration box:
 
     ```json
     {
@@ -66,7 +73,7 @@ To view the document with its nested fields,
     }
     ```
 
-1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields.
+1. Click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields.
 ```
 
 For a nested field, the sort configuration's field declaration is more complicated:
@@ -97,7 +104,7 @@ For a nested field, the sort configuration's field declaration is more complicat
 
 [Object](../../../building-applications/objects.md) entry fields are indexed as nested fields in the search engine document.
 
-When viewing the document, you can see the nested properties of an Object in the `nestedFieldArray`:
+When viewing the document, an object's nested properties appear under `nestedFieldArray`:
 
 ```json
 "nestedFieldArray" : [
@@ -106,12 +113,13 @@ When viewing the document, you can see the nested properties of an Object in the
               "valueFieldName": "value_integer",
               "value_integer": "8"
             }
+]
 ```
 
 ```{tip}
 To view the document with its nested fields,
 
-1. Enable fetching the document `_source`. Click the blueprint's _Configuration_ tab, then enter this JSON into the Advanced Configuration box:
+1. Enable fetching the document `_source` by going to the blueprint's _Configuration_ tab and entering this JSON into the Advanced Configuration box:
 
     ```json
     {
@@ -121,10 +129,10 @@ To view the document with its nested fields,
     }
     ```
 
-1. Now click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields.
+1. Click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields.
 ```
 
-Here's an example sort by an integer object field:
+This example sorts by an object integer field:
 
 ```json
 {
@@ -148,5 +156,5 @@ Here's an example sort by an integer object field:
 
 ## Additional Information
 
-- [Search Blueprints Configuration Reference](search-blueprints-configuration-reference.md)
-- [Sorting Search Results](../../search-pages-and-widgets/search-results/sorting-search-results.md)
+* [Search Blueprints Configuration Reference](search-blueprints-configuration-reference.md)
+* [Sorting Search Results](../../search-pages-and-widgets/search-results/sorting-search-results.md)

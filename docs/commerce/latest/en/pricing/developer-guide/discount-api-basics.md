@@ -74,15 +74,18 @@ Once Liferay is running,
 
    ![Confirm that a new discount was added.](./discount-api-basics/images/01.png)
 
-You can use a coupon code by setting `useCouponCode` to `true` and setting an appropriate value in the `couponCode` field. To restrict the usage of a coupon code, refer the table below.
+<!--Maybe this coupon code stuff is a standalone section? -->
+To enable a coupon code, set `useCouponCode` to `true` and set a value in the `couponCode` field. To restrict the coupon code's usage, use the settings described in the table below.
 
-| Type                                      | Setting                                                                                                                                                   | Description                                                                                       |
-| :---------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| Restrict by number of uses                | Set `limitationType` to `limited for total` and `limitationTimes` to an arbitrary integer, for instance, 5.                                               | You can use the coupon code up to 5 times.                                                        |
-| Restrict by number of uses per account    | Set `limitationType` to `limited for account` and `limitationTimesPerAccount` to an arbitrary integer, for instance 5.                                    | Each account can use the coupon code up to 5 times                                                |
-| Restrict by number of uses and by account | Set `limitationType` to `limited for account and total`, `limitationTimesPerAccount` and `limitationTimes` to an arbitrary integer, for instance 2 and 5. | Each account can use the coupon code up to 2 times, with the total coupon code usage capped at 5. |
+| Restriction Type              | Settings | Description |
+| :---------------------------- | :------- | :---------- |
+| Number of uses                | `"limitationType" : "limited for total"`<br />`"limitationTimes" : 5` (any integer) | The coupon code can be used a total of 5 times. |
+| Number of uses per account    | `"limitationType": "limited for account"`<br />`"limitationTimesPerAccount" : 5` (any integer) | Each account can use the coupon code up to 5 times. |
+| Number of uses and by account | `"limitationType" : "limited for account and total"`<br />`"limitationTimesPerAccount": 2` (any integer)<br />`"limitationTimes" : 5` (any integer) | Each account can use the coupon code up to 2 times, with total usage capped at 5. |
 
-1. Alternatively, call the REST service using the Java client. Navigate into the `java` folder and compile the source files:
+Alternatively, call the REST service using the Java client. 
+
+1. Navigate into the `java` folder and compile the source files:
 
    ```bash
    javac -classpath .:* *.java
@@ -104,13 +107,13 @@ The `Discount_POST_ToInstance.sh` script calls the REST service with a cURL comm
 
 Here are the command's arguments:
 
-| Arguments                                                                                                                            | Description                                              |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
-| `-H "Content-Type: application/json"`                                                                                                | Set the request body format to JSON.                     |
-| `-X POST`                                                                                                                            | Set the HTTP method to invoke at the specified endpoint. |
-| `"http://localhost:8080/o/headless-commerce-admin-pricing/v2.0/discounts"`                                                           | Specify the REST service endpoint.                       |
-| `-d "{\"level\": \"L1\", \"limitationType\": \"unlimited\", \"target\": \"products\", \"title\": \"Foo\", \"usePercentage\": true}"` | Enter the data to post.                                  |
-| `-u "test@liferay.com:learn"`                                                                                                        | Enter basic authentication credentials.                  |
+| Arguments                                                                | Description |
+| :----------------------------------------------------------------------- | :--- |
+| `-H "Content-Type: application/json"`                                      | Set the request body format to JSON.|
+| `-X POST`                                                                  | Set the HTTP method to invoke at the specified endpoint. |
+| `"http://localhost:8080/o/headless-commerce-admin-pricing/v2.0/discounts"` | Specify the REST service endpoint. |
+| `-d "{\"level\": \"L1\", \"limitationType\": \"unlimited\", \"target\": \"products\", \"title\": \"Foo\", \"usePercentage\": true}"` | Enter the data to post. |
+| `-u "test@liferay.com:learn"`                                              | Enter basic authentication credentials.  |
 
 ```{note}
 Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
@@ -136,7 +139,7 @@ This class invokes the REST service using only three lines of code:
 | `DiscountResource discountResource = builder.authentication(...).build();` | Use basic authentication and generate a `DiscountResource` service instance. |
 | `discountResource.postDiscount(...);`                                      | Call the `discountResource.postDiscount` method and pass the data to post.   |
 
-Note that the project includes the `com.liferay.headless.commerce.admin.pricing.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
+Note that the project includes the `com.liferay.headless.commerce.admin.pricing.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API Explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
 ```{note}
 The `main` method's comment demonstrates running the class.

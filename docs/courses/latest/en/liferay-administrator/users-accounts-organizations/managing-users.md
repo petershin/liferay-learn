@@ -68,36 +68,6 @@ Create an account for the IT manager.
 
    ![The list of users includes Kyle, Marcus, and the default Test account.](./managing-users/images/01.png)
 
-## Assigning Existing Users to Organizations
-
-The IT manager and IT staff are not part of any organization. Edit their user accounts to assign them to an organization.
-
-1. From the list of user accounts, click on _Kyle Klein_. Click _Organizations_ in the left navigation.
-
-1. Click _Select_ and a new window pops up. Click _Choose_ for the IT organization. Click _Save_.
-
-1. Follow the same steps to add Marcus Morgan to the IT organization.
-
-## Adding New Users to Organizations
-
-New users can also be added within organizations.
-
-1. Navigate to the list of organizations. 
-
-   * Click _Delectable Bonsai_. 
-   * Click _Options_ (![Options icon](../../images/icon-actions.png)) for the Sales & Marketing child organization. 
-   * Click _Add User_.
-
-1. Add the following user:
-
-   * Screen Name: `lily`
-   * Email Address: `lily@delectablebonsai.com`
-   * First Name: `Lily`
-   * Last Name: `Lewis`
-   * Job Title: `Account Manager`
-
-   Click _Save_ at the bottom of the page.
-
 The next step is creating [organizations](./users-accounts-organizations/creating-organizations.md). 
 
 ## Relevant Concepts

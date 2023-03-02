@@ -3,7 +3,7 @@ uuid: 9c853de5-3865-4ea6-9f69-7b6cac71a275
 ---
 # Working with Accounts
 
-Accounts in Liferay can represent individual customers in a B2C (i.e. business to consumer) context. Or they can represent a B2B (business to business) context with multiple users. See [Accounts](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts.html) to learn more. 
+Accounts in Liferay can represent individual customers in a B2C (i.e. business to consumer) context. Or they can represent a B2B (i.e. business to business) context with multiple users. See [Accounts](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts.html) to learn more. 
 
 Marvelous Markets operate supermarkets across the country. Each store purchases maple syrup from Delectable Bonsai. The example below shows how to set up and account for one of the markets and assign an account user.
 
@@ -82,7 +82,7 @@ Use account groups to help organize and manage multiple accounts. For example, D
 
    In this way, different Marvelous markets in other locations can be added to the group.
 
-In a larger B2B context with multiple accounts under the same entity, it may make sense to create a separate organization. Then you can assign an account manager role over the whole organization. For example, with many locations, all Marvelous Market accounts can be placed under an organization. Then someone from Delectable Bonsai can be assigned an account manager role to oversee all the accounts.
+In a larger B2B context with multiple accounts under the same entity, it may make sense to create a dedicated organization. Then you can assign an account manager role over the whole organization. For example, with many locations, all Marvelous Market accounts can be placed under an organization. Then someone from Delectable Bonsai can be assigned an account manager role to oversee all the accounts.
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. 
 

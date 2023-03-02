@@ -1,6 +1,6 @@
 ---
 toc:
-- ./users-accounts-organizations/creating-users.md
+- ./users-accounts-organizations/managing-users.md
 - ./users-accounts-organizations/creating-organizations.md
 - ./users-accounts-organizations/setting-roles-and-permissions.md
 - ./users-accounts-organizations/working-with-accounts.md
@@ -11,8 +11,8 @@ uuid: e300d45a-acd8-4206-8f7c-8f49ec3cc1f6
 ```{toctree}
 :maxdepth: 3
 
-users-accounts-organizations/creating-organizations.md
 users-accounts-organizations/managing-users.md
+users-accounts-organizations/creating-organizations.md
 users-accounts-organizations/setting-roles-and-permissions.md
 users-accounts-organizations/working-with-accounts.md
 ```
@@ -33,4 +33,4 @@ You'll create four user accounts assigned across two different organizations. Us
 
 The next step is creating the users. Ready? 
 
-[Let's Go!](./users-accounts-organizations/creating-users.md)
+[Let's Go!](./users-accounts-organizations/managing-users.md)

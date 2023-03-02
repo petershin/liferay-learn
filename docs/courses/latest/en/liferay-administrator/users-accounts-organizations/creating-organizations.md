@@ -7,12 +7,7 @@ Use Liferay to model Delectable Bonsai's organizational hierarchy. See [Understa
 
 ## Parent and Child Organizations
 
-1. Log into your Liferay instance with Kyle Klein's credentials. 
-
-   * Email address: `kyle@delectablebonsai.com`
-   * Password: `learn`
-
-2. Create a top level organization. 
+1. Create a top level organization. 
 
    * Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. 
    * Click the _Organizations_ tab. 
@@ -33,6 +28,39 @@ Use Liferay to model Delectable Bonsai's organizational hierarchy. See [Understa
 1. The organizational hierarchy should look like the image below.
 
    ![The parent organization has two child organizations.](./creating-organizations/images/01.png)
+
+## Assigning Existing Users to Organizations
+
+The IT manager and IT staff are not part of any organization. Edit their user accounts to assign them to the IT organization.
+
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. 
+
+1. From the list of user accounts, click on _Kyle Klein_. Click _Organizations_ in the left navigation.
+
+1. Click _Select_ and a new window pops up. Click _Choose_ for the IT organization. Click _Save_.
+
+1. Follow the same steps to add Marcus Morgan to the IT organization.
+
+## Adding New Users to Organizations
+
+New users can also be added within organizations.
+
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_.
+
+   * Click the _Organizations_ tab.
+   * Click _Delectable Bonsai_. 
+   * Click _Options_ (![Options icon](../../images/icon-actions.png)) for the Sales & Marketing child organization. 
+   * Click _Add User_.
+
+1. Add the following user:
+
+   * Screen Name: `lily`
+   * Email Address: `lily@delectablebonsai.com`
+   * First Name: `Lily`
+   * Last Name: `Lewis`
+   * Job Title: `Account Manager`
+
+   Click _Save_ at the bottom of the page.
 
 ## Organizational Sites
 

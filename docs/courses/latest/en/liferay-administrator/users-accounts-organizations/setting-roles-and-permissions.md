@@ -19,7 +19,7 @@ Give the IT manager the administrator role.
 
    Marcus now has the administrator role.
 
-Note, you can also assign users roles from the edit user page (e.g. See [Creating an Administrator Account](../users-accounts-organizations.md#creating-an-administrator-account) for Kyle Klein.).
+Note, you can also assign users roles from the edit user page (e.g. See [Creating Users](./managing-users.md#creating-users) for Kyle Klein.).
 
 ## Creating Roles
 

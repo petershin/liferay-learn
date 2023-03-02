@@ -50,7 +50,7 @@ Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) an
 
 ## Liferay Commerce 2.1 and Below
 
-Liferay Commerce 2.1 configurations are divided into several locations in the Liferay *Product Menu*. The Commerce *Control Panel* drop down contains configurations and settings that apply *globally* to the Liferay Commerce installation. The Commerce *Site Menu* drop down contains configurations and settings that are scoped to a specific store site.
+Liferay Commerce 2.1 configurations are divided into several locations in the Liferay *Product Menu*. The Commerce *Control Panel* drop-down contains configurations and settings that apply *globally* to the Liferay Commerce installation. The Commerce *Site Menu* drop-down contains configurations and settings that are scoped to a specific store site.
 
 ### Commerce Control Panel
 

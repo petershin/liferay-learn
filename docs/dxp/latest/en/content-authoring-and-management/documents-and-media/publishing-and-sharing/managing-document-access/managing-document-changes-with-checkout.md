@@ -11,11 +11,11 @@ Follow these steps to checkout and then check-in a Document Library file:
 
     ![The file on the right in this image is checked out.](./managing-document-changes-with-checkout/images/01.png)
 
-2. Download the file by clicking its Actions icon (![Actions](../../../../images/icon-actions.png)) &rarr; *Download*.
-3. Edit the file locally.
-4. Return to the Documents and Media Library and click the file's Actions icon (![Actions](../../../../images/icon-actions.png)) &rarr; *Edit*. The file's edit screen appears.
-5. From the file's Edit screen, select the edited local file for upload.
-6. Click *Save and Check In*. In the pop-up that appears, select whether your change is a major or minor version, add any version notes that you need, and click *Save*.
+1. Download the file by clicking its Actions icon (![Actions](../../../../images/icon-actions.png)) &rarr; *Download*.
+1. Edit the file locally.
+1. Return to the Documents and Media Library and click the file's Actions icon (![Actions](../../../../images/icon-actions.png)) &rarr; *Edit*. The file's edit screen appears.
+1. From the file's Edit screen, select the edited local file for upload.
+1. Click *Save and Check In*. In the pop-up that appears, select whether your change is a major or minor version, add any version notes that you need, and click *Save*.
 
 ```{tip}
 If you edit a file without checking it out, the file's edit screen displays a toggle for *Customize the Version Number Increment and Describe My Changes*. Setting this to *YES* lets you specify the version increment's type and description.
@@ -43,6 +43,10 @@ Each file version has an Actions menu (![Actions](../../../../images/icon-action
 ## Using WebDAV
 
 You can manage files using WebDAV and continue to track version history. To learn more, see [Accessing Documents with WebDAV](../accessing-documents-with-webdav.md).
+
+## Using Liferay Sync
+
+You can manage files using Liferay Sync and continue to track version history. To learn more, see [Setting up on DXP](../liferay-sync/setting-up-on-dxp/installation.md).
 
 ## Additional Information
 

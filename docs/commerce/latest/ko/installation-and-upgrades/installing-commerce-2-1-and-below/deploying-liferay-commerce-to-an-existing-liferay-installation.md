@@ -1,13 +1,17 @@
+---
+uuid: 468e4ed9-1296-40e1-a69b-8f04b1148a11
+---
+
 # 기존 Liferay 설치에 Liferay Commerce 배포
 
 이 문서에서는 Liferay Commerce를 기존 Liferay DXP 인스턴스에 배포하는 방법을 설명합니다. Liferay Commerce는 Liferay DXP를 기반으로 구축되었기 때문에 기존 DXP 7.1 또는 7.2 인스턴스를 실행해야 합니다. 이 가이드를 따르기 전에 시스템 요구 사항을 검토하십시오.
 
 Liferay Commerce 사용을 시작하려면:
 
-1. 최신 Liferay Commerce `LPKG`을 다운로드하십시오.
-    * 기업 가입자는 [도움말 센터](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)에서 최신 `LPKG` 을 다운로드할 수 있습니다.
+1. 최신 Liferay Commerce `LPKG`다운로드하십시오.
+    * 기업 가입자는 [도움말 센터](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)에서 최신 `LPKG` 다운로드할 수 있습니다.
       * 가입자는 또한 Liferay Commerce에 대한 주문 번호 또는 활성화 키가 필요합니다. [프록시 서버를 통해 Marketplace 앱 활성화](https://help.liferay.com/hc/en-us/articles/360018427391)을 참조하십시오.
-    * 최신 오픈 소스 `LPKG` 은 [Liferay Commerce Community 다운로드 페이지](https://www.liferay.com/downloads-community)에서 얻을 수 있습니다.
+    * 최신 오픈 소스 `LPKG` [Liferay Commerce Community 다운로드 페이지](https://www.liferay.com/downloads-community)에서 얻을 수 있습니다.
 
 1. `LPKG` 을 `${liferay.home}/deploy` 폴더에 배포합니다.
 
@@ -38,7 +42,7 @@ Liferay Commerce 사용을 시작하려면:
     ```
 
 1. 처음 시작할 때 재색인을 실행하여 Liferay Commerce 기본 콘텐츠를 채웁니다. _제어판_ &rarr; _구성_ &rarr; _검색_으로 이동합니다.
-1. _모든 검색 인덱스 재인덱싱_옆에 있는 _실행_ 을 클릭합니다.
+1. _모든 검색 인덱스 재인덱싱_옆에 있는 _실행_ 클릭합니다.
 
 Liferay Commerce가 배포되었으며 사용할 준비가 되었습니다. 스토어 관리자는 스토어프론트 구축 및 카탈로그 채우기를 시작할 수 있습니다.
 

@@ -1,3 +1,7 @@
+---
+uuid: 012a0e1d-613e-4c2a-9412-572a69030d8e
+---
+
 # 클레이 버튼
 
 버튼은 여러 가지 유형과 변형이 있습니다. 이 튜토리얼은 Clay taglibs로 생성할 수 있는 버튼의 다양한 스타일과 변형을 다룹니다.
@@ -18,10 +22,10 @@
 
 ```jsp
 <div class="col">
-    <clay:button label="Secondary" style="secondary" />
+    <clay:button displayType="secondary" label="Secondary" />
 </div>
 <div class="col">
-    <clay:button ariaLabel="Wiki" icon="wiki" style="secondary" />
+    <clay:button ariaLabel="Wiki" displayType="secondary" icon="wiki" />
 </div>
 ```
 
@@ -31,10 +35,10 @@
 
 ```jsp
 <div class="col">
-    <clay:button label="Borderless" style="borderless" />
+    <clay:button displayType="borderless" label="Borderless" />
 </div>
 <div class="col">
-    <clay:button ariaLabel="Page Template" icon="page-template" style="borderless" />
+    <clay:button ariaLabel="Page Template" displayType="borderless" icon="page-template" />
 </div>
 ```
 
@@ -44,10 +48,10 @@
 
 ```jsp
 <div class="col">
-    <clay:button label="Link" style="link" />
+    <clay:button displayType="link" label="Link" />
 </div>
 <div class="col">
-    <clay:button ariaLabel="Add Role" icon="add-role" style="link" />
+    <clay:button ariaLabel="Add Role" displayType="link" icon="add-role" />
 </div>
 ```
 
@@ -87,7 +91,7 @@
 고정폭 텍스트가 있는 버튼:
 
 ```jsp
-<clay:button icon="indent-less" monospaced="<%= true %>" style="secondary" />
+<clay:button displayType="secondary" icon="indent-less" monospaced="<%= true %>" />
 ```
 
 ![버튼은 모노스페이스 텍스트를 표시할 수 있습니다.](./clay-buttons/images/08.png)
@@ -103,7 +107,7 @@
 더하기 버튼:
 
 ```jsp
-<clay:button icon="plus" monospaced="<%= true %>" style="secondary" />
+<clay:button displayType="secondary" icon="plus" monospaced="<%= true %>" />
 ```
 
 ![더하기 버튼은 앱에서 작업을 추가하는 데 사용됩니다.](./clay-buttons/images/10.png)
@@ -111,7 +115,7 @@
 작업 버튼:
 
 ```jsp
-<clay:button icon="ellipsis-v" monospaced="<%= true %>" style="borderless" />
+<clay:button displayType="borderless" icon="ellipsis-v" monospaced="<%= true %>" />
  ```
 
 ![작업 버튼은 작업 메뉴를 표시하는 데 사용됩니다.](./clay-buttons/images/11.png)

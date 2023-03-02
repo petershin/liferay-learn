@@ -1,7 +1,11 @@
+---
+uuid: 4d839db3-cb3a-4d88-852e-2c866358fa06
+---
+
 # 이전 버전에서 모듈 언어 번역 재정의
 
 ```{important}
-Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 [언어 재정의 도구](../../system-administration/configuring-liferay/ changing-language-tranlations.md)는 권장 접근 방식. Liferay DXP/Portal 7.4+로 작업하는 경우 [전역 언어 번역 재정의](./overriding-global-language-translations.md)에 대한 지침을 따르십시오.
+Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 [언어 재정의 도구](../../system-administration/configuring-liferay/ changing-language-translations.md)는 권장 접근 방식. Liferay DXP/Portal 7.4+로 작업하는 경우 [전역 언어 번역 재정의](./overriding-global-language-translations.md)에 대한 지침을 따르십시오.
 ```
 
 이전 버전에서 Liferay 응용 프로그램별 언어 번역을 재정의하는 것은 이전 버전의 전역 언어 번역을 재정의하는 것과 유사하지만 추가 단계가 있습니다.
@@ -60,7 +64,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 예를 들어 블로그 웹 버전 5.0.36 모듈은 `com.liferay.blogs.web-5.0.36.jar`에 있습니다.
 
-모듈을 찾을 수 있는 사이트는 다음과 같습니다.
+모듈을 찾을 수 있는 위치는 다음과 같습니다.
 
 * Liferay의 [넥서스 저장소](https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/)
 * `[Liferay Home]/osgi/modules`
@@ -74,9 +78,9 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+Then, follow these steps:
 
-1. `liferay-e6u7.zip`을 다운로드하고 압축을 풉니다.
+1. Download and unzip `liferay-e6u7.zip`.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O
@@ -118,9 +122,9 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 ## 언어 속성 파일 만들기
 
-먼저 재정의하려는 번역을 선택합니다. 예를 들어 자습서 코드는 `블로그 항목 추가` 언어 번역을 재정의합니다.
+먼저 재정의하려는 번역을 선택하십시오. 예를 들어 자습서 코드는 `블로그 항목 추가` 언어 번역을 재정의합니다.
 
-재정의할 번역을 결정했으면 모듈의 `src/main/resources/content` 폴더에 언어 속성 파일을 만듭니다. 귀하의 파일에서 귀하의 방식으로 번역을 정의하십시오. 파일 이름이 재정의하려는 로케일과 일치하는지 확인하십시오. 예를 들어 일본어인 경우 `Language_ja.properties`을 사용합니다.
+재정의할 번역을 결정했으면 모듈의 `src/main/resources/content` 폴더에 언어 속성 파일을 만듭니다. 귀하의 파일에서 귀하의 방식으로 번역을 정의하십시오. 파일 이름이 재정의하려는 로케일과 일치하는지 확인하십시오. 예를 들어 일본어인 경우 `Language_ja.properties`사용합니다.
 
 ```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/src/main/resources/content/Language_ja.properties
 :language: properties
@@ -128,7 +132,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 ## 언어 리소스 번들 만들기
 
-모듈에서 재정의하려는 로캘에 대해 `java.util.ResourceBundle` 을 확장하는 클래스를 만듭니다. 다음은 `en_US` 로케일에 대한 예제 리소스 번들 클래스입니다.
+모듈에서 재정의하려는 로케일에 대해 `java.util.ResourceBundle` 확장하는 클래스를 만듭니다. 다음은 `en_US` 로케일에 대한 예제 리소스 번들 클래스입니다.
 
 ```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7EnglishResourceBundle.java
 :language: java
@@ -137,7 +141,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 클래스의 `_resourceBundle` 필드에는 `ResourceBundle`이 할당됩니다. `ResourceBundle.getBundle` 에 대한 호출에는 두 개의 매개변수가 필요합니다. `content.Language_en_US` 매개변수는 모듈의 `src/main/resources/content` 폴더와 관련된 언어 파일의 정규화된 이름입니다. 두 번째 매개변수는 리소스 번들의 언어 구문을 설정하는 `컨트롤` 입니다. Liferay의 구문과 동일한 언어 구문을 사용하려면 Liferay의 `com.liferay.portal.kernel.language.UTF8Control` 클래스를 가져오고 두 번째 매개변수를 `UTF8Control.INSTANCE`으로 설정합니다.
 
-클래스의 `@Component` 주석은 이를 OSGi `ResourceBundle` 서비스 구성 요소로 선언합니다. `language.id` 속성은 `en_US` 로케일을 지정합니다.
+클래스의 `@Component` 주석은 이를 OSGi `ResourceBundle` 서비스 구성요소로 선언합니다. `language.id` 속성은 `en_US` 로케일을 지정합니다.
 
 ```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7EnglishResourceBundle.java
 :language: java
@@ -148,7 +152,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 **`handleGetObject`:** 모듈의 리소스 번들(모듈의 언어 속성 파일을 기반으로 함)에서 번역을 조회하고 키 값을 `Object`로 반환합니다.
 
-**`getKeys`:** 리소스 번들 키의 `열거형` 를 반환합니다.
+**`getKeys`:** 리소스 번들 키의 `열거형` 반환합니다.
 
 리소스 번들 서비스 구성 요소는 기본 언어 번역을 모듈의 언어 번역 재정의로 리디렉션합니다.
 
@@ -196,7 +200,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 ```
 
 ```{note}
-언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content /Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations](./overriding-global- language-translations.md#declare-the-oOverride-in-the-bnd-file).
+언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content /Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file).
 ```
 
 순위가 높은 리소스 묶음 집합 서비스에 대한 결과를 검색합니다.

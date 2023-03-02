@@ -1,3 +1,7 @@
+---
+uuid: 4a7a87dc-3a2f-400b-86da-01f120be5b60
+---
+
 # Liferay Commerce Docker 이미지 사용
 
 최신 버전의 Liferay Commerce는 도커 이미지로 제공됩니다. Liferay Commerce의 최신 Docker 이미지 릴리스를 다운로드하고 시작하려면 다음 단계를 따르십시오.
@@ -24,7 +28,7 @@
 
 1. 브라우저를 `https://localhost:8080`로 엽니다.
 
-## 다음
+## 무엇 향후 계획
 
 확인하는 것보다 더 많은 일을 하시나요? 자세한 내용은 [설치 개요](../installation-overview.md) 을 참조하십시오.
 

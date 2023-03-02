@@ -1,8 +1,10 @@
+---
+uuid: cbe0c574-b1eb-42ff-a018-99167277e9fe
+---
+
 # 솔라 제한 사항
 
-```{important}
-Liferay의 Solr 지원은 더 이상 사용되지 않습니다. [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md)으로 마이그레이션할 계획을 세우십시오.
-```
+Liferay의 Solr 구현에는 제한이 있습니다. Solr를 검색 엔진으로 선택하면 일부 Liferay 기능 및 API를 사용할 수 없습니다. 최상의 경험을 위해 [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) 설치하십시오.
 
 ## 검색 결과 품질
 
@@ -14,6 +16,7 @@ Elasticsearch 관련 API 및 매핑은 Liferay의 검색 기능에서 활용되�
 
 Liferay의 Solr 통합에는 제한이 있습니다. 다음 기능을 사용하려면 Elasticsearch가 필요합니다.
 
+* [Liferay Objects](../../../building-applications/objects.md)
 * [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html)
 * [워크플로 지표](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
 * [사용자 정의 필터 검색 위젯](../../search-pages-and-widgets/search-results/filtering-search-results.md)

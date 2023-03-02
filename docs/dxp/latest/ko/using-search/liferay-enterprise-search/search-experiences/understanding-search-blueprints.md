@@ -1,3 +1,7 @@
+---
+uuid: f6f1c0fc-108d-42eb-810a-447630e0b7b9
+---
+
 # 검색 청사진 이해
 
 검색 청사진은 검색 경험 도구 집합의 첫 번째 기능입니다. Blueprints를 사용하여 사용자 정의 코드를 배포하지 않고 사용자의 요구에 맞게 검색 페이지 경험을 조정하십시오. 청사진으로 할 수 있는 일
@@ -9,7 +13,7 @@
 
 무엇을 검색해야 하는지 또는 검색 작동 방식을 제어해야 하는 경우 검색 청사진이 필요한 기능입니다.
 
-기본 Liferay 검색 환경의 구성 기능은 시간이 지남에 따라 발전했습니다. 최신 Liferay DXP 릴리스에서는 기본적으로 검색 결과를 조정하고([동의어 세트](../../search-administration-and-tuning/synonym-sets.md) 및 [결과 순위](../../search-administration-and-tuning/result-rankings.md)) [사용자 정의 패싯](../../search-pages-and-widgets/search-facets/custom-facet.md)을 추가하고 [사용자 정의 필터](../../search-pages-and-widgets/search-results/custom-filter-examples.md) 을 사용하여 복잡한 검색 사용자 정의를 수행할 수 있습니다. 그러나 이러한 구성에는 한계가 있으며 많은 검색 중심 사이트에서는 검색 인프라의 백엔드 코드를 사용자 지정해야 합니다. 이를 위해서는 Java 기반 모듈을 Liferay의 OSGi 런타임에 배포해야 합니다.
+기본 Liferay 검색 환경의 구성 기능은 시간이 지남에 따라 발전했습니다. 최신 Liferay DXP 릴리스에서는 기본적으로 검색 결과를 조정하고([동의어 세트](../../search-administration-and-tuning/synonym-sets.md) 및 [결과 순위](../../search-administration-and-tuning/result-rankings.md)) [사용자 정의 패싯](../../search-pages-and-widgets/search-facets/custom-facet.md)을 추가하고 [사용자 정의 필터](../../search-pages-and-widgets/search-results/custom-filter-examples.md) 사용하여 복잡한 검색 사용자 정의를 수행할 수 있습니다. 그러나 이러한 구성에는 한계가 있으며 많은 검색 중심 사이트에서는 검색 인프라의 백엔드 코드를 사용자 지정해야 합니다. 이를 위해서는 Java 기반 모듈을 Liferay의 OSGi 런타임에 배포해야 합니다.
 
 코드가 많은 이 기능 세트를 구축하는 대신 Blueprints는 사용자 정의 코드를 배포하지 않고 검색 페이지의 쿼리를 거의 완벽하게 제어해야 하는 사용자를 위해 다른 접근 방식을 취합니다. Blueprints는 거의 모든 사용 사례를 충족할 수 있는 UI 기반 구성 경험을 제공합니다(기능의 초기 반복이 아닌 경우 기능 세트가 훨씬 더 강력한 후속 버전에서).
 
@@ -23,24 +27,24 @@
 
 청사진을 만들려면 염두에 두고 있는 사용 사례부터 시작하세요. 기본 검색 페이지 환경에서 무엇을 변경해야 합니까? 그런 다음 제공된 요소를 살펴보고 사용자 정의 작성을 시작하는 데 사용할 수 있는지 확인하십시오. Blueprint를 계획했으면 이제 생성할 차례입니다.
 
-자세한 내용은 [Blueprint 생성 및 관리](./creating-and-managing-search-blueprints.md) 및 [Blueprint 계획](./planning-a-blueprint.md)을 참조하십시오.
+자세한 내용은 [청사진 생성 및 관리](./creating-and-managing-search-blueprints.md)참조하십시오.
 
 ## 블루프린트 UI에서 무엇을 할 수 있나요?
 
 Blueprint를 사용하여 검색 솔루션을 생성하려면 Elements를 Blueprint로 구성하고 페이지에 적용합니다. 이를 위해 사용할 수 있는 기능은 다음과 같습니다.
 
-| 특징                                                                                                              | 청사진에서 사용 가능합니까? |
-| --------------------------------------------------------------------------------------------------------------- | --------------- |
-| Query Builder를 사용하여 Blueprint를 시각적으로 구축                                                                         | &#10004;        |
-| Liferay UI에서 JSON으로 Blueprint 작성                                                                                | &#10004;        |
-| 즉시 사용 가능한 요소를 활용하여 청사진 생성 간소화                                                                                   | &#10004;        |
-| [Elasticsearch 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/query-dsl.html) 을 사용자 지정 요소로 사용 | &#10004;        |
-| Elasticsearch 쿼리에서 사용자 정의 요소 생성                                                                                 | &#10004;        |
-| 내 청사진에 대한 사용자 지정 JSON 요소 생성                                                                                     | &#10004;        |
-| JSON을 직접 편집하여 고급 블루프린트 설정 생성                                                                                    | &#10004;        |
-| Blueprint가 적용될 때 검색 가능한 Liferay 엔티티를 선택하십시오.                                                                    | &#10004;        |
-| Liferay의 인덱서 프레임워크 및 개별 쿼리 절 기여자의 절을 포함할지 여부를 선택합니다.                                                            | &#10004;        |
-| JSON을 사용하여 집계, 정렬, 하이라이트 등의 고급 설정을 구성합니다.                                                                       | &#10004;        |
+| 특징                                                                                                            | 청사진에서 사용 가능합니까? |
+| ------------------------------------------------------------------------------------------------------------- | --------------- |
+| Query Builder를 사용하여 Blueprint를 시각적으로 구축                                                                       | &#10004;        |
+| Liferay UI에서 JSON으로 Blueprint 작성                                                                              | &#10004;        |
+| 즉시 사용 가능한 요소를 활용하여 청사진 생성 간소화                                                                                 | &#10004;        |
+| [Elasticsearch 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/query-dsl.html) 사용자 지정 요소로 사용 | &#10004;        |
+| Elasticsearch 쿼리에서 사용자 정의 요소 생성                                                                               | &#10004;        |
+| 내 청사진에 대한 사용자 지정 JSON 요소 생성                                                                                   | &#10004;        |
+| JSON을 직접 편집하여 고급 블루프린트 설정 생성                                                                                  | &#10004;        |
+| Blueprint가 적용될 때 검색 가능한 Liferay 엔티티를 선택하십시오.                                                                  | &#10004;        |
+| Liferay의 인덱서 프레임워크 및 개별 쿼리 절 기여자의 절을 포함할지 여부를 선택합니다.                                                          | &#10004;        |
+| JSON을 사용하여 집계, 정렬, 하이라이트 등의 고급 설정을 구성합니다.                                                                     | &#10004;        |
 
 검색 청사진 UI의 기능 외에도 검색 페이지에 청사진을 적용할 수 있도록 검색 위젯이 개선되었습니다.
 
@@ -99,7 +103,7 @@ Blueprints를 사용하면 Elasticsearch에 대한 Liferay의 검색 요청 내�
                             }
 ```
 
-조금 더 자세히 살펴보면 다음 부울 쿼리는 절이 일치 결과의 점수에 기여하려면 콘텐츠 필드의 검색어 "test"에 대해 일치 쿼리가 충족되어야 함을 나타냅니다. 또한 콘텐츠 필드의 [일치 구문 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/query-dsl-match-query-phrase.html) 이 일치하면 결과의 점수가 `2`값만큼 높아집니다.
+조금 더 자세히 살펴보면 다음 부울 쿼리는 절이 일치 결과의 점수에 기여하려면 콘텐츠 필드의 검색어 "test"에 대해 일치 쿼리가 충족되어야 함을 나타냅니다. 또한 콘텐츠 필드의 [일치 구문 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/query-dsl-match-query-phrase.html) 일치하면 결과의 점수가 `2`값만큼 높아집니다.
 
 ```json
 {
@@ -141,6 +145,6 @@ Blueprints를 사용하면 Elasticsearch에 대한 Liferay의 검색 요청 내�
 ![Blueprints를 사용하면 Elasticsearch로 전송되는 쿼리 및 구성을 구성할 수 있습니다.](./understanding-search-blueprints/images/01.png)
 <!-- Needs to be edited to remove the suggestions part: https://docs.google.com/document/d/1TVko7kzDcb8gpa7Ph4aboyeRJ7Lr698mnR21mupG9dQ/edit# -->
 
-## 다음?
+## 무엇 향후 계획?
 
 - [검색 Blueprint 생성 및 관리](./creating-and-managing-search-blueprints.md).

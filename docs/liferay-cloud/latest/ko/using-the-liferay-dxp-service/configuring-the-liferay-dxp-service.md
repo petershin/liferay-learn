@@ -1,3 +1,7 @@
+---
+uuid: 002ecd02-b586-483f-bd07-a378f27d14fd
+---
+
 # Liferay DXP 서비스 구성
 
 Liferay DXP를 구성하는 데 사용할 수 있는 몇 가지 방법이 있습니다: [DXP 시스템 설정](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html) 및 [구성](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) 및 [속성 파일](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)사용. Liferay Cloud의 Liferay DXP 인스턴스에 대한 DXP 속성 및 구성 파일은 리포지토리의 Liferay DXP 서비스 디렉터리에 있는 `configs/` 폴더 중 하나에 배치되어 배포됩니다.
@@ -21,7 +25,7 @@ liferay
 
 ## 문맥 재산
 
-[Portal 속성](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) 은 `portal-ext.properties` 파일에 저장된 속성입니다. Liferay DXP 환경을 구성하는 데 사용됩니다.
+[Portal 속성](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) `portal-ext.properties` 파일에 저장된 속성입니다. Liferay DXP 환경을 구성하는 데 사용됩니다.
 
 온프레미스 Liferay DXP 인스턴스의 경우 이 파일은 `$LIFERAY_HOME`내부에 속합니다. Liferay Cloud를 사용할 때 포털 속성 파일을 적절한 `configs/{ENV}/` 폴더에 배치하여 배포 시 Liferay DXP 인스턴스에 대해 `$LIFERAY_HOME` 로 복사할 수 있습니다.
 
@@ -39,7 +43,7 @@ liferay
 
 * `portal-env.properties`: 현재 환경에만 영향을 미치는 속성을 포함합니다(예: 환경마다 다른 외부 서비스에 대한 자격 증명 및 URL 끝점).
 
-이러한 파일을 사용하려면 `portal-ext.properties` 파일이 `include-and-override` 등록 정보를 사용하여 `portal-all.properties` 및 `portal-env.properties` 를 명시적으로 가져와야 합니다.
+이러한 파일을 사용하려면 `portal-ext.properties` 파일이 `include-and-override` 등록 정보를 사용하여 `portal-all.properties` 및 `portal-env.properties` 명시적으로 가져와야 합니다.
 
 ```
 include-and-override=/opt/liferay/portal-all.properties
@@ -65,10 +69,10 @@ liferay
 └── LCP.json
 ```
 
-`portal-ext.properties` 및 `portal-all.properties` 파일은 모든 환경에서 공유됩니다. 거기에 공유 속성을 추가하고 각각의 `portal-env.properties` 파일에 환경별 속성을 추가할 수 있습니다. 자세한 내용은 [포털 속성 우선 순위](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html#portal-property-priority)을 참조하십시오.
+`portal-ext.properties` 및 `portal-all.properties` 파일은 모든 환경에서 공유됩니다. 거기에 공유 속성을 추가하고 각각의 `portal-env.properties` 파일에 환경별 속성을 추가할 수 있습니다. 자세한 내용은 [포털 속성 우선 순위](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html#portal-property-priority)참조하십시오.
 
 ```{note}
-포털 특성은 환경 변수로 정의될 수도 있습니다. 자세한 내용은 [환경 변수 참조](./liferay-service-environment-variables.md#environment-variables-reference)를 참조하십시오.
+포털 특성은 환경 변수로 정의될 수도 있습니다. 자세한 내용은 [환경 변수 참조](./liferay-service-environment-variables.md#environment-variables-reference)를 참조하세요.
 ```
 
 ## OSGi 구성
@@ -83,7 +87,7 @@ OSGi 구성(`.cfg` 또는 `.config` 파일)은 Liferay DXP에서 OSGi 구성 요
 
 ## 톰캣 구성
 
-구성 파일을 재정의하도록 적절한 환경의 `liferay/configs/{ENV}` 폴더에 파일을 배포하여 Liferay 서비스의 Tomcat 서버를 구성합니다. 예를 들어 다음 사이트의 적절한 `liferay/configs/{ENV}/tomcat/conf/` 폴더에 사용자 지정된 파일을 배치하여 Liferay 컨테이너의 파일 시스템에서 `{TOMCAT HOME}/conf/web.xml` 파일을 재정의할 수 있습니다. 리포지토리 및 변경 사항 배포.
+구성 파일을 재정의하도록 적절한 환경의 `liferay/configs/{ENV}` 폴더에 파일을 배포하여 Liferay 서비스의 Tomcat 서버를 구성합니다. 예를 들어 다음 위치의 적절한 `liferay/configs/{ENV}/tomcat/conf/` 폴더에 사용자 지정된 파일을 배치하여 Liferay 컨테이너의 파일 시스템에서 `{TOMCAT HOME}/conf/web.xml` 파일을 재정의할 수 있습니다. 리포지토리 및 변경 사항 배포.
 
 ```{note}
 Liferay Cloud의 Liferay 컨테이너에는 일반 `tomcat` 폴더와 버전 폴더(`tomcat-xxx`)라는 두 개의 tomcat 폴더가 있습니다. `tomcat` 폴더에는 버전이 지정된 `tomcat-xxx` 폴더에 대한 심볼릭 링크가 있으므로 일반 `tomcat` 폴더의 파일을 재정의하면 새 파일이 두 폴더 모두에 반영됩니다.
@@ -95,9 +99,9 @@ Liferay Cloud의 Liferay 서비스가 클라우드 플랫폼의 폐쇄형 네트
 
 ## 환경 변수
 
-Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정 또는 데이터베이스 연결 설정과 같이 온프레미스 인스턴스와 다르게 수행되는 일부 구성 대신 환경 변수 [](../reference/defining-environment-variables.md) (또는 비밀 [](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md))를 사용합니다. 환경 변수를 사용하여 [포털 속성을 재정의하거나 대체할 수도 있습니다](./liferay-service-environment-variables.md#overriding-portal-properties).
+Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정 또는 데이터베이스 연결 설정과 같이 온프레미스 인스턴스와 다르게 수행되는 일부 구성 대신 환경 변수 [](../reference/defining-environment-variables.md) (또는 비밀 [개](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md))를 사용합니다. 환경 변수를 사용하여 [포털 속성을 재정의하거나 대체할 수도 있습니다](./liferay-service-environment-variables.md#overriding-portal-properties).
 
-자세한 내용은 [Liferay 서비스 환경 변수](./liferay-service-environment-variables.md) 을 참조하십시오.
+자세한 내용은 [Liferay 서비스 환경 변수](./liferay-service-environment-variables.md) 참조하십시오.
 
 ## 추가 정보
 

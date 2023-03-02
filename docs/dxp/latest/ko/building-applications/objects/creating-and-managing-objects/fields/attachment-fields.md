@@ -1,3 +1,7 @@
+---
+uuid: 2fa3dbf3-29fb-47bc-82c0-81dde1b08003
+---
+
 # 첨부파일 필드
 
 첨부 파일 필드는 인스턴스의 [문서 라이브러리](../../../../system-administration/file-storage.md)에 파일을 업로드하기 위한 것입니다. 파일이 업로드되면 항목의 첨부 필드에 연결되며 각 필드는 한 번에 하나의 파일에만 연결할 수 있습니다. 파일은 개체 정의(예: 회사 또는 사이트)에서 해당 범위를 상속합니다. 첨부되면 개체 항목을 보고 파일을 다운로드하거나 필드에서 제거할 수 있습니다. 7.4 U45/GA45부터는 [개체의 응용 프로그램 페이지](../views/designing-object-views.md)에서 항목 첨부 파일을 다운로드할 수도 있습니다.
@@ -20,13 +24,31 @@
 원하는 경우 이 [포털 속성](../../../../installation-and-upgrades/reference/portal-properties.md)을 추가하여 문서 및 미디어에 숨겨진 첨부 파일 필드 폴더를 표시할 수 있습니다. 서버: `dl.show.hidden.mount.folders=true`. 
 ```
 
-첨부 파일 필드를 만든 후 다음과 같은 방법으로 구성할 수 있습니다.
-
-| 필드 | 설명 |
+| 구성 | 설명 |
 | :--- | :--- |
 | 허용되는 파일 확장자 | 허용되는 파일 확장자 목록을 입력하여 사용자가 필드에 업로드할 수 있는 파일 유형을 결정합니다. 각 확장자는 쉼표로 구분해야 합니다. 첨부 필드는 [문서 및 미디어](../../../../content-authoring-and-management/documents-and-media.md)에서 허용하는 모든 파일 유형을 지원합니다. |
 | 최대 파일 크기 | 필드에서 허용되는 최대 파일 크기를 입력합니다. 기본값은 100MB입니다. 원하는 경우 값을 0으로 설정하여 서버의 전체 최대 업로드 요청 크기 속성을 사용할 수 있습니다. |
-| 저장 폴더(*문서 및 미디어의 파일 표시용*) | 업로드된 파일이 문서 및 미디어에 저장되는 사이트를 결정하려면 폴더 이름을 입력하십시오. 기본적으로 폴더는 개체 정의의 이름(예: `/Employee`, `/TimeOffRequest`)을 사용합니다. |
+| 저장 폴더(*문서 및 미디어의 파일 표시용*) | 업로드된 파일이 문서 및 미디어에 저장되는 위치를 결정하려면 폴더 이름을 입력하십시오. 기본적으로 폴더는 개체 정의의 이름(예: `/Employee`, `/TimeOffRequest`)을 사용합니다. |
+
+
+## API에서 첨부 파일 필드 사용
+
+헤드리스 API를 사용하여 객체 항목의 첨부 파일 필드에 파일을 추가하려면 파일이 Liferay에 있어야 합니다. [문서 라이브러리 API](../../../../content-authoring-and-management/documents-and-media/developer-guide/document-api-basics.md) 을 사용하여 파일을 업로드하고 해당 ID를 검색합니다.
+
+`"[attachmentField]": [FileEntryId]`구문을 사용하여 개체 API 호출에 ID를 전달합니다.
+
+### 예
+
+아래 예제는 `timeOffRequest`이라는 객체에 항목을 추가합니다. ID가 `12345` 인 파일을 첨부 필드 `문서`에 추가합니다.
+
+```bash
+curl -X "POST" "http://localhost:8080/o/c/timeOffRequest?restrictFields=actions" \
+     -H 'Content-Type: application/json' \
+     -u 'test@liferay.com:test' \
+     -d $'{
+  "document": 12345
+}'
+```
 
 ## 추가 정보
 

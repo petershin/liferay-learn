@@ -2,7 +2,9 @@
 toc:
 - ./optimizing-sites/ab-testing.md
 - ./optimizing-sites/building-a-responsive-site.md
+uuid: 47e6759b-9bcb-432b-9707-129c368e99c5
 ---
+
 # 사이트 최적화
 
 ```{toctree}
@@ -36,7 +38,7 @@ optimizing-sites/building-a-responsive-site.md
 :::
 
 :::{grid-item-card} 리디렉션 도구 사용
-:link: ./site-settings/managing-site-urls/using-the-redirection-tool.md
+:link: ./site-settings/managing-site-urls/setting-up-redirects-and-404-tracking.md
 :::
 
 :::{grid-item-card} 디스플레이 페이지 템플릿에 대한 SEO 및 오픈 그래프 구성

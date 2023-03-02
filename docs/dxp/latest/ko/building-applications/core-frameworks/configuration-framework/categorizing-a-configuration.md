@@ -1,3 +1,7 @@
+---
+uuid: fb7b68cb-a0a1-4a22-9234-208053f927a7
+---
+
 # 구성 분류
 
 구성 인터페이스를 등록하면 애플리케이션의 UI가 *시스템 설정* &rarr; *플랫폼* &rarr; *타사*에 생성됩니다. 애플리케이션의 설정 UI가 표시되는 다른 섹션과 카테고리를 선호하는 경우 쉽게 변경할 수 있습니다.
@@ -30,7 +34,7 @@ import com.liferay.portal.configuration.metatype.annotations.ExtendedObjectClass
 
 고유한 섹션과 범주를 선호하는 경우 `ConfigurationCategory` 인터페이스를 구현하여 만들 수 있습니다.
 
-[구성 설정 및 액세스](./setting-and-accessing-configurations)의 예제 프로젝트를 따랐다면 이 코드를 애플리케이션의 `구성` 폴더에 추가할 수 있습니다. 이는 구성 인터페이스 Java 파일을 보유하는 동일한 폴더입니다. 아래 코드는 foobar 섹션과 foobar 카테고리를 생성합니다.
+[구성 설정 및 액세스](./setting-and-accessing-configurations.md)의 예제 프로젝트를 따랐다면 이 코드를 애플리케이션의 `구성` 폴더에 추가할 수 있습니다. 이는 구성 인터페이스 Java 파일을 보유하는 동일한 폴더입니다. 아래 코드는 foobar 섹션과 foobar 카테고리를 생성합니다.
 
 ```java
 package com.acme.n2f3.web.internal.configuration;

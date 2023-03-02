@@ -1,11 +1,15 @@
+---
+uuid: 688e2663-172f-4285-a138-e937991470ae
+---
+
 # 양식 필드 유형 참조
 
 Liferay Forms 응용 프로그램에는 양식에 추가할 수 있는 많은 필드 유형과 요소가 포함되어 있습니다. 사용 가능한 요소를 찾으려면
 
 1. _제품 메뉴_ (![Product Menu](../../../images/icon-product-menu.png))을 열고 사이트 관리 메뉴에서 나침반 아이콘(![Compass](../../../images/icon-compass.png))을 클릭합니다. 양식이 생성될 사이트를 선택합니다.
-1. _콘텐츠 & 데이터_  &rarr; _양식_를 클릭합니다.
+1. _콘텐츠 & 데이터_  &rarr; _양식_클릭합니다.
 1. _추가_ 버튼(![Add](../../../images/icon-add.png))을 클릭합니다. 양식 작성기 보기가 나타납니다.
-1. __ 추가 버튼(![Add](../../../images/icon-add.png))을 한 번 더 클릭하여 _요소 추가_ 사이드바를 표시합니다(아직 열리지 않은 경우).
+1. _추가_ 버튼(![Add](../../../images/icon-add.png))을 한 번 더 클릭하여 _요소 추가_ 사이드바를 표시합니다(아직 열리지 않은 경우).
 
 ![많은 유용한 양식 요소가 있습니다.](./forms-field-types-reference/images/01.png)
 
@@ -33,7 +37,7 @@ Liferay Forms 응용 프로그램에는 양식에 추가할 수 있는 많은 �
 - 검색 구성
 - 필드가 반복 가능한지 여부
 - 시스템/프로그래매틱 필드 참조
-- 현장 확인
+- 현장확인
 - 필드가 숨겨져 있는지 여부
 
 추가 필드별 고급 구성도 있습니다.
@@ -60,7 +64,7 @@ Liferay Forms 응용 프로그램에는 양식에 추가할 수 있는 많은 �
 
 ![확인 필드는 구성 가능합니다.](./forms-field-types-reference/images/22.png)
 
-사용자가 유효한 형식으로 정보를 입력했는지 확인하는 방법에 대한 정보는 [텍스트 및 숫자 필드 항목 유효성 검사](validating-text-and-numeric-field-entries.md) 을 참조하십시오.
+사용자가 유효한 형식으로 정보를 입력했는지 확인하는 방법에 대한 정보는 [텍스트 및 숫자 필드 항목 유효성 검사](validating-text-and-numeric-field-entries.md) 참조하십시오.
 
 ### 필드 이름, 필드 ID 및 필드 참조
 
@@ -100,7 +104,7 @@ Liferay 7.3의 첫 번째 릴리스에서는 편집 가능한 구성 필드 이�
 
 ### 불리언
 
-사용자는 확인란 또는 스사이트를 활성화 또는 비활성화하여 표시된 텍스트에 대한 `참` 또는 `거짓` 응답을 기록합니다.
+사용자는 확인란 또는 스위치를 활성화 또는 비활성화하여 표시된 텍스트에 대한 `참` 또는 `거짓` 응답을 기록합니다.
 
 ![부울 필드는 사용자에게 응답에서 참 또는 거짓을 선택할 수 있는 단일 옵션을 표시합니다.](./forms-field-types-reference/images/17.png)
 
@@ -110,7 +114,8 @@ Liferay 7.3의 첫 번째 릴리스에서는 편집 가능한 구성 필드 이�
 
 ![날짜 선택기는 날짜를 선택하는 편리한 방법을 제공합니다.](./forms-field-types-reference/images/06.png)
 
-Liferay 7.4부터는 날짜 필드의 고급 구성에 유효성 검사가 포함됩니다. [필드 고급 구성의 유효성 검사 옵션](./validating-text-and-numeric-field- entry.md).
+Liferay 7.4부터는 날짜 필드의 고급 구성에 유효성 검사가 포함됩니다. [필드 고급 구성의 유효성 검사 옵션](./validating-text-and-numeric-field-entry.md).
+
 ![날짜 필드에 대한 확인 규칙을 입력합니다.](./forms-field-types-reference/images/26.png)
 
 ### 날자와 시간
@@ -119,7 +124,7 @@ Liferay 7.4에 추가된 사용자는 한 필드에 날짜와 시간을 모두 �
 
 ![날짜 및 시간 필드는 유효한 날짜와 시간을 결합합니다.](./forms-field-types-reference/images/28.png)
 
-날짜 및 시간 필드는 `DD/MM/YYYY HH:MM [AM/PM]`형식을 따르는 입력을 허용합니다. 예를 들어, `01/06/1981 12:15 PM` 은 1981년 1월 6일 정오 15분을 나타냅니다. 날짜 및 시간 선택기를 사용하거나 사용자가 필드에 직접 날짜를 입력할 수 있습니다.
+날짜 및 시간 필드는 `DD/MM/YYYY HH:MM [AM/PM]`형식을 따르는 입력을 허용합니다. 예를 들어, `01/06/1981 12:15 PM` 1981년 1월 6일 정오 15분을 나타냅니다. 날짜 및 시간 선택기를 사용하거나 사용자가 필드에 직접 날짜를 입력할 수 있습니다.
 
 ### 다중 선택
 
@@ -160,13 +165,13 @@ Liferay 7.3(DXP FP1+ 및 CE GA7+)부터 인증되지 않은 게스트 사용자�
 
 ![게스트가 파일을 업로드하도록 허용할지 여부를 선택할 수 있습니다.](./forms-field-types-reference/images/16.png)
 
-업로드된 문서는 [문서 및 미디어 저장소](./../../../system-administration/file-storage.md)의 숨겨진 폴더에 저장됩니다. 문서 및 미디어 애플리케이션에 표시하려면 `Portal-ext.properties` 파일에서 다음 [포털 속성](../../../installation-and-upgrades/reference/portal-properties.md) 을 설정합니다.
+업로드된 문서는 [문서 및 미디어 저장소](./../../../system-administration/file-storage.md)의 숨겨진 폴더에 저장됩니다. 문서 및 미디어 애플리케이션에 표시하려면 `Portal-ext.properties` 파일에서 다음 [포털 속성](../../../installation-and-upgrades/reference/portal-properties.md) 설정합니다.
 
 ```properties
 dl.show.hidden.mount.folders=true
 ```
 
-제어판에서 게스트 업로드 동작을 구성합니다: 시스템 설정 &rarr; 양식(콘텐츠 및 데이터) &rarr; 양식 또는 `이라는 <a href="../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md">구성 파일</a> 을 생성하여 구성합니다. DDMFormWebConfiguration.config`.
+제어판에서 게스트 업로드 동작을 구성합니다: 시스템 설정 &rarr; 양식(콘텐츠 및 데이터) &rarr; 양식 또는 com.liferay.dynamic.data.mapping.form.web.internal.configuration이라는 [구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) `하여 구성합니다. DDMFormWebConfiguration.config`.
 
 ```{tip}
 [인스턴스 범위](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions)에서 Forms 애플리케이션을 구성하려면 인스턴스 설정에서 Forms 항목을 사용합니다.
@@ -190,10 +195,9 @@ dl.show.hidden.mount.folders=true
 게스트 사용자는 이미지에 액세스하거나 이미지를 업로드할 수 없습니다. 인증된 사용자만 양식에 액세스할 수 있는 경우가 아니면 이 필드를 사용하지 마십시오.
 ```
 
-이미지를 추가한 후 사용자는 이미지에 대한 추가 필드인 _설명_을 채울 수 있습니다. 이미지 필드가 선택 사항인 경우 사용법은 간단합니다. 이미지나 해당 설명이 필요하지 않습니다. 그러나 모든 양식 필드와 마찬가지로 이미지 필드도 필수로 표시될 수 있습니다. 이미지 필드가 필수인 경우 양식 작성자는 설명이 필수인지 선택 사항인지 선택할 수 있습니다.
+이미지를 추가한 후 사용자는 이미지에 대한 추가 필드인 _설명_채울 수 있습니다. 이미지 필드가 선택 사항인 경우 사용법은 간단합니다. 이미지나 해당 설명이 필요하지 않습니다. 그러나 모든 양식 필드와 마찬가지로 이미지 필드도 필수로 표시될 수 있습니다. 이미지 필드가 필수인 경우 양식 작성자는 설명이 필수인지 선택 사항인지 선택할 수 있습니다.
 
 ![필수 이미지 필드의 설명 필드는 필수 또는 선택 사항일 수 있습니다.](./forms-field-types-reference/images/27.png)
-
 
 ### 색깔
 
@@ -207,13 +211,13 @@ dl.show.hidden.mount.folders=true
 
 ![서식 있는 텍스트 필드를 통해 사용자는 양식에 이미지가 포함된 서식 있는 텍스트를 작성할 수 있습니다.](./forms-field-types-reference/images/12.png)
 
-### 사이트 검색
+### 위치 검색
 
-Liferay 7.4+의 검색 사이트 필드를 사용하여 양식 사용자로부터 유효한 주소를 편리하게 수집하십시오.
+Liferay 7.4+의 검색 위치 필드를 사용하여 양식 사용자로부터 유효한 주소를 편리하게 수집하십시오.
 
-![검색 사이트 필드에는 Google Places API 키가 필요합니다.](./forms-field-types-reference/images/23.png)
+![검색 위치 필드에는 Google Places API 키가 필요합니다.](./forms-field-types-reference/images/23.png)
 
-자세한 내용은 [사이트 검색 필드 사용](using-the-search-location-field.md) 을 참조하십시오.
+자세한 내용은 [위치 검색 필드 사용](using-the-search-location-field.md) 참조하십시오.
 
 ## 추가 정보
 

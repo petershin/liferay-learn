@@ -1,18 +1,18 @@
 ---
 toc:
-- ./product-types/introduction-to-product-types.md
 - ./product-types/creating-a-simple-product.md
 - ./product-types/creating-a-grouped-product.md
 - ./product-types/creating-a-virtual-product.md
 - ./product-types/virtual-product-reference.md
 - ./product-types/shop-by-diagram.md
+uuid: 02b25421-bafd-4e8c-8682-da6db42965a3
 ---
+
 # 제품 유형
 
 ```{toctree}
 :maxdepth: 3
 
-product-types/introduction-to-product-types.md
 product-types/creating-a-simple-product.md
 product-types/creating-a-grouped-product.md
 product-types/creating-a-virtual-product.md
@@ -24,11 +24,11 @@ Commerce Catalogs는 단순, 그룹화, 가상 및 다이어그램의 네 가지
 
 **[단순 제품](./product-types/creating-a-simple-product.md)**: 재고가 추적되는 실제 제품.
 
-**[그룹화된 제품](./product-types/creating-a-grouped-product.md)**: 함께 포장되어 단일 항목으로 판매되는 카탈로그의 두 개 이상의 제품. 그룹화된 제품은 인벤토리에서 추적되며 단순 제품, 기타 그룹화된 제품 또는 가상 제품을 포함할 수 있습니다.
+**[그룹화된 제품](./product-types/creating-a-grouped-product.md)**: 함께 포장되어 단일 품목으로 판매되는 카탈로그의 두 개 이상의 제품. 그룹화된 제품은 재고에서 추적되며 단순 제품, 기타 그룹화된 제품 또는 가상 제품을 포함할 수 있습니다.
 
 **[가상 제품](./product-types/creating-a-virtual-product.md)**: 음악 파일, 전자 출판물, 서비스 및 보증과 같은 무형 제품.
 
-**[Shop by Diagram](./product-types/shop-by-diagram.md)**: 매장의 제품을 참조하는 BOM(Bill of Materials) 다이어그램에 속하는 구성 요소입니다.
+**[Shop by Diagram](./product-types/shop-by-diagram.md)**: 매장의 제품을 참조하는 BOM(Bill of Materials) 다이어그램에 속하는 구성 요소 부품입니다.
 
 ## 추가 정보
 

@@ -1,16 +1,20 @@
+---
+uuid: 34e47420-af8c-4c3d-9312-53a4e25a0737
+---
+
 # 인벤토리 관리 권한
 
 Liferay Commerce를 사용하면 권한을 사용하여 전역 메뉴(![Global Menu](../../images/icon-applications-menu.png))의 상거래 탭에서 재고 관리 응용 프로그램 및 리소스에 대한 액세스를 제어할 수 있습니다.
 
 ![인벤토리 관리 애플리케이션 및 리소스에 대한 액세스를 제어합니다.](./inventory-management-permissions/images/01.png)
 
-권한 정의 탭의 *Commerce* &rarr; *Inventory Management* 에서 사용자 역할에 대한 재고 관리 권한을 관리할 수 있습니다. 권한을 개별적으로 할당하거나 *작업* 을 선택하여 애플리케이션 또는 리소스에 대한 모든 권한을 할당합니다.
+권한 정의 탭의 *Commerce* &rarr; *Inventory Management* 에서 사용자 역할에 대한 재고 관리 권한을 관리할 수 있습니다. 권한을 개별적으로 할당하거나 *작업* 선택하여 애플리케이션 또는 리소스에 대한 모든 권한을 할당합니다.
 
 ![권한 정의 탭에서 사용자 역할에 대한 인벤토리 관리 권한을 관리합니다.](./inventory-management-permissions/images/02.png)
 
 ## 애플리케이션 권한
 
-애플리케이션 권한은 애플리케이션 자체에 대한 기능을 부여하지만 [관련 리소스 권한](#resource-permissions)은 포함하지 않습니다.
+애플리케이션 권한은 애플리케이션 자체에 대한 기능을 부여하지만 [관련 리소스 권한](#resource-permissions)포함하지 않습니다.
 
 재고 관리에는 다음 애플리케이션이 포함됩니다.
 
@@ -34,7 +38,7 @@ Liferay Commerce를 사용하면 권한을 사용하여 전역 메뉴(![Global M
 
 재고 관리 애플리케이션은 다음 리소스를 참조합니다.
 
-**상업 창고** (창고, [배송](./order-management-permissions.md)및 [제품](./product-management-permissions.md)아래에 나열됨): 이 권한은 창고 엔터티에서 작업을 수행할 수 있는 기능을 부여합니다. 각 웨어하우스는 제품 재고를 저장하고 채널에 연결되며 주소 및 지리적 사이트와 함께 물리적 사이트를 나타냅니다.
+**상업 창고** (창고, [배송](./order-management-permissions.md)및 [제품](./product-management-permissions.md)아래에 나열됨): 이 권한은 창고 엔터티에서 작업을 수행할 수 있는 기능을 부여합니다. 각 창고는 제품 재고를 저장하고 채널에 연결되며 주소 및 지리적 위치와 함께 물리적 위치를 나타냅니다.
 
 | 허가 | 묘사                           |
 | -- | ---------------------------- |
@@ -53,6 +57,6 @@ Liferay Commerce를 사용하면 권한을 사용하여 전역 메뉴(![Global M
 
 ## 추가 정보
 
-* [재고 관리 소개](../../inventory-management/introduction-to-managing-inventory.md)
+* [재고 관리](../../inventory-management.md)
 * [재고 관리 참조 안내서](../../inventory-management/inventory-management-reference-guide.md)
 * [창고 참조 가이드](../../inventory-management/warehouse-reference-guide.md)

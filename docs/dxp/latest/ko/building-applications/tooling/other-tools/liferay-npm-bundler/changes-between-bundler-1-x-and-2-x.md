@@ -1,3 +1,7 @@
+---
+uuid: d3f64d45-b095-4f4d-84c5-098dbb8e2e5b
+---
+
 # 번들러 1.x와 2.x 간의 변경 사항
 
 이 문서에서는 liferay-npm-bundler 버전 1.x와 2.x 간의 주요 변경 사항에 대해 설명합니다.
@@ -12,9 +16,9 @@
 
 ## 향상된 피어 종속성 지원
 
-번들러 1.x에서는 위젯 간에 사용할 수 있는 공유 피어 종속성 패키지가 하나만 있었습니다. 위젯별로 독립된 종속성을 사용하면 피어 종속성을 완벽하게 준수하기가 쉽습니다. 이름에 프로젝트 이름이 접두사로 붙기 때문에 피어 종속성은 프로젝트에 명시된 대로 정확하게 해결할 수 있습니다. 이것은 [liferay-npm-bundler-plugin-inject-peer-dependencies](https://github.com/liferay/liferay-npm-build-tools/tree/master/packages/liferay-npm-bundler-plugin-inject-peer-dependencies) 플러그인 때문에 가능합니다. 모든 JS 모듈에서 `개의 require` 호출을 스캔합니다. 번들러가 `main.js` 파일에서 필요한 패키지를 찾았지만 `package.json`에서 선언되지 않은 경우 `node_modules` 폴더에 있는 적절한 버전으로 해결합니다. 그런 다음 플러그인은 필요한 패키지에 대한 출력 `package.json` 에 새 종속성을 삽입합니다.
+번들러 1.x에서는 위젯 간에 사용할 수 있는 공유 피어 종속성 패키지가 하나만 있었습니다. 위젯별로 독립된 종속성을 사용하면 피어 종속성을 완벽하게 준수하기가 쉽습니다. 이름에 프로젝트 이름이 접두사로 붙기 때문에 피어 종속성은 프로젝트에 명시된 대로 정확하게 해결할 수 있습니다. 이는 [liferay-npm-bundler-plugin-inject-peer-dependencies](https://github.com/liferay/liferay-npm-build-tools/tree/master/packages/liferay-npm- bundler-plugin-inject-peer-dependencies) 플러그인. `require` 호출을 위해 모든 JS 모듈을 스캔합니다. 번들러가 `main.js` 파일에서 필요한 패키지를 찾았지만 `package.json`에 선언되지 않은 경우 `node_modules` 폴더에 있는 적절한 버전으로 해결합니다. 그런 다음 플러그인은 필요한 패키지의 출력 `package.json`에 새 종속성을 삽입합니다.
 
-삽입된 종속성 버전 제약 조건은 캐럿이나 다른 의미적 버전 연산자 없이 필요한 특정 버전 번호입니다. 이는 프로젝트에서 발견된 정확한 피어 종속성을 존중하기 위한 것입니다. 보다 편안한 의미 체계 버전 식을 주입하면 불안정한 결과가 발생할 수 있습니다.
+삽입된 종속성 버전 제약 조건은 캐럿이나 다른 의미적 버전 연산자 없이 필요한 특정 버전 번호입니다. 이는 프로젝트에서 발견된 정확한 피어 종속성을 존중하기 위한 것입니다. 보다 편안한 시맨틱 버전 식을 주입하면 불안정한 결과가 발생할 수 있습니다.
 
 ## 가져오기를 통한 수동 중복 제거
 

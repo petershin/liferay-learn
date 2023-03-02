@@ -1,3 +1,7 @@
+---
+uuid: 0fba1f8c-2ddd-4ac2-907e-4789108f581b
+---
+
 # 제품 변형에 대한 SKU 만들기
 
 Liferay Commerce를 사용하면 여러 SKU를 제품에 추가하여 제품 변형을 나타낼 수 있습니다. 이렇게 하려면 제품에 *SKU 기여자* 이 활성화된 [옵션](../products/using-product-options.md) 이 하나 이상 있어야 합니다. 그런 다음 옵션의 정의된 값을 사용하여 제품에 대한 여러 활성 SKU를 수동 또는 자동으로 생성할 수 있습니다. 생성된 각 SKU는 제품 세부 정보 위젯에 표시되는 구매 가능한 제품 버전을 나타냅니다.
@@ -20,15 +24,15 @@ Liferay Commerce를 사용하면 여러 SKU를 제품에 추가하여 제품 변
 
 1. SKU 기여자가 활성화된 옵션이 하나 이상 있는 제품을 클릭하고 *SKU* 탭으로 이동합니다.
 
-1. *추가* 버튼(![Add Button](../../../images/icon-add.png))을 클릭하고 *모든 SKU 조합 생성*을 선택합니다.
+1. *추가* 버튼(![Add Button](../../../images/icon-add.png))을 클릭하고 *모든 SKU 조합 생성*선택합니다.
 
    ![모든 SKU 조합 생성을 선택합니다.](./creating-skus-for-product-variants/images/02.png)
 
-   SKU는 각 옵션 값에 대해 자동으로 생성됩니다. 이러한 SKU는 값의 이름을 사용하며 기본 가격 또는 재고 없이 생성됩니다. SKU를 구성하려면 *작업* 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 *편집*을 선택합니다. 자세한 내용은 [SKU 필드 참조](#sku-fields-reference) 을 참조하십시오.
+   SKU는 각 옵션 값에 대해 자동으로 생성됩니다. 이러한 SKU는 값의 이름을 사용하며 기본 가격 또는 재고 없이 생성됩니다. SKU를 구성하려면 *작업* 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 *편집*선택합니다. 자세한 내용은 [SKU 필드 참조](#sku-fields-reference) 참조하십시오.
 
    ![생성된 SKU를 편집합니다.](./creating-skus-for-product-variants/images/03.png)
 
-1. 완료되면 *게시*을 클릭합니다.
+1. 완료되면 *게시*클릭합니다.
 
 ```{important}
 인벤토리의 각 제품은 하나 이상의 SKU에 연결되어야 합니다.
@@ -46,19 +50,19 @@ Liferay Commerce를 사용하면 여러 SKU를 제품에 추가하여 제품 변
 
 1. SKU 기여자가 활성화된 옵션이 하나 이상 있는 제품을 클릭하고 *SKU* 탭으로 이동합니다.
 
-1. ** 추가 버튼(![Add Button](../../../images/icon-add.png))을 클릭하고 *SKU 추가*를 선택합니다.
+1. ** 추가 버튼(![Add Button](../../../images/icon-add.png))을 클릭하고 *SKU 추가*선택합니다.
 
    ![SKU 추가를 선택합니다.](./creating-skus-for-product-variants/images/04.png)
 
-1. SKU 필드를 구성합니다. 자세한 내용은 [SKU 필드 참조](#sku-fields-reference) 을 참조하십시오.
+1. SKU 필드를 구성합니다. 자세한 내용은 [SKU 필드 참조](#sku-fields-reference) 참조하십시오.
 
    ![SKU를 구성합니다.](./creating-skus-for-product-variants/images/05.png)
 
-1. 완료되면 *게시*을 클릭합니다.
+1. 완료되면 *게시*클릭합니다.
 
 ## SKU 인벤토리 추가
 
-제품에 대해 이월 주문 허용이 활성화된 경우 기본 가격이 설정된 모든 게시된 SKU는 고객이 제품 세부 정보 위젯에서 구매할 수 있도록 즉시 제공됩니다. 그러나 이월 주문 허용이 비활성화된 경우 먼저 SKU에 재고를 추가하여 구매할 수 있도록 해야 합니다. 자세한 내용은 [재고 관리 소개](../../../inventory-management/introduction-to-managing-inventory.md) 을 참조하십시오.
+제품에 대해 이월 주문 허용이 활성화된 경우 기본 가격이 설정된 모든 게시된 SKU는 고객이 제품 세부 정보 위젯에서 즉시 구매할 수 있습니다. 그러나 이월 주문 허용이 비활성화된 경우 먼저 SKU에 재고를 추가하여 구매할 수 있도록 해야 합니다. 자세한 내용은 [재고 관리](../../../inventory-management.md) 참조하십시오.
 
 ![각 제품 SKU에 대한 인벤토리를 추가합니다.](./creating-skus-for-product-variants/images/06.png)
 

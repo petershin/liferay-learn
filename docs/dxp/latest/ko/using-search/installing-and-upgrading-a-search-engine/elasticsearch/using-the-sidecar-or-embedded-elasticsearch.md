@@ -1,3 +1,7 @@
+---
+uuid: fd689e2a-cd82-4749-ac09-9df12cee519a
+---
+
 # 사이드카 또는 임베디드 Elasticsearch 사용
 
 ZIP 파일 또는 Docker 이미지를 통해 설치된 Liferay Tomcat 번들은 Liferay로 시작하는 Elasticsearch 노드를 포함합니다. Liferay 7.3+ 및 7.4+의 노드는 별도의 JVM에서 사이드카 서버로 실행되며 Liferay 7.2의 노드는 Liferay 서버에 내장되어 있습니다.
@@ -15,7 +19,7 @@ Elasticsearch 서버는 다음 URL에서 액세스할 수 있습니다.
   "cluster_name" : "LiferayElasticsearchCluster",
   "cluster_uuid" : "_lcJyLZXQ2WY5No5oW8edg",
   "version" : {
-    "number" : "7.17.0",
+    "number" : "7.17.9",
     "build_flavor" : "unknown",
     "build_type" : "unknown",
     "build_hash" : "bee86328705acaa9a6daede7140defd4d9ec56bd",
@@ -42,7 +46,7 @@ Elasticsearch 서버는 다음 URL에서 액세스할 수 있습니다.
 프로덕션 환경에서 HSQL과 같은 임베디드 데이터베이스를 실행하지 않을 것이며 번들로 제공되는 Elasticsearch 서버도 프로덕션 환경에서 실행해서는 안 됩니다. 대신 원격 모드에서 독립 실행형 서버 또는 서버 노드의 클러스터로 Elasticsearch를 실행하십시오.
 
 ```{important}
-검색 튜닝 앱 [동의어 집합](../../search-administration-and-tuning/synonym-sets.md) 및 [결과 순위](../../search-administration-and-tuning/result-rankings.md)는 Liferay 7.2 및 7.3에서 기본 데이터 저장을 위한 검색 색인을 사용했습니다. 이러한 앱에 대한 데이터는 Liferay 데이터베이스에 저장되지 않았습니다. 따라서 Liferay 7.2 및 7.3에서 사이드카 또는 내장된 Elasticsearch를 사용하는 동안 구성된 동의어 집합 또는 결과 순위가 있는 경우 원격 Elasticsearch 서버로 전환하고 재인덱싱해도 해당 구성이 복원되지 _않습니다_. 대신 수동으로 동의어 집합 및 결과 순위를 원격 Elasticsearch 클러스터로 가져와야 합니다. Elastic의 [스냅샷 및 복원](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) 사용에 대한 자세한 내용은 [업그레이드 가이드](../elasticsearch/upgrading-elasticsearch.md)를 참조하세요. 기능을 사용하여 이러한 인덱스를 보존합니다.
+검색 튜닝 앱 [동의어 집합](../../search-administration-and-tuning/synonym-sets.md) 및 [결과 순위](../../search-administration-and-tuning/result -rankings.md)는 Liferay 7.2 및 7.3에서 기본 데이터 저장을 위한 검색 인덱스를 사용했습니다. 이러한 앱에 대한 데이터는 Liferay 데이터베이스에 저장되지 않았습니다. 따라서 Liferay 7.2 및 7.3에서 사이드카 또는 내장된 Elasticsearch를 사용하는 동안 구성된 동의어 집합 또는 결과 순위가 있는 경우 원격 Elasticsearch 서버로 전환하고 재인덱싱해도 해당 구성이 복원되지 _않습니다_. 대신 수동으로 동의어 집합 및 결과 순위를 원격 Elasticsearch 클러스터로 가져와야 합니다. Elastic의 [스냅샷 및 복원](https://www.elastic.co/guide/en/elasticsearch/reference/7.x) 사용에 대한 자세한 내용은 [업그레이드 가이드](../elasticsearch/upgrading-elasticsearch.md)를 참조하세요. /snapshot-restore.html) 기능을 사용하여 이러한 인덱스를 보존합니다.
 ```
 
 ## 번들로 제공되는 Elasticsearch Server 사용 사례
@@ -144,7 +148,7 @@ Caused by: org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgume
 
 1. 라이프레이를 중지합니다.
 
-1. `[Liferay Home]/elasticsearch-sidecar/` 또는 `[Liferay Home]/elasticsearch7`을 삭제합니다. 이 폴더에는 Sidecar Elasticsearch 런타임이 있습니다.
+1. `[Liferay Home]/elasticsearch-sidecar/` 또는 `[Liferay Home]/elasticsearch7`삭제합니다. 이 폴더에는 Sidecar Elasticsearch 런타임이 있습니다.
 
 1. `삭제 [Liferay Home]/data/elasticsearch7`. 이 폴더에는 색인 데이터가 있습니다.
 

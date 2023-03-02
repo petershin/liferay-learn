@@ -1,3 +1,7 @@
+---
+uuid: 27134ffc-6d69-4466-bdd2-1688321591dc
+---
+
 # 가상 인스턴스 이해
 
 Liferay DXP는 하나의 설치에서 여러 "포털"을 호스팅할 수 있습니다. 이를 가상 인스턴스라고 합니다. 각 가상 인스턴스에는 완전히 별도의 데이터와 구성이 있습니다. 각각은 고유한 도메인 이름을 통해 액세스되며 모든 의도와 목적을 위해 추가 인스턴스와 설치를 공유하는 별도의 Liferay 기반 구현입니다.
@@ -10,7 +14,7 @@ Liferay DXP 시스템의 구성은 서로 다른 [범위](../understanding-confi
 설치에 가상 인스턴스가 하나만 포함된 경우 시스템 범위 구성과 가상 인스턴스 범위 구성 간에 실질적인 차이는 없습니다. 두 구성 유형 모두 시스템 전체에 적용됩니다.
 ```
 
-Liferay DXP 설치 및 데이터베이스를 호스팅하는 서버가 이미 있을 수 있습니다. 많은 [사용자](../../../users-and-permissions/users/understanding-users.md), [사이트](../../site-building.md)및 특정 [인스턴스 설정](.//instance-configuration.md)가 있습니다. 유사한 두 번째 설치가 필요한 경우 *가상 인스턴스* 을 추가하는 것이 적합할 수 있습니다.
+Liferay DXP 설치 및 데이터베이스를 호스팅하는 서버가 이미 있을 수 있습니다. 많은 [사용자](../../../users-and-permissions/users/understanding-users.md), [사이트](../../../site-building.md)및 특정 [인스턴스 설정](./instance-configuration.md)가 있습니다. 유사한 두 번째 설치가 필요한 경우 *가상 인스턴스* 추가하는 것이 적합할 수 있습니다.
 
 고유한 도메인 이름으로 인해 방문자는 올바른 가상 인스턴스로 안내됩니다. 가상 인스턴스는 애플리케이션 서버와 OSGi 컨테이너를 공유하므로 다음 사용자 정의도 공유합니다.
 
@@ -35,5 +39,5 @@ Liferay DXP 설치 및 데이터베이스를 호스팅하는 서버가 이미 �
 ## 관련 항목
 
 * [보안](../../../installation-and-upgrades/securing-liferay.md)
-* [검색](./../../using-search.md)
+* [수색](../../../using-search.md)
 * [시스템 설정](../system-settings.md)

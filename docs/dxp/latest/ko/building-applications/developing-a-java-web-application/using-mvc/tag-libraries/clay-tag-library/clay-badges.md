@@ -1,3 +1,7 @@
+---
+uuid: df175a66-7f33-40e4-9e81-ffe60649e0db
+---
+
 # 점토 배지
 
 배지는 알림 또는 읽지 않은 새 메시지와 같은 중요한 정보를 강조 표시하는 데 도움이 됩니다. 배지에는 원형 테두리가 있으며 숫자를 지정하는 데만 사용됩니다. 여기에는 앱에 추가할 수 있는 다양한 유형의 Clay 배지가 포함됩니다.
@@ -22,7 +26,7 @@
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="87" style="secondary" />
+    <clay:badge displayType="secondary" label="87" />
 
     <div>Secondary</div>
 </div>
@@ -34,7 +38,7 @@
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="91" style="info" />
+    <clay:badge displayType="info" label="91" />
 
     <div>Info</div>
 </div>
@@ -46,7 +50,7 @@
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="130" style="danger" />
+    <clay:badge displayType="danger" label="130" />
 
     <div>Error</div>
 </div>
@@ -58,7 +62,7 @@
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="1111" style="success" />
+    <clay:badge displayType="success" label="1111" />
 
     <div>Success</div>
 </div>
@@ -70,7 +74,7 @@
 
 ```jsp
 <div class="col-md-1">
-    <clay:badge label="21" style="warning" />
+    <clay:badge displayType="warning" label="21" />
 
     <div>Warning</div>
 </div>

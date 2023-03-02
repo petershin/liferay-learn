@@ -7,10 +7,12 @@ toc:
 - ./search-experiences/search-blueprints-elements-reference.md
 - ./search-experiences/search-blueprints-configuration-reference.md
 - ./search-experiences/creating-and-managing-elements.md
+uuid: 4955593b-f8dd-4b87-bffa-6cb10c97e9e2
 ---
+
 # 경험 검색
 
-{bdg-link-secondary}`사용 가능한 Liferay DXP 7.4 업데이트 5+; 7.3 업데이트 6+ <#getting-liferay-search-experiences>`
+{bdg-link-secondary}`[사용 가능한 Liferay DXP 7.4 업데이트 5+; 7.3 업데이트 6+](#getting-liferay-search-experiences)`
 
 ```{toctree}
 :maxdepth: 1
@@ -49,14 +51,15 @@ Liferay Enterprise Search Experiences 앱에는 최종 사용자의 검색 경�
 
 ## Liferay 검색 경험 얻기
 
-Liferay 검색 경험은 Liferay DXP 7.3에서 [Liferay 기업 검색](../liferay-enterprise-search.md) 구독 및 [Liferay 7.4에서 Liferay DXP와 함께 제공](./activating-liferay -enterprise-search.md). 자세한 내용은 [LES 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651#DXP-7.3-LES)를 확인하세요. 
+Liferay 검색 경험은 Liferay DXP 7.3에서 [Liferay 기업 검색](../liferay-enterprise-search.md) 구독 및 [Liferay 7.4에서 Liferay DXP와 함께 제공](./activating-liferay -enterprise-search.md). 자세한 내용은 [LES 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651#DXP-7.3-LES)를 확인하세요.
 
-| 버전 가용성          | 설치 방법                                                                                                               | 배송 방법 수정                                                                                              |
-|:--------------- |:------------------------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------------------------- |
-| DXP 7.4 업데이트 5+ | [번들 및 활성화](activating-liferay-enterprise-search.md)                                                                 | [DXP 업데이트](../../../installation-and-upgrades/maintaining-a-liferay-installation/updating-liferay.md) |
-| DXP 7.3 업데이트 6+ | [다운로드](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3) 및 설치(아래 단계) | 앱 출시                                                                                                  |
+| 버전 가용성          | 설치 방법                                                                                                               | 배송 방법 수정                                                                                           |
+|:--------------- |:------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------- |
+| DXP 7.4 업데이트 5+ | [번들 및 활성화](activating-liferay-enterprise-search.md)                                                                 | [DXP 업데이트](../../installation-and-upgrades/maintaining-a-liferay-installation/updating-liferay.md) |
+| DXP 7.3 업데이트 6+ | [다운로드](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3) 및 설치(아래 단계) | 앱 출시                                                                                               |
 
-Liferay DXP 7.3에서 검색 경험은 LES 가입자에게 애드온 애플리케이션으로 제공됩니다.
+
+Liferay DXP 7.3에서 검색 경험은 LES 가입자에게 추가 애플리케이션으로 제공됩니다.
 
 1. [고객 포털](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3)에서 앱을 다운로드하십시오.
 1. Liferay DXP에 애플리케이션 설치 
@@ -68,5 +71,5 @@ Liferay DXP 7.3에서 검색 경험은 LES 가입자에게 애드온 애플리�
 Search Experiences 애플리케이션은 Liferay의 다른 기본 애플리케이션과 일관성을 유지하기 위해 REST API 엔드포인트(경로 `search-experiences-rest`아래)를 게시하고 사용합니다.
 
 ```{warning}
-타사 코드가 Search Experiences API를 사용하는 것은 휘발성이므로 권장하지 않습니다. 여기에는 [Blueprints 미리보기 기능](./search-experiences/creating-에서만 사용하도록 의도된 `/search` 엔드포인트가 포함됩니다. and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar). 기능이 발전함에 따라 스키마 변경이 발생할 것으로 예상되며 Liferay는 검색 경험 API를 사용하는 사용자 정의 코드를 지원하지 않습니다. 이 결정은 향후 API가 더 안정됨에 따라 변경될 수 있습니다.
+타사 코드가 검색 경험 API를 사용하는 것은 휘발성이므로 권장하지 않습니다. 여기에는 [블루프린트 미리보기 기능](./search-experiences/creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) 에서만 사용하도록 의도된 `/search` 엔드포인트가 포함됩니다. 기능이 발전함에 따라 스키마 변경이 발생할 것으로 예상되며 Liferay는 검색 경험 API를 사용하는 사용자 정의 코드를 지원하지 않습니다. 이 결정은 향후 API가 더 안정됨에 따라 변경될 수 있습니다.
 ```

@@ -1,13 +1,15 @@
 ---
 toc:
-- ./salesforce/liferay-commerce-connector-to-salesforce.md
+- ./salesforce/liferay-connector-to-salesforce.md
+uuid: 73722c95-f529-43a5-93e0-bffb0a1cda8c
 ---
+
 # 판매 인력.
 
 ```{toctree}
 :maxdepth: 1
 
-salesforce/liferay-commerce-connector-to-salesforce.md
+salesforce/liferay-connector-to-salesforce.md
 ```
 
 ```{raw} html

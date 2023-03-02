@@ -1,3 +1,7 @@
+---
+uuid: e7769e8b-2afa-411c-bb53-413bddea507e
+---
+
 # 메뉴 디스플레이 구성
 
 [메뉴 디스플레이](./using-the-navigation-menus-application.md)을 표시하고 구성하려면 [메뉴 디스플레이 조각](../creating-pages/building-and-managing-content-pages/page-fragments-user-interface-reference.md#menu-display) 또는 메뉴 디스플레이 위젯을 사용할 수 있습니다. 이 두 옵션 중 하나를 사용하여 사이트에 대한 메뉴 표시 옵션, 수준 및 동작을 정의할 수 있습니다.
@@ -10,11 +14,11 @@ Liferay를 처음 사용하는 경우 메뉴 표시 조각을 사용하여 사�
 
 {bdg-secondary}`가능 7.4+`
 
-Liferay 내비게이션 메뉴 애플리케이션을 사용하면 콘텐츠 페이지의 어느 사이트에나 내비게이션 메뉴를 생성할 수 있습니다. 이 탐색 메뉴는 사이트의 페이지 계층 구조 또는 Liferay의 [탐색 메뉴 응용 프로그램](./using-the-navigation-menus-application.md)을 사용하여 정의한 다른 계층 구조를 기반으로 합니다. 메뉴 표시 스타일 옵션과 탐색에 포함할 하위 수준의 수를 정의할 수도 있습니다.
+Liferay 내비게이션 메뉴 애플리케이션을 사용하면 콘텐츠 페이지의 어느 위치에나 내비게이션 메뉴를 생성할 수 있습니다. 이 탐색 메뉴는 사이트의 페이지 계층 구조 또는 Liferay의 [탐색 메뉴 응용 프로그램](./using-the-navigation-menus-application.md)을 사용하여 정의한 다른 계층 구조를 기반으로 합니다. 메뉴 표시 스타일 옵션과 탐색에 포함할 하위 수준의 수를 정의할 수도 있습니다.
 
 메뉴 표시 조각은 콘텐츠 페이지의 조각 및 위젯 섹션 아래에 나타납니다. 콘텐츠 페이지의 다른 조각과 마찬가지로 이 조각을 추가하고 구성합니다. 자세한 내용은 [콘텐츠 페이지에 요소 추가](../creating-pages/using-content-pages/adding-elements-to-content-pages.md) 및 [단편 구성](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)을 참조하십시오.
 
-![메뉴 표시 조각은 콘텐츠 페이지의 조각 및 위젯 섹션 아래에 나타납니다.](./configuring-menu-displays/images/06.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![메뉴 표시 조각은 콘텐츠 페이지의 조각 및 위젯 섹션 아래에 나타납니다.](./configuring-menu-displays/images/06.png)
 
 두 가지 방법을 사용하여 메뉴 표시 조각에서 페이지 및 하위 페이지의 계층 구조를 구축할 수 있습니다.
 
@@ -25,7 +29,7 @@ Liferay 내비게이션 메뉴 애플리케이션을 사용하면 콘텐츠 페�
 
 ## 메뉴 표시 위젯 구성
 
-다음은 메뉴 표시 위젯에서 가능한 모든 옵션입니다. Configuration 메뉴에 접근하려면 Menu Display 위젯 상단의 ![Options icon](../../images/icon-widget-options.png) 을 클릭하세요.
+다음은 메뉴 표시 위젯에서 가능한 모든 옵션입니다. Configuration 메뉴에 접근하려면 Menu Display 위젯 상단의 ![Options icon](../../images/icon-widget-options.png) 클릭하세요.
 
 ![구성 메뉴로 이동합니다.](./configuring-menu-displays/images/01.png)
 
@@ -46,7 +50,7 @@ Liferay 내비게이션 메뉴 애플리케이션을 사용하면 콘텐츠 페�
 
 ### 디스플레이 템플릿
 
-탐색 메뉴에 대해 [위젯 템플릿](../displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) 을 선택할 수 있습니다.
+탐색 메뉴에 대해 [위젯 템플릿](../displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) 선택할 수 있습니다.
 
 ![표시 템플릿을 선택합니다.](./configuring-menu-displays/images/03.png)
 
@@ -69,12 +73,12 @@ Liferay 내비게이션 메뉴 애플리케이션을 사용하면 콘텐츠 페�
 
 ![표시할 메뉴 항목을 선택합니다.](./configuring-menu-displays/images/04.png)
 
-| 분야             | 묘사                                                                                                               |
-|:-------------- |:---------------------------------------------------------------------------------------------------------------- |
-| **메뉴 항목으로 시작** | 레벨 유형 선택: _레벨_, _현재 메뉴 항목에 상대적인 레벨_, 또는 _부모 선택_.                                                                 |
-| **레벨 수**       | 표시할 레벨 번호를 0에서 4까지 선택합니다. 수준 0은 상위 페이지를 나타내고 수준 1은 첫 번째 수준의 하위 페이지를 나타냅니다.                                       |
-| **표시할 수준:**    | 탐색에 표시할 수준 수를 1에서 무제한까지 선택합니다.                                                                                   |
-| **하위 수준 확장:**  | 이 드롭다운 메뉴에서 _자동_ 또는 _모두_ 을 선택합니다. 이는 내비게이션 위로 마우스를 가져가면 내비게이션 수준을 한 번에 하나씩 자동으로 표시할지 아니면 모든 수준을 한 번에 표시할지 결정합니다. |
+| 분야             | 묘사                                                                                                             |
+|:-------------- |:-------------------------------------------------------------------------------------------------------------- |
+| **메뉴 항목으로 시작** | 레벨 유형 선택: _레벨_, _현재 메뉴 항목에 상대적인 레벨_, 또는 _부모 선택_.                                                               |
+| **레벨 수**       | 표시할 레벨 번호를 0에서 4까지 선택합니다. 수준 0은 상위 페이지를 나타내고 수준 1은 첫 번째 수준의 하위 페이지를 나타냅니다.                                     |
+| **표시할 수준:**    | 탐색에 표시할 수준 수를 1에서 무제한까지 선택합니다.                                                                                 |
+| **하위 수준 확장:**  | 이 드롭다운 메뉴에서 _자동_ 또는 _모두_ 선택합니다. 이는 내비게이션 위로 마우스를 가져가면 내비게이션 수준을 한 번에 하나씩 자동으로 표시할지 아니면 모든 수준을 한 번에 표시할지 결정합니다. |
 
 ## 추가 정보
 

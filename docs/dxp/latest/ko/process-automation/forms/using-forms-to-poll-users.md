@@ -1,3 +1,7 @@
+---
+uuid: 1f2bb9d9-cace-4b58-9ba5-2b5c48762c92
+---
+
 # 양식을 사용하여 사용자 설문 조사
 
 이전 버전의 Liferay에서 사이트 관리자는 사이트 관리 &rarr; 콘텐츠 및 데이터 메뉴. 이 애플리케이션은 [Liferay 7.3에서 사용되지 않음](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in- 7-3) 및 [Liferay 7.4에서 제거됨](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated- 에서-7-4).
@@ -25,6 +29,10 @@ Liferay 7.2 &rarr; 7.3 &rarr; 7.4의 경로를 따라 업그레이드하는 경�
 ```
 
 ![사용자는 더 이상 양식을 제출할 수 없지만 현재 제출된 데이터에 대한 양식 보고서를 볼 수 있습니다.](./using-forms-to-poll-users/images/03.png)
+
+사용자가 제출 후 양식을 보면 Liferay가 메시지를 표시합니다. Liferay U49+/GA49+의 경우 이 메시지의 머리글 및 본문 콘텐츠를 사용자 지정할 수 있습니다. 그렇지 않으면 기본 메시지가 나타납니다.
+
+![제출을 사용자당 하나로 제한할 때 경고 메시지를 구성합니다.](./using-forms-to-poll-users/images/05.png)
 
 ### 만료 날짜 추가
 
@@ -60,21 +68,20 @@ Liferay 7.2 &rarr; 7.3 &rarr; 7.4의 경로를 따라 업그레이드하는 경�
    -  **필드 유형:** 여러 줄
    -  **필수 필드:** 활성화됨
 
-1. *게시* 을 클릭하여 사용자가 양식을 사용할 수 있도록 합니다.
+1. *게시* 클릭하여 사용자가 양식을 사용할 수 있도록 합니다.
    
    양식은 직접 링크를 통해 액세스하거나 Liferay 페이지에 양식을 표시하여 액세스할 수 있습니다. 자세한 내용은 [양식](creating-and-managing-forms/creating-forms.md#publishing-a-form) 게시를 참조하십시오. 
-
 
 ## 투표를 양식으로 업그레이드
 
 Liferay 7.2 &rarr; 7.3 &rarr; 7.4의 경로를 따라 Liferay를 업그레이드하는 경우 설문 조사가 Forms를 사용하도록 자동으로 업그레이드됩니다. 7.4 수명 주기 동안 이 작업을 수행하기 위한 업그레이드 프로세스가 향상되었습니다. Liferay 7.4 GA/업데이트 27부터는 이제
 
-- 설문 조사가 Form 엔터티가 되고 Forms 애플리케이션 및 API로 관리할 수 있도록 백엔드에서 엔터티를 변환합니다.
+- 투표가 Form 엔터티가 되고 Forms 애플리케이션 및 API로 관리할 수 있도록 백엔드에서 엔터티를 변환합니다.
 - 투표와 유사한 동작을 제공하는 양식 설정을 활성화합니다.
-- 설문 조사가 설문 조사 표시 위젯의 페이지에 표시된 경우 업그레이드 후 양식 위젯의 페이지에 표시됩니다.
+- 투표가 투표 표시 위젯의 페이지에 표시된 경우 업그레이드 후 양식 위젯의 페이지에 표시됩니다.
 
 ```{warning}
-DXP 업데이트 27/CE GA 27 이전의 Liferay 7.4 버전 설치 [upgraded](../../installation-and-upgrades/upgrading-liferay.md)의 경우 업그레이드 프로세스가 완료되지 않았습니다. 설문 조사를 완전히 업그레이드하려면
+DXP 업데이트 27/CE GA 27 이전의 Liferay 7.4 버전 설치 [upgraded](../../installation-and-upgrades/upgrading-liferay.md)의 경우 업그레이드 프로세스가 완료되지 않았습니다. 투표를 완전히 업그레이드하려면
 
 - _사용자당 하나의 제출로 제한_ 설정이 양식에 구성되어 있는지 확인하십시오.
 - 페이지에 있던 투표 표시 위젯을 양식 위젯으로 수동으로 교체합니다.

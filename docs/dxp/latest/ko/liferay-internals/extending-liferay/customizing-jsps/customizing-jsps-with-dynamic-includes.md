@@ -1,15 +1,18 @@
-# Dynamic Include로 JSP 사용자 지정
+---
+uuid: b0ba6d6d-3621-4074-8fe5-2d5e7067679a
+---
 
-[`liferay-util:dynamic-include` 태그](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html) 는 콘텐츠(JavaScript 코드, HTML, 등)를 주입할 수 있는 자리 표시자입니다. 예제 프로젝트는 동적 포함으로 콘텐츠를 삽입하는 방법을 보여줍니다.
+# Dynamic Include로 JSP 사용자 정의
+
+[`liferay-util:dynamic-include` 태그](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html) 콘텐츠(JavaScript 코드, HTML, 등)를 주입할 수 있는 자리 표시자입니다. 예제 프로젝트는 동적 포함으로 콘텐츠를 삽입하는 방법을 보여줍니다.
 
 ## 예제 프로젝트 배포
-
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+Then, follow these steps:
 
-1. [Dynamic Include로 JSP 사용자 지정](./liferay-n3q9.zip)을 다운로드하고 압축을 풉니다.
+1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip).
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
@@ -40,7 +43,7 @@
 
 1. 사이트 페이지로 이동하고 편집 아이콘(![Edit icon](../../../images/icon-edit.png))을 클릭합니다. N3Q9 Baker 포틀릿을 페이지에 추가하십시오. 위젯은 샘플 위젯에서 찾을 수 있습니다.
 
-   ![사이트 페이지에 N3Q9 Baker 포틀릿을 추가합니다.](./customizing-jsps-with-dynamic-includes/images/01.png)
+   ![N3Q9 Baker Portlet을 사이트 페이지에 추가하십시오.](./customizing-jsps-with-dynamic-includes/images/01.png)
 
    처음 두 줄은 N3Q9 Baker Portlet에서 가져오지만 세 번째 줄은 N3Q9 Able 모듈의 동적 포함에서 삽입됩니다.
 
@@ -77,6 +80,6 @@
    :language: jsp
 ```
 
-동적 포함 `키` 이 위의 `register()` 메서드에서 설정한 대상과 일치하는지 확인하세요.
+동적 포함 `키` 위의 `register()` 메서드에서 설정한 대상과 일치하는지 확인하세요.
 
-JSP 및 포틀릿에 대한 자세한 내용은 [JSP 및 MVC 포틀릿 사용](../../../building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md) 을 참조하십시오.
+JSP 및 포틀릿에 대한 자세한 내용은 [JSP 및 MVC 포틀릿 사용](../../../building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md) 참조하십시오.

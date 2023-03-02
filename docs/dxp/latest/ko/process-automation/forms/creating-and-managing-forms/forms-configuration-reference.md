@@ -1,14 +1,18 @@
+---
+uuid: bbfca008-42a3-4c93-af71-b520df343a4f
+---
+
 # 양식 구성 참조
 
 다음은 필요한 구성을 빠르게 찾을 수 있도록 모든 Forms 구성에 대한 개요입니다.
 
 ## 양식 옵션
 
-사이트 간에 양식을 내보내고 가져올 수 있습니다. _내보내기/가져오기_ 메뉴에 액세스하려면 _사이트 관리_ &rarr; _콘텐츠 및 데이터_  &rarr; _양식_로 이동합니다. 오른쪽 상단의 ![Options](../../../images/icon-options.png) 아이콘을 클릭한 다음 _내보내기/가져오기_를 클릭합니다.
+사이트 간에 양식을 내보내고 가져올 수 있습니다. _내보내기/가져오기_ 메뉴에 액세스하려면 _사이트 관리_ &rarr; _콘텐츠 및 데이터_  &rarr; _양식_로 이동합니다. 오른쪽 상단의 ![Options](../../../images/icon-options.png) 아이콘을 클릭한 다음 _내보내기/가져오기_클릭합니다.
 
 ![양식을 내보내거나 가져올 수 있습니다.](./forms-configuration-reference/images/01.png)
 
-자세한 내용은 [양식 내보내기 및 가져오기](./exporting-and-importing-forms.md) 및 [사이트 페이지 및 콘텐츠 내보내기/가져오기](../../../site-building/sites/exporting-importing-site-pages-and-content.md) 을 참조하십시오.
+자세한 내용은 [양식 내보내기 및 가져오기](./exporting-and-importing-forms.md) 및 [사이트 페이지 및 콘텐츠 내보내기/가져오기](../../../site-building/sites/exporting-importing-site-pages-and-content.md) 참조하십시오.
 
 ## Form 설정
 
@@ -25,14 +29,14 @@
 | 일반                   | 사용자 인증 필요                                                         | 응답자는 양식을 제출하기 전에 로그인해야 합니다.                                                                                                                                                               |
 | 일반                   | CAPTCHA                                                           | 양식을 제출할 때 CAPTCHA 질문에 답해야 합니다.                                                                                                                                                            |
 | 일반                   | 자동으로 답변 저장                                                        | 응답자가 양식을 작성할 때 양식을 주기적으로 자동 저장하십시오.                                                                                                                                                       |
-| 일반                   | 스토리지 유형 선택                                                        | 제출된 레코드를 관리하기 위해 [스토리지 어댑터](../developer-guide/understanding-form-storage-adapters.md) 을 설정합니다. 양식이 저장된 후에는 편집할 수 없습니다.                                                                   |
+| 일반                   | 스토리지 유형 선택                                                        | 제출된 레코드를 관리하기 위해 [스토리지 어댑터](../developer-guide/understanding-form-storage-adapters.md) 설정합니다. 양식이 저장된 후에는 편집할 수 없습니다.                                                                     |
 | 일반                   | 선택 [워크플로우](./advanced-forms-usage/using-forms-with-a-workflow.md) | 양식 제출을 검토할 워크플로 정의를 선택합니다. 워크플로는 기본적으로 비활성화되어 있습니다.                                                                                                                                       |
 | 개인화                  | 성공에URL을 방향을 고치십시요                                                 | 양식이 성공적으로 제출되면 리디렉션 URL을 지정하십시오.                                                                                                                                                          |
 | 개인화                  | 제출 버튼 레이블                                                         | 제출 버튼의 레이블을 특정 사용 사례에 더 적합한 것으로 변경하십시오(예: _Vote_ 또는 _Register_).                                                                                                                          |
 | 알림                   | 각 항목에 대한 이메일 알림 보내기.                                              | 양식 레코드가 제출될 때마다 양식 작성자에게 보내는 [이메일 알림](../sharing-forms-and-managing-submissions/configuring-form-notifications.md) 여부를 지정하십시오.                                                            |
-| [Liferay 7.4 전용] 제출물 | 사용자당 하나의 제출로 제한                                                   | 로그인한 사용자에게 여러 양식 제출을 허용하지 마십시오. 또한 사용자가 양식을 작성하려면 인증을 받아야 합니다.                                                                                                                            |
-| [Liferay 7.4 전용] 제출물 | 응답자에게 부분 결과 표시                                                    | 응답자가 양식에 대한 현재 [양식 보고서](../sharing-forms-and-managing-submissions/form-reports.md#show-partial-results-to-form-respondents) 데이터를 볼 수 있도록 허용합니다. 이 기능을 활성화하면 민감한 정보를 제출하지 않도록 사용자에게 경고합니다. |
-| [Liferay 7.4 전용] 제출물 | 만료일/영원히 만료되지 않음                                                   | 양식이 만료되는 날짜를 설정하십시오. 이 날짜 이후에는 제출이 허용되지 않습니다. 양식 사용자는 양식에 액세스할 때 만료 알림을 보게 됩니다. 만료 날짜를 선택하려면 _만료 안 함_ 설정을 비활성화해야 합니다.                                                                     |
+| 제출물(Liferay 7.4만 해당) | 사용자당 하나의 제출로 제한                                                   | 인증된 사용자만 양식을 작성하도록 허용하고 여러 양식 제출을 방지합니다. 제출 후 양식을 방문하는 사용자에게는 경고 메시지가 표시됩니다. Liferay U49+/GA49+의 경우 이 메시지를 사용자 정의할 수 있습니다.                                                                |
+| 제출물(Liferay 7.4만 해당) | 응답자에게 부분 결과 표시                                                    | 응답자가 양식에 대한 현재 [양식 보고서](../sharing-forms-and-managing-submissions/form-reports.md#show-partial-results-to-form-respondents) 데이터를 볼 수 있도록 허용합니다. 이 기능을 활성화하면 민감한 정보를 제출하지 않도록 사용자에게 경고합니다. |
+| 제출물(Liferay 7.4만 해당) | 만료일/영원히 만료되지 않음                                                   | 양식이 만료되는 날짜를 설정하십시오. 이 날짜 이후에는 제출이 허용되지 않습니다. 양식 사용자는 양식에 액세스할 때 만료 알림을 보게 됩니다. 만료 날짜를 선택하려면 _만료 안 함_ 설정을 비활성화해야 합니다.                                                                     |
 
 ### 전자 우편 통보
 
@@ -40,12 +44,12 @@
 
 ![양식에 알림을 추가할 수 있습니다.](./forms-configuration-reference/images/03.png)
 
-| 분야     | 묘사                                                                |
-|:------ |:----------------------------------------------------------------- |
-| 확고한 이름 | 발신자 이름 이는 사이트 이름, 양식 이름 또는 수신자에게 유용한 정보가 될 수 있습니다.                |
-| 가정 주소  | 발신자의 이메일 주소 `noreply@example.com` 을 사용하여 수신자가 회신하지 못하도록 할 수 있습니다. |
-| 주소로    | 수신자의 이메일 주소(예: `test@example.com`)                                |
-| 주제     | 유익한 제목 줄은 수신자에게 무슨 일이 일어났는지 알려줍니다.                                |
+| 분야     | 묘사                                                              |
+|:------ |:--------------------------------------------------------------- |
+| 확고한 이름 | 발신자 이름 이는 사이트 이름, 양식 이름 또는 수신자에게 유용한 정보가 될 수 있습니다.              |
+| 가정 주소  | 발신자의 이메일 주소 `noreply@example.com` 사용하여 수신자가 회신하지 못하도록 할 수 있습니다. |
+| 주소로    | 수신자의 이메일 주소(예: `test@example.com`)                              |
+| 주제     | 유익한 제목 줄은 수신자에게 무슨 일이 일어났는지 알려줍니다.                              |
 
 자세한 내용은 [양식 알림 구성](../sharing-forms-and-managing-submissions/configuring-form-notifications.md)을 참조하십시오.
 
@@ -73,9 +77,9 @@
 
 ## 인스턴스 설정
 
-인스턴스 설정의 양식 구성 항목은 시스템 설정(아래)의 양식 항목과 동일합니다. 인스턴스 설정은 시스템 설정을 재정의하며 시스템 전체에 기본값을 설정합니다. 자세한 내용은 [구성 범위 이해](../../../system-administration/configuring-liferay/understanding-configuration-scope.md) 을 참조하십시오.
+인스턴스 설정의 양식 구성 항목은 시스템 설정(아래)의 양식 항목과 동일합니다. 인스턴스 설정은 시스템 설정을 재정의하며 시스템 전체에 기본값을 설정합니다. 자세한 내용은 [구성 범위 이해](../../../system-administration/configuring-liferay/understanding-configuration-scope.md) 참조하십시오.
 
-각 구성 속성에 대한 설명은 [시스템 설정](#system-settings)을 참조하십시오.
+각 구성 속성에 대한 설명은 [시스템 설정](#system-settings)참조하십시오.
 
 ## 시스템 설정
 
@@ -93,7 +97,7 @@
 com.liferay.dynamic.data.mapping.form.web.internal.configuration.DDMFormWebConfiguration.config
 ```
 
-파일을 `Liferay Home/osgi/configs`에 넣습니다. 자세한 내용은 [구성 파일 사용](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) 을 참조하십시오.
+파일을 `Liferay Home/osgi/configs`에 넣습니다. 자세한 내용은 [구성 파일 사용](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) 참조하십시오.
 
 | 분야                                                             | 묘사                                                                                                                                                                       |
 |:-------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

@@ -1,6 +1,10 @@
+---
+uuid: 5e95a054-5432-4645-aafe-b57d6d9c0220
+---
+
 # DXP 탐색
 
-Liferay DXP의 즉시 사용 가능한 내비게이션은 _개인 메뉴_, _글로벌 메뉴_및 _사이트 메뉴_의 세 가지 주요 영역으로 구성됩니다.
+Liferay DXP의 즉시 사용 가능한 내비게이션은 _개인 메뉴_, _전역 메뉴_및 _사이트 메뉴_의 세 가지 주요 영역으로 구성됩니다.
 
 ## 사이트 메뉴
 
@@ -20,7 +24,7 @@ Liferay DXP의 즉시 사용 가능한 내비게이션은 _개인 메뉴_, _글�
 
 ## 애플리케이션 바
 
-_애플리케이션 표시줄_ 은 각 페이지 상단에 표시되며 [사이트 메뉴](#site-menu)에 나열된 애플리케이션이 표시됩니다. 응용 프로그램 표시줄에는 현재 열려 있는 응용 프로그램에 따라 다른 옵션이 있는 작업(![Actions](../images/icon-actions.png)) 메뉴가 표시됩니다.
+_애플리케이션 표시줄_ 각 페이지 상단에 표시되며 [사이트 메뉴](#site-menu)에 나열된 애플리케이션이 표시됩니다. 응용 프로그램 표시줄에는 현재 열려 있는 응용 프로그램에 따라 다른 옵션이 있는 작업(![Actions](../images/icon-actions.png)) 메뉴가 표시됩니다.
 
 ![응용 프로그램 표시줄에서 사용할 수 있는 작업은 현재 열려 있는 응용 프로그램에 따라 다릅니다.](./navigating-dxp/images/07.png)
 
@@ -78,7 +82,7 @@ DXP _전역 메뉴_ 에는 _응용 프로그램 메뉴_ 과 _제어판_가 포�
 
 _애플리케이션 메뉴_ 에는 Liferay DXP 서버 내에서 다양한 애플리케이션을 관리할 수 있는 다양한 링크가 포함되어 있습니다.
 
-![애플리케이션 메뉴에는 모든 사이트에 적용할 수 있는 많은 전역 설정과 중요한 기능이 포함되어 있습니다.](./navigating-dxp/images/02.png)
+![응용 프로그램 메뉴에는 모든 사이트에 적용할 수 있는 많은 전역 설정과 중요한 기능이 포함되어 있습니다.](./navigating-dxp/images/02.png)
 
 다음은 _애플리케이션 메뉴_에서 관리할 수 있는 일부 애플리케이션입니다.
 
@@ -86,7 +90,7 @@ _애플리케이션 메뉴_ 에는 Liferay DXP 서버 내에서 다양한 애플
 * [워크플로우](../process-automation/workflow/introduction-to-workflow.md)
 * [원격 앱](../building-applications/client-extensions/browser-based-client-extensions.md#custom-element-client-extensions)
 
-### 제어판
+### 커머스 메뉴
 
 Liferay 7.3 CE GA6 및 Liferay DXP 7.3 GA1부터 Liferay Commerce 3.0은 이제 Liferay Portal 7.3 CE GA6 및 Liferay DXP 7.3 GA1과 함께 번들로 제공됩니다.
 
@@ -96,15 +100,15 @@ Liferay 7.3 CE GA6 및 Liferay DXP 7.3 GA1부터 Liferay Commerce 3.0은 이제 
 
 * [새 카탈로그 만들기](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html)
 * [새 채널 만들기](https://learn.liferay.com/commerce/latest/en/starting-a-store/channels/managing-channels.html)
-* [재고 관리](https://learn.liferay.com/commerce/latest/en/product-management/managing-inventory/introduction-to-managing-inventory.html)
+* [재고 관리](https://learn.liferay.com/commerce/latest/en/inventory-management.html)
 * [주문 처리](https://learn.liferay.com/commerce/latest/en/order-management/orders/processing-an-order.html)
 * 그리고 더..
 
-Liferay Commerce에 대한 자세한 내용은 [Liferay Commerce 소개](https://learn.liferay.com/commerce/latest/en/starting-a-store/introduction-to-liferay-commerce.html)을 참조하십시오.
+Liferay Commerce에 대한 자세한 내용은 [Liferay Commerce 소개](https://learn.liferay.com/commerce/latest/en/starting-a-store/introduction-to-liferay-commerce.html)참조하십시오.
 
 ### 제어반
 
-_제어판_에는 Liferay DXP 설치 또는 특정 인스턴스로 _전역적으로_ 범위를 지정할 수 있는 일반 관리 작업 및 구성이 포함되어 있습니다.
+_제어판_ 에는 Liferay DXP 설치 또는 특정 인스턴스에 대해 _전체적으로_ 범위를 지정할 수 있는 일반 관리 작업 및 구성이 포함되어 있습니다.
 
 ![제어판은 이제 전역 메뉴의 일부입니다.](./navigating-dxp/images/04.png)
 
@@ -122,7 +126,7 @@ Liferay DXP 7.3 이전 버전에서는 전역 메뉴의 내용이 화면 왼쪽�
 
 ![DXP 7.1 및 7.2의 제어판은 사이트 메뉴 위에 있습니다.](./navigating-dxp/images/06.png)
 
-## 다음
+## 무엇 향후 계획
 
 시작하기 연습을 계속하고 [첫 번째 사이트 만들기](./creating-your-first-site.md)에 대해 알아보십시오.
 

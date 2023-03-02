@@ -1,89 +1,80 @@
-# 재고 관리 참조 가이드
+---
+uuid: 4e7bfc7c-9c60-4ab1-b148-5af137667ceb
+---
 
-> 커머스 2.1+
+# 재고 관리 참조 안내서
 
-Liferay Commerce의 재고 관리는 제품 재고 수준을 관리하는 데 사용됩니다. 이 문서에서는 _Inventory_ 메뉴의 기능을 소개합니다.
+재고 설정에 액세스하려면 *전역 메뉴* (![Global Menu](../images/icon-applications-menu.png))을 열고 *Commerce* &rarr; *Inventory*로 이동합니다.
 
-재고 관리에 액세스하려면 _Global Applications_ &rarr; _Commerce_ &rarr; _Inventory_로 이동하십시오.
+![전역 메뉴에서 인벤토리 설정으로 이동합니다.](./inventory-management-reference-guide/images/01.png)
 
-![인벤토리 관리로 이동합니다.](./inventory-management-reference-guide/images/01.png)
+이 페이지에는 제품 SKU 및 해당 가용성이 표시됩니다.
 
-첫 번째 화면에는 SKU 코드(제품 코드 대신)로 식별되는 제품 변형이 가용성 세부 정보와 함께 표시됩니다.
-
-![인벤토리 섹션의 초기 화면은 카탈로그의 모든 SKU를 추적합니다.](./inventory-management-reference-guide/images/02.png)
+![이 페이지는 모든 카탈로그 SKU를 추적하고 해당 SKU의 가용성을 표시합니다.](./inventory-management-reference-guide/images/02.png)
 
 | 분야   | 묘사                                                                                                       |
 |:---- |:-------------------------------------------------------------------------------------------------------- |
-| SKU  | 인벤토리 시스템 내부의 주요 식별자입니다.                                                                                  |
-| 손에   | 서로 다른 창고에서 사용 가능한 모든 수량을 집계하여 지정된 SKU의 총 항목 수를 나타냅니다.                                                    |
-| 유효한  | 매장에서 사용할 수 있는 지정된 SKU의 항목 수량을 나타냅니다. 상거래에서는 [가용 수량] = [보유 수량] - [주문 수량] - [안전 재고 수량] 계산을 사용합니다.          |
-| 주문 시 | 열린 판매 오더에 할당된 재고 수량입니다. 이 수량은 주문이 배송될 때 소비됩니다.                                                           |
-| 들어오는 | 외부 공급업체에서 보충 형태로 배송했지만 아직 받지 못한 수량을 나타냅니다. 값은 유익한 데이터이며 계산을 기반으로 하지 않습니다. 관리자가 향후 수량을 추적하는 데 사용할 수 있습니다. |
+| SKU  | 인벤토리 시스템의 기본 식별자입니다.                                                                                     |
+| 손에   | 모든 창고에서 SKU에 대해 사용 가능한 총 단위 수입니다.                                                                        |
+| 유효한  | SKU에 대해 구매 가능한 단위 수입니다. Liferay의 계산: [사용 가능한 수량] = [보유 수량] - [주문 수량] - [안전 재고 수량].                       |
+| 주문 시 | SKU에 대한 미결 주문에 할당된 단위 수입니다. 이 수량은 주문이 배송될 때 소비됩니다.                                                       |
+| 들어오는 | SKU에 대한 보충으로 예약되었지만 아직 수령하지 않은 단위 수입니다. 값은 정보를 제공할 뿐이며 계산을 기반으로 하지 않습니다. 관리자는 이를 사용하여 향후 수량을 추적할 수 있습니다. |
 
-## SKU
+## SKU 세부 정보
 
 개별 SKU를 볼 때 개요, 주문 시, 수신 및 변경 로그의 네 가지 탭이 있습니다.
 
 ### 개요
 
-_개요_ 탭에는 창고별로 지정된 SKU의 재고에 대한 간략한 요약이 표시됩니다.
+개요 탭에는 모든 창고의 SKU 재고 요약이 표시됩니다.
 
-![SKU별로 재고를 관리하세요.](./inventory-management-reference-guide/images/03.png)
+![개요 탭에는 모든 창고의 재고 요약이 표시됩니다.](./inventory-management-reference-guide/images/03.png)
 
-| 분야    | 묘사                                                                                         |
-|:----- |:------------------------------------------------------------------------------------------ |
-| 창고    | 특정 SKU가 있는 창고 목록입니다.                                                                       |
-| 손에    | 창고에 보관 중인 물리적 재고의 수입니다.                                                                    |
-| 안전 재고 | 특정 사이트에서 매장 내 판매를 위해 예약된 항목의 수량을 나타냅니다. 예: 창고에 100개의 단위가 있는 경우 20개의 단위를 안전 재고로 지정할 수 있습니다. |
-| 유효한   | 최종 사용자 재고 가용성을 계산하는 데 사용되는 실제 수량입니다.                                                       |
-| 들어오는  | 이는 해당 창고에서 곧 사용할 수 있는 수량을 나타냅니다.                                                           |
+| 분야    | 묘사                           |
+|:----- |:---------------------------- |
+| 창고    | SKU가 있는 창고 목록입니다.            |
+| 손에    | 안전 재고를 포함하여 소유하고 있는 단위 수입니다. |
+| 안전 재고 | 안전 재고로 예약된 단위 수입니다.          |
+| 유효한   | 구매 가능한 단위 수입니다.              |
+| 들어오는  | 창고에 예정된 입고 단위 수입니다.          |
 
-재고를 업데이트하거나 창고 간에 재고를 이동하려면 추가(![Add Icon](../images/icon-add.png))를 클릭하십시오.
+*추가* (![Add Button](../images/icon-add.png))을 클릭하여 재고를 업데이트하거나 창고 간에 재고를 이동합니다.
 
-![재고를 추가하거나 창고 간에 재고를 이동하십시오.](./inventory-management-reference-guide/images/04.png)
+![재고를 추가하거나 창고 간에 재고를 이동합니다.](./inventory-management-reference-guide/images/04.png)
 
 ### 주문 시
 
-_On Order_ 탭에는 이 SKU를 주문한 계정 목록이 표시됩니다. 이 탭에는 주문 ID, 주문 수량 및 만료 날짜도 표시됩니다.
+On Order 탭에는 이 SKU를 주문한 계정 목록이 표시됩니다. 이 탭에는 주문 ID, 주문 수량 및 만료 날짜도 표시됩니다.
 
-![On Order 탭은 이 SKU를 주문한 계정을 추적합니다.](./inventory-management-reference-guide/images/08.png)
+![주문 중 탭에는 선택한 SKU를 주문한 계정이 나열됩니다.](./inventory-management-reference-guide/images/05.png)
 
 ### 들어오는
 
-미래 날짜에 특정 창고로 배송될 수량을 입력할 수 있습니다.
+수신 탭에는 SKU에 대해 예약된 재고 보충이 있는 창고가 나열됩니다.
 
-![특정 창고에 대한 수량을 추가하십시오.](./inventory-management-reference-guide/images/06.png)
+![수신 탭에는 SKU에 대해 예약된 재고 보충이 있는 창고가 나열됩니다.](./inventory-management-reference-guide/images/06.png)
 
-추가(![Add Icon](../images/icon-add.png))를 클릭하여 값을 입력하십시오.
+*추가* (![Add Button](../images/icon-add.png))을 클릭하여 선택한 SKU에 대한 수신 항목을 생성합니다.
 
-![특정 창고에 대한 수량을 추가하십시오.](./inventory-management-reference-guide/images/05.png)
+![특정 창고에 대한 수량을 추가하십시오.](./inventory-management-reference-guide/images/07.png)
 
-| 분야     | 묘사                 |
-|:------ |:------------------ |
-| 양      | 추가할 항목 수입니다.       |
-| 대상     | 상품이 도착할 창고를 나타냅니다. |
-| 예상 배송일 | 배송 예정일입니다.         |
+| 분야     | 묘사                |
+|:------ |:----------------- |
+| 양      | 들어오는 아이템 수량.      |
+| 대상     | 들어오는 물품이 보관되는 창고. |
+| 예상 배송일 | 배송 예정일.           |
 
 ### 변경 로그
 
-![Changelog는 변경 사항을 추적합니다.](./inventory-management-reference-guide/images/07.png)
-
-변경 로그는 다음 이벤트를 추적합니다.
-
-* 주문을 하면 주문을 이행하기 위해 수량이 "예약"(할당)됩니다.
-* 배송이 생성되면 이전에 "예약된" 수량이 확정됩니다. 재고는 이전에 예약한 금액을 제거하여 업데이트됩니다.
-* 인벤토리에 수량 추가 시
-* 창고간에 물량이 이동할 때.
-* 배송이 취소되면 이전에 할당된 수량을 반환해야 합니다.
-* 인벤토리 항목에 대한 모든 업데이트 작업입니다.
+자세한 내용은 [인벤토리 변경 보기](./using-the-inventory-management-system.md#viewing-inventory-changes) 참조하십시오.
 
 ## 상거래 2.1 이하
 
-재고 관리는 _제어판_에 있습니다. 재고 관리에 액세스하려면 _제어판_ &rarr; _상거래_ &rarr; _재고_로 이동하십시오.
+인벤토리 설정은 제어판에 있습니다. 액세스하려면 *제어판* &rarr; *상거래* &rarr; *재고*로 이동하십시오.
 
 ## 추가 정보
 
 * [제품 변형에 대한 SKU 만들기](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md)
 * [재고 부족 조치](./low-stock-action.md)
-* [상업 창고 설정](./setting-up-commerce-warehouses.md)
+* [상업 창고 설정](./setting-up-warehouses.md)
 * [창고 참조 가이드](./warehouse-reference-guide.md)

@@ -1,3 +1,7 @@
+---
+uuid: 1561a5a9-08fd-4c84-9420-eda3aad08612
+---
+
 # 설치 개요
 
 Liferay Commerce는 Liferay DXP에 구축된 디지털 상거래 플랫폼입니다. 이 문서에서는 Liferay Commerce를 설치, 배포 및 유지 관리하기 위한 전제 조건 및 사용 가능한 옵션에 대해 설명합니다.
@@ -6,7 +10,7 @@ Liferay Commerce는 Liferay DXP에 구축된 디지털 상거래 플랫폼입니
 
 최적의 설치 환경을 위해 시작하기 전에 호환성 매트릭스 및 관련 설치 자료를 검토하십시오.
 
-* [지원되는 기술 목록은 Liferay DXP 7.3 및 Commerce 3.0 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 을 참조하십시오.<!-- * See the \[Liferay DXP 7.3 Deployment Checklist\]() for information about Liferay DXP architecture and performance tuning guidelines. -->## 라이프레이 커머스로 시작하기
+* [지원되는 기술 목록은 Liferay DXP 7.3 및 Commerce 3.0 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.<!-- * See the \[Liferay DXP 7.3 Deployment Checklist\]() for information about Liferay DXP architecture and performance tuning guidelines. -->## 라이프레이 커머스로 시작하기
 
 Liferay Commerce 3.0은 Liferay Portal 7.3 CE GA6 및 Liferay DXP 7.3 GA1과 함께 번들로 제공됩니다. Community Edition은 Commerce의 기본 버전과 함께 번들로 제공되는 반면 Enterprise Edition은 모든 기능을 갖춘 Enterprise Commerce와 함께 제공됩니다. CE 및 Enterprise 버전 모두 Docker 이미지 및 다운로드 가능한 번들로 제공됩니다.
 
@@ -34,7 +38,7 @@ Liferay Commerce의 이전 릴리스에는 Commerce 3.x 이상에서 더 이상 
 
 Liferay Commerce 2.1 이하를 설치하기 전에 설치 버전에 해당하는 시스템 요구 사항 및 Liferay DXP 배포 체크리스트를 검토하십시오.
 
-* [지원되는 기술 목록은 Liferay Commerce 2.0 호환성 매트릭스](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f) 을 참조하십시오.
+* [지원되는 기술 목록은 Liferay Commerce 2.0 호환성 매트릭스](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f) 참조하십시오.
 * [Liferay DXP 7.1 배포 체크리스트](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.1+Deployment+Checklist/cacaac23-9e02-411a-dcc9-adf86f95c513)
 * [Liferay DXP 7.2 배포 체크리스트](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.2+Deployment+Checklist.pdf/22dee290-6b06-0bdc-aa89-30bb88d1d42e?t=1566483298239)
 
@@ -48,7 +52,7 @@ Docker를 사용하여 Liferay Commerce를 설치합니다. 자세한 내용은 
 
 ### 기존 Liferay DXP 설치를 사용하여 설치
 
-기존 Liferay DXP 설치에 `LPKG` 파일을 배포하여 Liferay Commerce를 설치합니다. 자세한 내용은 [기존 설치에 Liferay Commerce 배포](./installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md) 을 참조하십시오.
+기존 Liferay DXP 설치에 `LPKG` 파일을 배포하여 Liferay Commerce를 설치합니다. 자세한 내용은 [기존 설치에 Liferay Commerce 배포](./installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md) 참조하십시오.
 
 ## 추가 정보
 

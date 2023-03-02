@@ -1,14 +1,19 @@
+---
+uuid: 7de0146e-dcec-4da0-9956-36d9e97af032
+---
+
 # 사용자 계정 API 기본 사항
 
-제어판에서 [사용자를 추가하고 관리할 수 있지만](../users/adding-and-managing-users.md) 의 REST API를 사용할 수도 있습니다. 이러한 서비스를 호출하여 사용자를 추가, 편집, 삭제할 수 있습니다.
+제어판에서 [사용자](../users/adding-and-managing-users.md) 추가하고 관리할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 이러한 서비스를 호출하여 사용자를 추가, 편집, 삭제할 수 있습니다.
 
 새 사용자를 추가하는 것으로 시작하십시오.
 
 ## 사용자 추가
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. [사용자 계정 API 기본 사항](./liferay-y6q4.zip)을 다운로드하고 압축을 풉니다.
 
@@ -112,7 +117,7 @@ cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시�
 | `-u "test@liferay.com:learn"`                                                                                                                  | 기본 인증 자격 증명             |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](../../headless-delivery/using-oauth2/using-oauth2.md)을 통해 사용자에게 권한을 부여해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](../../headless-delivery/using-oauth2.md)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
 ```
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
@@ -131,7 +136,7 @@ cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시�
 
 | 라인(약칭)                                                                          | 묘사                                                               |
 |:------------------------------------------------------------------------------- |:---------------------------------------------------------------- |
-| `UserAccountResource.Builder builder = ...`                                     | `UserAccountResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.            |
+| `UserAccountResource.Builder builder = ...`                                     | `UserAccountResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.              |
 | `UserAccountResource userAccountResource = builder.authentication(...).build()` | 기본 인증을 지정하고 `UserAccountResources` 서비스 인스턴스를 생성합니다.              |
 | `UserAccount userAccount = userAccountResource.postUserAccount(...)`            | `userAccountResource.postUserAccount` 메서드를 호출하고 데이터를 게시물에 전달합니다. |
 
@@ -187,7 +192,7 @@ java -classpath .:* Users_GET_FromInstance
 
 ## 사용자 확보
 
-다음 cURL 및 Java 명령을 사용하여 특정 사용자를 가져옵니다. `1234` 을 사용자 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 특정 사용자를 가져옵니다. `1234` 사용자 ID로 바꾸십시오.
 
 ### User_GET_ById.sh
 
@@ -223,7 +228,7 @@ java -classpath .:* -DuserId=1234 User_GET_ById
 
 ## 사용자 패치
 
-다음 cURL 및 Java 명령을 사용하여 기존 사용자의 부분 편집을 수행하십시오. `1234` 을 사용자 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 기존 사용자의 부분 편집을 수행하십시오. `1234` 사용자 ID로 바꾸십시오.
 
 ### User_PATCH_ById.sh
 
@@ -259,7 +264,7 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
 
 ## 사용자 넣기
 
-다음 cURL 및 Java 명령을 사용하여 기존 사용자를 완전히 덮어씁니다. `1234` 을 사용자 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 기존 사용자를 완전히 덮어씁니다. `1234` 사용자 ID로 바꾸십시오.
 
 ### User_PUT_ById.sh
 
@@ -297,7 +302,7 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
 
 ## 사용자 삭제
 
-다음 cURL 및 Java 명령을 사용하여 기존 사용자를 삭제합니다. `1234` 을 사용자 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 기존 사용자를 삭제합니다. `1234` 사용자 ID로 바꾸십시오.
 
 ### User_DELETE_ById.sh
 
@@ -333,4 +338,4 @@ java -classpath .:* -DuserId=1234 User_DELETE_ById
 
 ## 추가 정보
 
-[API 탐색기](../../headless-delivery/consuming-apis/consuming-rest-services.md) 을 확인하여 모든 사용자 관련 REST 서비스 목록을 확인하십시오.
+[API 탐색기](../../headless-delivery/consuming-apis/consuming-rest-services.md) 확인하여 모든 사용자 관련 REST 서비스 목록을 확인하십시오.

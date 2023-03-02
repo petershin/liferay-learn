@@ -1,14 +1,22 @@
+---
+uuid: 3de2268a-455a-4b8f-be7b-284ea1c1d267
+---
+
 # 개체 만들기
 
 {bdg-secondary}`사용 가능한 Liferay 7.4+`
 
-Liferay Objects는 Liferay UI에서 개발 기능을 제공합니다. 개체를 사용하면 코드를 작성하거나 수동으로 모듈을 배포하지 않고도 완전히 통합된 Liferay 애플리케이션을 구축할 수 있습니다. 이 프로세스에는 객체 정의의 초기 초안 작성 [, 초안 편집 [, 초안 작성](#editing-object-drafts) , 마지막 [게시](#publishing-object-drafts) 새 응용 프로그램 작성을](#creating-object-drafts) 합니다. 개체 초안을 게시하면 개체 관리 페이지를 통해 언제든지 관리 및 확장할 수 있는 완전히 통합된 Liferay 애플리케이션이 생성됩니다.
+Liferay Objects는 Liferay UI에서 개발 기능을 제공합니다. 개체를 사용하면 코드를 작성하거나 수동으로 모듈을 배포하지 않고도 완전히 통합된 Liferay 애플리케이션을 구축할 수 있습니다. 이 프로세스에는 객체 정의의 초기 초안 작성 [, 초안 편집 [, 초안 작성](#editing-object-drafts) , 마지막으로 게시 [새](#publishing-object-drafts) 프로그램 작성](#creating-object-drafts) 포함합니다. 개체 초안을 게시하면 개체 관리 페이지를 통해 언제든지 관리 및 확장할 수 있는 완전히 통합된 Liferay 애플리케이션이 생성됩니다.
+
+```{important}
+Liferay는 개체 정의를 게시할 때 데이터베이스 테이블을 생성하므로 [데이터베이스 구성](../../../installation-and-upgrades/reference/database-configurations.md에 설명된 높은 보안 데이터베이스 관행으로 개체를 사용할 수 없습니다. #high-security-database-user-practices).
+```
 
 ## 개체 초안 만들기
 
 개체 초안은 개체 응용 프로그램을 만드는 데 필요한 데이터를 저장하는 응용 프로그램 템플릿입니다. 개체 초안을 만들려면 다음 단계를 따르세요.
 
-1. *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *Control Panel* 탭으로 이동하여 *Objects*을 클릭합니다.
+1. *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *Control Panel* 탭으로 이동하여 *Objects*클릭합니다.
 
 1. *추가* 버튼(![Add Button](../../../images/icon-add.png))을 클릭합니다.
 
@@ -22,9 +30,9 @@ Liferay Objects는 Liferay UI에서 개발 기능을 제공합니다. 개체를 
 
    ![개체 초안의 레이블, 복수형 레이블 및 이름을 입력합니다.](./creating-objects/images/01.png)
 
-1. *저장*을 클릭합니다.
+1. *저장*클릭합니다.
 
-일단 저장하면 구성이나 데이터 요소 없이 빈 개체 초안이 생성됩니다. 시스템 개체와 함께 개체 관리에서 초안을 볼 수 있습니다. 생성 프로세스를 완료하려면 초안을 [편집](#editing-object-drafts) 한 다음 [이를 Liferay 인스턴스에 게시해야](#publishing-object-drafts).
+일단 저장하면 구성이나 데이터 요소 없이 빈 개체 초안이 생성됩니다. 시스템 개체와 함께 개체 관리에서 초안을 볼 수 있습니다. 생성 프로세스를 완료하려면 초안을 [편집](#editing-object-drafts)한 다음 Liferay 인스턴스에 [게시](#publishing-object-drafts)해야 합니다.
 
 ![개체 관리에서 새 개체 초안을 볼 수 있습니다.](./creating-objects/images/02.png)
 
@@ -39,84 +47,97 @@ Liferay Objects는 Liferay UI에서 개발 기능을 제공합니다. 개체를 
 객체 초안을 편집하려면 다음 단계를 따르십시오.
 
 1. 개체 관리 페이지에서 새로 생성된 개체 초안을 클릭하여 편집을 시작합니다.
-
+   
    개체 기능 및 구성 옵션은 세부 정보, 필드, 관계, 레이아웃, 작업, 보기, 유효성 검사 및 상태 관리자 탭으로 구성됩니다.
-
+   
    ![개체 기능 및 구성 옵션은 8개의 탭으로 구성됩니다.](./creating-objects/images/03.png)
 
-1. *필드* 탭으로 이동하여 사용자 지정 필드를 추가합니다. 각 필드는 특정 유형의 값을 저장하기 위한 데이터베이스 열을 나타냅니다. 자세한 내용은 [개체에 필드 추가](./fields/adding-fields-to-objects.md) 을 참조하십시오.
-
+1. *필드* 탭을 클릭하여 사용자 지정 필드를 추가합니다. 각 필드는 특정 유형의 값을 저장하기 위한 데이터베이스 열을 나타냅니다. [개체에 필드 추가](./fields/adding-fields-to-objects.md)참조하십시오.
+   
    기본적으로 모든 개체에는 작성자, 생성 날짜, 외부 참조 코드, ID, 수정 날짜 및 상태와 같은 시스템 필드가 포함됩니다.
-
+   
    ![필드 탭에서 개체에 필드를 추가합니다.](./creating-objects/images/04.png)
 
-1. (선택 사항) 관계를 추가하려면 *관계* 탭으로 이동합니다. 관계는 해당 항목을 연결하는 데 사용할 수 있는 개체 정의 간의 연결입니다. 자세한 내용은 [객체 관계 정의](./relationships/defining-object-relationships.md) 을 참조하십시오.
-
+1. (선택 사항) 관계를 추가하려면 *관계* 탭을 클릭합니다. 관계는 해당 항목을 연결하는 데 사용할 수 있는 개체 정의 간의 연결입니다. [개체 관계 정의](./relationships/defining-object-relationships.md)참조하십시오.
+   
    ![관계 탭에서 개체에 관계를 추가합니다.](./creating-objects/images/05.png)
 
-1. (선택 사항) 레이아웃을 추가하려면 *레이아웃* 탭으로 이동합니다. 개체 레이아웃은 개체 항목을 만들고 볼 때 필드 및 관계가 표시되는 방식을 결정합니다. 자세한 내용은 [개체 레이아웃 디자인](./layouts/designing-object-layouts.md) 을 참조하십시오.
+1. (선택 사항) 레이아웃을 추가하려면 *레이아웃* 탭을 클릭합니다. 개체 레이아웃은 개체 항목을 만들고 볼 때 필드와 관계가 표시되는 방식을 결정합니다. [개체 레이아웃 디자인](./layouts/designing-object-layouts.md)을 참조하십시오. 
 
    ```{note}
    사용자 정의 레이아웃을 추가하지 않고 기본값으로 설정하면 개체는 해당 항목에 대해 자동으로 생성된 레이아웃을 사용합니다. 이 레이아웃에는 모든 개체 필드를 사전순으로 표시하고 관계는 표시하지 않는 단일 탭이 있습니다. 관계를 표시하려면 전용 관계 탭이 있는 사용자 정의 레이아웃을 만들어야 합니다.
    ```
 
-   ![레이아웃 탭에서 개체에 사용자 정의 레이아웃을 추가합니다.](./creating-objects/images/06.png)
+![레이아웃 탭에서 개체에 사용자 정의 레이아웃을 추가합니다.](./creating-objects/images/06.png)
 
-1. (선택 사항) 사용자 지정 작업을 추가하려면 작업 탭으로 이동합니다. 각 작업은 설정된 트리거에 따라 자동으로 실행되는 작업을 정의합니다. 자세한 내용은 [개체 작업 정의](./actions/defining-object-actions.md) 을 참조하십시오.
-
+1. (선택 사항) 사용자 지정 작업을 추가하려면 작업 탭을 클릭합니다. 각 작업은 설정된 트리거에 따라 자동으로 실행되는 작업을 정의합니다. [개체 작업 정의](./actions/defining-object-actions.md)참조하십시오.
+   
    ![작업 탭에서 개체에 사용자 지정 작업을 추가합니다.](./creating-objects/images/07.png)
 
-1. (선택 사항) 사용자 지정 보기를 추가하려면 보기 탭으로 이동합니다. 개체 보기는 항목이 개체의 응용 프로그램 페이지에 표시되는 방식을 결정합니다. 자세한 내용은 [개체 보기 디자인](./views/designing-object-views.md) 을 참조하십시오.
-
+1. (선택 사항) 사용자 지정 보기를 추가하려면 보기 탭을 클릭합니다. 개체 보기는 항목이 개체의 응용 프로그램 페이지에 표시되는 방식을 결정합니다. [개체 보기 디자인](./views/designing-object-views.md)참조하십시오.
+   
    ![보기 탭에서 개체에 사용자 지정 보기를 추가합니다.](./creating-objects/images/08.png)
 
-1. (선택 사항) 유효성 검사 탭으로 이동하여 유효성 검사를 추가합니다. 각 유효성 검사는 유효한 필드 항목을 결정하기 위한 규칙을 설정합니다. [사용자 지정 유효성 검사 추가](./validations/adding-custom-validations.md)참조
-
+1. (선택 사항) 유효성 검사 탭을 클릭하여 유효성 검사를 추가합니다. 각 유효성 검사는 유효한 필드 항목을 결정하기 위한 규칙을 설정합니다. [사용자 지정 유효성 검사 추가](./validations/adding-custom-validations.md)참조하십시오.
+   
    ![유효성 검사 탭에서 개체에 사용자 지정 유효성 검사를 추가합니다.](./creating-objects/images/09.png)
 
-1. (선택 사항) 초안에 상태 필드를 추가한 경우 상태 관리자 탭으로 이동하여 해당 흐름을 정의합니다. 자세한 내용은 [사용자 정의 상태 추가 및 관리](./fields/adding-and-managing-custom-states.md) 을 참조하십시오.
-
+1. (선택 사항) 초안에 상태 필드를 추가한 경우 상태 관리자 탭을 클릭하여 해당 흐름을 정의합니다. [사용자 정의 상태 추가 및 관리](./fields/adding-and-managing-custom-states.md)참조하십시오.
+   
    ![상태 관리자 탭에서 상태 필드에 대한 흐름을 정의합니다.](./creating-objects/images/10.png)
 
-1. 세부 정보 탭으로 이동하여 개체 초안을 구성합니다.
+1. 세부 정보 탭을 클릭하여 개체 초안을 구성합니다.
 
 1. (선택 사항) 개체의 이름, 레이블 또는 복수형 레이블을 변경합니다.
-
+   
    ![개체의 이름, 레이블 및 복수형 레이블을 변경합니다.](./creating-objects/images/11.png)
 
-1. (선택 사항) 항목 제목을 선택합니다. 이는 UI에서 개체 항목을 식별하는 데 사용되는 필드를 결정합니다. 기본적으로 개체는 ID 필드를 사용합니다.
-
+1. 출품작 제목을 선택하세요. 이는 UI에서 객체의 항목을 식별하는 데 사용되는 필드(예: 관계 필드)를 결정합니다. 기본적으로 개체는 ID 필드를 사용합니다.
+   
    ![필드가 개체에 추가되면 항목 제목으로 선택할 수 있습니다.](./creating-objects/images/12.png)
 
-1. 개체 *범위*을 선택합니다. 개체의 데이터가 저장되는 방식을 결정합니다.
-
+1. 개체 *범위*선택합니다. 개체의 데이터가 저장되는 방식을 결정합니다.
+   
    **회사** (기본값): 회사로 범위를 지정하면 객체의 데이터가 Liferay 인스턴스별로 저장됩니다.
-
+   
    **사이트**: 사이트로 범위를 지정하면 개체의 데이터가 사이트별로 저장됩니다.
 
-1. (선택 사항) Liferay UI에서 정의가 나타나는 사이트를 결정하려면 패널 범주 키를 선택합니다.
-
+1. 패널 범주 키를 선택하여 Liferay에서 정의가 나타나는 위치를 결정합니다.
+   
    회사 범위 개체의 경우 전역 메뉴(![Global Menu](../../../images/icon-applications-menu.png))에서 탭과 범주를 선택합니다.
-
+   
    사이트 범위 개체의 경우 사이트 메뉴(![Site Menu](../../../images/icon-menu.png))에서 섹션을 선택합니다.
-
+   
    UI 메뉴에 애플리케이션을 표시하지 않으려면 이 값을 공백으로 둘 수 있습니다.
-
+   
    ![개체에 대한 범위 및 패널 범주 키를 선택합니다.](./creating-objects/images/13.png)
 
-1. (선택 사항) 계정별로 개체 항목에 대한 액세스 제한을 제한할지 여부를 결정합니다. 이 옵션은 개체가 계정 시스템 개체와 관계가 있는 경우에만 사용할 수 있습니다. 자세한 내용은 [계정](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) 의 개체 데이터에 대한 액세스 제한을 참조하십시오.
-
+1. 계정별로 개체 항목에 대한 액세스를 제한하도록 계정 제한을 구성합니다. 게시하기 전에만 이 설정을 구성할 수 있습니다.
+   
+   이 옵션은 개체가 계정 시스템 개체와의 일대다 관계의 하위 쪽에 있는 경우에만 나타납니다. [계정별 개체 데이터 액세스 제한](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md)을 참조하십시오.
+   
    ![계정별로 개체 항목에 대한 액세스 제한을 제한할지 여부를 결정합니다.](./creating-objects/images/14.png)
 
-1. 사이트에서 개체의 위젯을 표시할지 숨길지 결정합니다.
+1. 개체의 페이지 위젯을 표시하거나 숨깁니다.
+   
+   활성화된 동안 개체의 위젯을 사이트 페이지에 추가할 수 있습니다. [사이트에 개체 위젯 배포](../deploying-object-widgets-to-sites.md)참조하십시오.
 
-   활성화되면 사용자는 개체를 위젯으로 페이지에 배포할 수 있습니다. 자세한 내용은 [사이트](../deploying-object-widgets-to-sites.md) 에 개체 위젯 배포를 참조하십시오.
+1. 사용자 지정 레이아웃에 대한 분류를 활성화하거나 비활성화합니다.
+   
+   활성화된 동안 사용자 정의 레이아웃의 필드 탭에 분류 블록을 추가할 수 있습니다. [필드 탭에 분류 추가](./layouts/adding-categorization-to-fields-tabs.md)참조하십시오.
 
-   ![개체의 위젯을 표시할지 숨길지 결정합니다.](./creating-objects/images/15.png)
+1. 개체 표시 페이지에 대한 설명을 활성화하거나 비활성화합니다.
+   
+   활성화된 동안 항목 표시 페이지에서 페이지 댓글 위젯을 사용할 수 있습니다. [개체에 대한 표시 페이지 템플릿 만들기](../displaying-object-entries.md#creating-display-page-templates-for-objects)을 참조하십시오.
 
-1. *저장*을 클릭합니다.
+1. 개체 항목에 대한 기록을 활성화하거나 비활성화합니다. 게시하기 전에만 이 설정을 구성할 수 있습니다.
+   
+   활성화된 동안 개체 항목 이벤트는 감사 응용 프로그램에 나타납니다. [객체 이벤트 감사](./auditing-object-events.md)참조하십시오.
+
+1. *저장*클릭합니다.
 
 초안 구성 및 편집을 마치면 초안을 [게시](#publishing-object-drafts) 할 수 있습니다.
+
 
 ## 개체 초안 게시
 

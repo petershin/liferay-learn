@@ -1,3 +1,7 @@
+---
+uuid: 4c738c97-2353-451e-bef7-f3c9361e1b4a
+---
+
 # 마켓플레이스 사용
 
 Liferay Marketplace는 앱 공유, 탐색 및 다운로드를 위한 허브입니다. Marketplace는 전체 Liferay 생태계를 활용하여 사용자 친화적인 원스톱 상점에서 앱을 출시하고 공유합니다.
@@ -47,7 +51,7 @@ Marketplace는 친숙한 앱 스토어 경험을 제공합니다. 앱은 페이�
 * 라이프레이(DXP) 버전
 * 가격(무료 또는 유료)
 
-페이지 하단의 *Weekly Stats* 은 최신 앱과 최신 업데이트 앱을 나열하고 앱 다운로드 및 보기에 대한 추세 차트를 보여줍니다.
+페이지 하단의 *Weekly Stats* 최신 앱과 최신 업데이트 앱을 나열하고 앱 다운로드 및 보기에 대한 추세 차트를 보여줍니다.
 
 ![주간 통계는 새로운 앱, 앱 업데이트 및 Marketplace 활동 추세를 나열합니다.](./using-marketplace/images/03.png)
 
@@ -67,13 +71,13 @@ Marketplace는 친숙한 앱 스토어 경험을 제공합니다. 앱은 페이�
 
 1. 구매 유형을 선택하세요. 개인 계정 또는 회사와 관련된 Liferay 프로젝트용 앱을 구입할 수 있습니다.
 
-    A *Liferay 프로젝트* 은 팀원들이 구매하거나 개발한 앱을 공유하는 공간입니다. 필요한 권한이 있는 경우 회사를 위한 새 프로젝트를 만들 수도 있습니다.
+    A *Liferay 프로젝트* 팀원들이 구매하거나 개발한 앱을 공유하는 공간입니다. 필요한 권한이 있는 경우 회사를 위한 새 프로젝트를 만들 수도 있습니다.
 
 1. EULA 및 서비스 약관에 동의합니다.
 
-1. *구매* 을 클릭하면 거래가 완료됩니다.
+1. *구매* 클릭하면 거래가 완료됩니다.
 
-앱이 Liferay DXP에 자동으로 다운로드 및 설치됩니다. 축하합니다! Liferay Marketplace 앱을 찾고 구매하고 설치하는 방법을 알고 있습니다.
+앱이 Liferay DXP에 자동으로 다운로드 및 설치됩니다. 축하해요! Liferay Marketplace 앱을 찾고 구매하고 설치하는 방법을 알고 있습니다.
 
 ## 부록: Marketplace 플러그인 설치
 
@@ -87,7 +91,7 @@ Marketplace 플러그인을 설치하려면 다음 단계를 따르세요.
 
 1. [Marketplace 플러그인을 다운로드합니다](https://www.liferay.com/marketplace/download).
 
-2. 플러그인(`.lpkg` 파일)을 [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) 의 `배포` 폴더에 복사하거나 [App Manager](./managing-apps/using-the-app-manager.md)를 사용하여 설치하여 배포합니다.
+2. 플러그인(`.lpkg` 파일)을 [Liferay Home](../../installation-and-upgrades/reference/liferay-home.md) 의 `배포` 폴더에 복사하거나 [App Manager](./managing-apps/using-the-app-manager.md)를 사용하여 설치하여 배포합니다.
 
 이제 제어판에서 Marketplace를 사용할 수 있습니다.
 

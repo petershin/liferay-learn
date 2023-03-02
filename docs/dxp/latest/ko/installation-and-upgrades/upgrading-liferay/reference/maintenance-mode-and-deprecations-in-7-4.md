@@ -1,3 +1,7 @@
+---
+uuid: bcaaeab9-3b46-4a48-8e84-64d84d2c6015
+---
+
 # 7.4의 유지 관리 모드 및 지원 중단
 
 각각의 새로운 Liferay DXP 및 Liferay Portal 릴리스에서는 기능이 지속적인 개선을 보장하지 않거나 더 이상 사용되지 않을 수 있습니다. 기능에 대한 향상을 중지하면 *유지 관리 모드*로 설정됩니다.
@@ -59,7 +63,6 @@
 | 투표                          | 삭제됨                         | [양식/양식 보고서](../../../process-automation/forms/sharing-forms-and-managing-submissions/form-reports.md)로 대체되었습니다.                                                                                                                                           |
 | 검색 위젯(클래식)                  | 번들                          | 7.1에서 더 이상 사용되지 않습니다. [검색 위젯](../../../using-search/search-pages-and-widgets/search-results/search-results.md)로 대체됩니다.                                                                                                                                    |
 | SOAP 웹 서비스                  | 번들(기본적으로 비활성화됨)             | JSON 웹 서비스, REST 서비스 및 GraphQL 서비스로 대체되었습니다.                                                                                                                                                                                                              |
-| 솔라 커넥터                      | 삭제됨                         | 7.3에서 더 이상 사용되지 않습니다. Elasticsearch로 대체되었습니다.                                                                                                                                                                                                             |
 | 테마: Hello World             | 보관하는                        | 7.3에서 더 이상 사용되지 않습니다. 직접적인 교체는 없습니다.                                                                                                                                                                                                                      |
 | 웹 콘텐츠 검색 위젯                 | 보관하는                        |                                                                                                                                                                                                                                                           |
 
@@ -74,9 +77,10 @@
 
 다음은 7.4에서 유지 관리 모드로 이동한 기능입니다.
 
-| 특징       | 주                                                                                      |
-|:-------- |:-------------------------------------------------------------------------------------- |
-| Kaleo 양식 | [Liferay Objects](../../../building-applications/objects.md)에 대한 비즈니스 프로세스로 대체될 예정입니다. |
+| 특징       | 주                                                                                                                                        |
+|:-------- |:---------------------------------------------------------------------------------------------------------------------------------------- |
+| Kaleo 양식 | [Liferay Objects](../../../building-applications/objects.md)에 대한 비즈니스 프로세스로 대체될 예정입니다.                                                   |
+| 솔라 커넥터   | [가능한 경우 Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md) 사용하십시오. |
 
 ```{note}
 Liferay는 한 환경에서 콘텐츠를 생성하고 다른 환경에서 소비해야 하는 시나리오에서 특히 원격 라이브 스테이징을 위해 가져오기/내보내기 및 스테이징을 지속적으로 개선합니다. 자세한 내용은 [게시 도구](../../../site-building/publishing-tools.md)를 참조하세요.

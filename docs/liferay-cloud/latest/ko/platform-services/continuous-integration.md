@@ -1,38 +1,42 @@
+---
+uuid: 7c189c0f-2937-4adf-b0a6-d7e1741c3cd8
+---
+
 # 지속적인 통합
 
-Liferay Cloud는 [Jenkins](https://jenkins.io/) 을 사용하여 지속적인 통합 인프라 서비스를 지원합니다. 미리 구성된 GitHub 브랜치 중 하나에 풀 요청을 보내거나 커밋을 푸시하면 구성 가능한 자동 빌드가 트리거됩니다.
+Liferay Cloud는 [Jenkins](https://jenkins.io/) 사용하여 지속적인 통합 인프라 서비스를 지원합니다. 미리 구성된 GitHub 분기 중 하나에 풀 요청을 보내거나 커밋을 푸시하면 구성 가능한 자동 빌드가 트리거됩니다.
 
 ```{note}
 Liferay Cloud 고객('customer' 로그인 사용)은 자신의 빌드를 관리하고 검토할 수 있는 권한이 있지만 전체 관리 권한은 없습니다.
 ```
 
-기본적으로 이 자동화된 빌드는 코드를 컴파일하고 테스트를 실행하도록 구성할 수 있습니다. Liferay Cloud는 서비스를 구축하고 환경의 빌드 페이지에 서비스 상태를 표시합니다. 테스트가 실패하면 `https://ci-companyname-infra.lfr.cloud`에서 Jenkins 대시보드 및 로그를 확인할 수 있습니다.
+기본적으로 이 자동화된 빌드는 코드를 컴파일하고 테스트를 실행하도록 구성할 수 있습니다. Liferay Cloud는 서비스를 구축하고 환경의 빌드 페이지에 해당 상태를 표시합니다. 테스트가 실패하면 `https://ci-companyname-infra.lfr.cloud`에서 Jenkins 대시보드 및 로그를 확인할 수 있습니다.
 
 ```{note}
-지속적 통합은 CLI가 아닌 GitHub, GitLab 또는 Bitbucket에서 배포하는 경우에만 작동합니다.
+지속적인 통합은 CLI가 *아닌* GitHub, GitLab 또는 Bitbucket에서 배포하는 경우에만 작동합니다.
 ```
 
-자세한 내용은 [CI 서비스 제한 사항](../reference/platform-limitations.md#continuous-integration-service) 을 참조하십시오.
+자세한 내용은 [CI 서비스 제한 사항](../reference/platform-limitations.md#continuous-integration-service) 참조하십시오.
 
 ## 기본 Jenkins 파일 사용
 
-CI 서비스 버전 `liferaycloud/jenkins:2.222.1-3.2.0`부터 기본 Jenkins 파일은 재정의되지 않은 경우 사용할 수 있습니다. 기본 Jenkinsfile은 [버전 4.x.x 서비스를 사용하는] 프로젝트에 항상 사용할 수 있습니다(../reference/understanding-service-stack-versions.md).
+CI 서비스 버전 `liferaycloud/jenkins:2.222.1-3.2.0`부터 기본 Jenkins 파일은 재정의되지 않은 경우 사용할 수 있습니다. 기본 Jenkinsfile은 [버전 4.x.x 서비스를 사용하는] 프로젝트(../reference/understanding-service-stack-versions.md)에서 항상 사용할 수 있습니다.
 
 기본 Jenkinsfile은 이전에 Jenkinsfile에 저장된 모든 논리를 캡슐화하고 Jenkins 플러그인으로 이동합니다. 이는 모든 버그 수정, 보안 수정 및 개선 사항을 CI 구성 없이 적용할 수 있음을 의미합니다.
 
-그 외에도 이제 CI 파이프라인의 모든 단계를 사용자 정의할 수 있는 강력한 확장 지점 세트가 제공됩니다.
+또한 확장 지점을 사용하여 CI 파이프라인의 모든 단계를 사용자 정의할 수 있습니다.
 
 ### 기본 Jenkinsfile 활성화
 
-프로젝트가 이미 [버전 4.xx](../reference/understanding-service-stack-versions.md)로 업데이트된 경우 이 단계는 이미 완료된 것입니다. 그렇지 않으면 다음 단계를 수행하여 기본 Jenkinsfile을 활성화합니다.
+프로젝트가 [버전 4.xx](../reference/understanding-service-stack-versions.md)로 업데이트되면 기본 Jenkinsfile이 이미 활성화되어 있습니다. 그렇지 않으면 프로젝트 저장소에서 다음 단계를 따르세요.
 
-1. CI 서비스를 버전 `liferaycloud/jenkins:2.222.1-3.2.0`로 업데이트하십시오.
+1. CI 서비스를 버전 `liferaycloud/jenkins:2.222.1-3.2.0`로 업데이트합니다.
 
-1. 루트 폴더에 있는 `Jenkinsfile` 삭제
+1. 루트 폴더에 있는 `Jenkinsfile` 을 삭제합니다.
 
-1. 다음 환경 변수를 추가합니다. `LCP_CI_USE_DEFAULT_JENKINSFILE: true`
+1. CI 서비스의 `LCP.json` 파일에 다음 환경 변수를 추가합니다. `LCP_CI_USE_DEFAULT_JENKINSFILE: true`.
 
-1. Jenkins 서비스 배포
+1. [CI 서비스 배포](../build-and-deploy/deploying-changes-via-the-cli-tool.md).
 
 ### 기본 Jenkinsfile 확장
 
@@ -46,7 +50,7 @@ CI 서비스 버전 `liferaycloud/jenkins:2.222.1-3.2.0`부터 기본 Jenkins �
 
 다음은 CI 빌드 프로세스의 단계에 대한 기본 개요입니다.
 
-1. 존재하는 경우 `ci/Jenkinsfile-before-all`을 로드합니다.
+1. 존재하는 경우 `ci/Jenkinsfile-before-all`로드합니다.
 
 1. Liferay 작업 공간을 구축합니다.
 
@@ -56,11 +60,11 @@ CI 서비스 버전 `liferaycloud/jenkins:2.222.1-3.2.0`부터 기본 Jenkins �
 
 1. `ci/Jenkinsfile-before-cloud-deploy`이 있으면 로드합니다.
 
-1. 현재 분기가 배포 분기로 지정되었는지 에 따라 선택적으로 클라우드의 환경에 빌드를 배포합니다. 이것은 `LCP_CI_DEPLOY_BRANCH` 환경 변수를 통해 구성된 입니다. `LCP_CI_DEPLOY_TARGET` 환경 변수는 을 배포할 환경을 지정합니다.
+1. 현재 분기가 배포 분기인 경우 클라우드의 환경에 빌드를 배포할 수 있습니다. `LCP_CI_DEPLOY_BRANCH` 환경 변수는 배포 분기를 설정하고 `LCP_CI_DEPLOY_TARGET` 배포 환경을 지정합니다.
 
-1. 존재하는 경우 `ci/Jenkinsfile-after-all`을 로드합니다. 모든 단계가 완료되면 실행됩니다.
+1. 존재하는 경우 `ci/Jenkinsfile-after-all`로드합니다. 모든 빌드 단계가 완료되면 실행됩니다.
 
-1. 존재하는 경우 `ci/Jenkinsfile-post-always`을 로드합니다. 이것은 빌드가 실패할 때와 성공할 때 모두 실행됩니다.
+1. 존재하는 경우 `ci/Jenkinsfile-post-always`로드합니다. 빌드 성공 여부에 관계없이 실행됩니다.
 
 ```{note}
 버전 3.xx 서비스를 사용하는 경우 Jenkinsfile에 대한 이러한 확장은 대신 `lcp/ci/` 폴더에 있습니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해하기](../reference/understanding-service-stack-versions.md)를 참조하십시오.
@@ -72,7 +76,7 @@ CI 서비스 버전 `liferaycloud/jenkins:2.222.1-3.2.0`부터 기본 Jenkins �
 
 파이프라인의 추가 단계를 사용하여 외부 서비스를 호출할 수 있습니다. 예를 들어 REST API를 통해 타사 모니터링 서비스를 호출하거나 빌드 프로세스 중에 실행할 스크립트를 호출할 수 있습니다.
 
-리포지토리의 `ci/` 폴더에 고유한 `Jenkinsfile` 을 정의하여 고유한 파이프라인을 생성할 수도 있습니다. 자세한 내용은 [Jenkins 웹사이트](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/) 을 참조하십시오.
+리포지토리의 `ci/` 폴더에 고유한 `Jenkinsfile` 정의하여 고유한 파이프라인을 생성할 수도 있습니다. 자세한 내용은 [Jenkins 웹사이트](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/) 참조하십시오.
 
 ```{warning}
 외부 서비스 또는 맞춤형 파이프라인은 신중하게 사용해야 하며 Liferay 클라우드 지원 범위를 벗어납니다. 사용자 지정 Jenkins 플러그인은 지원되지 않습니다.
@@ -117,7 +121,7 @@ util.sendSlackMessage("About to create Liferay Cloud build...")
 `LCP_CI_BUILD_DAYS_TO_KEEP` | `14` | 빌드가 저장되는 일수 |
 `LCP_CI_BUILD_NUM_TO_KEEP` | `10` | 저장된 빌드 수 |
 `LCP_CI_BUILD_TIMEOUT_MINUTES` | `30` | Jenkins가 Pipeline |
-`LCP_CI_DEPLOY_BRANCH` | | [자동 배포](../build-and-deploy/automatically-deploying-ci-service-builds.md)에 사용되는 분기입니다. 이 변수가 유효한 브랜치 이름으로 설정되지 않으면 자동 배포가 비활성화됩니다. |
+`LCP_CI_DEPLOY_BRANCH` | `개발` | [자동 배포](../build-and-deploy/automatically-deploying-ci-service-builds.md)에 사용할 분기를 지정합니다. 유효한 브랜치 이름으로 설정하지 않으면 자동 배포가 비활성화됩니다. |
 `LCP_CI_DEPLOY_TARGET` | | [자동 배포](../build-and-deploy/automatically-deploying-ci-service-builds.md)가 배포될 환경을 설정합니다. `LCP_CI_DEPLOY_BRANCH`가 설정된 경우에만 사용됩니다. |
 `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` | | Liferay 서비스를 배포할 때 CI가 자동으로 적용되는 핫픽스(`.zip` 확장자 없음)의 이름입니다. `{ENV}`를 환경 이름(모두 대문자) 또는 `COMMON`으로 바꿉니다. |
 `LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20` | *stashes*가 보존되는 최근 빌드 수를 설정합니다. 보관함은 `LCP_CI_ARTIFACT_NUM_TO_KEEP` 변수에서 허용하는 것보다 더 많은 빌드에 대해 보존할 수 없습니다. |

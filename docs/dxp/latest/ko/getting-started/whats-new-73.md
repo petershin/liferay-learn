@@ -1,3 +1,7 @@
+---
+uuid: 63c82b65-7cd8-4808-9b79-2b34df0cb94d
+---
+
 # Liferay DXP 7.3의 새로운 기능
 
 Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사항이 포함되어 있습니다. 이러한 기능은 사이트 구축, 사이트 트래픽 분석, 문서 관리 및 필요한 응용 프로그램 생성 방법을 향상시킵니다. Liferay DXP 7.3에는 앱 빌더, 마스터 페이지, 자산 라이브러리 등이 포함되어 있습니다.
@@ -46,13 +50,13 @@ Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사�
 
 ### 스타일 북
 
-[Style Book](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 은 스타일 편집기 UI를 사용하여 생성할 수 있는 스타일(CSS 규칙) 그룹입니다. Style Books는 재사용 및 공유 가능한 스타일과 스타일 규칙을 활용하여 Pages에서 일관된 사용자 경험을 만들고자 하는 UX 디자이너를 위한 "디자인 시스템"을 제공합니다. 테마 작성자는 동일한 사이트에 대해 여러 Style Book을 만들 수 있으며 페이지 작성자는 특정 페이지에 대한 Style Book을 선택할 수 있습니다. 스타일 북은 여러 콘텐츠 작성자와 웹 디자이너가 새로운 경험을 만들기 위해 동시에 작업할 때 불일치를 줄이는 데 도움이 됩니다.
+[Style Book](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 스타일 편집기 UI를 사용하여 생성할 수 있는 스타일(CSS 규칙) 그룹입니다. Style Books는 재사용 및 공유 가능한 스타일과 스타일 규칙을 활용하여 Pages에서 일관된 사용자 경험을 만들고자 하는 UX 디자이너를 위한 "디자인 시스템"을 제공합니다. 테마 작성자는 동일한 사이트에 대해 여러 Style Book을 만들 수 있으며 페이지 작성자는 특정 페이지에 대한 Style Book을 선택할 수 있습니다. 스타일 북은 여러 콘텐츠 작성자와 웹 디자이너가 새로운 경험을 만들기 위해 동시에 작업할 때 불일치를 줄이는 데 도움이 됩니다.
 
 ## 콘텐츠 저작 및 관리
 
 ### 애셋 라이브러리
 
-이제 [개의 전용 라이브러리](../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) 를 생성하여 콘텐츠를 구성하고 재사용할 수 있습니다. 자산 라이브러리를 사용하면 여러 사이트에서 리소스를 더 쉽게 재사용할 수 있습니다.
+이제 [전용 라이브러리](../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) 생성하여 콘텐츠를 구성하고 재사용할 수 있습니다. 자산 라이브러리를 사용하면 여러 사이트에서 리소스를 더 쉽게 재사용할 수 있습니다.
 
 자산 라이브러리는 웹 콘텐츠에 국한되지 않습니다. 모든 자산 유형을 공유하고 필요한 사이트에 연결할 수 있습니다. 페이지를 만들거나 블로그 게시물을 작성하는 동안 콘텐츠 작성자는 연결된 자산 라이브러리에 액세스하고 이미지를 사용할 수 있습니다. 저장된 문서 또는 콘텐츠.
 
@@ -60,7 +64,7 @@ Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사�
 
 ### 컨텐츠 대시보드
 
-사용하지 않을 수 있는 컨텐츠로 가득 찬 대용량 데이터베이스를 가지고 있는 사람들을 위해 Liferay는 [컨텐츠 대시보드](../content-authoring-and-management/content-dashboard/about-the-content-dashboard.md)을 만들었습니다. 이것은 콘텐츠 작성자가 주어진 사이트뿐만 아니라 Liferay 인스턴스의 모든 사이트 및 자산 라이브러리에 대한 모든 콘텐츠에 액세스할 수 있는 원스톱 장소입니다. 이렇게 많은 양의 콘텐츠를 탐색하는 데 도움이 되도록 포괄적인 필터 세트는 콘텐츠 목록에 대한 필터 및 정렬 기능과 필요한 콘텐츠를 쉽게 찾고 감사하는 데 도움이 되는 감사 그래프를 제공합니다.
+사용하지 않을 수 있는 컨텐츠로 가득 찬 대용량 데이터베이스를 가지고 있는 사람들을 위해 Liferay는 [컨텐츠 대시보드](../content-authoring-and-management/content-dashboard/about-the-content-dashboard.md)만들었습니다. 이것은 콘텐츠 작성자가 주어진 사이트뿐만 아니라 Liferay 인스턴스의 모든 사이트 및 자산 라이브러리에 대한 모든 콘텐츠에 액세스할 수 있는 원스톱 장소입니다. 이렇게 많은 양의 콘텐츠를 탐색하는 데 도움이 되도록 포괄적인 필터 세트는 콘텐츠 목록에 대한 필터 및 정렬 기능과 필요한 콘텐츠를 쉽게 찾고 감사하는 데 도움이 되는 감사 그래프를 제공합니다.
 
 전역 메뉴 &rarr; 애플리케이션 탭을 통해 이 콘텐츠 대시보드에 액세스할 수 있습니다.
 
@@ -70,21 +74,22 @@ Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사�
 
 새로운 콘텐츠 대시보드에는 [유형별 콘텐츠 감사](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md#content-audit-tool)를 더 쉽게 해주는 도구가 포함되어 있습니다. 어휘 선택 및 콘텐츠 감사 그래프는 어휘의 각 범주에 대한 기존 자산 수를 계산합니다. 범주, 태그, 작성자, 자산 하위 유형, 사이트 등으로 필터링하여 그래프에 표시된 자산을 조정할 수 있습니다.
 
-![콘텐츠 감사 도구는 보유한 콘텐츠의 종류를 확인하는 데 도움이 됩니다.](./whats-new-73/images/08.gif)
+![콘텐츠 감사 도구는 보유하고 있는 콘텐츠의 종류를 확인하는 데 도움이 됩니다.](./whats-new-73/images/08.gif)
 
 ### 확장된 분류 기능
 
-7.3에서는 가시성을 내부 또는 공개로 [하기 위해](../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md#vocabulary-visibility)에 새로운 구성을 추가했습니다. 즉시 사용 가능한 새로운 대상, 단계 및 주제 글로벌 어휘는 사이트 전체에서 보다 체계적인 분류를 제공합니다.
+7.3에서는 [가시성을 내부 또는 공개로 설정](../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-하기 위해 어휘에 새로운 구성을 추가했습니다. tags.md#vocabulary-visibility). 즉시 사용 가능한 새로운 대상, 단계 및 주제 글로벌 어휘는 사이트 전체에서 보다 체계적인 분류를 제공합니다.
 
 ## 출판 관리
 
-[Publications](../site-building/publishing-tools/publications.md) 은 콘텐츠 제작자가 변경 사항을 준비하고 일정에 따라 게시할 수 있는 새로운 기능입니다. 이미지 업데이트, 복사 및 새 페이지 추가와 관련된 특별 계절 프로모션을 진행해야 하는 경우 게시를 생성하고 필요한 사용자를 초대하여 게시하기 전에 변경하도록 할 수 있습니다. 한 번에 여러 출판물을 작업할 수 있으므로 한 번에 많은 업데이트를 만들고 일정에 따라 롤아웃할 수 있습니다.
+[Publications](../site-building/publishing-tools/publications.md) 콘텐츠 제작자가 변경 사항을 준비하고 일정에 따라 게시할 수 있는 새로운 기능입니다. 이미지 업데이트, 복사 및 새 페이지 추가와 관련된 특별 계절 프로모션을 진행해야 하는 경우 게시를 생성하고 필요한 사용자를 초대하여 게시하기 전에 변경하도록 할 수 있습니다. 한 번에 여러 출판물을 작업할 수 있으므로 한 번에 많은 업데이트를 만들고 일정에 따라 롤아웃할 수 있습니다.
 
 ![간행물은 선택한 일정에 따라 사이트를 업데이트하는 방법을 제공합니다.](./whats-new-73/images/09.gif)
 
+
 ### 웹 콘텐츠 전용 번역 경험
 
-[새로운 번역 UI](../content-authoring-and-management/translating-pages-and-content/translating-web-content.md#manually-translating-content) 을 사용하면 프로세스를 최적화하는 병렬 UI에서 콘텐츠를 쉽게 번역할 수 있습니다. 번역가는 권한이 있는 언어로만 번역할 수 있으며 당사의 워크플로우 프로세스를 통해 이러한 번역을 간편하게 검토할 수 있습니다.
+[새로운 번역 UI](../content-authoring-and-management/translating-pages-and-content/translating-web-content.md#manually-translating-content) 사용하면 프로세스를 최적화하는 병렬 UI에서 콘텐츠를 쉽게 번역할 수 있습니다. 번역가는 권한이 있는 언어로만 번역할 수 있으며 당사의 워크플로우 프로세스를 통해 이러한 번역을 간편하게 검토할 수 있습니다.
 
 ![새로운 번역 UI는 전체 번역 과정을 수월하게 만듭니다.](./whats-new-73/images/10.png)
 
@@ -106,7 +111,7 @@ Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사�
 
 ![리디렉션을 만들고 유형을 설정할 수도 있습니다.](./whats-new-73/images/13.png)
 
-이제 사이트의 URL을 유효한 URL로 [리디렉션](../site-building/site-settings/managing-site-urls/using-the-redirection-tool.md) 할 수 있습니다. 이제 404 오류로 연결되는 이전 링크에 대해 걱정할 필요가 없습니다. 임시 및 영구 리디렉션을 지원하고 리디렉션 만료 날짜를 설정합니다.
+이제 사이트의 URL을 유효한 URL로 [리디렉션](../site-building/site-settings/managing-site-urls/setting-up-redirects-and-404-tracking.md) 할 수 있습니다. 이제 404 오류로 연결되는 이전 링크에 대해 걱정할 필요가 없습니다. 임시 및 영구 리디렉션을 지원하고 리디렉션 만료 날짜를 설정합니다.
 
 깨지는 링크의 경우 Liferay는 이제 모든 404 오류를 추적합니다. 이 목록을 사용하여 사용자가 원하는 것을 찾는 데 도움이 되는 새 리디렉션을 만들 수 있습니다.
 
@@ -116,13 +121,13 @@ Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사�
 
 ![친숙한 URL 기록은 모든 페이지에 사용된 모든 URL을 보여줍니다.](./whats-new-73/images/15.png)
 
-이제 모든 페이지에서 사용되는 [개의 친숙한 URL을 언어별로](../site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md#managing-a-page-s-url-history) 쉽게 확인하고 시각적으로 관리할 수 있습니다. 다른 페이지에서 재사용할 URL을 "잊어버리거나" 오래된 익숙한 URL을 복원할 수 있습니다. 
+이제 모든 페이지에서 사용되는 [친숙한 URL을 언어별로](../site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md#managing-a-page-s-url-history) 쉽게 확인하고 시각적으로 관리할 수 있습니다. 다른 페이지에서 재사용할 URL을 "잊어버리거나" 오래된 익숙한 URL을 복원할 수 있습니다. 
 
 ## 컨텐츠 퍼포먼스
 
 > 요구되는 기부금
 
-이제 얼마나 많은 방문자가 귀하의 콘텐츠를 완전히 읽었는지 알 수 있습니다. [콘텐츠 성능 분석](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md#content-performance-sidebar) 은 콘텐츠 작성자와 마케팅 담당자가 성공적인 콘텐츠 전략을 구축하고 평가하는 데 도움이 되도록 관련 콘텐츠와 함께 컨텍스트에 나타납니다. 
+이제 얼마나 많은 방문자가 귀하의 콘텐츠를 완전히 읽었는지 알 수 있습니다. [콘텐츠 성능 분석](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md#content-performance-sidebar) 콘텐츠 작성자와 마케터가 성공적인 콘텐츠 전략을 구축하고 평가하는 데 도움이 되도록 관련된 콘텐츠의 맥락에서 나타납니다. 
 
 ![콘텐츠 성능은 보기 대 읽기, 검색 엔진의 들어오는 트래픽 볼륨 및 지역별 키워드 보고서를 보여줍니다.](./whats-new-73/images/16.gif)
 
@@ -138,7 +143,7 @@ Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사�
 
 ![앱 빌더는 로우 코드 애플리케이션을 위한 브라우저 내 개발 환경을 제공합니다.](./whats-new-73/images/19.png)
 
-[App Builder](../building-applications/app-builder.md) 은 Data Engine이 지원하는 Liferay DXP를 위한 새로운 로우 코드 애플리케이션 개발 솔루션입니다. 비즈니스 사용자는 직관적인 GUI를 통해 양식과 테이블 보기를 정의하고 워크플로를 활용하여 비즈니스 프로세스를 디지털화 및 자동화한다는 목표로 애플리케이션을 구축할 수 있습니다. 응용 프로그램은 독립형 방식으로 배포하거나 위젯으로 또는 제품 메뉴를 통해 페이지에 추가할 수 있습니다.
+[App Builder](../building-applications/app-builder.md) Data Engine이 지원하는 Liferay DXP를 위한 새로운 로우 코드 애플리케이션 개발 솔루션입니다. 비즈니스 사용자는 직관적인 GUI를 통해 양식과 테이블 보기를 정의하고 워크플로를 활용하여 비즈니스 프로세스를 디지털화 및 자동화한다는 목표로 애플리케이션을 구축할 수 있습니다. 응용 프로그램은 독립형 방식으로 배포하거나 위젯으로 또는 제품 메뉴를 통해 페이지에 추가할 수 있습니다.
 
 ### 양식 보기 규칙 및 필드 세트
 
@@ -171,7 +176,7 @@ App Builder의 내부에서 Data Engine은 Data Engine을 사용하여 애플리
 -   데이터 정의 키로 레이아웃을 렌더링합니다.
 -   데이터 정의 및 레이아웃에 대한 버전 속성을 생성합니다.
 -   데이터 레이아웃을 이름으로 검색합니다.
--   `ClassNameId`을 사용하여 범위 데이터 정의.
+-   `ClassNameId`사용하여 범위 데이터 정의.
 -   빌더 태그 라이브러리를 사용하여 데이터 정의를 저장하십시오.
 -   데이터 레코드를 현지화할 수 있습니다.
 -   필드 중첩 기능.
@@ -179,7 +184,7 @@ App Builder의 내부에서 Data Engine은 Data Engine을 사용하여 애플리
 -   구분 기호
 -   서식 있는 텍스트 필드
 -   이미지 필드
--   지리적 사이트 필드
+-   지리적 위치 필드
 -   색상 필드
 
 ## 양식
@@ -222,9 +227,9 @@ App Builder의 내부에서 Data Engine은 Data Engine을 사용하여 애플리
 
 ### 단계별 성과
 
-각 단계에서 발생한 SLA 위반 수와 단계의 평균 완료 시간을 확인하여 프로세스의 병목 현상이 있는 사이트를 식별합니다. 
+각 단계에서 발생한 SLA 위반 수와 단계의 평균 완료 시간을 확인하여 프로세스의 병목 현상이 있는 위치를 식별합니다. 
 
-![Performance by Step은 병목 현상이 있는 사이트를 보여줍니다.](./whats-new-73/images/27.png)
+![Performance by Step은 병목 현상이 있는 위치를 보여줍니다.](./whats-new-73/images/27.png)
 
 ### 일괄 작업
 
@@ -244,7 +249,7 @@ App Builder의 내부에서 Data Engine은 Data Engine을 사용하여 애플리
 
 > 요구되는 기부금
 
-[Multi-Factor Authentication](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA)은 사용자가 여러 방법 또는 _가지 요소_로 자신의 신원을 증명하도록 요구함으로써 더 나은 보안을 제공합니다. 기본 사용자 이름/암호 조합은 하나 이상의 구성 가능한 요소로 보강됩니다. 여기에는 기본 OTP(일회용 암호) 및 구성 가능한 IP 주소, 시간 기반 OTP 및 시스템이 확장 가능하기 때문에 작성하려는 모든 요소가 포함됩니다. 
+[Multi-Factor Authentication](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA)은 사용자가 여러 방법 또는 _요소_로 자신의 신원을 증명하도록 요구함으로써 더 나은 보안을 제공합니다. 기본 사용자 이름/암호 조합은 하나 이상의 구성 가능한 요소로 보강됩니다. 여기에는 기본 OTP(일회용 암호) 및 구성 가능한 IP 주소, 시간 기반 OTP 및 시스템이 확장 가능하기 때문에 작성하려는 모든 요소가 포함됩니다. 
 
 ### 인스턴스 수준의 SAML 구성
 
@@ -270,7 +275,7 @@ App Builder의 내부에서 Data Engine은 Data Engine을 사용하여 애플리
 
 URL 패턴은 이제 먼저 인스턴스 수준에서 일치한 다음 시스템 수준에서 일치합니다. 인스턴스 수준의 패턴이 우선합니다.
 
-## 검색
+## 수색
 
 [Liferay DXP 7.3의 Elasticsearch에 대한 검색 엔진 커넥터](../using-search/installing-and-upgrading-a-search-engine/elasticsearch.md)에 몇 가지 개선 사항 및 변경 사항이 있습니다.
 
@@ -296,11 +301,11 @@ Elasticsearch와의 통신은 이제 전송 클라이언트 대신 REST 클라�
 
 ![API 탐색기는 Liferay DXP 설치에서 사용 가능한 모든 API를 보여줍니다.](./whats-new-73/images/30.png)
 
-[API 탐색기](../headless-delivery/consuming-apis/consuming-rest-services.md) 은 Liferay DXP의 사용 가능한 API를 탐색하고 쿼리하기 위한 인터페이스를 제공합니다. 모든 REST 애플리케이션과 해당 엔드포인트를 탐색할 수 있습니다. 
+[API 탐색기](../headless-delivery/consuming-apis/consuming-rest-services.md) Liferay DXP의 사용 가능한 API를 탐색하고 쿼리하기 위한 인터페이스를 제공합니다. 모든 REST 애플리케이션과 해당 엔드포인트를 탐색할 수 있습니다. 
 
 ![API 탐색기에서 모든 API를 쿼리할 수 있습니다.](./whats-new-73/images/31.png)
 
-[GraphQL 클라이언트](../headless-delivery/consuming-apis/consuming-graphql-apis.md) 을 사용하면 쿼리를 쉽게 정의하고 테스트할 수 있습니다.
+[GraphQL 클라이언트](../headless-delivery/consuming-apis/consuming-graphql-apis.md) 사용하면 쿼리를 쉽게 정의하고 테스트할 수 있습니다.
 
 ### OpenAPI 유효성 검사기
 
@@ -348,4 +353,4 @@ Liferay는 내부 UI의 많은 부분을 React로 전환하기 시작했습니�
 
 ### 업그레이드 개선
 
-[업그레이드 프로세스](../installation-and-upgrades/upgrading-liferay/upgrade-basics.md)에 많은 안정성 개선 사항이 추가되었습니다. 업그레이드 프로세스가 코어와 모듈 간에 통합되었습니다. 자동 업그레이드 동작은 새 포털 속성( `upgrade.database.auto.run`)으로 제어할 수 있습니다. 
+[업그레이드 프로세스](../installation-and-upgrades/upgrading-liferay/upgrade-basics.md)에 많은 안정성 개선 사항이 추가되었습니다. 업그레이드 프로세스가 코어와 모듈 간에 통합되었습니다. 자동 업그레이드 동작은 새 포털 속성( `upgrade.database.auto.run`으로 제어할 수 있습니다. 

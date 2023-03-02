@@ -1,10 +1,14 @@
+---
+uuid: 26a907e5-c7ed-4110-813f-779eacd72917
+---
+
 # 콘텐츠 페이지에서 콘텐츠 관리
 <!-- Alt: Managing Content in Pages and Templates... If renamed, relocate to Displaying Content.-->
-콘텐츠 페이지 및 템플릿을 편집하거나 생성할 때 여기에 추가된 모든 문서, 웹 콘텐츠 기사, 컬렉션 또는 인라인 텍스트를 빠르게 보고 편집할 수 있습니다. 이렇게 하려면 편집 사이드바에서 *브라우저* 패널(![Browser](../../../images/icon-browser.png))을 열고 *페이지 콘텐츠* 탭을 클릭합니다.
+콘텐츠 페이지 및 템플릿을 편집하거나 생성할 때 여기에 추가된 모든 문서, 웹 콘텐츠 기사, 컬렉션 또는 인라인 텍스트를 빠르게 보고 편집할 수 있습니다. 이렇게 하려면 편집 사이드바에서 *페이지 콘텐츠* 버튼(![Page Content](../../../images/icon-paperclip.png))을 선택합니다.
 
-![브라우저 패널을 열고 페이지 콘텐츠 탭을 클릭합니다.](./managing-content-in-content-pages/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+![브라우저 패널을 열고 페이지 콘텐츠 탭을 클릭합니다.](./managing-content-in-content-pages/images/01.png)
 
-페이지 콘텐츠 탭에는 조각 및 지원되는 위젯(예: Asset Publisher 및 웹 콘텐츠 표시)을 사용하여 추가된 모든 콘텐츠가 나열됩니다. 여기에는 Fragment에 직접 추가된 콘텐츠와 Fragment 요소에 매핑된 콘텐츠가 포함됩니다.
+페이지 콘텐츠 패널에는 Fragment 및 지원되는 위젯(예: Asset Publisher 및 Web Content Display)을 사용하여 추가된 모든 콘텐츠가 표시됩니다. 여기에는 Fragment에 직접 추가된 콘텐츠와 Fragment 요소에 매핑된 콘텐츠가 포함됩니다.
 
 ```{important}
 동적 또는 컬렉션 선택을 사용하여 자산 게시자에 표시되는 콘텐츠는 페이지 콘텐츠 탭에 나열되지 않습니다. 또한 컨테이너 배경 이미지를 제외한 배경 이미지는 나열되지 않습니다.
@@ -50,7 +54,7 @@ Liferay DXP/Portal 7.3의 경우 *콘텐츠* 패널(![Contents](../../../images/
 
     * *수정*: 웹 콘텐츠 수정
     * *권한*: 웹 콘텐츠의 권한 업데이트
-    * *사용 보기*: 사이트에서 웹 콘텐츠가 사용되는 사이트 보기
+    * *사용 보기*: 사이트에서 웹 콘텐츠가 사용되는 위치 보기
 
 ## 추가 정보
 

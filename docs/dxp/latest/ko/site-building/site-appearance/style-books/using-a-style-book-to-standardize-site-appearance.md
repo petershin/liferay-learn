@@ -1,10 +1,14 @@
+---
+uuid: 88364ec4-ce77-4e8b-aa8d-fb5b6bd526c3
+---
+
 # Style Book을 사용하여 사이트 모양 표준화
 
 {bdg-secondary}`가능 7.3+`
 
-*Style Book* 은 페이지 전체에서 일관된 경험을 제공하기 위해 사이트에 적용되는 일련의 시각적 규칙입니다. 요소(예: 위젯), 색상 및 글꼴 사이의 간격을 포함하여 사이트의 다양한 시각적 설정을 결정합니다. 이러한 각 설정은 Style Book을 사용하는 모든 페이지에 동일하게 적용됩니다.
+*Style Book* 페이지 전체에서 일관된 경험을 제공하기 위해 사이트에 적용되는 일련의 시각적 규칙입니다. 요소(예: 위젯), 색상 및 글꼴 사이의 간격을 포함하여 사이트의 다양한 시각적 설정을 결정합니다. 이러한 각 설정은 Style Book을 사용하는 모든 페이지에 동일하게 적용됩니다.
 
-사이트 페이지에 할당한 테마는 사이트의 스타일 북에서 사용할 수 있는 설정 범주를 결정합니다. 개발자는 Style Books 구성을 위한 새로운 옵션으로 범주를 사용자 지정할 수 있습니다. 자세한 내용은 [Style Book 토큰 정의](./developer-guide/style-book-token-definitions.md) 을 참조하십시오.
+사이트 페이지에 할당한 테마는 사이트의 스타일 북에서 사용할 수 있는 설정 범주를 결정합니다. 개발자는 Style Books 구성을 위한 새로운 옵션으로 범주를 사용자 지정할 수 있습니다. 자세한 내용은 [Style Book 토큰 정의](./developer-guide/style-book-token-definitions.md) 참조하십시오.
 
 ## 페이지에 대한 스타일 북 선택
 
@@ -14,7 +18,7 @@
 Liferay 7.4 U10+ 및 GA14+부터 모든 사이트에는 *Styles from Theme*라는 Style Book이 하나 이상 있습니다. 이 Style Book은 모든 기본값과 함께 테마에 정의된 토큰 정의를 사용합니다. 이 Style Book은 편집할 수 없으며 다른 Style Book이 구성되지 않은 경우 사이트에 사용되는 기본값입니다.
 ```
 
-페이지의 스타일 북을 설정하려면 다음 단계를 따르십시오.
+페이지의 Style Book을 설정하려면 다음 단계를 따르십시오.
 
 1. 페이지 상단 근처에 있는 *편집* (![Edit icon](../../../images/icon-edit.png))을 클릭합니다.
 
@@ -22,11 +26,11 @@ Liferay 7.4 U10+ 및 GA14+부터 모든 사이트에는 *Styles from Theme*라�
 
 1. 클릭하여 *Style Book* 탭을 엽니다.
 
-    ![Style Book 탭을 열어 목록에서 원하는 Style Book을 선택합니다.](./using-a-style-book-to-standardize-site-appearance/images/01.png) <!--TASK: UPDATE IMG FOR LRDOCS-10856-->
+    ![Style Book 탭을 열어 목록에서 원하는 Style Book을 선택합니다.](./using-a-style-book-to-standardize-site-appearance/images/01.png)
 
 1. 목록에서 원하는 Style Book을 선택합니다.
 
-1. *게시*을 클릭합니다.
+1. *게시*클릭합니다.
 
 새 Style Book을 사용하여 페이지가 게시됩니다.
 
@@ -36,7 +40,7 @@ Liferay 7.4 U10+ 및 GA14+부터 모든 사이트에는 *Styles from Theme*라�
 
 1. 페이지 상단 근처에 있는 *추가* (![Add icon](../../../images/icon-add.png))을 클릭하십시오.
 
-1. Style Book의 이름을 입력하고 *저장*을 클릭합니다.
+1. Style Book의 이름을 입력하고 *저장*클릭합니다.
 
 1. 화면 오른쪽에 있는 메뉴의 드롭다운 상자에 있는 범주에서 옵션을 변경합니다.
 
@@ -44,13 +48,13 @@ Liferay 7.4 U10+ 및 GA14+부터 모든 사이트에는 *Styles from Theme*라�
 
    이러한 옵션은 사이트에 사용되는 테마에서 가져옵니다. 기본 클래식 테마에 사용할 수 있는 범주에 대한 자세한 내용은 [기본 클래식 테마 범주](#default-classic-theme-categories) 을 참조하십시오.
 
-1. 선택한 범주에 제공된 필드를 사용자 지정합니다. 색상 필드는 특히 색상 [을 선택하는 여러 가지 방법을 제공](#customizing-your-style-book-s-colors).
-
-1. *게시*을 클릭합니다.
+1. 선택한 범주에 제공된 필드를 사용자 지정합니다. 색상 필드는 특히 [색상을 선택하는 다양한 방법](#customizing-your-style-book-s-colors)을 제공합니다.
+   
+1. *게시*를 클릭합니다.
 
 스타일 북은 이제 편집할 때 모든 페이지에 대한 옵션으로 선택할 수 있습니다.
 
-이 Style Book을 사이트의 새 기본값으로 만들려면 새로 만든 Style Book 옆에 있는 작업 메뉴(![Actions icon](../../../images/icon-actions.png))를 열고 *기본으로 표시*를 클릭합니다.
+이 Style Book을 사이트의 새 기본값으로 만들려면 새로 만든 Style Book 옆에 있는 작업 메뉴(![Actions icon](../../../images/icon-actions.png))를 열고 *기본으로 표시*클릭합니다.
 
 ### 스타일 북 미리보기
 
@@ -58,7 +62,7 @@ Liferay 7.4 U10+ 및 GA14+부터 모든 사이트에는 *Styles from Theme*라�
 
 스타일 북을 만들거나 편집하는 동안 페이지, 페이지 템플릿 및 페이지 조각을 포함하여 사이트의 다양한 구성 요소 모양에 미치는 영향을 미리 볼 수 있습니다.
 
-화면 상단에 있는 두 개의 드롭다운 메뉴를 사용하여 미리 볼 구성 요소를 선택합니다. 왼쪽 드롭다운 메뉴는 표시할 전체 유형(페이지, 페이지 템플릿, 마스터 페이지 템플릿, 페이지 템플릿 표시 또는 페이지 조각)을 결정합니다. 오른쪽 드롭다운 메뉴는 표시할 선택한 유형의 특정 인스턴스(또는 해당하는 경우 범주)를 결정합니다. 목록에서 *더보기* 을 클릭하지 않는 한 가장 최근에 사용한 4개의 옵션만 오른쪽 드롭다운 메뉴에 표시됩니다.
+화면 상단에 있는 두 개의 드롭다운 메뉴를 사용하여 미리 볼 구성 요소를 선택합니다. 왼쪽 드롭다운 메뉴는 표시할 전체 유형(페이지, 페이지 템플릿, 마스터 페이지 템플릿, 페이지 템플릿 표시 또는 페이지 조각)을 결정합니다. 오른쪽 드롭다운 메뉴는 표시할 선택한 유형의 특정 인스턴스(또는 해당하는 경우 범주)를 결정합니다. 목록에서 *더보기* 클릭하지 않는 한 가장 최근에 사용한 4개의 옵션만 오른쪽 드롭다운 메뉴에 표시됩니다.
 
 ![두 개의 드롭다운 메뉴를 함께 사용하여 Style Book을 미리 보기 위해 표시할 항목을 선택합니다.](./using-a-style-book-to-standardize-site-appearance/images/03.png)
 
@@ -66,7 +70,7 @@ Liferay 7.4 U10+ 및 GA14+부터 모든 사이트에는 *Styles from Theme*라�
 
 ![페이지 조각에 대한 Style Book의 효과를 미리 보는 경우 선택한 컬렉션에서 조각의 모든 구성을 미리 볼 수 있습니다.](./using-a-style-book-to-standardize-site-appearance/images/04.gif)
 
-### 스타일 북의 색상 사용자 지정
+### 스타일 북의 색상 사용자 정의
 
 Style Book에서 색상 필드의 색상을 선택할 때 여러 가지 방법으로 색상을 선택할 수 있습니다.
 
@@ -75,14 +79,14 @@ Style Book에서 색상 필드의 색상을 선택할 때 여러 가지 방법�
 * 원하는 색상의 16진수 코드를 텍스트 상자에 입력하면 원하는 색상으로 변경할 수 있습니다.
 
 * *Stylebook의 값* 버튼을 클릭하여 선택할 수 있는 미리 정의된 색상 메뉴를 엽니다. 사용자 정의할 수 있는 각 일반 범주에서 색상을 재사용하도록 선택할 수 있습니다.
-
-![모든 색상 옵션의 색상을 변경하는 데 사용할 수 있는 몇 가지 옵션이 있습니다.](./using-a-style-book-to-standardize-site-appearance/images/05.png)
-
-Stylebook의 값 단추를 클릭하고 Style Book 토큰 값(다른 범주에서도 정의됨)을 선택하면 해당 색상 필드가 선택한 Style Book 토큰에 연결됩니다. 향후 이 Style Book의 토큰 값을 변경하면 이 색상 필드도 변경됩니다.
-
-색상 필드가 Style Book 토큰에 연결되면 Stylebook의 값 버튼이 *Detach Token* 버튼으로 대체됩니다. 토큰에서 색상 필드를 분리하려면 이 버튼을 클릭합니다(동일한 색상 값 유지).
-
-![Style Book 토큰에서 색상 필드를 분리하지만 동일한 색상 값을 유지하려면 *토큰 분리* 버튼을 클릭하십시오.](./using-a-style-book-to-standardize-site-appearance/images/06.png)
+  
+  ![모든 색상 옵션의 색상을 변경하는 데 사용할 수 있는 몇 가지 옵션이 있습니다.](./using-a-style-book-to-standardize-site-appearance/images/05.png)
+  
+  Stylebook의 값 단추를 클릭하고 Style Book 토큰 값(다른 범주에서도 정의됨)을 선택하면 해당 색상 필드가 선택한 Style Book 토큰에 연결됩니다. 향후 이 Style Book의 토큰 값을 변경하면 이 색상 필드도 변경됩니다.
+  
+  색상 필드가 Style Book 토큰에 연결되면 Stylebook의 값 버튼이 *Detach Token* 버튼으로 대체됩니다. 토큰에서 색상 필드를 분리하려면 이 버튼을 클릭합니다(동일한 색상 값 유지).
+  
+  ![Style Book 토큰에서 색상 필드를 분리하지만 동일한 색상 값을 유지하려면 *토큰 분리* 버튼을 클릭하십시오.](./using-a-style-book-to-standardize-site-appearance/images/06.png)
 
 ```{note}
 Style Book 토큰에 색상 값을 부착하거나 분리하려면 Liferay DXP 7.4 U10+ 또는 GA14+가 필요합니다.
@@ -94,7 +98,7 @@ Style Book 토큰에 색상 값을 부착하거나 분리하려면 Liferay DXP 7
 특정 페이지의 Style Book에서 색상을 편집할 때 동일한 옵션으로 색상을 선택할 수 있습니다. 그러나 *Clear Selection* 버튼을 클릭하면 선택한 *Style Book*에 정의된 기본값으로 색상 값이 재설정됩니다.
 ```
 
-## 기본 클래식 테마 범주
+## 기본 클래식 테마 카테고리
 
 Style Book을 편집할 때 드롭다운 상자에서 사용할 수 있는 범주에는 페이지 스타일 지정을 위한 다양한 옵션이 표시됩니다. 각 범주에서 사용할 수 있는 옵션은 테마별로 정의됩니다.
 

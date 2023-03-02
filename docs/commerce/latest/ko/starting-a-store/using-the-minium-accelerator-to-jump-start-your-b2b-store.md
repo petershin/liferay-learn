@@ -1,3 +1,7 @@
+---
+uuid: f502b0b3-6d73-4def-811a-8d8a5e1677f3
+---
+
 # Miniium Accelerator를 사용하여 B2B Store를 빠르게 시작하십시오.
 
 Minium은 제조업체의 요구 사항을 충족하도록 설계된 B2B(Business-to-Business) 상점을 쉽고 빠르게 설정하여 최신 B2B 디지털 상거래 경험을 선보이는 Liferay Commerce [Accelerator](./accelerators.md) 입니다. 기능적이고 우아한 요소를 모두 포함하여 가능한 한 원활한 경험을 제공하는 기능으로 설계되었습니다.
@@ -54,7 +58,7 @@ Minium은 빈 사이트에 대해 기본적으로 설정되지 않은 여러 다
 
 | 특징                                                                                                                     | 세부사항                       |
 |:---------------------------------------------------------------------------------------------------------------------- |:-------------------------- |
-| [창고](../inventory-management/setting-up-commerce-warehouses.md)                                                        | 이탈리아, 미국 북동부, 미국 남서부       |
+| [창고](../inventory-management/setting-up-warehouses.md)                                                                 | 이탈리아, 미국 북동부, 미국 남서부       |
 | [사이트 유형](../starting-a-store/sites-and-site-types.md)                                                                  | B2B                        |
 | [배송 방법 옵션](../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)                    | 일반 배송, 빠른 배송               |
 | 채널                                                                                                                     | 미니 포털                      |

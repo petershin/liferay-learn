@@ -1,3 +1,7 @@
+---
+uuid: 6f717fa5-9cf3-426e-9df3-b59517a62dc7
+---
+
 # 웹 콘텐츠 번역
 
 {bdg-secondary}`사용 가능한 Liferay DXP/Portal 7.3+`
@@ -7,18 +11,18 @@ Liferay는 웹 콘텐츠 기사를 번역하기 위한 통합 도구를 제공�
 원하는 경우 [사용자 정의 작업 흐름을 활성화하여](./enabling-workflows-for-translations.md) 번역에 대한 검토 및 게시 프로세스를 지시할 수 있습니다.
 
 ```{note}
-번역에 사용할 수 있는 언어는 인스턴스의 현지화 설정에 따라 결정됩니다. [초기 인스턴스 현지화](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) 및 [가상 인스턴스 현지화](../system-administration/configuring-liferay/virtual- instance/localization.md)를 참조하십시오.
+번역에 사용할 수 있는 언어는 인스턴스의 현지화 설정에 따라 결정됩니다. [초기 인스턴스 현지화](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) 및 [가상 인스턴스 현지화](../../system-administration/ 참조 configure-liferay/virtual-instances/localization.md)를 참조하십시오.
 ```
 
 ## 콘텐츠 수동 번역
 
 ```{note}
-웹 콘텐츠를 수동으로 번역하려면 사용자에게 자산에 대한 *보기* 및 *업데이트* 권한 또는 하나 이상의 언어에 대한 번역 권한이 있어야 합니다. 자세한 내용은 [번역 권한 관리](./managing-permissions-for-translation.md)를 참조하세요.
+웹 콘텐츠를 수동으로 번역하려면 사용자에게 자산에 대한 *보기* 및 *업데이트* 권한 또는 하나 이상의 언어에 대한 번역 권한이 있어야 합니다. 자세한 내용은 [번역 권한 관리](./managing-translation-permissions.md)를 참조하세요.
 ```
 
 웹 콘텐츠를 수동으로 번역하려면 다음 단계를 따르세요.
 
-1. *사이트 메뉴* (![Site Menu](../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*를 확장한 다음 *웹 콘텐츠*로 이동합니다.
+1. *사이트 메뉴* (![Site Menu](../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*확장한 다음 *웹 콘텐츠*로 이동합니다.
 
 1. *작업* 버튼( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *번역을 선택합니다.*.
 
@@ -40,9 +44,9 @@ Liferay는 웹 콘텐츠 기사를 번역하기 위한 통합 도구를 제공�
 
 1. 사용 가능한 필드에 대한 번역을 입력하십시오.
 
-1. *게시* 을 클릭하여 웹 콘텐츠의 새 버전을 생성하거나 활성화된 경우 워크플로를 시작합니다.
+1. *게시* 클릭하여 웹 콘텐츠의 새 버전을 만들거나 워크플로(활성화되어 있는 경우)를 시작합니다.
 
-   또는 *초안으로 저장* 을 클릭하여 나중에 번역을 저장하고 게시합니다.
+   또는 *초안으로 저장* 클릭하여 나중에 번역을 저장하고 게시하십시오.
 
 ## 번역 내보내기 및 가져오기
 
@@ -60,9 +64,9 @@ Liferay는 XLIFF 1.2 및 2.0 파일을 모두 지원합니다. 그러나 해당 
 
 다음 단계를 따르세요.
 
-1. *사이트 메뉴* (![Site Menu](../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*를 확장한 다음 *웹 콘텐츠*로 이동합니다.
+1. *사이트 메뉴* (![Site Menu](../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*확장한 다음 *웹 콘텐츠*로 이동합니다.
 
-1. 번역할 콘텐츠에 대해 *작업* 버튼( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *번역을 위해 내보내기*를 선택합니다. 그러면 내보내기 구성을 위한 모달 창이 열립니다.
+1. 번역할 콘텐츠에 대해 *작업* 버튼( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *번역을 위해 내보내기*선택합니다. 그러면 내보내기 구성을 위한 모달 창이 열립니다.
 
    ![번역을 위해 내보내기를 선택합니다.](./translating-web-content/images/03.png)
 
@@ -78,7 +82,7 @@ Liferay는 XLIFF 1.2 및 2.0 파일을 모두 지원합니다. 그러나 해당 
 
    ![콘텐츠를 번역할 언어를 선택합니다.](./translating-web-content/images/05.png)
 
-1. *내보내기*을 클릭합니다.
+1. *내보내기*클릭합니다.
 
 Liferay는 선택한 각 언어에 대한 XLIFF 파일이 포함된 ZIP 아카이브를 생성합니다. 그런 다음 이러한 파일을 호환되는 번역 소프트웨어와 함께 사용할 수 있습니다.
 
@@ -86,13 +90,13 @@ Liferay는 선택한 각 언어에 대한 XLIFF 파일이 포함된 ZIP 아카�
 
 다음 단계를 따르세요.
 
-1. *사이트 메뉴* (![Site Menu](../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*를 확장한 다음 *웹 콘텐츠*로 이동합니다.
+1. *사이트 메뉴* (![Site Menu](../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*확장한 다음 *웹 콘텐츠*로 이동합니다.
 
-1. 번역된 웹 콘텐츠에 대해 *작업* 버튼( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *번역 가져오기*를 선택합니다.
+1. 번역된 웹 콘텐츠에 대해 *작업* 버튼( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *번역 가져오기*선택합니다.
 
    ![번역 가져오기를 선택합니다.](./translating-web-content/images/06.png)
 
-   또는 애플리케이션 표시줄에서 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 *번역 가져오기*를 선택하여 여러 기사에 대한 번역을 한 번에 가져올 수 있습니다.
+   또는 애플리케이션 표시줄에서 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 *번역 가져오기*선택하여 여러 기사에 대한 번역을 한 번에 가져올 수 있습니다.
 
    ![여러 기사에 대한 번역을 업로드합니다.](./translating-web-content/images/07.png)
 
@@ -104,7 +108,7 @@ Liferay는 선택한 각 언어에 대한 XLIFF 파일이 포함된 ZIP 아카�
    Liferay는 [번역을 위해 내보내기](#exporting-content-for-translation) 작업을 사용하여 생성된 XLIFF 파일 가져오기를 지원하지만 다른 방법으로 생성된 파일의 성공적인 가져오기를 보장할 수 없습니다.
    ```
 
-1. *게시*을 클릭합니다.
+1. *게시*클릭합니다.
 
    성공하면 Liferay는 가져온 파일과 함께 성공 메시지를 표시합니다. 웹 콘텐츠는 번역 파일에 포함된 모든 변경 사항으로 업데이트됩니다. 워크플로가 활성화된 경우 이 변경 사항은 다른 콘텐츠 업데이트와 마찬가지로 승인되어야 합니다.
 
@@ -116,7 +120,7 @@ Liferay는 선택한 각 언어에 대한 XLIFF 파일이 포함된 ZIP 아카�
 
 ## 타사 서비스를 사용하여 웹 콘텐츠 번역
 
-[Google Cloud Translation](https://cloud.google.com/translate/docs/setup), [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)또는 [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/)와 Liferay의 통합을 활성화한 경우 이를 사용하여 웹 콘텐츠를 자동으로 번역할 수 있습니다. 자세한 내용은 [번역에 제3자 사용](./using-third-parties-for-translation.md) 을 참조하십시오.
+[Google Cloud Translation](https://cloud.google.com/translate/docs/setup), [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)또는 [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/)와 Liferay의 통합을 활성화한 경우 이를 사용하여 웹 콘텐츠를 자동으로 번역할 수 있습니다. 자세한 내용은 [번역에 제3자 사용](./using-third-parties-for-translation.md) 참조하십시오.
 
 ## 추가 정보
 

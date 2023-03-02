@@ -1,3 +1,7 @@
+---
+uuid: 76553d79-d3f4-43e1-bc3c-2bd87108b6ab
+---
+
 # Liferay DXP 7.4의 새로운 기능
 
 Liferay DXP 7.4는 향상된 기능과 흥미로운 개선 사항을 제공하여 기술 사용자와 비기술 사용자 모두 디지털 경험을 제공하고 최적화하기가 더욱 쉬워집니다.
@@ -6,7 +10,7 @@ Liferay DXP 7.4는 향상된 기능과 흥미로운 개선 사항을 제공하�
 
 ### A/B 테스트에서 모든 요소를 클릭 대상으로 설정
 
-이제 페이지의 모든 요소에 대해 [테스트를](../site-building/optimizing-sites/ab-testing/creating-ab-tests.md)수 있습니다. Liferay DXP 7.4 이전에는 버튼과 링크만 클릭 목표로 선택할 수 있었습니다. Liferay DXP 7.4를 사용하면 이제 요소 ID를 포함하여 모든 페이지 요소를 선택할 수 있습니다.
+이제 [페이지의 모든 요소에 대해 AB 테스트를 실행할 수 있습니다](../site-building/optimizing-sites/ab-testing/creating-ab-tests.md). Liferay DXP 7.4 이전에는 버튼과 링크만 클릭 목표로 선택할 수 있었습니다. Liferay DXP 7.4를 사용하면 이제 요소 ID를 포함하여 모든 페이지 요소를 선택할 수 있습니다.
 
 ![이제 페이지의 모든 요소에 대해 AB 테스트를 실행할 수 있습니다.](./whats-new-74/images/04.png)
 
@@ -24,7 +28,7 @@ Liferay DXP 7.4는 향상된 기능과 흥미로운 개선 사항을 제공하�
 
 ### 콘텐츠 성능 도구의 트래픽 획득 채널
 
-[Content Performance Tool](../content-authoring-and-management/content-performance-panel/analyze-content-metrics-using-content-performance-panel.md)의 트래픽 획득 채널은 [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html) 데이터를 사용하며 자연 및 유료 검색, 소셜 트래픽 및 추천에 대한 측정을 포함합니다. 채널의 세부 정보 보기에는 모든 참조 URL 및 도메인이 표시됩니다.
+[Content Performance Tool](../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)의 트래픽 획득 채널은 [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html) 데이터를 사용하며 자연 및 유료 검색, 소셜 트래픽 및 추천에 대한 측정을 포함합니다. 채널의 세부 정보 보기에는 모든 참조 URL 및 도메인이 표시됩니다.
 
 ![트래픽 획득 채널에는 검색, 소셜 및 추천 데이터가 포함됩니다.](./whats-new-74/images/09.png)
 
@@ -38,13 +42,13 @@ Liferay DXP 7.4는 향상된 기능과 흥미로운 개선 사항을 제공하�
 
 ### 페이지 감사
 
-Liferay DXP 7.4부터 [페이지 감사 도구](../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md) 를 사용하여 페이지의 SEO 및 접근성을 감사할 수 있습니다. 페이지 감사 도구는 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights)서비스를 사용하여 Liferay DXP에 대한 특정 권장 사항을 제공합니다. 새로운 페이지 감사 도구를 사용하면 페이지가 최고의 성능, 접근성, 검색 엔진 메타데이터 및 SEO 관행을 준수하는지 확인할 수 있습니다.
+Liferay DXP 7.4부터 [페이지 감사 도구](../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md) 사용하여 페이지의 SEO 및 접근성을 감사할 수 있습니다. 페이지 감사 도구는 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights)서비스를 사용하여 Liferay DXP에 대한 특정 권장 사항을 제공합니다. 새로운 페이지 감사 도구를 사용하면 페이지가 최고의 성능, 접근성, 검색 엔진 메타데이터 및 SEO 관행을 준수하는지 확인할 수 있습니다.
 
 ![Google PageSpeed Insights 통합은 권장 사항을 제공합니다.](./whats-new-74/images/02.png)
 
 ### 경험 복제 및 초안을 위한 더 많은 유연성
 
-이제 [Liferay DXP 경험](../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md)을 초안 및 복제하고 기본 경험을 다른 경험으로 바꿀 수 있습니다. 이러한 향상된 기능은 경험을 만들고 관리할 때 훨씬 더 많은 유연성을 제공합니다.
+이제 [Liferay DXP Experiences](../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md)의 초안을 작성하고 복제하고 기본 경험을 다른 경험으로 바꿀 수 있습니다. 이러한 향상된 기능은 경험을 만들고 관리할 때 훨씬 더 많은 유연성을 제공합니다.
 
 ![경험을 쉽게 복제하고 초안을 작성하십시오.](./whats-new-74/images/07.png)
 
@@ -74,7 +78,7 @@ Liferay DXP 7.4부터 [페이지 감사 도구](../content-authoring-and-managem
 
 ## 비즈니스 사용자는 코드를 작성하지 않고 애플리케이션을 구축할 수 있습니다.
 
-[Liferay 객체](../building-applications/objects.md)을 사용하면 코드를 작성하거나 모듈을 배포하지 않고도 애플리케이션을 구축하고 제공할 수 있지만 이러한 애플리케이션은 Liferay의 핵심 프레임워크를 기반으로 구축되고 통합됩니다. 원활한 사용자 경험을 유지하면서 Liferay DXP를 비즈니스 요구 사항에 맞게 조정하는 유연한 솔루션을 신속하게 개발하고 관리하십시오.
+[Liferay 객체](../building-applications/objects.md)사용하면 코드를 작성하거나 모듈을 배포하지 않고도 애플리케이션을 구축하고 제공할 수 있지만 이러한 애플리케이션은 Liferay의 핵심 프레임워크를 기반으로 구축되고 통합됩니다. 원활한 사용자 경험을 유지하면서 Liferay DXP를 비즈니스 요구 사항에 맞게 조정하는 유연한 솔루션을 신속하게 개발하고 관리하십시오.
 
 ### UI를 통해 사용자 정의 개체 관리
 
@@ -138,7 +142,7 @@ Info Framework를 사용하여 컬렉션 공급자를 구축할 때 개발자는
 
 ### 콘텐츠 페이지 및 디스플레이 페이지 템플릿에서 적응형 미디어에 대한 기본 지원
 
-이제 [콘텐츠 페이지 이미지의 적응형 미디어](../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#를 사용할 수 있습니다. image-source-settings) 대상 화면 크기에 따라 이미지 해상도를 동적으로 조정합니다. [Adaptive Media에서 이미지 해상도를 추가한 후](../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/adding-image -resolutions.md) 콘텐츠 페이지 이미지의 해상도 드롭다운 메뉴에 해상도가 나타납니다.
+이제 [콘텐츠 페이지 이미지의 적응형 미디어](../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#를 사용할 수 있습니다. image-source-settings) 대상 화면 크기에 따라 이미지 해상도를 동적으로 조정합니다. [Adaptive Media에서 이미지 해상도를 추가]한 후(../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/adding-image -resolutions.md) 콘텐츠 페이지 이미지의 해상도 드롭다운 메뉴에 해상도가 나타납니다.
 
 ![Adaptive Media는 이제 화면 크기에 따라 동적으로 이미지 해상도를 조정할 수 있습니다.](./whats-new-74/images/13.gif)
 
@@ -146,11 +150,11 @@ Info Framework를 사용하여 컬렉션 공급자를 구축할 때 개발자는
 
 ### 웹 콘텐츠 자동 번역
 
-이 기능은 웹 콘텐츠 기사 [번역 프로세스를 가속화하는 데 도움이](../content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation.md). 이는 콘텐츠 번역 프로세스를 간소화하기 위한 7.3의 노력을 계속합니다. 이 기능을 통해 번역가는 처음부터 시작하는 대신 번역을 다듬는 데 집중할 수 있습니다.
+이 기능은 [웹 콘텐츠 기사](../content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation.md)번역 프로세스를 가속화하는 데 도움이 됩니다. 이는 콘텐츠 번역 프로세스를 간소화하기 위한 7.3의 노력을 계속합니다. 이 기능을 통해 번역가는 처음부터 시작하는 대신 번역을 다듬는 데 집중할 수 있습니다.
 
 ### 문서 만료 날짜
 
-이 기능은 콘텐츠 관리자 [이 오래된 문서를 제어하고 예를 들어 임시](../content-authoring-and-management/documents-and-media/uploading-and-managing/using-file-expiration-and-review-dates.md) 로 인해 문서가 게시되는 것을 방지하는 데 도움이 됩니다.
+이 기능은 콘텐츠 관리자 [오래된 문서를 제어하고 예를 들어 임시 라이선스로 인해 문서가 게시되는 것을 방지하는](../content-authoring-and-management/documents-and-media/uploading-and-managing/using-file-expiration-and-review-dates.md) 도움이 됩니다.
 
 ### 향상된 WYSIWYG 편집기
 
@@ -208,13 +212,13 @@ Liferay DXP에는 사용자 관리, 사이트 페이지 및 경험, 언어, 권�
 
 ### SAML의 더 나은 데이터 관리 및 유지 관리
 
-향상된 속성 매핑 사용자 경험은 일치하는 SP 사용자에 사용되는 식별자의 범위 및 추적을 모델링하기 위한 더 나은 제어를 제공합니다. IDP 측에서 사용자의 `emailAddress` 을 변경하는 것은 더 이상 문제가 되지 않습니다. 사용자 지정 필드 매핑도 옵션이 되었습니다.
+향상된 속성 매핑 사용자 경험은 일치하는 SP 사용자에 사용되는 식별자의 범위 및 추적을 모델링하기 위한 더 나은 제어를 제공합니다. IDP 측에서 사용자의 `emailAddress` 변경하는 것은 더 이상 문제가 되지 않습니다. 사용자 지정 필드 매핑도 옵션이 되었습니다.
 
-완전한 이전 버전과의 호환성도 있습니다. 기존 동작은 SAML 통합을 재구성할 때까지 유지되며 SP 사용자의 UUID 필드는 사용자 목적 이외의 용도로 사용되지 않습니다.
+완전한 이전 버전과의 호환성도 있습니다. 기존 동작은 SAML 통합을 재구성할 때까지 유지되며 SP 사용자의 UUID 필드는 사용자 목적 이외의 용도로 사용하지 않습니다.
 
 ### 클릭하여 채팅 통합
 
-다양한 채팅 플랫폼 [과의 즉시 사용 가능한 통합이 가능](../site-building/personalizing-site-experience/enabling-automated-live-chat-systems.md).  인스턴스 설정에서 통합을 활성화하면 사용자가 편리하게 담당자와 채팅할 수 있습니다.  채팅 제공업체와의 별도 가입이 필요합니다. 다음 채팅 공급자는 OOTB 통합에 사용할 수 있습니다.
+다양한 채팅 플랫폼 [과의 즉시 사용](../site-building/personalizing-site-experience/enabling-automated-live-chat-systems.md) 통합이 가능합니다.  인스턴스 설정에서 통합을 활성화하면 사용자가 편리하게 담당자와 채팅할 수 있습니다.  채팅 제공업체와의 별도 가입이 필요합니다. 다음 채팅 공급자는 OOTB 통합에 사용할 수 있습니다.
 
 * Chatwoot
 * Crisp

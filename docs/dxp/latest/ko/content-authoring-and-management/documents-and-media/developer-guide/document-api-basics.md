@@ -1,3 +1,7 @@
+---
+uuid: 87084148-5102-4d8d-b55c-9efa57a7a2b4
+---
+
 # 문서 API 기본 사항
 
 Liferay의 헤드리스 배달 애플리케이션은 문서 및 폴더를 추가하고, 정보를 나열하고, 수정하고, 삭제하는 등 [문서 및 미디어](../../documents-and-media.md) 에 대한 REST 서비스를 제공합니다. 여기에서 cURL 명령과 Java 클래스를 사용하여 해당 서비스를 호출합니다.
@@ -9,9 +13,9 @@ Liferay의 헤드리스 배달 애플리케이션은 문서 및 폴더를 추가
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-로그인하면 [사이트의 ID 검색](../../../headless-delivery/소비-apis/소비-rest-services.md#identify-the-site-containing-the-data). 여러 서비스 호출에서 이 ID를 사용합니다.
+로그인하면 [사이트 ID 검색](../../../headless-delivery/ 소모-apis/소비-rest-services.md#identify-the-site-containing-the-data). 여러 서비스 호출에서 이 ID를 사용합니다.
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. [예제 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip)를 다운로드하고 압축을 풉니다. ):
 
@@ -82,7 +86,7 @@ cURL 스크립트를 사용하여 파일을 [Documents and Media](../../document
     사용자 및 암호가 각각 `test@liferay.com` 및 `test`가 아닌 경우 `Document_POST_ToSite.java` 파일에서 해당 값을 바꾸고 클래스를 다시 컴파일한 후 실행합니다.
     ```
 
-클래스는 소스 파일 `Document_POST_ToSite.java` 을 Documents and Media에 업로드합니다.
+클래스는 소스 파일 `Document_POST_ToSite.java` Documents and Media에 업로드합니다.
 
 ![Java 클래스가 Java 소스 파일을 업로드했습니다.](./document-api-basics/images/02.png)
 
@@ -103,11 +107,11 @@ cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시�
 | `-F "file=@Document_POST_ToSite.sh"`                                    | 게시할 파일입니다.                                                            |
 | `-H "Content-Type: multipart/form-data"`                                | 게시 중인 미디어 유형([MIME 유형](https://en.wikipedia.org/wiki/Media_type))입니다. |
 | `-X POST`                                                               | 지정된 끝점에서 호출할 HTTP 메서드입니다.                                             |
-| `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | REST 서비스 엔드포인트. 사이트 ID 매개변수는 `${1}`를 대체합니다.                           |
+| `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | REST 서비스 엔드포인트. 사이트 ID 매개변수는 `${1}`대체합니다.                             |
 | `-u "test@liferay.com:learn"`                                           | 기본 인증 자격 증명.                                                          |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0](../../../headless-delivery/using-oauth2/using-oauth2.md)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0](../../../headless-delivery/using-oauth2.md)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
 ```
 
 `Document` 및 `DocumentFolder` REST 서비스에 대한 다른 cURL 명령은 유사한 인수를 사용합니다.
@@ -128,7 +132,7 @@ cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시�
 
 | 라인(약칭)                                                                     | 묘사                                                                                                                                                                             |
 |:-------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `DocumentResource.Builder builder = ...`                                   | `DocumentResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.                                                                                                                             |
+| `DocumentResource.Builder builder = ...`                                   | `DocumentResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.                                                                                                                               |
 | `DocumentResource documentResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `DocumentResource` 서비스 인스턴스를 생성합니다.                                                                                                                                |
 | `Document document = documentResource.postSiteDocument(...);`              | `DocumentResource.postSiteDocument` 메소드를 호출하여 사이트 ID, 업로드된 파일을 나타내는 `문서` 객체 및 업로드할 파일을 지정하는 해시 맵을 전달합니다. 파일은 임의적입니다. 이 예제에서는 편의를 위해 로컬 파일 `Document_POST_ToSite.java` 을 사용합니다. |
 
@@ -141,14 +145,14 @@ cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시�
 다른 예제 Java 클래스는 이것과 유사하지만 다른 `DocumentResource` 메소드를 호출합니다.
 
 ```{important}
-[DocumentResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/delivery/client/resource/v1_0/DocumentResource.java)를 참조하십시오.
+[DocumentResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/delivery/client/resource/v1_0/DocumentResource.java)를 참조하세요.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 `문서` REST 서비스를 호출하는 예입니다.
 
 ## 사이트 문서 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 사이트의 문서를 나열할 수 있습니다. 위와 같이 `1234` 을 사이트 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 사이트의 문서를 나열할 수 있습니다. 위와 같이 `1234` 사이트 ID로 바꿉니다.
 
 ### Documents_GET_FromSite.sh
 
@@ -180,11 +184,11 @@ java -classpath .:* -DsiteId=1234 Documents_GET_FromSite
    :lines: 11-23
 ```
 
-사이트의 `문서` 개체가 JSON으로 나열됩니다.
+사이트의 `문서` 개체가 JSON에 나열됩니다.
 
 ## 문서 받기
 
-다음 cURL 또는 Java 명령을 실행하여 `Document`의 필드를 가져올 수 있습니다. `1234` 을 `문서`의 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 `Document`의 필드를 가져올 수 있습니다. `1234` `문서`의 ID로 바꿉니다.
 
 ```{tip}
 `Documents_GET_FromSite.[java|sh]`를 사용하여 사이트 `Document` ID를 가져옵니다.
@@ -224,7 +228,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById
 
 ## 문서 콘텐츠 가져오기
 
-`문서` 콘텐츠는 Base64로 인코딩되고 `문서`의 `nestedFields`에 포함됩니다. 다음 cURL 또는 Java 명령을 실행하여 콘텐츠를 가져올 수 있습니다. `1234` 을 `문서`의 ID로 바꿉니다.
+`문서` 콘텐츠는 Base64로 인코딩되고 `문서`의 `nestedFields`에 포함됩니다. 다음 cURL 또는 Java 명령을 실행하여 콘텐츠를 가져올 수 있습니다. `1234` `문서`의 ID로 바꿉니다.
 
 ### Document_GET_ById_ContentValue.sh
 
@@ -240,7 +244,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById
    :language: bash
 ```
 
-첫 번째 인수 줄은 각각 서비스 끝점과 인증 자격 증명을 지정합니다. URL의 `/o/headless-delivery/v1.0/documents/${1}` 부분은 해당 ID로 `문서` 를 가져오는 REST 서비스 엔드포인트입니다. 이 URL은 `Document_GET_ById.sh` 스크립트의 URL과 동일합니다. `?nestedFields=contentValue` 부분은 `문서`의 `nestedFields`에 포함된 `contentValue` 을 요청합니다. 마지막으로 `&fields=contentValue` 부분은 `contentValue` 필드를 필터링하여 content 필드만 반환되도록 합니다. 그러나 서비스만 호출하면 다음과 같이 JSON으로 래핑된 Base64로 종료된 콘텐츠가 반환됩니다.
+첫 번째 인수 줄은 각각 서비스 끝점과 인증 자격 증명을 지정합니다. URL의 `/o/headless-delivery/v1.0/documents/${1}` 부분은 해당 ID로 `문서` 가져오는 REST 서비스 엔드포인트입니다. 이 URL은 `Document_GET_ById.sh` 스크립트의 URL과 동일합니다. `?nestedFields=contentValue` 부분은 `문서`의 `nestedFields`에 포함된 `contentValue` 요청합니다. 마지막으로 `&fields=contentValue` 부분은 `contentValue` 필드를 필터링하여 content 필드만 반환되도록 합니다. 그러나 서비스만 호출하면 다음과 같이 JSON으로 래핑된 Base64로 종료된 콘텐츠가 반환됩니다.
 
 ```bash
 {
@@ -280,7 +284,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById_ContentValue
 builder.parameter("nestedFields", "contentValue");
 ```
 
-ID로 `문서` 을 가져온 후 `Base64.Decoder` 은 `문서`의 콘텐츠를 디코딩합니다.
+ID로 `문서` 얻은 후 `Base64.Decoder` `문서`의 콘텐츠를 디코딩합니다.
 
 ```java
 Base64.Decoder decoder = Base64.getDecoder();
@@ -288,7 +292,7 @@ Base64.Decoder decoder = Base64.getDecoder();
 
 ## 문서 패치
 
-`문서`의 PATCH 서비스는 `문서` 및 해당 필드를 업데이트합니다. 다음 cURL 또는 Java 명령을 실행하여 `문서` 을 업데이트할 수 있습니다. `1234` 을 `문서`의 ID로 바꿉니다.
+`문서`의 PATCH 서비스는 `문서` 및 해당 필드를 업데이트합니다. 다음 cURL 또는 Java 명령을 실행하여 `문서` 을 업데이트할 수 있습니다. `1234` `문서`의 ID로 바꿉니다.
 
 ### Document_PATCH_ById.sh
 
@@ -330,7 +334,7 @@ java -classpath .:* -DdocumentId=1234 Document_PATCH_ById
 
 ## 문서 넣기
 
-`문서`의 PUT 서비스는 `문서` 및 해당 필드를 완전히 대체합니다. 다음 cURL 또는 Java 명령을 실행하여 `문서` 을 바꿀 수 있습니다. `1234` 을 `문서`의 ID로 바꿉니다.
+`문서`의 PUT 서비스는 `문서` 및 해당 필드를 완전히 대체합니다. 다음 cURL 또는 Java 명령을 실행하여 `문서` 을 바꿀 수 있습니다. `1234` `문서`의 ID로 바꿉니다.
 
 ### Document_PUT_ById.sh
 
@@ -376,7 +380,7 @@ java -classpath .:* -DdocumentId=1234 Document_PUT_ById
 
 ## 문서 삭제
 
-다음 cURL 또는 Java 명령을 실행하여 `문서` 을 삭제할 수 있습니다. `1234` 을 `문서`의 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 `문서` 을 삭제할 수 있습니다. `1234` `문서`의 ID로 바꿉니다.
 
 ### Document_DELETE_ById.sh
 
@@ -423,7 +427,7 @@ Documents and Media에서 `Document`이 제거됩니다.
 | `DocumentFolder_PUT_ById.[java\|sh]`        | 폴더와 해당 필드를 완전히 바꿉니다. |
 | `DocumentFolders_GET_FromSite.[java\|sh]`   | 사이트의 폴더를 나열합니다.      |
 
-[API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 은 `Document` 및 `DocumentFolder` 서비스 및 스키마를 모두 나열하고 각 서비스를 시험해 볼 수 있는 인터페이스가 있습니다.
+[API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) `Document` 및 `DocumentFolder` 서비스 및 스키마를 모두 나열하고 각 서비스를 시험해 볼 수 있는 인터페이스가 있습니다.
 
 [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) 및 [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) Java 인터페이스도 참조하십시오.
 

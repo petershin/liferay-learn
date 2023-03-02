@@ -1,8 +1,12 @@
+---
+uuid: f63154c3-7b4b-4fa6-b0f6-444c5ad9ff60
+---
+
 # 클레이 알림
 
 클레이 알림은 임베디드 및 스트라이프의 두 가지 유형으로 제공됩니다. 두 가지 유형이 각각의 몇 가지 예와 함께 아래에 나와 있습니다.
 
-## 임베디드 알림
+## 임베디드 경고
 
 포함된 경고는 일반적으로 양식 내부에서 사용됩니다. 포함된 요소에 따라 포함된 경고의 너비가 결정됩니다. 포함된 경고에는 닫기 작업이 필요하지 않습니다. Clay taglibs로 다음과 같은 내장 알림을 생성할 수 있습니다.
 
@@ -10,8 +14,8 @@
 
 ```jsp
 <clay:alert
+    displayType="danger"
     message="This is an error message."
-    style="danger"
     title="Error"
 />
 ```
@@ -22,8 +26,8 @@
 
 ```jsp
 <clay:alert
+    displayType="success"
     message="This is a success message."
-    style="success"
     title="Success"
 />
 ```
@@ -34,6 +38,7 @@
 
 ```jsp
 <clay:alert
+    displayType="info"
     message="This is an info message."
     title="Info"
 />
@@ -45,8 +50,8 @@
 
 ```jsp
 <clay:alert
+    displayType="warning"
     message="This is a warning message."
-    style="warning"
     title="Warning"
 />
 ```
@@ -61,8 +66,8 @@
 
 ```jsp
 <clay:stripe
+    displayType="danger"
     message="This is an error message."
-    style="danger"
     title="Error"
 />
 ```
@@ -73,8 +78,8 @@
 
 ```jsp
 <clay:stripe
+    displayType="success"
     message="This is a success message."
-    style="success"
     title="Success"
 />
 ```
@@ -85,6 +90,7 @@
 
 ```jsp
 <clay:stripe
+    displayType="info"
     message="This is an info message."
     title="Info"
 />
@@ -96,8 +102,8 @@
 
 ```jsp
 <clay:stripe
+    displayType="warning"
     message="This is a warning message."
-    style="warning"
     title="Warning"
 />
 ```

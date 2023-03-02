@@ -6,7 +6,9 @@ toc:
 - ./architecture/module-lifecycle.md
 - ./architecture/bundle-classloading-flow.md
 - ./architecture/ui-architecture.md
+uuid: 22e59b20-bf0e-452f-8bd3-7e2f6581fa2c
 ---
+
 # 건축학
 
 ```{toctree}
@@ -22,7 +24,7 @@ architecture/ui-architecture.md
 
 Liferay DXP/Portal 아키텍처는 세 부분으로 구성됩니다.
 
-1. **코어:** 부트스트랩 DXP 및 해당 프레임워크 [](../building-applications/core-frameworks.md). Core는 서비스, UI 구성 요소 및 사용자 지정을 관리하기 위한 런타임 환경을 제공합니다.
+1. **코어:** 부트스트랩 DXP 및 해당 프레임워크 [개](../building-applications/core-frameworks.md). Core는 서비스, UI 구성 요소 및 사용자 지정을 관리하기 위한 런타임 환경을 제공합니다.
 
 1. **서비스:** Java API 및 웹 API를 통해 DXP 기능 및 사용자 지정 기능을 노출합니다.
 
@@ -44,9 +46,9 @@ Core는 UI 및 서비스 배포를 지원하고 이들을 함께 연결하도록
 
 ## 핵심
 
-DXP는 애플리케이션 서버에서 실행되는 웹 애플리케이션입니다. Core는 애플리케이션과 해당 [프레임워크](../building-applications/core-frameworks.md)를 부트스트랩합니다.
+DXP는 애플리케이션 서버에서 실행되는 웹 애플리케이션입니다. Core는 애플리케이션과 [프레임워크를 부트스트랩합니다](../building-applications/core-frameworks.md).
 
-다음과 같은 것들에 대한 프레임워크가 있습니다.
+다음과 같은 것들을 위한 프레임워크가 있습니다.
 
 * 어댑티브 미디어
 * 애플리케이션 설정
@@ -61,7 +63,7 @@ DXP는 애플리케이션 서버에서 실행되는 웹 애플리케이션입니
 * 벌채 반출
 * 메시지 버스
 * 일정잡이
-* 수색
+* 검색
 * 세분화 및 개인화
 * 서비스 빌더
 * 테스트
@@ -88,9 +90,9 @@ Core는 프레임워크, 서비스 및 UI에 대한 구성 요소 런타임 환�
 
 **교체:** `ServiceC Impl 2` 구성 요소가 기존 구성 요소 `ServiceC Impl 1`보다 순위가 높으면 `ServiceC Impl 2` 이 사용됩니다.
 
-**사용자 지정:** `PortletA 필터` 는 `PortletA`에 대한 요청과 응답을 가로채고 수정하여 콘텐츠 `PortletA` 표시에 영향을 미칩니다.
+**사용자 지정:** `PortletA 필터` `PortletA`에 대한 요청과 응답을 가로채고 수정하여 콘텐츠 `PortletA` 표시에 영향을 미칩니다.
 
-구성 요소 WAR 및 [모듈 JAR 프로젝트](./fundamentals/module-projects.md) 은 [OSGi 번들](https://www.osgi.org/) (모듈)로 설치됩니다. Liferay의 OSGi 프레임워크는 모듈 수명 주기를 정의하고, 종속성을 적용하고, 클래스 로딩 구조를 정의하고, 모듈 및 구성 요소를 관리하기 위한 API 및 CLI([Felix Gogo Shell](./fundamentals/using-an-osgi-service.md))를 제공합니다. Core는 [포털 속성 파일](../installation-and-upgrades/reference/portal-properties.md) 및 [시스템 설정](../system-administration/configuring-liferay/system-settings.md)을 통해 구성됩니다.
+구성 요소 WAR 및 [모듈 JAR 프로젝트](./fundamentals/module-projects.md) [OSGi 번들](https://www.osgi.org/) (모듈)로 설치됩니다. Liferay의 OSGi 프레임워크는 모듈 수명 주기를 정의하고, 종속성을 적용하고, 클래스 로딩 구조를 정의하고, 모듈 및 구성 요소를 관리하기 위한 API 및 CLI([Felix Gogo Shell](./fundamentals/using-an-osgi-service.md))를 제공합니다. Core는 [포털 속성 파일](../installation-and-upgrades/reference/portal-properties.md) 및 [시스템 설정](../system-administration/configuring-liferay/system-settings.md)을 통해 구성됩니다.
 
 서비스 구성 요소는 비즈니스 기능을 제공합니다.
 
@@ -98,17 +100,17 @@ Core는 프레임워크, 서비스 및 UI에 대한 구성 요소 런타임 환�
 
 비즈니스 논리는 구성 요소 런타임 환경에 배포된 서비스에서 구현됩니다. 기본 제공 핵심 서비스 및 프레임워크 서비스는 [사용자](../users-and-permissions/users/understanding-users.md), [역할](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md), [웹 콘텐츠](../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md), [문서 및 미디어](../content-authoring-and-management/documents-and-media.md)등과 같은 모델에서 작동합니다. 맞춤형 서비스를 통해 새로운 모델과 기능을 도입할 수 있습니다. 서비스 구성 요소는 종속성 주입을 통해 서로 액세스할 수 있습니다.
 
-프런트 엔드 애플리케이션은 작업을 수행하기 위해 서비스를 호출합니다. Java API를 사용하여 서비스를 직접 호출하는 Java 기반 애플리케이션을 배포할 수 있습니다. DXP에 배포되었는지 여부에 관계없이 모든 웹 기반(Java 및 비Java) 애플리케이션은 [REST API](../headless-delivery/ 소모-apis/소비-rest-services.md를 포함하여 웹 API를 사용할 수 있습니다. ) [OpenAPI](https://swagger.io/docs/specification/about/) 표준, [GraphQL API](../headless-delivery/ 소모-apis/소비-graphql-apis.md)를 준수합니다. , 일반 웹/REST 서비스. 다음 그림은 Liferay 서비스를 호출하는 애플리케이션 및 외부 클라이언트를 보여줍니다.
+프런트 엔드 애플리케이션은 작업을 수행하기 위해 서비스를 호출합니다. Java API를 사용하여 직접 서비스를 호출하는 Java 기반 애플리케이션을 배포할 수 있습니다. DXP에 배포되었는지 여부에 [없이 모든 웹 기반(Java 및 비 Java) 애플리케이션은 OpenAPI](https://swagger.io/docs/specification/about/) 표준을 준수하는 [REST API](../headless-delivery/consuming-apis/consuming-rest-services.md) , [GraphQL API](../headless-delivery/consuming-apis/consuming-graphql-apis.md)및 일반 웹/REST를 포함한 웹 API를 사용할 수 있습니다. 서비스. 다음 그림은 Liferay 서비스를 호출하는 애플리케이션 및 외부 클라이언트를 보여줍니다.
 
 ![로컬 및 원격 애플리케이션은 REST 웹 API를 통해 서비스를 호출할 수 있습니다. Java 기반 포틀릿은 Java API를 통해 서비스를 호출할 수도 있습니다.](./architecture/images/03.png)
 
-Liferay 서비스는 [Service Builder](../building-applications/data-frameworks/service-builder.md) 을 사용하여 구축되고 [REST Builder](../../headless-delivery/apis-with-rest-builder.md)을 사용하여 REST-ful을 만듭니다. 서비스는 [재정의 및 확장](./extending-liferay/overriding-osgi-services.md) 도 쉽습니다.
+Liferay 서비스는 [Service Builder](../building-applications/data-frameworks/service-builder.md) 사용하여 구축되고 [REST Builder](../headless-delivery/apis-with-rest-builder.md)사용하여 REST-ful을 만듭니다. 서비스는 [재정의 및 확장](./extending-liferay/overriding-osgi-services.md) 도 쉽습니다.
 
 웹 기반 UI를 통해 브라우저에서 콘텐츠 및 서비스 기능을 사용할 수 있습니다.
 
 ## UI
 
-UI는 사람들이 작업하고 [협업](../collaboration-and-social/collaboration-and-social-overview.md)하고 콘텐츠를 즐기는 데 도움이 됩니다. UI 구성은 다음과 같습니다.
+UI는 사람들이 일하고, [](../collaboration-and-social/collaboration-and-social-overview.md)작업하고, 콘텐츠를 즐기는 데 도움이 됩니다. UI 구성은 다음과 같습니다.
 
 * [DXP 애플리케이션](../site-building/introduction-to-site-building.md): 포털, 사이트, 사용자, 페이지, 위젯 등을 관리하기 위한 웹 애플리케이션입니다.
 

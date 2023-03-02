@@ -1,3 +1,7 @@
+---
+uuid: 955491f3-1692-420e-9f3e-c9d1b44aefa6
+---
+
 # 메시징 성능 조정
 
 메시징 성능은 대상에서 조정됩니다. 성능은 대상 유형, 메시지 수신기에 필요한 처리량 및 메시지 처리에 사용할 수 있는 스레드 풀에 따라 다릅니다.
@@ -20,7 +24,7 @@
 
 **대상 유형 호환성**
 
-다음은 각 대상 유형의 [비동기 메시징](./using-asynchronous-messaging.md), [기본 동기 메시징](./using-default-synchronous-messaging.md)및 [직접 동기 메시징](./using-direct-synchronous-messaging.md)과의 호환성입니다.
+다음은 각 대상 유형의 [비동기 메시징](./using-asynchronous-messaging.md), [기본 동기 메시징](./using-default-synchronous-messaging-in-previous-versions.md)및 [직접 동기 메시징](./using-direct-synchronous-messaging-in-previous-versions.md)과의 호환성입니다.
 
 | 대상 유형   | 비동기 메시징 | 기본 동기식 메시징 | 직접 동기식 메시징 |
 |:------- |:------- |:---------- |:---------- |
@@ -36,9 +40,9 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+Then, follow these steps:
 
-1. 예제를 다운로드하고 압축을 풉니다.
+1. Download and unzip the example.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O
@@ -75,7 +79,7 @@
 
 1. `http://localhost:8080` 에서 브라우저로 Liferay 인스턴스를 방문하고 자격 증명을 사용하여 로그인합니다.
 
-1. [스크립트 콘솔](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md)을 엽니다.
+1. [스크립트 콘솔](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md)엽니다.
 
 1. 스크립트 필드에서 다음 Groovy 코드를 실행하여 메시지를 보냅니다.
 
@@ -120,7 +124,7 @@
 
 예제의 3개 모듈은 대상을 구성하고 10개의 메시지 수신기를 등록했으며 대상의 통계를 나열하는 Gogo 셸 명령을 제공했습니다.
 
-`w3r2-able-impl` 의 `W3R2AbleMessagingConfigurator` 이 활성화되면 `acme/w3r2_able` 대상을 구성하고 `DestinationConfiguration`의 `toString()` 값을 기록합니다.
+`w3r2-able-impl` 의 `W3R2AbleMessagingConfigurator` 활성화되면 `acme/w3r2_able` 대상을 구성하고 `DestinationConfiguration`의 `toString()` 값을 기록합니다.
 
 ```{literalinclude} ./tuning-messaging-performance/resources/liferay-w3r2.zip/w3r2-able-impl/src/main/java/com/acme/w3r2/able/internal/messaging/W3R2AbleMessagingConfigurator.java
    :dedent: 1
@@ -135,7 +139,7 @@
    :lines: 13-56
 ```
 
-`listDestinationStats()` 메서드는 `_messageBus` 인스턴스를 사용하여 `대상` 를 가져온 다음 대상에서 `DestinationStatistics` 인스턴스를 가져옵니다. 대상은 `DestinationStatistics` 개체를 최신 통계로 채웁니다. 이 메서드는 다음 대상 정보를 기록합니다.
+`listDestinationStats()` 메서드는 `_messageBus` 인스턴스를 사용하여 `대상` 가져온 다음 대상에서 `DestinationStatistics` 인스턴스를 가져옵니다. 대상은 `DestinationStatistics` 개체를 최신 통계로 채웁니다. 이 메서드는 다음 대상 정보를 기록합니다.
 
 * 활성 스레드 수
 * 현재 스레드 수
@@ -180,12 +184,12 @@
 
 직렬 대상을 사용 중이고 메시지가 일부 메시지 수신기에 충분히 빨리 도달하지 않는 경우 최대 스레드 풀 크기(다음에 설명됨)를 늘리거나 병렬 대상 유형으로 전환해 볼 수 있습니다. Message Bus는 스레드 풀의 스레드를 사용하여 병렬 대상 메시지 수신기를 동시에 처리합니다.
 
-현재 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 원하는 유형 중 하나로 대체하여 대상 유형을 전환할 수 있습니다. 적용 가능한 `DestinationConfiguration` 메서드를 사용하여 새 병렬 또는 직렬 `DestinationConfiguration` 을 만듭니다.
+현재 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 을 원하는 유형 중 하나로 교체하여 대상 유형을 전환할 수 있습니다. 적용 가능한 `DestinationConfiguration` 메서드를 사용하여 새 병렬 또는 직렬 `DestinationConfiguration` 만듭니다.
 
 * `createParallelDestinationConfiguration(String)`
 * `createSerialDestinationConfiguration(String)`
 
-자세한 내용은 [예제 대상 재구성](#reconfigure-the-example-destination) 을 참조하십시오.
+자세한 내용은 [예제 대상 재구성](#reconfigure-the-example-destination) 참조하십시오.
 
 ## 메시지 큐 및 스레드 풀 구성
 
@@ -214,7 +218,7 @@
 
 단계는 다음과 같습니다.
 
-1. `W3R2AbleMessagingConfigurator`의 `_activate(BundleContext)` 메서드를 다음 코드로 대체하여 다른 `DestinationConfiguration` 을 사용합니다.
+1. `W3R2AbleMessagingConfigurator`의 `_activate(BundleContext)` 메서드를 다음 코드로 대체하여 다른 `DestinationConfiguration` 사용합니다.
 
     ```java
     @Activate
@@ -313,5 +317,5 @@ pending message count 0, sent message count 2
 ## 추가 정보
 
 * [비동기 메시징 사용](./using-asynchronous-messaging.md)
-* [기본 동기 메시징 사용](./using-default-synchronous-messaging.md)
-* [직접 동기식 메시징 사용](./using-direct-synchronous-messaging.md)
+* [이전 버전에서 기본 동기 메시징 사용](./using-default-synchronous-messaging-in-previous-versions.md)
+* [이전 버전에서 직접 동기식 메시징 사용](./using-direct-synchronous-messaging-in-previous-versions.md)

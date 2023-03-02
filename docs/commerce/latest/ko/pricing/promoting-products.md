@@ -2,6 +2,7 @@
 toc:
 - ./promoting-products/introduction-to-discounts.md
 - ./promoting-products/creating-a-discount.md
+- ./promoting-products/using-discount-levels.md
 - ./promoting-products/introduction-to-promotions.md
 - ./promoting-products/using-the-promotion-base-list.md
 - ./promoting-products/creating-a-promotion.md
@@ -9,7 +10,9 @@ toc:
 - ./promoting-products/introduction-to-product-groups.md
 - ./promoting-products/replacement-products.md
 - ./promoting-products/product-recommendations.md
+uuid: ff485d4f-412c-4e90-8e25-8da426dfa2d9
 ---
+
 # 제품 홍보
 
 ```{toctree}
@@ -17,6 +20,7 @@ toc:
 
 promoting-products/introduction-to-discounts.md
 promoting-products/creating-a-discount.md
+promoting-products/using-discount-levels.md
 promoting-products/introduction-to-promotions.md
 promoting-products/using-the-promotion-base-list.md
 promoting-products/creating-a-promotion.md
@@ -35,6 +39,10 @@ promoting-products/product-recommendations.md
 
 :::{grid-item-card}  할인 생성
 :link: ./promoting-products/creating-a-discount.md
+:::
+
+:::{grid-item-card}  할인 등급 사용
+:link: ./promoting-products/using-discount-levels.md
 :::
 
 :::{grid-item-card}  프로모션 소개

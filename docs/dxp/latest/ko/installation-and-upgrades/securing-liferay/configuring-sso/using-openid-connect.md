@@ -1,3 +1,7 @@
+---
+uuid: af832712-a9a1-46aa-ac8d-754cbd7656af
+---
+
 # OpenID 연결 사용
 
 OpenID Connect는 사용자가 다른 시스템에 있는 계정을 사용하여 인증할 수 있는 경량 인증 계층입니다. [OAuth 2.0](../../../headless-delivery/using-oauth2/using-oauth2.md) 인증 프로토콜 위에 구축되었습니다. OpenID Connect를 사용하면 사용자 인증을 다른 공급자에게 *위임* 하므로 기존 계정이 있는 사용자가 Liferay 설치에 쉽게 인증할 수 있습니다.
@@ -6,7 +10,7 @@ OpenID Connect는 사용자가 다른 시스템에 있는 계정을 사용하여
 설치에 여러 공급자를 추가할 수 있지만 Liferay DXP는 OpenID Connect 공급자가 될 수 없습니다.
 ```
 
-OpenID Connect의 토큰 흐름은 기능 위에 구축되었기 때문에 OAuth 2.0과 유사합니다. OAuth 2.0은 인증 프로토콜일 뿐이므로 특정 API에 대한 액세스 권한을 부여하는 *액세스 토큰* 을 보냅니다. OpenID Connect는 사용자가 인증하고 권한을 부여한 경우 _이름_ 및 _이메일_와 같은 사용자 정보를 전달하는 *ID 토큰* 을 여기에 추가합니다.
+OpenID Connect의 토큰 흐름은 기능 위에 구축되었기 때문에 OAuth 2.0과 유사합니다. OAuth 2.0은 인증 프로토콜일 뿐이므로 특정 API에 대한 액세스 권한을 부여하는 *액세스 토큰* 보냅니다. OpenID Connect는 사용자가 인증하고 권한을 부여한 경우 _이름_ 및 _이메일_와 같은 사용자 정보를 전달하는 *ID 토큰* 여기에 추가합니다.
 
 ## OpenID Connect 공급자에서 클라이언트 만들기
 
@@ -14,7 +18,7 @@ OpenID Connect를 사용하려면 먼저 공급자에 클라이언트로 등록�
 
 1. 공급자의 웹 사이트로 이동하여 클라이언트를 만듭니다.
 
-1. 생성 프로세스 중에 제공자로부터 전송된 토큰을 처리할 수 있는 *승인된 리디렉션 URL* 을 제공해야 합니다. Liferay DXP의 URL은
+1. 생성 프로세스 중에 제공자로부터 전송된 토큰을 처리할 수 있는 *승인된 리디렉션 URL* 제공해야 합니다. Liferay DXP의 URL은
 
     ```
     https://[server.domain]/c/portal/login/openidconnect
@@ -27,6 +31,10 @@ OpenID Connect를 사용하려면 먼저 공급자에 클라이언트로 등록�
 ## OpenID Connect 공급자 연결 구성
 
 Liferay는 공급자 연결을 위한 새로운 인터페이스에 대한 피드백을 구합니다. 이러한 이유로 연결을 생성하는 방법에는 표준 방식과 새로운 방식의 두 가지가 있습니다.
+
+```{important}
+새로운 공급자가 개발될 때 원활한 전환을 제공하기 위해 Liferay는 두 인터페이스 간에 OpenID Connect 구성을 변환하고 동기화합니다. 
+```
 
 ### OAuth 2.0**을 위한 새로운 OpenID Connect 공급자 연결
 
@@ -42,7 +50,7 @@ Liferay는 공급자 연결을 위한 새로운 인터페이스에 대한 피드
 
 1. 공급자의 인증 서버 메타데이터를 입력합니다. `issuer` 필드에 JSON 값이 있는지 확인하십시오. 이렇게 하면 저장을 클릭할 때 잘 알려진 "로컬" URI가 생성됩니다.
 
-1. *저장*을 클릭합니다. 생성된 URI를 볼 수 있는 OAuth 클라이언트 관리 페이지로 돌아갑니다. 이 URI를 클립보드에 복사합니다. 다음 단계에서 이 URI를 사용합니다.
+1. *저장*클릭합니다. 생성된 URI를 볼 수 있는 OAuth 클라이언트 관리 페이지로 돌아갑니다. 이 URI를 클립보드에 복사합니다. 다음 단계에서 이 URI를 사용합니다.
 
 **잘 알려진 URI가 있는 경우**
 
@@ -50,7 +58,7 @@ Liferay는 공급자 연결을 위한 새로운 인터페이스에 대한 피드
 
 1. 인증 서버의 잘 알려진 URI를 잘 알려진 URI 필드에 붙여넣습니다. 예를 들어 Google은 https://accounts.google.com/.well-known/openid-configuration입니다. 위와 같이 생성했다면 여기에 붙여넣으세요.
 
-1. 대부분의 경우 이 작업만 수행하면 됩니다. 잘 알려진 URI가 없는 경우 아래 필드를 사용하여 연결을 구성하십시오. 완료되면 *저장*을 클릭합니다.
+1. 대부분의 경우 이 작업만 수행하면 됩니다. 잘 알려진 URI가 없는 경우 아래 필드를 사용하여 연결을 구성하십시오. 완료되면 *저장*클릭합니다.
 
 양식의 다른 필드는 공급자로 생성된 특정 구성을 위한 것입니다.
 
@@ -58,11 +66,11 @@ Liferay는 공급자 연결을 위한 새로운 인터페이스에 대한 피드
 
 **OAuth 클라이언트 기본 인증 요청 매개변수:** 자체를 지정하지 않는 Liferay 애플리케이션이 있는 경우 [인증 요청 매개변수](https://www.iana.org/assignments/oauth-parameters) 여기에서 이 OAuth 클라이언트를 사용하기 위한 JSON 형식의 기본 매개변수를 지정하십시오. 맞춤 매개변수 값은 문자열의 JSON 배열이어야 합니다.
 
-**OAuth 클라이언트 기본 토큰 요청 매개변수:** 토큰 요청 매개변수 [자체를 지정하지 않는](https://www.iana.org/assignments/oauth-parameters) 애플리케이션이 있는 경우 여기에서 이 OAuth 클라이언트를 사용하기 위한 JSON 형식의 기본 매개변수를 지정하십시오. 맞춤 매개변수 값은 문자열의 JSON 배열이어야 합니다.
+**OAuth 클라이언트 기본 토큰 요청 매개변수:** 토큰 요청 매개변수 [자체](https://www.iana.org/assignments/oauth-parameters) 지정하지 않는 Liferay 애플리케이션이 있는 경우 여기에서 이 OAuth 클라이언트를 사용하기 위한 JSON 형식의 기본 매개변수를 지정하십시오. 맞춤 매개변수 값은 문자열의 JSON 배열이어야 합니다.
 
 ### 표준 OpenID Connect 공급자 연결
 
-*Control Panel* &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO* 으로 이동하여 *System Scope*에서 ***OpenID Connect Provider*** 을 선택합니다.
+*Control Panel* &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO* 이동하여 *System Scope*에서 ***OpenID Connect Provider*** 을 선택합니다.
 
 ![시스템 설정 메뉴에서 OpenID 구성 찾기.](using-openid-connect/images/01.png)
 
@@ -89,7 +97,7 @@ Liferay는 공급자 연결을 위한 새로운 인터페이스에 대한 피드
    | **밀리초 단위의 토큰 연결 시간 초과**     | 시간이 초과되기 전에 유효성 검사를 위해 토큰을 요청할 때 이 시간 동안 기다립니다. `0` 값은 영원히 대기한다는 의미이므로 권장하지 않습니다.                                                                               |
    | **사용자 정보 엔드포인트**            | 사용자 정보를 얻을 수 있는 OAuth 2.0 보호 URL입니다.                                                                                                                            |
 
-양식을 작성한 후 *저장*을 클릭하면 OpenID Connect 인증을 사용할 준비가 된 것입니다.
+양식을 작성한 후 *저장*클릭하면 OpenID Connect 인증을 사용할 준비가 된 것입니다.
 
 내보낸 구성은 다음 시스템 설정 구성 파일을 생성합니다.
 
@@ -97,7 +105,7 @@ Liferay는 공급자 연결을 위한 새로운 인터페이스에 대한 피드
 com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration-[name].config
 ```
 
-여기서 `[name]` 는 설명적이지만 고유한 이름입니다(예: `provider1`).
+여기서 `[name]` 설명적이지만 고유한 이름입니다(예 `provider1`.
 
 ## OpenID Connect 인증 활성화
 
@@ -105,7 +113,7 @@ com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConn
 
     ![인스턴스 설정에서 OpenID Connect 인증 활성화](using-openid-connect/images/02.png)
 
-1. *활성화됨* 확인란을 클릭한 다음 *저장*을 클릭합니다.
+1. *활성화됨* 확인란을 클릭한 다음 *저장*클릭합니다.
 
 내보낸 구성은 다음 시스템 설정 구성 파일을 생성합니다.
 
@@ -121,7 +129,7 @@ OpenID Connect로 로그인하기 위한 새 링크가 로그인 포틀릿에 �
 
 1. 로그인 포틀릿에서 하단의 OpenID Connect 링크를 클릭합니다.
 
-1. 공급자를 선택하고 *로그인*을 클릭하십시오.
+1. 공급자를 선택하고 *로그인*클릭하십시오.
 
 1. 그러면 공급자의 로그인 페이지로 이동합니다. 자격 증명을 입력하고 로그인합니다.
 

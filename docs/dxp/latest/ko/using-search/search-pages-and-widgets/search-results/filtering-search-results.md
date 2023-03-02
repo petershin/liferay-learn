@@ -1,3 +1,7 @@
+---
+uuid: ee4ef207-d58a-4840-af34-f74fb4a031dc
+---
+
 # 검색 결과 필터링
 
 ```{note}
@@ -15,7 +19,7 @@
 | 사용 사례                                                               | `구성` _(값)_                                                                                                                  |
 |:------------------------------------------------------------------- |:--------------------------------------------------------------------------------------------------------------------------- |
 | **사용자 제목 필터:** 최종 사용자는 필터 키를 직접 조작하여 제목을 사용하여 원하는 결과로 결과를 구체화합니다.   | `필터 필드` _(title\_en\_US)_ <br /> `필터 값` _(팟캐스트)_ <br /> `필터 쿼리 유형` _(일치)_ <br /> `발생 유형` _(must_not)_ |
-| **하드 코딩된 필터링:** 관리 사용자가 최종 사용자에게 보이지 않고 변경할 수 없는 필터로 검색 페이지를 구성합니다. | ***위 구성에 추가*** <br /> `보이지 않음` _(True-체크됨)_ <br /> `변경 불가능` _(True-체크됨)_                                        |
+| **하드 코딩된 필터링:** 관리 사용자가 최종 사용자에게 보이지 않고 변경할 수 없는 필터로 검색 페이지를 구성합니다. | **_위 구성에 추가_** <br /> `보이지 않음` _(True-체크됨)_ <br /> `변경 불가능` _(True-체크됨)_                                        |
 
 사용자 지정 필터는 많은 작업을 수행할 수 있으므로 모두 나열하는 것은 불가능합니다. 다음은 위젯 구성 둘러보기입니다. [Custom Filter Examples](./custom-filter-examples.md)에서 몇 가지 예시 구성을 볼 수 있습니다.
 
@@ -31,16 +35,16 @@
 
 ## 사용자 지정 필터 구성
 
-검색 결과 필터링을 시작하려면 위젯의 옵션 메뉴(![Options](../../../images/icon-app-options.png))를 열고 _구성_를 클릭하십시오.
+검색 결과 필터링을 시작하려면 위젯의 옵션 메뉴(![Options](../../../images/icon-app-options.png))를 열고 _구성_클릭하십시오.
 
 **필터 필드(텍스트):** 대부분의 경우 필터는 특정 필드에서 작동합니다. 필터링할 인덱싱된 필드의 이름을 설정합니다(예: `title`). Filter Query Type이 _Regexp_과 같이 필드가 필요하지 않은 유형으로 설정된 경우에는 필요하지 않습니다.
 
-쿼리 문자열 및 스크립트 쿼리에는 필터 필드를 설정할 필요가 없습니다.  다른 모든 쿼리에는 하나 이상의 필드가 필요합니다. 
+쿼리 문자열 및 스크립트 쿼리에는 필터 필드를 설정할 필요가 없습니다.  다른 모든 쿼리에는 하나 이상의 필드가 필요합니다.
 <!--Note: Multi Match and Simple Query String take an array of fields according to the Elasticsearch docs, but our config doesn't seem to support it. -->
 
-Liferay DXP 색인에 있는 필드를 찾으려면 제어판 [의 필드 매핑 UI를 사용](#finding-fields).
+Liferay DXP 색인에 있는 필드를 찾으려면 [제어판의 필드 매핑 UI](#finding-fields)를 사용하십시오.
 
-**필터 값(텍스트):** 대부분의 필터의 경우 지정된 필드에서 필터를 적용할 텍스트를 지정하는 텍스트 _을 여기에 입력해야 합니다(예: _일치_* 를 `title_en_US` 필드). 일부 필터 쿼리 유형에는 [_Regexp_](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-regexp-query.html) 쿼리의 경우와 같이 특별한 표기가 필요합니다.
+**필터 값(텍스트):** 대부분의 필터의 경우 지정된 필드에서 필터를 적용할 텍스트를 _하는 텍스트 값을 여기에 입력해야 합니다(_ : _일치_ 쿼리를 `title_en_US` 필드). 일부 필터 쿼리 유형에는 [_Regexp_](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-regexp-query.html) 쿼리의 경우와 같이 특별한 표기가 필요합니다.
 
 **필터 쿼리 유형(선택 목록):** 결과를 필터링할 쿼리 유형을 선택합니다. 사용 가능한 유형에는 Bool, Date Range, Exists, Fuzzy, Match, Match Phrase, Match Phrase Prefix, Multi Match, Prefix, Query String, Regexp, Script, Simple Query String, Term, Wildcard가 포함됩니다.
 
@@ -74,62 +78,40 @@ Liferay DXP 색인에 있는 필드를 찾으려면 제어판 [의 필드 매핑
 
 ## 필드 찾기
 
-사용자 정의 필터 위젯에서 필터링할 수 있는 필드를 찾으려면 적절한 권한이 있는 사용자가 *제어판* &rarr; *구성* &rarr; *검색*으로 이동할 수 있습니다.  여기에서 Field Mappings 탭을 열고 `liferay-[companyId]` 인덱스에 대한 매핑을 찾습니다. 매핑의 [`속성`](https://www.elastic.co/guide/en/elasticsearch/reference/current/properties.html) 섹션으로 스크롤합니다.
+사용자 정의 필터 위젯에서 필터링할 수 있는 필드를 찾으려면 적절한 권한이 있는 사용자가 _제어판_ &rarr; _구성_ &rarr; _검색_으로 이동할 수 있습니다.  여기에서 Field Mappings 탭을 열고 `liferay-[companyId]` 인덱스에 대한 매핑을 찾습니다. 매핑의 [`속성`](https://www.elastic.co/guide/en/elasticsearch/reference/current/properties.html) 섹션으로 스크롤합니다.
 
 ![Liferay DXP의 인덱싱된 필드를 찾으려면 필드 매핑을 찾아보십시오.](./filtering-search-results/images/04.png)
 
 ## 중첩 필드 찾기 및 사용
 
-> 가용성: 7.2 FP10+, 7.3 FP1/SP1+
+{bdg-secondary}`사용 가능 7.2 FP10+, 7.3 FP1+, 7.4(모든 업데이트)`
 
-[중첩된 DDM 필드 액세스](../search-facets/custom-facet.md#accessing-nested-ddm-fields)에 설명된 대로 DDM 필드는 Liferay 7.2 SP3+/FP8+(및 모든 Liferay 7.3 버전)에서 [중첩된 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 가 되었습니다. 7.2 및 7.3의 최신 수정 팩 및 GA 릴리스에서는 이러한 중첩 필드를 설명하기 위해 [Elasticsearch 중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 이 지원됩니다.
+[중첩된 DDM 필드 액세스](../search-facets/custom-facet.md#accessing-nested-ddm-fields)에 설명된 대로 DDM 필드는 Liferay 7.2 SP3+/FP8+(및 모든 Liferay 7.3 버전)에서 [중첩된 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 가 되었습니다. 7.2 및 7.3의 최신 수정 팩 및 GA 릴리스에서는 이러한 중첩 필드를 설명하기 위해 [Elasticsearch 중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 지원됩니다.
 
 색인의 기존 문서에서 DDM 필드를 찾으려면
 
-```json
-GET liferay-20097/_search
-{
-  "query": {
-    "nested": {
-      "path": "ddmFieldArray",
-      "query": {
-        "wildcard":  { "ddmFieldArray.ddmFieldName": "ddm__*" }
-      }
-    }
-  }
-}
-```
+1. 검색 결과 위젯의 구성에서 _표시 결과를 문서 양식_ 로 활성화한 다음 중첩 필드를 사용하는 결과를 검색합니다.
 
-인스턴스 값과 일치하도록 인덱스 이름 매개변수에서 Company Id---`20097`---을 바꿉니다.
-
-반환된 문서에는 중첩된 콘텐츠가 있는 `ddmFieldArray` 개체가 있습니다.
+1. 결과의 _Details_ 보기를 확장한 다음 `ddmFieldArray` 필드를 찾아 해당 값을 복사합니다. 예를 들어,
 
 ```json
- "ddmFieldArray" : [
-    {
-      "ddmFieldName" : "ddm__keyword__40806__Textb5mx_en_US",
-      "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-      "ddmFieldValueKeyword_en_US_String_sortable" : "some text has been entered",
-      "ddmFieldValueKeyword_en_US" : "some text has been entered"
-    },
-    {
-      "ddmFieldName" : "ddm__keyword__40806__Selectjdw0_en_US",
-      "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-      "ddmFieldValueKeyword_en_US_String_sortable" : "option 3",
-      "ddmFieldValueKeyword_en_US" : "value 3"
-    },
-    {
-      "ddmFieldName" : "ddm__keyword__40806__Boolean15cg_en_US",
-      "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-      "ddmFieldValueKeyword_en_US" : "true",
-      "ddmFieldValueKeyword_en_US_String_sortable" : "true"
-    }
-  ],
+   "ddmFieldArray" : [
+               {
+                 "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
+                 "ddmFieldValueKeyword_en_US" : "true",
+                 "ddmFieldValueKeyword_en_US_String_sortable" : "true",
+                 "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
+               }
+             ],
 ```
 
-사용자 정의 필터 구성에서 이러한 필드 중 하나를 사용하려면 세 개의 사용자 정의 필터 위젯이 필요합니다.  필수 하위 쿼리를 래핑하기 위해 [중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 이 추가되었습니다. 하나의 하위 쿼리는 필드 이름과 일치하고 다른 하나는 값과 일치합니다.
+사용자 정의 필터 구성에서 중첩 필드를 사용하려면 세 개의 사용자 정의 필터 위젯이 필요합니다.  필수 하위 쿼리를 래핑하기 위해 [중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 추가되었습니다. 하나의 하위 쿼리는 필드 이름과 일치하고 다른 하나는 값과 일치합니다.
 
-사용자 정의 필터 위젯과 함께 DDM 구조 필드의 사용을 보여 주는 예는 [중첩 필드에 대한 일치 부스팅](custom-filter-examples.md#boosting-matches-to-nested-fields) 을 참조하십시오.
+```{important}
+동일한 페이지의 여러 중첩 필드에 대한 사용자 정의 필터가 필요한 경우 각 하위 쿼리에 대해 별도의 사용자 정의 매개변수 이름을 구성해야 합니다. 예를 보려면 [사용자 정의 필터 예](./custom-filter-examples.md#boosting-matches-to-nested-fields)를 참조하십시오. 
+```
+
+사용자 정의 필터 위젯과 함께 DDM 구조 필드의 사용을 보여 주는 예는 [중첩 필드에 대한 일치 부스팅](custom-filter-examples.md#boosting-matches-to-nested-fields) 참조하십시오.
 
 ## 관련 내용
 

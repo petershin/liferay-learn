@@ -1,8 +1,12 @@
+---
+uuid: 2c1c1fa2-205d-4867-a52e-23177c13da25
+---
+
 # 매장 설정 개요
 
 ## 소개
 
-이 문서는 Liferay Commerce에서 상점을 처음 구축하는 사용자에게 안내를 제공하기 위한 것입니다. Liferay Commerce(및 Liferay DXP)가 적절하게 설치되고 구성되었다고 가정합니다. 설치에 대한 자세한 내용은 [설치 개요](../installation-and-upgrades/installation-overview.md)을 참조하십시오.
+이 문서는 Liferay Commerce에서 상점을 처음 구축하는 사용자에게 안내를 제공하기 위한 것입니다. Liferay Commerce(및 Liferay DXP)가 적절하게 설치되고 구성되었다고 가정합니다. 설치에 대한 자세한 내용은 [설치 개요](../installation-and-upgrades/installation-overview.md)참조하십시오.
 
 ## 로드맵
 
@@ -30,9 +34,9 @@ Liferay Commerce의 글로벌 구성에는 상점 시간대 설정, 사용 가�
 
 ### 상점 사이트 만들기
 
-Liferay Commerce는 B2B, B2C 및 B2C-B2B 상점을 지원합니다. [사이트 유형](../starting-a-store/sites-and-site-types.md) 은 매장의 비즈니스 모델을 지정하고 매장이 계정과 함께 작동하는 방식을 결정합니다.
+Liferay Commerce는 B2B, B2C 및 B2C-B2B 상점을 지원합니다. [사이트 유형](../starting-a-store/sites-and-site-types.md) 매장의 비즈니스 모델을 지정하고 매장이 계정과 함께 작동하는 방식을 결정합니다.
 
-Liferay Commerce는 Liferay DXP를 기반으로 합니다. Liferay DXP 사이트의 작동 방식에 대한 자세한 내용은 [사이트 구축](https://learn.liferay.com/dxp/latest/en/site-building/building-sites/adding-a-site.html)을 참조하십시오.
+Liferay Commerce는 Liferay DXP를 기반으로 합니다. Liferay DXP 사이트의 작동 방식에 대한 자세한 내용은 [사이트 구축](https://learn.liferay.com/dxp/latest/en/site-building/building-sites/adding-a-site.html)참조하십시오.
 
 ### 상점 사이트 상거래 설정 구성
 
@@ -72,7 +76,7 @@ Liferay Commerce에는 배송료를 계산하는 몇 가지 옵션이 있습니�
 
 ### 카탈로그에 제품 추가
 
-제품을 추가할 때 **Simple**, **Grouped**, **Virtual**의 세 가지 제품 유형이 있습니다. 자세한 내용은 [제품 유형 소개](../product-management/creating-and-managing-products/product-types.md) 을 참조하십시오.
+제품을 추가할 때 **Simple**, **Grouped**, **Virtual**의 세 가지 제품 유형이 있습니다. 자세한 내용은 [제품 유형 소개](../product-management/creating-and-managing-products/product-types.md) 참조하십시오.
 
 #### 제품 정보 추가
 
@@ -91,18 +95,18 @@ Liferay Commerce Catalog는 다양한 제품 정보의 저장 및 관리를 지�
 제품 가격을 책정하는 방법에는 여러 가지가 있으며 이러한 방법은 기본 가격, 가격표, 계층 가격, 판촉 가격 및 할인과 같은 가격 책정 계층 구조에서 서로 관련되어 있습니다. 가격은 SKU별로 관리됩니다.
 
 * [가격](../pricing/introduction-to-pricing.md)
-* [가격 목록](../pricing/creating-a-price-list.md)
+* [가격 리스트](../pricing/creating-a-price-list.md)
 * [할인](../pricing/promoting-products/introduction-to-discounts.md)
 
 #### 재고 관리
 
-* [재고 관리 소개](../inventory-management/introduction-to-managing-inventory.md)
+* [재고 관리](../inventory-management.md)
 
 ## 상점 만들기
 
 Liferay Commerce에서 상점을 구축하려면 완전한 카탈로그 이상이 필요합니다. 처음부터 상점 첫 화면을 구축하는 상점 관리자는 제품을 표시하고 판매하기 위해 일련의 페이지를 추가해야 합니다.
 
-자세한 내용은 [매장 만들기](../creating-store-content/creating-your-storefront.md) 을 참조하십시오.
+자세한 내용은 [매장 만들기](../creating-store-content/creating-your-storefront.md) 참조하십시오.
 
 ## 고객 계정 관리
 

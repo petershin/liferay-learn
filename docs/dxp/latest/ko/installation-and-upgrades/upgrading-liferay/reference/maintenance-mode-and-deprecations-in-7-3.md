@@ -1,3 +1,7 @@
+---
+uuid: e50ef81a-3790-4f62-a187-48b891c0fccf
+---
+
 # 7.3의 유지 관리 모드 및 사용 중단
 
 각각의 새로운 DXP 릴리스에서는 기능이 지속적인 개선을 보장하지 않거나 더 이상 사용되지 않을 수 있습니다. 기능에 대한 향상을 중지하면 *유지 관리 모드*로 설정됩니다.
@@ -55,7 +59,6 @@
 | 화면 | Github - iOS: [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0), Android: [5.1.0](https://github.com/liferay /liferay-screens/releases/tag/5.1.0-android) | [모바일 SDK](https://help.liferay.com/hc/en-us/articles/360020447511-Mobile-SDK) 및 [헤드리스 API](../../../headless-delivery /using-liferay-as-a-headless-platform.md). |
 | *도구* 범주의 검색 위젯(클래식) | 번들 | 7.1에서 더 이상 사용되지 않습니다. *검색* 범주의 [검색 위젯](../../../using-search/search-pages-and-widgets/search-results/search-results.md)으로 대체되었습니다. |
 | SOAP 웹 서비스 | 번들(비활성화) | Axis Servlet(예: `http://localhost:8080/api/axis/`에 서비스 게시)은 이 포털 속성 설정 `axis.servlet.enabled`로 활성화할 수 있습니다. Liferay `*SOAP` 클래스는 더 이상 사용되지 않습니다. |
-| 솔라 | 마켓플레이스 | Elasticsearch로 대체되었습니다. |
 | 테마: 협만 | 보관됨 | 직접적인 교체가 없습니다. |
 | 테마: Hello World | 번들 | 직접적인 교체가 없습니다. |
 | 테마: 폴리곤 | 보관됨 | 직접적인 교체가 없습니다. |
@@ -77,7 +80,7 @@
 * 구명가오리 잠꼬대
 * Liferay 모바일 경험: 모바일 SDK
 * 라이프레이 보고서
-* 사이트 템플렛
+* 위치 템플렛
 
 ```{note}
 내보내기/가져오기는 이전에 유지 관리 모드로 나열되었지만 Liferay는 계속해서 내보내기/가져오기 애플리케이션을 개선하고 있습니다.

@@ -1,3 +1,7 @@
+---
+uuid: ece95c64-ba3c-46ad-8343-5ebdeee906db
+---
+
 # 결제 수단 관리
 
 [채널](../../store-management/channels/introduction-to-channels.md) 및 상점 [사이트](../../starting-a-store/sites-and-site-types.md)으로 범위가 지정된 Liferay Commerce의 결제 방법. Liferay Commerce 인스턴스에 동일한 인스턴스에서 호스팅되는 상점이 두 개 이상 있는 경우 관리자는 각 사이트에서 서로 다른 결제 방법을 사용할 수 있습니다.
@@ -6,7 +10,7 @@
 
 ![커머스 2.1 채널](./managing-payment-methods/images/06.png)
 
-원하는 채널을 선택한 후 이 매장 사이트의 결제 수단에 대해 _편집_ 을 클릭합니다.
+원하는 채널을 선택한 후 이 매장 사이트의 결제 수단에 대해 _편집_ 클릭합니다.
 
 ![결제 수단 페이지](./managing-payment-methods/images/04.png)
 

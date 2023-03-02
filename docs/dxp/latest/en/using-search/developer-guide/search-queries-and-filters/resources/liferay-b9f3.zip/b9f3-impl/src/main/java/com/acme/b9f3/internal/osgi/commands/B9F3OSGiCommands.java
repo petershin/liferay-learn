@@ -3,12 +3,7 @@ package com.acme.b9f3.internal.osgi.commands;
 import com.liferay.petra.string.StringBundler;
 import com.liferay.petra.string.StringPool;
 import com.liferay.portal.kernel.exception.PortalException;
-import com.liferay.portal.kernel.model.Role;
-import com.liferay.portal.kernel.model.role.RoleConstants;
 import com.liferay.portal.kernel.search.Field;
-import com.liferay.portal.kernel.security.permission.PermissionChecker;
-import com.liferay.portal.kernel.security.permission.PermissionCheckerFactoryUtil;
-import com.liferay.portal.kernel.security.permission.PermissionThreadLocal;
 import com.liferay.portal.kernel.service.RoleLocalService;
 import com.liferay.portal.kernel.service.UserLocalService;
 import com.liferay.portal.kernel.util.LocaleUtil;
@@ -52,21 +47,16 @@ public class B9F3OSGiCommands {
 		SearchRequestBuilder searchRequestBuilder =
 			_searchRequestBuilderFactory.builder();
 
-		Role adminRole = _roleLocalService.getRole(
-			_portal.getDefaultCompanyId(), RoleConstants.ADMINISTRATOR);
-
-		long[] adminUserIds = _userLocalService.getRoleUserIds(
-			adminRole.getRoleId());
-
-		PermissionChecker permissionChecker =
-			PermissionCheckerFactoryUtil.create(
-				_userLocalService.getUser(adminUserIds[0]));
-
-		PermissionThreadLocal.setPermissionChecker(permissionChecker);
-
 		searchRequestBuilder.withSearchContext(
 			searchContext -> {
-				searchContext.setCompanyId(permissionChecker.getCompanyId());
+				searchContext.setCompanyId(_portal.getDefaultCompanyId());
+				searchContext.setEntryClassNames(
+					new String[] {
+						"com.liferay.document.library.kernel.model.DLFileEntry",
+						"com.liferay.document.library.kernel.model.DLFolder",
+						"com.liferay.journal.model.JournalArticle",
+						"com.liferay.journal.model.JournalFolder"
+					});
 				searchContext.setKeywords(keywords);
 			});
 

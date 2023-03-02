@@ -9,7 +9,7 @@ You can learn more about creating an A/B test and configuring it for a content p
 
 Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When created, tests are synced automatically with Analytics Cloud, where you can manage them. To view drafted, running, terminated, and completed A/B tests, go to the *Tests* menu in the left column.
 
-![The Tests menu lists all A/B tests created and defined for a site.](a-b-testing/images/01.png)
+![The Tests menu displays all A/B tests created and defined for a site.](a-b-testing/images/01.png)
 
 For drafted A/B tests, you can configure these details:
 
@@ -19,7 +19,7 @@ For drafted A/B tests, you can configure these details:
 * Traffic Split: the percentage of visitors randomly split between the variants.
 * Confidence Level: the accuracy of the test results.
 
-![The A/B testing setup process.](a-b-testing/images/02.png)
+![This A/B test is configured and ready to run.](a-b-testing/images/02.png)
 
 Once your A/B test is running, Analytics Cloud offers these reports to keep you up-to-date on its progress:
 
@@ -37,9 +37,9 @@ It also provides a quick summary of metric details and the current best performi
 
 ## Variant Report
 
-The Variant Report panel provides a detailed breakdown of each variant and how well they're performing.
+The Variant Report panel provides a detailed breakdown of variants and how well they're performing.
 
-![The Variant Report panel provides a detailed breakdown of each variant and how well they're performing.](a-b-testing/images/04.png)
+![The Variant Report panel provides a detailed breakdown of variants and how well they're performing.](a-b-testing/images/04.png)
 
 Below are the metrics reported for each variant:
 
@@ -49,15 +49,15 @@ Below are the metrics reported for each variant:
 
 **Improvement:** The relative improvement from the control group. This metric may also be known as lift. For example, assume the control page has a 15% retention rate and the variant page has a 16% retention rate. The improvement calculation would be `((16 - 15) / 15) = ~6.67%` improvement. This shows the impact of a change. If there is only a small improvement, it may not be worth implementing that change.
 
-**Probability to Win:** Predicts the likelihood that a variant will beat all other participating variants. This shows how multiple metrics compare to each other. For example, consider a horse racing event: each horse has a generated chance to win that is posted before a race (i.e., odds of winning), calculated by simulating the race thousands of times. This same method is used for your variants to calculate their probability of winning the A/B test.
+**Probability to Win:** Predicts the likelihood that a variant will beat all other participating variants. This shows how multiple metrics compare to each other. For example, consider a horse racing event: each horse has a generated chance to win posted before a race (i.e., odds of winning), calculated by simulating the race thousands of times. This same method is used for your variants to calculate their probability of winning the A/B test.
 
 **Unique Visitors:** The number of visitors contributing to the variant. A visitor randomly assigned a variant always sees the same variant until the end of the test. Besides knowing how much traffic is hitting a page, this metric also helps in determining configuration issues with the A/B test. For example, there could be too much traffic going to one variant (typically caused by a segment misconfiguration).
 
 ## Test Sessions
 
-The Test Sessions panel provides statistics of how many sessions view your test impressions per day over time. This helps you validate that your audiences are being directed to your A/B test impressions. It also portrays how your test affects the traffic to your page compared to before.
+The Test Sessions panel shows the number of sessions viewing your test impressions per day over time. This helps you validate that your audiences are being directed to your A/B test impressions. It also portrays how your test affects the traffic to your page compared to before the test began.
 
-![The Test Sessions panel provides statistics showing how many sessions view your test impressions per day over time.](a-b-testing/images/05.png)
+![The Test Sessions panel shows sessions viewing your test impressions per day over time.](a-b-testing/images/05.png)
 
 Next, you'll learn about an A/B test's statuses.
 
@@ -80,7 +80,7 @@ When a test is running, you can terminate it by selecting *Terminate Test* from 
 ![Click on Terminate Test to end a running test.](a-b-testing/images/07.png)
 
 ```{important}
-Large amounts of traffic (i.e. several thousand hits a day) is expected for an A/B test to run successfully. Therefore, public facing sites may be more suitable for testing. It may take significantly longer for a test to finish for an internal website or portal.
+Large amounts of traffic (i.e. several thousand hits a day) is expected for an A/B test to run successfully. This makes public facing sites well-suited for testing. It may take significantly longer for a test to finish for an internal website or portal.
 ```
 
 ### Winner Declared

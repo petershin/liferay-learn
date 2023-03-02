@@ -94,7 +94,7 @@ liferay
 ```
 
 ```{note}
-If you are using version 3.x.x services, then scripts instead belong in the `lcp/liferay/script/` folder in the repository. See [Understanding Service Stack Versions](./reference/understanding-service-stack-versions.md)_ for more information on checking the version.
+If you are using version 3.x.x services, then scripts instead belong in the `lcp/liferay/script/` folder in the repository. See [Understanding Service Stack Versions](./reference/understanding-service-stack-versions.md) for more information on checking the version.
 ```
 
 ## Limitations

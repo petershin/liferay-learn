@@ -22,13 +22,6 @@ You need to set up these prerequisites to get started developing client extensio
 
     You can copy the client extension projects (in the `client-extensions/` directory) into your own workspace, or use this sample workspace on its own.
 
-1. Feature flags enabled for client extensions. If you are hosting Liferay on-premises, add these properties to your Liferay server's [`portal-ext.properties` file](../../installation-and-upgrades/reference/portal-properties.md). Otherwise, add these properties to a `portal-ext.properties` file within your Liferay workspace's `configs/{ENV}/` folder (for the applicable environment(s)).
-
-    ```
-    feature.flag.LPS-153457=true
-    feature.flag.LPS-166479=true
-    ```
-
 1. The [`lcp` CLI tool](https://learn.liferay.com/liferay-cloud/latest/en/reference/command-line-tool.html) (if you are using Liferay Experience Cloud).
 
 ## Configuring Client Extensions in `client-extension.yaml`

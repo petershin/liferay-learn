@@ -3,7 +3,9 @@ uuid: 64a5a655-0a6a-4d41-866a-7be3e5a513bf
 ---
 # Configuring Instance Settings
 
-Liferay can be configured to use a mail server to send email notifications. Email notifications are sent for various purposes (e.g. user registration or password management). To learn more, see [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)
+Liferay instances share the same server but can be configured to serve up different digital experiences from different domain names. Various settings can be configured for each instance you have.
+
+For example, configure a specifc mail server to send email and notifications for each instance. Email notifications are sent for various purposes (e.g. user registration or password management). To learn more, see [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)
 
 ### Configuring Mail in LXC
 
@@ -19,7 +21,7 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
    * Set the address as `support@delectablebonsai.com`.
    * Click _Save_.
 
-1. In the left navigation, click _Mail Settings_. Enter the following values.
+1. In the left navigation, click _Mail Settings_. Input the relevant email settings and credentials. For example, if Delectable Bonsai's email was served by Gmail, the settings might look like this:
 
    * Incoming POP Server: `pop.gmail.com`.
    * Incoming Port: `110`.
@@ -32,13 +34,15 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
    * User Name: `support@delectablebonsai.com`.
    * Password: `learn`.
 
-   ![Input the settings for the mail server.](./configuring-mail/images/01.png)
+   ![Input the settings for the mail server.](./configuring-instance-settings/images/01.png)
 
    Click _Save_.
 
 ```{note}
 The settings above are for demonstration purposes only. For your business, input your relevant email provider values and credentials.
 ```
+
+The next step is [understanding virtual instances](./understanding-virtual-instances.md).
 
 ## Relevant Documentation
 

@@ -29,6 +29,8 @@ Follow the [ClamAV Documentation](https://docs.clamav.net/) to setup ClamAV to r
    * Port - The port number of your server.
    * Socket Connection SO Timeout Time - A timeout time in milliseconds.
 
+   ![Input the settings of your ClamAV environment.](./configuring-system-settings/images/01.png)
+
 1. Click _Update_. Your Liferay environment is now configured to scan any uploaded file with ClamAV.
 
 The next step is to [configure instance settings](./configuring-instance-settings.md).

@@ -21,7 +21,7 @@ Now that Liferay is up and running, it is time to configure the environment to s
 By the end of this module, you will have:
 
 * Setup an antivirus software to scan any uploaded files across the Liferay system
-* Setup a mail server to be used across the Liferay instance
+* Setup a mail server to be used across a Liferay instance
 * Setup a separate virtual instance for companies who purchase Delectable Bonsai syrup that are sold under their own branding
 * Configure a separate file storage solution
 

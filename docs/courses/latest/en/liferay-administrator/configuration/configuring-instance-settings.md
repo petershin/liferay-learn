@@ -42,9 +42,9 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
 The settings above are for demonstration purposes only. For your business, input your relevant email provider values and credentials.
 ```
 
-The next step is [understanding virtual instances](./understanding-virtual-instances.md).
+The next step is [configuring virtual instances](./configuring-virtual-instances.md).
 
-## Relevant Documentation
+## Relevant Concepts
 
 - [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)
 - [Email Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/email-settings.html)

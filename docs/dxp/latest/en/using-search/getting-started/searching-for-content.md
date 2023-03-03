@@ -124,7 +124,7 @@ The Type Facet and the Search Results widget support searching for Liferay Objec
 
    ![A title and a content summary are displayed for Object Entries.](./searching-for-content/images/10.png)
 
-<!-- * If configured in the Object, a display page can be shown when the Object Entry is clicked in Search Results. -->
+For Liferay 7.4 U64+ and GA64+, clicking an object entry in the search results list redirects to the [object's display page](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects), if one exists.
 
 ## Additional Information
 

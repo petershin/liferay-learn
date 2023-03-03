@@ -1,3 +1,6 @@
+---
+uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
+---
 # Creating Your First Theme Favicon Client Extension
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`

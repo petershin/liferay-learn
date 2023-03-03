@@ -74,18 +74,7 @@ Once Liferay is running,
 
    ![Confirm that a new discount was added.](./discount-api-basics/images/01.png)
 
-<!--Maybe this coupon code stuff is a standalone section? -->
-To enable a coupon code, set `useCouponCode` to `true` and set a value in the `couponCode` field. To restrict the coupon code's usage, use the settings described in the table below.
-
-| Restriction Type              | Settings | Description |
-| :---------------------------- | :------- | :---------- |
-| Number of uses                | `"limitationType" : "limited for total"`<br />`"limitationTimes" : 5` (any integer) | The coupon code can be used a total of 5 times. |
-| Number of uses per account    | `"limitationType": "limited for account"`<br />`"limitationTimesPerAccount" : 5` (any integer) | Each account can use the coupon code up to 5 times. |
-| Number of uses and by account | `"limitationType" : "limited for account and total"`<br />`"limitationTimesPerAccount": 2` (any integer)<br />`"limitationTimes" : 5` (any integer) | Each account can use the coupon code up to 2 times, with total usage capped at 5. |
-
-Alternatively, call the REST service using the Java client. 
-
-1. Navigate into the `java` folder and compile the source files:
+1. Alternatively, call the REST service using the Java client. Navigate into the `java` folder and compile the source files:
 
    ```bash
    javac -classpath .:* *.java
@@ -96,6 +85,16 @@ Alternatively, call the REST service using the Java client.
    ```bash
    java -classpath .:* Discount_POST_ToInstance
    ```
+
+### Adding a Coupon Code
+
+To add a coupon code to the discount, set `useCouponCode` to `true` and set a value in the `couponCode` field. To restrict the coupon code's usage, use the settings described in the table below.
+
+| Restriction Type              | Settings | Description |
+| :---------------------------- | :------- | :---------- |
+| Number of uses                | `"limitationType" : "limited for total"`<br />`"limitationTimes" : 5` (any integer) | The coupon code can be used a total of 5 times. |
+| Number of uses per account    | `"limitationType": "limited for account"`<br />`"limitationTimesPerAccount" : 5` (any integer) | Each account can use the coupon code up to 5 times. |
+| Number of uses and by account | `"limitationType" : "limited for account and total"`<br />`"limitationTimesPerAccount": 2` (any integer)<br />`"limitationTimes" : 5` (any integer) | Each account can use the coupon code up to 2 times, with total usage capped at 5. |
 
 ## Examine the cURL Command
 

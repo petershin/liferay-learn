@@ -1,5 +1,5 @@
 ---
-uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
+uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed   
 ---
 # Creating Your First Theme Favicon Client Extension
 
@@ -48,6 +48,18 @@ Once Liferay is running,
 
    ```bash
    ./../../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
+
+   This builds and deploys your client extension Liferay's `deploy/` folder inside your Docker container.
+
+   ```{note}
+   If you want to deploy your client extension to a Liferay Experience Cloud environment, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#) instead, and run the [`lcp deploy`](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#deploying-to-your-dxp-cloud-environment) command.
+   ```
+
+   Confirm the deployment in your Liferay instance's console:
+
+   ```bash
+   STARTED sample-theme-favicon_1.0.0
    ```
 
 ## Use the Theme Favicon Client Extension on a Page

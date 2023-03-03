@@ -31,19 +31,36 @@ You need to set up these prerequisites to get started developing client extensio
 
 1. The [`lcp` CLI tool](https://learn.liferay.com/liferay-cloud/latest/en/reference/command-line-tool.html) (if you are using Liferay Experience Cloud).
 
-## The Definition of a Client Extension
+## Configuring Client Extensions in `client-extension.yaml`
 
-Client extensions are defined by `client-extension.yaml` files. They contain these definitions:
+Client extensions are defined in `client-extension.yaml` files. They contain these definitions:
 
-* `name`: The client extension's name (as it appears in the Liferay UI).
+* `name`: The client extension's name (as it appears in the Liferay UI). If the client extension is not configurable in the UI, the `name` value is not used.
 
 * `type`: The client extension's type (`globalCSS`, `customElement`, `themeFavicon`, etc.). This determines the way Liferay handles the client extension when it is deployed.
 
-* `url`: An absolute or relative URL that any resources contained in the client extension are served from. For example, an [IFrame client extension](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md#using-the-iframe-type) has a `url` field defining the location of the external application, like [this example](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-minimal-workspace/client-extensions/able-iframe/client-extension.yaml#L4). A [theme favicon](./browser-based-client-extensions.md#theme-favicon-client-extensions) client extension may instead have a simple relative path to the favicon image, like [this](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-minimal-workspace/client-extensions/able-theme-favicon/client-extension.yaml#L4).
+* `url`: An absolute or relative URL that any resources contained in the client extension are served from. For example, an [IFrame client extension](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md#using-the-iframe-type) has a `url` field defining the location of the external application, like [this example](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-workspace/client-extensions/sample-iframe-1/client-extension.yaml#L4). A [theme favicon](./browser-based-client-extensions.md#theme-favicon-client-extensions) client extension may instead have a simple relative path to the favicon image in your project's structure, like [this](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-workspace/client-extensions/sample-theme-favicon/client-extension.yaml#L8).
 
 A client extension project (which is organized as a folder inside of your Liferay workspace's `client-extensions/` directory) contains a single `client-extension.yaml` file. This file defines one or more client extensions contained in the project. For example, [this project's `client-extension.yaml` file](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-minimal-workspace/client-extensions/baker/client-extension.yaml) contains the definition for three `iframe` client extensions, called `Baseball`, `Football`, and `Hockey`.
 
-Any other source files needed for the client extensions in your project are contained inside of a `src/` folder in the project. The types of client extensions you use determine what additional files you need for them.
+### Additional Source Files
+
+Any other source files needed for your client extensions are contained inside of a `src/` folder in the project by default. However, you can also configure the location of any additional files your client extension project needs with an `assemble` block, like this:
+
+```yaml
+assemble:
+    - from: assets
+        include: "**/*"
+        into: static
+```
+
+It uses these properties:
+
+* `from`: The directory to include additional resources from in your client extension project. When you build the client extension, these resources are included in the resulting `.zip` file. You can use multiple `from` definitions in the `assemble` block; each one must be paired with an `into` property.
+
+* `include`: Either a single file or glob syntax indicating where to find the needed files in the `from` directory.
+
+* `into`: Where to include the additional resources in you client extension `.zip` file when it is built. This can affect the behavior of your client extension. For example, many front-end client extensions (like JavaScript or CSS client extensions) require their source files to be in a `static` directory so that Liferay can serve them as static resources for your site.
 
 ## Deploying to Your Liferay Instance
 

@@ -163,13 +163,13 @@ These properties are usable within the client extension definition for any type 
 
 | Name | Data Type | Default Value | Description |
 | :--- | :--- | :--- | :--- |
-| `type` | String | | The specific type of client extension. *Used for all client extension types.* |
-| `dxp.lxc.liferay.com.virtualInstanceId` | String | | The virtual instance ID (`webId`) this client extension targets when it is deployed. *Used for all client extension types.* |
 | `baseURL` | String | *Derived from site URL* | The base path from which all of the client extension's defined resources are served. |
 | `description` | String | | The client extension's description. |
 | `name` | String | | The client extension's name (as it appears in the UI). Required for front-end client extensions. |
 | `sourceCodeURL` | URL | https://www.liferay.com | The address to the client extension's source repository. |
 | `typeSettings` | String[] | [] | A list of strings that are processed with Liferay's `UnicodeProperties` syntax. Type-specific client extension properties are automatically copied into this when the client extension is built. |
+
+See [Configuring Client Extensions in `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) for more information.
 
 ## Additional Information
 

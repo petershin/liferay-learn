@@ -56,11 +56,7 @@ Use this `type` value in your `client-extension.yaml` file to specify a notifica
 type: notificationType
 ```
 
-## Back-End Client Extension Properties
+## Additional Information
 
-These properties are usable within the client extension definition for any type of back-end client extension (in your `client-extension.yaml` file):
-
-| Name | Data Type | Description |
-| :--- | :--- | :--- |
-| `type` | String | The specific type of client extension. *Used for all client extension types.* |
-| `dxp.lxc.liferay.com.virtualInstanceId` | String | The virtual instance ID (`webId`) this client extension targets when it is deployed. *Used for all client extension types.* |
+* [Introduction to Client Extensions](../client-extensions.md)
+* [Configuring Client Extensions in `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

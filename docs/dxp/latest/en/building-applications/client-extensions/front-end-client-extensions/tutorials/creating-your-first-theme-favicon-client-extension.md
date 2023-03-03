@@ -16,8 +16,7 @@ You must meet these requirements in your development environment to begin workin
     ```{note}
     Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/references/jvm-configuration.md) for recommended JVM settings.
     ```
-
-<!-- The name of the sample workspace also has a timestamp attached to it. I believe this will change when there are more deployments to Nexus -->
+   <!-- The name of the sample workspace also has a timestamp attached to it. I believe this will change when there are more deployments to Nexus -->
 1. Download and unzip the Sample Workspace
 
    ```bash
@@ -37,13 +36,12 @@ Now you have all the necessary tools to deploy your first theme favicon client e
 
 Once Liferay is running,
 
-1. Move into the them favicon client extension directory.
+1. Move into the `sample-theme-favicon` directory.
 
    ```bash
    cd client-extensions/sample-theme-favicon
    ```
-
-<!-- We usually tell devs to do ./gradlew but here it is two directories up. Not sure if that's alright. -->
+   <!-- We usually tell devs to do ./gradlew but here it is two directories up. Not sure if that's alright. -->
 1. Build and deploy the example.
 
    ```bash

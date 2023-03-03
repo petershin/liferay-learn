@@ -20,13 +20,13 @@
 
 다음으로 Analytics Cloud 토큰을 가져와 Liferay 인스턴스에 연결하는 데 사용합니다. Liferay Analytics Cloud와 Liferay DXP는 안전하고 암호화된 토큰을 통해 연결됩니다. Analytics Cloud에서 생성되며 Liferay DXP 구성에 복사하여 붙여넣어야 합니다.
 
-1. Analytics Cloud에 로그인합니다. 작업 공간을 선택하십시오. 처음 로그인하는 경우 온보딩 가이드가 표시됩니다. _다음_ 을 클릭하면 다음 화면에 Analytics Cloud 토큰이 표시됩니다. 복사 아이콘(![copy icon](../images/icon-copy.png))을 클릭하여 토큰을 클립보드에 복사합니다.
+1. Analytics Cloud에 로그인합니다. 작업 공간을 선택하십시오. 처음 로그인하는 경우 온보딩 가이드가 표시됩니다. **다음** 을 클릭하면 다음 화면에 Analytics Cloud 토큰이 표시됩니다. 복사 아이콘(![copy icon](../images/icon-copy.png))을 클릭하여 토큰을 클립보드에 복사합니다.
 
    ![처음 로그인하면 온보딩 가이드가 표시됩니다.](./connecting-liferay-dxp-to-analytics-cloud/images/01.png)
 
-   온보딩 가이드를 취소한 경우 _설정_ &rarr; _데이터 소스_로 이동합니다. _데이터 소스 추가_을 클릭합니다. _Liferay DXP_ 을 선택하면 Analytics Cloud 토큰이 나타납니다. 복사 아이콘(![copy icon](../images/icon-copy.png))을 클릭하여 토큰을 클립보드에 복사합니다.
+   온보딩 가이드를 취소한 경우 **설정** &rarr; **데이터 소스** 로 이동합니다. **데이터 소스 추가** 을 클릭합니다. **Liferay DXP** 을 선택하면 Analytics Cloud 토큰이 나타납니다. 복사 아이콘(![copy icon](../images/icon-copy.png))을 클릭하여 토큰을 클립보드에 복사합니다.
 
-1. Liferay DXP 인스턴스에 로그인합니다. 전역 메뉴(![Global Menu](../images/icon-applications-menu.png))를 엽니다. _구성_ &rarr; _인스턴스 설정_로 이동합니다. _Platform_아래에서 _Analytics Cloud_을 클릭합니다. 필드에 Analytics Cloud 토큰을 붙여넣고 _연결_을 클릭합니다.
+1. Liferay DXP 인스턴스에 로그인합니다. 전역 메뉴(![Global Menu](../images/icon-applications-menu.png))를 엽니다. **구성** &rarr; **인스턴스 설정** 로 이동합니다. **Platform** 아래에서 **Analytics Cloud** 을 클릭합니다. 필드에 Analytics Cloud 토큰을 붙여넣고 **연결** 을 클릭합니다.
 
     ![토큰을 복사하고 연결 버튼을 클릭합니다.](./connecting-liferay-dxp-to-analytics-cloud/images/02.png)
 

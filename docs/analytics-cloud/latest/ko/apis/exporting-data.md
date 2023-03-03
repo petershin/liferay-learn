@@ -16,7 +16,7 @@ uuid: 0ae4dfb4-7b8b-4658-a573-cd97a9a039a3
    curl -H "Authorization: Bearer [token]" -L https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
    ```
 
-   `[token]` 특정 액세스 토큰으로 바꿉니다. `[type]` **개별**, **페이지**또는 **세그먼트**로 교체하십시오. `fromDate=`다음에 `[ISO 8601 날짜 및 시간]` 교체하여 시작 날짜와 시간을 지정합니다. `toDate=`다음에 `[ISO 8601 날짜 및 시간]` 교체하여 종료 날짜 및 시간을 지정합니다. [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) 날짜 및 시간 형식을 사용해야 합니다. 요청에는 시작 날짜 및 시간과 종료 날짜 및 시간이 필요합니다.
+   `[token]` 특정 액세스 토큰으로 바꿉니다. `[type]` **개별** , **페이지** 또는 **세그먼트** 로 교체하십시오. `fromDate=`다음에 `[ISO 8601 날짜 및 시간]` 교체하여 시작 날짜와 시간을 지정합니다. `toDate=`다음에 `[ISO 8601 날짜 및 시간]` 교체하여 종료 날짜 및 시간을 지정합니다. [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) 날짜 및 시간 형식을 사용해야 합니다. 요청에는 시작 날짜 및 시간과 종료 날짜 및 시간이 필요합니다.
 
    예를 들어 페이지 데이터 요청은 다음과 같습니다.
 

@@ -42,15 +42,15 @@ Analytics.track("Add to Cart Click",{
 
 JavaScript 코드를 추가하는 가장 간단한 방법은 개별 페이지를 수정하는 것입니다. 페이지에 JavaScript 코드를 추가할 수 있는 기능이 있는 위젯 페이지를 사용해야 합니다.
 
-1. 제품 메뉴(![Product Menu icon.](../../images/icon-product-menu.png))를 클릭하고 *Site Builder* &rarr; *Pages*로 이동합니다.
+1. 제품 메뉴(![Product Menu icon.](../../images/icon-product-menu.png))를 클릭하고 **Site Builder** &rarr; **Pages** 로 이동합니다.
 
-1. 개별 페이지의 *작업* 아이콘(![Actions icon.](../../images/icon-actions.png))을 클릭하고 *구성을 클릭합니다.*
+1. 개별 페이지의 **작업** 아이콘(![Actions icon.](../../images/icon-actions.png))을 클릭하고 **구성을 클릭합니다.**
 
-1. *JavaScript*아래의 텍스트 상자 영역에 JavaScript 코드를 붙여넣습니다. 이는 고급 탭 아래에 있습니다.
+1. **JavaScript** 아래의 텍스트 상자 영역에 JavaScript 코드를 붙여넣습니다. 이는 고급 탭 아래에 있습니다.
 
     ![텍스트 상자에 JavaScript 코드를 붙여넣습니다.](./tracking-events/images/01.png)
 
-1. *저장* 을 클릭하면 이제 페이지에서 이벤트를 추적할 준비가 되었습니다.
+1. **저장** 을 클릭하면 이제 페이지에서 이벤트를 추적할 준비가 되었습니다.
 
 자세한 내용은 [개별 페이지 구성](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/page-settings/configuring-individual-pages.html) 을 참조하십시오.
 
@@ -58,21 +58,21 @@ JavaScript 코드를 추가하는 가장 간단한 방법은 개별 페이지를
 
 Javascript 코드를 추가하는 또 다른 방법은 콘텐츠 페이지에 추가할 수 있는 페이지 조각을 만드는 것입니다. 웹 사이트의 모든 페이지에 프래그먼트를 빠르게 추가할 수 있으므로 확장성이 향상됩니다.
 
-1. 제품 메뉴(![Product Menu icon.](../../images/icon-product-menu.png))를 클릭하고 *Design* &rarr; *Fragments*로 이동합니다.
+1. 제품 메뉴(![Product Menu icon.](../../images/icon-product-menu.png))를 클릭하고 **Design** &rarr; **Fragments** 로 이동합니다.
 
-1. Fragment Sets의 *더하기* 아이콘(![Plus icon.](../../images/icon-plus.png))을 클릭합니다.
+1. Fragment Sets의 **더하기** 아이콘(![Plus icon.](../../images/icon-plus.png))을 클릭합니다.
 
 1. ** 추가 아이콘(![Add icon.](../../images/icon-add.png))을 클릭하여 새 조각을 만듭니다.
 
-1. *Code* 탭을 클릭하고 JavaScript 코드를 JavaScript 필드에 붙여넣습니다.
+1. **Code** 탭을 클릭하고 JavaScript 코드를 JavaScript 필드에 붙여넣습니다.
 
     ![자바스크립트 코드를 자바스크립트 필드에 붙여넣습니다.](./tracking-events/images/02.png)
 
     `Analytics.track` 코드를 트리거하는 속성 값 또는 논리를 가져오는 추가 코드가 필요할 수 있습니다.
 
-1. *저장* 을 클릭하면 이제 페이지 조각을 사용할 준비가 되었습니다.
+1. **저장** 을 클릭하면 이제 페이지 조각을 사용할 준비가 되었습니다.
 
-1. 조각을 추가할 콘텐츠 페이지로 이동합니다. *편집* 아이콘(![Edit icon.](../../images/icon-edit.png))을 클릭하여 페이지 편집기를 엽니다. 방금 만든 조각을 찾아 페이지로 드래그합니다. *게시*을 클릭합니다.
+1. 조각을 추가할 콘텐츠 페이지로 이동합니다. **편집** 아이콘(![Edit icon.](../../images/icon-edit.png))을 클릭하여 페이지 편집기를 엽니다. 방금 만든 조각을 찾아 페이지로 드래그합니다. **게시** 을 클릭합니다.
 
 자세한 내용은 [조각 개발](https://learn.liferay.com/dxp/latest/ko/site-building/developer-guide/developing-page-fragments/developing-fragments-intro.html) 을 참조하십시오.
 

@@ -162,4 +162,4 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 * `keywords` (String): 페이지 제목 또는 url 정보와 일치시킬 키워드.
 * `rangeKey` (Integer): 데이터 그룹화에 사용할 범위. 가능한 값은 0(지난 24시간 데이터), 1(어제 데이터), 7(지난 7일 데이터), 28(지난 28일 데이터), 30(기본값, 지난 30일 데이터)입니다. 일), 90(지난 90일 동안의 데이터.
 * `sortMetric` (문자열): 결과를 정렬할 메트릭을 정의했으며 기본값은 viewsMetrics입니다. 가능한 값은 ctrMetric, timeOnPageMetric, exitRateMetric, ctpMetric, sessionsMetric, avgTimeOnPageMetric, boundMetric, maxScrollDepthMetric, 방문자 지표, viewsMetric, boundRateMetric, indirectAccessMetric, entrancesMetric, directAccessMetric입니다.
-* `sortOrder` (문자열), 가능한 값은 *asc* 또는 *desc*입니다. sortMetric에 따라 결과를 오름차순 또는 내림차순으로 정렬합니다. 기본값은 설명입니다.
+* `sortOrder` (문자열), 가능한 값은 **asc** 또는 **desc** 입니다. sortMetric에 따라 결과를 오름차순 또는 내림차순으로 정렬합니다. 기본값은 설명입니다.

@@ -30,7 +30,7 @@ type: oAuthApplicationHeadlessServer
 
 > Available for Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)
 
-OAuth user agent client extensions define OAuth2 application profiles in Liferay that are pre-configured with a `User Agent Application` client profile. This kind of authentication profile is required for API calls that are triggered by a specific user (for example, making a REST call to a Liferay API using your other [back-end client extensions](./back-end-client-extensions.md)).
+OAuth user agent client extensions define OAuth2 application profiles in Liferay that are pre-configured with a `User Agent Application` client profile. This kind of authentication profile is required for API calls that are triggered by a specific user (for example, making a REST call to a Liferay API using your other [microservice client extensions](./microservice-client-extensions.md)).
 
 Use this `type` value in your `client-extension.yaml` file to specify an OAuth user agent client extension:
 

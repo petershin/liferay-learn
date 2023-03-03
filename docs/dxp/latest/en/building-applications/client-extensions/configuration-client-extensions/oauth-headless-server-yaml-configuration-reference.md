@@ -26,6 +26,6 @@ These properties are specific to OAuth headless server client extensions:
 
 ## Additional Information
 
-* [Back-end Client Extensions](../back-end-client-extensions.md)
+* [Microservice Client Extensions](../microservice-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
 * [OAuth User Agent YAML Configuration Reference](./oauth-user-agent-yaml-configuration-reference.md)

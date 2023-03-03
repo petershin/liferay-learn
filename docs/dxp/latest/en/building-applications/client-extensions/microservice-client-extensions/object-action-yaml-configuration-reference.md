@@ -34,6 +34,6 @@ These properties are specific to object action client extensions:
 
 ## Additional Information
 
-* [Back-end Client Extensions](../back-end-client-extensions.md)
+* [Microservice Client Extensions](../microservice-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
 * [Workflow Action YAML Configuration Reference](./workflow-action-yaml-configuration-reference.md)

@@ -2,7 +2,7 @@
 toc:
   - ./client-extensions/working-with-client-extensions.md
   - ./client-extensions/front-end-client-extensions.md
-  - ./client-extensions/back-end-client-extensions.md
+  - ./client-extensions/microservice-client-extensions.md
   - ./client-extensions/configuration-client-extensions.md
 uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 ---
@@ -13,7 +13,7 @@ uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 
 client-extensions/working-with-client-extensions.md
 client-extensions/front-end-client-extensions.md
-client-extensions/back-end-client-extensions.md
+client-extensions/microservice-client-extensions.md
 client-extensions/configuration-client-extensions.md
 ```
 

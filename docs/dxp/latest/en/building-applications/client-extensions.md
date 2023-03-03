@@ -30,7 +30,7 @@ With client extensions, you can
 * Apply [custom JavaScript or CSS](#browser-based-client-extensions) to your pages without needing to rely on any specific code in Liferay
 * Embed applications hosted remotely into a [custom element](./client-extensions/browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a page in Liferay
 * Simplify your process to apply programmatically the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-as-code)
-* Call [custom services](#custom-service-client-extensions) or [functions](#lambda-client-extensions) running outside of Liferay, such as an external RSS feed, using the programming languages or technologies of your choice
+* Call [custom services](#custom-service-client-extensions) or [functions](#lambda-client-extensions) running outside of Liferay, such as a REST endpoint, using the programming languages or technologies of your choice
 
 ## Types of Client Extensions
 

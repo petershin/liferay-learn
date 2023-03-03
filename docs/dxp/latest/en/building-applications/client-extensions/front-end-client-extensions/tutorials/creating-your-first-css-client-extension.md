@@ -17,8 +17,6 @@ You must have these requirements ready in your development environment to begin 
     Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
     ```
 
-1. Start up a running instance of Liferay to test your client extension with. You can quickly start up a Liferay instance for testing by [Starting with a Docker Image](../../../../getting-started/starting-with-a-docker-image.md).
-
 1. Download and unzip the sample workspace:
 
    ```bash
@@ -77,7 +75,10 @@ Now you're ready to deploy it.
 
 ## Deploy the Client Extension to Liferay
 
-Deploy your client extension to your Liferay testing instance. If you're using a Docker container, run this command from your client extension's folder in the sample workspace:
+```{include} /_snippets/run-liferay-portal.md
+```
+
+Once your Liferay instance has started, run this command from the client extension's folder in the sample workspace:
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
@@ -105,9 +106,7 @@ Now that your client extension is deployed, you must configure your Liferay inst
 
 Configure a page in your Liferay instance to specifically use your deployed client extension: 
 
-1. Log in to your running Liferay instance.
-
-1. On any page with at least one button on it, click the _Edit_ icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
+1. On any page in your Liferay instance with at least one button on it, click the _Edit_ icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
 
 1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)), and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 

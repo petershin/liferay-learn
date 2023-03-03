@@ -34,7 +34,7 @@ objects/integrating-objects-with-third-party-services.md
 
 Liferay Objects를 사용하면 코드를 작성하거나 모듈을 배포하지 않고도 애플리케이션을 구축하고 제공할 수 있습니다. Objects로 구축된 각 애플리케이션은 Liferay의 핵심 프레임워크와 통합되므로 원활한 사용자 경험을 유지하면서 Liferay DXP를 비즈니스 요구에 맞게 조정하는 유연한 솔루션을 신속하게 개발하고 관리할 수 있습니다.
 
-개체를 생성할 때 데이터 [fields](./objects/creating-and-managing-objects/fields.md)를 정의하고 [relationships](./objects/creating-and-managing-objects/relationships를 추가할 수 있습니다. md)를 다른 개체 항목에 지정하고 지정된 조건에서 [actions](./objects/creating-and-managing-objects/actions.md)를 트리거합니다. 또한 [레이아웃](./objects/creating-and-managing-objects/layouts.md) 및 [views](./objects/creating-and-managing-objects/views.md)를 디자인하여 필드 및 관계는 항목 작성 중에 그리고 개체의 응용 프로그램 페이지에 표시됩니다.
+개체를 생성할 때 데이터 [분야](./objects/creating-and-managing-objects/fields.md) 를 정의하고 [relationships](./objects/creating-and-managing-objects/relationships를 추가할 수 있습니다. md) 를 다른 개체 항목에 지정하고 지정된 조건에서 [액션](./objects/creating-and-managing-objects/actions.md) 를 트리거합니다. 또한 [레이아웃](./objects/creating-and-managing-objects/layouts.md) 및 [전망](./objects/creating-and-managing-objects/views.md) 를 디자인하여 필드 및 관계는 항목 작성 중에 그리고 개체의 응용 프로그램 페이지에 표시됩니다.
 
 게시하기 전에 각 개체의 데이터 범위를 회사 또는 사이트로 지정하고 Liferay UI에서 표시되는 사이트를 결정할 수 있습니다.
 

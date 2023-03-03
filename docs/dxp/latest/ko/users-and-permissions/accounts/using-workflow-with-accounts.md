@@ -20,7 +20,7 @@
 
 이제 워크플로가 활성화되었습니다. 새 계정은 활성화되기 전에 정의된 승인 프로세스를 거쳐야 합니다.
 
-[계정을 만들면](../accounts.md#creating-an-account)상태가 보류 중으로 설정되고 검토자에게 알림이 전송됩니다.
+[계정을 만들면](../accounts.md#creating-an-account) 상태가 보류 중으로 설정되고 검토자에게 알림이 전송됩니다.
 
 ![지정된 검토자는 새 계정에 대한 알림을 받습니다.](./using-workflow-with-accounts/images/02.png)
 

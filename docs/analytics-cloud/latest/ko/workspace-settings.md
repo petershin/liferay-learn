@@ -25,7 +25,7 @@ workspace-settings/contact-sync-data-reference.md
 
 설정에서 Analytics Cloud 작업 영역을 보고 관리합니다. UI 왼쪽 하단의 설정 링크를 클릭합니다.
 
-[다른 사용자를 초대하고 작업 공간에 대한 액세스를 관리](./workspace-settings/managing-users.md). 각 사용자에 대해 [Multi-Factor Authentication](./workspace-settings/multi-factor-authentication.md) 이 필요합니다.
+[다른 사용자를 초대하고 작업 공간에 대한 액세스를 관리](./workspace-settings/managing-users.md). 각 사용자에 대해 [다단계 인증](./workspace-settings/multi-factor-authentication.md) 이 필요합니다.
 
 [작업 공간에 있는 다양한 속성](./workspace-settings/managing-properties.md) 을 보고 관리합니다. 또한 [속성](./workspace-settings/scoping-sites-and-individuals-using-properties.md) 및 [를 사용하여 사이트 및 개인 범위 지정 연락처 동기화 데이터 참조](./workspace-settings/contact-sync-data-reference.md)을 참조하십시오.
 

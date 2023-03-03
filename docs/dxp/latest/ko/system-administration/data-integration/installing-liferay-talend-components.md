@@ -6,7 +6,7 @@ Talend Open Studio용 Liferay의 구성 요소는 Liferay DXP/Portal과 외부 �
 
 ## 전제 조건
 
-Liferay 구성 요소를 설치하려면 JDK 1.8+, Apache Maven 3.3+ 및 [DXP/Portal 코드](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend)의 로컬 사본이 필요합니다. 또한 [개의 Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) 과 [구성 요소 API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) 이 이미 설치되어 있어야 합니다.
+Liferay 구성 요소를 설치하려면 JDK 1.8+, Apache Maven 3.3+ 및 [DXP/Portal 코드](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend) 의 로컬 사본이 필요합니다. 또한 [개의 Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) 과 [구성 요소 API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) 이 이미 설치되어 있어야 합니다.
 
 ## Talend Open Studio 구성
 

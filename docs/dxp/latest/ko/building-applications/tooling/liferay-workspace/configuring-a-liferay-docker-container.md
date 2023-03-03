@@ -14,7 +14,7 @@
 
 이미지 버전은 Workspace 버전에서 상속되기 때문에 대부분의 경우 Liferay Docker 이미지를 선택할 필요가 없습니다. 그러나 작업공간에서 지정한 것과 다른 이미지 버전을 설치해야 하는 경우 버전을 명시적으로 설정할 수 있습니다. 이 작업을 수행할 필요가 없으면 다음 섹션으로 건너뜁니다.
 
-Liferay의 Docker 이미지는 [Docker Hub](https://hub.docker.com/r/liferay/portal/tags)에 있습니다. 두 가지 범주로 나뉩니다.
+Liferay의 Docker 이미지는 [Docker Hub](https://hub.docker.com/r/liferay/portal/tags) 에 있습니다. 두 가지 범주로 나뉩니다.
 
 - [라이프레이/포털](https://hub.docker.com/r/liferay/portal)
 - [라이프레이/DXP](https://hub.docker.com/r/liferay/dxp)
@@ -46,7 +46,7 @@ Liferay의 Docker 이미지는 [Docker Hub](https://hub.docker.com/r/liferay/por
 
 ## Docker 이미지 구성
 
-컨테이너 구성을 위한 일반 Docker 도구 외에도 Gradle 작업에서 컨테이너를 빌드하면 [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md)을 가리키는 폴더가 설정되므로 필요한 모든 Liferay 구성을 만들 수 있습니다. 이 폴더는 `configs/docker`에서 찾을 수 있습니다.
+컨테이너 구성을 위한 일반 Docker 도구 외에도 Gradle 작업에서 컨테이너를 빌드하면 [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) 을 가리키는 폴더가 설정되므로 필요한 모든 Liferay 구성을 만들 수 있습니다. 이 폴더는 `configs/docker`에서 찾을 수 있습니다.
 
 예를 들어 컨테이너의 Gogo 셸에 대한 텔넷 액세스를 활성화할 수 있습니다. 방법은 다음과 같습니다.
 

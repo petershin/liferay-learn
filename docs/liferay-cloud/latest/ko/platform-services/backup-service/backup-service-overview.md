@@ -123,7 +123,7 @@ Liferay Cloud Console을 통해 백업 서비스를 구성하려면 다음 단�
 백업이 생성되고 제거되는 빈도를 결정하면 데이터를 보호하고 스토리지를 최적화하는 데 도움이 될 수 있습니다. *프로덕션 환경에서만 백업을 예약할 수 있습니다.*
 
 ```{warning}
-Liferay 인스턴스에서 데이터가 활발하게 변경되는 동안 생성된 백업은 일관성 없는 데이터를 생성할 위험이 있습니다. 데이터 불일치의 위험을 완화하기 위해 활동이 감소한 시간 동안 백업을 생성하도록 백업 일정을 구성합니다. 완전히 일관된 백업을 보장하려면 데이터베이스 관리자와 협력하여 [수동 백업](./backup-service-overview.md#creating-a-manual-backup)을 수행하는 동안 업데이트를 중지하십시오.
+Liferay 인스턴스에서 데이터가 활발하게 변경되는 동안 생성된 백업은 일관성 없는 데이터를 생성할 위험이 있습니다. 데이터 불일치의 위험을 완화하기 위해 활동이 감소한 시간 동안 백업을 생성하도록 백업 일정을 구성합니다. 완전히 일관된 백업을 보장하려면 데이터베이스 관리자와 협력하여 [수동 백업](./backup-service-overview.md#creating-a-manual-backup) 을 수행하는 동안 업데이트를 중지하십시오.
 ```
 
 자동 백업 일정을 구성하는 방법에는 두 가지가 있습니다.
@@ -168,10 +168,10 @@ Liferay 인스턴스에서 데이터가 활발하게 변경되는 동안 생성�
 * **보존 기간**: `LCP_BACKUP_RETENTION_PERIOD` 변수에 숫자 값(1-30 사이)을 추가하여 자동 정리에 의해 제거되기 전에 백업이 보존되는 일 수를 설정합니다.
 
 ```{note}
-표준 및 비표준 [cron 스케줄링 구문](https://crontab.guru/)은 모두 UTC±00 시간대를 기반으로 합니다. 비표준 cron 구문을 사용하는 경우 자동 백업 및 정리가 지정된 값의 시작 부분에서 실행됩니다. 예를 들어 `@daily`는 매일 00:00 UTC에 백업을 실행합니다.
+표준 및 비표준 [cron 스케줄링 구문](https://crontab.guru/) 은 모두 UTC±00 시간대를 기반으로 합니다. 비표준 cron 구문을 사용하는 경우 자동 백업 및 정리가 지정된 값의 시작 부분에서 실행됩니다. 예를 들어 `@daily`는 매일 00:00 UTC에 백업을 실행합니다.
 ```
 
-이러한 환경 변수는 [Liferay Cloud 콘솔을 통해 설정](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-liferay-cloud-console)( 백업 서비스에서) 또는 [프로젝트 저장소의 `backup/LCP.json` 파일에서 설정](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp -json) 백업 서비스를 환경에 배포합니다.
+이러한 환경 변수는 [Liferay Cloud 콘솔을 통해 설정](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-liferay-cloud-console) ( 백업 서비스에서) 또는 [프로젝트 저장소의 `backup/LCP.json` 파일에서 설정](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp -json) 백업 서비스를 환경에 배포합니다.
 
 ```{warning}
 Liferay Cloud 콘솔을 통해 환경 변수를 설정했지만 나중에 `backup/LCP.json`의 다른 구성으로 리포지토리에서 백업 서비스를 배포하는 경우 리포지토리의 구성이 콘솔에 설정된 환경 변수를 덮어씁니다.
@@ -194,9 +194,9 @@ Liferay Cloud 콘솔을 통해 환경 변수를 설정했지만 나중에 `backu
 
 | 이름                                              | 기정값                        | 묘사                                                                                                                                                               |
 |:----------------------------------------------- |:-------------------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `LCP_BACKUP_CLEANUP_SCHEDULE`                   | 0 1 * * *                | 이 변수는 [cron 스케줄링 구문](https://crontab.guru/)을 사용하여 자동 정리를 스케줄합니다. 정리는 백업 보존 기간을 초과하는 모든 백업을 제거합니다.                                                                |
-| `LCP_BACKUP_CREATE_SCHEDULE`                    | `[5-55][0-1] * * *`        | 이 변수는 [cron 스케줄링 구문](https://crontab.guru/)을 사용하여 자동 백업을 스케줄합니다. 백업 서비스의 버전 `3.2.1` 이상에서는 값을 지정하지 않으면 임의의 기본값이 생성됩니다.                                            |
-| `LCP_BACKUP_RESTORE_SCHEDULE`                   | N/A                        | 이 변수는 [cron 예약 구문](https://crontab.guru/)을 사용하여 자동 복원을 예약합니다. [재해 복구 환경](../../troubleshooting/configuring-cross-region-disaster-recovery.md)과 함께 사용하도록 되어 있습니다. |
+| `LCP_BACKUP_CLEANUP_SCHEDULE`                   | 0 1 * * *                | 이 변수는 [cron 스케줄링 구문](https://crontab.guru/) 을 사용하여 자동 정리를 스케줄합니다. 정리는 백업 보존 기간을 초과하는 모든 백업을 제거합니다.                                                                |
+| `LCP_BACKUP_CREATE_SCHEDULE`                    | `[5-55][0-1] * * *`        | 이 변수는 [cron 스케줄링 구문](https://crontab.guru/) 을 사용하여 자동 백업을 스케줄합니다. 백업 서비스의 버전 `3.2.1` 이상에서는 값을 지정하지 않으면 임의의 기본값이 생성됩니다.                                            |
+| `LCP_BACKUP_RESTORE_SCHEDULE`                   | N/A                        | 이 변수는 [cron 예약 구문](https://crontab.guru/) 을 사용하여 자동 복원을 예약합니다. [재해 복구 환경](../../troubleshooting/configuring-cross-region-disaster-recovery.md)과 함께 사용하도록 되어 있습니다. |
 | `LCP_BACKUP_RESTORE_STRATEGY`                   | `OVERWRITE`                | 기본적으로 기존 인스턴스는 즉시 중단됩니다. 기존 인스턴스를 중단하기 전에 새로운 데이터베이스 인스턴스 및 볼륨을 시작하려면 `PREPARE_AND_SWAP` 전략을 사용하십시오.                                                             |
 | `LCP_BACKUP_RETENTION_PERIOD`                   | `30`                       | 이 변수는 예약된 정리 중에 제거되는 백업을 결정합니다. 정리에 의해 제거되기 전에 백업이 보존되는 일 수를 선택하십시오. 최대 보관 기간은 30일입니다.                                                                           |
 | `LCP_DATABASE_SERVICE`                          | `데이타베이스`                   | 데이터베이스 서비스의 ID입니다.                                                                                                                                               |

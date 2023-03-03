@@ -34,10 +34,10 @@ Liferay Cloud 환경의 데이터베이스 서비스는 때때로 예정된 유�
 
 ### Google Cloud MySQL 플래그
 
-MySQL 플래그를 환경 변수로 전달할 수 있습니다. 사용 가능한 플래그는 [Google Cloud 문서](https://cloud.google.com/sql/docs/mysql/flags)에 나열되어 있습니다. Liferay Cloud에서 작동하려면 각 플래그 앞에 `LCP_GCP_DATABASE_FLAG_` 추가되어야 합니다. 다음은 개발 환경에서 디버깅에 유용할 수 있지만 상당한 성능 비용이 발생하므로 프로덕션 환경에서 사용하면 안 되는 일반적인 플래그입니다.
+MySQL 플래그를 환경 변수로 전달할 수 있습니다. 사용 가능한 플래그는 [Google Cloud 문서](https://cloud.google.com/sql/docs/mysql/flags) 에 나열되어 있습니다. Liferay Cloud에서 작동하려면 각 플래그 앞에 `LCP_GCP_DATABASE_FLAG_` 추가되어야 합니다. 다음은 개발 환경에서 디버깅에 유용할 수 있지만 상당한 성능 비용이 발생하므로 프로덕션 환경에서 사용하면 안 되는 일반적인 플래그입니다.
 
 ```{warning}
-Google 문서에 명시된 바와 같이 일부 데이터베이스 플래그 설정은 인스턴스 가용성 또는 안정성에 영향을 미칠 수 있습니다. 이러한 플래그를 사용할 때는 매우 주의하고 Google의 [운영 지침](https://cloud.google.com/sql/docs/mysql/operational-guidelines)을 따르세요.
+Google 문서에 명시된 바와 같이 일부 데이터베이스 플래그 설정은 인스턴스 가용성 또는 안정성에 영향을 미칠 수 있습니다. 이러한 플래그를 사용할 때는 매우 주의하고 Google의 [운영 지침](https://cloud.google.com/sql/docs/mysql/operational-guidelines) 을 따르세요.
 ```
 
 | 이름                                     | 허용 가능한 값  | 기정값   |

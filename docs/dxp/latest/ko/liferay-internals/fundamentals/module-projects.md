@@ -1,6 +1,6 @@
 # 모듈 프로젝트
 
-Liferay 애플리케이션 및 사용자 지정은 Java 코드를 포함하는 [OSGi 모듈](https://www.osgi.org/resources/what-is-osgi/): `.jar` 파일과 API 게시 및 사용을 위한 일부 추가 구성입니다.
+Liferay 애플리케이션 및 사용자 지정은 Java 코드를 포함하는 [OSGi 모듈](https://www.osgi.org/resources/what-is-osgi/) : `.jar` 파일과 API 게시 및 사용을 위한 일부 추가 구성입니다.
 
 모듈 프로젝트는 다음 세 가지로 구성됩니다.
 

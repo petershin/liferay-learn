@@ -11,7 +11,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [멀티스레딩 프로세스](./liferay-j7z3.zip)를 다운로드하고 압축을 풉니다.
+1. [멀티스레딩 프로세스](./liferay-j7z3.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O

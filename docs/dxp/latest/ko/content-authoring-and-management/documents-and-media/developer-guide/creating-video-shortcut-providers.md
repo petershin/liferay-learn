@@ -2,13 +2,13 @@
 
 > Liferay DXP 7.4+에서 사용 가능
 
-기본적으로 Liferay의 외부 비디오 바로가기는 [YouTube](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/YouTubeDLVideoExternalShortcutProvider.java), [Vimeo](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/VimeoDLVideoExternalShortcutProvider.java), [Facebook](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/FacebookDLVideoExternalShortcutProvider.java), [Twitch](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/TwitchDLVideoExternalShortcutProvider.java)을 지원합니다. 그러나 이 기능을 확장하여 다른 비디오 소스를 지원할 수 있습니다.
+기본적으로 Liferay의 외부 비디오 바로가기는 [YouTube](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/YouTubeDLVideoExternalShortcutProvider.java) , [Vimeo](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/VimeoDLVideoExternalShortcutProvider.java) , [Facebook](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/FacebookDLVideoExternalShortcutProvider.java) , [Twitch](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/TwitchDLVideoExternalShortcutProvider.java) 을 지원합니다. 그러나 이 기능을 확장하여 다른 비디오 소스를 지원할 수 있습니다.
 
 자신의 비디오 바로 가기 공급자를 만들려면 다음 단계를 따르십시오.
 
 1. **OSGI 구성 요소 주석**: 공급자를 OSGi 프레임워크 내에서 `DLVideoExternalShortcutProvider.class` 서비스로 선언하려면 `@Component` 주석을 사용합니다.
 
-1. [**`DLVideoExternalShortcutProvider`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/provider/DLVideoExternalShortcutProvider.java): `DLVideoExternalShortcutProvider` 인터페이스를 구현합니다.
+1. [**`DLVideoExternalShortcutProvider`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/provider/DLVideoExternalShortcutProvider.java) : `DLVideoExternalShortcutProvider` 인터페이스를 구현합니다.
 
 1. **인터페이스의 메서드 재정의**: 인터페이스의 `getDLVideoExternalShortcut()` 메서드를 재정의합니다. 이 메서드는 [`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java) 인터페이스의 인스턴스를 만들고 URL 문자열을 받습니다. 구현이 다음을 수행하는지 확인하십시오.
 
@@ -27,7 +27,7 @@
    * `getThumbnailURL()`: 이 메소드를 사용하여 비디오의 썸네일을 검색합니다. 기본값은 `null`입니다.
    * `getTitle()`: 이 메서드를 사용하여 원본 비디오의 제목을 검색합니다. 기본값은 `null`입니다.
 
-다음은 자체 구현을 위한 최소 요구 사항을 보여주는 [샘플 외부 비디오 바로 가기 공급자](liferay-g9b6.zip)입니다. [기존 공급자](https://github.com/liferay/liferay-portal/tree/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/ 참조) library/video/internal/video/external/shortcut/provider)을 참조하십시오.
+다음은 자체 구현을 위한 최소 요구 사항을 보여주는 [샘플 외부 비디오 바로 가기 공급자](liferay-g9b6.zip) 입니다. [기존 공급자](https://github.com/liferay/liferay-portal/tree/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/ 참조) library/video/internal/video/external/shortcut/provider)을 참조하십시오.
 
 ## 샘플 비디오 공급자 배포
 

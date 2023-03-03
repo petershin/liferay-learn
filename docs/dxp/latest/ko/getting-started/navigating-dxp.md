@@ -24,7 +24,7 @@ Liferay DXP의 즉시 사용 가능한 내비게이션은 _개인 메뉴_, _전�
 
 ## 애플리케이션 바
 
-_애플리케이션 표시줄_ 각 페이지 상단에 표시되며 [사이트 메뉴](#site-menu)에 나열된 애플리케이션이 표시됩니다. 응용 프로그램 표시줄에는 현재 열려 있는 응용 프로그램에 따라 다른 옵션이 있는 작업(![Actions](../images/icon-actions.png)) 메뉴가 표시됩니다.
+_애플리케이션 표시줄_ 각 페이지 상단에 표시되며 [사이트 메뉴](#site-menu) 에 나열된 애플리케이션이 표시됩니다. 응용 프로그램 표시줄에는 현재 열려 있는 응용 프로그램에 따라 다른 옵션이 있는 작업(![Actions](../images/icon-actions.png)) 메뉴가 표시됩니다.
 
 ![응용 프로그램 표시줄에서 사용할 수 있는 작업은 현재 열려 있는 응용 프로그램에 따라 다릅니다.](./navigating-dxp/images/07.png)
 
@@ -98,13 +98,13 @@ Liferay 7.3 CE GA6 및 Liferay DXP 7.3 GA1부터 Liferay Commerce 3.0은 이제 
 
 다음은 _상거래_ 메뉴에서 관리할 수 있는 몇 가지 기능입니다.
 
-* [새 카탈로그 만들기](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html)
+* [새 카탈로그 만들기](https://learn.liferay.com/commerce/latest/ko/product-management/catalogs/creating-a-new-catalog.html)
 * [새 채널 만들기](https://learn.liferay.com/commerce/latest/en/starting-a-store/channels/managing-channels.html)
-* [재고 관리](https://learn.liferay.com/commerce/latest/en/inventory-management.html)
-* [주문 처리](https://learn.liferay.com/commerce/latest/en/order-management/orders/processing-an-order.html)
+* [재고 관리](https://learn.liferay.com/commerce/latest/ko/inventory-management.html)
+* [주문 처리](https://learn.liferay.com/commerce/latest/ko/order-management/orders/processing-an-order.html)
 * 그리고 더..
 
-Liferay Commerce에 대한 자세한 내용은 [Liferay Commerce 소개](https://learn.liferay.com/commerce/latest/en/starting-a-store/introduction-to-liferay-commerce.html)참조하십시오.
+Liferay Commerce에 대한 자세한 내용은 [라이프레이 커머스 소개](https://learn.liferay.com/commerce/latest/ko/starting-a-store/introduction-to-liferay-commerce.html) 참조하십시오.
 
 ### 제어반
 

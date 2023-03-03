@@ -15,7 +15,7 @@ module.framework.web.generator.excluded.paths=\
 ```
 
 ```{note}
-Liferay는 WAB가 [liferay-plugin-package.properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/liferay)의 'portal-dependency-jars' 속성에 JAR을 나열하더라도 WAB에서 이러한 JAR을 제외합니다. -plugin-package_7_3_0.properties.html) 파일.
+Liferay는 WAB가 [liferay-plugin-package.properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/liferay) 의 'portal-dependency-jars' 속성에 JAR을 나열하더라도 WAB에서 이러한 JAR을 제외합니다. -plugin-package_7_3_0.properties.html) 파일.
 ```
 
 ## 타사 패키지의 다른 버전 포함

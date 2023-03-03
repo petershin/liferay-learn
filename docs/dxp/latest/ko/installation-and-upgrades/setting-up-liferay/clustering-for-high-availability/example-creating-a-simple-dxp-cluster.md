@@ -1,6 +1,6 @@
 # 예: 단순 DXP 클러스터 생성
 
-DXP 클러스터링을 배우는 빠르고 쉬운 방법은 [Docker 컨테이너](https://docs.docker.com/get-started/overview/)를 사용하여 하나의 시스템에 2노드 DXP 클러스터 환경을 설정하는 것입니다. 여기서는 데이터베이스, 검색 엔진 및 파일 저장소용 서버 컨테이너와 함께 두 개의 DXP 서버 컨테이너를 생성합니다.
+DXP 클러스터링을 배우는 빠르고 쉬운 방법은 [Docker 컨테이너](https://docs.docker.com/get-started/overview/) 를 사용하여 하나의 시스템에 2노드 DXP 클러스터 환경을 설정하는 것입니다. 여기서는 데이터베이스, 검색 엔진 및 파일 저장소용 서버 컨테이너와 함께 두 개의 DXP 서버 컨테이너를 생성합니다.
 
 생성할 서버 컨테이너는 다음과 같습니다.
 
@@ -32,7 +32,7 @@ Should we remove this diagram since it includes a load balancer? -->
 
 ## 데이터베이스 서버 시작
 
-DXP 클러스터에는 모든 DXP 클러스터 노드에서 액세스할 수 있는 데이터 원본이 필요합니다. 데이터 소스는 JNDI 데이터 소스이거나 데이터베이스 서버 또는 데이터베이스 서버 클러스터에 대한 직접 연결일 수 있습니다. DXP 버전이 지원하는 데이터베이스 서버에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 을 참조하십시오. 자세한 내용은 [클러스터 노드](./database-configuration-for-cluster-nodes.md) 에 대한 데이터베이스 구성을 참조하십시오.
+DXP 클러스터에는 모든 DXP 클러스터 노드에서 액세스할 수 있는 데이터 원본이 필요합니다. 데이터 소스는 JNDI 데이터 소스이거나 데이터베이스 서버 또는 데이터베이스 서버 클러스터에 대한 직접 연결일 수 있습니다. DXP 버전이 지원하는 데이터베이스 서버에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오. 자세한 내용은 [클러스터 노드](./database-configuration-for-cluster-nodes.md) 에 대한 데이터베이스 구성을 참조하십시오.
 
 데이터베이스 서버 및 DXP 데이터베이스를 생성합니다.
 
@@ -295,7 +295,7 @@ DXP 클러스터에 대해 [데이터베이스](./database-configuration-for-clu
 | LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=\\<br>참                                                                                                      | 서버 주소 및 웹 서버 포트를 표시합니다.        |
 | LIFERAY_DL_PERIOD_STORE_PERIOD_IMPL=\\<br>com.liferay.portal.store.db.DBStore                                                                                       | 파일 저장소(문서 라이브러리 저장소) 클래스       |
 
-자세한 내용은 Env/[포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 정의를 참조하십시오.
+자세한 내용은 Env/ [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 정의를 참조하십시오.
 
 ## 추가 정보
 

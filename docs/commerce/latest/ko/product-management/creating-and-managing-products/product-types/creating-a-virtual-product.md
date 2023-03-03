@@ -18,7 +18,7 @@ Liferay Commerce에서 가상 제품은 고객이 다운로드할 수 있는 무
 
 1. 완료되면 *제출* 을 클릭합니다.
 
-가상 제품이 생성되면 이를 원하는 디지털 자산과 연결하고 해당 SKU의 [기본 가격](./../../../pricing/setting-a-products-base-price)을 설정해야 합니다. .md) 및 [재고 할당](../../../inventory-management/setting-inventory-by-warehouse.md) 고객이 구매할 수 있습니다.
+가상 제품이 생성되면 이를 원하는 디지털 자산과 연결하고 해당 SKU의 [기본 가격](./../../../pricing/setting-a-products-base-price) 을 설정해야 합니다. .md) 및 [재고 할당](../../../inventory-management/setting-inventory-by-warehouse.md) 고객이 구매할 수 있습니다.
 
 ## 가상 제품 구성
 
@@ -50,7 +50,7 @@ Liferay Commerce에서 가상 제품은 고객이 다운로드할 수 있는 무
 
 1. 완료되면 *저장* 을 클릭합니다.
 
-각 필드에 대한 자세한 내용은 [Virtual Product Reference](./virtual-product-reference.md) 기사를 참조하십시오. 또한 추가 구성 설정에 대해서는 일반 [제품](../products.md) 설명서를 참조하십시오.
+각 필드에 대한 자세한 내용은 [가상 제품 참조](./virtual-product-reference.md) 기사를 참조하십시오. 또한 추가 구성 설정에 대해서는 일반 [제품](../products.md) 설명서를 참조하십시오.
 
 
 
@@ -91,7 +91,7 @@ Liferay Commerce에서 가상 제품은 고객이 다운로드할 수 있는 무
 
 1. _저장_ 을 클릭합니다.
 
-각 필드에 대한 자세한 내용은 [Virtual Product Reference](./virtual-product-reference.md) 기사를 참조하십시오.
+각 필드에 대한 자세한 내용은 [가상 제품 참조](./virtual-product-reference.md) 기사를 참조하십시오.
 
 ### 가격 및 수량 설정
 

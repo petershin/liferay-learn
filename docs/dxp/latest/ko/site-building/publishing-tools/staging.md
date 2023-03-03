@@ -57,7 +57,7 @@ Liferay의 Staging 애플리케이션은 라이브 환경에 변경 사항을 �
 사이트에 대한 스테이징을 구성할 때 *페이지 버전 관리* 기능을 활성화할 수 있습니다. 이 기능을 사용하여 귀하와 귀하의 팀은 사이트의 콘텐츠 페이지 및 위젯 페이지의 변형을 동시에 개발할 수 있습니다. 페이지 버전의 전체 기록을 확인하고 필요한 경우 페이지를 이전 버전으로 되돌릴 수 있습니다. 변형을 만들고 관리하는 방법은 [페이지 버전 관리](./staging/page-versioning.md) 을 참조하고 각 변형에 대한 권한 관리에 대해 알아보려면 [스테이징 권한 관리](./staging/managing-staging-permissions.md) 을 참조하세요.
 
 ```{note}
-Liferay DXP 7.4, 7.3 수정팩 1 및 7.2 수정팩 11부터 위젯 페이지 및 콘텐츠 페이지에서 페이지 버전 관리를 사용할 수 있습니다. 이전 버전에서는 위젯 페이지에 대한 변형만 만들 수 있었습니다. 각 페이지 유형의 변형에 대해 자세히 알아보려면 [변형 유형](./staging/page-versioning.md#types-of-variations)을 참조하세요.
+Liferay DXP 7.4, 7.3 수정팩 1 및 7.2 수정팩 11부터 위젯 페이지 및 콘텐츠 페이지에서 페이지 버전 관리를 사용할 수 있습니다. 이전 버전에서는 위젯 페이지에 대한 변형만 만들 수 있었습니다. 각 페이지 유형의 변형에 대해 자세히 알아보려면 [변형 유형](./staging/page-versioning.md#types-of-variations) 을 참조하세요.
 ```
 
 ## 게시 프로세스 이해
@@ -67,7 +67,7 @@ Liferay DXP 7.4, 7.3 수정팩 1 및 7.2 수정팩 11부터 위젯 페이지 및
 이 프로세스를 이해하면 효율성을 개선하고 원활한 게시 환경을 달성하기 위해 미리 계획하는 데 도움이 됩니다. 자세한 내용은 [게시 프로세스 이해](./staging/understanding-the-publishing-process.md) 을 참조하십시오.
 
 ```{important}
-스테이징은 [상거래 애플리케이션](https://learn.liferay.com/commerce/latest/en/index.html) 또는 [사용자 정의 객체](../../building-applications/objects.md)를 지원하지 않습니다. 게시 프로세스 중에 상거래 및 개체의 엔터티는 준비되지 않습니다. 
+스테이징은 [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 또는 [사용자 정의 객체](../../building-applications/objects.md)를 지원하지 않습니다. 게시 프로세스 중에 상거래 및 개체의 엔터티는 준비되지 않습니다. 
 ```
 
 ```{raw} html

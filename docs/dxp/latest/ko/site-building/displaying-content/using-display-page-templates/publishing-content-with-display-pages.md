@@ -39,7 +39,7 @@ uuid: 4e9f73a1-0cdf-450d-b659-3bc01546d755
 1. 속성 탭에서 *디스플레이 페이지 템플릿* 섹션을 확장하고 드롭다운 메뉴를 클릭한 다음 *특정 디스플레이 페이지 템플릿*을 선택합니다.
 
    ```{note}
-   특정 디스플레이 페이지 템플릿을 선택하지 않으면 콘텐츠 유형에 대해 [기본 템플릿](#setting-a-default-display-page-template)을 사용하여 콘텐츠가 게시됩니다.
+   특정 디스플레이 페이지 템플릿을 선택하지 않으면 콘텐츠 유형에 대해 [기본 템플릿](#setting-a-default-display-page-template) 을 사용하여 콘텐츠가 게시됩니다.
    ```
 
    ![구성할 특정 디스플레이 페이지 템플릿을 선택합니다.](./publishing-content-with-display-pages/images/01.png)

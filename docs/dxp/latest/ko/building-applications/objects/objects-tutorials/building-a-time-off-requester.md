@@ -2,9 +2,9 @@
 
 > 사용 가능: Liferay DXP/Portal 7.4+
 
-Liferay Objects를 사용하면 코드를 작성하거나 모듈을 배포하지 않고도 전체 애플리케이션을 구축할 수 있습니다. 여기서는 Liferay [Objects](../../objects.md) 및 [Picklists](../picklists/using-picklists.md)을 사용하여 휴가 요청 애플리케이션을 생성합니다.
+Liferay Objects를 사용하면 코드를 작성하거나 모듈을 배포하지 않고도 전체 애플리케이션을 구축할 수 있습니다. 여기서는 Liferay [객체](../../objects.md) 및 [Picklists](../picklists/using-picklists.md)을 사용하여 휴가 요청 애플리케이션을 생성합니다.
 
-먼저 부서 값을 정의하기 위한 [선택 목록 추가](#adding-a-department-picklist)를 수행합니다. 그런 다음 [휴가 요청](#adding-a-time-off-request-object)용 객체와 [직원](#adding-an-employee-object)용 객체를 생성합니다. 이 프로세스 중에 이러한 개체를 서로 연결하고 휴가 요청 개체에 웹후크를 추가합니다. 마지막으로 [맞춤 레이아웃 디자인](#designing-custom-object-layouts)을 통해 관계 필드를 표시합니다.
+먼저 부서 값을 정의하기 위한 [선택 목록 추가](#adding-a-department-picklist) 를 수행합니다. 그런 다음 [휴가 요청](#adding-a-time-off-request-object) 용 객체와 [직원](#adding-an-employee-object) 용 객체를 생성합니다. 이 프로세스 중에 이러한 개체를 서로 연결하고 휴가 요청 개체에 웹후크를 추가합니다. 마지막으로 [맞춤 레이아웃 디자인](#designing-custom-object-layouts) 을 통해 관계 필드를 표시합니다.
 
 ```{note}
 시스템 개체 확장에 대한 제한으로 인해 요청을 사용자 프로필과 연결하려면 직원 개체를 만들어야 합니다. 
@@ -123,7 +123,7 @@ Liferay Objects를 사용하면 코드를 작성하거나 모듈을 배포하지
   
 1. *게시*을 클릭합니다.
 
-게시되면 Liferay UI 또는 헤드리스 API를 통해 항목을 생성할 수 있습니다. 그러나 이러한 항목을 요청 항목과 연관시키려면 먼저 사용자 정의 레이아웃 [을 작성해야](#designing-custom-object-layouts).
+게시되면 Liferay UI 또는 헤드리스 API를 통해 항목을 생성할 수 있습니다. 그러나 이러한 항목을 요청 항목과 연관시키려면 먼저 사용자 정의 레이아웃 [을 작성해야](#designing-custom-object-layouts) .
 
 ## 사용자 정의 개체 레이아웃 디자인
 

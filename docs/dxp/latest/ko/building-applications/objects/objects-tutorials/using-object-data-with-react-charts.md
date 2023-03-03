@@ -89,7 +89,7 @@
 
 React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 따르세요.
 
-1. [React 프로젝트](./liferay-x3j8.zip)을 다운로드하고 압축을 풉니다.
+1. [React 프로젝트](./liferay-x3j8.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/liferay-x3j8.zip -O

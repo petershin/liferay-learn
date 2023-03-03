@@ -1,6 +1,6 @@
 # 조각에 스타일 적용
 
-페이지에 프래그먼트를 추가할 때 사이드바 메뉴를 사용하여 [ *스타일* 구성 탭](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles)을 포함하여 프래그먼트를 구성할 수 있습니다.
+페이지에 프래그먼트를 추가할 때 사이드바 메뉴를 사용하여 [ *스타일* 구성 탭](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles) 을 포함하여 프래그먼트를 구성할 수 있습니다.
 
 ![사이드바 메뉴의 스타일 탭을 사용하면 페이지의 조각별로 스타일을 구성할 수 있습니다.](./applying-styles-to-fragments/images/01.png)
 

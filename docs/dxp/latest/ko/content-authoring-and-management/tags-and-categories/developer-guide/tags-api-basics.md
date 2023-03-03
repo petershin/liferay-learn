@@ -9,7 +9,7 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Tags API 기본 사항](./liferay-r7u9.zip)을 다운로드하고 압축을 풉니다.
+1. [Tags API 기본 사항](./liferay-r7u9.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
@@ -19,7 +19,7 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
    unzip liferay-r7u9.zip
    ```
 
-1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 아래의 다른 서비스 호출에서 이것을 사용합니다.
+1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 아래의 다른 서비스 호출에서 이것을 사용합니다.
 
 1. cURL 스크립트를 사용하여 사이트에 새 태그를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `Keyword_POST_ToSite.sh` 스크립트를 실행합니다.
 

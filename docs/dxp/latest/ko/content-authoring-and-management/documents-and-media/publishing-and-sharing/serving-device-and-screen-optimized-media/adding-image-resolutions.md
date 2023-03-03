@@ -4,7 +4,7 @@
 
 여기서는 사용자 장치에 전달되는 이미지의 해상도를 정의하는 방법을 배웁니다. 해상도가 정의되면 Adaptive Media는 해당 해상도에 맞게 조정된 새 이미지를 생성하고 원래 종횡비를 유지합니다.
 
-해상도를 생성하기 전에 업로드된 이미지는 영향을 받지 않고 __ 이며 별도로 조정해야 합니다( [누락된 조정 이미지 생성](./managing-image-resolutions.md#generating-missing-adapted-images)참조).
+해상도를 생성하기 전에 업로드된 이미지는 영향을 받지 않고 __ 이며 별도로 조정해야 합니다( [누락된 조정 이미지 생성](./managing-image-resolutions.md#generating-missing-adapted-images) 참조).
 
 ![Adaptive Media의 이미지 해상도는 표에 나열되어 있습니다.](./adding-image-resolutions/images/01.png)
 

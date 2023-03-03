@@ -10,7 +10,7 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 
 ## 주문 상태.
 
-*주문 상태*는 [주문 수명 주기](./order-life-cycle.md)에서 주문이 어디에 있는지에 대한 정보를 제공합니다. 각 주문 상태는 다음 [*주문* 메뉴](./orders-menu-reference-guide.md) 탭 중 하나에 표시됩니다. [*열기*](./orders-menu-reference-guide.md#open) , [*보류 중*](./orders-menu-reference-guide.md#pending) 또는 [*전송됨*](./orders-menu-reference-guide.md#transmitted).
+*주문 상태*는 [주문 수명 주기](./order-life-cycle.md)에서 주문이 어디에 있는지에 대한 정보를 제공합니다. 각 주문 상태는 다음 [*주문* 메뉴](./orders-menu-reference-guide.md) 탭 중 하나에 표시됩니다. [*열기*](./orders-menu-reference-guide.md#open) , [*보류 중*](./orders-menu-reference-guide.md#pending) 또는 [*전송됨*](./orders-menu-reference-guide.md#transmitted) .
 
 
 ### 열려있는
@@ -42,7 +42,7 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 
 | 주문 상태. | 묘사                                                                                                                                            |
 |:------ |:--------------------------------------------------------------------------------------------------------------------------------------------- |
-| 전송됨    | 추가 상태 업데이트 없이 주문이 [전송](./processing-an-order.md#commerce-20-and-below)되었습니다. (전송된 주문의 기본 주문 상태입니다.)                                           |
+| 전송됨    | 추가 상태 업데이트 없이 주문이 [전송](./processing-an-order.md#commerce-20-and-below) 되었습니다. (전송된 주문의 기본 주문 상태입니다.)                                           |
 | 수행 대기  | 주문이 [전송되고](./processing-an-order.md#commerce-20-and-below) 결제가 확인되었지만 운송업체에서 아직 [배송](../shipments/introduction-to-shipments.md) 준비가 되지 않았습니다. |
 | 집화 대기  | 주문이 준비되었으며( [개 배송됨](../shipments/introduction-to-shipments.md)가능) 판매자가 지정한 사이트에서 구매자가 픽업하기를 기다리고 있습니다.                                         |
 | 배송 대기  | 주문이 [배송](../shipments/introduction-to-shipments.md)준비되었으며 배송업체에서 픽업 및 배송을 기다리고 있습니다.                                                          |
@@ -73,7 +73,7 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 
 ### 열려있는
 
-* *시작* 탭의 워크플로 상태* 은 [*승인 워크플로*](../order-workflows/introduction-to-order-workflows.md#approval-workflow-buyer-side-cart-approval-only)을 통한 주문의 진행 상황을 나타냅니다. 이 주문 워크플로우에는 *초안*, *보류*및 *승인*의 세 가지 워크플로우 상태가 있습니다.
+* *시작* 탭의 워크플로 상태* 은 [*승인 워크플로*](../order-workflows/introduction-to-order-workflows.md#approval-workflow-buyer-side-cart-approval-only) 을 통한 주문의 진행 상황을 나타냅니다. 이 주문 워크플로우에는 *초안*, *보류*및 *승인*의 세 가지 워크플로우 상태가 있습니다.
 
 ![워크플로 상태 열기 탭](./order-management-statuses-reference-guide/images/06.png)
 
@@ -85,14 +85,14 @@ Liferay Commerce의 모든 주문에는 [개의 주문 정보](./order-informati
 
 ### 미정
 
-* *보류* 탭의 작업 흐름 상태* 은 [*전송 작업 흐름*](../order-workflows/introduction-to-order-workflows.md#transmission-workflow-seller-side-order-approval-only)을 통한 주문의 진행 상황을 나타냅니다. 이 주문 워크플로에는 *대기 중* 및 *승인됨*의 두 가지 워크플로 상태가 있습니다.
+* *보류* 탭의 작업 흐름 상태* 은 [*전송 작업 흐름*](../order-workflows/introduction-to-order-workflows.md#transmission-workflow-seller-side-order-approval-only) 을 통한 주문의 진행 상황을 나타냅니다. 이 주문 워크플로에는 *대기 중* 및 *승인됨*의 두 가지 워크플로 상태가 있습니다.
 
 ![워크플로 상태 보류 중 및 전송됨 탭](./order-management-statuses-reference-guide/images/07.png)
 
 | 워크플로우 상태 | 묘사                                                                                                                                                                                                    |
 |:-------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 미정       | 주문이 접수되었지만 아직 판매자가 [승인](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) 하지 않았습니다.                                                                                             |
-| 승인되는     | 판매자가 주문을 검토하고 [승인](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) 했으며 이제 주문이 [전송될 수 있습니다](./processing-an-order.md#commerce-20-and-below). (참고: 이 워크플로 상태는 *전송됨* 탭에도 나타납니다.) |
+| 승인되는     | 판매자가 주문을 검토하고 [승인](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) 했으며 이제 주문이 [전송될 수 있습니다](./processing-an-order.md#commerce-20-and-below) . (참고: 이 워크플로 상태는 *전송됨* 탭에도 나타납니다.) |
 
 ## 추가 정보
 

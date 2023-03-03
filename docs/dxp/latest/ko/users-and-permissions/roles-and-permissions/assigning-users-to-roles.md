@@ -1,10 +1,10 @@
 # 역할에 사용자 할당
 
-Role의 할당 UI 사이트는 [Role의 범위](./understanding-roles-and-permissions.md#roles-and-scope)에 해당합니다.
+Role의 할당 UI 사이트는 [Role의 범위](./understanding-roles-and-permissions.md#roles-and-scope) 에 해당합니다.
 
 ## 일정한 역할
 
-전역 범위의 일반 역할은 DXP [제어판](../../getting-started/navigating-dxp.md#control-panel)에서 구성할 수 있습니다.
+전역 범위의 일반 역할은 DXP [제어판](../../getting-started/navigating-dxp.md#control-panel) 에서 구성할 수 있습니다.
 
 | 권한 범위          | 사용 가능한 과제                                                                 |
 |:-------------- |:------------------------------------------------------------------------- |

@@ -12,7 +12,7 @@ Web Content API에 대한 소개는 [Web Content API 기초](./web-content-api-b
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, download and unzip the [sample project](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip):
+Then, download and unzip the [sample project](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) :
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip -O
@@ -135,7 +135,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
    ![구조 필드 옆에 있는 추가 버튼을 클릭하여 템플릿을 구조에 연결합니다.](./advanced-web-content-api/images/06.png)
 
-1. [이전 섹션](#create-the-structure-sample)에서 _Foo_ 웹 콘텐츠 구조를 선택합니다.
+1. [이전 섹션](#create-the-structure-sample) 에서 _Foo_ 웹 콘텐츠 구조를 선택합니다.
 1. FreeMarker 편집기에 포함된 기본 `<#-- -->` 블록 주석을 삭제합니다.
 1. 사이드바에서 *요소* (![Elements](../../../images/icon-list-ul.png))을 클릭합니다.
 1. 필드 그룹에서 *텍스트*, *이미지*, *날짜*및 *단일 선택* 필드를 클릭하여 템플릿에 추가합니다. FreeMarker 편집기에서 각 필드가 새 줄로 시작하는지 확인하십시오.
@@ -268,7 +268,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
 ## 이미지 ID 가져오기
 
-이전에 게시한 [이미지의 ID를 얻으려면](#adding-the-images-to-liferay-dxp)Documents_GET_FromSite.sh `스크립트를 사용`. 이 스크립트는 `GET` HTTP 메서드 및 [사이트 ID](#identify-the-site-id) 매개변수와 함께 `문서` 서비스를 사용합니다.
+이전에 게시한 [이미지의 ID를 얻으려면](#adding-the-images-to-liferay-dxp) Documents_GET_FromSite.sh `스크립트를 사용`. 이 스크립트는 `GET` HTTP 메서드 및 [사이트 ID](#identify-the-site-id) 매개변수와 함께 `문서` 서비스를 사용합니다.
 
 | 방법    | 서비스        | 끝점                           |
 |:----- |:---------- |:---------------------------- |
@@ -399,7 +399,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
 ## 웹 콘텐츠 기사 게시
 
-`StructuredContent_POST_ToSite.sh`</a>스크립트는 `POST` HTTP 메서드와 이전에 생성한 샘플 구조를 사용하여 새 웹 콘텐츠 를 생성합니다. 스크립트는 [Site Id](#identifying-the-site-id), Structure Id 및 foo.png의 [image Id](#getting-the-images-ids) 을 매개변수로 사용합니다.</p> 
+`StructuredContent_POST_ToSite.sh`</a>스크립트는 `POST` HTTP 메서드와 이전에 생성한 샘플 구조를 사용하여 새 웹 콘텐츠 를 생성합니다. 스크립트는 [Site Id](#identifying-the-site-id) , Structure Id 및 foo.png의 [image Id](#getting-the-images-ids) 을 매개변수로 사용합니다.</p> 
 
 | 방법 | 서비스                 | 끝점                                         |
 |:-- |:------------------- |:------------------------------------------ |

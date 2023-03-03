@@ -3,7 +3,7 @@
 Elasticsearch 온프레미스를 설치, 구성 및 시작하는 방법은 다음과 같습니다.
 
 ```{note}
-기본 데이터 스토리지(데이터베이스에서 지원하지 않는 데이터 저장)에 Elasticsearch 인덱스를 사용하는 경우 [스냅샷 및 복원 방식](./upgrading-elasticsearch/backing-up-elasticsearch.conf)을 사용하여 해당 데이터를 새 Elasticsearch 클러스터로 가져올 수 있습니다. md). Liferay 자체 검색 튜닝 인덱스(결과 순위 및 동의어용)는 Liferay DXP 7.2 및 7.3의 기본 스토리지 인덱스입니다.
+기본 데이터 스토리지(데이터베이스에서 지원하지 않는 데이터 저장)에 Elasticsearch 인덱스를 사용하는 경우 [스냅샷 및 복원 방식](./upgrading-elasticsearch/backing-up-elasticsearch.conf) 을 사용하여 해당 데이터를 새 Elasticsearch 클러스터로 가져올 수 있습니다. md). Liferay 자체 검색 튜닝 인덱스(결과 순위 및 동의어용)는 Liferay DXP 7.2 및 7.3의 기본 스토리지 인덱스입니다.
 ```
 
 ## 프로덕션과 유사한 설치를 위한 환경 설정
@@ -31,7 +31,7 @@ sysctl -w vm.max_map_count=262144
 
 ## Elasticsearch 설치
 
-1. [Elastic 웹사이트](https://www.elastic.co)에서 Elasticsearch 아카이브를 다운로드합니다.
+1. [Elastic 웹사이트](https://www.elastic.co) 에서 Elasticsearch 아카이브를 다운로드합니다.
 
     ```{important}
     [Liferay 버전과 호환](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors) 최신 Elasticsearch 아카이브를 다운로드합니다.

@@ -1,6 +1,6 @@
 # 양식
 
-[Forms](https://learn.liferay.com/dxp/latest/en/process-automation/forms/introduction-to-forms.html) 은 기업을 위한 중요한 직접 데이터 수집 도구입니다. 귀사의 웹 양식이 귀중한 정보를 제공하고 있습니까, 아니면 사용자를 외면하고 있습니까? Analytics Cloud는 중요한 인사이트를 제공합니다.
+[양식 소개](https://learn.liferay.com/dxp/latest/ko/process-automation/forms/introduction-to-forms.html) 은 기업을 위한 중요한 직접 데이터 수집 도구입니다. 귀사의 웹 양식이 귀중한 정보를 제공하고 있습니까, 아니면 사용자를 외면하고 있습니까? Analytics Cloud는 중요한 인사이트를 제공합니다.
 
 Analytics Cloud에서 메뉴의 터치포인트 섹션을 찾아 자산을 클릭합니다. 4개의 탭이 있으며 각각 탭 제목으로 표시된 자산 유형의 페이지가 매겨진 목록을 표시합니다. 양식을 클릭합니다.
 

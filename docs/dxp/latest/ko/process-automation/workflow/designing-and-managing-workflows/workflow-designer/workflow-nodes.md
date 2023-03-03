@@ -57,5 +57,5 @@ _태스크_ 노드는 모든 작업이 수행되는 사이트를 나타냅니다
 * [워크플로 작업 만들기](./creating-workflow-tasks.md)
 * [작업 노드 사용](./assigning-task-nodes.md)
 * [Kaleo 양식](../../../forms/kaleo-forms.md)
-* [워크플로 프레임워크 소개](https://help.liferay.com/hc/en-us/articles/360028727112-Introduction-to-The-Workflow-Framework)
+* [워크플로 프레임워크 소개](https://help.liferay.com/hc/ko/articles/360028727112-Introduction-to-The-Workflow-Framework)
 * [동적 데이터 목록](../../../forms/dynamic-data-lists/getting-started-with-dynamic-data-lists.md)

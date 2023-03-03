@@ -19,7 +19,7 @@
 </liferay-frontend:info-bar>
 ```
 
-`<liferay-frontend:info-bar-sidenav-toggler-button>` 태그는 `아이콘` 속성에 대해 [Clay Icons](../clay-tag-library/clay-icons.md) 를 사용합니다.
+`<liferay-frontend:info-bar-sidenav-toggler-button>` 태그는 `아이콘` 속성에 대해 [클레이 아이콘](../clay-tag-library/clay-icons.md) 를 사용합니다.
 
 사이드바 패널:
 
@@ -38,7 +38,7 @@
 
 ![정보 표시줄 태그는 추가 정보를 표시하는 사이드바 패널 토글러를 생성합니다.](./liferay-frontend-info-bar-intro/images/02.png)
 
-위의 예에서는 사용 가능한 속성 중 일부를 사용합니다. 태그에 사용할 수 있는 속성의 전체 목록은 [정보 표시줄](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar.html), [정보 표시줄 버튼](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar-buttons.html), [정보 표시줄 sidenav 토글 버튼](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar-sidenav-toggler-button.html), [사이드바 패널](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/sidebar-panel.html)  taglibdocs를 참조하세요.
+위의 예에서는 사용 가능한 속성 중 일부를 사용합니다. 태그에 사용할 수 있는 속성의 전체 목록은 [정보 표시줄](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar.html) , [정보 표시줄 버튼](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar-buttons.html) , [정보 표시줄 sidenav 토글 버튼](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/info-bar-sidenav-toggler-button.html) , [사이드바 패널](https://docs.liferay.com/ce/apps/frontend-taglib/latest/taglibdocs/liferay-frontend/sidebar-panel.html)  taglibdocs를 참조하세요.
 
 ## 관련 항목
 

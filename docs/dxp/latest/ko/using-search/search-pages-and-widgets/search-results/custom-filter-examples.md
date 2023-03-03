@@ -48,7 +48,7 @@ uuid: e3852b4a-f53d-43b2-835e-e75bcd9469df
 
 **발생:** `must_not`
 
-이 구성은 문서 및 미디어 [`DLFileEntry` 모델](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-service/src/main/java/com/liferay/document/library/internal/search/spi/model/index/contributor/DLFileEntryModelDocumentContributor.java)에서 인덱싱된 `확장` 필드의 존재를 활용합니다. 이는 값이 `gif` 인 `확장자` 필드를 포함하는 검색 문서가 검색 결과에 반환되지 않도록 합니다.
+이 구성은 문서 및 미디어 [`DLFileEntry` 모델](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-service/src/main/java/com/liferay/document/library/internal/search/spi/model/index/contributor/DLFileEntryModelDocumentContributor.java) 에서 인덱싱된 `확장` 필드의 존재를 활용합니다. 이는 값이 `gif` 인 `확장자` 필드를 포함하는 검색 문서가 검색 결과에 반환되지 않도록 합니다.
 
 ## 부스팅 필드
 
@@ -56,7 +56,7 @@ uuid: e3852b4a-f53d-43b2-835e-e75bcd9469df
 
 ### 날짜 범위별 결과 향상
 
-[사용자 지정 필터 위젯 구성 양식](filtering-search-results.md#custom-filter-configuration) 의 날짜 범위 쿼리 옵션은 [Elasticsearch 범위 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html)에 해당합니다. 작년에 생성된 결과를 높이려면 사용자 정의 필터를 페이지에 추가하고 다음과 같이 구성하십시오.
+[사용자 지정 필터 위젯 구성 양식](filtering-search-results.md#custom-filter-configuration) 의 날짜 범위 쿼리 옵션은 [Elasticsearch 범위 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html) 에 해당합니다. 작년에 생성된 결과를 높이려면 사용자 정의 필터를 페이지에 추가하고 다음과 같이 구성하십시오.
 
 **필터 필드:** `createDate`
 
@@ -165,7 +165,7 @@ uuid: e3852b4a-f53d-43b2-835e-e75bcd9469df
 
 ## 쿼리 문자열이 포함된 복합 필터
 
-경우에 따라 [쿼리 문자열 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html)사용하여 여러 쿼리가 필요하지 않을 수 있습니다( [사이트 ID로 필터링](#filtering-by-site-id) 예제에서와 같이). 아래 구성은 하나의 사용자 정의 필터 위젯만 사용하여 검색을 제한하는 방법을 보여줍니다.
+경우에 따라 [쿼리 문자열 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html) 사용하여 여러 쿼리가 필요하지 않을 수 있습니다( [사이트 ID로 필터링](#filtering-by-site-id) 예제에서와 같이). 아래 구성은 하나의 사용자 정의 필터 위젯만 사용하여 검색을 제한하는 방법을 보여줍니다.
 
 - `pdf` 또는 `jpg` 확장자를 가진 문서 및 미디어 파일 일치 또는
 - 웹 콘텐츠 기사 일치
@@ -190,7 +190,7 @@ uuid: e3852b4a-f53d-43b2-835e-e75bcd9469df
 
 {bdg-secondary}`사용 가능 7.2 FP10+, 7.3 FP1+, 7.4(모든 업데이트)`
 
-[중첩된 DDM 필드 액세스](../search-facets/custom-facet.md#accessing-nested-ddm-fields)에 설명된 대로 DDM 필드는 Liferay 7.2 SP3+/FP8+(및 모든 Liferay 7.3 버전)에서 [중첩된 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 가 되었습니다. 7.2 및 7.3의 최신 수정 팩 및 GA 릴리스에서는 이러한 중첩 필드를 설명하기 위해 [Elasticsearch 중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 지원됩니다.
+[중첩된 DDM 필드 액세스](../search-facets/custom-facet.md#accessing-nested-ddm-fields) 에 설명된 대로 DDM 필드는 Liferay 7.2 SP3+/FP8+(및 모든 Liferay 7.3 버전)에서 [중첩된 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 가 되었습니다. 7.2 및 7.3의 최신 수정 팩 및 GA 릴리스에서는 이러한 중첩 필드를 설명하기 위해 [Elasticsearch 중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 지원됩니다.
 
 사용자 정의 필터 구성에서 [중첩 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 을 사용하려면 검색 페이지에 세 개의 사용자 정의 필터 위젯이 필요합니다. 필수 하위 쿼리를 래핑하는 [중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 위젯 중 하나에 추가됩니다. 하나의 하위 쿼리는 필드 이름과 일치하고 다른 하나는 값과 일치합니다.
 

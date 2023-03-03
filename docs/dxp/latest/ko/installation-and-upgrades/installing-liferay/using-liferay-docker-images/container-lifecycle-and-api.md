@@ -16,8 +16,8 @@
 
 1. **사전 구성:** [Tomcat 및 Liferay를 구성하기 전에 사용자 제공 스크립트](./running-scripts-in-containers.md) 를 실행합니다.
 1. **구성:** Tomcat에서 Liferay 실행을 준비합니다.
-    1. [Tomcat의 Java 런타임 환경 설정](./configuring-containers.md#jvm-options).
-    1. [사용자 제공 파일](./configuring-containers.md) 을 [Liferay Home](../../reference/liferay-home.md)에 복사합니다.
+    1. [Tomcat의 Java 런타임 환경 설정](./configuring-containers.md#jvm-options) .
+    1. [사용자 제공 파일](./configuring-containers.md) 을 [Liferay Home](../../reference/liferay-home.md) 에 복사합니다.
     1. [사용자 제공 스크립트 실행](./running-scripts-in-containers.md).
     1. [사용자 제공 아티팩트 배포](./installing-apps-and-other-artifacts-to-containers.md).
     1. [Patching Tool](./patching-dxp-in-docker.md#updating-the-patching-tool) 을 사용자가 제공한 버전으로 업데이트합니다.
@@ -34,7 +34,7 @@
 * `/user/local/liferay/scripts`
 
 ```{note}
-[bind mounts](https://docs.docker.com/storage/bind-mounts/), [volumes](https://docs.docker.com/)을 사용하는 것을 포함하여 여러 가지 방법으로 이러한 컨테이너 폴더에 파일을 전달할 수 있습니다. storage/volumes/) 및 `docker cp`. 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md)을 참조하세요.
+[bind mounts](https://docs.docker.com/storage/bind-mounts/) , [volumes](https://docs.docker.com/) 을 사용하는 것을 포함하여 여러 가지 방법으로 이러한 컨테이너 폴더에 파일을 전달할 수 있습니다. storage/volumes/) 및 `docker cp`. 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md)을 참조하세요.
 ```
 
 위의 키 폴더에는 특정 작업을 위해 지정된 하위 폴더가 있습니다. 하위 폴더, 해당 파일에 대해 수행된 작업 및 관련 사용 사례는 다음 섹션에서 수명 주기 단계 순서로 나열됩니다.
@@ -56,7 +56,7 @@
 
 | 파일 사이트                   | 액션                                                                                                                                                                                                                                                                                  | 사용 사례                                                                                                          |
 |:----------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------------------- |
-| `/mnt/liferay/files`    | Liferay Home(`/opt/liferay`) 아래의 해당 폴더에 파일 복사                                                                                                                                                                                                                                       | [컨테이너 구성](./configuring-containers.md)<br><br>[Tomcat 구성](./configuring-containers.md#jvm-options) |
+| `/mnt/liferay/files`    | Liferay Home(`/opt/liferay`) 아래의 해당 폴더에 파일 복사                                                                                                                                                                                                                                       | [컨테이너 구성](./configuring-containers.md)<br><br> [Tomcat 구성](./configuring-containers.md#jvm-options) |
 | `/mnt/liferay/scripts`  | 스크립트를 알파벳순으로 실행                                                                                                                                                                                                                                                                     | [구성 중 스크립트 실행](./running-scripts-in-containers.md)                                                             |
 | `/mnt/liferay/deploy`   | Liferay 시작 시 아티팩트 자동 배포를 위해 `/mnt/liferay/deploy` 을 `/opt/liferay/deploy` 에 심볼릭 링크합니다.<br><br>런타임 시 `/mnt/liferay/deploy`, `/opt/liferay/deploy`또는 두 폴더 중 하나에 마운트된 폴더에 복사된 모든 아티팩트를 자동 배포합니다.<br><br>참고: 자동 배포된 아티팩트는 `/opt/liferay/osgi`아래의 적절한 폴더로 이동됩니다. | [컨테이너에 앱 및 기타 아티팩트 설치](./installing-apps-and-other-artifacts-to-containers.md)                                 |
 | `/mnt/liferay/patching` | 패치 도구가 제공되면 설치하십시오. 제공된 모든 패치를 설치합니다.                                                                                                                                                                                                                                               | [Docker에서 DXP 패치](./patching-dxp-in-docker.md)                                                                 |

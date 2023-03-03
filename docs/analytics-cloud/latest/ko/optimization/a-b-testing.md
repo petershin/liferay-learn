@@ -1,6 +1,6 @@
 # A/B 테스트
 
-A/B 테스트는 페이지의 여러 버전/레이아웃을 한 번에 테스트하여 콘텐츠 페이지의 효율성을 평가합니다. 이는 원래 페이지의 페이지 변형을 만들고 목표(예: 클릭 수)로 페이지를 테스트하고 가장 효과적인 변형을 게시하여 수행됩니다. Liferay DXP의 [A/B 테스트 설명서](https://learn.liferay.com/dxp/latest/en/site-building/optimizing-sites/ab-testing/ab-testing.html)에서 A/B 테스트 생성 및 콘텐츠 페이지에 대한 구성에 대해 자세히 알아볼 수 있습니다.
+A/B 테스트는 페이지의 여러 버전/레이아웃을 한 번에 테스트하여 콘텐츠 페이지의 효율성을 평가합니다. 이는 원래 페이지의 페이지 변형을 만들고 목표(예: 클릭 수)로 페이지를 테스트하고 가장 효과적인 변형을 게시하여 수행됩니다. Liferay DXP의 [A/B 테스트](https://learn.liferay.com/dxp/latest/ko/site-building/optimizing-sites/ab-testing/ab-testing.html) 에서 A/B 테스트 생성 및 콘텐츠 페이지에 대한 구성에 대해 자세히 알아볼 수 있습니다.
 
 Liferay DXP에서 실행되는 A/B 테스트의 모든 결과는 Analytics Cloud에서 추적됩니다. A/B 테스트가 생성되면 Analytics Cloud와 동기화됩니다. 여기에서 Analytics Cloud의 A/B 테스트를 관리할 수 있습니다. 작성, 실행, 종료 및 완료된 모든 A/B 테스트를 보려면 왼쪽 열에서 테스트 메뉴로 이동하십시오.
 
@@ -16,7 +16,7 @@ Liferay DXP에서 실행되는 A/B 테스트의 모든 결과는 Analytics Cloud
 
 ![A/B 테스트 설정 프로세스.](a-b-testing/images/02.png)
 
-A/B 테스트 설정에 대한 자세한 내용은 [Liferay DXP의 A/B 테스트 문서](https://learn.liferay.com/dxp/latest/en/site-building/optimizing-sites/ab-testing/ab-testing.html) 을 참조하십시오.
+A/B 테스트 설정에 대한 자세한 내용은 [A/B 테스트](https://learn.liferay.com/dxp/latest/ko/site-building/optimizing-sites/ab-testing/ab-testing.html) 을 참조하십시오.
 
 A/B 테스트가 실행되면 Analytics Cloud는 A/B 테스트 진행 상황에 대한 최신 정보를 제공하는 여러 보고서를 제공합니다.
 

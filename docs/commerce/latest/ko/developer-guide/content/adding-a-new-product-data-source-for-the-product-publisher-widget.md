@@ -2,7 +2,7 @@
 
 이 자습서에서는 `CPDataSource` 인터페이스를 구현하여 새 제품 데이터 소스를 추가하는 방법을 보여줍니다.
 
-제품 데이터 소스는 관련된 제품을 검색하는 고유한 방법을 제공합니다. Liferay Commerce는 [제품 관계별로](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) 및 [카테고리별](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java).
+제품 데이터 소스는 관련된 제품을 검색하는 고유한 방법을 제공합니다. Liferay Commerce는 [제품 관계별로](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) 및 [카테고리별](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java) .
 
 ![즉시 사용 가능한 제품 데이터 소스](./adding-a-new-product-data-source-for-the-product-publisher-widget/images/01.png "즉시 사용 가능한 제품 데이터 소스")
 
@@ -21,7 +21,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Acme Commerce 제품 데이터 소스](./liferay-m5x7.zip)를 다운로드하고 압축을 풉니다.
+1. [Acme Commerce 제품 데이터 소스](./liferay-m5x7.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/content/liferay-m5x7.zip -O
@@ -95,7 +95,7 @@ public CPDataSourceResult getResult(
 
 > 여기에서 관련 제품 검색을 수행하기 위해 비즈니스 로직을 추가합니다. `HttpServletRequest` 에는 결과가 어떤 식으로든 관련되어야 하는 특정 제품에 대한 참조가 포함되어 있습니다.
 > 
-> 이 메서드는 검색 결과 목록을 포함하는 `CPDataSourceResult`을 반환합니다. [CPDataSourceResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/data/source/CPDataSourceResult.java)에서 구현을 참조하십시오.
+> 이 메서드는 검색 결과 목록을 포함하는 `CPDataSourceResult`을 반환합니다. [CPDataSourceResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/data/source/CPDataSourceResult.java) 에서 구현을 참조하십시오.
 
 ### 제품 데이터 소스 완성
 
@@ -152,7 +152,7 @@ public CPDataSourceResult getResult(
 products-ending-in-the-same-word=Products Ending in the Same Word
 ```
 
-> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
+> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
 
 ## 결론
 
@@ -160,5 +160,5 @@ products-ending-in-the-same-word=Products Ending in the Same Word
 
 ## 추가 정보
 
-* [애플리케이션 현지화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+* [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)
 * [관련 제품, 상향 판매 및 교차 판매](../../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)

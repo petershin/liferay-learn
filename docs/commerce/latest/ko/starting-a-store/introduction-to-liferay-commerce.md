@@ -4,7 +4,7 @@ uuid: 27b4b659-cde2-487f-981e-5a49c6e11390
 
 # 라이프레이 커머스 소개
 
-Liferay 상거래에 오신 것을 환영합니다!  Liferay Commerce는 모든 B2B 조직의 까다롭고 복잡한 요구 사항을 충족하기 위해 처음부터 구축된 디지털 상거래 플랫폼입니다. Liferay DXP의 엔터프라이즈 기반을 사용하는 Liferay Commerce는 완전히 통합된 웹 콘텐츠 관리 및 업계 최고의 포털 기능의 성능과 유연성을 갖추고 있습니다. Liferay DXP에 대해 자세히 알아보려면 [여기](https://learn.liferay.com/dxp/latest/en/getting-started.html) 클릭하십시오.
+Liferay 상거래에 오신 것을 환영합니다!  Liferay Commerce는 모든 B2B 조직의 까다롭고 복잡한 요구 사항을 충족하기 위해 처음부터 구축된 디지털 상거래 플랫폼입니다. Liferay DXP의 엔터프라이즈 기반을 사용하는 Liferay Commerce는 완전히 통합된 웹 콘텐츠 관리 및 업계 최고의 포털 기능의 성능과 유연성을 갖추고 있습니다. Liferay DXP에 대해 자세히 알아보려면 [시작하기](https://learn.liferay.com/dxp/latest/ko/getting-started.html) 클릭하십시오.
 
 ## 개요
 

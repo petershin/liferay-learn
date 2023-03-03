@@ -7,7 +7,7 @@
 BOM 다이어그램은 다이어그램과 매핑된 제품의 두 부분으로 구성됩니다.
 
 ```{important}
-Liferay Commerce 4.0부터 BOM을 더 이상 사용할 수 없습니다. 보다 강력한 Shop by Diagram 기능으로 대체됩니다. 자세한 내용은 [Shop by Diagram](../product-types/shop-by-diagram.md)을 참조하십시오. 
+Liferay Commerce 4.0부터 BOM을 더 이상 사용할 수 없습니다. 보다 강력한 Shop by Diagram 기능으로 대체됩니다. 자세한 내용은 [다이어그램으로 쇼핑하기](../product-types/shop-by-diagram.md) 을 참조하십시오. 
 ```
 
 ## 새 BOM 다이어그램 추가
@@ -149,5 +149,5 @@ BOM 위젯에 다이어그램이 표시됩니다.
 ## 추가 정보
 
 * [제품 변형에 대한 SKU 만들기](./creating-skus-for-product-variants.md)
-* [사이트에 페이지 추가](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
-* [페이지에 위젯 추가](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)
+* [사이트에 페이지 추가](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
+* [페이지에 위젯 추가](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)

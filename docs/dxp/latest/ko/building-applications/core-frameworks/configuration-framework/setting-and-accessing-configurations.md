@@ -9,7 +9,7 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 
 그런 다음 다음 단계를 따르세요.
 
-1. [설정 및 액세스 구성](./liferay-n2f3.zip)을 다운로드하고 압축을 풉니다.
+1. [설정 및 액세스 구성](./liferay-n2f3.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
@@ -72,7 +72,7 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 ID는 구성 인터페이스의 FQCN(정규화된 클래스 이름)이어야 합니다.
 ```
 
-`Meta.AD` 은 기본값 또는 속성이 필수 필드인지 여부와 같은 속성에 대한 선택적 메타데이터 [을 지정](http://bnd.bndtools.org/chapters/210-metatype.html). 속성 값이 필요하지만 기본값이 설정되지 않은 경우 관리자가 설정에서 값을 설정해야 애플리케이션이 제대로 작동합니다.
+`Meta.AD` 은 기본값 또는 속성이 필수 필드인지 여부와 같은 속성에 대한 선택적 메타데이터 [을 지정](http://bnd.bndtools.org/chapters/210-metatype.html) . 속성 값이 필요하지만 기본값이 설정되지 않은 경우 관리자가 설정에서 값을 설정해야 애플리케이션이 제대로 작동합니다.
 
 다음으로 MVC Portlet에서 구성을 읽는 방법을 확인합니다.
 

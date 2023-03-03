@@ -1,6 +1,6 @@
 # 클러스터 링크 구성
 
-클러스터 링크를 활성화하면 분산 캐싱이 활성화됩니다. 캐시는 동시에 실행되는 여러 Liferay DXP 노드에 분산됩니다. 클러스터 링크는 [Ehcache](http://www.ehcache.org) 복제를 사용합니다. Ehcache 글로벌 설정은 [`portal.properties` 파일](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Ehcache)에 있습니다.
+클러스터 링크를 활성화하면 분산 캐싱이 활성화됩니다. 캐시는 동시에 실행되는 여러 Liferay DXP 노드에 분산됩니다. 클러스터 링크는 [Ehcache](http://www.ehcache.org) 복제를 사용합니다. Ehcache 글로벌 설정은 [`portal.properties` 파일](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Ehcache) 에 있습니다.
 
 기본적으로 Liferay는 노드 간에 캐시된 엔터티를 복사하지 않습니다. 예를 들어 엔터티가 삭제되거나 변경되면 Cluster Link는 다른 노드에 *remove* 메시지를 보내 로컬 캐시에서 이 엔터티를 무효화합니다. 다른 노드에서 해당 엔티티를 요청하면 캐시 *미스*이 발생합니다. 그러면 엔터티가 데이터베이스에서 검색되어 로컬 캐시에 저장됩니다. 한 노드의 로컬 캐시에 추가된 엔티티는 다른 노드의 로컬 캐시에 복사되지 않습니다. 엔터티가 캐시되지 않은 노드에서 새 엔터티를 검색하려고 하면 캐시 *미스*이 발생합니다. 미스는 노드를 트리거하여 데이터베이스에서 엔터티를 검색하고 로컬 캐시에 저장합니다.
 
@@ -41,7 +41,7 @@ Cluster Link는 [JGroups](http://www.jgroups.org) 에 종속되며 노드가 통
 
 ### UDP를 통한 멀티캐스트 사용
 
-DXP는 [JGroups의 채널](http://www.jgroups.org/manual4/index.html#_channel)의 두 그룹을 사용하여 UDP를 통한 멀티캐스트를 구현합니다. 컨트롤 그룹과 전송 그룹입니다. [채널 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link)을 사용자 지정하려면 다음을 추가하면 됩니다. `portal-ext.properties`에 대한 포털 속성: 
+DXP는 [JGroups의 채널](http://www.jgroups.org/manual4/index.html#_channel) 의 두 그룹을 사용하여 UDP를 통한 멀티캐스트를 구현합니다. 컨트롤 그룹과 전송 그룹입니다. [채널 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) 을 사용자 지정하려면 다음을 추가하면 됩니다. `portal-ext.properties`에 대한 포털 속성: 
 
 ```properties
 cluster.link.channel.name.control=[your control channel name]
@@ -50,7 +50,7 @@ cluster.link.channel.properties.control=[your control channel properties]
 
 채널 속성은 [JGroups 문서](http://www.jgroups.org/manual4/index.html#protlist) 을 참조하십시오. 기본 구성은 해당 설정이 설명된 많은 속성을 설정합니다.
 
-네트워크의 모든 장치에 대한 멀티캐스트 브로드캐스트. 동일한 네트워크의 클러스터 환경은 기본적으로 서로 통신합니다. 이들 간에 전송되는 메시지 및 정보(예: 예약된 작업)는 의도하지 않은 결과를 초래할 수 있습니다. 이러한 클러스터 환경을 네트워크에서 논리적 또는 물리적으로 분리하거나 각 클러스터의 `portal-ext.properties`를 구성하여 [멀티캐스트 그룹 주소 및 포트 값](https://learn.liferay.com /reference/latest/en/dxp/propertiesdoc/portal.properties.html#Multicast).
+네트워크의 모든 장치에 대한 멀티캐스트 브로드캐스트. 동일한 네트워크의 클러스터 환경은 기본적으로 서로 통신합니다. 이들 간에 전송되는 메시지 및 정보(예: 예약된 작업)는 의도하지 않은 결과를 초래할 수 있습니다. 이러한 클러스터 환경을 네트워크에서 논리적 또는 물리적으로 분리하거나 각 클러스터의 `portal-ext.properties`를 구성하여 [멀티캐스트 그룹 주소 및 포트 값](https://learn.liferay.com /reference/latest/en/dxp/propertiesdoc/portal.properties.html#Multicast) .
 
 JGroups는 기본적으로 `localhost` 을 사용하여 바인드 주소를 자동으로 설정합니다. 그러나 일부 구성에서는 `localhost` 이 호스트의 실제 주소가 아니라 내부 루프백 네트워크(`127.0.0.1` 또는 `::1`)에 바인딩됩니다. DXP의 `cluster.link.autodetect.address` 포털 속성이 연결 가능한 서버를 가리키는 한 DXP는 해당 서버를 사용하여 호스트의 실제 주소를 자동으로 감지합니다. 기본 설정은 다음과 같습니다.
 
@@ -91,7 +91,7 @@ GMS: address=oz-52865, cluster=liferay-channel-control, physical address=192.168
 
 ## 다음
 
-로드 상태에서 DXP 클러스터를 테스트하고 시스템 최적화를 조사하는 것이 가장 좋습니다. 사이트에서 가장 많이 사용되는 엔티티를 고려하고 캐시 설정을 적절하게 조정하십시오. 캐시 구성에 대한 자세한 내용은 [캐시 구성](https://help.liferay.com/hc/en-us/articles/360035581451-Introduction-to-Cache-Configuration)을 참조하십시오.
+로드 상태에서 DXP 클러스터를 테스트하고 시스템 최적화를 조사하는 것이 가장 좋습니다. 사이트에서 가장 많이 사용되는 엔티티를 고려하고 캐시 설정을 적절하게 조정하십시오. 캐시 구성에 대한 자세한 내용은 [캐시 구성](https://help.liferay.com/hc/ko/articles/360035581451-Introduction-to-Cache-Configuration) 을 참조하십시오.
 
 ## 추가 정보
 

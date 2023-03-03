@@ -8,7 +8,7 @@ Liferay 설치를 처음 설정하는 경우 [초기 인스턴스 현지화](../
 
 사이트의 기본 언어를 설정할 수 있습니다. 사이트의 활성화된 언어를 정의할 수도 있습니다.
 
-1. [사이트 설정 UI](./site-settings-ui-reference.md#language)에서 언어 탭을 클릭합니다.
+1. [사이트 설정 UI](./site-settings-ui-reference.md#language) 에서 언어 탭을 클릭합니다.
 
    ![사이트 설정에서 언어 탭을 클릭합니다.](./site-localization/images/01.png)
 

@@ -50,7 +50,7 @@ Liferay DXP에서 작업을 수행하려면 [사용자](./../users/understanding
 
 ### 일정한 역할
 
-인스턴스 범위 역할을 일반 역할이라고 합니다. 이러한 역할은 전역적으로 또는 [가상 인스턴스](./../../system-administration/configuring-liferay/virtual-instances.html)전체에 권한을 부여합니다.
+인스턴스 범위 역할을 일반 역할이라고 합니다. 이러한 역할은 전역적으로 또는 [가상 인스턴스](./../../system-administration/configuring-liferay/virtual-instances.html) 전체에 권한을 부여합니다.
 
 일반 역할에 여러 사용자 컬렉션을 할당할 수 있습니다.
 

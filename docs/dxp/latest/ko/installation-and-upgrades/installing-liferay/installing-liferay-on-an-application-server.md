@@ -20,11 +20,11 @@ installing-liferay-on-an-application-server/installing-on-websphere.md
 installing-liferay-on-an-application-server/setting-up-jndi-on-tomcat.md
 ```
 
-지원되는 모든 [애플리케이션 서버](https://help.liferay.com/hc/en-us/articles/360049238151)에 Liferay DXP 또는 Liferay Portal을 설치할 수 있습니다. 이것은 일반적으로 DevOps 및 고가용성 환경에서 사용하기에 가장 실용적인 설치 유형입니다.
+지원되는 모든 [애플리케이션 서버](https://help.liferay.com/hc/ko/articles/360049238151) 에 Liferay DXP 또는 Liferay Portal을 설치할 수 있습니다. 이것은 일반적으로 DevOps 및 고가용성 환경에서 사용하기에 가장 실용적인 설치 유형입니다.
 
 시작하려면
 
-1. [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)에서 지원되는 애플리케이션 서버를 선택하십시오.
+1. [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 에서 지원되는 애플리케이션 서버를 선택하십시오.
 1. 응용 프로그램 서버 중 하나인 DXP/Portal 설치 지침을 따르십시오.
 
     * [수코양이](./installing-liferay-on-an-application-server/installing-on-tomcat.md)

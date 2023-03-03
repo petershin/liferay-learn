@@ -8,11 +8,11 @@
 
 기본적으로 이미지 자동 태그 지정은 기본적으로 비활성화되어 있습니다. DXP에서 자동 태그 지정을 활성화하는 것 외에도 이미지 태그 지정 공급자도 구성해야 합니다. 세 가지 공급자를 사용할 수 있습니다.
 
-* [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) 기계 학습 기능을 제공하는 오픈 소스 라이브러리입니다. DXP의 TensorFlow 이미지 자동 태그 지정은 [Java용 TensorFlow의 `LabelImage` 샘플](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/)을 기반으로 합니다. examples/LabelImage.java), Inception5h 모델을 사용합니다. 정확도가 제한되어 있으므로 주의하여 사용하십시오.
+* [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) 기계 학습 기능을 제공하는 오픈 소스 라이브러리입니다. DXP의 TensorFlow 이미지 자동 태그 지정은 [Java용 TensorFlow의 `LabelImage` 샘플](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/) 을 기반으로 합니다. examples/LabelImage.java), Inception5h 모델을 사용합니다. 정확도가 제한되어 있으므로 주의하여 사용하십시오.
   
   * [**Google Cloud Vision:**](#configuring-google-cloud-vision) [Google Cloud Vision API](https://cloud.google.com/vision/) 를 사용하여 자동으로 이미지에 태그를 지정합니다.
 
-* [**Microsoft Cognitive Services:**](#configuring-microsoft-cognitive-services)는 [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/)를 사용하여 자동으로 이미지에 태그를 지정합니다.
+* [**Microsoft Cognitive Services:**](#configuring-microsoft-cognitive-services) 는 [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) 를 사용하여 자동으로 이미지에 태그를 지정합니다.
 
 ![이 이미지에는 화차와 전기기관차 태그가 자동으로 적용되었습니다.](./auto-tagging-images/images/01.png)
 
@@ -65,7 +65,7 @@ TensorFlow 공급자가 구성되었습니다.
 1. _시스템 설정_을 클릭하십시오.
 1. _자산_을 클릭합니다.
 1. _가상 인스턴스 범위_아래에서 _Google Cloud Vision 이미지 자동 태그 지정_을 클릭합니다.
-1. Google Cloud Vision API 키를 입력합니다. 자세한 내용은 [API 키에 대한 Google 문서](https://cloud.google.com/docs/authentication/api-keys)을 참조하십시오.
+1. Google Cloud Vision API 키를 입력합니다. 자세한 내용은 [API 키에 대한 Google 문서](https://cloud.google.com/docs/authentication/api-keys) 을 참조하십시오.
 1. _Enabled_ 체크박스를 선택하여 Google Cloud Vision을 활성화합니다.
    
    ![Google Cloud Vision 제공업체에는 API 키가 필요합니다.](./auto-tagging-images/images/06.png)
@@ -89,9 +89,9 @@ TensorFlow 공급자가 구성되었습니다.
 
 **API 키:** 귀하의 [API 키](https://azure.microsoft.com/en-us/try/cognitive-services/my-apis/?apiSlug=computer-services) Computer Vision API V2.
 
-**API 엔드포인트:** [Computer Vision API V2](https://westcentralus.api.cognitive.microsoft.com/vision/v2.0)의 엔드포인트입니다.
+**API 엔드포인트:** [Computer Vision API V2](https://westcentralus.api.cognitive.microsoft.com/vision/v2.0) 의 엔드포인트입니다.
 
-Microsoft Cognitive Services 공급자가 구성되었습니다. 자세한 내용은 [Microsoft Cognitive Services 설명서](https://docs.microsoft.com/en-us/azure/cognitive-services/)을 참조하십시오.
+Microsoft Cognitive Services 공급자가 구성되었습니다. 자세한 내용은 [Microsoft Cognitive Services 설명서](https://docs.microsoft.com/en-us/azure/cognitive-services/) 을 참조하십시오.
 
 둘 이상의 가상 인스턴스가 있는 경우 각 인스턴스를 개별적으로 구성할 수 있습니다. _제어판_ &rarr; _인스턴스 설정_으로 이동합니다. _자산_ 을 클릭한 다음 여기에서 공급자를 구성합니다.
 

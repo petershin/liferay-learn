@@ -2,13 +2,13 @@
 
 사이트에서 컬렉션을 보는 사용자의 경험을 개선하기 위해 페이지 조각을 추가하여 해당 컬렉션의 콘텐츠를 필터링할 수 있습니다. 예를 들어 키워드를 사용하여 표시된 컬렉션 콘텐츠를 검색하고 필터링하는 데 사용할 수 있는 조각을 추가할 수 있습니다.
 
-사용자가 표시된 컬렉션의 콘텐츠를 필터링하는 데 도움이 되도록 페이지에 추가할 수 있는 두 개의 페이지 조각( [컬렉션 필터 조각](#using-the-collection-filter-fragment) 및 [적용된 필터 조각](#using-the-applied-filters-fragment))이 있습니다.
+사용자가 표시된 컬렉션의 콘텐츠를 필터링하는 데 도움이 되도록 페이지에 추가할 수 있는 두 개의 페이지 조각( [컬렉션 필터 조각](#using-the-collection-filter-fragment) 및 [적용된 필터 조각](#using-the-applied-filters-fragment) )이 있습니다.
 
 ## 컬렉션 필터 조각 사용
 
 컬렉션 필터 조각은 페이지에서 선택한 컬렉션에 표시되는 콘텐츠를 필터링하는 데 사용됩니다. 사용자는 키워드를 검색하거나 범주를 선택하여 필터 조각과 연결된 컬렉션을 필터링할 수 있습니다.
 
-다음 단계에 따라 페이지에 컬렉션 필터 조각을 추가하고 구성합니다(이미 [컬렉션 표시 조각](./displaying-collections.md#configuring-a-collection-display-fragment)에 컬렉션을 표시하고 있음).
+다음 단계에 따라 페이지에 컬렉션 필터 조각을 추가하고 구성합니다(이미 [컬렉션 표시 조각](./displaying-collections.md#configuring-a-collection-display-fragment) 에 컬렉션을 표시하고 있음).
 
 1. 페이지를 편집하는 동안 페이지의 아무 곳에나 Collection Filter Fragment를 추가하십시오.
 
@@ -21,7 +21,7 @@
 1. Filter 메뉴를 사용하여 Fragment에 대한 필터 유형( *Keywords* 또는 *Category*)을 선택합니다.
 
     ```{note}
-    사용자 지정 컬렉션 필터를 추가하여 모듈이 배포된 경우([`FragmentCollectionFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-collection-filter- api/src/main/java/com/liferay/fragment/collection/filter/FragmentCollectionFilter.java) 및 [`InfoFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps /info/info-api/src/main/java/com/liferay/info/filter/InfoFilter.java) 인터페이스) 목록에서 이러한 필터를 선택할 수도 있습니다.
+    사용자 지정 컬렉션 필터를 추가하여 모듈이 배포된 경우( [`FragmentCollectionFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-collection-filter- api/src/main/java/com/liferay/fragment/collection/filter/FragmentCollectionFilter.java) 및 [`InfoFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps /info/info-api/src/main/java/com/liferay/info/filter/InfoFilter.java) 인터페이스) 목록에서 이러한 필터를 선택할 수도 있습니다.
     ```
 
     *키워드* 필터 유형을 선택하면 사용자는 컬렉션을 필터링할 키워드를 검색할 수 있습니다. *카테고리* 필터 유형을 선택하면 *소스* 입력 필드가 나타나 사용자가 선택할 수 있는 카테고리 선택을 구성합니다.
@@ -46,13 +46,13 @@
 
 ## 적용된 필터 조각 사용
 
-Applied Filters Fragment는 [Collection Filter Fragment](#using-the-collection-filter-fragment)에 적용된 필터 목록을 보는 데 사용됩니다.
+Applied Filters Fragment는 [Collection Filter Fragment](#using-the-collection-filter-fragment) 에 적용된 필터 목록을 보는 데 사용됩니다.
 
 다음 단계에 따라 적용된 필터 조각을 페이지(이미 구성된 컬렉션 필터 조각이 있음)에 추가합니다.
 
 1. 페이지를 편집하는 동안 페이지의 아무 곳에나 Applied Filter Fragment를 추가합니다.
 
-1. Applied Filter Fragment의 *General* 구성에서 원하는 Collection을 선택합니다. 동일한 컬렉션이 페이지에 표시되고 [컬렉션 필터 단편](#using-the-collection-filter-fragment)로 구성되어야 합니다.
+1. Applied Filter Fragment의 *General* 구성에서 원하는 Collection을 선택합니다. 동일한 컬렉션이 페이지에 표시되고 [컬렉션 필터 단편](#using-the-collection-filter-fragment) 로 구성되어야 합니다.
 
 1. 페이지를 게시합니다.
 

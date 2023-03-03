@@ -45,7 +45,7 @@ Semantic Versioning을 사용하여 프로젝트의 아티팩트 및 종속성 �
 
 여러 DXP 버전용으로 프로젝트를 빌드하고 최대 호환성을 유지하려는 경우 버전 범위를 추적해야 합니다. 즉, 앱에 대해 여러 패키지 버전이 작동하는 경우 그 중 하나를 사용하도록 앱을 구성할 수 있습니다. 또한 Bnd는 모듈이 종속된 각 패키지의 의미상 호환 가능한 범위를 자동으로 결정하고 모듈의 매니페스트에 범위를 기록합니다.
 
-버전 범위 구문에 대한 도움말은 [OSGi 사양](https://osgi.org/specification/osgi.core/7.0.0/framework.module.html#i3189032)을 참조하십시오.
+버전 범위 구문에 대한 도움말은 [OSGi 사양](https://osgi.org/specification/osgi.core/7.0.0/framework.module.html#i3189032) 을 참조하십시오.
 
 OSGi 번들의 `bnd.bnd` 에서 가져온 패키지의 버전 범위는 다음과 같습니다.
 

@@ -33,7 +33,7 @@ SEO 문제:
 - 누락된 `img-alt` 속성
 - 누락된 `입력-대체` 속성
 
-페이지 감사를 실행한 후 문제를 해결하기 위해 실행 가능한 정보와 함께 각 문제에 대한 설명을 검토할 수 있습니다. 이러한 각 요소에 대한 자세한 내용은 [Google Lighthouse 설명서](https://web.dev/learn/#lighthouse)을 참조하십시오.
+페이지 감사를 실행한 후 문제를 해결하기 위해 실행 가능한 정보와 함께 각 문제에 대한 설명을 검토할 수 있습니다. 이러한 각 요소에 대한 자세한 내용은 [Google Lighthouse 설명서](https://web.dev/learn/#lighthouse) 을 참조하십시오.
 
 ## 페이지 감사 도구 구성
 
@@ -88,7 +88,7 @@ SEO 문제:
    ![새 페이지 감사를 시작하려면 페이지 감사 버튼을 클릭하십시오.](./analyze-seo-and-accessibility-on-pages/images/05.png)
 
    ```{note}
-   페이지 감사를 아직 구성하지 않은 경우 페이지 감사 패널에 구성을 완료하라는 메시지가 표시됩니다. 이 경우 *구성*을 클릭하고 [구성을 완료](#configuring-the-page-audit-tool)합니다.
+   페이지 감사를 아직 구성하지 않은 경우 페이지 감사 패널에 구성을 완료하라는 메시지가 표시됩니다. 이 경우 *구성*을 클릭하고 [구성을 완료](#configuring-the-page-audit-tool) 합니다.
    ```
 
 1. 페이지 감사 패널에 페이지 감사 시작 버튼이 표시됩니다.
@@ -123,7 +123,7 @@ SEO 문제:
 
 ## 페이지 감사 패널 오류 문제 해결
 
-페이지를 감사할 때 오류를 방지하려면 [유효한 Google PageSpeed Insights API 키를 구성](#configuring-the-page-audit-tool)하고 감사하려는 페이지에 인터넷에서 액세스할 수 있는지 확인하세요.
+페이지를 감사할 때 오류를 방지하려면 [유효한 Google PageSpeed Insights API 키를 구성](#configuring-the-page-audit-tool) 하고 감사하려는 페이지에 인터넷에서 액세스할 수 있는지 확인하세요.
 
 ### 일반적인 오류
 

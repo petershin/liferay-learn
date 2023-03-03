@@ -72,7 +72,7 @@
 
 1. 포틀릿의 `render` 메소드로 스크롤하십시오.
 
-1. 항목 선택기에 표시할 원하는 엔터티를 나타내는 기준 클래스가 생성됩니다. 기준 클래스는 [`ItemSelectorCriterion` 인터페이스](http://docs.liferay.com/portal/7.3-latest/apps/item-selector-3.0.4/javadocs/com/liferay/item/selector/ItemSelectorCriterion.html)을 구현해야 합니다.
+1. 항목 선택기에 표시할 원하는 엔터티를 나타내는 기준 클래스가 생성됩니다. 기준 클래스는 [`ItemSelectorCriterion` 인터페이스](http://docs.liferay.com/portal/7.3-latest/apps/item-selector-3.0.4/javadocs/com/liferay/item/selector/ItemSelectorCriterion.html) 을 구현해야 합니다.
 
    이 예에서는 역할이 선택기에 표시되도록 [`RoleItemSelectorCriterion`](http://docs.liferay.com/portal/7.3-latest/apps/roles-3.0.4/javadocs/com/liferay/roles/item/selector/RoleItemSelectorCriterion.html) 에 대한 참조를 사용합니다. 클래스의 새 인스턴스를 생성하여 정의됩니다.
 
@@ -85,7 +85,7 @@
    필요한 엔터티 유형에 대한 기준이 없으면 [BaseItemSelectorCriterion])을 확장하여 고유한 `ItemSelectorCriterion`을 정의할 수 있습니다.
    ```
 
-1. 다음으로 사용자가 엔터티를 선택할 때 엔터티가 제공한 정보를 나타내는 반환 유형 클래스가 필요합니다. 반환 유형 클래스는 [`ItemSelectorReturnType` 인터페이스](http://docs.liferay.com/portal/7.3-latest/apps/item-selector-3.0.4/javadocs/com/liferay/item/selector/ItemSelectorReturnType.html)을 구현해야 합니다. 예를 들어 반환 유형 클래스를 사용하여 엔터티의 URL, UUID 또는 기본 키를 반환할 수 있습니다. 반환 유형 클래스는 이전에 만든 기준 클래스에 추가됩니다.
+1. 다음으로 사용자가 엔터티를 선택할 때 엔터티가 제공한 정보를 나타내는 반환 유형 클래스가 필요합니다. 반환 유형 클래스는 [`ItemSelectorReturnType` 인터페이스](http://docs.liferay.com/portal/7.3-latest/apps/item-selector-3.0.4/javadocs/com/liferay/item/selector/ItemSelectorReturnType.html) 을 구현해야 합니다. 예를 들어 반환 유형 클래스를 사용하여 엔터티의 URL, UUID 또는 기본 키를 반환할 수 있습니다. 반환 유형 클래스는 이전에 만든 기준 클래스에 추가됩니다.
 
    ```{important}
    사용된 모든 기준에는 **반드시** 적어도 하나의 반환 유형이 연결되어 있어야 합니다.

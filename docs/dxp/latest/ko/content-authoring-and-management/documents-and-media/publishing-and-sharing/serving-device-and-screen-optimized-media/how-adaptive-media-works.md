@@ -5,7 +5,7 @@
 Adaptive Media는 문서 및 미디어, 블로그, 웹 콘텐츠 및 콘텐츠 페이지(Liferay DXP 7.4+부터 시작)와 통합됩니다. 다양한 화면에서 사용할 이미지 세트를 생성합니다. 콘텐츠에 액세스하면 Adaptive Media가 화면 유형과 해상도를 확인하고 적절한 이미지를 선택합니다. Adaptive Media는 DXP에 사전 설치되어 제공됩니다.
 
 ```{note}
-Adaptive Media는 다음 상거래 위젯에 대해 OOTB를 사용할 수 있습니다. [검색 결과](https://learn.liferay.com/commerce/latest/en/creating-store-content/commerce-storefront-pages/search.html), [ 제품 세부 정보, 제품 게시자](https://learn.liferay.com/commerce/latest/en/creating-store-content/commerce-storefront-pages/product-details.html), [미니 카트 위젯](https: //learn.liferay.com/commerce/latest/en/creating-store-content/liferay-commerce-widgets/using-the-mini-cart-widget.html) 및 구성 요소, [Checkout](https://learn.liferay.com/commerce/latest/en/creating-store-content/commerce-storefront-pages/checkout.html).
+Adaptive Media는 다음 상거래 위젯에 대해 OOTB를 사용할 수 있습니다. [수색](https://learn.liferay.com/commerce/latest/ko/creating-store-content/commerce-storefront-pages/search.html) , [제품 상세 내역.](https://learn.liferay.com/commerce/latest/ko/creating-store-content/commerce-storefront-pages/product-details.html) , [미니 카트 위젯](https: //learn.liferay.com/commerce/latest/en/creating-store-content/liferay-commerce-widgets/using-the-mini-cart-widget.html) 및 구성 요소, [점검](https://learn.liferay.com/commerce/latest/ko/creating-store-content/commerce-storefront-pages/checkout.html) .
 ```
 
 여기서는 적응형 미디어에 대해 알아보고 이미지를 처리하도록 준비하는 방법을 알아봅니다. <!--Q: What about other assets? -->

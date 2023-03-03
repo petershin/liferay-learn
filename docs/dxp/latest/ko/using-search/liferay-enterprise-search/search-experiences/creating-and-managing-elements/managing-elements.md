@@ -19,7 +19,7 @@
 ![요소 JSON 파일을 가져옵니다.](./managing-elements/images/02.png)
 
 ```{warning}
-[요소 스키마](./creating-elements.md#understanding-the-element-schema)는 변경될 수 있습니다. Liferay 버전 간에 스키마가 변경되면 이전 요소의 JSON 가져오기가 실패할 수 있습니다.
+[요소 스키마](./creating-elements.md#understanding-the-element-schema) 는 변경될 수 있습니다. Liferay 버전 간에 스키마가 변경되면 이전 요소의 JSON 가져오기가 실패할 수 있습니다.
 ```
 
 ## 추가 정보

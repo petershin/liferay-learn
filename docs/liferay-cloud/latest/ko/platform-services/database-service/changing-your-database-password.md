@@ -86,7 +86,7 @@
 
     업데이트된 암호를 사용하여 데이터베이스 서비스가 시작됩니다. `liferay` 및 `backup` 서비스도 올바른 암호로 데이터베이스 서비스에 다시 연결하기 위해 다시 시작됩니다.
 
-1. [백업을 준비](#creating-a-backup)한 경우 선택한 환경의 백업 페이지로 이동하여 [백업을 복원](../backup-service/restoring-data-from-a-backup .md).
+1. [백업을 준비](#creating-a-backup) 한 경우 선택한 환경의 백업 페이지로 이동하여 [백업을 복원](../backup-service/restoring-data-from-a-backup .md).
    
    이제 `데이터베이스` 서비스가 새 암호로 업데이트되고 다른 서비스가 동기화되어 제대로 연결됩니다.
 

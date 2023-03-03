@@ -6,7 +6,7 @@
 
 > 가용성: Liferay CE 7.3 GA4+, Liferay DXP 7.3 GA1+
 
-Liferay DXP 7.3은 Elasticsearch 7을 즉시 지원합니다. 최소 필수 버전은 7.9입니다. 자세한 지원 정보는 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 을 참조하십시오.
+Liferay DXP 7.3은 Elasticsearch 7을 즉시 지원합니다. 최소 필수 버전은 7.9입니다. 자세한 지원 정보는 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 을 참조하십시오.
 
 ```{important}
 Elasticsearch 6.x는 Liferay CE/DXP 7.3에서 지원되지 않습니다.
@@ -36,7 +36,7 @@ _Liferay Enterprise Search Security_ (이전 _Liferay Connector to X-Pack Securi
 
 > 가용성: Liferay CE 7.3 GA4+, Liferay DXP 7.3 GA1+
 
-[개발](#development)아래의 [사이드카](#a-sidecar-elasticsearch-7-is-bundled) 섹션을 참조하십시오.
+[개발](#development) 아래의 [사이드카](#a-sidecar-elasticsearch-7-is-bundled) 섹션을 참조하십시오.
 
 ## 검색 인프라 & 관리
 
@@ -90,9 +90,9 @@ DXP 7.2 SP2 이하에서 7.3으로 업그레이드하면 새 DXP 인덱스가 �
 
 > 가용성: Liferay DXP 7.3 GA1+와 함께 제공, [유사한 결과](https://web.liferay.com/marketplace/-/mp/application/172465398) Marketplace 앱을 통해 Liferay DXP 7.2 SP2+에 설치 가능
 
-유사한 결과 위젯은 페이지의 기본 자산과 유사한 자산 모음을 표시합니다. 위젯은 URL을 사용하여 기본 자산 표시를 결정하고 Elasticsearch의 [이 쿼리와 비슷함](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html)을 활용합니다. 추가 자산을 찾을 수 있습니다. 기본 자산은 표시 위젯(예: 블로그 위젯) 또는 자산 게시자를 사용하여 표시할 수 있습니다.
+유사한 결과 위젯은 페이지의 기본 자산과 유사한 자산 모음을 표시합니다. 위젯은 URL을 사용하여 기본 자산 표시를 결정하고 Elasticsearch의 [이 쿼리와 비슷함](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html) 을 활용합니다. 추가 자산을 찾을 수 있습니다. 기본 자산은 표시 위젯(예: 블로그 위젯) 또는 자산 게시자를 사용하여 표시할 수 있습니다.
 
-유사한 결과의 첫 번째 버전은 블로그, 게시판, 문서 및 위키를 지원합니다. 추가 자산 유형(네이티브 및 사용자 지정 자산 모두)에 대한 지원은 [확장점](../developer-guide/writing-a-similar-results-contributor.md)을 구현하여 가능합니다. 문서 유사성을 결정하는 데 사용되는 논리는 Elasticsearch의 More Like This [쿼리 매개변수](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html)에 따라 구성할 수 있습니다. 
+유사한 결과의 첫 번째 버전은 블로그, 게시판, 문서 및 위키를 지원합니다. 추가 자산 유형(네이티브 및 사용자 지정 자산 모두)에 대한 지원은 [확장점](../developer-guide/writing-a-similar-results-contributor.md)을 구현하여 가능합니다. 문서 유사성을 결정하는 데 사용되는 논리는 Elasticsearch의 More Like This [쿼리 매개변수](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html) 에 따라 구성할 수 있습니다. 
 
 자세한 내용은 [유사한 결과](../search-pages-and-widgets/similar-results.md) 을 참조하십시오.
 
@@ -114,11 +114,11 @@ DXP 7.2 SP2 이하에서 7.3으로 업그레이드하면 새 DXP 인덱스가 �
 
 > 가용성: 라이프레이 DXP 7.2 SP1+, 라이프레이 DXP 7.3 GA1+
 
-동의어는 검색 시 동의어 쿼리에 동등한 가중치를 부여하여 비슷한 의미의 쿼리를 연결합니다. 예를 들어 "휴대 전화", "휴대 전화" 및 "손 전화"라는 검색어는 동일한 의미를 가지며 상호 교환하여 사용할 수 있습니다. 이 세 가지 쿼리로 동의어 집합을 정의하면 "휴대 전화" 또는 "손 전화"라는 단어가 포함된 "휴대 전화" 문서를 검색하는 사용자가 표시됩니다. [Elastic의 동의어 문서](https://www.elastic.co/guide/en/elasticsearch/guide/current/synonyms.html)를 참조하세요.
+동의어는 검색 시 동의어 쿼리에 동등한 가중치를 부여하여 비슷한 의미의 쿼리를 연결합니다. 예를 들어 "휴대 전화", "휴대 전화" 및 "손 전화"라는 검색어는 동일한 의미를 가지며 상호 교환하여 사용할 수 있습니다. 이 세 가지 쿼리로 동의어 집합을 정의하면 "휴대 전화" 또는 "손 전화"라는 단어가 포함된 "휴대 전화" 문서를 검색하는 사용자가 표시됩니다. [Elastic의 동의어 문서](https://www.elastic.co/guide/en/elasticsearch/guide/current/synonyms.html) 를 참조하세요.
 
 ## Liferay 엔터프라이즈 검색(LES)
 
-> **[LES 가입자](https://www.liferay.com/products/dxp/enterprise-search)**
+> ** [LES 가입자](https://www.liferay.com/products/dxp/enterprise-search) **
 
 ### 클러스터 간 복제(LES)
 
@@ -156,7 +156,7 @@ Liferay CE/DXP 7.3 릴리스에 명시적으로 연결되어 있지는 않지만
 
 > 가용성: Liferay CE 7.3 GA6+, Liferay DXP 7.3 GA1+
 
-Elasticsearch 버전에 구애받지 않는 `IndexSettingsContributor` 이 추가되었습니다(여기에[src 코드)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/IndexSettingsContributor.java):
+Elasticsearch 버전에 구애받지 않는 `IndexSettingsContributor` 이 추가되었습니다(여기에 [src 코드)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/IndexSettingsContributor.java) :
 
 * `com.liferay.portal.search.spi.settings.IndexSettingsContributor`
 * `com.liferay.portal.search.spi.settings.IndexSettingsHelper.java`
@@ -172,7 +172,7 @@ Elasticsearch의 호환 버전은 Liferay CE/DXP 7.3+ Tomcat 번들과 함께 �
 
 ## DXP 7.3으로 업그레이드
 
-이전 DXP 버전에서 7.3으로 업그레이드하려면 [REST 클라이언트](#the-elasticsearch-7-connector-is-based-on-the-rest-client)로 전환하기 때문에 몇 가지 특별한 단계가 필요합니다. 업그레이드 과정에 도움이 되는 중요한 정보는 [업그레이드 설명서](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md) 을 참조하십시오.
+이전 DXP 버전에서 7.3으로 업그레이드하려면 [REST 클라이언트](#the-elasticsearch-7-connector-is-based-on-the-rest-client) 로 전환하기 때문에 몇 가지 특별한 단계가 필요합니다. 업그레이드 과정에 도움이 되는 중요한 정보는 [업그레이드 설명서](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md) 을 참조하십시오.
 
 ## 관련 항목
 

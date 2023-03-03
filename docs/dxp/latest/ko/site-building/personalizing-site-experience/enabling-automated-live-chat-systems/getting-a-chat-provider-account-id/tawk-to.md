@@ -4,7 +4,7 @@
 
 ## Tawk.to 계정 ID 찾기
 
-1. [Tawk.to 계정](https://dashboard.tawk.to/login)에 로그인합니다.
+1. [Tawk.to 계정](https://dashboard.tawk.to/login) 에 로그인합니다.
 
 1. *관리* 버튼을 클릭합니다.
 

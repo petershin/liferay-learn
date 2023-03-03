@@ -1,10 +1,10 @@
 # 페이지 세트 구성
 
 ```{important}
-Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가 비활성화됩니다. 그러나 원하는 경우 활성화할 수 있습니다. 자세한 내용은 [비공개 페이지 활성화](../understanding-pages/understanding-pages.md#enabling-private-pages)를 참조하세요.
+Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가 비활성화됩니다. 그러나 원하는 경우 활성화할 수 있습니다. 자세한 내용은 [비공개 페이지 활성화](../understanding-pages/understanding-pages.md#enabling-private-pages) 를 참조하세요.
 ```
 
-비공개 페이지가 활성화되면 사이트 페이지는 공개 및 비공개 [페이지 세트](../understanding-pages/understanding-pages.md#page-sets)로 나뉩니다. 이러한 세트는 페이지를 그룹화하므로 각 유형의 페이지에 대량 구성을 적용할 수 있습니다. 페이지 집합에 대해 구성된 설정은 그룹화된 모든 페이지에 적용되며 사이트 수준에서 구성을 재정의합니다. 페이지 집합 구성은 개별 페이지에 대한 [사용자 정의](./configuring-individual-pages.md)로 재정의됩니다.
+비공개 페이지가 활성화되면 사이트 페이지는 공개 및 비공개 [페이지 세트](../understanding-pages/understanding-pages.md#page-sets) 로 나뉩니다. 이러한 세트는 페이지를 그룹화하므로 각 유형의 페이지에 대량 구성을 적용할 수 있습니다. 페이지 집합에 대해 구성된 설정은 그룹화된 모든 페이지에 적용되며 사이트 수준에서 구성을 재정의합니다. 페이지 집합 구성은 개별 페이지에 대한 [사용자 정의](./configuring-individual-pages.md)로 재정의됩니다.
 
 Liferay 시스템에 대해 개인 페이지가 비활성화된 경우 다음 단계에 따라 페이지에 대한 대량 구성 옵션에 액세스하십시오.
 
@@ -42,7 +42,7 @@ _디자인_ 탭에서 페이지 세트의 테마 및 로고 설정을 사용자 
 
 1. _저장_ 을 클릭하여 새 테마를 페이지 세트에 적용합니다.
 
-테마를 수정하기 위해 _CSS_ 섹션에 맞춤 CSS를 입력할 수 있습니다. 전체 사이트(여기에 설명됨) 또는 개별 페이지( [페이지 구성](./configuring-individual-pages.md#look-and-feel)에 설명됨)에 테마를 적용할 수 있습니다.
+테마를 수정하기 위해 _CSS_ 섹션에 맞춤 CSS를 입력할 수 있습니다. 전체 사이트(여기에 설명됨) 또는 개별 페이지( [페이지 구성](./configuring-individual-pages.md#look-and-feel) 에 설명됨)에 테마를 적용할 수 있습니다.
 
 ### 로고
 

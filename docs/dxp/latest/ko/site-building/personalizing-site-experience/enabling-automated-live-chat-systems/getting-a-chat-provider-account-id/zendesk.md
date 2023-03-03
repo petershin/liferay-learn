@@ -4,7 +4,7 @@
 
 ## Zendesk 계정 ID 찾기
 
-1. [Zendesk 계정](https://www.zendesk.com/login/#login)에 로그인합니다.
+1. [Zendesk 계정](https://www.zendesk.com/login/#login) 에 로그인합니다.
 
 1. 대시보드 홈 페이지에서 *위젯* 관리 링크를 클릭합니다.
 

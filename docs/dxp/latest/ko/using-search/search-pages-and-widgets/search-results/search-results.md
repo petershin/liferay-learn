@@ -30,7 +30,7 @@ uuid: 38a0b5f5-1a85-4c13-9592-14891fd631cf
 
 ## 검색 결과 관련성
 
-검색 엔진은 *관련성*에 따라 결과를 처리하고 정렬합니다. 관련성은 검색 엔진에서 계산한 점수입니다. 점수는 [검색 엔진에서 제공하는 알고리즘](https://www.elastic.co/guide/en/elasticsearch/guide/master/relevance-intro.html#relevance-intro)으로 계산됩니다.
+검색 엔진은 *관련성*에 따라 결과를 처리하고 정렬합니다. 관련성은 검색 엔진에서 계산한 점수입니다. 점수는 [검색 엔진에서 제공하는 알고리즘](https://www.elastic.co/guide/en/elasticsearch/guide/master/relevance-intro.html#relevance-intro) 으로 계산됩니다.
 
 결과 관련성을 구성할 수 있습니다.
 

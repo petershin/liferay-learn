@@ -38,10 +38,10 @@
 
 일단 저장되면 관계를 사용하여 항목을 연관시킬 수 있습니다.
 
-관계를 편집하여 [삭제 유형](#configuring-deletion-type) 을 구성하거나 [필수](#making-relationship-fields-mandatory)으로 만들 수 있습니다.
+관계를 편집하여 [삭제 유형](#configuring-deletion-type) 을 구성하거나 [필수](#making-relationship-fields-mandatory) 으로 만들 수 있습니다.
 
 ```{important}
-관계 필드는 개체의 기본 레이아웃에 자동으로 나타납니다. 관계 테이블을 표시하려면 [관계 탭](../layouts/designing-object-layouts.md#adding-relationships-tabs)이 있는 사용자 정의 레이아웃이 필요합니다. 이 탭에는 현재 항목과 관련된 모든 항목이 나열됩니다. System Object는 사용자 정의 레이아웃을 지원하지 않으므로 관계 필드 또는 테이블을 표시할 수 없습니다. REST API를 통해서만 관계 필드에 액세스할 수 있습니다. 자세한 내용은 [개체 레이아웃 디자인하기](../layouts/designing-object-layouts.md)를 참조하십시오.
+관계 필드는 개체의 기본 레이아웃에 자동으로 나타납니다. 관계 테이블을 표시하려면 [관계 탭](../layouts/designing-object-layouts.md#adding-relationships-tabs) 이 있는 사용자 정의 레이아웃이 필요합니다. 이 탭에는 현재 항목과 관련된 모든 항목이 나열됩니다. System Object는 사용자 정의 레이아웃을 지원하지 않으므로 관계 필드 또는 테이블을 표시할 수 없습니다. REST API를 통해서만 관계 필드에 액세스할 수 있습니다. 자세한 내용은 [개체 레이아웃 디자인하기](../layouts/designing-object-layouts.md)를 참조하십시오.
 ```
 
 ## 삭제 유형 구성

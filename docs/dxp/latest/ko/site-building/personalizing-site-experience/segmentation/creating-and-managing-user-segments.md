@@ -49,7 +49,7 @@
 
    ![조건을 추가하고 결합하여 세그먼트 기준을 정의합니다.](./creating-and-managing-user-segments/images/06.png)
 
-[세션 속성](./segments-editor-ui-reference.md#session-properties)의 경우 [세션 속성 어휘](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)을 사용하여 미리 정의된 값 목록을 구성할 수 있습니다. 이 옵션은 세그먼트 정의 작업을 용이하게 하고 수동 입력 오류를 제거합니다.
+[세션 속성](./segments-editor-ui-reference.md#session-properties) 의 경우 [세션 속성 어휘](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)을 사용하여 미리 정의된 값 목록을 구성할 수 있습니다. 이 옵션은 세그먼트 정의 작업을 용이하게 하고 수동 입력 오류를 제거합니다.
 
 ```{note}
 Liferay DXP 7.4 U42+/GA42+부터 지리적 사이트별로 세그먼트를 생성할 수 있습니다. 자세한 내용은 [Geolocation별 세분화](./segmentation-by-geolocation.md)를 참조하세요.

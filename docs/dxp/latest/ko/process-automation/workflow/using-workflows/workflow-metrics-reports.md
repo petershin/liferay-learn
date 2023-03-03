@@ -10,7 +10,7 @@
 
 워크플로우 프로세스 중 하나를 클릭하여 보다 자세한 보고서에 액세스하십시오.
 
-보고서 UI에는 _대시보드_ 및 _성능_탭으로 표시되는 두 개의 기본 보기가 있습니다. 두 화면의 상단에는 SLA 메트릭이 마지막으로 다시 계산된 자세한 날짜 및 시간과 같은 중요한 정보가 표시됩니다. 메트릭 재계산의 구성 가능성에 대해 알아보려면 [SLA 작업 간격 구성](using-workflow-metrics.md#configuring-the-sla-job-interval)을 참조하십시오.
+보고서 UI에는 _대시보드_ 및 _성능_탭으로 표시되는 두 개의 기본 보기가 있습니다. 두 화면의 상단에는 SLA 메트릭이 마지막으로 다시 계산된 자세한 날짜 및 시간과 같은 중요한 정보가 표시됩니다. 메트릭 재계산의 구성 가능성에 대해 알아보려면 [SLA 작업 간격 구성](using-workflow-metrics.md#configuring-the-sla-job-interval) 을 참조하십시오.
 
 ![마지막으로 SLA 메트릭이 재계산된 시간이 눈에 띄게 표시됩니다.](./workflow-metrics-reports/images/13.png)
 

@@ -25,7 +25,7 @@ uuid: 5063468f-80eb-433a-b78c-86e154032f63
 
 1. 새 설치의 `[Liferay Home]/data` 폴더를 백업의 `[Liferay Home]/data` 폴더로 교체합니다.
 
-1. [파일 저장소(문서 라이브러리)](../../system-administration/file-storage.md) 를 백업에서 [새 설치로 복사하거나 [`.config` 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)](../maintaining-a-liferay-installation/backing-up.md) 통해 사용하도록 새 설치를 구성하여 설정합니다.
+1. [파일 저장소(문서 라이브러리)](../../system-administration/file-storage.md) 를 백업에서 [새 설치로 복사하거나 [`.config` 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) ](../maintaining-a-liferay-installation/backing-up.md) 통해 사용하도록 새 설치를 구성하여 설정합니다.
 
 ## 데이터베이스 업그레이드를 위한 설정 업데이트
 
@@ -34,7 +34,7 @@ DXP 및 일부 Marketplace 앱의 업그레이드 프로세스는 포털 속성 
 다음은 DXP 업그레이드 프로세스에 필요한 설정 업데이트입니다.
 
 * [데이터베이스 드라이버](#database-drivers)
-* 문서 라이브러리 저장소 구현 이름( [파일 저장소 업데이트](./reference/file-store-updates.md#updating-the-store-implementation-class-name)참조)
+* 문서 라이브러리 저장소 구현 이름( [파일 저장소 업데이트](./reference/file-store-updates.md#updating-the-store-implementation-class-name) 참조)
 
 ```{important}
 필요한 설정 업데이트에 대한 Marketplace 앱 및 사용자 정의 코드를 확인하십시오.
@@ -129,7 +129,7 @@ rootDir="{document_library_path}"
 
 1. 파일 저장소 설정 업데이트는 [파일 저장소 업데이트](./reference/file-store-updates.md)에서 설명합니다.
 
-1. Liferay Portal 6.1 또는 이전 버전을 사용 중인 경우 [Liferay Portal 6.2에서 도입한 새로운 기본값으로 속성을 조정하십시오](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay#review-the-liferay-62-properties-defaults).
+1. Liferay Portal 6.1 또는 이전 버전을 사용 중인 경우 [Liferay Portal 6.2에서 도입한 새로운 기본값으로 속성을 조정하십시오](https://help.liferay.com/hc/ko/articles/360017903232-Upgrading-Liferay#review-the-liferay-62-properties-defaults) .
 
 1. 샤딩된 환경이 있는 경우 [비샤딩 환경을 생성하도록 업그레이드를 구성합니다](./other-upgrade-scenarios/upgrading-a-sharded-environment.md).
 

@@ -43,7 +43,7 @@ Liferay DXP/Portal 버전 7.0-7.3에서는 브라우저에 따라 대시(`-`) �
 물결표가 기본 구분 기호이지만 문자, 대시 및 밑줄은 계속 지원됩니다.
 ```
 
-다음 인스턴스에는 고유한 *하위 이름* ( *default*이외의 것)이 포함됩니다. 이 인스턴스를 사용해야 하는 경우를 설명하는 이름을 사용하는 것이 좋습니다. [Adding a New Organization Type](../../../users-and-permissions/organizations/adding-a-new-organization-type.md)의 예에 따라 이름이 지정된 구성 파일을 사용하여 _League_ 유형을 추가할 수 있습니다. 
+다음 인스턴스에는 고유한 *하위 이름* ( *default*이외의 것)이 포함됩니다. 이 인스턴스를 사용해야 하는 경우를 설명하는 이름을 사용하는 것이 좋습니다. [새 조직 유형 추가](../../../users-and-permissions/organizations/adding-a-new-organization-type.md) 의 예에 따라 이름이 지정된 구성 파일을 사용하여 _League_ 유형을 추가할 수 있습니다. 
 
 ```bash
 com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration~league.config
@@ -62,7 +62,7 @@ com.liferay.user.associated.data.web.internal.configuration.AnonymousUserConfigu
 별도의 시스템에 배포하기 위해 구성 파일을 내보내는 경우 내보낸 파일 이름의 첫 번째 `~` 뒤에 있는 일부 이름을 변경하여 더 설명적인 하위 이름을 사용할 수 있습니다. 주의: 파일의 이름을 바꾸고 파일을 내보낸 동일한 시스템에 배포하면 새 하위 이름이 파일을 완전히 새로운 구성으로 표시합니다. 이 경우 이름이 변경된 것이 아니라 추가 구성 인스턴스가 생성됩니다.
 
 ```{warning}
-공장 구성을 지원하는 구성 항목의 경우 `.config` 파일 이름에서 하위 이름을 생략하면 시스템 설정에서 이 `.config` 파일이 대상으로 하는 구성 항목에 대한 새 항목 추가를 허용하지 않습니다. 이는 알려진 버그로 인해 발생합니다. 자세한 내용은 [LPS-76352](https://issues.liferay.com/browse/LPS-76352)을 참조하십시오. 부적절하게 명명된 구성 파일이 배포되면 해당 시스템 설정 항목에서 해당 구성에 대한 항목을 추가할 수 없습니다.
+공장 구성을 지원하는 구성 항목의 경우 `.config` 파일 이름에서 하위 이름을 생략하면 시스템 설정에서 이 `.config` 파일이 대상으로 하는 구성 항목에 대한 새 항목 추가를 허용하지 않습니다. 이는 알려진 버그로 인해 발생합니다. 자세한 내용은 [LPS-76352](https://issues.liferay.com/browse/LPS-76352) 을 참조하십시오. 부적절하게 명명된 구성 파일이 배포되면 해당 시스템 설정 항목에서 해당 구성에 대한 항목을 추가할 수 없습니다.
 
 잘못된(하위 이름이 없는) `.config` 파일을 배포해도 어떤 것도 영구적으로 비활성화되지 않습니다. 위에서 설명한 적절한 규칙을 사용하여 파일 이름을 바꾸거나 완전히 제거하고 다시 시작하십시오.
 ```

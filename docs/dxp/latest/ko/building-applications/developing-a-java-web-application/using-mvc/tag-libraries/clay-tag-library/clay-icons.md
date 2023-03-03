@@ -20,4 +20,4 @@ Liferay Clay taglibs는 앱에서 사용할 수 있는 언어 플래그 아이�
 
 * [점토 배지](./clay-badges.md)
 * [점토 스티커](./clay-stickers.md)
-* [테마에서 클레이 아이콘 사용](https://help.liferay.com/hc/en-us/articles/360034474532-Using-Clay-Icons-in-a-Theme)
+* [테마에서 클레이 아이콘 사용](https://help.liferay.com/hc/ko/articles/360034474532-Using-Clay-Icons-in-a-Theme)

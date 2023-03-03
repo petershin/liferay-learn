@@ -67,7 +67,7 @@ Commerce 2.1은 *제어판*을 통해 *주문* 메뉴에 액세스한다는 점�
 
 ## Liferay Commerce 2.0 이하
 
-매장 관리자는 배송 메뉴를 사용하여 주문을 받은 후 [을 생성하고 추적](../orders/processing-an-order.md#commerce-2-0-and-below).
+매장 관리자는 배송 메뉴를 사용하여 주문을 받은 후 [을 생성하고 추적](../orders/processing-an-order.md#commerce-2-0-and-below) .
 
 *제어판* &rarr; *상거래* &rarr; *배송*로 이동합니다.
 

@@ -143,7 +143,7 @@ Then, start with sending a message in an example project.
 | `setResponseDestinationName(String)`  | `대상` 참조하여 응답을 받습니다.       |
 | `setValues(Map<String,Object>)` | `지도`에서 추가 데이터를 제공합니다.     |
 
-`N8K5Baker` [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java)의 `sendMessage(String, Message)` 메서드를 호출하여 `acme/n8k5_able` 이라는 이름의 [`목적지`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 로 메시지를 보냅니다. `MessageBus` 은 새 스레드를 시작하고 `Message` 을 [acme/n8k5_able</code> `Destination`에 등록된`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인스턴스로 `. <code>N8K5Baker`의 스레드가 계속됩니다.
+`N8K5Baker` [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java) 의 `sendMessage(String, Message)` 메서드를 호출하여 `acme/n8k5_able` 이라는 이름의 [`목적지`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 로 메시지를 보냅니다. `MessageBus` 은 새 스레드를 시작하고 `Message` 을 [acme/n8k5_able</code> `Destination`에 등록된`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인스턴스로 `. <code>N8K5Baker`의 스레드가 계속됩니다.
 
 ```{note}
 `Message`에 대한 응답을 받으려면 `Message`에 응답 대상을 설정하고 해당 대상에 `N8K5Baker`와 같은 클래스를 `MessageListener`로 등록하십시오. 자세한 내용은 [메시지 듣기](./listening-for-messages.md)를 참조하십시오.
@@ -293,11 +293,11 @@ INFO  [acme/n8k5_baker-2][N8K5Baker:30] Received message payload N8K5CharlieMess
 `N8K5CharlieMessageListener` `N8K5Baker`의 메시지를 수신한 후 응답 대상으로 응답 메시지를 보냅니다. `N8K5Baker` 응답 메시지를 수신하고 메시지 페이로드를 인쇄합니다.
 
 ```{note}
-클래스에서 메시지를 다시 교환하려면 [Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md에서 모듈(OSGi 번들)을 다시 시작하면 됩니다. ). 번들을 나열(`lb`)하여 번들 ID를 가져오고, 번들을 중지하고(`stop <id>), 번들을 다시 시작합니다(`start <id>).
+클래스에서 메시지를 다시 교환하려면 [Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md에서 모듈(OSGi 번들) 을 다시 시작하면 됩니다. ). 번들을 나열(`lb`)하여 번들 ID를 가져오고, 번들을 중지하고(`stop <id>), 번들을 다시 시작합니다(`start <id>).
 ```
 
 ```{note}
-OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/)을 사용하여 메시지를 보낼 수 있습니다. 메시징/MessageBusUtil.java) 및 `Destination`, `DestinationConfiguration`, `Message` 및 `MessageListener` 인스턴스.
+OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/) 을 사용하여 메시지를 보낼 수 있습니다. 메시징/MessageBusUtil.java) 및 `Destination`, `DestinationConfiguration`, `Message` 및 `MessageListener` 인스턴스.
 
 다른 방법으로 `BundleContext`를 가져와야 한다는 점을 제외하면 설명된 대로 `Destination` 서비스를 등록할 수 있습니다(예: `Bundle bundle = FrameworkUtil.getBundle(YourClass.class); BundleContext bundleContext = bundle.getBundleContext( )`).
 ```

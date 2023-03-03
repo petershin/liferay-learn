@@ -14,11 +14,11 @@ Linux 및 Mac 운영 체제용 Blade CLI 설치는 한 줄 명령입니다.
 curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/installers/local | sh
 ```
 
-설치가 완료되면 `블레이드가 성공적으로 설치되었습니다` 메시지가 나타납니다. 새 명령줄을 열고 `blade`를 입력합니다. 명령을 찾을 수 없음 오류가 발생하면 [경로에 `blade` 명령을 추가해야 합니다](./troubleshooting-blade-cli.md#the-blade-command-is-not-available-in-my-cli ).
+설치가 완료되면 `블레이드가 성공적으로 설치되었습니다` 메시지가 나타납니다. 새 명령줄을 열고 `blade`를 입력합니다. 명령을 찾을 수 없음 오류가 발생하면 [경로에 `blade` 명령을 추가해야 합니다](./troubleshooting-blade-cli.md#the-blade-command-is-not-available-in-my-cli ) .
 
 ### 그래픽 설치 프로그램에서 설치
 
-설치 프로그램이 더 편하다면 최신 [Liferay 프로젝트 SDK 설치 프로그램](https://github.com/liferay/liferay-ide/releases/)을 다운로드하여 실행하세요.
+설치 프로그램이 더 편하다면 최신 [Liferay 프로젝트 SDK 설치 프로그램](https://github.com/liferay/liferay-ide/releases/) 을 다운로드하여 실행하세요.
 
 1. Java 런타임을 선택합니다. 이것은 자동 감지되어야 합니다.
 
@@ -38,7 +38,7 @@ curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/i
 
 1. *다음*을 클릭하여 블레이드 CLI를 설치합니다.
 
-Windows 환경에서 `blade` 명령은 Windows에서 또는 Mac 및 Linux에서 `bash` 또는 `zsh`를 사용하는 경우 경로에 자동으로 추가됩니다. 자세한 내용은 [Troubleshooting Blade CLI](./troubleshooting-blade-cli.md)를 참조하십시오. 
+Windows 환경에서 `blade` 명령은 Windows에서 또는 Mac 및 Linux에서 `bash` 또는 `zsh`를 사용하는 경우 경로에 자동으로 추가됩니다. 자세한 내용은 [블레이드 CLI 문제 해결](./troubleshooting-blade-cli.md) 를 참조하십시오. 
 
 ## 프록시 구성
 

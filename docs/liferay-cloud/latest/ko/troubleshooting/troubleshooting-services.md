@@ -116,10 +116,10 @@ Liferay 서비스의 경우 재시작 후 첫 번째 로그에 신호를 보내�
 
 ## CDN으로 사이트에 액세스하면 JavaScript 오류가 발생함
 
-일부 타사 CDN은 쿼리 문자열(예: [Cloudflare](https://www.cloudflare.com/))을 정렬할 수 있습니다. 맞춤 도메인 이름을 사용하여 사이트에 액세스할 때 정렬하면 문제(예: jQuery 로드 실패)가 발생할 수 있습니다. 이로 인해 다음과 같은 JavaScript 콘솔 오류가 발생할 수 있습니다.
+일부 타사 CDN은 쿼리 문자열(예: [Cloudflare](https://www.cloudflare.com/) )을 정렬할 수 있습니다. 맞춤 도메인 이름을 사용하여 사이트에 액세스할 때 정렬하면 문제(예: jQuery 로드 실패)가 발생할 수 있습니다. 이로 인해 다음과 같은 JavaScript 콘솔 오류가 발생할 수 있습니다.
 
 ![CDN이 쿼리 문자열을 정렬하는 경우 jQuery가 로드되지 않을 수 있습니다.](./troubleshooting-services/images/02.png)
 
-이 경우 사이트가 제대로 로드되지 않을 수 있습니다. 이러한 오류를 수정하려면 CDN의 쿼리 문자열 정렬을 비활성화하십시오. 정확한 단계는 CDN 문서를 참조하세요(예: [Cloudflare의 쿼리 문자열 정렬 문서](https://support.cloudflare.com/hc/en-us/articles/206776797-Understanding-Query-String-Sort#4bJ4dl4TLlJR8NECznXDnI)).
+이 경우 사이트가 제대로 로드되지 않을 수 있습니다. 이러한 오류를 수정하려면 CDN의 쿼리 문자열 정렬을 비활성화하십시오. 정확한 단계는 CDN 문서를 참조하세요(예: [Cloudflare의 쿼리 문자열 정렬 문서](https://support.cloudflare.com/hc/en-us/articles/206776797-Understanding-Query-String-Sort#4bJ4dl4TLlJR8NECznXDnI) ).
 
 정렬이 비활성화된 상태에서 오류가 지속되면 [Liferay Cloud 지원](https://help.liferay.com/hc/en-us) 에 도움을 요청하십시오.

@@ -1,6 +1,6 @@
 # OSGi 서비스로서의 API
 
-[모듈](./module-projects.md) 이 무엇이고 배포 방법을 배운 후에는 모듈을 사용하여 API를 정의하고 구현할 수 있습니다. Liferay API는 Java 인터페이스에 의해 정의되고 구체적인 Java 클래스에 의해 구현되는 [OSGi 서비스](https://enroute.osgi.org/)입니다.
+[모듈](./module-projects.md) 이 무엇이고 배포 방법을 배운 후에는 모듈을 사용하여 API를 정의하고 구현할 수 있습니다. Liferay API는 Java 인터페이스에 의해 정의되고 구체적인 Java 클래스에 의해 구현되는 [OSGi 서비스](https://enroute.osgi.org/) 입니다.
 
 Liferay는 API, 구현 및 클라이언트를 구성 요소로 노출합니다. [OSGi 선언적 서비스](https://enroute.osgi.org/FAQ/300-declarative-services.html) (DS) 주석은 구성 요소와 해당 관계를 정의합니다.
 

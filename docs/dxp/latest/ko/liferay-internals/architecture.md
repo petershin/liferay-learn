@@ -104,7 +104,7 @@ Core는 프레임워크, 서비스 및 UI에 대한 구성 요소 런타임 환�
 
 ![로컬 및 원격 애플리케이션은 REST 웹 API를 통해 서비스를 호출할 수 있습니다. Java 기반 포틀릿은 Java API를 통해 서비스를 호출할 수도 있습니다.](./architecture/images/03.png)
 
-Liferay 서비스는 [Service Builder](../building-applications/data-frameworks/service-builder.md) 사용하여 구축되고 [REST Builder](../headless-delivery/apis-with-rest-builder.md)사용하여 REST-ful을 만듭니다. 서비스는 [재정의 및 확장](./extending-liferay/overriding-osgi-services.md) 도 쉽습니다.
+Liferay 서비스는 [서비스 빌더](../building-applications/data-frameworks/service-builder.md) 사용하여 구축되고 [REST Builder](../headless-delivery/apis-with-rest-builder.md)사용하여 REST-ful을 만듭니다. 서비스는 [재정의 및 확장](./extending-liferay/overriding-osgi-services.md) 도 쉽습니다.
 
 웹 기반 UI를 통해 브라우저에서 콘텐츠 및 서비스 기능을 사용할 수 있습니다.
 

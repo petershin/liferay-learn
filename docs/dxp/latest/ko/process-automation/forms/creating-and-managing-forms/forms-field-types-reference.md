@@ -86,7 +86,7 @@ Liferay 7.3의 첫 번째 릴리스에서는 편집 가능한 구성 필드 이�
 
 ### 텍스트 항목
 
-사용자는 이 필드에 자유 형식 텍스트를 입력합니다. 예를 들어 전체 이름 필드는 텍스트 필드입니다. 기본적으로 텍스트 필드는 한 줄의 텍스트에 모든 입력을 유지합니다. 더 긴 응답을 수용하려면 [이 예에서와 같이](./creating-forms.md) 텍스트 필드를 구성할 때 여러 줄 설정을 선택하십시오. 텍스트 필드의 [유효성 검사 옵션](./validating-text-and-numeric-field-entries.md ).
+사용자는 이 필드에 자유 형식 텍스트를 입력합니다. 예를 들어 전체 이름 필드는 텍스트 필드입니다. 기본적으로 텍스트 필드는 한 줄의 텍스트에 모든 입력을 유지합니다. 더 긴 응답을 수용하려면 [이 예에서와 같이](./creating-forms.md) 텍스트 필드를 구성할 때 여러 줄 설정을 선택하십시오. 텍스트 필드의 [유효성 검사 옵션](./validating-text-and-numeric-field-entries.md ) .
 
 ![여러 줄 텍스트 필드는 여러 줄의 사용자 입력을 허용합니다.](./forms-field-types-reference/images/03.png)
 
@@ -149,7 +149,7 @@ Liferay 7.4에 추가된 사용자는 한 필드에 날짜와 시간을 모두 �
 - [**Require Confirmation**](#field-confirmation) 은 사용자가 데이터를 올바르게 입력했는지 확인합니다.
 - **[유효성 검사](./validating-text-and-numeric-field-entries.md)** 사전 구성된 요구 사항에 대한 사용자 입력을 제한합니다. ![숫자 입력을 확인합니다.](./forms-field-types-reference/images/25.png)
 
-- **[입력 마스크](./validating-text-and-numeric-field-entries.md#masking-numeric-fields)** 을 사용하면 사용자가 숫자 데이터를 입력할 때 올바른 형식을 표시할 수 있습니다.
+- ** [입력 마스크](./validating-text-and-numeric-field-entries.md#masking-numeric-fields) ** 을 사용하면 사용자가 숫자 데이터를 입력할 때 올바른 형식을 표시할 수 있습니다.
 
 ### 업로드
 
@@ -174,7 +174,7 @@ dl.show.hidden.mount.folders=true
 제어판에서 게스트 업로드 동작을 구성합니다: 시스템 설정 &rarr; 양식(콘텐츠 및 데이터) &rarr; 양식 또는 com.liferay.dynamic.data.mapping.form.web.internal.configuration이라는 [구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) `하여 구성합니다. DDMFormWebConfiguration.config`.
 
 ```{tip}
-[인스턴스 범위](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions)에서 Forms 애플리케이션을 구성하려면 인스턴스 설정에서 Forms 항목을 사용합니다.
+[인스턴스 범위](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions) 에서 Forms 애플리케이션을 구성하려면 인스턴스 설정에서 Forms 항목을 사용합니다.
 ```
 
 **게스트 업로드 파일 확장자(`guestUploadFileExtensions`):** 허용되는 파일 확장자의 쉼표로 구분된 목록을 입력합니다. 기본적으로 다음 목록이 지원됩니다: `doc`, `docx`, `jpeg`, `jpg`, `pdf`, `png`, `ppt`, `pptx`, `tiff`, `txt`, `xls`, `xlsx`.

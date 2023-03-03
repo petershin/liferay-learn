@@ -70,7 +70,7 @@ uuid: c9dd54f1-6336-4066-be70-8054eeb54b32
 | 필드 이름 매핑 | 객체 | 필드 이름 매핑 정의로 채워짐 | 부정   |
 | 레코드      | 객체 | 엔티티 개체의 JSON 배열  | 그렇다  |
 
-사용 가능한 모든 작업 및 관련 입력 매개변수를 보려면 [Liferay MuleSoft 커넥터 기술 참조](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc)을 참조하십시오.
+사용 가능한 모든 작업 및 관련 입력 매개변수를 보려면 [Liferay MuleSoft 커넥터 기술 참조](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc) 을 참조하십시오.
 
 ## 추가 정보
 

@@ -4,7 +4,7 @@
 
 일부 사용 사례에서는 객체 항목에 동시에 여러 상태를 할당해야 할 수 있습니다. 예를 들어 주문 애플리케이션을 구축할 때 각각 고유한 흐름과 관련 비즈니스 로직이 있는 동일한 항목에 대한 주문, 결제 및 배송 상태를 할당하고 관리해야 할 수 있습니다. 사용자 지정 개체와 함께 Liferay 선택 목록을 사용하면 이 기능을 수행할 수 있습니다.
 
-[picklists](../../picklists.md)를 사용하면 문자열 목록을 정의하고 개체 필드로 사용하여 항목에 대한 사용자 정의 상태를 정의할 수 있습니다. 개체 정의에 추가되면 각 상태에 대한 흐름을 설계하고 [validations](../validations/adding-custom-validations.md) 및 [actions](../actions/defining-object-actions. md) 다른 상태에 대한 비즈니스 논리를 추가합니다. 상태는 [워크플로 상태](../../enabling-workflows-for-objects.md)와 함께 사용하여 더 복잡한 검토 및 승인 프로세스를 정의할 수도 있습니다.
+[선택목록](../../picklists.md) 를 사용하면 문자열 목록을 정의하고 개체 필드로 사용하여 항목에 대한 사용자 정의 상태를 정의할 수 있습니다. 개체 정의에 추가되면 각 상태에 대한 흐름을 설계하고 [validations](../validations/adding-custom-validations.md) 및 [actions](../actions/defining-object-actions. md) 다른 상태에 대한 비즈니스 논리를 추가합니다. 상태는 [워크플로 상태](../../enabling-workflows-for-objects.md)와 함께 사용하여 더 복잡한 검토 및 승인 프로세스를 정의할 수도 있습니다.
 
 ![선택 목록을 사용하여 개체 정의에 사용자 정의 상태를 추가합니다.](./adding-and-managing-custom-states/images/01.png)
 
@@ -44,7 +44,7 @@
 
 1. *저장*을 클릭합니다.
 
-필드를 정의에 추가한 후 [흐름을 설정](#setting-up-a-flow-for-state-fields)하여 각 상태에 사용할 수 있는 전환을 결정할 수 있습니다.
+필드를 정의에 추가한 후 [흐름을 설정](#setting-up-a-flow-for-state-fields) 하여 각 상태에 사용할 수 있는 전환을 결정할 수 있습니다.
 
 ## 상태 필드에 대한 흐름 설정
 

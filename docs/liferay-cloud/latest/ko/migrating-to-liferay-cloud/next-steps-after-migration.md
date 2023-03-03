@@ -16,7 +16,7 @@ Liferay Cloud에서 실행 중인 Liferay DXP가 있으므로 [자동 백업](..
 
 ## 팀 설정
 
-Liferay Cloud의 관리자는 필요에 따라 다른 구성원을 초대하고 프로젝트의 다양한 영역에 대한 액세스를 관리할 수 있습니다. [팀원을 초대한 다음 적절한](../manage-and-optimize/environment-teams-and-roles.md#inviting-team-members) 팀 역할을 부여하여 [모든 사람이 Liferay Cloud 프로젝트에서 필요한 수준의 액세스 권한을 갖도록](../manage-and-optimize/environment-teams-and-roles.md#understanding-team-roles).
+Liferay Cloud의 관리자는 필요에 따라 다른 구성원을 초대하고 프로젝트의 다양한 영역에 대한 액세스를 관리할 수 있습니다. [팀원을 초대한 다음 적절한](../manage-and-optimize/environment-teams-and-roles.md#inviting-team-members) 팀 역할을 부여하여 [모든 사람이 Liferay Cloud 프로젝트에서 필요한 수준의 액세스 권한을 갖도록](../manage-and-optimize/environment-teams-and-roles.md#understanding-team-roles) .
 
 자세한 내용은 [환경 팀 및 역할](../manage-and-optimize/environment-teams-and-roles.md) 을 참조하십시오.
 
@@ -48,11 +48,11 @@ Liferay Cloud의 환경이 필요에 따라 사용자 정의 도메인을 호스
 
 * [`백업` 서비스](../platform-services/backup-service/backup-service-overview.md) 은 언제든지 환경에 복원할 수 있는 정기적인 간격으로(또는 수동으로 트리거할 때) 자동으로 백업을 생성합니다. 백업에 대해 선호하는 빈도를 [으로 설정하고 보존 기간을](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) 로 설정하여 시작할 수 있습니다.
 
-* [`webserver` 서비스](../platform-services/web-server-service.md)는 Liferay Cloud 서비스와 나머지 인터넷 간의 게이트웨이를 제공합니다. Liferay 인스턴스 서비스의 성능 및 요청 유형에 따라 요청에 대한 [시간 제한 또는 재시도 횟수](../platform-services/web-server-service.md#environment-variables)를 조정할 수 있습니다. 예상대로 처리됩니다.
+* [`webserver` 서비스](../platform-services/web-server-service.md)는 Liferay Cloud 서비스와 나머지 인터넷 간의 게이트웨이를 제공합니다. Liferay 인스턴스 서비스의 성능 및 요청 유형에 따라 요청에 대한 [시간 제한 또는 재시도 횟수](../platform-services/web-server-service.md#environment-variables) 를 조정할 수 있습니다. 예상대로 처리됩니다.
   
   * [`웹서버` 서비스](../platform-services/web-server-service.md) 은 Liferay 클라우드 서비스와 나머지 인터넷 사이의 게이트웨이를 제공합니다. Liferay 인스턴스 서비스의 성능 및 요청 유형에 따라 요청이 예상대로 처리되도록 제한 시간 [또는 재시도 횟수](../platform-services/web-server-service.md#environment-variables) 을 조정할 수 있습니다.
 
-* [`database` 서비스](../platform-services/database-service/database-service.md)는 [마이그레이션 초기에 업로드한](./uploading-and-restoring-the-data) 데이터베이스를 안전하게 제공합니다. -backup.md). 유지 관리를 위한 다운타임의 영향을 완화하기 위해 원하는 [데이터베이스 유지 관리 기간](../platform-services/database-service/database-service.md#database-maintenance-window-variables)을 구성할 수 있습니다.
+* [`database` 서비스](../platform-services/database-service/database-service.md)는 [마이그레이션 초기에 업로드한](./uploading-and-restoring-the-data) 데이터베이스를 안전하게 제공합니다. -backup.md). 유지 관리를 위한 다운타임의 영향을 완화하기 위해 원하는 [데이터베이스 유지 관리 기간](../platform-services/database-service/database-service.md#database-maintenance-window-variables) 을 구성할 수 있습니다.
 
 ## 애플리케이션 성능 최적화 및 조정
 
@@ -62,7 +62,7 @@ Liferay Cloud에서 Liferay를 사용하기 시작할 때 애플리케이션 성
 
 * **Auto-scaling** 은 사용자 트래픽을 수용하기 위해 필요에 따라 Liferay 서비스의 인스턴스 수를 자동으로 조정합니다. [이 최적화를 활용하려면 자동 크기 조정](../manage-and-optimize/auto-scaling.md) 을 구성합니다.
 
-* [**서비스 팝오버**](../manage-and-optimize/application-metrics.md#service-popover) 및 [**모니터링 화면**](../manage-and-optimize/application-metrics.md#extended-application-metrics) 을 보고 서비스 및 리소스 사용량에 대한 세부 정보를 확인합니다. 서비스 성능 모니터링에 대한 자세한 내용은 [Application Metrics](../manage-and-optimize/application-metrics.md) 을 참조하십시오.
+* [**서비스 팝오버**](../manage-and-optimize/application-metrics.md#service-popover) 및 [**모니터링 화면**](../manage-and-optimize/application-metrics.md#extended-application-metrics) 을 보고 서비스 및 리소스 사용량에 대한 세부 정보를 확인합니다. 서비스 성능 모니터링에 대한 자세한 내용은 [애플리케이션 지표](../manage-and-optimize/application-metrics.md) 을 참조하십시오.
 
 * 프로덕션 환경의 경우 [Dynatrace 통합](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) 을 사용하여 고급 성능 지표를 사용할 수도 있습니다. *이를 사용하려면 Liferay Cloud 구독에 특정 Dynatrace 애드온이 필요합니다.*
 
@@ -72,6 +72,6 @@ Liferay Cloud에서 Liferay를 사용하기 시작할 때 애플리케이션 성
 
 이제 Liferay Cloud로 마이그레이션했고 이미 [사용자 지정](./migrating-dxp-configurations-and-customizations.md)을 배포했으므로 클라우드 환경에 변경 사항을 배포하여 개발을 계속할 수 있습니다. 아직 익숙하지 않은 경우 [명령줄 도구](../reference/command-line-tool.md) 에 익숙해지면 개발 작업을 수행하는 데 도움이 될 수 있습니다.
 
-[Liferay Cloud 콘솔을 통해](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) 서비스를 배포하는 것 외에도 [자동 배포](를 구성할 수도 있습니다. ./build-and-deploy/automatically-deploying-ci-service-builds.md)를 사용하여 개발 환경의 프로세스 속도를 높일 수 있습니다. 필요에 따라 CI 서비스에서 사용하는 [Jenkins 파이프라인을 사용자 지정](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)할 수도 있습니다.
+[Liferay Cloud 콘솔을 통해](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) 서비스를 배포하는 것 외에도 [자동 배포](를 구성할 수도 있습니다. ./build-and-deploy/automatically-deploying-ci-service-builds.md)를 사용하여 개발 환경의 프로세스 속도를 높일 수 있습니다. 필요에 따라 CI 서비스에서 사용하는 [Jenkins 파이프라인을 사용자 지정](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) 할 수도 있습니다.
 
 Liferay 클라우드 배포 워크플로우 [여기](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)에 대해 자세히 알아보십시오.

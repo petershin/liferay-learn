@@ -61,7 +61,7 @@ MVC 리소스 명령을 사용하여 파일을 다운로드했습니다. 이제 
 
 ## 포틀릿 검사
 
-`P8V5Portlet` 은 최소 [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java)입니다.
+`P8V5Portlet` 은 최소 [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java) 입니다.
 
 ```{literalinclude} ./mvc-resource-command/resources/liferay-p8v5.zip/p8v5-web/src/main/java/com/acme/p8v5/web/internal/portlet/P8V5Portlet.java
 :language: java
@@ -84,7 +84,7 @@ MVC 리소스 명령을 사용하여 파일을 다운로드했습니다. 이제 
 
 ## MVCResourceCommand 클래스 검사
 
-MVC 리소스 명령 클래스는 [`MVCResourceCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCResourceCommand.java) 을 직접 구현하거나 [`BaseMVCResourceCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCResourceCommand.java)을 확장하여 간접적으로 구현할 수 있습니다. `P8V5DownloadMVCResourceCommand` 은 `MVCResourceCommand`을 직접 구현합니다.
+MVC 리소스 명령 클래스는 [`MVCResourceCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCResourceCommand.java) 을 직접 구현하거나 [`BaseMVCResourceCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCResourceCommand.java) 을 확장하여 간접적으로 구현할 수 있습니다. `P8V5DownloadMVCResourceCommand` 은 `MVCResourceCommand`을 직접 구현합니다.
 
 ```{literalinclude} ./mvc-resource-command/resources/liferay-p8v5.zip/p8v5-web/src/main/java/com/acme/p8v5/web/internal/portlet/action/P8V5DownloadMVCResourceCommand.java
 :language: java
@@ -106,7 +106,7 @@ MVC 리소스 명령 클래스는 [`MVCResourceCommand`](https://github.com/life
 )
 ```
 
-예제 `serveResource` 메소드는 간단한 텍스트 파일을 작성하고 [`PortletResponseUtil`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/PortletResponseUtil.java)를 통해 사용자에게 보냅니다. 메서드는 오류가 발생하면 `참` 을 반환하고 그렇지 않으면 `거짓` 을 반환합니다.
+예제 `serveResource` 메소드는 간단한 텍스트 파일을 작성하고 [`PortletResponseUtil`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/PortletResponseUtil.java) 를 통해 사용자에게 보냅니다. 메서드는 오류가 발생하면 `참` 을 반환하고 그렇지 않으면 `거짓` 을 반환합니다.
 
 다음으로 포틀릿의 JSP가 UI 구성 요소 작업을 명령에 매핑하는 방법을 배웁니다.
 
@@ -128,7 +128,7 @@ MVC 리소스 명령 클래스는 [`MVCResourceCommand`](https://github.com/life
 
 ## 다음
 
-이제 MVC 리소스 명령을 사용하는 방법을 알게 되었습니다. 포틀릿의 컨텐츠를 현지화하려면 [현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)을 참조하십시오. 모델, 지속성 및 서비스 계층을 개발할 준비가 되었으면 [Service Builder](../../data-frameworks/service-builder.md)을 방문하십시오.
+이제 MVC 리소스 명령을 사용하는 방법을 알게 되었습니다. 포틀릿의 컨텐츠를 현지화하려면 [현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)을 참조하십시오. 모델, 지속성 및 서비스 계층을 개발할 준비가 되었으면 [서비스 빌더](../../data-frameworks/service-builder.md) 을 방문하십시오.
 
 ## 추가 정보
 

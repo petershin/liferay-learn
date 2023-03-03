@@ -18,7 +18,7 @@ Liferay 7.3+에서 번들로 제공되는 [사이드카 Elasticsearch](../using-
 
 ## 클러스터 스니핑(추가 구성)
 
-Elasticsearch 클러스터는 여러 노드 [유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node)을 가질 수 있습니다. [Elasticsearch 커넥터에서 기본적으로 활성화된 클러스터 스니핑](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html)은 `transportAddresses` 속성에 구성된 데이터 노드를 찾습니다. 사용할 수 없는 경우 커넥터는 콘솔 로그에서 `NoNodeAvailableException` 을 발생시킬 수 있습니다. 이 오류를 방지하고 클러스터 스니핑을 계속 사용하려면 하나 이상의 데이터 노드의 전송 주소를 구성하십시오.
+Elasticsearch 클러스터는 여러 노드 [유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node) 을 가질 수 있습니다. [Elasticsearch 커넥터에서 기본적으로 활성화된 클러스터 스니핑](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html) 은 `transportAddresses` 속성에 구성된 데이터 노드를 찾습니다. 사용할 수 없는 경우 커넥터는 콘솔 로그에서 `NoNodeAvailableException` 을 발생시킬 수 있습니다. 이 오류를 방지하고 클러스터 스니핑을 계속 사용하려면 하나 이상의 데이터 노드의 전송 주소를 구성하십시오.
 
 클러스터 스니핑을 비활성화하려면 `clientTransportSniff=false` 을 `.config` 파일에 추가하거나 시스템 설정에서 클라이언트 전송 스니핑 속성을 선택 취소합니다.
 

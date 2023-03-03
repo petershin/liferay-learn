@@ -21,7 +21,7 @@
 
 ![도움말 아이콘은 제어판 전체에서 사용됩니다.](./liferay-ui-icon-help/images/02.png)
 
-메시지는 [언어 키](https://help.liferay.com/hc/en-us/articles/360028746692-Localizing-Your-Application)을 통해 제공됩니다. 테스트 목적으로 도구 설명의 메시지에 문자열을 사용할 수 있지만 언어 키는 모범 사례로 간주되며 프로덕션에서 사용해야 합니다.
+메시지는 [언어 키](https://help.liferay.com/hc/ko/articles/360028746692-Localizing-Your-Application) 을 통해 제공됩니다. 테스트 목적으로 도구 설명의 메시지에 문자열을 사용할 수 있지만 언어 키는 모범 사례로 간주되며 프로덕션에서 사용해야 합니다.
 
 ## 관련 항목
 

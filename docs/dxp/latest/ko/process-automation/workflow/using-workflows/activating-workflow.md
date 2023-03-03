@@ -3,7 +3,7 @@
 DXP 인스턴스 전체 또는 특정 사이트에서만 자산 유형에 대한 워크플로우 프로세스를 활성화할 수 있습니다. 워크플로 프로세스가 _Wiki 페이지_와 같은 특정 자산 유형에 대해 인스턴스 전체에서 활성화되면 게시를 위해 제출된 _Wiki 페이지_ 모두 해당 _Wiki 페이지_ 가 생성된 사이트에 관계없이 검토 프로세스를 거쳐야 합니다.
 
 ```{warning}
-Liferay 7.3에서는 워크플로우를 [Publications](../../../site-building/publishing-tools/publications.md)과 함께 사용할 수 없습니다.
+Liferay 7.3에서는 워크플로우를 [출판](../../../site-building/publishing-tools/publications.md) 과 함께 사용할 수 없습니다.
 ```
 
 개별 사이트에서 워크플로를 활성화하거나 비활성화할 수 있습니다. 기본적으로 워크플로는 사이트에서 비활성화되어 있습니다.

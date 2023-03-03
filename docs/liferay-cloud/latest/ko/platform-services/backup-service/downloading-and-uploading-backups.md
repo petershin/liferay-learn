@@ -6,7 +6,7 @@ uuid: 06ef4848-7a9b-4281-92e6-f145c80fd215
 
 Liferay Cloud 백업 서비스는 환경 데이터베이스의 백업과 Liferay 인스턴스의 `LIFERAY_HOME/data` 폴더의 전체 내용을 생성합니다. 이 콘텐츠는 아카이브 파일(각각`.gz` 및 `.tgz` )로 저장되며 Liferay Cloud 콘솔을 통해 다운로드할 수 있습니다.
 
-사용자는 [Liferay Cloud Console을 사용하여](#uploading-backups-via-the-console) 또는 [백업 API](#backup-service-apis)를 통해 환경 백업을 다운로드하거나 업로드할 수도 있습니다.
+사용자는 [Liferay Cloud Console을 사용하여](#uploading-backups-via-the-console) 또는 [백업 API](#backup-service-apis) 를 통해 환경 백업을 다운로드하거나 업로드할 수도 있습니다.
 
 ```{note}
 백업 페이지는 4.3.5 이전의 백업 서비스 버전에 대한 프로덕션 환경에서만 사용할 수 있습니다.
@@ -37,7 +37,7 @@ Liferay Cloud 백업 서비스는 환경 데이터베이스의 백업과 Liferay
 ## 콘솔을 통해 백업 업로드
 
 ```{warning}
-데이터베이스 테이블 및 열 이름은 Liferay Cloud에서 대소문자를 구분합니다. 데이터베이스를 업로드하기 전에 테이블 이름이 파스칼 케이스인지 확인하십시오. 자세한 내용은 [정확한 테이블 대소문자 확인](../../migration-to-liferay-cloud.md#ensuring-correct-table-capitalization)을 참조하십시오.
+데이터베이스 테이블 및 열 이름은 Liferay Cloud에서 대소문자를 구분합니다. 데이터베이스를 업로드하기 전에 테이블 이름이 파스칼 케이스인지 확인하십시오. 자세한 내용은 [정확한 테이블 대소문자 확인](../../migration-to-liferay-cloud.md#ensuring-correct-table-capitalization) 을 참조하십시오.
 ```
 
 선택한 환경에서 *백업* 페이지를 통해 프로젝트에 백업을 업로드할 수도 있습니다.
@@ -150,9 +150,9 @@ curl -X GET \
 
 백업 업로드 API를 사용하여 Liferay Cloud에 백업을 업로드하려면 다음 단계를 따르십시오.
 
-1. [데이터베이스 파일](#creating-the-database-file)을 생성합니다.
+1. [데이터베이스 파일](#creating-the-database-file) 을 생성합니다.
 
-1. [볼륨 파일](#creating-the-volume-file)을 만듭니다.
+1. [볼륨 파일](#creating-the-volume-file) 을 만듭니다.
 
 1. [데이터베이스 및 볼륨 파일과 함께 백업 API](#invoking-the-backup-api) 을 호출합니다.
 

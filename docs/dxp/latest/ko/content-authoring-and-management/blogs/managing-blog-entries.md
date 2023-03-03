@@ -41,7 +41,7 @@ _보기 유형_ 버튼은 _추가_ 버튼 왼쪽에 있습니다. 사용자는 �
 
 ## 블로그 항목 공유
 
-사이트 관리의 블로그 앱에서 블로그 항목을 공유할 수도 있습니다. 공유는 [공유 구성](https://help.liferay.com/hc/en-us/articles/360029040731-Configuring-Sharing)에 설명된 대로 기본적으로 활성화되어 있습니다. 블로그 항목 공유는 [파일 공유](https://help.liferay.com/hc/en-us/articles/360029040711-Sharing-Files)과 동일하게 작동합니다.
+사이트 관리의 블로그 앱에서 블로그 항목을 공유할 수도 있습니다. 공유는 [공유 구성](https://help.liferay.com/hc/ko/articles/360029040731-Configuring-Sharing) 에 설명된 대로 기본적으로 활성화되어 있습니다. 블로그 항목 공유는 [파일 공유](https://help.liferay.com/hc/ko/articles/360029040711-Sharing-Files) 과 동일하게 작동합니다.
 
 블로그 항목을 공유하려면:
 

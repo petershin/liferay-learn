@@ -54,7 +54,7 @@ Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/e
 
 > **가용성: Liferay DXP 7.3 FP2+ 및 Liferay DXP 7.2 FP13+**
 
-기본적으로 Synonyms Sets는 동의어를 [영어 및 스페인어로만 지원합니다](#requirements-and-limitations). 다른 언어에 대한 지원을 추가하려면 아래 구성 단계를 사용하십시오.
+기본적으로 Synonyms Sets는 동의어를 [영어 및 스페인어로만 지원합니다](#requirements-and-limitations) . 다른 언어에 대한 지원을 추가하려면 아래 구성 단계를 사용하십시오.
 
 - 기본 [프랑스어](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) 분석기를 필요한 변경 사항으로 다시 구현하여 [사용자 지정 분석기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) 을 생성합니다(파이프라인의 추가 [동의어 그래프 토큰 필터](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-synonym-graph-tokenfilter.html) 포함).
 - 커넥터 구성의 추가 색인 구성을 사용하여 사용자 정의 분석기 정의를 색인 설정에 추가하십시오.
@@ -73,7 +73,7 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 1. 아카이브 관리자로 추출된 JAR 파일을 열고 `META-INF/mappings`로 이동합니다.
 1. `liferay-type-mappings.json` 이라는 파일이 필요한 리소스입니다. 파일 시스템에 압축을 풉니다.
 
-소스 코드에서 매핑을 가져오려면 [Liferay DXP 소스 코드 액세스](https://help.liferay.com/hc/en-us/articles/360045389291)가 있는 경우,
+소스 코드에서 매핑을 가져오려면 [Liferay DXP 소스 코드 액세스](https://help.liferay.com/hc/ko/articles/360045389291) 가 있는 경우,
 
 1. 소스 코드 저장소에 대한 액세스 권한이 있으면 위 문서의 단계에 따라 수정팩 레벨에 대한 태그를 찾으십시오.
 1. `module/apps/portal-search-elasticsearch(6 또는 7)/portal-search-elasticsearch(6 또는 7)-impl/src/main/resources/META-INF/mappings`로 이동합니다.

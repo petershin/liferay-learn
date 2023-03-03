@@ -2,7 +2,7 @@
 
 범주를 사용하여 유사한 자산을 그룹화하고 콘텐츠를 구성할 수 있습니다. [태그](./tagging-content-and-managing-tags.md)과 함께 카테고리는 사람들이 검색 또는 탐색을 통해 관련 정보를 찾는 데 도움이 됩니다. Liferay DXP의 범주 및 다양한 사용 시나리오에 대한 자세한 내용은 [범주 및 태그로 콘텐츠 구성](organizing-content-with-categories-and-tags.md)을 참조하십시오.
 
-[개의 어휘](#defining-vocabularies)을 사용하여 범주를 그룹화하고 [하위 범주](#creating-subcategories)을 사용하여 범주 계층을 만듭니다. 다른 사이트의 글로벌 사이트에서 어휘 및 카테고리를 사용할 수 있지만 글로벌 사이트에서만 글로벌 어휘를 생성하거나 편집할 수 있습니다.
+[개의 어휘](#defining-vocabularies) 을 사용하여 범주를 그룹화하고 [하위 범주](#creating-subcategories) 을 사용하여 범주 계층을 만듭니다. 다른 사이트의 글로벌 사이트에서 어휘 및 카테고리를 사용할 수 있지만 글로벌 사이트에서만 글로벌 어휘를 생성하거나 편집할 수 있습니다.
 
 ```{note}
 사이트 관리자만 카테고리 패널에서 카테고리 및 어휘를 관리할 수 있습니다.
@@ -84,7 +84,7 @@
 1. Category를 옮기고자 하는 *Vocabulary* 과 *Category* 을 선택합니다.
 
     ```{note}
-    동일한 [가시성 유형](./organizing-content-with-categories-and-tags.md#vocabulary-visibility)의 어휘로만 범주를 이동할 수 있습니다.
+    동일한 [가시성 유형](./organizing-content-with-categories-and-tags.md#vocabulary-visibility) 의 어휘로만 범주를 이동할 수 있습니다.
     ```
 
 ### 추가 범주 속성 편집

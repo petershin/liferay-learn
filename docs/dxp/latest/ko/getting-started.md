@@ -69,6 +69,6 @@ Liferay DXP를 이용하는 방법을 알아보세요.
 :::{grid-item-card} 새로운 기능 7.3
 :link: ./getting-started/whats-new-73.md
 
-Liferay DXP 7.3
+Liferay DXP 7.3의 기능 및 업데이트에 대해 자세히 알아보십시오.
 :::  
-::::의 기능 및 업데이트에 대해 자세히 알아보십시오.
+::::

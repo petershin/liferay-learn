@@ -9,7 +9,7 @@
 
 Liferay가 실행되면,
 
-1. [Picklists API 기본 사항](./liferay-v3n6.zip)을 다운로드하고 압축을 풉니다.
+1. [Picklists API 기본 사항](./liferay-v3n6.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/picklists/liferay-v3n6.zip -O

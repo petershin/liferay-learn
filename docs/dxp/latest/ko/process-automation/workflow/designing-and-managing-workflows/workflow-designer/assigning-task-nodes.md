@@ -10,7 +10,7 @@
 - 리소스 작업
 - 특정 사용자
 
-또한 [스크립트](../../developer-guide/using-the-script-engine-in-workflow.md) 를 작성하여 할당을 정의할 수 있습니다( [스크립팅된 할당](#scripted-assignments)참조).
+또한 [스크립트](../../developer-guide/using-the-script-engine-in-workflow.md) 를 작성하여 할당을 정의할 수 있습니다( [스크립팅된 할당](#scripted-assignments) 참조).
 
 ![작업 노드에 할당을 추가할 수 있습니다.](./assigning-task-nodes/images/01.png)
 

@@ -23,7 +23,7 @@ uuid: f25e9daa-89c4-4444-a177-8686c5fbbede
 **범주 매개변수 이름:** 패싯에 대한 URL에서 매개변수 이름을 변경합니다. 기본값은 *범주*입니다.
 
 ```{important}
-패싯 위젯 간에 AND 스타일 선택을 달성하려면 각 위젯에 대해 서로 다른 범주 매개변수 이름을 구성해야 합니다. 기본적으로 모든 범주 패싯 위젯에는 이 필드가 _category_로 설정되어 있습니다. [아래 예](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies)는 사용 사례를 보여줍니다. 
+패싯 위젯 간에 AND 스타일 선택을 달성하려면 각 위젯에 대해 서로 다른 범주 매개변수 이름을 구성해야 합니다. 기본적으로 모든 범주 패싯 위젯에는 이 필드가 _category_로 설정되어 있습니다. [아래 예](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) 는 사용 사례를 보여줍니다. 
 ```
 
 **최대 용어:** 패싯에 대해 발견된 일치 용어 수에 관계없이 표시할 패싯 용어의 최대 수를 설정합니다.
@@ -56,7 +56,7 @@ Liferay 버전에서 업그레이드하거나 7.4 업데이트/GA 48 이전에 �
 
 ![어휘를 선택합니다.](./category-facet/images/06.png)
 
-이 동작을 통해 강력한 검색 패싯 환경을 제공할 수 있습니다. 하나의 사용 사례에 대한 [아래 예](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies)를 참조하세요.
+이 동작을 통해 강력한 검색 패싯 환경을 제공할 수 있습니다. 하나의 사용 사례에 대한 [아래 예](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) 를 참조하세요.
 
 ## 예: 어휘를 사용하여 범주 패싯에서 계층적 필터링 경험 만들기
 

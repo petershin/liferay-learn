@@ -8,10 +8,10 @@
 
 사이트 및 페이지 생성에 대한 자세한 내용은 다음 링크를 참조하십시오.
 
-* [페이지 조각 만들기](https://help.liferay.com/hc/en-us/articles/360018171331-Creating-Page-Fragments)
-* [단편에서 콘텐츠 페이지 구축](https://help.liferay.com/hc/en-us/articles/360018171351-Building-Content-Pages-from-Fragments-)
-* [탐색 메뉴 생성 및 관리](https://help.liferay.com/hc/en-us/articles/360018171531-Creating-and-Managing-Navigation-Menus)
-* [애플리케이션 표시 템플릿 사용](https://help.liferay.com/hc/en-us/articles/360017892632-Styling-Widgets-with-Application-Display-Templates)
+* [페이지 조각 만들기](https://help.liferay.com/hc/ko/articles/360018171331-Creating-Page-Fragments)
+* [단편에서 콘텐츠 페이지 구축](https://help.liferay.com/hc/ko/articles/360018171351-Building-Content-Pages-from-Fragments-)
+* [탐색 메뉴 생성 및 관리](https://help.liferay.com/hc/ko/articles/360018171531-Creating-and-Managing-Navigation-Menus)
+* [애플리케이션 표시 템플릿 사용](https://help.liferay.com/hc/ko/articles/360017892632-Styling-Widgets-with-Application-Display-Templates)
 
 ## 페이지 추가 및 구성
 

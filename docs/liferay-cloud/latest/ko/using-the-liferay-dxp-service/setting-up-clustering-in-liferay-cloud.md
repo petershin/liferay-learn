@@ -17,7 +17,7 @@ Liferay Cloud Console의 원하는 환경에서 시작하십시오. 그런 다�
 
 ## 클러스터링 스케일 설정
 
-클러스터링 환경의 노드 수는 Liferay 서비스의 `LCP.json` 파일( `liferay/` 폴더)에 있는 `scale` 속성에 의해 결정됩니다. Liferay 서비스를 처음으로 배포하거나 `LCP.json` 파일에 `scale` 속성이 아직 설정되지 않은 경우 먼저 값을 `1` 로 설정한 다음 [서비스를 배포해야 합니다.](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md#deploy).
+클러스터링 환경의 노드 수는 Liferay 서비스의 `LCP.json` 파일( `liferay/` 폴더)에 있는 `scale` 속성에 의해 결정됩니다. Liferay 서비스를 처음으로 배포하거나 `LCP.json` 파일에 `scale` 속성이 아직 설정되지 않은 경우 먼저 값을 `1` 로 설정한 다음 [서비스를 배포해야 합니다.](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) .
 
 ```json
 {

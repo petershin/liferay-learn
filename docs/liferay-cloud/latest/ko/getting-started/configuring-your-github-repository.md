@@ -20,7 +20,7 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
 1. 2단계에서 복제한 리포지토리를 1단계에서 생성한 원격 리포지토리로 푸시합니다.
 
-GitHub 리포지토리를 생성, 복제 및 푸시하는 데 도움이 필요한 경우 [GitHub 문서](https://help.github.com)를 참조하십시오.
+GitHub 리포지토리를 생성, 복제 및 푸시하는 데 도움이 필요한 경우 [GitHub 문서](https://help.github.com) 를 참조하십시오.
 
 ## Jenkins 서비스와 통합
 
@@ -67,14 +67,14 @@ GitHub 리포지토리를 생성, 복제 및 푸시하는 데 도움이 필요�
 | `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
 | `LCP_CI_SCM_TOKEN`            | [access_token] |
 
-`LCP_CI_SCM_TOKEN` 값의 경우 GitHub 조직에 대해 생성된 개인 액세스 토큰을 사용합니다. 이 토큰을 만들고 액세스하는 방법에 대한 지침은 [GitHub 문서](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line)를 참조하십시오.
+`LCP_CI_SCM_TOKEN` 값의 경우 GitHub 조직에 대해 생성된 개인 액세스 토큰을 사용합니다. 이 토큰을 만들고 액세스하는 방법에 대한 지침은 [GitHub 문서](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line) 를 참조하십시오.
 
 생성된 개인 액세스 토큰에는 *repo* 및 *admin:repo_hook* 아래의 모든 범위 권한이 선택되어 있어야 합니다. *admin:repo_hook* 범위 권한은 리포지토리가 Liferay Cloud와 성공적으로 통합된 후 [](#personal-access-token-usage) 특히 제거될 수 있습니다.
 
 ![PAT를 성공적으로 사용할 수 있도록 올바른 권한을 확인하십시오.](./configuring-your-github-repository/images/05.png)
 
 ```{note}
-SAML Single Sign-On 인증으로 조직 계정을 사용하는 경우 액세스 토큰을 승인하려면 추가 단계를 수행해야 합니다. [GitHub 공식 문서](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on)을 참조하십시오.
+SAML Single Sign-On 인증으로 조직 계정을 사용하는 경우 액세스 토큰을 승인하려면 추가 단계를 수행해야 합니다. [GitHub 공식 문서](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on) 을 참조하십시오.
 ```
 
 이러한 환경 변수를 업데이트하면 Jenkins 서비스가 다시 시작됩니다. 이제 새 리포지토리의 모든 푸시된 분기 및 풀 요청이 빌드를 트리거합니다.
@@ -88,7 +88,7 @@ SAML Single Sign-On 인증으로 조직 계정을 사용하는 경우 액세스 
 Liferay Cloud가 저장소와 통합하려면 `LCP_CI_SCM_TOKEN` 값에서 참조하는 개인 액세스 토큰이 필요합니다.
 
 ```{warning}
-개인 액세스 토큰이 개인 사용자 계정에 속하고 해당 사용자가 조직에서 제거되면 모든 빌드가 완료되지 않습니다. 대신 조직에 특별히 속한 계정을 사용하십시오. 자세한 내용은 [GitHub 공식 문서](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access)를 참조하세요.
+개인 액세스 토큰이 개인 사용자 계정에 속하고 해당 사용자가 조직에서 제거되면 모든 빌드가 완료되지 않습니다. 대신 조직에 특별히 속한 계정을 사용하십시오. 자세한 내용은 [GitHub 공식 문서](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access) 를 참조하세요.
 ```
 
 기본적으로 CI 서비스가 기본 웹 후크를 사용하여 성공적으로 통합하려면 GitHub 조직의 [개인 액세스 토큰](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) 에도 `admin:repo_hook` 권한이 있어야 합니다.

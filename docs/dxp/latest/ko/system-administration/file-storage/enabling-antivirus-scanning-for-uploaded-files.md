@@ -8,7 +8,7 @@
 
 <!-- TODO: LRDOCS-9341 - Antivirus can be enabled for older versions (7.2 and below) but requires use of portal properties and a local install of ClamAV server which we do not recommend. -->
 
-바이러스에 대해 Liferay에 업로드된 모든 파일을 자동으로 검사할 수 있습니다. 바이러스 백신 스캐너를 활성화하면 [Documents and Media](../../content-authoring-and-management/documents-and-media.md), [Message Boards](../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md)등과 같은 Liferay 애플리케이션에 업로드할 때 파일을 확인합니다. 바이러스가 발견되면 사용자가 거부하도록 보고됩니다.
+바이러스에 대해 Liferay에 업로드된 모든 파일을 자동으로 검사할 수 있습니다. 바이러스 백신 스캐너를 활성화하면 [문서 및 미디어](../../content-authoring-and-management/documents-and-media.md) , [Message Boards](../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md)등과 같은 Liferay 애플리케이션에 업로드할 때 파일을 확인합니다. 바이러스가 발견되면 사용자가 거부하도록 보고됩니다.
 
 ![스캐너는 문서 및 미디어 및 기타 Liferay 응용 프로그램에 업로드할 때 바이러스에 감염된 파일을 감지합니다.](./enabling-antivirus-scanning-for-uploaded-files/images/01.png)
 
@@ -16,7 +16,7 @@ Liferay는 [ClamAV Daemon](https://www.clamav.net/documents/scanning#clamd) (Cla
 
 바이러스 백신 검사를 활성화하는 방법은 다음과 같습니다.
 
-1. 별도의 서버에서 [Clamd](https://www.clamav.net/documents/scanning#clamd)을 구성하고 시작합니다.
+1. 별도의 서버에서 [Clamd](https://www.clamav.net/documents/scanning#clamd) 을 구성하고 시작합니다.
 
     ```{important}
     Clamd를 시작하기 전에 ClamAV 데이터베이스를 로드하십시오.

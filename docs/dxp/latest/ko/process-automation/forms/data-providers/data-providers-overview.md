@@ -12,7 +12,7 @@
 일부 데이터 소스는 [restcountries.com](https://restcountries.com) 데이터 공급자와 같은 타사 소스에서 가져옵니다. Liferay DXP에는 자체 등록 웹 서비스도 있습니다. 로컬 서버를 실행 중인 경우 목록은 [http://localhost:8080/api/jsonws](http://localhost:8080/api/jsonws) 을 참조하십시오. 국가 목록을 채우는 경우 두 개의 `get-countries` JSON 웹 서비스를 찾을 수 있습니다. 어느 쪽이든 작동합니다. _Invoke_ 을 클릭하여 결과를 생성합니다.
 
 ```{warning}
-로컬 테스트 환경에서 데이터 공급자와 함께 Liferay의 웹 서비스를 사용하여 테스트하려면 로컬 네트워크 액세스를 활성화해야 합니다. [로컬 네트워크의 데이터에 대한 액세스 활성화](./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network)를 참조하십시오. .
+로컬 테스트 환경에서 데이터 공급자와 함께 Liferay의 웹 서비스를 사용하여 테스트하려면 로컬 네트워크 액세스를 활성화해야 합니다. [로컬 네트워크의 데이터에 대한 액세스 활성화](./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network) 를 참조하십시오. .
 ```
 
 _결과_ 탭에는 아프가니스탄에 대한 이 레코드와 같이 JSON 구문을 사용하는 국가 목록이 표시됩니다.
@@ -84,7 +84,7 @@ REST 서비스의 응답을 필터링하도록 REST 서비스의 경로 또는 �
 
 여러 입력을 추가할 수 있습니다. 입력 값을 지정하는 방법을 제공하려면 [Autofill Form Rule](../form-rules/using-the-autofill-rule.md)을 사용하십시오. 사용자는 하나의 필드에 입력을 입력하고 해당 입력은 REST 서비스로 전송됩니다. REST 서비스의 응답 데이터는 입력 매개변수로 필터링됩니다.
 
-출력 경로 필드는 [JsonPath 구문](https://github.com/json-path/JsonPath)로 지정되므로 항상 `$`로 시작해야 합니다. 경로에서 반환된 데이터 유형은 유형 필드에서 선택한 유형과 일치해야 합니다. `restcountries.com` 서비스를 사용하여 경로 필드에 enter `$..name` 를 입력하여 `이름` 필드를 출력으로 지정합니다. 구성할 더 복잡한 JsonPath 표현식이 있는 경우(예: 인구가 1억 명 이상인 모든 국가의 이름이 필요한 경우---`$..[?(@.population>100000000)].name` with the `restcountries.com` 서비스), [this one](http://jsonpath.herokuapp.com/) 또는 [this one](https://jsonpath.com/)과 같은 `JsonPath` 평가자를 사용하는 것이 좋습니다.
+출력 경로 필드는 [JsonPath 구문](https://github.com/json-path/JsonPath) 로 지정되므로 항상 `$`로 시작해야 합니다. 경로에서 반환된 데이터 유형은 유형 필드에서 선택한 유형과 일치해야 합니다. `restcountries.com` 서비스를 사용하여 경로 필드에 enter `$..name` 를 입력하여 `이름` 필드를 출력으로 지정합니다. 구성할 더 복잡한 JsonPath 표현식이 있는 경우(예: 인구가 1억 명 이상인 모든 국가의 이름이 필요한 경우---`$..[?(@.population>100000000)].name` with the `restcountries.com` 서비스), [this one](http://jsonpath.herokuapp.com/) 또는 [this one](https://jsonpath.com/) 과 같은 `JsonPath` 평가자를 사용하는 것이 좋습니다.
 
 ```{tip}
 하나의 값을 표시하지만 데이터베이스에 다른 값을 유지하려면 둘 다 경로 필드에 세미콜론으로 구분하여 입력하십시오: `$..name;$..numericCode`

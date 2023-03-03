@@ -1,6 +1,6 @@
 # 청사진 요소 참조 검색
 
-요소는 [검색 청사진](understanding-search-blueprints.md#what-is-a-blueprint)의 기본 빌딩 블록 중 하나입니다. 사용 가능한 모든 요소를 탐색하려면 전역 메뉴(![Global](../../../images/icon-applications-menu.png)) &rarr; 애플리케이션 &rarr; 청사진으로 이동합니다. 요소 탭을 열고 관심 있는 요소를 찾아 클릭합니다. 요소의 전체 JSON 표현이 표시됩니다.
+요소는 [검색 청사진](understanding-search-blueprints.md#what-is-a-blueprint) 의 기본 빌딩 블록 중 하나입니다. 사용 가능한 모든 요소를 탐색하려면 전역 메뉴(![Global](../../../images/icon-applications-menu.png)) &rarr; 애플리케이션 &rarr; 청사진으로 이동합니다. 요소 탭을 열고 관심 있는 요소를 찾아 클릭합니다. 요소의 전체 JSON 표현이 표시됩니다.
 
 청사진에 요소를 추가하려면 청사진 [을 만들고 Query Builder](./creating-and-managing-search-blueprints.md) Query Elements 사이드바를 사용하여 요소를 검색하고 추가 &rarr;.
 
@@ -10,7 +10,7 @@ Blueprints &rarr; 쿼리 요소 화면에서 작업하는 동안 요소에 대�
 
 블루프린트의 제목 표시줄에 있는 토글 스사이트를 사용하여 블루프린트에서 각 요소를 비활성화하거나 활성화할 수 있습니다. Blueprint에서 요소를 간소화하여 보기 위해 요소의 제목 표시줄에 있는 아래쪽 화살표 아이콘(![Down Arrow Icon](../../../images/icon-angle-down.png))을 사용하여 요소의 콘텐츠를 축소할 수 있습니다.
 
-각 요소에는 구성 옵션이 있으며, 그 중 다수는 Elasticsearch [Query DSL 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl.html)에 정의된 쿼리 속성에 직접적으로 해당합니다. 특정 쿼리 유형에 대한 링크는 아래에 적절하게 제공됩니다.
+각 요소에는 구성 옵션이 있으며, 그 중 다수는 Elasticsearch [Query DSL 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl.html) 에 정의된 쿼리 속성에 직접적으로 해당합니다. 특정 쿼리 유형에 대한 링크는 아래에 적절하게 제공됩니다.
 
 ## 일부 결과 향상
 
@@ -187,7 +187,7 @@ _외부 참조:_ Elasticsearch [용어 쿼리](https://www.elastic.co/guide/en/e
 
 ## 결과 필터링
 
-검색 결과를 필터링하면 예 또는 아니오로 질문하게 됩니다. 문서의 필드가 쿼리와 일치합니까? 이 경우 관련성에 대해 걱정하지 않아도 됩니다(즉, 얼마나 잘 일치합니까?). 검색 결과에 반환되는 범위를 좁힐 수 있도록 여러 필터링 요소가 제공됩니다. 그들은 모두 메인 [검색 요청](./understanding-search-blueprints.md#understanding-the-search-request)의 `필터` 블록에 쿼리를 제공합니다.
+검색 결과를 필터링하면 예 또는 아니오로 질문하게 됩니다. 문서의 필드가 쿼리와 일치합니까? 이 경우 관련성에 대해 걱정하지 않아도 됩니다(즉, 얼마나 잘 일치합니까?). 검색 결과에 반환되는 범위를 좁힐 수 있도록 여러 필터링 요소가 제공됩니다. 그들은 모두 메인 [검색 요청](./understanding-search-blueprints.md#understanding-the-search-request) 의 `필터` 블록에 쿼리를 제공합니다.
 
 ### 정확한 용어 일치로 필터링
 
@@ -223,7 +223,7 @@ _외부 참조:_ [Elasticsearch 범위 쿼리](https://www.elastic.co/guide/en/e
 
 게시된 콘텐츠로 검색을 제한합니다. 이 요소는 Liferay 검색 프레임워크 쿼리 절의 기능을 복제하며 고급 사용 사례에 가장 유용합니다. 예를 들어 Liferay의 검색 프레임워크가 기본 검색 절을 제공하지 못하도록 비활성화한 경우 이 요소를 사용하여 손실된 기능의 일부를 복원할 수 있습니다.
 
-이 요소는 `상태` 필드에 대한 용어 쿼리를 사용하여 결과를 필터링하고 해당 값을 [Liferay의 작업 흐름 시스템](../../../process-automation/workflow/introduction-to-workflow.md#understanding-workflow-status)에 게시된 콘텐츠를 나타내는 `0`의 하드코딩된 값과 일치시킵니다.
+이 요소는 `상태` 필드에 대한 용어 쿼리를 사용하여 결과를 필터링하고 해당 값을 [Liferay의 작업 흐름 시스템](../../../process-automation/workflow/introduction-to-workflow.md#understanding-workflow-status) 에 게시된 콘텐츠를 나타내는 `0`의 하드코딩된 값과 일치시킵니다.
 
 ### 현재 사이트로 검색 제한
 

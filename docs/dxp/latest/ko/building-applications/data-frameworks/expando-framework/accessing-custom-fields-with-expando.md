@@ -15,7 +15,7 @@
 
     ![사용자를 위한 f5a3Text라는 사용자 정의 필드를 생성합니다.](./accessing-custom-fields-with-expando/images/01.png)
 
-1. [Accessing Expando](./liferay-f5a3.zip)를 다운로드하고 압축을 풉니다.
+1. [Accessing Expando](./liferay-f5a3.zip) 를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/expando-framework/liferay-f5a3.zip -O

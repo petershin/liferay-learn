@@ -16,7 +16,7 @@
 />
 ```
 
-[관리 도구 모음으로 항목 필터링 및 정렬](https://help.liferay.com/hc/en-us/articles/360029526932-Filtering-and-Sorting-Items-with-the-Management-Toolbar)에서 표시 컨텍스트의 사용 사례 예를 볼 수 있습니다. 관리 도구 모음의 구성에는 디스플레이 컨텍스트가 필요하지 않습니다. 표시 컨텍스트를 통해 관리 도구 모음에 대한 구성 옵션을 원하는 만큼 제공할 수 있습니다.
+[관리 도구 모음으로 항목 필터링 및 정렬](https://help.liferay.com/hc/ko/articles/360029526932-Filtering-and-Sorting-Items-with-the-Management-Toolbar) 에서 표시 컨텍스트의 사용 사례 예를 볼 수 있습니다. 관리 도구 모음의 구성에는 디스플레이 컨텍스트가 필요하지 않습니다. 표시 컨텍스트를 통해 관리 도구 모음에 대한 구성 옵션을 원하는 만큼 제공할 수 있습니다.
 
 ## 확인란 및 작업
 
@@ -253,7 +253,7 @@ viewTypes="<%=
 %>"
 ```
 
-위의 예는 JSP에서 보기 유형을 구성하는 방법을 보여 [각 보기 유형을 사용할 시기도 지정해야](https://help.liferay.com/hc/en-us/articles/360029848351-Implementing-the-View-Types).
+위의 예는 JSP에서 보기 유형을 구성하는 방법을 보여 [각 보기 유형을 사용할 시기도 지정해야](https://help.liferay.com/hc/ko/articles/360029848351-Implementing-the-View-Types) .
 
 ![관리 도구 모음은 세 가지 보기 유형 옵션을 제공합니다.](./clay-management-toolbar/images/11.png)
 

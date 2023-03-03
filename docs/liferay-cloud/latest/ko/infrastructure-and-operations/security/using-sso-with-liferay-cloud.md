@@ -37,7 +37,7 @@ Microsoft ADFS를 사용하는 클라이언트는 SAML을 사용하여 SSO를 �
 | IdP 싱글 사인온 URL | 기본 설정은 `/adfs/ls`입니다. 예: `<http://adfs.example.com/adfs/ls/>`              |
 | IdP 서명 인증서     | DER로 인코딩된 바이너리 X.509 인증서 파일                                                      |
 
-IdP 메타데이터가 생성되면 [Liferay Cloud 팀과 티켓을 엽니다](https://help.liferay.com/hc/). IdP 메타데이터는 XML 파일 또는 URL 엔드포인트(`<https://localhost:8080/c/saml/metadata>` 가 기본 예임)의 형태로 전송될 수 있습니다.
+IdP 메타데이터가 생성되면 [Liferay Cloud 팀과 티켓을 엽니다](https://help.liferay.com/hc/) . IdP 메타데이터는 XML 파일 또는 URL 엔드포인트(`<https://localhost:8080/c/saml/metadata>` 가 기본 예임)의 형태로 전송될 수 있습니다.
 
 ### Liferay Cloud 팀은 제공된 IdP 데이터를 가져오고 서비스 공급자 메타데이터를 제공합니다.
 

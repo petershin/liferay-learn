@@ -15,7 +15,7 @@ Liferay DXP는 AWS S3 저장소와 동일한 구성을 사용하도록 S3 호환
    * **S3 Region**: S3가 사용자가 생성한 버킷을 저장하는 지역을 나타내는 S3 Region을 설정합니다.
 
    ```{important}
-   현재 상점은 *HMAC 자격 증명*만 지원합니다. 자세한 정보는 공식 [IBM Cloud Object Storage 문서](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main)를 참조하세요.
+   현재 상점은 *HMAC 자격 증명*만 지원합니다. 자세한 정보는 공식 [IBM Cloud Object Storage 문서](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main) 를 참조하세요.
    ```
 
 1. 완료되면 *저장* 을 클릭합니다.

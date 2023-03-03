@@ -4,18 +4,18 @@
 
 ## 업그레이드 전 인덱스 백업
 
-Liferay의 데이터베이스에서 다시 인덱싱하여 인덱싱된 데이터를 복원할 수 있는 경우에도 모든 업그레이드 시나리오에서 인덱스를 백업하는 것이 가장 좋습니다. 데이터가 다음과 같은 경우 [앱별 색인의 스냅샷](#backing-up-and-restoring-indexes-used-for-primary-storage)(Liferay DXP 7.2 및 7.3의 Liferay 검색 조정 색인과 같음)을 찍는 것이 필수적입니다. 검색 색인에만 저장됩니다. 새 Elasticsearch 서버를 설정할 때 스냅샷을 사용하여 이전 데이터(예: 동의어 집합 및 결과 순위)를 복원할 수 있습니다. [스냅샷 및 복원 버전 호환성](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html#snapshot-restore-version-)에 대한 Elasticsearch 문서를 반드시 읽으십시오. 호환성) 이 접근 방식을 시도하기 전에.
+Liferay의 데이터베이스에서 다시 인덱싱하여 인덱싱된 데이터를 복원할 수 있는 경우에도 모든 업그레이드 시나리오에서 인덱스를 백업하는 것이 가장 좋습니다. 데이터가 다음과 같은 경우 [앱별 색인의 스냅샷](#backing-up-and-restoring-indexes-used-for-primary-storage) (Liferay DXP 7.2 및 7.3의 Liferay 검색 조정 색인과 같음)을 찍는 것이 필수적입니다. 검색 색인에만 저장됩니다. 새 Elasticsearch 서버를 설정할 때 스냅샷을 사용하여 이전 데이터(예: 동의어 집합 및 결과 순위)를 복원할 수 있습니다. [스냅샷 및 복원 버전 호환성](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html#snapshot-restore-version-) 에 대한 Elasticsearch 문서를 반드시 읽으십시오. 호환성) 이 접근 방식을 시도하기 전에.
 
 다음은 몇 가지 대표적인 업그레이드 시나리오입니다.
 
 * Liferay와 독립적으로 Elasticsearch 클러스터 업그레이드: 모든 인덱스를 백업하는 것이 좋습니다. 모든 인덱스가 시스템에 남아 있으므로 스냅샷에서 데이터를 복원할 필요가 없습니다.
 * Liferay를 업그레이드하고 동일한 Elasticsearch 클러스터에 연결: 모든 인덱스를 백업하는 것이 좋습니다. 모든 인덱스가 시스템에 남아 있으므로 스냅샷에서 데이터를 복원할 필요가 없습니다.
-* Liferay 업그레이드 및 다른 Elasticsearch 클러스터에 연결: 모든 인덱스를 백업하는 것이 좋습니다. 스냅샷에서 복원하는 것은 모든 기본 스토리지 인덱스에 필요합니다. Liferay의 검색 조정 기능(결과 순위 및 동의어 집합) 중 하나를 사용하는 경우 [인덱싱된 데이터를 Liferay 데이터베이스로 가져오기](upgrading-search-infrastructure.md#importing-the-search-tuning-indexes)도 수행해야 합니다. -in-7-4) Liferay DXP 7.4로 업그레이드한 후.
+* Liferay 업그레이드 및 다른 Elasticsearch 클러스터에 연결: 모든 인덱스를 백업하는 것이 좋습니다. 스냅샷에서 복원하는 것은 모든 기본 스토리지 인덱스에 필요합니다. Liferay의 검색 조정 기능(결과 순위 및 동의어 집합) 중 하나를 사용하는 경우 [인덱싱된 데이터를 Liferay 데이터베이스로 가져오기](upgrading-search-infrastructure.md#importing-the-search-tuning-indexes) 도 수행해야 합니다. -in-7-4) Liferay DXP 7.4로 업그레이드한 후.
 
 ## Elasticsearch 클러스터 백업 생성
 
 ```{tip}
-[Kibana 7.x UI](https://www.elastic.co/guide/en/kibana/7.x/snapshot-repositories.html)를 통해 스냅샷을 생성하고 관리하는 것이 편리합니다.
+[Kibana 7.x UI](https://www.elastic.co/guide/en/kibana/7.x/snapshot-repositories.html) 를 통해 스냅샷을 생성하고 관리하는 것이 편리합니다.
 ```
 
 다음 세 단계로 Elasticsearch 클러스터를 백업하고 백업 복원을 테스트합니다. 
@@ -27,7 +27,7 @@ Liferay의 데이터베이스에서 다시 인덱싱하여 인덱싱된 데이�
 1. 스냅샷에서 복원
 
 ```{note}
-자세한 내용은 Elastic의 [Elasticsearch 관리 가이드](https://www.elastic.co/guide/en/elasticsearch/guide/master/administration.html), 특히 [스냅샷 및 복원 모듈]을 참조하세요. (https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html).
+자세한 내용은 Elastic의 [Elasticsearch 관리 가이드](https://www.elastic.co/guide/en/elasticsearch/guide/master/administration.html) , 특히 [스냅샷 및 복원 모듈]을 참조하세요. (https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html).
 ```
 
 ### 리포지토리 만들기
@@ -39,7 +39,7 @@ Liferay의 데이터베이스에서 다시 인덱싱하여 인덱싱된 데이�
 * HDFS(하둡 분산 파일 시스템)
 * Azure 클라우드
 
-공유 파일 시스템에 스냅샷을 저장하려면 먼저 [`path.repo` 설정](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html#snapshots-filesystem-repository)를 사용하여 각 노드의 `elasticsearch.yml` 에 공유 파일 시스템 경로를 등록합니다. 예를 들어,
+공유 파일 시스템에 스냅샷을 저장하려면 먼저 [`path.repo` 설정](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html#snapshots-filesystem-repository) 를 사용하여 각 노드의 `elasticsearch.yml` 에 공유 파일 시스템 경로를 등록합니다. 예를 들어,
 
 ```yaml
 path.repo: ["path/to/shared/file/system/"]
@@ -69,7 +69,7 @@ PUT /_snapshot/test_backup
 
 ### 클러스터의 스냅샷 생성
 
-가장 쉬운 스냅샷 접근 방식은 [클러스터에 있는 모든 인덱스의 스냅샷](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-take-snapshot.html)을 만드는 것입니다. 예를 들어,
+가장 쉬운 스냅샷 접근 방식은 [클러스터에 있는 모든 인덱스의 스냅샷](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-take-snapshot.html) 을 만드는 것입니다. 예를 들어,
 
 ```bash
 PUT /_snapshot/test_backup/snapshot_1
@@ -195,7 +195,7 @@ POST _reindex/
 DELETE /restored_liferay-20116index_3
 ```
 
-아무도 프로덕션 시스템의 치명적인 오류를 좋아하지 않지만 Elasticsearch의 스냅샷 생성 및 인덱스 복원 API는 재해가 발생하는 경우 검색 클러스터를 복원할 수 있다는 사실을 알고 안심할 수 있도록 도와줍니다. 자세한 내용과 옵션은 Elastic의 스냅샷 및 복원 문서 [을](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html)하십시오.
+아무도 프로덕션 시스템의 치명적인 오류를 좋아하지 않지만 Elasticsearch의 스냅샷 생성 및 인덱스 복원 API는 재해가 발생하는 경우 검색 클러스터를 복원할 수 있다는 사실을 알고 안심할 수 있도록 도와줍니다. 자세한 내용과 옵션은 Elastic의 스냅샷 및 복원 문서 [을](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) 하십시오.
 
 ## 기본 스토리지에 사용되는 인덱스 백업 및 복원
 
@@ -215,7 +215,7 @@ Elasticsearch 클러스터의 [모든 마스터 및 데이터 노드](https://ww
 
 1. 모든 Elasticsearch 노드를 다시 시작합니다.
 
-1. [스냅샷 리포지토리를 등록합니다](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html). 다음 `스냅샷` API 요청을 실행할 수 있습니다(예: Kibana의 Dev Tools 콘솔을 통해). 
+1. [스냅샷 리포지토리를 등록합니다](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html) . 다음 `스냅샷` API 요청을 실행할 수 있습니다(예: Kibana의 Dev Tools 콘솔을 통해). 
 
     ```json
     PUT /_snapshot/elasticsearch_local_backup
@@ -230,7 +230,7 @@ Elasticsearch 클러스터의 [모든 마스터 및 데이터 노드](https://ww
 
 새 Elasticsearch 버전으로 업그레이드하는 경우 업그레이드 후 Elasticsearch에서 이와 동일한 명령을 사용하여 스냅샷 리포지토리를 등록할 수 있습니다.
 
-1. [스냅샷 생성](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-take-snapshot.html): 
+1. [스냅샷 생성](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-take-snapshot.html) : 
 
     ```json
     PUT /_snapshot/elasticsearch_local_backup/snapshot1?wait_for_completion=true
@@ -243,7 +243,7 @@ Elasticsearch 클러스터의 [모든 마스터 및 데이터 노드](https://ww
 
 모든 Liferay 인덱스에 대한 스냅샷을 생성하려면 `"indices": "liferay*,workflow-metrics*"` 을 대신 사용할 수 있습니다. 업그레이드 시나리오에 있는 경우 Liferay DXP 7.2 및 7.3의 Synonym Sets 및 Result Rankings 인덱스와 같이 데이터베이스에서 다시 생성할 수 없는 인덱스의 스냅샷만 찍는 것이 좋습니다.
 
-1. 다른 이름을 사용하여 스냅샷의 특정 인덱스를 [복원](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-restore-snapshot.html)하려면 ` 다음과 유사한 restore` API 호출: 
+1. 다른 이름을 사용하여 스냅샷의 특정 인덱스를 [복원](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-restore-snapshot.html) 하려면 ` 다음과 유사한 restore` API 호출: 
 
     ```json
     POST /_snapshot/elasticsearch_local_backup/snapshot1/_restore

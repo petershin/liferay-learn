@@ -22,7 +22,7 @@ uuid: 4d712f4d-f49f-4132-bf0d-0bc60a5d279d
 
 1. *레이아웃* 탭을 클릭하고 원하는 레이아웃을 선택합니다.
 
-1. *Layout* 탭으로 이동하여 원하는 [Fields 탭](./designing-object-layouts.md#fields-tabs)에 대해 *Actions* (![Actions Button](../../../../images/icon-actions.png))를 클릭하고 *Add Categorization*선택합니다.
+1. *Layout* 탭으로 이동하여 원하는 [Fields 탭](./designing-object-layouts.md#fields-tabs) 에 대해 *Actions* (![Actions Button](../../../../images/icon-actions.png))를 클릭하고 *Add Categorization*선택합니다.
 
    ![작업 버튼을 클릭하고 분류 추가를 선택합니다.](./adding-categorization-to-fields-tabs/images/02.png)
 

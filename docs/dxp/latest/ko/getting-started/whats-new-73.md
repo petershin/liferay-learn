@@ -72,17 +72,17 @@ Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사�
 
 ### 콘텐츠 감사 도구
 
-새로운 콘텐츠 대시보드에는 [유형별 콘텐츠 감사](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md#content-audit-tool)를 더 쉽게 해주는 도구가 포함되어 있습니다. 어휘 선택 및 콘텐츠 감사 그래프는 어휘의 각 범주에 대한 기존 자산 수를 계산합니다. 범주, 태그, 작성자, 자산 하위 유형, 사이트 등으로 필터링하여 그래프에 표시된 자산을 조정할 수 있습니다.
+새로운 콘텐츠 대시보드에는 [유형별 콘텐츠 감사](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md#content-audit-tool) 를 더 쉽게 해주는 도구가 포함되어 있습니다. 어휘 선택 및 콘텐츠 감사 그래프는 어휘의 각 범주에 대한 기존 자산 수를 계산합니다. 범주, 태그, 작성자, 자산 하위 유형, 사이트 등으로 필터링하여 그래프에 표시된 자산을 조정할 수 있습니다.
 
 ![콘텐츠 감사 도구는 보유하고 있는 콘텐츠의 종류를 확인하는 데 도움이 됩니다.](./whats-new-73/images/08.gif)
 
 ### 확장된 분류 기능
 
-7.3에서는 [가시성을 내부 또는 공개로 설정](../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-하기 위해 어휘에 새로운 구성을 추가했습니다. tags.md#vocabulary-visibility). 즉시 사용 가능한 새로운 대상, 단계 및 주제 글로벌 어휘는 사이트 전체에서 보다 체계적인 분류를 제공합니다.
+7.3에서는 [가시성을 내부 또는 공개로 설정](../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-하기 위해 어휘에 새로운 구성을 추가했습니다. tags.md#vocabulary-visibility) . 즉시 사용 가능한 새로운 대상, 단계 및 주제 글로벌 어휘는 사이트 전체에서 보다 체계적인 분류를 제공합니다.
 
 ## 출판 관리
 
-[Publications](../site-building/publishing-tools/publications.md) 콘텐츠 제작자가 변경 사항을 준비하고 일정에 따라 게시할 수 있는 새로운 기능입니다. 이미지 업데이트, 복사 및 새 페이지 추가와 관련된 특별 계절 프로모션을 진행해야 하는 경우 게시를 생성하고 필요한 사용자를 초대하여 게시하기 전에 변경하도록 할 수 있습니다. 한 번에 여러 출판물을 작업할 수 있으므로 한 번에 많은 업데이트를 만들고 일정에 따라 롤아웃할 수 있습니다.
+[출판](../site-building/publishing-tools/publications.md) 콘텐츠 제작자가 변경 사항을 준비하고 일정에 따라 게시할 수 있는 새로운 기능입니다. 이미지 업데이트, 복사 및 새 페이지 추가와 관련된 특별 계절 프로모션을 진행해야 하는 경우 게시를 생성하고 필요한 사용자를 초대하여 게시하기 전에 변경하도록 할 수 있습니다. 한 번에 여러 출판물을 작업할 수 있으므로 한 번에 많은 업데이트를 만들고 일정에 따라 롤아웃할 수 있습니다.
 
 ![간행물은 선택한 일정에 따라 사이트를 업데이트하는 방법을 제공합니다.](./whats-new-73/images/09.gif)
 
@@ -143,7 +143,7 @@ Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사�
 
 ![앱 빌더는 로우 코드 애플리케이션을 위한 브라우저 내 개발 환경을 제공합니다.](./whats-new-73/images/19.png)
 
-[App Builder](../building-applications/app-builder.md) Data Engine이 지원하는 Liferay DXP를 위한 새로운 로우 코드 애플리케이션 개발 솔루션입니다. 비즈니스 사용자는 직관적인 GUI를 통해 양식과 테이블 보기를 정의하고 워크플로를 활용하여 비즈니스 프로세스를 디지털화 및 자동화한다는 목표로 애플리케이션을 구축할 수 있습니다. 응용 프로그램은 독립형 방식으로 배포하거나 위젯으로 또는 제품 메뉴를 통해 페이지에 추가할 수 있습니다.
+[앱 빌더](../building-applications/app-builder.md) Data Engine이 지원하는 Liferay DXP를 위한 새로운 로우 코드 애플리케이션 개발 솔루션입니다. 비즈니스 사용자는 직관적인 GUI를 통해 양식과 테이블 보기를 정의하고 워크플로를 활용하여 비즈니스 프로세스를 디지털화 및 자동화한다는 목표로 애플리케이션을 구축할 수 있습니다. 응용 프로그램은 독립형 방식으로 배포하거나 위젯으로 또는 제품 메뉴를 통해 페이지에 추가할 수 있습니다.
 
 ### 양식 보기 규칙 및 필드 세트
 
@@ -159,7 +159,7 @@ Liferay DXP의 최신 릴리스에는 많은 중요한 새 기능과 개선 사�
 
 > 요구되는 기부금
 
-App Builder에는 [승인을 위한 워크플로 프로세스](../building-applications/app-builder/creating-a-workflow-powered-application.md)가 포함되어 있습니다. 프로세스의 단계를 정의하고 애플리케이션의 각 단계에서 요청 및/또는 표시해야 하는 정보를 지정할 수 있습니다. 또한 [Workflow Metrics](#workflow-metrics-improvements)를 사용하여 앱 프로세스의 성능과 상태를 이해할 수 있습니다.
+App Builder에는 [승인을 위한 워크플로 프로세스](../building-applications/app-builder/creating-a-workflow-powered-application.md)가 포함되어 있습니다. 프로세스의 단계를 정의하고 애플리케이션의 각 단계에서 요청 및/또는 표시해야 하는 정보를 지정할 수 있습니다. 또한 [Workflow Metrics](#workflow-metrics-improvements) 를 사용하여 앱 프로세스의 성능과 상태를 이해할 수 있습니다.
 
 ![프로세스 기반 앱](./whats-new-73/images/22.png)
 
@@ -239,7 +239,7 @@ App Builder의 내부에서 Data Engine은 Data Engine을 사용하여 애플리
 
 ## 글로벌 메뉴
 
-새로운 응용 프로그램 서랍에는 워크플로, 양식 및 [Commerce](https://learn.liferay.com/commerce/latest/en/index.html)과 같은 교차 사이트 응용 프로그램이 있습니다. 
+새로운 응용 프로그램 서랍에는 워크플로, 양식 및 [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 과 같은 교차 사이트 응용 프로그램이 있습니다. 
 
 ![글로벌 메뉴는 크로스 사이트 애플리케이션에 대한 편리한 액세스를 제공합니다.](./whats-new-73/images/29.png)
 

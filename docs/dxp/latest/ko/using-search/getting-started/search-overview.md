@@ -51,9 +51,9 @@
 
 서비스 공급자 인터페이스와 API를 사용하여 검색 기능을 확장하고 호출할 수 있습니다.
 
-* 서비스 제공자 인터페이스(SPI)는 구현하기 위한 것입니다. 소스 코드에서 이들은 `-spi` 로 끝나는 모듈에서 찾을 수 있습니다(예: [`Portal-search-spi` 모듈](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-spi)).
+* 서비스 제공자 인터페이스(SPI)는 구현하기 위한 것입니다. 소스 코드에서 이들은 `-spi` 로 끝나는 모듈에서 찾을 수 있습니다(예: [`Portal-search-spi` 모듈](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-spi) ).
 
-* API에는 자체 코드에서 호출할 수 있는 메서드가 포함되어 있습니다. 소스 코드에서 이들은 `-api` 로 끝나는 모듈에서 찾을 수 있습니다(예: [`portal-search-api` module](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-api)).
+* API에는 자체 코드에서 호출할 수 있는 메서드가 포함되어 있습니다. 소스 코드에서 이들은 `-api` 로 끝나는 모듈에서 찾을 수 있습니다(예: [`portal-search-api` module](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-api) ).
 
 자세한 내용은 [개발자 안내서](../developer-guide.md) 을 참조하십시오.
 

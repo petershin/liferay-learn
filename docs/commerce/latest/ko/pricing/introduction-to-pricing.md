@@ -7,12 +7,12 @@ uuid: 32a5f0dd-4431-4261-b354-efe41ffd6b04
 Liferay는 제품 가격을 미세 조정할 수 있는 강력한 가격 책정 시스템을 제공합니다. 단일 제품 SKU에 대해 여러 가격 항목을 정의하고 각 가격을 받을 수 있는 계정, 계정 그룹 및 채널을 결정할 수 있습니다. 동일한 SKU에 대해 여러 가격 엔터티가 있는 경우 상거래 가격 책정 엔진은 각 채널 고객에 대해 사용해야 하는 엔터티를 계산합니다.
 
 ```{note}
-다음 개요에서는 Commerce Pricing Engine v2.0+에 대해 설명합니다. 이 엔진 버전은 Commerce 3.0+ 및 Portal/DXP 7.3+에 사용되는 기본 알고리즘입니다. Commerce 2.1.x 및 이전 버전은 기본적으로 Commerce의 [Pricing Engine v1.0](#pricing-engine-v1-0-reference)을 사용합니다. 원하는 경우 인스턴스에 사용되는 [가격 엔진 버전을 변경](#enabling-pricing-engine-v2-0-in-commerce-2-1-x)할 수 있습니다.
+다음 개요에서는 Commerce Pricing Engine v2.0+에 대해 설명합니다. 이 엔진 버전은 Commerce 3.0+ 및 Portal/DXP 7.3+에 사용되는 기본 알고리즘입니다. Commerce 2.1.x 및 이전 버전은 기본적으로 Commerce의 [Pricing Engine v1.0](#pricing-engine-v1-0-reference) 을 사용합니다. 원하는 경우 인스턴스에 사용되는 [가격 엔진 버전을 변경](#enabling-pricing-engine-v2-0-in-commerce-2-1-x) 할 수 있습니다.
 ```
 
 ## 상업 가격 책정 시스템의 구성 요소
 
-Liferay에서 모든 제품은 카탈로그에 저장되며 각 카탈로그에는 기본 [기본 가격표](#base-price-list) 및 [기본 판촉 목록](#base-promotion-list)이 있습니다. 이 목록은 카탈로그에 포함된 모든 제품 SKU의 기본 가격 항목을 저장하는 데 사용되며 모든 고객이 사용할 수 있습니다. 또한 사용자 정의 [가격 목록](#price-lists) 및 [판촉 목록](#promotion-lists) 을 생성하여 더 대상이 지정되고 구성 가능한 가격 엔터티를 정의할 수 있습니다. 각 항목의 일부로 수량에 따라 제품의 특별 가격을 설정하는 [가격 계층](#price-tiers) 정의할 수도 있습니다. 마지막으로, 무시하지 않고 가격 항목 위에 적용되는 [할인](#discounts) 만듭니다.
+Liferay에서 모든 제품은 카탈로그에 저장되며 각 카탈로그에는 기본 [기본 가격표](#base-price-list) 및 [기본 판촉 목록](#base-promotion-list) 이 있습니다. 이 목록은 카탈로그에 포함된 모든 제품 SKU의 기본 가격 항목을 저장하는 데 사용되며 모든 고객이 사용할 수 있습니다. 또한 사용자 정의 [가격 목록](#price-lists) 및 [판촉 목록](#promotion-lists) 을 생성하여 더 대상이 지정되고 구성 가능한 가격 엔터티를 정의할 수 있습니다. 각 항목의 일부로 수량에 따라 제품의 특별 가격을 설정하는 [가격 계층](#price-tiers) 정의할 수도 있습니다. 마지막으로, 무시하지 않고 가격 항목 위에 적용되는 [할인](#discounts) 만듭니다.
 
 ### 기준 가격표
 

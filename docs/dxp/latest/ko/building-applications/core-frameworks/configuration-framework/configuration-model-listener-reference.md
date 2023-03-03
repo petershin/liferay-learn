@@ -6,7 +6,7 @@
 * `@Component` 주석으로 리스너를 등록합니다. `service = ConfigurationModelListener.class`
 * 리스너가 트리거될 때 발생하는 작업에 대한 사용자 정의 논리를 추가하십시오.
 
-Liferay의 [`PasswordPoliciesConfigurationModelListener`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/password-policies-admin/password-policies-admin-web/src/main/java/com/liferay/password/policies/admin/web/internal/configuration/persistence/listener/PasswordPoliciesConfigurationModelListener.java)에서 리스너 구현을 참조하십시오.
+Liferay의 [`PasswordPoliciesConfigurationModelListener`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/password-policies-admin/password-policies-admin-web/src/main/java/com/liferay/password/policies/admin/web/internal/configuration/persistence/listener/PasswordPoliciesConfigurationModelListener.java) 에서 리스너 구현을 참조하십시오.
 
 다음 사항에 유의하십시오.
 

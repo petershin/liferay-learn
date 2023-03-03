@@ -1,6 +1,6 @@
 # SAML 인증 프로세스 개요
 
-IdP와 SP 모두 Single Sign On 프로세스를 시작할 수 있으며 각각에 따라 SSO 흐름이 다릅니다. 시작 방법에 관계없이 SSO는 SP와 IdP 사이의 HTTPS에 대해 구성되므로 모든 전송 수준 통신이 암호화됩니다. SAML 요청은 [SAML 2.0 사양](http://saml.xml.org/saml-specifications)에 정의된 SAML 웹 브라우저 SSO 프로필을 사용하여 Liferay DXP에 구성된 인증서를 사용하여 서명됩니다. 모든 경우에 응답은 HTTP-POST 또는 HTTP-리디렉션을 사용하여 전송됩니다. HTTP-POST는 브라우저가 처리하기에 URL이 너무 길다는 위험을 줄이기 때문에 선호됩니다.
+IdP와 SP 모두 Single Sign On 프로세스를 시작할 수 있으며 각각에 따라 SSO 흐름이 다릅니다. 시작 방법에 관계없이 SSO는 SP와 IdP 사이의 HTTPS에 대해 구성되므로 모든 전송 수준 통신이 암호화됩니다. SAML 요청은 [SAML 2.0 사양](http://saml.xml.org/saml-specifications) 에 정의된 SAML 웹 브라우저 SSO 프로필을 사용하여 Liferay DXP에 구성된 인증서를 사용하여 서명됩니다. 모든 경우에 응답은 HTTP-POST 또는 HTTP-리디렉션을 사용하여 전송됩니다. HTTP-POST는 브라우저가 처리하기에 URL이 너무 길다는 위험을 줄이기 때문에 선호됩니다.
 
 IdP가 시작한 SSO를 먼저 고려하십시오.
 
@@ -16,7 +16,7 @@ Liferay가 IdP인 경우 IdP는 SSO URL을 시작했습니다.
 
 * 경로를 `/c/portal/saml/sso`로 지정해야 합니다.
 * 이전에 구성된 SPC(Service Provider Connection)에 대한 식별자인 `entityId` 매개변수를 포함해야 합니다.
-* 인증 성공 시 사용자가 리디렉션되는 URL 인코딩 값을 포함하는 `RelayState` 매개변수를 포함할 수 있습니다. 이 URL은 원하는 SPC의 사이트를 가리켜야 합니다( [SAML 2.0 표준 섹션 3.4.3](https://docs.oasis-open.org/security/saml/v2.0/saml-bindings-2.0-os.pdf)에 따라 이 값 *는 길이가 80바이트를 초과해서는 안 됩니다*. SSO가 실행된 후 랜딩 페이지를 지정하는 것이 유용합니다.
+* 인증 성공 시 사용자가 리디렉션되는 URL 인코딩 값을 포함하는 `RelayState` 매개변수를 포함할 수 있습니다. 이 URL은 원하는 SPC의 사이트를 가리켜야 합니다( [SAML 2.0 표준 섹션 3.4.3](https://docs.oasis-open.org/security/saml/v2.0/saml-bindings-2.0-os.pdf) 에 따라 이 값 *는 길이가 80바이트를 초과해서는 안 됩니다*. SSO가 실행된 후 랜딩 페이지를 지정하는 것이 유용합니다.
 
 비Liferay IdP(Siteminder, ADFS 등)의 경우 IdP 시작 SSO URL 구성에 대한 공급업체의 설명서를 참조하십시오.
 

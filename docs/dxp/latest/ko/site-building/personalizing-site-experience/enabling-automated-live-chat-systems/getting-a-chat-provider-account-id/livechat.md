@@ -4,7 +4,7 @@
 
 ## LiveChat 계정 ID 찾기
 
-1. 귀하의 [LiveChat 계정](https://my.livechatinc.com/)에 로그인하십시오.
+1. 귀하의 [LiveChat 계정](https://my.livechatinc.com/) 에 로그인하십시오.
 
 1. 왼쪽 하단 모서리에 있는 *설정 톱니바퀴* 을 클릭합니다.
 

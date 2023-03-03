@@ -33,7 +33,7 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 
 ## 샘플 React 앱 배포
 
-1. [OAuth2 React App](./liferay-c2b6.zip)을 다운로드하고 압축을 풉니다.
+1. [OAuth2 React App](./liferay-c2b6.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O

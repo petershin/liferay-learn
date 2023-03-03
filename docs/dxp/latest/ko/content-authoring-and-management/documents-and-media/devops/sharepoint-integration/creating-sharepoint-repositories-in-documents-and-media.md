@@ -1,6 +1,6 @@
 # 문서 및 미디어에 SharePoint 저장소 만들기
 
-[SharePoint OAuth2 구성](./enabling-liferays-rest-connector-to-sharepoint.md#adding-a-sharepoint-oauth2-configuration)을 추가하면 이를 사용하여 SharePoint 라이브러리에 탑재된 문서 및 미디어에 리포지토리를 만들 수 있습니다.
+[SharePoint OAuth2 구성](./enabling-liferays-rest-connector-to-sharepoint.md#adding-a-sharepoint-oauth2-configuration) 을 추가하면 이를 사용하여 SharePoint 라이브러리에 탑재된 문서 및 미디어에 리포지토리를 만들 수 있습니다.
 
 다음과 같이하세요:
 

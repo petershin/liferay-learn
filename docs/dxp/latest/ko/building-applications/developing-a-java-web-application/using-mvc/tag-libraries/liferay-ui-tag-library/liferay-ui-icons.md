@@ -28,7 +28,7 @@ Liferay UI taglib는 언어 플래그 아이콘도 노출합니다. 언어 플�
 />
 ```
 
-사용 가능한 [`init.ftl` 변수](https://github.com/liferay/liferay-portal/blob/7.2.x/modules/appsfrontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/templates/init.ftl) 및 [Liferay DXP 매크로](https://help.liferay.com/hc/en-us/articles/360029145851-FreeMarker-Taglib-Macros)를 사용하는 다음 코드를 사용하여 FreeMarker에서 동일한 결과를 얻을 수 있습니다.
+사용 가능한 [`init.ftl` 변수](https://github.com/liferay/liferay-portal/blob/7.2.x/modules/appsfrontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/templates/init.ftl) 및 [Liferay DXP 매크로](https://help.liferay.com/hc/ko/articles/360029145851-FreeMarker-Taglib-Macros) 를 사용하는 다음 코드를 사용하여 FreeMarker에서 동일한 결과를 얻을 수 있습니다.
 
 ```
 <#assign flag_message>

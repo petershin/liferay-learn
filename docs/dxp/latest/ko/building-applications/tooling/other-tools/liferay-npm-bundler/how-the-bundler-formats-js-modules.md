@@ -1,6 +1,6 @@
 # JavaScript 모듈이 AMD용으로 포맷되는 방법
 
-Liferay AMD 로더는 [AMD 사양](https://github.com/amdjs/amdjs-api/wiki/AMD)을 기반으로 합니다. npm OSGi 번들 내의 모든 모듈은 AMD 형식이어야 합니다. 이는 `정의` 호출 내부에 모듈 코드를 래핑하여 [CommonJS](http://www.commonjs.org/) 모듈에 대해 수행됩니다. liferay-npm-bundler는 모듈을 래핑하여 이 프로세스를 자동화하는 데 도움이 됩니다. [OSGi 번들 및 npm 패키지 구조](./the-structure-of-osgi-bundles-containing-npm-packages.md)에서 아래 구조에 대해 자세히 알아볼 수 있습니다.
+Liferay AMD 로더는 [AMD 사양](https://github.com/amdjs/amdjs-api/wiki/AMD) 을 기반으로 합니다. npm OSGi 번들 내의 모든 모듈은 AMD 형식이어야 합니다. 이는 `정의` 호출 내부에 모듈 코드를 래핑하여 [CommonJS](http://www.commonjs.org/) 모듈에 대해 수행됩니다. liferay-npm-bundler는 모듈을 래핑하여 이 프로세스를 자동화하는 데 도움이 됩니다. [OSGi 번들 및 npm 패키지 구조](./the-structure-of-osgi-bundles-containing-npm-packages.md)에서 아래 구조에 대해 자세히 알아볼 수 있습니다.
 
 - `my-bundle/`
     - `META-INF/`

@@ -12,7 +12,7 @@ _조건_ 노드는 워크플로에서 조건부로 작동(전환, 할당 등)하
 1. (![Add icon](../../../../images/icon-add.png))을 클릭하여 새 워크플로를 추가합니다.
 1. 워크플로 디자이너 캔버스에서 워크플로의 이름을 입력합니다.
 1. _소스_ 보기를 엽니다.
-1. [카테고리별 정의](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml)을 찾습니다. 원시 내용을 원본 보기에 복사하여 기존 내용을 모두 덮어쓰거나 _파일 가져오기_ 을 클릭하고 정의의 XML 파일을 업로드합니다.
+1. [카테고리별 정의](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml) 을 찾습니다. 원시 내용을 원본 보기에 복사하여 기존 내용을 모두 덮어쓰거나 _파일 가져오기_ 을 클릭하고 정의의 XML 파일을 업로드합니다.
 1. _다이어그램_ 보기를 엽니다.
 1. 조건 노드 _결정 분기_을 클릭하여 노드의 속성을 구성합니다.
 1. _스크립트(Groovy)_ 필드를 찾습니다. 내용을 더 명확하게 보려면 필드 크기를 조정하십시오(더 크게).
@@ -22,7 +22,7 @@ _조건_ 노드는 워크플로에서 조건부로 작동(전환, 할당 등)하
 
    스크립트는 `legal`문자열을 찾는 자산의 범주를 반복합니다. 찾은 경우 법적 검토 경로를 따라 워크플로가 계속됩니다. 그렇지 않으면 콘텐츠 검토 경로를 따라 계속됩니다.
 
-   전체 내용은 [범주별 정의의 조건 스크립트](#the-category-specific-definition-s-condition-script)에서 볼 수 있습니다.
+   전체 내용은 [범주별 정의의 조건 스크립트](#the-category-specific-definition-s-condition-script) 에서 볼 수 있습니다.
 
 1. 조건의 스크립트 작업을 마치면 뒤로 화살표(![Back](../../../../images/icon-angle-left.png)) 또는 _저장_ (이전 버전의 워크플로 디자이너를 사용하는 경우)를 클릭합니다.
 

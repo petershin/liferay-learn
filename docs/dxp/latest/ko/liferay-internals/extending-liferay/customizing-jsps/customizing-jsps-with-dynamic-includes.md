@@ -12,7 +12,7 @@ uuid: b0ba6d6d-3621-4074-8fe5-2d5e7067679a
 
 Then, follow these steps:
 
-1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip).
+1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip) .
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O

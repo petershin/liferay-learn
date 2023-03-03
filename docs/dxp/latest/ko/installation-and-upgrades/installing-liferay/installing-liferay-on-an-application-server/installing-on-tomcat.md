@@ -12,7 +12,7 @@ Tomcat에 설치하려면 DXP WAR 설치, 종속성 설치, Tomcat 구성 및 DX
 
 ## 전제 조건
 
-Tomcat을 어떻게 구성하든 [도움말 센터](https://customer.liferay.com/downloads)(구독) 또는 [Liferay 커뮤니티 다운로드](https://www .liferay.com/downloads-community):
+Tomcat을 어떻게 구성하든 [도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www .liferay.com/downloads-community) :
 
 * DXP 전쟁 파일
 * OSGi 종속성 ZIP 파일
@@ -21,7 +21,7 @@ Tomcat을 어떻게 구성하든 [도움말 센터](https://customer.liferay.com
 Java JDK 8 또는 11이 필요합니다.
 
 ```{note}
-지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)를 참조하십시오. 권장 JVM 설정은 [JVM 구성](../../reference/jvm-configuration.md)을 참조하십시오.
+지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 를 참조하십시오. 권장 JVM 설정은 [JVM 구성](../../reference/jvm-configuration.md)을 참조하십시오.
 ```
 
 Tomcat 서버 상위 폴더는 [*Liferay Home*](../../reference/liferay-home.md)입니다. `$TOMCAT_HOME` 는 Tomcat 서버 폴더를 나타냅니다. 일반적으로 이름은 `tomcat-[version]` 또는 `apache-tomcat-[version]`입니다.
@@ -38,7 +38,7 @@ DXP는 Liferay-Tomcat 번들에 포함된 많은 JAR에 의존합니다. 번들�
 1. `[Liferay Home]/osgi` 폴더에 OSGi Dependencies ZIP 파일 내용의 압축을 풉니다(이 폴더가 없으면 생성). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
 1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 데이터베이스 공급업체의 JDBC JAR 파일을 다운로드하여 `$CATALINA_BASE/webapps/ROOT/WEB-INF/shielded-container-lib` 폴더에 넣습니다. .
 
-    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 을 참조하십시오.
+    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오.
 
 ```{note}
 Hypersonic 데이터베이스는 DXP와 함께 번들로 제공되며 테스트 목적으로 유용합니다. 프로덕션 인스턴스에 HSQL을 사용하지 마세요.
@@ -92,7 +92,7 @@ DXP를 실행하도록 Tomcat을 구성하는 작업에는 다음 작업이 포�
 | `-XX:SurvivorRatio` | 서바이벌 공간에 대한 새 공간의 비율입니다. 생존자 공간은 구세대 공간으로 승격되기 전에 젊은 세대 개체를 보유합니다.       |
 
 ```{note}
-DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Tuning Liferay](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
+DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Liferay 튜닝](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
 ```
 
 Tomcat 구성을 계속하십시오.

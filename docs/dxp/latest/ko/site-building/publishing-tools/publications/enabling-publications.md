@@ -7,7 +7,7 @@ Publications는 귀하와 귀하의 팀이 DXP 인스턴스에 대한 변경 사
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/8N6djs7Gcs4
 
 ```{important}
-준비 및 게시는 동시에 활성화할 수 없습니다. 사이트에서 스테이징이 활성화된 경우 게시를 활성화하기 전에 먼저 스테이징을 비활성화해야 합니다. [로컬 라이브 스테이징 비활성화](../staging/configuring-local-live-staging.md#disabling-local-live-staging) 및 [원격 라이브 스테이징 비활성화](../staging/configuring-remote-live- staging.md#disabling-remote-live-staging)에서 자세한 내용을 확인하세요.
+준비 및 게시는 동시에 활성화할 수 없습니다. 사이트에서 스테이징이 활성화된 경우 게시를 활성화하기 전에 먼저 스테이징을 비활성화해야 합니다. [로컬 라이브 스테이징 비활성화](../staging/configuring-local-live-staging.md#disabling-local-live-staging) 및 [원격 라이브 스테이징 비활성화](../staging/configuring-remote-live- staging.md#disabling-remote-live-staging) 에서 자세한 내용을 확인하세요.
 
 [Workflow](../../../process-automation/workflow/introduction-to-workflow.md)은 Liferay 7.3의 발행물과 함께 사용할 수 없습니다.
 ```

@@ -7,7 +7,7 @@
 
 
 ```{important}
-데이터 덮어쓰기를 방지하기 위해 편집 가능한 필드에 대한 변경 사항을 프래그먼트에 직접 전파할 수 없습니다. 그러나 프래그먼트의 필드 ID를 변경하여 강제로 전파할 수 있습니다. 전파되면 이전 필드 ID를 사용하여 데이터베이스에서 콘텐츠를 검색할 수 있지만 필드의 콘텐츠는 더 이상 표시되지 않습니다. 자세한 내용은 개발자 설명서의 [Fragment Specific Tags and Attributes Reference](../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md)를 참조하세요.
+데이터 덮어쓰기를 방지하기 위해 편집 가능한 필드에 대한 변경 사항을 프래그먼트에 직접 전파할 수 없습니다. 그러나 프래그먼트의 필드 ID를 변경하여 강제로 전파할 수 있습니다. 전파되면 이전 필드 ID를 사용하여 데이터베이스에서 콘텐츠를 검색할 수 있지만 필드의 콘텐츠는 더 이상 표시되지 않습니다. 자세한 내용은 개발자 설명서의 [단편별 태그 및 속성 참조](../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md) 를 참조하세요.
 ```
 
 ## 수동으로 변경 사항 전파

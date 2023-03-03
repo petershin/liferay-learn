@@ -18,7 +18,7 @@ Slim Bundle의 각 수정 팩/서비스 팩에 대한 패치 파일이 없으면
 * [`info`](../../reference/getting-patch-information.md)
 * `setup`
 
-슬림 번들은 여전히 패치할 수 있지만 패치 파일을 복원하는 추가 단계가 필요합니다. 각 패치에 대한 각 패치의 패치 파일은 [도움말 센터](https://customer.liferay.com/downloads)에서 사용할 수 있습니다.
+슬림 번들은 여전히 패치할 수 있지만 패치 파일을 복원하는 추가 단계가 필요합니다. 각 패치에 대한 각 패치의 패치 파일은 [도움말 센터](https://customer.liferay.com/downloads) 에서 사용할 수 있습니다.
 
 ## 슬림 번들 패치
 
@@ -32,7 +32,7 @@ directory and run patching-tool setup.
 
 패치 파일을 복원하는 방법은 다음과 같습니다.
 
-1. [도움말 센터에서 패치 파일 다운로드](https://customer.liferay.com/downloads). 수정 팩 또는 서비스 팩으로 이동하고 드롭다운에서 _패치 파일_ 을 선택하고 _다운로드_을 클릭하여 패치 파일을 다운로드합니다.
+1. [도움말 센터에서 패치 파일 다운로드](https://customer.liferay.com/downloads) . 수정 팩 또는 서비스 팩으로 이동하고 드롭다운에서 _패치 파일_ 을 선택하고 _다운로드_을 클릭하여 패치 파일을 다운로드합니다.
 
 1. 패치 파일을 Slim Bundle의 `patching-tool/patches` 폴더에 추출합니다.
 

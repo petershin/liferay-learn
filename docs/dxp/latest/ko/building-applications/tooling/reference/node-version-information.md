@@ -1,6 +1,6 @@
 # 노드 버전 정보
 
-Liferay DXP는 다양한 프런트엔드 구성 요소에 대해 [개의 노드](https://nodejs.org/en/) (및 [NPM](https://www.npmjs.com/))을 사용합니다. 특히 [Liferay 테마 생성기](../../../site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md) 및 Liferay의 [JavaScript 애플리케이션 도구](../../developing-a-javascript-application.md) 는 빌드 및 배포를 위해 NPM 명령을 사용해야 합니다.
+Liferay DXP는 다양한 프런트엔드 구성 요소에 대해 [개의 노드](https://nodejs.org/en/) (및 [NPM](https://www.npmjs.com/) )을 사용합니다. 특히 [Liferay 테마 생성기](../../../site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.md) 및 Liferay의 [JavaScript 애플리케이션 도구](../../developing-a-javascript-application.md) 는 빌드 및 배포를 위해 NPM 명령을 사용해야 합니다.
 
 이러한 종속성은 특정 버전의 Node 및 NPM을 사용하도록 설계되었습니다. 테마 또는 JavaScript 애플리케이션을 개발할 때 올바른 버전이 설치되어 있는지 확인하려면 [노드 버전 호환성 매트릭스](#version-compatibility-matrix) 을 확인하십시오.
 

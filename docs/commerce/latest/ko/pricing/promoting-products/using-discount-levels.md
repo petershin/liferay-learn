@@ -57,7 +57,7 @@ Minium 사이트에서 할인 수준을 추가하려면,
 ![해당 상품은 1단계 할인이 적용되며 장바구니 총액이 $50를 초과하면 2단계 할인이 적용됩니다.](./using-discount-levels/images/04.gif)
 
 ```{note}
-가격 항목에 대한 할인을 재정의하면 SKU를 대상으로 하는 모든 할인 수준이 재정의됩니다. 자세한 내용은 [할인 무시](./introduction-to-discounts.md#overriding-discounts)를 참조하세요.
+가격 항목에 대한 할인을 재정의하면 SKU를 대상으로 하는 모든 할인 수준이 재정의됩니다. 자세한 내용은 [할인 무시](./introduction-to-discounts.md#overriding-discounts) 를 참조하세요.
 ```
 
 ## 추가 정보

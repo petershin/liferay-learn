@@ -12,7 +12,7 @@ installing-apps/downloading-apps.md
 installing-apps/accessing-ee-plugins-during-a-trial-period.md
 ```
 
-[Marketplace 웹사이트](https://web.liferay.com/marketplace)에서 LPKG 파일로 앱을 다운로드한 후 다음 단계는 로컬 DXP 인스턴스에 앱을 설치하는 것입니다.
+[Marketplace 웹사이트](https://web.liferay.com/marketplace) 에서 LPKG 파일로 앱을 다운로드한 후 다음 단계는 로컬 DXP 인스턴스에 앱을 설치하는 것입니다.
 
 다음 방법 중 하나를 사용하여 인스턴스에 새 앱을 설치할 수 있습니다.
 
@@ -27,11 +27,11 @@ installing-apps/accessing-ee-plugins-during-a-trial-period.md
 
 서버를 다시 시작하여 파일 시스템을 통해 앱을 설치하려면 다음 단계를 따르십시오.
 
-1. [DXP 서버를 중지하십시오](../../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md#shutdown).
+1. [DXP 서버를 중지하십시오](../../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md#shutdown) .
 
 1. 앱 파일(LPKG, 모듈 JAR 또는 플러그인 WAR)을 `[Liferay Home]/deploy` 폴더에 복사합니다. [Liferay Home](../../installation-and-upgrades/reference/liferay-home.md) 폴더는 일반적으로 앱 서버의 상위 폴더입니다. DXP는 `[Liferay Home]/deploy` 폴더에서 앱을 배포합니다.
 
-1. [DXP 서버를 시작합니다](../../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md#startup).
+1. [DXP 서버를 시작합니다](../../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md#startup) .
 
 앱 파일이 `[Liferay Home]/deploy` 폴더에서 `[Liferay Home]/osgi`아래의 적절한 하위 폴더로 복사됩니다.
 
@@ -42,7 +42,7 @@ installing-apps/accessing-ee-plugins-during-a-trial-period.md
 DXP는 해당 하위 폴더에서 수신하고 파일을 처리하고(WAR이거나 WAR을 포함하는 경우 OSGi 번들로 변환) OSGi 번들을 OSGi 컨테이너에 설치합니다.
 
 ```{note}
-소스 제어 리포지토리(예: Git 또는 BitBucket) 및 오케스트레이션 도구(예: [Jenkins](https://jenkins.io))를 사용하여 [DevOps](https://en.wikipedia.org/wiki)을 통해 DXP 환경을 홍보하는 것이 좋습니다. /DevOps) 파이프라인.
+소스 제어 리포지토리(예: Git 또는 BitBucket) 및 오케스트레이션 도구(예: [Jenkins](https://jenkins.io) )를 사용하여 [DevOps](https://en.wikipedia.org/wiki) 을 통해 DXP 환경을 홍보하는 것이 좋습니다. /DevOps) 파이프라인.
 
 프로덕션 등급 환경을 위한 DevOps 파이프라인 내의 배포 폴더에 앱 파일을 커밋해야 합니다.
 ```

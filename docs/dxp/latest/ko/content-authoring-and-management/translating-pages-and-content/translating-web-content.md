@@ -120,7 +120,7 @@ Liferay는 선택한 각 언어에 대한 XLIFF 파일이 포함된 ZIP 아카�
 
 ## 타사 서비스를 사용하여 웹 콘텐츠 번역
 
-[Google Cloud Translation](https://cloud.google.com/translate/docs/setup), [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)또는 [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/)와 Liferay의 통합을 활성화한 경우 이를 사용하여 웹 콘텐츠를 자동으로 번역할 수 있습니다. 자세한 내용은 [번역에 제3자 사용](./using-third-parties-for-translation.md) 참조하십시오.
+[Google Cloud Translation](https://cloud.google.com/translate/docs/setup) , [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) 또는 [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/) 와 Liferay의 통합을 활성화한 경우 이를 사용하여 웹 콘텐츠를 자동으로 번역할 수 있습니다. 자세한 내용은 [번역에 제3자 사용](./using-third-parties-for-translation.md) 참조하십시오.
 
 ## 추가 정보
 

@@ -18,7 +18,7 @@ uuid: ee3a8169-8408-4c36-afbc-9976f0ef3866
 
 데이터베이스가 MySQL 5.7과 호환되는지 확인하십시오. [DBeaver](https://dbeaver.io/) 과 같은 도구를 사용하여 다른 데이터베이스 형식을 MySQL로 변환할 수 있습니다.
 
-데이터 무결성을 보장하기 위해 변환 전후에 데이터베이스 관리자와 조정하십시오. 이전에 [로컬 Liferay 설치에 연결](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/configuring-a-database.html)하여 변환된 데이터베이스를 테스트합니다. 진행.
+데이터 무결성을 보장하기 위해 변환 전후에 데이터베이스 관리자와 조정하십시오. 이전에 [데이터베이스 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/installing-liferay/configuring-a-database.html) 하여 변환된 데이터베이스를 테스트합니다. 진행.
 
 ### 올바른 테이블 대소문자 확인
 
@@ -34,7 +34,7 @@ uuid: ee3a8169-8408-4c36-afbc-9976f0ef3866
 
 * *휴지통 항목* &rarr; *휴지통 항목*
 
-MySQL에서 [`RENAME TABLE`](https://dev.mysql.com/doc/refman/5.7/en/rename-table.html) 명령을 사용하여 테이블 이름을 변경할 수 있습니다. 테이블 이름을 조정하는 데 도움이 필요하면 [지원 티켓을 제출](https://help.liferay.com)하십시오.
+MySQL에서 [`RENAME TABLE`](https://dev.mysql.com/doc/refman/5.7/en/rename-table.html) 명령을 사용하여 테이블 이름을 변경할 수 있습니다. 테이블 이름을 조정하는 데 도움이 필요하면 [지원 티켓을 제출](https://help.liferay.com) 하십시오.
 
 ## 데이터베이스 덤프 생성
 
@@ -67,10 +67,10 @@ mysqldump -u##### -p##### --databases --add-drop-database lportal > database.sql
 문서 라이브러리가 파일 시스템 저장소가 아닌 파일 스토리지 방법(예: Amazon S3Store 또는 DBStore)을 사용하는 경우 계속하기 전에 파일 시스템 저장소로 마이그레이션해야 합니다. 단순 파일 시스템 저장소 또는 고급 파일 시스템 저장소를 사용할 수 있습니다.
 
 ```{important}
-[Advanced File System Store](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/configuring-file-storage.html)는 더 쉽게 대규모로 확장되는 폴더 구조를 사용합니다. 데이터 세트. 장기적으로 문서 라이브러리에 더 많은 파일을 수용하려면 고급 파일 시스템 저장소로 마이그레이션하는 것이 좋으며 모든 프로덕션 환경에서 **필수**입니다.
+[Advanced File System Store](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/configuring-file-storage.html) 는 더 쉽게 대규모로 확장되는 폴더 구조를 사용합니다. 데이터 세트. 장기적으로 문서 라이브러리에 더 많은 파일을 수용하려면 고급 파일 시스템 저장소로 마이그레이션하는 것이 좋으며 모든 프로덕션 환경에서 **필수**입니다.
 ```
 
-문서 라이브러리를 마이그레이션하는 방법에 대한 단계는 [파일 저장소 마이그레이션](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/file-store-migration.html) 참조하십시오.
+문서 라이브러리를 마이그레이션하는 방법에 대한 단계는 [파일 저장소 마이그레이션](https://learn.liferay.com/dxp/latest/ko/system-administration/file-storage/file-store-migration.html) 참조하십시오.
 
 ### 변경 사항으로 Jenkins 빌드 생성
 

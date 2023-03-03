@@ -6,7 +6,7 @@ Liferay Cloud를 사용하면 즉시 제공되는 표준 서비스 세트 이상
 사용자 지정 서비스를 추가할 수 있으려면 충분한 하드웨어 리소스가 프로비저닝되어 있어야 합니다. 프로비저닝 프로세스 중에 사용자 지정 서비스에 대한 추가 리소스를 할당할 수 있습니다.
 ```
 
-Liferay Cloud는 Docker 이미지를 서비스의 기반으로 사용합니다. 이러한 서비스를 로컬에서 실행하려면 로컬 시스템에 [Docker를 설치](https://docs.docker.com/get-docker/)하세요.
+Liferay Cloud는 Docker 이미지를 서비스의 기반으로 사용합니다. 이러한 서비스를 로컬에서 실행하려면 로컬 시스템에 [Docker를 설치](https://docs.docker.com/get-docker/) 하세요.
 
 자세한 내용은 [맞춤 서비스 제한 사항](../reference/platform-limitations.md#custom-services) 을 참조하세요.
 
@@ -14,7 +14,7 @@ Liferay Cloud는 Docker 이미지를 서비스의 기반으로 사용합니다. 
 
 다음 단계를 사용하여 Liferay Cloud의 빌드에 사용자 정의 서비스를 추가하십시오.
 
-1. 맞춤 서비스를 Docker 이미지로 만들거나 찾습니다. 프로젝트의 작업 공간에 직접 추가하는 Dockerfile 또는 [Docker Hub](https://hub.docker.com/)과 같은 공용 리포지토리의 이미지를 사용할 수 있습니다.
+1. 맞춤 서비스를 Docker 이미지로 만들거나 찾습니다. 프로젝트의 작업 공간에 직접 추가하는 Dockerfile 또는 [Docker Hub](https://hub.docker.com/) 과 같은 공용 리포지토리의 이미지를 사용할 수 있습니다.
 
 1. `LCP.json` 파일이 있는 다른 서비스 디렉토리(예: `liferay` 및 `database`)와 함께 서비스에 대한 새 디렉토리를 추가하십시오. 
 

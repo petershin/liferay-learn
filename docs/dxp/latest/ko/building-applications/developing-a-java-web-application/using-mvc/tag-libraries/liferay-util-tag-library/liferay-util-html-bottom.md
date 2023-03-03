@@ -21,4 +21,4 @@ HTML 하단 태그는 자동으로 닫히는 태그가 아닙니다. 이 태그�
 
 * [Liferay Util HTML 본문 하단 태그 사용](./liferay-util-body-bottom.md)
 * [Liferay Util HTML 상단 태그 사용](./liferay-util-html-top.md)
-* [Liferay UI Taglib 사용](https://help.liferay.com/hc/en-us/articles/360028832812-Using-AUI-Taglibs)
+* [Liferay UI Taglib 사용](https://help.liferay.com/hc/ko/articles/360028832812-Using-AUI-Taglibs)

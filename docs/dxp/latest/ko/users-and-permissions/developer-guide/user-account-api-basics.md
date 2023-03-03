@@ -15,7 +15,7 @@ uuid: 7de0146e-dcec-4da0-9956-36d9e97af032
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [사용자 계정 API 기본 사항](./liferay-y6q4.zip)을 다운로드하고 압축을 풉니다.
+1. [사용자 계정 API 기본 사항](./liferay-y6q4.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6q4.zip -O

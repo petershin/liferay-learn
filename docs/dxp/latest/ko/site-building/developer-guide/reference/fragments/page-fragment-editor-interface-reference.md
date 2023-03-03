@@ -11,7 +11,7 @@
 
 코드 편집기는 네 개의 창으로 나뉩니다.
 
-**HTML:** 동적 동작을 추가하는 데 사용할 수 있는 Liferay Portal 특정 태그 및 FreeMarker( [대체(대괄호) 구문](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html)사용)와 함께 표준 HTML을 지원합니다.
+**HTML:** 동적 동작을 추가하는 데 사용할 수 있는 Liferay Portal 특정 태그 및 FreeMarker( [대체(대괄호) 구문](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html) 사용)와 함께 표준 HTML을 지원합니다.
 
 ```{tip}
 `$(`를 입력하여 자동 완성을 사용하여 변수 이름 찾기를 시작하십시오. 자동 완성을 사용하여 taglib 이름을 찾으려면 `[@`를 입력하십시오.

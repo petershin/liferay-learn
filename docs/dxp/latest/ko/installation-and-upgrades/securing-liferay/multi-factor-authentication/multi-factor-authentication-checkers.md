@@ -18,7 +18,7 @@ IP 주소 검사기는 Liferay DXP가 내부 네트워크에서 또는 VPN을 �
 
 ## 시간 기반 일회용 암호 MFA 검사기
 
-시간 기반 일회용 비밀번호 검사기는 [Google App Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)기반의 추가 검사기를 제공합니다.
+시간 기반 일회용 비밀번호 검사기는 [Google App Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) 기반의 추가 검사기를 제공합니다.
 
 ![시간 기반 OTP 검사기는 사용자의 계정에 추가할 수 있습니다.](./multi-factor-authentication-checkers/images/03.png)
 

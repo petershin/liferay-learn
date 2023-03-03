@@ -2,13 +2,13 @@
 
 {bdg-secondary}`가능 7.4+`
 
-여기서는 Webhook을 사용하여 [Pabbly](https://www.pabbly.com/)을 사용하여 Liferay Objects와 Google Sheets 간에 동기화 작업을 트리거하는 방법을 배웁니다. 이러한 방식으로 데이터를 동기화하려면 Pabbly 계정, Google 스프레드시트 및 활성 DXP 7.4 인스턴스가 필요합니다. DXP 인스턴스에는 Google 스프레드시트로 데이터를 보내거나 받기 위해 원하는 필드가 있는 게시된 개체도 있어야 합니다.
+여기서는 Webhook을 사용하여 [Pabbly](https://www.pabbly.com/) 을 사용하여 Liferay Objects와 Google Sheets 간에 동기화 작업을 트리거하는 방법을 배웁니다. 이러한 방식으로 데이터를 동기화하려면 Pabbly 계정, Google 스프레드시트 및 활성 DXP 7.4 인스턴스가 필요합니다. DXP 인스턴스에는 Google 스프레드시트로 데이터를 보내거나 받기 위해 원하는 필드가 있는 게시된 개체도 있어야 합니다.
 
 ## 개체 데이터를 Google 시트에 동기화
 
 개체 데이터를 Google 시트에 동기화하려면 다음 단계를 따르세요.
 
-1. [Pabbly](https://www.pabbly.com/)에 로그인하고 *All Apps* 페이지로 이동한 다음 *Pabbly Connect*를 클릭합니다.
+1. [Pabbly](https://www.pabbly.com/) 에 로그인하고 *All Apps* 페이지로 이동한 다음 *Pabbly Connect*를 클릭합니다.
 
    ![All Apps 페이지로 이동하여 Pabbly Connect를 클릭합니다.](./using-pabbly-to-sync-object-data-with-google-sheets/images/01.png)
 

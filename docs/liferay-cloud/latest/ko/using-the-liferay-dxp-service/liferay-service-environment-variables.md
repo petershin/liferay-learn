@@ -1,6 +1,6 @@
 # Liferay 서비스 환경 변수
 
-Liferay 서비스에는 서비스, 다른 서비스에 대한 연결 및 DXP 설치 자체를 구성하는 데 사용되는 [범위의 환경 변수](#environment-variables-reference) 이 있습니다. Liferay Cloud 관련 환경 변수를 사용하거나 DXP [포털 속성](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html)을 재정의하는 변수를 정의할 수 있습니다.
+Liferay 서비스에는 서비스, 다른 서비스에 대한 연결 및 DXP 설치 자체를 구성하는 데 사용되는 [범위의 환경 변수](#environment-variables-reference) 이 있습니다. Liferay Cloud 관련 환경 변수를 사용하거나 DXP [포털 속성](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) 을 재정의하는 변수를 정의할 수 있습니다.
 
 ## 포털 속성 재정의
 

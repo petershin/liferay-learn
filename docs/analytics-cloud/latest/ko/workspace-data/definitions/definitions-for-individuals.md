@@ -8,4 +8,4 @@
 
 개인에 대한 모든 다른 속성이 나열됩니다. 일부 속성은 둘 이상의 데이터 소스에 의해 정의될 수 있습니다. 
 
-[세그먼트 생성](../../people/segments/creating-segments.md) 또는 [개인에 대한 특정 분류 생성](../../people/individuals/individuals-dashboard.md#breakdown)에 대한 특정 속성을 선택할 수 있습니다.
+[세그먼트 생성](../../people/segments/creating-segments.md) 또는 [개인에 대한 특정 분류 생성](../../people/individuals/individuals-dashboard.md#breakdown) 에 대한 특정 속성을 선택할 수 있습니다.

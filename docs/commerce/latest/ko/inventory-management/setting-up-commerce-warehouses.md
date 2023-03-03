@@ -30,7 +30,7 @@
 
 1. 창고의 *지리적 사이트* 을 입력합니다(활성화에 필요).
 
-   또는 Bing Geocoder를 사용하여 창고의 지리적 위치를 자동으로 생성할 수 있습니다. 이 기능을 사용하려면 창고에 주소가 있어야 합니다. 자세한 내용은 [아래](#using-bing-geocoder-to-set-a-warehouses-geolocation)를 참조하세요. 
+   또는 Bing Geocoder를 사용하여 창고의 지리적 위치를 자동으로 생성할 수 있습니다. 이 기능을 사용하려면 창고에 주소가 있어야 합니다. 자세한 내용은 [아래](#using-bing-geocoder-to-set-a-warehouses-geolocation) 를 참조하세요. 
 
 1. *저장*을 클릭합니다.
 
@@ -38,7 +38,7 @@
 
 ## Bing Geocoder를 사용하여 창고의 지리적 사이트 설정
 
-Commerce는 창고 지리적 사이트를 자동으로 생성하기 위해 Bing Maps API와의 통합을 제공합니다. 이 기능을 사용하려면 [Bing 지도 계정](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account) 및 [Bing 지도 키](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key)이 있어야 합니다.
+Commerce는 창고 지리적 사이트를 자동으로 생성하기 위해 Bing Maps API와의 통합을 제공합니다. 이 기능을 사용하려면 [Bing 지도 계정](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account) 및 [Bing 지도 키](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key) 이 있어야 합니다.
 
 그런 다음 다음 단계에 따라 인스턴스에 대한 Bing Geocoder를 구성합니다.
 

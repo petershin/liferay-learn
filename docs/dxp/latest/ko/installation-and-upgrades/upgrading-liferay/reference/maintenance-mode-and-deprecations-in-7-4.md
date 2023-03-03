@@ -17,7 +17,7 @@ uuid: bcaaeab9-3b46-4a48-8e84-64d84d2c6015
 ```
 
 ```{important}
-자세한 내용은 [유지 관리 모드 및 지원 중단 정책](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation)을 참조하십시오.
+자세한 내용은 [유지 관리 모드 및 지원 중단 정책](https://help.liferay.com/hc/ko/articles/360015767952-Maintenance-Mode-and-Deprecation) 을 참조하십시오.
 ```
 
 ## 더 이상 사용되지 않는 기능 가용성
@@ -56,7 +56,7 @@ uuid: bcaaeab9-3b46-4a48-8e84-64d84d2c6015
 | Liferay 모바일 장치 감지 엔터프라이즈    | 보관하는                        | 7.2에서 더 이상 사용되지 않습니다. 최신 정의는 51Degrees에 문의하십시오.                                                                                                                                                                                                           |
 | Liferay Screens             | 삭제됨. 최종 버전은 7.3에서 릴리스되었습니다. | 직접 교체 없음; 그러나 Mobile SDK 및 Headless API는 모바일 애플리케이션 개발을 지원합니다.                                                                                                                                                                                            |
 | Liferay 동기화 커넥터 및 동기화 클라이언트 | 보관하는                        | 7.3에서 더 이상 사용되지 않습니다. 직접적인 교체가 없습니다.                                                                                                                                                                                                                      |
-| 라이브 사용자                     | 번들                          | 7.2에서 더 이상 사용되지 않습니다. [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html)로 대체됩니다.                                                                                                                                           |
+| 라이브 사용자                     | 번들                          | 7.2에서 더 이상 사용되지 않습니다. [애널리틱스 클라우드](https://learn.liferay.com/analytics-cloud/latest/ko/index.html) 로 대체됩니다.                                                                                                                                           |
 | 모바일 SDK                     | 삭제됨                         | [Headless Delivery](../../../headless-delivery/using-liferay-as-a-headless-platform.md)로 대체되었습니다.                                                                                                                                                         |
 | NTLM                        | 보관하는                        | 7.2에서 더 이상 사용되지 않습니다. [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)로 대체됩니다. NTLM을 사용하여 Microsoft Windows™ 계정을 인증하는 경우 [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)사용으로 전환하십시오. |
 | OAuth 1.0a                  | 보관하는                        | 7.2에서 더 이상 사용되지 않습니다. OAuth 2.0에 대한 Liferay 커넥터로 대체되었습니다.                                                                                                                                                                                                 |
@@ -70,8 +70,8 @@ uuid: bcaaeab9-3b46-4a48-8e84-64d84d2c6015
 
 * [7.3 지원 중단 및 유지 관리 모드로 이동한 기능](./maintenance-mode-and-deprecations-in-7-3.md)
 * [7.2 지원 중단 및 유지 관리 모드로 이동된 기능](./maintenance-mode-and-deprecations-in-7-2.md)
-* [7.1 지원 중단](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0 지원 중단](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+* [7.1 지원 중단](https://help.liferay.com/hc/ko/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+* [7.0 지원 중단](https://help.liferay.com/hc/ko/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 ## 7.4에서 유지 관리 모드로 이동한 기능
 

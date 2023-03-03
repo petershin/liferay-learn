@@ -16,7 +16,7 @@ For example, a B2B company can give everyone in their sales network access to th
 <!-- I'm commenting out the following image because I don't think it clearly depicts how to use organizations to model a sales network. First - it would seem that the image states that "Minium" is the company - and then the company has a sub-org named "Italy". And then "Italy" has sub-orgs per region. I don't think real companies organize like that. The correct model (I think) would be - to make it extremely clear how to understand the image: "Minium Corporation" (Parent Org) > Minium Corporation - Italy Sales Department > [Regions]. Or alternatively: Minium Sales Group > Italy Sales Region > [Regions] - something in the naming to make the hierarchy clearer.
 ![Image 01](./using-organizations-to-create-a-sales-network/images/01.png) -->
 
-판매 네트워크와 계정을 실제 세계와 동일하게 구성하면 영업 팀원이 Liferay Commerce 내에서 쉽게 탐색할 수 있습니다. 조직 생성 및 구조화에 대해 자세히 알아보려면 여기 [에서 자세히 알아](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/creating-and-managing-organizations.html).
+판매 네트워크와 계정을 실제 세계와 동일하게 구성하면 영업 팀원이 Liferay Commerce 내에서 쉽게 탐색할 수 있습니다. 조직 생성 및 구조화에 대해 자세히 알아보려면 여기 [조직 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/organizations/creating-and-managing-organizations.html) .
 
 ## 조직 역할 및 권한으로 계정 관리 및 액세스 정의
 
@@ -24,7 +24,7 @@ For example, a B2B company can give everyone in their sales network access to th
 
 ![즉시 사용할 수 있는 여러 조직 역할이 있습니다.](./using-organizations-to-create-a-sales-network/images/02.png)
 
-각 역할에 권한 모음을 할당하면 Liferay Commerce 내에서 해당 역할의 액세스 권한이 정의됩니다(그런 다음 사용자에게 적용할 수 있음). 권한의 몇 가지 예는 다음과 같습니다. 하위 조직(예: 지역), 계정 데이터 또는 주문 내역 보기 주문을 관리하고 역할을 할당합니다. 권한에 대한 자세한 내용은 [역할 권한 정의](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions)을 참조하십시오.
+각 역할에 권한 모음을 할당하면 Liferay Commerce 내에서 해당 역할의 액세스 권한이 정의됩니다(그런 다음 사용자에게 적용할 수 있음). 권한의 몇 가지 예는 다음과 같습니다. 하위 조직(예: 지역), 계정 데이터 또는 주문 내역 보기 주문을 관리하고 역할을 할당합니다. 권한에 대한 자세한 내용은 [역할 권한 정의](https://help.liferay.com/hc/ko/articles/360018174391-Defining-Role-Permissions) 을 참조하십시오.
 
 ![각 역할에는 정의된 권한이 있을 수 있습니다.](./using-organizations-to-create-a-sales-network/images/03.png)
 
@@ -41,8 +41,8 @@ For example, a B2B company can give everyone in their sales network access to th
 
 ## 추가 정보
 
-* [조직 생성 및 관리](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/creating-and-managing-organizations.html)
-* [새 조직 유형 추가](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/adding-a-new-organization-type.html)
-* [역할 관리](https://help.liferay.com/hc/en-us/articles/360018174371-Managing-Roles)
-* [역할 권한 정의](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions)
+* [조직 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/organizations/creating-and-managing-organizations.html)
+* [새 조직 유형 추가](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/organizations/adding-a-new-organization-type.html)
+* [역할 관리](https://help.liferay.com/hc/ko/articles/360018174371-Managing-Roles)
+* [역할 권한 정의](https://help.liferay.com/hc/ko/articles/360018174391-Defining-Role-Permissions)
 * [계정에 조직 추가](./adding-organizations-to-accounts.md)

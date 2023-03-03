@@ -79,7 +79,7 @@ uuid: bbfca008-42a3-4c93-af71-b520df343a4f
 
 인스턴스 설정의 양식 구성 항목은 시스템 설정(아래)의 양식 항목과 동일합니다. 인스턴스 설정은 시스템 설정을 재정의하며 시스템 전체에 기본값을 설정합니다. 자세한 내용은 [구성 범위 이해](../../../system-administration/configuring-liferay/understanding-configuration-scope.md) 참조하십시오.
 
-각 구성 속성에 대한 설명은 [시스템 설정](#system-settings)참조하십시오.
+각 구성 속성에 대한 설명은 [시스템 설정](#system-settings) 참조하십시오.
 
 ## 시스템 설정
 

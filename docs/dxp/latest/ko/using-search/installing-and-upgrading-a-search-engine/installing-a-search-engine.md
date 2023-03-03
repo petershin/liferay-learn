@@ -14,7 +14,7 @@ Liferay의 [Solr](http://lucene.apache.org/solr) 지원은 더 이상 사용되�
 
 * 검색 엔진에는 `JAVA_HOME` 환경 변수가 필요합니다. 검색 엔진 호스트에 설정하십시오.
 
-* Liferay 7.2를 사용하는 경우 Elasticsearch와 Liferay는 동일한 Java 버전 및 배포를 사용해야 합니다. 지원되는 JDK 배포 및 버전에 대한 자세한 내용은 [Elasticsearch 호환성 매트릭스](https://www.elastic.co/support/matrix#matrix_jvm) 및 [Liferay의 검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 을 참조하십시오. Elasticsearch에서 다음과 같이 지정할 수 있습니다.
+* Liferay 7.2를 사용하는 경우 Elasticsearch와 Liferay는 동일한 Java 버전 및 배포를 사용해야 합니다. 지원되는 JDK 배포 및 버전에 대한 자세한 내용은 [Elasticsearch 호환성 매트릭스](https://www.elastic.co/support/matrix#matrix_jvm) 및 [Liferay의 검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 을 참조하십시오. Elasticsearch에서 다음과 같이 지정할 수 있습니다.
 
     ```properties
     [Elasticsearch 홈]/bin/elasticsearch.in.sh`: `JAVA_HOME=/path/to/java`
@@ -37,7 +37,7 @@ Solr 커넥터도 HTTP를 통해 통신하기 때문에 동일한 요구 사항�
 Elasticsearch는 Liferay를 사용한 검색 및 인덱싱에 권장되는 검색 엔진입니다. Solr는 지원 중단될 예정이며 [제한 사항](./solr/solr-limitations.md)이 있습니다.
 
 ```{important}
-지원되는 정확한 버전을 찾으려면 항상 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651)를 참조하십시오.
+지원되는 정확한 버전을 찾으려면 항상 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 를 참조하십시오.
 ```
 
 ## 다음

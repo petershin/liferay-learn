@@ -126,7 +126,7 @@ else {
 }
 ```
 
-[7.3.0-ga1 - AssetCategoryLocalServiceImpl.java#L122-L128](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/portal-impl/src/com/liferay/portlet/asset/service/impl/AssetCategoryLocalServiceImpl.java#L122-L128)을 참조하십시오.
+[7.3.0-ga1 - AssetCategoryLocalServiceImpl.java#L122-L128](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/portal-impl/src/com/liferay/portlet/asset/service/impl/AssetCategoryLocalServiceImpl.java#L122-L128) 을 참조하십시오.
 
 ##### AssetCategoryLocalService#rebuildTree(long, boolean)의 경우
 
@@ -231,7 +231,7 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-제거된 기능을 직접 대체할 수 없습니다. EXT 플러그인이 있는 경우 수동으로 배포하거나 [`ant direct-deploy`](https://github.com/liferay/liferay-plugins-ee/blob/7.0.x/ext/build-common-ext.xml#L211)을 사용해야 합니다.
+제거된 기능을 직접 대체할 수 없습니다. EXT 플러그인이 있는 경우 수동으로 배포하거나 [`ant direct-deploy`](https://github.com/liferay/liferay-plugins-ee/blob/7.0.x/ext/build-common-ext.xml#L211) 을 사용해야 합니다.
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
@@ -281,11 +281,11 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-`SingleVMPoolUtil` 또는 `MultiVMPoolUtil`대신 `PortalCacheHelperUtil` 을 사용하십시오. 예를 들어 [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal-ee/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116)을 참조하십시오.
+`SingleVMPoolUtil` 또는 `MultiVMPoolUtil`대신 `PortalCacheHelperUtil` 을 사용하십시오. 예를 들어 [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal-ee/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116) 을 참조하십시오.
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-`SingleVMPoolUtil` 및 `MultiVMPoolUtil` 클래스는 원래 [LPS-84138](https://issues.liferay.com/browse/LPS-84138)에서 더 이상 사용되지 않습니다. 클래스는 더 이상 사용되지 않습니다.
+`SingleVMPoolUtil` 및 `MultiVMPoolUtil` 클래스는 원래 [LPS-84138](https://issues.liferay.com/browse/LPS-84138) 에서 더 이상 사용되지 않습니다. 클래스는 더 이상 사용되지 않습니다.
 
 ---------------------------------------
 ### 제거된 캐시 부트스트랩 기능
@@ -895,7 +895,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이러한 방법은 [LPS-108525](https://issues.liferay.com/browse/LPS-108525)에 대한 솔루션의 일부로 제거되었습니다.
+이러한 방법은 [LPS-108525](https://issues.liferay.com/browse/LPS-108525) 에 대한 솔루션의 일부로 제거되었습니다.
 
 ---------------------------------------
 

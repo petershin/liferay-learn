@@ -1,6 +1,6 @@
 # CI 서비스 빌드 자동 배포
 
-Liferay Cloud를 사용하면 웹후크를 사용하여 프로젝트의 Git 리포지토리(예: [GitHub](../getting-started/configuring-your-github-repository.md#integrating-with-the-jenkins-service), [Bitbucket](../getting-started/configuring-your-bitbucket-repository.md#connecting-bitbucket-to-your-jenkins-service), [GitLab](../getting-started/configuring-your-gitlab-repository.md#connecting-gitlab-to-your-jenkins-service))에 푸시되거나 병합된 변경 사항에 대해 Jenkins 빌드를 자동으로 트리거할 수 있습니다. 이러한 빌드는 Liferay Cloud Console을 통해 프로젝트 환경에 수동으로 배포할 수 있습니다. 또는 특정 분기에서 지정된 환경으로 성공적인 빌드를 자동으로 배포하도록 CI 서비스를 구성하여 배포 프로세스의 속도를 높일 수 있습니다.
+Liferay Cloud를 사용하면 웹후크를 사용하여 프로젝트의 Git 리포지토리(예: [GitHub](../getting-started/configuring-your-github-repository.md#integrating-with-the-jenkins-service) , [Bitbucket](../getting-started/configuring-your-bitbucket-repository.md#connecting-bitbucket-to-your-jenkins-service) , [GitLab](../getting-started/configuring-your-gitlab-repository.md#connecting-gitlab-to-your-jenkins-service) )에 푸시되거나 병합된 변경 사항에 대해 Jenkins 빌드를 자동으로 트리거할 수 있습니다. 이러한 빌드는 Liferay Cloud Console을 통해 프로젝트 환경에 수동으로 배포할 수 있습니다. 또는 특정 분기에서 지정된 환경으로 성공적인 빌드를 자동으로 배포하도록 CI 서비스를 구성하여 배포 프로세스의 속도를 높일 수 있습니다.
 
 기본적으로 자동 배포는 `LCP_CI_DEPLOY_BRANCH` 및 `LCP_CI_DEPLOY_TARGET` 변수에 의해 제어됩니다. 함께 자동 배포를 트리거하는 데 사용되는 분기와 빌드가 자동으로 배포되는 환경을 결정합니다. 기본값은 각각 `개발` 및 `개발` 으로 설정됩니다.
 

@@ -2,7 +2,7 @@
 
 {bdg-secondary}`사용 가능한 Liferay DXP 7.4 U10+ 또는 Liferay Portal 7.4 GA14+`
 
-애플리케이션을 업그레이드하려면 데이터베이스 테이블을 변경해야 할 수 있습니다. Liferay의 업그레이드 프레임워크를 사용하면 이러한 변경을 쉽게 수행할 수 있습니다. 이 업그레이드 프로세스를 보려면 샘플 프로젝트를 배포하십시오. 이전 버전의 Liferay는 [모듈](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 에 대한 업그레이드 프로세스 생성을 참조하십시오.
+애플리케이션을 업그레이드하려면 데이터베이스 테이블을 변경해야 할 수 있습니다. Liferay의 업그레이드 프레임워크를 사용하면 이러한 변경을 쉽게 수행할 수 있습니다. 이 업그레이드 프로세스를 보려면 샘플 프로젝트를 배포하십시오. 이전 버전의 Liferay는 [모듈](https://help.liferay.com/hc/ko/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 에 대한 업그레이드 프로세스 생성을 참조하십시오.
 
 ## 버전 1.0.0 배포
 
@@ -11,7 +11,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [데이터베이스 테이블 업그레이드](./liferay-p5d2.zip)을 다운로드하고 압축을 풉니다.
+1. [데이터베이스 테이블 업그레이드](./liferay-p5d2.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-p5d2.zip -O
@@ -89,7 +89,7 @@
 | `foo` (유형: 문자열) | `마디` (유형: 문자열) | 열 이름이 변경됩니다.       |
 | -               | `찰리` (유형: 문자열) | 새 열이 추가됩니다.        |
 
-[1.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/1.0.0/p5d2-service/service.xml) 의 `service.xml` 열 정의를 [2.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/service.xml)와 비교합니다.
+[1.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/1.0.0/p5d2-service/service.xml) 의 `service.xml` 열 정의를 [2.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/service.xml) 와 비교합니다.
 
 ### UpgradeStepRegistrator 클래스 생성
 
@@ -121,7 +121,7 @@
 | alterTableDropColumn | 열 제거        |
 
 ```{warning}
-`alterTableDropColumn`은 MariaDB에서 작동하지 않습니다. 이는 [알려진 버그](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b)입니다. 대신 [이전 지침](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules)을 따르십시오.
+`alterTableDropColumn`은 MariaDB에서 작동하지 않습니다. 이는 [알려진 버그](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b) 입니다. 대신 [이전 지침](https://help.liferay.com/hc/ko/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 을 따르십시오.
 ```
 
 변경한 후 Service Builder를 다시 실행하십시오. 이제 업그레이드 배포를 빌드할 준비가 되었습니다.

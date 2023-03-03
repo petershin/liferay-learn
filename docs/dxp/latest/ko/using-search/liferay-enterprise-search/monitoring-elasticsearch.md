@@ -6,7 +6,7 @@ uuid: 200d8582-24d6-4c35-a50b-ddb0b4b7c8b1
 
 {bdg-link-primary}`[LES 구독](./activating-liferay-enterprise-search.md)`
 
-Liferay Enterprise Search(LES) [구독](https://www.liferay.com/products/dxp/enterprise-search)이 있는 경우 Elastic의 [Kibana 모니터링 UI](https://www.elastic.co/guide/en/kibana/7.x/introduction.html) Liferay DXP와 통합하여 모니터링 활동을 Liferay 자체 내에서 수행할 수 있습니다.
+Liferay Enterprise Search(LES) [구독](https://www.liferay.com/products/dxp/enterprise-search) 이 있는 경우 Elastic의 [Kibana 모니터링 UI](https://www.elastic.co/guide/en/kibana/7.x/introduction.html) Liferay DXP와 통합하여 모니터링 활동을 Liferay 자체 내에서 수행할 수 있습니다.
 
 ![LES 모니터링을 사용하면 Liferay의 UI에서 Liferay의 인덱스를 모니터링할 수 있습니다.](./monitoring-elasticsearch/images/01.png)
 
@@ -34,10 +34,10 @@ Elasticsearch를 다시 시작한 다음 Kibana를 설치합니다.
 
 ## 키바나 설치
 
-Kibana 버전이 Elasticsearch 버전과 일치하는지 확인하십시오. 자세한 내용은 [Liferay 기업 검색 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 확인하십시오.
+Kibana 버전이 Elasticsearch 버전과 일치하는지 확인하십시오. 자세한 내용은 [Liferay 기업 검색 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 확인하십시오.
 
 ```{note}
-Elasticsearch 6.x가 [수명 종료](https://www.elastic.co/support/eol#elasticsearch)에 도달했습니다. 여전히 Elasticsearch 6.x를 사용하는 Liferay 7.2 시스템은 Elasticsearch 7.x로 업그레이드해야 합니다. 자세한 내용은 [Elasticsearch 7로 업그레이드](./../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)를 참조하세요.
+Elasticsearch 6.x가 [수명 종료](https://www.elastic.co/support/eol#elasticsearch) 에 도달했습니다. 여전히 Elasticsearch 6.x를 사용하는 Liferay 7.2 시스템은 Elasticsearch 7.x로 업그레이드해야 합니다. 자세한 내용은 [Elasticsearch 7로 업그레이드](./../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)를 참조하세요.
 ```
 
 1. [Kibana](https://www.elastic.co/downloads/kibana) 다운로드하고 압축을 풉니다. 루트 폴더는 *Kibana Home*이라고 합니다.
@@ -63,7 +63,7 @@ Elasticsearch 6.x가 [수명 종료](https://www.elastic.co/support/eol#elastics
 
 1. 인증서 파일을 제공하여 암호화 구성을 시작하십시오. 자세한 내용은 [Elastic의 가이드](https://www.elastic.co/guide/en/kibana/7.x/using-kibana-with-security.html#using-kibana-with-security) 참조하십시오.
 
-   Elasticsearch용으로 생성된 [파일을 재사용하려면](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md#generate-node-certificates), `[Elasticsearch Home]/config/certs` 폴더를 `[Kibana Home]/config/` 폴더로 복사하십시오.
+   Elasticsearch용으로 생성된 [파일을 재사용하려면](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md#generate-node-certificates) , `[Elasticsearch Home]/config/certs` 폴더를 `[Kibana Home]/config/` 폴더로 복사하십시오.
 
    Kibana 인스턴스에 대해 별도의 인증서를 생성하려면 Elasticsearch 노드 인증서와 동일한 CA에서 서명했는지 확인하십시오.
 
@@ -253,7 +253,7 @@ SSLException: No PSK available. Unable to resume
 
 1. Tomcat의 아웃바운드 연결에 대해 TLS 1.3을 비활성화합니다. Tomcat의 `setenv.bat/sh` 에서 `-Dhttps.protocols=TLSv1.1,TLSv1.2` 설정합니다( `CATALINA_OPTS`에 추가).
 1. `--tls-max-v1.2` `KIBANA_HOME/config/node.options`에 추가하여 Kibana에서 TLS 1.3을 비활성화합니다.
-1. 근본 문제([JDK-8213202](https://bugs.openjdk.java.net/browse/JDK-8213202))가 이미 수정된 [호환 JDK 버전](https://help.liferay.com/hc/en-us/articles/360016511651) 로 전환합니다.
+1. 근본 문제( [JDK-8213202](https://bugs.openjdk.java.net/browse/JDK-8213202) )가 이미 수정된 [호환 JDK 버전](https://help.liferay.com/hc/ko/articles/360016511651) 로 전환합니다.
 
 ## 관련 항목
 

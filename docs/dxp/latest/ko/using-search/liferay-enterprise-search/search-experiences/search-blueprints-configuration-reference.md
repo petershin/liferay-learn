@@ -50,7 +50,7 @@
 청사진에 하이라이트를 추가하려면,
 
 1. 청사진 편집기에서 _구성_ 탭을 클릭합니다.
-1. 하이라이트 구성 텍스트 영역을 찾아 유효한 JSON을 입력합니다. 속성 및 가능한 값은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/highlighting.html)에 자세히 설명되어 있습니다.
+1. 하이라이트 구성 텍스트 영역을 찾아 유효한 JSON을 입력합니다. 속성 및 가능한 값은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/highlighting.html) 에 자세히 설명되어 있습니다.
 
    ```json
    {

@@ -17,7 +17,7 @@
 * Wiki페이지
 
 ```{note}
-Liferay DXP 7.2부터 개발자는 [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework)를 사용하여 [에서 자산을 표시할 수 있습니다. 정보 목록](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider).
+Liferay DXP 7.2부터 개발자는 [Info Framework](https://help.liferay.com/hc/ko/articles/360029067251-Introduction-to-The-Info-Framework) 를 사용하여 [에서 자산을 표시할 수 있습니다. 정보 목록](https://help.liferay.com/hc/ko/articles/360029067271-Creating-an-Information-List-Provider) .
 ```
 
 원하는 자산을 표시하도록 자산 게시자를 구성하는 가장 쉬운 방법은 필요에 맞는 [컬렉션](../../../content-authoring-and-management/collections-and-collection-pages.md) 을 사용하는 것입니다. 컬렉션에 자산을 수동으로 할당하든 동적으로 할당하든 자산 게시자 위젯은 컬렉션이 정의한 순서대로 자산을 자동으로 로드합니다. Liferay DXP 7.4 U10+ 또는 GA14에서 자산 게시자는 기본적으로 컬렉션 구성을 사용합니다.

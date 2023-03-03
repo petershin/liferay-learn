@@ -28,7 +28,7 @@ Liferay Forms에는 또한 사용자가 높은 참여 양식을 효율적으로 
 
 > 기부금
 
-[Kaleo Forms](https://help.liferay.com/hc/en-us/articles/360028821952-Kaleo-Forms) 은 양식 작성을 추가 워크플로 도구와 통합하여 회의실 체크아웃 양식 또는 지원 티켓 프로세스와 같은 양식 기반 비즈니스 프로세스를 생성하므로 지원 티켓이 해결 과정에서 적절한 채널을 거치도록 합니다.
+[Kaleo Forms](https://help.liferay.com/hc/ko/articles/360028821952-Kaleo-Forms) 은 양식 작성을 추가 워크플로 도구와 통합하여 회의실 체크아웃 양식 또는 지원 티켓 프로세스와 같은 양식 기반 비즈니스 프로세스를 생성하므로 지원 티켓이 해결 과정에서 적절한 채널을 거치도록 합니다.
 
 ![Kaleo 데모 양식](./introduction-to-forms/images/01.png)
 

@@ -1,14 +1,14 @@
 # 컬렉션 및 컬렉션 페이지 정보
 
 ```{note}
-이 정보는 Liferay DXP 7.3+에 적용됩니다. 이전 Liferay 버전에서는 컬렉션을 콘텐츠 세트라고 했습니다. 콘텐츠 세트에 대한 자세한 내용은 [Liferay DXP 7.2](#liferay-dxp-7-2)를 참조하십시오.
+이 정보는 Liferay DXP 7.3+에 적용됩니다. 이전 Liferay 버전에서는 컬렉션을 콘텐츠 세트라고 했습니다. 콘텐츠 세트에 대한 자세한 내용은 [Liferay DXP 7.2](#liferay-dxp-7-2) 를 참조하십시오.
 ```
 
-컬렉션은 정보를 그룹화하고 필터링하는 데 사용할 수 있는 콘텐츠 항목 집합입니다. 컬렉션에는 다양한 유형의 콘텐츠가 포함될 수도 있고 특정 유형의 콘텐츠 하나만 포함될 수도 있습니다. 그런 다음 페이지 조각을 사용하여 원하는 형식으로 표시할 수 있는 [컬렉션 페이지](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page)에 표시할 수 있습니다.
+컬렉션은 정보를 그룹화하고 필터링하는 데 사용할 수 있는 콘텐츠 항목 집합입니다. 컬렉션에는 다양한 유형의 콘텐츠가 포함될 수도 있고 특정 유형의 콘텐츠 하나만 포함될 수도 있습니다. 그런 다음 페이지 조각을 사용하여 원하는 형식으로 표시할 수 있는 [컬렉션 페이지](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) 에 표시할 수 있습니다.
 
 ![컬렉션 페이지를 사용하여 원하는 형식으로 특정 컬렉션을 빠르게 표시합니다.](./about-collections-and-collection-pages/images/01.png)
 
-다음 예를 고려하십시오. 고객 성공 사례가 있는 제품 웹 페이지에 새 섹션을 만들 계획입니다. 이러한 성공 사례가 게시될 때 이 섹션에 자동으로 새로운 성공 사례를 표시하려고 합니다. 이 경우 컬렉션의 콘텐츠를 표시하는 컬렉션 페이지를 사용하여 모든 성공 사례를 그룹화하는 컬렉션을 만들 수 있습니다. 컬렉션 페이지 외에도 컬렉션 표시 조각을 사용하여 다른 콘텐츠 페이지에 이 컬렉션을 표시할 수 있습니다(자세한 내용은 [컬렉션 표시](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page)참조).
+다음 예를 고려하십시오. 고객 성공 사례가 있는 제품 웹 페이지에 새 섹션을 만들 계획입니다. 이러한 성공 사례가 게시될 때 이 섹션에 자동으로 새로운 성공 사례를 표시하려고 합니다. 이 경우 컬렉션의 콘텐츠를 표시하는 컬렉션 페이지를 사용하여 모든 성공 사례를 그룹화하는 컬렉션을 만들 수 있습니다. 컬렉션 페이지 외에도 컬렉션 표시 조각을 사용하여 다른 콘텐츠 페이지에 이 컬렉션을 표시할 수 있습니다(자세한 내용은 [컬렉션 표시](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) 참조).
 
 Liferay에는 두 가지 유형의 컬렉션이 있습니다.
 
@@ -30,7 +30,7 @@ Liferay에는 두 가지 유형의 컬렉션이 있습니다.
 
 ## 컬렉션 표시
 
-[컬렉션 페이지](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) 또는 [컬렉션 표시 조각](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page)을 사용하여 컬렉션을 표시할 수 있습니다.
+[컬렉션 페이지](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) 또는 [컬렉션 표시 조각](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) 을 사용하여 컬렉션을 표시할 수 있습니다.
 
 컬렉션 페이지는 컬렉션에 연결된 페이지 유형입니다. 컬렉션 페이지를 사용하면 컬렉션을 표시하고 사용자 지정하는 작업이 쉬워집니다. 예를 들어 컬렉션 페이지를 사용하여 컬렉션에 새 항목을 빠르게 추가할 수 있습니다.
 
@@ -52,7 +52,7 @@ Liferay 세그먼트를 컬렉션과 연결하여 [세그먼트 구성](../../si
 
 ## Asset Publisher 구성을 컬렉션으로 변환
 
-컬렉션을 직접 생성하거나 자산 게시자 위젯 [에서 생성할 수](../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md). 자산 게시자 옵션은 사용자 정의를 다른 페이지의 모음으로 사용하려는 경우에 유용합니다. 자세한 내용은 [컬렉션 만들기](./creating-collections.md#creating-a-collection-from-an-asset-publisher)을 참조하십시오.
+컬렉션을 직접 생성하거나 자산 게시자 위젯 [에서 생성할 수](../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md). 자산 게시자 옵션은 사용자 정의를 다른 페이지의 모음으로 사용하려는 경우에 유용합니다. 자세한 내용은 [컬렉션 만들기](./creating-collections.md#creating-a-collection-from-an-asset-publisher) 을 참조하십시오.
 
 ## 라이프레이 DXP 7.2
 
@@ -66,11 +66,11 @@ Liferay 세그먼트를 컬렉션과 연결하여 [세그먼트 구성](../../si
 
 ### 콘텐츠 세트 생성 및 표시
 
-콘텐츠 세트는 사이트 관리 인터페이스를 통해 생성됩니다. 콘텐츠 세트를 만들고 관리하기 위한 모든 기능이 여기에 포함되어 있습니다. Liferay의 위젯 또는 사용자 지정 응용 프로그램을 사용하여 표시됩니다. [콘텐츠 세트 만들기](./creating-collections.md#creating-content-sets) 및 [콘텐츠 세트 표시](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-content-sets)에 대한 정보는 가이드를 참조하십시오.
+콘텐츠 세트는 사이트 관리 인터페이스를 통해 생성됩니다. 콘텐츠 세트를 만들고 관리하기 위한 모든 기능이 여기에 포함되어 있습니다. Liferay의 위젯 또는 사용자 지정 응용 프로그램을 사용하여 표시됩니다. [콘텐츠 세트 만들기](./creating-collections.md#creating-content-sets) 및 [콘텐츠 세트 표시](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-content-sets) 에 대한 정보는 가이드를 참조하십시오.
 
 ### 콘텐츠 세트 개인화
 
-콘텐츠 세트는 Liferay DXP의 개인화 엔진에 의해 구동되는 변형을 가질 수 있습니다. 콘텐츠 세트를 생성한 후 사용자 세그먼트가 하나 이상 생성된 경우 해당 세그먼트에 대한 콘텐츠 세트의 개인화된 경험을 생성할 수 있습니다. 콘텐츠 세트에 대한 경험 개인화의 힘을 활용하는 방법을 배우려면 [콘텐츠 세트 개인화](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md#content-set-personalization)을 참조하십시오.
+콘텐츠 세트는 Liferay DXP의 개인화 엔진에 의해 구동되는 변형을 가질 수 있습니다. 콘텐츠 세트를 생성한 후 사용자 세그먼트가 하나 이상 생성된 경우 해당 세그먼트에 대한 콘텐츠 세트의 개인화된 경험을 생성할 수 있습니다. 콘텐츠 세트에 대한 경험 개인화의 힘을 활용하는 방법을 배우려면 [콘텐츠 세트 개인화](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md#content-set-personalization) 을 참조하십시오.
 
 ### Asset Publisher 구성을 콘텐츠 세트로 변환
 

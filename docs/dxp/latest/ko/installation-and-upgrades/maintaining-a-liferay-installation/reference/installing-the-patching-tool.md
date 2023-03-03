@@ -6,7 +6,7 @@ Patching Tool은 설치 및 업데이트가 쉽습니다.
 
 ## 설치
 
-1. [고객 포털](https://customer.liferay.com/downloads)에서 패치 도구를 다운로드합니다.
+1. [고객 포털](https://customer.liferay.com/downloads) 에서 패치 도구를 다운로드합니다.
 
     * **DXP 7.3+의 경우** 최신 패칭 도구를 다운로드합니다.
     * **DXP 7.2의 경우** Patching Tool 2.x의 최신 버전을 다운로드합니다.
@@ -26,7 +26,7 @@ cd patching-tool
 
 패치 도구는 설치 중인 패치에 최신 패치 도구 버전이 필요할 때 보고합니다. 패치 도구를 업데이트하는 방법은 다음과 같습니다.
 
-1. [고객 포털](https://customer.liferay.com/downloads)에서 패치 도구를 다운로드합니다.
+1. [고객 포털](https://customer.liferay.com/downloads) 에서 패치 도구를 다운로드합니다.
 
     * **DXP 7.3+의 경우** 최신 패칭 도구를 다운로드합니다.
     * **DXP 7.2의 경우** 패치 도구의 최신 2.x 버전을 다운로드합니다.

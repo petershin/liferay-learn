@@ -8,7 +8,7 @@
 
 2. **엔터티 버전을 삭제하는 방법을 찾습니다.** Liferay DXP [앱 API](https://docs.liferay.com/dxp/apps/) 및 [com.liferay.portal.kernel API](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/) 는 사용할 수 있는 옵션입니다.
 
-    [Service Builder](https://help.liferay.com/hc/en-us/articles/360030958811-Running-Service-Builder) 엔터티인 경우 엔터티의 `*LocalServiceUtil` 클래스에서 `delete*` 메서드를 검사합니다.
+    [Service Builder](https://help.liferay.com/hc/ko/articles/360030958811-Running-Service-Builder) 엔터티인 경우 엔터티의 `*LocalServiceUtil` 클래스에서 `delete*` 메서드를 검사합니다.
 
     예를 들어, 이 `deleteArticle` in [`JournalArticleLocalServiceUtil`](https://docs.liferay.com/dxp/apps/web-experience/latest/javadocs/com/liferay/journal/service/JournalArticleLocalServiceUtil.html#deleteArticle-long-java.lang.String-double-java.lang.String-com.liferay.portal.kernel.service.ServiceContext-) 는 저널 기사 버전을 삭제합니다.
 
@@ -29,7 +29,7 @@
             JournalArticleLocalServiceUtil.getJournalArticleResources(start, end);
         ```
 
-    1. 각 `JournalArticleResource`와 연결된 `JournalArticle` 개체를 통해 각 `개의 JournalArticle` 버전의 워크플로 상태를 가져옵니다. [Dynamic Query](https://help.liferay.com/hc/en-us/articles/360030614272-Dynamic-Query) 은 각 개체에서 원하는 데이터를 정확하게 가져오는 효율적인 방법입니다.
+    1. 각 `JournalArticleResource`와 연결된 `JournalArticle` 개체를 통해 각 `개의 JournalArticle` 버전의 워크플로 상태를 가져옵니다. [Dynamic Query](https://help.liferay.com/hc/ko/articles/360030614272-Dynamic-Query) 은 각 개체에서 원하는 데이터를 정확하게 가져오는 효율적인 방법입니다.
 
 
         <!--Add back link for 'Dynamic Query' once dynamic-query article is available-->
@@ -60,7 +60,7 @@
         }
         ```
 
-    1. 각 `개의 JournalArticleResource` (각 `JournalArticle` 엔터티마다 하나씩 있음)에 대해 유지하려는 첫 번째 또는 최신 버전의 범위에 있고 해당 상태가 삭제 자격이 있는 중간 버전 목록을 작성합니다. 예를 들어 승인되었거나 만료된 중간 기사 버전(예: [WorkflowConstants.STATUS_APPROVED 또는 WorkflowConstants.STATUS_EXPIRED](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/workflow/WorkflowConstants.html))을 삭제할 수 있습니다. `MIN_NUMBER_FIRST_VERSIONS_KEPT` 및 `MIN_NUMBER_LATEST_VERSIONS_KEPT` 변수는 유지할 첫 번째(가장 오래된) 버전과 최신(최신) 버전의 최소 및 최대 수를 표시합니다.
+    1. 각 `개의 JournalArticleResource` (각 `JournalArticle` 엔터티마다 하나씩 있음)에 대해 유지하려는 첫 번째 또는 최신 버전의 범위에 있고 해당 상태가 삭제 자격이 있는 중간 버전 목록을 작성합니다. 예를 들어 승인되었거나 만료된 중간 기사 버전(예: [WorkflowConstants.STATUS_APPROVED 또는 WorkflowConstants.STATUS_EXPIRED](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/workflow/WorkflowConstants.html) )을 삭제할 수 있습니다. `MIN_NUMBER_FIRST_VERSIONS_KEPT` 및 `MIN_NUMBER_LATEST_VERSIONS_KEPT` 변수는 유지할 첫 번째(가장 오래된) 버전과 최신(최신) 버전의 최소 및 최대 수를 표시합니다.
 
         ```java
         List<Double> journalArticlesVersionsToDelete =

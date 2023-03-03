@@ -8,7 +8,7 @@
 * PostgreSQL
 
 ```{important}
-[Liferay DXP 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)에는 지원되는 데이터베이스 및 버전이 나와 있습니다.
+[Liferay DXP 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 에는 지원되는 데이터베이스 및 버전이 나와 있습니다.
 ```
 
 ## 데이터베이스 구성
@@ -19,7 +19,7 @@
     create database lportal character set utf8;
     ```
 
-1. 전체 데이터베이스 권한이 있는 데이터베이스 사용자를 설정합니다. 조직에서 DXP 데이터베이스 사용자에게 제한된 데이터베이스 액세스 권한을 요구하는 경우 [High Security Database User Practices](../reference/database-configurations.md#high-security-database-user-practices)을 참조하십시오.
+1. 전체 데이터베이스 권한이 있는 데이터베이스 사용자를 설정합니다. 조직에서 DXP 데이터베이스 사용자에게 제한된 데이터베이스 액세스 권한을 요구하는 경우 [High Security Database User Practices](../reference/database-configurations.md#high-security-database-user-practices) 을 참조하십시오.
 
     ```{important}
     Liferay는 데이터베이스 읽기 및 쓰기가 필요합니다. 따라서 Liferay 데이터베이스 사용자는 데이터를 읽고 쓸 수 있는 권한이 있어야 합니다.

@@ -37,11 +37,11 @@
 
 `AuthVerifier`은 개발자가 생성하며 OSGi 런타임에 등록되어 있는 한 자동으로 처리됩니다. 이 계층과 주변 프로세스는 `javax.servlet.Filter` 인터페이스를 구현하는 `AuthVerifierFilter` 클래스에 의해 제공됩니다. 제품과 함께 제공되는 인증 검증기의 구성은 다음과 같습니다.
 
-* [기본 인증 헤더](#basic-auth-header)*
+* [기본 인증 헤더](#basic-auth-header) *
 * [다이제스트 인증](#digest-auth-header)
 * [HTTP 터널 익스텐더](#http-tunnel-extender)
 * [이미지 요청](#image-request-authentication-verifier)
-* [포털 세션](#portal-sessions-auth-verifiers)*
+* [포털 세션](#portal-sessions-auth-verifiers) *
 * [요청 파라미터](#request-parameter)
 * [터널 인증](#tunnel-auth)
 
@@ -49,13 +49,13 @@
 
 ### 기본 인증 헤더
 
-이 Auth Verifier를 사용하면 원격 클라이언트가 [HTTP 기본 인증](https://en.wikipedia.org/wiki/Basic_access_authentication)을 사용하여 인증할 수 있습니다. 이 방식으로 인증해야 하는 URL 경로를 제공하여 구성합니다. _강제 기본 인증_ 필드가 선택되면 HTTP 기본 인증이 필요합니다.
+이 Auth Verifier를 사용하면 원격 클라이언트가 [HTTP 기본 인증](https://en.wikipedia.org/wiki/Basic_access_authentication) 을 사용하여 인증할 수 있습니다. 이 방식으로 인증해야 하는 URL 경로를 제공하여 구성합니다. _강제 기본 인증_ 필드가 선택되면 HTTP 기본 인증이 필요합니다.
 
 웹 서비스의 기본 URL은 `/api/*,/xmlrpc*` 입니다. 매핑은 `/api/liferay*` 을 제외하여 `TunnelServlet`액세스를 방지합니다. 자세한 내용은 터널 인증 확인자를 참조하십시오.
 
 ### 다이제스트 인증 헤더
 
-이 Auth Verifier는 원격 클라이언트가 [HTTP 다이제스트 인증](https://en.wikipedia.org/wiki/Digest_access_authentication)을 사용하여 인증할 수 있도록 합니다. 이 방식으로 인증해야 하는 URL 경로를 제공하여 구성합니다. Force Digest Authentication 필드가 선택되면 HTTP 기본 인증이 필요합니다.
+이 Auth Verifier는 원격 클라이언트가 [HTTP 다이제스트 인증](https://en.wikipedia.org/wiki/Digest_access_authentication) 을 사용하여 인증할 수 있도록 합니다. 이 방식으로 인증해야 하는 URL 경로를 제공하여 구성합니다. Force Digest Authentication 필드가 선택되면 HTTP 기본 인증이 필요합니다.
 
 이 Auth Verifier는 기본적으로 활성화되어 있지 않습니다.
 

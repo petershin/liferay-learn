@@ -82,7 +82,7 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 `portal.properties` 파일을 재정의하는 대신 Portal의 구성 관리자에서 속성을 관리할 수 있습니다. 이것은 Liferay Portal의 *제어판* &rarr; *구성* &rarr; *시스템 설정* &rarr; *인프라* &rarr; *내보내기/가져오기* 으로 이동하여 설정을 편집하여 액세스할 수 있습니다.
 
-응용 프로그램에 새 구성을 포함하려면 [응용 프로그램을 구성 가능하게 만들기](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-1/making-applications-configurable)지침을 따르십시오.
+응용 프로그램에 새 구성을 포함하려면 [응용 프로그램을 구성 가능하게 만들기](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-1/making-applications-configurable) 지침을 따르십시오.
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
@@ -397,9 +397,9 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 
 다음 두 가지 방법 중 하나로 코드를 업데이트해야 합니다.
 
-- [React 문서](https://reactjs.org/docs/react-component.html)에 설명된 대로 `React.createClass` API에서 ES6 `class` API를 사용하도록 사용자 지정 버튼을 포팅합니다. 예를 들어 [ES6 클래스 기반 버튼](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx)으로 이동하면서 변경된 사항을 확인하세요. [이전 `createClass` 기반 구현](https://github.com/liferay/alloy-editor/blob/2826ab9ceabe17c6ba0d38985baf8a787c23db43/src/ui/react/src/components/buttons/button-ol.jsx).
+- [React 문서](https://reactjs.org/docs/react-component.html) 에 설명된 대로 `React.createClass` API에서 ES6 `class` API를 사용하도록 사용자 지정 버튼을 포팅합니다. 예를 들어 [ES6 클래스 기반 버튼](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx) 으로 이동하면서 변경된 사항을 확인하세요. [이전 `createClass` 기반 구현](https://github.com/liferay/alloy-editor/blob/2826ab9ceabe17c6ba0d38985baf8a787c23db43/src/ui/react/src/components/buttons/button-ol.jsx) .
 
-- 호환 어댑터를 제공하십시오. [create-react-class 패키지](https://www.npmjs.com/package/create-react-class)([여기](https://reactjs.org/docs/react-without-es6. html))을 페이지에 삽입하여 `createClass` API를 복원할 수 있습니다.
+- 호환 어댑터를 제공하십시오. [create-react-class 패키지](https://www.npmjs.com/package/create-react-class) ( [여기](https://reactjs.org/docs/react-without-es6. html) )을 페이지에 삽입하여 `createClass` API를 복원할 수 있습니다.
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
@@ -502,7 +502,7 @@ JGroups는 버전 3.6.16에서 4.1.1로 업그레이드되었습니다.
 ### Liferay AssetEntries_AssetCategories는 더 이상 사용되지 않습니다.
 
 - **날짜:** 2019-9-11
-- **JIRA 티켓:** [LPS-99973](https://issues.liferay.com/browse/LPS-99973), [LPS-76488](https://issues.liferay.com/browse/LPS-76488)
+- **JIRA 티켓:** [LPS-99973](https://issues.liferay.com/browse/LPS-99973) , [LPS-76488](https://issues.liferay.com/browse/LPS-76488)
 
 #### 무엇이 바뀌었나요?
 
@@ -551,7 +551,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이 변경은 [LPS-76488](https://issues.liferay.com/browse/LPS-76488)로 인해 개발자가 지정된 범주에 대한 자산 목록의 순서를 제어할 수 있도록 하는 변경 사항으로 인해 이루어졌습니다.
+이 변경은 [LPS-76488](https://issues.liferay.com/browse/LPS-76488) 로 인해 개발자가 지정된 범주에 대한 자산 목록의 순서를 제어할 수 있도록 하는 변경 사항으로 인해 이루어졌습니다.
 
 ---------------------------------------
 
@@ -570,7 +570,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-시스템 설정을 통해 자동 태그 지정을 다시 구성해야 합니다(자세한 내용은 [공식 문서](https://help.liferay.com/hc/en-us/articles/360029041551-Configuring-Asset-Auto-Tagging) 참조). 이전 구성 인터페이스를 참조하는 모든 코드는 새 구성 인터페이스를 사용하도록 업데이트해야 합니다.
+시스템 설정을 통해 자동 태그 지정을 다시 구성해야 합니다(자세한 내용은 [공식 문서](https://help.liferay.com/hc/ko/articles/360029041551-Configuring-Asset-Auto-Tagging) 참조). 이전 구성 인터페이스를 참조하는 모든 코드는 새 구성 인터페이스를 사용하도록 업데이트해야 합니다.
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
@@ -668,7 +668,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563)의 데이터 공급자 API 리팩토링의 일부입니다.
+이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
 
@@ -691,7 +691,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이 변경은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563)의 데이터 제공자 API 리팩토링의 일부입니다.
+이 변경은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 제공자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
 
@@ -724,7 +724,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 왜 이렇게 변경되었나요?
 
-이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563)의 데이터 공급자 API 리팩토링의 일부입니다.
+이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
 
@@ -746,7 +746,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563)의 데이터 공급자 API 리팩토링의 일부입니다.
+이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
 
@@ -775,7 +775,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563)의 데이터 공급자 API 리팩토링의 일부입니다.
+이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
 
@@ -798,7 +798,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563)의 데이터 공급자 API 리팩토링의 일부입니다.
+이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
 
@@ -821,7 +821,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563)의 데이터 공급자 API 리팩토링의 일부입니다.
+이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
 
@@ -844,7 +844,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-클래스 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponseOutput` 은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563)의 데이터 공급자 코드에 개선 사항이 구현된 후 사용되지 않기 때문에 사용 중단 경고 없이 삭제되었습니다.
+클래스 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponseOutput` 은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 코드에 개선 사항이 구현된 후 사용되지 않기 때문에 사용 중단 경고 없이 삭제되었습니다.
 
 ---------------------------------------
 
@@ -892,7 +892,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 이렇게 변경된 이유는 무엇입니까?
 
-이 변경 사항은 [LPS-81564](https://issues.liferay.com/browse/LPS-81564)의 스토리지 어댑터 API 리팩토링의 일부입니다.
+이 변경 사항은 [LPS-81564](https://issues.liferay.com/browse/LPS-81564) 의 스토리지 어댑터 API 리팩토링의 일부입니다.
 
 ---------------------------------------
 
@@ -1092,7 +1092,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 #### 무엇이 바뀌었나요?
 
-이 변경 전에는 `.cfg` 파일이 `.cfg` 또는 `.config` 형식을 사용할 수 있었습니다. 이제 `.cfg` 구성 파일은 [여기](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#property-files-cfg)에 정의된 대로 `.cfg` 형식을 사용해야 합니다.
+이 변경 전에는 `.cfg` 파일이 `.cfg` 또는 `.config` 형식을 사용할 수 있었습니다. 이제 `.cfg` 구성 파일은 [여기](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#property-files-cfg) 에 정의된 대로 `.cfg` 형식을 사용해야 합니다.
 
 #### 누가 영향을 받습니까?
 

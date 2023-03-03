@@ -12,7 +12,7 @@ uuid: 1ad4c7f0-4666-4cae-868a-63be6308923f
 * PostgreSQL
 
 ```{note}
-[Liferay DXP 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)에는 지원되는 데이터베이스 및 버전이 나와 있습니다.
+[Liferay DXP 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 에는 지원되는 데이터베이스 및 버전이 나와 있습니다.
 ```
 
 데이터베이스에 연결하려면 다음이 필요합니다.
@@ -69,7 +69,7 @@ Liferay DXP는 데이터를 유지하기 위해 데이터베이스 사용자 자
 
 ### 쿼리 결과 정렬 순서 구성(선택 사항)
 
-모든 데이터베이스에는 결과 정렬을 위한 기본 순서가 있습니다( [이 문서](https://help.liferay.com/hc/en-us/articles/360029315971-Sort-Order-Changed-with-a-Different-Database)참조). 이 순서가 우려되는 경우 데이터베이스 공급업체 설명서를 참조하여 정렬 순서를 알아보고 필요한 경우 Liferay DXP 엔터티에 대해 선호하는 기본 쿼리 결과 순서를 사용하도록 데이터베이스를 구성하십시오.
+모든 데이터베이스에는 결과 정렬을 위한 기본 순서가 있습니다( [이 문서](https://help.liferay.com/hc/ko/articles/360029315971-Sort-Order-Changed-with-a-Different-Database) 참조). 이 순서가 우려되는 경우 데이터베이스 공급업체 설명서를 참조하여 정렬 순서를 알아보고 필요한 경우 Liferay DXP 엔터티에 대해 선호하는 기본 쿼리 결과 순서를 사용하도록 데이터베이스를 구성하십시오.
 
 데이터베이스 서버, 데이터베이스 및 데이터베이스 사용자를 구성했습니다. Liferay DXP가 데이터베이스와 통신하는 데 사용하는 JDBC 커넥터를 설치할 준비가 되었습니다.
 
@@ -119,5 +119,5 @@ Docker 이미지와 함께 포털 속성 파일을 사용하려면 바인드 마
 ![설정 마법사의 데이터베이스 섹션에서 DXP의 내장 데이터 소스를 구성할 수 있습니다.](./database-configurations/images/01.png)
 
 ```{note}
-애플리케이션 서버에서 관리되는 데이터 소스를 사용하는 경우 애플리케이션 서버에 대한 지침을 참조하십시오. [Tomcat](../installing-liferay/installing-liferay-on-an-application-server/installing-on-tomcat.md ), [WildFly](../installing-liferay/installing-liferay-on-an-application-server/installing-on-wildfly.md), [JBoss EAP](../installing-liferay/installing-liferay-on- an-application-server/installing-on-jboss-eap.md), [WebLogic](../installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md), 또는 [WebSphere]( ../installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md).
+애플리케이션 서버에서 관리되는 데이터 소스를 사용하는 경우 애플리케이션 서버에 대한 지침을 참조하십시오. [Tomcat](../installing-liferay/installing-liferay-on-an-application-server/installing-on-tomcat.md ) , [WildFly](../installing-liferay/installing-liferay-on-an-application-server/installing-on-wildfly.md), [JBoss EAP](../installing-liferay/installing-liferay-on- an-application-server/installing-on-jboss-eap.md), [WebLogic](../installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md), 또는 [WebSphere]( ../installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md).
 ```

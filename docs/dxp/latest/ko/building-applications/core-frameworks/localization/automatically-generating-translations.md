@@ -15,7 +15,7 @@ Liferay DXP는 기본적으로 50개 언어를 지원합니다. 각 로캘에는
 
 그런 다음 다음 단계를 따르세요.
 
-1. [번역 자동 생성](./liferay-m7d6.zip)을 다운로드하고 압축을 풉니다.
+1. [번역 자동 생성](./liferay-m7d6.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/localization/liferay-m7d6.zip -O
@@ -31,7 +31,7 @@ Liferay DXP는 기본적으로 50개 언어를 지원합니다. 각 로캘에는
    microsoft.translator.subscription.key={your unique key}
    ```
 
-   Language Builder가 작동하려면 자신의 [Microsoft Translator 구독 키](https://www.microsoft.com/en-us/translator/business/translator-api/)를 얻어야 합니다.
+   Language Builder가 작동하려면 자신의 [Microsoft Translator 구독 키](https://www.microsoft.com/en-us/translator/business/translator-api/) 를 얻어야 합니다.
 
 1. 모듈 루트에서 Language Builder를 실행합니다.
 
@@ -59,4 +59,4 @@ buildLang {
 }
 ```
 
-Language Builder 도구 및 추가 구성에 대한 자세한 내용은 [Lang Builder Gradle Plugin](https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-lang-builder)을 참조하십시오.
+Language Builder 도구 및 추가 구성에 대한 자세한 내용은 [Lang Builder Gradle Plugin](https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-lang-builder) 을 참조하십시오.

@@ -32,7 +32,7 @@ using-content-pages/content-page-editor-ui-reference.md
 
 개인화된 페이지 [경험](../personalizing-site-experience/experience-personalization/content-page-personalization.md) 을 생성하고 현지화된 번역을 관리하여 대상 고객의 참여를 유도하십시오. 반응형 레이아웃 편집기를 사용하여 사용자 경험을 더욱 최적화할 수도 있습니다. 이 도구는 페이지 콘텐츠를 조정하므로 데스크톱, 태블릿 및 스마트폰에서 콘텐츠 페이지가 표시되는 방식을 보고 구성할 수 있습니다.
 
-마지막으로 [A/B Testing](../optimizing-sites/ab-testing/ab-testing.md)사용하면 콘텐츠 페이지의 대체 버전을 생성하여 방문자 데이터(예: 이탈률, 클릭수 등)를 추적할 수 있습니다. 알고리즘을 사용하면 이 데이터를 분석하여 목표를 가장 잘 달성하는 페이지 버전을 결정하고 그에 따라 메시지를 다듬을 수 있습니다.
+마지막으로 [A/B 테스트](../optimizing-sites/ab-testing/ab-testing.md) 사용하면 콘텐츠 페이지의 대체 버전을 생성하여 방문자 데이터(예: 이탈률, 클릭수 등)를 추적할 수 있습니다. 알고리즘을 사용하면 이 데이터를 분석하여 목표를 가장 잘 달성하는 페이지 버전을 결정하고 그에 따라 메시지를 다듬을 수 있습니다.
 
 시작하려면 [콘텐츠 페이지에 요소 추가](./using-content-pages/adding-elements-to-content-pages.md) 참조하십시오!
 

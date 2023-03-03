@@ -3,7 +3,7 @@
 Liferay는 보안 및 버그 수정과 향상된 기능을 포함하는 Liferay DXP의 새로운 마이너 및 메이저 버전을 정기적으로 출시합니다. 새로운 주요 Liferay DXP 버전 증분으로 업그레이드하려면 DXP 데이터베이스를 업그레이드해야 합니다.
 
 ```{note}
-생산 중인 대규모 데이터 세트의 경우 원활한 업그레이드를 수행하기 위한 몇 가지 추가 고려 사항이 있습니다. 예를 들어 맞춤 코드 또는 Marketplace 앱이 제대로 작동하려면 추가 업데이트가 필요할 수 있습니다. 코어 업그레이드에 대한 포괄적인 개요는 [Liferay DXP 업그레이드 가이드](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html)를 참조하세요. .
+생산 중인 대규모 데이터 세트의 경우 원활한 업그레이드를 수행하기 위한 몇 가지 추가 고려 사항이 있습니다. 예를 들어 맞춤 코드 또는 Marketplace 앱이 제대로 작동하려면 추가 업데이트가 필요할 수 있습니다. 코어 업그레이드에 대한 포괄적인 개요는 [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) 를 참조하세요. .
 ```
 
 ```{note}
@@ -28,7 +28,7 @@ Liferay Cloud에서 환경을 업그레이드하려면 업그레이드된 데이
 
 업그레이드 절차를 시작하기 전에 다음 전제 조건을 충족하십시오.
 
-* [로컬에서 사용 가능한 MySQL 설치](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
+* [로컬에서 사용 가능한 MySQL 설치](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) .
 * [업그레이드하려는 DXP 버전에 대한 Liferay DXP](https://customer.liferay.com/en_US/downloads) 번들을 다운로드했습니다. 이 번들을 선택한 사이트로 추출하십시오.
 
 ```{important}
@@ -39,7 +39,7 @@ Liferay Cloud에서 환경을 업그레이드하려면 업그레이드된 데이
 
 현재 `prd` 환경에서 실행 중인 DXP 인스턴스의 백업(데이터베이스와 데이터 볼륨 모두로 구성됨)을 다운로드하려면 다음 단계를 수행하십시오.
 
-1. [Liferay 클라우드 콘솔](https://console.liferay.cloud/login)에 로그인합니다.
+1. [Liferay 클라우드 콘솔](https://console.liferay.cloud/login) 에 로그인합니다.
 
 1. 프로덕션 환경으로 이동한 다음 메뉴에서 _백업_ 을 선택합니다.
 
@@ -197,7 +197,7 @@ Checking to see if all upgrades have completed... done.
 
 콘솔을 통해 문서 라이브러리 및 데이터베이스 아카이브를 `백업` 서비스에 업로드합니다.
 
-1. 아직 로그인하지 않은 경우 [Liferay Cloud 콘솔](https://console.liferay.cloud/login)에 로그인합니다.
+1. 아직 로그인하지 않은 경우 [Liferay Cloud 콘솔](https://console.liferay.cloud/login) 에 로그인합니다.
 
 1. 적절한 환경에 대한 *백업* 페이지로 이동합니다.
 
@@ -212,7 +212,7 @@ Checking to see if all upgrades have completed... done.
 1. 데이터베이스 덤프와 문서 라이브러리가 모두 업로드되면 *업로드 시작*을 클릭합니다.
 
 ```{note}
-업로드 API를 통해 데이터베이스 덤프 및 문서 라이브러리를 업로드할 수도 있습니다. 자세한 내용은 [백업 서비스 API](../platform-services/backup-service/downloading-and-uploading-backups.md#backup-service-apis)를 참조하세요.
+업로드 API를 통해 데이터베이스 덤프 및 문서 라이브러리를 업로드할 수도 있습니다. 자세한 내용은 [백업 서비스 API](../platform-services/backup-service/downloading-and-uploading-backups.md#backup-service-apis) 를 참조하세요.
 ```
 
 업로드가 완료되면 백업 페이지의 목록 상단에 새 백업이 나타납니다.
@@ -223,7 +223,7 @@ Checking to see if all upgrades have completed... done.
 
 Liferay DXP의 새 버전을 반영하도록 필요에 따라 다음 사이트를 업데이트합니다.
 
-* `liferay/LCP.json`의 `이미지` 속성. [Services Changelogs](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) 에서 업데이트된 이미지를 확인하고 업그레이드된 DXP 버전이 이미지의 버전과 일치하는지 확인합니다(예: `7.2` in `liferaycloud/liferay-dxp:7.2-4.0.7`).
+* `liferay/LCP.json`의 `이미지` 속성. [Services Changelogs](https://help.liferay.com/hc/ko/sections/360006251311-Services-Changelog) 에서 업데이트된 이미지를 확인하고 업그레이드된 DXP 버전이 이미지의 버전과 일치하는지 확인합니다(예: `7.2` in `liferaycloud/liferay-dxp:7.2-4.0.7`).
 
 * `liferay.workspace.docker.image.liferay` 속성 `liferay/gradle.properties`. 업그레이드된 DXP 버전과 일치하는 이미지는 [Liferay DXP Docker Hub 페이지](https://hub.docker.com/r/liferay/dxp/tags) 을 확인하십시오.
 
@@ -263,6 +263,6 @@ Upgrading the liferay service requires a database upgrade and restoring the life
 
 DXP 업그레이드에 대해 자세히 알아보십시오.
 
-* [Liferay DXP 업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html)
+* [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics.html)
 * [DXP 인스턴스를 새 마이너 버전으로 업데이트](./updating-your-dxp-instance-to-a-new-minor-version.md)
-* [데이터베이스 업그레이드 도구 사용](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.html)
+* [데이터베이스 업그레이드 도구 사용](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.html)

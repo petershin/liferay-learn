@@ -4,7 +4,7 @@
 
 ## Chatwoot 계정 ID 찾기
 
-1. 귀하의 [Chatwoot 계정](https://app.chatwoot.com/app/login)에 로그인하십시오.
+1. 귀하의 [Chatwoot 계정](https://app.chatwoot.com/app/login) 에 로그인하십시오.
 
 1. 측면 탐색 모음에서 *받은 편지함* 을 클릭합니다.
 

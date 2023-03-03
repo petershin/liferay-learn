@@ -1,6 +1,6 @@
 # OSGi 번들 및 npm 패키지 구조
 
-JavaScript 모듈을 배포하려면 프로젝트의 `node_modules` 폴더에서 추출한 npm 종속성을 사용하여 OSGi 번들을 만들고 [Liferay AMD Loader](https://github.com/liferay/liferay-amd-loader)에서 작동하도록 수정해야 합니다. liferay-npm-bundler는 이 프로세스를 자동화하여 아래와 유사한 번들을 생성합니다.
+JavaScript 모듈을 배포하려면 프로젝트의 `node_modules` 폴더에서 추출한 npm 종속성을 사용하여 OSGi 번들을 만들고 [Liferay AMD Loader](https://github.com/liferay/liferay-amd-loader) 에서 작동하도록 수정해야 합니다. liferay-npm-bundler는 이 프로세스를 자동화하여 아래와 유사한 번들을 생성합니다.
 
 - `my-bundle/`
     - `META-INF/`

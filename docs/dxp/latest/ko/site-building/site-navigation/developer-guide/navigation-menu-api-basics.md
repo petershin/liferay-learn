@@ -9,7 +9,7 @@ Liferay의 REST API는 Liferay의 탐색 메뉴에 대한 서비스를 제공합
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Categories and Vocabulary API Basics](./liferay-p7s4.zip)을 다운로드하고 압축을 풉니다.
+1. [Categories and Vocabulary API Basics](./liferay-p7s4.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/site-building/site-navigation/developer-guide/liferay-p7s4.zip -O
@@ -19,7 +19,7 @@ Liferay의 REST API는 Liferay의 탐색 메뉴에 대한 서비스를 제공합
    unzip liferay-p7s4.zip
    ```
 
-2. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 아래의 다른 서비스 호출에서 이것을 사용합니다.
+2. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 아래의 다른 서비스 호출에서 이것을 사용합니다.
 
 3. cURL 스크립트를 사용하여 사이트에 새 탐색 메뉴를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `NavigationMenu_POST_ToSite.sh` 스크립트를 실행합니다.
 

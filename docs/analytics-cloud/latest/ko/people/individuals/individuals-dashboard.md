@@ -54,7 +54,7 @@
 
 관심 주제의 전체 목록을 보려면 패널에서 *모든 관심사 보기* 을 클릭하십시오. 또는 페이지 상단의 관심사 탭을 클릭합니다. 
 
-관심사에 대한 자세한 내용은 [관심사 이해하기](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests)을 참조하십시오.
+관심사에 대한 자세한 내용은 [관심사 이해하기](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests) 을 참조하십시오.
 
 ## 고장
 

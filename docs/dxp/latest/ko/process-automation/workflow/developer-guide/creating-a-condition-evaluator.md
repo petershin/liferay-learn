@@ -41,7 +41,7 @@
    ```
 
 ```{note}
-편의를 위해 'ConditionEvaluator'의 'activate' 메서드는 R6J9 조건부 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition)를 참조하십시오.
+편의를 위해 'ConditionEvaluator'의 'activate' 메서드는 R6J9 조건부 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) 를 참조하십시오.
 ```
 
 ## 조건 평가자 테스트

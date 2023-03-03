@@ -4,7 +4,7 @@ uuid: 6e7086c0-033f-489e-815a-471dac938005
 
 # 환경 설정 및 테마 만들기
 
-테마 만들기는 테마 개발의 첫 단계입니다. 고유한 테마가 있으면 이를 Liferay DXP 인스턴스에 배포하고 [사이트 사용자](../../introduction-to-themes.md#developing-themes)에 사용할 수 있습니다.
+테마 만들기는 테마 개발의 첫 단계입니다. 고유한 테마가 있으면 이를 Liferay DXP 인스턴스에 배포하고 [사이트 사용자](../../introduction-to-themes.md#developing-themes) 에 사용할 수 있습니다.
 
 ## Liferay 테마 생성기 사용
 
@@ -92,7 +92,7 @@ npm install -g yo gulp
 Error: compound selectors may no longer be extended.
 ```
 
-이 오류는 테마 생성기가 Liferay 7.3 이상부터 [Dart SASS](https://sass-lang.com/dart-sass) 사용하지만 일부 환경에서는 여전히 사용되지 않는 [LibSass](https://sass-lang.com/blog/libsass-is-deprecated)과 함께 사용되는 기능에 의존하기 때문에 발생합니다.
+이 오류는 테마 생성기가 Liferay 7.3 이상부터 [Dart SASS](https://sass-lang.com/dart-sass) 사용하지만 일부 환경에서는 여전히 사용되지 않는 [LibSass](https://sass-lang.com/blog/libsass-is-deprecated) 과 함께 사용되는 기능에 의존하기 때문에 발생합니다.
 
 이 오류를 방지하려면 테마에서 Dart SASS를 비활성화하십시오. 이 `dartSass` 및 `node-sass` 속성을 테마의 `package.json` 에 추가합니다(기존 속성을 제거하지 않음).
 

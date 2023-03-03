@@ -12,11 +12,11 @@ Tomcat 번들에는 Liferay DXP/Portal이 사전 배포된 Apache Tomcat 애플�
 
 ## 전제 조건
 
-Java JDK 8 또는 11이 필요합니다. JDK를 선택하려면 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 을 참조하십시오. 권장 설정은 [JVM 구성](../reference/jvm-configuration.md) 을 참조하십시오.
+Java JDK 8 또는 11이 필요합니다. JDK를 선택하려면 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오. 권장 설정은 [JVM 구성](../reference/jvm-configuration.md) 을 참조하십시오.
 
 ## 다운로드
 
-1. [도움말 센터](https://help.liferay.com/hc) (구독) 또는 [커뮤니티 다운로드](https://www.liferay.com/downloads-community)로 이동합니다.
+1. [도움말 센터](https://help.liferay.com/hc) (구독) 또는 [커뮤니티 다운로드](https://www.liferay.com/downloads-community) 로 이동합니다.
 
 1. 원하는 Liferay DXP/Portal 버전으로 이동합니다.
 
@@ -29,7 +29,7 @@ Java JDK 8 또는 11이 필요합니다. JDK를 선택하려면 [호환성 매�
 
 ## 설치하십시요
 
-번들을 호스트의 사이트로 추출하십시오. 이 사이트를 [Liferay Home](../reference/liferay-home.md)이라고 합니다.
+번들을 호스트의 사이트로 추출하십시오. 이 사이트를 [Liferay Home](../reference/liferay-home.md) 이라고 합니다.
 
 축하합니다! Liferay를 설치했습니다. 이를 위해 데이터베이스를 구성할 때입니다.
 

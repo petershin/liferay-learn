@@ -4,7 +4,7 @@
 
 ## JivoChat 계정 ID 찾기
 
-1. [JivoChat 계정](https://app.jivosite.com/)에 로그인합니다.
+1. [JivoChat 계정](https://app.jivosite.com/) 에 로그인합니다.
 
 2. _채널 구성_ 로 이동하여 왼쪽 하단 모서리에 있는 *관리* 을 클릭합니다.
 

@@ -96,7 +96,7 @@ Liferay DXP를 사용하는 경우 [활성화 키를 적용합니다](./setting-
 
 ## 파일 스토리지 구성
 
-[문서 및 미디어](../content-authoring-and-management/documents-and-media.md), 파일 첨부 및 콘텐츠에 이미지 삽입을 사용하려면 파일 저장소가 필요합니다. [File Storage](../system-administration/file-storage.md) 을 방문하여 구성하십시오.
+[문서 및 미디어](../content-authoring-and-management/documents-and-media.md), 파일 첨부 및 콘텐츠에 이미지 삽입을 사용하려면 파일 저장소가 필요합니다. [파일 스토리지](../system-administration/file-storage.md) 을 방문하여 구성하십시오.
 
 파일 저장소를 설정한 후 바이러스 백신 파일 검사를 활성화하는 것이 좋습니다. 자세한 방법은 [업로드된 파일에 대한 바이러스 백신 검사 활성화](../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md) 을 참조하십시오.
 
@@ -118,7 +118,7 @@ Liferay를 확보하는 것도 정말 중요합니다. 자세한 내용은 [Life
 
 ## Marketplace에서 앱 설치
 
-[테마](../getting-started/changing-your-sites-appearance.md), 커넥터 및 [Liferay Marketplace](https://web.liferay.com/marketplace)에서 사용할 수 있는 모든 종류의 응용 프로그램으로 사이트를 개선하십시오. [앱](../system-administration/installing-and-managing-apps/installing-apps.md) 설치 및 관리가 그 어느 때보다 쉬워졌습니다.
+[테마](../getting-started/changing-your-sites-appearance.md), 커넥터 및 [Liferay Marketplace](https://web.liferay.com/marketplace) 에서 사용할 수 있는 모든 종류의 응용 프로그램으로 사이트를 개선하십시오. [앱](../system-administration/installing-and-managing-apps/installing-apps.md) 설치 및 관리가 그 어느 때보다 쉬워졌습니다.
 
 ## 역할 및 권한 구성
 
@@ -150,7 +150,7 @@ Liferay는 다른 시스템과 통합할 수 있습니다. 예를 들어 LDAP와
 
 ## 다음
 
-Liferay DXP를 사용 중이고 [활성화](./setting-up-liferay/activating-liferay-dxp.md)하지 않은 경우 먼저 활성화하십시오. 그런 다음 [인스턴스 구성](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) 및 위에 나열된 다른 [설정 작업](#setup-tasks)을 계속 진행합니다.
+Liferay DXP를 사용 중이고 [활성화](./setting-up-liferay/activating-liferay-dxp.md)하지 않은 경우 먼저 활성화하십시오. 그런 다음 [인스턴스 구성](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) 및 위에 나열된 다른 [설정 작업](#setup-tasks) 을 계속 진행합니다.
 
 ```{important}
 프로덕션으로 이동하기 전에 설치 및 데이터 백업 프로세스를 구성하십시오. 자세한 내용은 [백업](./maintaining-a-liferay-installation/backing-up.md)을 참조하십시오.

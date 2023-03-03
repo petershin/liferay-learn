@@ -4,11 +4,11 @@ WebLogic을 애플리케이션 서버로 사용하는 경우 DXP를 WebLogic 관
 
 ## 전제 조건
 
-[WebLogic 설명서](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html)에 따라 관리 서버 및 관리 서버를 구성합니다.
+[WebLogic 설명서](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html) 에 따라 관리 서버 및 관리 서버를 구성합니다.
 
-Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. JDK를 선택하려면 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 을 참조하십시오. 권장 설정은 [JVM 구성](../../reference/jvm-configuration.md) 을 참조하십시오.
+Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. JDK를 선택하려면 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오. 권장 설정은 [JVM 구성](../../reference/jvm-configuration.md) 을 참조하십시오.
 
-[도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community)에서 이 파일을 다운로드하십시오.
+[도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community) 에서 이 파일을 다운로드하십시오.
 
 * DXP 전쟁 파일
 * OSGi 종속성 ZIP 파일
@@ -121,7 +121,7 @@ Java 옵션 및 메모리 인수는 아래에 설명되어 있습니다.
 | `-XX:SurvivorRatio`    | 서바이벌 공간에 대한 새 공간의 비율입니다. 생존자 공간은 구세대 공간으로 승격되기 전에 젊은 세대 개체를 보유합니다.       |
 
 ```{note}
-DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Tuning Liferay](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
+DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Liferay 튜닝](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
 ```
 
 ## 종속성 설치
@@ -131,7 +131,7 @@ DXP는 OSGi 모듈(OSGi 종속성 ZIP) 및 데이터베이스 드라이버에 �
 1. OSGi 종속성 ZIP 파일을 `[Liferay Home]/osgi` 폴더에 압축 해제합니다(이 폴더가 없으면 생성). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
 1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 DXP WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 데이터베이스 공급업체의 JDBC JAR 파일을 다운로드하여 분해된 DXP WAR의 `WEB-INF/shielded-container-lib` 폴더에 넣습니다.
 
-    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 을 참조하십시오.
+    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오.
 
 ```{note}
 Hypersonic 데이터베이스는 DXP와 함께 번들로 제공되며 테스트 목적으로 유용합니다. 프로덕션 인스턴스에 HSQL을 사용하지 마세요.

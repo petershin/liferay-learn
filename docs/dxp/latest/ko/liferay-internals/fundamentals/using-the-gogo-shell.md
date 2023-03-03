@@ -49,4 +49,4 @@ Gogo 셸은 매우 강력하며 플랫폼의 핵심 기능을 조작할 수 있�
 
 ## 결론
 
-이제 Gogo 셸을 실행하는 방법을 알았으므로 사용 가능한 [Gogo 셸 명령](./using-the-gogo-shell/gogo-shell-commands.md)을 탐색합니다. 개발자 환경에서 작업하는 경우 명령줄에서 Gogo 셸을 고려하십시오. 자세한 내용은 [Command Line Gogo Shell](./using-the-gogo-shell/command-line-gogo-shell.md) 을 참조하십시오.
+이제 Gogo 셸을 실행하는 방법을 알았으므로 사용 가능한 [Gogo 셸 명령](./using-the-gogo-shell/gogo-shell-commands.md)을 탐색합니다. 개발자 환경에서 작업하는 경우 명령줄에서 Gogo 셸을 고려하십시오. 자세한 내용은 [명령줄 고고 셸](./using-the-gogo-shell/command-line-gogo-shell.md) 을 참조하십시오.

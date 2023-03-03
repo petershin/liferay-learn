@@ -41,4 +41,4 @@ Reserved Credentials 구성 항목은 사용자가 사용할 수 없는 화면 �
 
 ![사용자가 요청할 수 없는 예약된 자격 증명을 구성합니다.](./user-authentication/images/02.png)
 
-[보안 설명서](../../../installation-and-upgrades/securing_liferay.html)에서 타사 인증 서비스 구성 또는 SSO(Single Sign On) 설정 방법을 배울 수 있습니다.
+[보안 설명서](../../../installation-and-upgrades/securing_liferay.html) 에서 타사 인증 서비스 구성 또는 SSO(Single Sign On) 설정 방법을 배울 수 있습니다.

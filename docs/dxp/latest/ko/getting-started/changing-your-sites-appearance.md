@@ -31,7 +31,7 @@ Liferay에는 사이트의 모양을 사용자 지정하는 다양한 방법이 
 
 ### 새 테마 배포
 
-1. [Acme Sample Blue Theme](./liferay-5b2v-theme.war)가 포함된 WAR을 다운로드합니다.
+1. [Acme Sample Blue Theme](./liferay-5b2v-theme.war) 가 포함된 WAR을 다운로드합니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/getting-started/changing-your-sites-appearance/liferay-5b2v-theme.war -O

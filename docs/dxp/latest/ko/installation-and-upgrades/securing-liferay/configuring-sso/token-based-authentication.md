@@ -50,7 +50,7 @@ SiteMinder를 사용하는 경우 Liferay Portal은 때때로 URL에 물결표 �
 BadUrlChars       //,./,/.,/*,*.,\,%00-%1f,%7f-%ff,%25
 ```
 
-위의 구성은 `~` 문자가 없는 것을 제외하고는 기본값과 동일합니다. 구성 업데이트를 적용하려면 SiteMinder를 다시 시작하십시오. 자세한 내용은 SiteMinder의 [설명서](https://techdocs.broadcom.com/us/product-content/recommended-reading/technical-document-index/ca-siteminder-informational-documentation-index.html)을 참조하십시오.
+위의 구성은 `~` 문자가 없는 것을 제외하고는 기본값과 동일합니다. 구성 업데이트를 적용하려면 SiteMinder를 다시 시작하십시오. 자세한 내용은 SiteMinder의 [설명서](https://techdocs.broadcom.com/us/product-content/recommended-reading/technical-document-index/ca-siteminder-informational-documentation-index.html) 을 참조하십시오.
 
 ## 개요
 

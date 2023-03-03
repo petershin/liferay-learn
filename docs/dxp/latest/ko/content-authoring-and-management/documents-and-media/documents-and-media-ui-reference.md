@@ -10,9 +10,9 @@
 
 ![자산 라이브러리에서 문서 및 미디어를 클릭합니다.](./documents-and-media-ui-reference/images/02.png)
 
-문서 및 미디어 응용 프로그램에는 [*문서 및 미디어*](#documents-and-media-tab), [*문서 유형*](#document-types-tab)및 [*메타데이터 세트*](#metadata-sets-tab)의 세 가지 기본 탭이 있습니다.
+문서 및 미디어 응용 프로그램에는 [*문서 및 미디어*](#documents-and-media-tab) , [*문서 유형*](#document-types-tab) 및 [*메타데이터 세트*](#metadata-sets-tab) 의 세 가지 기본 탭이 있습니다.
 
-[응용 프로그램 표시줄](#application-bar-settings)에서 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하여 추가 설정에 액세스할 수 있습니다.
+[응용 프로그램 표시줄](#application-bar-settings) 에서 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하여 추가 설정에 액세스할 수 있습니다.
 
 ```{note}
 문서 및 미디어 UI는 자산 라이브러리 및 사이트에서 동일합니다.
@@ -32,7 +32,7 @@
 
 ![추가 버튼을 클릭하여 새 폴더 또는 디지털 자산을 만듭니다.](./documents-and-media-ui-reference/images/04.png)
 
-사용자 지정 [문서 유형](#document-types-tab)을 만든 경우 여기에 사용 가능한 옵션으로 나열됩니다.
+사용자 지정 [문서 유형](#document-types-tab) 을 만든 경우 여기에 사용 가능한 옵션으로 나열됩니다.
 
 파일 또는 폴더를 다운로드, 편집, 이동 또는 제거하려면 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하십시오. *체크아웃* 또는 *체크인* 파일을 사용하여 파일 버전을 생성할 수도 있습니다.
 
@@ -42,7 +42,7 @@
 
 여기에서 문서 및 미디어에 새 파일을 추가하는 데 사용되는 사용자 지정 템플릿을 만들고 관리할 수 있습니다. 이러한 템플릿은 메타데이터 필드를 사용하여 생성되며 업로드된 파일에 대해 검색 가능한 추가 정보를 제공합니다.
 
-새 문서 유형을 작성하려면 구성 가능한 메타데이터 필드를 놓기 영역으로 끌어다 놓습니다. 설명을 추가하고 사용자 정의 [메타데이터 세트](#metadata-sets-tab)을 포함하고 권한을 관리할 수도 있습니다.
+새 문서 유형을 작성하려면 구성 가능한 메타데이터 필드를 놓기 영역으로 끌어다 놓습니다. 설명을 추가하고 사용자 정의 [메타데이터 세트](#metadata-sets-tab) 을 포함하고 권한을 관리할 수도 있습니다.
 
 ![사용자 지정 문서 유형을 만들고 구성합니다.](./documents-and-media-ui-reference/images/06.png)
 

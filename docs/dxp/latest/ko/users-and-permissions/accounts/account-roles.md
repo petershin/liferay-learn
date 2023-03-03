@@ -64,7 +64,7 @@ uuid: e951d3e7-bb17-46e0-8244-1131bff58dbc
    
    ![이 역할에 할당할 권한을 선택합니다.](./account-roles/images/03.png)
 
-1. *그룹 범위 권한 정의* 탭을 클릭합니다. 역할이 다른 그룹(예: 사이트, 채널, 자산 라이브러리 등)이 소유한 리소스에 대해 작동하는 권한을 선택합니다. 권한은 [현재 계정으로 선택](./account-management-widget.md#using-the-account-management-widget)에 적용됩니다.
+1. *그룹 범위 권한 정의* 탭을 클릭합니다. 역할이 다른 그룹(예: 사이트, 채널, 자산 라이브러리 등)이 소유한 리소스에 대해 작동하는 권한을 선택합니다. 권한은 [현재 계정으로 선택](./account-management-widget.md#using-the-account-management-widget) 에 적용됩니다.
 
 1. 계정 사용자를 할당하려면 *Assignees* 탭을 클릭합니다. _추가_ 아이콘(![추가 아이콘](../../images/icon-add.png))을 클릭하고 이 역할에 사용자를 할당합니다.  
 

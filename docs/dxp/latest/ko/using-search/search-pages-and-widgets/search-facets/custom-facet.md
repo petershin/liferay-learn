@@ -48,12 +48,12 @@ uuid: bfc953a5-54eb-4324-bce7-30c888cdf1e9
 사용자 정의 패싯을 사용하려면 구성에서 사용할 분석되지 않은 키워드 필드를 알아야 합니다.
 
 ```{tip}
-Elasticsearch는 다양한 방식으로 인덱싱 필드를 지원합니다. 일부 텍스트 필드는 매핑에서 중첩된 'raw' [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/multi-fields.html)인 경우 키워드 필드로 사용할 수 있습니다. , 또는 필드가 'fieldName_sortable'('keyword'로)로 매핑되는 별도의 추가 필드에 매핑되는 경우. Elasticsearch 다중 필드 개념을 활용하므로 사용자 정의 필드에 대한 패싯 생성에 대한 아래 예를 참조하십시오.
+Elasticsearch는 다양한 방식으로 인덱싱 필드를 지원합니다. 일부 텍스트 필드는 매핑에서 중첩된 'raw' [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/multi-fields.html) 인 경우 키워드 필드로 사용할 수 있습니다. , 또는 필드가 'fieldName_sortable'('keyword'로)로 매핑되는 별도의 추가 필드에 매핑되는 경우. Elasticsearch 다중 필드 개념을 활용하므로 사용자 정의 필드에 대한 패싯 생성에 대한 아래 예를 참조하십시오.
 ```
 
 사용 가능한 필드의 전체 목록을 찾아보려면 *제어판* &rarr; *구성* &rarr; *검색* ( *필드 매핑* 탭 클릭)에서 필드 매핑을 검사하십시오. 여기에서 수많은 인덱스를 볼 수 있습니다. 관심이 있을 가능성이 있는 Liferay 자산은 `liferay-20101` 과 유사한 이름의 [회사 인덱스](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)에 인덱싱됩니다(`20101` 는 회사 ID임).
 
-또는 검색 엔진의 API를 사용하여 매핑을 찾아보십시오. Elasticsearch에서는 cURL을 사용하여 터미널에서 필드 매핑에 액세스하여 [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-get-mapping.html)호출할 수 있습니다.
+또는 검색 엔진의 API를 사용하여 매핑을 찾아보십시오. Elasticsearch에서는 cURL을 사용하여 터미널에서 필드 매핑에 액세스하여 [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-get-mapping.html) 호출할 수 있습니다.
 
 ```{tip}
 [Kibana's](../../liferay-enterprise-search/monitoring-elasticsearch.md) Dev Tools 콘솔은 cURL보다 Elasticsearch API 호출을 만드는 데 더 편리합니다.
@@ -63,7 +63,7 @@ Elasticsearch는 다양한 방식으로 인덱싱 필드를 지원합니다. 일
 curl -X GET "localhost:9200/_mapping/LiferayDocumentType"?pretty
  ```
 
-Solr는 [ListFields API](https://lucene.apache.org/solr/guide/6_6/schema-api.html#SchemaAPI-ListFields)을 사용합니다.
+Solr는 [ListFields API](https://lucene.apache.org/solr/guide/6_6/schema-api.html#SchemaAPI-ListFields) 을 사용합니다.
 
 ```bash
 curl http://localhost:8983/solr/liferay/schema/
@@ -145,7 +145,7 @@ GET /liferay-20097/_mapping/field/*.raw
 
 ## 중첩된 DDM 필드에 액세스
 
-[7.3 Breaking Changes 문서](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document)에 설명된 대로 Liferay 동적 데이터 매핑 프레임워크가 일부 필드를 인덱싱하는 방식이 변경되었습니다. 이전에는 검색 엔진 문서의 루트에 있었습니다. 이제 중첩된 필드입니다. 이 변경 사항은 Liferay 7.3 및 Liferay 7.2 SP3/FP8+에 영향을 미칩니다(단, 시스템 설정 &rarr; Dynamic Data Mapping Indexer에서 _Enable Legacy Dynamic Data Mapping Index Fields_ 설정이 비활성화된 경우에만 해당). 7.3의 최신 수정 팩 및 GA 릴리스에서 이 변경 사항은 Liferay의 검색 API에서 설명되며 구성 업데이트가 필요하지 않습니다. 따라서 Elasticsearch 문서의 루트에 있는 `ddm__text__*` 또는 `ddm__keyword__*` 필드에 의존하는 Custom Facet 위젯이 있는 경우 Custom Facet의 _Aggregation Field_ 구성에서 평소와 같이 이러한 필드를 계속 사용하십시오. 더 이상 문서의 루트에 있지 않지만.
+[7.3 Breaking Changes 문서](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 에 설명된 대로 Liferay 동적 데이터 매핑 프레임워크가 일부 필드를 인덱싱하는 방식이 변경되었습니다. 이전에는 검색 엔진 문서의 루트에 있었습니다. 이제 중첩된 필드입니다. 이 변경 사항은 Liferay 7.3 및 Liferay 7.2 SP3/FP8+에 영향을 미칩니다(단, 시스템 설정 &rarr; Dynamic Data Mapping Indexer에서 _Enable Legacy Dynamic Data Mapping Index Fields_ 설정이 비활성화된 경우에만 해당). 7.3의 최신 수정 팩 및 GA 릴리스에서 이 변경 사항은 Liferay의 검색 API에서 설명되며 구성 업데이트가 필요하지 않습니다. 따라서 Elasticsearch 문서의 루트에 있는 `ddm__text__*` 또는 `ddm__keyword__*` 필드에 의존하는 Custom Facet 위젯이 있는 경우 Custom Facet의 _Aggregation Field_ 구성에서 평소와 같이 이러한 필드를 계속 사용하십시오. 더 이상 문서의 루트에 있지 않지만.
 
 색인의 기존 문서에서 DDM 필드를 찾으려면
 

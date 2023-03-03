@@ -27,7 +27,7 @@ Google 문서&trade;을 통해 새 문서 및 미디어 파일을 만들려면 �
     * 구글슬라이드&trade;
     * 구글 시트&trade;
 
-1. 이러한 옵션 중 하나를 선택하면 DXP는 임시 문서 및 미디어 파일을 생성하고 이를 새 Google 파일에 연결합니다. 그런 다음 브라우저는 콘텐츠를 만들 수 있도록 해당 Google 파일로 리디렉션합니다. 임시 문서 및 미디어 파일에 대한 일부 작업은 연결된 Google 파일에 영향을 줄 수 있습니다. 자세한 내용은 [다중 편집 세션](#multiple-editing-sessions)을 참조하십시오.
+1. 이러한 옵션 중 하나를 선택하면 DXP는 임시 문서 및 미디어 파일을 생성하고 이를 새 Google 파일에 연결합니다. 그런 다음 브라우저는 콘텐츠를 만들 수 있도록 해당 Google 파일로 리디렉션합니다. 임시 문서 및 미디어 파일에 대한 일부 작업은 연결된 Google 파일에 영향을 줄 수 있습니다. 자세한 내용은 [다중 편집 세션](#multiple-editing-sessions) 을 참조하십시오.
 
     ![만들려는 Google 문서 유형을 선택합니다.](./creating-and-editing-documents-with-google-drive/images/02.png)
 
@@ -43,7 +43,7 @@ Google 문서&trade;을 통해 새 문서 및 미디어 파일을 만들려면 �
 
     **Discard Changes:** 문서 및 미디어 라이브러리 또는 Google 문서도구에 파일을 저장하지 않고 포털로 돌아갑니다&trade;.
 
-    버튼을 클릭하지 않고 Google Docs&trade; 창을 닫을 수도 있습니다. 이 경우 편집 세션을 표시한 창이 닫혀도 편집 세션은 계속 열려 있습니다. 자세한 내용은 아래의 [다중 편집 세션](#multiple-editing-sessions)섹션을 참조하십시오.
+    버튼을 클릭하지 않고 Google Docs&trade; 창을 닫을 수도 있습니다. 이 경우 편집 세션을 표시한 창이 닫혀도 편집 세션은 계속 열려 있습니다. 자세한 내용은 아래의 [다중 편집 세션](#multiple-editing-sessions) 섹션을 참조하십시오.
 
     ![편집기의 도구 모음을 사용하여 변경 사항을 저장하거나 취소하십시오.](./creating-and-editing-documents-with-google-drive/images/03.png)
 

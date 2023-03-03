@@ -13,7 +13,7 @@
 1. **본문** 필드에 스레드의 콘텐츠를 만듭니다.
 
     ```{note}
-    이 필드는 HTML 대신 BBCode를 사용한다는 점을 제외하면 블로그 앱과 동일한 편집기를 사용합니다. 자세한 지침은 [편집기 사용](https://help.liferay.com/hc/articles/360018173051-Using-the-Blog-Entry-Editor-)에 대한 설명서를 참조하십시오.
+    이 필드는 HTML 대신 BBCode를 사용한다는 점을 제외하면 블로그 앱과 동일한 편집기를 사용합니다. 자세한 지침은 [편집기 사용](https://help.liferay.com/hc/articles/360018173051-Using-the-Blog-Entry-Editor-) 에 대한 설명서를 참조하십시오.
     ```
 
     ![그림 1. 첫 게시물 작성](./creating-message-boards-threads/images/01.png)

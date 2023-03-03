@@ -118,7 +118,7 @@ Liferay Portal 7.3 GA2 이하의 경우 다음 구문을 사용하십시오.
 </div>
 ```
 
-콘텐츠 매핑은 프래그먼트의 편집 가능한 필드를 웹 콘텐츠 또는 블로그와 같은 자산 유형의 필드와 연결합니다. 예를 들어 이미지 필드를 매핑하여 웹 콘텐츠 기사의 미리보기 이미지를 표시할 수 있습니다. 매핑 필드에 대한 자세한 내용은 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)을 참조하십시오.
+콘텐츠 매핑은 프래그먼트의 편집 가능한 필드를 웹 콘텐츠 또는 블로그와 같은 자산 유형의 필드와 연결합니다. 예를 들어 이미지 필드를 매핑하여 웹 콘텐츠 기사의 미리보기 이미지를 표시할 수 있습니다. 매핑 필드에 대한 자세한 내용은 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) 을 참조하십시오.
 
 ## 편집 가능한 링크 만들기
 
@@ -147,7 +147,7 @@ Liferay Portal 7.3 GA2 이하의 경우 다음 구문을 사용하십시오.
 
 ![링크의 모양과 동작을 정의하기 위한 몇 가지 옵션이 있습니다.](./fragment-specific-tags-reference/images/03.png)
 
-편집 가능한 링크에 대한 자세한 내용은 [편집 가능한 링크](../../../creating-pages/page-fragments-and-widgets/configuring-fragments/fragment-sub-elements-reference.md#link-settings)을 참조하십시오.
+편집 가능한 링크에 대한 자세한 내용은 [편집 가능한 링크](../../../creating-pages/page-fragments-and-widgets/configuring-fragments/fragment-sub-elements-reference.md#link-settings) 을 참조하십시오.
 
 ## 편집 가능한 HTML 만들기
 

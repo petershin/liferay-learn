@@ -2,7 +2,7 @@
 
 JVM(Java Virtual Machine) 조정은 주로 Java 힙 및 비힙 설정 조정과 가비지 수집 구성에 중점을 둡니다. 성능이 좋은 설정을 찾는 것은 시스템의 부하와 하드웨어에 따라 다릅니다. 여기에서 설명하는 설정은 JVM 조정을 위한 시작점으로 사용할 수 있습니다.
 
-예제 Oracle JVM 설정을 JVM 설정에 적용할 수 있습니다. 호환되는 JVM에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)를 참조하십시오.
+예제 Oracle JVM 설정을 JVM 설정에 적용할 수 있습니다. 호환되는 JVM에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 를 참조하십시오.
 
 ## 힙 및 비힙 공간 설정
 

@@ -66,4 +66,4 @@ sites/default-site-applications.md
 
 ## 상거래에 사이트 사용
 
-Liferay 사이트는 [채널](https://learn.liferay.com/commerce/latest/en/store-management/channels.html) 과 함께 전자 상거래 상점을 만드는 데 사용됩니다. 각 채널의 사이트 유형(즉, B2B, B2C 또는 B2X)은 사이트가 계정과 작동하는 방식을 결정합니다. 자세한 내용은 [상업 사이트 유형](https://learn.liferay.com/commerce/latest/en/starting-a-store/sites-and-site-types.html) 을 참조하십시오.
+Liferay 사이트는 [채널](https://learn.liferay.com/commerce/latest/ko/store-management/channels.html) 과 함께 전자 상거래 상점을 만드는 데 사용됩니다. 각 채널의 사이트 유형(즉, B2B, B2C 또는 B2X)은 사이트가 계정과 작동하는 방식을 결정합니다. 자세한 내용은 [사이트 및 사이트 유형](https://learn.liferay.com/commerce/latest/ko/starting-a-store/sites-and-site-types.html) 을 참조하십시오.

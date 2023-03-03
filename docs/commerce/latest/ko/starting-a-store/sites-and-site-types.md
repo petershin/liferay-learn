@@ -4,7 +4,7 @@
 
 Liferay Commerce 배포는 사이트, 페이지, 위젯 및 계정의 계층 구조로 구성됩니다. Liferay Commerce에서 사이트를 만들고 구성하는 것은 상점을 시작하는 첫 번째 단계 중 하나입니다. [액셀러레이터](../starting-a-store/accelerators.md) 을 사용하여 사이트를 바로 시작하거나 빈 사이트를 만들고 필요한 상거래 위젯 및 페이지를 추가할 수 있습니다.
 
-Liferay Commerce는 Liferay 디지털 경험 플랫폼을 기반으로 합니다. Liferay DXP 사이트의 작동 방식에 대한 자세한 내용은 [사이트 구축](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)을 참조하십시오.
+Liferay Commerce는 Liferay 디지털 경험 플랫폼을 기반으로 합니다. Liferay DXP 사이트의 작동 방식에 대한 자세한 내용은 [사이트 구축](https://help.liferay.com/hc/ko/articles/360018171231-Building-a-Site) 을 참조하십시오.
 
 매장 사이트 생성에 대한 자세한 내용은 [매장 설정 개요](../starting-a-store/store-setup-overview.md) 을 참조하십시오.
 
@@ -39,5 +39,5 @@ Liferay Commerce는 사이트 유형과 함께 Liferay 사이트를 사용합니
 ## 추가 정보
 
 * [매장 설정 개요](../starting-a-store/store-setup-overview.md)
-* [사이트 구축](https://learn.liferay.com/dxp/latest/en/site-building.html)
+* [사이트 구축](https://learn.liferay.com/dxp/latest/ko/site-building.html)
 * [계정 관리](../users-and-accounts/account-management.md)

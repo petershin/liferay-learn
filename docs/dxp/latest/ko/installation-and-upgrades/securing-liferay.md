@@ -18,7 +18,7 @@ securing-liferay/using-antisamy.md
 securing-liferay/securing-web-services.md
 ```
 
-Liferay DXP는 보안을 염두에 두고 제작되었습니다. 여기에는 [OWASP Top 10](https://www.owasp.org/index.php/Top_10_2013-Top_10) 및 [CWE/SANS Top 25](https://www.sans.org/top25-software-errors/)에서 설명한 것과 같은 일반적인 보안 취약성 및 익스플로잇의 완화가 포함됩니다.
+Liferay DXP는 보안을 염두에 두고 제작되었습니다. 여기에는 [OWASP Top 10](https://www.owasp.org/index.php/Top_10_2013-Top_10) 및 [CWE/SANS Top 25](https://www.sans.org/top25-software-errors/) 에서 설명한 것과 같은 일반적인 보안 취약성 및 익스플로잇의 완화가 포함됩니다.
 
 호스팅 환경, 데이터베이스, 검색 공급자, 응용 프로그램 서버 및 Liferay DXP 자체에 대한 최상의 보안 사례를 따르는 것을 포함하되 이에 국한되지 않는 Liferay 설치 보안에는 여러 가지 측면이 있습니다.
 
@@ -39,7 +39,7 @@ Liferay DXP 인증은 유연합니다. 기본적으로 사용자는 데이터베
 * [다단계 인증](./securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md)을 구성할 수 있습니다.
 * [SSO를 사용하여](./securing-liferay/configuring-sso.md) 인증을 관리할 수 있습니다.
 * Liferay는 [LDAP와 통합](../users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)하여 포털을 사용하는 대신 사용자를 검증할 수도 있습니다. 데이터 베이스.
-* 게스트 계정 생성은 [해제](./securing-liferay/authentication-basics.md#disabling-guest-account-creation)할 수 있습니다.
+* 게스트 계정 생성은 [해제](./securing-liferay/authentication-basics.md#disabling-guest-account-creation) 할 수 있습니다.
 
 자세한 내용은 [인증 기본 사항](./securing-liferay/authentication-basics.md)을 참조하십시오.
 
@@ -62,11 +62,11 @@ Liferay 웹 서비스에는 보안 및 인증에 대한 다층적이고 구성 �
 추가 보안 기능을 미세 조정하거나 비활성화하는 방법에는 여러 가지가 있습니다.
 
 * Liferay Portal의 HTTPS [웹 서버](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Web%20Server) 주소를 구성합니다.
-* 사용자가 [될 수 있는 허용된 서버 목록을 구성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Redirect).
+* 사용자가 [될 수 있는 허용된 서버 목록을 구성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Redirect) .
 * 모든 페이지에서 액세스할 수 있는 [포틀릿](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Portlet) 목록을 구성합니다.
 * 업로드 및 다운로드가 허용되는 파일 형식을 구성합니다.
 
-이러한 기능은 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)을 사용하여 구성할 수 있습니다.
+이러한 기능은 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 사용하여 구성할 수 있습니다.
 
 ```{warning}
 Liferay Portal의 철학은 "기본적으로 보안"입니다. 보안 관련 기본값 또는 화이트리스트를 수정할 때 상당한 주의를 기울이십시오. 이러한 작업은 잘못된 보안 구성 및 안전하지 않은 배포로 이어질 수 있습니다.
@@ -74,9 +74,9 @@ Liferay Portal의 철학은 "기본적으로 보안"입니다. 보안 관련 기
 
 ## 추가 정보
 
-Liferay Portal 설치 보안에 대한 자세한 내용은 [보안 설명](https://www.liferay.com/security), [커뮤니티 보안 팀](https://portal.liferay.dev/people/community-security-team)및 해당 페이지에 나열된 리소스를 참조하십시오.
+Liferay Portal 설치 보안에 대한 자세한 내용은 [보안 설명](https://www.liferay.com/security) , [커뮤니티 보안 팀](https://portal.liferay.dev/people/community-security-team) 및 해당 페이지에 나열된 리소스를 참조하십시오.
 
-[Liferay Marketplace](https://www.liferay.com/marketplace)에서 사용할 수 있는 추가 보안 플러그인이 있습니다.
+[Liferay Marketplace](https://www.liferay.com/marketplace) 에서 사용할 수 있는 추가 보안 플러그인이 있습니다.
 
 ## 다음 단계
 

@@ -41,7 +41,7 @@ service-builder/business-logic-with-service-builder.md
 * 사용자 지정 SQL 쿼리 및 동적 쿼리를 추가하기 위한 유연성 및 지원
 
 ```{note}
-DXP/Portal에서 백엔드 서비스를 위해 Service Builder를 사용할 필요가 없습니다. JPA 또는 Hibernate와 같은 선택한 지속성 프레임워크를 사용하는 것은 전적으로 가능합니다. 내부적으로 Service Builder는 [Hibernate](http://hibernate.org/)을 사용합니다. 
+DXP/Portal에서 백엔드 서비스를 위해 Service Builder를 사용할 필요가 없습니다. JPA 또는 Hibernate와 같은 선택한 지속성 프레임워크를 사용하는 것은 전적으로 가능합니다. 내부적으로 Service Builder는 [Hibernate](http://hibernate.org/) 을 사용합니다. 
 ```
 
 ## 구현 클래스를 통한 사용자 지정
@@ -52,7 +52,7 @@ Service Builder에서 생성된 엔터티에는 다음과 같은 *구현* 클래
 
 * **로컬 서비스 구현** (`*LocalServiceImpl.java`): 지속성 계층을 호출하여 데이터 엔터티를 검색하고 저장합니다. 로컬 서비스에는 비즈니스 논리가 포함되어 있으며 지속성 계층에 액세스합니다. 동일한 JVM(Java Virtual Machine)에서 실행되는 클라이언트 코드에 의해 호출될 수 있습니다.
 
-* **원격 서비스 구현** (`*ServiceImpl.java`): `service.xml` 가 원격 서비스용으로 구성된 경우 생성됩니다. 원격 서비스에는 일반적으로 권한 확인 코드가 포함되어 있으며 JVM 외부에서 액세스할 수 있습니다. Service Builder는 JSON 또는 SOAP를 통해 원격 서비스를 사용할 수 있도록 하는 코드를 자동으로 생성하며 [REST Builder](../../headless-delivery/apis-with-rest-builder.md)  또는 [JAX-RS](https://help.liferay.com/hc/en-us/articles/360031902292-JAX-RS)을 통해 고유한 원격 API를 생성할 수도 있습니다.
+* **원격 서비스 구현** (`*ServiceImpl.java`): `service.xml` 가 원격 서비스용으로 구성된 경우 생성됩니다. 원격 서비스에는 일반적으로 권한 확인 코드가 포함되어 있으며 JVM 외부에서 액세스할 수 있습니다. Service Builder는 JSON 또는 SOAP를 통해 원격 서비스를 사용할 수 있도록 하는 코드를 자동으로 생성하며 [REST Builder](../../headless-delivery/apis-with-rest-builder.md)  또는 [JAX-RS](https://help.liferay.com/hc/ko/articles/360031902292-JAX-RS) 을 통해 고유한 원격 API를 생성할 수도 있습니다.
 
 이러한 클래스는 사용자 정의 비즈니스 로직을 구현하는 곳입니다. 사용자 지정을 위해 Service Builder에서 생성되는 유일한 클래스입니다.
 
@@ -70,4 +70,4 @@ Service Builder는 데이터베이스 지속성 코드 생성과 관련된 많�
 
 ## 다음
 
-Service Builder는 Liferay DXP 및 해당 응용 프로그램 전체에서 독점적으로 사용되므로 충분히 테스트되고 강력합니다. 초기 개발 시간과 프로젝트를 유지 관리, 확장 또는 사용자 지정하는 데 소요되는 시간 모두에서 많은 개발 시간을 절약할 수 있습니다. 시작하려면 [Service Builder Basics](./service-builder/service-builder-basics.md)부터 시작하십시오.
+Service Builder는 Liferay DXP 및 해당 응용 프로그램 전체에서 독점적으로 사용되므로 충분히 테스트되고 강력합니다. 초기 개발 시간과 프로젝트를 유지 관리, 확장 또는 사용자 지정하는 데 소요되는 시간 모두에서 많은 개발 시간을 절약할 수 있습니다. 시작하려면 [서비스 빌더 기본 사항](./service-builder/service-builder-basics.md) 부터 시작하십시오.

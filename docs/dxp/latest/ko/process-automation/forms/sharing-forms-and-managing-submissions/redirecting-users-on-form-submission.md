@@ -1,6 +1,6 @@
 # 양식 제출 시 사용자 리디렉션
 
-기본적으로 사용자가 양식 응답을 제출하면 [성공 페이지](../creating-and-managing-forms/creating-forms.md#adding-a-success-page)로 이동됩니다. 이 동작은 대신 양식 응답을 제출한 후 사용자를 특정 URL로 리디렉션하도록 구성할 수 있습니다.
+기본적으로 사용자가 양식 응답을 제출하면 [성공 페이지](../creating-and-managing-forms/creating-forms.md#adding-a-success-page) 로 이동됩니다. 이 동작은 대신 양식 응답을 제출한 후 사용자를 특정 URL로 리디렉션하도록 구성할 수 있습니다.
 
 리디렉션 URL을 설정하려면 다음 단계를 따르세요.
 

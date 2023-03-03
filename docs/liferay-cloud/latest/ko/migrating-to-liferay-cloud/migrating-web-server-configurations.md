@@ -7,7 +7,7 @@
 Liferay Cloud는 웹 서버용 Nginx만 지원합니다. 아직 Nginx를 사용하고 있지 않다면 먼저 웹 서버와 구성을 Nginx로 마이그레이션하십시오. 자세한 내용은 [Nginx 사이트](http://nginx.org/en/docs/beginners_guide.html) 을 참조하십시오.
 
 ```{tip}
-Nginx로 마이그레이션하는 데 도움이 필요한 경우 [Liferay 클라우드 지원](https://help.liferay.com/hc/en-us)에 문의하십시오.
+Nginx로 마이그레이션하는 데 도움이 필요한 경우 [Liferay 클라우드 지원](https://help.liferay.com/hc/en-us) 에 문의하십시오.
 ```
 
 ## Nginx 구성 구성
@@ -31,7 +31,7 @@ Nginx로 마이그레이션하는 데 도움이 필요한 경우 [Liferay 클라
 자세한 내용은 [웹 서버 서비스 구성](../platform-services/web-server-service.md#configurations) 을 참조하십시오.
 
 ```{tip}
-Nginx 구성 파일의 모양을 보려면 예제 구성 [here](../reference/example-configuration-files.md#web-server-service-configuration-nginx-conf)을 참조하십시오.
+Nginx 구성 파일의 모양을 보려면 예제 구성 [here](../reference/example-configuration-files.md#web-server-service-configuration-nginx-conf) 을 참조하십시오.
 ```
 
 ## 웹 서버 사용자 정의 구성

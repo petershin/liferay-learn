@@ -41,7 +41,7 @@
 | 권한          | 사용자를 편집할 권한이 있는 역할을 정의합니다.                                       |
 | 페이지 관리      | 사용자의 개인 페이지를 구성합니다.                                              |
 | 구체화되는 사용자   | 마치 해당 사용자인 것처럼 다른 창에서 사이트를 탐색합니다.                                |
-| 군대를 해산하십시요  | [사용자 계정 비활성화](#deactivating-users).                              |
+| 군대를 해산하십시요  | [사용자 계정 비활성화](#deactivating-users) .                              |
 | 개인 데이터 삭제   | [사용자의 개인 데이터 삭제](../managing-user-data/sanitizing-user-data.md). |
 | 개인 데이터 내보내기 | [사용자 개인 데이터 다운로드](../managing-user-data/exporting-user-data.md). |
 

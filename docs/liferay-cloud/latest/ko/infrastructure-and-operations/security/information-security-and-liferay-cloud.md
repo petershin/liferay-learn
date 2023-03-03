@@ -8,4 +8,4 @@ Liferay는 클라우드의 보안을 매우 중요하게 여기며 **SOC 2** 및
 
 ## 추가 정보
 
-정보 보안에 대한 추가 질문이나 우려 사항이 있는 경우 [헬프 센터 티켓](https://liferay-support.zendesk.com/agent/)을 여십시오.
+정보 보안에 대한 추가 질문이나 우려 사항이 있는 경우 [헬프 센터 티켓](https://liferay-support.zendesk.com/agent/) 을 여십시오.

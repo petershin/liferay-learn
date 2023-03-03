@@ -1,6 +1,6 @@
 # REST 서비스 사용
 
-Liferay DXP에는 대부분의 애플리케이션에 대한 REST 서비스가 포함되어 있습니다. 이러한 서비스는 [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery)와 완전히 호환됩니다. 여기에서 섭취 방법을 배웁니다. 세 단계만 거치면 됩니다. 
+Liferay DXP에는 대부분의 애플리케이션에 대한 REST 서비스가 포함되어 있습니다. 이러한 서비스는 [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery) 와 완전히 호환됩니다. 여기에서 섭취 방법을 배웁니다. 세 단계만 거치면 됩니다. 
 
 1. 사용하려는 서비스를 식별합니다.
 1. 필요한 데이터가 포함된 사이트를 식별합니다.
@@ -51,7 +51,7 @@ API는 여러 범주로 나뉩니다. 이 예에서는 `BlogPosting` 서비스�
 
 이제 전화를 거는 데 필요한 모든 것이 있습니다. 요청하는 데이터에 액세스할 수 있는 자격 증명을 사용하여 모든 웹 서비스에 액세스해야 합니다. 가장 간단한 방법은 URL에서 자격 증명 데이터를 전달하는 기본 인증을 사용하는 것입니다. 이 방법은 안전하지 않으므로 개발 중에만 이 방법을 사용해야 합니다. 프로덕션의 경우 애플리케이션에서 [OAuth2](../using-oauth2/using-oauth2.md)를 통해 사용자에게 권한을 부여해야 합니다.
 
-아래 예시는 [cURL](https://curl.haxx.se)을 사용합니다.
+아래 예시는 [cURL](https://curl.haxx.se) 을 사용합니다.
 
 ### 기본 인증을 사용하여 서비스 호출(개발 중에만 해당)
 

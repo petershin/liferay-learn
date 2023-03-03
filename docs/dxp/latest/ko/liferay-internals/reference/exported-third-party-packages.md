@@ -1,6 +1,6 @@
 # 내보낸 타사 패키지
 
-Liferay는 런타임에 100개 이상의 타사 Java 패키지를 제공합니다. `com.liferay.portal.bootstrap` 모듈은 glob을 사용하여 개별 패키지와 패키지 그룹을 명시적으로 지정하여 패키지를 내보냅니다. 예를 들어 다음은 [7.3.4-ga5](https://github.com/liferay/liferay-portal/blob/7.3.4-ga5/modules/core/portal-bootstrap/system.packages.extra.bnd)의 `Export-Package` 선언에서 발췌한 것입니다.
+Liferay는 런타임에 100개 이상의 타사 Java 패키지를 제공합니다. `com.liferay.portal.bootstrap` 모듈은 glob을 사용하여 개별 패키지와 패키지 그룹을 명시적으로 지정하여 패키지를 내보냅니다. 예를 들어 다음은 [7.3.4-ga5](https://github.com/liferay/liferay-portal/blob/7.3.4-ga5/modules/core/portal-bootstrap/system.packages.extra.bnd) 의 `Export-Package` 선언에서 발췌한 것입니다.
 
 ```groovy
 Export-Package:\

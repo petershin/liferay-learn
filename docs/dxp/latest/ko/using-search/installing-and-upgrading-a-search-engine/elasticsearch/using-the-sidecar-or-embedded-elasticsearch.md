@@ -37,10 +37,10 @@ Elasticsearch 서버는 다음 URL에서 액세스할 수 있습니다.
 
 ```{note}
 지원되는 프로덕션 구성은 아니지만 번들 Elasticsearch 서버를 모니터링하기 위해 Kibana를 설치하면 개발 및 테스트 중에 유용합니다. 
-- Liferay 7.3에서 [OSS 전용 Kibana 빌드](https://www.elastic.co/downloads/kibana-oss)를 설치합니다.
-- Liferay DXP 7.4 U17+ 및 Liferay Portal 7.4 GA17+에서 무료 버전 [Kibana](https://www.elastic.co/downloads/past-releases#kibana)을 설치합니다.
+- Liferay 7.3에서 [OSS 전용 Kibana 빌드](https://www.elastic.co/downloads/kibana-oss) 를 설치합니다.
+- Liferay DXP 7.4 U17+ 및 Liferay Portal 7.4 GA17+에서 무료 버전 [Kibana](https://www.elastic.co/downloads/past-releases#kibana) 을 설치합니다.
 
-[설정 시 오류가 발생하는 경우 문제 해결 섹션](#error-connecting-to-the-sidecar-elasticsearch-from-kibana)을 참조하세요.
+[설정 시 오류가 발생하는 경우 문제 해결 섹션](#error-connecting-to-the-sidecar-elasticsearch-from-kibana) 을 참조하세요.
 ```
 
 프로덕션 환경에서 HSQL과 같은 임베디드 데이터베이스를 실행하지 않을 것이며 번들로 제공되는 Elasticsearch 서버도 프로덕션 환경에서 실행해서는 안 됩니다. 대신 원격 모드에서 독립 실행형 서버 또는 서버 노드의 클러스터로 Elasticsearch를 실행하십시오.
@@ -154,5 +154,5 @@ Caused by: org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgume
 
 1. 라이프레이를 다시 시작합니다.
 
-1. 포털은 시작 시 [일부 앱 서버에서](./using-the-sidecar-or-embedded-elasticsearch.md#embedded-versus-sidecar)(예: Tomcat) Elasticsearch 런타임을 다운로드하고 추출합니다.
+1. 포털은 시작 시 [일부 앱 서버에서](./using-the-sidecar-or-embedded-elasticsearch.md#embedded-versus-sidecar) (예: Tomcat) Elasticsearch 런타임을 다운로드하고 추출합니다.
 

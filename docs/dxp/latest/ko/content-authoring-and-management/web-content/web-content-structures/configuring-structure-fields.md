@@ -10,9 +10,9 @@
     구조 옆에 있는 작업 메뉴를 열고 *편집*을 선택할 수도 있습니다.
     ```
 
-1. 구조에서 필드를 추가, [제거](#structure-field-options)또는 재구성하십시오.
+1. 구조에서 필드를 추가, [제거](#structure-field-options) 또는 재구성하십시오.
 1. 구성하려는 필드를 선택하고 *설정* 탭을 클릭하거나 필드 위로 마우스를 가져간 후 나타나는 상황에 맞는 메뉴에서 *설정* (![Settings icon](../../../images/icon-control-menu-gear.png)) 아이콘을 클릭합니다. 상황에 맞는 메뉴에서 [다른 작업](#structure-field-options) 을 수행할 수도 있습니다.
-1. 필드에 대해 [원하는 설정을 구성](#configurable-settings)하고 변경 사항을 *저장*합니다.
+1. 필드에 대해 [원하는 설정을 구성](#configurable-settings) 하고 변경 사항을 *저장*합니다.
 
 ```{tip}
 구조를 만들거나 [편집](./configuring-structure-fields.md)할 때 *보기* 탭이 기본값입니다. *소스* 탭으로 전환하여 구조의 원시 XML을 보고 직접 수정할 수 있습니다.

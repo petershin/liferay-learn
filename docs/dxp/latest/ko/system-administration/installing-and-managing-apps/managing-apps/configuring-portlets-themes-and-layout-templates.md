@@ -1,6 +1,6 @@
 # 포틀릿, 테마 및 레이아웃 템플릿 구성
 
-구성 요소 목록은 [포틀릿](https://help.liferay.com/hc/articles/360029046351-Introduction-to-Portlets), [테마](https://help.liferay.com/hc/articles/360035581011-UI-Architecture#themes)및 [레이아웃 템플릿](https://help.liferay.com/hc/articles/360028726612-Layout-Templates)을 구성하는 가장 쉬운 방법입니다. 구성 요소 UI에서 활성화/비활성화하고 권한을 구성할 수 있습니다.
+구성 요소 목록은 [포틀릿](https://help.liferay.com/hc/articles/360029046351-Introduction-to-Portlets) , [테마](https://help.liferay.com/hc/articles/360035581011-UI-Architecture#themes) 및 [레이아웃 템플릿](https://help.liferay.com/hc/articles/360028726612-Layout-Templates) 을 구성하는 가장 쉬운 방법입니다. 구성 요소 UI에서 활성화/비활성화하고 권한을 구성할 수 있습니다.
 
 1. _구성_ &rarr; _구성 요소_로 이동하여 제어판에서 구성 요소 UI에 액세스합니다. 설치된 포틀릿 테이블이 나타납니다.
 

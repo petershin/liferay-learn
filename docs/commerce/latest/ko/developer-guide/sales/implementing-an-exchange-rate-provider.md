@@ -2,7 +2,7 @@
 
 이 자습서에서는 [ExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/util/ExchangeRateProvider.java) 인터페이스를 구현하여 사용자 지정 환율 공급자를 추가하는 방법을 보여줍니다.
 
-환율 공급자는 데이터 소스를 사용하여 통화 간 환율 계산을 수행합니다. Liferay Commerce는 하나의 기본 환율 공급자인 [ECBExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java)을 제공합니다.
+환율 공급자는 데이터 소스를 사용하여 통화 간 환율 계산을 수행합니다. Liferay Commerce는 하나의 기본 환율 공급자인 [ECBExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java) 을 제공합니다.
 
 ![즉시 사용 가능한 환율 공급자](./implementing-an-exchange-rate-provider/images/01.png "즉시 사용 가능한 환율 공급자")
 
@@ -21,7 +21,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Acme Commerce Exchange Rate Provider](./liferay-f2y1.zip)를 다운로드하고 압축을 풉니다.
+1. [Acme Commerce Exchange Rate Provider](./liferay-f2y1.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-f2y1.zip -O
@@ -79,7 +79,7 @@ Liferay Commerce 2.1 및 이전 버전에서는 *제어판* → *상거래* → 
 public class F2Y1ExchangeRateProvider implements ExchangeRateProvider {
 ```
 
-> Liferay Commerce가 환율 공급자 레지스트리 [에서 새 환율 공급자를 다른 공급자와 구별할 수 있도록 환율 공급자에게 고유한 키를 제공하는 것이 중요](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java). 이미 사용 중인 키를 재사용하면 기존에 연결된 환율 공급자가 재정의됩니다.
+> Liferay Commerce가 환율 공급자 레지스트리 [에서 새 환율 공급자를 다른 공급자와 구별할 수 있도록 환율 공급자에게 고유한 키를 제공하는 것이 중요](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java) . 이미 사용 중인 키를 재사용하면 기존에 연결된 환율 공급자가 재정의됩니다.
 
 ### `ExchangeRateProvider` 인터페이스 검토
 
@@ -157,7 +157,7 @@ private Map<String, Double> _exchangeRates = new HashMap<String, Double>() {
 };
 ```
 
-> 이 예에서는 환율 지도를 사용합니다. 보다 실용적인 사용 사례는 [ECBExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java) 을 참조하십시오. [F2Y1ExchangeRateProvider.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-an-exchange-rate-provider/resources/liferay-f2y1.zip/f2y1-impl/src/main/java/com/acme/f2y1/internal/commerce/currency/util/F2Y1ExchangeRateProvider.java)를 방문하여 `_getStaticExchangeRates` 및 `_getRateForCode` 을 참조하십시오.
+> 이 예에서는 환율 지도를 사용합니다. 보다 실용적인 사용 사례는 [ECBExchangeRateProvider](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java) 을 참조하십시오. [F2Y1ExchangeRateProvider.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-an-exchange-rate-provider/resources/liferay-f2y1.zip/f2y1-impl/src/main/java/com/acme/f2y1/internal/commerce/currency/util/F2Y1ExchangeRateProvider.java) 를 방문하여 `_getStaticExchangeRates` 및 `_getRateForCode` 을 참조하십시오.
 > 
 > 두 통화에 대해 `CommerceCurrency` 개체를 사용하여 통화 코드와 같은 필요한 정보를 가져옵니다. [CommerceCurrency.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrency.java) 및 [CommerceCurrencyModel.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrencyModel.java) 을 참조하여 `CommerceCurrency` 객체와 함께 사용할 수 있는 더 많은 방법을 찾으십시오.
 

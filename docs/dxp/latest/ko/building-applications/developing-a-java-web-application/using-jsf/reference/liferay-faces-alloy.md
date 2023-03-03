@@ -6,7 +6,7 @@ Liferay Faces Alloy는 `.jar` 파일로 배포됩니다. Liferay Faces Alloy를 
 AlloyUI는 Liferay DXP 7.2에서 더 이상 사용되지 않습니다.
 ```
 
-Liferay IDE/Developer Studio에서 JSF 포틀릿을 생성하는 동안 포틀릿의 JSF 구성 요소 제품군을 선택할 수 있습니다. 옵션에는 *JSF 표준*, [*ICEfaces*](http://www.icesoft.org/java/projects/ICEfaces/overview.jsf), [*PrimeFaces*](http://primefaces.org/), [*RichFaces*](http://richfaces.jboss.org/)및 *Liferay Faces Alloy*가 포함됩니다.
+Liferay IDE/Developer Studio에서 JSF 포틀릿을 생성하는 동안 포틀릿의 JSF 구성 요소 제품군을 선택할 수 있습니다. 옵션에는 *JSF 표준*, [*ICEfaces*](http://www.icesoft.org/java/projects/ICEfaces/overview.jsf) , [*PrimeFaces*](http://primefaces.org/) , [*RichFaces*](http://richfaces.jboss.org/) 및 *Liferay Faces Alloy*가 포함됩니다.
 
 포틀릿 설정 중에 Liferay Faces Alloy JSF Component Suite를 선택한 경우 `.jar` 파일이 포틀릿 프로젝트에 포함됩니다.
 
@@ -22,6 +22,6 @@ YUI3을 기반으로 하는 Liferay의 AlloyUI 기술을 활용하려면 JSF 포
 
 ## 추가 정보
 
-* [JSF 포틀릿 애플리케이션 개발 \(도움말 센터\)](https://help.liferay.com/hc/en-us/articles/360029069451-Developing-a-JSF-Portlet-Application)
+* [JSF 포틀릿 애플리케이션 개발 \(도움말 센터\)](https://help.liferay.com/hc/ko/articles/360029069451-Developing-a-JSF-Portlet-Application)
 * [라이프레이 페이스 브리지](./liferay-faces-bridge.md)
 * [Liferay 얼굴 포털](./liferay-faces-portal.md)

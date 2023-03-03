@@ -14,7 +14,7 @@
     <%@ page import="com.liferay.frontend.taglib.chart.model.MixedDataColumn" %>
     ```
 
-1. 다음 Java 스크립틀릿을 `view.jsp`맨 위에 추가하십시오. [`MixedDataColumn` 개체](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MixedDataColumn.html)---각 데이터 계열에 대해 단일 숫자 값과 세 숫자 배열을 모두 지원하는 열을 추가합니다. 단일 숫자 값은 기존 데이터를 정의합니다. 숫자의 배열은 예측/예측 데이터로 사용되며 최소값, 추정값 및 최대값의 세 가지 숫자를 포함합니다. 예상 값은 실선으로 표시되고 최소값과 최대값으로 지정된 테두리가 있는 강조 표시된 영역으로 둘러싸여 있습니다. 이렇게 하면 예상 값을 시각화하는 동시에 가능한 값 범위에 대한 아이디어도 얻을 수 있습니다. `addDataColumn()` 메서드를 사용하여 각 데이터 계열을 추가합니다.
+1. 다음 Java 스크립틀릿을 `view.jsp`맨 위에 추가하십시오. [`MixedDataColumn` 개체](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MixedDataColumn.html) ---각 데이터 계열에 대해 단일 숫자 값과 세 숫자 배열을 모두 지원하는 열을 추가합니다. 단일 숫자 값은 기존 데이터를 정의합니다. 숫자의 배열은 예측/예측 데이터로 사용되며 최소값, 추정값 및 최대값의 세 가지 숫자를 포함합니다. 예상 값은 실선으로 표시되고 최소값과 최대값으로 지정된 테두리가 있는 강조 표시된 영역으로 둘러싸여 있습니다. 이렇게 하면 예상 값을 시각화하는 동시에 가능한 값 범위에 대한 아이디어도 얻을 수 있습니다. `addDataColumn()` 메서드를 사용하여 각 데이터 계열을 추가합니다.
 
     ```java
     <%
@@ -63,7 +63,7 @@
 
     예측 차트에는 다음과 같은 속성이 있습니다.
 
-    **axisXTickFormat:** X 축의 시간 형식을 지정하는 선택적 문자열입니다. 지정할 수 있는 형식에 대한 자세한 내용은 [d3의 시간 형식 README](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format)을 참조하십시오. 이 값은 `setAxisXTickFormat()` 메서드를 사용하여 설정됩니다.
+    **axisXTickFormat:** X 축의 시간 형식을 지정하는 선택적 문자열입니다. 지정할 수 있는 형식에 대한 자세한 내용은 [d3의 시간 형식 README](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format) 을 참조하십시오. 이 값은 `setAxisXTickFormat()` 메서드를 사용하여 설정됩니다.
 
     **예측 날짜:** 예측/예측이 표시되는 타임라인의 시점을 나타내는 문자열로 된 날짜입니다. 이 값은 JavaScript에서 Date 객체로 구문 분석되고 `setPredictionDate()` 메서드를 사용하여 설정됩니다.
 

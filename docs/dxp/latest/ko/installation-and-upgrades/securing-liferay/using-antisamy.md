@@ -2,7 +2,7 @@
 
 Liferay DXP에는 사용자가 입력한 악성 코드로부터 보호하는 [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project)  모듈이 포함되어 있습니다. 사이트에서 사용자가 게시판, 블로그 또는 기타 애플리케이션에 콘텐츠를 게시할 수 있도록 허용하는 경우 이러한 게시물에 악성 코드가 포함될 수 있습니다. AntiSamy 모듈은 HTML/CSS 조각을 필터링하고 의심스러운 JavaScript 코드를 제거합니다.
 
-이 모듈은 강력한 [OWASP AntiSamy 라이브러리](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) 를 활용하여 경매 사이트 [eBay](https://www.ebay.com)에 효과적인 콘텐츠 정책을 시행합니다. AntiSamy 모듈은 설치의 기존 새니타이저 구현 목록에 OWASP AntiSamy 구현을 추가합니다. Liferay DXP는 AntiSamy 새니타이저와 기존에 구성된 새니타이저를 사용하여 블로그 항목, 캘린더 이벤트, 게시판 게시물, Wiki 페이지 및 웹 콘텐츠 기사에 대한 사용자 입력을 제거합니다.
+이 모듈은 강력한 [OWASP AntiSamy 라이브러리](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) 를 활용하여 경매 사이트 [eBay](https://www.ebay.com) 에 효과적인 콘텐츠 정책을 시행합니다. AntiSamy 모듈은 설치의 기존 새니타이저 구현 목록에 OWASP AntiSamy 구현을 추가합니다. Liferay DXP는 AntiSamy 새니타이저와 기존에 구성된 새니타이저를 사용하여 블로그 항목, 캘린더 이벤트, 게시판 게시물, Wiki 페이지 및 웹 콘텐츠 기사에 대한 사용자 입력을 제거합니다.
 
 AntiSamy는 기본적으로 활성화되어 있습니다.
 
@@ -46,4 +46,4 @@ AntiSamy를 사용하여 사용자 생성 콘텐츠를 다른 사용자가 볼 �
 
 _Class Name_로 AntiSamy Sanitizer 라는 AntiSamy 를 구성하는 또 다른 방법을 알 수 있습니다. 이는 개발자가 각 모델 클래스 이름에 대한 AntiSamy 구성 XML 파일을 지정하여 보다 미묘한 AntiSamy 구성을 생성할 수 있는 방법입니다. 그러나 이때 개발자는 AntiSamy 구성 파일을 Liferay AntiSamy 모듈에 삽입한 다음 다시 배포하거나 조각 번들 프로젝트를 생성하여 제공해야 합니다.
 
-이에 대한 튜토리얼이 곧 나올 예정이지만 지금은 [개발자 티켓](https://issues.liferay.com/browse/LPS-112978)에서 자세한 정보를 찾을 수 있습니다. 
+이에 대한 튜토리얼이 곧 나올 예정이지만 지금은 [개발자 티켓](https://issues.liferay.com/browse/LPS-112978) 에서 자세한 정보를 찾을 수 있습니다. 

@@ -2,7 +2,7 @@
 
 Liferay Cloud 버전 4의 새로운 구조를 사용하도록 리포지토리를 업그레이드하면 리포지토리 내에서 Liferay Workspace를 활용하고, 서비스를 최신 상태로 유지하고, 새롭고 업데이트된 다양한 기능을 사용할 수 있습니다.
 
-새 리포지토리 구조로 업그레이드하려면 [업그레이드 스크립트](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip)사용이 필요합니다.
+새 리포지토리 구조로 업그레이드하려면 [업그레이드 스크립트](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) 사용이 필요합니다.
 
 ## 업그레이드 준비 중
 
@@ -47,7 +47,7 @@ Docker 이미지 이름 끝에 있는 숫자는 사용 중인 Liferay Cloud 스�
 
 업그레이드하려면 다음 단계를 수행하십시오.
 
-1. [업그레이드 스크립트](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip)을 다운로드하고 로컬 Liferay Cloud 리포지토리의 루트에 압축을 풉니다.
+1. [업그레이드 스크립트](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) 을 다운로드하고 로컬 Liferay Cloud 리포지토리의 루트에 압축을 풉니다.
 
     ```bash
     curl -L https://github.com/LiferayCloud/stack-upgrade/archive/release.zip -O
@@ -136,7 +136,7 @@ Docker 이미지 이름 끝에 있는 숫자는 사용 중인 Liferay Cloud 스�
 }
 ```
 
-자세한 내용은 [GitHub](../getting-started/configuring-your-github-repository.md#setting-environment-variables), [Bitbucket](../getting-started/configuring-your-bitbucket-repository.md#connecting-bitbucket-to-your-jenkins-service)또는 [GitLab](../getting-started/configuring-your-gitlab-repository.md#connecting-gitlab-to-your-jenkins-service) 통합 참조를 참조하십시오.
+자세한 내용은 [GitHub](../getting-started/configuring-your-github-repository.md#setting-environment-variables) , [Bitbucket](../getting-started/configuring-your-bitbucket-repository.md#connecting-bitbucket-to-your-jenkins-service) 또는 [GitLab](../getting-started/configuring-your-gitlab-repository.md#connecting-gitlab-to-your-jenkins-service) 통합 참조를 참조하십시오.
 
 ### Jenkinsfile 구성 변수 확인
 

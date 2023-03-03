@@ -49,8 +49,8 @@ Liferay의 반응형 레이아웃 편집기에 액세스하려면 장치 아이�
 
 | 수정 모드   | 묘사                                                      | 사용 가능한 옵션                 |
 |:------- |:------------------------------------------------------- |:------------------------- |
-| 페이지 디자인 | 페이지 및 페이지 콘텐츠를 업데이트할 수 있는 권한이 있으면 페이지를 디자인할 수 있습니다.     | <ul><li>[Browser](#브라우저)</li><li>[페이지 콘텐츠](#page-content)</li><li>[Comments](#댓글)</li></ul> |
-| 콘텐츠 편집  | 페이지를 업데이트할 수 있는 권한이 있지만 페이지 콘텐츠가 아닌 경우 콘텐츠를 편집할 수 있습니다. | <ul><li>[단편 및 위젯](#fragments-and-widgets)</li><li>[Browser](#브라우저)</li><li>[페이지 디자인 옵션](#page-design-options)</li><li>[페이지 콘텐츠](#page-content)</li><li>[Comments](#댓글)</li></ul> |
+| 페이지 디자인 | 페이지 및 페이지 콘텐츠를 업데이트할 수 있는 권한이 있으면 페이지를 디자인할 수 있습니다.     | <ul><li> [Browser](#브라우저) </li><li> [페이지 콘텐츠](#page-content) </li><li> [Comments](#댓글) </li></ul> |
+| 콘텐츠 편집  | 페이지를 업데이트할 수 있는 권한이 있지만 페이지 콘텐츠가 아닌 경우 콘텐츠를 편집할 수 있습니다. | <ul><li> [단편 및 위젯](#fragments-and-widgets) </li><li> [Browser](#브라우저) </li><li> [페이지 디자인 옵션](#page-design-options) </li><li> [페이지 콘텐츠](#page-content) </li><li> [Comments](#댓글) </li></ul> |
 
 ![페이지 디자인 또는 콘텐츠 편집 편집 모드 중에서 선택합니다.](content-page-editor-ui-reference/images/04.png)
 

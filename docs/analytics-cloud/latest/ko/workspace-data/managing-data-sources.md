@@ -18,7 +18,7 @@ Liferay DXP 데이터 소스를 보거나 변경하려면 연결된 데이터 �
 
 DXP 인스턴스를 작업 공간에서 연결 해제하도록 선택한 경우 *연결 해제* 버튼을 클릭합니다. 확인하라는 메시지가 표시됩니다. 데이터 소스의 연결을 끊으면 분석 데이터의 모든 동기화가 중지됩니다.
 
-**동기화된 사이트:** DXP 사이트와 Analytics Cloud의 동기화 상태를 표시합니다. 구성하려면 [속성에 사이트 동기화](../workspace-settings/scoping-sites-and-individuals-using-properties.md#syncing-sites-to-a-property)을 참조하십시오.
+**동기화된 사이트:** DXP 사이트와 Analytics Cloud의 동기화 상태를 표시합니다. 구성하려면 [속성에 사이트 동기화](../workspace-settings/scoping-sites-and-individuals-using-properties.md#syncing-sites-to-a-property) 을 참조하십시오.
 
 **동기화된 연락처:** Analytics Cloud와의 DXP 연락처 동기화 상태를 보여줍니다. 구성하려면 [속성에 연락처 동기화 참조](../workspace-settings/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property)
 

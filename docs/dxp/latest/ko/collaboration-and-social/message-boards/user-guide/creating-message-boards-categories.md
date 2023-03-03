@@ -1,6 +1,6 @@
 # 게시판 카테고리 만들기
 
-게시판 카테고리는 주제별로 스레드를 구성합니다. [필수 권한](./message-boards-permissions-reference.md) (최소 _카테고리 추가_, _하위 카테고리 추가_)이 있는 인증된 사용자만 카테고리를 만들 수 있습니다. 일반적인 DXP 역할 및 권한에 대해 자세히 알아보려면 [역할 및 권한](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions)을 참조하십시오.
+게시판 카테고리는 주제별로 스레드를 구성합니다. [필수 권한](./message-boards-permissions-reference.md) (최소 _카테고리 추가_, _하위 카테고리 추가_)이 있는 인증된 사용자만 카테고리를 만들 수 있습니다. 일반적인 DXP 역할 및 권한에 대해 자세히 알아보려면 [역할 및 권한](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) 을 참조하십시오.
 
 ## 범주 추가
 
@@ -41,7 +41,7 @@
 
 1. 상자를 선택하여 원하는 역할에 권한을 부여하십시오.
 
-    각 권한에 대한 자세한 내용은 [Message Boards Permissions Reference](./message-boards-permissions-reference.md#general-category-permissions)을 참조하십시오.
+    각 권한에 대한 자세한 내용은 [Message Boards Permissions Reference](./message-boards-permissions-reference.md#general-category-permissions) 을 참조하십시오.
 
     ![게시판 카테고리에 대한 권한을 수정합니다.](./creating-message-boards-categories/images/06.png)
 

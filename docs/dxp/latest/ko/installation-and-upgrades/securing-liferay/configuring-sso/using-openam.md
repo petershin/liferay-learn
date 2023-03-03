@@ -16,7 +16,7 @@ com.iplanet.am.cookie.encode=true
 
 Liferay DXP와 동일하거나 다른 서버에 OpenAM을 설치할 수 있습니다. OpenAM 서버의 컨텍스트 경로와 서버 호스트 이름을 검토하십시오.
 
-Liferay DXP와 동일한 서버에 OpenAM을 설치하려면 [여기](https://backstage.forgerock.com/downloads/browse/am/archive/productId:openam)에서 다운로드할 수 있는 OpenAM `.war`을 배포해야 합니다. 그렇지 않으면 [OpenAM 13 사이트](https://backstage.forgerock.com/docs/openam/13/install-guide/) 의 지침에 따라 OpenAM을 설치합니다.
+Liferay DXP와 동일한 서버에 OpenAM을 설치하려면 [여기](https://backstage.forgerock.com/downloads/browse/am/archive/productId:openam) 에서 다운로드할 수 있는 OpenAM `.war`을 배포해야 합니다. 그렇지 않으면 [OpenAM 13 사이트](https://backstage.forgerock.com/docs/openam/13/install-guide/) 의 지침에 따라 OpenAM을 설치합니다.
 
 ```{note}
 OpenAM 12 이하 버전은 Liferay DXP와 함께 작동하지만 수명이 다했습니다. 이 때문에 프로덕션용으로 OpenAM 13만 권장합니다.

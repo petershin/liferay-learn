@@ -3,7 +3,7 @@
 메뉴 추가 태그는 하나 이상의 항목에 대한 메뉴 추가 버튼을 만듭니다. 엔티티(예: 새 블로그 항목)를 추가하는 작업에 사용되며 관리 표시줄의 일부입니다. `<liferay-frontend:add-menu>` 태그를 사용하여 추가 메뉴를 만들고 각 항목에 대해 `<liferay-frontend:add-menu-item>` 태그를 중첩합니다.
 
 ```{note}
-이 패턴은 @product-ver@부터 사용되지 않습니다. 대신 Clay Management Toolbar의 [생성 메뉴 패턴](/docs/7-2/reference/-/knowledge_base/r/clay-management-toolbar#creation-menu)을 사용하는 것을 권장합니다.
+이 패턴은 @product-ver@부터 사용되지 않습니다. 대신 Clay Management Toolbar의 [생성 메뉴 패턴](/docs/7-2/reference/-/knowledge_base/r/clay-management-toolbar#creation-menu) 을 사용하는 것을 권장합니다.
 ```
 
 메뉴에 하나의 항목이 있는 경우 버튼은 블로그 관리 앱에 대한 아래 예와 같이 항목의 작업을 트리거합니다.

@@ -1,11 +1,11 @@
 # Liferay npm 번들러
 
-liferay-npm-bundler는 플랫폼으로 Liferay Portal을 대상으로 하는 번들러(예: [Webpack](https://webpack.github.io/) 또는 [Browserify](http://browserify.org/))이며 위젯에서 npm 패키지를 사용한다고 가정합니다(일반적인 웹 애플리케이션과 반대).
+liferay-npm-bundler는 플랫폼으로 Liferay Portal을 대상으로 하는 번들러(예: [Webpack](https://webpack.github.io/) 또는 [Browserify](http://browserify.org/) )이며 위젯에서 npm 패키지를 사용한다고 가정합니다(일반적인 웹 애플리케이션과 반대).
 
 위젯 내에서 npm 패키지를 실행하는 작업 흐름은 표준 번들러와 약간 다릅니다. 단일 파일에 JavaScript를 *대신 전체 웹 페이지가 어셈블될 때 브라우저에서 모든 패키지를 함께 연결해야*. 그런 다음 위젯은 각각 고유한 복사본을 로드하지 않고 공통 버전의 모듈을 공유할 수 있습니다. liferay-npm-bundler가 이를 처리합니다.
 
 ```{note}
-[프로젝트의 Wiki](https://github.com/liferay/liferay-npm-build-tools/wiki)에서도 liferay-npm-bundler에 대한 정보를 찾을 수 있습니다.
+[프로젝트의 Wiki](https://github.com/liferay/liferay-npm-build-tools/wiki) 에서도 liferay-npm-bundler에 대한 정보를 찾을 수 있습니다.
 ```
 
 ## Liferay npm 번들러가 내부적으로 작동하는 방식
@@ -34,7 +34,7 @@ liferay-npm-bundler는 아래 프로세스를 사용하여 OSGi 번들을 생성
 
      씨. 구성된 플러그인으로 npm 패키지를 전처리합니다.
 
-     디. npm 패키지 내 각 `.js` 파일에 대해 구성된 플러그인으로 [Babel](https://babeljs.io/)을 실행합니다.
+     디. npm 패키지 내 각 `.js` 파일에 대해 구성된 플러그인으로 [Babel](https://babeljs.io/) 을 실행합니다.
 
      이자형. 구성된 플러그인으로 npm 패키지를 사후 처리합니다.
 

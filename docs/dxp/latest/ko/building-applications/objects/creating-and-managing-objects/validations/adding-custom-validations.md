@@ -2,7 +2,7 @@
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U27+/GA27+`
 
-유효성 검사는 유효한 필드 항목을 결정하기 위한 규칙을 설정합니다. 각 유효성 검사에는 개체 UI를 통해 설정할 수 있는 자체 트리거, 조건 및 오류 텍스트가 있습니다. [Groovy 스크립트](#using-groovy-validations) 또는 [Liferay 표현식](#using-expression-builder-validations)을 사용하여 유효성 검사를 정의할 수 있습니다.
+유효성 검사는 유효한 필드 항목을 결정하기 위한 규칙을 설정합니다. 각 유효성 검사에는 개체 UI를 통해 설정할 수 있는 자체 트리거, 조건 및 오류 텍스트가 있습니다. [Groovy 스크립트](#using-groovy-validations) 또는 [Liferay 표현식](#using-expression-builder-validations) 을 사용하여 유효성 검사를 정의할 수 있습니다.
 
 ![사용자 정의 및 시스템 개체 필드에 대한 유효성 검사를 만듭니다.](./adding-custom-validations/images/01.png)
 
@@ -66,7 +66,7 @@ Liferay 7.4 U33+ 및 GA33+의 경우 Liferay는 [GroovyShell 클래스](https://
 
 ## 식 작성기 유효성 검사 사용
 
-식 작성기는 요소 측면 패널에서 액세스할 수 있는 미리 정의된 필드, 연산자 및 함수를 제공합니다. 요소를 클릭하면 조건 편집기에 추가됩니다. 이러한 함수는 부울 값을 반환합니다. 제공된 연산자 및 함수의 전체 목록은 [Expression Builder Validations Reference](./expression-builder-validations-reference.md) 을 참조하십시오.
+식 작성기는 요소 측면 패널에서 액세스할 수 있는 미리 정의된 필드, 연산자 및 함수를 제공합니다. 요소를 클릭하면 조건 편집기에 추가됩니다. 이러한 함수는 부울 값을 반환합니다. 제공된 연산자 및 함수의 전체 목록은 [식 작성기 유효성 검사 참조](./expression-builder-validations-reference.md) 을 참조하십시오.
 
 ```{important}
 텍스트, 숫자, 날짜 및 부울 필드 유형에만 식 작성기 유효성 검사를 사용할 수 있습니다.

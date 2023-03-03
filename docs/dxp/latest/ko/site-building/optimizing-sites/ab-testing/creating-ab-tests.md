@@ -11,7 +11,7 @@ A/B 테스트를 만들기 전에 다음 사항을 기억하세요.
   
   ![테스트를 실행하지 않고 구성하면 테스트가 초안으로 저장됩니다](./creating-ab-tests/images/05.png)
   
-  A/B 테스트를 만들려면 먼저 [테스트 만들기](#creating-the-test)를 한 다음 하나 이상의 [테스트 변수](#creating-the-test-variant)를 만듭니다.
+  A/B 테스트를 만들려면 먼저 [테스트 만들기](#creating-the-test) 를 한 다음 하나 이상의 [테스트 변수](#creating-the-test-variant) 를 만듭니다.
 
 ```{important}
 테스트를 생성하기 전에 환경이 A/B 테스트에 대한 [요구 사항을 충족](./verifying-ab-test-requirements.md)하는지 확인하세요.
@@ -74,7 +74,7 @@ A/B 테스트를 만들기 전에 다음 사항을 기억하세요.
 
 1. *대안*저장 을 클릭합니다.
 
-테스트 및 테스트 변형을 생성한 후 테스트를 [실행할 수 있습니다](./running-and-monitoring-ab-tests).
+테스트 및 테스트 변형을 생성한 후 테스트를 [실행할 수 있습니다](./running-and-monitoring-ab-tests) .
 
 ## 관련 정보
 

@@ -264,7 +264,7 @@ DR 환경의 데이터를 일반 프로덕션 환경으로 다시 복원합니�
 
 1. Liferay Cloud 콘솔에서 DR 환경 &rarr; 백업 서비스 페이지 &rarr; 환경 변수로 이동합니다.
 
-1. `LCP_BACKUP_RESTORE_SCHEDULE` 환경 변수를 추가하고 이전에 기록해 둔 값을 [제거할 때](#disable-the-database-restoration-schedule)복원합니다.
+1. `LCP_BACKUP_RESTORE_SCHEDULE` 환경 변수를 추가하고 이전에 기록해 둔 값을 [제거할 때](#disable-the-database-restoration-schedule) 복원합니다.
 
 1. 변경 사항을 저장합니다.
 

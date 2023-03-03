@@ -96,7 +96,7 @@ Liferay 주문 엔진에는 1) 공개, 2) 진행 중, 3) 보류 중, 4) 처리 �
 Liferay Commerce가 주문 상태 레지스트리에서 새 상태를 다른 상태와 구별할 수 있도록 주문 상태에 대한 고유 키를 제공하는 것이 중요합니다. 이미 사용 중인 키를 지정하면 기존의 연결된 상태가 재정의됩니다. 주문 상태의 우선 순위에 따라 주문 수명 주기에서 주문이 결정됩니다. 이 경우 보류 상태의 우선 순위는 30이고 처리 상태의 우선 순위는 50입니다. 둘 사이에 상태를 배치하려면 우선 순위가 두 숫자 사이에 있어야 합니다(이 경우 40).
 
 ```{note}
-이 예제 구현의 경우 임의의 정수가 키로 설정되고 40이 우선 순위로 설정되지만 코드 내에서 더 나은 가독성을 위해 변수를 사용할 수 있습니다. 예제 [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java)을 참조하십시오.
+이 예제 구현의 경우 임의의 정수가 키로 설정되고 40이 우선 순위로 설정되지만 코드 내에서 더 나은 가독성을 위해 변수를 사용할 수 있습니다. 예제 [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java) 을 참조하십시오.
 ```
 
 ### CommerceOrderStatus 인터페이스 검토

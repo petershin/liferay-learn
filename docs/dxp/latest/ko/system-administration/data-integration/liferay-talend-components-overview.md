@@ -8,15 +8,15 @@ Liferay의 Talend 구성 요소는 즉시 사용 가능한 Headless API와 REST 
 
 ## Liferay Talend 구성 요소
 
-**Liferay 연결 구성 요소** ([`tLiferayConnection`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferayconnection/TLiferayConnectionDefinition.java)): 다른 구성 요소에서 사용하는 Liferay DXP/Portal 인스턴스와의 연결을 설정합니다. Liferay 호스트 URL 값은 루트 도메인으로 설정되어야 합니다(예: `http://localhost:8080`, `https://yourserver.com`).
+**Liferay 연결 구성 요소** ( [`tLiferayConnection`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferayconnection/TLiferayConnectionDefinition.java) ): 다른 구성 요소에서 사용하는 Liferay DXP/Portal 인스턴스와의 연결을 설정합니다. Liferay 호스트 URL 값은 루트 도메인으로 설정되어야 합니다(예: `http://localhost:8080`, `https://yourserver.com`).
 
-**Liferay 입력 구성 요소** ([`tLiferayInput`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferayinput/TLiferayInputDefinition.java)): 구성된 헤드리스 API 끝점에 GET 요청을 제출합니다. 그런 다음 데이터를 검색하고 OpenAPI 사양에 설명된 스키마로 변환한 다음 정의된 Talend 데이터 흐름으로 전달합니다.
+**Liferay 입력 구성 요소** ( [`tLiferayInput`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferayinput/TLiferayInputDefinition.java) ): 구성된 헤드리스 API 끝점에 GET 요청을 제출합니다. 그런 다음 데이터를 검색하고 OpenAPI 사양에 설명된 스키마로 변환한 다음 정의된 Talend 데이터 흐름으로 전달합니다.
 
-**Liferay 출력 구성 요소** ([`tLiferayOutput`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferayoutput/TLiferayOutputDefinition.java)): 정의된 Talend 입력에서 데이터를 수신하여 OpenAPI 사양에 설명된 스키마로 변환하고 POST/PUT 요청을 구성된 헤드리스 API 엔드포인트에 제출합니다.
+**Liferay 출력 구성 요소** ( [`tLiferayOutput`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferayoutput/TLiferayOutputDefinition.java) ): 정의된 Talend 입력에서 데이터를 수신하여 OpenAPI 사양에 설명된 스키마로 변환하고 POST/PUT 요청을 구성된 헤드리스 API 엔드포인트에 제출합니다.
 
-**Liferay 배치 파일** ([`tLiferayBatchFile`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferaybatchfile/TLiferayBatchFileDefinition.java)): 데이터를 수신하고 OpenAPI 사양에 설명된 스키마에 따라 형식을 지정합니다. 그런 다음 이 데이터를 JSON 파일로 집계합니다.
+**Liferay 배치 파일** ( [`tLiferayBatchFile`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferaybatchfile/TLiferayBatchFileDefinition.java) ): 데이터를 수신하고 OpenAPI 사양에 설명된 스키마에 따라 형식을 지정합니다. 그런 다음 이 데이터를 JSON 파일로 집계합니다.
 
-**Liferay 배치 출력 파일** ([`tLiferayBatchOutput`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferaybatchoutput/TLiferayBatchOutputDefinition.java)): JSON 파일을 정의된 헤드리스 배치 엔진 엔드포인트에 제출합니다. `tLiferayBatchFile` 구성 요소에서 이 파일을 수신할 수 있지만 다른 구성 요소에서 배치 파일을 수신하고 제출할 수도 있습니다.
+**Liferay 배치 출력 파일** ( [`tLiferayBatchOutput`](https://github.com/liferay/liferay-portal/blob/master/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend/tliferaybatchoutput/TLiferayBatchOutputDefinition.java) ): JSON 파일을 정의된 헤드리스 배치 엔진 엔드포인트에 제출합니다. `tLiferayBatchFile` 구성 요소에서 이 파일을 수신할 수 있지만 다른 구성 요소에서 배치 파일을 수신하고 제출할 수도 있습니다.
 
 이러한 구성 요소를 사용하여 Talend Open Studio에서 복잡한 데이터 흐름 관리 프로세스를 만들고 실행할 수 있습니다. 자세한 설치 지침은 [Liferay Talend 구성 요소 설치](./installing-liferay-talend-components.md) 을 참조하십시오.
 

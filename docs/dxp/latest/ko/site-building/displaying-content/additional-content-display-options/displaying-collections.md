@@ -2,9 +2,9 @@
 
 {bdg-secondary}`사용 가능한 Liferay Portal 7.4 GA6+, DXP 7.3 GA1+`
 
-컬렉션 페이지 또는 컬렉션 표시 조각을 추가하여 컬렉션을 표시할 수 있습니다. 이러한 표시 옵션에 대한 자세한 내용은 [컬렉션 및 컬렉션 페이지 정보](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections)을 참조하십시오.
+컬렉션 페이지 또는 컬렉션 표시 조각을 추가하여 컬렉션을 표시할 수 있습니다. 이러한 표시 옵션에 대한 자세한 내용은 [컬렉션 및 컬렉션 페이지 정보](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections) 을 참조하십시오.
 
-기본적으로 모든 사용자는 컬렉션의 콘텐츠를 볼 수 있습니다. 그러나 세그먼트를 사용하여 이러한 항목의 *개인화 변형* 을 생성할 수 있습니다. 자세한 내용은 [세그먼트를 사용하여 컬렉션 사용자 지정](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#customizing-collections)을 참조하십시오.
+기본적으로 모든 사용자는 컬렉션의 콘텐츠를 볼 수 있습니다. 그러나 세그먼트를 사용하여 이러한 항목의 *개인화 변형* 을 생성할 수 있습니다. 자세한 내용은 [세그먼트를 사용하여 컬렉션 사용자 지정](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#customizing-collections) 을 참조하십시오.
 
 ```{note}
 컬렉션을 표시하기 전에 컬렉션을 만들어야 합니다. 자세한 내용은 [컬렉션 만들기](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)를 참조하세요.

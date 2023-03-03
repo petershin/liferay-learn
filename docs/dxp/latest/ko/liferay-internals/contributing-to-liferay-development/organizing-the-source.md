@@ -22,7 +22,7 @@ com/liferay/blogs/web/internal/portlet/BlogsPortlet.java`
 
 *BlogsPortlet* 은 Liferay MVC 패턴을 따르며 Blogs Widget의 기본 진입점입니다. 한 가지 유의할 점은 BlogsPortlet 클래스가 뷰 템플릿 초기화 매개변수를 나열하지 않는다는 것입니다. 다음에 더 자세히 설명합니다.
 
-자세한 내용은 [Liferay MVC 문서](https://help.liferay.com/hc/en-us/articles/360029028191-Liferay-MVC-Portlet)을 참조하십시오.
+자세한 내용은 [Liferay MVC 문서](https://help.liferay.com/hc/ko/articles/360029028191-Liferay-MVC-Portlet) 을 참조하십시오.
 
 ## 블로그ViewMVCRenderCommand
 

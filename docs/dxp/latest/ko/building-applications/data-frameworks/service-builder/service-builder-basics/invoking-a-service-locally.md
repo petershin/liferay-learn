@@ -106,7 +106,7 @@ The `t2p5-web` module's portlet application depends on the `T2P5EntryLocalServic
 `_t2p5EntryLocalService` 필드의 `@Reference` 주석은 런타임 프레임워크에 `T2P5EntryLocalService` 구성 요소 인스턴스를 필드에 삽입하라는 신호를 보냅니다.
 
 ```{note}
-`@Reference` 주석을 사용하고 다른 방식으로 서비스에 액세스하는 방법에 대한 자세한 내용은 [Core Frameworks](../../../core-frameworks.md)의 *종속성 주입*을 참조하세요.
+`@Reference` 주석을 사용하고 다른 방식으로 서비스에 액세스하는 방법에 대한 자세한 내용은 [핵심 프레임워크](../../../core-frameworks.md) 의 *종속성 주입*을 참조하세요.
 ```
 
 `addT2P5Entry` 메소드는 `T2P5EntryLocalService`의 `addT2P5Entry` 메소드를 호출하고 `ActionRequest`에서 가져온 설명 및 이름 매개변수를 전달합니다.
@@ -149,7 +149,7 @@ JSP는 다음 태그 라이브러리의 태그를 사용합니다.
 
 ## 다음
 
-이제 Service Builder 기본 사항을 알았으므로 [Defining Entities](../defining-entities.md)를 탐색하여 엔터티 간의 관계를 생성하고, 엔터티를 지역화하고, 쿼리를 지원하는 등의 작업을 수행할 수 있습니다. 또는 [Service Builder를 사용한 비즈니스 로직](../business-logic-with-service-builder.md)에 대해 자세히 알아볼 수 있습니다.
+이제 Service Builder 기본 사항을 알았으므로 [엔터티 정의](../defining-entities.md) 를 탐색하여 엔터티 간의 관계를 생성하고, 엔터티를 지역화하고, 쿼리를 지원하는 등의 작업을 수행할 수 있습니다. 또는 [Service Builder를 사용한 비즈니스 로직](../business-logic-with-service-builder.md)에 대해 자세히 알아볼 수 있습니다.
 
 ## 추가 정보
 

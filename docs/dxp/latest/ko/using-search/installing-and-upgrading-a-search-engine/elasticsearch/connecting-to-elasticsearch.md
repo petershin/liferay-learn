@@ -12,7 +12,7 @@ uuid: f1374d8a-9899-47a2-bd09-7465685f057b
 연결을 구성하기 전에 각 Liferay 서버 노드를 중지하십시오.
 ```
 
-Liferay 7.2를 사용 중인 경우 [Liferay 7.2: Elasticsearch 7 커넥터 설치](#liferay-72-installing-elasticsearch-7-connector)로 건너뜁니다.
+Liferay 7.2를 사용 중인 경우 [Liferay 7.2: Elasticsearch 7 커넥터 설치](#liferay-72-installing-elasticsearch-7-connector) 로 건너뜁니다.
 
 ## 커넥터 구성
 
@@ -63,13 +63,13 @@ docker cp ~/path/to/com.liferay.portal.search.elasticsearch7.configuration.Elast
 1. `.config` 파일을 `[Liferay Home]/osgi/configs` 폴더에 넣습니다.
 
 ```{tip}
-커넥터에는 많은 구성 설정이 포함되어 있습니다. 해당 정의는 [Elasticsearch 커넥터 설정](./elasticsearch-connector-configuration-reference.md)을 참조하십시오. 대부분의 구성은 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index.html)에서 사용 가능한 설정에 해당합니다.
+커넥터에는 많은 구성 설정이 포함되어 있습니다. 해당 정의는 [Elasticsearch 커넥터 설정](./elasticsearch-connector-configuration-reference.md)을 참조하십시오. 대부분의 구성은 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index.html) 에서 사용 가능한 설정에 해당합니다.
 ```
 
 Elasticsearch 서버를 이름으로 참조하려면 각 Elasticsearch 서버 이름을 DNS 또는 Liferay 서버의 `/etc/hosts` 파일에 있는 해당 IP 주소에 매핑하십시오.
 
 ```{tip}
-네트워크 호스트 주소 형식은 `http[s]://[호스트 이름]:[port]입니다. Liferay Docker 컨테이너를 사용하는 경우 `docker run` 명령과 함께 `--add-host [호스트 이름]:[IP 주소]` 옵션을 사용하여 호스트 이름을 각 Elasticsearch 서버 IP 주소에 매핑할 수 있습니다. 포트는 Elasticsearch 컨테이너의 docker run 명령에서 `-p 1234:5678` 옵션의 첫 번째 값(이 경우 `1234`)으로 정의됩니다. HTTPS를 활성화하지 않고 로컬 테스트 환경을 실행하는 경우 모든 주소는 `http://localhost:port`일 수 있습니다. 자세한 내용은 [Docker 설명서](https://docs.docker.com/engine/reference/run/#managing-etchosts)를 참조하세요.
+네트워크 호스트 주소 형식은 `http[s]://[호스트 이름]:[port]입니다. Liferay Docker 컨테이너를 사용하는 경우 `docker run` 명령과 함께 `--add-host [호스트 이름]:[IP 주소]` 옵션을 사용하여 호스트 이름을 각 Elasticsearch 서버 IP 주소에 매핑할 수 있습니다. 포트는 Elasticsearch 컨테이너의 docker run 명령에서 `-p 1234:5678` 옵션의 첫 번째 값(이 경우 `1234`)으로 정의됩니다. HTTPS를 활성화하지 않고 로컬 테스트 환경을 실행하는 경우 모든 주소는 `http://localhost:port`일 수 있습니다. 자세한 내용은 [Docker 설명서](https://docs.docker.com/engine/reference/run/#managing-etchosts) 를 참조하세요.
 ```
 
 ## Liferay 7.2: Elasticsearch 7 커넥터 설치
@@ -102,14 +102,14 @@ Liferay 7.2에서 번들 커넥터 애플리케이션 및 API는 Elasticsearch 6
     Liferay 서버를 시작하면(아직 아님) Liferay는 이 파일을 읽고 선언된 번들이 시작되지 않도록 차단합니다.
 
     ```{tip}
-    **Docker:** `Liferay Home` 및 기타 Liferay 설치의 중요한 폴더는 설명된 [here](../../../installation-and-upgrades/)과 같이 `/mnt/liferay`의 Docker 컨테이너에서 액세스할 수 있습니다. 설치-liferay/using-liferay-docker-images/container-lifecycle-and-api.md#api). `docker cp /path/to/local/file [container_name]:/mnt/liferay/files/osgi/configs`를 사용하여 구성 파일을 컨테이너에 배치할 수 있습니다. 나중에 `docker cp`를 사용하여 Liferay Connector를 Elasticsearch 7 LPKG 파일에 배포할 수 있습니다.
+    **Docker:** `Liferay Home` 및 기타 Liferay 설치의 중요한 폴더는 설명된 [here](../../../installation-and-upgrades/) 과 같이 `/mnt/liferay`의 Docker 컨테이너에서 액세스할 수 있습니다. 설치-liferay/using-liferay-docker-images/container-lifecycle-and-api.md#api). `docker cp /path/to/local/file [container_name]:/mnt/liferay/files/osgi/configs`를 사용하여 구성 파일을 컨테이너에 배치할 수 있습니다. 나중에 `docker cp`를 사용하여 Liferay Connector를 Elasticsearch 7 LPKG 파일에 배포할 수 있습니다.
     ```
 
 ### Elasticsearch 7 커넥터 설치
 
 1. Elasticsearch 7에 Liferay 커넥터를 다운로드합니다.
 
-   커넥터가 Elasticsearch 버전과 일치하는지 확인하십시오. 커넥터 애플리케이션이 최신 버전(예: 7.18.0)을 지원하더라도 커넥터의 클라이언트 라이브러리는 이전 버전의 Elasticsearch(예: 7.17.1)용일 수 있습니다. Liferay는 모든 마이너 Elasticsearch 버전으로 커넥터를 테스트하고 필요할 때 새 업데이트 커넥터 버전을 생성합니다. 커넥터 호환성은 항상 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 참조하십시오.
+   커넥터가 Elasticsearch 버전과 일치하는지 확인하십시오. 커넥터 애플리케이션이 최신 버전(예: 7.18.0)을 지원하더라도 커넥터의 클라이언트 라이브러리는 이전 버전의 Elasticsearch(예: 7.17.1)용일 수 있습니다. Liferay는 모든 마이너 Elasticsearch 버전으로 커넥터를 테스트하고 필요할 때 새 업데이트 커넥터 버전을 생성합니다. 커넥터 호환성은 항상 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 참조하십시오.
 
    * CE: [Elasticsearch에 대한 Liferay CE 커넥터 7](https://web.liferay.com/en/marketplace/-/mp/application/170642090)
    * DXP: [Elasticsearch에 대한 Liferay 커넥터 7](https://web.liferay.com/en/marketplace/-/mp/application/170390307)
@@ -169,7 +169,7 @@ Liferay 7.3+에서 Workflow Metrics Settings 창에서 [Workflow Metrics](../../
 1. _모두 재색인_ 클릭합니다. 시스템의 각 가상 인스턴스에 대해 이 작업을 반복합니다.
 
 ```{note}
-기본 데이터 스토리지(데이터베이스에서 지원하지 않는 데이터 저장)에 Elasticsearch 인덱스를 사용하는 경우 [스냅샷 및 복원 접근 방식](./upgrading-elasticsearch/backing-up-elasticsearch.md를 사용하여 해당 데이터를 새 Elasticsearch 클러스터로 가져올 수 있습니다. ). 7.2 및 7.3에서 결과 순위 및 동의어에 대한 Liferay의 자체 검색 튜닝 인덱스는 기본 스토리지 인덱스입니다. 7.4에서 이러한 인덱스는 데이터베이스 테이블에 의해 지원됩니다.
+기본 데이터 스토리지(데이터베이스에서 지원하지 않는 데이터 저장)에 Elasticsearch 인덱스를 사용하는 경우 [스냅샷 및 복원 접근 방식](./upgrading-elasticsearch/backing-up-elasticsearch.md를 사용하여 해당 데이터를 새 Elasticsearch 클러스터로 가져올 수 있습니다. ) . 7.2 및 7.3에서 결과 순위 및 동의어에 대한 Liferay의 자체 검색 튜닝 인덱스는 기본 스토리지 인덱스입니다. 7.4에서 이러한 인덱스는 데이터베이스 테이블에 의해 지원됩니다.
 ```
 
 Liferay 7.4 U45+/GA45+ 및 Liferay DXP 7.3 U14+에서는 향상된 로깅이 활성화되어 시스템 및 회사 색인에 대한 재색인 시작 및 완료 시점을 알 수 있습니다. 예를 들어,
@@ -191,14 +191,14 @@ Elasticsearch에 대한 번들 커넥터가 설치에 항상 최선의 선택은
 |:------------------------- |:---------------------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------- |:----------------- |
 | Liferay 7.4, 모든 종류        | Elasticsearch 7에 대한 Liferay 커넥터          | 번들                                                                                                                                              | [HTTP](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-overview.html) | &#10004;                                                                            | 사이드카/원격(프로덕션)\* |
 | CE 7.3 GA4+, DXP 7.3 GA1+ | Elasticsearch 7에 대한 Liferay(CE) 커넥터      | 번들                                                                                                                                              | [HTTP](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-overview.html) | &#10004;                                                                            | 사이드카/원격(프로덕션)\* |
-| CE 7.2, DXP 7.2           | Elasticsearch 6에 대한 Liferay 커넥터(CE)      | 번들                                                                                                                                              | [수송](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html)      | &#10004;\*\* ( [LES](https://www.liferay.com/products/dxp/enterprise-search)필요) | 임베디드 / 원격         |
-| CE 7.2, DXP 7.2           | Liferay 커넥터(CE)에서 Elasticsearch 7(v3.x)로 | 시장: [CE](https://web.liferay.com/marketplace/-/mp/application/170642090), [DXP](https://web.liferay.com/marketplace/-/mp/application/170390307) | [수송](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html)      | &#10004;                                                                            | 임베디드 / 원격         |
+| CE 7.2, DXP 7.2           | Elasticsearch 6에 대한 Liferay 커넥터(CE)      | 번들                                                                                                                                              | [수송](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html)      | &#10004;\*\* ( [LES](https://www.liferay.com/products/dxp/enterprise-search) 필요) | 임베디드 / 원격         |
+| CE 7.2, DXP 7.2           | Liferay 커넥터(CE)에서 Elasticsearch 7(v3.x)로 | 시장: [CE](https://web.liferay.com/marketplace/-/mp/application/170642090) , [DXP](https://web.liferay.com/marketplace/-/mp/application/170390307) | [수송](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html)      | &#10004;                                                                            | 임베디드 / 원격         |
 
 \* 커넥터 구성의 _Operation Mode_ (`operationMode`) 설정은 더 이상 사용되지 않으며 _Production Mode Enabled_ (`productionModeEnabled`)로 대체됩니다.
 
 \*\* [Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963) 애플리케이션을 통해.
 
-호환 가능한 Elasticsearch 버전 및 필요한 패치 수준을 포함한 자세한 호환성 정보는 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651)을 참조하십시오.
+호환 가능한 Elasticsearch 버전 및 필요한 패치 수준을 포함한 자세한 호환성 정보는 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 을 참조하십시오.
 
 ## 무엇 향후 계획
 

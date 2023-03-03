@@ -3,7 +3,7 @@
 Liferay DXP를 Analytics Cloud [에 연결](./connecting-liferay-dxp-to-analytics-cloud.md)이제 사이트와 연락처를 동기화할 차례입니다.
 
 ```{note}
-Liferay DXP를 처음 사용하는 경우 Analytics Cloud용 Liferay 인스턴스에 추적을 시작할 콘텐츠가 많지 않습니다. 데모 사이트를 바로 시작하여 Analytics Cloud를 배우고 싶다면 Liferay Commerce의 [Minium Accelerator 사이트](https://learn.liferay.com/commerce/latest/en/starting-a-store/using-the 사용을 고려해 보십시오. -minium-accelerator-to-jump-start-your-b2b-store.html) 샘플 콘텐츠를 생성합니다. 
+Liferay DXP를 처음 사용하는 경우 Analytics Cloud용 Liferay 인스턴스에 추적을 시작할 콘텐츠가 많지 않습니다. 데모 사이트를 바로 시작하여 Analytics Cloud를 배우려면 Liferay Commerce의 [Miniium Accelerator를 사용하여 B2B Store를 빠르게 시작하십시오.](https://learn.liferay.com/commerce/latest/ko/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html) 를 사용하여 일부 샘플 콘텐츠를 생성하는 것이 좋습니다.
 ```
 
 ## 사이트 동기화

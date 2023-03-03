@@ -22,7 +22,7 @@ Liferay Cloud 환경의 각 서비스에는 서비스를 구성하는 데 사용
 | `ports`          | 배열  | `[]`                          | 포트 및 프로토콜 선언                                                                                                                                 |
 | `environments`   | 객체  | `{}`                          | 환경별 구성                                                                                                                                       |
 | `배치하십시요`         | 불리언 | `여실한`                         | 지정된 환경에 대해 서비스를 배포할지 여부입니다. `환경` 속성 내에서만 이 속성을 사용하십시오. 루트 수준이 아닙니다. 샘플 `LCP.json` 파일을 참조하십시오.                                                |
-| `autoscale`      | 객체  | `{ "cpu": 80, "memory": 80 }` | Auto-Scaling에서 CPU 및 메모리의 목표 평균 사용률입니다. Auto-Scaling과 함께 작동하는 방법에 대한 자세한 내용은 [Auto-Scaling](../manage-and-optimize/auto-scaling.md)을 참조하십시오. |
+| `autoscale`      | 객체  | `{ "cpu": 80, "memory": 80 }` | Auto-Scaling에서 CPU 및 메모리의 목표 평균 사용률입니다. Auto-Scaling과 함께 작동하는 방법에 대한 자세한 내용은 [자동 크기 조정](../manage-and-optimize/auto-scaling.md) 을 참조하십시오. |
 
 ## 용법
 

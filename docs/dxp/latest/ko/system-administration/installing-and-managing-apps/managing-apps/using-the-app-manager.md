@@ -41,14 +41,14 @@
 
 1. *설치*을 클릭합니다.
 
-앱은 [자동 배포](../installing-apps.md#installing-apps-via-the-file-system)을 통해 설치됩니다. 설치가 완료되면 대화 상자를 닫으면 시작할 준비가 된 것입니다!
+앱은 [자동 배포](../installing-apps.md#installing-apps-via-the-file-system) 을 통해 설치됩니다. 설치가 완료되면 대화 상자를 닫으면 시작할 준비가 된 것입니다!
 
 ## 앱 제거
 
 앱을 제거하면 비활성화되고(활성 상태인 경우) 활성화할 수 없게 됩니다.
 
 ```{note}
-App Manager의 제거, 재설치 및 재활성화 기능에는 알려진 문제가 [LPS-102506](https://issues.liferay.com/browse/LPS-102506). 이 문제를 해결하려면 [블랙리스트 사용](./blacklisting-apps.md)을 사용하여 설치된 앱을 비활성화하세요.
+App Manager의 제거, 재설치 및 재활성화 기능에는 알려진 문제가 [LPS-102506](https://issues.liferay.com/browse/LPS-102506) . 이 문제를 해결하려면 [블랙리스트 사용](./blacklisting-apps.md)을 사용하여 설치된 앱을 비활성화하세요.
 ```
 
 축하합니다! 앱 관리자를 사용하여 애플리케이션 배포를 검사하고 관리할 수 있습니다.

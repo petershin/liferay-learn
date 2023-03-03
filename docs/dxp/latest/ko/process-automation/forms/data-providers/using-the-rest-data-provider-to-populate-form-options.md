@@ -62,7 +62,7 @@ _Countries of the World_ 데이터 공급자를 추가하려면:
 1. 완료되면 _저장_ 을 클릭합니다.
 
 ```{note}
-`nameCurrentValue` 앞의 `$..`는 JSON 데이터 구조를 탐색하고 출력 경로를 지정하는 JsonPath 구문입니다. [JsonPath](https://github.com/json-path/JsonPath) 및 [here](http://goessner.net/articles/JsonPath/)에 대해 자세히 알아보세요.
+`nameCurrentValue` 앞의 `$..`는 JSON 데이터 구조를 탐색하고 출력 경로를 지정하는 JsonPath 구문입니다. [JsonPath](https://github.com/json-path/JsonPath) 및 [here](http://goessner.net/articles/JsonPath/) 에 대해 자세히 알아보세요.
 ```
 
 ## REST 데이터 공급자에 대한 필터로 입력 사용
@@ -81,7 +81,7 @@ _Countries of the World_ 데이터 공급자를 추가하려면:
    * **라벨 출력**: 국가명
    * **출력 경로**: `$..name.common`
    * **출력 유형**: 목록
-이러한 값에 대한 자세한 내용은 [Data Providers Overview](./data-providers-overview.md)을 참조하십시오.
+이러한 값에 대한 자세한 내용은 [데이터 공급자 개요](./data-providers-overview.md) 을 참조하십시오.
 
 이 예제에서는 입력 매개변수를 사용하므로 API 호출이 제대로 해결되도록 데이터 공급자에 입력을 제공해야 합니다. 텍스트 필드의 값을 데이터 공급자에 입력으로 보내는 자동 채우기 규칙을 설정할 수 있습니다. 예제는 [자동 완성 규칙](../form-rules/using-the-autofill-rule.md) 설명서를 참조하세요. 
 

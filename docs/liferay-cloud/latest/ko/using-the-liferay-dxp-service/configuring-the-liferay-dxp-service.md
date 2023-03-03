@@ -4,7 +4,7 @@ uuid: 002ecd02-b586-483f-bd07-a378f27d14fd
 
 # Liferay DXP 서비스 구성
 
-Liferay DXP를 구성하는 데 사용할 수 있는 몇 가지 방법이 있습니다: [DXP 시스템 설정](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html) 및 [구성](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) 및 [속성 파일](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)사용. Liferay Cloud의 Liferay DXP 인스턴스에 대한 DXP 속성 및 구성 파일은 리포지토리의 Liferay DXP 서비스 디렉터리에 있는 `configs/` 폴더 중 하나에 배치되어 배포됩니다.
+Liferay DXP를 구성하는 데 사용할 수 있는 몇 가지 방법이 있습니다: [시스템 설정](https://learn.liferay.com/dxp/latest/ko/system-administration/configuring-liferay/system-settings.html) 및 [구성 파일 사용](https://learn.liferay.com/dxp/latest/ko/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) 및 [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 사용. Liferay Cloud의 Liferay DXP 인스턴스에 대한 DXP 속성 및 구성 파일은 리포지토리의 Liferay DXP 서비스 디렉터리에 있는 `configs/` 폴더 중 하나에 배치되어 배포됩니다.
 
 ```
 liferay
@@ -25,7 +25,7 @@ liferay
 
 ## 문맥 재산
 
-[Portal 속성](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) `portal-ext.properties` 파일에 저장된 속성입니다. Liferay DXP 환경을 구성하는 데 사용됩니다.
+[문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) `portal-ext.properties` 파일에 저장된 속성입니다. Liferay DXP 환경을 구성하는 데 사용됩니다.
 
 온프레미스 Liferay DXP 인스턴스의 경우 이 파일은 `$LIFERAY_HOME`내부에 속합니다. Liferay Cloud를 사용할 때 포털 속성 파일을 적절한 `configs/{ENV}/` 폴더에 배치하여 배포 시 Liferay DXP 인스턴스에 대해 `$LIFERAY_HOME` 로 복사할 수 있습니다.
 
@@ -69,10 +69,10 @@ liferay
 └── LCP.json
 ```
 
-`portal-ext.properties` 및 `portal-all.properties` 파일은 모든 환경에서 공유됩니다. 거기에 공유 속성을 추가하고 각각의 `portal-env.properties` 파일에 환경별 속성을 추가할 수 있습니다. 자세한 내용은 [포털 속성 우선 순위](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html#portal-property-priority)참조하십시오.
+`portal-ext.properties` 및 `portal-all.properties` 파일은 모든 환경에서 공유됩니다. 거기에 공유 속성을 추가하고 각각의 `portal-env.properties` 파일에 환경별 속성을 추가할 수 있습니다. 자세한 내용은 [포털 속성 우선 순위](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html#portal-property-priority) 참조하십시오.
 
 ```{note}
-포털 특성은 환경 변수로 정의될 수도 있습니다. 자세한 내용은 [환경 변수 참조](./liferay-service-environment-variables.md#environment-variables-reference)를 참조하세요.
+포털 특성은 환경 변수로 정의될 수도 있습니다. 자세한 내용은 [환경 변수 참조](./liferay-service-environment-variables.md#environment-variables-reference) 를 참조하세요.
 ```
 
 ## OSGi 구성
@@ -99,7 +99,7 @@ Liferay Cloud의 Liferay 서비스가 클라우드 플랫폼의 폐쇄형 네트
 
 ## 환경 변수
 
-Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정 또는 데이터베이스 연결 설정과 같이 온프레미스 인스턴스와 다르게 수행되는 일부 구성 대신 환경 변수 [](../reference/defining-environment-variables.md) (또는 비밀 [개](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md))를 사용합니다. 환경 변수를 사용하여 [포털 속성을 재정의하거나 대체할 수도 있습니다](./liferay-service-environment-variables.md#overriding-portal-properties).
+Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정 또는 데이터베이스 연결 설정과 같이 온프레미스 인스턴스와 다르게 수행되는 일부 구성 대신 환경 변수 [](../reference/defining-environment-variables.md) (또는 비밀 [개](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md))를 사용합니다. 환경 변수를 사용하여 [포털 속성을 재정의하거나 대체할 수도 있습니다](./liferay-service-environment-variables.md#overriding-portal-properties) .
 
 자세한 내용은 [Liferay 서비스 환경 변수](./liferay-service-environment-variables.md) 참조하십시오.
 
@@ -107,5 +107,5 @@ Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정 또는 데이터베�
 
 * [Liferay DXP 서비스 사용](../using-the-liferay-dxp-service.md)
 * [Liferay Cloud에서 클러스터링 활성화](./setting-up-clustering-in-liferay-cloud.md)
-* [문맥 재산](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)
+* [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html)
 * [Liferay 서비스 환경 변수](./liferay-service-environment-variables.md)

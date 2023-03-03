@@ -1,6 +1,6 @@
 # 게시판 조정
 
-_Message Boards_ 에는 효과적인 포럼 중재를 가능하게 하는 기능이 포함되어 있습니다. 여기에는 스레드 잠금, 스레드 이동 및 병합, 사용자 금지 및 스레드 플래그 지정이 포함됩니다. 적절하게 지정된 권한이 있는 사용자는 이러한 도구를 사용할 수 있습니다. _Message Boards_ 권한을 역할에 할당하는 방법에 대한 자세한 내용은 [Message Boards Permissions Reference](./message-boards-permissions-reference.md) 을 참조하십시오. 일반적인 역할 및 권한에 대해 자세히 알아보려면 [역할 및 권한](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions)을 참조하십시오.
+_Message Boards_ 에는 효과적인 포럼 중재를 가능하게 하는 기능이 포함되어 있습니다. 여기에는 스레드 잠금, 스레드 이동 및 병합, 사용자 금지 및 스레드 플래그 지정이 포함됩니다. 적절하게 지정된 권한이 있는 사용자는 이러한 도구를 사용할 수 있습니다. _Message Boards_ 권한을 역할에 할당하는 방법에 대한 자세한 내용은 [게시판 권한 참조](./message-boards-permissions-reference.md) 을 참조하십시오. 일반적인 역할 및 권한에 대해 자세히 알아보려면 [역할 및 권한](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) 을 참조하십시오.
 
 ## 잠금 스레드
 

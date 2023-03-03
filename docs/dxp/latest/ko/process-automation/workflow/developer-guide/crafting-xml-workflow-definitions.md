@@ -27,7 +27,7 @@ DXP를 사용하는 구독자는 [그래픽 디자이너](../user-guide/workflow
 
 ## 개요
 
-워크플로우 정의의 구조는 XSD 파일( [`liferay-workflow-definition-7_4_0.xsd`](https://www.liferay.com/dtd/liferay-workflow-definition_7_4_0.xsd))에 정의됩니다.
+워크플로우 정의의 구조는 XSD 파일( [`liferay-workflow-definition-7_4_0.xsd`](https://www.liferay.com/dtd/liferay-workflow-definition_7_4_0.xsd) )에 정의됩니다.
 
 워크플로 정의 파일의 맨 위에서 스키마를 선언합니다.
 
@@ -103,7 +103,7 @@ _End_ 노드는 다음과 같습니다.
 
 태스크 노드는 워크플로우 프로세스에서 사용자가 수행해야 하는 작업을 정의합니다. 다른 워크플로 노드와 달리 작업 노드에는 할당이 있습니다. 사용자 또는 [역할](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)에 작업을 할당할 수 있습니다.
 
-작업 노드에는 작업 타이머, 작업(알림 및 스크립트 포함 가능) 및 전환이 포함될 수 있습니다. 자세한 내용은 [Workflow Task Node Reference](./workflow-task-node-reference.md) 을 참조하십시오. 단일 승인자 작업 흐름에는 _검토_ 및 _업데이트_의 두 가지 작업이 포함됩니다.
+작업 노드에는 작업 타이머, 작업(알림 및 스크립트 포함 가능) 및 전환이 포함될 수 있습니다. 자세한 내용은 [워크플로 작업 노드 참조](./workflow-task-node-reference.md) 을 참조하십시오. 단일 승인자 작업 흐름에는 _검토_ 및 _업데이트_의 두 가지 작업이 포함됩니다.
 
 ### 검토 작업 노드 생성
 

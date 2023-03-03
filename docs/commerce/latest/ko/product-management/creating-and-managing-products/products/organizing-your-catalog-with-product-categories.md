@@ -4,7 +4,7 @@
 
 범주는 범주의 분류 체계를 형성하기 위해 계층적으로 구성될 수도 있습니다. 제품을 범주로 구성하려면 먼저 범주를 생성한 다음 범주에 제품을 할당해야 합니다. 또한 모든 Liferay Commerce 제품은 글로벌 수준에서 처리되기 때문에 모든 어휘 및 범주는 글로벌 범위 수준에 있어야 합니다.
 
-전역 범위 및 사이트 관리에 대한 자세한 내용은 [데이터 범위](https://help.liferay.com/hc/articles/360018168991-Data-Scopes) 및 [구성 범위](https://help.liferay.com/hc/articles/360017895452-Introduction-to-Setting-Up#configuration-scope)에 대한 이 문서를 참조하세요.
+전역 범위 및 사이트 관리에 대한 자세한 내용은 [데이터 범위](https://help.liferay.com/hc/articles/360018168991-Data-Scopes) 및 [구성 범위](https://help.liferay.com/hc/articles/360017895452-Introduction-to-Setting-Up#configuration-scope) 에 대한 이 문서를 참조하세요.
 
 ## 전제 조건
 

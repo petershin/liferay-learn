@@ -48,7 +48,7 @@ uuid: cd5b1418-5edb-4225-93dc-7a6b3cca6341
    * 삭제 (![삭제](../../../images/icon-delete.png)) 경험.
 
    ```{important}
-   드롭다운 메뉴의 경험 순서에 따라 우선 순위가 결정됩니다. 자세한 내용은 [경험 작동 방식 이해](./content-page-personalization.md#understanding-how-experiences-work)를 참조하세요.
+   드롭다운 메뉴의 경험 순서에 따라 우선 순위가 결정됩니다. 자세한 내용은 [경험 작동 방식 이해](./content-page-personalization.md#understanding-how-experiences-work) 를 참조하세요.
    ```
 
 ## 관련 정보

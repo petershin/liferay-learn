@@ -4,7 +4,7 @@
 
 버전이 동일하다면 구성 파일을 사용하여 사전 프로덕션 시스템에서 프로덕션 시스템으로 또는 다른 Liferay DXP 시스템 간에 구성을 전송할 수 있습니다.
 
-구성 파일은 [Apache Felix 구성 관리 프레임워크](http://felix.apache.org/documentation/subprojects/apache-felix-config-admin.html)에서 정의한 `.config` 속성 값 형식을 사용합니다.
+구성 파일은 [Apache Felix 구성 관리 프레임워크](http://felix.apache.org/documentation/subprojects/apache-felix-config-admin.html) 에서 정의한 `.config` 속성 값 형식을 사용합니다.
 
 ```{note}
 `.cfg` 파일 형식은 OSGi 환경에서 일반적이며 지원되는 형식이지만 속성 값의 유형을 지정하고 다중 값 속성을 허용할 수 있기 때문에 `.config` 파일이 선호됩니다. 이러한 이유로 `.config` 파일이 모범 사례로 사용, 권장 및 문서화됩니다.

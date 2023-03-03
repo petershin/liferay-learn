@@ -22,7 +22,7 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 
 ## 콘텐츠 감사 도구
 
-콘텐츠 감사 도구는 [콘텐츠 목록](#contents-list) 섹션의 자산을 차트로 표시합니다. 이 차트는 선택한 [어휘 및 범주](#customizing-vocabularies-and-categories-for-the-content-audit-tool) 에 대한 총 자산 수를 나타내며 모든 사이트 및 자산 라이브러리의 항목을 포함할 수 있습니다. 그러나 차트에는 현재 사용자가 액세스할 수 있는 데이터만 표시됩니다. [콘텐츠 목록 필터](#filtering-and-sorting-content-in-the-contents-list)을 사용하여 차트 결과를 제한할 수도 있습니다.
+콘텐츠 감사 도구는 [콘텐츠 목록](#contents-list) 섹션의 자산을 차트로 표시합니다. 이 차트는 선택한 [어휘 및 범주](#customizing-vocabularies-and-categories-for-the-content-audit-tool) 에 대한 총 자산 수를 나타내며 모든 사이트 및 자산 라이브러리의 항목을 포함할 수 있습니다. 그러나 차트에는 현재 사용자가 액세스할 수 있는 데이터만 표시됩니다. [콘텐츠 목록 필터](#filtering-and-sorting-content-in-the-contents-list) 을 사용하여 차트 결과를 제한할 수도 있습니다.
 
 ![콘텐츠 감사 도구는 콘텐츠 목록 섹션의 자산을 차트로 표시합니다.](./content-dashboard-interface/images/02.png)
 
@@ -87,11 +87,11 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 | 제목              | 콘텐츠의 제목입니다.                                                                                                     |
 | 작성자             | 콘텐츠 작성자입니다.                                                                                                     |
 | 유형              | 콘텐츠 유형: 웹 콘텐츠 기사, 문서 {bdg-secondary}`7.4+`또는 블로그 항목 {bdg-secondary}`7.4 U23+/GA23+`                             |
-| 특수형             | 콘텐츠 [하위 유형](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories). |
+| 특수형             | 콘텐츠 [하위 유형](../tags-and-categories/defining-categories-and-vocabularies-for-content.md#creating-subcategories) . |
 | 사이트 혹은 애셋 라이브러리 | Liferay 인스턴스에서 콘텐츠 항목의 위치입니다.                                                                                   |
 | 상태              | 각 콘텐츠 항목에 대한 워크플로 상태입니다.                                                                                        |
-| 어휘(x축)          | 콘텐츠 감사 도구의 [x축 어휘](#content-audit-tool)에서 콘텐츠 항목에 적용되는 카테고리입니다.                                                 |
-| 어휘(y축)          | 콘텐츠 감사 도구의 [y축 어휘](#content-audit-tool)에서 콘텐츠 항목에 적용된 카테고리입니다.                                                  |
+| 어휘(x축)          | 콘텐츠 감사 도구의 [x축 어휘](#content-audit-tool) 에서 콘텐츠 항목에 적용되는 카테고리입니다.                                                 |
+| 어휘(y축)          | 콘텐츠 감사 도구의 [y축 어휘](#content-audit-tool) 에서 콘텐츠 항목에 적용된 카테고리입니다.                                                  |
 | 변경된 날짜          | 콘텐츠의 마지막 수정 날짜                                                                                                  |
 
 콘텐츠 목록은 *페이지* 아이콘( ![Page Icon](../../images/icon-page.png) )을 사용하여 [디스플레이 페이지 템플릿](../../site-building/displaying-content/using-display-page-templates.md)가 있는 자산을 식별합니다.
@@ -110,7 +110,7 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 
 ### 콘텐츠 목록에서 콘텐츠 필터링 및 정렬
 
-*필터 및 주문* 드롭다운 메뉴에서 [미리 정의된 필터](#filter-options-reference)를 선택합니다. 제목이나 수정 날짜별로 콘텐츠를 정렬할 수도 있습니다.
+*필터 및 주문* 드롭다운 메뉴에서 [미리 정의된 필터](#filter-options-reference) 를 선택합니다. 제목이나 수정 날짜별로 콘텐츠를 정렬할 수도 있습니다.
 
 검색 표시줄을 사용하여 키워드로 콘텐츠를 필터링하거나 [콘텐츠 감사](#content-audit-tool) 차트의 표시줄을 클릭하여 선택한 범주별로 콘텐츠를 필터링할 수 있습니다.
 

@@ -8,7 +8,7 @@
 * [`docker cp`을 사용하여 아티팩트 설치](#installing-artifacts-using-docker-cp)
 
 ```{note}
-[Docker 볼륨](https://docs.docker.com/storage/volumes/)을 사용하여 아티팩트를 컨테이너에 설치할 수도 있습니다.
+[Docker 볼륨](https://docs.docker.com/storage/volumes/) 을 사용하여 아티팩트를 컨테이너에 설치할 수도 있습니다.
 ```
 
 ## 바인드 마운트를 사용하여 아티팩트 설치

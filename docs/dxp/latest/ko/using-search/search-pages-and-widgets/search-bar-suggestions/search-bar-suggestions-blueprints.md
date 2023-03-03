@@ -32,6 +32,6 @@ Blueprint Suggestions Contributor를 선택하면 검색 표시줄 위젯 구성
 
 **자산 URL 포함:** 응답과 함께 결과에 대한 링크를 반환하려면 이 옵션을 활성화합니다. 검색 사용자가 액세스할 수 있는 페이지에 자산이 나타나는 경우 결과를 클릭하면 사용자가 해당 디스플레이 페이지로 이동합니다. 그렇지 않으면 자산이 검색 페이지의 컨텍스트 아래 자산 게시자에 표시됩니다. 비활성화된 경우 제안 목록에서 결과를 클릭해도 아무 작업도 수행되지 않습니다.
 
-**자산 요약 포함:** 응답과 함께 결과 요약 [을 반환하려면 이 옵션을 활성화](../search-results/search-results-behavior.md#result-summaries). 검색 프레임워크에 의해 작성된 요약을 제외하고 보다 간결한 결과 목록을 반환하려면 이 기능을 비활성화하십시오.
+**자산 요약 포함:** 응답과 함께 결과 요약 [을 반환하려면 이 옵션을 활성화](../search-results/search-results-behavior.md#result-summaries) . 검색 프레임워크에 의해 작성된 요약을 제외하고 보다 간결한 결과 목록을 반환하려면 이 기능을 비활성화하십시오.
 
 **필드:** 응답과 함께 반환할 추가 인덱싱된 필드를 정의합니다. 특정 인덱스 필드와 해당 값을 사용해야 하는 사용자 정의 [위젯 템플릿](../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md#creating-a-widget-template) 을 만들 때 사용됩니다.

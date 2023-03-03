@@ -2,9 +2,9 @@
 
 설정 프로세스를 시작하려면 몇 가지 요구 사항이 있습니다.
 
-1. [liferay.com](https://www.liferay.com) 계정이 필요합니다. Liferay 계정이 없는 경우 [계정 생성](https://login.liferay.com/signin/register)을 할 수 있습니다.
+1. [liferay.com](https://www.liferay.com) 계정이 필요합니다. Liferay 계정이 없는 경우 [계정 생성](https://login.liferay.com/signin/register) 을 할 수 있습니다.
 
-1. [analytics.liferay.com](https://analytics.liferay.com/) 을 처음 방문하는 경우 계정에 대한 다단계 인증을 설정해야 합니다. 도움이 필요하면 [Multi-Factor Authentication](../workspace-settings/multi-factor-authentication.md)을 참조하십시오.
+1. [analytics.liferay.com](https://analytics.liferay.com/) 을 처음 방문하는 경우 계정에 대한 다단계 인증을 설정해야 합니다. 도움이 필요하면 [다단계 인증](../workspace-settings/multi-factor-authentication.md) 을 참조하십시오.
 
 1. Liferay DXP 설치는 다음 최소 버전 중 하나를 충족해야 합니다.
 

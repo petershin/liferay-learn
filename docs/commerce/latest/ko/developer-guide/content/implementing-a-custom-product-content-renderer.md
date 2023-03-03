@@ -21,7 +21,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Acme Commerce 제품 콘텐츠 렌더러](./liferay-q4f7.zip)를 다운로드하고 압축을 풉니다.
+1. [Acme Commerce 제품 콘텐츠 렌더러](./liferay-q4f7.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/content/liferay-q4f7.zip -O
@@ -80,7 +80,7 @@
 public class Q4F7CPContentRenderer implements CPContentRenderer {
 ```
 
-> Liferay Commerce가 제품 콘텐츠 렌더러 레지스트리 [에서 새 렌더러를 다른 렌더러와 구별할 수 있도록 제품 콘텐츠 렌더러에 고유한 키를 제공하는 것이 중요](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-content-web/src/main/java/com/liferay/commerce/product/content/web/internal/render/CPContentRendererRegistryImpl.java). 이미 사용 중인 키를 재사용하면 기존의 연결된 렌더러가 재정의됩니다.
+> Liferay Commerce가 제품 콘텐츠 렌더러 레지스트리 [에서 새 렌더러를 다른 렌더러와 구별할 수 있도록 제품 콘텐츠 렌더러에 고유한 키를 제공하는 것이 중요](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-content-web/src/main/java/com/liferay/commerce/product/content/web/internal/render/CPContentRendererRegistryImpl.java) . 이미 사용 중인 키를 재사용하면 기존의 연결된 렌더러가 재정의됩니다.
 > 
 > `commerce.product.content.renderer.order` 속성은 Commerce가 UI에 렌더러를 나열하는 데 사용하는 정수 값입니다. 렌더러는 오름차순으로 나열됩니다. 예를 들어 [SimpleCPContentRenderer](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPContentRenderer.java) 은 이 속성을 최소 정수 값으로 설정하므로 단순 유형 제품에 대한 다른 렌더러가 목록에서 그 뒤에 나타납니다.
 > 
@@ -132,7 +132,7 @@ public void render(
 private ServletContext _servletContext;
 ```
 
-> `osgi.web.symbolicname` 에 설정한 값은 [bnd.bnd 파일](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/content/implementing-a-custom-product-content-renderer/resources/liferay-q4f7.zip/q4f7-web/bnd.bnd)의 `Bundle-SymbolicName` 값과 일치합니다. JSP를 찾으려면 이 값이 `ServletContext` 과 일치해야 합니다.
+> `osgi.web.symbolicname` 에 설정한 값은 [bnd.bnd 파일](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/content/implementing-a-custom-product-content-renderer/resources/liferay-q4f7.zip/q4f7-web/bnd.bnd) 의 `Bundle-SymbolicName` 값과 일치합니다. JSP를 찾으려면 이 값이 `ServletContext` 과 일치해야 합니다.
 > 
 > 또한 `ServletContext` 이 올바르게 생성되도록 bnd.bnd 파일에서 `Web-ContextPath` 에 대한 고유한 값을 선언해야 합니다. 이 예에서 `Web-ContextPath` 은 `/q4f7-web`으로 설정됩니다. 이 값에 대한 참조는 [bnd.bnd](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/content/implementing-a-custom-product-content-renderer/resources/liferay-q4f7.zip/q4f7-web/bnd.bnd) 을 참조하십시오.
 
@@ -152,7 +152,7 @@ public void render(
 }
 ```
 
-> `JSPRenderer` 을 사용하여 제품 콘텐츠 렌더러용 JSP를 렌더링합니다(이 경우 [view.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/content/implementing-a-custom-product-content-renderer/resources/liferay-q4f7.zip/q4f7-web/src/main/resources/META-INF/resources/view.jsp)). `ServletContext` 을 매개변수로 제공하여 생성한 JSP를 찾습니다.
+> `JSPRenderer` 을 사용하여 제품 콘텐츠 렌더러용 JSP를 렌더링합니다(이 경우 [view.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/content/implementing-a-custom-product-content-renderer/resources/liferay-q4f7.zip/q4f7-web/src/main/resources/META-INF/resources/view.jsp) ). `ServletContext` 을 매개변수로 제공하여 생성한 JSP를 찾습니다.
 
 #### 사용자 정의 보기용 JSP 추가
 
@@ -189,7 +189,7 @@ CPSku cpSku = cpContentHelper.getDefaultCPSku(cpContentHelper.getCPCatalogEntry(
 q4f7-commerce-product-content-renderer=Q4F7 Commerce Product Content Renderer
 ```
 
-> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
+> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
 
 ## 결론
 
@@ -197,4 +197,4 @@ q4f7-commerce-product-content-renderer=Q4F7 Commerce Product Content Renderer
 
 ## 추가 정보
 
-* [애플리케이션 현지화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+* [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

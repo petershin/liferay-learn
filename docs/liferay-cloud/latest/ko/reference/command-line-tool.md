@@ -31,14 +31,14 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 
 ### 윈도우 시스템
 
-최신 버전의 [Windows 설치 프로그램](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe)을 다운로드하고 마법사의 단계를 따릅니다.
+최신 버전의 [Windows 설치 프로그램](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe) 을 다운로드하고 마법사의 단계를 따릅니다.
 
 ## CLI 도구를 버전 2에서 3으로 업그레이드
 
 버전 3을 설치하고 사용하려면 먼저 현재 버전을 제거해야 합니다. 이렇게 하면 동일한 이진 이름과의 충돌을 방지할 수 있습니다.
 
 ```{important}
-다음 지침은 CLI 버전 2 제거에만 적용되며 [CLI 도구 버전 3 제거](#uninstalling-version-3-of-the-cli-tool)의 지침과 **아닙니다**.
+다음 지침은 CLI 버전 2 제거에만 적용되며 [CLI 도구 버전 3 제거](#uninstalling-version-3-of-the-cli-tool) 의 지침과 **아닙니다**.
 ```
 
 ### MacOS 또는 Linux에서 버전 2 제거

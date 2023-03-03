@@ -15,7 +15,7 @@ Liferay Commerce에는 사전 구성되어 사용할 준비가 된 여러 통화
 | 최소 소수 자릿수 | 허용되는 소수점 오른쪽의 최소 자릿수 |
 | 반올림 모드 | 드롭다운 메뉴에서 [반올림 모드](https://en.wikipedia.org/wiki/Rounding#Directed_rounding_to_an_integer) 유형 |
 | 기본 | 이 통화가 상점의 기본 통화인지 지정하려면 토글 |
-| 미국 달러 환율 | 상점의 기본 통화와 비교한 통화의 환율입니다. 기본적으로 USD는 기본 통화로 지정되지만 [UI에서 수정](../configuring-payment-methods/mercanet.md#set-eur-as-the-primary-store-currency)될 수 있습니다. |
+| 미국 달러 환율 | 상점의 기본 통화와 비교한 통화의 환율입니다. 기본적으로 USD는 기본 통화로 지정되지만 [UI에서 수정](../configuring-payment-methods/mercanet.md#set-eur-as-the-primary-store-currency) 될 수 있습니다. |
 | 우선순위 | 통화가 테이블에 표시되는 순서입니다. 숫자가 높을수록 더 아래로 표시됩니다. |
 | 활성 | 이 통화를 활성화하려면 토글 | 
 

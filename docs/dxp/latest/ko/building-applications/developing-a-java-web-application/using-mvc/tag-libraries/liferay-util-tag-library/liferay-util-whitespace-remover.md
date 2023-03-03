@@ -21,4 +21,4 @@ Here is some text withtabs.
 
 * [Liferay Util 매개변수 태그 사용](./liferay-util-param.md)
 * [Liferay Util 버퍼 태그 사용](./liferay-util-buffer.md)
-* [AUI 태그립 사용](https://help.liferay.com/hc/en-us/articles/360028832812-Using-AUI-Taglibs)
+* [AUI 태그립 사용](https://help.liferay.com/hc/ko/articles/360028832812-Using-AUI-Taglibs)

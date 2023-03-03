@@ -1,6 +1,6 @@
 # 블로그 표시
 
-Liferay는 블로그 항목을 표시하는 두 가지 방법을 제공합니다. [표시 페이지 템플릿](#using-display-page-templates) 및 [블로그 위젯](#using-the-blogs-widget).
+Liferay는 블로그 항목을 표시하는 두 가지 방법을 제공합니다. [표시 페이지 템플릿](#using-display-page-templates) 및 [블로그 위젯](#using-the-blogs-widget) .
 
 ## 표시 페이지 템플릿 사용
 

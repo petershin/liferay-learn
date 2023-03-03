@@ -8,7 +8,7 @@
 
 개체 데이터를 Google 시트에 동기화하려면 다음 단계를 따르세요.
 
-1. [Make](https://www.make.com/)에 로그인하고 *시나리오* 페이지로 이동한 다음 *새 시나리오 만들기*를 클릭합니다.
+1. [Make](https://www.make.com/) 에 로그인하고 *시나리오* 페이지로 이동한 다음 *새 시나리오 만들기*를 클릭합니다.
 
    ![새 시나리오 만들기를 클릭합니다.](./using-make-to-sync-object-data-with-google-sheets/images/01.png)
 

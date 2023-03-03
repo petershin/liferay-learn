@@ -4,7 +4,7 @@
 
 단계는 다음과 같습니다.
 
-1. [https://web.liferay.com/marketplace](https://web.liferay.com/marketplace)로 이동합니다.
+1. [https://web.liferay.com/marketplace](https://web.liferay.com/marketplace) 로 이동합니다.
 
 1. 오른쪽 상단 모서리에 있는 프로필 사진을 클릭하고 _구매한 앱_을 선택합니다. 구매한 앱 페이지가 나타나고 구매한 앱의 아이콘이 프로젝트별로 정리되어 표시됩니다.
 

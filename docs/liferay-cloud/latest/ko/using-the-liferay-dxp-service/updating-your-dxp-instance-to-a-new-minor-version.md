@@ -7,7 +7,7 @@ Liferay DXP 설치를 정기적으로 업데이트하는 것은 Liferay Cloud �
 ```
 
 ```{note}
-[hotfix](../../../../dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes), [다음 단계](./deploying-to-the-liferay-service.md#deploying-hotfixes)를 따릅니다. 대신에.
+[hotfix](../../../../dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes) , [다음 단계](./deploying-to-the-liferay-service.md#deploying-hotfixes) 를 따릅니다. 대신에.
 ```
 
 ## DXP 7.3+에 대한 모듈 업그레이드 활성화
@@ -29,12 +29,12 @@ Liferay DXP 설치를 정기적으로 업데이트하는 것은 Liferay Cloud �
 Liferay DXP에 대한 부 버전 업데이트도 프로젝트 저장소를 변경해야 합니다.
 
 ```{important}
-[클러스터링된 서비스](./setting-up-clustering-in-liferay-cloud.md)를 사용 중이고 Liferay 데이터베이스 스키마를 변경하는 버전(예: [서비스 팩](../.. /../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7 -3-and-earlier.html#service-packs)), [다음 단계](#updating-to-a-new-service-pack-with-clustering-enabled)를 따릅니다.
+[클러스터링된 서비스](./setting-up-clustering-in-liferay-cloud.md)를 사용 중이고 Liferay 데이터베이스 스키마를 변경하는 버전(예: [서비스 팩](../.. /../../dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7 -3-and-earlier.html#service-packs) ), [다음 단계](#updating-to-a-new-service-pack-with-clustering-enabled) 를 따릅니다.
 ```
 
 프로젝트 리포지토리에서 변경 사항을 업데이트하고 배포하려면 다음 단계를 수행하십시오.
 
-1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags)에서 업데이트하려는 Liferay 버전의 태그를 찾으십시오.
+1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags) 에서 업데이트하려는 Liferay 버전의 태그를 찾으십시오.
 
 1. 리포지토리에서 [`liferay/gradle.properties`](../using-the-liferay-dxp-service.md#choosing-a-version) 의 `liferay.workspace.docker.image.liferay` 속성 값을 새 버전의 태그로 변경합니다.
 
@@ -72,7 +72,7 @@ Liferay DXP에 대한 부 버전 업데이트도 프로젝트 저장소를 변�
 
 1. [변경](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 을 `liferay` 서비스에 배포합니다.
 
-1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags)에서 업데이트하려는 Liferay 버전의 태그를 찾으십시오.
+1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags) 에서 업데이트하려는 Liferay 버전의 태그를 찾으십시오.
 
 1. `liferay/gradle.properties` 의 `liferay.workspace.docker.image.liferay` 속성 값을 새 버전의 태그로 변경합니다.
 

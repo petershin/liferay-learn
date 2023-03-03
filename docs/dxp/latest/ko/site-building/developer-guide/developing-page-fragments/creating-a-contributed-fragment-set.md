@@ -8,7 +8,7 @@
 Contributed Fragment Set을 통해 추가된 모든 Fragment는 모든 사이트에서 전역적으로 사용할 수 있습니다.
 ```
 
-제공된 Fragment Set을 추가하려면 [`BaseFragmentCollectionContributor` Class](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/BaseFragmentCollectionContributor.html)을 확장합니다. 자체적으로 [`FragmentCollectionContributor` 인터페이스](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/FragmentCollectionContributor.html)을 구현합니다.
+제공된 Fragment Set을 추가하려면 [`BaseFragmentCollectionContributor` Class](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/BaseFragmentCollectionContributor.html) 을 확장합니다. 자체적으로 [`FragmentCollectionContributor` 인터페이스](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/FragmentCollectionContributor.html) 을 구현합니다.
 
 여기에서는 Fragment Set을 기여하는 방법을 배웁니다.
 
@@ -28,7 +28,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 
 그런 다음 다음 단계에 따라 예제를 배포하여 제공된 조각 세트가 어떻게 보이는지 확인합니다.
 
-1. Download and unzip the [example](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip):
+1. Download and unzip the [example](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip) :
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip -O

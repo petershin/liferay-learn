@@ -3,7 +3,7 @@
 Liferay에는 계정 관리자, 계정 구성원, 구매자 및 주문 관리자와 같은 [가지 기본 역할](#out-of-the-box-roles) 이 포함되어 있습니다. 이러한 역할은 몇 가지 일반적인 역할을 모델링하도록 구성되어 있지만 추가 계정 역할을 만들거나 사용 사례에 더 잘 맞도록 기본 역할을 수정할 수 있습니다. 일부 [일반적인 사용자 지정 역할](#custom-roles) 에는 Catalog Manager, Inventory Manager, Shipment Manager, Instance Order Manager 및 Discount Manager가 포함됩니다.
 
 ```{note}
-Liferay 7.3.x 및 이전 Commerce 버전의 경우 [판매 에이전트](#sales-agent)도 기본 역할로 포함됩니다.
+Liferay 7.3.x 및 이전 Commerce 버전의 경우 [판매 에이전트](#sales-agent) 도 기본 역할로 포함됩니다.
 ```
 
 ## 권한 보기
@@ -35,7 +35,7 @@ Liferay 7.3.x 및 이전 Commerce 버전의 경우 [판매 에이전트](#sales-
 
 ## 즉시 사용 가능한 역할
 
-다음 역할은 상거래 활성화 중에 DXP 인스턴스에 자동으로 추가됩니다. 기본 DXP 역할과 함께 포함되며 원하는 경우 수정할 수 있습니다. 자세한 내용은 [역할 권한 정의](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 을 참조하십시오.
+다음 역할은 상거래 활성화 중에 DXP 인스턴스에 자동으로 추가됩니다. 기본 DXP 역할과 함께 포함되며 원하는 경우 수정할 수 있습니다. 자세한 내용은 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 을 참조하십시오.
 
 ### 계정 관리자
 
@@ -130,13 +130,13 @@ Liferay 7.3.x 및 이전 Commerce 버전의 경우 [판매 에이전트](#sales-
 
 ## 사용자 지정 역할
 
-다음 목록에는 자체 상거래 인스턴스에 대해 만들 수 있는 일반적인 사용자 지정 역할이 포함되어 있습니다. 이러한 역할은 다른 DXP 역할과 동일한 방식으로 생성할 수 있습니다. 자세한 내용은 [역할 생성 및 관리](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) 및 [역할 권한 정의](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 을 참조하십시오.
+다음 목록에는 자체 상거래 인스턴스에 대해 만들 수 있는 일반적인 사용자 지정 역할이 포함되어 있습니다. 이러한 역할은 다른 DXP 역할과 동일한 방식으로 생성할 수 있습니다. 자세한 내용은 [역할 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) 및 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 을 참조하십시오.
 
 ### 카탈로그 관리자
 
 > 일반 역할
 
-카탈로그 관리자 역할은 특정 카탈로그 내에서 제품에 액세스, 생성, 편집 및 관리할 수 있는 권한을 부여합니다. 이 역할은 여러 공급업체 또는 회사 팀이 별도의 카탈로그에서 서로 다른 제품을 관리하는 여러 카탈로그 시나리오에서 유용합니다. 카탈로그 관리자는 재고를 관리할 수 없습니다. 이 책임에 대해서는 [재고 관리자](#inventory-manager)을 참조하십시오.
+카탈로그 관리자 역할은 특정 카탈로그 내에서 제품에 액세스, 생성, 편집 및 관리할 수 있는 권한을 부여합니다. 이 역할은 여러 공급업체 또는 회사 팀이 별도의 카탈로그에서 서로 다른 제품을 관리하는 여러 카탈로그 시나리오에서 유용합니다. 카탈로그 관리자는 재고를 관리할 수 없습니다. 이 책임에 대해서는 [재고 관리자](#inventory-manager) 을 참조하십시오.
 
 | 권한                 | 묘사                            |
 |:------------------ |:----------------------------- |
@@ -254,7 +254,7 @@ Liferay 7.3.x 및 이전 Commerce 버전의 경우 [판매 에이전트](#sales-
 
 ## 추가 정보
 
-* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [주문 관리 권한 참조](./order-management-permissions.md)
 * [인벤토리 관리 권한 참조](./inventory-management-permissions.md)
 * [가격 권한 참조](./pricing-permissions.md)

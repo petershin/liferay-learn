@@ -8,7 +8,7 @@ A/B 테스트를 사용하면 다양한 사용자에 대한 변형을 테스트�
 
 ![A/B 테스트를 사용하여 서로 다른 두 가지 행동 유도 버튼의 효율성 비교](./ab-testing/images/01.png)
 
-A/B 테스트를 실행하려면 Liferay DXP 인스턴스 [이 Liferay Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)에 연결되어 있어야 합니다. 프로세스는 다음과 같습니다.
+A/B 테스트를 실행하려면 Liferay DXP 인스턴스 [이 Liferay Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 에 연결되어 있어야 합니다. 프로세스는 다음과 같습니다.
 
 * Liferay DXP에서 A/B 테스트를 만듭니다.
 * A/B 테스트는 Analytics Cloud와 자동으로 동기화됩니다.
@@ -16,7 +16,7 @@ A/B 테스트를 실행하려면 Liferay DXP 인스턴스 [이 Liferay Analytics
 * Liferay DXP 및 Analytics Cloud는 테스트가 완료되면 테스트 상태와 우승 변형을 보여줍니다.
 * Analytics Cloud에서 A/B 테스트의 다른 측면(테스트 기록, 통계, 변수 비교 등)을 관리합니다.
 
-Analytics Cloud에서 A/B 테스트 작업에 대한 자세한 내용은 [A/B 테스트](https://learn.liferay.com/analytics-cloud/latest/en/optimization/a-b-testing.html)을 참조하십시오.
+Analytics Cloud에서 A/B 테스트 작업에 대한 자세한 내용은 [A/B 테스트](https://learn.liferay.com/analytics-cloud/latest/ko/optimization/a-b-testing.html) 을 참조하십시오.
 
 ## 관련 정보
 

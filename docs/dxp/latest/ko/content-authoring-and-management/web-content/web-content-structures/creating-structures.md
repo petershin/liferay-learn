@@ -22,7 +22,7 @@
 ```
 
 ```{tip}
-웹 콘텐츠 및 구조에 대한 추가 구성 옵션을 검색하려면(예: [사용자 정의 구조 키 설정 활성화](./whats-new-with-web-content-structures-in-7-4.md#setting-the-web- content-structure-key)), 시스템 설정 &rarr; 콘텐츠 및 데이터 &rarr; 웹 콘텐츠 &rarr; 관리를 살펴보십시오.
+웹 콘텐츠 및 구조에 대한 추가 구성 옵션을 검색하려면(예: [사용자 정의 구조 키 설정 활성화](./whats-new-with-web-content-structures-in-7-4.md#setting-the-web- content-structure-key) ), 시스템 설정 &rarr; 콘텐츠 및 데이터 &rarr; 웹 콘텐츠 &rarr; 관리를 살펴보십시오.
 ```
 
 ## 구조는 수비를 맡는다

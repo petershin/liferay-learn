@@ -6,22 +6,22 @@ uuid: ffbbefb9-eab8-46b8-80c6-4589698e76e8
 
 {bdg-secondary}`7.2-7.3(CE, DXP); 7.4 DXP U60+`
 
-Solr는 Apache Lucene을 기반으로 구축된 인기 있는 엔터프라이즈 검색 플랫폼입니다. 안정적이고 확장 가능하며 내결함성이 있습니다. [여기](http://lucene.apache.org/solr/)에 대해 자세히 읽어보십시오.
+Solr는 Apache Lucene을 기반으로 구축된 인기 있는 엔터프라이즈 검색 플랫폼입니다. 안정적이고 확장 가능하며 내결함성이 있습니다. [여기](http://lucene.apache.org/solr/) 에 대해 자세히 읽어보십시오.
 
-이 지침은 [호환 가능한 Liferay 버전](https://help.liferay.com/hc/en-us/articles/360016511651-Search-Engine-Compatibility-Matrix)용 Solr 8 설치에 대해 설명합니다. Solr 7을 설치하는 경우 필요에 따라 버전 이름을 조정하십시오.
+이 지침은 [호환 가능한 Liferay 버전](https://help.liferay.com/hc/ko/articles/360016511651-Search-Engine-Compatibility-Matrix) 용 Solr 8 설치에 대해 설명합니다. Solr 7을 설치하는 경우 필요에 따라 버전 이름을 조정하십시오.
 
 ```{important}
-Solr를 사용할 때 중요한 제한 사항이 있습니다. 설치하기 전에 [Solr Limitations](./solr-limitations.md)를 읽으십시오.
+Solr를 사용할 때 중요한 제한 사항이 있습니다. 설치하기 전에 [솔라 제한 사항](./solr-limitations.md) 를 읽으십시오.
 ```
 
 ## 호환성
 
-패치 수준별로 호환되는 Solr 및 Liferay 버전에 대한 자세한 내용은 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 을 참조하십시오.
+패치 수준별로 호환되는 Solr 및 Liferay 버전에 대한 자세한 내용은 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 을 참조하십시오.
 
 ## Solr 커넥터 다운로드
 
 ```{warning}
-[blacklist](#disabling-elasticsearch-only-features) 및 [connector](#installing-and-configuring-the-solr-connector) 구성이 제자리에 있고 [Solr가 실행 중임]( #설치 및 구성-solr).
+[blacklist](#disabling-elasticsearch-only-features) 및 [connector](#installing-and-configuring-the-solr-connector) 구성이 제자리에 있고 [Solr가 실행 중임]( #설치 및 구성-solr) .
 ```
 
 Solr에 대한 커넥터를 아직 획득하지 않은 경우,
@@ -47,11 +47,11 @@ Solr에 대한 커넥터를 아직 획득하지 않은 경우,
 
 1. 다음 URL에서 <https://liferay.com> `user.name` 을 대체하십시오.
 
-   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions> DXP: [https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps /182518167/버전](https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions)
+   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions> DXP: [https://web.liferay.com/web/ [user.name]/apps/-/marketplace_apps /182518167/버전](https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions)
 
 1. *App* 을 클릭하여 앱의 LPKG 파일을 다운로드합니다.
 
-Liferay 버전 및 패치 수준에 대한 호환되는 응용 프로그램 버전은 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 참조하십시오.
+Liferay 버전 및 패치 수준에 대한 호환되는 응용 프로그램 버전은 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 참조하십시오.
 
 ## Elasticsearch 전용 기능 비활성화
 
@@ -68,7 +68,7 @@ Liferay Connector를 Solr에 설치할 때 블랙리스트에 추가하거나 �
 
 Elasticsearch 전용 기능을 블랙리스트에 추가하려면,
 
-1. Liferay DXP 7.4에서 포털 속성 또는 Docker 환경 변수를 사용하여 모든 [Liferay Enterprise Search](../../liferay-enterprise-search.md) 기능을 비활성화합니다.
+1. Liferay DXP 7.4에서 포털 속성 또는 Docker 환경 변수를 사용하여 모든 [라이프레이 엔터프라이즈 검색](../../liferay-enterprise-search.md) 기능을 비활성화합니다.
 
    이 특성을 `portal-ext.properties`에 추가하십시오.
 
@@ -110,7 +110,7 @@ Elasticsearch 전용 기능을 블랙리스트에 추가하려면,
    ]
    ```
 
-   이 구성은 [Elasticsearch 7 검색 엔진 커넥터의](../elasticsearch/installing-elasticsearch.md) 모듈을 비활성화합니다. `enterprise.product.enterprise.search.enabled=false` 속성은 [Liferay Enterprise Search](../../liferay-enterprise-search.md) 모듈을 비활성화합니다. Solr를 설치하면 다른 [호환되지 않는 기능이 자동으로 비활성화됩니다](./solr-limitations.md).
+   이 구성은 [Elasticsearch 7 검색 엔진 커넥터의](../elasticsearch/installing-elasticsearch.md) 모듈을 비활성화합니다. `enterprise.product.enterprise.search.enabled=false` 속성은 [라이프레이 엔터프라이즈 검색](../../liferay-enterprise-search.md) 모듈을 비활성화합니다. Solr를 설치하면 다른 [호환되지 않는 기능이 자동으로 비활성화됩니다](./solr-limitations.md).
 
    **라이프레이 7.2 및 7.3:**
 
@@ -132,7 +132,7 @@ Elasticsearch 전용 기능을 블랙리스트에 추가하려면,
 
 Liferay용 Solr을 설치 및 구성하려면
 
-1. [호환](https://help.liferay.com/hc/en-us/articles/360016511651) Solr 서버를 다운로드하고 압축을 풉니다.
+1. [호환](https://help.liferay.com/hc/ko/articles/360016511651) Solr 서버를 다운로드하고 압축을 풉니다.
 
 1. `solr-[version]/server/solr`로 이동합니다.
 
@@ -231,9 +231,9 @@ Liferay의 `osgi/configs` 폴더에 배포된 구성 파일을 사용하여 Solr
 
 ## SolrCloud를 통한 고가용성
 
-Solr 서버 클러스터가 필요한 경우 SolrCloud를 사용하십시오. 프로덕션 환경에서 SolrCloud를 사용하려면 외부 ZooKeeper 앙상블 [](https://cwiki.apache.org/confluence/display/solr/Setting+Up+an+External+ZooKeeper+Ensemble)설정해야 합니다. [ZooKeeper](http://zookeeper.apache.org/) SolrCloud 클러스터와 같은 분산 시스템을 관리하기 위한 중앙 집중식 조정 서비스입니다.
+Solr 서버 클러스터가 필요한 경우 SolrCloud를 사용하십시오. 프로덕션 환경에서 SolrCloud를 사용하려면 외부 ZooKeeper 앙상블 [](https://cwiki.apache.org/confluence/display/solr/Setting+Up+an+External+ZooKeeper+Ensemble) 설정해야 합니다. [ZooKeeper](http://zookeeper.apache.org/) SolrCloud 클러스터와 같은 분산 시스템을 관리하기 위한 중앙 집중식 조정 서비스입니다.
 
-여기에 포함된 단계는 Liferay로 SolrCloud를 구성하기 위해 수행해야 하는 최소한의 단계입니다. 예를 들어 이 지침에서는 단일 시스템에서 SolrCloud 구성을 다룹니다. 프로덕션 환경에는 여러 물리적 또는 가상 머신이 있어야 합니다. 이 지침은 또한 위의 *Solr 설치 및 구성* 을 따랐다고 가정합니다. 자세한 내용은 [SolrCloud 가이드를 참조하십시오](https://cwiki.apache.org/confluence/display/solr/SolrCloud).
+여기에 포함된 단계는 Liferay로 SolrCloud를 구성하기 위해 수행해야 하는 최소한의 단계입니다. 예를 들어 이 지침에서는 단일 시스템에서 SolrCloud 구성을 다룹니다. 프로덕션 환경에는 여러 물리적 또는 가상 머신이 있어야 합니다. 이 지침은 또한 위의 *Solr 설치 및 구성* 을 따랐다고 가정합니다. 자세한 내용은 [SolrCloud 가이드를 참조하십시오](https://cwiki.apache.org/confluence/display/solr/SolrCloud) .
 
 1. 실행 중인 경우 Solr 서버를 중지합니다.
 

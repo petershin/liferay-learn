@@ -22,7 +22,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [샘플 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip)를 다운로드하고 압축을 풉니다.
+1. [샘플 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip -O

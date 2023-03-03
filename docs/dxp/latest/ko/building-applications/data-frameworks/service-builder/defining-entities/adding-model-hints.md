@@ -87,7 +87,7 @@ Spring을 종속성 주입기로 선택한 경우 Service Builder는 서비스 �
 
 필드에 힌트를 추가하려면 `힌트` 하위 요소를 추가하십시오. 예를 들어 `디스플레이 너비 힌트` 을 추가하여 필드를 표시하는 데 사용할 픽셀 너비를 지정할 수 있습니다. 기본 픽셀 너비는 `350`입니다. 50픽셀이 있는 `문자열` 필드를 표시하려면 `display-width` 라는 이름의 `힌트` 요소를 중첩하고 `50`값을 지정할 수 있습니다.
 
-필드에 대한 힌트의 효과를 확인하려면 [서비스 빌더](../service-builder-basics/generating-model-persistence-and-service-code.md#generate-the-persistence-code) 을 다시 실행하고 [모듈을 재배포합니다](../../../../liferay-internals/fundamentals/module-projects.md#deploy-a-simple-module). `표시 너비` 을 변경해도 사용자가 `이름` 필드에 입력할 수 있는 문자 수는 제한되지 않습니다. 입력 양식에서 필드의 너비만 제어합니다.
+필드에 대한 힌트의 효과를 확인하려면 [서비스 빌더](../service-builder-basics/generating-model-persistence-and-service-code.md#generate-the-persistence-code) 을 다시 실행하고 [모듈을 재배포합니다](../../../../liferay-internals/fundamentals/module-projects.md#deploy-a-simple-module) . `표시 너비` 을 변경해도 사용자가 `이름` 필드에 입력할 수 있는 문자 수는 제한되지 않습니다. 입력 양식에서 필드의 너비만 제어합니다.
 
 모델 필드의 데이터베이스 열의 최대 크기(즉, 필드에 저장할 수 있는 최대 문자 수)를 구성하려면 `최대 길이` 힌트를 사용하십시오. 기본 `최대 길이` 값은 `75` 자입니다. `이름` 필드를 최대 100자까지 유지하려면 해당 필드에 `최대 길이` 힌트를 추가합니다.
 
@@ -131,7 +131,7 @@ aui taglib는 완전히 지원되며 더 이상 사용되지 않는 AlloyUI(Java
 양식에서 Clay 및 aui 태그를 혼합하여 사용할 수 있습니다. 그러나 모델 힌트는 aui 태그에만 영향을 미칩니다.
 ```
 
-Liferay DXP/Portal에는 자체 모델 힌트 파일[`portal-model-hints.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META- INF/portal-model-hints.xml). `portal-impl.jar`의 `META-INF` 폴더에 있습니다. 이 파일에는 많은 힌트 예제가 포함되어 있으므로 `portlet-model-hints.xml` 파일을 생성할 때 참조할 수 있습니다.
+Liferay DXP/Portal에는 자체 모델 힌트 파일 [`portal-model-hints.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META- INF/portal-model-hints.xml) . `portal-impl.jar`의 `META-INF` 폴더에 있습니다. 이 파일에는 많은 힌트 예제가 포함되어 있으므로 `portlet-model-hints.xml` 파일을 생성할 때 참조할 수 있습니다.
 
 ## 기본 힌트
 

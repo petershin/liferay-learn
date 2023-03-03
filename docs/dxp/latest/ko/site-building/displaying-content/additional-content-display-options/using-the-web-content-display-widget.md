@@ -17,7 +17,7 @@
 
 1. *Web Content Display Configuration*에서 *Setup* 탭 아래의 *Select* 을 클릭합니다.
 1. *웹 콘텐츠 선택* 대화 상자에서 추가할 웹 콘텐츠를 클릭합니다.
-1. 설정 옵션 [웹 콘텐츠 표시 옵션](#web-content-display-setup-options).
+1. 설정 옵션 [웹 콘텐츠 표시 옵션](#web-content-display-setup-options) .
 1. *저장* 을 클릭하고 *웹 콘텐츠 디스플레이 구성* 대화 상자를 닫습니다.
 1. 콘텐츠 페이지를 게시하려면 *게시*을 클릭합니다.
 
@@ -40,7 +40,7 @@
 |:------------------------ |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 통역                       | 콘텐츠에 대한 추가 번역을 표시합니다. 콘텐츠를 다른 언어로 번역한 경우 이 옵션을 사용하여 원하는 번역을 표시합니다.                                                                                             |
 | 출력                       | 인쇄용 버전의 콘텐츠가 포함된 인쇄 대화 상자를 제공합니다.                                                                                                                              |
-| PDF, DOC, ODT, TXT로 다운로드 | 선택한 위젯 콘텐츠를 선택한 형식으로 다운로드합니다. 이 옵션은 [OpenOffice 또는 LibreOffice 통합](#integrating-open-office-or-libre-office-with-the-web-content-display)을 구성한 후에만 사용할 수 있습니다. |
+| PDF, DOC, ODT, TXT로 다운로드 | 선택한 위젯 콘텐츠를 선택한 형식으로 다운로드합니다. 이 옵션은 [OpenOffice 또는 LibreOffice 통합](#integrating-open-office-or-libre-office-with-the-web-content-display) 을 구성한 후에만 사용할 수 있습니다. |
 
 ### 콘텐츠 메타데이터
 
@@ -59,7 +59,7 @@
 
 ## 웹 콘텐츠 표시 위젯에 대한 추가 옵션
 
-[설정 옵션](#web-content-display-setup-options)외에도 Web Content Display Widget에서 추가 설정을 구성할 수 있습니다.
+[설정 옵션](#web-content-display-setup-options) 외에도 Web Content Display Widget에서 추가 설정을 구성할 수 있습니다.
 
 ### 손님을 위한 댓글 활성화
 

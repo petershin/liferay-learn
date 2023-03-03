@@ -14,7 +14,7 @@ upgrading-elasticsearch/upgrading-to-elasticsearch-7.md
 upgrading-elasticsearch/backing-up-elasticsearch.md
 ```
 
-Liferay는 Elasticsearch 7을 지원합니다. [호환성 매트릭스](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix) 은 최신 지원 세부 정보를 제공합니다.
+Liferay는 Elasticsearch 7을 지원합니다. [호환성 매트릭스](https://help.liferay.com/hc/ko/sections/360002103292-Compatibility-Matrix) 은 최신 지원 세부 정보를 제공합니다.
 
 ```{important}
 Solr 통합은 Liferay 7.3에서 더 이상 사용되지 않으며 7.4에서 제거되고 Elasticsearch 통합으로 대체됩니다. Elasticsearch로 마이그레이션하려면 [Elasticsearch 설정](./getting-started-with-elasticsearch.md) 및 [Liferay 연결](./connecting-to-elasticsearch.md)이 필요합니다.

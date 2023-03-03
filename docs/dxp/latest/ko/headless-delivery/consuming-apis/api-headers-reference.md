@@ -39,7 +39,7 @@ curl --header 'Accept-Language: pt-BR' 'example.com/o/headless-delivery/v1.0/sit
 
 ## `Authorization`
 
-DXP의 인증 프레임워크를 사용하여 요청하는 사용자를 식별합니다. ( [`쿠키`](#cookie)도 참조하십시오.) 이것과 `쿠키` 이 모두 제공되지 않으면 게스트(인증되지 않은) 사용자로 요청이 시도됩니다.
+DXP의 인증 프레임워크를 사용하여 요청하는 사용자를 식별합니다. ( [`쿠키`](#cookie) 도 참조하십시오.) 이것과 `쿠키` 이 모두 제공되지 않으면 게스트(인증되지 않은) 사용자로 요청이 시도됩니다.
 
 ### 유효한 옵션
 
@@ -68,7 +68,7 @@ curl --form 'file=@myfile.txt' --header 'Content-Type: multipart/form-data; boun
 
 ## `Cookie`
 
-DXP의 인증 프레임워크를 사용하여 요청하는 사용자를 식별합니다. (또한 참조 [`인증`](#authorization).) 이것과 `Authorization` 이 모두 제공되지 않으면 게스트(인증되지 않은) 사용자로 요청이 시도됩니다.
+DXP의 인증 프레임워크를 사용하여 요청하는 사용자를 식별합니다. (또한 참조 [`인증`](#authorization) .) 이것과 `Authorization` 이 모두 제공되지 않으면 게스트(인증되지 않은) 사용자로 요청이 시도됩니다.
 
 ### 유효한 옵션
 
@@ -82,7 +82,7 @@ curl --header 'Cookie: JSESSIONID=6349351B37C3EE1F6BA4E128107E9A34' 'example.com
 
 ## `X-Accept-All-Languages`
 
-서버가 사용 가능한 모든 언어로 요청된 콘텐츠를 반환해야 함을 나타냅니다. ( [`Accept-Language`](#accept-language)도 참조하십시오.)
+서버가 사용 가능한 모든 언어로 요청된 콘텐츠를 반환해야 함을 나타냅니다. ( [`Accept-Language`](#accept-language) 도 참조하십시오.)
 
 ### 유효한 옵션
 

@@ -2,10 +2,10 @@
 
 {bdg-secondary}`사용 가능한 Liferay DXP 7.4 U36/Liferay Portal 7.4 GA36 이상`
 
-Liferay에는 [ISO 3166 Standard](https://www.iso.org/iso-3166-country-codes.html)에 정의된 사용 가능한 국가 목록이 포함되어 있지만 국가 관리 앱을 사용하여 기존 항목을 수정하거나 새 항목을 추가할 수 있습니다.
+Liferay에는 [ISO 3166 Standard](https://www.iso.org/iso-3166-country-codes.html) 에 정의된 사용 가능한 국가 목록이 포함되어 있지만 국가 관리 앱을 사용하여 기존 항목을 수정하거나 새 항목을 추가할 수 있습니다.
 
 ```{note}
-Liferay DXP 7.4 U36 - U40(또는 Liferay Portal 7.4 GA36 - GA40)의 경우 국가 관리 앱은 UI에서 숨겨지며 기능 플래그를 사용하여 활성화해야 합니다. 단계를 보려면 아래의 [국가 관리 앱 활성화](#enable-the-countries-management-app)를 참조하세요.
+Liferay DXP 7.4 U36 - U40(또는 Liferay Portal 7.4 GA36 - GA40)의 경우 국가 관리 앱은 UI에서 숨겨지며 기능 플래그를 사용하여 활성화해야 합니다. 단계를 보려면 아래의 [국가 관리 앱 활성화](#enable-the-countries-management-app) 를 참조하세요.
 ```
 
 ## 기존 국가 편집

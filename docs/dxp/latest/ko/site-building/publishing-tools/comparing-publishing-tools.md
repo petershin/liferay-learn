@@ -19,7 +19,7 @@ Liferay는 콘텐츠 생성 및 사이트 구축을 위한 두 가지 게시 도
 이러한 기능을 함께 사용하면 뛰어난 편집 및 공동 작업 환경을 제공합니다. 인스턴스에 대한 간행물을 설정하려면 [간행물 활성화](./publications/enabling-publications.md) 참조하십시오.
 
 ```{important}
-Liferay 7.4 U44/GA44부터 Publications는 [Workflow](../../process-automation/workflow.md)과 완전히 통합되므로 Publications에서 추적하는 엔터티에 대한 워크플로를 활성화할 수 있습니다.
+Liferay 7.4 U44/GA44부터 Publications는 [워크플로우](../../process-automation/workflow.md) 과 완전히 통합되므로 Publications에서 추적하는 엔터티에 대한 워크플로를 활성화할 수 있습니다.
 ```
 
 ## 스테이징

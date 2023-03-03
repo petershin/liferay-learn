@@ -21,7 +21,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Acme Commerce Tax Engine](./liferay-q4b9.zip)을 다운로드하고 압축을 풉니다.
+1. [Acme Commerce Tax Engine](./liferay-q4b9.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-q4b9.zip -O
@@ -71,7 +71,7 @@ Commerce 2.1 및 이전 버전에서는 *사이트 관리* → *상거래* → *
 )
 ```
 
-> Liferay Commerce가 [세금 엔진 레지스트리](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceTaxEngineRegistryImpl.java)에서 새 엔진을 다른 엔진과 구별할 수 있도록 세금 엔진에 고유한 키를 제공하는 것이 중요합니다. 이미 사용 중인 키를 재사용하면 기존 관련 세금 엔진이 재정의됩니다.
+> Liferay Commerce가 [세금 엔진 레지스트리](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceTaxEngineRegistryImpl.java) 에서 새 엔진을 다른 엔진과 구별할 수 있도록 세금 엔진에 고유한 키를 제공하는 것이 중요합니다. 이미 사용 중인 키를 재사용하면 기존 관련 세금 엔진이 재정의됩니다.
 
 ### `CommerceTaxEngine` 인터페이스 검토
 
@@ -140,7 +140,7 @@ q4b9-commerce-tax-engine=Q4B9 Commerce Tax Engine
 this-tax-engine-serves-a-fixed-x-percent-flat-tax-rate=This tax engine serves a fixed {0} percent flat tax rate.
 ```
 
-> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
+> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
 
 ## 결론
 
@@ -148,5 +148,5 @@ this-tax-engine-serves-a-fixed-x-percent-flat-tax-rate=This tax engine serves a 
 
 ## 추가 정보
 
-* [애플리케이션 현지화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+* [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)
 * [세금 계산을 위한 세율 설정](../../store-management/configuring-taxes/setting-rates-for-tax-calculations.md)

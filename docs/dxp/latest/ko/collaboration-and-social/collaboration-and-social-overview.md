@@ -20,7 +20,7 @@ Message Boards 앱은 콘텐츠가 풍부한 토론을 위한 플랫폼이며 �
 
 ## 위키
 
-DXP에는 풍부한 작성 환경, 기사 버전 관리 및 여러 위키 노드 지원을 제공하는 완전한 기능을 갖춘 위키 애플리케이션이 포함되어 있습니다. DXP의 Wiki는 포털의 [사용자 관리](https://help.liferay.com/hc/articles/360029131931-Introduction-to-Managing-Users), [태깅](https://help.liferay.com/hc/articles/360028820472-Tagging-Content)및 [보안](https://help.liferay.com/hc/articles/360028711192-Introduction-to-Securing-Liferay-DXP) 기능과 완전히 통합됩니다.
+DXP에는 풍부한 작성 환경, 기사 버전 관리 및 여러 위키 노드 지원을 제공하는 완전한 기능을 갖춘 위키 애플리케이션이 포함되어 있습니다. DXP의 Wiki는 포털의 [사용자 관리](https://help.liferay.com/hc/articles/360029131931-Introduction-to-Managing-Users) , [태깅](https://help.liferay.com/hc/articles/360028820472-Tagging-Content) 및 [보안](https://help.liferay.com/hc/articles/360028711192-Introduction-to-Securing-Liferay-DXP) 기능과 완전히 통합됩니다.
 
 ![그림 2: Wiki 위젯은 사이트 페이지에 Wiki를 표시합니다.](./collaboration-and-social-overview/images/02.png)
 

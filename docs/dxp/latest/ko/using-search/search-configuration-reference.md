@@ -21,7 +21,7 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 ### 위젯 검색
 
-검색 위젯의 전용 적용 범위는 [검색 페이지 및 위젯](./getting-started/search-overview.md#search-pages-and-widgets)을 참조하십시오.
+검색 위젯의 전용 적용 범위는 [검색 페이지 및 위젯](./getting-started/search-overview.md#search-pages-and-widgets) 을 참조하십시오.
 
 **검색 결과**: 검색 결과 표시 방법을 설정합니다. 자세한 내용은 [검색 결과 표시](./search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#displaying-search-results) 읽으십시오.
 
@@ -152,7 +152,7 @@ Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
 **구성 파일:** `com.liferay.portal.search.configuration.QueryPreProcessConfiguration.config`
 
-이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)을 통해 정의하는 경우 배열 구문 사용).
+이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 을 통해 정의하는 경우 배열 구문 사용).
 
 **`fieldNamePatterns`**: 여기서 설정한 패턴과 이름이 일치하는 필드는 분석되지 않은 키워드 필드로 처리됩니다. 점수가 매겨진 전체 텍스트 쿼리 대신 점수가 매겨지지 않은 와일드카드 쿼리에 의해 일치가 수행됩니다. 이는 인덱스가 커짐에 따라 검색 엔진 성능을 저하시키는 리소스 집약적인 작업입니다. 하위 문자열 일치의 경우 일반적으로 [ngram 토크나이저](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) 에 의존하는 것이 더 잘 수행됩니다.
 
@@ -210,13 +210,13 @@ Liferay와 Elasticsearch 7 간의 연결을 구성합니다. 이러한 속성에
 
 **구성 파일:** `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConnectionConfiguration-[connectionId].config`
 
-Liferay 7.3은 여러 Elasticsearch 클러스터에 연결할 수 있습니다. 연결은 Elasticsearch 연결 항목에서 정의됩니다. 이 기능은 저수준 검색 옵션 및 검색 결과 위젯과 함께 사용하여 Elasticsearch 클러스터를 사용하는 타사 시스템의 결과를 표시할 수 있습니다. [Cross-Cluster Replication](./liferay-enterprise-search/cross-cluster-replication/cross-cluster-replication.md) 설명서에도 나와 있습니다.
+Liferay 7.3은 여러 Elasticsearch 클러스터에 연결할 수 있습니다. 연결은 Elasticsearch 연결 항목에서 정의됩니다. 이 기능은 저수준 검색 옵션 및 검색 결과 위젯과 함께 사용하여 Elasticsearch 클러스터를 사용하는 타사 시스템의 결과를 표시할 수 있습니다. [교차 클러스터 복제](./liferay-enterprise-search/cross-cluster-replication/cross-cluster-replication.md) 설명서에도 나와 있습니다.
 
 ### 순위 학습
 
 **구성 파일:** `com.liferay.portal.search.learning.to.rank.configuration.LearningToRankConfiguration.config`
 
-Liferay Enterprise Search 구독에서 사용할 수 있는 Liferay Enterprise Search Learning to Rank 모듈을 배포한 경우 Learning to Rank 구성을 사용할 수 있습니다. 이러한 구성 속성은 전용 [Learning to Rank](./liferay-enterprise-search/learning-to-rank.md) 설명서에서 다룹니다.
+Liferay Enterprise Search 구독에서 사용할 수 있는 Liferay Enterprise Search Learning to Rank 모듈을 배포한 경우 Learning to Rank 구성을 사용할 수 있습니다. 이러한 구성 속성은 전용 [순위 학습](./liferay-enterprise-search/learning-to-rank.md) 설명서에서 다룹니다.
 
 ### 웹 검색
 
@@ -230,9 +230,9 @@ Liferay Enterprise Search 구독에서 사용할 수 있는 Liferay Enterprise S
 
 **구성 파일:** `com.liferay.portal.search.tuning.synonyms.web.internal.configuration.SynonymsConfiguration.config`
 
-이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)을 통해 정의하는 경우 배열 구문 사용).
+이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 을 통해 정의하는 경우 배열 구문 사용).
 
-**`synyonymFilterNames`**: 적용할 동의어 필터 이름을 설정합니다. 이러한 필터는 Elasticsearch 인덱스 설정에서 정의해야 합니다. [새 동의어 언어 필터 만들기](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters)참조하십시오.
+**`synyonymFilterNames`**: 적용할 동의어 필터 이름을 설정합니다. 이러한 필터는 Elasticsearch 인덱스 설정에서 정의해야 합니다. [새 동의어 언어 필터 만들기](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters) 참조하십시오.
 
 ### 검색 관리
 

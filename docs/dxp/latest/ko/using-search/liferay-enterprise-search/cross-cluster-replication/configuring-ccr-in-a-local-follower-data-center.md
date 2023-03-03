@@ -11,7 +11,7 @@
 로컬 Elasticsearch 클러스터는 팔로워(복제된, 읽기 전용) 인덱스를 보유해야 하며 Liferay DXP 노드가 읽을 수 있는 로컬 검색 엔진으로 작동합니다.
 
 ```{important}
-**CCR 설치 보안:** [앞서 언급한 바와 같이](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption ) Elasticsearch 클러스터는 동일한 CA에서 서명한 노드 인증서를 사용해야 하며 각 클러스터의 보안 설정이 일치해야 합니다. 다른 접근 방식과 세부 정보는 [Elastic 설명서 참조](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cross-cluster-configuring.html)를 참조하세요.
+**CCR 설치 보안:** [앞서 언급한 바와 같이](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption ) Elasticsearch 클러스터는 동일한 CA에서 서명한 노드 인증서를 사용해야 하며 각 클러스터의 보안 설정이 일치해야 합니다. 다른 접근 방식과 세부 정보는 [Elastic 설명서 참조](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cross-cluster-configuring.html) 를 참조하세요.
 ```
 
 1. `elasticsearch.yml`을 구성합니다.
@@ -100,7 +100,7 @@
    Liferay DXP 7.1 및 7.2의 경우 `Liferay Home/osgi/configs` `com.liferay.portal.search.elasticsearch.cross.cluster.replication.internal.configuration.ElasticsearchConnectionConfiguration-ccr.config`에 구성 파일을 제공합니다.
 
    ```{warning}
-   Liferay 7.2에서 LES 클러스터 간 복제 LPKG의 초기 배포와 동시에 CCR 연결에 대한 구성 파일(예: `ElasticsearchConnectionConfiguration-ccr.config`)을 배포하지 마십시오. 모듈이 완전히 시작되기 전에 구성 파일이 배포되는 경우 Liferay의 검색 기능을 손상시키는 알려진 버그([LPS-127821](https://issues.liferay.com/browse/LPS-127821))가 있습니다. 이 문제가 이미 발생한 경우 [클러스터 간 복제 문제 해결](./troubleshooting-cross-cluster-replication.md#liferay-7-2-after-deploying-the-ccr-lpkg-and-the-elasticsearchconnectionconfiguration을 참조하십시오. -file-search-is-broken) 해결 방법입니다.
+   Liferay 7.2에서 LES 클러스터 간 복제 LPKG의 초기 배포와 동시에 CCR 연결에 대한 구성 파일(예: `ElasticsearchConnectionConfiguration-ccr.config`)을 배포하지 마십시오. 모듈이 완전히 시작되기 전에 구성 파일이 배포되는 경우 Liferay의 검색 기능을 손상시키는 알려진 버그( [LPS-127821](https://issues.liferay.com/browse/LPS-127821) )가 있습니다. 이 문제가 이미 발생한 경우 [클러스터 간 복제 문제 해결](./troubleshooting-cross-cluster-replication.md#liferay-7-2-after-deploying-the-ccr-lpkg-and-the-elasticsearchconnectionconfiguration을 참조하십시오. -file-search-is-broken) 해결 방법입니다.
    ```
 
    ```properties

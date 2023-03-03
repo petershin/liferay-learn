@@ -32,14 +32,14 @@ liferaycloud/jenkins:2.222.1-3.2.0
 1. Jenkins 서비스를 배포합니다.
 
 ```{note}
-Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkinsfile 확장](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)_.
+Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkinsfile 확장](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) _.
 ```
 
 ## GitLab 리포지토리 생성
 
 먼저 새 GitLab 저장소를 만듭니다.
 
-1. [GitLab](https://gitlab.com)로 이동합니다.
+1. [GitLab](https://gitlab.com) 로 이동합니다.
 
 1. _새 프로젝트_을 클릭합니다.
 
@@ -75,13 +75,13 @@ Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkin
 
     `git push gitlab master`
 
-리포지토리 생성, 복제 및 푸시에 도움이 필요한 경우 [GitLab 문서](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)를 참조하십시오.
+리포지토리 생성, 복제 및 푸시에 도움이 필요한 경우 [GitLab 문서](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) 를 참조하십시오.
 
 ## GitLab용 액세스 토큰 생성
 
 다음으로 Webhook에서 Jenkins 빌드를 트리거하는 데 사용할 액세스 토큰을 만듭니다.
 
-1. [개인 액세스 토큰 페이지](https://gitlab.com/profile/personal_access_tokens)로 이동합니다.
+1. [개인 액세스 토큰 페이지](https://gitlab.com/profile/personal_access_tokens) 로 이동합니다.
 
     ![나중에 다시 액세스할 수 없는 GitLab용 개인 액세스 토큰을 생성합니다.](./configuring-your-gitlab-repository/images/03.png)
 

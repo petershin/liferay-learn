@@ -26,7 +26,7 @@
 
 ![로깅 수준 범주에 배포된 자체 클래스를 추가할 수 있습니다.](./configuring-logging/images/01.png)
 
-로깅 레벨에 대한 설명은 [Apache의 Log4j `레벨` 클래스 Javadoc](https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/Level.html)을 참조하십시오.
+로깅 레벨에 대한 설명은 [Apache의 Log4j `레벨` 클래스 Javadoc](https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/Level.html) 을 참조하십시오.
 
 ## 기존 범주의 로그 수준 변경
 

@@ -40,7 +40,7 @@ Commerce 2.0 또는 2.1을 사용하는 경우 인벤토리 관리 옵션은 제
 이렇게 하면 선택한 창고에 SKU의 재고가 추가됩니다.
 
 ```{tip}
-제품 애플리케이션에서 SKU를 편집하는 동안 SKU에 대한 재고를 추가할 수 있습니다. 자세한 내용은 [SKU 인벤토리 추가](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md#adding-sku-inventory)를 참조하세요.
+제품 애플리케이션에서 SKU를 편집하는 동안 SKU에 대한 재고를 추가할 수 있습니다. 자세한 내용은 [SKU 인벤토리 추가](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md#adding-sku-inventory) 를 참조하세요.
 ```
 
 ## 안전 재고 설정

@@ -2,7 +2,7 @@
 
 > 가입자
 
-Liferay 지원 팀은 DXP에서 발견된 문제에 대한 수정 사항을 만들고 릴리스합니다. 수정 사항은 일반적으로 _patches_ 라고 하는 ZIP 파일에 패키지되어 있습니다. 보안 문제, 고객별 문제 및 Liferay 커뮤니티에서 보고된 문제에 대한 패치가 있습니다. 여기에서는 DXP 가입자에게 제공되는 패치 유형, Liferay Portal 사용자를 위한 [수정 제공](#ce-ga-releases) 및 [각 패치 유형에 대한 테스트 수준](#patch-testing)에 대해 알아봅니다.
+Liferay 지원 팀은 DXP에서 발견된 문제에 대한 수정 사항을 만들고 릴리스합니다. 수정 사항은 일반적으로 _patches_ 라고 하는 ZIP 파일에 패키지되어 있습니다. 보안 문제, 고객별 문제 및 Liferay 커뮤니티에서 보고된 문제에 대한 패치가 있습니다. 여기에서는 DXP 가입자에게 제공되는 패치 유형, Liferay Portal 사용자를 위한 [수정 제공](#ce-ga-releases) 및 [각 패치 유형에 대한 테스트 수준](#patch-testing) 에 대해 알아봅니다.
 
 다음은 DXP 패치 유형 및 Portal 수정 제공 방법에 대한 요약입니다.
 
@@ -32,7 +32,7 @@ DXP 7.2에서 Patching Tool은 이전 수정팩을 제거하고 새 수정팩으
 
 > Liferay DXP 7.3 SP3 이전 버전
 
-[DXP 보안 수정 팩](https://help.liferay.com/hc/en-us/articles/360035038331) 은 최신 중요 보안 문제를 해결합니다. 도움말 센터의 [다운로드](https://customer.liferay.com/downloads) 페이지에서 사용할 수 있으며 [패치 도구](./installing-patches-for-dxp-7-3-and-earlier.md)를 사용하여 설치됩니다.
+[DXP 보안 수정 팩](https://help.liferay.com/hc/ko/articles/360035038331) 은 최신 중요 보안 문제를 해결합니다. 도움말 센터의 [다운로드](https://customer.liferay.com/downloads) 페이지에서 사용할 수 있으며 [패치 도구](./installing-patches-for-dxp-7-3-and-earlier.md)를 사용하여 설치됩니다.
 
 특정 수정팩용 보안 수정팩(기본 수정팩). [다운로드](https://customer.liferay.com/downloads) 페이지의 각 보안 수정 팩은 기본 수정 팩을 지정합니다. 해당 파일 이름도 기본 수정팩을 나타냅니다.
 
@@ -51,7 +51,7 @@ DXP 7.2에서 Patching Tool은 이전 수정팩을 제거하고 새 수정팩으
 
 ## 핫픽스
 
-핫픽스는 고객이 요청한 수정 사항 또는 수정 사항 모음이며 7.4 업데이트 릴리스 사이 또는 7.3 또는 7.2 수정 팩 릴리스 사이에 제공됩니다. 핫픽스는 DXP에서 확인된 중요한 문제를 해결합니다. [도움말 센터 티켓](https://help.liferay.com/hc)을 통해 Hotfix에서 요청할 수 있습니다. Liferay 지원 팀은 귀하와 협력하여 문제가 제품에 있는지 확인하고 의도하지 않은 제품 동작에 대한 수정 사항을 제공합니다.
+핫픽스는 고객이 요청한 수정 사항 또는 수정 사항 모음이며 7.4 업데이트 릴리스 사이 또는 7.3 또는 7.2 수정 팩 릴리스 사이에 제공됩니다. 핫픽스는 DXP에서 확인된 중요한 문제를 해결합니다. [도움말 센터 티켓](https://help.liferay.com/hc) 을 통해 Hotfix에서 요청할 수 있습니다. Liferay 지원 팀은 귀하와 협력하여 문제가 제품에 있는지 확인하고 의도하지 않은 제품 동작에 대한 수정 사항을 제공합니다.
 
 DXP 7.3 또는 7.2에서 핫픽스는 특정 수정 팩 수준에 따라 달라질 수 있습니다. 기본 Fix Pack을 먼저 설치하지 않고 설치를 시도하면 Patching Tool이 필요한 Fix Pack 레벨을 보고합니다. [고객 포털](https://customer.liferay.com/downloads) 로 이동하여 기본 수정 팩을 얻으십시오. 필요한 모든 패치가 `패치` 폴더에 다운로드되면 Patching Tool이 해당 패치를 설치합니다.
 
@@ -94,7 +94,7 @@ DXP 7.2에서 이미 핫픽스가 설치되어 있고 해당 핫픽스가 포함
 
 * *구독* 버튼: Liferay DXP 릴리스, 패치 및 시스템 개선 이메일에 등록합니다.
 
-* [다운로드 페이지](https://customer.liferay.com/downloads): 에 대한 액세스를 제공합니다.
+* [다운로드 페이지](https://customer.liferay.com/downloads) : 에 대한 액세스를 제공합니다.
   
       * 최신 릴리스
     * 수정팩
@@ -102,7 +102,7 @@ DXP 7.2에서 이미 핫픽스가 설치되어 있고 해당 핫픽스가 포함
     * 보안 수정팩
     * 패치 도구
     * 그리고 더
-* [보안 페이지](https://help.liferay.com/hc/en-us/categories/360000892792-Security): 보안 관련 개요, 권고, 보안 업데이트(7.3 SP3+) 및 보안 수정 팩(7.3 SP3 이전 버전)에 대한 링크입니다.
+* [보안 페이지](https://help.liferay.com/hc/ko/categories/360000892792-Security) : 보안 관련 개요, 권고, 보안 업데이트(7.3 SP3+) 및 보안 수정 팩(7.3 SP3 이전 버전)에 대한 링크입니다.
 
 도움말 센터는 계정 지원, 지원 FAQ 등을 위한 출발점이기도 합니다. 라이프레이가 도와드리겠습니다!
 

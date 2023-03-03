@@ -22,7 +22,7 @@
 
 1. *저장*을 클릭합니다. 이렇게 하면 템플릿 디자인 페이지로 리디렉션됩니다.
 
-1. (선택 사항) `.ftl` 파일에서 기존 FreeMarker 스크립트를 [가져오기](#importing-and-exporting-scripts)합니다.
+1. (선택 사항) `.ftl` 파일에서 기존 FreeMarker 스크립트를 [가져오기](#importing-and-exporting-scripts) 합니다.
 
 1. FreeMarker를 사용하여 템플릿을 디자인합니다.
    

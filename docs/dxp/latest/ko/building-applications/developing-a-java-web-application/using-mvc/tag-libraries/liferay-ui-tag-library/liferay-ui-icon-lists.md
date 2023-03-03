@@ -1,10 +1,10 @@
 # Liferay UI 아이콘 목록
 
-아이콘 목록은 [아이콘 메뉴](https://help.liferay.com/hc/en-us/articles/360029145151-Liferay-UI-Icon-Menus)과 같은 팝업 탐색 메뉴 대신 가로 목록에 아이콘을 표시합니다. 메시지 게시판 스레드에서 아이콘 목록 메뉴의 예를 볼 수 있습니다. 스레드의 작업은 관리자에게 항상 표시됩니다.
+아이콘 목록은 [아이콘 메뉴](https://help.liferay.com/hc/ko/articles/360029145151-Liferay-UI-Icon-Menus) 과 같은 팝업 탐색 메뉴 대신 가로 목록에 아이콘을 표시합니다. 메시지 게시판 스레드에서 아이콘 목록 메뉴의 예를 볼 수 있습니다. 스레드의 작업은 관리자에게 항상 표시됩니다.
 
 ![아이콘 목록은 항상 앱의 동작을 표시합니다.](./liferay-ui-icon-lists/images/01.png)
 
-아래와 같이 각 목록 항목에 대해 `liferay-ui:icon-list` 태그와 중첩 [아이콘](https://help.liferay.com/hc/en-us/articles/360028832232-Liferay-UI-Icons) 을 사용하여 목록 메뉴를 만듭니다.
+아래와 같이 각 목록 항목에 대해 `liferay-ui:icon-list` 태그와 중첩 [아이콘](https://help.liferay.com/hc/ko/articles/360028832232-Liferay-UI-Icons) 을 사용하여 목록 메뉴를 만듭니다.
 
 ```jsp
 <div class="thread-actions">
@@ -52,7 +52,7 @@
 </div>
 ```
 
-사용 가능한 속성의 전체 목록은 [Icon List taglibdocs](https://help.liferay.com/hc/en-us/articles/360029145131-Liferay-UI-Icon-Lists) 을 참조하십시오.
+사용 가능한 속성의 전체 목록은 [Icon List taglibdocs](https://help.liferay.com/hc/ko/articles/360029145131-Liferay-UI-Icon-Lists) 을 참조하십시오.
 
 ## 관련 항목
 

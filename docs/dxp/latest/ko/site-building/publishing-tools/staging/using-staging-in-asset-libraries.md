@@ -20,7 +20,7 @@ Liferay의 Staging 애플리케이션은 DXP에서 변경 사항을 관리하기
 
 많은 편집 옵션은 스테이징 환경에서만 액세스할 수 있습니다. 이는 명확한 개발 프로세스를 유지하고 라이브 환경의 편집으로 인한 데이터 충돌을 방지하기 위한 것입니다.
 
-스테이징 환경에서 변경 사항이 있으면 한 번에 모두 게시하거나 한 번에 하나씩 게시할 수 있습니다. [사이트](./site-staging-ui-reference.md#publish-to-live)과 마찬가지로 [단순](./site-staging-ui-reference.md#simple-publishing) 또는 [고급](./site-staging-ui-reference.md#advanced-publishing) 게시 옵션을 사용할 수 있습니다.
+스테이징 환경에서 변경 사항이 있으면 한 번에 모두 게시하거나 한 번에 하나씩 게시할 수 있습니다. [사이트](./site-staging-ui-reference.md#publish-to-live) 과 마찬가지로 [단순](./site-staging-ui-reference.md#simple-publishing) 또는 [고급](./site-staging-ui-reference.md#advanced-publishing) 게시 옵션을 사용할 수 있습니다.
 
 ## 추가 정보
 

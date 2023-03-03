@@ -1,7 +1,7 @@
 # 컬렉션 만들기
 
 ```{note}
-이 정보는 Liferay DXP 7.3+에 적용됩니다. 이전 Liferay DXP 버전의 경우 [Liferay DXP 7.2](#liferay-dxp-7-2)를 참조하십시오.
+이 정보는 Liferay DXP 7.3+에 적용됩니다. 이전 Liferay DXP 버전의 경우 [Liferay DXP 7.2](#liferay-dxp-7-2) 를 참조하십시오.
 ```
 
 *개의 수동* 또는 *동적* 컬렉션을 생성할 수 있습니다. 컬렉션의 다양한 유형에 대한 정보는 [컬렉션 및 컬렉션 페이지 정보](./about-collections-and-collection-pages.md)을 참조하십시오.
@@ -156,7 +156,7 @@
 
 이렇게 하면 현재 *트렌드* 로 태그가 지정된 모든 항목을 포함하는 콘텐츠 세트가 생성되고 *트렌드* 태그가 있는 향후 항목이 자동으로 콘텐츠 세트에 추가됩니다.
 
-이제 콘텐츠 세트를 만들었으므로 [페이지에 표시할 수 있습니다](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-content-sets).
+이제 콘텐츠 세트를 만들었으므로 [페이지에 표시할 수 있습니다](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-content-sets) .
 
 ### Asset Publisher 구성을 콘텐츠 세트로 변환
 

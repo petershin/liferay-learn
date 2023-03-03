@@ -7,7 +7,7 @@ uuid: 1d5da6cd-cdeb-4c72-836e-63462e4a86ad
 Liferay 7.3 및 7.4에는 각각 Elasticsearch에서 생성된 인덱스 세트가 있습니다. 이러한 인덱스와 인덱스가 수행하는 작업을 이해하면 Liferay의 Elasticsearch 설치를 더 잘 구성하고 관리하는 데 도움이 될 수 있습니다.
 
 ```{important}
-Liferay 7.2 인덱스 이름은 패치가 인덱스 명명 패턴에 변경 사항을 도입했기 때문에 더 복잡합니다. 자세한 내용은 [다중 테넌트 인덱스 이름](../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names)을 참조하세요.
+Liferay 7.2 인덱스 이름은 패치가 인덱스 명명 패턴에 변경 사항을 도입했기 때문에 더 복잡합니다. 자세한 내용은 [다중 테넌트 인덱스 이름](../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names) 을 참조하세요.
 ```
 
 ## Liferay 7.4의 Elasticsearch 인덱스

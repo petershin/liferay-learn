@@ -24,7 +24,7 @@ Workflow Powered Apps는 개체의 양식이 완료된 것으로 간주되기 �
 
 ## 앱 버전
 
-Workflow Powered Apps는 [개의 워크플로 프로세스가 버전](../../process-automation/workflow/designing-and-managing-workflows/managing-workflows.md#viewing-and-restoring-workflow-revisions)이기 때문에 버전이 지정됩니다. 앱의 새 버전은 다음과 같이 생성됩니다.
+Workflow Powered Apps는 [개의 워크플로 프로세스가 버전](../../process-automation/workflow/designing-and-managing-workflows/managing-workflows.md#viewing-and-restoring-workflow-revisions) 이기 때문에 버전이 지정됩니다. 앱의 새 버전은 다음과 같이 생성됩니다.
 
 - 워크플로 프로세스에서 단계 또는 전환을 추가, 편집 또는 제거합니다(워크플로 프로세스의 새 버전을 생성하는 작업).
 - 워크플로 단계 중 하나에서 양식 보기를 추가, 업데이트 또는 제거합니다.

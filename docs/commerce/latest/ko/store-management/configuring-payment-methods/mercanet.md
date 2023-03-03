@@ -14,7 +14,7 @@ uuid: acb33a41-7083-4874-8e8e-f6aa1d284b2c
 
 ## 전제 조건
 
-[Mercanet](https://documentation.mercanet.bnpparibas.net/index.php?title=Obtenir_sa_cl%C3%A9_secr%C3%A8te#)사용하도록 상점을 구성하기 전에 다음을 생성해야 합니다.
+[Mercanet](https://documentation.mercanet.bnpparibas.net/index.php?title=Obtenir_sa_cl%C3%A9_secr%C3%A8te#) 사용하도록 상점을 구성하기 전에 다음을 생성해야 합니다.
 
 1. Mercanet 판매자 ID
 1. 비밀 키
@@ -52,5 +52,5 @@ _유로_ 이제 기본 통화로 설정됩니다.
 ## 추가 정보
 
 * [새 통화 추가](../currencies/adding-a-new-currency.md)
-* [Authorize.Net](./authorize-net.md)
+* [Authorize.net](./authorize-net.md)
 * [PayPal](./paypal.md)

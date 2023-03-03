@@ -42,7 +42,7 @@ CLI 도구를 사용하는 것이 로컬 변경 사항을 서비스에 배포하
 성공적으로 배포하려면 선택한 환경에 배포할 수 있는 권한이 있어야 합니다. 이 배포 워크플로에 대한 자세한 내용은 [CLI 도구를 통해 변경 사항 배포](./deploying-changes-via-the-cli-tool.md) 을 참조하십시오.
 
 ```{important}
-백업, CI, 데이터베이스, 검색 및 웹 서버 서비스를 직접 배포할 수 있지만 `lcp deploy` 명령을 실행하기 전에 먼저 Liferay 서비스의 Gradle 빌드를 생성해야 합니다. 자세한 내용은 [Liferay 서비스에 배포](../using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment)를 참조하십시오.
+백업, CI, 데이터베이스, 검색 및 웹 서버 서비스를 직접 배포할 수 있지만 `lcp deploy` 명령을 실행하기 전에 먼저 Liferay 서비스의 Gradle 빌드를 생성해야 합니다. 자세한 내용은 [Liferay 서비스에 배포](../using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) 를 참조하십시오.
 ```
 
 CLI 도구를 사용하여 배포할 때 모든 서비스를 한 번에 배포하거나(프로젝트의 루트 디렉터리에서 명령을 실행하여) 단일 서비스만 배포할 수 있습니다(서비스의 `LCP가 포함된 디렉터리에서 명령을 실행하여). .json` 파일). `liferay` 서비스, 특히 [는 배포하는 데 추가](../using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) 단계가 필요하므로 프로젝트 작업 공간에서 파일을 빌드하고 준비할 수 있습니다.

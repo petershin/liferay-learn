@@ -13,10 +13,10 @@
 ![미니 카트 위젯에는 카트의 내용이 표시되며 상거래 카트 위젯에 연결되는 카트 편집 버튼이 있습니다.](./cart/images/02.png)
 
 ```{note}
-*미니 카트* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html)을 참조하세요.
+*미니 카트* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) 을 참조하세요.
 ```
 
 ## 추가 정보
 
 * [위젯 참조 가이드](../liferay-commerce-widgets/widget-reference.md)
-* [페이지 만들기](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
+* [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)

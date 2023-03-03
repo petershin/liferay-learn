@@ -46,13 +46,13 @@ Docker 이미지로 업그레이드하는 단계는 다음과 같습니다.
 
     * `배포`: Docker 컨테이너는 이 폴더에서 컨테이너의 자동 배포 폴더로 아티팩트를 복사합니다.
 
-1. [Commerce](https://learn.liferay.com/commerce/latest/en/index.html)사용하고 있다면 업그레이드할 준비를 하십시오. 자세한 내용은 [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/upgrading-liferay-commerce.html) 업그레이드를 참조하십시오.
+1. [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 사용하고 있다면 업그레이드할 준비를 하십시오. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/commerce/latest/ko/installation-and-upgrades/upgrading-liferay-commerce.html) 업그레이드를 참조하십시오.
 
 1. 임베디드 [Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md)를 사용하는 경우 엔진 또는 로컬 [File Store\(Document Library\)](../../../system-administration/file-storage.md)에서 `[Liferay Home]/data` 폴더를 새 ` files` 폴더에 `new-version/files/data`를 만듭니다.
    
    1. 임베디드 [Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md) 엔진 또는 로컬 [File Store \(Document Library\)](../../../system-administration/file-storage.md)사용하는 경우 `[Liferay Home]/data` 폴더를 새 `files` 폴더에 복사하여 `new-version/ 파일/데이터`.
 
-1. [Liferay 홈 파일](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) 및 [응용 프로그램 서버 파일](../../maintaining -a-liferay-installation/backing-up.md#application-server)을 백업에서 `file` 폴더(새 `[Liferay Home]`)의 해당 위치로 복사합니다. 예를 들어 활성화 키를 `new-version/files/license/`에 복사합니다. 파일에는 다음이 포함될 수 있지만 이에 국한되지는 않습니다.
+1. [Liferay 홈 파일](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) 및 [응용 프로그램 서버 파일](../../maintaining -a-liferay-installation/backing-up.md#application-server) 을 백업에서 `file` 폴더(새 `[Liferay Home]`)의 해당 위치로 복사합니다. 예를 들어 활성화 키를 `new-version/files/license/`에 복사합니다. 파일에는 다음이 포함될 수 있지만 이에 국한되지는 않습니다.
 
     * `/license/*`: 활성화 키. (구독)
 

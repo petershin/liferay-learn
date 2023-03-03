@@ -28,7 +28,7 @@ Liferay DXP 7.4는 향상된 기능과 흥미로운 개선 사항을 제공하�
 
 ### 콘텐츠 성능 도구의 트래픽 획득 채널
 
-[Content Performance Tool](../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)의 트래픽 획득 채널은 [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html) 데이터를 사용하며 자연 및 유료 검색, 소셜 트래픽 및 추천에 대한 측정을 포함합니다. 채널의 세부 정보 보기에는 모든 참조 URL 및 도메인이 표시됩니다.
+[Content Performance Tool](../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)의 트래픽 획득 채널은 [애널리틱스 클라우드](https://learn.liferay.com/analytics-cloud/latest/ko/index.html) 데이터를 사용하며 자연 및 유료 검색, 소셜 트래픽 및 추천에 대한 측정을 포함합니다. 채널의 세부 정보 보기에는 모든 참조 URL 및 도메인이 표시됩니다.
 
 ![트래픽 획득 채널에는 검색, 소셜 및 추천 데이터가 포함됩니다.](./whats-new-74/images/09.png)
 
@@ -42,7 +42,7 @@ Liferay DXP 7.4는 향상된 기능과 흥미로운 개선 사항을 제공하�
 
 ### 페이지 감사
 
-Liferay DXP 7.4부터 [페이지 감사 도구](../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md) 사용하여 페이지의 SEO 및 접근성을 감사할 수 있습니다. 페이지 감사 도구는 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights)서비스를 사용하여 Liferay DXP에 대한 특정 권장 사항을 제공합니다. 새로운 페이지 감사 도구를 사용하면 페이지가 최고의 성능, 접근성, 검색 엔진 메타데이터 및 SEO 관행을 준수하는지 확인할 수 있습니다.
+Liferay DXP 7.4부터 [페이지 감사 도구](../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md) 사용하여 페이지의 SEO 및 접근성을 감사할 수 있습니다. 페이지 감사 도구는 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights) 서비스를 사용하여 Liferay DXP에 대한 특정 권장 사항을 제공합니다. 새로운 페이지 감사 도구를 사용하면 페이지가 최고의 성능, 접근성, 검색 엔진 메타데이터 및 SEO 관행을 준수하는지 확인할 수 있습니다.
 
 ![Google PageSpeed Insights 통합은 권장 사항을 제공합니다.](./whats-new-74/images/02.png)
 

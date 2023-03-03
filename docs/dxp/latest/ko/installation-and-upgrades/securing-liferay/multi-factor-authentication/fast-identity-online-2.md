@@ -22,7 +22,7 @@ Fast IDentity Online 2 또는 FIDO2 표준은 암호 없는 인증을 위해 생
 
 **사용자당 허용된 자격 증명:** 각 사용자는 이 수의 FIDO2 장치를 가질 수 있습니다.
 
-**신뢰 당사자 ID:** [WebAuthn 신뢰 당사자 ID](https://www.w3.org/TR/webauthn-2/#relying-party). 일반적으로 웹사이트의 도메인 이름으로 설정합니다.
+**신뢰 당사자 ID:** [WebAuthn 신뢰 당사자 ID](https://www.w3.org/TR/webauthn-2/#relying-party) . 일반적으로 웹사이트의 도메인 이름으로 설정합니다.
 
 **오리진:** 인증자 응답은 설치를 가리켜야 하는 이 오리진 URL과 비교됩니다. 보안을 위해 항상 `https` 을 사용하여 연결을 암호화해야 합니다.
 
@@ -40,7 +40,7 @@ FIDO2가 활성화되면 사용자는 계정 설정에서 인증자를 추가할
 
 1. 상단에 _Multi-Factor Authentication_이라는 새 탭이 나타납니다. 클릭하세요.
 
-1. 사이트 탐색에 사용 중인 장치에서 FIDO2 호환 장치를 사용할 수 있는지 확인하십시오. 예를 들어 지문 판독기가 있는 노트북인 경우 활성화되어 있는지 확인합니다. [YubiKey](https://www.yubico.com)과 같은 USB 장치인 경우 장치에 연결되어 있는지 확인하십시오.
+1. 사이트 탐색에 사용 중인 장치에서 FIDO2 호환 장치를 사용할 수 있는지 확인하십시오. 예를 들어 지문 판독기가 있는 노트북인 경우 활성화되어 있는지 확인합니다. [YubiKey](https://www.yubico.com) 과 같은 USB 장치인 경우 장치에 연결되어 있는지 확인하십시오.
 
 1. 인증자를 등록하려면 _Register a FIDO2 Authenticator_라벨이 붙은 큰 파란색 버튼을 클릭합니다.
 

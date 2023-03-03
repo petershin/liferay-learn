@@ -12,7 +12,7 @@
 
 템플릿을 사용하여 검색 페이지를 만들고 템플릿에 대한 변경 사항을 상속하도록 하려면 다음을 수행하십시오.
 
-1. [사이트 메뉴](../../../getting-started/navigating-dxp.md#site-menu)을 사용하여 원하는 사이트로 이동합니다.
+1. [사이트 메뉴](../../../getting-started/navigating-dxp.md#site-menu) 을 사용하여 원하는 사이트로 이동합니다.
 
 1. 사이트 메뉴에서 *사이트 빌더* &rarr; *페이지* 로 이동합니다.
 
@@ -40,7 +40,7 @@
 
 페이지 템플릿에서 추가 변경 사항을 상속하지 않는 템플릿을 사용하여 검색 페이지를 만들려면 다음을 수행합니다.
 
-1. [사이트 메뉴](../../../getting-started/navigating-dxp.md#site-menu)을 사용하여 원하는 사이트로 이동합니다.
+1. [사이트 메뉴](../../../getting-started/navigating-dxp.md#site-menu) 을 사용하여 원하는 사이트로 이동합니다.
 
 1. 사이트 메뉴에서 *사이트 빌더* &rarr; *페이지* 로 이동합니다.
 

@@ -4,7 +4,7 @@
 
 ## Tidio 계정 ID 찾기
 
-1. [Tidio 계정](https://www.tidio.com/panel/login)에 로그인합니다.
+1. [Tidio 계정](https://www.tidio.com/panel/login) 에 로그인합니다.
 
 1. *기어 아이콘* 을 클릭하여 설정 메뉴로 들어갑니다.
 

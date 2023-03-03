@@ -147,7 +147,7 @@
 ```
 
 ```{note}
-사용 가능한 Liferay 아이콘의 전체 목록은 [Clay CSS 웹사이트](https://clayui.com/docs/components/icon.html)에서 확인할 수 있습니다.
+사용 가능한 Liferay 아이콘의 전체 목록은 [Clay CSS 웹사이트](https://clayui.com/docs/components/icon.html) 에서 확인할 수 있습니다.
 ```
 
 ## 사용자 카드

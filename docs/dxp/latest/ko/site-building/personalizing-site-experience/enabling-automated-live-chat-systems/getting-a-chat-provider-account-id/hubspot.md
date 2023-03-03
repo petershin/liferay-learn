@@ -2,11 +2,11 @@
 
 [Hubspot](https://www.hubspot.com/) 은 라이브 채팅 기능을 포함하는 CRM 플랫폼입니다. Hubspot과의 통합을 활성화하려면 라이브 채팅을 생성하고 Hubspot 계정에서 검색할 수 있는 두 가지 값(Hubspot 사용자 계정 ID 및 Hubspot API 토큰)의 조합이 필요합니다.
 
-라이브 채팅을 만들고 구성하려면 [Hubspot의 지식 베이스](https://knowledge.hubspot.com/chatflows/create-a-live-chat)의 단계를 따르십시오.
+라이브 채팅을 만들고 구성하려면 [Hubspot의 지식 베이스](https://knowledge.hubspot.com/chatflows/create-a-live-chat) 의 단계를 따르십시오.
 
 ## Hubspot 사용자 계정 ID 찾기
 
-1. [Hubspot 계정](https://app.hubspot.com/login)에 로그인합니다.
+1. [Hubspot 계정](https://app.hubspot.com/login) 에 로그인합니다.
 
 1. 오른쪽 상단 모서리에 있는 프로필로 이동합니다.
 

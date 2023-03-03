@@ -24,11 +24,11 @@ dl.store.impl=com.liferay.portal.store.s3.S3Store
 
 ## JCR 스토어에서 마이그레이션
 
-JCR Store는 DXP 7.0에서 더 이상 사용되지 않습니다. [file storage](../../../system-administration/file-storage.md) 문서는 다른 저장 옵션을 설명합니다. [데이터베이스를 업그레이드하기 전에 지원되는 파일 저장소](../../../system-administration/file-storage/file-store-migration.md) 로 마이그레이션하십시오.
+JCR Store는 DXP 7.0에서 더 이상 사용되지 않습니다. [파일 스토리지](../../../system-administration/file-storage.md) 문서는 다른 저장 옵션을 설명합니다. [데이터베이스를 업그레이드하기 전에 지원되는 파일 저장소](../../../system-administration/file-storage/file-store-migration.md) 로 마이그레이션하십시오.
 
 ## CMIS 스토어에서 마이그레이션
 
-CMIS Store는 7.0.10 수정팩 14에서 더 이상 사용되지 않으며 DXP 7.2에서 제거되었습니다. [file storage](../../../system-administration/file-storage.md) 문서는 다른 저장 옵션을 설명합니다. [데이터베이스를 업그레이드하기 전에 지원되는 파일 저장소](../../../system-administration/file-storage/file-store-migration.md) 로 마이그레이션하십시오.
+CMIS Store는 7.0.10 수정팩 14에서 더 이상 사용되지 않으며 DXP 7.2에서 제거되었습니다. [파일 스토리지](../../../system-administration/file-storage.md) 문서는 다른 저장 옵션을 설명합니다. [데이터베이스를 업그레이드하기 전에 지원되는 파일 저장소](../../../system-administration/file-storage/file-store-migration.md) 로 마이그레이션하십시오.
 
 ## 시스템 설정에서 파일 저장소 구성
 

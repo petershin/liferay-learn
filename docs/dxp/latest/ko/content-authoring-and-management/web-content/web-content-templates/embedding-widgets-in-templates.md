@@ -27,7 +27,7 @@
 1. 완료되면 _저장_ 을 클릭합니다.
 
 ```{important}
-`theme` 변수는 더 이상 FreeMarker 컨텍스트에 주입되지 않습니다. DXP 7.0에서 테마 변수가 제거된 이유와 코드 업데이트 제안에 대한 자세한 내용은 [Taglib는 더 이상 FreeMarker의 테마 변수를 통해 액세스할 수 없음](https://help.liferay.com/hc/articles/)을 참조하세요. 360017892092-Breaking-Changes 소개-#taglibs-are-no-longer-accessible-via-the-the-the-the-me-variable-in-freemarker) 주요 변경 항목.
+`theme` 변수는 더 이상 FreeMarker 컨텍스트에 주입되지 않습니다. DXP 7.0에서 테마 변수가 제거된 이유와 코드 업데이트 제안에 대한 자세한 내용은 [Taglib는 더 이상 FreeMarker의 테마 변수를 통해 액세스할 수 없음](https://help.liferay.com/hc/articles/) 을 참조하세요. 360017892092-Breaking-Changes 소개-#taglibs-are-no-longer-accessible-via-the-the-the-the-me-variable-in-freemarker) 주요 변경 항목.
 ```
 
 ## 다른 템플릿 포함

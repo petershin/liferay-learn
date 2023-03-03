@@ -20,7 +20,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 
 Then, follow these steps to deploy an example to see how Fragment configuration options work:
 
-1. Download and unzip the [example Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip):
+1. Download and unzip the [example Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip) :
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip -O

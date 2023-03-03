@@ -112,7 +112,7 @@ util.sendSlackMessage("About to create Liferay Cloud build...")
 
 ## 환경 변수 참조
 
-다음 환경 변수는 기본 Jenkinsfile에서만 사용됩니다. 그들이 무엇을 하는지 보려면 [파이프라인 옵션에 관한 Jenkins 문서를 참조하십시오](https://jenkins.io/doc/book/pipeline/syntax/#options).
+다음 환경 변수는 기본 Jenkinsfile에서만 사용됩니다. 그들이 무엇을 하는지 보려면 [파이프라인 옵션에 관한 Jenkins 문서를 참조하십시오](https://jenkins.io/doc/book/pipeline/syntax/#options) .
 
 이름 | 기본값 | 설명 |
 :--- | :--- | :--- |
@@ -125,7 +125,7 @@ util.sendSlackMessage("About to create Liferay Cloud build...")
 `LCP_CI_DEPLOY_TARGET` | | [자동 배포](../build-and-deploy/automatically-deploying-ci-service-builds.md)가 배포될 환경을 설정합니다. `LCP_CI_DEPLOY_BRANCH`가 설정된 경우에만 사용됩니다. |
 `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` | | Liferay 서비스를 배포할 때 CI가 자동으로 적용되는 핫픽스(`.zip` 확장자 없음)의 이름입니다. `{ENV}`를 환경 이름(모두 대문자) 또는 `COMMON`으로 바꿉니다. |
 `LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20` | *stashes*가 보존되는 최근 빌드 수를 설정합니다. 보관함은 `LCP_CI_ARTIFACT_NUM_TO_KEEP` 변수에서 허용하는 것보다 더 많은 빌드에 대해 보존할 수 없습니다. |
-`LCP_CI_SCM_MANAGE_HOOKS` | `참` | 코드 호스팅 플랫폼(예: GitHub)에 대해 [자동 웹 후크 관리](../getting-started/configuring-your-github-repository.md#personal-access-token-usage)를 활성화 또는 비활성화하는 옵션입니다. |
+`LCP_CI_SCM_MANAGE_HOOKS` | `참` | 코드 호스팅 플랫폼(예: GitHub)에 대해 [자동 웹 후크 관리](../getting-started/configuring-your-github-repository.md#personal-access-token-usage) 를 활성화 또는 비활성화하는 옵션입니다. |
 `LCP_CI_SCM_PROVIDER` | `github` | 빌드 검색에 사용되는 소스 제어 관리 서비스를 설정합니다. 허용되는 값은 [`bitbucket`](../getting-started/configuring-your-bitbucket-repository.md), [`github`](../getting-started/configuring-your-github-repository.md)입니다. , 및 [`gitlab`](../getting-started/configuring-your-gitlab-repository.md). |
 `LCP_CI_SCM_REPOSITORY_NAME` | | 빌드(GitHub, Bitbucket 또는 GitLab에서)를 검색하는 데 사용되는 리포지토리 이름을 설정합니다. |
 `LCP_CI_SCM_REPOSITORY_OWNER` | | 빌드를 검색하는 데 사용되는 저장소 소유자입니다. |

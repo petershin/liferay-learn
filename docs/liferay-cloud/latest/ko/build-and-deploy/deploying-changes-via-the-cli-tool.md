@@ -2,24 +2,23 @@
 
 CLI 도구를 사용하면 Jenkins 빌드를 트리거하거나 Liferay Cloud Console을 사용하지 않고 로컬 프로젝트 변경 사항을 직접 배포할 수 있습니다. 이 자습서는 포털 속성을 Liferay 서비스에 추가하고 CLI 도구를 사용하여 `dev` 에 배포하는 과정을 안내합니다.
 
-시작하려면 먼저 [CLI 도구](../reference/command-line-tool.md) 가 설치되어 있고 사용할 준비가 되어 있어야 하며 프로젝트 Git 리포지토리의 로컬 복사본(예: [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository), [Bitbucket](https://confluence.atlassian.com/bitbucketserver/clone-a-repository-790632786.html), [GitLab](https://docs.gitlab.com/ee/university/training/topics/getting_started.html#instantiate-workflow-with-clone))이 필요합니다.
+시작하려면 먼저 [CLI 도구](../reference/command-line-tool.md) 가 설치되어 있고 사용할 준비가 되어 있어야 하며 프로젝트 Git 리포지토리의 로컬 복사본(예: [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) , [Bitbucket](https://confluence.atlassian.com/bitbucketserver/clone-a-repository-790632786.html) , [GitLab](https://docs.gitlab.com/ee/university/training/topics/getting_started.html#instantiate-workflow-with-clone) )이 필요합니다.
 
 ```{note}
 CLI 도구는 프로젝트에 변경 사항을 배포하는 빠른 방법을 제공하지만 대부분의 배포에는 CI 서비스 및 Liferay Cloud 콘솔을 사용하는 것이 가장 좋습니다. 자세한 방법은 [Liferay Cloud Console을 통해 변경 사항 배포](./deploying-changes-via-the-liferay-cloud-console.md)를 참조하십시오.
 ```
 
-프로젝트에서 버전 `3.xx` 서비스를 사용하는 경우 CLI 도구로 변경 사항을 배포하기 전에</code>
- `</a> 파일을 준비해야 합니다.</p>
+프로젝트에서 버전 `3.x.x` 서비스를 사용하는 경우 CLI를 사용하여 변경 사항을 배포하기 전에 먼저 `LCP.json` 파일을 [준비](#preparing-lcpjson-files-in-project-version-3) 해야 합니다. 도구.
 
-<p spaces-before="0">그렇지 않으면 이 단계를 건너뛰고 배포 프로세스를 시작할 수 있습니다.</p>
+그렇지 않으면 이 단계를 건너뛰고 배포 프로세스를 시작할 수 있습니다.
 
 * [Adding a Portal Property to the Liferay Service](#adding-a-portal-property-to-the-liferay-service)
 * [Deploying Your New Build via the CLI Tool](#deploying-your-new-build-via-the-cli-tool)
 * [Verifying Your Sample Deployment](#verifying-your-sample-deployment)
 
-<h2 spaces-before="0">프로젝트 버전 3에서 LCP.json 파일 준비</h2>
+## 프로젝트 버전 3에서 LCP.json 파일 준비
 
-<p spaces-before="0">프로젝트에서 버전 <code>3.xx` 서비스를 사용하지 않는 경우 이 단계를 건너뛰고 [변경을 시작하십시오](#adding-a-portal-property-to-the-liferay-service).</p> 
+프로젝트에서 버전 `3.x.x` 서비스를 사용하지 않는 경우 이 단계를 건너뛰고 [변경](#adding-a-portal-property-to-the-liferay-service) 을 시작하십시오.
 
 그렇지 않으면 리포지토리의 루트에서 `gradle.properties` 을 열고 다음 속성과 같이 각 서비스에 대한 Docker 이미지 버전의 속성을 찾습니다.
 
@@ -56,7 +55,7 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
    git checkout -b example-cli-deployment-branch
    ```
 
-1. ``<project>\liferay\configs\dev\`로 이동하고 다음 속성을``Portal-env.properties` 파일에 추가합니다. 
+1. `<project>\liferay\configs\dev\` 로 이동하고 다음 속성을 `Portal-env.properties` 파일에 추가합니다. 
 
    ```properties
    web.server.display.node=true

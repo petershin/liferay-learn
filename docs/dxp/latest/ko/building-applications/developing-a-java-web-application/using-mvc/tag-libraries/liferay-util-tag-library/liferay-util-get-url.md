@@ -29,5 +29,5 @@ get URL 태그는 `url` 속성에서 제공하는 URL을 스크랩합니다. `va
 ## 관련 항목
 
 * [Liferay Util 매개변수 태그 사용](./liferay-util-param.md)
-* [Liferay Util 포함 태그 사용](https://help.liferay.com/hc/en-us/articles/360029145351-Using-Liferay-Util-Include)
-* [AUI 태그립 사용](https://help.liferay.com/hc/en-us/articles/360028832812-Using-AUI-Taglibs)
+* [Liferay Util 포함 태그 사용](https://help.liferay.com/hc/ko/articles/360029145351-Using-Liferay-Util-Include)
+* [AUI 태그립 사용](https://help.liferay.com/hc/ko/articles/360028832812-Using-AUI-Taglibs)

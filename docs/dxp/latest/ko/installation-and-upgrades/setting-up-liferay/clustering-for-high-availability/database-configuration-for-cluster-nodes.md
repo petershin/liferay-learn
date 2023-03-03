@@ -37,7 +37,7 @@
     Liferay는 HikariCP를 연결 풀 공급자로 사용합니다.
     ```
 
-    For example JDBC connection values, please see [Database Templates](../../reference/database-templates.md).
+    For example JDBC connection values, please see [데이터베이스 템플릿](../../reference/database-templates.md) .
 
 1. 쓰기 데이터 소스(접두사가 `</a> `
 
@@ -63,7 +63,7 @@
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring)을 참조하세요.
+자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 을 참조하세요.
 
 ### JNDI
 
@@ -105,14 +105,14 @@
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-   자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring)을 참조하세요.
+   자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 을 참조하세요.
 
 DXP는 다음에 시작할 때 읽기 데이터 소스, 쓰기 데이터 소스 및 카운터 데이터 소스를 사용합니다.
 
 ## 데이터베이스 복제
 
-데이터베이스 클러스터를 사용하면 내결함성과 DXP 성능이 향상됩니다. 데이터베이스 클러스터 인스턴스는 동기화 상태를 유지해야 합니다. 복제는 변경된 데이터와 변경된 스키마를 한 데이터베이스 인스턴스에서 다른 데이터베이스 인스턴스로 복사하는 프로세스입니다. 모든 [지원 데이터베이스](https://help.liferay.com/hc/en-us/articles/360049238151) 은 복제를 지원합니다. 데이터베이스 클러스터를 사용하는 경우 데이터베이스 공급업체의 지침에 따라 복제용 데이터베이스를 설정하십시오.
+데이터베이스 클러스터를 사용하면 내결함성과 DXP 성능이 향상됩니다. 데이터베이스 클러스터 인스턴스는 동기화 상태를 유지해야 합니다. 복제는 변경된 데이터와 변경된 스키마를 한 데이터베이스 인스턴스에서 다른 데이터베이스 인스턴스로 복사하는 프로세스입니다. 모든 [지원 데이터베이스](https://help.liferay.com/hc/ko/articles/360049238151) 은 복제를 지원합니다. 데이터베이스 클러스터를 사용하는 경우 데이터베이스 공급업체의 지침에 따라 복제용 데이터베이스를 설정하십시오.
 
 ## 다음
 
-이제 클러스터에 대한 데이터베이스를 구성했으므로 계속해서 [DXP 클러스터링 요구 사항](./clustering-for-high-availability.md#clustering-requirements)을 해결할 수 있습니다. 다음 요구 사항은 모든 노드에서 [파일 저장소](../../../system-administration/file-storage.md) 에 액세스할 수 있도록 하고 해당 파일 저장소로 각 노드를 구성하는 것입니다.
+이제 클러스터에 대한 데이터베이스를 구성했으므로 계속해서 [DXP 클러스터링 요구 사항](./clustering-for-high-availability.md#clustering-requirements) 을 해결할 수 있습니다. 다음 요구 사항은 모든 노드에서 [파일 저장소](../../../system-administration/file-storage.md) 에 액세스할 수 있도록 하고 해당 파일 저장소로 각 노드를 구성하는 것입니다.

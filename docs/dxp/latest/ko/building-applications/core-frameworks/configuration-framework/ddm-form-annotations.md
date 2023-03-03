@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [DDM 양식 주석](./liferay-v1d9.zip)을 다운로드하고 압축을 풉니다.
+1. [DDM 양식 주석](./liferay-v1d9.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-v3d9.zip -O

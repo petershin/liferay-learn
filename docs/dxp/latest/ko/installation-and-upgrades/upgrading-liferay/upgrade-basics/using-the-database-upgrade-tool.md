@@ -23,13 +23,13 @@ Liferay 인스턴스에서 분리된 데이터베이스를 수정하면 [업그�
 | 편집             | 지침 다운로드                                                                                                                                                                               |
 |:-------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 라이프레이 DXP(구독)  | [*다운로드* 페이지](https://customer.liferay.com/group/customer/downloads) 으로 이동하여 DXP 버전과 _제품/서비스 팩_ 파일 형식을 선택합니다. 표시되는 목록에서 _Liferay DXP 업그레이드 클라이언트_에 대해 _다운로드_ 클릭합니다.                    |
-| Liferay Portal | [_다운로드_ 페이지](https://www.liferay.com/downloads-community)으로 이동합니다. _Liferay Portal_ 다운로드 메뉴에서 _기타 파일_ 선택하고 _다운로드_클릭합니다. 최신 Liferay Portal 릴리스 자산 GitHub 페이지가 나타납니다. `[version]`클릭합니다. |
+| Liferay Portal | [_다운로드_ 페이지](https://www.liferay.com/downloads-community) 으로 이동합니다. _Liferay Portal_ 다운로드 메뉴에서 _기타 파일_ 선택하고 _다운로드_클릭합니다. 최신 Liferay Portal 릴리스 자산 GitHub 페이지가 나타납니다. `[version]`클릭합니다. |
 
 ## 새 설치 설정
 
 1. 새 Liferay 설치의 `[Liferay Home]/data` 폴더를 [백업](../../maintaining-a-liferay-installation/backing-up.md)의 `[Liferay Home]/data` 폴더로 교체합니다.
 
-1. DXP 활성화 키(구독) 및 [OSGi 구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md를 복사합니다. ) [백업](../../maintaining-a-liferay-installation/backing-up.md#liferay-home)에서 새 설치로.
+1. DXP 활성화 키(구독) 및 [OSGi 구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md를 복사합니다. ) [백업](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) 에서 새 설치로.
 
 1. 7.2로 업그레이드하는 경우 새 설치의 `[Liferay Home]/files/osgi/configs/` 폴더에 있는 [구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) 사용하여 검색 인덱싱을 비활성화하십시오. 예를 들어, 
 
@@ -49,7 +49,7 @@ Liferay 인스턴스에서 분리된 데이터베이스를 수정하면 [업그�
     DXP/Portal 7.3+는 검색 인덱싱을 자동으로 비활성화/재활성화합니다.
     ```
 
-1. [Commerce](https://learn.liferay.com/commerce/latest/en/index.html)사용하고 있다면 업그레이드할 준비를 하십시오. 자세한 내용은 [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/upgrading-liferay-commerce.html) 업그레이드를 참조하십시오.
+1. [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 사용하고 있다면 업그레이드할 준비를 하십시오. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/commerce/latest/ko/installation-and-upgrades/upgrading-liferay-commerce.html) 업그레이드를 참조하십시오.
 
 1. Liferay 데이터베이스 업그레이드와 함께 Marketplace 앱 데이터를 업그레이드하려면 [새 Liferay 버전을 대상으로 하는 각 앱의 최신 버전을 다운로드하고 `[Liferay Home]/deploy` 폴더에 복사합니다](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md) 그렇지 않으면 데이터베이스 업그레이드 후 앱을 설치하고 [업그레이드 후 고려 사항](./post-upgrade-considerations.md)에 설명된 대로 데이터를 업그레이드할 수 있습니다.
 
@@ -65,10 +65,10 @@ Liferay 인스턴스에서 분리된 데이터베이스를 수정하면 [업그�
 
 1. 데이터베이스 벤더의 권장 JDBC 드라이버를 사용하십시오. 예를 들어 MySQL을 사용하는 경우 [`portal-ext.properties`](../../reference/portal-properties.md) 파일에서 `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` 설정하고 MySQL JDBC 드라이버 JAR을 앱 서버로 바꿉니다. 사용합니다. 자세한 내용은 [데이터베이스 드라이버](../migrating-configurations-and-properties.md#database-drivers) 참조하십시오.
    
-   업그레이드 도구 프롬프트에 응답하거나 [업그레이드 속성 파일 사용](../reference/database-upgrade-tool-reference.md#manual-configuration)을 통해 업그레이드를 구성할 수 있습니다.
+   업그레이드 도구 프롬프트에 응답하거나 [업그레이드 속성 파일 사용](../reference/database-upgrade-tool-reference.md#manual-configuration) 을 통해 업그레이드를 구성할 수 있습니다.
 
     ```{note}
-    [새 Liferay Docker 이미지로 업그레이드](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md)하는 경우 다음을 확인하십시오. Docker 환경 변수 대신 [포털 속성](../../reference/portal-properties.md) 파일을 사용하여 데이터베이스 연결을 지정합니다. [포털 속성 참조](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html)에는 각 Liferay 환경 변수에 해당하는 포털 속성이 나열되어 있습니다.
+    [새 Liferay Docker 이미지로 업그레이드](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md)하는 경우 다음을 확인하십시오. Docker 환경 변수 대신 [포털 속성](../../reference/portal-properties.md) 파일을 사용하여 데이터베이스 연결을 지정합니다. [포털 속성 참조](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) 에는 각 Liferay 환경 변수에 해당하는 포털 속성이 나열되어 있습니다.
     ```
 1. (선택 사항) [업그레이드 보고](../reference/upgrade-reports.md)를 활성화하여 환경, 변경 사항 등을 보고서에 기록합니다.
 
@@ -94,7 +94,7 @@ Liferay 인스턴스에서 분리된 데이터베이스를 수정하면 [업그�
 
 ## 업그레이드 도구 실행
 
-업그레이드 도구는 명령줄 인터페이스를 통해 또는 [속성 파일 사용](../reference/database-upgrade-tool-reference.md#manual-configuration)을 통해 구성됩니다. 
+업그레이드 도구는 명령줄 인터페이스를 통해 또는 [속성 파일 사용](../reference/database-upgrade-tool-reference.md#manual-configuration) 을 통해 구성됩니다. 
 
 `[Liferay Home]/tools/portal-tools-db-upgrade-client` 폴더의 `db_upgrade.sh` 스크립트는 업그레이드 도구를 호출합니다. `--help` 옵션은 도구의 사용법을 설명합니다.
 
@@ -116,7 +116,7 @@ Liferay 인스턴스에서 분리된 데이터베이스를 수정하면 [업그�
 
     위의 명령은 애플리케이션 서버에 권장되는 것과 동일한 JVM 옵션으로 업그레이드 도구를 실행합니다. 파일 인코딩(`UTF-8`), 시간대(`GMT`), 국가, 언어 및 메모리 설정(`-Xmx 값`)은 모두 애플리케이션 서버의 설정과 일치해야 합니다. 데이터가 10GB 이상인 데이터베이스의 경우 `-Xmx` 옵션을 사용하여 추가 메모리를 할당하십시오.
     
-     [업그레이드 속성 파일](../reference/database-upgrade-tool-reference.md#manual-configuration)을 사용하여 업그레이드를 구성하지 않은 경우 업그레이드 도구는 구성 값을 묻는 메시지를 표시하고 괄호 안에 기본값을 표시합니다. . 다음은 상호 작용의 예입니다.
+     [업그레이드 속성 파일](../reference/database-upgrade-tool-reference.md#manual-configuration) 을 사용하여 업그레이드를 구성하지 않은 경우 업그레이드 도구는 구성 값을 묻는 메시지를 표시하고 괄호 안에 기본값을 표시합니다. . 다음은 상호 작용의 예입니다.
 
     ```
     Please enter your application server (tomcat):

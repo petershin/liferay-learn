@@ -16,13 +16,13 @@ Liferay DXP가 제대로 작동하려면 WebSphere 9(Fix Pack 11 이상)를 설�
 DXP를 설치하기 전에 [Liferay-Tomcat 번들 설치](../installing-a-liferay-tomcat-bundle.md) 및 [데이터베이스 구성](../configuring-a-database.md) 기사를 검토하십시오. .
 ```
 
-다음 파일은 WebSphere 응용 프로그램 서버에 Liferay DXP를 설치하는 데 필요하며 [도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community)에서 사용할 수 있습니다.
+다음 파일은 WebSphere 응용 프로그램 서버에 Liferay DXP를 설치하는 데 필요하며 [도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community) 에서 사용할 수 있습니다.
 
 * DXP 전쟁 파일
 * OSGi 종속성 ZIP 파일
 * 종속성 ZIP 파일(DXP 7.3 이하)
 
-Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. JDK를 선택하려면 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 을 참조하십시오. 권장 설정은 [JVM 구성](../../reference/jvm-configuration.md) 을 참조하십시오.
+Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. JDK를 선택하려면 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오. 권장 설정은 [JVM 구성](../../reference/jvm-configuration.md) 을 참조하십시오.
 
 [`[Liferay Home]`](../../reference/liferay-home.md) 폴더는 Liferay DXP가 작동하는 데 필요한 파일과 폴더를 저장하고 관리하는 곳입니다. WebSphere에서 `[Liferay Home]` 폴더는 일반적으로 `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`입니다.
 
@@ -72,7 +72,7 @@ com.ibm.ws.webcontainer.initFilterBeforeInitServlet = true
 com.ibm.ws.webcontainer.invokeFilterInitAtStartup = true
 ```
 
-WebSphere 애플리케이션 서버에서 `webcontainer` 특성을 설정하려면 WebSphere의 [문서](http://www-01.ibm.com/support/docview.wss?rss=180&uid=swg21284395)에 있는 지시사항을 따르십시오.
+WebSphere 애플리케이션 서버에서 `webcontainer` 특성을 설정하려면 WebSphere의 [문서](http://www-01.ibm.com/support/docview.wss?rss=180&uid=swg21284395) 에 있는 지시사항을 따르십시오.
 
 ### Liferay DXP용 JVM 매개변수 설정
 
@@ -89,7 +89,7 @@ WebSphere 애플리케이션 서버에서 `webcontainer` 특성을 설정하려�
 ```
 
 ```{note}
-DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Tuning Liferay](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
+DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Liferay 튜닝](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
 ```
 
 `server.xml`의 `<jvmEntries genericJvmArguments=.../>` 속성에서 UTF-8 속성을 설정할 수 있습니다. 그렇지 않으면 국제 문자가 올바르게 구문 분석되지 않습니다. 최대 및 최소 힙 크기도 늘리십시오. `jvmEntries` 태그 안에 다음을 추가합니다.
@@ -155,7 +155,7 @@ com.ibm.ws.exception.RuntimeWarning: com.ibm.ws.webcontainer.exception.WebAppNot
 1. OSGi Dependencies ZIP 파일의 압축을 풀고 내용물을 `[Liferay Home]/osgi` 폴더에 넣습니다(아직 없는 경우 이 폴더를 만듭니다). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
 1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 DXP WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 DXP WAR을 임의의 사이트에 압축 해제하고 데이터베이스 공급업체의 JDBC JAR 파일을 분해된 DXP WAR의 `WEB-INF/shielded-container- lib` 폴더에 넣고 DXP WAR을 다시 압축합니다.
 
-    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 을 참조하십시오.
+    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오.
 
 ```{note}
 Hypersonic 데이터베이스는 DXP와 함께 번들로 제공되며 테스트 목적으로 유용합니다. 프로덕션 인스턴스에 HSQL을 사용하지 마세요.
@@ -179,7 +179,7 @@ DXP의 `portlet.jar` (버전 3)은 버전 2.0과 역호환됩니다. DXP 7.4 `.w
 
 1. DXP WAR(7.4+) 또는 `[Install Location]/WebSphere/AppServer/lib/ext` 폴더에서 생성한 `app_shared_libraries` 폴더로 DXP `portlet.jar` 을 복사합니다.
 
-1. [서버 관련 공유 라이브러리 사용](https://www.ibm.com/support/pages/best-practice-using-common-application-files#usingserver)에 대한 IBM의 단계를 따릅니다. 4d단계에서 *로컬 클래스 로더로 로드된 클래스 먼저(parent_Last)*를 선택해야 합니다.
+1. [서버 관련 공유 라이브러리 사용](https://www.ibm.com/support/pages/best-practice-using-common-application-files#usingserver) 에 대한 IBM의 단계를 따릅니다. 4d단계에서 *로컬 클래스 로더로 로드된 클래스 먼저(parent_Last)*를 선택해야 합니다.
 
 1. 구성을 저장합니다.
 
@@ -339,7 +339,7 @@ DXP에서는 JSP가 Java 8 바이트코드 형식으로 컴파일되어야 합�
 /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/localhostNode01Cell/applications/liferayXX.ear/deployments/liferayXX/liferayXX.war/WEB-INF/ibm-web-ext.xmi
 ```
 
-DXP `.war` 은 `ibm-web-ext.xmi` 파일과 함께 사전 패키징되어 제공됩니다. 이 형식은 기능적으로 `.xml` 와 동일하며 WebSphere는 두 형식을 모두 인식합니다. WebSphere가 JSP를 컴파일하는 방법에 대한 일반적인 정보는 [WebSphere Application Server 9.0.0.x](https://www.ibm.com/support/knowledgecenter/en/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/rweb_jspengine.html)에 대한 IBM의 공식 문서를 참조하십시오.
+DXP `.war` 은 `ibm-web-ext.xmi` 파일과 함께 사전 패키징되어 제공됩니다. 이 형식은 기능적으로 `.xml` 와 동일하며 WebSphere는 두 형식을 모두 인식합니다. WebSphere가 JSP를 컴파일하는 방법에 대한 일반적인 정보는 [WebSphere Application Server 9.0.0.x](https://www.ibm.com/support/knowledgecenter/en/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/rweb_jspengine.html) 에 대한 IBM의 공식 문서를 참조하십시오.
 
 ## DXP 시작하기
 

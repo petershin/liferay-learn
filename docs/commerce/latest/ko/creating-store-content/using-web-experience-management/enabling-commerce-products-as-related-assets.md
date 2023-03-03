@@ -8,7 +8,7 @@ Liferay DXP 7.4+는 상거래 제품을 관련 자산으로 지원하지 않습�
 
 ## 데이터베이스를 검색하도록 자산 브라우저 구성
 
-1. ``[Liferay Home]\osgi\marketplace\`로 이동합니다. ``Liferay Home` 폴더에 대한 자세한 내용은 [Liferay Home](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html)를 참조하십시오.
+1. ``[Liferay Home]\osgi\marketplace\`로 이동합니다. ``Liferay Home` 폴더에 대한 자세한 내용은 [Liferay Home](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/liferay-home.html) 를 참조하십시오.
 1. `Liferay Web Experience - Liferay Asset - Impl.lpkg` 을 찾은 다음 아카이브 관리자로 엽니다.
 1. 아카이브 관리자 창에서 `com.liferay.asset.browser.web.jar`을 엽니다.
 1. 텍스트 편집기를 사용하여 `portlet.properties` 파일을 여십시오.
@@ -49,4 +49,4 @@ Reindex를 실행하여 관련 자산이 필터에 채워졌는지 확인합니�
 ## 추가 정보
 
 * [콘텐츠 관계 정의](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
-* [기본 웹 콘텐츠 기사 추가](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)
+* [기본 웹 콘텐츠 기사 추가](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)

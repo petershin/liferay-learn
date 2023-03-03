@@ -6,7 +6,7 @@ uuid: 53090036-2e9b-4bae-b15e-81f05d63c611
 
 Liferay Commerce 번들은 [Liferay Commerce 커뮤니티 다운로드](https://commerce.liferay.dev/download) 페이지에서 다운로드할 수 있습니다. 번들에는 Apache Tomcat에 사전 배포된 최신 버전의 Liferay Commerce 및 Liferay Portal이 포함되어 있습니다.
 
-번들을 받기 전에 [Liferay Commerce Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151) 에서 지원되는 기술 목록을 읽어보십시오.
+번들을 받기 전에 [Liferay Commerce Compatibility Matrix](https://help.liferay.com/hc/ko/articles/360049238151) 에서 지원되는 기술 목록을 읽어보십시오.
 
 Liferay Commerce 번들을 사용하려면 다음 단계를 따르십시오.
 
@@ -32,5 +32,5 @@ Liferay Commerce 번들을 사용하려면 다음 단계를 따르십시오.
 ## 추가 정보
 
 * [설치 개요](../installation-overview.md)
-* [라이프레이 DXP 설치](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html)
-* [Liferay Commerce 3.0 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)
+* [Liferay-Tomcat 번들 설치](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html)
+* [Liferay Commerce 3.0 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151)

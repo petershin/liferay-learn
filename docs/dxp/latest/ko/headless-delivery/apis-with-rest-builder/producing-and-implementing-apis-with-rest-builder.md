@@ -11,7 +11,7 @@ REST Builder를 사용하면 빌드하려는 API를 정의할 수 있으며 REST
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Acme Foo API](./liferay-r3b2.zip)가 포함된 `.zip` 아카이브를 다운로드하고 압축을 풉니다.
+1. [Acme Foo API](./liferay-r3b2.zip) 가 포함된 `.zip` 아카이브를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O

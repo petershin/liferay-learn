@@ -31,7 +31,7 @@ elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
 Elasticsearch는 Liferay가 기본적으로 사용하는 확장성이 뛰어난 전체 텍스트 검색 엔진입니다. Elasticsearch는 비생산 목적으로 Liferay와 함께 번들로 제공됩니다. 프로덕션에서 Liferay는 별도의 원격 서버에서 실행되는 Elasticsearch가 필요합니다.
 
 ```{important}
-Elasticsearch 버전 및 Liferay 버전과 호환되는 서버 구성에 대한 [호환성 매트릭스](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix)를 항상 확인하세요.
+Elasticsearch 버전 및 Liferay 버전과 호환되는 서버 구성에 대한 [호환성 매트릭스](https://help.liferay.com/hc/ko/sections/360002103292-Compatibility-Matrix) 를 항상 확인하세요.
 ```
 
 ```{important}

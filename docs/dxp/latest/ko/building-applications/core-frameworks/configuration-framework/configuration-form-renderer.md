@@ -1,6 +1,6 @@
 # 구성 양식 렌더러
 
-[구성 인터페이스를 생성하면](./setting-and-accessing-configurations.html#creating-the-configuration-interface)구성 UI가 자동으로 생성됩니다. 그러나 경우에 따라 UI의 모양과 느낌을 사용자 지정해야 합니다. 예를 들어 회사의 디자인 미학과 일치하도록 UI를 수정하려고 합니다. `ConfigurationFormRenderer` 구현으로 수행하는 방법은 다음과 같습니다.
+[구성 인터페이스를 생성하면](./setting-and-accessing-configurations.html#creating-the-configuration-interface) 구성 UI가 자동으로 생성됩니다. 그러나 경우에 따라 UI의 모양과 느낌을 사용자 지정해야 합니다. 예를 들어 회사의 디자인 미학과 일치하도록 UI를 수정하려고 합니다. `ConfigurationFormRenderer` 구현으로 수행하는 방법은 다음과 같습니다.
 
 ## 예제 프로젝트 보기
 
@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [구성 양식 렌더러](./liferay-b7r2.zip)를 다운로드하고 압축을 풉니다.
+1. [구성 양식 렌더러](./liferay-b7r2.zip) 를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
@@ -55,7 +55,7 @@
 `ConfigurationFormRenderer`을 사용할 때 `generateUI` 주석은 생성된 UI [를 숨기는 데 필요하지](./hiding-the-configuration-ui.md).
 
 ```{note}
-DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay)을 참조하십시오.
+DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay) 을 참조하십시오.
 ```
 
 ## 구성 양식 렌더러 구현

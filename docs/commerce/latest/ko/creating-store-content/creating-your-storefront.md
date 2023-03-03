@@ -2,7 +2,7 @@
 
 Liferay Commerce에서 상점을 구축하려면 완전한 카탈로그 이상이 필요합니다. 처음부터 상점 첫 화면을 구축하는 상점 관리자는 제품을 표시하고 판매하기 위해 일련의 페이지를 추가해야 합니다. 이 문서는 기능적인 상점 첫화면용으로 생성될 수 있는 페이지에 대한 참조 역할을 합니다.
 
-Minium과 같은 [Accelerator](../starting-a-store/accelerators.md)을 사용하면 사용자를 위해 이러한 페이지가 생성됩니다. Liferay Commerce는 Liferay DXP를 기반으로 구축되었습니다. [페이지 생성](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)에 대해 자세히 알아보려면 클릭하십시오.
+Minium과 같은 [Accelerator](../starting-a-store/accelerators.md)을 사용하면 사용자를 위해 이러한 페이지가 생성됩니다. Liferay Commerce는 Liferay DXP를 기반으로 구축되었습니다. [페이지 생성](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages) 에 대해 자세히 알아보려면 클릭하십시오.
 
 다음 유형의 페이지를 만들 수 있습니다.
 
@@ -23,5 +23,5 @@ Minium과 같은 [Accelerator](../starting-a-store/accelerators.md)을 사용하
 ## 추가 정보
 
 * [위젯 참조 가이드](./liferay-commerce-widgets/widget-reference.md)
-* [페이지 만들기](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
+* [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)
 * [카탈로그 페이지 생성](./creating-a-catalog-page.md)

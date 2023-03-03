@@ -7,7 +7,7 @@ uuid: 8aba958f-0074-4664-bacd-fb45d164632e
 특정 기준에 따라 자산을 동적으로 선택하거나 수동으로 표시할 자산을 정확히 지정하도록 자산 게시자 위젯을 구성할 수 있습니다. [컬렉션](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)의 자산을 표시할 수도 있습니다.
 
 ```{note}
-Liferay 7.2 이하에서 컬렉션은 [콘텐츠 세트](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages)라고 합니다. .md#liferay-dxp-7-2).
+Liferay 7.2 이하에서 컬렉션은 [콘텐츠 세트](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages) 라고 합니다. .md#liferay-dxp-7-2).
 ```
 
 *자산 게시자* 위젯에서 게시할 자산을 선택하려면
@@ -18,7 +18,7 @@ Liferay 7.2 이하에서 컬렉션은 [콘텐츠 세트](../../../content-author
 
 1. *구성* 선택하여 구성 대화 상자를 표시합니다.
 
-    자산 선택에서 자산을 필터링할 방법을 선택합니다. 이러한 옵션에 대한 설명은 자산 선택 옵션 [](#asset-selection-options)참조하십시오.
+    자산 선택에서 자산을 필터링할 방법을 선택합니다. 이러한 옵션에 대한 설명은 자산 선택 옵션 [](#asset-selection-options) 참조하십시오.
 
     ![구성 창에는 설정 탭 아래에 다른 자산 선택 옵션이 있습니다.](selecting-assets-in-the-asset-publisher-widget/images/02.png)
 
@@ -46,7 +46,7 @@ Liferay 7.2 이하에서 컬렉션은 [콘텐츠 세트](../../../content-author
  ![선택을 클릭하고 저장된 컬렉션에서 선택합니다.](selecting-assets-in-the-asset-publisher-widget/images/04.png)
 
 ```{note}
-개발자는 컬렉션 공급자를 사용하여 보다 고급 기준으로 특정 컬렉션을 만들 수 있습니다. 자세히 알아보려면 [정보 목록 제공자 만들기](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider)에 대한 정보를 읽어보십시오. 프레임워크](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서.
+개발자는 컬렉션 공급자를 사용하여 보다 고급 기준으로 특정 컬렉션을 만들 수 있습니다. 자세히 알아보려면 [정보 목록 제공자 만들기](https://help.liferay.com/hc/ko/articles/360029067271-Creating-an-Information-List-Provider) 에 대한 정보를 읽어보십시오. 프레임워크](https://help.liferay.com/hc/ko/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서.
 ```
 
 ### 동
@@ -55,7 +55,7 @@ Liferay 7.2 이하에서 컬렉션은 [콘텐츠 세트](../../../content-author
 
   1. 소스 섹션에서 *자산 유형* 드롭다운 메뉴를 사용하여 자산을 선택합니다. 특정 자산 유형을 선택하거나 *둘 이상 선택* 다른 유형 중에서 선택합니다.
   1. 범위 섹션에서 개별 사이트 또는 다른 사이트의 자산을 표시하도록 선택합니다.
-  1. 필터 섹션에서 자산 게시자 위젯의 자산에 대해 *규칙* 정의합니다. [카테고리](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md), [태그](../../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags)또는 키워드를 기반으로 규칙을 정의할 수 있습니다.
+  1. 필터 섹션에서 자산 게시자 위젯의 자산에 대해 *규칙* 정의합니다. [카테고리](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md), [태그](../../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags) 또는 키워드를 기반으로 규칙을 정의할 수 있습니다.
   1. 정의한 경우 *사용자 정의 사용자 속성* 포함합니다.
   1. 순서 섹션에서 자산 게시자 위젯의 자산 표시 순서를 선택합니다.
 

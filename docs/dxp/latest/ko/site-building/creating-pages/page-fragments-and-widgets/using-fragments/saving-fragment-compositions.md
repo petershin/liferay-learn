@@ -28,7 +28,7 @@ uuid: e6e7bd72-a79e-420a-be70-04c947330763
 
 1. 컴포지션의 *인라인 콘텐츠* (예: 링크, 텍스트, 이미지) 저장 여부 결정
 
-1. 컴포지션의 [*매핑 구성*](./configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)을 저장할지 여부를 결정합니다.
+1. 컴포지션의 [*매핑 구성*](./configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) 을 저장할지 여부를 결정합니다.
 
 1. 새 조각에 대해 원하는 조각 세트를 선택합니다.
 
@@ -60,10 +60,10 @@ Liferay DXP 7.1 및 7.2에서 *제품 메뉴*를 열고 *사이트* &rarr; *사�
 
 ![Container Fragment를 사용한 샘플 Fragment 구성의 예](./saving-fragment-compositions/images/04.png)
 
-* [1단계: 새 콘텐츠 페이지 만들기](#step-1-creating-a-new-content-page).
-* [2단계: 컨테이너 조각 구성](#step-2-configuring-the-container-fragment).
-* [3단계: 조각 구성 저장](#step-3-saving-the-fragment-composition).
-* [4단계: Style Book에서 기본 컨테이너 너비 설정](#step-4-setting-the-default-container-width-in-the-style-book).
+* [1단계: 새 콘텐츠 페이지 만들기](#step-1-creating-a-new-content-page) .
+* [2단계: 컨테이너 조각 구성](#step-2-configuring-the-container-fragment) .
+* [3단계: 조각 구성 저장](#step-3-saving-the-fragment-composition) .
+* [4단계: Style Book에서 기본 컨테이너 너비 설정](#step-4-setting-the-default-container-width-in-the-style-book) .
 
 ### 1단계: 새 콘텐츠 페이지 만들기
 

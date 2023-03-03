@@ -8,7 +8,7 @@ uuid: 2ea1982c-6ad1-4c7e-b3fa-5d35df475d84
 
 {bdg-secondary}`사용 가능한 Liferay DXP 7.4 U35+`
 
-Liferay Connector to Salesforce는 [Talend](https://help.talend.com/home) 작업 디자인과 Liferay의 [Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications)를 사용합니다. /core-frameworks/job-scheduler-framework/using-job-scheduler.html) Salesforce에서 Liferay DXP로 데이터를 가져옵니다. 커넥터를 [다운로드](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)하여 Liferay 인스턴스에 `.lpkg` 파일로 배포할 수 있습니다. 이 파일에는 Salesforce 데이터 필드를 Liferay 데이터 필드에 매핑하는 Talend 작업이 포함되어 있습니다.
+Liferay Connector to Salesforce는 [Talend](https://help.talend.com/home) 작업 디자인과 Liferay의 [Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications) 를 사용합니다. /core-frameworks/job-scheduler-framework/using-job-scheduler.html) Salesforce에서 Liferay DXP로 데이터를 가져옵니다. 커넥터를 [다운로드](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) 하여 Liferay 인스턴스에 `.lpkg` 파일로 배포할 수 있습니다. 이 파일에는 Salesforce 데이터 필드를 Liferay 데이터 필드에 매핑하는 Talend 작업이 포함되어 있습니다.
 
 일단 배포되면 Liferay는 각 Talend 작업에 대한 작업 스케줄러 작업을 자동으로 생성합니다. 그런 다음 각 작업을 수동으로 구성 및 실행하거나 Job Scheduler를 통해 특정 간격으로 실행되도록 예약할 수 있습니다.
 
@@ -33,9 +33,9 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 항목이 없습
 
 ## Liferay DXP에 커넥터 배포
 
-1. [Liferay Marketplace](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)에서 커넥터를 다운로드합니다.
+1. [Liferay Marketplace](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) 에서 커넥터를 다운로드합니다.
 
-1. `.lpkg` 파일을 DXP 인스턴스의 [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) 폴더에 복사합니다.
+1. `.lpkg` 파일을 DXP 인스턴스의 [Liferay Home](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/liferay-home.html) 폴더에 복사합니다.
 
 1. 애플리케이션 서버 콘솔에 다음 메시지가 나타나는지 확인합니다. 
 
@@ -132,7 +132,7 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 항목이 없습
 
 ## 작업 스케줄러 작업 실행
 
-일단 구성되면 *지금 실행*클릭하여 수동으로 각 작업을 실행하거나 자동으로 실행되도록 예약할 수 있습니다. 자세한 내용은 [Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) 사용을 참조하십시오.
+일단 구성되면 *지금 실행*클릭하여 수동으로 각 작업을 실행하거나 자동으로 실행되도록 예약할 수 있습니다. 자세한 내용은 [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) 사용을 참조하십시오.
 
 ```{important}
 이러한 작업을 실행하면 리소스를 많이 사용하고 플랫폼 성능이 저하될 수 있습니다. 성능에 미치는 영향을 줄이려면 사용량이 가장 많은 시간에는 실행하지 마십시오.
@@ -141,4 +141,4 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 항목이 없습
 ## 추가 정보
 
 * [라이프레이 마켓플레이스](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)
-* [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)
+* [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)

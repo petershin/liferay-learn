@@ -87,8 +87,8 @@ Liferay DXP 설치는 다음 수정 팩 최소 요구 사항을 충족해야 합
 
 1. [Liferay DXP 데이터 소스 추가](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)단계를 따르십시오.
 
-1. 오류가 지속되면 DXP 인스턴스에서 JSON 웹 서비스가 활성화되어 있는지 확인하십시오. 기본적으로 활성화되어 있습니다. [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) 설정 json.web.service.enabled=false(예: [portal-ext.properties 파일](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)에서 설정)를 사용하여 비활성화한 경우 설정을 삭제하거나 속성 값을 true로 설정합니다.
+1. 오류가 지속되면 DXP 인스턴스에서 JSON 웹 서비스가 활성화되어 있는지 확인하십시오. 기본적으로 활성화되어 있습니다. [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) 설정 json.web.service.enabled=false(예: [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 에서 설정)를 사용하여 비활성화한 경우 설정을 삭제하거나 속성 값을 true로 설정합니다.
 
 ## 로그인한 사용자가 익명으로 표시됨
 
-[연락처 동기화](../getting-started/syncing-sites-and-contacts.md#syncing-contacts)일 때 Analytics Cloud는 Liferay DXP 내에 존재하는 사용자 레코드에 의존합니다. 따라서 [SSO](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/securing-liferay/configuring-sso.html) 또는 [LDAP](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html)을 사용하는 경우 연락처를 Analytics Cloud와 동기화하기 전에 모든 사용자를 Liferay DXP로 가져오거나 매핑해야 합니다.
+[연락처 동기화](../getting-started/syncing-sites-and-contacts.md#syncing-contacts) 일 때 Analytics Cloud는 Liferay DXP 내에 존재하는 사용자 레코드에 의존합니다. 따라서 [싱글 사인온 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/securing-liferay/configuring-sso.html) 또는 [LDAP 디렉토리에 연결](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) 을 사용하는 경우 연락처를 Analytics Cloud와 동기화하기 전에 모든 사용자를 Liferay DXP로 가져오거나 매핑해야 합니다.

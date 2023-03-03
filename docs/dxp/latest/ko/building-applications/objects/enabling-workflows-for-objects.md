@@ -2,9 +2,9 @@
 
 > 사용 가능: Liferay DXP/Portal 7.4+
 
-게시된 모든 개체는 워크플로 프레임워크와 자동으로 통합되므로 정의된 검토 및 승인 프로세스를 통해 개체 항목 생성을 지시할 수 있습니다. 개체에 대한 워크플로를 활성화하는 방법은 개체 범위( [회사](#company-scoped-objects) 또는 [사이트](#site-scoped-objects))에 따라 다릅니다.
+게시된 모든 개체는 워크플로 프레임워크와 자동으로 통합되므로 정의된 검토 및 승인 프로세스를 통해 개체 항목 생성을 지시할 수 있습니다. 개체에 대한 워크플로를 활성화하는 방법은 개체 범위( [회사](#company-scoped-objects) 또는 [사이트](#site-scoped-objects) )에 따라 다릅니다.
 
-일반적인 워크플로 기능에 대한 자세한 내용은 [Workflow](../../process-automation/workflow.md) 설명서를 참조하십시오.
+일반적인 워크플로 기능에 대한 자세한 내용은 [워크플로우](../../process-automation/workflow.md) 설명서를 참조하십시오.
 
 ## 회사 범위 객체
 

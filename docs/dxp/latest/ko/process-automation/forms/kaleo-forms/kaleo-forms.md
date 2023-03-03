@@ -5,7 +5,7 @@ uuid: 8838df23-e03b-4ab6-8c41-8893d489771d
 # Kaleo 양식
 
 ```{important}
-Kaleo Forms는 Liferay 7.4에서 [유지 관리 모드](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)에 있습니다. 가능하면 [Objects](../../../building-applications/objects.md)을 사용하십시오.
+Kaleo Forms는 Liferay 7.4에서 [유지 관리 모드](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)에 있습니다. 가능하면 [객체](../../../building-applications/objects.md) 을 사용하십시오.
 ```
 
 Liferay의 *Kaleo Forms* 솔루션은 *Workflow Designer* 과 *Dynamic Data Lists* 의 기능을 결합하여 양식 기반 비즈니스 프로세스를 생성합니다. 이를 통해 양식을 워크플로 작업과 통합하여 회의실 체크아웃 양식을 만들고 티켓 프로세스를 지원하는 등의 작업을 수행할 수 있습니다.

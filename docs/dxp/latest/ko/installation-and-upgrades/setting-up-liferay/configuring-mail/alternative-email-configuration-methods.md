@@ -27,7 +27,7 @@
 
 1. 기본 메일 세션 값을 자신의 값으로 바꿉니다.
 
-1. `portal-ext.properties` 파일을 [Liferay Home](../../reference/liferay-home.md)에 넣습니다.
+1. `portal-ext.properties` 파일을 [Liferay Home](../../reference/liferay-home.md) 에 넣습니다.
 
 DXP는 다음에 시작할 때 메일 세션에 연결합니다.
 

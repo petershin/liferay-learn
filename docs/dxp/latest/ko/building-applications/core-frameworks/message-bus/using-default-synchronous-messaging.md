@@ -126,7 +126,7 @@
 
 ## 리스너 검사
 
-`m4q7-charlie-impl` 모듈의 `M4Q7CharlieMessageListener` 클래스는 `acme/m4q7_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)로 전송된 메시지를 수신합니다. [Listening for Messages](./listening-for-messages.md) 이 보여주는 것과 같은 방식으로 등록됩니다.
+`m4q7-charlie-impl` 모듈의 `M4Q7CharlieMessageListener` 클래스는 `acme/m4q7_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 로 전송된 메시지를 수신합니다. [메시지 듣기](./listening-for-messages.md) 이 보여주는 것과 같은 방식으로 등록됩니다.
 
 `M4Q7CharlieMessageListener` 클래스:
 

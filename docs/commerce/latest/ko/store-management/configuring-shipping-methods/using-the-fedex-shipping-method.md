@@ -10,7 +10,7 @@
 
 1. FedEx 비즈니스 고객 번호
 1. FedEx 고객번호 비밀번호
-1. FedEx 웹 서비스 개발자 키( [FedEx 웹 서비스](https://www.fedex.com/en-us/developer/web-services.html)에서 사용 가능)
+1. FedEx 웹 서비스 개발자 키( [FedEx 웹 서비스](https://www.fedex.com/en-us/developer/web-services.html) 에서 사용 가능)
 1. FedEx 미터 번호
 
 ## FedEx 배송 방법 활성화
@@ -79,4 +79,4 @@ FedEx 웹 서비스 개발자 가이드
 
 확장 지점을 사용하여 Liferay Commerce에서 다른 배송 방법을 추가하려면:
 
-* [새 배송 방법 만들기](https://help.liferay.com/hc/en-us/articles/360020751831)
+* [새 배송 방법 만들기](https://help.liferay.com/hc/ko/articles/360020751831)

@@ -11,7 +11,7 @@
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
    ```{note}
-   지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)를 참조하세요. . 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/references/jvm-configuration.md)을 참조하십시오.
+   지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 를 참조하세요. . 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/references/jvm-configuration.md)을 참조하십시오.
    ```
 
 1. [블레이드 CLI](../../../tooling/blade-cli/installing-and-updating-blade-cli.md)을 설치합니다.
@@ -73,7 +73,7 @@ blade gw deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 이렇게 하면 클라이언트 확장이 빌드되어 Docker 컨테이너 내의 Liferay의 `deploy/` 폴더에 배포됩니다.
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud 환경에 배포하려면 Liferay Cloud[명령줄 도구](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line- tool.html#) 대신 [`lcp deploy`](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#deploying-to-your -dxp-cloud-environment) 명령.
+클라이언트 확장을 Liferay Experience Cloud 환경에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line- tool.html#) 대신 [`lcp deploy`](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#deploying-to-your -dxp-cloud-environment) 명령.
 ```
 
 Liferay 인스턴스의 콘솔에서 배포를 확인합니다.

@@ -12,7 +12,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 
 Then, follow these steps to import an example Fragment Set to see how Fragment resources work:
 
-1. Download and unzip the [example resources Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip):
+1. Download and unzip the [example resources Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip) :
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O

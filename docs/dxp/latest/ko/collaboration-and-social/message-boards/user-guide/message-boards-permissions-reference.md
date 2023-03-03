@@ -1,6 +1,6 @@
 # 게시판 권한 참조
 
-이 문서는 _Message Boards_ 위젯의 권한을 문서화하고 사용자 및 역할에 권한을 할당할 때 참조 역할을 합니다. 일반적인 DXP 역할 및 권한에 대해 자세히 알아보려면 [역할 및 권한](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions)을 참조하십시오.
+이 문서는 _Message Boards_ 위젯의 권한을 문서화하고 사용자 및 역할에 권한을 할당할 때 참조 역할을 합니다. 일반적인 DXP 역할 및 권한에 대해 자세히 알아보려면 [역할 및 권한](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) 을 참조하십시오.
 
 ## 홈 분류 권한
 

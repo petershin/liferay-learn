@@ -99,7 +99,7 @@ FreeMarker 컨텍스트에 삽입된 구성 값은 JSON 파일에 지정된 정�
 
 ## 색상 팔레트 구성
 
-색상표 JSON 구성은 색상을 선택해야 하는 경우에 구현할 수 있는 색상 선택기를 만듭니다. [color picker 구성](#color-picker-configuration)과 달리 현재 사용하고 있는 [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)의 색상 체계에 구성된 테마 색상을 기반으로 한 옵션만 제공합니다.
+색상표 JSON 구성은 색상을 선택해야 하는 경우에 구현할 수 있는 색상 선택기를 만듭니다. [color picker 구성](#color-picker-configuration) 과 달리 현재 사용하고 있는 [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)의 색상 체계에 구성된 테마 색상을 기반으로 한 옵션만 제공합니다.
 
 이 구성은 `textColor`이라는 색상 팔레트 필드를 만듭니다.
 
@@ -375,7 +375,7 @@ FreeMarker 컨텍스트에 삽입된 구성 값은 JSON 파일에 지정된 정�
 `collectionSelector` 구성 유형을 사용하여 [컬렉션](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) 또는 컬렉션 공급자를 포함하는 프래그먼트를 개발할 수 있습니다. 수동 및 동적 컬렉션 모두에서 `collectionSelector` 을 사용할 수 있습니다.
 
 ```{note}
-개발자는 컬렉션 공급자를 사용하여 고급 기준으로 특정 컬렉션을 만들 수 있습니다. 자세히 알아보려면 [정보 목록 제공자 만들기](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider)에 대한 정보를 읽어보십시오. 프레임워크](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서.
+개발자는 컬렉션 공급자를 사용하여 고급 기준으로 특정 컬렉션을 만들 수 있습니다. 자세히 알아보려면 [정보 목록 제공자 만들기](https://help.liferay.com/hc/ko/articles/360029067271-Creating-an-Information-List-Provider) 에 대한 정보를 읽어보십시오. 프레임워크](https://help.liferay.com/hc/ko/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서.
 ```
 
 다음 JSON 구성은 `collectionSelector`을 사용하는 방법을 보여줍니다.

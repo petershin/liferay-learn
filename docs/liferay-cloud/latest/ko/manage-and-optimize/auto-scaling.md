@@ -2,14 +2,14 @@
 
 Liferay Cloud의 자동 확장 기능은 성능을 최적화하기 위해 필요에 따라 Liferay 서비스의 인스턴스를 자동으로 생성하고 제거합니다. 이렇게 하면 서버 트래픽 증가, 메모리 누수 또는 기타 문제와 같은 갑작스러운 변화를 해결할 수 있습니다. 기본적으로 이 기능은 모든 Liferay Cloud 계정에서 *비활성화* 입니다.
 
-서비스는 이 기능을 사용하여 Liferay DXP 인스턴스 수를 [정의된 최대값](#setting-the-maximum-number-of-instances)(기본적으로 10)으로 자동으로 늘리거나(업스케일) 다음으로 줄입니다(다운스케일). [`LCP.json`](../reference/configuration-via-lcp-json.md)의 `scale` 속성에 지정된 숫자입니다. `scale` 속성은 실행할 최소 인스턴스 수를 지정합니다.
+서비스는 이 기능을 사용하여 Liferay DXP 인스턴스 수를 [정의된 최대값](#setting-the-maximum-number-of-instances) (기본적으로 10)으로 자동으로 늘리거나(업스케일) 다음으로 줄입니다(다운스케일). [`LCP.json`](../reference/configuration-via-lcp-json.md)의 `scale` 속성에 지정된 숫자입니다. `scale` 속성은 실행할 최소 인스턴스 수를 지정합니다.
 
 ```json
   "scale": 2,
 ```
 
 ```{note}
-자동 크기 조정은 프로덕션 환경의 Liferay DXP 서비스에만 사용할 수 있습니다. 자동 크기 조정이 활성화되면 서비스의 각 추가 인스턴스에 시간당 요금이 부과됩니다. Auto-Scaling 요금 부과 방식에 대한 자세한 내용은 [Auto-Scaling 요금 부과 방식](https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged)을 참조하십시오. -).
+자동 크기 조정은 프로덕션 환경의 Liferay DXP 서비스에만 사용할 수 있습니다. 자동 크기 조정이 활성화되면 서비스의 각 추가 인스턴스에 시간당 요금이 부과됩니다. Auto-Scaling 요금 부과 방식에 대한 자세한 내용은 [Auto-Scaling 요금 부과 방식](https://help.liferay.com/hc/ko/articles/360030843592-How-Auto-Scaling-is-charged) 을 참조하십시오. -).
 ```
 
 ## JVM 메모리 구성
@@ -77,9 +77,9 @@ Liferay Cloud Console에서 자동 크기 조정을 활성화 또는 비활성�
 
 기본적으로 자동 크기 조정은 `liferay` 서비스의 인스턴스 수를 최대 10개까지 늘릴 수 있습니다. 그러나 필요한 경우 더 많은 인스턴스를 사용하도록 이 기본값을 재정의할 수 있습니다. 서비스가 기본 10개 이상의 인스턴스를 사용하도록 허용하려면 두 사이트에서 기본값을 재정의해야 합니다.
 
-1. `liferay` 서비스의 `LCP.json` 파일 내에서 기본 10개 이상이 필요한 경우 원하는 최대 인스턴스를 지정합니다. [`autoscale` 객체](#specifying-target-average 내에서 `maxInstances` 필드를 설정합니다. -이용):
+1. `liferay` 서비스의 `LCP.json` 파일 내에서 기본 10개 이상이 필요한 경우 원하는 최대 인스턴스를 지정합니다. [`autoscale` 객체](#specifying-target-average 내에서 `maxInstances` 필드를 설정합니다. -이용) :
    
-   1 `liferay` 서비스의 `LCP.json` 파일 내에서 기본 10개 이상이 필요한 경우 원하는 최대 인스턴스를 지정합니다. [`autoscale` 객체](#specifying-target-average-utilization)내에서 `maxInstances` 필드를 설정합니다. 
+   1 `liferay` 서비스의 `LCP.json` 파일 내에서 기본 10개 이상이 필요한 경우 원하는 최대 인스턴스를 지정합니다. [`autoscale` 객체](#specifying-target-average-utilization) 내에서 `maxInstances` 필드를 설정합니다. 
 
     ```json
     "autoscale": {

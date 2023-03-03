@@ -1,6 +1,6 @@
 # Wiki 범위 지정
 
-[위키 노드](./creating-a-node.md) 를 사용하여 콘텐츠를 구성하는 것 외에도 위키 범위를 [전역, 사이트 또는 페이지 범위](https://help.liferay.com/hc/articles/360028819992-Widget-Scope)로 지정할 수 있습니다.
+[위키 노드](./creating-a-node.md) 를 사용하여 콘텐츠를 구성하는 것 외에도 위키 범위를 [전역, 사이트 또는 페이지 범위](https://help.liferay.com/hc/articles/360028819992-Widget-Scope) 로 지정할 수 있습니다.
 
 ## 세계
 

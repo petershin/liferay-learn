@@ -50,7 +50,7 @@
       ./bin/elasticssearch
       ```
 
-1. 이 작업을 시도 중이고 아직 적절한 라이선스가 없는 경우 [Elasticsearch 평가판 라이선스](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/start-trial.html)을 시작하세요.
+1. 이 작업을 시도 중이고 아직 적절한 라이선스가 없는 경우 [Elasticsearch 평가판 라이선스](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/start-trial.html) 을 시작하세요.
 
    ```
    POST /_license/start_trial?acknowledge=true
@@ -144,4 +144,4 @@ Kibana가 원격/리더 Elasticsearch 클러스터에 연결된 경우 Managemen
 
 ![Kibana 7에서 리더 인덱스를 검사합니다.](./configuring-ccr-in-a-remote-leader-data-center/images/01.png)
 
-원격/리더 Elasticsearch 서버가 포함된 데이터 센터가 가동되고 실행되면 [로컬/팔로어 데이터 센터](./configuring-ccr-in-a-local-follower-data-center.md ).
+원격/리더 Elasticsearch 서버가 포함된 데이터 센터가 가동되고 실행되면 [로컬/팔로어 데이터 센터](./configuring-ccr-in-a-local-follower-data-center.md ) .

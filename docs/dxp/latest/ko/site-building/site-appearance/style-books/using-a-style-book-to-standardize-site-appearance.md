@@ -48,7 +48,7 @@ Liferay 7.4 U10+ 및 GA14+부터 모든 사이트에는 *Styles from Theme*라�
 
    이러한 옵션은 사이트에 사용되는 테마에서 가져옵니다. 기본 클래식 테마에 사용할 수 있는 범주에 대한 자세한 내용은 [기본 클래식 테마 범주](#default-classic-theme-categories) 을 참조하십시오.
 
-1. 선택한 범주에 제공된 필드를 사용자 지정합니다. 색상 필드는 특히 [색상을 선택하는 다양한 방법](#customizing-your-style-book-s-colors)을 제공합니다.
+1. 선택한 범주에 제공된 필드를 사용자 지정합니다. 색상 필드는 특히 [색상을 선택하는 다양한 방법](#customizing-your-style-book-s-colors) 을 제공합니다.
    
 1. *게시*를 클릭합니다.
 

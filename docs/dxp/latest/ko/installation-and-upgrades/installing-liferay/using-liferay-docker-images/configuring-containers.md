@@ -11,7 +11,7 @@ Liferay 설치에서 구성할 수 있는 모든 것은 Liferay Docker 컨테이
 * [시스템 설정](#system-settings)
 
 ```{note}
-컨테이너에 파일을 제공하는 것과 관련된 구성 사용 사례는 여기에서 [bind mounts](https://docs.docker.com/storage/bind-mounts/)를 사용하여 설명합니다. [volumes](https://docs.docker.com/storage/volumes/)을 사용할 수도 있으며 경우에 따라 `docker cp` 명령을 사용할 수도 있습니다. 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md)을 참조하세요.
+컨테이너에 파일을 제공하는 것과 관련된 구성 사용 사례는 여기에서 [bind mounts](https://docs.docker.com/storage/bind-mounts/) 를 사용하여 설명합니다. [volumes](https://docs.docker.com/storage/volumes/) 을 사용할 수도 있으며 경우에 따라 `docker cp` 명령을 사용할 수도 있습니다. 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md)을 참조하세요.
 ```
 
 ## JVM 옵션
@@ -48,7 +48,7 @@ JVM 옵션을 구성하는 또 다른 방법은 Tomcat의 `setenv.sh` 스크립�
     docker cp tmp-dxp:/opt/liferay/tomcat/bin/setenv.sh .
     ```
 
-1. [컨테이너](../using-liferay-docker-images.md#stopping-a-container)을 중지합니다.
+1. [컨테이너](../using-liferay-docker-images.md#stopping-a-container) 을 중지합니다.
 
 1. `setenv.sh`사본에서 JVM 옵션을 설정하십시오.
 
@@ -68,7 +68,7 @@ JVM 옵션을 구성하는 또 다른 방법은 Tomcat의 `setenv.sh` 스크립�
 컨테이너는 `setenv.sh` 스크립트의 JVM 옵션을 사용합니다.
 
 ```{note}
-컨테이너에 대한 바인딩 마운팅에 대한 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay)을 참조하세요. `/mnt/liferay` 폴더.
+컨테이너에 대한 바인딩 마운팅에 대한 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) 을 참조하세요. `/mnt/liferay` 폴더.
 ```
 
 ```{note}
@@ -199,7 +199,7 @@ LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
     terms.of.use.required=true
     ```
 
-1. 바인드 마운트 경로에 있는 `portal-ext.properties` 파일에서 원하는 설정을 지정하십시오. [포털 속성 파일 사용](#using-a-portal-properties-file)을 참조하세요.
+1. 바인드 마운트 경로에 있는 `portal-ext.properties` 파일에서 원하는 설정을 지정하십시오. [포털 속성 파일 사용](#using-a-portal-properties-file) 을 참조하세요.
 
     ```bash
     echo "terms.of.use.required=false" >> ./files/portal-ext.properties
@@ -232,7 +232,7 @@ LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
     ```
 
     ```{note}
-    컨테이너에 대한 바인딩 마운팅에 대한 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay)을 참조하세요. `/mnt/liferay` 폴더.
+    컨테이너에 대한 바인딩 마운팅에 대한 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) 을 참조하세요. `/mnt/liferay` 폴더.
     ```
 
 속성은 제어판의 _구성_ &rarr; _서버 관리_ &rarr; _속성_ &rarr; _시스템 속성_에서 볼 수 있습니다.
@@ -270,7 +270,7 @@ Liferay 시스템 설정은 [제어판](../../../system-administration/configuri
     ```
 
     ```{note}
-    컨테이너에 대한 바인딩 마운팅에 대한 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay)을 참조하세요. `/mnt/liferay` 폴더.
+    컨테이너에 대한 바인딩 마운팅에 대한 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) 을 참조하세요. `/mnt/liferay` 폴더.
     ```
 
 시스템 구성 요소 구성은 해당 구성 요소에 대한 화면의 _구성_ &rarr; _시스템 설정_제어판에서 볼 수 있습니다.

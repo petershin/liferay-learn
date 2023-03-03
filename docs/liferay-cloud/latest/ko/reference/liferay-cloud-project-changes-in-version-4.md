@@ -21,13 +21,13 @@ Liferay Cloud Stack 버전 4로 업그레이드하면 모든 서비스의 Docker
 
 ## 프로젝트 조직 변경
 
-리포지토리의 가장 큰 변화는 각 서비스의 파일( `LCP.json` 파일 포함)이 리포지토리의 루트에 있는 폴더(예: `liferay/` 또는 `webserver/`)로 이동되었다는 것입니다. 이러한 재배치된 서비스 폴더로 이동하고 [CLI 도구](./command-line-tool.md)를 사용하여 각 서비스를 개별적으로 배포할 수 있습니다. `lcp` 폴더는 제거되고 더 이상 이러한 서비스의 경로에 없습니다. 이러한 폴더 자체는 [Liferay 작업 공간 구조](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html)과 유사하도록 재구성되었습니다.
+리포지토리의 가장 큰 변화는 각 서비스의 파일( `LCP.json` 파일 포함)이 리포지토리의 루트에 있는 폴더(예: `liferay/` 또는 `webserver/`)로 이동되었다는 것입니다. 이러한 재배치된 서비스 폴더로 이동하고 [CLI 도구](./command-line-tool.md)를 사용하여 각 서비스를 개별적으로 배포할 수 있습니다. `lcp` 폴더는 제거되고 더 이상 이러한 서비스의 경로에 없습니다. 이러한 폴더 자체는 [Liferay 작업 공간 구조](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 과 유사하도록 재구성되었습니다.
 
 이전에 저장소의 루트에 있던 다른 여러 파일( `gradle.properties`, `build.gradle`및 `settings.gradle`포함)도 `liferay` 서비스로 이동되었습니다.
 
 ## Liferay 서비스 변경
 
-`liferay` 서비스 폴더는 이제 [Liferay Workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html)의 기능 구조를 따릅니다.
+`liferay` 서비스 폴더는 이제 [Liferay Workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 의 기능 구조를 따릅니다.
 
 `liferay` 서비스 내의 모든 구성은 이제 프로젝트의 Liferay Cloud 환경에 해당하는 환경별 `configs` 디렉토리에 속합니다. 또한 `라이센스` 폴더가 제거되었습니다. 대신 라이선스를 `배포` 폴더에 추가하십시오.
 

@@ -4,7 +4,7 @@
 
 ## LivePerson 계정 ID 찾기
 
-1. 귀하의 [LivePerson 계정](https://authentication.liveperson.net/login.html)에 로그인하십시오.
+1. 귀하의 [LivePerson 계정](https://authentication.liveperson.net/login.html) 에 로그인하십시오.
 
 1. 왼쪽 하단 모서리에 있는 *사용자 아이콘* 을 클릭합니다.
 

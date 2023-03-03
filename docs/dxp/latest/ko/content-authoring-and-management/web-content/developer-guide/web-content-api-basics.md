@@ -6,7 +6,7 @@ Liferay DXP REST 서비스를 사용하여 사이트에서 구조화된 콘텐�
 [웹 콘텐츠 템플릿](../web-content-templates/creating-web-content-templates.md)과 함께 구조를 사용하여 구조화된 콘텐츠를 렌더링할 수 있지만 구조화된 콘텐츠를 만드는 데 템플릿이 필요하지는 않습니다.
 ```
 
-아래의 구조 및 구조화된 콘텐츠에 대한 cURL 및 Java 샘플을 참조하세요. 구조화된 콘텐츠 관리에 대한 고급 예제는 [Advanced Web Content API](./advanced-web-content-api.md)을 참조하십시오. Liferay DXP에서 REST API 사용에 대한 개요는 [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)을 참조하십시오.
+아래의 구조 및 구조화된 콘텐츠에 대한 cURL 및 Java 샘플을 참조하세요. 구조화된 콘텐츠 관리에 대한 고급 예제는 [고급 웹 콘텐츠 API](./advanced-web-content-api.md) 을 참조하십시오. Liferay DXP에서 REST API 사용에 대한 개요는 [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)을 참조하십시오.
 
 ## 환경 설정
 ```{include} /_snippets/run-liferay-portal.md
@@ -45,7 +45,7 @@ Liferay DXP Headless Delivery API에서 다음 서비스를 사용하여 웹 콘
 
 ### 사이트 ID 식별
 
-사이트 ID를 식별하려면 [여기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)지침을 따르십시오.
+사이트 ID를 식별하려면 [여기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 지침을 따르십시오.
 
 ### 사용자 인터페이스에서 기본 웹 콘텐츠 기사 만들기
 
@@ -288,7 +288,7 @@ java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSite
 |:------- |:-------------------- |
 | $1      | `contentStructureId` |
 
-아래는 JSON 출력입니다. `ID` 및 `이름`으로 Liferay DXP의 기본 웹 콘텐츠 구조를 식별할 수 있습니다. `contentStructureFields` 섹션에는 구조 필드에 대한 설명이 포함되어 있습니다. 이 구조에는 유형 `문자열` 및 이름 `내용`의 단일 컨텐츠 필드가 포함되어 있습니다. [기본 웹 콘텐츠 기사 게시](#post-a-basic-web-content-article)에서 이 콘텐츠 필드에 정보를 추가하는 새 웹 콘텐츠 기사를 만듭니다.
+아래는 JSON 출력입니다. `ID` 및 `이름`으로 Liferay DXP의 기본 웹 콘텐츠 구조를 식별할 수 있습니다. `contentStructureFields` 섹션에는 구조 필드에 대한 설명이 포함되어 있습니다. 이 구조에는 유형 `문자열` 및 이름 `내용`의 단일 컨텐츠 필드가 포함되어 있습니다. [기본 웹 콘텐츠 기사 게시](#post-a-basic-web-content-article) 에서 이 콘텐츠 필드에 정보를 추가하는 새 웹 콘텐츠 기사를 만듭니다.
 
 ```json
 {
@@ -503,7 +503,7 @@ java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 Structu
 `DELETE` 메서드를 `StructuredContent` 서비스와 함께 사용하여 웹 콘텐츠 기사를 삭제합니다. `StructuredContent_DELETE_ById.[java|sh]` 스크립트 예제는 웹 콘텐츠 `id` 을 사용하여 웹 콘텐츠를 삭제합니다.
 
 ```{important}
-REST API를 사용하여 웹 콘텐츠를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview)을 사용하지 않고 영구적으로 삭제됩니다. .md).
+REST API를 사용하여 웹 콘텐츠를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview) 을 사용하지 않고 영구적으로 삭제됩니다. .md).
 ```
 
 ### StructuredContent_DELETE_ById.sh
@@ -538,7 +538,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 
 ## 더 많은 웹 콘텐츠 및 웹 콘텐츠 폴더 서비스
 
-다른 cURL 명령 및 Java 클래스는 더 많은 `StructuredContent` 및 `StructuredContentFolder` 서비스를 보여줍니다. [Web Content API Basics](./liferay-r4h9.zip)에서 찾을 수 있습니다.
+다른 cURL 명령 및 Java 클래스는 더 많은 `StructuredContent` 및 `StructuredContentFolder` 서비스를 보여줍니다. [Web Content API Basics](./liferay-r4h9.zip) 에서 찾을 수 있습니다.
 
 | 파일                                                             | 묘사                       |
 |:-------------------------------------------------------------- |:------------------------ |

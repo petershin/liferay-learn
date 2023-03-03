@@ -4,7 +4,7 @@ uuid: 46d35c26-a3bd-4862-bd28-a72a2caea135
 
 # Liferay Elasticsearch 커넥터의 고급 구성
 
-[Elasticsearch 연결](./connecting-to-elasticsearch.md) 구성 파일 [를 사용하거나 시스템 설정](./elasticsearch-connector-configuration-reference.md#configuration-files-and-system-settings-entries)통해 구성됩니다.
+[Elasticsearch 연결](./connecting-to-elasticsearch.md) 구성 파일 [를 사용하거나 시스템 설정](./elasticsearch-connector-configuration-reference.md#configuration-files-and-system-settings-entries) 통해 구성됩니다.
 
 Elasticsearch 커넥터에는 즉시 사용할 수 있는 많은 구성 옵션이 있습니다. 대부분의 Elasticsearch 설정은 유사하거나 동일한 이름의 Liferay 설정(예: `httpSSLEnabled`)으로 구성할 수 있습니다. 특별한 구성이 필요한 경우 [고급 설정](./../elasticsearch/elasticsearch-connector-configuration-reference.md)사용하여 필요한 구성 옵션을 추가하십시오. 이러한 특수 구성의 대부분은 설정 및 매핑을 추가하거나 재정의합니다.
 
@@ -25,7 +25,7 @@ Elasticsearch에 대해 구성 가능한 항목이 있으면 Elasticsearch 커�
 
 {bdg-link-warning}`재색인 필요`
 
-`additionalIndexConfigurations` 구성은 생성 시 각 [회사 색인](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) (즉, 각 Liferay 가상 인스턴스의 색인)에 적용되는 추가 설정(JSON 또는 YAML)을 정의합니다. 예를 들어 이 설정을 사용하여 사용자 지정 분석기 및 필터를 만들 수 있습니다. 사용 가능한 설정의 전체 목록은 [Elasticsearch 참조](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html)을 참조하십시오.
+`additionalIndexConfigurations` 구성은 생성 시 각 [회사 색인](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) (즉, 각 Liferay 가상 인스턴스의 색인)에 적용되는 추가 설정(JSON 또는 YAML)을 정의합니다. 예를 들어 이 설정을 사용하여 사용자 지정 분석기 및 필터를 만들 수 있습니다. 사용 가능한 설정의 전체 목록은 [Elasticsearch 참조](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html) 을 참조하십시오.
 
 다음은 필드 또는 동적 템플릿에 적용할 수 있는 [분석](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-analysis.html) 구성하는 방법을 보여주는 예입니다(동적 템플릿에 대한 예제 응용 프로그램은 [아래](#overriding-type-mappings) 참조).
 
@@ -55,7 +55,7 @@ Elasticsearch에 대해 구성 가능한 항목이 있으면 Elasticsearch 커�
 
 {bdg-link-warning}`재색인 필요`
 
-`additionalTypeMappings` 각 [회사 및 시스템 인덱스](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) (즉, 각 Liferay 가상 인스턴스의 인덱스)에 데이터를 인덱싱하기 위한 추가 매핑을 정의합니다. 인덱스가 생성될 때 적용됩니다. JSON 구문을 사용하여 매핑을 추가합니다. 자세한 내용은 [여기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping.html) , [여기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-put-mapping.html)참조하십시오. 새 필드(속성`개`) 매핑 및 새 동적 템플릿에 대해 `additionalTypeMappings` 을 사용하되 기존 매핑을 재정의하지 마십시오. 여기에 설정된 매핑이 기존 매핑과 겹치는 경우 인덱스 생성이 실패합니다. `overrideTypeMappings` 사용하여 기본 매핑을 바꿉니다.
+`additionalTypeMappings` 각 [회사 및 시스템 인덱스](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) (즉, 각 Liferay 가상 인스턴스의 인덱스)에 데이터를 인덱싱하기 위한 추가 매핑을 정의합니다. 인덱스가 생성될 때 적용됩니다. JSON 구문을 사용하여 매핑을 추가합니다. 자세한 내용은 [여기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping.html) , [여기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-put-mapping.html) 참조하십시오. 새 필드(속성`개`) 매핑 및 새 동적 템플릿에 대해 `additionalTypeMappings` 을 사용하되 기존 매핑을 재정의하지 마십시오. 여기에 설정된 매핑이 기존 매핑과 겹치는 경우 인덱스 생성이 실패합니다. `overrideTypeMappings` 사용하여 기본 매핑을 바꿉니다.
 
 동적 템플릿과 마찬가지로 Liferay의 유형 매핑에 하위 필드 매핑을 추가할 수 있습니다. 이를 Elasticsearch에서는 [속성](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/properties.html) 이라고 합니다.
 

@@ -31,7 +31,7 @@
 
 이 양식은 다음 정보를 요구합니다.
 
- **API 키:** Google Cloud Natural Language API에 사용할 API 키입니다. 자세한 내용은 [API 키에 대한 Google 문서](https://cloud.google.com/docs/authentication/api-keys)을 참조하십시오.
+ **API 키:** Google Cloud Natural Language API에 사용할 API 키입니다. 자세한 내용은 [API 키에 대한 Google 문서](https://cloud.google.com/docs/authentication/api-keys) 을 참조하십시오.
 
 **분류 엔드포인트 활성화됨:** Google Cloud Natural Language API 분류 엔드포인트를 사용하여 텍스트 자동 태그 지정을 활성화할지 여부입니다.
 

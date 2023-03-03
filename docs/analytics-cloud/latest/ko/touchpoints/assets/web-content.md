@@ -1,6 +1,6 @@
 # 웹 콘텐츠
 
-[웹 콘텐츠 기사](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html) 은 사이트 방문자에게 정보를 제공하는 중요한 자산입니다. Analytics Cloud는 사이트 사용자가 콘텐츠에 참여하는 방식에 대한 중요한 통찰력을 제공합니다.
+[기본 웹 콘텐츠 기사 추가](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html) 은 사이트 방문자에게 정보를 제공하는 중요한 자산입니다. Analytics Cloud는 사이트 사용자가 콘텐츠에 참여하는 방식에 대한 중요한 통찰력을 제공합니다.
 
 ![웹 콘텐츠에 대한 분석 데이터를 테이블 형식으로 볼 수 있습니다.](web-content/images/01.png)
 

@@ -7,7 +7,7 @@
 ```{important}
 Liferay에서 리디렉션 패턴은 현재 사이트의 친숙한 URL을 기반으로 친숙한 URL로 해석됩니다. 이러한 이유로 친숙하지 않은 URL(예: 가상 호스트 이름, 포트 번호)로 리디렉션 패턴을 사용하거나 현재 사이트 외부의 페이지로 사용자를 리디렉션할 수 없습니다.
 
-또한 사용하는 정규식에 따라 패턴 리디렉션이 [alias redirects](../managing-site-urls.md#site-redirects)보다 느리고 의도한 것보다 더 많은 URL 일치가 발생할 수 있습니다. 이러한 이유로 대부분의 사용 사례에서 별칭 리디렉션이 권장됩니다. 설정에 대한 자세한 내용은 [리디렉션 도구 사용](./using-the-redirection-tool.md)을 참조하세요.
+또한 사용하는 정규식에 따라 패턴 리디렉션이 [alias redirects](../managing-site-urls.md#site-redirects) 보다 느리고 의도한 것보다 더 많은 URL 일치가 발생할 수 있습니다. 이러한 이유로 대부분의 사용 사례에서 별칭 리디렉션이 권장됩니다. 설정에 대한 자세한 내용은 [리디렉션 도구 사용](./using-the-redirection-tool.md)을 참조하세요.
 ```
 
 사이트에 대한 패턴 리디렉션을 설정하려면 다음 단계를 따르세요.

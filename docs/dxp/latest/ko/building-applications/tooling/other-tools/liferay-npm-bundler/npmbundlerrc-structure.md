@@ -291,7 +291,7 @@ liferay-npm-bundler는 위젯 프로젝트의 루트 폴더에 있는 `.npmbundl
 * **create-jar.features.settings:** 이 옵션은 더 이상 사용되지 않습니다. 대신 `create-jar.features.configuration` 옵션을 사용하십시오.
 
 ```{note}
-플러그인의 구성은 모든 가능한 단계에서 플러그인을 구성하는 옵션과 Babel을 실행할 때 사용할 `.babelrc` 파일을 지정합니다([Babel 문서](https://babeljs.io/docs/usage/babelrc/ 참조) ) 해당 파일 형식에 대한 자세한 내용은 참조하십시오.
+플러그인의 구성은 모든 가능한 단계에서 플러그인을 구성하는 옵션과 Babel을 실행할 때 사용할 `.babelrc` 파일을 지정합니다( [Babel 문서](https://babeljs.io/docs/usage/babelrc/ 참조) ) 해당 파일 형식에 대한 자세한 내용은 참조하십시오.
 ```
 
 ```{note}

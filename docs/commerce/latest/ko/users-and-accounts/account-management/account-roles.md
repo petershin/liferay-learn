@@ -16,13 +16,13 @@ Commerce에는 즉시 사용할 수 있는 두 가지 계정 역할이 포함됩
 
   * **주문 관리자** (사이트 역할): 주문 관리자는 구매자의 모든 권한을 가지며 주문을 관리, 삭제 및 승인할 수도 있습니다.
 
-즉시 사용 가능한 모든 역할 목록과 자신의 인스턴스에 대해 만들 수 있는 일반적인 사용자 지정 역할은 [Commerce Roles Reference](../roles-and-permissions/commerce-roles-reference.md) 을 참조하십시오.
+즉시 사용 가능한 모든 역할 목록과 자신의 인스턴스에 대해 만들 수 있는 일반적인 사용자 지정 역할은 [상거래 역할 참조](../roles-and-permissions/commerce-roles-reference.md) 을 참조하십시오.
 
 ## 계정 역할 생성
 
 기존 계정 역할이 비즈니스 요구 사항을 충족하기에 충분하지 않은 경우 추가 계정 역할을 생성할 수 있습니다. 기존 계정 역할에 권한을 추가할 수도 있습니다. 이 작업은 다른 유형의 DXP 역할을 만들고 편집하는 것과 동일한 프로세스입니다.
 
-자세한 내용은 [역할 생성 및 관리](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) 및 [역할 권한 정의](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 을 참조하십시오.
+자세한 내용은 [역할 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) 및 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 을 참조하십시오.
 
 ## 라이프레이 7.3 이하
 
@@ -44,4 +44,4 @@ Commerce에는 즉시 사용할 수 있는 두 가지 계정 역할이 포함됩
 * [계정 관리](../account-management.md)
 * [새 계정 만들기](./creating-a-new-account.md)
 * [새 계정 그룹 만들기](./creating-a-new-account-group.md)
-* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)

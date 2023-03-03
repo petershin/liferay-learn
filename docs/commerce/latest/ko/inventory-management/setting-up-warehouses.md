@@ -52,7 +52,7 @@ uuid: 13fbac2c-d863-4d3b-b480-e0e09bb7cfe5
 
 ## Bing Geocoder를 사용하여 창고의 지리적 위치 설정
 
-Liferay는 Bing Maps API와 통합되어 창고 주소에서 지리적 위치를 자동으로 생성합니다. 이 기능을 사용하려면 [Bing 지도 계정](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account) 및 [Bing 지도 키](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key)있어야 합니다.
+Liferay는 Bing Maps API와 통합되어 창고 주소에서 지리적 위치를 자동으로 생성합니다. 이 기능을 사용하려면 [Bing 지도 계정](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account) 및 [Bing 지도 키](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key) 있어야 합니다.
 
 그런 다음 다음 단계에 따라 인스턴스에 대한 Bing Geocoder를 구성합니다.
 

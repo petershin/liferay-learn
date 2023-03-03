@@ -12,7 +12,7 @@ Audience Targeting 사용자 세그먼트와 Liferay 7.2+ 세그먼트 간의 �
 
 ## 행동 규칙
 
-Liferay 7.2+부터는 행동 기반 규칙이 Analytics Cloud를 사용하여 관리됩니다. 자세한 내용은 [Analytics Cloud 설명서](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)을 참조하십시오.
+Liferay 7.2+부터는 행동 기반 규칙이 Analytics Cloud를 사용하여 관리됩니다. 자세한 내용은 [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html) 을 참조하십시오.
 
 ## 사용자 지정 규칙 마이그레이션
 
@@ -30,7 +30,7 @@ Liferay 7.2+로 마이그레이션하기 전에 최신 Liferay 세분화 기능�
 | 자산 게시자 개인화      | [동적 콘텐츠 세트](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection)       |
 
 ```{note}
-Liferay 7.2 사용자의 경우 컬렉션을 [콘텐츠 세트](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages)라고 합니다. .md#liferay-dxp-7-2).
+Liferay 7.2 사용자의 경우 컬렉션을 [콘텐츠 세트](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages) 라고 합니다. .md#liferay-dxp-7-2).
 ```
 
 콘텐츠 세트를 사용하든 컬렉션을 사용하든 [개인화 변형](../experience-personalization/personalizing-collections.md)을 사용하여 콘텐츠를 개인화할 수 있습니다.
@@ -42,4 +42,4 @@ Liferay 7.2 사용자의 경우 컬렉션을 [콘텐츠 세트](../../../content
 - [사용자 지정 사용자 필드 만들기](../../../users-and-permissions/users/adding-custom-fields-to-users.md)
 - [세그먼트 편집기 UI 참조](../segmentation/segments-editor-ui-reference.md)
 - [컬렉션 만들기](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
-- [애널리틱스 클라우드 세그먼트](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)
+- [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html)

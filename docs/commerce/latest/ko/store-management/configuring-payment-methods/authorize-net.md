@@ -8,7 +8,7 @@ uuid: 0f7ea016-9380-4326-b8b7-c1a297d56d0a
 
 ## 전제 조건
 
-Authorize.Net을 사용하도록 스토어를 구성하기 전에 [다음을 생성](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-해야 합니다. and-트랜잭션-키):
+Authorize.Net을 사용하도록 스토어를 구성하기 전에 [다음을 생성](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-해야 합니다. and-트랜잭션-키) :
 
 * API 로그인 ID
 * 트랜잭션 키

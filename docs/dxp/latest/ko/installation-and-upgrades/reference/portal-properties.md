@@ -53,7 +53,7 @@ jdbc.default.password=123456
 
 ### Liferay 홈 사이트 설정
 
-일부 애플리케이션 서버(예: WebLogic)는 DXP WAR 파일을 배포하기 전에 [Liferay 홈 사이트를 사용자 지정해야](../installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md#declare-the-liferay-home-folder). [`liferay.home`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Liferay%20Home) 속성은 사이트를 설정합니다.
+일부 애플리케이션 서버(예: WebLogic)는 DXP WAR 파일을 배포하기 전에 [Liferay 홈 사이트를 사용자 지정해야](../installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md#declare-the-liferay-home-folder) . [`liferay.home`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Liferay%20Home) 속성은 사이트를 설정합니다.
 
 ```properties
 liferay.home=/home/jbloggs/liferay

@@ -38,7 +38,7 @@ Liferay는 공급자 연결을 위한 새로운 인터페이스에 대한 피드
 
 ### OAuth 2.0**을 위한 새로운 OpenID Connect 공급자 연결
 
-이 인터페이스는 클라이언트 연결을 세밀하게 제어하려는 사용자를 위한 것입니다. 모든 구성은 [OpenID Connect 구성 사양](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest)에 정의된 대로 공급자의 Well-Known Configuration Endpoint를 통해 수행됩니다.
+이 인터페이스는 클라이언트 연결을 세밀하게 제어하려는 사용자를 위한 것입니다. 모든 구성은 [OpenID Connect 구성 사양](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest) 에 정의된 대로 공급자의 Well-Known Configuration Endpoint를 통해 수행됩니다.
 
 1. 전역 메뉴 &rarr; 제어판 &rarr; 보안 &rarr; OAuth 클라이언트 관리로 이동합니다.
 

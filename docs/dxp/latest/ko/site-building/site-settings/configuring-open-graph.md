@@ -2,7 +2,7 @@
 
 > 사용 가능: Liferay DXP/Portal 7.3+
 
-[Open Graph](https://ogp.me/) 은 Facebook, Slack 및 Twitter와 같이 사이트 콘텐츠를 지원하는 애플리케이션 컨텍스트에서 공유할 때 사이트 콘텐츠의 미리보기를 표준화하는 인터넷 프로토콜입니다. [RDFa](https://en.wikipedia.org/wiki/RDFa)와 유사하게 구조화된 데이터를 페이지 헤더에 `<meta>` 태그로 삽입하여 이를 수행합니다.
+[Open Graph](https://ogp.me/) 은 Facebook, Slack 및 Twitter와 같이 사이트 콘텐츠를 지원하는 애플리케이션 컨텍스트에서 공유할 때 사이트 콘텐츠의 미리보기를 표준화하는 인터넷 프로토콜입니다. [RDFa](https://en.wikipedia.org/wiki/RDFa) 와 유사하게 구조화된 데이터를 페이지 헤더에 `<meta>` 태그로 삽입하여 이를 수행합니다.
 
 기본적으로 Open Graph `<meta>` 태그는 모든 공개 Liferay 페이지에 포함되어 있지만 원하는 경우 사이트 수준에서 이 동작을 비활성화할 수 있습니다. 사이트 설정에서 기본 `og:image` 속성을 설정할 수도 있습니다. 이 값은 [페이지](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) 또는 [디스플레이 페이지](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) 수준에서 재정의되지 않는 한 모든 페이지에 사용됩니다.
 

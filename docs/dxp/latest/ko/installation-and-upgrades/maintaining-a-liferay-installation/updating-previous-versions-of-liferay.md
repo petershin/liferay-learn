@@ -80,13 +80,13 @@ Liferay DXP/Portal 일반 가용성(GA) 릴리스는 소스 코드에서 빌드�
 
 1. 수정된 시스템 설정( [파일 저장소](../../system-administration/file-storage.md) 및 [Elasticsearch](../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch.md) 설정 포함)을 [`.config` 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 로 내보내고 `[Liferay Home]/osgi/configs/` 폴더에 복사합니다.
 
-    예를 들어 [Advanced File System Store](../../system-administration/file-storage.md) 또는 [Simple File System Store](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)을 사용하는 경우 파일 저장소 설정을 [`.config` 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 로 내보내고 `[Liferay Home]/osgi/configs에 복사합니다. /` 폴더. 다음은 필수 `rootDir` 매개변수가 있는 `com.liferay.portal.store.file.system.configuration.AdvancedFileSystemStoreConfiguration.config` 파일의 예입니다.
+    예를 들어 [Advanced File System Store](../../system-administration/file-storage.md) 또는 [단순 파일 시스템 저장소](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) 을 사용하는 경우 파일 저장소 설정을 [`.config` 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 로 내보내고 `[Liferay Home]/osgi/configs에 복사합니다. /` 폴더. 다음은 필수 `rootDir` 매개변수가 있는 `com.liferay.portal.store.file.system.configuration.AdvancedFileSystemStoreConfiguration.config` 파일의 예입니다.
 
     ```properties
     rootDir="data/document_library"
     ```
 
-1. [Commerce](https://learn.liferay.com/commerce/latest/en/index.html) 을 사용 중이고 릴리스 정보에 Commerce용 데이터베이스 업그레이드가 언급되어 있는 경우 업그레이드를 준비하십시오. 자세한 내용은 [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/upgrading-liferay-commerce.html) 업그레이드를 참조하십시오.
+1. [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 을 사용 중이고 릴리스 정보에 Commerce용 데이터베이스 업그레이드가 언급되어 있는 경우 업그레이드를 준비하십시오. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/commerce/latest/ko/installation-and-upgrades/upgrading-liferay-commerce.html) 업그레이드를 참조하십시오.
 
 1. 애플리케이션 서버를 종료하십시오.
 
@@ -97,7 +97,7 @@ Liferay DXP/Portal 일반 가용성(GA) 릴리스는 소스 코드에서 빌드�
 
 1. [설치를](./backing-up.md) 백업합니다.
 
-1. [도움말 센터](https://help.liferay.com/hc) (구독자) 또는 [커뮤니티 다운로드](https://www.liferay.com/downloads-community)에서 원하는 Liferay DXP/Portal Tomcat 번들 업데이트를 다운로드합니다.
+1. [도움말 센터](https://help.liferay.com/hc) (구독자) 또는 [커뮤니티 다운로드](https://www.liferay.com/downloads-community) 에서 원하는 Liferay DXP/Portal Tomcat 번들 업데이트를 다운로드합니다.
 
 1. 임의의 사이트에 번들의 압축을 풉니다.
 

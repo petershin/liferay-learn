@@ -4,7 +4,7 @@
 
 ![작업 스케줄러 페이지를 통해 작업 스케줄러 작업을 추가하고 관리합니다.](./using-job-scheduler/images/01.png)
 
-작업 스케줄러는 모든 인스턴스[`MessageListener` 인터페이스를 사용하여 예약된 작업](#viewing-and-managing-scheduled-jobs)을 보고 관리하기 위한 편리한 UI를 제공합니다.
+작업 스케줄러는 모든 인스턴스 [`MessageListener` 인터페이스를 사용하여 예약된 작업](#viewing-and-managing-scheduled-jobs) 을 보고 관리하기 위한 편리한 UI를 제공합니다.
 
 ```{note}
 Job Scheduler 또는 'MessageListener'를 사용하여 인스턴스 작업을 예약할지 여부를 결정할 때 다음과 같은 Job Scheduler 이점을 고려하십시오.

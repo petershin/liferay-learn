@@ -5,7 +5,7 @@
 초안 및 게시된 개체 정의를 삭제할 수 있습니다. 정의를 삭제하면 게시된 정의에 대해 저장된 항목을 포함하여 관련 데이터가 제거됩니다.
 
 ```{important}
-Liferay 7.4 U26/GA26 이전 버전의 경우 사용자는 [게시된 개체 정의](./creating-objects.md#publishing-object-drafts)를 삭제할 수 없습니다.
+Liferay 7.4 U26/GA26 이전 버전의 경우 사용자는 [게시된 개체 정의](./creating-objects.md#publishing-object-drafts) 를 삭제할 수 없습니다.
 ```
 
 정의에 활성 관계가 있는 경우 정의를 삭제하기 전에 제거해야 합니다. 자세한 내용은 [관계 제거](./relationships/removing-relationships.md) 을 참조하십시오.

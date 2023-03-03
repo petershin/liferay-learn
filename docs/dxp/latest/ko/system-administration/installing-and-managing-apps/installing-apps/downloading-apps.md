@@ -1,6 +1,6 @@
 # 앱 다운로드
 
-[Liferay Marketplace 웹사이트](https://web.liferay.com/marketplace)를 통해 앱을 구매하면 영수증 또는 Liferay.com 계정을 통해 앱을 다운로드할 수 있습니다. 각 Marketplace 앱은 LPKG 패키지(`.lpkg` 파일)로 배포됩니다. LPKG에는 Marketplace 메타데이터와 앱을 실행하는 데 필요한 파일이 포함되어 있습니다.
+[Liferay Marketplace 웹사이트](https://web.liferay.com/marketplace) 를 통해 앱을 구매하면 영수증 또는 Liferay.com 계정을 통해 앱을 다운로드할 수 있습니다. 각 Marketplace 앱은 LPKG 패키지(`.lpkg` 파일)로 배포됩니다. LPKG에는 Marketplace 메타데이터와 앱을 실행하는 데 필요한 파일이 포함되어 있습니다.
 
 앱을 다운로드하는 가장 빠르고 편리한 방법은 영수증을 이용하는 것입니다.
 

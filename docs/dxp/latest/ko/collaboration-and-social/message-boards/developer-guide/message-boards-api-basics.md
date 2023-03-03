@@ -1,6 +1,6 @@
 # 메시지 보드 API 기본 사항
 
-Liferay의 Headless Delivery 애플리케이션은 [Message Boards](../../message-boards.md) 애플리케이션에 REST 서비스를 제공합니다. 이러한 서비스를 사용하여 게시판 범주, 스레드 및 메시지를 추가하고 정보를 나열하고 내용을 수정하거나 모두 제거할 수 있습니다. 여기에서 cURL 명령과 Java 클래스를 사용하여 해당 서비스를 호출합니다.
+Liferay의 Headless Delivery 애플리케이션은 [게시판](../../message-boards.md) 애플리케이션에 REST 서비스를 제공합니다. 이러한 서비스를 사용하여 게시판 범주, 스레드 및 메시지를 추가하고 정보를 나열하고 내용을 수정하거나 모두 제거할 수 있습니다. 여기에서 cURL 명령과 Java 클래스를 사용하여 해당 서비스를 호출합니다.
 
 ```{note}
 메시지 보드 범주는 Liferay 백엔드에서 *섹션*으로 이름이 지정됩니다. 이 섹션은 스레드 구성을 위한 주제를 정의합니다.
@@ -22,7 +22,7 @@ Once started, retrieve the site ID. To find your site ID, open the *Site Menu* (
 
 Below is sample code to demonstrate the Headless API. This code includes both sample cURL and Java files.
 
-Run the following command to download and unzip the [sample code](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip):
+Run the following command to download and unzip the [sample code](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip) :
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip -O

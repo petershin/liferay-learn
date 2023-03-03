@@ -47,7 +47,7 @@ _인증 유형_ 은 제어판 또는 속성 파일을 통해 구성할 수 있�
 
 ### 속성을 사용하여 인증 유형 구성
 
-[`Portal-ext.properties`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) 파일을 사용하려면 아래 속성을 붙여넣고 원하는 인증 유형의 주석을 제거하십시오.
+[문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 파일을 사용하려면 아래 속성을 붙여넣고 원하는 인증 유형의 주석을 제거하십시오.
 
 ```properties
 company.security.auth.type=emailAddress

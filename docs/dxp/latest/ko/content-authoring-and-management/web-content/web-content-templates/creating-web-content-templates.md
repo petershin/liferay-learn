@@ -1,9 +1,9 @@
 # 웹 콘텐츠 템플릿 만들기
 
-웹 콘텐츠 템플릿은 FreeMarker 템플릿 언어(FTL)를 사용하여 콘텐츠 필드가 페이지에서 렌더링되는 방식을 결정합니다. 각 템플릿은 웹 콘텐츠 [구조](../web-content-structures/creating-structures.md) 또는 [다른 템플릿에 포함](./embedding-widgets-in-templates.md# 포함-기타-템플릿).
+웹 콘텐츠 템플릿은 FreeMarker 템플릿 언어(FTL)를 사용하여 콘텐츠 필드가 페이지에서 렌더링되는 방식을 결정합니다. 각 템플릿은 웹 콘텐츠 [구조](../web-content-structures/creating-structures.md) 또는 [다른 템플릿에 포함](./embedding-widgets-in-templates.md# 포함-기타-템플릿) .
 
 ```{important}
-신뢰할 수 있는 사용자에게만 FreeMarker에서 템플릿 생성 또는 편집 권한을 부여합니다. 자세한 내용은 [웹 콘텐츠 구조 및 템플릿에 대한 권한 할당](../web-content-structures/assigning-permissions-to-structures-and-templates.md#security-considerations-for-web-content-templates)을 참조하십시오. 웹 콘텐츠 템플릿 보안.
+신뢰할 수 있는 사용자에게만 FreeMarker에서 템플릿 생성 또는 편집 권한을 부여합니다. 자세한 내용은 [웹 콘텐츠 구조 및 템플릿에 대한 권한 할당](../web-content-structures/assigning-permissions-to-structures-and-templates.md#security-considerations-for-web-content-templates) 을 참조하십시오. 웹 콘텐츠 템플릿 보안.
 ```
 
 ## 웹 콘텐츠 템플릿을 만드는 방법
@@ -14,7 +14,7 @@
 
 1. 새 템플릿의 제목을 입력합니다.
 
-1. 선택적으로 다음과 같이 구성 가능한 템플릿 속성 [을](#configurable-template-properties)수 있습니다.
+1. 선택적으로 다음과 같이 구성 가능한 템플릿 속성 [을](#configurable-template-properties) 수 있습니다.
    
    ![필요에 따라 속성 패널에서 템플릿 설정을 결정합니다.](./creating-web-content-templates/images/01.png)
 
@@ -36,7 +36,7 @@
 
 ![DXP는 템플릿에 대한 DDM 템플릿 키, URL 및 WebDAV URL을 자동으로 생성합니다.](./creating-web-content-templates/images/03.png)
 
-템플릿을 생성하면 연결된 구조로 생성된 [웹 콘텐츠에 사용](../web-content-articles/adding-a-basic-web-content-article.md)하거나 [삽입할 수 있습니다. in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates), 구성에 따라 다릅니다. 언제든지 템플릿을 편집할 수도 있습니다.
+템플릿을 생성하면 연결된 구조로 생성된 [웹 콘텐츠에 사용](../web-content-articles/adding-a-basic-web-content-article.md)하거나 [삽입할 수 있습니다. in other Templates](./embedding-widgets-in-templates.md#embedding-other-templates) , 구성에 따라 다릅니다. 언제든지 템플릿을 편집할 수도 있습니다.
 
 ```{note}
 구조를 변경하려면 연결된 템플릿을 변경해야 할 수 있습니다. 예를 들어 템플릿에서 참조되는 구조 필드 이름이 변경되거나 제거된 경우 템플릿의 참조를 수동으로 업데이트해야 합니다.

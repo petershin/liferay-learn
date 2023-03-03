@@ -10,7 +10,7 @@ Liferay 객체를 사용하면 기존 DXP 프레임워크를 사용하여 객체
 
 개체가 게시되면 Liferay는 여러 개체 항목을 표시하기 위해 [컬렉션 디스플레이 조각](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) 과 함께 사용할 컬렉션 공급자를 생성합니다. 컬렉션의 스타일을 지정하고 필터링하고 페이지를 매기도록 조각을 구성할 수도 있습니다. 게시된 개체는 Info 프레임워크와 통합되므로 [디스플레이 페이지 템플릿](../../site-building/displaying-content/using-display-page-templates.md)에 대한 콘텐츠 유형으로 선택할 수 있습니다. 선택하면 개체가 템플릿의 매핑 소스로 설정되므로 조각 필드를 개체 필드에 쉽게 매핑하여 개별 개체 항목에 대한 유연한 페이지 표시를 만들 수 있습니다.
 
-또한 FreeMarker를 사용하여 [개체용 정보 템플릿](#creating-information-templates-for-objects)을 만들 수 있습니다. 일단 생성되면 조각 필드를 템플릿에 매핑하여 콘텐츠 페이지 및 디스플레이 페이지에서 항목이 렌더링되는 방식을 결정할 수 있습니다.
+또한 FreeMarker를 사용하여 [개체용 정보 템플릿](#creating-information-templates-for-objects) 을 만들 수 있습니다. 일단 생성되면 조각 필드를 템플릿에 매핑하여 콘텐츠 페이지 및 디스플레이 페이지에서 항목이 렌더링되는 방식을 결정할 수 있습니다.
 
 ```{note}
 정보 템플릿은 콘텐츠 표시 조각 및 [sub-elements](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub- elements-reference.md)(예: 텍스트, 서식 있는 텍스트)를 개체에 매핑할 수 있습니다.

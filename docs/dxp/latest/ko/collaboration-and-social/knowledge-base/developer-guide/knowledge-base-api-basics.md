@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Knowledge Base API 기본 사항](./liferay-t3x7.zip)을 다운로드하고 압축을 풉니다.
+1. [Knowledge Base API 기본 사항](./liferay-t3x7.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/knowledge-base/developer-guide/liferay-t3x7.zip -O
@@ -19,7 +19,7 @@
    unzip liferay-t3x7.zip
    ```
 
-1. 로그인하면 [사이트의 ID를 검색합니다](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 여러 서비스 호출에서 이 ID를 사용합니다.
+1. 로그인하면 [사이트의 ID를 검색합니다](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 여러 서비스 호출에서 이 ID를 사용합니다.
 
 1. cURL 스크립트를 사용하여 사이트에 새로운 기술 자료 문서를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `KnowledgeBaseArticle_POST_ToSite.sh` 스크립트를 실행합니다. 예를 들어,
 

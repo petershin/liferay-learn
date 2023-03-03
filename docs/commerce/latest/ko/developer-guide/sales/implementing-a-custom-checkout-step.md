@@ -2,7 +2,7 @@
 
 이 자습서에서는 [CommerceCheckoutStep](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/util/CommerceCheckoutStep.java) 인터페이스를 구현하여 사용자 정의 체크아웃 단계를 추가하는 방법을 보여줍니다.
 
-결제 단계는 고객의 결제 프로세스 중 한 화면을 나타냅니다. Liferay Commerce는 [결제 방법](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/PaymentMethodCommerceCheckoutStep.java) 단계 및 [주문 확인](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/OrderConfirmationCommerceCheckoutStep.java)단계와 같은 필수 단계를 포함하여 기본적으로 여러 체크아웃 단계를 제공합니다.
+결제 단계는 고객의 결제 프로세스 중 한 화면을 나타냅니다. Liferay Commerce는 [결제 방법](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/PaymentMethodCommerceCheckoutStep.java) 단계 및 [주문 확인](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/OrderConfirmationCommerceCheckoutStep.java) 단계와 같은 필수 단계를 포함하여 기본적으로 여러 체크아웃 단계를 제공합니다.
 
 ![즉시 사용 가능한 결제 단계](./implementing-a-custom-checkout-step/images/01.png "즉시 사용 가능한 결제 단계")
 
@@ -21,7 +21,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Acme Commerce 결제 단계](./liferay-n8n6.zip)를 다운로드하고 압축을 풉니다.
+1. [Acme Commerce 결제 단계](./liferay-n8n6.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-n8n6.zip -O
@@ -88,7 +88,7 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
 public String getName();
 ```
 
-> 이 메서드는 결제 단계의 이름을 반환합니다. 이 이름은 UI에 표시될 이름에 해당하는 [언어 키](https://help.liferay.com/hc/en-us/articles/360028746692-Localizing-Your-Application) 수 있습니다.
+> 이 메서드는 결제 단계의 이름을 반환합니다. 이 이름은 UI에 표시될 이름에 해당하는 [언어 키](https://help.liferay.com/hc/ko/articles/360028746692-Localizing-Your-Application) 수 있습니다.
 
 ```java
 public void processAction(
@@ -126,7 +126,7 @@ public void render(
 private ServletContext _servletContext;
 ```
 
-> `osgi.web.symbolicname` 에 설정한 값은 [bnd.bnd 파일](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-custom-checkout-step/resources/liferay-n8n6.zip/n8n6-web/bnd.bnd)의 `Bundle-SymbolicName` 값과 일치합니다. 이러한 값은 JSP를 찾으려면 `ServletContext` 과 일치해야 합니다.
+> `osgi.web.symbolicname` 에 설정한 값은 [bnd.bnd 파일](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-custom-checkout-step/resources/liferay-n8n6.zip/n8n6-web/bnd.bnd) 의 `Bundle-SymbolicName` 값과 일치합니다. 이러한 값은 JSP를 찾으려면 `ServletContext` 과 일치해야 합니다.
 > 
 > 또한 `ServletContext` 이 올바르게 생성되도록 bnd.bnd 파일에서 `Web-ContextPath` 에 대한 고유한 값을 선언해야 합니다. 이 예에서 `Web-ContextPath` 은 `/n8n6-web`으로 설정됩니다. 이 값에 대한 참조는 [bnd.bnd](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-custom-checkout-step/resources/liferay-n8n6.zip/n8n6-web/bnd.bnd) 을 참조하십시오.
 
@@ -151,7 +151,7 @@ private JSPRenderer _jspRenderer;
 private ServletContext _servletContext;
 ```
 
-> `JSPRenderer` 을 사용하여 체크아웃 단계에 대한 JSP를 렌더링합니다(이 경우 [terms_and_conditions.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-custom-checkout-step/resources/liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp)). `ServletContext` 을 매개변수로 제공하여 생성한 JSP를 찾습니다.
+> `JSPRenderer` 을 사용하여 체크아웃 단계에 대한 JSP를 렌더링합니다(이 경우 [terms_and_conditions.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-custom-checkout-step/resources/liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp) ). `ServletContext` 을 매개변수로 제공하여 생성한 JSP를 찾습니다.
 
 #### `processAction`에 비즈니스 로직 추가
 
@@ -159,7 +159,7 @@ private ServletContext _servletContext;
 
 #### 사용자 지정 화면을 렌더링하는 JSP 추가
 
-이 예에서는 자리 표시자 텍스트를 추가합니다. [terms_and_conditions.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-custom-checkout-step/resources/liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp)에서 구현을 볼 수 있습니다.
+이 예에서는 자리 표시자 텍스트를 추가합니다. [terms_and_conditions.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-custom-checkout-step/resources/liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp) 에서 구현을 볼 수 있습니다.
 
 #### `Language.properties`에 언어 키 추가
 
@@ -169,7 +169,7 @@ private ServletContext _servletContext;
 n8n6-commerce-checkout-step=N8N6 Commerce Checkout Step
 ```
 
-> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
+> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
 
 ## 결론
 
@@ -178,4 +178,4 @@ n8n6-commerce-checkout-step=N8N6 Commerce Checkout Step
 ## 추가 정보
 
 * [점검](../../creating-store-content/commerce-storefront-pages/checkout.md)
-* [애플리케이션 현지화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+* [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

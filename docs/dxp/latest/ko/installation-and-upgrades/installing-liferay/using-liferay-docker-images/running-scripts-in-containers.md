@@ -24,7 +24,7 @@ Configure Phase에서 제공하는 것보다 Tomcat 및 Liferay를 구성하는 
     ```
 
     ```{tip}
-    이미 [컨테이너의 /mnt/liferay 폴더를 마운트](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay)할 계획이라면 구성 단계에 포함할 로컬 마운트 폴더의 `scripts` 폴더에 구성 단계 스크립트를 추가합니다. `[local-folder]/scripts` 폴더는 컨테이너의 `/mnt/liferay/scripts` 폴더에 매핑됩니다.
+    이미 [컨테이너의 /mnt/liferay 폴더를 마운트](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) 할 계획이라면 구성 단계에 포함할 로컬 마운트 폴더의 `scripts` 폴더에 구성 단계 스크립트를 추가합니다. `[local-folder]/scripts` 폴더는 컨테이너의 `/mnt/liferay/scripts` 폴더에 매핑됩니다.
     ```
 
 1. 사전 구성 작업을 실행하기 위한 스크립트를 생성합니다.

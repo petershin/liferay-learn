@@ -1,6 +1,6 @@
 # WebDAV로 문서 액세스
 
-[WebDAV](https://en.wikipedia.org/wiki/WebDAV)을 통해 데스크톱 파일 관리자에서 문서 라이브러리에 액세스할 수 있습니다. WebDAV는 웹 서버에 저장된 파일을 관리하기 위한 HTTP 기반 프로토콜입니다. WebDAV는 Linux, macOS 및 Windows를 포함한 대부분의 주요 운영 체제 및 데스크탑 환경에서 지원됩니다.
+[WebDAV](https://en.wikipedia.org/wiki/WebDAV) 을 통해 데스크톱 파일 관리자에서 문서 라이브러리에 액세스할 수 있습니다. WebDAV는 웹 서버에 저장된 파일을 관리하기 위한 HTTP 기반 프로토콜입니다. WebDAV는 Linux, macOS 및 Windows를 포함한 대부분의 주요 운영 체제 및 데스크탑 환경에서 지원됩니다.
 
 파일 브라우저에서 문서 라이브러리 폴더에 액세스하려면 로그인 자격 증명과 액세스하려는 폴더의 WebDAV URL을 사용해야 합니다. 다음과 같이하세요:
 

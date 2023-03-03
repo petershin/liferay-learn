@@ -64,17 +64,17 @@
 
 ## 모델 클래스 및 이벤트 식별
 
-Liferay DXP의 모델 클래스는 [Service Builder](../../building-applications/data-frameworks/service-builder.md)에서 생성됩니다. 모델 인터페이스는 모든 애플리케이션의 `-api` 모듈에서 찾을 수 있습니다. 예를 들어 메시지 보드 메시지에 대한 모델 인터페이스를 찾으려면 Liferay DXP의 소스 코드에서 [`module/apps/message-boards/message-boards-api`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/message-boards/message-boards-api) 프로젝트를 살펴보십시오.
+Liferay DXP의 모델 클래스는 [서비스 빌더](../../building-applications/data-frameworks/service-builder.md) 에서 생성됩니다. 모델 인터페이스는 모든 애플리케이션의 `-api` 모듈에서 찾을 수 있습니다. 예를 들어 메시지 보드 메시지에 대한 모델 인터페이스를 찾으려면 Liferay DXP의 소스 코드에서 [`module/apps/message-boards/message-boards-api`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/message-boards/message-boards-api) 프로젝트를 살펴보십시오.
 
 이 규칙의 예외는 핵심 모델입니다. `User`과 같은 핵심 클래스에 대한 모델 리스너를 생성하려는 경우 Liferay DXP 소스 코드의 [`Portal-kernel`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel) 폴더에서 해당 인터페이스를 찾을 수 있습니다.
 
-생성할 모델 리스너는 Message Boards 메시지용입니다. 메시지가 삭제되면 보고서 로그에 인쇄하는 메시지를 트리거합니다. 가능한 이벤트 목록은 [BaseModelListener](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html)에 대한 Javadoc을 참조하십시오.
+생성할 모델 리스너는 Message Boards 메시지용입니다. 메시지가 삭제되면 보고서 로그에 인쇄하는 메시지를 트리거합니다. 가능한 이벤트 목록은 [BaseModelListener](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html) 에 대한 Javadoc을 참조하십시오.
 
 ## 모델 리스너 동작
 
 모델 리스너는 특정 엔티티에 대한 [`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java) 인터페이스를 구현합니다. 모델 리스너는 해당 엔터티가 생성, 업데이트 또는 제거되기 전이나 후에 실행할 코드를 가질 수 있습니다. 이러한 모든 메서드는 `BasePersistenceImpl` 클래스에서 호출됩니다. 생성되거나 업데이트된 엔터티에 대한 코드는 `BasePersistenceImpl`의 `업데이트` 메서드에서 호출되고 제거된 엔터티에 대한 코드는 `BasePersistenceImpl`의 `제거` 메서드에서 호출됩니다.
 
-모델 수신기에는 다른 종류의 관련 엔터티가 추가되거나 제거되기 전이나 후에 실행할 코드가 있을 수도 있습니다. 이러한 메소드는 [`TableMapperImpl`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/internal/service/persistence/TableMapperImpl.java)의 `_addTableMapping` 메소드에서 호출됩니다.
+모델 수신기에는 다른 종류의 관련 엔터티가 추가되거나 제거되기 전이나 후에 실행할 코드가 있을 수도 있습니다. 이러한 메소드는 [`TableMapperImpl`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/internal/service/persistence/TableMapperImpl.java) 의 `_addTableMapping` 메소드에서 호출됩니다.
 
 이제 `MBMessage` 클래스 및 `onBeforeRemove` 이벤트에서 작동하도록 프로젝트를 수정합니다.
 

@@ -17,7 +17,7 @@
    ![이 Rate It Select from List 필드는 대부분 "Good" 선택을 받았습니다.](./form-reports/images/01.png)
 
 ```{tip}
-양식 보고서는 집계된 양식 데이터를 보여줍니다. 각 양식 항목을 개별적으로 보려면 [양식 항목 관리](./managing-form-entries.md#viewing-form-entries)를 참조하세요.
+양식 보고서는 집계된 양식 데이터를 보여줍니다. 각 양식 항목을 개별적으로 보려면 [양식 항목 관리](./managing-form-entries.md#viewing-form-entries) 를 참조하세요.
 ```
 
 ## 양식 필드 및 차트 유형

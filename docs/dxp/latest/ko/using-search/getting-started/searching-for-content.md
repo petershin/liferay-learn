@@ -1,6 +1,6 @@
 # 콘텐츠 검색
 
-색인이 생성된 모든 콘텐츠(일명 Liferay DXP에서 자산 __ )가 검색 결과로 반환될 수 있습니다. [사용자 지정 콘텐츠도 인덱싱할 수 있으므로](https://help.liferay.com/hc/en-us/articles/360032260612-Model-Entity-Indexing-Framework)설치 시 기본적으로 포함된 자산 유형 외에 추가 자산 유형이 있을 수 있습니다. 다음 이미지는 Liferay DXP에서 인덱싱되는 다양한 콘텐츠 유형의 예를 보여줍니다.
+색인이 생성된 모든 콘텐츠(일명 Liferay DXP에서 자산 __ )가 검색 결과로 반환될 수 있습니다. [사용자 지정 콘텐츠도 인덱싱할 수 있으므로](https://help.liferay.com/hc/ko/articles/360032260612-Model-Entity-Indexing-Framework) 설치 시 기본적으로 포함된 자산 유형 외에 추가 자산 유형이 있을 수 있습니다. 다음 이미지는 Liferay DXP에서 인덱싱되는 다양한 콘텐츠 유형의 예를 보여줍니다.
 
 ![이러한 앱이 배포되면 기본적으로 해당 콘텐츠를 검색할 수 있습니다.](./searching-for-content/images/08.png)
 
@@ -12,7 +12,7 @@
 
 ### 검색어 입력
 
-Liferay의 검색 인프라는 지원되는 검색 엔진([Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) 및 [Solr](http://lucene.apache.org/solr/features.html))에 의해 구현된 전체 텍스트 검색을 지원합니다.
+Liferay의 검색 인프라는 지원되는 검색 엔진( [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) 및 [Solr](http://lucene.apache.org/solr/features.html) )에 의해 구현된 전체 텍스트 검색을 지원합니다.
 
 전체 텍스트 검색은 검색 쿼리에 입력된 모든 단어(예: *stock market*)를 각 색인 문서의 모든 단어와 비교합니다. Elasticsearch와 같은 검색 엔진은 관련성 점수를 계산하여 최상의 결과가 먼저 반환되도록 합니다(예: 최근 강세장에 대한 블로그 항목). *stock* 또는 *market* 과 같은 단어가 포함된 모든 항목이 반환됩니다.
 

@@ -9,7 +9,7 @@ Service Builder로 [모델, 지속성 및 서비스 코드를 생성](./service-
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Business Logic with Service Builder](./liferay-e4g5.zip)를 다운로드하고 압축을 풉니다.
+1. [Business Logic with Service Builder](./liferay-e4g5.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/liferay-e4g5.zip -O

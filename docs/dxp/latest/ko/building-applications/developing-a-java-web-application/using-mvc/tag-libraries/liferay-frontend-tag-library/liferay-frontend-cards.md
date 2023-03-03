@@ -28,7 +28,7 @@
 
 ![가로형 카드는 파일과 문서를 표시하는 데 적합합니다.](./liferay-frontend-cards-intro/images/01.png)
 
-`<liferay-frontend:horizontal-card-icon>` 태그는 `아이콘` 속성에 대해 [Clay Icons](../clay-tag-library/clay-icons.md) 를 사용합니다.
+`<liferay-frontend:horizontal-card-icon>` 태그는 `아이콘` 속성에 대해 [클레이 아이콘](../clay-tag-library/clay-icons.md) 를 사용합니다.
 
 ## 아이콘 세로형 카드
 

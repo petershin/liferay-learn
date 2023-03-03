@@ -4,7 +4,7 @@
 
 1. 제품 메뉴를 열고 사이트 메뉴 제목 &rarr; *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*으로 이동합니다.
 1. *구조* 탭을 선택합니다.
-1. 0 구조 옆에 있는 *작업 메뉴* (![Action Menu](../../../images/icon-actions.png))를 열고 사용 가능한 [](#available-actions)작업 중 하나를 선택합니다.
+1. 0 구조 옆에 있는 *작업 메뉴* (![Action Menu](../../../images/icon-actions.png))를 열고 사용 가능한 [](#available-actions) 작업 중 하나를 선택합니다.
 1. *저장* 을 클릭하여 변경 사항을 적용합니다.
 
 ## 가능한 조치
@@ -13,13 +13,13 @@
 
 **편집:** 업데이트할 수 있도록 구조를 엽니다. 자세한 내용은 [구조 필드 구성](./configuring-structure-fields.md) 을 참조하십시오.
 
-**기본값 편집:** 구조 필드의 기본값을 설정하는 양식을 엽니다. 자세한 내용은 [아래](#editing-default-values)를 참조하세요.
+**기본값 편집:** 구조 필드의 기본값을 설정하는 양식을 엽니다. 자세한 내용은 [아래](#editing-default-values) 를 참조하세요.
 
 **템플릿 관리:** 구조를 사용하는 필터링된 웹 콘텐츠 템플릿 세트가 있는 *템플릿* 탭을 엽니다. 여기에서 웹 콘텐츠 템플릿을 관리(편집, 복사, 삭제 및 권한 설정)할 수 있습니다. 자세한 내용은 [템플릿 관리](../web-content-templates/creating-web-content-templates.md) 을 참조하십시오.
 
 **권한:** 구조에 대한 권한 구성 대화 상자를 엽니다. 자세한 내용은 [웹 콘텐츠 구조 및 템플릿에 권한 할당](./assigning-permissions-to-structures-and-templates.md) 을 참조하십시오.
 
-**복사:** 양식을 열어 구조를 복사하고 이름을 설정합니다. 자세한 내용은 [아래](#copying-an-existing-structure)를 참조하세요.
+**복사:** 양식을 열어 구조를 복사하고 이름을 설정합니다. 자세한 내용은 [아래](#copying-an-existing-structure) 를 참조하세요.
 
 **삭제:** 구조를 삭제합니다.
 

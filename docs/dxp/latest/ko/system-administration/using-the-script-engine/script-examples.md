@@ -1,10 +1,10 @@
 # 스크립트 예
 
-다음은 DXP에서 스크립트를 사용하는 데 도움이 되는 몇 가지 예입니다. 대부분의 예제는 Liferay 블로그 게시물 [5 Liferay Script Console 사용 개선 팁](https://liferay.dev/blogs/-/blogs/5-tips-to-improve-usage-of-the-liferay-script-console)에서 가져왔습니다.
+다음은 DXP에서 스크립트를 사용하는 데 도움이 되는 몇 가지 예입니다. 대부분의 예제는 Liferay 블로그 게시물 [5 Liferay Script Console 사용 개선 팁](https://liferay.dev/blogs/-/blogs/5-tips-to-improve-usage-of-the-liferay-script-console) 에서 가져왔습니다.
 
 ## 예 1: 사용자에게 새로운 이용 약관 제공
 
-이 예에서는 데이터베이스에서 사용자 정보를 검색하고 사용자를 수정한 다음 변경 사항을 데이터베이스에 저장합니다. 회사에서 [이용 약관](https://help.liferay.com/hc/en-us/articles/360031899692-Instance-Configuration-Instance-Settings#terms-of-use) 을 업데이트하고 이를 사용자에게 제공하려고 한다고 가정합니다. 사용자가 사용 약관에 동의하면 해당 사용자와 연결된 사용자 레코드에 `successfulToTermsOfUse` 이라는 부울 필드가 설정됩니다. 필드 값이 `true`인 한 사용자에게 사용 약관이 표시되지 않습니다. 모든 사용자에 대해 필드 `false` 을 설정하면 로그인하기 전에 사용 약관에 다시 동의해야 합니다.
+이 예에서는 데이터베이스에서 사용자 정보를 검색하고 사용자를 수정한 다음 변경 사항을 데이터베이스에 저장합니다. 회사에서 [이용 약관](https://help.liferay.com/hc/ko/articles/360031899692-Instance-Configuration-Instance-Settings#terms-of-use) 을 업데이트하고 이를 사용자에게 제공하려고 한다고 가정합니다. 사용자가 사용 약관에 동의하면 해당 사용자와 연결된 사용자 레코드에 `successfulToTermsOfUse` 이라는 부울 필드가 설정됩니다. 필드 값이 `true`인 한 사용자에게 사용 약관이 표시되지 않습니다. 모든 사용자에 대해 필드 `false` 을 설정하면 로그인하기 전에 사용 약관에 다시 동의해야 합니다.
 
 1. 스크립트 콘솔에서 이 스크립트를 입력하고 실행합니다.
 

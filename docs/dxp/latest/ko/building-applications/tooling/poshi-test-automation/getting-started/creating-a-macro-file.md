@@ -6,7 +6,7 @@
 
   귀하의 이름이 learn.liferay.com 기사에 나타나지 않는지 테스트하고 싶습니다. 취할 조치는 다음과 같습니다. 단계를 테스트하려면 별도의 브라우저에서 수동으로 수행하십시오.
 
-  1. [Liferay Learn 사이트](http://learn.liferay.com)로 이동합니다.
+  1. [Liferay Learn 사이트](http://learn.liferay.com) 로 이동합니다.
 
   1. 검색 입력 필드를 클릭합니다.
 

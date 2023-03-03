@@ -55,7 +55,7 @@ Liferay Cloud 콘솔을 통해 환경 서비스에 사용자 정의 도메인을
 1. *사용자 지정 도메인 업데이트* 을 클릭하여 추가를 완료합니다.
 
 ```{note}
-Liferay Cloud 콘솔을 통해 사용자 지정 도메인을 추가하면 [Let's Encrypt](https://letsencrypt.org/)에서 제공하는 모든 인증서가 자동으로 사용됩니다. 사용자 지정 도메인에 [사용자 지정 SSL 인증서](./load-balancer.md#custom-ssl)를 사용하려면 대신 웹 서버의 `LCP.json` 파일을 통해 인증서를 추가해야 합니다.
+Liferay Cloud 콘솔을 통해 사용자 지정 도메인을 추가하면 [Let's Encrypt](https://letsencrypt.org/) 에서 제공하는 모든 인증서가 자동으로 사용됩니다. 사용자 지정 도메인에 [사용자 지정 SSL 인증서](./load-balancer.md#custom-ssl) 를 사용하려면 대신 웹 서버의 `LCP.json` 파일을 통해 인증서를 추가해야 합니다.
 ```
 
 ### LCP.json을 통해 사용자 지정 도메인 추가
@@ -97,7 +97,7 @@ Liferay Cloud 콘솔을 통해 사용자 지정 도메인을 추가하면 [Let's
 
 ![그림 4: 네트워크 페이지에서 모든 엔드포인트와 사용자 지정 도메인을 봅니다.](./custom-domains/images/04.png)
 
-백엔드 프로세스로 인해 구성 후 사용자 지정 도메인을 확인하는 데 시간이 걸릴 수 있습니다. 사용자 지정 도메인을 확인할 수 있는 시간에 영향을 미치는 백엔드 프로세스에는 Liferay Cloud의 로드 밸런서에 경로 추가, [Let's Encrypt](https://letsencrypt.org/)을 통해 SSL 서버 인증서 요청, Let's Encrypt에서 챌린지 수신, 인증서로 로드 밸런서 업데이트가 포함됩니다. 일단 도전을 통과합니다.
+백엔드 프로세스로 인해 구성 후 사용자 지정 도메인을 확인하는 데 시간이 걸릴 수 있습니다. 사용자 지정 도메인을 확인할 수 있는 시간에 영향을 미치는 백엔드 프로세스에는 Liferay Cloud의 로드 밸런서에 경로 추가, [Let's Encrypt](https://letsencrypt.org/) 을 통해 SSL 서버 인증서 요청, Let's Encrypt에서 챌린지 수신, 인증서로 로드 밸런서 업데이트가 포함됩니다. 일단 도전을 통과합니다.
 
 ```{important}
 사용자가 챌린지 프로세스 중에 도메인에 도달하려고 시도하면 브라우저는 무시해도 되는 보안 경고를 표시합니다.
@@ -105,7 +105,7 @@ Liferay Cloud 콘솔을 통해 사용자 지정 도메인을 추가하면 [Let's
 
 백엔드 프로세스가 완료되면 Liferay Cloud의 로드 밸런서가 SSL 서버 인증서로 업데이트되고 서비스에 도달할 수 있고 안전합니다.
 
-하나 이상의 사용자 지정 SSL 인증서를 설정하는 방법을 포함하여 Liferay Cloud의 SSL 인증서에 대한 자세한 내용은 [Load Balancer](./load-balancer.md) 을 참조하십시오.
+하나 이상의 사용자 지정 SSL 인증서를 설정하는 방법을 포함하여 Liferay Cloud의 SSL 인증서에 대한 자세한 내용은 [로드 밸런서](./load-balancer.md) 을 참조하십시오.
 
 ## 추가 정보
 

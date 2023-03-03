@@ -1,6 +1,6 @@
 # 자산 활성화
 
-Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메시지 보드 등)은 즉시 자산을 사용할 수 있습니다. [자산 게시자 위젯](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) 을 사용하여 자산을 게시하거나 [자산 라이브러리](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)를 생성할 수도 있습니다. [Service Builder](../service-builder.md)의 도움으로 맞춤형 애플리케이션을 자산화할 수 있습니다. 자세한 방법은 아래 샘플 프로젝트를 참조하십시오.
+Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메시지 보드 등)은 즉시 자산을 사용할 수 있습니다. [자산 게시자 위젯](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) 을 사용하여 자산을 게시하거나 [자산 라이브러리](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)를 생성할 수도 있습니다. [서비스 빌더](../service-builder.md) 의 도움으로 맞춤형 애플리케이션을 자산화할 수 있습니다. 자세한 방법은 아래 샘플 프로젝트를 참조하십시오.
 
 ## 샘플 코드 받기
 
@@ -9,7 +9,7 @@ Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메�
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Enabling Assets](./liferay-s5e6.zip)을 다운로드하고 압축을 풉니다.
+1. [Enabling Assets](./liferay-s5e6.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
@@ -108,7 +108,7 @@ Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메�
 :lines: 64-73
 ```
 
-[`AssetEntryLocalServiceImpl` 클래스](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-)에 대한 Javadocs를 확인하면 메서드가 오버로드된 것을 볼 수 있습니다. 자산 항목의 제목을 설정할 수 있도록 `제목` 매개변수를 사용하는 `updateEntry()` 버전을 사용합니다.
+[`AssetEntryLocalServiceImpl` 클래스](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-) 에 대한 Javadocs를 확인하면 메서드가 오버로드된 것을 볼 수 있습니다. 자산 항목의 제목을 설정할 수 있도록 `제목` 매개변수를 사용하는 `updateEntry()` 버전을 사용합니다.
 
 변경 후 Service Builder를 다시 실행하십시오.
 

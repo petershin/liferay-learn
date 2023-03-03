@@ -22,4 +22,4 @@ JSP에서 `<liferay-portlet:defineObjects>` 태그를 발견했을 수 있습니
 | `PortletSession portletSession` | 둘 이상의 요청에서 사용자를 식별하고 사용자에 대한 임시 정보를 저장하는 방법을 제공합니다. 각 사용자 클라이언트에 대해 `portletSession`이 생성됩니다. 'portletSession'은 포함된 요청 처리 단계에 관계없이 항상 포틀릿 JSP에서 사용할 수 있습니다. 세션이 없으면 `portletSession`은 `null`입니다. |
 | `Map<String, Object> portletSessionScope` | `PortletSession.getAtrributeMap()` 호출에 해당하는 맵 또는 세션 속성이 없는 경우 비어 있는 맵을 제공합니다. |
 
-자세한 내용은 [Portlet 3.0 API Javadoc](https://learn.liferay.com/reference/latest/en/portlet-api/index.html)을 참조하십시오.
+자세한 내용은 [Portlet 3.0 API Javadoc](https://learn.liferay.com/reference/latest/en/portlet-api/index.html) 을 참조하십시오.

@@ -18,7 +18,7 @@ browser-based-client-extensions/remote-applications-ui-reference.md
 
 Liferay는 페이지를 보강하고 기능을 통합하기 위한 다양한 브라우저 기반 클라이언트 확장을 제공합니다. 이러한 확장 유형에는 CSS, JS, Theme CSS, Theme Favicon, Custom Element 및 IFrame이 포함됩니다.
 
-[Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md)에서 이러한 확장을 만들고 배포할 수 있습니다. 이러한 브라우저 기반 클라이언트 확장의 기본 버전을 생성하려면 Liferay 작업 공간에서 [Blade CLI](../tooling/blade-cli.md) 을 사용하여 이 명령을 실행하십시오.
+[Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md)에서 이러한 확장을 만들고 배포할 수 있습니다. 이러한 브라우저 기반 클라이언트 확장의 기본 버전을 생성하려면 Liferay 작업 공간에서 [블레이드 CLI](../tooling/blade-cli.md) 을 사용하여 이 명령을 실행하십시오.
 
 ```bash
 blade create -t client-extension [your-new-folder-name]
@@ -64,7 +64,7 @@ CSS 클라이언트 확장과 유사하게 전체 테마를 배포하지 않고 
 
 사용자 정의 요소 클라이언트 확장은 Liferay의 프런트 엔드 인프라를 사용하여 외부 애플리케이션을 플랫폼과 통합하고 이를 페이지 위젯으로 렌더링합니다. Liferay 외부에서 액세스할 수 있는 모든 도메인의 애플리케이션을 통합할 수 있습니다.
 
-사용자 정의 요소 클라이언트 확장을 사용하려면 필요한 URL 및 세부 정보를 사용하여 회사 수준에서 항목을 생성하여 Liferay에 등록합니다. 그런 다음 Liferay는 각 항목에 대해 고유한 위젯을 생성하고 애플리케이션을 [사용자 정의 HTML 요소](https://web.dev/custom-elements-v1/)로 렌더링합니다.
+사용자 정의 요소 클라이언트 확장을 사용하려면 필요한 URL 및 세부 정보를 사용하여 회사 수준에서 항목을 생성하여 Liferay에 등록합니다. 그런 다음 Liferay는 각 항목에 대해 고유한 위젯을 생성하고 애플리케이션을 [사용자 정의 HTML 요소](https://web.dev/custom-elements-v1/) 로 렌더링합니다.
 
 자세한 내용은 [맞춤 요소 및 IFrame 클라이언트 확장 이해](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 참조하세요.
 
@@ -72,7 +72,7 @@ CSS 클라이언트 확장과 유사하게 전체 테마를 배포하지 않고 
 
 > 이전 이름은 IFrame 원격 앱
 
-IFrame 클라이언트 확장은 [사용자 정의 요소 클라이언트 확장](#custom-element-client-extensions)과 유사하게 작동합니다. 그러나 외부 응용 프로그램을 `<iframe>` HTML 요소로 렌더링하여 호스트 페이지에서 제한된 상호 작용을 허용합니다. 자세한 내용은 [맞춤 요소 및 IFrame 클라이언트 확장 이해](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 참조하세요.
+IFrame 클라이언트 확장은 [사용자 정의 요소 클라이언트 확장](#custom-element-client-extensions) 과 유사하게 작동합니다. 그러나 외부 응용 프로그램을 `<iframe>` HTML 요소로 렌더링하여 호스트 페이지에서 제한된 상호 작용을 허용합니다. 자세한 내용은 [맞춤 요소 및 IFrame 클라이언트 확장 이해](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 참조하세요.
 
 ## 추가 정보
 

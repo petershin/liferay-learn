@@ -30,7 +30,7 @@ Liferay DXP 7.0 및 7.1 패치 소스 코드에 대해 태그가 지정된 분�
 
 Liferay DXP 소스 코드 사용자 정의가 지원되지 않기 때문에 빌드 파일은 소스 코드에서 제외됩니다. Liferay DXP의 확장 지점은 유일하게 지원되는 사용자 정의 방법입니다.
 
-* 새로운 확장 지점이나 새로운 기능을 원하시면 [JIRA](https://issues.liferay.com)에서 기능 요청을 제출하십시오.
+* 새로운 확장 지점이나 새로운 기능을 원하시면 [JIRA](https://issues.liferay.com) 에서 기능 요청을 제출하십시오.
 * Liferay DXP를 사용자 지정하거나 기능을 요청하는 데 도움이 필요한 경우 계정 담당자 또는 고객 경험 관리자에게 문의하십시오.
 
 ```{note}
@@ -71,14 +71,14 @@ Liferay DXP 소스 코드 사용자 정의가 지원되지 않기 때문에 빌�
 ```
 
 ```{important}
-GitHub 사용자 이름이 변경되면 리포지토리 액세스가 무효화됩니다. 사용자 이름을 변경하는 경우 [해당 사용자의 접근권한을 제거](#removing-access)한 후 새로운 GitHub 사용자 이름으로 접근 권한을 요청합니다.
+GitHub 사용자 이름이 변경되면 리포지토리 액세스가 무효화됩니다. 사용자 이름을 변경하는 경우 [해당 사용자의 접근권한을 제거](#removing-access) 한 후 새로운 GitHub 사용자 이름으로 접근 권한을 요청합니다.
 ```
 
 ## 액세스 제거
 
 GitHub 사용자의 리포지토리 액세스 권한을 제거하는 방법은 다음과 같습니다.
 
-1. [도움말 센터](https://help.liferay.com/hc/en-us/)에서 [프로젝트](https://customer.liferay.com/project-details?_ga=2.57624622.528260345.1619731014-1356934316.1588162379) 페이지로 이동합니다.
+1. [도움말 센터](https://help.liferay.com/hc/ko/) 에서 [프로젝트](https://customer.liferay.com/project-details?_ga=2.57624622.528260345.1619731014-1356934316.1588162379) 페이지로 이동합니다.
 1. DXP 프로젝트를 선택합니다.
 1. *소스 코드 액세스* 탭을 선택합니다.
 1. 사용자의 GitHub 정보를 확장합니다.
@@ -101,11 +101,11 @@ GitHub 사용자의 리포지토리 액세스 권한을 제거하는 방법은 �
 | 풀 리퀘스트 리뷰 제출    | (2)   |
 | Wiki 편집         | (삼)   |
 
-**(1) 문제 및 의견:** 소스 코드 저장소에서 제기된 문제를 닫고 답변하지 않은 상태로 둡니다. Liferay 소프트웨어 문제가 있는 경우 도움말 센터에서 지원 티켓을 생성하여 [](https://help.liferay.com/hc/en-us/requests/new) 지원 팀에 알려 주십시오.
+**(1) 문제 및 의견:** 소스 코드 저장소에서 제기된 문제를 닫고 답변하지 않은 상태로 둡니다. Liferay 소프트웨어 문제가 있는 경우 도움말 센터에서 지원 티켓을 생성하여 [](https://help.liferay.com/hc/ko/requests/new) 지원 팀에 알려 주십시오.
 
 **(2) 코드 기여의 경우:** 공용 Liferay Portal 리포지토리 <https://github.com/liferay/liferay-portal>에서 코드를 기여할 수 있습니다. 승인된 기여는 다음 Liferay DXP 릴리스에 포함됩니다.
 
-**(3) 위키의 경우:** 공식 Liferay DXP 설명서는 <https://learn.liferay.com> 에 있으며 지원 기술 자료는 [도움말 센터](https://help.liferay.com/hc/en-us/)에 있습니다. 우리는 `liferay-dxp` 저장소 위키를 사용하지 않습니다. 문서 변경을 제안하거나 주제에 대한 문서를 요청하려면 도움말 센터에서 지원 티켓을 생성 [하여](https://help.liferay.com/hc/en-us/requests/new) 지원 팀에 알려주십시오.
+**(3) 위키의 경우:** 공식 Liferay DXP 설명서는 <https://learn.liferay.com> 에 있으며 지원 기술 자료는 [도움말 센터](https://help.liferay.com/hc/ko/) 에 있습니다. 우리는 `liferay-dxp` 저장소 위키를 사용하지 않습니다. 문서 변경을 제안하거나 주제에 대한 문서를 요청하려면 도움말 센터에서 지원 티켓을 생성 [하여](https://help.liferay.com/hc/ko/requests/new) 지원 팀에 알려주십시오.
 
 ## 추가 정보
 

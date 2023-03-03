@@ -10,7 +10,7 @@
 - 검색 엔진에서 반환된 응답 문자열
 
 ```{note}
-요청 문자열로 반환된 JSON은 명확성을 위해 여러 Elasticsearch 쿼리 기본값에서 제거되었습니다. Elasticsearch가 처리한 전체 요청 JSON을 보려면 [Elasticsearch 서버의 로깅](https://www.elastic.co/guide/en/elasticsearch/reference/6.x/logging.html)을 조정하세요.
+요청 문자열로 반환된 JSON은 명확성을 위해 여러 Elasticsearch 쿼리 기본값에서 제거되었습니다. Elasticsearch가 처리한 전체 요청 JSON을 보려면 [Elasticsearch 서버의 로깅](https://www.elastic.co/guide/en/elasticsearch/reference/6.x/logging.html) 을 조정하세요.
 ```
 
 _점수 설명 활성화_ 옵션(기본적으로 활성화됨)을 사용하면 통찰력 위젯이 반환된 각 결과에 대한 관련성 점수 설명도 인쇄합니다.
@@ -37,7 +37,7 @@ Liferay 7.4에서 Search Insights 인터페이스의 일부 개선 사항이 도
 
 1. 기본적으로 활성화되는 부울 필드는 점수 설명 활성화입니다. 각 결과의 관련성 점수에 대한 설명을 비활성화하려면 선택을 취소하십시오.
 
-내부적으로 검색 인사이트 위젯의 Explain 옵션은 Elasticsearch API를 노출합니다: [Explain](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-explain.html). 자세한 내용은 Elasticsearch 설명서를 참조하십시오.
+내부적으로 검색 인사이트 위젯의 Explain 옵션은 Elasticsearch API를 노출합니다: [Explain](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-explain.html) . 자세한 내용은 Elasticsearch 설명서를 참조하십시오.
 
 다음은 검색어가 _test_때 테스트 테스트 사용자의 검색 문서에 대한 응답 채점 설명의 축약된 부분입니다.
 

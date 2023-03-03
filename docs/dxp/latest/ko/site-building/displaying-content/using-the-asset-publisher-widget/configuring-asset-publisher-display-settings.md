@@ -77,7 +77,7 @@
 
 ![자산을 다른 그룹으로 분리할 수 있습니다.](./configuring-asset-publisher-display-settings/images/05.png)
 
-예를 들어 *Premium* 및 *Regular*의 두 가지 범주가 있는 *Membership Type* 이라는 어휘가 있다고 가정합니다. 멤버십 유형별로 자산을 그룹화하면 프리미엄 범주의 모든 자산이 한 그룹에 나타나고 일반 범주의 모든 자산이 다른 그룹에 나타납니다. 그룹화 규칙은 [순서 규칙](./selecting-assets-in-the-asset-publisher-widget.md#configuring-asset-display-ordering)이전에 적용됩니다. 순서 지정 규칙은 각 자산 그룹에 별도로 적용됩니다. 아래 그림의 예는 자산을 유형별로 그룹화합니다. 이미지는 웹 콘텐츠 기사 다음에 나열됩니다.
+예를 들어 *Premium* 및 *Regular*의 두 가지 범주가 있는 *Membership Type* 이라는 어휘가 있다고 가정합니다. 멤버십 유형별로 자산을 그룹화하면 프리미엄 범주의 모든 자산이 한 그룹에 나타나고 일반 범주의 모든 자산이 다른 그룹에 나타납니다. 그룹화 규칙은 [순서 규칙](./selecting-assets-in-the-asset-publisher-widget.md#configuring-asset-display-ordering) 이전에 적용됩니다. 순서 지정 규칙은 각 자산 그룹에 별도로 적용됩니다. 아래 그림의 예는 자산을 유형별로 그룹화합니다. 이미지는 웹 콘텐츠 기사 다음에 나열됩니다.
 
 ![자산을 유형별로 그룹화할 수 있습니다.](./configuring-asset-publisher-display-settings/images/06.png)
 

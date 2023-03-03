@@ -7,7 +7,7 @@
 
 ## 이스케이프 구성 텍스트 값
 
-악성 코드는 [텍스트 필드 구성](../reference/fragments/fragment-configuration-types-reference.md#text-configuration)에 삽입되어 다른 프래그먼트 사용자에게 큰 피해를 줄 수 있습니다. XSS(교차 사이트 스크립팅) 공격으로부터 보호하려면 조각 텍스트 값을 이스케이프 처리해야 합니다.
+악성 코드는 [텍스트 필드 구성](../reference/fragments/fragment-configuration-types-reference.md#text-configuration) 에 삽입되어 다른 프래그먼트 사용자에게 큰 피해를 줄 수 있습니다. XSS(교차 사이트 스크립팅) 공격으로부터 보호하려면 조각 텍스트 값을 이스케이프 처리해야 합니다.
 
 일반적인 경우 HTML `escape()` 메서드를 사용할 수 있습니다. 자세한 내용은 [`HtmlUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) 클래스를 참조하십시오.
 
@@ -29,7 +29,7 @@ function (fragmentElement, configuration) {
 
 FreeMarker 목록을 사용하여 프래그먼트에 대해 동일한 HTML 요소를 반복적으로 작성하지 마십시오. 구현한 구성 옵션의 값을 사용하여 목록의 논리를 구현할 수 있습니다.
 
-예를 들어 구성에 정의된 여러 행을 반복한 다음(예: [이 예 선택 구성](../reference/fragments/fragment-configuration-types-reference.md#select-configuration)) 다음 HTML을 사용하여 구성된 행 수를 나열할 수 있습니다.
+예를 들어 구성에 정의된 여러 행을 반복한 다음(예: [이 예 선택 구성](../reference/fragments/fragment-configuration-types-reference.md#select-configuration) ) 다음 HTML을 사용하여 구성된 행 수를 나열할 수 있습니다.
 
 ```html
 <div class="fragment_1">
@@ -39,7 +39,7 @@ FreeMarker 목록을 사용하여 프래그먼트에 대해 동일한 HTML 요�
 </div>
 ```
 
-[컬렉션 선택기 구성](../reference/fragments/fragment-configuration-types-reference.md#collection-selector)을 구현한 경우 다음 예와 같이 구성된 컬렉션의 모든 제목을 나열할 수도 있습니다.
+[컬렉션 선택기 구성](../reference/fragments/fragment-configuration-types-reference.md#collection-selector) 을 구현한 경우 다음 예와 같이 구성된 컬렉션의 모든 제목을 나열할 수도 있습니다.
 
 ```html
 <div class="fragment_310">

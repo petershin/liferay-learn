@@ -3,7 +3,7 @@
 자산의 워크플로우가 [활성화](./activating-workflow.md)인 경우 게시 전에 한 명 이상의 사용자가 자산을 검토해야 합니다. 워크플로 검토 프로세스를 특정 사용자 또는 특정 역할(예: 포털 또는 사이트 콘텐츠 검토자)에 할당할 수 있습니다. 후자의 경우 해당 역할에 할당된 사람은 누구나 제출을 승인하거나 거부할 수 있습니다. 예를 들어 기본 _단일 승인자_ 프로세스를 사용하면 워크플로 작업이 포털 또는 사이트 콘텐츠 검토자 또는 관리자 권한이 있는 모든 사람에게 할당됩니다.
 
 ```{tip}
-DXP 가입자: [Workflow Metrics application](./using-workflow-metrics.md#managing-workflow-tasks-in-bulk)을 사용하여 워크플로 항목의 대량 관리가 가능합니다.
+DXP 가입자: [Workflow Metrics application](./using-workflow-metrics.md#managing-workflow-tasks-in-bulk) 을 사용하여 워크플로 항목의 대량 관리가 가능합니다.
 ```
 
 자산이 제출되면 _워크플로_ 애플리케이션은 모든 잠재적 검토자에게 알림을 보냅니다. 알림에 액세스하려면 아바타를 클릭하고 _알림_을 선택하십시오.

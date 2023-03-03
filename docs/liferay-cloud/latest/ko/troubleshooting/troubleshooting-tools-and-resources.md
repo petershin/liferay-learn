@@ -128,25 +128,25 @@ Liferay Cloud의 자동 재해 복구 전략은 동일한 지역 내의 세 가�
 
 ## 지원 센터
 
-Liferay Cloud [설명서](https://learn.liferay.com/liferay-cloud/latest/en/index.html) 에서 답변하지 않은 질문이 있거나 문제를 보고하려면 Liferay [도움말 센터](https://help.liferay.com/) 에 로그인하여 구독 전용 리소스를 보거나 티켓을 제출하십시오.
+Liferay Cloud [라이프레이 클라우드](https://learn.liferay.com/liferay-cloud/latest/ko/index.html) 에서 답변하지 않은 질문이 있거나 문제를 보고하려면 Liferay [도움말 센터](https://help.liferay.com/) 에 로그인하여 구독 전용 리소스를 보거나 티켓을 제출하십시오.
 
 ![구독 전용 리소스를 보거나 Liferay 도움말 센터 페이지를 통해 티켓을 제출하십시오.](./troubleshooting-tools-and-resources/images/08.png)
 
-여기에서 사용자는 Liferay Cloud [기술 자료](https://help.liferay.com/hc/en-us/categories/360001132872), [제품 지원](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)및 [발표](https://help.liferay.com/hc/en-us/categories/360001192512)에 액세스할 수 있습니다.
+여기에서 사용자는 Liferay Cloud [기술 자료](https://help.liferay.com/hc/ko/categories/360001132872) , [제품 지원](https://help.liferay.com/hc/ko/articles/360030208451-DXP-Cloud-Support-Overview) 및 [발표](https://help.liferay.com/hc/ko/categories/360001192512) 에 액세스할 수 있습니다.
 
-사용자는 최신 Liferay Cloud [도움말 센터 업데이트](https://www.liferay.com/web/l/subscribe-to-liferay-dxp-cloud-updates)에 대한 이메일 알림을 받도록 구독할 수도 있습니다. 이러한 업데이트에는 새로운 플랫폼 릴리스, 서비스 업데이트, 보안 경고 및 패치가 포함됩니다.
+사용자는 최신 Liferay Cloud [도움말 센터 업데이트](https://www.liferay.com/web/l/subscribe-to-liferay-dxp-cloud-updates) 에 대한 이메일 알림을 받도록 구독할 수도 있습니다. 이러한 업데이트에는 새로운 플랫폼 릴리스, 서비스 업데이트, 보안 경고 및 패치가 포함됩니다.
 
 ```{note}
 Liferay Cloud 알림은 활성 Liferay 기업 구독이 있는 고객에게만 배포됩니다.
 ```
 
-추가 지원을 위해 사용자는 전화로 Liferay의 글로벌 [지원 센터](https://help.liferay.com/hc/en-us/articles/360017784212?_ga=2.254167624.1908736764.1562000563-1350017715.1560788053) 중 하나에 연락하거나 [도움말 센터](https://help.liferay.com/) 페이지를 통해 티켓을 제출할 수 있습니다.
+추가 지원을 위해 사용자는 전화로 Liferay의 글로벌 [지원 센터](https://help.liferay.com/hc/ko/articles/360017784212?_ga=2.254167624.1908736764.1562000563-1350017715.1560788053) 중 하나에 연락하거나 [도움말 센터](https://help.liferay.com/) 페이지를 통해 티켓을 제출할 수 있습니다.
 
 티켓을 제출할 때 현재 사용 중인 빌드 이미지, 직면한 동작 또는 질문, 문제를 재현하는 단계, 실제 동작과 예상 동작에 대한 설명에 대한 정보를 제공하십시오.
 
 ## 추가 정보
 
-* [Liferay 클라우드 지원 개요](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
-* [Liferay 클라우드 기술 자료](https://help.liferay.com/hc/en-us/categories/360001132872)
-* [Liferay 클라우드 발표](https://help.liferay.com/hc/en-us/categories/360001192512)
+* [Liferay 클라우드 지원 개요](https://help.liferay.com/hc/ko/articles/360030208451-DXP-Cloud-Support-Overview)
+* [Liferay 클라우드 기술 자료](https://help.liferay.com/hc/ko/categories/360001132872)
+* [Liferay 클라우드 발표](https://help.liferay.com/hc/ko/categories/360001192512)
 * [지원 액세스](./support-access.md)

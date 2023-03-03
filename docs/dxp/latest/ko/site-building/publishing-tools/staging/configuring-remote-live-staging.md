@@ -93,7 +93,7 @@ Liferay 서버를 준비했으면 다음 단계에 따라 사이트 또는 자�
    ```{note}
    IPv6 주소를 구성하는 경우 *Remote Host/IP* 필드에 입력할 때 대괄호를 포함해야 합니다(예: [0:0:0:0:0:0:0:1]).
 
-   원격 서버가 클러스터인 경우 원격 호스트/IP를 클러스터의 부하 분산된 IP 주소로 설정하여 게시 프로세스의 가용성을 높일 수 있습니다. 자세한 내용은 [클러스터 환경에서 원격 스테이징 구성](https://help.liferay.com/hc/en-us/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment)을 참조하십시오.
+   원격 서버가 클러스터인 경우 원격 호스트/IP를 클러스터의 부하 분산된 IP 주소로 설정하여 게시 프로세스의 가용성을 높일 수 있습니다. 자세한 내용은 [클러스터 환경에서 원격 스테이징 구성](https://help.liferay.com/hc/ko/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment) 을 참조하십시오.
    ```
 
 1. 스테이징에서 라이브로 페이지를 게시하기 위해 보안 네트워크 연결(예: HTTPS)을 사용할지 여부를 결정합니다.

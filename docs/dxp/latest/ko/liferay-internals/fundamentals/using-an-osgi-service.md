@@ -1,6 +1,6 @@
 # OSGi 서비스 사용
 
-Liferay API는 OSGi 서비스로 쉽게 사용할 수 있습니다. 다음과 같이 해당 서비스 유형의 필드를 만들고 필드에 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html)주석을 달아 서비스에 액세스할 수 있습니다.
+Liferay API는 OSGi 서비스로 쉽게 사용할 수 있습니다. 다음과 같이 해당 서비스 유형의 필드를 만들고 필드에 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 달아 서비스에 액세스할 수 있습니다.
 
 ```java
 @Reference
@@ -9,7 +9,7 @@ BlogsEntryService _blogsEntryService;
 
 위의 `_blogsEntryService` 필드는 [`BlogsEntryService`](https://docs.liferay.com/ce/apps/blogs/latest/javadocs/com/liferay/blogs/service/BlogsEntryService.html) OSGi 서비스에 액세스합니다.
 
-모든 선언적 서비스 구성 요소( [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)주석이 달린 클래스)는 이러한 방식으로 OSGi 서비스에 액세스할 수 있습니다. 런타임 프레임워크는 구성 요소의 `@Reference`주석 필드에 해당 서비스 유형을 삽입합니다.
+모든 선언적 서비스 구성 요소( [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 주석이 달린 클래스)는 이러한 방식으로 OSGi 서비스에 액세스할 수 있습니다. 런타임 프레임워크는 구성 요소의 `@Reference`주석 필드에 해당 서비스 유형을 삽입합니다.
 
 다음 예제는 `Greeter`이라는 OSGi 서비스를 사용하는 방법을 보여줍니다. 세 개의 모듈은 OSGi 서비스에서 사용되는 *API-Provider-Consumer* 패턴을 보여줍니다.
 
@@ -23,7 +23,7 @@ BlogsEntryService _blogsEntryService;
 
 모든 Java 클래스에서 OSGi 서비스를 사용할 수 있습니다.
 
-Liferay 서비스 Javadoc은 [여기](https://learn.liferay.com/reference/latest/en/dxp.html)에서 사용할 수 있습니다.
+Liferay 서비스 Javadoc은 [여기](https://learn.liferay.com/reference/latest/en/dxp.html) 에서 사용할 수 있습니다.
 
 ```{note}
 OSGi 서비스를 만드는 방법에 대한 지침은 [OSGi 서비스로서의 API](./apis-as-osgi-services.md)를 참조하세요.

@@ -16,7 +16,7 @@
 * [커스텀 메타 태그](#custom-meta-tags)
 
 ```{note}
-이러한 설정 중 다수는 사용자의 로케일을 기반으로 번역을 제공하도록 현지화할 수 있습니다. [현지화 소개](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) 및 [현지화 가능한 사이트 필드 수정](../../site-settings/site-localization.md#modifying-localizable-site-fields)를 참조하십시오.
+이러한 설정 중 다수는 사용자의 로케일을 기반으로 번역을 제공하도록 현지화할 수 있습니다. [현지화 소개](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) 및 [현지화 가능한 사이트 필드 수정](../../site-settings/site-localization.md#modifying-localizable-site-fields) 를 참조하십시오.
 ```
 
 ## 일반
@@ -99,7 +99,7 @@
 
 ### HTML제목
 
-HTML 제목 필드를 사용하여 페이지의 `<title>` 태그를 정의합니다. 이 제목은 검색 엔진에서 귀하의 페이지 순위를 매기는 데 사용되며 페이지의 [이름](#name-and-friendly-url)을 대체하지는 않지만 검색 엔진 결과에서 페이지의 머리글 역할을 합니다. HTML 제목의 권장 길이는 60자 미만입니다.
+HTML 제목 필드를 사용하여 페이지의 `<title>` 태그를 정의합니다. 이 제목은 검색 엔진에서 귀하의 페이지 순위를 매기는 데 사용되며 페이지의 [이름](#name-and-friendly-url) 을 대체하지는 않지만 검색 엔진 결과에서 페이지의 머리글 역할을 합니다. HTML 제목의 권장 길이는 60자 미만입니다.
 
 ### 묘사
 
@@ -143,7 +143,7 @@ HTML 제목, 설명 및 사용자 지정 URL의 구성에 따라 페이지가 �
 
 > 사용 가능: Liferay DXP/Portal 7.3+
 
-[Open Graph](https://ogp.me/) 은 Facebook, Slack 및 Twitter와 같이 사이트 콘텐츠를 지원하는 애플리케이션 컨텍스트에서 공유할 때 사이트 콘텐츠의 미리보기를 표준화하는 인터넷 프로토콜입니다. [RDFa](https://en.wikipedia.org/wiki/RDFa)와 유사하게 구조화된 데이터를 페이지 헤더에 `<meta>` 태그로 삽입하여 이를 수행합니다.
+[Open Graph](https://ogp.me/) 은 Facebook, Slack 및 Twitter와 같이 사이트 콘텐츠를 지원하는 애플리케이션 컨텍스트에서 공유할 때 사이트 콘텐츠의 미리보기를 표준화하는 인터넷 프로토콜입니다. [RDFa](https://en.wikipedia.org/wiki/RDFa) 와 유사하게 구조화된 데이터를 페이지 헤더에 `<meta>` 태그로 삽입하여 이를 수행합니다.
 
 *Open Graph* 탭에서 Open Graph `<meta>` 태그를 사용하여 페이지의 메타데이터를 정의하고 매력적인 콘텐츠 표현을 만들 수 있습니다. 여기에 정의된 값은 [사이트](../../site-settings/configuring-open-graph.md) 수준에서 정의된 기본값을 재정의합니다.
 

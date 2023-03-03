@@ -40,7 +40,7 @@ configuring-fragments/localizing-fragment-configuration-fields.md
 
 ## 조각 하위 요소 설정
 
-많은 조각에는 자체 구성 옵션이 있는 하위 요소가 포함되어 있습니다. 사용 가능한 옵션은 하위 요소의 유형에 따라 달라지며 매핑, 이미지 소스 및 링크 탭으로 구성됩니다. 자세한 내용은 [Fragment Sub-Elements Reference](./configuring-fragments/fragment-sub-elements-reference.md) 을 참조하십시오.
+많은 조각에는 자체 구성 옵션이 있는 하위 요소가 포함되어 있습니다. 사용 가능한 옵션은 하위 요소의 유형에 따라 달라지며 매핑, 이미지 소스 및 링크 탭으로 구성됩니다. 자세한 내용은 [조각 하위 요소 참조](./configuring-fragments/fragment-sub-elements-reference.md) 을 참조하십시오.
 
 ### 맵핑
 

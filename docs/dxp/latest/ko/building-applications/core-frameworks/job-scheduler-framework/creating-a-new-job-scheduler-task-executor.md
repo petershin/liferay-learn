@@ -22,12 +22,12 @@
       올바른 실행기가 일치하도록 하려면 값이 고유해야 합니다. 값이 고유하지 않은 경우 시작 시 로그에 동일한 속성 값이 있는 실행기를 나타내는 오류가 표시됩니다.
       ```
 
-1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java): `DispatchTaskExecutor` 인터페이스를 구현하거나 구현을 확장합니다(예: `BaseDispatchTaskExecutor`).
+1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) : `DispatchTaskExecutor` 인터페이스를 구현하거나 구현을 확장합니다(예: `BaseDispatchTaskExecutor`).
 
       ```{important}
       'DispatchTaskExecutor' 인터페이스의 구현은 Job Scheduler 작업에 대한 상태 로그를 처리해야 합니다. 프레임워크는 작업의 동시 실행을 제어하기 위해 해당 로그에 의존하기 때문입니다.
 
-      귀하의 편의를 위해 Liferay는 `BaseDispatchTaskExecutor` 추상 [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay)을 제공합니다. /dispatch/executor/BaseDispatchTaskExecutor.java) Job Scheduler 작업의 상태를 `IN PROGRESS`, `SUCCESSFUL` 또는 `FAILED`로 기록합니다.
+      귀하의 편의를 위해 Liferay는 `BaseDispatchTaskExecutor` 추상 [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay) 을 제공합니다. /dispatch/executor/BaseDispatchTaskExecutor.java) Job Scheduler 작업의 상태를 `IN PROGRESS`, `SUCCESSFUL` 또는 `FAILED`로 기록합니다.
       ```
 
 1. **방법**: `DispatchTaskExecutor` 인터페이스를 직접 구현하는 경우 `execute()` 메서드를 재정의하여 사용자 지정 논리를 구현합니다. 대신 `BaseDispatchTaskExecutor` 추상 클래스를 확장하는 경우 `doExecute()` 메서드를 재정의합니다.
@@ -78,7 +78,7 @@
    STARTED com.acme.s7a3.impl-1.0.0 [1656]
    ```
 
-1. 모듈을 사용하여 Liferay 인스턴스에 새 작업 스케줄러 작업 [을 추가하여 모듈이 작동하는지 확인](./using-job-scheduler.md#adding-a-new-job-scheduler-task).
+1. 모듈을 사용하여 Liferay 인스턴스에 새 작업 스케줄러 작업 [을 추가하여 모듈이 작동하는지 확인](./using-job-scheduler.md#adding-a-new-job-scheduler-task) .
 
    ![새 템플릿을 사용하여 새 작업 스케줄러 작업을 추가합니다.](./creating-a-new-job-scheduler-task-executor/images/01.png)
 

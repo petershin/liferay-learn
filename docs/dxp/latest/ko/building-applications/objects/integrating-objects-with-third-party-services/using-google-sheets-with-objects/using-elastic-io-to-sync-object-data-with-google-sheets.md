@@ -4,13 +4,13 @@
 
 데이터 통합 도구와 함께 Liferay 객체를 사용하여 객체 데이터를 외부 서비스와 동기화하기 위한 자동화된 작업을 생성할 수 있습니다. 이러한 작업은 웹후크를 사용하여 트리거되며 Google 애플리케이션, Microsoft Office 등에 연결할 수 있습니다.
 
-여기서는 Webhook을 사용하여 [Elastic.io](https://www.elastic.io/)을 사용하여 Liferay 객체와 Google 스프레드시트 간에 동기화 작업을 트리거하는 방법을 배웁니다. 이러한 방식으로 데이터를 동기화하려면 Elastic.io 계정, Google 스프레드시트 및 활성 DXP 7.4 인스턴스가 필요합니다. DXP 인스턴스에는 Google 스프레드시트로 데이터를 보내거나 받기 위해 원하는 필드가 있는 게시된 개체도 있어야 합니다.
+여기서는 Webhook을 사용하여 [Elastic.io](https://www.elastic.io/) 을 사용하여 Liferay 객체와 Google 스프레드시트 간에 동기화 작업을 트리거하는 방법을 배웁니다. 이러한 방식으로 데이터를 동기화하려면 Elastic.io 계정, Google 스프레드시트 및 활성 DXP 7.4 인스턴스가 필요합니다. DXP 인스턴스에는 Google 스프레드시트로 데이터를 보내거나 받기 위해 원하는 필드가 있는 게시된 개체도 있어야 합니다.
 
 ## 개체 데이터를 Google 시트에 동기화
 
 개체 데이터를 Google 시트에 동기화하려면 다음 단계를 따르세요.
 
-1. [Elastic.io](https://www.elastic.io/)에 로그인하고 *Integrate* 페이지로 이동한 다음 *Flows*를 클릭합니다.
+1. [Elastic.io](https://www.elastic.io/) 에 로그인하고 *Integrate* 페이지로 이동한 다음 *Flows*를 클릭합니다.
 
    ![통합 페이지로 이동하고 흐름을 클릭합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/01.png)
 

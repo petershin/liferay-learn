@@ -1,6 +1,6 @@
 # 외부 서비스 구성
 
-Liferay는 파일 변환 및 파일 미리 보기 생성을 위한 외부 서비스와의 통합을 제공합니다. 서버 관리 설정에서 [ImageMagick](https://www.imagemagick.org/script/index.php), [Ghostscript](https://www.ghostscript.com/)및 [Xuggler](http://www.xuggle.com/xuggler/)서비스 중 세 가지 서비스를 활성화할 수 있습니다.
+Liferay는 파일 변환 및 파일 미리 보기 생성을 위한 외부 서비스와의 통합을 제공합니다. 서버 관리 설정에서 [ImageMagick](https://www.imagemagick.org/script/index.php) , [Ghostscript](https://www.ghostscript.com/) 및 [Xuggler](http://www.xuggle.com/xuggler/) 서비스 중 세 가지 서비스를 활성화할 수 있습니다.
 
 ```{important}
 Liferay 7.3.x부터 Xuggler 통합은 더 이상 사용되지 않습니다. 사용자는 Liferay의 FFmpeg 통합을 대안으로 사용하는 것이 좋습니다. 자세한 내용은 [오디오 및 비디오 미리 보기에 FFmpeg 활성화](../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)를 참조하십시오.

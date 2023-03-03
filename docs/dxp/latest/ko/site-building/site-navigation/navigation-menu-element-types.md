@@ -1,6 +1,6 @@
 # 탐색 메뉴 요소 유형
 
-탐색 메뉴에는 원하는 계층 구조에 추가하고 정렬할 수 있는 다양한 요소 유형이 있습니다. 이러한 유형에는 [특정 페이지](#pages), [어휘](#vocabularies), 특정 콘텐츠 유형에 대한 페이지 표시 또는 사용자 지정 [자리 표시자](#submenus) 또는 [URL](#urls)이 포함됩니다. 이러한 요소로 탐색 메뉴를 추가하는 방법에 대한 자세한 내용은 [여기](./using-the-navigation-menus-application.md) 을 참조하십시오.
+탐색 메뉴에는 원하는 계층 구조에 추가하고 정렬할 수 있는 다양한 요소 유형이 있습니다. 이러한 유형에는 [특정 페이지](#pages) , [어휘](#vocabularies) , 특정 콘텐츠 유형에 대한 페이지 표시 또는 사용자 지정 [자리 표시자](#submenus) 또는 [URL](#urls) 이 포함됩니다. 이러한 요소로 탐색 메뉴를 추가하는 방법에 대한 자세한 내용은 [여기](./using-the-navigation-menus-application.md) 을 참조하십시오.
 
 ## 페이지
 
@@ -58,7 +58,7 @@ Liferay 7.4 버전 U9+ 및 GA13+부터 한 번에 여러 범주를 선택할 수
 
 GA4보다 이전 버전의 Liferay Portal 7.4에는 메뉴에 추가된 디스플레이 페이지(모든 유형의 콘텐츠)에 사용되는 *디스플레이 페이지* 탐색 메뉴 요소 유형도 있습니다.
 
-Liferay 7.4 GA5+ 및 U1+에서 디스플레이 페이지 유형은 디스플레이 페이지: [블로그 항목](#blogs-entries), [웹 콘텐츠 기사](#web-content-articles), [문서](#documents)및 [범주](#categories)을 사용하는 콘텐츠 유형으로 대체됩니다.
+Liferay 7.4 GA5+ 및 U1+에서 디스플레이 페이지 유형은 디스플레이 페이지: [블로그 항목](#blogs-entries) , [웹 콘텐츠 기사](#web-content-articles) , [문서](#documents) 및 [범주](#categories) 을 사용하는 콘텐츠 유형으로 대체됩니다.
 
 ## 추가 정보
 

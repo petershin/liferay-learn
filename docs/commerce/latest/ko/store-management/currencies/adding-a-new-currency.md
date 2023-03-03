@@ -29,6 +29,6 @@ Liferay Commerce는 기본적으로 사용할 수 있도록 여러 통화를 미
 
 * _형식 패턴_ 필드에는 통화 기호, 쉼표 사이의 자릿수 및 표시되는 자릿수가 필요합니다. 예를 들어 미국 달러의 경우 $###,##0.00 형식에서 _0_ 이 보유한 자리는 항상 표시되는 반면(다른 숫자가 없으면 0으로 표시됨) _#_ 이 보유한 자리는 다음 경우에만 표시됩니다. 가득차 있는. 위 형식의 0.01 값은 $0.01로 표시됩니다.
 
-* _반올림 모드_ 에는 드롭다운 메뉴에서 반올림 모드 [유형이 필요](https://en.wikipedia.org/wiki/Rounding#Directed_rounding_to_an_integer).
+* _반올림 모드_ 에는 드롭다운 메뉴에서 반올림 모드 [유형이 필요](https://en.wikipedia.org/wiki/Rounding#Directed_rounding_to_an_integer) .
 
 * 일부 결제 방법은 작동하기 위해 상점에 대해 특정 기본 통화를 구성해야 합니다. [Mercanet](../../store-management/configuring-payment-methods/mercanet.md) 은 EUR을 기본 통화로 요구합니다.

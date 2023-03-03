@@ -8,7 +8,7 @@ Knowledge Base 앱을 사용하여 전문적인 제품 설명서를 표시하거
 
 Knowledge Base의 주요 기능은 다음과 같습니다.
 
-* 내비게이션은 [Knowledge Base Display Widget](./knowledge-base-display-widget.md)에 내장되어 있습니다.
+* 내비게이션은 [기술 자료 표시 위젯](./knowledge-base-display-widget.md) 에 내장되어 있습니다.
 * [제안 인터페이스](./responding-to-knowledge-base-feedback.md) 기사에 대한 피드백을 가능하게 합니다.
 * 기사는 폴더에 저장됩니다.
 * 친숙한 URL, 소스 URL, 분류 및 관련 자산에 대한 메타데이터 필드가 있습니다.

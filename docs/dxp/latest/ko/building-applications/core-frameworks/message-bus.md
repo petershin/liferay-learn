@@ -61,7 +61,7 @@ message-bus/tuning-messaging-performance.md
 
 다음 항목에서는 두 가지 메시징 방법을 다룹니다.
 
-* [Using Asynchronous Messaging](./message-bus/using-asynchronous-messaging.md) 대상을 구성하고 대상에 비동기적으로 메시지를 보내는 방법을 보여줍니다. 이것은 메시지를 보내는 가장 간단한 방법입니다.
+* [비동기 메시징 사용](./message-bus/using-asynchronous-messaging.md) 대상을 구성하고 대상에 비동기적으로 메시지를 보내는 방법을 보여줍니다. 이것은 메시지를 보내는 가장 간단한 방법입니다.
 
 * [이전 버전에서 기본 동기식 메시징 사용](./message-bus/using-default-synchronous-messaging-in-previous-versions.md) 한 수신기가 메시지에 응답할 때까지 메시지 발신자 차단을 보여줍니다. *또는*수신기가 응답하지 않으면 메시지 시간이 초과될 때까지.
 

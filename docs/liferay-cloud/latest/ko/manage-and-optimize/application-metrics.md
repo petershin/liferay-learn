@@ -81,7 +81,7 @@ Dynatrace를 통합하려면 다음 단계를 따르십시오.
 
 `LCP_PROJECT_MONITOR_DYNATRACE_TENANT` | Dynatrace SaaS 계정의 URL(접두사)의 일부인 문자열입니다. | `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` | Dynatrace 계정에서 찾을 수 있는 문자열입니다. 토큰을 얻으려면 *Manage* &rarr; *Deploy Dynatrace* &rarr; *Set up PaaS Integration*로 이동한 다음 환경 ID를 입력하고 *Generate new token*을 클릭하십시오. |
 
-이러한 값에 대한 자세한 내용은 [공식 Dynatrace 문서](https://www.dynatrace.com/support/help/dynatrace-api/basics/dynatrace-api-authentication/)를 참조하세요.
+이러한 값에 대한 자세한 내용은 [공식 Dynatrace 문서](https://www.dynatrace.com/support/help/dynatrace-api/basics/dynatrace-api-authentication/) 를 참조하세요.
 
 ### Dynatrace에 액세스
 

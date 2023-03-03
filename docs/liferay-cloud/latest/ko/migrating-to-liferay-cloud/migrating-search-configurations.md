@@ -6,10 +6,10 @@
 
 온프레미스 환경에서 Elasticsearch를 사용하지 않는 경우 계속하기 전에 Elasticsearch로 마이그레이션하십시오.
 
-Elasticsearch로 마이그레이션하려면 Liferay 설치를 설치한 다음 여기에 연결해야 합니다. 자세한 내용은 [Elasticsearch 시작하기](https://learn.liferay.com/dxp/latest/en/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.html) 을 참조하십시오.
+Elasticsearch로 마이그레이션하려면 Liferay 설치를 설치한 다음 여기에 연결해야 합니다. 자세한 내용은 [Elasticsearch 시작하기](https://learn.liferay.com/dxp/latest/ko/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.html) 을 참조하십시오.
 
 ```{tip}
-Elasticsearch로 마이그레이션하는 데 도움이 필요한 경우 [Liferay Cloud 지원](https://help.liferay.com/hc/en-us)에 문의하십시오.
+Elasticsearch로 마이그레이션하는 데 도움이 필요한 경우 [Liferay Cloud 지원](https://help.liferay.com/hc/en-us) 에 문의하십시오.
 ```
 
 ## 구성 및 셸 스크립트 구성
@@ -18,7 +18,7 @@ Elasticsearch로 마이그레이션하는 데 도움이 필요한 경우 [Lifera
 구성할 특정 Elasticsearch 구성 또는 스크립트가 없는 경우 이 단계를 건너뜁니다.
 ```
 
-이전에 복제한 프로젝트 리포지토리에서 [](./matching-dxp-versions.md#clone-the-liferay-cloud-repository)search/configs/ `` {ENV}(Liferay Cloud 환경에 해당)로 이동하고 다음과 같이 모든 Elasticsearch 구성 파일 및 셸 스크립트를 적절한 환경 폴더에 넣습니다. 이 패턴:
+이전에 복제한 프로젝트 리포지토리에서 [](./matching-dxp-versions.md#clone-the-liferay-cloud-repository) search/configs/ `` {ENV}(Liferay Cloud 환경에 해당)로 이동하고 다음과 같이 모든 Elasticsearch 구성 파일 및 셸 스크립트를 적절한 환경 폴더에 넣습니다. 이 패턴:
 
 * Elasticsearch 구성 파일을 `search/configs/{ENV}/config/`에 넣습니다.
 * 모든 사용자 지정 셸 스크립트를 `search/configs/{ENV}/scripts/`에 넣습니다.
@@ -26,7 +26,7 @@ Elasticsearch로 마이그레이션하는 데 도움이 필요한 경우 [Lifera
 해당 폴더의 모든 사용자 지정 셸 스크립트는 `검색` 서비스가 재배포될 때마다 실행됩니다.
 
 ```{tip}
-Elasticsearch 구성 파일의 모양을 보려면 예제 구성 [here](../reference/example-configuration-files.md#search-service-configuration-elasticsearch-yml)을 참조하십시오.
+Elasticsearch 구성 파일의 모양을 보려면 예제 구성 [here](../reference/example-configuration-files.md#search-service-configuration-elasticsearch-yml) 을 참조하십시오.
 ```
 
 ## 추가 검색 플러그인 추가

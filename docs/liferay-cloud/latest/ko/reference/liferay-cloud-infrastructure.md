@@ -5,7 +5,7 @@ Liferay Cloud는 주요 구성 요소 모음을 결합하여 강력하고 안정
 ![Liferay Cloud와 통합된 모든 주요 서비스 및 구성 요소가 여기에 연결되어 표시됩니다.](./liferay-cloud-infrastructure/images/01.png)
 
 ```{note}
-비공개 클러스터 구독에는 내장 [웹 애플리케이션 방화벽](../infrastructure-and-operations/security/web-application-firewall.md)도 포함됩니다. 그러나 [공유 클러스터에서는 사용할 수 없습니다](./platform-limitations.md#security).
+비공개 클러스터 구독에는 내장 [웹 애플리케이션 방화벽](../infrastructure-and-operations/security/web-application-firewall.md)도 포함됩니다. 그러나 [공유 클러스터에서는 사용할 수 없습니다](./platform-limitations.md#security) .
 ```
 
 다양한 구성 요소에 대한 설명은 다음 목록을 참조하십시오.
@@ -46,7 +46,7 @@ Liferay Cloud는 HTTP(S) 트래픽을 여러 인스턴스에 분산합니다. [G
 
 [Liferay DXP](https://www.liferay.com/products/dxp) 은 다양한 애플리케이션의 데이터와 서비스를 하나의 중앙 사용자 인터페이스 플랫폼으로 연결, 오케스트레이션 및 통합합니다. Liferay Cloud는 클라우드에서 DXP 인스턴스에 대한 빠르고 안정적인 구현을 제공합니다. [웹 서버 서비스](#web-server) 은 DXP에 대한 모든 HTTP(S) 트래픽에 대한 진입점 및 게이트웨이를 제공합니다.
 
-자신의 프로젝트 저장소 [에 구성 및 사용자 정의 모듈을 추가함으로써](#repository-integration)서비스는 일반 DXP 설치와 마찬가지로 고도로 사용자 정의할 수 있습니다. 자세한 내용은 [Liferay 서비스 소개](../using-the-liferay-dxp-service.md) 을 참조하십시오.
+자신의 프로젝트 저장소 [에 구성 및 사용자 정의 모듈을 추가함으로써](#repository-integration) 서비스는 일반 DXP 설치와 마찬가지로 고도로 사용자 정의할 수 있습니다. 자세한 내용은 [Liferay 서비스 소개](../using-the-liferay-dxp-service.md) 을 참조하십시오.
 
 ## 검색
 
@@ -74,7 +74,7 @@ Liferay Cloud는 개인 네트워크 내에 Liferay DXP의 데이터베이스 �
 
 ## CI 서버
 
-Liferay Cloud는 개발 중인 고객 프로젝트의 빌드 및 배포 프로세스를 자동화합니다. [고객 리포지토리](#repository-integration)에 연결된 프로젝트에서 Jenkins는 웹후크와 함께 사용되어 새 커밋 또는 풀 요청을 모든 환경에 배포할 수 있는 빌드로 자동 변환합니다. 이 서비스는 특수한 별도의 `infra` 환경 내에 존재하며 일반 사용자는 접근할 수 없습니다. Liferay Cloud는 Jenkins 빌드의 세부 정보를 볼 수 있도록 Cloud 콘솔의 고객에게 대시보드도 제공합니다.
+Liferay Cloud는 개발 중인 고객 프로젝트의 빌드 및 배포 프로세스를 자동화합니다. [고객 리포지토리](#repository-integration) 에 연결된 프로젝트에서 Jenkins는 웹후크와 함께 사용되어 새 커밋 또는 풀 요청을 모든 환경에 배포할 수 있는 빌드로 자동 변환합니다. 이 서비스는 특수한 별도의 `infra` 환경 내에 존재하며 일반 사용자는 접근할 수 없습니다. Liferay Cloud는 Jenkins 빌드의 세부 정보를 볼 수 있도록 Cloud 콘솔의 고객에게 대시보드도 제공합니다.
 
 Jenkins 빌드에 사용되는 CI 서비스는 Liferay Cloud의 주요 서비스 중 하나로 제공되며 고객은 이 서비스를 구성하고 원하는 경우 Jenkins 파이프라인을 사용자 정의할 수도 있습니다. 자세한 내용은 [지속적 통합](../platform-services/continuous-integration.md) 을 참조하십시오.
 
@@ -84,8 +84,8 @@ Liferay Cloud를 사용하면 CLI 도구를 사용하여 환경 및 서비스에
 
 ## 바이러스 백신
 
-Liferay Cloud는 [ClamAV](https://www.clamav.net/)을 사용하여 트로이 목마, 바이러스, 맬웨어 및 기타 악의적인 위협을 자동으로 탐지합니다. 이 엔진은 클라우드 내에서 백그라운드 서비스로 작동하며 사용자 또는 다른 서비스에 액세스할 수 없습니다. Liferay Cloud의 각 클러스터에는 실행 중인 바이러스 백신 인스턴스가 하나씩 있습니다.
+Liferay Cloud는 [ClamAV](https://www.clamav.net/) 을 사용하여 트로이 목마, 바이러스, 맬웨어 및 기타 악의적인 위협을 자동으로 탐지합니다. 이 엔진은 클라우드 내에서 백그라운드 서비스로 작동하며 사용자 또는 다른 서비스에 액세스할 수 없습니다. Liferay Cloud의 각 클러스터에는 실행 중인 바이러스 백신 인스턴스가 하나씩 있습니다.
 
 ## 침입탐지시스템
 
-Liferay Cloud는 [위협 스택](https://www.threatstack.com/cloud-security-platform/intrusion-detection)을 사용하여 구성 요소 내 침입을 자동으로 감지합니다. 내장된 [바이러스 백신 소프트웨어](#antivirus)와 마찬가지로 이 시스템도 백그라운드 서비스로 작동하며 사용자나 다른 서비스에 액세스할 수 없습니다. Liferay Cloud의 각 클러스터에는 하나의 인스턴스가 있습니다.
+Liferay Cloud는 [위협 스택](https://www.threatstack.com/cloud-security-platform/intrusion-detection) 을 사용하여 구성 요소 내 침입을 자동으로 감지합니다. 내장된 [바이러스 백신 소프트웨어](#antivirus) 와 마찬가지로 이 시스템도 백그라운드 서비스로 작동하며 사용자나 다른 서비스에 액세스할 수 없습니다. Liferay Cloud의 각 클러스터에는 하나의 인스턴스가 있습니다.

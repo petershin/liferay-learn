@@ -88,7 +88,7 @@ Please enter your database host (localhost):
 
 * `app-server.properties`: 서버 사이트 및 라이브러리를 지정합니다.
 * `portal-upgrade-database.properties`: 데이터베이스 연결을 구성합니다.
-* `portal-upgrade-ext.properties`: 업그레이드에 필요한 나머지 포털 속성을 설정합니다. 현재 DXP 서버를 복제하기 위해 현재 포털 속성(데이터베이스 속성 제외)을 이 파일에 복사할 수 있습니다. 현재 속성을 사용하기 전에 현재 DXP 버전 [에 맞게 업데이트해야](./preparing-a-new-application-server.md#migrate-your-portal-properties).
+* `portal-upgrade-ext.properties`: 업그레이드에 필요한 나머지 포털 속성을 설정합니다. 현재 DXP 서버를 복제하기 위해 현재 포털 속성(데이터베이스 속성 제외)을 이 파일에 복사할 수 있습니다. 현재 속성을 사용하기 전에 현재 DXP 버전 [에 맞게 업데이트해야](./preparing-a-new-application-server.md#migrate-your-portal-properties) .
 
 #### app-server.properties 구성
 

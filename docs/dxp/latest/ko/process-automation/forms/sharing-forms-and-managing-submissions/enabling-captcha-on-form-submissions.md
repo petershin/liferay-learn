@@ -20,4 +20,4 @@ CAPTCHA를 활성화하려면:
 
 ## 추가 정보
 
-기본적으로 Liferay는 "Simple CAPTCHA" 확인을 사용합니다. Google의 reCAPTCHA 서비스와 같은 대체 CAPTCHA 엔진을 사용하도록 구성 및 변경할 수 있습니다. 이를 수행하는 방법에 대한 자세한 내용은 [인증 기본 사항](../../../installation-and-upgrades/securing-liferay/authentication-basics.md#configuring-captcha-or-recaptcha)을 참조하십시오.
+기본적으로 Liferay는 "Simple CAPTCHA" 확인을 사용합니다. Google의 reCAPTCHA 서비스와 같은 대체 CAPTCHA 엔진을 사용하도록 구성 및 변경할 수 있습니다. 이를 수행하는 방법에 대한 자세한 내용은 [인증 기본 사항](../../../installation-and-upgrades/securing-liferay/authentication-basics.md#configuring-captcha-or-recaptcha) 을 참조하십시오.

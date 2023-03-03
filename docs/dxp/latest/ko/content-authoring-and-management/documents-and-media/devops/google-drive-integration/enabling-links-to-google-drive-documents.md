@@ -10,13 +10,13 @@ Google Drive용 Liferay 플러그인은 Liferay CE Portal 및 Liferay DXP에서 
 
 ## Google 프로젝트 설정
 
-Liferay 플러그인을 활성화하려면 Google 드라이브 API와 Google Picker API가 모두 활성화된 활성 Google 프로젝트가 필요합니다. Google 드라이브 API를 사용하면 사용자가 기본 편집기에서 Google 파일(즉, 문서, 시트 및 슬라이드)을 보고 수정할 수 있습니다. Picker API를 사용하면 문서 및 미디어에 파일을 업로드할 때 사용자가 Google 드라이브에 저장된 디지털 자산(예: 사진, 비디오, 문서)을 보고 선택할 수 있습니다. 아직 프로젝트를 만들지 않았다면 [Google 프로젝트 만들기](https://support.google.com/googleapi/answer/6251787?hl=en&ref_topic=7014522)을 참조하세요. 그렇지 않으면 [API 활성화](https://support.google.com/googleapi/answer/6158841) 을 참조하여 프로젝트에 대해 Picker API를 활성화하는 방법을 알아보세요.
+Liferay 플러그인을 활성화하려면 Google 드라이브 API와 Google Picker API가 모두 활성화된 활성 Google 프로젝트가 필요합니다. Google 드라이브 API를 사용하면 사용자가 기본 편집기에서 Google 파일(즉, 문서, 시트 및 슬라이드)을 보고 수정할 수 있습니다. Picker API를 사용하면 문서 및 미디어에 파일을 업로드할 때 사용자가 Google 드라이브에 저장된 디지털 자산(예: 사진, 비디오, 문서)을 보고 선택할 수 있습니다. 아직 프로젝트를 만들지 않았다면 [Google 프로젝트 만들기](https://support.google.com/googleapi/answer/6251787?hl=en&ref_topic=7014522) 을 참조하세요. 그렇지 않으면 [API 활성화](https://support.google.com/googleapi/answer/6158841) 을 참조하여 프로젝트에 대해 Picker API를 활성화하는 방법을 알아보세요.
 
 ```{note}
 원하는 경우 Google 드라이브용 Liferay 플러그인과는 별도로 문서 및 미디어를 통해 Google 문서를 만들고 편집할 수 있습니다. 자세한 내용은 [Google 드라이브로 문서 생성 및 편집 활성화](./enabling-document-creation-and-editing-with-google-drive.md)를 참조하세요.
 ```
 
-프로젝트에 대해 Google Picker API를 활성화한 후 [는 Picker API용 API 키를 생성하고](https://support.google.com/googleapi/answer/6158862) 은 OAuth를 설정합니다 [](https://support.google.com/cloud/answer/6158849). OAuth 2 설정에는 OAuth 동의 화면 구성, OAuth 2 자격 증명 생성, 승인된 JavaScript 출처 목록에 Liferay 요청 URI 추가가 포함됩니다. OAuth 2 자격 증명을 생성할 때 애플리케이션 유형으로 *웹 애플리케이션* 을 선택했는지 확인하십시오.
+프로젝트에 대해 Google Picker API를 활성화한 후 [는 Picker API용 API 키를 생성하고](https://support.google.com/googleapi/answer/6158862) 은 OAuth를 설정합니다 [](https://support.google.com/cloud/answer/6158849) . OAuth 2 설정에는 OAuth 동의 화면 구성, OAuth 2 자격 증명 생성, 승인된 JavaScript 출처 목록에 Liferay 요청 URI 추가가 포함됩니다. OAuth 2 자격 증명을 생성할 때 애플리케이션 유형으로 *웹 애플리케이션* 을 선택했는지 확인하십시오.
 
 Google 프로젝트가 준비되면 Liferay 제어판을 통해 문서 및 미디어 애플리케이션을 구성해야 합니다. 여기에는 Picker API 키와 OAuth2 클라이언트 ID 및 클라이언트 암호가 필요합니다.
 

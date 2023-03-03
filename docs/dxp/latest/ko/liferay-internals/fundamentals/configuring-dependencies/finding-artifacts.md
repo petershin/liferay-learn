@@ -81,7 +81,7 @@ App Manager는 배포된 모듈에 대한 최상의 정보를 제공합니다.
 
     ![`headers` 명령을 실행한 결과에는 모듈의 공급업체 이름과 번들 버전이 표시됩니다.](./finding-artifacts/images/05.png)
 
-1. [Maven Central](https://search.maven.org/) 또는 [MVNRepository](https://mvnrepository.com)에서 아티팩트 ID로 모듈을 검색합니다.
+1. [Maven Central](https://search.maven.org/) 또는 [MVNRepository](https://mvnrepository.com) 에서 아티팩트 ID로 모듈을 검색합니다.
 
 1. 3단계의 `Bundle-Vendor` 또는 `Implementation-Vendor` 이름을 아티팩트를 제공하는 그룹과 일치시켜 그룹 ID를 결정합니다.
 
@@ -121,7 +121,7 @@ Javadoc에서 Liferay 앱 모듈의 속성을 찾으려면 다음 단계를 따�
 
 ### 메이븐 센트럴
 
-유형이나 출처에 관계없이 대부분의 아티팩트는 [MVNRepository](https://mvnrepository.com/) 및 [Maven Central](https://search.maven.org/)에 있습니다. 이러한 사이트는 클래스 패키지를 기반으로 아티팩트를 찾는 데 도움이 될 수 있습니다. 아티팩트 패키지 이름 시작 부분에 아티팩트 ID를 포함하는 것이 일반적입니다. 예를 들어 클래스 `org.osgi.service.component.annotations.Component`에 의존하는 경우 Maven 사이트 중 하나에서 패키지 이름 `org.osgi.service.component.annotations` 을 검색합니다.
+유형이나 출처에 관계없이 대부분의 아티팩트는 [MVNRepository](https://mvnrepository.com/) 및 [Maven Central](https://search.maven.org/) 에 있습니다. 이러한 사이트는 클래스 패키지를 기반으로 아티팩트를 찾는 데 도움이 될 수 있습니다. 아티팩트 패키지 이름 시작 부분에 아티팩트 ID를 포함하는 것이 일반적입니다. 예를 들어 클래스 `org.osgi.service.component.annotations.Component`에 의존하는 경우 Maven 사이트 중 하나에서 패키지 이름 `org.osgi.service.component.annotations` 을 검색합니다.
 
 ```{note}
 필요한 Liferay 아티팩트의 버전을 결정하려면 위의 지침을 따르십시오.

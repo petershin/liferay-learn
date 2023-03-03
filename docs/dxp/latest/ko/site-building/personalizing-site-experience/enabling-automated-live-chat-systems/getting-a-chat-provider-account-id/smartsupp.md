@@ -4,7 +4,7 @@
 
 ## Smartsupp 계정 ID 찾기
 
-1. [Smartsupp 계정](https://app.smartsupp.com/app/sign/in)에 로그인합니다.
+1. [Smartsupp 계정](https://app.smartsupp.com/app/sign/in) 에 로그인합니다.
 
 1. *톱니바퀴 아이콘* &rarr; *채팅창*을 클릭합니다.
 

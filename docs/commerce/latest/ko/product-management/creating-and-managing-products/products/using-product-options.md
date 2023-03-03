@@ -2,7 +2,7 @@
 
 제품 *옵션* 은 제품을 맞춤화하는 편리하고 유연한 방법을 제공합니다. 옵션을 사용하면 채널에서 판매되는 제품에 필드를 추가하여 고객이 제품 변형, 번들 등에서 선택할 수 있습니다.
 
-옵션을 사용하여 시작하려면 먼저 옵션 [을 만들고 구성](#creating-an-option-template). 그런 다음 템플릿 구성에 따라 [에 값](#adding-values-to-option-templates) 을 추가합니다. 일단 생성되면 전역 템플릿에 영향을 주지 않고 [템플릿을 제품에 [](#configuring-options-and-values-applied-to-products)](#applying-an-option-template-to-a-product) 에서 해당 설정 및 값을 구성할 수 있습니다.
+옵션을 사용하여 시작하려면 먼저 옵션 [을 만들고 구성](#creating-an-option-template) . 그런 다음 템플릿 구성에 따라 [에 값](#adding-values-to-option-templates) 을 추가합니다. 일단 생성되면 전역 템플릿에 영향을 주지 않고 [템플릿을 제품에 [](#configuring-options-and-values-applied-to-products) ](#applying-an-option-template-to-a-product) 에서 해당 설정 및 값을 구성할 수 있습니다.
 
 ## 옵션 템플릿 생성
 

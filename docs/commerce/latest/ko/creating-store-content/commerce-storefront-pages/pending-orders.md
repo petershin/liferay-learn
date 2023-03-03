@@ -19,5 +19,5 @@ _Open Carts_ 위젯은 계정과 연결된 주문 목록을 표시합니다.
 ## 추가 정보
 
 * [위젯 참조 가이드](../liferay-commerce-widgets/widget-reference.md)
-* [페이지 만들기](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
+* [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)
 * [주문 워크플로우](../../order-management/order-workflows/introduction-to-order-workflows.md)

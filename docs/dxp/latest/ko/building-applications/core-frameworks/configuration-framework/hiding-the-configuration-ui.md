@@ -1,6 +1,6 @@
 # 구성 UI 숨기기
 
-[는 구성 인터페이스가 배포된 후 자동으로 구성 UI를 생성](./setting-and-accessing-configurations.html#creating-the-configuration-interface). 그러나 UI를 숨기려는 특정 사용 사례가 있을 수 있습니다. 예를 들어 관리자가 특정 구성에 액세스하는 것을 원하지 않거나 특정 기준에 따라 구성을 숨기고 싶을 수 있습니다. 구성 UI를 숨기려면 두 가지 옵션이 있습니다.
+[는 구성 인터페이스가 배포된 후 자동으로 구성 UI를 생성](./setting-and-accessing-configurations.html#creating-the-configuration-interface) . 그러나 UI를 숨기려는 특정 사용 사례가 있을 수 있습니다. 예를 들어 관리자가 특정 구성에 액세스하는 것을 원하지 않거나 특정 기준에 따라 구성을 숨기고 싶을 수 있습니다. 구성 UI를 숨기려면 두 가지 옵션이 있습니다.
 
 * `generateUI` 주석 속성 사용
 * 구성 가시성 인터페이스 사용

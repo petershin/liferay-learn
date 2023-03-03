@@ -32,14 +32,14 @@ liferaycloud/jenkins:2.222.1-3.2.0
 1. Jenkins 서비스를 배포합니다.
 
 ```{note}
-Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkinsfile 확장](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile).
+Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkinsfile 확장](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) .
 ```
 
 ## Bitbucket 리포지토리 생성
 
 먼저 새 Bitbucket 리포지토리를 만듭니다.
 
-1. [Bitbucket](https://bitbucket.org)로 이동합니다.
+1. [Bitbucket](https://bitbucket.org) 로 이동합니다.
 
 1. 검색 아이콘 아래 사이드바에서 "+" 아이콘을 클릭합니다.
 
@@ -77,7 +77,7 @@ Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkin
 
     `git push bitbucket master`
 
-리포지토리를 생성, 복제 및 푸시하는 데 도움이 필요한 경우 [Bitbucket 설명서](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html)를 참조하세요.
+리포지토리를 생성, 복제 및 푸시하는 데 도움이 필요한 경우 [Bitbucket 설명서](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html) 를 참조하세요.
 
 ## BitBucket용 앱 비밀번호 생성
 
@@ -112,7 +112,7 @@ Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkin
 
 Liferay Cloud가 분기에 제대로 연결될 수 있으려면 리포지토리에서 사용 중인 분기 접두사의 전체 목록을 제공해야 합니다. 리포지토리에서 사용되는 각 분기 유형에는 리포지토리 설정에서 정의되는 자체 접두사가 있습니다.
 
-[Bitbucket 웹사이트](https://bitbucket.org)의 왼쪽 메뉴에서 _Repository settings_ &rarr; _Branching model_ 을 클릭합니다. 이렇게 하면 각 분기의 접두사가 나열되는 _분기 모델_ 페이지로 이동합니다. 이러한 각 접두사를 기록하여 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI 환경 변수에 추가합니다.
+[Bitbucket 웹사이트](https://bitbucket.org) 의 왼쪽 메뉴에서 _Repository settings_ &rarr; _Branching model_ 을 클릭합니다. 이렇게 하면 각 분기의 접두사가 나열되는 _분기 모델_ 페이지로 이동합니다. 이러한 각 접두사를 기록하여 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI 환경 변수에 추가합니다.
 
 ![Bitbucket 리포지토리의 기본 분기 유형(및 접두사)은 bugfix/, feature/, hotfix/ 및 release/입니다.](./configuring-your-bitbucket-repository/images/05.png)
 

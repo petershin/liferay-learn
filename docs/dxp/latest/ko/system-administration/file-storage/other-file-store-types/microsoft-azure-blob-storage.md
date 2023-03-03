@@ -4,12 +4,12 @@
 
 Microsoft Azure Blob Storage는 DXP의 Azure Blob Storage Store에서 파일을 클라우드에 원활하게 저장하는 데 사용하는 클라우드 기반 스토리지 솔루션입니다. 내부적으로는 엄청난 양의 구조화되지 않은 데이터를 처리하도록 최적화된 Microsoft의 Blob Storage API를 사용합니다.
 
-이 연결을 활성화하기 전에 활성 [Azure Blob Store 계정](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal), 구성된 [연결 문자열](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)및 [Azure Blob 컨테이너](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-container-create?tabs=dotnet)가 있어야 합니다.
+이 연결을 활성화하기 전에 활성 [Azure Blob Store 계정](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal) , 구성된 [연결 문자열](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string) 및 [Azure Blob 컨테이너](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-container-create?tabs=dotnet) 가 있어야 합니다.
 
 그런 다음 다음을 수행하여 Liferay 인스턴스에 대한 연결을 활성화하십시오.
 
 * [제어판을 통해 파일 저장 방법 구성](#configuring-the-store)
-* [`dl.store.impl` 포털 속성을 Azure Blog Storage 사용](#setting-azure-blog-storage-as-default-store)을 기본 스토리지 방법으로 설정
+* [`dl.store.impl` 포털 속성을 Azure Blog Storage 사용](#setting-azure-blog-storage-as-default-store) 을 기본 스토리지 방법으로 설정
 
 ```{warning}
 문서 라이브러리에서 데이터베이스 트랜잭션 롤백이 발생하면 트랜잭션의 파일 시스템 변경 사항이 취소되지 않습니다. 문서 라이브러리 파일과 파일 시스템 저장소의 파일 간에 불일치가 발생할 수 있으며 수동 동기화가 필요할 수 있습니다. DBStore를 제외한 모든 DXP 스토어는 이 제한에 취약합니다.

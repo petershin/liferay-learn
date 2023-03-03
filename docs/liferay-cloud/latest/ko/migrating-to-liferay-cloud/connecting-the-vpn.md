@@ -5,11 +5,11 @@
 다음과 같은 경우 Liferay Cloud 환경을 VPN에 연결해야 할 수 있습니다.
 
 * 자신의 프로젝트 요구 사항에는 VPN 사용이 포함됩니다.
-* 환경을 [LDAP 서버](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html?highlight=ldap)에 연결하려고 합니다.
+* 환경을 [LDAP 서버](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html?highlight=ldap) 에 연결하려고 합니다.
 * 다른 디렉터리 서버의 환경에 연결하려고 합니다.
 * 다른 웹 서비스와 상호 작용하는 원격 애플리케이션을 사용해야 합니다.
 
-VPN 서버를 구성할 필요가 없는 경우 [다음 단계](#next-steps)로 건너뛸 수 있습니다.
+VPN 서버를 구성할 필요가 없는 경우 [다음 단계](#next-steps) 로 건너뛸 수 있습니다.
 
 ## VPN 서버 구성
 

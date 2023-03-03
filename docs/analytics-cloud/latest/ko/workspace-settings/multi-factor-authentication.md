@@ -12,7 +12,7 @@ MFA(Multi-Factor Authentication)는 모든 Analytics Cloud 사용자에게 필�
 
     ![MFA 옵션을 선택하십시오.](./multi-factor-authentication/images/02.png)
 
-   설정 후 다른 인증 유형으로 변경하기로 선택한 경우 [지원팀에 문의하십시오](#help-with-mfa).
+   설정 후 다른 인증 유형으로 변경하기로 선택한 경우 [지원팀에 문의하십시오](#help-with-mfa) .
 
 1. *코드 전송* 버튼을 클릭하고 코드를 받을 때까지 기다립니다. *이메일 인증* 옵션을 사용하는 경우 스팸 폴더를 확인해야 할 수도 있습니다.
 
@@ -36,4 +36,4 @@ MFA(Multi-Factor Authentication)는 모든 Analytics Cloud 사용자에게 필�
 
 보안 로그인은 사용자와 고객 데이터를 보호하는 중요한 기능입니다. MFA와 관련된 문제가 발생하면 도와드리겠습니다. 
 
-[help.liferay.com](https://help.liferay.com/) 을 통해 지원팀에 문의하거나 [analytics-cloud@liferay.com](mailto:analytics-cloud%40liferay.com)으로 이메일을 보내주십시오.
+[help.liferay.com](https://help.liferay.com/) 을 통해 지원팀에 문의하거나 [analytics-cloud@liferay.com](mailto:analytics-cloud%40liferay.com) 으로 이메일을 보내주십시오.

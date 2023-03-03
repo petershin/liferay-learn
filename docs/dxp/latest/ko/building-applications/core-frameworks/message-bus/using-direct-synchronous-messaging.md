@@ -117,11 +117,11 @@
 
 `X6N5BakerOSGiCommands`의 `@Component` 속성은 `sendMessage` 라는 Gogo 셸 명령 함수를 `x6n5` 범위에서 정의합니다. 이 명령은 `sendMessage(String)` 메서드에 매핑되고 `String`입력을 받습니다.
 
-`sendMessage(String)` 메소드는 Gogo 쉘 명령의 `String` 을 페이로드로 사용하여 [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) 를 생성합니다. `SynchronousMessageSender` `send(String, Message)` 메서드는 현재 스레드를 사용하여 메시지를 `acme/x6n5_able` [`대상`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 메시지 수신기로 전달합니다. 스레드가 모든 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)s에서 메시지를 처리할 때까지 `X6N5BakerOSGiCommands` 클래스에서 실행이 차단됩니다. 그런 다음 메시지 응답을 기록하는 `X6N5BakerOSGiCommands` `sendMessage(String)` 메서드에서 실행이 계속됩니다.
+`sendMessage(String)` 메소드는 Gogo 쉘 명령의 `String` 을 페이로드로 사용하여 [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) 를 생성합니다. `SynchronousMessageSender` `send(String, Message)` 메서드는 현재 스레드를 사용하여 메시지를 `acme/x6n5_able` [`대상`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 메시지 수신기로 전달합니다. 스레드가 모든 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) s에서 메시지를 처리할 때까지 `X6N5BakerOSGiCommands` 클래스에서 실행이 차단됩니다. 그런 다음 메시지 응답을 기록하는 `X6N5BakerOSGiCommands` `sendMessage(String)` 메서드에서 실행이 계속됩니다.
 
 ## 리스너 검사
 
-`x6n5-charlie-impl` 모듈의 `X6N5CharlieMessageListener` 클래스 및 `x6n5-dog-impl` 모듈의 `X6N5DogMessageListener` 클래스는 `acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)에 전송된 메시지를 수신합니다. 그들은 메시지 듣기 [이 보여주는 것과 같은 방식으로 등록](./listening-for-messages.md).
+`x6n5-charlie-impl` 모듈의 `X6N5CharlieMessageListener` 클래스 및 `x6n5-dog-impl` 모듈의 `X6N5DogMessageListener` 클래스는 `acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 에 전송된 메시지를 수신합니다. 그들은 메시지 듣기 [이 보여주는 것과 같은 방식으로 등록](./listening-for-messages.md).
 
 `X6N5CharlieMessageListener` 클래스:
 

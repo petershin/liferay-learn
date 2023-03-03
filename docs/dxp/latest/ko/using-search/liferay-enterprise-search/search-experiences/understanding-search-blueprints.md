@@ -21,7 +21,7 @@ uuid: f6f1c0fc-108d-42eb-810a-447630e0b7b9
 
 간단히 말해 블루프린트는 요소로 구성되어 있으며 그 위에 몇 가지 추가 구성이 뿌려져 있습니다.
 
-**청사진**: 검색 청사진은 Liferay의 검색 동작에 대한 설계 계획입니다. 검색 환경은 대부분의 사용자에게 [검색 표시줄](../../getting-started/searching-for-content.md#using-the-search-bar) 에서 시작됩니다. 검색어를 입력하면 Liferay의 검색 인프라에서 복잡한 쿼리를 구성한 다음 검색 엔진으로 보냅니다. [Search Insights](../../search-pages-and-widgets/search-insights.md) 위젯을 사용하여 Liferay의 전체 쿼리를 볼 수 있습니다. 이 쿼리는 검색 대상과 방법을 제어하는 검색 페이지에 대한 Liferay의 기본 청사진으로 생각할 수 있습니다.
+**청사진**: 검색 청사진은 Liferay의 검색 동작에 대한 설계 계획입니다. 검색 환경은 대부분의 사용자에게 [검색 표시줄](../../getting-started/searching-for-content.md#using-the-search-bar) 에서 시작됩니다. 검색어를 입력하면 Liferay의 검색 인프라에서 복잡한 쿼리를 구성한 다음 검색 엔진으로 보냅니다. [검색 인사이트](../../search-pages-and-widgets/search-insights.md) 위젯을 사용하여 Liferay의 전체 쿼리를 볼 수 있습니다. 이 쿼리는 검색 대상과 방법을 제어하는 검색 페이지에 대한 Liferay의 기본 청사진으로 생각할 수 있습니다.
 
 **요소**: 요소는 전체 청사진을 만들기 위해 결합되는 시각적 빌딩 블록입니다. 각 요소는 구체적인 검색 동작을 정의하는 JSON 조각으로 뒷받침됩니다. 요소는 검색 경험과 함께 즉시 제공되며 요소 편집기를 사용하면 고유한 요소를 만들거나 기존 요소를 복제하여 필요에 따라 시작점으로 사용할 수 있습니다.
 

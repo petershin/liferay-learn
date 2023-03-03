@@ -3,7 +3,7 @@
 위젯 섹션은 [위젯 페이지의 *추가* 메뉴](../using-widget-pages/adding-widgets-to-a-page.md)와 같은 기능을 합니다. 사용 가능한 위젯의 전체 목록이 나타나고 페이지에 추가할 수 있습니다. 주요 차이점은 위젯의 기본 구성 옵션만 콘텐츠 페이지에서 사용할 수 있다는 것입니다.
 
 ```{note}
-위젯은 위젯 페이지에서 [render-weight](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight)에 따라 렌더링되지만 이는 사실이 아닙니다. 콘텐츠 페이지의 경우. 대신 페이지에 나타나는 순서대로 렌더링됩니다(예: 왼쪽에서 오른쪽, 위에서 아래로).
+위젯은 위젯 페이지에서 [render-weight](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) 에 따라 렌더링되지만 이는 사실이 아닙니다. 콘텐츠 페이지의 경우. 대신 페이지에 나타나는 순서대로 렌더링됩니다(예: 왼쪽에서 오른쪽, 위에서 아래로).
 ```
 
 ## 콘텐츠 페이지에 위젯 추가

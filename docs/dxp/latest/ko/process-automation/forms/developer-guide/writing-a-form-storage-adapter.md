@@ -19,7 +19,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [DDM 스토리지 어댑터 프로젝트](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip)를 다운로드하고 압축을 풉니다.
+1. [DDM 스토리지 어댑터 프로젝트](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
@@ -122,7 +122,7 @@ public DDMStorageAdapterSaveResponse save(
     throws StorageException;
 ```
 
-각 메소드는 정적 내부 `Builder` 클래스의 `newBuilder` 메소드를 사용하여 구성된 _DDMStorageAdapter[[Save](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java)/[Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java)/[Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java)]Response_ 객체를 반환해야 합니다.
+각 메소드는 정적 내부 `Builder` 클래스의 `newBuilder` 메소드를 사용하여 구성된 _DDMStorageAdapter[ [Save](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java) / [Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java) / [Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java) ]Response_ 객체를 반환해야 합니다.
 
 모든 메소드에는 `DDMStorageAdapter[Save/Delete/Get]Request`이 전달됩니다. 요청 객체에는 유용한 컨텍스트 정보를 반환하는 getter 메서드가 포함되어 있습니다.
 

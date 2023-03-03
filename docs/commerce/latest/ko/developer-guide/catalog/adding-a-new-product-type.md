@@ -1,8 +1,8 @@
 # 새 제품 유형 추가
 
-이 자습서에서는 세 가지 인터페이스( [CPType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/type/CPType.java), [ScreenNavigationCategory](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationCategory.java)및 [ScreenNavigationEntry](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationEntry.java))를 구현하여 새 제품 유형을 추가하는 방법을 보여줍니다.
+이 자습서에서는 세 가지 인터페이스( [CPType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/type/CPType.java) , [ScreenNavigationCategory](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationCategory.java) 및 [ScreenNavigationEntry](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationEntry.java) )를 구현하여 새 제품 유형을 추가하는 방법을 보여줍니다.
 
-제품 유형은 유사한 특성을 공유하는 제품을 그룹화하는 데 사용할 수 있습니다. Liferay Commerce는 [단순](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java), [그룹화](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java)및 [가상](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java)의 세 가지 제품 유형을 즉시 제공합니다.
+제품 유형은 유사한 특성을 공유하는 제품을 그룹화하는 데 사용할 수 있습니다. Liferay Commerce는 [단순](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java) , [그룹화](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java) 및 [가상](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java) 의 세 가지 제품 유형을 즉시 제공합니다.
 
 ![즉시 사용 가능한 제품 유형](./adding-a-new-product-type/images/01.png "즉시 사용 가능한 제품 유형")
 
@@ -21,7 +21,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1.[Acme Commerce 제품 유형](./liferay-c1n4.zip)을 다운로드하고 압축을 풉니다.
+1. [Acme Commerce 제품 유형](./liferay-c1n4.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/catalog/liferay-c1n4.zip -O
@@ -204,7 +204,7 @@ public class C1N4ScreenNavigationEntry
 > private ServletContext _servletContext
 > ```
 > 
-> > `osgi.web.symbolicname` 에 설정한 값은 [bnd.bnd 파일](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/catalog/adding-a-new-product-type/resources/liferay-c1n4.zip/c1n4-web/bnd.bnd)의 `Bundle-SymbolicName` 값과 일치합니다. 이러한 값은 JSP를 찾으려면 `ServletContext` 과 일치해야 합니다.
+> > `osgi.web.symbolicname` 에 설정한 값은 [bnd.bnd 파일](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/catalog/adding-a-new-product-type/resources/liferay-c1n4.zip/c1n4-web/bnd.bnd) 의 `Bundle-SymbolicName` 값과 일치합니다. 이러한 값은 JSP를 찾으려면 `ServletContext` 과 일치해야 합니다.
 > > 
 > > 우리는 bnd.bnd 파일에서 `Web-ContextPath` 에 대한 고유한 값을 선언하므로 `ServletContext` 이 올바르게 생성됩니다. 이 예에서 `Web-ContextPath` 은 `/c1n4-web`으로 설정됩니다. 이 값에 대한 참조는 [bnd.bnd](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/catalog/adding-a-new-product-type/resources/liferay-c1n4.zip/c1n4-web/bnd.bnd) 을 참조하십시오.
 > 
@@ -223,7 +223,7 @@ public class C1N4ScreenNavigationEntry
 > }
 > ```
 > 
-> > `JSPRenderer` 을 사용하여 제품 유형의 사용자 지정 화면에 대한 JSP를 렌더링합니다(예제에서는 [c1n4.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/catalog/adding-a-new-product-type/resources/liferay-c1n4.zip/c1n4-web/src/main/resources/META-INF/resources/c1n4.jsp)). `ServletContext` 을 매개변수로 제공하여 생성한 JSP를 찾습니다.
+> > `JSPRenderer` 을 사용하여 제품 유형의 사용자 지정 화면에 대한 JSP를 렌더링합니다(예제에서는 [c1n4.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/catalog/adding-a-new-product-type/resources/liferay-c1n4.zip/c1n4-web/src/main/resources/META-INF/resources/c1n4.jsp) ). `ServletContext` 을 매개변수로 제공하여 생성한 JSP를 찾습니다.
 > 
 > #### `ScreenNavigationEntry`의 `isVisible` 메서드 재정의
 > 
@@ -253,7 +253,7 @@ public class C1N4ScreenNavigationEntry
 > <h1>Hello C1N4.</h1>
 > ```
 > 
-> > 양식 또는 MVC 작업 명령과 같이 여기에서 사용자 지정 화면에 원하는 다른 입력 또는 작업을 구현합니다. JSP에서 액세스할 수 있는 MVC 작업 명령 추가에 대한 자세한 내용은 [MVC 작업 명령](https://help.liferay.com/hc/en-us/articles/360018165091-MVC-Action-Command) 을 참조하십시오.
+> > 양식 또는 MVC 작업 명령과 같이 여기에서 사용자 지정 화면에 원하는 다른 입력 또는 작업을 구현합니다. JSP에서 액세스할 수 있는 MVC 작업 명령 추가에 대한 자세한 내용은 [MVC 작업 명령](https://help.liferay.com/hc/ko/articles/360018165091-MVC-Action-Command) 을 참조하십시오.
 > 
 > #### `Language.properties`에 언어 키 추가
 > 
@@ -264,7 +264,7 @@ public class C1N4ScreenNavigationEntry
 > c1n4-screen-navigation-entry=C1N4 Screen Navigation Entry
 > ```
 > 
-> > 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
+> > 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
 > 
 > ## 결론
 > 
@@ -272,4 +272,4 @@ public class C1N4ScreenNavigationEntry
 > 
 > ## 추가 정보
 > 
-> * [애플리케이션 현지화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+> * [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

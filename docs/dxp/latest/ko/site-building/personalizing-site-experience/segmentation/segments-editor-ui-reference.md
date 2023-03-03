@@ -131,4 +131,4 @@ Liferay DXP 7.4 U42+/GA42+부터 다음 속성도 세션에 사용할 수 있습
 
 > 사용 가능: Liferay DXP/Portal 7.3+.
 
-세그먼트 속성은 기존 세그먼트를 새로운 복합 세그먼트로 결합하는 방법을 제공합니다. 복합 세그먼트는 기반이 되는 세그먼트에서 속성을 상속하고 멤버를 자동으로 업데이트합니다. 자세한 내용은 [복합 세그먼트](./creating-and-managing-user-segments.md#compound-segments)을 참조하십시오.
+세그먼트 속성은 기존 세그먼트를 새로운 복합 세그먼트로 결합하는 방법을 제공합니다. 복합 세그먼트는 기반이 되는 세그먼트에서 속성을 상속하고 멤버를 자동으로 업데이트합니다. 자세한 내용은 [복합 세그먼트](./creating-and-managing-user-segments.md#compound-segments) 을 참조하십시오.

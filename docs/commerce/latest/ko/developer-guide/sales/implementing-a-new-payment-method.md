@@ -2,7 +2,7 @@
 
 이 자습서에서는 [CommercePaymentMethod](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java) 인터페이스를 구현하여 새 결제 방법을 추가하는 방법을 보여줍니다.
 
-결제 방법은 고객이 주문에 대해 결제할 수 있는 다양한 방법을 나타냅니다. Liferay Commerce는 [Authorize.Net](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java), [Mercanet](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java), [Money Order](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java)및 [PayPal](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java)을 포함한 몇 가지 즉시 사용 가능한 결제 방법을 제공합니다.
+결제 방법은 고객이 주문에 대해 결제할 수 있는 다양한 방법을 나타냅니다. Liferay Commerce는 [Authorize.Net](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java) , [Mercanet](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java) , [Money Order](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java) 및 [PayPal](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java) 을 포함한 몇 가지 즉시 사용 가능한 결제 방법을 제공합니다.
 
 ![즉시 사용 가능한 결제 방법](./implementing-a-new-payment-method/images/01.png "즉시 사용 가능한 결제 방법")
 
@@ -20,7 +20,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Acme Commerce 결제 수단](./liferay-b1c3.zip)을 다운로드하고 압축을 풉니다.
+1. [Acme Commerce 결제 수단](./liferay-b1c3.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-b1c3.zip -O
@@ -71,7 +71,7 @@ Liferay Commerce 2.1 및 이전 버전에서는 *사이트 관리* → *상거�
 )
 public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 ```
-> Liferay Commerce가 지불 방법 레지스트리 [에서 새로운 지불 방법을 다른 지불 방법과 구별할 수 있도록 지불 방법에 대한 고유 키를 제공하는 것이 중요](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). 이미 사용 중인 키를 재사용하면 기존에 연결된 결제 수단이 재정의됩니다.
+> Liferay Commerce가 지불 방법 레지스트리 [에서 새로운 지불 방법을 다른 지불 방법과 구별할 수 있도록 지불 방법에 대한 고유 키를 제공하는 것이 중요](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java) . 이미 사용 중인 키를 재사용하면 기존에 연결된 결제 수단이 재정의됩니다.
 
 ### `CommercePaymentMethod` 인터페이스 검토
 
@@ -166,7 +166,7 @@ public CommercePaymentResult completePayment(
 
 #### 선택적 방법 구현
 
-구독, 반복 결제 및 환불과 같은 추가 기능을 제공하기 위해 구현될 수 있는 추가 방법이 있습니다. 이들은 [CommercePaymentMethod.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java)에서 볼 수 있습니다. 이러한 메서드는 쌍으로 제공됩니다. 하나는 활성화하는 메서드이고 다른 하나는 지정된 기능을 구현하는 것입니다.
+구독, 반복 결제 및 환불과 같은 추가 기능을 제공하기 위해 구현될 수 있는 추가 방법이 있습니다. 이들은 [CommercePaymentMethod.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java) 에서 볼 수 있습니다. 이러한 메서드는 쌍으로 제공됩니다. 하나는 활성화하는 메서드이고 다른 하나는 지정된 기능을 구현하는 것입니다.
 
 이러한 방법 중 다수는 온라인 API를 사용하는 결제 방법에 중요합니다. 온라인 지불 방법의 예는 [PayPalCommercePaymentMethod](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java) 을 참조하십시오.
 
@@ -181,7 +181,7 @@ b1c3-commerce-payment-method=B1C3 Commerce Payment Method
 pay-via-b1c3-commerce-payment-method=Pay via B1C3 commerce payment method.
 ```
 
-> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
+> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
 
 ## 결론
 
@@ -189,4 +189,4 @@ pay-via-b1c3-commerce-payment-method=Pay via B1C3 commerce payment method.
 
 ## 추가 정보
 
-* [애플리케이션 현지화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+* [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

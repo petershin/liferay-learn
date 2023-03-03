@@ -68,7 +68,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 * Liferay의 [넥서스 저장소](https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/)
 * `[Liferay Home]/osgi/modules`
-* [`liferay-[dxp|portal]/modules/apps`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps)의 소스 코드.
+* [`liferay- [dxp|portal]/modules/apps`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps) 의 소스 코드.
 
 언어 속성 파일은 모듈의 `src/main/resources/content` 폴더에 있습니다. `Language[xx_XX].properties` 파일에서 재정의할 언어 번역을 식별합니다.
 
@@ -200,7 +200,7 @@ Then, follow these steps:
 ```
 
 ```{note}
-언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content /Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file).
+언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content /Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file) .
 ```
 
 순위가 높은 리소스 묶음 집합 서비스에 대한 결과를 검색합니다.

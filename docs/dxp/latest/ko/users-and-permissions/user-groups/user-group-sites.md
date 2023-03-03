@@ -1,15 +1,15 @@
 # 사용자 그룹 사이트
 
-사용자 그룹 사이트를 사용하면 각 구성원의 [개인 사이트](../../site-building/sites/personal-sites.md)에 자동으로 추가되는 페이지를 만들 수 있습니다. 이 페이지는 개인 사이트와 마찬가지로 두 개의 [페이지 세트](../../site-building/creating-pages/understanding-pages/understanding-pages.md#page-sets), *내 프로필* (공용) 및 *내 대시보드* (비공개)로 구성됩니다. 사용자가 여러 사용자 그룹에 속한 경우 해당 그룹의 모든 페이지도 해당 사이트에 추가됩니다.
+사용자 그룹 사이트를 사용하면 각 구성원의 [개인 사이트](../../site-building/sites/personal-sites.md)에 자동으로 추가되는 페이지를 만들 수 있습니다. 이 페이지는 개인 사이트와 마찬가지로 두 개의 [페이지 세트](../../site-building/creating-pages/understanding-pages/understanding-pages.md#page-sets) , *내 프로필* (공용) 및 *내 대시보드* (비공개)로 구성됩니다. 사용자가 여러 사용자 그룹에 속한 경우 해당 그룹의 모든 페이지도 해당 사이트에 추가됩니다.
 
 ![각 구성원의 개인 사이트에 추가되는 프로필 및 대시보드 페이지를 만듭니다.](./user-group-sites/images/01.png)
 
 기본적으로 상속된 페이지는 사용자 그룹 사이트에서만 편집할 수 있으며 개인 사이트에서는 편집할 수 없습니다. 필요한 경우 사용자 그룹 관리자는 사용자가 페이지에서 위젯을 추가하고 구성할 수 있도록 사용자 정의 가능한 페이지 영역을 정의할 수 있습니다.
 
-사용자 그룹 사이트는 [수동으로](#designing-user-group-sites-manually) 또는 [사이트 템플릿](#using-site-templates)을 사용하여 설계할 수 있습니다.
+사용자 그룹 사이트는 [수동으로](#designing-user-group-sites-manually) 또는 [사이트 템플릿](#using-site-templates) 을 사용하여 설계할 수 있습니다.
 
 ```{important}
-Liferay 7.4 U22+ 및 GA22+의 경우 새 Liferay 설치에는 내 대시보드 페이지를 포함하여 개인 페이지 생성을 비활성화하는 릴리스 기능 플래그가 포함됩니다. 사용자 그룹에 대한 사용자 정의 대시보드 페이지를 수동으로 생성하려면 Liferay 시스템에 대해 개인 페이지를 활성화해야 합니다. 자세한 내용은 [비공개 페이지 활성화](../../site-building/creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages)를 참조하세요.
+Liferay 7.4 U22+ 및 GA22+의 경우 새 Liferay 설치에는 내 대시보드 페이지를 포함하여 개인 페이지 생성을 비활성화하는 릴리스 기능 플래그가 포함됩니다. 사용자 그룹에 대한 사용자 정의 대시보드 페이지를 수동으로 생성하려면 Liferay 시스템에 대해 개인 페이지를 활성화해야 합니다. 자세한 내용은 [비공개 페이지 활성화](../../site-building/creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) 를 참조하세요.
 
 또는 비공개 페이지가 비활성화된 경우 사이트 템플릿을 사용하여 내 대시보드 페이지를 추가할 수 있습니다. 템플릿에 추가되고 내 대시보드 페이지 집합에 적용된 페이지는 비공개 페이지로 취급됩니다.
 ```

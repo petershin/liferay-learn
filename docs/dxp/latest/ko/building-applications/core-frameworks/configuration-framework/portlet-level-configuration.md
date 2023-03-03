@@ -13,7 +13,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [현지화된 메시지 공유](./liferay-x7y2.zip)를 다운로드하고 압축을 풉니다.
+1. [현지화된 메시지 공유](./liferay-x7y2.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-x7y2.zip -O
@@ -70,15 +70,15 @@
 
 이 예제는 더 높은 수준(예: 사이트, 인스턴스, 시스템 범위). 가장 좋은 방법은 포틀릿 환경 설정과 함께 사용할 애플리케이션을 포틀릿 범위로 표시하는 것입니다.
 
-자세한 내용은 [구성 인터페이스 만들기](./setting-and-accessing-configurations.html#Creating-the-Configuration-Interface)을 참조하십시오.
+자세한 내용은 [구성 인터페이스 만들기](./setting-and-accessing-configurations.html#Creating-the-Configuration-Interface) 을 참조하십시오.
 
 ```{note}
-DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay)을 참조하십시오.
+DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay) 을 참조하십시오.
 ```
 
 ## PortletDisplay로 구성 읽기
 
-[구성 공급자 API에서 구성 값 읽기](./setting-and-accessing-configurations.html#Reading-the-Configuration-from-the-Application)와 유사하게 포틀릿을 사용하여 애플리케이션의 구성 값에 액세스할 수 있습니다. 디스플레이 API.
+[구성 공급자 API에서 구성 값 읽기](./setting-and-accessing-configurations.html#Reading-the-Configuration-from-the-Application) 와 유사하게 포틀릿을 사용하여 애플리케이션의 구성 값에 액세스할 수 있습니다. 디스플레이 API.
 
 ```{literalinclude} ./portlet-level-configuration/resources/liferay-x7y2.zip/x7y2-web/src/main/java/com/acme/x7y2/web/internal/portlet/X7Y2Portlet.java
 :language: java

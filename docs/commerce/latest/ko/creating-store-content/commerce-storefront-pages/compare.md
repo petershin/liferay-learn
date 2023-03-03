@@ -7,4 +7,4 @@
 ## 추가 정보
 
 * [위젯 참조 가이드](../liferay-commerce-widgets/widget-reference.md)
-* [페이지 만들기](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
+* [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)

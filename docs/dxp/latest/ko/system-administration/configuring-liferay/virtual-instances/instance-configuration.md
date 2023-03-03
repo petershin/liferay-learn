@@ -60,7 +60,7 @@ default.logout.page.path=
 company.default.home.url=
 ```
 
-모든 가상 인스턴스는 속성 파일에 지정된 값을 공유합니다. 인스턴스 설정에서 변경한 사항은 속성 파일에 설정된 값을 재정의합니다. 자세한 내용은 [포털 속성 설명서](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)을 참조하십시오.
+모든 가상 인스턴스는 속성 파일에 지정된 값을 공유합니다. 인스턴스 설정에서 변경한 사항은 속성 파일에 설정된 값을 재정의합니다. 자세한 내용은 [포털 속성 설명서](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 참조하십시오.
 
 **추가 정보:** 가상 인스턴스 소유자의 법적 이름, ID, 회사 유형, SIC 코드, 종목 기호, 산업 및 산업 유형을 지정합니다.
 

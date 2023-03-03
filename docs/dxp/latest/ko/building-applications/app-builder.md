@@ -16,7 +16,7 @@ app-builder/creating-the-role-change-request-object.md
 app-builder/creating-the-role-change-request-app.md
 ```
 
-> 사용 가능: Liferay CE/DXP 7.3( 7.4[에서 더 이상 사용되지 않고 제거됨](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4)
+> 사용 가능: Liferay CE/DXP 7.3( 7.4 [에서 더 이상 사용되지 않고 제거됨](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4)
 
 App Builder는 Liferay DXP용 로우 코드 애플리케이션 개발 솔루션입니다. 데이터 모델을 구축하고 애플리케이션의 양식(데이터 입력용)과 테이블(데이터 레코드 보기 및 관리용)을 정의한 다음 애플리케이션을 사이트에 배포하거나 완전히 독립형 애플리케이션으로 배포합니다. App Builder를 사용하면 코드 한 줄 없이 전용 사용자 인터페이스와 데이터 분리를 통해 기능적인 비즈니스 애플리케이션을 생성할 수 있습니다.
 

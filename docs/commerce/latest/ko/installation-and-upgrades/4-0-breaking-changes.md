@@ -162,7 +162,7 @@
 
   * `commerce-frontend-js` 모듈은 이제 콘텐츠(특히 `MiniCart` 통합에 필요한 `MiniCartContext` )의 제어된 액세스 및 노출을 허용하는 적절한 인터페이스와 함께 노출됩니다.
 
-  * MiniCart 구성 요소의 유용성과 확장성은 [여기](https://issues.liferay.com/browse/LRDOCS-9462)에 설명되어 있습니다. 
+  * MiniCart 구성 요소의 유용성과 확장성은 [여기](https://issues.liferay.com/browse/LRDOCS-9462) 에 설명되어 있습니다. 
 
 ### 영향을 받는 사람은 누구입니까?
 

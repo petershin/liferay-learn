@@ -65,7 +65,7 @@ MVC 작업 명령이 실제로 작동하는 것을 보았습니다. 이제 그�
 
 ## 포틀릿 검사
 
-`L6Y9Portlet` 은 최소 [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java)입니다.
+`L6Y9Portlet` 은 최소 [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java) 입니다.
 
 ```{literalinclude} ./mvc-action-command/resources/liferay-l6y9.zip/l6y9-web/src/main/java/com/acme/l6y9/web/internal/portlet/L6Y9Portlet.java
 :language: java
@@ -110,7 +110,7 @@ MVC 작업 명령이 실제로 작동하는 것을 보았습니다. 이제 그�
 
 ## MVCActionCommand 클래스 검사
 
-MVC Action Command 클래스는 [`MVCActionCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCActionCommand.java) 을 직접 구현하거나 [`BaseMVCActionCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCActionCommand.java)을 확장하여 구현할 수 있습니다. `DoL6Y9AbleMVCActionCommand` 은 `BaseMVCActionCommand`을 확장합니다.
+MVC Action Command 클래스는 [`MVCActionCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCActionCommand.java) 을 직접 구현하거나 [`BaseMVCActionCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCActionCommand.java) 을 확장하여 구현할 수 있습니다. `DoL6Y9AbleMVCActionCommand` 은 `BaseMVCActionCommand`을 확장합니다.
 
 ```{literalinclude} ./mvc-action-command/resources/liferay-l6y9.zip/l6y9-web/src/main/java/com/acme/l6y9/web/internal/portlet/action/DoL6Y9AbleMVCActionCommand.java
 :language: java
@@ -139,7 +139,7 @@ MVC Action Command 클래스는 [`MVCActionCommand`](https://github.com/liferay/
 
 ## 다음
 
-이제 MVC 작업 명령을 사용하는 방법을 알았으므로 [MVC 렌더링 명령](./mvc-render-command.md) 및 [MVC 리소스 명령](./mvc-resource-command.md)을 확인하고 싶을 수 있습니다. 앱의 콘텐츠 현지화를 시작하려면 [현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)을 참조하십시오. 모델, 지속성 및 서비스 계층 개발을 시작할 준비가 되었으면 [Service Builder](../../data-frameworks/service-builder.md)을 방문하십시오.
+이제 MVC 작업 명령을 사용하는 방법을 알았으므로 [MVC 렌더링 명령](./mvc-render-command.md) 및 [MVC 리소스 명령](./mvc-resource-command.md)을 확인하고 싶을 수 있습니다. 앱의 콘텐츠 현지화를 시작하려면 [현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)을 참조하십시오. 모델, 지속성 및 서비스 계층 개발을 시작할 준비가 되었으면 [서비스 빌더](../../data-frameworks/service-builder.md) 을 방문하십시오.
 
 ## 추가 정보
 

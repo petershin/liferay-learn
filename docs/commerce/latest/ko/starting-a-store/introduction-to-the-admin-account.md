@@ -9,7 +9,7 @@ Admin 사용자는 Liferay Commerce의 새 설치에서 기본적으로 생성�
 
     ![로그인 링크](./introduction-to-the-admin-account/images/07.png "로그인 링크")
 
-    > Liferay Commerce Bundle을 사용 중인 경우 [_설정 마법사_](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP-#using-the-setup-wizard)이 표시됩니다. 화면의 지시에 따라 관리 사용자를 구성하십시오.
+    > Liferay Commerce Bundle을 사용 중인 경우 [_설정 마법사_](https://help.liferay.com/hc/ko/articles/360017896652-Installing-Liferay-DXP-#using-the-setup-wizard) 이 표시됩니다. 화면의 지시에 따라 관리 사용자를 구성하십시오.
 
 1. 로그인하려면 기본 관리자 자격 증명을 입력하십시오.
 
@@ -53,7 +53,7 @@ Admin 사용자는 Liferay Commerce의 새 설치에서 기본적으로 생성�
 
     ![로그인 링크](./introduction-to-the-admin-account/images/01.png "로그인 링크")
 
-    > Liferay Commerce Bundle을 사용 중인 경우 [_설정 마법사_](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP-#using-the-setup-wizard)이 표시됩니다. 화면의 지시에 따라 관리 사용자를 구성하십시오.
+    > Liferay Commerce Bundle을 사용 중인 경우 [_설정 마법사_](https://help.liferay.com/hc/ko/articles/360017896652-Installing-Liferay-DXP-#using-the-setup-wizard) 이 표시됩니다. 화면의 지시에 따라 관리 사용자를 구성하십시오.
 
 1. 로그인하려면 기본 관리자 자격 증명을 입력하십시오.
 
@@ -92,4 +92,4 @@ Admin 사용자는 Liferay Commerce의 새 설치에서 기본적으로 생성�
 
 ## 추가 정보
 
-* [Liferay DXP 보안 소개](https://help.liferay.com/hc/en-us/articles/360017897072-Introduction-to-Securing-Liferay-DXP)
+* [Liferay DXP 보안 소개](https://help.liferay.com/hc/ko/articles/360017897072-Introduction-to-Securing-Liferay-DXP)

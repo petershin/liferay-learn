@@ -45,7 +45,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7\. *구성 완료*을 클릭합니다.
 
-설정 마법사는 [Liferay Home](../reference/liferay-home.md)의 `portal-setup-wizard.properties` 파일에 구성 값을 저장합니다.
+설정 마법사는 [Liferay Home](../reference/liferay-home.md) 의 `portal-setup-wizard.properties` 파일에 구성 값을 저장합니다.
 
 Liferay DXP Enterprise 구독이 있는 경우 DXP는 활성화 키를 요청합니다. [Liferay DXP](../setting-up-liferay/activating-liferay-dxp.md)활성화를 참조하십시오.
 

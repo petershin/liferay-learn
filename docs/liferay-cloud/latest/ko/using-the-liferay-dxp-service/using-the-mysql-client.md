@@ -18,7 +18,7 @@ Liferay 서비스를 통해 MySQL 클라이언트를 사용하려면 먼저 지�
 | **DXP(7.2 사용)** | liferaycloud/liferay-dxp-7.2.10-sp1-fp4-3.0.19  |
 
 ```{warning}
-데이터베이스 이미지를 MySQL 클라이언트를 지원하는 버전으로 업그레이드하면 데이터베이스의 읽기 전용 사용자가 초기화됩니다. 업그레이드하기 전에 이 사용자의 암호를 설정하지 않으면 기본값이 사용되며 나중에 변경할 수 없습니다. 자세한 내용은 [읽기 전용 데이터베이스 비밀번호 변경](#change-the-read-only-database-password)을 참조하세요.
+데이터베이스 이미지를 MySQL 클라이언트를 지원하는 버전으로 업그레이드하면 데이터베이스의 읽기 전용 사용자가 초기화됩니다. 업그레이드하기 전에 이 사용자의 암호를 설정하지 않으면 기본값이 사용되며 나중에 변경할 수 없습니다. 자세한 내용은 [읽기 전용 데이터베이스 비밀번호 변경](#change-the-read-only-database-password) 을 참조하세요.
 ```
 
 ## MySQL 클라이언트에 액세스
@@ -51,7 +51,7 @@ Liferay 서비스를 통해 MySQL 클라이언트를 사용하려면 먼저 지�
 mysql -u ${LCP_SECRET_DATABASE_USER} -p${LCP_SECRET_DATABASE_PASSWORD}
 ```
 
-데이터베이스 이름, 사용자 이름 및 비밀번호는 `데이터베이스` 서비스의 [secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret)에서 찾을 수 있습니다.
+데이터베이스 이름, 사용자 이름 및 비밀번호는 `데이터베이스` 서비스의 [secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret) 에서 찾을 수 있습니다.
 
 ### 읽기 전용 데이터베이스 암호 변경
 

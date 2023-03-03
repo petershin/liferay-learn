@@ -25,7 +25,7 @@
 ```
 
 ```{important}
-[Service Builder 템플릿](../../../tooling/blade-cli/generating-projects-with-blade-cli.md#creating-a-project)을 사용하여 프로젝트를 생성하면 Declarative Services는 종속성 인젝터 및 해당 종속성은 기본적으로 프로젝트에 대해 구성됩니다. 대신 Spring 의존성 인젝터를 사용하려면 [Blade CLI](../../../tooling/blade-cli/generating-projects-with-blade-cli.md)의 Service Builder 템플릿과 `--dependency-injector spring` 옵션. 
+[Service Builder 템플릿](../../../tooling/blade-cli/generating-projects-with-blade-cli.md#creating-a-project) 을 사용하여 프로젝트를 생성하면 Declarative Services는 종속성 인젝터 및 해당 종속성은 기본적으로 프로젝트에 대해 구성됩니다. 대신 Spring 의존성 인젝터를 사용하려면 [Blade CLI](../../../tooling/blade-cli/generating-projects-with-blade-cli.md)의 Service Builder 템플릿과 `--dependency-injector spring` 옵션. 
 ```
 
 ```{note}

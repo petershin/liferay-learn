@@ -1,6 +1,6 @@
 # 애니메이션 GIF 최적화 활성화
 <!--TASK: Relocate to Adaptive Media section. -->
-애니메이션 GIF의 크기를 조정하기 위해 Adaptive Media는 [Gifsicle](https://www.lcdf.org/gifsicle/)이라는 외부 도구를 사용합니다. Gifsicle이 설치되지 않고 지원되는 MIME 유형으로 `image/gif` 이 포함된 경우 Adaptive Media는 GIF의 한 프레임만 확장하여 정적 GIF를 만듭니다.
+애니메이션 GIF의 크기를 조정하기 위해 Adaptive Media는 [Gifsicle](https://www.lcdf.org/gifsicle/) 이라는 외부 도구를 사용합니다. Gifsicle이 설치되지 않고 지원되는 MIME 유형으로 `image/gif` 이 포함된 경우 Adaptive Media는 GIF의 한 프레임만 확장하여 정적 GIF를 만듭니다.
 
 Adaptive Media를 사용하여 애니메이션 GIF를 최적화하려면 DXP가 실행 중인 로컬 서버에 Gifsicle을 설치하고, `PATH` 환경 변수를 설정한 다음 DXP의 _시스템 설정_에서 Gifsicle을 활성화하는 세 단계가 필요합니다.
 

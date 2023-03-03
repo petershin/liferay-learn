@@ -35,12 +35,12 @@
 주문이 확인되면 판매자가 주문을 처리할 준비가 된 것입니다. 자세한 내용은 [주문 수명 주기](../../order-management/orders/order-life-cycle.md) 을 참조하십시오.
 
 ```{note}
-*체크아웃* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device- and-screen-optimized-media.html)을 참조하세요.
+*체크아웃* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device- and-screen-optimized-media.html) 을 참조하세요.
 ```
 
 ## 추가 정보
 
 * [위젯 참조 가이드](../liferay-commerce-widgets/widget-reference.md)
-* [페이지 만들기](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
+* [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)
 * [사용자 정의 체크아웃 단계 구현](../../developer-guide/implementing-a-custom-checkout-step.md)
 * [고정 요금 배송 방법 사용](../../store-managemen/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)

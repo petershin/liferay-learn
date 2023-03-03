@@ -67,7 +67,7 @@
 
 ## Poshi 독립 실행형 업데이트
 
-Poshi Standalone은 항상 최신 릴리스 버전을 실행하며 Gradle 프로젝트를 업데이트하는 데 필요한 추가 단계가 없습니다. 다운그레이드해야 하는 경우 `build.gradle` 파일 끝에 다음 줄을 추가하고 버전 번호를 [Poshi Runner Changelog](https://github.com/liferay/liferay-portal/blob/master/modules/test/poshi/CHANGELOG.markdown)에서 원하는 버전으로 바꿉니다.
+Poshi Standalone은 항상 최신 릴리스 버전을 실행하며 Gradle 프로젝트를 업데이트하는 데 필요한 추가 단계가 없습니다. 다운그레이드해야 하는 경우 `build.gradle` 파일 끝에 다음 줄을 추가하고 버전 번호를 [Poshi Runner Changelog](https://github.com/liferay/liferay-portal/blob/master/modules/test/poshi/CHANGELOG.markdown) 에서 원하는 버전으로 바꿉니다.
 
 ```
 poshiRunner {

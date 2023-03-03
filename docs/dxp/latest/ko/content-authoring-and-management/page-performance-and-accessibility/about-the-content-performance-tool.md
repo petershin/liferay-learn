@@ -20,9 +20,9 @@
 
 *Content Performance* (![Content Performance](../../images/icon-analytics.png)) 버튼을 사용하여 Content Performance 도구를 열 수 있습니다.
 
-- [웹 콘텐츠, 문서 및 미디어 또는 블로그 항목과 같은 표시 페이지 템플릿](#accessing-the-content-performance-tool-from-content-based-on-a-display-page-template)기반 콘텐츠.
+- [웹 콘텐츠, 문서 및 미디어 또는 블로그 항목과 같은 표시 페이지 템플릿](#accessing-the-content-performance-tool-from-content-based-on-a-display-page-template) 기반 콘텐츠.
 - [콘텐츠 또는 위젯 페이지](#accessing-the-content-performance-tool-from-content-or-widget-pages) (Liferay DXP 7.4+).
-- [콘텐츠 대시보드](#accessing-the-content-performance-tool-from-the-content-dashboard).
+- [콘텐츠 대시보드](#accessing-the-content-performance-tool-from-the-content-dashboard) .
 
 ### 디스플레이 페이지 템플릿을 기반으로 하는 콘텐츠에서 콘텐츠 성능 도구에 액세스
 
@@ -38,7 +38,7 @@
 
 ![웹 콘텐츠에서 콘텐츠 성능 메트릭에 액세스합니다.](./about-the-content-performance-tool/images/04.png)
 
-1. 보기 모드에서 [응용 프로그램 도구 모음](../../getting-started/navigating-dxp.md#applications-bar)에 있는 *콘텐츠 성능* (![Content Performance](../../images/icon-analytics.png)) 아이콘을 클릭합니다.
+1. 보기 모드에서 [응용 프로그램 도구 모음](../../getting-started/navigating-dxp.md#applications-bar) 에 있는 *콘텐츠 성능* (![Content Performance](../../images/icon-analytics.png)) 아이콘을 클릭합니다.
 
 ### 콘텐츠 또는 위젯 페이지에서 콘텐츠 성능 도구에 액세스
 
@@ -50,14 +50,14 @@
 
 ### 콘텐츠 대시보드에서 콘텐츠 성능 도구에 액세스
 
-1. [콘텐츠 대시보드](../content-dashboard/content-dashboard-interface.md#accessing-the-content-dashboard)을 엽니다.
-1. [Contents list](../content-dashboard/content-dashboard-interface.md#contents-list)에서 검토하려는 콘텐츠 옆에 있는 *Actions* 메뉴(![Actions Menu](../../images/icon-actions.png))를 클릭하고 *View Metrics*을 선택합니다.
+1. [콘텐츠 대시보드](../content-dashboard/content-dashboard-interface.md#accessing-the-content-dashboard) 을 엽니다.
+1. [Contents list](../content-dashboard/content-dashboard-interface.md#contents-list) 에서 검토하려는 콘텐츠 옆에 있는 *Actions* 메뉴(![Actions Menu](../../images/icon-actions.png))를 클릭하고 *View Metrics*을 선택합니다.
 1. 또는 콘텐츠 위로 마우스를 이동하고 *콘텐츠 성능* (![View Metrics](../../images/icon-analytics.png)) 아이콘을 클릭합니다.
 
 ![콘텐츠 대시보드에서 콘텐츠 성능 메트릭에 액세스합니다.](./about-the-content-performance-tool/images/05.png)
 
 ```{note}
-콘텐츠 성능 옵션을 사용할 수 없는 경우 콘텐츠가 하나 이상의 조건을 충족하지 않는 것입니다. 자세한 내용은 [콘텐츠 성능 도구 정보](#about-the-content-performance-tool)를 참조하세요.
+콘텐츠 성능 옵션을 사용할 수 없는 경우 콘텐츠가 하나 이상의 조건을 충족하지 않는 것입니다. 자세한 내용은 [콘텐츠 성능 도구 정보](#about-the-content-performance-tool) 를 참조하세요.
 ```
 
 ## 관련 정보

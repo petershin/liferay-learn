@@ -6,7 +6,7 @@
 
 1. `build.Gradle` 파일을 엽니다.
 
-1. [아직 존재하지 않는 경우 `종속성` 세트](https://docs.gradle.org/current/userguide/declaring_dependencies.html)을 선언합니다.
+1. [아직 존재하지 않는 경우 `종속성` 세트](https://docs.gradle.org/current/userguide/declaring_dependencies.html) 을 선언합니다.
 
     ```groovy
     dependencies {

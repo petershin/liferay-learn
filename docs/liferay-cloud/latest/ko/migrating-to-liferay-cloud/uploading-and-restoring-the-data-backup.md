@@ -23,7 +23,7 @@
     ![버튼을 클릭하여 데이터베이스와 문서 라이브러리를 새 백업으로 업로드합니다.](./uploading-and-restoring-the-data-backup/images/02.png)
 
     ```{note}
-    데이터베이스 덤프 및 문서 라이브러리 업로드는 총 **2TB**를 초과하지 않아야 합니다. 더 큰 파일을 업로드하려면 [Liferay 클라우드 지원팀에 문의](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)하십시오.
+    데이터베이스 덤프 및 문서 라이브러리 업로드는 총 **2TB**를 초과하지 않아야 합니다. 더 큰 파일을 업로드하려면 [Liferay 클라우드 지원팀에 문의](https://help.liferay.com/hc/ko/articles/360030208451-DXP-Cloud-Support-Overview) 하십시오.
     ```
 
 1. *업로드 시작* 을 클릭하고 업로드가 완료될 때까지 기다립니다.

@@ -2,14 +2,14 @@
 
 > 가입자
 
-핫픽스는 고객이 확인한 중요한 DXP 문제를 해결하기 위해 업데이트 사이(또는 DXP 7.3 SP3 이전 버전의 경우 수정 팩 사이)에 제공되는 수정 또는 수정 모음입니다. [도움말 센터 티켓](https://help.liferay.com/hc)을 통해 Hotfix에서 요청할 수 있습니다. 핫픽스를 받은 후 패치 도구를 사용하여 설치할 수 있습니다.
+핫픽스는 고객이 확인한 중요한 DXP 문제를 해결하기 위해 업데이트 사이(또는 DXP 7.3 SP3 이전 버전의 경우 수정 팩 사이)에 제공되는 수정 또는 수정 모음입니다. [도움말 센터 티켓](https://help.liferay.com/hc) 을 통해 Hotfix에서 요청할 수 있습니다. 핫픽스를 받은 후 패치 도구를 사용하여 설치할 수 있습니다.
 
 ```{warning}
 **항상** 핫픽스를 적용하기 전에 데이터베이스와 설치를 [백업](./backing-up.md)하십시오.
 ```
 
 ```{note}
-Docker 컨테이너에서 DXP를 실행하는 경우 [Docker에서 DXP 패칭](../installing-liferay/using-liferay-docker-images/patching-dxp-in-docker.conf)의 지침에 따라 핫픽스를 적용하십시오. md).
+Docker 컨테이너에서 DXP를 실행하는 경우 [Docker에서 DXP 패칭](../installing-liferay/using-liferay-docker-images/patching-dxp-in-docker.conf) 의 지침에 따라 핫픽스를 적용하십시오. md).
 ```
 
 ## 핫픽스 요청

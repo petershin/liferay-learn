@@ -51,7 +51,7 @@
 
 ## 제품 관계 표시
 
-제품 게시자 위젯을 구성하여 제품 표시 페이지에 제품 관계를 표시할 수 있습니다. 먼저 [개의 제품 표시 페이지](https://help.liferay.com/hc/en-us/articles/360017870292-Displaying-Product-Pages-) 이 있어야 합니다.
+제품 게시자 위젯을 구성하여 제품 표시 페이지에 제품 관계를 표시할 수 있습니다. 먼저 [개의 제품 표시 페이지](https://help.liferay.com/hc/ko/articles/360017870292-Displaying-Product-Pages-) 이 있어야 합니다.
 
 1. 제품을 검색합니다(예: _Brake Pads_).
 1. 제품 세부 정보를 보려면 _브레이크 패드_ 을 클릭하십시오.
@@ -107,7 +107,7 @@
 
 ### 제품 관계 표시
 
-제품 게시자 위젯을 구성하여 제품 표시 페이지에 제품 관계를 표시할 수 있습니다. 먼저 [개의 제품 표시 페이지](https://help.liferay.com/hc/en-us/articles/360017870292-Displaying-Product-Pages-) 이 있어야 합니다.
+제품 게시자 위젯을 구성하여 제품 표시 페이지에 제품 관계를 표시할 수 있습니다. 먼저 [개의 제품 표시 페이지](https://help.liferay.com/hc/ko/articles/360017870292-Displaying-Product-Pages-) 이 있어야 합니다.
 
 1. 제품을 검색합니다(예: _Brake Pads_).
 1. 제품 세부 정보를 보려면 _브레이크 패드_ 을 클릭하십시오.

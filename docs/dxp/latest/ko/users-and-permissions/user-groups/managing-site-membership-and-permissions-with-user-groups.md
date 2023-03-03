@@ -26,8 +26,8 @@
 
 사용자 그룹의 사용자에게 사이트 범위 권한을 부여하려면
 
-1. [사용자 그룹 만들기](./creating-and-managing-user-groups.md#creating-a-user-group).
-1. 사용자 그룹을 사이트에 할당합니다([위](#managing-site-membership-with-user-groups)참조 ).
+1. [사용자 그룹 만들기](./creating-and-managing-user-groups.md#creating-a-user-group) .
+1. 사용자 그룹을 사이트에 할당합니다( [위](#managing-site-membership-with-user-groups) 참조 ).
 1. 사이트 역할을 생성하고 해당 권한을 정의합니다( [역할 및 권한](../roles-and-permissions.md)참조).
 1. 사용자 그룹에 역할을 할당합니다.
 

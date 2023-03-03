@@ -1,6 +1,6 @@
 # 조각 개발
 
-페이지 조각은 [콘텐츠 페이지](../../creating-pages/understanding-pages/understanding-pages.md#content-pages)의 빌딩 블록입니다. CSS, HTML 및 JavaScript의 세 가지 웹 페이지 구성 요소로 만들어집니다. 페이지를 만들려면 여러 조각을 결합하고 함께 페이지 디자인과 해당 기능을 만듭니다. 조각은 더 큰 페이지 요소(예: 카드 또는 단락 요소)를 구성하거나 자체적으로 독립할 수 있습니다(예: 배너).
+페이지 조각은 [콘텐츠 페이지](../../creating-pages/understanding-pages/understanding-pages.md#content-pages) 의 빌딩 블록입니다. CSS, HTML 및 JavaScript의 세 가지 웹 페이지 구성 요소로 만들어집니다. 페이지를 만들려면 여러 조각을 결합하고 함께 페이지 디자인과 해당 기능을 만듭니다. 조각은 더 큰 페이지 요소(예: 카드 또는 단락 요소)를 구성하거나 자체적으로 독립할 수 있습니다(예: 배너).
 
 ![조각은 퍼즐 조각처럼 결합되어 콘텐츠 페이지를 구성합니다.](./developing-fragments-intro/images/01.png)
 
@@ -24,9 +24,9 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 프래그먼트는 아래 리소스를 사용하여 향상될 수 있으므로 일반 HTML, CSS 및 JavaScript보다 훨씬 강력합니다.
 
 * [편집 가능한 요소](../reference/fragments/fragment-specific-tags-reference.md): 텍스트, 이미지, 링크 및 "서식 있는" 텍스트 요소를 편집 가능하게 만들어 사용자가 콘텐츠를 사용자 지정 텍스트 및 이미지로 바꿀 수 있습니다. 이것이 Fragment를 재사용할 수 있게 만드는 핵심 기능입니다. 위젯을 포함할 수도 있습니다.
-* [드롭 영역](./defining-fragment-drop-zones): `<lfr-drop-zone></lfr-drop-zone>` 레이블을 사용하여 조각에 드롭 영역을 추가합니다. 추가되면 조각과 위젯을 정의된 영역으로 끌어다 놓을 수 있습니다.
+* [드롭 영역](./defining-fragment-drop-zones) : `<lfr-drop-zone></lfr-drop-zone>` 레이블을 사용하여 조각에 드롭 영역을 추가합니다. 추가되면 조각과 위젯을 정의된 영역으로 끌어다 놓을 수 있습니다.
 * [구성 옵션](./adding-configuration-options-to-fragments.md) <!-- TODO: Fix link -->: Fragment의 글꼴 색상 수정과 같은 구성 옵션을 응용 프로그램의 구성 메뉴에 추가합니다.
-* [FreeMarker](https://freemarker.apache.org/): FreeMarker는 변수, 조건문 등으로 HTML을 향상시키는 템플릿 언어입니다. HTML에서 FreeMarker에 대해 [대체(대괄호) 구문](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html) 을 사용할 수 있습니다.
+* [FreeMarker](https://freemarker.apache.org/) : FreeMarker는 변수, 조건문 등으로 HTML을 향상시키는 템플릿 언어입니다. HTML에서 FreeMarker에 대해 [대체(대괄호) 구문](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html) 을 사용할 수 있습니다.
 
 ```{important}
 신뢰할 수 있는 사용자에게만 FreeMarker에서 템플릿 생성 또는 편집 권한을 부여합니다. [웹 콘텐츠 구조 및 템플릿에 권한 할당](../../../content-authoring-and-management/web-content/web-content-structures/assigning-permissions-to-structures-and-templates 참조) .md#security-considerations-for-web-content-templates) 웹 콘텐츠 템플릿 보안에 대한 정보.

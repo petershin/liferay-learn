@@ -10,7 +10,7 @@
 
 이러한 값을 찾으려면 패치 도구를 사용하십시오.
 
-1. [여기](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) 의 지침에 따라 마이그레이션하려는 설치에 패치 도구를 설치합니다.
+1. [패치 도구 설치](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) 의 지침에 따라 마이그레이션하려는 설치에 패치 도구를 설치합니다.
 
 1. 명령줄 도구를 사용하여 패치 도구 폴더로 이동합니다.
 
@@ -42,7 +42,7 @@ git clone https://github.com/dxpcloud/acme
 
 ## 리포지토리에서 Liferay DXP 이미지 업데이트
 
-다음으로 이전에 복제한 저장소에서 [DXP 이미지를 업데이트](#clone-the-liferay-cloud-repository). 이를 위해서는 Liferay 설치 버전 정보와 호환되는 Docker 이미지를 찾아야 합니다.
+다음으로 이전에 복제한 저장소에서 [DXP 이미지를 업데이트](#clone-the-liferay-cloud-repository) . 이를 위해서는 Liferay 설치 버전 정보와 호환되는 Docker 이미지를 찾아야 합니다.
 
 1. Docker Hub에서 [Liferay DXP 이미지](https://hub.docker.com/r/liferay/dxp/tags) 페이지로 이동합니다.
 
@@ -70,7 +70,7 @@ git clone https://github.com/dxpcloud/acme
 
 다음으로 리포지토리에 있는 Liferay 서비스의 `LCP.json` 파일에서 Liferay 서비스 이미지를 업데이트합니다. 이를 위해서는 Liferay 설치 버전과 호환되는 최신 Docker 이미지를 찾아야 합니다.
 
-1. Liferay Cloud의 [서비스 변경 로그](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) 페이지로 이동합니다.
+1. Liferay Cloud의 [서비스 변경 로그](https://help.liferay.com/hc/ko/sections/360006251311-Services-Changelog) 페이지로 이동합니다.
 
 1. 목록 상단에서 최신 서비스 업데이트를 클릭합니다.
 
@@ -94,7 +94,7 @@ git clone https://github.com/dxpcloud/acme
 
 ## 핫픽스 정보 추가
 
-CI 서비스의 `LCP.json` 파일에 [온프레미스 설치에 설치된 패치](#find-liferay-version-information)에 대한 핫픽스 정보도 추가해야 합니다.
+CI 서비스의 `LCP.json` 파일에 [온프레미스 설치에 설치된 패치](#find-liferay-version-information) 에 대한 핫픽스 정보도 추가해야 합니다.
 
 1. 설치된 패치 목록을 확인하려면 `$LIFERAY_HOME/patching-tool` 폴더에서 `./patching-tool.sh info` 명령을 다시 실행하십시오.
    

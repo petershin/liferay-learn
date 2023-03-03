@@ -25,7 +25,7 @@ Analytics Cloud에서 데이터를 보려면 사이트를 속성에 동기화해
 1. Liferay DXP 인스턴스에서 *인스턴스 설정* &rarr; *Analytics Cloud* 를 확인하여 Liferay DXP 인스턴스가 Analytics Cloud와 동기화되고 있는지 확인합니다. `DXP 인스턴스가 Analytics Cloud에 연결됨 메시지` 은 Liferay DXP 인스턴스가 Analytics Cloud에 올바르게 연결되었음을 확인합니다.
 
     ```{important}
-    'DXP 인스턴스가 Analytics Cloud에 연결되었습니다.'라는 메시지가 표시되지 않으면 [Liferay DXP 사이트를 Analytics Cloud에 연결](../getting-started/connecting-liferay-dxp-to-analytics-cloud. md).
+    'DXP 인스턴스가 Analytics Cloud에 연결되었습니다.'라는 메시지가 표시되지 않으면 [Liferay DXP 사이트를 Analytics Cloud에 연결](../getting-started/connecting-liferay-dxp-to-analytics-cloud. md) .
     ```
 
 1. Analytics Cloud 작업 영역에서 *동기화된 사이트*을 클릭합니다. Analytics Cloud에서 만든 사용 가능한 속성 목록이 나타납니다. 추적하려는 사이트에 대해 여기에서 새 속성을 만듭니다.

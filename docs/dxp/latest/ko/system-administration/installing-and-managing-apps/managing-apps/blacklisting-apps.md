@@ -3,10 +3,10 @@
 번들 블랙리스트는 여러 앱, OSGi 번들(모듈) 및 WAR 플러그인을 한 번에 제거하거나 다시 설치하는 편리한 방법입니다. [Application Manager](./using-the-app-manager.md) 또는 [Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)을 사용하여 앱, 모듈 및 플러그인 설치를 개별적으로 관리하는 수고를 덜 수 있습니다.
 
 ```{important}
-블랙리스트는 DXP가 앱을 제거하는 데 사용하는 [OSGi 구성](../../configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)입니다. 이를 사용하면 나열된 앱이 제거될 때까지 설치되지 않습니다.
+블랙리스트는 DXP가 앱을 제거하는 데 사용하는 [OSGi 구성](../../configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 입니다. 이를 사용하면 나열된 앱이 제거될 때까지 설치되지 않습니다.
 ```
 
-[제어판에서](#blacklisting-via-the-control-panel) 또는 [OSGi 구성 사용](#blacklisting-via-a-configuration-file) (`.config`) 파일을 사용하여 목록을 설정할 수 있습니다. ([내보내기](../../configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)하여 제어판에서).
+[제어판에서](#blacklisting-via-the-control-panel) 또는 [OSGi 구성 사용](#blacklisting-via-a-configuration-file) (`.config`) 파일을 사용하여 목록을 설정할 수 있습니다. ( [내보내기](../../configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 하여 제어판에서).
 
 ## 블랙리스트
 
@@ -22,7 +22,7 @@ LPKG를 블랙리스트에 올리면 모든 내부 모듈이 제거됩니다.
 
 1. 제어판에서 _구성_ &rarr; _시스템 설정_ &rarr; _모듈 컨테이너_로 이동합니다. 번들 블랙리스트 화면이 나타납니다.
 
-1. 번들 블랙리스트 화면에서 제거할 앱, LPKG 파일, [모듈](https://help.liferay.com/hc/articles/360035467532-OSGi-and-Modularity#modules) JAR 또는 WAR에 대한 번들 기호 이름을 추가합니다. 각 항목에 대해 추가 버튼(![Add](../../../images/icon-add.png))을 클릭하고 항목의 번들 기호 이름을 입력합니다(아래 표 [참조](#blacklist-bundle-symbolic-names)). 완료되면 _저장_ 버튼을 클릭합니다. DXP는 블랙리스트에 있는 항목을 즉시 제거합니다.
+1. 번들 블랙리스트 화면에서 제거할 앱, LPKG 파일, [모듈](https://help.liferay.com/hc/articles/360035467532-OSGi-and-Modularity#modules) JAR 또는 WAR에 대한 번들 기호 이름을 추가합니다. 각 항목에 대해 추가 버튼(![Add](../../../images/icon-add.png))을 클릭하고 항목의 번들 기호 이름을 입력합니다(아래 표 [참조](#blacklist-bundle-symbolic-names) ). 완료되면 _저장_ 버튼을 클릭합니다. DXP는 블랙리스트에 있는 항목을 즉시 제거합니다.
    
    ![이 블랙리스트는 클래식 테마 플러그인 WAR, Liferay Collaboration - Liferay Blogs - API 모듈 및 com.acme.greeter 모듈을 제거합니다.](./blacklisting-apps/images/02.png)
 

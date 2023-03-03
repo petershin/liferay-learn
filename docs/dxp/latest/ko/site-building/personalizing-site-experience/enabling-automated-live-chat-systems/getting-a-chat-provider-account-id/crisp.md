@@ -4,7 +4,7 @@
 
 ## Crisp 계정 ID 찾기
 
-1. [Crisp 계정](https://app.crisp.chat/initiate/login/)에 로그인합니다.
+1. [Crisp 계정](https://app.crisp.chat/initiate/login/) 에 로그인합니다.
 
 1. 측면 탐색 모음에서 *Cog* 을 클릭하여 Crisp 계정 설정에 액세스합니다.
 

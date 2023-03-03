@@ -16,7 +16,7 @@ _배달 구독_ 은 잡지 구독과 유사합니다. 여기에서 일시금을 
 
 ## 전제 조건
 
-제품에 대한 구독을 활성화하려면 스토어 관리자가 반복 결제를 지원하는 결제 방법을 활성화해야 합니다. 기본적으로 Liferay Commerce는 반복 지불 방법으로 [Paypal](../../../store-management/configuring-payment-methods/paypal.md) 을 지원합니다.
+제품에 대한 구독을 활성화하려면 스토어 관리자가 반복 결제를 지원하는 결제 방법을 활성화해야 합니다. 기본적으로 Liferay Commerce는 반복 지불 방법으로 [PayPal](../../../store-management/configuring-payment-methods/paypal.md) 을 지원합니다.
 
 ## 제품 구독 활성화
 

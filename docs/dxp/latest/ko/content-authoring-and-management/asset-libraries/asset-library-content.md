@@ -19,7 +19,7 @@
 각 콘텐츠 유형 생성에 대한 자세한 내용은 [콘텐츠 제작 및 관리](../../content-authoring-and-management.html) 기사를 참조하세요.
 
 ```{note}
-활성 응용 프로그램만 라이브러리의 메뉴 페이지에 나타납니다. 응용 프로그램을 활성화하거나 비활성화하려면 [자산 라이브러리 구성](./creating-and-managing-asset-libraries.md#configuring-asset-libraries)에서 자세한 내용을 참조하십시오.
+활성 응용 프로그램만 라이브러리의 메뉴 페이지에 나타납니다. 응용 프로그램을 활성화하거나 비활성화하려면 [자산 라이브러리 구성](./creating-and-managing-asset-libraries.md#configuring-asset-libraries) 에서 자세한 내용을 참조하십시오.
 ```
 
 ## 사이트에서 콘텐츠 사용

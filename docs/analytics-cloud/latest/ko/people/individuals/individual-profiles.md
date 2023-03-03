@@ -30,7 +30,7 @@
 
 활동 스트림은 세션별로 구분된 과거 활동을 나타냅니다. 각 세션은 타임스탬프 왼쪽에 파란색 점으로 표시됩니다. 세션 세부 정보(예: 장치 및 브라우저 정보)를 보려면 세션을 클릭하십시오.
 
-각 세션은 [기본 이벤트](../../workspace-data/definitions/definitions-for-events.md#default-events) 및 [사용자 지정 이벤트](../../workspace-data/definitions/definitions-for-events.md#custom-events)를 포함하여 Analytics Cloud에서 추적하는 [개의 개별 이벤트](../../touchpoints/events.md) 을 나열합니다. 이벤트 세부 정보(예: 페이지 타일 및 URL)를 보려면 이벤트를 클릭하십시오.
+각 세션은 [기본 이벤트](../../workspace-data/definitions/definitions-for-events.md#default-events) 및 [사용자 지정 이벤트](../../workspace-data/definitions/definitions-for-events.md#custom-events) 를 포함하여 Analytics Cloud에서 추적하는 [개의 개별 이벤트](../../touchpoints/events.md) 을 나열합니다. 이벤트 세부 정보(예: 페이지 타일 및 URL)를 보려면 이벤트를 클릭하십시오.
 
 ![활동 스트림에서 이벤트를 확인합니다.](individual-profiles/images/02.png)
 
@@ -46,7 +46,7 @@
 
 관심사 탭을 클릭합니다.
 
-사용자가 상호 작용하는 웹 페이지 또는 자산에 따라 Analytics Cloud는 고급 알고리즘을 사용하여 브랜드에 대한 개인의 관심사가 무엇인지 알아냅니다. 이를 통해 개인과의 대화를 준비하거나 관심사에 따라 캠페인을 만들 수 있습니다. 자세한 내용은 [관심사 이해](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests)을 참조하십시오.
+사용자가 상호 작용하는 웹 페이지 또는 자산에 따라 Analytics Cloud는 고급 알고리즘을 사용하여 브랜드에 대한 개인의 관심사가 무엇인지 알아냅니다. 이를 통해 개인과의 대화를 준비하거나 관심사에 따라 캠페인을 만들 수 있습니다. 자세한 내용은 [관심사 이해](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests) 을 참조하십시오.
 
 ## 세그먼트
 

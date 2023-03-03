@@ -2,7 +2,7 @@
 
 {bdg-secondary}`사용 가능한 Liferay Portal 7.3 GA1+ 또는 Liferay DXP 7.3+`
 
-자체 도구로 페이지 조각을 개발하는 경우 [](./using-the-fragments-toolkit.md#fragment-set-structure)UI를 통해 가져오기 위해 ZIP 파일로 패키징하여 배포할 수 있습니다. 그러나 UI 사용에만 국한되지는 않습니다. 명령줄에서도 조각 ZIP 파일을 배포할 수 있습니다. 여기서는 조각 프로젝트로 작업하고 Liferay의 자동 배포 메커니즘을 사용하여 명령줄에서 원하는 사이트로 조각을 가져오는 방법을 배웁니다.
+자체 도구로 페이지 조각을 개발하는 경우 [](./using-the-fragments-toolkit.md#fragment-set-structure) UI를 통해 가져오기 위해 ZIP 파일로 패키징하여 배포할 수 있습니다. 그러나 UI 사용에만 국한되지는 않습니다. 명령줄에서도 조각 ZIP 파일을 배포할 수 있습니다. 여기서는 조각 프로젝트로 작업하고 Liferay의 자동 배포 메커니즘을 사용하여 명령줄에서 원하는 사이트로 조각을 가져오는 방법을 배웁니다.
 
 ```{note}
 Liferay DXP 7.4+의 경우 조각 컬렉션을 Liferay UI에서 조각 세트라고 합니다.
@@ -15,7 +15,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션을 Liferay UI에서 조각 세트라
 
 그런 다음 다음 단계에 따라 예제 프래그먼트 세트를 자동 배포합니다.
 
-1. [예제 자동 배포 가능 프래그먼트 세트](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip)를 다운로드하고 압축을 풉니다. ):
+1. [예제 자동 배포 가능 프래그먼트 세트](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip) 를 다운로드하고 압축을 풉니다. ):
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O

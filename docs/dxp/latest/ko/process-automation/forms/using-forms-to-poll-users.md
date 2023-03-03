@@ -4,7 +4,7 @@ uuid: 1f2bb9d9-cace-4b58-9ba5-2b5c48762c92
 
 # 양식을 사용하여 사용자 설문 조사
 
-이전 버전의 Liferay에서 사이트 관리자는 사이트 관리 &rarr; 콘텐츠 및 데이터 메뉴. 이 애플리케이션은 [Liferay 7.3에서 사용되지 않음](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in- 7-3) 및 [Liferay 7.4에서 제거됨](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated- 에서-7-4).
+이전 버전의 Liferay에서 사이트 관리자는 사이트 관리 &rarr; 콘텐츠 및 데이터 메뉴. 이 애플리케이션은 [Liferay 7.3에서 사용되지 않음](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in- 7-3) 및 [Liferay 7.4에서 제거됨](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated- 에서-7-4) .
 
 Liferay Forms는 이전 Liferay 버전에서 Polls 애플리케이션이 처리한 사용 사례를 충족하도록 개선되었습니다. 새 투표를 만들려면 여기에 설명된 기능과 함께 Liferay Forms를 사용하십시오.
 

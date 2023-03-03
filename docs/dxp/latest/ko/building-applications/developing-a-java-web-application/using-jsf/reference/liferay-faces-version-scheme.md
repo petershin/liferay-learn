@@ -8,7 +8,7 @@
 
 ## Liferay 얼굴 합금
 
-[AlloyUI](http://alloyui.com/)을 활용하는 JSF 구성 요소 모음을 제공합니다.
+[AlloyUI](http://alloyui.com/) 을 활용하는 JSF 구성 요소 모음을 제공합니다.
 
 | 브랜치                                                                         | 예제 아티팩트                           | AlloyUI | JSF API | 추가 정보                                                       |
 | --------------------------------------------------------------------------- | --------------------------------- | ------- | ------- | ----------------------------------------------------------- |
@@ -23,10 +23,10 @@ JSR 286(Portlet 2.0) 및 JSR 362(Portlet 3.0)의 참조 구현인 [Apache Pluto]
 
 | 브랜치                                                                                                                                                           | 예제 아티팩트                                                                                  | 포틀릿 API | JSF API |                          JCP 사양                           | 추가 정보                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |:-------:|:-------:|:---------------------------------------------------------:| -------------------------------------------------------- |
-| API: [5.x](https://github.com/liferay/liferay-faces-bridge-api/tree/5.x)<br/>IMPL: [5.x](https://github.com/liferay/liferay-faces-bridge-impl/tree/5.x) | com.liferay.faces.bridge.api-5.0.0.jar<br/>com.liferay.faces.bridge.impl-5.0.0.jar |   3.0   |   2.2   |    [JSR 378](https://www.jcp.org/en/jsr/detail?id=378)    | *JCP의 "최종 검토" 중이며 2020년에 공개될 예정입니다.*                     |
-| API: [4.x](https://github.com/liferay/liferay-faces-bridge-api/tree/4.x)<br/>IMPL: [4.x](https://github.com/liferay/liferay-faces-bridge-impl/tree/4.x) | com.liferay.faces.bridge.api-4.1.0.jar<br/>com.liferay.faces.bridge.impl-4.0.0.jar |   2.0   |   2.2   |    [JSR 329](https://www.jcp.org/en/jsr/detail?id=329)    | *JSF 2.2용 비표준 브리지 확장을 포함합니다.*                            |
-| API: [3.x](https://github.com/liferay/liferay-faces-bridge-api/tree/3.x)<br/>IMPL: [3.x](https://github.com/liferay/liferay-faces-bridge-impl/tree/3.x) | com.liferay.faces.bridge.api-3.1.0.jar<br/>com.liferay.faces.bridge.impl-3.0.0.jar |   2.0   |   2.1   |    [JSR 329](https://www.jcp.org/en/jsr/detail?id=329)    | *JSF 2.1용 비표준 브리지 확장을 포함합니다.*                            |
-| API: [2.x](https://github.com/liferay/liferay-faces-bridge-api/tree/2.x)<br/>IMPL: [2.x](https://github.com/liferay/liferay-faces-bridge-impl/tree/2.x) | com.liferay.faces.bridge.api-2.1.0.jar<br/>com.liferay.faces.bridge.impl-2.0.0.jar |   2.0   |   1.2   | [JSR 329](https://www.jcp.org/en/jsr/detail?id=329) (MR1) | *유지보수 릴리스 1(MR1)에 대한 지원을 포함합니다.*                         |
+| API: [5.x](https://github.com/liferay/liferay-faces-bridge-api/tree/5.x) <br/>IMPL: [5.x](https://github.com/liferay/liferay-faces-bridge-impl/tree/5.x) | com.liferay.faces.bridge.api-5.0.0.jar<br/>com.liferay.faces.bridge.impl-5.0.0.jar |   3.0   |   2.2   |    [JSR 378](https://www.jcp.org/en/jsr/detail?id=378)    | *JCP의 "최종 검토" 중이며 2020년에 공개될 예정입니다.*                     |
+| API: [4.x](https://github.com/liferay/liferay-faces-bridge-api/tree/4.x) <br/>IMPL: [4.x](https://github.com/liferay/liferay-faces-bridge-impl/tree/4.x) | com.liferay.faces.bridge.api-4.1.0.jar<br/>com.liferay.faces.bridge.impl-4.0.0.jar |   2.0   |   2.2   |    [JSR 329](https://www.jcp.org/en/jsr/detail?id=329)    | *JSF 2.2용 비표준 브리지 확장을 포함합니다.*                            |
+| API: [3.x](https://github.com/liferay/liferay-faces-bridge-api/tree/3.x) <br/>IMPL: [3.x](https://github.com/liferay/liferay-faces-bridge-impl/tree/3.x) | com.liferay.faces.bridge.api-3.1.0.jar<br/>com.liferay.faces.bridge.impl-3.0.0.jar |   2.0   |   2.1   |    [JSR 329](https://www.jcp.org/en/jsr/detail?id=329)    | *JSF 2.1용 비표준 브리지 확장을 포함합니다.*                            |
+| API: [2.x](https://github.com/liferay/liferay-faces-bridge-api/tree/2.x) <br/>IMPL: [2.x](https://github.com/liferay/liferay-faces-bridge-impl/tree/2.x) | com.liferay.faces.bridge.api-2.1.0.jar<br/>com.liferay.faces.bridge.impl-2.0.0.jar |   2.0   |   1.2   | [JSR 329](https://www.jcp.org/en/jsr/detail?id=329) (MR1) | *유지보수 릴리스 1(MR1)에 대한 지원을 포함합니다.*                         |
 | 1.x                                                                                                                                                           | N/A                                                                                      |   1.0   |   1.2   |    [JSR 301](https://www.jcp.org/en/jsr/detail?id=301)    | *N/A(해당 없음) Liferay Faces Bridge는 JSR 301을 구현한 적이 없습니다.* |
 
 
@@ -52,7 +52,7 @@ JSR 286(Portlet 2.0) 및 JSR 362(Portlet 3.0)의 참조 구현인 [Apache Pluto]
 
 ## Liferay 얼굴 포털
 
-[Liferay Portal](https://liferay.dev/-/portal)에서 제공하는 JSP 태그를 기반으로 하는 JSF 구성 요소 모음을 제공합니다.
+[Liferay Portal](https://liferay.dev/-/portal) 에서 제공하는 JSP 태그를 기반으로 하는 JSF 구성 요소 모음을 제공합니다.
 
 | 브랜치                                                                | 예제 아티팩트                            | 라이프레이 포털 API&nbsp;&nbsp; | &nbsp;&nbsp;포틀릿 API | &nbsp;&nbsp;JSF API |
 | ------------------------------------------------------------------ | ---------------------------------- |:------------------------:|:-------------------:|:-------------------:|

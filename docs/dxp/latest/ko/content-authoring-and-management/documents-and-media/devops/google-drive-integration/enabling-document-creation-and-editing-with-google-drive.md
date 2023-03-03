@@ -36,7 +36,7 @@ Liferay와 Google 드라이브의 통합을 활성화하려면 다음 단계를 
 1. Google 프로젝트의 OAuth 2 *클라이언트 ID* 및 *클라이언트 암호*을 입력합니다.
 
    ```{note}
-   [Google Picker API](https://developers.google.com/picker/docs)를 사용하면 사용자가 Liferay에서 Google에 저장된 사진, 비디오, 지도 및 문서를 선택할 수 있습니다. Liferay의 Google 드라이브용 플러그인을 사용할 때만 필요합니다. 자세한 내용은 [Google 드라이브 문서에 대한 링크 활성화](./enabling-links-to-google-drive-documents.md)를 참조하세요.
+   [Google Picker API](https://developers.google.com/picker/docs) 를 사용하면 사용자가 Liferay에서 Google에 저장된 사진, 비디오, 지도 및 문서를 선택할 수 있습니다. Liferay의 Google 드라이브용 플러그인을 사용할 때만 필요합니다. 자세한 내용은 [Google 드라이브 문서에 대한 링크 활성화](./enabling-links-to-google-drive-documents.md)를 참조하세요.
    ```
 
 1. *저장*을 클릭합니다.

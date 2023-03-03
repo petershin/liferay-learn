@@ -28,7 +28,7 @@ Commerce Catalogs는 단순, 그룹화, 가상 및 다이어그램의 네 가지
 
 **[가상 제품](./product-types/creating-a-virtual-product.md)**: 음악 파일, 전자 출판물, 서비스 및 보증과 같은 무형 제품.
 
-**[Shop by Diagram](./product-types/shop-by-diagram.md)**: 매장의 제품을 참조하는 BOM(Bill of Materials) 다이어그램에 속하는 구성 요소 부품입니다.
+** [다이어그램으로 쇼핑하기](./product-types/shop-by-diagram.md) **: 매장의 제품을 참조하는 BOM(Bill of Materials) 다이어그램에 속하는 구성 요소 부품입니다.
 
 ## 추가 정보
 

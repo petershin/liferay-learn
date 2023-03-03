@@ -17,13 +17,13 @@ Import-Package: javax.portlet,com.liferay.portal.kernel.util
 
 ## 자동 패키지 가져오기
 
-[자습서 예제( [모듈 프로젝트](./module-projects.md)참조)의 Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)기반 프로젝트 또는 [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md) 또는 Liferay Developer Studio 사용 [Bnd](http://bnd.bndtools.org/)을 사용하여 만든 프로젝트. Gradle 플러그인은 Bnd를 호출하여 Gradle 종속성을 읽고 가져오기를 해결할 수 있습니다. 프로젝트의 JAR을 빌드할 때 Bnd는 모듈이 사용하는 패키지를 감지하고 `META-INF/MANIFEST.MF` 파일을 생성하며 패키지를 `Import-Package` 헤더에 할당합니다. 그런 의미에서 빌드 스크립트라는 한 곳에서만 종속성을 정의해야 하므로 패키지 가져오기는 자동입니다.
+[자습서 예제( [모듈 프로젝트](./module-projects.md)참조)의 Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)기반 프로젝트 또는 [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md) 또는 Liferay Developer Studio 사용 [Bnd](http://bnd.bndtools.org/) 을 사용하여 만든 프로젝트. Gradle 플러그인은 Bnd를 호출하여 Gradle 종속성을 읽고 가져오기를 해결할 수 있습니다. 프로젝트의 JAR을 빌드할 때 Bnd는 모듈이 사용하는 패키지를 감지하고 `META-INF/MANIFEST.MF` 파일을 생성하며 패키지를 `Import-Package` 헤더에 할당합니다. 그런 의미에서 빌드 스크립트라는 한 곳에서만 종속성을 정의해야 하므로 패키지 가져오기는 자동입니다.
 
 ```{note}
-Liferay의 프로젝트 템플릿은 [타사 Gradle 플러그인](https://github.com/TomDmitriev/gradle-bundle-plugin)을 사용하여 Bnd를 호출합니다.
+Liferay의 프로젝트 템플릿은 [타사 Gradle 플러그인](https://github.com/TomDmitriev/gradle-bundle-plugin) 을 사용하여 Bnd를 호출합니다.
 ```
 
-예를 들어 [Gogo Command Sample](https://github.com/liferay/liferay-blade-samples/tree/7.3/liferay-workspace/extensions/gogo)의 `build.gradle`은 `com.liferay.portal.kernel` 및 `org.osgi.service.component.annotations`의 패키지를 사용합니다. 다음은 샘플의 `build.gradle` 파일입니다.
+예를 들어 [Gogo Command Sample](https://github.com/liferay/liferay-blade-samples/tree/7.3/liferay-workspace/extensions/gogo) 의 `build.gradle`은 `com.liferay.portal.kernel` 및 `org.osgi.service.component.annotations`의 패키지를 사용합니다. 다음은 샘플의 `build.gradle` 파일입니다.
 
 ```groovy
 dependencies {
@@ -71,7 +71,7 @@ Import-Package: [... existing package list,][add the package here]
 
 ### 자바 API 패키지
 
-Java Portlet과 같은 Java API용 패키지는 [의미상 버전 관리](./semantic-versioning.md)가 아니지만 [이식 가능한 Java 계약](https://www.osgi.org/portable-java-contract- 정의/). 각 API의 계약은 만족하는 JSR을 지정합니다. 이러한 API를 사용하는 모듈은 API 계약에 대한 요구 사항을 지정해야 합니다. 계약 요구 사항은 가져온 API 패키지와 모듈의 관계를 정의합니다. 실행 중인 시스템이 정확한 계약을 제공하지 *않으면* 모듈이 확인되지 않습니다. 누락된 패키지를 해결하는 것이 실행 중에 비호환성 오류를 처리하는 것보다 낫습니다.
+Java Portlet과 같은 Java API용 패키지는 [의미상 버전 관리](./semantic-versioning.md)가 아니지만 [이식 가능한 Java 계약](https://www.osgi.org/portable-java-contract- 정의/) . 각 API의 계약은 만족하는 JSR을 지정합니다. 이러한 API를 사용하는 모듈은 API 계약에 대한 요구 사항을 지정해야 합니다. 계약 요구 사항은 가져온 API 패키지와 모듈의 관계를 정의합니다. 실행 중인 시스템이 정확한 계약을 제공하지 *않으면* 모듈이 확인되지 않습니다. 누락된 패키지를 해결하는 것이 실행 중에 비호환성 오류를 처리하는 것보다 낫습니다.
 
 [Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)기반 프로젝트는 Portable Java Contracts를 자동으로 지정합니다! 예를 들어 모듈이 Java Portlet API를 사용하고 Java Portlet 2.0 아티팩트에 대해 컴파일하는 경우 패키지에 대한 계약 요구 사항이 모듈의 매니페스트에 추가됩니다.
 

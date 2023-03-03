@@ -67,7 +67,7 @@ echo "[Liferay Cloud] Take thread dumps"
 main
 ```
 
-이 스크립트는 `liferay` 서비스의 `$LIFERAY_HOME/data/` 폴더(기본적으로 이름이 `thread_dumps/` 임)에 새 폴더를 생성한 다음 각각 스레드 덤프 세트를 포함하는 여러 타임스탬프 하위 폴더를 생성합니다. 기본적으로 약 60초 간격의 타임스탬프가 있는 *4개의 하위 폴더* 을 만들고 각 하위 폴더를 약 10초 간격으로 *6개의 스레드 덤프* 로 채웁니다. 스레드 덤프는 [jstack 유틸리티](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html)로 생성됩니다.
+이 스크립트는 `liferay` 서비스의 `$LIFERAY_HOME/data/` 폴더(기본적으로 이름이 `thread_dumps/` 임)에 새 폴더를 생성한 다음 각각 스레드 덤프 세트를 포함하는 여러 타임스탬프 하위 폴더를 생성합니다. 기본적으로 약 60초 간격의 타임스탬프가 있는 *4개의 하위 폴더* 을 만들고 각 하위 폴더를 약 10초 간격으로 *6개의 스레드 덤프* 로 채웁니다. 스레드 덤프는 [jstack 유틸리티](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html) 로 생성됩니다.
 
 이 동작을 변경하기 위해 여러 번 편집할 수 있습니다.
 
@@ -115,7 +115,7 @@ main() {
 main
 ```
 
-이 스크립트는 `liferay` 서비스의 `$LIFERAY_HOME/data/` 폴더(기본적으로 이름이 `heap_dumps/` 임)에 새 폴더를 생성한 다음 새로운 단일 힙 덤프를 포함하는 타임스탬프 하위 폴더를 생성합니다. 힙 덤프는 [jmap 유틸리티](https://docs.oracle.com/javase/7/docs/technotes/tools/share/jmap.html)로 생성됩니다.
+이 스크립트는 `liferay` 서비스의 `$LIFERAY_HOME/data/` 폴더(기본적으로 이름이 `heap_dumps/` 임)에 새 폴더를 생성한 다음 새로운 단일 힙 덤프를 포함하는 타임스탬프 하위 폴더를 생성합니다. 힙 덤프는 [jmap 유틸리티](https://docs.oracle.com/javase/7/docs/technotes/tools/share/jmap.html) 로 생성됩니다.
 
 첫 줄의 경로 끝에 있는 `heap_dumps/` 을 변경하여 스레드 덤프가 저장되는 디렉터리의 이름을 변경할 수 있습니다. 그러나 *백업을 통해 액세스할 수 있도록 폴더를 `data/` 폴더* 안에 보관해야 합니다.
 

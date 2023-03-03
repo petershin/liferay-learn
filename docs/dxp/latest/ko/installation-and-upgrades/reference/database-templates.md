@@ -1,6 +1,6 @@
 # 데이터베이스 템플릿
 
-다음은 다양한 데이터베이스를 Liferay DXP용 내장 데이터 소스로 구성하기 위한 템플릿(예: [포털 속성](./portal-properties.md) 및 [Docker 환경 변수](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file))입니다.
+다음은 다양한 데이터베이스를 Liferay DXP용 내장 데이터 소스로 구성하기 위한 템플릿(예: [포털 속성](./portal-properties.md) 및 [Docker 환경 변수](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) )입니다.
 
 ## MariaDB
 

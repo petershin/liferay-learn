@@ -21,7 +21,7 @@ Liferay Cloud의 데이터베이스 및 백업 서비스는 버전 5.xx에서 �
 
 백업에서 데이터를 복원하면 데이터베이스 서비스 및 모든 종속 서비스(Liferay 포함)가 중단됩니다. 그러나 백업 서비스 버전 5.xx에서는 복원 동작이 먼저 별도의 새로운 데이터베이스 인스턴스 및 볼륨을 시작한 다음 준비가 되면 새 인스턴스로 전환할 수 있습니다. 이렇게 하면 인스턴스의 가동 중지 시간이 최소화됩니다.
 
-이 전략을 사용하려면 [`LCP_BACKUP_RESTORE_STRATEGY` 환경 변수](../platform-services/backup-service/backup-service-overview.md#environment-variables-reference)의 값을 `PREPARE_AND_SWAP` 로 설정합니다.
+이 전략을 사용하려면 [`LCP_BACKUP_RESTORE_STRATEGY` 환경 변수](../platform-services/backup-service/backup-service-overview.md#environment-variables-reference) 의 값을 `PREPARE_AND_SWAP` 로 설정합니다.
 
 ## 백업 업로드 재시도 구성
 

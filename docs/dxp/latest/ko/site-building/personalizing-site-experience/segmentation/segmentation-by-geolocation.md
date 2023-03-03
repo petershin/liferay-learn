@@ -2,11 +2,11 @@
 
 {bdg-secondary}`사용 가능한 Liferay DXP 7.4 U44+/GA44+`
 
-지리적 사이트별로 *세그먼트* 을 구성하여 다른 페이지를 동적으로 표시하거나 사용자 국가에 따라 콘텐츠를 표시할 수 있습니다. 다른 페이지를 표시하려면 [경험](../experience-personalization/content-page-personalization.md#understanding-how-experiences-work)을 사용하고 페이지에 특정 콘텐츠를 표시하려면 [컬렉션](../experience-personalization/personalizing-collections.md)을 사용할 수 있습니다.
+지리적 사이트별로 *세그먼트* 을 구성하여 다른 페이지를 동적으로 표시하거나 사용자 국가에 따라 콘텐츠를 표시할 수 있습니다. 다른 페이지를 표시하려면 [경험](../experience-personalization/content-page-personalization.md#understanding-how-experiences-work) 을 사용하고 페이지에 특정 콘텐츠를 표시하려면 [컬렉션](../experience-personalization/personalizing-collections.md)을 사용할 수 있습니다.
 
 ## 지리적 사이트로 세그먼트 생성
 
-먼저 [사용자 세그먼트 생성](./creating-and-managing-user-segments.md#creating-user-segments)의 단계에 따라 *사용자 세그먼트* 을 생성합니다.
+먼저 [사용자 세그먼트 생성](./creating-and-managing-user-segments.md#creating-user-segments) 의 단계에 따라 *사용자 세그먼트* 을 생성합니다.
 
 1. 생성되면 *IP Geocoder Country* 세션 속성을 캔버스로 끌어다 놓습니다.
 

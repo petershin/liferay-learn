@@ -2,13 +2,13 @@
 
 {bdg-primary}`구독`
 
-Process Builder의 워크플로 디자이너는 워크플로 프로세스 정의를 만들기 위한 그래픽 인터페이스입니다. 편리한 끌어서 놓기 인터페이스를 사용하면 [XML 정의를 직접 작성](../../developer-guide/crafting-xml-workflow-definitions)하는 것보다 작업 흐름 설계가 더 쉬워집니다. 제어판에서 액세스할 수 있습니다 &rarr; 작업 흐름 &rarr; 프로세스 빌더.
+Process Builder의 워크플로 디자이너는 워크플로 프로세스 정의를 만들기 위한 그래픽 인터페이스입니다. 편리한 끌어서 놓기 인터페이스를 사용하면 [XML 정의를 직접 작성](../../developer-guide/crafting-xml-workflow-definitions) 하는 것보다 작업 흐름 설계가 더 쉬워집니다. 제어판에서 액세스할 수 있습니다 &rarr; 작업 흐름 &rarr; 프로세스 빌더.
 
 ![노드를 디자이너 캔버스로 끌어다 놓습니다.](./workflow-designer-overview/images/01.png)
 
 
 ```{tip}
-또는 Process Builder의 소스 보기에서 XML 정의를 작성하거나 업로드할 수 있습니다. [워크플로우 관리](../managing-workflows.md#uploading-a-new-workflow-definition)를 참조하십시오.
+또는 Process Builder의 소스 보기에서 XML 정의를 작성하거나 업로드할 수 있습니다. [워크플로우 관리](../managing-workflows.md#uploading-a-new-workflow-definition) 를 참조하십시오.
 ```
 
 워크플로 디자이너는 [개 워크플로 노드](./workflow-nodes.md) 유형을 모두 지원합니다.

@@ -17,7 +17,7 @@ uuid: e50ef81a-3790-4f62-a187-48b891c0fccf
 ```
 
 ```{important}
-자세한 내용은 [유지 관리 모드 및 지원 중단 정책](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation)을 참조하십시오.
+자세한 내용은 [유지 관리 모드 및 지원 중단 정책](https://help.liferay.com/hc/ko/articles/360015767952-Maintenance-Mode-and-Deprecation) 을 참조하십시오.
 ```
 
 ## 더 이상 사용되지 않는 기능 가용성
@@ -43,7 +43,7 @@ uuid: e50ef81a-3790-4f62-a187-48b891c0fccf
 | 중앙 인증 서비스(CAS) | 번들 | 7.2에서 더 이상 사용되지 않습니다. [SAML 기반 인증](../../securing-liferay/configuring-sso/authenticating-with-saml.md)으로 마이그레이션합니다. |
 | 동적 데이터 목록 | 번들 | Liferay 7.4에서 Liferay 개체로 대체됩니다. |
 | Elasticsearch 6 커넥터 | 삭제됨 | Elasticsearch 7 커넥터로 대체되었습니다. |
-| 플래시 위젯 | 삭제됨 | 직접적인 교체가 없습니다. [FlashPlayer 수명 종료](https://www.adobe.com/products/flashplayer/end-of-life.html)는 2020년 12월 31일입니다. |
+| 플래시 위젯 | 삭제됨 | 직접적인 교체가 없습니다. [FlashPlayer 수명 종료](https://www.adobe.com/products/flashplayer/end-of-life.html) 는 2020년 12월 31일입니다. |
 | Internet Explorer 11(IE11) 브라우저 지원 | 번들 | IE11 지원이 활성화된 Microsoft Edge로 전환하세요. |
 | JAAS 지원 | 번들 | 직접적인 교체가 없습니다. |
 | JQuery 기본 글로벌 Liferay 변수 | 번들(비활성화) | jQuery 타사 [시스템 설정](../../../system-administration/configuring-liferay/system-settings에서 `Enable jQuery` 속성을 `true`로 설정하여 이전 동작을 다시 가져올 수 있습니다. .md). |
@@ -56,7 +56,7 @@ uuid: e50ef81a-3790-4f62-a187-48b891c0fccf
 | 여론 조사 | 번들 | Forms 보고서로 대체되었습니다. |
 | 프로젝트 템플릿: project-templates-activator | 보관된 [GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions) | 교체 없음. |
 | 프로젝트 템플릿: project-templates-freemarker-portlet | 보관된 [GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions) | 교체 없음. |
-| 화면 | Github - iOS: [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0), Android: [5.1.0](https://github.com/liferay /liferay-screens/releases/tag/5.1.0-android) | [모바일 SDK](https://help.liferay.com/hc/en-us/articles/360020447511-Mobile-SDK) 및 [헤드리스 API](../../../headless-delivery /using-liferay-as-a-headless-platform.md). |
+| 화면 | Github - iOS: [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0) , Android: [5.1.0](https://github.com/liferay /liferay-screens/releases/tag/5.1.0-android) | [모바일 SDK](https://help.liferay.com/hc/ko/articles/360020447511-Mobile-SDK) 및 [헤드리스 API](../../../headless-delivery /using-liferay-as-a-headless-platform.md). |
 | *도구* 범주의 검색 위젯(클래식) | 번들 | 7.1에서 더 이상 사용되지 않습니다. *검색* 범주의 [검색 위젯](../../../using-search/search-pages-and-widgets/search-results/search-results.md)으로 대체되었습니다. |
 | SOAP 웹 서비스 | 번들(비활성화) | Axis Servlet(예: `http://localhost:8080/api/axis/`에 서비스 게시)은 이 포털 속성 설정 `axis.servlet.enabled`로 활성화할 수 있습니다. Liferay `*SOAP` 클래스는 더 이상 사용되지 않습니다. |
 | 테마: 협만 | 보관됨 | 직접적인 교체가 없습니다. |
@@ -69,8 +69,8 @@ uuid: e50ef81a-3790-4f62-a187-48b891c0fccf
 이전 버전에서 업그레이드하는 경우 이전 Liferay 버전에서 더 이상 사용되지 않는 기능도 고려해야 할 수 있습니다.
 
 * [7.2 지원 중단 및 유지 관리 모드로 이동된 기능](./maintenance-mode-and-deprecations-in-7-2.md)
-* [7.1 지원 중단](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0 지원 중단](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+* [7.1 지원 중단](https://help.liferay.com/hc/ko/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+* [7.0 지원 중단](https://help.liferay.com/hc/ko/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 
 ## 7.3에서 유지 관리 모드로 이동한 기능

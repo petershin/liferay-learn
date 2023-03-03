@@ -41,7 +41,7 @@ Liferay Cloud로의 마이그레이션의 주요 단계는 다음과 같습니�
 
 ## Liferay Cloud로 마이그레이션해야 하는 이유는 무엇입니까?
 
-Liferay Cloud로 마이그레이션하면 [클러스터링](./ using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md), [로드 밸런싱](infrastructure-and-operations/networking/load-balancer.md) 및 [auto-scaling ](./manage-and-optimize/auto-scaling.md) 즉시 사용할 수 있습니다. 내장된 [Git 및 Jenkins와의 통합](./getting-started.md#accelerated-development-with-built-in-ci-cd)도 개발 프로세스를 간소화합니다. 이를 통해 프로덕션 인스턴스를 더 쉽게 배포하고 개발할 수 있으며 요구 사항에 더 유연하고 사용자에게 더 안정적입니다.
+Liferay Cloud로 마이그레이션하면 [클러스터링](./ using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md), [로드 밸런싱](infrastructure-and-operations/networking/load-balancer.md) 및 [자동 크기 조정](./manage-and-optimize/auto-scaling.md) 즉시 사용할 수 있습니다. 내장된 [Git 및 Jenkins와의 통합](./getting-started.md#accelerated-development-with-built-in-ci-cd) 도 개발 프로세스를 간소화합니다. 이를 통해 프로덕션 인스턴스를 더 쉽게 배포하고 개발할 수 있으며 요구 사항에 더 유연하고 사용자에게 더 안정적입니다.
 
 ## 사전에 무엇을 준비해야 합니까?
 
@@ -49,7 +49,7 @@ Liferay Cloud로 마이그레이션하면 [클러스터링](./ using-the-liferay
 
 ### 미리 계획
 
-마이그레이션을 준비하기 위해 수행해야 할 첫 번째 중요한 작업은 미리 계획하고 시간을 예약하는 것입니다. 데이터베이스 관리자와 협력하여 마이그레이션 단계가 완료되면 전환할 시간과 [마이그레이션의 두 번째 단계](./migrating-to-liferay-cloud/creating- data-backup-files.md#freeze-the-data)(데이터베이스 및 문서 라이브러리용 백업 파일 생성).
+마이그레이션을 준비하기 위해 수행해야 할 첫 번째 중요한 작업은 미리 계획하고 시간을 예약하는 것입니다. 데이터베이스 관리자와 협력하여 마이그레이션 단계가 완료되면 전환할 시간과 [마이그레이션의 두 번째 단계](./migrating-to-liferay-cloud/creating- data-backup-files.md#freeze-the-data) (데이터베이스 및 문서 라이브러리용 백업 파일 생성).
 
 미리 마이그레이션 단계를 검토하여 무엇을 기대하고 마이그레이션을 완료하는 데 얼마나 걸릴지 알 수 있습니다.
 
@@ -57,16 +57,16 @@ Liferay Cloud로 마이그레이션하면 [클러스터링](./ using-the-liferay
 
 또한 마이그레이션 단계를 위해 로컬 시스템에 필요한 도구가 있는지 확인해야 합니다.
 
-* [Git](https://git-scm.com/): 마이그레이션 전체에서 변경 사항을 커밋하고 Liferay Cloud에 푸시하는 데 사용할 수 있도록 Git을 설치해야 합니다.
-* 리포지토리 호스팅 서비스 계정: Liferay Cloud 빌드를 위해 변경 사항을 푸시하고 제출하려면 이러한 웹 사이트 중 하나의 계정이 있어야 합니다. [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/)또는 [GitLab](https://about.gitlab.com/)계정을 사용할 수 있습니다.
-* [Liferay 패치 도구](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html): 마이그레이션의 첫 번째 단계에 대한 패치 및 핫픽스 정보를 확인하려면 패치 도구가 필요합니다.
-* 파일 압축 소프트웨어: Windows를 로컬 시스템의 OS로 사용하는 경우 압축 파일을 압축/압축 해제하려면 파일 압축 소프트웨어(예: [7-Zip](https://www.7-zip.org/))도 필요합니다.
+* [Git](https://git-scm.com/) : 마이그레이션 전체에서 변경 사항을 커밋하고 Liferay Cloud에 푸시하는 데 사용할 수 있도록 Git을 설치해야 합니다.
+* 리포지토리 호스팅 서비스 계정: Liferay Cloud 빌드를 위해 변경 사항을 푸시하고 제출하려면 이러한 웹 사이트 중 하나의 계정이 있어야 합니다. [GitHub](https://github.com/) , [Bitbucket](https://bitbucket.org/) 또는 [GitLab](https://about.gitlab.com/) 계정을 사용할 수 있습니다.
+* [패치 도구 설치](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) : 마이그레이션의 첫 번째 단계에 대한 패치 및 핫픽스 정보를 확인하려면 패치 도구가 필요합니다.
+* 파일 압축 소프트웨어: Windows를 로컬 시스템의 OS로 사용하는 경우 압축 파일을 압축/압축 해제하려면 파일 압축 소프트웨어(예: [7-Zip](https://www.7-zip.org/) )도 필요합니다.
 
 이러한 도구를 설치한 후에는 익숙해지는 데 시간이 걸릴 수 있습니다.
 
 예를 들어 Git을 처음 사용하는 경우 마이그레이션에 적용하기 전에 공식 Git 자료 [](https://git-scm.com/doc) 참조 문서, 명령 치트 시트 등 포함)를 보거나 독립적으로 사용하는 연습을 할 수 있습니다. Git은 이 마이그레이션 가이드에서 사용된 것 이상의 기능을 갖춘 강력한 버전 제어 도구입니다.
 
-Liferay Cloud로의 마이그레이션에는 사용자 정의 코드, 모듈 및 테마를 특히 프로젝트를 위한 Liferay Workspace로 이동하는 것도 포함됩니다. [Workspace를 처음 사용하는 경우 효과적으로 사용하는 방법을 배우고](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html)수도 있습니다.
+Liferay Cloud로의 마이그레이션에는 사용자 정의 코드, 모듈 및 테마를 특히 프로젝트를 위한 Liferay Workspace로 이동하는 것도 포함됩니다. [Liferay 작업 공간이란 무엇입니까?](https://learn.liferay.com/dxp/latest/ko/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 수도 있습니다.
 
 ### 환경 준비
 
@@ -78,4 +78,4 @@ Liferay Cloud로의 마이그레이션에는 사용자 정의 코드, 모듈 및
 
 ## 마이그레이션을 시작하려면 어떻게 해야 합니까?
 
-마이그레이션을 위해 로컬 Liferay DXP 인스턴스 및 [리포지토리](#prepare-the-environment)에 대한 액세스 권한이 있는지 확인하십시오. 그런 다음 시작할 준비가 되면 [1단계: DXP 버전 일치](./migrating-to-liferay-cloud/matching-dxp-versions.md)부터 시작합니다.
+마이그레이션을 위해 로컬 Liferay DXP 인스턴스 및 [리포지토리](#prepare-the-environment) 에 대한 액세스 권한이 있는지 확인하십시오. 그런 다음 시작할 준비가 되면 [1단계: DXP 버전 일치](./migrating-to-liferay-cloud/matching-dxp-versions.md)부터 시작합니다.

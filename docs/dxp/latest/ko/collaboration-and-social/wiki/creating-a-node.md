@@ -2,7 +2,7 @@
 
 단일 DXP 사이트에서 더 많은 wiki 페이지가 생성됨에 따라 추가 wiki 노드를 생성하면 그에 따라 wiki 페이지를 구성할 수 있는 느슨한 구조가 제공될 수 있습니다. 사용자는 다양한 주제를 다루는 기사를 분류하기 위해 노드를 생성할 수 있습니다.
 
-[필수 권한](./wiki-permissions.md) (최소 _노드 추가_ 및 _권한_)이 있는 인증된 사용자만 노드를 생성할 수 있습니다. 일반적인 DXP 역할 및 권한에 대해 자세히 알아보려면 [역할 및 권한](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions)을 참조하십시오.
+[필수 권한](./wiki-permissions.md) (최소 _노드 추가_ 및 _권한_)이 있는 인증된 사용자만 노드를 생성할 수 있습니다. 일반적인 DXP 역할 및 권한에 대해 자세히 알아보려면 [역할 및 권한](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) 을 참조하십시오.
 
 ## 새 노드 생성
 

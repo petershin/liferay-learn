@@ -5,14 +5,14 @@
 ```{tip}
 이후 7.4 DXP 업데이트 및 Portal GA 릴리스에 추가된 기능에 대해 알아보려면 릴리스 정보를 참조하십시오.
 
-Liferay DXP: 릴리스 정보는 [고객 포털의 Liferay DXP 릴리스 정보 페이지](https://customer.liferay.com/dxp-release-notes)에서 확인할 수 있습니다.
+Liferay DXP: 릴리스 정보는 [고객 포털의 Liferay DXP 릴리스 정보 페이지](https://customer.liferay.com/dxp-release-notes) 에서 확인할 수 있습니다.
 
-Liferay Portal: 릴리스 정보는 Liferay 커뮤니티 사이트에서 [릴리스 발표 블로그](https://liferay.dev/blogs/-/blogs)로 제공됩니다. 예를 들어 [Liferay Portal 7.4 GA43 릴리스 발표](https://liferay.dev/blogs/-/blogs/liferay-portal-7-4-ga43-and-liferay-commerce-4-0-ga43-release).
+Liferay Portal: 릴리스 정보는 Liferay 커뮤니티 사이트에서 [릴리스 발표 블로그](https://liferay.dev/blogs/-/blogs) 로 제공됩니다. 예를 들어 [Liferay Portal 7.4 GA43 릴리스 발표](https://liferay.dev/blogs/-/blogs/liferay-portal-7-4-ga43-and-liferay-commerce-4-0-ga43-release) .
 ```
 
 ## Elasticsearch 7 통합
 
-Elasticsearch 7은 Liferay 7.4에서 지원됩니다. 지원되는 최소 버전, 클라이언트 버전 및 지원되는 최신 Elasticsearch 버전을 포함한 최신 정보는 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 을 확인하십시오.
+Elasticsearch 7은 Liferay 7.4에서 지원됩니다. 지원되는 최소 버전, 클라이언트 버전 및 지원되는 최신 Elasticsearch 버전을 포함한 최신 정보는 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 을 확인하십시오.
 
 ![Elasticsearch 7.15는 Liferay DXP 7.4 GA1에서 실행되도록 지원됩니다.](./whats-new-in-search-for-74/images/03.png)
 
@@ -48,7 +48,7 @@ Liferay 7.4부터 서버 관리자는 재색인 작업의 범위를 특정 [가�
 
 <!-- * If configured in the Object, a display page can be shown when the Object Entry is clicked in Search Results. -->
 
-Liferay 객체 및 검색에 대한 자세한 내용은 [Liferay 객체 검색](./searching-for-content.md#searching-for-liferay-objects)을 참조하십시오.
+Liferay 객체 및 검색에 대한 자세한 내용은 [Liferay 객체 검색](./searching-for-content.md#searching-for-liferay-objects) 을 참조하십시오.
 
 ## 튜닝 검색
 
@@ -64,7 +64,7 @@ DXP Liferay 7.4부터 결과 순위 및 동의어 집합 데이터가 Liferay �
 
 ## Liferay 엔터프라이즈 검색(LES)
 
-> **[LES 가입자](https://www.liferay.com/products/dxp/enterprise-search)**
+> ** [LES 가입자](https://www.liferay.com/products/dxp/enterprise-search) **
 
 ### LES 설치 간소화
 

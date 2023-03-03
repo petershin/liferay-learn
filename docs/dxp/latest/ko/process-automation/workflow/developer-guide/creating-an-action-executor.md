@@ -59,7 +59,7 @@ Groovy 작업 논리를 워크플로 정의 `<script>` 요소에 직접 작성�
    ```
 
 ```{note}
-편의를 위해 'ActionExecutor'의 'activate' 메서드는 E5C9 단일 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition)를 참조하십시오.
+편의를 위해 'ActionExecutor'의 'activate' 메서드는 E5C9 단일 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) 를 참조하십시오.
 ```
 
 ## 액션 실행자 테스트
@@ -82,7 +82,7 @@ Acme E5C9 Action Executor를 사용하려면 블로그 항목과 함께 사용�
 
    워크플로우 프레임워크는 상태를 보류 중으로 설정합니다. 이 시점부터 작업 실행기의 논리를 사용하여 상태 업데이트가 이루어집니다.
 
-1. [워크플로우에서 블로그 항목 승인](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task).
+1. [워크플로우에서 블로그 항목 승인](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task) .
 
    ![이 승인 또는 거부는 E5C9 Action Executor에 의해 수행됩니다.](./creating-an-action-executor/images/01.png)
 

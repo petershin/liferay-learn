@@ -72,7 +72,7 @@ PortletMVC4Spring 애플리케이션에는 `WEB-INF` 폴더에 이러한 설명�
 </servlet-mapping>
 ```
 
-[`ViewRendererServlet`](https://liferay.github.io/portletmvc4spring/apidocs/com/liferay/portletmvc4spring/ViewRendererServlet.html).  포틀릿 요청을 서블릿 요청으로 변환하고 Spring Web MVC 인프라와 JSP, Thymeleaf, Velocity 등에 대한 인프라의 렌더러를 사용하여 보기를 렌더링할 수 있습니다.
+[`ViewRendererServlet`](https://liferay.github.io/portletmvc4spring/apidocs/com/liferay/portletmvc4spring/ViewRendererServlet.html) .  포틀릿 요청을 서블릿 요청으로 변환하고 Spring Web MVC 인프라와 JSP, Thymeleaf, Velocity 등에 대한 인프라의 렌더러를 사용하여 보기를 렌더링할 수 있습니다.
 
 필터 및 필터 매핑은 필요에 따라 서블릿 보기를 전달하고 포함하도록 설정됩니다.
 
@@ -232,7 +232,7 @@ Liferay의 프로젝트 원형은 이 모든 상용구 코드를 생성합니다
 
 `<role-mapper/>` 요소는 포틀릿을 기본 Liferay DXP 사용자 역할과 연결합니다.
 
-[`liferay-portlet-app[version]2.dtd` 파일](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) 는 `liferay-portlet.xml` 파일을 정의합니다.
+[`liferay-portlet-app [version]2.dtd` 파일](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) 는 `liferay-portlet.xml` 파일을 정의합니다.
 
 ## liferay-display.xml
 
@@ -249,7 +249,7 @@ Liferay의 프로젝트 원형은 이 모든 상용구 코드를 생성합니다
 </display>
 ```
 
-자세한 내용은 [`liferay-display-[version].dtd` 파일](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) 를 참조하십시오.
+자세한 내용은 [`liferay-display- [version].dtd` 파일](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) 를 참조하십시오.
 
 애플리케이션 컨텍스트를 살펴볼 때입니다.
 
@@ -377,9 +377,9 @@ com.liferay.portal.kernel.servlet.filters.invoker
 
 포틀릿 애플리케이션 WAR 파일을 배포할 때 [WAB 생성기](../../../reference/deploying-wars-wab-generator.md)는 지정된 OSGi 메타데이터를 결과 웹 애플리케이션 번들(WAB)에 추가합니다. Liferay의 런타임 프레임워크에 배포됩니다.
 
-[`liferay-plugin-package-[버전].dtd` 파일](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html)은 `liferay-plugin-package.properties` 파일.
+[`liferay-plugin-package- [버전].dtd` 파일](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) 은 `liferay-plugin-package.properties` 파일.
 
 ## 추가 정보
 
 * [PortletMVC4Spring 주석](./portletmvc4spring-annotations.md)
-* [PortletMVC4Spring으로 마이그레이션 \(도움말 센터\)](https://help.liferay.com/hc/en-us/articles/360030614052-Migrating-to-PortletMVC4Spring)
+* [PortletMVC4Spring으로 마이그레이션 \(도움말 센터\)](https://help.liferay.com/hc/ko/articles/360030614052-Migrating-to-PortletMVC4Spring)

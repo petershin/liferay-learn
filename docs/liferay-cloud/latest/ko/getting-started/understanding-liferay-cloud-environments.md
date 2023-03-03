@@ -16,7 +16,7 @@ Liferay Cloud 프로젝트는 각각 다른 목적(예: 개발, 스테이징, �
 
 다른 환경은 다른 지역에 있을 수 있습니다. 예를 들어 유럽에 엔지니어링 팀이 있지만 대부분의 고객은 북미에 있는 회사의 경우 개발 환경은 프랑크푸르트에, 생산 환경은 오레곤에 둘 수 있습니다. 사용자의 요청에 가까운 사이트에 있으면 네트워크 대기 시간이 향상됩니다.
 
-다음은 현재 사용 가능한 [Liferay Cloud 지역 목록](https://help.liferay.com/hc/en-us/articles/360019177512)입니다.
+다음은 현재 사용 가능한 [Liferay Cloud 지역 목록](https://help.liferay.com/hc/ko/articles/360019177512) 입니다.
 
 ![그림 2: 환경을 다른 사이트에서 호스팅할 수 있습니다.](./understanding-liferay-cloud-environments/images/02.png)
 

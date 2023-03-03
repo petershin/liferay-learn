@@ -24,7 +24,7 @@ OSGi 서비스를 재정의하려면 다음 단계를 따르세요.
 
    * **Cardinality**: 참조가 바인딩할 수 있고 바인딩해야 하는 서비스 인스턴스의 수
 
-   서비스의 [참조 정책](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicy.html), [참조 정책 옵션](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicyOption.html)및 [카디널리티](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferenceCardinality.html) 는 새 서비스를 채택하기 위한 구성 요소의 조건을 함께 결정합니다.
+   서비스의 [참조 정책](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicy.html) , [참조 정책 옵션](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicyOption.html) 및 [카디널리티](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferenceCardinality.html) 는 새 서비스를 채택하기 위한 구성 요소의 조건을 함께 결정합니다.
 
 1. 재정의 중인 서비스에서 구현한 것과 동일한 인터페이스를 사용하는 새 서비스를 만듭니다.
 

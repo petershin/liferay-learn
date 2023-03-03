@@ -92,13 +92,13 @@ Liferay 7.0-7.2에서 오류는 보다 일반적인 `org.elasticsearch.client.tr
 
 Elasticsearch 로그에 관련 오류가 표시됩니다.
 
-Liferay 7.3 및 7.4에서 [Elasticsearch 7](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.4) 로그가 인쇄됩니다.
+Liferay 7.3 및 7.4에서 [Elasticsearch 7](https://help.liferay.com/hc/ko/articles/360016511651#Liferay-DXP-7.4) 로그가 인쇄됩니다.
 
 ```
 [2021-06-04T18:09:11,925][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [es-node1] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=0.0.0.0/0.0.0.0:9200, remoteAddress=/192.168.0.17:41104}
 ```
 
-Liferay 7.0-7.2에서 [Elasticsearch 6/7](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.2-Elasticsearch) 로그가 인쇄됩니다.
+Liferay 7.0-7.2에서 [Elasticsearch 6/7](https://help.liferay.com/hc/ko/articles/360016511651#Liferay-DXP-7.2-Elasticsearch) 로그가 인쇄됩니다.
 
 ```
 [2021-06-04T18:11:13,045][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] received plaintext traffic on an encrypted channel, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:34346}
@@ -219,7 +219,7 @@ Liferay 7.0-7.2에서 오류는 `org.elasticsearch.client.transport.NoNodeAvaila
 [2021-06-07T17:48:31,554][WARN ][o.e.t.TcpTransport       ] [es-node1] SSL/TLS request received but SSL/TLS is not enabled on this node, got (16,3,3,1), [Netty4TcpChannel{localAddress=/192.168.0.17:9300, remoteAddress=/192.168.0.17:40646}], closing connection
 ```
 
-`elasticsearch.yml` 을 열고 `xpack.security.enabled` 이 `false`로 설정되지 않았는지 확인합니다. [Securing Elasticsearch](../securing-elasticsearch.md) 기사에 따라 암호화된 통신을 사용하도록 HTTP 및 전송 계층이 구성되었는지 확인하십시오.
+`elasticsearch.yml` 을 열고 `xpack.security.enabled` 이 `false`로 설정되지 않았는지 확인합니다. [Elasticsearch 보안](../securing-elasticsearch.md) 기사에 따라 암호화된 통신을 사용하도록 HTTP 및 전송 계층이 구성되었는지 확인하십시오.
 
 ## Liferay와 Elasticsearch는 다른 인증 기관에서 서명한 인증서를 사용하고 있습니다.
 
@@ -244,7 +244,7 @@ TCP를 통해 서버에 연결할 때 Liferay 7.0-7.2에서 해당 Elasticsearch
 [2021-06-07T18:19:49,623][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:41820}
 ```
 
-스택의 모든 노드(예: Liferay, Elasticsearch 및 Kibana)가 동일한 인증 기관(CA)에서 서명한 인증서를 사용하고 CA의 인증서(공개 키)가 클라이언트 환경에 있는지 확인하십시오. 예를 들어 `sslTruststorePath` 또는 `sslCertificateAuthoritiesPath` 설정이 [Securing Elasticsearch 설명서](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2)에 따라 구성되었는지 확인하십시오.
+스택의 모든 노드(예: Liferay, Elasticsearch 및 Kibana)가 동일한 인증 기관(CA)에서 서명한 인증서를 사용하고 CA의 인증서(공개 키)가 클라이언트 환경에 있는지 확인하십시오. 예를 들어 `sslTruststorePath` 또는 `sslCertificateAuthoritiesPath` 설정이 [Securing Elasticsearch 설명서](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2) 에 따라 구성되었는지 확인하십시오.
 
 ```{tip}
 인증서 파일을 열고 "Issuer Name" 또는 "Issued by" 항목을 찾습니다. 이러한 항목은 발급자 CA에 대한 정보를 보유합니다.
@@ -332,7 +332,7 @@ javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
 javax.net.ssl.SSLException: No PSK available. Unable to resume.
 ```
 
-[Elasticsearch 모니터링](../../../liferay-enterprise-search/monitoring-elasticsearch.md#troubleshooting-the-monitoring-setup)을 참조하십시오.
+[Elasticsearch 모니터링](../../../liferay-enterprise-search/monitoring-elasticsearch.md#troubleshooting-the-monitoring-setup) 을 참조하십시오.
 
 ## IOException: 데이터가 개체 ID가 아닙니다.
 
@@ -389,7 +389,7 @@ javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.pro
 ```{warning}
 프로덕션 환경에서 SSL 확인 모드를 'none'으로 설정하지 마십시오.
 
-SSL 확인에 대한 자세한 내용은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html#transport-tls-ssl-settings)를 참조하세요. 모드 설정.
+SSL 확인에 대한 자세한 내용은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html#transport-tls-ssl-settings) 를 참조하세요. 모드 설정.
 ```
 
 Liferay와 Elasticsearch 노드 간에 유사한 문제가 발생할 수 있습니다. Liferay는 Elasticsearch 노드 인증서가 신뢰할 수 없는 CA에서 서명된 경우(예: 자체 서명된 인증서를 사용하는 경우) 다음과 같은 오류를 발생시킵니다.

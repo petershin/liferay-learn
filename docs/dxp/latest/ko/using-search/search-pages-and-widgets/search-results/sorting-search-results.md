@@ -1,6 +1,6 @@
 # 검색 결과 정렬
 
-[검색 결과](./search-results.md) 위젯에 표시되는 검색 결과는 기본적으로 [관련성 점수](./search-results.md#search-results-relevance) (검색 엔진 [에 의해 계산됨)별로](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)됩니다. 정렬 위젯을 사용하여 사용자는 반환된 결과의 순서를 제어할 수 있습니다.
+[검색 결과](./search-results.md) 위젯에 표시되는 검색 결과는 기본적으로 [관련성 점수](./search-results.md#search-results-relevance) (검색 엔진 [에 의해 계산됨)별로](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html) 됩니다. 정렬 위젯을 사용하여 사용자는 반환된 결과의 순서를 제어할 수 있습니다.
 
 [검색 페이지](../working-with-search-pages/search-pages.md) 에 위젯을 추가하여 결과 정렬을 시작합니다.
 
@@ -51,7 +51,7 @@
 각 정렬 옵션에는 _인덱싱된 필드 이름_, _표시 레이블_및 _순서_의 세 가지 설정이 있습니다.
 
 
-**색인 필드 이름:** 정렬할 색인 필드의 `fieldName` 을 입력합니다. 대부분의 경우 이것은 [키워드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) 필드입니다. 다른 허용 가능한 옵션은 `날짜` 및 [숫자 데이터 유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html)입니다. 정렬 위젯을 사용하여 `텍스트` 필드가 작동하도록 강제하는 방법도 있습니다(아래 참조).
+**색인 필드 이름:** 정렬할 색인 필드의 `fieldName` 을 입력합니다. 대부분의 경우 이것은 [키워드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) 필드입니다. 다른 허용 가능한 옵션은 `날짜` 및 [숫자 데이터 유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html) 입니다. 정렬 위젯을 사용하여 `텍스트` 필드가 작동하도록 강제하는 방법도 있습니다(아래 참조).
 
 **표시 레이블:** 구성 중인 정렬 유형에 대해 표시된 레이블을 설정합니다.
 
@@ -98,7 +98,7 @@
 },
 ```
 
-접미사가 `_sortable`이고 올바른 정렬 유형(`키워드`)이 있는 해당 필드가 있습니다. 정렬 가능한 필드는 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search)을 통해 도착했습니다.
+접미사가 `_sortable`이고 올바른 정렬 유형(`키워드`)이 있는 해당 필드가 있습니다. 정렬 가능한 필드는 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) 을 통해 도착했습니다.
 
 ```properties
 index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
@@ -140,7 +140,7 @@ index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 
 {bdg-secondary}`사용 가능 7.2 FP12+, 7.3 FP2+, 7.4(모든 업데이트)`
 
-[중첩된 DDM 필드 액세스](../search-facets/custom-facet.md#accessing-nested-ddm-fields)에 설명된 대로 DDM 필드는 Liferay 7.2 SP3+/FP8+(및 모든 Liferay 7.3 버전)에서 [중첩된 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 가 되었습니다. 7.2 및 7.3의 최신 수정 팩 및 GA 릴리스에서는 이러한 중첩 필드를 설명하기 위해 [Elasticsearch 중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 이 지원됩니다.
+[중첩된 DDM 필드 액세스](../search-facets/custom-facet.md#accessing-nested-ddm-fields) 에 설명된 대로 DDM 필드는 Liferay 7.2 SP3+/FP8+(및 모든 Liferay 7.3 버전)에서 [중첩된 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 가 되었습니다. 7.2 및 7.3의 최신 수정 팩 및 GA 릴리스에서는 이러한 중첩 필드를 설명하기 위해 [Elasticsearch 중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 이 지원됩니다.
 
 Elasticsearch 문서의 루트에 있는 `ddm__keyword__*` 필드에 의존하는 정렬 구성은 계속 유효합니다. 검색 프레임워크 자체는 중첩 필드 유형을 고려하여 조정되었습니다. 더 이상 문서의 루트에 있지 않더라도 정렬 위젯의 _필드_ 구성에서 평소와 같이 이러한 필드를 사용하십시오.
 

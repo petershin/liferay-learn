@@ -32,7 +32,7 @@
 1. 적용 가능한 패치를 설치 [하여 설치를 원하는 패치 수준으로 되돌](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md).
 
 ```{tip}
-설치를 특정 패치 수준으로 복원하려는 경우 편리한 사이트에 패치를 저장하는 것이 좋습니다. 언제든지 [Customer Portal](https://customer.liferay.com/downloads)에서 수정 팩을 다시 다운로드할 수 있습니다.
+설치를 특정 패치 수준으로 복원하려는 경우 편리한 사이트에 패치를 저장하는 것이 좋습니다. 언제든지 [Customer Portal](https://customer.liferay.com/downloads) 에서 수정 팩을 다시 다운로드할 수 있습니다.
 ```
 
 ## 핫픽스 되돌리기

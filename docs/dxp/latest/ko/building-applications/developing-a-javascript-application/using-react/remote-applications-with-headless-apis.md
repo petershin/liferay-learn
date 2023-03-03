@@ -46,7 +46,7 @@
 
 ## CRUD 애플리케이션 설정
 
-1. [CRUD 애플리케이션](./liferay-j4x7.zip)을 다운로드하고 압축을 풉니다.
+1. [CRUD 애플리케이션](./liferay-j4x7.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-javascript-application/using-react/liferay-j4x7.zip -O

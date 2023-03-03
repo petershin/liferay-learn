@@ -15,7 +15,7 @@
 1. 사이트에 대해 *이름* 을 입력합니다.
 
    ```{note}
-   [비공개 페이지](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages)가 시스템에 활성화된 경우 사이트 템플릿에서 상속된 모든 페이지가 비공개인지 확인할 수 있습니다. .
+   [비공개 페이지](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) 가 시스템에 활성화된 경우 사이트 템플릿에서 상속된 모든 페이지가 비공개인지 확인할 수 있습니다. .
    ```
 
 1. 사이트 생성을 시작하려면 *저장* 을 클릭하십시오.

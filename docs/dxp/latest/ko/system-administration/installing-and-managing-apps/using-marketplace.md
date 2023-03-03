@@ -8,7 +8,7 @@ Liferay Marketplace는 앱 공유, 탐색 및 다운로드를 위한 허브입�
 
 ![Liferay Marketplace 홈 페이지는 새 앱을 강조 표시하고 범주별로 앱을 나열하며 검색 기능을 제공합니다.](./using-marketplace/images/01.png)
 
-Marketplace 플러그인을 사용하면 제어판에서 Marketplace를 사용할 수 있습니다. 플러그인은 DXP Tomcat Bundle에 내장되어 있지만 애플리케이션 서버의 DXP 설치에도 설치할 수 있습니다. 여전히 설치 시 Marketplace를 설치해야 하는 경우 [부록: Marketplace 플러그인 설치](#appendix-installing-the-marketplace-plugin)을 참조하십시오.
+Marketplace 플러그인을 사용하면 제어판에서 Marketplace를 사용할 수 있습니다. 플러그인은 DXP Tomcat Bundle에 내장되어 있지만 애플리케이션 서버의 DXP 설치에도 설치할 수 있습니다. 여전히 설치 시 Marketplace를 설치해야 하는 경우 [부록: Marketplace 플러그인 설치](#appendix-installing-the-marketplace-plugin) 을 참조하십시오.
 
 ## 마켓플레이스 방문
 
@@ -62,7 +62,7 @@ Marketplace는 친숙한 앱 스토어 경험을 제공합니다. 앱은 페이�
 ## 앱 구매
 
 ```{warning}
-프로덕션 등급 환경에서는 [Marketplace 웹사이트](https://web.liferay.com/marketplace)를 통해서만 앱을 구매하세요. 제어판에서 구매한 앱은 자동 배포를 사용하여 자동으로 다운로드 및 설치됩니다. 자동 배포용으로 설계되지 않은 앱은 클래스 로딩 문제 및 메모리 누수를 일으킬 수 있습니다.
+프로덕션 등급 환경에서는 [Marketplace 웹사이트](https://web.liferay.com/marketplace) 를 통해서만 앱을 구매하세요. 제어판에서 구매한 앱은 자동 배포를 사용하여 자동으로 다운로드 및 설치됩니다. 자동 배포용으로 설계되지 않은 앱은 클래스 로딩 문제 및 메모리 누수를 일으킬 수 있습니다.
 ```
 
 앱 구매 단계는 다음과 같습니다.
@@ -89,7 +89,7 @@ DXP Tomcat 번들을 사용하는 경우 Marketplace 플러그인이 번들에 �
 
 Marketplace 플러그인을 설치하려면 다음 단계를 따르세요.
 
-1. [Marketplace 플러그인을 다운로드합니다](https://www.liferay.com/marketplace/download).
+1. [Marketplace 플러그인을 다운로드합니다](https://www.liferay.com/marketplace/download) .
 
 2. 플러그인(`.lpkg` 파일)을 [Liferay Home](../../installation-and-upgrades/reference/liferay-home.md) 의 `배포` 폴더에 복사하거나 [App Manager](./managing-apps/using-the-app-manager.md)를 사용하여 설치하여 배포합니다.
 

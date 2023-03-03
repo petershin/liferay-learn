@@ -80,7 +80,7 @@ Product information:
 
 ## 수동 구성
 
-패치 도구 속성 파일을 편집합니다. `auto-discovery` 명령은 기본적으로 `default.properties` 파일을 생성하거나 지정한 파일(예: [Patching Profile](#using-patching-profiles))을 생성합니다.
+패치 도구 속성 파일을 편집합니다. `auto-discovery` 명령은 기본적으로 `default.properties` 파일을 생성하거나 지정한 파일(예: [Patching Profile](#using-patching-profiles) )을 생성합니다.
 
 ### 일반 속성
 

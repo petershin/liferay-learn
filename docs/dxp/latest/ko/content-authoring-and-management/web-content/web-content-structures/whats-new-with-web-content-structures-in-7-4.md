@@ -106,7 +106,7 @@ Structure Builder에서 서로 옆에 있는 두 개의 양식 필드를 추가�
 
 새로운 데이터 엔진 지원 구조를 사용하면 내보내기 프로세스가 JSON에서 구조 키를 제거합니다. 즉, 정의를 가져오면(예: 새 사이트로) 새 구조 키가 생성됩니다. 내보내기-가져오기 프로세스에서 구조 키를 유지하거나 새 사용자 지정 키를 제공하려는 경우 내보낸 JSON을 편집해야 합니다.
 
-[내보낸 JSON](#structure-definition-source-changes)에 사용자 정의 구조 키를 추가하려면,
+[내보낸 JSON](#structure-definition-source-changes) 에 사용자 정의 구조 키를 추가하려면,
 
 1. 내보낸 JSON 파일을 엽니다(예: `Structure_my structure_42153_20220721144913685.json`).
 1. `"dataDefinitionField"` 요소 앞에 `"dataDefinitionKey"` 요소를 추가합니다.

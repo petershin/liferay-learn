@@ -20,9 +20,9 @@ client-extensions/browser-based-client-extensions.md
 
 클라이언트 확장을 사용하면 다음을 수행할 수 있습니다.
 
-* Liferay의 특정 코드에 의존할 필요 없이 사용자 정의 JavaScript 또는 CSS [을 페이지에 적용](#browser-based-client-extensions).
+* Liferay의 특정 코드에 의존할 필요 없이 사용자 정의 JavaScript 또는 CSS [을 페이지에 적용](#browser-based-client-extensions) .
 * Liferay 페이지의 [사용자 정의 요소](./client-extensions/browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 에 원격으로 호스팅되는 응용 프로그램 포함
-* 동일한 구성 또는 개체를 클라이언트 확장으로 변환하여 여러 환경에 [방식으로 적용하는 프로세스를 단순화](#configuration-as-code).
+* 동일한 구성 또는 개체를 클라이언트 확장으로 변환하여 여러 환경에 [방식으로 적용하는 프로세스를 단순화](#configuration-as-code) .
 * 선택한 프로그래밍 언어 또는 기술을 사용하여 외부 피드 또는 사용자 정의 인증 서버와 같은 Liferay 외부에서 실행되는 [사용자 지정 서비스](#custom-service-client-extensions) 또는 [기능](#lambda-client-extensions) 호출
 
 ## 클라이언트 확장의 유형
@@ -68,7 +68,7 @@ Liferay 7.4에서는 구성을 클라이언트 확장 유형으로 사용할 수
 스케줄러 클라이언트 확장은 현재 Liferay 7.4의 **베타 기능**입니다. 사용 가능한 기능이 일시적으로 제한됩니다.
 ```
 
-스케줄러 클라이언트 확장은 잘 알려진 Cron 표현식으로 구성할 수 있는 예약된 간격으로 실행할 작업을 생성하기 위한 것입니다. 이들과 함께 코드를 배포하여 이러한 간격으로 실행하거나 [데이터 커넥터 클라이언트 확장](#data-connector-client-extensions) 또는 외부 API(예: [Salesforce](https://www.salesforce.com))를 사용하여 Liferay와 데이터를 동기화할 수 있습니다.
+스케줄러 클라이언트 확장은 잘 알려진 Cron 표현식으로 구성할 수 있는 예약된 간격으로 실행할 작업을 생성하기 위한 것입니다. 이들과 함께 코드를 배포하여 이러한 간격으로 실행하거나 [데이터 커넥터 클라이언트 확장](#data-connector-client-extensions) 또는 외부 API(예: [Salesforce](https://www.salesforce.com) )를 사용하여 Liferay와 데이터를 동기화할 수 있습니다.
 
 ### 데이터 커넥터 클라이언트 확장
 

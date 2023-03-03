@@ -82,7 +82,7 @@ _Pending_ 에서 _Processing_으로 주문을 진행하려면 _Accept Order_ 버
 
 ### 미정
 
-_Pending_ 탭은 주문을 보관하는 장소 역할을 합니다. 이는 모든 발주 주문이 즉시 전송되지 않는 비즈니스 컨텍스트에 유용합니다. 구매자가 주문을 하면 주문이 _Pending_ 탭으로 이동합니다. 여기서 판매자는 주문을 [수정, 취소 또는 전송할 수 있습니다](./processing-an-order.md#commerce-20-and-below).
+_Pending_ 탭은 주문을 보관하는 장소 역할을 합니다. 이는 모든 발주 주문이 즉시 전송되지 않는 비즈니스 컨텍스트에 유용합니다. 구매자가 주문을 하면 주문이 _Pending_ 탭으로 이동합니다. 여기서 판매자는 주문을 [수정, 취소 또는 전송할 수 있습니다](./processing-an-order.md#commerce-20-and-below) .
 
 ```{note}
 *Transmission Workflow*가 활성화된 경우 판매자가 주문을 거부하고 구매자에게 다시 보내는 경우에도 주문은 워크플로 프로세스 전체에서 *Pending* 탭에 남아 있습니다.
@@ -92,7 +92,7 @@ _Pending_ 탭은 주문을 보관하는 장소 역할을 합니다. 이는 모�
 
 ### 전송됨
 
-이 탭에서 주문 활동은 전적으로 판매자 측에서만 이루어집니다. 판매자가 [주문 상태 변경](./processing-an-order.md#commerce-20-and-below)(수동 또는 자동화를 통해)을 통해 _Pending_ 주문을 "_To Transmit_" 상태에서 다른 주문 상태로 전송합니다. . 이 시점에서 주문은 _Transmitted_ 탭으로 이동하고 구성된 경우 Microsoft의 Dynamics GP, Oracle의 NetSuite 또는 SAP와 같은 외부 시스템으로 전송됩니다. 그런 다음 판매자는 주문한 제품을 구매자에게 배송할 수 있습니다. 업데이트된 [주문 상태](./order-management-statuses-reference-guide.md), [배송 정보](../shipments/introduction-to-shipments.md)와 같은 추가 정보가 주문에 추가될 수도 있습니다. md) 및 예상 도착 시간.
+이 탭에서 주문 활동은 전적으로 판매자 측에서만 이루어집니다. 판매자가 [주문 상태 변경](./processing-an-order.md#commerce-20-and-below) (수동 또는 자동화를 통해)을 통해 _Pending_ 주문을 "_To Transmit_" 상태에서 다른 주문 상태로 전송합니다. . 이 시점에서 주문은 _Transmitted_ 탭으로 이동하고 구성된 경우 Microsoft의 Dynamics GP, Oracle의 NetSuite 또는 SAP와 같은 외부 시스템으로 전송됩니다. 그런 다음 판매자는 주문한 제품을 구매자에게 배송할 수 있습니다. 업데이트된 [주문 상태](./order-management-statuses-reference-guide.md), [배송 정보](../shipments/introduction-to-shipments.md)와 같은 추가 정보가 주문에 추가될 수도 있습니다. md) 및 예상 도착 시간.
 
 ![전송 탭](./orders-menu-reference-guide/images/04.png "전송 탭")
 

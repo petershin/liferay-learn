@@ -1,11 +1,11 @@
 # 개인 사이트
 
-기본적으로 Liferay는 모든 사용자에 대해 개인 사이트를 생성합니다. 각 사이트에는 내 프로필(공용) 및 내 대시보드(비공개)라는 두 개의 [페이지 세트](../creating-pages/understanding-pages/understanding-pages.md#page-sets)이 포함됩니다. 각 사용자는 개인 사이트의 유일한 구성원이며 이를 사용하여 콘텐츠를 표시하고 관리할 수 있습니다.
+기본적으로 Liferay는 모든 사용자에 대해 개인 사이트를 생성합니다. 각 사이트에는 내 프로필(공용) 및 내 대시보드(비공개)라는 두 개의 [페이지 세트](../creating-pages/understanding-pages/understanding-pages.md#page-sets) 이 포함됩니다. 각 사용자는 개인 사이트의 유일한 구성원이며 이를 사용하여 콘텐츠를 표시하고 관리할 수 있습니다.
 
 원하는 경우 포털 속성을 사용하여 [개인 사이트를 비활성화하거나 사용자](#customizing-personal-sites-with-portal-properties) 할 수 있습니다.
 
 ```{important}
-Liferay 7.4 U22+ 및 GA22+의 경우 새 Liferay 설치에는 대시보드 페이지를 포함하여 개인 페이지 생성을 비활성화하는 릴리스 기능 플래그가 포함됩니다. 개인 사이트에 대한 사용자 정의 대시보드 페이지를 수동으로 생성하려면 Liferay 시스템에 대해 개인 페이지를 활성화해야 합니다. 자세한 내용은 [비공개 페이지 활성화](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages)를 참조하세요.
+Liferay 7.4 U22+ 및 GA22+의 경우 새 Liferay 설치에는 대시보드 페이지를 포함하여 개인 페이지 생성을 비활성화하는 릴리스 기능 플래그가 포함됩니다. 개인 사이트에 대한 사용자 정의 대시보드 페이지를 수동으로 생성하려면 Liferay 시스템에 대해 개인 페이지를 활성화해야 합니다. 자세한 내용은 [비공개 페이지 활성화](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) 를 참조하세요.
 ```
 
 ```{tip}
@@ -41,7 +41,7 @@ Liferay 7.4 U22+ 및 GA22+의 경우 새 Liferay 설치에는 대시보드 페�
 개인 사이트에 대한 권한 및 역할은 아래에 표시된 동작을 따릅니다.
 
 - 관리자는 역할에서 권한을 제거하여 Liferay Portal의 권한 시스템을 통해 개인 사이트의 수정 가능한 부분을 사용자 정의할 수 있습니다(사용자 역할에서 관련 권한을 제거하여 모든 사용자가 무언가를 수정하지 못하도록 금지).
-- 사용자는 [고급 사용자 역할](../../users-and-permissions/roles-and-permissions/default-roles-reference.md#regular-roles)의 구성원일 때 자신의 개인 사이트를 관리하고 페이지와 애플리케이션을 수정할 수 있습니다.
+- 사용자는 [고급 사용자 역할](../../users-and-permissions/roles-and-permissions/default-roles-reference.md#regular-roles) 의 구성원일 때 자신의 개인 사이트를 관리하고 페이지와 애플리케이션을 수정할 수 있습니다.
 
 ## 포털 속성으로 개인 사이트 사용자 지정
 

@@ -2,7 +2,7 @@
 
 {bdg-secondary}`사용 가능한 Liferay 7.4+`
 
-사용자 정의 요소는 Liferay의 프런트 엔드 인프라를 사용하여 외부 애플리케이션을 Liferay 플랫폼에 등록하고 이를 위젯으로 렌더링하는 클라이언트 확장 유형입니다. 여러 경로를 포함하는 애플리케이션의 경우(예: [React Router](https://reactrouter.com/)) 원격 애플리케이션 속성을 정의하여 런타임 시 위젯에 사용되는 경로를 결정할 수 있습니다. 이러한 속성은 Liferay의 원격 앱 메뉴 또는 배포된 위젯의 구성 옵션을 통해 애플리케이션에 대해 설정할 수 있습니다.
+사용자 정의 요소는 Liferay의 프런트 엔드 인프라를 사용하여 외부 애플리케이션을 Liferay 플랫폼에 등록하고 이를 위젯으로 렌더링하는 클라이언트 확장 유형입니다. 여러 경로를 포함하는 애플리케이션의 경우(예: [React Router](https://reactrouter.com/) ) 원격 애플리케이션 속성을 정의하여 런타임 시 위젯에 사용되는 경로를 결정할 수 있습니다. 이러한 속성은 Liferay의 원격 앱 메뉴 또는 배포된 위젯의 구성 옵션을 통해 애플리케이션에 대해 설정할 수 있습니다.
 
 ```{warning}
 다른 유형의 클라이언트 확장과 동일한 방식으로 배포되는 사용자 지정 요소 또는 IFrame은 Liferay 7.4의 **베타 기능**입니다. 이 자습서에서는 사용자 지정 요소 원격 애플리케이션을 배포하는 데 다른 방법을 사용하며 향후 업데이트까지 여전히 권장되는 접근 방식입니다.
@@ -144,7 +144,7 @@ J1V3-Remote-App은 인스턴스화할 수 있으므로 각각 고유한 독립�
 
 ## `경로` 속성 사용
 
-자동 생성된 앱에는 `hello-world`, `hello-foo`, `hello-bar`의 세 가지 경로가 포함됩니다. 기본적으로 애플리케이션은 `hello-world` 경로를 사용합니다. 그러나 원격 애플리케이션 속성을 사용하여 대체 경로를 사용하도록 구성할 수 있습니다. [원격 앱 메뉴](#defining-a-route-property-via-the-remote-apps-menu) 또는 [위젯의 구성 옵션](#defining-a-route-property-via-widget-configuration)을 통해 이러한 속성을 설정할 수 있습니다.
+자동 생성된 앱에는 `hello-world`, `hello-foo`, `hello-bar`의 세 가지 경로가 포함됩니다. 기본적으로 애플리케이션은 `hello-world` 경로를 사용합니다. 그러나 원격 애플리케이션 속성을 사용하여 대체 경로를 사용하도록 구성할 수 있습니다. [원격 앱 메뉴](#defining-a-route-property-via-the-remote-apps-menu) 또는 [위젯의 구성 옵션](#defining-a-route-property-via-widget-configuration) 을 통해 이러한 속성을 설정할 수 있습니다.
 
 ### 원격 앱 메뉴를 통해 경로 속성 정의
 

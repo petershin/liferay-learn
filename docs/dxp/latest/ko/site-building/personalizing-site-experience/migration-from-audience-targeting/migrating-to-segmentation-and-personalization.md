@@ -16,9 +16,9 @@ Liferay 7.2부터 세분화 및 개인화 기능이 핵심 제품에 통합되�
   - 일부 사용자 지정 규칙에는 이에 상응하는 규칙이 있을 수 있습니다. 자세한 내용은 [사용자 세그먼트 마이그레이션](./migrating-user-segments.md) 을 참조하십시오.
 - 동등 항목이 없는 잠재고객 타겟팅 규칙의 경우 [이러한 규칙을 수동으로 마이그레이션해야 합니다](./manually-migrating-from-audience-targeting.md).
 - 규칙을 완전히 다시 구현해야 하는 경우 [세분화 개발 소개](../developer-guide/introduction-to-segmentation-development.md)의 정보를 따르십시오.
-- Liferay DXP [의 새로운 개인화 기능은 다른 도구를 사용하므로 디스플레이 위젯도 마이그레이션해야](./manually-migrating-from-audience-targeting.md#migrating-display-properties).
+- Liferay DXP [의 새로운 개인화 기능은 다른 도구를 사용하므로 디스플레이 위젯도 마이그레이션해야](./manually-migrating-from-audience-targeting.md#migrating-display-properties) .
 
-마지막으로 대상 대상 지정에서 행동 기반 기능을 마이그레이션해야 합니다. Liferay DXP 7.2+부터는 행동 기반 규칙이 Liferay Analytics Cloud를 사용하여 관리됩니다. 자세한 내용은 [Analytics Cloud 설명서](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)을 참조하십시오.
+마지막으로 대상 대상 지정에서 행동 기반 기능을 마이그레이션해야 합니다. Liferay DXP 7.2+부터는 행동 기반 규칙이 Liferay Analytics Cloud를 사용하여 관리됩니다. 자세한 내용은 [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html) 을 참조하십시오.
 
 ## 관련 정보
 

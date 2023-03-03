@@ -15,7 +15,7 @@ Liferay의 REST Connector to SharePoint는 SharePoint 라이브러리와 문서 
 * 접미사 또는 중간 와일드카드에 대한 쿼리는 포함에 대한 쿼리로 변환됩니다.
 * 댓글, 평가 및 SharePoint 폴더를 문서 및 미디어 루트 폴더로 사용하는 것은 지원되지 않습니다.
 
-REST 커넥터 작동 방식에 대한 자세한 내용은 [javadocs API 참조](https://docs.liferay.com/dxp/apps/sharepoint-rest/latest/javadocs/)을 참조하십시오.
+REST 커넥터 작동 방식에 대한 자세한 내용은 [javadocs API 참조](https://docs.liferay.com/dxp/apps/sharepoint-rest/latest/javadocs/) 을 참조하십시오.
 
 ## REST 커넥터 설치
 

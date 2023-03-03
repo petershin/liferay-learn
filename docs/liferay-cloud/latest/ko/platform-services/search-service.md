@@ -63,7 +63,7 @@ Elasticsearch를 구성하려면 `elasticsearch.yml` 구성 파일을 사용해�
 
 ## 환경 변수 참조
 
-Elasticsearch에 대한 모든 환경 변수 및 기타 구성 형식은 [공식 Elasticsearch 문서](https://www.elastic.co/guide/index.html)에 있습니다. 이러한 구성 및 환경 변수는 각각 `configs/{ENV}/config/` 디렉터리 및 `LCP.json`에서 설정할 수 있습니다. 예를 들면 다음과 같습니다.
+Elasticsearch에 대한 모든 환경 변수 및 기타 구성 형식은 [공식 Elasticsearch 문서](https://www.elastic.co/guide/index.html) 에 있습니다. 이러한 구성 및 환경 변수는 각각 `configs/{ENV}/config/` 디렉터리 및 `LCP.json`에서 설정할 수 있습니다. 예를 들면 다음과 같습니다.
 
 | 이름             | 가치              | 묘사                  |
 |:-------------- |:--------------- |:------------------- |

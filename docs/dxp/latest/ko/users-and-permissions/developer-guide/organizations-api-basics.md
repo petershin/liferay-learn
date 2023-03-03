@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. [Organizations API 기본 사항](./liferay-w2h3.zip)을 다운로드하고 압축을 풉니다.
+1. [Organizations API 기본 사항](./liferay-w2h3.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O

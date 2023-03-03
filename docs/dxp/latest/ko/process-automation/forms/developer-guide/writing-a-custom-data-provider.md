@@ -5,7 +5,7 @@ Liferay Forms 필드는 [데이터 공급자](../data-providers/data-providers-o
 REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확장점을 사용하여 고유한 확장 지점을 만드십시오.
 
 ```{note}
-여기에서 시연한 예제 데이터 공급자는 [GeoDataSource™ 사이트 검색 웹 서비스](https://www.geodatasource.com/web-service/location-search)에서 XML 데이터를 사용합니다. Liferay 직원의 API 키는 이 샘플에 하드 코딩되어 있습니다. 샘플을 남용하지 마십시오. 프로덕션 환경에서는 절대 사용하지 마십시오.
+여기에서 시연한 예제 데이터 공급자는 [GeoDataSource™ 사이트 검색 웹 서비스](https://www.geodatasource.com/web-service/location-search) 에서 XML 데이터를 사용합니다. Liferay 직원의 API 키는 이 샘플에 하드 코딩되어 있습니다. 샘플을 남용하지 마십시오. 프로덕션 환경에서는 절대 사용하지 마십시오.
 ```
 
 ## 사용자 지정 데이터 공급자 배포

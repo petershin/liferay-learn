@@ -5,7 +5,7 @@ uuid: e26e34b4-ca1b-490b-b911-4ef92ad123ea
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-A basic JavaScript client extension is a great place to start with developing your own client extensions. You can use a JS client extension to run your own JavaScript on any page in Liferay without worrying about any dependency on Liferay code or developing a theme. You'll use [Blade CLI](../../../tooling/blade-cli.md) to generate, build, and deploy your client extension.
+A basic JavaScript client extension is a great place to start with developing your own client extensions. You can use a JS client extension to run your own JavaScript on any page in Liferay without worrying about any dependency on Liferay code or developing a theme. You'll use a sample client extension (from a [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace)) to start with.
 
 ## Prerequisites
 
@@ -17,79 +17,81 @@ You must have these requirements ready in your development environment to begin 
    Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
    ```
 
-1. Install [Blade CLI](../../../tooling/blade-cli/installing-and-updating-blade-cli.md).
+1. Start up a running instance of Liferay to test your client extension with. You can quickly start up a Liferay instance for testing by [Starting with a Docker Image](../../../../getting-started/starting-with-a-docker-image.md).
 
-1. Prepare a Liferay Workspace for your development environment. You can use [Blade CLI](../../../tooling/liferay-workspace/creating-a-liferay-workspace.md#creating-a-liferay-workspace-with-blade-cli) to set this up quickly for your desired version of Liferay.
-
-1. You must also have a running instance of Liferay to test your client extension with. You can quickly start up a Liferay instance for testing by [Starting with a Docker Image](../../../../getting-started/starting-with-a-docker-image.md).
-
-Now you have all the necessary tools to deploy your first JS client extension.
-
-## Create the Client Extension with Blade CLI
-
-Blade CLI generates the skeleton for many types of client extensions, including JS extensions: 
-
-1. Open a command line in your Liferay Workspace and navigate to the `client-extensions/` folder:
-
-    ```bash
-    cd client-extensions
-    ```
-
-1. Run this command to invoke Blade CLI, filling in the desired name for the new folder to generate:
+1. Download and unzip the sample workspace:
 
    ```bash
-   blade create -t client-extension [new-folder-name]
+   curl -J -O https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.sample.workspace\&\v\=LATEST\&p\=zip
    ```
 
-   The tool shows a list of client extension types. 
+   ```bash
+   unzip com.sample.workspace-20230217.1154.zip
+   ```
 
-1. Use the arrow keys to highlight `globalJS` from the list of client extension types and press Enter.
+Now you have all the necessary tools and a JavaScript client extension included in the sample workspace.
 
-    ![Select globalJS from the provided list of client extension types.](./creating-your-first-javascript-client-extension/images/01.png)
+## Examine the Client Extension
 
-1. Enter the desired name for your client extension at the prompt.
+The JavaScript client extension is in the sample workspace's `client-extensions/sample-global-js/` folder. It is defined in the `client-extension.yaml` file in this folder:
 
-The Blade CLI tool creates a subfolder with your chosen name within `client-extensions/`. These files are inside of it:
+```yaml
+sample-global-js:
+    name: Sample Global JS
+    type: globalJS
+    url: global.js
+```
 
-* `client-extension.yaml`: A YAML file containing the basic definition of your client extension, including the `type` (`globalJS`), your chosen name, and a generated URL. Edit this file if you want to change any of this information for your client extension. *Note that you can add more client extension definitions to this YAML file if you want to build and deploy them together.*
+This YAML block defines the client extension with the ID `sample-global-js` and contains the key configurations for a JavaScript client extension, including the `type` and the JavaScript file to add. See the [JavaScript YAML configuration reference](../javascript-yaml-configuration-reference.md) for more information on the properties.
 
-* `src/global.js`: A JS file that automatically runs when a page is configured to use this client extension. This is the only source file in a JS client extension by default.
+It also contains the `assemble` YAML block:
 
-Now you have a basic client extension. Next, you'll see what this client extension does and how to adjust its behavior.
+```yaml
+assemble:
+    - from: assets
+      include: "**/*"
+      into: static
+```
 
-## Examine and Deploy the Client Extension
+This block specifies that everything in the `assets/` folder should be included as a static resource in the client extension `.zip` file once it is built. The JavaScript code that you add in a JavaScript client extension is used as a static resource in Liferay.
 
-By default, the `src/global.js` file contains this line of code:
+The `assets/global.js` file contains this line of code:
 
 ```js
-window.alert('Global JavaScript deployed.');
+window.alert('Sample Global JS deployed.');
 ```
 
 This causes an alert box to appear with the given message when you open the page. Add any additional JavaScript you want to run to this file.
 
-Then, deploy your client extension to your Liferay testing instance. If you are running Liferay from a Docker container, run this command from your client extension's root folder:
+## Deploy the Client Extension to Liferay
+
+Deploy your client extension to your Liferay testing instance. If you're using a Docker container, run this command from the client extension's folder in the sample workspace:
 
 ```bash
-blade gw deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-This builds and deploys your client extension to your Liferay's `deploy/` folder within your Docker container.
+This builds and deploys your client extension to Liferay's `deploy/` folder within your Docker container.
 
 ```{note}
 If you want to deploy your client extension to a Liferay Experience Cloud environment, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#) instead, and run the [`lcp deploy`](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#deploying-to-your-dxp-cloud-environment) command.
 ```
 
+```{tip}
+Run the command from the `client-extensions/` folder in your workspace instead to deploy all of the client extensions within it at once.
+```
+
 Confirm the deployment in your Liferay instance's console:
 
 ```
-STARTED my-global-js-client-extension_1.0.0
+STARTED sample-global-js_1.0.0
 ```
 
 Now that your client extension is successfully deployed, you must configure your Liferay instance to use it. 
 
 ## Use the Client Extension on a Page
 
-You must configure a page in your Liferay instance to use your deployed client extension. Follow these steps to see your JS in use:
+Configure a page in your Liferay instance to use your deployed client extension. Follow these steps to see your JavaScript in use:
 
 1. Log in to your running Liferay instance.
 
@@ -109,7 +111,7 @@ You must configure a page in your Liferay instance to use your deployed client e
 
 1. Optionally, publish the page for your JavaScript to execute on the page outside of Edit mode.
 
-Now your client extension is configured and you can see it in action. Navigate back to the page you configured, and you'll see the alert window pop up with a message from the client extension. If you want your JavaScript also to run when you view the page outside of Edit mode, you must publish the page.
+Now your client extension is configured and you can see it in action. Navigate back to the page you configured, and you'll see the alert window pop up with a message from the client extension. If you want your JavaScript to also run when you view the page outside of Edit mode, you must publish the page.
 
 ![This example client extension creates an alert message popup when the page is loaded.](./creating-your-first-javascript-client-extension/images/04.png)
 
@@ -119,6 +121,6 @@ If the alert window does not appear at first, try doing a hard refresh of the pa
 
 ## Next Steps
 
-Congratulations! You have successfully created and used your first JS client extension in Liferay. Next, try deploying other client extension types.
+Congratulations! You have successfully used your first JS client extension in Liferay. Next, try deploying other client extension types.
 
 * [Creating Your First CSS Client Extension](./creating-your-first-css-client-extension.md)

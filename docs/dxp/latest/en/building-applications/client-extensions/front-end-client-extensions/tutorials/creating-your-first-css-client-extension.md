@@ -5,7 +5,7 @@ uuid: a8159380-3119-46c5-be6e-d9e24e60c325
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-A basic CSS client extension is a great place to start with developing your own client extensions. You can use a CSS client extension to override styling on any page in Liferay without needing to develop a theme or depend on any Liferay code. You'll use the [Blade CLI](../../../tooling/blade-cli.md) to generate, build, and deploy your client extension along the way.
+A basic CSS client extension is a great place to start with developing your own client extensions. You can use a CSS client extension to override styling on any page in Liferay without needing to develop a theme or depend on any Liferay code. You'll use a sample client extension (from a [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace)) to start with.
 
 ## Prerequisites
 
@@ -17,59 +17,55 @@ You must have these requirements ready in your development environment to begin 
     Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
     ```
 
-1. Install the [Blade CLI](../../../tooling/blade-cli/installing-and-updating-blade-cli.md).
+1. Start up a running instance of Liferay to test your client extension with. You can quickly start up a Liferay instance for testing by [Starting with a Docker Image](../../../../getting-started/starting-with-a-docker-image.md).
 
-1. Prepare a Liferay Workspace for your development environment. You can use [Blade CLI](../../../tooling/liferay-workspace/creating-a-liferay-workspace.md#creating-a-liferay-workspace-with-blade-cli) to set this up quickly for your desired version of Liferay.
+1. Download and unzip the sample workspace:
 
-1. You must also have a running instance of Liferay to test your client extension with. You can quickly start up a Liferay instance for testing by [Starting with a Docker Image](../../../../getting-started/starting-with-a-docker-image.md).
+   ```bash
+   curl -J -O https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.sample.workspace\&\v\=LATEST\&p\=zip
+   ```
+
+   ```bash
+   unzip com.sample.workspace-20230217.1154.zip
+   ```
 
 Now you have all the necessary tools to deploy your first CSS client extension.
 
-## Create the Client Extension with Blade CLI
+## Examine and Modify the Client Extension
 
-Blade CLI can generate the skeleton for many types of client extensions, including CSS extensions. Follow these steps to get started:
+The CSS client extension is in the sample workspace's `client-extensions/sample-global-css/` folder. It is defined in the `client-extension.yaml` file in this folder:
 
-1. Open a command line in your Liferay Workspace and navigate to the `client-extensions/` folder:
+```yaml
+sample-global-css:
+    name: Sample Global CSS
+    type: globalCSS
+    url: global.css
+```
 
-    ```bash
-    cd client-extensions
-    ```
+This YAML block defines the client extension with the ID `sample-global-css` and contains the key configurations for a CSS client extension, including the `type` and the CSS file to add. See the [CSS YAML configuration reference](../css-yaml-configuration-reference.md) for more information on the available properties.
 
-1. Run this command to invoke Blade CLI, entering a name for the new folder:
+It also contains the `assemble` YAML block:
 
-   ```bash
-   blade create -t client-extension [new-folder-name]
-   ```
+```yaml
+assemble:
+    - from: assets
+      include: "**/*"
+      into: static
+```
 
-   The tool shows a list of client extension types to choose from.
+This block specifies that everything in the `assets/` folder should be included as a static resource in the client extension `.zip` file once it is built. The CSS file that you add in a CSS client extension is used as static resource in Liferay.
 
-1. Use the arrow keys to highlight `globalCSS` from the list of client extension types and press Enter. <!--TASK: Confirm Naming-->
-
-   ![Select globalCSS from the provided list of client extension types.](./creating-your-first-css-client-extension/images/01.png)
-
-1. Enter the desired name for your client extension at the prompt.
-
-The Blade CLI tool creates a subfolder with your chosen name within `client-extensions/`. These files are inside of it:
-
-* `client-extension.yaml`: A YAML file containing the basic definition of your client extension, including the `type` (`globalCSS`), your chosen name, and a generated URL. Edit this file if you want to change any of this information for your client extension. *Note that you can add more client extension definitions to this YAML file if you want to build and deploy them together.*
-
-* `src/global.css`: A CSS file that overrides other CSS on a page when it is configured to use this client extension. This is the only source file in a CSS client extension by default.
-
-Now you have a basic client extension. Next you'll see what this client extension does and how to adjust its behavior.
-
-## Modify and Deploy the Client Extension
-
-By default, the `src/global.css` file contains this code:
+The `assets/global.css` file contains this CSS:
 
 ```css
 body {
-    font-family: cursive;
+    color: #0054f0;
 }
 ```
 
-This causes all text on the page to appear in cursive font when the client extension is used.
+This modifies the `body` color for the page when the client extension is enabled.
 
-First, add a change to the background color for buttons. Open the `global.css` file and add a new block of CSS to it. Add a declaration block for the `.btn-primary` class and a declaration for the `background-color`: 
+Add a change to also modify the background color for buttons. Open the `global.css` file and add a new block of CSS to it. Add a declaration block for the `.btn-primary` class and a declaration for the `background-color`: 
 
 ```css
 .btn-primary {
@@ -77,22 +73,30 @@ First, add a change to the background color for buttons. Open the `global.css` f
 }
 ```
 
-Now deploy your client extension to your Liferay testing instance. If you're using a Docker container, run this command from your client extension's root folder:
+Now you're ready to deploy it.
+
+## Deploy the Client Extension to Liferay
+
+Deploy your client extension to your Liferay testing instance. If you're using a Docker container, run this command from your client extension's folder in the sample workspace:
 
 ```bash
-blade gw deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-This builds and deploys your client extension Liferay's `deploy/` folder inside your Docker container.
+This builds and deploys your client extension to Liferay's `deploy/` folder within your Docker container.
 
 ```{note}
 If you want to deploy your client extension to a Liferay Experience Cloud environment, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#) instead, and run the [`lcp deploy`](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#deploying-to-your-dxp-cloud-environment) command.
 ```
 
+```{tip}
+Run the command from the `client-extensions/` folder in your workspace instead to deploy all of the client extensions within it at once.
+```
+
 Confirm the deployment in your Liferay instance's console:
 
 ```
-STARTED my-global-css-client-extension_1.0.0
+STARTED sample-global-css_1.0.0
 ```
 
 Now that your client extension is deployed, you must configure your Liferay instance to use it. 
@@ -127,6 +131,6 @@ If the buttons on the page still show the default background color, try doing a 
 
 ## Next Steps
 
-Congratulations! You have successfully created and used your first CSS client extension in Liferay. Next, try deploying other client extension types.
+Congratulations! You have successfully used your first CSS client extension in Liferay. Next, try deploying other client extension types.
 
 * [Creating Your First JS Client Extension](./creating-your-first-javascript-client-extension.md)

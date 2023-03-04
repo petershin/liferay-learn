@@ -53,11 +53,11 @@ To add an action,
 
    | Type | Description |
    | :--- | :--- |
+   | Notification | Send email or user notifications using a predefined template. |
    | Add an Object Entry | Create entries in an active object. |
-   | Groovy Script | Execute custom [Groovy](https://groovy-lang.org/) scripts. |
-   | Notification | Send email notifications using a predefined template. |
    | Update an Object Entry | Update fields in the current object entry. |
    | Webhook | Deliver a payload to a URL. |
+   | Groovy Script | Execute custom [Groovy](https://groovy-lang.org/) scripts. |
 
    ```{important}
    Groovy script actions are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.

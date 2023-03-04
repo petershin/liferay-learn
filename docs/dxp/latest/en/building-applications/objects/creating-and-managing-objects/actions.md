@@ -19,17 +19,24 @@ Object actions define custom business logic that you can run manually or automat
 
 When using automatic triggers, Liferay listens for the event and then executes the operation according to predefined conditions. When using a manual trigger, Liferay adds the custom action to the Actions menu (![Actions Button](../../../images/icon-actions.png)) for object entries and generates a headless API for triggering it.
 
+![Add actions to object definitions.](./actions/images/01.png)
+
 Liferay Objects provides these action types:
 
 | Type | Description |
 | :--- | :--- |
-| [Add an Object Entry](./actions/understanding-action-types.md#add-an-object-entry) | Create entries in an active object. |
-| [Groovy Script](./actions/understanding-action-types.md#groovy-script) | Execute [Groovy](https://groovy-lang.org/) scripts. |
-| [Notification](./actions/understanding-action-types.md#notification) | Send email notifications using a predefined template. |
-| [Update an Object Entry](./actions/understanding-action-types.md#update-an-object-entry) | Update fields in the current object entry. |
-| [Webhook](./actions/understanding-action-types.md#webhook) | Deliver a payload to a URL. |
+| Notification | Send email or user notifications using a predefined template. |
+| Add an Object Entry | Create entries in an active object. |
+| Update an Object Entry | Update fields in the current object entry. |
+| Webhook | Deliver a payload to a URL. |
+| Groovy Script | Execute [Groovy](https://groovy-lang.org/) scripts. |
 
-![Add actions to object definitions.](./actions/images/01.png)
+```{important}
+Groovy script actions are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
+```
+
+<!--TASK: When client extensions docs are ready, mention being able to add Action Types and Notification Types.-->
+
 
 ::::{grid} 2
 :gutter: 3 3 3 3

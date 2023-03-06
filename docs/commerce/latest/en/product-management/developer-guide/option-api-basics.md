@@ -76,6 +76,18 @@ Once Liferay is running,
    java -classpath .:* Option_POST_ToInstance
    ```
 
+![The following option field types are available when creating an option.](./option-api-basics/images/02.png)
+
+| Field Type         | Value for API     |
+| :----------------- | :---------------- |
+| Text               | text              |
+| Select From List   | select            |
+| Single Selection   | radio             |
+| Multiple Selection | checkbox_multiple |
+| Date               | date              |
+| Numeric            | numeric           |
+| Boolean            | checkbox          |
+
 ## Examine the cURL Command
 
 The `Option_POST_ToInstance.sh` script calls the REST service with a cURL command.

@@ -8,7 +8,7 @@
 다른 유형의 클라이언트 확장과 동일한 방식으로 배포되는 사용자 지정 요소 또는 IFrame은 Liferay 7.4의 **베타 기능**입니다. 이 자습서에서는 사용자 지정 요소 원격 애플리케이션을 배포하는 데 다른 방법을 사용하며 향후 업데이트까지 여전히 권장되는 접근 방식입니다.
 ```
 
-이 자습서에서는 `hello-world`, `hello-foo`, `hello-bar`의 세 가지 경로가 있는 샘플 앱을 생성하는 Liferay의 `create_remote_app.sh` 스크립트를 사용하여 기본 React 애플리케이션을 만듭니다. 애플리케이션을 컴파일하고 `.js` 및 `.css` 파일을 호스팅한 후 애플리케이션을 Liferay에 등록하고 페이지 위젯으로 배포합니다. 마지막으로 각각의 대체 경로를 사용하도록 구성합니다.
+이 자습서에서는 `hello-world`, `hello-foo`, `hello-bar`의 세 가지 경로가 있는 샘플 앱을 생성하는 Liferay의 `create_custom_element.sh` 스크립트를 사용하여 기본 React 애플리케이션을 만듭니다. 애플리케이션을 컴파일하고 `.js` 및 `.css` 파일을 호스팅한 후 애플리케이션을 Liferay에 등록하고 페이지 위젯으로 배포합니다. 마지막으로 각각의 대체 경로를 사용하도록 구성합니다.
 
 ![대체 경로를 사용하여 기본 사용자 지정 요소 원격 응용 프로그램을 만들고 경로 속성을 사용하여 렌더링되는 항목을 구성합니다.](./using-routes-with-custom-elements/images/01.png)
 
@@ -16,7 +16,7 @@
 사용자 정의 요소 클라이언트 확장은 애플리케이션 구축, 패키징 및 호스팅 방식과 관련하여 불가지론적입니다. 이 자습서에서는 기본 라우팅을 사용하여 샘플 사용자 지정 요소 애플리케이션을 만드는 편리한 방법만 제공합니다.
 ```
 
-`create_remote_app.sh` 을 실행하려면 최신 버전 [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), [YARN](https://classic.yarnpkg.com/)이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
+`create_custom_element.sh` 을 실행하려면 최신 버전 [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), [YARN](https://classic.yarnpkg.com/)이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
 
 ## React 애플리케이션 생성, 구축 및 호스팅
 
@@ -29,7 +29,7 @@
 1. 별도의 터미널에서 이 명령을 실행하여 React 애플리케이션을 생성합니다.
 
    ```bash
-   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_remote_app.sh | bash -s j1v3-remote-app react
+   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s j1v3-remote-app react
    ```
 
 1. 애플리케이션이 성공적으로 생성되었는지 확인합니다.

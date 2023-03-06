@@ -8,24 +8,24 @@
 カスタム要素やIFrameを他のタイプのクライアント拡張と同じようにデプロイすることは、Liferay 7.4の**ベータ版機能**です。 このチュートリアルでは、カスタム要素のリモートアプリケーションを展開するための別の方法を使用していますが、将来のアップデートまでは、この方法が推奨されます。
 ```
 
-ここでは、Liferay の [`create_remote_app.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_remote_app.sh) スクリプトを使用して、基本的なリモートアプリケーションを作成します。 アプリケーションが生成されたら、そのコードをコンパイルして、 `.js` と `.css` ファイルをホストします。 ホストされたら、各ファイルのURLをコピーして、カスタム要素を作成するために使用します。 最後に、アプリケーションをウィジェットとしてサイトのページに配置することができます。
+ここでは、Liferay の [`create_custom_element.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_custom_element.sh) スクリプトを使用して、基本的なリモートアプリケーションを作成します。 アプリケーションが生成されたら、そのコードをコンパイルして、 `.js` と `.css` ファイルをホストします。 ホストされたら、各ファイルのURLをコピーして、カスタム要素を作成するために使用します。 最後に、アプリケーションをウィジェットとしてサイトのページに配置することができます。
 
-![create_remote_app.shスクリプトを使用して、簡単なReactアプリケーションを作成します。](./creating-a-basic-custom-element/images/01.png)
+![create_custom_element.shスクリプトを使用して、簡単なReactアプリケーションを作成します。](./creating-a-basic-custom-element/images/01.png)
 
 ```{note}
 カスタム要素クライアント拡張は、アプリケーションがどのように構築され、パッケージ化され、ホストされているかには関係ありません。 このチュートリアルは、カスタム要素アプリケーションのサンプルを作成する便利な方法のみを提供します。
 ```
 
-`create_remote_app.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/) 、 [NPM](https://www.npmjs.com/) 、および [YARN](https://classic.yarnpkg.com/) が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
+`create_custom_element.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/) 、 [NPM](https://www.npmjs.com/) 、および [YARN](https://classic.yarnpkg.com/) が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
 
-## `create_remote_app.sh` スクリプトを実行します。
+## `create_custom_element.sh` スクリプトを実行します。
 
-`create_remote_app.sh`を呼び出す際には、有効な HTML 要素名を指定し、目的の JavaScript フレームワーク（React や Vue など）を指定する必要があります。
+`create_custom_element.sh`を呼び出す際には、有効な HTML 要素名を指定し、目的の JavaScript フレームワーク（React や Vue など）を指定する必要があります。
 
 このコマンドを実行すると、Reactアプリケーションのコードが生成されます。
 
 ```bash
-curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_remote_app.sh | bash -s h5v7-remote-app react
+curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-remote-app react
 ```
 
 これは、カスタムHTML要素名(`h5v7-remote-app`)と目的のJavaScriptフレームワーク(`react`)の2つの引数でスクリプトを呼び出すものです。
@@ -83,7 +83,7 @@ h5v7-remote-app
 
 ## Reactアプリケーションの構築
 
-`create_remote_app.sh`を実行した後、新しい `h5v7-remote-app` フォルダに移動し、アプリケーションを構築します。
+`create_custom_element.sh`を実行した後、新しい `h5v7-remote-app` フォルダに移動し、アプリケーションを構築します。
 
 ```bash
 cd h5v7-remote-app

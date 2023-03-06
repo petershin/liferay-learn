@@ -8,24 +8,24 @@
 다른 유형의 클라이언트 확장과 동일한 방식으로 배포되는 사용자 지정 요소 또는 IFrame은 Liferay 7.4의 **베타 기능**입니다. 이 자습서에서는 사용자 지정 요소 원격 애플리케이션을 배포하는 데 다른 방법을 사용하며 향후 업데이트까지 여전히 권장되는 접근 방식입니다.
 ```
 
-여기에서 Liferay의 [`create_remote_app.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_remote_app.sh) 스크립트를 사용하여 기본 원격 애플리케이션을 생성합니다. 애플리케이션이 생성된 후 해당 코드를 컴파일하고 `.js` 및 `.css` 파일을 호스팅합니다. 호스팅되면 각 파일의 URL을 복사하고 이를 사용하여 맞춤 요소를 만듭니다. 마지막으로 응용 프로그램을 사이트 페이지에 위젯으로 배포할 수 있습니다.
+여기에서 Liferay의 [`create_custom_element.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_custom_element.sh) 스크립트를 사용하여 기본 원격 애플리케이션을 생성합니다. 애플리케이션이 생성된 후 해당 코드를 컴파일하고 `.js` 및 `.css` 파일을 호스팅합니다. 호스팅되면 각 파일의 URL을 복사하고 이를 사용하여 맞춤 요소를 만듭니다. 마지막으로 응용 프로그램을 사이트 페이지에 위젯으로 배포할 수 있습니다.
 
-![간단한 React 애플리케이션을 생성하려면 create_remote_app.sh 스크립트를 사용하세요.](./creating-a-basic-custom-element/images/01.png)
+![간단한 React 애플리케이션을 생성하려면 create_custom_element.sh 스크립트를 사용하세요.](./creating-a-basic-custom-element/images/01.png)
 
 ```{note}
 사용자 정의 요소 클라이언트 확장은 애플리케이션 구축, 패키징 및 호스팅 방식과 관련하여 불가지론적입니다. 이 자습서에서는 샘플 사용자 지정 요소 애플리케이션을 만드는 편리한 방법만 제공합니다.
 ```
 
-`create_remote_app.sh` 을 실행하려면 최신 버전 [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), [YARN](https://classic.yarnpkg.com/)이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
+`create_custom_element.sh` 을 실행하려면 최신 버전 [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), [YARN](https://classic.yarnpkg.com/)이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
 
-## `create_remote_app.sh` 스크립트 실행
+## `create_custom_element.sh` 스크립트 실행
 
-`create_remote_app.sh`을 호출할 때 유효한 HTML 요소 이름을 제공하고 원하는 JavaScript 프레임워크(즉, React 또는 Vue)를 지정해야 합니다.
+`create_custom_element.sh`을 호출할 때 유효한 HTML 요소 이름을 제공하고 원하는 JavaScript 프레임워크(즉, React 또는 Vue)를 지정해야 합니다.
 
 이 명령을 실행하여 React 애플리케이션의 코드를 생성합니다.
 
 ```bash
-curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_remote_app.sh | bash -s h5v7-remote-app react
+curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-remote-app react
 ```
 
 이렇게 하면 사용자 정의 HTML 요소 이름(`h5v7-remote-app`)과 원하는 JavaScript 프레임워크(`react`)의 두 가지 인수로 스크립트를 호출합니다.
@@ -83,7 +83,7 @@ h5v7-remote-app
 
 ## 반응 애플리케이션 구축
 
-`create_remote_app.sh`을 실행한 후 새 `h5v7-remote-app` 폴더로 이동하고 애플리케이션을 빌드합니다.
+`create_custom_element.sh`을 실행한 후 새 `h5v7-remote-app` 폴더로 이동하고 애플리케이션을 빌드합니다.
 
 ```bash
 cd h5v7-remote-app

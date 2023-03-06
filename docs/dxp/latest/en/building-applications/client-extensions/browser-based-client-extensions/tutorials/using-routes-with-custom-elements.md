@@ -11,7 +11,7 @@ Custom elements are a type of client extension that use Liferay's front-end infr
 Custom elements or IFrames being deployed in the same way as other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial uses a different way to deploy custom element remote applications, and it is still the recommended approach until a future update.
 ```
 
-In this tutorial, you'll create a basic React application using Liferay's `create_remote_app.sh` script, which generates a sample app with three routes: `hello-world`, `hello-foo`, `hello-bar`. After compiling the application and hosting its `.js` and `.css` files, you'll register the application with Liferay and deploy it as a page widget. Finally, you'll configure it to use each of the alternative routes.
+In this tutorial, you'll create a basic React application using Liferay's `create_custom_element.sh` script, which generates a sample app with three routes: `hello-world`, `hello-foo`, `hello-bar`. After compiling the application and hosting its `.js` and `.css` files, you'll register the application with Liferay and deploy it as a page widget. Finally, you'll configure it to use each of the alternative routes.
 
 ![Create a basic custom element remote appliaction with alternate routes and use the route property to configure which is rendered.](./using-routes-with-custom-elements/images/01.png)
 
@@ -19,7 +19,7 @@ In this tutorial, you'll create a basic React application using Liferay's `creat
 Custom element client extensions are agnostic regarding how applications are built, packaged, and hosted. This tutorial only offers a convenient way to create a sample custom element application with basic routing.
 ```
 
-Running `create_remote_app.sh` requires the latest versions of [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [YARN](https://classic.yarnpkg.com/). Before proceeding, ensure these tools are installed.
+Running `create_custom_element.sh` requires the latest versions of [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [YARN](https://classic.yarnpkg.com/). Before proceeding, ensure these tools are installed.
 
 ## Creating, Building, and Hosting the React Application
 
@@ -32,7 +32,7 @@ Running `create_remote_app.sh` requires the latest versions of [Node.JS](https:/
 1. Run this command in a separate terminal to generate the React application.
 
    ```bash
-   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_remote_app.sh | bash -s j1v3-remote-app react
+   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s j1v3-remote-app react
    ```
 
 1. Verify the application was created successfully.

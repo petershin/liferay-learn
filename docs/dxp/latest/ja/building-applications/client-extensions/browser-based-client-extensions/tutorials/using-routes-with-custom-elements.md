@@ -8,7 +8,7 @@
 カスタム要素やIFrameを他のタイプのクライアント拡張と同じようにデプロイすることは、Liferay 7.4の**ベータ版機能**です。 このチュートリアルでは、カスタム要素のリモートアプリケーションを展開するための別の方法を使用していますが、将来のアップデートまでは、この方法が推奨されます。
 ```
 
-このチュートリアルでは、Liferay の `create_remote_app.sh` スクリプトを使って、基本的な React アプリケーションを作成します。このスクリプトは、3つのルートを持つサンプルアプリを生成します： `hello-world`, `hello-foo`, `hello-bar`. アプリケーションをコンパイルし、その `.js` と `.css` ファイルをホストした後、アプリケーションを Liferay に登録し、ページウィジェットとしてデプロイすることになります。 最後に、それぞれの代替経路を使用するように設定します。
+このチュートリアルでは、Liferay の `create_custom_element.sh` スクリプトを使って、基本的な React アプリケーションを作成します。このスクリプトは、3つのルートを持つサンプルアプリを生成します： `hello-world`, `hello-foo`, `hello-bar`. アプリケーションをコンパイルし、その `.js` と `.css` ファイルをホストした後、アプリケーションを Liferay に登録し、ページウィジェットとしてデプロイすることになります。 最後に、それぞれの代替経路を使用するように設定します。
 
 ![代替ルートを持つ基本的なカスタム要素リモートアプリを作成し、ルートプロパティを使用して、どちらがレンダリングされるかを設定することができます。](./using-routes-with-custom-elements/images/01.png)
 
@@ -16,7 +16,7 @@
 カスタム要素クライアント拡張は、アプリケーションがどのように構築され、パッケージ化され、ホストされているかには関係ありません。 このチュートリアルでは、基本的なルーティングを持つサンプルカスタム要素アプリケーションを作成する便利な方法のみを提供します。
 ```
 
-`create_remote_app.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/) 、 [NPM](https://www.npmjs.com/) 、および [YARN](https://classic.yarnpkg.com/) が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
+`create_custom_element.sh` を実行するには、最新版の [Node.JS](https://nodejs.org/) 、 [NPM](https://www.npmjs.com/) 、および [YARN](https://classic.yarnpkg.com/) が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
 
 ## Reactアプリケーションの作成、ビルド、ホスティング
 
@@ -29,7 +29,7 @@
 1. 別の端末でこのコマンドを実行し、Reactアプリケーションを生成します。
 
    ```bash
-   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_remote_app.sh | bash -s j1v3-remote-app react
+   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s j1v3-remote-app react
    ```
 
 1. アプリケーションが正常に作成されたことを確認します。

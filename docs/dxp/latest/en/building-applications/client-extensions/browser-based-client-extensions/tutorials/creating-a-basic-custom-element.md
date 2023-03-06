@@ -11,24 +11,24 @@ Custom elements are a type of client extension that use Liferay's front-end infr
 Custom elements or IFrames being deployed in the same way as other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial uses a different way to deploy custom element remote applications, and it is still the recommended approach until a future update.
 ```
 
-Here you'll create a basic remote application using Liferay's [`create_remote_app.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_remote_app.sh) script. After the application is generated, you'll compile its code and host its `.js` and `.css` files. Once hosted, you'll copy each file's URLs and use them to create a custom element. Finally, you can deploy the application to site pages as a widget.
+Here you'll create a basic remote application using Liferay's [`create_custom_element.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_custom_element.sh) script. After the application is generated, you'll compile its code and host its `.js` and `.css` files. Once hosted, you'll copy each file's URLs and use them to create a custom element. Finally, you can deploy the application to site pages as a widget.
 
-![Use the create_remote_app.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
+![Use the create_custom_element.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
 
 ```{note}
 Custom element client extensions are agnostic regarding how applications are built, packaged, and hosted. This tutorial only offers a convenient way to create a sample custom element application.
 ```
 
-Running `create_remote_app.sh` requires the latest versions of [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [YARN](https://classic.yarnpkg.com/). Before proceeding, ensure these tools are installed.
+Running `create_custom_element.sh` requires the latest versions of [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [YARN](https://classic.yarnpkg.com/). Before proceeding, ensure these tools are installed.
 
-## Run the `create_remote_app.sh` Script
+## Run the `create_custom_element.sh` Script
 
-When calling `create_remote_app.sh`, you must provide a valid HTML element name and specify the desired JavaScript framework (i.e., React or Vue).
+When calling `create_custom_element.sh`, you must provide a valid HTML element name and specify the desired JavaScript framework (i.e., React or Vue).
 
 Run this command to generate the React application's code:
 
 ```bash
-curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_remote_app.sh | bash -s h5v7-remote-app react
+curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-remote-app react
 ```
 
 This calls the script with two arguments: a custom HTML element name (`h5v7-remote-app`) and the desired JavaScript framework (`react`).
@@ -86,7 +86,7 @@ The generated code includes three routes: `hello-world` (default), `hello-foo`, 
 
 ## Building the React Application
 
-After running `create_remote_app.sh`, navigate to the new `h5v7-remote-app` folder and build the application:
+After running `create_custom_element.sh`, navigate to the new `h5v7-remote-app` folder and build the application:
 
 ```bash
 cd h5v7-remote-app

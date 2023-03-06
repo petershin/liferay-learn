@@ -3,7 +3,9 @@ uuid: 31cea680-b175-419d-b30f-d17851d3c89e
 ---
 # Configuring Auto-scaling
 
-Now that Marcus has enabled clustering with a minimum number of nodes, he can set up auto-scaling for the production environment for better flexibility handling site traffic in peak hours.
+Once you've enabled production environment clustering with any number of nodes, you can configure auto-scaling to better handle site traffic during peak hours.
+
+Log in as Marcus to follow the steps below. 
 
 ## Enable Auto-scaling in the Console
 
@@ -15,15 +17,17 @@ Use the Liferay Cloud console to enable auto-scaling for your production environ
 
 1. Select the *Scale* tab.
 
-    ![The Scale tab within the Liferay service shows the number of instances being used and the control to enable or disable auto-scaling.](./configuring-auto-scaling/images/01.png)
+   ![The Scale tab within the Liferay service shows the number of instances being used and the control to enable or disable auto-scaling.](./configuring-auto-scaling/images/01.png)
 
 1. Click *Enable Auto Scaling*.
 
 Auto-scaling is now enabled, up to the default maximum of ten instances.
 
+<!-- Since you set up clustering for only three nodes, you might need some explanation of how this is possible. -Rich --> 
+
 ## Set the Maximum Number of Instances
 
-Marcus knows that traffic for the site at peak hours might require more than the default ten Liferay instances. He chooses to configure a maximum of twelve instances that auto-scaling can scale up to.
+Several iterations at peak hours reveal that Delectable Bonsai's website requires more than the default 10 Liferay instances. Help Marcus reconfigure the auto-scale maximum from 10 to 12. 
 
 Set the maximum number of instances via the `maxInstances` property in your Liferay service's `LCP.json` file:
 
@@ -57,19 +61,19 @@ Your repository on GitHub now has the updated number of maximum instances, and L
 
 Deploy the updated configuration to your production environment.
 
-1. Log in to the Liferay Cloud console.
+1. Log into the Liferay Cloud console.
 
 1. Click the *Builds* link at the top-right of the screen to access the Builds page.
 
 1. Click the Actions menu ![Actions menu icon](../../images/icon-actions.png) for the build corresponding to the commit with your new changes, and select *Deploy build to...*
 
-    ![Select the build to deploy with your commit message from the Builds page.](./configuring-auto-scaling/images/02.png)
+   ![Select the build to deploy with your commit message from the Builds page.](./configuring-auto-scaling/images/02.png)
 
 1. Select your production environment in the *Environment* drop-down menu.
 
 1. Check the boxes acknowledging the impacts of the deployment.
 
-    ![hoose the production environment and complete the form to deploy the build.](./configuring-auto-scaling/images/03.png)
+   ![Choose the production environment and complete the form to deploy the build.](./configuring-auto-scaling/images/03.png)
 
 1. Click *Deploy Build*.
 

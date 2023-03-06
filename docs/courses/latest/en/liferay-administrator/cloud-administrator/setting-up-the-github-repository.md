@@ -3,13 +3,15 @@ uuid: b55694af-20da-4436-a2ed-429b6bfb9c59
 ---
 # Setting Up the GitHub Repository
 
-Before configuring the Delectable Bonsai project on Liferay Cloud, Marcus takes some time to set up the project's Git repository to make sure he can push and deploy configurations as an administrator. Kyle waits for him to set up the GitHub repository and creates his own fork, too, so that he can deploy configurations or code changes as well.
+<!-- While I love your storytelling, we want to focus foremost on the concept and only secondarily on the story. I'll re-write the below paragraph to give you an example of what I mean. -Rich -->
+
+The first task to do after you've had your Liferay Cloud account provisioned is to set up the project's Git repository so you can deploy configurations as an administrator. Since Delectable Bonsai wants to have at least two administrators for backup purposes, both Marcus and Kyle must follow the below steps. 
 
 Set up the repository and complete your first push to ensure it's working.
 
 ## Install the CLI Tool
 
-Marcus and Kyle both need the CLI tool to be able to quickly deploy changes to different services in Liferay Cloud. They install it while setting up the repository so that they have it ready when they need it later.
+First, you must install the CLI tool so you can deploy changes quickly to different services in Liferay Cloud. 
 
 Install the CLI tool via your command prompt.
 
@@ -25,7 +27,11 @@ Download the latest version of the [Windows installer](https://cdn.liferay.cloud
 
 ## Transfer to Your Own GitHub Repository
 
+<!-- Is there a reason we don't just tell them to click the Fork button, fork it to their account, then clone their version, and finally add upstream back? That seems much more straightforward, and we could even link to GitHub's [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) docs. -Rich -->
+
 Begin by setting up your own GitHub repository to switch your Liferay Cloud project over to.
+
+<!-- Yes, at Liferay, we are used to SSH because we've been using it from the beginning. But GitHub now recommends using https and caching your credentials (see here: https://docs.github.com/en/get-started/quickstart/set-up-git). Something tells me we shouldn't get into setting up Git/GitHub, because this stuff can change. Why don't we change this whole thing to two steps that point to the two GitHub docs: 1. Set up Git, and 2. Fork a repo. -Rich -->
 
 1. On the provisioned repository's page on [GitHub](https://github.com), click the *Code* button and copy the SSH link to the repository. See the official [GitHub documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for help if you have not generated an SSH key on your machine yet.
 
@@ -34,7 +40,7 @@ Begin by setting up your own GitHub repository to switch your Liferay Cloud proj
 1. Run this command to clone the repository into a directory on your own system, in a new directory for the project:
 
     ```bash
-    git clone <copied link> BonsaiSyrup
+    git clone [copied link] BonsaiSyrup
     ```
 
 1. Create a [new private repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo), and copy the SSH link for it.
@@ -59,7 +65,7 @@ Next, configure a webhook to allow Liferay Cloud to access the new repository.
 
 1. On the GitHub website, go to your repository’s Settings page and click *Webhooks*.
 
-    ![Configure the webhook via your GitHub repository's Settings page.](./setting-up-the-github-repository/images/02.png)
+   ![Configure the webhook via your GitHub repository's Settings page.](./setting-up-the-github-repository/images/02.png)
 
 1. Click *Add Webhook*.
 
@@ -69,13 +75,13 @@ Next, configure a webhook to allow Liferay Cloud to access the new repository.
 
 1. Ensure that *Enable SSL verification* is selected.
 
-    ![Fill out the form for the new webhook, and finish by selecting the events that trigger it.](./setting-up-the-github-repository/images/03.png)
+   ![Fill out the form for the new webhook and finish by selecting the events that trigger it.](./setting-up-the-github-repository/images/03.png)
 
 1. Under *Which events would you like to trigger this webhook?*, select *Let me select individual events*.
 
 1. Select *Pushes* and *Pull Requests* from the list of events that appears.
 
-    ![Select pushes and pull requests so that they trigger builds in your Liferay Cloud project.](./setting-up-the-github-repository/images/04.png)
+   ![Select pushes and pull requests so that they trigger builds in your Liferay Cloud project.](./setting-up-the-github-repository/images/04.png)
 
 1. Ensure that the *Active* checkbox is selected.
 

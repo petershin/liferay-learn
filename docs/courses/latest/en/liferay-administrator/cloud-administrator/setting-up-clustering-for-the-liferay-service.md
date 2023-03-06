@@ -3,7 +3,13 @@ uuid: c1dd2bde-e995-4b03-88e1-8e15adeb7b17
 ---
 # Setting Up Clustering for the Liferay Service
 
-Marcus knows that the Delectable Bonsai website needs clustering for the Liferay service so that it can handle higher traffic more reliably. He sets up the initial clustering configuration for the project's production environment.
+<!-- Again, we're not writing the story; we're just applying the story to our steps. I would rewrite the below paragraph like this: -Rich -->
+
+Because Delectable Bonsai's website draws millions of views, it must be clustered to handle the traffic. Here, you'll learn how to configure a three node cluster of the production environment.
+
+<!-- Marcus knows that the Delectable Bonsai website needs clustering for the Liferay service so that it can handle higher traffic more reliably. He sets up the initial clustering configuration for the project's production environment. -->
+
+To follow the steps below, log in as Marcus.
 
 ## Set the Clustering Properties in LCP.json
 
@@ -11,7 +17,7 @@ Enable clustering and set the scale value in your Liferay service's configuratio
 
 1. In your project repository, navigate to the `liferay/` directory and open the `LCP.json` file.
 
-1. Add the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` environment variable if it is not present, and set the value to `true`.
+1. Add the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` environment variable if it is not present. Set the value to `true`.
 
     ```json
     {
@@ -50,7 +56,7 @@ Enable clustering and set the scale value in your Liferay service's configuratio
 1. Use the CLI tool's `lcp deploy` command to deploy only the Liferay service.
 
     ```bash
-    lcp deploy --project=<project-name> --environment=prd
+    lcp deploy --project=[project-name] --environment=prd
     ```
 
 The Liferay service restarts with clustering enabled and the `scale` variable initialized. However, the scale is still set to only one node. Continue to update the scale to the desired three nodes.
@@ -71,7 +77,7 @@ Now that you have initialized the clustering scale, update it to three nodes and
     }
     ```
 
-1. Commit and push the changes in your Git repository.
+1. Commit and push the changes to your Git repository.
 
     ```bash
     git add liferay/LCP.json
@@ -82,7 +88,7 @@ Now that you have initialized the clustering scale, update it to three nodes and
     ```
 
     ```bash
-    git push origin <branch_name>
+    git push origin [branch_name]
     ```
 
 The updated clustering configuration is now committed, and the Liferay Cloud infrastructure automatically creates a build with it.
@@ -91,19 +97,19 @@ The updated clustering configuration is now committed, and the Liferay Cloud inf
 
 Now that you have the necessary configuration for clustering, deploy the configuration to your environment.
 
-1. Log in to the Liferay Cloud console.
+1. Log into the Liferay Cloud console.
 
-1. Click the *Builds* link at the top-right of the screen to access the Builds page.
+1. Click *Builds* at the top-right of the screen to access the Builds page.
 
 1. Click the Actions menu ![Actions menu icon](../../images/icon-actions.png) for the build corresponding to the commit with your new changes, and select *Deploy build to...*
 
-    ![Select the build to deploy with your commit message from the Builds page.](./setting-up-clustering-for-the-liferay-service/images/01.png)
+   ![Select the build to deploy with your commit message from the Builds page.](./setting-up-clustering-for-the-liferay-service/images/01.png)
 
 1. Select your production environment in the *Environment* drop-down menu.
 
 1. Check the boxes acknowledging the impacts of the deployment.
 
-    ![Choose the production environment and complete the form to deploy the build.](./setting-up-clustering-for-the-liferay-service/images/02.png)
+   ![Choose the production environment and complete the form to deploy the build.](./setting-up-clustering-for-the-liferay-service/images/02.png)
 
 1. Click *Deploy Build*.
 

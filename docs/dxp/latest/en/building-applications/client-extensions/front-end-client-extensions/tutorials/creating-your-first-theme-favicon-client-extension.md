@@ -16,7 +16,7 @@ You must meet these requirements in your development environment to begin workin
     ```{note}
     Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/references/jvm-configuration.md) for recommended JVM settings.
     ```
-   <!-- The name of the sample workspace also has a timestamp attached to it. I believe this will change when there are more deployments to Nexus -->
+
 1. Download and unzip the Sample Workspace
 
    ```bash
@@ -29,9 +29,34 @@ You must meet these requirements in your development environment to begin workin
 
 Now you have all the necessary tools to deploy your first theme favicon client extension.
 
-## Build and Deploy the Theme Favicon Client Extension
+## Examine the Client Extension
 
-```{include} /_snippets/run-liferay-dxp.md
+The theme favicon client extension is in the sample workspace's `client-extensions/sample-theme-favicon/` folder. It is defined in the `client-extension.yaml` file in this folder:
+
+```yaml
+sample-theme-favicon:
+    name: Sample Theme Favicon
+    type: themeFavicon
+    url: favicon.ico
+```
+
+<!-- Change absolute URL to relative once Alce's pull is merged -->
+This YAML block defines the client extension with the ID `sample-theme-favicon` and contains the key configurations for a theme favicon client extension, including the `type` and the favicon file to add. See the [Theme Favicon YAML configuration reference]([../javascript-yaml-configuration-reference.md](https://github.com/Alec-Shay/liferay-learn/blob/f88ba4466dfd5267ca40bab252442fab4e9d9543/docs/dxp/latest/en/building-applications/client-extensions/front-end-client-extensions/theme-favicon-yaml-configuration-reference.md)) for more information on the properties.
+
+It also contains the `assemble` YAML block:
+
+```yaml
+assemble:
+    - from: assets
+      include: "**/*"
+      into: static
+```
+
+This block specifies that everything in the `assets/` folder should be included as a static resource in the client extension `.zip` file once it is built. In this example, there's only one file inside the assets folder (`favicon.ico`) and that's used as a static resource in Liferay.
+
+## Deploy the Client Extension to Liferay
+
+```{include} /_snippets/run-liferay-portal.md
 ```
 
 Once Liferay is running,
@@ -45,7 +70,7 @@ Once Liferay is running,
 1. Build and deploy the example.
 
    ```bash
-   ./../../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ../../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
    This builds and deploys your client extension Liferay's `deploy/` folder inside your Docker container.
@@ -54,13 +79,17 @@ Once Liferay is running,
    If you want to deploy your client extension to a Liferay Experience Cloud environment, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#) instead, and run the [`lcp deploy`](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#deploying-to-your-dxp-cloud-environment) command.
    ```
 
+   ```{tip}
+   Run the command from the `client-extensions/` folder in your workspace instead to deploy all of the client extensions within it at once.
+   ```
+
    Confirm the deployment in your Liferay instance's console:
 
    ```bash
    STARTED sample-theme-favicon_1.0.0
    ```
 
-## Use the Theme Favicon Client Extension on a Page
+## Use the Client Extension on a Page
 
 To see the deployed client extension,
 
@@ -87,23 +116,6 @@ To see the deployed client extension,
 Go back to the homepage and click on *Sample Favicon*. The new favicon appears on the browser tab.
 
 ![The new favicon appears on the browser tab.](./creating-your-first-theme-favicon-client-extension/images/03.png)
-
-```{tip}
-If the buttons on the page still show the default background color, try doing a hard refresh of the page to clear your browser's cache (`CTRL + SHIFT + R` for most browsers). If you change your client extension and redeploy it, you may need to remove it from the page's configuration and re-add it to see the changes.
-```
-
-## Theme Favicon Client Extension Directory Structure
-
-```bash
-sample-workspace
-|__ client-extensions
-|____ sample-theme-favicon
-|______ assets
-|________ favicon.ico
-|______ client-extension.yaml
-```
-
-There are 2 files inside the `sample-theme-favicon` folder. The favicon (`favicon.ico`) is present inside the `assets` folder and there is a YAML file that must be configured to use a client extension. See [Theme Favicon YAML Configuration Reference](https://github.com/Alec-Shay/liferay-learn/blob/LRDOCS-11456-overview/docs/dxp/latest/en/building-applications/client-extensions/front-end-client-extensions/theme-favicon-yaml-configuration-reference.md) for more information on setting up the YAML file for a theme favicon client extension.
 
 ## Next Steps
 

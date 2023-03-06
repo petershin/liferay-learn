@@ -64,13 +64,13 @@ Liferay's publishing tools support the following types of pages and content:
 | Custom Objects | &#10008; | &#10008; |
 | Documents and Media | &#10004; | &#10004; |
 | Forms | &#10004; | &#10004; |
-| Knowledge Base | &#10004; | &#10004; |
+| Knowledge Base | &#10008; | &#10004; |
 | Message Boards | &#10004; | &#10004; |
 | Page Templates | &#10004; | &#10004; |
 | Site Templates | &#10004; | &#10008; |
 | Web Content | &#10004; | &#10004; |
 | Widget Pages | &#10004; | &#10004; |
-| Wiki | &#10004; | &#10004; |
+| Wiki | &#10008; | &#10004; |
 
 ```{important}
 Content pages do not support Staging's [page variations](./staging/page-versioning.md) feature.

@@ -16,7 +16,7 @@ Liferay 상거래에 오신 것을 환영합니다!  Liferay Commerce는 모든 
 * [API 및 통합](#apis-and-integrations)
 * [다음 단계](#next-steps)
 
-시작하시겠습니까? Liferay Commerce _fast_[Liferay Commerce Docker 이미지 사용](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md)를 시작합니다.
+시작하시겠습니까? Liferay Commerce **fast**[Liferay Commerce Docker 이미지 사용](../installation-and-upgrades/installing-commerce-2-1-and-below/using-the-liferay-commerce-docker-image.md)를 시작합니다.
 
 
 ## 최신 매장 페이지 및 콘텐츠 관리
@@ -64,7 +64,7 @@ Liferay Commerce는 기계 학습 및 예측 분석을 적용하여 제안된 �
 
 ## API 및 통합
 
-Mulesoft 커넥터, Talend 구성 요소를 통해 또는 Salesforce, SAP ERP(_출시 예정_) 또는 MS Dynamics NAV(_출시 예정_)용 사전 구축 커넥터를 사용하여 다른 비즈니스 시스템과 통합합니다.
+Mulesoft 커넥터, Talend 구성 요소를 통해 또는 Salesforce, SAP ERP(**출시 예정**) 또는 MS Dynamics NAV(**출시 예정**)용 사전 구축 커넥터를 사용하여 다른 비즈니스 시스템과 통합합니다.
 
 ## 다음 단계
 

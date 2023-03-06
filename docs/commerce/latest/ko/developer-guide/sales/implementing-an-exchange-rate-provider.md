@@ -53,7 +53,7 @@
     STARTED com.acme.f2y1.impl_1.0.0
     ```
 
-1. 예제 환율 공급자가 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _상거래_ → _통화_로 이동합니다. 새 환율 제공자("f2y1")는 _Exchange Rate Provider_ 드롭다운 아래에 표시됩니다.
+1. 예제 환율 공급자가 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 **상거래** → **통화** 로 이동합니다. 새 환율 제공자("f2y1")는 **Exchange Rate Provider** 드롭다운 아래에 표시됩니다.
 
 ```{note}
 Liferay Commerce 2.1 및 이전 버전에서는 *제어판* → *상거래* → *설정* → *통화* → *환율*로 이동하여 환율을 찾습니다. 새 환율 제공자("f2y1")는 *Exchange Rate Provider* 드롭다운 아래에 표시됩니다.

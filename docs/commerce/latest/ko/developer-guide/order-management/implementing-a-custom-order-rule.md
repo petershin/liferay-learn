@@ -33,7 +33,7 @@
    STARTED com.acme.x9k1.impl_1.0.0
    ```
 
-1. 관리자로 로그인하고 *전역 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 연 다음 *제어판* &rarr; *언어 재정의*을 클릭합니다. _추가_ 버튼(![Add icon](../../images/icon-add.png))을 클릭하고 다음 키를 추가합니다.
+1. 관리자로 로그인하고 **전역 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 연 다음 **제어판** &rarr; **언어 재정의** 을 클릭합니다. **추가** 버튼(![Add icon](../../images/icon-add.png))을 클릭하고 다음 키를 추가합니다.
 
    | 언어 키          | 가치            |
    |:------------- |:------------- |
@@ -44,9 +44,9 @@
    Liferay DXP 7.4 U4+ 또는 Liferay Portal 7.4 GA8+용 언어 재정의 도구에서 언어 키를 추가할 수 있습니다. 이전 버전의 경우 빌드 및 배포하기 전에 `/src/main/resources/content/` 아래에 `Language.properties` 파일을 키와 함께 추가해야 합니다.
    ```
 
-1. *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 *상거래* &rarr; *주문 규칙*을 클릭합니다.
+1. **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **주문 규칙** 을 클릭합니다.
 
-1. *추가* 버튼(![Add icon](../../images/icon-add.png))을 클릭하고 다음 정보를 입력합니다.
+1. **추가** 버튼(![Add icon](../../images/icon-add.png))을 클릭하고 다음 정보를 입력합니다.
 
    **이름:** 최소 주문 수량 - 3
 
@@ -56,19 +56,19 @@
 
    ![사용자 지정 주문 규칙의 이름, 설명 및 유형을 입력합니다.](./implementing-a-custom-order-rule/images/01.png)
 
-1. *제출*을 클릭합니다.
+1. **제출** 을 클릭합니다.
 
-1. *구성* 섹션에서 *최소 수량* 을 _3_로 설정합니다.
+1. **구성** 섹션에서 **최소 수량** 을 **3** 로 설정합니다.
 
 1. 활성 토글을 클릭하여 새 주문 규칙을 활성화합니다.
 
    ![최소 수량을 3으로 설정하고 활성 토글을 사용하여 새 주문 규칙을 활성화합니다.](./implementing-a-custom-order-rule/images/02.png)
 
-1. *게시*을 클릭합니다.
+1. **게시** 을 클릭합니다.
 
-1. *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *사이트*을 클릭한 다음 새로운 Miniium 데모 사이트를 추가합니다.
+1. **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **사이트** 을 클릭한 다음 새로운 Miniium 데모 사이트를 추가합니다.
 
-1. 구매자로 로그인하고 장바구니에 항목을 추가하십시오. *제출* 을 클릭하여 체크아웃합니다.
+1. 구매자로 로그인하고 장바구니에 항목을 추가하십시오. **제출** 을 클릭하여 체크아웃합니다.
 
 주문 수량이 3개 미만일 경우 경고 메시지를 볼 수 있습니다. 이 조건을 충족하기 전에는 결제가 불가능합니다.
 

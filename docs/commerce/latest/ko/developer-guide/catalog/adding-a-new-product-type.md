@@ -47,7 +47,7 @@
     STARTED com.acme.c1n4.web_1.0.0
     ```
 
-1. 예제 제품 유형이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 응용 프로그램 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _Commerce_ → _Products_ 로 이동합니다. 그런 다음 (+) 아이콘을 클릭하여 새 제품을 추가합니다. 새 제품 유형("예")이 선택할 수 있는 유형 목록에 표시됩니다.
+1. 예제 제품 유형이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 응용 프로그램 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 **Commerce** → **Products** 로 이동합니다. 그런 다음 (+) 아이콘을 클릭하여 새 제품을 추가합니다. 새 제품 유형("예")이 선택할 수 있는 유형 목록에 표시됩니다.
 
 ```{note}
 Liferay Commerce 2.1 및 이전 버전에서는 *제어판* → *상거래* → *제품*으로 이동하여 제품 페이지를 찾습니다.

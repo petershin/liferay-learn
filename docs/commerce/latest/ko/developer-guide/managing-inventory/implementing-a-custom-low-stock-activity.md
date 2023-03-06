@@ -47,9 +47,9 @@
     STARTED com.acme.j1e4.impl_1.0.0
     ```
 
-1. 낮은 재고 활동 예시가 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 응용 프로그램 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _Commerce_ → _Products_로 이동합니다. 그런 다음 제품의 메뉴에서 _편집_ 을 클릭합니다. 필요한 경우 [제품](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)을 추가할 수 있습니다.
+1. 낮은 재고 활동 예시가 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 응용 프로그램 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 **Commerce** → **Products** 로 이동합니다. 그런 다음 제품의 메뉴에서 **편집** 을 클릭합니다. 필요한 경우 [제품](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)을 추가할 수 있습니다.
 
-   여기에서 _구성_로 이동합니다. 새 활동("경고 메시지 기록")은 _재고 부족 작업_ 드롭다운 아래에 표시됩니다.
+   여기에서 **구성** 로 이동합니다. 새 활동("경고 메시지 기록")은 **재고 부족 작업** 드롭다운 아래에 표시됩니다.
 
 ```{note}
 Liferay Commerce 2.1 및 이전 버전에서는 *제어판* → *상거래* → *제품*으로 이동하여 제품 페이지를 찾습니다.

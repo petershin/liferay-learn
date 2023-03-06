@@ -10,7 +10,7 @@ Liferay Commerce는 Liferay DXP에 구축된 디지털 상거래 플랫폼입니
 
 최적의 설치 환경을 위해 시작하기 전에 호환성 매트릭스 및 관련 설치 자료를 검토하십시오.
 
-* [지원되는 기술 목록은 Liferay DXP 7.3 및 Commerce 3.0 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.<!-- * See the \[Liferay DXP 7.3 Deployment Checklist\]() for information about Liferay DXP architecture and performance tuning guidelines. -->## 라이프레이 커머스로 시작하기
+* [지원되는 기술 목록은 Liferay DXP 7.3 및 Commerce 3.0 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오. <!-- * See the \[Liferay DXP 7.3 Deployment Checklist\]() for information about Liferay DXP architecture and performance tuning guidelines. --> ## 라이프레이 커머스로 시작하기
 
 Liferay Commerce 3.0은 Liferay Portal 7.3 CE GA6 및 Liferay DXP 7.3 GA1과 함께 번들로 제공됩니다. Community Edition은 Commerce의 기본 버전과 함께 번들로 제공되는 반면 Enterprise Edition은 모든 기능을 갖춘 Enterprise Commerce와 함께 제공됩니다. CE 및 Enterprise 버전 모두 Docker 이미지 및 다운로드 가능한 번들로 제공됩니다.
 

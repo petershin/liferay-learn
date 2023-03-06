@@ -24,11 +24,11 @@
 
 * **날짜: 2020년 9월** 일 3일
 
-* **JIRA 티켓:** [COMMERCE-4565](https://issues.liferay.com/browse/COMMERCE-4565)
+* **JIRA 티켓:**[COMMERCE-4565](https://issues.liferay.com/browse/COMMERCE-4565)
 
 ### 무엇이 바뀌었나요?
 
-상거래 메뉴 항목은 제어판에서 DXP 7.3의 새로운 전역 메뉴로 이동되었습니다. 새로운 _Commerce_ 탭(응용 프로그램 및 제어판 탭과 동일한 수준)에는 이러한 메뉴 항목이 포함되어 있습니다.
+상거래 메뉴 항목은 제어판에서 DXP 7.3의 새로운 전역 메뉴로 이동되었습니다. 새로운 **Commerce** 탭(응용 프로그램 및 제어판 탭과 동일한 수준)에는 이러한 메뉴 항목이 포함되어 있습니다.
 
 `commerce-admin-api` 및 `commerce-admin-web` 모듈도 제거됩니다.
 
@@ -46,7 +46,7 @@ DXP 7.3 표준을 준수하면서 헤더 표시줄에 탐색 범위를 유지하
 
 * **날짜: 2020년 8월 20일**
 
-* **JIRA 티켓:** [COMMERCE-4052](https://issues.liferay.com/browse/COMMERCE-4052)
+* **JIRA 티켓:**[COMMERCE-4052](https://issues.liferay.com/browse/COMMERCE-4052)
 
 ### 무엇이 바뀌었나요?
 
@@ -78,7 +78,7 @@ DXP 7.3 표준을 준수하면서 헤더 표시줄에 탐색 범위를 유지하
 
 * **날짜: 2020년 9월 10일**
 
-* **JIRA 티켓:** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
+* **JIRA 티켓:**[COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
 
 ### 무엇이 바뀌었나요?
 

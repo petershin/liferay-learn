@@ -24,7 +24,7 @@
 
 * **날짜:** 2020-9-10
 
-* **JIRA 티켓:** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
+* **JIRA 티켓:**[COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
 
 ### 무엇이 바뀌었나요?
 
@@ -56,7 +56,7 @@
 
 * **날짜: 2021년 2월** 일-2월 22일
 
-* **JIRA 티켓:** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-5788)
+* **JIRA 티켓:**[COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-5788)
 
 ### 무엇이 바뀌었나요?
 
@@ -152,7 +152,7 @@
 
 * **날짜: 2021년 2월** 일-12일
 
-* **JIRA 티켓:** [COMMERCE-4974](https://issues.liferay.com/browse/COMMERCE-4974)
+* **JIRA 티켓:**[COMMERCE-4974](https://issues.liferay.com/browse/COMMERCE-4974)
 
 ### 무엇이 바뀌었나요?
 
@@ -176,7 +176,7 @@
 
 * **날짜:** 2021-Mar-02
 
-* **JIRA 티켓:** [LPS-125991](https://issues.liferay.com/browse/LPS-125991)
+* **JIRA 티켓:**[LPS-125991](https://issues.liferay.com/browse/LPS-125991)
 
 ### 무엇이 바뀌었나요?
 
@@ -224,7 +224,7 @@
 
 * **날짜:** 2021-Mar-26
 
-* **JIRA 티켓:** [COMMERCE-2909](https://issues.liferay.com/browse/COMMERCE-2909)
+* **JIRA 티켓:**[COMMERCE-2909](https://issues.liferay.com/browse/COMMERCE-2909)
 
 ### 무엇이 바뀌었나요?
 
@@ -234,7 +234,7 @@
 
 * JSP를 통해 렌더링하도록 `CompareCheckboxTag` 을 리팩토링했습니다. JSP는 차례로 `CompareCheckbox` React 구성 요소를 렌더링합니다.
   
-   * **'commerce-frontend-taglib' 모듈에서 'CompareCheckbox'의 이전 Soy/MetalJS 구현이 더 이상 사용되지 않고 **제거되었습니다**.
+   * **'commerce-frontend-taglib' 모듈에서 'CompareCheckbox'의 이전 Soy/MetalJS 구현이 더 이상 사용되지 않고** 제거되었습니다**.
 
 ### 누가 영향을 받습니까?
 
@@ -250,7 +250,7 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **날짜: 2021년 4월** 일-27일
 
-* **JIRA 티켓:** [COMMERCE-5888](https://issues.liferay.com/browse/COMMERCE-6315)
+* **JIRA 티켓:**[COMMERCE-5888](https://issues.liferay.com/browse/COMMERCE-6315)
 
 ### 무엇이 바뀌었나요?
 
@@ -272,7 +272,7 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **날짜:** 2021-Apr-27
 
-* **JIRA 티켓:** [COMMERCE-5889](https://issues.liferay.com/browse/COMMERCE-5889)
+* **JIRA 티켓:**[COMMERCE-5889](https://issues.liferay.com/browse/COMMERCE-5889)
 
 ### 무엇이 바뀌었나요?
 
@@ -284,21 +284,21 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
   * 구현은 이제 `commerce-product-content-web` 모듈에 있으며 `CPContentRenderer` 재정의, JSP 재정의 또는 Liferay Dynamic Include를 통해 확장 가능합니다.
 
-  * **더 이상 사용되지 않음** 및 **제거됨** `commerce-frontend-taglib` 모듈에서 제품 카드의 이전 Soy/MetalJS 구현이 **더 이상 사용되지 않음** 및 **제거됨**되었습니다.
+  * **더 이상 사용되지 않음** 및 **제거됨** `commerce-frontend-taglib` 모듈에서 제품 카드의 이전 Soy/MetalJS 구현이 **더 이상 사용되지 않음** 및 **제거됨** 되었습니다.
     
-  * `commerce-theme-minium-impl` 모듈에 있는 이전 Minium 전용 `CPContentRenderer`는 **지원 중단**되고 **제거되었습니다**.
+  * `commerce-theme-minium-impl` 모듈에 있는 이전 Minium 전용 `CPContentRenderer`는 **지원 중단** 되고 **제거되었습니다** .
     
   * JSP를 통해 렌더링하도록 `AddToCartTag` 을 리팩터링했으며 이제 `IncludeTag`에서 확장합니다. JSP는 차례로 `QuantitySelector` React 구성 요소를 포함하여 `AddToCart` React 구성 요소를 렌더링합니다.
   
- * ** 'commerce-frontend-taglib' 모듈에서 'AddToCartButton'의 이전 Soy/MetalJS 구현이 더 이상 사용되지 않고 **제거되었습니다**.
+ * **'commerce-frontend-taglib' 모듈에서 'AddToCartButton'의 이전 Soy/MetalJS 구현이 더 이상 사용되지 않고** 제거되었습니다**.
 
   * **Deprecated** 및 **는 `commerce-frontend-taglib` 모듈에서 `QuantitySelector` 의 이전 Soy/MetalJS 구현을** 제거했습니다.
 
-  * **'commerce-frontend-taglib' 모듈에서 이전 'QuantitySelectorTag'가 더 이상 사용되지 않고 **제거되었습니다**.
+  * **'commerce-frontend-taglib' 모듈에서 이전 'QuantitySelectorTag'가 더 이상 사용되지 않고** 제거되었습니다**.
 
 * `PriceTag` 은 JSP를 통해 렌더링하도록 리팩터링되었으며 이제 `IncludeTag`에서 확장됩니다. JSP는 올바르게 구조화된 템플릿(SEO용)을 렌더링하고 최종적으로 `Price` React 구성 요소(사용자 페이지 랜딩용)를 렌더링합니다.
   
-* **'commerce-frontend-taglib' 모듈에서 'Price'의 이전 Soy/MetalJS 구현이 더 이상 사용되지 않고 **제거되었습니다**.
+* **'commerce-frontend-taglib' 모듈에서 'Price'의 이전 Soy/MetalJS 구현이 더 이상 사용되지 않고** 제거되었습니다**.
 
 ### 영향을 받는 사람은 누구입니까?
 
@@ -322,7 +322,7 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **날짜: 2021년 6월** 일-4일
 
-* **JIRA 티켓:** [COMMERCE-6095](https://issues.liferay.com/browse/COMMERCE-6095)
+* **JIRA 티켓:**[COMMERCE-6095](https://issues.liferay.com/browse/COMMERCE-6095)
 
 ### 무엇이 바뀌었나요?
 
@@ -340,7 +340,7 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **날짜: 2021년** 월 14일
 
-* **JIRA 티켓:** [COMMERCE-3030](https://issues.liferay.com/browse/COMMERCE-3030)
+* **JIRA 티켓:**[COMMERCE-3030](https://issues.liferay.com/browse/COMMERCE-3030)
 
 ### 무엇이 바뀌었나요?
 
@@ -358,7 +358,7 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **날짜:** 2021-11-21
 
-* **JIRA 티켓:** [COMMERCE-7288](https://issues.liferay.com/browse/COMMERCE-7288)
+* **JIRA 티켓:**[COMMERCE-7288](https://issues.liferay.com/browse/COMMERCE-7288)
 
 ### 무엇이 바뀌었나요?
 
@@ -378,7 +378,7 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **날짜:** 2022-2-16
 
-* **JIRA 티켓:** [COMMERCE-8440](https://issues.liferay.com/browse/COMMERCE-8440)
+* **JIRA 티켓:**[COMMERCE-8440](https://issues.liferay.com/browse/COMMERCE-8440)
 
 ### 무엇이 바뀌었나요?
 
@@ -416,7 +416,7 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **날짜:** 2022년 4월 13일
 
-* **JIRA 티켓:** [COMMERCE-8408](https://issues.liferay.com/browse/COMMERCE-8408)
+* **JIRA 티켓:**[COMMERCE-8408](https://issues.liferay.com/browse/COMMERCE-8408)
 
 ### 무엇이 바뀌었나요?
 
@@ -450,7 +450,7 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **날짜: 2021년 12월 16일**
 
-* **JIRA 티켓:** [COMMERCE-7830](https://issues.liferay.com/browse/COMMERCE-7830)
+* **JIRA 티켓:**[COMMERCE-7830](https://issues.liferay.com/browse/COMMERCE-7830)
 
 ### 무엇이 바뀌었나요?
 

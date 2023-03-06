@@ -2,7 +2,7 @@
 
 검색 페이지를 사용하여 Liferay 사이트에서 사용 가능한 콘텐츠를 찾을 수 있습니다. 웹 콘텐츠, 기술 자료 문서, 문서, 이미지, 제품 등이 될 수 있습니다. 검색 페이지에는 검색을 세분화하는 데 사용할 수 있는 검색 표시줄과 여러 패싯 위젯이 포함되어 있습니다.
 
-[최소 가속기를 사용하는 경우](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md), 검색 페이지에는 _검색 표시줄_, _검색 옵션_, _검색 결과_, _유형 패싯_, _태그_, _범주_, _사이트_, _폴더_, _사용자_및 _Modified Facet_ 위젯.
+[최소 가속기를 사용하는 경우](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md), 검색 페이지에는 **검색 표시줄** , **검색 옵션** , **검색 결과** , **유형 패싯** , **태그** , **범주** , **사이트** , **폴더** , **사용자** 및 **Modified Facet** 위젯.
 
 ```{note}
 *검색 결과* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device- and-screen-optimized-media.html) 을 참조하세요.

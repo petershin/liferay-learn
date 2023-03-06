@@ -18,7 +18,7 @@ Then follow these steps:
    unzip liferay-z8v2.zip
    ```
 
-1. 제품의 범위는 카탈로그로 지정되며 카탈로그 ID는 필수 매개변수 중 하나입니다. 이를 얻으려면 *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *상거래* &rarr; *카탈로그*로 이동하십시오. 제품을 추가할 카탈로그를 선택하고 이름 옆에 있는 ID를 적어 둡니다.
+1. 제품의 범위는 카탈로그로 지정되며 카탈로그 ID는 필수 매개변수 중 하나입니다. 이를 얻으려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **상거래** &rarr; **카탈로그** 로 이동하십시오. 제품을 추가할 카탈로그를 선택하고 이름 옆에 있는 ID를 적어 둡니다.
 
    ![이름 옆에 있는 카탈로그의 ID를 기록해 둡니다.](./product-api-basics/images/01.png)
 
@@ -93,7 +93,7 @@ Then follow these steps:
    }
    ```
 
-1. *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *상거래* &rarr; *제품*로 이동하여 이를 확인하십시오. 새 제품이 추가되었음을 확인하십시오.
+1. **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **상거래** &rarr; **제품** 로 이동하여 이를 확인하십시오. 새 제품이 추가되었음을 확인하십시오.
 
    ![새 제품이 추가되었음을 확인하십시오.](./product-api-basics/images/02.png)
 

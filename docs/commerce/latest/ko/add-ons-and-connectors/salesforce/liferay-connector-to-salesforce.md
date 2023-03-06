@@ -46,7 +46,7 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 항목이 없습
 
 1. Liferay DXP 인스턴스를 다시 시작하십시오.
 
-1. 다시 시작한 후 *전역 메뉴* (![Global Menu](../../images/icon-applications-menu.png))를 열고 *제어판* &rarr; *작업 스케줄러*로 이동하여 배포가 성공했는지 확인합니다.
+1. 다시 시작한 후 **전역 메뉴**(![Global Menu](../../images/icon-applications-menu.png))를 열고 **제어판** &rarr; **작업 스케줄러** 로 이동하여 배포가 성공했는지 확인합니다.
    
    성공하면 4개의 새로운 작업 스케줄러 작업이 표시됩니다.
    
@@ -121,7 +121,7 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 항목이 없습
 
 | 컨텍스트 매개변수                   | 묘사                                                                                                                                     | 기정값                                                                                                                                              |
 |:--------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `channelId`                 | 주문을 가져온 ID 채널                                                                                                                          | UI에서 채널 ID를 복사합니다. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))를 열고 *상거래* &rarr; *채널*로 이동합니다. 채널을 선택하고 이름 옆에 있는 ID를 복사합니다. |
+| `channelId`                 | 주문을 가져온 ID 채널                                                                                                                          | UI에서 채널 ID를 복사합니다. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **채널** 로 이동합니다. 채널을 선택하고 이름 옆에 있는 ID를 복사합니다. |
 | `defaultCurrency`           | 주문 기본 통화                                                                                                                               | `USD`                                                                                                                                            |
 | `statusMapping_null`        | 주문 상태에 대한 상태 매핑입니다. 다음 구문을 사용해야 합니다. `statusMapping_SalesforceStatusName=LiferayStatusCode(예: statusMapping_Activated=5)`              | `5`                                                                                                                                              |
 | `paymentStatusMapping_null` | 주문 결제 상태에 대한 상태 매핑입니다. 다음 구문을 사용해야 합니다. `paymentStatusMapping_SalesforceStatusName=LiferayStatusCode(예: paymentStatusMapping_Payed=2)` | `2`                                                                                                                                              |
@@ -132,7 +132,7 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 항목이 없습
 
 ## 작업 스케줄러 작업 실행
 
-일단 구성되면 *지금 실행*클릭하여 수동으로 각 작업을 실행하거나 자동으로 실행되도록 예약할 수 있습니다. 자세한 내용은 [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) 사용을 참조하십시오.
+일단 구성되면 **지금 실행** 클릭하여 수동으로 각 작업을 실행하거나 자동으로 실행되도록 예약할 수 있습니다. 자세한 내용은 [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) 사용을 참조하십시오.
 
 ```{important}
 이러한 작업을 실행하면 리소스를 많이 사용하고 플랫폼 성능이 저하될 수 있습니다. 성능에 미치는 영향을 줄이려면 사용량이 가장 많은 시간에는 실행하지 마십시오.

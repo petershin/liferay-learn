@@ -47,9 +47,9 @@
     STARTED com.acme.q4f7.web_1.0.0
     ```
 
-1. 예제 제품 콘텐츠 렌더러가 추가되었는지 확인합니다. 브라우저를 `https://localhost:8080` 로 열고 Liferay Commerce의 제품이 있는 카탈로그로 이동합니다. 제품을 클릭하여 제품 세부정보 위젯을 본 다음 위젯에 대해 _구성_ 을 클릭합니다.
+1. 예제 제품 콘텐츠 렌더러가 추가되었는지 확인합니다. 브라우저를 `https://localhost:8080` 로 열고 Liferay Commerce의 제품이 있는 카탈로그로 이동합니다. 제품을 클릭하여 제품 세부정보 위젯을 본 다음 위젯에 대해 **구성** 을 클릭합니다.
 
-    _Custom Renderer_ 섹션에서 _Simple_을 선택합니다. _단순 상거래 제품 유형 렌더러 키_ 드롭다운 아래에서 새 렌더러("Q4F7 Commerce 제품 콘텐츠 렌더러")를 선택합니다.
+**Custom Renderer** 섹션에서 **Simple** 을 선택합니다. **단순 상거래 제품 유형 렌더러 키** 드롭다운 아래에서 새 렌더러("Q4F7 Commerce 제품 콘텐츠 렌더러")를 선택합니다.
 
     ![새 제품 콘텐츠 렌더러](./implementing-a-custom-product-content-renderer/images/02.png "새 제품 콘텐츠 렌더러")
 
@@ -179,7 +179,7 @@ CPSku cpSku = cpContentHelper.getDefaultCPSku(cpContentHelper.getCPCatalogEntry(
 <liferay-util:dynamic-include key="com.liferay.commerce.product.content.web#/add_to_cart#" />
 ```
 
-> Liferay Commerce의 [add_to_cart_button.jsp](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-cart-content-web/src/main/resources/META-INF/resources/dynamic_include/add_to_cart_button.jsp) 을 사용하여 "장바구니에 추가" 기능을 보기에 삽입합니다.
+> Liferay Commerce의 [add_to_cart_button.jsp](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-cart-content-web/src/main/resources/META-INF/resources/dynamic **include/add** to **cart** button.jsp) 을 사용하여 "장바구니에 추가" 기능을 보기에 삽입합니다.
 
 #### `Language.properties`에 언어 키 추가
 

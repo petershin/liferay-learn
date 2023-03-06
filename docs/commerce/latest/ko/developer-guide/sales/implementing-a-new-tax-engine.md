@@ -47,7 +47,7 @@
     STARTED com.acme.q4b9.impl_1.0.0
     ```
 
-1. 예제 세금 엔진이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _상거래_ → _채널_로 이동합니다. 채널을 편집합니다. 새 세금 엔진("Q4B9 Commerce Tax Engine")이 표시된 목록에 표시됩니다.
+1. 예제 세금 엔진이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 **상거래** → **채널** 로 이동합니다. 채널을 편집합니다. 새 세금 엔진("Q4B9 Commerce Tax Engine")이 표시된 목록에 표시됩니다.
 
 ```{note}
 Commerce 2.1 및 이전 버전에서는 *사이트 관리* → *상거래* → *설정* → *세금* → *세금 계산*으로 이동하여 세금 엔진을 찾습니다.

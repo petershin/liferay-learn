@@ -4,7 +4,7 @@ uuid: 0fba1f8c-2ddd-4ac2-907e-4789108f581b
 
 # 제품 변형에 대한 SKU 만들기
 
-Liferay Commerce를 사용하면 여러 SKU를 제품에 추가하여 제품 변형을 나타낼 수 있습니다. 이렇게 하려면 제품에 *SKU 기여자* 이 활성화된 [옵션](../products/using-product-options.md) 이 하나 이상 있어야 합니다. 그런 다음 옵션의 정의된 값을 사용하여 제품에 대한 여러 활성 SKU를 수동 또는 자동으로 생성할 수 있습니다. 생성된 각 SKU는 제품 세부 정보 위젯에 표시되는 구매 가능한 제품 버전을 나타냅니다.
+Liferay Commerce를 사용하면 여러 SKU를 제품에 추가하여 제품 변형을 나타낼 수 있습니다. 이렇게 하려면 제품에 **SKU 기여자** 이 활성화된 [옵션](../products/using-product-options.md) 이 하나 이상 있어야 합니다. 그런 다음 옵션의 정의된 값을 사용하여 제품에 대한 여러 활성 SKU를 수동 또는 자동으로 생성할 수 있습니다. 생성된 각 SKU는 제품 세부 정보 위젯에 표시되는 구매 가능한 제품 버전을 나타냅니다.
 
 ![제품 변형은 제품 세부 정보 위젯에 표시됩니다.](./creating-skus-for-product-variants/images/01.png)
 
@@ -20,19 +20,19 @@ Liferay Commerce를 사용하면 여러 SKU를 제품에 추가하여 제품 변
 
 제품에 대해 여러 SKU를 생성하고 활성화하려면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *상거래* 탭을 클릭한 다음 *제품*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **상거래** 탭을 클릭한 다음 **제품** 으로 이동합니다.
 
-1. SKU 기여자가 활성화된 옵션이 하나 이상 있는 제품을 클릭하고 *SKU* 탭으로 이동합니다.
+1. SKU 기여자가 활성화된 옵션이 하나 이상 있는 제품을 클릭하고 **SKU** 탭으로 이동합니다.
 
-1. *추가* 버튼(![Add Button](../../../images/icon-add.png))을 클릭하고 *모든 SKU 조합 생성*선택합니다.
+1. **추가** 버튼(![Add Button](../../../images/icon-add.png))을 클릭하고 **모든 SKU 조합 생성** 선택합니다.
 
    ![모든 SKU 조합 생성을 선택합니다.](./creating-skus-for-product-variants/images/02.png)
 
-   SKU는 각 옵션 값에 대해 자동으로 생성됩니다. 이러한 SKU는 값의 이름을 사용하며 기본 가격 또는 재고 없이 생성됩니다. SKU를 구성하려면 *작업* 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 *편집*선택합니다. 자세한 내용은 [SKU 필드 참조](#sku-fields-reference) 참조하십시오.
+   SKU는 각 옵션 값에 대해 자동으로 생성됩니다. 이러한 SKU는 값의 이름을 사용하며 기본 가격 또는 재고 없이 생성됩니다. SKU를 구성하려면 **작업** 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 **편집** 선택합니다. 자세한 내용은 [SKU 필드 참조](#sku-fields-reference) 참조하십시오.
 
    ![생성된 SKU를 편집합니다.](./creating-skus-for-product-variants/images/03.png)
 
-1. 완료되면 *게시*클릭합니다.
+1. 완료되면 **게시** 클릭합니다.
 
 ```{important}
 인벤토리의 각 제품은 하나 이상의 SKU에 연결되어야 합니다.
@@ -46,9 +46,9 @@ Liferay Commerce를 사용하면 여러 SKU를 제품에 추가하여 제품 변
    SKU 기여자가 활성화되어 있는 동안 수동으로 생성된 각 SKU는 옵션 값에 매핑되어야 합니다.
    ```
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *상거래* 탭을 클릭한 다음 *제품*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **상거래** 탭을 클릭한 다음 **제품** 으로 이동합니다.
 
-1. SKU 기여자가 활성화된 옵션이 하나 이상 있는 제품을 클릭하고 *SKU* 탭으로 이동합니다.
+1. SKU 기여자가 활성화된 옵션이 하나 이상 있는 제품을 클릭하고 **SKU** 탭으로 이동합니다.
 
 1. ** 추가 버튼(![Add Button](../../../images/icon-add.png))을 클릭하고 *SKU 추가*선택합니다.
 
@@ -58,7 +58,7 @@ Liferay Commerce를 사용하면 여러 SKU를 제품에 추가하여 제품 변
 
    ![SKU를 구성합니다.](./creating-skus-for-product-variants/images/05.png)
 
-1. 완료되면 *게시*클릭합니다.
+1. 완료되면 **게시** 클릭합니다.
 
 ## SKU 인벤토리 추가
 

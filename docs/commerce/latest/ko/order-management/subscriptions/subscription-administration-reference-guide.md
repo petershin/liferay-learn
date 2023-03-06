@@ -1,6 +1,6 @@
 # 구독 관리 참조 가이드
 
-구독은 _글로벌 애플리케이션_의 _구독_ 메뉴에서 [관리](./managing-subscriptions.md) 됩니다. 이 문서에서는 _구독_ 메뉴에서 사용할 수 있는 다양한 기능과 필드에 대해 설명합니다.
+구독은 **글로벌 애플리케이션** 의 **구독** 메뉴에서 [관리](./managing-subscriptions.md) 됩니다. 이 문서에서는 **구독** 메뉴에서 사용할 수 있는 다양한 기능과 필드에 대해 설명합니다.
 
 5개의 필드가 있습니다.
 
@@ -14,9 +14,9 @@
 
 ## 상거래 2.1 이하
 
-구독은 _제어판_의 _구독_ 메뉴에서 [관리](./managing-subscriptions.md) 됩니다.
+구독은 **제어판** 의 **구독** 메뉴에서 [관리](./managing-subscriptions.md) 됩니다.
 
-_제어판_ &rarr; _상거래_ &rarr; _구독_로 이동합니다.
+**제어판** &rarr; **상거래** &rarr; **구독** 로 이동합니다.
 
 ![구독 관리](./subscription-administration-reference-guide/images/01.png)
 
@@ -30,19 +30,19 @@ _제어판_ &rarr; _상거래_ &rarr; _구독_로 이동합니다.
 | 계정 아이디   | 계정 ID는 구독을 만든 계정에 해당합니다. |
 | 계정 이름    | 계정 이름은 계정 이름에 해당합니다.     |
 
-구독 주문의 세부 정보를 보려면 구독의 _ID_ 을 클릭합니다.
+구독 주문의 세부 정보를 보려면 구독의 **ID** 을 클릭합니다.
 
 <!--Need to finish this for Commerce 3.0; blocked by https://issues.liferay.com/browse/COMMERCE-4813 -->
 
-세 개의 탭이 있습니다: _일반_, _배송_, _결제_.
+세 개의 탭이 있습니다: **일반** , **배송** , **결제** .
 
 ## 일반 탭
 
-_일반_ 탭에는 구독 [주문](../orders/processing-an-order.md)의 기본 세부 정보가 포함되어 있습니다.
+**일반** 탭에는 구독 [주문](../orders/processing-an-order.md)의 기본 세부 정보가 포함되어 있습니다.
 
 ### 참조 순서
 
-_참조 주문_ 섹션에는 [주문 정보](../orders/order-information.md)가 표시됩니다.
+**참조 주문** 섹션에는 [주문 정보](../orders/order-information.md)가 표시됩니다.
 
 ![결제 섹션](./subscription-administration-reference-guide/images/02.png)
 
@@ -58,11 +58,11 @@ _참조 주문_ 섹션에는 [주문 정보](../orders/order-information.md)가 
 | 다음 반복 날짜 | 결제일 다음날입니다.                                                                |
 | 구독 유형    | 이것이 구독 유형입니다.                                                              |
 | 구독 기간    | 선적 간격의 길이를 나타냅니다.                                                          |
-| 모형       | 간격이 표시되는 날짜를 나타냅니다. 사용자는 해당 월의 정확한 날짜 또는 _해당 월의 마지막 날_ 을 옵션으로 선택할 수도 있습니다. |
+| 모형       | 간격이 표시되는 날짜를 나타냅니다. 사용자는 해당 월의 정확한 날짜 또는 **해당 월의 마지막 날** 을 옵션으로 선택할 수도 있습니다. |
 
 ### 배송 신청
 
-_배달 구독_ 섹션은 다음 정보를 추적합니다.
+**배달 구독** 섹션은 다음 정보를 추적합니다.
 
 ![배송](./subscription-administration-reference-guide/images/04.png)
 
@@ -72,17 +72,17 @@ _배달 구독_ 섹션은 다음 정보를 추적합니다.
 | 다음 반복 날짜 | [건](../shipments/introduction-to-shipments.md) 건이 발송된 다음날입니다.              |
 | 구독 유형    | 이것이 구독 유형입니다.                                                              |
 | 구독 기간    | 선적 간격의 길이를 나타냅니다.                                                          |
-| 모형       | 간격이 표시되는 날짜를 나타냅니다. 사용자는 해당 월의 정확한 날짜 또는 _해당 월의 마지막 날_ 을 옵션으로 선택할 수도 있습니다. |
+| 모형       | 간격이 표시되는 날짜를 나타냅니다. 사용자는 해당 월의 정확한 날짜 또는 **해당 월의 마지막 날** 을 옵션으로 선택할 수도 있습니다. |
 
 ### 품목
 
-_항목_ 섹션에는 구독에 있는 [제품](../../product-management/creating-and-managing-products/products/products-overview.md) 이 모두 나열됩니다.
+**항목** 섹션에는 구독에 있는 [제품](../../product-management/creating-and-managing-products/products/products-overview.md) 이 모두 나열됩니다.
 
 ![품목](./subscription-administration-reference-guide/images/05.png)
 
 ## 선적 탭
 
-_배송_ 탭에는 다음 정보가 표시됩니다.
+**배송** 탭에는 다음 정보가 표시됩니다.
 
 ![선적](./subscription-administration-reference-guide/images/06.png)
 
@@ -97,7 +97,7 @@ _배송_ 탭에는 다음 정보가 표시됩니다.
 
 ## 결제 탭
 
-_결제_ 탭은 주문의 결제 내역을 추적합니다.
+**결제** 탭은 주문의 결제 내역을 추적합니다.
 
 ![품목](./subscription-administration-reference-guide/images/07.png)
 

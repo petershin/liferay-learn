@@ -25,7 +25,7 @@ Liferay가 실행되면,
 
 1. 가격 목록은 카탈로그로 범위가 지정되므로 목록을 만들려면 카탈로그 ID가 필요합니다.
 
-   카탈로그의 ID를 얻으려면 *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 *상거래* &rarr; *카탈로그*로 이동하십시오. 카탈로그를 선택하고 해당 ID를 복사합니다.
+   카탈로그의 ID를 얻으려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **카탈로그** 로 이동하십시오. 카탈로그를 선택하고 해당 ID를 복사합니다.
 
    ![카탈로그 ID를 복사합니다.](./price-list-api-basics/images/01.png)
 
@@ -81,7 +81,7 @@ Liferay가 실행되면,
    }
    ```
 
-1. 가격표 추가를 확인하려면 *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *Commerce* &rarr; *Price Lists*로 이동합니다. 새 가격 목록이 나타납니다.
+1. 가격표 추가를 확인하려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **Commerce** &rarr; **Price Lists** 로 이동합니다. 새 가격 목록이 나타납니다.
 
    ![새 가격표가 추가되었는지 확인합니다.](./price-list-api-basics/images/02.png)
 

@@ -46,7 +46,7 @@
     STARTED com.acme.b1c3.impl_1.0.0
     ```
 
-1. 예시 결제 수단이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _Commerce_ → _Channels_로 이동한 다음 _Payment Methods_ 섹션으로 스크롤합니다.
+1. 예시 결제 수단이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 **Commerce** → **Channels** 로 이동한 다음 **Payment Methods** 섹션으로 스크롤합니다.
 
 ```{note}
 Liferay Commerce 2.1 및 이전 버전에서는 *사이트 관리* → *상거래* → *설정* → *결제 방법*으로 이동합니다.
@@ -81,7 +81,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
     public String getDescription(Locale locale);
 ```
 
-> 이것은 _지불 방법_ 관리 페이지의 "설명" 열을 채웁니다. 언어 키로 설명 검색에 대한 참조는 [B1C3CommercePaymentMethod.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-new-payment-method/resources/liferay-b1c3.zip/b1c3-impl/src/main/java/com/acme/b1c3/internal/commerce/payment/method/B1C3CommercePaymentMethod.java) 의 구현을 참조하십시오.
+> 이것은 **지불 방법** 관리 페이지의 "설명" 열을 채웁니다. 언어 키로 설명 검색에 대한 참조는 [B1C3CommercePaymentMethod.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-new-payment-method/resources/liferay-b1c3.zip/b1c3-impl/src/main/java/com/acme/b1c3/internal/commerce/payment/method/B1C3CommercePaymentMethod.java) 의 구현을 참조하십시오.
 
 ```java
     public String getKey();
@@ -92,7 +92,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
     public String getName(Locale locale);
 ```
 
-> 이것은 _지불 방법_ 관리 페이지의 "이름" 열을 채웁니다. `getDescription` 메소드와 유사하게 작동합니다.
+> 이것은 **지불 방법** 관리 페이지의 "이름" 열을 채웁니다. `getDescription` 메소드와 유사하게 작동합니다.
 
 ```java
     public int getPaymentType();

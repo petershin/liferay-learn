@@ -14,7 +14,7 @@ Minium은 제조업체의 요구 사항을 충족하도록 설계된 B2B(Busines
 
 ### 페이지
 
-Minium은 여러 페이지와 위젯으로 사이트를 채워 구매자에게 완전한 사용자 경험을 제공합니다. 생성된 페이지의 전체 목록을 보려면 *사이트 메뉴 → 빌드 → 페이지*로 이동하십시오.
+Minium은 여러 페이지와 위젯으로 사이트를 채워 구매자에게 완전한 사용자 경험을 제공합니다. 생성된 페이지의 전체 목록을 보려면 **사이트 메뉴 → 빌드 → 페이지** 로 이동하십시오.
 
 ![최소 페이지](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/01.png)
 
@@ -38,17 +38,17 @@ Minium의 카탈로그에는 미리 정의된 여러 범주로 구성된 다양�
 
 ![사전 설정 카테고리](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/04.png)
 
-> 범주는 _전역_ 범위 수준에서 정의됩니다. 자세한 내용은 [제품 카테고리](../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)을 참조하십시오.
+> 범주는 **전역** 범위 수준에서 정의됩니다. 자세한 내용은 [제품 카테고리](../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)을 참조하십시오.
 
 샘플 제품에는 미리 설정된 [옵션](../product-management/creating-and-managing-products/products/using-product-options.md), [사양](../product-management/creating-and-managing-products/products/specifications.md)및 이미지가 함께 제공됩니다.
 
 ![상품 상세](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/05.png)
 
-_샘플 데이터는 데모 목적으로 추가되며 상점 관리자가 Miniium을 상점 사이트의 기반으로 사용하려는 경우 안전하게 삭제할 수 있습니다._
+**샘플 데이터는 데모 목적으로 추가되며 상점 관리자가 Miniium을 상점 사이트의 기반으로 사용하려는 경우 안전하게 삭제할 수 있습니다.**
 
 ## 검색
 
-Minium을 사용하면 구매자가 카탈로그를 빠르게 검색할 수 있습니다. 옴니 검색 표시줄 외에도 Minium에는 검색 표시줄을 여는 특수 키보드 단축키가 있습니다. _카탈로그_ 기본 페이지에서 슬래시(/)를 누르면 검색 표시줄이 열리고 초점이 맞춰집니다.
+Minium을 사용하면 구매자가 카탈로그를 빠르게 검색할 수 있습니다. 옴니 검색 표시줄 외에도 Minium에는 검색 표시줄을 여는 특수 키보드 단축키가 있습니다. **카탈로그** 기본 페이지에서 슬래시(/)를 누르면 검색 표시줄이 열리고 초점이 맞춰집니다.
 
 ![슬래시를 사용하여 검색](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/06.png)
 

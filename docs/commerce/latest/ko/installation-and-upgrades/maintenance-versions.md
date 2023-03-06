@@ -23,7 +23,7 @@ Liferay Commerce 3.0(오픈 소스) 사용자는 Liferay Portal 7.3의 새 릴�
 ### 다운로드 및 배포
 
 1. 최신 Liferay Commerce `LPKG`을 다운로드하십시오.
-    * 기업 가입자는 [도움말 센터](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) 에서 최신 `LPKG` 을 다운로드할 수 있습니다.
+    * 기업 가입자는 [도움말 센터](https://customer.liferay.com/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118190997& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) 에서 최신 `LPKG` 을 다운로드할 수 있습니다.
       * 가입자는 또한 Liferay Commerce에 대한 주문 번호 또는 활성화 키가 필요합니다. [프록시 서버를 통해 Marketplace 앱 활성화](https://help.liferay.com/hc/ko/articles/360018427391) 을 참조하십시오.
     * 최신 오픈 소스 `LPKG` 은 [Liferay Commerce 커뮤니티 사이트](https://commerce.liferay.dev/download) 에서 얻을 수 있습니다.
 

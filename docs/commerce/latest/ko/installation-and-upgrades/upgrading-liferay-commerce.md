@@ -24,13 +24,13 @@ Miniium Accelerator를 사용하거나 자체 값을 사용하는 경우 `Commer
 
 DXP 7.4로 업그레이드한 후 전체 검색 재인덱싱을 실행합니다.
 
-1. _글로벌 메뉴_을 열고 _제어판_ &rarr; _검색_으로 이동합니다.
+1. **글로벌 메뉴** 을 열고 **제어판** &rarr; **검색** 으로 이동합니다.
 
    ![제어판 탭에서 검색으로 이동합니다.](./upgrading-liferay-commerce/images/02.png)
 
-1. _Index Actions_ 탭에서 _Execute_ for _Reindex all search indexes_를 클릭합니다.
+1. **Index Actions** 탭에서 **Execute** for **Reindex all search indexes** 를 클릭합니다.
 
-재색인이 완료되면 글로벌 메뉴의 _Commerce_ &rarr; _Products_ 로 이동하여 모든 제품이 표시되는지 확인하여 성공했는지 확인합니다.
+재색인이 완료되면 글로벌 메뉴의 **Commerce** &rarr; **Products** 로 이동하여 모든 제품이 표시되는지 확인하여 성공했는지 확인합니다.
 
 ## 2.1 이하에서 Commerce 3.0으로 업그레이드
 
@@ -44,13 +44,13 @@ Commerce 3.0으로 업그레이드하려면 먼저 기본 Liferay DXP 설치를 
 
 DXP 7.3으로 업그레이드한 후 전체 검색 재인덱싱을 실행합니다.
 
-1. _글로벌 메뉴_ 을 열고 _제어판_ &rarr; _검색_으로 이동합니다.
+1. **글로벌 메뉴** 을 열고 **제어판** &rarr; **검색** 으로 이동합니다.
 
    ![제어판 탭에서 검색으로 이동합니다.](./upgrading-liferay-commerce/images/02.png)
 
-1. _Index Actions_ 탭에서 _Execute_ for _Reindex all search indexes_를 클릭합니다.
+1. **Index Actions** 탭에서 **Execute** for **Reindex all search indexes** 를 클릭합니다.
 
-재색인이 완료되면 전역 메뉴에서 _Commerce_ &rarr; _Products_ 로 이동하고 모든 제품이 표시되는지 확인하여 성공했는지 확인합니다.
+재색인이 완료되면 전역 메뉴에서 **Commerce** &rarr; **Products** 로 이동하고 모든 제품이 표시되는지 확인하여 성공했는지 확인합니다.
 
 ## Commerce 2.1.x/2.2.x로 업그레이드
 
@@ -169,9 +169,9 @@ Liferay Commerce 인스턴스가 업그레이드되었습니다.
 
 에서 최신 버전으로 업그레이드한 후 전체 검색 재색인을 실행합니다.
 
-1. _제어판_ &rarr; _구성_ &rarr; _검색_으로 이동합니다.
-1. _모든 검색 인덱스 재인덱싱_옆에 있는 _실행_ 을 클릭합니다. 완료될 때까지 기다립니다.
-1. _제어판_ &rarr; _상거래_ &rarr; _제품_로 이동합니다.
+1. **제어판** &rarr; **구성** &rarr; **검색** 으로 이동합니다.
+1. **모든 검색 인덱스 재인덱싱** 옆에 있는 **실행** 을 클릭합니다. 완료될 때까지 기다립니다.
+1. **제어판** &rarr; **상거래** &rarr; **제품** 로 이동합니다.
 1. 모든 제품이 다시 표시되는지 확인합니다.
 
 재인덱싱이 완료되면 업그레이드된 Liferay Commerce 인스턴스를 사용할 수 있습니다.

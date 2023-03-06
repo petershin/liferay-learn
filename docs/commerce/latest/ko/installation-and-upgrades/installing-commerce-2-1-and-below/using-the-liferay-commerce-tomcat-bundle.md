@@ -19,7 +19,7 @@ Liferay Commerce 번들을 사용하려면 다음 단계를 따르십시오.
 
 1. Tomcat 번들 시작
     * `$CATALINA_HOME/bin`로 이동합니다.
-    * `./catalina.sh run`을 실행합니다. *Windows* 사용자의 경우 다음을 실행합니다. `catalina run`
+    * `./catalina.sh run`을 실행합니다. **Windows** 사용자의 경우 다음을 실행합니다. `catalina run`
 
     ```{tip}
     `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds`가 표시될 때까지 기다립니다.

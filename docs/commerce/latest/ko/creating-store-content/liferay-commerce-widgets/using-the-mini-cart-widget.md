@@ -1,6 +1,6 @@
 # 미니 카트 위젯 사용
 
-Liferay Commerce는 현재 카트 상태에 대한 빠른 개요를 제공하는 *Mini Cart* 위젯과 함께 제공됩니다.
+Liferay Commerce는 현재 카트 상태에 대한 빠른 개요를 제공하는 **Mini Cart** 위젯과 함께 제공됩니다.
 
 ```{important}
 Mini Cart 위젯은 Minium 및 Speedwell과 같은 액셀러레이터에 있는 사용자 지정 미니 카트 구성 요소와 동일하지 않습니다.
@@ -12,9 +12,9 @@ Mini Cart 위젯은 Minium 및 Speedwell과 같은 액셀러레이터에 있는 
 
 ## 페이지에 미니 카트 위젯 추가
 
-1. *상단 메뉴에서 추가* (![Add Widget](../../images/icon-add-widget.png)) 버튼을 클릭합니다.
+1. **상단 메뉴에서 추가**(![Add Widget](../../images/icon-add-widget.png)) 버튼을 클릭합니다.
 
-1. 위젯 섹션에서 *Mini Cart* 위젯을 검색합니다.
+1. 위젯 섹션에서 **Mini Cart** 위젯을 검색합니다.
 
    ![위젯 섹션에서 미니 카트 위젯을 검색합니다.](./using-the-mini-cart-widget/images/01.png)
 

@@ -76,7 +76,7 @@ Liferay Commerce에는 배송료를 계산하는 몇 가지 옵션이 있습니�
 
 ### 카탈로그에 제품 추가
 
-제품을 추가할 때 **Simple**, **Grouped**, **Virtual**의 세 가지 제품 유형이 있습니다. 자세한 내용은 [제품 유형 소개](../product-management/creating-and-managing-products/product-types.md) 참조하십시오.
+제품을 추가할 때 **Simple** , **Grouped** , **Virtual** 의 세 가지 제품 유형이 있습니다. 자세한 내용은 [제품 유형 소개](../product-management/creating-and-managing-products/product-types.md) 참조하십시오.
 
 #### 제품 정보 추가
 

@@ -26,7 +26,7 @@ uuid: 4ab79dc2-0190-49a2-8197-807d1ae40bf8
 
 ![쿠폰 코드 기능을 활성화하고 이 할인 유형에 대한 쿠폰 코드를 입력하십시오.](./introduction-to-discounts/images/01.png)
 
-쿠폰 코드를 수락하려면 매장의 [결제](../../creating-store-content/commerce-storefront-pages/checkout.md) 페이지에 *쿠폰 코드 입력* 위젯을 추가해야 합니다. 체크아웃 페이지는 [Miniium 사이트](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)에서 바로 사용할 수 있습니다.
+쿠폰 코드를 수락하려면 매장의 [결제](../../creating-store-content/commerce-storefront-pages/checkout.md) 페이지에 **쿠폰 코드 입력** 위젯을 추가해야 합니다. 체크아웃 페이지는 [Miniium 사이트](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)에서 바로 사용할 수 있습니다.
 
 ![결제 페이지에 쿠폰 코드 입력 위젯을 배치합니다.](./introduction-to-discounts/images/02.png)
 
@@ -50,9 +50,9 @@ uuid: 4ab79dc2-0190-49a2-8197-807d1ae40bf8
 | 이 모든 제품을 보유하고 있습니다 | 할인을 받으려면 주문에 지정된 모든 제품이 포함되어야 합니다.             |
 | 이 제품 중 하나가 있습니다    | 할인을 받으려면 지정된 제품 목록에서 하나 이상의 제품이 주문에 포함되어야 합니다. |
 
-*규칙* 섹션에서 할인 규칙을 추가할 수 있습니다. 개발자는 또한 [새로운 할인 규칙을 구현할 수 있습니다](../../developer-guide/promotions/adding-a-new-discount-rule-type.md).
+**규칙** 섹션에서 할인 규칙을 추가할 수 있습니다. 개발자는 또한 [새로운 할인 규칙을 구현할 수 있습니다](../../developer-guide/promotions/adding-a-new-discount-rule-type.md).
 
-사용 시 *이 제품 모두 있음* 또는 *이 제품 중 하나 있음* 규칙, 카탈로그에서 할인을 받을 수 있는 제품을 선택합니다.
+사용 시 **이 제품 모두 있음** 또는 **이 제품 중 하나 있음** 규칙, 카탈로그에서 할인을 받을 수 있는 제품을 선택합니다.
 
 ![사용 가능한 할인 규칙 유형입니다.](./introduction-to-discounts/images/05.png)
 

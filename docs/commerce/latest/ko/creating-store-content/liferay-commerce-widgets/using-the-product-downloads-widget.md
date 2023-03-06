@@ -1,10 +1,10 @@
 # 제품 다운로드 위젯 사용
 
-Liferay Commerce에는 [가상 제품](../../product-management/creating-and-managing-products/product-types/creating-a-virtual-product.md)으로 구매한 디지털 자산에 액세스하고 다운로드할 수 있는 *제품 다운로드* 위젯이 포함되어 있습니다.
+Liferay Commerce에는 [가상 제품](../../product-management/creating-and-managing-products/product-types/creating-a-virtual-product.md)으로 구매한 디지털 자산에 액세스하고 다운로드할 수 있는 **제품 다운로드** 위젯이 포함되어 있습니다.
 
 제품 다운로드 위젯을 사용하려면 아래 단계를 따르세요.
 
-1. 상단 메뉴에서 *추가* 버튼(![Add](../../images/icon-add-widget.png))을 클릭합니다.
+1. 상단 메뉴에서 **추가** 버튼(![Add](../../images/icon-add-widget.png))을 클릭합니다.
 
 1. 위젯 섹션에서 제품 다운로드 위젯을 검색합니다.
 
@@ -14,7 +14,7 @@ Liferay Commerce에는 [가상 제품](../../product-management/creating-and-man
 
    ![제품 다운로드 위젯이 활성화되어 사용할 준비가 되었습니다.](./using-the-product-downloads-widget/images/02.png)
 
-이렇게 하면 위젯이 자동으로 활성화됩니다. 가상 제품을 구매하면 *활성화 상태*에 따라 자산이 여기에 표시됩니다.
+이렇게 하면 위젯이 자동으로 활성화됩니다. 가상 제품을 구매하면 **활성화 상태** 에 따라 자산이 여기에 표시됩니다.
 
 | 설정        | 가시성에 미치는 영향                                   |
 |:--------- |:--------------------------------------------- |

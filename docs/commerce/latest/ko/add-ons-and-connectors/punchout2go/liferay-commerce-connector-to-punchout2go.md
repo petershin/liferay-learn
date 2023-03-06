@@ -6,7 +6,7 @@ uuid: 7c93ef53-24bd-4b70-a5c2-a1c23dc46f5e
 
 > 요구되는 기부금
 
-Liferay는 사용자의 기존 PunchOut2Go 인프라와 상거래 통합을 가능하게 하는 PunchOut2Go 커넥터를 제공합니다. 이 커넥터는 [Liferay 도움말 센터](http://customer.liferay.com/downloads) 에서 LPKG 파일로 다운로드할 수 있습니다.<!--!\[Punch Out Flow Diagram\](./liferay-commerce-connector-to-punchout2go/images/01.png) -->```{important}
+Liferay는 사용자의 기존 PunchOut2Go 인프라와 상거래 통합을 가능하게 하는 PunchOut2Go 커넥터를 제공합니다. 이 커넥터는 [Liferay 도움말 센터](http://customer.liferay.com/downloads) 에서 LPKG 파일로 다운로드할 수 있습니다. <!--!\[Punch Out Flow Diagram\](./liferay-commerce-connector-to-punchout2go/images/01.png) --> ```{important}
 PunchOut2Go 커넥터에는 Liferay Commerce 2.1.2 및 Liferay DXP 7.1 FP18+ 또는 7.2 FP6+가 필요합니다.
 ```
 

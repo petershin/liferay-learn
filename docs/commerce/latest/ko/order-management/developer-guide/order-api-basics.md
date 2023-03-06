@@ -25,11 +25,11 @@ Liferay가 실행되면,
 
 1. 주문을 생성하려면 계정 ID, 채널 ID 및 사용 통화의 [ISO 4217 통화 코드](https://en.wikipedia.org/wiki/ISO_4217) (예: USD)의 세 가지 매개변수가 필요합니다.
 
-   계정 ID를 얻으려면 *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 *제어판* &rarr; *계정*로 이동합니다. 계정을 찾아 해당 ID를 복사합니다. 또는 계정을 선택하고 *계정 ID*을 복사합니다.
+   계정 ID를 얻으려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 **제어판** &rarr; **계정** 로 이동합니다. 계정을 찾아 해당 ID를 복사합니다. 또는 계정을 선택하고 **계정 ID** 을 복사합니다.
 
    ![계정 ID를 복사합니다.](./order-api-basics/images/01.png)
 
-   채널 ID를 얻으려면 *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 *상거래* &rarr; *채널*로 이동하십시오. 주문을 추가할 채널을 선택하고 해당 ID를 복사합니다.
+   채널 ID를 얻으려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **채널** 로 이동하십시오. 주문을 추가할 채널을 선택하고 해당 ID를 복사합니다.
 
    ![채널 ID를 복사합니다.](./order-api-basics/images/02.png)
 
@@ -151,7 +151,7 @@ Liferay가 실행되면,
    }
    ```
 
-1. *전역 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; *상거래* &rarr; *주문*으로 이동 합니다 . 새 주문이 나타납니다.
+1. **전역 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; **상거래** &rarr; **주문** 으로 이동 합니다 . 새 주문이 나타납니다.
 
    ![새 주문이 추가되었는지 확인합니다.](./order-api-basics/images/03.png)
 

@@ -44,7 +44,7 @@ Then, follow these steps to deploy an example discount rule type on your Liferay
     STARTED com.acme.m6a8.web_1.0.0
     ```
 
-1. 예제 할인 규칙 유형이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _커머스_ → _할인_로 이동합니다. 할인을 받으려면 메뉴에서 _편집_ 을 클릭하십시오. _규칙_ 섹션까지 아래로 스크롤하고 (+) 아이콘을 클릭하여 새 할인 규칙을 추가합니다. 새 할인 규칙 유형("최소 제품 수 있음")은 _유형_ 드롭다운 아래에 있습니다.
+1. 예제 할인 규칙 유형이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 **커머스** → **할인** 로 이동합니다. 할인을 받으려면 메뉴에서 **편집** 을 클릭하십시오. **규칙** 섹션까지 아래로 스크롤하고 (+) 아이콘을 클릭하여 새 할인 규칙을 추가합니다. 새 할인 규칙 유형("최소 제품 수 있음")은 **유형** 드롭다운 아래에 있습니다.
 
 ```{note}
 Liferay Commerce 2.1 및 이전 버전에서는 *제어판* → *상거래* → *할인*으로 이동하여 할인을 찾습니다. 할인 메뉴에서 *수정*을 클릭한 다음 화면 상단의 *규칙*을 클릭합니다.

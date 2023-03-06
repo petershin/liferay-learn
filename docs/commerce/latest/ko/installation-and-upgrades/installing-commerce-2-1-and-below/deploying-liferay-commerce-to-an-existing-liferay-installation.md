@@ -9,7 +9,7 @@ uuid: 468e4ed9-1296-40e1-a69b-8f04b1148a11
 Liferay Commerce 사용을 시작하려면:
 
 1. 최신 Liferay Commerce `LPKG`다운로드하십시오.
-    * 기업 가입자는 [도움말 센터](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) 에서 최신 `LPKG` 다운로드할 수 있습니다.
+    * 기업 가입자는 [도움말 센터](https://customer.liferay.com/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118190997& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) 에서 최신 `LPKG` 다운로드할 수 있습니다.
       * 가입자는 또한 Liferay Commerce에 대한 주문 번호 또는 활성화 키가 필요합니다. [프록시 서버를 통해 Marketplace 앱 활성화](https://help.liferay.com/hc/ko/articles/360018427391) 을 참조하십시오.
     * 최신 오픈 소스 `LPKG` [Liferay Commerce Community 다운로드 페이지](https://www.liferay.com/downloads-community) 에서 얻을 수 있습니다.
 
@@ -19,7 +19,7 @@ Liferay Commerce 사용을 시작하려면:
     Liferay DXP에 애플리케이션을 배포하는 방법에 대해 자세히 알아보려면 [Liferay Home](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/liferay-home.html) 을 참조하십시오.
     ```
 
-1. (_구독자_) 활성화 키를 `${liferay.home}/deploy` 폴더에 배포합니다.
+1. (**구독자**) 활성화 키를 `${liferay.home}/deploy` 폴더에 배포합니다.
 1. 애플리케이션 서버 콘솔에 다음 메시지가 나타나는지 확인합니다.
 
     ```
@@ -41,8 +41,8 @@ Liferay Commerce 사용을 시작하려면:
     2019-08-09 00:34:51.753 INFO  [main][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
     ```
 
-1. 처음 시작할 때 재색인을 실행하여 Liferay Commerce 기본 콘텐츠를 채웁니다. _제어판_ &rarr; _구성_ &rarr; _검색_으로 이동합니다.
-1. _모든 검색 인덱스 재인덱싱_옆에 있는 _실행_ 클릭합니다.
+1. 처음 시작할 때 재색인을 실행하여 Liferay Commerce 기본 콘텐츠를 채웁니다. **제어판** &rarr; **구성** &rarr; **검색** 으로 이동합니다.
+1. **모든 검색 인덱스 재인덱싱** 옆에 있는 **실행** 클릭합니다.
 
 Liferay Commerce가 배포되었으며 사용할 준비가 되었습니다. 스토어 관리자는 스토어프론트 구축 및 카탈로그 채우기를 시작할 수 있습니다.
 

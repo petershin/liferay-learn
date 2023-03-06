@@ -14,15 +14,15 @@ Liferay 주문 엔진에는 1) 공개, 2) 진행 중, 3) 보류 중, 4) 처리 �
 
 ![주문은 세 가지 대체 상태로 전환될 수 있습니다.](./implementing-a-custom-order-status/images/02.png)
 
-1. _보류 중_ - 최종 주문 상태가 아닌 경우(보류 중, 처리 중, 배송됨) 주문을 보류할 수 있습니다.
+1. **보류 중** - 최종 주문 상태가 아닌 경우(보류 중, 처리 중, 배송됨) 주문을 보류할 수 있습니다.
 
-1. _취소됨_ - 주문이 최종 주문 상태가 아닌 경우(보류 중, 처리 중, 배송됨) 주문을 취소할 수 있습니다.
+1. **취소됨** - 주문이 최종 주문 상태가 아닌 경우(보류 중, 처리 중, 배송됨) 주문을 취소할 수 있습니다.
 
-1. _부분 배송됨_ - 주문에 여러 항목이 있고 모든 항목이 배송되지 않은 경우 _부분 배송됨_ 상태로 전환됩니다.
+1. **부분 배송됨** - 주문에 여러 항목이 있고 모든 항목이 배송되지 않은 경우 **부분 배송됨** 상태로 전환됩니다.
 
 ![주문 흐름에 새 주문 상태를 추가할 수 있습니다.](./implementing-a-custom-order-status/images/03.png)
 
-기본 주문 흐름을 변경하기 위해 사용자 지정 주문 상태를 추가할 수 있습니다. 아래에서 *Scheduling* 이라는 주문 상태를 추가하고 기존 *Pending* 상태와 *Processing* 상태 사이에 배치합니다. 이 사용자 지정 단계는 수락되기 전에 예약 대기 중인 주문을 나타냅니다. 주문의 사용자 정의 필드는 일정 상태를 추적합니다. 각 주문 상태 및 전환에 대한 자세한 내용은 [상거래 주문 엔진 개요](./commerce-order-engine-overview.md) 을 참조하십시오.
+기본 주문 흐름을 변경하기 위해 사용자 지정 주문 상태를 추가할 수 있습니다. 아래에서 **Scheduling** 이라는 주문 상태를 추가하고 기존 **Pending** 상태와 **Processing** 상태 사이에 배치합니다. 이 사용자 지정 단계는 수락되기 전에 예약 대기 중인 주문을 나타냅니다. 주문의 사용자 정의 필드는 일정 상태를 추적합니다. 각 주문 상태 및 전환에 대한 자세한 내용은 [상거래 주문 엔진 개요](./commerce-order-engine-overview.md) 을 참조하십시오.
 
 ## 주문 상태 배포
 
@@ -56,21 +56,21 @@ Liferay 주문 엔진에는 1) 공개, 2) 진행 중, 3) 보류 중, 4) 처리 �
     STARTED com.acme.m4v7.impl_1.0.0
     ```
 
-1. 주문 일정을 추적하려면 사용자 정의 필드를 생성해야 합니다. _애플리케이션 메뉴_ (![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _제어판_ →  _사용자 정의 필드_으로 이동합니다.
+1. 주문 일정을 추적하려면 사용자 정의 필드를 생성해야 합니다. **애플리케이션 메뉴**(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 **제어판** → **사용자 정의 필드** 으로 이동합니다.
 
-1. 항목 목록에서 Commerce Order를 선택하고 _추가_ (![Add](../../images/icon-add.png)) 버튼을 클릭하여 새 필드를 추가합니다. 사용 가능한 필드에서 _드롭다운_ 옵션을 선택하고 아래 정보를 입력합니다. 완료되면 _저장_ 을 클릭합니다.
+1. 항목 목록에서 Commerce Order를 선택하고 **추가**(![Add](../../images/icon-add.png)) 버튼을 클릭하여 새 필드를 추가합니다. 사용 가능한 필드에서 **드롭다운** 옵션을 선택하고 아래 정보를 입력합니다. 완료되면 **저장** 을 클릭합니다.
 
-   __필드 이름__: m4v7Scheduling
+**_** 필드 이름 **_** : m4v7Scheduling
 
-   __데이터 유형__: 텍스트
+**_** 데이터 유형 **_** : 텍스트
 
-   __값__: 보류 중, 확인됨(두 개의 별도 라인)
+**_** 값 **_** : 보류 중, 확인됨(두 개의 별도 라인)
 
  ![주문 일정을 추적하기 위해 사용자 지정 필드를 추가합니다.](./implementing-a-custom-order-status/images/04.png)
 
 1. 브라우저를 `https://localhost:8080` 로 열고 응용 프로그램 메뉴(![Applications Menu](../../images/icon-applications-menu.png))에서 귀하의 사이트로 이동하여 주문을 하여 예제 주문 상태가 추가되었는지 확인하십시오.
 
-1. 애플리케이션 메뉴를 다시 클릭하고 _Commerce_ →  _Orders_으로 이동한 다음 주문을 선택합니다. 새로운 상태 _Scheduling_ 과 새로운 주문 흐름을 설정하는 Scheduling이라는 버튼이 주문 수명 주기에 나타납니다. 새 사용자 정의 필드는 주문의 _사용자 정의 필드_ 섹션 아래에 있습니다.
+1. 애플리케이션 메뉴를 다시 클릭하고 **Commerce** → **Orders** 으로 이동한 다음 주문을 선택합니다. 새로운 상태 **Scheduling** 과 새로운 주문 흐름을 설정하는 Scheduling이라는 버튼이 주문 수명 주기에 나타납니다. 새 사용자 정의 필드는 주문의 **사용자 정의 필드** 섹션 아래에 있습니다.
 
    ![새 주문 상태가 작동 중입니다.](./implementing-a-custom-order-status/images/05.gif)
 
@@ -107,7 +107,7 @@ Liferay Commerce가 주문 상태 레지스트리에서 새 상태를 다른 상
 public String getLabel(Locale locale);
 ```
 
-이 메서드는 주문 상태의 이름을 반환합니다. 이 이름은 UI에 나타나는 이름에 해당하는 언어 키일 수 있습니다. 이 경우 문자열 _Scheduling_을 반환합니다.
+이 메서드는 주문 상태의 이름을 반환합니다. 이 이름은 UI에 나타나는 이름에 해당하는 언어 키일 수 있습니다. 이 경우 문자열 **Scheduling** 을 반환합니다.
 
 ```java
 public int getKey();
@@ -148,7 +148,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
 * [`isTransitionCriteriaMet` 메서드 구현](#implement-the-istransitioncriteriamet-method)
 * [`doTransition` 메서드 구현](#implement-the-dotransition-method)
 * [`isComplete` 메소드 구현](#implement-the-iscomplete-method)
-* [기존 _처리_ 상태 재정의](#override-the-existing-processing-status)
+* [기존 **처리** 상태 재정의](#override-the-existing-processing-status)
 * [처리 상태 비즈니스 로직 조정](#tweak-the-processing-status-business-logic)
 
 #### isTransitionCriteriaMet 메소드 구현
@@ -159,7 +159,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
     :lines: 64-75
 ```
 
-주문이 _예약_ 주문 상태로 전환되려면 _보류_ 상태여야 합니다. 이것은 `commerceOrder` 개체에서 `getOrderStatus()` 메서드를 사용하여 확인합니다. 이 메서드는 주문이 보류 중이면 `참` 을 반환하고 그렇지 않으면 `거짓` 을 반환합니다.
+주문이 **예약** 주문 상태로 전환되려면 **보류** 상태여야 합니다. 이것은 `commerceOrder` 개체에서 `getOrderStatus()` 메서드를 사용하여 확인합니다. 이 메서드는 주문이 보류 중이면 `참` 을 반환하고 그렇지 않으면 `거짓` 을 반환합니다.
 
 #### doTransition 메소드 구현
 
@@ -169,7 +169,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
     :lines: 26-33
 ```
 
-주문에 대한 전환 기준이 충족되면 고유 키를 사용하여 주문 상태를 *Scheduling* 로 설정합니다. 그런 다음 `_commerceOrderService`에서 `updateCommerceOrder()` 메서드를 호출하고 `commerceOrder` 개체를 전달하여 새 상태를 업데이트합니다.
+주문에 대한 전환 기준이 충족되면 고유 키를 사용하여 주문 상태를 **Scheduling** 로 설정합니다. 그런 다음 `_commerceOrderService`에서 `updateCommerceOrder()` 메서드를 호출하고 `commerceOrder` 개체를 전달하여 새 상태를 업데이트합니다.
 
 #### isComplete 메소드 구현
 
@@ -179,7 +179,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
     :lines: 50-62
 ```
 
-Scheduling 단계를 완료하려면 Custom Field를 _Confirmed_로 설정해야 합니다. 이 사용자 정의 속성은 `m4v7Scheduling`키를 사용하여 `ExpandoBridge` 을 통해 검색됩니다. 드롭다운이므로 반환 값은 String 배열 안에 있으며 첫 번째 값입니다. 값이 _Confirmed_이면 메서드는 `true`을 반환하고 배열이 비어 있으면 `false`를 반환합니다.
+Scheduling 단계를 완료하려면 Custom Field를 **Confirmed** 로 설정해야 합니다. 이 사용자 정의 속성은 `m4v7Scheduling`키를 사용하여 `ExpandoBridge` 을 통해 검색됩니다. 드롭다운이므로 반환 값은 String 배열 안에 있으며 첫 번째 값입니다. 값이 **Confirmed** 이면 메서드는 `true`을 반환하고 배열이 비어 있으면 `false`를 반환합니다.
 
 #### 기존 처리 상태 재정의
 

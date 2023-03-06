@@ -3,7 +3,7 @@ uuid: c88847e2-c5cc-4afb-a888-b7cbcfb36f7b
 ---
 # Option API Basics
 
-You can manage options from the Applications menu or with REST APIs. Call the [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) services to create and manage options.
+You can manage [product options](../../product-management/creating-and-managing-products/products/using-product-options.md) from the Applications menu or with REST APIs. Call the [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) services to create and manage options.
 
 ## Adding an Option
 
@@ -22,7 +22,9 @@ Once Liferay is running,
    unzip liferay-d3g5.zip
    ```
 
-1. Options are scoped to an instance. You cannot create multiple options with the same `key`. Use the cURL script to add a new option. On the command line, navigate to the `curl` folder. Execute the `Option_POST_ToInstance.sh` script.
+1. Options are scoped to an instance, and each option must specify a unique `key`.
+
+   Use the cURL script to add a new option. On the command line, navigate to the `curl` folder. Execute the `Option_POST_ToInstance.sh` script.
 
    ```bash
    ./Option_POST_ToInstance.sh
@@ -78,15 +80,15 @@ Once Liferay is running,
 
 ![The following option field types are available when creating an option.](./option-api-basics/images/02.png)
 
-| Field Type         | Value for API     |
-| :----------------- | :---------------- |
-| Text               | text              |
-| Select From List   | select            |
-| Single Selection   | radio             |
-| Multiple Selection | checkbox_multiple |
-| Date               | date              |
-| Numeric            | numeric           |
-| Boolean            | checkbox          |
+| Field Type         | API Value                          |
+| :----------------- | :--------------------------------- |
+| Text               | `"fieldType": "text"`              |
+| Select From List   | `"fieldType": "select"`            |
+| Single Selection   | `"fieldType": "radio"`             |
+| Multiple Selection | `"fieldType": "checkbox_multiple"` |
+| Date               | `"fieldType": "date"`              |
+| Numeric            | `"fieldType": "numeric"`           |
+| Boolean            | `"fieldType": "checkbox"`          |
 
 ## Examine the cURL Command
 
@@ -130,7 +132,7 @@ This class invokes the REST service using only three lines of code:
 | `OptionResource optionResource = builder.authentication(...).build();` | Use basic authentication and generate a `OptionResource` service instance. |
 | `optionResource.postOption(...);`                                      | Call the `optionResource.postOption` method and pass the data to post.     |
 
-The project includes the `com.liferay.headless.commerce.admin.catalog.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
+The project includes the `com.liferay.headless.commerce.admin.catalog.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API Explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
 ```{note}
 The `main` method's comment demonstrates running the class.
@@ -182,7 +184,7 @@ The instance's `Option` objects are formatted in JSON.
 
 ### Filtering, Paginating, Searching, and Sorting Options
 
-This API also accepts parameters to filter, paginate, search, and sort the options. See the [`getOptionsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java#L43-#L46) method for more information. You can use the following `Option` fields in your queries to filter, search, and sort the results.
+This API also accepts parameters to filter, paginate, search, and sort the options. See the [`getOptionsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java#L43-#L46) method for more information. You can use the following `Option` fields in your queries to filter, search, and sort the results:
 
 * fieldType
 * key

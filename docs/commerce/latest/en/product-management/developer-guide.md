@@ -17,6 +17,7 @@ developer-guide/product-api-basics.md
 
 ::::{grid} 2
 :gutter: 3 3 3 3
+
 :::{grid-item-card}  Catalog API Basics
 :link: ./developer-guide/catalog-api-basics.md
 :::

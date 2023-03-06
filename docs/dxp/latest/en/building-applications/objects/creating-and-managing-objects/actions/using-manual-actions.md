@@ -1,3 +1,6 @@
+---
+uuid: 29b299d7-f4aa-4ce7-b016-a16414b6dc83
+---
 # Using Manual Actions
 
 Standalone triggers define custom triggers for running any type of object action manually. Once defined, users can run the action via the object definition's UI or headless APIs.

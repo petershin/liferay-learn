@@ -36,7 +36,7 @@ Liferay Cloud를 시작하려면 모든 계정, 환경 및 서비스가 성공�
 
 1. GitHub에 로그인
 
-1. _Your Teams_ 검색 상자에서 `dxpcloud` 을 검색합니다.
+1. **Your Teams** 검색 상자에서 `dxpcloud` 을 검색합니다.
 
 ![그림 2: '귀하의 팀' 검색 상자에서 dxpcloud를 검색합니다.](./initial-setup-overview/images/02.png)
 
@@ -56,7 +56,7 @@ Liferay Cloud를 시작하려면 모든 계정, 환경 및 서비스가 성공�
 
 Jenkins(CI) 및 Liferay에 로그인하여 웹 인터페이스에 직접 액세스합니다.
 
-두 로그인 자격 증명은 초기 온보딩 이메일에 제공되지만 *infra* 환경의 *ci* 서비스 페이지에서 *환경 변수* 아래에도 나열됩니다.
+두 로그인 자격 증명은 초기 온보딩 이메일에 제공되지만 **infra** 환경의 **ci** 서비스 페이지에서 **환경 변수** 아래에도 나열됩니다.
 
 자세한 지침은 [Liferay 클라우드 서비스에 로그인](./logging-into-your-liferay-cloud-services.md) 을 참조하십시오.
 
@@ -66,7 +66,7 @@ Liferay Cloud에서 배포를 시작하기 전에 올바른 환경과 서비스�
 
 ### 환경 확인
 
-구매한 모든 환경이 Liferay Cloud Console [홈 페이지](https://console.liferay.cloud/projects) *프로젝트*아래에 나열되어 있는지 확인하십시오.
+구매한 모든 환경이 Liferay Cloud Console [홈 페이지](https://console.liferay.cloud/projects)**프로젝트** 아래에 나열되어 있는지 확인하십시오.
 
 ![그림 3: Liferay Cloud Console에서 프로비저닝된 환경을 참조하십시오.](./initial-setup-overview/images/03.png)
 
@@ -78,7 +78,7 @@ Liferay Cloud에서 배포를 시작하기 전에 올바른 환경과 서비스�
 
 모든 환경 사이트는 Liferay Cloud Console [홈 페이지](https://console.liferay.cloud/projects) 에 나열되어 있습니다.
 
-*개요* 페이지 또는 *설정* 페이지로 이동하여 환경의 사이트를 볼 수도 있습니다.
+**개요** 페이지 또는 **설정** 페이지로 이동하여 환경의 사이트를 볼 수도 있습니다.
 
 ![그림 4: 개요 페이지에서 환경의 사이트를 봅니다.](./initial-setup-overview/images/04.png)
 
@@ -88,9 +88,9 @@ Liferay Cloud에서 배포를 시작하기 전에 올바른 환경과 서비스�
 
 Liferay Cloud 스택 서비스가 올바르게 배포되었는지 확인합니다.
 
-1. Liferay Cloud Console에서 *dev* 환경에 액세스합니다.
+1. Liferay Cloud Console에서 **dev** 환경에 액세스합니다.
 
-1. *서비스* 페이지로 이동합니다.
+1. **서비스** 페이지로 이동합니다.
 
 ![그림 5: 서비스 페이지에서 Liferay Cloud Stack 서비스의 상태를 봅니다.](./initial-setup-overview/images/05.png)
 

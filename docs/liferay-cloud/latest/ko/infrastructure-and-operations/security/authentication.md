@@ -17,4 +17,4 @@ curl -X POST /
   -F 'volume=@/my-folder/volume.tgz'
 ```
 
-> **참고**: 헤더 `dxpcloud-authorization` 에 사용자 토큰을 전달하면 버전 `3.2.0` 이상의 백업 서비스에서만 작동합니다. 이전 버전은 `3.2.0`이상으로 업그레이드해야 합니다. 이전 버전에 대한 요청은 헤더 `Authorization: Bearer <PROJECT_MASTER_TOKEN>`를 사용해야 합니다. 프로젝트 마스터 토큰을 찾으려면 Liferay Cloud Console의 셸에서 `env grep LCP_PROJECT_MASTER_TOKEN` 명령을 실행합니다.
+> **참고** : 헤더 `dxpcloud-authorization` 에 사용자 토큰을 전달하면 버전 `3.2.0` 이상의 백업 서비스에서만 작동합니다. 이전 버전은 `3.2.0`이상으로 업그레이드해야 합니다. 이전 버전에 대한 요청은 헤더 `Authorization: Bearer <PROJECT_MASTER_TOKEN>`를 사용해야 합니다. 프로젝트 마스터 토큰을 찾으려면 Liferay Cloud Console의 셸에서 `env grep LCP_PROJECT_MASTER_TOKEN` 명령을 실행합니다.

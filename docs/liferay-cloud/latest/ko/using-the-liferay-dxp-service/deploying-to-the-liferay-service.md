@@ -20,7 +20,7 @@ Liferay 서비스 `LCP.json` 파일의 `image` 속성에 정의된 DXP의 주 �
 
 [배포 가능한 파일](#deploying-themes-portlets-and-osgi-modules) , [빌드된 소스 코드](#building-and-deploying-source-code) , [핫픽스](#deploying-hotfixes) 및 [라이선스](#deploying-licenses) CLI 도구를 사용하는 경우 배포에 포함할 추가 단계가 필요합니다. [CI 서비스](../platform-services/continuous-integration.md) 을 사용하여 리포지토리에서 빌드를 생성하는 경우 이러한 추가 단계는 필요하지 않습니다.
 
-CLI를 사용하여 정상적으로 Liferay 서비스를 배포하는 경우(모든 서비스를 한 번에 배포하거나 `liferay/` 디렉터리에서 배포할 때) Liferay DXP 이미지의 **기본 버전** ( `LCP.json에 정의된 주 버전 사용)`) 사용자 정의가 포함되지 않은 배포됩니다. 포함할 사용자 지정을 서비스와 함께 구체적으로 빌드하고 배포해야 하기 때문에 이런 일이 발생합니다.
+CLI를 사용하여 정상적으로 Liferay 서비스를 배포하는 경우(모든 서비스를 한 번에 배포하거나 `liferay/` 디렉터리에서 배포할 때) Liferay DXP 이미지의 **기본 버전**( `LCP.json에 정의된 주 버전 사용)`) 사용자 정의가 포함되지 않은 배포됩니다. 포함할 사용자 지정을 서비스와 함께 구체적으로 빌드하고 배포해야 하기 때문에 이런 일이 발생합니다.
 
 사용자 정의와 함께 Liferay 서비스를 배포하려면 다음 단계를 따르십시오.
 

@@ -69,9 +69,9 @@
 
 새 빌드가 준비되면 Liferay Cloud 콘솔을 통해 프로젝트의 `dev` 환경에 배포하십시오.
 
-1. Liferay Cloud 콘솔에서 프로젝트의 *빌드* 페이지로 이동합니다. 모든 프로젝트 환경에서 이 페이지에 액세스할 수 있습니다.
+1. Liferay Cloud 콘솔에서 프로젝트의 **빌드** 페이지로 이동합니다. 모든 프로젝트 환경에서 이 페이지에 액세스할 수 있습니다.
 
-1. 배포하려는 빌드에 대해 *Actions* 버튼( ⋮ )을 클릭하고 *Deploy Build To...*를 선택합니다.
+1. 배포하려는 빌드에 대해 **Actions** 버튼( ⋮ )을 클릭하고 **Deploy Build To...** 를 선택합니다.
 
    ![빌드 페이지에서 빌드를 보고 배포합니다.](./deploying-changes-via-the-liferay-cloud-console/images/04.png)
 
@@ -79,7 +79,7 @@
 
    ![개발 환경을 선택하고 빌드 배포를 클릭합니다.](./deploying-changes-via-the-liferay-cloud-console/images/05.png)
 
-1. 확인란을 사용하여 배포를 확인하고 *Deploy Build*을 클릭합니다.
+1. 확인란을 사용하여 배포를 확인하고 **Deploy Build** 을 클릭합니다.
 
    ![확인란을 사용하여 배포를 확인하고 빌드 배포를 클릭합니다.](./deploying-changes-via-the-liferay-cloud-console/images/06.png)
 
@@ -87,17 +87,17 @@
    배포하려는 빌드의 *빌드 ID*를 클릭하여 *빌드 배포 대상...* 페이지에 액세스할 수도 있습니다.
    ```
 
-   `dev` 환경의 *배포* 페이지와 *로그* 및 *활동* 페이지에서 배포 상태를 볼 수 있습니다.
+   `dev` 환경의 **배포** 페이지와 **로그** 및 **활동** 페이지에서 배포 상태를 볼 수 있습니다.
 
    ![배포 페이지에서 배포 상태 보기](./deploying-changes-via-the-liferay-cloud-console/images/07.png)
 
 ## 샘플 배포 확인
 
-빌드가 성공적으로 배포되고 `dev` 환경의 Liferay 서비스가 *준비*되면 다음 단계에 따라 변경 사항을 확인하십시오.
+빌드가 성공적으로 배포되고 `dev` 환경의 Liferay 서비스가 **준비** 되면 다음 단계에 따라 변경 사항을 확인하십시오.
 
 1. 프로젝트의 `dev` 환경으로 이동합니다.
 
-1. *Web Server* 서비스 페이지로 이동하고 해당 URL을 클릭하여 `dev` 환경의 Liferay 인스턴스에 액세스합니다: `https://webserver-<project-name>-dev.lfr.cloud/`.
+1. **Web Server** 서비스 페이지로 이동하고 해당 URL을 클릭하여 `dev` 환경의 Liferay 인스턴스에 액세스합니다: `https://webserver-<project-name>-dev.lfr.cloud/`.
 
    ![개발 환경의 Liferay 인스턴스에 액세스하려면 웹 서버 URL을 클릭하십시오.](./deploying-changes-via-the-liferay-cloud-console/images/08.png)
 

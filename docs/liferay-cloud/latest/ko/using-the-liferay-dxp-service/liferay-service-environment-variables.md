@@ -61,7 +61,7 @@ Liferay 서비스에 추가하는 방법에 대한 자세한 내용은 [환경 �
 
 | 이름                                           | 기정값 | 묘사                                                                                                        |
 |:-------------------------------------------- |:--- |:--------------------------------------------------------------------------------------------------------- |
-| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        |     | *Dynatrace 계정에서 찾을 수 있는 일련의 문자열 Dynatrace 배포* &rarr; *설치 시작* &rarr; *PaaS 모니터링 설정* &rarr; *설치 프로그램 다운로드*. |
+| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        |     | **Dynatrace 계정에서 찾을 수 있는 일련의 문자열 Dynatrace 배포** &rarr; **설치 시작** &rarr; **PaaS 모니터링 설정** &rarr; **설치 프로그램 다운로드** . |
 | `LCP_SECRET_DATABASE_NAME`                   |     | 데이터베이스 연결(jdbc, jdbc ping 및 읽기 전용 사용자 연결)에 사용되는 데이터베이스 이름입니다.                                             |
 | `LCP_SECRET_DATABASE_PASSWORD`               |     | jdbc(및 jdbc ping) 구성에만 사용되는 데이터베이스 비밀번호입니다.                                                               |
 | `LCP_SECRET_DATABASE_READONLY_USER`          |     | 읽기 전용 사용자의 사용자 이름입니다.                                                                                     |

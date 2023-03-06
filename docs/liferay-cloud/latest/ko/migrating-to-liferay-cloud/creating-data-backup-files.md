@@ -28,11 +28,11 @@ uuid: ee3a8169-8408-4c36-afbc-9976f0ef3866
 
 예를 들어 다음과 같은 소문자 테이블 이름을 변환합니다.
 
-* *계정 항목* &rarr; *계정 항목*
+* **계정 항목** &rarr; **계정 항목**
 
-* *cpdefinition* &rarr; *CPDefinition*
+* **cpdefinition** &rarr; **CPDefinition**
 
-* *휴지통 항목* &rarr; *휴지통 항목*
+* **휴지통 항목** &rarr; **휴지통 항목**
 
 MySQL에서 [`RENAME TABLE`](https://dev.mysql.com/doc/refman/5.7/en/rename-table.html) 명령을 사용하여 테이블 이름을 변경할 수 있습니다. 테이블 이름을 조정하는 데 도움이 필요하면 [지원 티켓을 제출](https://help.liferay.com) 하십시오.
 
@@ -104,7 +104,7 @@ Git 명령을 실행하여 Git이 설치된 터미널을 사용하여 변경 사
 
 1. Liferay Cloud Console에서 빌드 페이지로 이동합니다(페이지 상단의 링크 사용).
 
-1. 목록에서 이전에 생성한 빌드를 찾고 작업 메뉴에서 *Deploy build to*클릭합니다.
+1. 목록에서 이전에 생성한 빌드를 찾고 작업 메뉴에서 **Deploy build to** 클릭합니다.
    
    ![빌드의 작업 메뉴를 사용하여 배포합니다.](./creating-data-backup-files/images/01.png)
 
@@ -114,12 +114,12 @@ Git 명령을 실행하여 Git이 설치된 터미널을 사용하여 변경 사
    
    ![확인란을 선택하고 준비가 되면 빌드를 배포합니다.](./creating-data-backup-files/images/02.png)
 
-1. *빌드*배포 를 클릭합니다.
+1. **빌드** 배포 를 클릭합니다.
 
 선택한 환경에 빌드가 배포되고 `liferay` 서비스가 다시 시작되면 `Portal-ext.properties` 에 대한 변경 사항이 적용됩니다.
 
 ```{important}
-Liferay Cloud의 모든 환경은 문서 라이브러리에 대해 동일한 구현을 사용하여 [다른 환경으로 복원](../platform-services/backup-service/restoring-data-from-a -backup.md). 마이그레이션된 문서 라이브러리 저장소를 모두 올바르게 사용하려면 모든 환경에 빌드를 배포해야 합니다.
+Liferay Cloud의 모든 환경은 문서 라이브러리에 대해 동일한 구현을 사용하여 [다른 환경으로 복원](../platform-services/backup-service/restoring-data-from-a-backup.md). 마이그레이션된 문서 라이브러리 저장소를 모두 올바르게 사용하려면 모든 환경에 빌드를 배포해야 합니다.
 ```
 
 ## 문서 라이브러리 압축

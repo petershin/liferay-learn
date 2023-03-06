@@ -46,7 +46,7 @@ git clone https://github.com/dxpcloud/acme
 
 1. Docker Hub에서 [Liferay DXP 이미지](https://hub.docker.com/r/liferay/dxp/tags) 페이지로 이동합니다.
 
-1. *Filter Tags* 필드를 사용하여 [이전에 찾은](#find-liferay-version-information) 주 버전 및 수정 팩 번호를 사용하여 이미지 목록을 필터링합니다(예: `7.2.10- dxp-5`). 이 Docker 이미지 이름을 복사합니다.
+1. **Filter Tags** 필드를 사용하여 [이전에 찾은](#find-liferay-version-information) 주 버전 및 수정 팩 번호를 사용하여 이미지 목록을 필터링합니다(예: `7.2.10- dxp-5`). 이 Docker 이미지 이름을 복사합니다.
 
      ![필터 태그 필드를 사용하여 Liferay DXP 이미지 목록을 찾고 있는 주 버전으로 좁힐 수 있습니다.](./matching-dxp-versions/images/02.png)
 
@@ -76,7 +76,7 @@ git clone https://github.com/dxpcloud/acme
 
     ![최신 서비스 업데이트 링크를 클릭하여 환경을 최신 상태로 유지하십시오.](./matching-dxp-versions/images/03.png)
 
-1. 페이지에 나열된 **Liferay** 서비스 이미지를 찾으십시오. 온프레미스 Liferay 설치의 *주 버전* 과 일치하는 이미지 이름을 복사합니다.
+1. 페이지에 나열된 **Liferay** 서비스 이미지를 찾으십시오. 온프레미스 Liferay 설치의 **주 버전** 과 일치하는 이미지 이름을 복사합니다.
 
     ![나열된 Liferay 서비스 이미지에서 Liferay 설치의 주 버전과 일치하는 이미지를 선택합니다.](./matching-dxp-versions/images/04.png)
 
@@ -150,7 +150,7 @@ Git 명령을 실행하여 Git이 설치된 터미널을 사용하여 변경 사
 
 1. Liferay Cloud Console에서 빌드 페이지로 이동합니다(페이지 상단의 링크 사용).
 
-1. 목록에서 이전에 생성한 빌드를 찾고 작업 메뉴에서 *Deploy build to*을 클릭합니다.
+1. 목록에서 이전에 생성한 빌드를 찾고 작업 메뉴에서 **Deploy build to** 을 클릭합니다.
    
    ![빌드의 작업 메뉴를 사용하여 배포합니다.](./matching-dxp-versions/images/06.png)
 
@@ -160,7 +160,7 @@ Git 명령을 실행하여 Git이 설치된 터미널을 사용하여 변경 사
    
    ![확인란을 선택하고 준비가 되면 빌드를 배포합니다.](./matching-dxp-versions/images/07.png)
 
-1. *빌드*배포 를 클릭합니다.
+1. **빌드** 배포 를 클릭합니다.
 
 빌드가 선택한 환경에 배포되고 서비스가 시작될 때 올바른 버전이 적용됩니다.
 

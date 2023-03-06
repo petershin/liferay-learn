@@ -109,7 +109,7 @@ Git 명령을 실행하여 Git이 설치된 터미널을 사용하여 변경 사
 
 1. Liferay Cloud 콘솔에서 빌드 페이지로 이동합니다(페이지 상단의 링크 사용).
 
-1. 목록에서 이전에 생성한 빌드를 찾고 작업 메뉴에서 *Deploy build to*을 클릭합니다.
+1. 목록에서 이전에 생성한 빌드를 찾고 작업 메뉴에서 **Deploy build to** 을 클릭합니다.
 
     ![빌드의 작업 메뉴를 사용하여 배포합니다.](./upgrading-to-a-high-availability-subscription/images/03.png)
 
@@ -119,7 +119,7 @@ Git 명령을 실행하여 Git이 설치된 터미널을 사용하여 변경 사
 
     ![확인란을 선택하고 준비가 되면 빌드를 배포합니다.](./upgrading-to-a-high-availability-subscription/images/04.png)
 
-1. *빌드*배포 를 클릭합니다.
+1. **빌드** 배포 를 클릭합니다.
 
 빌드가 환경에 배포되고 구성한 추가 인스턴스로 서비스가 다시 시작됩니다.
 

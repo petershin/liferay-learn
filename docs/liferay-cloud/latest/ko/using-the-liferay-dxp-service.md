@@ -53,7 +53,7 @@ Liferay Cloud에 대한 [서비스 변경 로그](https://help.liferay.com/hc/ko
 
 Liferay DXP에 사용자 지정 추가 사항을 배포하려면 새 모듈, 라이선스 또는 핫픽스를 Git 리포지토리의 적절한 사이트에 추가해야 합니다.
 
-`common/` 디렉토리를 제외하고 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때만 _전파됩니다. `common/` 디렉토리에 추가된 변경 사항은 대상 배포 환경에 관계없이 _항상_ 배포됩니다. 이것은 모든 서비스에 대해 `configs/` 디렉토리 내의 모든 하위 폴더에 적용됩니다.
+`common/` 디렉토리를 제외하고 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때만 **전파됩니다. `common/` 디렉토리에 추가된 변경 사항은 대상 배포 환경에 관계없이** 항상_ 배포됩니다. 이것은 모든 서비스에 대해 `configs/` 디렉토리 내의 모든 하위 폴더에 적용됩니다.
 
 Liferay 서비스는 다른 서비스(예: 핫픽스 추가, 모듈의 소스 코드 빌드)에 비해 더 많은 사용자 지정 수단을 제공하므로 서비스를 배포할 때 몇 가지 더 고려해야 할 사항이 있습니다. 자세한 내용은 [Liferay 서비스에 배포](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md)를 참조하십시오. 또한 일반적인 배포 워크플로 방법에 대한 자세한 내용은 [배포 워크플로 개요](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)를 참조하세요. Liferay Cloud에 배포하는 방법에 대한 자습서는 [DCP Cloud Console을 통해 변경 사항 배포](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)를 참조하십시오.
 

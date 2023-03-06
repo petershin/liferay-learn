@@ -64,7 +64,7 @@ Liferay Cloud에서 Liferay를 사용하기 시작할 때 애플리케이션 성
 
 * [**서비스 팝오버**](../manage-and-optimize/application-metrics.md#service-popover) 및 [**모니터링 화면**](../manage-and-optimize/application-metrics.md#extended-application-metrics) 을 보고 서비스 및 리소스 사용량에 대한 세부 정보를 확인합니다. 서비스 성능 모니터링에 대한 자세한 내용은 [애플리케이션 지표](../manage-and-optimize/application-metrics.md) 을 참조하십시오.
 
-* 프로덕션 환경의 경우 [Dynatrace 통합](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) 을 사용하여 고급 성능 지표를 사용할 수도 있습니다. *이를 사용하려면 Liferay Cloud 구독에 특정 Dynatrace 애드온이 필요합니다.*
+* 프로덕션 환경의 경우 [Dynatrace 통합](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) 을 사용하여 고급 성능 지표를 사용할 수도 있습니다. **이를 사용하려면 Liferay Cloud 구독에 특정 Dynatrace 애드온이 필요합니다.**
 
 온프레미스 인스턴스를 조정하는 것과 같은 방식으로 Liferay Cloud의 인스턴스로 자체 성능 테스트 및 최적화를 수행해야 합니다. 서비스 데이터, 메트릭 및 사용 가능한 [로깅](../troubleshooting/reading-liferay-cloud-service-logs.md) 이 모두 테스트에 도움이 됩니다.
 

@@ -41,11 +41,11 @@ Liferay Cloud에서 환경을 업그레이드하려면 업그레이드된 데이
 
 1. [Liferay 클라우드 콘솔](https://console.liferay.cloud/login) 에 로그인합니다.
 
-1. 프로덕션 환경으로 이동한 다음 메뉴에서 _백업_ 을 선택합니다.
+1. 프로덕션 환경으로 이동한 다음 메뉴에서 **백업** 을 선택합니다.
 
     ![프로덕션 환경에서 백업 페이지로 이동합니다.](./upgrading-your-liferay-dxp-instance/images/01.png)
 
-1. 나열된 백업 중 하나를 선택하고 작업 메뉴에서 _다운로드_ 을 선택합니다. 데이터 볼륨 및 데이터베이스 zip 파일을 다운로드합니다.
+1. 나열된 백업 중 하나를 선택하고 작업 메뉴에서 **다운로드** 을 선택합니다. 데이터 볼륨 및 데이터베이스 zip 파일을 다운로드합니다.
 
     ![데이터 볼륨과 데이터베이스 아카이브를 모두 다운로드하려면 각 옵션을 클릭하십시오.](./upgrading-your-liferay-dxp-instance/images/02.png)
 
@@ -199,9 +199,9 @@ Checking to see if all upgrades have completed... done.
 
 1. 아직 로그인하지 않은 경우 [Liferay Cloud 콘솔](https://console.liferay.cloud/login) 에 로그인합니다.
 
-1. 적절한 환경에 대한 *백업* 페이지로 이동합니다.
+1. 적절한 환경에 대한 **백업** 페이지로 이동합니다.
 
-1. 화면 상단 근처의 *백업 업로드...* 을 클릭합니다.
+1. 화면 상단 근처의 **백업 업로드...** 을 클릭합니다.
 
     ![백업 업로드 버튼을 클릭하여 업로드 페이지에 액세스합니다.](./upgrading-your-liferay-dxp-instance/images/03.png)
 
@@ -209,7 +209,7 @@ Checking to see if all upgrades have completed... done.
 
     ![아이콘을 클릭하여 데이터베이스와 문서 라이브러리를 모두 .gz 아카이브로 업로드합니다.](./upgrading-your-liferay-dxp-instance/images/04.png)
 
-1. 데이터베이스 덤프와 문서 라이브러리가 모두 업로드되면 *업로드 시작*을 클릭합니다.
+1. 데이터베이스 덤프와 문서 라이브러리가 모두 업로드되면 **업로드 시작** 을 클릭합니다.
 
 ```{note}
 업로드 API를 통해 데이터베이스 덤프 및 문서 라이브러리를 업로드할 수도 있습니다. 자세한 내용은 [백업 서비스 API](../platform-services/backup-service/downloading-and-uploading-backups.md#backup-service-apis) 를 참조하세요.
@@ -235,9 +235,9 @@ Liferay DXP의 새 버전을 반영하도록 필요에 따라 다음 사이트�
 
 1. 아직 로그인하지 않은 경우 Liferay Cloud 콘솔에 로그인합니다.
 
-1. [백업을 업로드한](#upload-the-document-library-and-database) 환경으로 이동한 다음 사이드 메뉴에서 _Backups_를 클릭합니다.
+1. [백업을 업로드한](#upload-the-document-library-and-database) 환경으로 이동한 다음 사이드 메뉴에서 **Backups** 를 클릭합니다.
    
-   1 목록에서 백업을 선택한 다음 해당 백업에 대한 작업 메뉴에서 _복원을_ 로 클릭합니다.
+   1 목록에서 백업을 선택한 다음 해당 백업에 대한 작업 메뉴에서 **복원을** 로 클릭합니다.
   
   ![업로드된 백업에 대한 작업 메뉴에서 복원 대상...을 선택합니다.](./upgrading-your-liferay-dxp-instance/images/05.png)
 
@@ -245,7 +245,7 @@ Liferay DXP의 새 버전을 반영하도록 필요에 따라 다음 사이트�
   
   ![백업을 배포할 환경을 선택합니다.](./upgrading-your-liferay-dxp-instance/images/06.png)
 
-1 _환경으로 복원_을 클릭합니다. 
+1 **환경으로 복원** 을 클릭합니다. 
 
     ```{note}
     백업이 배포되는 동안 선택한 환경을 사용할 수 없습니다.

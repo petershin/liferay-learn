@@ -13,7 +13,7 @@
 
 Liferay Cloud Console의 원하는 환경에서 시작하십시오. 그런 다음 `Services`아래에서 `liferay`으로 이동한 다음 `Environment Variables`를 클릭합니다. `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` 변수가 `true`으로 설정되었는지 확인합니다. 이는 이미지 시작 프로세스에 클러스터링 구성을 Liferay DXP에 추가하도록 지시합니다.
 
-![LCP_PROJECT_LIFERAY_CLUSTER_ENABLED 설정](./setting-up-clustering-in-liferay-cloud/images/01.png)
+![Setting LCP_PROJECT_LIFERAY_CLUSTER_ENABLED](./setting-up-clustering-in-liferay-cloud/images/01.png)
 
 ## 클러스터링 스케일 설정
 

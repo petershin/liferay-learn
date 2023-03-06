@@ -129,11 +129,11 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
 
 ## 샘플 배포 확인
 
-빌드가 성공적으로 배포되고 `dev` 환경의 Liferay 서비스가 *준비*되면 다음 단계에 따라 변경 사항을 확인하십시오.
+빌드가 성공적으로 배포되고 `dev` 환경의 Liferay 서비스가 **준비** 되면 다음 단계에 따라 변경 사항을 확인하십시오.
 
 1. 프로젝트의 `dev` 환경으로 이동합니다.
 
-1. *Web Server* 서비스 페이지로 이동하고 해당 URL을 클릭하여 `dev` 환경의 Liferay 인스턴스에 액세스합니다: `https://webserver-<project-name>-dev.lfr.cloud/`.
+1. **Web Server** 서비스 페이지로 이동하고 해당 URL을 클릭하여 `dev` 환경의 Liferay 인스턴스에 액세스합니다: `https://webserver-<project-name>-dev.lfr.cloud/`.
    
    ![개발 환경의 Liferay 인스턴스에 액세스하려면 웹 서버 URL을 클릭하십시오.](./deploying-changes-via-the-cli-tool/images/02.png)
 

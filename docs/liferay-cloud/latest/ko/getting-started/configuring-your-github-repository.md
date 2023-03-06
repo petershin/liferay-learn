@@ -26,27 +26,27 @@ GitHub 리포지토리를 생성, 복제 및 푸시하는 데 도움이 필요�
 
 이제 새 리포지토리를 Liferay Cloud의 Jenkins 서비스와 통합해야 합니다. Jenkins 서비스로 푸시하는 GitHub에서 웹후크를 설정합니다.
 
-1. GitHub에서 리포지토리의 *Settings* 페이지로 이동하여 *Webhooks*을 선택합니다.
+1. GitHub에서 리포지토리의 **Settings** 페이지로 이동하여 **Webhooks** 을 선택합니다.
 
-1. *웹후크 추가*을 클릭합니다. 그러면 *Add webhook* 양식이 열립니다.
+1. **웹후크 추가** 을 클릭합니다. 그러면 **Add webhook** 양식이 열립니다.
 
-1. *페이로드 URL* 필드에서 Liferay Cloud `infra` 환경의 Jenkins 서비스 도메인을 추가합니다. 예를 들어 `acme` 라는 프로젝트에 대한 `infra` 환경의 `ci` 서비스 URL은 `https://ci-acme-infra.lfr.cloud/github-webhook/`입니다. Jenkins GitHub 플러그인과 통합하려면 상대 경로 `github-webhook` 이 필요합니다.
+1. **페이로드 URL** 필드에서 Liferay Cloud `infra` 환경의 Jenkins 서비스 도메인을 추가합니다. 예를 들어 `acme` 라는 프로젝트에 대한 `infra` 환경의 `ci` 서비스 URL은 `https://ci-acme-infra.lfr.cloud/github-webhook/`입니다. Jenkins GitHub 플러그인과 통합하려면 상대 경로 `github-webhook` 이 필요합니다.
 
-1. *콘텐츠 유형* 선택기 메뉴에서 *application/json*을 선택합니다.
+1. **콘텐츠 유형** 선택기 메뉴에서 **application/json** 을 선택합니다.
 
-1. *비밀* 필드를 공백으로 두고 *SSL 확인 활성화* 이 선택되었는지 확인합니다.
+1. **비밀** 필드를 공백으로 두고 **SSL 확인 활성화** 이 선택되었는지 확인합니다.
 
     ![그림 1: 페이로드 URL 및 콘텐츠 유형을 지정하고 SSL 확인을 활성화합니다.](./configuring-your-github-repository/images/01.png)
 
-1. *미만 이 웹후크를 트리거하려는 이벤트는 무엇입니까?*, 선택 *개별 이벤트 선택*. 그러면 이벤트 목록이 나타납니다.
+1. **미만 이 웹후크를 트리거하려는 이벤트는 무엇입니까?** , 선택 **개별 이벤트 선택** . 그러면 이벤트 목록이 나타납니다.
 
-1. 이벤트 목록에서 *푸시* 및 *풀 요청* 을 선택합니다.
+1. 이벤트 목록에서 **푸시** 및 **풀 요청** 을 선택합니다.
 
     ![그림 2: 이 Webhook에 대한 개별 이벤트를 선택해야 합니다.](./configuring-your-github-repository/images/02.png)
 
     ![그림 3: 푸시 및 풀 요청을 선택합니다.](./configuring-your-github-repository/images/03.png)
 
-1. *활성* 이 선택되었는지 확인한 다음 *웹훅 추가*을 클릭합니다.
+1. **활성** 이 선택되었는지 확인한 다음 **웹훅 추가** 을 클릭합니다.
 
     ![그림 4: 웹후크를 활성으로 설정하고 생성을 완료합니다.](./configuring-your-github-repository/images/04.png)
 
@@ -56,7 +56,7 @@ GitHub 리포지토리를 생성, 복제 및 푸시하는 데 도움이 필요�
 
 1. Liferay Cloud Console에 로그인하고 `infra` 환경에서 Jenkins 서비스로 이동합니다.
 
-1. *환경 변수* 탭으로 이동합니다.
+1. **환경 변수** 탭으로 이동합니다.
 
 1. 다음 환경 변수를 구성합니다.
 
@@ -69,7 +69,7 @@ GitHub 리포지토리를 생성, 복제 및 푸시하는 데 도움이 필요�
 
 `LCP_CI_SCM_TOKEN` 값의 경우 GitHub 조직에 대해 생성된 개인 액세스 토큰을 사용합니다. 이 토큰을 만들고 액세스하는 방법에 대한 지침은 [GitHub 문서](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line) 를 참조하십시오.
 
-생성된 개인 액세스 토큰에는 *repo* 및 *admin:repo_hook* 아래의 모든 범위 권한이 선택되어 있어야 합니다. *admin:repo_hook* 범위 권한은 리포지토리가 Liferay Cloud와 성공적으로 통합된 후 [](#personal-access-token-usage) 특히 제거될 수 있습니다.
+생성된 개인 액세스 토큰에는 **repo** 및 **admin:repo***hook** 아래의 모든 범위 권한이 선택되어 있어야 합니다. **admin:repo***hook** 범위 권한은 리포지토리가 Liferay Cloud와 성공적으로 통합된 후 [](#personal-access-token-usage) 특히 제거될 수 있습니다.
 
 ![PAT를 성공적으로 사용할 수 있도록 올바른 권한을 확인하십시오.](./configuring-your-github-repository/images/05.png)
 
@@ -101,7 +101,7 @@ Liferay Cloud가 저장소와 통합하려면 `LCP_CI_SCM_TOKEN` 값에서 참�
 
 ## 빌드 확인
 
-푸시된 분기 및 풀 요청은 Liferay Cloud Console의 _빌드_ 탭에서 보거나 배포할 수 있는 빌드를 트리거합니다. Jenkins 서비스와의 통합을 설정한 후 좋은 다음 단계는 이러한 빌드를 확인하여 통합이 성공했는지 확인하는 것입니다.
+푸시된 분기 및 풀 요청은 Liferay Cloud Console의 **빌드** 탭에서 보거나 배포할 수 있는 빌드를 트리거합니다. Jenkins 서비스와의 통합을 설정한 후 좋은 다음 단계는 이러한 빌드를 확인하여 통합이 성공했는지 확인하는 것입니다.
 
 ### 푸시된 분기에서 빌드 확인
 
@@ -122,9 +122,9 @@ Liferay Cloud가 저장소와 통합하려면 `LCP_CI_SCM_TOKEN` 값에서 참�
     ```
 
 
-1. Liferay Cloud Console에서 _빌드_ 페이지로 이동합니다.
+1. Liferay Cloud Console에서 **빌드** 페이지로 이동합니다.
 
-1. 빌드가 _빌드_ 페이지에서 푸시된 브랜치에 대해 표시되는지 확인합니다.
+1. 빌드가 **빌드** 페이지에서 푸시된 브랜치에 대해 표시되는지 확인합니다.
 
 ### 풀 요청에서 빌드 확인
 
@@ -134,7 +134,7 @@ Liferay Cloud가 저장소와 통합하려면 `LCP_CI_SCM_TOKEN` 값에서 참�
 
 1. 풀 요청에 대해 새 빌드가 생성되었는지 확인합니다.
 
-1. Liferay Cloud Console에서 _빌드_ 페이지로 이동합니다.
+1. Liferay Cloud Console에서 **빌드** 페이지로 이동합니다.
 
 1. 분기에 대한 링크를 클릭하고 적절한 빌드에서 커밋합니다.
 

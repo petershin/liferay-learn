@@ -27,10 +27,10 @@ Elasticsearch를 구성하려면 `elasticsearch.yml` 구성 파일을 사용해�
 
 환경의 [서비스 스택 버전](../reference/understanding-service-stack-versions.md) 은 아직 버전 `4.xx`으로 업그레이드되지 않은 경우 구성 파일을 추가해야 하는 폴더에 영향을 미칩니다.
 
-| **서비스 스택 버전** | **구성 폴더**                      |
+| **서비스 스택 버전** | **구성 폴더** |
 |:------------- |:------------------------------ |
-| **3.xx**      | `lcp/search/config/{ENV}/`     |
-| **4.xx**      | `search/configs/{ENV}/config/` |
+| **3.xx** | `lcp/search/config/{ENV}/`     |
+| **4.xx** | `search/configs/{ENV}/config/` |
 
 ## 스크립트
 
@@ -45,10 +45,10 @@ Elasticsearch를 구성하려면 `elasticsearch.yml` 구성 파일을 사용해�
 
 환경의 [서비스 스택 버전](../reference/understanding-service-stack-versions.md) 은 버전 `4.xx`으로 아직 업그레이드되지 않은 경우 스크립트를 추가해야 하는 폴더에 영향을 미칩니다.
 
-| **서비스 스택 버전** | **스크립트 폴더**                     |
+| **서비스 스택 버전** | **스크립트 폴더** |
 |:------------- |:------------------------------- |
-| **3.xx**      | `lcp/search/script/{ENV}/`      |
-| **4.xx**      | `search/configs/{ENV}/scripts/` |
+| **3.xx** | `lcp/search/script/{ENV}/`      |
+| **4.xx** | `search/configs/{ENV}/scripts/` |
 
 ## 검색 서비스에 라이선스 배포
 
@@ -56,10 +56,10 @@ Elasticsearch를 구성하려면 `elasticsearch.yml` 구성 파일을 사용해�
 
 환경의 [서비스 스택 버전](../reference/understanding-service-stack-versions.md) 은 버전 `4.xx`으로 아직 업그레이드되지 않은 경우 라이선스 파일을 추가해야 하는 폴더에 영향을 미칩니다.
 
-| **서비스 스택 버전** | **라이선스 폴더**                     |
+| **서비스 스택 버전** | **라이선스 폴더** |
 |:------------- |:------------------------------- |
-| **3.xx**      | `lcp/search/license/{ENV}/`     |
-| **4.xx**      | `search/configs/{ENV}/license/` |
+| **3.xx** | `lcp/search/license/{ENV}/`     |
+| **4.xx** | `search/configs/{ENV}/license/` |
 
 ## 환경 변수 참조
 

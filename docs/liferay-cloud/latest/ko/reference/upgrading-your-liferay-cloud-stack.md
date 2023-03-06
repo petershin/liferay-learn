@@ -35,7 +35,7 @@ repository
 liferay.workspace.lcp.liferay.image=liferaycloud/liferay-dxp:7.2.10-sp1-fp4-3.0.19
 ```
 
-Docker 이미지 이름 끝에 있는 숫자는 사용 중인 Liferay Cloud 스택의 버전을 나타냅니다. 이미지 이름이 '3.x.x'로 끝나는지 확인합니다(이 예에서는 liferay-dxp:7.2.10-sp1-fp4-**3.0.19**).
+Docker 이미지 이름 끝에 있는 숫자는 사용 중인 Liferay Cloud 스택의 버전을 나타냅니다. 이미지 이름이 '3.x.x'로 끝나는지 확인합니다(이 예에서는 liferay-dxp:7.2.10-sp1-fp4- **3.0.19**).
 
 다음으로 Git 리포지토리가 깨끗한 분기에 있는지 확인합니다. 업그레이드 스크립트는 이전에 커밋되지 않은 파일을 커밋하고 `upgrade-workspace`이라는 새 분기를 체크아웃합니다.
 

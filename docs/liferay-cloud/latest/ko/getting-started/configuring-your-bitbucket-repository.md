@@ -45,7 +45,7 @@ Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkin
 
     ![+ 아이콘을 클릭하여 새 BitBucket 리포지토리 생성을 시작합니다.](./configuring-your-bitbucket-repository/images/01.png)
 
-1. _리포지토리_ 을 클릭하여 새 리포지토리 생성을 시작합니다.
+1. **리포지토리** 을 클릭하여 새 리포지토리 생성을 시작합니다.
 
     ![새 리포지토리에 대한 세부 정보를 입력합니다.](./configuring-your-bitbucket-repository/images/02.png)
 
@@ -53,9 +53,9 @@ Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkin
 
 1. 액세스 수준이 비공개로 설정되어 있는지 확인합니다.
 
-1. _을 설정하십시오. README를 포함하시겠습니까?_ ~ _아니요_.
+1. **을 설정하십시오. README를 포함하시겠습니까?** ~ **아니요** .
 
-1. _리포지토리 생성_을 클릭합니다.
+1. **리포지토리 생성** 을 클릭합니다.
 
 ## GitHub에서 Bitbucket으로 전송
 
@@ -85,11 +85,11 @@ Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkin
 
 앱 암호를 생성하려면 다음 단계를 수행하십시오.
 
-1. 사용자 설정 페이지의 _액세스 관리에서_ _앱 비밀번호_을 클릭합니다.
+1. 사용자 설정 페이지의 **액세스 관리에서****앱 비밀번호** 을 클릭합니다.
    
    ![사용자 설정 페이지에서 앱 비밀번호를 클릭합니다.](./configuring-your-bitbucket-repository/images/03.png)
 
-1. _앱 비밀번호 생성_을 클릭합니다.
+1. **앱 비밀번호 생성** 을 클릭합니다.
    
    ![나중에 다시 액세스할 수 없는 새 앱 암호를 생성합니다.](./configuring-your-bitbucket-repository/images/04.png)
 
@@ -100,7 +100,7 @@ Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkin
     * `풀 요청 - 읽기, 쓰기` (리포지토리 - 읽기, 쓰기 플래그도 지정해야 함)
     * `Webhooks -  read, write`
 
-1. _만들기_을 클릭합니다.
+1. **만들기** 을 클릭합니다.
 
 1. 앱 비밀번호를 복사합니다(그렇지 않으면 다시 표시되지 않음). 이것은 BitBucket의 개인 액세스 토큰에 해당합니다.
 
@@ -112,7 +112,7 @@ Jenkinsfile을 사용자 지정한 경우 이 가이드에 따라 [기본 Jenkin
 
 Liferay Cloud가 분기에 제대로 연결될 수 있으려면 리포지토리에서 사용 중인 분기 접두사의 전체 목록을 제공해야 합니다. 리포지토리에서 사용되는 각 분기 유형에는 리포지토리 설정에서 정의되는 자체 접두사가 있습니다.
 
-[Bitbucket 웹사이트](https://bitbucket.org) 의 왼쪽 메뉴에서 _Repository settings_ &rarr; _Branching model_ 을 클릭합니다. 이렇게 하면 각 분기의 접두사가 나열되는 _분기 모델_ 페이지로 이동합니다. 이러한 각 접두사를 기록하여 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI 환경 변수에 추가합니다.
+[Bitbucket 웹사이트](https://bitbucket.org) 의 왼쪽 메뉴에서 **Repository settings** &rarr; **Branching model** 을 클릭합니다. 이렇게 하면 각 분기의 접두사가 나열되는 **분기 모델** 페이지로 이동합니다. 이러한 각 접두사를 기록하여 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI 환경 변수에 추가합니다.
 
 ![Bitbucket 리포지토리의 기본 분기 유형(및 접두사)은 bugfix/, feature/, hotfix/ 및 release/입니다.](./configuring-your-bitbucket-repository/images/05.png)
 
@@ -122,7 +122,7 @@ Liferay Cloud가 분기에 제대로 연결될 수 있으려면 리포지토리�
 
 1. Liferay Cloud Console에 로그인하고 `infra` 환경에서 Jenkins 서비스로 이동합니다.
 
-1. _환경 변수_ 탭으로 이동합니다.
+1. **환경 변수** 탭으로 이동합니다.
 
 1. 다음 환경 변수를 구성합니다.
 
@@ -153,7 +153,7 @@ Liferay Cloud가 분기에 제대로 연결될 수 있으려면 리포지토리�
 
 ## 빌드 확인
 
-푸시된 분기 및 풀 요청은 Liferay Cloud Console의 _빌드_ 탭에서 보거나 배포할 수 있는 빌드를 트리거합니다. Jenkins 서비스와의 통합을 설정한 후 좋은 다음 단계는 이러한 빌드를 확인하여 통합이 성공했는지 확인하는 것입니다.
+푸시된 분기 및 풀 요청은 Liferay Cloud Console의 **빌드** 탭에서 보거나 배포할 수 있는 빌드를 트리거합니다. Jenkins 서비스와의 통합을 설정한 후 좋은 다음 단계는 이러한 빌드를 확인하여 통합이 성공했는지 확인하는 것입니다.
 
 ### 푸시된 분기에서 빌드 확인
 
@@ -171,9 +171,9 @@ Liferay Cloud가 분기에 제대로 연결될 수 있으려면 리포지토리�
     git push bitbucket branch-name
     ```
 
-1. Liferay Cloud Console에서 _빌드_ 페이지로 이동합니다.
+1. Liferay Cloud Console에서 **빌드** 페이지로 이동합니다.
 
-1. 빌드가 _빌드_ 페이지에서 푸시된 브랜치에 대해 표시되는지 확인합니다.
+1. 빌드가 **빌드** 페이지에서 푸시된 브랜치에 대해 표시되는지 확인합니다.
 
 ### 풀 요청에서 빌드 확인
 
@@ -183,7 +183,7 @@ Liferay Cloud가 분기에 제대로 연결될 수 있으려면 리포지토리�
 
 1. 풀 요청에 대해 새 빌드가 생성되었는지 확인합니다.
 
-1. Liferay Cloud Console에서 _빌드_ 페이지로 이동합니다.
+1. Liferay Cloud Console에서 **빌드** 페이지로 이동합니다.
 
 1. 분기에 대한 링크를 클릭하고 적절한 빌드에서 커밋합니다.
    

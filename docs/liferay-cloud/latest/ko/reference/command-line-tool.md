@@ -49,11 +49,11 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 
 ### Windows에서 버전 2 제거
 
-1. Windows 10에서 *제어판* &rarr; *프로그램* &rarr; *프로그램 제거*로 이동합니다. 또는 Windows 7 및 8의 경우 *제어판* &rarr; *프로그램 추가/제거*로 이동합니다.
+1. Windows 10에서 **제어판** &rarr; **프로그램** &rarr; **프로그램 제거** 로 이동합니다. 또는 Windows 7 및 8의 경우 **제어판** &rarr; **프로그램 추가/제거** 로 이동합니다.
 
 1. `lcp amd64-installer-0.3`을 선택합니다.
 
-1. _제거_ 을 클릭한 다음 확인합니다.
+1. **제거** 을 클릭한 다음 확인합니다.
 
 1. `lcp` 또는 `lcp.exe`명령을 실행하여 제거가 완료되었는지 확인합니다.
 
@@ -251,7 +251,7 @@ Mac 및 Linux의 경우 다음 명령을 실행합니다.
 curl https://cdn.liferay.cloud/lcp/stable/latest/uninstall.sh -fsSL | bash
 ```
 
-Windows 7 및 8의 경우 *제어판* &rarr; *프로그램 추가/제거*로 이동합니다. Windows 10에서 *제어판* &rarr; *프로그램* &rarr; *프로그램 제거*로 이동합니다. 그런 다음 프로그램 목록에서 *LCP CLI* 을 찾아 선택하고 *제거*을 클릭합니다. 마법사의 단계를 따릅니다.
+Windows 7 및 8의 경우 **제어판** &rarr; **프로그램 추가/제거** 로 이동합니다. Windows 10에서 **제어판** &rarr; **프로그램** &rarr; **프로그램 제거** 로 이동합니다. 그런 다음 프로그램 목록에서 **LCP CLI** 을 찾아 선택하고 **제거** 을 클릭합니다. 마법사의 단계를 따릅니다.
 
 ## 추가 정보
 

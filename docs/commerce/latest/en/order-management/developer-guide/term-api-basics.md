@@ -3,7 +3,7 @@ uuid: 9f85d668-8ec3-40a3-b704-57a1ed65304b
 ---
 # Term API Basics
 
-You can manage terms and conditions from the Applications menu or with REST APIs. Call the [headless-admin-commerce-order](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-order/v1.0/openapi.json) services to create and manage terms and conditions.
+You can manage terms and conditions from the Applications menu or with REST APIs. Use the `/terms` endpoint from [headless-admin-commerce-order](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-order/v1.0/openapi.json) to create and manage terms and conditions.
 
 ## Adding a Term
 
@@ -22,7 +22,16 @@ Once Liferay is running,
    unzip liferay-a9v8.zip
    ```
 
-1. Four parameters are required to create terms and conditions: a label, name, priority, and type. There are two types: `payment-terms` and `delivery-terms`. You cannot have multiple terms and conditions with the same name or priority. Use the cURL script to add terms and conditions to your instance. On the command line, navigate to the `curl` folder. Execute the `Term_POST_ToInstance.sh` script.
+1. Four parameters are required to create terms and conditions: label, name, priority, and type.
+
+   | Parameter | Value Type      | Description/<br />Example                                                                       |
+   | :-------- | :-------------- | :---------------------------------------------------------------------------------------------- |
+   | Label     | Text            | Enter a comma-separated list of locale/value properties:<br />`{"en_US": "Foo", "es_ES": "Bar"}`|
+   | Name      | Text            | Enter a unique name for the terms and conditions item:<br />`"name": "foo"`                     |
+   | Priority  | Number (double) | Enter a unique numeric priority:<br />`"priority": 1.2`                                         |
+   | Type      | Text            | Specify `"payment-terms"` or `"delivery-terms"`:<br />`"type": "payment-terms"`                 |
+
+   Use the cURL script to add terms and conditions to your instance. On the command line, navigate to the `curl` folder. Execute the `Term_POST_ToInstance.sh` script.
 
    ```bash
    ./Term_POST_ToInstance.sh
@@ -115,7 +124,7 @@ The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `Term_POST_ToInstance.java` class adds terms and conditions by calling the term related services.
+The `Term_POST_ToInstance.java` class adds terms and conditions by calling the `TermResource` service.
 
 ```{literalinclude} ./term-api-basics/resources/liferay-a9v8.zip/java/Term_POST_ToInstance.java
    :dedent: 1
@@ -137,7 +146,7 @@ Note that the project includes the `com.liferay.headless.commerce.admin.order.cl
 The `main` method's comment demonstrates running the class.
 ```
 
-The other example Java classes call different `TermResource` methods.
+The remaining example Java classes call different `TermResource` methods.
 
 ```{important}
 See [TermResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/TermResource.java) for service details.
@@ -183,10 +192,7 @@ The instance's `Term` objects are listed in JSON.
 
 ### Filtering, Paginating, Searching, and Sorting Terms
 
-Terms and conditions returned by this API can be filtered, paginated, searched, and sorted. See the [`getTermsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/TermResource.java#L43-L46) method for more information. Use the following `Term` fields to filter, search, and sort the results:
-
-* priority
-* type
+You can filter, paginate, search, and sort the returned terms and conditions. See the [`getTermsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/TermResource.java#L43-L46) method for more information. Use the `priority` and `type` fields to filter, search, and sort the results:
 
 | Filter Query              | Description                                            |
 | :------------------------ | :----------------------------------------------------- |

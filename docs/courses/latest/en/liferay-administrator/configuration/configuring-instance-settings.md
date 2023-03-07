@@ -5,7 +5,7 @@ uuid: 64a5a655-0a6a-4d41-866a-7be3e5a513bf
 
 Liferay instances share the same server but can be configured to serve up different digital experiences from different domain names. Various settings can be configured for each instance you have.
 
-For example, configure a specifc mail server to send email and notifications for each instance. Email notifications are sent for various purposes (e.g. user registration or password management). To learn more, see [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)
+For example, configure a specific mail server to send email and notifications for each instance. Email notifications are sent for various purposes (e.g. user registration or password management). To learn more, see [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)
 
 ### Configuring Mail in LXC
 

@@ -5,7 +5,7 @@ uuid: b6d54fc8-344a-4595-954b-10be35f1ce47
 
 Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-configuration) to search blueprints to control the order of search results:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to *Applications* tab, and click *Blueprints*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and select *Blueprints*.
 
 1. [Create a blueprint](./creating-and-managing-search-blueprints.md) or open an existing one.
 
@@ -16,7 +16,7 @@ Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-c
 ```{important}
 * Avoid using both the [Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorting on a search page. Liferay cannot guarantee consistent behavior.
 
-* The following examples are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
+* The examples below are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
 
    See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html) for more details.
 ```
@@ -36,9 +36,9 @@ A sort configuration is a JSON object with a `sorts` array defining the fields t
 ```
 
 ```{tip}
-* A search document can contain similarly named field variations, especially for localized text fields like `title`. Use a localized and sortable keyword variation of the field such as `localized_title_en_US_sortable`. Check the document of each entity to find its available fields. For example, `title_sortable` is a common field, but the same entity may also contain `localized_title_en_US_sortable`.
+* A search document can contain similarly named field variations, especially for localized text fields like `title`. Use a localized and sortable keyword variation of the field such as `localized_title_en_US_sortable`. Check each entity's document to find its available fields. For example, `title_sortable` is a common field, but the same entity may also contain `localized_title_en_US_sortable`.
 
-* Instead of entering the language ID directly, use the `${context.language_id}` variable to auto-populate the 4-letter language code (e.g., `en_US`) with the current language.
+* Instead of entering the language ID directly, use the `${context.language_id}` variable to auto-populate the four-letter language code (e.g., `en_US`) with the current language.
 
 * To see a document's fields, click _Preview_ in the blueprint's toolbar, execute a search, and expand the fields for their results.
 ```
@@ -60,7 +60,6 @@ When viewing the document, nested properties appear under `ddmFieldArray`:
 ]
 ```
 
-```{tip}
 To view the document with its nested fields,
 
 1. Enable fetching the document `_source` by going to the blueprint's _Configuration_ tab and entering this JSON into the Advanced Configuration box:
@@ -74,7 +73,6 @@ To view the document with its nested fields,
     ```
 
 1. Click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields.
-```
 
 For a nested field, the sort configuration's field declaration is more complicated:
 
@@ -116,7 +114,6 @@ When viewing the document, an object's nested properties appear under `nestedFie
 ]
 ```
 
-```{tip}
 To view the document with its nested fields,
 
 1. Enable fetching the document `_source` by going to the blueprint's _Configuration_ tab and entering this JSON into the Advanced Configuration box:
@@ -130,7 +127,6 @@ To view the document with its nested fields,
     ```
 
 1. Click _Preview_ in the toolbar, search for the result with the nested field, and expand its fields.
-```
 
 This example sorts by an object integer field:
 

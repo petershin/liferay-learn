@@ -3,7 +3,7 @@ uuid: 1f7b693c-0b64-4c16-965b-4cb85875e0f4
 ---
 # Viewing the Analytics Dashboard
 
-Once your [data is synced](./connecting-liferay-dxp-to-analytics-cloud.md), Analytics Cloud automatically begins tracking visitors to your site and how they're interacting with your site's content. The next steps are to explore the different tools available through the navigation menu on the left.
+After [syncing data](./connecting-liferay-dxp-to-analytics-cloud.md), Analytics Cloud automatically begins tracking site visitors and how they interact with your content. The following tools are available for reviewing analytic data.
 
 ![Explore the different tools through the left navigation.](viewing-the-analytics-dashboard/images/01.png)
 
@@ -56,7 +56,7 @@ Analytics data appears once your workspace is connected. For example, you can vi
 
 ## Language Menu Option
 
-The UI for Analytics Cloud currently supports English, Japanese, Portuguese, and Spanish. To change your language settings, 
+The UI for Analytics Cloud currently supports English, Japanese, Portuguese, and Spanish. To change your language settings,
 
 1. Click on your user name at the bottom of the dashboard. Then click *Language*.
 
@@ -64,4 +64,4 @@ The UI for Analytics Cloud currently supports English, Japanese, Portuguese, and
 
 2. Select the language. Refresh the page. The dashboard and menu is now in the selected language.
 
-Well done! To browse all the available features, options, and configurations for Analytics Cloud, click the _Analytics Cloud_ breadcrumb above. 
+Well done! To browse all the available features, options, and configurations for Analytics Cloud, click the *Analytics Cloud* breadcrumb above.

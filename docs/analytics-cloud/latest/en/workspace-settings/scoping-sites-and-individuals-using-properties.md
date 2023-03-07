@@ -55,17 +55,17 @@ To sync contacts to a property:
 
 1. Select the users or groups you want to sync and click *Save*.
 
-Learn more about [syncing contact data from Liferay DXP](../getting-started/syncing-sites-and-contacts.md).
+Learn more about [syncing contact data from Liferay DXP](../workspace-settings/connecting-older-versions-of-liferay-dxp.md#syncing-contacts).
 
 ## Email Reports
 
 You can have reports emailed to you on a regular basis. The report includes the number of unique visitors, number of sessions per visitor, average session duration, and average bounce rate. To enable,
 
-1. Navigate to _Settings_ &rarr; _Properties_. Select the property for which you want an emailed report.
+1. Navigate to *Settings* &rarr; *Properties*. Select the property for which you want an emailed report.
 
-1. Click the _Cog_ icon (![Cog icon](../images/icon-cog-2.png)), and a new window opens. 
+1. Click the *Cog* icon (![Cog icon](../images/icon-cog-2.png)), and a new window opens.
 
-1. Toggle the switch to enable email reports. Select the email frequency (e.g. Daily, Weekly, or Monthly). Click _Save_.
+1. Toggle the switch to enable email reports. Select the email frequency (e.g. Daily, Weekly, or Monthly). Click *Save*.
 
    ![Toggle the switch to enable email reports and select a frequency.](./scoping-sites-and-individuals-using-properties/images/06.png)
 

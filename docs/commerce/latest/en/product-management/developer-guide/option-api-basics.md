@@ -3,7 +3,7 @@ uuid: c88847e2-c5cc-4afb-a888-b7cbcfb36f7b
 ---
 # Option API Basics
 
-You can manage [product options](../../product-management/creating-and-managing-products/products/using-product-options.md) from the Applications menu or with REST APIs. Call the [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) services to create and manage options.
+You can manage [option templates](../../product-management/creating-and-managing-products/products/using-product-options.md) from the Applications menu or with REST APIs. Call the [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) services to create and manage options.
 
 ## Adding an Option
 

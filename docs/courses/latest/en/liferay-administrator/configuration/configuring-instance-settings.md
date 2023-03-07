@@ -5,46 +5,29 @@ uuid: 64a5a655-0a6a-4d41-866a-7be3e5a513bf
 
 Liferay instances share the same server but can be configured to serve up different digital experiences from different domain names. Various settings can be configured for each instance you have.
 
-For example, configure a specific mail server to send email and notifications for each instance. Email notifications are sent for various purposes (e.g. user registration or password management). To learn more, see [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)
+For example, configure a live chat service to be integrated across the entire instance. Each site will have access to the live chat. Delectable Bonsai uses Zendesk for their live chat functionality. See the steps below to integrate it.
 
-### Configuring Mail in LXC
+## Configuring Click to Chat
 
-If this wasn't already configured for you, contact your Liferay Cloud support person.
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Under _Content & Data_, click _Email_. Click _Click to Chat_.
 
-### Configuring Mail in LXC-SM or On-Premises
+1. Set the chat service.
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Under _Platform_, click _Email_. Click _Email Sender_.
+   * Toggle on the enable click to chat.
+   * Select _Always Inherit_ under Site Settings Strategy. Note, you can choose one of the other settings if you want a site setting to take priority. 
+   * Select _Zendesk_ under Chat Provider.
+   * Under Chat Provider Account ID, paste in your account ID. See [Zendesk Chat Integration](https://learn.liferay.com/dxp/latest/en/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/zendesk.html) to learn more.
+   * Toggle on the guest users allowed.
 
-1. Set the email sender.
+   Note, you must retrieve the account ID from your Zendesk Account.
 
-   * Set the name as `Support`.
-   * Set the address as `support@delectablebonsai.com`.
-   * Click _Save_.
+1. Click _Save_. Now the chat service is enabled across the instance.
 
-1. In the left navigation, click _Mail Settings_. Input the relevant email settings and credentials. For example, if Delectable Bonsai's email was served by Gmail, the settings might look like this:
-
-   * Incoming POP Server: `pop.gmail.com`.
-   * Incoming Port: `110`.
-   * Use a Secure Network Connection: checked.
-   * User Name: `support@delectablebonsai.com`.
-   * Password: `learn`.
-   * Outgoing SMTP Server: smtp.gmail.com
-   * Outgoing Port: 465
-   * Use a Secure Network Connection: checked
-   * User Name: `support@delectablebonsai.com`.
-   * Password: `learn`.
-
-   ![Input the settings for the mail server.](./configuring-instance-settings/images/01.png)
-
-   Click _Save_.
-
-```{note}
-The settings above are for demonstration purposes only. For your business, input your relevant email provider values and credentials.
-```
+   ![Zendesk chat is enabled for the instance.](./configuring-instance-settings/images/01.png)
 
 The next step is [configuring virtual instances](./configuring-virtual-instances.md).
 
 ## Relevant Concepts
 
-- [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)
-- [Email Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/email-settings.html)
+- [Instance Configuration](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/instance-configuration.html)
+- [Enabling Automated Live Chat Systems](https://learn.liferay.com/dxp/latest/en/site-building/personalizing-site-experience/enabling-automated-live-chat-systems.html)

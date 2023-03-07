@@ -9,19 +9,19 @@ For example, configure a live chat service to be integrated across the entire in
 
 ## Configuring Click to Chat
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Under _Content & Data_, click _Email_. Click _Click to Chat_.
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Under _Content & Data_, click _Click to Chat_.
 
-1. Set the chat service.
+2. Set the chat service.
 
    * Toggle on the enable click to chat.
-   * Select _Always Inherit_ under Site Settings Strategy. Note, you can choose one of the other settings if you want a site setting to take priority. 
-   * Select _Zendesk_ under Chat Provider.
-   * Under Chat Provider Account ID, paste in your account ID. See [Zendesk Chat Integration](https://learn.liferay.com/dxp/latest/en/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/zendesk.html) to learn more.
+   * Select _Always Inherit_ under site settings strategy. Note, you can choose one of the other settings if you want a site setting to take priority. 
+   * Select _Zendesk_ under chat provider.
+   * Under chat provider account ID, paste in your account ID. See [Zendesk Chat Integration](https://learn.liferay.com/dxp/latest/en/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/zendesk.html) to learn more.
    * Toggle on the guest users allowed.
 
    Note, you must retrieve the account ID from your Zendesk Account.
 
-1. Click _Save_. Now the chat service is enabled across the instance.
+3. Click _Save_. Now the chat service is enabled across the instance. Customers and guests can reach you by chat from any webpage.
 
    ![Zendesk chat is enabled for the instance.](./configuring-instance-settings/images/01.png)
 

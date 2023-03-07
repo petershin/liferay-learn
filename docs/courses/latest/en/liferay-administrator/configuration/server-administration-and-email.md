@@ -3,9 +3,9 @@ uuid: 453b538b-4220-43d6-9d47-05be5f8527d7
 ---
 # Server Administration and Email
 
-Liferay's server administration console let's you manage and monitor your Liferay server. For example, view the current system or portal properties. Or configure logging and various log levels. This is also where you can also configure your email server for the whole system. See [Using the Server Administration Panel](https://learn.liferay.com/dxp/latest/en/system-administration/using-the-server-administration-panel.html) to learn more.
+Liferay's server administration console let's you manage and monitor your Liferay server. For example, view the current system or portal properties. Or configure logging and various log levels. This is also where you can configure your email server for the whole system. See [Using the Server Administration Panel](https://learn.liferay.com/dxp/latest/en/system-administration/using-the-server-administration-panel.html) to learn more.
 
-Configure a mail server so that email notifications can be sent for various purposes (e.g. user registration or password management). Delectable Bonsai uses Google for their email service. Follow the steps below for configuration.
+Configure a mail server that is used for email notifications (e.g. user registration, password management, etc.). Delectable Bonsai uses Google for their email service. Follow the steps below for configuration.
 
 ### Configuring Mail in LXC
 

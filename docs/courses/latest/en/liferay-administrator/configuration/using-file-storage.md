@@ -44,7 +44,7 @@ Next, set Google Cloud Storage as the default in portal properties.
 
 1. Push up your branch to your repository.
 
-1. Deploy the new build from Liferay Cloud Console. See [Deploying Changes via the Liferay Cloud Console](https://learn.liferay.com/liferay-cloud/latest/en/build-and-deploy/deploying-changes-via-the-liferay-cloud-console.html) to learn more.
+1. Deploy the new build from the Liferay Cloud Console. See [Deploying Changes via the Liferay Cloud Console](https://learn.liferay.com/liferay-cloud/latest/en/build-and-deploy/deploying-changes-via-the-liferay-cloud-console.html) to learn more.
 
 ### Portal Properties in On-Premises
 

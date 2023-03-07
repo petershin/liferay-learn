@@ -3,7 +3,10 @@ uuid: 29b299d7-f4aa-4ce7-b016-a16414b6dc83
 ---
 # Using Manual Actions
 
-Standalone triggers define custom triggers for running any type of object action manually. Once defined, users can run the action via the object definition's UI or headless APIs.
+When you use a standalone trigger in an object action, the action becomes manual, meaning it must be explicitly run in one of two ways:
+
+* by a user via the object definition's UI
+* with a call to the headless API
 
 This example creates a standalone action for sending notifications.
 
@@ -17,9 +20,9 @@ Active standalone actions appear in the actions menu for object entries. To trig
 
 1. Navigate to the object definition's application page.
 
-1. Click the *Actions* button (![Action Button](../../../../images/icon-actions.png)) for the desired entry and select the *standalone action*.
+1. Click the *Actions* button (![Action Button](../../../../images/icon-actions.png)) for the desired entry and select the standalone action.
 
-   In this example, the standalone action is Send Reminder.
+   In this example, the action is Send Reminder.
 
    ![Click the Actions button for the desired entry and select the standalone action.](./using-manual-actions/images/02.png)
 
@@ -31,9 +34,9 @@ To view these APIs,
 
 1. Open Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`).
 
-1. Click *REST Applications* and select the desired *object definition*. Custom objects use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/tickets`).
+1. Click *REST Applications* and select the desired object definition. Custom objects use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/tickets`).
 
-For each standalone action, Liferay generates two PUT APIs, one that uses the entry's ID and another that uses the entry's ERC.
+For each standalone action, Liferay generates two PUT APIs, one that uses the entry's ID and another that uses the entry's External Reference Code (ERC).
 
 ![Liferay generates two PUT APIs, one that uses the entry's ID and another that uses the entry's ERC.](./using-manual-actions/images/03.png)
 

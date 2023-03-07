@@ -23,23 +23,23 @@ To use email notifications, your instance must have a configured [mail server](.
 
    ![Click the Add button and select Email.](./creating-notification-templates/images/01.png)
 
-   When designing a template, you can use object field references to populate messages dynamically with entry data. To do this, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select the desired object definition. Then copy and paste the field references into the desired template fields. You can only reference fields for entries directly involved in the object's action.
+   You can use object field references to populate messages dynamically with entry data. In the template designer, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select an object definition. Copy and paste a field reference term into the desired template field. You can only reference fields for entries directly involved in the object's action.
 
    ![Search entities to add references to supported fields.](./creating-notification-templates/images/02.png)
 
-1. In the Basic Info section, enter a *name* and *description* for the template.
+1. In the Basic Info section, enter a name and description for the template.
 
-   ![Under Basic info, enter a name and description.](./creating-notification-templates/images/03.png)
+   ![Under Basic Info, enter a name and description.](./creating-notification-templates/images/03.png)
 
-1. In the Settings section, enter contact information for the email *sender* and *recipients*.
+1. In the Settings section, enter contact information for the email sender and recipients.
 
-   To add multiple recipients, separate email addresses with a comma (e.g., `test@liferay.com,learn@liferay.com`)
+   To add multiple recipients, separate email addresses with a comma (e.g., `test@liferay.com,learn@liferay.com`).
 
    ![Under Settings, enter details for the sender and desired recipients.](./creating-notification-templates/images/04.png)
 
-1. In the Content section, enter a subject, select an *editor type*, and enter the body of the email.
+1. In the Content section, enter a subject, select an editor type, and create the body of the email.
 
-   For type, you can select either Rich Text or FreeMarker Template.
+   For type, select Rich Text or FreeMarker Template.
 
    ![Under Content, enter a subject and craft the body of the email.](./creating-notification-templates/images/05.png)
 
@@ -63,23 +63,23 @@ Once created, you can use notification templates with object actions. See [Defin
 
    ![Click the Add Button and select User Notification.](./creating-notification-templates/images/07.png)
 
-   When designing a template, you can use object field references to populate messages dynamically with entry data. To do this, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select the desired object definition. Then copy and paste the field references into the desired template fields. You can only reference fields for entries directly involved in the object's action.
+   You can use object field references to populate messages dynamically with entry data. In the template designer, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select an object definition. Copy and paste a field reference term into the desired template field. You can only reference fields for entries directly involved in the object's action.
 
    ![Search entities to add references to supported fields.](./creating-notification-templates/images/08.png)
 
-1. In the Basic info section, enter a *name* and *description* for the template.
+1. In the Basic Info section, enter a name and description for the template.
 
-   ![Under Basic info, enter a name and description.](./creating-notification-templates/images/09.png)
+   ![Under Basic Info, enter a name and description.](./creating-notification-templates/images/09.png)
 
 1. In the Settings section, determine the notification's recipients.
 
-   You can determine recipients by entering definition terms, individual user names, or user roles. To add multiple recipients, separate values with a comma (e.g., `[%TICKET_CREATOR%]`, `[%TICKET_R_ASSIGNEE_USERID%]`).
+   You can use defined terms, user names, or user roles. To add multiple recipients, separate values with a comma (e.g., `[%TICKET_CREATOR%]`, `[%TICKET_R_ASSIGNEE_USERID%]`).
 
-   ![Determine recipients by entering definition terms, individual user names, or user roles.](./creating-notification-templates/images/10.png)
+   ![Determine recipients by entering terms, individual user names, or user roles.](./creating-notification-templates/images/10.png)
 
 1. In the Content section, enter the notification's message.
 
-   You can use definition terms to populate values dynamically.
+   You can use defined terms to populate values dynamically.
 
    ![Enter the notification's message in the Content section.](./creating-notification-templates/images/11.png)
 

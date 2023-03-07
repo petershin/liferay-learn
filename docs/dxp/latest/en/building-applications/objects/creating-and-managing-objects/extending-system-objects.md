@@ -42,8 +42,17 @@ Since system objects don't support [custom layouts](./layouts/designing-object-l
 
 ## Adding Actions
 
-You can add custom actions to system objects that are triggered when entries are added, updated, or removed. System objects support [Webhook](./actions/defining-object-actions.md#webhook), [Groovy Script](./actions/defining-object-actions.md#groovy-script), and [Notification](./actions/defining-object-actions.md#notification) actions. [Add Object Entry](./actions/defining-object-actions.md#add-an-object-entry) and [Update Object Entry](./actions/defining-object-actions.md#update-an-object-entry) actions are not supported in system objects. See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
+You can add certain actions to system objects, to be triggered when entries are added, updated, or removed. The table below enumerates which actions are supported by system objects: 
 
+| Action Type | Supported in System Objects? |
+| :---------- | :--------------------------- |
+| [Webhook](./actions/defining-object-actions.md#webhook)                            | &#10004; |
+| [Groovy Script](./actions/defining-object-actions.md#groovy-script)                | &#10004; |
+| [Notification](./actions/defining-object-actions.md#notification)                  | &#10004; |
+| [Add Object Entry](./actions/defining-object-actions.md#add-an-object-entry)       | &#10008; |
+| [Update Object Entry](./actions/defining-object-actions.md#update-an-object-entry) | &#10008; |
+
+See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
 ## Adding Validations
 
 You can add Groovy and Expression Builder validations to system objects. When triggered, these validations check for valid field entries and show custom error messages for invalid entries. Currently, Objects only supports validations for a system object's default fields and does not support validations for its custom fields. See [Adding Custom Validations](./validations/adding-custom-validations.md) for more information.

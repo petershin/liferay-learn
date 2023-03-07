@@ -29,15 +29,15 @@ To add an action,
 
 1. Specify a trigger event to determine when the action is performed.
 
-   | Trigger | Description |
-   | :--- | :--- |
-   | On After Add| When an entry is added |
+   | Trigger                      | Description                            |
+   | :--------------------------- | :------------------------------------- |
+   | On After Add                 | When an entry is added                 |
    | On After Attachment Download | When an entry attachment is downloaded |
-   | On After Delete | When an entry is deleted |
-   | On After Update | When an entry is updated |
-   | Standalone | Triggered manually |
+   | On After Delete              | When an entry is deleted               |
+   | On After Update              | When an entry is updated               |
+   | Standalone                   | Triggered manually                     |
 
-   All triggers besides standalone are automatic. The standalone option defines a custom trigger for running any type of action manually. See [Using Manual Actions](./using-manual-actions.md) for more information on the standalone trigger.
+   All triggers besides standalone are automatic. Standalone triggers are for running any type of action manually. See [Using Manual Actions](./using-manual-actions.md) for more information.
 
    ![Determine when the action is performed.](./defining-object-actions/images/03.png)
 
@@ -49,15 +49,15 @@ To add an action,
 
    ![Use expressions to set additional conditions for the trigger.](./defining-object-actions/images/04.png)
 
-1. Select the type of action performed and fill out all additional fields.
+1. Select the type of action to perform and fill out all additional fields.
 
-   | Type | Description |
-   | :--- | :--- |
-   | Notification | Send email or user notifications using a predefined template. |
-   | Add an Object Entry | Create entries in an active object. |
-   | Update an Object Entry | Update fields in the current object entry. |
-   | Webhook | Deliver a payload to a URL. |
-   | Groovy Script | Execute custom [Groovy](https://groovy-lang.org/) scripts. |
+   | Type                   | Description                                                   |
+   | :--------------------- | :------------------------------------------------------------ |
+   | Notification           | Send email or user notifications using a predefined template. |
+   | Add an Object Entry    | Create entries in an active object.                           |
+   | Update an Object Entry | Update fields in the current object entry.                    |
+   | Webhook                | Deliver a payload to a URL.                                   |
+   | Groovy Script          | Execute custom [Groovy](https://groovy-lang.org/) scripts.    |
 
    ```{important}
    Groovy script actions are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.

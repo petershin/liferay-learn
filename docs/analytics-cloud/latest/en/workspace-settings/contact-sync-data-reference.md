@@ -3,7 +3,7 @@ uuid: d8c3adfd-711a-486b-b4c6-7d1a27a569d2
 ---
 # Contact Sync Data Reference
 
-When you [Sync Contacts](./connecting-older-versions-of-liferay-dxp.md#syncing-contacts) from your Liferay Instance, different fields can be chosen from the Contacts table and the User table.
+When you [Sync Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) from your Liferay Instance, different fields can be chosen from the Contacts table and the User table.
 
 ![Fields are selected from the contacts table and the user table.](./contact-sync-data-reference/images/01.png)
 

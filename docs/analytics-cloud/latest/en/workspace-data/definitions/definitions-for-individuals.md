@@ -3,7 +3,7 @@ uuid: 901ea460-7e47-437e-ad83-17b6d94ae3b0
 ---
 # Definitions for Individuals
 
-The data model for individuals is defined by the various attributes that get mapped when contact data is [synced from DXP](../../workspace-settings/connecting-older-versions-of-liferay-dxp.md#syncing-contacts).
+The data model for individuals is defined by the various attributes that get mapped when contact data is [synced from DXP](../../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
 To view a list of these attributes, navigate to *Settings* &rarr; *Workspace Data* &rarr; *Definitions* &rarr; *Individuals*.
 

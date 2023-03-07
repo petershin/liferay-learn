@@ -55,7 +55,7 @@ To sync contacts to a property:
 
 1. Select the users or groups you want to sync and click *Save*.
 
-Learn more about [syncing contact data from Liferay DXP](../workspace-settings/connecting-older-versions-of-liferay-dxp.md#syncing-contacts).
+Learn more about [syncing contact data from Liferay DXP](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
 ## Email Reports
 

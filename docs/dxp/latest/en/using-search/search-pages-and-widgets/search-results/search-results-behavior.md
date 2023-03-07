@@ -131,6 +131,6 @@ Liferay 7.4 includes [Liferay Objects](../../../building-applications/objects.md
 
 ![A title and a content summary are displayed for Object Entries.](./search-results-behavior/images/13.png)
 
-For Liferay 7.4 U64+ and GA64+, clicking an object entry in the search results list redirects to the object entry's [display page](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) to provide a detailed view of the result. If a display page template does not exist for the object, a default layout is used. Click the back arrow in the entry detail view to return to the search page.
+For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) to provide a detailed view of the result. If a display page template does not exist for the object, a default layout is used. Click the back arrow in the entry detail view to return to the search page.
 
 ![A default display page template is created if one doesn't already exist.](./search-results-behavior/images/14.png)

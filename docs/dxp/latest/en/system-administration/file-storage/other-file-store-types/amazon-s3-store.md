@@ -5,9 +5,9 @@ uuid: 6abef168-1381-46ae-b190-a9ff7c096d2d
 
 Amazon's simple storage service (S3) is a cloud-based storage solution that DXP's S3 Store uses to seamlessly store files to the cloud. Once you have an AWS account and have created an S3 *bucket*, you can configure the S3 store.
 
-When you create an [AWS account](https://aws.amazon.com/s3/), Amazon assigns you [unique keys](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/) that link you to your account. You'll use these keys to configure the S3 Store in the next section.
+S3 uses the concept of buckets for file storage. In Amazon's UI, create a [bucket](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) for your DXP files. Configure the bucket in a [geographical region](https://docs.aws.amazon.com/general/latest/gr/s3.html) that is as close as possible to your DXP server host.
 
-S3 uses the concept of *buckets* for file storage. In Amazon's UI, create a [bucket](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) for your DXP files. Make sure to configure the bucket in a [geographical region](https://docs.aws.amazon.com/general/latest/gr/s3.html) that is as close as possible to your DXP server host.
+When you create an [AWS account](https://aws.amazon.com/s3/), Amazon assigns you [unique keys](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/) that link you to your account. You'll use these keys to configure the S3 Store in the next section.
 
 ```{note}
 No action is required to support AWS Signature Version 4 request authorization.
@@ -15,9 +15,9 @@ No action is required to support AWS Signature Version 4 request authorization.
 
 ## Setting Up a SAXParser
 
-Amazon S3 requires a SAXParser. Depending on your environment you may not have a SAXParser available. In this case, follow these steps:
+Amazon S3 requires a SAXParser. If no SAXParser is available in your environment,
 
-1. Download the [Xerces SAXParser](https://xerces.apache.org/mirrors.cgi) to your application server's global library folder, such as `/lib/ext` on Tomcat or `/module` on JBoss EAP and WildFly.
+1. Download the [Xerces SAXParser](https://xerces.apache.org/mirrors.cgi) to your application server's global library folder: `/lib/ext` on Tomcat or `/module` on JBoss EAP and WildFly.
 
 1. Specify the SAXParser in a [`system-ext.properties`](../../../installation-and-upgrades/reference/system-properties.md) file using this property:
 

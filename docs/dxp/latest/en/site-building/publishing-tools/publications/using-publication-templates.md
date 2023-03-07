@@ -1,6 +1,11 @@
+---
+uuid: 50898f75-135c-4b46-ae9d-b32ce3c80351
+---
 # Using Publication Templates
 
-If you need to create multiple publications with the same details and contributors, use publication templates to simplify setup. With templates, you can use token to dynamically set publication names and descriptions. Also, you can set a list of default users to invite to the publication and assign them roles.
+{bdg-secondary}`Available Liferay 7.4 U63+/GA63+`
+
+If you need to create multiple publications with the same details and contributors, use publication templates to simplify setup. With templates, you can use tokens to dynamically set publication names and descriptions. Also, you can set a list of default users to invite and assign them roles.
 
 To create a publication template,
 
@@ -37,7 +42,7 @@ To create a publication template,
    ![Search for users and select a role.](./using-publication-templates/images/05.png)
 
    ```{note}
-   If you invite users without access to the Publications application, Liferay automatically assigns them the Publications User role.
+   If you invite users without access to the Publications application, Liferay automatically assigns them the [Publications User](./publications-permissions.md#publications-user-role) role.
    ```
 
 1. Click *Save*.

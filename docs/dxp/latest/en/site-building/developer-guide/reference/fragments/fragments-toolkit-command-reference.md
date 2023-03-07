@@ -12,8 +12,8 @@ The [Fragments Toolkit](../../developing-page-fragments/using-the-fragments-tool
 | `npm run add-collection` | Create a new collection to organize fragments. Referred as Fragment Sets in the platform. |
 | `npm run add-fragment` | Add a component, input, or React fragment to a new or existing collection. |
 | `npm run add-fragment-composition` | Add a new fragment composition to a new or existing collection. |
-| `npm run add-page-template` | Creates a new display page template, page template, or master page. |
-| `npm run build` | Compiles `.sass` or `.scss` file specified in `fragment.json`'s `cssPath` key, storing the compiled CSS code in `build/liferay-fragments`. Only compiled CSS is stored and no SCSS is saved in the database. External fragments should be stored in an external repository. |
+| `npm run add-page-template` | Create a new display page template, page template, or master page. |
+| `npm run build` | Compile `.sass` or `.scss` file specified in `fragment.json`'s `cssPath` key, storing the compiled CSS code in `build/liferay-fragments`. Only compiled CSS is stored and no SCSS is saved in the database. External fragments should be stored in an external repository. |
 | `npm run compress` | Create a `.zip` file that can be manually imported into Portal. |
 | `npm run export` | Get collections and fragments from a running server |
 | `npm run import` | Send the collections and fragments from your current project to a running server. If your Fragment's configuration JSON (if available) is invalid, the import fails and provides an error message. |

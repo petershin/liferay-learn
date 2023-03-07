@@ -102,14 +102,14 @@ Analytics Cloud shows you these things about known individuals:
 
 ## Analytics About the Commerce Transactions On Your Site
 
-Analytics Cloud comes with a Commerce dashboard that gives a high-level overview of the performance of your Commerce site. Analytics Cloud shows you these things about your Commerce site:
+Analytics Cloud shows high-level data for synced Commerce channels, including
 
-* Total order value
-* Incomplete Orders
-* Average Order Value
-* Average Revenue Per Account
+* Total value of placed orders
+* Total value of incomplete orders
+* Average total value of placed orders
+* Average revenue relative to the number of accounts that have placed orders
 
-![See a high-level overview of the performance of your Commerce site.](./getting-started/images/07.png)
+![Analytics Cloud shows high-level data for synced Commerce channels.](./getting-started/images/07.png)
 
 ## Setting Up Your Analytics Cloud
 

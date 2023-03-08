@@ -16,7 +16,8 @@ public class X6N5CharlieMessageListener implements MessageListener {
 	@Override
 	public void receive(Message message) {
 		if (_log.isInfoEnabled()) {
-			_log.info("Received message payload " + message.getPayload());
+			System.out.println(
+				"Received message payload " + message.getPayload());
 		}
 
 		message.setResponse("X6N5CharlieMessageListener");

@@ -24,7 +24,7 @@ public class X6N5BakerOSGiCommands {
 			"acme/x6n5_able", message);
 
 		if (_log.isInfoEnabled()) {
-			_log.info("Response: " + response);
+			System.out.println("Response: " + response);
 		}
 	}
 

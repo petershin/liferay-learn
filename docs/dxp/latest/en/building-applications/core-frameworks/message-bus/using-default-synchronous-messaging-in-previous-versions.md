@@ -19,8 +19,15 @@ You'll send a default synchronous message using an example project. Then you'll 
 
 The example project uses a `SynchronousMessageSender` in default mode to send a message and wait for a reply.
 
-```{include} /_snippets/run-liferay-portal.md
+In an example project, you'll use a `SynchronousMessageSender` to send a message directly to two listeners.
+
+Start a new Liferay instance by running
+
+```bash
+docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 ```
+
+Sign in to Liferay at <http://localhost:8080>. Use the email address _test@liferay.com_ and the password _test_. When prompted, change the password to _learn_.
 
 Then, follow these steps:
 

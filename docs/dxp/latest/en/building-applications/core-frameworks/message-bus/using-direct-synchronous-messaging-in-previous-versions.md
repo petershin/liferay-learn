@@ -13,8 +13,13 @@ Direct synchronous messaging is the easiest way to block processing until all li
 
 In an example project, you'll use a `SynchronousMessageSender` to send a message directly to two listeners.
 
-```{include} /_snippets/run-liferay-portal.md
+Start a new Liferay instance by running
+
+```bash
+docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 ```
+
+Sign in to Liferay at <http://localhost:8080>. Use the email address _test@liferay.com_ and the password _test_. When prompted, change the password to _learn_.
 
 Then, follow these steps:
 

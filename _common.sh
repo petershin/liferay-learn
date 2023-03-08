@@ -39,7 +39,7 @@ function generate_remote_app {
 
 	cd liferay-${1}.zip
 
-	curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_remote_app.sh | bash -s ${1}-remote-app react
+	curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s ${1}-remote-app react
 
 	if [ -e ../liferay-${1}-overlay ]
 	then

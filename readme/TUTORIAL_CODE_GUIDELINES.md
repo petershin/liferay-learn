@@ -49,6 +49,7 @@
     * [Test Your Code](#test-your-code)
     * [Code Changes Only](#code-changes-only)
     * [Submit Your Code](#submit-your-code)
+* [Freezing a Code Sample to an Earlier Liferay Version](#freezing-a-code-sample-to-an-earlier-liferay-version)
 
 ## Purpose
 
@@ -571,7 +572,7 @@ Branches submitted for code review must contain only code changes--branches must
 
 ## Freezing a Code Sample to an Earlier Liferay Version
 
-On rare occasions, code that works on an earlier 7.4 update no longer compiles and runs on a later update. If there is continued value in the now-defunct tutorial and code sample, you can freeze the version used in the workspace to the latest version where the code is known to compile and run.
+On rare occasions, code that works on an earlier 7.4 update no longer compiles and runs on a later update. If there is continued value in the now-defunct tutorial and code sample, you can freeze the version used in the workspace to the latest version where the code is known to compile and run, and advise the reader to start a docker container matching that version.
 
 1. In the `liferay-*.zip` root, create a `gradle.properties` with contents like this:
 
@@ -587,6 +588,7 @@ On rare occasions, code that works on an earlier 7.4 update no longer compiles a
 
 1. Commit the file.
 
-Logic in the `update_examples.sh` file recognizes the existence of a `gradle.properties` file and skips its normal step of creating one on the fly using the value of `${LIFERAY_LEARN_WORKSPACE_TOKEN}`.
+   Logic in the `update_examples.sh` file recognizes the existence of a `gradle.properties` file and skips its normal step of creating one on the fly using the value of `${LIFERAY_LEARN_WORKSPACE_TOKEN}`.
 
+1. In the markdown file, avoid using a snippet to provide Docker run instructions. Instead, copy the contents of the snippet (e.g., `liferay-learn/docs/dxp/lates/en/_snippets/run-liferay-portal.md`) into the tutorial and change the `[$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]` token to a hard-coded image version (e.g., `liferay/portal:7.4.3.48-ga48`).
 

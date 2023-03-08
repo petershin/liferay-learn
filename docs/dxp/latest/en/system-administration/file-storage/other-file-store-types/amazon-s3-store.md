@@ -3,11 +3,11 @@ uuid: 6abef168-1381-46ae-b190-a9ff7c096d2d
 ---
 # Amazon Simple Storage Service
 
-Amazon's simple storage service (S3) is a cloud-based storage solution that DXP's S3 Store uses to seamlessly store files to the cloud. Once you have an AWS account and have created an S3 *bucket*, you can configure the S3 store.
+Amazon's simple storage service (S3) is a cloud-based storage solution that DXP's S3 Store uses to store files seamlessly to the cloud. Once you have an AWS account and have created an S3 *bucket*, you can configure the S3 store.
 
 S3 uses the concept of buckets for file storage. In Amazon's UI, create a [bucket](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) for your DXP files. Configure the bucket in a [geographical region](https://docs.aws.amazon.com/general/latest/gr/s3.html) that is as close as possible to your DXP server host.
 
-When you create an [AWS account](https://aws.amazon.com/s3/), Amazon assigns you [unique keys](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/) that link you to your account. You'll use these keys to configure the S3 Store in the next section.
+When you create an [AWS account](https://aws.amazon.com/s3/), Amazon assigns you [unique keys](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/) that link you to your account. You'll use these keys to configure the S3 Store. 
 
 ```{note}
 No action is required to support AWS Signature Version 4 request authorization.
@@ -19,7 +19,7 @@ Amazon S3 requires a SAXParser. If no SAXParser is available in your environment
 
 1. Download the [Xerces SAXParser](https://xerces.apache.org/mirrors.cgi) to your application server's global library folder: `/lib/ext` on Tomcat or `/module` on JBoss EAP and WildFly.
 
-1. Specify the SAXParser in a [`system-ext.properties`](../../../installation-and-upgrades/reference/system-properties.md) file using this property:
+1. Specify the SAXParser in a [`system-ext.properties`](../../../installation-and-upgrades/reference/system-properties.md) file:
 
     ```properties
     org.xml.sax.driver=com.sun.org.apache.xerces.internal.parsers.SAXParser
@@ -29,7 +29,7 @@ Amazon S3 requires a SAXParser. If no SAXParser is available in your environment
 
 ## Configuring the Store
 
-1. Configure [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) with this property:
+1. Configure [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md):
 
     ```properties
     dl.store.impl=com.liferay.portal.store.s3.S3Store

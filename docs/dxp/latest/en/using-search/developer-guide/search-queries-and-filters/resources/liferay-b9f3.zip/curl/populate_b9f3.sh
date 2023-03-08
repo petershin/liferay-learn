@@ -8,9 +8,11 @@ function main {
 		exit 1
 	fi
 
+	echo "Hello World!" > b9f3.txt
+
 	curl \
 		-F "document={\"description\": \"Baker\", \"title\": \"Able Document\"}" \
-		-F "file=@test.txt" \
+		-F "file=@b9f3.txt" \
 		-H "Content-Type: multipart/form-data" \
 		-X POST \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents" \
@@ -27,7 +29,7 @@ function main {
 
 	curl \
 		-F "document={\"description\": \"Baker\", \"title\": \"Able Document\"}" \
-		-F "file=@test.txt" \
+		-F "file=@b9f3.txt" \
 		-H "Content-Type: multipart/form-data" \
 		-X POST "http://localhost:8080/o/headless-delivery/v1.0/document-folders/${documentFolderId}/documents" \
 		-u "test@liferay.com:learn"
@@ -60,6 +62,8 @@ function main {
 		"http://localhost:8080/o/headless-delivery/v1.0/structured-content-folders/${structuredContentFolderId}/structured-contents" \
 		-d "{\"contentFields\": [{\"contentFieldValue\": {\"data\": \"<p>Foo</p>\"}, \"name\": \"content\"}], \"contentStructureId\": \"${contentStructuredId}\", \"title\": \"Able Content\"}" \
 		-u "test@liferay.com:learn"
+
+	rm -f b9f3.txt
 }
 
 main "${@}"

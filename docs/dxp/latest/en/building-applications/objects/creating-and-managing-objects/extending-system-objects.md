@@ -42,7 +42,7 @@ Since system objects don't support [custom layouts](./layouts/designing-object-l
 
 ## Adding Actions
 
-You can add certain actions to system objects, to be triggered when entries are added, updated, or removed. The table below enumerates which actions are supported by system objects: 
+You can add actions to system objects, to be triggered when entries are added, updated, or removed. The table below shows actions supported by system objects: 
 
 | Action Type | Supported in System Objects? |
 | :---------- | :--------------------------- |

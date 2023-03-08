@@ -43,7 +43,7 @@ Create an entry in a specified object. Example use cases include
 * Automatically adding a default user for new accounts
 * Manually adding a child ticket to the current ticket within a custom ticketing system
 
-You must select an active object. You can then set predefined values for the entry's fields. Enter these values directly or click the *Code* button ( ![Code](../../../../images/icon-code.png) ) to use expressions that set values dynamically. If the object includes required fields, you must set predefined values for them.
+You must select an active object. You can then set predefined values for the entry's fields. Enter these values directly or click *Code* ( ![Code](../../../../images/icon-code.png) ) to use expressions that set values dynamically. If the object includes required fields, you must set predefined values for them.
 
 ![Select an active object and enter predefined values for the created entries.](./understanding-action-types/images/02.png)
 
@@ -55,7 +55,7 @@ Update one or more fields in the current object entry. Example use cases include
 * Manually updating a ticket's assignee to the current user when clicking a button
 * Automatically updating an entry's boolean field to `true` after users favorite it
 
-You must select the field(s) to update in the current entry and enter new values. You can enter these values directly or click the *Code* button ( ![Code](../../../../images/icon-code.png) ) to use expressions that set values dynamically.
+You must select the field(s) to update in the current entry and enter new values. You can enter these values directly or click *Code* ( ![Code](../../../../images/icon-code.png) ) to use expressions that set values dynamically.
 
 ![Select the fields from the current object entry that you want to edit and enter default values.](./understanding-action-types/images/03.png)
 

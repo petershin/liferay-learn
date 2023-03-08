@@ -19,7 +19,7 @@ To use email notifications, your instance must have a configured [mail server](.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Notification Templates*.
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)) and select *Email*.
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *Email*.
 
    ![Click the Add button and select Email.](./creating-notification-templates/images/01.png)
 
@@ -27,17 +27,17 @@ To use email notifications, your instance must have a configured [mail server](.
 
    ![Search entities to add references to supported fields.](./creating-notification-templates/images/02.png)
 
-1. In the Basic Info section, enter a name and description for the template.
+1. In Basic Info, enter a name and description for the template.
 
    ![Under Basic Info, enter a name and description.](./creating-notification-templates/images/03.png)
 
-1. In the Settings section, enter contact information for the email sender and recipients.
+1. In Settings, enter contact information for the email sender and recipients.
 
    To add multiple recipients, separate email addresses with a comma (e.g., `test@liferay.com,learn@liferay.com`).
 
    ![Under Settings, enter details for the sender and desired recipients.](./creating-notification-templates/images/04.png)
 
-1. In the Content section, enter a subject, select an editor type, and create the body of the email.
+1. In Content, enter a subject, select an editor type, and create the body of the email.
 
    For type, select Rich Text or FreeMarker Template.
 
@@ -59,7 +59,7 @@ Once created, you can use notification templates with object actions. See [Defin
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Notification Templates*.
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)) and select *User Notification*.
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *User Notification*.
 
    ![Click the Add Button and select User Notification.](./creating-notification-templates/images/07.png)
 
@@ -67,11 +67,11 @@ Once created, you can use notification templates with object actions. See [Defin
 
    ![Search entities to add references to supported fields.](./creating-notification-templates/images/08.png)
 
-1. In the Basic Info section, enter a name and description for the template.
+1. In Basic Info, enter a name and description for the template.
 
    ![Under Basic Info, enter a name and description.](./creating-notification-templates/images/09.png)
 
-1. In the Settings section, determine the notification's recipients.
+1. In Settings, determine the notification's recipients.
 
    You can use defined terms, user names, or user roles. To add multiple recipients, separate values with a comma (e.g., `[%TICKET_CREATOR%]`, `[%TICKET_R_ASSIGNEE_USERID%]`).
 

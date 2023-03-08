@@ -16,7 +16,7 @@ See [Defining Object Actions](./defining-object-actions.md) for how to add stand
 
 ## Trigger Actions via UI
 
-Active standalone actions appear in the actions menu for object entries. To trigger these actions via the UI,
+Active standalone actions appear in the Actions menu for object entries. To trigger these actions via the UI,
 
 1. Navigate to the object definition's application page.
 

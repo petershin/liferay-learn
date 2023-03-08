@@ -12,16 +12,12 @@ import com.liferay.portal.search.document.Document;
 import com.liferay.portal.search.hits.SearchHit;
 import com.liferay.portal.search.hits.SearchHits;
 import com.liferay.portal.search.query.BooleanQuery;
-import com.liferay.portal.search.query.MatchQuery;
 import com.liferay.portal.search.query.Queries;
-import com.liferay.portal.search.query.TermQuery;
 import com.liferay.portal.search.searcher.SearchRequest;
 import com.liferay.portal.search.searcher.SearchRequestBuilder;
 import com.liferay.portal.search.searcher.SearchRequestBuilderFactory;
 import com.liferay.portal.search.searcher.SearchResponse;
 import com.liferay.portal.search.searcher.Searcher;
-
-import java.util.List;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -33,17 +29,6 @@ import org.osgi.service.component.annotations.Reference;
 public class B9F3OSGiCommands {
 
 	public void search(String keywords) throws PortalException {
-		MatchQuery titleQuery = _queries.match(
-			StringBundler.concat(
-				"localized_", Field.TITLE, StringPool.UNDERLINE, LocaleUtil.US),
-			keywords);
-
-		TermQuery rootFolderQuery = _queries.term(Field.FOLDER_ID, "0");
-
-		BooleanQuery booleanQuery = _queries.booleanQuery();
-
-		booleanQuery.addMustQueryClauses(rootFolderQuery, titleQuery);
-
 		SearchRequestBuilder searchRequestBuilder =
 			_searchRequestBuilderFactory.builder();
 
@@ -60,6 +45,16 @@ public class B9F3OSGiCommands {
 				searchContext.setKeywords(keywords);
 			});
 
+		BooleanQuery booleanQuery = _queries.booleanQuery();
+
+		booleanQuery.addMustQueryClauses(
+			_queries.term(Field.FOLDER_ID, "0"),
+			_queries.match(
+				StringBundler.concat(
+					"localized_", Field.TITLE, StringPool.UNDERLINE,
+					LocaleUtil.US),
+				keywords));
+
 		SearchRequest searchRequest = searchRequestBuilder.query(
 			booleanQuery
 		).build();
@@ -68,19 +63,16 @@ public class B9F3OSGiCommands {
 
 		SearchHits searchHits = searchResponse.getSearchHits();
 
-		List<SearchHit> searchHitsList = searchHits.getSearchHits();
+		for (SearchHit searchHit : searchHits.getSearchHits()) {
+			Document document = searchHit.getDocument();
 
-		searchHitsList.forEach(
-			searchHit -> {
-				Document doc = searchHit.getDocument();
+			String uid = document.getString(Field.UID);
 
-				String uid = doc.getString(Field.UID);
-
-				System.out.println(
-					StringBundler.concat(
-						"Document ", uid, " had a score of ",
-						searchHit.getScore()));
-			});
+			System.out.println(
+				StringBundler.concat(
+					"Document ", uid, " has a score of ",
+					searchHit.getScore()));
+		}
 	}
 
 	@Reference

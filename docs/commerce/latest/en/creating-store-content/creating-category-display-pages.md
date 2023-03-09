@@ -7,7 +7,7 @@ You can link Categories to Widget Pages to create and manage pages at scale in L
 
 ## Creating a Default Category Display Page
 
-![Select the Category Display Pages tab under Channel settings.](./creating-category-display-pages/1.png)
+![Select the Category Display Pages tab under Channel settings.](./creating-category-display-pages/images/01.png)
 
 To create a default category page for your store, follow these steps:
 
@@ -19,7 +19,7 @@ To create a default category page for your store, follow these steps:
 
 This page is used as the default page for all Categories in your store.
 
-![A sample Category Display page showing the different widgets.](./creating-category-display-pages/2.png)
+![A sample Category Display page showing the different widgets.](./creating-category-display-pages/images/02.png)
 
 ```{note}
 For Liferay DXP 7.3 and earlier, the Default Category Display Page selection under Channel Settings is not available. To set a Category Display page, users must create a Widget page and add the Category Content widget to it, along with any other desired Page elements. This is then recognized as the default Category Display page.
@@ -35,11 +35,11 @@ In some cases, you may want to display a specific category of products on a page
 
 1. Select the desired _Channel_, click on the _Category Display Pages tab_, and click the _Add_ button (![Add Button](../images/icon-add.png)).
 
-   ![Select the new page to be linked with the category.](./creating-category-display-pages/3.png)
+   ![Select the new page to be linked with the category.](./creating-category-display-pages/images/03.png)
 
 1. Click _Select_ under _Select Categories_ and choose the category you want to link to your new Site page.
 
-   ![Select a category for the created page.](./creating-category-display-pages/4.png)
+   ![Select a category for the created page.](./creating-category-display-pages/images/04.png)
 
 1. Click _Choose_ under _Category Display Page_, select your new Site page, and click _Save_.
 

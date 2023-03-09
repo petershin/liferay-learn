@@ -5,43 +5,25 @@ uuid: 9b0b0453-53f8-49ce-8169-c8a25cedf7bf
 
 {bdg-secondary}`Available 7.4+`
 
-Current Liferay features may have known unnecessary data. The Data Removal tool removes this data.
+Liferay provides the Data Removal tool for removing unnecessary application data that can accumulate over time. This includes data for publications as well as expired journal articles.
 
-Here's how to remove the obsolete data:
+To remove this data,
 
-1. In the *Control Panel*, navigate to *System Settings* &rarr; *Upgrades* (in the *Platform* category) &rarr; *Data Removal*. The Data Removal screen appears.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *System Settings* &rarr; *Upgrades* &rarr; *Data Removal*.
 
    ![Go to the Data Removal tab.](./data-removal/images/01.png)
 
-1. Select the data types you want to remove
+1. Select the data you want to remove:
+
+   * Expired Journal Articles
+
+   * Document Library Preview Change Tracking Store Content Data (Publications)
+
+   * Published Change Tracking Store Content Data (Publications)
 
 1. Click *Save*.
 
-The obsolete data is removed.
-
-Note, to save the settings to a [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md), click the *Actions* menu and select *Export*.
-
-## Using a Configuration File
-
-If desired, you can use a configuration file to remove unnecessary data.
-
-To do this,
-
-1. Create a configuration file named `com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration.config`
-
-1. Set the desired keys to `true` in the file:
-
-   ```
-   configuration.override.com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration_removeExpiredJournalArticles=true
-
-   configuration.override.com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration_removeDLPreviewCTSContentData=true
-
-   configuration.override.com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration_removePublishedCTSContentData=true
-   ```
-
-1. Add the configuration file to `${LIFERAY_HOME}/osgi/configs`. After server startup, Liferay removes the unnecessary data.
-
-1. After data removal, remove the configuration file from the `configs` folder to prevent it from running upon subsequent server startups.
+Liferay immediately removes the selected data.
 
 ## Additional Information
 

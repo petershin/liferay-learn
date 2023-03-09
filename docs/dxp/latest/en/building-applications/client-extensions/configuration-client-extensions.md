@@ -1,7 +1,8 @@
 ---
 toc:
-- ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
-- ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
+  - ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
+  - ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
+uuid: 654223de-17be-4786-a90d-775f986c0911
 ---
 # Configuration Client Extensions
 

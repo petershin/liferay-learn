@@ -1,3 +1,6 @@
+---
+uuid: 51abbad2-5447-4e53-accb-e62dbe327762
+---
 # Theme CSS YAML Configuration Reference
 
 Here is a guide to setting up the definition for a theme CSS client extension in your `client-extension.yaml` file.

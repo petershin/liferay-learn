@@ -1,3 +1,6 @@
+---
+uuid: 57ce5bc2-3e8a-4c7a-b379-bbcc42ae6784
+---
 # OAuth Headless Server YAML Configuration Reference
 
 Here is a guide to setting up the definition for an OAuth headless server client extension in your `client-extension.yaml` file.

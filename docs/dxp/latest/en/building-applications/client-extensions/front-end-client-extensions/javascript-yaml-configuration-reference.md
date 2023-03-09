@@ -1,3 +1,6 @@
+---
+uuid: c79386c9-9344-49e3-bfd4-626b4f8750ed
+---
 # JavaScript YAML Configuration Reference
 
 Here is a guide to setting up the definition for a JavaScript client extension in your `client-extension.yaml` file.

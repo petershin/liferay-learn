@@ -1,3 +1,6 @@
+---
+uuid: d5930388-d026-4c77-bcc1-dd9d4b985869
+---
 # IFrame YAML Configuration Reference
 
 Here is a guide to setting up the definition for an IFrame client extension in your `client-extension.yaml` file.

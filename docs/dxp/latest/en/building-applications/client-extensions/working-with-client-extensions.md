@@ -1,3 +1,6 @@
+---
+uuid: 01f46794-2cd4-4ffc-94d3-e244880f2b6f
+---
 # Working with Client Extensions
 
 > Available in Liferay 7.4+

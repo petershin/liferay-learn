@@ -1,3 +1,6 @@
+---
+uuid: 35e09fb2-fd22-49b3-b901-bd96c6c1a887
+---
 # Notification Type YAML Configuration Reference
 
 Here is a guide to setting up the definition for a notification type client extension in your `client-extension.yaml` file.

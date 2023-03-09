@@ -1,3 +1,6 @@
+---
+uuid: 5689e9cb-ea33-47b6-9586-df785fab2b62
+---
 # CSS YAML Configuration Reference
 
 Here is a guide to setting up the definition for a CSS client extension in your `client-extension.yaml` file.

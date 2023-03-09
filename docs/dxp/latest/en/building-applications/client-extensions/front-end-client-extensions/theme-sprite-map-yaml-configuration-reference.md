@@ -1,3 +1,6 @@
+---
+uuid: 03821b5e-c0a1-4dc8-a900-eb1e36c1ead5
+---
 # Theme Sprite Map YAML Configuration Reference
 
 Here is a guide to setting up the definition for a theme sprite map client extension in your `client-extension.yaml` file.

@@ -1,3 +1,6 @@
+---
+uuid: 9557c412-c225-497b-88dc-659fdc6b1864
+---
 # Object Action YAML Configuration Reference
 
 Here is a guide to setting up the definition for an object action client extension in your `client-extension.yaml` file.

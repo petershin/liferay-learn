@@ -1,3 +1,6 @@
+---
+uuid: e1442843-69dc-4818-8ee2-fe64cbb075ef
+---
 # Custom Element YAML Configuration Reference
 
 Here is a guide to setting up the definition for a custom element client extension in your `client-extension.yaml` file.

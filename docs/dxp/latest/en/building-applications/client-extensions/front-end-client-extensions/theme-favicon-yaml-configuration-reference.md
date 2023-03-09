@@ -1,3 +1,6 @@
+---
+uuid: 147a9736-cb25-486e-8aa2-86547cf5852b
+---
 # Theme Favicon YAML Configuration Reference
 
 Here is a guide to setting up the definition for a theme favicon client extension in your `client-extension.yaml` file.

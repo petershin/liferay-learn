@@ -1,3 +1,6 @@
+---
+uuid: d20aeabb-1523-486a-9848-f72f8b25d9cb
+---
 # Workflow Action YAML Configuration Reference
 
 Here is a guide to setting up the definition for a workflow action client extension in your `client-extension.yaml` file.

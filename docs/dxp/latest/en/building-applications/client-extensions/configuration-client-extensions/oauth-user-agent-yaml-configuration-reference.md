@@ -1,3 +1,6 @@
+---
+uuid: 4801c0d5-123d-471e-a8c6-d080342488c8
+---
 # OAuth User Agent YAML Configuration Reference
 
 Here is a guide to setting up the definition for an OAuth user agent client extension in your `client-extension.yaml` file.

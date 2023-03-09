@@ -1,3 +1,6 @@
+---
+uuid: 922b13bf-d038-4f17-889f-87278aed7933
+---
 # Theme JS YAML Configuration Reference
 
 Here is a guide to setting up the definition for a theme JS client extension in your `client-extension.yaml` file.

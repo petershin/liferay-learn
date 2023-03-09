@@ -3,7 +3,7 @@ uuid: 1411549b-f2fd-473e-b4ef-5f67aa7fdb5e
 ---
 # Making and Publishing Changes
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
 Publications provides a convenient way to manage changes to your Liferay instance. With it, you and your team can create and collaborate on blocks of changes called 'publications'. You can then publish those changes to production when ready.
 
@@ -69,11 +69,11 @@ When reviewing changes, you can also switch between two display styles: *Changes
 
 * **Changes**: This displays all tracked changes in a list that you can order by *Change Type*, *Modified Date*, *Site*, *Title*, or *User*.
 
-    ![View tracked changes in a list.](./making-and-publishing-changes/images/03.png)
+   ![View tracked changes in a list.](./making-and-publishing-changes/images/03.png)
 
 * **Context**: This displays all tracked changes in a tree, so you can view them in context with their associated changes.
 
-    ![View tracked changes in context.](./making-and-publishing-changes/images/04.png)
+   ![View tracked changes in context.](./making-and-publishing-changes/images/04.png)
 
 ### Simple and Advanced Change Summaries
 
@@ -148,6 +148,29 @@ Follow these steps to schedule publishing for a later time.
 1. Click on *Schedule* to complete the process.
 
 This redirects you to the *Scheduled* tab where you can view and [manage scheduled publications](./creating-and-managing-publications.md#managing-scheduled-publications).
+
+## Removing Unnecessary Publication Data
+
+Publications creates copies of uploaded documents and stores them in a separate table to be published later. Due to the asynchronous way the data is handled, it occasionally appears in the publication's table (e.g., when generating previews for documents). By removing unnecessary data, you can reduce backup size and prevent publication clutter.
+
+To do this,
+
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *System Settings*.
+
+1. Click *Upgrades* under Platform.
+
+1. Go to the *Data Removal* tab.
+
+1. Select these options:
+
+   * Remove DL Preview Change Tracking Store Content Data
+   * Remove Published Change Tracking Store Content Data
+
+   ![Check the change tracking options.](making-and-publishing-changes/images/13.png)
+
+1. Click *Save*.
+
+Liferay immediately removes the unnecessary data.
 
 ## Additional Information
 

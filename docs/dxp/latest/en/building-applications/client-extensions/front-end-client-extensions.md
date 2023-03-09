@@ -55,7 +55,7 @@ Use this `type` value in your `client-extension.yaml` file to specify a JavaScri
 type: globalJS
 ```
 
-See [Creating Your First JavaScript Client Extension](./front-end-client-extensions/tutorials/creating-your-first-javascript-client-extension.md) to get started working with this type.
+See [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md) to get started working with this type.
 
 ## CSS Client Extensions
 
@@ -69,7 +69,7 @@ Use this `type` value in your `client-extension.yaml` file to specify a CSS clie
 type: globalCSS
 ```
 
-See [Creating Your First CSS Client Extension](./front-end-client-extensions/tutorials/creating-your-first-css-client-extension.md) to get started working with this type.
+See [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using--css-client-extension.md) to get started working with this type.
 
 ## Theme JavaScript Client Extensions
 

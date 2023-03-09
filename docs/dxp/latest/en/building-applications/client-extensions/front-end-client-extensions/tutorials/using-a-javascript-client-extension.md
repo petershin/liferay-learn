@@ -1,7 +1,7 @@
 ---
 uuid: e26e34b4-ca1b-490b-b911-4ef92ad123ea
 ---
-# Creating Your First JavaScript Client Extension
+# Using a JavaScript Client Extension
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
@@ -122,4 +122,4 @@ If the alert window does not appear at first, try doing a hard refresh of the pa
 
 Congratulations! You have successfully used your first JS client extension in Liferay. Next, try deploying other client extension types.
 
-* [Creating Your First CSS Client Extension](./creating-your-first-css-client-extension.md)
+* [Using a CSS Client Extension](./using-a-css-client-extension.md)

@@ -1,7 +1,7 @@
 ---
 uuid: a8159380-3119-46c5-be6e-d9e24e60c325
 ---
-# Creating Your First CSS Client Extension
+# Using a CSS Client Extension
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
@@ -132,4 +132,4 @@ If the buttons on the page still show the default background color, try doing a 
 
 Congratulations! You have successfully used your first CSS client extension in Liferay. Next, try deploying other client extension types.
 
-* [Creating Your First JS Client Extension](./creating-your-first-javascript-client-extension.md)
+* [Using a JS Client Extension](./using-a-javascript-client-extension.md)

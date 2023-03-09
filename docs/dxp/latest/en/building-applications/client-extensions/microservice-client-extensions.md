@@ -14,6 +14,8 @@ microservice-client-extensions/workflow-action-yaml-configuration-reference.md
 microservice-client-extensions/notification-type-yaml-configuration-reference.md
 ```
 
+{bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
+
 There are several types of client extensions that you can use to handle tasks outside of your Liferay instance, using your own code. You can write these types of client extensions using any method or type of code you want. Microservice client extensions are hosted outside of Liferay, and can be triggered by various cues from Liferay DXP itself.
 
 Microservice client extensions often require pre-configured authentication profiles to properly handle requests and call protected Liferay API. You can use achieve this by including other client extensions within the same project, like [OAuth user agent client extensions](./configuration-client-extensions.md#oauth-user-agent-client-extensions).

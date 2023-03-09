@@ -1,9 +1,9 @@
 ---
 toc:
   - >-
-    ./../client-extensions/browser-based-client-extensions/tutorials/creating-a-basic-custom-element.md
+    ./../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md
   - >-
-    ./../client-extensions/browser-based-client-extensions/tutorials/using-routes-with-custom-elements.md
+    ./../client-extensions/front-end-client-extensions/tutorials/using-routes-with-custom-elements.md
   - ./using-react/remote-applications-with-headless-apis.md
   - ./using-react/react-component-utilities-reference.md
 uuid: 572b3a78-1921-410e-9ae2-d16b20d23632
@@ -25,11 +25,11 @@ Build your own solutions using Liferay and React.
 :gutter: 3 3 3 3
 
 :::{grid-item-card} Creating a Basic Custom Element
-:link: ../client-extensions/browser-based-client-extensions/tutorials/creating-a-basic-custom-element.md
+:link: ../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md
 :::
 
 :::{grid-item-card} Using Routes with Custom Elements
-:link: ../client-extensions/browser-based-client-extensions/tutorials/using-routes-with-custom-elements.md
+:link: ../client-extensions/front-end-client-extensions/tutorials/using-routes-with-custom-elements.md
 :::
 
 :::{grid-item-card} Remote Applications with Headless APIs

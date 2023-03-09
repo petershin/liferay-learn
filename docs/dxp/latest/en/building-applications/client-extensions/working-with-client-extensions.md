@@ -32,7 +32,7 @@ Client extensions are defined in `client-extension.yaml` files. They contain the
 
 * `type`: The client extension's type (`globalCSS`, `customElement`, `themeFavicon`, etc.). This determines the way Liferay handles the client extension when it is deployed.
 
-* `url`: An absolute or relative URL that any resources contained in the client extension are served from. For example, an [IFrame client extension](./browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md#using-the-iframe-type) has a `url` field defining the location of the external application, like [this example](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-workspace/client-extensions/sample-iframe-1/client-extension.yaml#L4). A [theme favicon](./browser-based-client-extensions.md#theme-favicon-client-extensions) client extension may instead have a simple relative path to the favicon image in your project's structure, like [this](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-workspace/client-extensions/sample-theme-favicon/client-extension.yaml#L8).
+* `url`: An absolute or relative URL that any resources contained in the client extension are served from. For example, an [IFrame client extension](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md#using-the-iframe-type) has a `url` field defining the location of the external application, like [this example](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-workspace/client-extensions/sample-iframe-1/client-extension.yaml#L4). A [theme favicon](./front-end-client-extensions.md#theme-favicon-client-extensions) client extension may instead have a simple relative path to the favicon image in your project's structure, like [this](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-workspace/client-extensions/sample-theme-favicon/client-extension.yaml#L8).
 
 A client extension project (which is organized as a folder inside of your Liferay workspace's `client-extensions/` directory) contains a single `client-extension.yaml` file. This file defines one or more client extensions contained in the project. For example, [this project's `client-extension.yaml` file](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-minimal-workspace/client-extensions/baker/client-extension.yaml) contains the definition for three `iframe` client extensions, called `Baseball`, `Football`, and `Hockey`.
 
@@ -97,5 +97,6 @@ Then copy all of the `.zip` files from each client extension project's `dist/` f
 
 ## Additional Information
 
-* [Browser-Based Client Extensions](./browser-based-client-extensions.md)
-* [Creating Your First JavaScript Client Extension](./browser-based-client-extensions/tutorials/creating-your-first-javascript-client-extension.md)
+* [Front-end Client Extensions](./front-end-client-extensions.md)
+* [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)
+* [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)

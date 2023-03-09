@@ -110,11 +110,11 @@ Configure a page in your Liferay instance to specifically use your deployed clie
 
 1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)), and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
-   ![Click the cog wheel icon in the Page Design Options menu to access configurations for this type of client extension.](./creating-your-first-css-client-extension/images/02.png)
+   ![Click the cog wheel icon in the Page Design Options menu to access configurations for this type of client extension.](./using-a-css-client-extension/images/01.png)
 
 1. In the *CSS Client Extensions* section toward the bottom of the page, click *Add CSS Client Extensions*.
 
-   ![Add the CSS client extension from this menu. It appears in a list of any deployed CSS client extensions.](./creating-your-first-css-client-extension/images/03.png)
+   ![Add the CSS client extension from this menu. It appears in a list of any deployed CSS client extensions.](./using-a-css-client-extension/images/02.png)
 
 1. Select your CSS client extension from the list in the popup modal, and click *Add*.
 
@@ -122,7 +122,7 @@ Configure a page in your Liferay instance to specifically use your deployed clie
 
 Now your client extension is configured. Navigate back to editing the page you configured and look at the background color for any buttons on the page. The background color on the buttons now appears as the color you chose. If you want also to see your CSS applied on the page outside of Edit mode, you must publish the page.
 
-![If you changed the background color for buttons in your client extension's global.css file, then any buttons on the page now appear in that color.](./creating-your-first-css-client-extension/images/04.png)
+![If you changed the background color for buttons in your client extension's global.css file, then any buttons on the page now appear in that color.](./using-a-css-client-extension/images/03.png)
 
 ```{tip}
 If the buttons on the page still show the default background color, try doing a hard refresh of the page to clear your browser's cache (`CTRL + SHIFT + R` for most browsers). If you change your client extension and redeploy it, you may need to remove it from the page's configuration and re-add it to see the changes.

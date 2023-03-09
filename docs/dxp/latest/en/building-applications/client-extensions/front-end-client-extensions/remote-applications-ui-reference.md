@@ -25,6 +25,6 @@ When creating or editing an extension, the following fields are available depend
 
 ## Additional Information
 
-* [Browser-Based Client Extensions](../browser-based-client-extensions.md)
+* [Front-end Client Extensions](../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](./understanding-custom-element-and-iframe-client-extensions.md)
 * [Creating a Basic Custom Element](./tutorials/creating-a-basic-custom-element.md)

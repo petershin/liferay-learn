@@ -174,6 +174,6 @@ See [Configuring Client Extensions in `client-extension.yaml`](./working-with-cl
 ## Additional Information
 
 * [Introduction to Client Extensions](../client-extensions.md)
-* [Creating Your First JavaScript Client Extension](./front-end-client-extensions/tutorials/creating-your-first-javascript-client-extension.md)
-* [Creating Your First CSS Client Extension](./front-end-client-extensions/tutorials/creating-your-first-css-client-extension.md)
 * [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)
+* [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)
+* [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)

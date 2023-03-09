@@ -27,10 +27,10 @@ While other types of Liferay extensions, such as [OSGi modules](../liferay-inter
 
 With client extensions, you can
 
-* Apply [custom JavaScript or CSS](#browser-based-client-extensions) to your pages without needing to rely on any specific code in Liferay
-* Embed applications hosted remotely into a [custom element](./client-extensions/browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a page in Liferay
-* Simplify your process to apply programmatically the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-as-code)
-* Call [custom services](#custom-service-client-extensions) or [functions](#lambda-client-extensions) running outside of Liferay, such as a REST endpoint, using the programming languages or technologies of your choice
+* Apply [custom JavaScript or CSS](#front-end-client-extensions) to your pages without needing to rely on any specific code in Liferay
+* Embed applications hosted remotely into a [custom element](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a page in Liferay
+* Simplify your process to apply programmatically the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-client-extensions)
+* Call custom services or [functions](#microservice-client-extensions) running outside of Liferay, such as a REST endpoint, using the programming languages or technologies of your choice
 
 ## Types of Client Extensions
 
@@ -65,6 +65,5 @@ See [Configuration Client Extensions](./client-extensions/configuration-client-e
 ## Additional Information
 
 * [Working with Client Extensions](./client-extensions/working-with-client-extensions.md)
-* [Creating Your First Client Extension](./client-extensions/browser-based-client-extensions/tutorials/creating-your-first-javascript-client-extension.md)
-* [Browser-Based Client Extensions](./client-extensions/browser-based-client-extensions.md)
+* [Front-end Client Extensions](./client-extensions/front-end-client-extensions.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

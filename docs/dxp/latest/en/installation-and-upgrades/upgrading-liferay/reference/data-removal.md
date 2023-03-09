@@ -11,15 +11,37 @@ Here's how to remove the obsolete data:
 
 1. In the *Control Panel*, navigate to *System Settings* &rarr; *Upgrades* (in the *Platform* category) &rarr; *Data Removal*. The Data Removal screen appears.
 
-    ![Here is the Data Removal screen.](./data-removal/images/01.png)
+   ![Go to the Data Removal tab.](./data-removal/images/01.png)
 
-1. Select the data types you want to remove and click *Save*.
+1. Select the data types you want to remove
+
+1. Click *Save*.
 
 The obsolete data is removed.
 
 Note, to save the settings to a [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md), click the *Actions* menu and select *Export*.
 
-Use this `com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration.config` configuration file upon server startup to remove obsolete data. Set the `removeExpiredJournalArticles` key to `true` in the file. After data removal, remove the configuration file from the `osgi/configs` folder to prevent the file from running upon subsequent server startups.
+## Using a Configuration File
+
+If desired, you can use a configuration file to remove unnecessary data.
+
+To do this,
+
+1. Create a configuration file named `com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration.config`
+
+1. Set the desired keys to `true` in the file:
+
+   ```
+   configuration.override.com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration_removeExpiredJournalArticles=true
+
+   configuration.override.com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration_removeDLPreviewCTSContentData=true
+
+   configuration.override.com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration_removePublishedCTSContentData=true
+   ```
+
+1. Add the configuration file to `${LIFERAY_HOME}/osgi/configs`. After server startup, Liferay removes the unnecessary data.
+
+1. After data removal, remove the configuration file from the `configs` folder to prevent it from running upon subsequent server startups.
 
 ## Additional Information
 

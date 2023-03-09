@@ -147,7 +147,7 @@ See [Understanding Custom Element and IFrame Client Extensions](./front-end-clie
 
 > Previously named IFrame Remote Apps
 
-IFrame client extensions work similarly to [custom element client extensions](#custom-element-client-extensions). However, they render external applications as `<iframe>` HTML elements, which allow for limited interaction from the host page.
+IFrame client extensions work similarly to [custom element client extensions](#custom-element-client-extensions). However, they render external applications as `<iframe>` HTML elements, which allow for limited interaction from the host page. Unlike other front-end client extensions, these *do not provide a static resource*.
 
 Use this `type` value in your `client-extension.yaml` file to specify an iframe client extension:
 

@@ -4,4 +4,33 @@ uuid: f12d1fae-61aa-4d42-880c-b0d718838530
 ---
 # Importing Users
 
-Coming soon!
+Once the LDAP server is connected to your Liferay environment, it is time to import users.
+
+### Importing LDAP Users in LXC
+
+Contact your Liferay Cloud support person about importing from an LDAP server.
+
+### Importing LDAP Users in LXC-SM or On-Premises
+
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
+
+1. Under security, click _LDAP_.
+
+1. In the left navigation, click _Import_. 
+
+1. Check the box for enable import. Click _Save_. Note, the import interval is set to 10 minutes. Liferay will perform a bulk import at this interval. 
+
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. The users from the LDAP server have been imported.
+
+   ![LDAP users have been imported.](./importing-users/images/01.png)
+
+```{note}
+If you choose not to import all the LDAP users at once (i.e. leave enable import box unchecked), users will still be imported upon their first login.
+```
+
+The next step is [understanding GDPR](./understanding-gdpr.md).
+
+## Relevant Concepts
+
+- [Configuring User Import and Export](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/configuring-user-import-and-export.html)
+- [LDAP Reference Configuration](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/ldap-configuration-reference.html)

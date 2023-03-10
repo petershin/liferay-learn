@@ -92,7 +92,7 @@ The order manager can update the status of the shipment as needed, until the ord
 
 ## Additional Information
 
-* [Setting Up Commerce Warehouses](../../inventory-management/setting-up-warehouses.md)
+* [Setting Up Warehouses](../../inventory-management/setting-up-warehouses.md)
 * [Setting Inventory by Warehouse](../../inventory-management/setting-inventory-by-warehouse.md)
 * [Order Information](../orders/order-information.md)
 * [Processing an Order](../orders/processing-an-order.md)

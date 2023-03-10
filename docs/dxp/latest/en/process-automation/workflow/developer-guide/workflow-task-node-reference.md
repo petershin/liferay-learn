@@ -9,7 +9,7 @@ Unlike other workflow nodes, task nodes have Assignments, because a User is expe
 
 Commonly, task nodes contain task timers, assignments, actions (which can include notifications and scripts), and transitions. Notifications and actions are not limited to task nodes, but task nodes and their assignments deserve their own article (this one).
 
-Check out the Review task in the Single Approver definition:
+Check out the Review task in the [Single Approver](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml) workflow definition:
 
 ```xml
 <task>

@@ -133,7 +133,7 @@ Now you know how to configure Liferay DXP either as a SAML identity provider or 
 
 ## Identity Provider
 
-If you chose a SAML role of Identity Provider (IdP), you can configure it here. These fields correspond to similar fields in [instance settings](./configuring-saml-at-the-instance-level) where you can configure the same things. 
+If you chose a SAML role of Identity Provider (IdP), you can configure it here. These fields correspond to similar fields in [instance settings](./configuring-saml-at-the-instance-level.md) where you can configure the same things. 
 
 **Sign Metadata?:** Sign the metadata sent to peer SAML entities. 
 

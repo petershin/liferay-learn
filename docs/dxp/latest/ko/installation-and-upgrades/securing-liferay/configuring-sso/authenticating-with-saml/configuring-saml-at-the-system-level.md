@@ -4,11 +4,11 @@
 
 ## 키 저장소 관리자 대상 선택
 
-1. 관리자 자격 증명으로 Liferay DXP에 로그인하고 _제어판_ &rarr; _시스템 설정_ &rarr; _보안_ &rarr; _SSO_ &rarr; _SAML KeyStoreManager 구현 구성_으로 이동합니다.
+1. 관리자 자격 증명으로 Liferay DXP에 로그인하고 **제어판** &rarr; **시스템 설정** &rarr; **보안** &rarr; **SSO** &rarr; **SAML KeyStoreManager 구현 구성** 으로 이동합니다.
 
-1. _파일 시스템_ (기본값) 또는 _문서 라이브러리_을 선택합니다.
+1. **파일 시스템**(기본값) 또는 **문서 라이브러리** 을 선택합니다.
 
-1. _업데이트_을 클릭합니다.
+1. **업데이트** 을 클릭합니다.
 
 ![파일 시스템 또는 문서 라이브러리를 선택합니다.](./configuring-saml-at-the-system-level/images/01.png)
 
@@ -18,17 +18,17 @@
 
 기본 구성이 시스템에 적합한지 확인합니다.
 
-1. _제어판으로 이동_ &rarr; _시스템 설정_ &rarr; _보안_ &rarr; _SSO_ &rarr; _SAML 구성_.
+1. **제어판으로 이동** &rarr; **시스템 설정** &rarr; **보안** &rarr; **SSO** &rarr; **SAML 구성** .
 
 1. 키 저장소 경로를 설정하십시오. 기본적으로 [Liferay Home](../../../reference/liferay-home.md) 디렉토리에 있습니다. 문서 라이브러리를 키 저장소의 사이트로 선택한 경우 해당 경로는 현재 포털 인스턴스에 대해 `/saml/keystore.jks` 로 하드 코딩되며 여기에 무언가를 입력해도 아무런 효과가 없습니다.
 
 1. 키 저장소에 액세스하기 위한 비밀번호를 설정하십시오.
 
-1. 다른 옵션(아래 참조)을 검토하고 그에 따라 수정한 다음 _저장_을 클릭합니다.
+1. 다른 옵션(아래 참조)을 검토하고 그에 따라 수정한 다음 **저장** 을 클릭합니다.
 
 다음과 같은 다양한 옵션을 설정할 수 있습니다.
 
-**키 저장소 유형:** 키 저장소 유형을 설정합니다. 기본값은 _jks_ 또는 Java 키 저장소입니다. [Java에서 지원하는](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) 옵션을 선택할 수 있습니다.
+**키 저장소 유형:** 키 저장소 유형을 설정합니다. 기본값은 **jks** 또는 Java 키 저장소입니다. [Java에서 지원하는](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) 옵션을 선택할 수 있습니다.
 
 **SSO 세션 확인 간격:** IdP는 여기에 입력한 매 분마다 만료된 세션을 확인해야 합니다. 
 

@@ -8,9 +8,9 @@ Google 문서&trade;을 통해 문서 및 미디어 파일을 처음 만들거�
 
 계정 연결을 해제하려면
 
-1. *프로필* &rarr; *계정 설정*을 클릭합니다.
-1. *일반* 탭에서 *앱*을 클릭합니다.
-1. Google 드라이브&trade;옆에 있는 *취소* 을 클릭합니다.
+1. **프로필** &rarr; **계정 설정** 을 클릭합니다.
+1. **일반** 탭에서 **앱** 을 클릭합니다.
+1. Google 드라이브&trade;옆에 있는 **취소** 을 클릭합니다.
 
 ![포털에서 Google 계정의 연결을 해제할 수 있습니다.](./creating-and-editing-documents-with-google-drive/images/01.png)
 
@@ -20,7 +20,7 @@ Google 드라이브&trade; 에 대한 액세스가 연결 해제되었습니다.
 
 Google 문서&trade;을 통해 새 문서 및 미디어 파일을 만들려면 다음 단계를 따르세요.
 
-1. *메뉴* (![Product Menu](../../../../images/icon-menu.png))을 열고 사이트 이름을 클릭한 다음 *콘텐츠 & 데이터* &rarr; *문서 및 미디어*로 이동합니다.
+1. **메뉴**(![Product Menu](../../../../images/icon-menu.png))을 열고 사이트 이름을 클릭한 다음 **콘텐츠 & 데이터** &rarr; **문서 및 미디어** 로 이동합니다.
 1. ** 추가 아이콘(![Add](../../../../images/icon-add.png))을 클릭하고 문서 라이브러리에 추가할 Google 문서 유형을 선택합니다.
 
     * 구글 문서&trade;
@@ -61,7 +61,7 @@ Google Docs&trade; 을 사용하여 다음 유형의 문서 및 미디어 파일
 Google Docs&trade;에서 문서 및 미디어 파일을 수정하려면 다음 단계를 따르세요.
 
 1. 문서 및 미디어 라이브러리에서 파일로 이동합니다.
-1. 파일의 작업 아이콘(![Actions](../../../../images/icon-actions.png))을 클릭하고 *Google 문서에서 편집*을 선택합니다. 이렇게 하면 자동으로 파일을 체크아웃하고 [콘텐츠를 새 Google Docs](../../publishing-and-sharing/managing-document-access/managing-document-changes-with-checkout.md) 파일로 전송하고 사용자를 해당 Google Docs&trade; 파일로 리디렉션&trade;.
+1. 파일의 작업 아이콘(![Actions](../../../../images/icon-actions.png))을 클릭하고 **Google 문서에서 편집** 을 선택합니다. 이렇게 하면 자동으로 파일을 체크아웃하고 [콘텐츠를 새 Google Docs](../../publishing-and-sharing/managing-document-access/managing-document-changes-with-checkout.md) 파일로 전송하고 사용자를 해당 Google Docs&trade; 파일로 리디렉션&trade;.
 
     ![파일의 작업 메뉴에서 Google 문서도구에서 편집을 선택합니다.](./creating-and-editing-documents-with-google-drive/images/04.png)
 
@@ -69,15 +69,15 @@ Google Docs&trade;에서 문서 및 미디어 파일을 수정하려면 다음 �
 
 ## 여러 편집 세션
 
-Google Docs&trade;에서 문서 및 미디어 파일을 만들거나 편집할 때 각각 *Save and Return to Liferay* 또는 *Discard Changes*를 클릭하여 변경 사항을 저장하거나 취소할 수 있습니다. 아무 것도 클릭하지 않고 대신 창을 닫으면 편집 세션이 계속 존재합니다. 문서 및 미디어의 원본 파일을 통해 액세스할 수 있습니다. 파일이 이전에 존재하지 않은 경우(예: 새 파일을 만든 경우) 문서 및 미디어에 임시 파일로 나타납니다.
+Google Docs&trade;에서 문서 및 미디어 파일을 만들거나 편집할 때 각각 **Save and Return to Liferay** 또는 **Discard Changes** 를 클릭하여 변경 사항을 저장하거나 취소할 수 있습니다. 아무 것도 클릭하지 않고 대신 창을 닫으면 편집 세션이 계속 존재합니다. 문서 및 미디어의 원본 파일을 통해 액세스할 수 있습니다. 파일이 이전에 존재하지 않은 경우(예: 새 파일을 만든 경우) 문서 및 미디어에 임시 파일로 나타납니다.
 
 문서 및 미디어 파일에 대한 편집 세션이 이미 있는 경우 해당 파일의 작업 아이콘(![Actions](../../../../images/icon-actions.png))을 통해 다음 작업을 수행할 수 있습니다.
 
 **Google 문서에서 편집:** Google 문서에서 파일 편집 재개&trade;.
 
-**체크인:** Google 파일(변경 사항 포함)을 문서 및 미디어 파일에 저장한 다음 Google 파일을 삭제합니다. 이는 Google 문서&trade; 편집 창에서 *저장 후 Liferay* 로 돌아가기를 클릭하는 것과 같습니다.
+**체크인:** Google 파일(변경 사항 포함)을 문서 및 미디어 파일에 저장한 다음 Google 파일을 삭제합니다. 이는 Google 문서&trade; 편집 창에서 **저장 후 Liferay** 로 돌아가기를 클릭하는 것과 같습니다.
 
-**체크아웃 취소:** Google 파일을 삭제하고 변경 사항을 버립니다. 이는 Google Docs&trade; 편집 창에서 *Discard Changes* 을 클릭하는 것과 같습니다.
+**체크아웃 취소:** Google 파일을 삭제하고 변경 사항을 버립니다. 이는 Google Docs&trade; 편집 창에서 **Discard Changes** 을 클릭하는 것과 같습니다.
 
 ## 추가 정보
 

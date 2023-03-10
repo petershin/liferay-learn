@@ -49,7 +49,7 @@ Then, follow these steps.
     STARTED com.acme.g8v3.impl_1.0.0 [1650]
     ```
 
-1. 브라우저를 `https://localhost:8080` 로 열고 *제어판* &rarr; *구성* &rarr; *시스템 설정*로 이동합니다. 플랫폼에서 *Third Party*을 클릭합니다. 왼쪽의 *G8V3 Able Configuration* 을 클릭합니다. Enable G8V3 Baker Configuration의 확인란을 선택합니다. *업데이트* 버튼을 클릭합니다.
+1. 브라우저를 `https://localhost:8080` 로 열고 **제어판** &rarr; **구성** &rarr; **시스템 설정** 로 이동합니다. 플랫폼에서 **Third Party** 을 클릭합니다. 왼쪽의 **G8V3 Able Configuration** 을 클릭합니다. Enable G8V3 Baker Configuration의 확인란을 선택합니다. **업데이트** 버튼을 클릭합니다.
 
     ![확인란을 클릭하면 다른 구성 UI가 표시됩니다.](./hiding-the-configuration-ui/images/01.png)
 

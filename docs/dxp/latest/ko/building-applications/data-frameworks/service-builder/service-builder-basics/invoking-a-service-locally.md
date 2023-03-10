@@ -1,6 +1,6 @@
 # 로컬에서 서비스 호출
 
-DXP/Portal에 배포된 Service Builder 서비스는 동일한 JVM의 다른 클래스에서 호출할 수 있습니다. 이러한 서비스는 클래스에 대해 *로컬* 입니다.
+DXP/Portal에 배포된 Service Builder 서비스는 동일한 JVM의 다른 클래스에서 호출할 수 있습니다. 이러한 서비스는 클래스에 대해 **로컬** 입니다.
 
 Service Builder 서비스는 선언적 서비스(DS) 구성 요소이므로 컨테이너에서 관리됩니다. 소비자는 컨테이너에서 구성 요소를 요청하고 컨테이너는 일치하는 구성 요소 인스턴스를 제공합니다.
 
@@ -47,11 +47,11 @@ Service Builder 서비스는 선언적 서비스(DS) 구성 요소이므로 컨�
     STARTED com.acme.t2p5.web_1.0.0
     ```
 
-1. *Samples* 카테고리의 *T2P5 Portlet* 위젯을 위젯 페이지에 추가하십시오. T2P5 포틀릿이 나타납니다.
+1. **Samples** 카테고리의 **T2P5 Portlet** 위젯을 위젯 페이지에 추가하십시오. T2P5 포틀릿이 나타납니다.
 
    ![페이지에 T2P5 포틀릿을 추가했습니다.](./invoking-a-service-locally/images/01.png)
 
-1. 텍스트 필드에 항목 이름과 설명을 입력하고 *제출*을 클릭합니다. 예를 들어,
+1. 텍스트 필드에 항목 이름과 설명을 입력하고 **제출** 을 클릭합니다. 예를 들어,
 
     **이름:** `울타리 다듬기`
 
@@ -59,7 +59,7 @@ Service Builder 서비스는 선언적 서비스(DS) 구성 요소이므로 컨�
 
 ![T2P5 포틀릿을 페이지에 추가했습니다.](./invoking-a-service-locally/images/02.png)
 
-이름과 설명이 있는 새 항목이 *T2P5 항목* 목록에 나타납니다.
+이름과 설명이 있는 새 항목이 **T2P5 항목** 목록에 나타납니다.
 
 포틀릿에서 Service Builder 서비스를 호출했습니다. 서비스 API부터 시작하여 작동 방식을 알아보세요.
 
@@ -133,7 +133,7 @@ JSP는 다음 태그 라이브러리의 태그를 사용합니다.
 * `T2P5EntryLocalServiceUtil`
 * `java.util.List`
 
-페이지의 *Add T2P5 Entry* 섹션은 항목을 추가하기 위한 양식을 제공합니다. `<portlet:defineObjects />` 태그는 템플릿에서 표준 포틀릿 개체를 사용할 수 있도록 합니다. `aui` 태그는 이러한 개체를 사용합니다.
+페이지의 **Add T2P5 Entry** 섹션은 항목을 추가하기 위한 양식을 제공합니다. `<portlet:defineObjects />` 태그는 템플릿에서 표준 포틀릿 개체를 사용할 수 있도록 합니다. `aui` 태그는 이러한 개체를 사용합니다.
 
 `<portlet:actionURL name="addT2P5Entry" var="addT2P5EntryURL" />` 태그는 `addT2P5EntryURL` 변수를 `addT2P5Entry`라는 포틀릿 작업에 매핑합니다. 이 `actionURL`로 `ActionRequest`를 제출하면 `actionUrl` 이름 `addT2P5Entry`에 맵핑되기 때문에 포틀릿의 메소드 `addT2P5Entry`를 호출합니다.
 
@@ -143,7 +143,7 @@ JSP는 다음 태그 라이브러리의 태그를 사용합니다.
 포틀릿 작업에 대한 자세한 내용은 [MVC 포틀릿으로 작업 호출](../../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md)을 참조하세요. ).
 ```
 
-페이지의 *항목* 섹션에는 모든 항목이 나열됩니다. `T2P5EntryLocalServiceUtil.getT2P5Entries(-1, -1)` 을 호출하여 모든 항목을 가져옵니다. 1 `-1` 최소 및 최대 범위 값은 모든 항목을 반환하도록 메서드에 지시합니다.
+페이지의 **항목** 섹션에는 모든 항목이 나열됩니다. `T2P5EntryLocalServiceUtil.getT2P5Entries(-1, -1)` 을 호출하여 모든 항목을 가져옵니다. 1 `-1` 최소 및 최대 범위 값은 모든 항목을 반환하도록 메서드에 지시합니다.
 
 포틀릿 애플리케이션에서 Service Builder 서비스를 호출했습니다. 이러한 서비스는 MVC Portlet에서 사용하기 쉽습니다.
 

@@ -15,17 +15,17 @@
 
 일반 역할은 글로벌 범위에서 생성된 사용자 세그먼트에 할당될 수 있습니다. 사용자 세그먼트에 일반 역할을 할당하려면
 
-1. 제품 메뉴를 열고 *제어판* &rarr; *사용자* &rarr; *역할*로 이동합니다.
+1. 제품 메뉴를 열고 **제어판** &rarr; **사용자** &rarr; **역할** 로 이동합니다.
 
-1. 일반 역할 옆에 있는 작업 메뉴(![Actions](../../images/icon-actions.png))를 열고 *편집*를 선택합니다.
+1. 일반 역할 옆에 있는 작업 메뉴(![Actions](../../images/icon-actions.png))를 열고 **편집** 를 선택합니다.
    
    ![역할을 편집하여 사용자 세그먼트를 할당하십시오.](./assigning-roles-to-user-segments/images/01.png)
 
-1. *Assignees* &rarr; *Segments* 탭을 선택하고 (![Add Button](../../images/icon-add.png))를 클릭하여 User Segment를 선택합니다.
+1. **Assignees** &rarr; **Segments** 탭을 선택하고 (![Add Button](../../images/icon-add.png))를 클릭하여 User Segment를 선택합니다.
    
    ![담당자 아래의 세그먼트 탭으로 이동하여 역할을 할당합니다.](./assigning-roles-to-user-segments/images/02.png)
 
-1. 기존 사용자 세그먼트 옆의 상자를 선택하고 *추가* 을 클릭하여 여기에 역할을 할당합니다. User Segment가 존재하지 않는 경우 (![Add Button](../../images/icon-add.png))을 클릭하여 새 User Segment를 생성합니다.
+1. 기존 사용자 세그먼트 옆의 상자를 선택하고 **추가** 을 클릭하여 여기에 역할을 할당합니다. User Segment가 존재하지 않는 경우 (![Add Button](../../images/icon-add.png))을 클릭하여 새 User Segment를 생성합니다.
    
    ![역할을 할당하려는 사용자 세그먼트 옆의 확인란을 선택합니다.](./assigning-roles-to-user-segments/images/03.png)
 
@@ -39,11 +39,11 @@
 
 [사이트 역할](./understanding-roles-and-permissions.md) 은 사이트 관리자와 사이트 소유자의 두 가지 예외를 제외하고 세그먼트에 할당될 수 있습니다.
 
-1. 제품 메뉴를 열고 사이트 메뉴에서 *People* &rarr; *Segments* 로 이동합니다.
+1. 제품 메뉴를 열고 사이트 메뉴에서 **People** &rarr; **Segments** 로 이동합니다.
 
-1. 세그먼트의 작업 메뉴(![Actions](../../images/icon-actions.png))를 열고 _ 사이트 역할 할당_을 클릭합니다.
+1. 세그먼트의 작업 메뉴(![Actions](../../images/icon-actions.png))를 열고 **사이트 역할 할당** 을 클릭합니다.
 
-1. 세그먼트에 사이트 역할을 할당한 다음 _추가_ 을 클릭합니다.
+1. 세그먼트에 사이트 역할을 할당한 다음 **추가** 을 클릭합니다.
    
    ![사이트 역할은 세그먼트에 할당될 수 있습니다.](./assigning-roles-to-user-segments/images/05.png)
 

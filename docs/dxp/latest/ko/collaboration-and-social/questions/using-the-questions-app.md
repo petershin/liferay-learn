@@ -29,11 +29,11 @@ Note that only users with the requisite permissions have the ability to create t
 
 ## 주제 만들기
 
-1. *새 주제* 버튼을 클릭합니다.
+1. **새 주제** 버튼을 클릭합니다.
 
    ![새 주제를 생성하려면 새 주제 버튼을 클릭합니다.](using-the-questions-app/images/01.png)
 
-1. 새 주제에 제목과 설명을 입력하고 *만들기* 버튼을 클릭합니다.
+1. 새 주제에 제목과 설명을 입력하고 **만들기** 버튼을 클릭합니다.
 
    ![이 새 항목에 대한 제목과 설명을 입력합니다.](using-the-questions-app/images/02.png)
 
@@ -41,7 +41,7 @@ Note that only users with the requisite permissions have the ability to create t
 
 ## 질문하기
 
-1. 주제를 만들고 나면 질문을 시작할 수 있습니다. *질문하기* 버튼을 클릭하여 새 질문을 만듭니다.
+1. 주제를 만들고 나면 질문을 시작할 수 있습니다. **질문하기** 버튼을 클릭하여 새 질문을 만듭니다.
 
    ![질문하기 버튼을 클릭하여 새 질문을 생성합니다.](using-the-questions-app/images/03.png)
 
@@ -49,13 +49,13 @@ Note that only users with the requisite permissions have the ability to create t
 
    ![제목과 본문으로 양식을 작성하십시오.](using-the-questions-app/images/04.png)
 
-   완료하려면 *질문 게시* 버튼을 클릭하십시오.
+   완료하려면 **질문 게시** 버튼을 클릭하십시오.
 
 ## 질문에 답하기
 
 1. 사용자는 기존 질문을 보고 답변을 제공할 수 있습니다. 답변을 제공하려면 기존 질문을 클릭하십시오.
 
-1. Your Answer 상자에 답을 입력하고 *Post Answer* 버튼을 클릭합니다.
+1. Your Answer 상자에 답을 입력하고 **Post Answer** 버튼을 클릭합니다.
 
     ![답변을 입력하고 답변 게시 버튼을 클릭합니다.](using-the-questions-app/images/05.png)
 
@@ -91,7 +91,7 @@ Note that only users with the requisite permissions have the ability to create t
 
 **검색:** 검색창에 키워드를 입력하여 다른 질문을 검색합니다.
 
-**태그:** 태그를 기준으로 질문을 필터링합니다. *태그* 탭을 클릭하면 사용 가능한 태그와 관련 질문을 볼 수 있습니다.
+**태그:** 태그를 기준으로 질문을 필터링합니다. **태그** 탭을 클릭하면 사용 가능한 태그와 관련 질문을 볼 수 있습니다.
 
 ![모든 태그를 보려면 태그 탭을 클릭하십시오.](using-the-questions-app/images/09.png)
 
@@ -99,7 +99,7 @@ Note that only users with the requisite permissions have the ability to create t
 
 주제와 질문을 모두 구독하여 업데이트에 대한 현장 및 이메일 알림을 받을 수 있습니다.
 
-주제를 구독하려면 주제 제목 표시줄 아래에 있는 *구독* 버튼을 클릭하십시오.
+주제를 구독하려면 주제 제목 표시줄 아래에 있는 **구독** 버튼을 클릭하십시오.
 
 ![주제를 구독하려면 구독 버튼을 클릭하세요.](using-the-questions-app/images/10.png)
 
@@ -107,13 +107,13 @@ Note that only users with the requisite permissions have the ability to create t
 
 ![질문을 구독하려면 구독 벨 버튼을 클릭하세요.](using-the-questions-app/images/11.png)
 
-구독정보를 보려면 *내 구독정보* 탭을 클릭하세요. 구독 중인 모든 주제 및 질문 목록이 나타납니다.
+구독정보를 보려면 **내 구독정보** 탭을 클릭하세요. 구독 중인 모든 주제 및 질문 목록이 나타납니다.
 
 ![내 구독 탭을 클릭하면 구독 중인 모든 항목을 볼 수 있습니다.](using-the-questions-app/images/12.png)
 
 ## 나의 활동
 
-*내 활동* 탭을 클릭하여 질문 앱 사용을 추적할 수 있습니다.
+**내 활동** 탭을 클릭하여 질문 앱 사용을 추적할 수 있습니다.
 
 ![질문 앱 사용을 추적하려면 내 활동 탭을 클릭하세요.](using-the-questions-app/images/13.png)
 

@@ -14,9 +14,9 @@
 
 Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) a basic Object for this tutorial:
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+1. Open the **Global Menu**(![Global Menu](../../../../images/icon-applications-menu.png)), go to the **Control Panel** tab, and click **Objects** .
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and enter these values:
+1. Click the **Add** button (![Add Button](../../../../images/icon-add.png)) and enter these values:
 
    | Field | Value |
    | :--- | :--- |
@@ -24,13 +24,13 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
    | Plural Label | `Ables` |
    | Name | `Able` |
 
-1. Select the new *Object* draft, go to the *Fields* tab, and add a single text *field*:
+1. Select the new **Object** draft, go to the **Fields** tab, and add a single text **field** :
 
    | Label | Field Name | Type | Required |
    | :--- | :--- | :--- | :--- |
    | Name | name | Text | &#10004; |
 
-1. Go to the *Details* tab and click *Publish*.
+1. Go to the **Details** tab and click **Publish** .
 
    ```{important}
    For this tutorial, you must use the above values.

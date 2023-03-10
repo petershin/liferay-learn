@@ -64,7 +64,7 @@ DXP Liferay 7.4부터 결과 순위 및 동의어 집합 데이터가 Liferay �
 
 ## Liferay 엔터프라이즈 검색(LES)
 
-> ** [LES 가입자](https://www.liferay.com/products/dxp/enterprise-search) **
+> **[LES 가입자](https://www.liferay.com/products/dxp/enterprise-search)**
 
 ### LES 설치 간소화
 

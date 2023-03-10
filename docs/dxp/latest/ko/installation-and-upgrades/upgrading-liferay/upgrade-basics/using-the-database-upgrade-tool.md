@@ -22,8 +22,8 @@ Liferay 인스턴스에서 분리된 데이터베이스를 수정하면 [업그�
 
 | 편집             | 지침 다운로드                                                                                                                                                                               |
 |:-------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 라이프레이 DXP(구독)  | [*다운로드* 페이지](https://customer.liferay.com/group/customer/downloads) 으로 이동하여 DXP 버전과 _제품/서비스 팩_ 파일 형식을 선택합니다. 표시되는 목록에서 _Liferay DXP 업그레이드 클라이언트_에 대해 _다운로드_ 클릭합니다.                    |
-| Liferay Portal | [_다운로드_ 페이지](https://www.liferay.com/downloads-community) 으로 이동합니다. _Liferay Portal_ 다운로드 메뉴에서 _기타 파일_ 선택하고 _다운로드_클릭합니다. 최신 Liferay Portal 릴리스 자산 GitHub 페이지가 나타납니다. `[version]`클릭합니다. |
+| 라이프레이 DXP(구독)  | [**다운로드** 페이지](https://customer.liferay.com/group/customer/downloads) 으로 이동하여 DXP 버전과 **제품/서비스 팩** 파일 형식을 선택합니다. 표시되는 목록에서 **Liferay DXP 업그레이드 클라이언트** 에 대해 **다운로드** 클릭합니다.                    |
+| Liferay Portal | [**다운로드** 페이지](https://www.liferay.com/downloads-community) 으로 이동합니다. **Liferay Portal** 다운로드 메뉴에서 **기타 파일** 선택하고 **다운로드** 클릭합니다. 최신 Liferay Portal 릴리스 자산 GitHub 페이지가 나타납니다. `[version]`클릭합니다. |
 
 ## 새 설치 설정
 

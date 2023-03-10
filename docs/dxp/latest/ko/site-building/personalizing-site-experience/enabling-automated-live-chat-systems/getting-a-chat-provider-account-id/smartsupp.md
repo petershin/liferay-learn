@@ -6,7 +6,7 @@
 
 1. [Smartsupp 계정](https://app.smartsupp.com/app/sign/in) 에 로그인합니다.
 
-1. *톱니바퀴 아이콘* &rarr; *채팅창*을 클릭합니다.
+1. **톱니바퀴 아이콘** &rarr; **채팅창** 을 클릭합니다.
 
     ![Smartsupp의 왼쪽 막대에는 옵션이 표시됩니다. 기어 아이콘과 채팅 상자를 선택합니다.](./smartsupp/images/01.png)
 

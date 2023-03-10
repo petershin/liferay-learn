@@ -84,7 +84,7 @@ Liferay 컨테이너 시작 및 작동에 대한 자세한 내용은 [Liferay Do
 
 ### Liferay 환경 변수 사용
 
-각 [Portal Property](../../reference/portal-properties.md)에 대해 *Env* 변수가 있습니다. Env 변수는 Liferay Docker 컨테이너의 포털 속성을 재정의하는 [Docker 환경 변수](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) 입니다.
+각 [Portal Property](../../reference/portal-properties.md)에 대해 **Env** 변수가 있습니다. Env 변수는 Liferay Docker 컨테이너의 포털 속성을 재정의하는 [Docker 환경 변수](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) 입니다.
 
 1. [Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 온라인 설명에서 재정의하려는 속성을 찾으십시오.
 
@@ -112,7 +112,7 @@ Liferay 컨테이너 시작 및 작동에 대한 자세한 내용은 [Liferay Do
     컨테이너 시작 및 작동에 대한 자세한 내용은 [Liferay Docker 이미지 사용](../using-liferay-docker-images.md)을 참조하세요.
     ```
 
-속성은 제어판의 _구성_ &rarr; _서버 관리_ &rarr; _속성_ &rarr; _포털 속성_에서 볼 수 있습니다.
+속성은 제어판의 **구성** &rarr; **서버 관리** &rarr; **속성** &rarr; **포털 속성** 에서 볼 수 있습니다.
 
 ### 포털 속성 파일 사용
 
@@ -138,7 +138,7 @@ Liferay 컨테이너 시작 및 작동에 대한 자세한 내용은 [Liferay Do
     ```bash
     docker run -it -m 8g -p 8080:8080 -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
     ```
-속성은 제어판의 _Configuration_ &rarr; _서버 관리_ &rarr; _Properties_ &rarr; _포털 속성_.
+속성은 제어판의 **Configuration** &rarr; **서버 관리** &rarr; **Properties** &rarr; **포털 속성** .
 
 ```{note}
 데이터베이스 포털 속성 예제는 [데이터베이스 템플릿](../../reference/database-templates.md)을 참조하십시오.
@@ -235,7 +235,7 @@ LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
     컨테이너에 대한 바인딩 마운팅에 대한 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) 을 참조하세요. `/mnt/liferay` 폴더.
     ```
 
-속성은 제어판의 _구성_ &rarr; _서버 관리_ &rarr; _속성_ &rarr; _시스템 속성_에서 볼 수 있습니다.
+속성은 제어판의 **구성** &rarr; **서버 관리** &rarr; **속성** &rarr; **시스템 속성** 에서 볼 수 있습니다.
 
 ## 시스템 설정
 
@@ -273,7 +273,7 @@ Liferay 시스템 설정은 [제어판](../../../system-administration/configuri
     컨테이너에 대한 바인딩 마운팅에 대한 자세한 내용은 [컨테이너에 파일 제공](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay) 을 참조하세요. `/mnt/liferay` 폴더.
     ```
 
-시스템 구성 요소 구성은 해당 구성 요소에 대한 화면의 _구성_ &rarr; _시스템 설정_제어판에서 볼 수 있습니다.
+시스템 구성 요소 구성은 해당 구성 요소에 대한 화면의 **구성** &rarr; **시스템 설정** 제어판에서 볼 수 있습니다.
 
 ### 런타임 시 구성 파일 적용
 

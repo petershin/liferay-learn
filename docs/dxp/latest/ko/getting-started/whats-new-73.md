@@ -249,13 +249,13 @@ App Builder의 내부에서 Data Engine은 Data Engine을 사용하여 애플리
 
 > 요구되는 기부금
 
-[Multi-Factor Authentication](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA)은 사용자가 여러 방법 또는 _요소_로 자신의 신원을 증명하도록 요구함으로써 더 나은 보안을 제공합니다. 기본 사용자 이름/암호 조합은 하나 이상의 구성 가능한 요소로 보강됩니다. 여기에는 기본 OTP(일회용 암호) 및 구성 가능한 IP 주소, 시간 기반 OTP 및 시스템이 확장 가능하기 때문에 작성하려는 모든 요소가 포함됩니다. 
+[Multi-Factor Authentication](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA)은 사용자가 여러 방법 또는 **요소** 로 자신의 신원을 증명하도록 요구함으로써 더 나은 보안을 제공합니다. 기본 사용자 이름/암호 조합은 하나 이상의 구성 가능한 요소로 보강됩니다. 여기에는 기본 OTP(일회용 암호) 및 구성 가능한 IP 주소, 시간 기반 OTP 및 시스템이 확장 가능하기 때문에 작성하려는 모든 요소가 포함됩니다. 
 
 ### 인스턴스 수준의 SAML 구성
 
 이 변경으로 인증서 처리를 포함하여 인스턴스 수준에서 [SAML](../installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml.md) 설정을 구성할 수 있습니다. 
 
-새로운 SAML 속성이 도입되었습니다. *알 수 없는 사용자는 낯선 사람입니다*. 이 속성은 최종 사용자가 낯선 사람일 때 SAML IdP 연결 동작을 결정합니다. 속성은 포털 데이터베이스에 아직 존재하지 않는 사용자를 낯선 사람으로 분류해야 하는지 여부를 정의합니다. 일단 분류되면 포털 인스턴스의 기존 낯선 사람 처리 정책에 따라 IdP의 SAML 어설션에서 사용할 수 있는 정보를 사용하여 사용자를 자동으로 프로비저닝해야 하는지 여부가 결정됩니다.
+새로운 SAML 속성이 도입되었습니다. **알 수 없는 사용자는 낯선 사람입니다** . 이 속성은 최종 사용자가 낯선 사람일 때 SAML IdP 연결 동작을 결정합니다. 속성은 포털 데이터베이스에 아직 존재하지 않는 사용자를 낯선 사람으로 분류해야 하는지 여부를 정의합니다. 일단 분류되면 포털 인스턴스의 기존 낯선 사람 처리 정책에 따라 IdP의 SAML 어설션에서 사용할 수 있는 정보를 사용하여 사용자를 자동으로 프로비저닝해야 하는지 여부가 결정됩니다.
 
 ### 인스턴스 수준의 OAuth 2 구성
 

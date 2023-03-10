@@ -12,17 +12,17 @@ Liferay DXP 7.4+의 경우 페이지 템플릿 컬렉션은 Liferay UI에서 페
 
 페이지 템플릿을 내보내려면 다음 단계를 따르십시오.
 
-1. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png)) 을 열고 *디자인* &rarr; *페이지 템플릿*으로 이동 합니다 .
+1. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png)) 을 열고 **디자인** &rarr; **페이지 템플릿** 으로 이동 합니다 .
 
-1. *페이지 템플릿* 탭을 클릭합니다.
+1. **페이지 템플릿** 탭을 클릭합니다.
 
 1. 원하는 템플릿이 포함된 페이지 템플릿 집합을 선택합니다.
 
-1. 원하는 페이지 템플릿에 대해 *작업* 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 *내보내기*를 선택합니다.
+1. 원하는 페이지 템플릿에 대해 **작업** 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 **내보내기** 를 선택합니다.
 
    ![내보내기를 클릭하여 페이지 템플릿을 Zip으로 내보냅니다.](./exporting-and-importing-page-templates/images/01.png)
 
-1. 확인 창에서 *확인* 을 클릭합니다.
+1. 확인 창에서 **확인** 을 클릭합니다.
 
 페이지 템플릿은 ZIP 파일로 로컬 컴퓨터에 다운로드됩니다.
 
@@ -45,19 +45,19 @@ ZIP 파일에는 `display-page-template.json`, `master-page.json`, `page-templat
 
 페이지 템플릿을 가져오려면 다음 단계를 따르십시오.
 
-1. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png)) 을 열고 *디자인* &rarr; *페이지 템플릿*으로 이동 합니다 .
+1. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png)) 을 열고 **디자인** &rarr; **페이지 템플릿** 으로 이동 합니다 .
 
-1. 0 Application Bar에서 *Actions* 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 *Import*를 선택합니다.
+1. 0 Application Bar에서 **Actions** 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 **Import** 를 선택합니다.
 
    ![가져오기 기능은 오른쪽 상단 옵션 메뉴에 있습니다.](./exporting-and-importing-page-templates/images/02.png)
 
 1. 원하는 페이지 템플릿 파일을 선택합니다.
 
-1. *가져오기*을 클릭합니다.
+1. **가져오기** 을 클릭합니다.
 
    ![페이지 템플릿은 ZIP 파일로 가져옵니다.](./exporting-and-importing-page-templates/images/03.png)
 
-1. *가져오기* 창을 닫습니다.
+1. **가져오기** 창을 닫습니다.
 
 페이지 템플릿을 사이트로 가져왔습니다.
 

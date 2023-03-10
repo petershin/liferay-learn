@@ -4,16 +4,16 @@
 
 양식 이메일 알림을 구성하려면:
 
-1. _제품 메뉴_ (![Product Menu](../../../images/icon-product-menu.png))을 연 다음 _사이트 관리_ 메뉴에서 나침반 아이콘(![Compass](../../../images/icon-compass.png))을 클릭합니다. 양식이 연결된 사이트를 선택합니다.
-1. _콘텐츠 & 데이터_  &rarr; _양식_를 클릭합니다.
-1. 양식을 선택합니다(예: _Guest Survey Form_).
-1. _옵션_ 버튼(![Options](../../../images/icon-options.png))을 클릭하고 _설정_을 선택하여 양식의 _양식 설정_ 섹션을 엽니다.
+1. **제품 메뉴**(![Product Menu](../../../images/icon-product-menu.png))을 연 다음 **사이트 관리** 메뉴에서 나침반 아이콘(![Compass](../../../images/icon-compass.png))을 클릭합니다. 양식이 연결된 사이트를 선택합니다.
+1. **콘텐츠 & 데이터** &rarr; **양식** 를 클릭합니다.
+1. 양식을 선택합니다(예: **Guest Survey Form**).
+1. **옵션** 버튼(![Options](../../../images/icon-options.png))을 클릭하고 **설정** 을 선택하여 양식의 **양식 설정** 섹션을 엽니다.
    
    ![Form 설정](./configuring-form-notifications/images/01.png)
 
-1. _이메일 알림_ 탭을 클릭합니다.
+1. **이메일 알림** 탭을 클릭합니다.
 
-1. _각 항목에 대한 이메일 알림 보내기_ 옵션을 활성화합니다.
+1. **각 항목에 대한 이메일 알림 보내기** 옵션을 활성화합니다.
    
    ![양식 항목이 제출될 때마다 이메일 알림을 구성합니다.](./configuring-form-notifications/images/02.png)
 
@@ -27,7 +27,7 @@
    
    **제목:** 이메일 제목.
 
-1. _완료_ 을 클릭한 다음 대화창을 닫습니다.
+1. **완료** 을 클릭한 다음 대화창을 닫습니다.
 
 ## 추가 정보
 

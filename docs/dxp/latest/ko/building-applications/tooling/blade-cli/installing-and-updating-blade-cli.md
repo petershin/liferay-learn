@@ -24,7 +24,7 @@ curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/i
 
     ![Liferay Workspace 설치 프로그램이 설치된 JDK를 자동 감지합니다.](./installing-and-updating-blade-cli/images/01.png)
 
-1. 소개가 끝나면 *다음*을 클릭합니다.
+1. 소개가 끝나면 **다음** 을 클릭합니다.
 
 1. 설치 중에 [Liferay Workspace](../liferay-workspace/what-is-liferay-workspace.md)를 초기화할 수 있습니다. Liferay Workspace는 Liferay 프로젝트를 관리할 시스템의 환경(폴더 집합)입니다. 지금 초기화하려면 사이트를 설정하십시오.
 
@@ -34,9 +34,9 @@ curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/i
 
     ![설치 프로그램의 기본값은 Community Edition이지만 DXP를 선택할 수 있습니다.](./installing-and-updating-blade-cli/images/03.png)
 
-    제품 유형을 선택하고 *다음*을 클릭합니다.
+    제품 유형을 선택하고 **다음** 을 클릭합니다.
 
-1. *다음*을 클릭하여 블레이드 CLI를 설치합니다.
+1. **다음** 을 클릭하여 블레이드 CLI를 설치합니다.
 
 Windows 환경에서 `blade` 명령은 Windows에서 또는 Mac 및 Linux에서 `bash` 또는 `zsh`를 사용하는 경우 경로에 자동으로 추가됩니다. 자세한 내용은 [블레이드 CLI 문제 해결](./troubleshooting-blade-cli.md) 를 참조하십시오. 
 

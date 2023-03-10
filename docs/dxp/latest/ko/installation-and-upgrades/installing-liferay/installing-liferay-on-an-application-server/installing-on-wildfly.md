@@ -76,7 +76,7 @@ DXP 7.3 및 이전 버전의 경우 다음 추가 단계를 따르십시오.
 
 ## 독립 실행형 모드와 도메인 모드의 WildFly에서 DXP 실행
 
-WildFly는 *독립형* 모드 또는 *도메인* 모드에서 시작할 수 있습니다. 도메인 모드를 사용하면 단일 제어 지점에서 여러 애플리케이션 서버 인스턴스를 관리할 수 있습니다. 이러한 애플리케이션 서버의 콜렉션을 *도메인*이라고 합니다. 독립 실행형 모드와 도메인 모드에 대한 자세한 내용은 [WildFly 관리 가이드](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes) 에서 이 주제에 대한 섹션을 참조하십시오. DXP는 독립 실행형 모드에서 WildFly를 완벽하게 지원하지만 도메인 모드에서는 지원하지 않습니다.
+WildFly는 **독립형** 모드 또는 **도메인** 모드에서 시작할 수 있습니다. 도메인 모드를 사용하면 단일 제어 지점에서 여러 애플리케이션 서버 인스턴스를 관리할 수 있습니다. 이러한 애플리케이션 서버의 콜렉션을 **도메인** 이라고 합니다. 독립 실행형 모드와 도메인 모드에 대한 자세한 내용은 [WildFly 관리 가이드](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes) 에서 이 주제에 대한 섹션을 참조하십시오. DXP는 독립 실행형 모드에서 WildFly를 완벽하게 지원하지만 도메인 모드에서는 지원하지 않습니다.
 
 DXP는 독립형 모드에서 실행될 때 WildFly를 지원하지만 도메인 모드에서 실행될 때는 지원하지 않습니다. DXP의 자동 배포는 관리형 배포에서 작동하지 않습니다. WildFly가 파일(폭발 또는 비폭발)을 복사하여 관리형 배포의 콘텐츠를 관리하기 때문입니다. 이렇게 하면 JSP 후크 및 Ext 플러그인이 의도한 대로 작동하지 않습니다. 예를 들어 JSP 후크는 DXP의 JSP 재정의 메커니즘이 애플리케이션 서버에 의존하기 때문에 관리되는 도메인 모드에서 실행되는 WildFly에서 작동하지 않습니다. 그러나 JSP 후크 및 Ext 플러그인은 더 이상 사용되지 않으므로 사용하지 않을 수 있습니다.
 
@@ -247,7 +247,7 @@ WildFly 서버와 함께 IBM JDK를 사용하는 경우 다음 추가 단계를 
 
 ## Liferay의 데이터 소스 구성
 
-DXP에는 시연용으로 좋은 Hypersonic 데이터베이스가 내장되어 있지만 생산 **에서는 사용**안 됩니다. 프로덕션의 경우 완전한 기능을 갖춘 지원되는 RDBMS를 사용하십시오. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md) 을 참조하십시오.
+DXP에는 시연용으로 좋은 Hypersonic 데이터베이스가 내장되어 있지만 생산 **에서는 사용** 안 됩니다. 프로덕션의 경우 완전한 기능을 갖춘 지원되는 RDBMS를 사용하십시오. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md) 을 참조하십시오.
 
 Liferay DXP는 DXP의 내장 데이터 소스(권장)를 사용하거나 앱 서버에서 생성한 데이터 소스를 사용하여 데이터베이스에 연결할 수 있습니다.
 
@@ -389,7 +389,7 @@ Liferay DXP Enterprise 구독이 있는 경우 DXP는 활성화 키를 요청합
 
 ## 다음 단계
 
-[관리자 사용자로 로그인하고](../../../getting-started/introduction-to-the-admin-account.md) \[DXP에서 솔루션 구축\](../../../building_solutions_on_dxp.html. 또는 [개의 추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
+[관리자 사용자로 로그인하고](../../../getting-started/introduction-to-the-admin-account.md) \[DXP에서 솔루션 구축\](../../../building **solutions** on_dxp.html. 또는 [개의 추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
 
 * [마켓플레이스 플러그인 설치](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [평가판 기간 동안 플러그인 액세스](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)

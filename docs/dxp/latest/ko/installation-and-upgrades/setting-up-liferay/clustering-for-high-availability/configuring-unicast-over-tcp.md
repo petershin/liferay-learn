@@ -78,7 +78,7 @@
     cluster.link.channel.properties.transport.0=/jgroups/tcp.xml
     ```
 
-위에서 설명한 JGroups 구성은 일반적으로 Unicast over TCP에 필요한 전부입니다. 그러나 매우 특정한 경우에 *(및* ) 클러스터 노드가 여러 네트워크에 배포된 경우 각 호스트에서 `external_addr` TCP 전송 매개변수를 방화벽의 외부(공용 IP) 주소로 설정해야 합니다. 이러한 종류의 구성은 일반적으로 노드가 지리적으로 분리된 경우에만 필요합니다. 이를 설정하면 별도의 네트워크(예: 서로 다른 방화벽으로 분리됨)에 배포된 클러스터 노드가 함께 통신할 수 있습니다. 이 구성은 시스템의 보안 감사에서 플래그가 지정될 수 있습니다. 자세한 내용은 [JGroups 설명서](http://www.jgroups.org/manual4/index.html#_transport_protocols) 을 참조하십시오.
+위에서 설명한 JGroups 구성은 일반적으로 Unicast over TCP에 필요한 전부입니다. 그러나 매우 특정한 경우에 (**및**) 클러스터 노드가 여러 네트워크에 배포된 경우 각 호스트에서 `external_addr` TCP 전송 매개변수를 방화벽의 외부(공용 IP) 주소로 설정해야 합니다. 이러한 종류의 구성은 일반적으로 노드가 지리적으로 분리된 경우에만 필요합니다. 이를 설정하면 별도의 네트워크(예: 서로 다른 방화벽으로 분리됨)에 배포된 클러스터 노드가 함께 통신할 수 있습니다. 이 구성은 시스템의 보안 감사에서 플래그가 지정될 수 있습니다. 자세한 내용은 [JGroups 설명서](http://www.jgroups.org/manual4/index.html#_transport_protocols) 을 참조하십시오.
 
 ```{note}
 `singleton_name` TCP 속성은 JGroups v4.0.0에서 더 이상 사용되지 않으므로 JGroups v 4.1.1-Final을 사용하는 Liferay DXP 7.2 SP1 및 Liferay Portal GA2 이후로 제거되었습니다.

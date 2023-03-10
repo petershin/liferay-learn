@@ -6,17 +6,17 @@
 
 계정에 대한 워크플로를 활성화하려면
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *애플리케이션* 탭 &rarr; *프로세스 빌더*로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **애플리케이션** 탭 &rarr; **프로세스 빌더** 로 이동합니다.
 
-1. *구성* 탭으로 이동하고 계정 항목에 대해 *편집* 을 클릭합니다.
+1. **구성** 탭으로 이동하고 계정 항목에 대해 **편집** 을 클릭합니다.
 
-1. 드롭다운 메뉴를 사용하여 *작업 흐름*을 선택합니다.
+1. 드롭다운 메뉴를 사용하여 **작업 흐름** 을 선택합니다.
 
    사용자 지정 워크플로 설계에 대해 알아보려면 [워크플로 디자이너 개요](../../process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) 을 참조하십시오.
 
    ![드롭다운 메뉴를 사용하여 워크플로를 선택합니다.](./using-workflow-with-accounts/images/01.png)
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 이제 워크플로가 활성화되었습니다. 새 계정은 활성화되기 전에 정의된 승인 프로세스를 거쳐야 합니다.
 

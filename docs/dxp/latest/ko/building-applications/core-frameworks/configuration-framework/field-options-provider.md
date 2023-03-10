@@ -35,7 +35,7 @@
     STARTED com.acme.z4h3.impl_1.0.0 [1150]
     ```
 
-1. 브라우저를 `https://localhost:8080` 로 열고 *제어판* &rarr; *구성* &rarr; *시스템 설정*로 이동합니다. 플랫폼에서 *Third Party*을 클릭합니다. 왼쪽에서 *Z4H3 구성* 을 클릭합니다.
+1. 브라우저를 `https://localhost:8080` 로 열고 **제어판** &rarr; **구성** &rarr; **시스템 설정** 로 이동합니다. 플랫폼에서 **Third Party** 을 클릭합니다. 왼쪽에서 **Z4H3 구성** 을 클릭합니다.
    
    ![설정 UI에는 두 개의 드롭다운 목록이 표시됩니다.](./field-options-provider/images/01.png)
 

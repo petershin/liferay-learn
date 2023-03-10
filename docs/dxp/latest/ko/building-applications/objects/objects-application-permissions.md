@@ -52,9 +52,9 @@
 
 개별 개체 정의에 대한 권한을 관리하려면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 통해 *Objects* 애플리케이션을 엽니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 통해 **Objects** 애플리케이션을 엽니다.
 
-1. 원하는 개체 정의에 대해 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 *권한*를 선택합니다.
+1. 원하는 개체 정의에 대해 **작업** 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 **권한** 를 선택합니다.
 
    ![원하는 개체 정의에 대한 작업 버튼을 클릭하고 권한을 선택합니다.](./objects-application-permissions/images/02.png)
 
@@ -66,7 +66,7 @@
 
    ![확인란을 사용하여 원하는 역할에 권한을 할당합니다.](./objects-application-permissions/images/03.png)
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 ## 추가 정보
 

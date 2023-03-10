@@ -13,12 +13,13 @@ uuid: 692ed11e-986f-4d53-963a-3142a0a683de
 ## 다이렉트 동기 메시지 보내기
 
 예제 프로젝트에서는 `SynchronousMessageSender` 사용하여 두 수신기에 직접 메시지를 보냅니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르십시오.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
@@ -103,7 +104,7 @@ Then, follow these steps:
 
 이 구성자는 [`구성 요소`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 클래스입니다. [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 사용하여 `DestinationFactory` 인스턴스를 주입합니다.
 
-`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 `acme/x6n5_able`이라는 *동기식* 대상을 생성합니다. 동기 대상은 동기 메시징에 최적화되어 있습니다. 마지막으로 이 메소드는 `BundleContext`를 사용하여 OSGi 서비스에 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 등록합니다.
+`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 `acme/x6n5_able`이라는 **동기식** 대상을 생성합니다. 동기 대상은 동기 메시징에 최적화되어 있습니다. 마지막으로 이 메소드는 `BundleContext`를 사용하여 OSGi 서비스에 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 등록합니다.
 
 `X6N5AbleMessagingConfigurator` 비활성화되면 `_deactivate()` 메서드가 대상 서비스를 등록 해제합니다.
 
@@ -116,7 +117,7 @@ Then, follow these steps:
    :lines: 12-37
 ```
 
-`X6N5BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 *다이렉트* 모드로 설정된 `SynchronousMessageSender` 삽입합니다(주석의 `target = "(mode=DIRECT)"` 속성으로 지정됨).
+`X6N5BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 **다이렉트** 모드로 설정된 `SynchronousMessageSender` 삽입합니다(주석의 `target = "(mode=DIRECT)"` 속성으로 지정됨).
 
 ```{note}
 *직접* 모드에서 `SynchronousMessageSender` `send` 메소드는 현재 스레드가 모든 리스너에게 메시지를 전달할 때까지 호출 클래스를 차단합니다.
@@ -150,7 +151,7 @@ Then, follow these steps:
 
 ## 무엇 향후 계획
 
-기본 *모드를 사용하여 동기식 메시징을 탐색* [이전 버전에서 기본 동기식 메시징 사용](./using-default-synchronous-messaging-in-previous-versions.md)참조하십시오.
+기본 **모드를 사용하여 동기식 메시징을 탐색**[이전 버전에서 기본 동기식 메시징 사용](./using-default-synchronous-messaging-in-previous-versions.md)참조하십시오.
 
 메시지를 보낸 후 즉시 처리를 계속하려면 [비동기 메시징 사용](./using-asynchronous-messaging.md)참조하십시오.
 

@@ -4,7 +4,7 @@ uuid: fb7b68cb-a0a1-4a22-9234-208053f927a7
 
 # 구성 분류
 
-구성 인터페이스를 등록하면 애플리케이션의 UI가 *시스템 설정* &rarr; *플랫폼* &rarr; *타사*에 생성됩니다. 애플리케이션의 설정 UI가 표시되는 다른 섹션과 카테고리를 선호하는 경우 쉽게 변경할 수 있습니다.
+구성 인터페이스를 등록하면 애플리케이션의 UI가 **시스템 설정** &rarr; **플랫폼** &rarr; **타사** 에 생성됩니다. 애플리케이션의 설정 UI가 표시되는 다른 섹션과 카테고리를 선호하는 경우 쉽게 변경할 수 있습니다.
 
 ## 기존 범주 지정
 
@@ -28,7 +28,7 @@ uuid: fb7b68cb-a0a1-4a22-9234-208053f927a7
 import com.liferay.portal.configuration.metatype.annotations.ExtendedObjectClassDefinition
 ```
 
-애플리케이션을 재배포하면 구성 UI가 이제 *Content and Data* &rarr; *Blogs*아래에 있습니다.
+애플리케이션을 재배포하면 구성 UI가 이제 **Content and Data** &rarr; **Blogs** 아래에 있습니다.
 
 ## 새 섹션 및 범주 만들기
 

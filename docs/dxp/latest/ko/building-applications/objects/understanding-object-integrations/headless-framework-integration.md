@@ -2,9 +2,9 @@
 
 > 사용 가능: Liferay DXP/Portal 7.4+
 
-객체를 게시하면 Liferay가 자동으로 이에 대한 REST API를 생성합니다. 이렇게 하면 사용자 지정 개체에 대한 헤드리스 액세스가 제공되므로 CRUD 작업을 수행할 수 있습니다. 개체에 대해 생성된 API는 해당 범위(예: 회사 또는 사이트)에 따라 다릅니다.<!--TASK: replace first sentence when GraphQL APIs are supported, "When you publish an Object, Liferay automatically generates both REST and \[GraphQL\](https://graphql.org) APIs for it."-->모든 개체는 `c/[pluralobjectlabel]` 명명 패턴(예: `c/timeoffrequests`)을 사용합니다. 각 개체 항목 스키마에는 개체의 모든 필드와 관계가 포함됩니다.
+객체를 게시하면 Liferay가 자동으로 이에 대한 REST API를 생성합니다. 이렇게 하면 사용자 지정 개체에 대한 헤드리스 액세스가 제공되므로 CRUD 작업을 수행할 수 있습니다. 개체에 대해 생성된 API는 해당 범위(예: 회사 또는 사이트)에 따라 다릅니다. <!--TASK: replace first sentence when GraphQL APIs are supported, "When you publish an Object, Liferay automatically generates both REST and \[GraphQL\](https://graphql.org) APIs for it."--> 모든 개체는 `c/[pluralobjectlabel]` 명명 패턴(예: `c/timeoffrequests`)을 사용합니다. 각 개체 항목 스키마에는 개체의 모든 필드와 관계가 포함됩니다.
 
-`[server]:[port]/o/api` (예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 개체의 API를 보고 테스트할 수 있습니다. REST API는 *REST 애플리케이션*아래에 나열됩니다.<!--TASK: uncomment when GraphQL APIs are supported, "Click *GraphQL* to access Liferay's \[Graph*i*QL\](https://github.com/graphql/graphiql) browser."-->관련 개체 자습서는 [API 사용](../objects-tutorials/using-apis.md) 을 참조하십시오.
+`[server]:[port]/o/api` (예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 개체의 API를 보고 테스트할 수 있습니다. REST API는 **REST 애플리케이션** 아래에 나열됩니다. <!--TASK: uncomment when GraphQL APIs are supported, "Click **GraphQL** to access Liferay's \[Graph **i** QL\](https://github.com/graphql/graphiql) browser."--> 관련 개체 자습서는 [API 사용](../objects-tutorials/using-apis.md) 을 참조하십시오.
 
 ## 개체 REST API
 
@@ -60,7 +60,7 @@ API의 `scopesKey` 매개변수의 경우 원하는 데이터 범위(예: 사이
 <!--TASK: uncomment when GraphQL APIs are supported, 
 ## Object GraphQL APIs
 
-With the GraphQL APIs, you can both query and mutate Object data. All APIs for custom Objects are listed under `c` in Liferay's GraphQL schema. You can use Liferay's integrated Graph*i*QL IDE to search Object schemas, draft queries, run requests, and more. To access it, go to Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) and click *GraphQL*.
+With the GraphQL APIs, you can both query and mutate Object data. All APIs for custom Objects are listed under `c` in Liferay's GraphQL schema. You can use Liferay's integrated Graph **i** QL IDE to search Object schemas, draft queries, run requests, and more. To access it, go to Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) and click **GraphQL** .
 
 ![Use Liferay's GraphiQL explorer to search Object schemas and run your requests.](./headless-framework-integration/images/02.png)
 
@@ -70,4 +70,4 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 ## 추가 정보
 
 * [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-* [API 사용](../objects-tutorials/using-apis.md)<!--TASK: * \[Consuming GraphQL APIs\](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->
+* [API 사용](../objects-tutorials/using-apis.md) <!--TASK: * \[Consuming GraphQL APIs\](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

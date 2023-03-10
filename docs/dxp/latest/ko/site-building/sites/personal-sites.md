@@ -26,11 +26,11 @@ Liferay 7.4 U22+ 및 GA22+의 경우 새 Liferay 설치에는 대시보드 페�
 
 개인 사이트 페이지에 액세스하려면 다음 단계를 따르십시오.
 
-1. 개인 메뉴 아이콘을 열고 *내 프로필* 또는 *내 대시보드*을 선택합니다.
+1. 개인 메뉴 아이콘을 열고 **내 프로필** 또는 **내 대시보드** 을 선택합니다.
 
     ![개인 메뉴에서 개인 사이트 페이지에 액세스합니다.](./personal-sites/images/03.png)
 
-1. *사이트 메뉴* (![Site Menu](../../images/icon-product-menu.png))을 열고 *사이트 빌더*를 확장한 다음 *페이지*을 클릭합니다.
+1. **사이트 메뉴**(![Site Menu](../../images/icon-product-menu.png))을 열고 **사이트 빌더** 를 확장한 다음 **페이지** 을 클릭합니다.
 
 1. 다른 [사이트 페이지](../creating-pages/understanding-pages/understanding-pages.md)처럼 관리하십시오.
 

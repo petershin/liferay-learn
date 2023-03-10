@@ -7,12 +7,12 @@
 1. [청사진 만들기](./creating-and-managing-search-blueprints.md).
 1. [검색 페이지](../../search-pages-and-widgets/working-with-search-pages.md)을 생성하거나 탐색합니다.
 1. 청사진 옵션 위젯을 페이지에 추가합니다.
-1. 위젯의 옵션 아이콘(![Options](../../../images/icon-app-options.png))을 클릭하고 *구성*를 클릭합니다.
-1. 페이지의 청사진을 선택하려면 _선택_을 클릭합니다.
+1. 위젯의 옵션 아이콘(![Options](../../../images/icon-app-options.png))을 클릭하고 **구성** 를 클릭합니다.
+1. 페이지의 청사진을 선택하려면 **선택** 을 클릭합니다.
 
    ![페이지에서 사용할 청사진을 선택합니다.](./using-a-search-blueprint-on-a-search-page/images/02.png)
 
-1. 청사진이 선택되면 구성 화면에서 _저장_ 을 클릭합니다.
+1. 청사진이 선택되면 구성 화면에서 **저장** 을 클릭합니다.
 
 이제 청사진의 기능이 페이지에 적용되었습니다.
 

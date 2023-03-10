@@ -8,7 +8,7 @@ uuid: 75d0f713-0c4c-46ae-8761-21a0878077cf
 
 검색 청사진을 만들려면
 
-1. 전역 메뉴 &rarr; 애플리케이션(검색 경험)에서 _청사진_ 클릭하여 청사진 애플리케이션을 엽니다.
+1. 전역 메뉴 &rarr; 애플리케이션(검색 경험)에서 **청사진** 클릭하여 청사진 애플리케이션을 엽니다.
 
 1. 추가(![Add](../../../images/icon-add.png)) 버튼을 클릭하여 청사진을 추가합니다.
 
@@ -22,13 +22,13 @@ uuid: 75d0f713-0c4c-46ae-8761-21a0878077cf
 
    - [구성](#adding-configurations) : 검색에서 고급 설정(예: 정렬 또는 집계)을 구성합니다.
 
-1. Blueprint를 빌드하고 구성하면서 테스트합니다. _미리보기_ 클릭하고 검색어를 입력하세요.
+1. Blueprint를 빌드하고 구성하면서 테스트합니다. **미리보기** 클릭하고 검색어를 입력하세요.
 
    ![실행하기 전에 Blueprint를 미리 봅니다.](./creating-and-managing-search-blueprints/images/02.png)
 
    자세한 내용은 [청사진 테스트](#testing-a-blueprint-with-the-preview-sidebar) 참조하십시오.
 
-1. 초기 Blueprint 생성이 완료되면 _저장_클릭합니다.
+1. 초기 Blueprint 생성이 완료되면 **저장** 클릭합니다.
 
 블루프린트 생성 프로세스는 빠르고 간단할 수 있지만 때때로 더 많은 반복과 테스트가 필요합니다. 작업이 보존되도록 Blueprint를 자주 저장해야 합니다.
 
@@ -56,7 +56,7 @@ CRUD 옵션 외에도 검색 청사진은 [가져오기 및 내보내기](#impor
 
 1. 탐색하려는 요소 카테고리를 확장합니다.
 
-1. 요소 위로 마우스를 가져간 다음 _추가_ 버튼을 클릭합니다.
+1. 요소 위로 마우스를 가져간 다음 **추가** 버튼을 클릭합니다.
 
 1. 구성할 준비가 된 요소가 쿼리 빌더에 추가됩니다.
 
@@ -166,31 +166,31 @@ CRUD 옵션 외에도 검색 청사진은 [가져오기 및 내보내기](#impor
 
 1. 전역 메뉴 &rarr; 애플리케이션 &rarr; 청사진(검색 경험 섹션)에서 청사진 애플리케이션을 엽니다.
 
-1. 청사진 목록에서 청사진의 작업(![Actions](../../../images/icon-actions.png)) 메뉴를 열고 _내보내기_클릭합니다.
+1. 청사진 목록에서 청사진의 작업(![Actions](../../../images/icon-actions.png)) 메뉴를 열고 **내보내기** 클릭합니다.
 
 청사진의 JSON 정의를 가져오려면
 
 1. 전역 메뉴 &rarr; 애플리케이션 &rarr; 청사진(검색 경험 섹션)에서 청사진 애플리케이션을 엽니다.
 
-1. 메인 Blueprints Actions(![Actions](../../../images/icon-actions.png)) 메뉴를 열고 _Import_클릭합니다.
+1. 메인 Blueprints Actions(![Actions](../../../images/icon-actions.png)) 메뉴를 열고 **Import** 클릭합니다.
 
 1. 가져오기 모달을 사용하여 유효한 청사진 JSON 파일을 선택합니다. 유효한 요소 JSON 파일도 이 화면에서 가져올 수 있습니다.
 
    ![청사진 및 요소 가져오기.](./creating-and-managing-search-blueprints/images/10.png)
 
-1. _가져오기_클릭합니다.
+1. **가져오기** 클릭합니다.
 
 ## 미리보기 사이드바로 청사진 테스트
 
-진행 중인 Blueprint에서 지원하는 검색 결과를 검토하는 데 편리한 미리보기 사이드바가 있습니다. 청사진 편집 화면에서 _미리보기_ 버튼을 클릭하여 미리보기에 액세스합니다.
+진행 중인 Blueprint에서 지원하는 검색 결과를 검토하는 데 편리한 미리보기 사이드바가 있습니다. 청사진 편집 화면에서 **미리보기** 버튼을 클릭하여 미리보기에 액세스합니다.
 
 ![실행하기 전에 Blueprint를 미리 봅니다.](./creating-and-managing-search-blueprints/images/14.png)
 
 여기에서 다음 기능에 액세스할 수 있습니다.
 
-- 7.4 U52+의 경우 전체 검색 요청 문자열을 보려면 _원시 요청 보기_ 클릭하십시오. 원시 요청 모달에서 요청을 클립보드에 복사하거나 JSON 파일로 다운로드할 수 있습니다. 이것은 검색 페이지의 [검색 인사이트](../../search-pages-and-widgets/search-insights.md) 위젯에 표시되는 것과 동일한 요청입니다.
+- 7.4 U52+의 경우 전체 검색 요청 문자열을 보려면 **원시 요청 보기** 클릭하십시오. 원시 요청 모달에서 요청을 클립보드에 복사하거나 JSON 파일로 다운로드할 수 있습니다. 이것은 검색 페이지의 [검색 인사이트](../../search-pages-and-widgets/search-insights.md) 위젯에 표시되는 것과 동일한 요청입니다.
 
-- 전체 검색 응답 문자열을 보려면 _원시 응답 보기_ 클릭하십시오. 원시 응답 모달에서 응답을 클립보드에 복사하거나 JSON 파일로 다운로드할 수 있습니다. 이것은 검색 페이지의 [검색 인사이트](../../search-pages-and-widgets/search-insights.md) 위젯에서 볼 수 있는 것과 동일한 문자열입니다.
+- 전체 검색 응답 문자열을 보려면 **원시 응답 보기** 클릭하십시오. 원시 응답 모달에서 응답을 클립보드에 복사하거나 JSON 파일로 다운로드할 수 있습니다. 이것은 검색 페이지의 [검색 인사이트](../../search-pages-and-widgets/search-insights.md) 위젯에서 볼 수 있는 것과 동일한 문자열입니다.
 
    ![Elasticsearch에서 반환된 원시 응답 문자열을 봅니다.](./creating-and-managing-search-blueprints/images/11.png)
 
@@ -202,17 +202,17 @@ CRUD 옵션 외에도 검색 청사진은 [가져오기 및 내보내기](#impor
 
    ![문서의 필드를 검사합니다.](./creating-and-managing-search-blueprints/images/13.png)
 
-[일부 요소](./search-blueprints-elements-reference.md) 수동으로 제공하거나 재정의할 수 있는 검색 컨텍스트 특성을 읽습니다. 이러한 요소로 Blueprint를 테스트하려면 기어 아이콘(![Gear](../../../images/icon-cog3.png))을 클릭하여 Blueprint 미리보기 검색에 검색 컨텍스트 속성을 추가합니다. 속성에 대한 키/값 쌍을 입력한 다음 _완료_클릭하십시오. 이 속성은 블루프린트 미리보기에만 설정되며 블루프린트 자체에는 저장되지 않는다는 점을 명심하세요. 검색 페이지에서 이러한 속성을 구성할 수 있습니다. 자세한 내용은 [검색 페이지에서 검색 청사진 사용](./using-a-search-blueprint-on-a-search-page.md) 을 참조하십시오.
+[일부 요소](./search-blueprints-elements-reference.md) 수동으로 제공하거나 재정의할 수 있는 검색 컨텍스트 특성을 읽습니다. 이러한 요소로 Blueprint를 테스트하려면 기어 아이콘(![Gear](../../../images/icon-cog3.png))을 클릭하여 Blueprint 미리보기 검색에 검색 컨텍스트 속성을 추가합니다. 속성에 대한 키/값 쌍을 입력한 다음 **완료** 클릭하십시오. 이 속성은 블루프린트 미리보기에만 설정되며 블루프린트 자체에는 저장되지 않는다는 점을 명심하세요. 검색 페이지에서 이러한 속성을 구성할 수 있습니다. 자세한 내용은 [검색 페이지에서 검색 청사진 사용](./using-a-search-blueprint-on-a-search-page.md) 을 참조하십시오.
 
 예를 들어,
 
-1. _administrative_ 라는 새 [카테고리가 있는 어휘](../../../content-authoring-and-management/tags-and-categories.md)를 추가합니다.
+1. **administrative** 라는 새 [카테고리가 있는 어휘](../../../content-authoring-and-management/tags-and-categories.md)를 추가합니다.
 
-1. 두 개의 새로운 [웹 콘텐츠 기사](../../../content-authoring-and-management/web-content/web-content-articles.md)를 추가합니다. 둘 다 제목 필드에 _test_ 가 있는지 확인하십시오. 그 중 하나를 생성한 범주에 연결합니다.
+1. 두 개의 새로운 [웹 콘텐츠 기사](../../../content-authoring-and-management/web-content/web-content-articles.md)를 추가합니다. 둘 다 제목 필드에 **test** 가 있는지 확인하십시오. 그 중 하나를 생성한 범주에 연결합니다.
 
-1 새 청사진을 만들고 Conditional Element _Hide Contents in a Category for Guest Users_ 을 추가합니다. 생성한 카테고리에 대한 자산 카테고리 ID가 필요하지만 미리보기 창에서 찾을 수 있습니다.
+1 새 청사진을 만들고 Conditional Element **Hide Contents in a Category for Guest Users** 을 추가합니다. 생성한 카테고리에 대한 자산 카테고리 ID가 필요하지만 미리보기 창에서 찾을 수 있습니다.
 
-1 미리보기에서 _관리_ 검색합니다. 범주가 있는 웹 콘텐츠 문서의 문서를 확장한 다음 `assetCategoryId` (예: 43013)을 찾습니다.
+1 미리보기에서 **관리** 검색합니다. 범주가 있는 웹 콘텐츠 문서의 문서를 확장한 다음 `assetCategoryId` (예: 43013)을 찾습니다.
 
 1 요소 구성에서 ID를 사용하십시오.
 
@@ -222,7 +222,7 @@ CRUD 옵션 외에도 검색 청사진은 [가져오기 및 내보내기](#impor
   
   값: `거짓`
 
-1. _Done_을 클릭한 다음 _test_ 를 검색합니다.
+1. **Done** 을 클릭한 다음 **test** 를 검색합니다.
 
 이제 분류되지 않은 웹 콘텐츠 기사만 반환됩니다. 다른 하나는 검색 사용자가 게스트인 것처럼 검색을 작동하게 하는 검색 컨텍스트 특성 때문에 숨겨졌습니다.
 

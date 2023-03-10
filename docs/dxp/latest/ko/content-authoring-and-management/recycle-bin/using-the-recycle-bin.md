@@ -16,15 +16,15 @@ Wiki 및 Message Board 항목에 추가된 첨부 파일은 삭제 시 휴지통
 
 ## 휴지통으로 항목 이동
 
-1. *사이트 메뉴 열기* (![Product Menu](../../images/icon-product-menu.png)) &rarr; *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*.
+1. **사이트 메뉴 열기**(![Product Menu](../../images/icon-product-menu.png)) &rarr; **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** .
 
-1. 확인란을 사용하여 재활용할 폴더와 자산을 선택한 다음 *휴지통* 버튼(![Recycle](../../images/icon-app-trash.png))을 클릭합니다.
+1. 확인란을 사용하여 재활용할 폴더와 자산을 선택한 다음 **휴지통** 버튼(![Recycle](../../images/icon-app-trash.png))을 클릭합니다.
 
-   또는 개별 폴더 또는 자산에 대해 *작업* 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 *휴지통으로 이동*을 선택할 수 있습니다.
+   또는 개별 폴더 또는 자산에 대해 **작업** 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 **휴지통으로 이동** 을 선택할 수 있습니다.
 
    ![휴지통으로 이동하려는 폴더와 자산을 확인합니다.](./using-the-recycle-bin/images/02.png)
 
-1. 확인 창에서 *확인* 을 클릭합니다.
+1. 확인 창에서 **확인** 을 클릭합니다.
 
 빠른 액세스 링크 및 재활용된 자산을 복원하기 위한 실행 취소 버튼과 함께 휴지통으로 이동된 항목 수를 나타내는 상태 메시지가 나타납니다.
 
@@ -42,11 +42,11 @@ Wiki 및 Message Board 항목에 추가된 첨부 파일은 삭제 시 휴지통
 
 ## 휴지통에서 항목 복원
 
-1. *사이트 메뉴 열기* &rarr; *휴지통*.
+1. **사이트 메뉴 열기** &rarr; **휴지통** .
 
-1. 확인란을 사용하여 복원할 폴더와 자산을 선택한 다음 *복원* 버튼(![Restore](../../images/icon-restore.png))을 클릭합니다.
+1. 확인란을 사용하여 복원할 폴더와 자산을 선택한 다음 **복원** 버튼(![Restore](../../images/icon-restore.png))을 클릭합니다.
 
-   또는 개별 폴더 또는 자산에 대해 *작업* 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 *복원*을 선택할 수 있습니다.
+   또는 개별 폴더 또는 자산에 대해 **작업** 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 **복원** 을 선택할 수 있습니다.
 
    ![복원을 위해 이동할 폴더와 자산을 확인하십시오.](./using-the-recycle-bin/images/05.png)
 
@@ -56,11 +56,11 @@ Wiki 및 Message Board 항목에 추가된 첨부 파일은 삭제 시 휴지통
 
 ## 항목 영구 삭제
 
-1. *사이트 메뉴 열기* &rarr; *휴지통*.
+1. **사이트 메뉴 열기** &rarr; **휴지통** .
 
-1. 확인란을 사용하여 인스턴스에서 영구적으로 삭제하려는 재활용 폴더 및 자산을 선택하고 *삭제* 버튼(![Delete](../../images/icon-delete.png))을 클릭합니다.
+1. 확인란을 사용하여 인스턴스에서 영구적으로 삭제하려는 재활용 폴더 및 자산을 선택하고 **삭제** 버튼(![Delete](../../images/icon-delete.png))을 클릭합니다.
 
-   또는 개별 폴더 또는 자산에 대해 *작업* 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 *삭제*를 선택할 수 있습니다.
+   또는 개별 폴더 또는 자산에 대해 **작업** 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 **삭제** 를 선택할 수 있습니다.
 
    ![삭제하려는 재활용 폴더 및 자산을 확인하십시오.](./using-the-recycle-bin/images/07.png)
 
@@ -72,7 +72,7 @@ Wiki 및 Message Board 항목에 추가된 첨부 파일은 삭제 시 휴지통
 
 ![DXP는 요청이 성공했는지 여부를 나타내는 상태 메시지를 표시합니다.](./using-the-recycle-bin/images/08.png)
 
-재활용품을 모두 삭제하려면 애플리케이션 표시줄에서 *동작* 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 *휴지통 비우기를 선택합니다*.
+재활용품을 모두 삭제하려면 애플리케이션 표시줄에서 **동작** 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 **휴지통 비우기를 선택합니다** .
 
 ## 추가 정보
 

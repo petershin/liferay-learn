@@ -6,11 +6,11 @@ uuid: b4190d14-da78-4536-9fe7-e6e73dc53b9d
 
 Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니다. 메시지를 보내고 응답을 기다리지 않고 처리를 계속합니다.
 
-비동기 메시지는 *직렬* 또는 *병렬* 대상으로 전송됩니다.
+비동기 메시지는 **직렬** 또는 **병렬** 대상으로 전송됩니다.
 
-* *직렬* 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 순차적으로 처리합니다.
+****직렬** 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 순차적으로 처리합니다.
 
-* *병렬* 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지 수신기당 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 동시에 처리합니다.
+****병렬** 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지 수신기당 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 동시에 처리합니다.
 
 다른 클래스(메시지 수신기)가 수신하는 직렬 대상으로 메시지를 보내는 것으로 시작합니다.
 
@@ -120,7 +120,7 @@ Then, start with sending a message in an example project.
 
 모든 클래스는 대상을 만들고 구성할 수 있지만 [`구성 요소`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 에는 `DestinationFactory`와 같은 종속성이 주입될 수 있습니다. `_destinationFactory` 필드의 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석은 Liferay의 OSGi 프레임워크에 `DestinationFactory` 인스턴스를 주입하도록 신호를 보냅니다.
 
-`_activate` 메서드에서 `N8K5AbleMessagingConfigurator` [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 사용하여 `acme/n8k5_able`라는 *직렬* 대상을 생성합니다. 그런 다음 OSGi 프레임워크 `BundleContext` 사용하여 `대상`에 대한 서비스를 등록합니다. `N8K5AbleMessagingConfigurator` 비활성화되면 `_deactivate` 메서드가 서비스 등록을 취소합니다.
+`_activate` 메서드에서 `N8K5AbleMessagingConfigurator` [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 사용하여 `acme/n8k5_able`라는 **직렬** 대상을 생성합니다. 그런 다음 OSGi 프레임워크 `BundleContext` 사용하여 `대상`에 대한 서비스를 등록합니다. `N8K5AbleMessagingConfigurator` 비활성화되면 `_deactivate` 메서드가 서비스 등록을 취소합니다.
 
 ## 발신자 조사
 
@@ -143,7 +143,7 @@ Then, start with sending a message in an example project.
 | `setResponseDestinationName(String)`  | `대상` 참조하여 응답을 받습니다.       |
 | `setValues(Map<String,Object>)` | `지도`에서 추가 데이터를 제공합니다.     |
 
-`N8K5Baker` [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java) 의 `sendMessage(String, Message)` 메서드를 호출하여 `acme/n8k5_able` 이라는 이름의 [`목적지`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 로 메시지를 보냅니다. `MessageBus` 은 새 스레드를 시작하고 `Message` 을 [acme/n8k5_able</code> `Destination`에 등록된`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인스턴스로 `. <code>N8K5Baker`의 스레드가 계속됩니다.
+`N8K5Baker` [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java) 의 `sendMessage(String, Message)` 메서드를 호출하여 `acme/n8k5_able` 이라는 이름의 [`목적지`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 로 메시지를 보냅니다. `MessageBus` 은 새 스레드를 시작하고 `Message` 을 [acme/n8k5 **able</code> `Destination`에 등록된`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY** LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인스턴스로 `. <code>N8K5Baker`의 스레드가 계속됩니다.
 
 ```{note}
 `Message`에 대한 응답을 받으려면 `Message`에 응답 대상을 설정하고 해당 대상에 `N8K5Baker`와 같은 클래스를 `MessageListener`로 등록하십시오. 자세한 내용은 [메시지 듣기](./listening-for-messages.md)를 참조하십시오.
@@ -308,7 +308,7 @@ OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.
 
 이제 비동기 메시징에 익숙해졌으므로 최적의 성능을 위해 조정할 수 있습니다. [메시징 성능 조정](./tuning-messaging-performance.md)에서 방법을 알아보십시오.
 
-*기본* 및 *직접* 모드를 사용하여 동기식 메시징을 탐색하려면 자세한 내용은 [이전 버전](./using-direct-synchronous-messaging-in-previous-versions.md) 에서 직접 동기식 메시징 사용 및 [이전 버전](./using-default-synchronous-messaging-in-previous-versions.md) 에서 기본 동기식 메시징 사용을 참조하십시오.
+**기본** 및 **직접** 모드를 사용하여 동기식 메시징을 탐색하려면 자세한 내용은 [이전 버전](./using-direct-synchronous-messaging-in-previous-versions.md) 에서 직접 동기식 메시징 사용 및 [이전 버전](./using-default-synchronous-messaging-in-previous-versions.md) 에서 기본 동기식 메시징 사용을 참조하십시오.
 
 ## 추가 정보
 

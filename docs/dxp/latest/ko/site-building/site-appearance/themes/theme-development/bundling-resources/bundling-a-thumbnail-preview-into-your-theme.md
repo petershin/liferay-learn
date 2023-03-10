@@ -24,11 +24,11 @@
     STARTED my-liferay-theme_1.0.0
     ```
 
-1. 테마가 배포되면 *사이트 메뉴* (![Site Menu](../../../../../images/icon-product-menu.png))을 열고 *사이트 빌더*를 확장한 다음 *페이지*으로 이동합니다.
+1. 테마가 배포되면 **사이트 메뉴**(![Site Menu](../../../../../images/icon-product-menu.png))을 열고 **사이트 빌더** 를 확장한 다음 **페이지** 으로 이동합니다.
 
-1. 애플리케이션 표시줄에서 *작업* 버튼(![Actions](../../../../../images/icon-actions.png))을 클릭하고 구성(![Configuration icon](../.././../../../images/icon-settings.png))을 선택합니다.
+1. 애플리케이션 표시줄에서 **작업** 버튼(![Actions](../../../../../images/icon-actions.png))을 클릭하고 구성(![Configuration icon](../.././../../../images/icon-settings.png))을 선택합니다.
 
-1. *현재 테마 변경* 버튼을 클릭하여 섬네일과 함께 사용 가능한 모든 테마를 보고 변경 사항을 확인합니다.
+1. **현재 테마 변경** 버튼을 클릭하여 섬네일과 함께 사용 가능한 모든 테마를 보고 변경 사항을 확인합니다.
 
 ![선택한 이미지는 테마를 선택할 때 축소판으로 표시됩니다.](./bundling-a-thumbnail-preview-into-your-theme/images/02.png)
 

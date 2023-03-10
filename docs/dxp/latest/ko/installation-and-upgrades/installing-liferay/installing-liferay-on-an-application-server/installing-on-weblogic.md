@@ -1,6 +1,6 @@
 # WebLogic에 설치
 
-WebLogic을 애플리케이션 서버로 사용하는 경우 DXP를 WebLogic 관리 서버에 설치하는 것이 *적극 권장*됩니다. 관리 서버는 DXP를 빠르게 시작하고 중지할 수 있으며 클러스터 구성으로 변환할 수 있습니다. 여기에서 DXP를 관리 서버에 설치합니다.
+WebLogic을 애플리케이션 서버로 사용하는 경우 DXP를 WebLogic 관리 서버에 설치하는 것이 **적극 권장** 됩니다. 관리 서버는 DXP를 빠르게 시작하고 중지할 수 있으며 클러스터 구성으로 변환할 수 있습니다. 여기에서 DXP를 관리 서버에 설치합니다.
 
 ## 전제 조건
 
@@ -20,7 +20,7 @@ Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. JDK를 선택하려�
 
 1. 확장된 WAR의 `WEB-INF/classes` 폴더에 [`Portal-ext.properties`](../../reference/portal-properties.md) 이라는 파일을 만듭니다.
 
-1. `portal-ext.properties` 파일에서 `liferay.home` 속성을 [*Liferay Home*](../../reference/liferay-home.md) 폴더 경로로 설정합니다. WebLogic에서 [`[Liferay Home]`](../../reference/liferay-home.md) 은 일반적으로 도메인의 폴더로 설정되지만 모든 로컬 폴더를 사용할 수 있습니다. 예를 들어,
+1. `portal-ext.properties` 파일에서 `liferay.home` 속성을 [**Liferay Home**](../../reference/liferay-home.md) 폴더 경로로 설정합니다. WebLogic에서 [`[Liferay Home]`](../../reference/liferay-home.md) 은 일반적으로 도메인의 폴더로 설정되지만 모든 로컬 폴더를 사용할 수 있습니다. 예를 들어,
 
     ```properties
     liferay.home=/full/path/to/your/liferay/home/folder
@@ -88,13 +88,13 @@ StartScriptEnabled=true
 
     `*_MEM_ARGS` 변수는 DXP의 시작 및 최대 힙 메모리 용량을 설정합니다.
 
-1. 노드 관리자가 관리 서버를 시작할 때 DXP의 메모리 요구 사항을 설정하는지 확인하십시오. Admin Server의 콘솔 UI에서 DXP가 배포될 Managed Server로 이동하고 *Server Start* 탭을 선택합니다. *인수* 필드에 다음 매개변수를 입력합니다.
+1. 노드 관리자가 관리 서버를 시작할 때 DXP의 메모리 요구 사항을 설정하는지 확인하십시오. Admin Server의 콘솔 UI에서 DXP가 배포될 Managed Server로 이동하고 **Server Start** 탭을 선택합니다. **인수** 필드에 다음 매개변수를 입력합니다.
 
     ```bash
     -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7
     ```
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 Java 옵션 및 메모리 인수는 아래에 설명되어 있습니다.
 
@@ -149,7 +149,7 @@ Liferay DXP가 구성되고(Elasticsearch 커넥터에 `.config` 파일 사용) 
 
 ## 데이터베이스에 연결
 
-DXP에는 시연 목적으로 Hypersonic 데이터베이스가 내장되어 있지만 _생산에 사용해서는 안 됩니다_. 완전한 기능을 갖춘 지원되는 데이터베이스를 사용하십시오. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md)을 참조하세요.
+DXP에는 시연 목적으로 Hypersonic 데이터베이스가 내장되어 있지만 **생산에 사용해서는 안 됩니다** . 완전한 기능을 갖춘 지원되는 데이터베이스를 사용하십시오. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md)을 참조하세요.
 
 Liferay DXP는 DXP의 내장 데이터 소스(권장) 또는 앱 서버의 JNDI 데이터 소스를 사용하여 데이터베이스에 연결할 수 있습니다.
 
@@ -159,15 +159,15 @@ Liferay DXP는 DXP의 내장 데이터 소스(권장) 또는 앱 서버의 JNDI 
 
 1. DXP WAR(7.4+) 또는 데이터베이스 공급업체에서 JDBC JAR을 가져와 도메인의 `lib` 폴더에 복사합니다.
 1. AdminServer 콘솔에 로그인합니다.
-1. *Domain Structure* 트리에서 도메인을 찾고 *Services* &rarr; *JDBC* &rarr; *Data Sources*로 이동합니다.
-1. 새 데이터 소스를 생성하려면 *New*을 클릭합니다.
-1. `Liferay Data Source` 이 있는 *Name* 필드와 `jdbc/LiferayPool`이 있는 *JNDI Name* 필드를 입력합니다.
-1. 데이터베이스 유형 및 드라이버를 선택합니다. 예를 들어, MySQL은 *입니다. MySQL의 드라이버(유형 4) 버전:using com.mysql.cj.jdbc.Driver*입니다.
-1. 계속하려면 *다음* 을 클릭하십시오.
-1. 이 페이지의 기본 설정을 수락하고 *다음* 을 클릭하여 계속 진행합니다.
+1. **Domain Structure** 트리에서 도메인을 찾고 **Services** &rarr; **JDBC** &rarr; **Data Sources** 로 이동합니다.
+1. 새 데이터 소스를 생성하려면 **New** 을 클릭합니다.
+1. `Liferay Data Source` 이 있는 **Name** 필드와 `jdbc/LiferayPool`이 있는 **JNDI Name** 필드를 입력합니다.
+1. 데이터베이스 유형 및 드라이버를 선택합니다. 예를 들어, MySQL은 **입니다. MySQL의 드라이버(유형 4) 버전:using com.mysql.cj.jdbc.Driver** 입니다.
+1. 계속하려면 **다음** 을 클릭하십시오.
+1. 이 페이지의 기본 설정을 수락하고 **다음** 을 클릭하여 계속 진행합니다.
 1. MySQL 데이터베이스에 대한 데이터베이스 정보를 입력합니다.
-1. MySQL을 사용하는 경우 `?useUnicode=true&characterEncoding=UTF-8&\useFastDateParsing=false` 텍스트를 URL 줄에 추가하고 연결을 테스트합니다. 작동하면 *다음*을 클릭합니다.
-1. 데이터 소스의 대상을 선택하고 *마침*을 클릭합니다.
+1. MySQL을 사용하는 경우 `?useUnicode=true&characterEncoding=UTF-8&\useFastDateParsing=false` 텍스트를 URL 줄에 추가하고 연결을 테스트합니다. 작동하면 **다음** 을 클릭합니다.
+1. 데이터 소스의 대상을 선택하고 **마침** 을 클릭합니다.
 1. DXP를 JDBC 데이터 소스에 연결합니다. `portal-ext.properties` 파일(위 참조)에서 데이터 소스 JNDI 이름을 입력하십시오. 예를 들어,
 
     ```properties
@@ -179,12 +179,12 @@ Liferay DXP는 DXP의 내장 데이터 소스(권장) 또는 앱 서버의 JNDI 
 내장 메일 세션을 사용하여 Liferay DXP [을 메일 서버](../../setting-up-liferay/configuring-mail.md) 에 연결할 수 있습니다. 그렇지 않으면 WebLogic의 메일 세션을 사용할 수 있습니다.
 
 1. WebLogic을 시작하고 Admin Server의 콘솔에 로그인합니다.
-1. 관리 서버 콘솔 UI의 왼쪽에 있는 *도메인 구조* 상자에서 *서비스* &rarr; *메일 세션* 를 선택합니다.
-1. *New* 을 클릭하여 새 메일 세션 생성을 시작합니다.
-1. 세션 이름을 *LiferayMail* 로 지정하고 JNDI 이름을 `mail/MailSession`으로 지정합니다.
-1. 메일 서버에 필요한 대로 *세션 사용자 이름*, *세션 비밀번호*, *세션 비밀번호 확인*및 *JavaMail 속성* 필드를 입력하십시오. 이러한 필드에 대한 자세한 내용은 [WebLogic 설명서](http://docs.oracle.com/middleware/1221/wls/FMWCH/pagehelp/Mailcreatemailsessiontitle.html) 을 참조하십시오.
-1. *다음*을 클릭합니다.
-1. DXP가 설치될 Managed Server를 선택하고 *마침*을 클릭합니다.
+1. 관리 서버 콘솔 UI의 왼쪽에 있는 **도메인 구조** 상자에서 **서비스** &rarr; **메일 세션** 를 선택합니다.
+1. **New** 을 클릭하여 새 메일 세션 생성을 시작합니다.
+1. 세션 이름을 **LiferayMail** 로 지정하고 JNDI 이름을 `mail/MailSession`으로 지정합니다.
+1. 메일 서버에 필요한 대로 **세션 사용자 이름** , **세션 비밀번호** , **세션 비밀번호 확인** 및 **JavaMail 속성** 필드를 입력하십시오. 이러한 필드에 대한 자세한 내용은 [WebLogic 설명서](http://docs.oracle.com/middleware/1221/wls/FMWCH/pagehelp/Mailcreatemailsessiontitle.html) 을 참조하십시오.
+1. **다음** 을 클릭합니다.
+1. DXP가 설치될 Managed Server를 선택하고 **마침** 을 클릭합니다.
 1. 관리 및 관리 서버를 종료합니다.
 1. 관리 및 관리 서버가 종료되면 Liferay Home의 `portal-ext.properties` 파일에 다음 속성을 추가합니다.
 
@@ -203,14 +203,14 @@ DXP가 배포된 후 `portal-ext.properties` 파일은 도메인의 `autodeploy/
 DXP WAR 파일을 배포하려면 다음 단계를 따르십시오.
 
 1. DXP를 배포하는 지정된 관리 서버가 종료되었는지 확인합니다.
-1. Admin Server의 콘솔 UI에서 왼쪽의 *도메인 구조* 상자에서 *배포* 을 선택합니다.
-1. *설치* 을 클릭하여 새 배포를 시작합니다.
-1. 컴퓨터에서 DXP WAR 파일 또는 확장된 콘텐츠를 선택합니다. 또는 *파일 업로드* 링크를 클릭하여 WAR 파일을 업로드합니다. *다음*을 클릭합니다.
-1. *이 배포를 애플리케이션으로 설치* 을 선택하고 *다음*을 클릭합니다.
-1. DXP를 배포하고 있는 지정된 관리 서버를 선택하고 *다음*을 클릭합니다.
-1. 기본 이름이 설치에 적합하면 그대로 두십시오. 그렇지 않으면 다른 이름을 입력하고 *다음*을 클릭하십시오.
-1. *마침*을 클릭합니다.
-1. 배포가 완료된 후 구성이 올바르면 *저장* 을 클릭합니다.
+1. Admin Server의 콘솔 UI에서 왼쪽의 **도메인 구조** 상자에서 **배포** 을 선택합니다.
+1. **설치** 을 클릭하여 새 배포를 시작합니다.
+1. 컴퓨터에서 DXP WAR 파일 또는 확장된 콘텐츠를 선택합니다. 또는 **파일 업로드** 링크를 클릭하여 WAR 파일을 업로드합니다. **다음** 을 클릭합니다.
+1. **이 배포를 애플리케이션으로 설치** 을 선택하고 **다음** 을 클릭합니다.
+1. DXP를 배포하고 있는 지정된 관리 서버를 선택하고 **다음** 을 클릭합니다.
+1. 기본 이름이 설치에 적합하면 그대로 두십시오. 그렇지 않으면 다른 이름을 입력하고 **다음** 을 클릭하십시오.
+1. **마침** 을 클릭합니다.
+1. 배포가 완료된 후 구성이 올바르면 **저장** 을 클릭합니다.
 1. DXP를 배포한 관리 서버를 시작합니다. DXP는 모든 JSP를 미리 컴파일한 다음 시작합니다.
 
 DXP를 배포한 후 `PhaseOptimizer`과 관련된 아래와 같은 과도한 경고 및 로그 메시지가 표시될 수 있습니다. 이들은 양성이며 무시할 수 있습니다. 앱 서버의 로깅 수준 또는 로그 필터를 조정하여 이러한 메시지를 끌 수 있습니다.

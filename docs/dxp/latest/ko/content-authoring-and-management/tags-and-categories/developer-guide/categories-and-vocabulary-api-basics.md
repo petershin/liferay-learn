@@ -49,7 +49,7 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
     "siteId" : 20125
     ```
 
-1. *관리 메뉴* &rarr; *분류* &rarr; *범주*로 이동하여 범주 애플리케이션으로 이동합니다. 새로운 어휘가 추가되었는지 확인하십시오.
+1. **관리 메뉴** &rarr; **분류** &rarr; **범주** 로 이동하여 범주 애플리케이션으로 이동합니다. 새로운 어휘가 추가되었는지 확인하십시오.
 
     ![새로운 어휘가 추가되었습니다.](./categories-and-vocabulary-api-basics/images/01.png)
 
@@ -237,7 +237,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PATCH_ById
 
 다음 cURL 및 Java 명령으로 기존 어휘를 덮어씁니다. `1234` 을 어휘 ID로 바꾸십시오.
 
-### 분류법Vocabulary_PUT_ById.sh
+### 분류법Vocabulary_PUT-ById.sh
 
 명령:
 
@@ -251,7 +251,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PATCH_ById
    :language: bash
 ```
 
-### 분류법Vocabulary_PUT_ById.java
+### 분류법Vocabulary_PUT-ById.java
 
 명령:
 

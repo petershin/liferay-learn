@@ -38,7 +38,7 @@ Liferay가 실행되면,
    }
    ```
 
-1. *전역 메뉴* &rarr; *제어판* &rarr; *선택 목록*로 이동합니다. 새 선택 목록이 나타납니다.
+1. **전역 메뉴** &rarr; **제어판** &rarr; **선택 목록** 로 이동합니다. 새 선택 목록이 나타납니다.
 
    ![새 선택 목록이 추가되었는지 확인합니다.](./picklists-api-basics/images/01.png)
 
@@ -114,7 +114,7 @@ Liferay가 실행되면,
 
 다음 cURL 또는 Java 명령을 실행하여 선택 목록을 나열할 수 있습니다.
 
-### ListTypeDefinitions_GET_FromInstance.sh
+### ListTypeDefinitions **GET** FromInstance.sh
 
 명령:
 
@@ -128,7 +128,7 @@ Liferay가 실행되면,
    :language: bash
 ```
 
-### ListTypeDefinitions_GET_FromInstance.java
+### ListTypeDefinitions **GET** FromInstance.java
 
 명령:
 
@@ -154,7 +154,7 @@ java -classpath .:* ListTypeDefinitions_GET_FromInstance
 ``ListTypeDefinitions_GET_FromInstance.[java|sh]``를 사용하여 인스턴스 ``Picklist`` ID를 가져옵니다.
 ```
 
-### ListTypeDefinition_GET_ById.sh
+### ListTypeDefinition **GET** ById.sh
 
 명령:
 
@@ -168,7 +168,7 @@ java -classpath .:* ListTypeDefinitions_GET_FromInstance
    :language: bash
 ```
 
-### ListTypeDefinition_GET_ById.java
+### ListTypeDefinition **GET** ById.java
 
 명령:
 
@@ -190,7 +190,7 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_GET_ById
 
 cURL 및 Java 패치 명령을 사용하여 기존 선택 목록을 편집합니다. `1234` 을 선택 목록의 ID로 바꿉니다.
 
-### ListTypeDefinition_PATCH_ById.sh
+### ListTypeDefinition **PATCH** ById.sh
 
 명령:
 
@@ -204,7 +204,7 @@ cURL 및 Java 패치 명령을 사용하여 기존 선택 목록을 편집합니
    :language: bash
 ```
 
-### ListTypeDefinition_PATCH_ById.java
+### ListTypeDefinition **PATCH** ById.java
 
 명령:
 
@@ -224,7 +224,7 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_PATCH_ById
 
 cURL 및 Java `put` 명령으로 기존 선택 목록을 완전히 덮어씁니다. `1234` 을 선택 목록의 ID로 바꿉니다.
 
-### ListTypeDefinition_PUT_ById.sh
+### ListTypeDefinition **PUT** ById.sh
 
 명령:
 
@@ -238,7 +238,7 @@ cURL 및 Java `put` 명령으로 기존 선택 목록을 완전히 덮어씁니�
    :language: bash
 ```
 
-### ListTypeDefinition_PUT_ById.java
+### ListTypeDefinition **PUT** ById.java
 
 명령:
 
@@ -258,7 +258,7 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_PUT_ById
 
 cURL 및 Java `delete` 명령을 사용하여 기존 선택 목록을 삭제합니다. `1234` 을 선택 목록의 ID로 바꿉니다.
 
-### ListTypeDefinition_DELETE_ById.sh
+### ListTypeDefinition **DELETE** ById.sh
 
 명령:
 
@@ -272,7 +272,7 @@ cURL 및 Java `delete` 명령을 사용하여 기존 선택 목록을 삭제합�
    :language: bash
 ```
 
-### ListTypeDefinition_DELETE_ById.java
+### ListTypeDefinition **DELETE** ById.java
 
 명령
 

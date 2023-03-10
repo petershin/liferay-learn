@@ -5,7 +5,7 @@
 Liferay Source는 이제 두 가지 주요 영역을 사용하여 구성됩니다.
 
 * **Portal Core** - 아직 모듈로 추출되지 않은 원래 플랫폼의 일부입니다. 그들은 Portal-impl, Portal-service 및 Portal-web과 같은 Liferay 6.2의 친숙한 이름을 가지고 있습니다.
-* **모듈** - 이제 많은 기능이 모듈로 추출되어 *liferay-portal/modules* 디렉토리에 상주합니다. 많은 모듈이 Liferay MVC 패턴을 따르고 관련 .api, .service 및 .web 모듈로 구성됩니다.
+* **모듈** - 이제 많은 기능이 모듈로 추출되어 **liferay-portal/modules** 디렉토리에 상주합니다. 많은 모듈이 Liferay MVC 패턴을 따르고 관련 .api, .service 및 .web 모듈로 구성됩니다.
 
 ## 추가 정보
 
@@ -20,7 +20,7 @@ Liferay 소스에서 사용되는 일부 패턴을 더 깊이 이해하려면 �
 `liferay-portal/modules/apps/blogs/blogs-web/src/main/java/
 com/liferay/blogs/web/internal/portlet/BlogsPortlet.java`
 
-*BlogsPortlet* 은 Liferay MVC 패턴을 따르며 Blogs Widget의 기본 진입점입니다. 한 가지 유의할 점은 BlogsPortlet 클래스가 뷰 템플릿 초기화 매개변수를 나열하지 않는다는 것입니다. 다음에 더 자세히 설명합니다.
+**BlogsPortlet** 은 Liferay MVC 패턴을 따르며 Blogs Widget의 기본 진입점입니다. 한 가지 유의할 점은 BlogsPortlet 클래스가 뷰 템플릿 초기화 매개변수를 나열하지 않는다는 것입니다. 다음에 더 자세히 설명합니다.
 
 자세한 내용은 [Liferay MVC 문서](https://help.liferay.com/hc/ko/articles/360029028191-Liferay-MVC-Portlet) 을 참조하십시오.
 
@@ -29,7 +29,7 @@ com/liferay/blogs/web/internal/portlet/BlogsPortlet.java`
 `liferay-portal/modules/apps/blogs/blogs-web/src/main/java/
 com/liferay/blogs/web/internal/portlet/BlogsViewMVCRenderCommand.java`
 
-포틀릿 구성 요소가 *보기 템플릿*을 나열하지 않는 경우 이는 일반적으로 MVCRenderCommand가 항목 .jsp 파일에 디스패치하는 것임을 의미합니다. *BlogsViewMVCRenderCommand* 은 / 및 /blogs/view 모두에 대해 */blogs/view.jsp* 에 대한 디스패치를 처리합니다.
+포틀릿 구성 요소가 **보기 템플릿** 을 나열하지 않는 경우 이는 일반적으로 MVCRenderCommand가 항목 .jsp 파일에 디스패치하는 것임을 의미합니다. **BlogsViewMVCRenderCommand** 은 / 및 /blogs/view 모두에 대해 **/blogs/view.jsp** 에 대한 디스패치를 처리합니다.
 
 ## view.jsp
 
@@ -90,7 +90,7 @@ com/liferay/blogs/web/internal/template/BlogsPortletDisplayTemplateHandler.java`
 ## 애플리케이션 디스플레이 템플릿 샘플
 
 `/Users/jamie/Repos/liferay-portal/modules/apps/blogs/blogs-web/src/main/resources/
-com/liferay/blogs/web/template/dependencies/portlet_display_template_basic.ftl`
+com/liferay/blogs/web/template/dependencies/portlet_display_ template_basic.ftl`
 
 즉시 사용할 수 있는 많은 응용 프로그램은 기본 응용 프로그램 표시 템플릿과 함께 제공되므로 사용을 훨씬 쉽게 시작할 수 있습니다. 예를 들어 블로그 위젯은 블로그 항목을 나열하는 기본 템플릿과 함께 제공되며 JSP와 유사합니다.
 

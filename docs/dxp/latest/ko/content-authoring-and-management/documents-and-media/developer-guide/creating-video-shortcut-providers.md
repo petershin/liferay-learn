@@ -6,17 +6,17 @@
 
 자신의 비디오 바로 가기 공급자를 만들려면 다음 단계를 따르십시오.
 
-1. **OSGI 구성 요소 주석**: 공급자를 OSGi 프레임워크 내에서 `DLVideoExternalShortcutProvider.class` 서비스로 선언하려면 `@Component` 주석을 사용합니다.
+1. **OSGI 구성 요소 주석** : 공급자를 OSGi 프레임워크 내에서 `DLVideoExternalShortcutProvider.class` 서비스로 선언하려면 `@Component` 주석을 사용합니다.
 
 1. [**`DLVideoExternalShortcutProvider`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/provider/DLVideoExternalShortcutProvider.java) : `DLVideoExternalShortcutProvider` 인터페이스를 구현합니다.
 
-1. **인터페이스의 메서드 재정의**: 인터페이스의 `getDLVideoExternalShortcut()` 메서드를 재정의합니다. 이 메서드는 [`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java) 인터페이스의 인스턴스를 만들고 URL 문자열을 받습니다. 구현이 다음을 수행하는지 확인하십시오.
+1. **인터페이스의 메서드 재정의** : 인터페이스의 `getDLVideoExternalShortcut()` 메서드를 재정의합니다. 이 메서드는 [`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java) 인터페이스의 인스턴스를 만들고 URL 문자열을 받습니다. 구현이 다음을 수행하는지 확인하십시오.
 
    * 수신된 URL이 정의된 URL 패턴과 일치하는지 확인합니다.
    * URL이 패턴과 일치하지 않으면 프로그램은 `null`을 반환해야 합니다. Liferay는 일치하는 항목을 찾기 위해 사용 가능한 다른 공급자를 확인합니다.
    * URL이 패턴과 일치하면 URL을 구문 분석하고 외부 소스에서 추가 정보를 가져오고 수집된 정보와 함께 `DLVideoExternalShortcut` 인스턴스를 반환합니다.
 
-1. **`DLVideoExternalShortcut` 메서드 재정의**: `getDLVideoExternalShortcut()` 메서드에서 반환된 `DLVideoExternalShortcut` 인스턴스에 필요한 메서드를 재정의합니다.
+1. **`DLVideoExternalShortcut` 메서드 재정의** : `getDLVideoExternalShortcut()` 메서드에서 반환된 `DLVideoExternalShortcut` 인스턴스에 필요한 메서드를 재정의합니다.
 
    * `getURL()`: 원본 비디오 URL을 검색합니다.
    * `renderHTML()`: 사용자 인터페이스에 비디오를 삽입합니다. 이것은 일반적으로 `iframe` 을 렌더링하지만 사용자를 위해 비디오를 렌더링하는 HTML 비디오 태그일 수도 있습니다.
@@ -67,7 +67,7 @@ JAR은 `build/libs` 폴더(즉, `g9b6-impl/build/libs/com.acme.G9B6.impl-1.0.0`)
    STARTED com.acme.G9B6.impl-1.0.0 [1356]
    ```
 
-1. 새 외부 비디오 바로 가기를 만들어 모듈이 작동하는지 확인합니다.<!--TASK: add link once article is merged--> 짧은 Dailymotion URL(예: https://dai.ly/x7szh28).
+1. 새 외부 비디오 바로 가기를 만들어 모듈이 작동하는지 확인합니다. <!--TASK: add link once article is merged--> 짧은 Dailymotion URL(예: https://dai.ly/x7szh28).
    
    성공하면 Liferay는 Dailymotion을 지원되는 플랫폼으로 인식해야 합니다.
    

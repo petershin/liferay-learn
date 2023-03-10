@@ -48,7 +48,7 @@
 
    ![포틀릿에는 항목 선택기를 여는 단추가 하나 있습니다.](./implementing-an-item-selector/images/02.png)
 
-1. _선택_ 버튼을 클릭하면 항목 선택기가 나타납니다.
+1. **선택** 버튼을 클릭하면 항목 선택기가 나타납니다.
 
    ![항목 선택기에는 상자를 선택하여 선택할 수 있는 항목이 표시됩니다.](./implementing-an-item-selector/images/03.png)
 
@@ -162,7 +162,7 @@
    />
    ```
 
-   `clay:button` 태그는 위젯에 버튼(ID `selectRoleButton` 및 레이블 *Select* 가 화면에 표시됨)을 만듭니다. 이 버튼은 String `<portlet:namespace />selectRoleButton`로 식별할 수 있습니다.
+   `clay:button` 태그는 위젯에 버튼(ID `selectRoleButton` 및 레이블 **Select** 가 화면에 표시됨)을 만듭니다. 이 버튼은 String `<portlet:namespace />selectRoleButton`로 식별할 수 있습니다.
 
 1. 항목 선택기를 여는 JavaScript를 삽입하려면 `<script>` 태그를 사용하십시오.
 

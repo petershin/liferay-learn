@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.4 U36+ 및 GA36+`
 
-검색창 제안은 Liferay의 검색창 위젯에 _입력과 동시에 검색_ 기능을 추가합니다.
+검색창 제안은 Liferay의 검색창 위젯에 **입력과 동시에 검색** 기능을 추가합니다.
 
 ![드롭다운 목록에서 결과를 선택하거나 평소와 같이 검색을 실행합니다.](./configuring-search-bar-suggestions/images/01.gif)
 
@@ -22,11 +22,11 @@
 
 **제안 기여자 구성:** 검색 엔진으로 전송되는 쿼리를 제어하는 기여자를 구성합니다. 이 설정은 세 가지 값으로 구성됩니다.
 
-1. **제안 제공자**: 기본 제공자이자 Liferay CE에서 기본 제공되는 유일한 제공자는 `Basic`입니다. Liferay DXP에서는 대신 하나 이상의 Blueprint 기여자를 사용하도록 선택할 수 있습니다. 자세한 내용은 [검색창 제안 청사진](./search-bar-suggestions-blueprints.md) 을 참조하십시오.
+1. **제안 제공자** : 기본 제공자이자 Liferay CE에서 기본 제공되는 유일한 제공자는 `Basic`입니다. Liferay DXP에서는 대신 하나 이상의 Blueprint 기여자를 사용하도록 선택할 수 있습니다. 자세한 내용은 [검색창 제안 청사진](./search-bar-suggestions-blueprints.md) 을 참조하십시오.
 
-1. **표시 그룹 이름**: 기본값은 `제안`입니다. 이 값은 영어에 대한 UI의 제목으로 Suggestions로 확인되는 언어 키입니다. 언어 키를 변경하거나 직접 추가할 수 있습니다. 예를 들어 `is-this-what-you're-looking-for`로 만든 다음 [번역](../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation) 을 추가합니다. 둘 이상의 Blueprint 기여자를 사용하는 경우 각각 고유한 표시 그룹 이름 값이 있는지 확인하십시오.
+1. **표시 그룹 이름** : 기본값은 `제안`입니다. 이 값은 영어에 대한 UI의 제목으로 Suggestions로 확인되는 언어 키입니다. 언어 키를 변경하거나 직접 추가할 수 있습니다. 예를 들어 `is-this-what-you're-looking-for`로 만든 다음 [번역](../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation) 을 추가합니다. 둘 이상의 Blueprint 기여자를 사용하는 경우 각각 고유한 표시 그룹 이름 값이 있는지 확인하십시오.
 
-1. **크기**: 검색 표시줄 드롭다운 목록에 표시할 최대 결과 수를 설정합니다. 기본값은 `5`입니다. 표시 공간이 제한되어 있으므로 크기를 크게 설정해도 이점이 없습니다.
+1. **크기** : 검색 표시줄 드롭다운 목록에 표시할 최대 결과 수를 설정합니다. 기본값은 `5`입니다. 표시 공간이 제한되어 있으므로 크기를 크게 설정해도 이점이 없습니다.
 
 ```{tip}
 Search Blueprints 사용자는 Blueprint를 사용하여 Search Bar Suggestions 쿼리를 제어하도록 선택할 수 있습니다. _Blueprint_가 기여자로 선택되면 검색 표시줄 위젯 구성에 추가 구성 옵션이 나타납니다. 자세한 내용은 [검색창 제안 블루프린트](./search-bar-suggestions-blueprints.md)를 참조하세요.
@@ -48,7 +48,7 @@ Search Blueprints 사용자는 Blueprint를 사용하여 Search Bar Suggestions 
 
 1. 전역 메뉴 &rarr; 제어판 &rarr; 서비스 액세스 정책(보안 섹션)을 엽니다.
 
-1. _SEARCH_SUGGESTIONS_ 항목을 클릭합니다.
+1. **SEARCH_SUGGESTIONS** 항목을 클릭합니다.
 
 정책을 비활성화하면 위젯 구성에서 제안이 활성화된 경우에도 게스트에게 제안이 표시되지 않습니다.
 

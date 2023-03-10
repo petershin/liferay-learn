@@ -8,23 +8,23 @@
 
 개체 데이터를 Google 시트에 동기화하려면 다음 단계를 따르세요.
 
-1. [Integrately](https://integrately.com/) 에 로그인하고 *New Automation*을 클릭합니다.
+1. [Integrately](https://integrately.com/) 에 로그인하고 **New Automation** 을 클릭합니다.
 
    ![새 자동화를 클릭합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/01.png)
 
-1. 자동화에 *Webhook/API 통합* 앱을 추가합니다.
+1. 자동화에 **Webhook/API 통합** 앱을 추가합니다.
 
    ![Webhook/API 통합을 검색하여 선택합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/02.png)
 
-1. 자동화에 *Google 스프레드시트* 앱을 추가합니다.
+1. 자동화에 **Google 스프레드시트** 앱을 추가합니다.
 
    ![Google 스프레드시트를 검색하여 선택합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/03.png)
 
-1. 자동화의 트리거 및 작업을 정의하고 *이동*을 클릭합니다.
+1. 자동화의 트리거 및 작업을 정의하고 **이동** 을 클릭합니다.
 
    ![트리거 유형을 선택하세요.](./using-ifttt-to-sync-object-data-with-google-sheets/images/04.png)
 
-1. 생성된 *webhook URL*을 복사합니다.
+1. 생성된 **webhook URL** 을 복사합니다.
 
    ![생성된 웹훅 URL을 복사합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/05.png)
 
@@ -36,13 +36,13 @@
 
    이렇게 하면 Webhook 앱이 개체의 데이터 구조를 자동으로 결정할 수 있습니다.
 
-1. Integrately에서 *I have set this URL in Webhook/API Integration*을 클릭합니다.
+1. Integrately에서 **I have set this URL in Webhook/API Integration** 을 클릭합니다.
 
-1. 클릭 *완료, 수신 여부 확인*.
+1. 클릭 **완료, 수신 여부 확인** .
 
    ![완료를 클릭하고 수신 여부를 확인합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/07.png)
 
-1. 테스트가 성공했는지 확인하고 *계속*을 클릭합니다.
+1. 테스트가 성공했는지 확인하고 **계속** 을 클릭합니다.
 
    ![테스트가 성공했는지 확인하고 계속을 클릭합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/08.png)
 
@@ -50,7 +50,7 @@
 
    ![Google 스프레드시트 앱을 Google 계정에 연결합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/09.png)
 
-1. 개체와 동기화할 원하는 *스프레드시트* 및 *워크시트* 을 선택합니다.
+1. 개체와 동기화할 원하는 **스프레드시트** 및 **워크시트** 을 선택합니다.
 
    ![원하는 스프레드시트와 워크시트를 선택합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/10.png)
 
@@ -58,7 +58,7 @@
 
    ![시트의 열을 개체 필드에 매핑합니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/11.png)
 
-1. *내 자동화* 페이지로 이동하고 *전원* 버튼을 클릭하여 연결을 켭니다.
+1. **내 자동화** 페이지로 이동하고 **전원** 버튼을 클릭하여 연결을 켭니다.
 
    ![연결을 켭니다.](./using-integrately-to-sync-object-data-with-google-sheets/images/12.png)
 

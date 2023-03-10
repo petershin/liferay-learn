@@ -15,7 +15,7 @@
 
 ## 인증 확인 프로세스
 
-인증 확인자를 구성하려면 *제어판* &rarr; *구성* &rarr; *시스템 설정* &rarr; *보안* &rarr; *API 인증*으로 이동하십시오.
+인증 확인자를 구성하려면 **제어판** &rarr; **구성** &rarr; **시스템 설정** &rarr; **보안** &rarr; **API 인증** 으로 이동하십시오.
 
 ![인증 확인자 구성 화면](./using-authentication-verifiers/images/01.png)
 
@@ -49,7 +49,7 @@
 
 ### 기본 인증 헤더
 
-이 Auth Verifier를 사용하면 원격 클라이언트가 [HTTP 기본 인증](https://en.wikipedia.org/wiki/Basic_access_authentication) 을 사용하여 인증할 수 있습니다. 이 방식으로 인증해야 하는 URL 경로를 제공하여 구성합니다. _강제 기본 인증_ 필드가 선택되면 HTTP 기본 인증이 필요합니다.
+이 Auth Verifier를 사용하면 원격 클라이언트가 [HTTP 기본 인증](https://en.wikipedia.org/wiki/Basic_access_authentication) 을 사용하여 인증할 수 있습니다. 이 방식으로 인증해야 하는 URL 경로를 제공하여 구성합니다. **강제 기본 인증** 필드가 선택되면 HTTP 기본 인증이 필요합니다.
 
 웹 서비스의 기본 URL은 `/api/*,/xmlrpc*` 입니다. 매핑은 `/api/liferay*` 을 제외하여 `TunnelServlet`액세스를 방지합니다. 자세한 내용은 터널 인증 확인자를 참조하십시오.
 

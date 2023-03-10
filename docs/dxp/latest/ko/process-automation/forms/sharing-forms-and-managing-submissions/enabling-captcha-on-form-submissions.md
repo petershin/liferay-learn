@@ -4,15 +4,15 @@
 
 CAPTCHA를 활성화하려면:
 
-1. 양식의 _옵션_ 버튼(![Options](../../../images/icon-actions.png))을 클릭하고 _설정_을 선택합니다.
+1. 양식의 **옵션** 버튼(![Options](../../../images/icon-actions.png))을 클릭하고 **설정** 을 선택합니다.
 
     ![양식 설정으로 이동](./enabling-captcha-on-form-submissions/images/01.png)
 
-1. _Require CAPTCHA_ 토글을 오른쪽으로 전환합니다.
+1. **Require CAPTCHA** 토글을 오른쪽으로 전환합니다.
 
     ![CAPTCHA 활성화](./enabling-captcha-on-form-submissions/images/02.png)
 
-1. _완료_을 클릭합니다.
+1. **완료** 을 클릭합니다.
 
 이제 양식을 제출하려면 CAPTCHA 확인을 완료해야 합니다.
 

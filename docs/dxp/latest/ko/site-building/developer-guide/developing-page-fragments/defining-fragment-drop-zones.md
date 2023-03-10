@@ -4,11 +4,11 @@
 
 놓기 영역을 정의하려면 다음 단계를 따르세요.
 
-1. *사이트 관리* &rarr; *디자인* &rarr; *단편*로 이동합니다.
+1. **사이트 관리** &rarr; **디자인** &rarr; **단편** 로 이동합니다.
 
 1. 조각 세트에서 편집하려는 조각이 있는 세트를 선택합니다.
 
-1. Fragment의 *Actions* (![Action](./../../../images/icon-actions.png)) 버튼을 클릭하고 *Edit* 를 선택하여 [Fragments Editor](./using-the-fragments-editor.md)를 엽니다.
+1. Fragment의 **Actions**(![Action](./../../../images/icon-actions.png)) 버튼을 클릭하고 **Edit** 를 선택하여 [Fragments Editor](./using-the-fragments-editor.md)를 엽니다.
 
 1. HTML 코드 영역에서 `<lfr-drop-zone></lfr-drop-zone>` 레이블을 추가하여 Fragment 내 드롭 영역을 정의합니다.
 

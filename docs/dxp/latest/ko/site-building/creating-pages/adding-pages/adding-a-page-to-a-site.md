@@ -12,7 +12,7 @@ Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가
 
 ### 페이지 관리에서 새 페이지 추가
 
-1. *사이트 메뉴* (![Site Menu](../../../images/icon-menu.png))을 열고 *사이트 빌더*를 확장한 다음 *페이지*을 클릭합니다.
+1. **사이트 메뉴**(![Site Menu](../../../images/icon-menu.png))을 열고 **사이트 빌더** 를 확장한 다음 **페이지** 을 클릭합니다.
 
 1. ** 추가 버튼(![Add](../../../images/icon-add.png))을 클릭하고 *Page*를 선택합니다.
 
@@ -20,13 +20,13 @@ Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가
 
 1. 페이지 템플릿 집합에서 기본 또는 전역 템플릿을 선택합니다.
 
-   비어 있는 [콘텐츠 페이지](../understanding-pages/understanding-pages.md#page-types) 로 시작하려면 *비어 있는* [마스터 페이지 템플릿](../defining-headers-and-footers/master-page-templates.md)를 클릭합니다.
+   비어 있는 [콘텐츠 페이지](../understanding-pages/understanding-pages.md#page-types) 로 시작하려면 **비어 있는**[마스터 페이지 템플릿](../defining-headers-and-footers/master-page-templates.md)를 클릭합니다.
 
    또는 사용 가능한 다른 템플릿에서 선택합니다.
 
    ![페이지에 대한 기본 또는 전역 템플릿을 선택합니다.](./adding-a-page-to-a-site/images/02.png)
 
-1. 페이지 추가 대화 상자에서 이름을 입력하고 *추가*을 클릭합니다.
+1. 페이지 추가 대화 상자에서 이름을 입력하고 **추가** 을 클릭합니다.
 
 콘텐츠 페이지를 만든 경우 조각 및 위젯 추가를 시작할 수 있는 초안 콘텐츠 페이지로 리디렉션됩니다.
 
@@ -40,9 +40,9 @@ Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가
 
 > 사용 가능: Liferay DXP/Portal 7.3+.
 
-1. *사이트 메뉴* (![Site Menu](../../../images/icon-menu.png))을 열고 *페이지 트리* (![Page Tree](../../../images/icon-page-tree.png))를 클릭합니다.
+1. **사이트 메뉴**(![Site Menu](../../../images/icon-menu.png))을 열고 **페이지 트리**(![Page Tree](../../../images/icon-page-tree.png))를 클릭합니다.
 
-1. *추가* 버튼(![Add Button](../../../images/icon-add-app.png))을 클릭하여 새 페이지를 추가합니다.
+1. **추가** 버튼(![Add Button](../../../images/icon-add-app.png))을 클릭하여 새 페이지를 추가합니다.
 
    ![페이지 트리 메뉴를 사용하여 새 페이지를 추가합니다.](adding-a-page-to-a-site/images/03.png)
 
@@ -58,9 +58,9 @@ Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가
 
 ### 페이지 관리에서 하위 페이지 추가
 
-1. *사이트 메뉴* (![Site Menu](../../../images/icon-menu.png))을 열고 *사이트 빌더*를 확장한 다음 *페이지*을 클릭합니다.
+1. **사이트 메뉴**(![Site Menu](../../../images/icon-menu.png))을 열고 **사이트 빌더** 를 확장한 다음 **페이지** 을 클릭합니다.
 
-1. 기존 페이지에 대해 *추가* 버튼(![Add](../../../images/icon-duplicate.png))을 클릭합니다.
+1. 기존 페이지에 대해 **추가** 버튼(![Add](../../../images/icon-duplicate.png))을 클릭합니다.
    
    ![종료 페이지 옆에 있는 추가 버튼을 클릭하여 새 하위 페이지를 만듭니다.](./adding-a-page-to-a-site/images/04.png)
 
@@ -74,9 +74,9 @@ Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가
 
 > 사용 가능: Liferay DXP/Portal 7.3+.
 
-1. *사이트 메뉴* (![Site Menu](../../../images/icon-menu.png))을 열고 *페이지 트리* (![Page Tree](../../../images/icon-page-tree.png))를 클릭합니다.
+1. **사이트 메뉴**(![Site Menu](../../../images/icon-menu.png))을 열고 **페이지 트리**(![Page Tree](../../../images/icon-page-tree.png))를 클릭합니다.
 
-1. 원하는 페이지에 대해 *작업* 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 *하위 페이지*를 선택합니다.
+1. 원하는 페이지에 대해 **작업** 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 **하위 페이지** 를 선택합니다.
    
    ![페이지 트리 메뉴를 사용하여 하위 페이지 추가.](adding-a-page-to-a-site/images/05.png)
 

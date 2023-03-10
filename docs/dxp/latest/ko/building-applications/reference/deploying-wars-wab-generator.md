@@ -2,7 +2,7 @@
 
 애플리케이션을 Java EE 스타일 WAR(Web Application ARchive) 아티팩트 또는 JAR(Java ARchive) OSGi 번들 아티팩트로 생성할 수 있습니다. Bean 포틀릿, PortletMVC4Spring 포틀릿 및 JSF 포틀릿은 해당 프레임워크가 WAR 레이아웃을 예상하고 `WEB-INF/web.xml` 설명자와 같은 Java EE 리소스가 필요하기 때문에 WAR로 패키지되어야 합니다.
 
-Liferay는 이러한 WAR 스타일 플러그인이 Liferay의 OSGi 런타임에 의해 OSGi 모듈처럼 배포되고 처리되는 방법을 제공합니다. *WAB*로 변환할 수 있습니다.
+Liferay는 이러한 WAR 스타일 플러그인이 Liferay의 OSGi 런타임에 의해 OSGi 모듈처럼 배포되고 처리되는 방법을 제공합니다. **WAB** 로 변환할 수 있습니다.
 
 Liferay DXP는 Java EE 스타일 WAR 배포를 위한 OSGi 웹 애플리케이션 번들(WAB) 표준을 지원합니다. WAB는 WAR 레이아웃이 있고 `Bundle-SymbolicName` OSGi 지시어가 있는 `META-INF/MANIFEST.MF` 파일을 포함하는 아카이브입니다. WAB는 OSGi 번들입니다. 프로젝트 소스에 WAR 레이아웃이 있지만 아티팩트 파일 이름은 `.jar` 또는 `.war` 확장자로 끝날 수 있습니다.
 

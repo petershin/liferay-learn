@@ -57,12 +57,12 @@ Liferay DXP Headless Delivery API에서 다음 서비스를 사용하여 웹 콘
 
 이러한 예에서는 단일 텍스트 필드와 기본 기본 웹 콘텐츠 구조가 있는 기본 웹 콘텐츠 기사를 사용합니다. 다음 단계를 사용하여 웹 콘텐츠를 만듭니다.
 
-1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*으로 이동합니다.
-1. *웹 콘텐츠* 탭에서 추가(![Add](../../../images/icon-add.png))를 클릭하고 *기본 웹 콘텐츠*를 선택합니다.
+1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 으로 이동합니다.
+1. **웹 콘텐츠** 탭에서 추가(![Add](../../../images/icon-add.png))를 클릭하고 **기본 웹 콘텐츠** 를 선택합니다.
 
    ![웹 콘텐츠 패널에서 기본 웹 콘텐츠 기사를 만듭니다.](./web-content-api-basics/images/01.png)
 
-1. New Web Content 이름으로 _Foo_ 을 입력하고 *Publish*를 클릭합니다.
+1. New Web Content 이름으로 **Foo** 을 입력하고 **Publish** 를 클릭합니다.
 
    ![웹 콘텐츠 기사는 기본적으로 기본 웹 콘텐츠 구조를 사용합니다.](./web-content-api-basics/images/02.png)
 
@@ -355,7 +355,7 @@ cURL 스크립트 매개변수:
 | $1      | `siteId`             |
 | $2      | `contentStructureId` |
 
-Liferay DXP에서 새 웹 콘텐츠 기사를 찾으려면 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*으로 이동합니다.
+Liferay DXP에서 새 웹 콘텐츠 기사를 찾으려면 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 으로 이동합니다.
 
 아래는 스크립트에 의해 생성된 부분 JSON 출력입니다. 스크립트는 Structure `contentField` `content` 을 참조로 사용하여 간단한 `<p>Foo</p>` HTML 문자열을 게시합니다.
 

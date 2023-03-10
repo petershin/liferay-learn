@@ -42,7 +42,7 @@ Liferay 7.4 버전 U9+ 및 GA13+부터 한 번에 여러 범주를 선택할 수
 
 전체 [어휘](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-vocabularies) 을 메뉴 요소로 추가할 수 있습니다. 어휘는 동적으로 업데이트되어 어휘 내의 범주 및 계층 구조에 대한 모든 변경 사항이 탐색 메뉴 자체에 반영됩니다. 그러나 이렇게 하면 포함된 범주의 계층 구조를 재정렬하거나 변경할 수 없습니다. 카테고리의 다른 계층 구조를 생성하려면 [은 대신 어휘](#categories) 외부에 개별적으로 카테고리를 추가합니다.
 
-기본적으로 어휘를 메뉴 요소로 추가하면 메뉴가 페이지에 표시될 때 해당 요소를 모든 최상위 범주로 바꿉니다. 그러나 Navigation Menu를 편집하는 동안 Vocabulary 요소를 선택할 때 *Display Name as First Level* 확인란을 선택하여 Vocabulary 자체가 메뉴에 나타나도록(클릭할 수 없는 요소로) 최상위 카테고리가 아래에 있도록 할 수 있습니다. 그것.
+기본적으로 어휘를 메뉴 요소로 추가하면 메뉴가 페이지에 표시될 때 해당 요소를 모든 최상위 범주로 바꿉니다. 그러나 Navigation Menu를 편집하는 동안 Vocabulary 요소를 선택할 때 **Display Name as First Level** 확인란을 선택하여 Vocabulary 자체가 메뉴에 나타나도록(클릭할 수 없는 요소로) 최상위 카테고리가 아래에 있도록 할 수 있습니다. 그것.
 
 ![탐색 메뉴에서 어휘가 요소로 나타나도록 하려면 표시 이름을 1단계로 선택합니다.](./navigation-menu-element-types/images/02.png)
 
@@ -50,13 +50,13 @@ Liferay 7.4 버전 U9+ 및 GA13+부터 한 번에 여러 범주를 선택할 수
 
 ## URLs
 
-특정 콘텐츠에 연결할 필요가 없는 사용자 지정 URL을 사용하여 탐색 메뉴 요소를 추가할 수도 있습니다. 탐색 메뉴에 URL 요소를 추가할 때 메뉴 요소의 표시 이름과 클릭 시 해당 요소가 가리키는 URL을 입력해야 합니다. URL을 사용자 브라우저의 별도 탭에서 열려면 *새 탭에서 열기* 확인란을 선택합니다.
+특정 콘텐츠에 연결할 필요가 없는 사용자 지정 URL을 사용하여 탐색 메뉴 요소를 추가할 수도 있습니다. 탐색 메뉴에 URL 요소를 추가할 때 메뉴 요소의 표시 이름과 클릭 시 해당 요소가 가리키는 URL을 입력해야 합니다. URL을 사용자 브라우저의 별도 탭에서 열려면 **새 탭에서 열기** 확인란을 선택합니다.
 
 ![URL 메뉴 요소를 추가하려면 이름과 가리킬 URL을 입력하십시오.](./navigation-menu-element-types/images/03.png)
 
 ## Liferay Portal 7.4 GA4 및 이전 버전
 
-GA4보다 이전 버전의 Liferay Portal 7.4에는 메뉴에 추가된 디스플레이 페이지(모든 유형의 콘텐츠)에 사용되는 *디스플레이 페이지* 탐색 메뉴 요소 유형도 있습니다.
+GA4보다 이전 버전의 Liferay Portal 7.4에는 메뉴에 추가된 디스플레이 페이지(모든 유형의 콘텐츠)에 사용되는 **디스플레이 페이지** 탐색 메뉴 요소 유형도 있습니다.
 
 Liferay 7.4 GA5+ 및 U1+에서 디스플레이 페이지 유형은 디스플레이 페이지: [블로그 항목](#blogs-entries) , [웹 콘텐츠 기사](#web-content-articles) , [문서](#documents) 및 [범주](#categories) 을 사용하는 콘텐츠 유형으로 대체됩니다.
 

@@ -18,7 +18,7 @@ personalizing-site-experience/migration-from-audience-targeting.md
 personalizing-site-experience/enabling-automated-live-chat-systems.md
 ```
 
-Liferay DXP는 개인화된 경험을 이해하고 제공할 수 있는 강력한 도구와 함께 즉시 사용할 수 있습니다. 개인화된 경험을 제공하는 첫 번째 단계는 사용자를 수집하거나 세분화하는 것부터 시작하는 것입니다. [*사용자 세그먼트*](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) 동적으로 할당됨 [*컬렉션*](../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md). 컬렉션에 사용자를 수동으로 할당하는 대신 사용자는 공유 속성 또는 동작을 기반으로 세그먼트에 할당됩니다(자세한 내용은 [개인화 컬렉션](./personalizing-site-experience/experience-personalization/personalizing-collections.md) 참조).
+Liferay DXP는 개인화된 경험을 이해하고 제공할 수 있는 강력한 도구와 함께 즉시 사용할 수 있습니다. 개인화된 경험을 제공하는 첫 번째 단계는 사용자를 수집하거나 세분화하는 것부터 시작하는 것입니다. [**사용자 세그먼트**](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) 동적으로 할당됨 [**컬렉션**](../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md). 컬렉션에 사용자를 수동으로 할당하는 대신 사용자는 공유 속성 또는 동작을 기반으로 세그먼트에 할당됩니다(자세한 내용은 [개인화 컬렉션](./personalizing-site-experience/experience-personalization/personalizing-collections.md) 참조).
 
 ## 분할
 
@@ -46,7 +46,7 @@ Analytics Cloud와의 통합은 DXP 사이트의 모든 페이지에 대한 사�
 
 ### 콘텐츠 페이지
 
-콘텐츠 페이지 개인화는 페이지를 보는 사람에 따라 페이지 레이아웃과 콘텐츠를 동적으로 변경합니다. 페이지를 보는 사용자의 사용자 세그먼트 기준에 따라 다른 텍스트, 이미지, 위젯 및 다른 레이아웃을 제공하는 [콘텐츠 페이지](./creating-pages/using-content-pages.md) 에 대해 *경험* 생성할 수 있습니다. 자세한 내용은 [콘텐츠 페이지 개인화](./personalizing-site-experience/experience-personalization/content-page-personalization.md) 참조하십시오.
+콘텐츠 페이지 개인화는 페이지를 보는 사람에 따라 페이지 레이아웃과 콘텐츠를 동적으로 변경합니다. 페이지를 보는 사용자의 사용자 세그먼트 기준에 따라 다른 텍스트, 이미지, 위젯 및 다른 레이아웃을 제공하는 [콘텐츠 페이지](./creating-pages/using-content-pages.md) 에 대해 **경험** 생성할 수 있습니다. 자세한 내용은 [콘텐츠 페이지 개인화](./personalizing-site-experience/experience-personalization/content-page-personalization.md) 참조하십시오.
 
 ![다양한 사용자 세그먼트에 대해 고유한 경험을 만들 수 있습니다.](./personalizing-site-experience/images/02.png)
 
@@ -62,7 +62,7 @@ Analytics Cloud와의 통합은 DXP 사이트의 모든 페이지에 대한 사�
 
 ### 사용자 경험 미리보기
 
-페이지 상단의 *시뮬레이션* 버튼(![Simulation](../images/icon-simulation.png))을 클릭하고 *세그먼트* 선택 항목에서 사용자 세그먼트를 선택하여 해당 사용자의 구성원으로 페이지를 미리 보면 사용자가 페이지에서 가질 수 있는 다양한 경험을 미리 볼 수 있습니다. 분절.
+페이지 상단의 **시뮬레이션** 버튼(![Simulation](../images/icon-simulation.png))을 클릭하고 **세그먼트** 선택 항목에서 사용자 세그먼트를 선택하여 해당 사용자의 구성원으로 페이지를 미리 보면 사용자가 페이지에서 가질 수 있는 다양한 경험을 미리 볼 수 있습니다. 분절.
 
 사용자 세그먼트의 관점을 보면 해당 사용자 세그먼트에 대한 콘텐츠 페이지 또는 콘텐츠 세트의 모든 개인화를 미리 볼 수 있습니다.
 

@@ -105,11 +105,11 @@ JSON 편집기에 입력하면 자동 완성 기능이 사용 가능한 속성�
 
 보다 강력한 편집 환경을 사용하여 요소를 만들 수 있습니다. 검색 청사진의 요소 섹션에서 추가(![Add](../../../../images/icon-add.png)) 버튼을 클릭합니다. 
 
-요소의 이름을 지정하고 _만들기_을 클릭합니다. 요소 소스 편집기가 표시되고 사전 정의된 변수가 편집기 왼쪽 창에 표시됩니다. JSON 편집기에 입력하면 자동 완성 기능이 사용 가능한 속성을 표시합니다. 사용 가능한 JSON 속성을 자세히 이해하려면 [스키마 이해](#understanding-the-element-schema) 을 참조하십시오.
+요소의 이름을 지정하고 **만들기** 을 클릭합니다. 요소 소스 편집기가 표시되고 사전 정의된 변수가 편집기 왼쪽 창에 표시됩니다. JSON 편집기에 입력하면 자동 완성 기능이 사용 가능한 속성을 표시합니다. 사용 가능한 JSON 속성을 자세히 이해하려면 [스키마 이해](#understanding-the-element-schema) 을 참조하십시오.
 
 ![요소 소스 편집기에서 요소를 만듭니다.](./creating-elements/images/02.png)
 
-UI 구성 옵션은 요소 JSON의 `uiConfiguration` 속성에 정의됩니다. 쿼리 빌더에서 요소의 구성 창이 어떻게 보이는지 미리 보려면 _미리보기_ 링크(취소 버튼 옆)를 클릭하십시오.
+UI 구성 옵션은 요소 JSON의 `uiConfiguration` 속성에 정의됩니다. 쿼리 빌더에서 요소의 구성 창이 어떻게 보이는지 미리 보려면 **미리보기** 링크(취소 버튼 옆)를 클릭하십시오.
 
 ![요소 구성 창을 미리 봅니다.](./creating-elements/images/03.png)
 
@@ -129,7 +129,7 @@ UI 구성 옵션은 요소 JSON의 `uiConfiguration` 속성에 정의됩니다. 
 
 <http://localhost:8080/o/api?endpoint=http://localhost:8080/o/search-experiences-rest/v1.0/openapi.json>
 
-_POST /v1.0/sxp-blueprints_ 끝점 항목을 확장합니다. 아래로 스크롤하여 _스키마_ 링크( _예제 값_ 링크 옆)를 클릭하십시오.
+**POST /v1.0/sxp-blueprints** 끝점 항목을 확장합니다. 아래로 스크롤하여 **스키마** 링크(**예제 값** 링크 옆)를 클릭하십시오.
 
 ![API 탐색기에서 요소 스키마를 탐색합니다.](./creating-elements/images/04.png)
 

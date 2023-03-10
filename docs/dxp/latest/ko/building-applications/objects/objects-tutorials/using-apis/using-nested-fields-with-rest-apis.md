@@ -14,7 +14,7 @@
 
 Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) three Objects:
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+1. Open the **Global Menu**(![Global Menu](../../../../images/icon-applications-menu.png)), go to the **Control Panel** tab, and click **Objects** .
 
 1. Create three Object drafts.
 

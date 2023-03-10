@@ -120,21 +120,21 @@ File sizes after gzip:
 
 그런 다음 다음 단계를 따르십시오.
 
-1. *사이트 메뉴* (![Site Menu](../../../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*를 확장한 다음 *문서 및 미디어*로 이동합니다.
+1. **사이트 메뉴**(![Site Menu](../../../../images/icon-product-menu.png))을 열고 **콘텐츠 & 데이터** 를 확장한 다음 **문서 및 미디어** 로 이동합니다.
 
-1. *추가* 버튼(![Add Button](../../../../images/icon-add.png))을 클릭하고 *여러 파일*를 선택합니다.
+1. **추가** 버튼(![Add Button](../../../../images/icon-add.png))을 클릭하고 **여러 파일** 를 선택합니다.
 
 1. `.js` 및 `.css` 파일을 업로드 영역으로 끌어다 놓습니다.
 
-   또는 *파일 선택* 을 사용하여 업로드하십시오.
+   또는 **파일 선택** 을 사용하여 업로드하십시오.
 
    ![.js 및 .css 파일을 Liferay 문서 라이브러리에 업로드합니다.](./creating-a-basic-custom-element/images/02.png)
 
-1. *게시*을 클릭합니다.
+1. **게시** 을 클릭합니다.
 
 이렇게 하면 파일이 문서 라이브러리에 추가되고 원격 애플리케이션을 만드는 데 사용할 고유 URL이 할당됩니다.
 
-각 파일의 URL을 보려면 *정보* 아이콘(![Info Icon](../../../../images/icon-information.png))을 클릭하고 파일을 선택하십시오. 각 파일의 *WebDAV URL* 을 복사하고 다음 단계에서 사용할 수 있도록 저장합니다.
+각 파일의 URL을 보려면 **정보** 아이콘(![Info Icon](../../../../images/icon-information.png))을 클릭하고 파일을 선택하십시오. 각 파일의 **WebDAV URL** 을 복사하고 다음 단계에서 사용할 수 있도록 저장합니다.
 
 ![각 파일의 WebDAV URL을 복사합니다.](./creating-a-basic-custom-element/images/03.png)
 
@@ -145,9 +145,9 @@ File sizes after gzip:
 
 ## Liferay에 애플리케이션 등록
 
-1. *글로벌 메뉴* (![Global Menu](../../../../images/icon-applications-menu.png))을 열고 *애플리케이션* 탭을 클릭한 다음 *원격 앱*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../../images/icon-applications-menu.png))을 열고 **애플리케이션** 탭을 클릭한 다음 **원격 앱** 으로 이동합니다.
 
-1. *추가* 버튼(![Add Button](../../../../images/icon-add.png))을 클릭합니다.
+1. **추가** 버튼(![Add Button](../../../../images/icon-add.png))을 클릭합니다.
 
 1. 다음 값을 입력합니다.
 
@@ -160,7 +160,7 @@ File sizes after gzip:
    | CSS URL    | `.css` 파일의 WebDAV URL |
    | 포틀릿 분류 이름  | 원격 앱                  |
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 일단 저장되면 Liferay는 다른 페이지 위젯처럼 사이트 페이지에 배포할 수 있는 H5V7-Remote-App이라는 위젯을 생성합니다. 이 위젯은 선택한 포틀릿 범주 이름 아래에 나타납니다.
 

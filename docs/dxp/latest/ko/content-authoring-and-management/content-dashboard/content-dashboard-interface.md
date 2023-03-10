@@ -14,7 +14,7 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 
 ![콘텐츠 대시보드 사용자 인터페이스에는 세 가지 주요 섹션이 있습니다.](./content-dashboard-interface/images/01.png)
 
-대시보드에 액세스하려면 *글로벌 메뉴* ( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 *애플리케이션* 탭으로 이동한 다음 *콘텐츠 대시보드*클릭합니다. 여기에서 페이지 상단의 [콘텐츠 감사 도구](#content-audit-tool) (1)과 하단의 [콘텐츠 목록](#contents-list) (2)을 볼 수 있습니다. 콘텐츠 목록에서 콘텐츠 항목 위로 마우스를 이동하고 *정보* 버튼( ![Info](../../images/icon-information.png) )을 클릭하여 [콘텐츠 정보 사이드바](#content-info-sidebar) (3)에 액세스할 수 있습니다. 또는 콘텐츠 항목의 *작업* 버튼( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *정보*선택할 수 있습니다.
+대시보드에 액세스하려면 **글로벌 메뉴**( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 **애플리케이션** 탭으로 이동한 다음 **콘텐츠 대시보드** 클릭합니다. 여기에서 페이지 상단의 [콘텐츠 감사 도구](#content-audit-tool) (1)과 하단의 [콘텐츠 목록](#contents-list) (2)을 볼 수 있습니다. 콘텐츠 목록에서 콘텐츠 항목 위로 마우스를 이동하고 **정보** 버튼( ![Info](../../images/icon-information.png) )을 클릭하여 [콘텐츠 정보 사이드바](#content-info-sidebar) (3)에 액세스할 수 있습니다. 또는 콘텐츠 항목의 **작업** 버튼( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 **정보** 선택할 수 있습니다.
 
 ```{note}
 인스턴스가 Analytics Cloud에 연결된 경우 *메트릭 보기*를 선택하여 콘텐츠 성능 측면 패널을 열 수도 있습니다. 자세한 내용은 [콘텐츠 성능 도구 정보](../page-performance-and-accessibility/about-the-content-performance-tool.md)를 참조하세요.
@@ -46,19 +46,19 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 
 기본적으로 막대형 차트는 선택한 어휘의 각 범주에 대한 총 자산 수를 표시합니다. 이러한 어휘를 변경하려면
 
-1. 콘텐츠 감사 영역에서 *구성* 버튼( ![Configure Button](../../images/icon-settings.png) )을 클릭합니다.
+1. 콘텐츠 감사 영역에서 **구성** 버튼( ![Configure Button](../../images/icon-settings.png) )을 클릭합니다.
 
-1. *왼쪽* 및 *오른쪽* 화살표 버튼을 사용하여 차트에 표시할 어휘를 선택합니다.
+1. **왼쪽** 및 **오른쪽** 화살표 버튼을 사용하여 차트에 표시할 어휘를 선택합니다.
 
    한 번에 하나 또는 두 개의 어휘만 사용할 수 있습니다. 또한 동일한 사이트의 어휘만 결합할 수 있습니다. 그러나 모든 사이트의 어휘와 함께 전역 어휘를 사용할 수 있습니다.
 
-1. *up* 및 *down* 화살표 버튼을 클릭하여 어휘를 정렬합니다.
+1. **up** 및 **down** 화살표 버튼을 클릭하여 어휘를 정렬합니다.
 
    차트는 x축에 대한 상위 어휘와 y축에 대한 하위 어휘를 사용합니다.
 
    ![콘텐츠 감사 차트에 대한 어휘를 선택합니다.](./content-dashboard-interface/images/04.png)
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 ```{tip}
 *Flip Axes* 버튼( ![Flip Axes](../../images/icon-change.png) )을 클릭하여 x축과 y축을 빠르게 전환합니다.
@@ -94,23 +94,23 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 | 어휘(y축)          | 콘텐츠 감사 도구의 [y축 어휘](#content-audit-tool) 에서 콘텐츠 항목에 적용된 카테고리입니다.                                                  |
 | 변경된 날짜          | 콘텐츠의 마지막 수정 날짜                                                                                                  |
 
-콘텐츠 목록은 *페이지* 아이콘( ![Page Icon](../../images/icon-page.png) )을 사용하여 [디스플레이 페이지 템플릿](../../site-building/displaying-content/using-display-page-templates.md)가 있는 자산을 식별합니다.
+콘텐츠 목록은 **페이지** 아이콘( ![Page Icon](../../images/icon-page.png) )을 사용하여 [디스플레이 페이지 템플릿](../../site-building/displaying-content/using-display-page-templates.md)가 있는 자산을 식별합니다.
 
 목록의 콘텐츠 위로 마우스를 가져가면 다음 작업에 액세스할 수 있습니다.
 
-* *보기* ( ![View](../../images/icon-preview.png) ): 콘텐츠의 표시 페이지를 봅니다.
+* **보기**( ![View](../../images/icon-preview.png) ): 콘텐츠의 표시 페이지를 봅니다.
 
-* *편집* ( ![Edit](../../images/icon-edit.png) ): 편집 모드에서 콘텐츠를 엽니다.
+* **편집**( ![Edit](../../images/icon-edit.png) ): 편집 모드에서 콘텐츠를 엽니다.
 
-* *정보* ( ![Information](../../images/icon-information.png) ): [콘텐츠 정보](#content-info-sidebar) 사이드바를 엽니다.
+* **정보**( ![Information](../../images/icon-information.png) ): [콘텐츠 정보](#content-info-sidebar) 사이드바를 엽니다.
 
-* *메트릭 보기* ( ![View Metrics](../../images/icon-analytics.png) ): [콘텐츠 성능 패널](../page-performance-and-accessibility/about-the-content-performance-tool.md)엽니다.
+* **메트릭 보기**( ![View Metrics](../../images/icon-analytics.png) ): [콘텐츠 성능 패널](../page-performance-and-accessibility/about-the-content-performance-tool.md)엽니다.
 
     ![작업 메뉴 또는 각 콘텐츠 행의 아이콘에서 콘텐츠 정보 사이드바 및 콘텐츠 성능 패널에 액세스합니다.](./content-dashboard-interface/images/06.png)
 
 ### 콘텐츠 목록에서 콘텐츠 필터링 및 정렬
 
-*필터 및 주문* 드롭다운 메뉴에서 [미리 정의된 필터](#filter-options-reference) 를 선택합니다. 제목이나 수정 날짜별로 콘텐츠를 정렬할 수도 있습니다.
+**필터 및 주문** 드롭다운 메뉴에서 [미리 정의된 필터](#filter-options-reference) 를 선택합니다. 제목이나 수정 날짜별로 콘텐츠를 정렬할 수도 있습니다.
 
 검색 표시줄을 사용하여 키워드로 콘텐츠를 필터링하거나 [콘텐츠 감사](#content-audit-tool) 차트의 표시줄을 클릭하여 선택한 범주별로 콘텐츠를 필터링할 수 있습니다.
 
@@ -126,7 +126,7 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 
 {bdg-secondary}`7.4+의 경우`
 
-*필터 및 주문* 드롭다운 메뉴에서 다음 옵션을 선택할 수 있습니다.
+**필터 및 주문** 드롭다운 메뉴에서 다음 옵션을 선택할 수 있습니다.
 
 | 여과기             | 묘사                                                                                                     |
 |:--------------- |:------------------------------------------------------------------------------------------------------ |
@@ -150,13 +150,13 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 
 | 예 | 필터링 기준   | 필터 예                    | 콘텐츠 목록 결과                             |
 |:- |:-------- |:----------------------- |:------------------------------------- |
-| ㅏ | 분류       | 범주: *기업가* 및 *가족*        | *기업가* `및` 가족 범주 모두에 속하는 자산만 해당됩니다.    |
-| B | 저자       | 저자: *Peter* and *Linda* | *Peter* `또는` *Linda* `또는` 둘 다 저작한 자산. |
-| 씨 | 카테고리, 저자 | 카테고리는 *기업가* 이고 저자는 *린다* | Linda가 작성한 *기업가* 범주 `및` 의 자산만 해당됩니다.  |
+| ㅏ | 분류       | 범주: **기업가** 및 **가족** | **기업가** `및` 가족 범주 모두에 속하는 자산만 해당됩니다.    |
+| B | 저자       | 저자: **Peter** and **Linda** | **Peter** `또는` **Linda** `또는` 둘 다 저작한 자산. |
+| 씨 | 카테고리, 저자 | 카테고리는 **기업가** 이고 저자는 **린다** | Linda가 작성한 **기업가** 범주 `및` 의 자산만 해당됩니다.  |
 
 ## 콘텐츠 정보 사이드바
 
-정보 사이드바는 선택한 자산에 대한 작업 및 메타데이터에 대한 액세스를 제공합니다. 사이드바를 열려면 원하는 자산에 대해 *작업* 버튼( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *정보*선택합니다. 또는 자산 위에 마우스를 놓고 *정보* 버튼( ![Information Button](../../images/icon-information.png) )을 클릭할 수 있습니다.
+정보 사이드바는 선택한 자산에 대한 작업 및 메타데이터에 대한 액세스를 제공합니다. 사이드바를 열려면 원하는 자산에 대해 **작업** 버튼( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 **정보** 선택합니다. 또는 자산 위에 마우스를 놓고 **정보** 버튼( ![Information Button](../../images/icon-information.png) )을 클릭할 수 있습니다.
 
 ![콘텐츠 정보 사이드바에 액세스하려면 정보 버튼을 클릭합니다.](./content-dashboard-interface/images/09.png)
 
@@ -174,7 +174,7 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 
 {bdg-secondary}`사용 가능 7.4 U53+/GA53+`
 
-콘텐츠 정보 패널에는 웹 콘텐츠와 문서 및 미디어의 자산에 대한 버전 기록이 표시됩니다. 버전 기록을 보려면 콘텐츠 항목에 대해 *정보* (![Info Button](../../images/icon-information.png))를 클릭하고 *버전* 탭으로 이동합니다.
+콘텐츠 정보 패널에는 웹 콘텐츠와 문서 및 미디어의 자산에 대한 버전 기록이 표시됩니다. 버전 기록을 보려면 콘텐츠 항목에 대해 **정보**(![Info Button](../../images/icon-information.png))를 클릭하고 **버전** 탭으로 이동합니다.
 
 이 탭에는 항목에 대해 사용 가능한 버전이 최대 10개까지 나열됩니다. 더 많은 버전이 있는 경우 더 보기 버튼을 클릭하여 볼 수 있습니다.
 
@@ -182,7 +182,7 @@ uuid: 72fe94c3-4995-4477-82af-756b80871f32
 
 **미리보기:** 렌더링된 웹 콘텐츠 또는 문서를 표시합니다.
 
-**비교 대상:**  선택한 버전과 다른 버전 간의 차이를 표시합니다. 이렇게 하면 버전 간 추가, 삭제 및 서식 변경 사항을 보여주는 새 페이지가 열립니다. 이 작업은 두 개 이상의 활성 버전이 있는 경우에만 사용할 수 있습니다.
+**비교 대상:** 선택한 버전과 다른 버전 간의 차이를 표시합니다. 이렇게 하면 버전 간 추가, 삭제 및 서식 변경 사항을 보여주는 새 페이지가 열립니다. 이 작업은 두 개 이상의 활성 버전이 있는 경우에만 사용할 수 있습니다.
 
 **만료:** 버전을 비활성화하고 다음 사용 가능한 버전을 활성화합니다. 예를 들어 1.2와 1.1의 두 가지 버전이 있고 1.2를 만료하면 1.1이 활성 버전이 됩니다.
 

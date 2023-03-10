@@ -36,7 +36,7 @@ OSGi의 강력한 기능 중 하나는 DXP의 API에 액세스하고 다양한 �
 
 * **[가져오기](./fundamentals/importing-packages.md) 및 [패키지 내보내기](./fundamentals/exporting-packages.md)** 는 다른 모듈의 기능을 사용하고 다른 모듈에서 사용할 기능을 게시하는 방법을 보여줍니다. Liferay의 도구는 패키지 사용을 감지하고 패키지 가져오기를 자동으로 지정합니다.
 
-* ** [시맨틱 버전 관리](./fundamentals/semantic-versioning.md) ** 은 Liferay가 새 버전으로 발전할 때 코드에 대한 종속성을 관리하는 방법을 설명하므로 동일한 메커니즘을 사용하여 버전을 관리하고 코드 손상을 방지할 수 있습니다.
+* **[시맨틱 버전 관리](./fundamentals/semantic-versioning.md)** 은 Liferay가 새 버전으로 발전할 때 코드에 대한 종속성을 관리하는 방법을 설명하므로 동일한 메커니즘을 사용하여 버전을 관리하고 코드 손상을 방지할 수 있습니다.
 
 * **[Gogo Shell](./fundamentals/using-the-gogo-shell.md)** 은 셸에 명령을 실행하여 구성 요소를 검사하고, 문제를 디버그하고, 런타임에 배포를 관리하는 방법을 보여줍니다.
 

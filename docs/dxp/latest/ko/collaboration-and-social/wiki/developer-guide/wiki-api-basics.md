@@ -11,7 +11,7 @@ Liferay의 Headless Delivery 애플리케이션은 [Wiki](../getting-started-wit
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-일단 시작되면 사이트 ID를 검색하십시오. 사이트 ID를 찾으려면 *사이트 메뉴*(![사이트 메뉴](../../../images/icon-menu.png))를 열고 *구성* &rarr; *사이트 설정* &rarr; *사이트 구성*.
+일단 시작되면 사이트 ID를 검색하십시오. 사이트 ID를 찾으려면 **사이트 메뉴**(![사이트 메뉴](../../../images/icon-menu.png))를 열고 **구성** &rarr; **사이트 설정** &rarr; **사이트 구성** .
 
 ![사이트 구성 설정에서 사이트 ID를 찾습니다.](./wiki-api-basics/images/01.png)
 

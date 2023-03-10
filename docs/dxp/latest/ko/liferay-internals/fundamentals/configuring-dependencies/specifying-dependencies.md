@@ -36,7 +36,7 @@
 
     **모듈 종속성의 경우** 필요한 모듈을 배포합니다. 자세한 내용은 [앱 설치 및 관리](../../../system-administration/installing-and-managing-apps/installing-apps.md) 을 참조하세요.
 
-    **라이브러리 종속성의 경우** [타사 라이브러리 종속성 해결](./resolving-third-party-library-package-dependencies.md)의 지침을 따르십시오.
+    **라이브러리 종속성의 경우**[타사 라이브러리 종속성 해결](./resolving-third-party-library-package-dependencies.md)의 지침을 따르십시오.
 
 멋진! 종속성을 지정하는 것은 의존할 수 있는 기술입니다!
 

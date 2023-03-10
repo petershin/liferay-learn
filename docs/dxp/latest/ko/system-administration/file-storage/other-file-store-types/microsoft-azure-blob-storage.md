@@ -19,7 +19,7 @@ Microsoft Azure Blob Storage는 DXP의 Azure Blob Storage Store에서 파일을 
 
 상점을 구성하려면 다음 단계를 따르십시오.
 
-1. *전역 메뉴 열기* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *제어판* &rarr; *시스템 설정* &rarr; *파일 저장소* &rarr; *Azure Blob 저장소*.
+1. **전역 메뉴 열기**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **시스템 설정** &rarr; **파일 저장소** &rarr; **Azure Blob 저장소** .
    
    ![연결 문자열 및 컨테이너 이름으로 빈칸을 채우십시오.](./microsoft-azure-blob-storage/images/01.png)
 

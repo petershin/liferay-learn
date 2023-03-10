@@ -4,7 +4,7 @@
 
 ## 양식 위젯 권한
 
-_Form_ 위젯이 배포된 사이트 페이지로 이동합니다. 위젯 이름 옆에 있는 옵션 아이콘(![Options](../../../images/icon-options.png))을 클릭한 다음 _권한_를 클릭합니다.
+**Form** 위젯이 배포된 사이트 페이지로 이동합니다. 위젯 이름 옆에 있는 옵션 아이콘(![Options](../../../images/icon-options.png))을 클릭한 다음 **권한** 를 클릭합니다.
 
 ![양식 위젯 권한 보기](./forms-permissions-reference/images/01.png)
 
@@ -13,18 +13,18 @@ _Form_ 위젯이 배포된 사이트 페이지로 이동합니다. 위젯 이름
 | 권한      | 다른 사용자에게 보기 및 위젯 권한을 부여합니다.                  |
 | 환경 설정   | 위젯 기본 설정을 보고 설정할 수 있는 권한을 부여합니다.             |
 | 설정      | 위젯을 구성할 수 있는 권한을 부여합니다. 표시되는 양식을 선택할 수 있습니다. |
-| 보기      | _Form_ 위젯을 볼 수 있는 권한을 부여합니다.                 |
-| 페이지에 추가 | 사이트 페이지에 _Form_ 위젯을 추가할 수 있는 권한을 부여합니다.      |
+| 보기      | **Form** 위젯을 볼 수 있는 권한을 부여합니다.                 |
+| 페이지에 추가 | 사이트 페이지에 **Form** 위젯을 추가할 수 있는 권한을 부여합니다.      |
 
 ## 양식 권한
 
-1. _제품 메뉴_ (![Product Menu](../../../images/icon-product-menu.png))을 연 다음 _사이트 관리_ 메뉴에서 나침반 아이콘(![Compass](../../../images/icon-compass.png))을 클릭합니다. 양식이 포함된 사이트를 선택합니다.
-1. _콘텐츠 & 데이터_  &rarr; _양식_를 클릭합니다.
-1. 양식 옆에 있는 _작업_ 버튼(![Actions](../../../images/icon-actions.png))을 클릭합니다.
+1. **제품 메뉴**(![Product Menu](../../../images/icon-product-menu.png))을 연 다음 **사이트 관리** 메뉴에서 나침반 아이콘(![Compass](../../../images/icon-compass.png))을 클릭합니다. 양식이 포함된 사이트를 선택합니다.
+1. **콘텐츠 & 데이터** &rarr; **양식** 를 클릭합니다.
+1. 양식 옆에 있는 **작업** 버튼(![Actions](../../../images/icon-actions.png))을 클릭합니다.
 
     ![양식의 특정 권한을 봅니다.](./forms-permissions-reference/images/02.png)
 
-1. _권한_을 클릭합니다.
+1. **권한** 을 클릭합니다.
 
 ![양식의 권한 보기](./forms-permissions-reference/images/03.png)
 

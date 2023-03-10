@@ -6,11 +6,11 @@
 
 이 스테이징 동작을 구성하려면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판*을 클릭한 다음 *시스템 설정* &rarr; *인프라*로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** 을 클릭한 다음 **시스템 설정** &rarr; **인프라** 로 이동합니다.
 
-1. 왼쪽 메뉴의 Virtual Instance Scope에서 *Staging* 을 클릭합니다.
+1. 왼쪽 메뉴의 Virtual Instance Scope에서 **Staging** 을 클릭합니다.
 
-1. *Publish Displayed Content by Default*를 선택하거나 선택 취소합니다.
+1. **Publish Displayed Content by Default** 를 선택하거나 선택 취소합니다.
 
    사용하도록 설정하면 게시 프로세스의 구성에 관계없이 다음 위젯에 대해 표시된 콘텐츠가 다시 게시됩니다. 동적 데이터 목록 표시, 양식, 웹 콘텐츠 표시 및 Wiki 표시.
 
@@ -20,7 +20,7 @@
    표시된 콘텐츠를 항상 Live에 다시 게시하는 것은 불필요할 수 있으며 게시 속도가 느려질 수 있습니다.
    ```
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 ![기본적으로 표시된 콘텐츠 게시를 선택하거나 선택 취소합니다.](./configuring-automatic-publishing-of-displayed-content/images/01.png)
 
@@ -30,19 +30,19 @@
 
 Asset Publisher 위젯에 대한 동적 또는 수동 내보내기를 활성화하려면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판*을 클릭한 다음 *시스템 설정* &rarr; *자산*로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** 을 클릭한 다음 **시스템 설정** &rarr; **자산** 로 이동합니다.
 
-1. 왼쪽 메뉴의 시스템 범위에서 *Asset Publisher* 을 클릭합니다.
+1. 왼쪽 메뉴의 시스템 범위에서 **Asset Publisher** 을 클릭합니다.
 
-1. 선택/선택 취소 *동적 내보내기 활성화*.
+1. 선택/선택 취소 **동적 내보내기 활성화** .
 
-   활성화되면 Asset Publisher 내보내기에는 *동적 내보내기 제한*내의 모든 관련 자산이 포함됩니다.
+   활성화되면 Asset Publisher 내보내기에는 **동적 내보내기 제한** 내의 모든 관련 자산이 포함됩니다.
 
-1. *수동 내보내기 활성화*을 선택하십시오.
+1. **수동 내보내기 활성화** 을 선택하십시오.
 
    활성화되면 사용자는 내보내기에 수동으로 포함할 관련 자산을 선택할 수 있습니다.
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 ## 추가 정보
 

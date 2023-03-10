@@ -8,11 +8,11 @@ Adaptive Media는 백그라운드에서 작동하여 Liferay DXP에 업로드하
 
 ## 콘텐츠에 적응된 이미지 포함
 
-콘텐츠 페이지에 이미지를 추가할 때 [직접 선택한 이미지와 매핑된 이미지에 대해 Adaptive Media가 작동](../../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings) . 블로그 또는 웹 콘텐츠에 이미지를 업로드할 때 Adaptive Media는 _블로그 이미지_, _문서 및 미디어_, _업로드_ 탭에서 추가된 이미지에서만 작동합니다. 또한 수정된 이미지는 커버 이미지가 아닌 블로그 항목의 콘텐츠에만 적용할 수 있습니다. Adaptive Media는 이미지가 블로그 이미지 리포지토리에 자동으로 업로드되고 조정된 다음 블로그 항목의 콘텐츠에 포함되기 때문에 드래그 앤 드롭을 통해 블로그 항목에 추가된 이미지에 대해 작동합니다. HTML을 검사하고 이미지에 `<img>` 태그와 `data-fileentryid` 속성이 포함되어 있는지 확인하면 이를 확인할 수 있습니다.
+콘텐츠 페이지에 이미지를 추가할 때 [직접 선택한 이미지와 매핑된 이미지에 대해 Adaptive Media가 작동](../../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings) . 블로그 또는 웹 콘텐츠에 이미지를 업로드할 때 Adaptive Media는 **블로그 이미지** , **문서 및 미디어** , **업로드** 탭에서 추가된 이미지에서만 작동합니다. 또한 수정된 이미지는 커버 이미지가 아닌 블로그 항목의 콘텐츠에만 적용할 수 있습니다. Adaptive Media는 이미지가 블로그 이미지 리포지토리에 자동으로 업로드되고 조정된 다음 블로그 항목의 콘텐츠에 포함되기 때문에 드래그 앤 드롭을 통해 블로그 항목에 추가된 이미지에 대해 작동합니다. HTML을 검사하고 이미지에 `<img>` 태그와 `data-fileentryid` 속성이 포함되어 있는지 확인하면 이를 확인할 수 있습니다.
 
-웹 콘텐츠 기사의 경우 Adaptive Media는 파일 선택기의 _문서 및 미디어_ 탭에서 추가된 이미지에서만 작동합니다. 블로그와 달리 Adaptive Media는 끌어서 놓기를 통해 웹 콘텐츠 기사에 추가된 이미지에 맞게 조정된 이미지를 제공하지 않습니다.
+웹 콘텐츠 기사의 경우 Adaptive Media는 파일 선택기의 **문서 및 미디어** 탭에서 추가된 이미지에서만 작동합니다. 블로그와 달리 Adaptive Media는 끌어서 놓기를 통해 웹 콘텐츠 기사에 추가된 이미지에 맞게 조정된 이미지를 제공하지 않습니다.
 
-블로그 항목과 미디어 콘텐츠 기사 모두에서 Adaptive Media는 파일 선택기의 *URL* 탭에서 추가된 이미지와 함께 작동하지 않습니다. 이는 이미지가 URL에서 직접 연결되어 Adaptive Media에서 복사할 이미지 파일을 제공하지 않기 때문입니다.
+블로그 항목과 미디어 콘텐츠 기사 모두에서 Adaptive Media는 파일 선택기의 **URL** 탭에서 추가된 이미지와 함께 작동하지 않습니다. 이는 이미지가 URL에서 직접 연결되어 Adaptive Media에서 복사할 이미지 파일을 제공하지 않기 때문입니다.
 
 블로그 항목 또는 웹 콘텐츠 기사를 작성하는 동안 HTML에서 `<img>` 태그 및 `data-fileentryid` 속성을 볼 수 있습니다. 콘텐츠가 표시되면 HTML이 자동으로 교체되고 다음과 유사하게 표시됩니다.
 

@@ -10,7 +10,7 @@
 콘텐츠 성능 지표는 [기본 경험](../../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md)에서만 사용할 수 있습니다.
 ```
 
-콘텐츠에 대한 *메트릭 보기* (![View Metrics](../../images/icon-analytics.png)) 옵션을 사용하여 콘텐츠 성능 도구에 액세스합니다. 이 옵션은 [응용 프로그램 도구 모음](../../getting-started/navigating-dxp.md#applications-bar) 및 [콘텐츠 대시보드](../content-dashboard/about-the-content-dashboard.md)에서 찾을 수 있습니다. 자세한 내용은 [콘텐츠 성능 도구 정보](./about-the-content-performance-tool.md)을 참조하십시오.
+콘텐츠에 대한 **메트릭 보기**(![View Metrics](../../images/icon-analytics.png)) 옵션을 사용하여 콘텐츠 성능 도구에 액세스합니다. 이 옵션은 [응용 프로그램 도구 모음](../../getting-started/navigating-dxp.md#applications-bar) 및 [콘텐츠 대시보드](../content-dashboard/about-the-content-dashboard.md)에서 찾을 수 있습니다. 자세한 내용은 [콘텐츠 성능 도구 정보](./about-the-content-performance-tool.md)을 참조하십시오.
 
 콘텐츠 성능 도구에는 세 가지 영역이 있습니다.
 
@@ -44,7 +44,7 @@
 
 ![시간 범위 선택기 사용 ](./analyze-content-metrics-using-content-performance-tool/images/02.png)
 
-시간 범위 선택기는 *추천* 및 *소셜 트래픽* 패널의 세부 사항 보기에도 포함됩니다.
+시간 범위 선택기는 **추천** 및 **소셜 트래픽** 패널의 세부 사항 보기에도 포함됩니다.
 
 ![패널 상세 보기의 시간 범위 ](./analyze-content-metrics-using-content-performance-tool/images/03.png)
 

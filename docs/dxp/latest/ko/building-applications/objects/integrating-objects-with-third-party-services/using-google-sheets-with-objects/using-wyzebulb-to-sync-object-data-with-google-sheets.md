@@ -10,19 +10,19 @@
 
 1. [Wyzebulb](https://www.wyzebulb.com/) 에 로그인하고 흐름을 만듭니다.
 
-1. 트리거의 경우 *Webhooks* 앱을 선택합니다.
+1. 트리거의 경우 **Webhooks** 앱을 선택합니다.
 
     ![트리거할 앱을 선택합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/01.png)
 
     ![웹후크를 선택합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/02.png)
 
-1. *Catch Hook* 트리거를 선택하고 *저장 + 계속을 클릭합니다.*
+1. **Catch Hook** 트리거를 선택하고 **저장 + 계속을 클릭합니다.**
 
     ![Catch Hook 트리거를 선택합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/03.png)
 
     ![저장하고 계속하기를 클릭합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/04.png)
 
-1. *Webhooks URL* 을 클릭하고 생성된 URL을 복사합니다.
+1. **Webhooks URL** 을 클릭하고 생성된 URL을 복사합니다.
 
     ![Webhook URL을 선택합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/05.png)
 
@@ -36,17 +36,17 @@
 
    이를 통해 Webhooks 모듈은 개체의 데이터 구조를 자동으로 결정할 수 있습니다.
 
-1. 테스트가 성공했는지 확인하고 *저장 + 계속*을 클릭합니다.
+1. 테스트가 성공했는지 확인하고 **저장 + 계속** 을 클릭합니다.
 
     ![성공적인 테스트.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/08.png)
 
-1. *작업*에 대해 *Google 스프레드시트* 앱을 선택합니다.
+1. **작업** 에 대해 **Google 스프레드시트** 앱을 선택합니다.
 
     ![앱을 클릭하여 앱을 선택합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/09.png)
 
     ![Google 스프레드시트를 선택합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/10.png)
 
-1. *Google 스프레드시트에서 새 행 만들기* 작업을 선택하고 *저장 + 계속*을 클릭합니다.
+1. **Google 스프레드시트에서 새 행 만들기** 작업을 선택하고 **저장 + 계속** 을 클릭합니다.
 
     ![조치를 선택하려면 조치를 클릭하십시오.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/11.png)
 
@@ -56,7 +56,7 @@
 
     ![Google 시트 앱을 Google 계정에 연결합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/13.png)
 
-1. 원하는 *스프레드시트* 및 *워크시트*을 선택합니다.
+1. 원하는 **스프레드시트** 및 **워크시트** 을 선택합니다.
 
     ![원하는 스프레드시트와 워크시트를 선택합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/14.png)
 
@@ -64,11 +64,11 @@
 
     ![시트의 열을 개체 필드에 매핑합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/15.png)
 
-1. *Test Action* 버튼을 클릭하고 테스트가 성공했는지 확인합니다.
+1. **Test Action** 버튼을 클릭하고 테스트가 성공했는지 확인합니다.
 
     ![성공적인 테스트.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/16.png)
 
-1. *My Flows* 페이지로 이동하여 흐름이 실행 중인지 확인합니다.
+1. **My Flows** 페이지로 이동하여 흐름이 실행 중인지 확인합니다.
 
     ![흐름이 실행 중인지 확인합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/17.png)
 

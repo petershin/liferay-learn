@@ -18,19 +18,19 @@
 
 ## TensorFlow 이미지 자동 태깅 구성
 
-1. _전역 메뉴 클릭_ &rarr; _제어판_
-1. _시스템 설정_을 클릭하십시오.
+1. **전역 메뉴 클릭** &rarr; **제어판**
+1. **시스템 설정** 을 클릭하십시오.
    
    ![시스템 설정으로 이동합니다.](./auto-tagging-images/images/02.png)
 
-1. _콘텐츠 및 데이터_아래에서 _자산_ 을 클릭합니다.
+1. **콘텐츠 및 데이터** 아래에서 **자산** 을 클릭합니다.
    
    ![자산을 클릭합니다.](./auto-tagging-images/images/03.png)
 
-1. _가상 인스턴스 범위_아래에서 _TensorFlow Image Auto Tagging_을 클릭합니다.
+1. **가상 인스턴스 범위** 아래에서 **TensorFlow Image Auto Tagging** 을 클릭합니다.
 
 1. 양식을 작성하시오.
-1. 완료되면 _저장_ 을 클릭합니다.
+1. 완료되면 **저장** 을 클릭합니다.
 
 이 양식은 다음 정보를 요구합니다.
 
@@ -42,12 +42,12 @@
 
 ### TensorFlow 자동 태깅 성능 최적화
 
-1. _전역 메뉴 클릭_ &rarr; _제어판_
-1. _시스템 설정_을 클릭하십시오.
-1. _자산_을 클릭합니다.
-1. _SYSTEM SCOPE_에서 _TensorFlow Image Auto Tagging Process_을 클릭합니다.
+1. **전역 메뉴 클릭** &rarr; **제어판**
+1. **시스템 설정** 을 클릭하십시오.
+1. **자산** 을 클릭합니다.
+1. **SYSTEM SCOPE** 에서 **TensorFlow Image Auto Tagging Process** 을 클릭합니다.
 1. 양식을 작성하시오.
-1. _저장_ 을 클릭하여 설정을 적용합니다.
+1. **저장** 을 클릭하여 설정을 적용합니다.
 
 양식은 다음 정보를 요구합니다.
 
@@ -61,39 +61,39 @@ TensorFlow 공급자가 구성되었습니다.
 
 ## Google Cloud Vision 구성
 
-1. _전역 메뉴 클릭_ &rarr; _제어판_
-1. _시스템 설정_을 클릭하십시오.
-1. _자산_을 클릭합니다.
-1. _가상 인스턴스 범위_아래에서 _Google Cloud Vision 이미지 자동 태그 지정_을 클릭합니다.
+1. **전역 메뉴 클릭** &rarr; **제어판**
+1. **시스템 설정** 을 클릭하십시오.
+1. **자산** 을 클릭합니다.
+1. **가상 인스턴스 범위** 아래에서 **Google Cloud Vision 이미지 자동 태그 지정** 을 클릭합니다.
 1. Google Cloud Vision API 키를 입력합니다. 자세한 내용은 [API 키에 대한 Google 문서](https://cloud.google.com/docs/authentication/api-keys) 을 참조하십시오.
-1. _Enabled_ 체크박스를 선택하여 Google Cloud Vision을 활성화합니다.
+1. **Enabled** 체크박스를 선택하여 Google Cloud Vision을 활성화합니다.
    
    ![Google Cloud Vision 제공업체에는 API 키가 필요합니다.](./auto-tagging-images/images/06.png)
 
-1. 완료되면 _저장_ 을 클릭합니다.
+1. 완료되면 **저장** 을 클릭합니다.
 
 ## Microsoft Cognitive Services 구성
 
-1. _전역 메뉴 클릭_ &rarr; _제어판_
-1. _시스템 설정_을 클릭하십시오.
-1. 클릭 _자산_
-1. _가상 인스턴스 범위_에서 _Microsoft Cognitive Services 이미지 자동 태깅_을 클릭합니다.
+1. **전역 메뉴 클릭** &rarr; **제어판**
+1. **시스템 설정** 을 클릭하십시오.
+1. 클릭 **자산**
+1. **가상 인스턴스 범위** 에서 **Microsoft Cognitive Services 이미지 자동 태깅** 을 클릭합니다.
 1. 양식을 작성하시오.
-1. _활성화됨_ 상자를 선택합니다.
+1. **활성화됨** 상자를 선택합니다.
    
    ![Microsoft Cognitive Services 공급자에는 API 키와 엔드포인트가 필요합니다.](./auto-tagging-images/images/07.png)
 
-1. 완료되면 _저장_ 을 클릭합니다.
+1. 완료되면 **저장** 을 클릭합니다.
 
 이 양식은 다음 정보를 요구합니다.
 
 **API 키:** 귀하의 [API 키](https://azure.microsoft.com/en-us/try/cognitive-services/my-apis/?apiSlug=computer-services) Computer Vision API V2.
 
-**API 엔드포인트:** [Computer Vision API V2](https://westcentralus.api.cognitive.microsoft.com/vision/v2.0) 의 엔드포인트입니다.
+**API 엔드포인트:**[Computer Vision API V2](https://westcentralus.api.cognitive.microsoft.com/vision/v2.0) 의 엔드포인트입니다.
 
 Microsoft Cognitive Services 공급자가 구성되었습니다. 자세한 내용은 [Microsoft Cognitive Services 설명서](https://docs.microsoft.com/en-us/azure/cognitive-services/) 을 참조하십시오.
 
-둘 이상의 가상 인스턴스가 있는 경우 각 인스턴스를 개별적으로 구성할 수 있습니다. _제어판_ &rarr; _인스턴스 설정_으로 이동합니다. _자산_ 을 클릭한 다음 여기에서 공급자를 구성합니다.
+둘 이상의 가상 인스턴스가 있는 경우 각 인스턴스를 개별적으로 구성할 수 있습니다. **제어판** &rarr; **인스턴스 설정** 으로 이동합니다. **자산** 을 클릭한 다음 여기에서 공급자를 구성합니다.
 
 ## 추가 정보
 

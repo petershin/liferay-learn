@@ -14,11 +14,11 @@
 
 프래그먼트의 개별 인스턴스에 대한 변경 사항을 수동으로 전파하려면 다음 단계를 따르십시오.
 
-1. *사이트 메뉴* (![Site Menu](../../../../images/icon-product-menu.png))을 열고 *디자인* &rarr; *조각*로 이동합니다.
+1. **사이트 메뉴**(![Site Menu](../../../../images/icon-product-menu.png))을 열고 **디자인** &rarr; **조각** 로 이동합니다.
 
-1. 원하는 조각에 대한 *조각 세트* 로 이동합니다.
+1. 원하는 조각에 대한 **조각 세트** 로 이동합니다.
 
-1. 원하는 조각에 대해 *작업* 버튼(![Actions Button](../../../../images/icon-actions.png))을 클릭하고 *사용 보기*를 선택합니다.
+1. 원하는 조각에 대해 **작업** 버튼(![Actions Button](../../../../images/icon-actions.png))을 클릭하고 **사용 보기** 를 선택합니다.
    
    ![프래그먼트의 작업 버튼을 클릭하고 사용 보기를 선택합니다.](./propagating-fragment-changes/images/01.png) 
 
@@ -28,11 +28,11 @@
 
 1. Usages and Propagation 페이지에서 최신 버전으로 업데이트할 프래그먼트 인스턴스를 확인합니다.
    
-   표에서 페이지 또는 템플릿이 *이전 버전* 또는 *최신 버전*을 사용하는지 여부를 검토할 수 있습니다.
+   표에서 페이지 또는 템플릿이 **이전 버전** 또는 **최신 버전** 을 사용하는지 여부를 검토할 수 있습니다.
    
    ![업데이트할 조각 인스턴스를 선택합니다.](./propagating-fragment-changes/images/02.png)
 
-1. *Propagate* 버튼(![Propagate](../../../../images/icon-propagate.png))을 클릭하여 선택한 프래그먼트 인스턴스를 업데이트합니다.
+1. **Propagate** 버튼(![Propagate](../../../../images/icon-propagate.png))을 클릭하여 선택한 프래그먼트 인스턴스를 업데이트합니다.
 
 편집할 수 없는 필드에 대한 변경 사항은 선택한 조각 인스턴스에 자동으로 전파됩니다.
 
@@ -44,15 +44,15 @@
 자동 전파는 오타나 부정확한 콘텐츠가 게시되는 등 프로덕션 환경에서 의도하지 않은 결과를 초래할 수 있습니다. 테스트 또는 개발 목적으로만 자동 전파를 사용하십시오.
 ```
 
-1. *글로벌 메뉴* (![Global Menu](../../../../images/icon-applications-menu.png))을 열고 *제어판* 탭을 클릭한 다음 *구성* &rarr; *시스템 설정*로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../../images/icon-applications-menu.png))을 열고 **제어판** 탭을 클릭한 다음 **구성** &rarr; **시스템 설정** 로 이동합니다.
 
-1. *콘텐츠 및 데이터* 섹션에서 *페이지 조각*을 클릭합니다.
+1. **콘텐츠 및 데이터** 섹션에서 **페이지 조각** 을 클릭합니다.
 
-1. *Propagate Fragment Changes Automatically* 상자를 선택합니다.
+1. **Propagate Fragment Changes Automatically** 상자를 선택합니다.
    
    ![프래그먼트 변경 사항 자동 전파 상자를 선택합니다.](./propagating-fragment-changes/images/03.png)
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 사용하도록 설정하면 조각의 편집할 수 없는 필드에 대한 변경 사항이 조각의 모든 인스턴스에 자동으로 전파됩니다.
 

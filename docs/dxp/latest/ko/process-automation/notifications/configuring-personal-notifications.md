@@ -4,21 +4,21 @@ Liferay는 통합 알림 도구를 제공하므로 플랫폼 이벤트에 대해
 
 개별 알림을 사용자 정의하려면 다음 단계를 따르십시오.
 
-1. *개인 메뉴* 을 열고 알림을 클릭합니다.
+1. **개인 메뉴** 을 열고 알림을 클릭합니다.
 
    ![개인 메뉴를 열고 알림을 클릭합니다.](./configuring-personal-notifications/images/01.png)
 
-1. Application Bar에서 *Actions* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 *Configuration*를 선택합니다.
+1. Application Bar에서 **Actions** 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 **Configuration** 를 선택합니다.
 
    ![애플리케이션 표시줄에서 작업 버튼을 클릭하고 구성을 선택합니다.](./configuring-personal-notifications/images/02.png)
 
-   또는 알림 위젯이 배포되는 모든 사이트에서 이러한 설정에 액세스할 수 있습니다. 위젯의 *옵션* 버튼(![Options Button](../../images/icon-widget-options.png))을 클릭하고 *구성*을 선택합니다.
+   또는 알림 위젯이 배포되는 모든 사이트에서 이러한 설정에 액세스할 수 있습니다. 위젯의 **옵션** 버튼(![Options Button](../../images/icon-widget-options.png))을 클릭하고 **구성** 을 선택합니다.
 
    ![알림 위젯의 옵션 버튼을 클릭하고 구성을 선택합니다.](./configuring-personal-notifications/images/03.png)
 
 1. 원하는 애플리케이션 트리거에 대한 알림을 활성화하거나 비활성화합니다.
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 사용자 정의 옵션에는 다음 애플리케이션 트리거가 포함됩니다.
 

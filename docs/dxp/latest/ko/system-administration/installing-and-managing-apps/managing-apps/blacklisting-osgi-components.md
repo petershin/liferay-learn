@@ -13,13 +13,13 @@ UI 및 구성 파일을 사용하여 구성 요소를 블랙리스트에 추가�
 
 OSGi 구성 요소를 비활성화하려면 다음 단계를 따르십시오.
 
-1. 제어판에서 *구성* &rarr; *시스템 설정* &rarr; *모듈 컨테이너*로 이동합니다. 구성 요소 블랙리스트 화면이 나타납니다.
+1. 제어판에서 **구성** &rarr; **시스템 설정** &rarr; **모듈 컨테이너** 로 이동합니다. 구성 요소 블랙리스트 화면이 나타납니다.
 
-1. 구성 요소 블랙리스트 화면에서 비활성화할 구성 요소의 이름을 추가하고 *저장* 버튼을 클릭합니다. 구성 요소가 즉시 비활성화됩니다.
+1. 구성 요소 블랙리스트 화면에서 비활성화할 구성 요소의 이름을 추가하고 **저장** 버튼을 클릭합니다. 구성 요소가 즉시 비활성화됩니다.
 
     ![이 블랙리스트는 com.liferay.portal.security.ldap.internal.authenticator.LDAPAuth 및 com.liferay.ip.geocoder.sample.web.internal.portlet.IPGeocoderSamplePortlet 구성 요소를 비활성화합니다.](./blacklisting-osgi-components/images/01.png)
 
-1. 블랙리스트를 내보내려면 구성 요소 블랙리스트 모듈의 작업 버튼(![액션](./blacklisting-osgi-components/images/02.png)) 다음 *내보내기*을 클릭합니다. 그런 다음 블랙리스트 구성 파일이 다운로드됩니다(`com.liferay.portal.component.blacklist.internal.ComponentBlacklistConfiguration.config`). 다음은 예제 목록에서 생성된 파일의 내용입니다.
+1. 블랙리스트를 내보내려면 구성 요소 블랙리스트 모듈의 작업 버튼(![액션](./blacklisting-osgi-components/images/02.png)) 다음 **내보내기** 을 클릭합니다. 그런 다음 블랙리스트 구성 파일이 다운로드됩니다(`com.liferay.portal.component.blacklist.internal.ComponentBlacklistConfiguration.config`). 다음은 예제 목록에서 생성된 파일의 내용입니다.
 
     ```properties
     blacklistComponentNames=["com.liferay.portal.security.ldap.internal.authenticator.LDAPAuth","com.liferay.ip.geocoder.sample.web.internal.portlet.IPGeocoderSamplePortlet "]
@@ -41,7 +41,7 @@ OSGi 구성 요소를 비활성화하려면 다음 단계를 따르십시오.
 
 1. `blacklistComponentNames` 목록에서 구성 요소 이름을 제거하고 파일을 저장합니다.
 
-블랙리스트에 있는 구성 요소를 *모두* 활성화하려면 구성 파일을 제거하십시오.
+블랙리스트에 있는 구성 요소를 **모두** 활성화하려면 구성 파일을 제거하십시오.
 
 ```{note}
 블랙리스트에 포함된 구성 요소를 일시적으로 다시 활성화하려면 시스템 설정의 구성 요소 블랙리스트 구성 모듈에서 해당 이름을 제거하고 *업데이트*를 클릭하십시오. 구성 요소 블랙리스트 구성 파일(``[Liferay Home]/osgi/configs`` 폴더에 있음)을 사용 중이고 이후 서버 시작 시 구성 요소를 활성화하려면 파일에서 구성 요소의 이름을 제거해야 합니다.

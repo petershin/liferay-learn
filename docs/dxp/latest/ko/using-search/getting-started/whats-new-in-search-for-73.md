@@ -22,7 +22,7 @@ DXP 7.3과 함께 번들로 제공되는 Elasticsearch 7 커넥터는 [Elastic�
 
 > 가용성: Liferay 7.3 CE GA4+, Liferay DXP 7.3 GA1+
 
-_Liferay Enterprise Search Security_ (이전 _Liferay Connector to X-Pack Security_) 모듈의 기능은 _Liferay Connector to Elasticsearch 7_에 포함되어 있습니다. CE/DXP 7.3의 모든 고객은 [Liferay Enterprise Search(LES)](https://www.liferay.com/products/dxp/enterprise-search) 구독 없이 Elasticsearch 클러스터에 안전하게 연결할 수 있습니다.
+**Liferay Enterprise Search Security**(이전 **Liferay Connector to X-Pack Security**) 모듈의 기능은 **Liferay Connector to Elasticsearch 7** 에 포함되어 있습니다. CE/DXP 7.3의 모든 고객은 [Liferay Enterprise Search(LES)](https://www.liferay.com/products/dxp/enterprise-search) 구독 없이 Elasticsearch 클러스터에 안전하게 연결할 수 있습니다.
 
 [업그레이드](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md) 가이드에는 암호화 구성을 Elasticsearch 7 커넥터로 이동하는 방법에 대한 정보가 포함되어 있습니다.
 
@@ -118,7 +118,7 @@ DXP 7.2 SP2 이하에서 7.3으로 업그레이드하면 새 DXP 인덱스가 �
 
 ## Liferay 엔터프라이즈 검색(LES)
 
-> ** [LES 가입자](https://www.liferay.com/products/dxp/enterprise-search) **
+> [**LES 가입자](https://www.liferay.com/products/dxp/enterprise-search**)
 
 ### 클러스터 간 복제(LES)
 
@@ -137,7 +137,7 @@ LTR(Learning to Rank)은 기계 학습(ML) 모델을 적용하여 검색 결과�
 - "특징" 선택(모델이 훈련될 때 고려할 검색 요소에 대한 용어-예: 최신성, 지리적 근접성, 태그 일치)
 - 수동(예: 쿼리에 대한 결과 등급 지정 검색 전문가) 또는 반자동(예: 쿼리에 대한 사용자 클릭률 측정)으로 선별된 판단 목록("실측 정보"라고도 함)을 제공합니다.
 
-판단 목록은 모델 교육에 정보를 제공하고 안내하는 진실의 출처입니다. 사용자가 검색 쿼리를 제출하면 LTR은 검색 엔진에서 반환된 처음 _x_ 개의 결과(기본적으로 처음 1,000개의 결과)를 가져온 다음 목록을 반환하기 전에 학습된 모델을 사용하여 해당 결과의 점수를 다시 매기고 재정렬합니다. 사용자에게.
+판단 목록은 모델 교육에 정보를 제공하고 안내하는 진실의 출처입니다. 사용자가 검색 쿼리를 제출하면 LTR은 검색 엔진에서 반환된 처음 **x** 개의 결과(기본적으로 처음 1,000개의 결과)를 가져온 다음 목록을 반환하기 전에 학습된 모델을 사용하여 해당 결과의 점수를 다시 매기고 재정렬합니다. 사용자에게.
 
 ### LES 애플리케이션의 이름이 변경됨
 
@@ -166,7 +166,7 @@ Elasticsearch 버전에 구애받지 않는 `IndexSettingsContributor` 이 추�
 
 > 가용성: Liferay CE 7.3 GA4+, Liferay DXP 7.3 GA1+
 
-Elasticsearch의 호환 버전은 Liferay CE/DXP 7.3+ Tomcat 번들과 함께 번들로 제공되며 _사이드카_ JVM에서 동시에 시작됩니다. 이 사이드카 설치를 _개발 모드_이라고 하며 이전 _임베디드_ 모드를 대체합니다(둘 다 프로덕션 설치에 대해 지원되지 않음). 사이드카에는 시스템 설정의 Elasticsearch 7 구성에 전용 속성이 있습니다. 기본적으로 HTTP 포트 9201에서 실행됩니다. 자세한 내용은 [사이드카 또는 임베디드 Elasticsearch 사용](../installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md) 을 참조하십시오.
+Elasticsearch의 호환 버전은 Liferay CE/DXP 7.3+ Tomcat 번들과 함께 번들로 제공되며 **사이드카** JVM에서 동시에 시작됩니다. 이 사이드카 설치를 **개발 모드** 이라고 하며 이전 **임베디드** 모드를 대체합니다(둘 다 프로덕션 설치에 대해 지원되지 않음). 사이드카에는 시스템 설정의 Elasticsearch 7 구성에 전용 속성이 있습니다. 기본적으로 HTTP 포트 9201에서 실행됩니다. 자세한 내용은 [사이드카 또는 임베디드 Elasticsearch 사용](../installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md) 을 참조하십시오.
 
 사이드카 Elasticsearch 서버는 처음 시작할 때 자동으로 다운로드됩니다. 배포에서 사이드카 서버를 다운로드할 수 없는 경우 [Elasticsearch를 원격 서버로 설치합니다](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md).
 

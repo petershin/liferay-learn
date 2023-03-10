@@ -22,13 +22,13 @@ message-bus/listening-for-registration-events.md
 message-bus/tuning-messaging-performance.md
 ```
 
-메시지 버스는 느슨하게 결합된 메시지 교환 방법을 제공합니다. 메시지를 보내는 클래스는 메시지 버스를 호출하여 메시지를 목적지로 보내고, 그 목적지에 등록된 다른 클래스(리스너*개*)는 메시지를 받습니다. 수신기는 발신자에게 투명하며 그 반대도 마찬가지입니다.
+메시지 버스는 느슨하게 결합된 메시지 교환 방법을 제공합니다. 메시지를 보내는 클래스는 메시지 버스를 호출하여 메시지를 목적지로 보내고, 그 목적지에 등록된 다른 클래스(리스너 **개**)는 메시지를 받습니다. 수신기는 발신자에게 투명하며 그 반대도 마찬가지입니다.
 
 주요 메시징 구성 요소는 다음과 같습니다.
 
 **대상:** 메시지가 전송되는 논리적(물리적이 아님) 명명된 위치.
 
-**리스너:** 특정 대상으로 전송된 메시지를 *수신* 하는 클래스.
+**리스너:** 특정 대상으로 전송된 메시지를 **수신** 하는 클래스.
 
 **메시지 버스:** 목적지 등록을 처리하고 리스너에게 메시지를 보내는 프레임워크.
 
@@ -63,9 +63,9 @@ message-bus/tuning-messaging-performance.md
 
 * [비동기 메시징 사용](./message-bus/using-asynchronous-messaging.md) 대상을 구성하고 대상에 비동기적으로 메시지를 보내는 방법을 보여줍니다. 이것은 메시지를 보내는 가장 간단한 방법입니다.
 
-* [이전 버전에서 기본 동기식 메시징 사용](./message-bus/using-default-synchronous-messaging-in-previous-versions.md) 한 수신기가 메시지에 응답할 때까지 메시지 발신자 차단을 보여줍니다. *또는*수신기가 응답하지 않으면 메시지 시간이 초과될 때까지.
+* [이전 버전에서 기본 동기식 메시징 사용](./message-bus/using-default-synchronous-messaging-in-previous-versions.md) 한 수신기가 메시지에 응답할 때까지 메시지 발신자 차단을 보여줍니다. **또는** 수신기가 응답하지 않으면 메시지 시간이 초과될 때까지.
 
-* [이전 버전에서 Direct Synchronous Messaging 사용](./message-bus/using-default-synchronous-messaging-in-previous-versions.md)은 *모든* 리스너가 메시지를 수신할 때까지 메시지 발신자가 메시지 전송을 차단함을 보여줍니다.
+* [이전 버전에서 Direct Synchronous Messaging 사용](./message-bus/using-default-synchronous-messaging-in-previous-versions.md)은 **모든** 리스너가 메시지를 수신할 때까지 메시지 발신자가 메시지 전송을 차단함을 보여줍니다.
 
 ## 튜닝 성능
 

@@ -1,3 +1,7 @@
+---
+uuid: e07529bb-90f1-4981-9d70-25f01c7257a5
+---
+
 # JSP용 Liferay 테마 객체
 
 JSP에 `<liferay-theme:defineObjects>` 태그를 포함하면 변수를 통해 여러 Liferay 테마 개체에 액세스할 수 있습니다. 이러한 개체는 아래 표에 설명되어 있습니다.

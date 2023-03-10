@@ -40,13 +40,13 @@ Liferay DXP에 업로드된 모든 파일은 인스턴스의 지정된 파일 �
 
 1. 라이프레이를 다시 시작합니다.
 
-1. 제어판에서 _구성_ &rarr; _시스템 설정_ &rarr; _파일 저장소_로 이동합니다.
+1. 제어판에서 **구성** &rarr; **시스템 설정** &rarr; **파일 저장소** 로 이동합니다.
 
-1. _Advanced File System Store_ 화면에서 _Root Directory_ 을 [Liferay Home](../installation-and-upgrades/reference/liferay-home.md) 경로(절대 또는 상대)로 설정합니다.
+1. **Advanced File System Store** 화면에서 **Root Directory** 을 [Liferay Home](../installation-and-upgrades/reference/liferay-home.md) 경로(절대 또는 상대)로 설정합니다.
 
     ![고급 파일 시스템 저장소 화면](./file-storage/images/02.png)
 
-1. _저장_을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 Liferay는 이제 Advanced File System Store를 사용하여 파일을 저장하고 있습니다.
 
@@ -64,7 +64,7 @@ Liferay는 이제 Advanced File System Store를 사용하여 파일을 저장하
 
 다른 기본 제공 파일 저장 방법을 사용할 수 있습니다.
 
-* [단순 파일 시스템 저장소](./file-storage/other-file-store-types/simple-file-system-store.md) 은 파일 시스템(로컬 또는 마운트된 공유)을 사용하여 파일을 저장합니다. 이것은 *기본* 파일 저장소입니다.
+* [단순 파일 시스템 저장소](./file-storage/other-file-store-types/simple-file-system-store.md) 은 파일 시스템(로컬 또는 마운트된 공유)을 사용하여 파일을 저장합니다. 이것은 **기본** 파일 저장소입니다.
 
 * [S3 Store(Amazon Simple Storage Service)](./file-storage/other-file-store-types/amazon-s3-store.md) 은 Amazon의 클라우드 기반 스토리지를 사용합니다.
 

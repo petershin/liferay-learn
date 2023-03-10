@@ -14,7 +14,7 @@ JDK를 선택하려면 [Liferay DXP 호환성 매트릭스](https://help.liferay
 | 시간대     | `-Duser.timezone=GMT`                     | 그렇다  | DXP는 모든 날짜에 GMT 시간대를 사용합니다.                                                                                                                                                                                                             |
 | 네 자리 연도 | `-Djava.locale.providers=JRE,COMPAT,CLDR` | 부정   | JDK 11에서 이 설정은 4자리 연도를 표시합니다. JDK 9부터 유니코드 CLDR(Common Locale Data Repository)이 기본 로케일 제공자입니다. CLDR은 4자리 형식으로 연도를 제공하지 않습니다( [LPS-87191](https://issues.liferay.com/browse/LPS-87191) 참조). 이 설정은 JDK 8의 기본 로케일 공급자를 사용하여 문제를 해결합니다.      |
 | 힙 크기    | `-Xms2560m -Xmx2560m`                     | 부정   | 기본 최소 및 최대 크기는 필요에 맞게 조정할 수 있지만 JVM이 동적으로 조정되지 않도록 동일한 최소(`-Xms`) 및 최대(`-Xmx`) 크기를 설정해야 합니다.                                                                                                                                            |
-| Log4j   | `-Dlog4j2.formatMsgNoLookups=true`        | 그렇다* | 2.15.0 이전의 Log4j 버전은 LDAP JNDI 구문 분석기를 통한 RCE(원격 코드 실행) 취약점의 영향을 받습니다. 자세한 내용은 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) 을 참조하십시오. \*Liferay DXP 7.4 GA1 및 Liferay PORTAL 7.4 GA1 - GA3에서 보안 취약점을 해결하려면 이 설정이 필요합니다. |
+| Log4j   | `-Dlog4j2.formatMsgNoLookups=true`        | 그렇다 **| 2.15.0 이전의 Log4j 버전은 LDAP JNDI 구문 분석기를 통한 RCE(원격 코드 실행) 취약점의 영향을 받습니다. 자세한 내용은 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) 을 참조하십시오. \** Liferay DXP 7.4 GA1 및 Liferay PORTAL 7.4 GA1 - GA3에서 보안 취약점을 해결하려면 이 설정이 필요합니다. |
 
 지원되는 애플리케이션 서버에 대한 Liferay 설치 문서는 이러한 설정을 적용할 사이트를 설명합니다. 기사 링크는 다음과 같습니다.
 
@@ -26,7 +26,7 @@ JDK를 선택하려면 [Liferay DXP 호환성 매트릭스](https://help.liferay
 
 ## 알려진 문제: 불법 액세스 경고
 
-JDK 11에서는 다음과 같은 _불법 액세스_ 경고가 로그에 인쇄될 수 있습니다.
+JDK 11에서는 다음과 같은 **불법 액세스** 경고가 로그에 인쇄될 수 있습니다.
 
 ```message
 WARNING: An illegal reflective access operation has occurred

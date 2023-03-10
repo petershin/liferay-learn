@@ -10,23 +10,23 @@
 
 개체 데이터를 Google 시트에 동기화하려면 다음 단계를 따르세요.
 
-1. [Elastic.io](https://www.elastic.io/) 에 로그인하고 *Integrate* 페이지로 이동한 다음 *Flows*를 클릭합니다.
+1. [Elastic.io](https://www.elastic.io/) 에 로그인하고 **Integrate** 페이지로 이동한 다음 **Flows** 를 클릭합니다.
 
    ![통합 페이지로 이동하고 흐름을 클릭합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/01.png)
 
-1. *새 흐름 추가*을 클릭합니다.
+1. **새 흐름 추가** 을 클릭합니다.
 
    ![새 흐름을 추가합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/02.png)
 
-1. *초기 트리거 추가*을 클릭합니다.
+1. **초기 트리거 추가** 을 클릭합니다.
 
    ![초기 트리거를 추가합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/03.png)
 
-1. *Trigger*에 대해 *Webhook* 구성 요소를 선택합니다.
+1. **Trigger** 에 대해 **Webhook** 구성 요소를 선택합니다.
 
    ![Webhook을 검색하여 선택합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/04.png)
 
-1. 생성된 *Webhook URL*을 복사합니다.
+1. 생성된 **Webhook URL** 을 복사합니다.
 
    ![생성된 Webhook URL을 복사합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/05.png)
 
@@ -38,7 +38,7 @@
 
    이렇게 하면 Webhook 구성 요소가 개체의 데이터 구조를 자동으로 결정할 수 있습니다.
 
-1. *샘플 요청 보내기* 버튼을 클릭합니다.
+1. **샘플 요청 보내기** 버튼을 클릭합니다.
 
    ![샘플 요청 보내기 버튼을 클릭합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/07.png)
 
@@ -46,19 +46,19 @@
 
    ![테스트가 성공했는지 확인합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/08.png)
 
-1. *새 작업 추가*을 클릭합니다.
+1. **새 작업 추가** 을 클릭합니다.
 
    ![새 작업을 추가합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/09.png)
 
-1. *Action*에 대해 *Google Sheets* 구성요소를 선택합니다.
+1. **Action** 에 대해 **Google Sheets** 구성요소를 선택합니다.
 
    ![Google 스프레드시트 구성요소를 선택합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/10.png)
 
-1. *스프레드시트 행* 추가 기능을 선택합니다.
+1. **스프레드시트 행** 추가 기능을 선택합니다.
 
    ![스프레드시트 행 추가 기능을 선택합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/11.png)
 
-1. 개체와 동기화할 원하는 *스프레드시트* 및 *워크시트* 을 선택합니다.
+1. 개체와 동기화할 원하는 **스프레드시트** 및 **워크시트** 을 선택합니다.
 
    ![개체와 동기화할 스프레드시트 및 시트를 선택합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/12.png)
 
@@ -70,7 +70,7 @@
 
    ![시트의 열을 개체 필드에 매핑합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/14.png)
 
-1. *Google 스프레드시트* 에서 샘플 검색 버튼을 클릭합니다.
+1. **Google 스프레드시트** 에서 샘플 검색 버튼을 클릭합니다.
 
    ![Google 스프레드시트에서 샘플 검색 버튼을 클릭합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/15.png)
 
@@ -78,11 +78,11 @@
 
    ![테스트가 성공했는지 확인합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/16.png)
 
-1. *초안 게시*을 클릭합니다.
+1. **초안 게시** 을 클릭합니다.
 
    ![초안 게시를 클릭합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/17.png)
 
-1. *흐름 시작* 을 클릭하여 새 흐름을 활성화합니다.
+1. **흐름 시작** 을 클릭하여 새 흐름을 활성화합니다.
 
    ![흐름 시작을 클릭합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/18.png)
 

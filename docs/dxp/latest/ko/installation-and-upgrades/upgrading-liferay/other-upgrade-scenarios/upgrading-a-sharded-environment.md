@@ -31,7 +31,7 @@ Liferay는 논리적 파티셔닝 기능(가상 인스턴스라고도 함)을 �
     jdbc.two.password=[the password]
     ```
 
-1. 각 서버의 `Portal-upgrade-database.properties` 에서 JDBC _기본_ 연결 속성을 설정하여 연결된 샤드를 지정합니다.
+1. 각 서버의 `Portal-upgrade-database.properties` 에서 JDBC **기본** 연결 속성을 설정하여 연결된 샤드를 지정합니다.
 
     * 기본이 아닌 각 샤드 데이터베이스에 대한 원래 JDBC 속성을 추가합니다. 예를 들어 shard `one`의 원래 속성은 `jdbc.one`으로 시작할 수 있습니다.
 
@@ -57,7 +57,7 @@ Liferay는 논리적 파티셔닝 기능(가상 인스턴스라고도 함)을 �
 
 데이터베이스 업그레이드가 완료된 후 애플리케이션 서버에 대해 다음 구성 변경을 수행하십시오.
 
-1. 각 서버의 `portal-ext.properties`에서 `portal-upgrade-database.properties` 에서 지정한 JDBC _기본_ 속성을 사용합니다(위의 _기본_ 속성 참조).
+1. 각 서버의 `portal-ext.properties`에서 `portal-upgrade-database.properties` 에서 지정한 JDBC **기본** 속성을 사용합니다(위의 **기본** 속성 참조).
 
 1. 기본 샤드 서버의 `Portal-ext.properties` 파일에서 기본 샤드가 아닌 JDBC 속성을 제거하고 기본 샤드 데이터베이스 `jdbc.default` 속성만 남깁니다. 예를 들어:
 

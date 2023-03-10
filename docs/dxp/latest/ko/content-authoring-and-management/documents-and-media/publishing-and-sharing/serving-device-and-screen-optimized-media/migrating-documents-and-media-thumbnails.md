@@ -35,7 +35,7 @@ DXP는 Adaptive Media를 사용하여 문서 및 미디어의 이미지에 대�
 
 마이그레이션 프로세스는 [Gogo 콘솔 명령](../../../../liferay-internals/fundamentals/using-the-gogo-shell/gogo-shell-commands.md)의 집합입니다.
 
-1. _전역 메뉴_ &rarr; _제어판_ &rarr; _Gogo Shell_로 이동합니다.
+1. **전역 메뉴** &rarr; **제어판** &rarr; **Gogo Shell** 로 이동합니다.
 
    ![Gogo Shell로 이동합니다.](./migrating-documents-and-media-thumbnails/images/01.png)
 
@@ -47,11 +47,11 @@ DXP는 Adaptive Media를 사용하여 문서 및 미디어의 이미지에 대�
 
 마이그레이션 프로세스를 실행한 후 어느 시점에서 Adaptive Media를 배포 취소하는 경우 문서 및 미디어 썸네일을 재생성해야 합니다.
 
-1. _전역 메뉴로 이동합니다._ &rarr; _제어판_ &rarr; _서버 관리_.
+1. **전역 메뉴로 이동합니다.** &rarr; **제어판** &rarr; **서버 관리** .
 
    ![서버 관리로 이동합니다.](./migrating-documents-and-media-thumbnails/images/03.png)
 
-1. _문서 및 미디어의 미리 보기 및 썸네일 파일 재설정_옆에 있는 _실행_ 을 클릭합니다.
+1. **문서 및 미디어의 미리 보기 및 썸네일 파일 재설정** 옆에 있는 **실행** 을 클릭합니다.
 
    ![Gogo Shell로 이동합니다.](./migrating-documents-and-media-thumbnails/images/02.png)
 

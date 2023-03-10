@@ -13,9 +13,9 @@ REST API를 사용하여 개체 항목을 쿼리할 때 개체의 필드를 항�
 
 그런 다음 다음 단계에 따라 이 자습서의 기본 객체를 [만들기](../../creating-and-managing-objects/creating-objects.md)하십시오.
 
-1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
+1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 클릭 **사물** .
 
-1. *추가* 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
+1. **추가** 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
     | 필드 | 가치 |
     | :--- | :--- |
@@ -23,14 +23,14 @@ REST API를 사용하여 개체 항목을 쿼리할 때 개체의 필드를 항�
     | 복수 레이블 | '에이블스' |
     | 이름 | '가능' |
 
-1. 새 *개체* 초안을 선택하고 *필드* 탭으로 이동한 후 다음 텍스트 필드를 추가합니다.
+1. 새 **개체** 초안을 선택하고 **필드** 탭으로 이동한 후 다음 텍스트 필드를 추가합니다.
 
     | 라벨 | 필드명 | 유형 | 필수 |
     | :--- | :--- | :--- | :--- |
     | 이름 | 이름 | 텍스트 | &#10004; |
     | 설명 | 설명 | 텍스트 | |
 
-1. *세부 정보* 탭으로 이동하고 [*게시*](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 를 클릭합니다.
+1. **세부 정보** 탭으로 이동하고 [**게시**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 를 클릭합니다.
 
     ```{important}
     이 자습서에서는 위의 값을 사용해야 합니다.

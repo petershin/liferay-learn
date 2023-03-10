@@ -38,7 +38,7 @@ REST Builder를 사용하면 빌드하려는 API를 정의할 수 있으며 REST
     STARTED com.acme.headless.r3b2.impl_1.0.0
     ```
 
-1. DXP 인스턴스에 로그인하고 _전역 메뉴_ ( ![Global Menu icon](../../images/icon-applications-menu.png) ) &rarr; _제어판_ &rarr; _Gogo Shell로 이동합니다._
+1. DXP 인스턴스에 로그인하고 **전역 메뉴**( ![Global Menu icon](../../images/icon-applications-menu.png) ) &rarr; **제어판** &rarr; **Gogo Shell로 이동합니다.**
 
 1. Gogo Shell 프롬프트에서 다음 명령을 입력합니다.
 

@@ -12,7 +12,7 @@ Groovy 스크립트 유효성 검사는 Liferay Experience Cloud Self-Managed �
 
 유효성 검사를 추가하려면 다음 단계를 따르세요.
 
-1. *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) )을 열고 *Control Panel* 탭으로 이동하여 *Objects*을 클릭합니다.
+1. **Global Menu**( ![Global Menu](../../../../images/icon-applications-menu.png) )을 열고 **Control Panel** 탭으로 이동하여 **Objects** 을 클릭합니다.
 
 1. 개체 정의 편집을 시작합니다.
 
@@ -20,17 +20,17 @@ Groovy 스크립트 유효성 검사는 Liferay Experience Cloud Self-Managed �
    Liferay 7.4 U38+/GA38+의 경우 시스템 개체에 사용자 지정 유효성 검사를 추가할 수 있습니다.
    ```
 
-1. *Validations* 탭으로 이동하고 *Add* ( ![Add Button](../../../../images/icon-add.png) )를 클릭합니다.
+1. **Validations** 탭으로 이동하고 **Add**( ![Add Button](../../../../images/icon-add.png) )를 클릭합니다.
 
-1. *레이블* 을 입력하고 검증 유형을 선택합니다: *Groovy* 또는 *Expression Builder*.
+1. **레이블** 을 입력하고 검증 유형을 선택합니다: **Groovy** 또는 **Expression Builder** .
 
    ![레이블을 입력하고 유효성 검사 유형을 선택합니다.](./adding-custom-validations/images/02.png)
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 1. 새로 생성된 유효성 검사 편집을 시작합니다.
 
-1. *조건* 탭으로 이동하여 유효성 검사에 조건을 추가합니다.
+1. **조건** 탭으로 이동하여 유효성 검사에 조건을 추가합니다.
 
    ![유효성 검사에 조건을 추가합니다.](./adding-custom-validations/images/03.png)
 
@@ -42,17 +42,17 @@ Groovy 스크립트 유효성 검사는 Liferay Experience Cloud Self-Managed �
    조건에는 복잡한 유효성 검사를 위한 여러 필드와 함수가 포함될 수 있습니다.
    ```
 
-1. 현지화 가능한 *오류 메시지*을 입력하십시오. 유효성 검사가 트리거되고 필드 항목이 하나 이상의 정의된 조건을 충족하지 않을 때마다 이 메시지가 나타납니다.
+1. 현지화 가능한 **오류 메시지** 을 입력하십시오. 유효성 검사가 트리거되고 필드 항목이 하나 이상의 정의된 조건을 충족하지 않을 때마다 이 메시지가 나타납니다.
 
-1. *기본 정보* 탭으로 이동하여 *유효성 검사를 활성화*.
+1. **기본 정보** 탭으로 이동하여 **유효성 검사를 활성화** .
 
-1. *트리거 이벤트* 을 선택하여 유효성 검사가 실행되는 시기를 결정합니다.
+1. **트리거 이벤트** 을 선택하여 유효성 검사가 실행되는 시기를 결정합니다.
 
    각 유효성 검사에는 하나의 트리거 이벤트만 있을 수 있습니다.
 
    ![유효성 검사를 활성화하고 트리거 이벤트를 설정합니다.](./adding-custom-validations/images/04.png)
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 활성화되면 모든 새 개체 항목에 대해 유효성 검사가 실행됩니다.
 
@@ -62,7 +62,7 @@ Groovy 유효성 검사는 모든 표준 [Groovy Script](https://groovy-lang.org
 
 ![측면 패널을 사용하여 Groovy 유효성 검사에 필드 요소를 추가합니다.](./adding-custom-validations/images/05.png)
 
-Liferay 7.4 U33+ 및 GA33+의 경우 Liferay는 [GroovyShell 클래스](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) 을 사용하여 *저장*을 클릭할 때 Groovy 스크립트에서 유효한 구문을 확인합니다. 스크립트가 유효하지 않으면 Liferay에 오류 메시지가 표시됩니다.
+Liferay 7.4 U33+ 및 GA33+의 경우 Liferay는 [GroovyShell 클래스](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) 을 사용하여 **저장** 을 클릭할 때 Groovy 스크립트에서 유효한 구문을 확인합니다. 스크립트가 유효하지 않으면 Liferay에 오류 메시지가 표시됩니다.
 
 ## 식 작성기 유효성 검사 사용
 

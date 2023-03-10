@@ -16,7 +16,7 @@ Liferay Faces Bridge를 완전히 이해하려면 먼저 포틀릿 브리지 표
 2008년 Portlet 2.0( [JSR 286](http://www.jcp.org/en/jsr/detail?id=286) ) 표준이 발표되면서 JCP는 Portlet Bridge 2.0( [JSR 329](http://www.jcp.org/en/jsr/detail?id=329) ) EG를 구성해야 했습니다. JSR
 1. 2010년에는 Portlet 2.0 및 JSF 1.2를 대상으로 릴리스되었습니다.
 
-[JSR 314](http://www.jcp.org/en/jsr/detail?id=314) EG가 2009년에 JSF 2.0을, 2010년에 JSF 2.1을 출시한 후 Portlet Bridge 3.0 표준이 도움이 될 것이 분명해졌습니다. 2015년에 JCP는 Portlet 3.0 및 JSF 2.2용 브리지를 정의하는 [JSR 378](http://www.jcp.org/en/jsr/detail?id=378) )을 구성했습니다. Portlet 2.0 및 JSF 1.2/2.1/2.2를 지원하는 *Liferay Faces Bridge* 의 변형도 있습니다.
+[JSR 314](http://www.jcp.org/en/jsr/detail?id=314) EG가 2009년에 JSF 2.0을, 2010년에 JSF 2.1을 출시한 후 Portlet Bridge 3.0 표준이 도움이 될 것이 분명해졌습니다. 2015년에 JCP는 Portlet 3.0 및 JSF 2.2용 브리지를 정의하는 [JSR 378](http://www.jcp.org/en/jsr/detail?id=378) )을 구성했습니다. Portlet 2.0 및 JSF 1.2/2.1/2.2를 지원하는 **Liferay Faces Bridge** 의 변형도 있습니다.
 
 Liferay Faces Bridge는 Portlet Bridge Standard의 참조 구현(RI)입니다. 또한 포틀릿 애플리케이션 내에서 JSF 2.x의 기능을 활용할 수 있게 해주는 혁신적인 기능도 포함되어 있습니다.
 

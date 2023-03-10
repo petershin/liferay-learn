@@ -257,11 +257,11 @@ Elasticsearch 클러스터의 [모든 마스터 및 데이터 노드](https://ww
     }
     ```
 
-    여기서 `indices`는 복원할 스냅샷 인덱스 이름을 설정합니다. 위 호출의 인덱스는 'rename_pattern' 및 'rename_replacement' 정규식에 따라 'restored_liferay-20101-search-tuning-rankings' 및 'restored_liferay-20101-search-tuning-synonyms'로 복원됩니다.
+    여기서 `indices`는 복원할 스냅샷 인덱스 이름을 설정합니다. 위 호출의 인덱스는 'rename **pattern' 및 'rename** replacement' 정규식에 따라 'restored **liferay-20101-search-tuning-rankings' 및 'restored** liferay-20101-search-tuning-synonyms'로 복원됩니다.
 
 Sidecar/Embedded 모드에서 실행하는 동안 동의어 집합 또는 결과 순위를 추가한 경우 Elasticsearch 7에 대한 원격 모드 연결을 구성하고 전체 재인덱싱을 수행하면 이러한 검색 튜닝이 사라지는 것을 볼 수 있습니다.
 
-기존 _검색 튜닝_ 인덱스 문서를 복원하려면 다음과 같이 Elasticsearch의 [Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex) 을 사용할 수 있습니다.
+기존 **검색 튜닝** 인덱스 문서를 복원하려면 다음과 같이 Elasticsearch의 [Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex) 을 사용할 수 있습니다.
 
 ```json
 POST _reindex/
@@ -287,7 +287,7 @@ POST _reindex/
 | Liferay DXP 7.2 SP3/FP8 이상    | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
 | 라이프레이 DXP 7.3 GA1+ 및 7.4 GA1+ | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
 
-`<companyId>` (예: `20101`)는 데이터베이스의 지정된 `Company` 레코드에 속합니다. UI에서 _인스턴스 ID_ 로 표시되며 [가상 인스턴스](../../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)을 나타냅니다.
+`<companyId>` (예: `20101`)는 데이터베이스의 지정된 `Company` 레코드에 속합니다. UI에서 **인스턴스 ID** 로 표시되며 [가상 인스턴스](../../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)을 나타냅니다.
 
 ## 다음
 

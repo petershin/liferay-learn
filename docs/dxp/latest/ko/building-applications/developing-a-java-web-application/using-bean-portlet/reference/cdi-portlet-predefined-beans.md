@@ -14,7 +14,7 @@ Liferay DXP는 [JSR 362](https://jcp.org/en/jsr/detail?id=362) 에 지정된 대
 
 **Qualifier:** Bean 구현을 정의하고 선택하기 위해 Bean에 적용되는 주석.
 
-**(단계) 동안 유효:** Bean이 유효한  [포틀릿 단계](../../reference/portlets.md).
+(**단계) 동안 유효:** Bean이 유효한  [포틀릿 단계](../../reference/portlets.md).
 
 ## 포틀릿 요청 범위 Bean
 

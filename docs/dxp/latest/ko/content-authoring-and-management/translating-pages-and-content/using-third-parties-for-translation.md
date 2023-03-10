@@ -24,15 +24,15 @@ Google Cloud Translation을 사용하려면 활성 계정과 Cloud Translation A
 
 준비가 되면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴*(![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* 탭을 클릭한 다음 *시스템 설정* &rarr; *번역* &rarr; *Google Cloud를 사용하는 번역기*로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** 탭을 클릭한 다음 **시스템 설정** &rarr; **번역** &rarr; **Google Cloud를 사용하는 번역기** 로 이동합니다.
 
    ![Google Cloud를 사용하는 번역기로 이동합니다.](./using-third-parties-for-translation/images/01.png)
 
-1. *활성화됨*확인하십시오.
+1. **활성화됨** 확인하십시오.
 
 1. 유효한 Google Cloud 서비스 계정 키를 JSON 형식으로 입력하세요.
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 ## Amazon Translate 활성화
 
@@ -42,17 +42,17 @@ Amazon Translate를 활성화하려면 활성 Amazon AWS 계정이 필요합니�
 
 준비가 되면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴*(![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* 탭을 클릭한 다음 *시스템 설정* &rarr; *번역* &rarr; *AWS를 사용하는 번역기*로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** 탭을 클릭한 다음 **시스템 설정** &rarr; **번역** &rarr; **AWS를 사용하는 번역기** 로 이동합니다.
 
    ![AWS를 사용하는 번역기로 이동합니다.](./using-third-parties-for-translation/images/02.png)
 
-1. 확인 *사용*.
+1. 확인 **사용** .
 
-1. 유효한 *액세스 키* 및 *비밀 키*입력하십시오.
+1. 유효한 **액세스 키** 및 **비밀 키** 입력하십시오.
 
 1. 지역을 입력하세요. 기본값은 `us-west-1`입니다.
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 ## 마이크로소프트 번역기 활성화
 
@@ -62,15 +62,15 @@ Microsoft Translator를 활성화하려면 활성 Microsoft Azure 계정이 필�
 
 준비가 되면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴*(![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* 탭을 클릭한 다음 *시스템 설정* &rarr; *번역* &rarr; *Azure를 사용하는 번역기*로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** 탭을 클릭한 다음 **시스템 설정** &rarr; **번역** &rarr; **Azure를 사용하는 번역기** 로 이동합니다.
 
    ![Azure를 사용하는 번역기로 이동합니다.](./using-third-parties-for-translation/images/03.png)
 
-1. 확인 *사용*.
+1. 확인 **사용** .
 
-1. 유효한 *구독 키* 및 *리소스 위치* (지역)을 입력합니다.
+1. 유효한 **구독 키** 및 **리소스 위치**(지역)을 입력합니다.
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 ## 자동 번역 사용
 
@@ -78,27 +78,27 @@ Microsoft Translator를 활성화하려면 활성 Microsoft Azure 계정이 필�
 
 필드를 자동으로 번역하려면 다음 단계를 따르세요.
 
-1. *페이지* 또는 *웹 콘텐츠* 애플리케이션을 엽니다.
+1. **페이지** 또는 **웹 콘텐츠** 애플리케이션을 엽니다.
 
-1. *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 번역하려는 콘텐츠 또는 페이지를 클릭하고 *번역을 선택합니다.*.
+1. **작업** 버튼(![Actions Button](../../images/icon-actions.png))을 번역하려는 콘텐츠 또는 페이지를 클릭하고 **번역을 선택합니다.** .
 
    ![웹 콘텐츠 번역 인터페이스를 엽니다.](./using-third-parties-for-translation/images/04.png)
 
-1. 언어 플래그를 사용하여 번역할 *언어* 를 선택하십시오.
+1. 언어 플래그를 사용하여 번역할 **언어** 를 선택하십시오.
 
    ```{note}
    번역에 사용할 수 있는 언어는 인스턴스의 현지화 설정에 따라 결정됩니다. [초기 인스턴스 현지화](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) 및 [가상 인스턴스 현지화](../../system-administration/ 참조 configure-liferay/virtual-instances/localization.md)를 참조하십시오.
    ```
 
-1. *자동 번역* 버튼을 클릭하여 모든 웹 콘텐츠 필드를 선택한 언어로 번역합니다.
+1. **자동 번역** 버튼을 클릭하여 모든 웹 콘텐츠 필드를 선택한 언어로 번역합니다.
 
    ![왼쪽 상단 자동 번역 버튼을 클릭하여 모든 웹 콘텐츠 필드를 번역합니다.](./using-third-parties-for-translation/images/05.png)
 
-   또는 필드의 개별 *자동 번역* 버튼(![Auto Translate Button](../../images/icon-translate.png))을 클릭하여 해당 텍스트만 번역합니다.
+   또는 필드의 개별 **자동 번역** 버튼(![Auto Translate Button](../../images/icon-translate.png))을 클릭하여 해당 텍스트만 번역합니다.
 
    ![텍스트만 번역하려면 필드의 개별 자동 번역 버튼을 클릭합니다.](./using-third-parties-for-translation/images/06.png)
 
-1. 완료되면 *초안으로 저장* 또는 *게시* 클릭합니다.
+1. 완료되면 **초안으로 저장** 또는 **게시** 클릭합니다.
 
 ## 추가 정보
 

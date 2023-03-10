@@ -53,7 +53,7 @@ Docker Hub는 Linux에서 Tomcat과 함께 번들로 제공되는 [Liferay DXP](
     메모리, CPU 및 기타 Docker 컨테이너 리소스를 구성할 수 있습니다. 위의 `-m 8g` 명령 인수는 컨테이너의 메모리 제한을 8GB로 설정합니다. 자세한 내용은 [Docker 런타임 옵션](https://docs.docker.com/config/containers/resource_constraints/) 을 참조하세요.
     ```
 
-1. 이메일 주소 _test@liferay.com_ 와 암호 _test_ 을 사용하여 `<http://localhost:8080>` 에서 Liferay에 로그인합니다. 메시지가 표시되면 암호를 변경합니다.
+1. 이메일 주소 **test@liferay.com** 와 암호 **test** 을 사용하여 `<http://localhost:8080>` 에서 Liferay에 로그인합니다. 메시지가 표시되면 암호를 변경합니다.
 
     ![Liferay의 방문 페이지는 다음과 같습니다.](./using-liferay-docker-images/images/01.png)
 

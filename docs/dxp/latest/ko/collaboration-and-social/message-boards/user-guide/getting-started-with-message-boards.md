@@ -5,23 +5,23 @@ Liferay DXP의 메시지 보드 앱은 모든 DXP 사이트 페이지에 추가�
 
 ## 사이트에 게시판 추가
 
-_Message Boards_ 앱 사용을 시작하는 가장 빠른 방법은 위젯을 [사이트 페이지](https://help.liferay.com/hc/articles/360029132211-Creating-Pages) 에 배포하는 것입니다.
+**Message Boards** 앱 사용을 시작하는 가장 빠른 방법은 위젯을 [사이트 페이지](https://help.liferay.com/hc/articles/360029132211-Creating-Pages) 에 배포하는 것입니다.
 
-1. 원하는 사이트 및 페이지로 이동합니다(예: _Forum Page_).
+1. 원하는 사이트 및 페이지로 이동합니다(예: **Forum Page**).
    
    ![새 포럼 페이지](./getting-started-with-message-boards/images/03.png)
 
-1. _추가_ 버튼을 클릭합니다.
+1. **추가** 버튼을 클릭합니다.
 
-1. _위젯_ , _협업_ 을 차례로 클릭하여 메뉴를 확장합니다.
+1. **위젯** , **협업** 을 차례로 클릭하여 메뉴를 확장합니다.
    
    ![애플리케이션 추가 메뉴를 사용하여 게시판 위젯을 추가합니다.](./getting-started-with-message-boards/images/06.png)
 
-1. _Message Boards_ 위젯을 페이지의 원하는 사이트로 끌어다 놓습니다.
+1. **Message Boards** 위젯을 페이지의 원하는 사이트로 끌어다 놓습니다.
    
    ![포럼 페이지에 게시판 앱을 배포합니다.](./getting-started-with-message-boards/images/04.png)
 
-사이트 회원은 _Message Boards_ 위젯을 사용하여 포럼 게시물을 작성할 수 있습니다. 페이지당 하나의 _메시지 보드_ 위젯만 있을 수 있습니다.
+사이트 회원은 **Message Boards** 위젯을 사용하여 포럼 게시물을 작성할 수 있습니다. 페이지당 하나의 **메시지 보드** 위젯만 있을 수 있습니다.
 
 
 

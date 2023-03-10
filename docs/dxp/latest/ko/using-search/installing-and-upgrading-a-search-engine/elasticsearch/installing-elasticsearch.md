@@ -23,7 +23,7 @@ localhost 또는 Docker 컨테이너를 사용하여 테스트 환경을 설정�
 
 ### mmap 조정
 
-Elasticsearch는 대부분의 운영 체제에 대한 기본값보다 더 높은 _mmap count_ (인덱스를 보유하고 있는 디렉토리를 메모리에 매핑하기 위해)이 필요합니다. Linux에서 루트 사용자로 다음을 실행하십시오.
+Elasticsearch는 대부분의 운영 체제에 대한 기본값보다 더 높은 **mmap count**(인덱스를 보유하고 있는 디렉토리를 메모리에 매핑하기 위해)이 필요합니다. Linux에서 루트 사용자로 다음을 실행하십시오.
 
 ```bash
 sysctl -w vm.max_map_count=262144
@@ -37,7 +37,7 @@ sysctl -w vm.max_map_count=262144
     [Liferay 버전과 호환](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors) 최신 Elasticsearch 아카이브를 다운로드합니다.
     ```
 
-1. Elasticsearch를 실행하려는 로컬 폴더에 아카이브 콘텐츠의 압축을 풉니다. 이 폴더는 *Elasticsearch Home*입니다.
+1. Elasticsearch를 실행하려는 로컬 폴더에 아카이브 콘텐츠의 압축을 풉니다. 이 폴더는 **Elasticsearch Home** 입니다.
 
 1. `[Elasticsearch Home]/bin` 폴더에서 다음 명령을 실행하여 필요한 Elasticsearch 플러그인을 설치합니다.
 

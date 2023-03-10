@@ -14,8 +14,8 @@ Liferay는 개체 작업에 의해 트리거된 이메일 알림을 검토하기
 | 트리거 방법 | [알림 작업](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions) 트리거를 담당하는 개체입니다. |
 | 에서     | 알림의 [템플릿](./creating-notification-templates.md)에 설정된 알림 발신자.                                                                                       |
 | 에      | 알림의 [템플릿](./creating-notification-templates.md)에 설정된 알림 수신자.                                                                                       |
-| 상태     | 알림이 전송되었는지(*Sent*) 전송 중인지(*Unsent*) 알림의 상태를 나타냅니다.                                                                                                 |
+| 상태     | 알림이 전송되었는지(**Sent**) 전송 중인지(**Unsent**) 알림의 상태를 나타냅니다.                                                                                                 |
 
-*작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하여 *삭제* 알림을 *다시 보내거나* 알림을 보냅니다.
+**작업** 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하여 **삭제** 알림을 **다시 보내거나** 알림을 보냅니다.
 
 ![항목을 삭제하거나 알림을 다시 보내십시오.](./using-the-notification-queue/images/02.png)

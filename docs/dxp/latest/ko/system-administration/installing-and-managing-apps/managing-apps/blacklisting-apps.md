@@ -20,9 +20,9 @@ LPKG를 블랙리스트에 올리면 모든 내부 모듈이 제거됩니다.
 
 앱, 모듈 및 플러그인을 블랙리스트에 추가하려면 다음 단계를 따르세요.
 
-1. 제어판에서 _구성_ &rarr; _시스템 설정_ &rarr; _모듈 컨테이너_로 이동합니다. 번들 블랙리스트 화면이 나타납니다.
+1. 제어판에서 **구성** &rarr; **시스템 설정** &rarr; **모듈 컨테이너** 로 이동합니다. 번들 블랙리스트 화면이 나타납니다.
 
-1. 번들 블랙리스트 화면에서 제거할 앱, LPKG 파일, [모듈](https://help.liferay.com/hc/articles/360035467532-OSGi-and-Modularity#modules) JAR 또는 WAR에 대한 번들 기호 이름을 추가합니다. 각 항목에 대해 추가 버튼(![Add](../../../images/icon-add.png))을 클릭하고 항목의 번들 기호 이름을 입력합니다(아래 표 [참조](#blacklist-bundle-symbolic-names) ). 완료되면 _저장_ 버튼을 클릭합니다. DXP는 블랙리스트에 있는 항목을 즉시 제거합니다.
+1. 번들 블랙리스트 화면에서 제거할 앱, LPKG 파일, [모듈](https://help.liferay.com/hc/articles/360035467532-OSGi-and-Modularity#modules) JAR 또는 WAR에 대한 번들 기호 이름을 추가합니다. 각 항목에 대해 추가 버튼(![Add](../../../images/icon-add.png))을 클릭하고 항목의 번들 기호 이름을 입력합니다(아래 표 [참조](#blacklist-bundle-symbolic-names) ). 완료되면 **저장** 버튼을 클릭합니다. DXP는 블랙리스트에 있는 항목을 즉시 제거합니다.
    
    ![이 블랙리스트는 클래식 테마 플러그인 WAR, Liferay Collaboration - Liferay Blogs - API 모듈 및 com.acme.greeter 모듈을 제거합니다.](./blacklisting-apps/images/02.png)
 
@@ -35,7 +35,7 @@ LPKG를 블랙리스트에 올리면 모든 내부 모듈이 제거됩니다.
 
 다음 단계를 사용하여 구성 파일을 사용하여 블랙리스트에 추가하십시오.
 
-1. 현재 사용 중인 블랙리스트를 내보내려면 작업 버튼(![액션](./blacklisting-apps/images/03.png)) 다음 _내보내기_을 클릭합니다. 그러면 블랙리스트 구성 파일이 다운로드됩니다(`com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config`). 다음은 예제 블랙리스트 내보내기의 파일 내용입니다. 
+1. 현재 사용 중인 블랙리스트를 내보내려면 작업 버튼(![액션](./blacklisting-apps/images/03.png)) 다음 **내보내기** 을 클릭합니다. 그러면 블랙리스트 구성 파일이 다운로드됩니다(`com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config`). 다음은 예제 블랙리스트 내보내기의 파일 내용입니다. 
 
     ```properties
     blacklistBundleSymbolicNames=[ \
@@ -70,7 +70,7 @@ LPKG를 블랙리스트에 올리면 모든 내부 모듈이 제거됩니다.
 
 1. `blacklistBundleSymbolicNames` 목록에서 LPKG, 모듈 JAR 또는 WAR의 기호 이름을 제거하고 파일을 저장하십시오.
 
-_모두_ 을 다시 설치하려면 블랙리스트에 있는 항목이 다음 옵션 중 하나를 실행합니다.
+**모두** 을 다시 설치하려면 블랙리스트에 있는 항목이 다음 옵션 중 하나를 실행합니다.
 
 * 구성 파일을 제거하십시오.
 * [Application Manager](./using-the-app-manager.md) 또는 [Felix Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)를 사용하여 모듈 `com.liferay.portal.bundle.blacklist` 을 제거합니다.

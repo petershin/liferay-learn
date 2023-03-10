@@ -8,11 +8,11 @@
 
 개체 데이터를 Google 시트에 동기화하려면 다음 단계를 따르세요.
 
-1. [Automate.io](https://automate.io/) 에 로그인하고 *Create a Bot*을 클릭합니다.
+1. [Automate.io](https://automate.io/) 에 로그인하고 **Create a Bot** 을 클릭합니다.
 
    ![Automate.io를 열고 봇 만들기를 클릭합니다.](./using-automate-io-to-sync-object-data-with-google-sheets/images/01.png)
 
-1. *Trigger* 단계에서 *Webhooks* 앱을 선택합니다.
+1. **Trigger** 단계에서 **Webhooks** 앱을 선택합니다.
 
    ![웹후크를 선택합니다.](./using-automate-io-to-sync-object-data-with-google-sheets/images/02.png)
 
@@ -20,11 +20,11 @@
    웹후크는 프리미엄 Automate.io 기능입니다.
    ```
 
-1. *Trigger Event*에 대해 *Incoming Hook*을 선택합니다.
+1. **Trigger Event** 에 대해 **Incoming Hook** 을 선택합니다.
 
    ![수신 후크를 선택합니다.](./using-automate-io-to-sync-object-data-with-google-sheets/images/03.png)
 
-1. 생성된 *webhook URL*을 복사합니다.
+1. 생성된 **webhook URL** 을 복사합니다.
 
    ![Webhook URL을 복사합니다.](./using-automate-io-to-sync-object-data-with-google-sheets/images/04.png)
 
@@ -36,23 +36,23 @@
 
    이렇게 하면 Automate.io 봇의 Webhooks 앱이 개체의 데이터 구조를 자동으로 결정할 수 있습니다.
 
-1. *작업* 단계의 경우 *Google 스프레드시트* 앱을 선택합니다.
+1. **작업** 단계의 경우 **Google 스프레드시트** 앱을 선택합니다.
 
    ![Google 스프레드시트를 선택합니다.](./using-automate-io-to-sync-object-data-with-google-sheets/images/06.png)
 
-1. *승인* 을 클릭하여 앱을 Google 계정과 연결합니다.
+1. **승인** 을 클릭하여 앱을 Google 계정과 연결합니다.
 
    ![연결할 Google 계정을 선택하세요.](./using-automate-io-to-sync-object-data-with-google-sheets/images/07.png)
 
-1. 조치 필드에 대해 *행 추가*을 선택하십시오.
+1. 조치 필드에 대해 **행 추가** 을 선택하십시오.
 
    ![행 추가를 선택합니다.](./using-automate-io-to-sync-object-data-with-google-sheets/images/08.png)
 
-1. 개체와 동기화할 원하는 *스프레드시트* 및 *워크시트* 을 선택하고 *저장*을 클릭합니다.
+1. 개체와 동기화할 원하는 **스프레드시트** 및 **워크시트** 을 선택하고 **저장** 을 클릭합니다.
 
    ![원하는 스프레드시트와 워크시트를 선택합니다.](./using-automate-io-to-sync-object-data-with-google-sheets/images/09.png)
 
-1. *귀하의 봇을* 켜십시오.
+1. **귀하의 봇을** 켜십시오.
 
    ![봇을 켭니다.](./using-automate-io-to-sync-object-data-with-google-sheets/images/10.png)
 

@@ -29,7 +29,7 @@ Liferay 지원 팀은 귀하와 협력하여 문제가 제품에 있는지 확�
 1. [Liferay Home](../reference/liferay-home.md) 에서 `patching-tool.sh` 패치 도구 스크립트를 찾거나 DXP 설치에 패치 도구가 없는 경우 패치 도구를 설치하십시오.
 
     * **DXP Tomcat 번들:** `[Liferay Home]/patching-tool/`
-    * **DXP 앱 서버 설치:** [서버 호스트에 Patching Tool](./reference/installing-the-patching-tool.md) 을 설치합니다.
+    * **DXP 앱 서버 설치:**[서버 호스트에 Patching Tool](./reference/installing-the-patching-tool.md) 을 설치합니다.
 
 1. DXP 설치를 위한 패치 도구를 구성합니다.
 
@@ -39,7 +39,7 @@ Liferay 지원 팀은 귀하와 협력하여 문제가 제품에 있는지 확�
     ./patching-tool.sh auto-discovery
     ```
 
-    **DXP 앱 서버 설치:** [Patching Tool의 `war.path` 속성(예: in `default.properties`)을 압축 해제된 DXP `.war` 사이트로 설정하는 것을 포함하여 1](./reference/configuring-the-patching-tool.md)수동으로 Patching Tool을 구성합니다.
+    **DXP 앱 서버 설치:**[Patching Tool의 `war.path` 속성(예: in `default.properties`)을 압축 해제된 DXP `.war` 사이트로 설정하는 것을 포함하여 1](./reference/configuring-the-patching-tool.md)수동으로 Patching Tool을 구성합니다.
 
 ## 핫픽스 설치
 

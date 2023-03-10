@@ -38,15 +38,15 @@ Liferay는 [ClamAV Daemon](https://www.clamav.net/documents/scanning#clamd) (Cla
 
 1. Liferay 서버를 시작하십시오.
 
-1. *제어판* &rarr; *시스템 설정* 로 이동하여 보안 카테고리에서 *안티바이러스* 을 선택합니다.
+1. **제어판** &rarr; **시스템 설정** 로 이동하여 보안 카테고리에서 **안티바이러스** 을 선택합니다.
 
-1. 메뉴에서 *Antivirus Clamd Scanner* 을 선택합니다.
+1. 메뉴에서 **Antivirus Clamd Scanner** 을 선택합니다.
 
     ![바이러스 백신 Clamd 스캐너 구성](./enabling-antivirus-scanning-for-uploaded-files/images/02.png)
 
 1. Clamd 서버의 호스트 이름 또는 IP 주소, 포트 및 연결 제한 시간(밀리초)을 입력합니다.
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 이제 파일을 Liferay 애플리케이션에 업로드할 때 스캔합니다. 업로드 중인 파일에서 바이러스가 감지되면 스캐너는 감염된 파일을 보고하므로 파일 저장을 거부해야 합니다.
 

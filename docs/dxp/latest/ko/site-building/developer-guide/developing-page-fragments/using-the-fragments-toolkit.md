@@ -145,7 +145,7 @@ Fragments 프로젝트 생성을 축하합니다!
     Done in 21.43s.
     ```
 
-1. 조각 세트를 사용할 수 있는지 확인합니다. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png))을 열고 *디자인* &rarr; *조각*로 이동합니다. 세트가 목록에 나타나야 합니다.
+1. 조각 세트를 사용할 수 있는지 확인합니다. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png))을 열고 **디자인** &rarr; **조각** 로 이동합니다. 세트가 목록에 나타나야 합니다.
 
     ![세트를 사용할 수 있습니다.](./using-the-fragments-toolkit/images/01.png)
 
@@ -382,7 +382,7 @@ Fragment 및 구성 개체는 JavaScript에서 인수로 전달되며 각각 `fr
     yarn run import
     ```
 
-1. 조각 세트를 사용할 수 있는지 확인합니다. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png))을 열고 *디자인* &rarr; *조각*로 이동합니다. 세트가 목록에 나타나야 합니다.
+1. 조각 세트를 사용할 수 있는지 확인합니다. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png))을 열고 **디자인** &rarr; **조각** 로 이동합니다. 세트가 목록에 나타나야 합니다.
 
 ![세트를 사용할 수 있습니다.](./using-the-fragments-toolkit/images/03.png)
 

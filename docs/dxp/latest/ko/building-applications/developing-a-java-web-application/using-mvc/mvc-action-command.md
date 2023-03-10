@@ -43,19 +43,19 @@ MVC 작업 명령을 사용하는 예제 포틀릿을 배포한 다음 검사합
     STARTED com.acme.l6y9.web_1.0.0
     ```
 
-1. *Samples* 카테고리의 *L6Y9 Portlet* 위젯을 위젯 페이지에 추가하십시오. L6Y9 포틀릿이 나타납니다.
+1. **Samples** 카테고리의 **L6Y9 Portlet** 위젯을 위젯 페이지에 추가하십시오. L6Y9 포틀릿이 나타납니다.
 
    ![페이지에 L6Y9 포틀릿을 추가했습니다.](./mvc-action-command/images/01.png)
 
    링크는 서로 다른 `MVCActionCommand` 클래스의 메서드를 호출합니다. 학습 목적으로 메서드는 자신을 식별하는 메시지를 기록합니다.
 
-1. *Do L6Y9 Able*을 클릭합니다. `DoL6Y9AbleMVCActionCommand` 은 `doProcessAction` 메서드를 호출하는 로그를 기록합니다.
+1. **Do L6Y9 Able** 을 클릭합니다. `DoL6Y9AbleMVCActionCommand` 은 `doProcessAction` 메서드를 호출하는 로그를 기록합니다.
 
     ```bash
     [DoL6Y9AbleMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
     ```
 
-1. *Do L6Y9 Baker*을 클릭합니다. `DoL6Y9BakerMVCActionCommand` 은 `doProcessAction` 메서드를 호출하는 로그를 기록합니다.
+1. **Do L6Y9 Baker** 을 클릭합니다. `DoL6Y9BakerMVCActionCommand` 은 `doProcessAction` 메서드를 호출하는 로그를 기록합니다.
 
     ```bash
     [DoL6Y9BakerMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
@@ -106,7 +106,7 @@ MVC 작업 명령이 실제로 작동하는 것을 보았습니다. 이제 그�
 |:--------------------------------------------------- |:-------------------------------------- |
 | `<portlet:actionURL name="/do_l6y9_baker" />` | `mvc.command.name=/l6y9/do_l6y9_baker` |
 
-예를 들어 *Do L6Y9 Able* 링크를 클릭하면 `DoL6Y9AbleMVCActionCommand`의 `doProcessAction` 메서드가 호출됩니다.
+예를 들어 **Do L6Y9 Able** 링크를 클릭하면 `DoL6Y9AbleMVCActionCommand`의 `doProcessAction` 메서드가 호출됩니다.
 
 ## MVCActionCommand 클래스 검사
 

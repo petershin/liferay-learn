@@ -45,7 +45,7 @@ W3E7 예제 애플리케이션은 이 접근 방식을 보여줍니다.
     STARTED com.acme.w3e7.web_1.0.0
     ```
 
-1. *Samples* 카테고리의 *W3E7 Portlet* 위젯을 위젯 페이지에 추가하여 애플리케이션의 가용성을 확인하십시오.
+1. **Samples** 카테고리의 **W3E7 Portlet** 위젯을 위젯 페이지에 추가하여 애플리케이션의 가용성을 확인하십시오.
 
 ![다음은 포틀릿 웹 애플리케이션의 예입니다.](./using-a-jsp-and-mvc-portlet/images/02.png)
 

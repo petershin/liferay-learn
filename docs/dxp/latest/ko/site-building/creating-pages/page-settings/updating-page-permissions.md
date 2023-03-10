@@ -8,9 +8,9 @@
 
 페이지 권한을 업데이트하려면 다음 단계를 따르세요.
 
-1. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png))을 열고 *사이트 빌더*를 확장한 다음 *페이지*을 클릭합니다.
+1. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png))을 열고 **사이트 빌더** 를 확장한 다음 **페이지** 을 클릭합니다.
 
-1. 원하는 페이지에 대해 *작업* 버튼(![Actions Button](../../../images/icon-options.png))을 클릭하고 *권한*을 선택합니다.
+1. 원하는 페이지에 대해 **작업** 버튼(![Actions Button](../../../images/icon-options.png))을 클릭하고 **권한** 을 선택합니다.
 
     ![페이지 권한은 제어판의 사이트 빌더 메뉴에 있습니다.](./updating-page-permissions/images/01.png)
 
@@ -18,7 +18,7 @@
 
     ![권한은 각 역할에 대해 다양한 옵션을 제공합니다.](./updating-page-permissions/images/02.png)
 
-1. *저장* 을 클릭하여 변경 사항을 적용합니다.
+1. **저장** 을 클릭하여 변경 사항을 적용합니다.
 
 ## 추가 정보
 

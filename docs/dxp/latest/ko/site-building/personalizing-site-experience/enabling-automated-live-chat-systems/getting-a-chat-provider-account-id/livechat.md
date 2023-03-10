@@ -6,11 +6,11 @@
 
 1. 귀하의 [LiveChat 계정](https://my.livechatinc.com/) 에 로그인하십시오.
 
-1. 왼쪽 하단 모서리에 있는 *설정 톱니바퀴* 을 클릭합니다.
+1. 왼쪽 하단 모서리에 있는 **설정 톱니바퀴** 을 클릭합니다.
 
     ![LiveChat 대시보드 페이지를 볼 수 있습니다.](./livechat/images/01.png)
 
-1. *채널* &rarr; *채팅 페이지*를 클릭합니다.
+1. **채널** &rarr; **채팅 페이지** 를 클릭합니다.
 
     ![LiveChat의 채팅 페이지를 볼 수 있습니다.](./livechat/images/02.png)
 

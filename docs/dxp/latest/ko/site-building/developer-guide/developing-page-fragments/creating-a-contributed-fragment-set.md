@@ -58,7 +58,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
     INFO  [fileinstall-directory-watcher][BundleStartStopLogger:46] STARTED com.acme.l3m9.impl_1.0.0 [1824]
     ```
 
-1. 제공된 조각 세트를 사용할 수 있는지 확인합니다. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png))을 열고 *디자인* &rarr; *조각*로 이동합니다. 세트가 기본 세트 목록에 나타나야 합니다.
+1. 제공된 조각 세트를 사용할 수 있는지 확인합니다. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png))을 열고 **디자인** &rarr; **조각** 로 이동합니다. 세트가 기본 세트 목록에 나타나야 합니다.
    
    ![제공된 조각 세트가 기본 세트 목록에 나타나는지 확인합니다.](./creating-a-contributed-fragment-set/images/01.png)
 
@@ -141,7 +141,7 @@ private ServletContext _servletContext;
     Windows에서 배포에 실패하면 [컨테이너에 Liferay 탑재](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md), `.\gradlew jar`로 모듈 JAR을 빌드하고 JAR을 적절한 bind-mounted 폴더에 복사합니다.
     ```
 
-1. 업데이트된 Fragment가 제공된 세트에 포함되어 있는지 확인하십시오. 브라우저에서 `https://localhost:8080`을 가리키고 화면 왼쪽의 사이트 메뉴 아래에서 *Design* &rarr; *Fragments*으로 이동합니다. L3M9 Jumbotron Fragment가 L3M9 세트에 나타납니다.
+1. 업데이트된 Fragment가 제공된 세트에 포함되어 있는지 확인하십시오. 브라우저에서 `https://localhost:8080`을 가리키고 화면 왼쪽의 사이트 메뉴 아래에서 **Design** &rarr; **Fragments** 으로 이동합니다. L3M9 Jumbotron Fragment가 L3M9 세트에 나타납니다.
    
    ![커스텀 Jumbotron Fragment는 기부된 세트에 포함되어 있습니다.](./creating-a-contributed-fragment-set/images/02.png)
 

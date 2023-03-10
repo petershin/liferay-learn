@@ -26,17 +26,17 @@ OS에 따라 이러한 서비스가 이미 설치되어 있을 수 있습니다.
 
 ImageMagick과 Ghostscript가 모두 서버에 설치되면 다음 단계에 따라 Liferay 인스턴스에 대해 이러한 서비스를 활성화하십시오.
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *구성* &rarr; *서버 관리*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **구성** &rarr; **서버 관리** 으로 이동합니다.
 
-1. *외부 서비스* 탭을 클릭합니다.
+1. **외부 서비스** 탭을 클릭합니다.
 
-1. ImageMagick 및 Ghostscript에 대해 *Enabled* 을 확인하십시오.
+1. ImageMagick 및 Ghostscript에 대해 **Enabled** 을 확인하십시오.
 
 1. ImageMagick 및 Ghostscript 실행 파일의 경로가 올바른지 확인하십시오.
 
 1. 리소스 제한을 구성합니다.
 
-1. 완료되면 *저장* 을 클릭합니다.
+1. 완료되면 **저장** 을 클릭합니다.
 
 ## Xuggler 활성화
 
@@ -48,17 +48,17 @@ Xuggler는 Linux에서 glibc 버전 2.6 이상이 필요합니다.
 
 Liferay 인스턴스용 Xuggler를 설치하고 활성화하려면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *구성* &rarr; *서버 관리*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **구성** &rarr; **서버 관리** 으로 이동합니다.
 
-1. *외부 서비스* 탭을 클릭합니다.
+1. **외부 서비스** 탭을 클릭합니다.
 
-1. Xuggler에 대해 *Enabled* 을 확인하십시오.
+1. Xuggler에 대해 **Enabled** 을 확인하십시오.
 
-   Xuggler가 아직 설치되지 않은 경우 설치하라는 메시지가 표시됩니다. OS에 맞는 올바른 JAR을 선택하고 *설치*을 클릭합니다. 그런 다음 서버를 다시 시작하여 변경 사항을 적용하십시오. 설치가 완료되면 *외부 서비스* 탭으로 돌아가서 Xuggler를 활성화할 수 있습니다.
+   Xuggler가 아직 설치되지 않은 경우 설치하라는 메시지가 표시됩니다. OS에 맞는 올바른 JAR을 선택하고 **설치** 을 클릭합니다. 그런 다음 서버를 다시 시작하여 변경 사항을 적용하십시오. 설치가 완료되면 **외부 서비스** 탭으로 돌아가서 Xuggler를 활성화할 수 있습니다.
 
    ![Xuggler가 설치되어 있지 않으면 설치하라는 메시지가 표시됩니다.](./configuring-external-services/images/02.png)
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 ## `portal-ext.properties` 파일을 사용하여 외부 서비스 활성화
 

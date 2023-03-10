@@ -110,7 +110,7 @@ Then, follow these steps:
     STARTED com.acme.e6u7.impl_1.0.0 [1650]
     ```
 
-1. *콘텐츠 & 데이터* &rarr; *블로그*로 이동합니다. 추가 아이콘(![Add](../../images/icon-add.png)) 위로 커서를 이동합니다. 이제 메시지에 사용자 정의 언어 번역이 표시됩니다.
+1. **콘텐츠 & 데이터** &rarr; **블로그** 로 이동합니다. 추가 아이콘(![Add](../../images/icon-add.png)) 위로 커서를 이동합니다. 이제 메시지에 사용자 정의 언어 번역이 표시됩니다.
 
     ![현재 사용자 정의 언어 번역이 사용되고 있습니다.](./overriding-module-language-translations/images/01.png)
 

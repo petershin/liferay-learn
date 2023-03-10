@@ -46,7 +46,7 @@ liferay-npm-bundler 2.x를 사용하도록 Angular 프로젝트를 마이그레�
     }
     ```
 
-1. `package.json`에서 다음 Babel 종속성을 제거합니다. *devDependencies*:
+1. `package.json`에서 다음 Babel 종속성을 제거합니다. **devDependencies** :
 
     ```json
     "babel-cli": "6.26.0",

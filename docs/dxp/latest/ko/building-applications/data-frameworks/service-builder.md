@@ -46,13 +46,13 @@ DXP/Portal에서 백엔드 서비스를 위해 Service Builder를 사용할 필�
 
 ## 구현 클래스를 통한 사용자 지정
 
-Service Builder에서 생성된 엔터티에는 다음과 같은 *구현* 클래스가 포함됩니다.
+Service Builder에서 생성된 엔터티에는 다음과 같은 **구현** 클래스가 포함됩니다.
 
-* **엔터티 구현** (`*Impl.java`): 엔터티 커스터마이징을 담당합니다.
+* **엔터티 구현**(`*Impl.java`): 엔터티 커스터마이징을 담당합니다.
 
-* **로컬 서비스 구현** (`*LocalServiceImpl.java`): 지속성 계층을 호출하여 데이터 엔터티를 검색하고 저장합니다. 로컬 서비스에는 비즈니스 논리가 포함되어 있으며 지속성 계층에 액세스합니다. 동일한 JVM(Java Virtual Machine)에서 실행되는 클라이언트 코드에 의해 호출될 수 있습니다.
+* **로컬 서비스 구현**(`*LocalServiceImpl.java`): 지속성 계층을 호출하여 데이터 엔터티를 검색하고 저장합니다. 로컬 서비스에는 비즈니스 논리가 포함되어 있으며 지속성 계층에 액세스합니다. 동일한 JVM(Java Virtual Machine)에서 실행되는 클라이언트 코드에 의해 호출될 수 있습니다.
 
-* **원격 서비스 구현** (`*ServiceImpl.java`): `service.xml` 가 원격 서비스용으로 구성된 경우 생성됩니다. 원격 서비스에는 일반적으로 권한 확인 코드가 포함되어 있으며 JVM 외부에서 액세스할 수 있습니다. Service Builder는 JSON 또는 SOAP를 통해 원격 서비스를 사용할 수 있도록 하는 코드를 자동으로 생성하며 [REST Builder](../../headless-delivery/apis-with-rest-builder.md)  또는 [JAX-RS](https://help.liferay.com/hc/ko/articles/360031902292-JAX-RS) 을 통해 고유한 원격 API를 생성할 수도 있습니다.
+* **원격 서비스 구현**(`*ServiceImpl.java`): `service.xml` 가 원격 서비스용으로 구성된 경우 생성됩니다. 원격 서비스에는 일반적으로 권한 확인 코드가 포함되어 있으며 JVM 외부에서 액세스할 수 있습니다. Service Builder는 JSON 또는 SOAP를 통해 원격 서비스를 사용할 수 있도록 하는 코드를 자동으로 생성하며 [REST Builder](../../headless-delivery/apis-with-rest-builder.md)  또는 [JAX-RS](https://help.liferay.com/hc/ko/articles/360031902292-JAX-RS) 을 통해 고유한 원격 API를 생성할 수도 있습니다.
 
 이러한 클래스는 사용자 정의 비즈니스 로직을 구현하는 곳입니다. 사용자 지정을 위해 Service Builder에서 생성되는 유일한 클래스입니다.
 
@@ -62,7 +62,7 @@ Service Builder는 개체 관계형 매핑을 위해 Hibernate 지속성 프레�
 
 ## 캐싱
 
-Service Builder는 *entity*, *finder*및 *Hibernate*의 세 가지 수준에서 개체를 캐시합니다. 기본적으로 Liferay는 이러한 각 캐시 수준에 대한 기본 캐시 공급자로 Ehcache를 사용합니다. 그러나 이것은 [포털 속성](../../installation-and-upgrades/reference/portal-properties.md)을 통해 구성할 수 있습니다. 프로젝트에서 엔터티 및 파인더 캐싱을 활성화하려면 `service.xml` 파일에서 엔터티의 `<entity>` 요소의 `cache-enabled=true` 속성을 설정하기만 하면 됩니다. [Liferay 클러스터링](../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md) 은 클러스터의 Liferay 캐싱을 설명합니다.
+Service Builder는 **entity** , **finder** 및 **Hibernate** 의 세 가지 수준에서 개체를 캐시합니다. 기본적으로 Liferay는 이러한 각 캐시 수준에 대한 기본 캐시 공급자로 Ehcache를 사용합니다. 그러나 이것은 [포털 속성](../../installation-and-upgrades/reference/portal-properties.md)을 통해 구성할 수 있습니다. 프로젝트에서 엔터티 및 파인더 캐싱을 활성화하려면 `service.xml` 파일에서 엔터티의 `<entity>` 요소의 `cache-enabled=true` 속성을 설정하기만 하면 됩니다. [Liferay 클러스터링](../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md) 은 클러스터의 Liferay 캐싱을 설명합니다.
 
 ## 동적 쿼리 및 사용자 지정 SQL 쿼리
 

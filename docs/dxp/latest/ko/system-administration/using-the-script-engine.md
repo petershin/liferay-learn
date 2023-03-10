@@ -23,7 +23,7 @@ DXP는 Liferay DXP 인스턴스를 유지하기 위해 [Groovy](http://groovy-la
 스크립트 콘솔은 제어판에서 사용할 수 있습니다. 스크립트 엔진을 사용하려면 다음 단계를 따르십시오.
 
 1. 관리 사용자로 로그인
-1. [제품 메뉴](../../getting-started/navigating-dxp.md) 을 열고 제어판으로 이동하여 *구성* &rarr; *서버 관리* &rarr; *스크립트*를 선택합니다.
+1. [제품 메뉴](../../getting-started/navigating-dxp.md) 을 열고 제어판으로 이동하여 **구성** &rarr; **서버 관리** &rarr; **스크립트** 를 선택합니다.
 
     ![스크립트 콘솔은 시스템 관리 메뉴에 있는 탭입니다.](./using-the-script-engine/images/02.png)
 

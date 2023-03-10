@@ -6,7 +6,7 @@ uuid: a4cb2ac1-d3b7-4956-b2ea-c4cc0d30eb1a
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U47+/GA47+`
 
-객체 애플리케이션은 Liferay의 감사 프레임워크와 통합되어 있으므로 객체 정의 및 항목에 대한 이벤트를 추적할 수 있습니다. 감사 애플리케이션에 액세스하려면 *전역 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판* 탭으로 이동한 다음 *감사*클릭하십시오.
+객체 애플리케이션은 Liferay의 감사 프레임워크와 통합되어 있으므로 객체 정의 및 항목에 대한 이벤트를 추적할 수 있습니다. 감사 애플리케이션에 액세스하려면 **전역 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** 탭으로 이동한 다음 **감사** 클릭하십시오.
 
 ![개체 정의와 관련된 이벤트를 보려면 제어판에서 감사를 클릭합니다.](./auditing-object-definition-events/images/01.png)
 
@@ -34,11 +34,11 @@ uuid: a4cb2ac1-d3b7-4956-b2ea-c4cc0d30eb1a
 
 다음과 같이하세요:
 
-1. *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *Control Panel* 탭으로 이동하여 *Objects*클릭합니다.
+1. **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **Control Panel** 탭으로 이동하여 **Objects** 클릭합니다.
 
 1. 개체 정의 초안을 편집합니다.
 
-1. 세부 정보 탭에서 항목 기록을 활성화하고 *저장*클릭합니다.
+1. 세부 정보 탭에서 항목 기록을 활성화하고 **저장** 클릭합니다.
 
    ![항목 기록을 활성화합니다.](./auditing-object-definition-events/images/03.png)
 

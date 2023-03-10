@@ -130,8 +130,8 @@ sslKeystorePath="/PATH/TO/elastic-nodes.p12"
 
 다음 값을 설정합니다.
 
-* _로컬 클러스터에서 읽기_ 확인란이 선택되었습니다.
-* _로컬 클러스터 구성_ 속성의 값은 _localhost:9080,ccr_입니다.
+* **로컬 클러스터에서 읽기** 확인란이 선택되었습니다.
+* **로컬 클러스터 구성** 속성의 값은 **localhost:9080,ccr** 입니다.
 
 ![시스템 설정에서 CCR을 구성합니다.](./ccr-basic-use-case-config-reference/images/01.png)
 

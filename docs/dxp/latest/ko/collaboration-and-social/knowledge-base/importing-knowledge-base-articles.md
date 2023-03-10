@@ -2,7 +2,7 @@
 
 Knowledge Base 앱은 문서를 대량으로 가져올 수 있습니다. 이를 통해 기사가 게시되기 전에 미리 준비되는 프로세스를 가질 수 있습니다. 문서는 [Markdown](http://commonmark.org/) 파일로 지식 베이스에 가져옵니다. Markdown은 읽기 쉬운 텍스트 전용 파일 형식이지만 기사 형식을 지정하는 데 필요한 모든 작업을 지원합니다.
 
-참고: 기사를 가져오려면 역할에 *기술 자료* &rarr; *리소스 권한: 기사 가져오기* 권한이 부여되어야 합니다.
+참고: 기사를 가져오려면 역할에 **기술 자료** &rarr; **리소스 권한: 기사 가져오기** 권한이 부여되어야 합니다.
 
 Knowledge Base는 [Multi-Markdown](http://fletcher.github.io/MultiMarkdown-4/) 로 알려진 Markdown 방언을 지원합니다. 이 방언은 표 서식, 이미지 캡션 및 각주와 같은 기능으로 원래 Markdown을 확장합니다.
 

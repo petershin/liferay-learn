@@ -32,8 +32,8 @@ ${variableName}
 
 1. 다음 구성으로 로그 수준을 추가합니다.
 
-   - *로거 이름*: `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
-   - *로그 레벨*: `디버그`
+   - **로거 이름** : `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
+   - **로그 레벨** : `디버그`
 
 1. [자산(예: 블로그 항목)에서 워크플로 정의](./../using-workflows/activating-workflow.md) (예: 단일 승인자 정의)을 활성화합니다.
 
@@ -62,7 +62,7 @@ ${variableName}
 
 1. **값** 변수는 단일 값을 제공합니다. 변수가 단일 값을 제공하는 경우 이를 사용하여 알림에 해당 값을 표시하거나 알림 메시지에 표시할 기타 유용한 정보를 검색하는 작업에 매개변수로 전달할 수 있습니다.
 
-   _예:_ 단일 승인자 정의는 FreeMarker 템플릿에서 다음 알림을 제공합니다.
+**예:** 단일 승인자 정의는 FreeMarker 템플릿에서 다음 알림을 제공합니다.
 
    ```markup
    ${userName} sent you a ${entryType} for review in the workflow.
@@ -70,7 +70,7 @@ ${variableName}
 
    `userName` 및 `entryType` 은 값을 제공하므로 알림은 다음과 같이 렌더링될 수 있습니다.
 
-   _Joe Bloggs는 워크플로에서 검토할 블로그 항목을 보냈습니다._
+**Joe Bloggs는 워크플로에서 검토할 블로그 항목을 보냈습니다.**
 
 
    값 유형 변수의 내용도 확인할 수 있습니다. 단일 승인자 정의에는 다음 알림 템플릿도 포함됩니다.
@@ -81,11 +81,11 @@ ${variableName}
 
    검토자가 작업 설명을 제공한 경우 표시됩니다. 그렇지 않으면 알림 수신자는
 
-   _제출하신 내용을 검토했습니다._
+**제출하신 내용을 검토했습니다.**
 
 1. **작업** 변수는 Liferay DXP Java 클래스를 노출하므로 알림 템플릿에서 해당 작업에 액세스할 수 있습니다. 이러한 변수에 대해서는 클래스의 [Javadoc](https://learn.liferay.com/reference/latest/en/dxp/javadocs/) 에 익숙해지거나 [소스 코드](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]) 살펴보고 해당 작업을 이해해야 합니다.
 
-   _예:_ 이 FreeMarker는 기본 로케일을 사용하여 특정 패턴(_월/일/년, 시:분_)으로 현재 날짜를 가져옵니다.
+**예:** 이 FreeMarker는 기본 로케일을 사용하여 특정 패턴(**월/일/년, 시:분**)으로 현재 날짜를 가져옵니다.
 
    ```markup
    ${dateUtil.getCurrentDate("MM/dd/yyyy, HH:mm",  localeUtil.getDefault())}`

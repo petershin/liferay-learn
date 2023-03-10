@@ -6,7 +6,7 @@
 
 1. 귀하의 [LivePerson 계정](https://authentication.liveperson.net/login.html) 에 로그인하십시오.
 
-1. 왼쪽 하단 모서리에 있는 *사용자 아이콘* 을 클릭합니다.
+1. 왼쪽 하단 모서리에 있는 **사용자 아이콘** 을 클릭합니다.
 
     ![홈 대시보드와 해당 정보를 볼 수 있습니다.](./liveperson/images/01.png)
 

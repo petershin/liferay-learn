@@ -4,6 +4,6 @@
 
 ![고급 섹션의 사이트 관리 구성에서 분석 엔진을 구성합니다.](./analytics/images/01.png)
 
-Analytics 구성 설정에 액세스하려면 제어판을 열고 *Configuration* &rarr; *Instance Settings*로 이동한 다음 *PLATFORM* 섹션에서 *Analytics* 범주를 선택합니다.
+Analytics 구성 설정에 액세스하려면 제어판을 열고 **Configuration** &rarr; **Instance Settings** 로 이동한 다음 **PLATFORM** 섹션에서 **Analytics** 범주를 선택합니다.
 
 ![인스턴스 설정에서 Analytics 엔진을 추가하거나 제거합니다.](./analytics/images/02.png)

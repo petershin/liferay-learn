@@ -47,15 +47,15 @@
 
 세 가지 방법으로 콘텐츠 페이지에서 조각 가시성을 변경할 수 있습니다.
 
-1. 콘텐츠 페이지 편집기 사이드바의 *브라우저* (![Browser](../../../../images/icon-browser.png)) &rarr; *페이지 요소* 영역 아래에서 페이지 조각 옆에 있는 *숨기기* (![Hide](../../../../images/icon-hide.png)) 또는 *숨기기 해제* (![Unhide](../../../../images/icon-preview.png)) 컨트롤을 클릭합니다.
+1. 콘텐츠 페이지 편집기 사이드바의 **브라우저**(![Browser](../../../../images/icon-browser.png)) &rarr; **페이지 요소** 영역 아래에서 페이지 조각 옆에 있는 **숨기기**(![Hide](../../../../images/icon-hide.png)) 또는 **숨기기 해제**(![Unhide](../../../../images/icon-preview.png)) 컨트롤을 클릭합니다.
 
    ![콘텐츠 페이지 편집기 사이드바의 페이지 요소 영역에서 조각의 가시성을 변경합니다.](./configuring-fragment-visibility/images/03.gif)
 
-1. 콘텐츠 페이지 편집기 사이드바의 *Browser* (![Browser](../../../../images/icon-browser.png)) &rarr; *Styles* 영역에서 *Hide Fragment* 상자를 선택하거나 선택 취소합니다.
+1. 콘텐츠 페이지 편집기 사이드바의 **Browser**(![Browser](../../../../images/icon-browser.png)) &rarr; **Styles** 영역에서 **Hide Fragment** 상자를 선택하거나 선택 취소합니다.
 
    ![콘텐츠 페이지 편집기 사이드바의 브라우저 &rarr; 스타일 영역에서 조각의 가시성을 변경합니다.](./configuring-fragment-visibility/images/04.gif)
 
-1. Fragment의 Actions 메뉴(![Actions](../../../../images/icon-widget-options.png))에서 *Hide Fragment* (![Hide Fragment](../../../../images/icon-hide.png)) 옵션을 선택합니다.
+1. Fragment의 Actions 메뉴(![Actions](../../../../images/icon-widget-options.png))에서 **Hide Fragment**(![Hide Fragment](../../../../images/icon-hide.png)) 옵션을 선택합니다.
 
    ![Fragment의 Actions 메뉴에서 Fragment의 가시성을 변경합니다.](./configuring-fragment-visibility/images/05.gif)
 
@@ -69,7 +69,7 @@
 
 1. 기본 데스크톱 뷰포트에서 스마트폰 앱에 대한 홍보 문구가 포함된 새 조각을 추가합니다.
 1. 홍보 문구로 조각을 숨깁니다. 조각이 이제 모든 뷰포트에서 숨겨집니다.
-1. *Landscape Phone* 뷰포트를 클릭합니다. 이 뷰포트의 변경 사항은 세로 전화기 뷰포트에도 영향을 미칩니다.
+1. **Landscape Phone** 뷰포트를 클릭합니다. 이 뷰포트의 변경 사항은 세로 전화기 뷰포트에도 영향을 미칩니다.
 1. [Fragment Visibility](#changing-fragment-visibility) 을 변경하여 Phone 뷰포트에서 프로모션 텍스트를 숨김 해제합니다.
 1. 효과를 보려면 다른 뷰포트를 클릭하십시오. 홍보 문구는 이제 가로 휴대폰 및 세로 휴대폰 뷰포트에서만 사용할 수 있습니다.
 

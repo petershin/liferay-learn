@@ -97,7 +97,7 @@ org.elasticsearch.indices.recovery.RecoveryFailedException: [liferay-20097][0]: 
 
 1. Leader DXP 노드에서 전체 재색인을 수행합니다.
 
-1. CCR 구성을 다시 활성화하려면 로컬 DXP 노드에서 시스템 설정 &rarr; 검색 &rarr; 클러스터 간 복제로 이동합니다. _로컬 클러스터_ 에서 읽기를 선택 취소하고 _업데이트_ 을 클릭하여 모듈을 비활성화한 다음 _로컬 클러스터_ 에서 읽기를 선택하고 _업데이트_ 을 다시 클릭하여 다시 활성화합니다.
+1. CCR 구성을 다시 활성화하려면 로컬 DXP 노드에서 시스템 설정 &rarr; 검색 &rarr; 클러스터 간 복제로 이동합니다. **로컬 클러스터** 에서 읽기를 선택 취소하고 **업데이트** 을 클릭하여 모듈을 비활성화한 다음 **로컬 클러스터** 에서 읽기를 선택하고 **업데이트** 을 다시 클릭하여 다시 활성화합니다.
 
 ## Liferay 7.2: CCR LPKG 및 ElasticsearchConnectionConfiguration 파일을 배포한 후 검색이 중단됨
 

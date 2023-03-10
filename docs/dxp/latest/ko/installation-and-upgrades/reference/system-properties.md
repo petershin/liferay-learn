@@ -14,8 +14,8 @@ Liferay DXP/Portal은 애플리케이션 서버의 JVM에서 실행됩니다. �
 
 DXP는 다음과 같은 방식으로 시스템 속성 파일을 사용합니다.
 
-* DXP _은 시스템 속성 `system.properties.set` 이 `false`가 아닌 한 `system.properties` (및 `system-ext.properties`)의 새 속성을 사용하여_ 속성을 확장합니다.
-* DXP _은 시스템 속성 `system.properties.set.override` 이 `false`가 아닌 한 `system.properties` (및 `system-ext.properties`)의 새 값을 사용하여_ 속성을 재정의합니다.
+* DXP **은 시스템 속성 `system.properties.set` 이 `false`가 아닌 한 `system.properties` (및 `system-ext.properties`)의 새 속성을 사용하여** 속성을 확장합니다.
+* DXP **은 시스템 속성 `system.properties.set.override` 이 `false`가 아닌 한 `system.properties` (및 `system-ext.properties`)의 새 값을 사용하여** 속성을 재정의합니다.
 
 ```{warning}
 응용 프로그램 서버 시작 후 시스템 속성 설정 또는 재설정에는 위험이 있습니다.

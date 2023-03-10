@@ -20,7 +20,7 @@ Liferay 설치를 위해 설치된 Node의 이전 버전 또는 지원되지 않
     sudo apt-get update
     ```
 
-1. Node.js의 원하는 *주 버전* 을 검색합니다. Liferay DXP 버전에 필요한 노드의 주 버전에 대해 [버전 호환성 매트릭스](#version-compatibility-matrix) 을 확인하십시오.
+1. Node.js의 원하는 **주 버전** 을 검색합니다. Liferay DXP 버전에 필요한 노드의 주 버전에 대해 [버전 호환성 매트릭스](#version-compatibility-matrix) 을 확인하십시오.
 
     ```bash
     curl -sL deb.nodesource.com/setup_##.x | sudo -E bash -
@@ -32,13 +32,13 @@ Liferay 설치를 위해 설치된 Node의 이전 버전 또는 지원되지 않
     curl -sL deb.nodesource.com/setup_16.x | sudo -E bash -
     ````
 
-1. Install Node and NPM with a single command.
+1. 하나의 명령어로 Node와 NPM을 설치합니다.
 
     ```bash
     sudo apt-get install -y nodejs
     ````
 
-1. Verify that you have the expected versions of Node and NPM.
+1. Node 및 NPM의 예상 버전이 있는지 확인합니다.
 
     ```bash
     node --version

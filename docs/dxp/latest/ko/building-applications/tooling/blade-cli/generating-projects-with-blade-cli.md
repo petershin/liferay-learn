@@ -32,7 +32,7 @@ Liferay Workspace는 프로젝트 및 DevOps 구성을 저장하는 시스템의
 blade create -t mvc-portlet -p com.acme.z3x1.portlet -c GuestbookPortlet guestbook
 ```
 
-이렇게 하면 MVC 포틀릿 템플릿을 사용하여 프로젝트가 생성됩니다. 기본 패키지는 `com.acme.z3x1.portlet`이고 포틀릿 클래스는 `GuestbookPortlet`이며 Liferay 7.4의 경우 *방명록*입니다. 이제 Workspace를 IDE로 가져올 수 있습니다. Liferay IntelliJ 플러그인 또는 Liferay Developer Studio의 Eclipse 플러그인은 향상된 지원을 제공합니다. Blade를 사용하여 프로젝트에 새 Workspace를 생성하는 경우 IDE에서 Gradle 프로젝트를 새로 고쳐야 합니다.
+이렇게 하면 MVC 포틀릿 템플릿을 사용하여 프로젝트가 생성됩니다. 기본 패키지는 `com.acme.z3x1.portlet`이고 포틀릿 클래스는 `GuestbookPortlet`이며 Liferay 7.4의 경우 **방명록** 입니다. 이제 Workspace를 IDE로 가져올 수 있습니다. Liferay IntelliJ 플러그인 또는 Liferay Developer Studio의 Eclipse 플러그인은 향상된 지원을 제공합니다. Blade를 사용하여 프로젝트에 새 Workspace를 생성하는 경우 IDE에서 Gradle 프로젝트를 새로 고쳐야 합니다.
 
 ## 샘플 프로젝트 만들기
 

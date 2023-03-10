@@ -1,16 +1,16 @@
 # 위젯 템플릿으로 위젯 스타일 지정
 
-위젯 템플릿을 사용하여 *Asset Publisher* 및 *Media Gallery* 위젯과 같은 기본 위젯의 모양과 기능을 사용자 정의할 수 있습니다.
+위젯 템플릿을 사용하여 **Asset Publisher** 및 **Media Gallery** 위젯과 같은 기본 위젯의 모양과 기능을 사용자 정의할 수 있습니다.
 
 ## 위젯 템플릿 만들기
 
-1. *사이트 메뉴* ![Site Menu](../../../images/icon-product-menu.png)에서 *디자인* &rarr; *템플릿*을 클릭합니다.
+1. **사이트 메뉴** ![Site Menu](../../../images/icon-product-menu.png)에서 **디자인** &rarr; **템플릿** 을 클릭합니다.
 
-1. *위젯 템플릿* 탭으로 이동합니다.
+1. **위젯 템플릿** 탭으로 이동합니다.
 
    ![템플릿 애플리케이션에서 위젯 템플릿 페이지에 액세스합니다.](./styling-widgets-with-widget-templates/images/01.png)
 
-1. *추가* (![Add Button](../../../images/icon-add.png))을 클릭하고 템플릿에 대한 위젯(예: Asset Publisher)을 선택합니다.
+1. **추가**(![Add Button](../../../images/icon-add.png))을 클릭하고 템플릿에 대한 위젯(예: Asset Publisher)을 선택합니다.
 
    ![위젯 템플릿 생성 페이지는 사용할 필드 또는 변수를 쉽게 추가할 수 있는 컨트롤을 제공합니다.](./styling-widgets-with-widget-templates/images/02.png)
 
@@ -22,13 +22,13 @@
    Liferay DXP/Portal 7.4+의 경우 위젯 템플릿은 FreeMarker만 지원합니다. Velocity는 더 이상 지원되지 않습니다.
    ```
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 이렇게 하면 페이지의 해당 유형의 위젯에 적용할 수 있는 새 위젯 템플릿이 생성됩니다.
 
 ## 위젯 템플릿 적용
 
-1. 적절한 위젯에 대해 *작업* 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭한 다음 *구성을 클릭합니다.*
+1. 적절한 위젯에 대해 **작업** 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭한 다음 **구성을 클릭합니다.**
 
 1. 디스플레이 템플릿 드롭다운 메뉴를 찾아 원하는 템플릿을 선택합니다.
 
@@ -38,7 +38,7 @@
    이 드롭다운 메뉴는 대부분의 위젯에 대한 기본 탭인 설정에 있습니다. 자산 게시자 위젯의 경우 이 설정은 디스플레이 설정 탭 아래에 있습니다.
    ```
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
    ![위젯 템플릿을 사용하기 위해 위젯 구성을 저장하면 템플릿이 디스플레이에 사용됩니다.](./styling-widgets-with-widget-templates/images/04.png)
 

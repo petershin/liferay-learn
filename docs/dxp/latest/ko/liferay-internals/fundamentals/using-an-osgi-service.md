@@ -11,7 +11,7 @@ BlogsEntryService _blogsEntryService;
 
 모든 선언적 서비스 구성 요소( [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 주석이 달린 클래스)는 이러한 방식으로 OSGi 서비스에 액세스할 수 있습니다. 런타임 프레임워크는 구성 요소의 `@Reference`주석 필드에 해당 서비스 유형을 삽입합니다.
 
-다음 예제는 `Greeter`이라는 OSGi 서비스를 사용하는 방법을 보여줍니다. 세 개의 모듈은 OSGi 서비스에서 사용되는 *API-Provider-Consumer* 패턴을 보여줍니다.
+다음 예제는 `Greeter`이라는 OSGi 서비스를 사용하는 방법을 보여줍니다. 세 개의 모듈은 OSGi 서비스에서 사용되는 **API-Provider-Consumer** 패턴을 보여줍니다.
 
 * **API** 모듈은 `Greeter` 서비스 유형을 정의합니다.
 * 구현 모듈 **은** `Greeter` 서비스를 제공합니다.

@@ -21,11 +21,11 @@ Gogo 셸은 모듈 프레임워크와 상호 작용하는 방법을 제공합니
 
 제어판은 Gogo 셸에 액세스하는 가장 안전하고 안전한 방법입니다.
 
-1. *글로벌 메뉴* (![icon](../../images/icon-applications-menu.png))을 엽니다.
+1. **글로벌 메뉴**(![icon](../../images/icon-applications-menu.png))을 엽니다.
 
-1. *제어판* 탭을 선택합니다.
+1. **제어판** 탭을 선택합니다.
 
-1. 시스템 섹션에서 *Gogo Shell* 을 클릭합니다.
+1. 시스템 섹션에서 **Gogo Shell** 을 클릭합니다.
 
    Gogo 셸 명령 화면이 나타납니다.
 
@@ -35,9 +35,9 @@ Gogo 셸은 모듈 프레임워크와 상호 작용하는 방법을 제공합니
    DXP 7.2에서 제어판을 열고 *구성* &rarr; *Gogo Shell*로 이동합니다.
    ```
 
-1. *!에 Gogo 쉘 명령을 입력하십시오.* 텍스트 필드. 예를 들어 `| grep "Liferay Announcements API"` 은 알림 API 번들에 대한 정보를 나열합니다.
+1. **!에 Gogo 쉘 명령을 입력하십시오.** 텍스트 필드. 예를 들어 `| grep "Liferay Announcements API"` 은 알림 API 번들에 대한 정보를 나열합니다.
 
-1. *실행*을 클릭합니다.
+1. **실행** 을 클릭합니다.
 
     명령 결과 출력이 나타납니다.
 

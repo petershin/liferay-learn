@@ -121,7 +121,7 @@ Then, follow these steps:
 
 두 구성자는 모두 [`구성 요소`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 클래스입니다. 그들은 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 사용하여 `DestinationFactory` 인스턴스를 주입합니다.
 
-`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 *직렬* 대상을 생성합니다. 마지막으로 `_activate(BundleContext)` 메소드는 BundleContext ``사용하여 OSGi 서비스에 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 등록합니다.
+`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 **직렬** 대상을 생성합니다. 마지막으로 `_activate(BundleContext)` 메소드는 BundleContext ``사용하여 OSGi 서비스에 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 등록합니다.
 
 ```{warning}
 기본 동기식 메시징과 함께 직렬 또는 병렬 대상만 사용하십시오. `DestinationConfiguration`의 `createSerialDestinationConfiguration(String)` 및 `createParallelDestinationConfiguration(String)` 메서드를 호출하여 만들 수 있습니다.
@@ -168,7 +168,7 @@ Then, follow these steps:
    :lines: 12-38
 ```
 
-`M4Q7BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 *기본* 모드(주석의 `target = "(mode=DEFAULT)"` 속성으로 지정됨)로 설정된 `SynchronousMessageSender` 을 삽입합니다.
+`M4Q7BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 **기본** 모드(주석의 `target = "(mode=DEFAULT)"` 속성으로 지정됨)로 설정된 `SynchronousMessageSender` 을 삽입합니다.
 
 ```{note}
 *기본* 모드에서 `SynchronousMessageSender`의 `send` 메서드는 응답 메시지가 수신되거나 발신자가 시간 초과될 때까지 호출 클래스를 차단합니다.
@@ -240,7 +240,7 @@ Then, follow these steps:
 
 ## 무엇 향후 계획
 
-직접 *모드* 사용하여 동기식 메시징을 탐색하려면 [이전 버전에서 직접 동기식 메시징 사용](./using-direct-synchronous-messaging-in-previous-versions.md)참조하십시오.
+직접 **모드** 사용하여 동기식 메시징을 탐색하려면 [이전 버전에서 직접 동기식 메시징 사용](./using-direct-synchronous-messaging-in-previous-versions.md)참조하십시오.
 
 메시지를 보낸 후 즉시 처리를 계속하려면 [비동기 메시징 사용](./using-asynchronous-messaging.md)참조하십시오.
 

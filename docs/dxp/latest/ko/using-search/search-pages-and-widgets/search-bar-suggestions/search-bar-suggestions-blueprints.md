@@ -10,13 +10,13 @@
 1. 인스턴스 설정에서 검색창 제안이 활성화되어 있는지 확인하십시오. 기본적으로 활성화되어 있습니다.
 
 1. 검색창 위젯 구성에서 검색창 제안을 구성합니다.
-   - 옵션(![Options](../../../images/icon-widget-options.png)) 메뉴를 클릭하고 _구성_를 선택합니다.
+   - 옵션(![Options](../../../images/icon-widget-options.png)) 메뉴를 클릭하고 **구성** 를 선택합니다.
 
-1. Suggestions Contributor를 _Blueprint_로 변경합니다.
+1. Suggestions Contributor를 **Blueprint** 로 변경합니다.
 
-1. _선택_을 클릭하여 청사진을 선택합니다.
+1. **선택** 을 클릭하여 청사진을 선택합니다.
 
-1. _저장_을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 이제 Search Bar Suggestions는 Blueprint에서 제공하는 쿼리 절 및 구성을 사용하여 맞춤형 요청을 Elasticsearch로 보냅니다.
 

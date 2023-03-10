@@ -4,7 +4,7 @@
 
 ## 블로그 항목 권한
 
-_블로그_ 위젯으로 이동합니다. 블로그 항목 옆에 있는 _작업_ (![Actions](../../images/icon-actions.png)), _권한_을 차례로 클릭합니다.
+**블로그** 위젯으로 이동합니다. 블로그 항목 옆에 있는 **작업**(![Actions](../../images/icon-actions.png)), **권한** 을 차례로 클릭합니다.
 
 ![블로그 항목 권한](./blog-permissions-reference/images/01.png)
 

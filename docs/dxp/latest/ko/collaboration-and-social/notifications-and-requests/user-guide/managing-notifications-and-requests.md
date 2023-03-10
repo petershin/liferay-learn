@@ -4,11 +4,11 @@
 
 알림 및 요청에 액세스하려면:
 
-1. 아바타를 클릭하고 *알림*을 선택합니다.
+1. 아바타를 클릭하고 **알림** 을 선택합니다.
 
     ![사용자 아바타 및 알림](./managing-notifications-and-requests/images/01.png)
 
-1. _알림 목록_ 탭에는 읽지 않은 모든 알림이 표시됩니다. 여기서 사용자는 게시판 댓글에서 언급되었습니다.
+1. **알림 목록** 탭에는 읽지 않은 모든 알림이 표시됩니다. 여기서 사용자는 게시판 댓글에서 언급되었습니다.
 
     ![사용자 아바타 및 알림](./managing-notifications-and-requests/images/02.png)
 
@@ -16,7 +16,7 @@
 
 누적된 알림을 관리 및 정렬하려면:
 
-1. _필터 및 주문_ 드롭다운 메뉴를 클릭합니다.
+1. **필터 및 주문** 드롭다운 메뉴를 클릭합니다.
 1. 다음 중에서 선택하십시오.
 
     * **모두:** 기본 옵션입니다. 읽은 알림과 읽지 않은 알림을 모두 표시합니다.
@@ -30,28 +30,28 @@
 
 알림 상태를 변경하려면:
 
-1. 알림 옆에 있는 *작업* 메뉴(![Actions](../../../images/icon-actions.png))를 클릭합니다.
+1. 알림 옆에 있는 **작업** 메뉴(![Actions](../../../images/icon-actions.png))를 클릭합니다.
 
     ![알림 상태](./managing-notifications-and-requests/images/04.png)
 
-1. 알림을 최신 상태로 유지하려면 _읽음으로 표시_ 또는 _읽지 않음으로 표시_ 을 클릭하십시오.
-1. 또는 _삭제_ 을 클릭하여 알림을 완전히 제거합니다.
+1. 알림을 최신 상태로 유지하려면 **읽음으로 표시** 또는 **읽지 않음으로 표시** 을 클릭하십시오.
+1. 또는 **삭제** 을 클릭하여 알림을 완전히 제거합니다.
 
 ### 여러 알림 관리
 
 한 번에 여러 알림을 관리할 수도 있습니다.
 
-1. _Filter 및 Order_ 드롭다운 메뉴 옆에 있는 확인란을 선택합니다. 이렇게 하면 모든 알림 메시지가 선택됩니다.
+1. **Filter 및 Order** 드롭다운 메뉴 옆에 있는 확인란을 선택합니다. 이렇게 하면 모든 알림 메시지가 선택됩니다.
 1. 여러 아이콘이 나타납니다.
-    * **읽음으로 표시** (![Open Envelope](./managing-notifications-and-requests/images/icon-envelope-open.png))
-    * **읽지 않은 상태로 표시** (![Closed Envelope](./managing-notifications-and-requests/images/icon-envelope-closed.png))
-    * **삭제** (![Delete Button](./managing-notifications-and-requests/images/icon-delete.png))
+    * **읽음으로 표시**(![Open Envelope](./managing-notifications-and-requests/images/icon-envelope-open.png))
+    * **읽지 않은 상태로 표시**(![Closed Envelope](./managing-notifications-and-requests/images/icon-envelope-closed.png))
+    * **삭제**(![Delete Button](./managing-notifications-and-requests/images/icon-delete.png))
 
     ![여러 알림 상태 관리](./managing-notifications-and-requests/images/05.png)
 
 ## 사이트 가입 요청 관리
 
-사용자가 사이트 가입 요청을 받으면 *요청 목록* 탭에 나타납니다. 사용자는 _확인_ 을 클릭하여 사이트에 가입하거나 _무시_ 을 클릭하여 거절할 수 있습니다.
+사용자가 사이트 가입 요청을 받으면 **요청 목록** 탭에 나타납니다. 사용자는 **확인** 을 클릭하여 사이트에 가입하거나 **무시** 을 클릭하여 거절할 수 있습니다.
 
 ![여러 알림 상태 관리](./managing-notifications-and-requests/images/06.png)
 

@@ -16,7 +16,7 @@ uuid: 6b1067a0-7fae-4b4b-9e1a-497dd002b824
 
 계정 제한을 설정하려면,
 
-1. *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png))을 열고 *Control Panel* 탭으로 이동하여 *Objects*클릭합니다.
+1. **Global Menu**(![Global Menu](../../../../images/icon-applications-menu.png))을 열고 **Control Panel** 탭으로 이동하여 **Objects** 클릭합니다.
 
 1. 계정 시스템 개체 편집을 시작합니다.
 
@@ -26,11 +26,11 @@ uuid: 6b1067a0-7fae-4b4b-9e1a-497dd002b824
 
 1. 개체 페이지로 돌아가서 원하는 사용자 정의 개체 편집을 시작합니다.
 
-1. 세부 정보 탭에서 *계정 제한* 활성화하고 사용할 계정 관계를 선택합니다.
+1. 세부 정보 탭에서 **계정 제한** 활성화하고 사용할 계정 관계를 선택합니다.
 
    ![계정 제한을 활성화로 전환하고 사용하려는 계정 관계를 선택합니다.](./restricting-access-to-object-data-by-account/images/03.png)
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 이렇게 하면 계정 관계 필드가 필수 항목이 되므로 사용자는 항목을 만들 때 계정을 선택해야 합니다. 사용 가능한 계정 옵션은 각 사용자의 권한에 따라 결정됩니다. 계정 제한이 활성화된 상태에서 역할 권한 구성에 대한 지침은 [계정 제한 및 사용자 역할](#account-restriction-and-user-roles) 을 참조하십시오. 항목 생성 후 선택한 계정은 항목의 소유자가 되며 변경할 수 없습니다.
 

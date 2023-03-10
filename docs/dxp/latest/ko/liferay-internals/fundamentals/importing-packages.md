@@ -71,7 +71,7 @@ Import-Package: [... existing package list,][add the package here]
 
 ### 자바 API 패키지
 
-Java Portlet과 같은 Java API용 패키지는 [의미상 버전 관리](./semantic-versioning.md)가 아니지만 [이식 가능한 Java 계약](https://www.osgi.org/portable-java-contract- 정의/) . 각 API의 계약은 만족하는 JSR을 지정합니다. 이러한 API를 사용하는 모듈은 API 계약에 대한 요구 사항을 지정해야 합니다. 계약 요구 사항은 가져온 API 패키지와 모듈의 관계를 정의합니다. 실행 중인 시스템이 정확한 계약을 제공하지 *않으면* 모듈이 확인되지 않습니다. 누락된 패키지를 해결하는 것이 실행 중에 비호환성 오류를 처리하는 것보다 낫습니다.
+Java Portlet과 같은 Java API용 패키지는 [의미상 버전 관리](./semantic-versioning.md)가 아니지만 [이식 가능한 Java 계약](https://www.osgi.org/portable-java-contract- 정의/) . 각 API의 계약은 만족하는 JSR을 지정합니다. 이러한 API를 사용하는 모듈은 API 계약에 대한 요구 사항을 지정해야 합니다. 계약 요구 사항은 가져온 API 패키지와 모듈의 관계를 정의합니다. 실행 중인 시스템이 정확한 계약을 제공하지 **않으면** 모듈이 확인되지 않습니다. 누락된 패키지를 해결하는 것이 실행 중에 비호환성 오류를 처리하는 것보다 낫습니다.
 
 [Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)기반 프로젝트는 Portable Java Contracts를 자동으로 지정합니다! 예를 들어 모듈이 Java Portlet API를 사용하고 Java Portlet 2.0 아티팩트에 대해 컴파일하는 경우 패키지에 대한 계약 요구 사항이 모듈의 매니페스트에 추가됩니다.
 

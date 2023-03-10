@@ -13,33 +13,33 @@ DXP의 클래스 로더에는 계층 구조가 있으며 다음 컨텍스트에�
 
 다음은 클래스 로더 설명입니다.
 
-* **부트스트랩**: JRE의 클래스(패키지 `java.*`에서) 및 Java 확장 클래스( `$JAVA_HOME/lib/ext`에서). 컨텍스트에 관계없이 모든 `java.*` 클래스 로드는 부트스트랩 클래스 로더에 위임됩니다.
+* **부트스트랩** : JRE의 클래스(패키지 `java.*`에서) 및 Java 확장 클래스( `$JAVA_HOME/lib/ext`에서). 컨텍스트에 관계없이 모든 `java.*` 클래스 로드는 부트스트랩 클래스 로더에 위임됩니다.
 
-* **시스템**: `CLASSPATH` 에 구성되거나 애플리케이션 서버의 Java 클래스 경로(`-cp` 또는 `-classpath`) 매개변수를 통해 전달된 클래스.
+* **시스템** : `CLASSPATH` 에 구성되거나 애플리케이션 서버의 Java 클래스 경로(`-cp` 또는 `-classpath`) 매개변수를 통해 전달된 클래스.
 
-* **공통**: 응용 프로그램 서버의 웹 응용 프로그램에 전역적으로 액세스할 수 있는 클래스입니다.
+* **공통** : 응용 프로그램 서버의 웹 응용 프로그램에 전역적으로 액세스할 수 있는 클래스입니다.
 
-* **웹 애플리케이션(예: DXP/Portal)**: 애플리케이션의 `WEB-INF/classes` 폴더 및 `WEB-INF/lib/*.jar`의 클래스.
+* **웹 애플리케이션(예: DXP/Portal**) : 애플리케이션의 `WEB-INF/classes` 폴더 및 `WEB-INF/lib/*.jar`의 클래스.
 
-    DXP/Portal 웹 애플리케이션이 상호 작용하는 유일한 Liferay 클래스는 Liferay의 *Shielded Container* JAR 파일에 있습니다.
+    DXP/Portal 웹 애플리케이션이 상호 작용하는 유일한 Liferay 클래스는 Liferay의 **Shielded Container** JAR 파일에 있습니다.
 
     * `com.liferay.shielded.container.api.jar`
     * `com.liferay.shielded.container.impl.jar`
 
-* **차폐 컨테이너**: 클래스 `WEB-INF/shielded-container-lib/*.jar`.
+* **차폐 컨테이너** : 클래스 `WEB-INF/shielded-container-lib/*.jar`.
 
-* **모듈 프레임워크**: Liferay의 OSGi 모듈 프레임워크 클래스로더는 모듈 프레임워크 번들에 대해 제어된 격리를 제공합니다.
+* **모듈 프레임워크** : Liferay의 OSGi 모듈 프레임워크 클래스로더는 모듈 프레임워크 번들에 대해 제어된 격리를 제공합니다.
 
-* **번들**: 번들의 패키지 또는 다른 번들에서 내보낸 패키지의 클래스입니다.
+* **번들** : 번들의 패키지 또는 다른 번들에서 내보낸 패키지의 클래스입니다.
 
-* **JSP**: 다음 번들 및 클래스 로더를 집계하는 클래스 로더:
+* **JSP** : 다음 번들 및 클래스 로더를 집계하는 클래스 로더:
 
     * JSP의 클래스로더를 포함하는 번들
     * JSP 서블릿 번들의 클래스로더
     * Javax Expression Language(EL) 구현 번들의 클래스로더
     * Javax JSTL 구현 번들의 클래스로더
 
-* **서비스 빌더**: 서비스 빌더 클래스
+* **서비스 빌더** : 서비스 빌더 클래스
 
 사용되는 클래스 로더는 컨텍스트에 따라 다릅니다. 클래스로딩 규칙은 애플리케이션 서버마다 다릅니다. 웹 애플리케이션과 OSGi 번들의 클래스 로딩도 다릅니다. 그러나 모든 컨텍스트에서 부트스트랩 클래스 로더는 `java.*` 패키지에서 클래스를 로드합니다.
 

@@ -20,7 +20,7 @@
 
 ### 사이트 스타일링
 
-테마는 모든 사이트에서 스타일 지정의 기초를 제공합니다. 사이트 페이지, 사용자 정의 포틀릿 데코레이터에 대한 UI 세부 정보를 정의할 수 있습니다.<!--Add link when available-->, 색 구성표를 정의합니다.<!--Add link when available--> 귀하의 사이트.
+테마는 모든 사이트에서 스타일 지정의 기초를 제공합니다. 사이트 페이지, 사용자 정의 포틀릿 데코레이터에 대한 UI 세부 정보를 정의할 수 있습니다. <!--Add link when available--> , 색 구성표를 정의합니다. <!--Add link when available--> 귀하의 사이트.
 
 테마에 따라 사용자 지정 [Style Book 토큰 정의](../style-books/developer-guide/style-book-token-definitions.md) 을 구성할 수도 있습니다. <!--Add link when available: See Hooking Style Book Tokens into Your Theme for more information.-->
 
@@ -40,9 +40,9 @@
 
 * [Themelets](./theme-development/bundling-resources/bundling-and-installing-resources-into-your-theme-via-themelets.md) 을 사용하면 많은 테마에 적용할 수 있는 모듈 방식으로 적은 수의 파일을 사용자 지정할 수 있습니다.
 
-* 테마 기여자<!--Add link when available--> 테마와 독립적으로 배포할 수 있는 UI 리소스 및 사용자 지정을 패키징할 수 있습니다.
+* 테마 기여자 <!--Add link when available--> 테마와 독립적으로 배포할 수 있는 UI 리소스 및 사용자 지정을 패키징할 수 있습니다.
 
-* 자원 수입업자<!--Add link when available--> 사이트 템플릿을 사용하여 테마를 구현하는 데 필요한 파일과 콘텐츠를 가져옵니다.
+* 자원 수입업자 <!--Add link when available--> 사이트 템플릿을 사용하여 테마를 구현하는 데 필요한 파일과 콘텐츠를 가져옵니다.
 
 ```{warning}
 리소스 가져오기는 Liferay DXP 7.1부터 더 이상 사용되지 않습니다.
@@ -54,7 +54,7 @@
 
 * 페이지 템플릿 [에서 사용할 수 있는 컨텍스트 변수를 추가하여 이러한 템플릿이 테마의 기능에](../../creating-pages/adding-pages/creating-a-page-template.md) 수 있습니다.
 
-* 변수 값을 설정할 수 있습니다.<!--Add link when available--> 테마를 사용하여 DXP의 기존 기능 동작에 영향을 줍니다.
+* 변수 값을 설정할 수 있습니다. <!--Add link when available--> 테마를 사용하여 DXP의 기존 기능 동작에 영향을 줍니다.
 
 * [Style Books](../style-books/using-a-style-book-to-standardize-site-appearance.md)으로 스타일링 범주를 정의하는 데 사용되는 [토큰 정의](../style-books/developer-guide/style-book-token-definitions.md) 을 추가할 수 있습니다.
 
@@ -71,7 +71,7 @@
 
 테마를 개발하거나 확장하는 데 다양한 도구가 사용됩니다. 자세한 내용은 다음 항목을 참조하십시오.
 
-* Liferay 테마 생성기<!--Add link when available-->
+* Liferay 테마 생성기 <!--Add link when available-->
 
 * [잎](../../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)
 * [개발자 도구 개요](../../../building-applications/tooling/developer-tools-overview.md)

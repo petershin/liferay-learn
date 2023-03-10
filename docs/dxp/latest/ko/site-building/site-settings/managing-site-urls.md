@@ -37,7 +37,7 @@ Liferay 서버에 대한 가상 호스트를 구성하여 도메인 이름(예: 
 
 404를 방지하고 사용자 환경을 개선하려면 사이트에 대한 URL 리디렉션을 설정하십시오. Liferay DXP를 사용하면 별칭 리디렉션과 패턴 리디렉션이라는 두 가지 유형의 리디렉션을 정의할 수 있습니다.
 
-**별칭 리디렉션**: 이러한 리디렉션은 절대 소스 URL과 절대 대상 URL을 명시적으로 정의합니다. 이러한 이유로 대부분의 사용 사례에서 더 예측 가능하고 권장됩니다. 사이트에 대한 별칭 리디렉션 설정에 대한 지침은 [별칭 리디렉션 사용](./managing-site-urls/setting-up-redirects-and-404-tracking/using-alias-redirects.md) 참조하십시오.
+**별칭 리디렉션** : 이러한 리디렉션은 절대 소스 URL과 절대 대상 URL을 명시적으로 정의합니다. 이러한 이유로 대부분의 사용 사례에서 더 예측 가능하고 권장됩니다. 사이트에 대한 별칭 리디렉션 설정에 대한 지침은 [별칭 리디렉션 사용](./managing-site-urls/setting-up-redirects-and-404-tracking/using-alias-redirects.md) 참조하십시오.
 
 **패턴 리디렉션** {bdg-secondary}`7.4 U42+/GA42+`: 이러한 리디렉션은 정규식을 사용하여 소스 URL 및 해당 대체에 대한 패턴을 정의합니다. 이러한 이유로 URL 계열을 빠르게 일치시키는 데 가장 적합합니다. 그러나 정규 표현식에 따라 별칭 리디렉션보다 속도가 느려 의도한 것보다 더 많은 URL 일치가 발생할 수 있습니다. 사이트에 설정하는 방법에 대한 자세한 내용은 [패턴 리디렉션 사용](./managing-site-urls/setting-up-redirects-and-404-tracking/using-pattern-redirects.md) 참조하십시오.
 

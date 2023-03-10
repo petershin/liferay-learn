@@ -1,10 +1,10 @@
 # Amazon 단순 스토리지 서비스
 
-Amazon의 단순 스토리지 서비스(S3)는 DXP의 S3 Store가 파일을 클라우드에 원활하게 저장하는 데 사용하는 클라우드 기반 스토리지 솔루션입니다. AWS 계정이 있고 S3 _버킷_을 생성했으면 S3 스토어를 구성할 수 있습니다.
+Amazon의 단순 스토리지 서비스(S3)는 DXP의 S3 Store가 파일을 클라우드에 원활하게 저장하는 데 사용하는 클라우드 기반 스토리지 솔루션입니다. AWS 계정이 있고 S3 **버킷** 을 생성했으면 S3 스토어를 구성할 수 있습니다.
 
 [AWS 계정](https://aws.amazon.com/s3/) 을 만들 때 Amazon은 귀하를 귀하의 계정에 연결하는 [고유한 키](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/) 를 할당합니다. 이 키를 사용하여 다음 섹션에서 S3 Store를 구성합니다.
 
-S3는 파일 스토리지에 _버킷_ 개념을 사용합니다. Amazon UI에서 DXP 파일에 대한 [버킷](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) 을 생성합니다. DXP 서버 호스트에 가능한 한 가까운 [지역](https://docs.aws.amazon.com/general/latest/gr/s3.html) 에 버킷을 구성해야 합니다.
+S3는 파일 스토리지에 **버킷** 개념을 사용합니다. Amazon UI에서 DXP 파일에 대한 [버킷](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) 을 생성합니다. DXP 서버 호스트에 가능한 한 가까운 [지역](https://docs.aws.amazon.com/general/latest/gr/s3.html) 에 버킷을 구성해야 합니다.
 
 ```{note}
 AWS 서명 버전 4 요청 승인을 지원하기 위해 필요한 조치는 없습니다.
@@ -31,18 +31,18 @@ AWS 서명 버전 4 요청 승인을 지원하기 위해 필요한 조치는 없
     ```
 
 1. DXP를 다시 시작합니다.
-1. 제어판에서 *구성* &rarr; *시스템 설정* &rarr; *파일 저장소*로 이동합니다.
-1. *S3 Store* 화면에서 다음과 같이 스토어를 구성합니다.
+1. 제어판에서 **구성** &rarr; **시스템 설정** &rarr; **파일 저장소** 로 이동합니다.
+1. **S3 Store** 화면에서 다음과 같이 스토어를 구성합니다.
 
-    * **Bucket Name**: 버킷의 이름.
-    * **액세스 키**: AWS 액세스 키.
-    * **비밀 키**: 당신의 비밀 키.
-    * **S3 지역**: [지리적 지역](https://docs.aws.amazon.com/general/latest/gr/s3.html) ; 기본값은 `us-east-1`입니다.
+    * **Bucket Name** : 버킷의 이름.
+    * **액세스 키** : AWS 액세스 키.
+    * **비밀 키** : 당신의 비밀 키.
+    * **S3 지역** : [지리적 지역](https://docs.aws.amazon.com/general/latest/gr/s3.html) ; 기본값은 `us-east-1`입니다.
 
     ![Amazon S3 스토어 구성](./amazon-s3-store/images/01.png)
 
 1. 다른 필드는 기본 설정으로 둡니다.
-1. _저장_을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 이제 DXP 인스턴스가 Amazon S3 스토어를 사용하고 있습니다.
 

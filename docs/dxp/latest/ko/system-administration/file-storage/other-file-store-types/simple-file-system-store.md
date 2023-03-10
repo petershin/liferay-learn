@@ -34,14 +34,14 @@
 
 단순 파일 시스템 저장소를 구성하려면 다음 단계를 따르십시오.
 
-1. _메뉴_ (![Menu](./simple-file-system-store/images/02.png)) 버튼을 클릭하여 _제어판_에 액세스합니다.
-1. _제어판_ &rarr; _구성_ &rarr; _시스템 설정_으로 이동합니다.
-1. _플랫폼_ 섹션에서 _File Storage_을 클릭하십시오.
-1. _Simple File System Store_ 화면에서 _루트 디렉토리_ 을 [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) 경로(절대 또는 상대)로 설정합니다.
+1. **메뉴**(![Menu](./simple-file-system-store/images/02.png)) 버튼을 클릭하여 **제어판** 에 액세스합니다.
+1. **제어판** &rarr; **구성** &rarr; **시스템 설정** 으로 이동합니다.
+1. **플랫폼** 섹션에서 **File Storage** 을 클릭하십시오.
+1. **Simple File System Store** 화면에서 **루트 디렉토리** 을 [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) 경로(절대 또는 상대)로 설정합니다.
 
     ![시스템 설정의 파일 저장소 페이지에서 문서 리포지토리 저장소를 구성할 수 있습니다.](./simple-file-system-store/images/03.png)
 
-1. _저장_을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 파일 저장소가 즉시 새 폴더로 전환됩니다.
 

@@ -4,9 +4,9 @@ FreeMarker에서 템플릿을 개발할 때 Liferay의 taglib에 액세스할 �
 
 DXP의 템플릿 편집기를 사용하는 경우 템플릿 편집기 왼쪽에서 변수를 찾을 수 있습니다. 템플릿 편집기에 변수 중 하나를 배치하는 방법은 다음과 같습니다.
 
-1. 사이트(이 예에서는 기본 DXP 사이트) _사이트 관리_로 이동합니다.
-1. _콘텐츠 & 데이터_ &rarr; _웹 콘텐츠_를 클릭합니다.
-1. _템플릿_ 탭을 클릭합니다.
+1. 사이트(이 예에서는 기본 DXP 사이트)**사이트 관리** 로 이동합니다.
+1. **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 를 클릭합니다.
+1. **템플릿** 탭을 클릭합니다.
 1. 변수를 배치할 사이트에 커서를 놓습니다.
 1. 변수 이름을 클릭합니다.
 
@@ -20,7 +20,7 @@ DXP의 템플릿 편집기를 사용하는 경우 템플릿 편집기 왼쪽에�
 FreeMarker에 대한 `utilLocator`, `objectUtil` 및 `staticUtil` 변수는 기본적으로 비활성화되어 있습니다. 이러한 변수는 원격 코드 실행 및 권한 에스컬레이션에 취약하며 신뢰할 수 있는 템플릿 개발자만 활성화해야 합니다. 
 ```
 
-템플릿을 저장하면 DXP가 WebDAV URL과 정적 URL을 제공합니다. 이러한 값은 구조의 XML 소스에 액세스합니다. 저장한 후 템플릿으로 돌아가서 *세부 정보* 섹션을 펼치면 이러한 URL을 찾을 수 있습니다. WebDAV 및 WebDAV URL 사용에 대한 자세한 내용은 [WebDAV 액세스](../../documents-and-media/publishing-and-sharing/accessing-documents-with-webdav.md) 섹션을 참조하십시오.
+템플릿을 저장하면 DXP가 WebDAV URL과 정적 URL을 제공합니다. 이러한 값은 구조의 XML 소스에 액세스합니다. 저장한 후 템플릿으로 돌아가서 **세부 정보** 섹션을 펼치면 이러한 URL을 찾을 수 있습니다. WebDAV 및 WebDAV URL 사용에 대한 자세한 내용은 [WebDAV 액세스](../../documents-and-media/publishing-and-sharing/accessing-documents-with-webdav.md) 섹션을 참조하십시오.
 
 ## 추가 정보
 

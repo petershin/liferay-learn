@@ -12,15 +12,15 @@ Open Graph `<meta>` 태그는 인증되지 않은 사용자에게만 페이지 �
 
 사이트에 대한 Open Graph를 구성하려면 다음 단계를 따르십시오.
 
-1. *사이트 메뉴* (![Site Menu](../../images/icon-product-menu.png))을 열고 *구성* &rarr; *설정* (이전에는 *사이트 설정*)으로 이동합니다.
+1. **사이트 메뉴**(![Site Menu](../../images/icon-product-menu.png))을 열고 **구성** &rarr; **설정**(이전에는 **사이트 설정**)으로 이동합니다.
 
-1. *Open Graph* 하위 제목까지 아래로 스크롤하여 확장합니다.
+1. **Open Graph** 하위 제목까지 아래로 스크롤하여 확장합니다.
 
-1. 사이트에 대한 오픈 그래프를 활성화/비활성화하려면 *오픈 그래프 활성화* 설정을 선택/선택 취소합니다.
+1. 사이트에 대한 오픈 그래프를 활성화/비활성화하려면 **오픈 그래프 활성화** 설정을 선택/선택 취소합니다.
 
    ![사이트 페이지에 포함된 오픈 그래프 태그를 활성화 또는 비활성화합니다.](./configuring-open-graph/images/01.png)
 
-1. (선택 사항) *이미지* 및 *이미지 대체 설명* 필드를 사용하여 사이트 페이지의 기본 `og:image` 속성을 설정합니다.
+1. (선택 사항)**이미지** 및 **이미지 대체 설명** 필드를 사용하여 사이트 페이지의 기본 `og:image` 속성을 설정합니다.
 
    이러한 값은 [페이지](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) 및 [디스플레이 페이지](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) 구성으로 재정의됩니다.
 
@@ -32,7 +32,7 @@ Open Graph `<meta>` 태그는 인증되지 않은 사용자에게만 페이지 �
 
    ![기본 Open Graph 구성을 미리 봅니다.](./configuring-open-graph/images/03.png)
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 ## `og:image` 속성 분석
 
@@ -48,7 +48,7 @@ Open Graph `<meta>` 태그는 인증되지 않은 사용자에게만 페이지 �
 
 이미지 대체 설명 필드에 텍스트를 입력하면 선택한 이미지에 대해 화면 판독기가 읽는 기본 텍스트가 결정됩니다.
 
-오픈 그래프 이미지에 대한 현지화된 대체 설명을 생성하려면 *언어 플래그* 버튼을 클릭하고 설정하려는 언어를 선택합니다. 여기에 입력한 값은 기본 `og:image:alt` 태그를 정의합니다.
+오픈 그래프 이미지에 대한 현지화된 대체 설명을 생성하려면 **언어 플래그** 버튼을 클릭하고 설정하려는 언어를 선택합니다. 여기에 입력한 값은 기본 `og:image:alt` 태그를 정의합니다.
 
 ```html
 <meta property="og:image:alt" content="This is an example." />

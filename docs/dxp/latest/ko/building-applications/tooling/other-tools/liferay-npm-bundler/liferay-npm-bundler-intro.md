@@ -2,7 +2,7 @@
 
 liferay-npm-bundler는 플랫폼으로 Liferay Portal을 대상으로 하는 번들러(예: [Webpack](https://webpack.github.io/) 또는 [Browserify](http://browserify.org/) )이며 위젯에서 npm 패키지를 사용한다고 가정합니다(일반적인 웹 애플리케이션과 반대).
 
-위젯 내에서 npm 패키지를 실행하는 작업 흐름은 표준 번들러와 약간 다릅니다. 단일 파일에 JavaScript를 *대신 전체 웹 페이지가 어셈블될 때 브라우저에서 모든 패키지를 함께 연결해야*. 그런 다음 위젯은 각각 고유한 복사본을 로드하지 않고 공통 버전의 모듈을 공유할 수 있습니다. liferay-npm-bundler가 이를 처리합니다.
+위젯 내에서 npm 패키지를 실행하는 작업 흐름은 표준 번들러와 약간 다릅니다. 단일 파일에 JavaScript를 **대신 전체 웹 페이지가 어셈블될 때 브라우저에서 모든 패키지를 함께 연결해야** . 그런 다음 위젯은 각각 고유한 복사본을 로드하지 않고 공통 버전의 모듈을 공유할 수 있습니다. liferay-npm-bundler가 이를 처리합니다.
 
 ```{note}
 [프로젝트의 Wiki](https://github.com/liferay/liferay-npm-build-tools/wiki) 에서도 liferay-npm-bundler에 대한 정보를 찾을 수 있습니다.
@@ -28,7 +28,7 @@ liferay-npm-bundler는 아래 프로세스를 사용하여 OSGi 번들을 생성
 
 1. 각 npm 패키지 종속성에 대해
 
-    ㅏ. npm 패키지를 출력 폴더에 복사하고 번들 이름을 앞에 붙입니다. 번들러는 표준 node_modules 트리 형식이 아닌 일반 *bundle-name$package*@*version* 형식으로 패키지를 저장합니다. 무엇을 복사할지 결정하기 위해 번들러는 플러그인을 호출하여 패키지 파일 목록을 필터링합니다.
+    ㅏ. npm 패키지를 출력 폴더에 복사하고 번들 이름을 앞에 붙입니다. 번들러는 표준 node_modules 트리 형식이 아닌 일반 **bundle-name$package** @ **version** 형식으로 패키지를 저장합니다. 무엇을 복사할지 결정하기 위해 번들러는 플러그인을 호출하여 패키지 파일 목록을 필터링합니다.
 
      비. 패키지 파일에 대한 규칙을 실행합니다.
 

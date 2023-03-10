@@ -43,13 +43,13 @@ MVC 리소스 명령을 사용하는 예제 포틀릿을 배포한 다음 검사
     STARTED com.acme.p8v5.web_1.0.0
     ```
 
-1. *샘플* 카테고리의 *P8V5 Portlet* 위젯을 위젯 페이지에 추가하십시오. P8V5 포틀릿이 나타납니다.
+1. **샘플** 카테고리의 **P8V5 Portlet** 위젯을 위젯 페이지에 추가하십시오. P8V5 포틀릿이 나타납니다.
 
     ![페이지에 P8V5 포틀릿을 추가했습니다.](./mvc-resource-command/images/01.png)
 
     링크는 MVC 리소스 명령을 호출하여 간단한 텍스트 파일을 다운로드합니다.
 
-1. *다운로드*을 클릭합니다. `p8v5.txt` 이라는 파일이 컴퓨터에 다운로드됩니다.
+1. **다운로드** 을 클릭합니다. `p8v5.txt` 이라는 파일이 컴퓨터에 다운로드됩니다.
 
 1. `p8v5.txt` 파일을 엽니다. 내용은 다음과 같습니다.
 
@@ -124,7 +124,7 @@ MVC 리소스 명령 클래스는 [`MVCResourceCommand`](https://github.com/life
 |:-------------------------------------------------------------------------------------- |:----------------------------------------- |
 | `<a href="<portlet:resourceURL id="/p8v5/download" />">Download</a>` | `mvc.command.name=/p8v5/download`         |
 
-뷰의 *다운로드* 링크를 클릭하면 `P8V5DownloadMVCResourceCommand`의 `serveResource` 메서드가 호출됩니다.
+뷰의 **다운로드** 링크를 클릭하면 `P8V5DownloadMVCResourceCommand`의 `serveResource` 메서드가 호출됩니다.
 
 ## 다음
 

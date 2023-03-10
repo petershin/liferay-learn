@@ -10,9 +10,9 @@
 
 1. 페이지 조각을 지원하는 페이지 또는 템플릿 편집을 시작합니다.
 
-1. 복제하려는 *조각* 을 클릭합니다.
+1. 복제하려는 **조각** 을 클릭합니다.
 
-1. Fragment의 *Actions* 버튼(![Actions Button](../../../../images/icon-widget-options.png))을 클릭하고 *Duplicate*를 선택합니다.
+1. Fragment의 **Actions** 버튼(![Actions Button](../../../../images/icon-widget-options.png))을 클릭하고 **Duplicate** 를 선택합니다.
 
    이렇게 하면 페이지 또는 템플릿에 조각의 복제본이 즉시 생성됩니다.
 

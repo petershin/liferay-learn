@@ -5,9 +5,9 @@ Liferay는 웹 인터페이스에서 사용할 수 있는 것과 동일한 종�
 ## 연결 방법
 
 클라이언트가 웹 API를 통해 Liferay DXP에 연결할 수 있는 세 가지 접근 방식이 있습니다.
-* [__OpenAPI 사양을 준수하는 헤드리스 REST API__](#headless-rest-apis)
-* GraphQL 사양을 준수하는 [__GraphQL API__](#graphql-api)
-* [__일반 웹/REST 서비스__](#plain-webrest-services) , Service Builder에서 생성
+* [**_** OpenAPI 사양을 준수하는 헤드리스 REST API **_**](#headless-rest-apis)
+* GraphQL 사양을 준수하는 [**_** GraphQL API **_**](#graphql-api)
+* [**_** 일반 웹/REST 서비스 **_**](#plain-webrest-services) , Service Builder에서 생성
 
 ### 헤드리스 REST API
 
@@ -19,7 +19,7 @@ Liferay의 헤드리스 API는 Liferay DXP 리소스와 [RESTful](https://www.w3
 
 [GraphQL](https://graphql.org/) API는 헤드리스 REST API와 유사한 상호 작용을 지원하지만 유연성이 약간 더 높은 쿼리 언어입니다. Liferay DXP는 `[server][:port]/o/graphql`에서 이 API를 노출합니다.
 
-[GraphQL 클라이언트](https://graphql.org/graphql-js/graphql-clients/) 을 통해 API 또는 해당 설명서를 탐색하여 자세한 정보를 찾을 수 있습니다. Liferay에는 실행 중인 인스턴스의 `[server][:port]/o/api` (오른쪽 상단에서 _GraphQL_ 선택)에서 찾을 수 있는 내장 클라이언트가 포함되어 있습니다.
+[GraphQL 클라이언트](https://graphql.org/graphql-js/graphql-clients/) 을 통해 API 또는 해당 설명서를 탐색하여 자세한 정보를 찾을 수 있습니다. Liferay에는 실행 중인 인스턴스의 `[server][:port]/o/api` (오른쪽 상단에서 **GraphQL** 선택)에서 찾을 수 있는 내장 클라이언트가 포함되어 있습니다.
 
 ### 일반 웹/REST 서비스
 

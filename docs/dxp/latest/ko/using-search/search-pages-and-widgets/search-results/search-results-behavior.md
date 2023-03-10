@@ -48,7 +48,7 @@
 
 ### 최종 권한 확인
 
-최종 권한 확인 단계는 UI에 결과를 표시하기 전에 발생합니다. 예를 들어 사용자가 _liferay_을 검색하면 검색 엔진이 모든 관련 포럼 게시물을 반환합니다. 검색 결과는 관련 포럼 게시물 목록을 반복하면서 사용자가 게시물과 해당 범주를 볼 수 있도록 게시물의 마지막 권한 확인을 수행합니다. 사용자가 볼 수 있는 권한이 없는 카테고리에 일치하는 포럼 게시물이 있으면 검색 결과 목록에서 제외됩니다.
+최종 권한 확인 단계는 UI에 결과를 표시하기 전에 발생합니다. 예를 들어 사용자가 **liferay** 을 검색하면 검색 엔진이 모든 관련 포럼 게시물을 반환합니다. 검색 결과는 관련 포럼 게시물 목록을 반복하면서 사용자가 게시물과 해당 범주를 볼 수 있도록 게시물의 마지막 권한 확인을 수행합니다. 사용자가 볼 수 있는 권한이 없는 카테고리에 일치하는 포럼 게시물이 있으면 검색 결과 목록에서 제외됩니다.
 
 권한 확인의 마지막 라운드는 제어판 &rarr; 구성 &rarr; 시스템 설정 &rarr; 검색 &rarr; 기본 검색 결과 권한 필터에서 구성할 수 있습니다. 여기에는 두 가지 설정이 포함됩니다.
 
@@ -88,7 +88,7 @@
 
 1. 검색 결과 요약에 표시할 수 있는 필드는 검색 결과 표시 로직( [`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/builder/SearchResultSummaryDisplayBuilder.java) 및 [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java) )에 의해 정의됩니다.
 
-1. [검색 결과](./configuring-the-search-results-widget.md) 위젯(기본적으로_목록_ )에서 사용하는 [위젯 템플릿](./../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) 에는 요약에 포함된 사용 가능한 필드를 포함하여 검색 결과 표시와 관련된 모든 항목의 최종 단어가 있습니다.
+1. [검색 결과](./configuring-the-search-results-widget.md) 위젯(기본적으로 **목록**)에서 사용하는 [위젯 템플릿](./../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) 에는 요약에 포함된 사용 가능한 필드를 포함하여 검색 결과 표시와 관련된 모든 항목의 최종 단어가 있습니다.
 
 ## 하이라이트
 
@@ -96,7 +96,7 @@
 
 ![결과 목록에서 검색 키워드가 강조 표시됩니다.](./search-results-behavior/images/05.png)
 
-강조 표시는 결과가 반환되는 이유를 암시하는 유용한 시각적 단서이지만 주의하십시오. 적중은 점수가 높을 수 있으므로 요약에 강조 표시 없이 결과 상단 근처에 반환됩니다. 모든 인덱싱된 필드가 요약에 나타나지 않기 때문입니다. Arthur C. Clarke라는 사용자를 생각해 보십시오. 그는 검색 가능한 *acc@authors.org*의 이메일 주소를 가지고 있습니다. 사용자에 대한 결과 요약에는 사용자의 전체 이름만 포함되어 있기 때문에 전자 메일 주소로 Mr. Clarke를 검색하면 사용자가 반환되지만 용어는 강조 표시되지 않습니다.
+강조 표시는 결과가 반환되는 이유를 암시하는 유용한 시각적 단서이지만 주의하십시오. 적중은 점수가 높을 수 있으므로 요약에 강조 표시 없이 결과 상단 근처에 반환됩니다. 모든 인덱싱된 필드가 요약에 나타나지 않기 때문입니다. Arthur C. Clarke라는 사용자를 생각해 보십시오. 그는 검색 가능한 **acc@authors.org** 의 이메일 주소를 가지고 있습니다. 사용자에 대한 결과 요약에는 사용자의 전체 이름만 포함되어 있기 때문에 전자 메일 주소로 Mr. Clarke를 검색하면 사용자가 반환되지만 용어는 강조 표시되지 않습니다.
 
 ![일부 결과에는 강조 표시된 용어가 없을 수도 있습니다.](./search-results-behavior/images/06.png)
 
@@ -116,7 +116,7 @@ Liferay 7.2+에서는 공개 콘텐츠 페이지의 [페이지 콘텐츠](../../
 Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가 비활성화됩니다. 그러나 원하는 경우 활성화할 수 있습니다. 자세한 내용은 [비공개 페이지 활성화](../../../site-building/creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) 를 참조하세요.
 ```
 
-콘텐츠 페이지에 대해 인덱싱된 필드를 검색하려면 검색 결과 위젯의 _문서 양식_ 에 결과 표시 설정을 활성화합니다. 자세한 내용은 [검색 엔진 문서 검사](./configuring-the-search-results-widget.md#inspecting-search-engine-documents) 을 참조하십시오.
+콘텐츠 페이지에 대해 인덱싱된 필드를 검색하려면 검색 결과 위젯의 **문서 양식** 에 결과 표시 설정을 활성화합니다. 자세한 내용은 [검색 엔진 문서 검사](./configuring-the-search-results-widget.md#inspecting-search-engine-documents) 을 참조하십시오.
 
 ![콘텐츠 페이지의 문서 보기를 검사하여 인덱싱된 필드를 확인합니다.](./search-results-behavior/images/12.png)
 

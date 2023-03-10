@@ -16,8 +16,8 @@
 
 마이그레이션 단계는 다음과 같습니다.
 
-1. *시스템 설정* &rarr; *파일 저장소*에서 새 파일 저장소를 구성합니다.
-1. *Server Administration* &rarr; *Data Migration*에서 리포지토리 후크(스토어 구현 클래스)를 선택하고 *Execute*을 클릭합니다.
+1. **시스템 설정** &rarr; **파일 저장소** 에서 새 파일 저장소를 구성합니다.
+1. **Server Administration** &rarr; **Data Migration** 에서 리포지토리 후크(스토어 구현 클래스)를 선택하고 **Execute** 을 클릭합니다.
 
     ![데이터 마이그레이션 유틸리티](./file-store-migration/images/01.png)
 

@@ -59,11 +59,11 @@ Then, follow these steps to import an example Fragment Set to see how Fragment r
     Project Imported
     ```
 
-1. 조각 세트를 사용할 수 있는지 확인합니다. 브라우저에서 `https://localhost:8080`을 가리키고 화면 왼쪽의 사이트 메뉴 아래에서 *Design* &rarr; *Fragments*으로 이동합니다. I6R3 세트는 다른 조각 세트와 함께 나타나야 합니다.
+1. 조각 세트를 사용할 수 있는지 확인합니다. 브라우저에서 `https://localhost:8080`을 가리키고 화면 왼쪽의 사이트 메뉴 아래에서 **Design** &rarr; **Fragments** 으로 이동합니다. I6R3 세트는 다른 조각 세트와 함께 나타나야 합니다.
 
-1. *I6R3 세트*을 클릭합니다.
+1. **I6R3 세트** 을 클릭합니다.
 
-1. *리소스* 탭을 클릭합니다. `books.png` 이미지가 리소스 목록에 나타납니다.
+1. **리소스** 탭을 클릭합니다. `books.png` 이미지가 리소스 목록에 나타납니다.
 
     ![리소스는 Fragment Set에서 사용할 수 있습니다.](./including-default-resources-with-fragments/images/01.png)
 
@@ -110,11 +110,11 @@ Then, follow these steps to import an example Fragment Set to see how Fragment r
     yarn run import
     ```
 
-1. 조각 세트에 리소스가 포함되어 있는지 확인합니다. UI의 *Fragments* 페이지에서 *I6R3 Set* 을 선택하고 *Resources* 탭을 클릭합니다. 리소스 목록에 새 이미지가 나타나야 합니다.
+1. 조각 세트에 리소스가 포함되어 있는지 확인합니다. UI의 **Fragments** 페이지에서 **I6R3 Set** 을 선택하고 **Resources** 탭을 클릭합니다. 리소스 목록에 새 이미지가 나타나야 합니다.
 
     ![세트의 자원 목록에 새 이미지가 나타나는지 확인하십시오.](./including-default-resources-with-fragments/images/03.png)
 
-1. Set의 *Fragments* 탭을 선택하고 *I6R3 Card* Fragment를 클릭하여 *I6R3 Card* Fragment를 엽니다. Fragment 소스는 Fragments Editor에 나타납니다.
+1. Set의 **Fragments** 탭을 선택하고 **I6R3 Card** Fragment를 클릭하여 **I6R3 Card** Fragment를 엽니다. Fragment 소스는 Fragments Editor에 나타납니다.
 
 1. 새 이미지 리소스를 사용하도록 Fragment를 업데이트합니다. `img` 요소의 `src="[resources:books.png]"` 속성에서 `books.png` 을 삭제하고 `src="[resources:`뒤에 새 이미지 파일의 이름을 입력하기 시작합니다. 이미지 파일 이름이 있는 속성 값이 커서 아래에 나타납니다. 해당 속성 값을 선택합니다.
 

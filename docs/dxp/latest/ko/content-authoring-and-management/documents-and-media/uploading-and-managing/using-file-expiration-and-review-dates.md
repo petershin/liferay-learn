@@ -22,7 +22,7 @@
 
 ![여러 파일에 대한 만료 및 검토를 활성화 또는 비활성화합니다.](./using-file-expiration-and-review-dates/images/02.png)
 
-만료 또는 검토를 활성화하려면 *만료 안 함* 또는 *검토 안 함* 확인란을 선택 취소하면 됩니다. 기본 검토 및 만료 날짜는 활성화 시점으로부터 1년으로 설정됩니다. 원하는 경우 다른 날짜와 시간을 설정할 수 있습니다.
+만료 또는 검토를 활성화하려면 **만료 안 함** 또는 **검토 안 함** 확인란을 선택 취소하면 됩니다. 기본 검토 및 만료 날짜는 활성화 시점으로부터 1년으로 설정됩니다. 원하는 경우 다른 날짜와 시간을 설정할 수 있습니다.
 
 Liferay의 시스템은 설정된 [확인 간격](#configuring-the-check-interval) 에 따라 만료 또는 검토 날짜에 도달한 파일만 확인합니다.
 
@@ -32,13 +32,13 @@ Liferay의 시스템은 설정된 [확인 간격](#configuring-the-check-interva
 
 기본적으로 문서 및 미디어 애플리케이션은 15분마다 파일 만료 및 검토 날짜를 확인하도록 구성됩니다. 그러나 제어판을 통해 이 간격을 구성할 수 있습니다.
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판* 탭을 클릭한 다음 *시스템 설정* &rarr; *문서 및 미디어* &rarr; *서비스*로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** 탭을 클릭한 다음 **시스템 설정** &rarr; **문서 및 미디어** &rarr; **서비스** 로 이동합니다.
 
-1. *확인 간격* 필드를 사용하여 파일 확인 간격(분)을 결정합니다.
+1. **확인 간격** 필드를 사용하여 파일 확인 간격(분)을 결정합니다.
    
    ![확인 사이의 시간(분)을 입력합니다.](./using-file-expiration-and-review-dates/images/03.png)
 
-1. 완료되면 *저장* 을 클릭합니다.
+1. 완료되면 **저장** 을 클릭합니다.
 
 일단 저장되면 시스템은 설정된 간격에 따라 만료 또는 검토 날짜에 도달한 파일을 자동으로 확인합니다.
 
@@ -46,17 +46,17 @@ Liferay의 시스템은 설정된 [확인 간격](#configuring-the-check-interva
 
 파일이 만료되거나 검토가 필요한 경우 파일 소유자, 검토자 또는 파일이 포함된 폴더에 가입한 모든 사용자에게 알림 이메일이 전송됩니다. 문서 및 미디어는 기본 알림 메시지를 제공하지만 원하는 경우 메시지를 편집할 수 있습니다.
 
-1. 사이트 또는 자산 라이브러리에서 *문서 및 미디어* 애플리케이션으로 이동합니다.
+1. 사이트 또는 자산 라이브러리에서 **문서 및 미디어** 애플리케이션으로 이동합니다.
 
-1. Application Bar에서 Actions 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 *Configuration*를 선택합니다.
+1. Application Bar에서 Actions 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 **Configuration** 를 선택합니다.
 
-1. 모달 창에서 *Documents Needs Review Email* 또는 *Document Expired Email* 탭을 클릭합니다.
+1. 모달 창에서 **Documents Needs Review Email** 또는 **Document Expired Email** 탭을 클릭합니다.
    
    ![구성 모달 창에서 알림 이메일을 편집합니다.](./using-file-expiration-and-review-dates/images/04.png)
 
 1. 원하는 알림 메시지를 작성합니다.
 
-1. 완료되면 *저장* 을 클릭합니다.
+1. 완료되면 **저장** 을 클릭합니다.
 
 ## 추가 정보
 

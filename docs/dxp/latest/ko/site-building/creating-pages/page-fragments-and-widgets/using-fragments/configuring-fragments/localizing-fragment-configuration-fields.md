@@ -4,12 +4,12 @@
 
 Liferay Fragments를 사용할 때 대상 고객의 언어와 일치하도록 다음 Fragment 구성 필드를 현지화할 수 있습니다.
 
-* [이미지 설명(*대체 텍스트*)](#localizing-image-descriptions)
-* [수정 가능한 URL](#localizing-editable-urls)<!-- * \[Collection Filter Label Text\](#localizing-collection-filter-label-text) -->프래그먼트 개발 중에 `지역화 가능` 속성을 사용하여 프래그먼트의 구성 필드를 지역화 가능하게 만들 수 있습니다. 자세한 내용은 [Fragment Specific Tags and Attributes Reference](../../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md)을 참조하십시오.
+* [이미지 설명(**대체 텍스트**)](#localizing-image-descriptions)
+* [수정 가능한 URL](#localizing-editable-urls) <!-- * \[Collection Filter Label Text\](#localizing-collection-filter-label-text) --> 프래그먼트 개발 중에 `지역화 가능` 속성을 사용하여 프래그먼트의 구성 필드를 지역화 가능하게 만들 수 있습니다. 자세한 내용은 [Fragment Specific Tags and Attributes Reference](../../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md)을 참조하십시오.
 
 ## 이미지 설명 현지화
 
-내장 및 사용자 지정 조각에서 이미지 설명( *대체 텍스트* 또는 *대체 텍스트*이라고도 함)에 대해 다른 언어로 현지화를 추가할 수 있습니다. 편집기 도구 모음(A)의 언어 선택기를 사용하여 콘텐츠 페이지의 대상 언어를 변경하면 이미지 설명을 편집하여 대상 언어에 대한 텍스트를 조정할 수 있습니다(B).
+내장 및 사용자 지정 조각에서 이미지 설명(**대체 텍스트** 또는 **대체 텍스트** 이라고도 함)에 대해 다른 언어로 현지화를 추가할 수 있습니다. 편집기 도구 모음(A)의 언어 선택기를 사용하여 콘텐츠 페이지의 대상 언어를 변경하면 이미지 설명을 편집하여 대상 언어에 대한 텍스트를 조정할 수 있습니다(B).
 
 ![콘텐츠 페이지 편집기에서 이미지 설명을 현지화할 수 있습니다.](./localizing-fragment-configuration-fields/images/01.png)
 

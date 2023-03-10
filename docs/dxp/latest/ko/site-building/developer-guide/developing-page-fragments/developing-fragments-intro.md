@@ -25,7 +25,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 
 * [편집 가능한 요소](../reference/fragments/fragment-specific-tags-reference.md): 텍스트, 이미지, 링크 및 "서식 있는" 텍스트 요소를 편집 가능하게 만들어 사용자가 콘텐츠를 사용자 지정 텍스트 및 이미지로 바꿀 수 있습니다. 이것이 Fragment를 재사용할 수 있게 만드는 핵심 기능입니다. 위젯을 포함할 수도 있습니다.
 * [드롭 영역](./defining-fragment-drop-zones) : `<lfr-drop-zone></lfr-drop-zone>` 레이블을 사용하여 조각에 드롭 영역을 추가합니다. 추가되면 조각과 위젯을 정의된 영역으로 끌어다 놓을 수 있습니다.
-* [구성 옵션](./adding-configuration-options-to-fragments.md) <!-- TODO: Fix link -->: Fragment의 글꼴 색상 수정과 같은 구성 옵션을 응용 프로그램의 구성 메뉴에 추가합니다.
+* [구성 옵션](./adding-configuration-options-to-fragments.md) <!-- TODO: Fix link --> : Fragment의 글꼴 색상 수정과 같은 구성 옵션을 응용 프로그램의 구성 메뉴에 추가합니다.
 * [FreeMarker](https://freemarker.apache.org/) : FreeMarker는 변수, 조건문 등으로 HTML을 향상시키는 템플릿 언어입니다. HTML에서 FreeMarker에 대해 [대체(대괄호) 구문](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html) 을 사용할 수 있습니다.
 
 ```{important}

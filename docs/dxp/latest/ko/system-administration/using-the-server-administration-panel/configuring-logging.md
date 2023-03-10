@@ -12,17 +12,17 @@
 
 카테고리를 추가하려면,
 
-1. 제어판 &rarr; 구성 &rarr; 서버 관리로 이동하고 _로그 수준_ 탭을 클릭합니다.
+1. 제어판 &rarr; 구성 &rarr; 서버 관리로 이동하고 **로그 수준** 탭을 클릭합니다.
 
 1. 추가 버튼 ![Add](../../images/icon-add.png)을 클릭하여 범주 추가 양식을 엽니다.
 
-1. 양식을 작성하고 *저장*을 클릭하십시오.
+1. 양식을 작성하고 **저장** 을 클릭하십시오.
 
-1. _저장_을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
-*로거 이름*: 서버에 배포된 클래스, 예: `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
+**로거 이름** : 서버에 배포된 클래스, 예: `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
 
-*로그 수준*: 보고 싶은 로그 수준을 선택합니다: OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE 또는 ALL.
+**로그 수준** : 보고 싶은 로그 수준을 선택합니다: OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE 또는 ALL.
 
 ![로깅 수준 범주에 배포된 자체 클래스를 추가할 수 있습니다.](./configuring-logging/images/01.png)
 
@@ -32,12 +32,12 @@
 
 기존 로깅 구성의 로그 수준을 변경하려면
 
-1. 제어판 &rarr; 구성 &rarr; 서버 관리로 이동하고 _로그 수준_ 탭을 클릭합니다.
+1. 제어판 &rarr; 구성 &rarr; 서버 관리로 이동하고 **로그 수준** 탭을 클릭합니다.
 
 1. 구성할 범주를 찾아보거나 검색합니다.
 
 1. 선택기를 사용하여 레벨을 변경하십시오.
 
-1. _저장_을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 ![가능한 문제를 디버깅하기 위해 기록할 수 있는 클래스의 로깅 수준을 변경할 수 있습니다.](./configuring-logging/images/02.png)

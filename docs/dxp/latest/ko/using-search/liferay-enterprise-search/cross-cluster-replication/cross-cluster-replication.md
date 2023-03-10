@@ -10,7 +10,7 @@ uuid: 24d79833-a3e6-4af6-a1d1-4c60370878b7
 
 데이터 위치 및 재해 복구에 대한 우려를 해결하기 위해 Elasticsearch는 Elasticsearch 7+에 대해 [LES 가입자](https://www.liferay.com/products/dxp/enterprise-search) 가 Liferay DXP와 함께 사용할 수 있는 [CCR(Cross-Cluster Replication)](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/xpack-ccr.html) 기능을 출시했습니다(버전 호환성 세부 정보는 [LES 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651#Liferay-Enterprise-Search) 참조). ). LES CCR 모듈을 사용하면 대체 형태의 다중 데이터 센터 배포를 달성할 수 있습니다. Elasticsearch 클러스터의 노드를 여러 데이터 센터에 분산하는 것은 허용하지 않지만 각 데이터 센터에서 별도의 Elasticsearch 클러스터를 구성하고 연결할 수 있습니다.
 
-이 구성은 _리더_ 인덱스를 포함하는 하나의 클러스터와 리더에서 복제된 _팔로워_ 인덱스를 포함하는 하나 이상의 클러스터를 가정합니다. 팔로어 인덱스는 Liferay DXP에서만 데이터를 읽는 데 사용됩니다. 리더 인덱스는 항상 쓰기에 사용되지만 읽기에도 사용할 수 있습니다.
+이 구성은 **리더** 인덱스를 포함하는 하나의 클러스터와 리더에서 복제된 **팔로워** 인덱스를 포함하는 하나 이상의 클러스터를 가정합니다. 팔로어 인덱스는 Liferay DXP에서만 데이터를 읽는 데 사용됩니다. 리더 인덱스는 항상 쓰기에 사용되지만 읽기에도 사용할 수 있습니다.
 
 ![클러스터 간 복제를 사용하면 서로 다른 데이터 센터가 Liferay DXP 인덱스와 동기화된 Elasticsearch 클러스터를 보유할 수 있습니다.](./cross-cluster-replication/images/01.png)
 
@@ -37,7 +37,7 @@ Liferay DXP 7.4부터 Liferay Enterprise Search(LES) 애플리케이션이 모�
 
 ## Liferay DXP: 원격 클러스터에서 복제할 인덱스 결정
 
-설치 시 기본 Liferay DXP 7.3 색인은 아래 목록과 비슷합니다(변경될 수 있음). 기본 글로벌 *인덱스 이름 접두사* `liferay-`이며 Elasticsearch 7 커넥터 구성에서 변경할 수 있습니다. `20101` 데이터베이스에서 주어진 회사의 생성된 `companyId` 입니다. UI에 인스턴스 ID로 표시되며 [가상 인스턴스](../../../system-administration/configuring-liferay/virtual-instances.md)나타냅니다.
+설치 시 기본 Liferay DXP 7.3 색인은 아래 목록과 비슷합니다(변경될 수 있음). 기본 글로벌 **인덱스 이름 접두사** `liferay-`이며 Elasticsearch 7 커넥터 구성에서 변경할 수 있습니다. `20101` 데이터베이스에서 주어진 회사의 생성된 `companyId` 입니다. UI에 인스턴스 ID로 표시되며 [가상 인스턴스](../../../system-administration/configuring-liferay/virtual-instances.md)나타냅니다.
 
 | 색인 ID                                               | 인덱스 유형 | 색인 목적                                                    |
 |:--------------------------------------------------- |:------ |:-------------------------------------------------------- |
@@ -94,7 +94,7 @@ CCR에는 Elasticsearch Platinum 수준 라이선스가 필요하지만 [LES 고
 
 Liferay DXP에는 CCR 설정을 완료하는 논리가 포함되어 있지만 구성 파일 [](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)않고 시스템 설정 UI에서 CCR 기능을 활성화하는 데 의존합니다. 최소한 `readFromLocalClusters` 속성은 UI에서 트리거되어야 합니다. CCR이 구성되면 인덱스 복제를 확인하고 검색을 시작하기만 하면 됩니다.
 
-CCR을 처음 활성화할 때(구성에서 _업데이트_ 클릭한 후 --- [로컬 팔로워 데이터 센터에서 CCR 구성](./configuring-ccr-in-a-local-follower-data-center.md)참조) 로컬 클러스터 구성의 각 항목이 처리됩니다. 먼저 [원격 클러스터](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-remote-clusters.html) [클러스터 업데이트 설정 API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cluster-update-settings.html) 을 통해 등록됩니다. 원격 클러스터의 각 인덱스( `.` 로 시작하는 인덱스 또는 Excluded Indexes 설정에 정의된 인덱스 제외)에 대해 [Create Follower API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/ccr-put-follow.html) 이 호출되어 원격 인덱스와의 팔로워/리더 관계를 설정합니다. 
+CCR을 처음 활성화할 때(구성에서 **업데이트** 클릭한 후 --- [로컬 팔로워 데이터 센터에서 CCR 구성](./configuring-ccr-in-a-local-follower-data-center.md)참조) 로컬 클러스터 구성의 각 항목이 처리됩니다. 먼저 [원격 클러스터](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-remote-clusters.html) [클러스터 업데이트 설정 API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cluster-update-settings.html) 을 통해 등록됩니다. 원격 클러스터의 각 인덱스( `.` 로 시작하는 인덱스 또는 Excluded Indexes 설정에 정의된 인덱스 제외)에 대해 [Create Follower API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/ccr-put-follow.html) 이 호출되어 원격 인덱스와의 팔로워/리더 관계를 설정합니다. 
 
 기존 CCR 구성을 편집한 후 또는 CCR을 비활성화하면 이전에 로컬 클러스터 구성에 저장된 각 항목이 처리됩니다. 각 인덱스에 대해 [팔로잉이 일시 중지됨](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/ccr-post-pause-follow.html) , [인덱스가 닫힘](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-close.html#indices-close) , [리더가 언팔로우됨](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/ccr-post-unfollow.html) , [팔로어 인덱스가 삭제됨](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-delete-index.html) . 그러면 원격 클러스터가 [Cluster Update Settings API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cluster-update-settings.html) 을 통해 등록 취소됩니다. CCR을 비활성화하려는 경우 여기에서 처리가 종료됩니다. 구성을 편집하는 경우 기존 로컬 클러스터 구성 항목은 CCR을 처음 활성화하는 것처럼 계속 처리됩니다. 각 항목에 대해 [원격 클러스터](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-remote-clusters.html) [클러스터 업데이트 설정 API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cluster-update-settings.html) 을 통해 등록됩니다. 각 원격 클러스터의 모든 인덱스( `.` 로 시작하거나 Excluded Indexes 설정에서 정의된 인덱스 제외)에 대해 [Create Follower API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/ccr-put-follow.html) 이 호출되어 원격 인덱스와의 팔로워/리더 관계를 설정합니다.
 

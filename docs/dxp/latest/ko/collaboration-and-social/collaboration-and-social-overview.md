@@ -39,7 +39,7 @@ Liferay DXP에는 다음과 같은 소셜 애플리케이션이 포함되어 있
 
 ## 초대
 
-[_구성원 초대_ 위젯](../site-building/sites/site-membership/inviting-members-to-your-site.md) 을 사용하면 사이트 관리자가 사이트에 가입하라는 초대장을 보낼 수 있습니다. 사용자가 이러한 초대를 확인하면 사이트 관리자가 정의한 역할에 할당된 사이트 구성원이 됩니다. [사이트 멤버십](../site-building/sites/site-membership/adding-members-to-sites.md)에 대한 자세한 내용을 보려면 클릭하십시오.
+[**구성원 초대** 위젯](../site-building/sites/site-membership/inviting-members-to-your-site.md) 을 사용하면 사이트 관리자가 사이트에 가입하라는 초대장을 보낼 수 있습니다. 사용자가 이러한 초대를 확인하면 사이트 관리자가 정의한 역할에 할당된 사이트 구성원이 됩니다. [사이트 멤버십](../site-building/sites/site-membership/adding-members-to-sites.md)에 대한 자세한 내용을 보려면 클릭하십시오.
 
 ![그림 4: 사이트에 구성원 초대](./collaboration-and-social-overview/images/04.png)
 
@@ -49,6 +49,6 @@ Liferay DXP에는 다음과 같은 소셜 애플리케이션이 포함되어 있
 
 ## 지식 베이스
 
-_Knowledge Base_ 앱을 사용하여 전문적인 제품 설명서를 표시하거나 완전한 책 또는 안내서를 작성할 수 있습니다. 콘텐츠 작성자는 마크다운을 비롯한 여러 형식을 사용할 수 있습니다. 또한 Knowledge Base는 [워크플로 엔진](https://help.liferay.com/hc/articles/360028721732-Introduction-to-Workflow) 과 통합되어 콘텐츠 편집자가 게시 전에 기사를 검토하고 승인할 수 있습니다.
+**Knowledge Base** 앱을 사용하여 전문적인 제품 설명서를 표시하거나 완전한 책 또는 안내서를 작성할 수 있습니다. 콘텐츠 작성자는 마크다운을 비롯한 여러 형식을 사용할 수 있습니다. 또한 Knowledge Base는 [워크플로 엔진](https://help.liferay.com/hc/articles/360028721732-Introduction-to-Workflow) 과 통합되어 콘텐츠 편집자가 게시 전에 기사를 검토하고 승인할 수 있습니다.
 
 ![그림 6: Knowledge Base 위젯을 사용하여 기사를 게시할 수도 있습니다.](./collaboration-and-social-overview/images/06.png)

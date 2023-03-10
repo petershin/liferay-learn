@@ -18,7 +18,7 @@ LES Learning to Rank가 배포되었지만 특정 검색 페이지에서 비활�
 
 1. 를 클릭하여 위젯의 구성 화면을 엽니다.
 
-   _이 페이지에서 추가 하위 수준 검색 옵션을 구성합니다._
+**이 페이지에서 추가 하위 수준 검색 옵션을 구성합니다.**
 
 1. 제외할 기여자 필드에 다음을 입력합니다.
 
@@ -30,7 +30,7 @@ LES Learning to Rank가 배포되었지만 특정 검색 페이지에서 비활�
 
 Elasticsearch로 전송된 Liferay 쿼리를 다시 채점하기 위해 Learning to Rank를 사용하기 위한 몇 가지 전제 조건이 있습니다.
 
-- 순위 학습에는 [Liferay Enterprise Search](https://www.liferay.com/products/dxp/enterprise-search) (LES) 구독이 필요합니다. 구독이 완료되면 [Liferay Enterprise Search Learning을 다운로드하여 순위](https://customer.liferay.com/en/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191013&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKG 파일을 만들고 [설치합니다](../../system-administration/installing-and-managing-apps/installing-apps.md).
+- 순위 학습에는 [Liferay Enterprise Search](https://www.liferay.com/products/dxp/enterprise-search) (LES) 구독이 필요합니다. 구독이 완료되면 [Liferay Enterprise Search Learning을 다운로드하여 순위](https://customer.liferay.com/en/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118191013& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKG 파일을 만들고 [설치합니다](../../system-administration/installing-and-managing-apps/installing-apps.md).
 
    ```{note}
    Liferay DXP 7.4부터 Liferay Enterprise Search(LES) 애플리케이션이 모든 Liferay DXP 번들 및 Docker 컨테이너에 포함됩니다. 자세한 내용은 [LES 활성화](./activating-liferay-enterprise-search.md)를 참조하세요.
@@ -58,7 +58,7 @@ Elasticsearch로 전송된 Liferay 쿼리를 다시 채점하기 위해 Learning
 
 1. 훈련된 모델이 결과의 순위를 다시 지정하면 Liferay의 [검색 결과]( ../search-pages-and-widgets/search-results/search-results.md)에 새로운 순서로 반환됩니다.
 
-위의 정렬된 목록의 하위 글머리 기호에 불과하지만 이 패러다임 작업의 대부분은 훈련된 모델을 만들고 연마하는 것입니다. 여기에서는 범위를 벗어나지만 아래는 Liferay 쿼리에서 기계 학습의 마법을 조율하기 위해 모든 부분을 제자리에 가져오는 데 도움이 됩니다. 다음은 _모델 교육_ 을 구성하는 요소에 대한 간략한 개요입니다.
+위의 정렬된 목록의 하위 글머리 기호에 불과하지만 이 패러다임 작업의 대부분은 훈련된 모델을 만들고 연마하는 것입니다. 여기에서는 범위를 벗어나지만 아래는 Liferay 쿼리에서 기계 학습의 마법을 조율하기 위해 모든 부분을 제자리에 가져오는 데 도움이 됩니다. 다음은 **모델 교육** 을 구성하는 요소에 대한 간략한 개요입니다.
 
 ## 모델 교육
 
@@ -66,9 +66,9 @@ Elasticsearch로 전송된 Liferay 쿼리를 다시 채점하기 위해 Learning
 
 - 교육 모델을 만드는 데 사용하려는 Learning to Rank 알고리즘입니다. 이 데모에서는 [RankLib](https://sourceforge.net/p/lemur/wiki/RankLib/) 을 사용합니다.
 
-- 검색 결과의 등급 목록을 포함하는 _판단 목록_. 알고리즘은 판단 목록의 순서를 존중하는 모델을 생성합니다.
+- 검색 결과의 등급 목록을 포함하는 **판단 목록** . 알고리즘은 판단 목록의 순서를 존중하는 모델을 생성합니다.
 
-- 신뢰할 수 있는 모델을 생성하기 위해 판단 목록과 함께 사용하는 순위 학습 알고리즘에 전달하는 모든 _기능_ 을 포함하는 기능 세트입니다. Liferay에 대한 예제 기능 세트가 예제에 나와 있습니다.
+- 신뢰할 수 있는 모델을 생성하기 위해 판단 목록과 함께 사용하는 순위 학습 알고리즘에 전달하는 모든 **기능** 을 포함하는 기능 세트입니다. Liferay에 대한 예제 기능 세트가 예제에 나와 있습니다.
 
 [판정 목록](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#judgments-expression-of-the-ideal-ordering) 은 등급별 검색 결과 목록입니다.
 

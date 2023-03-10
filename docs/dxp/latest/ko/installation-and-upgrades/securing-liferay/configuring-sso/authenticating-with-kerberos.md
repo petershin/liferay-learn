@@ -8,7 +8,7 @@ Kerberos를 사용하여 Liferay DXP로 Microsoft Windows&trade; 계정을 인�
 
 Windows&trade; 서버에서 Kerberos 및 Active Directory를 설정하는 방법을 설명하는 것은 이 문서의 범위를 벗어나지만 Liferay 인증을 설정하기 위한 최소 전제 조건을 설명할 수 있습니다.
 
-1. Windows&trade; AD 서버와 Liferay DXP가 네트워크에서 서로를 확인할 수 있도록 Active Directory 및 DNS가 설정된 서버. 즉, *이름으로* 서로 ping할 수 있어야 합니다.
+1. Windows&trade; AD 서버와 Liferay DXP가 네트워크에서 서로를 확인할 수 있도록 Active Directory 및 DNS가 설정된 서버. 즉, **이름으로** 서로 ping할 수 있어야 합니다.
 
 1. AD Liferay DXP의 관리 사용자는 AD에 바인딩하는 데 사용할 수 있습니다.
 
@@ -135,17 +135,17 @@ Windows&trade; 서버에서 Kerberos 및 Active Directory를 설정하는 방법
 
    | 설정            | 묘사                                                                                 |
    |:------------- |:---------------------------------------------------------------------------------- |
-   | **공급자URL**    | 적절한 포트의 AD 서버.                                                                     |
-   | **기초DN**      | 귀하의 도메인 구성. 위의 예는 `DC=INTDOMAIN.DC=LOCAL`수 있습니다.                                   |
-   | **교장/자격 증명**  | keytab 파일로 내보낸 사용자의 자격 증명을 제공합니다.                                                  |
+   | **공급자URL** | 적절한 포트의 AD 서버.                                                                     |
+   | **기초DN** | 귀하의 도메인 구성. 위의 예는 `DC=INTDOMAIN.DC=LOCAL`수 있습니다.                                   |
+   | **교장/자격 증명** | keytab 파일로 내보낸 사용자의 자격 증명을 제공합니다.                                                  |
    | **입증 수색 여과기** | 사용자 개체를 반환하려면 적절한 검색 필터를 제공하십시오. 예: `(&(objectCategory=사람)(sAMAccountName=*))` |
-   | **UUID**      | `sAMAccountName`과 같이 사용자를 고유하게 식별하는 것을 제공하십시오.                                     |
-   | **사용자 이름**    | `sAMAccountName`과 같이 Liferay DXP의 화면 이름 필드에 매핑되어야 하는 필드를 제공합니다.                    |
-   | **암호**        | `userPassword`과 같이 사용자 비밀번호가 포함된 필드를 제공하십시오.                                       |
+   | **UUID** | `sAMAccountName`과 같이 사용자를 고유하게 식별하는 것을 제공하십시오.                                     |
+   | **사용자 이름** | `sAMAccountName`과 같이 Liferay DXP의 화면 이름 필드에 매핑되어야 하는 필드를 제공합니다.                    |
+   | **암호** | `userPassword`과 같이 사용자 비밀번호가 포함된 필드를 제공하십시오.                                       |
 
 1. 연결을 테스트하고 저장한 다음 구성을 활성화합니다.
 
-1. 마지막으로 구성 &rarr; 시스템 설정 &rarr; 보안 &rarr; SSO &rarr; 토큰 기반 SSO에서 Single Sign-On용 토큰을 구성합니다. 사용자 토큰 이름이 웹 서버에서 구성한 토큰과 정확히 *,* 과 일치하는지 확인하십시오. *활성화됨* 및 *LDAP에서 가져오기* 상자를 클릭하고 *저장*을 클릭합니다.
+1. 마지막으로 구성 &rarr; 시스템 설정 &rarr; 보안 &rarr; SSO &rarr; 토큰 기반 SSO에서 Single Sign-On용 토큰을 구성합니다. 사용자 토큰 이름이 웹 서버에서 구성한 토큰과 정확히 **,** 과 일치하는지 확인하십시오. **활성화됨** 및 **LDAP에서 가져오기** 상자를 클릭하고 **저장** 을 클릭합니다.
 
     ![인스턴스 설정 메뉴에서 SSO를 활성화합니다.](authenticating-with-kerberos/images/02.png)
 

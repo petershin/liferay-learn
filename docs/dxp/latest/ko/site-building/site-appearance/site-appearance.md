@@ -20,13 +20,14 @@ Liferay 사이트의 디자인과 기능은 다양한 보완 메커니즘을 통
 
 [Style Books](./style-books/using-a-style-book-to-standardize-site-appearance.md) 은 표준 색상 및 간격과 같이 사이트에 적용되는 시각적 표준 세트입니다. 이를 통해 각 페이지 간에 일관된 경험을 유지하면서 모든 페이지의 레이아웃을 독립적으로 디자인할 수 있습니다.
 
-![Style Books는 텍스트 색상과 같은 사이트 모양에 대한 규칙을 정의합니다.](./site-appearance/images/02.png)<!--
+![Style Books는 텍스트 색상과 같은 사이트 모양에 대한 규칙을 정의합니다.](./site-appearance/images/02.png) <!--
 TODO:
 
 ### Style Book Token Definitions
 
 Note how they tie into themes as well (depending on them for definitions), possibly? And then maybe link to developer guide articles? (Unless maybe developer guide material is not good to go into for this overview... then perhaps it'd be better to just briefly reference their reliance on the theme and leave it as that, not even with an H3)
--->## 위젯/조각 모양
+-->
+## 위젯/조각 모양
 
 조각과 위젯은 사이트의 빌딩 블록입니다. 사이트의 모양에 맞게 사용자 정의하는 방법에는 여러 가지가 있습니다.
 

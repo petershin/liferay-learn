@@ -34,7 +34,7 @@ Liferay DXP는 보안을 염두에 두고 제작되었습니다. 여기에는 [O
 
 ## 인증
 
-Liferay DXP 인증은 유연합니다. 기본적으로 사용자는 데이터베이스를 사용하여 사용자를 인증하는 _로그인_ 위젯을 사용하여 Liferay DXP에 로그인합니다. 기본적으로 게스트는 로그인 위젯을 사용하여 기본 권한으로 계정을 생성할 수 있습니다. 기본 인증 환경의 거의 모든 요소는 관리자가 변경할 수 있습니다. 예를 들어,
+Liferay DXP 인증은 유연합니다. 기본적으로 사용자는 데이터베이스를 사용하여 사용자를 인증하는 **로그인** 위젯을 사용하여 Liferay DXP에 로그인합니다. 기본적으로 게스트는 로그인 위젯을 사용하여 기본 권한으로 계정을 생성할 수 있습니다. 기본 인증 환경의 거의 모든 요소는 관리자가 변경할 수 있습니다. 예를 들어,
 
 * [다단계 인증](./securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md)을 구성할 수 있습니다.
 * [SSO를 사용하여](./securing-liferay/configuring-sso.md) 인증을 관리할 수 있습니다.

@@ -4,17 +4,17 @@
 
 맞춤법 검사 설정을 구성하려면:
 
-1. 먼저 맞춤법 검사 색인을 재색인해야 합니다. *Control Panel* &rarr; *Configuration* &rarr; *Search*로 이동하여 Index Actions 화면을 엽니다.
+1. 먼저 맞춤법 검사 색인을 재색인해야 합니다. **Control Panel** &rarr; **Configuration** &rarr; **Search** 로 이동하여 Index Actions 화면을 엽니다.
 
-    *모든 맞춤법 검사 색인 다시 색인화*옆에 있는 *실행* 을 클릭하십시오.
+    **모든 맞춤법 검사 색인 다시 색인화** 옆에 있는 **실행** 을 클릭하십시오.
 
-1. 하나의 *제안* 위젯이 검색 페이지에 있는지 확인하십시오( [검색 페이지 템플릿](../working-with-search-pages/using-a-search-page-template.md)을 사용하는 경우 기본적으로 추가됨).
+1. 하나의 **제안** 위젯이 검색 페이지에 있는지 확인하십시오( [검색 페이지 템플릿](../working-with-search-pages/using-a-search-page-template.md)을 사용하는 경우 기본적으로 추가됨).
 
-1. *제안* 위젯 구성 화면을 엽니다. 위젯 옵션 버튼(![Options](../../../images/icon-widget-options.png))을 클릭하고 *구성*를 선택합니다.
+1. **제안** 위젯 구성 화면을 엽니다. 위젯 옵션 버튼(![Options](../../../images/icon-widget-options.png))을 클릭하고 **구성** 를 선택합니다.
 
     ![사용자 입력 실수를 허용하고 사용자를 결과로 이끄는 데 도움이 되도록 제안 설정을 구성합니다.](./enabling-search-suggestions/images/01.png)
 
-1. 원하는 대로 구성하고 *저장*을 클릭합니다.
+1. 원하는 대로 구성하고 **저장** 을 클릭합니다.
 
 ## 제안 구성 참조
 

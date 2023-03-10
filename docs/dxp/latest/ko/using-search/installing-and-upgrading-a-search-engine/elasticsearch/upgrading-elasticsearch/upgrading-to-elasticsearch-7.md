@@ -73,9 +73,9 @@ Liferay가 Elasticsearch 클러스터와 연결되면 Liferay를 다시 시작�
 
 1. 라이프레이를 다시 시작합니다.
 
-1. 회사, 시스템 및 맞춤법 검사 색인을 다시 색인화합니다. 전역 메뉴(![Global Menu](../../../../images/icon-applications-menu.png))에서 *제어판* &rarr; *구성* &rarr; *검색*으로 이동합니다. *Reindex all search indexes* 항목에 대해 *실행* 을 클릭합니다.
+1. 회사, 시스템 및 맞춤법 검사 색인을 다시 색인화합니다. 전역 메뉴(![Global Menu](../../../../images/icon-applications-menu.png))에서 **제어판** &rarr; **구성** &rarr; **검색** 으로 이동합니다. **Reindex all search indexes** 항목에 대해 **실행** 을 클릭합니다.
 
-1. [Workflow Metrics indexes](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) 을 다시 인덱싱합니다. 전역 메뉴(![Global Menu](../../../../images/icon-applications-menu.png))에서 *Applications* &rarr; *Workflow---Metrics*로 이동합니다. 설정 메뉴(![Options](../../../../images/icon-options.png) 및 클릭 *모두 재인덱싱*. 각 가상 인스턴스에 대해 프로세스를 반복합니다.
+1. [Workflow Metrics indexes](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) 을 다시 인덱싱합니다. 전역 메뉴(![Global Menu](../../../../images/icon-applications-menu.png))에서 **Applications** &rarr; **Workflow---Metrics** 로 이동합니다. 설정 메뉴(![Options](../../../../images/icon-options.png) 및 클릭 **모두 재인덱싱** . 각 가상 인스턴스에 대해 프로세스를 반복합니다.
 
 이렇게 하면 Liferay 데이터베이스에 저장된 데이터에서 빌드된 인덱스가 복원됩니다. 기본 스토리지로 사용되는 인덱스를 복원하려면 [Elasticsearch 백업](./backing-up-elasticsearch.md)을 참조하십시오.
 

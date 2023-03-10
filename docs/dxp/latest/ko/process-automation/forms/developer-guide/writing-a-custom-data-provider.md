@@ -49,7 +49,7 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
 
    1. 사이트 메뉴에서 콘텐츠 및 데이터 &rarr; 양식으로 이동합니다.
 
-   1. 데이터 공급자 탭을 열고 _추가_ 버튼을 클릭합니다.
+   1. 데이터 공급자 탭을 열고 **추가** 버튼을 클릭합니다.
 
       ![사용자 지정 데이터 공급자는 Liferay Forms에서 사용할 준비가 되었습니다.](./writing-a-custom-data-provider/images/01.png)
 
@@ -63,7 +63,7 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
 
       ![출력을 지정하여 사용자 지정 데이터 공급자를 구성합니다.](./writing-a-custom-data-provider/images/02.png)
 
-   1. *저장*을 클릭합니다.
+   1. **저장** 을 클릭합니다.
 
 1. Cities Near Diamond Bar 데이터 공급자를 사용하는 양식을 추가합니다.
 

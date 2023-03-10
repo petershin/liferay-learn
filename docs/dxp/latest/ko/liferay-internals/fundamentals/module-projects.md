@@ -6,9 +6,9 @@ Liferay 애플리케이션 및 사용자 지정은 Java 코드를 포함하는 [
 
 1. **코드:** 이미지, 템플릿 및 추가 설명자와 같은 Java 클래스 및 리소스. Java 패키지는 기본적으로 비공개이지만 다른 모듈에서 사용할 수 있도록 [내보내기](./exporting-packages.md)할 수 있습니다.
    
-   1 **빌드 스크립트: 모듈 빌드 및 배포를 위한** [Gradle](https://gradle.org/) 파일.
+   1 **빌드 스크립트: 모듈 빌드 및 배포를 위한**[Gradle](https://gradle.org/) 파일.
 
-1. **메타데이터:** [Bnd](https://bnd.bndtools.org/) 파일은 모듈 아티팩트를 정의하고 모듈이 제공하고 요구하는 패키지 및 기능을 지정합니다.
+1. **메타데이터:**[Bnd](https://bnd.bndtools.org/) 파일은 모듈 아티팩트를 정의하고 모듈이 제공하고 요구하는 패키지 및 기능을 지정합니다.
 
 모듈 프로젝트 구조는 다음과 같습니다.
 
@@ -228,7 +228,7 @@ liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 ```{literalinclude} ./module-projects/resources/liferay-k8s2.zip/k8s2-api/bnd.bnd
 ```
 
-The module's name is *Acme K8S2 API*. Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [*exports*](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
+The module's name is **Acme K8S2 API** . Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [**exports**](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
 
 #### Generated Metadata
 
@@ -259,7 +259,7 @@ Bnd는 `bnd.bnd` 파일의 모든 헤더를 전파하고 더 많은 헤더와 �
 
 이제 모듈 프로젝트의 모양, 빌드 및 배포 방법, 런타임에 모듈을 검사하는 방법을 알게 되었습니다.
 
-모듈은 `Greeter` API와 같은 API를 통해 서로의 기능을 활용합니다. Liferay는 OSGi 서비스를 사용하여 APIS를 정의, 구현 및 사용합니다. 다음으로 [OSGi 서비스로서의 API](./apis-as-osgi-services.md)는 OSGi 서비스를 사용하여 `Greeter` API를 *구현*하는 방법을 보여줍니다.
+모듈은 `Greeter` API와 같은 API를 통해 서로의 기능을 활용합니다. Liferay는 OSGi 서비스를 사용하여 APIS를 정의, 구현 및 사용합니다. 다음으로 [OSGi 서비스로서의 API](./apis-as-osgi-services.md)는 OSGi 서비스를 사용하여 `Greeter` API를 **구현** 하는 방법을 보여줍니다.
 
 ```{note}
 모듈 수명 주기에 대한 자세한 내용은 [모듈 수명 주기](../architecture/module-lifecycle.md)를 참조하세요.

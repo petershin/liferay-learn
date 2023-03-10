@@ -44,7 +44,7 @@
 
 ## 앱에 항목 추가
 
-1. *제어판* &rarr; *서버 관리* &rarr; *스크립트*에서 스크립트 콘솔로 이동합니다.
+1. **제어판** &rarr; **서버 관리** &rarr; **스크립트** 에서 스크립트 콘솔로 이동합니다.
 
 1. 다음 스크립트를 실행하여 일부 항목을 추가합니다.
 
@@ -83,7 +83,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. *제어판* &rarr; *Gogo Shell*에서 Gogo 셸 콘솔로 이동합니다.
+1. **제어판** &rarr; **Gogo Shell** 에서 Gogo 셸 콘솔로 이동합니다.
 
 1. `upgrade:list com.acme.j7z3.service`명령을 입력하여 1.0.1 업그레이드를 사용할 수 있는지 확인합니다. 1.0.1 버전은 출력 창에 등록된 업그레이드 프로세스로 나타납니다.
 

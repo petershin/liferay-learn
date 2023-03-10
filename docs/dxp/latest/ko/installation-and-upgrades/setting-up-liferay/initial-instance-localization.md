@@ -10,7 +10,7 @@ Liferay DXP는 언어, 시간대 등으로 현지화를 지원합니다. 영어(
 
 DXP를 시작하기 전에 기본 가상 인스턴스의 현지화를 구성하려면 [`Portal-ext.properties` 파일](../reference/portal-properties.md)을 사용하십시오.
 
-| **포털 속성**                   | **묘사**                                                                                                                                                             |
+| **포털 속성** | **묘사** |
 |:--------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `company.default.locale`    | [`locales`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) 포털 속성에 대해 정의된 사용 가능한 로캘로 설정합니다. |
 | `company.default.time.zone` | [`time.zones`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) 포털 속성에 정의된 시간대 중 하나로 설정합니다.  |
@@ -26,7 +26,7 @@ company.default.time.zone=Europe/Lisbon
 
 ## 설정 마법사
 
-[설정 마법사](../installing-liferay/running-liferay-for-the-first-time.md) 은 DXP 인스턴스의 기본 언어와 표준 시간대를 설정합니다. _기본 언어_ 및 _표준 시간대_ 선택기에서 선택할 수 있습니다.
+[설정 마법사](../installing-liferay/running-liferay-for-the-first-time.md) 은 DXP 인스턴스의 기본 언어와 표준 시간대를 설정합니다. **기본 언어** 및 **표준 시간대** 선택기에서 선택할 수 있습니다.
 
 ![설정 마법사를 사용하여 DXP 인스턴스의 기본 언어 및 시간대 설정](./initial-instance-localization/images/01.png)
 
@@ -36,7 +36,7 @@ DXP를 이미 실행한 경우 제어판에서 인스턴스의 기본 언어 및
 
 ## 제어반
 
-가상 인스턴스의 기본 언어 및 시간대는 인스턴스의 _현지화_ 페이지를 사용하여 수정할 수 있습니다. 지침은 [가상 인스턴스 현지화 구성](../../system-administration/configuring-liferay/virtual-instances/localization.md) 을 참조하십시오.
+가상 인스턴스의 기본 언어 및 시간대는 인스턴스의 **현지화** 페이지를 사용하여 수정할 수 있습니다. 지침은 [가상 인스턴스 현지화 구성](../../system-administration/configuring-liferay/virtual-instances/localization.md) 을 참조하십시오.
 
 ## 결론
 

@@ -58,10 +58,10 @@ Liferay는 현재 기본적으로 약 50개 언어를 지원합니다. [번역](
     locales.enabled=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
     ```
 
-1. 모듈이 배포되면 *Control Panel* &rarr; *Instance Settings* &rarr; *Localization*로 이동합니다. 새 언어를 확인하고 현재 언어로 이동합니다. *저장*을 클릭합니다.
+1. 모듈이 배포되면 **Control Panel** &rarr; **Instance Settings** &rarr; **Localization** 로 이동합니다. 새 언어를 확인하고 현재 언어로 이동합니다. **저장** 을 클릭합니다.
 
    ![새 언어를 현재 언어 목록에 저장합니다.](./adding-a-language/images/01.png)
 
-3. 기본 언어를 새 언어로 변경하고 *저장*을 클릭합니다. 새 언어는 이제 Liferay 인스턴스에서 사용됩니다.
+3. 기본 언어를 새 언어로 변경하고 **저장** 을 클릭합니다. 새 언어는 이제 Liferay 인스턴스에서 사용됩니다.
 
    ![Liferay 인스턴스에 대한 새 언어를 선택하고 사용하십시오.](./adding-a-language/images/02.png)

@@ -16,7 +16,7 @@ using-the-server-administration-panel/configuring-a-shutdown-event.md
 
 서버 관리는 다양한 저수준 Liferay DXP 구성을 포함하는 시스템 범위 관리 패널입니다. 서버 관리에서 시스템 메모리 사용량, 하위 수준 속성, 일부 타사 통합, 문서 리포지토리 마이그레이션, 로깅, 스크립팅, 메일 서버 구성 및 포털 종료를 관리하고 모니터링할 수 있습니다.
 
-*제어판* &rarr; *구성* &rarr; *서버 관리*을 클릭하여 서버 관리에 액세스할 수 있습니다.
+**제어판** &rarr; **구성** &rarr; **서버 관리** 을 클릭하여 서버 관리에 액세스할 수 있습니다.
 
 ![서버 관리의 리소스 탭에는 서버의 메모리 사용량 그래프가 표시됩니다.](using-the-server-administration-panel/images/01.png)
 
@@ -31,4 +31,4 @@ Server Administration의 기능은 탭으로 구분됩니다.
 | 메일           | [포털 속성 파일](../installation-and-upgrades/setting-up-liferay/configuring-mail/alternative-email-configuration-methods.md#configuring-the-built-in-mail-session-using-portal-properties) 대신 이 탭에서 메일 서버를 구성할 수 있습니다. 이러한 설정은 `Portal-ext.properties` 파일의 메일 서버 설정을 재정의합니다. | [메일 구성](../installation-and-upgrades/setting-up-liferay/configuring-mail.md)          |
 | 외부 서비스       | 이미지, 오디오 파일 및 비디오 파일에 대한 파일 미리 보기를 생성하기 위한 외부 서비스를 구성합니다.                                                                                                                                                                                                              | [외부 서비스 구성](./using-the-server-administration-panel/configuring-external-services.md) |
 | 원본           | 마이그레이션 또는 관리 코드를 실행하기 위해 스크립팅 콘솔에서 Groovy 스크립트를 작성합니다.                                                                                                                                                                                                                 | [스크립트 엔진 사용](./using-the-script-engine/using-the-script-engine.md)                    |
-| 폐쇄           | 로그인한 사용자에게 임박한 종료를 경고하는 종료를 예약합니다(지금부터 _x_ 분 후).                                                                                                                                                                                                                       | [종료 이벤트 구성](./using-the-server-administration-panel/configuring-a-shutdown-event.md)  |
+| 폐쇄           | 로그인한 사용자에게 임박한 종료를 경고하는 종료를 예약합니다(지금부터 **x** 분 후).                                                                                                                                                                                                                       | [종료 이벤트 구성](./using-the-server-administration-panel/configuring-a-shutdown-event.md)  |

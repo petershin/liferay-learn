@@ -44,8 +44,8 @@
 
 ### 사이트 ID 식별
 
-1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *구성* &rarr; *사이트 설정*로 이동합니다.
-1. 플랫폼 섹션에서 *사이트 구성*을 클릭하십시오.
+1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **구성** &rarr; **사이트 설정** 로 이동합니다.
+1. 플랫폼 섹션에서 **사이트 구성** 을 클릭하십시오.
 1. 사이트 ID 아래에서 사이트 식별자를 찾습니다.
 
    ![사이트 설정 및 사이트 구성 옵션에서 사이트 ID를 식별합니다.](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
@@ -62,8 +62,8 @@ REST API를 사용하여 프로그래밍 방식으로 구조 또는 템플릿을
 
 ### 샘플 구조 및 템플릿 식별
 
-1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*으로 이동합니다.
-1. *구조* 탭을 클릭합니다.
+1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 으로 이동합니다.
+1. **구조** 탭을 클릭합니다.
 1. ID 열 아래에서 구조의 ID를 식별하십시오.
 
    ![구조 탭에서 ID 열 아래에서 구조의 ID를 식별합니다.](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)

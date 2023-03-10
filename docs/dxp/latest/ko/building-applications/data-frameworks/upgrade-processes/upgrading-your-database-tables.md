@@ -62,7 +62,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. Liferay에 로그인하고 *Control Panel* &rarr; *Gogo Shell*에서 Gogo shell 콘솔로 이동합니다.
+1. Liferay에 로그인하고 **Control Panel** &rarr; **Gogo Shell** 에서 Gogo shell 콘솔로 이동합니다.
 
 1. `upgrade:list com.acme.p5d2.service`명령을 입력하여 2.0.0 업그레이드를 사용할 수 있는지 확인합니다.
 

@@ -23,30 +23,30 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 검색 위젯의 전용 적용 범위는 [검색 페이지 및 위젯](./getting-started/search-overview.md#search-pages-and-widgets) 을 참조하십시오.
 
-**검색 결과**: 검색 결과 표시 방법을 설정합니다. 자세한 내용은 [검색 결과 표시](./search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#displaying-search-results) 읽으십시오.
+**검색 결과** : 검색 결과 표시 방법을 설정합니다. 자세한 내용은 [검색 결과 표시](./search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#displaying-search-results) 읽으십시오.
 
-**검색 표시줄**: 검색 키워드가 처리되는 동작을 구성합니다. 자세한 내용은 [검색 표시줄 구성](./getting-started/searching-for-content.md#configuring-the-search-bar) 참조하십시오.
+**검색 표시줄** : 검색 키워드가 처리되는 동작을 구성합니다. 자세한 내용은 [검색 표시줄 구성](./getting-started/searching-for-content.md#configuring-the-search-bar) 참조하십시오.
 
-**검색 패싯**: 각 패싯의 동작 및 URL 매개변수를 구성합니다. 자세한 내용은 [패싯](./search-pages-and-widgets/search-facets.md) 참조하십시오.
+**검색 패싯** : 각 패싯의 동작 및 URL 매개변수를 구성합니다. 자세한 내용은 [패싯](./search-pages-and-widgets/search-facets.md) 참조하십시오.
 
-**검색 옵션**: 이 위젯을 구성하면 페이지 범위 동작이 정의되는 특별한 경우입니다. 페이지에 검색 옵션 위젯을 추가하고 검색 페이지에 대해 두 개의 부울을 정의합니다.
+**검색 옵션** : 이 위젯을 구성하면 페이지 범위 동작이 정의되는 특별한 경우입니다. 페이지에 검색 옵션 위젯을 추가하고 검색 페이지에 대해 두 개의 부울을 정의합니다.
 
-* 빈 검색 허용: 기본적으로 키워드를 입력하지 않으면 결과가 반환되지 않습니다. 이 기능을 활성화하면 검색 표시줄에 키워드가 입력되지 않은 경우 _모두_ 결과가 반환됩니다.
+* 빈 검색 허용: 기본적으로 키워드를 입력하지 않으면 결과가 반환되지 않습니다. 이 기능을 활성화하면 검색 표시줄에 키워드가 입력되지 않은 경우 **모두** 결과가 반환됩니다.
 * 기본 패싯 선택: 기본적으로 패싯 개수는 각 패싯 선택 후에 다시 계산됩니다. 패싯 재계산을 끄려면 이 옵션을 활성화하십시오.
 
-**검색 제안**: 더 나은 쿼리 및 맞춤법 검사 쿼리를 제안합니다. 자세한 내용은 [제안 구성 참조](./search-pages-and-widgets/search-results/enabling-search-suggestions.md#suggestions-configuration-reference) 을 참조하십시오.
+**검색 제안** : 더 나은 쿼리 및 맞춤법 검사 쿼리를 제안합니다. 자세한 내용은 [제안 구성 참조](./search-pages-and-widgets/search-results/enabling-search-suggestions.md#suggestions-configuration-reference) 을 참조하십시오.
 
-**검색 인사이트**: 사용자가 키워드를 입력할 때 백엔드 검색 코드에 의해 구성되는 전체 쿼리 문자열을 검사하려면 검색 페이지에 이것을 추가하십시오. 테스트 및 개발에만 유용합니다. 자세한 내용은 [검색 인사이트](./search-pages-and-widgets/search-insights.md) 참조하세요.
+**검색 인사이트** : 사용자가 키워드를 입력할 때 백엔드 검색 코드에 의해 구성되는 전체 쿼리 문자열을 검사하려면 검색 페이지에 이것을 추가하십시오. 테스트 및 개발에만 유용합니다. 자세한 내용은 [검색 인사이트](./search-pages-and-widgets/search-insights.md) 참조하세요.
 
-**사용자 지정 필터**: 검색 결과에 적용하려는 각 필터에 대한 위젯을 페이지에 추가합니다. 검색 페이지 사용자가 필터를 보고 조작하거나 필터를 보이지 않거나 변경할 수 없도록 합니다. 자세한 내용은 [검색 결과 필터링](./search-pages-and-widgets/search-results/filtering-search-results.md) 참조하십시오.
+**사용자 지정 필터** : 검색 결과에 적용하려는 각 필터에 대한 위젯을 페이지에 추가합니다. 검색 페이지 사용자가 필터를 보고 조작하거나 필터를 보이지 않거나 변경할 수 없도록 합니다. 자세한 내용은 [검색 결과 필터링](./search-pages-and-widgets/search-results/filtering-search-results.md) 참조하십시오.
 
-**정렬**: 사용자가 인덱스의 특정 `키워드` 필드 값에 따라 검색 결과를 재정렬할 수 있습니다. 예를 들어 제목 필드의 알파벳 순서로 결과를 표시합니다. 기본 순서는 검색 엔진의 _관련성_ 계산에 의해 결정됩니다. 자세한 내용은 [검색 결과 정렬](./search-pages-and-widgets/search-results/sorting-search-results.md) 참조하십시오.
+**정렬** : 사용자가 인덱스의 특정 `키워드` 필드 값에 따라 검색 결과를 재정렬할 수 있습니다. 예를 들어 제목 필드의 알파벳 순서로 결과를 표시합니다. 기본 순서는 검색 엔진의 **관련성** 계산에 의해 결정됩니다. 자세한 내용은 [검색 결과 정렬](./search-pages-and-widgets/search-results/sorting-search-results.md) 참조하십시오.
 
-**낮은 수준의 검색 옵션:** 회사 색인 _이외의 색인을 대상으로 하는 검색에 참여하도록 검색 위젯을 구성_. 회사 색인은 Liferay DXP 자산이 데이터를 색인화하는 곳이므로 많은 설치에 이 위젯이 필요하지 않습니다. 자세한 내용은 [저수준 검색 옵션 이해](./search-pages-and-widgets/search-results/understanding-low-level-search-options.md) 을 참조하십시오.
+**낮은 수준의 검색 옵션:** 회사 색인 **이외의 색인을 대상으로 하는 검색에 참여하도록 검색 위젯을 구성** . 회사 색인은 Liferay DXP 자산이 데이터를 색인화하는 곳이므로 많은 설치에 이 위젯이 필요하지 않습니다. 자세한 내용은 [저수준 검색 옵션 이해](./search-pages-and-widgets/search-results/understanding-low-level-search-options.md) 을 참조하십시오.
 
 **유사한 결과:** 페이지에 표시되는 자산과 유사한 검색 결과를 표시합니다. 자세한 내용은 [유사한 결과](./search-pages-and-widgets/similar-results.md) 참조하십시오.
 
-[Liferay 기업 검색] **Elasticsearch 모니터링:** Liferay 기업 검색 가입자는 Liferay DXP 페이지에 배치된 위젯 내에서 [Elastic의 Kibana](https://www.elastic.co/kibana) 모니터링 도구에 액세스할 수 있습니다. 자세한 내용은 [Elasticsearch 모니터링](./liferay-enterprise-search/monitoring-elasticsearch.md) 참조하십시오.
+[Liferay 기업 검색]**Elasticsearch 모니터링:** Liferay 기업 검색 가입자는 Liferay DXP 페이지에 배치된 위젯 내에서 [Elastic의 Kibana](https://www.elastic.co/kibana) 모니터링 도구에 액세스할 수 있습니다. 자세한 내용은 [Elasticsearch 모니터링](./liferay-enterprise-search/monitoring-elasticsearch.md) 참조하십시오.
 
 ## 사이트 범위 검색 구성
 
@@ -56,7 +56,7 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 검색 위젯을 사용할 때 알아야 할 몇 가지 중요한 구성 미묘한 차이가 있습니다.
 
-헤더 검색 표시줄(기본 테마에 포함된 검색 표시줄)이 검색 표시줄 위젯을 사용하는 경우 해당 구성에는 항상 _대상 페이지_ 설정해야 합니다. 여기서 사용자는 다른 검색 위젯과 상호 작용하여 검색 활동을 완료하도록 리디렉션됩니다. (결과, 패싯, 제안 등). [검색 대상 페이지](./search-pages-and-widgets/working-with-search-pages/creating-a-search-page.md) 은 검색 위젯이 있는 일반 페이지입니다. 사이트 전체에서 원하는 만큼 검색 위젯이 있는 페이지를 가질 수 있습니다.
+헤더 검색 표시줄(기본 테마에 포함된 검색 표시줄)이 검색 표시줄 위젯을 사용하는 경우 해당 구성에는 항상 **대상 페이지** 설정해야 합니다. 여기서 사용자는 다른 검색 위젯과 상호 작용하여 검색 활동을 완료하도록 리디렉션됩니다. (결과, 패싯, 제안 등). [검색 대상 페이지](./search-pages-and-widgets/working-with-search-pages/creating-a-search-page.md) 은 검색 위젯이 있는 일반 페이지입니다. 사이트 전체에서 원하는 만큼 검색 위젯이 있는 페이지를 가질 수 있습니다.
 
 검색 창 위젯은 인스턴스화할 수 있으므로 한 페이지에 다르게 구성된 여러 검색 창 위젯이 포함될 수 있습니다. 모든 검색 표시줄 인스턴스는 효과적이려면 사이트 내의 검색 페이지를 가리켜야 합니다.
 
@@ -82,11 +82,11 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 시스템 범위 검색 구성은 주로 [시스템 설정](../../system-administration/configuring-liferay/system-settings.md)에서 찾을 수 있습니다.
 
-1. 전역 메뉴에서 *제어판* &rarr; *구성* &rarr; *시스템 설정*로 이동합니다.
+1. 전역 메뉴에서 **제어판** &rarr; **구성** &rarr; **시스템 설정** 로 이동합니다.
 
-1. 플랫폼 섹션에서 *검색* 범주를 클릭합니다.
+1. 플랫폼 섹션에서 **검색** 범주를 클릭합니다.
 
-    또는 *search*을 검색합니다.
+    또는 **search** 을 검색합니다.
 
 ![시스템 설정에서 검색할 수 있는 시스템 범위 항목이 많이 있습니다.](./search-configuration-reference/images/01.png)
 
@@ -106,13 +106,13 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 기본 키워드 쿼리 항목에는 하나의 설정이 포함되어 있습니다.
 
-**`disabledEntryClassNames`**: `DefaultKeywordQueryContributor` 코드는 키워드 검색 쿼리에 `description`, `userName`및 `title` 필드를 자동으로 추가합니다. 항목 클래스 이름 `을 지정하십시오. DefaultKeywordQueryContributor` 무시해야 합니다.
+**`disabledEntryClassNames`** : `DefaultKeywordQueryContributor` 코드는 키워드 검색 쿼리에 `description`, `userName`및 `title` 필드를 자동으로 추가합니다. 항목 클래스 이름 `을 지정하십시오. DefaultKeywordQueryContributor` 무시해야 합니다.
 
 ### 기본 검색 결과 권한 필터
 
 **구성 파일:** `com.liferay.portal.search.configuration.DefaultSearchResultPermissionFilterConfiguration.config`
 
-기본 검색 결과 권한 필터 항목은 *필터링 후 권한 확인* (검색 인덱스에서 결과가 반환된 후 발생하는 데이터베이스 권한 확인)의 구성을 허용합니다. 이러한 설정에 대한 자세한 내용은 [최종 권한 확인](../search-pages-and-widgets/search-results/search-results-behavior.md#final-permissions-checking) 읽으십시오.
+기본 검색 결과 권한 필터 항목은 **필터링 후 권한 확인**(검색 인덱스에서 결과가 반환된 후 발생하는 데이터베이스 권한 확인)의 구성을 허용합니다. 이러한 설정에 대한 자세한 내용은 [최종 권한 확인](../search-pages-and-widgets/search-results/search-results-behavior.md#final-permissions-checking) 읽으십시오.
 
 * **`permissionFilteredSearchResultAccurateCountThreshold`**
 
@@ -124,7 +124,7 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 인덱스 상태 관리자 항목에는 한 가지 설정이 있습니다.
 
-**`indexReadOnly`**: 검색 엔진에 대한 모든 인덱싱 작업 및 쓰기를 일시 중지하려면 이 옵션을 활성화합니다. 검색은 이미 인덱싱된 문서만 반환합니다. 이는 대용량 데이터 가져오기 속도를 높이는 데 유용하지만 가져오기가 완료되면 비활성화하고 전체 재인덱싱을 실행해야 합니다.
+**`indexReadOnly`** : 검색 엔진에 대한 모든 인덱싱 작업 및 쓰기를 일시 중지하려면 이 옵션을 활성화합니다. 검색은 이미 인덱싱된 문서만 반환합니다. 이는 대용량 데이터 가져오기 속도를 높이는 데 유용하지만 가져오기가 완료되면 비활성화하고 전체 재인덱싱을 실행해야 합니다.
 
 ### Indexer Writer Helper
 
@@ -132,7 +132,7 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
-**`indexCommitImmediately`**: *true* (기본값)인 경우 각 쓰기 요청은 검색 엔진이 인덱스 판독기를 새로 고치도록 강제하여 잠재적으로 트랜잭션을 디스크로 플러시합니다. 이는 검색 엔진 성능에 부정적인 영향을 미칠 수 있습니다. 기본 동작은 개별 자산(예: 블로그 추가, 블로그 업데이트)에 대한 인덱스 쓰기에 대해 즉시 커밋하는 것이지만 모든 항목이 검색 엔진에 전송될 때까지 대량 인덱스 쓰기 작업(예: 모든 사용자 인덱스, 모든 양식 항목 인덱스)에 대한 커밋은 지연됩니다. . 이를 false로 설정하면 개별 인덱스 작업의 동작이 변경되고 새로 추가된 콘텐츠를 표시할 때 Asset Publisher와 같은 애플리케이션이 지연된 응답을 나타낼 수 있습니다. 자세한 내용은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/near-real-time.html) 참조하십시오.
+**`indexCommitImmediately`** : **true**(기본값)인 경우 각 쓰기 요청은 검색 엔진이 인덱스 판독기를 새로 고치도록 강제하여 잠재적으로 트랜잭션을 디스크로 플러시합니다. 이는 검색 엔진 성능에 부정적인 영향을 미칠 수 있습니다. 기본 동작은 개별 자산(예: 블로그 추가, 블로그 업데이트)에 대한 인덱스 쓰기에 대해 즉시 커밋하는 것이지만 모든 항목이 검색 엔진에 전송될 때까지 대량 인덱스 쓰기 작업(예: 모든 사용자 인덱스, 모든 양식 항목 인덱스)에 대한 커밋은 지연됩니다. . 이를 false로 설정하면 개별 인덱스 작업의 동작이 변경되고 새로 추가된 콘텐츠를 표시할 때 Asset Publisher와 같은 애플리케이션이 지연된 응답을 나타낼 수 있습니다. 자세한 내용은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/near-real-time.html) 참조하십시오.
 
 ### 인덱서 레지스트리
 
@@ -140,13 +140,13 @@ Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
 색인 요청의 버퍼링을 구성합니다.
 
-**`buffered`**: 인덱싱 요청의 버퍼링을 활성화(기본값)하거나 비활성화합니다.
+**`buffered`** : 인덱싱 요청의 버퍼링을 활성화(기본값)하거나 비활성화합니다.
 
-**`bufferedExecutionMode`**: 관리자가 `IndexerRequestBufferExecutor`선택하여 `IndexerRequest`을 실행하는 데 사용하도록 허용합니다. 실행기의 한 가지 구현이 즉시 제공됩니다(_DEFAULT_). 새로운 `IndexerRequestBufferExecutor` 구현이 배포되면 필수 속성 중 하나는 `buffered.execution.mode`입니다. 그런 다음 이 값을 _DEFAULT_대신 사용할 수 있습니다.
+**`bufferedExecutionMode`** : 관리자가 `IndexerRequestBufferExecutor`선택하여 `IndexerRequest`을 실행하는 데 사용하도록 허용합니다. 실행기의 한 가지 구현이 즉시 제공됩니다(_DEFAULT_). 새로운 `IndexerRequestBufferExecutor` 구현이 배포되면 필수 속성 중 하나는 `buffered.execution.mode`입니다. 그런 다음 이 값을 **DEFAULT** 대신 사용할 수 있습니다.
 
-**`maximumBufferSize`**: 버퍼링이 활성화된 경우 추가 인덱싱 요청이 즉시 실행되도록 최대 버퍼 크기를 설정합니다.
+**`maximumBufferSize`** : 버퍼링이 활성화된 경우 추가 인덱싱 요청이 즉시 실행되도록 최대 버퍼 크기를 설정합니다.
 
-**`minimumBufferAvailabilityPercentage`**: 버퍼의 용량이 지정된 공간의 백분율만 남아 있는 경우 버퍼에 있는 기존 요청이 한 일괄 처리로 실행되고 버퍼에서 제거됩니다.
+**`minimumBufferAvailabilityPercentage`** : 버퍼의 용량이 지정된 공간의 백분율만 남아 있는 경우 버퍼에 있는 기존 요청이 한 일괄 처리로 실행되고 버퍼에서 제거됩니다.
 
 ### 인덱스 쿼리 프리프로세서
 
@@ -154,7 +154,7 @@ Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
 이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 을 통해 정의하는 경우 배열 구문 사용).
 
-**`fieldNamePatterns`**: 여기서 설정한 패턴과 이름이 일치하는 필드는 분석되지 않은 키워드 필드로 처리됩니다. 점수가 매겨진 전체 텍스트 쿼리 대신 점수가 매겨지지 않은 와일드카드 쿼리에 의해 일치가 수행됩니다. 이는 인덱스가 커짐에 따라 검색 엔진 성능을 저하시키는 리소스 집약적인 작업입니다. 하위 문자열 일치의 경우 일반적으로 [ngram 토크나이저](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) 에 의존하는 것이 더 잘 수행됩니다.
+**`fieldNamePatterns`** : 여기서 설정한 패턴과 이름이 일치하는 필드는 분석되지 않은 키워드 필드로 처리됩니다. 점수가 매겨진 전체 텍스트 쿼리 대신 점수가 매겨지지 않은 와일드카드 쿼리에 의해 일치가 수행됩니다. 이는 인덱스가 커짐에 따라 검색 엔진 성능을 저하시키는 리소스 집약적인 작업입니다. 하위 문자열 일치의 경우 일반적으로 [ngram 토크나이저](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) 에 의존하는 것이 더 잘 수행됩니다.
 
 ### 다시 색인
 
@@ -162,7 +162,7 @@ Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
 이 항목에는 하나의 속성만 포함됩니다.
 
-**`indexingBatchSizes`**: 배치 인덱싱을 지원하는 모델 유형에 대해 배치당 인덱싱되는 문서 수(기본값은 1000)를 설정합니다. 큰 문서가 있는 모델의 경우 이 값을 줄이면 전체 재인덱싱을 실행할 때 안정성이 향상될 수 있습니다.
+**`indexingBatchSizes`** : 배치 인덱싱을 지원하는 모델 유형에 대해 배치당 인덱싱되는 문서 수(기본값은 1000)를 설정합니다. 큰 문서가 있는 모델의 경우 이 값을 줄이면 전체 재인덱싱을 실행할 때 안정성이 향상될 수 있습니다.
 
 ### 엔진 헬퍼
 
@@ -170,7 +170,7 @@ Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
 이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)를 통해 정의하는 경우 배열 구문 사용).
 
-**`excludeEntryClassNames`**: 검색 애플리케이션용으로 구성된 포괄적인 쿼리에서 검색되는 자산 유형을 제외합니다. 예를 들어 조직 자산의 필드는 사용자 및 조직 애플리케이션에서 검색할 수 있도록 인덱싱되어야 하지만 검색 애플리케이션에서는 검색되지 않아야 합니다. 따라서 조직은 `excludeEntryClassNames`에 추가됩니다.
+**`excludeEntryClassNames`** : 검색 애플리케이션용으로 구성된 포괄적인 쿼리에서 검색되는 자산 유형을 제외합니다. 예를 들어 조직 자산의 필드는 사용자 및 조직 애플리케이션에서 검색할 수 있도록 인덱싱되어야 하지만 검색 애플리케이션에서는 검색되지 않아야 합니다. 따라서 조직은 `excludeEntryClassNames`에 추가됩니다.
 
 ### 권한 체커
 
@@ -178,7 +178,7 @@ Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
 이 항목에는 Liferay DXP 7.3에 하나의 구성 옵션이 있습니다.
 
-**`permissionTermsLimit`**: 이 수준의 권한 검사가 중단되기 전에 검색 쿼리에 추가되는 권한 검색 절의 수를 제한합니다. 그런 다음 권한 확인은 [기본 검색 결과 권한 필터](#default-search-result-permission-filter) 섹션에 설명된 최종 권한 필터링에만 의존합니다.
+**`permissionTermsLimit`** : 이 수준의 권한 검사가 중단되기 전에 검색 쿼리에 추가되는 권한 검색 절의 수를 제한합니다. 그런 다음 권한 확인은 [기본 검색 결과 권한 필터](#default-search-result-permission-filter) 섹션에 설명된 최종 권한 필터링에만 의존합니다.
 
 ### 제목 필드 쿼리 빌더
 
@@ -186,9 +186,9 @@ Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
 문서의 제목 필드에서 일치 항목에 대한 검색 응답 방식을 구성합니다.
 
-**`exactMatchBoost`**: 검색된 키워드가 문서의 `제목` 필드와 정확히 일치할 때 추가 부스트를 제공합니다.
+**`exactMatchBoost`** : 검색된 키워드가 문서의 `제목` 필드와 정확히 일치할 때 추가 부스트를 제공합니다.
 
-**`maxExpansions`**: 구문 접두사로 `제목` 필드에 검색된 키워드를 일치시킬 때 반환되는 문서의 수를 제한합니다. 자세한 내용은 Elasticsearch의 [Match Phrase Query 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query-phrase.html) 참조하십시오.
+**`maxExpansions`** : 구문 접두사로 `제목` 필드에 검색된 키워드를 일치시킬 때 반환되는 문서의 수를 제한합니다. 자세한 내용은 Elasticsearch의 [Match Phrase Query 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query-phrase.html) 참조하십시오.
 
 ### 교차 클러스터 복제
 
@@ -224,7 +224,7 @@ Liferay Enterprise Search 구독에서 사용할 수 있는 Liferay Enterprise S
 
 이 항목에는 하나의 속성이 포함되어 있습니다.
 
-**`classicSearchPortletInFrontPage`**: 새 검색 위젯 사용에서 이전 릴리스의 표준이었던 더 이상 사용되지 않는 클래식 검색 포틀릿으로 기본 검색 환경을 되돌립니다.
+**`classicSearchPortletInFrontPage`** : 새 검색 위젯 사용에서 이전 릴리스의 표준이었던 더 이상 사용되지 않는 클래식 검색 포틀릿으로 기본 검색 환경을 되돌립니다.
 
 ### 동의어
 
@@ -232,11 +232,11 @@ Liferay Enterprise Search 구독에서 사용할 수 있는 Liferay Enterprise S
 
 이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 을 통해 정의하는 경우 배열 구문 사용).
 
-**`synyonymFilterNames`**: 적용할 동의어 필터 이름을 설정합니다. 이러한 필터는 Elasticsearch 인덱스 설정에서 정의해야 합니다. [새 동의어 언어 필터 만들기](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters) 참조하십시오.
+**`synyonymFilterNames`** : 적용할 동의어 필터 이름을 설정합니다. 이러한 필터는 Elasticsearch 인덱스 설정에서 정의해야 합니다. [새 동의어 언어 필터 만들기](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters) 참조하십시오.
 
 ### 검색 관리
 
-*제어판* &rarr; *구성* &rarr; *검색* 에는 세 가지 관리 UI(연결, 색인 작업 및 필드 매핑)가 있습니다.
+**제어판** &rarr; **구성** &rarr; **검색** 에는 세 가지 관리 UI(연결, 색인 작업 및 필드 매핑)가 있습니다.
 
 자세한 내용은 전용 [검색 관리 및 튜닝](./search-administration-and-tuning.md) 설명서를 참조하십시오.
 
@@ -248,7 +248,7 @@ Liferay Enterprise Search 구독에서 사용할 수 있는 Liferay Enterprise S
 * 클라이언트 버전: 7.16.3
 * 활성 연결: 1
 * 건강: 녹색
-* 연결 ID: \_REMOTE\_
+* 연결 ID: \ **REMOTE\**
 * 연결 유형: 읽기/쓰기
 * 클러스터 이름: LiferayElasticsearchCluster
 * 노드: 1

@@ -10,9 +10,9 @@ Office 365&trade;을 통해 문서 및 미디어 파일을 처음 생성하거�
 
 계정 연결 해제는 세 단계만 거치면 됩니다.
 
-1. *프로필* &rarr; *계정 설정*을 클릭합니다.
-1. *일반* 탭에서 *앱*을 클릭합니다.
-1. OneDrive&trade;옆에 있는 *취소* 을 클릭합니다.
+1. **프로필** &rarr; **계정 설정** 을 클릭합니다.
+1. **일반** 탭에서 **앱** 을 클릭합니다.
+1. OneDrive&trade;옆에 있는 **취소** 을 클릭합니다.
 
     ![포털에서 계정 연결을 해제할 수 있습니다.](./creating-and-editing-documents-with-microsoft-office-365/images/01.png)
 
@@ -20,7 +20,7 @@ OneDrive&trade; 의 연결이 해제되었습니다.
 
 ## 파일 생성
 
-1. *메뉴* (![Product Menu](../../../../images/icon-menu.png))을 열고 사이트 이름을 클릭한 다음 *콘텐츠 & 데이터* &rarr; *문서 및 미디어*로 이동합니다.
+1. **메뉴**(![Product Menu](../../../../images/icon-menu.png))을 열고 사이트 이름을 클릭한 다음 **콘텐츠 & 데이터** &rarr; **문서 및 미디어** 로 이동합니다.
 1. ** 추가 아이콘(![Add](../../../../images/icon-add.png))을 클릭하고 문서 라이브러리에 추가할 Office 365&trade; 문서 유형을 선택합니다.
 
     * 워드&trade;
@@ -31,7 +31,7 @@ OneDrive&trade; 의 연결이 해제되었습니다.
 
     ![만들려는 문서 유형을 선택합니다.](./creating-and-editing-documents-with-microsoft-office-365/images/02.png)
 
-1. *제목* 필드에 문서 이름을 입력하고 *저장*을 클릭합니다. *저장*을 클릭하면 DXP가 임시 문서 및 미디어 파일을 만들고 새 Office 365&trade; 파일에 연결합니다. 그러면 브라우저에서 콘텐츠를 만들 수 있도록 해당 Office 365&trade; 파일이 포함된 새 창이 열립니다.
+1. **제목** 필드에 문서 이름을 입력하고 **저장** 을 클릭합니다. **저장** 을 클릭하면 DXP가 임시 문서 및 미디어 파일을 만들고 새 Office 365&trade; 파일에 연결합니다. 그러면 브라우저에서 콘텐츠를 만들 수 있도록 해당 Office 365&trade; 파일이 포함된 새 창이 열립니다.
 
     ![문서를 만들 때 이름을 지정해야 합니다.](./creating-and-editing-documents-with-microsoft-office-365/images/03.png)
 
@@ -59,7 +59,7 @@ Office 365&trade;에서 문서 및 미디어 파일을 편집하려면 다음 �
 
 1. 문서 및 미디어 라이브러리에서 파일로 이동합니다.
 
-1. 파일의 작업 아이콘(![Actions](../../../../images/icon-actions.png))을 클릭하고 *Office 365에서 편집*을 선택합니다. 그러면 자동으로 [파일을 체크아웃하고](../../publishing-and-sharing/managing-document-access/managing-document-changes-with-checkout.md) 해당 콘텐츠를 새 Office 365 파일로 전송하고&trade; 해당 파일 Office 365&trade;로 리디렉션합니다.
+1. 파일의 작업 아이콘(![Actions](../../../../images/icon-actions.png))을 클릭하고 **Office 365에서 편집** 을 선택합니다. 그러면 자동으로 [파일을 체크아웃하고](../../publishing-and-sharing/managing-document-access/managing-document-changes-with-checkout.md) 해당 콘텐츠를 새 Office 365 파일로 전송하고&trade; 해당 파일 Office 365&trade;로 리디렉션합니다.
 
 1. Office 365&trade;에서 파일을 편집합니다. 편집 과정은 위에서 설명한 파일 생성과 완전히 동일합니다.
 

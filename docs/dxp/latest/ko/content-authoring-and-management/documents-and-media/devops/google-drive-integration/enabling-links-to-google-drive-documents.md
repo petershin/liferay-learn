@@ -16,7 +16,7 @@ Liferay 플러그인을 활성화하려면 Google 드라이브 API와 Google Pic
 원하는 경우 Google 드라이브용 Liferay 플러그인과는 별도로 문서 및 미디어를 통해 Google 문서를 만들고 편집할 수 있습니다. 자세한 내용은 [Google 드라이브로 문서 생성 및 편집 활성화](./enabling-document-creation-and-editing-with-google-drive.md)를 참조하세요.
 ```
 
-프로젝트에 대해 Google Picker API를 활성화한 후 [는 Picker API용 API 키를 생성하고](https://support.google.com/googleapi/answer/6158862) 은 OAuth를 설정합니다 [](https://support.google.com/cloud/answer/6158849) . OAuth 2 설정에는 OAuth 동의 화면 구성, OAuth 2 자격 증명 생성, 승인된 JavaScript 출처 목록에 Liferay 요청 URI 추가가 포함됩니다. OAuth 2 자격 증명을 생성할 때 애플리케이션 유형으로 *웹 애플리케이션* 을 선택했는지 확인하십시오.
+프로젝트에 대해 Google Picker API를 활성화한 후 [는 Picker API용 API 키를 생성하고](https://support.google.com/googleapi/answer/6158862) 은 OAuth를 설정합니다 [](https://support.google.com/cloud/answer/6158849) . OAuth 2 설정에는 OAuth 동의 화면 구성, OAuth 2 자격 증명 생성, 승인된 JavaScript 출처 목록에 Liferay 요청 URI 추가가 포함됩니다. OAuth 2 자격 증명을 생성할 때 애플리케이션 유형으로 **웹 애플리케이션** 을 선택했는지 확인하십시오.
 
 Google 프로젝트가 준비되면 Liferay 제어판을 통해 문서 및 미디어 애플리케이션을 구성해야 합니다. 여기에는 Picker API 키와 OAuth2 클라이언트 ID 및 클라이언트 암호가 필요합니다.
 
@@ -24,17 +24,17 @@ Google 프로젝트가 준비되면 Liferay 제어판을 통해 문서 및 미�
 
 문서 및 미디어 애플리케이션을 구성하려면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴* (![Global Menu](../../../../images/icon-applications-menu.png))을 열고 *제어판* 탭을 클릭한 다음 *시스템 설정* &rarr; *문서 및 미디어*로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../../images/icon-applications-menu.png))을 열고 **제어판** 탭을 클릭한 다음 **시스템 설정** &rarr; **문서 및 미디어** 로 이동합니다.
 
-1. 가상 인스턴스 범위에서 *Google 드라이브* 을 클릭합니다.
+1. 가상 인스턴스 범위에서 **Google 드라이브** 을 클릭합니다.
 
     ![가상 인스턴스 범위에서 Google 드라이브를 클릭합니다.](./enabling-links-to-google-drive-documents/images/01.png)
 
-1. 프로젝트의 OAuth 2.0 *클라이언트 ID* 및 *클라이언트 비밀번호*을 입력합니다.
+1. 프로젝트의 OAuth 2.0 **클라이언트 ID** 및 **클라이언트 비밀번호** 을 입력합니다.
 
-1. *선택기 API 키*을 입력하십시오.
+1. **선택기 API 키** 을 입력하십시오.
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 활성화되면 사용자는 Google 자산에 대한 문서 및 미디어 바로가기를 만들 수 있습니다.
 
@@ -48,11 +48,11 @@ Google 드라이브 파일에 대한 문서 및 미디어 바로가기를 만들
 
 1. 사이트 자산 라이브러리에서 문서 및 미디어 응용 프로그램을 엽니다.
 
-1. 0 문서 및 미디어 탭에서 *추가* 버튼(![Add Button](../../../../images/icon-add.png))을 클릭하고 *Google 드라이브 바로가기*를 선택합니다.
+1. 0 문서 및 미디어 탭에서 **추가** 버튼(![Add Button](../../../../images/icon-add.png))을 클릭하고 **Google 드라이브 바로가기** 를 선택합니다.
 
    ![추가 버튼을 클릭하고 Google 드라이브 바로가기를 선택합니다.](./enabling-links-to-google-drive-documents/images/02.png)
 
-1. *파일 선택*을 클릭합니다.
+1. **파일 선택** 을 클릭합니다.
 
    ![파일 선택을 클릭합니다.](./enabling-links-to-google-drive-documents/images/03.png)
 
@@ -62,9 +62,9 @@ Google 드라이브 파일에 대한 문서 및 미디어 바로가기를 만들
 
    ![원하는 Google 드라이브 파일을 선택합니다.](./enabling-links-to-google-drive-documents/images/04.png)
 
-1. 바로 가기에 대해 *이름* 및 *설명* 을 입력합니다.
+1. 바로 가기에 대해 **이름** 및 **설명** 을 입력합니다.
 
-1. 완료되면 *게시* 을 클릭합니다.
+1. 완료되면 **게시** 을 클릭합니다.
 
 일단 게시되면 문서 및 미디어 애플리케이션을 통해 Liferay에서 Google 드라이브 파일에 액세스하고 사용할 수 있습니다. 자세한 내용은 [Google 드라이브의 파일에 연결](../../uploading-and-managing/linking-to-files-on-google-drive.md) 을 참조하십시오.
 

@@ -21,10 +21,10 @@ Liferay DXP에서 응용 프로그램의 구성을 시스템, 인스턴스, 사�
 
 구성을 검색하려면 `ConfigurationProvider`을 사용하십시오. 구성 공급자 API는 구성에 쉽게 액세스할 수 있는 방법을 제공합니다. 애플리케이션 요구 사항에 맞는 특정 방법을 선택하십시오.
 
-* `getSystemConfiguration()`: 시스템 범위 구성을 가져옵니다. 응용 프로그램의 시스템 수준 구성은 *제어판* &rarr; *구성* &rarr; *시스템 설정*에서 찾을 수 있습니다.
+* `getSystemConfiguration()`: 시스템 범위 구성을 가져옵니다. 응용 프로그램의 시스템 수준 구성은 **제어판** &rarr; **구성** &rarr; **시스템 설정** 에서 찾을 수 있습니다.
 
-* `getCompanyConfiguration()`: 인스턴스 범위 구성을 가져옵니다. `Portal` 의 인스턴스를 사용하여 `companyId`을 검색합니다. 예: `_portal.getCompanyId(renderRequest)`. 애플리케이션의 인스턴스 수준 구성은 *제어판* &rarr; *구성* &rarr; *인스턴스 설정*에서 찾을 수 있습니다.
+* `getCompanyConfiguration()`: 인스턴스 범위 구성을 가져옵니다. `Portal` 의 인스턴스를 사용하여 `companyId`을 검색합니다. 예: `_portal.getCompanyId(renderRequest)`. 애플리케이션의 인스턴스 수준 구성은 **제어판** &rarr; **구성** &rarr; **인스턴스 설정** 에서 찾을 수 있습니다.
 
-* `getGroupConfiguration()`: 사이트 범위 구성을 가져옵니다. `Portal` 인스턴스를 사용하여 `groupId`검색합니다. 예: `_portal.getScopeGroupId(renderRequest)`. 애플리케이션의 사이트 수준 구성은 *제품 메뉴* &rarr; *구성* &rarr; *사이트 설정*에서 찾을 수 있습니다. Liferay 7.4에서 사용할 수 있습니다.
+* `getGroupConfiguration()`: 사이트 범위 구성을 가져옵니다. `Portal` 인스턴스를 사용하여 `groupId`검색합니다. 예: `_portal.getScopeGroupId(renderRequest)`. 애플리케이션의 사이트 수준 구성은 **제품 메뉴** &rarr; **구성** &rarr; **사이트 설정** 에서 찾을 수 있습니다. Liferay 7.4에서 사용할 수 있습니다.
 
 포틀릿 범위 구성에 대해서는 [포틀릿 수준 구성](./portlet-level-configuration.md)을 참조하십시오.

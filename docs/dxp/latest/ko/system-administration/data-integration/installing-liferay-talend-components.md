@@ -73,7 +73,7 @@ Maven 빌드가 성공하면 다음 단계에 따라 Talend Open Studio에 Lifer
 
 1. `com.liferay.talend`, `com.liferay.talend.common`및 `com.liferay.talend.runtime` 폴더를 로컬 `$USER_HOME/.m2/repository/com/liferay/` 폴더에서 `$TOS_ROOT/configuration/.m2/repository/com/liferay/` 폴더.
 
-1. Talend Open Studio를 시작합니다. Liferay 구성 요소는 *Palette* 탭의 *Business* &rarr; *Liferay* 아래에 나타납니다.
+1. Talend Open Studio를 시작합니다. Liferay 구성 요소는 **Palette** 탭의 **Business** &rarr; **Liferay** 아래에 나타납니다.
 
    ![구성 요소는 팔레트 탭의 Business &rarr; Liferay 아래에 나타납니다.](liferay-talend-components-overview/images/01.png)
 

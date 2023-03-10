@@ -6,14 +6,14 @@
 
 애플리케이션을 통해 구성하려면
 
-1. 앱의 옵션 아이콘(![Options icon](../../images/icon-options.png))을 클릭하고 *구성*를 클릭합니다.
+1. 앱의 옵션 아이콘(![Options icon](../../images/icon-options.png))을 클릭하고 **구성** 를 클릭합니다.
 
     ![앱의 구성 링크를 클릭합니다.](./configuring-the-questions-app/images/01.png)
 
 시스템 설정을 통해 구성하려면,
 
-1. *제어판* &rarr; *시스템 설정* &rarr; *타사*로 이동합니다.
-1. 위젯 범위에서 *질문* 을 클릭합니다.
+1. **제어판** &rarr; **시스템 설정** &rarr; **타사** 로 이동합니다.
+1. 위젯 범위에서 **질문** 을 클릭합니다.
 
     ![시스템 설정에서 질문 앱 설정으로 이동합니다.](./configuring-the-questions-app/images/05.png)
 
@@ -21,7 +21,7 @@
 
 주제는 카드 또는 목록으로 표시할 수 있습니다.
 
-1. 앱의 옵션 아이콘(![Options icon](../../images/icon-options.png))을 클릭하고 *구성*를 클릭합니다.
+1. 앱의 옵션 아이콘(![Options icon](../../images/icon-options.png))을 클릭하고 **구성** 를 클릭합니다.
 
     ![앱의 구성 링크를 클릭합니다.](./configuring-the-questions-app/images/01.png)
 
@@ -35,21 +35,21 @@
 
 질문 기본 표시 동작은 모든 주제를 표시하는 것입니다. 루트 주제를 구성하여 특정 주제만 표시하도록 선택할 수 있습니다. 특정 하위 주제 또는 질문만 표시하려면 다음을 수행하십시오.
 
-1. 앱의 옵션 아이콘(![Options icon](../../images/icon-options.png))을 클릭하고 *구성*를 클릭합니다.
+1. 앱의 옵션 아이콘(![Options icon](../../images/icon-options.png))을 클릭하고 **구성** 를 클릭합니다.
 
     ![앱의 구성 링크를 클릭합니다.](./configuring-the-questions-app/images/01.png)
 
-1. Root Topic ID 아래의 *Select* 버튼을 클릭합니다.
+1. Root Topic ID 아래의 **Select** 버튼을 클릭합니다.
 
     ![개별 주제를 루트 주제로 선택합니다.](./configuring-the-questions-app/images/03.png)
 
-1. 주제를 선택하고 *저장*을 클릭합니다. 이제 앱은 선택한 주제에 대한 하위 주제와 질문만 표시합니다.
+1. 주제를 선택하고 **저장** 을 클릭합니다. 이제 앱은 선택한 주제에 대한 하위 주제와 질문만 표시합니다.
 
 ## 앱 권한 관리
 
 앱에 대한 권한을 수정하려면,
 
-1. 앱의 옵션 아이콘(![Options icon](../../images/icon-options.png))을 클릭하고 *권한을 클릭합니다.*.
+1. 앱의 옵션 아이콘(![Options icon](../../images/icon-options.png))을 클릭하고 **권한을 클릭합니다.** .
 
     ![앱의 구성 링크를 클릭합니다.](./configuring-the-questions-app/images/01.png)
 
@@ -57,19 +57,19 @@
 
     ![이 페이지에서 다양한 역할에 대한 권한을 할당합니다.](./configuring-the-questions-app/images/04.png)
 
-1. 다른 역할에 대한 권한을 할당합니다. *저장*을 클릭합니다.
+1. 다른 역할에 대한 권한을 할당합니다. **저장** 을 클릭합니다.
 
 ## 게스트 사용자를 로그인으로 리디렉션
 
 이 기능을 활성화하려면 시스템 설정을 통해 구성해야 합니다.
 
-1. *제어판* &rarr; *시스템 설정* &rarr; *타사*로 이동합니다.
-1. 위젯 범위에서 *질문* 을 클릭합니다.
+1. **제어판** &rarr; **시스템 설정** &rarr; **타사** 로 이동합니다.
+1. 위젯 범위에서 **질문** 을 클릭합니다.
 
     ![시스템 설정에서 질문 앱 설정으로 이동합니다.](./configuring-the-questions-app/images/05.png)
 
-1. 체크 *로그인으로 리디렉션 활성화*
-1. 게스트 사용자는 이제 *Ask Question*을 클릭하려고 하면 로그인 페이지로 리디렉션됩니다.
+1. 체크 **로그인으로 리디렉션 활성화**
+1. 게스트 사용자는 이제 **Ask Question** 을 클릭하려고 하면 로그인 페이지로 리디렉션됩니다.
 
 ```{note}
 게스트 사용자가 앱을 볼 수 있도록 서비스 액세스 정책을 생성해야 합니다.
@@ -79,9 +79,9 @@
 
 새 정책을 만들려면
 
-1. *제어판* &rarr; *서비스 액세스 정책*로 이동합니다. ** 추가 아이콘(![Add icon](../../images/icon-add.png))을 클릭합니다.
+1. **제어판** &rarr; **서비스 액세스 정책** 로 이동합니다. ** 추가 아이콘(![Add icon](../../images/icon-add.png))을 클릭합니다.
 
-1. 정책에 이름과 제목을 지정합니다. 하단의 *고급 모드로 전환* 버튼을 클릭합니다. 허용된 서비스 서명 아래에 다음 두 서명을 추가합니다.
+1. 정책에 이름과 제목을 지정합니다. 하단의 **고급 모드로 전환** 버튼을 클릭합니다. 허용된 서비스 서명 아래에 다음 두 서명을 추가합니다.
 
     ```java
     com.liferay.message.boards.service.MBCategoryService#getCategoriesCount
@@ -90,7 +90,7 @@
 
     ![새 정책을 만들고 서명을 추가합니다.](./configuring-the-questions-app/images/06.png)
 
-1. *저장* 을 클릭하여 새 정책을 저장합니다.
+1. **저장** 을 클릭하여 새 정책을 저장합니다.
 
 ## 시스템 구성 참조
 

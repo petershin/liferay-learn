@@ -24,7 +24,7 @@ using-content-pages/content-page-editor-ui-reference.md
 
 다른 페이지 유형과 마찬가지로 [위젯](./using-content-pages/using-widgets-on-a-content-page.md) 사용하여 블로그, 위키, 게시판 등을 통합하여 콘텐츠 페이지에 동적 기능을 추가할 수 있습니다. 콘텐츠 페이지는 주로 [페이지 조각](./page-fragments-and-widgets/using-fragments.md)을 사용하여 구축됩니다. 페이지 조각은 사용 가능한 콘텐츠에 매핑할 수도 있는 텍스트, 이미지 및 링크와 같은 편집 가능한 구성 요소를 포함하는 확장 가능하고 재사용 가능한 페이지 요소입니다. DXP의 즉시 사용 가능한 조각에 대해 자세히 알아보려면 [기본 조각 참조](./page-fragments-and-widgets/using-fragments/default-fragments-reference.md) 을 참조하고, 자신만의 조각을 만드는 방법을 알아보려면 [개발 조각](../developer-guide/developing-page-fragments/developing-fragments-intro.md) 참조하십시오.
 
-콘텐츠 페이지를 편집할 때 *Site Builder* 통해 변경 사항이 적용되고 초안으로 저장됩니다. 라이브 버전에 영향을 주지 않고 현재 편집 세션 중에 변경한 내용을 검토, 실행 취소 및 다시 실행할 수 있습니다. 준비가 되면 변경 사항을 즉시 게시하거나 사용자 정의 [워크플로](../../process-automation/workflow/introduction-to-workflow.md) 활성화하여 검토 및 게시 프로세스를 지시하십시오. 페이지 요소에 댓글 [개](./using-content-pages/using-page-comments.md) 추가하여 팀원과 협업할 수도 있습니다.
+콘텐츠 페이지를 편집할 때 **Site Builder** 통해 변경 사항이 적용되고 초안으로 저장됩니다. 라이브 버전에 영향을 주지 않고 현재 편집 세션 중에 변경한 내용을 검토, 실행 취소 및 다시 실행할 수 있습니다. 준비가 되면 변경 사항을 즉시 게시하거나 사용자 정의 [워크플로](../../process-automation/workflow/introduction-to-workflow.md) 활성화하여 검토 및 게시 프로세스를 지시하십시오. 페이지 요소에 댓글 [개](./using-content-pages/using-page-comments.md) 추가하여 팀원과 협업할 수도 있습니다.
 
 ![콘텐츠 페이지를 편집할 때 사이트 작성기를 통해 콘텐츠 페이지에 대한 모든 변경 사항이 적용됩니다.](./using-content-pages/images/01.png)
 

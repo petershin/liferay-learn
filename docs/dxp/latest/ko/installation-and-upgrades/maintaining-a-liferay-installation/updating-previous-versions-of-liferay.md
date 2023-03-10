@@ -72,7 +72,7 @@ Liferay DXP/Portal 일반 가용성(GA) 릴리스는 소스 코드에서 빌드�
      liferay/[place image name here]:[place tag here]
     ```
 
-1. `docker run` 명령에서 데이터베이스 업그레이드 또는 인덱스 업데이트를 활성화한 경우 콘솔 및 로그는 모든 업그레이드 실패, 오류 및 업그레이드할 추가 선택적 모듈을 보고합니다. [Gogo Shell 명령](../upgrading-liferay/upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) 을 사용하여 문제를 해결할 수 있습니다. 업그레이드가 성공적으로 완료되면 Docker 컨테이너를 중지하고 새 컨테이너를 생성하여 데이터베이스 업그레이드 및 인덱스 업데이트 환경 설정 없이 `docker run` 명령 *을 실행*.
+1. `docker run` 명령에서 데이터베이스 업그레이드 또는 인덱스 업데이트를 활성화한 경우 콘솔 및 로그는 모든 업그레이드 실패, 오류 및 업그레이드할 추가 선택적 모듈을 보고합니다. [Gogo Shell 명령](../upgrading-liferay/upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) 을 사용하여 문제를 해결할 수 있습니다. 업그레이드가 성공적으로 완료되면 Docker 컨테이너를 중지하고 새 컨테이너를 생성하여 데이터베이스 업그레이드 및 인덱스 업데이트 환경 설정 없이 `docker run` 명령 **을 실행** .
 
 새로운 Liferay 업데이트 Docker 이미지에서 실행 중입니다.
 

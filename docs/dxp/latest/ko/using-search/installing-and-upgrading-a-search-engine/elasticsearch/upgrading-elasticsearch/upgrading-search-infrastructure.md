@@ -65,7 +65,7 @@ Liferay 7.3 및 7.4 위젯과 구성 이름은 동일합니다.
 
 Liferay 7.2에서 업그레이드하는 경우 앱 및 구성의 이름을 바꾸면 다음과 같은 업그레이드 영향이 있습니다.
 
-1. LES Monitoring 위젯의 이름은 이제 *Elasticsearch Monitoring*입니다. 시작하는 동안 모듈 업그레이드 단계가 실행되어 _Liferay Enterprise Search Monitoring_ 이 배포되면 앱 이름이 변경됩니다. 조치가 필요하지 않습니다.
+1. LES Monitoring 위젯의 이름은 이제 **Elasticsearch Monitoring** 입니다. 시작하는 동안 모듈 업그레이드 단계가 실행되어 **Liferay Enterprise Search Monitoring** 이 배포되면 앱 이름이 변경됩니다. 조치가 필요하지 않습니다.
 1. 구성 파일 이름이 `com.liferay.portal.search.elasticsearch6.xpack.monitoring.web.internal.configuration.XPackMonitoringConfiguration.config` 에서 `com.liferay.portal.search.elasticsearch.monitoring.web.internal.configuration으로 변경되었습니다. .모니터링 구성`. 속성은 이전과 동일합니다. 포털 시작 중에 구성 이름을 바꾸는 모듈 업그레이드 단계가 실행됩니다. 조치가 필요하지 않습니다.
 1. 모니터링 위젯에 대한 Kibana 기본 경로가 변경되었습니다. `kibana.yml`에서 원래 설정을 변경해야 합니다. 
    

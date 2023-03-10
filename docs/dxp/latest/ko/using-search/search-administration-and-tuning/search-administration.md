@@ -4,7 +4,7 @@ uuid: 160b7d94-be20-4dfe-ba58-3eb11a34c47b
 
 # 검색 관리
 
-*Control Panel* &rarr; *Configuration* &rarr; *Search* 에는 연결, 인덱스 작업 및 필드 매핑의 세 가지 관리 UI가 있습니다. Connections는 설치가 연결된 검색 엔진을 보여주고, Index Actions는 재인덱싱을 위한 인터페이스이며, Field Mappings는 Liferay에서 검색 인덱스로 매핑된 필드를 표시합니다.
+**Control Panel** &rarr; **Configuration** &rarr; **Search** 에는 연결, 인덱스 작업 및 필드 매핑의 세 가지 관리 UI가 있습니다. Connections는 설치가 연결된 검색 엔진을 보여주고, Index Actions는 재인덱싱을 위한 인터페이스이며, Field Mappings는 Liferay에서 검색 인덱스로 매핑된 필드를 표시합니다.
 
 ![검색 관리 패널에는 세 개의 관리 화면이 있습니다.](./search-administration/images/02.png)
 
@@ -16,7 +16,7 @@ uuid: 160b7d94-be20-4dfe-ba58-3eb11a34c47b
 * 클라이언트 버전: 7.16.3
 * 활성 연결: 1
 * 건강: 녹색
-* 연결 ID: \_REMOTE\_
+* 연결 ID: \ **REMOTE\**
 * 연결 유형: 읽기/쓰기
 * 클러스터 이름: LiferayElasticsearchCluster
 * 노드: 1

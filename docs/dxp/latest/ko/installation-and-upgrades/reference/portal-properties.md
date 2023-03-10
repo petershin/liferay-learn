@@ -1,6 +1,6 @@
 # 문맥 재산
 
-구성 옵션은 *포털 속성*, 속성 파일에서 읽은 이름/값 쌍 세트 및 서버 시작 시 Docker 환경 변수를 사용하여 지정됩니다. [기본값](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 은 `portal-impl.jar/portal.properties` 파일에 지정됩니다.
+구성 옵션은 **포털 속성** , 속성 파일에서 읽은 이름/값 쌍 세트 및 서버 시작 시 Docker 환경 변수를 사용하여 지정됩니다. [기본값](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 은 `portal-impl.jar/portal.properties` 파일에 지정됩니다.
 
 일부 속성은 사용자 인터페이스(UI)를 통해 변경할 수 있지만 다른 속성은 속성 파일 또는 Docker 환경 변수에서만 변경할 수 있습니다. 여기에는 데이터베이스 연결, [Liferay Home 폴더의 사이트 선언,](./liferay-home.md) 사용자 인증 방법 변경 [이메일 주소 대신 화면 이름 사용](../securing-liferay/authentication-basics.md#configuring-authentication-type-using-properties) 이 포함됩니다.
 
@@ -182,7 +182,7 @@ mail.session.jndi.name=mail/DevMailSession
 
 DXP 데이터베이스에 저장된 속성은 포털 속성 파일에 설정된 속성보다 우선 순위가 높습니다.
 
-*제어판* 의 *구성* &rarr; *시스템 설정* 으로 이동하여 시스템 설정을 찾습니다. 시스템 설정을 `.config` 파일로 내보내 소스 제어에 저장하고 분산 DXP 설치에서 사용할 수 있습니다. 시스템 설정 및 구성 파일을 통해 설정된 포털 속성은 데이터베이스에 저장됩니다. 일부 속성은 즉시 적용되지만 다른 속성은 서버를 다시 시작해야 합니다.
+**제어판** 의 **구성** &rarr; **시스템 설정** 으로 이동하여 시스템 설정을 찾습니다. 시스템 설정을 `.config` 파일로 내보내 소스 제어에 저장하고 분산 DXP 설치에서 사용할 수 있습니다. 시스템 설정 및 구성 파일을 통해 설정된 포털 속성은 데이터베이스에 저장됩니다. 일부 속성은 즉시 적용되지만 다른 속성은 서버를 다시 시작해야 합니다.
 
 ## 추가 정보
 

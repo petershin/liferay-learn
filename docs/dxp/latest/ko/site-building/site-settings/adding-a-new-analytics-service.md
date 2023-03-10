@@ -4,17 +4,17 @@ Liferay DXP에는 사이트의 트래픽을 분석하기 위한 Google Analytics
 
 ## 새 분석 서비스 추가
 
-1. [글로벌 메뉴](../../getting-started/navigating-dxp.md) ( ![Global Menu icon](../../images/icon-applications-menu.png) )를 열고 *제어판* &rarr; *인스턴스 설정*로 이동합니다.
+1. [글로벌 메뉴](../../getting-started/navigating-dxp.md) ( ![Global Menu icon](../../images/icon-applications-menu.png) )를 열고 **제어판** &rarr; **인스턴스 설정** 로 이동합니다.
 
-1. *Platform* 제목 아래에서 *Analytics* 을 선택합니다.
+1. **Platform** 제목 아래에서 **Analytics** 을 선택합니다.
 
-1. 제공된 *Analytics* 필드에 추가하려는 추가 서비스의 이름을 입력하십시오.
+1. 제공된 **Analytics** 필드에 추가하려는 추가 서비스의 이름을 입력하십시오.
 
     ![Instance Settings를 통해 추가 분석 서비스를 입력할 수 있습니다.](./adding-a-new-analytics-service/images/01.png)
 
 ## Analytics 서비스에 대한 추적 코드 추가
 
-1. 이름을 입력했으면 사이트 메뉴를 열고 분석을 추가하려는 사이트의 *구성* &rarr; *설정* &rarr; *고급* &rarr; *분석* 페이지로 이동합니다.
+1. 이름을 입력했으면 사이트 메뉴를 열고 분석을 추가하려는 사이트의 **구성** &rarr; **설정** &rarr; **고급** &rarr; **분석** 페이지로 이동합니다.
 
     ```{note}
     Liferay DXP 7.1 및 7.2에서는 대신 사이트 메뉴에서 *구성* → *사이트 설정* → *고급* → *분석*으로 이동합니다.

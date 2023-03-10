@@ -6,7 +6,7 @@ liferay-npm-bundler는 위젯 프로젝트의 루트 폴더에 있는 `.npmbundl
 
 ## 구조
 
-`.npmbundlerrc` 파일에는 4개의 가능한 단계 정의가 있습니다: *copy-process*, *pre-process*, *post-process*, *babel*. 이러한 위상 정의는 아래에서 자세히 설명합니다.
+`.npmbundlerrc` 파일에는 4개의 가능한 단계 정의가 있습니다: **copy-process** , **pre-process** , **post-process** , **babel** . 이러한 위상 정의는 아래에서 자세히 설명합니다.
 
 **Copy-Process:** `copy-plugins` 속성으로 정의됨(종속성 패키지에만 사용 가능). 지정된 각 패키지에서 복사하거나 제외해야 하는 파일을 지정합니다.
 
@@ -18,7 +18,7 @@ liferay-npm-bundler는 위젯 프로젝트의 루트 폴더에 있는 `.npmbundl
 이 단계에서 Babel은 패키지 파일을 변환하지만(예: 필요한 경우 AMD 형식으로 변환) 트랜스파일하지는 않습니다. 이론적으로 적절한 플러그인을 구성하여 트랜스파일할 수도 있습니다. 관련 없는 두 프로세스가 섞이지 않도록 번들러를 실행하기 전에 트랜스파일링하는 것이 좋습니다.
 ```
 
-**포스트 프로세스:** 포스트 플러그인 `속성으로` 됩니다. *전처리* 단계를 사용하는 대신 Babel 단계가 완료된 후 실행할 플러그인을 지정합니다.
+**포스트 프로세스:** 포스트 플러그인 `속성으로` 됩니다. **전처리** 단계를 사용하는 대신 Babel 단계가 완료된 후 실행할 플러그인을 지정합니다.
 
 다음은 `.npmbundlerrc` 구성의 예입니다.
 
@@ -141,7 +141,7 @@ liferay-npm-bundler는 위젯 프로젝트의 루트 폴더에 있는 `.npmbundl
 
 `"\"`: 종속성 패키지에 대한 플러그인 구성.
 
-*(별표)*: 모든 npm 패키지에 대한 기본 플러그인 구성을 정의합니다. 여기에는 해당 키로 식별되는 4개의 값이 포함됩니다. 키 `복사 플러그인`, `플러그인` 및 `사후 플러그인` 는 복사, 사전 및 사후 프로세스 단계에 적용할 `liferay-npm-bundler` 플러그인 배열을 식별합니다. Key `.babelrc` 은 Babel 단계에서 사용할 구성을 지정하는 개체를 식별하며 표준 `.babelrc` 파일과 동일한 구조를 갖습니다.
+(**별표**) : 모든 npm 패키지에 대한 기본 플러그인 구성을 정의합니다. 여기에는 해당 키로 식별되는 4개의 값이 포함됩니다. 키 `복사 플러그인`, `플러그인` 및 `사후 플러그인` 는 복사, 사전 및 사후 프로세스 단계에 적용할 `liferay-npm-bundler` 플러그인 배열을 식별합니다. Key `.babelrc` 은 Babel 단계에서 사용할 구성을 지정하는 개체를 식별하며 표준 `.babelrc` 파일과 동일한 구조를 갖습니다.
 
 `제외:` 전체 또는 특정 패키지에서 번들링에서 제외할 파일의 glob 표현식을 정의합니다. 각 목록은 다음 키 중 하나로 식별되는 배열입니다. `*` (모든 패키지), `{package name}` (패키지의 모든 버전) 또는 `{package name}@{version}` (패키지의 특정 버전). 다음은 구성 예입니다.
 
@@ -169,7 +169,7 @@ liferay-npm-bundler는 위젯 프로젝트의 루트 폴더에 있는 `.npmbundl
 
 `max-parallel-files:` EMFILE 오류를 방지하기 위해 병렬로 처리할 최대 파일 수를 정의합니다(특히 Windows에서). 기본값은 `128`입니다.
 
-`process-serially:` **참고**: v 2.7.0부터 제거되었습니다. `max-parallel-files`로 대체되었습니다.
+`process-serially:` **참고** : v 2.7.0부터 제거되었습니다. `max-parallel-files`로 대체되었습니다.
 
 `규칙:` 로더를 사용하여 프로젝트 소스 파일에 적용할 규칙을 정의합니다. 규칙에는 사용할 로더를 정의하는 `사용` 배열 속성이 있어야 합니다. 이 속성은 패키지 이름 또는 `로더` 및 `옵션` 속성이 있는 개체를 사용하여 지정할 수 있으며 해당하는 경우 아래 속성 중 하나 이상을 사용할 수 있습니다.
 
@@ -220,7 +220,7 @@ liferay-npm-bundler는 위젯 프로젝트의 루트 폴더에 있는 `.npmbundl
 
 버전 2.2.0부터 liferay-npm-bundler는 위젯 OSGi 번들을 생성할 수 있습니다.
 
-* **create-jar**: truthy 값으로 설정된 경우 OSGi 번들을 생성합니다. `true`로 설정하면 모든 하위 옵션이 기본값을 사용합니다. 개체가 전달되면 각 하위 옵션을 개별적으로 구성할 수 있습니다. 이것을 빌드 플래그로 전달할 수도 있습니다: `$ liferay-npm-bundler --create-` 또는 `$ liferay-npm-bundler -j`. 기본값은 `거짓`입니다.
+* **create-jar** : truthy 값으로 설정된 경우 OSGi 번들을 생성합니다. `true`로 설정하면 모든 하위 옵션이 기본값을 사용합니다. 개체가 전달되면 각 하위 옵션을 개별적으로 구성할 수 있습니다. 이것을 빌드 플래그로 전달할 수도 있습니다: `$ liferay-npm-bundler --create-` 또는 `$ liferay-npm-bundler -j`. 기본값은 `거짓`입니다.
 
 ```json
 {
@@ -228,9 +228,9 @@ liferay-npm-bundler는 위젯 프로젝트의 루트 폴더에 있는 `.npmbundl
 }
 ```
 
-* **create-jar.auto-deploy-portlet**: 이 옵션은 더 이상 사용되지 않습니다. 대신 `create-jar.features.js-extender` 옵션을 사용하십시오.
+* **create-jar.auto-deploy-portlet** : 이 옵션은 더 이상 사용되지 않습니다. 대신 `create-jar.features.js-extender` 옵션을 사용하십시오.
 
-* **create-jar.features.configuration**: 사용할 시스템(OSGi) 및 위젯 인스턴스(포틀릿 사양에 정의된 위젯 환경 설정) 구성을 설명하는 파일을 지정합니다. 기본값은 해당 파일이 있는 경우 `features/configuration.json` 이고 그렇지 않은 경우 기본값은 `undefined`입니다.
+* **create-jar.features.configuration** : 사용할 시스템(OSGi) 및 위젯 인스턴스(포틀릿 사양에 정의된 위젯 환경 설정) 구성을 설명하는 파일을 지정합니다. 기본값은 해당 파일이 있는 경우 `features/configuration.json` 이고 그렇지 않은 경우 기본값은 `undefined`입니다.
 
 ```json
 {

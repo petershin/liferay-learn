@@ -8,11 +8,11 @@ Documents and Media는 오디오 및 비디오 파일 미리 보기를 생성하
 
 설치가 완료되면 다음 단계에 따라 FFmpeg를 사용하도록 문서 및 미디어를 구성합니다.
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *시스템 설정* &rarr; *문서 및 미디어*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **시스템 설정** &rarr; **문서 및 미디어** 으로 이동합니다.
 
-1. *FFMPEG 오디오 변환기*로 이동하여 *활성화*을 선택하고 *업데이트*를 클릭합니다.
+1. **FFMPEG 오디오 변환기** 로 이동하여 **활성화** 을 선택하고 **업데이트** 를 클릭합니다.
 
-1. *FFMPEG Video Converter*로 이동하여 *Enable*을 확인하고 *Update*를 클릭합니다.
+1. **FFMPEG Video Converter** 로 이동하여 **Enable** 을 확인하고 **Update** 를 클릭합니다.
 
    ![FFMPEG 오디오 변환기와 FFMPEG 비디오 변환기를 모두 활성화합니다.](./enabling-ffmpeg-for-audio-and-video-previews/images/01.png)
 

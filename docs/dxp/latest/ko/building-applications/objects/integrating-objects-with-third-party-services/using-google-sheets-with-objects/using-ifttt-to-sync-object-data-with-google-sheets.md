@@ -8,39 +8,39 @@
 
 개체 데이터를 Google 시트에 동기화하려면 다음 단계를 따르세요.
 
-1. [IFTTT](https://ifttt.com/) 에 로그인하고 *만들기*을 클릭합니다.
+1. [IFTTT](https://ifttt.com/) 에 로그인하고 **만들기** 을 클릭합니다.
 
     ![만들기를 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/01.png)
 
-1. *If This* 단계에 대해 *추가* 을 클릭합니다.
+1. **If This** 단계에 대해 **추가** 을 클릭합니다.
 
     ![If This 단계에 대해 추가를 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/02.png)
 
-1. *Webhook*을 선택합니다.
+1. **Webhook** 을 선택합니다.
 
     ![웹후크를 선택합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/03.png)
 
-1. 트리거 유형에 대해 *웹 요청 수신*을 클릭합니다.
+1. 트리거 유형에 대해 **웹 요청 수신** 을 클릭합니다.
 
     ![트리거 유형을 선택합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/04.png)
 
-1. *이벤트 이름* 을 입력하고 *트리거 생성*을 클릭합니다.
+1. **이벤트 이름** 을 입력하고 **트리거 생성** 을 클릭합니다.
 
     ![이벤트 이름을 입력하고 트리거 생성을 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/05.png)
 
-1. *Then That* 단계에 대해 *추가* 을 클릭합니다.
+1. **Then That** 단계에 대해 **추가** 을 클릭합니다.
 
     ![Then That 단계에 대해 추가를 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/06.png)
 
-1. *Google 스프레드시트*을 선택합니다.
+1. **Google 스프레드시트** 을 선택합니다.
 
     ![Google 스프레드시트를 검색하여 선택합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/07.png)
 
-1. 작업 유형의 경우 *스프레드시트에 행 추가*을 클릭합니다.
+1. 작업 유형의 경우 **스프레드시트에 행 추가** 을 클릭합니다.
 
     ![스프레드시트에 행 추가를 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/08.png)
 
-1. 작업을 구성하고 *작업 만들기*을 클릭합니다.
+1. 작업을 구성하고 **작업 만들기** 을 클릭합니다.
 
     ![작업을 구성합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/09.png)
 
@@ -48,19 +48,19 @@
     Google 계정을 연결할 때 원하는 Google 계정을 선택하고 계정 파일에 액세스할 수 있는 IFTTT 권한을 부여하는 창이 열립니다.
     ```
 
-1. *계속*을 클릭합니다.
+1. **계속** 을 클릭합니다.
 
     ![계속을 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/10.png)
 
-1. 검토하고 *마침*을 클릭합니다.
+1. 검토하고 **마침** 을 클릭합니다.
 
     ![검토하고 마침을 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/11.png)
 
-1. 프로세스를 마치면 *애플릿*이 이미 *연결*된 것입니다.
+1. 프로세스를 마치면 **애플릿** 이 이미 **연결** 된 것입니다.
 
     ![검토하고 마침을 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/12.png)
 
-1. 생성되면 *Webhook 아이콘* &rarr; *Documentation* 를 클릭하고 생성된 *Webhook URL*을 복사합니다.
+1. 생성되면 **Webhook 아이콘** &rarr; **Documentation** 를 클릭하고 생성된 **Webhook URL** 을 복사합니다.
 
     ![웹후크 아이콘을 클릭합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/13.png)
 

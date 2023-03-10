@@ -1,6 +1,6 @@
 # 개체 활성화 및 비활성화
 
-기본적으로 객체는 *활성화되고* 처음 [게시될 때 사용할 수 있습니다](./creating-objects.md#publishing-object-drafts) . 활성화되어 있는 동안 사용자는 Liferay UI 및 Headless API 호출을 통해 개체 및 해당 항목에 액세스할 수 있습니다. 그러나 언제든지 사용자 정의 개체를 비활성화할 수 있습니다.
+기본적으로 객체는 **활성화되고** 처음 [게시될 때 사용할 수 있습니다](./creating-objects.md#publishing-object-drafts) . 활성화되어 있는 동안 사용자는 Liferay UI 및 Headless API 호출을 통해 개체 및 해당 항목에 액세스할 수 있습니다. 그러나 언제든지 사용자 정의 개체를 비활성화할 수 있습니다.
 
 개체를 비활성화하면 패널 범주, 통합 프레임워크 및 관련 개체에서 개체가 제거됩니다. 비활성 상태에서는 객체 애플리케이션에서 객체를 편집 및 확장만 할 수 있습니다. 개체 항목이 비활성화될 때 사이트 또는 관련 개체에 나타나는 경우 해당 항목은 비어 있으며 해당 필드는 관련 개체 레이아웃에 더 이상 나타나지 않습니다.
 
@@ -12,15 +12,15 @@
 
 사용자 정의 개체를 활성화하거나 비활성화하려면
 
-1. Global Menu(![Global Menu](../../../images/icon-applications-menu.png))를 열고 *Control Panel* 탭으로 이동하여 *Objects*를 클릭합니다.
+1. Global Menu(![Global Menu](../../../images/icon-applications-menu.png))를 열고 **Control Panel** 탭으로 이동하여 **Objects** 를 클릭합니다.
 
 1. 원하는 개체를 클릭합니다. 시스템 개체를 비활성화할 수 없습니다.
 
-1. 세부 정보 탭의 개체 데이터에서 스사이트를 *활성* 또는 *비활성*으로 전환합니다.
+1. 세부 정보 탭의 개체 데이터에서 스사이트를 **활성** 또는 **비활성** 으로 전환합니다.
 
    ![개체를 활성 또는 비활성으로 전환합니다.](./activating-and-deactivating-objects/images/01.png)
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 ## 추가 정보
 

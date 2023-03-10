@@ -1,6 +1,6 @@
 # 조각에 스타일 적용
 
-페이지에 프래그먼트를 추가할 때 사이드바 메뉴를 사용하여 [ *스타일* 구성 탭](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles) 을 포함하여 프래그먼트를 구성할 수 있습니다.
+페이지에 프래그먼트를 추가할 때 사이드바 메뉴를 사용하여 [**스타일** 구성 탭](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles) 을 포함하여 프래그먼트를 구성할 수 있습니다.
 
 ![사이드바 메뉴의 스타일 탭을 사용하면 페이지의 조각별로 스타일을 구성할 수 있습니다.](./applying-styles-to-fragments/images/01.png)
 
@@ -10,7 +10,7 @@
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U31+ 및 GA31+`
 
-스타일이 적용되는 방식을 변경하려면 조각의 HTML 구성을 변경해야 합니다. `data-lfr-styles` 속성을 프래그먼트에 포함된 요소에 추가하여 적용된 스타일을 해당 특정 요소에 적용하는 대신 적용합니다. *조각당 하나의 `data-lfr-styles` 속성만 허용됩니다.*
+스타일이 적용되는 방식을 변경하려면 조각의 HTML 구성을 변경해야 합니다. `data-lfr-styles` 속성을 프래그먼트에 포함된 요소에 추가하여 적용된 스타일을 해당 특정 요소에 적용하는 대신 적용합니다. **조각당 하나의 `data-lfr-styles` 속성만 허용됩니다.**
 
 예를 들어, 이 HTML로 간단한 사용자 정의 조각을 구성하고 여기에 스타일 변경을 적용하면 전체 조각에 적용됩니다(외부 `<div>` 태그를 추가하여 HTML이 렌더링될 때 둘러싸도록 함).
 
@@ -48,8 +48,8 @@
 
 프래그먼트 편집에 선호하는 방법을 사용하여 `data-lfr-styles` 속성을 추가할 수 있습니다.
 
-* **UI에서 [Fragments Editor 사용](./using-the-fragments-editor.md)**: 편집기의 HTML 창에서 변경
-* ** [Fragments Toolkit 사용](./using-the-fragments-toolkit.md)**: 프래그먼트의 `index.html` 파일을 변경합니다.
+* **UI에서 [Fragments Editor 사용](./using-the-fragments-editor.md)** : 편집기의 HTML 창에서 변경
+* **[Fragments Toolkit 사용](./using-the-fragments-toolkit.md)** : 프래그먼트의 `index.html` 파일을 변경합니다.
 
 ## 추가 정보
 

@@ -11,18 +11,19 @@ Liferay의 Headless Delivery 애플리케이션은 [게시판](../../message-boa
 자습서를 진행하기 전에 먼저 깨끗한 Liferay Docker 컨테이너를 설정하고 제공된 자습서 코드를 사용할 준비를 합니다.
 
 ### Liferay 도커 컨테이너
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once started, retrieve the site ID. To find your site ID, open the *Site Menu* (![Site Menu](../../../images/icon-menu.png)) and go to *Configuration* &rarr; *Site Settings* &rarr; *Site Configuration*.
+일단 시작되면 사이트 ID를 검색하십시오. 사이트 ID를 찾으려면 **사이트 메뉴**(![사이트 메뉴](../../../images/icon-menu.png))를 열고 **구성** &rarr; **사이트 설정** &rarr; **사이트 구성** .
 
-![Find the site ID under the Site Configuration settings.](./message-boards-api-basics/images/01.png)
+![사이트 구성 설정에서 사이트 ID를 찾습니다.](./message-boards-api-basics/images/01.png)
 
-### Tutorial Code
+### 튜토리얼 코드
 
-Below is sample code to demonstrate the Headless API. This code includes both sample cURL and Java files.
+다음은 Headless API를 보여주는 샘플 코드입니다. 이 코드에는 샘플 cURL 및 Java 파일이 모두 포함되어 있습니다.
 
-Run the following command to download and unzip the [sample code](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip) :
+다음 명령을 실행하여 [샘플 코드](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip)를 다운로드하고 압축을 풉니다. :
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip -O

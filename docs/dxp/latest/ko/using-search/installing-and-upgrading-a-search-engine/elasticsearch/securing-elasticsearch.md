@@ -198,7 +198,7 @@ xpack.security.http.ssl.truststore.password: liferay
 
 ## Liferay에서 Elasticsearch에 대한 보안 연결 구성
 
-Liferay에서는 제어판에서 또는 구성 파일을 사용하여 보안을 구성할 수 있습니다. *제어판* &rarr; *구성* &rarr; *시스템 설정*으로 이동합니다. *검색* 카테고리를 찾아 Liferay 7.3+의 *Elasticsearch 7* 항목 또는 Liferay 7.2의 *X-Pack Security* 항목을 클릭합니다. 여기에 속성 값을 입력할 수 있지만 `[Liferay Home]/osgi/configs`에 배포된 구성 파일을 사용하는 것이 더 일반적입니다.
+Liferay에서는 제어판에서 또는 구성 파일을 사용하여 보안을 구성할 수 있습니다. **제어판** &rarr; **구성** &rarr; **시스템 설정** 으로 이동합니다. **검색** 카테고리를 찾아 Liferay 7.3+의 **Elasticsearch 7** 항목 또는 Liferay 7.2의 **X-Pack Security** 항목을 클릭합니다. 여기에 속성 값을 입력할 수 있지만 `[Liferay Home]/osgi/configs`에 배포된 구성 파일을 사용하는 것이 더 일반적입니다.
 
 파일의 정확한 내용은 X-Pack 설정에 따라 다릅니다. `암호` 은 위의 X-Pack 사용자 암호 설정 중에 설정한 암호와 일치해야 합니다.
 
@@ -308,7 +308,7 @@ transportSSLEnabled="true"
 
 `sslCertificatePath` (_/path/to/instance.crt_): 클라이언트가 연결할 때 제공되는 인증서(또는 인증서 체인)를 포함하는 PEM 인코딩 파일의 경로를 설정합니다. 기본값은 `/path/to/instance.crt`입니다.
 
-`sslCertificateAuthoritiesPaths` (_["/path/to/ca.crt"]_): 신뢰할 수 있는 PEM 인코딩 인증서 파일의 경로 목록을 제공합니다.
+`sslCertificateAuthoritiesPaths` ([**"/path/to/ca.crt"**]): 신뢰할 수 있는 PEM 인코딩 인증서 파일의 경로 목록을 제공합니다.
 
 `certificateFormat` (_PKCS#12_): 인증서 형식을 지정합니다(`PEM` 또는 `PKCS#12`).
 
@@ -318,7 +318,7 @@ transportSSLEnabled="true"
 
 `비밀번호`: 인증 필요가 활성화된 경우 비밀번호가 필요합니다.
 
-`transportSSLVerificationMode` (_인증서_): 중간자 공격 및 인증서 위조로부터 보호하기 위해 LDAP를 사용할 때 확인 유형(`없음`, `인증서`또는 `전체`)을 지정합니다.
+`transportSSLVerificationMode` (**인증서**): 중간자 공격 및 인증서 위조로부터 보호하기 위해 LDAP를 사용할 때 확인 유형(`없음`, `인증서`또는 `전체`)을 지정합니다.
 
 `transportSSLEnabled` (_false_): TLS/SSL을 설정하거나 비활성화합니다.
 

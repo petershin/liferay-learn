@@ -1,6 +1,6 @@
 # 지역 지도 차트
 
-Geomap 차트를 사용하면 지정된 색상 범위(일반적으로 더 낮은 순위를 나타내는 밝은 색상과 더 높은 순위를 나타내는 어두운 색상)가 지정된 지리 기반 데이터를 시각화할 수 있습니다. 기본 구성은 Clay 차트 지형도 구성 요소에서 가져옵니다.<!--\[geomap component\](https://github.com/liferay/clay/blob/develop/packages/clay-charts/src/Geomap.js#L233-L276)-->: 하늘색(#b1d4ff)에서 진한 파란색(#0065e4)까지의 범위이며 사이트의 `pop_est` 값(geomap의 JSON 파일에 지정됨)을 기준으로 지리 순위를 매깁니다.
+Geomap 차트를 사용하면 지정된 색상 범위(일반적으로 더 낮은 순위를 나타내는 밝은 색상과 더 높은 순위를 나타내는 어두운 색상)가 지정된 지리 기반 데이터를 시각화할 수 있습니다. 기본 구성은 Clay 차트 지형도 구성 요소에서 가져옵니다. <!--\[geomap component\](https://github.com/liferay/clay/blob/develop/packages/clay-charts/src/Geomap.js#L233-L276)--> : 하늘색(#b1d4ff)에서 진한 파란색(#0065e4)까지의 범위이며 사이트의 `pop_est` 값(geomap의 JSON 파일에 지정됨)을 기준으로 지리 순위를 매깁니다.
 
 ![Geomap 차트는 데이터를 나타내는 히트맵을 표시합니다.](./geomap-chart/images/01.png)
 

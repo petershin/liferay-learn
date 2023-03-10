@@ -12,7 +12,7 @@ Blade CLI가 예상대로 작동하지 않는 경우 여기에서 답을 찾을 
 echo 'export PATH="$PATH:$HOME/Library/PackageManager/bin"' >> ~/.bash_profile
 ```
 
-**리눅스 **
+**리눅스**
 
 ```bash
 echo 'export PATH="$PATH:$HOME/jpm/bin"' >> ~/.bash_profile

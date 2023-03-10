@@ -14,7 +14,7 @@
 
 환경에서 컨테이너를 생성한 후 컨테이너 진입점은 해당 환경에서 다음 수명 주기 단계를 실행합니다.
 
-1. **사전 구성:** [Tomcat 및 Liferay를 구성하기 전에 사용자 제공 스크립트](./running-scripts-in-containers.md) 를 실행합니다.
+1. **사전 구성:**[Tomcat 및 Liferay를 구성하기 전에 사용자 제공 스크립트](./running-scripts-in-containers.md) 를 실행합니다.
 1. **구성:** Tomcat에서 Liferay 실행을 준비합니다.
     1. [Tomcat의 Java 런타임 환경 설정](./configuring-containers.md#jvm-options) .
     1. [사용자 제공 파일](./configuring-containers.md) 을 [Liferay Home](../../reference/liferay-home.md) 에 복사합니다.
@@ -22,9 +22,9 @@
     1. [사용자 제공 아티팩트 배포](./installing-apps-and-other-artifacts-to-containers.md).
     1. [Patching Tool](./patching-dxp-in-docker.md#updating-the-patching-tool) 을 사용자가 제공한 버전으로 업데이트합니다.
     1. [사용자 제공 패치 설치](./patching-dxp-in-docker.md).
-1. **사전 시작:** [Tomcat을 시작하기 전에](./running-scripts-in-containers.md) 사용자 제공 스크립트를 실행합니다.
+1. **사전 시작:**[Tomcat을 시작하기 전에](./running-scripts-in-containers.md) 사용자 제공 스크립트를 실행합니다.
 1. **Tomcat 시작:** Catalina 스크립트를 사용하여 Tomcat을 시작합니다.
-1. **종료 후:** [Tomcat이 중지된 후 사용자 제공 스크립트](./running-scripts-in-containers.md) 을 실행합니다.
+1. **종료 후:**[Tomcat이 중지된 후 사용자 제공 스크립트](./running-scripts-in-containers.md) 을 실행합니다.
 
 ## API
 

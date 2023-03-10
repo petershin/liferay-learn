@@ -30,7 +30,7 @@ liferay-npm-bundler 2.x를 사용하기 위해 아래 표시된 프레임워크 
 
 1. liferay-npm-bundler 2.x에는 기본적으로 이러한 종속성이 포함되어 있으므로 `package.json` 에서 `liferay-npm-bundler-preset-*` 종속성을 모두 제거합니다.
 1. `.npmbundlerrc` 파일에서 구성한 번들러 사전 설정을 제거합니다. liferay-npm-bundler 2.x에는 모든 프레임워크를 자동으로 처리하는 하나의 스마트 사전 설정이 포함되어 있습니다.
-1. 프로젝트의 `.babelrc` 파일에서 *liferay-project* 사전 설정을 제거합니다. 남아 있어야 하는 것은 아래에 표시된 `es2015` 사전 설정입니다.
+1. 프로젝트의 `.babelrc` 파일에서 **liferay-project** 사전 설정을 제거합니다. 남아 있어야 하는 것은 아래에 표시된 `es2015` 사전 설정입니다.
 
     ```json
     {

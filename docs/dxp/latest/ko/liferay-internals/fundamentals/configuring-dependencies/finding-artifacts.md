@@ -4,9 +4,9 @@
 
 아티팩트를 종속성으로 지정하기 전에 먼저 해당 속성을 찾아야 합니다. 아티팩트에는 다음과 같은 속성이 있습니다.
 
-* *그룹 ID*: 저작 조직
-* *Artifact ID*: 이름/식별자
-* *버전*: 릴리스 번호
+* **그룹 ID** : 저작 조직
+* **Artifact ID** : 이름/식별자
+* **버전** : 릴리스 번호
 
 여기에서는 종속성을 지정하기 위해 아티팩트 속성을 찾는 방법을 배웁니다.
 
@@ -57,9 +57,9 @@ App Manager는 배포된 모듈에 대한 최상의 정보를 제공합니다.
 
 [App Manager](../../../system-administration/installing-and-managing-apps/managing-apps/using-the-app-manager.md) 은 Liferay 인스턴스에 배포된 항목을 보여줍니다.
 
-1. Liferay에서 *글로벌 메뉴* (![Global Menu icon](./finding-artifacts/images/01.png))을 클릭하고 *제어판* 탭을 선택합니다.
+1. Liferay에서 **글로벌 메뉴**(![Global Menu icon](./finding-artifacts/images/01.png))을 클릭하고 **제어판** 탭을 선택합니다.
 
-1. 시스템 카테고리에서 *App Manager*을 선택합니다.
+1. 시스템 카테고리에서 **App Manager** 을 선택합니다.
 
 1. 표시 이름, 기호 이름 또는 관련 키워드로 모듈을 검색하십시오. 앱 목록을 통해 모듈을 찾아볼 수도 있습니다. 브라우징이든 검색이든 앱 관리자는 각 모듈의 아티팩트 ID와 버전 번호를 표시합니다.
 
@@ -71,7 +71,7 @@ App Manager는 배포된 모듈에 대한 최상의 정보를 제공합니다.
 
 독립 모듈의 그룹 ID를 모르는 경우 [Felix Gogo Shell](../using-the-gogo-shell.md) 을 사용하여 찾으십시오.
 
-1. 제어판의 시스템 범주에서 *Gogo Shell*을 선택합니다. Gogo Shell 명령 프롬프트에 명령을 입력합니다.
+1. 제어판의 시스템 범주에서 **Gogo Shell** 을 선택합니다. Gogo Shell 명령 프롬프트에 명령을 입력합니다.
 
 1. 표시 이름(예: `Apache Aries CDI`) 또는 키워드로 모듈을 검색합니다. 결과에서 모듈 번호를 기록해 둡니다. 다음 단계에서 사용할 수 있습니다. 아래 예는 Liferay 알림 API 모듈 번호 `47`을 보여줍니다.
 
@@ -99,15 +99,15 @@ Javadoc에서 Liferay 앱 모듈의 속성을 찾으려면 다음 단계를 따�
 
 1. 앱 모듈 클래스에 대한 Javadoc로 이동합니다. 클래스의 Javadoc에 대한 링크가 없는 경우 Liferay 에디션용 Javadoc 앱을 검색하여 찾을 수 있습니다.
 
-    **라이프레이 DXP**: <https://docs.liferay.com/dxp/apps>
+    **라이프레이 DXP** : <https://docs.liferay.com/dxp/apps>
 
-    **라이프레이 포털**: <https://docs.liferay.com/ce/apps>
+    **라이프레이 포털** : <https://docs.liferay.com/ce/apps>
 
 1. 클래스의 패키지 이름을 복사합니다.
 
-1. *개요* 페이지로 이동합니다.
+1. **개요** 페이지로 이동합니다.
 
-1. *개요* 페이지에서 2단계에서 복사한 패키지 이름을 검색합니다.
+1. **개요** 페이지에서 2단계에서 복사한 패키지 이름을 검색합니다.
 
 패키지 이름 위의 제목에는 모듈의 아티팩트 ID, 버전 번호 및 표시 이름이 표시됩니다. 모든 앱 모듈의 그룹 ID는 `com.liferay`입니다.
 

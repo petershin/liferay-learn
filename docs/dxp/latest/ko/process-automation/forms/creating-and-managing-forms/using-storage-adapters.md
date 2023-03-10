@@ -1,10 +1,10 @@
 # 스토리지 어댑터 사용
 
-사용자가 양식 레코드를 추가하면 Liferay는 [스토리지 어댑터](../developer-guide/understanding-form-storage-adapters.md) API를 통해 요청 처리를 라우팅합니다. 양식 항목(읽기, 업데이트 및 삭제)에서 수행되는 다른 *CRUD* 작업에 대해서도 마찬가지입니다. 스토리지 서비스의 기본 구현은 Liferay 데이터베이스에 저장하기 위해 양식을 JSON으로 변환합니다.
+사용자가 양식 레코드를 추가하면 Liferay는 [스토리지 어댑터](../developer-guide/understanding-form-storage-adapters.md) API를 통해 요청 처리를 라우팅합니다. 양식 항목(읽기, 업데이트 및 삭제)에서 수행되는 다른 **CRUD** 작업에 대해서도 마찬가지입니다. 스토리지 서비스의 기본 구현은 Liferay 데이터베이스에 저장하기 위해 양식을 JSON으로 변환합니다.
 
 ![Liferay Forms용 스토리지 어댑터는 구성 가능합니다.](./using-storage-adapters/images/01.png)
 
-기본 _JSON_ 스토리지 어댑터는 Liferay 7.4에서 _Default_으로 이름이 변경되었습니다. 기본 어댑터 외에도 Liferay 7.4부터 _Object_ 스토리지 어댑터가 있습니다. 시스템에 [개의 사용자 지정 스토리지 어댑터가 포함된 경우](../developer-guide/writing-a-form-storage-adapter.md) 개 이상이 있을 수 있습니다.
+기본 **JSON** 스토리지 어댑터는 Liferay 7.4에서 **Default** 으로 이름이 변경되었습니다. 기본 어댑터 외에도 Liferay 7.4부터 **Object** 스토리지 어댑터가 있습니다. 시스템에 [개의 사용자 지정 스토리지 어댑터가 포함된 경우](../developer-guide/writing-a-form-storage-adapter.md) 개 이상이 있을 수 있습니다.
 
 ```{note}
 기존 양식을 Liferay 7.4 기본 스토리지 어댑터로 이동하는 [업그레이드 프로세스](../../../building-applications/data-frameworks/upgrade-processes.md)가 있습니다.
@@ -16,7 +16,7 @@
 1. 오른쪽 상단의 ![Settings](../../../images/icon-settings.png) 아이콘을 클릭합니다.
 1. 일반 탭에서 스토리지 유형 선택 설정의 목록 옵션을 확장합니다.
 
-DDM(Dynamic Data Mapping) 백엔드는 양식 레코드의 다른 저장 형식에 *적응*할 수 있습니다. 이를 통해 양식 데이터를 기본 JSON 대신 XML 또는 YAML(또는 원하는 형식)로 쉽게 직렬화할 수 있으며 Liferay 데이터베이스를 포함하여 어디에나 양식 데이터를 저장하도록 선택할 수 있습니다.
+DDM(Dynamic Data Mapping) 백엔드는 양식 레코드의 다른 저장 형식에 **적응** 할 수 있습니다. 이를 통해 양식 데이터를 기본 JSON 대신 XML 또는 YAML(또는 원하는 형식)로 쉽게 직렬화할 수 있으며 Liferay 데이터베이스를 포함하여 어디에나 양식 데이터를 저장하도록 선택할 수 있습니다.
 
 ```{important}
 양식을 저장한 후에는 스토리지 어댑터를 변경할 수 없습니다. 모든 기존 양식은 작성 시 구성된 어댑터를 계속 사용하며 다른 스토리지 어댑터를 선택할 수 없습니다.

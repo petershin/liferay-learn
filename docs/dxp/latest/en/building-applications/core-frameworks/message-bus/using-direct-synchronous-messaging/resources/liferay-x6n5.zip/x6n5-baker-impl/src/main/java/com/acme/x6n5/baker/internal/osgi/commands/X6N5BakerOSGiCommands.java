@@ -1,7 +1,5 @@
 package com.acme.x6n5.baker.internal.osgi.commands;
 
-import com.liferay.portal.kernel.log.Log;
-import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.messaging.Message;
 import com.liferay.portal.kernel.messaging.MessageBusException;
 import com.liferay.portal.kernel.messaging.sender.SynchronousMessageSender;
@@ -23,13 +21,8 @@ public class X6N5BakerOSGiCommands {
 		Object response = _synchronousMessageSender.send(
 			"acme/x6n5_able", message);
 
-		if (_log.isInfoEnabled()) {
-			System.out.println("Response: " + response);
-		}
+		System.out.println("Response: " + response);
 	}
-
-	private static final Log _log = LogFactoryUtil.getLog(
-		X6N5BakerOSGiCommands.class);
 
 	@Reference(target = "(mode=DIRECT)")
 	private SynchronousMessageSender _synchronousMessageSender;

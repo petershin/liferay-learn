@@ -1,7 +1,5 @@
 package com.acme.x6n5.charlie.internal.messaging;
 
-import com.liferay.portal.kernel.log.Log;
-import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.messaging.Message;
 import com.liferay.portal.kernel.messaging.MessageListener;
 
@@ -15,15 +13,9 @@ public class X6N5CharlieMessageListener implements MessageListener {
 
 	@Override
 	public void receive(Message message) {
-		if (_log.isInfoEnabled()) {
-			System.out.println(
-				"Received message payload " + message.getPayload());
-		}
+		System.out.println("Received message payload " + message.getPayload());
 
 		message.setResponse("X6N5CharlieMessageListener");
 	}
-
-	private static final Log _log = LogFactoryUtil.getLog(
-		X6N5CharlieMessageListener.class);
 
 }

@@ -3,13 +3,7 @@ uuid: c1dd2bde-e995-4b03-88e1-8e15adeb7b17
 ---
 # Setting Up Clustering for the Liferay Service
 
-<!-- Again, we're not writing the story; we're just applying the story to our steps. I would rewrite the below paragraph like this: -Rich -->
-
 Because Delectable Bonsai's website draws millions of views, it must be clustered to handle the traffic. Here, you'll learn how to configure a three node cluster of the production environment.
-
-<!-- Marcus knows that the Delectable Bonsai website needs clustering for the Liferay service so that it can handle higher traffic more reliably. He sets up the initial clustering configuration for the project's production environment. -->
-
-To follow the steps below, log in as Marcus.
 
 ## Set the Clustering Properties in LCP.json
 

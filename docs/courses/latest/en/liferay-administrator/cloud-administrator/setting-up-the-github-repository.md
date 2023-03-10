@@ -3,9 +3,7 @@ uuid: b55694af-20da-4436-a2ed-429b6bfb9c59
 ---
 # Setting Up the GitHub Repository
 
-<!-- While I love your storytelling, we want to focus foremost on the concept and only secondarily on the story. I'll re-write the below paragraph to give you an example of what I mean. -Rich -->
-
-The first task to do after you've had your Liferay Cloud account provisioned is to set up the project's Git repository so you can deploy configurations as an administrator. Since Delectable Bonsai wants to have at least two administrators for backup purposes, both Marcus and Kyle must follow the below steps. 
+The first task to do after you've had your Liferay Cloud account provisioned is to set up the project's Git repository so you can deploy configurations as an administrator. Marcus must follow this procedure as the Delectable Bonsai project's administrator.
 
 Set up the repository and complete your first push to ensure it's working.
 
@@ -25,43 +23,31 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 
 Download the latest version of the [Windows installer](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe) and follow the steps in the wizard.
 
-## Transfer to Your Own GitHub Repository
+## Fork and Clone the GitHub Repository
 
-<!-- Is there a reason we don't just tell them to click the Fork button, fork it to their account, then clone their version, and finally add upstream back? That seems much more straightforward, and we could even link to GitHub's [fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) docs. -Rich -->
+First, you must set up Git and creating your own fork of the GitHub repository. For the Delectable Bonsai project, Marcus must follow all of these steps for the initial setup, but Kyle only needs to do the last two steps (clone and adding a remote repository) as a contributor.
 
-Begin by setting up your own GitHub repository to switch your Liferay Cloud project over to.
+You'll transfer your Liferay Cloud project to your fork for new builds.
 
-<!-- Yes, at Liferay, we are used to SSH because we've been using it from the beginning. But GitHub now recommends using https and caching your credentials (see here: https://docs.github.com/en/get-started/quickstart/set-up-git). Something tells me we shouldn't get into setting up Git/GitHub, because this stuff can change. Why don't we change this whole thing to two steps that point to the two GitHub docs: 1. Set up Git, and 2. Fork a repo. -Rich -->
+1. [Set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git) on your local system.
 
-1. On the provisioned repository's page on [GitHub](https://github.com), click the *Code* button and copy the SSH link to the repository. See the official [GitHub documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for help if you have not generated an SSH key on your machine yet.
+1. Open your provisioned repository's page on GitHub.
 
-    ![Copy the SSH link to clone the provisioned repository.](./setting-up-the-github-repository/images/01.png)
-
-1. Run this command to clone the repository into a directory on your own system, in a new directory for the project:
-
-    ```bash
-    git clone [copied link] BonsaiSyrup
+    ```{tip}
+    If you don't have the link to your project's repository, navigate to the *Builds* page in the Liferay Cloud console, and click the link under *Branch* for the most recent build. This link points to a specific branch in the provisioned repository.
     ```
 
-1. Create a [new private repository on GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo), and copy the SSH link for it.
+1. [Create your own fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the repository.
 
-1. Remove the old origin from your local repository:
+1. [Clone the fork you created](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on your local system.
 
-    ```bash
-    git remote remove origin
-    ```
+1. In your command prompt (with Git installed), add your fork as an (upstream) [remote repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork).
 
-1. Add your new repository as the new origin using link you copied:
-
-    ```bash
-    git remote add origin <copied link>
-    ```
-
-Now you have your own private repository with the Liferay Cloud project structure.
+Now you have a forked repository that you own that you own with the Liferay Cloud project structure, locally and on GitHub.
 
 ## Configure the Webhook
 
-Next, configure a webhook to allow Liferay Cloud to access the new repository.
+Next, configure a webhook to allow Liferay Cloud to access your repository.
 
 1. On the GitHub website, go to your repository’s Settings page and click *Webhooks*.
 

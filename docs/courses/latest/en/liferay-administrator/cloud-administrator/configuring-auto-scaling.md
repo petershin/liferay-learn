@@ -5,7 +5,7 @@ uuid: 31cea680-b175-419d-b30f-d17851d3c89e
 
 Once you've enabled production environment clustering with any number of nodes, you can configure auto-scaling to better handle site traffic during peak hours.
 
-Log in as Marcus to follow the steps below. 
+Help Marcus configure auto-scaling by following these steps.
 
 ## Enable Auto-scaling in the Console
 
@@ -21,9 +21,7 @@ Use the Liferay Cloud console to enable auto-scaling for your production environ
 
 1. Click *Enable Auto Scaling*.
 
-Auto-scaling is now enabled, up to the default maximum of ten instances.
-
-<!-- Since you set up clustering for only three nodes, you might need some explanation of how this is possible. -Rich --> 
+Auto-scaling is now enabled. You have a minimum of three nodes because of your clustering configuration, and if usage increases, more nodes are added up to the default maximum of ten.
 
 ## Set the Maximum Number of Instances
 

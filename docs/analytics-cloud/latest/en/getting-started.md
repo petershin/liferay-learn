@@ -23,9 +23,9 @@ Here are some example use cases for using Analytics Cloud with Liferay DXP:
 
 | Liferay DXP Use Case                           | Analytics Cloud Example Application                                                                                                            |
 | :--------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| Building a customer portal                     | Learn what articles and documents customers search for to know what type of customer support or knowledge base content to put in front of them |
-| Building a commerce site                       | See the products customers are viewing for future promotions or cross-selling                                                                  |
-| Building a company intranet for your employees | Transform your intranet to a self-service portal by identifying and providing content important to individual employees and departments        |
+| Building a customer portal                     | Learn the most searched articles and documents to know what type of customer support or knowledge base content to put in front of them |
+| Building a commerce site                       | See the most popular products for future promotions or cross-selling                                                                  |
+| Building a company intranet for your employees | Identify and provide the most important employee and departmental content to transform your intranet to a self-service portal        |
 
 Whether you want a bird's-eye view or a ground-level view of your data, Analytics Cloud's got you covered.
 
@@ -35,7 +35,7 @@ At a high level, Analytics Cloud reports aggregate data from your entire site in
 
 ![The site-wide report gives you a bird's-eye view of your site's analytics.](./getting-started/images/01.png)
 
-Analytics Cloud shows you these site-wide things:
+Analytics Cloud shows you these site-wide statistics:
 
 * The number of individuals visiting your site across time
 * A list of the most viewed pages
@@ -44,7 +44,7 @@ Analytics Cloud shows you these site-wide things:
 * Visitor location and device/browser type
 * Cohort analysis (a table showing what percent of a previous day's visitors return)
 
-For a ground-level view, Analytics Cloud provides detailed statistics for the various parts of your site. Sure, you can see how many individuals visit your page and how long they spend viewing your page, but Analytics Cloud goes way beyond that. Discover how people find your page through web searches, advertisements, e-mail links, and more. This is especially useful if you have purchased advertising and want to know if your marketing efforts are working.
+From a ground-level view, Analytics Cloud provides detailed statistics for the various parts of your site. Sure, you can see how many individuals visit your page and how long they spend there, but Analytics Cloud goes way beyond that. Discover how people find your page through web searches, advertisements, email links, and more. This is especially useful if you purchased advertising and want to know if your marketing efforts are working.
 
 ![A page report gives you statistics for a specific page.](./getting-started/images/02.png)
 

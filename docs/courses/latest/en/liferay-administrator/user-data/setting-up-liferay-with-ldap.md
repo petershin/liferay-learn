@@ -42,7 +42,7 @@ Contact your Liferay Cloud support person about connecting a LDAP server.
 
 1. Finally, fill out the LDAP export information. Click _Save_.
 
-The next step is [importing users](./importing-users.md).
+The next step is [importing and exporting users](./importing-and-exporting-users.md).
 
 ## Relevant Concepts
 

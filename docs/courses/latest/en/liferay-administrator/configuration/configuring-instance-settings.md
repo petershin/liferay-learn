@@ -3,13 +3,15 @@ uuid: 64a5a655-0a6a-4d41-866a-7be3e5a513bf
 ---
 # Configuring Instance Settings
 
-Liferay instances share the same server but can be configured to serve up different digital experiences from different domain names. Various settings can be configured for each instance you have.
+<!-- This is a cool idea; it's just that it's not universally applicable. Surely there's some instance setting you can set that people can actually do and test that it's working? For example, you could go into Instance Settings &rarr; User Accounts and de-select _Allow Strangers to Create Accounts_ for the B2B side, but leave it selected for the public facing website. -Rich -->
 
-For example, configure a live chat service to be integrated across the entire instance. Each site will have access to the live chat. Delectable Bonsai uses Zendesk for their live chat functionality. See the steps below to integrate it.
+Liferay instances share the same installation but are configured to serve up different digital experiences from different domain names. Each instance has its own settings. 
+
+Here, you'll configure a live Zendesk chat service that's integrated across the entire instance. Each site has access to the live chat. See the steps below to integrate it.
 
 ## Configuring Click to Chat
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Under _Content & Data_, click _Click to Chat_.
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Under _Content & Data_, select _Click to Chat_.
 
 2. Set the chat service.
 

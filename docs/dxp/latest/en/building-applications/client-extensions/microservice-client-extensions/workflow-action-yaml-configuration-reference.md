@@ -3,11 +3,11 @@ uuid: d20aeabb-1523-486a-9848-f72f8b25d9cb
 ---
 # Workflow Action YAML Configuration Reference
 
-Here is a guide to setting up the definition for a workflow action client extension in your `client-extension.yaml` file.
+You can define a workflow action client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-Here is an example `client-extension.yaml` file with a workflow action client extension definition:
+This `client-extension.yaml` file defines a workflow action and an OAuth user agent:
 
 ```yaml
 easy-workflow-action-1:
@@ -22,20 +22,20 @@ easy-oauth-application-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-The required `resourcePath` property defines where the workflow action handler is located. This can point to any implementation of a workflow action handler that can be accessed as an external application (for example, a Java Spring Boot application). This value is combined with the `homePageURL` value of the associated OAuth2 application profile to form the complete URL.
+The required `resourcePath` property defines the workflow action handler's location. Point to any implementation of a workflow action handler that's accessible as an external application (for example, a Java Spring Boot application). This value is combined with the `homePageURL` value of the OAuth2 application profile to form the complete URL.
 
-Workflow action client extensions also require OAuth2 application profiles to secure requests triggered by notifications in Liferay. The example `client-extension.yaml` defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-client-extension-usage-and-properties.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
+Workflow action client extensions require OAuth2 application profiles to secure requests triggered by workflow actions in Liferay. The example above defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-client-extension-usage-and-properties.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
 
-See [this example project](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-etc) for a complete example project including a workfow action client extension.
+[The sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace/client-extensions/sample-etc) demonstrates adding a workflow action client extension.
 
 ## YAML Properties
 
 These properties are specific to workflow action client extensions:
 
-| Name | Data Type | Description |
-| :--- | :--- | :--- |
-| `resourcePath` | String (partial URL) | The resource path defining where the workflow action handler is located. This value is combined with the OAauth2 application profile's `homePageURL` value for a complete URL. *This property is required for workflow action client extensions.* |
-| `oAuth2ApplicationExternalReferenceCode` | The external reference code for an OAuth2 application profile, needed for securing requests. *This property is required for workflow action client extensions.* |
+| Name                                   | Data Type            | Description |
+| :------------------------------------- | :------------------- | :--- |
+| `resourcePath`                           | String (partial URL) | (Required) The path to the workflow action handler. This value is combined with the OAauth2 application profile's `homePageURL` value for a complete URL. |
+| `oAuth2ApplicationExternalReferenceCode` | String               | (Required) The external reference code for an OAuth2 application profile, needed for securing requests. |
 
 ## Additional Information
 

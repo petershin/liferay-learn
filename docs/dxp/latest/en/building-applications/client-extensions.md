@@ -27,16 +27,16 @@ While other types of Liferay extensions, such as [OSGi modules](../liferay-inter
 
 With client extensions, you can
 
-* Apply [custom JavaScript or CSS](#front-end-client-extensions) to your pages without needing to rely on any specific code in Liferay
-* Embed applications hosted remotely into a [custom element](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a page in Liferay
-* Simplify your process to apply programmatically the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-client-extensions)
-* Call custom services or [functions](#microservice-client-extensions) running outside of Liferay, such as a REST endpoint, using the programming languages or technologies of your choice
+* Apply [custom JavaScript or CSS](#front-end-client-extensions), while avoiding dependencies on Liferay's code
+* Embed applications hosted remotely into a [custom element](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a Liferay page
+* Apply the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-client-extensions)
+* Call custom services or [functions](#microservice-client-extensions) running outside of Liferay (e.g., a REST endpoint), using the programming languages or technologies of your choice
 
 ## Types of Client Extensions
 
 Client extensions integrate with [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md), so that you can use the available tools there to quickly develop and deploy them. Client extensions communicate with Liferay via [headless APIs](../headless-delivery/using-liferay-as-a-headless-platform.md).
 
-Client extensions are broken into these technologies:
+Client extensions can be categorized as
 
 * [Front-end client extensions](#front-end-client-extensions)
 * [Microservice client extensions](#microservice-client-extensions)
@@ -44,21 +44,21 @@ Client extensions are broken into these technologies:
 
 ### Front-end Client Extensions
 
-Front-end client extensions provide your Liferay instance with resources that are displayed on specific pages. These include similar resources to those provided in [Liferay themes](link), or custom HTML elements. Most front-end client extensions provide *static resources* that are made available in your Liferay instance.
+Front-end client extensions provide resources to display on specific pages. Theme resources or custom HTML elements can now be provided in client extensions. Most front-end client extensions provide *static resources* to your Liferay instance.
 
 See [Front-end Client Extensions](./client-extensions/front-end-client-extensions.md) for more information on the specific types.
 
 ### Microservice Client Extensions
 
-Microservice client extensions provide API endpoints that you can link various triggers within Liferay to, such as object or workflow actions. Once those action events call your API, you can run any function you want outside of Liferay as a separate *microservice*.
+Microservice client extensions provide API endpoints to trigger within Liferay (e.g., object or workflow actions). Once those action events call your API, you can run any function you want outside of Liferay as a separate *microservice*.
 
 See [Microservice Client Extensions](./client-extensions/microservice-client-extensions.md) for more information on the specific types.
 
 ### Configuration Client Extensions
 
-Configuration client extensions provide specific configurations that can change functionality within your Liferay instance.
+Configuration client extensions provide specific configurations to change functionality within your Liferay instance.
 
-They can also be used together with other client extensions, such as [microservice client extensions](#microservice-client-extensions). For example, use can use an OAuth user agent client extension to authenticate other client extensions to work with user-triggered action events from within Liferay.
+They can be used together with other client extensions, such as [microservice client extensions](#microservice-client-extensions). For example, use an OAuth user agent client extension to authenticate client extensions that work with user-triggered action events.
 
 See [Configuration Client Extensions](./client-extensions/configuration-client-extensions.md) for more information on the specific types.
 

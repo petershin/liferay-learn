@@ -3,11 +3,11 @@ uuid: 03821b5e-c0a1-4dc8-a900-eb1e36c1ead5
 ---
 # Theme Sprite Map YAML Configuration Reference
 
-Here is a guide to setting up the definition for a theme sprite map client extension in your `client-extension.yaml` file.
+You can define a theme sprite map client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-Here is an example `client-extension.yaml` file with a theme sprite map client extension definition:
+This`client-extension.yaml` defines a theme sprite map client extension:
 
 ```yaml
 able-theme-spritemap:
@@ -16,9 +16,9 @@ able-theme-spritemap:
     url: spritemap.svg
 ```
 
-The required `url` property defines where the `.svg` sprite map file is located.
+The required `url` property defines the `.svg` sprite map file's location.
 
-See [this example project](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-theme-spritemap) for a complete example of a theme sprite map client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-theme-spritemap) contains a complete theme sprite map client extension.
 
 ## YAML Properties
 
@@ -26,7 +26,9 @@ These properties are specific to theme sprite map client extensions:
 
 | Name | Data Type | Description |
 | :--- | :--- | :--- |
-| `url` | URL | A path to the `.svg` sprite map that replaces the one for your existing Liferay theme. The complete URI is prefixed by the `baseURL` value. Required for JS client extensions. |
+| `url` | URL | (Required) A path to the `.svg` sprite map that replaces the one for your existing Liferay theme. The complete URI is prefixed by the `baseURL` value. |
+
+See [Front-end Client Extension Properties](../front-end-client-extensions.md#front-end-client-extension-properties) for properties common to all front-end client extensions.
 
 ## Additional Information
 

@@ -33,7 +33,7 @@ front-end-client-extensions/remote-applications-ui-reference.md
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Liferay provides a variety of front-end client extensions for augmenting your pages and integrating functionality. These extension types include CSS, JS, theme CSS, theme JS, theme favicon, custom element, and IFrame.
+Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JS, Theme CSS, Theme JS, Theme Favicon, Custom Element, and IFrame.
 
 You can create and deploy these extensions from your [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md). 
 
@@ -45,39 +45,39 @@ You can add JS, CSS, or Theme CSS client extensions to layout sets (i.e., page s
 
 ## JavaScript Client Extensions
 
-> Available for Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-You can use JavaScript client extensions to provide global JavaScript libraries and logic throughout your Liferay instance (or virtual instance). When you deploy a JavaScript client extension to your Liferay instance and configure a page to use it, the JavaScript contained in it automatically runs each time you visit the page (in the page's header or footer). This allows you to add special functionality to your pages without the use of an OSGi module or theme.
+JavaScript client extensions provide global JavaScript libraries and logic throughout your Liferay instance. When you deploy a JavaScript client extension and configure a page to use it, its JavaScript automatically runs each time you visit the page (in the page's header or footer). This allows you to add functionality to pages without deploying an OSGi module or theme.
 
-Use this `type` value in your `client-extension.yaml` file to specify a JavaScript client extension:
+Specify a JavaScript client extension in your `client-extension.yaml` file:
 
 ```yaml
 type: globalJS
 ```
 
-See [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md) to get started working with this type.
+See [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md) to get started.
 
 ## CSS Client Extensions
 
-> Available for Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-CSS client extensions are a way to introduce new CSS styling to your pages. When you deploy a CSS client extension to your Liferay instance and configure a page to use it, the CSS contained in it adds to the styling present on the page, including theme and style book settings. 
+CSS client extensions introduce new CSS styling to pages. When you deploy a CSS client extension and configure a page to use it, its CSS adds to the page's existing styling, including theme and style book settings. 
 
-Use this `type` value in your `client-extension.yaml` file to specify a CSS client extension:
+Specify a CSS client extension in your `client-extension.yaml` file :
 
 ```yaml
 type: globalCSS
 ```
 
-See [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using--css-client-extension.md) to get started working with this type.
+See [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using--css-client-extension.md) to get started.
 
 ## Theme JavaScript Client Extensions
 
-> Available for Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-Similarly to [JavaScript client extensions](#javascript-client-extensions), you can also add JavaScript libraries and logic to replace the ones provided by your site's [theme](../../site-building/site-appearance/themes/introduction-to-themes.md). This replaces the JavaScript normally used in the theme.
+As with [JavaScript client extensions](#javascript-client-extensions), you can add JavaScript libraries and logic to replace the ones provided by your site's [theme](../../site-building/site-appearance/themes/introduction-to-themes.md).
 
-Use this `type` value in your `client-extension.yaml` file to specify a theme CSS client extension:
+Specify a Theme CSS client extension in your `client-extension.yaml` file:
 
 ```yaml
 type: themeJS
@@ -85,11 +85,11 @@ type: themeJS
 
 ## Theme CSS Client Extensions
 
-> Available for Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)
+{bdg-secondary`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-Similarly to [CSS client extensions](#css-client-extensions), you can also add CSS the same way as you would with a [theme](../../site-building/site-appearance/themes/introduction-to-themes.md), without deploying an entire theme. For this type of client extension, you use a `clay.css` file and a `main.css` file, which are the same CSS files generated by a theme by default. This replaces the `clay.css` and `main.css` files normally used in your site's theme.
+While [CSS client extensions](#css-client-extensions) add styling to pages, theme CSS client extensions override styling on the page, including from the site's [theme](../../site-building/site-appearance/themes/introduction-to-themes.md). The client extension uses a `clay.css` file and a `main.css` file to replace the identically named files normally used in your site's theme.
 
-You can add this type of client extension as an option from *Remote Apps* in the Liferay Applications menu.
+You can add this type of client extension as an option from *Client Extensions* in the Liferay Applications menu.
 
 ![Add a theme CSS client extension to replace CSS provided by your site's theme.](./front-end-client-extensions/images/01.png)
 
@@ -97,7 +97,7 @@ You can add this type of client extension as an option from *Remote Apps* in the
 The `clay.css` and `main.css` files must be hosted remotely to use this type of client extension.
 ```
 
-Use this `type` value in your `client-extension.yaml` file to specify a theme CSS client extension:
+Specify a Theme CSS client extension in your `client-extension.yaml` file:
 
 ```yaml
 type: themeCSS
@@ -105,19 +105,19 @@ type: themeCSS
 
 ## Theme Favicon Client Extensions
 
-> Available for Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-You can also use client extensions to override the favicon for your pages in Liferay. When you deploy a theme favicon client extension, the icon file included with it becomes available for any page in Liferay. You can access it in a separate *Client Extensions* tab when you configure the favicon for a page from the Page Design Options menu.
+Override the favicon for your pages in Liferay. When deployed, the provided icon file becomes available for any page in Liferay. You can access it in a separate *Client Extensions* tab when you configure the favicon for a page from the Page Design Options menu.
 
 ![When you configure the favicon for a page, access the favicon from your client extension from a special Client Extensions tab.](./front-end-client-extensions/images/02.png)
 
 ## Theme Sprite Map Client Extensions
 
-> Available for Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-You can use theme sprite map client extensions to override the sprite map for your site's pages in Liferay. Define the sprite map as a `.svg` image. The sprite map replaces the one used by your site's current theme.
+Theme sprite map client extensions override the sprite map for site pages. Define the sprite map as a `.svg` image, and it replaces the one used by your site's current theme.
 
-Use this `type` value in your `client-extension.yaml` file to specify a theme sprite map client extension:
+Specify a theme sprite map client extension in your `client-extension.yaml` file:
 
 ```yaml
 type: themeSpritemap
@@ -125,15 +125,15 @@ type: themeSpritemap
 
 ## Custom Element Client Extensions
 
-> Available for Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-> Previously named Custom Element Remote Apps
+> Previously named Custom Element Remote App
 
 Custom element client extensions use Liferay's front-end infrastructure to integrate external applications with the platform and render them as page widgets. They can integrate applications from any domain accessible outside of Liferay.
 
 To use custom element client extensions, you create entries at the company level with the necessary URLs and details to register them with Liferay. Liferay then generates a unique widget for each entry and renders the application as a [custom HTML element](https://web.dev/custom-elements-v1/).
 
-Use this `type` value in your `client-extension.yaml` file to specify a custom element client extension:
+Specify a custom element client extension in your `client-extension.yaml` file:
 
 ```yaml
 type: customElement
@@ -143,13 +143,13 @@ See [Understanding Custom Element and IFrame Client Extensions](./front-end-clie
 
 ## IFrame Client Extensions
 
-> Available for Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
 > Previously named IFrame Remote Apps
 
-IFrame client extensions work similarly to [custom element client extensions](#custom-element-client-extensions). However, they render external applications as `<iframe>` HTML elements, which allow for limited interaction from the host page. Unlike other front-end client extensions, these *do not provide a static resource*.
+IFrame client extensions work like [custom element client extensions](#custom-element-client-extensions). However, they render external applications as `<iframe>` HTML elements, which allow for limited interaction from the host page. Unlike other front-end client extensions, these *do not provide a static resource*.
 
-Use this `type` value in your `client-extension.yaml` file to specify an iframe client extension:
+Specify IFrame client extensions in your `client-extension.yaml` file:
 
 ```yaml
 type: iframe
@@ -159,13 +159,13 @@ See [Understanding Custom Element and IFrame Client Extensions](./front-end-clie
 
 ## Front-end Client Extension Properties
 
-These properties are usable within the client extension definition for any type of front-end client extension (in your `client-extension.yaml` file):
+Set these properties in the `client-extension.yaml` file of any front-end client extension:
 
 | Name | Data Type | Default Value | Description |
 | :--- | :--- | :--- | :--- |
 | `baseURL` | String | *Derived from site URL* | The base path from which all of the client extension's defined resources are served. |
 | `description` | String | | The client extension's description. |
-| `name` | String | | The client extension's name (as it appears in the UI). Required for front-end client extensions. |
+| `name` | String | | The client extension's name (as it appears in the UI). A name is required for front-end client extensions. |
 | `sourceCodeURL` | URL | https://www.liferay.com | The address to the client extension's source repository. |
 | `typeSettings` | String[] | [] | A list of strings that are processed with Liferay's `UnicodeProperties` syntax. Type-specific client extension properties are automatically copied into this when the client extension is built. |
 

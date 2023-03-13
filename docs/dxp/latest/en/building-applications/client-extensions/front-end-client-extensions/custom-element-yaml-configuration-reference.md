@@ -3,11 +3,11 @@ uuid: e1442843-69dc-4818-8ee2-fe64cbb075ef
 ---
 # Custom Element YAML Configuration Reference
 
-Here is a guide to setting up the definition for a custom element client extension in your `client-extension.yaml` file.
+You can define a custom element client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-Here is an example `client-extension.yaml` file with a custom element client extension definition:
+This `client-extension.yaml` file defines a custom element client extension:
 
 ```yaml
 able-custom-element:
@@ -24,9 +24,9 @@ able-custom-element:
     useESM: false
 ```
 
-The required `urls` property specifies one or more paths for JavaScript resources. One of these JavaScript resources must contain the custom element initialization code.
+The required `urls` property specifies one or more paths to JavaScript resources. One of these JavaScript resources must contain the custom element initialization code.
 
-See [this example project](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-custom-element-1) for a complete example of a custom element client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-custom-element-1) contains a complete custom element client extension.
 
 ## YAML Properties
 
@@ -36,12 +36,14 @@ These properties are specific to custom element client extensions:
 | :--- | :--- | :--- | :--- |
 | `cssURLs` | String[] (partial URLs) | `[]` | List of CSS paths that are added to the HTML head when the custom element is used on a page. |
 | `friendlyURLMapping` | String | | Mapping of a friendly URL prefix to the specific custom element widget. |
-| `htmlElementName` | String | | The HTML element name that referrs to the custom element, which is rendered in the page markup. |
+| `htmlElementName` | String | | The HTML element name that refers to the custom element, which is rendered in the page markup. |
 | `instanceable` | True/false | `false` | Whether the custom element widget can appear multiple times on a page. |
-| `portletCategoryName` | String | `category.client-extensions` | The category the custom element widget is placed within the menu when editing a page. |
-| `properties` | String[] | `[]` | Properties that are appended as attributes to the custom HTML element. They are appended with a new line as a separator and processed as Java properties. |
-| `urls` | String[] (partial URLs) | | List of paths to JavaScript resources that are added to the HTML head when the widget is used on a page. One of these resources must contain the custom element initialization code. Combined with `baseURL` to form a complete URL. *Required for custom element client extensions.* |
+| `portletCategoryName` | String | `category.client-extensions` | The menu category of the custom element widget. |
+| `properties` | String[] | `[]` | Properties to append as attributes to the custom HTML element. They use a newline as a separator and are processed as Java properties. |
+| `urls` | String[] (partial URLs) | | (Required) List of paths to JavaScript resources that are added to the HTML head when the widget is used on a page. One of these resources must contain the custom element initialization code. This combines with `baseURL` to form a complete URL. |
 | `useSM` | True/false | `false` | Whether the JavaScript code uses [ESM](https://nodejs.org/api/esm.html#modules-ecmascript-modules) format. When `true`, the JavaScript is added to the page with the `type="module"` property. |
+
+See [Front-end Client Extension Properties](../front-end-client-extensions.md#front-end-client-extension-properties) for properties common to all front-end client extensions.
 
 ## Additional Information
 

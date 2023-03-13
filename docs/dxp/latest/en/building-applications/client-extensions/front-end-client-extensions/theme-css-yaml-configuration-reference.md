@@ -3,11 +3,11 @@ uuid: 51abbad2-5447-4e53-accb-e62dbe327762
 ---
 # Theme CSS YAML Configuration Reference
 
-Here is a guide to setting up the definition for a theme CSS client extension in your `client-extension.yaml` file.
+You can define a theme CSS client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-Here is an example `client-extension.yaml` file with a theme CSS client extension definition:
+This `client-extension.yaml` file defines a theme CSS client extension:
 
 ```yaml
 able-theme-css:
@@ -17,11 +17,11 @@ able-theme-css:
     type: themeCSS
 ```
 
-The required `mainURL` and `clayURL` properties define where the two CSS resource files are located (`main.css` and `clay.css`, respectively). These are the same CSS files that are present when you deploy a theme.
+The required `mainURL` and `clayURL` properties set the path to the two CSS resource files (`main.css` and `clay.css`, respectively). These CSS files correspond to those deployed with a theme module project.
 
-Any CSS contained included in these files is added to the styling already used in your theme. In case of a conflict, the client extension's CSS overrides the styling already on the page.
+The CSS in these files is added to the styling already used in your theme. In case of a conflict, the client extension's CSS overrides the styling already on the page.
 
-See [this example project](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-theme-css) for a complete example of a theme CSS client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-theme-css) includes a complete theme CSS client extension.
 
 ## YAML Properties
 
@@ -29,8 +29,10 @@ These properties are specific to theme CSS client extensions:
 
 | Name | Data Type | Description |
 | :--- | :--- | :--- |
-| `clayURL` | URL | A path to the CSS file that represents the `clay.css` file provided by a Liferay theme. The complete URI is prefixed by the `baseURL` value. Required for theme CSS client extensions. |
-| `mainURL` | URL | A path to the CSS file that represents the `main.css` file provided by a Liferay theme. The complete URI is prefixed by the `baseURL` value. Required for theme CSS client extensions. |
+| `clayURL` | URL | (Required) The path to the CSS file representing the `clay.css` file of a Liferay theme. The complete URI is prefixed by the `baseURL` value. |
+| `mainURL` | URL | (Required) The path to the CSS file representing the `main.css` file of a Liferay theme. The complete URI is prefixed by the `baseURL` value. |
+
+See [Front-end Client Extension Properties](../front-end-client-extensions.md#front-end-client-extension-properties) for properties common to all front-end client extensions.
 
 ## Additional Information
 

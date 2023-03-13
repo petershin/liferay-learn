@@ -3,11 +3,11 @@ uuid: 147a9736-cb25-486e-8aa2-86547cf5852b
 ---
 # Theme Favicon YAML Configuration Reference
 
-Here is a guide to setting up the definition for a theme favicon client extension in your `client-extension.yaml` file.
+You can define a theme favicon client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-Here is an example `client-extension.yaml` file with a theme favicon client extension definition:
+This `client-extension.yaml` file defines a theme favicon client extension:
 
 ```yaml
 able-theme-favicon:
@@ -16,9 +16,9 @@ able-theme-favicon:
     url: favicon.ico
 ```
 
-The required `url` property defines where the favicon icon image file is located. This image becomes a new favicon option for every page in Liferay when the client extension is deployed.
+The required `url` property defines the favicon icon image's location. This image becomes a new favicon option for every page in Liferay when the client extension is deployed.
 
-See [this example project](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-theme-favicon) for a complete example of a theme favicon client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-theme-favicon) contains a complete theme favicon client extension.
 
 ## YAML Properties
 
@@ -26,7 +26,9 @@ These properties are specific to theme favicon client extensions:
 
 | Name | Data Type | Description |
 | :--- | :--- | :--- |
-| `url` | URL | A path to the icon image file that can be used to replace any page's favicon. The complete URI is prefixed by the `baseURL` value. Required for JS client extensions. |
+| `url` | URL | (Required) The path to the icon image file. The complete URI is prefixed by the `baseURL` value. |
+
+See [Front-end Client Extension Properties](../front-end-client-extensions.md#front-end-client-extension-properties) for properties common to all front-end client extensions.
 
 ## Additional Information
 

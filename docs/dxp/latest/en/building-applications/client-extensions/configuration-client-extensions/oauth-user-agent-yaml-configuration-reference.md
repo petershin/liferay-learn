@@ -3,18 +3,18 @@ uuid: 4801c0d5-123d-471e-a8c6-d080342488c8
 ---
 # OAuth User Agent YAML Configuration Reference
 
-Here is a guide to setting up the definition for an OAuth user agent client extension in your `client-extension.yaml` file.
+You can define an OAuth user agent client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-Here is an example `client-extension.yaml` file with an OAuth user agent client extension definition:
+This `client-extension.yaml` file defines an OAuth user agent client extension:
 
 ```yaml
 xray-oauth-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-See [this example project](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-etc) for a complete example project including an OAuth user agent client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-etc) includes a project with an OAuth user agent client extension.
 
 ## YAML Properties
 

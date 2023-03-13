@@ -3,7 +3,7 @@ uuid: 7036db73-227b-4df6-8287-1d60ff0ef71f
 ---
 # Remote Applications UI Reference
 <!-- TASK: Rename article and add reference material for the other four client extensions; also, maybe reconsider the use of "remote" and "external"-->
-The [custom element](./understanding-custom-element-and-iframe-client-extensions.md#using-the-custom-element-type) and [IFrame](./understanding-custom-element-and-iframe-client-extensions.md#using-the-iframe-type) client extensions use Liferay's front-end infrastructure to register JavaScript applications and render them as page widgets. To add and manage these extensions, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Remote Apps*.
+The [custom element](./understanding-custom-element-and-iframe-client-extensions.md#using-custom-elements) and [IFrame](./understanding-custom-element-and-iframe-client-extensions.md#using-iframes) client extensions use Liferay's front-end infrastructure to register JavaScript applications and render them as page widgets. To add and manage these extensions, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Remote Apps*.
 
 When creating or editing an extension, the following fields are available depending on the selected type of client extension (i.e., custom element or IFrame).
 

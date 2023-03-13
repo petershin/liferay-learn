@@ -3,11 +3,11 @@ uuid: 35e09fb2-fd22-49b3-b901-bd96c6c1a887
 ---
 # Notification Type YAML Configuration Reference
 
-Here is a guide to setting up the definition for a notification type client extension in your `client-extension.yaml` file.
+You can define a notification type client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-Here is an example `client-extension.yaml` file with a notification type client extension definition:
+This `client-extension.yaml` file defines notification type and a OAuth user agent:
 
 ```yaml
 zebra-notification-type:
@@ -19,18 +19,18 @@ zebra-oauth-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-The required `resourcePath` property defines the path where the notification handler is located. This can point to any implementation of a notification handler that can be accessed as an external application. This value is combined with the `homePageURL` value of the associated OAuth2 application profile to form the complete URL.
+The required `resourcePath` property defines the notification handler's location. Point to any notification handler implementation that's accessible as an external application. This value is combined with the `homePageURL` value of the OAuth2 application profile to form the complete URL.
 
-Notification type client extensions also require OAuth2 application profiles to secure requests triggered by notifications in Liferay. The example `client-extension.yaml` defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-client-extension-usage-and-properties.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
+Notification type client extensions require OAuth2 application profiles to secure requests triggered by notifications in Liferay. The example above defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-client-extension-usage-and-properties.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references its `key` value.
 
 ## YAML Properties
 
 These properties are specific to notification type client extensions:
 
-| Name | Data Type | Description |
-| :--- | :--- | :--- |
-| `resourcePath` | String (partial URL) | The resource path defining where the notification handler is located. This value is combined with the OAauth2 application profile's `homePageURL` value for a complete URL. *This property is required for notification type client extensions.* |
-| `oAuth2ApplicationExternalReferenceCode` | The external reference code for an OAuth2 application profile, needed for securing requests. *This property is required for notification type client extensions.* |
+| Name                                   | Data Type            | Description |
+| :------------------------------------- | :------------------- | :--- |
+| `resourcePath`                           | String (partial URL) | (Required) The path to the notification handler. This value is combined with the OAauth2 application profile's `homePageURL` value for a complete URL. |
+| `oAuth2ApplicationExternalReferenceCode` | String               | (Required) The external reference code for an OAuth2 application profile, needed for securing requests. |
 
 ## Additional Information
 

@@ -18,19 +18,19 @@ Contact your Liferay Cloud support person about importing from an LDAP server.
 
 1. In the left navigation, click _Import_. 
 
-1. Check the box for enable import. Click _Save_. Note, the import interval is set to 10 minutes. Liferay will perform a bulk import at this interval. 
+1. Check the box for enable import. Click _Save_. Note, the default import interval is set to 10 minutes. Liferay will perform a bulk import at this interval. 
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. The users from the LDAP server have been imported.
 
    ![LDAP users have been imported.](./importing-users/images/01.png)
 
 ```{note}
-If you choose not to import all the LDAP users at once (i.e. leave enable import box unchecked), users will still be imported upon their first login.
+If you choose not to import all the LDAP users at once (i.e. leave enable import box unchecked), users are imported individually upon their first login.
 ```
 
 ### Exporting LDAP Users in LXC
 
-Contact your Liferay Cloud support person about importing from an LDAP server.
+Contact your Liferay Cloud support person about exporting from an LDAP server.
 
 ### Exporting LDAP Users in LXC-SM or On-Premises
 

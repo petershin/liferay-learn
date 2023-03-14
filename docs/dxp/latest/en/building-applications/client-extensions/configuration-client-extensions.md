@@ -15,13 +15,13 @@ configuration-client-extensions/oauth-headless-server-yaml-configuration-referen
 
 {bdg-secondary}`7.4 U45+/GA45+`
 
-You can deploy configurations to Liferay instances with client extensions. For example, you can use configuration client extensions to deploy OAuth2 authentication profiles, enabling your other client extensions that require authentication.
+Liferay instance configurations are deployable with client extensions. For example, you can deploy OAuth2 authentication profiles as configuration client extensions, enabling your other client extensions that require authentication.
 
 ## OAuth Headless Server Client Extensions
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-OAuth headless server client extensions define OAuth2 application profiles in Liferay that are pre-configured with a `Headless Server` client profile. This kind of authentication profile is required for API calls that are not triggered by a specific user.
+You can use a client extension to configure a Liferay OAuth2 application pre-configured with a `Headless Server` client profile. This kind of authentication profile is required for API calls that are not authorized by a specific user.
 
 Specify an OAuth headless server client extension in your `client-extension.yaml` file:
 
@@ -33,9 +33,9 @@ type: oAuthApplicationHeadlessServer
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-OAuth user agent client extensions define OAuth2 application profiles in Liferay that are pre-configured with a `User Agent Application` client profile. This kind of authentication profile is required for API calls that are triggered by a specific user (for example, making a REST call to a Liferay API using your other [microservice client extensions](./microservice-client-extensions.md)).
+You can use a client extension to configure a Liferay OAuth2 application pre-configured with a `User Agent Application` client profile. This kind of authentication profile is required for API calls authorized by a specific user (for example, making a REST call to a Liferay API using your other [microservice client extensions](./microservice-client-extensions.md)).
 
-Specify an OAuth user agent client extensions in your `client-extension.yaml` file:
+Specify an OAuth user agent client extension in your `client-extension.yaml` file:
 
 ```yaml
 type: oAuthApplicationUserAgent

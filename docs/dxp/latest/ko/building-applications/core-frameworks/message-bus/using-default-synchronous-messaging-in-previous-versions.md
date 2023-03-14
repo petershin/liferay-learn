@@ -19,12 +19,13 @@ uuid: 2227325d-e1f4-40a9-a6e1-0d967469d4f1
 ## 기본 동기 메시지 보내기
 
 예제 프로젝트는 기본 모드에서 `SynchronousMessageSender` 사용하여 메시지를 보내고 응답을 기다립니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르십시오.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-m4q7.zip -O
@@ -238,7 +239,7 @@ Then, follow these steps:
 
 시간 초과와 동시에 메시지를 보내는 것을 축하합니다.
 
-## 무엇 향후 계획
+## 무다음
 
 직접 **모드** 사용하여 동기식 메시징을 탐색하려면 [이전 버전에서 직접 동기식 메시징 사용](./using-direct-synchronous-messaging-in-previous-versions.md)참조하십시오.
 

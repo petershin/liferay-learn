@@ -13,7 +13,7 @@ Knowledge Base의 주요 기능은 다음과 같습니다.
 * 기사는 폴더에 저장됩니다.
 * 친숙한 URL, 소스 URL, 분류 및 관련 자산에 대한 메타데이터 필드가 있습니다.
 * Markdown 소스 파일을 가져와 기사를 만들고 업데이트할 수 있습니다.
-* GitHub에서 편집 버튼(![GitHub button](./using-the-knowledge-base/images/01.png))은 독자를 기사의 소스 리포지토리 위치로 안내할 수 있습니다(활성화된 경우).
+* GitHub에서 편집 버튼(![GitHub button](./using-the-knowledge-base/images/01.png))은 독자를 기사의 소스 리포지토리 사이트로 안내할 수 있습니다(활성화된 경우).
 
 기술 자료에는 페이지에 추가할 수 있는 여러 위젯이 있습니다.
 

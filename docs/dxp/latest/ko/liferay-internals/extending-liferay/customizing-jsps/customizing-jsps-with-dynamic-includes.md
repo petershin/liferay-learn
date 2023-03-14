@@ -7,12 +7,13 @@ uuid: b0ba6d6d-3621-4074-8fe5-2d5e7067679a
 [`liferay-util:dynamic-include` 태그](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html) 콘텐츠(JavaScript 코드, HTML, 등)를 주입할 수 있는 자리 표시자입니다. 예제 프로젝트는 동적 포함으로 콘텐츠를 삽입하는 방법을 보여줍니다.
 
 ## 예제 프로젝트 배포
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르십시오.
 
-1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip) .
+1. [동적 포함으로 JSP 사용자 지정](./liferay-n3q9.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
@@ -74,7 +75,7 @@ Then, follow these steps:
 
 ## 동적 포함 삽입
 
-동적 포함을 삽입하려는 위치에 `liferay-util:dynamic-include` 태그를 추가합니다. 샘플에서 태그는 N3Q9 Baker Portlet의 `view.jsp`하단에 추가됩니다.
+동적 포함을 삽입하려는 사이트에 `liferay-util:dynamic-include` 태그를 추가합니다. 샘플에서 태그는 N3Q9 Baker Portlet의 `view.jsp`하단에 추가됩니다.
 
 ```{literalinclude} ./customizing-jsps-with-dynamic-includes/resources/liferay-n3q9.zip/n3q9-baker-web/src/main/resources/META-INF/resources/view.jsp
    :language: jsp

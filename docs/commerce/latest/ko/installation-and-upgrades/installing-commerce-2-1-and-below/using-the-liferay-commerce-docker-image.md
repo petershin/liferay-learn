@@ -28,7 +28,7 @@ uuid: 4a7a87dc-3a2f-400b-86da-01f120be5b60
 
 1. 브라우저를 `https://localhost:8080`로 엽니다.
 
-## 무엇 향후 계획
+## 무다음
 
 확인하는 것보다 더 많은 일을 하시나요? 자세한 내용은 [설치 개요](../installation-overview.md) 을 참조하십시오.
 

@@ -71,7 +71,7 @@ Liferay는 이제 Advanced File System Store를 사용하여 파일을 저장하
 * [DBStore(Database Storage)](./file-storage/other-file-store-types/dbstore.md) 파일을 DXP 데이터베이스에 `blob`으로 저장합니다. DBStore의 파일 크기 제한은 1GB입니다. 1GB보다 큰 파일을 저장하려면 단순 파일 시스템 저장소 또는 고급 파일 시스템 저장소를 사용하십시오.
 
 ```{warning}
-파일 시스템 기반 저장소(Simple, Advanced, S3)에는 트랜잭션 롤백 기능이 없습니다. 문서 라이브러리에서 데이터베이스 트랜잭션 롤백이 발생하면 트랜잭션의 파일 시스템 변경 사항이 취소되지 않습니다. 문서 라이브러리 파일과 파일 시스템 저장소의 파일 간에 불일치가 발생할 수 있으며 수동 동기화가 필요할 수 있습니다. [디비스토어](./file-storage/other-file-store-types/dbstore.md) 을 제외한 모든 저장소는 이 제한에 취약합니다.
+파일 시스템 기반 저장소(Simple, Advanced, S3)에는 트랜잭션 롤백 기능이 없습니다. 문서 라이브러리에서 데이터베이스 트랜잭션 롤백이 발생하면 트랜잭션의 파일 시스템 변경 사항이 취소되지 않습니다. 문서 라이브러리 파일과 파일 시스템 저장소의 파일 간에 불일치가 발생할 수 있으며 수동 동기화가 필요할 수 있습니다. [DBStore](./file-storage/other-file-store-types/dbstore.md) 을 제외한 모든 저장소는 이 제한에 취약합니다.
 ```
 
 ### 파일 저장소 간 파일 마이그레이션

@@ -15,12 +15,13 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 ```
 
 ## 구성 가능한 조각 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to deploy an example to see how Fragment configuration options work:
+그런 다음 다음 단계에 따라 예제를 배포하여 Fragment 구성 옵션이 작동하는 방식을 확인합니다.
 
-1. Download and unzip the [example Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip) :
+1. [예제 단편 세트](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip -O

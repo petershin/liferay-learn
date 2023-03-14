@@ -52,7 +52,7 @@ Docker 이미지로 업그레이드하는 단계는 다음과 같습니다.
    
    1. 임베디드 [Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md) 엔진 또는 로컬 [File Store \(Document Library\)](../../../system-administration/file-storage.md)사용하는 경우 `[Liferay Home]/data` 폴더를 새 `files` 폴더에 복사하여 `new-version/ 파일/데이터`.
 
-1. [Liferay 홈 파일](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) 및 [응용 프로그램 서버 파일](../../maintaining -a-liferay-installation/backing-up.md#application-server) 을 백업에서 `file` 폴더(새 `[Liferay Home]`)의 해당 위치로 복사합니다. 예를 들어 활성화 키를 `new-version/files/license/`에 복사합니다. 파일에는 다음이 포함될 수 있지만 이에 국한되지는 않습니다.
+1. [Liferay 홈 파일](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) 및 [응용 프로그램 서버 파일](../../maintaining -a-liferay-installation/backing-up.md#application-server) 을 백업에서 `file` 폴더(새 `[Liferay Home]`)의 해당 사이트로 복사합니다. 예를 들어 활성화 키를 `new-version/files/license/`에 복사합니다. 파일에는 다음이 포함될 수 있지만 이에 국한되지는 않습니다.
 
     * `/license/*`: 활성화 키. (구독)
 
@@ -72,7 +72,7 @@ Docker 이미지로 업그레이드하는 단계는 다음과 같습니다.
     echo "indexReadOnly=\"true\"" >> new-version/files/osgi/config/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
     ```
 
-1. [고급 파일 시스템 저장소](../../../system-administration/file-storage.md) 또는 수정된 저장소 위치가 있는 [단순 파일 시스템 저장소](../../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) 사용하는 경우 파일 저장소 설정을 [`.config` 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 로 내보내고 `새 버전/osgi/에 복사합니다. 구성` 폴더. 
+1. [고급 파일 시스템 저장소](../../../system-administration/file-storage.md) 또는 수정된 저장소 사이트가 있는 [단순 파일 시스템 저장소](../../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) 사용하는 경우 파일 저장소 설정을 [`.config` 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 로 내보내고 `새 버전/osgi/에 복사합니다. 구성` 폴더. 
 
     ```{important}
     [고급 파일 시스템 저장소](../../../system-administration/file-storage.md)를 사용하는 경우 새 설치에서 `.config` 파일로 구성해야 합니다. 데이터 베이스.

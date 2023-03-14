@@ -9,7 +9,7 @@ Liferay를 업그레이드하는 동안 Elasticsearch를 사용할 때 검색 �
 * [검색 엔진 호환성 매트릭스 참조](https://help.liferay.com/hc/ko/articles/360016511651) : 항상 지원되는 최신 Elasticsearch 버전을 실행하는 것이 좋습니다.
 * Liferay 7.4부터 Liferay 엔터프라이즈 검색(LES) 애플리케이션이 Liferay DXP와 함께 번들로 제공됩니다. 추가 설치 단계가 필요하지 않습니다. 자세한 내용은 [Liferay Enterprise 검색 활성화](../../../liferay-enterprise-search/activating-liferay-enterprise-search.md) 참조하십시오.
 * 이미 지원되는 Elasticsearch 버전을 사용 중인 경우 기존 Elasticsearch 인스턴스를 업데이트하지 않고 계속 사용하도록 선택할 수 있습니다.
-* Liferay 7.4부터 검색 조정(동의어 집합 및 결과 순위) 인덱스는 데이터베이스 테이블에서 지원됩니다. Liferay 업그레이드 중에 검색 엔진이 Liferay에 연결되면 데이터가 데이터베이스로 전파됩니다. 새 Elasticsearch 인스턴스를 설정하는 경우 [검색 튜닝 인덱스를 백업 및 복원한 다음 [Groovy 스크립트를 실행하여](#importing-the-search-tuning-indexes-in-7-4) 수동으로 인덱스 데이터를 새 데이터베이스 테이블로 가져와야 합니다](./backing-up-elasticsearch.md)
+* Liferay 7.4부터 검색 조정(동의어 집합 및 결과 순위) 인덱스는 데이터베이스 테이블에서 지원됩니다. Liferay 업그레이드 중에 검색 엔진이 Liferay에 연결되면 데이터가 데이터베이스로 전파됩니다. 새로운 Elasticsearch 인스턴스를 설정하는 경우 [검색 튜닝 인덱스를 백업 및 복원](./backing-up-elasticsearch.md)한 다음 [Groovy 스크립트](#importing-the-search-tuning- indexes-in-7-4) 인덱스 데이터를 새 데이터베이스 테이블로 수동으로 가져옵니다.
 
 ## 업그레이드 단계
 
@@ -68,13 +68,10 @@ Liferay 7.2에서 업그레이드하는 경우 앱 및 구성의 이름을 바�
 1. LES Monitoring 위젯의 이름은 이제 **Elasticsearch Monitoring** 입니다. 시작하는 동안 모듈 업그레이드 단계가 실행되어 **Liferay Enterprise Search Monitoring** 이 배포되면 앱 이름이 변경됩니다. 조치가 필요하지 않습니다.
 1. 구성 파일 이름이 `com.liferay.portal.search.elasticsearch6.xpack.monitoring.web.internal.configuration.XPackMonitoringConfiguration.config` 에서 `com.liferay.portal.search.elasticsearch.monitoring.web.internal.configuration으로 변경되었습니다. .모니터링 구성`. 속성은 이전과 동일합니다. 포털 시작 중에 구성 이름을 바꾸는 모듈 업그레이드 단계가 실행됩니다. 조치가 필요하지 않습니다.
 1. 모니터링 위젯에 대한 Kibana 기본 경로가 변경되었습니다. `kibana.yml`에서 원래 설정을 변경해야 합니다. 
-   
-   
 
    ```yaml
    server.basePath: "/o/portal-search-elasticsearch-xpack-monitoring/xpack-monitoring-proxy"
    ```
-
 
 에 
 
@@ -89,7 +86,7 @@ Liferay 7.2에서 업그레이드하는 경우 앱 및 구성의 이름을 바�
 * `liferay-[companyId]-search-tuning-rankings`
 * `liferay-[companyId]-search-tuning-synonyms`
 
-사전 업그레이드 시스템에서 검색 튜닝 기능을 사용하고 있었지만 업그레이드 후 클러스터에 검색 튜닝 인덱스 문서가 없는 경우 사전 업그레이드 클러스터에서 검색 튜닝 인덱스 [](./backing-up-elasticsearch.md) 먼저 백업하고 복원해야 합니다. 그런 다음 Groovy 스크립트를 실행하여 인덱스 데이터를 새 데이터베이스 테이블로 수동으로 가져옵니다. 이는 사전 업그레이드 클러스터를 업그레이드하는 대신 새 Elasticsearch 클러스터에 연결하는 경우에 발생할 수 있습니다.
+사전 업그레이드 시스템에서 검색 튜닝 기능을 사용하고 있었지만 업그레이드 후 클러스터에 검색 튜닝 인덱스 문서가 없는 경우 사전 업그레이드 클러스터에서 검색 튜닝 인덱스 [검색 튜닝 인덱스 백업 및 복원](./backing-up-elasticsearch.md) 먼저 백업하고 복원해야 합니다. 그런 다음 Groovy 스크립트를 실행하여 인덱스 데이터를 새 데이터베이스 테이블로 수동으로 가져옵니다. 이는 사전 업그레이드 클러스터를 업그레이드하는 대신 새 Elasticsearch 클러스터에 연결하는 경우에 발생할 수 있습니다.
 
 Groovy 가져오기 스크립트를 실행하려면
 

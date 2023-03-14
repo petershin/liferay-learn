@@ -13,9 +13,9 @@ Liferay 서비스를 통해 MySQL 클라이언트를 사용하려면 먼저 지�
 | **서비스** | **지원되는 최소 이미지 버전** |
 |:--------------- |:----------------------------------------------- |
 | **데이타베이스** | 라이프레이클라우드/데이터베이스:3.2.8                          |
-| **DXP(7.0 사용**) | liferaycloud/liferay-dxp:7.0.10-ga1-fp90-3.0.19 |
-| **DXP(7.1 사용**) | liferaycloud/liferay-dxp-7.1.10-ga1-fp17-3.0.19 |
-| **DXP(7.2 사용**) | liferaycloud/liferay-dxp-7.2.10-sp1-fp4-3.0.19  |
+| **DXP(7.0 사용)** | liferaycloud/liferay-dxp:7.0.10-ga1-fp90-3.0.19 |
+| **DXP(7.1 사용)** | liferaycloud/liferay-dxp-7.1.10-ga1-fp17-3.0.19 |
+| **DXP(7.2 사용)** | liferaycloud/liferay-dxp-7.2.10-sp1-fp4-3.0.19  |
 
 ```{warning}
 데이터베이스 이미지를 MySQL 클라이언트를 지원하는 버전으로 업그레이드하면 데이터베이스의 읽기 전용 사용자가 초기화됩니다. 업그레이드하기 전에 이 사용자의 암호를 설정하지 않으면 기본값이 사용되며 나중에 변경할 수 없습니다. 자세한 내용은 [읽기 전용 데이터베이스 비밀번호 변경](#change-the-read-only-database-password) 을 참조하세요.

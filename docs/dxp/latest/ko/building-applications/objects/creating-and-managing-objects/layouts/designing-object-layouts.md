@@ -64,9 +64,9 @@ uuid: 5a11638f-6897-4900-ab14-4a38a25cff46
 
    ![블록에 필드를 추가합니다.](./designing-object-layouts/images/06.png)
 
-1. 토글 스위치를 사용하여 블록을 접을 수 있게 만듭니다.
+1. 토글 스사이트를 사용하여 블록을 접을 수 있게 만듭니다.
 
-   ![토글 스위치를 사용하여 블록을 접을 수 있게 만듭니다.](./designing-object-layouts/images/07.png)
+   ![토글 스사이트를 사용하여 블록을 접을 수 있게 만듭니다.](./designing-object-layouts/images/07.png)
 
 1. 원하는 탭을 추가한 후 레이아웃에 대한 변경 사항을 저장합니다.
 

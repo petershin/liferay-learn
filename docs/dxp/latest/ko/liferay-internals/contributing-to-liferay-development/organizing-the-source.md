@@ -90,7 +90,7 @@ com/liferay/blogs/web/internal/template/BlogsPortletDisplayTemplateHandler.java`
 ## 애플리케이션 디스플레이 템플릿 샘플
 
 `/Users/jamie/Repos/liferay-portal/modules/apps/blogs/blogs-web/src/main/resources/
-com/liferay/blogs/web/template/dependencies/portlet_display_ template_basic.ftl`
+com/liferay/blogs/web/template/dependencies/portlet_display_template_basic.ftl`
 
 즉시 사용할 수 있는 많은 응용 프로그램은 기본 응용 프로그램 표시 템플릿과 함께 제공되므로 사용을 훨씬 쉽게 시작할 수 있습니다. 예를 들어 블로그 위젯은 블로그 항목을 나열하는 기본 템플릿과 함께 제공되며 JSP와 유사합니다.
 

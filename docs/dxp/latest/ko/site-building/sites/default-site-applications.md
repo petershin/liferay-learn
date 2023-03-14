@@ -81,6 +81,6 @@ uuid: 9ea6fa61-0863-4b79-9508-5bf127cdb023
 
 ## 추가 정보
 
-* [위치](../sites.md)
+* [사이트](../sites.md)
 * [사이트 추가](./adding-a-site.md)
 * [사이트 설정 UI 참조](../site-settings/site-settings-ui-reference.md)

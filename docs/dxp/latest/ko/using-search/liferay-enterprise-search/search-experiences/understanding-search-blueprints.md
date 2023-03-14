@@ -145,6 +145,6 @@ Blueprints를 사용하면 Elasticsearch에 대한 Liferay의 검색 요청 내�
 ![Blueprints를 사용하면 Elasticsearch로 전송되는 쿼리 및 구성을 구성할 수 있습니다.](./understanding-search-blueprints/images/01.png)
 <!-- Needs to be edited to remove the suggestions part: https://docs.google.com/document/d/1TVko7kzDcb8gpa7Ph4aboyeRJ7Lr698mnR21mupG9dQ/edit# -->
 
-## 무엇 향후 계획?
+## 무다음?
 
 - [검색 Blueprint 생성 및 관리](./creating-and-managing-search-blueprints.md).

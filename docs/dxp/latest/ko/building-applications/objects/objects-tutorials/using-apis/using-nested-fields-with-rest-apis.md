@@ -9,66 +9,67 @@
 진행하기 전에 [설정](#setting-up-a-liferay-instance) 새 Liferay DXP/Portal 7.4 인스턴스 및 [준비](#preparing-the-sample-code) 제공된 튜토리얼 코드.
 
 ## Liferay 인스턴스 설정
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) three Objects:
+그런 다음 다음 단계에 따라 세 개의 개체를 [만들기](../../creating-and-managing-objects/creating-objects.md)합니다.
 
-1. Open the **Global Menu**(![Global Menu](../../../../images/icon-applications-menu.png)), go to the **Control Panel** tab, and click **Objects** .
+1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판**으로 이동합니다. 탭을 클릭하고 **개체**를 클릭합니다.
 
-1. Create three Object drafts.
+1. 세 개의 개체 초안을 만듭니다.
 
-   First Object:
+    첫 번째 개체:
 
-      | Field | Value |
-      | :--- | :--- |
-      | Label | `Able` |
-      | Plural Label | `Ables` |
-      | Name | `Able` |
+       | 필드 | 가치 |
+       | :--- | :--- |
+       | 레이블 | '가능' |
+       | 복수 라벨 | '에이블스' |
+       | 이름 | '가능' |
 
-   Second Object:
+    두 번째 개체:
 
-      | Field | Value |
-      | :--- | :--- |
-      | Label | `Baker` |
-      | Plural Label | `Bakers` |
-      | Name | `Baker` |
+       | 필드 | 가치 |
+       | :--- | :--- |
+       | 라벨 | '베이커' |
+       | 복수 라벨 | '베이커스' |
+       | 이름 | '베이커' |
 
-   Third Object:
+    세 번째 개체:
 
-      | Field | Value |
-      | :--- | :--- |
-      | Label | `Charlie` |
-      | Plural Label | `Charlies` |
-      | Name | `Charlie` |
+       | 필드 | 가치 |
+       | :--- | :--- |
+       | 라벨 | '찰리' |
+       | 복수 라벨 | '찰리' |
+       | 이름 | '찰리' |
 
-1. Add the following text field to each Object draft.
+1. 각 개체 초안에 다음 텍스트 필드를 추가합니다.
 
-   | Label | Field Name | Type | Required |
-   | :--- | :--- | :--- | :--- |
-   | `Name` | `name` | Text | &#10004; |
+    | 라벨 | 필드 이름 | 유형 | 필수 |
+    | :--- | :--- | :--- | :--- |
+    | `이름` | `이름` | 텍스트 | &#10004; |
 
-1. Define the following relationships.
+1. 다음 관계를 정의합니다.
 
-   For Able:
+    에이블:
 
-      | Label | Relationship Name | Type | Object |
-      | :--- | :--- | :--- | :--- |
-      | `Able to Baker` | `ableToBaker` | One to Many | Baker |
+       | 레이블 | 관계 이름 | 유형 | 개체 |
+       | :--- | :--- | :--- | :--- |
+       | '제빵 가능' | `ableToBaker` | 일대다 | 베이커 |
 
-   For Baker:
+    베이커:
 
-      | Label | Relationship Name | Type | Object |
-      | :--- | :--- | :--- | :--- |
-      | `Baker to Charlie` | `bakerToCharlie` | One to Many | Charlie |
+       | 레이블 | 관계 이름 | 유형 | 개체 |
+       | :--- | :--- | :--- | :--- |
+       | '베이커가 찰리에게' | `베이커투찰리` | 일대다 | 찰리 |
 
-1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) each Object.
+1. [게시](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 각 개체.
 
-Once published, you can access each Object via Headless APIs.
+게시되면 Headless API를 통해 각 개체에 액세스할 수 있습니다.
 
-## Preparing the Sample Code
+## 샘플 코드 준비
 
-Run the following commands to download and unzip the provided sample code:
+다음 명령을 실행하여 제공된 샘플 코드를 다운로드하고 압축을 풉니다.
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
@@ -220,9 +221,9 @@ unzip liferay-w4s7.zip
 
 제공된 GET 메서드는 `nestedFields` 및 `nestedFieldsDepth` 매개변수가 있는 URL을 호출합니다.
 
-`nestedFields`: 쿼리에 포함된 항목 유형을 결정합니다(예:</code>`.</p>
+`nestedFields`: 쿼리에 포함된 항목 유형을 결정합니다(예: `able,baker`).
 
-<p spaces-before="0"><code>nestedFieldsDepth`: 포함하려는 항목의 깊이를 결정하며 0-5 사이에서 설정할 수 있습니다.
+`nestedFieldsDepth`: 포함하려는 항목의 깊이를 결정하며 0-5 사이에서 설정할 수 있습니다.
 
 ## 추가 정보
 

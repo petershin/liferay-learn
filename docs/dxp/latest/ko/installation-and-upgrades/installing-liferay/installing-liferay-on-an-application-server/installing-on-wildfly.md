@@ -389,7 +389,7 @@ Liferay DXP Enterprise 구독이 있는 경우 DXP는 활성화 키를 요청합
 
 ## 다음 단계
 
-[관리자 사용자로 로그인하고](../../../getting-started/introduction-to-the-admin-account.md) \[DXP에서 솔루션 구축\](../../../building **solutions** on_dxp.html. 또는 [개의 추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
+[관리자 사용자로 로그인하고](../../../getting-started/introduction-to-the-admin-account.md) \[DXP에서 솔루션 구축\](../../../building_solutions_on_dxp.html. 또는 [개의 추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
 
 * [마켓플레이스 플러그인 설치](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [평가판 기간 동안 플러그인 액세스](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)

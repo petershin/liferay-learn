@@ -3,12 +3,13 @@
 애플리케이션 메뉴에서 [사용자 그룹 생성 및 관리](../user-groups/creating-and-managing-user-groups.md) 를 할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 사용자 그룹을 관리하려면 이러한 서비스를 호출하십시오.
 
 ## 사용자 그룹 추가
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then follow these steps:
+그런 다음 다음 단계를 따르십시오.
 
-1. Download and unzip [User Groups API Basics](./liferay-y6f2.zip) .
+1. [사용자 그룹 API 기본 사항](./liferay-y6f2.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6f2.zip -O

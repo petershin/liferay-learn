@@ -3,12 +3,13 @@
 애플리케이션 메뉴에서 제품을 관리할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 이러한 서비스를 호출하여 제품을 만들고 관리합니다.
 
 ## 제품 추가
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then follow these steps:
+그런 다음 다음 단계를 따르십시오.
 
-1. Download and unzip [Product API Basics](./liferay-z8v2.zip) .
+1. [제품 API 기본 사항](./liferay-z8v2.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O

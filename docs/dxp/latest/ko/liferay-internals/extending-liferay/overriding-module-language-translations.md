@@ -64,7 +64,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 예를 들어 블로그 웹 버전 5.0.36 모듈은 `com.liferay.blogs.web-5.0.36.jar`에 있습니다.
 
-모듈을 찾을 수 있는 위치는 다음과 같습니다.
+모듈을 찾을 수 있는 사이트는 다음과 같습니다.
 
 * Liferay의 [넥서스 저장소](https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/)
 * `[Liferay Home]/osgi/modules`
@@ -75,12 +75,13 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 다른 언어 및 로캘에 대한 언어 번역은 파일 이름 끝으로 식별할 수 있습니다. 예를 들어 `Language_ja.properties` 은 일본어용입니다.
 
 예제는 기본 `블로그 항목 추가` 언어 번역을 사용자 정의 번역으로 변경합니다. 이제 배포할 시간입니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip `liferay-e6u7.zip`.
+1. `liferay-e6u7.zip`을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O
@@ -200,7 +201,7 @@ Then, follow these steps:
 ```
 
 ```{note}
-언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content /Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file) .
+언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file) .
 ```
 
 순위가 높은 리소스 묶음 집합 서비스에 대한 결과를 검색합니다.

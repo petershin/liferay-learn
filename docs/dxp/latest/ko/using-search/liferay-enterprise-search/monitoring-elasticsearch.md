@@ -42,7 +42,7 @@ Elasticsearch 6.x가 [수명 종료](https://www.elastic.co/support/eol#elastics
 
 1. [Kibana](https://www.elastic.co/downloads/kibana) 다운로드하고 압축을 풉니다. 루트 폴더는 **Kibana Home** 이라고 합니다.
 
-1. `kibana.yml`에서 Elasticsearch의 URL을 설정하여 모니터링 데이터를 보낼 위치를 Kibana에 알려줍니다.
+1. `kibana.yml`에서 Elasticsearch의 URL을 설정하여 모니터링 데이터를 보낼 사이트를 Kibana에 알려줍니다.
 
    ```yaml
    elasticsearch.hosts: [ "https://localhost:9200" ]

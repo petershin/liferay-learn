@@ -147,4 +147,4 @@ rootDir="{document_library_path}"
 
 ## 다음 단계
 
-Liferay 설정이 새 DXP 인스턴스에서 사용할 준비가 되었습니다. 다음으로 파일 저장소 [](./reference/file-store-updates.md)업데이트합니다.
+Liferay 설정이 새 DXP 인스턴스에서 사용할 준비가 되었습니다. 다음으로 [파일 저장소 업데이트](./reference/file-store-updates.md).

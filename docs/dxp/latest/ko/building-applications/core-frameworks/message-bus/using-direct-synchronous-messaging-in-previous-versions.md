@@ -149,7 +149,7 @@ uuid: 692ed11e-986f-4d53-963a-3142a0a683de
 
 축하해요! 직접 동기식 메시징을 사용하는 방법을 알고 있습니다.
 
-## 무엇 향후 계획
+## 무다음
 
 기본 **모드를 사용하여 동기식 메시징을 탐색**[이전 버전에서 기본 동기식 메시징 사용](./using-default-synchronous-messaging-in-previous-versions.md)참조하십시오.
 

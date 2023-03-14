@@ -7,12 +7,13 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 ```
 
 ## 리소스가 있는 조각 세트 가져오기
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to import an example Fragment Set to see how Fragment resources work:
+그런 다음 다음 단계에 따라 예제 Fragment Set을 가져와 Fragment 리소스가 작동하는 방식을 확인합니다.
 
-1. Download and unzip the [example resources Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip) :
+1. [example resources Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O
@@ -32,8 +33,7 @@ Then, follow these steps to import an example Fragment Set to see how Fragment r
     ./setup_tutorial.sh
     ```
 
-
-    Resolve all unmet requirements reported by the script and rerun the script until it reports that your environment is ready.
+    스크립트에서 보고한 모든 충족되지 않은 요구 사항을 해결하고 환경이 준비되었다고 보고할 때까지 스크립트를 다시 실행합니다.
 
 1. 아래의 `yarn run import` 명령을 사용하여 Fragments Toolkit을 사용하여 Docker 컨테이너에서 Fragment Set을 가져옵니다.
 

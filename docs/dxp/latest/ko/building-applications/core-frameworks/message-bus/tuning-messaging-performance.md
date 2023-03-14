@@ -37,12 +37,13 @@ uuid: 955491f3-1692-420e-9f3e-c9d1b44aefa6
 ## 예제 프로젝트의 모니터링 메시징
 
 예제 프로젝트는 목적지를 생성하고, 메시지 리스너를 등록하고, Gogo 셸 명령을 통해 목적지 통계를 나열합니다.
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르십시오.
 
-1. Download and unzip the example.
+1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O

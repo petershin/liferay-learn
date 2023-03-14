@@ -9,7 +9,7 @@ uuid: 3de2268a-455a-4b8f-be7b-284ea1c1d267
 Liferay Objects는 Liferay UI에서 개발 기능을 제공합니다. 개체를 사용하면 코드를 작성하거나 수동으로 모듈을 배포하지 않고도 완전히 통합된 Liferay 애플리케이션을 구축할 수 있습니다. 이 프로세스에는 객체 정의의 초기 초안 작성 [, 초안 편집 [, 초안 작성](#editing-object-drafts) , 마지막으로 게시 [새](#publishing-object-drafts) 프로그램 작성](#creating-object-drafts) 포함합니다. 개체 초안을 게시하면 개체 관리 페이지를 통해 언제든지 관리 및 확장할 수 있는 완전히 통합된 Liferay 애플리케이션이 생성됩니다.
 
 ```{important}
-Liferay는 개체 정의를 게시할 때 데이터베이스 테이블을 생성하므로 [데이터베이스 구성](../../../installation-and-upgrades/reference/database-configurations.md에 설명된 높은 보안 데이터베이스 관행으로 개체를 사용할 수 없습니다. #high-security-database-user-practices) .
+Liferay는 개체 정의를 게시할 때 데이터베이스 테이블을 생성하므로 [데이터베이스 구성](../../../installation-and-upgrades/reference/database-configurations.md#high-security-database-user-practices).
 ```
 
 ## 개체 초안 만들기
@@ -102,7 +102,7 @@ Liferay는 개체 정의를 게시할 때 데이터베이스 테이블을 생성
    
    **사이트** : 사이트로 범위를 지정하면 개체의 데이터가 사이트별로 저장됩니다.
 
-1. 패널 범주 키를 선택하여 Liferay에서 정의가 나타나는 위치를 결정합니다.
+1. 패널 범주 키를 선택하여 Liferay에서 정의가 나타나는 사이트를 결정합니다.
    
    회사 범위 개체의 경우 전역 메뉴(![Global Menu](../../../images/icon-applications-menu.png))에서 탭과 범주를 선택합니다.
    

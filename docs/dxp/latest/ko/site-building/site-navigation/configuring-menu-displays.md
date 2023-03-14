@@ -14,7 +14,7 @@ Liferay를 처음 사용하는 경우 메뉴 표시 조각을 사용하여 사�
 
 {bdg-secondary}`가능 7.4+`
 
-Liferay 내비게이션 메뉴 애플리케이션을 사용하면 콘텐츠 페이지의 어느 위치에나 내비게이션 메뉴를 생성할 수 있습니다. 이 탐색 메뉴는 사이트의 페이지 계층 구조 또는 Liferay의 [탐색 메뉴 응용 프로그램](./using-the-navigation-menus-application.md)을 사용하여 정의한 다른 계층 구조를 기반으로 합니다. 메뉴 표시 스타일 옵션과 탐색에 포함할 하위 수준의 수를 정의할 수도 있습니다.
+Liferay 내비게이션 메뉴 애플리케이션을 사용하면 콘텐츠 페이지의 어느 사이트에나 내비게이션 메뉴를 생성할 수 있습니다. 이 탐색 메뉴는 사이트의 페이지 계층 구조 또는 Liferay의 [탐색 메뉴 응용 프로그램](./using-the-navigation-menus-application.md)을 사용하여 정의한 다른 계층 구조를 기반으로 합니다. 메뉴 표시 스타일 옵션과 탐색에 포함할 하위 수준의 수를 정의할 수도 있습니다.
 
 메뉴 표시 조각은 콘텐츠 페이지의 조각 및 위젯 섹션 아래에 나타납니다. 콘텐츠 페이지의 다른 조각과 마찬가지로 이 조각을 추가하고 구성합니다. 자세한 내용은 [콘텐츠 페이지에 요소 추가](../creating-pages/using-content-pages/adding-elements-to-content-pages.md) 및 [단편 구성](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)을 참조하십시오.
 

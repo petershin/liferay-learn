@@ -34,7 +34,7 @@ company.default.time.zone=Europe/Lisbon
 
 DXP를 이미 실행한 경우 제어판에서 인스턴스의 기본 언어 및 표준 시간대를 변경하십시오.
 
-## 제어반
+## 제어판
 
 가상 인스턴스의 기본 언어 및 시간대는 인스턴스의 **현지화** 페이지를 사용하여 수정할 수 있습니다. 지침은 [가상 인스턴스 현지화 구성](../../system-administration/configuring-liferay/virtual-instances/localization.md) 을 참조하십시오.
 

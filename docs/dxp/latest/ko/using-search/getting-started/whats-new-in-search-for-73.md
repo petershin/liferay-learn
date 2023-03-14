@@ -118,7 +118,7 @@ DXP 7.2 SP2 이하에서 7.3으로 업그레이드하면 새 DXP 인덱스가 �
 
 ## Liferay 엔터프라이즈 검색(LES)
 
-> [**LES 가입자](https://www.liferay.com/products/dxp/enterprise-search**)
+> **[LES 가입자](https://www.liferay.com/products/dxp/enterprise-search)**
 
 ### 클러스터 간 복제(LES)
 

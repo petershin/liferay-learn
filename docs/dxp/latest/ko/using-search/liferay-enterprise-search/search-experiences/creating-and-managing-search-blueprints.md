@@ -80,7 +80,7 @@ CRUD 옵션 외에도 검색 청사진은 [가져오기 및 내보내기](#impor
 * `com.liferay.knowledge.base.model.KBArticle`
 * `com. liferay.wiki.model.WikiPage`
 
-지리적 위치 기능을 제공하는 요소(예: Boost Proximity)와 같은 기타 요소에는 추가 설정이 필요합니다. 자세한 내용은 [요소 참조](./search-blueprints-elements-reference.md)를 참조하세요.
+지리적 사이트 기능을 제공하는 요소(예: Boost Proximity)와 같은 기타 요소에는 추가 설정이 필요합니다. 자세한 내용은 [요소 참조](./search-blueprints-elements-reference.md)를 참조하세요.
 ```
 
 요소를 추가한 후 청사진을 저장해야 합니다.
@@ -228,6 +228,6 @@ CRUD 옵션 외에도 검색 청사진은 [가져오기 및 내보내기](#impor
 
 이 예제에서는 컨텍스트 변수 `user.is_signed_in`을 읽는 요소를 사용합니다. 값을 수동으로 설정하여 Blueprint가 특정 동작을 보여줄 수 있도록 기존 값을 재정의합니다. 값이 검색 컨텍스트에 이미 존재하므로 수동으로 설정하는 것은 선택 사항입니다. 다른 요소에는 일반 검색 요청 컨텍스트 내에 존재하지 않는 필수 맞춤 매개변수가 있습니다. 미리보기 사이드바에서 블루프린트를 테스트하든 검색 페이지에서 사용할 블루프린트를 설정하든 요소/블루프린트가 제대로 작동하려면 검색 컨텍스트에 수동으로 전달해야 합니다.
 
-## 무엇 향후 계획
+## 무다음
 
 - [검색 페이지에서 검색 청사진 사용](using-a-search-blueprint-on-a-search-page.md)

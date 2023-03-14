@@ -1,6 +1,6 @@
 # 콘텐츠 검색
 
-색인이 생성된 모든 콘텐츠(일명 Liferay DXP에서 자산 **_**)가 검색 결과로 반환될 수 있습니다. [사용자 지정 콘텐츠도 인덱싱할 수 있으므로](https://help.liferay.com/hc/ko/articles/360032260612-Model-Entity-Indexing-Framework) 설치 시 기본적으로 포함된 자산 유형 외에 추가 자산 유형이 있을 수 있습니다. 다음 이미지는 Liferay DXP에서 인덱싱되는 다양한 콘텐츠 유형의 예를 보여줍니다.
+인덱싱된 모든 콘텐츠(Liferay DXP의 **assets** 라고도 함)는 검색 결과로 반환될 수 있습니다. [사용자 지정 콘텐츠도 인덱싱할 수 있습니다](https://help.liferay.com/hc/en-us/articles/360032260612-Model-Entity-Indexing-Framework). 따라서 설치에 포함된 자산 유형 외에 추가 자산 유형이 있을 수 있습니다. 기본적으로. 다음 이미지는 Liferay DXP에서 인덱싱되는 다양한 콘텐츠 유형의 예를 보여줍니다.
 
 ![이러한 앱이 배포되면 기본적으로 해당 콘텐츠를 검색할 수 있습니다.](./searching-for-content/images/08.png)
 

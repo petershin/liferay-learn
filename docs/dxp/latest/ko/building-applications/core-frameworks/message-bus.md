@@ -26,7 +26,7 @@ message-bus/tuning-messaging-performance.md
 
 주요 메시징 구성 요소는 다음과 같습니다.
 
-**대상:** 메시지가 전송되는 논리적(물리적이 아님) 명명된 위치.
+**대상:** 메시지가 전송되는 논리적(물리적이 아님) 명명된 사이트.
 
 **리스너:** 특정 대상으로 전송된 메시지를 **수신** 하는 클래스.
 
@@ -71,6 +71,6 @@ message-bus/tuning-messaging-performance.md
 
 Message Bus API는 등록 이벤트, 대상, 대상 메시지 수신기 및 메시지 대기열의 모니터링을 용이하게 합니다. 대상 유형, 메시지 대기열 매개변수 및 스레드 매개변수를 조정하여 필요에 맞게 Message Bus 구성 요소를 구성할 수 있습니다. 자세한 내용은 [메시징 성능 조정](./message-bus/tuning-messaging-performance.md) 참조하십시오.
 
-## 무엇 향후 계획
+## 무다음
 
 Liferay의 기본 제공 대상에서 수신하는 것은 Message Bus 사용을 시작하는 좋은 방법입니다. 다음에 [메시지 듣기](./message-bus/listening-for-messages.md) 부터 시작합니다.

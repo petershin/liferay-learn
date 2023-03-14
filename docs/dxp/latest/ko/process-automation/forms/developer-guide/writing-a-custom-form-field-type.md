@@ -95,7 +95,7 @@ Forms 애플리케이션에는 고도로 구성 가능한 많은 [필드 유형�
 
 `ddm.form.field.type.description`: 설명 텍스트에 대한 언어 키를 제공합니다. 변환된 값이 `Language.properties` 파일에 정의되어 있는지 확인하십시오.
 
-`ddm.form.field.type.display.order`: 정수 또는 부동 소수점 값을 설정하여 Form Builder 사이드바에서 필드가 표시되는 위치를 결정합니다. 동일한 값을 가진 필드는 무작위로 정렬됩니다.
+`ddm.form.field.type.display.order`: 정수 또는 부동 소수점 값을 설정하여 Form Builder 사이드바에서 필드가 표시되는 사이트를 결정합니다. 동일한 값을 가진 필드는 무작위로 정렬됩니다.
 
 `ddm.form.field.type.icon`: 필드에 사용할 아이콘 유형을 결정합니다. [점토 아이콘](https://clayui.com/docs/components/icon.html) 선택합니다.
 
@@ -148,7 +148,7 @@ import 문은 Liferay의 기본 양식 필드인 `dynamic-data-mapping-form-fiel
 
 이러한 매개변수의 값은 일부 다른 매개변수와 함께 양식 필드에 대한 HTML `<input>` 태그를 정의합니다. 중요한 것은 사용자가 선택할 수 있는 `최대` 및 `최소` 값이 현재 하드 코딩되어 있다는 것입니다. 나중에 [변경할 것입니다](#add-custom-settings-to-the-form-field) . 필드의 `값` 삼항 연산자를 사용하여 정의됩니다. 값이 입력되면 사용하십시오. 그렇지 않으면 미리 정의된 값을 사용합니다.
 
-`Main` 구성 요소는 파일 끝에서 내보내집니다. 가져온 `FieldBase`의 하위 요소로 `Slider` 포함합니다. `onChange` 함수는 이벤트가 감지될 때마다(슬라이더가 새 값으로 드래그될 때마다) 슬라이더의 위치/값을 가져옵니다.
+`Main` 구성 요소는 파일 끝에서 내보내집니다. 가져온 `FieldBase`의 하위 요소로 `Slider` 포함합니다. `onChange` 함수는 이벤트가 감지될 때마다(슬라이더가 새 값으로 드래그될 때마다) 슬라이더의 사이트/값을 가져옵니다.
 
 ```{literalinclude} ./writing-a-custom-form-field-type/resources/liferay-c2p9.zip/c2p9-impl/src/main/resources/META-INF/resources/C2P9/Slider.es.js
    :dedent: 0

@@ -5,7 +5,7 @@ uuid: 50898f75-135c-4b46-ae9d-b32ce3c80351
 
 {bdg-secondary}`Available Liferay 7.4 U63+/GA63+`
 
-If you need to create multiple publications with the same details and contributors, use publication templates to simplify setup. With templates, you can use tokens to dynamically set publication names and descriptions. Also, you can set a list of default users to invite and assign them roles.
+To simplify the creation of publications with shared details and contributors, use publication templates. You can set up a list of default users to invite and assign roles, and use tokens to auto-populate names and descriptions.
 
 To create a publication template,
 
@@ -15,7 +15,7 @@ To create a publication template,
 
    ![Open the Publications application, click the Actions button in the Application Bar, and select Templates.](./using-publication-templates/images/01.png)
 
-1. Click the *Add* button ( ![Add button](../../../images/icon-add.png) )
+1. Click the *Add* button (![Add button](../../../images/icon-add.png)).
 
 1. Enter a name and description for the template.
 
@@ -23,7 +23,7 @@ To create a publication template,
 
 1. Enter a name and description to use for publications created with the template.
 
-   When defining these fields, you can use string template tokens to dynamically generate values:
+   You can use string template tokens to generate values dynamically:
 
    * `${RANDOM_HASH}`
 
@@ -33,16 +33,16 @@ To create a publication template,
 
    ![Enter a name and description to use for publications created with the template.](./using-publication-templates/images/03.png)
 
-1. Click *Invite Users* to determine the default users and role assignments for publications created with the template.
+1. Click *Invite Users* to specify the default users and role assignments for publications created with the template.
 
-   ![Click Invite Users to determine the default users and role assignments for publications created with the template.](./using-publication-templates/images/04.png)
+   ![Click Invite Users to specify the default users and role assignments for publications created with the template.](./using-publication-templates/images/04.png)
 
-   To add contributors, search for users and select a role. See [Collaborating on Publications](./collaborating-on-publications.md) for more information on these options.
+   To add contributors, search for users and select a role. See [Collaborating on Publications](./collaborating-on-publications.md) for more information.
 
    ![Search for users and select a role.](./using-publication-templates/images/05.png)
 
    ```{note}
-   If you invite users without access to the Publications application, Liferay automatically assigns them the [Publications User](./publications-permissions.md#publications-user-role) role.
+   If you invite users without permission to access the Publications application, Liferay automatically assigns them the [Publications User](./publications-permissions.md#publications-user-role) role.
    ```
 
 1. Click *Save*.

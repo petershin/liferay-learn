@@ -19,11 +19,11 @@ client-extensions/configuration-client-extensions.md
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Client extensions are a way to extend Liferay without using OSGi modules. You can deploy client extensions to any Liferay environment, whether you host it yourself or on Liferay Experience Cloud. They are also the primary way of customizing Liferay with Liferay Experience Cloud, together with built-in configurations like [Liferay objects](./objects.md).
+Client extensions extend Liferay without using OSGi modules. You can deploy client extensions to any Liferay environment, whether you host it yourself or on Liferay Experience Cloud. They are also the primary way to customize Liferay with Liferay Experience Cloud, together with built-in configurations like [Liferay objects](./objects.md).
 
-While other types of Liferay extensions, such as [OSGi modules](../liferay-internals/fundamentals/module-projects.md) or [themes](../site-building/site-appearance/themes/introduction-to-themes.md), are powerful tools for customizing Liferay itself, client extensions avoid directly using or customizing Liferay code. This makes client extensions more robust and easier to apply to environments after an upgrade, since they do not depend on any specific version of Liferay. You can also develop using whatever programming languages or technologies are most familiar to you, because your client extensions run outside of Liferay and integrate with objects, with no extra code required to connect them.
+While other Liferay extensions like [OSGi modules](../liferay-internals/fundamentals/module-projects.md) or [themes](../site-building/site-appearance/themes/introduction-to-themes.md) modify or add functionality to Liferay itself, client extensions interface only with Liferay's APIs. This loose coupling makes client extensions more flexible and easier to apply to environments after an upgrade, since they depend only on APIs, which rarely change between versions. You can also create client extensions using whatever programming languages or technologies you wish, because your client extensions run outside of Liferay and integrate with objects, with no extra code required to connect them.
 
-![Client extensions provide the key customization capabilities needed to meet specific business requirements, without needing to modify Liferay itself.](./client-extensions/images/01.png)
+![Client extensions provide the key customization capabilities needed to meet specific business requirements, without modifying Liferay itself.](./client-extensions/images/01.png)
 
 With client extensions, you can
 
@@ -34,7 +34,7 @@ With client extensions, you can
 
 ## Types of Client Extensions
 
-Client extensions integrate with [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md), so that you can use the available tools there to quickly develop and deploy them. Client extensions communicate with Liferay via [headless APIs](../headless-delivery/using-liferay-as-a-headless-platform.md).
+You use [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md) to develop and deploy Client extensions. Client extensions communicate with Liferay via [headless APIs](../headless-delivery/using-liferay-as-a-headless-platform.md).
 
 Client extensions can be categorized as
 
@@ -58,7 +58,7 @@ See [Microservice Client Extensions](./client-extensions/microservice-client-ext
 
 Configuration client extensions provide specific configurations to change functionality within your Liferay instance.
 
-They can be used together with other client extensions, such as [microservice client extensions](#microservice-client-extensions). For example, use an OAuth user agent client extension to authenticate client extensions that work with user-triggered action events.
+They can be used together with other client extensions, such as [microservice client extensions](#microservice-client-extensions). For example, you can use an OAuth user agent client extension to authenticate client extensions that work with user-triggered action events.
 
 See [Configuration Client Extensions](./client-extensions/configuration-client-extensions.md) for more information on the specific types.
 

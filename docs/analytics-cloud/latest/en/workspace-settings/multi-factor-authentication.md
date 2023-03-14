@@ -39,4 +39,4 @@ Multi-factor authentication (MFA) is required for all Analytics Cloud users. Thi
 
 Secure login is a critical feature to protect our users and customer data. If you encounter an issue with MFA, we're here to help. 
 
-Contact support through [help.liferay.com](https://help.liferay.com/) or email us at [analytics-cloud@liferay.com](mailto:analytics-cloud%40liferay.com)
+Contact support through [help.liferay.com](https://help.liferay.com/).

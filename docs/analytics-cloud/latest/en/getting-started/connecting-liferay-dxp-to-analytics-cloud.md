@@ -27,7 +27,7 @@ Connecting Liferay DXP to Analytics Cloud has these prerequisites:
    * 7.1 Fix Pack 22
    * 7.0 Fix Pack 98
 
-1. You must have access to at least one Analytics Cloud workspace. As a paid Analytics Cloud user, you should see your workspace upon login. If you don't, contact support through [help.liferay.com](https://help.liferay.com/) or email <analytics-cloud@liferay.com>.
+2. You must have access to at least one Analytics Cloud workspace. As a paid Analytics Cloud user, you should see your workspace upon login. If you don't, contact support through [help.liferay.com](https://help.liferay.com/).
 
 ## Using the Onboarding Guide
 

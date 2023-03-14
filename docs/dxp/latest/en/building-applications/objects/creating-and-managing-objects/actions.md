@@ -50,6 +50,6 @@ Groovy script actions are only available for Liferay Experience Cloud Self-Manag
 :::
 
 :::{grid-item-card} Using Manual Actions
-:link: ./actions/actions/using-manual-actions.md
+:link: ./actions/using-manual-actions.md
 :::
 ::::

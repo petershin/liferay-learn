@@ -5,6 +5,12 @@ uuid: 688335ec-a749-4c33-a940-0b19dd493a9f
 
 [Content Pages](../using-content-pages.md) are the most commonly used page type, but other page types are available for certain use cases.
 
+## Utility Pages
+
+Utility pages are content pages you can create and apply to system-level pages, like 404 error pages, that provide additional flexibility to your site's look and feel and the users' experience. See [Using Utility Pages](../adding-pages/using-utility-pages.md) for more information.
+
+![A customized 404 error page created using a utility page.](./other-page-types/images/04.png)
+
 ## Full Page Application
 
 The *Full Page Application* page type creates a page that displays a single application that fills the entire page. See [Using the Full Page Application Page](../adding-pages/using-the-full-page-application-page-type.md) for more information.

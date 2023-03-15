@@ -1,5 +1,3 @@
-import com.liferay.headless.commerce.admin.catalog.client.dto.v1_0.Specification;
-import com.liferay.headless.commerce.admin.catalog.client.pagination.Page;
 import com.liferay.headless.commerce.admin.catalog.client.pagination.Pagination;
 import com.liferay.headless.commerce.admin.catalog.client.resource.v1_0.SpecificationResource;
 
@@ -15,8 +13,9 @@ public class Specifications_GET_FromInstance {
 			"test@liferay.com", "learn"
 		).build();
 
-		System.out.println(specificationResource.getSpecificationsPage(
-			null, null, Pagination.of(1, 2), null););
+		System.out.println(
+			specificationResource.getSpecificationsPage(
+				null, null, Pagination.of(1, 2), null));
 	}
 
 }

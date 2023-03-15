@@ -5,10 +5,10 @@ uuid: 16455895-2b77-463c-bc0c-ed767b740b02
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-Custom elements are a type of client extension that use Liferay's front-end infrastructure to register external applications with the Liferay platform and render them as widgets. For applications that include multiple routes (e.g., [React Router](https://reactrouter.com/), you can define remote application properties to determine which routes are used for a widget at runtime. These properties can be set for an application via the Remote Apps menu in Liferay or the widget's configuration options once deployed.
+Custom element client extensions use Liferay's front-end infrastructure to register external applications with the Liferay platform and render them as widgets. For applications that include multiple routes (e.g., [React Router](https://reactrouter.com/), you can define remote application properties to determine which routes are used for a widget at runtime. These properties can be set for an application via the Remote Apps menu in Liferay or the widget's configuration options once deployed.
 
 ```{warning}
-Custom elements or IFrames being deployed in the same way as other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial uses a different way to deploy custom element remote applications, and it is still the recommended approach until a future update.
+Deploying Custom elements or IFrames like other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial deploys custom element remote applications differently, and it is still the recommended approach until a future update.
 ```
 
 In this tutorial, you'll create a basic React application using Liferay's `create_custom_element.sh` script, which generates a sample app with three routes: `hello-world`, `hello-foo`, `hello-bar`. After compiling the application and hosting its `.js` and `.css` files, you'll register the application with Liferay and deploy it as a page widget. Finally, you'll configure it to use each of the alternative routes.
@@ -16,7 +16,7 @@ In this tutorial, you'll create a basic React application using Liferay's `creat
 ![Create a basic custom element remote appliaction with alternate routes and use the route property to configure which is rendered.](./using-routes-with-custom-elements/images/01.png)
 
 ```{note}
-Custom element client extensions are agnostic regarding how applications are built, packaged, and hosted. This tutorial only offers a convenient way to create a sample custom element application with basic routing.
+Custom element client extensions can use any technology, regardless of how it's built, packaged, or hosted. This tutorial only offers a sample custom element application with basic routing.
 ```
 
 Running `create_custom_element.sh` requires the latest versions of [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [YARN](https://classic.yarnpkg.com/). Before proceeding, ensure these tools are installed.
@@ -37,7 +37,7 @@ Running `create_custom_element.sh` requires the latest versions of [Node.JS](htt
 
 1. Verify the application was created successfully.
 
-   The script should create a new React application called `j1v3-remote-app` that includes the following elements:
+   The script creates a new React application called `j1v3-remote-app` with these elements:
 
    ```bash
    j1v3-remote-app
@@ -80,7 +80,7 @@ Running `create_custom_element.sh` requires the latest versions of [Node.JS](htt
    yarn build
    ```
 
-1. Verify the build succeeded and take note of the application's `.js` and `.css` files.
+1. Verify the build succeeded and note the application's `.js` and `.css` files.
 
    ```bash
    Creating an optimized production build...
@@ -96,7 +96,7 @@ Running `create_custom_element.sh` requires the latest versions of [Node.JS](htt
 
 1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and select *Multiple Files Upload*.
+1. Click *Add* (![Add Button](../../../../images/icon-add.png)) and select *Multiple Files Upload*.
 
 1. Drag and drop the `.js` and `.css` files into the upload area.
 
@@ -123,7 +123,7 @@ For example,
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click on the *Applications* tab, and go to *Remote Apps*.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../../../images/icon-add.png)).
 
 1. Enter these values:
 
@@ -141,7 +141,7 @@ For example,
 
 Once saved, Liferay creates a widget named J1V3-Remote-App, which you can deploy to Site Pages like any other Page widget. It appears under the selected Portlet Category Name.
 
-Since J1V3-Remote-App is instanceable, you can add many of them to a page, each with its own independent configuration. For this tutorial, add the widget to a page twice.
+Since J1V3-Remote-App is instanceable, you can add many of them to a page, each with its own independent configuration. For this example, add the widget to a page twice.
 
 ![Deploy two instances of the J1V3-Remote-App widget.](./using-routes-with-custom-elements/images/04.png)
 
@@ -192,7 +192,7 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
     :lines: 1-34
 ```
 
-This `index.js` file creates the `WebComponent` class, which extends the `HTMLElement` interface. This class implements the interface's [`connectedCallback()`](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) function, which calls [`ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render) with `App` as a parameter. When `App` is called, it checks for any defined `"route"` attribute and compares that value with the available routes. If it matches either `hello-foo` or `hello-bar`, then it returns and renders the corresponding route. Otherwise, it returns and renders `hello-world`.
+This `index.js` file creates the `WebComponent` class, which extends the `HTMLElement` interface. This class implements the interface's [`connectedCallback()`](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) function, which calls [`ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render) with `App` as a parameter. When `App` is called, it checks for any defined `"route"` attribute and compares that value with the available routes. If it matches either `hello-foo` or `hello-bar`, it returns and renders the corresponding route. Otherwise, it returns and renders `hello-world`.
 
 Each of the routes is imported into the `index.js` file from the `routes` folder:
 

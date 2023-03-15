@@ -33,21 +33,21 @@ front-end-client-extensions/remote-applications-ui-reference.md
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JS, Theme CSS, Theme JS, Theme Favicon, Custom Element, and IFrame.
+Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JavaScript, Theme CSS, Theme JS, Theme Favicon, Custom Element, and IFrame.
 
 You can create and deploy these extensions from your [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md). 
 
 See [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) to learn more about creating [custom element](#custom-element-client-extensions) and [IFrame](#iframe-client-extensions) client extensions.
 
 ```{note}
-You can add JS, CSS, or Theme CSS client extensions to layout sets (i.e., page sets), master templates, page templates, and individual content pages. The level at which you add the extension determines which entities inherit the extension's code. For example, if you add extensions to a master template, all page templates and content pages using the master template inherit its extensions.
+You can add JavaScript, CSS, or Theme CSS client extensions to layout sets (i.e., page sets), master templates, page templates, and individual content pages. The level at which you add the extension determines which entities inherit the extension's code. For example, if you add extensions to a master template, all page templates and content pages using the master template inherit its extensions.
 ```
 
 ## JavaScript Client Extensions
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-JavaScript client extensions provide global JavaScript libraries and logic throughout your Liferay instance. When you deploy a JavaScript client extension and configure a page to use it, its JavaScript automatically runs each time you visit the page (in the page's header or footer). This allows you to add functionality to pages without deploying an OSGi module or theme.
+JavaScript client extensions provide global JavaScript libraries and logic throughout your Liferay instance. When you deploy a JavaScript client extension and configure a page to use it, its JavaScript runs automatically each time you visit the page (in the page's header or footer). 
 
 Specify a JavaScript client extension in your `client-extension.yaml` file:
 
@@ -61,7 +61,7 @@ See [Using a JavaScript Client Extension](./front-end-client-extensions/tutorial
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-CSS client extensions introduce new CSS styling to pages. When you deploy a CSS client extension and configure a page to use it, its CSS adds to the page's existing styling, including theme and style book settings. 
+CSS client extensions introduce new CSS styling to pages. A deployed CSS client extension on a page adds to the page's existing styling, including theme and style book settings. 
 
 Specify a CSS client extension in your `client-extension.yaml` file :
 
@@ -77,7 +77,7 @@ See [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using
 
 As with [JavaScript client extensions](#javascript-client-extensions), you can add JavaScript libraries and logic to replace the ones provided by your site's [theme](../../site-building/site-appearance/themes/introduction-to-themes.md).
 
-Specify a Theme CSS client extension in your `client-extension.yaml` file:
+Specify a Theme JavaScript client extension in your `client-extension.yaml` file:
 
 ```yaml
 type: themeJS
@@ -115,7 +115,7 @@ Override the favicon for your pages in Liferay. When deployed, the provided icon
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-Theme sprite map client extensions override the sprite map for site pages. Define the sprite map as a `.svg` image, and it replaces the one used by your site's current theme.
+Theme sprite map client extensions override the sprite map for site pages. Define the sprite map as an `.svg` image, and it replaces the one used by your site's current theme.
 
 Specify a theme sprite map client extension in your `client-extension.yaml` file:
 
@@ -167,7 +167,7 @@ Set these properties in the `client-extension.yaml` file of any front-end client
 | `description` | String | | The client extension's description. |
 | `name` | String | | The client extension's name (as it appears in the UI). A name is required for front-end client extensions. |
 | `sourceCodeURL` | URL | https://www.liferay.com | The address to the client extension's source repository. |
-| `typeSettings` | String[] | [] | A list of strings that are processed with Liferay's `UnicodeProperties` syntax. Type-specific client extension properties are automatically copied into this when the client extension is built. |
+| `typeSettings` | String[] | [] | A list of strings that are processed with Liferay's `UnicodeProperties` syntax. Type-specific client extension properties are copied automatically into this when the client extension is built. |
 
 See [Configuring Client Extensions in `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) for more information.
 

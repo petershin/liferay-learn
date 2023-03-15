@@ -5,7 +5,7 @@ uuid: e26e34b4-ca1b-490b-b911-4ef92ad123ea
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-With a JavaScript (JS) client extension, you can run your own JavaScript on any page in Liferay without worrying about dependencies on Liferay code or developing a theme. Here you'll start with a JS client extension (from a [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace)).
+With a JavaScript (JS) client extension, you can run your own JavaScript on any page in Liferay without worrying about dependencies on Liferay code or developing a theme. Here you'll start with a JavaScript client extension (from a [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace)).
 
 ## Prerequisites
 
@@ -88,7 +88,7 @@ Confirm the deployment in your Liferay instance's console:
 STARTED sample-global-js_1.0.0
 ```
 
-Once your client extension is successfully deployed, configure Liferay to use it. 
+Once your client extension is deployed successfully, configure Liferay to use it. 
 
 ## Use the Client Extension on a Page
 

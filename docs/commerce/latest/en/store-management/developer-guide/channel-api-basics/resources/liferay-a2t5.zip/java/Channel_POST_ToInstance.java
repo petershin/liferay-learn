@@ -17,9 +17,9 @@ public class Channel_POST_ToInstance {
 			channelResource.postChannel(
 				new Channel() {
 					{
-						currencyCode = "USD";						
+						currencyCode = "USD";
 						name = "Foo";
-                  type = "site";
+						type = "site";
 					}
 				}));
 	}

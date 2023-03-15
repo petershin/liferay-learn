@@ -15,10 +15,8 @@ public class Specifications_GET_FromInstance {
 			"test@liferay.com", "learn"
 		).build();
 
-		Page<Specification> page = specificationResource.getSpecificationsPage(
-			null, null, Pagination.of(1, 2), null);
-
-		System.out.println(page);
+		System.out.println(specificationResource.getSpecificationsPage(
+			null, null, Pagination.of(1, 2), null););
 	}
 
 }

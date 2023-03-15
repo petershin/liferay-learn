@@ -16,7 +16,7 @@ able-theme-favicon:
     url: favicon.ico
 ```
 
-The required `url` property defines the favicon icon image's location. This image becomes a new favicon option for every page in Liferay when the client extension is deployed.
+The required `url` property defines the favicon icon image's location. This image becomes a new favicon option for every page when the client extension is deployed.
 
 [The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-theme-favicon) contains a complete theme favicon client extension.
 

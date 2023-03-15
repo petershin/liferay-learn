@@ -108,7 +108,7 @@ Configure a page in Liferay to use your deployed client extension:
 
 1. On a page with at least one button, click the _Edit_ icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)), and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)) and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
    ![Click the cog wheel icon in the Page Design Options menu to access this client extension's configurations.](./using-a-css-client-extension/images/01.png)
 
@@ -116,11 +116,11 @@ Configure a page in Liferay to use your deployed client extension:
 
    ![Add the CSS client extension from the list.](./using-a-css-client-extension/images/02.png)
 
-1. Select your CSS client extension from the pop-up modal, and click *Add*.
+1. Select your CSS client extension from the pop-up modal and click *Add*.
 
 1. Click  *Save*.
 
-Now your client extension is configured. In the page editor, the background color on the buttons is now the color your CSS specifies. To see your CSS applied on the page outside of Edit mode, you must publish the page.
+Now your client extension is configured. In the page editor, the background color on the buttons is now the color your CSS specifies. To see your CSS applied on the page outside Edit mode, you must publish the page.
 
 ![If you changed the background color in your client extension's global.css file, all buttons on the page were changed.](./using-a-css-client-extension/images/03.png)
 

@@ -16,7 +16,7 @@ able-global-js:
     url: global.js
 ```
 
-The required `url` property defines the JavaScript resource file's location. When enabled on a page, any JavaScript at this path runs on each page load.
+The required `url` property defines the JavaScript resource file's location. When enabled on a page, JavaScript at this path runs on each page load.
 
 [The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions) includes a complete JavaScript client extension.
 
@@ -26,7 +26,7 @@ These properties are specific to JavaScript client extensions:
 
 | Name | Data Type | Description |
 | :--- | :--- | :--- |
-| `url` | URL | (Required) The path to the JavaScript file that is added to the HEAD of the page when the client extension is enabled. The complete URI is prefixed by the `baseURL` value. |
+| `url` | URL | (Required) The path to the JavaScript file added to the HEAD of the page when the client extension is enabled. The complete URI is prefixed by the `baseURL` value. |
 
 See [Front-end Client Extension Properties](../front-end-client-extensions.md#front-end-client-extension-properties) for properties common to all front-end client extensions.
 

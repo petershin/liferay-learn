@@ -34,7 +34,7 @@ These properties are specific to custom element client extensions:
 
 | Name | Data Type | Default Value | Description |
 | :--- | :--- | :--- | :--- |
-| `cssURLs` | String[] (partial URLs) | `[]` | List of CSS paths that are added to the HTML head when the custom element is used on a page. |
+| `cssURLs` | String[] (partial URLs) | `[]` | List of CSS paths added to the HTML head when the custom element is used on a page. |
 | `friendlyURLMapping` | String | | Mapping of a friendly URL prefix to the specific custom element widget. |
 | `htmlElementName` | String | | The HTML element name that refers to the custom element, which is rendered in the page markup. |
 | `instanceable` | True/false | `false` | Whether the custom element widget can appear multiple times on a page. |

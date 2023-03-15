@@ -7,7 +7,7 @@ You can define a theme sprite map client extension with a `client-extension.yaml
 
 ## Usage Details
 
-This`client-extension.yaml` defines a theme sprite map client extension:
+This `client-extension.yaml` defines a theme sprite map client extension:
 
 ```yaml
 able-theme-spritemap:

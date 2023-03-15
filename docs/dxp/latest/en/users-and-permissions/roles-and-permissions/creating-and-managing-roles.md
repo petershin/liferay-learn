@@ -5,7 +5,7 @@ uuid: 52fccdbc-556d-40a3-992e-e0eba8ee0542
 
 Once you [understand](./understanding-roles-and-permissions.md) roles and permissions, its time to create the roles you need to empower your users to work within your Liferay DXP solution.
 
-Role creation and management is conducted in Control Panel &rarr; Users &rarr; Roles.
+Create and manage roles in Control Panel &rarr; Users &rarr; Roles.
 
 ## Creating Roles
 
@@ -19,7 +19,7 @@ First, [determine the scope](./understanding-roles-and-permissions.md) of the Ro
 
 1. Enter a localizable title and description.
 
-1. Enter a key. This is a unique identifier you can use to reference the role programmatically. By default, this field is populated by the title field, but you can set it manually.
+1. Enter a key. This is a unique identifier for referencing the role programmatically. By default, the title value is used.
 
 1. Click *Save*.
 
@@ -35,13 +35,15 @@ To do this, click the role's *Actions* button (![Actions Button](../../images/ic
 
 ## Role Management Permissions
 
-You can assign permissions for managing individual roles. To do this, click the role's *Actions* button (![Actions](../../images/icon-actions.png)) and select *Permissions*.
+You can assign permissions for managing individual roles. 
 
-Here, you can determine the actions that existing regular roles can perform on the selected role. This assignment is for each individual role and is different from [defining permission for the Roles application](./defining-role-permissions.md).
+1. Click the role's *Actions* button (![Actions](../../images/icon-actions.png)) and select *Permissions*.
 
-![Permissions can be configured for role creation and management.](./creating-and-managing-roles/images/02.png)
+1. Specify the actions that existing regular roles can perform on the selected role. This assignment is for each individual role and is different from [defining permission for the Roles application](./defining-role-permissions.md).
 
-By default, only the Owner and Administrator regular roles can grant these permissions for a role. The Administrator role doesn't appear in the permissions matrix because its permissions cannot be modified. If you're using the default user in a testing installation, you have this permission at the global scope and can carry out all actions, as well as assign users and define permissions for a role.
+   ![Permissions can be configured for role creation and management.](./creating-and-managing-roles/images/02.png)
+
+By default, only the Owner and Administrator regular roles can grant these permissions for a role. The Administrator role doesn't appear in the permissions matrix because its permissions cannot be modified. The default user in a testing installation has this permission at the global scope and can carry out all actions, as well as assign users and define permissions for a role.
 
 ```{warning}
 Be careful about granting these permissions. This is administrative functionality that's best left to a few trusted users.
@@ -49,21 +51,25 @@ Be careful about granting these permissions. This is administrative functionalit
 
 ## Deleting Roles
 
-To delete a role, click its *Actions* button (![Actions Button](../../images/icon-actions.png)) and select *Delete*. After confirming, the role is deleted immediately, along with any [workflow task assignments](../../process-automation/workflow/using-workflows/reviewing-assets.md) associated with it.
+1. Click the role's *Actions* button (![Actions Button](../../images/icon-actions.png)) and select *Delete*. 
 
-![Click OK to delete the role.](./creating-and-managing-roles/images/03.png)
+1. Confirm that you really want to delete the role. The role is deleted immediately, along with any [workflow task assignments](../../process-automation/workflow/using-workflows/reviewing-assets.md) associated with it.
+
+   ![Click OK to delete the role.](./creating-and-managing-roles/images/03.png)
 
 ## Exporting and Importing Roles
 
 If needed, you can export and import roles. However, Liferay only exports company-wide and personal site permissions. Site and asset library-related permissions are not exported.
 
-To begin an export or import process, open the Roles application, click the *Actions* button ![Actions Button](./../../images/icon-actions.png) in the Application Bar, and select *Export/Import*.
+To begin an export or import process, 
 
-![Open the Roles application, click the Actions button in the Application Bar, and select Export/Import.](./creating-and-managing-roles/images/04.png)
+1. Open the Roles application, click the *Actions* button ![Actions Button](./../../images/icon-actions.png) in the Application Bar, and select *Export/Import*.
 
-Here you can configure export/import processes, download and upload LAR files, or review current and previous export/import processes.
+   ![Open the Roles application, click the Actions button in the Application Bar, and select Export/Import.](./creating-and-managing-roles/images/04.png)
 
-![Configure and review export/import processes.](./creating-and-managing-roles/images/05.png)
+1. Configure export/import processes, download and upload LAR files, or review current and previous export/import processes.
+
+   ![Configure and review export/import processes.](./creating-and-managing-roles/images/05.png)
 
 ## Deleting Asset Containers Deletes their Assets
 

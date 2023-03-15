@@ -26,7 +26,7 @@ These properties are specific to CSS client extensions:
 
 | Name | Data Type | Description |
 | :--- | :--- | :--- |
-| `url` | URL | (Required) The path to the CSS file that is added to the page's CSS when enabled on a page. The complete URI is prefixed by the `baseURL` value. |
+| `url` | URL | (Required) The path to the CSS file added to the page's CSS when enabled on a page. The complete URI is prefixed by the `baseURL` value. |
 
 See [Front-end Client Extension Properties](../front-end-client-extensions.md#front-end-client-extension-properties) for properties common to all front-end client extensions.
 

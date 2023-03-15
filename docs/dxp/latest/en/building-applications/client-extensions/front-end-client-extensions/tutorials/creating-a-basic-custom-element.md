@@ -5,10 +5,10 @@ uuid: fdced878-aea0-40b8-9959-828e9787d373
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-Custom elements are a type of client extension that use Liferay's front-end infrastructure to register external, remote applications with the Liferay platform and render them as widgets.
+Custom element client extensions use Liferay's front-end infrastructure to register external, remote applications with the Liferay platform and render them as widgets.
 
 ```{warning}
-Custom elements or IFrames being deployed in the same way as other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial uses a different way to deploy custom element remote applications, and it is still the recommended approach until a future update.
+Deploying Custom elements or IFrames in the same way as other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial deploys custom element remote applications differently, and it is still the recommended approach until a future update.
 ```
 
 Here you'll create a basic remote application using Liferay's [`create_custom_element.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_custom_element.sh) script. After the application is generated, you'll compile its code and host its `.js` and `.css` files. Once hosted, you'll copy each file's URLs and use them to create a custom element. Finally, you can deploy the application to site pages as a widget.
@@ -16,7 +16,7 @@ Here you'll create a basic remote application using Liferay's [`create_custom_el
 ![Use the create_custom_element.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
 
 ```{note}
-Custom element client extensions are agnostic regarding how applications are built, packaged, and hosted. This tutorial only offers a convenient way to create a sample custom element application.
+Custom element client extensions can use any technology, regardless of how it's built, packaged, or hosted. This tutorial only offers a sample custom element application using React.
 ```
 
 Running `create_custom_element.sh` requires the latest versions of [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [YARN](https://classic.yarnpkg.com/). Before proceeding, ensure these tools are installed.
@@ -33,7 +33,7 @@ curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custo
 
 This calls the script with two arguments: a custom HTML element name (`h5v7-remote-app`) and the desired JavaScript framework (`react`).
 
-When finished running, the script automatically creates a new React application which includes these elements in a folder named `h5v7-remote-app`:
+When finished running, the script automatically creates a new React application with these elements in a folder named `h5v7-remote-app`:
 
 ```bash
 h5v7-remote-app
@@ -127,7 +127,7 @@ Then, follow these steps:
 
 1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and select *Multiple Files Upload*.
+1. Click *Add* (![Add Button](../../../../images/icon-add.png)) and select *Multiple Files Upload*.
 
 1. Drag and drop the `.js` and `.css` files into the upload area.
 
@@ -152,7 +152,7 @@ For example,
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Remote Apps*.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../../../images/icon-add.png)).
 
 1. Enter these values:
 

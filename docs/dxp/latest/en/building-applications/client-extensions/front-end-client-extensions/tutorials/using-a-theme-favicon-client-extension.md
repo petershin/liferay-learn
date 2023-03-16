@@ -5,7 +5,7 @@ uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-You can override the default favicon in Liferay using a theme favicon client extension. This can be done without changing any Liferay code. You'll use this [Sample Workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace) to build and deploy your client extension.
+You can override the default favicon of a page in Liferay using a theme favicon client extension. This can be done without changing any Liferay code. The client extension overrides the favicon used by the theme on the selected page. You'll use this [Sample Workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace) to build and deploy your client extension.
 
 ## Prerequisites
 

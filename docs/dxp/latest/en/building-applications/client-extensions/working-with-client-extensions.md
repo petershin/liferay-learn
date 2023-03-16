@@ -13,7 +13,7 @@ Using client extensions, you can extend Liferay without deploying OSGi modules. 
 
 ## Required Tools and Settings
 
-To start developing client extensions, obtain the following:
+To start developing client extensions, obtain the following items:
 
 1. Java 8 or JDK 11.
 
@@ -54,7 +54,7 @@ assemble:
         into: static
 ```
 
-The assemble block uses these properties:
+The assemble block has these properties:
 
 `from`: Set a folder in your client extension project that houses the additional resources. When you build the client extension, these resources are included in the `.zip` file. You can use multiple `from` definitions in the `assemble` block, with each containing an `into` property.
 
@@ -102,7 +102,7 @@ If you must manually deploy the zip files, run
 ../gradlew clean build
 ```
 
-Then copy the archives from each project's `dist/` folder into the server's `${Liferay Home}/osgi/client-extensions/` folder.
+Then copy the archives from each project's `dist/` folder into the server's `[Liferay Home]/osgi/client-extensions/` folder.
 
 ## Additional Information
 

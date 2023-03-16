@@ -133,3 +133,7 @@ A new link appears in the Sign-In Portlet for signing in with OpenID Connect:
 1. This takes you to your provider's sign in page. Enter your credentials and log in.
 
 1. Upon successful authentication, you're redirected back to Liferay DXP in an authenticated state.
+
+```{note}
+Liferay, as a client, supports PKCE (Proof Key for Code Exchange) when using OpenID Connect. For more details, please refer to the [PKCE specification](https://www.rfc-editor.org/rfc/rfc7636). Note, it is up to the provider to check the values and approve/reject requests appropriately.
+```

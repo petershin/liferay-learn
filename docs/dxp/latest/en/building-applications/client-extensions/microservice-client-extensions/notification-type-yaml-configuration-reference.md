@@ -7,7 +7,7 @@ You can define a notification type client extension with a `client-extension.yam
 
 ## Usage Details
 
-This `client-extension.yaml` file defines notification type and a OAuth user agent:
+This `client-extension.yaml` file defines a notification type and an OAuth user agent:
 
 ```yaml
 zebra-notification-type:

@@ -19,9 +19,9 @@ To use OpenID Connect, you must first register it as a client in your provider. 
 
 1. During the creation process, you must supply an *authorized redirect URL* that can process the tokens sent from the provider. Liferay DXP's URL is
 
-    ```
-    https://[server.domain]/c/portal/login/openidconnect
-    ```
+   ```bash
+   https://[server.domain]/c/portal/login/openidconnect
+   ```
 
 1. The provider sends several pieces of information. Some of these, like the Discovery Endpoint, Authorization Endpoint, or Issuer URL are the same regardless of the client. The two pieces of information unique to your request are the `client_id` and the `client_secret`.
 
@@ -41,31 +41,31 @@ This interface is for those who want granular control over their client connecti
 
 1. Go to the Global Menu &rarr; Control Panel &rarr; Security &rarr; OAuth Client Administration. 
 
-1. There are two tabs. The first creates a client for an authorization server. The second is for authorization servers without a Well Known URI. You'll always use the first tab; you'll only use the second tab to create a "pseudo" well-known URI for a server that doesn't have one. 
+1. There are two tabs. The first creates a client for an authorization server. The second is for authorization servers without a Well Known URI. You'll always use the first tab; you'll only use the second tab to create a "pseudo" well-known URI for a server that doesn't have one.
 
-**If you do not have a well-known URI,** 
+**If you do not have a well-known URI,**
 
 1. Go to the second tab and click *Add* (![Add Button](../../../images/icon-add.png)).
 
-1. Enter the authorization server metadata from your provider. Be sure that the `issuer` field has a value in the JSON. This generates a "local" well-known URI when click Save. 
+1. Enter the authorization server metadata from your provider. Be sure that the `issuer` field has a value in the JSON. This generates a "local" well-known URI when click Save.
 
-1. Click *Save*. You're returned to the OAuth Client Administration page, where you can see the URI that was generated. Copy this URI to your clipboard; you'll use this URI in the next step. 
+1. Click *Save*. You're returned to the OAuth Client Administration page, where you can see the URI that was generated. Copy this URI to your clipboard; you'll use this URI in the next step.
 
 **If you have a well-known URI,**
 
-1. On the first tab, click *Add* (![Add Button](../../../images/icon-add.png)). 
+1. On the first tab, click *Add* (![Add Button](../../../images/icon-add.png)).
 
 1. Paste the authorization server's Well Known URI into the Well Known URI field. For example, Google's is https://accounts.google.com/.well-known/openid-configuration. If you generated one as above, paste it here.
 
-1. Most of the time, this is all you need to do. If you don't have a Well Known URI, use the fields below to configure the connection. When finished, click *Save*. 
+1. Most of the time, this is all you need to do. If you don't have a Well Known URI, use the fields below to configure the connection. When finished, click *Save*.
 
-The other fields on the form are for specific configuration generated with the provider. 
+The other fields on the form are for specific configuration generated with the provider.
 
-**OAuth Client Information:** Add client configuration information according to the [RFC-7591](https://www.rfc-editor.org/rfc/rfc7591.html) JSON format. Note that you may not need to add anything here if you used the Well Known URI. 
+**OAuth Client Information:** Add client configuration information according to the [RFC-7591](https://www.rfc-editor.org/rfc/rfc7591.html) JSON format. Note that you may not need to add anything here if you used the Well Known URI.
 
 **OAuth Client Default Authorization Request Parameters:** If you have Liferay applications that do not specify [authorization request parameters](https://www.iana.org/assignments/oauth-parameters) themselves, specify the default parameters in JSON format for using this OAuth client here. Custom parameter values must be a JSON array of strings.
 
-**OAuth Client Default Token Request Parameters:** If you have Liferay applications that do not specify [token request parameters](https://www.iana.org/assignments/oauth-parameters) themselves, specify the default parameters in JSON format for using this OAuth client here. Custom parameter values must be a JSON array of strings. 
+**OAuth Client Default Token Request Parameters:** If you have Liferay applications that do not specify [token request parameters](https://www.iana.org/assignments/oauth-parameters) themselves, specify the default parameters in JSON format for using this OAuth client here. Custom parameter values must be a JSON array of strings.
 
 ### Standard OpenID Connect Provider Connection
 
@@ -100,7 +100,7 @@ Once you've filled out the form, click *Save*, and you're ready to enable OpenID
 
 An exported configuration results in this System Settings configuration file:
 
-```
+```bash
 com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration-[name].config
 ```
 
@@ -116,7 +116,7 @@ where `[name]` is a descriptive, but unique name for example `provider1`.
 
 An exported configuration results in this System Settings configuration file:
 
-```
+```bash
 com.liferay.portal.security.sso.openid.connect.configuration.OpenIdConnectConfiguration.config
 ```
 

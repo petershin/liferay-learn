@@ -5,7 +5,7 @@ uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-You can override the default favicon of a page in Liferay using a theme favicon client extension. This can be done without changing any Liferay code. The client extension overrides the favicon used by the theme on the selected page. You'll use this [Sample Workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace) to build and deploy your client extension.
+With a theme favicon client extension, you can override the theme's favicon on the selected page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace) to build and deploy your client extension.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ Now you have the tools to deploy your first theme favicon client extension.
 
 ## Examine the Client Extension
 
-The theme favicon client extension is in the sample workspace's `client-extensions/sample-theme-favicon/` folder. It is defined in the `client-extension.yaml` file in this folder:
+The theme favicon client extension is in the sample workspace's `client-extensions/sample-theme-favicon/` folder. It is defined in the `client-extension.yaml` file:
 
 ```yaml
 sample-theme-favicon:
@@ -82,6 +82,7 @@ STARTED sample-theme-favicon_1.0.0
 
 ## Use the Client Extension on a Page
 
+<!-- Should we suggest doing this to the pages of a Site Template? -->
 Configure a page in Liferay to use your deployed client extension:
 
 1. On a page, click the _Edit_ icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.

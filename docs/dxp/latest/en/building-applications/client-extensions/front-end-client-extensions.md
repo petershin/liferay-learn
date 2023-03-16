@@ -69,7 +69,7 @@ Specify a CSS client extension in your `client-extension.yaml` file :
 type: globalCSS
 ```
 
-See [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using--css-client-extension.md) to get started.
+See [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) to get started.
 
 ## Theme JavaScript Client Extensions
 

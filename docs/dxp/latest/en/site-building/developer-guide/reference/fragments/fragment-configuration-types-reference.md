@@ -7,18 +7,79 @@ This reference lists the available configuration types for fragments. See [Addin
 
 These are the configurable fragment types available to implement:
 
+- `text`
+- `select`
 - `checkbox`
 - `colorPicker` (Available Liferay 7.4+)
-- `colorPalette`
-- `itemSelector` (Available Liferay 7.3+)
-- `select`
-- `text`
+- `length` (Available Liferay 7.4+ U44/GA44)
+- `itemSelector`
 - `videoSelector` (Available Liferay 7.4+)
-- `collectionSelector` (Available Liferay 7.3+)
+- `collectionSelector`
+- `colorPalette`
 
 ```{note}
 Configuration values inserted into the FreeMarker context honor the defined `datatype` value specified in the JSON file. For example, if the `dataType` is String, `configuration.[name-value]?is_string` is `true`.
 ```
+
+## Text Configuration
+
+This JSON configuration creates an input text field you can implement for cases where you must manually input a text option:
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "buttonText",
+                    "label": "Button Text",
+                    "description": "button-text",
+                    "type": "text",
+                    "typeOptions": {
+                        "placeholder": "Placeholder"
+                    },
+                    "dataType": "string",
+                    "defaultValue": "Go Somewhere"
+                }
+            ]
+        }
+    ]
+}
+```
+
+![The text configuration is useful when an input text option is necessary.](./fragment-configuration-types-reference/images/06.png)
+
+## Select Configuration
+
+This JSON configuration creates a selector you can implement for cases where you must select a predefined option:
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "numberOfFeatures",
+                    "label": "Number Of Features",
+                    "description": "number-of-features",
+                    "type": "select",
+                    "dataType": "int",
+                    "typeOptions": {
+                        "validValues": [
+                            {"value": "1"},
+                            {"value": "2"},
+                            {"value": "3"}
+                        ]
+                    },
+                    "defaultValue": "3"
+                }
+            ]
+        }
+    ]
+}
+```
+
+![The select configuration is useful when an option choice is necessary.](./fragment-configuration-types-reference/images/05.png)
 
 ## Checkbox Configuration
 
@@ -36,7 +97,6 @@ This JSON configuration creates a checkbox you can implement for cases where a b
                     "type": "checkbox",
                     "defaultValue": false
                 }
-                ...
             ]
         }
     ]
@@ -79,7 +139,6 @@ This JSON configuration creates a color picker field called `headingColor`:
                     "type": "colorPicker",
                     "defaultValue": "#FF0000"
                 }
-                ...
             ]
         }
     ]
@@ -102,11 +161,13 @@ When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is repla
 * If you chose a color from the current style book, it's replaced with a CSS variable for the linked token (for example, `var(--danger)`).
 * If the current theme does not have any token definitions to use (so a [color palette](#color-palette-configuration) is used instead), it is replaced with a CSS Color (for example, `rgb(255, 0, 0)`).
 
-## Color Palette Configuration
+## Length Configuration
 
-The color palette JSON configuration creates a color selector you can implement for cases where you must select a color. Unlike the [color picker configuration](#color-picker-configuration), it only provides options based on the Theme Colors configured in the currently used [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)'s color system.
+{bdg-secondary}`Available Liferay 7.4 U44 and GA44+`
 
-This configuration creates a color palette field called `textColor`:
+The `length` configuration type creates a field where you can enter a number and choose from predefined units or specify your own custom units for settings like width, margins, and padding. This provides greater flexibility for precise control over styling.
+
+This JSON sample shows a field using the `length` configuration type. It includes properties defining the name, label, and default value.
 
 ```json
 {
@@ -114,33 +175,20 @@ This configuration creates a color palette field called `textColor`:
         {
             "fields": [
                 {
-                    "name": "textColor",
-                    "label": "Text color",
-                    "type": "colorPalette",
-                    "dataType": "object",
-                    "defaultValue": {
-                        "cssClass": "white",
-                        "rgbValue": "rgb(255,255,255)"
-                    }
+                    "defaultValue": "300px",
+                    "label": "size",
+                    "name": "size",
+                    "type": "length"
                 }
-                ...
             ]
         }
     ]
 }
 ```
 
-The `colorPalette` type stores an object with two values: `cssClass` and `rgbValue`.
+In the user interface, you have the option to choose from the available units or specify a custom unit.
 
-For example, if you implement the snippet above, you can use it in the FreeMarker context like this:
-
-```html
-<h3 class="text-${configuration.textColor.cssClass}">Example</h3>
-```
-
-If you were to choose the color white, the `h3` tag heading would have the class `text-white'`.
-
-![The color palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/03.png)
+![A field labeled 'Size' from a custom fragment displaying a dropdown of available units. The field is using the 'length' configuration.](./fragment-configuration-types-reference/images/10.png)
 
 ## Item Selector Configuration
 
@@ -150,16 +198,20 @@ This configuration creates a selector for selecting one existing piece of conten
 
 ```json
 {
-"fieldSets": [{
-    "fields": [{
-        "label": "select-content",
-        "name": "itemSelector1",
-        "type": "itemSelector",
-        "typeOptions": {
-            "enableSelectTemplate": true
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "label": "select-content",
+                    "name": "itemSelector1",
+                    "type": "itemSelector",
+                    "typeOptions": {
+                        "enableSelectTemplate": true
+                    }
+                }
+            ]
         }
-    }]
-}]
+    ]
 }
 ```
 
@@ -167,17 +219,21 @@ You can provide a more advanced configuration that lets authors select only a sp
 
 ```json
 {
-"fieldSets": [{
-    "fields": [{
-        "label": "select-content",
-        "name": "itemSelector1",
-        "type": "itemSelector",
-        "typeOptions": {
-    "itemType" : "com.liferay.journal.model.JournalArticle",
-    "itemSubtype": "article-structure-key-15"
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "label": "select-content",
+                    "name": "itemSelector1",
+                    "type": "itemSelector",
+                    "typeOptions": {
+                        "itemType": "com.liferay.journal.model.JournalArticle",
+                        "itemSubtype": "article-structure-key-15"
+                    }
+                }
+            ]
         }
-    }]
-}]
+    ]
 }
 ```
 
@@ -185,18 +241,24 @@ This example specifies that only a document with the `img` or `jpg` MIME type th
 
 ```json
 {
-"fieldSets": [{
-    "fields": [{
-        "label": "select-content",
-        "name": "itemSelector1",
-        "type": "itemSelector",
-        "typeOptions": {
-    "itemType" : "com.liferay.portal.kernel.repository.model.FileEntry",
-    "itemSubtype": "metadataset-structure-key-2",
-    "mimeTypes": ["img/jpg"]
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "label": "select-content",
+          "name": "itemSelector1",
+          "type": "itemSelector",
+          "typeOptions": {
+            "itemType": "com.liferay.portal.kernel.repository.model.FileEntry",
+            "itemSubtype": "metadataset-structure-key-2",
+            "mimeTypes": [
+              "img/jpg"
+            ]
+          }
         }
-    }]
-}]
+      ]
+    }
+  ]
 }
 ```
 
@@ -204,22 +266,26 @@ This example specifies that only blog entries can be selected:
 
 ```json
 {
-"fieldSets": [{
-    "fields": [{
-        "label": "select-content",
-        "name": "itemSelector1",
-        "type": "itemSelector",
-        "typeOptions": {
-    "itemType" : "com.liferay.blogs.model.BlogsEntry",
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "label": "select-content",
+                    "name": "itemSelector1",
+                    "type": "itemSelector",
+                    "typeOptions": {
+                        "itemType": "com.liferay.blogs.model.BlogsEntry"
+                    }
+                }
+            ]
         }
-    }]
-}]
+    ]
 }
 ```
 
 You can then render the content in your fragment with this HTML snippet for the web content article:
 
-```markup
+```html
 <div class="fragment_name">
   [#if configuration.itemSelector1.content??]
        ${configuration.itemSelector1.content}
@@ -230,79 +296,17 @@ You can then render the content in your fragment with this HTML snippet for the 
 If you need access to specific portions of the content, you can also access the Java object in your fragment under the key `[name-of-field]Object` (`itemSelector1Object` 
 in the example below). This example renders the title, description, and body of the web content article:
 
-```markup
+```html
 <div class="fragment_name">
   [#if configuration.itemSelector1.content??]
-    ${itemSelector1Object.getTitle()}
-    ${itemSelector1Object.getDescription()}
-    ${itemSelector1Object.getContent()}
+      ${itemSelector1Object.getTitle()}
+      ${itemSelector1Object.getDescription()}
+      ${itemSelector1Object.getContent()}
   [/#if]
 </div>
 ```
 
 ![The item selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/04.png)
-
-## Select Configuration
-
-This JSON configuration creates a selector you can implement for cases where you must select a predefined option:
-
-```json
-{
-    "fieldSets": [
-        {
-            "fields": [
-                {
-                    "name": "numberOfFeatures",
-                    "label": "Number Of Features",
-                    "description": "number-of-features",
-                    "type": "select",
-                    "dataType": "int",
-                    "typeOptions": {
-                        "validValues": [
-                            {"value": "1"},
-                            {"value": "2"},
-                            {"value": "3"}
-                        ]
-                    },
-                    "defaultValue": "3"
-                }
-                ...
-            ]
-        }
-    ]
-}
-```
-
-![The select configuration is useful when an option choice is necessary.](./fragment-configuration-types-reference/images/05.png)
-
-## Text Configuration
-
-This JSON configuration creates an input text field you can implement for cases where you must manually input a text option:
-
-```json
-{
-    "fieldSets": [
-        {
-            "fields": [
-                {
-                    "name": "buttonText",
-                    "label": "Button Text",
-                    "description": "button-text",
-                    "type": "text",
-                    "typeOptions": {
-                        "placeholder": "Placeholder"
-                    },
-                    "dataType": "string",
-                    "defaultValue": "Go Somewhere"
-                }
-                ...
-            ]
-        }
-    ]
-}
-```
-
-![The text configuration is useful when an input text option is necessary.](./fragment-configuration-types-reference/images/06.png)
 
 ## Video Selector
 
@@ -312,17 +316,17 @@ Using the `videoSelector` type, you can create a video selector to incorporate a
 
 ```json
 {
-  "fieldSets": [
-    {
-      "fields": [
+    "fieldSets": [
         {
-          "label": "My Video Selector",
-          "name": "myVideoConfig",
-          "type": "videoSelector"
+            "fields": [
+                {
+                    "label": "My Video Selector",
+                    "name": "myVideoConfig",
+                    "type": "videoSelector"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
 ```
 
@@ -408,16 +412,16 @@ To reference this collection in the HTML, use the collection `name` in the JSON 
 
 ```html
 <div class="fragment_310">
- <h1>
-  List of Items:
- </h1>
-  <ul>
-  [#if collectionObjectList??]
-   [#list collectionObjectList as item]
-    <li>${item.title}</li>
-   [/#list]
-  [/#if]
-  </ul>
+    <h1>
+        List of Items:
+    </h1>
+    <ul>
+        [#if collectionObjectList??]
+        [#list collectionObjectList as item]
+        <li>${item.title}</li>
+        [/#list]
+        [/#if]
+    </ul>
 </div>
 ```
 
@@ -426,21 +430,21 @@ To reference this collection in the HTML, use the collection `name` in the JSON 
 You can also filter the collection selector using `itemType` in the `collectionSelector` configuration. For example, if you have different collections including web content and blogs, you can restrict the collection selector to show only blog collections. This JSON sample illustrates this configuration:
 
 ```json
-{ 
- "fieldSets": [   
-  {            
-   "label": "Collection",            
-   "fields": [                
-    {                    
-     "name": "collection",                    
-     "type": "collectionSelector",
-     "typeOptions": {
-      "itemType": "com.liferay.blogs.model.BlogsEntry"
-               }
-    }            
-   ]        
-  } 
- ]
+{
+    "fieldSets": [
+        {
+            "label": "Collection",
+            "fields": [
+                {
+                    "name": "collection",
+                    "type": "collectionSelector",
+                    "typeOptions": {
+                        "itemType": "com.liferay.blogs.model.BlogsEntry"
+                    }
+                }
+            ]
+        }
+    ]
 }
 ```
 
@@ -449,8 +453,47 @@ Using this sample configuration, collections including both web content and blog
 ![A collection including web content and blog entries corresponds to the asset type.](./fragment-configuration-types-reference/images/09.png)
 
 ```{tip}
-In addition to the `itemTime`, you can specify the `itemSubtype` in the configuration. The `itemSubtype` corresponds to the asset `classPK`.
+In addition to the `itemType`, you can specify the `itemSubtype` in the configuration. The `itemSubtype` corresponds to the asset `classPK`.
 ```
+
+## Color Palette Configuration
+
+The color palette JSON configuration creates a color selector you can implement for cases where you must select a color. Unlike the [color picker configuration](#color-picker-configuration), it only provides options based on the Theme Colors configured in the currently used [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)'s color system.
+
+This configuration creates a color palette field called `textColor`:
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "name": "textColor",
+                    "label": "Text color",
+                    "type": "colorPalette",
+                    "dataType": "object",
+                    "defaultValue": {
+                        "cssClass": "white",
+                        "rgbValue": "rgb(255,255,255)"
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+The `colorPalette` type stores an object with two values: `cssClass` and `rgbValue`.
+
+For example, if you implement the snippet above, you can use it in the FreeMarker context like this:
+
+```html
+<h3 class="text-${configuration.textColor.cssClass}">Example</h3>
+```
+
+If you were to choose the color white, the `h3` tag heading would have the class `text-white'`.
+
+![The color palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/03.png)
 
 ## Additional Information
 

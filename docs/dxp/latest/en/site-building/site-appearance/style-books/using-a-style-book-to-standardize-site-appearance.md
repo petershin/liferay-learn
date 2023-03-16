@@ -67,7 +67,7 @@ Use the two drop-down menus at the top of the screen to select what components t
 
 Previewing a Collection of Page Fragments shows all Fragments in the Collection. The preview displays Fragments with multiple (selectable) configuration options with an instance of each option, so that you can preview your Style Book with any of them.
 
-![If you are previewing the Style Book's effect on Page Fragments, then you can preview any configuration of the Fragments from the chosen Collection.](./using-a-style-book-to-standardize-site-appearance/images/04.gif)
+![If you are previewing the Style Book's effect on Page Fragments, then you can preview any configuration of the Fragments from the chosen Collection.](./using-a-style-book-to-standardize-site-appearance/images/04.png)
 
 ### Customizing Your Style Book's Colors
 
@@ -107,6 +107,10 @@ You can place the `Style Guide Sample` widget on your pages to help test out the
 
 The categories listed here are available as options for the Classic theme.
 
+```{tip}
+When modifying options not related to colors, like width, margins, and padding, you can choose from a set of predefined units or specify a custom unit. This flexibility allows for more precise control over the styling. Some options include pixels(PX), percentages(%), em width(EM), and root em(REM).
+```
+
 ### Color System
 
 The colors used for fonts and visual elements defined in your theme are customizable in the Color System category. Generally, this means you can modify the body, background, and text colors on your pages.
@@ -121,11 +125,15 @@ Changing the colors for alert-related elements (such as *Success* or *Warning*) 
 
 Adjust the spacing between the main elements on your pages with the options in the Spacing category. When you configure a Page Fragment using the corresponding Style Book, these values are given as options for the Fragment's margin and padding sizes.
 
+![Change the colors used for displays or UI elements with options under the Color System category.](./using-a-style-book-to-standardize-site-appearance/images/08.png)
+
+```{tip}
+When modifying tokens not related to colors, like width, margins, and padding, you can choose from a set of predefined units or specify a custom unit. This flexibility allows for more precise control over the styling. Some options include pixels(PX), percentages(%), em width(EM), and root em(REM).
+```
+
 ### General
 
 These options modify color and spacing on elements that appear on every page of your Site. For example, the *Body Background* option changes the background color of all pages.
-
-![Use the Body Background option in the General category to customize the color of the background of your Site pages.](./using-a-style-book-to-standardize-site-appearance/images/08.png)
 
 ### Layout
 

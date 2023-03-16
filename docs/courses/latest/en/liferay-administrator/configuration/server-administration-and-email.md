@@ -5,9 +5,7 @@ uuid: 453b538b-4220-43d6-9d47-05be5f8527d7
 
 You can manage and monitor your Liferay instance from the server administration console. For example, you can view the current system or portal properties or configure logging and log levels. This is also where you can configure the email server for the whole system. See [Using the Server Administration Panel](https://learn.liferay.com/dxp/latest/en/system-administration/using-the-server-administration-panel.html) to learn more.
 
-Configure a mail server that is used for email notifications (e.g. user registration, password management, etc.). Delectable Bonsai uses Google for their email service. Follow the steps below for configuration.
-
-<!-- I think I said we can't use Google for this. Maybe use something like FakeSMTP? http://nilhcem.com/FakeSMTP/ -Rich -->
+Configure a mail server that is used for email notifications (e.g. user registration, password management, etc.). Follow the steps below to configure the mail server for Delectable Bonsai. 
 
 ### Configuring Mail in LXC
 
@@ -19,24 +17,20 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
 
 1. Set the following configuration.
 
-   * Incoming POP Server: `pop.gmail.com`.
+   * Incoming POP Server: `localhost`.
    * Incoming Port: `110`.
    * Use a Secure Network Connection: checked.
    * User Name: `support@delectablebonsai.com`.
    * Password: `learn`.
-   * Outgoing SMTP Server: smtp.gmail.com
-   * Outgoing Port: 465
-   * Use a Secure Network Connection: checked
+   * Outgoing SMTP Server: `localhost`.
+   * Outgoing Port: `2525`.
+   * Use a Secure Network Connection: checked.
    * User Name: `support@delectablebonsai.com`.
    * Password: `learn`.
 
    ![Input the settings for the mail server.](./server-administration-and-email/images/01.png)
 
    Click _Save_.
-
-```{note}
-The settings above are for demonstration purposes only. For your business, input your relevant email provider values and credentials.
-```
 
 Your Liferay environment is now configured with a mail server. You can further customize mail to configure different email senders and messages for each instance. See [Instance Email Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/email-settings.html) to learn more.
 

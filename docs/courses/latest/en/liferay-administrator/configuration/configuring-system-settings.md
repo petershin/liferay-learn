@@ -33,7 +33,7 @@ Follow the [ClamAV Documentation](https://docs.clamav.net/) to install and run C
 
 1. Click _Update_. Your Liferay environment now scans uploaded files with ClamAV. To see how this works, see the relevant concepts below. 
 
-The next step is to [configure instance settings](./configuring-instance-settings.md).
+The next step is [configuring virtual instances](./configuring-virtual-instances.md).
 
 ## Relevant Concepts
 

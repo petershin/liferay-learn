@@ -3,11 +3,9 @@ uuid: f6380d67-6784-46a4-8723-46fcc24177a5
 ---
 # Configuring Virtual Instances
 
-You may have a business use case where you need another Liferay environment with its own set of sites, users, and organizations. Rather than spin up a brand new server, you can create a virtual instance.
+You may have a business use case where you need another Liferay environment with its own set of sites, users, and organizations. Rather than spinning up a brand new server, you can create a virtual instance.
 
 For example, Delectable Bonsai also sells maple syrup as a white label product. Other companies purchase the syrup and add their own branding to it. Delectable Bonsai runs a virtual instance to host their separate, white label side of the business.
-
-<!-- So we're creating more than two virtual instances? We had only defined two when we did the brainstorm. Or is this the same as the B2B site? -Rich -->
 
 ## Virtual Instances in LXC
 
@@ -26,7 +24,9 @@ Contact your Liferay Cloud support person for setting up virtual instances.
    * Active: toggle on
    * Virtual Instance Initializer: select _Blank Site_.
 
-<!-- Maybe we need a placeholder here; as we create the web content modules, we may be able to select a virtual instance importer that we created. Then we'll have something better than a blank one. --Rich -->
+   ```{note}
+   A site initializer, such as the [Minium Demo](https://learn.liferay.com/en/w/commerce/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store) can be selected to jump start the instance.
+   ```
 
    ![Enter the virtual instance information.](./configuring-virtual-instances/images/01.png)
 
@@ -36,7 +36,7 @@ Contact your Liferay Cloud support person for setting up virtual instances.
 It is up to you to configure the domain name and its corresponding server address.
 ```
 
-The next step is configuring [file storage](./using-file-storage.md).
+The next step is to [configure instance settings](./configuring-instance-settings.md).
 
 ## Relevant Concepts
 

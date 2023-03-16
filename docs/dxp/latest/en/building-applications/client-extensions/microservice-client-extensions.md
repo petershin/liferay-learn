@@ -17,9 +17,9 @@ microservice-client-extensions/notification-type-yaml-configuration-reference.md
 
 {bdg-secondary}`7.4 U45+/GA45+`
 
-Define microservice client extensions to run your own code in response to events in your Liferay instance. How you implement the code is up to you: use the patterns and technologies you like. Microservice client extensions are hosted outside of Liferay, and are triggered by cues from Liferay itself.
+Define microservice client extensions to run your own code in response to events in your Liferay instance. How you implement the code is up to you: use the patterns and technologies you like. Microservice client extensions are hosted outside of Liferay and are triggered by cues from Liferay itself.
 
-Microservice client extensions require pre-configured authentication profiles to properly handle requests and call protected Liferay APIs. You can add authentication profiles by including them as client extensions within the same project (e.g., [OAuth user agent client extensions](./configuration-client-extensions.md#oauth-user-agent-client-extensions)).
+Microservice client extensions require pre-configured authentication profiles to handle requests properly and call protected Liferay APIs. You can add authentication profiles by including them as client extensions within the same project (e.g., [OAuth user agent client extensions](./configuration-client-extensions.md#oauth-user-agent-client-extensions)).
 
 Microservice client extensions are hosted automatically when deployed within Liferay Experience Cloud. If self-hosting a Liferay instance, you must host the microservices that these client extensions use separately.
 
@@ -51,7 +51,7 @@ type: workflowAction
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-Notification type client extensions define external notification handlers that bind to any [notification events](../../process-automation/notifications.md) in Liferay. Your microservice's handler code is executed when the notification event occurs.
+Notification type client extensions define external notification handlers that bind to [notification events](../../process-automation/notifications.md) in Liferay. Your microservice's handler code is executed when the notification event occurs.
 
 Use the `type` value in your `client-extension.yaml` file to specify a notification type client extension:
 

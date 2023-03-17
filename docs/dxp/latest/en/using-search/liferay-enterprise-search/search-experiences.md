@@ -1,13 +1,6 @@
 ---
 toc:
-  - ./search-experiences/understanding-search-blueprints.md
-  - ./search-experiences/creating-and-managing-search-blueprints.md
-  - ./search-experiences/using-a-search-blueprint-on-a-search-page.md
-  - ./search-experiences/personalizing-the-search-experience.md
-  - ./search-experiences/search-blueprints-elements-reference.md
-  - ./search-experiences/search-blueprints-configuration-reference.md
-  - ./search-experiences/creating-and-managing-elements.md
-  - ./search-experiences/sorting-results-in-a-search-blueprint.md
+  - ./search-experiences/search-blueprints.md
   - ./search-experiences/semantic-search.md
 uuid: 4955593b-f8dd-4b87-bffa-6cb10c97e9e2
 ---
@@ -19,14 +12,7 @@ uuid: 4955593b-f8dd-4b87-bffa-6cb10c97e9e2
 ```{toctree}
 :maxdepth: 1
 
-search-experiences/understanding-search-blueprints.md
-search-experiences/creating-and-managing-search-blueprints.md
-search-experiences/using-a-search-blueprint-on-a-search-page.md
-search-experiences/personalizing-the-search-experience.md
-search-experiences/search-blueprints-elements-reference.md
-search-experiences/search-blueprints-configuration-reference.md
-search-experiences/creating-and-managing-elements.md
-search-experiences/sorting-results-in-a-search-blueprint.md
+search-experiences/search-blueprints.md
 search-experiences/semantic-search.md
 ```
 
@@ -38,19 +24,14 @@ The Liferay Enterprise Search Experiences app includes a suite of features grant
 
 ## Search Blueprints
 
-Search Blueprints is the first feature in the Search Experiences application. To learn about it's capabilities and fundamental components, see
+Search Blueprints is the first feature in the Search Experiences application.
 
-- [Understanding Blueprints](./search-experiences/understanding-search-blueprints.md)
-- [Creating and Managing Search Blueprints](./search-experiences/creating-and-managing-search-blueprints.md)
-- [Using a Search Blueprint on a Search Page](./search-experiences/using-a-search-blueprint-on-a-search-page.md)
-- [Personalizing the Search Experience](./search-experiences/personalizing-the-search-experience.md)
-- [Search blueprints Elements Reference](./search-experiences/search-blueprints-elements-reference.md)
-- [Search Blueprints Configuration Reference](./search-experiences/search-blueprints-configuration-reference.md)
-- [Creating and Managing Elements](./search-experiences/creating-and-managing-elements.md)
-  - [Creating Elements](./search-experiences/creating-and-managing-elements/creating-elements.md)
-  - [Managing Elements](./search-experiences/creating-and-managing-elements/managing-elements.md)
-  - [Predefined Element Variables Reference](./search-experiences/creating-and-managing-elements/predefined-element-variables-reference.md)
-- [Sorting Results in a Search Blueprint](./search-experiences/sorting-results-in-a-search-blueprint.md)
+- [Search Blueprints](./search-experiences/search-blueprints.md)
+
+## Semantic Search
+
+Semantic search parses index content and users' natural language search phrases with a machine learning model, so that results better reflect the intent of their search.
+
 - [Semantic Search](./search-experiences/semantic-search.md)
 
 ## Getting Liferay Search Experiences

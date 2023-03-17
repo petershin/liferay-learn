@@ -1,5 +1,4 @@
 ---
-toc:
 uuid: f12d1fae-61aa-4d42-880c-b0d718838530
 ---
 # Importing and Exporting Users
@@ -10,6 +9,8 @@ Once the LDAP server is connected to your Liferay environment, it is time to imp
 
 Contact your Liferay Cloud support person about importing from an LDAP server.
 
+<!-- Again, anything in Instance Settings is available in LXC. I don't think we need this section. -Rich -->
+
 ### Importing LDAP Users in LXC-SM or On-Premises
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
@@ -18,19 +19,21 @@ Contact your Liferay Cloud support person about importing from an LDAP server.
 
 1. In the left navigation, click _Import_. 
 
-1. Check the box for enable import. Click _Save_. Note, the default import interval is set to 10 minutes. Liferay will perform a bulk import at this interval. 
+1. Check the box for _Enable Import_. Click _Save_. Note, the default import interval is set to 10 minutes. Liferay performs a bulk import at this interval. 
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. The users from the LDAP server have been imported.
 
    ![LDAP users have been imported.](./importing-users/images/01.png)
 
 ```{note}
-If you choose not to import all the LDAP users at once (i.e. leave enable import box unchecked), users are imported individually upon their first login.
+If you choose not to import all the LDAP users at once (i.e. leave enable import box unchecked), users are imported individually when they log in.
 ```
 
 ### Exporting LDAP Users in LXC
 
 Contact your Liferay Cloud support person about exporting from an LDAP server.
+
+<!-- Don't need this section. -Rich -->
 
 ### Exporting LDAP Users in LXC-SM or On-Premises
 
@@ -40,15 +43,16 @@ Contact your Liferay Cloud support person about exporting from an LDAP server.
 
 1. In the left navigation, click _Export_. 
 
-1. Check the box for enable export and enable group export. Click _Save_. 
+1. Check the boxes for _Enable Export_ and _Enable Group Export_. Click _Save_. 
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. 
 
-1. Edit and save a user. The Liferay user is now added to the LDAP server. Note, make sure the export mapping fields are set correctly in the export section of the LDAP server configuration.
+1. Edit and save a user. The Liferay user is now added to the LDAP server. Make sure the export mapping fields are set correctly in the export section of the LDAP server configuration.
 
 The next step is [understanding GDPR](./understanding-gdpr.md).
 
 ## Relevant Concepts
 
-- [Configuring User Import and Export](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/configuring-user-import-and-export.html)
-- [LDAP Reference Configuration](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/ldap-configuration-reference.html)
+[Configuring User Import and Export](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/configuring-user-import-and-export.html)
+
+[LDAP Reference Configuration](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/ldap-configuration-reference.html)

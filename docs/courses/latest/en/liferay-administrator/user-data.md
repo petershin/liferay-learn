@@ -1,26 +1,18 @@
 ---
 toc:
-- ./user-data/setting-up-liferay-with-ldap.md
+- ./user-data/connecting-to-ldap.md
 - ./user-data/importing-and-exporting-users.md
 - ./user-data/understanding-gdpr.md
 uuid: 3aaf234d-a5c0-4c16-a1a2-350e5d13053d
 ---
 # User Data
 
-```{toctree}
-:maxdepth: 3
+Businesses often manage user and organizational data separately on an LDAP server. Liferay supports integration with LDAP. You can connect Liferay to the LDAP server and import users.
 
-user-data/setting-up-liferay-with-ldap.md
-user-data/importing-and-exporting-users.md
-user-data/understanding-gdpr.md
-```
+As users come and go, you can use Liferay's user data management tools to help you manage your customers' and employees' personal data. Here, you'll learn how to 
 
-Businesses often manage user and organizational data separately on an LDAP server. Liferay supports integration with LDAP. Simply connect Liferay to the LDAP server and begin importing users.
+* Configure an LDAP directory with Liferay
+* Import and export from an LDAP directory
+* Use Liferay's GDPR tools.
 
-As users come and go, use the user data management tools to help you care for the personal data of both your customers and employees. By the end of this module, you will have:
-
-* Configured an LDAP directory with Liferay
-* Learned importing and exporting from an LDAP
-* Understood the GDPR tools in Liferay.
-
-The first step is [setting up Liferay with LDAP](./user-data/setting-up-liferay-with-ldap.md)
+The first step is [connecting Liferay to LDAP](./user-data/connecting-to-ldap.md).

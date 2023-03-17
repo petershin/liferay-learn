@@ -1,16 +1,19 @@
 ---
-toc:
 uuid: 9540baaf-7e04-40a2-9a4a-1409d3526092
 ---
-# Setting up Liferay with LDAP
+# Connecting to LDAP
 
-An LDAP server can be configured at the system level or instance level in Liferay. Choose the scope based on your needs. Note, when configuring at the system scope, you must specify each instance ID. See [Connecting to an LDAP Directory](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html)
+An LDAP server can be configured at the system level or instance level in Liferay. Choose the scope based on your needs. Note, when configuring at the system scope, you must specify each instance ID. See [Connecting to an LDAP Directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory).
 
-Delectable Bonsai needs to bring in user data from a company they just acquired. Connect to the company's LDAP server with the steps below.
+<!-- As discussed, let's link to the scope definition stuff. -Rich -->
+
+Delectable Bonsai must import user data from a company they just acquired. Connect to the company's LDAP server with the steps below.
 
 ### Connecting an LDAP Server in LXC
 
-Contact your Liferay Cloud support person about connecting a LDAP server.
+Contact Liferay Cloud support about connecting a LDAP server.
+
+<!-- You can actually access instance settings like you do below in LXC. I don't think we need this section. -Rich -->
 
 ### Connecting an LDAP Server in LXC-SM or On-Premises
 
@@ -20,11 +23,11 @@ Contact your Liferay Cloud support person about connecting a LDAP server.
 
 1. In the left navigation, click _Servers_. 
 
-1. Click the _Add_ button.
+1. Click _Add_.
 
 1. In the new page, fill in the LDAP connection information.
 
-   * Server Name: `Almight Syrup`
+   * Server Name: `Almighty Syrup`
    * Base Provider URL: `ldap://127.0.0.1:389`
    * Base DN: `dc=almightysyrup,dc=com`
    * Principal: `cn=admin,dc=almightysyrup,dc=com`
@@ -32,7 +35,7 @@ Contact your Liferay Cloud support person about connecting a LDAP server.
 
    ![Fill in the connection information.](./setting-up-liferay-with-ldap/images/01.png)
 
-   Click _Test LDAP Connection_. A new popup window shows a message that Liferay has successfully connected to the LDAP server. Click the _X_ and close the window.
+   Click _Test LDAP Connection_. A new popup window shows that Liferay has successfully connected to the LDAP server. Click the _X_ and close the window.
 
 1. Next, fill in the LDAP user information section. Make sure that required fields such as name and email are mapped correctly. Click _Test LDAP Users_ to preview the mapping of user fields.
 
@@ -46,4 +49,4 @@ The next step is [importing and exporting users](./importing-and-exporting-users
 
 ## Relevant Concepts
 
-- [Connecting to an LDAP Directory](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html)
+[Connecting to an LDAP Directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)

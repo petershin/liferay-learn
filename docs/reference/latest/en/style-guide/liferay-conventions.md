@@ -144,7 +144,7 @@ product.
 {bdg-secondary}`7.4 U15+ and GA15+`
 ```
 
-For further information, please see the [Sphinx Design documentation](../https://sphinx-design.readthedocs.io/en/latest/badges_buttons.html%22) on badges. Note: badge syntax may change in the near future with the migration from Sphinx to Liferay. 
+For further information, please see the [Sphinx Design documentation](https://sphinx-design.readthedocs.io/en/latest/badges_buttons.html%22) on badges. Note: badge syntax may change in the near future with the migration from Sphinx to Liferay. 
 
 ## Numbered Lists
 
@@ -230,11 +230,11 @@ The admonitions that we use most frequently are *Tip*, *Warning*, *Note*, and *I
 
 **Usage**
 
-```
+````
 ```{tip}
 
 This is a tip. This is a link in a [tip](https://www.liferay.com). Markdown formatting is supported in an admonition.
-
 ```
+````
 
 To learn more about admonition syntax see the [MyST Syntax Guide](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html).

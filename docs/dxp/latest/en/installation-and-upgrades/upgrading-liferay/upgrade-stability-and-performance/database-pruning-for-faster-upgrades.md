@@ -129,6 +129,10 @@ Check these object types:
 
 To see an example of removing intermediate object versions, read [Example: Removing Intermediate Journal Article Versions](./example-removing-intermediate-journal-article-versions.md).
 
+## Published Staged Changes and Turn Staging Off
+
+If you have local/remote staging enabled and have content or data saved on the staged site, [publish](../../../site-building/publishing-tools/staging/configuring-remote-live-staging.md) to the live site. If you skip this step, you must run a full publish (or manually publish changes) after the upgrade, since the system won’t know what content changed since the last publishing date. Once you've done your final publish, turn staging off before upgrading.
+
 Next, test your instance with its pruned database.
 
 ## Testing with a Copy of the Pruned Database

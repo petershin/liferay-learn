@@ -28,8 +28,8 @@ To add a predefined variable to the element in the Element Source editor, place 
 | | <a href="#user" id="user">**USER**</a> | |
 | Active Segment Entry IDs | Number: Return the user's segment IDs | `${user.active_segment_entry_ids}` |
 | Age | Number: Return the user's age in number of years | `${user.age}` |
-| {bdg-secondary}`7.4 U41+` Asset Category Ids | Number: Return the IDs of the user's categories | `${user.asset_category_ids}` |
-| {bdg-secondary}`7.4 U41+` Asset Tag Names | Text: Return the user's tags | `${user.asset_tag_names}` |
+| Asset Category Ids {bdg-secondary}`7.4 U41+` | Number: Return the IDs of the user's categories | `${user.asset_category_ids}` |
+| Asset Tag Names {bdg-secondary}`7.4 U41+` | Text: Return the user's tags | `${user.asset_tag_names}` |
 | Birthday | Date: Return the user's birth date | `${user.birthday}` |
 | Create Date | Date: Return the date when the user account was created in Liferay | `${user.create_date}` |
 | Current Site Role IDs | Number: Return the user's site role IDs | `${user.current_site_role_ids}` |
@@ -46,10 +46,10 @@ To add a predefined variable to the element in the Element Source editor, place 
 | Job Title | Text: Return the user's job title | `${user.job_title}` |
 | Language ID | Text: Return the user's language code (e.g., `en_US`) | `${user.language_id}` |
 | Last Name | Text: Return the user's last name | `${user.last_name}` |
-| {bdg-secondary}`7.4 U41+` Parent Asset Category Ids | Number: Return the IDs of all the parent categories of the user's categories | `${user.parent_asset_category_ids}` |
+| Parent Asset Category Ids {bdg-secondary}`7.4 U41+` | Number: Return the IDs of all the parent categories of the user's categories | `${user.parent_asset_category_ids}` |
 | Regular Role IDs | Number: Return the role IDs for the user's regular roles | `${user.regular_role_ids}` |
 | User group IDs | Number: Return the IDs of the user groups that the user is part of | `${user.user_group_ids}` |
-| | <a href="#conditional-elements" id="conditional-elements">**CONDITIONAL ELEMENTS\***</a> | |
+| | <a href="#conditional-elements" id="conditional-elements">**CONDITIONAL ELEMENTS**\*</a> | |
 | IP Stack City | Text: Return the city where the searching IP address originates | `${ipstack.city}`
 | IP Stack Continent Code | Text: Return the continent code (e.g., NA for North America) where the searching IP address originates | `${ipstack.continent_code}`
 | IP Stack Continent Name | Text: Return the continent name | `${ipstack.continent_name}`

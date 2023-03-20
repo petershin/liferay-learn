@@ -3,7 +3,7 @@ uuid: b55694af-20da-4436-a2ed-429b6bfb9c59
 ---
 # Setting Up the GitHub Repository
 
-The first task to do after you've had your Liferay Cloud account provisioned is to set up the project's Git repository so you can deploy configurations as an administrator. Marcus must follow this procedure as the Delectable Bonsai project's administrator.
+Your first task after your Liferay Cloud account is provisioned is to set up the project's Git repository so you can deploy configurations as an administrator. Marcus must follow this procedure as the Delectable Bonsai project's administrator.
 
 Set up the repository and complete your first push to ensure it's working.
 
@@ -25,7 +25,7 @@ Download the latest version of the [Windows installer](https://cdn.liferay.cloud
 
 ## Fork and Clone the GitHub Repository
 
-First, you must set up Git and creating your own fork of the GitHub repository. For the Delectable Bonsai project, Marcus must follow all of these steps for the initial setup, but Kyle only needs to do the last two steps (clone and adding a remote repository) as a contributor.
+First, you must set up Git and create your own fork of the GitHub repository. For the Delectable Bonsai project, Marcus must follow all of these steps for the initial setup, but Kyle only needs to do the last two steps (clone and adding a remote repository) as a contributor.
 
 You'll transfer your Liferay Cloud project to your fork for new builds.
 
@@ -33,9 +33,9 @@ You'll transfer your Liferay Cloud project to your fork for new builds.
 
 1. Open your provisioned repository's page on GitHub.
 
-    ```{tip}
-    If you don't have the link to your project's repository, navigate to the *Builds* page in the Liferay Cloud console, and click the link under *Branch* for the most recent build. This link points to a specific branch in the provisioned repository.
-    ```
+   ```{tip}
+   If you don't have the link to your project's repository, navigate to the *Builds* page in the Liferay Cloud console, and click the link under *Branch* for the most recent build. This link points to a specific branch in the provisioned repository.
+   ```
 
 1. [Create your own fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the repository.
 
@@ -43,11 +43,11 @@ You'll transfer your Liferay Cloud project to your fork for new builds.
 
 1. In your command prompt (with Git installed), add your fork as an (upstream) [remote repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork).
 
-Now you have a forked repository that you own that you own with the Liferay Cloud project structure, locally and on GitHub.
+Now you have a forked repository that you own with the Liferay Cloud project structure, locally and on GitHub.
 
 ## Configure the Webhook
 
-Next, configure a webhook to allow Liferay Cloud to access your repository.
+Next, configure a webhook so Liferay Cloud can access your repository.
 
 1. On the GitHub website, go to your repository’s Settings page and click *Webhooks*.
 
@@ -85,14 +85,14 @@ Finally, configure the CI service in your `infra` environment to work with the p
 
 1. Select the CI service.
 
-1. Under the *Environment Variables* tab, add the values for these environment variables:
+1. Under the Environment Variables tab, add the values for these environment variables:
 
     | **Name** | **Value** |
     | :--- | :--- |
     | `LCP_CI_SCM_PROVIDER` | `github` |
-    | `LCP_CI_SCM_REPOSITORY_NAME` | <Your repository's name> |
-    | `LCP_CI_SCM_REPOSITORY_OWNER` | <Your repository owner's account> |
-    | `LCP_CI_SCM_TOKEN` | <Personal access token> |
+    | `LCP_CI_SCM_REPOSITORY_NAME` | [Your repository's name] |
+    | `LCP_CI_SCM_REPOSITORY_OWNER` | [Your repository owner's account] |
+    | `LCP_CI_SCM_TOKEN` | [Personal access token] |
 
     Use a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) that has every permission checked under the *repo* and *admin:repo_hook* categories.
 
@@ -101,6 +101,8 @@ Once the CI service restarts, any pushes or pull requests to your private reposi
 Next, you'll use the repository to complete your first push and deployment.
 
 ## Related Concepts
+
+<!-- Please fix the links below to point to their new locations. Thanks! -Rich --> 
 
 * [Configuring Your GitHub Repository](https://learn.liferay.com/liferay-cloud/latest/en/getting-started/configuring-your-github-repository.html)
 * [Command-Line Tool](https://learn.liferay.com/liferay-cloud/latest/en/reference/command-line-tool.html)

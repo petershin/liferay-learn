@@ -3,6 +3,8 @@ uuid: c1dd2bde-e995-4b03-88e1-8e15adeb7b17
 ---
 # Setting Up Clustering for the Liferay Service
 
+<!-- As discussed, please put an admonition here that explains the extra nodes have to be provisioned first. -Rich --> 
+
 Because Delectable Bonsai's website draws millions of views, it must be clustered to handle the traffic. Here, you'll learn how to configure a three node cluster of the production environment.
 
 ## Set the Clustering Properties in LCP.json
@@ -13,29 +15,29 @@ Enable clustering and set the scale value in your Liferay service's configuratio
 
 1. Add the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` environment variable if it is not present. Set the value to `true`.
 
-    ```json
+   ```json
     {
         "env": {
             "LCP_PROJECT_LIFERAY_CLUSTER_ENABLED": "true"
         }
     }
-    ```
+   ```
 
-1. Add the `scale` property with a value of `1`.
+1. Add the `scale` property with a value of `1`. This sets the number of nodes, which you'll update later. 
 
-    ```json
+   ```json
     {
         "kind": "Deployment",
         "id": "liferay",
         "scale": 1
     }
-    ```
+   ```
 
 1. Run the Gradle task to create the custom Dockerfile for your Liferay service.
 
-    ```bash
-    ./gradlew clean createDockerfile deploy
-    ```
+   ```bash
+   ./gradlew clean createDockerfile deploy
+   ```
 
 1. Copy the `LCP.json` file into the newly created `build/docker` folder before deploying the build.
 
@@ -59,31 +61,31 @@ The Liferay service restarts with clustering enabled and the `scale` variable in
 
 Now that you have initialized the clustering scale, update it to three nodes and create a new build to deploy it.
 
-1. In your project repository, navigate to the `liferay/` directory and open the `LCP.json` file.
+1. In your project repository, navigate to the `liferay/` folder and open the `LCP.json` file.
 
 1. Update the value of the `scale` property to `3`.
 
-    ```json
+   ```json
     {
         "kind": "Deployment",
         "id": "liferay",
         "scale": 3
     }
-    ```
+   ```
 
 1. Commit and push the changes to your Git repository.
 
-    ```bash
-    git add liferay/LCP.json
-    ```
+   ```bash
+   git add liferay/LCP.json
+   ```
 
-    ```bash
-    git commit -m "Enable clustering and set the clustering scale to 3."
-    ```
+   ```bash
+   git commit -m "Enable clustering and set the clustering scale to 3."
+   ```
 
-    ```bash
-    git push origin [branch_name]
-    ```
+   ```bash
+   git push origin [branch_name]
+   ```
 
 The updated clustering configuration is now committed, and the Liferay Cloud infrastructure automatically creates a build with it.
 
@@ -112,6 +114,8 @@ Once your services restart, clustering is enabled, and you have three nodes of t
 Next, you'll configure the Liferay service to auto-scale for even more instances when they are needed.
 
 ## Related Concepts
+
+<!-- Please fix the links below so they point to the new site. -Rich --> 
 
 * [Setting Up Clustering in Liferay Cloud](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.html)
 * [Configuring the Liferay Service](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.html)

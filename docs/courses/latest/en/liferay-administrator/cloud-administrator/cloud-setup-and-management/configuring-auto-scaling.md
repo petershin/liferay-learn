@@ -3,6 +3,8 @@ uuid: 31cea680-b175-419d-b30f-d17851d3c89e
 ---
 # Configuring Auto-scaling
 
+<!-- I'm guessing we probably need the note here about provisioning also. -Rich --> 
+
 Once you've enabled production environment clustering with any number of nodes, you can configure auto-scaling to better handle site traffic during peak hours.
 
 Help Marcus configure auto-scaling by following these steps.
@@ -33,25 +35,25 @@ Set the maximum number of instances via the `maxInstances` property in your Life
 
 1. Set the `maxInstances` value to 12, within the `autoscale` JSON object:
 
-    ```json
+   ```json
     "autoscale": {
         "maxInstances": 12
     }
-    ```
+   ```
 
 1. Commit and push the changes in your Git repository.
 
-    ```bash
-    git add liferay/LCP.json
-    ```
+   ```bash
+   git add liferay/LCP.json
+   ```
 
-    ```bash
-    git commit -m "Increase the maximum number of instances to 12."
-    ```
+   ```bash
+   git commit -m "Increase the maximum number of instances to 12."
+   ```
 
-    ```bash
-    git push origin <branch_name>
-    ```
+   ```bash
+   git push origin [branch_name]
+   ```
 
 Your repository on GitHub now has the updated number of maximum instances, and Liferay Cloud creates a new build with your changes.
 
@@ -80,6 +82,8 @@ Once your services restart, auto-scaling is enabled, up to a maximum of 12 insta
 Next, you'll enable Dynatrace integration to keep track of your project's usage metrics.
 
 ## Related Concepts
+
+<!-- Please fix the links below. The fewer redirects we need, the better. -Rich --> 
 
 * [Auto-scaling](https://learn.liferay.com/liferay-cloud/latest/en/manage-and-optimize/auto-scaling.html)
 * [Deploying to the Liferay Service](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html)

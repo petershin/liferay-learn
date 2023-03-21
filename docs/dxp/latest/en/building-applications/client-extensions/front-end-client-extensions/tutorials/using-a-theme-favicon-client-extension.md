@@ -67,7 +67,7 @@ Once Liferay starts, run this command from the client extension's folder in the 
 This builds your client extension and deploys the zip to Liferay's `deploy/` folder.
 
 ```{note}
-To deploy your client extension to Liferay Experience Cloud, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#) to run [`lcp deploy`](https://learn.liferay.com/dxp-cloud/latest/en/reference/command-line-tool.html#deploying-to-your-dxp-cloud-environment).
+To deploy your client extension to Liferay Experience Cloud, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to run [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
 ```
 
 ```{tip}
@@ -85,13 +85,13 @@ STARTED sample-theme-favicon_1.0.0
 <!-- Should we suggest doing this to the pages of a Site Template? -->
 Configure a page in Liferay to use your deployed client extension:
 
-1. On a page, click the _Edit_ icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
+1. On a page, click _Edit_ (![Edit icon](../../../../images/icon-edit-pencil.png)) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)) and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)) and click _configuration_ (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
 1. In the _Favicon_ section under the _Look and Feel_ tab, click _Change Favicon_.
 
-1. Click _Client Extensions_, and select the newly deployed favicon, _Sample Theme Favicon_.
+1. Click _Client Extensions_ and select the newly deployed favicon, _Sample Theme Favicon_.
 
    ![Select the Sample Theme Favicon client extension and click Save.](./using-a-theme-favicon-client-extension/images/01.gif)
 

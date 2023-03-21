@@ -49,9 +49,9 @@ The client extension's source files are in the project's `src/` folder by defaul
 
 ```yaml
 assemble:
-    - from: assets
-        include: "**/*"
-        into: static
+   - from: assets
+     include: "**/*"
+     into: static
 ```
 
 The assemble block has these properties:

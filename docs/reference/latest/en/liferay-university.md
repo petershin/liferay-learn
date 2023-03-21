@@ -210,3 +210,34 @@ This page serves as an archive and index of videos that were previously hosted o
 * [7.1 Upgrading Liferay (3/5) - Upgrading Your Liferay Code](https://youtube.com/playlist?list=PLm3_L1L-YueZv2ICdNU9E0yDuHeOqLQZJ)
 * [7.1 Upgrading Liferay (4/5) - Infrastructure Upgrade](https://youtube.com/playlist?list=PLm3_L1L-YueZR9WZWSnTEsj1_FhjPSXzI)
 * [7.1 Upgrading Liferay (5/5) - Testing Your Upgrade](https://youtube.com/playlist?list=PLm3_L1L-YuebKxhCTuyTEnEdqTZu6UnEk)
+
+
+## LXC-Self Managed (DXP Cloud)
+
+### 7.3 DXP Cloud
+
+* [7.3 DXP Cloud](https://www.youtube.com/playlist?list=PLm3_L1L-YueYVvAiAVmK3GsUi-hKW72Z-)
+  
+### Introduction to DXP Cloud
+
+* [Introduction to DXP Cloud](https://www.youtube.com/playlist?list=PLm3_L1L-Yuebgn5xEYUl34yJKTLuPZiNw)
+
+## Commerce
+
+### Commerce 2.1 (Legacy)
+
+* [Commerce 2.1 Product Specialist](https://youtube.com/playlist?list=PLm3_L1L-YueYUa2rGyRUBEEW3IEIRiqRB)
+* [Commerce 2.1 Solutions Architect](https://www.youtube.com/playlist?list=PLm3_L1L-YueYdFXM6F4VwB4k5aPAwR3zJ)
+* [Commerce 2.1 Developer](https://www.youtube.com/playlist?list=PLm3_L1L-Yuea2AEO8rWpqgvRowpWFN7gF)
+
+### Commerce (Legacy)
+
+* [Intro to Commerce](https://www.youtube.com/watch?v=D2L-QSzV31w&list=PLm3_L1L-YuebLThwE2EoNWSoYMEKOUJVL&index=1)
+* [B2B Commerce](https://youtube.com/playlist?list=PLm3_L1L-YuebLThwE2EoNWSoYMEKOUJVL)
+* [B2C Commerce](https://www.youtube.com/playlist?list=PLm3_L1L-YueaF7A92x-gyNZJBqgbDdzRu)
+
+## Analytics Cloud
+
+### Getting Started with Analytics Cloud
+
+* [Getting Started with Analytics Cloud Onboarding](https://www.youtube.com/playlist?list=PLm3_L1L-YueYBSJj0K5xcaezlIiPAI7Z1)

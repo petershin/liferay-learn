@@ -36,7 +36,7 @@ With client extensions, you can
 
 You use [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md) to develop and deploy Client extensions. Client extensions communicate with Liferay via [headless APIs](../headless-delivery/using-liferay-as-a-headless-platform.md).
 
-Client extensions can be categorized as
+These are the classifications of client extensions:
 
 * [Front-end client extensions](#front-end-client-extensions)
 * [Microservice client extensions](#microservice-client-extensions)

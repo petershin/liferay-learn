@@ -40,15 +40,15 @@ Users are mapped back and forth by screen names, so be sure to match the OpenAM'
 
     ![OpenSSO Configuration in Liferay must be enabled for the integration to work.](./using-openam/images/01.png)
 
-1. Modify the three URL fields (Login URL, Logout URL, and Service URL) so they point to your OpenAM server (in other words, only modify the host name portion of the URLs), check the *Enabled* box, and click *Save*.
+   1. Modify the three URL fields (Login URL, Logout URL, and Service URL) so they point to your OpenAM server (in other words, only modify the host name portion of the URLs), check the *Enabled* box, and click *Save*.
 
-Liferay DXP then redirects users to OpenAM when they request the `/c/portal/login` URL---for example, when they click on the *Sign In* link).
+   Liferay DXP then redirects users to OpenAM when they request the `/c/portal/login` URL---for example, when they click on the *Sign In* link).
 
-## Configuring OpenAM at a Different Liferay Scope
+   ## Configuring OpenAM at a Different Liferay Scope
 
-Liferay DXP's OpenAM configuration can be applied at either the system scope or at the instance scope.
+   Liferay DXP's OpenAM configuration can be applied at either the system scope or at the instance scope.
 
-To configure the OpenAM SSO module at the system scope:
+   To configure the OpenAM SSO module at the system scope:
 
 1. Navigate to the Control Panel
 
@@ -60,7 +60,7 @@ To configure the OpenAM SSO module at the system scope:
 | **Enabled** | `enabled` | Check this box to enable OpenAM authentication. Note that OpenAM works only if LDAP authentication is also enabled and Liferay DXP's authentication type is set to screen name. | `boolean`|
 | **Import from LDAP** | `importFromLDAP` | If this is checked, users authenticated from OpenAM that do not exist in Liferay DXP are imported from LDAP. LDAP must be enabled. | `boolean` |
 | **Login URL** | `loginURL` | The URL to the login page of the OpenAM server | `String` |
-| **Logout URL** | `logoutURL` | The URL to the logout page of the OpenAM server | `String`
+| **Logout URL** | `logoutURL` | The URL to the logout page of the OpenAM server | `String` |
 | **Service URL** | `serviceURL` | The URL by which OpenAM can be accessed to use the authenticated web services. If you are using OpenAM Express 8 or higher, you need to have the server running Java 6. | `String` |
 | **Screen Name Attribute** | `screenNameAttr` | The name of the attribute on the OpenAM representing the user's screen name | `String` |
 | **Email Address Attribute** | `emailAddressAttr` | The name of the attribute on the OpenAM representing the user's email address | `String` |

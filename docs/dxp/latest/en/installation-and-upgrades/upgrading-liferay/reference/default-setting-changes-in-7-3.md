@@ -55,7 +55,7 @@ Here are the changes from 7.2 to 7.3:
 | mail.send.blacklist | *NA* | New. See [Mail](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Mail). |
 | mail.session.mail.smtp.starttls.enable | *NA* | true. See [Mail](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Mail). |
 | module.framework.configuration.bundle.symbolic.names | *NA* | New. See [here](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Module%20Framework) |
-| module.framework.properties.dependency.manager.sync.timeout | *NA* | 60 | 
+| module.framework.properties.dependency.manager.sync.timeout | *NA* | 60 |
 | module.framework.properties.dependency.manager.thread.pool.enabled | *NA* | true |
 | module.framework.properties.eclipse.stateSaveDelayInterval | *NA* | 60000 |
 | module.framework.properties.felix.fileinstall.* | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Module%20Framework) | Renamed to module.framework.properties.file.install.* |
@@ -67,7 +67,7 @@ Here are the changes from 7.2 to 7.3:
 | module.framework.web.generator.excluded.paths | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Module%20Framework%20Web%20Application%20Bundles) | Added WEB-INF/lib/jackson-databind.jar and WEB-INF/lib/portletmvc4spring-framework.jar; dropped WEB-INF/lib/spring-webmvc-portlet.jar |
 | module.framework.web.servlet.annotation.scanning.blacklist | *NA* | See [Module Framework Web Application Bundles](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Module%20Framework%20Web%20Application%20Bundles) |
 | module.framework.web.servlet.annotation.scanning.whitelist | *NA* | com/liferay/faces/ |
-| module.framework.web.start.level | *NA* | 15. See [Module Framework](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Module%20Framework).
+| module.framework.web.start.level | *NA* | 15. See [Module Framework](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Module%20Framework). |
 | permissions.object.blocking.cache | false | Removed. See this [breaking change](https://learn.liferay.com/dxp/latest/en/liferay-internals/reference/7-3-breaking-changes.html#remove-support-for-blocking-cache). |
 | portal.resiliency.* | See [here](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Portal%20Resiliency) | Removed |
 | retry.data.source.max.retries | 100 | 0 |

@@ -17,15 +17,15 @@ This example requires creating two data providers, and a form with four fields a
 
 | Liferay Forms Element | Element Label | Description
 | :--- | :--- | :--- |
-| Data Provider | Get Group Users  | Get the Site's/Group's Users and provide a list of their email addresses.
-| Data Provider | Get User by Email | Get the User by the selected email address and provide the first and last name.
-| Form Field    | Hidden Group ID  | Use a hidden Numeric field to hold the Group ID of the current site.
-| Form Field    | Who are you?     | Use a Select from List field that displays the email addresses returned by the data provider.
-| Form Field    | First Name        | Use a Text field for the User's first name.
-| Form Field    | Last Name         | Use a Text field for the User's last name.
-| Form Rule     | _Not Applicable_  | If the Hidden Group ID field is not empty, autofill the Select from List field with the email addresses of the Site's Users.
-| Form Rule     | _Not Applicable_  | If the _Who are you?_ field is not empty, autofill the first and last name fields retrieved from the data provider.
-| Form Rule     | _Not Applicable_  | If the _Who are you?_ field is empty, enable the name fields so the User can manually enter data. If the condition isn't met and the first and last name fields are autofilled form the data provider, these fields are disabled on the form.
+| Data Provider | Get Group Users  | Get the Site's/Group's Users and provide a list of their email addresses. |
+| Data Provider | Get User by Email | Get the User by the selected email address and provide the first and last name. |
+| Form Field    | Hidden Group ID  | Use a hidden Numeric field to hold the Group ID of the current site. |
+| Form Field    | Who are you?     | Use a Select from List field that displays the email addresses returned by the data provider. |
+| Form Field    | First Name        | Use a Text field for the User's first name. |
+| Form Field    | Last Name         | Use a Text field for the User's last name. |
+| Form Rule     | _Not Applicable_  | If the Hidden Group ID field is not empty, autofill the Select from List field with the email addresses of the Site's Users. |
+| Form Rule     | _Not Applicable_  | If the _Who are you?_ field is not empty, autofill the first and last name fields retrieved from the data provider. |
+| Form Rule     | _Not Applicable_  | If the _Who are you?_ field is empty, enable the name fields so the User can manually enter data. If the condition isn't met and the first and last name fields are autofilled form the data provider, these fields are disabled on the form. |
 
 To configure this example,
 

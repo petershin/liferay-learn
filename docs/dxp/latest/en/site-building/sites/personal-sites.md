@@ -52,9 +52,9 @@ There are several portal properties you can add to [`portal-ext.properties`](../
 
 | Functionality | Property |
 | :--- | :--- |
-| Disable personal Sites | `layout.user.public.layouts.enabled=false` |
+| Disable personal Sites | `layout.user.public.layouts.enabled=false`
 | Disable Private Pages on personal Sites | `layout.user.private.layouts.enabled=false` |
-| Disable automatic creation of personal Sites | `layout.user.public.layouts.auto.create=false` |
+| Disable automatic creation of personal Sites | `layout.user.public.layouts.auto.create=false`
 | Disable automatic creation of Private Pages on personal Sites | `layout.user.private.layouts.auto.create=false` |
 
 The Public and Private Page Sets of personal Sites are handled separately. You can leave one Page Set enabled while disabling the other. If you initially had user personal Sites enabled for your instance but then disabled them, existing personal Sites remain on your instance until the next time users sign in, at which point they're removed.

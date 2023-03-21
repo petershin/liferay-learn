@@ -61,7 +61,7 @@ When the item makes it to the event defined here, the SLA timer begins counting.
 | Start Event | Description |
 | :--- | :--- |
 | The Start Node | The SLA timer starts when entering the _created_ node. |
-| Entry into a Task | The SLA clock begins when the workflow transitions to the task. |
+| Entry into a Task | The SLA clock begins when the workflow transitions to the task.
 | Exit from a Task | The SLA clock begins when the workflow transitions out of the task. For example, the SLA timer starts when leaving the _Review_ Task. |
 
 If the item makes it to the Stop event before the defined SLA duration (the deadline), it's _On Time_ according to the SLA. If it fails to make it to the Stop event in the specified duration, it's _Overdue_. When defining the tasks to act as the SLA's Stop Events, choose between these options:

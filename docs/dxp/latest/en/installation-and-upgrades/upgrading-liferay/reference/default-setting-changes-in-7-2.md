@@ -52,7 +52,7 @@ Here are the default Portal Property changes from 7.1 to 7.2:
 | default.user.public.layout.regular.theme.id | userprofile_WAR_userprofiletheme | classic_WAR_classictheme |
 | layout.friendly.url.keywords | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) | added `a` |
 | editor.wysiwyg.portal-web.docroot.html.portlet.announcements.edit_entry.jsp | ckeditor | alloyeditor |
-| editor.wysiwyg.portal-web.docroot.html.portlet.message_boards.edit_message.bb_code.jsp | ckeditor_bbcode | alloyeditor_bbcode |
+| editor.wysiwyg.portal-web.docroot.html.portlet.message_boards.edit_message.bb_code.jsp | ckeditor_bbcode | alloyeditor_bbcode
 | editor.wysiwyg.portal-web.docroot.html.portlet.message_boards.edit_message.html.jsp | ckeditor | alloyeditor |
 | browser.cache.disabled | false | true |
 | browser.cache.signed.in.disabled | false | true |

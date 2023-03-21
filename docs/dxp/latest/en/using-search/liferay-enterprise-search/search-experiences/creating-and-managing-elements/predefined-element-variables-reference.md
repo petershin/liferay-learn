@@ -50,20 +50,20 @@ To add a predefined variable to the element in the Element Source editor, place 
 | Regular Role IDs | Number: Return the role IDs for the user's regular roles | `${user.regular_role_ids}` |
 | User group IDs | Number: Return the IDs of the user groups that the user is part of | `${user.user_group_ids}` |
 | | <a href="#conditional-elements" id="conditional-elements">**CONDITIONAL ELEMENTS**\*</a> | |
-| IP Stack City | Text: Return the city where the searching IP address originates | `${ipstack.city}` |
-| IP Stack Continent Code | Text: Return the continent code (e.g., NA for North America) where the searching IP address originates | `${ipstack.continent_code}` |
-| IP Stack Continent Name | Text: Return the continent name | `${ipstack.continent_name}` |
-| IP Stack Country Code | Text: Return the country code (e.g., US for United States)  | `${ipstack.country_code}` |
-| IP Stack Country Name | Text: Return the country name | `${ipstack.country_name}` |
-| IP Stack Latitude | Number: Return the latitude in decimal degrees | `${ipstack.latitude}` |
-| IP Stack Longitude | Number: Return the longitude in decimal degrees | `${ipstack.longitude}` |
-| IP Stack Region Code | Text: Return the region code (e.g., CA for California) | `${ipstack.region_code}` |
-| IP Stack Region Name | Text: Return the region name | `${ipstack.region_name}` |
-| IP Stack Zip Code | Number: Return the zip code | `${ipstack.zip}` |
-| Open Weather Map Temperature | Number: Return the temperature | `${openweathermap.temp}` |
-| Open Weather Map Weather Description | Text: Return a description of the weather (e.g., "clear sky") | `${openweathermap.weather_description}` |
-| Open Weather Map Weather ID | Number: Return the [ID corresponding to the weather description](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2) | `${openweathermap.weather_id}` |
-| Open Weather Map Main Label| Text: Return the [primary identifier for the weather (e.g., Rain; this is the Main field in OpenWeatherMap's API response](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2), according to the weather ID | `${openweathermap.weather_main}` |
+| IP Stack City | Text: Return the city where the searching IP address originates | `${ipstack.city}`
+| IP Stack Continent Code | Text: Return the continent code (e.g., NA for North America) where the searching IP address originates | `${ipstack.continent_code}`
+| IP Stack Continent Name | Text: Return the continent name | `${ipstack.continent_name}`
+| IP Stack Country Code | Text: Return the country code (e.g., US for United States)  | `${ipstack.country_code}`
+| IP Stack Country Name | Text: Return the country name | `${ipstack.country_name}`
+| IP Stack Latitude | Number: Return the latitude in decimal degrees | `${ipstack.latitude}`
+| IP Stack Longitude | Number: Return the longitude in decimal degrees | `${ipstack.longitude}`
+| IP Stack Region Code | Text: Return the region code (e.g., CA for California) | `${ipstack.region_code}`
+| IP Stack Region Name | Text: Return the region name | `${ipstack.region_name}`
+| IP Stack Zip Code | Number: Return the zip code | `${ipstack.zip}`
+| Open Weather Map Temperature | Number: Return the temperature | `${openweathermap.temp}`
+| Open Weather Map Weather Description | Text: Return a description of the weather (e.g., "clear sky") | `${openweathermap.weather_description}`
+| Open Weather Map Weather ID | Number: Return the [ID corresponding to the weather description](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2) | `${openweathermap.weather_id}`
+| Open Weather Map Main Label| Text: Return the [primary identifier for the weather (e.g., Rain; this is the Main field in OpenWeatherMap's API response](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2), according to the weather ID | `${openweathermap.weather_main}`
 | Open Weather Map Wind Speed | Number: Return the wind speed in km/h | `${openweathermap.wind_speed}` |
 | User Custom Fields **\*\*** | Return the value of a user custom field | `user.custom.field.[name]` |
 

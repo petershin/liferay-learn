@@ -47,22 +47,22 @@
 | 일반 역할 ID | 숫자: 사용자의 일반 역할에 대한 역할 ID 반환 | `${user.regular_role_ids}` |
 | 사용자 그룹 ID | 번호: 사용자가 속한 사용자 그룹의 ID를 반환 | `${user.user_group_ids}` |
 | | <a href="#conditional-elements" id="conditional-elements">**조건부 요소\***</a> | |
-| IP 스택 시티 | 텍스트: 검색 IP 주소가 발생한 도시 반환 | `${ipstack.city}`
-| IP 스택 대륙 코드 | 텍스트: 검색 IP 주소가 발생한 대륙 코드(예: 북미의 경우 NA) 반환 | `${ipstack.continent_code}`
-| IP 스택 대륙 이름 | 텍스트: 대륙 이름 반환 | `${ipstack.continent_name}`
-| IP 스택 국가 코드 | 텍스트: 국가 코드 반환(예: 미국의 경우 US) | `${ipstack.country_code}`
-| IP 스택 국가명 | 텍스트: 국가 이름 반환 | `${ipstack.country_name}`
-| IP 스택 위도 | 숫자: 위도를 십진수로 반환 | `${ipstack.latitude}`
-| IP 스택 경도 | 숫자: 경도를 십진법으로 반환 | `${ipstack.경도}`
-| IP 스택 지역 코드 | 텍스트: 지역 코드 반환(예: 캘리포니아의 경우 CA) | `${ipstack.region_code}`
-| IP 스택 영역 이름 | 텍스트: 지역 이름 반환 | `${ipstack.region_name}`
-| IP 스택 우편번호 | 번호: 우편번호 반환 | `${ipstack.zip}`
-| 날씨 지도 열기 온도 | 번호: 온도 반환 | `${openweathermap.temp}`
-| 날씨 지도 열기 날씨 설명 | 텍스트: 날씨 설명 반환(예: "맑은 하늘") | `${openweathermap.weather_description}`
-| 날씨 지도 열기 날씨 ID | 번호: [날씨 설명에 해당하는 ID](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2) 반환 | `${openweathermap.weather_id}`
-| 날씨 지도 메인 라벨 열기| 텍스트: [날씨의 기본 식별자(예: Rain, 이것은 OpenWeatherMap의 API 응답에 있는 기본 필드입니다](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2)를 반환합니다. 날씨 ID | `${openweathermap.weather_main}`
+| IP 스택 시티 | 텍스트: 검색 IP 주소가 발생한 도시 반환 | `${ipstack.city}` |
+| IP 스택 대륙 코드 | 텍스트: 검색 IP 주소가 발생한 대륙 코드(예: 북미의 경우 NA) 반환 | `${ipstack.continent_code}` |
+| IP 스택 대륙 이름 | 텍스트: 대륙 이름 반환 | `${ipstack.continent_name}` |
+| IP 스택 국가 코드 | 텍스트: 국가 코드 반환(예: 미국의 경우 US) | `${ipstack.country_code}` |
+| IP 스택 국가명 | 텍스트: 국가 이름 반환 | `${ipstack.country_name}` |
+| IP 스택 위도 | 숫자: 위도를 십진수로 반환 | `${ipstack.latitude}` |
+| IP 스택 경도 | 숫자: 경도를 십진법으로 반환 | `${ipstack.경도}` |
+| IP 스택 지역 코드 | 텍스트: 지역 코드 반환(예: 캘리포니아의 경우 CA) | `${ipstack.region_code}` |
+| IP 스택 영역 이름 | 텍스트: 지역 이름 반환 | `${ipstack.region_name}` |
+| IP 스택 우편번호 | 번호: 우편번호 반환 | `${ipstack.zip}` |
+| 날씨 지도 열기 온도 | 번호: 온도 반환 | `${openweathermap.temp}` |
+| 날씨 지도 열기 날씨 설명 | 텍스트: 날씨 설명 반환(예: "맑은 하늘") | `${openweathermap.weather_description}` |
+| 날씨 지도 열기 날씨 ID | 번호: [날씨 설명에 해당하는 ID](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2) 반환 | `${openweathermap.weather_id}` |
+| 날씨 지도 메인 라벨 열기| 텍스트: [날씨의 기본 식별자(예: Rain, 이것은 OpenWeatherMap의 API 응답에 있는 기본 필드입니다](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2)를 반환합니다. 날씨 ID | `${openweathermap.weather_main}` |
 | 날씨 지도 열기 풍속 | 숫자: 풍속을 km/h로 반환 | `${openweathermap.wind_speed}` |
-| 사용자 정의 필드 **\*\*** | 사용자 정의 필드 값 반환 | `user.custom.field.[이름]` | 
+| 사용자 정의 필드 **\*\*** | 사용자 정의 필드 값 반환 | `user.custom.field.[이름]` |
 
 **\*** [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/activating-liferay-commerce-enterprise.html) 를 활성화하여 Commerce 관련 변수에 액세스합니다.
 

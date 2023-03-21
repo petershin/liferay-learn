@@ -44,7 +44,7 @@ You can only select one sample file for a Virtual Product.
 
 |Field | Description |
 | :--- | :--- |
-| Enable Terms of Use | Use the Toggle to enable or disable a Terms of Use document for the Product's file.
+| Enable Terms of Use | Use the Toggle to enable or disable a Terms of Use document for the Product's file. |
 |Select Web Content| If enabled, select an existing Web Content article to use. |
 | Text Editor | If enabled, use the text editor to directly enter the terms of use. |
 

@@ -94,7 +94,7 @@ The *Workflow Status* gives information about where an order is in one of the tw
 | Workflow Status | Description |
 | :--- | :--- |
 | Pending | The order has been placed, but it has not yet been [approved](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) by the seller. |
-| Approved | The order has been reviewed and [approved](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) by the seller, and the order may now be [transmitted](./processing-an-order.md#commerce-20-and-below). (Note: This workflow status appears also on the *Transmitted* tab.) 
+| Approved | The order has been reviewed and [approved](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) by the seller, and the order may now be [transmitted](./processing-an-order.md#commerce-20-and-below). (Note: This workflow status appears also on the *Transmitted* tab.)  |
 
 ## Additional Information
 

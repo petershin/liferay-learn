@@ -161,10 +161,10 @@ for Blogs Entries, then submit a new entry for publication:
 | `${userGroupPermission}`      |           | &#10004;  | [UserGroupPermission](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/UserGroupPermission.html) |
 | `${arrayUtil}`                |           | &#10004;  | [ArrayUtil](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/ArrayUtil.html) |
 | `${userName}`                 | &#10004;  |           | The User Name of the last user to intervene in the workflow |
-| `${userId}`                   | &#10004;  |           | The User ID of the last user to intervene in the workflow. [See the Workflow Scripting article to understand the logic.](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables)
+| `${userId}`                   | &#10004;  |           | The User ID of the last user to intervene in the workflow. [See the Workflow Scripting article to understand the logic.](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
 | `${prefsPropsUtil}`           |           | &#10004;  | [PrefsPropsUtil](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/PrefsPropsUtil.html) |
-| `${url}`                      | &#10004;  |           | a URL for certain content types that are displayed on a page (e.g., Blogs Entries, Message Boards Messages, and Wiki Pages
-| `${kaleoInstanceToken}`       | &#10004;  |           | [See the Workflow Scripting article.](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables)
+| `${url}`                      | &#10004;  |           | a URL for certain content types that are displayed on a page (e.g., Blogs Entries, Message Boards Messages, and Wiki Pages |
+| `${kaleoInstanceToken}`       | &#10004;  |           | [See the Workflow Scripting article.](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
 | `${utilLocator}`              |           | &#10004;  | [UtilLocator](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portal/template/UtilLocator.html) |
 | `${objectUtil}`               |           | &#10004;  | Returns a `new LiferayObjectConstructor()` |
 | `${urlCodec}`                 |           | &#10004;  | [URLCodec](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/URLCodec.html) |

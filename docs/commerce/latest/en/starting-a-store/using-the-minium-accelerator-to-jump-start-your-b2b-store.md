@@ -66,6 +66,6 @@ Minium applies a number of other site configurations that are not set out-of-the
 | Default Image | &#10003; |
 | [Measurement Units](../store-management/configuring-shipping-methods/measurement-units.md) - Dimensions | inches, millimeters, feet, meters |
 | [Measurement Units](../store-management/configuring-shipping-methods/measurement-units.md) - Weight | ounces, pounds, kilograms, grams |
-| [Account Roles](../users-and-accounts/account-management/account-roles.md) | Buyer, Account Manager, Sales Agent
+| [Account Roles](../users-and-accounts/account-management/account-roles.md) | Buyer, Account Manager, Sales Agent |
 | [Availability Estimates](../inventory-management/availability-estimates.md) | 3-5 days, 5-7 days, 7-14 days |
 | [Product Relation Type](../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md) | Up-Sell, Spare, Related, Accessories, Cross-Sell  |

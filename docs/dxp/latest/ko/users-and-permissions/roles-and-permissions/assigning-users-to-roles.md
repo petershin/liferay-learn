@@ -96,7 +96,7 @@ You can assign Users to an Account Role in the Accounts Control Panel section.
 
 | Permission Scope | Available Assignments |
 | :--- | :--- |
-| A single Account | Individual Account Members
+| A single Account | Individual Account Members |
 
 1. Go to Control Panel &rarr; Accounts &rarr; Accounts, and click on the Account of interest.
 

@@ -3,7 +3,7 @@ uuid: ab400154-9fae-4665-b883-0f72d934bf74
 ---
 # Adding Team Members to the Project
 
-Marcus has access to the Liferay Cloud console for the whole Delectable Bonsai project, but now he needs to invite his staff member, Kyle.
+Marcus has access to the Liferay Cloud console for the whole Delectable Bonsai project, but his staff member, Kyle, also needs access.
 
 Here, you'll learn how to send invitations for your team members.
 
@@ -17,13 +17,15 @@ Help Marcus add Kyle Klein as a contributor to the team by sending an invitation
 
 1. On the Team page, enter the team member's email address (e.g., kyle.klein@bonsaisyrup.com).
 
-    ![Send an invitation to your team member's email address via the Team page.](./adding-team-members-to-the-project/images/01.png)
+   ![Send an invitation to your team member's email address via the Team page.](./adding-team-members-to-the-project/images/01.png)
 
 1. Select *Contributor* from the Role drop-down menu for the appropriate role.
 
+<!-- We should link to a description of the roles here. -Rich --> 
+
 1. Click *Send Invite*.
 
-An invitation is sent to the provided email address to join your project. If the invited team members don't have accounts for the console yet, they must make accounts to accept the invitations.
+Liferay Cloud sends an invitation to the provided email address to join your project. If the invited team members don't have accounts for the console yet, they must make accounts to accept the invitations.
 
 Repeat this process for your other environments (such as `uat`) to make sure your team member has access to all of the appropriate environments.
 
@@ -34,5 +36,7 @@ Give your team members roles that are appropriate to their role in each environm
 Next, you'll set up your GitHub repository so that you can push and deploy changes to your services.
 
 ## Related Concepts
+
+<!-- Please fix the link below so it points to the new location. -Rich -->
 
 * [Environment Teams and Roles](https://learn.liferay.com/liferay-cloud/latest/en/manage-and-optimize/environment-teams-and-roles.html)

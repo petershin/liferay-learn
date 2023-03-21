@@ -21,7 +21,7 @@ The required `mainURL` and `clayURL` properties set the path to the two CSS reso
 
 The CSS in these files is added to the styling already used in your theme. In case of a conflict, the client extension's CSS overrides the styling already on the page.
 
-[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-theme-css) includes a complete theme CSS client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-css) includes a complete theme CSS client extension.
 
 ## YAML Properties
 

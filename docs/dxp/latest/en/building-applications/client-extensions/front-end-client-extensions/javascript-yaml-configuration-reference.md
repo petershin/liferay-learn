@@ -18,7 +18,7 @@ able-global-js:
 
 The required `url` property defines the JavaScript resource file's location. When enabled on a page, JavaScript at this path runs on each page load.
 
-[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions) includes a complete JavaScript client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-global-js) includes a complete JavaScript client extension.
 
 ## YAML Properties
 

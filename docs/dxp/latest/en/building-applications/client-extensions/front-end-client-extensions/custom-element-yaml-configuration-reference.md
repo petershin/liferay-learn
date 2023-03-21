@@ -26,7 +26,7 @@ able-custom-element:
 
 The required `urls` property specifies one or more paths to JavaScript resources. One of these JavaScript resources must contain the custom element initialization code.
 
-[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-custom-element-1) contains a complete custom element client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-custom-element-1) contains a complete custom element client extension.
 
 ## YAML Properties
 

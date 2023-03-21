@@ -20,11 +20,11 @@ To start developing client extensions,
 1. Download and unzip the sample workspace:
 
    ```bash
-   curl -J -O https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.sample.workspace\&\v\=LATEST\&p\=zip
+   curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
    ```
 
    ```bash
-   unzip com.sample.workspace-20230217.1154.zip
+   unzip com.liferay.sample.workspace-latest.zip
    ```
 
 Now you have the tools to deploy your first CSS client extension.

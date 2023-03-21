@@ -24,7 +24,7 @@ To start developing client extensions, obtain the following items:
 1. A Liferay workspace. To download a workspace with example client extension projects, run
 
     ```bash
-    curl -J -O https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay\&a\=com.liferay.sample.minimal.workspace\&\v\=LATEST\&p\=zip
+    curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
     ```
 
     You can copy the client extension projects (in the `client-extensions/` directory) into your own workspace or use the sample workspace directly.
@@ -41,7 +41,7 @@ Client extensions are defined in `client-extension.yaml` files containing these 
 
 `dxp.lxc.liferay.com.virtualInstanceId`: Enter the ID of the virtual instance to deploy to.
 
-Each client extension project lives in a folder inside of the workspace's `client-extensions/` folder. The project contains a single `client-extension.yaml` file, which defines one or more client extensions. For example, [the `baker` project's `client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/sample-workspace/client-extensions/sample-iframe-2/client-extension.yaml) defines three `iframe` client extensions: `Baseball`, `Football`, and `Hockey`.
+Each client extension project lives in a folder inside of the workspace's `client-extensions/` folder. The project contains a single `client-extension.yaml` file, which defines one or more client extensions. For example, [the `iframe-2` project's `client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-iframe-2/client-extension.yaml) defines three `iframe` client extensions: `Baseball`, `Football`, and `Hockey`.
 
 ### Additional Source Files
 

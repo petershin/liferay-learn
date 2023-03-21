@@ -26,7 +26,7 @@ The required `resourcePath` property defines the workflow action handler's locat
 
 Workflow action client extensions require OAuth2 application profiles to secure requests triggered by workflow actions in Liferay. The example above defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-client-extension-usage-and-properties.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
 
-[The sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace/client-extensions/sample-etc) demonstrates adding a workflow action client extension.
+[The sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc) demonstrates adding a workflow action client extension.
 
 ## YAML Properties
 

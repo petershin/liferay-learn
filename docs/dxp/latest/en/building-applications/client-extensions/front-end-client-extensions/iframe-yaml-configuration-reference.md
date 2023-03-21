@@ -18,7 +18,7 @@ able-iframe:
 
 The required `url` property points to the HTML page to embed within the IFrame widget.
 
-[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-iframe-1) includes a complete IFrame client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-iframe-1) includes a complete IFrame client extension.
 
 ## YAML Properties
 

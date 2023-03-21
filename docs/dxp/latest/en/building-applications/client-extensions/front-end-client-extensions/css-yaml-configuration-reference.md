@@ -18,7 +18,7 @@ able-global-css:
 
 The required `url` property defines the CSS resource file's location. CSS included here is added to the styling already used in the theme. In case of a conflict, the client extension's CSS overrides the styling already on the page.
 
-[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-default-workspace/client-extensions/sample-global-css) includes a complete CSS client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-global-css) includes a complete CSS client extension.
 
 ## YAML Properties
 

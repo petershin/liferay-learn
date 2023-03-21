@@ -23,6 +23,8 @@ The required `resourcePath` property defines the notification handler's location
 
 Notification type client extensions require OAuth2 application profiles to secure requests triggered by notifications in Liferay. The example above defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-client-extension-usage-and-properties.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references its `key` value.
 
+[The sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc) demonstrates adding a notification type client extension.
+
 ## YAML Properties
 
 These properties are specific to notification type client extensions:

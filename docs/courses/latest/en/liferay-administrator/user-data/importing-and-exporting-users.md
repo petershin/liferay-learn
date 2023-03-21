@@ -3,15 +3,9 @@ uuid: f12d1fae-61aa-4d42-880c-b0d718838530
 ---
 # Importing and Exporting Users
 
-Once the LDAP server is connected to your Liferay environment, it is time to import users.
+Once the LDAP server is connected to your Liferay environment, it is time to import or export users
 
-### Importing LDAP Users in LXC
-
-Contact your Liferay Cloud support person about importing from an LDAP server.
-
-<!-- Again, anything in Instance Settings is available in LXC. I don't think we need this section. -Rich -->
-
-### Importing LDAP Users in LXC-SM or On-Premises
+## Importing LDAP Users
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
 
@@ -23,19 +17,13 @@ Contact your Liferay Cloud support person about importing from an LDAP server.
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. The users from the LDAP server have been imported.
 
-   ![LDAP users have been imported.](./importing-users/images/01.png)
+   ![LDAP users have been imported.](./importing-and-exporting-users/images/01.png)
 
 ```{note}
 If you choose not to import all the LDAP users at once (i.e. leave enable import box unchecked), users are imported individually when they log in.
 ```
 
-### Exporting LDAP Users in LXC
-
-Contact your Liferay Cloud support person about exporting from an LDAP server.
-
-<!-- Don't need this section. -Rich -->
-
-### Exporting LDAP Users in LXC-SM or On-Premises
+## Exporting LDAP Users
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
 

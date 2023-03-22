@@ -4,9 +4,7 @@ uuid: a58b8853-86af-4a1c-8f52-1b9c7f705b78
 ---
 # Configuring the DXP Cluster
 
-Liferay can be configured in both a horizontal clustering or vertical clustering approach. In a horizontal cluster, each node is running on a separate machine. In a vertical cluster, multiple virtual Java machines are running on a single machine. See [Clustering for High Availability](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/setting-up-liferay/clustering-for-high-availability) to learn more.
-
-The steps below demonstrate vertical clustering with two Docker containers running locally. 
+Two docker containers can be run to demonstrate a simple clustered environment. See [Clustering for High Availability](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/setting-up-liferay/clustering-for-high-availability) to learn more.
 
 ## Configuring Elasticsearch for Each Node
 

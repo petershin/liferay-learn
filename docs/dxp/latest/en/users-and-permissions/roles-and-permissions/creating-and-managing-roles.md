@@ -3,17 +3,17 @@ uuid: 52fccdbc-556d-40a3-992e-e0eba8ee0542
 ---
 # Creating and Managing Roles
 
-Once you [understand](./understanding-roles-and-permissions.md) roles and permissions, its time to create the roles you need to empower your users to work within your Liferay DXP solution.
+Once you [understand](./understanding-roles-and-permissions.md) roles and permissions, you can create the roles you need to empower your users to work within your Liferay DXP solution.
 
 Create and manage roles in Control Panel &rarr; Users &rarr; Roles.
 
 ## Creating Roles
 
-First, [determine the scope](./understanding-roles-and-permissions.md) of the Role you must create. Roles can be scoped globally (regular roles), by site, organization, asset library, or account.
+First, [determine the scope](./understanding-roles-and-permissions.md) of the role you must create. Roles can be scoped globally (regular roles), by site, organization, asset library, or account.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Roles*.
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
 1. Select a role type.
 
@@ -29,7 +29,7 @@ Now you can [define role permissions](./defining-role-permissions.md) and [assig
 
 ## Updating Roles
 
-You can update a role's title, description, and key at any time. However, you cannot change its type/scope.
+You can update a role's title, description, and key at any time, but you cannot change its type/scope.
 
 To do this, click the role's *Actions* button (![Actions Button](../../images/icon-actions.png)) and select *Edit*. When finished, click *Save*.
 

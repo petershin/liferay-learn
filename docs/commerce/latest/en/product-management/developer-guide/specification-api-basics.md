@@ -44,9 +44,13 @@ Once Liferay is running,
    }
    ```
 
-1. To verify the specification addition, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Specifications*. The new specification appears.
+1. To verify the specification addition, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Specifications*. The new specification appears under the *Specification Labels* tab.
 
    ![Confirm that a new specification was added.](./specification-api-basics/images/01.png)
+
+   ```{note}
+   Currently, you cannot add a specification label to a specification group or create a specification group through the API. You must do it through the Applications menu.
+   ```
 
 1. Alternatively, call the REST service using the Java client. Navigate into the `java` folder and compile the source files:
 
@@ -59,8 +63,6 @@ Once Liferay is running,
    ```bash
    java -classpath .:* Specification_POST_ToInstance
    ```
-
-The API currently does not support creating specification groups or adding a specification to a specification group.
 
 ## Examine the cURL Command
 

@@ -76,7 +76,7 @@ To deploy all client extensions in the workspace simultaneously, run the command
 Confirm the deployment in your Liferay instance's console:
 
 ```bash
-STARTED liferay-sample-theme-css_1.0.0
+STARTED liferay-sample-theme-favicon_1.0.0
 ```
 
 ## Use the Client Extension on a Page

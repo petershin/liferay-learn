@@ -122,4 +122,4 @@ If you ever want to disable Private Pages again, deselect *Disable Private Pages
 
 * [Adding a Page](../adding-pages/adding-a-page-to-a-site.md)
 * [Configuring Individual Pages](../page-settings/configuring-individual-pages.md)
-* [Enabling User Personalization of Widget Pages](../using-widget-pages/configuring-widgets/enabling-user-personalization-of-widget-pages.md)
+* [Enabling User Personalization of Widget Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md)

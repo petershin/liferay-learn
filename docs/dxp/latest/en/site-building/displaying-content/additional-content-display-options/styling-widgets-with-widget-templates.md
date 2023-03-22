@@ -49,5 +49,5 @@ The widget now uses the custom template. By using more advanced widget template 
 
 ## Additional Information
 
-* [Creating a Widget Template](../../creating-pages/using-widget-pages/styling-widgets/creating-a-widget-template.md)
-* [Configuring Widget Look and Feel](../../creating-pages/using-widget-pages/styling-widgets/configuring-widget-look-and-feel.md)
+* [Creating a Widget Template](../../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md)
+* [Configuring Widget Look and Feel](../../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/configuring-widget-look-and-feel.md)

@@ -11,7 +11,7 @@ This example shows changing the default configuration of the Media Gallery widge
 
 ## Configuring the Media Gallery Widget
 
-1. If you don't already have images in your Documents and Media, add some images to Documents and Media. Open the Product Menu and go to Site Builder &rarr; Pages. Then go to *Content and Data*, click on [*Documents and Media*](../../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md) &rarr; *Add* (![Add](../../../../images/icon-add.png)) to select files to upload.
+1. If you don't already have images in your Documents and Media, add some images to Documents and Media. Open the Product Menu and go to Site Builder &rarr; Pages. Then go to *Content and Data*, click on [*Documents and Media*](../../../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md) &rarr; *Add* (![Add](../../../../images/icon-add.png)) to select files to upload.
 
     ![Select the files to display in documents and media.](./using-a-widget-template-example/images/01.png)
 
@@ -29,5 +29,5 @@ This example shows changing the default configuration of the Media Gallery widge
 
 ## Additional Information
 
-- [Embedding Widgets in Templates](../../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md)
-- [Styling Widgets with Widget Templates](../../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)
+- [Embedding Widgets in Templates](../../../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md)
+- [Styling Widgets with Widget Templates](../../../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)

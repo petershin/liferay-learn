@@ -38,4 +38,4 @@ Once you create a new widget scope, a Scope Configuration button (![Scope Config
 ## Additional Information
 
 * [Exporting/Importing Widget Data](./exporting-importing-widget-data.md)
-* [Scoping Your Message Boards](../../../../collaboration-and-social/message-boards/user-guide/scoping-your-message-boards.md)
+* [Scoping Your Message Boards](../../../../../collaboration-and-social/message-boards/user-guide/scoping-your-message-boards.md)

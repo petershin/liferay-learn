@@ -12,7 +12,7 @@ There are a lot of [system Elements that ship with Search Blueprints](../search-
 
 ## Using the Custom JSON Element
 
-Elements that are not meant to be reused in other Blueprints can be added in the [Query Builder](creating-and-managing-search-blueprints.md#using-the-query-builder) while working on a Blueprint. These are only available in the Blueprint of origin and are not visible in the Elements section of Search Blueprints. 
+Elements that are not meant to be reused in other Blueprints can be added in the [Query Builder](../creating-and-managing-search-blueprints.md#using-the-query-builder) while working on a Blueprint. These are only available in the Blueprint of origin and are not visible in the Elements section of Search Blueprints. 
 
 Add the Custom JSON Element to the builder and begin editing the boilerplate JSON:
 

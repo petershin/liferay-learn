@@ -72,11 +72,11 @@ Permissions are created by developers of applications. They define actions Users
 
 ### Application Scoped Permissions
 
-Permissions can be granted on each widget instance that's placed on a page in Liferay DXP, and each administrative application in the Site Menu &rarr; Content and Data section. See [Widget Permissions](./../../site-building/creating-pages/using-widget-pages/configuring-widgets/setting-widget-permissions.md) for details.
+Permissions can be granted on each widget instance that's placed on a page in Liferay DXP, and each administrative application in the Site Menu &rarr; Content and Data section. See [Widget Permissions](./../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md) for details.
 
 ### Asset Scoped Permissions
 
-Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See [Widget Permissions](./../../site-building/creating-pages/using-widget-pages/configuring-widgets/setting-widget-permissions.md) for details.
+Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See [Widget Permissions](./../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md) for details.
 
 ## Related Topics
 

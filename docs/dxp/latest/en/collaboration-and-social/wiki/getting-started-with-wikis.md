@@ -36,4 +36,4 @@ Learn about the features in the _Wiki_ widget:
 * [Creating Wiki Pages](./creating-wiki-pages.md)
 * [Creating a Wiki Node](./creating-a-node.md)
 * [Scoping Your Wikis](./scoping-your-wikis.md)
-* [Exporting and Importing a Wiki](../../site-building/creating-pages/using-widget-pages/configuring-widgets/exporting-importing-widget-data.md)
+* [Exporting and Importing a Wiki](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/exporting-importing-widget-data.md)

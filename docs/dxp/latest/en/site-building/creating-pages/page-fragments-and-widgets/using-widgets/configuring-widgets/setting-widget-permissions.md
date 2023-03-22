@@ -25,4 +25,4 @@ Some widgets have permissions specific to them. For example, Message Boards cont
 ## Additional Information
 
 - [Setting Widget Scopes](./setting-widget-scopes.md)
-- [Understanding Roles and Permissions](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
+- [Understanding Roles and Permissions](../../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

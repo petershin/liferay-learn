@@ -84,6 +84,6 @@ By default, Info Template exports include Widget Templates. However, you can con
 
 ## Additional Information
 
-* [Creating a Widget Template](../creating-pages/using-widget-pages/styling-widgets/creating-a-widget-template.md)
+* [Creating a Widget Template](../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md)
 * [Creating Web Content Templates](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)
 * [Mapping Web Content Templates to Fragments](../../content-authoring-and-management/web-content/web-content-templates/mapping-web-content-templates-to-fragments.md)

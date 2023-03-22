@@ -18,7 +18,7 @@ You may need to export data from a specific widget instance, without regard to c
 Exporting widget data produces a `.lar` file that you can save and import into another widget of the same type.
 
 ```{important}
-Be careful not to confuse widget-specific `.lar` files with Site-specific `.lar` files. See [Exporting/Importing Site Pages and Content](../../../sites/exporting-importing-site-pages-and-content.md) for more information on importing/exporting Site page data.
+Be careful not to confuse widget-specific `.lar` files with Site-specific `.lar` files. See [Exporting/Importing Site Pages and Content](../../../../sites/exporting-importing-site-pages-and-content.md) for more information on importing/exporting Site page data.
 ```
 
 There are two ways to export/import widget content: 
@@ -64,7 +64,7 @@ Second, you can select a Date Range of content that you want to export. Content 
 
 **Last...:** Publishes content based on a set amount of time since the current time. For example, you can set the date range to the past 48 hours, starting from the current time.
 
-By checking the *Content* box, you can choose specific content to export. Options appear for choosing specific kinds of metadata to include. For example, if you have a wiki page with referenced content that you don't want, check the *Wiki Pages* checkbox and uncheck the *Referenced Content* checkbox. Another option is the selection of content types. Two familiar content types in your Liferay instance are Comments and Ratings. If you want to include these entities in your `.lar` file, select *Change* and choose them from the checklist. For more information on managing content types, see [Managing Content Types in Staging](../../../publishing-tools/staging/managing-data-and-content-types-in-staging.md).
+By checking the *Content* box, you can choose specific content to export. Options appear for choosing specific kinds of metadata to include. For example, if you have a wiki page with referenced content that you don't want, check the *Wiki Pages* checkbox and uncheck the *Referenced Content* checkbox. Another option is the selection of content types. Two familiar content types in your Liferay instance are Comments and Ratings. If you want to include these entities in your `.lar` file, select *Change* and choose them from the checklist. For more information on managing content types, see [Managing Content Types in Staging](../../../../publishing-tools/staging/managing-data-and-content-types-in-staging.md).
 
 Third, you can choose to export individual deletions. This exports delete operations performed for content types to the LAR file.
 
@@ -111,4 +111,4 @@ Once you've selected the appropriate options, select *Import*, and your widget's
 ## Additional Information
 
 - [Communication Between Widgets](./communication-between-widgets.md)
-- [Exporting/Importing Site Pages and Content](../../../sites/exporting-importing-site-pages-and-content.md)
+- [Exporting/Importing Site Pages and Content](../../../../sites/exporting-importing-site-pages-and-content.md)

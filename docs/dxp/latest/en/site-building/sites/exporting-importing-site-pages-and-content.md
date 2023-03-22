@@ -6,7 +6,7 @@ uuid: e253af5f-e55d-45f1-a5a9-577d5e8b8443
 Liferay Sites include the Export/Import applications for extracting and transferring Site data as Liferay Archive (LAR) files. You can access these tools at the Site level.
 
 ```{note}
-You can also access export and import functions for individual Site applications and [Page widgets](../creating-pages/using-widget-pages/configuring-widgets/exporting-importing-widget-data.md).
+You can also access export and import functions for individual Site applications and [Page widgets](../creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/exporting-importing-widget-data.md).
 ```
 
 ## Site LAR Properties and Requirements

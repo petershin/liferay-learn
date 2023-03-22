@@ -48,7 +48,7 @@ Administrators of customizable pages have the same two views as site members: th
 
 ## Granting Roles Permission to Customize Pages
 
-By default, site members can make page customizations but non-site members and guests can't. Administrators can update permissions for an existing role or [create a new role](../../../../users-and-permissions/roles-and-permissions/creating-and-managing-roles.md) and assign it to other users to enable them to customize pages. Follow these steps to grant role permissions to customize pages:
+By default, site members can make page customizations but non-site members and guests can't. Administrators can update permissions for an existing role or [create a new role](../../../users-and-permissions/roles-and-permissions/creating-and-managing-roles.md) and assign it to other users to enable them to customize pages. Follow these steps to grant role permissions to customize pages:
 
 1. Open the Liferay DXP Menu and go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 

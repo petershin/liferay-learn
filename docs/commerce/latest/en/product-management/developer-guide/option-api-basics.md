@@ -197,7 +197,7 @@ This API also accepts parameters to filter, paginate, search, and sort the optio
 
 | Sort Query  | Description                       |
 | :---------- | :-------------------------------- |
-| `key:desc`  | Sort by name in descending order. |
+| `key:desc`  | Sort by key in descending order. |
 | `name:desc` | Sort by name in descending order. |
 
 Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.

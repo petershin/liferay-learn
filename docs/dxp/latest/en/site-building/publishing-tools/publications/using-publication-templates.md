@@ -5,17 +5,17 @@ uuid: 50898f75-135c-4b46-ae9d-b32ce3c80351
 
 {bdg-secondary}`Available Liferay 7.4 U63+/GA63+`
 
-To simplify the creation of publications with shared details and contributors, use publication templates. You can set up a list of default users to invite and assign roles, and use tokens to auto-populate names and descriptions.
+To simplify creating publications with shared details and contributors, use publication templates. You can create a list of users to invite and assign roles and use tokens to auto-populate names and descriptions.
 
 To create a publication template,
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Applications* tab, and click *Publications*.
 
-1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) in the Application Bar and select *Templates*.
+1. Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) in the Application Bar and select *Templates*.
 
    ![Open the Publications application, click the Actions button in the Application Bar, and select Templates.](./using-publication-templates/images/01.png)
 
-1. Click the *Add* button (![Add button](../../../images/icon-add.png)).
+1. Click *Add* (![Add button](../../../images/icon-add.png)).
 
 1. Enter a name and description for the template.
 

@@ -17,11 +17,11 @@ Before upgrading your Liferay version, ensure you've published all active public
 
 ## Creating a New Publication
 
-1. Click the Publications *drop-down menu*, and select *Create New Publication*.
+1. Click the _Publications_ drop-down menu, and select *Create New Publication*.
 
    ![Click Create New Publication in the Publications drop-down menu.](./creating-and-managing-publications/images/01.png)
 
-   Alternatively, open the Publications application and click the *Add* button (![Add button](../../../images/icon-add.png)) in the *Ongoing* tab.
+   Alternatively, open the Publications application and click *Add* (![Add button](../../../images/icon-add.png)) in the *Ongoing* tab.
 
 1. Enter a *name* and *description* for the publication.
 
@@ -47,7 +47,7 @@ In the *Ongoing* tab, you can view a table of all active, unpublished publicatio
 
 ![The Ongoing tab lists all active, unpublished publications.](./creating-and-managing-publications/images/03.png)
 
-From here, you can click a publication's *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) to perform the following actions:
+From here, you can click a publication's Actions button ( ![Actions button](../../../images/icon-actions.png) ) to perform the following actions:
 
 **Work on Publication**: Select the publication to add changes to it. Once selected, you can easily toggle between the publication and production via the Publications drop-down menu. See [Making Changes in a Publication](./making-and-publishing-changes.md#making-changes-in-a-publication) for more information.
 
@@ -75,7 +75,7 @@ In the *Schedule* tab, you can view a table of all scheduled publications that y
 
 ![The Schedule tab lists all scheduled publications for your instance.](./creating-and-managing-publications/images/04.png)
 
-Once scheduled, changes cannot be added to a publication. However, you can click its *Actions* button (![Actions button](../../../images/icon-actions.png)) to perform the following actions:
+Once scheduled, changes cannot be added to a publication. However, you can click its Actions button (![Actions button](../../../images/icon-actions.png)) to perform the following actions:
 
 **Unschedule**: Cancel the scheduled publishing and return the publication to the *In Progress* status.
 

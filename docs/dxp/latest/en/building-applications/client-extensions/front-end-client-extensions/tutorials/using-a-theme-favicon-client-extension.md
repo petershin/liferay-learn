@@ -5,7 +5,7 @@ uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-With a theme favicon client extension, you can override the theme's favicon on the selected page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace) to build and deploy your client extension.
+With a theme favicon client extension, you can override the theme's favicon on the selected page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension.
 
 ## Prerequisites
 
@@ -20,34 +20,33 @@ To start developing client extensions,
 1. Download and unzip the sample workspace:
 
    ```bash
-   curl -J -O https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.sample.workspace\&\v\=LATEST\&p\=zip
+   curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
    ```
 
    ```bash
-   unzip com.sample.workspace-20230217.1154.zip
+   unzip com.liferay.sample.workspace-latest.zip
    ```
 
 Now you have the tools to deploy your first theme favicon client extension.
 
 ## Examine the Client Extension
 
-The theme favicon client extension is in the sample workspace's `client-extensions/sample-theme-favicon/` folder. It is defined in the `client-extension.yaml` file:
+The theme favicon client extension is in the sample workspace's `client-extensions/liferay-sample-theme-favicon/` folder. It is defined in the `client-extension.yaml` file:
 
 ```yaml
-sample-theme-favicon:
-    name: Sample Theme Favicon
+liferay-sample-theme-favicon:
+    name: Liferay Sample Theme Favicon
     type: themeFavicon
     url: favicon.ico
 ```
 
-The client extension has the ID `sample-theme-favicon` and contains the key configurations for a theme favicon client extension, including the type and the favicon file to add. See the [Theme Favicon YAML Configuration Reference](../theme-favicon-yaml-configuration-reference.md) for more information on the available properties.
+The client extension has the ID `liferay-sample-theme-favicon` and contains the key configurations for a theme favicon client extension, including the type and the favicon file to add. See the [Theme Favicon YAML Configuration Reference](../theme-favicon-yaml-configuration-reference.md) for more information on the available properties.
 
 It also contains the `assemble` YAML block:
 
 ```yaml
 assemble:
     - from: assets
-      include: "**/*"
       into: static
 ```
 
@@ -77,7 +76,7 @@ To deploy all client extensions in the workspace simultaneously, run the command
 Confirm the deployment in your Liferay instance's console:
 
 ```bash
-STARTED sample-theme-favicon_1.0.0
+STARTED liferay-sample-theme-css_1.0.0
 ```
 
 ## Use the Client Extension on a Page

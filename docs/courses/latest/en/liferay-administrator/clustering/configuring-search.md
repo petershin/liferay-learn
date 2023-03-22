@@ -4,27 +4,36 @@ uuid: 01d97dd4-1c42-46b3-8e96-458398fcb4a5
 ---
 # Configuring Search
 
-The Liferay cluster requires the Elasticsearch search engine to be accessible by each node. Follow the steps below to configure Elasticsearch. See [Getting Started with Elasticsearch](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch) to learn more.
+Liferay uses Elasticsearch for search and for indexing content. To run a Liferay cluster, Elasticsearch needs to be installed on a separate server that is configured to be accessible by each node. Follow the steps below to configure Elasticsearch. See [Getting Started with Elasticsearch](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch) to learn more.
 
 ## Running Elasticsearch
 
-1. Create the following folder for the different configuration files to reside:
+1. Create a local folder for storing Elasticsearch's data volume. For example,
 
-   `~/liferay-services/elasticsearch/es_data_volume`
+   ```bash
+   mkdir -p [your_folder]/elasticsearch/es_data_volume
+   ```
 
 1. Start a new Elasticsearch container.
 
    ```bash
-   docker run -it --name elasticsearch -p 9200:9200 -p 9300:9300 -e cluster.name=LiferayElasticsearchCluster -e ES_JAVA_OPTS="-Xms512m -Xmx512m" -v $(pwd)/docker_services/services/elasticsearch/es_data_volume:/usr/share/elasticsearch/data elasticsearch:8.6.2
+   docker run -it \
+      -e cluster.name=LiferayElasticsearchCluster \
+      -e ES_JAVA_OPTS="-Xms512m -Xmx512m" \
+      --name elasticsearch \
+      -p 9200:9200 \
+      -p 9300:9300 \
+      -v $(pwd)/elasticsearch/es_data_volume:/usr/share/elasticsearch/data \
+      elasticsearch:8.6.2
    ```
 
-1. Install the required Elasticsearch plugins.
+1. Install Elasticsearch plugins. 
 
    ```bash
    docker exec -it elasticsearch bash -c '/usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-kuromoji && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-smartcn && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-stempel'
    ```
 
-1. Restart the docker container.
+   Note, though not required, these provide additional search support for Unicode and other languages.
 
 The next step is [configuring the DXP cluster](./configuring-the-dxp-cluster.md).
 

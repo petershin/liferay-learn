@@ -4,86 +4,39 @@ uuid: 134cc9ab-cbad-40b2-b44b-b085708bf0f8
 ---
 # Configuring the Database
 
-Liferay supports many of the popular database software. Note, a Liferay bundle uses an embedded HSQL database by default but we recommend using a full-featured database for your production environment. See [configuring a database](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database) to learn more.
+Liferay supports many database software options such as MySQL or MariaDB. Note, a Liferay bundle uses an embedded HSQL database by default but it is recommended to use a full-featured database for your production environment. See [configuring a database](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database) to learn more.
 
-## Setup a Docker Network
+## Running MariaDB in Docker
 
-First create a docker network for the different containers to be able to connect to each other.
-
-1. Open terminal and run the following command:
+1. In your terminal, run the following,
 
    ```bash
-   docker network create lr-network --subnet=172.30.30.0/24 --ip-range=172.30.30.128/25 --gateway=172.30.30.1
+   docker run --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.7
    ```
 
-1. Verify that `lr-network` was created:
+1. Sign in to the database server.
 
    ```bash
-   docker network ls
+   docker exec -it some-mariadb bash -c "/usr/bin/mysql -uroot -pmy-secret-pw"
    ```
 
-## Running MySQL in Docker
-
-1. Create the following folder for the different configuration files to reside:
-
-   `~/liferay-services/database`
-
-1. Inside the folder, create the following `docker-compose.yml` file. 
-
-   ```yaml
-   services:
-     mysql:
-      image: mysql:8.0
-      container_name: lr-mysql
-      command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8 --collation-server=utf8_general_ci --lower_case_table_names=1
-      restart: always
-      environment:
-         MYSQL_DATABASE: lportal
-         MYSQL_ROOT_PASSWORD: test
-      hostname: lr-mysql
-      networks:
-         - lr-network
-      ports:
-         - 127.0.0.1:3306:3306
-      volumes:
-         - ./container_files/mysql:/var/lib/mysql
-      ulimits:
-         nproc: 65535
-         nofile:
-         soft: 20000
-         hard: 40000
-      healthcheck:
-         test: mysql -h localhost -uroot -p$$MYSQL_ROOT_PASSWORD --protocol tcp -e 'select 1' 2>&1 | grep -qvF "Can't connect"
-         interval: 5s
-         retries: 10
-         start_period: 5s
-   networks:
-      lr-network:
-      external: true
-   ```
-
-1. Navigate to this folder in terminal. Run the following command:
+1. Create a database that will be used by the cluster.
 
    ```bash
-   docker compose up -d
+   create database dxp_db character set utf8;
    ```
 
-1. Verify that MySQL is running by accessing the container. Run the following command:
-
-   ```bash
-   docker exec -it lr-mysql bash -c "/usr/bin/mysql -uroot -ptest"
-   ```
-
-1. In the MySQL terminal, run the following command:
+1. Verify the creation of the database with the following command:
 
    ```bash
    show databases;
    ```
 
-   A list of databases should be listed including the `lportal` database that will be used in the next step.
+   A list of databases should be listed including the `dxp_db` database.
 
 Next, we will [configure Elasticsearch](./configuring-search.md)
 
 ## Relevant Concepts
 
 - [Configuring a Database](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database)
+- [Database Configuration for Cluster Nodes](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/database-configuration-for-cluster-nodes)

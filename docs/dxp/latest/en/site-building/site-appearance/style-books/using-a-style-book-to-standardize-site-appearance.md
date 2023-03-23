@@ -67,7 +67,7 @@ Use the two drop-down menus at the top of the screen to select what components t
 
 Previewing a Collection of Page Fragments shows all Fragments in the Collection. The preview displays Fragments with multiple (selectable) configuration options with an instance of each option, so that you can preview your Style Book with any of them.
 
-![If you are previewing the Style Book's effect on Page Fragments, then you can preview any configuration of the Fragments from the chosen Collection.](./using-a-style-book-to-standardize-site-appearance/images/04.png)
+![If you are previewing the Style Book's effect on Page Fragments, you can preview any configuration of the Fragments from the chosen Collection.](./using-a-style-book-to-standardize-site-appearance/images/04.png)
 
 ### Customizing Your Style Book's Colors
 
@@ -108,7 +108,7 @@ You can place the `Style Guide Sample` widget on your pages to help test out the
 The categories listed here are available as options for the Classic theme.
 
 ```{tip}
-When modifying options not related to colors, like width, margins, and padding, you can choose from a set of predefined units or specify a custom unit. This flexibility allows for more precise control over the styling. Some options include pixels(PX), percentages(%), em width(EM), and root em(REM).
+When modifying options like width, margins, and padding that aren't related to colors, you can choose from a set of predefined units or specify a custom unit. Some options include pixels(PX), percentages(%), em width(EM), and root em(REM).
 ```
 
 ### Color System
@@ -128,7 +128,7 @@ Adjust the spacing between the main elements on your pages with the options in t
 ![Change the colors used for displays or UI elements with options under the Color System category.](./using-a-style-book-to-standardize-site-appearance/images/08.png)
 
 ```{tip}
-When modifying tokens not related to colors, like width, margins, and padding, you can choose from a set of predefined units or specify a custom unit. This flexibility allows for more precise control over the styling. Some options include pixels(PX), percentages(%), em width(EM), and root em(REM).
+When modifying tokens like width, margins, and padding that aren't related to colors, you can choose from a set of predefined units or specify a custom unit. This flexibility allows for more precise control over the styling. Some options include pixels(PX), percentages(%), em width(EM), and root em(REM).
 ```
 
 ### General

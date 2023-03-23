@@ -23,7 +23,7 @@ Configuration values inserted into the FreeMarker context honor the defined `dat
 
 ## Text Configuration
 
-This JSON configuration creates an input text field you can implement for cases where you must manually input a text option:
+This JSON configuration creates an input text field you can implement for cases where you must input a text option manually:
 
 ```json
 {
@@ -165,7 +165,7 @@ When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is repla
 
 {bdg-secondary}`Available Liferay 7.4 U44 and GA44+`
 
-The `length` configuration type creates a field where you can enter a number and choose from predefined units or specify your own custom units for settings like width, margins, and padding. This provides greater flexibility for precise control over styling.
+The `length` configuration type creates a field where you can enter a number and choose predefined units or specify your own units for settings like width, margins, and padding. 
 
 This JSON sample shows a field using the `length` configuration type. It includes properties defining the name, label, and default value.
 
@@ -186,9 +186,11 @@ This JSON sample shows a field using the `length` configuration type. It include
 }
 ```
 
-In the user interface, you have the option to choose from the available units or specify a custom unit.
+In the user interface, you can choose from the available units or specify a custom unit.
 
-![A field labeled 'Size' from a custom fragment displaying a dropdown of available units. The field is using the 'length' configuration.](./fragment-configuration-types-reference/images/10.png)
+<!-- The below screenshot is way too big. Please reduce. -Rich --> 
+
+![A field labeled 'Size' from a custom fragment uses the length configuration to show a drop-down of available units.](./fragment-configuration-types-reference/images/10.png)
 
 ## Item Selector Configuration
 
@@ -458,7 +460,7 @@ In addition to the `itemType`, you can specify the `itemSubtype` in the configur
 
 ## Color Palette Configuration
 
-The color palette JSON configuration creates a color selector you can implement for cases where you must select a color. Unlike the [color picker configuration](#color-picker-configuration), it only provides options based on the Theme Colors configured in the currently used [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)'s color system.
+The color palette JSON configuration creates a color selector you can implement for cases where you must select a color. Unlike the [color picker configuration](#color-picker-configuration), it only provides options based on the theme colors configured in the currently used [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)'s color system.
 
 This configuration creates a color palette field called `textColor`:
 
@@ -485,7 +487,7 @@ This configuration creates a color palette field called `textColor`:
 
 The `colorPalette` type stores an object with two values: `cssClass` and `rgbValue`.
 
-For example, if you implement the snippet above, you can use it in the FreeMarker context like this:
+For example, if you implement the snippet above, you can use it in FreeMarker:
 
 ```html
 <h3 class="text-${configuration.textColor.cssClass}">Example</h3>

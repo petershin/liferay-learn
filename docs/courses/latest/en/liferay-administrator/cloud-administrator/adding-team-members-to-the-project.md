@@ -19,9 +19,7 @@ Help Marcus add Kyle Klein as a contributor to the team by sending an invitation
 
    ![Send an invitation to your team member's email address via the Team page.](./adding-team-members-to-the-project/images/01.png)
 
-1. Select *Contributor* from the Role drop-down menu for the appropriate role.
-
-<!-- We should link to a description of the roles here. -Rich --> 
+1. Select *Contributor* from the Role drop-down menu for the appropriate [role](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles#understanding-team-roles).
 
 1. Click *Send Invite*.
 
@@ -30,13 +28,11 @@ Liferay Cloud sends an invitation to the provided email address to join your pro
 Repeat this process for your other environments (such as `uat`) to make sure your team member has access to all of the appropriate environments.
 
 ```{note}
-Give your team members roles that are appropriate to their role in each environment. For example, developers should have the Admin role in a `dev` environment if they are expected to handle all tasks in that environment. Check [Environment Teams and Roles](https://learn.liferay.com/liferay-cloud/latest/en/manage-and-optimize/environment-teams-and-roles.html for more information.
+Give your team members roles that are appropriate to their role in each environment. For example, developers should have the Admin role in a `dev` environment if they are expected to handle all tasks in that environment. Check [Environment Teams and Roles](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles for more information.
 ```
 
 Next, you'll set up your GitHub repository so that you can push and deploy changes to your services.
 
 ## Related Concepts
 
-<!-- Please fix the link below so it points to the new location. -Rich -->
-
-* [Environment Teams and Roles](https://learn.liferay.com/liferay-cloud/latest/en/manage-and-optimize/environment-teams-and-roles.html)
+* [Environment Teams and Roles](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles)

@@ -13,13 +13,9 @@ When your project has been provisioned, you receive an email from **liferay.clou
 
 ![Click the Accept Invite link in the invitation to gain access to the Liferay Cloud console.](./accessing-the-liferay-cloud-console/images/01.png)
 
-<!-- Please GIMPify/photoshop the above screenshot so the project says delectablebonsai. -Rich --> 
-
 The link takes you to the [Liferay Cloud console](https://console.liferay.cloud/). You must log in to accept the invitation. If you don't yet have an account, click *Sign up* and fill out the form.
 
 ![Click Sign up and fill out the form if you do not yet have an account for the console.](./accessing-the-liferay-cloud-console/images/02.png)
-
-<!-- The above screenshot is huge. Please reduce. -Rich --> 
 
 Once you have signed in, the invitation is accepted and you have full access to the project. Logging into the console at any time (or going to https://console.liferay.cloud/projects) shows a list of all the environments you can access. 
 
@@ -33,7 +29,5 @@ Take some time to navigate around the console to familiarize yourself with the a
 
 ## Related Concepts
 
-<!-- Please fix the links below so they point to their new locations. -Rich --> 
-
-* [Check Setup Emails](https://learn.liferay.com/liferay-cloud/latest/en/getting-started/initial-setup-overview.html#check-setup-emails)
-* [Access the Liferay Cloud Console](https://learn.liferay.com/liferay-cloud/latest/en/getting-started/initial-setup-overview.html#access-the-liferay-cloud-console)
+* [Check Setup Emails](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#check-setup-emails)
+* [Access the Liferay Cloud Console](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#access-the-liferay-cloud-console)

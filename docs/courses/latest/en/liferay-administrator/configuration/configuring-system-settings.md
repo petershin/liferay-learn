@@ -3,7 +3,11 @@ uuid: ed60ae33-a661-4593-844a-cb91c1379427
 ---
 # Configuring System Settings
 
+<!-- We should put a badge here that marks this as a topic for LXC-SM or On Prem only. -Rich -->
+
 System settings apply across instances, sites, or widgets. Settings made here apply across your entire environment. Some of these cannot be changed at lower scopes (for example, configuring antivirus) and some become defaults that can be overridden at lower scopes. See [System Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html) to learn more.
+
+<!-- Please update the link above, as it has changed. -Rich --> 
 
 ### System Settings in LXC
 
@@ -36,6 +40,8 @@ Follow the [ClamAV Documentation](https://docs.clamav.net/) to install and run C
 The next step is [configuring virtual instances](./configuring-virtual-instances.md).
 
 ## Relevant Concepts
+
+<!-- Please update the links below. -Rich --> 
 
 - [System Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html)
 - [Enabling Antivirus Scanning for Uploaded Files](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.html)

@@ -28,4 +28,3 @@ docs/**/liferay-????.zip/yarn.lock
 learn-dxp-importer/build
 node_modules
 node_modules_cache
-site/BREAKING_CHANGES.markdown

@@ -87,7 +87,7 @@ The other cURL commands use similar JSON arguments.
 
 The `Channel_POST_ToInstance.java` class adds a channel by calling the `ChannelResource` service.
 
-```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/java/Channel_POST_ToInstance.java
+```{literalinclude} ./channel-api-basics/resources/liferay-a2t5.zip/java/Channel_POST_ToInstance.java
    :dedent: 1
    :language: java
    :lines: 9-25
@@ -129,7 +129,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/curl/Channels_GET_FromInstance.sh
+```{literalinclude} ./channel-api-basics/resources/liferay-a2t5.zip/curl/Channels_GET_FromInstance.sh
    :language: bash
 ```
 
@@ -143,7 +143,7 @@ java -classpath .:* Channels_GET_FromInstance
 
 Code:
 
-```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/java/Channels_GET_FromInstance.java
+```{literalinclude} ./channel-api-basics/resources/liferay-a2t5.zip/java/Channels_GET_FromInstance.java
    :dedent: 1
    :language: java
    :lines: 9-19
@@ -188,7 +188,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/curl/Channel_GET_ById.sh
+```{literalinclude} ./channel-api-basics/resources/liferay-a2t5.zip/curl/Channel_GET_ById.sh
    :language: bash
 ```
 
@@ -202,7 +202,7 @@ java -classpath .:* -DchannelId=1234 Channel_GET_ById
 
 Code:
 
-```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/java/Channel_GET_ById.java
+```{literalinclude} ./channel-api-basics/resources/liferay-a2t5.zip/java/Channel_GET_ById.java
    :dedent: 1
    :language: java
    :lines: 8-18
@@ -224,7 +224,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/curl/Channel_PATCH_ById.sh
+```{literalinclude} ./channel-api-basics/resources/liferay-a2t5.zip/curl/Channel_PATCH_ById.sh
    :language: bash
 ```
 
@@ -238,7 +238,7 @@ java -classpath .:* -DchannelId=1234 Channel_PATCH_ById
 
 Code:
 
-```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/java/Channel_PATCH_ById.java
+```{literalinclude} ./channel-api-basics/resources/liferay-a2t5.zip/java/Channel_PATCH_ById.java
    :dedent: 1
    :language: java
    :lines: 9-23
@@ -258,7 +258,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/curl/Channel_DELETE_ById.sh
+```{literalinclude} ./channel-api-basics/resources/liferay-a2t5.zip/curl/Channel_DELETE_ById.sh
    :language: bash
 ```
 
@@ -272,7 +272,7 @@ java -classpath .:* -DchannelId=1234 Channel_DELETE_ById
 
 Code:
 
-```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/java/Channel_DELETE_ById.java
+```{literalinclude} ./channel-api-basics/resources/liferay-a2t5.zip/java/Channel_DELETE_ById.java
    :dedent: 1
    :language: java
    :lines: 8-17

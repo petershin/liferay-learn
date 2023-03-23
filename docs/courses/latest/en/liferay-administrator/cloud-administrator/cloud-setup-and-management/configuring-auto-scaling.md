@@ -3,11 +3,13 @@ uuid: 31cea680-b175-419d-b30f-d17851d3c89e
 ---
 # Configuring Auto-scaling
 
-<!-- I'm guessing we probably need the note here about provisioning also. -Rich --> 
-
 Once you've enabled production environment clustering with any number of nodes, you can configure auto-scaling to better handle site traffic during peak hours.
 
 Help Marcus configure auto-scaling by following these steps.
+
+```{important}
+You are billed quarterly based on the usage of instances automatically added from auto-scaling. Contact your Liferay account manager for details on the rates for these additional instances.
+```
 
 ## Enable Auto-scaling in the Console
 

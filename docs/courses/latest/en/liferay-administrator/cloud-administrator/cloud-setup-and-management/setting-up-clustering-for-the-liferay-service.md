@@ -3,9 +3,11 @@ uuid: c1dd2bde-e995-4b03-88e1-8e15adeb7b17
 ---
 # Setting Up Clustering for the Liferay Service
 
-<!-- As discussed, please put an admonition here that explains the extra nodes have to be provisioned first. -Rich --> 
-
 Because Delectable Bonsai's website draws millions of views, it must be clustered to handle the traffic. Here, you'll learn how to configure a three node cluster of the production environment.
+
+```{important}
+You must have an extra Liferay DXP instance provisioned as an add-on for your Liferay Cloud project so that you can cluster your Liferay service and add another node to it. Contact your Liferay account manager for details.
+```
 
 ## Set the Clustering Properties in LCP.json
 

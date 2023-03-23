@@ -49,7 +49,7 @@ Once Liferay is running,
    ![Confirm that a new specification was added.](./specification-api-basics/images/01.png)
 
    ```{note}
-   Currently, you cannot add a specification label to a specification group or create a specification group through the API. You must do it through the Applications menu.
+   Currently, the API cannot add a specification label to a specification group or create a specification group. You must instead use the Specifications UI. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Specifications*. See [Specification Groups](../creating-and-managing-products/products/specifications.md#specification-groups) for more information.
    ```
 
 1. Alternatively, call the REST service using the Java client. Navigate into the `java` folder and compile the source files:
@@ -166,7 +166,7 @@ This API also accepts parameters to filter, paginate, search, and sort the speci
 | Filter Query     | Description                           |
 | :--------------- | :------------------------------------ |
 | `key eq 'foo'`   | The specification key must equal foo. |
-| `title eq 'Bar'` | The specification title must be Bar   |
+| `title eq 'Bar'` | The specification title must be Bar.   |
 
 | Sort Query  | Description                       |
 | :---------- | :-------------------------------- |

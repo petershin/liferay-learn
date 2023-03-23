@@ -193,7 +193,7 @@ This API also accepts parameters to filter, paginate, search, and sort the optio
 | Filter Query            | Description                      |
 | :---------------------- | :------------------------------- |
 | `name eq 'Able'`        | The option name must equal Able. |
-| `fieldType eq 'select'` | The option type must be select   |
+| `fieldType eq 'select'` | The option type must be select.   |
 
 | Sort Query  | Description                       |
 | :---------- | :-------------------------------- |

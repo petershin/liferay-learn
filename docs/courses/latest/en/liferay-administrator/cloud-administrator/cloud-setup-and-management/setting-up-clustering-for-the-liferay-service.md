@@ -3,7 +3,7 @@ uuid: c1dd2bde-e995-4b03-88e1-8e15adeb7b17
 ---
 # Setting Up Clustering for the Liferay Service
 
-Because Delectable Bonsai's website draws millions of views, it must be clustered to handle the traffic. Here, you'll learn how to configure a three node cluster of the production environment.
+Because Delectable Bonsai's website draws millions of views, it must be clustered to handle the traffic. Here, you'll learn how to configure a two-node cluster of the production environment.
 
 ```{important}
 You must have an extra Liferay DXP instance provisioned as an add-on for your Liferay Cloud project so that you can cluster your Liferay service and add another node to it. Contact your Liferay account manager for details.
@@ -57,21 +57,21 @@ Enable clustering and set the scale value in your Liferay service's configuratio
     lcp deploy --project=[project-name] --environment=prd
     ```
 
-The Liferay service restarts with clustering enabled and the `scale` variable initialized. However, the scale is still set to only one node. Continue to update the scale to the desired three nodes.
+The Liferay service restarts with clustering enabled and the `scale` variable initialized. However, the scale is still set to only one node. Continue to update the scale to the desired two nodes.
 
 ## Update the Clustering Scale
 
-Now that you have initialized the clustering scale, update it to three nodes and create a new build to deploy it.
+Now that you have initialized the clustering scale, update it to two nodes and create a new build to deploy it.
 
 1. In your project repository, navigate to the `liferay/` folder and open the `LCP.json` file.
 
-1. Update the value of the `scale` property to `3`.
+1. Update the value of the `scale` property to `2`.
 
    ```json
     {
         "kind": "Deployment",
         "id": "liferay",
-        "scale": 3
+        "scale": 2
     }
    ```
 
@@ -82,7 +82,7 @@ Now that you have initialized the clustering scale, update it to three nodes and
    ```
 
    ```bash
-   git commit -m "Enable clustering and set the clustering scale to 3."
+   git commit -m "Enable clustering and set the clustering scale to 2."
    ```
 
    ```bash
@@ -111,7 +111,7 @@ Now that you have the necessary configuration for clustering, deploy the configu
 
 1. Click *Deploy Build*.
 
-Once your services restart, clustering is enabled, and you have three nodes of the Liferay service.
+Once your services restart, clustering is enabled, and you have two nodes of the Liferay service.
 
 Next, you'll configure the Liferay service to auto-scale for even more instances when they are needed.
 

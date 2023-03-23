@@ -25,7 +25,7 @@ Use the Liferay Cloud console to enable auto-scaling for your production environ
 
 1. Click *Enable Auto Scaling*.
 
-Auto-scaling is now enabled. You have a minimum of three nodes because of your clustering configuration, and if usage increases, more nodes are added up to the default maximum of ten.
+Auto-scaling is now enabled. You have a minimum of two nodes because of your clustering configuration, and if usage increases, more nodes are added up to the default maximum of ten.
 
 ## Set the Maximum Number of Instances
 

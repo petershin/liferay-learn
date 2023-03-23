@@ -102,9 +102,7 @@ Next, you'll use the repository to complete your first push and deployment.
 
 ## Related Concepts
 
-<!-- Please fix the links below to point to their new locations. Thanks! -Rich --> 
-
-* [Configuring Your GitHub Repository](https://learn.liferay.com/liferay-cloud/latest/en/getting-started/configuring-your-github-repository.html)
-* [Command-Line Tool](https://learn.liferay.com/liferay-cloud/latest/en/reference/command-line-tool.html)
-* [Configuring Your Bitbucket Repository](https://learn.liferay.com/liferay-cloud/latest/en/getting-started/configuring-your-bitbucket-repository.html)
-* [Configuring Your GitLab Repository](https://learn.liferay.com/liferay-cloud/latest/en/getting-started/configuring-your-gitlab-repository.html)
+* [Configuring Your GitHub Repository](https://learn.liferay.com/w/liferay-cloud/getting-started/configuring-your-github-repository)
+* [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)
+* [Configuring Your Bitbucket Repository](https://learn.liferay.com/w/liferay-cloud/getting-started/configuring-your-bitbucket-repository)
+* [Configuring Your GitLab Repository](https://learn.liferay.com/w/liferay-cloud/getting-started/configuring-your-gitlab-repository)

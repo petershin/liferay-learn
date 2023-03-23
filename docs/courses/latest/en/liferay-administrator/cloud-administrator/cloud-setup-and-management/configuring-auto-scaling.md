@@ -85,8 +85,6 @@ Next, you'll enable Dynatrace integration to keep track of your project's usage 
 
 ## Related Concepts
 
-<!-- Please fix the links below. The fewer redirects we need, the better. -Rich --> 
-
-* [Auto-scaling](https://learn.liferay.com/liferay-cloud/latest/en/manage-and-optimize/auto-scaling.html)
-* [Deploying to the Liferay Service](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html)
-* [Deploying Changes via the Liferay Cloud Console](https://learn.liferay.com/liferay-cloud/latest/en/build-and-deploy/deploying-changes-via-the-liferay-cloud-console.html)
+* [Auto-scaling](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/auto-scaling)
+* [Deploying to the Liferay Service](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
+* [Deploying Changes via the Liferay Cloud Console](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)

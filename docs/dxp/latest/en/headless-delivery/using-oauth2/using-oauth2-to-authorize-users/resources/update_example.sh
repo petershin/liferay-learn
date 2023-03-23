@@ -2,4 +2,4 @@
 
 source $(git rev-parse --show-toplevel)/_common.sh
 
-generate_remote_app c2b6
+generate_custom_element c2b6

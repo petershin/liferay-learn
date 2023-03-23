@@ -30,7 +30,7 @@ function download_nexus_jar {
 	curl -L "https://repository-cdn.liferay.com/nexus/service/local/artifact/maven/redirect?a=${1}&g=${group}&r=liferay-public-releases&v=LATEST" -o $(ls -d liferay*.zip | head -n1)/java/${1}.jar
 }
 
-function generate_remote_app {
+function generate_custom_element {
 	git clean -dfx .
 
 	mkdir liferay-${1}.zip

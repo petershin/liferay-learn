@@ -2,4 +2,4 @@
 
 source $(git rev-parse --show-toplevel)/_common.sh
 
-generate_remote_app j1v3
+generate_custom_element j1v3

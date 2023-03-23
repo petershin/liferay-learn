@@ -3,7 +3,7 @@ uuid: 0b7c4188-63f9-4421-89ae-fe3a71c781d0
 ---
 # Channel API Basics
 
-You can manage channels from the Applications menu or with REST APIs. Call the [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) services to create and manage channels.
+You can manage channels from the Applications menu or with REST APIs. Call the [headless-commerce-admin-channel](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-channel/v1.0/openapi.json) services to create and manage channels.
 
 ## Adding a Channel
 
@@ -22,7 +22,7 @@ Once Liferay is running,
    unzip liferay-a2t5.zip
    ```
 
-1. Channels are scoped to an instance, and each channel must specify a `currencyCode`, `name` and `type`. Liferay provides one type (`site`) out-of-the-box.
+1. Channels are scoped to an instance, and each channel must specify a `currencyCode`, `name`, and `type`. Liferay provides one type (`site`) out-of-the-box.
 
    Use the cURL script to add a new channel. On the command line, navigate to the `curl` folder. Execute the `Channel_POST_ToInstance.sh` script.
 
@@ -85,7 +85,7 @@ The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `Channel_POST_ToInstance.java` class adds an channel by calling the `ChannelResource` service.
+The `Channel_POST_ToInstance.java` class adds a channel by calling the `ChannelResource` service.
 
 ```{literalinclude} ./channels-api-basics/resources/liferay-a2t5.zip/java/Channel_POST_ToInstance.java
    :dedent: 1

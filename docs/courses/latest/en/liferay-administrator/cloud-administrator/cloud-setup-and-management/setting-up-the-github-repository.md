@@ -55,7 +55,7 @@ Next, configure a webhook so Liferay Cloud can access your repository.
 
 1. Click *Add Webhook*.
 
-1. In the *Payload URL* field, add the domain of your Liferay Cloud `infra` environment's CI service with `github-webhook/` at the end (e.g., `https://ci-bonsai-infra.lfr.cloud/github-webhook/` for the `bonsai` project).
+1. In the *Payload URL* field, add the domain of your Liferay Cloud `infra` environment's CI service with `github-webhook/` at the end (e.g., `https://ci-delectablebonsai-infra.lfr.cloud/github-webhook/` for the `delectablebonsai` project).
 
 1. In the *Content type* drop-down menu, select *application/json*.
 

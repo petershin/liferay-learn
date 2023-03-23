@@ -48,8 +48,6 @@ function generate_custom_element {
 
 		if [ -e ../liferay-${1}-overlay/package.json ]
 		then
-			rm -fr ./${1}-remote-app/node_modules
-
 			jq -s '.[0] * .[1]' ../liferay-${1}-overlay/package.json ./${1}-remote-app/package.json > package.json
 
 			rm -f ./${1}-remote-app/package.json
@@ -58,7 +56,11 @@ function generate_custom_element {
 
 			cd ${1}-remote-app
 
-			yarn install
+			rm -fr node_modules
+
+			yarn install && yarn build
+
+			rm -fr node_modules
 
 			cd ..
 		fi

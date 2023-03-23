@@ -2,6 +2,7 @@
 toc:
   - ./tutorials/using-a-javascript-client-extension.md
   - ./tutorials/using-a-css-client-extension.md
+  - ./tutorials/using-a-theme-favicon-client-extension.md
   - ./tutorials/creating-a-basic-custom-element.md
   - ./tutorials/using-routes-with-custom-elements.md
 uuid: 8e6f2308-09b7-437f-8e69-34307388b844

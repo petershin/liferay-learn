@@ -51,8 +51,10 @@ Resource permissions grant access to view and act on resources in the object app
 | View | View entries. |
 
 ```{note}
-When users create object entries, they are assigned the owner role for their entries automatically, which includes the above permissions.
+When users create object entries, they are assigned the owner role for them automatically, which includes the above permissions.
 ```
+
+If you add [standalone actions](../creating-and-managing-objects/actions/using-manual-actions.md) to an object, Liferay generates resource permissions for each one so you can manage which roles can trigger the action. These permissions follow the `action.{actionName}` pattern and appear here in the UI.
 
 ## Managing Permissions for Individual Object Entities
 

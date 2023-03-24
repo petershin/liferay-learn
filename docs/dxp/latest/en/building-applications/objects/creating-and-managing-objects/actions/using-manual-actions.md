@@ -3,10 +3,12 @@ uuid: 29b299d7-f4aa-4ce7-b016-a16414b6dc83
 ---
 # Using Manual Actions
 
-When you use a standalone trigger in an object action, the action becomes manual, meaning it must be explicitly run in one of two ways:
+{bdg-secondary}`Available Liferay 7.4 U60+/GA60+`
 
-* by a user via the object definition's UI
-* with a call to the headless API
+When you use the standalone trigger for object actions, the actions become manual instead of automatic. You can trigger these actions in one of two ways:
+
+* via the object's UI
+* using dedicated action APIs
 
 This example creates a standalone action for sending notifications.
 
@@ -36,13 +38,19 @@ To view these APIs,
 
 1. Click *REST Applications* and select the desired object definition. Custom objects use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/tickets`).
 
-For each standalone action, Liferay generates two PUT APIs, one that uses the entry's ID and another that uses the entry's External Reference Code (ERC).
+For each standalone action, Liferay generates two PUT APIs, one that uses the entry's ID and another that uses the entry's external reference code (ERC).
 
 ![Liferay generates two PUT APIs, one that uses the entry's ID and another that uses the entry's ERC.](./using-manual-actions/images/03.png)
 
 Calling either API triggers the action for the specified entry.
 
 ![Calling the API triggers the action for the specified entry.](./using-manual-actions/images/04.png)
+
+## Action Permissions
+
+Liferay automatically generates permissions for standalone actions so you can manage which roles can trigger them. Each permission follows the `action.{actionName}` naming pattern (e.g., `action.sendReminder`). See [Permissions Framework Integration](../../understanding-object-integrations/permissions-framework-integration.md) for more information on object permissions.
+
+![Standalone permissions use the action.{actionName} naming pattern.](./using-manual-actions/images/05.png)
 
 ## Additional Information
 

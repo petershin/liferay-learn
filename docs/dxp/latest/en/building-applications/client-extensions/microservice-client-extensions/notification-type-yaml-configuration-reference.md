@@ -11,7 +11,7 @@ This `client-extension.yaml` file defines a notification type and an OAuth user 
 
 ```yaml
 zebra-notification-type:
-oAuth2ApplicationExternalReferenceCode: zebra-oauth-user-agent
+    oAuth2ApplicationExternalReferenceCode: zebra-oauth-user-agent
     resourcePath: /zebra/notification
     type: notificationType
 

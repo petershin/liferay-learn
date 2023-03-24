@@ -3,9 +3,7 @@ uuid: 453b538b-4220-43d6-9d47-05be5f8527d7
 ---
 # Server Administration and Email
 
-You can manage and monitor your Liferay instance from the server administration console. For example, you can view the current system or portal properties or configure logging and log levels. This is also where you can configure the email server for the whole system. See [Using the Server Administration Panel](https://learn.liferay.com/dxp/latest/en/system-administration/using-the-server-administration-panel.html) to learn more.
-
-<!-- Please update the above link, as it has changed. -Rich --> 
+You can manage and monitor your Liferay instance from the server administration console. For example, you can view the current system or portal properties or configure logging and log levels. This is also where you can configure the email server for the whole system. See [Using the Server Administration Panel](https://learn.liferay.com/en/w/dxp/system-administration/using-the-server-administration-panel) to learn more.
 
 Configure a mail server that is used for email notifications (e.g. user registration, password management, etc.). Follow the steps below to configure the mail server for Delectable Bonsai. 
 
@@ -36,12 +34,10 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
 
    Click _Save_.
 
-Your Liferay environment is now configured with a mail server. You can further customize mail to configure different email senders and messages for each instance. See [Instance Email Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/email-settings.html) to learn more.
+Your Liferay environment is now configured with a mail server. You can further customize mail to configure different email senders and messages for each instance. See [Instance Email Settings](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings) to learn more.
 
 ## Relevant Concepts
 
-<!-- Please update the links below. -Rich --> 
-
-- [Using the Server Administration Panel](https://learn.liferay.com/dxp/latest/en/system-administration/using-the-server-administration-panel.html)
-- [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)
-- [Email Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/email-settings.html)
+- [Using the Server Administration Panel](https://learn.liferay.com/en/w/dxp/system-administration/using-the-server-administration-panel)
+- [Configuring Mail](https://learn.liferay.com/en/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail)
+- [Email Settings](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings)

@@ -45,5 +45,5 @@ The next step is to [configure instance settings](./configuring-instance-setting
 
 ## Relevant Concepts
 
-- [Understanding Virtual Instances](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.html)
-- [Adding a Virtual Instance](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/adding-a-virtual-instance.html)
+- [Understanding Virtual Instances](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances)
+- [Adding a Virtual Instance](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/adding-a-virtual-instance)

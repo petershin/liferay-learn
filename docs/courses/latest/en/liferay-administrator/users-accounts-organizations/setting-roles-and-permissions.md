@@ -3,7 +3,7 @@ uuid: 583c6845-d272-4225-8754-23116289cbc4
 ---
 # Setting Roles and Permissions
 
-In Liferay, users receive permissions based on assigned roles. See [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) to learn more.
+In Liferay, users receive permissions based on assigned roles. See [Understanding Roles and Permissions](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) to learn more.
 
 ## Assigning Users to Roles
 
@@ -75,6 +75,6 @@ Employees at Delectable Bonsai need different permissions based on their work. F
 The next step is creating and managing [accounts](./working-with-accounts.md).
 
 ## Relevant Concepts
-- [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
-- [Assigning Users to Roles](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/assigning-users-to-roles.html)
-- [Creating and Managing Roles](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html)
+- [Understanding Roles and Permissions](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
+- [Assigning Users to Roles](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/assigning-users-to-roles)
+- [Creating and Managing Roles](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles)

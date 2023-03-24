@@ -3,7 +3,7 @@ uuid: 4214e7cf-2624-4d50-98ca-d3a02791742d
 ---
 # Managing Users
 
-Use Liferay to create and manage users for Delectable Bonsai. See [Create and Manage Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-and-managing-users.html) to learn more.
+Use Liferay to create and manage users for Delectable Bonsai. See [Create and Manage Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users) to learn more.
 
 ## Creating Users
 
@@ -15,12 +15,12 @@ In a production environment, you should not use the default admin account. Inste
 
 1. Change the user authentication setting. Note, this is only for our learning and testing purposes.
 
-   * Navigate to _Global Menu_ (![Global Menu](../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_.
+   * Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_.
    * Under Platform, click _User Authentication_.
    * Uncheck the box next to require strangers to verify their email address.
    * Click _Save_.
 
-1. Navigate to _Global Menu_ (![Global Menu](../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Click _Add User_ (![Add icon](../images/icon-add.png)).
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Click _Add User_ (![Add icon](../../images/icon-add.png)).
 
 1. Enter the following account information:
 
@@ -68,9 +68,9 @@ Create an account for the IT manager.
 
    ![The list of users includes Kyle, Marcus, and the default Test account.](./managing-users/images/01.png)
 
-The next step is creating [organizations](./users-accounts-organizations/creating-organizations.md). 
+The next step is creating [organizations](./creating-organizations.md). 
 
 ## Relevant Concepts
-- [Understanding Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/understanding-users.html)
-- [Adding and Managing Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-and-managing-users.html)
-- [Adding Users to Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/adding-users-to-organizations.html)
+- [Understanding Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/understanding-users)
+- [Adding and Managing Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users)
+- [Adding Users to Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/adding-users-to-organizations)

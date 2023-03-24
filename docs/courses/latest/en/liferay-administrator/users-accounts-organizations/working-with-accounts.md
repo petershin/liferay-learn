@@ -3,7 +3,7 @@ uuid: 9c853de5-3865-4ea6-9f69-7b6cac71a275
 ---
 # Working with Accounts
 
-Accounts in Liferay can represent individual customers in a B2C (i.e. business to consumer) context. Or they can represent a B2B (i.e. business to business) context with multiple users. See [Accounts](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts.html) to learn more. 
+Accounts in Liferay can represent individual customers in a B2C (i.e. business to consumer) context. Or they can represent a B2B (i.e. business to business) context with multiple users. See [Accounts](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts) to learn more. 
 
 Marvelous Markets operate supermarkets across the country. Each store purchases maple syrup from Delectable Bonsai. The example below shows how to set up and account for one of the markets and assign an account user.
 
@@ -65,7 +65,7 @@ Assign Noah Norman the order manager role. In this way, Noah's employees can add
 
 2. In the next window, click _Assign User_ (![Add icon](../../images/icon-add.png)). Select Noah Norman and click _Assign_.
 
-   As Noah's employees add orders to the account, Noah is able to approve and manage orders. See [Commerce Roles Reference](https://learn.liferay.com/commerce/latest/en/users-and-accounts/roles-and-permissions/commerce-roles-reference.html) to learn more about these roles.
+   As Noah's employees add orders to the account, Noah is able to approve and manage orders. See [Commerce Roles Reference](https://learn.liferay.com/en/w/commerce/users-and-accounts/roles-and-permissions/commerce-roles-reference) to learn more about these roles.
 
 ## Managing Accounts
 
@@ -123,8 +123,8 @@ In a larger B2B context with multiple accounts under the same entity, it may mak
 Congratulations! You have completed this module on users, accounts, organizations, and permissions. 
 
 ## Relevant Concepts
-- [Accounts](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts.html)
-- [Account Users](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-users.html)
-- [Account Groups](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-groups.html)
-- [Account Roles](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-roles.html)
-- [Commerce Roles Reference](https://learn.liferay.com/commerce/latest/en/users-and-accounts/roles-and-permissions/commerce-roles-reference.html)
+- [Accounts](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts)
+- [Account Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-users)
+- [Account Groups](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-groups)
+- [Account Roles](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-roles)
+- [Commerce Roles Reference](https://learn.liferay.com/en/w/commerce/users-and-accounts/roles-and-permissions/commerce-roles-reference)

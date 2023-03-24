@@ -23,6 +23,4 @@ The next step is [server administration and email](./server-administration-and-e
 
 ## Relevant Concepts
 
-<!-- Please update the link below. -Rich --> 
-
-- [Instance Configuration](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/virtual-instances/instance-configuration.html)
+- [Instance Configuration](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/instance-configuration)

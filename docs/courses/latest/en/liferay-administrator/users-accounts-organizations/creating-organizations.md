@@ -3,7 +3,7 @@ uuid: 471cbdd8-1672-430b-8871-91bebb0665ef
 ---
 # Creating Organizations
 
-Use Liferay to model Delectable Bonsai's organizational hierarchy. See [Understanding Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/understanding-organizations.html) to learn more. 
+Use Liferay to model Delectable Bonsai's organizational hierarchy. See [Understanding Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations) to learn more. 
 
 ## Parent and Child Organizations
 
@@ -64,7 +64,7 @@ New users can also be added within organizations.
 
 ## Organizational Sites
 
-Next, create an organization site for the Sales & Marketing department to host an internal blog. See [Organization Sites](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/organization-sites.html) to learn more.
+Next, create an organization site for the Sales & Marketing department to host an internal blog. See [Organization Sites](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites) to learn more.
 
 1. Navigate back to Organizations and click the *Delectable Bonsai* organization. 
 
@@ -96,10 +96,10 @@ Next, create an organization site for the Sales & Marketing department to host a
    * Add a Blogs widget by dragging it onto the page. The widget is in Collaboration. 
    * Click _Publish_.
 
-1. The Sales & Marketing organization site now has a page with Sales & Marketing blog postings for anyone that is part of the child organization to view. See [Getting Started with Blogs](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/getting-started-with-blogs.html) to learn more about blogs and blog entries.
+1. The Sales & Marketing organization site now has a page with Sales & Marketing blog postings for anyone that is part of the child organization to view. See [Getting Started with Blogs](https://learn.liferay.com/en/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs) to learn more about blogs and blog entries.
 
 The next step is to assign different [roles and permissions](./setting-roles-and-permissions.md) to each user.
 
 ## Relevant Concepts
-- [Understanding Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/understanding-organizations.html)
-- [Organization Sites](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/organization-sites.html)
+- [Understanding Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations)
+- [Organization Sites](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites)

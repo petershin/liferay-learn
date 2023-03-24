@@ -82,7 +82,7 @@ The contextually injected notification variables can be categorized into two mai
 
    _Your submission was reviewed_
 
-1. **Operation** variables expose a Liferay DXP Java class, so you can access its operations in the notification template. For these variables, you must familiarize yourself with the class's [Javadoc](https://learn.liferay.com/reference/latest/en/dxp/javadocs/) or look into the [source code](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]) to understand its operations. 
+1. **Operation** variables expose a Liferay DXP Java class, so you can access its operations in the notification template. For these variables, you must familiarize yourself with the class's [Javadoc](../../../../../../reference/latest/en/dxp/javadocs.md) or look into the [source code](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]) to understand its operations. 
 
    _Example:_ This FreeMarker gets you the current date, using the default locale, in a specific pattern (_Month/Day/Year, Hour:Minute_): 
 

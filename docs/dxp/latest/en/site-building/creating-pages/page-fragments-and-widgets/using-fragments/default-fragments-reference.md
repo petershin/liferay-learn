@@ -65,7 +65,7 @@ Use Form Components fragments to build forms in content pages. These fragments o
 | CAPTCHA | Adds CAPTCHA confirmation to a form container. Once added, the form container requires human verification for submissions. |
 | Checkbox | Adds a checkbox to the form container that you can map to boolean fields. |
 | Date | Adds a field that you can map to custom date fields. |
-| File Upload | Adds a file upload button that you can map to [attachment fields](../../../../building-applications/objects/understanding-object-field-types.md#attachment). The mapped attachment field determines how files are uploaded. By default, this fragment displays supported file extensions. |
+| File Upload | Adds a file upload button that you can map to [attachment fields](../../../../building-applications/objects/creating-and-managing-objects/fields/attachment-fields.md#attachment-fields). The mapped attachment field determines how files are uploaded. By default, this fragment displays supported file extensions. |
 | Numeric Input | Adds a field that you can map to custom numeric fields (i.e., integer, long integer, decimal, and precision decimal). You can set a placeholder value and help text. |
 | Select from List | Adds a drop-down menu that you can map to custom picklist and relationship fields. If the mapped field includes more than 10 options, the drop-down menu also includes a search bar for querying options. |
 | Text Input | Adds a field that you can map to text fields (i.e., text, long text, rich text). |

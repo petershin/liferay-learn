@@ -25,7 +25,7 @@ New pages are created on the _Site Builder_ &rarr; _Pages_ menu. See [Adding a P
 
 ## Using Navigation Menus
 
-See [Using the Navigation Menu Application](./using-the-navigation-menus-application.md) to learn how to create Navigation Menus and deploy them on a Page. See [Configuring Menu Displays](./configuring-menu-displays.md) to learn more about how to configure the [Menu Display Fragment](../creating-pages/building-and-managing-content-pages/page-fragments-user-interface-reference.md#menu-display) (available in Liferay DXP 7.4+) and Menu Display Widget.
+See [Using the Navigation Menu Application](./using-the-navigation-menus-application.md) to learn how to create Navigation Menus and deploy them on a Page. See [Configuring Menu Displays](./configuring-menu-displays.md) to learn more about how to configure the [Menu Display Fragment](./configuring-menu-displays.md#configuring-the-menu-display-fragment)  (available in Liferay DXP 7.4+) and [Menu Display Widget](./configuring-menu-displays.md#configuring-the-menu-display-widget).
 
 ## Using the Page Tree
 

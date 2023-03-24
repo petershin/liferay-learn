@@ -129,7 +129,7 @@ By default, new Users receive only the Users Role, but you can manage the defaul
 
 1. Use the Regular Roles configuration field to enter a comma-separated list of Regular Roles that all new Users should inherit.
 
-Read more in the [Default User Associations](../../system-administration/virtual-instances/users.md#default-user-associations) documentation.
+Read more in the [Default User Associations](../../system-administration/configuring-liferay/virtual-instances/users.md#default-user-associations) documentation.
 
 ![Use Instance Settings to set the default Regular Roles for all new Users.](./assigning-users-to-roles/images/06.png)
 

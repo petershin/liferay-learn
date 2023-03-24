@@ -78,7 +78,7 @@ A useful trained model is produced when a good judgment list and a good feature 
 
 [Features](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#features-the-raw-material-of-relevance) are the variables that the algorithm uses to create a function that can score results in a smarter way. If you don't give enough---or the correct---relevant features, your model won't be "smart" enough to provide improved results.
 
-Before beginning, you must have a remote [Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch.html) cluster communicating with Liferay. See the [Search Engine Compatibility Matrix for more information](https://help.liferay.com/hc/en-us/articles/360016511651).
+Before beginning, you must have a remote [Elasticsearch](../installing-and-upgrading-a-search-engine.md) cluster communicating with Liferay. See the [Search Engine Compatibility Matrix for more information](https://help.liferay.com/hc/en-us/articles/360016511651).
 
 ```{tip}
 Use [Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md) to discover the most common queries (this can be one way to decide which queries to create Learning to Rank models for).

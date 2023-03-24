@@ -7,7 +7,7 @@ The import/export settings configure mappings between LDAP and Liferay to match 
 
 ## Finding Users in Your LDAP Directory
 
-**Authentication Search Filter:** Use this search filter box to determine the search criteria for user logins. By default, Liferay uses users' email addresses for their login names. The value here must use the [authentication type](../../../installation-and-upgrades/securing-liferay/authentication-basics.md#authentication-types) you use. For example, if you changed Liferay's authentication method to use screen names instead of the email addresses, you would modify the search filter so it can match the entered log in name:
+**Authentication Search Filter:** Use this search filter box to determine the search criteria for user logins. By default, Liferay uses users' email addresses for their login names. The value here must use the [authentication type](../../installation-and-upgrades/securing-liferay/authentication-basics.md#authentication-types) you use. For example, if you changed Liferay's authentication method to use screen names instead of the email addresses, you would modify the search filter so it can match the entered log in name:
 
 ```
 (cn=@screen_name@)

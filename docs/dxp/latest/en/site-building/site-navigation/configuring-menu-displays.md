@@ -3,7 +3,7 @@ uuid: e7769e8b-2afa-411c-bb53-413bddea507e
 ---
 # Configuring Menu Displays
 
-To display and configure a [Menu Display](./using-the-navigation-menus-application.md), you can use the [Menu Display Fragment](../creating-pages/building-and-managing-content-pages/page-fragments-user-interface-reference.md#menu-display) or Menu Display Widget. With either of these two options, you can define the menu display options, levels, and behavior for your Site.
+To display and configure a [Menu Display](./using-the-navigation-menus-application.md), you can use the [Menu Display Fragment](#configuring-the-menu-display-fragment) or [Menu Display Widget](#configuring-the-menu-display-widget). With either of these two options, you can define the menu display options, levels, and behavior for your Site.
 
 ```{tip}
 If you are new to Liferay, use the Menu Display Fragment to get started with building your site's navigation menus. The Menu Display fragment provides preview options that work with [Master Page Template](../creating-pages/defining-headers-and-footers/creating-a-master-page-template.md) and ease of configuration that Menu Display Widgets do not provide.

@@ -36,7 +36,7 @@ The following example shows how to modify a default Display Page Template. To av
 
 Create the Categories if they do not exist yet, and include the information you want to map on the Display Page. This example creates two new Categories with a description and a picture, each Category corresponding to a different service.
 
-1. [Create a new Category](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defininig-categories) named *Car Insurance*.
+1. [Create a new Category](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defininig-categories) named *Car Insurance*.
 1. In the Categories application, click the *Actions* (![Actions](../../../images/icon-actions.png)) menu for your new category and select *Edit*.
 1. Click the *Details* tab and add a *Description* of this Category.
 

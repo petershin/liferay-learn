@@ -91,7 +91,7 @@ You can also pre-configure the upgrade tool to set more values than the tool gen
 
 * `app-server.properties`: Specifies the server location and libraries.
 * `portal-upgrade-database.properties`: Configures the database connection.
-* `portal-upgrade-ext.properties`: Sets the rest of the portal properties that the upgrade requires. To replicate your current DXP server, you can copy your current portal properties (except your database properties) into this file. Before using your current properties, make sure to [update them for the current DXP version](./preparing-a-new-application-server.md#migrate-your-portal-properties).
+* `portal-upgrade-ext.properties`: Sets the rest of the portal properties that the upgrade requires. To replicate your current DXP server, you can copy your current portal properties (except your database properties) into this file. Before using your current properties, make sure to [update them for the current DXP version](../migrating-configurations-and-properties.md#migrating-portal-properties).
 
 #### Configuring app-server.properties
 

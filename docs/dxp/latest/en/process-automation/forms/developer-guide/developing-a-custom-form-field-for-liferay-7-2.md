@@ -9,7 +9,7 @@ React-based custom form fields can be developed for Liferay 7.3 and Liferay 7.4.
 
 Liferay 7.2 used a different front-end framework for custom form fields. To adjust the Acme C2P9 Slider field in order to run it on Liferay 7.2,
 
-1. Download and unzip [the Custom Forms Field Type project](./writing-a-custom-form-field-type/resources/liferay-c2p9.zip).
+1. Download and unzip [the Custom Forms Field Type project](./liferay-c2p9.zip).
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O
@@ -240,5 +240,5 @@ Liferay 7.2 used a different front-end framework for custom form fields. To adju
    STARTED com.acme.c2p9.impl_1.0.0 [1009]
    ```
 
-The form field is deployed and [ready to use](./writing-a-custom-forms-field-type.md#use-the-deployed-slider-field) on Liferay 7.2.
+The form field is deployed and [ready to use](./writing-a-custom-form-field-type.md#use-the-deployed-slider-field) on Liferay 7.2.
 

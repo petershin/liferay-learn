@@ -22,7 +22,7 @@ Once Liferay is running,
    unzip liferay-a2t5.zip
    ```
 
-1. Channels are scoped to an instance, and each channel must specify a `currencyCode`, `name`, and `type`. Liferay provides one type (`site`) out-of-the-box.
+1. Channels are scoped to an instance, and each channel must specify a `currencyCode`, `name`, and `type`. One type, `site`, is available out-of-the-box.
 
    Use the cURL script to add a new channel. On the command line, navigate to the `curl` folder. Execute the `Channel_POST_ToInstance.sh` script.
 
@@ -161,7 +161,7 @@ This API also accepts parameters to filter, paginate, search, and sort the chann
 | Filter Query             | Description                               |
 | :----------------------- | :---------------------------------------- |
 | `siteGroupId eq '12345'` | The channel siteGroupId must equal 12345. |
-| `name eq 'Foo'`          | The channel name must equal Foo           |
+| `name eq 'Foo'`          | The channel name must equal Foo.           |
 
 | Sort Query        | Description                             |
 | :---------------- | :-------------------------------------- |

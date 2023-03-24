@@ -3,7 +3,7 @@ toc:
   - ./getting-started.md
   - ./touchpoints.md
   - ./people.md
-  - ./commerce.md
+# - ./commerce.md Hiding until further notice
   - ./optimization.md
   - ./apis.md
   - ./workspace-data.md

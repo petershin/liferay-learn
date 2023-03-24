@@ -24,7 +24,8 @@ These properties are specific to OAuth user agent client extensions:
 | :--- | :--- | :--- | :--- |
 | `description` | String | | The client extension's description. |
 | `homePageURL` | String (partial URL) | `https://$[conf:ext.lxc.liferay.com.mainDomain]` | The base address of the OAuth2 application profile's resource server. |
-| `name` | String | (Derived from the OAuth2 application profile) | The OAuth2 application profile's name. | `privacyPolicyURL` | URL | | The URL for the OAuth2 application profile's privacy policy. |
+| `name` | String | (Derived from the OAuth2 application profile) | The OAuth2 application profile's name. |
+| `privacyPolicyURL` | URL | | The URL for the OAuth2 application profile's privacy policy. |
 | `scopes` | String[] | [] | An array of scopes that are associated with the OAuth2 application profile. |
 
 ## Additional Information

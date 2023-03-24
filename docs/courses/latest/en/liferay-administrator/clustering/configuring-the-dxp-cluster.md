@@ -1,10 +1,9 @@
 ---
-toc:
 uuid: a58b8853-86af-4a1c-8f52-1b9c7f705b78
 ---
 # Configuring the DXP Cluster
 
-Two docker containers can be run to demonstrate a simple clustered environment. See [Clustering for High Availability](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/setting-up-liferay/clustering-for-high-availability) to learn more.
+You can run two docker containers to demonstrate a simple clustered environment. See [Clustering for High Availability](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/setting-up-liferay/clustering-for-high-availability) to learn more.
 
 ## Configuring Elasticsearch for Each Node
 

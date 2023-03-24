@@ -1,10 +1,9 @@
 ---
-toc:
 uuid: 01d97dd4-1c42-46b3-8e96-458398fcb4a5
 ---
 # Configuring Search
 
-Liferay uses Elasticsearch for search and for indexing content. To run a Liferay cluster, Elasticsearch needs to be installed on a separate server that is configured to be accessible by each node. Follow the steps below to configure Elasticsearch. See [Getting Started with Elasticsearch](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch) to learn more.
+Liferay uses Elasticsearch to search and index content. In a Liferay cluster, Elasticsearch must be installed on a separate server accessible by each node. Follow the steps below to configure Elasticsearch. See [Getting Started with Elasticsearch](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch) to learn more.
 
 ## Running Elasticsearch
 

@@ -100,6 +100,7 @@ Analytics Cloud shows you these things about known individuals:
 * Most popular interest topics of the individual
 * Any segment the individual belongs to
 
+<!-- Hiding unitl further notice
 ## Analytics About the Commerce Transactions On Your Site
 
 Analytics Cloud shows high-level data for synced Commerce channels, including
@@ -109,7 +110,7 @@ Analytics Cloud shows high-level data for synced Commerce channels, including
 * Average total value of placed orders
 * Average revenue relative to the number of accounts that have placed orders
 
-![Analytics Cloud shows high-level data for synced Commerce channels.](./getting-started/images/07.png)
+![Analytics Cloud shows high-level data for synced Commerce channels.](./getting-started/images/07.png) -->
 
 ## Setting Up Your Analytics Cloud
 

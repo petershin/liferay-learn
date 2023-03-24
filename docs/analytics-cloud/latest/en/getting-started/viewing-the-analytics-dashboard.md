@@ -23,14 +23,15 @@ For understanding your audience:
 ```{note}
 To explore analytics data based on segments, you must first [Create Segments](../people/segments/creating-segments.md). These are groups of individuals that are aggregated together based on attributes you select.
 ```
-
+<!-- Hiding until further notice
 For understanding your Commerce data:
 
 * [Commerce Dashboard](../commerce/commerce-dashboard.md)
 
 ```{note}
 To explore Commerce analytics data, you must sync Commerce channels with Analytics Cloud. See [Connecting Liferay DXP to Analytics Cloud](./connecting-liferay-dxp-to-analytics-cloud.md) for more information.
-```
+``` 
+-->
 
 For optimizing site content:
 

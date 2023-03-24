@@ -15,13 +15,13 @@ liferay-administrator/configuration.md
 liferay-administrator/users-accounts-organizations
 ```
 
-This course covers all necessary topics for setting up and administering a Liferay DXP installation. For users who are using LXC-SM, Liferay's PaaS for DXP, you will want to start with the Cloud Administrator course!
+This course covers all necessary topics for setting up and administering a Liferay DXP installation. For those using LXC-SM, Liferay's PaaS for DXP, start with the Cloud Administrator course!
 
 ```{note}
-Go to market even faster by using Liferay Experience Cloud! LXC is a full SaSS offering that saves you time and money by having all of your Liferay infrastructure managed and administered for you so you can focus on delivering business solutions.
+Go to market even faster by using Liferay Experience Cloud! LXC is a full SaaS offering that saves you time and money by managing and administering all your Liferay infrastructure for you so you can focus on delivering business solutions.
 ```
 
-We recommend that all prospective Liferay administrators, regardless of your deployment paradigm (SaSS, PaaS, or on-prem), go through the Configuration and Users/Accounts/Organizations course to have a baseline understanding of how these concepts work.
+We recommend that all prospective Liferay administrators, regardless of your deployment paradigm (SaaS, PaaS, or on-prem), go through the Configuration and Users/Accounts/Organizations course to have a baseline understanding of how these concepts work.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

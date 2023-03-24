@@ -5,10 +5,10 @@ uuid: 29b299d7-f4aa-4ce7-b016-a16414b6dc83
 
 {bdg-secondary}`Available Liferay 7.4 U60+/GA60+`
 
-When you use the standalone trigger for object actions, the actions become manual instead of automatic. You can trigger these actions in one of two ways:
+When you use the standalone trigger for object actions, the actions become manual instead of automatic. Trigger these actions using either
 
-* via the object's UI
-* using dedicated action APIs
+* the object's UI
+* dedicated action APIs
 
 This example creates a standalone action for sending notifications.
 
@@ -48,9 +48,9 @@ Calling either API triggers the action for the specified entry.
 
 ## Action Permissions
 
-Liferay automatically generates permissions for standalone actions so you can manage which roles can trigger them. Each permission follows the `action.{actionName}` naming pattern (e.g., `action.sendReminder`). See [Permissions Framework Integration](../../understanding-object-integrations/permissions-framework-integration.md) for more information on object permissions.
+Liferay automatically generates permissions for standalone actions for managing which roles can trigger them. Each permission follows the `action.[actionName]` naming pattern (e.g., `action.sendReminder`). See [Permissions Framework Integration](../../understanding-object-integrations/permissions-framework-integration.md) for more information on object permissions.
 
-![Standalone permissions use the action.{actionName} naming pattern.](./using-manual-actions/images/05.png)
+![Standalone permissions use the action.[actionName] naming pattern.](./using-manual-actions/images/05.png)
 
 ## Additional Information
 

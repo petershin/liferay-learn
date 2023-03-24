@@ -3,50 +3,50 @@ uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 ---
 # Using Nested Fields with REST APIs
 
-With custom Object APIs, you can use the `nestedFields` parameter to return multiple levels of related Objects in a single GET request. You can also use the `nestedFieldsDepth` parameter to determine the depth of Object entries included in the query: `0-5`. Here you'll use cURL scripts to call Object APIs with nested fields.
+With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related objects in a single GET request. You can also use the `nestedFieldsDepth` parameter to determine the depth of object entries included in the query: `0-5`.
 
 ```{tip}
-Nested fields are a convenient way to retrieve information that would usually require multiple requests. This way you can have all the information of a related entity from the entity itself without sending a new request with the related entity id.
+The `nestedFields` parameter is a convenient way to retrieve information that would usually require multiple requests. With it, you can retrieve an entry's information along with the information of its related entries. If you want to return related entries alone, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introductory tutorial.
 ```
 
-Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
+Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create related entries and query them using the `nestedFields` parameter.
 
 ## Setting Up a Liferay Instance
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) three Objects:
+Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) three objects:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Create three Object drafts.
+1. Create three object drafts.
 
    First Object:
 
-      | Field | Value |
-      | :--- | :--- |
-      | Label | `Able` |
-      | Plural Label | `Ables` |
-      | Name | `Able` |
+   | Field | Value |
+   | :--- | :--- |
+   | Label | `Able` |
+   | Plural Label | `Ables` |
+   | Name | `Able` |
 
    Second Object:
 
-      | Field | Value |
-      | :--- | :--- |
-      | Label | `Baker` |
-      | Plural Label | `Bakers` |
-      | Name | `Baker` |
+   | Field | Value |
+   | :--- | :--- |
+   | Label | `Baker` |
+   | Plural Label | `Bakers` |
+   | Name | `Baker` |
 
    Third Object:
 
-      | Field | Value |
-      | :--- | :--- |
-      | Label | `Charlie` |
-      | Plural Label | `Charlies` |
-      | Name | `Charlie` |
+   | Field | Value |
+   | :--- | :--- |
+   | Label | `Charlie` |
+   | Plural Label | `Charlies` |
+   | Name | `Charlie` |
 
-1. Add the following text field to each Object draft.
+1. Add the following text field to each object draft.
 
    | Label | Field Name | Type | Required |
    | :--- | :--- | :--- | :--- |
@@ -56,19 +56,19 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
 
    For Able:
 
-      | Label | Relationship Name | Type | Object |
-      | :--- | :--- | :--- | :--- |
-      | `Able to Baker` | `ableToBaker` | One to Many | Baker |
+   | Label | Relationship Name | Type | Object |
+   | :--- | :--- | :--- | :--- |
+   | `Able to Baker` | `ableToBaker` | One to Many | Baker |
 
    For Baker:
 
-      | Label | Relationship Name | Type | Object |
-      | :--- | :--- | :--- | :--- |
-      | `Baker to Charlie` | `bakerToCharlie` | One to Many | Charlie |
+   | Label | Relationship Name | Type | Object |
+   | :--- | :--- | :--- | :--- |
+   | `Baker to Charlie` | `bakerToCharlie` | One to Many | Charlie |
 
-1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) each Object.
+1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) each object.
 
-Once published, you can access each Object via Headless APIs.
+Once published, you can access each object via Headless APIs.
 
 ## Preparing the Sample Code
 
@@ -82,20 +82,20 @@ curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objec
 unzip liferay-w4s7.zip
 ```
 
-The sample code includes POST commands for each Object, as well as a GET command for `Charlie`.
+The sample code includes POST commands for each object, as well as a GET command for `Charlie`.
 
 ```{tip}
-For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
+For a complete list of APIs generated for both site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
 ```
 
 ## Using the Sample Code
 
-Follow these steps to add and query related Object entries:
+Follow these steps to add and query related object entries:
 
 1. Navigate to the `curl` folder in the `liferay-w4s7` project.
 
    ```bash
-   cd liferay-p8n6/curl
+   cd liferay-w4s7/curl
    ```
 
 1. Execute `Able_POST_ToCompany` to create `Able` entries.
@@ -191,10 +191,10 @@ Follow these steps to add and query related Object entries:
 1. Execute `Charlie_GET_ById` using the `Charlie` entry ID as a parameter.
 
    ```bash
-   ./Charlie_GET_ById.sh [charlie-entry-id]
+   ./Charlie_GET_ById.sh {charlie-entry-id}
    ```
 
-   This queries the entry using nested fields and returns the schema for all three levels of the related Objects.
+   This queries the entry using nested fields and returns the schema for all three levels of the related objects.
 
    ```bash
    {
@@ -224,7 +224,7 @@ Follow these steps to add and query related Object entries:
 
 The provided GET method calls a URL with the `nestedFields` and `nestedFieldsDepth` parameters.
 
-`nestedFields`: Determines the types of entries included in the query (e.g., `able,baker`).
+`nestedFields`: Determines the types of entries included in the query (e.g., `ableToBaker,bakerToCharlie`).
 
 `nestedFieldsDepth`: Determines the depth of entries you want to include and can be set between 0-5.
 

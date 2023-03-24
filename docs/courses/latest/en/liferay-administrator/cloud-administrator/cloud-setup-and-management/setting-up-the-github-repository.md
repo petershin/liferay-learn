@@ -25,7 +25,7 @@ Download the latest version of the [Windows installer](https://cdn.liferay.cloud
 
 ## Fork and Clone the GitHub Repository
 
-First, you must set up Git and create your own fork of the GitHub repository. For the Delectable Bonsai project, Marcus must follow all of these steps for the initial setup, but Kyle only needs to do the last two steps (clone and adding a remote repository) as a contributor.
+First, you must install Git and create your own fork of the GitHub repository. For the Delectable Bonsai project, Marcus must follow all of these steps for the initial setup, but Kyle needs only perform the last two steps (clone and add a remote repository) as a contributor.
 
 You'll transfer your Liferay Cloud project to your fork for new builds.
 
@@ -34,7 +34,7 @@ You'll transfer your Liferay Cloud project to your fork for new builds.
 1. Open your provisioned repository's page on GitHub.
 
    ```{tip}
-   If you don't have the link to your project's repository, navigate to the *Builds* page in the Liferay Cloud console, and click the link under *Branch* for the most recent build. This link points to a specific branch in the provisioned repository.
+   If you don't have the link to your project's repository, navigate to the *Builds* page in the Liferay Cloud console and click the link under *Branch* for the most recent build. This link points to a specific branch in the provisioned repository.
    ```
 
 1. [Create your own fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the repository.
@@ -73,7 +73,7 @@ Next, configure a webhook so Liferay Cloud can access your repository.
 
 1. Click *Add webhook*.
 
-Now your repository allows Liferay Cloud to access it.
+Now Liferay Cloud can access your repository. 
 
 ## Point Liferay Cloud to Your Private Repository
 

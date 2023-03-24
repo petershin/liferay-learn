@@ -57,7 +57,7 @@ Enable clustering and set the scale value in your Liferay service's configuratio
     lcp deploy --project=[project-name] --environment=prd
     ```
 
-The Liferay service restarts with clustering enabled and the `scale` variable initialized. However, the scale is still set to only one node. Continue to update the scale to the desired two nodes.
+The Liferay service restarts with clustering enabled and the `scale` variable initialized. However, the scale is still set to one node only. Continue to update the scale to the desired two nodes.
 
 ## Update the Clustering Scale
 

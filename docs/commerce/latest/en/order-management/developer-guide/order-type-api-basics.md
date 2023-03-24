@@ -3,7 +3,7 @@ uuid: e72a3e54-dc08-435b-b1ac-306bfdfb6103
 ---
 # Order Type API Basics
 
-You can manage order types from the Applications menu or with REST APIs. Use the `/order-types` endpoint from [headless-admin-commerce-order](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-order/v1.0/openapi.json) to create and manage order types.
+You can manage order types from the [Applications menu](../order-types/using-order-types.md) or with REST APIs. Use the `/order-types` endpoint from [headless-admin-commerce-order](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-order/v1.0/openapi.json) to create and manage order types.
 
 ## Adding an Order Type
 
@@ -22,7 +22,7 @@ Once Liferay is running,
    unzip liferay-t5n8.zip
    ```
 
-1. Order types are scoped to an instance. You only require a `name` to create an order type.
+1. Order types are scoped to an instance and require a `name` for creation.
 
    Use the cURL script to add an order type. On the command line, navigate to the `curl` folder. Execute the `OrderType_POST_ToInstance.sh` script.
 
@@ -128,7 +128,7 @@ This class invokes the REST service using only three lines of code:
 | `OrderTypeResource orderTypeResource = builder.authentication(...).build();` | Use basic authentication and generate an `OrderTypeResource` service instance. |
 | `orderTypeResource.postOrderType(...);`                                      | Call the `orderTypeResource.postOrderType` method and pass the data to post.   |
 
-Note that the project includes the `com.liferay.headless.commerce.admin.order.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
+The project includes the `com.liferay.headless.commerce.admin.order.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
 ```{note}
 The `main` method's comment demonstrates running the class.
@@ -180,7 +180,7 @@ The instance's `OrderType` objects are listed in JSON.
 
 ### Paginating, Searching, and Sorting Order Types
 
-You can paginate, search, and sort the returned order types. See the [`getOrderTypesPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderTypeResource.java#L50-L53) method for more information. Use the `name` field to search, and sort the results:
+You can paginate, search, and sort the returned order types. See the [`getOrderTypesPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderTypeResource.java#L50-L53) method for more information. Use the `name` field to search and sort the results:
 
 | Sort Query  | Description                         |
 | :---------- | :---------------------------------- |

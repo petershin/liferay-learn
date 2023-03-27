@@ -9,7 +9,6 @@ Contents
    getting-started
    touchpoints
    people
-   commerce
    optimization
    apis
    workspace-data

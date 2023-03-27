@@ -3,7 +3,11 @@ uuid: e5607063-8779-4bc8-b793-424f1744b72e
 ---
 # Picklists API Basics
 
-You can [Create and Manage Picklists](./using-picklists.md) from the Applications menu or with REST APIs. Call the [`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) services to create and manage picklists.
+Liferay provides the [`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) REST APIs for creating and managing picklist definitions (`ListTypeDefinition`) and their entries (`ListTypeEntry`). You can view and test available APIs in Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) under *REST Services*.
+
+![Access picklist APIs under headless-admin-list-type](./picklists-api-basics/images/01.png)
+
+Call the [`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) services to create and manage picklists.
 
 ## Adding a Picklist
 
@@ -43,7 +47,7 @@ Next, prepare the sample code:
 
 1. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Picklists*. The new picklist appears.
 
-   ![See that a new picklist has been added.](./picklists-api-basics/images/01.png)
+   ![See that a new picklist has been added.](./picklists-api-basics/images/02.png)
 
 1. Alternatively, you can call the REST service using the Java client. Navigate into the `java` folder and compile the source files:
 
@@ -304,3 +308,8 @@ After creating a picklist, use the services below to create and manage picklist 
 | `ListTypeEntry_PUT_ById.[java\|sh]` | Put a picklist entry. |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all `ListTypeDefinition` and `ListTypeEntry` services and schemas and has an interface to test each service.
+
+## Additional Information
+
+* [Using Picklists](./using-picklists.md)
+* [Exporting and Importing Picklists](./exporting-and-importing-picklists.md)

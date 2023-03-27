@@ -150,7 +150,7 @@ You can edit the type of link, target URL, and link mapping from the content pag
 
 ![You have several options for defining a link's appearance and behavior.](./fragment-specific-tags-reference/images/03.png)
 
-For more information on editable links, see [Editable Links](../../../creating-pages/page-fragments-and-widgets/configuring-fragments/fragment-sub-elements-reference.md#link-settings).
+For more information on editable links, see [Editable Links](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings).
 
 ## Creating Editable HTML
 

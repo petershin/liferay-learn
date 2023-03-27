@@ -23,7 +23,7 @@ To use these variables, you must know which are available in your workflow notif
 
 ## Discovering the Workflow Notification Template Variables
 
-Enable DEBUG level [logging]( ./../../../system-administration/using-the-server-administration-panel/configuring-logging.md) for the `TemplateNotificationMessageGenerator` class to display the variables available in your workflow notification context:
+Enable DEBUG level [logging](../../../system-administration/using-the-server-administration-panel/configuring-logging.md) for the `TemplateNotificationMessageGenerator` class to display the variables available in your workflow notification context:
 
 1. Go to Control Panel &rarr; Configuration &rarr; Server Administration.
  
@@ -34,7 +34,7 @@ Enable DEBUG level [logging]( ./../../../system-administration/using-the-server-
    - *Logger Name*: `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
    - *Log Level*: `DEBUG`
 
-1. [Activate a workflow definition]( ./../using-workflows/activating-workflow.md) (e.g., the Single Approver definition) on an asset (e.g., Blogs Entry).
+1. [Activate a workflow definition](../using-workflows/activating-workflow.md) (e.g., the Single Approver definition) on an asset (e.g., Blogs Entry).
 
 1. Submit a test entry and log messages appear that reveal the workflow available notification template variables in the context of your workflow. 
 
@@ -82,7 +82,7 @@ The contextually injected notification variables can be categorized into two mai
 
    _Your submission was reviewed_
 
-1. **Operation** variables expose a Liferay DXP Java class, so you can access its operations in the notification template. For these variables, you must familiarize yourself with the class's [Javadoc](../../../../../../reference/latest/en/dxp/javadocs.md) or look into the [source code](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]) to understand its operations. 
+1. **Operation** variables expose a Liferay DXP Java class, so you can access its operations in the notification template. For these variables, you must familiarize yourself with the class's [Javadoc](https://learn.liferay.com/web/guest/w/reference/dxp/javadocs) or look into the [source code](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]) to understand its operations. 
 
    _Example:_ This FreeMarker gets you the current date, using the default locale, in a specific pattern (_Month/Day/Year, Hour:Minute_): 
 

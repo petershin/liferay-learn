@@ -70,11 +70,11 @@ To manage a Master Page Templates's Look and Feel and other options, follow thes
 
 **Settings:** Toggles to determine whether to show aspects of the theme such as the Footer and Header Search bar. Custom CSS can also be applied is loaded after the theme.
 
-**Theme CSS Client Extension:** Add [Theme CSS Client Extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS from a theme without deploying an entire theme. 
+**Theme CSS Client Extension:** Add [Theme CSS Client Extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS from a theme without deploying an entire theme. 
 
-**CSS Client Extensions:** Add [CSS Client Extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md#css-client-extensions) to override CSS styling of a content page that uses the Master Page Template.
+**CSS Client Extensions:** Add [CSS Client Extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) to override CSS styling of a content page that uses the Master Page Template.
 
-**JavaScript Code and JavaScript Client Extension:** In the *Advanced* tab, JavaScript code can be added that is executed at the bottom of the page. [JavaScript Client Extentions](../../../building-applications/client-extensions/browser-based-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this Master Page template is visited.
+**JavaScript Code and JavaScript Client Extension:** In the *Advanced* tab, JavaScript code can be added that is executed at the bottom of the page. [JavaScript Client Extentions](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this Master Page template is visited.
 
 ```{note}
 A theme is applied to a content page through a Master Page Template. When a Master Page Template is applied to a content page, the look and feel of the content page is defined by the Master Page Template.

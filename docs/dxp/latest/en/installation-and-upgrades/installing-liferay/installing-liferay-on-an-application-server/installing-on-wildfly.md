@@ -79,7 +79,7 @@ For DXP 7.3 and earlier, follow these additional steps:
 
 ## Running DXP on WildFly in Standalone Mode vs. Domain Mode
 
-WildFly can be launched in either *standalone* mode or *domain* mode. Domain mode allows multiple application server instances to be managed from a single control point. A collection of such application servers is known as a *domain*. For more information on standalone mode vs. domain mode, please refer to the section on this topic in the [WildFly Admin Guide](https://docs.wildfly.org/14/Admin_Guide.html).
+WildFly can be launched in either *standalone* mode or *domain* mode. Domain mode allows multiple application server instances to be managed from a single control point. A collection of such application servers is known as a *domain*. For more information on standalone mode vs. domain mode, please refer to the section on this topic in the [WildFly Admin Guide](https://docs.wildfly.org/23/Admin_Guide.html).
 DXP fully supports WildFly in standalone mode but not in domain mode.
 
 DXP supports WildFly when it runs in standalone mode but not when it runs in domain mode. DXP's auto-deploy does not work with a managed deployment, since WildFly manages the content of a managed deployment by copying files (exploded or non-exploded). This prevents JSP hooks and Ext plugins from working as intended. For example, JSP hooks don't work on WildFly running in managed domain mode, since DXP's JSP override mechanism relies on the application server. Since JSP hooks and Ext plugins are deprecated, however, you may not be using them.

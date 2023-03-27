@@ -51,7 +51,7 @@ IFrame apps must be deployed to a server so they can assemble their own markup a
 
 By default, all browsers impose the 'same-origin' policy for IFrame applications to prevent information flow between a host page and its external applications. Liferay provides a client SDK script to allow limited communication between IFrame elements and a Liferay page. It works by implementing a communication protocol with the page via the `postMessage()` API. To use this script, it must be included in the application's markup.
 
-When an IFrame app uses the client SDK, the Liferay page receives instructions to perform certain actions on behalf of the application as the current logged-in user. This includes making service calls to the DXP server and access state details (e.g., opening a toast in the host Page, calling headless APIs, running GraphQL queries, accessing style properties).
+When an IFrame app uses the client SDK, the Liferay page receives instructions to perform certain actions on behalf of the application as the current logged-in user. This includes making service calls to the DXP server and accessing state details (e.g., opening a toast in the host page, calling headless APIs, running GraphQL queries, accessing style properties).
 
 ## Additional Information
 

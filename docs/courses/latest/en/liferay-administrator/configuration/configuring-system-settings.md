@@ -3,7 +3,7 @@ uuid: ed60ae33-a661-4593-844a-cb91c1379427
 ---
 # Configuring System Settings
 
-<!-- We should put a badge here that marks this as a topic for LXC-SM or On Prem only. -Rich -->
+{bdg-secondary}`Only LXC-SM or On Premise`
 
 System settings apply across instances, sites, or widgets. Settings made here apply across your entire environment. Some of these cannot be changed at lower scopes (for example, configuring antivirus) and some become defaults that can be overridden at lower scopes. See [System Settings](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/system-settings) to learn more.
 

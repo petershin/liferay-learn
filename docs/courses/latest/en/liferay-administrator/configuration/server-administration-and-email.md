@@ -13,11 +13,25 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
 
 ### Configuring Mail in LXC-SM or On-Premises
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Server Administration_. Click the _Mail_ tab.
+1. Download [FakeSMTP](http://nilhcem.com/FakeSMTP/). 
+
+1. Unzip the file. Start the FakeSMTP mail server with the following command:
+
+   `java -jar fakeSMTP-2.0.jar`
+
+1. Set the listening port to `2525` and click _Start server_.
+
+   Note, if using a docker container, the following env variables need to be included in the your run command.
+
+   ```properties
+   --env LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL_PERIOD_SMTP_PERIOD_PORT=2525 \
+   --env LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL_PERIOD_SMTP_PERIOD_HOST=172.17.0.1 \
+   ```
+
+
+1. In Liferay, navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Server Administration_. Click the _Mail_ tab.
 
 1. Set the following configuration.
-
-<!-- Was there a step somewhere I missed where we made localhost a mail server? If we don't have an actual mail server to use, as I said, you should use a dummy one like Fake SMTP Server (https://github.com/gessnerfl/fake-smtp-server). There is a docker image for it. -->
 
    * Incoming POP Server: `localhost`
    * Incoming Port: `110`
@@ -33,6 +47,31 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
    ![Enter the settings for the mail server.](./server-administration-and-email/images/01.png)
 
    Click _Save_.
+
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Click _Email_.
+
+1. In the left navigation, click _Email Sender_. Set the following.
+
+   * Name: `Support`
+   * Address: `support@delectablebonsai.com`
+
+   Click _Save_.
+
+1. Navigate to _Global Menu_ (![Global Menu](../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Click _Add User_ (![Add icon](../images/icon-add.png)).
+
+1. Enter the following account information:
+
+   * Screen Name: `alan`
+   * Email Address: `alan@delectablebonsai.com`
+   * First Name: `Alan`
+   * Last Name: `Adams`
+   * Job Title: `Sales & Marketing Manager`
+
+   Click _Save_. 
+
+1. Liferay has sent a welcome email to Alan Adams..
+
+   ![Liferay has sent a welcome email.](./server-administration-and-email/images/02.png)
 
 Your Liferay environment is now configured with a mail server. You can further customize mail to configure different email senders and messages for each instance. See [Instance Email Settings](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings) to learn more.
 

@@ -3,7 +3,7 @@ uuid: f6380d67-6784-46a4-8723-46fcc24177a5
 ---
 # Configuring Virtual Instances
 
-<!-- Same here. Let's use a badge to call out this only applies to specific environments. -Rich --> 
+{bdg-secondary}`Only LXC-SM or On Premise`
 
 You may have a business use case where you need another Liferay environment with its own set of sites, users, and organizations. Rather than spinning up a brand new server, you can create a virtual instance.
 
@@ -26,20 +26,21 @@ Contact your Liferay Cloud support person for setting up virtual instances.
    * Active: toggle on
    * Virtual Instance Initializer: select _Blank Site_.
 
-   ```{note}
-   You can select a site initializer, such as the [Minium Demo](https://learn.liferay.com/en/w/commerce/starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store) to jump start the instance.
-   ```
-<!-- Will we be building the site with Minium as a basis? If so, we should make this an explicit step. Otherwise, we shouldn't mention it. Again, this isn't docs; we don't show them options. We tell them exactly what to do to build the thing we're building. -Rich --> 
-
    ![Enter the virtual instance information.](./configuring-virtual-instances/images/01.png)
 
    Click _Save_. Your new virtual instance ready.
 
-```{note}
-It is up to you to configure the domain name and its corresponding server address.
-```
+1. Since this is not a real externally hosted site, add the domain to your `/etc/hosts` file of your local system.
 
-<!-- No, it isn't. We have to tell them exactly what to do, and it has to work. If this domain won't work, we should use something else. -Rich --> 
+   `127.0.0.1 www.bulkbonsaimaplesyrup.com`
+
+   ```{note}
+   If using a docker container, `--add-host bulkbonsaimaplesyrup.com:127.0.0.1` entry must be included in your run command.
+   ```
+
+1. Once the virtual instance is successfully added, navigate to `http://www.bulkbonsaimaplesyrup.com:8080/`. 
+
+   ![The new virtual instance is ready to use.](./configuring-virtual-instances/images/02.png)
 
 The next step is to [configure instance settings](./configuring-instance-settings.md).
 

@@ -59,7 +59,7 @@ Here's where Learning to Rank intervenes and makes that process different:
 
 1. The results are re-scored by the [SLTR query](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html), which includes the keywords and the trained model to use for re-scoring.
 
-1. Once the trained model re-ranks the results, they're returned in Liferay's [Search Results]( ../search-pages-and-widgets/search-results/search-results.md) in their new order.
+1. Once the trained model re-ranks the results, they're returned in Liferay's [Search Results](../search-pages-and-widgets/search-results/search-results.md) in their new order.
 
 Though it's just a sub-bullet point in the ordered list above, much of the work in this paradigm is in creating and honing the trained model. That's beyond the scope here, but below is help in getting all the pieces in place to orchestrate the magic of machine learning on your Liferay queries. Here's a brief overview of what constitutes _model training_.
 

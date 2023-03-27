@@ -67,7 +67,7 @@ To activate a workflow for a _Web Content Folder_:
 
     ![Selecting workflow for a Web Content Folder.](./activating-workflow/images/05.png)
 
-1. Select the workflow definition ( for example, _Single Approver_).
+1. Select the workflow definition (for example, _Single Approver_).
 1. Click the _Save_ button.
 
 ### Documents and Media Folders
@@ -87,7 +87,7 @@ To activate a workflow for a _Documents and Media Folder_:
 
     ![Selecting workflow for a DM Folder.](./activating-workflow/images/07.png)
 
-1. Select the workflow definition ( for example, _Single Approver_).
+1. Select the workflow definition (for example, _Single Approver_).
 1. Click the _Save_ button.
 
 ### Dynamic Data Lists

@@ -123,6 +123,7 @@ In a larger B2B context with multiple accounts under the same entity, it may mak
 Congratulations! You have completed this module on users, accounts, organizations, and permissions. 
 
 ## Relevant Concepts
+
 - [Accounts](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts)
 - [Account Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-users)
 - [Account Groups](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-groups)

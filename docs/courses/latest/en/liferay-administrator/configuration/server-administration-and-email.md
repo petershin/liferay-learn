@@ -13,6 +13,8 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
 
 ### Configuring Mail in LXC-SM or On-Premises
 
+In real life, you'd already have a mail server for Liferay to use. Here, you'll simulate one. 
+
 1. Download [FakeSMTP](http://nilhcem.com/FakeSMTP/). 
 
 1. Unzip the file. Start the FakeSMTP mail server with the following command:
@@ -21,7 +23,7 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
 
 1. Set the listening port to `2525` and click _Start server_.
 
-   Note, if using a docker container, the following env variables need to be included in the your run command.
+   Note, if using a docker container, the following env variables must be included in the your run command.
 
    ```properties
    --env LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL_PERIOD_SMTP_PERIOD_PORT=2525 \
@@ -50,7 +52,7 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Click _Email_.
 
-1. In the left navigation, click _Email Sender_. Set the following.
+1. In the left navigation, click _Email Sender_. Set the options below.
 
    * Name: `Support`
    * Address: `support@delectablebonsai.com`
@@ -69,7 +71,7 @@ If this wasn't already configured for you, contact your Liferay Cloud support pe
 
    Click _Save_. 
 
-1. Liferay has sent a welcome email to Alan Adams..
+1. Liferay has sent a welcome email to Alan Adams.
 
    ![Liferay has sent a welcome email.](./server-administration-and-email/images/02.png)
 

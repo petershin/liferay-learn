@@ -75,6 +75,7 @@ Employees at Delectable Bonsai need different permissions based on their work. F
 The next step is creating and managing [accounts](./working-with-accounts.md).
 
 ## Relevant Concepts
+
 - [Understanding Roles and Permissions](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 - [Assigning Users to Roles](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/assigning-users-to-roles)
 - [Creating and Managing Roles](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles)

@@ -101,5 +101,6 @@ Next, create an organization site for the Sales & Marketing department to host a
 The next step is to assign different [roles and permissions](./setting-roles-and-permissions.md) to each user.
 
 ## Relevant Concepts
+
 - [Understanding Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations)
 - [Organization Sites](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites)

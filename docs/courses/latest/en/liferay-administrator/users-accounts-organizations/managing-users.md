@@ -71,6 +71,7 @@ Create an account for the IT manager.
 The next step is creating [organizations](./creating-organizations.md). 
 
 ## Relevant Concepts
+
 - [Understanding Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/understanding-users)
 - [Adding and Managing Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users)
 - [Adding Users to Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/adding-users-to-organizations)

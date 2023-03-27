@@ -17,4 +17,6 @@ The finished configuration contains
 * A separate user authentication setting for the virtual instance.
 * A connected mail server.
 
-The first step is [Configuring System Settings](./configuration/configuring-system-settings.md).
+The first step is Configuring System Settings.
+
+[Let's Go!](./configuration/configuring-system-settings.md)

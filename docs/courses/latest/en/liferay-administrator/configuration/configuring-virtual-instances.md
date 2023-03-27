@@ -3,7 +3,7 @@ uuid: f6380d67-6784-46a4-8723-46fcc24177a5
 ---
 # Configuring Virtual Instances
 
-{bdg-secondary}`Only LXC-SM or On Premise`
+{bdg-secondary}`LXC-SM or On Premise Only`
 
 You may have a business use case where you need another Liferay environment with its own set of sites, users, and organizations. Rather than spinning up a brand new server, you can create a virtual instance.
 

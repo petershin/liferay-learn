@@ -5,7 +5,7 @@ uuid: b6d54fc8-344a-4595-954b-10be35f1ce47
 
 Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-configuration) to search blueprints to control the order of search results:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and select *Blueprints*.
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click the *Applications* tab, and select *Blueprints*.
 
 1. [Create a blueprint](./creating-and-managing-search-blueprints.md) or open an existing one.
 
@@ -14,7 +14,7 @@ Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-c
 ![Enter JSON to sort a blueprint's results.](./sorting-results-in-a-search-blueprint/images/01.png)
 
 ```{important}
-* Avoid using both the [Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorting on a search page. Liferay cannot guarantee consistent behavior.
+* Avoid using both the [Sort widget](../../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorting on a search page. Liferay cannot guarantee consistent behavior.
 
 * The examples below are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
 
@@ -45,7 +45,7 @@ A sort configuration is a JSON object with a `sorts` array defining the fields t
 
 ## Example 2: Sorting by a Structure Field
 
-[Web Content Structure](../../../content-authoring-and-management/web-content/web-content-structures.md) fields are indexed as nested fields in the search engine document.
+[Web Content Structure](../../../../content-authoring-and-management/web-content/web-content-structures.md) fields are indexed as nested fields in the search engine document.
 
 When viewing the document, nested properties appear under `ddmFieldArray`:
 
@@ -100,7 +100,7 @@ For a nested field, the sort configuration's field declaration is more complicat
 
 ## Example 3: Sorting by an Objects Field
 
-[Object](../../../building-applications/objects.md) entry fields are indexed as nested fields in the search engine document.
+[Object](../../../../building-applications/objects.md) entry fields are indexed as nested fields in the search engine document.
 
 When viewing the document, an object's nested properties appear under `nestedFieldArray`:
 
@@ -153,4 +153,4 @@ This example sorts by an object integer field:
 ## Additional Information
 
 * [Search Blueprints Configuration Reference](search-blueprints-configuration-reference.md)
-* [Sorting Search Results](../../search-pages-and-widgets/search-results/sorting-search-results.md)
+* [Sorting Search Results](../../../search-pages-and-widgets/search-results/sorting-search-results.md)

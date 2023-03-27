@@ -6,9 +6,9 @@ uuid: 2de44205-0b3c-41b3-857b-3a60fc40ec81
 {bdg-primary}`Subscription`
 {bdg-secondary}`7.4 U36+ and GA36+`
 
-Search Bar Suggestions uses the regular [search bar query](../search-insights.md) by default. [Liferay Enterprise Search users](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) can influence or override the query using [Search Blueprints](../../liferay-enterprise-search/search-experiences/understanding-search-blueprints.md).
+Search Bar Suggestions uses the regular [search bar query](../search-insights.md) by default. [Liferay Enterprise Search users](../../liferay-enterprise-search/activating-liferay-enterprise-search.md) can influence or override the query using [Search Blueprints](../../liferay-enterprise-search/search-experiences/search-blueprints/understanding-search-blueprints.md).
 
-First, [build a Blueprint](../../liferay-enterprise-search/search-experiences/creating-and-managing-search-blueprints.md). Once you have a Blueprint,
+First, [build a Blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints/creating-and-managing-search-blueprints.md). Once you have a Blueprint,
 
 1. Make sure Search Bar Suggestions are enabled in Instance Settings. They are enabled by default.
 

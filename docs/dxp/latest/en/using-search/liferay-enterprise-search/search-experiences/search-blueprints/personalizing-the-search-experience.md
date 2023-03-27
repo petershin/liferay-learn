@@ -3,7 +3,7 @@ uuid: fedf1e88-d26f-4015-b97e-3dd10e9da657
 ---
 # Personalizing the Search Experience
 
-One of the premier use cases for Search Experiences and Search Blueprints in particular is to personalize Liferay's [search results](../../search-pages-and-widgets/search-results.md). With a personalized search experience, each User sees results depending on the particular details of his or her context. There are currently Elements for making your Blueprint react to the answers of contextual questions like
+One of the premier use cases for Search Experiences and Search Blueprints in particular is to personalize Liferay's [search results](../../../search-pages-and-widgets/search-results.md). With a personalized search experience, each User sees results depending on the particular details of his or her context. There are currently Elements for making your Blueprint react to the answers of contextual questions like
 
 * Where is the User?
 * What Roles does the User have?
@@ -11,7 +11,7 @@ One of the premier use cases for Search Experiences and Search Blueprints in par
 * What content does the User own?
 * Is the User a Guest?
 * Is the User a new User?
-* What [User Segment](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)s is the User part of?
+* What [User Segment](../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)s is the User part of?
 
 Without a Blueprint tailored for each User's context, the default results are scored based on a query that calculates relevance by how well the text of the searched keywords matches the [tokenized](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-tokenizers.html) values of indexed documents.
 
@@ -29,17 +29,17 @@ There are several Elements that are especially useful for personalization effort
 
 *Boost Contents for the Current Language* is an Element that boosts search results with a `defaultLanguageId` field matching the current session's language.
 
-*Hide Contents in a Category for Guest Users* is an Element that hides search results matching with a [certain category](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) field, if the search User is unauthenticated.
+*Hide Contents in a Category for Guest Users* is an Element that hides search results matching with a [certain category](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) field, if the search User is unauthenticated.
 
 *Limit Search to My Contents* is an Element that only returns search results if the document's `userId` field matches the search User.
 
-*Limit Search to My Sites* is an Element that only returns search results scoped to a [Site that the User is a member of](../../../site-building/sites/site-membership/adding-members-to-sites.md).
+*Limit Search to My Sites* is an Element that only returns search results scoped to a [Site that the User is a member of](../../../../site-building/sites/site-membership/adding-members-to-sites.md).
 
 *Boost Contents on My Sites* is an Element that boosts search results if the search User is a member of the Site the results are scoped to.
 
-*Boost Contents in a Category for New User Accounts* is an Element that boosts search results with a [certain category](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) if the search User's account was created in a certain time range.
+*Boost Contents in a Category for New User Accounts* is an Element that boosts search results with a [certain category](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) if the search User's account was created in a certain time range.
 
-*Boost Contents in a Category for a User Segment* is an Element that boosts search results with a [certain category](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) if the user belongs to a certain [User Segment](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md).
+*Boost Contents in a Category for a User Segment* is an Element that boosts search results with a [certain category](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) if the user belongs to a certain [User Segment](../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md).
 
 <!-- TODO: Move these descriptions to the Elements Reference guide when written, and link to them. Since we don't currently have the Elements Reference guide written, we must describe them here. -->
 
@@ -98,7 +98,7 @@ Now that you have the ipstack service configured and search documents with geopo
 
 1. Open the Blueprints application by clicking _Blueprints_ from Global Menu &rarr; Applications (Search Experiences).
 
-1. Add a Blueprint by clicking the Add (![Add](../../../images/icon-add.png)) button.
+1. Add a Blueprint by clicking the Add (![Add](../../../../images/icon-add.png)) button.
 
    ![Start creating a Blueprint from the Add Blueprint modal window.](./creating-and-managing-search-blueprints/images/02.png)
 
@@ -114,7 +114,7 @@ Now that you have the ipstack service configured and search documents with geopo
 
 1. Test the Blueprint as you build and configure it. Click _Preview_.
 
-1. To model the search experience of a User in your location, set your public IPV4 address into the search context by clicking the gear icon (![Cog](../../../images/icon-cog3.png)): 
+1. To model the search experience of a User in your location, set your public IPV4 address into the search context by clicking the gear icon (![Cog](../../../../images/icon-cog3.png)): 
    - Key: `search.experiences.ip.address`
    - Value: `[My Public IPV4 Address]`
 

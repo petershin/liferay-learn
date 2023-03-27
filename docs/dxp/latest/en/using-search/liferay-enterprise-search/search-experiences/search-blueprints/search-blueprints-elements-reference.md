@@ -3,15 +3,15 @@ uuid: 0c38a48d-209a-428e-9d6c-72b0d8a52646
 ---
 # Search Blueprints Elements Reference
 
-Elements are one of the fundamental building blocks of a [Search Blueprint](understanding-search-blueprints.md#what-is-a-blueprint). To explore all the available Elements, navigate to the Global Menu (![Global](../../../images/icon-applications-menu.png)) &rarr; Applications &rarr; Blueprints. Open the Elements tab, find an Element of interest, and click on it. You'll see the full JSON representation of the Element.
+Elements are one of the fundamental building blocks of a [Search Blueprint](understanding-search-blueprints.md#what-is-a-blueprint). To explore all the available Elements, navigate to the Global Menu (![Global](../../../../images/icon-applications-menu.png)) &rarr; Applications &rarr; Blueprints. Open the Elements tab, find an Element of interest, and click on it. You'll see the full JSON representation of the Element.
 
 To add the Element to a Blueprint, [create a Blueprint](./creating-and-managing-search-blueprints.md) and use its Query Builder &rarr; Query Elements sidebar to search and add Elements.
 
 ![Configure Query Elements in the Search Blueprints application.](./search-blueprints-elements-reference/images/13.png)
 
-To see the query configuration JSON for any Element while working in the Blueprints &rarr; Query Elements screen, click the Actions icon (![Actions](../../../images/icon-actions.png)) &rarr; View Element JSON.
+To see the query configuration JSON for any Element while working in the Blueprints &rarr; Query Elements screen, click the Actions icon (![Actions](../../../../images/icon-actions.png)) &rarr; View Element JSON.
 
-Each Element can be disabled or enabled in the Blueprint using the toggle switch in the Title Bar of the Blueprint. For a streamlined view of the Elements in the Blueprint, you can collapse the contents of an Element using the Down Arrow Icon (![Down Arrow Icon](../../../images/icon-angle-down.png)) in the Title Bar of the Element.
+Each Element can be disabled or enabled in the Blueprint using the toggle switch in the Title Bar of the Blueprint. For a streamlined view of the Elements in the Blueprint, you can collapse the contents of an Element using the Down Arrow Icon (![Down Arrow Icon](../../../../images/icon-angle-down.png)) in the Title Bar of the Element.
 
 Each Element has configuration options, many of which directly correspond to attributes of the query as defined in the Elasticsearch [Query DSL documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl.html). Links to specific query types are provided below as appropriate.
 
@@ -36,7 +36,7 @@ _External Reference_: See the Elasticsearch [Multi-match](https://www.elastic.co
 
 ### Boost Asset Type
 
-Boost the given asset type. Select the Asset Type (required) from a list of registered [Assets](../../../building-applications/data-frameworks/asset-framework.md) and configure the boost value.
+Boost the given asset type. Select the Asset Type (required) from a list of registered [Assets](../../../../building-applications/data-frameworks/asset-framework.md) and configure the boost value.
 
 ### Boost Contents for the Current Language
 
@@ -82,7 +82,7 @@ Boost contents in a category for the given period of time. The Asset Category ID
 
 ### Boost Contents in a Category for a User Segment
 
-Boost contents in a category for users belonging to the given [User Segments](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md). If entering more than one User Segment ID, enter a comma into the text box to begin entering the next ID. The Asset Category ID and the User Segment IDs are required fields. This is a conditional Element: the query is executed and boosted only if the `user.active_segment_entry_ids` contains the given Segment IDs.
+Boost contents in a category for users belonging to the given [User Segments](../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md). If entering more than one User Segment ID, enter a comma into the text box to begin entering the next ID. The Asset Category ID and the User Segment IDs are required fields. This is a conditional Element: the query is executed and boosted only if the `user.active_segment_entry_ids` contains the given Segment IDs.
 
 ![Boost results with a certain Category for users in the given Segments.](./search-blueprints-elements-reference/images/03.png)
 
@@ -226,13 +226,13 @@ Limit the search to PDF files. This Element filters results by a Term query on t
 
 Limit the search to contents that are published. This Element duplicates the functionality of a Liferay Search Framework query clause and is most useful for advanced use cases. For example, if you've disabled Liferay's search framework from contributing its default search clauses, you can use this Element to restore part of the lost functionality.
 
-This Element filters results using a Term query on the `status` field, matching its value to the hardcoded value of `0`, which represents published contents in [Liferay's Workflow system](../../../process-automation/workflow/introduction-to-workflow.md#understanding-workflow-status).
+This Element filters results using a Term query on the `status` field, matching its value to the hardcoded value of `0`, which represents published contents in [Liferay's Workflow system](../../../../process-automation/workflow/introduction-to-workflow.md#understanding-workflow-status).
 
 ### Limit Search to the Current Site
 
 Limit the search to the current site. This Element filters results using a Term query on the `scopeGroupId` field, matching its value with the context parameter `context.scope_groupId`.
 
-This Element's functionality overlaps with the [Search Bar's](../../getting-started/searching-for-content.md#configuring-the-search-bar) Scope configuration option.
+This Element's functionality overlaps with the [Search Bar's](../../../getting-started/searching-for-content.md#configuring-the-search-bar) Scope configuration option.
 
 ### Limit Search to These Sites
 
@@ -242,7 +242,7 @@ Limit the search scope to the given sites. Filter results using a Terms query on
 
 The ID for a site is displayed in its Site Settings &rarr; Site Configuration screen.
 
-This Element's functionality overlaps with the [Search Bar's](../../getting-started/searching-for-content.md#configuring-the-search-bar) Scope configuration option. You must set the Search Bar scope to _Everything_ for this Element to work.
+This Element's functionality overlaps with the [Search Bar's](../../../getting-started/searching-for-content.md#configuring-the-search-bar) Scope configuration option. You must set the Search Bar scope to _Everything_ for this Element to work.
 
 ## Hide Some Results
 
@@ -323,4 +323,4 @@ _External Reference:_ See the [Elasticsearch Multi-match query](https://www.elas
 
 - [Creating and Managing Search Blueprints](./creating-and-managing-search-blueprints.md)
 - [Personalizing the Search Experience](./personalizing-the-search-experience.md)
-- [Search Results](../../search-pages-and-widgets/search-results.md)
+- [Search Results](../../../search-pages-and-widgets/search-results.md)

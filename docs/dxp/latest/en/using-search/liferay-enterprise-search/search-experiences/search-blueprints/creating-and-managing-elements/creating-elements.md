@@ -106,7 +106,7 @@ This Element depends on a custom variable that can be added using the Parameter 
 
 ## Using the Add Element Source Editor
 
-A more robust editing experience is available for building your Elements. From the Elements section of Search Blueprints, click the Add (![Add](../../../../images/icon-add.png)) button. 
+A more robust editing experience is available for building your Elements. From the Elements section of Search Blueprints, click the Add (![Add](../../../../../images/icon-add.png)) button. 
 
 Name the Element and click _Create_. The Element Source editor is displayed, and the Predefined Variables are shown in the pane to the left of the editor. As you type in the JSON editor, auto-completion reveals the available properties. To further understand the available JSON properties, see [Understanding the Schema](#understanding-the-element-schema).
 
@@ -165,7 +165,7 @@ The `elementDefinition` is where you'll do the bulk of the work. Its properties 
 
 - `category` provides a string that classifies the behavior of the Element. Specify `match`, `boost`, `conditional`, `filter`, `hide`, or `custom`.
 - `configuration` provides the `queryConfiguration`, which holds the query clauses you're contributing, via the `queryEntries` property.
-- `icon` sets a string that sets which available icon to use for the Element. Any image available in the [Lexicon Icon Library](../../../../building-applications/developing-a-java-web-application/using-mvc/tag-libraries/clay-tag-library/clay-icons.md) can be used (e.g., `thumbs-up`).
+- `icon` sets a string that sets which available icon to use for the Element. Any image available in the [Lexicon Icon Library](../../../../../building-applications/developing-a-java-web-application/using-mvc/tag-libraries/clay-tag-library/clay-icons.md) can be used (e.g., `thumbs-up`).
 - `uiConfiguration` sets the configuration elements that you'll show in the UI and then pass into your custom Element with the configured values. 
 
 For example, an Element that boosts a term query match on the `entryClassName` field can configure the query and the UI like this:

@@ -3,14 +3,14 @@ uuid: dc1f2a74-8d1b-475f-ba5e-a4d98d9f25c8
 ---
 # Using a Search Blueprint on a Search Page
 
-By default, a search page does not have a [search blueprint](./understanding-search-blueprints.md) associated with it. A blueprint must be applied to a [search page](../../search-pages-and-widgets/working-with-search-pages.md) to affect the Liferay search experience. If a site has multiple search pages, follow the steps below on each page that should use a blueprint, as each must be configured separately. You can use different blueprints on each page, if desired.
+By default, a search page does not have a [search blueprint](./understanding-search-blueprints.md) associated with it. A blueprint must be applied to a [search page](../../../search-pages-and-widgets/working-with-search-pages.md) to affect the Liferay search experience. If a site has multiple search pages, follow the steps below on each page that should use a blueprint, as each must be configured separately. You can use different blueprints on each page, if desired.
 
 To make the search page react to your search blueprint,
 
 1. [Create a blueprint](./creating-and-managing-search-blueprints.md).
-1. Create or navigate to the [search page](../../search-pages-and-widgets/working-with-search-pages.md).
+1. Create or navigate to the [search page](../../../search-pages-and-widgets/working-with-search-pages.md).
 1. Add the Blueprint Options widget to the page. 
-1. Click the widget's Options icon (![Options](../../../images/icon-app-options.png)) and click *Configuration*.
+1. Click the widget's Options icon (![Options](../../../../images/icon-app-options.png)) and click *Configuration*.
 1. To choose a blueprint for the page, click _Select_.
 
    ![Select a blueprint for use on the page.](./using-a-search-blueprint-on-a-search-page/images/02.png)
@@ -19,7 +19,7 @@ To make the search page react to your search blueprint,
 
 Now the blueprint's functionality is applied to the page.
 
-Administrative users can instead use the [Low Level Search Options](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md) widget to apply a blueprint to a search page. Open the widget's configuration. In the Attributes section, add
+Administrative users can instead use the [Low Level Search Options](../../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md) widget to apply a blueprint to a search page. Open the widget's configuration. In the Attributes section, add
 
 - Key: `search.experiences.blueprint.id`
 - Value: `[the blueprint ID]`
@@ -53,8 +53,8 @@ Follow this example to set search context attributes into a blueprint-driven sea
       - Email Address: `other@liferay.com`
       - First Name: `Other`
       - Last Name: `User`
-1. Create a [User Segment](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) called _Acme Users_. Drag the User attribute and add Acme User to it. Record the segment's ID. It's in the URL as the parameter `segmentsEntryId`.
-1. Create an [Asset Category](../../../content-authoring-and-management/tags-and-categories.md). Name the Vocabulary and the Category _Business_. Record the Category's ID. It's in the URL as part of the path: `category/[ID]`.
+1. Create a [User Segment](../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) called _Acme Users_. Drag the User attribute and add Acme User to it. Record the segment's ID. It's in the URL as the parameter `segmentsEntryId`.
+1. Create an [Asset Category](../../../../content-authoring-and-management/tags-and-categories.md). Name the Vocabulary and the Category _Business_. Record the Category's ID. It's in the URL as part of the path: `category/[ID]`.
 1. Create two pieces of Basic Web Content:
    - Web Content 1
       - Title: Has Business Category

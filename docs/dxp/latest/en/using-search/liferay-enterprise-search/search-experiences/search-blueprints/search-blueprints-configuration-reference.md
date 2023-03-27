@@ -182,7 +182,7 @@ This example adds a new search context attribute that we'll use to exclude Web C
 
 1. Add the search context attribute. For testing purposes you can do this in the [preview](creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) sidebar.
 
-   Click _Preview_. Add search context attributes to the Blueprint preview search by clicking the gear icon (![Gear](../../../images/icon-cog3.png)). Enter the key/value pair for the attribute: `exclude.journal_articles`/`true`
+   Click _Preview_. Add search context attributes to the Blueprint preview search by clicking the gear icon (![Gear](../../../../images/icon-cog3.png)). Enter the key/value pair for the attribute: `exclude.journal_articles`/`true`
 
    Then click _Done_. 
 
@@ -190,7 +190,7 @@ This example adds a new search context attribute that we'll use to exclude Web C
 
 
    ```{tip}
-   You can configure search context attributes on a Search Page using the [Low Level Search Options](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md) widget.
+   You can configure search context attributes on a Search Page using the [Low Level Search Options](../../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md) widget.
    ```
 
 ## Advanced Configuration

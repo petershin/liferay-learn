@@ -3,13 +3,13 @@ uuid: 75d0f713-0c4c-46ae-8761-21a0878077cf
 ---
 # Creating and Managing Search Blueprints
 
-[Search Blueprints](./understanding-search-blueprints.md) are created, updated, and deleted using an administrative application in the Global Menu. Open the Global menu's Applications section and find the Search Experiences category. If you already have a Blueprint and want to apply it's functionality in a Liferay [Search Page](../../search-pages-and-widgets/working-with-search-pages.md), see [Using a Search Blueprint on a Search Page](using-a-search-blueprint-on-a-search-page.md).
+[Search Blueprints](./understanding-search-blueprints.md) are created, updated, and deleted using an administrative application in the Global Menu. Open the Global menu's Applications section and find the Search Experiences category. If you already have a Blueprint and want to apply it's functionality in a Liferay [Search Page](../../../search-pages-and-widgets/working-with-search-pages.md), see [Using a Search Blueprint on a Search Page](./using-a-search-blueprint-on-a-search-page.md).
 
 To create Search Blueprints,
 
 1. Open the Blueprints application by clicking _Blueprints_ from Global Menu &rarr; Applications (Search Experiences).
 
-1. Add a Blueprint by clicking the Add (![Add](../../../images/icon-add.png)) button.
+1. Add a Blueprint by clicking the Add (![Add](../../../../images/icon-add.png)) button.
 
    ![Start creating a Blueprint from the Add Blueprint modal window.](./creating-and-managing-search-blueprints/images/01.png)
 
@@ -31,7 +31,7 @@ To create Search Blueprints,
 
 The Blueprint creation process can be fast and simple, but sometimes involves more iterating and testing. Make sure you save the Blueprint often to ensure your work is preserved.
 
-Edit or delete a Blueprint from its Actions menu (![Actions](../../../images/icon-actions.png)).
+Edit or delete a Blueprint from its Actions menu (![Actions](../../../../images/icon-actions.png)).
 
 In addition to the CRUD options, Search Blueprints can be [imported and exported](#importing-and-exporting-blueprints).
 
@@ -49,7 +49,7 @@ Many use cases for Blueprints will require using its Query Builder. Use the Quer
 
 Add Elements to begin adding query clauses to the Blueprint:
 
-1. Open the Add Query Elements sidebar by clicking the Add (![Add](../../../images/icon-add.png)) button on the Query Elements screen. 
+1. Open the Add Query Elements sidebar by clicking the Add (![Add](../../../../images/icon-add.png)) button on the Query Elements screen. 
 
    ![Add Elements to the Blueprint.](./creating-and-managing-search-blueprints/images/04.png)
 
@@ -165,13 +165,13 @@ To export the Blueprint JSON,
 
 1. Open the Blueprints application from the Global Menu &rarr; Applications &rarr; Blueprints (in the Search Experiences section).
 
-1. From the list of Blueprints, open a Blueprint's Actions (![Actions](../../../images/icon-actions.png)) menu and click _Export_.
+1. From the list of Blueprints, open a Blueprint's Actions (![Actions](../../../../images/icon-actions.png)) menu and click _Export_.
 
 To import a Blueprint's JSON definition,
 
 1. Open the Blueprints application from the Global Menu &rarr; Applications &rarr; Blueprints (in the Search Experiences section).
 
-1. Open the main Blueprints Actions (![Actions](../../../images/icon-actions.png)) menu and click _Import_.
+1. Open the main Blueprints Actions (![Actions](../../../../images/icon-actions.png)) menu and click _Import_.
 
 1. Use the Import modal to choose a valid Blueprint JSON file. Valid Element JSON files can also be imported from this screen.
 
@@ -187,9 +187,9 @@ There's a preview sidebar that's handy for examining the results of a search bac
 
 Here you can access these features:
 
-- For 7.4 U52+, click _View Raw Request_ to see the entire search request string. From the Raw Request modal, you can copy the request to the clipboard or download it as a JSON file. This is the same request seen in the [Search Insights](../../search-pages-and-widgets/search-insights.md) widget on the search page.
+- For 7.4 U52+, click _View Raw Request_ to see the entire search request string. From the Raw Request modal, you can copy the request to the clipboard or download it as a JSON file. This is the same request seen in the [Search Insights](../../../search-pages-and-widgets/search-insights.md) widget on the search page.
 
-- Click _View Raw Response_ to see the entire search response string. From the Raw Response modal you can copy the response to the clipboard or download it as a JSON file. This is the same string you can see in the [Search Insights](../../search-pages-and-widgets/search-insights.md) widget on the search page.
+- Click _View Raw Response_ to see the entire search response string. From the Raw Response modal you can copy the response to the clipboard or download it as a JSON file. This is the same string you can see in the [Search Insights](../../../search-pages-and-widgets/search-insights.md) widget on the search page.
 
    ![View the raw response string returned from Elasticsearch.](./creating-and-managing-search-blueprints/images/11.png)
 
@@ -205,9 +205,9 @@ Here you can access these features:
 
 For example,
 
-1. Add a new [Vocabulary with a Category](../../../content-authoring-and-management/tags-and-categories.md) called _administrative_.
+1. Add a new [Vocabulary with a Category](../../../../content-authoring-and-management/tags-and-categories.md) called _administrative_.
 
-1. Add two new [Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles.md); make sure both have _test_ in the title field. Associate one of them to the category you created.
+1. Add two new [Web Content Articles](../../../../content-authoring-and-management/web-content/web-content-articles.md); make sure both have _test_ in the title field. Associate one of them to the category you created.
 
 1. Create a new Blueprint and add the Conditional Element _Hide Contents in a Category for Guest Users_. You need the Asset Category ID for the Category you created, but you can find that in the Preview window.
 
@@ -229,4 +229,4 @@ This example uses an Element that reads the context variable `user.is_signed_in`
 
 ## What's Next
 
-- [Using a Search Blueprint on a Search Page](using-a-search-blueprint-on-a-search-page.md)
+- [Using a Search Blueprint on a Search Page](./using-a-search-blueprint-on-a-search-page.md)

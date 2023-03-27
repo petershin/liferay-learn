@@ -1,6 +1,7 @@
 ---
 toc:
   - ./picklists/using-picklists.md
+  - ./picklists/exporting-and-importing-picklists.md
   - ./picklists/managing-picklist-permissions.md
   - ./picklists/picklists-api-basics.md
 uuid: 15762235-5051-4cbf-82ad-ddd513651f27
@@ -11,6 +12,7 @@ uuid: 15762235-5051-4cbf-82ad-ddd513651f27
 :maxdepth: 3
 
 picklists/using-picklists.md
+picklists/exporting-and-importing-picklists.md
 picklists/managing-picklist-permissions.md
 picklists/picklists-api-basics.md
 ```
@@ -22,6 +24,10 @@ Liferay Picklists are predefined lists of string values that consist of a name/k
 
 :::{grid-item-card} Using Picklists
 :link: ./picklists/using-picklists.md
+:::
+
+:::{grid-item-card} Exporting and Importing Picklists
+:link: ./picklists/exporting-and-importing-picklists.md
 :::
 
 :::{grid-item-card} Managing Picklist Permissions

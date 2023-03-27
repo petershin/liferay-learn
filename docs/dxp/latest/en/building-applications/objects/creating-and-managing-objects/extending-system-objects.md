@@ -34,11 +34,21 @@ Liferay's [Custom Fields](../../../system-administration/configuring-liferay/add
 
 ## Adding Relationships
 
-You can create relationships between system and custom objects to link their entities. System objects support both one-to-many and many-to-many relationships. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information.
+You can add relationships between system and custom objects to link their entities.System objects support both one-to-many and many-to-many relationships. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information.
 
 ```{important}
-Since system objects don't support [custom layouts](./layouts/designing-object-layouts.md), you cannot add [layout tabs](./layouts/designing-object-layouts.md#adding-layout-tabs) to the object for displaying many-to-many relationships or the parent side of a one-to-many relationship.
+Since system objects don't support custom [layouts](./layouts/designing-object-layouts.md) and [views](./views/designing-object-views.md), you cannot add relationships to the UI for system objects. You can only interact with them via headless APIs. 
 ```
+
+### Relationship APIs
+
+If the system object is in a many-to-many relationship or on the parent side of a one-to-many relationship, Liferay generates [REST endpoints](../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) for querying and managing the relationship. This includes a GET endpoint for returning related object entries, PUT endpoint for relating entries, and DELETE endpoint for disassociating related entries.
+
+In this example, the User system object is in a one-to-many relationship (`userRequests`) with a custom object (`timeOffRequest`). These endpoints appear in the [`headless-admin-user`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-user/v1.0/openapi.json) service.
+
+![Liferay generates REST endpoints for querying and managing the relationship.](./extending-system-objects/images/02.png)
+
+See [Using Relationships REST APIs](../objects-tutorials/using-apis/using-relationship-rest-apis.md) for an introductory tutorial.
 
 ## Adding Actions
 
@@ -53,6 +63,7 @@ You can add actions to system objects, to be triggered when entries are added, u
 | [Update Object Entry](./actions/defining-object-actions.md#update-an-object-entry) | &#10008; |
 
 See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
+
 ## Adding Validations
 
 You can add Groovy and Expression Builder validations to system objects. When triggered, these validations check for valid field entries and show custom error messages for invalid entries. Currently, Objects only supports validations for a system object's default fields and does not support validations for its custom fields. See [Adding Custom Validations](./validations/adding-custom-validations.md) for more information.

@@ -4,6 +4,8 @@ To set up channel defaults for an account, open the *Global Menu* (![Global Menu
 
 ## Setting Default Addresses
 
+{bdg-secondary}`Available Liferay DXP 7.4 U41+/GA41+`
+
 To set up a default billing address,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
@@ -29,6 +31,8 @@ You can follow the same steps to set a default shipping address under the *Shipp
 ![Select a default shipping address for a specific channel or all channels.](./setting-channel-defaults/images/02.png)
 
 ## Setting Default Terms and Conditions
+
+{bdg-secondary}`Available Liferay DXP 7.4 U40+/GA40+`
 
 To set up default delivery terms and conditions,
 
@@ -58,6 +62,8 @@ Overriding eligibility for terms and conditions do not make them eligible for a 
 
 ## Setting Default Shipping Options and Payment Methods
 
+{bdg-secondary}`Available Liferay DXP 7.4 U49+//GA49+`
+
 To set up default shipping options,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
@@ -77,6 +83,8 @@ You can follow the same steps to set default payment methods under the *Payment 
 ![Select a default payment method for a specific channel or all channels.](./setting-channel-defaults/images/06.png)
 
 ## Setting Default Price Lists and Discounts
+
+{bdg-secondary}`Available Liferay DXP 7.4 U40+/GA40+`
 
 To set up default *Price Lists*,
 
@@ -102,6 +110,8 @@ You can follow the same steps to set default discounts under the *Discounts* sec
 
 ## Setting Default Currencies
 
+{bdg-secondary}`Available Liferay DXP 7.4 U42+/GA42+`
+
 To set up default currencies,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
@@ -121,6 +131,8 @@ This sets the default channel currency for the account during navigation only. P
 ```
 
 ## Setting Channel Account Managers
+
+{bdg-secondary}`Available Liferay DXP 7.4 U46+/GA46+`
 
 Channel account managers can view and manage orders for accounts from one or more channels. If you have a channel account manager per channel, they can only manage orders coming for the selected account from the selected channel. You can have multiple channel account managers for one channel. To select a user as the channel account manager, you need the following permission.
 

@@ -5,6 +5,12 @@ uuid: eeecd784-2cf2-4b02-9c11-52ef261b18ac
 ---
 # Account - Channel Defaults
 
+```{toctree}
+:maxdepth: 1
+
+account-channel-defaults/setting-channel-defaults.md
+```
+
 You can set up defaults for a channel associated to an account after creating the account. This improves the checkout experience and reduces the time taken to create orders. See [Introduction to Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels) for more information. You can set defaults for:
 
 * Billing Address
@@ -21,7 +27,7 @@ You can set up defaults for a channel associated to an account after creating th
 You can set a default for all available channels or a specific channel. For further fine-tuning, you can set defaults for specific channels and then set defaults for the remaining. Depending on user roles and permissions, you can change the defaults of an order during checkout. You can also set permissions so that the user can only place orders with the configured defaults.
 
 ```{note}
-Channel defaults only work in conjunction with eligibility. If the default is not eligible for a particular order, the highest priority eligible entity is set as the default. See [Understanding Eligibility Criteria](#understanding-eligibility) for more information.
+Channel defaults only work in conjunction with eligibility. If the default is not eligible for a particular order, the highest priority eligible entity is set as the default.
 ```
 
 ## Understanding Eligibility
@@ -35,12 +41,6 @@ If you don't override eligibility, the default applies to orders only if the ord
 ```
 
 By setting these defaults, you can reduce the time taken to create orders and improve user experience. Through permissions, you can control if defaults are available to change during checkout.
-
-```{toctree}
-:maxdepth: 1
-
-account-channel-defaults/setting-channel-defaults.md
-```
 
 ::::{grid} 2
 :gutter: 3 3 3 3

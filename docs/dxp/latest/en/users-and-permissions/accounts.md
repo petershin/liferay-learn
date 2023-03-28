@@ -6,6 +6,7 @@ toc:
   - ./accounts/account-roles.md
   - ./accounts/account-management-widget.md
   - ./accounts/using-workflow-with-accounts.md
+  - ./accounts/account-channel-defaults.md
 uuid: ed55c175-f9b4-40ac-b41b-9238b1467a11
 ---
 # Accounts
@@ -19,6 +20,7 @@ accounts/account-groups.md
 accounts/account-roles.md
 accounts/account-management-widget.md
 accounts/using-workflow-with-accounts.md
+accounts/account-channel-defaults.md
 ```
 
 {bdg-secondary}`Available 7.4+`
@@ -129,4 +131,5 @@ See [Account Roles](./accounts/account-roles.md) to learn more.
 * [Account Groups](./accounts/account-groups.md)
 * [Account Roles](./accounts/account-roles.md)
 * [Account Management Widget](./accounts/account-management-widget.md)
-* [Using Workflow with Accounts](accounts/using-workflow-with-accounts.md)
+* [Using Workflow with Accounts](./accounts/using-workflow-with-accounts.md)
+* [Account - Channel Defaults](./accounts/account-channel-defaults.md)

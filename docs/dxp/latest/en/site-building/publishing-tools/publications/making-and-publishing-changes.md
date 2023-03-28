@@ -3,7 +3,7 @@ uuid: 1411549b-f2fd-473e-b4ef-5f67aa7fdb5e
 ---
 # Making and Publishing Changes
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
+{bdg-secondary}`Available Liferay 7.3+`
 
 Publications provides a convenient way to manage changes to your Liferay instance. With it, you and your team can create and collaborate on blocks of changes called 'publications'. You can then publish those changes to production when ready.
 
@@ -151,11 +151,11 @@ This redirects you to the *Scheduled* tab where you can view and [manage schedul
 
 ## Removing Unnecessary Publication Data
 
-When reviewing publication changes, Liferay may generate and store file and page previews in the document library. If desired, you can remove this data.
+When reviewing publication changes, file and page previews can accumulate in the document library. If desired, you can remove this data.
 
 To do this,
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *System Settings*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to *Control Panel*, and click *System Settings*.
 
 1. Click *Upgrades* under Platform.
 

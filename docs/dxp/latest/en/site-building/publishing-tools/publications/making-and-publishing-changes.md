@@ -151,7 +151,7 @@ This redirects you to the *Scheduled* tab where you can view and [manage schedul
 
 ## Removing Unnecessary Publication Data
 
-Publications creates copies of uploaded documents and stores them in a separate table to be published later. Due to the asynchronous way the data is handled, it occasionally appears in the publication's table (e.g., when generating previews for documents). By removing unnecessary data, you can reduce backup size and prevent publication clutter.
+When reviewing publication changes, Liferay may generate and store file and page previews in the document library. If desired, you can remove this data.
 
 To do this,
 
@@ -161,10 +161,7 @@ To do this,
 
 1. Go to the *Data Removal* tab.
 
-1. Select these options:
-
-   * Remove DL Preview Change Tracking Store Content Data
-   * Remove Published Change Tracking Store Content Data
+1. Select *Remove DL Preview Change Tracking Store Content Data*.
 
    ![Check the change tracking options.](making-and-publishing-changes/images/13.png)
 

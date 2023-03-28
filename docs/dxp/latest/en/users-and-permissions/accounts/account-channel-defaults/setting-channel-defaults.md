@@ -152,6 +152,6 @@ To set up a default channel account manager,
 
 6. Click *Save*.
 
-```{important}
-Channel account manager is not a new role in Liferay. The newly added permission gives the user a view into accounts outside the organization structure. This was not possible earlier. 
-```
+   ```{important}
+   Channel account manager is not a new role in Liferay. The newly added permission gives the user a view into accounts outside the organization structure. This was not possible earlier. 
+   ```

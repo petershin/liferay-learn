@@ -7,9 +7,8 @@ uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 
 # Semantic Search
 {bdg-link-primary}`[LES Subscription](../activating-liferay-enterprise-search.md)`
-{bdg-secondary}`7.4 U50+`
+{bdg-secondary}`7.4 U70+`
 {bdg-dark}`Beta Feature`
-
 <!--Link to an explainer on what the beta feature badge means -->
 
 ```{toctree}
@@ -19,12 +18,12 @@ uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 ./semantic-search/adding-a-search-blueprint-for-semantic-search.md
 ```
 
-```{important}
-An effective semantic search solution requires a model trained in your data domain and fine-tuned on your specific content. Any example configuration shown here is not meant as a production-ready semantic search solution.
-```
+_Semantic_ search evaluates the intent behind a searched phrase. Meanwhile, a _lexical_ search matches a searched phrase to the indexed text fields, and cannot produce a match based on meaning.
 
-<!--didn't go with the "feel good" example since I think it's best to be unique from txtai--if this one's not good we can steal from them, after confirming it's okay-->
-Semantic search evaluates the intent behind a searched phrase. For example, searching for "Liferay Releases Search Experiences for 7.3" semantically matches the phrase "what's new in tech?" Meanwhile, a lexical search matches a searched phrase to the indexed text fields, and cannot produce a match based on meaning.
+| Searched Phrase | Indexed Content | Match Type |
+| :--- | :--- | :--- |
+| what's new in tech | Liferay Releases Search Experiences for 7.3 | Semantic &#10004;<br />Lexical &#10008; |
+| new releases | New features released in Liferay Search Experiences | Semantic &#10004;<br />Lexical &#10004; |
 
 Even sophisticated lexical searches like Liferay's (as powered by Elasticsearch) cannot match the user's intent with indexed documents, despite employing inventive techniques like
 - analysis to tokenize the keywords and document fields.
@@ -34,11 +33,31 @@ Even sophisticated lexical searches like Liferay's (as powered by Elasticsearch)
 
 Lexical processing of the tokenized keywords and document fields can be enough for many search needs. If you need more from the search experience, semantic search greatly closes the gap between what a lexical search can accomplish and what the user really wants from the search: process not just the words of the search, but their intent.
 
-Semantic search enables an additional content processing pipeline: when enabled, the platform produces a vector representation of the input text (for supported content types*) called a text embedding, and stores it in the index document in Elasticsearch. At search time, the search keywords entered by users go through the same vectorization and embedding process, making it possible to perform similarity searches that provide more meaningfully relevant search results for users.
+Semantic search enables an additional content processing pipeline. When enabled, the platform produces a vector representation of the input text called a text embedding, and stores it in the index document in Elasticsearch. At search time, the search keywords entered by users go through the same vectorization and embedding process, making it possible to perform similarity searches that provide more meaningfully relevant search results for users. Not all content types support text embedding:
+
+| Available Content Type | Enabled by Default? |
+| :--------------------- | :------------------ |
+| Blogs Entry            | &#10004;            |
+| Knowledge Base Article | &#10004;            |
+| Message Boards Message | &#10008;            |
+| Web Content Article    | &#10004;            |
+| Wiki Page              | &#10004;            |
+
+```{important}
+An effective semantic search solution requires a model trained in your data domain and fine-tuned on your specific content. Any example configuration shown here is not meant as a production-ready semantic search solution.
+```
 
 ## Enabling Semantic Search
 
 To enable semantic search in Liferay,
+
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), then click *Control Panel* &rarr; *Instance Settings*.
+1. Open the *Platform* &rarr; *Feature Flags* section.
+1. In the Beta entry, enable Semantic Search.
+
+![Semantic search is a beta feature and must be enabled in Instance Settings.](./semantic-search/images/02.png)
+
+To configure semantic search,
 
 1. [Choose a trained model or create your own.](#choosing-a-trained-model)
 1. [Enable a sentence transformer provider and configure it in Liferay.](./semantic-search/setting-up-a-text-embedding-provider.md)
@@ -47,7 +66,7 @@ To enable semantic search in Liferay,
 
 ### Choosing a Trained Model
 
-A properly trained model is paramount: the data in your index must be appropriate for the model chosen. <!-- more accurate to say that the model must be trained on your data?--> If no appropriate pre-trained model exists for your data, you must create your own.
+A properly trained model is paramount: the data in your index must be appropriate for the model chosen. If no appropriate pre-trained model exists for your data, you must create your own.
 
 Working with a pre-trained model is more convenient, but you must ensure it is fine-tuned to your data before employing it in production. 
 
@@ -55,9 +74,8 @@ For example, if a user searches _how does a skate move?_, a model trained on mar
 
 The [Hugging Face model hub](https://huggingface.co/models) provides a large collection of pre-trained, domain specific models.
 
-You can use pre-trained models or train your own. Fine tuning pretrained models is probably the easiest and fastest way to best possible experience (over training from scratch) but there are good pretrained models to start with. 2.
-This link should give some initial ideas for choosing a pretrained model https://www.sbert.net/docs/pretrained_models.html
-In development I actually used this model: sentence-transformers/msmarco-distilbert-base-dot-prod-v3. Maybe it could be here as an option of a good generic model
+<!--This link should give some initial ideas for choosing a pretrained model https://www.sbert.net/docs/pretrained_models.html
+In development I actually used this model: sentence-transformers/msmarco-distilbert-base-dot-prod-v3. Maybe it could be here as an option of a good generic model-->
 
 <!--
 ### Re-Indexing the Text Embeddings
@@ -72,7 +90,7 @@ To re-index the text embeddings, use the Index Actions screen and click the _Rei
 
 ## Configuring Semantic Search Index Settings
 
-Beyond [setting up a text embeddings provider](./semantic-search/setting-up-a-text-embedding-provider.md), additional configuration options are available for semantic search. Visit Control Panel &rarr; System Settings &rarr; Semantic Search, and find the Index Settings section.
+Beyond [setting up a text embeddings provider](./semantic-search/setting-up-a-text-embedding-provider.md), additional configuration options are available for semantic search. Visit Control Panel &rarr; Instance Settings &rarr; Semantic Search, and find the Index Settings section.
 
 The Sentence Transformer Settings are covered in [Enabling Semantic Search](#enabling-semantic-search)
 

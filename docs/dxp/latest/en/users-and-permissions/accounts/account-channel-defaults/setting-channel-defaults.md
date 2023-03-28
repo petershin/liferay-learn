@@ -1,18 +1,22 @@
 # Setting Channel Defaults
 
-To set up channel defaults for an account, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*. Select an account and click *Channel Defaults*. Follow the sections below to set up specific channel defaults.
+To set up channel defaults for an account, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*. Select an account and click *Channel Defaults*. Follow the sections below to set up specific channel defaults.
 
 ## Setting Default Addresses
 
 To set up a default billing address,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Select the account and click *Channel Defaults*.
 
 1. Click *Add* (![Add Button](../../../images/icon-add.png)) under Billing Address.
 
 1. Select a channel from the *Channel* dropdown.
+
+   ```{note}
+   After setting defaults for one or more channels, you can select a default for all the remaining channels using the *All Other Channels* option in the *Channel* dropdown.
+   ```
 
 1. Select a billing address from the *Billing Address* dropdown.
 
@@ -28,7 +32,7 @@ You can follow the same steps to set a default shipping address under the *Shipp
 
 To set up default delivery terms and conditions,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Select the account and click *Channel Defaults*.
 
@@ -56,7 +60,7 @@ Overriding eligibility for terms and conditions do not make them eligible for a 
 
 To set up default shipping options,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Select the account and click *Channel Defaults*.
 
@@ -76,7 +80,7 @@ You can follow the same steps to set default payment methods under the *Payment 
 
 To set up default *Price Lists*,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Select the account and click *Channel Defaults*.
 
@@ -100,7 +104,7 @@ You can follow the same steps to set default discounts under the *Discounts* sec
 
 To set up default currencies,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Select the account and click *Channel Defaults*.
 
@@ -134,7 +138,7 @@ Channel account managers work with or without [organizations](https://learn.life
 
 To set up a default channel account manager,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 
 2. Select the account of your choice and click the *Channel Defaults* tab.
 

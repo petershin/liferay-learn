@@ -3,7 +3,7 @@ uuid: 134cc9ab-cbad-40b2-b44b-b085708bf0f8
 ---
 # Configuring the Database
 
-Liferay supports many database software options such as MySQL, MariaDB, or PostgreSQL. By default, a Liferay bundle uses an embedded HSQL database appropriate for demo purposes. For production use, you must use a separate database. See [configuring a database](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database) to learn more.
+Liferay supports many databases, like MySQL, MariaDB, or PostgreSQL. By default, a Liferay bundle uses an embedded HSQL database appropriate for demo purposes. For production use, you must use a separate database. See [configuring a database](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database) to learn more.
 
 ## Running MariaDB in Docker
 

@@ -15,7 +15,7 @@ Here you'll learn how to
 
 * Configure a database for a clustered environment
 * Configure Elasticsearch for a clustered environment
-* Run two Liferay nodes in a cluster
+* Run two Liferay nodes in a horizontal cluster
 
 The first step is configuring a database.
 

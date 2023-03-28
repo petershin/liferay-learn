@@ -103,7 +103,7 @@ Running two Liferay docker nodes may require increasing your default CPU and mem
 
 ## Testing the Cluster
 
-As content is created or modified in one node, these changes will be available across other nodes. Create a simple blog post to see this in action.
+In a cluster, as content is created or modified in one node, it should be available across other nodes. Create a simple blog post to see this in action.
 
 1. In the `Liferay-1` node (i.e. `http://localhost:8080`), open the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)). Click _Blogs_ under _Content & Data_.
 
@@ -122,7 +122,7 @@ As content is created or modified in one node, these changes will be available a
 
    ![The blog entry created in the other node is visible.](./configuring-the-dxp-cluster/images/02.png)
 
-Your Liferay environment is now configured as a clustered environment. You have completed this module on clustering.
+Your Liferay environment is now configured as a clustered environment. Note that the next step, load balancing your nodes, is out of scope for this course, as it's configured outside of Liferay. You have completed this module on clustering. 
 
 ## Relevant Concepts
 

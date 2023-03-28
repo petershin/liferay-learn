@@ -3,7 +3,7 @@ uuid: 52556bc8-a31b-4331-bcd7-317428006384
 ---
 # Extending System Objects
 
-{bdg-secondary}`Available Liferay 7.4 U46+/GA46+`
+{bdg-secondary}`Available Liferay 7.4 U70+/GA70+`
 
 With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, Postal Address, and User.
 

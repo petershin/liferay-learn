@@ -60,7 +60,7 @@ For the `scopeKey`, use the proper identifier for the desired data scope (e.g., 
 
 ## Relationship REST APIs
 
-<!--TASK: {bdg-secondary}`Available Liferay 7.4 U__+/GA__+` -->
+{bdg-secondary}`Available Liferay 7.4 U70+/GA70+`
 
 When you define one-to-many and many-to-many relationships between objects, Liferay generates endpoints for querying and managing entry relationships. This includes a GET endpoint for returning related object entries, PUT endpoints for relating entries, and a DELETE endpoint for disassociating related entries. See [Using Relationship APIs](../objects-tutorials/using-apis/using-relationship-rest-apis.md) for more information.
 

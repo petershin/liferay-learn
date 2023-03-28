@@ -3,6 +3,8 @@ uuid: d4c25858-b99c-46e9-a459-91b75af678f3
 ---
 # Using Relationship REST APIs
 
+{bdg-secondary}`Available Liferay 7.4 U70+/GA70+`
+
 When you add relationships to custom or system objects, Liferay automatically generates REST endpoints for accessing those relationships. Using these endpoints, you can relate and disassociate entries, as well as return an entry's related entries. These endpoints are added to the parent object in one-to-many relationships and to both in many-to-many relationships.
 
 Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create object entries and manage their relationships with one another.

@@ -3,6 +3,8 @@ uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 ---
 # Using Nested Fields with REST APIs
 
+{bdg-secondary}`Available Liferay 7.4 U69+/GA69+`
+
 With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related objects in a single GET request. You can also use the `nestedFieldsDepth` parameter to determine the depth of object entries included in the query: `0-5`.
 
 ```{tip}

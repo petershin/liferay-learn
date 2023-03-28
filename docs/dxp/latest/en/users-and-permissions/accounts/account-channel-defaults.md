@@ -11,7 +11,7 @@ uuid: eeecd784-2cf2-4b02-9c11-52ef261b18ac
 account-channel-defaults/setting-channel-defaults.md
 ```
 
-You can set up defaults for a channel associated to an account after creating the account. This improves the checkout experience and reduces the time taken to create orders. See [Introduction to Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels) for more information. You can set defaults for:
+After creating an account, you can set [channel](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels) defaults for it. This improves the checkout experience and reduces the time taken to create orders. You can set defaults for
 
 * Billing Address
 * Shipping Address
@@ -24,7 +24,7 @@ You can set up defaults for a channel associated to an account after creating th
 * Payment Methods
 * Channel Account Managers
 
-You can set a default for all available channels or a specific channel. For further fine-tuning, you can set defaults for specific channels and then set defaults for the remaining. Depending on user roles and permissions, you can change the defaults of an order during checkout. You can also set permissions so that the user can only place orders with the configured defaults.
+You can set defaults for both individual channels and all remaining channels. Depending on user roles and permissions, you can change the defaults of an order during checkout. You can also set permissions so users can only place orders with the channel defaults.
 
 ```{note}
 Channel defaults only work in conjunction with eligibility. If the default is not eligible for a particular order, the highest priority eligible entity is set as the default.

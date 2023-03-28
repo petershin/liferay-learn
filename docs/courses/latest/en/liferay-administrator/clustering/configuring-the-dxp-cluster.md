@@ -26,7 +26,7 @@ You can run two docker containers to demonstrate a simple clustered environment.
 1. Generate a configuration file for the `liferay-2` node.
 
    ```bash
-   cat <<EOT >> dxp-2/files/osgi/configs/com.liferay.portal.search.elasticsearch6.configuration.ElasticsearchConfiguration.config
+   cat <<EOT >> liferay-2/files/osgi/configs/com.liferay.portal.search.elasticsearch6.configuration.ElasticsearchConfiguration.config
    operationMode="REMOTE"
    transportAddresses="elasticsearch:9300"
    clusterName="LiferayElasticsearchCluster"
@@ -100,6 +100,29 @@ You can run two docker containers to demonstrate a simple clustered environment.
 ```{note}
 Running two Liferay docker nodes may require increasing your default CPU and memory resource settings.
 ```
+
+## Testing the Cluster
+
+As content is created or modified in one node, these changes will be available across other nodes. Create a simple blog post to see this in action.
+
+1. In the `Liferay-1` node (i.e. `http://localhost:8080`), open the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)). Click _Blogs_ under _Content & Data_.
+
+1. Click _Add_ (![Add icon](../../images/icon-add.png)).
+
+1. Add the following entry.
+
+   * Title: Foo
+   * Content: Bar 
+
+   Click _Save_.
+
+1. Switch over to the `Liferay-2` node (i.e. `http://localhost:9080`). Open the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)). Click _Blogs_ under _Content & Data_.
+
+1. The blog entry created in the `Liferay-1` node is visible in the `Liferay-2` node.
+
+   ![The blog entry created in the other node is visible.](./configuring-the-dxp-cluster/images/02.png)
+
+Your Liferay environment is now configured as a clustered environment. You have completed this module on clustering.
 
 ## Relevant Concepts
 

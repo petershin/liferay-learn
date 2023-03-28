@@ -6,7 +6,7 @@ uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 ---
 
 # Semantic Search
-{bdg-primary}`Subscription`
+{bdg-link-primary}`[LES Subscription](../activating-liferay-enterprise-search.md)`
 {bdg-secondary}`7.4 U50+`
 {bdg-dark}`Beta Feature`
 
@@ -15,12 +15,12 @@ uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 ```{toctree}
 :maxdepth: 1
 
-semantic-search/setting-up-a-text-embedding-provider.md
-semantic-search/adding-a-search-blueprint-for-semantic-search.md
+./semantic-search/setting-up-a-text-embedding-provider.md
+./semantic-search/adding-a-search-blueprint-for-semantic-search.md
 ```
 
 ```{important}
-Setting up an effective semantic search solution requires using a model trained and fine-tuned to your specific content. The example configuration here can provide modestly improved results for most content, but is not a production-ready semantic search solution.
+An effective semantic search solution requires a model trained in your data domain and fine-tuned on your specific content. Any example configuration shown here is not meant as a production-ready semantic search solution.
 ```
 
 <!--didn't go with the "feel good" example since I think it's best to be unique from txtai--if this one's not good we can steal from them, after confirming it's okay-->

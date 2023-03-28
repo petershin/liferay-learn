@@ -35,11 +35,11 @@ Accounts is a feature, originally found in [Liferay Commerce](https://learn.life
 
 ## Creating an Account
 
-1. Open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 
-1. Click the _Add_ icon (![Add icon](../images/icon-add.png)) to create a new account.
+1. Click the *Add* icon (![Add icon](../images/icon-add.png)) to create a new account.
 
-1. Give your account a name and select the type. Note that once an Account is created the type cannot be changed.
+1. Give your account a name and select the type. Note that once an account is created the type cannot be changed.
 
    ![Give you account a name and select the type.](./accounts/images/01.png)
 
@@ -63,21 +63,21 @@ See [Account Addresses](./accounts/account-addresses.md) to learn more.
 
 ### Users Tab
 
-The Users tab displays the different Users associated with the account. Note, this tab does not exist for Person type accounts or Guest type accounts. To associate a user to the account,
+The Users tab displays the different users associated with the account. Note, this tab does not exist for Person type accounts or Guest type accounts. To associate a user to the account,
 
-1. Click the _Add_ icon (![Add icon](../images/icon-add.png)). A window shows a list of account Users available to select.
+1. Click the *Add* icon (![Add icon](../images/icon-add.png)). A window shows a list of account users available to select.
 
-1. Select users by checking the box next to a User's name and click the *Assign* button.
+1. Select users by checking the box next to a user's name and click the *Assign* button.
 
-1. A new User can also be created from this view. Click the _Add_ icon (![Add icon](../images/icon-add.png)) and see an add new User page.
+1. A new user can also be created from this view. Click the *Add* icon (![Add icon](../images/icon-add.png)) and see an add new user page.
 
-1. Fill in the information for the new User and click the *Save* button.
+1. Fill in the information for the new user and click the *Save* button.
 
-1. Any new User that was created or associated with the account is displayed in the users tab. See [Account Users](./accounts/account-users.md) to learn more.
+1. Any new user that was created or associated with the account is displayed in the users tab. See [Account Users](./accounts/account-users.md) to learn more.
 
 ### Organizations Tab
 
-The Organizations tab displays the different Organizations associated with the account. To associate an organization, click the _Add_ icon (![Add icon](../images/icon-add.png)). Select the Organization to associate and click the *Assign* button.
+The Organizations tab displays the different organizations associated with the account. To associate an organization, click the *Add* icon (![Add icon](../images/icon-add.png)). Select the organization to associate and click the *Assign* button.
 
 ### Account Groups Tab
 
@@ -85,44 +85,46 @@ The Account Groups tab displays the different group memberships for the account.
 
 ### Roles Tab
 
-The Roles tab displays the different Roles that are available for the account. Note, this tab does not exist for Guest type accounts. To create an Account Role,
+The Roles tab displays the different roles available for the account. Note, this tab does not exist for Guest type accounts.
 
-1. Click the _Add_ icon (![Add icon](../images/icon-add.png)).
+To create an account role,
 
-1. On the following page, give the Role a title and description. Click *Save*.
+1. Click the *Add* icon (![Add icon](../images/icon-add.png)).
 
-1. Once the Role is created, you can define permissions and assign Users. Click the *Define Permissions* tab and choose the permissions for the Role.
+1. On the following page, give the role a title and description. Click *Save*.
 
-1. Click the *Assignees* tab to assign a User to the Role. Click the _Add_ icon (![Add icon](../images/icon-add.png)) to select a User and click the *Assign* button.
+1. Once the role is created, you can define permissions and assign users. Click the *Define Permissions* tab and choose the permissions for the role.
+
+1. Click the *Assignees* tab to assign a user to the role. Click the *Add* icon (![Add icon](../images/icon-add.png)) to select a user and click the *Assign* button.
 
 See [Account Roles](./accounts/account-roles.md) to learn more.
 
 ## Making Changes to an Account
 
-1. Click the _Options_ icon (![Options icon](../images/icon-actions.png)) of the account you want to edit.
+1. Click the *Options* icon (![Options icon](../images/icon-actions.png)) of the account you want to edit.
 
 1. Make one of the following selections:
 
    ![Make a selection to edit the account.](./accounts/images/04.png)
 
    * Edit - See and edit the account information.
-   * Manage Users - Add or remove Account Users.
-   * Manage Organizations - Add or remove Organization associations.
-   * Deactivate - Deactivate an Account.
-   * Delete - Delete an Account.
+   * Manage Users - Add or remove account users.
+   * Manage Organizations - Add or remove organization associations.
+   * Deactivate - Deactivate an account.
+   * Delete - Delete an account.
 
-   Note that for Person Account type, there is no Manage Users functionality.
+   For the Person account type, there is no Manage Users functionality.
 
-1. Selecting the Edit option shows more options:
+1. Select *Edit* to access these options:
 
    ![Select Edit to see more options.](./accounts/images/02.png)
 
-   * Details tab - Modify or add additional information for the Account.
+   * Details tab - Modify or add additional information for the account.
    * Addresses tab - Add or manage billing and shipping addresses.
-   * Users tab - Add or remove Account Users. See [Account Users](./accounts/account-users.md) for more information.
-   * Organizations tab - Add or remove Organization associations.
-   * Account Groups tab - View the Account Groups the Account is a part of. See [Account Groups](./accounts/account-groups.md) for more information.
-   * Roles tab - Add or manage the different roles for the Account. See [Account Roles](./accounts/account-roles.md) for more information.
+   * Users tab - Add or remove account users. See [Account Users](./accounts/account-users.md) for more information.
+   * Organizations tab - Add or remove organization associations.
+   * Account Groups tab - View the account groups the account is a part of. See [Account Groups](./accounts/account-groups.md) for more information.
+   * Roles tab - Add or manage the different roles for the account. See [Account Roles](./accounts/account-roles.md) for more information.
 
 ## Related Information
 

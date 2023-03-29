@@ -7,9 +7,9 @@ Liferay DXP ships with a workflow engine that allows users to review and approve
 
 ## Activating Workflow
 
-When a workflow is activated for a particular asset, the _Publish_ button is replaced by a _Submit for Publication_ button, and instead of instant publication, the asset's status is set as _Pending_. It must proceed through the workflow before publication.
+When a workflow is activated for a particular asset, the _Publish_ button is replaced by a _Submit for Workflow_ button, and instead of instant publication, the asset's status is set as _Pending_. It must proceed through the workflow before publication.
 
-![Instead of a Publish button, a Submit for Publication button appears for workflow-enabled resources.](./introduction-to-workflow/images/01.png)
+![Instead of a Publish button, a Submit for Workflow button appears for workflow-enabled resources.](./introduction-to-workflow/images/01.png)
 
 The out-of-the-box workflow process is called _Single Approver_; that means one person is required to review and approve submissions before publication.
 

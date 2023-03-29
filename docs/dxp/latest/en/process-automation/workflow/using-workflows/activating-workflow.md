@@ -133,7 +133,7 @@ In a [staged environment](https://help.liferay.com/hc/en-us/articles/36002904185
 
 As a prerequisite, [Staging](https://help.liferay.com/hc/articles/360029041811-Enabling-Staging) **and** [Page Versioning](https://help.liferay.com/hc/articles/360028721532-Enabling-Page-Versioning-and-Staged-Content) have been enabled.
 
-When a Page Variation or Site Page Variation is created, its creator must click _Submit for Publication_ at the top of the page, and the variation must be approved in the workflow before it can be published to the live Site.
+When a Page Variation or Site Page Variation is created, its creator must click _Submit for Workflow_ at the top of the page, and the variation must be approved in the workflow before it can be published to the live Site.
 
 To enable a workflow for Page Variations:
 

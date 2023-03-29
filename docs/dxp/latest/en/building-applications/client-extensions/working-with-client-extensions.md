@@ -31,6 +31,26 @@ To start developing client extensions, obtain the following items:
 
 1. If you are using Liferay Experience Cloud(LXC), you must have the [`lcp` CLI tool](https://learn.liferay.com/liferay-cloud/latest/en/reference/command-line-tool.html).
 
+## Client Extension Projects
+
+Client extension development follows the _workspace_ plus _project_ model. Within a Liferay workspace a client extension project is a directory under `<workspace>/client-extensions` in which development takes place and where a single build process results in a single set of outputs. A client extension project contains a `client-extension.yaml` file which describes the client extensions implemented. The project also embodies the basic unit of packaging which is a **Universal File Format Archive** (UFFA for short).
+
+## Grouping Client Extensions in Projects
+
+In the sense the client extensions defined within a project represent a basic unit of packaging, they should comprise a cohesive collection which make sense to deploy as a single unit. The cohesiveness of the grouping can be based on efficiency or relatedness as much as on convenience. This is an architectural decision the developer will need to make. However there are other criteria to consider.
+
+The collection of client extensions in a project will be associated with a particular containerized workload image when packaged. Therefore grouping client extensions within a project carries certain implications. For starters, the workspace will only allow the following groups of client extensions within projects:
+
+* `batch` client extensions by themselves
+* `configuration` client extensions by themselves
+* `front-end` client extensions by themselves
+* `microservice` client extensions by themselves
+* `configuration` plus `batch` client extensions
+* `configuration` plus `front-end` client extensions
+* `configuration` plus `microservice` client extensions
+
+If the workspace detects a project which defines _incompatible_ collection of client extensions (e.g. `front-end` plus `microservice`) it will report it as an error.
+
 ## Configuring Client Extensions
 
 Client extensions are defined in `client-extension.yaml` files containing these properties:

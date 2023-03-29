@@ -23,7 +23,7 @@ Follow these steps to enable a default Workflow for all document types:
 
 1. Click *Save*.
 
-This enables a default workflow for all document types in your Site or Asset Library. Now whenever users upload or edit files, the *Publish* button is replaced with a *Submit for Publication* button. If needed, you can override this workflow for individual folders. See [Enabling Alternative Workflows for Folders and Document Types](#enabling-alternative-workflows-for-folders-and-document-types) for more information.
+This enables a default workflow for all document types in your Site or Asset Library. Now whenever users upload or edit files, the *Publish* button is replaced with a *Submit for Workflow* button. If needed, you can override this workflow for individual folders. See [Enabling Alternative Workflows for Folders and Document Types](#enabling-alternative-workflows-for-folders-and-document-types) for more information.
 
 ## Enabling Alternative Workflows for Folders and Document Types
 

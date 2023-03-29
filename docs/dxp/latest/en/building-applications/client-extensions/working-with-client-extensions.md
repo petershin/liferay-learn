@@ -63,9 +63,9 @@ Client extensions are defined in `client-extension.yaml` files containing these 
 
 Each client extension project lives in a folder inside of the workspace's `client-extensions/` folder. The project contains a single `client-extension.yaml` file, which defines one or more client extensions. For example, [the `iframe-2` project's `client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-iframe-2/client-extension.yaml) defines three `iframe` client extensions: `Baseball`, `Football`, and `Hockey`.
 
-### Additional Source Files
+### Packaging Files in Client Extensions
 
-The client extension's source files are in the project's `src/` folder by default. You can specify additional files to include in the built archive using an `assemble` block in the `client-extensions.yaml` file:
+You specify the files to include in the built archive using an `assemble` block in the `client-extensions.yaml` file:
 
 ```yaml
 assemble:

@@ -6,7 +6,7 @@ uuid: 4955593b-f8dd-4b87-bffa-6cb10c97e9e2
 ---
 # Search Experiences
 
-{bdg-link-primary}`[LES Subscription](./activating-liferay-enterprise-search.md)`
+{bdg-primary}`[LES Subscription](./activating-liferay-enterprise-search.md)`
 {bdg-secondary}`DXP 7.4 U5+; 7.3 U6+`
 
 ```{toctree}
@@ -28,7 +28,9 @@ The Liferay Enterprise Search Experiences app includes a suite of features grant
 
 ## Semantic Search
 
-[Semantic Search](./search-experiences/semantic-search.md) parses index content and users' natural language search phrases with a machine learning model, so that results better reflect the intent of their search.
+{bdg-link-dark}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
+
+[Semantic Search](./search-experiences/semantic-search.md) is a [beta feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features) that parses index content and users' natural language search phrases with a machine learning model, so that results better reflect the intent of their search.
 
 ## Getting Liferay Search Experiences
 

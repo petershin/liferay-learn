@@ -1,21 +1,21 @@
 ---
 toc:
   - ./semantic-search/setting-up-a-text-embedding-provider.md
-  - ./semantic-search/adding-a-search-blueprint-for-semantic-search.md
+  - ./semantic-search/creating-a-search-blueprint-for-semantic-search.md
 uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 ---
 
 # Semantic Search
-{bdg-link-primary}`[LES Subscription](../activating-liferay-enterprise-search.md)`
+{bdg-primary}`LES Subscription`
 {bdg-secondary}`7.4 U70+`
-{bdg-dark}`Beta Feature`
+{bdg-link-dark}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
 <!--Link to an explainer on what the beta feature badge means -->
 
 ```{toctree}
 :maxdepth: 1
 
 ./semantic-search/setting-up-a-text-embedding-provider.md
-./semantic-search/adding-a-search-blueprint-for-semantic-search.md
+./semantic-search/creating-a-search-blueprint-for-semantic-search.md
 ```
 
 _Semantic_ search evaluates the intent behind a searched phrase. Meanwhile, a _lexical_ search matches a searched phrase to the indexed text fields, and cannot produce a match based on meaning.
@@ -33,18 +33,20 @@ Even sophisticated lexical searches like Liferay's (as powered by Elasticsearch)
 
 Lexical processing of the tokenized keywords and document fields can be enough for many search needs. If you need more from the search experience, semantic search greatly closes the gap between what a lexical search can accomplish and what the user really wants from the search: process not just the words of the search, but their intent.
 
+![Natural language search phrases are processed by semantic search systems.](./semantic-search/images/03.png)
+
 Semantic search enables an additional content processing pipeline. When enabled, the platform produces a vector representation of the input text called a text embedding, and stores it in the index document in Elasticsearch. At search time, the search keywords entered by users go through the same vectorization and embedding process, making it possible to perform similarity searches that provide more meaningfully relevant search results for users. Not all content types support text embedding:
 
-| Available Content Type | Enabled by Default? |
+| Supported Content Type | Enabled by Default? |
 | :--------------------- | :------------------ |
 | Blogs Entry            | &#10004;            |
 | Knowledge Base Article | &#10004;            |
 | Message Boards Message | &#10008;            |
-| Web Content Article    | &#10004;            |
+| Basic Web Content      | &#10004;            |
 | Wiki Page              | &#10004;            |
 
 ```{important}
-An effective semantic search solution requires a model trained in your data domain and fine-tuned on your specific content. Any example configuration shown here is not meant as a production-ready semantic search solution.
+An effective semantic search solution requires a model trained for your data domain. The most straightforward approach is to find a suitable pre-trained model, then fine-tune it to your data. The examples demonstrated here are not production-ready semantic search solutions.
 ```
 
 ## Enabling Semantic Search
@@ -57,58 +59,61 @@ To enable semantic search in Liferay,
 
 ![Semantic search is a beta feature and must be enabled in Instance Settings.](./semantic-search/images/02.png)
 
+To enable semantic search using a [portal property](../../../installation-and-upgrades/reference/portal-properties.md), add this to `portal-ext.properties`:
+
+```properties
+feature.flag.LPS-122920=true
+```
+
+To enable semantic search using an [environment variable](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables), add this to your configuration:
+
+```properties
+LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER2__NUMBER2__NUMBER9__NUMBER2__NUMBER0_=true
+```
+
 To configure semantic search,
 
-1. [Choose a trained model or create your own.](#choosing-a-trained-model)
-1. [Enable a sentence transformer provider and configure it in Liferay.](./semantic-search/setting-up-a-text-embedding-provider.md)
-1. [Re-index the text embeddings.](#re-indexing-the-text-embeddings) <!-- Unnecessary?-->
-1. [Create a Search Blueprint to perform a similarity search between the vectorized search terms and documents.](./semantic-search/adding-a-search-blueprint-for-semantic-search.md)
+1. [Choose a model or create your own.](#choosing-a-model)
+1. [Enable a text embedding provider and configure it in Liferay.](./semantic-search/setting-up-a-text-embedding-provider.md)
+1. [Re-index the text embeddings.](#re-indexing-the-text-embeddings)
+1. [Create a Search Blueprint to perform a similarity search between the vectorized search terms and documents.](./semantic-search/creating-a-search-blueprint-for-semantic-search.md)
 
-### Choosing a Trained Model
+### Choosing a Model
 
-A properly trained model is paramount: the data in your index must be appropriate for the model chosen. If no appropriate pre-trained model exists for your data, you must create your own.
-
-Working with a pre-trained model is more convenient, but you must ensure it is fine-tuned to your data before employing it in production. 
+A [properly trained model](https://www.sbert.net/docs/pretrained_models.html) is paramount: the data in your index must be appropriate for the model chosen. Working with a pre-trained model is convenient, but fine-tuning to your data may be necessary before using it in production. Only through robust testing can you know that the chosen model is appropriate.
 
 For example, if a user searches _how does a skate move?_, a model trained on marine biology will provide different results than one trained on recreation.
 
 The [Hugging Face model hub](https://huggingface.co/models) provides a large collection of pre-trained, domain specific models.
 
-<!--This link should give some initial ideas for choosing a pretrained model https://www.sbert.net/docs/pretrained_models.html
-In development I actually used this model: sentence-transformers/msmarco-distilbert-base-dot-prod-v3. Maybe it could be here as an option of a good generic model-->
+### Indexing the Text Embeddings
 
-<!--
-### Re-Indexing the Text Embeddings
+The text embeddings must be indexed when
 
-The text embeddings must be re-indexed in these cases:
+1. Enabling Semantic Search for the first time.
+1. Changing the text embedding provider, the model, the vector dimensions, or the text truncation strategy in the Semantic Search configuration.
 
-1. You're upgrading from before U47.
-1. You change the index settings in the Semantic Search configuration of System or Instance Settings.
+To index the text embeddings, use the Index Actions screen and click the _Reindex_ button for just the model types you are enabling in the Asset Entry Class Names setting of the Semantic Search System or Instance Settings.
 
-To re-index the text embeddings, use the Index Actions screen and click the _Reindex_ button for just the models you are enabling in the Asset Entry Class Names setting of the Semantic Search System or Instance Settings.
--->
-
-## Configuring Semantic Search Index Settings
+## Configuring Semantic Search
 
 Beyond [setting up a text embeddings provider](./semantic-search/setting-up-a-text-embedding-provider.md), additional configuration options are available for semantic search. Visit Control Panel &rarr; Instance Settings &rarr; Semantic Search, and find the Index Settings section.
 
-The Sentence Transformer Settings are covered in [Enabling Semantic Search](#enabling-semantic-search)
+The Text Embedding Provider Settings are covered in [Enabling Semantic Search](#enabling-semantic-search)
 
 The Index Settings include the following:
 
-**Max Character Count:** 500 Set the maximum number of characters to be sent to the sentence transformer. By default up to 500 characters are sent to be transformed into their vector representations. The ideal value here depends on which [sentence transformer provider](./semantic-search/setting-up-a-text-embedding-provider.md) you're using.
+**Max Character Count:** Set the maximum number of characters to be sent to the text embedding provider. By default up to 500 characters are sent to be transformed into their vector representations. The ideal value here depends on which [text embedding provider](./semantic-search/setting-up-a-text-embedding-provider.md) you're using.
 
-**Text Truncation Strategy:** Beginning Select from which portion of the text the sample for the sentence transformer should be taken from. This setting applies only if the text is longer than the maximum character count. Choose from Beginning (the default), Middle, or End.
+**Text Truncation Strategy:** Select whether to extract the pre-transformation sample from the Beginning (default), Middle, or End of the text. This setting applies only if the source text is longer than the maximum character count. Depending on the strategy and the max character count, the title/subject and parts of the content/body can be used to generate the text embedding.
 
-Select whether to extract the pre-transformation sample from the Beginning (default), Middle, or End of the text. This setting applies only if the text is longer than the maximum character count.
-
-**Asset Entry Class Names:** Select the asset types to be transformed. By default four supported asset types are processed, including Blogs Entry, Knowledge Base Article, Web Content Article, and Wiki Page. Message Boards Message entities can be configured if desired. 
+**Types:** Select the content types to be transformed. By default four supported types are processed, including Blogs Entry, Knowledge Base Article, Web Content Article, and Wiki Page. Message Boards Message entities can be configured if desired. 
 
 ```{note}
 Only Basic Web Content is currently supported.
 ```
 
-**Language IDs:** Select the languages and localizations to be transformed. By default all listed languages are selected: Arabic (Saudi Arabia), Catalan (Spain), Chinese (China), Dutch (Netherlands), English (United States), Finnish (Finland), French (France), German (Germany), Hungarian (Hungary), Japanese (Japan), Portuguese (Brazil), Spanish (Spain), and Swedish (Sweden). Select multiple languages from the list using _Ctrl + Click_.
+**Languages:** Select the languages and localizations to be transformed. By default all listed languages are selected: Arabic (Saudi Arabia), Catalan (Spain), Chinese (China), Dutch (Netherlands), English (United States), Finnish (Finland), French (France), German (Germany), Hungarian (Hungary), Japanese (Japan), Portuguese (Brazil), Spanish (Spain), and Swedish (Sweden). Select multiple languages from the list using _Ctrl + Click_.
 
 ```{warning}
 Enabling a language doesn't guarantee that the sentence embedding is created for the language. The language must be available in the site. If a language is enabled in System/Instance Settings, and available in the site, but there is no translation for a given piece of content, the default translation is used to create the text embeddings.
@@ -116,13 +121,13 @@ Enabling a language doesn't guarantee that the sentence embedding is created for
 
 The Search Settings include the following:
 
-**Cache Timeout:** Set the cache timeout in milliseconds for transformed search keywords. By default 604800 is used (about ten minutes).
+**Text Embedding Cache Timeout:** Set the cache timeout in milliseconds for transformed search keywords. By default 604800 is used (about ten minutes).
 
 ## Understanding Semantic Search in Liferay
 
 Semantic Search in Liferay can be one of two things:
-1. Full semantic search, where the normal indexers are disabled in a Search blueprint, and a well-trained model is used to index and search all the content.
-1. Hybrid semantic search, where a lexical search is performed first, and a more generally applicable model is employed to re-score the results based on the embeddings.
+1. Full semantic search, where the normal indexers are disabled in a Search blueprint, and only text embeddings are used to search for relevant content.
+1. Hybrid semantic search, where a lexical search is performed first, and text embeddings are used to re-score the results.
 
 Providing a robust understanding semantic search and its intricacies is beyond the scope of this brief explanation. Instead we'll focus on how Liferay's semantic search implementation works, along the way explaining a few fundamental concepts of a semantic search.
 
@@ -133,22 +138,23 @@ During the indexing phase,
 * Standard processing occurs:
   * [LIFERAY] Content in Liferay is sent to the search engine where it's processed according to its data type: text is analyzed appropriately and stored in the index.
 * [LIFERAY] Additional semantic search processing occurs:
-   * Following the configuration in System/Instance Settings, the text snippet is sent by Liferay to the sentence transformer. 
-      * The Max Character Count and Text Truncation Strategy determine the snippet sent to the sentence transformer.
-      * Liferay selects the title and content for Blogs Entries, Knowledge Base Articles, Wiki Pages, Basic Web Content Articles. For Message Boards Messages, the title and subject fields are processed.
-  * [SENTENCE TRANSFORMER] First the snippet is processed according the configured model, which tokenizes the snippet according to its parameter. For the BERT models often used, 512 is the maximum number of tokens the models will handle. This is influenced by the number of characters set in the Semantic Search &rarr; Max Character Count setting in System/Instance Settings.
-  * [SENTENCE TRANSFORMER] Text embedding occurs, and a vector representation is created based on the model used the by the transformer. 
+   * Following the configuration in System/Instance Settings, the text snippet is sent by Liferay to the text embedding provider. 
+      * The Max Character Count and Text Truncation Strategy determine the snippet sent to the text embedding provider.
+      * Liferay selects the title and content for Blogs Entries, Knowledge Base Articles, Wiki Pages, Basic Web Content Articles. For Message Boards Messages, the subject and body fields are processed.
+  * [TEXT EMBEDDING PROVIDER] First the snippet is processed according the configured model, which tokenizes the snippet according to its parameter. For the BERT models often used, 512 is the maximum number of tokens the models will handle. This is influenced by the number of characters set in the Semantic Search &rarr; Max Character Count setting in System/Instance Settings.
+  * [TEXT EMBEDDING PROVIDER] A vector representation of the source, called a text embedding, is created based on the model used the by the transformer. 
   * [LIFERAY] The result of the text embedding process is stored in the [Liferay Company Index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) as a [dense_vector](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/dense-vector.html) field for each document[^1].
-  * Following the configuration in System/Instance Settings, the text snippet is sent to the sentence transformer, text embedding occurs, and a vector representation is created based on the model used the by the transformer. The result of the text embedding process is stored in the [Liferay Company Index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) as a [dense_vector](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/dense-vector.html) field for each document[^1].
+  * Following the configuration in System/Instance Settings, the text snippet is sent to the text embedding provider, text embedding occurs, and a vector representation is created based on the model used the by the transformer. The result of the text embedding process is stored in the [Liferay Company Index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) as a [dense_vector](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/dense-vector.html) field for each document[^1].
 
-[^1]: To inspect the [mapping](../../search-administration-and-tuning/search-administration.md#field-mappings) for these transformer-produced dense vector fields, open the Control Panel &rarr; Search &rarr; Field Mappings. Copy the mappings into a file and search for *dense_vector*.
+[^1]: To inspect the field in a document, use the [Display Results in Document Form](../../search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) setting, or the [Search Blueprints preview](./search-blueprints/creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) functionality.
 
 During the search phase,
 
 * Standard Processing occurs:
   * The search phrase entered in the Search Bar widget is received by Liferay's search framework, sent through to the search engine for analysis and additional processing, matched to existing index documents in the search engine, which are scored for relevance and returned to Liferay for its additional processing (highlighting, summarizing, performing additional filtering for permissions, etc.). 
 * Additional semantic search Processing occurs:
-  * The search phrase is sent to the sentence transformer, text embedding occurs, and a vector representation is created. Before rendering the search results scored by lexical relevance, the results captured within the window limit setting are re-scored by comparing the vector representation of the search phrase with the dense vector fields stored in the search documents. New scores are calculated, and the newly ordered set of results are returned to the search page for consumption by the end user.
+  * The search phrase is sent to the text embedding provider, and a vector representation is created (the [text embedding](https://neuml.github.io/txtai/embeddings/)). Before rendering the search results scored by lexical relevance, the results captured within the window limit setting are re-scored by comparing the vector representation of the search phrase with the vector representations of the index documents. New scores are calculated, and the newly ordered results are returned to the search page for consumption by the end user. See Elastic's [What is Vector Search](https://www.elastic.co/what-is/vector-search) for more information.
 
+Embeddings are meant to capture the meaning and the context of the input they are generated from (say, a the title and the first few sentences of the content of a Web Content Article) and it can provide better results for user searches over the traditional keyword matching. In order to achieve this, at search time, the keywords entered by users need to go through the same process making it possible to perform a similarity search or vector search from Liferay DXP to provide better, semantically more relevant results for users.
 
 <!-- TODO: Quickly follow this documentation with a more robust example article, configuring the ootb element differently and including Petteri's more complicated custom element? -->

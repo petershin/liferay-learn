@@ -3,10 +3,9 @@ uuid: a46cc468-a441-4a77-9628-b618b79d823b
 ----
 # Setting Up a Text Embedding Provider
 
-{bdg-link-primary}`[LES Subscription](../activating-liferay-enterprise-search.md)`
+{bdg-primary}`LES Subscription`
 {bdg-secondary}`7.4 U70+`
-{bdg-dark}`Beta Feature`
-<!--Link to an explainer on what the beta feature badge means -->
+{bdg-link-dark}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
 
 A text embedding provider has two jobs:
 
@@ -15,7 +14,7 @@ A text embedding provider has two jobs:
 
 The model you use is paramount: your vectorized data is only as good as the model you choose.
 
-The model you choose also performs the [similarity search](https://www.elastic.co/blog/text-similarity-search-with-vectors-in-elasticsearch) of the search phrase embeddings and the document embeddings. Models are housed in [Hugging Face](https://huggingface.co/models) even if you use txtai as the embeddings provider.
+The model you choose also performs the [similarity search](https://www.elastic.co/blog/text-similarity-search-with-vectors-in-elasticsearch) of the search phrase's text embeddings and the document's text embeddings. Models are housed in [Hugging Face](https://huggingface.co/models) even if you use txtai as the embeddings provider.
 
 | Text Embedding Provider          | Recommended for Production? |
 | :------------------------------- | :-------------------------- |
@@ -86,7 +85,7 @@ This example setup is intended for demonstration. See the [txtai documentation](
 ## Using the Hugging Face Inference API
 
 ```{important}
-The [Hugging Face Inference API](https://huggingface.co/inference-api) is not recommended for production. To use Hugging Face as the text embedding provider for production, use the [Hugging Face Inference Endpoints provider](#using-the-hugging-face-inference-endpoints).
+The [Hugging Face Inference API](https://huggingface.co/inference-api) is suitable for testing and development. To use Hugging Face as the text embedding provider for production, use the [Hugging Face Inference Endpoints provider](#using-the-hugging-face-inference-endpoints).
 ```
 
 To use the Hugging Face Inference API, first create a [Hugging Face account](https://huggingface.co/join).
@@ -113,14 +112,13 @@ Once you have an account,
 
    **Model Timeout:** Set the time (in seconds) to wait for the model to be loaded before timing out. Hugging Face allows you to pin models in memory to avoid repeated time-consuming loading of models.
 
-Before saving the configuration, click the _Test Configuration_ button to ensure that Liferay can connect with the Hugging Face Inference API and that the settings it's using are in harmony.
+Before saving the configuration, click the _Test Configuration_ button to ensure that Liferay can connect with the Hugging Face Inference API and that the settings are correct.
 
 ## Using the Hugging Face Inference Endpoints
 
-The Hugging Face Inference Endpoints service is an enterprise-grade text embedding service from Hugging Face. When testing and developing your semantic search solution, you can use the [Inference API]().
+The [Hugging Face Inference Endpoints](https://huggingface.co/inference-endpoints) service is an enterprise-grade, paid text embedding service from Hugging Face. When testing and developing your semantic search solution, you can use the [Inference API](#using-the-hugging-face-inference-api).
 
 Most of the setup is completed in Hugging Face. 
-Access Token, Host Address, and Embedding Vector Dimensions
 
 1. Go to your Hugging Face account settings and copy your access token.
 
@@ -135,3 +133,5 @@ Access Token, Host Address, and Embedding Vector Dimensions
    ```{important}
    The Embedding Vector Dimensions must match that of the configured model. The model is specified in txtai using the `config.yml` file. See the model's documentation to configure the proper number of dimensions.
    ```
+
+Before saving the configuration, click the _Test Configuration_ button to ensure that Liferay can connect with the Hugging Face Inference Endpoint and that the settings are correct.

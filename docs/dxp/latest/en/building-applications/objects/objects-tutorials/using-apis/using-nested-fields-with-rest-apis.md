@@ -8,7 +8,7 @@ uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related objects in a single GET request. You can also use the `nestedFieldsDepth` parameter to determine the depth of object entries included in the query: `0-5`.
 
 ```{tip}
-The `nestedFields` parameter is a convenient way to retrieve information that would usually require multiple requests. With it, you can retrieve an entry's information along with the information of its related entries. If you want to return related entries alone, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introductory tutorial.
+The `nestedFields` parameter is a convenient way to retrieve information that would usually require multiple requests. With it, you can retrieve an entry's information along with the information of its related entries. To return only the related entries, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introductory tutorial.
 ```
 
 Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create related entries and query them using the `nestedFields` parameter.

@@ -5,9 +5,9 @@ uuid: 8db76b2e-6b09-488e-9e76-82d23b028cca
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.4+`
 
-When you publish a custom object definition, Liferay automatically generates default [REST APIs](../../../headless-delivery/consuming-apis/consuming-rest-services.md) for interacting with the object and its data. These APIs vary depending on the object's scope (i.e., company or site). If the definition includes relationships or standalone actions, Liferay also generates endpoints for calling them.
+When you publish a custom object definition, Liferay generates default [REST APIs](../../../headless-delivery/consuming-apis/consuming-rest-services.md) for interacting with the object and its data. These APIs vary depending on the object's scope (i.e., company or site). If the definition includes relationships or standalone actions, Liferay also generates endpoints for calling them.
 
-The path for these headless services follows the `c/[pluralobjectlabel]` naming pattern (e.g., `/o/c/timeoffrequests`). You can view and test available object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
+The path for these headless services follows the `c/[pluralobjectlabel]` naming pattern (e.g., `/o/c/timeoffrequests`). You can view and test available object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* to see a drop-down list of APIs.
 
 ![Each object appears under REST Applications.](./headless-framework-integration/images/01.png)
 
@@ -15,7 +15,7 @@ While the object is active, you can use these APIs to perform basic CRUD operati
 
 ## Default Company-Scoped REST APIs
 
-These REST APIs are available for all company-scoped objects. For the Java methods, replace `ObjectName` with the name of your object.
+Default REST APIs are available for all company-scoped objects. For the Java methods, replace `ObjectName` with the name of your object.
 
 | HTTP Method | HTTP Endpoint                       | Java Method                     | Description                                                                                                  |
 |:------------|:------------------------------------|:--------------------------------|:-------------------------------------------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ Batch operations are only available for company-scoped objects.
 
 ## Default Site-Scoped REST APIs
 
-These REST APIs are available for all site-scoped objects. For the Java methods, replace `ObjectName` with the name of your object.
+Default REST APIs are available for all site-scoped objects. For the Java methods, replace `ObjectName` with the name of your object.
 
 | HTTP Method | HTTP Endpoint                                         | Java Method                                  | Description                                                                                                   |
 |:------------|:------------------------------------------------------|:---------------------------------------------|:--------------------------------------------------------------------------------------------------------------|

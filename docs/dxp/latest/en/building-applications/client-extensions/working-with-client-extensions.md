@@ -5,7 +5,7 @@ uuid: 01f46794-2cd4-4ffc-94d3-e244880f2b6f
 
 {bdg-secondary}`7.4+`
 
-Using client extensions, you can extend Liferay without deploying OSGi modules. Just like traditional module development, client extensions live in a [Liferay Workspace](../tooling/liferay-workspace.md). Get started by learning 
+Using client extensions, you can extend Liferay without deploying OSGi modules. Just like traditional module development, client extensions live in a [Liferay Workspace](../tooling/liferay-workspace.md). Get started by learning
 
 - What tools are required to begin developing client extensions
 - How to define a client extension in its configuration file
@@ -70,7 +70,7 @@ Deploy client extensions by placing the `.zip` files in the correct location for
 
 ### Deploying to LXC
 
-To deploy client extensions for LXC, 
+To deploy client extensions for LXC,
 
 1. Go to your workspace's `client-extensions/` folder and run
 

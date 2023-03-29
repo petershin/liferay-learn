@@ -79,7 +79,7 @@ To use the Acme E5C9 Action Executor, set the workflow definition for use with B
 
 1. Click the _Add_ button (![Add](../../../images/icon-add.png)).
 
-1. Enter something into the Title and Content fields, then click _Submit for Publication_.
+1. Enter something into the Title and Content fields, then click _Submit for Workflow_.
 
 1. Back in the main Blogs view, confirm that the entry is visible and that the status is marked as _Pending_.
 

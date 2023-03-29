@@ -61,7 +61,7 @@ To use the Acme R6J9 Condition Evaluator, set it for use with Blogs Entries and 
 
 5. Click the Add button (![Add](../../../images/icon-add.png)).
 
-6. Enter something into the Title and Content fields, then click _Submit for Publication_.
+6. Enter something into the Title and Content fields, then click _Submit for Workflow_.
 
 7. Back in the main Blogs view, confirm that the entry is visible and that the status is marked as _Approved_.
 

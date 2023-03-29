@@ -172,9 +172,12 @@ function generate_sphinx_input {
 	# Sync with liferay-portal/readme/BREAKING_CHANGES.markdown.
 	#
 
-	curl https://raw.githubusercontent.com/liferay/liferay-portal/${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/readme/BREAKING_CHANGES.markdown -O
-	
-	find build/input/dxp/latest/en -name "*breaking-changes*.md" -name "*7-4*" -exec mv BREAKING_CHANGES.markdown {} \;
+	if [ "${1}" == "prod" ]
+	then
+		curl https://raw.githubusercontent.com/liferay/liferay-portal/${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/readme/BREAKING_CHANGES.markdown -O
+		
+		find build/input/dxp/latest/en -name "*breaking-changes*.md" -name "*7-4*" -exec mv BREAKING_CHANGES.markdown {} \;
+	fi
 }
 
 function generate_static_html {

@@ -9,7 +9,7 @@ OpenID Connect is a lightweight authentication layer that enables users to authe
 You can add multiple providers to your installation, but Liferay DXP can't be an OpenID Connect provider.
 ```
 
-OpenID Connect's token flow is similar to OAuth 2.0, because it's built on top of its functionality. OAuth 2.0 is only an authorization protocol, so it sends an *access token* that grants access to particular APIs. OpenID Connect adds to this an *identity token* that passes user information like _name_ and _email_, provided the user has authenticated and granted permission.
+OpenID Connect's token flow is similar to OAuth 2.0, because it's built on top of its functionality. OAuth 2.0 is only an authorization protocol, so it sends an *access token* that grants access to particular APIs. OpenID Connect adds to this an *identity token* that passes user information like *name* and *email*, provided the user has authenticated and granted permission.
 
 ## Creating a Client in OpenID Connect Provider
 
@@ -135,5 +135,5 @@ A new link appears in the Sign-In Portlet for signing in with OpenID Connect:
 1. Upon successful authentication, you're redirected back to Liferay DXP in an authenticated state.
 
 ```{note}
-Liferay, as a client, supports PKCE (Proof Key for Code Exchange) when using OpenID Connect. For more details, please refer to the [PKCE specification](https://www.rfc-editor.org/rfc/rfc7636). Note, it is up to the provider to check the values and approve/reject requests appropriately.
+As a client, Liferay supports PKCE (Proof Key for Code Exchange) when using OpenID Connect. For more details, please refer to the [PKCE specification](https://www.rfc-editor.org/rfc/rfc7636). It is up to the provider to check the values and approve or reject requests appropriately.
 ```

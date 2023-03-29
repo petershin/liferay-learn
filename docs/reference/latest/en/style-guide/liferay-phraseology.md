@@ -157,7 +157,8 @@ Instead, put the user in control, not the software:
 It's hard to keep terminology consistent, so when we find an inconsistency in the way a term is used, we must fix it. If you see terminology in a document and you or your spell checker are in doubt, please look it up.
 
 **Common Examples**
-| Wrong                     | Right |
+
+| **Wrong**                     | **Right** |
 | :--- | :--- | 
 | backend                   | back-end        |
 | frontend                  | front-end       |

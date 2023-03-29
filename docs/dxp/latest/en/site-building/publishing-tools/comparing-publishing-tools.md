@@ -35,42 +35,44 @@ If you must use Staging, you should enable it at the beginning of development. W
 
 ## Feature Comparison
 
-| Feature | Publications | Staging |
-| :--- | :--- | :--- |
-| Host your working and production environments on the same server | &#10004; | &#10004; |
-| Host your working and production environments on separate servers | &#10008; | &#10004; |
-| Supports Asset Libraries | &#10004; | &#10004; |
-| Create and manage separate working environments for different projects and teams | &#10004; | &#10008; |
-| Comment on blocks of changes | &#10004; | &#10008; |
-| Use custom workflows | &#10004; | &#10004; |
-| Preview changes before publishing | &#10004; | &#10004; |
-| Review differences between working and production environments | &#10004; | &#10008; |
-| Include changes from multiple sites or asset libraries in the same working environment | &#10004; | &#10008; |
-| Schedule when to publish changes | &#10004; | &#10004; |
-| Automatically send notifications/alerts for publishing events | &#10004; | &#10004; |
-| Maintain a detailed history of all published changes | &#10004; | &#10008; |
-| Revert published changes to pages | &#10004; | &#10004; |
-| Revert published changes to content | &#10004; | &#10008; |
+| Feature                                                                                | Publications | Staging  |
+|:---------------------------------------------------------------------------------------|:-------------|:---------|
+| Host your working and production environments on the same server                       | &#10004;     | &#10004; |
+| Host your working and production environments on separate servers                      | &#10008;     | &#10004; |
+| Supports Asset Libraries                                                               | &#10004;     | &#10004; |
+| Create and manage separate working environments for different projects and teams       | &#10004;     | &#10008; |
+| Comment on blocks of changes                                                           | &#10004;     | &#10008; |
+| Use custom workflows                                                                   | &#10004;     | &#10004; |
+| Preview changes before publishing                                                      | &#10004;     | &#10004; |
+| Review differences between working and production environments                         | &#10004;     | &#10008; |
+| Include changes from multiple sites or asset libraries in the same working environment | &#10004;     | &#10008; |
+| Schedule when to publish changes                                                       | &#10004;     | &#10004; |
+| Automatically send notifications/alerts for publishing events                          | &#10004;     | &#10004; |
+| Maintain a detailed history of all published changes                                   | &#10004;     | &#10008; |
+| Revert published changes to pages                                                      | &#10004;     | &#10004; |
+| Revert published changes to content                                                    | &#10004;     | &#10008; |
 
 ### Supported Pages and Content Types
 
+{bdg-secondary}`Liferay 7.4 U69+/GA69+`
+
 Liferay's publishing tools support the following types of pages and content:
 
-| Feature | Publications | Staging |
-| :--- | :--- | :--- |
-| Blogs | &#10004; | &#10004; |
-| Commerce Entities | &#10008; | &#10008; |
-| Content Pages | &#10004; | &#10008; |
-| Custom Objects | &#10008; | &#10008; |
-| Documents and Media | &#10004; | &#10004; |
-| Forms | &#10004; | &#10004; |
-| Knowledge Base | &#10008; | &#10004; |
-| Message Boards | &#10004; | &#10004; |
-| Page Templates | &#10004; | &#10004; |
-| Site Templates | &#10004; | &#10008; |
-| Web Content | &#10004; | &#10004; |
-| Widget Pages | &#10004; | &#10004; |
-| Wiki | &#10008; | &#10004; |
+| Feature             | Publications | Staging  |
+|:--------------------|:-------------|:---------|
+| Blogs               | &#10004;     | &#10004; |
+| Commerce Entities   | &#10008;     | &#10008; |
+| Content Pages       | &#10004;     | &#10008; |
+| Custom Objects      | &#10008;     | &#10008; |
+| Documents and Media | &#10004;     | &#10004; |
+| Forms               | &#10004;     | &#10004; |
+| Knowledge Base      | &#10004;     | &#10004; |
+| Message Boards      | &#10004;     | &#10004; |
+| Page Templates      | &#10004;     | &#10004; |
+| Site Templates      | &#10004;     | &#10008; |
+| Web Content         | &#10004;     | &#10004; |
+| Widget Pages        | &#10004;     | &#10004; |
+| Wiki                | &#10004;     | &#10004; |
 
 ```{important}
 Content pages do not support Staging's [page variations](./staging/page-versioning.md) feature.

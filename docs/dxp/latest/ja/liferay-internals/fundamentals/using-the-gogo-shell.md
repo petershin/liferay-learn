@@ -2,8 +2,8 @@
 toc:
 - ./using-the-gogo-shell/command-line-gogo-shell.md
 - ./using-the-gogo-shell/gogo-shell-commands.md
+uuid: 23a63181-fd00-4907-9d98-b6c8ae33a3aa
 ---
-
 # Gogo シェルの使用
 
 ```{toctree}
@@ -38,14 +38,14 @@ Gogoシェルは、モジュールフレームワークと対話するための�
 
 1. **g!** テキストフィールドにGogoシェルコマンドを入力します。 たとえば、`lb | grep "Liferay Announcements API"`と入力すると、お知らせAPIバンドルの情報が一覧表示されます。
 
-1. ［**Execute**］ をクリックします。
+1. ［**実行**］ をクリックします。
 
     コマンド結果の出力が表示されます。
 
     ![［出力］セクションには、コマンドの結果が表示されます。](./using-the-gogo-shell/images/03.png)
 
 ```{warning}
-Gogoシェルは非常に強力で、プラットフォームのコア機能を操作することができます。 Gogoシェルへのアクセスは、信頼できる管理者にのみ許可してください。 詳細については、[Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)を参照してください。
+Gogoシェルは非常に強力で、プラットフォームのコア機能を操作することができます。 Gogoシェルへのアクセスは、信頼できる管理者にのみ許可してください。 詳しくは、 [ロールと権限について](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) を参照してください。
 ```
 
 ## まとめ

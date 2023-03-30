@@ -2,12 +2,11 @@
 toc:
 - ./configuring-widgets/exporting-importing-widget-data.md
 - ./configuring-widgets/communication-between-widgets.md
-- ./configuring-widgets/converting-widget-pages-to-content-pages.md
 - ./configuring-widgets/configuring-templates.md
-- ./configuring-widgets/enabling-user-personalization-of-widget-pages.md
 - ./configuring-widgets/sharing-widgets-with-other-sites.md
 - ./configuring-widgets/setting-widget-permissions.md
 - ./configuring-widgets/setting-widget-scopes.md
+uuid: 58aff007-6de2-4db3-8996-883682c4bf5f
 ---
 # ウィジェットの構成
 
@@ -18,16 +17,14 @@ Liferay DXPですぐに利用できるウィジェットは、ルック＆フィ
 
 configuring-widgets/exporting-importing-widget-data.md
 configuring-widgets/communication-between-widgets.md
-configuring-widgets/converting-widget-pages-to-content-pages.md
 configuring-widgets/configuring-templates.md
-configuring-widgets/enabling-user-personalization-of-widget-pages.md
 configuring-widgets/sharing-widgets-with-other-sites.md
 configuring-widgets/setting-widget-permissions.md
 configuring-widgets/setting-widget-scopes.md
 ```
 
 ```{raw} html
-:file: ../../../landingpage_template.html
+:file: ../../../../landingpage_template.html
 ```
 
 ```{raw} html

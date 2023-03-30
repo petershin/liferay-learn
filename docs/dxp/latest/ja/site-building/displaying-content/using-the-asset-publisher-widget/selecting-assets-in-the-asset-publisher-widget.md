@@ -1,3 +1,6 @@
+---
+uuid: 8aba958f-0074-4664-bacd-fb45d164632e
+---
 # アセットパブリッシャーウィジェットでのアセットの選択
 
 特定の基準に基づいてアセットを動的に選択するようにアセットパブリッシャーウィジェットを構成するか、手動で表示するアセットを正確に指定することができます。 また、[コレクション](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)のアセットを表示することもできます。
@@ -18,7 +21,7 @@ Liferay 7.2以下では、コレクションは [コンテンツセット](../..
 
     ![構成ウィンドウには、［Setup］タブの下にさまざまなデータ選択方法オプションがあります。](selecting-assets-in-the-asset-publisher-widget/images/02.png)
 
-1. オプションとして、 [Dynamic](#dynamic) と [Manual](#manual) Asset selection options が選択されている場合、 **Create collection from this configuration** をクリックすると、新しいコレクションを作成することができ ます。 これにより、構成が新しい [Collection](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)として保存されます。
+1. オプションとして、 [Dynamic](#dynamic) と [Manual](#manual) Asset selection options が選択されている場合、 **Create collection from this configuration** をクリックして、新しいコレクションを作成することができます。 これにより、設定が新しい [Collection](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)として保存されます。
 
 1. アセットを選択してウィジェットを構成したら、 ［**Save**］ をクリックします。
 
@@ -32,17 +35,17 @@ Liferay 7.2以下では、コレクションは [コンテンツセット](../..
 
 ### コレクション
 
-このオプションを選択すると、以前に保存したコレクションまたはコレクションプロバイダから選択することができます。 コレクションの詳細については、[コレクションとコレクションページについて](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)をお読みください。
+このオプションを選択すると、以前に保存したコレクションまたはコレクションプロバイダーから選択することができます。 コレクションの詳細については、[コレクションとコレクションページについて](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)をお読みください。
 
- 1. Select Collectionの下で、 **Select** をクリックします。
- 1. **Collections** または **Collections Providers** タブのいずれかを選択します。
- 1. 既存のコレクションまたはコレクションプロバイダーのいずれかを選択します。
+ 1. コレクションの選択］で、［**選択**］ をクリックします。
+ 1. **コレクション** または **コレクション プロバイダ** タブのいずれかを選択します。
+ 1. 終了したコレクションまたはコレクションプロバイダーの中から1つを選択します。
  1. ［**Save**］ をクリックします。
 
  ![［選択］をクリックして、保存済みのコレクションから選択します。](selecting-assets-in-the-asset-publisher-widget/images/04.png)
 
- ```{note}
-開発者は、コレクションプロバイダを使用して、より高度な基準で特定のコレクションを作成することができます。 詳しくは、開発者向けドキュメント [Info Framework](https://help.liferay.com/hc/ja/articles/360029067251-Introduction-to-The-Info-Framework) の [情報リストプロバイダの作成](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) の情報をご覧ください。
+```{note}
+開発者は、コレクションプロバイダを使用して、より高度な基準で特定のコレクションを作成することができます。 詳しくは、開発者向けドキュメント [Info Framework](https://help.liferay.com/hc/ja/articles/360029067251-Introduction-to-The-Info-Framework) の [情報リストプロバイダの作成](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をご覧ください。
 ```
 
 ### 動的

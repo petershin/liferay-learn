@@ -1,3 +1,6 @@
+---
+uuid: fcbb7849-0fc9-472f-98f9-b2d1d416b299
+---
 # Liferay CLI ツール
 
 Liferay CLIツールは、LiferayのRESTおよびGraphQLサービスとインターフェイスで接続するために、 [Angular](https://angular.io/) 、 JavaScript、 [React](https://reactjs.org/) 、共有されるバンドル、または [Vue.js](https://vuejs.org/) プロジェクトを簡単に作成できるようにします。 `liferay`コマンドを使用すると、プロジェクトの生成、ビルド、デプロイを行うことができます。
@@ -20,7 +23,7 @@ CLI ツールをグローバルにインストールしたくない場合は、 
 
 ## プロジェクトの生成
 
-`liferay new` コマンドを使用して、新しい [Remote App](../../remote-apps/remote-apps-tutorials/creating-a-basic-remote-app.md) または Liferay Platform プロジェクトを作成します。
+`liferay new` コマンドを使用して、新しい [Client Extension](../../client-extensions/browser-based-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) または Liferay Platform プロジェクトを作成します。
 
 1. ターミナルを開き、プロジェクトを作成したい場所に移動します。 次のコマンドを実行します。
 
@@ -35,7 +38,7 @@ CLI ツールをグローバルにインストールしたくない場合は、 
    ![矢印キーを使って、リモートアプリケーションまたは Liferay プラットフォームプロジェクトを選択し、Enter キーを押します。](./liferay-cli-tool/images/01.png)
 
    ```{note}
-   [リモートアプリケーションプロジェクト](../../remote-apps/remote-apps-tutorials/creating-a-basic-remote-app.md) は、Liferay DXPインスタンスがアプリケーションとして使用するためにアクセスできるリモートサーバーでホストされています。 Liferayプラットフォームのプロジェクトは、Liferay DXP／Portalにデプロイ可能です。
+   [クライアント拡張](../../client-extensions/browser-based-client-extensions/understanding-custom-element and-iframe-client-extensions.md) は、Liferay DXPインスタンスがアプリケーションとして使うためにアクセスできるリモートサーバーでホストされます。 Liferayプラットフォームのプロジェクトは、Liferay DXP／Portalにデプロイ可能です。
    ```
 
 1. プロンプトで、新規プロジェクトについて、人間が読み取り可能な説明を入力します。 デフォルト値は、「New Project」です。

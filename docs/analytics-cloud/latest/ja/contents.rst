@@ -1,5 +1,5 @@
 コンテンツ
-=========
+==========
 
 .. toctree::
    :glob:
@@ -9,6 +9,7 @@
    getting-started
    touchpoints
    people
+   commerce
    optimization
    apis
    workspace-data

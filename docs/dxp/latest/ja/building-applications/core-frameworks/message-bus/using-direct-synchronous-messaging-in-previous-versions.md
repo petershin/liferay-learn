@@ -1,3 +1,6 @@
+---
+uuid: 692ed11e-986f-4d53-963a-3142a0a683de
+---
 # 旧バージョンでダイレクトシンクロナスメッセージを使用する場合
 
 ```{important}
@@ -10,15 +13,20 @@
 
 サンプルプロジェクトでは、`SynchronousMessageSender`を使用して、2つのリスナーに直接メッセージを送信します。
 
-```{include} /_snippets/run-liferay-portal.md
+新しいLiferay インスタンスを起動し、以下を実行します。
+
+```bash
+docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 ```
 
-その後、以下の手順を実行してください。
+<http://localhost:8080>でLiferayへのサインインします。 メールアドレス **test@liferay.com** とパスワード **test** を使用してください。 プロンプトが表示されたら、パスワードを **learn** に変更します。
 
-1. サンプルをダウンロードし、解凍してください。
+次に、以下の手順に従います。
+
+1. サンプルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
     ```
 
     ```bash
@@ -147,9 +155,9 @@
 
 ## 次のステップ
 
-**デフォルトの** モードを使った同期メッセージングについて調べたい場合は、 [旧バージョンのデフォルトの同期メッセージングの使用](./using-default-synchronous-messaging-in-previous-versions.md)をご覧ください。
+**デフォルトの** モードを使った同期メッセージングについて調べたい場合は、 [旧バージョンのデフォルトの同期メッセージングを使用する](./using-default-synchronous-messaging-in-previous-versions.md)をご覧ください。
 
-メッセージを送信した直後に処理を続行する場合は、 [非同期メッセージングの使用](./using-asynchronous-messaging.md) を参照してください。
+メッセージを送信した直後に処理を続行する場合は、[非同期メッセージングの使用](./using-asynchronous-messaging.md)を参照してください。
 
 ## 追加情報
 

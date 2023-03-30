@@ -80,7 +80,7 @@ Liferay Commerceでは、仮想商品とは、顧客がダウンロードでき�
     * **Activation Status** : 完了
     * **Duration** : 0
     * **Max Number of Downloads** : 0
-    * **Enable Sample** ：オフ
+    * **Enable Sample** ：オ フ
     * **Enable Terms of Use** ：No
 
    ![仮想商品の詳細を入力します。](./creating-a-virtual-product/images/02.png)

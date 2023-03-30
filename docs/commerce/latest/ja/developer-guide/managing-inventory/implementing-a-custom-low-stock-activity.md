@@ -1,3 +1,6 @@
+---
+uuid: e5148e0b-fc9a-4587-b71c-9bfe09c383cf
+---
 # カスタムの在庫数低下アクティビティの実装
 
 このチュートリアルでは、 [CommerceLowStockActivity](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivity.java) インターフェイスを実装して、カスタムの在庫数低下アクティビティを追加する方法を示します。
@@ -15,15 +18,16 @@
 ## サンプルをデプロイする
 
 このセクションでは、在庫数低下アクティビティをLiferay Commerceのインスタンスで実行する例を示します。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順に従います:
 
-1. [Acme Commerce Low Stock Activity](./liferay-c1n4.zip) をダウンロードし、解凍してください。
+1. [Acme Commerce Low Stock Activity](./liferay-j1e4.zip) をダウンロードし、解凍してください。.
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/ja/developer-guide/managing-inventory/liferay-j1e4.zip -O
+    curl https://learn.liferay.com/commerce/latest/en/developer-guide/managing-inventory/liferay-j1e4.zip -O
     ```
 
     ```bash
@@ -46,19 +50,19 @@
     STARTED com.acme.j1e4.impl_1.0.0
     ```
 
-1. サンプルの在庫数低下アクティビティが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**commerce**］ → ［**商品**］ に移動します。 次に、任意の商品のメニュー内の ［**編集**］ をクリックします。 必要に応じて、 [商品](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)追加できます。
+1. サンプルの在庫数低下アクティビティが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**コマース**］ → ［**商品**］ に移動します。 次に、任意の商品のメニュー内の ［**編集**］ をクリックします。 必要に応じて、 [商品](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)追加できます。
 
    そこから、 ［**設定**］ に移動します。 新しいアクティビティ（「ログ警告メッセージ」）が ［**Low Stock Action**］ ドロップダウンの下に表示されます。
 
 ```{note}
-Liferay Commerce 2.1以前のバージョンでは、*［コントロールパネル］* → *［commerce］* → *［商品］* に移動して商品ページを検索します。
+Liferay Commerce 2.1以前のバージョンでは、*［コントロールパネル］* → *［コマース］* → *［商品］*に移動して商品ページを検索します。
 ```
 
 ![新しい在庫数低下アクティビティ](./implementing-a-custom-low-stock-activity/images/02.png "新しい在庫数低下アクティビティ")
 
 これで、`CommerceLowStockActivity`を実装する新しい在庫数低下アクティビティを正常に構築およびデプロイできました。
 
-さらに詳しく見ていきましょう。
+次に、詳細をさらに詳しく見ていきましょう。
 
 ## サンプルの説明
 
@@ -115,7 +119,7 @@ public String getLabel(Locale locale);
 ```java
 @Override
 public void execute(CPInstance cpInstance) throws PortalException {
-    if (_log.isWarn有効()) {
+    if (_log.isWarnEnabled()) {
         _log.warn("SKU " + cpInstance.getSku());
     }
 }
@@ -141,6 +145,6 @@ j1e4-commerce-low-stock-activity=J1E4 Commerce Low Stock Activity
 
 ## 追加情報
 
-* [シンプル商品を作成する](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
-* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
+* [シンプル商品の作成](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
+* [Localizing Your Application](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
 * [在庫数低下時のアクション](../../inventory-management/low-stock-action.md)

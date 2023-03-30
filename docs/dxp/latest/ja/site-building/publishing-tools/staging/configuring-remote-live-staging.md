@@ -1,3 +1,6 @@
+---
+uuid: faa4a458-c7c6-4b61-a08f-37cb58873c58
+---
 # リモート本番環境ステージングの設定
 
 **リモート本番環境ステージング** では、ステージング環境と本番環境は別々のLiferayサーバーでホストされます。 有効にすると、ステージングの構成に使用されるサイトまたはアセットライブラリがステージング環境になり、リモートサーバーが本番環境になります。
@@ -46,7 +49,7 @@
    ![コントロールパネルからリモートインスタンスのトンネル認証検証設定を更新します。](./configuring-remote-live-staging/images/01.png)
 
    ```{note}
-   各Liferayサーバーのトンネリングサーブレットの[認証検証](../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md)が有効になっていることを確認してください（デフォルトで有効になっています）。
+   デフォルトで有効になっていますが、各Liferayサーバーのトンネリングサーブレット[認証検証](../../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md) が有効になっていることを確認してください。
    ```
 
    または、次の構成をLiferayインスタンスのOSGiファイルに書き込むこともできます（例 ：`osgi/configs/com.liferay.portal.security.auth.verifier.tunnel.module.configuration.TunnelAuthVerifierConfiguration-default.config`）。
@@ -100,11 +103,11 @@ Liferayサーバーの準備ができたら、次の手順に従ってサイト�
 
 1. サイトまたはアセットライブラリに使用されるリモートURLを手動で定義するかどうかを決定します。
 
-1. (サイトのみ)**Page Versioning** を有効にするかどうかを選択します。
+1. (サイトのみ）**Page Versioning** を有効にするかどうかを選択します。
 
    ![ページのバージョニングを有効にする。](./configuring-local-live-staging/images/03.png)
 
-1. ステージングする **データ** と **コンテンツ** のタイプを選択します。
+1. ステージングする **データ** および **コンテンツ** のタイプを選択します。
 
    アセットライブラリは、ドキュメントとメディア、およびWebコンテンツアプリケーションのステージングデータのみをサポートしています。
 

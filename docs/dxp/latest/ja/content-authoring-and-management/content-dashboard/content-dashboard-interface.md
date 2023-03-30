@@ -159,7 +159,7 @@ Flip Axes* ボタン ( ![Flip Axes](../../images/icon-change.png) ) をクリッ
 
 情報サイドバーでは、選択したアセットのアクションやメタデータにアクセスできます。 サイドバーを開くには、目的のアセットの **Actions** ボタン ( ![Actions Button](../../images/icon-actions.png) ) をクリックし、 **Info** を選択します。 または、アセットの上にカーソルを置いて、 **情報** ボタン ( ![Information Button](../../images/icon-information.png) ) をクリックすることもできます。
 
-![[情報]ボタンをクリックすると、コンテンツ情報サイドバーにアクセスできます。](./content-dashboard-interface/images/09.png)
+![ [情報]ボタンをクリックすると、コンテンツ情報サイドバーにアクセスできます。](./content-dashboard-interface/images/09.png)
 
 この表は、アセットタイプごとに利用可能なメタデータとアクションの一覧です。
 

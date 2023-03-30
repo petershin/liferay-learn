@@ -1,3 +1,6 @@
+---
+uuid: 89efcf46-c68b-42f1-b33e-f41ba46002f2
+---
 # 基本的なWebコンテンツの記事の追加
 
 Webコンテンツは、サイトコンテンツを作成するための最も実用的で不可欠な方法の1つです。 Webコンテンツの記事は、[ウィジェット](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md)、[フラグメント](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)または[表示ページ](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)を介して表示できます。
@@ -18,13 +21,37 @@ Webコンテンツは、サイトコンテンツを作成するための最も�
 
 1. 完了したら、 ［**Publish**］ をクリックします。
 
-    ```{tip}
-    デフォルトテンプレートと表示ページテンプレートを使用した場合のコンテンツの見え方を確認するには、_Preview_ (![Preview](../../../images/icon-preview.png)) ボタンを使用します。
-
-    ![デフォルトテンプレートと表示ページテンプレートのコンテンツをプレビューします。](./adding-a-basic-web-content-article/images/03.png)
-    ```
-
 　 サイトに基本的なWebコンテンツの記事を追加しました。 この記事をページに表示する方法の詳細は、[Webコンテンツの表示ウィジェットの使用](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md)を参照してください。
+
+## ウェブコンテンツの記事をプレビューする
+
+選択したデフォルトテンプレートや表示ページテンプレートを使って、公開前にコンテンツをプレビューすることができるので、ユーザーに意図したとおりにコンテンツが表示されるように調整することができます。
+
+### テンプレートを使ってWebコンテンツ記事をプレビューする
+
+1. プロパティタブで、ウェブコンテンツの記事をプレビューするテンプレートを選択します。
+
+1. **プレビュー**(![Preview](../../../images/icon-preview.png)) をクリックしてください。
+
+    ![Default Templateには、目のようなプレビューボタンがあります。](./adding-a-basic-web-content-article/images/04.png)
+
+```{note}
+ プレビューできるのは、公開済みまたは下書きとして保存されたウェブコンテンツの記事のみです。
+```
+
+### 表示ページを使ったウェブコンテンツの記事のプレビュー
+
+任意のサイトやアセットライブラリから、表示ページテンプレートを使ってウェブコンテンツをプレビューすることができます。
+
+1. プロパティタブで、Webコンテンツ記事のプレビューを行うサイトと表示ページを選択します。
+
+1. **プレビュー** ボタンを選択します。
+
+    ![表示ページのテンプレートを選択したら、プロパティタブのプレビューボタンを使用します。](./adding-a-basic-web-content-article/images/05.png)
+
+```{note}
+プレビュー」ボタンを選択すると、Webコンテンツ記事の下書きが保存され、プレビューが表示されます。
+```
 
 ## プロパティタブ
 
@@ -39,9 +66,9 @@ Webコンテンツは、サイトコンテンツを作成するための最も�
 | **メタデータ** | 記事のタグまたは優先度を設定するために使用します。                           | 詳細は、 [コンテンツのタグ付け](../../tags_and_categories.html) を参照してください。                                                                                                   |
 | **フレンドリURL** | この記事のカスタムフレンドリーURLを設定するために使用します。                    |                                                                                                                                                              |
 | **スケジュール** | 必要に応じて、記事を表示または期限切れにする日付をスケジュールするために使用します。          | 詳細は、 [Scheduling Web Content](https://help.liferay.com/hc/ja/articles/360029042011-Scheduling-Web-Content-Publication) を参照してください。                           |
-| **検索機能** | この記事を検索用に索引付けするかどうかを設定するために使用します。                   |                                                                                                                                                              |
+| **検索** | この記事を検索用に索引付けするかどうかを設定するために使用します。                   |                                                                                                                                                              |
 | **関連するアセット** | 必要に応じて、関連するアセットを選択するために使用します。                       |                                                                                                                                                              |
-| **権限設定** | 記事に固有のゲストまたはサイトメンバーの権限を設定するために使用します。                | ［More Options］をクリックすると、記事を閲覧できる人が表示されます。 詳細は、[ロールと権限](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)を参照してください。 |
+| **権限の設定** | 記事に固有のゲストまたはサイトメンバーの権限を設定するために使用します。                | ［More Options］をクリックすると、記事を閲覧できる人が表示されます。 詳細は、[ロールと権限](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)を参照してください。 |
 
 ## 追加情報
 

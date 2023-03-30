@@ -25,7 +25,7 @@ Liferayインスタンスから切り離された状態でデータベースを�
 
 1. 新しいLiferayインストールの`[Liferay Home]/data`フォルダを[バックアップ](../../maintaining-a-liferay-installation/backing-up.md)の`[Liferay Home]/data`フォルダに置き換えます。
 
-1. DXPアクティベーションキー（サブスクリプション）と[OSGi設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を[バックアップ](../../maintaining-a-liferay-installation/backing-up.md#liferay-home)から新しいインストールにコピーしてください。
+1. DXPアクティベーションキー（サブスクリプション）と[OSGi設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を [バックアップ](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) から新しいインストールにコピーしてください。
 
 1. 7.2 にアップグレードする場合、新しいインストールの `[Liferay Home]/files/osgi/configs/` フォルダ内の [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) でサーチインデックスを無効化することができます。例えば
 
@@ -45,7 +45,7 @@ Liferayインスタンスから切り離された状態でデータベースを�
     DXP/Portal 7.3以降は、検索インデックスが自動的に無効/再有効化されます。
     ```
 
-1. [コマース](https://learn.liferay.com/commerce/latest/ja/index.html) を使用している場合は、コマースをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
+1. [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) を使用している場合は、コマースをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
 
 1. Liferayデータベースのアップグレードと一緒にマーケットプレイスアプリのデータをアップグレードする場合は、新しいLiferayバージョンの対象となる各アプリの最新バージョンを[ダウンロード](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md)して、`[Liferay Home]/deploy`フォルダにコピーします。 それ以外の場合は、 [アップグレード後の考慮事項](./post-upgrade-considerations.md) で説明されているように、データベースのアップグレード後にアプリをインストールし、データをアップグレードできます。 
 

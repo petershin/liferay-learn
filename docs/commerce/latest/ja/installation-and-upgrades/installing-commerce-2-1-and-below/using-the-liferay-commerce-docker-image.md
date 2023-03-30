@@ -1,3 +1,6 @@
+---
+uuid: 4a7a87dc-3a2f-400b-86da-01f120be5b60
+---
 # Liferay Commerce Dockerイメージの使用
 
 Liferay Commerceの最新バージョンは、Dockerイメージとして利用できます。 Liferay Commerceの最新のDockerイメージリリースをダウンロードして開始するには、次の手順に従ってください。

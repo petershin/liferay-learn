@@ -8,8 +8,8 @@ toc:
 - ./tag-libraries/liferay-frontend-tag-library.md
 - ./tag-libraries/liferay-util-tag-library.md
 - ./tag-libraries/chart-tag-library.md
+uuid: 11d2f646-ea56-4082-b445-5ec635402e12
 ---
-
 # タグライブラリ
 
 ```{toctree}

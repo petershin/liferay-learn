@@ -1,3 +1,6 @@
+---
+uuid: fd689e2a-cd82-4749-ac09-9df12cee519a
+---
 # サイドカーまたはEmbedded モードのElasticsearchの使用
 
 ZIPファイルまたはDockerイメージを介してインストールされたLiferay Tomcatバンドルには、Liferayで始まるElasticsearchノードが含まれています。 Liferay 7.3+ と 7.4+ のノードはサイドカーサーバーとして別のJVMで動作し、Liferay 7.2 のノードはLiferayサーバーに埋め込まれています。
@@ -15,7 +18,7 @@ Elasticsearchサーバーには、次のURLからアクセスできます。
   "cluster_name" : "LiferayElasticsearchCluster",
   "cluster_uuid" : "_lcJyLZXQ2WY5No5oW8edg",
   "version" : {
-    "number" : "7.17.0",
+    "number" : "7.17.9",
     "build_flavor" : "unknown",
     "build_type" : "unknown",
     "build_hash" : "bee86328705acaa9a6daede7140defd4d9ec56bd",
@@ -42,7 +45,7 @@ Elasticsearchサーバーには、次のURLからアクセスできます。
 HSQLのような組み込みデータベースを本番環境で実行したり、バンドルされたElasticsearchサーバーを本番環境で実行したりしないでください。 代わりに、Elasticsearchをスタンドアロンサーバーまたはサーバーノードのクラスターとしてリモートモードで実行します。
 
 ```{important}
-検索チューニングアプリの [同義語セット](../../search-administration-and-tuning/synonym-sets.md) と [結果ランキング](../../search-administration-and-tuning/result-rankings.md) は Liferay 7.2 と 7.3 でプライマリデータストレージとして検索インデックスを使用しました。 これらのアプリのデータは、Liferayのデータベースには保存されていません。 そのため、Liferay 7.2や7.3でサイドカーやEmbedded モードのElasticsearchを使用中に同義語セットや結果ランキングを設定した場合、リモートElasticsearchサーバーに切り替えて再インデックス化しても、それらの設定は復元 _されません_ 。 その代わり、同義語セットと結果ランキングをリモートのElasticsearchクラスタに手動で取り込む必要があります。 Elasticの [スナップショットと復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) 機能を使ってこれらのインデックスを保持する方法については、[アップグレードガイド](../elasticsearch/upgrading-elasticsearch.md)で詳細を確認してください。
+検索チューニングアプリ [同義語セット](../../search-administration-and-tuning/synonym-sets.md) と [結果ランキング](../../search-administration-and-tuning/result-rankings.md) は Liferay 7.2 と 7.3 で主要データ保存に検索インデックスを使用しました。 これらのアプリのデータは、Liferayのデータベースには保存されていません。 そのため、Liferay 7.2や7.3でサイドカーやEmbedded モードのElasticsearchを使用中に同義語セットや結果ランキングを設定した場合、リモートElasticsearchサーバーに切り替えて再インデックス化しても、それらの設定は復元 _されません_ 。 その代わり、同義語セットと結果ランキングをリモートのElasticsearchクラスタに手動で取り込む必要があります。 Elasticの [スナップショットと復元](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) 機能を使ってこれらのインデックスを保持する方法については、[アップグレードガイド](../elasticsearch/upgrading-elasticsearch.md)で詳細を確認してください。
 ```
 
 ## バンドルされているElasticsearchサーバーのユースケース
@@ -95,7 +98,6 @@ ElasticsearchサーバーのEmbeddedモードとサイドカーモードの比�
 | アプリサーバーに特別な手順は必要ありません                 | [一部のアプリサーバー](#app-server-differences) では追加の手順が必要です                                                                              |
 
 ## サイドカー／Embedded モードのElasticsearchのトラブルシューティング
-./elasticsearchBe Started
 
 これらのエラーは、起動時のElasticsearch Sidecarのインストールに問題があることを示しています。
 

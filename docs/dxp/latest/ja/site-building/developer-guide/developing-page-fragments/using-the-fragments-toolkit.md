@@ -1,3 +1,6 @@
+---
+uuid: 8d257002-3c90-4810-82a1-17ae741c33c4
+---
 # フラグメントツールキットの使用
 
 フラグメント ツールキットは、お気に入りのツールを使用してフラグメントをローカルで作成および管理するのに役立ちます。 ここでは、ツールキットを使用して、サンプルのフラグメントを含むフラグメント プロジェクトを生成し、デプロイして、独自のフラグメント セットを追加します。
@@ -22,7 +25,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 1. サンプルの JavaScript プロジェクトの ZIP ファイルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
     ```
 
     ```bash
@@ -40,7 +43,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
     ```
 
     ```{note}
-    setup_tutorial.sh`スクリプトはYeoman、Yarn、ツールキットをセットアップするためのコマンドを提供します。 このスクリプトは、サンプルプロジェクトのZIPファイルに含まれています。
+    setup_tutorial.sh`スクリプトは、Yeoman、Yarn、ツールキットのセットアップのためのコマンドを提供します。 スクリプトは、サンプルプロジェクトのZIPファイルに収録されています。
     ```
 
 スクリプトによって報告された満たしていない要件をすべて解決し、環境の準備が整ったと報告されるまでスクリプトを再実行してください。
@@ -115,9 +118,9 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順でサンプルのフラグメントセットをLiferayにインポートしてください。
+次に、以下の手順でサンプルのFragment SetをLiferayにインポートしてください。
 
-1. プロジェクトのルートフォルダ (例: `sample-liferay-fragments`) で `yarn run import` コマンドを実行し、フラグメントセットを Liferay インスタンスにインポートしてください。あるいは、[手動でフラグメントセットをインポートする](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) ことも可能です。
+1. プロジェクトのルートフォルダ（例：`sample-liferay-fragments`）で `yarn run import` コマンドを実行し、Fragment SetをLiferayのインスタンスにインポートします。あるいは、[フラグメントセットを手動でインポートする](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) こともできます。
 
     ```bash
     cd sample-liferay-fragments
@@ -180,7 +183,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 
     * `configuration.json`(オプション): フラグメントの構成を定義する JSON ファイル。 詳細は、 [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md) を参照してください。
 
-    * `fragment.json`: フラグメントを説明するテキスト ファイル。
+    * `fragment.json`: Fragmentを記述するJSONファイルです。
 
         ```json
         {
@@ -190,16 +193,27 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
             "jsPath": "main.js",
             "name": "Fragment name",
             "type": "[component|react]"
+
+            // This configuration is optional and can be removed
+            "sass": {
+                "loadPaths": [
+                    "../../../node_modules"
+                ]
+            }
         }
         ```
 
-      CSS、構成、HTML、および JavaScript ファイルの名前で `*Path` プロパティを更新します。
+      `fragment.json` の `*Path` プロパティを、CSS、設定、HTML、および JavaScript のファイル名で更新します。
 
-    * `index.html`: フラグメントの HTML ソース。
+        * `styles.css`: フラグメントの CSS ソース。
 
-    * `main.js`: フラグメントの JavaScript ソース。
+        * `index.html`: フラグメントの HTML ソース。
 
-    * `styles.css`: フラグメントの CSS ソース。
+        * `main.js`: フラグメントの JavaScript ソース。
+
+        ```{note}
+        cssPath` キーには、`.css` ファイルを指定する他に、`.scss` または `.sass` ファイルを指定することができる。  また、`sass:fragment.json`に{loadPaths:[]}}`を追加することで、外部の依存関係を利用することができます。
+        ```
 
 * `resources/` (オプション): フラグメントが必要とする追加の画像またはファイルを含むフォルダ。 詳細は、 [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md) を参照してください。
 

@@ -24,7 +24,7 @@
 
 概要]タブには、すべての倉庫にあるSKUの在庫の概要が表示されます。
 
-![[概要]タブには、すべての倉庫の在庫の概要が表示されます。](./inventory-management-reference-guide/images/03.png)
+![ [概要]タブには、すべての倉庫の在庫の概要が表示されます。](./inventory-management-reference-guide/images/03.png)
 
 | 項目     | 説明              |
 |:------ |:--------------- |
@@ -48,7 +48,7 @@ On Orderタブには、このSKUに注文を出したアカウントのリスト
 
 [入荷情報]タブには、SKUの在庫補充が予定されている倉庫がリストアップされます。
 
-![[入荷情報]タブには、SKUの在庫補充が予定されている倉庫がリストアップされます。](./inventory-management-reference-guide/images/06.png)
+![ [入荷情報]タブには、SKUの在庫補充が予定されている倉庫がリストアップされます。](./inventory-management-reference-guide/images/06.png)
 
 **追加**(![Add Button](../images/icon-add.png)) をクリックし、選択したSKUの入荷情報を作成します。
 

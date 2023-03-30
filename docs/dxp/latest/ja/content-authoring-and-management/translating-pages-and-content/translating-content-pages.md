@@ -1,3 +1,6 @@
+---
+uuid: f2b9e469-c8cc-44ca-a7e6-cff4d6dbe2b4
+---
 # コンテンツページの翻訳
 
 {bdg-secondary}`Liferay 7.4 U15以降およびGA15以降で利用可能`
@@ -57,7 +60,7 @@ Liferayには、 **コンテントページ** を翻訳するための統合ツ�
 ## 翻訳のエクスポートとインポート
 
 ```{note}
-コンテンツを翻訳用にエクスポートしたり、XLIFFの翻訳をインポートするには、選択されたページに対して*表示*および*更新*する権限が必要です。 詳しくは、[翻訳権限の管理](./managing-permissions-for-translation.md)をご覧ください。
+コンテンツを翻訳用にエクスポートしたり、XLIFFの翻訳をインポートするには、選択されたページに対して*表示*および*更新*する権限が必要です。 詳しくは、[翻訳権限の管理](./managing-translation-permissions.md)をご覧ください。
 ```
 
 Liferayでは、翻訳用のコンテントページエクスペリエンスを `.xliff` または `.xlf`ファイルとしてエクスポートすることが可能です。 これらのファイルを翻訳者に送り、翻訳を一緒に `.zip` ファイルとして、または個別に `.xliff` または `.xlf` ファイルとしてインポートできます。
@@ -96,34 +99,34 @@ Liferayは、選択された各エクスペリエンスのXLIFFファイルを�
 
 1. ［**サイトメニュー**］(![Site Menu](../../images/icon-product-menu.png))を開き、 ［**サイトビルダー**］ を展開して、 ［**Pages**］ に移動します。
 
-1. 翻訳された Content Page の **Actions** ボタン (![Actions Button](../../images/icon-actions.png)) をクリックし、 **Import Translation** を選択します。
+1. 翻訳されたコンテンツページの **アクション** ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 **インポート翻訳** を選択します。
 
-   ![翻訳のインポート」を選択します。](./translating-content-pages/images/05.png)
+   ![［翻訳のインポート］を選択します。](./translating-content-pages/images/05.png)
 
 1. インポートする `.xliff`、 `.xlf`、 `.zip` ファイルを選択します。
 
    ![インポートしたい翻訳ファイルを選択します。](./translating-content-pages/images/06.png)
 
    ```{important}
-   Liferayは [Export for Translation](#exporting-pages-for-translation) アクションで作成したXLIFFファイルのインポートをサポートしていますが、他の手段で作成したファイルのインポートが成功することは保証できません。
+   Liferayは [Export for Translation](#exporting-pages-for-translation) アクションで作成したXLIFFファイルのインポートをサポートしていますが、それ以外の方法で作成したファイルのインポートが成功することは保証できません。
    ```
 
 1. ［**Publish**］ をクリックします。
 
-   インポートが成功した場合、Liferay はインポートされたファイルと共に成功メッセージを表示します。 翻訳がコンテンツページに適用され、ページが下書きとして保存されます。 ワークフローが有効な場合、翻訳がページに適用される前に承認される必要があります。
+   インポートが成功した場合、Liferayはインポートしたファイルとともに成功メッセージを表示します。 コンテンツページに翻訳が適用され、ページが下書きとして保存されます。 ワークフローが有効な場合、翻訳がページに適用される前に承認される必要があります。
 
-   ![インポートが成功した場合、Liferay はインポートされたファイルと共に成功メッセージを表示します。](./translating-content-pages/images/07.png)
+   ![インポートが成功した場合、Liferayはインポートしたファイルとともに成功メッセージを表示します。](./translating-content-pages/images/07.png)
 
    しかし、インポート中にエラーが発生した場合、Liferayは失敗したファイルを通知し、ダウンロード可能なCSVエラーレポートを提供します。
 
    ![インポート中にエラーが発生した場合、Liferayは失敗したファイルを通知し、ダウンロード可能なCSVエラーレポートを提供します。](./translating-content-pages/images/08.png)
 
-## サードパーティーサービスを利用したコンテンツページの翻訳
+## サードパーティーのサービスを利用したコンテンツページの翻訳
 
-[Google Cloud Translation](./using-third-parties-for-translation.md#enabling-google-cloud-translation) , [Amazon Translate](./using-third-parties-for-translation.md#enabling-amazon-translate) , または [Microsoft Translator](./using-third-parties-for-translation.md#enabling-microsoft-translator) とLiferayの統合を有効にした場合、それらを使用してWebコンテンツを自動的に翻訳することが可能です。 詳しくは、 [翻訳のための第三者機関の利用](./using-third-parties-for-translation.md) をご覧ください。
+[Google Cloud Translation](./using-third-parties-for-translation.md#enabling-google-cloud-translation) , [Amazon Translate](./using-third-parties-for-translation.md#enabling-amazon-translate) , または [Microsoft Translator](./using-third-parties-for-translation.md#enabling-microsoft-translator) とLiferayの統合を有効にした場合、それらを使用してWebコンテンツを自動的に翻訳することが可能です。 詳しくは、 [翻訳にかかるサードパーティーの利用](./using-third-parties-for-translation.md) をご覧ください。
 
 ## 追加情報
 
 * [ウェブコンテンツの翻訳](./translating-web-content.md)
-* [翻訳のための第三者機関の利用](./using-third-parties-for-translation.md)
-* [翻訳のためのワークフローを実現する](./enabling-workflows-for-translations.md)
+* [翻訳にかかるサードパーティーの利用](./using-third-parties-for-translation.md)
+* [翻訳のワークフローの有効化](./enabling-workflows-for-translations.md)

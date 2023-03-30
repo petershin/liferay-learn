@@ -44,7 +44,7 @@
    * エクスペリエンスの(![削除](../../../images/icon-delete.png)削除）。
 
    ```{important}
-   ドロップダウンメニューの経験の順序は、優先順位を決定します。 詳しくは、[体験の仕組みを理解する](./content-page-personalization.md#understanding-how-experiences-work)をご覧ください。
+   ドロップダウンメニューの経験の順序は、優先順位を決定します。 詳しくは、 [体験の仕組みを理解する](./content-page-personalization.md#understanding-how-experiences-work) をご覧ください。
    ```
 
 ## 関連情報

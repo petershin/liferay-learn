@@ -1,51 +1,75 @@
+---
+uuid: 4eea6cd8-f95c-428d-9b9f-ee2292b0e675
+---
 # アクションの種類について
 
-アクションは、オブジェクトの入力イベントをトリガーとするカスタムオペレーションを定義します。 Liferay Objects は4つのアクションタイプを提供します。
+{bdg-secondary}`利用可能 Liferay 7.4 U60+/GA60+`
 
-| アクションタイプ                                       | Description                                          |
-|:---------------------------------------------- |:---------------------------------------------------- |
-| [Webhook](#webhook-actions)                    | URLにペイロードを配信する。                                      |
-| [Groovy スクリプト](#groovy-script-actions)         | カスタム [Groovy](https://groovy-lang.org/) スクリプトを実行します。 |
-| [通知](#notification-actions)                    | あらかじめ設定されたテンプレートを使って、電子メールによる通知を送信します。               |
-| [オブジェクトエントリーを追加](#add-an-object-entry-actions) | アクティブなオブジェクトにエントリーを作成する。                             |
+アクションは、オブジェクトのエントリーイベントによって引き起こされるカスタム操作を定義します。 Liferayは以下のアクションの種類を提供します。
+
+| 種類                                        | Description                                    |
+|:----------------------------------------- |:---------------------------------------------- |
+| [通知](#notification)                       | あらかじめ用意されたテンプレートを使って、メールやユーザー通知を送ることができます。     |
+| [オブジェクトエントリーを追加](#add-an-object-entry)    | アクティブなオブジェクトにエントリーを作成する。                       |
+| [オブジェクトエントリーを更新](#update-an-object-entry) | 現在のオブジェクト・エントリーのフィールドを更新する。                    |
+| [Webhook](#webhook)                       | URLにペイロードを配信する。                                |
+| [Groovy スクリプト](#groovy-script)            | [Groovy](https://groovy-lang.org/) のスクリプトを実行する。 |
 
 ```{important}
-Groovy スクリプトアクションは、Liferay Experience Cloud Self-Managed と Liferay DXP Self-Hosted でのみ利用可能です。
+Groovyスクリプトアクションは、Liferay Experience Cloud Self-ManagedとLiferay DXP Self-Hostedでのみ利用可能です。
 ```
 
-## Webhookアクション
+<!--TASK: When Client Extensions documentation is ready, note that you can create custom object actions. -->
 
-{bdg-secondary}`Liferay 7.4以降で利用可能`
+## 通知
 
-**Webhookアクション** では、データペイロードを設定されたURLに配信します。 ターゲットURLを入力する必要があります。 該当する場合は、秘密を入力してください。
+通知アクションを使用して、オブジェクトのエントリに対してユーザーまたは電子メールによる通知を送信します。 ユースケース例としては
 
-![WebhookのURLとシークレットを入力します。](./understanding-action-types/images/01.png)
+* 新規受注時のお知らせメールの自動送信
+* カスタムチケットシステムで、チケットの更新を知らせる通知を自動的に送信する。
+* ユーザーにタスクやイベントを思い出させるために、手動で電子メール通知を送る
 
-## Groovyスクリプトアクション
+[通知テンプレート](../../../../process-automation/notifications/creating-notification-templates.md) を選択し、各メッセージの送信者、受信者、および内容を決定する必要があります。 電子メール通知のために、インスタンスには [設定されたメールサーバー](../../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)も必要です。
 
-{bdg-secondary}`Liferay 7.4 U27以降とGA27以降で利用可能`
+![通知テンプレートの選択](./understanding-action-types/images/01.png) <!--TASK: include this content when client extensions documentation is updated, "If the out-of-the-box notification types don't meet your needs, you can use client extensions to create your own. See \[]() for more information or [\]() for a tutorial.." --> ## オブジェクトエントリーを追加
 
-**Groovy Script** アクションは、Groovy スクリプトを実行します。 用意されたコードウィンドウにスクリプトを入力します。 Liferay 7.4 U33+ と GA33+ では、Liferay は [GroovyShell クラス](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) を使って、Save をクリックしたときに Groovy スクリプトのシンタックスを検証します。 スクリプトが無効な場合、Liferayはエラーメッセージを表示します。
+指定されたオブジェクトにエントリーを作成する。 ユースケース例としては
 
-![Groovyスクリプトを入力します。](./understanding-action-types/images/02.png)
+* 注文が支払われたときに、カスタムShipmentsオブジェクトのエントリーを自動的に追加する。
+* 新規アカウントにデフォルトユーザーを自動で追加する
+* カスタムチケットシステム内で、現在のチケットに子チケットを手動で追加する。
 
-## 通知アクション
+アクティブなオブジェクトを選択する必要があります。 そして、エントリーのフィールドにあらかじめ定義された値を設定することができます。 これらの値を直接入力するか、 **コード**( ![Code](../../../../images/icon-code.png) ) をクリックして、値を動的に設定する式を使用します。 オブジェクトに必須項目がある場合は、あらかじめ定義された値を設定する必要があります。
 
-{bdg-secondary}`Liferay 7.4 U32以降およびGA32以降で利用可能`
+![アクティブなオブジェクトを選択し、作成された項目に対してあらかじめ定義された値を入力します。](./understanding-action-types/images/02.png)
 
-［**Notification**］ アクションを使用して、オブジェクトイベントのメール通知設定を自動化します。 インスタンスには、 [設定されたメールサーバー](../../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) と、少なくとも 1 つの [通知テンプレート](../../../../process-automation/notifications/creating-notification-templates.md)が必要です。
+## オブジェクトエントリーを更新
 
-各メールの送信者、受信者、内容を決定するために、通知テンプレートが必要です。
+現在のオブジェクト・エントリーの1つまたは複数のフィールドを更新する。 ユースケース例としては
 
-![通知テンプレートの選択](./understanding-action-types/images/03.png)
+* ユーザーが添付ファイルをダウンロードした後、エントリーのブーリアンフィールドを `true` に自動更新する。
+* ボタンをクリックすると、チケットの担当者を現在のユーザーに手動で更新する機能
+* ユーザーがお気に入り登録した後、エントリーのブーリアンフィールドを `true` に自動で更新する
 
-## オブジェクトエントリアクションの追加
+現在のエントリで更新するフィールド（複数可）を選択し、新しい値を入力する必要があります。 これらの値を直接入力するか、 **コード**( ![Code](../../../../images/icon-code.png) ) をクリックして、値を動的に設定する式を使用することができます。
 
-{bdg-secondary}`Liferay 7.4 U33以降およびGA33以降で利用可能`
+![現在のオブジェクトエントリから編集したいフィールドを選択し、デフォルト値を入力します。](./understanding-action-types/images/03.png)
 
-**Add an Object Entry** アクションは、指定された Object にエントリーを作成します。 アクティブなオブジェクトを選択する必要があります。 オブジェクトに必須フィールドが含まれている場合、新しいエントリに定義済みの値を設定する必要があります。 これらの値を直接入力するか、式ビルダーを使って動的に値を設定することができます。 必要であれば、必須項目以外の値を設定することもできます。
+## Webhook
 
-![有効なオブジェクトを選択し、作成されたエントリに初期値を入力します。](./understanding-action-types/images/04.png)
+Webhookアクションは、設定されたURLにデータペイロードを配信します。 ターゲットURLの入力が必要です。 該当する場合は、シークレットを入力します。
+
+![WebhookのURLとシークレットを入力します。](./understanding-action-types/images/04.png)
+
+<!--TASK: When Client Extensions documentation is ready, recommend using client extensions instead, since it can include OAuth. -->
+
+## Groovy スクリプト
+
+Groovy Scriptアクションは、Groovyスクリプトを実行します。 用意されたコードウィンドウにスクリプトを入力します。 Liferay 7.4 U33+/GA33+ では、Liferay は [GroovyShell クラス](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) を使用して、保存をクリックしたときに Groovy スクリプトの構文を検証しています。 スクリプトが無効な場合、Liferayは一般的なエラーメッセージを表示します。
+
+![Groovyスクリプトを入力します。](./understanding-action-types/images/05.png)
+
+<!--TASK: When Client Extensions documentation is ready, recommend custom object actions instead of groovy scripts due to limitations. -->
 
 ## 追加情報
 

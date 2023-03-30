@@ -1,6 +1,9 @@
+---
+uuid: af832712-a9a1-46aa-ac8d-754cbd7656af
+---
 # OpenID Connectの使用
 
-OpenID Connectは、ユーザーが他のシステムにあるアカウントを使用して認証できるようにする軽量の認証レイヤーです。 これは[OAuth 2.0承認](../../../headless-delivery/using-oauth2/using-oauth2.md)プロトコルの上に構築されています。 OpenID Connectを使用することで、ユーザー認証を他のプロバイダーに **委任** し、既存のアカウントを持つユーザがLiferayのインストールで簡単に認証できるようにします。
+OpenID Connectは、ユーザーが他のシステムにあるアカウントを使用して認証できるようにする軽量の認証レイヤーです。 これは[OAuth 2.0承認](../../../headless-delivery/using-oauth2.md)プロトコルの上に構築されています。 OpenID Connectを使用することで、ユーザー認証を他のプロバイダーに **委任** し、既存のアカウントを持つユーザがLiferayのインストールで簡単に認証できるようにします。
 
 ```{note}
 インストールに複数のプロバイダーを追加できますが、Liferay DXPをOpenID Connectプロバイダーにすることはできません。
@@ -26,45 +29,45 @@ OpenID Connectを使用するには、まずプロバイダーにクライアン
 
 ## OpenID Connectプロバイダー接続の構成
 
-Liferay は、プロバイダ接続のための新しいインターフェースに関するフィードバックを求めています。 このため、接続の作成方法には、標準的な方法と新しい方法の2つがあります。
+Liferayでは、プロバイダー接続のための新しいインターフェースに関するフィードバックを求めています。 このため、接続の作成方法には、標準的な方法と新しい方法の2つがあります。
 
 ```{important}
 新しいプロバイダーが開発された際にスムーズに移行できるよう、Liferayは2つのインターフェース間でOpenID Connectの設定を変換し、同期させます。 
 ```
 
-### OAuth 2.0に対応した新しいOpenID Connectプロバイダ接続**。
+### OAuth 2.0に対応した新しいOpenID Connectプロバイダー接続**
 
-このインターフェースは、クライアント接続をきめ細かく制御したい人向けです。 すべての設定は、 [OpenID Connect 設定仕様](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest) で定義されている、プロバイダの Well-Known Configuration Endpoint を通して行われます。
+このインターフェースは、クライアント接続をきめ細かく制御したいユーザー向けです。 [OpenID Connect設定仕様](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest) で定義されているように、すべての設定はプロバイダーのWell-Known Configuration Endpointを介して行われます。
 
-1. グローバルメニュー &rarr; コントロールパネル &rarr; セキュリティ &rarr; OAuth クライアント管理 にアクセスします。
+1. グローバルメニュー &rarr; ［コントロールパネル］ &rarr; ［セキュリティ］ &rarr; ［OAuth クライアント管理］にアクセスします。
 
-1. 2つのタブがあります。 1つ目は、認可サーバーのクライアントを作成します。 2つ目は、Well Known URIを持たない認可サーバーの場合である。 最初のタブは常に使用します。2番目のタブは、よく知られたURIを持たないサーバーのために「擬似的な」よく知られたURIを作成する場合にのみ使用します。
+1. 2つのタブがあります。 1つ目は、認証サーバーのクライアントを作成します。 2つ目は、Well Known URIを持たない認証サーバー用です。 最初のタブは常に使用します。2番目のタブは、well-known URIを持たないサーバー向けに「擬似的な」well-known URIを作成する場合にのみ使用します。
 
-**よく知られたURIがない場合。**
+**well-known URIがない場合、**
 
-1. 2つ目のタブで、 **Add**(![Add Button](../../../images/icon-add.png)) をクリックします。
+1. 2つ目のタブで、 **追加**(![Add Button](../../../images/icon-add.png)) をクリックします。
 
-1. プロバイダーからの認証サーバーのメタデータを入力します。 JSON の `issuer` フィールドに値があることを確認してください。 これにより、「保存」をクリックすると、「ローカル」なよく知られたURIが生成されます。
+1. プロバイダーからの認証サーバーのメタデータを入力します。 JSONの`issuer`フィールドに値があることを確認してください。 これにより、［保存］をクリックすると、「ローカル」なwell-known URIが生成されます。
 
-1. ［**Save**］ をクリックします。 OAuth Client Administrationページに戻り、生成されたURIを確認することができます。 このURIをクリップボードにコピーします。次のステップでこのURIを使用します。
+1. ［**Save**］ をクリックします。 OAuth クライアント管理ページに戻り、生成されたURIを確認することができます。 このURIをクリップボードにコピーします。次のステップでこのURIを使用します。
 
-**よく知られたURIがある場合。**
+**well-known URIがある場合、**
 
-1. 最初のタブで、 **Add**(![Add Button](../../../images/icon-add.png)) をクリックします。
+1. 最初のタブで、 **追加**(![Add Button](../../../images/icon-add.png)) をクリックします。
 
-1. 認証サーバーの Well Known URI を Well Known URI 欄に貼り付けます。 例えば、Googleの場合は、https://accounts.google.com/.well-known/openid-configuration。 上記のように生成した場合は、ここに貼り付けてください。
+1. 認証サーバーのWell Known URIをWell Known URIフィールドに貼り付けます。 例えば、Googleの場合は、https://accounts.google.com/.well-known/openid-configurationです。 上記のように生成した場合は、ここに貼り付けます。
 
-1. たいていの場合、これだけでいいのです。 Well Known URIをお持ちでない場合は、以下のフィールドを使用して接続を設定します。 完了したら、 ［**Save**］ をクリックします。
+1. たいていの場合、これだけでいいのです。 Well Known URIをお持ちでない場合は、以下のフィールドを使用して接続を設定します。 完了したら、 ［**保存**］ をクリックします。
 
-フォームの他のフィールドは、プロバイダと生成された特定の設定用です。
+フォームの他のフィールドは、プロバイダーと生成された特定の設定用です。
 
-**OAuthクライアント情報。** [RFC-7591](https://www.rfc-editor.org/rfc/rfc7591.html) JSON 形式に従ったクライアント設定情報を追加します。 Well Known URIを使用した場合は、ここに何も追加する必要がない場合があることに注意してください。
+**OAuthクライアント情報：** [RFC-7591](https://www.rfc-editor.org/rfc/rfc7591.html) JSON 形式に従ったクライアント設定情報を追加します。 Well Known URIを使用した場合は、ここに何も追加する必要がない場合があることに注意してください。
 
-**OAuthクライアントデフォルトの認証リクエストパラメータ。** [認証リクエストパラメータ](https://www.iana.org/assignments/oauth-parameters) を自分で指定しないLiferayアプリケーションがある場合、ここでこのOAuthクライアントを使用するためのデフォルトパラメータをJSON形式で指定します。 カスタムパラメータ値は、文字列のJSON配列である必要があります。
+**OAuth クライアントのデフォルト認証リクエストパラメーター：** [認証リクエストパラメータ](https://www.iana.org/assignments/oauth-parameters) 自体を指定しないLiferayアプリケーションがある場合、ここでこのOAuthクライアントを使用するためのデフォルトパラメータをJSON形式で指定します。 カスタムパラメーター値は、文字列のJSON配列である必要があります。
 
-**OAuthクライアントデフォルトトークンリクエストパラメータ。** [トークン要求パラメータ](https://www.iana.org/assignments/oauth-parameters) 自身を指定しない Liferay アプリケーションがある場合、ここでこの OAuth クライアントを使用するためのデフォルトパラメータを JSON 形式で指定します。 カスタムパラメータ値は、文字列のJSON配列である必要があります。
+**OAuth クライアントのデフォルトトークンリクエストパラメーター：** [トークンリクエストパラメータ](https://www.iana.org/assignments/oauth-parameters) 自体を指定しない Liferay アプリケーションがある場合、ここでこの OAuth クライアントを使用するためのデフォルトパラメーターをJSON形式で指定します。 カスタムパラメーター値は、文字列のJSON配列である必要があります。
 
-### 標準的なOpenID Connectプロバイダ接続
+### 標準OpenID Connectプロバイダー接続
 
 ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**System Scope**］ の下の ***［OpenID Connect Provider**］*を選択します。
 
@@ -72,7 +75,7 @@ Liferay は、プロバイダ接続のための新しいインターフェース
 
 次の手順を実行します：
 
-1. ［**Add**］ ボタンをクリックしてプロバイダーを追加します。
+1. **追加** ボタンをクリックしてプロバイダーを追加します。
 
 1. プロバイダーから受け取った情報を使用して、フォームに記入します。
 
@@ -105,7 +108,7 @@ com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConn
 
 ## OpenID Connect認証の有効化
 
-1. ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**Virtual Instance Scope**］ の下の ***［OpenId Connect**］*を選択します。
+1. ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**セキュリティ**］ &rarr; ［**SSO**］ に移動して、 ［**Virtual Instance Scope**］ の下の ***［OpenId Connect**］* を選択します。
 
     ![インスタンス設定でOpenID Connect認証を有効にする。](using-openid-connect/images/02.png)
 

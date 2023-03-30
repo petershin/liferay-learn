@@ -1,3 +1,6 @@
+---
+uuid: 0f7ea016-9380-4326-b8b7-c1a297d56d0a
+---
 # Authorize.net
 
 この記事では、Authorize.Netを支払方法として有効にする方法について詳しく説明します。 [ Authorize.Net ](https://www.authorize.net/about-us/) はVisaの子会社であり、加盟店顧客に代わって処理ネットワークへの数十億件の取引の送信を管理する決済ゲートウェイサービスのプロバイダーです。
@@ -15,7 +18,7 @@ Authorize.netを支払方法としてアクティブ化するには：
 
 1. ［**コントロールパネル**］ →［Commerce］→ ［**チャネル**］ へ移動します。
 
-    ![commerceのチャネル](./authorize-net/images/03.png)
+    ![コマースのチャンネル](./authorize-net/images/03.png)
 
 1. 目的のチャネルをクリックします。
 1. 下にスクロールして、Authorize.netの横にある **編集** をクリックします。
@@ -45,7 +48,7 @@ Authorize.netを支払方法としてアクティブ化するには：
 
 ### Commerce 2.0および以前
 
-1. ［**サイト管理］ → ［commerce］ → ［設定］ → ［支払い方法**］ に移動します。
+1. ［**サイト管理］ → ［コマース］ → ［設定］ → ［支払い方法**］ に移動します。
 
     ![Authorize.Netの設定](./authorize-net/images/05.png)
 
@@ -60,7 +63,7 @@ Authorize.netを支払方法としてアクティブ化するには：
     * **クレジットカードを表示**
     * **店舗名を表示**
 1. 以下の内容を表示するには、以下のオプションをオンにします。
-    * **Require CAPTCHA**
+    * **CAPTCHAを必須にする**
     * **カードのコード認証が必要**
 
        ![Authorize.Netの設定](./authorize-net/images/02.png)

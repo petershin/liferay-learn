@@ -99,7 +99,8 @@
 | `/liferay-portlet-app/portlet/footer-portlet-css`                    | `com.liferay.portlet.footer-portlet-css=<String>` [2](#two)                                                        |
 | `/liferay-portlet-app/portlet/footer-portlet-javascript`             | `com.liferay.portlet.footer-portlet-javascript=<String>` [2](#two)                                                 |
 | `/liferay-portlet-app/portlet/friendly-url-mapper-class`             | [3](#three)                                                                                                             |
-| `/liferay-portlet-app/portlet/friendly-url-mapping`                  | `com.liferay.portlet.friendly-url-mapping=<String>` |
+| `/liferay-portlet-app/portlet/friendly-url-mapping`                  | `com.liferay.portlet.friendly-url-mapping=<String>
+`                                                              |
 | `/liferay-portlet-app/portlet/friendly-url-routes`                   | `com.liferay.portlet.friendly-url-routes=<String>`                                                                |
 | `/liferay-portlet-app/portlet/header-portal-css`                     | `com.liferay.portlet.header-portal-css=<String>` [2](#two)                                                         |
 | `/liferay-portlet-app/portlet/header-portal-javascript`              | `com.liferay.portlet.header-portal-javascript=<String>` [2](#two)                                                  |

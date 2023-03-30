@@ -1,60 +1,64 @@
+---
+uuid: c6a4ba2a-1514-4f03-968f-5ac275b48d74
+---
 # RESTサービスの使用
 
-Liferay DXP は、そのアプリケーションのほとんどに REST サービスを含んでいます。 これらのサービスは、 [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery) に完全に準拠しています。 ここでは、それらを使用する方法を紹介します。 必要なステップはわずか3つです。
+Liferay DXPには、ほとんどのアプリケーションでRESTサービスが含まれています。 これらのサービスは、 [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery) に完全に準拠しています。 ここでは、それらを使用する方法を紹介します。 必要なステップはわずか3つです。
 
-1. 利用したいサービスを特定する。
+1. 消費したいサービスを特定する。
 1. 必要なデータを含むサイトを特定します。
-1. データにアクセスできるクレデンシャルを使用して、サービスコールを行う。
+1. データにアクセスできるクレデンシャルを使用してサービスコールを行う。
 
-この例では、Liferay DXP を新規にインストールした Docker イメージを使用しています。
+この例では、Liferay DXPを新規インストールしたDockerイメージを使用しています。
 
 ## 使用するサービスを特定する
 
 そのRESTサービスを呼び出すには、Liferay DXPが動作している必要があります。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Liferay DXP's REST services are published at this URL:
+Liferay DXP の REST サービスは、この URL で公開されています。
 
 ```
 http［s］://［hostname］:［port］/o/api
 ```
 
-On your Docker instance, you can find them here:
+Dockerインスタンスでは、ここで見つけることができます。
 
 ```
 http://localhost:8080/o/api
 ```
 
-APIs are divided into several categories. This example uses the `BlogPosting` service to retrieve blog posts from the Blogs widget, but you can use this procedure with any of the published services. 
+APIはいくつかのカテゴリに分類されています。この例では、`BlogPosting`サービスを使ってBlogsウィジェットからブログ記事を取得しますが、公開されているどのサービスでもこの手順を使うことができます。
 
-1. Select the **Headless Delivery** category. This category contains the `BlogPosting` service. You can use the filter to search for services. 
+1. **Headless Delivery** カテゴリを選択します。このカテゴリには `BlogPosting` サービスが含まれています。フィルタを使用して、サービスを検索することができます。
 
-1. Click the **Show Schemas** button, and on the right side of the screen a list of all the schemas in this category appears. 
+1. **Show Schemas** ボタンをクリックすると、画面の右側にこのカテゴリーに含まれるすべてのスキーマのリストが表示されます。
 
-1. Keep a browser tab open to the schema browser; when you want to PUT a `BlogPosting`, you'll need its schema. 
+1. ブラウザのタブにスキーマブラウザを開いておくと、`BlogPosting`をPUTしたいときにそのスキーマが必要になります。
 
-![The schema browser makes it convenient to find and call the service you want. ](./consuming-rest-services/images/01.png)
+![スキーマブラウザを使えば、欲しいサービスを探して呼び出すことができるので便利です。](./consuming-rest-services/images/01.png)
 
-## Identify the Site Containing the Data
+## データが格納されているサイトを特定する
 
-Now you must find the default Site ID:
+ここで、デフォルトのSite IDを見つける必要があります。
 
-1. Open the Site menu (![Site menu](../../images/icon-menu.png)) and go to **Configuration** &rarr; **Site Settings** .
-1. Under the Platform section, click **Site Configuration** . For Liferay DXP versions 7.3 and earlier, click the **General** tab.
-1. サイトIDの下でサイト識別子を見つけます。
+1. サイトメニュー(![サイトメニュー](../../images/icon-menu.png))を開き、 **設定** &rarr; **サイト設定** に移動します。
+1. Platform セクションの下にある **Site Configuration** をクリックします。Liferay DXP バージョン 7.3 以前の場合、 **General** タブをクリックします。
+1. Site ID]の下にある[Site identifier]を見つけます。
 
-   ![Identify the Site Id under the Site Settings and Site Configuration option.](./consuming-rest-services/images/03.png)
+   ![サイト設定とサイト構成オプションでサイトIDを特定します](./consuming-rest-services/images/03.png)
 
-## Make the Service Call Using Credentials with Access to the Data
+## データにアクセスできる認証情報を使ってサービスを呼び出す
 
-Now you have everything you need to make the call. すべてのWebサービスには、要求しているデータにアクセスできる資格情報を使用してアクセスする必要があります。 最も簡単な方法は、URLで資格情報データを渡す基本認証を使用することです。 これは安全ではないため、この方法は開発時にのみ使用すべきです。 For production, your application should authorize users via [OAuth2](../using-oauth2/using-oauth2.md).
+これで、電話をかけるのに必要なものはすべて揃いました。すべてのウェブサービスは、要求しているデータにアクセスできるクレデンシャルを使用してアクセスする必要があります。最も簡単な方法は、URLでクレデンシャルデータを渡すBasic Authを使用することです。これは安全ではないので、この方法は開発中にのみ使用する必要があります。本番環境では、[OAuth2](../using-oauth2.md)を使用してユーザーを認証する必要があります。
 
-The examples below use [cURL](https://curl.haxx.se) .
+以下の例では、 [cURL](https://curl.haxx.se) を使用しています。
 
-### Calling a Service Using Basic Auth (During Development Only)
+### 基本的なAuthを使用したサービスの呼び出し（開発中のみ）
 
-To call a service using Basic Auth, provide the credentials in the URL:
+Basic Authを使用してサービスを呼び出すには、URLで認証情報を提供します。
 
 ```bash
 curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/" -u 'test@liferay.com:learn'
@@ -88,7 +92,7 @@ curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://l
       "href" : "http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings"
     }
   },
-  "items" : ［ ］,
+  "items" : [ ],
   "lastPage" : 1,
   "page" : 1,
   "pageSize" : 20,
@@ -102,14 +106,14 @@ curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://l
 
 スキーマブラウザを使って、ブログエントリーの投稿方法を学ぶことができます。
 
-![任意のサービスのスキーマは、Liferay DXP インスタンスで公開されます。](./consuming-rest-services/images/02.png)
+![任意のサービスのスキーマは、Liferay DXPインスタンス上で公開されます。](./consuming-rest-services/images/02.png)
 
-1. スキーマブラウザを含むブラウザタブに戻ります。 右側で、 `BlogPosting` のエントリーをクリックして、そのスキーマを表示します（上図参照）。 これは、 `BlogPosting`のデータ構造全体を示しているが、必須フィールドは2つだけである。
+1. スキーマブラウザを含むブラウザタブに戻る。 右側で、 `BlogPosting` のエントリーをクリックし、そのスキーマを表示します（上図参照）。 これは、 `BlogPosting`の全データ構造を示していますが、必須項目は2つだけです。
 
     * `articleBody`
     * `headline`
 
-2. ブログのエントリーを投稿するための簡単なJSONドキュメントを構築します。
+2. ブログエントリーを投稿するためのシンプルなJSONドキュメントを構築します。
 
     ```json
     {
@@ -124,7 +128,7 @@ curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://l
     curl --header "Content-Type: application/json" --request POST --data '{ "headline": "Test Blog Entry from REST Services", "articleBody": "This article was posted via REST services provided by Liferay DXP." }' http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings -u test@liferay.com:learn
     ```
 
-Liferay DXP は、ブログエントリーの完全な JSON 表現を返します。
+Liferay DXPは、ブログエントリーの完全なJSON表現を返します。
 
 ```json
 {
@@ -157,7 +161,7 @@ Liferay DXP は、ブログエントリーの完全な JSON 表現を返しま�
     "name" : "Test Test",
     "profileURL" : "/web/test"
   },
-  "customFields" : ［ ］,
+  "customFields" : [ ],
   "dateCreated" : "2020-03-06T18:02:26Z",
   "dateModified" : "2020-03-06T18:02:27Z",
   "datePublished" : "2020-03-06T18:02:00Z",
@@ -166,11 +170,11 @@ Liferay DXP は、ブログエントリーの完全な JSON 表現を返しま�
   "friendlyUrlPath" : "test-blog-entry-from-rest-services",
   "headline" : "Test Blog Entry from REST Services",
   "id" : 35215,
-  "keywords" : ［ ］,
+  "keywords" : [ ],
   "numberOfComments" : 0,
-  "relatedContents" : ［ ］,
+  "relatedContents" : [ ],
   "siteId" : 20122,
-  "taxonomyCategories" : ［ ］
+  "taxonomyCategories" : [ ]
 }
 ```
 
@@ -182,7 +186,7 @@ Liferay DXP は、ブログエントリーの完全な JSON 表現を返しま�
 curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/" -u 'test@liferay.com:learn'
 ```
 
-ブログのエントリーの一覧を返します。 追加されたエントリーは、リストの中の唯一のものです。
+ブログエントリーの一覧を返します。 追加したエントリーは、リスト内の唯一のものです。
 
 ```json
 {
@@ -200,7 +204,7 @@ curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/"
       "href" : "http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings"
     }
   },
-  "items" : ［ {
+  "items" : [ {
     "actions" : {
       "get" : {
         "method" : "GET",
@@ -230,7 +234,7 @@ curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/"
       "name" : "Test Test",
       "profileURL" : "/web/test"
     },
-    "customFields" : ［ ］,
+    "customFields" : [ ],
     "dateCreated" : "2020-03-06T18:02:26Z",
     "dateModified" : "2020-03-06T18:02:27Z",
     "datePublished" : "2020-03-06T18:02:00Z",
@@ -239,12 +243,12 @@ curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/"
     "friendlyUrlPath" : "test-blog-entry-from-rest-services",
     "headline" : "Test Blog Entry from REST Services",
     "id" : 35215,
-    "keywords" : ［ ］,
+    "keywords" : [ ],
     "numberOfComments" : 0,
-    "relatedContents" : ［ ］,
+    "relatedContents" : [ ],
     "siteId" : 20122,
-    "taxonomyCategories" : ［ ］
-  } ］,
+    "taxonomyCategories" : [ ]
+  } ],
   "lastPage" : 1,
   "page" : 1,
   "pageSize" : 20,
@@ -254,7 +258,7 @@ curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/"
 
 ### 単一のブログエントリを取得する
 
-あなたがリクエストをするたびに、Liferay DXP は他の可能なエンドポイントを返してきました。 そのひとつが、ひとつのブログのエントリーをIDで取得することです。 エントリーのIDがわかっていれば、取得することができます。
+リクエストをするたびに、Liferay DXPは他の可能なエンドポイントを返してきました。 そのひとつが、ひとつのブログエントリーをIDで取得することです。 エントリーのIDが分かれば、取り出すことができます。
 
 ```bash
 curl "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215" -u test@liferay.com:learn
@@ -270,13 +274,13 @@ curl "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215" -u tes
 curl -X DELETE "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215" -u test@liferay.com:learn
 ```
 
-この場合、何も返されませんが、上記のようにリクエストすることで、エントリーが消えていることを確認することができます。
+この場合、何も返されませんが、上記のようにリクエストすることで、エントリーが消えていることを確認できます。
 
 ```bash
 curl "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215" -u test@liferay.com:learn
 ```
 
-そして、Liferay DXP はこの JSON ドキュメントをレスポンスとして返します。
+そして、Liferay DXPはこのJSONドキュメントをレスポンスで返します。
 
 ```json
 {

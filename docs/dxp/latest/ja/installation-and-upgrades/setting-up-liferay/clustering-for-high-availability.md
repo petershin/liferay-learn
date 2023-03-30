@@ -4,8 +4,9 @@ toc:
 - ./clustering-for-high-availability/database-configuration-for-cluster-nodes.md
 - ./clustering-for-high-availability/configuring-cluster-link.md
 - ./clustering-for-high-availability/configuring-unicast-over-tcp.md
+uuid: e38676bb-0c00-45cb-a1ff-37038f7ad701
 ---
-# 高可用性のクラスタリング
+# 高可用性のためのクラスタリング
 
 ```{toctree}
 :maxdepth: 3
@@ -18,7 +19,7 @@ clustering-for-high-availability/configuring-unicast-over-tcp.md
 
 Liferay DXPは、最小から最大までのすべてのWebサイトに対応するように拡張できます。 アウトオブボックスで、単一のサーバー環境に最適な構成になっています。 トラフィックが多いと予想される場合、またはサイトの全体的なフォールトトレランスを向上させたい場合は、DXPのクラスタリングを検討してください。
 
-![Liferay DXPは、必要に応じて大規模な設置に対応できるように設計されています。](./clustering-for-high-availability/images/01.png)
+![Liferay DXPは、必要なだけ大規模にインストールできるように設計されています](./clustering-for-high-availability/images/01.png)
 
 Liferay DXPは、複数のマシンのクラスター（水平クラスター）または単一のマシン上の複数のVMのクラスター（垂直クラスター）、または任意の組み合わせでうまく機能します。
 
@@ -26,26 +27,26 @@ Liferay DXPは、複数のマシンのクラスター（水平クラスター）
 
 ここでは、効果的に機能するDXPクラスタを作成するために必要なことを説明します。
 
-1. Liferay DXP を別々のアプリケーションサーバーノードに [インストール](../installing-liferay.md)する
+1.  Liferay DXP [installed](../installing-liferay.md) を別々のアプリケーションサーバーノードに設置する。
 
-1. すべてのノードにアクセスできる [データベースまたはデータベースクラスター](./clustering-for-high-availability/database-configuration-for-cluster-nodes.md)
+1.  すべてのノードからアクセス可能な[データベースまたはデータベースクラスタ](./clustering-for-high-availability/database-configuration-for-cluster-nodes.md)
 
-1. すべてのノードにアクセス可能な [ファイルストア](../../../system-administration/file-storage.md)
+1.  全ノードからアクセス可能な[ファイルストア](../../system-administration/file-storage.md)
 
-1. オプションでクラスター化されている [検索エンジン（DXPの外部で実行）](../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
+1. [オプションでクラスター化された検索エンジン (DXP の外部で実行)](../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 
-1. [すべてのノード間で通信とキャッシュレプリケーションを有効にするように構成されたクラスターリンク](./clustering-for-high-availability/configuring-cluster-link.md)
+1.  [全ノードで通信とキャッシュの複製が可能なクラスターリンクの設定](./clustering-for-high-availability/configuring-cluster-link.md)
 
 ```{note}
-並行処理の問題がなく、マスターノードが正しく選択されていることを確認するために、ノードを順次起動してください。
+同時実行の問題がなく、マスターノードが正しく選択されていることを確認するため、ノードを順次起動します。
 ```
 
-DXPクラスターを構成したら、それにアプリケーションをデプロイし、ユーザーエクスペリエンスを引き続き改善できます。 詳細は、 [クラスター化されたインストールの維持](../maintaining-a-liferay-installation/maintaining-clustered-installations.md) を参照してください。
+DXPクラスターを構成したら、それにアプリケーションをデプロイし、ユーザーエクスペリエンスを引き続き改善できます。 詳しくは[クラスターインストールのメンテナンス](../maintaining-a-liferay-installation/maintaining-clustered-installations.md)を参照してください。
 
 ## 次のステップ
 
-例としてクラスタを作成することは、DXPクラスタリングを理解するための最初の一歩として最適です。 詳細は、「 [例：単純なDXPクラスター](./clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md) 作成」から始めてください。 次に、上記の [クラスタリング要件](#clustering-requirements) 対処します。
+例としてクラスタを作成することは、DXPクラスタリングを理解するための最初の一歩として最適です。 まずは[例：シンプルなDXPクラスタの作成](./clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md) で詳細を確認してください。 そして、上記の【クラスタリング要件】(#clustering-requirements)に対応します。
 
 ```{note}
-このドキュメントでは、Java EEアプリケーションサーバー、HTTPサーバー、ロードバランサーなどのサードパーティソフトウェアの特定の実装に触れずに、DXP固有のクラスター構成について説明します。 それらを構成するには、それらのコンポーネントのドキュメントを参照してください。 DXPクラスターを作成する前に、OSが127.0.0.1のローカルネットワークに対してシステムのホスト名を定義していないことを確認してください。
+このドキュメントでは、Java EE アプリケーションサーバー、HTTP サーバー、ロードバランサーなどのサードパーティーソフトウェアの具体的な実装には触れず、DXP 固有のクラスタ構成について説明します。これらのコンポーネントを設定するには、それらのコンポーネントのドキュメントを参照してください。DXP クラスタを作成する前に、OS がシステムのホスト名を 127.0.0.1 のローカルネットワークに定義していないことを確認してください。
 ```

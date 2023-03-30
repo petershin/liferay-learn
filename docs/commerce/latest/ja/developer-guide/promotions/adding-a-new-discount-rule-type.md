@@ -1,3 +1,6 @@
+---
+uuid: 8b949a1f-5f7c-40f7-a041-a06c6a799055
+---
 # 新しい割引ルールタイプの追加
 
 2つのインターフェースを実装することで、新しい割引ルールタイプを追加することができます。2つのインターフェイスは、 [CommerceDiscountRuleType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-discount-api/src/main/java/com/liferay/commerce/discount/rule/type/CommerceDiscountRuleType.java) と [CommerceDiscountRuleTypeJSPContributor](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-discount-api/src/main/java/com/liferay/commerce/discount/rule/type/CommerceDiscountRuleTypeJSPContributor.java) です。
@@ -13,19 +16,20 @@
 1. [**追加情報**](#additional-information)
 
 ## サンプルをデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従って、割引ルールタイプの例をLiferay Commerce インスタンスにデプロイします。
+次に、以下の手順に従って、Liferay Commerce インスタンスに割引ルールタイプの例をデプロイします。
 
 1. [Acme Commerce Discount Rule Type](./liferay-m6a8.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/ja/developer-guide/promotions/liferay-m6a8.zip -O
+    curl https://learn.liferay.com/commerce/latest/en/developer-guide/promotions/liferay-m6a8.zip -O
     ```
 
     ```bash
-    liferay-m6a8.zipを解凍してください。
+    unzip liferay-m6a8.zip
     ```
 
 1. サンプルをビルドしてデプロイします。
@@ -44,10 +48,10 @@
     STARTED com.acme.m6a8.web_1.0.0
     ```
 
-1. サンプルの割引ルールタイプが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次に、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**commerce**］ → ［**割引**］ に移動します。 任意の割引のメニュー内の ［**編集**］ をクリックします。 ［**ルール**］ セクションまでスクロールし、(+)アイコンをクリックして、新しい割引ルールを追加します。 ［**タイプ**］ ドロップダウンの下に、新しい割引ルールタイプ（「最小限の商品数を持つ」）が表示されます。
+1. サンプルの割引ルールタイプが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開きます。 次に、アプリケーションメニュー（![Applications Menu](../../images/icon-applications-menu.png)）をクリックし、 ［**コマース**］ → ［**割引**］ に移動します。 任意の割引のメニュー内の ［**編集**］ をクリックします。 ［**ルール**］ セクションまでスクロールし、(+)アイコンをクリックして、新しい割引ルールを追加します。 ［**タイプ**］ ドロップダウンの下に、新しい割引ルールタイプ（「最小限の商品数を持つ」）が表示されます。
 
 ```{note}
-Liferay Commerce 2.1以前のバージョンでは、*［コントロールパネル］* → *［commerce］* → *［割引］*に移動して割引を検索します。 任意の割引のメニュー内の*［編集］*をクリックし、画面上部の*［ルール］*をクリックしてください。
+Liferay Commerce 2.1以前のバージョンでは、*［コントロールパネル］* → *［コマース］* → *［割引］*に移動して割引を検索します。 任意の割引のメニュー内の*［編集］*をクリックし、画面上部の*［ルール］*をクリックしてください。
 ```
 
 ![新しい割引ルールタイプ](./adding-a-new-discount-rule-type/images/02.png "新しい割引ルールタイプ")
@@ -245,5 +249,5 @@ minimum-number-of-items=Minimum Number of Items
 ## 追加情報
 
 * [割引を作成する](../../pricing/promoting-products/creating-a-discount.md)
-* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
-* [AUI Taglibsの使用](https://help.liferay.com/hc/ja/articles/360020189212-Using-AUI-Taglibs)
+* [Localizing Your Application](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
+* [Using AUI Taglibs](https://help.liferay.com/hc/ja/articles/360020189212-Using-AUI-Taglibs)

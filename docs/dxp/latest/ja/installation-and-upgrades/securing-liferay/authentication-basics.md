@@ -1,3 +1,6 @@
+---
+uuid: f5ccd64e-f615-4141-bbb5-eff00cdcf1ca
+---
 # 認証の基本
 
 デフォルトでは、Liferay DXPは ［**Sign In**］ ウィジェットを使用してユーザーを認証します。
@@ -15,7 +18,7 @@
 * [Kerberos](./configuring-sso/authenticating-with-kerberos.md)
 * [OpenId Connect](./configuring-sso/using-openid-connect.md)
 * [トークンベースのソリューション](./configuring-sso/token-based-authentication.md)
-* [OAuth 2.0](../../headless-delivery/using-oauth2/using-oauth2.md)
+* [OAuth 2.0](../../headless-delivery/using-oauth2.md)
 
 [認証検証](./securing-web-services/using-authentication-verifiers.md)はリモートアプリケーションの認証を管理でき、[認証パイプライン](../../building-applications.md)はユーザーが1つまたは複数のシステムによって検証される方法を定義します。
 
@@ -47,7 +50,7 @@
 
 ### プロパティを使用して認証の種類を設定する
 
-[`portal-ext.properties`](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) ファイルを使用するには、以下のプロパティに貼り付け、目的の認証の種類のコメントを解除します。
+[ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) ファイルを使用するには、以下のプロパティに貼り付け、目的の認証の種類のコメントを解除します。
 
 ```properties
 company.security.auth.type=emailAddress
@@ -75,7 +78,7 @@ company.security.auth.type=emailAddress
 
 1. ［Control Panel］ &rarr; ［**Configuration**］ &rarr; ［**Instance Settings**］ &rarr; ［**プラットフォーム**］ &rarr; ［**User Authentication**］ に移動します。
 1. ［**Allow users to request password reset links?**］ をオフにします。
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
 ### CAPTCHAまたはreCAPTCHAの構成
 

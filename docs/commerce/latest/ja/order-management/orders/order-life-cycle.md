@@ -1,3 +1,6 @@
+---
+uuid: 6802182a-3eaa-4f2a-b077-6a938299f497
+---
 # 注文ライフサイクル
 
 注文には、見込みのある取引または過去の取引に関するデータが保存されます。 この記事では、オープンカートから [フ処理済み注文](../shipments/introduction-to-shipments.md)までの注文ライフサイクルの概要を説明します。
@@ -16,7 +19,7 @@
 
 ### ステップ2：発注
 
-売り手に情報を提供し、注文の概要を確認した後、買い手は注文を出します。 注文ワークフローが有効になっている場合、送信前に注文が確認されます。 注文が処理されている間、バイヤーは注文のステータスを追跡する[通知](../../store-management/sending-emails/store-emails.md)を受け取ることができます。
+売り手に情報を提供し、注文の概要を確認した後、買い手は注文を出します。 注文ワークフローが有効になっている場合、送信前に注文が確認されます。 注文が処理されている間、バイヤーは注文のステータスを追跡する[通知](../../store-management/sending-emails.md)を受け取ることができます。
 
 ### ステップ3：注文の送信
 
@@ -32,4 +35,4 @@
 * [注文の処理](./processing-an-order.md)
 * [注文メニューリファレンスガイド](./orders-menu-reference-guide.md)
 * [出荷の概要](../shipments/introduction-to-shipments.md)
-* [メールを保存](../../store-management/sending-emails/store-emails.md)
+* [メールを送信する](../../store-management/sending-emails.md)

@@ -1,3 +1,6 @@
+---
+uuid: 891409db-2dab-4236-b174-b8576e6a21c0
+---
 # サンプルのCCRインストールの構成：データセンター間での複製
 
 > **Liferay Enterprise Search（LES）サブスクライバー**
@@ -17,7 +20,7 @@ Liferay DXP 7.1、7.2、7.3の間の設定や手順の違いは、この説明�
 ここで提供されるElasticsearch API呼び出しは、Kibanaの開発ツールコンソールにコピーして貼り付けることができ、別のKibanaインストールまたは[LES モニタリングウィジェット](../monitoring-elasticsearch.md)からアクセスできます。
 
 ```{note}
-Kibanaを使うには、複数のElasticsearchクラスタ（この例では2つのシングルノードクラスタ）が稼働していることを思い出してください。 `elasticsearch.hosts:[ "http://localhost:<port>" ]` Kibana の `kibana.yml` ファイルの設定は、リーダークラスタとフォロワークラスタが混在しないように、後述のインデックスや他の設定を管理する際に正しいポートを指す必要があります。 ここでは、リーダーのElasticsearchクラスタノードがポート `9200` を、フォロワーがポート `9202` を使用すると仮定しています。 
+Kibanaを使うには、複数のElasticsearchクラスタ（この例では2つのシングルノードクラスタ）が稼働していることを思い出してください。 `elasticsearch.hosts:[ "http://localhost:<port>" ]` Kibana の `kibana.yml` ファイルの設定は、リーダークラスタとフォロワークラスタが混在しないように、後述のインデックスやその他の設定を管理する際に、正しいポートを指す必要があります。 ここでは、リーダーのElasticsearchクラスタノードがポート`9200`を、フォロワーがポート`9202`を使用すると仮定しています。 
 ```
 
 ## クラスターLiferay DXP
@@ -62,7 +65,7 @@ cluster.link.enabled=true
 
 ## クラスター横断レプリケーションモジュールのインストール
 
-Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーションは、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 そのため、Liferay DXP 7.4+ では、LPKG のインストールは不要です。 詳しくは、 [LESの有効化](./activating-liferay-enterprise-search.md) をご覧ください。
+Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーションは、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 そのため、Liferay DXP 7.4+では、LPKGのインストールは不要です。 詳しくは、 [LESの起動](../activating-liferay-enterprise-search.md) をご覧ください。
 
 1. [LESダウンロードページ](https://customer.liferay.com/downloads) から、Elasticsearch LPKGのLiferay DXPクラスター横断レプリケーションをダウンロードします。
 

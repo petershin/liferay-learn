@@ -1,3 +1,6 @@
+---
+uuid: 93d457e7-711c-48dd-bf1b-cb4b07c3a84a
+---
 # プレーンJavaScript、Billboard JS、JQuery、Metal JS、React、またはVue JSプロジェクトを移行してLiferay npm Bundler 2.xを使用する
 
 以下に示すフレームワークプロジェクトを移行してliferay-npm-bundler 2.xを使用するには、次の手順に従います。
@@ -15,7 +18,7 @@
 
     ```json
     {
-      "devDependencies": {
+      "devDependencies":{
         ...
         "liferay-npm-bundler": "^2.0.0",
         ...
@@ -48,4 +51,6 @@
 
 ## 関連情報
 
-* [Formatting Your npm Modules for AMD](../how-the-bundler-formats-js-modules.md) <!-- **\[Using the NPMResolver API in Your Portlets\](/docs/7-2/frameworks/-/knowledge_base/f/using-the-npmresolver-api-in-your-portlets) TODO: Update link-->**[What Changed between liferay-npm-bundler 1.x and 2.x](../changes-between-bundler-1-x-and-2-x.md)
+* [Formatting Your npm Modules for AMD](../how-the-bundler-formats-js-modules.md)
+<!-- * [Using the NPMResolver API in Your Portlets](/docs/7-2/frameworks/-/knowledge_base/f/using-the-npmresolver-api-in-your-portlets) TODO: Update link-->
+* [What Changed between liferay-npm-bundler 1.x and 2.x](../changes-between-bundler-1-x-and-2-x.md)

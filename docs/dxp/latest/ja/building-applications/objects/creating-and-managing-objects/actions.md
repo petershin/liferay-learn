@@ -2,28 +2,41 @@
 toc:
 - ./actions/defining-object-actions.md
 - ./actions/understanding-action-types.md
+- ./action/using-manual-actions.md
+uuid: 22678165-9c15-45ec-9f59-73eb9e2769b8
 ---
-# 操作
+# アクション
 
 ```{toctree}
 :maxdepth: 3
 
 actions/defining-object-actions.md
 actions/understanding-action-types.md
+actions/using-manual-actions.md
 ```
 
-アクションは、オブジェクトの入力イベントによって引き起こされる操作を定義します。 Liferayはイベント-add, delete, or update-をリッスンし、操作を実行します。
+オブジェクトアクションは、オブジェクトの入力イベントに対して手動または自動で実行できるカスタムビジネスロジックを定義します。 例えば、エントリーイベントのデータをWebhook URLに配信する、エントリー更新後にメール通知を行う、エントリー作成後にGroovyのカスタムスクリプトを実行する、などが挙げられます。
 
-![オブジェクト定義にアクションを追加する。](./actions/images/01.png)
+自動トリガーを使用する場合、Liferayはイベントを聞き取り、あらかじめ定義された条件に従って自動的に操作を実行します。 スタンドアローントリガーを使用する場合、LiferayはオブジェクトエントリーのActionsメニュー(![Actions Button](../../../images/icon-actions.png))にアクションを追加し、それをトリガーするためのヘッドレスAPIを生成します。 アクションは手動で実行する必要があります。
 
-Liferay はこれらのアクションタイプを提供します。
+![オブジェクト定義にアクションを追加します。](./actions/images/01.png)
 
-| アクションタイプ                                                                              | Description                                     |
-|:------------------------------------------------------------------------------------- |:----------------------------------------------- |
-| [Webhook](./actions/understanding-action-types.md#webhook-actions)                    | URLにペイロードを配信する。                                 |
-| [Groovy スクリプト](./actions/understanding-action-types.md#groovy-script-actions)         | [Groovy](https://groovy-lang.org/) のスクリプトを実行する。 |
-| [通知](./actions/understanding-action-types.md#notification-actions)                    | あらかじめ設定されたテンプレートを使って、電子メールによる通知を送信します。          |
-| [オブジェクトエントリーを追加](./actions/understanding-action-types.md#add-an-object-entry-actions) | アクティブなオブジェクトにエントリーを作成する。                        |
+Liferay Objects はこれらのアクションタイプを提供します。
+
+| 種類             | Description                                    |
+|:-------------- |:---------------------------------------------- |
+| 通知             | あらかじめ用意されたテンプレートを使って、メールやユーザー通知を送ることができます。     |
+| オブジェクトエントリーを追加 | アクティブなオブジェクトにエントリーを作成する。                       |
+| オブジェクトエントリーを更新 | 現在のオブジェクト・エントリーのフィールドを更新する。                    |
+| Webhook        | URLにペイロードを配信する。                                |
+| Groovy スクリプト   | [Groovy](https://groovy-lang.org/) のスクリプトを実行する。 |
+
+```{important}
+Groovyスクリプトアクションは、Liferay Experience Cloud Self-ManagedとLiferay DXP Self-Hostedでのみ利用可能です。
+```
+
+<!--TASK: When client extensions docs are ready, mention being able to add Action Types and Notification Types.-->
+
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -34,5 +47,9 @@ Liferay はこれらのアクションタイプを提供します。
 
 :::{grid-item-card} アクションタイプの理解
 :link: ./actions/understanding-action-types.md
+:::
+
+:::{grid-item-card} マニュアルアクションの使用
+:link: ./actions/actions/using-manual-actions.md
 :::
 ::::

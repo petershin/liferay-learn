@@ -12,8 +12,8 @@ toc:
 - ./clay-tag-library/clay-navigation-bars.md
 - ./clay-tag-library/clay-progress-bars.md
 - ./clay-tag-library/clay-stickers.md
+uuid: 86e12690-c1b4-4cc9-963f-121244fa81a1
 ---
-
 # Clayタグライブラリ
 
 ```{toctree}

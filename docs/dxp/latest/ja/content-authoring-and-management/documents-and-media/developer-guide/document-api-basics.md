@@ -13,7 +13,7 @@ LiferayのHeadless Deliveryアプリケーションは、[ドキュメントと�
 
 次に、以下の手順を実行します。
 
-1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip)をダウンロードし、解凍する。
+1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip) をダウンロードし、解凍する。
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O

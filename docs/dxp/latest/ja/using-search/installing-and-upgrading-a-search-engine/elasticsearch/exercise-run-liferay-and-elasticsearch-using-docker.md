@@ -1,3 +1,6 @@
+---
+uuid: ff808648-0541-424c-b35b-dab20e241790
+---
 # 演習：Dockerを使用してLiferay とElasticsearchを実行する
 
 > 適用先：Liferay DXP 7.3以降
@@ -15,40 +18,40 @@ mkdir -p test-es-install/dxp/files/osgi/configs && mkdir -p test-es-install/elas
 ```
 
 ```{tip}
-The `cd test-es-install` command at the end puts you in the `test-es-install` folder. このフォルダからElasticsearchとLiferay DXPの両方の残りのコマンドを実行することを確認してください。
+最後に`cd test-es-install`コマンドを実行すると、`test-es-install`フォルダーに入ります。 このフォルダからElasticsearchとLiferay DXPの両方の残りのコマンドを実行することを確認してください。
 ```
 ## Elasticsearchのインストール
 
-1. `elasticsearch715`という名前のElasticsearch `7.15.1`コンテナを設定して起動します。
+1. Elasticsearch `7.17.9` コンテナ名 `elasticsearch717`を設定し起動します。
 
    ```bash
-   docker run -it --name elasticsearch715 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "node.name=es-node1" -v $(pwd)/elasticsearch:/usr/share/elasticsearch/data docker.elastic.co/elasticsearch/elasticsearch:7.15.1
+   docker run -it --name elasticsearch717 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "node.name=es-node1" -v $(pwd)/elasticsearch:/usr/share/elasticsearch/data docker.elastic.co/elasticsearch/elasticsearch:7.17.9
    ```
 
 1. 必要なElasticsearchプラグインをインストールします。 `docker exec -it`を使用して、インタラクティブなbashシェルにアクセスします。
 
    ```bash
-   docker exec -it elasticsearch715 bash -c '/usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-kuromoji && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-smartcn && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-stempel'
+   docker exec -it elasticsearch717 bash -c '/usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-kuromoji && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-smartcn && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-stempel'
    ```
 
 1. Elasticsearchコンテナを再起動して、プラグインを登録します。 CTRL+Cでコンテナを停止した後、以下を実行して再度起動します。
 
    ```bash
-   docker start -i elasticsearch715
+   docker start -i elasticsearch717
    ```
 
 1. 実行中のElasticsearchコンテナのIPv4アドレスを取得します。
 
    ```bash
-   Dockerネットワークはブリッジを実行します。
+   docker network inspect bridge
    ```
 
-   この例では、`172.17.0.2`です。 システムが異なるIPアドレスを提供している場合は、Liferay DXPを実行するときに`docker run --add-host elasticsearch715:[IP]...`コマンドで使用する必要があります。
+   この例では、`172.17.0.2`です。 システムが別のIPアドレスを提供している場合は、Liferay DXPを実行する際に `docker run --add-host elasticsearch717:[IP]...` コマンドでそれを使用する必要があります。
 
    ```bash
    "Containers": {
                "2d4614fdcce2159322fa7922bfc5f866b79bd7f609a65cc888f9a260f80731f4": {
-                   "Name": "elasticsearch715",
+                   "Name": "elasticsearch717",
                    "EndpointID": "e89c3d0a87cc528753470eb359cee3b85fea9f9a5df3b249d54d203741a650a8",
                    "MacAddress": "02:42:ac:11:00:02",
                    "IPv4Address": "172.17.0.2/16",
@@ -68,19 +71,19 @@ Liferay DXPがElasticsearchに接続するために必要なプロパティを�
 
    operationMode="REMOTE"
    productionModeEnabled=B"true"
-   networkHostAddresses="http://elasticsearch715:9200"
+   networkHostAddresses="http://elasticsearch717:9200"
    EOT
    ```
 
 1. 構成ファイルを配置したら、次のコマンドでDXPコンテナを起動します。
 
    ```bash
-   docker run -it --name dxp74  --add-host elasticsearch715:172.17.0.2 -p 8080:8080 -v $(pwd)/dxp:/mnt/liferay [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+   docker run -it --name dxp74  --add-host elasticsearch717:172.17.0.2 -p 8080:8080 -v $(pwd)/dxp:/mnt/liferay [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
    ```
 
 1. **チェックポイント：** コントロールパネル &rarr; 設定 &rarr; 検索でElasticsearchの接続が有効になっていることを確認します。
 
-   ![有効な接続が［検索機能］管理パネルに表示されます。](./exercise-run-liferay-and-elasticsearch-using-docker/images/01.png)
+   ![有効な接続が［検索機能］管理パネルに表示されます。](./getting-started-with-elasticsearch/images/01.png)
 
 検索インデックスとスペルチェックインデックスを再作成します。 どちらのインデックス再作成も、コントロールパネルの &rarr; 設定 &rarr; 検索の「インデックスアクション」タブから実行されます。
 

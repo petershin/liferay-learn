@@ -1,3 +1,6 @@
+---
+uuid: c5e81d72-7ffb-489a-b710-eceb42f4e0f0
+---
 # 7.2のメンテナンスモードと非推奨
 
 新しいDXPのリリースごとに、機能の継続的な拡張が保証されない場合や、廃止される可能性があります。 機能の拡張を停止すると、その機能は **メンテナンスモード** に入ります。
@@ -53,7 +56,7 @@ Liferay 7.0以前からアップグレードする場合は、該当するリリ
 | NTLM                                       | 削除        | NTLMにはセキュリティの脆弱性が残ります。 [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)に置き換えられました。 NTLMを使用してMicrosoft Windows™アカウントを認証している場合は、[Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)を使用するように切り替えてください。 |
 | OAuth 1.0a                                 | マーケットプレイス | バンドルに含まれているOAuth 2.0に置き換えられました。                                                                                                                                                                                                                                      |
 | OpenAM/OpenSSO                             | バンドル      | [ SAMLベースの認証](../../securing-liferay/configuring-sso/authenticating-with-saml.md)に移行。                                                                                                                                                                                |
-| Open ID                                    | マーケットプレイス | [OpenID Connect](../../securing-liferay/configuring-sso/other-ssos/using-openid-connect.md)に置き換えられました。                                                                                                                                                               |
+| Open ID                                    | マーケットプレイス | [OpenID Connect](../../securing-liferay/configuring-sso/using-openid-connect.md)に置き換えられました。                                                                                                                                                                          |
 | リソースインポーター                                 | バンドル      | 7.1で廃止、直接の置き換えなし                                                                                                                                                                                                                                                     |
 | RSS パブリッシャー                                | バンドル      | このウィジェットの有効化と使用に関する [記事](https://help.liferay.com/hc/ja/articles/360028820672-The-RSS-Publisher-Widget) を参照してください。                                                                                                                                                  |
 | **ツール** カテゴリの検索ウィジェット（クラシック）                 | バンドル      | 7.1で廃止。 **検索** カテゴリの[検索ウィジェット](../../../using-search/search-pages-and-widgets/search-results/search-results.md)に置き換えられました。                                                                                                                                              |
@@ -73,7 +76,7 @@ Liferay 7.0以前からアップグレードする場合は、該当するリリ
 * Liferay Sync
 
 ```{note}
-Liferayはステージングアプリケーションの改良を続けており、特に、ある環境でコンテンツを作成し、別の環境で消費する必要があるシナリオでのリモートライブステージングに対応しています。 詳しくは、 [公開ツール](../../../site-building/publishing-tools.md) をご覧ください。
+Liferayは、特に、ある環境でコンテンツを作成し、別の環境で消費する必要があるシナリオにおけるリモートライブステージングに対応するため、ステージングアプリケーションの改善を続けています。 詳しくは、[公開設定ツール](../../../site-building/publishing-tools.md) をご覧ください。
 ```
 
 ## 追加情報

@@ -1,3 +1,6 @@
+---
+uuid: 394bfac1-4f63-4799-bb0e-46e9c988512f
+---
 # フラグメントエディターの使用
 
 Liferay DXP には、コンテンツページフラグメントを作成するための組み込み[エディター](../reference/fragments/page-fragment-editor-interface-reference.md)が含まれています。 エディターにアクセスするには、 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 ここから、フラグメントおよびフラグメントセットを表示、管理、および作成できます。
@@ -29,7 +32,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     機能ごと、またはチームや部門ごとにフラグメントをグループ化するセットを作成します。
     ```
 
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
 保存したら、フラグメントをセットに追加できます。
 
@@ -91,12 +94,12 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
     ![Add CSS, HTML, and Javascript resources to the Fragment and see a live preview.](./using-the-fragments-editor/images/05.png)
 
-1. Configuration タブで、 `JSON` フィールドを使用して、 [設定オプション](./adding-configuration-options-to-fragments.md) を Page Fragment に追加します。
+1. 設定」タブで、 `JSON` フィールドを使用して、 [設定オプション](./adding-configuration-options-to-fragments.md) をページフラグメントに追加します。
 
    ![ページ フラグメントに構成オプションを追加します。](./using-the-fragments-editor/images/06.png)
 
     ```{tip}
-    JSONの `fields` オブジェクトと一緒に）どのフィールドセットにも `configurationRole` 値を追加して、関連するフィールドがどのタブに表示されるかを指定することができます。 値を `styles` に設定すると、フィールドが Styles タブに表示され、`advanced` に設定すると Advanced タブに表示されます (*Liferay DXP バージョン U23+ または GA23+* のみ)。 もし `configurationRole` が設定されていない場合は、デフォルトで General タブに表示されます。
+    JSONの`fields`オブジェクトと一緒に）どのフィールドセットにも`configurationRole`値を追加して、関連するフィールドがどのタブに表示されるかを指定することができます。 値を `styles` に設定するとスタイルタブにフィールドが表示され、`advanced` に設定すると詳細タブに表示されます（*Liferay DXP バージョン U23+ または GA23+* でのみ使用可能）。 configurationRole`が設定されていない場合、デフォルトでGeneralタブに表示されます。
     ```
 
 1. ［**Publish**］ をクリックして、 [コンテントページ](../../creating-pages/understanding-pages/understanding-pages.md#content-pages) で使用できるようにします。

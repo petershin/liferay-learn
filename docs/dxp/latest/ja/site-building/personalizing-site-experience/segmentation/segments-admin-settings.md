@@ -20,7 +20,7 @@ Segmentの動作は、システムレベルまたはインスタンスレベル�
 
 ![Analytics Cloud Segmentsの設定を表示・設定します。](./segments-admin-settings/images/01.png)
 
-[Analytics Cloud segments](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html) 共通の属性や行動に基づいて個人を集約する。 このデータをLiferay DXPのセグメントと統合することで、既知および匿名のユーザーに関心のあるコンテンツを配信することができます。
+[セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html) 共通の属性や行動に基づいて個人を集約する。 このデータをLiferay DXPのセグメントと統合することで、既知および匿名のユーザーに関心のあるコンテンツを配信することができます。
 
 これらの設定は、 **Analytics Cloud Segments** でアクセスできます。
 
@@ -52,5 +52,5 @@ Segmentの動作は、システムレベルまたはインスタンスレベル�
 
 ## 追加情報
 
-* [Analytics Cloud のセグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html)
+* [セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html)
 * [セッションプロパティのボキャブラリ](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

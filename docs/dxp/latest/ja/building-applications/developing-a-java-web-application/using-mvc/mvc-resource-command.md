@@ -1,3 +1,6 @@
+---
+uuid: e6e8ec72-27f5-435f-b1b1-afcb8e7d5412
+---
 # MVCリソースコマンド
 
 MVCリソースコマンドのクラスは、アクションやレンダーをトリガーせずに、DXP / Portalインスタンスからリソース（画像、XML、またはその他の種類のリソース）を取得します。 リクエストまたはポートレットリソースURLは、MVCリソースコマンドを呼び出します。
@@ -7,15 +10,16 @@ MVCリソースコマンドを使用するサンプルポートレットをデ�
 ## MVCリソースコマンドを呼び出す
 
 サンプルポートレットは、MVCリソースコマンドを使用して単純なファイルをダウンロードします。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順に従います:
 
-1. サンプルをダウンロードして解凍します。
+1. exampleをダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-p8v5.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p8v5.zip -O
    ```
 
    ```bash
@@ -123,15 +127,14 @@ MVCリソースコマンドクラスは、 [`MVCResourceCommand`](https://github
 |:-------------------------------------------------------------------------------------- |:-------------------------------------------- |
 | `<a href="<portlet:resourceURL id="/p8v5/download" />">Download</a>` | `mvc.command.name=/p8v5/download`            |
 
-ビューの ［**ダウンロード<**］ リンクをクリックすると、`P8V5DownloadMVCResourceCommand`の`serveResource`メソッドが呼び出されます。
+ビューの **Download** リンクをクリックすると、`P8V5DownloadMVCResourceCommand` の `serveResource` メソッドを呼び出します。
 
 ## 次のステップ
 
-これで、MVCリソースコマンドの使用方法がわかりました。 ポートレットのコンテンツをローカライズする場合は、[MVCポートレットでのローカライズされたメッセージの使用](./using-localized-messages-in-an-mvc-portlet.md)を参照してください。 モデルレイヤー、永続レイヤー、およびサービスレイヤーを開発する準備ができている場合は、[サービスビルダー](../../data-frameworks/service-builder.md)をご覧ください。
+これで、MVCリソースコマンドの使用方法がわかりました。 ポートレットのコンテンツをローカライズする場合は、[Using Localized Messages](./using-localized-messages-in-an-mvc-portlet.md)を参照してください。 モデルレイヤー、永続レイヤー、およびサービスレイヤーを開発する準備ができている場合は、 [サービスビルダー](../../data-frameworks/service-builder.md) をご覧ください。
 
 ## 追加情報
 
 * [MVCの使用](../using-mvc.md)
 * [MVCレンダーコマンド](./mvc-render-command.md)
 * [MVCアクションコマンド](./mvc-action-command.md)
-* [MVCコマンドのオーバーライド](../../../liferay-internals/extending-liferay/overriding-mvc-commands.md)

@@ -1,3 +1,6 @@
+---
+uuid: 7120df4a-f22d-42fd-b574-db3dae8faa2b
+---
 # ナレッジベースAPIの基本
 
 [ナレッジベース記事の作成](../creating-knowledge-base-articles.md)と[ナレッジベースの管理](../managing-the-knowledge-base.md)はLiferayのナレッジベースアプリでできますが、Liferay のREST APIを使うことも可能です。 ナレッジベースのコンテンツを作成・管理するために、これらのサービスを呼び出します。
@@ -7,12 +10,12 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+次に、以下の手順に従います:
 
 1. [Knowledge Base API Basics](./liferay-t3x7.zip) をダウンロードし、解凍してください。.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/collaboration-and-social/knowledge-base/developer-guide/liferay-t3x7.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/knowledge-base/developer-guide/liferay-t3x7.zip -O
    ```
 
    ```bash
@@ -96,7 +99,7 @@
 | `-u "test@liferay.com:learn"`                                                         | 基本的な認証情報                        |
 
 ```{note}
-デモのために基本認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
+デモのために基本認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -139,13 +142,13 @@
 
 ### KnowledgeBaseArticles_GET_FromSite.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./KnowledgeBaseArticles_GET_FromSite.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/curl/KnowledgeBaseArticles_GET_FromSite.sh
    :language: bash
@@ -153,13 +156,13 @@
 
 ### KnowledgeBaseArticles_GET_FromSite.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DsiteId=1234 KnowledgeBaseArticles_GET_FromSite
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/java/KnowledgeBaseArticles_GET_FromSite.java
    :dedent: 1
@@ -193,13 +196,13 @@ java -classpath .:* -DsiteId=1234 KnowledgeBaseArticles_GET_FromSite
 
 ### KnowledgeBaseArticle_GET_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_GET_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/java/KnowledgeBaseArticle_GET_ById.java
    :dedent: 1
@@ -229,13 +232,13 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_GET_ById
 
 ### KnowledgeBaseArticle_PATCH_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_PATCH_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/java/KnowledgeBaseArticle_PATCH_ById.java
    :dedent: 1
@@ -249,13 +252,13 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_PATCH_ByI
 
 ### KnowledgeBaseArticle_PUT_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./KnowledgeBaseArticle_PUT_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/curl/KnowledgeBaseArticle_PUT_ById.sh
    :language: bash
@@ -263,13 +266,13 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_PATCH_ByI
 
 ### KnowledgeBaseArticle_PUT_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_PUT_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/java/KnowledgeBaseArticle_PUT_ById.java
    :dedent: 1
@@ -289,7 +292,7 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_PUT_ById
 ./KnowledgeBaseArticle_DELETE_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/curl/KnowledgeBaseArticle_DELETE_ById.sh
    :language: bash
@@ -324,4 +327,4 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_DELETE_By
 | `KnowledgeBaseFolder_PUT_ToSite.[java\|sh]`    | ナレッジベースフォルダをIDで上書きする。     |
 | `KnowledgeBaseFolders_GET_FromSite.[java\|sh]` | サイトからナレッジベースフォルダの一覧を取得する。 |
 
-[APIエクスプローラー](../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`KnowledgeBaseArticle`および`KnowledgeBaseFolder`のすべてのサービスとスキーマが表示され、各サービスを試すためのインターフェースがあります。
+[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`KnowledgeBaseArticle`および`KnowledgeBaseFolder`のすべてのサービスとスキーマが表示され、各サービスを試すためのインターフェースがあります。

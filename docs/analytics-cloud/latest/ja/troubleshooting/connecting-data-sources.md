@@ -1,3 +1,6 @@
+---
+uuid: 83679f16-fcde-44fb-8f26-138e6743f4fe
+---
 # データソースの接続
 
 環境やデータソースが誤って設定されていると、Liferay DXPのデータソースへのアクセスを妨げたり、中断させたりすることがあります。 ここでは、DXPデータソースの問題をトラブルシューティングする方法をご紹介します。
@@ -12,7 +15,7 @@
 * `https://analytics-js-cdn.liferay.com`
 
 ```{note}
-{regionKey} は、ワークスペース設定時の初期選択に基づいています（例：ac-southamericaeast1, ac-europewest2, ac-europewest3, or ac-uswest1)。
+{regionKey} は、ワークスペース設定時の初期選択に基づいていることに注意してください。つまり、ac-southamericaeast1, ac-europewest2, ac-europewest3, または、or ac-uswest1などが考えられます。
 ```
 
 ```{important}
@@ -27,7 +30,7 @@
 
 アナリティクスのイベントは、クライアントのブラウザから直接送信されます。 データがAnalytics Cloudに送信されていることを確認するには、次の手順を実行します。
 
-1. 追跡されているDXPウェブサイトのページをご覧ください。
+1. 追跡されているDXPのWebサイトのページをご覧ください。
 1. ブラウザのインスペクタを開き、［ネットワーク］タブに移動します。
 1. ネットワーク タブを XHR でフィルタリングします。
 1. ページを更新してください。
@@ -35,7 +38,7 @@
 
     ![Analytics Cloudへの接続を検証します。](connecting-data-sources/images/01.png)
 
-    この要求が表示されている場合は、お客様のウェブサイトがアナリティクス データをAnalytics Cloudワークスペースに送信していることを意味します。 リクエストペイロードをチェックして、 `channelId`という変数があることを確認してください。
+    この要求が表示されている場合は、お客様のWebサイトがアナリティクス データをAnalytics Cloudワークスペースに送信していることを意味します。 リクエストペイロードをチェックして、 `channelId`という変数があることを確認してください。
 
 ### 連絡先データ
 
@@ -69,10 +72,10 @@ INFO  [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:164] D
 
 ## サポートされていないバージョン
 
-**エラーメッセージ**： `サポートされていないバージョンです。 この接続方法は、データソースのLiferayバージョンをサポートしていません。 Make sure you are connecting to Liferay 7.0/7.1 instance or try a different method of connection.`
+**エラーメッセージ**： `Unsupported version. This method of connection does not support the data source Liferay version. Make sure you are connecting to Liferay 7.0/7.1 instance or try a different method of connection.`
 
 ```{important}
-Liferay DXP のインストールは、以下のフィックスパックの最小要件を満たしている必要があります。
+Liferay DXPのインストールは、以下のフィックスパックの最小要件を満たしている必要があります。
 
   * 7.4+
   * 7.3 Fix Pack 1
@@ -87,8 +90,8 @@ Liferay DXP のインストールは、以下のフィックスパックの最�
 
 1. [Liferay DXPデータソースの追加](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)の手順に従ってください。
 
-1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [のportal-ext.propertiesファイル](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
+1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
 
 ## ログインしているユーザーが匿名で表示される
 
-[Syncing Contacts](../getting-started/syncing-sites-and-contacts.md#syncing-contacts) の場合、Analytics CloudはLiferay DXP内に存在するユーザーレコードに依存します。 したがって、 [SSO](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/securing-liferay/configuring-sso.html) または [LDAP](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) を使用している場合は、Analytics Cloudと連絡先を同期する前に、すべてのユーザーをLiferay DXPにインポートまたはマップすることを確認してください。
+[Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)の場合、Analytics CloudはLiferay DXP内に存在するユーザーレコードに依存します。 したがって、 [シングルサインオンの設定](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/securing-liferay/configuring-sso.html) または [LDAPディレクトリへの接続](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) を使用している場合は、Analytics Cloudと連絡先を同期する前に、すべてのユーザーをLiferay DXPに必ずインポートまたはマッピングしてください。

@@ -1,3 +1,6 @@
+---
+uuid: aa12ca7c-9806-414a-9e6b-d403131e089c
+---
 # 商品グループについて
 
 商品グループは、ターゲット割引や価格設定に使用できる、静的な商品グループです。 商品グループは、2つのシナリオに最適です。
@@ -12,7 +15,7 @@
 
 ## 商品グループの作成
 
-1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png)を開き、 ［**commerce**］ タブをクリックして ［**価格**］ &rarr; ［**商品グループ**］ へ移動します。
+1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png)を開き、 ［**コマース**］ タブをクリックして ［**価格**］ &rarr; ［**商品グループ**］ へ移動します。
 
 1. **追加**(![Add](../../images/icon-add.png)) をクリックし、商品グループの名前と説明を入力します。
 
@@ -40,15 +43,15 @@
 
 ## 商品グループと割引の関連付け
 
-1. アプリケーションメニュー &rarr; ［**commerce**］ タブから ［**価格**］ &rarr; ［**割引**］ をクリックしてください。
+1. アプリケーションメニュー &rarr; ［**コマース**］ タブから ［**価格**］ &rarr; ［**割引**］ をクリックしてください。
 
 1. **追加**(![Add](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
 
-［**Name**］: ［Example Product Group Discount］
+__［Name］__ : ［Example Product Group Discount］
 
-［**Type**］: ［Percentage］
+__［Type］__ : ［Percentage］
 
-［**Apply To**］: ［Product Groups］
+__［Apply To］__ : ［Product Groups］
 
     ![割引の詳細を入力します。](./introduction-to-product-groups/images/03.png)
 
@@ -74,7 +77,7 @@
 
 価格表と商品グループを関連付けるには、まず価格表を作成し、作成した商品グループを対象とした価格修飾子を作成する必要があります。
 
-1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png), &rarr; ［**commerce**］ タブから ［**価格**］ &rarr; ［**価格表**］ を開いてください。
+1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png), &rarr; ［**コマース**］ タブから ［**価格**］ &rarr; ［**価格表**］ を開いてください。
 
 1. **追加**(![Add](../../images/icon-add.png)) をクリックし、価格表の［name］、［catalog］、［currency］を入力します。
 
@@ -84,11 +87,11 @@
 
 1. ［価格修飾子］セクションの **Add**（![Add](../../images/icon-add.png)）をクリックして、以下の情報を入力してください。
 
-［**Name**］ : ［Wheels Modifier］
+__［Name］__ : ［Wheels Modifier］
 
-［**Target**］ : ［Product Groups］
+__［Target］__ : ［Product Groups］
 
-［**Modifier**］ : パーセント/置換/固定金額
+__［Modifier］__ : パーセント/置換/固定金額
 
     ![価格修飾子を設定します。](./introduction-to-product-groups/images/07.png)
 
@@ -107,7 +110,7 @@
     ```
 
 
-    ![価格修飾子に追加する商品グループを検索します](./introduction-to-product-groups/images/09.png)
+    ![Search for the Product Group to be added to the Price Modifier.](./introduction-to-product-groups/images/09.png)
 
 1. ［商品グループ］セクションで、作成した商品グループを検索します。 入力した内容に基づいて、自動的に結果が入力されます。
 
@@ -117,7 +120,7 @@
 
 ![価格修飾子は、商品グループ内の商品に適用されます。](./introduction-to-product-groups/images/10.png)
 
-割引や価格表が商品グループにリンクされているかどうかを確認するには、 **アプリケーションメニュー** ![Applications Menu](../../images/icon-applications-menu.png)をクリックして、 ［**commerce**］ タブをクリックし、 ［**価格**］ &rarr; ［**商品グループ**］ へ進んでください。 価格表と割引の下に、関連するエンティティが表示されます。
+割引や価格表が商品グループにリンクされているかどうかを確認するには、 **アプリケーションメニュー** ![Applications Menu](../../images/icon-applications-menu.png)をクリックして、 ［**コマース**］ タブをクリックし、 ［**価格**］ &rarr; ［**商品グループ**］ へ進んでください。 価格表と割引の下に、関連するエンティティが表示されます。
 
 ## 追加情報
 

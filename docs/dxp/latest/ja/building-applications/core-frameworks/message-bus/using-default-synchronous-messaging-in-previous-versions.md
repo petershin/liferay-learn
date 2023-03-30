@@ -1,3 +1,6 @@
+---
+uuid: 2227325d-e1f4-40a9-a6e1-0d967469d4f1
+---
 # 旧バージョンのデフォルトの同期メッセージングを使用する
 
 ```{important}
@@ -16,15 +19,22 @@
 
 サンプルプロジェクトでは、デフォルトモードで`SynchronousMessageSender`を使用してメッセージを送信し、応答を待ちます。
 
-```{include} /_snippets/run-liferay-portal.md
+サンプルプロジェクトでは、`SynchronousMessageSender`を使用して、2つのリスナーに直接メッセージを送信します。
+
+新しいLiferay インスタンスを起動し、以下を実行します。
+
+```bash
+docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 ```
 
-その後、以下の手順を実行してください。
+<http://localhost:8080>でLiferayへのサインインします。 メールアドレス **test@liferay.com** とパスワード **test** を使用してください。 プロンプトが表示されたら、パスワードを **learn** に変更します。
 
-1. サンプルをダウンロードし、解凍してください。
+次に、以下の手順に従います。
+
+1. サンプルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/message-bus/liferay-m4q7.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-m4q7.zip -O
     ```
 
     ```bash
@@ -89,8 +99,7 @@
 
 イベントフローは次のとおりです。
 
-1. `m4q7:sendMessage</0Gogoシェルコマンドを呼び出して、メッセージを渡します。
-1. M4Q7BakerOSGiCommands`の`sendMessage(String)`メソッドは、Gogoシェルコマンドでトリガーし、メッセージ内のコマンド引数を`acme/m4q7_able`宛先に送信します。
+1. `m4q7:sendMessage</0Gogoシェルコマンドを呼び出して、メッセージを渡します。`M4Q7BakerOSGiCommands`の`sendMessage(String)`メソッドは、Gogoシェルコマンドでトリガーし、メッセージ内のコマンド引数を`acme/m4q7_able`宛先に送信します。
 1. メッセージバススレッドは、メッセージを`M4Q7CharlieMessageListener`に配信します。
 1. `M4Q7CharlieMessageListener`は、メッセージペイロードをログに記録し、応答メッセージ内の独自のクラス名を元のメッセージの応答先`acme/m4q7_baker`に送信します。
 1. `M4Q7BakerMessageListener`は応答メッセージを受信し、そのペイロードをログに記録します。
@@ -237,9 +246,9 @@
 
 ## 次のステップ
 
-**direct** モードを使用した同期メッセージングを検討したい場合は、 [旧バージョンでダイレクトシンクロナスメッセージを使用する場合](./using-direct-synchronous-messaging-in-previous-versions.md) を参照してください。
+**direct** モードを使用した同期メッセージングを検討したい場合は、 [旧バージョンでのダイレクト同期メッセージングの使用](./using-direct-synchronous-messaging-in-previous-versions.md)を参照してください。
 
-メッセージを送信した直後に処理を続行する場合は、 [非同期メッセージングの使用](./using-asynchronous-messaging.md) を参照してください。
+メッセージを送信した直後に処理を続行する場合は、[非同期メッセージングの使用](./using-asynchronous-messaging.md)を参照してください。
 
 ## 追加情報
 

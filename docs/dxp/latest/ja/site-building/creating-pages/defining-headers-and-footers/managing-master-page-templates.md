@@ -71,7 +71,7 @@
 
 **CSSクライアントエクステンション** [CSS Client Extensions](../../../building-applications/client-extensions/browser-based-client-extensions.md#css-client-extensions) を追加して、マスターページテンプレートを使用するコンテンツページの CSS スタイルを上書きします。
 
-**JavaScriptコードとJavaScriptクライアントエクステンションです。** **Advanced** タブでは、ページの下部で実行される JavaScript コードを追加することができます。 [JavaScript Client Extentions](../../../building-applications/client-extensions/browser-based-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページにアクセスした際に、JavaScriptを実行させることができます。
+**JavaScriptコードとJavaScriptクライアントエクステンションです。****Advanced** タブでは、ページの下部で実行される JavaScript コードを追加することができます。 [JavaScript Client Extentions](../../../building-applications/client-extensions/browser-based-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページにアクセスした際に、JavaScriptを実行させることができます。
 
 ```{note}
 テーマは、マスターページテンプレートを介してコンテンツページに適用されます。 マスターページテンプレートをコンテンツページに適用すると、コンテンツページのルック＆フィールはマスターページテンプレートで定義されます。

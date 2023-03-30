@@ -67,7 +67,7 @@ Liferay DXP 7.4, 7.3 Fix Pack 1, 7.2 Fix Pack 11 から、ウィジェットペ�
 このプロセスを理解すると、効率が向上し、シームレスな公開エクスペリエンスを実現するための事前の計画に役立ちます。 詳細は、[公開プロセスを理解する](./staging/understanding-the-publishing-process.md)を参照してください。
 
 ```{important}
-ステージングでは、 [Commerce アプリケーション](https://learn.liferay.com/commerce/latest/ja/index.html) および [カスタムオブジェクト](../../building-applications/objects.md) をサポートしません。 発行処理中、Commerceのエンティティおよびオブジェクトはステージングされません。 
+ステージングでは、 [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) および [カスタムオブジェクト](../../building-applications/objects.md) をサポートしません。 発行処理中、Commerceのエンティティおよびオブジェクトはステージングされません。 
 ```
 
 ```{raw} html

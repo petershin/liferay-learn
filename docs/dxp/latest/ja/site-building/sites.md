@@ -67,4 +67,4 @@ sites/default-site-applications.md
 
 ## commerceでサイトを利用する
 
-Liferay Sites は [チャンネル](https://learn.liferay.com/commerce/latest/ja/store-management/channels.html) と共に使用され、e-commerceストアを作成します。 各チャンネルのサイトタイプ（B2B、B2C、B2Xなど）は、サイトがアカウントとどのように連携するかを決定します。 詳しくは、 [commerceサイトの種類](https://learn.liferay.com/commerce/latest/ja/starting-a-store/sites-and-site-types.html) をご覧ください。
+Liferay Sites は [チャンネル](https://learn.liferay.com/commerce/latest/ja/store-management/channels.html) と共に使用され、e-commerceストアを作成します。 各チャンネルのサイトタイプ（B2B、B2C、B2Xなど）は、サイトがアカウントとどのように連携するかを決定します。 詳しくは、 [サイトとサイトのタイプ](https://learn.liferay.com/commerce/latest/ja/starting-a-store/sites-and-site-types.html) をご覧ください。

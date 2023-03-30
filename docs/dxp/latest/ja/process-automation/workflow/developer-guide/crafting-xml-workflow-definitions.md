@@ -1,12 +1,15 @@
+---
+uuid: cf8367f8-a297-4fe1-be3c-9ea3437f06f5
+---
 # XMLワークフロー定義の作成
 
 Liferay DXPのすべてのワークフロー定義は、XML形式で記述されています。 独自のワークフロー定義を作成するためには、実際の承認プロセスを反映した定義が必要です。
 
 ```{tip}
-DXPを使用しているサブスクライバーは、[グラフィカルデザイナー](../user-guide/workflow-designer/workflow-designer-overview.md)を使用してワークフローを作成できます。 すでにXMLでワークフローを作成している場合は、それをアップロードしてGUIで続行できます。 
+DXPを利用する加入者は、[グラフィカルデザイナー](../designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md)  を使用してワークフローを作成することができます。 すでにXMLでワークフローを作成している場合は、それをアップロードしてGUIで続行できます。 
 ```
 
-1. グローバルメニュー（![Global Menu](../../../images/icon-applications-menu.png)）を開きます。 ［ワークフロー］で、 ［**プロセスビルダー**］ を選択します。
+1. ［グローバルメニュー］（![Global Menu](../../../images/icon-applications-menu.png)）を開きます。 ［ワークフロー］で、 ［**プロセスビルダー**］ を選択します。
 
 1. 新しいワークフロー定義を追加するには、 ![add](../../../images/icon-add.png) アイコンをクリックします。
 
@@ -21,7 +24,7 @@ DXPを使用しているサブスクライバーは、[グラフィカルデザ�
 * [カテゴリー別](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml)
 * [リーガルマーケティング](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/legal-marketing-workflow-definition.xml)
 * [唯一の承認者](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml)
-* [唯一の承認者スクリプトでの割り当て](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml)　以下では最もシンプルなワークフローである油井胃兪の承認者を使って、基本を学習します。 唯一の承認者のワークフローには、［開始］と［終了］の2つの必須ステータスが含まれており、それぞれ ［**作成済み**］ と ［**承認済み**］ という名前が付けられています。 また、 ［**レビュー**］ と ［**アップデート**］ という2つのタスクも含まれています。 これらのタスクは、 **承認** 、 **拒否** 、 **再送信** などの **アクション** を定義します。
+* [Single Approver Scripted Assignment](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml) 以下では、最もシンプルなワークフローである Single Approver を使って、基本を学びます。 唯一の承認者のワークフローには、［開始］と［終了］の2つの必須ステータスが含まれており、それぞれ ［**作成済み**］ と ［**承認済み**］ という名前が付けられています。 また、 ［**レビュー**］ と ［**アップデート**］ という2つのタスクも含まれています。 これらのタスクは、 **承認** 、 **拒否** 、 **再送信** などの **アクション** を定義します。
 
 ワークフローを構成しているコンポーネントに分解するときは、［ステータス］、［タスク］、［アクション］について考えます。 それらを定義したら、作業を開始する準備が整います。 これで、唯一の承認者のワークフローがどのように機能するかを確認して、すべてをまとめる準備が整いました。
 
@@ -70,7 +73,7 @@ DXPを使用しているサブスクライバーは、[グラフィカルデザ�
 この例では、 **開始** ノードに以下のようなプロパティが設定されています。
 
 * それが初期状態です。
-* ノードは、 **レビュー** と呼ばれる[**タスク** ノード](./workflow-task-node-reference.md) に移行します。
+* ノードは、 **レビュー** と呼ばれる[**タスク** ノード](./workflow-task-node-reference.md)に移行します。
 
 **終了** ノードは次のようになります。
 
@@ -81,12 +84,12 @@ DXPを使用しているサブスクライバーは、[グラフィカルデザ�
             <action>
                 <name>approve</name>
                 <script>
-                    <!［CDATA［
+                    <![CDATA[
                         import com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil;
                         import com.liferay.portal.kernel.workflow.WorkflowConstants;
 
                         WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("approved"), workflowContext);
-                    ］］>
+                    ]]>
                 </script>
                 <script-language>groovy</script-language>
                 <execution-type>onEntry</execution-type>

@@ -1,3 +1,6 @@
+---
+uuid: 53090036-2e9b-4bae-b15e-81f05d63c611
+---
 # Liferay Commerce Tomcatバンドルの使用
 
 Liferay Commerceバンドルは、 [Liferay Commerceのコミュニティダウンロード](https://commerce.liferay.dev/download) ページからダウンロードできます。 バンドルには、Apache Tomcatに事前デプロイされたLiferay CommerceおよびLiferay Portalの最新バージョンが含まれています。
@@ -8,7 +11,7 @@ Liferay Commerceバンドルを使用するには、次の手順を実行しま�
 
 1. Liferay Commerce Tomcatバンドルを入手します。
 
-    * （サブスクライバー） [エンタープライズダウンロード](https://customer.liferay.com/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118190997& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)
+    * （サブスクライバー） [エンタープライズダウンロード](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001)
     * [コミュニティダウンロードページ](https://www.liferay.com/downloads-community)
 
 1. バンドルをターゲットの場所に解凍します。
@@ -28,5 +31,5 @@ Liferay Commerceバンドルを使用するには、次の手順を実行しま�
 ## 追加情報
 
 * [インストールの概要](../installation-overview.md)
-* [LiferayDXPのインストール](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html)
+* [Liferay-Tomcatバンドルのインストール](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html)
 * [Liferay Commerce3.0互換性マトリクス](https://help.liferay.com/hc/ja/articles/360049238151)

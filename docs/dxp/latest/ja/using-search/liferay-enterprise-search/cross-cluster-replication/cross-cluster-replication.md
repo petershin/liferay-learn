@@ -1,3 +1,6 @@
+---
+uuid: 24d79833-a3e6-4af6-a1d1-4c60370878b7
+---
 # クラスター横断レプリケーション
 
 > **Liferay Enterprise Search（LES）サブスクライバー**
@@ -16,8 +19,8 @@ Liferay DXPは、ワイドエリアネットワーク（WAN）プロトコルを
 
 クラスター横断レプリケーションを設定するには、次のことを行う必要があります
 
-- [LESの活性化](../activating-liferay-enterprise-search.md)
-- Liferay 7.2 と 7.3 では、フォロワーの Elasticsearch インデックスから読み込む Liferay DXP ノードに CCR モジュールをインストールします。
+- [LESを活性化する](../activating-liferay-enterprise-search.md)
+- Liferay 7.2および7.3では、フォロワーのElasticsearchインデックスから読み取るLiferay DXPノードにCCRモジュールをインストールします。
 - リーダークラスターからレプリケートするインデックスを選択する
 - Elasticsearchクラスターを構成する
 - Liferay DXPクラスターのElasticsearch接続を設定する
@@ -26,7 +29,7 @@ Liferay DXPは、ワイドエリアネットワーク（WAN）プロトコルを
 ## Liferay DXP：LESクラスター横断レプリケーションモジュールのインストール
 
 ```{note}
-Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーションは、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 そのため、Liferay DXP 7.4+ではモジュールのインストールは不要です。 詳しくは、[LESの有効化](./activating-liferay-enterprise-search.md)を参照してください。
+Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーションは、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 そのため、Liferay DXP 7.4+では、モジュールのインストールは不要です。 詳しくは[LESの起動](../activating-liferay-enterprise-search.md)を参照してください。
 ```
 
 ローカルクラスターのフォロワーインデックスから読み取りを行い、リモートクラスターのリーダーインデックスへの個別の接続を介して書き込みを行うLiferay DXPノードには、CCRモジュールがインストールされている必要があります。 一貫性と適応性のために、クラスター内のすべてのノードにインストールするのが最善です。 このモジュールは、LESサブスクリプションとともに（LPKGファイルとして）ダウンロードできます。
@@ -35,27 +38,27 @@ Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーション�
 
 インストールされているデフォルトのLiferay DXP 7.3インデックスは、以下のリストに近似しています（変更される可能性があります）。 デフォルトのグローバル **インデックス名接頭辞** は`liferay-`です。これはElasticsearch 7コネクタ設定で変更できます。 `20101`は、データベース内の特定の会社の生成された`companyId`です。  UIにインスタンスIDとして表示され、[仮想インスタンス](../../../system-administration/configuring-liferay/virtual-instances.md)を表します。
 
-| インデックスID                                            | インデックスタイプ  | インデックスの目的                                     |
-|:--------------------------------------------------- |:---------- |:--------------------------------------------- |
-| liferay-0                                           | システムインデックス | システム設定アプリケーションでの検索                            |
-| liferay-20101                                       | 会社インデックス   | Liferay DXP仮想インスタンスのインデックス付きアセットの検索           |
-| liferay-20101-search-tuning-rankings                | アプリインデックス  | リザルトランキングアプリケーション用ストレージ                       |
-| liferay-20101-search-tuning-synonyms                | アプリインデックス  | 指定された仮想インスタンスの Synonym Sets アプリケーションのためのストレージ |
-| liferay-20101-workflow-metrics-instances            | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフローインスタンスに関するデータを保存する   |
-| liferay-20101-workflow-metrics-nodes                | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフローノードに関するデータを保存する      |
-| liferay-20101-workflow-metrics-processes            | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロープロセスに関するデータを保存する     |
-| liferay-20101-workflow-metrics-sla-instance-results | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフローインスタンスごとのSLA結果のストレージ |
-| liferay-20101-workflow-metrics-sla-task-results     | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロー タスクごとのSLA結果のストレージ   |
-| liferay-20101-workflow-metrics-tokens               | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロートークンに関するデータを保存する     |
-| liferay-20101-workflow-metrics-transitions          | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロートランジションに関するデータを保存する  |
+| インデックスID                                            | インデックスタイプ  | インデックスの目的                                      |
+|:--------------------------------------------------- |:---------- |:---------------------------------------------- |
+| liferay-0                                           | システムインデックス | システム設定アプリケーションでの検索                             |
+| liferay-20101                                       | 会社インデックス   | Liferay DXP仮想インスタンスのインデックス付きアセットの検索            |
+| liferay-20101-search-tuning-rankings                | アプリインデックス  | リザルトランキングアプリケーション用ストレージ                        |
+| liferay-20101-search-tuning-synonyms                | アプリインデックス  | 指定された仮想インスタンスの Synonym Sets アプリケーション用のストレージです。 |
+| liferay-20101-workflow-metrics-instances            | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフローインスタンスに関するデータを保存する    |
+| liferay-20101-workflow-metrics-nodes                | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフローノードに関するデータを保存する       |
+| liferay-20101-workflow-metrics-processes            | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロープロセスに関するデータを保存する      |
+| liferay-20101-workflow-metrics-sla-instance-results | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフローインスタンスごとのSLA結果のストレージ  |
+| liferay-20101-workflow-metrics-sla-task-results     | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロー タスクごとのSLA結果のストレージ    |
+| liferay-20101-workflow-metrics-tokens               | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロートークンに関するデータを保存する      |
+| liferay-20101-workflow-metrics-transitions          | アプリインデックス  | ワークフロー統計情報アプリケーションのワークフロートランジションに関するデータを保存する   |
 
 ```{important}
-Liferay 7.2のインデックス名は、パッチによってインデックスの命名パターンに変更が加えられたため、より複雑になっています。 詳しくは、 [マルチテナント・インデックス名](../../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names) をご覧ください。
+Liferay 7.2のインデックス名は、パッチによってインデックスの命名パターンに変更が加えられたため、より複雑になっています。 詳しくは、 [マルチテナントインデックス名](../../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names) をご参照ください。
 Liferay 7.1のインストールには、会社とシステムのインデックスだけが含まれています。
 ```
 
 ```{note}
-Liferay DXPは、カスタムElasticsearchインデックスを作成、使用（書き込み、読み込み）するためのAPIを提供します。 これらのAPIの使用方法については、 [デベロッパーガイド](../../developer-guide.html) を参照してください。
+Liferay DXPは、カスタムElasticsearchインデックスを作成、使用（書き込み、読み込み）するためのAPIを提供します。 これらのAPIの使用方法については、 [デベロッパーガイド](../../developer-guide.html) をご覧ください。
 ```
 
 [Liferay Commerce](https://www.liferay.com/products/commerce) サブスクリプションがあり、インストールでアクティブ化されている場合は、次のようなインデックスもあります。
@@ -79,7 +82,7 @@ CCRにはElasticsearchプラチナレベルのライセンスが必要ですが�
 ## Liferay DXPをElasticsearchに接続する
 
 ```{important}
-最初にLiferay Clusteringの動作を設定します。 チュートリアルの例では、テスト用にいくつかの設定を行っています。 クラスタリングのドキュメント](../../.../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md) には、本番用クラスタのセットアップについての詳細が記載されています。
+最初にLiferay Clusteringの動作を設定します。 チュートリアルの例では、テスト用にいくつかの設定を行っています。 本番用クラスタの設定については、[クラスタリングドキュメント](../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md)を参照してください。
 ```
 
 すべてのLiferay DXPノードには、2つのElasticsearch構成が必要です。本番モードを有効にし、リモートElasticsearch接続を宣言します。 これに対応するために、リモートElasticsearch接続をElasticsearch接続で設定する必要があります。 フォロワーのElasticsearchクラスターから読み取りを行うノードにも、追加の接続を定義する必要があります。 （`.config`ファイルまたはシステム設定で）適切な構成値を指定してから、DXPノードを起動（または再起動）します。 リーダーインデックスの読み取りと書き込みを行うノードが正しく機能していることを確認します。

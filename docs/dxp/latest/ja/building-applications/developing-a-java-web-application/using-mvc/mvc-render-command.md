@@ -1,3 +1,6 @@
+---
+uuid: db948885-2616-4756-8f8a-bdb6c4982f95
+---
 # MVCレンダーコマンド
 
 MVCレンダーコマンドは、レンダリングするページを処理するクラスです。 これらは、`MVCPortlet`レンダーURLとリクエストによって呼び出されます。 レンダーロジックが単純な場合は、[すべてをポートレットクラスに実装](./rendering-views-with-mvc-portlet.md)できます。 レンダーロジックが複雑な場合、またはレンダーパスを明確に分離したい場合は、MVCレンダーコマンドを使用してください。
@@ -9,12 +12,12 @@ MVCレンダーコマンドは、レンダリングするページを処理す�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順に従います:
 
-1. サンプルをダウンロードして解凍します。
+1. 例題をダウンロードし、解凍する。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-a4p1.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-a4p1.zip -O
    ```
 
    ```bash

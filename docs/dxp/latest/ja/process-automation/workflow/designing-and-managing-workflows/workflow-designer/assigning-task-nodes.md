@@ -1,3 +1,6 @@
+---
+uuid: a9354b98-4d80-476d-ba76-92d35155654b
+---
 # タスクノードの割り当て
 
 {bdg-primary}`サブスクリプション`
@@ -16,7 +19,11 @@
 
 ## リソースアクションの割り当て
 
-ワークフロータスクを **リソースアクション** に割り当てることができます。 リソースアクションは、ユーザーがアプリケーションやエンティティに対して行う操作です。 例えば、ユーザーが掲示板のメッセージを更新する権限を持っているとします。 これは、ユーザーがリソースを更新できることから、UPDATEリソースアクションと呼ばれます。 ワークフロー定義で割り当てにUPDATEアクションが指定されている場合、ワークフローで処理されているアセットタイプを更新する権限を持つユーザーがタスクに割り当てられます。  1つのタスクに複数の割り当てを設定することができます。 <!--To learn more about Resource Actions, refer to the developer tutorial on the \[permission system\](../../../../building-applications/permissions.md) for a more detailed explanation.--> ［ソース（ワークフローXML）］ビューでの割り当ては次のように表示されます。
+ワークフロータスクを **リソースアクション** に割り当てることができます。 リソースアクションは、ユーザーがアプリケーションやエンティティに対して行う操作です。 例えば、ユーザーが掲示板のメッセージを更新する権限を持っているとします。 これは、ユーザーがリソースを更新できることから、UPDATEリソースアクションと呼ばれます。 ワークフロー定義で割り当てにUPDATEアクションが指定されている場合、ワークフローで処理されているアセットタイプを更新する権限を持つユーザーがタスクに割り当てられます。  1つのタスクに複数の割り当てを設定することができます。 
+
+<!--To learn more about Resource Actions, refer to the developer tutorial on the \[permission system\](../../../../building-applications/permissions.md) for a more detailed explanation.--> 
+
+［ソース（ワークフローXML）］ビューでの割り当ては次のように表示されます。
 
 ```xml
 <assignments>

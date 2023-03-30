@@ -1,6 +1,9 @@
+---
+uuid: 2c1c1fa2-205d-4867-a52e-23177c13da25
+---
 # ストア設定の概要
 
-## 紹介
+## はじめに
 
 この記事は、Liferay Commerceでストアを構築するのが初めてのユーザー向けにサンプルを提供することを目的としています。 Liferay Commerce（およびLiferay DXP）が適切にインストールされ、設定されていることを前提としています。 インストールの詳細は、[インストールの概要](../installation-and-upgrades/installation-overview.md)を参照してください。
 
@@ -24,7 +27,7 @@
 Liferay Commerceのグローバル設定には、ストアのタイムゾーンと使用可能な言語の設定、地域や地域固有の計量単位の追加などがあります。 詳細は、次の記事をご覧ください。
 
 * [ロケールオプションの設定](../store-management/locale-options.md)
-* [リージョンの追加](../store-management/adding-regions.md)
+* [リージョンの追加](../store-management/configuring-countries-and-regions.md#adding-regions)
 * [倉庫の設定](../inventory-management/warehouse-reference-guide.md)
 * [チャネルの作成](../store-management/channels/introduction-to-channels.md)
 
@@ -78,7 +81,7 @@ Liferay Commerceには、送料を計算するためのいくつかのオプシ�
 
 Liferay Commerceカタログは、さまざまな商品情報の保存と管理をサポートしています。 次の記事では、利用可能なオプションの一部を説明しています。
 
-* [製品オプション](../product-management/creating-and-managing-products/products/using-product-options.md)
+* [商品オプション](../product-management/creating-and-managing-products/products/using-product-options.md)
 * [商品仕様](../product-management/creating-and-managing-products/products/specifications.md)
 * [商品画像](../product-management/creating-and-managing-products/products/product-images.md)
 * [商品関連](../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)

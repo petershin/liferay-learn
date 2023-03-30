@@ -1,22 +1,25 @@
+---
+uuid: 6abef168-1381-46ae-b190-a9ff7c096d2d
+---
 # Amazon Simple Storage Service
 
-Amazon Simple Storage Service は、DXPのS3ストアがファイルをクラウドにシームレスに保存するために使用するクラウドベースのストレージソリューションです。 AWSアカウントを取得し、S3 **バケット** を作成したら、S3ストアを設定できます。
+AmazonのS3（simple storage service）は、DXPのS3ストアが利用しているクラウドベースのストレージソリューションで、ファイルをシームレスにクラウドに保存できます。 AWSアカウントを取得し、S3 **バケット** を作成したら、S3ストアを設定できます。
 
-[AWSアカウント](https://aws.amazon.com/s3/) を作成すると、Amazonから自分のアカウントにリンクする [一意のキー](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/) が割り当てられます。 これらのキーを使用して、次のセクションでS3ストアを設定します。
+S3は、ファイルの保存にバケットという概念を用いています。 AmazonのUIで、DXPファイルの [バケット](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) を作成します。 DXPサーバーのホストにできるだけ近い [地理的な地域](https://docs.aws.amazon.com/general/latest/gr/s3.html) にバケットを構成します。
 
-S3はファイルストレージに **バケット** の概念を使用しています。 AmazonのUIで、DXPファイルの [バケット](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) を作成します。 バケットは、DXPサーバーホストにできるだけ近い [地理的地域](https://docs.aws.amazon.com/general/latest/gr/s3.html) に設定してください。
+[AWSアカウント](https://aws.amazon.com/s3/) を作成すると、Amazonから自分のアカウントにリンクする [一意のキー](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html/) が割り当てられます。 これらのキーは、S3ストアの設定に使用されます。
 
 ```{note}
 AWS署名バージョン4リクエストの承認をサポートするためのアクションは必要ありません。
 ```
 
-## ストアの設定
+## SAXParserのセットアップ
 
-次の手順に従ってストアを設定します。
+Amazon S3にはSAXParserが必要です。 お使いの環境でSAXParserが利用できない場合。
 
-1. Amazon S3にはSAXParserが必要です。 アプリケーションサーバーにSAXParserがまだない場合は、 [Xerces SAXParser](https://xerces.apache.org/mirrors.cgi) をアプリケーションサーバーのグローバルライブラリフォルダ（Tomcatの場合は`/lib/ext`、JBoss EAPやWildFlyの場合は`/module`など）にダウンロードできます。
+1. [Xerces SAXParser](https://xerces.apache.org/mirrors.cgi) をアプリケーションサーバーのグローバルライブラリフォルダにダウンロードします。 `Tomcat では /lib/ext` 、JBoss EAP および WildFly では `/module` です。
 
-1. 次のプロパティを使用して、[`system-ext.properties`](../../../installation-and-upgrades/reference/system-properties.md)ファイルでSAXParserを指定します。
+1. [`system-ext.properties`](../../../installation-and-upgrades/reference/system-properties.md) ファイルで SAXParser を指定する。
 
     ```properties
     org.xml.sax.driver=com.sun.org.apache.xerces.internal.parsers.SAXParser
@@ -24,14 +27,18 @@ AWS署名バージョン4リクエストの承認をサポートするための�
 
 1. `system-ext.properties`ファイルを、DXPアプリケーションのクラスパス（例：`/WEB-INF/classes/`）にあるフォルダにコピーします。
 
-1. 次のプロパティを使用して[`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md)を設定します。
+## ストアの設定
+
+1. 設定 [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md):
 
     ```properties
     dl.store.impl=com.liferay.portal.store.s3.S3Store
     ```
 
 1. DXPを再起動します。
+
 1. ［コントロールパネル］から、 ［**設定**］ &rarr; ［**System Settings**］ &rarr; ［**File Storage**］ へ行きます。
+
 1. [**S3 Store**] 画面で、ストアを設定します。
 
     * **［Bucket Name**］ ：バケットの名前。
@@ -42,7 +49,8 @@ AWS署名バージョン4リクエストの承認をサポートするための�
     ![Amazon S3ストアの設定](./amazon-s3-store/images/01.png)
 
 1. 他のフィールドはデフォルト設定のままにします。
-1. ［**保存**］ をクリックします。
+
+1. ［**Save**］ をクリックします。
 
 DXPインスタンスがAmazon S3ストアを使用するようになりました。
 

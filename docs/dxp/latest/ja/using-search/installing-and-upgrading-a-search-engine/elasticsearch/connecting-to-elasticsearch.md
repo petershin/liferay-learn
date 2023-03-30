@@ -59,7 +59,7 @@ Liferay 7.3+コネクタのシンプル設定では、本番環境モード（`p
 1. `.config`ファイルを`[Liferay Home]/osgi/configs`フォルダに配置します。
 
 ```{tip}
-コネクタには多くの設定項目があります。 それぞれの定義については、[Elasticsearchコネクターの設定](./elasticsearch-connector-configuration-reference.md) を参照してください。 ほとんどの設定は、[Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index.html) で利用可能な設定に対応しています。
+コネクタには多くの設定項目があります。 それぞれの定義については、[Elasticsearchコネクターの設定](./elasticsearch-connector-configuration-reference.md) を参照してください。 ほとんどの設定は、 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index.html) で利用可能な設定に対応しています。
 ```
 
 Elasticsearchサーバーを名前で参照するには、各Elasticsearchサーバー名をDNSまたはLiferayサーバーの`/etc/hosts` ファイル内のIPアドレスにマップします。
@@ -190,7 +190,7 @@ Liferay 7.4 U45+/GA45+ と Liferay DXP 7.3 U14+ では、拡張ログが有効�
 | CE 7.2、DXP 7.2           | Liferay Connector (CE) to Elasticsearch 6        | バンドル                                                                                                                                                  | [トランスポート](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html) | &#10004;\ **\**(requires [LES](https://www.liferay.com/products/dxp/enterprise-search) ) | エンベデッド/リモート                       |
 | CE 7.2、DXP 7.2           | Liferay Connector (CE) to Elasticsearch 7 (v3.x) | マーケットプレイス [CE](https://web.liferay.com/marketplace/-/mp/application/170642090) , [DXP](https://web.liferay.com/marketplace/-/mp/application/170390307) | [トランスポート](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html) | &#10004;                                                                                  | エンベデッド/リモート                       |
 
-\ **コネクタ設定の***動作モード***( `operationMode`) 設定は非推奨になり、 ***本番モードが有効**(`productionModeEnabled`)に置き換えられました。
+\ **コネクタ設定の** **動作モード**( `operationMode`) 設定は非推奨になり、 **本番モードが有効**(`productionModeEnabled`)に置き換えられました。
 
 \ **\** [Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963) アプリケーションを通して。
 

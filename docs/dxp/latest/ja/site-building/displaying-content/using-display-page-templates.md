@@ -5,62 +5,62 @@ toc:
 - ./using-display-page-templates/publishing-content-with-display-pages.md
 - ./using-display-page-templates/displaying-categories-using-display-pages.md
 - ./using-display-page-templates/configuring-seo-and-open-graph.md
+uuid: 978aa7cb-c3e3-4895-91bd-ff8a779cc230
 ---
 # 表示ページテンプレートの使用
 
 ```{toctree}
 :maxdepth: 3
 
-using-display-page-templates/creating-and-managing-display-page-templates.md
+using-display-page-templates/creating and-managing-display-page-templates.md
 using-display-page-templates/publishing-content-with-display-pages.md
 using-display-page-templates/displaying-categories-using-display-pages.md
 using-display-page-templates/configuring-seo-and-open-graph.md
 ```
 
-{bdg-secondary}`Liferay DXP/Portal 7.3以降で利用可能`
+{bdg-secondary}Liferay DXP/Portal 7.3+を使用することができます。
 
-表示ページテンプレートは、専用のURLでコンテンツを表示するための構造を定義します。 コンテンツアイテムを作成またはアップロードすると、LiferayはそれにアクセスするためのユニークなフレンドリーURLを自動的に生成します。 ただし、このURLを使ってコンテンツを表示できるのは、最初にコンテンツを表示するためのテンプレートを定義した場合のみです。
+表示ページテンプレートは、専用のURLにコンテンツを表示するための構造を定義します。 コンテンツアイテムを作成またはアップロードすると、LiferayはそれにアクセスするためのユニークなフレンドリーURLを自動的に生成します。 ただし、このURLを使ってコンテンツを表示できるのは、コンテンツを表示するためのテンプレートを最初に定義した場合のみです。
 
-![専用URLでコンテンツを表示するための表示ページテンプレートを作成します。](./using-display-page-templates/images/01.png)
+![専用URLにコンテンツを表示するための表示ページテンプレートの作成](./using-display-page-templates/images/01.png)
 
-表示ページのテンプレートを作成する場合、まずコンテンツの種類（Webコンテンツの記事、文書、ブログのエントリなど）を選択します。 これは、どのコンテンツが表示ページのレンダリングにテンプレートを使用できるかを決定するものです。 そして、コンテンツページと同じUIやデザイン要素を用いて、テンプレートをデザインすることができます。 つまり、ページ [フラグメント](../creating-pages/page-fragments-and-widgets/using-fragments.md) と [ウィジェット](../creating-pages/using-content-pages/using-widgets-on-a-content-page.md) を使って、コンテンツフィールドにマッピングする動的な表示を構築し、追加機能を統合することができるのです。 さらに、 [SEO設定](./using-display-page-templates/configuring-seo-and-open-graph.md) を定義することで、ページの検索順位を向上させることも可能です。
+表示ページのテンプレートを作成する場合、まずコンテンツタイプ（Webコンテンツの記事、文書、ブログエントリーなど）を選択します。 これは、どのコンテンツアイテムが、その表示ページのレンダリングにテンプレートを使用できるかを決定します。 そして、コンテンツページと同じUIやデザイン要素を用いて、テンプレートをデザインすることができます。 つまり、 [fragments](.../creating-pages/page-fragments-and-widgets/using-fragments.md) と [widgets](.../creating-pages/using-content-pages/using-widgets-on-a-content-page.md) を使ってコンテンツフィールドにマッピングする動的表示を行い、追加の機能を統合できるのです。 また、ページの検索順位を上げるための[SEO設定](./using-display-page-templates/configuring-seo-and-open-graph.md) を定義することができます。
 
-テンプレートを設計した後、そのコンテンツタイプを表示するためのデフォルトテンプレートとしたり、一部のコンテンツアイテムのみ使用するよう手動で設定することができます。 設定すると、ユーザーはそのコンテンツアイテムのフレンドリーURLにアクセスすることで、その表示ページを見ることができます。 コンテンツは、テンプレートのデザインに応じて動的にレンダリングされます。
+テンプレートを設計した後、そのコンテンツタイプを表示するためのデフォルトのテンプレートにしたり、一部のコンテンツアイテムだけがこのテンプレートを使用するように手動で設定することができます。 一度設定すると、ユーザーはそのコンテンツアイテムのフレンドリーURLにアクセスすることで、その表示ページを見ることができます。 コンテンツは、テンプレートのデザインに応じて動的にレンダリングされます。
 
-表示ページテンプレートは、現在以下のコンテンツタイプに対応しています。
+表示ページテンプレートは、現在、以下のコンテンツタイプに対応しています。
 
-* [ブログエントリー](../../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
-* [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`Available 7.4+`
-* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`Available 7.4+`
-* [ドキュメントとメディア](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
-* [Webコンテンツの記事](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+* [Blog Entries](../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
+* [Categories](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`Available 7.4+`
+* [Custom Objects](../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`Available 7.4+`
+* [Documents](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
+* [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
 
 ```{tip}
-複数のコンテンツで再利用したいレイアウトを設計する場合は、表示ページテンプレートを使用します。
+ディスプレイページテンプレートは、複数のコンテンツで再利用したいレイアウトをデザインするときに使用します。
 ```
 
-これらのテンプレートは、ビジネスケーススタディ、製品やサービスのオプション、求人情報、Web記事など、要素のリストを一貫した方法で表示するのに適しています。 例えば、保険事業のWebサイトでは、利用可能なオプションを一覧表示することができます。 各オプションについては、個別のウェブコンテンツ記事で説明しています。 サイト訪問者が選択肢を確認し、好きなものをクリックして、記事から対応する保険の詳細を確認できるようなランディングページが必要です。
+ビジネスケーススタディ、製品やサービスのオプション、求人情報、ウェブ記事など、一貫した方法で要素のリストを表示するのに最適なテンプレートです。 例えば、保険ビジネスのウェブサイトでは、利用可能なオプションをリストアップすることができます。 各オプションについては、個別のウェブコンテンツで説明しています。 サイト訪問者が選択肢を確認し、好きなものをクリックして、記事から対応する保険の詳細を確認できるようなランディングページを作りたい。
 
-![単一の表示ページテンプレートを使用して、同じタイプの異なるコンテンツに同じレイアウトを適用できます。](./using-display-page-templates/images/02.png)
+![1つの表示ページテンプレートで、同じ種類の異なるコンテンツに同じレイアウトを適用することができます](./using-display-page-templates/images/02.png)
 
-この目標を達成するために、ウェブコンテンツの記事フィールドをテンプレート内のフラグメントにマッピングする、単一の表示ページテンプレートを作成することができます。 各記事は同じテンプレートを使用することができます。 そして、ランディングページの各保険の選択肢を、対応する記事のフレンドリーURLにリンクさせます。 サイト訪問者がオプションをクリックすると、表示ページにWebコンテンツの記事から情報が動的に入力され、テンプレートのデザインに従ってレンダリングされます。
+この目標を達成するために、単一の表示ページテンプレートを作成し、ウェブコンテンツの記事フィールドをテンプレート内のフラグメントにマッピングすることができます。 各記事は同じテンプレートを使用することができます。 そして、ランディングページの各保険オプションを、対応する記事のフレンドリーURLにリンクさせます。 サイト訪問者がオプションをクリックすると、表示ページにWebコンテンツ記事の情報が動的に入力され、テンプレート設計に従ってレンダリングされます。
 
 ::::{grid} 2
-:gutter: 3 3 3 3
 
 :::{grid-item-card} 表示ページテンプレートの作成と管理
-:link: ./using-display-page-templates/creating and-managing-display-page-templates.md
+:link: ./using-display-page-templates/creating-and-managing-display-page-templates.md
 :::
 
-:::{grid-item-card} 表示ページでコンテンツを公開する
+:::{grid-item-card} 表示ページによるコンテンツの公開
 :link: ./using-display-page-templates/publishing-content-with-display-pages.md
 :::
 
-:::{grid-item-card} 表示ページを使ってカテゴリを表示する
+:::{grid-item-card} 表示ページを使用したカテゴリー表示
 :link: ./using-display-page-templates/displaying-categories-using-display-pages.md
 :::
 
-:::{grid-item-card} SEOとオープングラフの設定
+:::{grid-item-card} SEOとOpen Graphの設定
 :link: ./using-display-page-templates/configuring-seo-and-open-graph.md
 :::
 ::::

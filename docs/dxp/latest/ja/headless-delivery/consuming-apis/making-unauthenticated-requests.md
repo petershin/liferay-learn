@@ -1,3 +1,6 @@
+---
+uuid: 8f6bab5b-dfbf-4f29-a9a8-4e03f0873ecf
+---
 # 認証されていないリクエストを行う
 
 デフォルトでは、Liferay DXPはセキュリティのためにAPIアクセスを制限し、有効な応答を取得するために認証を必要とします。 ただし、場合によっては、ゲストアクセス用のAPIを開くことがよい場合があります。
@@ -20,7 +23,7 @@ curl localhost:8080/o/headless-admin-user/v1.0/sites/20122
 
 [サービス・アクセス・ポリシー](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md)を使用して、APIアクセスを詳細レベルで定義できます。
 
-1. ブラウザで `http://localhost:8080`アクセスします。
+1. ブラウザで `http://localhost:8080`にアクセスします。
 
 1. デフォルトの認証情報を使用してサインインします。
 
@@ -43,7 +46,7 @@ curl localhost:8080/o/headless-admin-user/v1.0/sites/20122
 
 1. 上のエラーメッセージからメソッドシグネチャをコピー＆ペーストします：`com.liferay.headless.admin.user.internal.resource.v1_0.SiteResourceImpl#getSite`
 
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
 ![サービス・アクセス・ポリシーは、APIへのアクセスのルールを定義します。](./making-unauthenticated-requests/images/01.png)
 

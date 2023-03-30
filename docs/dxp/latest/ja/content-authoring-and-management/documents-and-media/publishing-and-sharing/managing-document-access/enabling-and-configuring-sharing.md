@@ -43,7 +43,7 @@
 1. ［**コンテンツとデータ**］ 下で、 ［**Sharing**］ をクリックします。
 
     ```{note}
-    システムスコープで共有が無効になっている場合、共有オプションは使用できません。 システムスコープの設定を変更するには、［Global Sharing Configuration］(#global-sharing-configuration)を参照してください。
+    システムスコープで共有が無効になっている場合、共有オプションは使用できません。 システムスコープの設定を変更するには、 [Global Sharing Configuration](#global-sharing-configuration) を参照してください。
     ```
 
 1. ［**仮想インスタンススコープ**］ 下で、 ［**Sharing**］ を選択します。
@@ -58,7 +58,7 @@
 ## サイト共有設定
 
 ```{note}
-システムスコープまたは仮想インスタンススコープで共有が無効になっている場合、サイト共有オプションは使用できません。 これらの設定を変更するには、［Global Sharing Configuration］(#global-sharing-configuration)および［Virtual Instance Sharing Configuration］(#virtual-instance-sharing-configuration)を参照してください。
+システムスコープまたは仮想インスタンススコープで共有が無効になっている場合、サイト共有オプションは使用できません。 これらの設定を変更するには、 [Global Sharing Configuration](#global-sharing-configuration) および [Virtual Instance Sharing Configuration](#virtual-instance-sharing-configuration) を参照してください。
 ```
 
 1. サイト共有設定にアクセスします。

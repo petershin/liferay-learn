@@ -1,3 +1,6 @@
+---
+uuid: b9ffc0aa-aaf4-4019-92dc-e573a01af389
+---
 # Angularプロジェクトを移行してLiferay npm Bundler 2.xを使用する
 
 次の手順に従って、Angularプロジェクトを移行してliferay-npm-bundler 2.xを使用します。 liferay-npm-bundler 1.xはいくつかの変換ステップを実行するためにBabelに依存していましたが、これらの変換はバージョン2.xで自動的に適用されるようになりました。 したがって、プロジェクトからBabelを削除する必要があります。
@@ -6,7 +9,7 @@
 
     ```json
     {
-      "devDependencies": {
+      "devDependencies":{
         ...
         "liferay-npm-bundler": "^2.0.0",
         ...
@@ -34,8 +37,8 @@
 
     ```json    
     {
-      "scripts": {
-        "build": "tsc && liferay-npm-bundler"
+      "スクリプト":{
+        "build":"tsc && liferay-npm-bundler"
       },
       ...
     }

@@ -60,7 +60,7 @@ Liferay Commerceを2.1.x/2.2.xにアップグレードするには、適切なDX
 1.1.xから2.1.xへのアップグレードでは、2.0.xへの増分アップグレードは**必要ありません**。
 ```
 
-例えば、Liferay Commerce 2.0.7にアップグレードする場合、Liferay DXP 7.1をフィックスパック 16以上にアップグレードしてください。 Liferay DXP 7.2を使用している場合、フィックスパック2または3を適用する必要があります。 DXPのアップグレードについては、 [アップグレードの基礎知識](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) を参照してください。 アップグレードパスを理解するために、以下の表を参照してください。
+例えば、Liferay Commerce 2.0.7にアップグレードする場合、Liferay DXP 7.1をフィックスパック 16以上にアップグレードしてください。 Liferay DXP 7.2を使用している場合、フィックスパック2または3を適用する必要があります。 DXPのアップグレードについては、 [アップグレードの基本](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) を参照してください。 アップグレードパスを理解するために、以下の表を参照してください。
 
 | 以下バージョンへのアップグレード       | 必要なフィックスパックのバージョン                     |
 |:---------------------- |:------------------------------------- |
@@ -107,6 +107,7 @@ DXP 7.1/7.2の適切なフィックスパックを実行したら、以下の手
 1. Liferay Commerceをダウンロードします。
 
     * Commerceエンタープライズは [ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) から入手できます。
+    * Commerce Communityは、 [Liferay Commerce Community ダウンロードページ](https://www.liferay.com/downloads-community) から入手できます。
 
 1. `LPKG`を`[Liferay Home]/deploy`フォルダにデプロイしてください。 Liferay DXPへのアプリケーションのデプロイについて詳しくは、 [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) をご覧ください。
 

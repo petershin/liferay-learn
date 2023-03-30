@@ -1,3 +1,6 @@
+---
+uuid: ab6ec89f-7268-490d-8293-271ea453179d
+---
 # MVCアクションコマンド
 
 MVCアクションコマンドは、アクションを個別のクラスとして処理します。 アクションコマンドを使用すると、多くのアクションを持つ`MVCPortlet`でアクションロジックを整理できます。 ポートレットのJSPのアクションURLは、指定されたMVCアクションコマンドクラスを呼び出します。
@@ -7,15 +10,16 @@ MVCアクションコマンドを使用するサンプルポートレットを�
 ## ポートレットのMVCアクションコマンドを呼び出す
 
 サンプルポートレットの2つのアクションは、呼び出されているMVCアクションコマンドクラスとメソッドを示すメッセージをログに記録します。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順でポートレットをデプロイし、アクションを起動します。
+次に、以下の手順でポートレットを配置し、その動作を起動します。
 
-1. サンプルをダウンロードして解凍します。
+1. サンプルをダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-l6y9.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-l6y9.zip -O
    ```
 
    ```bash
@@ -142,6 +146,6 @@ MVCアクションコマンドの使用方法がわかったので、[MVC Render
 
 ## 追加情報
 
+* [MVCの使用](../using-mvc.md)
 * [MVCレンダーコマンド](./mvc-render-command.md)
 * [MVCリソースコマンド](./mvc-resource-command.md)
-* [MVCコマンドのオーバーライド](../../../liferay-internals/extending-liferay/overriding-mvc-commands.md)

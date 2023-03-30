@@ -1,6 +1,9 @@
+---
+uuid: a8dd9eb8-f44a-4cc3-8425-1685472c0119
+---
 # ポートレットフィルタを使用したポートレットアクティビティの監査
 
-ポートレットフィルターは、各 [ポートレットリクエスト処理フェーズ](../../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) の開始時にリクエストと応答をインターセプトするため、そこに機能を追加できます。 これにより、レンダリング、アクション、イベント、およびリソース提供の各フェーズでのポートレットアクティビティの監査に役立ちます。
+ポートレットフィルターは、各 [ポートレットリクエスト処理フェーズ](../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) の開始時にリクエストと応答をインターセプトするため、そこに機能を追加できます。 これにより、レンダリング、アクション、イベント、およびリソース提供の各フェーズでのポートレットアクティビティの監査に役立ちます。
 
 次の手順に従って、ポートレットアクティビティを監査するためのポートレットフィルターを作成します。
 
@@ -13,7 +16,7 @@
    * レンダリングフェーズ - [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html)
    * リソース提供フェーズ - [`ResourceFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ResourceFilter.html)
 
-   各ポートレットフェーズの詳細については、 [Portlets](../../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) を参照してください。
+   各ポートレットフェーズの詳細については、 [Portlets](../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) を参照してください。
 
 1. `@Component`アノテーションを使用して、OSGiフレームワーク内のコンポーネントをポートレットフィルターとして宣言し、それを`PortletFilter.class`サービスとして識別します。
 
@@ -35,12 +38,12 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順で、サンプルのポートレットフィルタをダウンロードし、ビルドして、新しいドッカーコンテナにデプロイしてください。
+次に、以下の手順で、サンプルのPortlet Filterをダウンロード、ビルドし、新しいDockerコンテナにデプロイしてください。
 
-1. サンプルモジュールをダウンロードして解凍します。
+1. サンプルモジュールをダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/liferay-b4k8.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-b4k8.zip -O
    ```
 
    ```bash
@@ -195,5 +198,5 @@ public class B4K8PortletFilter implements RenderFilter {
 
 ## 追加情報
 
-* [Portlets](../../../building-applications/developing-a-java-web-application/reference/portlets.md)
+* [ポートレット](../../building-applications/developing-a-java-web-application/reference/portlets.md)
 <!--TASK: Add link to Using Portlet Filters article when finished -->

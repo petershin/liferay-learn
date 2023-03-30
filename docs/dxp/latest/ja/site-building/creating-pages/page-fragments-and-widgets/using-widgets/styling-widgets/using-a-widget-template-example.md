@@ -1,20 +1,21 @@
+---
+uuid: 0c693fc3-55b5-4767-9a9c-e13529a85aae
+---
 # ウィジェットテンプレートの使用例
 
 ウィジェットテンプレートは、サイト上のウィジェットの外観をカスタマイズするための優れたツールです。
 
-ここでは、メディアギャラリーウィジェットのデフォルト設定を変更し、カルーセルウィジェットテンプレートを使用するように変更するデモを行います。
+この例では、メディアギャラリーウィジェットのデフォルト設定を変更し、カルーセルウィジェットテンプレートを使用することを示します。
 
 ![メディアギャラリーウィジェットに画像を追加して、Liferayエクスペリエンスをカスタマイズします。](./using-a-widget-template-example/images/04.gif)
 
-<a name="configuring-the-media-gallery-widget" />
-
 ## メディアギャラリーウィジェットを設定する
 
-1. ドキュメントとメディアにまだ画像がない場合は、ドキュメントとメディアに画像を追加してください。 プロダクトメニューを開き、［サイトビルダー］→［ページ］と進みます。 ［**コンテンツとデータ**］ へ移動し、 [［**ドキュメントとメディア**］](../../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md) &rarr; ［**追加**］（![Add](../../../../images/icon-add.png)）をクリックしてアップロードするファイルを選択します。
+1. ドキュメントとメディアにまだ画像がない場合は、ドキュメントとメディアに画像を追加してください。 商品メニューを開き、「サイトビルダー」 &rarr; 「ページ」を表示します。 ［**コンテンツとデータ**］ へ移動し、 [［**ドキュメントとメディア**］](../../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md) &rarr; ［**追加**］（![Add](../../../../images/icon-add.png)）をクリックしてアップロードするファイルを選択します。
 
     ![ドキュメントとメディアで表示するファイルを選択します。](./using-a-widget-template-example/images/01.png)
 
-1. サイトの既存のページにメディアギャラリーウィジェットを追加します。 **追加**(![Add](../../../../images/icon-plus.png)) &rarr; ［**ウィジェット**］ &rarr; ［**コンテンツ管理**］ &rarr; ［**メディアギャラリー**］ &rarr; ［**公開**］ をクリックします。
+1. サイトの既存のページにメディアギャラリーウィジェットを追加します。 クリック **追加**(![Add](../../../../images/icon-plus.png)) &rarr; **ウィジェット** &rarr; **コンテンツ管理** &rarr; **メディアギャラリー** &rarr; **公開** .
 
     ![ウィジェットセクションのコンテンツと管理から、メディアギャラリーを追加します。](./using-a-widget-template-example/images/02.png)
 
@@ -22,11 +23,9 @@
 
     ![メディアギャラリーの設定画面。](./using-a-widget-template-example/images/03.png)
 
-  これでウィジェットにはカルーセル表示テンプレートが使用されるようになりました。
+  ウィジェットがカルーセル表示テンプレートを使用するようになりました。
 
-![メディアギャラリーの設定画面。](./using-a-widget-template-example/images/04.gif)
-
-<a name="additional-information" />
+![メディアギャラリーの設定画面では、テンプレートを変更することができます。](./using-a-widget-template-example/images/04.gif)
 
 ## 追加情報
 

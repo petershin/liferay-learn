@@ -1,3 +1,6 @@
+---
+uuid: e7efd454-e2cb-44e8-949d-8aff5238e78a
+---
 # ワークフロータスクノードリファレンス
 
 名前が示すように、タスクは **作業** が行われるワークフローの一部です。 タスクはユーザーに割り当てる必要があります。ユーザーは送信されたアセットを確認し、ワークフローのアセットが公開するための条件を満たしているか、またはさらに作業が必要かを判断します。
@@ -56,8 +59,6 @@
 
 レビュータスクには2つの`actions`があり、両方とも`<notification>`です。 各通知には、名前、テンプレート、通知タイプ、実行タイプ、および受信者を含めることができます。 通知のほかに、`<action>`タグを使用することもできます 。 これらには名前と[スクリプト](./using-the-script-engine-in-workflow.md)があり、タスクよりもステータスノードで使われることが多いです。
 
-<a name="assignments" />
-
 ## 割り当て
 
 ワークフロータスクはユーザーが完了します。 割り当てを行うことで、適切なユーザーがタスクにアクセスできるようになります。 割り当ての設定方法を選択できます。 割り当ては以下に追加できます
@@ -68,7 +69,7 @@
 * リソースアクション
 * 特定のユーザー
 
-さらに、割り当てを定義するスクリプトを書くこともできます。 例として、 [single-approver-scripted-assignment-workflow-definition.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml) をご覧ください。
+さらに、割り当てを定義するスクリプトを書くこともできます。 例えば、 [single-approver-scripted-assignment-workflow-definition.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml) を参照してください。
 
 ```xml
 <assignments>
@@ -97,7 +98,7 @@
 <assignments>
     <scripted-assignment>
         <script>
-            <!［CDATA［
+            <![CDATA[
                     import com.liferay.portal.kernel.model.Group;
                     import com.liferay.portal.kernel.model.Role;
                     import com.liferay.portal.kernel.service.GroupLocalServiceUtil;
@@ -129,7 +130,7 @@
                     }
 
                     user = null;
-                ］］>
+                ]]>
             </script>
         <script-language>groovy</script-language>
     </scripted-assignment>
@@ -140,8 +141,6 @@
 
 上記の`roles = new ArrayList<Role>();`の行に注目してください。 スクリプトでの割り当てでは、`roles` 変数で、タスクが割り当てられるロールを指定します。 例えば、`roles.add(adminRole);`が呼び出されると、管理者ロールが割り当てに追加されます。
 
-<a name="resource-action-assignments" />
-
 ## リソースアクションの割り当て
 
 ユーザーは、 **アップデート** アクションなどのリソースアクションにタスクを割り当てることができます。 ワークフロー定義で割り当てにUPDATEアクションが指定されている場合、ワークフローで処理されているアセットタイプを更新する権限を持つユーザーがタスクに割り当てられます。  1つのタスクに複数の割り当てを設定することができます。
@@ -150,7 +149,7 @@
 
 作成されたすべてのリソースアクションを見つけるには、コントロールパネルのロールの管理アプリケーションへのアクセスが必要です（すなわち、ロールリソースのVIEWアクションの権限が必要です）。
 
-1. ［**コントロールパネル**］ → ［**Users**］ → ［**Roles**］ に移動します。
+1. ［**Control Panel**］ → ［**Users**］ → ［**ロール**］ に移動します。
 1. 新しい標準ロールを追加します。 詳細は、[ロールの管理](../../../users-and-permissions/roles-and-permissions/creating-and-managing-roles.md)を参照してください。
 1. ロールが追加されたら、ロールの［権限の定義］インターフェイスに移動します。
 1. ワークフローの割り当てを定義するアクションを持つリソースを探します。
@@ -178,8 +177,6 @@
 * ADD_DISCUSSION
 
 考えられるリソースアクション名を、そのリソースの権限画面から決定します。 例えば、掲示板では、その画面に表示される権限の1つに **Add Discussion** があります。 これをすべて大文字に変換し、スペースをアンダースコアに置き換えると、アクション名になります。
-
-<a name="task-timers" />
 
 ## タスクタイマー
 
@@ -230,13 +227,11 @@
 
 上記のスニペットは、再割り当てアクションを設定する方法を示しています。
 
-`<action>` 要素と同様に、 `<timer-action>` 要素にはスクリプトを含めることができます。 詳細は、 [ワークフローでのスクリプトエンジンの使用](./using-the-script-engine-in-workflow.md) を参照してください。
+`<action>` 要素と同様に、 `<timer-action>` 要素にはスクリプトを含めることができます。 詳細は、[ワークフローでのスクリプトエンジンの使用](./using-the-script-engine-in-workflow.md)を参照してください。
 
 ```{note}
 `timer-action`には、` execution-type`という1つの例外を除いて、`action`と同じタグをすべて含めることができます。 タイマーアクションは、時間切れになると常にトリガーされるため、たとえば、 実行タイプに`onEntry`を指定しても、タイマーの中では意味がありません。
 ```
-
-<a name="additional-information" />
 
 ## 追加情報
 

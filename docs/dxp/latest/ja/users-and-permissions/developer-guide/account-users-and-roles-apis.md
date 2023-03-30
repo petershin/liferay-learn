@@ -1,3 +1,6 @@
+---
+uuid: 108e2423-cc6f-4442-9797-f6ce5bcfdbd9
+---
 # アカウントユーザーとロールのAPI
 
 アプリケーションメニューから [アカウントユーザー](../accounts/account-users.md) と [アカウントロール](../accounts/account-roles.md) を管理することができますが、LiferayのREST APIを利用することもできます。 これらのサービスを呼び出して、アカウントユーザーとロールの作成と管理を行います。
@@ -7,12 +10,12 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+次に、以下の手順に従います:
 
-1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。
+1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
    ```
 
    ```bash
@@ -78,7 +81,7 @@
         }     
     ```
 
-1. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 ユーザーを作成したアカウントをクリックします。 ［**Users**］ タブをクリックすると、作成された新しいユーザーが表示されます。
+1.  **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 ユーザーを作成したアカウントをクリックします。 ［**Users**］ タブをクリックすると、作成された新しいユーザーが表示されます。
 
   ![新しいアカウントユーザーが追加されたことを確認します。](./account-users-and-roles-apis/images/01.png)
 
@@ -113,7 +116,7 @@
 | `-u "test@liferay.com:learn"`                                                                                                                | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](.../.../headless-delivery/using-oauth2.md) 経由でユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -132,7 +135,7 @@
 
 | 行（省略形）                                                                           | 説明                                                                    |
 |:-------------------------------------------------------------------------------- |:--------------------------------------------------------------------- |
-| `UserAccountResource.Builder builder = ...`                                      | `UserAccountResource ` サービスインスタンスを生成するための`Builder`を取得します。             |
+| `UserAccountResource.Builder builder = ...`                                      | ` UserAccountResource `サービスインスタンスを生成するための`Builder`を取得します。             |
 | `UserAccountResource userAccountResource = builder.authentication(...).build();` | ベーシック認証を指定し、 `UserAccountResource` サービスインスタンスを生成します。                  |
 | `UserAccount userAccount = userAccountResource.postAccountUserAccount(...);`     | `userAccountResource.postAccountUserAccount` メソッドを呼び出し、データをpostに渡します。 |
 
@@ -156,13 +159,13 @@
 
 ### AccountUsers_GET_FromAccount.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./AccountUsers_GET_FromAccount 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/AccountUsers_GET_FromAccount.sh
    :language: bash
@@ -170,13 +173,13 @@
 
 ### AccountUsers_GET_FromAccount.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/AccountUsers_GET_FromAccount.java
    :dedent: 1
@@ -206,13 +209,13 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
 
 ### AccountRole_POST_ToAccount.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/AccountRole_POST_ToAccount.java
    :dedent: 1
@@ -226,13 +229,13 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
 
 ### AccountRole_POST_UserAssociation.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./AccountRole_POST_UserAssociation.sh 1234 5678 9012
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/AccountRole_POST_UserAssociation.sh
    :language: bash
@@ -260,13 +263,13 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
 
 ### AccountRoles_GET_FromAccount.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./AccountRoles_GET_FromAccount.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/AccountRoles_GET_FromAccount.sh
    :language: bash
@@ -302,7 +305,7 @@ java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
 ./AccountRole_DELETE_UserAssociation.sh 1234 5678 9012
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/AccountRole_DELETE_UserAssociation.sh
    :language: bash
@@ -324,4 +327,4 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
    :lines: 8-19
 ```
 
-[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
+[APIエクスプローラー](../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。

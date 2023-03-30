@@ -1,68 +1,71 @@
+---
+uuid: d8c3adfd-711a-486b-b4c6-7d1a27a569d2
+---
 # コンタクトシンクのデータ参照
 
-Liferayインスタンスから [Sync Contacts](../getting-started/syncing-sites-and-contacts.md) を選択すると、ContactsテーブルとUserテーブルから異なるフィールドを選択することができます。
+Liferay Instance から [Sync Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) を選択すると、Contacts テーブルと User テーブルから異なるフィールドを選択することができます。
 
-![フィールドは、contactsテーブルとuserテーブルから選択されます。](./contact-sync-data-reference/images/01.png)
+![フィールドは、連絡先テーブルとユーザーテーブルから選択されます。](./contact-sync-data-reference/images/01.png)
 
-これらのテーブルとフィールドの他に、ユーザー関連のデータも同期されます。
+これらのテーブルやフィールドの他に、ユーザー関連のデータも同期されます。
 
 ## カスタムフィールド
 
-[カスタムフィールド](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/users/adding-custom-fields-to-users.html) ユーザーや組織など、Liferayの多くの資産やリソースを拡張することができます。 以下のカスタムフィールドがシンクされます。
+[ユーザーへのカスタムフィールドの追加](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/users/adding-custom-fields-to-users.html) ユーザーや組織など、Liferayの多くの資産やリソースを拡張することができます。 以下のカスタムフィールドがシンクされます。
 
 | 属性            | 説明                                        |
 |:------------- |:----------------------------------------- |
 | `columnId`    | カスタムフィールドの数値識別子                           |
-| `className`   | どのエンティティかを参照する（すなわち ユーザー、組織）カスタムフィールドの所属先 |
+| `className`   | どのエンティティへの参照か（すなわち カスタムフィールドが属するユーザー、組織）。 |
 | `dataType`    | カスタムフィールドが参照するデータ値のタイプ                    |
-| `displayType` | カスタムフィールドが示すデータ値の種類                       |
+| `displayType` | カスタムフィールドが提示するデータ値の種類                     |
 | `name`        | カスタムフィールドの名前                              |
 
 ## 組織
 
-Liferay では、ユーザーは異なる [Organizations](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/understanding-organizations.html) に所属することができます。 組織は、独自のサイトを持つことができ、また、独自の役割と権限を持つことができます。 組織は、親組織の下に子組織を持つことができます。 以下の組織フィールドがシンクされます。
+ユーザーは、Liferay の異なる [組織について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/understanding-organizations.html) に所属することができます。 組織は、独自のサイトだけでなく、独自のロールやパーミッションを持つことができます。 組織は、親組織の下に子組織を持つことができます。 以下の組織フィールドがシンクされます。
 
-| 属性                       | 説明                          |
-|:------------------------ |:--------------------------- |
-| `organizationId`         | 組織の数値的な識別子                  |
-| `organizationType`       | 組織の種類                       |
-| `name`                   | 団体名                         |
-| `parentOrganizationId`   | 組織は階層化することができるので、親組織の数値の識別子 |
-| `parentOrganizationName` | 親組織の名称                      |
-| `treePath`               | 組織への階層的なパス                  |
+| 属性                       | 説明                    |
+|:------------------------ |:--------------------- |
+| `organizationId`         | 組織を識別するための数値          |
+| `organizationType`       | 組織の種類                 |
+| `name`                   | 団体名                   |
+| `parentOrganizationId`   | 親組織の数値識別子（組織は階層化できる）。 |
+| `parentOrganizationName` | 親組織の名称                |
+| `treePath`               | 組織への階層的なパス            |
 
 ## ロール
 
-Liferay では、ユーザーに異なる [Roles](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) を与えることができます。 ロールを作成し、異なるレベルの権限を持つように管理することができます。 以下のロールフィールドがシンクされます。
+Liferay では、ユーザーにさまざまな [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) を与えることができます。 ロールは、異なるレベルの権限を持つように作成・管理することができます。 以下のロールフィールドがシンクされます。
 
-| 属性        | 説明         |
-|:--------- |:---------- |
-| `roleId`- | 役割の数値的な識別子 |
-| `Name`    | 役割の名称      |
+| 属性        | 説明          |
+|:--------- |:----------- |
+| `roleId`- | 役割の数値による識別子 |
+| `Name`    | 役割の名称       |
 
 ## チーム
 
- ユーザーは、 [チーム](https://learn.liferay.com/dxp/latest/ja/site-building/sites/site-membership/creating-teams-for-sites.html) に所属することもできます。 ユーザーは、1つのサイト内でチームにまとめられ、サイト固有の機能を発揮します。 以下のチームフィールドがシンクされます。
+ また、ユーザーは [サイトにチームを作成する](https://learn.liferay.com/dxp/latest/ja/site-building/sites/site-membership/creating-teams-for-sites.html) に所属することができます。 ユーザーは、1つのサイト内でチームにまとめられ、サイト固有の機能を発揮します。 以下のチームフィールドが同期されます。
 
-| 属性       | 説明           |
-|:-------- |:------------ |
-| `teamId` | チームの数字による識別子 |
-| `Name`   | チーム名         |
+| 属性       | 説明        |
+|:-------- |:--------- |
+| `teamId` | チームの数値識別子 |
+| `Name`   | チーム名      |
 
 ## ユーザーグループ
 
-[ユーザーグループ](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/user-groups/creating-and-managing-user-groups.html) 異なる組織に所属するユーザーが、特定の目的のためにグループ化されたものです。 以下のユーザーグループのフィールドがシンクされます。
+[ユーザーグループの作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/user-groups/creating-and-managing-user-groups.html) 特定の目的のためにグループ化された、異なる組織に所属するユーザーのことである。 以下のユーザーグループのフィールドがシンクされます。
 
-| 属性            | 説明               |
-|:------------- |:---------------- |
-| `userGroupId` | ユーザーグループの数値的な識別子 |
-| `Name`        | ユーザーグループ名        |
+| 属性            | 説明             |
+|:------------- |:-------------- |
+| `userGroupId` | ユーザーグループの数値識別子 |
+| `Name`        | ユーザーグループ名      |
 
 ## ユーザーグループサイト
 
-[ユーザーグループサイト](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/user-groups.html) グループメンバーの個人サイトに追加されるページです。 以下のユーザーグループサイトのフィールドが同期されます。
+[ユーザーグループ](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/user-groups.html) グループメンバーの個人サイトに追加されるページです。 以下のユーザーグループサイトのフィールドが同期されます。
 
-| 属性        | 説明           |
-|:--------- |:------------ |
-| `GroupId` | サイトの数字による識別子 |
-| `Name`    | DXPサイト名      |
+| 属性        | 説明            |
+|:--------- |:------------- |
+| `GroupId` | サイトを識別するための数値 |
+| `Name`    | DXPサイト名       |

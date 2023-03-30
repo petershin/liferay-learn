@@ -1,3 +1,6 @@
+---
+uuid: 60e756cb-8c09-4781-9ed4-34720ab6c046
+---
 # エンティティ列の定義
 
 エンティティの列はその属性を表します。 これらの属性は、テーブルフィールドをJavaオブジェクトフィールドにマップします。
@@ -7,7 +10,7 @@
 サンプルをダウンロードして解凍することから始めます。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
    ```
 
    ```bash
@@ -62,7 +65,7 @@ Service Builderを実行すると、オブジェクトリレーショナルマ�
 
 ## ワークフローフィールド
 
-エンティティの進行状況を追跡するために必要なフィールドを追加することで、Liferayの [ワークフローシステム](https://learn.liferay.com/dxp/latest/ja/process-automation/workflow/introduction-to-workflow.html) をサポートできます。
+エンティティの進行状況を追跡するために必要なフィールドを追加することで、Liferayの[ワークフローシステム](../../../../process-automation/workflow/introduction-to-workflow.md)をサポートできます。
 
 ```xml
 <!-- Status fields -->

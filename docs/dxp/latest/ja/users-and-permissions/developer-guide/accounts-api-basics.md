@@ -1,3 +1,6 @@
+---
+uuid: e1ce4744-5752-45b8-821c-a43bddfd2e48
+---
 # アカウントAPIの基本
 
 > 対応可能：Liferay DXP/Portal 7.4以降
@@ -9,12 +12,12 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+次に、以下の手順に従います:
 
-1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。
+1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-t5p9.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
    ```
 
    ```bash
@@ -43,7 +46,7 @@
 
     ```
 
-1. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 新しいアカウントが追加されたことを確認してください。
+1. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 新しいアカウントが追加されたことを確認してください。
 
    ![新しいアカウントが追加されたことを確認します。](./accounts-api-basics/images/01.png)
 
@@ -78,7 +81,7 @@
 | `-u "test@liferay.com:learn"`                                 | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ったユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](.../.../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -121,13 +124,13 @@
 
 ### Accounts_GET_FromInstance.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Accounts_GET_FromInstance.sh
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/Accounts_GET_FromInstance.sh
    :language: bash
@@ -135,13 +138,13 @@
 
 ### Accounts_GET_FromInstance.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* Accounts_GET_FromInstance
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Accounts_GET_FromInstance.java
    :dedent: 1
@@ -231,13 +234,13 @@ java -classpath .:* -DaccountId=1234 Account_PATCH_ById
 
 ### Account_PUT_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Account_PUT_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/Account_PUT_ById.sh
    :language: bash
@@ -271,7 +274,7 @@ java -classpath .:* -DaccountId=1234 Account_PUT_ById
 ./Account_DELETE_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/Account_DELETE_ById.sh
    :language: bash
@@ -293,4 +296,4 @@ java -classpath .:* -DaccountId=1234 Account_DELETE_ById
    :lines: 8-17
 ```
 
-[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
+[APIエクスプローラー](../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`アカウント`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。

@@ -1,8 +1,11 @@
+---
+uuid: 147dfb06-9bea-43fd-a872-10039ca73c04
+---
 # カスタム通知タイプの実装
 
 Liferay Commerceは、ストアの様々なイベントトリガーに対してメール通知を送信するように設定することができます。 ニーズに合う、すぐに使える通知トリガーがない場合、自分で実装することができます。
 
-新しい通知タイプを追加するには、`CommerceNotificationType`インターフェイスを実装する必要があります。 通知テンプレートの設定方法と利用可能なOOTBタイプを表示する方法、 [メールを保存](../../store-management/sending-emails/store-emails.md) を参照してください。
+新しい通知タイプを追加するには、`CommerceNotificationType`インターフェイスを実装する必要があります。 [メール送信](../../store-management/sending-emails.md) を参照して、通知テンプレートの設定方法と利用可能な OOTB タイプを確認します。
 
 ## 通知タイプの概要
 
@@ -13,16 +16,17 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 上の図は、 **G2F3 Shipment Created** というタイプの通知テンプレートを示しています。 これは、新しい出荷の作成のためにトリガーされます。 出荷の作成中、通知テンプレートに記載されているように、受信者/受信者に通知が送信されます。 テンプレートの宛先、件名、本文フィールドにワイルドカードを使用することができ、これらは送信前に解決されます。
 
 ## 通知タイプのデプロイと言語キーの追加
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順に従います:
 
-1. Acme Commerce Notification Typeをダウンロードして解凍します。
+1. アクメ商会通知型をダウンロードし、解凍します。
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip
-    
+
     unzip liferay-g2f3.zip
     ```
 
@@ -33,7 +37,7 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
     ```
 
     ```{note}
-    このコマンドは、デプロイされたjarをDockerコンテナの `/opt/liferay/osgi/modules` にコピーするのと同じです。
+    このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
     ```
 
 1. Dockerコンテナコンソールでデプロイを確認します。
@@ -56,7 +60,7 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
     Liferay DXP 7.4 U4以降、またはLiferay Portal 7.4 GA8以降の言語オーバーライド ツールで言語キーを追加することができます。 以前のバージョンでは、ビルドとデプロイの前に、 `/src/main/resources/content/` の下に `Language.properties` ファイルを追加し、キーを指定する必要があります。
     ```
 
-3. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**チャネル**］ をクリックし、 ［**通知テンプレート**］ を選択します。
+3. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**チャネル**］ をクリックし、 ［**通知テンプレート**］ を選択します。
 
 4. **追加** ボタン (![Add icon](../../images/icon-add.png)) を使用して、新しいテンプレートを作成します。 
 
@@ -91,19 +95,19 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 
 7. 購入者としてログインし、ストアで新しく注文をします。
 
-8. 管理者としてログアウトしてログインし直し、 **グローバルメニュー** を開いて、 ［**commerce**］ &rarr; ［**注文**］ をクリックします。 
+8. 管理者としてログアウトしてログインし直し、 **グローバルメニュー** を開いて、 ［**コマース**］ &rarr; ［**注文**］ をクリックします。 
 
 9. 注文を選択し、 ［**受注**］ をクリックします。 次に、 ［**出荷を作成**］ をクリックします。
 
 10. 受信通知を受信トレイで確認してください。
 
 ```{important}
-[MockMock](https://github.com/tweakers/MockMock) などの偽のSMTPサーバを使って、ローカル開発環境下でこれらの通知をテストすることができます。 `Portal-ext.properties` ファイルに以下の行を追加します。`mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. `java -jar MockMock.jar` でjarを実行し、受信したメールを `localhost:8282` でチェックします。
-``` 
+[MockMock](https://github.com/tweakers/MockMock) などの偽のSMTPサーバを使って、ローカル開発環境下でこれらの通知をテストすることができます。 `Portal-ext.properties` ファイルに以下の行を追加します。`mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. `java -jar MockMock.jar`でjarを実行し、受信したメールを `localhost:8282` でチェックします。
+```
 
 ## カスタム通知タイプの仕組み
 
-この例は、主に7つのステップで構成されています。 最初に、OSGi登録用にクラスに注釈を付ける必要があります。 次に、 [CommerceNotificationType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-notification-api/src/main/java/com/liferay/commerce/notification/type/CommerceNotificationType.java) のインターフェイスを確認します。 次に、カスタムの`CommerceNotificationType`の実装を終了します。
+この例は、主に7つのステップで構成されています。 最初に、OSGi登録用にクラスに注釈を付ける必要があります。 次に、[CommerceNotificationType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-notification-api/src/main/java/com/liferay/commerce/notification/type/CommerceNotificationType.java)のインターフェイスを確認します。 次に、カスタムの`CommerceNotificationType`の実装を終了します。
 
 その後、`ModelListener`を`CommerceShipment`クラスに対して作成します。 次に、`CommerceDefinitionTermContributor`インターフェイスを確認します。 最後に、新しい通知のワイルドカードを解決するために、用語コントリビューターを実装します。
 
@@ -112,11 +116,11 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 * [通知タイプの完了](#complete-the-notification-type)
 * [CommerceShipmentのModelListenerを作成します。](#create-a-modellistener-for-commerceshipment)
 * [CommerceDefinitionTermContributorインターフェースの確認](#review-the-commercedefinitiontermcontributor-interface)
-* [用語コントリビューターを完成させる](#complete-the-term-contributors)
+* [用語コントリビューターを完成する](#complete-the-term-contributors)
 
 ### OSGi登録用にクラスに注釈を付ける
 
-Liferay Commerceが通知ステータスレジストリ内の他のものと区別できるように、通知タイプに個別のキーを指定する必要があります。 すでに使用されているキーを指定すると、既存の関連付けられているタイプが上書きされます。 順番は、ドロップダウンでのソート順で決まります。 この場合、 **注文は出荷待ち** 通知タイプは50、 **一部発送済み** 通知タイプは60として注文を持ちます。 2つの間にステータスを配置するには、注文がこれら2つの数値の間にある必要があります（この場合は51）。
+Liferay Commerceが通知ステータスレジストリ内の他のものと区別できるように、通知タイプに個別のキーを指定する必要があります。 すでに使用されているキーを指定すると、既存の関連付けられているタイプが上書きされます。 順番は、ドロップダウンでのソート順で決まります。 この場合、*注文は出荷待ち*通知タイプは50、 *一部発送済み*通知タイプは60として注文を持ちます。 2つの間にステータスを配置するには、注文がこれら2つの数値の間にある必要があります（この場合は51）。
 
 ### CommerceNotificationTypeインターフェースの確認
 
@@ -160,10 +164,10 @@ public String getLabel(Locale locale);
 
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/notification/model/listener/G2F3CommerceShipmentModelListener.java
     :language: java
-   :lines: 15-41
+    :lines: 15-41
 ```
 
-出荷が作成される度に通知をトリガーするためには、 [`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java) インターフェースを実装する [`BaseModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/BaseModelListener.java) クラスを拡張する必要があります。 このインタフェースは、作成、アップデート、削除などのイベントをトリガーとするエンティティのメソッドを持ちます。 `onAfterCreate(T model)`メソッドを使用すると、出荷の作成時に通知をトリガーすることができます。
+出荷が作成される度に通知をトリガーするためには、[`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/BaseModelListener.java) インターフェースを実装する[`BaseModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java)クラスを拡張する必要があります。 このインタフェースは、作成、アップデート、削除などのイベントをトリガーとするエンティティのメソッドを持ちます。 `onAfterCreate(T model)`メソッドを使用すると、出荷の作成時に通知をトリガーすることができます。
 
 ### CommerceDefinitionTermContributorインターフェースの確認
 

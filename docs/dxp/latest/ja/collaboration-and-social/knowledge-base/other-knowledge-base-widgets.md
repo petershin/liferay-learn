@@ -1,3 +1,6 @@
+---
+uuid: 86d92a49-c9a6-4d2f-8ed8-faf4aab615c2
+---
 # その他のナレッジベースウィジェット
 
 [ナレッジベース表示ウィジェット](knowledge-base-display-widget.md)以外にも、ページに追加できるナレッジベースのウィジェットがあります。
@@ -27,7 +30,7 @@
 ## ナレッジベースセクションウィジェット
 
 ```{note}
-ナレッジベース 3.0.0 では、ナレッジベースセクションウィジェットは非推奨となり、 [categories](../../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md) に置き換えられました。
+Knowledge Base 3.0.0では、Knowledge Base Sectionsウィジェットは非推奨となり、 [categories](../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md) に置き換えられました。
 ```
 
 ナレッジベースセクションウィジェットは、特定のトピック（セクション）に関連する記事を公開できます。 たとえば、夏季オリンピックに関するサイトには、Team Sports、Water Sports、Martial Artsなどのセクションが考えられます。
@@ -48,10 +51,9 @@
 
     ![この設定ウィンドウでウィジェットをカスタマイズします。](./other-knowledge-base-widgets/images/04.png)
 
-1. ［**Setup**］ &rarr; ［**General**］ タブで、使用する1つまたは複数のセクションを選択し、[**Save**］をクリックします。
+1. Setup **&rarr;** General **タブで、使用するセクションを選択し、** Save* をクリックします。
 
-1. ［設定］ウィンドウを閉じて、更新を確認します。
-
+1. Configuration ウィンドウを閉じると、更新内容が表示されます。
 一致する記事がアプリのセクション見出しの下に表示されます。
 
 ## ナレッジベース検索ウィジェット

@@ -1,10 +1,13 @@
+---
+uuid: 420db092-43be-4642-a9d5-7fda6fa8ff9b
+---
 # 注文情報
 
 管理者は [**注文** メニュー](./orders-menu-reference-guide.md)注文をクリックして、注文情報を表示および編集できます。
 
 5つのタブがあります： **一般** 、 **支払い** 、 **出荷** 、 **ノート** 、及び **メール** 。
 
-## 一般
+## 共通
 
 **一般** タブで、注文のステータスを最初から最後まで管理および追跡できます。
 
@@ -30,7 +33,7 @@
 
 ## メール
 
-［**メール**］ タブには、Liferay Commerceインスタンスによって送信された [取引メール](../../store-management/sending-emails/store-emails.md) がすべて含まれています。
+［**メール**］ タブには、Liferay Commerceインスタンスによって送信された [取引メール](../../store-management/sending-emails.md) がすべて含まれています。
 
 ![［メール］タブ](./order-information/images/05.png)
 
@@ -40,4 +43,4 @@
 * [注文メニューリファレンスガイド](./orders-menu-reference-guide.md)
 * [支払い方法の管理](../../store-management/configuring-payment-methods/managing-payment-methods.md)
 * [出荷の概要](../shipments/introduction-to-shipments.md)
-* [メールを保存](../../store-management/sending-emails/store-emails.md)
+* [メールを送信する](../../store-management/sending-emails.md)

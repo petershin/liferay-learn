@@ -1,15 +1,18 @@
+---
+uuid: 6b9e26cb-24a4-47b4-9452-5cc593d736ef
+---
 # バンドラーがnpmパッケージを公開する方法
 
 指定された [構造](./the-structure-of-osgi-bundles-containing-npm-packages.md)でOSGiバンドルをデプロイすると、そのモジュールは正規URLを通じて使用できるようになります。 解決されたモジュールをわかりやすく説明するために、以下のサンプル構造は、liferay-npm-bundler 1.xが生成する標準構造です。 2.xバージョンが生成する名前空間付きパッケージはありません。 以下で説明するように、liferay-npm-bundler 2.0は、この重複除外メカニズムをオーバーライドして、独立した依存関係とインポートを実装します。
 
 - `my-bundle/`
     - `META-INF/`
-        - `リソース/`
+        - `resources/`
             - `package.json`
                 - name: my-bundle-package
                 - バージョン：1.0.0
                 - main: lib/index
-                - 依存関係:
+                - 依存関係：
                     - isarray：2.0.0
                     - isobject: 2.1.0
                 - ...
@@ -23,7 +26,7 @@
                         - name: isobject
                         - バージョン：2.1.0
                         - main: lib/index
-                        - 依存関係:
+                        - 依存関係：
                             - isarray: 1.0.0
                         - ...
                     - ...
@@ -82,12 +85,12 @@ liferay-npm-bundler 2.xで生成された典型的なOSGiバンドル構造を�
 
 - `my-bundle/`
     - `META-INF/`
-        - `リソース/`
+        - `resources/`
             - `package.json`
                 - name: my-bundle-package
                 - バージョン：1.0.0
                 - main: lib/index
-                - 依存関係:
+                - 依存関係：
                     - my-bundle-package$isarray: 2.0.0
                     - my-bundle-package$isobject: 2.1.0
                 - ...
@@ -101,7 +104,7 @@ liferay-npm-bundler 2.xで生成された典型的なOSGiバンドル構造を�
                         - name: my-bundle-package$isobject
                         - バージョン：2.1.0
                         - main: lib/index
-                        - 依存関係:
+                        - 依存関係：
                             - my-bundle-package$isarray: 1.0.0
                         - ...
                     - ...
@@ -114,7 +117,7 @@ liferay-npm-bundler 2.xで生成された典型的なOSGiバンドル構造を�
                 - `my-bundle-package$isarray@2.0.0/`
                     - `package.json`
                         - name: my-bundle-package$isarray
-                        - バージョン：2.0.0
+                        - バージョン: 2.0.0
                         - ...
                     - ...
 
@@ -122,26 +125,26 @@ liferay-npm-bundler 2.xで生成された典型的なOSGiバンドル構造を�
 
 - `my-widget`
     - package.json
-        - 依存関係:
+        - 依存関係：
             - a-library 1.0.0
             - a-helper 1.0.0
     - node_modules
         - a-library
             - バージョン：1.0.0
-            - 依存関係:
+            - 依存関係：
                 - a-helper ^1.0.0
         - a-helper
             - バージョン：1.0.0
 
 - `another-widget`
     - package.json
-        - 依存関係:
+        - 依存関係：
             - a-library 1.0.0
             - a-helper 1.2.0
     - node_modules
         - a-library
             - バージョン：1.0.0
-            - 依存関係:
+            - 依存関係：
                 - a-helper ^1.0.0
         - a-helper
             - バージョン：1.2.0
@@ -159,7 +162,7 @@ liferay-npm-bundler 2.xで生成された典型的なOSGiバンドル構造を�
 例えば、3つのウィジェット、`my-toolbar`、`my-menu`、および`my-content`の場合、サイトのホームページを作成します。 これらのウィジェットは、偽物に依存しますが、素晴らしいUIコンポーネント(WUI)フレームワークです。 この非常に制限されたフレームワークには、3つのパッケージしか含まれていません。
 
 1.  `component-core`
-1.  `ボタン`
+1.  `button`
 1.  `textfield`
 
 バンドラーはデフォルトでウィジェットの名前を使用して各依存パッケージに名前空間を付けるので、ページ上のWUIパッケージの名前空間付きコピーが3つになります。 これはあなたが望むものではありません。 それらは同じパッケージを共有するため、WUIパッケージを含む4番目のバンドルを作成し、3つのウィジェットにWUIパッケージをインポートできます。 これにより、以下の構造になります。

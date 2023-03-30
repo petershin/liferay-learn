@@ -5,7 +5,7 @@
 アダプティブメディアは、ドキュメントとメディア、ブログ、Webコンテンツ、およびコンテンツページ（Liferay DXP 7.4以降）と統合されます。 様々な画面で使用する画像セットを生成します。 コンテンツにアクセスすると、アダプティブメディアは画面の種類と解像度をチェックし、適切な画像を選択します。 アダプティブメディアは、DXPに事前インストールされています。
 
 ```{note}
-アダプティブメディアは下記のCommerceウィジェットに対し、標準機能として利用可能です。 [検索結果](https://learn.liferay.com/commerce/latest/ja/creating-store-content/commerce-storefront-pages/search.html) , [製品詳細、製品パブリッシャー](https://learn.liferay.com/commerce/latest/ja/creating-store-content/commerce-storefront-pages/product-details.html) , [ミニカートウィジェット](https://learn.liferay.com/commerce/latest/ja/creating-store-content/liferay-commerce-widgets/using-the-mini-cart-widget.html) およびコンポーネント, [チェックアウト](https://learn.liferay.com/commerce/latest/ja/creating-store-content/commerce-storefront-pages/checkout.html)
+アダプティブメディアは下記のCommerceウィジェットに対し、標準機能として利用可能です。 [検索](https://learn.liferay.com/commerce/latest/ja/creating-store-content/commerce-storefront-pages/search.html) , [商品詳細](https://learn.liferay.com/commerce/latest/ja/creating-store-content/commerce-storefront-pages/product-details.html) , [ミニカートウィジェットの使用](https://learn.liferay.com/commerce/latest/ja/creating-store-content/liferay-commerce-widgets/using-the-mini-cart-widget.html) およびコンポーネント, [チェックアウト](https://learn.liferay.com/commerce/latest/ja/creating-store-content/commerce-storefront-pages/checkout.html)
 ```
 
 ここでは、アダプティブメディアについてと、画像を処理するための準備方法について学習します。 <!--Q: What about other assets? -->

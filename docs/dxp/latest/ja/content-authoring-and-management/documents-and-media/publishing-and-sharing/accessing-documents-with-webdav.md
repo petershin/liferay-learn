@@ -26,7 +26,7 @@
 
 ## 追加情報
 
-* [Enabling and Configuring Document Sharing](./managing-document-access/enabling-and-configuring-sharing.md)
+* [共有の有効化と構成](./managing-document-access/enabling-and-configuring-sharing.md)
 * [他のユーザーとのドキュメントの共有](./managing-document-access/sharing-documents-with-other-users.md)
 * [フォルダーの使用](../uploading-and-managing/using-folders.md)
 * [ドキュメントとメディアUIリファレンス](../documents-and-media-ui-reference.md)

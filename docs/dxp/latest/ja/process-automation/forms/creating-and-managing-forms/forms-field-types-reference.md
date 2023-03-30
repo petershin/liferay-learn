@@ -1,6 +1,9 @@
+---
+uuid: 688e2663-172f-4285-a138-e937991470ae
+---
 # フォーム項目タイプのリファレンス
 
-Liferayフォームアプリケーションには、フォームに追加する多くの項目タイプと要素が含まれています。 利用可能な要素を発見するために
+Liferayフォームアプリケーションには、フォームに追加する多くの項目タイプと要素が含まれています。 利用可能な要素を見つけるには、
 
 1. **プロダクトメニュー**（![Product Menu](../../../images/icon-product-menu.png)）を開き、サイト管理メニューのコンパスアイコン（![Compass](../../../images/icon-compass.png)）をクリックします。 フォームを作成するサイトを選択します。
 1. ［**コンテンツ & データ**］ &rarr; ［**Form**］ をクリックします。
@@ -10,39 +13,39 @@ Liferayフォームアプリケーションには、フォームに追加する�
 ![多くの便利なフォーム要素があります。](./forms-field-types-reference/images/01.png)
 
 ```{note}
-**フォームフィールドのグループ化と反復性：**フォームフィールドは、フォーム全体で使用するためにグループ化することができます（[要素セット](./reusing-sets-of-form-elements.md)を使用）またはフォーム内のフィールドグループに作成することができます。 フィールドを他のフィールドの上にドロップして、フィールドグループを作成します。 さらに、各フィールドの設定で_repeatable_をマークすることで、フォームのエンドユーザーがそのフィールドをフォーム内に複製することができます。 
+**フォームフィールドのグループ化と反復性：** フォームフィールドは、フォーム全体で使用するためにグループ化（[要素セット](./reusing-sets-of-form-elements.md)を使用）できます。またはフォーム内のフィールドグループに作成することができます。 フィールドを他のフィールドの上にドロップして、フィールドグループを作成します。 さらに、各フィールドの設定で_repeatable_とマークすることで、フォームのエンドユーザーがそのフィールドをフォーム内に複製することができます。 
 ```
 
 ## フィールド設定の概要
 
 フォームビルダーで新しいフィールドを追加したり、既存のフィールドをクリックすると、フィールド設定エディタのサイドバーが表示されます。 使用できる設定オプションは、項目タイプによって異なります。
 
-すべてのフォームフィールドには、基本と詳細の少なくとも2つの設定タイプがあります。多くのフォームは、基本的な設定だけで、以下のようなものが[作成](../creating-and-managing-forms/creating-forms.md)可能です。
+すべてのフォームフィールドには、ベーシックとアドバンスの少なくとも2つの設定タイプがあります。 多くのフォームは、基本設定だけで以下のようなものが[作成](../creating-and-managing-forms/creating-forms.md)可能です。
 
-- label
-- [プレースホルダテキスト](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
-- ひっす
+- ラベル
+- [プレースホルダーテキスト](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
+- 必須（および必須メッセージの内容）
 - [ヘルプテキスト](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
 
-また、分野別の基本構成も追加されています。
+さらにフィールド固有の基本設定もあります。
 
-![［リストから選択］フィールドには、いくつかの基本設定があります。](./forms-field-types-reference/images/15.png)
+![［プルダウン］フィールドには、いくつかの基本設定があります。](./forms-field-types-reference/images/15.png)
 
-アドバンスト・コンフィギュレーションは以下の通りです。
-- [事前定義値](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
-- サーチコンフィギュレーション
-- そのフィールドが繰り返し使用可能かどうか
-- システム／プログラム・フィールド・リファレンス
-- フィールドの確認
-- フィールドが非表示であるかどうか
+詳細設定は以下の通りです。
+- [初期値](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
+- 検索設定
+- そのフィールドが繰り返し可能かどうか
+- システム／プログラムフィールドリファレンス
+- フィールド確認
+- フィールドが非表示かどうか
 
-さらに分野別の詳細設定もあります。
+さらにフィールド固有の詳細設定もあります。
 
 ![テキストフィールドにはいくつかの詳細設定があります。](./forms-field-types-reference/images/14.png)
 
 ### 非表示のフィールド
 
-時には、外部ソース（ [REST データプロバイダ](../data-providers/using-the-rest-data-provider-to-populate-form-options.md)など）からの情報を、 [フォームルール](../form-rules/form-rules-overview.md)をトリガするためにのみ使用されるフォームフィールドに渡すことが有用です。 この場合、フィールドの非表示設定（Liferay 7.4の新機能）を使用します。
+時には、外部ソース（ [RESTデータプロバイダー](../data-providers/using-the-rest-data-provider-to-populate-form-options.md)など）からの情報を[フォームルール](../form-rules/form-rules-overview.md)をトリガーするためにのみ使用されるフォームフィールドに渡すことが有用です。 この場合、フィールドの非表示設定（Liferay 7.4の新機能）を使用します。
 
 ### フィールド確認
 
@@ -60,11 +63,11 @@ Liferayフォームアプリケーションには、フォームに追加する�
 
 ![確認フィールドは構成可能です。](./forms-field-types-reference/images/22.png)
 
-ユーザーが有効な形式で情報を入力できるようにするための情報は、 [テキストおよび数値フィールドエントリの検証](validating-text-and-numeric-field-entries.md) を参照してください。
+ユーザーが有効な形式で情報を入力できるようにするための情報は、 [テキストおよび数値フィールドエントリーの検証](validating-text-and-numeric-field-entries.md) を参照してください。
 
 ### フィールド名、フィールドID、およびフィールドの参照
 
-Liferay 7.3の最初のリリースでは、編集可能な構成のフィールド名が削除され、読み取り専用のフィールド IDが各フィールドの［アドバンス］タブに含まれるようになりました。 しかし、Liferay 7.3では、編集可能な代替品であるフィールド参照が利用できるようになりました。 プログラムでフィールドを参照する場合は、7.2のフィールド名の値と7.3以降のフィールド参照を使用します。
+Liferay 7.3の最初のリリースでは、編集可能な構成のフィールド名が削除され、読み取り専用のフィールド IDが各フィールドの［詳細設定］タブに含まれるようになりました。 しかし、Liferay 7.3では、編集可能な代替品であるフィールド参照が利用できるようになりました。 プログラムでフィールドを参照する場合は、7.2のフィールド名の値と7.3以降のフィールド参照を使用します。
 
 ![フィールド参照の設定では、フォームビルダーがフィールドの人間が読めるシステム名を設定することができます。](./forms-field-types-reference/images/20.png)
 
@@ -96,13 +99,13 @@ Liferay 7.3の最初のリリースでは、編集可能な構成のフィール
 
 ユーザーは、ラジオボタンを使用して、フォームに表示されたオプションのリストから1つのオプションを選択します。
 
-![単一選択フィールドは、ユーザーに複数の選択肢を表示し、その中から1つだけを選択できるようになっています。](./forms-field-types-reference/images/05.png)
+![ラジオボタンフィールドでは、ユーザーに複数の選択肢を表示し、その中から1つだけを選択できるようになっています。](./forms-field-types-reference/images/05.png)
 
 ### ブール値
 
 ユーザーは、チェックボックスやスイッチを有効にしたり無効にしたりして、表示されたテキストに対する `true` または `false` の応答を記録します。
 
-![ブールフィールドはユーザーに単一のオプションを表示し、ユーザーが応答でtrueまたはfalseを選択できるようにします。](./forms-field-types-reference/images/17.png)
+![ブール値フィールドはユーザーに単一のオプションを表示し、ユーザーが応答でtrueまたはfalseを選択できるようにします。](./forms-field-types-reference/images/17.png)
 
 ### 日付
 
@@ -142,9 +145,10 @@ Liferay 7.4で追加された、ユーザーが日付と時刻の両方を1つ�
 
 数値フィールドには、興味深い詳細なフィールド設定があります。
 
-- [**確認要求**](#field-confirmation) ユーザがデータを正しく入る性を保証します。
-- [**入力値の検証](./validating-text-and-numeric-field-entries.md**) ユーザーの入力を事前に設定された要件に制限します。 ![数値入力を検証します。](./forms-field-types-reference/images/25.png)
-- [**入力マスク](./validating-text-and-numeric-field-entries.md#masking-numeric-fields**) は、ユーザーが数値データを入力する際に、正しいフォーマットを表示させることができます。
+- [**確認要求**](#field-confirmation) ユーザーが正しくデータを入力できるようにします。
+- [**入力値の検証](./validating-text-and-numeric-field-entries.md**) ユーザーの入力を事前に設定された要件に制限します。 
+      ![数値入力を検証します。](./forms-field-types-reference/images/25.png)
+- [**入力マスク](./validating-text-and-numeric-field-entries.md#masking-numeric-fields**) は、ユーザーが数値データを入力する際に正しいフォーマットを表示することができます。
 
 ### アップロード
 
@@ -160,25 +164,25 @@ Liferay 7.3 (DXP FP1およびCE GA7 )以降、認証されていないゲスト�
 
 ![ゲストにファイルのアップロードを許可するかどうかを選択できます。](./forms-field-types-reference/images/16.png)
 
-アップロードされたドキュメントは、 [ドキュメントとメディアリポジトリ](./../../../system-administration/file-storage.md)非表示フォルダに保存されます。 ドキュメントとメディアアプリケーションで表示するには、以下の[ポータルプロパティ](../../../installation-and-upgrades/reference/portal-properties.md)を `portal-ext.properties` ファイルに設定します。
+アップロードされたドキュメントは、 [ドキュメントとメディアリポジトリ](./../../../system-administration/file-storage.md)の非表示フォルダに保存されます。 ドキュメントとメディアアプリケーションで表示するには、以下の[ポータルプロパティ](../../../installation-and-upgrades/reference/portal-properties.md)を `portal-ext.properties`ファイルに設定します。
 
 ```properties
 dl.show.hidden.mount.folders=true
 ```
 
-コントロールパネル：［システム設定］&rarr; ［フォーム（コンテンツとデータ）］ &rarr; ［フォーム］で、または、`com.liferay.dynamic.data.mapping.form.web.internal.configuration.DDMFormWebConfiguration.config`という名前の[設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を作成して、ゲストのアップロード動作を設定します。
+ゲストのアップロード動作を設定するには、コントロールパネル：［システム設定］&rarr; ［フォーム（コンテンツとデータ）］ &rarr; ［フォーム］で行うか、`com.liferay.dynamic.data.mapping.form.web.internal.configuration.DDMFormWebConfiguration.config`という名前の[設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を作成します。
 
 ```{tip}
-[インスタンススコープ](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions) でフォームアプリケーションを設定するには、Instance Settingsのフォームエントリーを使用します。
+[インスタンススコープ](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions) でフォームアプリケーションを設定するには、［インスタンス設定］のフォームエントリーを使用します。
 ```
 
-**Guest Upload File Extensions（`guestUploadFileExtensions`）：** 受け入れられるファイル拡張子のコンマ区切りリストを入力します。  デフォルトでは以下のリストがサポートされています：`doc`、`docx`、`jpeg`、`jpg`、`pdf`、`png`、`ppt`、`pptx`、`tiff`、`txt`、`xls`、および`xlsx`。
+**ゲストがアップロード可能なファイル拡張子（`guestUploadFileExtensions`）：** 許可済ファイル拡張子のコンマ区切りリストを入力します。  デフォルトでは以下のリストがサポートされています：`doc`、`docx`、`jpeg`、`jpg`、`pdf`、`png`、`ppt`、`pptx`、`tiff`、`txt`、`xls`、および`xlsx`。
 
-**Guest Upload Maximum file Size（`guestUploadMaximumFileSize`）：** ゲストユーザがアップロードフィールドからアップロードできるファイルの最大サイズを設定します。 これは、ドキュメントとメディアアプリケーションの設定で、認証されたユーザーに対して設定され、システム全体の制限は、アップロードサーブレットリクエストシステム設定エントリーの［合計最大アップロードリクエストサイズ］というフィールドで定義されます。 デフォルトでは25MBに設定されています。
+**ゲストがアップロード可能な最大ファイルサイズ（`guestUploadMaximumFileSize`）：** ゲストユーザーがアップロードフィールドからアップロードできるファイルの最大サイズを設定します。 これは、ドキュメントとメディアアプリケーションの設定で、認証されたユーザーに対して設定され、システム全体の制限は、アップロードサーブレットリクエストシステム設定エントリーの［合計最大アップロードリクエストサイズ］というフィールドで定義されます。 デフォルトでは25MBに設定されています。
 
-**Maximum Repetitions for Upload Fields（`maximumRepetitionsForUploadFields`）：** フィールドが繰り返し可能に設定されている場合、ユーザーがフィールドをフォームに追加できる最大回数を設定します (ゲスト ユーザーとログインしたユーザーに同じように適用されます)。 デフォルトでは5に設定されています。
+**アップロードフィールドの最大繰り返し回数（`maximumRepetitionsForUploadFields`）：** フィールドが繰り返し可能に設定されている場合、ユーザーがフィールドをフォームに追加できる最大回数を設定します (ゲスト ユーザーとログインしたユーザーに同じように適用されます)。 デフォルトでは5に設定されています。
 
-**Maximum Submissions for Guest Upload Fields（`maximumSubmissionsForGuestUploadFields`）：** ゲストが使用可能なアップロード フィールドを含むフォームを、ゲスト ユーザーが送信できる最大回数を設定します。 ゲストユーザーのIPアドレスは、送信数の記録のために使用されます。 デフォルトでは5に設定されています。
+**ゲストアップロードフィールドの最大送信数（`maximumSubmissionsForGuestUploadFields`）：** ゲストが使用可能なアップロードフィールドを含むフォームをゲストユーザーが送信できる最大回数を設定します。 ゲストユーザーのIPアドレスは、送信数の記録のために使用されます。 デフォルトでは5に設定されています。
 
 ### 画像
 

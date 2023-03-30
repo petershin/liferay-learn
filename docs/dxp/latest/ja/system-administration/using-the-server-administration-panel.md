@@ -4,6 +4,7 @@ toc:
   - using-the-server-administration-panel/configuring-logging.md
   - using-the-server-administration-panel/configuring-external-services.md
   - using-the-server-administration-panel/configuring-a-shutdown-event.md
+uuid: f98d58cc-cea1-4265-87c9-0f5a8df2ce51
 ---
 # サーバー管理パネルの使用
 
@@ -30,5 +31,5 @@ using-the-server-administration-panel/configuring-a-shutdown-event.md
 | データ移行    | リポジトリから別のリポジトリへドキュメントを移行 たとえば、ドキュメントを別のディスクの新しいリポジトリや新しい形式に移行できます。                                                                                                                                                                                                           | [ファイルストレージの移行](file-storage/file-store-migration.md)                                      |
 | メール      | [ポータルプロパティファイル](../installation-and-upgrades/setting-up-liferay/configuring-mail/alternative-email-configuration-methods.md#configuring-the-built-in-mail-session-using-portal-properties) 代わりに、このタブからメールサーバーを構成できます。 これらの設定は、 `portal-ext.properties` ファイルのメールサーバー設定を上書きします。 | [メールの設定](../installation-and-upgrades/setting-up-liferay/configuring-mail.md)             |
 | 外部サービス   | 画像、オーディオファイル、ビデオファイルのファイルプレビューを生成するための外部サービスを構成します。                                                                                                                                                                                                                          | [外部サービスの構成](./using-the-server-administration-panel/configuring-external-services.md)     |
-| スクリプト    | 移行または管理コードを実行するために、スクリプトコンソールでGroovyスクリプトを記述します。                                                                                                                                                                                                                             | [スクリプトエンジンの使用](./using-the-script-engine/using-the-script-engine.md)                      |
+| スクリプト    | 移行または管理コードを実行するために、スクリプトコンソールでGroovyスクリプトを記述します。                                                                                                                                                                                                                             | [スクリプトエンジンの使用](./using-the-script-engine.md)                                              |
 | シャットダウン  | ログインしているユーザーにシャットダウンが迫っていることを警告するシャットダウンをスケジュールします（今から **x** 分後）。                                                                                                                                                                                                              | [シャットダウンイベントの構成](./using-the-server-administration-panel/configuring-a-shutdown-event.md) |

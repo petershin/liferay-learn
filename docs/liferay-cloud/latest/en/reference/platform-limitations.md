@@ -40,7 +40,7 @@ These limitations apply to every service in a Liferay Cloud environment:
 
 * **Access to Old Logs**: By default, logs are only available from the last 30 days for each service via the console. [Submit a Support request](https://help.liferay.com/) to access older *application logs* (up to a year old). Status and build logs cannot be retrieved after 30 days.
 
-* **Additional Instances per Service**: Your subscription plan determines the allowed [`scale` setting](../manage-and-optimize/auto-scaling.md) for your services. By default, all services will have only one additional instance (the Search service must use an odd number of additional instances). The `scale` setting will begin already configured to use the purchased number of instances for your subscription plan.
+* **Additional Instances per Service**: Your subscription plan determines the allowed [`scale` setting](../manage-and-optimize/auto-scaling.md) for your services. By default, all services have only one additional instance (except the Search service must use an odd number of additional instances). The `scale` setting begins already configured to use the purchased number of instances for your subscription plan.
 
 * **Downtime**: Services running with a single instance may experience restarts when the Liferay Cloud infrastructure is updated for scheduled maintenance. Use high availability settings (two instances each of the Web server and Liferay services, and three instances of the Search service) for production-type environments to avoid disruptions. You can view the schedule for planned maintenance [here](https://help.liferay.com/hc/en-us/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule).
 

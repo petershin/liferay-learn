@@ -88,6 +88,8 @@ Now in Liferay, connect to the company's LDAP server with the steps below.
 
    ![Fill in the user fields information.](./connecting-to-ldap/images/02.png)
 
+   Note, change the default value for the `UUID` field to be `uid`. This is necessary for the export step in the next article.
+
 1. Next, fill out the LDAP groups information. Click _Test LDAP Groups_ to verify that the `almightysyrup` user group is visible.
 
 1. Finally, fill out the LDAP export information. Click _Save_.

@@ -1,6 +1,6 @@
 # Setting Up Automatic Deployment
 
-Kyle is able to begin developing and testing with Liferay Cloud, but he wants to be able to deploy and test his changes more quickly first.
+Kyle is able to begin developing and testing with Liferay Cloud, but he wants to be able to quickly deploy and test changes his repository first.
 
 Here, you'll configure a branch to automatically deploy newly pushed changes to your UAT environment.
 
@@ -14,7 +14,7 @@ Configure automatic deployment via the `LCP_CI_DEPLOY_BRANCH` and `LCP_CI_DEPLOY
 
 1. Click the *Environment Variables* tab.
 
-1. Add these environment variables:
+1. Set these environment variable values:
 
    * **LCP_CI_DEPLOY_BRANCH**: `live-update`
 
@@ -24,7 +24,7 @@ Configure automatic deployment via the `LCP_CI_DEPLOY_BRANCH` and `LCP_CI_DEPLOY
 
 1. Click *Save Changes*.
 
-The CI service restarts with the new configuration. Once it comes back up, any newly pushed changes to the `live-update` branch are automatically deployed to your UAT environment.
+The CI service restarts with the new configuration. Once it's back up, any builds created from that point on via the `live-update` branch are automatically deployed to your UAT environment.
 
 ## Test with a New Push
 

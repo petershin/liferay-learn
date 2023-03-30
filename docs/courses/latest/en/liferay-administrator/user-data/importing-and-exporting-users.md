@@ -15,7 +15,7 @@ Once the LDAP server is connected to your Liferay environment, it is time to imp
 
 1. Check the box for _Enable Import_. Click _Save_. Note, the default import interval is set to 10 minutes. Liferay performs a bulk import at this interval. 
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. The users from the LDAP server have been imported.
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. The user from the LDAP server has been imported.
 
    ![LDAP users have been imported.](./importing-and-exporting-users/images/01.png)
 

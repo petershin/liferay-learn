@@ -38,7 +38,7 @@ Delectable Bonsai must import user data from a company they just acquired. In re
    cn: Sarah
    sn: Stanley
    givenName: Sarah
-   mail: sara@almightysyrup.com
+   mail: sarah@almightysyrup.com
    title: IT Staff
    userPassword: learn
 

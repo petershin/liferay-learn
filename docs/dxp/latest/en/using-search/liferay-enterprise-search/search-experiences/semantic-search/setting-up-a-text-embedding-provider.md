@@ -117,7 +117,7 @@ Before saving the configuration, click the _Test Configuration_ button to ensure
 
 The [Hugging Face Inference Endpoints](https://huggingface.co/inference-endpoints) service is an enterprise-grade, paid text embedding service from Hugging Face. When testing and developing your semantic search solution, you can use the [Inference API](#using-the-hugging-face-inference-api).
 
-Most of the setup is completed in Hugging Face. 
+Most of the setup is completed in Hugging Face. After setting up the Inference API, 
 
 1. Go to your Hugging Face account settings and copy your access token.
 

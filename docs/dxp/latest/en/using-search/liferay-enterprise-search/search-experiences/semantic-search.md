@@ -95,7 +95,7 @@ To index the text embeddings, use the Index Actions screen and click the _Reinde
 
 ## Configuring Semantic Search
 
-Beyond [setting up a text embeddings provider](./semantic-search/setting-up-a-text-embedding-provider.md), additional configuration options are available for semantic search. Visit Control Panel &rarr; Instance Settings &rarr; Semantic Search, and find the Index Settings section.
+Beyond [setting up a text embeddings provider](./semantic-search/setting-up-a-text-embedding-provider.md), additional configuration options are available for semantic search. Visit Control Panel &rarr; Instance Settings &rarr; Semantic Search.
 
 The Text Embedding Provider Settings are covered in [Enabling Semantic Search](#enabling-semantic-search)
 
@@ -123,11 +123,11 @@ The Search Settings include the following:
 
 ## Understanding Semantic Search in Liferay
 
-Semantic Search in Liferay can be one of two things:
+Semantic Search in Liferay is either
 1. Full semantic search, where the normal indexers are disabled in a Search blueprint, and only text embeddings are used to search for relevant content.
-1. Hybrid semantic search, where a keyword search is performed first, and text embeddings are used to re-score the results.
+1. Hybrid semantic search, where a keyword search is performed first, and text embeddings are used to rescore the results.
 
-Providing a robust understanding semantic search and its intricacies is beyond the scope of this brief explanation. Instead we'll focus on how Liferay's semantic search implementation works, along the way explaining a few fundamental concepts of a semantic search.
+Providing a robust understanding semantic search and its intricacies is beyond the scope of this brief explanation. Instead we'll focus on how a Liferay hybrid semantic search implementation works, along the way explaining a few fundamental concepts of a semantic search.
 
 Semantic search impacts the Liferay search at both index time and search time, introducing an additional level of content processing.
 
@@ -151,4 +151,4 @@ Semantic search impacts the Liferay search at both index time and search time, i
 * Regular keyword matching occurs:
   * The search phrase entered in the Search Bar widget is received by Liferay's search framework, sent through to the search engine for analysis and additional processing, matched to existing index documents in the search engine, which are scored for relevance and returned to Liferay for its additional processing (highlighting, summarizing, performing additional filtering for permissions, etc.). 
 * Additional semantic search processing occurs:
-  * The search phrase is sent to the text embedding provider, and a vector representation is created (the [text embedding](https://neuml.github.io/txtai/embeddings/)). Before rendering the search results scored by keyword search relevance, the results captured within the window limit setting are re-scored by comparing the vector representation of the search phrase with the vector representations of the index documents. New scores are calculated, and the newly ordered results are returned to the search page for consumption by the end user. See Elastic's [What is Vector Search](https://www.elastic.co/what-is/vector-search) for more information.
+  * The search phrase is sent to the text embedding provider, and a vector representation is created (the [text embedding](https://neuml.github.io/txtai/embeddings/)). Before rendering the search results scored by keyword search relevance, the results captured within the window limit setting are rescored by comparing the vector representation of the search phrase with the vector representations of index documents. New scores are calculated, and the results are returned to the search page for consumption by the end user. See Elastic's [What is Vector Search](https://www.elastic.co/what-is/vector-search) for more information.

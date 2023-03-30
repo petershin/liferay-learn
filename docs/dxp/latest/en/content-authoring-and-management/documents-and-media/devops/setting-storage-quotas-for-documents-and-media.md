@@ -8,7 +8,7 @@ You can define storage quotas in Documents and Media by enabling the `data.limit
 ![Upload attempts that would exceed the limit fail and display an error message.](./setting-storage-quotas-for-documents-and-media/images/01.png)
 
 ```{important}
-Although the setting is global, each instance keeps track of its current consumed quota. If you define a quota of 100MB and you have 10 instances, the maximum global storage that can be consumed by Documents and Media is roughly 1TB.
+Although the setting is global, each instance keeps track of its current consumed quota. If you define a quota of 100MB and you have 10 instances, the maximum global storage that can be consumed by Documents and Media is roughly 1GB.
 ```
 
 By default, the `data.limit.dl.storage.max.size` portal property is disabled. You can override this value using a `portal-ext.properties` file.

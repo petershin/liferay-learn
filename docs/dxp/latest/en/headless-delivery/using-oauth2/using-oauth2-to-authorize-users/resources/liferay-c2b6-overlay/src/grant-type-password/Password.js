@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import Token from './components/Token';
+import Token from '../components/Token';
 import Users from '../components/Users';
 
 function Password() {
@@ -14,7 +14,7 @@ function Password() {
 		<div>
 			<h1>Password Flow</h1>
 
-			<Token handleToken={handleToken} />
+			<Token handleToken={handleToken} grantType={'password'} />
 
 			<Users token={token} />
 		</div>

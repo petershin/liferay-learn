@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import Token from './components/Token';
+import Token from '../components/Token';
 import Users from '../components/Users';
 
 function ClientCredentials() {
@@ -14,7 +14,7 @@ function ClientCredentials() {
 		<div>
 			<h1>Client Credentials Code Flow</h1>
 
-			<Token handleToken={handleToken} />
+			<Token handleToken={handleToken} grantType={'client_credentials'} />
 
 			<Users token={token} />
 		</div>

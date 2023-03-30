@@ -3,11 +3,9 @@ uuid: 714a2db2-830e-40a8-8f49-5da57a629ef1
 ----
 # Creating a Search Blueprint for Semantic Search
 
-{bdg-primary}`LES Subscription`
 {bdg-secondary}`7.4 U70+`
 {bdg-link-dark}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
 
-<!-- Do we need to provide the Element's JSON or at least a link to GitHub? We could have the reader curl it. It's not in my master build OOTB -->
 Once a model is selected and the text embeddings are indexed, you must configure Liferay to account for the embeddings at search time. Conceptually you have two choices:
 
 1. Create a blueprint to completely override Liferay's default search request, building one from scratch to execute a pure semantic search query, only using the text embeddings.
@@ -23,21 +21,21 @@ The Rescore by Text Embedding element, when configured to work with an embedding
 
 This element is effective only if the embedding provider is enabled and configured to operate on specific content types and languages. See [Setting Up a Text Embedding Provider](./setting-up-a-text-embedding-provider.md).
 
-## Importing the Rescore by Text Embedding Element
+## Adding the Rescore by Text Embedding Element
 
-If you start Liferay for the first time with [semantic search enabled](../semantic-search.md#enabling-semantic-search), the Rescore by Text Embedding element is ready to use in the [Search Blueprints UI](../search-blueprints/creating-and-managing-elements.md). If you do not see the element in your instance, you can import it.
+If you start Liferay for the first time with [semantic search enabled](../semantic-search.md#enabling-semantic-search), the Rescore by Text Embedding element is ready to use in the [Search Blueprints UI](../search-blueprints/creating-and-managing-elements.md). If you do not see the element in your instance, you can add it manually:
 
-1. Copy the element's JSON from the section below, [Reference: Rescore by Text Embedding Element](#reference-rescore-by-text-embedding-element)
-
-1. In your running Liferay, go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), then click *Application* &rarr; *Blueprints*.
+1. In Liferay, open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), then click *Application* &rarr; *Blueprints*.
 
 1. Click *Elements*, then click *Add* (![Add](../../../../images/icon-add.png)).
 
 1. Enter the title *Rescore by Text Embedding* and click *Create*.
 
+1. Copy the element's JSON from the section below, [Reference: Rescore by Text Embedding Element](#reference-rescore-by-text-embedding-element)
+
 1. Overwrite the default JSON with the JSON you copied from below.
 
-![Import the Rescore by Text Embedding element if needed.](./creating-a-search-blueprint-for-semantic-search/images/02.png)
+![Add the Rescore by Text Embedding element if needed.](./creating-a-search-blueprint-for-semantic-search/images/02.png)
 
 ## Configuring the Rescore by Text Embedding Element
 

@@ -6,10 +6,8 @@ uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 ---
 
 # Semantic Search
-{bdg-primary}`LES Subscription`
 {bdg-secondary}`7.4 U70+`
 {bdg-link-dark}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
-<!--Link to an explainer on what the beta feature badge means -->
 
 ```{toctree}
 :maxdepth: 1
@@ -18,32 +16,32 @@ uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 ./semantic-search/creating-a-search-blueprint-for-semantic-search.md
 ```
 
-_Semantic_ search evaluates the intent behind a searched phrase. Meanwhile, a _lexical_ search matches a searched phrase to the indexed text fields, and cannot produce a match based on meaning.
+_Semantic_ search evaluates the intent behind a searched phrase. Meanwhile, a _keyword_ search matches a searched phrase to the indexed text fields, and cannot produce a match based on meaning.
 
 | Searched Phrase | Indexed Content | Match Type |
 | :--- | :--- | :--- |
-| what's new in tech | Liferay Releases Search Experiences for 7.3 | Semantic &#10004;<br />Lexical &#10008; |
-| new releases | New features released in Liferay Search Experiences | Semantic &#10004;<br />Lexical &#10004; |
+| what's new in tech | Liferay Releases Search Experiences for 7.3 | Semantic &#10004;<br />Keyword &#10008; |
+| new releases | New features released in Liferay Search Experiences | Semantic &#10004;<br />Keyword &#10004; |
 
-Even sophisticated lexical searches like Liferay's (as powered by Elasticsearch) cannot match the user's intent with indexed documents, despite employing inventive techniques like
+Even sophisticated keyword searches like Liferay's (as powered by Elasticsearch) cannot match the user's intent with indexed documents, despite employing inventive techniques like
 - analysis to tokenize the keywords and document fields.
 - fuzziness and slop to enable imprecise matching.
 - stemming to break words down into their roots to allow synonym matching.
 - stop words to ignore insignificant words.
 
-Lexical processing of the tokenized keywords and document fields can be enough for many search needs. If you need more from the search experience, semantic search greatly closes the gap between what a lexical search can accomplish and what the user really wants from the search: process not just the words of the search, but their intent.
+Searching by tokenized keywords and document fields can be enough for many search needs. If you need more from the search experience, semantic search greatly closes the gap between what a keyword search can accomplish and what the user really wants from the search: process not just the words of the search, but their intent.
 
 ![Natural language search phrases are processed by semantic search systems.](./semantic-search/images/03.png)
 
 Semantic search enables an additional content processing pipeline. When enabled, the platform produces a vector representation of the input text called a text embedding, and stores it in the index document in Elasticsearch. At search time, the search keywords entered by users go through the same vectorization and embedding process, making it possible to perform similarity searches that provide more meaningfully relevant search results for users. Not all content types support text embedding:
 
-| Supported Content Type | Enabled by Default? |
-| :--------------------- | :------------------ |
-| Blogs Entry            | &#10004;            |
-| Knowledge Base Article | &#10004;            |
-| Message Boards Message | &#10008;            |
-| Basic Web Content      | &#10004;            |
-| Wiki Page              | &#10004;            |
+| Supported Content Type         | Enabled by Default? |
+| :----------------------------- | :------------------ |
+| Blogs Entry                    | &#10004;            |
+| Knowledge Base Article         | &#10004;            |
+| Message Boards Message         | &#10008;            |
+| Basic Web Content Article      | &#10004;            |
+| Wiki Page                      | &#10004;            |
 
 ```{important}
 An effective semantic search solution requires a model trained for your data domain. The most straightforward approach is to find a suitable pre-trained model, then fine-tune it to your data. The examples demonstrated here are not production-ready semantic search solutions.
@@ -110,10 +108,10 @@ The Index Settings include the following:
 **Types:** Select the content types to be transformed. By default four supported types are processed, including Blogs Entry, Knowledge Base Article, Web Content Article, and Wiki Page. Message Boards Message entities can be configured if desired. 
 
 ```{note}
-Only Basic Web Content is currently supported.
+Only Basic Web Content articles are currently supported.
 ```
 
-**Languages:** Select the languages and localizations to be transformed. By default all listed languages are selected: Arabic (Saudi Arabia), Catalan (Spain), Chinese (China), Dutch (Netherlands), English (United States), Finnish (Finland), French (France), German (Germany), Hungarian (Hungary), Japanese (Japan), Portuguese (Brazil), Spanish (Spain), and Swedish (Sweden). Select multiple languages from the list using _Ctrl + Click_.
+**Languages:** Select the languages and localizations to be transformed. By default all listed languages are selected. Select multiple languages from the list using _Ctrl + Click_.
 
 ```{warning}
 Enabling a language doesn't guarantee that the sentence embedding is created for the language. The language must be available in the site. If a language is enabled in System/Instance Settings, and available in the site, but there is no translation for a given piece of content, the default translation is used to create the text embeddings.
@@ -121,21 +119,21 @@ Enabling a language doesn't guarantee that the sentence embedding is created for
 
 The Search Settings include the following:
 
-**Text Embedding Cache Timeout:** Set the cache timeout in milliseconds for transformed search keywords. By default 604800 is used (about ten minutes).
+**Text Embedding Cache Timeout:** Set the cache timeout in milliseconds for transformed search keywords. If the cache is within the timeout, Liferay won't request the keyword's text embedding from the text embedding provider. By default the timeout is 604800 ms (about ten minutes).
 
 ## Understanding Semantic Search in Liferay
 
 Semantic Search in Liferay can be one of two things:
 1. Full semantic search, where the normal indexers are disabled in a Search blueprint, and only text embeddings are used to search for relevant content.
-1. Hybrid semantic search, where a lexical search is performed first, and text embeddings are used to re-score the results.
+1. Hybrid semantic search, where a keyword search is performed first, and text embeddings are used to re-score the results.
 
 Providing a robust understanding semantic search and its intricacies is beyond the scope of this brief explanation. Instead we'll focus on how Liferay's semantic search implementation works, along the way explaining a few fundamental concepts of a semantic search.
 
 Semantic search impacts the Liferay search at both index time and search time, introducing an additional level of content processing.
 
-During the indexing phase, 
+### Semantic Search at the Indexing Phase
 
-* Standard processing occurs:
+* First, regular content processing occurs:
   * [LIFERAY] Content in Liferay is sent to the search engine where it's processed according to its data type: text is analyzed appropriately and stored in the index.
 * [LIFERAY] Additional semantic search processing occurs:
    * Following the configuration in System/Instance Settings, the text snippet is sent by Liferay to the text embedding provider. 
@@ -148,13 +146,9 @@ During the indexing phase,
 
 [^1]: To inspect the field in a document, use the [Display Results in Document Form](../../search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) setting, or the [Search Blueprints preview](./search-blueprints/creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) functionality.
 
-During the search phase,
+### Semantic Search at the Searching Phase
 
-* Standard Processing occurs:
+* Regular keyword matching occurs:
   * The search phrase entered in the Search Bar widget is received by Liferay's search framework, sent through to the search engine for analysis and additional processing, matched to existing index documents in the search engine, which are scored for relevance and returned to Liferay for its additional processing (highlighting, summarizing, performing additional filtering for permissions, etc.). 
-* Additional semantic search Processing occurs:
-  * The search phrase is sent to the text embedding provider, and a vector representation is created (the [text embedding](https://neuml.github.io/txtai/embeddings/)). Before rendering the search results scored by lexical relevance, the results captured within the window limit setting are re-scored by comparing the vector representation of the search phrase with the vector representations of the index documents. New scores are calculated, and the newly ordered results are returned to the search page for consumption by the end user. See Elastic's [What is Vector Search](https://www.elastic.co/what-is/vector-search) for more information.
-
-Embeddings are meant to capture the meaning and the context of the input they are generated from (say, a the title and the first few sentences of the content of a Web Content Article) and it can provide better results for user searches over the traditional keyword matching. In order to achieve this, at search time, the keywords entered by users need to go through the same process making it possible to perform a similarity search or vector search from Liferay DXP to provide better, semantically more relevant results for users.
-
-<!-- TODO: Quickly follow this documentation with a more robust example article, configuring the ootb element differently and including Petteri's more complicated custom element? -->
+* Additional semantic search processing occurs:
+  * The search phrase is sent to the text embedding provider, and a vector representation is created (the [text embedding](https://neuml.github.io/txtai/embeddings/)). Before rendering the search results scored by keyword search relevance, the results captured within the window limit setting are re-scored by comparing the vector representation of the search phrase with the vector representations of the index documents. New scores are calculated, and the newly ordered results are returned to the search page for consumption by the end user. See Elastic's [What is Vector Search](https://www.elastic.co/what-is/vector-search) for more information.

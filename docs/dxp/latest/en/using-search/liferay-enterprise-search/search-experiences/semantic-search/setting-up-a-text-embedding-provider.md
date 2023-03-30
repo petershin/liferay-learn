@@ -3,7 +3,6 @@ uuid: a46cc468-a441-4a77-9628-b618b79d823b
 ----
 # Setting Up a Text Embedding Provider
 
-{bdg-primary}`LES Subscription`
 {bdg-secondary}`7.4 U70+`
 {bdg-link-dark}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
 

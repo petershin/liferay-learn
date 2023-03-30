@@ -1,4 +1,4 @@
-import {clientId, clientSecret, redirectUri} from './config';
+import {clientId, clientSecret, redirectUri} from '../../utils/config';
 
 export const getAuthToken = async code => {
 	const request = {

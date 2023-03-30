@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 
-import Authorize from '../components/Authorize';
-import Token from '../components/Token';
-import Users from '../components/Users';
+import Authorize from '../../components/Authorize';
+import Token from '../../components/Token';
+import Users from '../../components/Users';
 
 function AuthorizationCode() {
 	const [code, setCode] = useState('');

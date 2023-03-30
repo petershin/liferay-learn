@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-import Token from '../components/Token';
-import Users from '../components/Users';
+import Token from '../../components/Token';
+import Users from '../../components/Users';
 
 function Password() {
 	const [token, setToken] = useState({});

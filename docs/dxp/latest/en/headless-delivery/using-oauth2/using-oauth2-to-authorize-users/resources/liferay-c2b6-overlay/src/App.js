@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter, Link, Routes, Route} from 'react-router-dom';
 
-import AuthorizationCode from './grant-type-authorization-code/AuthorizationCode';
-import ClientCredentials from './grant-type-client-credentials/ClientCredentials';
-import Password from './grant-type-password/Password';
+import AuthorizationCode from './routes/grant-type-authorization-code/AuthorizationCode';
+import ClientCredentials from './routes/grant-type-client-credentials/ClientCredentials';
+import Password from './routes/grant-type-password/Password';
 
 function App() {
 	return (

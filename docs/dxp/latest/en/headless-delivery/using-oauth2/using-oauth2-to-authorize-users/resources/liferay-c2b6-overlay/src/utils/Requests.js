@@ -1,11 +1,13 @@
-import {clientId, clientSecret, username, password} from '../../utils/config';
+import {clientId, clientSecret, password, redirectUri, username} from './config';
 
-export const getAuthToken = async () => {
+export const getAuthToken = async ({code, grantType}) => {
 	const request = {
 		client_id: clientId,
 		client_secret: clientSecret,
-		grant_type: 'password',
+		code: code,
+		grant_type: grantType,
 		password: password,
+		redirect_uri: redirectUri,
 		username: username,
 	};
 

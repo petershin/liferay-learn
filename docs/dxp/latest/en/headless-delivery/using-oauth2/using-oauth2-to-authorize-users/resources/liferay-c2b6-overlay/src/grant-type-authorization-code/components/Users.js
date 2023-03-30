@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-import {getUsers} from '../utils/Requests';
+import {getUsers} from '../../utils/Requests';
 
 function Users({token}) {
 	const [users, setUsers] = useState([]);

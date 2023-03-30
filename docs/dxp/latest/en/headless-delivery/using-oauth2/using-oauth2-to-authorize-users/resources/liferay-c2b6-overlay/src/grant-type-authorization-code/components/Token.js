@@ -1,8 +1,8 @@
-import {getAuthToken} from '../utils/Requests';
+import {getAuthToken} from '../../utils/Requests';
 
 export function Token({handleToken, code}) {
 	async function handleGetToken() {
-		const token = await getAuthToken(code);
+		const token = await getAuthToken({code:code, grantType: 'client_credentials'});
 		handleToken(token);
 	}
 

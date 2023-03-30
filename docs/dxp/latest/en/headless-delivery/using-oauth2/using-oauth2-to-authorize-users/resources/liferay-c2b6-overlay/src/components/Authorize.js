@@ -1,4 +1,4 @@
-import {clientId} from '../../utils/config';
+import {clientId} from '../utils/config';
 
 function Authorize({handleCode}) {
 	const urlParams = new URLSearchParams(window.location.search);

@@ -38,6 +38,18 @@ If you leave the _Enable _Import_ box unchecked, users are imported individually
 1. Click on the user Kyle Klein. See [creating users](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#creating-users), if you need to create this user.
 
 1. Make a change to his personal information. For example, change his birth year from 1970 to 1971. Click _Save_.
+   
+1. Go back to the LDAP server settings. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
+
+1. In the left navigation, click _Servers_. 
+
+1. Click the _Edit_ (![Edit icon](../../images/icon-edit.png)) of the almightysyrup LDAP server.
+
+1. Scroll down and click _Test LDAP Users_. See that Kyle Klein has been added to the LDAP.
+
+   ![Kyle Klein as been added to the LDAP.](./importing-and-exporting-users/images/02.png)
+
+1. Make a change to his personal information. For example, change his birth year from 1970 to 1971. Click _Save_.
 
 1. Go back to the LDAP server settings. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
 

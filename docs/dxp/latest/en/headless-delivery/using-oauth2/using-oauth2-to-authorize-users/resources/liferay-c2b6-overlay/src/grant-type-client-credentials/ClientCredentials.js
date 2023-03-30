@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import Token from './components/Token';
-import Users from './components/Users';
+import Users from '../components/Users';
 
 function ClientCredentials() {
 	const [token, setToken] = useState({});

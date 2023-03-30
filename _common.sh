@@ -46,6 +46,13 @@ function generate_custom_element {
 
 		# TODO Prettify package.json (overlay and merged)
 
+		rm -fr ./${1}-remote-app/src
+
+		if [ -e ../liferay-${1}-overlay/src ]
+		then
+			cp -r ../liferay-${1}-overlay/src ${1}-remote-app
+		fi
+
 		if [ -e ../liferay-${1}-overlay/package.json ]
 		then
 			jq -s '.[0] * .[1]' ../liferay-${1}-overlay/package.json ./${1}-remote-app/package.json > package.json
@@ -64,10 +71,6 @@ function generate_custom_element {
 
 			cd ..
 		fi
-
-		rm -fr ./${1}-remote-app/src
-
-		cp -r ../liferay-${1}-overlay/src ${1}-remote-app
 	fi
 
 	cd ..

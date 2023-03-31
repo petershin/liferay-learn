@@ -1,6 +1,8 @@
-import {clientId} from '../utils/config';
+import React from 'react';
 
 function Authorize({handleCode}) {
+	const [clientId, setClientId] = React.useState('');
+
 	const urlParams = new URLSearchParams(window.location.search);
 
 	function handleAuthorize(event) {
@@ -28,9 +30,21 @@ function Authorize({handleCode}) {
 	return (
 		<div>
 			<h2>Authorize</h2>
+
+			<input
+				onChange={(event) => setClientId(event.target.value)}
+				placeholder="Client ID"
+				style={{width: 500}}
+				type="text"
+				value={clientId}
+			/>
+
+			<br />
+
 			<form onSubmit={handleAuthorize}>
 				<button type='onSubmit'>Authorize</button>
 			</form>
+
 			<button onClick={getCode} disabled={!codeParams}>
 				Get Authorization Code
 			</button>

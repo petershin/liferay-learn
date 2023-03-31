@@ -1,6 +1,6 @@
-import {clientId, clientSecret, password, username} from './config';
+import {clientSecret, password, username} from './config';
 
-export const getAuthToken = async ({code, grantType}) => {
+export const getAuthToken = async ({clientId, code, grantType}) => {
 	let redirectUri = window.location.href;
 
 	if (redirectUri.lastIndexOf('?') > 0) {

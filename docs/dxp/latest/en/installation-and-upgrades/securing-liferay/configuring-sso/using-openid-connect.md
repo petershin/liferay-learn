@@ -19,9 +19,7 @@ To use OpenID Connect, you must first register it as a client in your provider. 
 
 1. During the creation process, you must supply an *authorized redirect URL* that can process the tokens sent from the provider. Liferay DXP's URL is
 
-   ```bash
-   https://[server.domain]/c/portal/login/openidconnect
-   ```
+    https://[server.domain]/c/portal/login/openidconnect
 
 1. The provider sends several pieces of information. Some of these, like the Discovery Endpoint, Authorization Endpoint, or Issuer URL are the same regardless of the client. The two pieces of information unique to your request are the `client_id` and the `client_secret`.
 

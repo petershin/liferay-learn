@@ -37,7 +37,7 @@ Set up txtai to access its APIs. To run txtai in a docker container, see the [tx
    curl https://raw.githubusercontent.com/neuml/txtai/master/docker/api/Dockerfile -O
    ```
 
-1. Create a `config.yml` file in the `txtai` folder, and give it these minimal contents:
+1. Create a `config.yml` file in the `txtai` folder and give it these minimal contents:
 
    ```yaml
    path: /tmp/index
@@ -68,7 +68,7 @@ Set up txtai to access its APIs. To run txtai in a docker container, see the [tx
 
 1. In Liferay, open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Search Experiences* &rarr; *Semantic Search*.
 
-   - Set Text Embeddings Enabled to true.
+   - Set _Text Embeddings Enabled_ to _true_.
    - Select _txtai_ as the Text Embedding Provider.
    - If you followed the above test setup, leave the default values in txtai Host Address, Basic Auth Username, and Basic Auth Password.
    - Leave the default value (768) in Embedding Vector Dimensions.
@@ -109,7 +109,7 @@ Once you have an account,
 
 1. Configure the other Hugging Face settings as desired:
 
-   **Model Timeout:** Set the time (in seconds) to wait for the model to be loaded before timing out. Hugging Face allows you to pin models in memory to avoid repeated time-consuming loading of models.
+   **Model Timeout:** Set the time (in seconds) to wait for the model to be loaded before timing out. You can pin Hugging Face models in memory to avoid repeated time-consuming loading of models.
 
 Before saving the configuration, click the _Test Configuration_ button to ensure that Liferay can connect with the Hugging Face Inference API and that the settings are correct.
 

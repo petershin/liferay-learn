@@ -16,7 +16,7 @@ Configure [Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference
 Aggregations added in Search Blueprints are applied in addition to those already present in the search request (e.g., from facets).
 
 ```{note}
-Aggregations can be configured and will be returned in the search response, but there is no out of the box way to display or otherwise process the Blueprint-added aggregation in Liferay's UI. Custom code is required to consume the aggregations added in Blueprints.
+Aggregations can be configured and are returned in the search response, but there is no out-of-the-box way to display or otherwise process the Blueprint-added aggregation in Liferay's UI. Custom code is required to consume the aggregations added in Blueprints.
 ```
 
 To add an Aggregation to a Blueprint, 
@@ -100,9 +100,9 @@ To add a Sort to a Blueprint,
 
 Declare new template variables from search context attributes. For example, a Custom Filter widget could be combined with a Widget Template and a Blueprint to allow the end user to toggle the search results between unpublished and draft content. 
 
-This example adds a new search context attribute that we'll use to exclude Web Content from the search results, if the value of the attribute is _true_.
+This example adds a new search context attribute that excludes Web Content from the search results if the value of the attribute is _true_.
 
-1. Add the Parameter Configuration to a new Blueprint: go to the Configuration tab and find the PArameter Configuration text box. Add
+1. Add the Parameter Configuration to a new Blueprint: go to the _Configuration_ tab and find the Parameter Configuration text box. Add
 
    ```json
    {
@@ -114,7 +114,7 @@ This example adds a new search context attribute that we'll use to exclude Web C
    }
    ```
 
-1. Add a Custom Element to the Blueprint: Go to the Query Builder tab, find the Custom JSON Element, and click _Add_. Overwrite the existing content with this:
+1. Add a Custom Element to the Blueprint: Go to the _Query Builder_ tab, find the Custom JSON Element, and click _Add_. Overwrite the existing content:
 
    ```json
    {
@@ -182,11 +182,11 @@ This example adds a new search context attribute that we'll use to exclude Web C
 
 1. Add the search context attribute. For testing purposes you can do this in the [preview](creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) sidebar.
 
-   Click _Preview_. Add search context attributes to the Blueprint preview search by clicking the gear icon (![Gear](../../../../images/icon-cog3.png)). Enter the key/value pair for the attribute: `exclude.journal_articles`/`true`
+1. Click _Preview_. Add search context attributes to the Blueprint preview search by clicking the gear icon (![Gear](../../../../images/icon-cog3.png)). Enter the key/value pair for the attribute: `exclude.journal_articles`/`true`
 
-   Then click _Done_. 
+1. Then click _Done_. 
 
-   **Checkpoint:** Execute a search that you expect to return a Web Content article (add one if needed) and verify that the article is not returned. Open the attribute configuration again and set the value to _false_. Verify that the preview search now includes the Web Content.
+**Checkpoint:** Execute a search that you expect to return a Web Content article (add one if needed) and verify that the article is not returned. Open the attribute configuration again and set the value to _false_. Verify that the preview search now includes the Web Content.
 
 
    ```{tip}
@@ -196,7 +196,7 @@ This example adds a new search context attribute that we'll use to exclude Web C
 ## Advanced Configuration
 
 ```{warning}
-This is an advanced feature that will be rarely needed. Because no out of the box feature in Liferay's UI responds to this configuration, only custom code can consume the result of this configuration in the search response.
+This is an advanced feature that is rarely needed. Because no out-of-the-box feature in Liferay's UI responds to this configuration, only custom code can consume the result of this configuration in the search response.
 ```
 
 The Advanced Configuration adds [source includes and excludes](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping-source-field.html#include-exclude) as search request parameters. The `_source` field contains the stored document body that was passed to the index request. This field is not itself indexed. The Advanced Configuration in Blueprints lets you prune the `_source` field by specifying what fields to include or exclude from the field. As it overlaps in functionality and may conflict with the Low Level Search Option widget's _Fields to Return_ configuration, you must not use both approaches in tandem. To add an Advanced configuration to a Blueprint, 
@@ -228,7 +228,7 @@ Both configuration entries can be found in the Search Experiences category of Co
 
 ![Configure the ipstack and OpenWeatherMap services to enable geolocation capabilities in Search Blueprints.](./search-blueprints-configuration-reference/images/02.png)
 
-[Ipstack](https://ipstack.com/) is used to provide geolocation information based on the user's IP address.
+[Ipstack](https://ipstack.com/) provides geolocation information based on the user's IP address.
 
 | Ipstack Configuration | Default Value | Description | 
 | :-------------------- | :------------ | :---------  |

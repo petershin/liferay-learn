@@ -10,7 +10,7 @@ To make the search page react to your search blueprint,
 1. [Create a blueprint](./creating-and-managing-search-blueprints.md).
 1. Create or navigate to the [search page](../../../search-pages-and-widgets/working-with-search-pages.md).
 1. Add the Blueprint Options widget to the page. 
-1. Click the widget's Options icon (![Options](../../../../images/icon-app-options.png)) and click *Configuration*.
+1. Click the widget's _Options_ icon (![Options](../../../../images/icon-app-options.png)) and click *Configuration*.
 1. To choose a blueprint for the page, click _Select_.
 
    ![Select a blueprint for use on the page.](./using-a-search-blueprint-on-a-search-page/images/02.png)
@@ -32,9 +32,9 @@ Unless you're already using the Low Level Search Options widget on your search p
 
 ## Applying Additional Search Context Attributes
 
-Blueprints are applied to the page using the Blueprints Options widget, or using a search context attribute in the Low Level Search Options widget, as described above. Additional search context attributes can be set in the Low Level Search Options widget. There are two primary reasons you might need to set search context attributes into the search page:
+Blueprints are applied to the page using the Blueprints Options widget, or using a search context attribute in the Low Level Search Options widget, as described above. You can set additional search context attributes in the Low Level Search Options widget. There are two primary reasons you might need to set search context attributes into the search page:
 
-1. A blueprint can define and respond to a custom parameter (one that won't be set by Liferay's search framework), and these can be manually set in the Low Level Search Options widget.
+1. A blueprint can define and respond to a custom parameter (one that isn't set by Liferay's search framework), and these can be set manually in the Low Level Search Options widget.
 1. It can be useful to test the behavior of the blueprint on the search page by setting search context attributes and executing a search request.
 
    See [the Elements reference for more information](./search-blueprints-elements-reference.md) about the parameters used by the out of the box elements.

@@ -3,7 +3,7 @@ uuid: c1e4f65b-8cdb-4041-a49b-be77ea918778
 ---
 # Creating Elements
 
-There are a lot of [system Elements that ship with Search Blueprints](../search-blueprints-elements-reference.md). If none of the system Elements can meet your need, there are a variety of ways to create your own Search Blueprints Elements:
+There are a lot of [system Elements that ship with Search Blueprints](../search-blueprints-elements-reference.md). If none of the system Elements meets your needs, there are many ways to create your own Search Blueprints Elements:
 
 * [Use the Custom JSON Element](#using-the-custom-json-elements) to create Elements from the Search Blueprints [Query Builder](../creating-and-managing-search-blueprints.md#using-the-query-builder).
 * [Use the Add Element source editor](#using-the-add-element-source-editor) to write Elements using a more robust Element editor, including handy preview functionality and a listing of the predefined template variables in the system. 
@@ -32,11 +32,11 @@ Add the Custom JSON Element to the builder and begin editing the boilerplate JSO
 }
 ```
 
-As you type in the JSON editor, auto-completion reveals the available properties. To further understand the available JSON properties, see [Understanding the Schema](#understanding-the-element-schema).
+As you type in the JSON editor, auto-completion reveals the available properties. To further understand them, see [Understanding the Schema](#understanding-the-element-schema).
 
-While any Element can be written in the Custom JSON Element, usually this approach is best reserved for simple Elements that add a query clause and perhaps a condition. Often these will not need a `uiConfiguration` section and will not make extensive use of the predefined template variables that can be used in an Element. For more complex cases, use the [Element source editor](#using-the-add-element-source-editor).
+While any Element can be written in the Custom JSON Element, usually this approach is best reserved for simple Elements that add a query clause and perhaps a condition. Often these don't need a `uiConfiguration` section and don't make extensive use of the predefined template variables that can be used in an Element. For more complex cases, use the [Element source editor](#using-the-add-element-source-editor).
 
-For example, the below Exclude Journal Articles Element is based on the Custom JSON Element. It adds a condition so that the Element's query is only applied if a parameter called `exclude.journal_articles` is `true`. The query adds a `must_not` term query clause to make sure that results do not match a Web Content article's `entryClassName` field.
+For example, the below Exclude Journal Articles Element is based on the Custom JSON Element. It adds a condition so that the Element's query is only applied if a parameter called `exclude.journal_articles` is `true`. The query adds a `must_not` term query clause to make sure results do not match a Web Content article's `entryClassName` field.
 
 ```json
 {
@@ -102,24 +102,24 @@ For example, the below Exclude Journal Articles Element is based on the Custom J
 }
 ```
 
-This Element depends on a custom variable that can be added using the Parameter Configuration of a Blueprint. See the [Search Blueprints Configuration Reference](../search-blueprints-configuration-reference.md#parameter-configuration) to learn about adding custom variables to the Blueprint.
+This Element depends on a custom variable you can add using the Parameter Configuration of a Blueprint. See the [Search Blueprints Configuration Reference](../search-blueprints-configuration-reference.md#parameter-configuration) to learn about adding custom variables to the Blueprint.
 
 ## Using the Add Element Source Editor
 
-A more robust editing experience is available for building your Elements. From the Elements section of Search Blueprints, click the Add (![Add](../../../../../images/icon-add.png)) button. 
+You can have a more robust editing experience for building your Elements. From the Elements section of Search Blueprints, click _Add_ (![Add](../../../../../images/icon-add.png)). 
 
-Name the Element and click _Create_. The Element Source editor is displayed, and the Predefined Variables are shown in the pane to the left of the editor. As you type in the JSON editor, auto-completion reveals the available properties. To further understand the available JSON properties, see [Understanding the Schema](#understanding-the-element-schema).
+Name the Element and click _Create_. The Element Source editor appears, with the Predefined Variables in the pane to the left of the editor. As you type in the JSON editor, auto-completion reveals the available properties. To further understand the available JSON properties, see [Understanding the Schema](#understanding-the-element-schema).
 
 
 ![Create Elements in the Element source editor.](./creating-elements/images/02.png)
 
-The UI configuration options are defined in a `uiConfiguration` property in the Element JSON. To preview what the Element's configuration window will look like in the Query Builder, click the _Preview_ link (next to the Cancel button).
+The UI configuration options are defined in a `uiConfiguration` property in the Element JSON. To preview the Element's configuration window in the Query Builder, click the _Preview_ link (next to the Cancel button).
 
 ![Preview the Element Configuration window.](./creating-elements/images/03.png)
 
 ### Using Predefined Variables
 
-To add a Predefined Variable to the Element in the Element Source editor, place the cursor where the variable will be, then click on the variable in the left hand sidebar to have it inserted. In the Custom JSON Element you must type the variable directly into the editor.
+To insert a predefined variable to the Element in the Element Source editor, place the cursor at the desired location, then click the variable in the left hand sidebar. In the Custom JSON Element you must type the variable directly into the editor.
 
 See the [Predefined Element Variables Reference](./predefined-element-variables-reference.md) for details.
 
@@ -128,6 +128,8 @@ See the [Predefined Element Variables Reference](./predefined-element-variables-
 ```{warning}
 The [Element schema](#understanding-the-element-schema) can change. If the schema changes between Liferay versions, importing the older Element's JSON may fail.
 ```
+
+<!-- TODO: change the link below to use the git tag when we update the version to one that supports this feature. -->
 
 The schema for Search Blueprint Elements is defined in the [sxp-query-element.schema.json](https://github.com/liferay/liferay-portal/blob/master/modules/dxp/apps/search-experiences/search-experiences-web/src/main/resources/META-INF/resources/sxp_blueprint_admin/schemas/sxp-query-element.schema.json) file. Users with access to the REST API Explorer can browse the schema more conveniently. While logged in to Liferay visit
 
@@ -141,7 +143,7 @@ Expand the _POST /v1.0/sxp-blueprints_ endpoint entry. Scroll down and click the
 Inspect the syntax in the system Elements to better understand how the Elements are constructed using the schema elements.
 ```
 
-Each Element has these two mandatory top-level properties: `elementDefinition` and `title_i18n`. The `elementDefinition` must include the `category` and the `configuration` &rarr; `queryConfiguration` properties:
+Each Element has two mandatory top-level properties: `elementDefinition` and `title_i18n`. The `elementDefinition` must include the `category` and the `configuration` &rarr; `queryConfiguration` properties:
 
 ```json
 {
@@ -163,10 +165,13 @@ In the title field, set the title text for the Element in as many languages as n
 
 The `elementDefinition` is where you'll do the bulk of the work. Its properties include `category`, `configuration`, `icon`, and `uiConfiguration`. 
 
-- `category` provides a string that classifies the behavior of the Element. Specify `match`, `boost`, `conditional`, `filter`, `hide`, or `custom`.
-- `configuration` provides the `queryConfiguration`, which holds the query clauses you're contributing, via the `queryEntries` property.
-- `icon` sets a string that sets which available icon to use for the Element. Any image available in the [Lexicon Icon Library](../../../../../building-applications/developing-a-java-web-application/using-mvc/tag-libraries/clay-tag-library/clay-icons.md) can be used (e.g., `thumbs-up`).
-- `uiConfiguration` sets the configuration elements that you'll show in the UI and then pass into your custom Element with the configured values. 
+`category` provides a string that classifies the behavior of the Element. Specify `match`, `boost`, `conditional`, `filter`, `hide`, or `custom`.
+
+`configuration` provides the `queryConfiguration`, which holds the query clauses you're contributing, via the `queryEntries` property.
+
+`icon` sets a string that sets which available icon to use for the Element. Any image available in the [Lexicon Icon Library](../../../../../building-applications/developing-a-java-web-application/using-mvc/tag-libraries/clay-tag-library/clay-icons.md) can be used (e.g., `thumbs-up`).
+
+`uiConfiguration` sets the configuration elements that you'll show in the UI and then pass into your custom Element with the configured values. 
 
 For example, an Element that boosts a term query match on the `entryClassName` field can configure the query and the UI like this:
 
@@ -215,15 +220,15 @@ The `configuration` property holds the nested properties `queryConfiguration` &r
 
 Diving into the `queryEntries` JSON, it can contain the properties `clauses`, `conditions`, `enabled`, `postFilterClauses`, and `rescores`. 
 
-- The snippet above shows how `clauses` (an array of elements) is used to add a query clause the Element contributes to the Blueprint-driven search. In addition to `query`, you can add `additive`, `boost`, `content`, `disabled`, `field`, `name`, `occur`, `parent`, `type`, or `value` properties.
-- A `condition` provides a boolean check. If true the provided clauses are included in the search query, if false they are left out.
+- The snippet above shows the Element using `clauses` (an array of elements) to add a query clause to the Blueprint-driven search. In addition to `query`, you can add `additive`, `boost`, `content`, `disabled`, `field`, `name`, `occur`, `parent`, `type`, or `value` properties.
+- A `condition` provides a boolean check. If true, the provided clauses are included in the search query; if false, they are left out.
 - Set `enabled` to false (it's true by default) to disable the Element.
 - Add `postFilterClauses` (as an array of `clause` elements). You can add `additive`, `boost`, `content`, `disabled`, `field`, `name`, `occur`, `parent`, `query`, `type`, or `value` properties.
 - Add `rescores` to recalculate the relevance score for results of a query. Specify the `query`, `queryWeight`, `rescoreQueryWeight`, `scoreMode`, and `windowSize`. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/filter-search-results.html#rescore) for details.
 
 The `uiConfiguration` property holds the nested properties `fieldSet` and `field`.
 
-There are a number of configuration properties you can add for each field in the UI Configuration:
+There are several configuration properties you can add for each field in the UI Configuration:
 
 - Use `defaultValue` to enter an initial value for the field.
 - Enter `helpText` to display help text for the field in the Blueprints UI.

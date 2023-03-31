@@ -11,13 +11,13 @@ Picklists are predefined lists of string values that consist of name/key pairs. 
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../../images/icon-add.png)).
 
    ![Click the Add button to create a new picklist.](./using-picklists/images/01.png)
 
-1. Enter a name for the picklist. This value identifies the list in the Liferay UI and can be localized after creation.
+1. Name the picklist. This identifies the list in the Liferay UI and can be localized after creation.
 
-1. Click *Save*. This creates an empty picklist definition and generates an external reference code (ERC) for it, which you can edit at any time.
+1. Click *Save* to create an empty picklist definition and generate an external reference code (ERC) for it, which you can edit.
 
 1. Click the new picklist to begin editing it.
 

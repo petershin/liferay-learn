@@ -3,7 +3,7 @@ uuid: f6380d67-6784-46a4-8723-46fcc24177a5
 ---
 # Configuring Virtual Instances
 
-{bdg-secondary}`LXC-SM or On Premise Only`
+{bdg-secondary}`LXC-SM or Self-hosted`
 
 You may have a business use case where you need another Liferay environment with its own set of sites, users, and organizations. Rather than spinning up a brand new server, you can create a virtual instance.
 
@@ -13,7 +13,7 @@ For example, Delectable Bonsai also sells maple syrup as a white label product. 
 
 Contact your Liferay Cloud support person for setting up virtual instances.
 
-## Virtual Instances in LXC-SM and On Premises
+## Virtual Instances in LXC-SM and Self-hosted
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Virtual Instances_.
 

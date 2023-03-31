@@ -11,7 +11,7 @@ Configure a mail server that is used for email notifications (e.g. user registra
 
 If this wasn't already configured for you, contact your Liferay Cloud support person.
 
-### Configuring Mail in LXC-SM or On-Premises
+### Configuring Mail in LXC-SM or Self-hosted
 
 In real life, you'd already have a mail server for Liferay to use. Here, you'll simulate one. 
 

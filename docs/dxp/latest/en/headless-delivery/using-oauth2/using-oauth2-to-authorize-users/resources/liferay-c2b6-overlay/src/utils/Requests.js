@@ -1,6 +1,12 @@
-import {clientId, clientSecret, password, redirectUri, username} from './config';
+import {clientId, clientSecret, password, username} from './config';
 
 export const getAuthToken = async ({code, grantType}) => {
+	let redirectUri = window.location.href;
+
+	if (redirectUri.lastIndexOf('?') > 0) {
+		redirectUri = redirectUri.slice(0, redirectUri.lastIndexOf('?'));
+	}
+
 	const request = {
 		client_id: clientId,
 		client_secret: clientSecret,

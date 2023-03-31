@@ -32,7 +32,7 @@ Once Liferay is running,
 
    The JSON response shows the newly added order type:
 
-   ```bash
+   ```json
    {
       "actions" : {
          "permissions" : {
@@ -105,7 +105,7 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"`                                              | Enter basic authentication credentials.                  |
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
 ```
 
 The other cURL commands use similar JSON arguments.
@@ -176,7 +176,7 @@ Code:
    :lines: 9-19
 ```
 
-The instance's `OrderType` objects are listed in JSON.
+The instance's `OrderType` objects appear in JSON.
 
 ### Paginating, Searching, and Sorting Order Types
 

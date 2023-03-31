@@ -44,7 +44,7 @@ Once Liferay is running,
    }
    ```
 
-1. To verify the specification addition, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Specifications*. The new specification appears under the *Specification Labels* tab.
+1. To verify the specification addition, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Specifications*. The new specification appears under the Specification Labels tab.
 
    ![Confirm that a new specification was added.](./specification-api-basics/images/01.png)
 
@@ -74,8 +74,8 @@ The `Specification_POST_ToInstance.sh` script calls the REST service with a cURL
 
 Here are the command's arguments:
 
-| Arguments                                                                       | Description                                              |
-| :------------------------------------------------------------------------------ | :------------------------------------------------------- |
+| Arguments                                                                     | Description                                              |
+| :---------------------------------------------------------------------------- | :------------------------------------------------------- |
 | `-H "Content-Type: application/json"`                                           | Set the request body format to JSON.                     |
 | `-X POST`                                                                       | Set the HTTP method to invoke at the specified endpoint. |
 | `"http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/specifications"` | Specify the REST service endpoint.                       |
@@ -83,7 +83,7 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"`                                                   | Enter basic authentication credentials.                  |
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
 ```
 
 The other cURL commands use similar JSON arguments.

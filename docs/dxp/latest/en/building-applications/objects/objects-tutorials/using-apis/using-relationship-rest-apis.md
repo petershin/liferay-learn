@@ -5,16 +5,16 @@ uuid: d4c25858-b99c-46e9-a459-91b75af678f3
 
 {bdg-secondary}`Available Liferay 7.4 U70+/GA70+`
 
-When you add relationships to custom or system objects, Liferay automatically generates REST endpoints for accessing those relationships. Using these endpoints, you can relate and disassociate entries, as well as return an entry's related entries. These endpoints are added to the parent object in one-to-many relationships and to both in many-to-many relationships.
+When you add relationships to custom or system objects, Liferay generates REST endpoints for accessing those relationships. You can relate and disassociate entries, as well as return an entry's related entries. These endpoints are added to the parent object in one-to-many relationships and to both objects in many-to-many relationships.
 
-Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create object entries and manage their relationships with one another.
+To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create object entries and manage their relationships with one another.
 
 ## Setting Up a Liferay Instance
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) three related custom objects:
+Once Liferay is running, [create](../../creating-and-managing-objects/creating-objects.md) three related custom objects:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
@@ -44,7 +44,7 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
    | Plural Label | `Charlies` |
    | Name | `Charlie` |
 
-1. Add this field to each object draft.
+1. Add the `name` field to each object draft.
 
    | Label | Field Name | Type | Required |
    | :--- | :--- | :--- | :--- |
@@ -59,7 +59,7 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
 
 1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) each object.
 
-Once published, you can access their REST APIs. These include the following relationship APIs.
+Once published, you can access their REST APIs, including the following relationship APIs:
 
 | Object  | HTTP Method | HTTP Endpoint                                                      | Java Method                       |
 |:--------|:------------|:-------------------------------------------------------------------|:----------------------------------|
@@ -77,7 +77,7 @@ Once published, you can access their REST APIs. These include the following rela
 | Charlie | PUT         | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putCharlieAbleToCharlieAble`     |
 
 ```{tip}
-For a complete list of APIs generated for both site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
+For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
 ```
 
 ## Preparing the Sample Code
@@ -96,7 +96,7 @@ The sample code includes commands for creating entries for each object and using
 
 ## Using the Sample Code
 
-Follow these steps to use the REST APIs to add object entries and manage their relationships:
+Use the REST APIs to add object entries and manage their relationships:
 
 1. Navigate to the `curl` folder in the `liferay-f9m2` project.
 
@@ -104,7 +104,7 @@ Follow these steps to use the REST APIs to add object entries and manage their r
    cd liferay-f9m2/curl
    ```
 
-1. Run these `POST` commands to create three entries for each object. These entries have predefined external reference codes (ERCs) following the `[objectname]-[number]` naming pattern (e.g., `able-one`).
+1. Run `POST` commands to create three entries for each object. These entries have predefined external reference codes (ERCs) following the `[objectname]-[number]` naming pattern (e.g., `able-one`).
 
    ```bash
    ./Able_POST_Batch.sh
@@ -124,7 +124,7 @@ Follow these steps to use the REST APIs to add object entries and manage their r
    ./Able_PUT_AbleToBaker_ByExternalReferenceCode.sh able-one baker-one baker-two baker-three
    ```
 
-   This relates the able entry with the baker entries and outputs their data.
+   This relates the able entry with the baker entries and prints the response.
 
    ```bash
    {
@@ -199,7 +199,7 @@ Follow these steps to use the REST APIs to add object entries and manage their r
    ./Able_PUT_AbleToCharlie_ByExternalReferenceCode.sh able-one charlie-one charlie-two charlie-three
    ```
 
-   This relates the able entry with the charlie entries and outputs their data.
+   This relates the able entry with the charlie entries and prints the response.
 
    ```bash
    {

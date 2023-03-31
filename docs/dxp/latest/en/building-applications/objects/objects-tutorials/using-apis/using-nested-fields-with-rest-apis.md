@@ -5,20 +5,20 @@ uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 
 {bdg-secondary}`Available Liferay 7.4 U69+/GA69+`
 
-With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related objects in a single GET request. You can also use the `nestedFieldsDepth` parameter to determine the depth of object entries included in the query: `0-5`.
+With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related objects in a single GET request. The `nestedFieldsDepth` parameter determines the depth of object entries included in the query: `0-5`.
 
 ```{tip}
 The `nestedFields` parameter is a convenient way to retrieve information that would usually require multiple requests. With it, you can retrieve an entry's information along with the information of its related entries. To return only the related entries, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introductory tutorial.
 ```
 
-Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create related entries and query them using the `nestedFields` parameter.
+To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create related entries and query them using the `nestedFields` parameter.
 
 ## Setting Up a Liferay Instance
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) three objects:
+Once Liferay is running, [create](../../creating-and-managing-objects/creating-objects.md) three objects:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
@@ -48,7 +48,7 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
    | Plural Label | `Charlies` |
    | Name | `Charlie` |
 
-1. Add the following text field to each object draft.
+1. Add the `name` text field to each object draft.
 
    | Label | Field Name | Type | Required |
    | :--- | :--- | :--- | :--- |
@@ -87,7 +87,7 @@ unzip liferay-w4s7.zip
 The sample code includes POST commands for each object, as well as a GET command for `Charlie`.
 
 ```{tip}
-For a complete list of APIs generated for both site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
+For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
 ```
 
 ## Using the Sample Code

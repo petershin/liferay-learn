@@ -55,7 +55,7 @@ Default REST APIs are available for all site-scoped objects. For the Java method
 | PUT         | `/{entryId}`                                          | `putObjectName`                              | Replaces the specified entry's details with those provided in the API call                                    |
 
 ```{note}
-For the `scopeKey`, use the proper identifier for the desired data scope (e.g., site ID, user role).
+For the `scopeKey`, use the proper identifier for the desired data scope (e.g., site ID or user role).
 ```
 
 ## Relationship REST APIs
@@ -83,7 +83,7 @@ In addition to the dedicated relationship APIs, you can use the `nestedFields` q
 
 {bdg-secondary}`Available Liferay 7.4 U60+/GA60+`
 
-When you define standalone actions for a published object, Liferay generates two endpoints for triggering the action. One uses the entry's ID and the other uses the entry's external reference code (ERC). Calling either API triggers the action for the specified entry. See [Using Manual Actions](../creating-and-managing-objects/actions/using-manual-actions.md) for more information.
+When you define standalone actions for a published object, Liferay generates two endpoints for triggering the action on an entry. One uses the entry's ID and the other uses the entry's external reference code (ERC). See [Using Manual Actions](../creating-and-managing-objects/actions/using-manual-actions.md) for more information.
 
 | HTTP Method | HTTP Endpoint                                                 | Java Method               |
 |:------------|:--------------------------------------------------------------|:--------------------------|

@@ -36,9 +36,9 @@ export const getAuthToken = async ({code, grantType}) => {
 	return data;
 };
 
-export const getUsers = token => {
+export const getUsers = async ({token, url}) => {
 	return fetch(
-		`http://localhost:8080/o/headless-admin-user/v1.0/user-accounts`,
+		url,
 		{
 			headers: {
 				'Authorization': 'Bearer ' + token,

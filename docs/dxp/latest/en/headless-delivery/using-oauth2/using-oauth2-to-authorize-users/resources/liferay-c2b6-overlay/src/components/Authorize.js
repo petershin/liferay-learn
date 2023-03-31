@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Authorize({handleCode}) {
+	const [authUrl, setAuthUrl] = React.useState('');
 	const [clientId, setClientId] = React.useState('');
 
 	const urlParams = new URLSearchParams(window.location.search);
@@ -10,8 +11,7 @@ function Authorize({handleCode}) {
 
 		try {
 			window.location.replace(
-				'http://localhost:8080/o/oauth2/authorize?response_type=code&client_id=' +
-					clientId
+				authUrl + '?response_type=code&client_id=' + clientId
 			);
 		}
 		catch (e) {
@@ -30,6 +30,18 @@ function Authorize({handleCode}) {
 	return (
 		<div>
 			<h2>Authorize</h2>
+
+			<input
+				onChange={(event) => setAuthUrl(event.target.value)}
+				placeholder="Liferay Authorize URL"
+				style={{width: 500}}
+				type="text"
+				value={authUrl}
+			/>
+
+			(e.g. http://localhost:8080/o/oauth2/authorize)
+
+			<br />
 
 			<input
 				onChange={(event) => setClientId(event.target.value)}

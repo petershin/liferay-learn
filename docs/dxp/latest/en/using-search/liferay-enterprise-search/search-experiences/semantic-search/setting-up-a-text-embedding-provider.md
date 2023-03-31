@@ -1,6 +1,6 @@
-----
+---
 uuid: a46cc468-a441-4a77-9628-b618b79d823b
-----
+---
 # Setting Up a Text Embedding Provider
 
 {bdg-secondary}`7.4 U70+`

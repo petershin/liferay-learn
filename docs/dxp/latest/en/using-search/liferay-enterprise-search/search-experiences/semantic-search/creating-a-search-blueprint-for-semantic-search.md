@@ -1,6 +1,6 @@
-----
+---
 uuid: 714a2db2-830e-40a8-8f49-5da57a629ef1
-----
+---
 # Creating a Search Blueprint for Semantic Search
 
 {bdg-secondary}`7.4 U70+`

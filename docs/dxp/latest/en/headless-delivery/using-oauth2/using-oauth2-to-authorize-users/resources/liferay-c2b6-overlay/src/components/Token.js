@@ -4,9 +4,10 @@ import {getAuthToken} from '../utils/Requests';
 
 export function Token({handleToken, code, grantType}) {
 	const [clientId, setClientId] = React.useState('');
+	const [clientSecret, setClientSecret] = React.useState('');
 
 	async function handleGetToken() {
-		const token = await getAuthToken({clientId, code, grantType});
+		const token = await getAuthToken({clientId, clientSecret, code, grantType});
 
 		handleToken(token);
 	}
@@ -21,6 +22,16 @@ export function Token({handleToken, code, grantType}) {
 				style={{width: 500}}
 				type="text"
 				value={clientId}
+			/>
+
+			<br />
+
+			<input
+				onChange={(event) => setClientSecret(event.target.value)}
+				placeholder="Client Secret"
+				style={{width: 500}}
+				type="text"
+				value={clientSecret}
 			/>
 
 			<br />

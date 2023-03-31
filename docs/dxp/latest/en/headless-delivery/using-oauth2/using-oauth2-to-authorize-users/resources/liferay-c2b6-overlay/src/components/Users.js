@@ -1,9 +1,9 @@
-import {useState} from 'react';
+import React from 'react';
 
 import {getUsers} from '../utils/Requests';
 
 function Users({token}) {
-	const [users, setUsers] = useState([]);
+	const [users, setUsers] = React.useState([]);
 
 	const handleGetUsers = async () => {
 		await getUsers(token.access_token)

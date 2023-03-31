@@ -6,10 +6,11 @@ export function Token({handleToken, code, grantType}) {
 	const [clientId, setClientId] = React.useState('');
 	const [clientSecret, setClientSecret] = React.useState('');
 	const [password, setPassword] = React.useState('');
+	const [tokenUrl, setTokenUrl] = React.useState('');
 	const [username, setUsername] = React.useState('');
 
 	async function handleGetToken() {
-		const token = await getAuthToken({clientId, clientSecret, code, grantType, password, username});
+		const token = await getAuthToken({clientId, clientSecret, code, grantType, password, tokenUrl, username});
 
 		handleToken(token);
 	}
@@ -17,6 +18,18 @@ export function Token({handleToken, code, grantType}) {
 	return (
 		<div className='Token'>
 			<h2>Get Token</h2>
+
+			<input
+				onChange={(event) => setTokenUrl(event.target.value)}
+				placeholder="Liferay Token URL"
+				style={{width: 500}}
+				type="text"
+				value={tokenUrl}
+			/>
+
+			(e.g. http://localhost:8080/o/oauth2/token)
+
+			<br />
 
 			<input
 				onChange={(event) => setClientId(event.target.value)}

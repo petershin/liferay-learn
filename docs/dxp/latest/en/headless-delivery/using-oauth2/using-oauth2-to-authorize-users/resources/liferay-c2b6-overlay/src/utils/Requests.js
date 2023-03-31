@@ -1,4 +1,4 @@
-export const getAuthToken = async ({clientId, clientSecret, code, grantType, password, username}) => {
+export const getAuthToken = async ({clientId, clientSecret, code, grantType, password, tokenUrl, username}) => {
 	let redirectUri = window.location.href;
 
 	if (redirectUri.lastIndexOf('?') > 0) {
@@ -23,7 +23,7 @@ export const getAuthToken = async ({clientId, clientSecret, code, grantType, pas
 	}
 	formBody = formBody.join('&');
 
-	const data = await fetch(`http://localhost:8080/o/oauth2/token`, {
+	const data = await fetch(tokenUrl, {
 		body: formBody,
 		headers: {
 			'Content-Type': 'application/x-www-form-urlencoded',

@@ -95,7 +95,7 @@ DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵�
 `server.xml`의 `<jvmEntries genericJvmArguments=.../>` 속성에서 UTF-8 속성을 설정할 수 있습니다. 그렇지 않으면 국제 문자가 올바르게 구문 분석되지 않습니다. 최대 및 최소 힙 크기도 늘리십시오. `jvmEntries` 태그 안에 다음을 추가합니다.
 
 ```xml
-<jvmEntries xmi:id="JavaVirtualMachine_1183122130078" ...genericJvmArguments="--Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -Xms6144m -Xmx6144m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7">
+<jvmEntries xmi:id="JavaVirtualMachine_1183122130078" ...genericJvmArguments="-Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -Xms6144m -Xmx6144m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7">
 ```
 
 ```{important}

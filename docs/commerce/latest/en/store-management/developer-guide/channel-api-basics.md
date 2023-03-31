@@ -32,7 +32,7 @@ Once Liferay is running,
 
    The JSON response shows a new channel was added:
 
-   ```bash
+   ```json
    {
       "currencyCode" : "USD",
       "externalReferenceCode" : "29f395e8-779c-e95e-36f6-844a1ebf00c4",
@@ -78,7 +78,7 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"`                                             | Enter basic authentication credentials.                  |
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
 ```
 
 The other cURL commands use similar JSON arguments.

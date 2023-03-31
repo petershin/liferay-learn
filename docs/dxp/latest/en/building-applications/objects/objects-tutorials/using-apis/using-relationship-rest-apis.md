@@ -14,7 +14,7 @@ To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once Liferay is running, [create](../../creating-and-managing-objects/creating-objects.md) three related custom objects:
+Next, [create](../../creating-and-managing-objects/creating-objects.md) three related custom objects:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 

@@ -10,7 +10,7 @@ You can [Create and Manage Picklists](./using-picklists.md) from the Application
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Once Liferay is running,
+Next, prepare the sample code:
 
 1. Download and unzip [Picklists API Basics](./liferay-v3n6.zip).
 

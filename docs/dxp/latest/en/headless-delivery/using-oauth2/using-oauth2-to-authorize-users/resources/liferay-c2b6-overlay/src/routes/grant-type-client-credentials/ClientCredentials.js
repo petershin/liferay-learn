@@ -14,6 +14,12 @@ function ClientCredentials() {
 		<div>
 			<h1>Client Credentials Code Flow</h1>
 
+			Scope: Headless Admin User (e.g. Liferay.Headless.Admin.User.everything.read)
+
+			<br />
+
+			CORS: Configure Portal CORS URL Pattern (e.g. /o/headless-admin-user/*)
+
 			<Token
 				grantType='client_credentials'
 				handleToken={handleToken}

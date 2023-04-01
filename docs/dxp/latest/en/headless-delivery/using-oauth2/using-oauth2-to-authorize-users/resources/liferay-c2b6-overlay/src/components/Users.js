@@ -18,7 +18,7 @@ function Users({token}) {
 
 			<input
 				onChange={(event) => setUrl(event.target.value)}
-				placeholder="URL for get-user"
+				placeholder="Liferay Get User URL"
 				style={{width: 500}}
 				type="text"
 				value={url}

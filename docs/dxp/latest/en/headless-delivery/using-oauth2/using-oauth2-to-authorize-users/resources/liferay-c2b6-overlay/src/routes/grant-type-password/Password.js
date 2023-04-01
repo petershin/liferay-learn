@@ -14,6 +14,12 @@ function Password() {
 		<div>
 			<h1>Password Flow</h1>
 
+			Scope: Headless Admin User (e.g. Liferay.Headless.Admin.User.everything.read)
+
+			<br />
+
+			CORS: Configure Portal CORS URL Pattern (e.g. /o/headless-admin-user/*)
+
 			<Token
 				grantType='password'
 				handleToken={handleToken}

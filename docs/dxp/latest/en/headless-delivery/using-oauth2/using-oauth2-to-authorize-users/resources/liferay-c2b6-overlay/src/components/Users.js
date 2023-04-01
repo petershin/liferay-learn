@@ -7,7 +7,7 @@ function Users({token}) {
 	const [users, setUsers] = React.useState([]);
 
 	const handleGetUsers = async () => {
-		await getUsers({token: token.access_token, url})
+		await getUsers({token, url})
 			.then(response => response.json())
 			.then(data => setUsers(data.items));
 	};

@@ -17,16 +17,19 @@ export const getAuthToken = async ({clientId, clientSecret, grantType, password,
 		username: username,
 	};
 
-	let formBody = [];
+	let body = [];
+
 	for (let property in request) {
 		var encodedKey = encodeURIComponent(property);
 		var encodedValue = encodeURIComponent(request[property]);
-		formBody.push(encodedKey + '=' + encodedValue);
+
+		body.push(encodedKey + '=' + encodedValue);
 	}
-	formBody = formBody.join('&');
+
+	body = body.join('&');
 
 	const data = await fetch(tokenUrl, {
-		body: formBody,
+		body: body,
 		headers: {
 			'Content-Type': 'application/x-www-form-urlencoded',
 		},
@@ -41,7 +44,7 @@ export const getUsers = async ({token, url}) => {
 		url,
 		{
 			headers: {
-				'Authorization': 'Bearer ' + token,
+				'Authorization': 'Bearer ' + token.access_token,
 				'Content-Type': 'application/json',
 			},
 			method: 'GET',

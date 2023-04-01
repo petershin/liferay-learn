@@ -12,8 +12,8 @@ function Authorize() {
 				authUrl + '?response_type=code&client_id=' + clientId
 			);
 		}
-		catch (e) {
-			throw new Error(e);
+		catch (error) {
+			throw new Error(error);
 		}
 	}
 

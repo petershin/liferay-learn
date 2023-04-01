@@ -2,7 +2,7 @@ import React from 'react';
 
 import {getAuthToken} from '../utils/Requests';
 
-export function Token({handleToken, grantType}) {
+function Token({handleToken, grantType}) {
 	const [clientId, setClientId] = React.useState('');
 	const [clientSecret, setClientSecret] = React.useState('');
 	const [password, setPassword] = React.useState('');

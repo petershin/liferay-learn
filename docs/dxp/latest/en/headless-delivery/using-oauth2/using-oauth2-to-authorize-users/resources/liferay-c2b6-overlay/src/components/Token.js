@@ -2,7 +2,7 @@ import React from 'react';
 
 import {getAuthToken} from '../utils/Requests';
 
-export function Token({handleToken, code, grantType}) {
+export function Token({handleToken, grantType}) {
 	const [clientId, setClientId] = React.useState('');
 	const [clientSecret, setClientSecret] = React.useState('');
 	const [password, setPassword] = React.useState('');
@@ -10,7 +10,7 @@ export function Token({handleToken, code, grantType}) {
 	const [username, setUsername] = React.useState('');
 
 	async function handleGetToken() {
-		const token = await getAuthToken({clientId, clientSecret, code, grantType, password, tokenUrl, username});
+		const token = await getAuthToken({clientId, clientSecret, grantType, password, tokenUrl, username});
 
 		handleToken(token);
 	}

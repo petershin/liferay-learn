@@ -1,14 +1,16 @@
-export const getAuthToken = async ({clientId, clientSecret, code, grantType, password, tokenUrl, username}) => {
+export const getAuthToken = async ({clientId, clientSecret, grantType, password, tokenUrl, username}) => {
 	let redirectUri = window.location.href;
 
 	if (redirectUri.lastIndexOf('?') > 0) {
 		redirectUri = redirectUri.slice(0, redirectUri.lastIndexOf('?'));
 	}
 
+	const urlSearchParams = new URLSearchParams(window.location.search);
+
 	const request = {
 		client_id: clientId,
 		client_secret: clientSecret,
-		code: code,
+		code: urlSearchParams.get('code'),
 		grant_type: grantType,
 		password: password,
 		redirect_uri: redirectUri,

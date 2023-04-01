@@ -1,10 +1,8 @@
 import React from 'react';
 
-function Authorize({handleCode}) {
+function Authorize() {
 	const [authUrl, setAuthUrl] = React.useState('');
 	const [clientId, setClientId] = React.useState('');
-
-	const urlParams = new URLSearchParams(window.location.search);
 
 	function handleAuthorize(event) {
 		event.preventDefault();
@@ -16,14 +14,6 @@ function Authorize({handleCode}) {
 		}
 		catch (e) {
 			throw new Error(e);
-		}
-	}
-
-	const codeParams = urlParams.get('code');
-
-	function getCode() {
-		if (codeParams) {
-			handleCode(codeParams);
 		}
 	}
 
@@ -56,10 +46,6 @@ function Authorize({handleCode}) {
 			<form onSubmit={handleAuthorize}>
 				<button type='onSubmit'>Authorize</button>
 			</form>
-
-			<button onClick={getCode} disabled={!codeParams}>
-				Get Authorization Code
-			</button>
 		</div>
 	);
 }

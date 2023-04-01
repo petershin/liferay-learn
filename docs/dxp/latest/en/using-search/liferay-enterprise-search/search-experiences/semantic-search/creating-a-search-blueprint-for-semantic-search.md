@@ -4,7 +4,7 @@ uuid: 714a2db2-830e-40a8-8f49-5da57a629ef1
 # Creating a Search Blueprint for Semantic Search
 
 {bdg-secondary}`7.4 U70+`
-{bdg-link-dark}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
+{bdg-link-primary}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
 
 Once a model is selected and the text embeddings are indexed, you must configure Liferay to account for the embeddings at search time. Conceptually you have two choices:
 

@@ -28,7 +28,7 @@ The Liferay Enterprise Search Experiences app includes a suite of features grant
 
 ## Semantic Search
 
-{bdg-link-dark}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
+{bdg-link-primary}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
 
 [Semantic Search](./search-experiences/semantic-search.md) parses index content and users' natural language search phrases with a machine learning model, so that results better reflect the intent of their search.
 

@@ -39,29 +39,29 @@ function generate_custom_element {
 
 	cd liferay-${1}.zip
 
-	curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s ${1}-remote-app react
+	curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s ${1}-custom-element react
 
 	if [ -e ../liferay-${1}-overlay ]
 	then
 
 		# TODO Prettify package.json (overlay and merged)
 
-		rm -fr ./${1}-remote-app/src
+		rm -fr ./${1}-custom-element/src
 
 		if [ -e ../liferay-${1}-overlay/src ]
 		then
-			cp -r ../liferay-${1}-overlay/src ${1}-remote-app
+			cp -r ../liferay-${1}-overlay/src ${1}-custom-element
 		fi
 
 		if [ -e ../liferay-${1}-overlay/package.json ]
 		then
-			jq -s '.[0] * .[1]' ../liferay-${1}-overlay/package.json ./${1}-remote-app/package.json > package.json
+			jq -s '.[0] * .[1]' ../liferay-${1}-overlay/package.json ./${1}-custom-element/package.json > package.json
 
-			rm -f ./${1}-remote-app/package.json
+			rm -f ./${1}-custom-element/package.json
 
-			mv package.json ./${1}-remote-app/package.json
+			mv package.json ./${1}-custom-element/package.json
 
-			cd ${1}-remote-app
+			cd ${1}-custom-element
 
 			rm -fr node_modules
 

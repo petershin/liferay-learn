@@ -9,7 +9,7 @@ You can transfer picklists between environments as JSON files using Liferay's ex
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
-1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired list and select *Export as JSON*.
+1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired list and select *Export as JSON*.
 
    This downloads the picklist definition and items as a JSON file.
 
@@ -19,15 +19,15 @@ You can transfer picklists between environments as JSON files using Liferay's ex
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
-1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) in the Application Bar and select *Import Picklist*.
+1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) in the Application Bar and select *Import Picklist*.
 
    ![Click the Action button in the Application Bar and select Import Picklist.](./exporting-and-importing-picklists/images/02.png)
 
-1. In the modal window, enter a name for the list and select a picklist JSON to import.
+1. In the modal window, enter a name for the list and select the picklist JSON to import.
 
 1. Click *Import*.
 
-   ![Enter a name for the list and select a picklist JSON to import.](./exporting-and-importing-picklists/images/03.png)
+   ![Enter a name for the list and select a picklist to import.](./exporting-and-importing-picklists/images/03.png)
 
 ## Additional Information
 

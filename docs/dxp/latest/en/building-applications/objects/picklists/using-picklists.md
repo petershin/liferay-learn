@@ -5,7 +5,7 @@ uuid: 648d34f3-b6f8-4569-93a2-92ce758dc3b4
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-Picklists are predefined lists of string values that consist of name/key pairs. Once defined, you can use these lists with object definitions.
+Picklists are lists of name/key pairs stored as string values. Once defined, you can use the lists with object definitions to populate single or multiple selection fields. See [Picklists](../picklists.md) for more picklist use cases.
 
 ## Creating a Picklist
 
@@ -13,17 +13,17 @@ Picklists are predefined lists of string values that consist of name/key pairs. 
 
 1. Click *Add* (![Add Button](../../../images/icon-add.png)).
 
-   ![Click the Add button to create a new picklist.](./using-picklists/images/01.png)
+   ![Click Add to create a new picklist.](./using-picklists/images/01.png)
 
-1. Name the picklist. This identifies the list in the Liferay UI and can be localized after creation.
+1. Name the picklist to identify the list in the UI. You can localize the name after creation.
 
-1. Click *Save* to create an empty picklist definition and generate an external reference code (ERC) for it, which you can edit.
+1. Click *Save* to create an empty picklist definition and generate an external reference code (ERC). You can edit the ERC after creation.
 
 1. Click the new picklist to begin editing it.
 
-1. Under Items, click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Under Items, click *Add* (![Add](../../../images/icon-add.png)).
 
-   ![Click the Add button to add a new item to the picklist.](./using-picklists/images/02.png)
+   ![Click Add to add a new item to the picklist.](./using-picklists/images/02.png)
 
 1. In the modal window, enter a name and key for the item.
 
@@ -33,9 +33,9 @@ Picklists are predefined lists of string values that consist of name/key pairs. 
 
    ![Enter a name and key, and then click Save.](./using-picklists/images/03.png)
 
-1. Click *Save*. This immediately updates the picklist with the new item and generates an external reference code (ERC) for it.
+1. Click *Save*. The picklist updates immediately with the new item and generates an external reference code (ERC) for it.
 
-   If desired, you can click the list item to localize its name or edit its ERC, but you cannot change its key value. You can remove items at any time.
+   You can click the list item to localize its name or edit its ERC, but you cannot change its key. You can remove items at any time.
 
 1. Repeat the above steps to add additional items to the list.
 
@@ -45,7 +45,7 @@ Picklists are predefined lists of string values that consist of name/key pairs. 
 
 {bdg-secondary}`For 7.4 U56+/GA56+`
 
-After creating a list, you can select it when creating object fields. Select the *Picklist* or *Multiselect Picklist* field type and choose the list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) and [Adding and Managing Custom States](../creating-and-managing-objects/fields/adding-and-managing-custom-states.md) for more information.
+Once created, you can select a picklist when creating object fields. Select the *Picklist* or *Multiselect Picklist* field type and choose the list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) and [Adding and Managing Custom States](../creating-and-managing-objects/fields/adding-and-managing-custom-states.md) for more information.
 
 ![Users can select the picklist when creating new object fields.](./using-picklists/images/05.png)
 

@@ -3,7 +3,7 @@ uuid: e5607063-8779-4bc8-b793-424f1744b72e
 ---
 # Picklists API Basics
 
-Liferay provides the [`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) REST APIs for creating and managing picklist definitions (`ListTypeDefinition`) and their entries (`ListTypeEntry`). You can view and test available APIs in Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) under *REST Services*.
+Liferay provides the [`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) REST APIs for creating and managing picklist definitions (`ListTypeDefinition`) and their entries (`ListTypeEntry`). You can view and test available APIs in Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) under the REST Services menu.
 
 ![Access picklist APIs under headless-admin-list-type](./picklists-api-basics/images/01.png)
 

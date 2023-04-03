@@ -20,6 +20,9 @@ If you set defaults for all other channels and for individual channels, the indi
 
    ![Set default billing and shipping addresses for all or individual channels.](./setting-channel-defaults/images/01.png)
 
+<!-- Link to Channel Defaults Permission Guide when published -->
+Only users with account management permissions can manage channel defaults. Account users can, however, set a default billing and shipping address from the *Account Details* tab.
+
 ## Setting Default Terms and Conditions 
 
 {bdg-secondary}`Available Liferay 7.4 U40+/GA40+` 
@@ -121,6 +124,8 @@ You can use this permission with _Regular Roles_ only. Users with this permissio
 
 Channel account managers work with or without [organizations](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/organizations/understanding-organizations). If you use organizations, this user can manage accounts where they are a channel manager in addition to the accounts in the organization they have permission to manage. If you do not use organizations, you can use a channel account manager to control access to individual accounts. 
 ```
+
+<!-- Link to Channel Defaults Permission Guide when published -->
 
 To set up a default channel account manager, 
 

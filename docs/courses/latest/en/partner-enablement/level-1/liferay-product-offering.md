@@ -31,7 +31,7 @@ It is the full Digital Experience Platform, on top of which our customers, partn
 
 ![Liferay's Product Deployment Offerings](the-liferay-product/images/02.png)
 
-As we review each of the deployment approaches, we would like to draw particular attention to the day-to-day activities that are required. Each of these activities has a value, however it is only really delivering the actual business application that is high-value. Some of the lower value activites meanwhile can be quite time-consuming and difficult.  These activities are the responsibility of either Liferay, or the Customer, and each deployment approach assigns these differently.
+As we review each of the deployment approaches, we would like to draw particular attention to the day-to-day activities that are required. Each of these activities has a value, however it is only really delivering the actual business application that is high-value. Some of the lower value activities meanwhile can be quite time-consuming and difficult.  These activities are the responsibility of either Liferay, or the Customer, and each deployment approach assigns these differently.
 
 ### DXP Self-Hosted
 

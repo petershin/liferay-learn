@@ -25,15 +25,15 @@
 이 명령을 실행하여 React 애플리케이션의 코드를 생성합니다.
 
 ```bash
-curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-remote-app react
+curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-custom-element react
 ```
 
-이렇게 하면 사용자 정의 HTML 요소 이름(`h5v7-remote-app`)과 원하는 JavaScript 프레임워크(`react`)의 두 가지 인수로 스크립트를 호출합니다.
+이렇게 하면 사용자 정의 HTML 요소 이름(`h5v7-custom-element`)과 원하는 JavaScript 프레임워크(`react`)의 두 가지 인수로 스크립트를 호출합니다.
 
-실행이 완료되면 스크립트는 `h5v7-remote-app`이라는 폴더에 이러한 요소를 포함하는 새 React 애플리케이션을 자동으로 생성합니다.
+실행이 완료되면 스크립트는 `h5v7-custom-element`이라는 폴더에 이러한 요소를 포함하는 새 React 애플리케이션을 자동으로 생성합니다.
 
 ```bash
-h5v7-remote-app
+h5v7-custom-element
 ├── node_modules
 ├── README.md
 ├── package.json
@@ -68,14 +68,14 @@ h5v7-remote-app
 
 ### `index.js` 파일 이해
 
-   ```{literalinclude} ./creating-a-basic-custom-element/resources/liferay-h5v7.zip/h5v7-remote-app/src/index.js
+   ```{literalinclude} ./creating-a-basic-custom-element/resources/liferay-h5v7.zip/h5v7-custom-element/src/index.js
        :language: js
    ```
 
 생성된 `index.js` 파일에는 애플리케이션을 Liferay 사용자 정의 요소 원격 애플리케이션으로 사용하는 데 필요한 두 가지 사용자 정의가 포함되어 있습니다.
 
 * `WebComponent`: 21행에서 애플리케이션은 `WebComponent` 으로 선언되어 Liferay의 프레임워크에 연결할 수 있습니다.
-* `ELEMENT_ID`: 라인 30에서 `ELEMENT_ID` 은 기존의 `<div id="root" />`대신 `h5v7-remote-app`로 설정됩니다. 이는 원격 애플리케이션의 HTML 요소 이름이 애플리케이션의 `ELEMENT_ID`과 일치해야 하고 `<div id="root" />` 가 이 용도로 작동하지 않기 때문입니다.
+* `ELEMENT_ID`: 라인 30에서 `ELEMENT_ID` 은 기존의 `<div id="root" />`대신 `h5v7-custom-element`로 설정됩니다. 이는 원격 애플리케이션의 HTML 요소 이름이 애플리케이션의 `ELEMENT_ID`과 일치해야 하고 `<div id="root" />` 가 이 용도로 작동하지 않기 때문입니다.
 
 ### 반응 경로 이해
 
@@ -83,10 +83,10 @@ h5v7-remote-app
 
 ## 반응 애플리케이션 구축
 
-`create_custom_element.sh`을 실행한 후 새 `h5v7-remote-app` 폴더로 이동하고 애플리케이션을 빌드합니다.
+`create_custom_element.sh`을 실행한 후 새 `h5v7-custom-element` 폴더로 이동하고 애플리케이션을 빌드합니다.
 
 ```bash
-cd h5v7-remote-app
+cd h5v7-custom-element
 ```
 
 ```bash
@@ -153,18 +153,18 @@ File sizes after gzip:
 
    | 분야         | 가치                    |
    |:---------- |:--------------------- |
-   | 이름         | H5V7-원격 앱             |
+   | 이름         | H5V7-Custom-Element            |
    | 유형         | 커스텀 엘레멘트              |
-   | HTML 요소 이름 | `h5v7-remote-app`     |
+   | HTML 요소 이름 | `h5v7-custom-element`     |
    | URL        | `.js` 파일의 WebDAV URL  |
    | CSS URL    | `.css` 파일의 WebDAV URL |
    | 포틀릿 분류 이름  | 원격 앱                  |
 
 1. **저장** 을 클릭합니다.
 
-일단 저장되면 Liferay는 다른 페이지 위젯처럼 사이트 페이지에 배포할 수 있는 H5V7-Remote-App이라는 위젯을 생성합니다. 이 위젯은 선택한 포틀릿 범주 이름 아래에 나타납니다.
+일단 저장되면 Liferay는 다른 페이지 위젯처럼 사이트 페이지에 배포할 수 있는 H5V7-Custom-Element이라는 위젯을 생성합니다. 이 위젯은 선택한 포틀릿 범주 이름 아래에 나타납니다.
 
-![H5V7-Remote-App 위젯을 사이트 페이지에 배포합니다.](./creating-a-basic-custom-element/images/04.png)
+![H5V7-Custom-Element 위젯을 사이트 페이지에 배포합니다.](./creating-a-basic-custom-element/images/04.png)
 
 ## 추가 정보
 

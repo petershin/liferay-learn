@@ -28,15 +28,15 @@ When calling `create_custom_element.sh`, you must provide a valid HTML element n
 Run this command to generate the React application's code:
 
 ```bash
-curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-remote-app react
+curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-custom-element react
 ```
 
-This calls the script with two arguments: a custom HTML element name (`h5v7-remote-app`) and the desired JavaScript framework (`react`).
+This calls the script with two arguments: a custom HTML element name (`h5v7-custom-element`) and the desired JavaScript framework (`react`).
 
-When finished running, the script automatically creates a new React application with these elements in a folder named `h5v7-remote-app`:
+When finished running, the script automatically creates a new React application with these elements in a folder named `h5v7-custom-element`:
 
 ```bash
-h5v7-remote-app
+h5v7-custom-element
 ├── node_modules
 ├── README.md
 ├── package.json
@@ -71,14 +71,14 @@ h5v7-remote-app
 
 ### Understanding the `index.js` File
 
-   ```{literalinclude} ./creating-a-basic-custom-element/resources/liferay-h5v7.zip/h5v7-remote-app/src/index.js
+   ```{literalinclude} ./creating-a-basic-custom-element/resources/liferay-h5v7.zip/h5v7-custom-element/src/index.js
        :language: js
    ```
 
 The generated `index.js` file includes two customizations necessary for using the application as a Liferay custom element remote application.
 
 * `WebComponent`: On line 21, the application is declared a `WebComponent` so it can connect to Liferay's framework.
-* `ELEMENT_ID`: On line 30, `ELEMENT_ID` is set to `h5v7-remote-app`, instead of the conventional `<div id="root" />`. This is because a remote application's HTML Element Name must match the application's `ELEMENT_ID`, and `<div id="root" />` does not work for this purpose.
+* `ELEMENT_ID`: On line 30, `ELEMENT_ID` is set to `h5v7-custom-element`, instead of the conventional `<div id="root" />`. This is because a remote application's HTML Element Name must match the application's `ELEMENT_ID`, and `<div id="root" />` does not work for this purpose.
 
 ### Understanding the React Routes
 
@@ -86,10 +86,10 @@ The generated code includes three routes: `hello-world` (default), `hello-foo`, 
 
 ## Building the React Application
 
-After running `create_custom_element.sh`, navigate to the new `h5v7-remote-app` folder and build the application:
+After running `create_custom_element.sh`, navigate to the new `h5v7-custom-element` folder and build the application:
 
 ```bash
-cd h5v7-remote-app
+cd h5v7-custom-element
 ```
 
 ```bash
@@ -158,18 +158,18 @@ For example,
 
    | Field | Value |
    | :--- | :--- |
-   | Name | H5V7-Remote-App |
+   | Name | H5V7-Custom-Element |
    | Type | Custom Element |
-   | HTML Element Name | `h5v7-remote-app` |
+   | HTML Element Name | `h5v7-custom-element` |
    | URL | WebDAV URL for the `.js` file |
    | CSS URL | WebDAV URL for the `.css` file |
    | Portlet Category Name | Remote Apps |
 
 1. Click *Save*.
 
-Once saved, Liferay creates a widget named H5V7-Remote-App, which you can deploy to site pages like other page widgets. This widget appears under the selected Portlet Category Name.
+Once saved, Liferay creates a widget named H5V7-Custom-Element, which you can deploy to site pages like other page widgets. This widget appears under the selected Portlet Category Name.
 
-![Deploy the H5V7-Remote-App widget to site pages.](./creating-a-basic-custom-element/images/04.png)
+![Deploy the H5V7-Custom-Element widget to site pages.](./creating-a-basic-custom-element/images/04.png)
 
 ## Additional Information
 

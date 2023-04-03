@@ -25,15 +25,15 @@
 このコマンドを実行すると、Reactアプリケーションのコードが生成されます。
 
 ```bash
-curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-remote-app react
+curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-custom-element react
 ```
 
-これは、カスタムHTML要素名（`h5v7-remote-app`）と目的のJavaScriptフレームワーク（`react`）の2つの引数を使用してスクリプトを呼び出します。
+これは、カスタムHTML要素名（`h5v7-custom-element`）と目的のJavaScriptフレームワーク（`react`）の2つの引数を使用してスクリプトを呼び出します。
 
-実行が終了すると、これらの要素を含む新しいReactアプリケーションが、 `h5v7-remote-app`という名前のフォルダーに自動的に作成されます。
+実行が終了すると、これらの要素を含む新しいReactアプリケーションが、 `h5v7-custom-element`という名前のフォルダーに自動的に作成されます。
 
 ```bash
-h5v7-remote-app
+h5v7-custom-element
 ├── node_modules
 ├── README.md
 ├── package.json
@@ -68,14 +68,14 @@ h5v7-remote-app
 
 ### `index.js`ファイルを理解する
 
-   ```{literalinclude} ./creating-a-basic-custom-element/resources/liferay-h5v7.zip/h5v7-remote-app/src/index.js
+   ```{literalinclude} ./creating-a-basic-custom-element/resources/liferay-h5v7.zip/h5v7-custom-element/src/index.js
        :language: js
    ```
 
 生成された `index.js` ファイルには、アプリケーションを Liferay カスタム要素リモートアプリケーションとして使用するために必要な 2 つのカスタマイズが含まれています。
 
 * `WebComponent`: 21行目で、アプリケーションは `WebComponent` と宣言され、Liferayのフレームワークに接続できるようになっています。
-* `ELEMENT_ID`: 30行目、 `ELEMENT_ID` に、従来の `<div id="root" />`ではなく、 `h5v7-remote-app`が設定されています。 これは、リモートアプリケーションのHTML要素名がアプリケーションの`ELEMENT_ID`と一致しなければならず、`<div id="root" />`ではこの目的では機能しないためです。
+* `ELEMENT_ID`: 30行目、 `ELEMENT_ID` に、従来の `<div id="root" />`ではなく、 `h5v7-custom-element`が設定されています。 これは、リモートアプリケーションのHTML要素名がアプリケーションの`ELEMENT_ID`と一致しなければならず、`<div id="root" />`ではこの目的では機能しないためです。
 
 ### Reactルーティングを理解する
 
@@ -83,10 +83,10 @@ h5v7-remote-app
 
 ## Reactアプリケーションの構築
 
-`create_custom_element.sh`を実行した後、新しい `h5v7-remote-app` フォルダに移動し、アプリケーションを構築します。
+`create_custom_element.sh`を実行した後、新しい `h5v7-custom-element` フォルダに移動し、アプリケーションを構築します。
 
 ```bash
-cd h5v7-remote-app
+cd h5v7-custom-element
 ```
 
 ```bash
@@ -154,18 +154,18 @@ File sizes after gzip:
 
    | 項目            | 値                     |
    |:------------- |:--------------------- |
-   | 名称            | H5V7-Remote-App       |
+   | 名称            | H5V7-Custom-Element       |
    | タイプ           | カスタム要素                |
-   | HTML要素名       | `h5v7-remote-app`     |
+   | HTML要素名       | `h5v7-custom-element`     |
    | URL           | `.js`ファイルのWebDAV URL  |
    | CSSのURL       | `.css`ファイルのWebDAV URL |
    | ポートレットのカテゴリー名 | リモートアプリケーション          |
 
 1. ［**保存**］ をクリックします。
 
-保存すると、LiferayはH5V7-Remote-Appという名前のウィジェットを作成し、他のページウィジェットのようにサイトページにデプロイできるようになります。 選択したポートレットカテゴリー名の下に表示されるウィジェットです。
+保存すると、LiferayはH5V7-Custom-Elementという名前のウィジェットを作成し、他のページウィジェットのようにサイトページにデプロイできるようになります。 選択したポートレットカテゴリー名の下に表示されるウィジェットです。
 
-![サイトページにH5V7-Remote-Appウィジェットをデプロイします。](./creating-a-basic-custom-element/images/04.png)
+![サイトページにH5V7-Custom-Elementウィジェットをデプロイします。](./creating-a-basic-custom-element/images/04.png)
 
 ## 追加情報
 

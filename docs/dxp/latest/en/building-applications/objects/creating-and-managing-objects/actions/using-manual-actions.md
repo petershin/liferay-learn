@@ -38,9 +38,9 @@ To view these APIs,
 
 1. Click *REST Applications* and select the desired object definition. Custom objects use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/tickets`).
 
-For each standalone action, Liferay generates two PUT APIs, one that uses the entry's ID and another that uses the entry's external reference code (ERC).
+For each standalone action, Liferay generates two PUT APIs: one that uses the entry's ID and another that uses the entry's external reference code (ERC).
 
-![Liferay generates two PUT APIs, one that uses the entry's ID and another that uses the entry's ERC.](./using-manual-actions/images/03.png)
+![Liferay generates two PUT APIs: one that uses the entry's ID and another that uses the entry's ERC.](./using-manual-actions/images/03.png)
 
 Calling either API triggers the action for the specified entry.
 
@@ -48,7 +48,7 @@ Calling either API triggers the action for the specified entry.
 
 ## Action Permissions
 
-Liferay automatically generates permissions for standalone actions for managing which roles can trigger them. Each permission follows the `action.[actionName]` naming pattern (e.g., `action.sendReminder`). See [Permissions Framework Integration](../../understanding-object-integrations/permissions-framework-integration.md) for more information on object permissions.
+Liferay automatically generates permissions for managing which roles can trigger standalone actions. Each permission follows the `action.[actionName]` naming pattern (e.g., `action.sendReminder`). See [Permissions Framework Integration](../../understanding-object-integrations/permissions-framework-integration.md) for more information on object permissions.
 
 ![Standalone permissions use the action.[actionName] naming pattern.](./using-manual-actions/images/05.png)
 

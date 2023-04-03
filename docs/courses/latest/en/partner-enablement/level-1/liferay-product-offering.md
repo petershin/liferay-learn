@@ -107,7 +107,7 @@ The final product deployment offering is Liferay Experience Cloud. This is a Saa
 
 With Liferay Experience Coud SaaS, Liferay is providing and managing all of the infrastructure, and all of the low-value activities needed to maintain Liferay DXP.  Liferay is applying product Updates on a weekly basis, testing these against customers' data, and doing SAST and DAST security scanning.
 
-What is important to note is that although the deployment model is SaaS, this is not a turnkey-application.  Customers have a full Liferay DXP instance to use, with all of the out-of-the-box capabilities DXP provides, and they can build their custom applications on top of that base.
+What is important to note is that although the deployment model is SaaS, this is not a turnkey-application.  Customers have a full Liferay DXP instance to use, with all of the out-of-the-box capabilities DXP provides, and they can build their custom applications on top of that base. Further to this they can continue to work with Partners and Liferay's Global Services organization to help them build those applications.
 
 | Responsibility | Liferay | Customer |
 | --- | --- | --- |
@@ -128,10 +128,6 @@ What is important to note is that although the deployment model is SaaS, this is
 | Responsibility | Liferay | Customer |
 | --- | --- | --- |
 | Application Delivery |  | &#10004; |
-
-```{important}
-It is still expected that customers work with Partners and Global Services to solve their business problems on LXC.
-```
 
 ## Additional Information
 

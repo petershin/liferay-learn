@@ -153,8 +153,6 @@ This redirects you to the *Scheduled* tab where you can view and [manage schedul
 
 When reviewing publication changes, file and page previews can accumulate in the document library. If desired, you can remove this data.
 
-To do this,
-
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to *Control Panel*, and click *System Settings*.
 
 1. Click *Upgrades* under Platform.

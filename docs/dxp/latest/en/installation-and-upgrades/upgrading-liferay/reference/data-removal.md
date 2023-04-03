@@ -22,7 +22,7 @@ To remove data,
    * Published Change Tracking Store Content Data (Publications)
 
    ```{important}
-   Only remove Published Change Tracking Store Content Data if you're using a Liferay version before 7.3 U10 or 7.4 U37. After running the task, upgrade to prevent the further accumulation of this unnecessary data.
+   Only remove Published Change Tracking Store Content Data if you're using a Liferay version before 7.3 U10 or 7.4 U37. After running the task, upgrade to prevent further accumulation of this unnecessary data.
    ```
 
 1. Click *Save*.

@@ -1,8 +1,8 @@
 # Setting Up Automatic Deployment
 
-Kyle is able to begin developing and testing with Liferay Cloud, but he wants to be able to quickly deploy and test changes his repository first.
+Kyle is able to begin developing and testing with Liferay Cloud, but it's easier if he can test his changes immediately after deployment. 
 
-Here, you'll configure a branch to automatically deploy newly pushed changes to your UAT environment.
+Here, you'll configure a branch to deploy newly pushed changes to your UAT environment automatically. 
 
 ## Add the Configuration
 
@@ -24,7 +24,7 @@ Configure automatic deployment via the `LCP_CI_DEPLOY_BRANCH` and `LCP_CI_DEPLOY
 
 1. Click *Save Changes*.
 
-The CI service restarts with the new configuration. Once it's back up, any builds created from that point on via the `live-update` branch are automatically deployed to your UAT environment.
+The CI service restarts with the new configuration. Once it's back up, builds created from that point on via the `live-update` branch are deployed to your UAT environment automatically. 
 
 ## Test with a New Push
 
@@ -32,13 +32,13 @@ Next, make a commit and test that automatic deployment is working properly.
 
 1. Open your command prompt in your project repository.
 
-1. Create and switch to a new branch called `live-update`. You'll use this branch to immediately deploy any new developments you push up to UAT.
+1. Create and switch to a new branch called `live-update`. You'll use this branch to deploy immediately any new developments you push up to UAT.
 
    ```bash
    git checkout -b live-update
    ```
 
-1. Add and commit a dummy file to trigger a new build with.
+1. Add and commit a dummy file to trigger a new build.
 
    ```bash
    touch dummy.txt
@@ -58,14 +58,14 @@ Next, make a commit and test that automatic deployment is working properly.
    git push origin live-update
    ```
 
-1. Return to the Liferay Cloud console, and click *Deployments*.
+1. Return to the Liferay Cloud console and click *Deployments*.
 
    ![Your new push appears in the list of deployments made to the UAT environment.](./setting-up-automatic-deployment/images/02.png)
 
 Your new commit appears in the list of deployments, deployed to the UAT environment.
 
-Now you can quickly deploy any new developments or changes straight from your repository for testing. Next, you'll practice using a backup to revert changes from development.
+Now you can deploy any new developments or changes straight from your repository for testing. Next, you'll practice using a backup to revert changes from development.
 
-# Related Concepts
+# Relevant Concepts
 
 * [Automatically Deploying CI Service Builds](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/automatically-deploying-ci-service-builds)

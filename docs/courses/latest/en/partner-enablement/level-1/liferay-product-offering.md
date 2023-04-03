@@ -3,8 +3,10 @@
 **At a Glance**
 
 * Liferay develops a single Product - Liferay DXP 7.4
-* There are three Product Deployment Offerings - Liferay Experience Cloud (LXC) [SaSS], Liferay Experience Cloud - Self Managed [PaaS], or DXP - Self Hosted
-* How to identify which Product Deployment Offering is right for your Prospect 
+* There are three Product Deployment Offerings:
+  * Liferay Experience Cloud (LXC) [SaSS]
+  * Liferay Experience Cloud - Self Managed [PaaS]
+  * DXP - Self Hosted
 
 ## Background
 

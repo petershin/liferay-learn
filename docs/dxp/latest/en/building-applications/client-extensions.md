@@ -72,5 +72,4 @@ See [Batch Client Extensions](./client-extensions/batch-client-extensions.md) fo
 ## Additional Information
 
 * [Working with Client Extensions](./client-extensions/working-with-client-extensions.md)
-* [Front-end Client Extensions](./client-extensions/front-end-client-extensions.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

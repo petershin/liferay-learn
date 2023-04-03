@@ -82,6 +82,8 @@ The assemble block has these properties:
 
 `into`: Specify where to include the additional resources in the built `.zip` file. For example, the source files for many front-end client extensions (like JavaScript or CSS client extensions) must be in the `static` directory so that Liferay can serve them as static resources for your site.
 
+See [Packaging Client Extensions](./packaging-client-extensions.md)
+
 ## Deploying to Your Liferay Instance
 
 Client extensions are built into deployable `.zip` archives. Each client extension archive contains a JSON file with the client extension's settings.
@@ -126,6 +128,13 @@ Then copy the archives from each project's `dist/` folder into the server's `[Li
 
 ## Additional Information
 
+* [Batch Client Extensions](./batch-client-extensions.md)
+* [Configuration Client Extensions](./configuration-client-extensions.md)
 * [Front-end Client Extensions](./front-end-client-extensions.md)
+* [Microservice Client Extensions](./microservice-client-extensions.md)
+* [Packaging Client Extensions](./packaging-client-extensions.md)
+
+## Tutorials
+
 * [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)
 * [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)

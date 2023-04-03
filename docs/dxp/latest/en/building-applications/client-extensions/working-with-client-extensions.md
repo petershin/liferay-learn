@@ -63,26 +63,86 @@ Client extensions are defined in `client-extension.yaml` files containing these 
 
 Each client extension project lives in a folder inside of the workspace's `client-extensions/` folder. The project contains a single `client-extension.yaml` file, which defines one or more client extensions. For example, [the `iframe-2` project's `client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-iframe-2/client-extension.yaml) defines three `iframe` client extensions: `Baseball`, `Football`, and `Hockey`.
 
-### Packaging Files in Client Extensions
+### Assembling Client Extensions into a UFFA
 
-You specify the files to include in the built archive using an `assemble` block in the `client-extensions.yaml` file:
+When assemling a UFFA, there are several files that are automatically created and added to it, e.g. `*.client-extension-config.json`, various metadata files needed for LXC deployment. However, the tooling doesn't know what *you* want to include in the archive by default, so you must tell it what to include using the `assemble:` block. A gradle task called `assembleClientExtension` executes when `gradle build` or `gradle deploy` are run. This `assembleClientExtension` task executes the `assemble:` block. By default, outputs are placed into the `build/clientExtension` folder in your project. Everything in the `build/clientExtension` folder is used to create the final UFFA, e.g. `dist/my-client-extension-project.zip`.
+
+The `assemble:` block is a yaml array which means that _multiple_ sets of instructions may be defined below it.  Each item in the _array_ should be in this form:
+
+```yaml
+    - from: <some folder in your project>
+      include: <single file or glob match>
+      into: <output location in archive>
+```
+
+Each item in the assemble block array has these properties:
+
+* `from`: Specify the folder _from_ where to copy resources into your client extension archive
+
+* `include`: Enter a single file or glob matching a subset of files to include from the `from` directory.  If not specified the value is `**/*` (all files recursively)
+
+* `into`: Specify where the matching resources are copied _into_ the final archive.  For the front-end client extensions (like JavaScript or CSS client extensions) this must be in the `static` directory so that Liferay can serve them as static resources in a on-prem deployment, but LXC can serve them from a container in the cloud. For batch client extensions this must be the `batch` directory so that Liferay and process them.
+
+Another property is `fromTask` which is discussed in more detail below.
+
+An example of an assemble block with multiple items might be:
 
 ```yaml
 assemble:
-   - from: assets
-     include: "**/*"
-     into: static
+    - from: build/folder/aaa
+      include: "css/*.css"
+      into: folder/aaa
+    - from: build/folder/aaa
+      include: "css/*.css"
+      into: folder/aaa
 ```
 
-The assemble block has these properties:
+Since `include` has a default of `**/*`, in many of the samples it is not specified.
 
-`from`: Set a folder in your client extension project that houses the additional resources. When you build the client extension, these resources are included in the `.zip` file. You can use multiple `from` definitions in the `assemble` block, with each containing an `into` property.
+```yaml
+assemble:
+    - from: build/vite
+      into: static
+```
 
-`include`: Enter a single file or glob syntax to find the desired files in the `from` directory.
+Resources that are not built can also be copied directly from the project source:
 
-`into`: Specify where to include the additional resources in the built `.zip` file. For example, the source files for many front-end client extensions (like JavaScript or CSS client extensions) must be in the `static` directory so that Liferay can serve them as static resources for your site.
+```yaml
+assemble:
+    - from: assets
+      into: static
+```
 
-See [Packaging Client Extensions](./packaging-client-extensions.md)
+or
+
+```yaml
+assemble:
+    - from: somewhere/else
+      include: "*.ico"
+      into: static
+```
+
+The `include:` instruction can be specified as an array when multiple patterns are needed:
+
+```yaml
+assemble:
+    - from: build
+      include:
+          - "vite/js/*.js"
+          - "vite/css/*.css"
+      into: static
+```
+
+There is a special case in `microservice` client extension projects when a gradle build is used in the project. It is possible to name a _particular_ gradle task that will build all of the output before assembly. For example, in a Spring Boot based microservice the gradle task `bootJar` will create the uber-jar that contains the application and all its dependencies. In cases like this, its easier to use the property `fromTask` which is more succinct.
+
+The following `assemble` example causes the workspace to, first, execute the project's `bootJar` gradle task and then _include_ its output (the Spring Boot uber-jar) in the root of the archive:
+
+```yaml
+assemble:
+    - fromTask: bootJar
+```
+
+For more details on the creation, structure and contents of UFFA, see [Packaging Client Extensions](./packaging-client-extensions.md)
 
 ## Deploying to Your Liferay Instance
 

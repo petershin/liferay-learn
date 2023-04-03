@@ -38,10 +38,24 @@ You use [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspac
 
 These are the classifications of client extensions:
 
+* [Batch client extensions](#batch-client-extensions)
+* [Configuration client extensions](#configuration-client-extensions)
 * [Front-end client extensions](#front-end-client-extensions)
 * [Microservice client extensions](#microservice-client-extensions)
-* [Configuration client extensions](#configuration-client-extensions)
-* [Batch client extensions](#batch-client-extensions)
+
+### Batch Client Extensions
+
+Batch client extensions provide data entities to your Liferay instance. From Object Definition and Workflow Definition all the way to initilizing an entire site. The data is first exported using the Batch Engine Framework (hence the name.) Any entities supported by the Batch Engine are supported in batch client extensions.
+
+See [Batch Client Extensions](./client-extensions/batch-client-extensions.md) for more information on this specific type.
+
+### Configuration Client Extensions
+
+Configuration client extensions provide specific configurations to change functionality within your Liferay instance.
+
+They can be used together with other client extensions, such as [microservice client extensions](#microservice-client-extensions). For example, you can use an OAuth user agent client extension to authenticate client extensions that work with user-triggered action events.
+
+See [Configuration Client Extensions](./client-extensions/configuration-client-extensions.md) for more information on the specific types.
 
 ### Front-end Client Extensions
 
@@ -54,20 +68,6 @@ See [Front-end Client Extensions](./client-extensions/front-end-client-extension
 Microservice client extensions provide API endpoints to trigger within Liferay (e.g., object or workflow actions). Once those action events call your API, you can run any function you want outside of Liferay as a separate *microservice*.
 
 See [Microservice Client Extensions](./client-extensions/microservice-client-extensions.md) for more information on the specific types.
-
-### Configuration Client Extensions
-
-Configuration client extensions provide specific configurations to change functionality within your Liferay instance.
-
-They can be used together with other client extensions, such as [microservice client extensions](#microservice-client-extensions). For example, you can use an OAuth user agent client extension to authenticate client extensions that work with user-triggered action events.
-
-See [Configuration Client Extensions](./client-extensions/configuration-client-extensions.md) for more information on the specific types.
-
-### Batch Client Extensions
-
-Batch client extensions provide data entities to your Liferay instance. From Object Definition and Workflow Definition all the way to initilizing an entire site. The data is first exported using the Batch Engine Framework (hence the name.) Any entities supported by the Batch Engine are supported in batch client extensions.
-
-See [Batch Client Extensions](./client-extensions/batch-client-extensions.md) for more information on this specific type.
 
 ## Additional Information
 

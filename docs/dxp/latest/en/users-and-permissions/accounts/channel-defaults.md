@@ -11,7 +11,7 @@ uuid: eeecd784-2cf2-4b02-9c11-52ef261b18ac
 channel-defaults/setting-channel-defaults.md
 ```
 
-After creating an business account, you can set [channel](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels) defaults for it. This improves the checkout experience, reduces the time taken to create orders and allows further customizations to the default behavior of Liferay Commerce. You can set the following defaults for both individual channels and all remaining channels: 
+After creating a business account, you can set [channel](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels) defaults for it. This improves the checkout experience, reduces the time taken to create orders and allows further customizations to the default behavior of Liferay Commerce. You can set the following defaults for both individual channels and all remaining channels: 
 
 * Billing Address
 * Shipping Address

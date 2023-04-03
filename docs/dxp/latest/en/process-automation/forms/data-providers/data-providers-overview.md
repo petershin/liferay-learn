@@ -45,7 +45,7 @@ On the URL Example tab, find the URL to use when creating the data provider. It'
 
 You can configure data providers from the Forms application by going to _Site Administration_ &rarr; _Content & Data_ &rarr; _Forms_. Click the _Data Provider_ tab then the (![Add icon](../../../images/icon-add.png)) icon to begin. There are several fields to fill out when configuring a data provider.
 
-![This data service returns countries.](./data-providers-overview/images/03.png)
+![This data provider returns countries.](./data-providers-overview/images/03.png)
 
 ### URL
 
@@ -80,7 +80,7 @@ Enter the time (in ms) to wait for a response to the REST call before aborting t
 
 ### Inputs
 
-Configure path or query parameters from the REST service to filter the REST service's response. Specify the Label, Parameter, and Type (Text or Number), and choose whether the input is required to use the data provider.
+Configure path or query parameters from the REST service to filter the REST service's response. Specify the Label, Parameter, and Type (Text or Number).
 
 ### Outputs
 

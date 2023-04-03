@@ -70,19 +70,19 @@ To add a _Countries of the World_ data provider:
 
 ## Using Inputs as Filters for the REST Data Provider
 
-The above example uses only a single Output to populate a _Select from List field_. Sometimes the response from the REST provider must be filtered before display in the Select from List field. For this, a Data Provider _Input_ field is required.
+The above example uses only a single Output to populate a _Select from List field_. To filter the response from the REST provider, use the Input field.
 
-For example, to apply a region (for example, Americas, Europe, or Oceania) filter for the countries of the world:
+This example uses a different data provider and applies a region (for example, Americas, Europe, or Oceania) filter for the countries of the world:
 
 1. Enter this data:
    * **Name**: `restcountries`
-   * **URL**: `https://restcountries.com/v3.1/region/{region}?fields=name`(using a different REST provider)
-   * **Input Label**: Region
-   * **Parameter**: region
+   * **URL**: `https://restcountries.com/v3.1/region/{region}?fields=name`
+   * **Input Parameter**: region
    * **Input Type**: Text
-   * **Outputs Label**: Country Name
-   * **Outputs Path**: `$..name.common`
+   * **Input Label**: Region
+   * **Output Path**: `$..name.common`
    * **Output Type**: List
+   * **Output Label**: Country Name
 
    To understand more about these values, see [Data Providers Overview](./data-providers-overview.md).
 
@@ -90,7 +90,7 @@ Because this example uses an input parameter, you must provide the input to the 
 
 ## Granting Data Provider Permissions
 
-Depending on whether the user is required to be authenticated before filling the form, users may have to grant additional permissions to the Data Provider. For example, if Guests are to fill out the form, they need the _View_ permission, or else they will not be able to see the options provided by the data provider.
+Users must have view permission on a data provider to see the options it provides. For example, if Guests are to fill out a form, they must be granted the view permission.
 
 To configure the data provider's permissions:
 

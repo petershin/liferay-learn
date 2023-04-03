@@ -29,15 +29,15 @@
 1. 別の端末でこのコマンドを実行し、Reactアプリケーションを生成します。
 
    ```bash
-   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s j1v3-remote-app react
+   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s j1v3-custom-element react
    ```
 
 1. アプリケーションが正常に作成されたことを確認します。
 
-   スクリプトは、以下の要素を含む`j1v3-remote-app`という新しいReactアプリケーションを作成する必要があります。
+   スクリプトは、以下の要素を含む`j1v3-custom-element`という新しいReactアプリケーションを作成する必要があります。
 
    ```bash
-   j1v3-remote-app
+   j1v3-custom-element
    ├── node_modules
    ├── README.md
    ├── package.json
@@ -67,10 +67,10 @@
    └── yarn.lock
    ```
 
-1. 新しい `j1v3-remote-app` フォルダに移動し、アプリケーションをビルドします。
+1. 新しい `j1v3-custom-element` フォルダに移動し、アプリケーションをビルドします。
 
    ```bash
-   cd j1v3-remote-app
+   cd j1v3-custom-element
    ```
 
    ```bash
@@ -126,9 +126,9 @@
 
    | 項目           | 値                     |
    |:------------ |:--------------------- |
-   | 名称           | J1V3-Remote-App       |
+   | 名称           | J1V3-Custom-Element       |
    | タイプ          | カスタム要素                |
-   | HTML要素名      | `j1v3-remote-app`     |
+   | HTML要素名      | `j1v3-custom-element`     |
    | URL          | `.js`ファイルのWebDAV URL  |
    | CSSのURL      | `.css`ファイルのWebDAV URL |
    | インスタンス化可能    | &#10004;              |
@@ -136,11 +136,11 @@
 
 1. ［**保存**］ をクリックします。
 
-保存すると、LiferayはJ1V3-Remote-Appという名前のウィジェットを作成し、他のページウィジェットのようにサイトページにデプロイできるようになります。 選択したポートレットカテゴリ名の下に表示されます。
+保存すると、LiferayはJ1V3-Custom-Elementという名前のウィジェットを作成し、他のページウィジェットのようにサイトページにデプロイできるようになります。 選択したポートレットカテゴリ名の下に表示されます。
 
-J1V3-Remote-Appはインスタンス化可能なので、1つのページに多数追加して、それぞれ独立した設定にすることができます。 このチュートリアルでは、1つのページに2回ウィジェットを追加します．
+J1V3-Custom-Elementはインスタンス化可能なので、1つのページに多数追加して、それぞれ独立した設定にすることができます。 このチュートリアルでは、1つのページに2回ウィジェットを追加します．
 
-![J1V3-Remote-Appウィジェットの2つのインスタンスをデプロイします。](./using-routes-with-custom-elements/images/04.png)
+![J1V3-Custom-Elementウィジェットの2つのインスタンスをデプロイします。](./using-routes-with-custom-elements/images/04.png)
 
 ## `route`プロパティを使用する場合
 
@@ -150,9 +150,9 @@ J1V3-Remote-Appはインスタンス化可能なので、1つのページに多�
 
 1. **グローバルメニュー**(![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**リモートアプリケーション**］ へ移動します。
 
-1. **J1V3-Remote-App** を選択します。
+1. **J1V3-Custom-Element** を選択します。
 
-   ![J1V3-Remote-Appを選択します。](./using-routes-with-custom-elements/images/05.png)
+   ![J1V3-Custom-Elementを選択します。](./using-routes-with-custom-elements/images/05.png)
 
 1. プロパティフィールドに`route=hello-foo`と入力します。
 
@@ -166,7 +166,7 @@ J1V3-Remote-Appはインスタンス化可能なので、1つのページに多�
 
 ### ポートレット設定でルートプロパティを定義する
 
-1. J1V3-Remote-Appウィジェットが含まれるページを編集します。
+1. J1V3-Custom-Elementウィジェットが含まれるページを編集します。
 
 1. ウィジェットの1つの **オプション** ボタン (![Options Button](../../../../images/icon-actions.png)) をクリックし、 ［**設定**］ を選択します。
 
@@ -184,7 +184,7 @@ J1V3-Remote-Appはインスタンス化可能なので、1つのページに多�
 
 ## ルートコードの分析
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/index.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/index.js
     :language: js
     :lines: 1-34
 ```
@@ -208,21 +208,21 @@ routes
 
 ### HelloWorld.js
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-world/pages/HelloWorld.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-world/pages/HelloWorld.js
     :language: js
     :lines: 1-9
 ```
 
 ### HelloFoo.js
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-foo/pages/HelloFoo.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-foo/pages/HelloFoo.js
     :language: js
     :lines: 1-9
 ```
 
 ### HelloBar.js
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-bar/pages/HelloBar.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-bar/pages/HelloBar.js
     :language: js
     :lines: 1-9
 ```

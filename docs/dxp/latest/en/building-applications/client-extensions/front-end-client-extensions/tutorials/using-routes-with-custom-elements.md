@@ -32,15 +32,15 @@ Running `create_custom_element.sh` requires the latest versions of [Node.JS](htt
 1. Run this command in a separate terminal to generate the React application.
 
    ```bash
-   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s j1v3-remote-app react
+   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s j1v3-custom-element react
    ```
 
 1. Verify the application was created successfully.
 
-   The script creates a new React application called `j1v3-remote-app` with these elements:
+   The script creates a new React application called `j1v3-custom-element` with these elements:
 
    ```bash
-   j1v3-remote-app
+   j1v3-custom-element
    ├── node_modules
    ├── README.md
    ├── package.json
@@ -70,10 +70,10 @@ Running `create_custom_element.sh` requires the latest versions of [Node.JS](htt
    └── yarn.lock
    ```
 
-1. Navigate to the new `j1v3-remote-app` folder and build the application.
+1. Navigate to the new `j1v3-custom-element` folder and build the application.
 
    ```bash
-   cd j1v3-remote-app
+   cd j1v3-custom-element
    ```
 
    ```bash
@@ -129,9 +129,9 @@ For example,
 
    | Field | Value |
    | :--- | :--- |
-   | Name | J1V3-Remote-App |
+   | Name | J1V3-Custom-Element |
    | Type | Custom Element |
-   | HTML Element Name | `j1v3-remote-app` |
+   | HTML Element Name | `j1v3-custom-element` |
    | URL | WebDAV URL for the `.js` file |
    | CSS URL | WebDAV URL for the `.css` file |
    | Instanceable | &#10004; |
@@ -139,11 +139,11 @@ For example,
 
 1. Click *Save*.
 
-Once saved, Liferay creates a widget named J1V3-Remote-App, which you can deploy to Site Pages like any other Page widget. It appears under the selected Portlet Category Name.
+Once saved, Liferay creates a widget named J1V3-Custom-Element, which you can deploy to Site Pages like any other Page widget. It appears under the selected Portlet Category Name.
 
-Since J1V3-Remote-App is instanceable, you can add many of them to a page, each with its own independent configuration. For this example, add the widget to a page twice.
+Since J1V3-Custom-Element is instanceable, you can add many of them to a page, each with its own independent configuration. For this example, add the widget to a page twice.
 
-![Deploy two instances of the J1V3-Remote-App widget.](./using-routes-with-custom-elements/images/04.png)
+![Deploy two instances of the J1V3-Custom-Element widget.](./using-routes-with-custom-elements/images/04.png)
 
 ## Using the `route` Property
 
@@ -153,9 +153,9 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click on the *Applications* tab, and go to *Remote Apps*.
 
-1. Select *J1V3-Remote-App*.
+1. Select *J1V3-Custom-Element*.
 
-   ![Select J1V3-Remote-App.](./using-routes-with-custom-elements/images/05.png)
+   ![Select J1V3-Custom-Element.](./using-routes-with-custom-elements/images/05.png)
 
 1. Enter `route=hello-foo` into the Properties field.
 
@@ -169,7 +169,7 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
 
 ### Defining a Route Property via Widget Configuration
 
-1. Edit the Page containing the J1V3-Remote-App widgets.
+1. Edit the Page containing the J1V3-Custom-Element widgets.
 
 1. Click the *Options* button (![Options Button](../../../../images/icon-actions.png)) for one of the widgets and select *Configuration*.
 
@@ -187,7 +187,7 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
 
 ## Analyzing the Route Code
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/index.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/index.js
     :language: js
     :lines: 1-34
 ```
@@ -211,21 +211,21 @@ routes
 
 ### HelloWorld.js
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-world/pages/HelloWorld.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-world/pages/HelloWorld.js
     :language: js
     :lines: 1-9
 ```
 
 ### HelloFoo.js
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-foo/pages/HelloFoo.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-foo/pages/HelloFoo.js
     :language: js
     :lines: 1-9
 ```
 
 ### HelloBar.js
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-bar/pages/HelloBar.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-bar/pages/HelloBar.js
     :language: js
     :lines: 1-9
 ```

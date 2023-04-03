@@ -29,15 +29,15 @@
 1. 별도의 터미널에서 이 명령을 실행하여 React 애플리케이션을 생성합니다.
 
    ```bash
-   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s j1v3-remote-app react
+   curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s j1v3-custom-element react
    ```
 
 1. 애플리케이션이 성공적으로 생성되었는지 확인합니다.
 
-   스크립트는 다음 요소를 포함하는 `j1v3-remote-app` 이라는 새 React 애플리케이션을 생성해야 합니다.
+   스크립트는 다음 요소를 포함하는 `j1v3-custom-element` 이라는 새 React 애플리케이션을 생성해야 합니다.
 
    ```bash
-   j1v3-remote-app
+   j1v3-custom-element
    ├── node_modules
    ├── README.md
    ├── package.json
@@ -67,10 +67,10 @@
    └── yarn.lock
    ```
 
-1. 새 `j1v3-remote-app` 폴더로 이동하고 애플리케이션을 빌드합니다.
+1. 새 `j1v3-custom-element` 폴더로 이동하고 애플리케이션을 빌드합니다.
 
    ```bash
-   cd j1v3-remote-app
+   cd j1v3-custom-element
    ```
 
    ```bash
@@ -128,7 +128,7 @@
    |:---------- |:--------------------- |
    | 이름         | J1V3-원격 앱             |
    | 유형         | 커스텀 엘레멘트              |
-   | HTML 요소 이름 | `j1v3-remote-app`     |
+   | HTML 요소 이름 | `j1v3-custom-element`     |
    | URL        | `.js` 파일의 WebDAV URL  |
    | CSS URL    | `.css` 파일의 WebDAV URL |
    | 인스턴스 가능    | &#10004;              |
@@ -136,11 +136,11 @@
 
 1. **저장** 을 클릭합니다.
 
-저장되면 Liferay는 J1V3-Remote-App이라는 위젯을 생성합니다. 이 위젯은 다른 페이지 위젯처럼 사이트 페이지에 배포할 수 있습니다. 선택한 포틀릿 범주 이름 아래에 나타납니다.
+저장되면 Liferay는 J1V3-Custom-Element이라는 위젯을 생성합니다. 이 위젯은 다른 페이지 위젯처럼 사이트 페이지에 배포할 수 있습니다. 선택한 포틀릿 범주 이름 아래에 나타납니다.
 
-J1V3-Remote-App은 인스턴스화할 수 있으므로 각각 고유한 독립적인 구성을 가진 많은 앱을 페이지에 추가할 수 있습니다. 이 자습서에서는 페이지에 위젯을 두 번 추가합니다.
+J1V3-Custom-Element은 인스턴스화할 수 있으므로 각각 고유한 독립적인 구성을 가진 많은 앱을 페이지에 추가할 수 있습니다. 이 자습서에서는 페이지에 위젯을 두 번 추가합니다.
 
-![J1V3-Remote-App 위젯의 두 인스턴스를 배포합니다.](./using-routes-with-custom-elements/images/04.png)
+![J1V3-Custom-Element 위젯의 두 인스턴스를 배포합니다.](./using-routes-with-custom-elements/images/04.png)
 
 ## `경로` 속성 사용
 
@@ -150,9 +150,9 @@ J1V3-Remote-App은 인스턴스화할 수 있으므로 각각 고유한 독립�
 
 1. **글로벌 메뉴**(![Global Menu](../../../../images/icon-applications-menu.png))을 열고 **애플리케이션** 탭을 클릭한 다음 **원격 앱** 으로 이동합니다.
 
-1. **J1V3-Remote-App** 을 선택합니다.
+1. **J1V3-Custom-Element** 을 선택합니다.
 
-   ![J1V3-Remote-App을 선택합니다.](./using-routes-with-custom-elements/images/05.png)
+   ![J1V3-Custom-Element을 선택합니다.](./using-routes-with-custom-elements/images/05.png)
 
 1. 속성 필드에 `route=hello-foo` 을 입력합니다.
 
@@ -166,7 +166,7 @@ J1V3-Remote-App은 인스턴스화할 수 있으므로 각각 고유한 독립�
 
 ### 위젯 구성을 통해 경로 속성 정의
 
-1. J1V3-Remote-App 위젯이 포함된 페이지를 편집합니다.
+1. J1V3-Custom-Element 위젯이 포함된 페이지를 편집합니다.
 
 1. 위젯 중 하나에 대해 **옵션** 버튼(![Options Button](../../../../images/icon-actions.png))을 클릭하고 **구성** 를 선택합니다.
 
@@ -184,7 +184,7 @@ J1V3-Remote-App은 인스턴스화할 수 있으므로 각각 고유한 독립�
 
 ## 경로 코드 분석
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/index.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/index.js
     :language: js
     :lines: 1-34
 ```
@@ -208,21 +208,21 @@ routes
 
 ### HelloWorld.js
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-world/pages/HelloWorld.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-world/pages/HelloWorld.js
     :language: js
     :lines: 1-9
 ```
 
 ### HelloFoo.js
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-foo/pages/HelloFoo.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-foo/pages/HelloFoo.js
     :language: js
     :lines: 1-9
 ```
 
 ### HelloBar.js
 
-```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-remote-app/src/routes/hello-bar/pages/HelloBar.js
+```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-bar/pages/HelloBar.js
     :language: js
     :lines: 1-9
 ```

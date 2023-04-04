@@ -44,25 +44,3 @@ You can also use the search bar to find beta features quickly, sort them using t
 ## Additional Information
 
 * [Semantic Search](../../using-search/liferay-enterprise-search/search-experiences/semantic-search.md)
-
-<!-- The intention of keeping new features behind a Release flags is to provide a more "stable" user interface for a limited period of time (originally, a Quarter, but this might evolve so that we keep the release flags longer). 
-
-We want to prevent users from finding out that the UI just changed or a new feature that they are not aware of just popped out. 
-
-Our goal for 2023 is to improve the criteria to remove the Release flags beyond just a time frame, probably aligned with having public documentation available. 
-
-So maybe it's a good idea to align the messaging of Release flags to providing users and customers with time to get awareness and information about the new features before they just find them spontaneously in the product. 
-
-What do you think?
-
-Important to remark the fact that Release flags are time-bound. 
-
-If we ever decide a feature should always be opt-in for customers, we will design it differently, in order to create a configuration for it. 
-
-For Release flags, I think what you mention is enough. Maybe mention the different sources of information they can have for new features: public documentation, articles, etc, so that they can reach it to learn about the new features. 
-
-For Beta features, I would not mention the 6 months period as it's an internal reference for PMs to focus on the validation. 
-
-It could be less or even more if the PM thinks that he needs more time. 
-
-I would mention our feedback channels for Beta features: community slack, PTRs, and also we will enable a Liferay Ask section for that purpose as well. (I will update you on this point soon). -->

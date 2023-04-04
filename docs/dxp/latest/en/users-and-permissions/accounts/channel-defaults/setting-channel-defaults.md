@@ -108,7 +108,7 @@ The default payment method is determined by existing priority settings configure
 {bdg-secondary}`Available Liferay 7.4 U46+/GA46+`
 
 ```{important}
-Channel account manager is not a new role in Liferay. The newly added permission gives users with a regular role a view into accounts outside the organization structure. This was not possible earlier. 
+Channel account manager is not a new role in Liferay. The newly added permission gives users a view into accounts outside the organization structure. This was not possible earlier. This is also useful to grant temporary permissions to a user to cover for an account. 
 ```
 
 Channel account managers view and manage orders for accounts from one or more channels. If you have a channel account manager per channel, they can only manage orders for the selected account coming in from the selected channel. You can have multiple channel account managers for one channel. To select a user as the channel account manager, you need the following permission. 
@@ -120,7 +120,7 @@ Channel account managers view and manage orders for accounts from one or more ch
 ![Use this permission to allow a user to appear in the channel account manager dropdown.](./setting-channel-defaults/images/07.png)
 
 ```{note}
-You can use this permission with _Regular Roles_ only. Users with this permission appear in the channel account manager dropdown. For the user to view and manage orders, you must also enable order related permissions. 
+This permission works with *Regular Roles*, *Organization Roles* and *Account Roles*. Users with this permission appear in the channel account manager dropdown. For the user to view and manage orders, you must also enable order related permissions. 
 
 Channel account managers work with or without [organizations](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/organizations/understanding-organizations). If you use organizations, this user can manage accounts where they are a channel manager in addition to the accounts in the organization they have permission to manage. If you do not use organizations, you can use a channel account manager to control access to individual accounts. 
 ```
